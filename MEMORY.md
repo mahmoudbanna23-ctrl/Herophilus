@@ -52,7 +52,7 @@ break it.
 ## The app
 
 **Boots clean from `file://`** — zero console errors, 4 modules, 104 chapters, 597 questions, all
-views rendering. `app\index.html` 202 KB, `fonts.js` 128 KB, `app\assets\` 936 KB.
+views rendering. `app\index.html` 203 KB, `fonts.js` 128 KB, `app\assets\` 1,262 KB.
 **Fully WCAG-AA clean** — re-audited 2026-07-28: 1,294 text elements, 5 views × 2 themes, **zero
 real failures**. **Re-audit after any colour change**; a palette move already inverted one fix once.
 
@@ -62,13 +62,13 @@ Herophilus dashboard panel whose biography comes from the user's image and **car
 citation**. **Rules and traps: `CLAUDE.md` §6. Full history: `ledger.md` §12.**
 
 **Cards, glyphs and icon settled 2026-07-28, all the user's calls** (backups
-`archive\index.pre-cards-2026-07-28.*`): the module **painting is shown WHOLE**, a square panel on
-top of the card, **two per row** — it had been a background behind the text at `cover`, losing two
-thirds of a square image. **Neuro is a brain, Pediatrics a teddy**, replacing a labyrinth that read
-as a Greek key and a figure that read as a generic person. **`Herophilus 3.png`, the navy medallion,
-is now the icon AND the app's own mark** — circle-cut transparent, in **five** places: favicon,
-apple-touch, rail logo, splash logo and the gate (`.gmark` appears **twice**). A first pass wired
-only the browser tab and left the old glyph in the interface; **all five move together.**
+`archive\index.pre-cards-2026-07-28.*`): module painting shown WHOLE in a square panel, two per row;
+Neuro is a brain and Pediatrics a teddy; **`Herophilus 3.png`, the navy medallion, is the icon AND
+the app's own mark**, in **five** places that must all move together. **Detail: `CLAUDE.md` §6.**
+
+**Ambient film added 2026-07-28** (backup `archive\index.pre-ambient-video-2026-07-28.html`):
+`assets\ambient-library.mp4`, 321 KB, **ping-pong looped**; plays on browse views, **paused by
+`syncFilm()`** on reading views, dropped for reduced motion and print. **AA re-measured, untouched.**
 
 **Still outstanding:** the **Notion board and PDF schedule still carry the old module colours** —
 the user accepted that divergence knowingly.
@@ -170,7 +170,7 @@ what you do first:
 - **Poppler is installed** and handles the 332 MB file; **`pdftotext` returns 0 characters on every
   book and question bank**, so scans must be rendered to PNG and read as images.
 - **The read tool rejects PDFs over 100 MB** — all 7 books and 3 of the 7 banks.
-- **No Python, Node, ImageMagick or Ghostscript.** Image work is PowerShell `System.Drawing`.
+- **No Python, Node, ImageMagick or Ghostscript**; images via PowerShell `System.Drawing`, video via **ffmpeg** (added 2026-07-28, off PATH).
 - **Headless Chrome is the only way to screenshot the app** (`CLAUDE.md` §7).
 - **The project is on GitHub, PRIVATE**: `mahmoudbanna23-ctrl/Herophilus`, branch `main`, first push
   2026-07-28. `Semester 8\` and `files.zip` are gitignored — **ledger §13 for the push method.**

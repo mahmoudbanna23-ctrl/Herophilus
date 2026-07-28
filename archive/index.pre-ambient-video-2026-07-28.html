@@ -1171,12 +1171,8 @@ body{
    .app sits at z-index 1. Blur is on an element that never scrolls and never
    repaints, which is the only place a 90px blur is affordable. */
 .ambient{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;contain:strict}
-/* Pulled back from .55 when the film moved in underneath. Two ambient systems
-   at full strength cancel each other out — the orbs are a 90px blur, so at
-   their old weight they simply fogged the room away. They are a tint over the
-   film now, not the atmosphere in their own right. */
 .ambient .orb{
-  position:absolute;border-radius:50%;filter:blur(90px);opacity:.38;
+  position:absolute;border-radius:50%;filter:blur(90px);opacity:.55;
   will-change:transform;
 }
 .ambient .o1{width:46vw;height:46vw;left:-12vw;top:-14vh;background:radial-gradient(circle,var(--neuro),transparent 68%);animation:drift1 34s ease-in-out infinite}
@@ -1186,44 +1182,6 @@ body{
 @keyframes drift1{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(6vw,5vh,0) scale(1.12)}}
 @keyframes drift2{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(-7vw,7vh,0) scale(1.09)}}
 @keyframes drift3{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(5vw,-6vh,0) scale(1.14)}}
-
-/* ---- the film ------------------------------------------------------------ */
-/* A candlelit scholar's desk, playing under the whole app. It is the BOTTOM
-   layer of .ambient: the orbs drift OVER it and the scrim sits over both, so
-   the film reads as the deepest part of the colour field rather than as a
-   video pasted behind the page.
-
-   Everything that keeps it out of the way of reading:
-     · the scrim, which is what actually guarantees contrast — the film never
-       touches the page unmediated;
-     · body[data-view], which fades .ambient to .3 on the four reading screens,
-       and syncFilm(), which calls pause() so the frames stop decoding too;
-     · prefers-reduced-motion, which drops it entirely — poster and all;
-     · the print block above, whose `.ambient *` rule already covers it.
-
-   The clip is a PING-PONG loop, forward then reverse, cut in ffmpeg. The source
-   slowly pushes in, so a plain loop snapped back to the wide framing every six
-   seconds — the one thing a background must never do. Reversed, the push-in
-   becomes a slow breath with no seam at either end. */
-.ambient .film{
-  position:absolute;inset:0;width:100%;height:100%;
-  object-fit:cover;object-position:50% 42%;
-  opacity:.48;
-  /* the source is warm amber against a navy ground; pulling the saturation
-     back and easing the brightness settles it without draining the lamp */
-  filter:saturate(.70) contrast(1.05) brightness(.82);
-}
-/* The scrim is the contrast guarantee, not a mood effect. It is heaviest top
-   and bottom — behind the top bar and below the fold — and lightest across the
-   middle band where the lamp and the figure actually are. */
-.ambient .film-scrim{
-  position:absolute;inset:0;
-  background:
-    linear-gradient(180deg,
-      rgba(7,13,22,.88) 0%, rgba(7,13,22,.44) 18%,
-      rgba(7,13,22,.26) 50%, rgba(7,13,22,.64) 100%),
-    radial-gradient(150% 105% at 50% 48%, transparent 38%, rgba(7,13,22,.46) 100%);
-}
 
 .app{position:relative;z-index:1}
 
@@ -1339,10 +1297,6 @@ button.card:active:not(:disabled){transform:translateY(-1px)}
    background-position/transform loops, so they need explicitly stopping too. */
 @media (prefers-reduced-motion:reduce){
   .ambient .orb{animation:none!important}
-  /* The film is the most insistent motion on the page, so it goes entirely —
-     poster included. Its scrim goes with it, or the page keeps a dark wash
-     that is now shading nothing. */
-  .ambient .film,.ambient .film-scrim{display:none!important}
   .reveal{opacity:1!important;transform:none!important}
   /* the gate is the most animated screen in the app, so it needs the most
      thorough opt-out: orbs, staggered entrances, the halo and the sheen */
@@ -1372,21 +1326,6 @@ button.card:active:not(:disabled){transform:translateY(-1px)}
 }
 :root[data-theme="light"] .ambient .orb{opacity:.20}
 :root[data-theme="light"] .ambient .o4{opacity:.13}
-
-/* The film is a night scene, and light mode is the page in daylight. Rather
-   than drop it — which would read as broken to anyone who only ever uses light
-   mode — it is pulled right back and washed with parchment instead of navy, so
-   it survives as a faint sepia texture rather than a dark rectangle. */
-:root[data-theme="light"] .ambient .film{
-  opacity:.14;filter:saturate(.42) contrast(.94) brightness(1.16);
-}
-:root[data-theme="light"] .ambient .film-scrim{
-  background:
-    linear-gradient(180deg,
-      rgba(247,244,236,.88) 0%, rgba(247,244,236,.72) 24%,
-      rgba(247,244,236,.68) 55%, rgba(247,244,236,.86) 100%),
-    radial-gradient(140% 100% at 50% 50%, rgba(247,244,236,.34) 30%, rgba(247,244,236,.80) 100%);
-}
 
 :root[data-theme="light"] .rail{
   /* the rail keeps its dark gradient; only its edge changes so it does not cut
@@ -1541,20 +1480,10 @@ button.card:hover .mod-art{opacity:1;filter:saturate(1.12)}
 </head>
 <body>
 <!-- Ambient colour field. Fixed and non-interactive, sits behind .app.
-     Its motion is paused by CSS on the reading views — see the cinematic layer.
-     Source order IS the stacking order here (all children are absolute, none
-     carries a z-index): film at the back, orbs tinting it, scrim over both. -->
+     Its motion is paused by CSS on the reading views — see the cinematic layer. -->
 <div class="ambient" aria-hidden="true">
-  <!-- muted + playsinline are what make autoplay legal at all; without both,
-       iOS Safari refuses and we fall back to the poster frame, which is a
-       perfectly good still. A failure here costs atmosphere, never function. -->
-  <video class="film" autoplay muted loop playsinline preload="auto"
-         poster="assets/ambient-library.jpg" tabindex="-1">
-    <source src="assets/ambient-library.mp4" type="video/mp4">
-  </video>
   <span class="orb o1"></span><span class="orb o2"></span>
   <span class="orb o3"></span><span class="orb o4"></span>
-  <span class="film-scrim"></span>
 </div>
 <div class="app">
   <aside class="rail" id="rail">
@@ -2767,32 +2696,11 @@ function go(v){view=v;render();window.scrollTo(0,0);closeRail()}
    Everything else is a browse screen and stays alive. */
 const STILL_VIEWS=['quiz','mock','review','theory'];
 
-/* The ambient film obeys the same gate as the orbs, but CSS can only fade it —
-   a paused <video> is the difference between a still picture and a decoder
-   running behind a clinical stem, which costs battery and, on a slow machine,
-   frames the reader can feel. So the opacity is CSS and the pause is here.
-
-   Reduced motion is checked live rather than cached: the CSS already hides the
-   film, and pausing as well means a viewer who flips the OS setting mid-session
-   is not left with an invisible video still decoding. Every failure path is
-   silent — play() rejects whenever autoplay is blocked, and that is a
-   perfectly acceptable outcome that must never surface as an error. */
-function syncFilm(){
-  const f=document.querySelector('.ambient .film');
-  if(!f) return;
-  const still=STILL_VIEWS.includes(view.name)
-    || window.matchMedia('(prefers-reduced-motion:reduce)').matches;
-  if(still){ f.pause(); return }
-  const p=f.play();
-  if(p&&p.catch) p.catch(()=>{});
-}
-
 function render(){
   renderNav();
   const p=$('page');
   // Drives body[data-view] in CSS — the alive-to-browse / calm-to-read gate.
   document.body.dataset.view=view.name||'home';
-  syncFilm();
   ({home:vHome,module:vModule,quiz:vQuiz,review:vReview,schedule:vSchedule,theory:vTheory,
     moved:vMoved,flagged:vFlagged,mock:vMock}[view.name]||vHome)(p);
   revealOnScroll(p);
