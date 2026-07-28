@@ -196,5 +196,5 @@ published date, consistent with the schedule ending 2026-08-31. **Do not rebuild
 - **Cleanup awaiting approval** — `Opthalmo\Theoritical\PPT\drive-download-…-001.zip` (173 MB)
   duplicates all 29 loose Ophthalmology lecture files, and two Pediatrics PPT files are broken stubs
   (`  Myocardial diseases.pdf` 134 B, `  stenotic lesions.pdf` 120 B). All sit inside `Semester 8\`,
-  which is protected — **nothing is deleted without a yes.**
-- **`files.zip`** at the project root — the original delivery, now redundant. Kept for now.
+  which is protected — **nothing is deleted without a yes.** Also `files.zip` at the project root,
+  the original delivery, now redundant but kept.
