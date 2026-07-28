@@ -513,6 +513,16 @@ outcome, not an error, and it degrades to the poster frame.
 parchment scrim instead of navy — a faint sepia texture. Dropping it outright would read as broken to
 anyone who only ever uses light mode.
 
+**⚠️ PORTRAIT IS A DIFFERENT PICTURE — test it separately, always.** `object-fit:cover` crops to the
+middle of the frame, and at 820×1180 that middle is only **~39%** of a 16:9 source. For this clip the
+middle band is the scholar's unlit back, and the lamp — the one bright thing in it — sits ~14% from
+the left and was cropped away completely. The film shipped **effectively invisible on an iPad**, and
+the user reported it twice before it was found, because **every window size tested was
+desktop-shaped**. Below `5/4` the framing moves to `object-position:18%` and the film runs at `.72`
+against `.48` wide, because in portrait the cards span nearly the full width and only the strip above
+the first card and the gaps between sections still show any film at all. **Render at 820×1180 and
+1180×820 after any change to the film, the scrim, or the page's max width.**
+
 **The film does not appear on the splash or the gate.** Both paint an opaque ground over it. That is
 pre-existing and was not changed; do not "fix" it without deciding the gate should have a new look.
 
