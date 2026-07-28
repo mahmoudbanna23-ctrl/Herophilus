@@ -1,0 +1,389 @@
+SOURCE: Semester 8\Pedo\Theoritical\PPT\10) new Seizures . Birth injuries , Hpoglycemia 2.pdf
+
+Neonatal seizures
+  Definition of seizure
+is defined clinically as a
+paroxysmal alterations in    • Electrographic event with a
+neurologic function, i.e.      pattern characterized by
+motor, behavior and/or         sudden, repetitive , evolving
+autonomic function. This       stereotyped waveform with
+might indicate either          beginning and end .duration
+neurological damage or         usually >10 sec.
+severe illness that needs
+urgent treatment. This
+definition includes
+ 1. Epileptic seizures
+ 2. Non-epileptic seizures
+3. EEG seizures
+Epidemiology
+• The National Neonatal Perinatal Database (NNPD; 2002-03), has reported
+  an incidence of 1.5-5.5 per 1000 live-births.
+
+• The incidence was found to increase with decreasing gestation and birth
+  weight
+
+• Preterm neonates had almost twice the incidence when compared to term
+  neonates (20.8 vs. 8.4 per 1000 livebirths)
+
+• Very low birth weight neonates had more than 4-fold higher incidence
+  (36.1 per 1000 live-births).
+Etiology (HAM)
+• Hypoxic–ischaemic encephalopathy (40%), stroke
+• Intracranial Hemorrhage
+• Kernicterus NIHyperbilirubinemia
+• Meningitis, encephalitis and septicemia (infections )
+• Metabolic hypocalcemia and hypoglycemia
+• IEM
+• Anomalies of brain
+• Abstinence syndrome
+• Others pyridoxine difficency, genetic, epileptic syndromes
+Major causes of neonatal brain injury linked to seizures
+Think structural, hypoxic-ischemic, vascular, infectious, and metabolic causes.
+
+
+
+                    HIE / neonatal                                                     IVH / white matter injury
+                                                                                                                                            Perinatal stroke
+                    encephalopathy                                                     injury
+        Most common acute symptomatic cause in term                          Especially relevant in preterm infants ≤32 weeks    Often presents with focal clonic seizures.
+        term and near-term infants. Seizures often begin                     weeks or VLBW. Germinal matrix fragility,           seizures. Consider arterial ischemic stroke
+        begin in the first 12–24 hours. Eligible infants                     ventricular bleeding, posthemorrhagic               stroke when seizures are lateralized or
+        infants may benefit from therapeutic                                 ventricular dilatation, and white matter injury     or imaging shows unilateral injury.
+        hypothermia.                                                         injury may follow.
+
+
+
+
+                    Infection / inflammation                                           Metabolic causes                                     Structural / genetic
+
+        Meningitis, encephalitis, and sepsis can provoke                     Always check glucose, calcium, magnesium,           Malformations, channelopathies, and
+        neonatal seizures and worsen brain injury.                           sodium, and consider pyridoxine-dependent or        neonatal epilepsies are less common but
+                                                                             other inborn errors when seizures are refractory.   important when seizures are persistent or
+                                                                                                                                 unexplained.
+Identifying the cause of seizure importance
+1- once you treat cause , seizure can stop
+
+2-Prognosis of seizure might depend on the cause
+-Seizures due to SAH and late onset hypocalcemia carry a good
+prognosis for long term neuro-developmental outcome
+-seizures related to hypoglycemia, cerebral malformations and
+meningitis have a high risk for adverse outcome.
+Types of seizures
+Type of seizure   Note
+
+Subtle            Most common type of seizures
+
+Tonic             Preterm patients with IVH
+
+Clonic            Focal clonic of best prognosis
+
+Myoclonic         Worst prognosis of all types
+Subtle convulsions
+
+
+1. Ocular: Tonic horizontal deviation of eyes or sustained eye
+opening with ocular fixation or cycled fluttering
+2. Oral–facial–lingual movements (chewing, lip-smacking)
+3. Limb movements (cycling, paddling)
+4. Autonomic phenomena (tachycardia or bradycardia)
+5. Apnea may be a rare manifestation of seizures. Tachycardia …
+late bradycardia.
+•Approach to seizure: History of seizure
+
+• A complete description of seizures should be obtained from the
+  parents/attendant or by video recording.
+• DD from Jitteriness
+• During awake or sleep :benign sleep myoclonus of neonates.
+• Onset
+-day 0-3 might be related to perinatal asphyxia, ICH, drug abstinence
+and metabolic causes,
+-on day 4-7 may be due to sepsis, meningitis, metabolic causes, and
+developmental defects.
+-5th day seizure familial benign neonatal seizure
+DD jitteriness
+                             jitteriness                        seizures
+Stimulus sensitive           ++                                 -
+Cessation                    Passive flexion and gentle grasp   -
+Frequency of jerk            5-6/sec                            2-3/sec
+Rhythmicity                  Rhythmic oscillation               Fast and slow component
+Abnormal gaze eye movement   Nill                               present
+Autonomic disturbance        Nil                                Increased HR , BP
+aEEG                         Normal                             Abnormal
+DD: Benign neonatal sleep myoclonus
+
+• Occur during non-REM sleep in preterm infants
+• in the first week of life,
+• restraint and benzodiazepines may increase the jerks,
+• Rapidly abolished on arousal
+• normal EEG
+• Antenatal history: IU infection, maternal diabetes, and narcotic addiction,
+• A history of sudden increase in fetal movements
+
+• Perinatal history:
+
+• Feeding history: Appearance of clinical features of sepsis like picture after
+  feeding .IEM, Late onset hypocalcemia.intake Cow’s milk.
+
+• Family history: History of consanguinity in parents, family history of seizures or
+  mental retardation and early fetal/neonatal deaths would be suggestive of inborn
+  errors of metabolism. History of seizures in either parent or sib(s) in the neonatal
+  period may suggest benign familial neonatal convulsions (BFNC).
+• Vital signs:
+• General examination: GA, BWT, pallor, obvious malformations.
+  Jitteriness may be due to hypoglycemia or hypocalcemia.
+• CNS examination: bulging AF may be suggestive of meningitis or
+  intracranial hemorrhage. A detailed neurological and fundus
+  examination for chorioretinitis.
+• Systemic examination: HSM or an abnormal urine odor might suggest
+  of IEM. The skin should be examined for the presence of any
+  neurocutaneous markers. Presence of hypopigmented macules
+  suggestive of tuberous sclerosis.
+Hypopigmented macules Ash leaf appearance in TS
+Investigation
+Diagnostic approach
+Stabilize first, then confirm with EEG and search for the cause.
+
+
+
+
+          1          Immediate stabilization
+                     Airway, breathing, circulation, temperature, bedside glucose. Treat hypoglycemia immediately.
+                     immediately.
+
+
+                     Rapid reversible causes
+          2
+                     Electrolytes, calcium, magnesium, sodium, blood gas, sepsis screen when indicated.
+                                                                                                                               EEG pearl
+                                                                                                                               Many neonatal
+                                                                                                                                 seizures are
+          3          EEG / aEEG                                                                                                electrographic-
+                     Continuous EEG is the diagnostic gold standard. aEEG is helpful for screening and trending but can miss   only. Never rule
+                     but can miss some seizures.                                                                                 them out by
+                                                                                                                                 observation
+                                                                                                                               alone in a high-
+          4          Neuroimaging                                                                                                 risk infant.
+                     Cranial ultrasound for IVH/hydrocephalus; MRI when stroke, HIE pattern, or malformation is suspected.
+                     suspected.
+
+
+          5          Etiology-specific workup
+                     Lumbar puncture, metabolic testing, genetics, or stroke evaluation depending on presentation.
+                     presentation.
+      Neonatal Seizure Detection
+
+
+
+
+ 1. Epileptic seizures: phenomena associated with corresponding EEG seizure activity e.g. clonic
+seizures
+ 2. Non-epileptic seizures: clinical seizures without corresponding EEG correlate e.g. subtle and
+generalized tonic seizures
+3. EEG seizures: Abnormal EEG activity with no clinical correlation.
+CUS (IVH)
+CUS brain anomalies
+MRI
+Acute management and neuroprotection
+Treat the cause and reduce secondary brain injury.
+
+
+
+
+                    Treat reversible causes first                                                                            Continuous
+                                                                      Antiseizure medication
+                    first                                                                                                    monitoring
+       Correct hypoglycemia, hypocalcemia,                  Phenobarbital remains a common first-line drug.       Follow both the clinical exam and EEG
+       hyponatremia, hypomagnesemia, infection, or          drug. Levetiracetam is also widely used.              trajectory; electroclinical uncoupling can
+       infection, or toxin/medication causes whenever       Escalation depends on response, EEG burden,           occur after medication.
+       whenever present. This may stop seizures             burden, and etiology.
+       without long-term antiseizure therapy.
+
+
+
+
+      HIE neuroprotection
+      • For eligible infants with moderate-to-severe HIE born at ≥36 weeks, therapeutic hypothermia is standard of care.
+      • Target temperature is typically 33.5–34.5 °C, started within 6 hours of birth and continued for 72 hours, followed by controlled
+        rewarming.
+      • Therapy should occur in centers with neuromonitoring, neuroimaging, and follow-up expertise.
+                                   Which of the following is the most common clinical
+                                   manifestation of neonatal seizures?
+                                   •A. Generalized tonic-clonic movements
+                                   •B. Focal clonic movements
+                                   •C. Subtle seizures (e.g., rowing, stepping, or blinking)
+                                   •D. Myoclonic jerks
+
+
+
+
+Neonatal neurology teaching deck                                                               Educational use only • video links open externally
+Hypoglycemia
+Hypoglycemia in neonates is associated with long term neurological
+sequalae
+• To know risk factors of hypoglycemia
+• To know the clinical signs of hypoglycemia
+• Enhance early feeding and IV fluid managements
+Definition (no consensus)
+• <30mg/dl in the first 24 hours
+• <40mg/dl from 1-3 days
+• <45mg/dl after 3days
+Etiology
+LGA
+Infants of diabetic mothers
+SGA
+Decreased glycogen stores
+AGA
+But low birth weight <2 kg or preterm <37week
+ Diseases
+Hypoxia, hypothermia, shock, sepsis, RDS, and polycyathemia
+  Pathogenesis
+
+
+-Hyperinsulinemia: PHHI , persistent hyper-insulinemic hypoglycemia
+of infancy
+-Limited glycogen stores: PT and IUGR.
+-Increased glucose use: polycythemia, sepsis, and hypothermia
+-Decreased glycogenolysis or gluconeogenesis eg IEM and adrenal
+insufficiency
+symptoms
+• It is v non specific and mimic many illnesses
+• The most common
+-Not looking well
+-lethargic
+-weak crying
+-poor feeding
+-temperature instability
+-shallow breathing or apnea
+-CNs : Hypotonia, jetterness, convulsion
+Management
+
+             Intravenous dextrose (0.2 g/kg given over 5 to 15 minutes .
+                                10 gram in 100 ml
+                       200mg/kg of glucose = 2ml/kg D10%
+
+                        This bolus is given over 5-15 minutes
+               Plus start GIR 6-8 mg/kg/minute in maintenance fluid
+                         Max conc. In peripheral line 12.5%
+Management
+
+
+
+             Repeat Glucose Check after15-30 minutes,
+             if it is still low add 1-2mg/kg/min glucose
+             to GIR.
+Resistant or Persistent hypoglycemia
+
+    If requirements of glucose infusion rate ≥
+    12mg/kg/minutes suggests resistant hypoglycemia
+    If hypoglycemia persists for more than 1 week
+    despite of adequate management suggest
+    persistent hypoglycemia.
+Resistant or Persistent hypoglycemia
+• We should role out IEM and hyperinsulinemia
+• Resistant or persistent hypoglycemia, consider hydrocortisone,
+  glucagon, diazoxide and octreotide.
+Types of birth injuries
+Birth injuries
+Facial in-suffusion (face presentation )
+Forceps mark
+Scalp swelling
+DD of scalp swellings
+Chignon Baby
+(subcutaneous oedema of scalp due to ventose
+delivery)
+Caput succedaneum :
+oedema of subcutaneous tissues of the presenting
+part, may last for 48 hours.
+Subaponeurotic (sub-galeal ) hemorrhage
+Cephalhematoma subperiosteal bleeding
+  Erb’s Palsy
+ -The injury can either stretch, rupture or avulse the roots of the plexus from
+the spinal cord
+ -It is the most common birth-related brachial plexus injury (50- 60%).
+-It is a lesion of C5 & C6 nerve roots (in some cases C7).
+
+•Risk factors
+•Shoulder dystocia, Fetal macrosomia, Gestational diabetes, Duration of
+second stage of labor(over 60 minutes),Breech presentation
+
+Diagnosis
+•MRI of the shoulder- may demonstrate shoulder dislocation; presence of
+pseudomeningoceles indicates avulsion injury of the affected spinal roots.
+•EMG/Nerve conduction studies- presence of fibrillation potentials indicate
+denervation
+
+Treatment physiotherapy (usually resolve in 4 month…up to 2 years +/-
+surgery
+Thank YOU
+• What is the most common cause of seizure in full term
+• 1-HIE
+• 2- IVH
+• 3- meningitis
+• What is the most common cause of seizure in preterm infant
+• 1- IVH
+• 2-HIE
+• 3- meningitis
+• A 2-day-old term neonate presents with focal seizures. An urgent
+  head ultrasound reveals a focal hyperechoic area in the distribution of
+  the middle cerebral artery. What is the most likely etiology?
+• A. Hypoxic-Ischemic Encephalopathy (HIE)
+• B. Perinatal Arterial Ischemic Stroke (PAIS)
+• C. Intraventricular Hemorrhage (IVH)
+• D. Bacterial Meningitis
+• According to the ILAE neonatal framework, an important feature of
+  neonatal seizures is that they may be:
+  A. Always generalized
+  B. Always clinically obvious
+  C. Electrographic-only
+  D. Always associated with fever
+• Which of the following is a common acute metabolic cause of
+  neonatal seizures?
+  A. Hyperthyroidism
+  B. Hypoglycemia
+  C. Iron deficiency
+  D. Vitamin D deficiency
+• A common neonatal seizure mimic is:
+  A. Jitteriness
+  B. Cyanotic congenital heart disease
+  C. Cleft palate
+  D. Meconium aspiration
+• What is considered the "gold standard" for the diagnosis and
+  monitoring of neonatal seizures?
+• A. Physical examination by a trained neonatologist
+• B. Amplitude-integrated EEG (aEEG)
+• C. Continuous Video-EEG (vEEG) monitoring
+• D. Emergent Cranial MRI
+• A 3-day-old infant born at 32 weeks gestation experiences jitteriness
+  and seizures. Initial labs show a blood glucose of 50 mg/dL and a
+  ionized calcium level of 0.7 mmol/L. Which treatment should be
+  prioritized to stop the seizures?
+• A. Phenobarbital bolus (20 mg/kg)
+• B. 10% Calcium Gluconate infusion (1–2 mL/kg)
+• C. 10% Dextrose bolus (2 mL/kg)
+• D. Pyridoxine (100 mg IV)
+• According to current neonatal guidelines, which medication is
+  typically the first-line agent for treating seizures that do not respond
+  to metabolic correction?
+• A. Levetiracetam
+• B. Phenytoin/Fosphenytoin
+• C. Phenobarbital
+• D. Midazolam
+• When a neonatal seizure is caused by a transient metabolic
+  disturbance, the priority is to:
+  A. Ignore the laboratory abnormality
+  B. Correct the underlying metabolic problem
+  C. Perform lumbar puncture first in every case
+  D. Start long-term antiseizure therapy in every infant
+• Which statement about neonatal seizures is correct?
+  A. They are usually divided into focal and generalized like adult
+  seizures
+  B. Many are clinically silent and detected only on EEG
+  C. They are always associated with major limb jerking
+  D. They never occur in preterm infants
+• A clinical event in a neonate without an EEG correlate is best
+  described as:
+  A. Definitive epileptic seizure
+  B. Always tonic seizure
+  C. Not classified as a neonatal seizure by ILAE
+  D. Always autonomic seizure
+

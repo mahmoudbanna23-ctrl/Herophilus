@@ -1,0 +1,562 @@
+SOURCE: Semester 8\Neuro\Theoritical\PPT\L10) Stroke.pdf
+
+      Bildergebnis für University of Alexandria
+
+
+
+
+Cerebrovascular Stroke
+Dr. Ahmed Elhfnawy (Email: Ahmedmelhfnawy@gmx.de)
+A. Prof. of Neurology, University of Alexandria
+Consultant of Neurology, Werra Meißner Hospital, Germany
+                          Background
+
+►Most common cause of adult disability, stroke is sometimes more
+ worse than death!
+►Fourth most common cause of mortality worldwide
+►Ischemic stroke represents 85% of all strokes
+►Hemorrhagic stroke represents 15% of all strokes
+►The incidence is higher in men
+►The prevalence is higher in women because women survive longer
+ than men
+
+
+
+                                                University of Alexandria
+            Stroke throughout the history
+
+►Stroke was described in a document found in the
+ tomb of the vizier Weshptah related to the 5 dynasty
+                                             th
+
+ (2455 B.C.) in ancient Egypt.
+►As early as the 4 century BC, animal models of
+                   th
+
+ stroke were designed by the Alexandrian anatomists
+ Erasistratus and Herophilus (Zargaran et al., Int J
+ Cardiol 2013).
+
+
+                                       University of Alexandria
+            Stroke throughout the history
+
+►In his Canon of
+ Medicine, Ibn
+ Sina (980–1032
+ A.D.) described
+ stroke.
+                                  Canon of Medicine
+                                       (Source:
+                   http://ddc.aub.edu.lb/projects/saab/avicenna/64
+                                 0/html/S1_323.html)                              Ibn Sina
+                                                                        (source: Golzari et al.,
+                                                                        Anasth Analg 2013)
+
+
+
+
+                                                                 University of Alexandria
+    Bildergebnis für University of Alexandria
+
+
+
+
+Ischemic Cerebrovascular Stroke
+                           Case
+►82-year-old female patient.
+►7:45 am: Weakness and numbness of the right hand (she
+ drops things out of the hand), called her son and could not
+ speak.
+►08:00 am: The son reached to her, she could speak
+ normally.
+►09:00 am: Hand weakness and numbness disappeared.
+►Past medical history: hypertension
+►Examination: normal
+
+                                              University of Alexandria
+                                                  University Hospital of Alexandria
+40% stenosis in the left internal
+        carotid artery
+
+
+                University of Alexandria
+►Transient Aphasia associated with
+ sensorimotor hand weakness on the right side,
+ which lasted for ~ 75 minutes
+►MRI showed brain infarctions
+►Q: Stroke ot TIA?
+
+
+
+                                   University of Alexandria
+ Definition of ischemic stroke and TIA
+  Acute onset focal neurological
+             deficit
+   WHO (1970)                AHA/ASA (2009)
+                                                 No evidence of
+                             Evidence of brain
+                                                 brain infarction
+                               infarction on
+>24h → Stroke   <24h → TIA    neuroimmaging
+                                                        on
+                                                 neuroimmaging
+                                 → Stroke
+                                                      → TIA
+
+
+ 30-50% of patients having the old TIA
+definition→ evidence of brain infarction
+  on MRI (Easton et al., Stroke 2009).
+                                  University of Alexandria
+            Risk factors of ischemic stroke
+
+►Non-modifiable: old age, male sex, genetics, race
+ (stroke is more common among blacks)
+
+►Modifiable: hypertension, diabetes mellitus,
+ dyslipidemia, smoking, sedentary life, bad dietary
+ habits and high salt intake, obesity, stress.
+
+
+
+                                         University of Alexandria
+Cardiovascular Events during World Cup Soccer
+                               The FIFA World Cup 2006 in
+                               Germany started on June 9, 2006,
+                               and ended on July 9, 2006. The
+                               2006 World Cup matches with
+                               German participation are indicated
+                               by numbers 1 through 7: match 1,
+                               Germany versus Costa Rica;
+                               match 2, Germany versus Poland;
+                               match 3, Germany versus Ecuador;
+                               match 4, Germany versus Sweden;
+                               match 5, Germany versus
+                               Argentina; match 6, Germany
+                               versus Italy; and match 7,
+                               Germany versus Portugal (for third-
+                               place standing). Match 8 was the
+                               final match, Italy versus France.
+
+                           Wilpert-Lampen, N Engl J med, 2008
+                                      University of Alexandria
+Anatomy
+
+
+
+
+          University of Alexandria
+        Etiology of ischemic stroke (TOAST classification)
+Stroke subtypes                             Features
+Cardioembolic disease ~30%                  A major cardioembolic source must be detected e.g., atrial fibrillation, mechanical
+                                            prosthetic valve, rheumatic valvular vegetations, left atrial thrombus, left
+                                            ventricular thrombus,.….etc.
+
+Large vessel disease (macroangiopathy) ≥50 % stenosis or occlusion of an extra- or intracranial major vessel supplying the
+~10%                                        territory of the ischemic infarction as shown in duplex or angiographic images
+                                            (CTA/MRA)
+
+Small vessel disease (microangiopathy)      CT/MRI shows a small lacunar infarction
+
+or lacunar infarction ~25%
+
+Other determined etiology 2-3%              Other causes identified like vasculitis, dissection, hypercoagulable state or
+                                            hematologic disorder
+Undetermined etiology 25%                   Two or more causes identified, no etiology identified or incomplete evaluation
+
+                                                                                            University of Alexandria
+                          Clinical Picture
+
+►The clinical picture depends on the affected territory and the extent
+ of the lesion.
+►Cortical signs usually indicate large vessel occlusion (LVO), which
+ means the patient needs mechanical thrombectomy.
+►Cortical signs are aphasia, head and eye deviation ipsilateral to the
+ stroke side, hemigeclect to the hemiplegic side.
+►If you don’t have CT-Angiography, you need to know the cortical
+ signs.
+
+
+
+
+                                                     University of Alexandria
+Anterior circulation                                            Cortical signs usually indicate large vessel occlusion (aphasia, hemineglect to the hemiplegic side,
+(common carotid artery, internal carotid artery, middle head and eye deviation to the ipsilateral side).
+cerebral artery and anterior cerebral artery)                   UMN facial palsy
+                                                                Dysarthria
+                                                                Dysphagia
+                                                                Weakness (hemiparesis, brachiofacial weakness, hand weakness, lower limb weakness)
+                                                                Hyposthesia (hemisensory hyposthesia including the face, hemisensory hyposthesia excluding the
+                                                                face, upper or lower limb hyposthesia)
+                                                                Amaurosis fugax (transient monooccular visual loss due to affection of the ophthalmic artery)
+Posterior circulation                                           Aphasia
+(vertebral artery, basilar artery, posterior cerebral artery)   Dysarthria
+                                                                Dysphagia
+                                                                Disturbed level of consciousness up to coma
+                                                                UMN facial palsy
+                                                                Weakness (hemiparesis, upper or lower limb weakness)
+                                                                Hyposthesia (hemisensory hyposthesia including the face, hemisensory hyposthesia excluding the
+                                                                face, upper or lower limb hyposthesia)
+                                                                Hemianopia or quadrantanopia
+                                                                Ataxia
+                                                                Vertigo with or without focal neurological signs (very important: vertigo alone can be the presentation
+                                                                of stroke)
+                                                                Diplopia                                                  University of Alexandria
+                          Clinical Picture
+
+►Always remember, any patient with acute onset coma or disturbed
+ level of consciousness, basilar artery occlusion could be the cause.
+ Do CT Angiography without any delay.
+
+►Acute onset isolated vertigo is a neurological emergency. You will
+ give the patient betaserc, on the next day the patient will die with
+ basilar artery occlusion.
+
+
+
+
+                                                     University of Alexandria
+FAST
+
+
+
+
+       University of Alexandria
+Pronator drift
+
+
+
+
+                 University of Alexandria
+                     Case
+
+►48 year-old male patient
+►Presented in the neurological ER with transient
+ vertical diplopia, which started in the morning
+ and disappeared 45 minutes later.
+►Medical history: smoking
+►Examination: unremarkable
+
+
+                                    University of Alexandria
+                                        University Hospital of Alexandria
+University of Alexandria
+Case
+       48 year-old male
+       patient presented
+       with left upper
+       quadrantanopia
+
+
+
+
+           University of Alexandria
+Left hemianopia
+
+
+
+
+                  University of Alexandria
+    Left cerebellar infarction (PICA-infarction)
+
+►60 year-old male patient
+►Presented in the
+ neurological ER with
+ recurrent attacks of
+ positional vertigo
+►The attacks occur on
+ standing and gets relieved
+ on lying
+                                      University of Alexandria
+                              Investigations
+A. Immediate neuroimaging:
+   •   CT brain: to exclude hemorrhage and sometimes demo
+   •   CT angiography: if the patient presents within the first 8 hours.
+   •   MRI brain: for doubtful cases, difficult cases and for stroke in young.
+B. Vascular imaging: extra - and transcranial duplex sonography (essential to assess the
+   plaque risk but needs experience) , CTA and/or MRA to look for large vessel occlusion
+   or stenosis. For patients presenting within 8hours → do CTA.
+
+
+C. Laboratory investigations: CBC, urea, creatinine, SGOT, SGPT, FBS, HbA1c, lipid
+   profile (Cholesterol, triglyceride, LDL-cholesterol, HDL-cholesterol).
+D. Cardiac investigations: ECG,      Echocardiography, 24hours monitoring with atrial
+   detection alarm or holter 24h-ECG to look for atrial fibrillation.
+
+
+                                                                        University of Alexandria
+Seagull phenomenon in the right V4 denoting severe stenosis
+
+
+
+
+                                           University of Alexandria
+                              Investigatons
+
+For patients with stroke in young (<50 years):
+
+   o Hypercoagulable profile: Antiphospholipid antibodies: Lupus anticoagulant,
+     Anticardiolipin IgG/IgM, Anti-β2 glycoprotein, Protein C activity,
+     Protein S activity, Antithrombin III, Factor V Leiden mutation,
+     Prothrombin gene mutation)
+
+   o Vasculitic profile: ANA, ANCA, Anti-dsDNA, Rheumatoid factor
+
+   o Bubble test in selected cases
+
+                                                          University of Alexandria
+Bubble test
+
+
+
+
+              University of Alexandria
+Clinical case
+          •     68-year-old male
+          •     Presentation: right brachiofacial
+                weakness since 6 days
+          •     NIHSS 3
+          •     CT brain: no acute pathology
+          •     Past history: DM, HTN, CABG
+                (EF 22%)
+Left internal carotid
+        artery
+Left intracranial vessels   Left intracranial vessels
+     before stenting              after stenting
+                   Acute ischemic Stroke Treatment
+► Aim of treatment: reperfusion as soon as possible (Time is brain!).
+► Never prescribe aspirin before doing CT brain (fatal mistake). Otherwise, if the stroke
+  were hemorrhagic, fatal intracerebral hemorrhage might occur (Never do harm!)
+► Intravenous recombinant tissue plasminogen activator (r-tPA): should be given within 4.5 hours
+  from time of stroke onset after exclusion of contraindications for tPA.
+► Mechanical thrombectomy for patients with large vessel occlusion (LVO) as shown in CTA or
+  MRA: should be done within 8 hours from stroke onset.
+► However, for patients presenting within 8-24 hours, mechanical thrombectomy could be offered
+  for cases with large penumbra demonstrated in CT-perfusion.
+► Intravenous tPA and mechanical thrombectomy should be done as soon as possible. For
+  patients presenting within 4.5h with LVO, bridging thrombolysis should be done. Bridging means
+  the patient should receive tPA and directly transferred to the angiography room for mechanical
+  thrombectomy without awaiting the results of the tPA.
+► For patients with unwitnessed stroke → advanced neuroimaging → if salvageable tissues, tPA
+  and/or mechanical thromectomy can be considered.
+► Monitoring in the stroke unit
+                                                                       University of Alexandria
+Mechanical thrombectomy for MCA occlusion
+
+
+
+
+                                University of Alexandria
+                     Case
+
+►58-year-old male patient
+►The patient developped recurrent attacks of
+ vertigo in the last few days.
+►Presentation to an outpatient clinic→
+ Assurance and sent to home
+
+
+
+                                   University of Alexandria
+►2 hours later → Presentation to the neurological ER
+ with acute onset coma; his wife found him on the
+ floor of the kitchen
+►CT brain: unremarkable
+►CTA: basilar artery occlusion
+
+
+
+
+                                       University of Alexandria
+Basilar artery occlusion
+
+
+
+
+     University of Alexandria
+Mechanical
+thrombectomy; After
+first pass
+
+
+
+
+     University of Alexandria
+►After mechanical thrombectomy → marked
+ improvement; the patient was discharged with
+ mild bilateral lower limb ataxia
+
+
+
+
+                                   University of Alexandria
+    Stroke is a preventable disease
+
+
+
+
+You can prevent 8 out of every 9
+           strokes!!!
+
+
+
+                                University of Alexandria
+                                 Secondary Prevention
+
+► Lifestyle modification (tight control of blood pressure, diabetes mellitus, hypertension,
+  dyslipidemia, smoking cessation, active life, Mediterranean diet with reduction of salt intake,
+  weight loss, stress reduction). Do not underestimate life style modification.
+► Single antiplatelet (Aspirin or clopidogrel) and atorvastatin (aim LDL-cholesterol<70 mg/dl or in
+  patients with ischemic heart disease LDL-cholesterol <55 mg/dl).
+► Double antiplatelets (aspirin and clopidogrel) for the following indications:
+    ► High risk TIA or minor stroke: for 21 days (day 0 is the day of stroke onset)
+    ► Symptomatic intracranial stenosis for 3 months
+► Anticoagulation for patients with high risk cardioembolic stroke (atrial fibrillation)
+► In patients with symptomatic common/internal carotid artery stenosis, i.e. stenosis ipsilateral to
+  the stroke: carotid stenting or carotid endarterectomy
+► There is no role for neurotonics (cerebrolysin, somazina, oxybral….etc) in any
+  neurological disease.
+
+
+
+                                                                                      University of Alexandria
+    Bildergebnis für University of Alexandria
+
+
+
+
+Inracerebral Hemorrhage
+                              Etiology
+
+►Age<40 years: usually arteriovenous malformation.
+►Age >40 years: hypertension is the most common etiology. The
+ hemorrhage occurs in typical hypertensive sites: thalamus, basal
+ ganglia, pons, cerebellum.
+►Other etiologies: anticoagulant therapy, brain tumor, venous sinus
+ thrombosis, dural arteriovenous fistula, coagulopathy, trauma and
+ cerebral amyloid angiopathy.
+
+
+
+
+                                                   University of Alexandria
+                  Clinical Picture
+
+►Acute onset focal neurological deficits
+ (aphasia, dysarthria, hemiparesis..etc.)
+►Increased intracranial pressure with vomiting
+►It is not possible to differentiate between
+ ischemic and hemorrhagic stroke based on
+ the clinical picture.
+
+
+                                     University of Alexandria
+                          Investigations
+
+►CT and/or MRI brain
+►CTA/MRA or in some cases
+ diagnostic cerebral angiography: if
+ the location is atypical for
+ hypertensive ICH or in young
+ patients<40 years.
+
+
+
+
+                                           University of Alexandria
+                             Treatment
+
+►In patients with high blood pressure, immediate reduction of the
+ blood pressure (aim systolic blood pressure<140 mmHg) helps
+ significantly to reduce further bleeding.
+►Supportive measures
+►Reversal of anticoagulation for patients on anticoagulants, for e.g.
+ ICH under warfarin should be reversed using prothrombin complex
+ (PPSB) and vitamin K intravenous, for ICH under heparin, protamin
+ sulfate should be given.
+►In selected cases, surgical evacuation or craniectomy.
+
+
+
+                                                    University of Alexandria
+    Bildergebnis für University of Alexandria
+
+
+
+
+Subarachnoid Hemorrhage
+                             Etiology
+
+►In 85% of the cases, ruptured
+ aneurysm
+►In few cases, traumatic,
+ arteriovenous malformation,
+ dural arteriovenous fistula
+
+
+
+
+                                        University of Alexandria
+                                  Clinical Picture
+
+• A significant proportion of patients die immediately before reaching the hospital.
+
+• Thunderclap headache with two important criteria:
+
+    ► very severe headache described as the worst headache of my life,
+
+    ► Thunderclap, which means sudden onset of severe headache, in contrast to
+       migrainous hedache, which begins with mild headache then progresses to moderate
+       or severe headache within 30-60 minutes.
+
+• According to the location and severity of hemorrhage, the patient might develop acute
+  onset focal neurological deficits (aphasia, dysarthria, hemiparesis..etc.) or coma.
+                                                                     University of Alexandria
+                 Investigations
+
+►CT and/or MRI brain
+►Vascular imaging using
+ CTA/MRA as well as
+ diagnostic cerebral
+ angiography (DSA): to
+ demonstrate the
+ aneurysm.
+
+                                  University of Alexandria
+                          Complications
+
+►Rebleeding: can be fatal, so that urgent treatment of the aneurysm is
+ recommended
+►Vasospasm (peak 4-14 days): the pat. develops focal neurological
+ deficits, can be detected with transcranial duplex. To primarily
+ prevent vasospasm, nimodipine 60 mg/4h from up to 21-28 days is
+ recommended.
+►Hydrocephalus: presents with reduction of the level of
+ consciousness. In case of hydrocephalus → external ventricular
+ drainage should be urgently done.
+
+
+
+                                                    University of Alexandria
+TCD showing vasospasm of the MCA
+
+
+
+
+                           University of Alexandria
+                         Treatment
+
+►Supportive measures including analgesics, for example
+ using paracetamol 1000 mg i.v.
+►Good hydration
+►Nimodipin 60 mg every 4 hours to be started immediately
+ as a prophylaxis against vasoconstriction (monitor the blood
+ pressure)
+►Coiling of the aneurysm as soon as possible (surgical
+ clipping is obsolete)
+
+
+                                             University of Alexandria
+University of Alexandria
+

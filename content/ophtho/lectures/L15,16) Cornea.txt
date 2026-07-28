@@ -1,0 +1,637 @@
+SOURCE: Semester 8\Opthalmo\Theoritical\PPT\L15,16) Cornea.pdf
+
+THE CORNEA
+Diseases & Surgery
+
+
+
+
+Prof. Dr. Amr Said | Alexandria University Eye Center | Cornea & Refractive Surgery
+Lecture Outline
+
+             1 Anatomy & Physiology                      2 Infectious Keratitis
+
+•   Layers & dimensions                   •   Bacterial, Fungal
+•   Transparency & innervation            •   Herpes Simplex / Zoster
+•   Examination techniques                •   Acanthamoeba
+
+
+
+
+           3 Non-Infectious Conditions                     4 Corneal Surgery
+
+•   Corneal ectasia (Keratoconus)         •   Keratoplasty (PKP, DALK, DSAEK, DMEK)
+•   Dystrophies & Degenerations           •   Refractive Surgery (LASIK, PRK, SMILE)
+•   Exposure & Neurotrophic keratopathy   •   Collagen Cross-Linking
+                   SECTION 1
+
+
+
+Corneal Anatomy & Physiology
+   Structure · Transparency · Innervation · Examination
+Corneal Anatomy: Overview
+
+•   Largest refractive surface of the eye – provides ~75% of total              Key Numbers
+    ocular power
+•   Completely avascular; nutrients supplied by aqueous humour        •   Refractive power: ~43 D
+    (posterior) and tears (anterior)                                  •   Diameter: 11.5 × 12 mm
+                                                                      •   Central thickness: 540 µm
+•   Most densely innervated tissue in the body (trigeminal nerve,
+    ophthalmic division)                                              •   Endothelial density: 2,500–
+                                                                          3,000 cells/mm²
+•   Dimensions: 11.5 mm vertical × 12 mm horizontal; ~540 µm
+                                                                      •   Critical density: <700 cells/mm²
+    thick centrally, ~700 µm peripherally                                 → oedema risk
+•   5 classic layers (epithelium → Bowman's → stroma →                •   Innervation: CN V1 (ophthalmic)
+    Descemet's → endothelium)
+•   Endothelium is critical for maintaining transparency via active
+    fluid pumping
+The Five Layers of the Cornea
+
+              ① Epithelium (50 µm)                       ② Bowman's Layer (12 µm)
+
+•   5–6 cell layers thick                     •   Acellular, condensed collagen
+•   Regenerates completely in 5–7 days        •   Does NOT regenerate if damaged
+•   Tight junctions → barrier function
+•   Stains with fluorescein when disrupted
+
+
+
+
+           ③ Stroma (90% of thickness)                  ④ Descemet's + Endothelium
+
+•   Orthogonally arranged collagen lamellae   •   Descemet: basement membrane of endothelium
+•   Keratocytes maintain matrix               •   Endothelium: single cell layer, Na/K ATPase pump
+•   Damage → scarring & opacity               •   Cannot regenerate; cell density critical
+         SECTION 2
+
+
+
+Infectious Keratitis
+ Bacterial · Fungal · Viral · Protozoal
+Bacterial Keratitis: Risk Factors & Common Organisms
+
+                     Risk Factors                                         Key Organisms
+
+ •   Contact lens wear (most common in developed       •   Gram-positive: Staphylococcus aureus, S.
+     world)                                                pneumoniae, Streptococcus pyogenes
+ •   Ocular trauma (agricultural injury – developing   •   Gram-negative: Pseudomonas aeruginosa
+     world)                                                (contact lens – rapid, aggressive)
+ •   Ocular surface disease (dry eye, blepharitis,     •   Neisseria gonorrhoeae (can penetrate intact
+     trichiasis)                                           epithelium)
+ •   Previous corneal surgery (LASIK → atypical        •   Moraxella: elderly, debilitated patients
+     mycobacteria)                                     •   Atypical mycobacteria: post-refractive surgery
+ •   Systemic immunosuppression, diabetes, vitamin     •   In tropics: Fungal must be excluded!
+     A deficiency
+ •   Neurotrophic / exposure keratopathy
+Bacterial Keratitis: Clinical Features & Investigations
+
+•   Symptoms: Pain, photophobia, blurred vision, mucopurulent                Investigation Protocol
+    discharge – acute onset
+•   Signs: Epithelial defect with stromal infiltrate + circumcorneal   •   Corneal scraping (scalpel No.11
+                                                                           / 21G needle)
+    injection
+                                                                       •   Gram stain → Gram +ve (crystal
+                                                                           violet) vs −ve
+                                                                       •   Culture on blood agar,
+                                                                           chocolate agar, Sabouraud
+                                                                           (fungal)
+                                                                       •   Confocal microscopy (in vivo)
+                                                                           for difficult cases
+                                                                       •   ALWAYS scrape before starting
+                                                                           antibiotics
+•   Moderate–severe: stromal oedema, hypopyon,
+    posterior synechiae, chemosis
+•   Severe: Pseudomonas can cause rapid
+    descemetocele → perforation within 24–48 h
+Bacterial Keratitis: Treatment
+
+      CLINICAL PEARL
+  Corneal scraping should be performed in most cases BEFORE starting antibiotics so that the
+  causative organism can be cultured and its sensitivity determined.
+
+
+
+
+  •   First-line: intensive topical fluoroquinolones (ciprofloxacin or ofloxacin) – hourly day 1, then taper
+  •   New generation fluoroquinolones (moxifloxacin, gatifloxacin) for resistant or Gram-positive
+      organisms
+  •   Cycloplegic drops: reduce pain from ciliary spasm, prevent synechiae
+  •   AVOID topical steroids until infectious cause is excluded or controlled
+Fungal Keratitis
+
+                     Key Features                                       Treatment
+
+ •   More common in tropical/subtropical climates   •   Natamycin 5% (filamentous) – first-line
+ •   Filamentous fungi (Aspergillus, Fusarium):     •   Amphotericin B 0.15% (Candida) – first-line
+     trauma with plant matter                       •   Alternatives: voriconazole 1–2%, econazole 1%
+ •   Candida: immunocompromised, contact lens
+     wearers, topical steroids
+ •   Diagnosis often delayed – mimics bacterial
+     keratitis
+ •   Signs: feathery/satellite lesions, dry rough
+     surface, hypopyon
+ •   Culture: Sabouraud agar (may take weeks)
+                          SECTION 2
+
+
+
+         Herpes Simplex Keratitis
+Most common infectious cause of corneal blindness in developed countries
+Herpes Simplex Keratitis: Types & Features
+
+        Epithelial (Dendritic / Geographic)
+
+•   Active virus replication in epithelium
+•   Classic dendritic ulcer with terminal buds
+•   Fluorescein: stains the ulcer bed
+•   Rose Bengal: stains virus-laden margins
+•   Geographic = large irregular lesion
+
+
+
+           Necrotizing Stromal Keratitis
+
+•   Combination of active virus + immune response
+•   Progressive stromal necrosis & thinning
+•   May lead to perforation
+•   Very difficult to treat
+•   Combined antiviral + steroid (careful balance)
+    Disciform (Stromal Immune)
+
+•     Immune-mediated endotheliitis
+•     Central corneal disc-like oedema
+•     Keratic precipitates under area of oedema
+•     Treat with TOPICAL STEROIDS + antivirals
+Herpes Simplex Keratitis: Critical Point
+
+      CLINICAL PEARL
+  NEVER use topical steroids in EPITHELIAL herpes keratitis – this promotes viral replication
+  and can result in corneal perforation.
+
+
+
+
+  •   Steroids ARE used in disciform (stromal immune) keratitis – always combined with antiviral cover
+  •   The dendritic ulcer: look for linear branching pattern with terminal buds on fluorescein staining
+  •   HSV is the commonest infectious cause of corneal disease in developed countries
+  •   Prophylactic oral aciclovir 400 mg twice daily reduces recurrence rate by ~50%
+Herpes Zoster Ophthalmicus (HZO)
+
+•   Varicella-zoster virus reactivation in CN V1 (ophthalmic)               HZO Complications
+    dermatome
+•   1 in 3 people will develop herpes zoster in their lifetime      •   Epithelial keratitis
+                                                                    •   Stromal / disciform keratitis
+•   Hutchinson's sign: vesicles on tip/side of nose → nasociliary
+                                                                    •   Neurotrophic keratopathy
+    branch involved → HIGH risk of ocular complications
+                                                                    •   Scleritis / episcleritis
+•   Corneal manifestations: punctate epithelial keratitis,
+                                                                    •   Post-herpetic neuralgia
+    pseudodendritic ulcer, mucous plaques, disciform keratitis,
+    neurotrophic keratopathy
+•   Note: HZO pseudodendrite is smaller, stellate, lacks terminal
+    buds (cf. HSV dendrite)
+•   Treatment: oral valaciclovir/famciclovir within 72 h of rash
+    onset
+•   Long-term: post-herpetic neuralgia, corneal anaesthesia
+    (neurotrophic keratopathy)
+Acanthamoeba Keratitis
+
+•   Protozoal infection – strongly associated with contact lens               Classic Triad
+    wear + tap water / swimming
+•   Often misdiagnosed initially as HSV or bacterial keratitis     •   Contact lens wearer
+                                                                   •   Exposure to water
+•   Pathognomonic sign: RING infiltrate (late, pathognomonic) +
+                                                                   •   Severe pain out of proportion
+    perineural infiltrate (early)
+                                                                   •   → THINK Acanthamoeba!
+•   Severe, disproportionate pain (out of proportion to clinical
+    signs)
+•   Diagnosis: confocal microscopy (demonstrates cysts
+    in vivo), corneal scraping & culture on non-nutrient
+    agar with E. coli overlay
+•   Treatment: PHMB (polyhexamethylene biguanide) +
+    propamidine isethionate hourly for weeks;
+    treatment is prolonged
+•   Prevention: never use tap water with contact
+    lenses; always use lens solution
+Red Eye with Corneal Involvement: Differential Diagnosis
+
+                  Bacterial Keratitis                 Herpes Simplex Keratitis
+
+•   Rapid onset                         •   Dendritic / geographic ulcer
+•   Mucopurulent discharge              •   Fluorescein: ulcer bed
+•   Large central/paracentral ulcer     •   Rose Bengal: margins
+•   Hypopyon common                     •   Recurrent episodes
+•   Contact lens history                •   NO steroids in epithelial stage
+
+
+
+              Acanthamoeba Keratitis                       Fungal Keratitis
+
+•   Contact lens + water exposure       •   Trauma (plant matter) history
+•   Severe pain                         •   Feathery satellite lesions
+•   Perineural infiltrate (early)       •   Slower onset
+•   Ring infiltrate (late)              •   Topical steroids history
+•   Often misdiagnosed initially        •   Sabouraud culture needed
+                     SECTION 3
+
+
+
+Non-Infectious Corneal Conditions
+     Ectasia · Dystrophies · Degenerations · Neurotrophic
+Corneal Ectasia:
+
+•   Group of conditions characterized by progressive corneal       Ectasia Types
+    thinning & protrusion
+•   Main types: Keratoconus (most common), Pellucid marginal
+    degeneration, Keratoglobus
+•   Iatrogenic ectasia: post-LASIK (due to insufficient residual
+    stromal bed)
+•   All cause irregular astigmatism → reduced best spectacle-
+    corrected visual acuity
+•   Screening for ectasia is MANDATORY before refractive surgery
+    (corneal topography)
+Keratoconus: Diagnosis & Management
+
+                       Diagnosis
+
+ •   Progressive bilateral (often asymmetric) corneal
+     thinning and protrusion
+ •   Onset: puberty; progression until 3rd–4th
+     decade
+ •   Risk factors: eye rubbing, atopy, Down syndrome,
+     connective tissue disorders
+ •   Vogt's striae: vertical stromal stress lines (stretch
+     marks)
+ •   Munson's sign: V-shaped deformity of lower lid
+     on downgaze
+ •   Acute hydrops: sudden stromal oedema from
+     Descemet's rupture
+•   Topography: inferior steepening, asymmetric bowtie
+    pattern
+                            Management
+
+
+
+
+•   1. Spectacles (early, mild)
+•   2. Soft / rigid contact lensesManagement
+•   3. Scleral lenses (advanced astigmatism)
+•   4. Corneal collagen cross-linking (CXL) – stabilize
+    progression with UV-A + riboflavin
+•   5. Intracorneal ring segments (ICRS / Intacs)
+•   6. Keratoplasty: DALK (preferred) or PKP
+•     Avoid eye rubbing!
+Corneal Collagen Cross-Linking (CXL): A Modern Tool
+
+     CLINICAL PEARL
+  CXL uses riboflavin (vitamin B2) drops to photosensitize the cornea, then UV-A irradiation to
+  strengthen collagen crosslinks – it can halt or even partially reverse ectasia progression.
+
+
+
+
+ •   Indication: documented progressive keratoconus in young patients
+
+
+ •   CXL does NOT improve vision – it stabilizes progression
+ •   Combined CXL + ICRS or topography-guided ablation for selected patients
+Corneal Dystrophies: Classification & Key Features
+
+•   Definition: bilateral, primarily non-inflammatory, heritable,        Must-Know Dystrophies
+    progressive opacifying disorders
+•   Classified by affected layer: Epithelial, Bowman's, Stromal,    •   Epithelial basement membrane
+                                                                        (map-dot-fingerprint): recurrent
+    Descemet's/Endothelial                                              erosions
+•   Most are autosomal dominant (AD); some recessive (AR)           •   Granular (TGFB1 gene):
+                                                                        breadcrumb opacities, clear
+                                                                        between lesions, AD
+                                                                    •   Lattice: amyloid deposits
+                                                                        (Congo red +), lattice lines, AD
+                                                                    •   Macular: glycosaminoglycans,
+                                                                        AR, earliest onset, worst vision
+                                                                    •   Fuchs' endothelial: guttata,
+                                                                        oedema, worst in morning
+                                                                    •   DSAEK / DMEK for Fuchs'
+                                                                        dystrophy
+Fuchs' Endothelial Dystrophy
+
+           Pathophysiology & Diagnosis                     Management
+
+ •   Abnormal endothelial cell function → loss of
+     dehydrating pump
+ •   Collagen deposited on Descemet's membrane →
+     guttata (excrescences)
+ •   Early: guttata visible on specular reflection (dark
+     spots disrupting mosaic)
+ •   Progressive → 'beaten metal' endothelium
+ •   Corneal oedema (central stromal → epithelial) →
+     bullous keratopathy
+ •   Characteristic: worse vision in morning (↑
+     oedema overnight)
+ •   Risk factors: female sex, older age (5th–6th
+     decade)
+Corneal Degenerations
+
+•   Age-related: Arcus senilis (lipid arc at limbus – physiological in       Band Keratopathy Causes
+    elderly, check lipids if <45 yrs)
+                                                                         •   Chronic anterior uveitis
+                                                                         •   Hypercalcaemia
+                                                                         •   Silicone oil in AC
+                                                                         •   End-stage ocular disease
+                                                                         •   Gout (hyperuricaemia)
+                                                                         •   Familial / hereditary
+                                                                         •   Idiopathic age-related
+•   Band keratopathy: calcium deposits in Bowman's
+    layer in interpalpebral zone; associated with chronic
+    ocular disease, hypercalcaemia, chronic uveitis
+•   Treatment of band keratopathy: EDTA chelation
+    (effective) or excimer laser PTK
+•   Pterygium: fibrovascular growth from conjunctiva
+    encroaching onto cornea; associated with UV
+    exposure; surgical excision if affecting vision or
+    inducing astigmatism
+•   Pinguecula: yellowish nasal/temporal conjunctival
+    lesion; does NOT cross limbus (cf. pterygium)
+•   Salzmann's nodular degeneration: subepithelial
+    fibrous nodules; can cause irregular astigmatism
+•   Neurotrophic keratopathy: trigeminal anaesthesia
+    → epithelial breakdown → persistent epithelial
+    defect → melting
+•   Causes of neurotrophic: HSV, HZV, acoustic neuroma
+    surgery, DM, topical anaesthetic abuse
+•   Treatment: preservative-free lubrication, bandage
+    lens, tarsorrhaphy, cenegermin (nerve growth
+    factor) eye drops
+Peripheral Corneal Ulceration & Neurotrophic Keratopathy
+
+•   Marginal keratitis: immune-mediated reaction to
+    Staphylococcal antigens; peripheral subepithelial infiltrates
+    with clear limbal zone; treat blepharitis + topical steroids
+•   Mooren's ulcer: painful, progressive peripheral ulceration with
+    overhanging central edge; idiopathic immune-mediated;
+    difficult to treat
+•   Peripheral ulcerative keratitis (PUK): associated with systemic
+    vasculitis (RA, GPA, SLE) – URGENT systemic work-up required
+                          Exposure Keratopathy
+
+
+
+
+•   Incomplete lid closure → inferior epithelial breakdown
+•   Causes: VII nerve palsy (Bell's), thyroid eye disease,
+    proptosis
+•   Treatment: lubricants, taping eyelid, moisture chamber,
+    tarsorrhaphy
+                SECTION 4
+
+
+
+Corneal & Refractive Surgery
+     Keratoplasty · Refractive Procedures · CXL
+Keratoplasty: Overview & Indications
+
+•   Corneal transplantation (grafting) = replacement of diseased               Contraindications
+    host tissue with healthy donor cornea
+•   Three main types: Penetrating keratoplasty (PKP), Anterior         •   Active uncontrolled infection
+    lamellar (DALK, SALK), Endothelial (DSAEK, DMEK)                   •   Dry eye / ocular surface failure
+                                                                       •   Uncontrolled glaucoma
+•   General indications:
+                                                                       •   Poor visual potential
+•    • Optical: keratoconus, scarring, dystrophies, pseudophakic           (retinal/optic nerve disease)
+    bullous keratopathy
+                                                                       •   Severe systemic illness
+•    • Tectonic: restore integrity – descemetocele, perforation        •   Patient non-compliance risk
+•    • Therapeutic: remove infected tissue (active keratitis failing
+    medical therapy)
+•   Corneal grafting is the most commonly performed and most
+    successful solid organ transplant
+Types of Keratoplasty: Comparison
+
+                  PKP (Penetrating)                                    DALK (Deep Anterior Lamellar)
+
+•   Full-thickness replacement                               •   Preserves host endothelium
+•   All layers transplanted                                  •   Removes epithelium + stroma down to Descemet's
+•   Broad indications: scarring, perforations, failed DALK   •   Big Bubble technique preferred
+•   Higher rejection rate; slower visual recovery            •   Preferred for keratoconus, stromal dystrophies
+•   Sutures in situ 12–18 months                             •   No endothelial rejection risk; lower overall rejection
+
+
+
+                 DSAEK (Endothelial)                                          DMEK (Endothelial)
+
+•   Descemet stripping + posterior stroma transplanted       •   Only Descemet's + endothelium transplanted (5–10
+•   Small incision (~5 mm)                                       µm)
+•   For Fuchs', bullous keratopathy                          •   Faster visual recovery, lowest rejection rate
+•   Faster recovery than PKP; lower rejection                •   Technically more demanding (graft handling)
+•   Slight hyperopic shift; some interface haze              •   Best visual outcomes of all keratoplasty types
+                                                             •   Preferred for Fuchs' dystrophy
+Corneal Graft Rejection: Recognition & Emergency Treatment
+
+     CLINICAL PEARL
+  In a patient with acute corneal graft rejection, EARLY intensive treatment greatly improves
+  the likelihood of reversing the rejection episode and saving the graft.
+
+
+
+
+ •   Signs of rejection (remember: KSS – Krachmer Rejection Line, Subepithelial infiltrates, Stromal
+     oedema):
+ •   • Epithelial rejection: elevated rejection line of abnormal epithelium (3 months post-op)
+ •   • Stromal/endothelial rejection: KPs on donor endothelium (Krachmer spots), corneal oedema,
+     Khodadoust line
+ •   Symptoms: sudden blurred vision, pain, redness, photophobia → EMERGENCY
+ •   Treatment: INTENSIVE topical steroids (prednisolone acetate 1% hourly), systemic steroids for
+     severe cases
+Refractive Surgery: Principles & Patient Selection
+
+•   Goal: permanently alter corneal curvature to reduce/eliminate            Pre-op Must-Checks
+    refractive error
+•   Mandatory pre-op assessment: corneal topography,                  •   Corneal topography – RULE OUT
+                                                                          ectasia
+    pachymetry, pupil size, tear film, refraction stability (≥1 yr)
+                                                                      •   Pachymetry – minimum
+•   Contraindications: forme fruste keratoconus, thin cornea (<500        thickness
+    µm), unstable refraction, dry eye, active inflammation            •   Stable refraction ≥1 year
+•   Age requirement: typically ≥18–21 years with stable refraction    •   Adequate tear film (Schirmer's,
+•   Main procedures: LASIK, PRK (surface ablation), SMILE, phakic         TBUT)
+    IOL                                                               •   Pupil size in dim light
+                                                                      •   Discontinue CLs before mapping
+Laser Refractive Procedures: Comparison
+
+                          LASIK                                               PRK (Surface Ablation)
+
+•   Flap created (microkeratome / femtosecond)                 •   Epithelium removed; ablation directly on Bowman's
+•   Excimer laser ablates exposed stroma                       •   No flap → safer for contact sports / thin corneas
+•   Fast recovery (1–2 days)                                   •   Slower recovery (3–5 days pain; weeks for clarity)
+•   Risk: flap dislocation, ectasia, DLK ('sands of Sahara')   •   Risk: subepithelial haze (MMC applied to prevent)
+•   Wide range: myopia up to −10 D                             •   Suitable when LASIK is contraindicated
+
+
+
+                      FemtoLASIK                                   SMILE (Small Incision Lenticule Extraction)
+
+•   Femtosecond laser creates more precise, thinner flap       •   Femtosecond laser cuts lenticule inside intact cornea
+•   Reduces flap complications vs. microkeratome               •   Removed via 4 mm incision → no flap
+•   Better predictability; no blade used                       •   Less corneal nerve damage → less dry eye
+•   Allows treatment in patients with mild thin corneas        •   Lower infection/ectasia risk; minimal flap issues
+•   Still carries all LASIK-related risks                      •   Currently: myopia + astigmatism; hyperopia limited
+Screening for Refractive Surgery: Avoiding Ectasia
+
+•   Ectasia is the most feared long-term complication of LASIK            Safe Refractive Surgery Checklist
+•   Risk factors for post-LASIK ectasia: forme fruste keratoconus,
+    thin cornea, young age, high myopia, low residual stromal bed     •      ✓ Regular topography pattern
+    (RSB <300 µm)                                                     •      ✓ Central thickness ≥500 µm
+                                                                      •      ✓ RSB target ≥300 µm post-op
+•   Corneal topography: mandatory – asymmetric bowtie, inferior
+    steepening = contraindication                                     •      ✓ Stable refraction ≥1 yr
+                                                                      •      ✓ No forme fruste keratoconus
+•   Pachymetry: central thickness <500 µm is a relative
+    contraindication; RSB <300 µm = absolute contraindication for     •      ✓ Age ≥21 years
+    LASIK                                                             •      ✓ Informed consent
+
+•   If ectasia develops post-LASIK: CXL (collagen cross-linking) to
+    halt progression
+Clinical Scenario 1: The Contact Lens Wearer
+
+     CLINICAL PEARL
+  A 25-year-old contact lens wearer presents with acute severe eye pain, photophobia, and
+  mucopurulent discharge. Slit lamp shows a 3mm central infiltrate with epithelial defect,
+  hypopyon, and stromal oedema. What is the IMMEDIATE management?
+
+
+
+ •   Correct Answer: Corneal scraping for Gram stain & culture → then start intensive topical
+     fluoroquinolone (ciprofloxacin / moxifloxacin) hourly
+ •   Key Teaching: Always scrape BEFORE starting antibiotics
+ •   Suspect: Pseudomonas aeruginosa (contact lens, rapid progression)
+ •   Add cycloplegic (cyclopentolate 1%) for pain and synechiae prevention
+ •   NEVER prescribe topical anaesthetics for outpatient analgesia
+ •   Admit if: central ulcer >2 mm, threat of perforation, poor compliance, or no improvement in 48 h
+Clinical Scenario 2: The Dendritic Ulcer
+
+      CLINICAL PEARL
+  A 30-year-old presents with a 3-day history of mild eye pain, photophobia, and redness. Slit
+  lamp with fluorescein shows a linear branching lesion with terminal buds in the central
+  cornea. What should you do?
+
+
+
+  •   Correct Answer: Topical antiviral (aciclovir 3% ointment 5x/day or ganciclovir gel) – NO TOPICAL
+      STEROIDS
+  •   Diagnosis: Herpes simplex epithelial (dendritic) keratitis
+  •   Key feature: terminal buds on branches = pathognomonic of HSV dendrite
+  •   Do NOT use steroids at this stage → risk of geographic ulcer → perforation
+  •   Debridement of infected epithelium (swab) can be adjunctive
+  •   Recurrences: consider prophylactic oral aciclovir 400 mg BD
+Clinical Scenario 3: The Blurred Morning Vision
+
+     CLINICAL PEARL
+  A 55-year-old woman presents with gradually worsening blurred vision, worse in the
+  morning and improving through the day. Slit lamp shows subtle guttata on the endothelium
+  and mild central corneal oedema. What is the diagnosis?
+
+
+
+ •   Correct Answer: Fuchs' Endothelial Corneal Dystrophy
+ •   Classic symptom: morning visual blur (overnight corneal dehydration fails → maximum oedema on
+     waking; evaporation reduces oedema through day)
+ •   Guttata: collagen excrescences on Descemet's → 'beaten metal' endothelium on specular
+     microscopy
+ •   Conservative: hypertonic NaCl 5%, hair dryer held 10 cm from face
+ •   Surgical: DMEK (preferred) or DSAEK when vision significantly affected
+ •   Endothelial cell density: monitor with specular microscopy
+Corneal Trauma: Approach & Management
+
+•   Corneal abrasion: fluorescein staining delineates defect; treat         Chemical Burn Priority
+    with topical antibiotic ± cycloplegic; usually heals in 24–48 h
+•   Corneal foreign body: remove under slit lamp with 25G needle      •     IRRIGATE FIRST
+    / burr; check for retained intraocular foreign body (CT scan)     •   1. Immediate irrigation – 1–2 L
+                                                                          saline
+•   Rust ring: after iron FB; remove at 24 h with burr (softens
+                                                                      •   2. Check pH (target: 7.0–7.4)
+    overnight)
+                                                                      •   3. Sweep fornices for particles
+•   Chemical injury: IMMEDIATE copious irrigation (1–2 L saline or
+                                                                      •   4. THEN examine and refer
+    water) BEFORE any examination or referral; pH test to confirm
+                                                                      •   Do NOT delay for examination!
+    neutrality
+•   Alkali burns are MORE severe than acid burns (saponification –
+    penetrate deeper)
+•   Classify by Roper-Hall grading (I–IV based on limbal ischaemia)
+•   Penetrating injury: shield eye; nil by mouth; urgent surgical
+    repair; explore for IOFB
+Common Prescribing Errors in Corneal Disease
+
+
+         Topical Steroids in Bacterial Keratitis              Topical Steroids in Epithelial HSV
+
+•   Can potentiate infection                       •   Promotes viral replication
+•   Delay healing                                  •   Can cause geographic ulcer
+•   Wait until infection is controlled             •   Risk of perforation
+•   Then use judiciously under ophthalmologist     •   Only use in STROMAL / disciform stage with antiviral
+    supervision                                        cover
+
+
+
+
+          Topical Anaesthetics for Analgesia                Refractive Surgery with Keratoconus
+
+•   Inhibit epithelial healing                     •   LASIK is CONTRAINDICATED in keratoconus
+•   Cause stromal melting                          •   Can cause severe post-op ectasia
+•   Anaesthetic keratopathy → perforation          •   Always screen with topography first
+•   NEVER prescribe for prolonged outpatient use   •   CXL + ICRS may be appropriate instead
+Summary: Infectious Keratitis at a Glance
+
+                   Disease → Clue                                         First-Line Treatment
+
+ •   Bacterial: contact lens / trauma → purulent ulcer    •   Bacterial: topical fluoroquinolone (hourly)
+     + hypopyon                                           •   Pseudomonas: moxifloxacin or ciprofloxacin
+ •   Pseudomonas: rapid perforation risk →                    hourly
+     EMERGENCY                                            •   Fungal filamentous: natamycin 5%
+ •   Fungal: plant trauma / tropics → feathery            •   HSV epithelial: topical aciclovir 3%
+     satellite lesions → slow
+                                                          •   HSV disciform: topical steroid + aciclovir
+ •   Candida: immunocompromised → fluffy white
+     infiltrate                                           •   HZO: oral valaciclovir within 72 h
+
+ •   HSV epithelial: dendritic ulcer with terminal buds   •   Acanthamoeba: PHMB + propamidine
+     → NO steroids
+ •   HSV disciform: disc oedema + KPs → steroids +
+     antivirals
+ •   HZO: Hutchinson sign → ocular complications
+ •   Acanthamoeba: CL + water → ring infiltrate +
+     severe pain
+Top 10 Take-Home Messages
+
+
+                      Messages 1–5                                               Messages 6–10
+
+•   Always scrape corneal ulcers before starting            •   Acanthamoeba = contact lens + water + severe pain
+    antibiotics                                                 → think of it!
+•   Never prescribe topical anaesthetics for outpatient     •   Fuchs' dystrophy: morning blur that improves
+    analgesia                                                   through the day
+•   No steroids in epithelial HSV keratitis                 •   DMEK has the best outcomes for Fuchs' (lowest
+•   Hutchinson sign → suspect ocular HZO complications          rejection, fastest recovery)
+•   Keratoconus screening is mandatory before refractive    •   Residual stromal bed <300 µm = absolute LASIK
+    surgery                                                     contraindication
+                  Red Flags in Cornea                       •   Post-LASIK ectasia: treat with CXL; do NOT offer more
+                                                                laser
+•   Central ulcer with hypopyon → URGENT                    •   Kanski's Clinical Ophthalmology (9th Ed.) – Chapter 7
+•   Ring infiltrate → Acanthamoeba until proven                 &8
+    otherwise                                               •   Basic Ophthalmology Essentials (Allen & Rowe)
+•   Keratoconus-like topography → do NOT operate            •   AAO BCSC Section 8: External Disease & Cornea
+    (LASIK)                                                 •   NICE Guideline: Corneal Topography Prior to
+•   New blurred vision in keratoplasty patient → rule out       Refractive Surgery
+    rejection                                               •   EuroTimes / Journal of Refractive Surgery for current
+                 Thank You
+               Questions & Discussion
+
+             Prof. Dr. Amr Ahmed Said Radwan
+
+Assistant Professor of Ophthalmology · Alexandria University Eye Center
+                 Cornea & Refractive Surgery consultant
+

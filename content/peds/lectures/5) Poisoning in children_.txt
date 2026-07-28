@@ -1,0 +1,264 @@
+SOURCE: Semester 8\Pedo\Theoritical\PPT\5) Poisoning in children_.pptx
+SLIDES: 29
+
+--- slide 1 ---
+Poisoning in children
+Hadir
+ M. 
+Hassouna
+Ass. Prof Of Pediatrics
+Head Of Pediatric Intensive Care Unit
+Alexandria University
+
+--- slide 2 ---
+Accidental
+Iatrogenic 
+Intentional  
+Poisoning in children
+
+--- slide 3 ---
+
+
+--- slide 4 ---
+There has been a marked reduction in the incidence of severe poisoning from accidental ingestion by young children
+ 
+Reasons for this include:
+• the introduction of child-resistant containers for many medicines and household products and use of blister packs for medicines
+• reduction in the number of tablets available per pack in analgesics bought over the counter.
+
+--- slide 5 ---
+Adolescents attempting self-harm typically ingest medications commonly found in their environment – most often 
+paracetamol
+ and ibuprofen
+. 
+They are likely to have ingested much larger quantities of tablets than
+ young children and are therefore more likely to suffer significant toxicological effects. 
+Recreational drugs vary greatly in their potency and effects
+
+--- slide 6 ---
+Young children who have been exposed to agents of 
+low toxicity 
+and are 
+asymptomatic
+ can usually be discharged with advice to return if symptoms develop.
+
+--- slide 7 ---
+Management of a poisoned child
+
+--- slide 8 ---
+
+
+--- slide 9 ---
+Some poisons and their treatment
+
+--- slide 10 ---
+Paracetamol
+ 
+Early: abdominal pain, vomiting
+Later (12 h to 24 h): liver failure
+Management:
+Risk assessed by measuring plasma 
+paracetamol
+ concentration
+Treat with intravenous 
+acetylcysteine
+ if concentration is high or liver function abnormal
+
+--- slide 11 ---
+Button batteries 
+Abdominal pain
+Gut perforation and stricture formation
+Management: 
+X-ray of chest and abdomen to confirm ingestion and identify position
+Endoscopic removal is recommended if in the 
+oesophagus
+, the object fails to pass, or symptoms are present (e.g. abdominal pain or 
+melaena
+)
+
+--- slide 12 ---
+Carbon monoxide
+Early: headache, nausea
+Later: confusion, drowsiness leading to coma
+Management:
+High-flow oxygen to hasten dissociation of carbon monoxide
+The role of hyperbaric oxygen therapy is unclear
+
+--- slide 13 ---
+Salysilates
+ 
+Early: vomiting, tinnitus
+Later: respiratory alkalosis followed by metabolic acidosis
+Management:
+Plasma salicylate concentration 2–4 h after ingestion helps to estimate toxicity
+Alkalinization
+ of urine increases excretion of salicylates
+Haemodialysis
+ also effectively removes salicylate
+
+--- slide 14 ---
+Tricyclic antidepressants
+Early: tachycardia, 
+drowsiness,dry
+ mouth
+Later: arrhythmias, seizures
+Management:
+Treatment of arrhythmias with sodium bicarbonate
+Support breathing
+
+--- slide 15 ---
+Iron
+ 
+Initial: 
+vomiting, 
+diarrhoea
+, 
+haematemesis
+, 
+melaena
+, 
+acute gastric ulceration
+Latent period of improvement
+6–12 h later: 
+drowsiness, coma, shock, liver failure with 
+hypoglycaemia
+, and convulsions
+Long term: 
+gut strictures
+
+--- slide 16 ---
+Management:
+Serious toxicity if &gt;75 mg/kg elemental iron ingested
+Serum iron level 4 h after ingestion is the best laboratory measure of severity
+Intravenous 
+deferoxamine
+ chelates iron and should be administered in cases of moderate-to-severe toxicity
+Iron
+ 
+
+--- slide 17 ---
+Organophosphorus
+(pesticides)
+Cholinergic effects: 
+salivation, lacrimation, urination, diarrhea and vomiting, muscle weakness, cramps and paralysis, 
+bradycardia.and
+ hypotension
+Central nervous system effects: 
+seizures and coma
+
+--- slide 18 ---
+Supportive care
+Atropine (often in large doses) as an anticholinergic agent
+Pralidoxime
+ to reactivate 
+acetylcholinesterase
+Organophosphorus
+(pesticides)
+
+--- slide 19 ---
+Alcohol
+(accidental or experimenting by older children)
+Hypoglycaemia
+Coma
+Respiratory failure
+Management:
+Monitor blood glucose and correct if necessary. 
+Support ventilation if required
+Blood alcohol levels may help to predict severity
+
+--- slide 20 ---
+ABCDE
+Airway and breathing
+ Look, listen, and feel for: 
+Airway obstruction or respiratory distress
+ Work of breathing (respiratory effort)
+ Respiratory rate 
+Stridor, wheeze
+Auscultation for air entry 
+Cyanosis
+ Oxygen saturation
+
+--- slide 21 ---
+ABCDE
+Circulation
+ Feel and assess:
+ 
+Heart rate
+ Pulse volume
+ Capillary refill time 
+Blood pressure
+
+--- slide 22 ---
+ABCDE
+Disability
+ Observe and note: 
+Level of consciousness  
+AVPU
+Posture – 
+hypotonia
+, decorticate, 
+decerebrate
+ Pupil size and reactivity 
+Exposure
+
+--- slide 23 ---
+Chronic environmental poisoning
+Hand-to-mouth activities during play and meals
+Their small body size makes them more susceptible to doses that would not harm an adult
+Their developing brains are at greater risk of permanent damage due to neurotoxic effects of exposure.
+Lead
+ 
+
+--- slide 24 ---
+symptoms of chronic lead exposure:
+• 
+behavioural
+ changes
+• hyperactivity or decreased activity
+• developmental delay or loss of developmental milestones
+• chronic lead nephropathy
+
+--- slide 25 ---
+More significant exposure may result in:
+abdominal pain, vomiting, constipation
+headache and ataxia
+lethargy, seizures, and coma
+
+--- slide 26 ---
+The most important treatment is to prevent further
+ 
+exposure to lead.
+ Chelation therapy can be effective in
+ 
+reversing acute symptoms such as encephalopathy
+Treatment is complex, particularly as lead is deposited in
+ 
+bone and therefore has a long half-life
+
+--- slide 27 ---
+Other chronic intoxications
+ chronic exposure to organophosphate and 
+carbamate
+ pesticides have adverse effects on 
+neurodevelopment and 
+behaviour
+.
+ In addition, there is evidence associating some pesticides with an increased incidence of 
+leukaemia
+ and brain 
+tumours
+.
+
+--- slide 28 ---
+Summary
+Accidental poisoning in children 
+Common in toddlers and young children
+Older children may ingest potentially harmful substances as a form of self-harm or as part of risk-taking 
+behaviour
+.
+Most substances do not cause serious harm.
+When an ingestion has occurred, identify the agent and assess its toxicity to plan management.
+Assess the social circumstances behind why it happened.
+
+--- slide 29 ---
+

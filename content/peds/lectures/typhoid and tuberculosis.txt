@@ -1,0 +1,226 @@
+SOURCE: Semester 8\Pedo\Theoritical\PPT\typhoid and tuberculosis.pdf
+
+                                                 Typhoid fever
+
+Typhoid fever (enteric fever) is a systemic, potentially life-threatening infection that
+primarily affects children in developing regions.
+World Health Organization (WHO)
+
+Causative Organism
+    •    Salmonella Typhi: The primary agent, a Gram-negative bacterium belonging to
+         the Salmonella enterica species.
+
+    •    Salmonella Paratyphi: Serotypes A, B, and C cause a similar but generally
+         milder illness known as paratyphoid fever.
+
+         Cleveland Clinic
+
+
+Clinical Presentation (Pediatric Focus)
+Presentation varies significantly by age, often starting 6–30 days after exposure.
+Infectious Disease Advisor
+
+    •    General Symptoms: Stepwise high fever (up to 40°C/104°F), headache,
+         malaise, and loss of appetite.
+
+    •    Infants & Toddlers (<5 years): Frequently present with nonspecific symptoms
+         like diarrhea, vomiting, and febrile seizures.
+
+    •    Older Children: More likely to experience abdominal pain, tenderness,
+         and constipation.
+
+    •    Physical Signs:
+
+              o   Rose Spots: Transient pink macules on the chest/abdomen (seen in
+                  <20% of cases).
+
+              o   Organomegaly: Hepatosplenomegaly (enlarged liver and spleen) is
+                  common.
+
+              o   Relative Bradycardia: A pulse slower than expected for the degree of
+                  fever.
+
+                  National Institutes of Health (NIH) | (.gov)
+Complications
+Occur in 10–15% of hospitalized children, typically in the 2nd or 3rd week.
+www.pidjournal.com
+
+    •   Gastrointestinal: Intestinal hemorrhage or perforation (terminal ileum),
+        paralytic ileus, and acalculous cholecystitis.
+
+    •   Neurological: Typhoid encephalopathy (delirium, coma), meningitis, and ataxia.
+
+    •   Other: Myocarditis, pneumonia, and hepatitis (transaminitis).
+
+        Pediatric EM Morsels
+
+
+Diagnostic Investigations
+    •   Culture (Gold Standard):
+
+             o    Blood Culture: Most sensitive in the 1st week; requires 5 mL of blood in
+                  children.
+
+             o    Bone Marrow Culture: Most sensitive (80–95%) and remains positive
+                  even after starting antibiotics.
+
+    •   Serology:
+
+             o    Widal Test: Measures O and H antibodies; often unreliable due to cross-
+                  reactivity and false positives.
+
+             o    Rapid Tests: Typhidot (IgM/IgG) and TUBEX are faster but have variable
+                  accuracy.
+
+    •   Supportive Tests: CBC may show leukopenia (low WBC) or leukocytosis in
+        young children; mild elevation of liver enzymes is common.
+
+        National Institutes of Health (NIH) | (.gov)
+
+
+Treatment
+    •   Antibiotics: The mainstay of treatment. Common choices include:
+
+             o    Azithromycin or Ceftriaxone for empiric treatment.
+
+             o    Ciprofloxacin (fluoroquinolone) where susceptibility is confirmed.
+
+             o    Carbapenems for extensively drug-resistant (XDR) strains.
+  •   Supportive Care: Oral or IV rehydration and fever management.
+
+  •   Adjuncts: High-dose dexamethasone may be used for severe encephalopathy
+      or shock.
+
+      Centers for Disease Control and Prevention | CDC (.gov)
+
+
+Prevention
+  •   Vaccination:
+
+          o    Typhoid Conjugate Vaccine (TCV): Recommended by WHO for children
+               from 6 months of age.
+
+          o    Oral (Ty21a) and Injectable (ViPS) vaccines are available for older
+               children.
+
+  •   WASH Strategy: Ensuring Water safety, Adequate Sanitation, and Hygiene
+      (e.g., handwashing, boiling water, peeling fruit).
+
+      World Health Organization (WHO)
+                                        Tuberculosis (TB)
+
+Tuberculosis (TB) in children is a complex, often "paucibacillary" (low bacterial load)
+disease that requires a high index of suspicion due to its varied and often non-specific
+presentations.
+1. Causative Organism
+   •   Mycobacterium tuberculosis Complex: The primary agent is M.
+       tuberculosis (human TB). Other members include M. bovis (often from
+       unpasteurized dairy) and M. africanum .
+
+   •   Characteristics: Acid-fast, slow-growing, aerobic bacilli that spread through
+       airborne droplets.
+
+       MDPI
+
+
+2. Clinical Presentation in Pediatrics
+Presentation varies significantly by age and immune status:
+   • Infants (<2 years): Highest risk for rapid progression to severe, disseminated
+      disease. Symptoms are often non-specific: poor feeding, failure to thrive,
+       lethargy, or persistent "pneumonia" that fails to respond to standard antibiotics.
+
+   •   Children (2–10 years): Often asymptomatic or "oligosymptomatic" (mild
+       symptoms). May present with a chronic, non-productive cough (>2 weeks), low-
+       grade fever, and weight loss.
+
+   •   Adolescents (>10 years): Often show "adult-type" TB with productive cough,
+       night sweats, and cavitary lesions on chest X-ray.
+
+   •   Extrapulmonary TB (EPTB): More common in children than adults (up to 25%).
+
+          o   Lymphadenitis (Scrofula): Most common EPTB; painless, firm, matted
+              cervical lymph nodes.
+
+          o   TB Meningitis: Medical emergency; presents with irritability, vomiting,
+              headache, and neck stiffness.
+
+          o   Miliary TB: Disseminated disease with "millet seed" spots on X-ray;
+              presents with hepatosplenomegaly and respiratory distress.
+
+              National Institutes of Health (NIH) |
+3. Complications
+  •   Pulmonary: Bronchial obstruction (from enlarged nodes), bronchiectasis, and
+      permanent lung scarring.
+
+  •   Neurological: Hydrocephalus, stroke, and permanent disability (deafness,
+      blindness, or intellectual impairment) following meningitis.
+
+  •   Skeletal: Pott’s Disease (spinal TB) leading to "gibbus" (humpback) deformity
+      and possible paraplegia.
+
+  •   Abdominal: Intestinal obstruction and tuberculous peritonitis.
+
+      National Institutes of Health (NIH) |
+
+
+4. Diagnostic Investigations
+  •   Screening: Tuberculin Skin Test (TST/Mantoux) or Interferon-Gamma
+      Release Assays (IGRA). IGRA is preferred in BCG-vaccinated children to avoid
+      false positives.
+
+  •   Radiology: Chest X-ray (CXR) looking for hilar lymphadenopathy (lateral view is
+      essential) or miliary patterns.
+
+  •   Microbiology:
+
+           o    Gastric Aspirate: Used for children who cannot expectorate; collected
+                over 3 consecutive mornings.
+
+           o    Induced Sputum: Using hypertonic saline nebulization.
+
+           o    Stool Testing: A newer WHO-recommended child-friendly specimen
+                for GeneXpert Ultra.
+
+  •   Molecular: GeneXpert MTB/RIF Ultra is the preferred initial test to detect TB
+      DNA and rifampicin resistance.
+
+      Centers for Disease Control and Prevention | CDC (.gov)
+5. Treatment Regimens
+Treatment is divided into an Intensive Phase (2 months) and a Continuation
+Phase (4–10 months).
+Condition                              Intensive Phase (2 months)   Continuation Phase   Total Duration
+
+
+Non-severe Pulmonary TB                HRZ (E)                      HR                   4–6 Months
+
+
+Severe/Cavitary Pulmonary              HRZE                         HR                   6 Months
+
+
+TB Meningitis / Bone TB                HRZE + Ethionamide           HR                   12 Months
+
+   •   Key: H (Isoniazid), R (Rifampicin), Z (Pyrazinamide), E (Ethambutol).
+
+   •   Complications:
+
+            o    Meningitis/Pericarditis: Add Corticosteroids (e.g., Prednisolone) for 4–
+                 6 weeks to reduce inflammation and pressure.
+
+            o    Hydrocephalus: May require a Ventriculoperitoneal (VP) Shunt.
+
+                 National Institutes of Health (NIH) |
+
+
+6. Prevention
+   •   BCG Vaccine: Given at birth; prevents severe forms like miliary TB and
+       meningitis but has variable efficacy against adult-type pulmonary TB.
+
+   •   TB Preventive Treatment (TPT): For children exposed to active cases.
+       Common regimens include 3 months of weekly Isoniazid + Rifapentine (3HP) or
+       4 months of daily Rifampin (4R).
+
+   •   Contact Tracing: Systematically screening all household contacts of an index
+       case.
+
+       National Institutes of Health
+

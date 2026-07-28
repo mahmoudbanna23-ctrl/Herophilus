@@ -1,0 +1,378 @@
+SOURCE: Semester 8\ENT\Theoritical\PPT\L7) Assessment And Management Of Swallowing Disorders.pdf
+
+Assessment And Management
+   Of Swallowing Disorders
+      Rania M Abdou Mustafa , MD, PhD
+   Professor of Phoniatrics- ORL Department
+              Faculty of Medicine
+             Alexandria University
+ILOs
+1. Define swallowing disorders (dysphagia) and describe clinical significance.
+2. Identify the anatomy and physiology of normal swallowing, including oral, pharyngeal, and esophageal
+   phases.
+3. Classify the types and causes of dysphagia (oropharyngeal vs esophageal; neurological, structural,
+   iatrogenic, etc.).
+4. Recognize the common signs and symptoms and potential complications (e.g., aspiration, malnutrition,
+   dehydration).
+5. Introduction to Performing a focused clinical history and bedside swallowing assessment.
+6. Identify indications for and interpret basic findings of key instrumental assessments (e.g., videofluoroscopic
+   swallow study, fiberoptic endoscopic evaluation of swallowing – FEES, manometry), enumerate advantages
+   and disadvantages of each tool
+7. Formulate a basic management plan for patients with dysphagia, including referral pathways.
+8. Apply clinical reasoning to select appropriate investigations for different patient scenarios.
+9. Outline multidisciplinary approaches involving ENT, Phoniatrics and nutrition teams
+     Defining Oropharyngeal Dysphagia
+
+                Is a clinical symptom
+
+The difficulty to effectively move the alimentary bolus
+         from the mouth to the esophagus.
+                      Cabre et al 2010
+Etiology
+Neurogenic                 Structural                        Others
+• CNS – stroke,            • Structural damage from          • Presbyphagia
+  neurodegenerative          intubation or disease (PED)     • Alzheimers –dementia
+  diseases (Parkinson’s    • Changes after head and neck     • GERD
+  disease, ALS,MS)           surgery
+• Brain tumors             • Changes after cancer surgery
+                             (morphological defects in the
+• Primary damage to the      mouth and throat, damage to
+  neuromuscular junction     the nerves supplying these
+  (myasthenia gravis,…)      areas)
+• Primary muscle damage    • Damage after adjuvant
+  (myopathies, …)            treatment (radiotherapy)
+Symptoms /
+Complications
+• Drooling and poor oral management of secretions and/or bolus;
+• Ineffective chewing/Extra time needed to chew or swallow;
+• Oral residue
+• Inability to maintain lip closure, leading to anterior loss of bolus
+• Nasal regurgitation
+• Complaints of food “sticking” or (globus sensation);
+• Changes in vocal quality (Wet or gurgly sounding voice) .
+• Coughing or throat clearing
+• Avoidance of certain foods/drinks
+• Weight loss, malnutrition, or dehydration (saito et al, 2017)
+• Acute or recurring aspiration pneumonia (dibardino & wunderink, 2015)
+Dysphagia evaluation
+Protocol of Evaluation of Dysphagia
+1. Screening
+2. Assessment
+  • Non-Instrumental
+  • Instrumental
+     • FEES
+     • VFSS
+     • High resolution impedance Manometry
+     • CT neck
+1. Screening
+• Swallowing screening is a pass/fail procedure its purpose is to
+  identify:
+   • The likelihood that dysphagia exists and
+   • The need for further swallowing assessment
+                                    (ASHA, 2009).
+• Screening does not provide a detailed description of the patient's
+  swallow function.
+                                    (WHO, 2001).
+1. Screening
+Screening protocols may include
+• The administration of an interview or a questionnaire that addresses the
+  patient's perception of and/or concern with swallowing function.
+• Observation
+   • signs and symptoms of oropharyngeal swallowing dysfunction.
+   • routine or planned mealtime situations, if indicated.
+• Administration of the 3-oz water swallow test
+                               (Depippo, Holas, & Reding, 1992)
+• Recommendation for additional assessment.
+2. Assessment
+The purpose of assessment is to identify and describe
+• Typical and atypical parameters of structures and functions affecting
+  swallowing.
+• Effects of swallowing impairments on the individual's activities .
+• Determine whether the patient is an appropriate candidate for
+  treatment and/or management:
+   • Medical stability,
+   • Cognitive status,
+   • Nutritional status
+   • Psychosocial, environmental, and behavioral factors
+2. Assessment
+Non-Instrumental Swallowing Assessment
+• A case history.
+• An oral mechanism exam, including one or more of the following:
+   • Cranial nerve assessment.
+   • Structural assessment of face, jaw, lips, tongue, hard and soft palate, oral
+     pharynx, and oral mucosa.
+   • Functional assessment of muscles and structures used in swallowing,
+     including symmetry, sensation,strength, tone, range and rate of motion, and
+     coordination of movement.
+   • Observation of head–neck control, posture, oral reflexes, and involuntary
+     movements.
+2. Assessment
+• Overall physical, social, behavioral, and cognitive /communicative
+  status.
+• Speech and vocal quality at baseline and any changes following bolus
+  presentations.
+• Monitoring heart rate and oxygen saturation using pulse oximetry.
+• Alterations in bolus delivery and/or use of rehabilitative or
+  compensatory techniques, as indicated.
+2. Assessment
+• Evaluation of the method (spoon, cup, self-fed, examiner-fed) and
+  rate of bolus presentation.
+• Secretion management skills.
+• Labial seal and anterior spillage, and evidence of oral control.
+• Signs and symptoms of penetration and/or aspiration, such as throat
+  clearing or coughing before/during/after the swallow.
+2. Assessment
+• Consistency of skills across the feeding (fatigue on feeding/swallowing
+  safety).
+• Ability to clear the airway, and assessment of cough strength.
+             (Martin-Harris et al., 2005)
+2. Assessment
+
+Instrumental Swallowing Assessment
+• Use instrumental techniques to evaluate oral, pharyngeal, laryngeal,
+  upper esophageal, and respiratory function as they apply to normal
+  and abnormal swallowing.
+
+• To determine the appropriateness and the effectiveness of a variety
+  of treatment strategies.
+2. Assessment
+Indications :
+• Concerns regarding the safety and efficiency of swallowing
+   • Nutritional compromise
+   • Pulmonary compromise
+   • Concerns for airway safety (e.g., choking)
+• Identify disordered swallowing physiology.
+• Inconsistent signs and symptoms in the findings of a non-instrumental
+  examination
+• Chronic progressive degenerative conditions.
+2. Assessment
+Contraindications:
+• Medically unstable.
+• Unable to participate in an instrumental examination (cognitive ,
+  alertness).
+• If the instrumental assessment would not change the clinical
+  management of the patient.
+2. Assessment
+• Instrumental evaluations:
+   • The Fiberoptic Endoscopic Evaluation Of Swallowing (FEES).
+
+
+
+
+                                                             Kay Pentax
+• New: distal chip camera systems give excellent detail.
+•
+Fiberoptic endoscopic evaluation of swallowing
+function (FEES)
+• Advantages:
+   • Is a procedure that may be completed in outpatient clinic .
+   • Frequent use without concerns of radiation exposure .
+   • Assess current progress and effectiveness of therapy.
+• Disadvantages:
+   • Does not permit visualization of either the oral or the esophageal phase of swallowing.
+   • Passage of the bolus and movement of the pharyngeal structures cannot be
+     observed during the swallow because of "white-out” effect.
+           •   Epiglottic movement
+           •   Pharyngeal constriction
+           •   UES opening
+           •   Tongue base retraction
+           •   Laryngeal closure         (Langmore, kenneth, & Olsen, 1988).
+2. Assessment
+• Instrumental evaluations:
+   • The Videofluroscopic Swallowing Study (VFSS)
+
+
+
+
+                                                    Koichiro Matsuo 2016
+Videofluoroscopic Swallowing Study (VFSS)
+• Is a radiographic procedure that provides a direct, dynamic
+  view of oral, pharyngeal, and upper esophageal function
+  (Logemann, 1986).
+• Providing the patient with various consistencies of food and
+  liquid mixed with barium, which allows the bolus to be
+  visualized in real time on an x-ray during the swallow.
+Videofluoroscopic Swallowing Study (VFSS)
+• The VFSS is beneficial in
+   • Identifying whether aspiration has occurred
+   • Assessment of amount and timing of aspiration (silent aspiration)
+   • Assessment of anatomy and pathophysiology of swallow function
+     in the oral and pharyngeal phases.
+   • Influence of compensatory strategies and diet changes
+                              (Logemann, 2000).
+The advantage of VFSS over FEES        The disadvantage of VFSS over FEES
+• The real-time visualization of the   • Radiation exposure, which is
+  bolus from the oral to the             sometimes overcome by limiting
+  esophageal cavity.                     the number of observations and
+• The visualization of the               follow-up,
+  pharyngoesophageal segment.          • Need for an x-ray unit which
+                                         makes it unsuitable as a bedside
+                                         examination
+• Normal lateral radiographic view of the oropharynx taken from a VFSS
+Food presentation in VFSS
+The patient is asked to swallow three swallows of each of the following
+
+• (a)3 ml, 5 and 10 ml thin liquid (20% barium sulfate and 80% water);
+• (b) 3, 5, and 10 ml thick liquid (50% barium and 50% water);
+• (c) 3, 5, 10 ml semisolid (pudding mixed with barium powder) and
+• (d) ¼ of a cookie (coated with pudding + barium powder)
+                                     (Abou-Elsaad, 2002)
+High resolution impedance Manometry
+• Is performed to assess motor function of the esophagus.
+• A catheter with several electronic pressure probes is passed into the
+  stomach to measure esophageal contractions and to define upper
+  and lower esophageal responses to swallowing.
+• Limitations:
+    • No automatic analysis program
+    • Improper placement of the manometric catheter
+    • Could not detect aspiration
+    • Could not represent the degree of pharyngeal residue.
+Management
+                   • After the swallowing evaluation,
+           • A DECISION must be made about the Patient’s :
+1.   Potential for functional improvement of the swallow disorder.
+2.   Safety in swallowing liquid and solid food.
+        The Decision
+        Is Based On
+
+
+ Physiologic     Ability To
+ Nature Of       Alter The
+The Disorder    Dysfunction
+
+
+ Volume or
+                 Postural     Rehabilitation
+consistency
+                adjustment      strategies
+  change
+• The primary goals of dysphagia intervention are to
+   • Safely support adequate nutrition and hydration and return to safe and efficient oral intake .
+   • Determine the optimum feeding methods/technique to maximize swallowing safety and
+     feeding efficiency;
+   • Minimize the risk of pulmonary complications;
+   • Reduce patient and caregiver burden while maximizing the patient's quality of life; and
+   • Develop treatment plans to improve safety and efficiency of the swallow.
+                                                                                        ASHA 2019
+                  Primary care
+                   physician
+        Dentist                   Pulmonologist
+
+
+
+
+Dietician                                Phoniatrician
+                   Primary care
+                       giver
+
+
+
+    Nurse                                  SLP
+
+
+              Physio
+                              OT
+             therapist
+                 • Minimizing symptoms and adverse
+                   consequences of dysphagia
+Compensatory     • Do not change swallowing physiology.
+
+
+
+                 • Concerted training
+                 • Optimize the normal swallowing
+Rehabilitative     physiology
+ Compensatory Interventions
+                                                THE
+❖Swallowing maneuvers:                       THERAPIST
+
+  • To improve the safety or efficiency of
+
+   swallow function.
+
+  • Used as short-term compensations
+ Compensatory Interventions
+                                            THE
+   ❖Postural changes :
+                                         THERAPIST
+        • Body posture changes
+        • Head posture changes
+
+
+
+ Alter Speed /            To Reduce
+Flow Direction           Aspiration Or
+  Of A Bolus               Residue
+Sura et al 2012
+Compensatory Interventions
+                                            THE
+ ❖Dietary modification:                  THERAPIST
+      ➢Modifying the consistency of
+       food and/or liquid.
+      ➢To improve the safety and/or
+       ease of oral consumption and
+       thus,
+      ➢Maintain safe and adequate oral
+       intake.
+                       Dietary modification
+                                       As the Diet is
+                                       modified with
+                                       altered:
+                                       Taste,
+                                       Texture, &
+                                       Appearance.
+
+                                         Decreased:
+                                         Acceptability
+                                         Adherence &
+                                         Malnutrition.
+
+What is the IDDSI framework? International Dysphagia Diet
+Standardization Initiative (IDDSI).https://iddsi.org/framework/
+Rehabilitative Interventions
+
+• This could be achieved by either :
+
+❖Highly structured programs,McNeill dysphagia therapy program (MDTP)
+
+❖Individual clinician-designed treatment plans.
+TECHNOLOGY IN DYSPHAGIA
+❖Neuromuscular electrical   ❖Pharyngeal electrical stimulation
+ stimulation (NMES),         (PES)
+TECHNOLOGY IN DYSPHAGIA
+❖Transcranial magnetic   ❖Transcranial direct current
+ stimulation.             stimulation
+                                           Enhance functional
+               Mechanism of              recovery by promoting
+Modalities        action
+                                          plastic changes of the
+                                           cortical swallowing
+                                                 network.
+               Peripheral (sNMES, PES)       Central (rTMS, tDCs)
+
+   Central
+ Stimulation
+ Strategies.
+
+  Peripheral
+ Stimulation
+ Strategies.
+                                               ©Heike Blum, Department of Neurology,
+                                               University Hospital Münster, Germany
+Nutritional support
+Nutritional support: Enteral Nutrition
+
+ Nasogastric tube
+  • Short periods of time (< 2 months)
+  • When there is no risk of (GERD).
+ Percutaneous endoscopic gastrostomy
+  • Long-term EN (>4–6 weeks)
+  • With chronic or progressive diseases
+Nutritional support: Oral Nutritional
+Supplements
+❖The main goal of ONS is to:
+   • Increase total nutrient consumption,
+   • Maintain or recover nutritional status .
+   • Maintain or improve QOL, and
+   • Reduce morbimortality
+

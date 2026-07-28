@@ -1,0 +1,383 @@
+SOURCE: Semester 8\Pedo\Theoritical\PPT\8) COMMON PROBLEMS IN THE TERM NEWBORN.pdf
+
+COMMON PROBLEMS
+   IN THE TERM
+    NEWBORN
+   DR HASSAN HESHMAT
+ ASSISTANT PROFESSOR OF PEDIATRICS
+    DIVISION OF NEONATOLOGY
+                 NEONATAL JAUNDICE
+                GENERAL CONSIDERATIONS
+
+ Sixty five percent of newborns develop visible jaundice with a total serum
+  bilirubin (TSB) level higher than 6 mg/dL during the first week of life.
+ Approximately       8%–10%     of     newborns      develop     excessive
+  hyperbilirubinemia.
+ Extremely high and potentially dangerous TSB levels are rare but can cause
+  kernicterus, characterized by injury to the basal ganglia and brainstem.
+                          BILIRUBIN METABOLISM
+
+
+ Bilirubin is produced by the breakdown of heme (iron protoporphyrin) in the
+  reticuloendothelial system and bone marrow.
+ Heme is cleaved by heme oxygenase to iron, which is conserved; carbon monoxide,
+  which is exhaled; and biliverdin, which is converted to bilirubin by bilirubin reductase.
+ This unconjugated bilirubin is bound to albumin and carried to the liver, where it is taken
+  up by hepatocytes.
+ In the presence of the enzyme uridyl diphosphoglycyronyl transferase (UDPGT;
+  glucuronyl transferase), bilirubin is conjugated to one or two glucuronide molecules.
+                     BILIRUBIN METABOLISM
+
+
+ Conjugated bilirubin is then excreted through the bile to the intestine. In
+  the presence of normal gut flora, conjugated bilirubin is metabolized and
+  excreted in the stool.
+ Absence of gut flora and slow GI motility, both characteristics of the
+  newborn, cause stasis of conjugated bilirubin in the intestinal lumen, where
+  mucosal βglucuronidase removes the glucuronide molecules and leaves
+  unconjugated bilirubin to be reabsorbed (enterohepatic circulation).
+                   TYPES OF HYPERBILIRUBINEMIA
+
+
+ Excess accumulation of bilirubin in blood depends on both the rate of bilirubin production
+  and the rate of excretion.
+ It is best determined by comparing an hour specific TSB level to a standard curve of TSB
+  concentration by age in hours.
+ Serum bilirubin can be fractionated to quantify an unconjugated and conjugated component.
+ Most of the neonatal jaundice presenting in the first week of life is due to unconjugated
+  hyperbilirubinemia.
+ Jaundice due to conjugated hyperbilirubinemia is seen in some congenital infections,
+  intrahepatic cholestasis, or extrahepatic obstruction of the biliary tract.
+                             PHYSIOLOGIC JAUNDICE
+
+ESSENTIALS OF DIAGNOSIS & TYPICAL FEATURES
+ Visible jaundice appearing after 24 hours of age.
+ Total bilirubin rises by < 5 mg/dL (86 mmol/L) per day.
+ Peak bilirubin occurs at 3–5 days of age, with a total bilirubin of no more
+  than 15 mg/dL (258 mmol/L).
+ Visible jaundice resolves by 1 week in the fullterm infant and by 2 weeks
+  in the preterm infant.
+Factors contributing to physiologic jaundice in neonates include low UDPGT activity, relatively high red cell mass,
+absence of intestinal flora, slow intestinal motility, and increased enterohepatic circulation of bilirubin in the first
+days of life.
+             PATHOLOGIC UNCONJUGATED
+                 HYPERBILIRUBINEMIA
+
+ Pathologic unconjugated hyperbilirubinemia can be grouped into two main
+  categories: overproduction of bilirubin or decreased conjugation of
+  bilirubin.
+ The TSB is a reflection of the balance between these processes. Visible
+  jaundice with a TSB greater than 5 mg/dL before 24 hours of age is most
+  commonly a result of significant hemolysis.
+           CAUSES OF PATHOLOGIC UNCONJUGATED
+                   HYPERBILIRUBINEMIA.
+Overproduction of bilirubin
+1. Hemolytic causes of increased bilirubin production (reticulocyte count elevated)
+a. Immune mediated:Positive direct antibody (DAT, Coombs) test
+       ABO blood group incompatibility,
+       Rh incompatibility,
+       minor blood group antigen incompatibility
+
+
+b. Nonimmune: negative direct antibody (DAT, Coombs) test
+       Abnormal red cell shapes: spherocytosis, elliptocytosis, pyknocytosis, stomatocytosis
+       Red cell enzyme abnormalities: glucose6phosphate
+       Dehydrogenase deficiency, pyruvate kinase deficiency, hexokinase deficiency, other
+       Metabolic defects
+CAUSES OF PATHOLOGIC UNCONJUGATED
+        HYPERBILIRUBINEMIA.
+
+2. Nonhemolytic causes of increased bilirubin production (reticulocyte count normal)
+a. Extravascular hemorrhage: cephalohematoma, extensive bruising, intracranial hemorrhage
+b. Polycythemia
+c. Exaggerated enterohepatic circulation of bilirubin: bowel obstruction, functional ileus
+d. Breastfeeding–
+     Associated jaundice (inadequate intake of breast milk causing exaggerated enterohepatic circulation of bilirubin)
+Decreased rate of conjugation
+1. CriglerNajjar
+     Syndrome (rare, severe)
+a. Type I glucuronyl transferase deficiency, autosomalrecessive
+b. Type II glucuronyl transferase deficiency, autosomaldominant
+2. Gilbert syndrome (common, milder)
+3. Hypothyroidism
+               A. INCREASED BILIRUBIN PRODUCTION
+
+
+            1. Antibody mediated hemolysis (Coombs test–positive)
+A. ABO BLOOD GROUP INCOMPATIBILITY
+
+ This finding can accompany any pregnancy in a type O mother. Hemolysis is usually mild, but the
+  severity is unpredictable because of variability in the amount of naturally occurring maternal anti-A
+  or anti-B IgG antibodies.
+ Although 15% of pregnancies are “setups” for ABO incompatibility (mother O, infant A or B), only
+  33% of infants in such cases have a positive direct Coombs test and less than 10% of these infants
+  develop jaundice that requires therapy.
+ Since maternal antibodies may persist for several months after birth, the newborn may become
+  progressively more anemic over the first few weeks of life, occasionally to the point of requiring
+  transfusion.
+                                                B. RH-ISOIMMUNIZATION
+
+
+ This hemolytic process is less common, more severe, and more predictable than ABO incompatibility.
+ The severity increases with each immunized pregnancy.
+    Most Rhdisease can be prevented by giving hightiter Rho (D) immune globulin to the Rhnegative woman after invasive procedures during
+    pregnancy or after miscarriage, abortion, or delivery of an Rhpositive infant.
+ Affected neonates are often anemic at birth, and continued hemolysis rapidly causes hyperbilirubinemia and worsening anemia.
+ The most severe form of Rhisoimmunization, erythroblastosis fetalis, is characterized by lifethreatening anemia, generalized edema, and fetal
+  or neonatal heart failure.
+ Without antenatal intervention, fetal or neonatal death often results. The cornerstone of antenatal management is transfusion of the fetus
+  with Rhnegative cells, either directly into the umbilical vein or into the fetal abdominal cavity. Phototherapy is usually started in these infants
+  upon delivery, with exchange transfusion frequently needed.
+    Intravenous immune globulin (IVIG) given to the infant as soon as the diagnosis is made may decrease the need for exchange transfusion.
+    Ongoing hemolysis occurs until all maternal antibodies are gone; therefore, these infants require monitoring for 2–3 months for recurrent
+    anemia.
+                     HEREDITARY SPHEROCYTOSIS
+
+
+
+A. HEREDITARY SPHEROCYTOSIS
+ This condition is the most common of the red cell membrane defects and causes
+  hemolysis by decreasing red cell deformability.
+ Affected infants may have hyperbilirubinemia severe enough to require exchange
+  transfusion.
+ Splenomegaly may be present.
+ Diagnosis is suspected by peripheral blood smear and family history
+                            G6PD DEFICIENCY
+
+
+
+ This condition is the most common red cell enzyme defect causing hemolysis, especially
+  in infants of African, Mediterranean, or Asian descent. Although the disorder is Xlinked,
+  female heterozygotes are also at increased risk of hyperbilirubinemia due to X-
+  chromosome inactivation. Their increased bilirubin production is further exaggerated by a
+  decreased rate of bilirubin conjugation. Since G6PD enzyme activity is high in
+  reticulocytes, neonates with a large number of reticulocytes may have falsely normal
+  enzyme tests. A low G6PD level should always raise suspicion. Repeat testing in suspect
+  cases with initially normal results is indicated at3 months of age
+     3- NONHEMOLYTIC INCREASED BILIRUBIN
+               PRODUCTION
+
+
+ Enclosed hemorrhage, such as cephalohematoma, intracranial hemorrhage,
+  or extensive bruising in the skin, can lead to jaundice.
+ Polycythemia leads to jaundice by increased red cell mass, with increased
+  numbers of cells reaching senescence daily.
+ Bowel obstruction, functional or mechanical, leads to an increased
+  enterohepatic circulation of bilirubin.
+                 Decreased Rate of Conjugation
+1-UDPGT deficiency: Crigler Najjar syndrome type I (complete deficiency, autosomal
+         recessive) and type II (partial deficiency, autosomal dominant)
+
+
+
+ These rare conditions result from mutations in the UDPGT gene that
+  cause complete or nearly complete absence of enzyme activity. Both can
+  cause severe unconjugated hyperbilirubinemia, bilirubin encephalopathy,
+  and death if untreated.
+ In type II, the enzyme can be induced with phenobarbital, which may lower
+  bilirubin levels by 30%–80%. Liver transplantation is curative.
+                      2. GILBERT SYNDROME
+
+
+ This is a common mild autosomal dominant disorder characterized by decreased
+  hepatic UDPGT activity caused by genetic polymorphism at the promoter region
+  of the UDPGT gene.
+ Approximately 9% of the population is homozygous, and 42% is heterozygous for
+  this abnormality.
+ Affected individuals tend to develop hyperbilirubinemia in the presence of
+  conditions that increase bilirubin load and are more likely to have prolonged
+  neonatal jaundice and breastmilk jaundice.
+  C. Hyperbilirubinemia Caused by Unknown or Multiple Factors
+
+
+
+
+1. Racial differences
+ Asians (23%) are more likely than whites (10%–13%) or African Americans (4%) to have a peak neonatal
+  TSB greater than 12 mg/dL (206 mmol/L). It is likely that these differences result from racial variations in
+  prevalence of UDPGT gene polymorphisms or associated G6PD deficiency.
+
+2. Prematurity
+ Premature infants often have poor enteral intake, delayed stooling, and increased enterohepatic
+  circulation, as well as a shorter red cell life.
+ Infants at 35–36 weeks’ gestation are 13 times more likely than term infants to be readmitted for
+  hyperbilirubinemia.
+                        BREASTFEEDING AND JAUNDICE
+
+A.BREAST-FEEDING–ASSOCIATED JAUNDICE
+ This common condition has also been called “lack of breastmilk” jaundice. Breastfed infants have a higher
+  incidence (9%) of elevated unconjugated serum bilirubin levels compared to formula fed infants (2%).
+ The pathogenesis is probably poor enteral intake and increased enterohepatic circulation. Excessive jaundice
+  should be considered a possible sign of failure to establish an adequate milk supply. The best way to evaluate
+  successful breastfeeding is to monitor the infant’s weight, urine, and stool output.
+ If intake is inadequate, the infant should receive supplemental formula and the mother should be instructed
+  to nurse more frequently and to use an electric breast pump every 2 hours to enhance milk production.
+ Consultation with a lactation specialist should be considered. Because hospital discharge of normal
+  newborns occurs before the milk supply is established and before jaundice peaks, a follow up visit 2 days
+  after discharge is recommended by the AAP to evaluate adequacy of intake and degree of jaundice.a
+               BREASTFEEDING AND JAUNDICE
+
+
+
+
+B. BREAST-MILK JAUNDICE
+
+ Unconjugated hyperbilirubinemia lasting until 2–3 months of age is
+  common in breastfed infants.
+ Moderate unconjugated hyperbilirubinemia for 6– 12 weeks in a thriving
+  breastfed infant without evidence of hemolysis, hypothyroidism, or other
+  disease strongly suggests this diagnosis.
+                                     BILIRUBIN TOXICITY
+
+
+ Unconjugated bilirubin anion is the agent that causes bilirubin neurotoxicity. It is unknown whether there is a fixed
+  level of bilirubin above which brain damage always occurs.
+
+ The blood brain barrier has a role in protecting the infant from brain damage, but its integrity is impossible to
+  measure clinically. Albumin binds unconjugated bilirubin, which is protective against bilirubin neurotoxicity.
+
+ The amount of albumin available to bind the unconjugated bilirubin anion and the presence of other anions that may
+  displace bilirubin from albumin binding sites are important factors to consider.
+
+ The risk of bilirubin encephalopathy is small in healthy, term neonates even at bilirubin levels of 25–30 mg/dL (430–
+  516 mmol/L).
+
+ Risk depends on the duration of hyperbilirubinemia, the concentration of serum albumin, associated illness, acidosis,
+  and the concentrations of anions such as sulfamethoxazole and ceftriaxone that compete for albumin binding site.
+ 4. Acute Bilirubin Encephalopathy
+ ESSENTIALS OF DIAGNOSIS & TYPICAL FEATURES
+  Lethargy, poor feeding.
+  Irritability, highpitched cry.
+  Arching of the neck (retrocollis) and trunk (opisthotonos).
+  Apnea, seizures, and coma (late).
+The term acute bilirubin encephalopathy describes the signs and symptoms of evolving brain injury in the newborn.
+Newborn infants with evolving acute bilirubin encephalopathy may be described as “sleepy and not interested in
+feeding.” Although these symptoms are nonspecific, they are also the earliest signs of acute bilirubin encephalopathy
+and should trigger, in the jaundiced infant, a detailed evaluation of the birth and postnatal history, feeding and
+elimination history, an urgent assessment for signs of bilirubininduced neurologic dysfunction (BIND), and a TSB and
+albumin measurement. Currently the most sensitive means of assessing neurotoxicity may be the auditory brainstem-
+evoked response, which shows predictable, early effects of bilirubin toxicity.
+    Chronic Bilirubin Encephalopathy (Kernicterus)
+    Extrapyramidal movement disorder (choreoathetoid cerebral palsy).
+    Gaze abnormality, especially limitation of upward gaze.
+    Auditory disturbances (deafness, failed auditory brainstemevoked
+     response with normal evoked otoacoustic emissions, auditory neuropathy,
+     auditory dyssynchrony).
+    Dysplasia of the enamel of the deciduous teeth.
+Kernicterus is an irreversible brain injury characterized by choreoathetoid cerebral palsy and hearing
+impairment. The diagnosis is clinical, but magnetic resonance imaging (MRI) scanning of the brain is
+nearly diagnostic if it shows abnormalities isolated to the globus pallidus, the subthalamic nuclei, or both.
+The risk factors of severe hyperbilirubinemia .
+
+
+• Predischarge TSB or TcB level close to the phototherapy
+  threshold Jaundice observed in the first 24 h
+
+• Blood group incompatibility with positive direct Coombs
+  test or other known hemolytic disease (eg, G6PD
+  deficiency) Gestational age 35–36 wk
+• Previous sibling required phototherapy
+• Cephalohematoma or significant bruising
+• Exclusive breastfeeding, particularly if weight loss is
+  excessive
+• Jaundice observed before discharge
+• Macrosomic infant of a diabetic mother
+  G6PD, glucose6phosphate dehydrogenase; TcB, transcutaneous bilirubin; TSB, total serum bilirubin.
+                                      EVALUATION
+
+
+
+
+ Feeding and elimination history
+ Birth weight and percent weight change since birth
+ Examination for sources of excessive heme breakdown
+ Assessment of blood type, Coombs testing, complete blood count (CBC) with smear,
+  serum albumin, and TSB
+ G6PD test if jaundice is otherwise unexplained and in AfricanAmerican infants with
+  severe jaundice
+ Fractionated bilirubin level in infants who appear ill, those with prolonged jaundice,
+  acholic stool, hepatosplenomegaly, or dark urine to evaluate for cholestasis
+                TREATMENT OF UNCONJUGATED
+                     HYPERBILIRUBINEMIA
+
+A. Phototherapy
+ Phototherapy is the most common treatment for unconjugated hyperbilirubinemia. It is
+  relatively noninvasive and safe. Intensive phototherapy should decrease TSB by 30%–40% in
+  the first 24 hours. The infant’s eyes should be shielded to prevent retinal damage.
+ Phototherapy is started electively when the TSB is approximately 6 mg/dL (102 mmol/L) lower
+  than the predicted exchange level for that infant. AAP guidelines for phototherapy and
+  exchange transfusion in infants of 35 or more weeks’ gestation are available online through
+  BiliTool (https://bilitool.org).
+ Hyperbilirubinemic infants should be fed by mouth, if possible, to decrease enterohepatic
+  bilirubin circulation.
+         FIGURE 2
+
+
+
+
+                    Use TSB; do not subtract the direct-reacting or conjugated bilirubin from the total serum
+                    bilirubin.
+
+
+
+
+③ Treatment of Hyperbilirubinemia                                                          Ⓐ Providing Phototherapy
+          FIGURE 3
+
+
+
+
+                     Use TSB; do not subtract the direct-reacting or conjugated bilirubin from the total serum
+                     bilirubin.
+
+
+
+
+③ Treatment of Hyperbilirubinemia                                                         Ⓐ Providing Phototherapy
+                  FIGURE 3                      FIGURE 2
+
+
+
+
+Whenever possible, phototherapy should be
+provided in the mother’s room or in a room in
+which the mother can remain with the infant.
+
+
+
+③ Treatment of Hyperbilirubinemia                 Ⓐ Providing Phototherapy
+             TREATMENT OF UNCONJUGATED
+                  HYPERBILIRUBINEMIA
+
+B. Exchange Transfusion
+ Although most infants with unconjugated hyperbilirubinemia can be treated with
+  phototherapy, bilirubin levels within 2 mg/dL of the double volume exchange
+  threshold require rapid escalation of care.
+ Infants should be admitted to a neonatal intensive care unit where exchange
+  transfusion can be performed before irreversible neurologic damage occurs.
+ Intensive phototherapy should be instituted immediately, during transport to the
+  hospital if possible.
+                   TREATMENT OF UNCONJUGATED
+                        HYPERBILIRUBINEMIA
+ Double volume exchange transfusion (~160–200 mL/kg body weight) is most often required in infants
+  with extreme hyperbilirubinemia secondary to Rh isoimmunization, ABO incompatibility, or hereditary
+  spherocytosis.
+
+ The procedure decreases serum bilirubin acutely by approximately 50% and removes about 80% of
+  sensitized or abnormal red blood cells and offending antibody so that ongoing hemolysis is decreased.
+ Exchange transfusion is also indicated in any infant with TSB above 30 mg/dL, in infants with signs of
+  encephalopathy, or when intensive phototherapy has not lowered TSB by at least 0.5 mg/dL/h after 4
+  hours.
+
+ The decision to perform exchange transfusion should be based on TSB, not on the unconjugated
+  fraction of bilirubin.
+                             COMPLICATION
+
+
+ Exchange transfusion is invasive, potentially risky, and infrequently performed.
+ It should therefore be performed at a referral center. Mortality is 1%– 5% and is
+  greatest in the smallest, most immature, and unstable infants.
+ Sudden death during the procedure can occur in any infant.
+ There is a 5%– 10% risk of serious complications such as necrotizing
+  enterocolitis (NEC), infection, electrolyte disturbances, or thrombocytopenia.
+

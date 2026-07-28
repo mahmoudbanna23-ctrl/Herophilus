@@ -1,0 +1,3599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFNElEQVR42u2dy04UQRRAu5uOCTjMsHYhCyMywLgy0Sj6B7NSeUVNSOQX3BCXGuMvuMC44OWSPyBqSNyY8NSF3yAPdcHGxQjhMTBM962qW9XnZBZEZ6qrb525dfsy08TXrtQjgGYkhACQA5ADkAOQA5ADkAOQAwIhjaKYKACZA5ADpLaVmF0FyByAHIAcgBzgsiClzwFkDkAOQA5ADkAO0Hm1QvscyBzQfuagz+ELPx5Umv573/K2OTnASydOP0HcEuTwWIumzxdUhJojEDPyvxA5AjdD1g/kCM0MwUGQI0AzpIZCjjDNEBmQPoceM8qGhOtb3skoB+3z4Mm8xGwrKvh+v6xwcOQA5ADkYE8RPARyAHJAhktZ+hzFuaQlcwDbCiAHuKw5aJ87p//T7tZwt+lDZFhoMgcgByCHvzuLwsGRA84uSGmCqUkee1vDJRPDZl5iMocuP1QNiBzB+pF/KOQI0w+RQZDjGFsf/wbgh1T64buyx5zof9x59Gcf61PBjSm+cfUhTpxW4Zz/sj3JCysiXs/G/b2Fk2Nz8eTeUR3pbPm0ps+xOu17zS2pft4zdMS4v/dRkbT4c0qLLvGXBEMh5Di9wG0tc86XI4dPTmRYWsGhkEOvE3nW0tzIyCHGi+lnk1P19l6z8y3ams6/fv/9qL6JumttvXDm3dLbVx/8inOBmmDVka787+ziVKMFkmNltUNQsq8bHcihtKSYrO97N+3J+n7LkkUb3nyeY3Pxd/4CS0+xXB257IUcwTuh+rw0W6L0qwkbC/JO6DzThiUDoxoVSYN3wgsOT1yVJSlOYIlGOXBCuSUpWmCJCjlwwi9LbPQ5Nhb2FMQ2DuYbOg1LBkZLFuQI24mAE8neQSIpeSOHBSdmli5NTqGHcUsSwSk2HqZjYSGdGhLa9MzFlyDVnyd81+LEKViImFQuyd4+X5+3WlIMjpUOp5plzrHj9nl8MIHBsZK16B1a0jio8cxh2Yk856aZwbGSzUg2jtVuGFPNTgSphSs/ji7iBaPaos+xPr/rNHyyt1Fz3ueIm56g/SAfsaTbxtWKuBbSZmhOIUrPNCFYvBn8kKNQCUP/uyIhNPihXQ7MUJg+04Jocefu0PrPeb8UcXup6D5zkDA0p5A0dtRVHhovR9k/Ee7jJzPibKEeGi+vze2Ym5O6zNEwA5SHK8EMX/ywH7ck+DMkhXggB1p4F8YULTz1w1yVai9zYIa/gU0wgyrVthzUngGkkOTg2z5nPbJNt9Jq2JwPTzEVkKHxiokppdIWV3grO8oflSiK1ua2lV6taDZj5cva86evpUZ7P/vy1u2qTkUE/RC7s09tomLttzQZDhTL3tknzjJnO/GpTVSiKFqd3c4fyURkNo0JgR5EViTRMAnQ6UeKFsH7ccEtRixzYEYRUkiWPkdtosdwG8NEq8N5o8VluGoTPcb7HGcfA/Tnj54oilZnfxnZVjAjGEUkC1K0KGYKSTCDFJJRDswosh9Kb4xvAudn6l2o+Vv2cF5BWpjUoe/mLWQO8BXkAOQA5ADkAOQA5ACd0OewOZRnofayfe71jfHZVoCaA5ADkAPgeJ108/oTogBkDmjzUrZIfQ4gcwByAHKAu5ojpuQAMgcgByAHIAe4LEhpggGZA5ADkAOQA5ADkAM8u5Tldytwphz0OYBtBZADkAOQA5ADkAOQAwKBPgeQOSBD5qB9DmQOQA5ADkAOQA7QebVCnwPIHIAcgByAHOC0IKV9DmQOQA4Q3FbocwCZA5ADkAOQA5ADkAOQAwLhH9ZZWex/HYm4AAAAAElFTkSuQmCC">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFNElEQVR42u2dy04UQRRAu5uOCTjMsHYhCyMywLgy0Sj6B7NSeUVNSOQX3BCXGuMvuMC44OWSPyBqSNyY8NSF3yAPdcHGxQjhMTBM962qW9XnZBZEZ6qrb525dfsy08TXrtQjgGYkhACQA5ADkAOQA5ADkAOQAwIhjaKYKACZA5ADpLaVmF0FyByAHIAcgBzgsiClzwFkDkAOQA5ADkAO0Hm1QvscyBzQfuagz+ELPx5Umv573/K2OTnASydOP0HcEuTwWIumzxdUhJojEDPyvxA5AjdD1g/kCM0MwUGQI0AzpIZCjjDNEBmQPoceM8qGhOtb3skoB+3z4Mm8xGwrKvh+v6xwcOQA5ADkYE8RPARyAHJAhktZ+hzFuaQlcwDbCiAHuKw5aJ87p//T7tZwt+lDZFhoMgcgByCHvzuLwsGRA84uSGmCqUkee1vDJRPDZl5iMocuP1QNiBzB+pF/KOQI0w+RQZDjGFsf/wbgh1T64buyx5zof9x59Gcf61PBjSm+cfUhTpxW4Zz/sj3JCysiXs/G/b2Fk2Nz8eTeUR3pbPm0ps+xOu17zS2pft4zdMS4v/dRkbT4c0qLLvGXBEMh5Di9wG0tc86XI4dPTmRYWsGhkEOvE3nW0tzIyCHGi+lnk1P19l6z8y3ams6/fv/9qL6JumttvXDm3dLbVx/8inOBmmDVka787+ziVKMFkmNltUNQsq8bHcihtKSYrO97N+3J+n7LkkUb3nyeY3Pxd/4CS0+xXB257IUcwTuh+rw0W6L0qwkbC/JO6DzThiUDoxoVSYN3wgsOT1yVJSlOYIlGOXBCuSUpWmCJCjlwwi9LbPQ5Nhb2FMQ2DuYbOg1LBkZLFuQI24mAE8neQSIpeSOHBSdmli5NTqGHcUsSwSk2HqZjYSGdGhLa9MzFlyDVnyd81+LEKViImFQuyd4+X5+3WlIMjpUOp5plzrHj9nl8MIHBsZK16B1a0jio8cxh2Yk856aZwbGSzUg2jtVuGFPNTgSphSs/ji7iBaPaos+xPr/rNHyyt1Fz3ueIm56g/SAfsaTbxtWKuBbSZmhOIUrPNCFYvBn8kKNQCUP/uyIhNPihXQ7MUJg+04Jocefu0PrPeb8UcXup6D5zkDA0p5A0dtRVHhovR9k/Ee7jJzPibKEeGi+vze2Ym5O6zNEwA5SHK8EMX/ywH7ck+DMkhXggB1p4F8YULTz1w1yVai9zYIa/gU0wgyrVthzUngGkkOTg2z5nPbJNt9Jq2JwPTzEVkKHxiokppdIWV3grO8oflSiK1ua2lV6taDZj5cva86evpUZ7P/vy1u2qTkUE/RC7s09tomLttzQZDhTL3tknzjJnO/GpTVSiKFqd3c4fyURkNo0JgR5EViTRMAnQ6UeKFsH7ccEtRixzYEYRUkiWPkdtosdwG8NEq8N5o8VluGoTPcb7HGcfA/Tnj54oilZnfxnZVjAjGEUkC1K0KGYKSTCDFJJRDswosh9Kb4xvAudn6l2o+Vv2cF5BWpjUoe/mLWQO8BXkAOQA5ADkAOQA5ACd0OewOZRnofayfe71jfHZVoCaA5ADkAPgeJ108/oTogBkDmjzUrZIfQ4gcwByAHKAu5ojpuQAMgcgByAHIAe4LEhpggGZA5ADkAOQA5ADkAM8u5Tldytwphz0OYBtBZADkAOQA5ADkAOQAwKBPgeQOSBD5qB9DmQOQA5ADkAOQA7QebVCnwPIHIAcgByAHOC0IKV9DmQOQA4Q3FbocwCZA5ADkAOQA5ADkAOQAwLhH9ZZWex/HYm4AAAAAElFTkSuQmCC">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Herophilus">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#070d16">
+<meta name="description" content="Herophilus — clinical question bank and revision schedule">
+<title>Herophilus — 2nd Term Question Bank</title>
+<!-- Theme is chosen BEFORE any CSS parses, so a light-mode user never sees a
+     dark flash on load. It has to be inline and it has to be here: a deferred
+     script, or one at the end of <body>, runs after first paint and the flash
+     is then unavoidable. Kept deliberately tiny for the same reason.
+     No stored choice = follow the operating system. -->
+<script>
+(function(){
+  var t=null;
+  try{t=localStorage.getItem('wardround.theme')}catch(e){}
+  if(t!=='light'&&t!=='dark'){
+    t=(window.matchMedia&&matchMedia('(prefers-color-scheme:light)').matches)?'light':'dark';
+  }
+  document.documentElement.setAttribute('data-theme',t);
+})();
+</script>
+<!-- Classical faces, embedded as data URIs. Must sit HERE, in <head> and before
+     the stylesheet: a classic script blocks parsing and runs immediately, so the
+     @font-face rules are registered before first paint. Moved to the end of
+     <body> with the other data files, the whole page would render in a fallback
+     face and then reflow. See data/fonts.js for why they are base64 and not
+     .woff2 files sitting next door. -->
+<script src="data/fonts.js"></script>
+<style>
+/* ============================================================================
+   DARK CINEMATIC — redesigned 2026-07-27.
+   The previous light "playful" palette is in archive\index.pre-redesign-2026-07-27.html.
+
+   Three things this token set has to get right, because the old one conflated them:
+     --tx     text. Near-white, never used for borders.
+     --line*  hairlines. Translucent white, never used for text.
+     --fill   solid fills that used to be dark ink on white (buttons, table heads).
+   In the light theme all three were --ink. On dark they must diverge or every
+   border turns bright white and every filled button turns into a white slab.
+
+   The four MODULE COLOURS ARE UNCHANGED — they are shared with the Notion
+   workspace and the PDF schedule, and they read stronger on navy than they did
+   on the old near-white background.
+   ============================================================================ */
+:root{
+  /* text ramp — light on dark */
+  --tx:#e9f0fa;
+  --ink:#e9f0fa;
+  --ink-2:#b9c6d8;
+  --ink-3:#8496ad;
+  --ink-4:#8194ac;   /* lifted from #61738b: at 10-11px it measured 3.54:1 on a
+                        card, under the 4.5:1 AA floor. Now ~5.2:1. */
+
+  /* ground and surfaces, each step a little lighter than the last */
+  --bg:#070d16;
+  --bg-2:#111f31;
+  --card:#101c2c;
+  --fill:#22344b;
+  --glass:rgba(18,32,50,.72);
+  --glass-2:rgba(14,25,40,.8);
+
+  /* hairlines, not ink */
+  --line:rgba(255,255,255,.075);
+  --line-2:rgba(255,255,255,.13);
+
+  --rail:#0a1422;
+  --rail-2:#16283e;
+  --rail-3:#26405e;
+  --rail-text:#9fb2c9;
+
+  /* module colours — DO NOT CHANGE, shared with Notion and the PDF schedule */
+  --ent:#ff5a5f;
+  --ophtho:#00b37e;
+  --neuro:#8b5cf6;
+  --peds:#3b82f6;
+  --revision:#8496ad;
+  --buffer:#f59e0b;
+
+  /* state colours, brightened for dark; the -bg tints are now translucent
+     washes over the dark ground rather than pale pastels */
+  --ok:#22c98a;
+  --ok-bg:rgba(34,201,138,.14);
+  --bad:#ff5a6a;
+  --bad-bg:rgba(255,90,106,.14);
+  --gold:#ffc94a;
+  --gold-bg:rgba(255,201,74,.14);
+  --warn:#e08a00;    /* the 60-79% accuracy colour. Was hardcoded inside accColor();
+                        tokenised so the light theme can darken it for AA on white. */
+  --on-accent:#0a1220;
+
+  --r:16px;
+  --r-sm:11px;
+  /* was a hard 3px offset; now soft elevation */
+  --pop:0 7px 18px;
+  --pop-lg:0 14px 34px;
+  --glow:0 0 0 1px rgba(255,255,255,.06);
+
+  /* Shadow ink. On dark, elevation reads as black; on light it has to be a
+     tinted navy at much lower alpha or every card looks smudged. Tokenised so
+     the light theme can restate it once instead of in 60 places. */
+  --sh:rgba(0,0,0,.45);
+  --sh-soft:rgba(0,0,0,.25);
+  --sh-deep:rgba(0,0,0,.6);
+  /* the faint top-light wash that gives dark cards their edge */
+  --sheen:linear-gradient(160deg,rgba(255,255,255,.045),rgba(255,255,255,.012));
+  --tint:rgba(255,255,255,.045);   /* input fills, .opt rest state */
+  --tint-2:rgba(255,255,255,.06);  /* .opt hover, kbd, table heads */
+
+  /* the clinical reading surface. Deliberately separate from the --ink ramp:
+     these are the highest-contrast text on the page and are tuned by hand. */
+  --stem:#f2f7ff;
+  --prose:#cddaea;
+  --strong:#ffffff;
+}
+
+/* ============================================================================
+   LIGHT THEME — added 2026-07-27.
+   Only tokens are restated here; the rules themselves are shared. The three
+   families stay separate exactly as they do on dark: --tx is text, --line* are
+   hairlines, --fill is a solid fill. Re-merging them breaks light too, just
+   less visibly.
+
+   TWO DELIBERATE ASYMMETRIES, both load-bearing:
+
+   1. THE RAIL STAYS DARK. A dark sidebar against a light page is a real design
+      choice, it keeps the app recognisable across both themes, and it means the
+      ~12 hardcoded #fff values inside .rail / .railprof / .railsync stay correct
+      instead of turning into white-on-white.
+
+   2. --gold STAYS BRIGHT. It is a BACKGROUND in 7 places (.wbadge.high,
+      .btn.flag.on, .pav .lock, .syncdot.busy, the notification dot) and a text
+      colour in none. Darkening it for "contrast" would put dark text on a dark
+      badge — the opposite of the intended fix. --ok and --bad DO darken,
+      because accColor() returns them as text.
+   ============================================================================ */
+:root[data-theme="light"]{
+  /* text ramp — ink on paper */
+  --tx:#141a24;
+  --ink:#141a24;
+  --ink-2:#333d4c;
+  --ink-3:#4e5a6a;
+  --ink-4:#5a6674;   /* the 10-11px ramp again — audited, not guessed */
+
+  /* surfaces invert their ORDER: --bg is now the darkest and --card the lightest,
+     so raised things still read as raised */
+  --bg:#e9eef6;
+  --bg-2:#dde4ef;
+  --card:#ffffff;
+  --fill:#1d2836;    /* stays a dark solid — primary buttons are dark on light */
+  --glass:rgba(255,255,255,.74);
+  --glass-2:rgba(255,255,255,.8);
+
+  /* hairlines flip from translucent white to translucent ink */
+  --line:rgba(16,27,45,.10);
+  --line-2:rgba(16,27,45,.17);
+
+  /* rail unchanged — see note 1 above */
+
+  /* These three are returned by accColor() as TEXT, so they are darkened until
+     they clear 4.5:1 against the page — measured on --bg-2, the lightest
+     surface any of them actually lands on, not guessed from the hex. */
+  --ok:#056b47;
+  --ok-bg:rgba(5,107,71,.11);
+  --bad:#b31f30;
+  --bad-bg:rgba(179,31,48,.10);
+  --gold:#ffc94a;              /* unchanged — see note 2 above */
+  --gold-bg:rgba(191,133,0,.15);
+  --warn:#8a4f00;
+  --on-accent:#0a1220;         /* still dark: it sits on gold, which is still bright */
+
+  --glow:0 0 0 1px rgba(16,27,45,.05);
+  --sh:rgba(23,38,66,.13);
+  --sh-soft:rgba(23,38,66,.08);
+  --sh-deep:rgba(23,38,66,.20);
+  --sheen:linear-gradient(160deg,rgba(16,27,45,.014),rgba(16,27,45,.04));
+  --tint:rgba(16,27,45,.035);
+  --tint-2:rgba(16,27,45,.06);
+
+  --stem:#0f1620;    /* near-black, not pure — pure black on white glares */
+  --prose:#28323f;
+  --strong:#000000;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:"Nunito","Quicksand",-apple-system,"Segoe UI",system-ui,sans-serif;
+  background:var(--bg);color:var(--tx);font-size:15px;line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(circle at 12% 8%, rgba(139,92,246,.05) 0, transparent 42%),
+                   radial-gradient(circle at 88% 4%, rgba(59,130,246,.05) 0, transparent 38%);
+  background-attachment:fixed;
+}
+button{font-family:inherit;font-size:inherit;cursor:pointer;border:none;background:none;color:inherit}
+input{font-family:inherit;font-size:inherit}
+:focus-visible{outline:3px solid var(--neuro);outline-offset:2px;border-radius:6px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ---------- Layout ---------- */
+.app{display:flex;min-height:100vh}
+.rail{
+  width:238px;flex-shrink:0;background:var(--rail);color:var(--rail-text);
+  display:flex;flex-direction:column;position:sticky;top:0;height:100vh;overflow-y:auto;
+  border-right:3px solid #150f33;
+}
+.rail-head{padding:20px 16px 12px}
+.logo{display:flex;align-items:center;gap:9px;color:#fff;font-weight:900;letter-spacing:-.03em;font-size:19px}
+.logo .blip{
+  width:26px;height:26px;border-radius:9px;background:linear-gradient(135deg,var(--ent),var(--gold));
+  display:flex;align-items:center;justify-content:center;font-size:14px;
+  box-shadow:0 5px 14px rgba(0,0,0,.28);flex-shrink:0;transform:rotate(-6deg);
+}
+.rail-sub{font-size:10.5px;color:#a79ddb;margin-top:4px;letter-spacing:.09em;text-transform:uppercase;font-weight:700}
+
+.streak{
+  margin:8px 12px 4px;padding:10px 12px;border-radius:12px;
+  background:linear-gradient(135deg,rgba(255,201,74,.16),rgba(255,90,95,.13));
+  border:1.5px solid rgba(255,201,74,.3);display:flex;align-items:center;gap:9px;
+}
+.streak .fl{font-size:17px}
+.streak .n{color:#ffd977;font-weight:900;font-size:16px;line-height:1}
+.streak .t{font-size:10.5px;color:#a89fd4;line-height:1.25;font-weight:600}
+
+.nav{padding:6px 10px 20px;flex:1}
+.nav-label{font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:#9c92cc;padding:15px 8px 6px;font-weight:800}
+.nav-item{
+  display:flex;align-items:center;gap:10px;width:100%;text-align:left;
+  padding:9px 11px;border-radius:11px;color:var(--rail-text);font-size:13.5px;font-weight:600;
+  transition:transform .13s cubic-bezier(.34,1.56,.64,1),background .13s,color .13s;
+}
+.nav-item:hover{background:var(--rail-2);color:#fff;transform:translateX(3px)}
+.nav-item.on{background:var(--rail-3);color:#fff;font-weight:800;box-shadow:inset 3px 0 0 var(--gold)}
+.nav-item .ic{width:19px;text-align:center;flex-shrink:0;font-size:15px}
+.nav-item .cnt{margin-left:auto;font-size:11px;color:#a79ddb;font-variant-numeric:tabular-nums;font-weight:700}
+.nav-item.on .cnt{color:#c2bbe4}
+.badge-due{
+  margin-left:auto;background:var(--ent);color:#fff;font-size:10.5px;font-weight:900;
+  padding:2px 7px;border-radius:20px;min-width:20px;text-align:center;
+  box-shadow:0 0 0 3px rgba(255,90,95,.2);
+}
+
+.main{flex:1;min-width:0;display:flex;flex-direction:column}
+.topbar{
+  display:flex;align-items:center;gap:14px;padding:13px 26px;
+  border-bottom:1px solid var(--line);background:var(--glass-2);
+  position:sticky;top:0;z-index:20;backdrop-filter:blur(10px);
+}
+.search-wrap{position:relative;flex:1;max-width:440px}
+.search{
+  width:100%;padding:9px 13px 9px 35px;border:2px solid var(--line-2);border-radius:12px;
+  background:var(--card);font-size:13.5px;color:var(--tx);font-weight:600;transition:box-shadow .14s,border-color .14s;
+}
+.search:focus{border-color:var(--neuro);box-shadow:var(--pop) rgba(139,92,246,.3);outline:none}
+.search::placeholder{color:var(--ink-4);font-weight:500}
+.search-ic{position:absolute;left:12px;top:50%;transform:translateY(-50%);font-size:14px;pointer-events:none}
+.results{
+  position:absolute;top:calc(100% + 7px);left:0;right:0;background:var(--card);
+  border:2px solid var(--line-2);border-radius:14px;box-shadow:var(--pop-lg) var(--sh);
+  max-height:380px;overflow-y:auto;z-index:40;display:none;
+}
+.results.show{display:block}
+.res-item{padding:11px 14px;border-bottom:1.5px solid var(--line);cursor:pointer;font-size:13px}
+.res-item:last-child{border-bottom:none}
+.res-item:hover{background:var(--bg-2)}
+.res-tag{font-size:9.5px;text-transform:uppercase;letter-spacing:.08em;font-weight:900;margin-bottom:3px}
+.res-txt{color:var(--ink-2);line-height:1.45}
+.res-empty{padding:16px 14px;color:var(--ink-4);font-size:13px}
+
+.topbar-actions{margin-left:auto;display:flex;gap:7px;align-items:center}
+.tb-btn{padding:7px 12px;border-radius:10px;font-size:12.5px;color:var(--ink-3);font-weight:700;transition:background .13s,transform .13s}
+.tb-btn:hover{background:var(--bg-2);color:var(--tx);transform:translateY(-1px)}
+
+.page{padding:28px;max-width:1180px;width:100%;margin:0 auto;flex:1}
+
+/* ---------- Type ---------- */
+h1{font-size:31px;font-weight:900;letter-spacing:-.035em;margin:0 0 5px;line-height:1.1}
+h2{font-size:18px;font-weight:800;letter-spacing:-.02em;margin:0 0 13px}
+.page-sub{color:var(--ink-3);font-size:14px;margin:0 0 26px;font-weight:500;max-width:640px;line-height:1.55}
+.eyebrow{
+  display:inline-block;font-size:10px;letter-spacing:.13em;text-transform:uppercase;font-weight:900;
+  padding:4px 11px;border-radius:20px;background:var(--fill);color:#fff;margin-bottom:11px;
+  transform:rotate(-1.2deg);
+}
+
+/* ---------- Cards ---------- */
+.grid{display:grid;gap:15px}
+.g3{grid-template-columns:repeat(auto-fill,minmax(258px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(158px,1fr))}
+.card{
+  background:var(--card);border:2.5px solid var(--line-2);border-radius:var(--r);
+  padding:17px;text-align:left;width:100%;box-shadow:var(--pop) rgba(0,0,0,.16);
+  transition:transform .15s cubic-bezier(.34,1.56,.64,1),box-shadow .15s;
+}
+button.card:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:var(--pop-lg) var(--c,rgba(0,0,0,.3))}
+button.card:active:not(:disabled){transform:translate(1px,1px);box-shadow:0 2px 7px rgba(0,0,0,.2)}
+
+.mod-card{position:relative;overflow:hidden}
+.mod-card::after{
+  content:"";position:absolute;right:-24px;top:-24px;width:74px;height:74px;border-radius:50%;
+  background:var(--c);opacity:.11;
+}
+.mod-top{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.mod-ic{
+  width:36px;height:36px;border-radius:11px;background:var(--c);display:flex;align-items:center;
+  justify-content:center;font-size:18px;flex-shrink:0;box-shadow:0 5px 14px rgba(0,0,0,.2);
+}
+.mod-name{font-weight:900;font-size:16.5px;letter-spacing:-.02em}
+.mod-meta{font-size:12px;color:var(--ink-3);margin-bottom:13px;font-weight:600}
+
+.ringrow{display:flex;align-items:center;gap:13px}
+.ring{width:52px;height:52px;flex-shrink:0;position:relative}
+.ring svg{transform:rotate(-90deg)}
+.ring .rv{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  font-size:12.5px;font-weight:900;font-variant-numeric:tabular-nums;
+}
+.ringmeta{flex:1;min-width:0}
+.ringmeta .a{font-size:19px;font-weight:900;font-variant-numeric:tabular-nums;line-height:1.1}
+.ringmeta .b{font-size:11.5px;color:var(--ink-3);font-weight:600}
+
+.stat{
+  background:var(--card);border:2.5px solid var(--line-2);border-radius:var(--r);padding:15px;
+  box-shadow:var(--pop) rgba(0,0,0,.16);position:relative;overflow:hidden;
+}
+.stat .n{font-size:31px;font-weight:900;letter-spacing:-.04em;font-variant-numeric:tabular-nums;line-height:1.05}
+.stat .l{font-size:11.5px;color:var(--ink-3);margin-top:3px;font-weight:700}
+.stat .emo{position:absolute;right:11px;top:10px;font-size:19px;opacity:.3}
+
+/* ---------- Chapter rows ---------- */
+.grouphdr{
+  display:flex;align-items:center;gap:10px;margin:24px 0 11px;
+  font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;font-weight:900;color:var(--ink-3);
+}
+.grouphdr::after{content:"";flex:1;height:2.5px;background:var(--line);border-radius:3px}
+.ch-row{
+  display:flex;align-items:center;gap:13px;padding:12px 15px;background:var(--card);
+  border:2.5px solid var(--line-2);border-radius:13px;margin-bottom:9px;width:100%;text-align:left;
+  box-shadow:0 5px 14px rgba(0,0,0,.13);
+  transition:transform .13s cubic-bezier(.34,1.56,.64,1),box-shadow .13s;
+}
+.ch-row:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:0 10px 24px rgba(0,0,0,.2)}
+.ch-row:disabled{opacity:.45;cursor:default;box-shadow:none;border-style:dashed}
+.ch-dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;border:2px solid var(--line-2)}
+.ch-name{flex:1;font-size:14px;font-weight:700}
+.ch-count{font-size:11.5px;color:var(--ink-4);font-variant-numeric:tabular-nums;font-weight:700}
+.ch-acc{font-size:12px;font-weight:900;font-variant-numeric:tabular-nums;min-width:40px;text-align:right}
+
+/* ---------- Question ---------- */
+.qwrap{max-width:830px;margin:0 auto}
+.qhead{display:flex;align-items:center;gap:10px;margin-bottom:17px;flex-wrap:wrap}
+.pill{
+  font-size:10px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;padding:4px 11px;
+  border-radius:20px;color:#fff;border:2px solid var(--line-2);box-shadow:0 5px 14px rgba(0,0,0,.18);
+}
+.pill.ghost{background:var(--bg-2);color:var(--ink-3)}
+.qprog{
+  margin-left:auto;font-size:12px;color:var(--ink-2);font-variant-numeric:tabular-nums;font-weight:800;
+  background:var(--card);padding:4px 11px;border-radius:20px;border:2px solid var(--line-2);
+}
+
+.qcard{background:var(--card);border:3px solid var(--line-2);border-radius:20px;padding:27px 29px;box-shadow:0 15px 35px rgba(0,0,0,.15)}
+.stem{
+  font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  font-size:16.5px;line-height:1.64;color:var(--tx);margin-bottom:21px;
+}
+.stem p{margin:0 0 12px}
+.stem p:last-child{margin-bottom:0}
+.stem table{border-collapse:separate;border-spacing:0;width:100%;margin:13px 0;font-size:13px;font-family:"Nunito",sans-serif;border:2px solid var(--line-2);border-radius:10px;overflow:hidden}
+.stem th,.stem td{border-bottom:1.5px solid var(--line);padding:7px 10px;text-align:left}
+.stem th{background:var(--bg-2);font-weight:800}
+.stem tr:last-child td{border-bottom:none}
+
+.opts{display:flex;flex-direction:column;gap:9px}
+.opt{
+  display:flex;gap:13px;align-items:flex-start;padding:13px 16px;
+  border:2.5px solid var(--line-2);border-radius:13px;background:var(--card);
+  text-align:left;width:100%;line-height:1.5;font-weight:600;
+  transition:transform .12s cubic-bezier(.34,1.56,.64,1),border-color .12s,box-shadow .12s;
+}
+.opt:hover:not(:disabled){border-color:var(--line-2);transform:translateX(4px);box-shadow:0 7px 20px rgba(0,0,0,.12)}
+.opt:disabled{cursor:default}
+.opt .ltr{
+  width:26px;height:26px;border-radius:9px;border:2.5px solid var(--line-2);
+  display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;
+  flex-shrink:0;color:var(--ink-3);margin-top:1px;transition:all .12s;
+}
+.opt.sel{border-color:var(--neuro);background:rgba(139,92,246,.15);transform:translateX(4px);box-shadow:0 7px 20px rgba(139,92,246,.28)}
+.opt.sel .ltr{background:var(--neuro);border-color:var(--neuro);color:#fff}
+.opt.correct{border-color:var(--ok);background:var(--ok-bg);box-shadow:0 7px 20px rgba(0,168,107,.25)}
+.opt.correct .ltr{background:var(--ok);border-color:var(--ok);color:#fff}
+.opt.wrong{border-color:var(--bad);background:var(--bad-bg);box-shadow:0 7px 20px rgba(255,71,87,.25)}
+.opt.wrong .ltr{background:var(--bad);border-color:var(--bad);color:#fff}
+.opt .mark{margin-left:auto;font-weight:900;font-size:17px;flex-shrink:0}
+
+.qactions{display:flex;gap:10px;margin-top:22px;align-items:center;flex-wrap:wrap}
+.btn{
+  padding:11px 20px;border-radius:12px;font-size:13.5px;font-weight:800;
+  background:var(--fill);color:#fff;border:2.5px solid var(--line-2);box-shadow:var(--pop) var(--sh-soft);
+  transition:transform .13s cubic-bezier(.34,1.56,.64,1),box-shadow .13s;
+}
+.btn:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:var(--pop-lg) rgba(0,0,0,.35)}
+.btn:active:not(:disabled){transform:translate(1px,1px);box-shadow:0 2px 7px rgba(0,0,0,.3)}
+.btn:disabled{opacity:.32;cursor:default;box-shadow:none}
+.btn.sec{background:var(--card);color:var(--tx)}
+.btn.go{background:var(--neuro);border-color:var(--line-2)}
+.btn.flag.on{background:var(--gold);color:var(--tx)}
+
+@keyframes pop{0%{transform:scale(.86)}60%{transform:scale(1.04)}100%{transform:scale(1)}}
+.verdict{
+  margin-top:21px;padding:15px 18px;border-radius:14px;font-weight:900;font-size:15px;
+  display:flex;align-items:center;gap:11px;border:2.5px solid var(--line-2);animation:pop .32s cubic-bezier(.34,1.56,.64,1);
+}
+.verdict.ok{background:var(--ok-bg);color:#5fe0a8;box-shadow:var(--pop) rgba(0,168,107,.3)}
+.verdict.bad{background:var(--bad-bg);color:#ff9aa2;box-shadow:var(--pop) rgba(255,71,87,.3)}
+.verdict.part{background:var(--gold-bg);color:#ffd27a;box-shadow:var(--pop) rgba(255,201,74,.45)}
+.verdict .big{font-size:22px}
+
+/* ---- free-text case questions ---- */
+.caseask{margin-top:19px;font-weight:900;font-size:14px;color:var(--ink-2)}
+.caseinput{
+  width:100%;margin-top:9px;padding:13px 15px;font:inherit;font-size:15px;line-height:1.5;
+  border:2.5px solid var(--line-2);border-radius:14px;background:var(--card);color:var(--tx);
+  box-shadow:var(--pop) rgba(0,0,0,.12);resize:vertical;
+  transition:box-shadow .18s cubic-bezier(.34,1.56,.64,1),transform .18s cubic-bezier(.34,1.56,.64,1);
+}
+.caseinput:focus{outline:none;transform:translate(-1px,-1px);box-shadow:0 12px 28px rgba(0,0,0,.18)}
+.caseinput:disabled{opacity:.75;cursor:default}
+.caseinput::placeholder{color:var(--ink-2);opacity:.6}
+.modelans{
+  margin-top:15px;padding:14px 17px;border:2.5px solid var(--line-2);border-radius:14px;
+  background:var(--ok-bg);box-shadow:var(--pop) rgba(0,168,107,.25);
+}
+.modelans>b{display:block;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);margin-bottom:5px}
+.modelans>div{font-weight:800;font-size:15px}
+.keys{margin-top:14px;padding:13px 16px;border:2.5px dashed var(--line-2);border-radius:14px}
+.keys-h{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);font-weight:800;margin-bottom:9px}
+.key{display:flex;align-items:center;gap:9px;padding:4px 0;font-size:14px;font-weight:700}
+.key.miss{opacity:.55}
+.lastgo{
+  display:inline-flex;align-items:center;gap:7px;margin-top:9px;
+  padding:5px 12px;border:2px dashed var(--line-2);border-radius:20px;
+  font-size:12px;font-weight:800;color:var(--ink-2);opacity:.85}
+
+.conf{margin-top:17px;padding:15px 17px;background:var(--gold-bg);border:2.5px solid var(--line-2);border-radius:14px;box-shadow:var(--pop) rgba(255,201,74,.4)}
+.conf-q{font-size:13px;color:var(--ink-2);margin-bottom:11px;font-weight:700}
+.conf-btns{display:flex;gap:8px;flex-wrap:wrap}
+.conf-b{
+  padding:8px 15px;border:2.5px solid var(--line-2);border-radius:20px;font-size:12.5px;
+  background:var(--card);font-weight:800;transition:transform .12s cubic-bezier(.34,1.56,.64,1),box-shadow .12s;
+}
+.conf-b:hover{transform:translateY(-2px);box-shadow:0 7px 18px rgba(2,6,14,.25)}
+.conf-b.on{background:var(--fill);color:#fff}
+
+.explain{margin-top:18px;border:2.5px solid var(--line-2);border-radius:14px;overflow:hidden;box-shadow:var(--pop) rgba(0,0,0,.14)}
+.ex-head{
+  display:flex;align-items:center;gap:10px;padding:13px 17px;background:var(--bg-2);
+  width:100%;text-align:left;font-weight:900;font-size:13.5px;transition:background .13s;
+}
+.ex-head:hover{background:rgba(255,255,255,.07)}
+.ex-head .chev{margin-left:auto;transition:transform .22s cubic-bezier(.34,1.56,.64,1)}
+.ex-head.open .chev{transform:rotate(180deg)}
+.ex-body{padding:19px 21px;font-size:14.3px;line-height:1.68;color:var(--ink-2);display:none}
+.ex-body.open{display:block;animation:pop .24s ease}
+.ex-body p{margin:0 0 13px}
+.ex-body p:last-child{margin-bottom:0}
+.ex-body strong{color:var(--tx);font-weight:800}
+.ex-body em{color:var(--ink-3)}
+.objective{
+  margin-top:17px;padding:14px 17px;background:linear-gradient(135deg,rgba(59,130,246,.13),rgba(139,92,246,.15));
+  border:2.5px solid var(--neuro);border-radius:12px;font-size:13.8px;line-height:1.6;
+}
+.objective b{display:block;font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--neuro);margin-bottom:5px;font-weight:900}
+.noexp{padding:17px 21px;color:var(--ink-4);font-size:13.5px;font-style:italic}
+
+/* ---------- Schedule ---------- */
+.sched-legend{display:flex;gap:15px;flex-wrap:wrap;margin-bottom:20px;font-size:12.5px;color:var(--ink-3);font-weight:700}
+.leg{display:flex;align-items:center;gap:7px}
+.leg .sw{width:13px;height:13px;border-radius:4px;border:2px solid var(--line-2)}
+.day{
+  display:flex;gap:14px;align-items:center;padding:13px 15px;background:var(--card);
+  border:2.5px solid var(--line-2);border-radius:14px;margin-bottom:9px;
+  box-shadow:0 5px 14px rgba(0,0,0,.13);transition:transform .13s,box-shadow .13s;
+}
+.day:hover{transform:translate(-1px,-1px);box-shadow:0 10px 24px rgba(0,0,0,.18)}
+.day.rest{background:var(--bg-2);opacity:.72;border-style:dashed}
+.day.missed{background:var(--bad-bg);border-color:var(--bad)}
+.day.done{background:var(--ok-bg);border-color:var(--ok)}
+.day.today{border-color:var(--neuro);box-shadow:0 10px 24px rgba(139,92,246,.35)}
+.day-date{width:74px;flex-shrink:0}
+.day-d{font-weight:900;font-size:14px;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.day-w{font-size:10.5px;color:var(--ink-4);font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+.day-body{flex:1;min-width:0}
+.day-line{font-size:13.2px;margin-bottom:4px;line-height:1.45;font-weight:600}
+.day-line:last-child{margin-bottom:0}
+.day-line.faded{opacity:.45;text-decoration:line-through}
+.tag{
+  display:inline-block;font-size:9.5px;font-weight:900;letter-spacing:.07em;text-transform:uppercase;
+  padding:3px 10px;border-radius:7px;color:#fff;margin-right:10px;vertical-align:1.5px;
+  border:1.5px solid var(--line-2);white-space:nowrap;box-shadow:0 3px 10px rgba(0,0,0,.22);
+}
+.movednote{font-size:11px;color:var(--neuro);font-weight:800;margin-top:4px}
+.day-marks{display:flex;gap:7px;flex-shrink:0}
+.mk{
+  width:38px;height:38px;border-radius:11px;border:2.5px solid var(--line-2);background:var(--card);
+  display:flex;align-items:center;justify-content:center;font-size:15px;
+  transition:transform .13s cubic-bezier(.34,1.56,.64,1),box-shadow .13s,background .13s;
+  box-shadow:0 5px 14px rgba(0,0,0,.16);
+}
+.mk:hover{transform:translate(-1px,-1px);box-shadow:0 7px 18px rgba(0,0,0,.25)}
+.mk:active{transform:translate(1px,1px);box-shadow:0 2px 7px rgba(0,0,0,.2)}
+.mk.done.on{background:var(--ok);color:#fff}
+.mk.miss.on{background:var(--bad);color:#fff}
+.mk .lbl{position:absolute;opacity:0;pointer-events:none}
+
+
+.track{
+  display:flex;align-items:center;gap:11px;padding:9px 0;
+  border-bottom:1.5px dashed var(--line);
+}
+.track:last-child{border-bottom:none}
+.track-body{flex:1;min-width:0;font-size:13.4px;font-weight:600;line-height:1.55}
+.track.is-done .track-body{opacity:.6}
+.track.is-missed .track-body{opacity:.55;text-decoration:line-through}
+.track.catchup{background:rgba(139,92,246,.07);border-radius:9px;padding:8px 11px;margin-top:5px;border:1.5px dashed var(--neuro)}
+.day{align-items:stretch}
+.day-body{display:flex;flex-direction:column;justify-content:center}
+
+
+/* ---------- Highlighter ---------- */
+mark.hl{background:transparent;padding:1.5px 1px;border-radius:4px;color:inherit;
+  box-decoration-break:clone;-webkit-box-decoration-break:clone}
+/* On the old white paper these were solid pastels with dark text. On the dark
+   ground a solid pastel would need dark text inside light-on-dark prose, which
+   reads badly mid-sentence — so the highlight is now a translucent wash of the
+   same hue and the text stays light. Colour still identifies the pen. */
+mark.hl[data-c="y"]{background:rgba(255,220,90,.30);box-shadow:inset 0 -1px 0 rgba(255,220,90,.55)}
+mark.hl[data-c="g"]{background:rgba(110,240,160,.28);box-shadow:inset 0 -1px 0 rgba(110,240,160,.5)}
+mark.hl[data-c="p"]{background:rgba(255,150,200,.28);box-shadow:inset 0 -1px 0 rgba(255,150,200,.5)}
+mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 rgba(120,190,255,.5)}
+
+.mkbar{
+  display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-bottom:15px;
+  padding:9px 12px;background:var(--bg-2);border:2px dashed var(--line-2);border-radius:12px;
+}
+.mkbar .lb{font-size:10.5px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin-right:2px}
+.pen{
+  width:29px;height:29px;border-radius:9px;border:2.5px solid var(--line-2);
+  box-shadow:0 5px 14px rgba(0,0,0,.18);transition:transform .13s cubic-bezier(.34,1.56,.64,1),box-shadow .13s;
+  position:relative;
+}
+.pen:hover{transform:translate(-1px,-1px);box-shadow:0 7px 18px rgba(0,0,0,.26)}
+.pen.on{transform:translateY(-3px);box-shadow:0 9px 22px rgba(0,0,0,.3)}
+.pen.on::after{content:"";position:absolute;inset:-6px;border:2.5px solid var(--line-2);border-radius:13px}
+.pen.y{background:#ffe97a}.pen.g{background:#a8f0bd}.pen.p{background:#ffc2dc}.pen.b{background:#a9d6ff}
+.pen.er{background:var(--card);font-size:14px;display:flex;align-items:center;justify-content:center}
+.mkbar .hint{font-size:11.5px;color:var(--ink-4);font-weight:600;margin-left:auto}
+.mkbar .clr{
+  font-size:11.5px;font-weight:800;color:var(--ink-3);padding:5px 11px;border-radius:20px;
+  border:2px solid var(--line-2);background:var(--card);
+}
+.mkbar .clr:hover{border-color:var(--line-2);color:var(--tx)}
+.stem{-webkit-user-select:text;user-select:text}
+.stem.arm{cursor:crosshair}
+
+
+/* ---------- Jump navigator ---------- */
+.modal.wide{max-width:660px}
+.jumprow{display:flex;gap:9px;margin-bottom:16px;flex-wrap:wrap;align-items:center}
+.jumpin{
+  width:112px;padding:9px 13px;border:2.5px solid var(--line-2);border-radius:11px;
+  font-size:14px;font-weight:800;background:var(--card);color:var(--tx);
+  box-shadow:0 5px 14px rgba(0,0,0,.15);
+}
+.jumpin::-webkit-outer-spin-button,.jumpin::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.jumpin{-moz-appearance:textfield}
+.jumpkey{display:flex;gap:13px;flex-wrap:wrap;font-size:11.5px;color:var(--ink-3);font-weight:700;margin-bottom:13px}
+.jumpkey .k{display:flex;align-items:center;gap:6px}
+.jumpkey .sw{width:13px;height:13px;border-radius:4px;border:2px solid var(--line-2)}
+.qgrid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(46px,1fr));gap:8px;
+  max-height:42vh;overflow-y:auto;padding:5px 3px;
+}
+.qg{
+  aspect-ratio:1;border-radius:10px;border:2.5px solid var(--line-2);font-weight:900;font-size:12.5px;
+  background:var(--card);display:flex;align-items:center;justify-content:center;position:relative;
+  box-shadow:0 5px 14px rgba(0,0,0,.15);
+  transition:transform .12s cubic-bezier(.34,1.56,.64,1),box-shadow .12s;
+}
+.qg:hover{transform:translate(-2px,-2px);box-shadow:0 10px 24px rgba(0,0,0,.24)}
+.qg.ok{background:var(--ok-bg);color:#5fe0a8;border-color:var(--ok)}
+.qg.bad{background:var(--bad-bg);color:#ff9aa2;border-color:var(--bad)}
+.qg.cur{background:var(--neuro);color:#fff;transform:translate(-2px,-2px);box-shadow:0 10px 24px rgba(0,0,0,.3)}
+.qg.flagged::after{
+  content:"";position:absolute;top:-5px;right:-5px;width:11px;height:11px;
+  background:var(--gold);border:2px solid var(--line-2);border-radius:50%;
+}
+.qprog{border:2px solid var(--line-2);cursor:pointer;transition:transform .12s,box-shadow .12s}
+.qprog:hover{transform:translate(-1px,-1px);box-shadow:0 5px 14px rgba(0,0,0,.22)}
+
+
+
+/* ---------- Schedule editor ---------- */
+.edbar{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin-bottom:18px}
+.day.editing{border-style:dashed;border-color:var(--neuro);background:rgba(139,92,246,.10)}
+.ed-item{display:flex;gap:8px;align-items:center;padding:7px 0;flex-wrap:wrap}
+.ed-lab,.ed-txt{
+  padding:7px 11px;border:2px solid var(--line-2);border-radius:9px;font-size:12.8px;
+  background:var(--card);color:var(--tx);font-weight:600;font-family:inherit;
+}
+.ed-lab{width:132px;flex-shrink:0}
+.ed-txt{flex:1;min-width:150px}
+.ed-lab:focus,.ed-txt:focus{border-color:var(--neuro);outline:none}
+.ed-col{width:30px;height:30px;border-radius:8px;border:2.5px solid var(--line-2);flex-shrink:0;cursor:pointer}
+.ed-x{
+  width:29px;height:29px;border-radius:8px;border:2px solid var(--bad);color:var(--bad);
+  background:var(--card);font-weight:900;flex-shrink:0;font-size:13px;
+}
+.ed-x:hover{background:var(--bad-bg)}
+.ed-add{
+  font-size:11.5px;font-weight:800;color:var(--neuro);padding:6px 12px;border-radius:20px;
+  border:2px dashed var(--neuro);background:transparent;margin-top:5px;
+}
+.ed-add:hover{background:rgba(139,92,246,.17)}
+.ed-day-tools{display:flex;gap:7px;flex-shrink:0;flex-wrap:wrap}
+.ed-t{
+  font-size:11px;font-weight:800;padding:5px 10px;border-radius:8px;border:2px solid var(--line-2);
+  background:var(--card);color:var(--ink-3);
+}
+.ed-t:hover{border-color:var(--line-2);color:var(--tx)}
+.ed-t.danger{border-color:var(--bad);color:var(--bad)}
+.ed-t.on{background:var(--fill);color:#fff;border-color:var(--line-2)}
+.newday{display:flex;gap:9px;align-items:center;flex-wrap:wrap;padding:14px;margin-top:10px;
+  border:2.5px dashed var(--line-2);border-radius:14px;background:var(--card)}
+.newday input[type=date]{padding:8px 11px;border:2px solid var(--line-2);border-radius:9px;
+  font-family:inherit;font-size:13px;font-weight:600;background:var(--card);color:var(--tx)}
+.palette{display:flex;gap:6px;flex-wrap:wrap}
+.pal{width:24px;height:24px;border-radius:7px;border:2.5px solid var(--line-2);cursor:pointer}
+.pal.on{transform:translateY(-3px);box-shadow:0 7px 18px rgba(2,6,14,.3)}
+
+
+/* ---------- Profile gate ----------
+   TWO STEPS: sign in, then choose or create a profile. showGate() renders one
+   at a time and re-writes innerHTML to move between them, which is also what
+   replays the entrance animations — new elements, so they run again.
+
+   The gate sits at z-index 200, ABOVE .app, so the page's ambient orb field is
+   hidden behind it and it needs its own. Tuned brighter and faster than the
+   page's: this is a five-second screen, not one you read on, so the
+   CALM-TO-READ half of the rule does not apply here.                          */
+.gate{
+  position:fixed;inset:0;z-index:200;background:var(--bg);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:30px 20px;overflow-y:auto;isolation:isolate;
+}
+.gate.hide{display:none}
+
+.gate-amb{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.gate-amb .gorb{position:absolute;border-radius:50%;filter:blur(80px);opacity:.5;will-change:transform}
+/* one orb per module, in the module's own colour — the four colours of the app
+   are the first thing you see */
+.gate-amb .g1{width:44vw;height:44vw;left:-10vw;top:-16vh;background:radial-gradient(circle,var(--neuro),transparent 68%);animation:gd1 26s ease-in-out infinite}
+.gate-amb .g2{width:38vw;height:38vw;right:-8vw;top:-6vh;background:radial-gradient(circle,var(--ent),transparent 68%);animation:gd2 31s ease-in-out infinite}
+.gate-amb .g3{width:40vw;height:40vw;left:14vw;bottom:-22vh;background:radial-gradient(circle,var(--peds),transparent 70%);animation:gd3 37s ease-in-out infinite}
+.gate-amb .g4{width:26vw;height:26vw;right:12vw;bottom:-14vh;background:radial-gradient(circle,var(--ophtho),transparent 72%);opacity:.34;animation:gd1 43s ease-in-out infinite reverse}
+@keyframes gd1{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(7vw,6vh,0) scale(1.14)}}
+@keyframes gd2{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(-8vw,8vh,0) scale(1.1)}}
+@keyframes gd3{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(6vw,-7vh,0) scale(1.16)}}
+:root[data-theme="light"] .gate-amb .gorb{opacity:.26}
+:root[data-theme="light"] .gate-amb .g4{opacity:.18}
+
+/* A faint grid, masked to fade out at the edges. Without it four big blurs on
+   a flat ground read as soup; the straight lines give the blur something to be
+   soft against. */
+.gate::before{
+  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),
+                   linear-gradient(90deg,var(--line) 1px,transparent 1px);
+  background-size:64px 64px;
+  -webkit-mask-image:radial-gradient(ellipse 78% 62% at 50% 44%,#000 18%,transparent 76%);
+          mask-image:radial-gradient(ellipse 78% 62% at 50% 44%,#000 18%,transparent 76%);
+}
+
+.gstep{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;width:100%;max-width:780px}
+.gate-theme{position:absolute;top:16px;right:16px;z-index:3;font-size:15px}
+
+/* Each child rises in on its own --d delay, set inline where the markup is
+   built. BACKWARDS, not BOTH: `both` would leave the final keyframe stuck on
+   the element, and its transform:none then beats .pcard:hover. */
+/* .pgrid is excluded: its own .pcard children stagger individually, and
+   animating the container too makes the cards arrive twice. */
+.gstep>*:not(.pgrid){animation:gRise .62s cubic-bezier(.22,1,.36,1) var(--d,0ms) backwards}
+@keyframes gRise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+
+.gmark{
+  position:relative;width:76px;height:76px;border-radius:26px;
+  background:linear-gradient(135deg,var(--ent),var(--gold));
+  display:flex;align-items:center;justify-content:center;font-size:37px;
+  box-shadow:0 18px 44px rgba(255,90,95,.32),var(--glow);margin-bottom:22px;
+}
+/* a slow sonar ring — the one piece of continuous motion on the sign-in step */
+.gmark::after{
+  content:"";position:absolute;inset:-10px;border-radius:34px;
+  border:2px solid var(--ent);animation:halo 3.6s ease-out infinite;
+}
+@keyframes halo{0%{transform:scale(.92);opacity:.55}70%,100%{transform:scale(1.25);opacity:0}}
+
+.gtitle{
+  font-size:clamp(28px,6vw,36px);font-weight:900;letter-spacing:-.04em;margin:0 0 10px;
+  background:linear-gradient(115deg,var(--tx) 18%,var(--ent) 46%,var(--neuro) 74%,var(--tx) 96%);
+  background-size:220% auto;-webkit-background-clip:text;background-clip:text;color:transparent;
+  animation:gRise .62s cubic-bezier(.22,1,.36,1) var(--d,0ms) backwards,
+            shine 9s linear 1.2s infinite;
+}
+@keyframes shine{to{background-position:220% center}}
+.gtag{font-size:14.5px;color:var(--ink-3);font-weight:600;margin:0 0 30px;text-align:center;max-width:430px;line-height:1.6}
+.glink{
+  margin-top:18px;font-size:13px;font-weight:800;color:var(--ink-3);
+  padding:9px 17px;border-radius:11px;transition:color .15s,background .15s;
+}
+.glink:hover{color:var(--tx);background:var(--tint-2)}
+.gnote{font-size:11.8px;color:var(--ink-4);font-weight:600;max-width:400px;text-align:center;line-height:1.65;margin:26px 0 0}
+.gwho{
+  display:inline-flex;align-items:center;gap:8px;padding:7px 15px;border-radius:20px;
+  background:var(--ok-bg);color:var(--ok);border:1px solid var(--ok);
+  font-size:12.5px;font-weight:800;margin-bottom:22px;
+}
+.gate .glogo{display:flex;align-items:center;gap:11px;font-weight:900;font-size:24px;letter-spacing:-.03em;margin-bottom:6px}
+.gate .glogo .blip{
+  width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,var(--ent),var(--gold));
+  display:flex;align-items:center;justify-content:center;font-size:19px;
+  box-shadow:0 7px 18px rgba(0,0,0,.25);transform:rotate(-6deg);
+}
+.gate h2{font-size:19px;color:var(--ink-3);font-weight:700;margin:0 0 26px}
+.pgrid{display:flex;gap:20px;flex-wrap:wrap;justify-content:center;max-width:760px}
+.pcard{
+  width:132px;display:flex;flex-direction:column;align-items:center;gap:10px;
+  background:transparent;transition:transform .16s cubic-bezier(.34,1.56,.64,1);
+  animation:gRise .62s cubic-bezier(.22,1,.36,1) var(--d,0ms) backwards;
+}
+.pcard:hover{transform:translateY(-5px)}
+.pav{
+  width:96px;height:96px;border-radius:24px;border:3px solid var(--line-2);
+  display:flex;align-items:center;justify-content:center;font-size:44px;overflow:hidden;
+  box-shadow:0 12px 28px rgba(0,0,0,.2);position:relative;
+}
+.pcard:hover .pav{box-shadow:0 17px 40px rgba(0,0,0,.28)}
+.pav img{width:100%;height:100%;object-fit:cover;display:block}
+.pav .lock{
+  position:absolute;right:-6px;bottom:-6px;width:28px;height:28px;border-radius:50%;
+  background:var(--gold);border:2.5px solid var(--line-2);display:flex;align-items:center;
+  justify-content:center;font-size:12px;
+}
+.pname{font-weight:800;font-size:14.5px;text-align:center;line-height:1.3;word-break:break-word}
+.pcard.add .pav{border-style:dashed;background:var(--card);font-size:38px;color:var(--ink-4);box-shadow:none}
+.pcard.add:hover .pav{border-color:var(--neuro);color:var(--neuro)}
+.gate .gfoot{margin-top:34px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+
+.emgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(46px,1fr));gap:8px;margin-bottom:16px;max-height:180px;overflow-y:auto}
+.emb{
+  aspect-ratio:1;border-radius:11px;border:2.5px solid var(--line-2);background:var(--card);
+  font-size:22px;display:flex;align-items:center;justify-content:center;
+  transition:transform .12s cubic-bezier(.34,1.56,.64,1);
+}
+.emb:hover{transform:translateY(-2px);border-color:var(--line-2)}
+.emb.on{border-color:var(--line-2);background:var(--fill);transform:translateY(-2px)}
+.colrow{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.colb{width:34px;height:34px;border-radius:10px;border:2.5px solid var(--line-2);
+  transition:transform .12s cubic-bezier(.34,1.56,.64,1)}
+.colb:hover{transform:translateY(-2px)}
+.colb.on{transform:translateY(-4px);box-shadow:0 9px 22px rgba(2,6,14,.3)}
+.avprev{
+  width:88px;height:88px;border-radius:22px;border:3px solid var(--line-2);margin:0 auto 16px;
+  display:flex;align-items:center;justify-content:center;font-size:40px;overflow:hidden;
+  box-shadow:0 10px 24px rgba(0,0,0,.2);
+}
+.avprev img{width:100%;height:100%;object-fit:cover}
+.pinbox{
+  display:flex;gap:9px;justify-content:center;margin:14px 0;
+}
+.pind{
+  width:52px;height:60px;border:2.5px solid var(--line-2);border-radius:12px;text-align:center;
+  font-size:24px;font-weight:900;background:var(--card);color:var(--tx);
+  box-shadow:0 5px 14px rgba(0,0,0,.18);
+}
+.pind:focus{border-color:var(--neuro);outline:none;box-shadow:0 7px 18px rgba(139,92,246,.35)}
+.pinerr{color:var(--bad);font-weight:800;font-size:13px;text-align:center;margin-top:4px;min-height:18px}
+
+.railprof{
+  display:flex;align-items:center;gap:10px;margin:4px 12px 8px;padding:9px 11px;border-radius:12px;
+  background:var(--rail-2);width:calc(100% - 24px);text-align:left;
+  transition:background .13s;
+}
+.railprof:hover{background:var(--rail-3)}
+.railprof .rav{
+  width:32px;height:32px;border-radius:10px;display:flex;align-items:center;justify-content:center;
+  font-size:17px;flex-shrink:0;overflow:hidden;border:2px solid rgba(255,255,255,.22);
+}
+.railprof .rav img{width:100%;height:100%;object-fit:cover}
+.railprof .rn{font-size:13px;font-weight:800;color:#fff;line-height:1.2;flex:1;min-width:0;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.railprof .rs{font-size:10px;color:#a79ddb;font-weight:700}
+
+
+/* ---------- Cloud sync ---------- */
+.gsign{
+  position:relative;overflow:hidden;
+  display:flex;align-items:center;gap:11px;padding:14px 24px;border-radius:14px;
+  background:#fff;border:1px solid rgba(255,255,255,.5);font-weight:800;font-size:14.5px;color:#1f2430;
+  box-shadow:0 10px 24px rgba(0,0,0,.2);transition:transform .14s cubic-bezier(.34,1.56,.64,1),box-shadow .14s;
+}
+.gsign:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(0,0,0,.3)}
+.gsign:active{transform:translateY(-1px)}
+/* a slow sheen crossing the button every few seconds. The button is white, so
+   the sweep has to be a shadow rather than a light or it is invisible. */
+.gsign::after{
+  content:"";position:absolute;top:0;left:-60%;width:42%;height:100%;pointer-events:none;
+  background:linear-gradient(100deg,transparent,rgba(60,90,140,.16),transparent);
+  transform:skewX(-18deg);animation:sweep 5s ease-in-out 1.8s infinite;
+}
+@keyframes sweep{0%{left:-60%}24%{left:135%}100%{left:135%}}
+/* the primary action when running from a file, where Google sign-in cannot work */
+.gbig{font-size:15px;padding:15px 30px;border-radius:14px}
+/* the cloud button in its unavailable state: shown, so the option is visible,
+   but plainly inert — no pointer, no hover, no sheen */
+.gsign.off{margin-top:18px;opacity:.42;cursor:not-allowed;box-shadow:none}
+.gsign.off::after{animation:none;display:none}
+.gsign.off:hover{transform:none;box-shadow:none}
+.gsign svg{width:19px;height:19px;flex-shrink:0}
+.gate .gor{margin:22px 0 4px;font-size:12px;font-weight:800;color:var(--ink-4);letter-spacing:.08em;text-transform:uppercase}
+.syncdot{
+  display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;flex-shrink:0;
+  background:var(--ink-4);vertical-align:1px;
+}
+.syncdot.ok{background:#4ade80}
+.syncdot.busy{background:var(--gold);animation:blink 1s infinite}
+.syncdot.err{background:var(--ent)}
+.railsync{
+  margin:0 12px 6px;padding:7px 11px;border-radius:10px;background:rgba(255,255,255,.05);
+  font-size:10.5px;font-weight:700;color:#b3a9dd;display:flex;align-items:center;
+}
+.cfgbox{
+  width:100%;min-height:150px;padding:12px 14px;border:2.5px solid var(--line-2);border-radius:12px;
+  font-family:ui-monospace,Menlo,monospace;font-size:11.5px;background:var(--card);color:var(--tx);
+  line-height:1.55;resize:vertical;
+}
+.steps{counter-reset:s;font-size:13.3px;line-height:1.65;color:var(--ink-2);font-weight:500}
+.steps li{margin-bottom:9px}
+.steps code{background:var(--bg-2);padding:2px 7px;border-radius:5px;font-size:12px;font-weight:700}
+
+
+.splash{
+  position:fixed;inset:0;z-index:210;background:var(--bg);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;
+}
+.splash.hide{display:none}
+.splash .glogo{font-size:24px}
+.splash .msg{font-size:13.5px;color:var(--ink-3);font-weight:700}
+@keyframes spin{to{transform:rotate(360deg)}}
+.spinner{
+  width:34px;height:34px;border:3.5px solid var(--line-2);border-top-color:var(--neuro);
+  border-radius:50%;animation:spin .8s linear infinite;
+}
+
+
+/* ---------- Theory (document view) ---------- */
+.th-intro{
+  background:linear-gradient(135deg,rgba(59,130,246,.13),rgba(139,92,246,.15));border:2.5px solid var(--neuro);
+  border-radius:14px;padding:16px 20px;font-size:14px;line-height:1.68;margin-bottom:22px;
+  box-shadow:var(--pop) rgba(139,92,246,.22);
+}
+.th-toc{
+  background:var(--card);border:2.5px solid var(--line-2);border-radius:14px;padding:15px 19px;
+  margin-bottom:26px;box-shadow:var(--pop) rgba(0,0,0,.14);
+}
+.th-toc .tl{font-size:10.5px;font-weight:900;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--ink-3);margin-bottom:11px}
+.th-toc ol{margin:0;padding-left:19px}
+.th-toc li{margin-bottom:6px;font-size:13.4px;font-weight:700}
+.th-toc a{color:var(--ink-2);text-decoration:none;border-bottom:2px solid transparent}
+.th-toc a:hover{color:var(--neuro);border-bottom-color:var(--neuro)}
+.th-toc .wb{font-size:8.5px;margin-left:7px;padding:2px 6px;border-radius:5px;font-weight:900;
+  letter-spacing:.06em;text-transform:uppercase;vertical-align:1.5px}
+
+/* a section is now a chapter of a document, always open */
+.th-sec{
+  margin-bottom:34px;padding-left:20px;border-left:5px solid var(--c,var(--neuro));
+  scroll-margin-top:80px;
+}
+.th-h{display:flex;align-items:center;gap:11px;margin-bottom:13px;flex-wrap:wrap}
+.th-h h2{
+  margin:0;font-size:21px;font-weight:900;letter-spacing:-.028em;color:var(--tx);line-height:1.2;
+}
+.th-num{
+  font-size:11px;font-weight:900;color:var(--c,var(--neuro));letter-spacing:.1em;
+  text-transform:uppercase;
+}
+.wbadge{
+  font-size:8.5px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;padding:3px 8px;
+  border-radius:6px;border:1.5px solid var(--line-2);flex-shrink:0;
+}
+.wbadge.must{background:var(--ent);color:#fff}
+.wbadge.high{background:var(--gold);color:var(--tx)}
+.wbadge.know{background:var(--bg-2);color:var(--ink-3)}
+.th-body{font-size:14.6px;line-height:1.78;color:var(--ink-2)}
+.th-body p{margin:0 0 14px}
+.th-body strong{color:var(--tx);font-weight:800}
+.th-body em{color:var(--ink-3)}
+.th-body ul{margin:0 0 14px;padding-left:22px}
+.th-body li{margin-bottom:7px}
+.th-body li::marker{color:var(--c,var(--neuro))}
+.th-body blockquote{
+  margin:0 0 15px;padding:13px 18px;background:var(--gold-bg);border-left:4px solid var(--gold);
+  border-radius:0 10px 10px 0;font-weight:700;color:var(--tx);font-size:14.5px;
+}
+.th-table{width:100%;border-collapse:separate;border-spacing:0;margin:4px 0 18px;font-size:13.3px;
+  border:2.5px solid var(--line-2);border-radius:12px;overflow:hidden}
+.th-table th{background:var(--fill);color:#fff;text-align:left;padding:10px 13px;font-weight:800;
+  font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+.th-table td{padding:10px 13px;border-bottom:1.5px solid var(--line);vertical-align:top;line-height:1.55}
+.th-table tr:last-child td{border-bottom:none}
+.th-table tr:nth-child(even) td{background:rgba(255,255,255,.03)}
+
+.flow{margin:4px 0 18px;border:2.5px dashed var(--neuro);border-radius:14px;padding:16px 17px;background:rgba(139,92,246,.07)}
+.flow-title{font-size:11px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:var(--neuro);margin-bottom:14px}
+.fstep{margin-bottom:9px}
+.fbox{background:var(--card);border:2.5px solid var(--line-2);border-radius:11px;padding:11px 14px;
+  box-shadow:0 5px 14px rgba(0,0,0,.15)}
+.fbox .ft{font-weight:800;font-size:13.6px;line-height:1.42}
+.fbox .fn{font-size:12.4px;color:var(--ink-3);margin-top:5px;line-height:1.5;font-weight:600}
+.fbox.alert{background:rgba(255,90,95,.13);border-color:var(--ent);box-shadow:0 5px 14px rgba(255,90,95,.3)}
+.fbox.alert .ft{color:#ff9aa2}
+.fbox.dec{background:var(--gold-bg);border-color:var(--gold)}
+.farrow{text-align:center;color:var(--neuro);font-size:17px;line-height:1;margin:2px 0 7px;font-weight:900}
+.fbranch{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:9px}
+.fb{border:2px solid var(--line-2);border-radius:10px;padding:9px 12px;font-size:12.6px;font-weight:700;line-height:1.45}
+.fb.y{background:rgba(0,168,107,.14);border-color:var(--ok)}
+.fb.n{background:rgba(255,71,87,.13);border-color:var(--bad)}
+.fb b{display:block;font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;margin-bottom:4px}
+.fb.y b{color:var(--ok)}
+.fb.n b{color:var(--bad)}
+@media(max-width:600px){.fbranch{grid-template-columns:1fr}}
+
+.th-test{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:4px}
+.th-test .lbl{font-size:12px;font-weight:800;color:var(--ink-3)}
+.readtheory{
+  display:flex;align-items:center;gap:9px;width:100%;text-align:left;margin-top:16px;
+  padding:12px 16px;background:linear-gradient(135deg,rgba(59,130,246,.13),rgba(139,92,246,.15));
+  border:2.5px solid var(--neuro);border-radius:13px;font-weight:800;font-size:13.5px;
+  box-shadow:var(--pop) rgba(139,92,246,.25);
+  transition:transform .13s cubic-bezier(.34,1.56,.64,1),box-shadow .13s;
+}
+.readtheory:hover{transform:translate(-2px,-2px);box-shadow:var(--pop-lg) rgba(139,92,246,.3)}
+.th-ch{display:flex;align-items:center;gap:13px;padding:14px 16px;background:var(--card);
+  border:2.5px solid var(--line-2);border-radius:13px;margin-bottom:9px;width:100%;text-align:left;
+  box-shadow:0 5px 14px rgba(0,0,0,.13);transition:transform .13s cubic-bezier(.34,1.56,.64,1),box-shadow .13s}
+.th-ch:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:0 10px 24px rgba(0,0,0,.2)}
+.th-ch:disabled{opacity:.4;cursor:default;box-shadow:none;border-style:dashed}
+.th-ch .n{flex:1;font-weight:700;font-size:14px}
+.th-ch .m{font-size:11.5px;color:var(--ink-4);font-weight:700}
+.doc-head{border-bottom:3px solid var(--line-2);padding-bottom:14px;margin-bottom:22px}
+.doc-meta{font-size:12.5px;color:var(--ink-3);font-weight:700;margin-top:6px}
+
+/* ---------- Print / Save as PDF ---------- */
+@media print{
+  @page{margin:16mm 14mm}
+  .rail,.topbar,.th-test,.th-toc .wb,.readtheory,.toast,.modal-bg,.splash,.gate{display:none!important}
+  /* The app is dark on screen. Printing keeps paper white, so every colour token
+     that carries text has to flip back to ink or the PDF comes out blank.
+
+     The selector list is not decoration. :root[data-theme="light"] has a higher
+     specificity than a bare :root, so once the light theme existed it outranked
+     this block and printed its grey page background onto paper. Matching the
+     specificity here — and sitting later in the file — puts print back on top
+     for BOTH themes. */
+  :root,
+  :root[data-theme="light"],
+  :root[data-theme="dark"]{
+    --tx:#14181f; --ink:#14181f; --ink-2:#2b3340; --ink-3:#4a5464; --ink-4:#6b7688;
+    --card:#fff; --bg:#fff; --bg-2:#f2f4f8; --fill:#14181f;
+    --line:#d8dde5; --line-2:#b9c1cd;
+    --ok-bg:#e6f9f0; --bad-bg:#ffecee; --gold-bg:#fff6e0;
+    --stem:#14181f; --prose:#22282f; --strong:#000;
+    --warn:#8a5000; --ok:#06603f; --bad:#a3182a;
+    --sh:rgba(0,0,0,.10); --sh-soft:rgba(0,0,0,.07); --sh-deep:rgba(0,0,0,.14);
+    --sheen:none; --tint:transparent; --tint-2:#f2f4f8;
+    --glow:0 0 0 1px rgba(0,0,0,.06);
+  }
+  body{background:#fff!important;background-image:none!important;font-size:11pt;color:#14181f}
+  .ambient,.ambient *{display:none!important}
+  .th-body,.th-body p,.th-body li,.stem,.ex-body{color:#22282f!important}
+  .th-body strong,.th-h h2,h1{color:#0d1117!important}
+  .th-table th{background:#14181f!important;color:#fff!important}
+  .th-table tr:nth-child(even) td{background:#f4f6f9!important}
+  .app{display:block}
+  .page{padding:0;max-width:100%}
+  .th-sec{break-inside:auto;page-break-inside:auto;margin-bottom:20px;padding-left:12px}
+  .th-h{break-after:avoid;page-break-after:avoid}
+  .th-table,.flow,.fbox,.th-body blockquote{break-inside:avoid;page-break-inside:avoid}
+  .th-intro,.th-toc{box-shadow:none}
+  .fbox,.th-table,.th-toc,.th-intro{box-shadow:none!important}
+  h1{font-size:22pt}
+  .th-h h2{font-size:14pt}
+  .th-body{font-size:10.5pt;line-height:1.55}
+  a{text-decoration:none;color:inherit}
+}
+/* ---------- Misc ---------- */
+.empty{text-align:center;padding:64px 20px;color:var(--ink-4)}
+.empty .big{font-size:52px;margin-bottom:14px}
+.empty h3{color:var(--ink-2);font-size:17px;margin:0 0 7px;font-weight:900}
+.empty p{margin:0 auto;font-size:13.5px;max-width:400px;line-height:1.6;font-weight:500}
+
+.toast{
+  position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(90px);
+  background:var(--fill);color:#fff;padding:13px 22px;border-radius:14px;font-size:13.5px;
+  border:2.5px solid #000;box-shadow:0 10px 24px rgba(0,0,0,.3);z-index:400;opacity:0;
+  transition:all .3s cubic-bezier(.34,1.56,.64,1);font-weight:800;
+}
+.toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+
+.modal-bg{
+  position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:300;
+  display:none;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(3px);
+}
+.modal-bg.show{display:flex}
+.modal{
+  background:var(--card);border:3px solid var(--line-2);border-radius:20px;padding:27px;
+  max-width:460px;width:100%;box-shadow:0 20px 46px rgba(0,0,0,.3);animation:pop .3s cubic-bezier(.34,1.56,.64,1);
+}
+.modal h3{margin:0 0 9px;font-size:20px;font-weight:900;letter-spacing:-.02em}
+.modal p{margin:0 0 19px;color:var(--ink-2);font-size:14px;line-height:1.6;font-weight:500}
+.modal-actions{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap}
+
+.kbd{
+  display:inline-block;padding:2px 8px;border:2px solid var(--line-2);border-bottom-width:3px;
+  border-radius:6px;font-size:11px;font-family:ui-monospace,Menlo,monospace;background:var(--bg-2);font-weight:800;
+}
+.shortcuts{display:grid;grid-template-columns:auto 1fr;gap:10px 17px;font-size:13px;align-items:center}
+.shortcuts .d{color:var(--ink-3);font-weight:600}
+
+.filterbar{display:flex;gap:9px;margin-bottom:20px;flex-wrap:wrap;align-items:center}
+/* Source filter — which of the three question banks a module draws from. */
+.bankbar{display:flex;gap:8px;margin:0 0 16px;flex-wrap:wrap;align-items:center}
+.bank-lbl{font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--ink-2);margin-right:2px}
+.bankchip{display:inline-flex;align-items:center;gap:7px;padding:7px 13px;cursor:pointer;
+  border:2.5px solid var(--line-2);border-radius:22px;background:var(--card);color:var(--ink-2);
+  font-family:inherit;font-size:13px;font-weight:800;
+  transition:transform .18s cubic-bezier(.34,1.56,.64,1),box-shadow .18s,background .18s,color .18s}
+.bankchip:hover{transform:translateY(-2px)}
+/* Off-state is deliberately flat and grey: which sources are live must be
+   readable at a glance, or you sit an exam on a filtered set without noticing. */
+/* Dark text, not white: the three bank colours are all mid-to-light (amber
+   #f59e0b, sky #0ea5e9, pink #ec4899) and white on amber measured 2.15:1, the
+   worst reading anywhere in the app. Dark text clears 5.3:1 on all three.
+   The glow was `var(--ink)`, which is TEXT colour — near-white since the
+   redesign, so the chip wore a white halo. That is the exact re-merge the
+   token contract forbids. */
+.bankchip.on{background:var(--bk);color:var(--on-accent);box-shadow:0 6px 16px var(--sh)}
+.bankchip:not(.on){opacity:.5;text-decoration:line-through}
+.bankn{font-size:11px;font-weight:900;padding:1px 7px;border-radius:10px;
+  background:rgba(0,0,0,.18)}
+/* the count sits on the bank colour too, so it inverts with the label */
+.bankchip.on .bankn{background:rgba(255,255,255,.34)}
+.bankchip:not(.on) .bankn{background:rgba(0,0,0,.08)}
+.bankchip.reset{border-style:dashed;opacity:1;text-decoration:none;font-weight:700}
+/* Which of the three banks this question came from, on the question itself. */
+/* dark text for the same reason as .bankchip.on — white on the Endpoint amber
+   measured 2.15:1, and this pill sits right beside the question stem */
+.pill.bankpill{color:var(--on-accent)}
+.chip{
+  padding:8px 15px;border:2.5px solid var(--line-2);border-radius:22px;font-size:12.5px;
+  background:var(--card);font-weight:800;box-shadow:0 5px 14px rgba(0,0,0,.15);
+  transition:transform .13s cubic-bezier(.34,1.56,.64,1),box-shadow .13s;
+}
+.chip:hover{transform:translate(-1px,-1px);box-shadow:0 7px 18px rgba(0,0,0,.25)}
+/* fallback is --fill, not --ink: --ink is near-white since the redesign, so an
+   unset --c would have made a white chip carrying white text */
+.chip.on{background:var(--c,var(--fill));color:#fff}
+
+@keyframes fall{to{transform:translateY(105vh) rotate(720deg);opacity:0}}
+.confetti{position:fixed;top:-14px;width:11px;height:11px;z-index:250;pointer-events:none;animation:fall linear forwards}
+
+.mobile-only{display:none}
+@media(max-width:860px){
+  .rail{position:fixed;left:-238px;z-index:60;transition:left .24s;box-shadow:8px 0 30px rgba(0,0,0,.3)}
+  .rail.open{left:0}
+  .mobile-only{display:block}
+  .page{padding:18px 14px}
+  .qcard{padding:20px 17px}
+  .topbar{padding:10px 14px}
+  h1{font-size:25px}
+  .day{flex-wrap:wrap}
+  .day-marks{margin-left:auto}
+}
+
+/* ============================================================================
+   CINEMATIC LAYER — added 2026-07-27
+   Depth, glass and motion. The governing rule for this whole block:
+
+       ALIVE TO BROWSE, CALM TO READ.
+
+   Ambient motion runs on home / module / schedule / flagged / moved.
+   It stops dead on quiz / mock / review / theory, because those are the screens
+   where a clinical stem is read for minutes at a time and anything drifting in
+   the periphery competes with it. The gate is body[data-view], set by render().
+   ============================================================================ */
+
+/* ---- ground ------------------------------------------------------------- */
+body{
+  background:var(--bg);
+  background-image:
+    radial-gradient(1200px 700px at 8% -10%, rgba(139,92,246,.16), transparent 60%),
+    radial-gradient(1000px 620px at 100% 0%, rgba(59,130,246,.14), transparent 58%),
+    radial-gradient(900px 600px at 50% 110%, rgba(0,179,126,.10), transparent 60%);
+  background-attachment:fixed;
+}
+
+/* Slow-moving colour behind everything. Fixed, non-interactive, z-index 0;
+   .app sits at z-index 1. Blur is on an element that never scrolls and never
+   repaints, which is the only place a 90px blur is affordable. */
+.ambient{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;contain:strict}
+.ambient .orb{
+  position:absolute;border-radius:50%;filter:blur(90px);opacity:.42;
+  will-change:transform;
+}
+.ambient .o1{width:46vw;height:46vw;left:-12vw;top:-14vh;background:radial-gradient(circle,#8b5cf6,transparent 68%);animation:drift1 34s ease-in-out infinite}
+.ambient .o2{width:40vw;height:40vw;right:-10vw;top:4vh;background:radial-gradient(circle,#3b82f6,transparent 68%);animation:drift2 41s ease-in-out infinite}
+.ambient .o3{width:38vw;height:38vw;left:26vw;bottom:-18vh;background:radial-gradient(circle,#00b37e,transparent 70%);animation:drift3 47s ease-in-out infinite}
+.ambient .o4{width:26vw;height:26vw;right:16vw;bottom:-10vh;background:radial-gradient(circle,#ff5a5f,transparent 72%);opacity:.28;animation:drift1 52s ease-in-out infinite reverse}
+@keyframes drift1{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(6vw,5vh,0) scale(1.12)}}
+@keyframes drift2{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(-7vw,7vh,0) scale(1.09)}}
+@keyframes drift3{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(5vw,-6vh,0) scale(1.14)}}
+
+.app{position:relative;z-index:1}
+
+/* ---- the gate: still while reading -------------------------------------- */
+body[data-view="quiz"] .ambient,
+body[data-view="mock"] .ambient,
+body[data-view="review"] .ambient,
+body[data-view="theory"] .ambient{opacity:.3;transition:opacity .5s ease}
+body[data-view="quiz"] .orb,
+body[data-view="mock"] .orb,
+body[data-view="review"] .orb,
+body[data-view="theory"] .orb{animation-play-state:paused}
+
+/* ---- glass on the fixed furniture only ---------------------------------- */
+/* Deliberately NOT on cards, chapter rows or question options: backdrop-filter
+   on a long scrolling list is the single most expensive thing on the page. */
+.rail{
+  background:linear-gradient(180deg,rgba(10,20,34,.96),rgba(8,16,28,.99));
+  border-right:1px solid var(--line-2);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+}
+.topbar{backdrop-filter:blur(16px) saturate(140%);-webkit-backdrop-filter:blur(16px) saturate(140%)}
+.modal{
+  background:linear-gradient(160deg,rgba(24,40,60,.96),rgba(14,25,40,.98));
+  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border:1px solid var(--line-2);box-shadow:0 30px 80px rgba(0,0,0,.6),var(--glow);
+}
+.modal-bg{background:rgba(3,7,14,.66);backdrop-filter:blur(5px)}
+.results{background:var(--glass);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid var(--line-2)}
+.gate,.splash{background:var(--bg);background-image:inherit}
+
+/* ---- surfaces get an inner highlight so edges read on dark -------------- */
+/* Shadow ink and the sheen wash come from tokens so the light theme inherits
+   these rules unchanged instead of restating all of them. */
+.card,.stat,.ch-row,.qcard,.th-ch,.day,.modelans,.explain,.th-toc,.fbox,.conf{
+  box-shadow:var(--pop) var(--sh),var(--glow);
+}
+.card,.stat,.qcard,.ch-row,.th-ch,.day{
+  background:var(--sheen);
+  background-color:var(--card);
+}
+
+/* hover lifts instead of sliding into a hard shadow */
+button.card:hover:not(:disabled),.ch-row:hover:not(:disabled),.th-ch:hover:not(:disabled){
+  transform:translateY(-3px);
+  box-shadow:0 16px 38px var(--sh-deep),0 0 0 1px var(--c,var(--line-2));
+}
+button.card:active:not(:disabled){transform:translateY(-1px)}
+.day:hover{transform:translateY(-2px);box-shadow:0 14px 32px var(--sh-deep),var(--glow)}
+
+/* module cards glow in their own colour */
+.mod-card::after{opacity:.5;filter:blur(26px);width:120px;height:120px;right:-40px;top:-40px}
+.mod-ic{box-shadow:0 8px 22px var(--c),0 0 0 1px rgba(255,255,255,.14)}
+.pill{border:none;box-shadow:0 4px 14px rgba(0,0,0,.4)}
+
+/* buttons: the primary action is now a lit surface, not a dark slab */
+.btn{
+  background:linear-gradient(160deg,#2c4a6b,#1b2d44);
+  background-color:var(--fill);border:1px solid var(--line-2);
+  box-shadow:0 8px 20px rgba(0,0,0,.45),var(--glow);
+}
+.btn:hover:not(:disabled){transform:translateY(-2px);box-shadow:0 14px 30px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.18)}
+.btn:active:not(:disabled){transform:translateY(0)}
+.btn.go{background:linear-gradient(160deg,#9b6ff8,#7c4ce8);border-color:rgba(255,255,255,.2);box-shadow:0 10px 26px rgba(139,92,246,.45)}
+.btn.go:hover:not(:disabled){box-shadow:0 16px 36px rgba(139,92,246,.6)}
+.btn.flag.on{background:linear-gradient(160deg,#ffd469,#f0b429);color:var(--on-accent)}
+.wbadge.high{color:var(--on-accent)}
+
+/* options: selection and verdict read by glow, not by a hard offset */
+.opt{background:var(--tint);border-color:var(--line-2)}
+.opt:hover:not(:disabled){background:var(--tint-2);border-color:var(--line-2);transform:translateX(3px);box-shadow:0 6px 18px var(--sh-soft)}
+.opt.sel{box-shadow:0 8px 24px rgba(139,92,246,.35),0 0 0 1px rgba(139,92,246,.55)}
+.opt.correct{box-shadow:0 8px 24px rgba(34,201,138,.3),0 0 0 1px rgba(34,201,138,.5)}
+.opt.wrong{box-shadow:0 8px 24px rgba(255,90,106,.3),0 0 0 1px rgba(255,90,106,.5)}
+.verdict{border:1px solid var(--line-2)}
+.verdict.ok{box-shadow:0 10px 30px rgba(34,201,138,.22),0 0 0 1px rgba(34,201,138,.4)}
+.verdict.bad{box-shadow:0 10px 30px rgba(255,90,106,.22),0 0 0 1px rgba(255,90,106,.4)}
+.verdict.part{box-shadow:0 10px 30px rgba(255,201,74,.22),0 0 0 1px rgba(255,201,74,.4)}
+
+/* the reading surface — highest contrast on the page, deliberately.
+   These three carry the clinical text, so they are the one place the theme is
+   allowed its own dedicated tokens rather than reusing the general ramp. */
+.qcard{border:1px solid var(--line-2)}
+.stem{color:var(--stem);font-size:17px;line-height:1.7}
+.th-body{color:var(--prose)}
+.th-body strong,.ex-body strong{color:var(--strong)}
+.stem th{background:var(--tint-2)}
+.th-table th{background:var(--fill);color:#fff}
+
+/* inputs */
+.search,.caseinput,.jumpin,.pind,.cfgbox,.ed-lab,.ed-txt,.newday input[type=date]{
+  background:var(--tint);border-color:var(--line-2);color:var(--tx);
+}
+.search:focus,.caseinput:focus{border-color:var(--neuro);box-shadow:0 0 0 3px rgba(139,92,246,.25)}
+/* --fill is a DARK solid in both themes, so the text on it must be white in
+   both. Using var(--tx) here worked on dark only by coincidence — on light it
+   put near-black text on a near-black chip. */
+.eyebrow{background:var(--fill);color:#fff;border:1px solid var(--line-2)}
+.toast{background:linear-gradient(160deg,#22344b,#14243a);border:1px solid var(--line-2);box-shadow:0 18px 44px rgba(0,0,0,.6)}
+.kbd{background:var(--tint-2);border-color:var(--line-2)}
+.grouphdr::after{height:1px;background:var(--line-2)}
+
+/* ---- entrance motion ---------------------------------------------------- */
+@keyframes pagein{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+#page{animation:pagein .34s cubic-bezier(.22,1,.36,1)}
+
+/* scroll reveal — browse screens only, applied by the observer in JS */
+.reveal{opacity:0;transform:translateY(16px)}
+.reveal.in{opacity:1;transform:none;transition:opacity .5s cubic-bezier(.22,1,.36,1),transform .5s cubic-bezier(.22,1,.36,1)}
+
+/* ---- accessibility ------------------------------------------------------ */
+/* The original rule already killed animation and transition. Ambient orbs are
+   background-position/transform loops, so they need explicitly stopping too. */
+@media (prefers-reduced-motion:reduce){
+  .ambient .orb{animation:none!important}
+  .reveal{opacity:1!important;transform:none!important}
+  /* the gate is the most animated screen in the app, so it needs the most
+     thorough opt-out: orbs, staggered entrances, the halo and the sheen */
+  .gate-amb .gorb{animation:none!important}
+  .gstep>*,.pcard,.gtitle{animation:none!important}
+  .gmark::after,.gsign::after{animation:none!important;opacity:0}
+}
+
+/* ============================================================================
+   LIGHT THEME — the rules tokens could not carry.
+   Everything above is shared. What is left here is the handful of places where
+   the dark theme hardcodes an atmosphere value: the ground wash, orb strength,
+   the glass gradients and the modal scrim. Placed last so it wins on source
+   order without needing !important.
+
+   NOT overridden on purpose: .rail, .btn, .toast and .th-table th all stay dark
+   in light mode. They are solid dark objects on a light page by design, and
+   their hardcoded #fff text stays correct.
+   ============================================================================ */
+:root[data-theme="light"] body{
+  /* same three orbs of colour, roughly a third of the strength — at dark-mode
+     alpha they turn a white page murky rather than atmospheric */
+  background-image:
+    radial-gradient(1200px 700px at 8% -10%, rgba(139,92,246,.10), transparent 60%),
+    radial-gradient(1000px 620px at 100% 0%, rgba(59,130,246,.09), transparent 58%),
+    radial-gradient(900px 600px at 50% 110%, rgba(0,179,126,.07), transparent 60%);
+}
+:root[data-theme="light"] .ambient .orb{opacity:.20}
+:root[data-theme="light"] .ambient .o4{opacity:.13}
+
+:root[data-theme="light"] .rail{
+  /* the rail keeps its dark gradient; only its edge changes so it does not cut
+     a hard black line down a light page */
+  border-right:1px solid rgba(16,27,45,.12);
+}
+:root[data-theme="light"] .modal{
+  background:linear-gradient(160deg,rgba(255,255,255,.98),rgba(243,247,252,.97));
+  border:1px solid var(--line-2);
+  box-shadow:0 30px 80px rgba(23,38,66,.22),var(--glow);
+}
+:root[data-theme="light"] .modal-bg{background:rgba(28,42,66,.38);backdrop-filter:blur(5px)}
+:root[data-theme="light"] .results{background:var(--card)}
+:root[data-theme="light"] .toast{
+  /* stays dark — a light toast on a light page has no presence */
+  box-shadow:0 18px 44px rgba(23,38,66,.3);
+}
+:root[data-theme="light"] .gsign{
+  /* the Google button is white by brand, which on a light page needs a real
+     border or it dissolves into the background */
+  border:1px solid rgba(16,27,45,.16);
+  box-shadow:0 6px 18px rgba(23,38,66,.12);
+}
+:root[data-theme="light"] .gsign:hover{box-shadow:0 12px 28px rgba(23,38,66,.18)}
+:root[data-theme="light"] .mod-ic{box-shadow:0 8px 22px var(--c),0 0 0 1px rgba(16,27,45,.08)}
+:root[data-theme="light"] .pill{box-shadow:0 4px 14px rgba(23,38,66,.18)}
+:root[data-theme="light"] .btn:hover:not(:disabled){box-shadow:0 14px 30px rgba(23,38,66,.28),0 0 0 1px rgba(16,27,45,.12)}
+
+/* The highlighter pens are translucent brights. Over a white card with dark
+   text they read fine unchanged, but they need a touch more opacity to be
+   visible at all against white rather than against navy. */
+:root[data-theme="light"] mark.hl[data-c="y"]{background:rgba(255,214,60,.55)}
+:root[data-theme="light"] mark.hl[data-c="g"]{background:rgba(88,232,146,.45)}
+:root[data-theme="light"] mark.hl[data-c="p"]{background:rgba(255,140,196,.42)}
+:root[data-theme="light"] mark.hl[data-c="b"]{background:rgba(96,178,255,.45)}
+</style>
+</head>
+<body>
+<!-- Ambient colour field. Fixed and non-interactive, sits behind .app.
+     Its motion is paused by CSS on the reading views — see the cinematic layer. -->
+<div class="ambient" aria-hidden="true">
+  <span class="orb o1"></span><span class="orb o2"></span>
+  <span class="orb o3"></span><span class="orb o4"></span>
+</div>
+<div class="app">
+  <aside class="rail" id="rail">
+    <div class="rail-head">
+      <div class="logo"><span class="blip">🩺</span> Herophilus</div>
+      <div class="rail-sub">2nd Term · Q-Bank</div>
+    </div>
+    <button class="railprof" id="railProf" onclick="switchProfile()"></button>
+    <div class="railsync" id="railSync" style="display:none"></div>
+    <div class="streak" id="streakBox"></div>
+    <nav class="nav" id="nav"></nav>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <button class="tb-btn mobile-only" onclick="toggleRail()">☰</button>
+      <div class="search-wrap">
+        <span class="search-ic">🔍</span>
+        <input class="search" id="search" placeholder="Search questions, topics, explanations…" autocomplete="off">
+        <div class="results" id="results"></div>
+      </div>
+      <div class="topbar-actions">
+        <button class="tb-btn themebtn" onclick="toggleTheme()"></button>
+        <button class="tb-btn" onclick="showShortcuts()" title="Keyboard shortcuts">⌨️</button>
+        <button class="tb-btn" onclick="exportData()">Export</button>
+        <button class="tb-btn" onclick="document.getElementById('importFile').click()">Import</button>
+        <input type="file" id="importFile" accept=".json" style="display:none" onchange="importData(event)">
+      </div>
+    </header>
+    <main class="page" id="page"></main>
+  </div>
+</div>
+
+<div class="splash" id="splash">
+  <div class="glogo"><span class="blip">&#129658;</span> Herophilus</div>
+  <div class="spinner"></div>
+  <div class="msg" id="splashMsg">Restoring your session&hellip;</div>
+</div>
+<div class="gate" id="gate"></div>
+<div class="toast" id="toast"></div>
+<div class="modal-bg" id="modalBg" onclick="if(event.target===this)closeModal()">
+  <div class="modal" id="modal"></div>
+</div>
+
+<!-- Data lives in separate files so content can be added without editing the app.
+     Classic scripts (not modules) so they load over file:// without CORS.
+     Order matters: per-subject files before the aggregators that concat them. -->
+<script src="data/modules.js"></script>
+<script src="data/schedule.js"></script>
+<script src="data/questions.ent.js"></script>
+<script src="data/questions.peds.js"></script>
+<script src="data/questions.ophtho.js"></script>
+<script src="data/questions.neuro.js"></script>
+<script src="data/cases.ent.js"></script>
+<script src="data/questions.js"></script>
+<script src="data/theory.ent.js"></script>
+<script src="data/theory.peds.js"></script>
+<script src="data/theory.ophtho.js"></script>
+<script src="data/theory.neuro.js"></script>
+<script src="data/theory.js"></script>
+<script>
+
+/* ==========================================================================
+   CLOUD SYNC  \u2014  paste your Firebase config between the braces below.
+   Leave it empty and the app simply runs offline with local profiles.
+   Setup instructions are in the app: profile screen \u2192 "Set up sync".
+   ========================================================================== */
+const FIREBASE_CONFIG = {
+  apiKey: "AIzaSyAg9OGSUbn7A04K5nRdStjzwGrO0nrvidk",
+  authDomain: "ward-round-e4822.firebaseapp.com",
+  projectId: "ward-round-e4822",
+  storageBucket: "ward-round-e4822.firebasestorage.app",
+  messagingSenderId: "353156608996",
+  appId: "1:353156608996:web:1b8faf5f9fa01dafd48df1"
+};
+
+
+
+
+/* ============ SCHEDULE DATA ============ */
+const SUBJ_COLOURS=[['#ff5a5f','ENT'],['#00b37e','Ophthalmology'],['#8b5cf6','Neuro/Psych'],
+                    ['#3b82f6','Pediatrics'],['#6a6390','Revision'],['#f59e0b','Buffer'],['#0e7490','Other']];
+
+/* built-in plan -> {date, rest, items:[{label,text,hex}]} */
+function defaultSchedule(){
+  return SCHEDULE.map(r=>{
+    if(r[1]==='rest')return {date:r[0],rest:true,items:[]};
+    const items=[];
+    const HEX={ent:'#ff5a5f',ophtho:'#00b37e',neuropsych:'#8b5cf6',
+                revision:'#6a6390',buffer:'#f59e0b'};
+    if(r[3])items.push({label:r[2]||'',text:r[3],hex:HEX[r[1]]||'#6a6390'});
+    if(r[4])items.push({label:'Pediatrics',text:r[4],hex:'#3b82f6'});
+    return {date:r[0],rest:false,items:items};
+  });
+}
+function activeSchedule(){
+  if(!S.schedule)S.schedule=defaultSchedule();
+  return S.schedule;
+}
+function saveSchedule(){save();render()}
+
+/* ============ STORAGE ============ */
+let KEY='wardround.v2';
+/* banks: per-module source filter, {ent:['endpoint','house'], …}. An absent or
+   empty entry means "all sources" — never store the full set, so a bank added
+   later is included by default instead of silently hidden. */
+let S={answers:{},flags:{},conf:{},sched:{},srs:{},days:{},hl:{},banks:{}};
+let storageMode='memory';
+
+async function loadState(){
+  try{
+    if(typeof window!=='undefined'&&window.storage&&window.storage.get){
+      const r=await window.storage.get(KEY);
+      if(r&&r.value)S=Object.assign(S,JSON.parse(r.value));
+      if(!S.hl)S.hl={};
+      storageMode='cloud';migrateSched();dropAI();return;
+    }
+  }catch(e){storageMode='cloud';return}
+  try{
+    const raw=localStorage.getItem(KEY);
+    if(raw)S=Object.assign(S,JSON.parse(raw));
+    if(!S.hl)S.hl={};
+    storageMode='local';
+    migrateSched();dropAI();
+  }catch(e){storageMode='memory'}
+}
+function dropAI(){delete S.ai;delete S.aiKey;delete S.hideFileWarn}
+function migrateSched(){
+  const out={};
+  Object.keys(S.sched||{}).forEach(k=>{
+    if(/\|\d+$/.test(k)){out[k]=S.sched[k];return}
+    if(k.indexOf('|main')>0){out[k.replace('|main','|0')]=S.sched[k];return}
+    if(k.indexOf('|peds')>0){out[k.replace('|peds','|1')]=S.sched[k];return}
+    out[k+'|0']=S.sched[k];out[k+'|1']=S.sched[k];
+  });
+  S.sched=out;
+}
+async function save(){
+  S.updatedAt=Date.now();
+  try{
+    if(storageMode==='cloud'&&window.storage&&window.storage.set){await window.storage.set(KEY,JSON.stringify(S));}
+    else if(storageMode==='local')localStorage.setItem(KEY,JSON.stringify(S));
+  }catch(e){}
+  schedulePush();
+}
+
+/* ============ HELPERS ============ */
+const $=id=>document.getElementById(id);
+const chapterName=id=>{for(const m of MODULES)for(const g of m.groups)for(const c of g.chapters)if(c[0]===id)return c[1];return id};
+const moduleOf=id=>MODULES.find(m=>m.id===id);
+/* The three question banks the material comes from. Order here is the order the
+   filter chips render in. `bank` on a question is one of these ids; anything
+   missing one is treated as 'endpoint', which is where every question
+   transcribed before the field existed came from. */
+const BANKS=[
+  {id:'endpoint', name:'Endpoint',   hex:'#f59e0b'},
+  {id:'house',    name:'House',      hex:'#0ea5e9'},
+  {id:'gradegain',name:'Grade Gain', hex:'#ec4899'}
+];
+const bankOf=q=>q.bank||'endpoint';
+const bankName=b=>(BANKS.find(x=>x.id===b)||{name:b}).name;
+/* Empty or absent filter = show everything. Filtering lives here, in the two
+   selectors the whole app already reads through, so chapter rows, counts,
+   quizzes, search and progress all agree without any of them knowing about it. */
+const bankOn=q=>{const f=S.banks&&S.banks[q.module];return !f||!f.length||f.indexOf(bankOf(q))>=0};
+const qsIn=ch=>QUESTIONS.filter(q=>q.chapter===ch&&bankOn(q));
+const qsInModule=m=>QUESTIONS.filter(q=>q.module===m&&bankOn(q));
+/* Unfiltered, for the filter UI itself — it must count what it would reveal. */
+const allQsInModule=m=>QUESTIONS.filter(q=>q.module===m);
+/* Banks this module actually holds questions from. The filter must work over
+   THIS, not over all of BANKS — otherwise a bank with no questions yet counts
+   as "still selected", so turning off every visible source leaves the module
+   showing nothing while the guard below thinks a source is still on. */
+const banksPresent=mod=>BANKS.map(x=>x.id).filter(id=>QUESTIONS.some(q=>q.module===mod&&bankOf(q)===id));
+function toggleBank(mod,b){
+  const present=banksPresent(mod);
+  const stored=S.banks[mod]||[];
+  /* Drop anything stored that this module no longer has, so a stale id cannot
+     linger invisibly and desync the chips from what is actually shown. */
+  let cur=stored.length?stored.filter(x=>present.indexOf(x)>=0):present.slice();
+  if(!cur.length)cur=present.slice();
+  cur=cur.indexOf(b)>=0?cur.filter(x=>x!==b):cur.concat([b]);
+  if(!cur.length){toast('Keep at least one source on 🙂');return}
+  /* Store [] when everything present is on, so a bank added later is included
+     by default rather than silently filtered out. */
+  S.banks[mod]=(cur.length===present.length)?[]:cur;
+  save();render();
+}
+function clearBanks(mod){S.banks[mod]=[];save();render()}
+/* Run once after state loads. A saved filter can name a bank the module no
+   longer has — content gets re-chaptered and re-sourced as transcription goes
+   on — and a filter that matches nothing would show an empty module with no
+   obvious cause. Anything left with no live banks falls back to "show all". */
+function sanitiseBanks(){
+  if(!S.banks)S.banks={};
+  Object.keys(S.banks).forEach(mod=>{
+    const present=banksPresent(mod);
+    const kept=(S.banks[mod]||[]).filter(b=>present.indexOf(b)>=0);
+    S.banks[mod]=(!kept.length||kept.length===present.length)?[]:kept;
+  });
+}
+const isAnswered=id=>S.answers[id]!==undefined;
+const isCorrect=id=>S.answers[id]&&S.answers[id].ok;
+const todayISO=()=>new Date().toISOString().slice(0,10);
+const tagHex=t=>({revision:'#6a6390',buffer:'#f59e0b','mock exam':'#8b5cf6'}[t])||(moduleOf(t)||{hex:'#6a6390'}).hex;
+
+function accuracy(list){
+  const a=list.filter(q=>isAnswered(q.id));
+  if(!a.length)return null;
+  return Math.round(a.filter(q=>isCorrect(q.id)).length/a.length*100);
+}
+function accColor(p){
+  if(p===null)return 'var(--ink-4)';
+  if(p>=80)return 'var(--ok)';
+  if(p>=60)return 'var(--warn)';   /* was a hardcoded #e08a00 — too pale to pass
+                                      AA once it sat on a white card */
+  return 'var(--bad)';
+}
+/* ============ THEME ============ */
+/* Light/dark is a DEVICE preference, not a profile one — it is about the room
+   you are sitting in, not who is studying. So it lives in its own localStorage
+   key, survives a profile switch, and is deliberately NOT synced to the cloud:
+   the same account on a phone at night and a laptop by a window wants two
+   different answers.
+
+   The key joins the existing wardround.* family. The prefix is legacy and
+   invisible to users, but consistency matters more than tidiness here. */
+const THKEY='wardround.theme';
+function currentTheme(){
+  return document.documentElement.getAttribute('data-theme')==='light'?'light':'dark';
+}
+function setTheme(t,announce){
+  t=(t==='light')?'light':'dark';
+  document.documentElement.setAttribute('data-theme',t);
+  try{localStorage.setItem(THKEY,t)}catch(e){}
+  /* keeps the mobile browser chrome matching the page */
+  const m=document.querySelector('meta[name="theme-color"]');
+  if(m)m.setAttribute('content',t==='light'?'#e9eef6':'#070d16');
+  paintThemeBtn();
+  if(announce)toast(t==='light'?'☀️ Light mode':'🌙 Dark mode');
+}
+function toggleTheme(){setTheme(currentTheme()==='light'?'dark':'light',true)}
+/* The button shows the theme you would GET, not the one you are in. */
+function paintThemeBtn(){
+  const light=currentTheme()==='light';
+  const label=light?'Switch to dark mode':'Switch to light mode';
+  document.querySelectorAll('.themebtn').forEach(b=>{
+    b.textContent=light?'🌙':'☀️';
+    b.title=label;b.setAttribute('aria-label',label);
+  });
+}
+/* Follow the operating system, but only until the user overrides it once.
+   After that their choice wins on this device for good. */
+if(window.matchMedia){
+  try{
+    const mq=matchMedia('(prefers-color-scheme:light)');
+    const onSys=e=>{
+      let stored=null;try{stored=localStorage.getItem(THKEY)}catch(x){}
+      if(stored!=='light'&&stored!=='dark')setTheme(e.matches?'light':'dark');
+    };
+    if(mq.addEventListener)mq.addEventListener('change',onSys);
+    else if(mq.addListener)mq.addListener(onSys);   /* older Safari */
+  }catch(e){}
+}
+
+function toast(msg){
+  const t=$('toast');t.textContent=msg;t.classList.add('show');
+  clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove('show'),2500);
+}
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+function md(s){
+  if(!s)return '';
+  let h=esc(s);
+  h=h.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/\*(.+?)\*/g,'<em>$1</em>');
+  const lines=h.split('\n');let out='',tbl=[],para=[];
+  const flushT=()=>{
+    if(!tbl.length)return;
+    let t='<table>';
+    tbl.forEach((r,i)=>{
+      if(/^\s*\|?\s*[-: ]+\|/.test(r))return;
+      const cells=r.split('|').filter(c=>c.trim()!=='');
+      t+='<tr>'+cells.map(c=>i===0?`<th>${c.trim()}</th>`:`<td>${c.trim()}</td>`).join('')+'</tr>';
+    });
+    out+=t+'</table>';tbl=[];
+  };
+  const flushP=()=>{if(para.length){out+='<p>'+para.join(' ')+'</p>';para=[]}};
+  for(const ln of lines){
+    if(ln.trim().startsWith('|')){flushP();tbl.push(ln);continue}
+    flushT();
+    if(!ln.trim()){flushP();continue}
+    para.push(ln.trim());
+  }
+  flushT();flushP();
+  return out;
+}
+function ring(pct,color,size){
+  size=size||52;
+  const r=(size-7)/2, c=2*Math.PI*r;
+  return `<div class="ring" style="width:${size}px;height:${size}px">
+    <svg width="${size}" height="${size}">
+      <circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="#e5e2f5" stroke-width="6"/>
+      <circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="${color}" stroke-width="6"
+        stroke-linecap="round" stroke-dasharray="${c}" stroke-dashoffset="${c*(1-pct/100)}"/>
+    </svg><div class="rv">${Math.round(pct)}<span style="font-size:8px">%</span></div></div>`;
+}
+function confetti(){
+  const cols=['#ff5a5f','#ffc94a','#8b5cf6','#3b82f6','#00b37e'];
+  for(let i=0;i<44;i++){
+    const d=document.createElement('div');
+    d.className='confetti';
+    d.style.left=Math.random()*100+'vw';
+    d.style.background=cols[i%cols.length];
+    d.style.animationDuration=(1.9+Math.random()*1.5)+'s';
+    d.style.animationDelay=(Math.random()*.35)+'s';
+    if(i%3===0)d.style.borderRadius='50%';
+    document.body.appendChild(d);
+    setTimeout(()=>d.remove(),4000);
+  }
+}
+
+/* SRS */
+const SRS=[1,3,7,21,60];
+function scheduleSRS(qid,ok){
+  const cur=S.srs[qid]||{lvl:0};
+  cur.lvl = ok ? Math.min(cur.lvl+1,SRS.length-1) : 0;
+  const d=new Date();d.setDate(d.getDate()+SRS[cur.lvl]);
+  cur.due=d.toISOString().slice(0,10);
+  S.srs[qid]=cur;
+}
+/* CHANGE 4: guessed questions belong in the deck even when correct */
+function inDeck(q){
+  if(!isAnswered(q.id))return false;
+  if(!isCorrect(q.id))return true;
+  return S.answers[q.id].conf===0;
+}
+function deckAll(){return QUESTIONS.filter(inDeck)}
+function dueNow(){
+  const t=todayISO();
+  return deckAll().filter(q=>{
+    const s=S.srs[q.id];
+    if(!s)return true;
+    if(isCorrect(q.id)&&s.lvl>=SRS.length-1)return false;
+    return s.due<=t;
+  });
+}
+function streakCount(){
+  const days=Object.keys(S.days).sort().reverse();
+  if(!days.length)return 0;
+  let n=0;const d=new Date();
+  for(;;){
+    const iso=d.toISOString().slice(0,10);
+    if(S.days[iso]){n++;d.setDate(d.getDate()-1)}
+    else if(iso===todayISO()){d.setDate(d.getDate()-1)}
+    else break;
+    if(n>400)break;
+  }
+  return n;
+}
+function markDayActive(){S.days[todayISO()]=true}
+
+
+
+
+/* ============ THEORY ============ */
+function theoryFor(ch){return THEORY[ch]||null}
+function theoryChapters(mod){
+  const m=moduleOf(mod);if(!m)return [];
+  const out=[];
+  m.groups.forEach(g=>g.chapters.forEach(c=>{if(THEORY[c[0]])out.push(c)}));
+  return out;
+}
+function theoryCount(){return Object.keys(THEORY).length}
+/* reverse index: question id -> {chapter, sectionId, heading} */
+let QTHEORY=null;
+function qTheory(qid){
+  if(!QTHEORY){
+    QTHEORY={};
+    Object.keys(THEORY).forEach(ch=>{
+      (THEORY[ch].sections||[]).forEach(s=>{
+        (s.qs||[]).forEach(q=>{QTHEORY[q]={ch:ch,sec:s.id,h:s.h}});
+      });
+    });
+  }
+  return QTHEORY[qid]||null;
+}
+
+function mdBlock(s){
+  if(!s)return '';
+  let h=esc(s);
+  h=h.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/(^|[^*])\*([^*]+?)\*/g,'$1<em>$2</em>');
+  const lines=h.split('\n');
+  let out='',para=[],list=[],quote=[];
+  const fp=()=>{if(para.length){out+='<p>'+para.join(' ')+'</p>';para=[]}};
+  const fl=()=>{if(list.length){out+='<ul>'+list.map(i=>'<li>'+i+'</li>').join('')+'</ul>';list=[]}};
+  const fq=()=>{if(quote.length){out+='<blockquote>'+quote.join(' ')+'</blockquote>';quote=[]}};
+  lines.forEach(ln=>{
+    const t=ln.trim();
+    if(!t){fp();fl();fq();return}
+    if(t.startsWith('> ')){fp();fl();quote.push(t.slice(2));return}
+    if(t.startsWith('- ')){fp();fq();list.push(t.slice(2));return}
+    fl();fq();para.push(t);
+  });
+  fp();fl();fq();
+  return out;
+}
+function flowHTML(f){
+  if(!f)return '';
+  let h=`<div class="flow"><div class="flow-title">${esc(f.title||'Algorithm')}</div>`;
+  (f.steps||[]).forEach((s,i)=>{
+    if(i)h+='<div class="farrow">&#8595;</div>';
+    if(s.k==='decision'){
+      h+=`<div class="fstep"><div class="fbox dec"><div class="ft">${esc(s.t)}</div>
+        <div class="fbranch">
+          <div class="fb y"><b>Yes</b>${esc(s.yes||'')}</div>
+          <div class="fb n"><b>No</b>${esc(s.no||'')}</div>
+        </div></div></div>`;
+    }else{
+      h+=`<div class="fstep"><div class="fbox ${s.k==='alert'?'alert':''}">
+        <div class="ft">${esc(s.t)}</div>${s.n?`<div class="fn">${esc(s.n)}</div>`:''}
+      </div></div>`;
+    }
+  });
+  return h+'</div>';
+}
+function tableHTML(t){
+  if(!t)return '';
+  let h='<table class="th-table"><tr>';
+  (t.head||[]).forEach(c=>{h+=`<th>${mdInline(c)}</th>`});
+  h+='</tr>';
+  (t.rows||[]).forEach(r=>{
+    h+='<tr>';
+    r.forEach(c=>{h+=`<td>${mdInline(c)}</td>`});
+    h+='</tr>';
+  });
+  return h+'</table>';
+}
+function mdInline(s){
+  return esc(String(s||'')).replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');
+}
+function toggleTh(b){if(b&&b.nextElementSibling){b.classList.toggle("open");b.nextElementSibling.classList.toggle("open")}}
+
+function vTheory(p){
+  if(!view.mod){
+    let h=`<div class="eyebrow" style="background:var(--neuro)">Study notes</div><h1>&#128218; Theory</h1>
+    <p class="page-sub">High-yield summaries written from the question bank \u2014 what the examiners actually test, in the order they test it. Each lecture opens as one continuous document you can read straight through or save as a PDF.</p>
+    <div class="grid g3">`;
+    MODULES.forEach(m=>{
+      const chs=theoryChapters(m.id);
+      h+=`<button class="card mod-card" style="--c:${m.color}" ${chs.length?`onclick="go({name:'theory',mod:'${m.id}'})"`:'disabled style="opacity:.45"'}>
+        <div class="mod-top"><span class="mod-ic">${m.icon}</span><span class="mod-name">${m.name}</span></div>
+        <div class="mod-meta">${chs.length?`${chs.length} lecture${chs.length===1?'':'s'} written`:'not written yet'}</div>
+      </button>`;
+    });
+    p.innerHTML=h+'</div>';return;
+  }
+  const m=moduleOf(view.mod);
+  if(!view.ch){
+    const chs=theoryChapters(view.mod);
+    let h=`<button class="tb-btn" style="padding-left:0;margin-bottom:8px" onclick="go({name:'theory'})">&larr; Theory</button>
+    <div class="eyebrow" style="background:${m.hex}">${m.name}</div><h1>${m.icon} ${m.name} notes</h1>
+    <p class="page-sub">Tap a lecture to open its full summary.</p>`;
+    chs.forEach(([cid,cname])=>{
+      const t=THEORY[cid];
+      const nq=(t.sections||[]).reduce((n,s)=>n+(s.qs||[]).length,0);
+      const must=(t.sections||[]).filter(s=>s.w==='must').length;
+      h+=`<button class="th-ch" onclick="go({name:'theory',mod:'${view.mod}',ch:'${cid}'})">
+        <span class="ch-dot" style="background:${m.hex}"></span>
+        <span class="n">${esc(cname)}</span>
+        <span class="m">${t.sections.length} sections \u00b7 ${must} must-know \u00b7 ${nq} linked Qs</span></button>`;
+    });
+    p.innerHTML=h;return;
+  }
+
+  /* ---- the lecture as one continuous document ---- */
+  const t=THEORY[view.ch];
+  if(!t){p.innerHTML='<div class="empty"><div class="big">&#128220;</div><h3>Not written yet</h3></div>';return}
+  const secs=t.sections||[];
+  const allQs=[];
+  secs.forEach(s=>(s.qs||[]).forEach(q=>{if(allQs.indexOf(q)<0)allQs.push(q)}));
+  const LBL={must:'must know',high:'high yield',know:'background'};
+  const HEX={must:'var(--ent)',high:'var(--gold)',know:'var(--ink-4)'};
+
+  let h=`<button class="tb-btn" style="padding-left:0;margin-bottom:8px" onclick="go({name:'theory',mod:'${view.mod}'})">&larr; ${esc(m.name)} notes</button>
+  <div class="doc-head">
+    <div class="eyebrow" style="background:${m.hex}">${m.icon} ${m.name}</div>
+    <h1>${esc(chapterName(view.ch))}</h1>
+    <div class="doc-meta">${secs.length} sections \u00b7 ${secs.filter(s=>s.w==='must').length} must-know \u00b7 ${allQs.length} linked questions</div>
+  </div>`;
+
+  if(t.intro)h+=`<div class="th-intro">${mdBlock(t.intro)}</div>`;
+
+  h+=`<div class="filterbar">
+    ${allQs.length?`<button class="btn go" onclick="startQuiz(${JSON.stringify(allQs).replace(/"/g,'&quot;')},'${esc(chapterName(view.ch)).replace(/'/g,"\\'")}')">\u25b6 Test the whole lecture (${allQs.length})</button>`:''}
+    <button class="btn sec" onclick="window.print()">&#128424;&#65039; Save as PDF</button>
+  </div>`;
+
+  h+=`<div class="th-toc"><div class="tl">In this lecture</div><ol>`;
+  secs.forEach(s=>{
+    h+=`<li><a href="#sec-${s.id}" onclick="jumpSec(event,'${s.id}')">${esc(s.h)}</a>
+      <span class="wb" style="background:${HEX[s.w||'know']};color:${s.w==='must'?'#fff':s.w==='high'?'var(--ink)':'#fff'}">${LBL[s.w||'know']}</span></li>`;
+  });
+  h+=`</ol></div>`;
+
+  secs.forEach((s,i)=>{
+    const c=HEX[s.w||'know'];
+    h+=`<section class="th-sec" id="sec-${s.id}" style="--c:${c}">
+      <div class="th-h">
+        <span class="th-num">${String(i+1).padStart(2,'0')}</span>
+        <h2>${esc(s.h)}</h2>
+        <span class="wbadge ${s.w||'know'}">${LBL[s.w||'know']}</span>
+      </div>
+      <div class="th-body">${mdBlock(s.body)}`;
+    if(s.table)h+=tableHTML(s.table);
+    if(s.flow)h+=flowHTML(s.flow);
+    if((s.qs||[]).length){
+      h+=`<div class="th-test"><span class="lbl">Test yourself \u2014</span>
+        <button class="btn go" onclick="startQuiz(${JSON.stringify(s.qs).replace(/"/g,'&quot;')},'${esc(s.h).replace(/'/g,"\\'")}')">${s.qs.length} question${s.qs.length===1?'':'s'} on this</button></div>`;
+    }
+    h+=`</div></section>`;
+  });
+  p.innerHTML=h;
+  if(view.sec){
+    const el=document.getElementById('sec-'+view.sec);
+    if(el&&el.scrollIntoView)setTimeout(()=>el.scrollIntoView({block:'start',behavior:'smooth'}),80);
+  }
+}
+function jumpSec(e,id){
+  if(e&&e.preventDefault)e.preventDefault();
+  const el=document.getElementById('sec-'+id);
+  if(el&&el.scrollIntoView)el.scrollIntoView({block:'start',behavior:'smooth'});
+}
+function openTheoryFor(qid){
+  const t=qTheory(qid);
+  if(!t)return;
+  const q=QUESTIONS.find(x=>x.id===qid);
+  go({name:'theory',mod:q?q.module:'pediatrics',ch:t.ch,sec:t.sec});
+}
+
+/* ============ CLOUD SYNC ============ */
+const SDK=['https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js',
+           'https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js',
+           'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js'];
+let fbApp=null, fbUser=null, syncState='off', pushTimer=null, sdkLoading=null;
+
+function cloudConfig(){
+  if(FIREBASE_CONFIG&&FIREBASE_CONFIG.apiKey)return FIREBASE_CONFIG;
+  try{
+    const c=JSON.parse(localStorage.getItem('wardround.fbconfig')||'null');
+    if(c&&c.apiKey)return c;
+  }catch(e){}
+  return null;
+}
+function cloudEnabled(){return !!cloudConfig()}
+
+function loadSDK(){
+  if(window.firebase)return Promise.resolve(true);
+  if(sdkLoading)return sdkLoading;
+  sdkLoading=new Promise(res=>{
+    let settled=false;
+    const done=v=>{if(!settled){settled=true;res(v)}};
+    /* never let a slow or blocked CDN strand the user on the splash */
+    setTimeout(()=>done(!!window.firebase),8000);
+    let i=0;
+    const next=()=>{
+      if(settled)return;
+      if(i>=SDK.length)return done(!!window.firebase);
+      const s=document.createElement('script');
+      s.src=SDK[i++];
+      s.onload=next;
+      s.onerror=()=>done(false);
+      document.head.appendChild(s);
+    };
+    next();
+  });
+  return sdkLoading;
+}
+async function initCloud(){
+  const cfg=cloudConfig();
+  if(!cfg)return false;
+  const ok=await loadSDK();
+  if(!ok)return false;
+  try{
+    if(!fbApp)fbApp=firebase.initializeApp(cfg);
+  }catch(e){
+    if(firebase.apps&&firebase.apps.length)fbApp=firebase.apps[0];
+    else return false;
+  }
+  /* keep the session across browser restarts */
+  try{await firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL)}catch(e){}
+  return true;
+}
+function isStandalone(){
+  return (window.navigator&&window.navigator.standalone===true)||
+         (window.matchMedia&&window.matchMedia('(display-mode: standalone)').matches);
+}
+function setSync(s){syncState=s;const el=$('railSync');if(el&&me)drawRailSync()}
+function drawRailSync(){
+  const el=$('railSync');
+  if(!el)return;
+  if(!fbUser){el.innerHTML='';el.style.display='none';return}
+  el.style.display='flex';
+  const label={idle:'Synced',busy:'Syncing\u2026',err:'Sync failed \u2014 retry on next change',off:'Offline'}[syncState]||'Synced';
+  const cls={idle:'ok',busy:'busy',err:'err',off:''}[syncState]||'ok';
+  el.innerHTML=`<span class="syncdot ${cls}"></span>${label}`;
+}
+
+async function signInGoogle(){
+  const ok=await initCloud();
+  if(!ok){toast('Sync is not available right now');return}
+  const prov=new firebase.auth.GoogleAuthProvider();
+  prov.setCustomParameters({prompt:'select_account'});
+  /* popups are unreliable inside the iOS home-screen app \u2014 use a redirect there */
+  if(isStandalone()){
+    try{await firebase.auth().signInWithRedirect(prov)}
+    catch(e){toast('Sign-in failed: '+(e&&e.code||e))}
+    return;
+  }
+  try{
+    const res=await firebase.auth().signInWithPopup(prov);
+    await afterSignIn(res.user);
+  }catch(e){
+    const m=String(e&&e.code||e);
+    if(/popup-closed|cancelled/i.test(m))return;
+    if(/unauthorized-domain/i.test(m)){toast('This address is not authorised in Firebase');return}
+    if(/popup-blocked/i.test(m)){
+      try{await firebase.auth().signInWithRedirect(prov)}catch(e2){toast('Sign-in blocked by the browser')}
+      return;
+    }
+    toast('Sign-in failed: '+m);
+  }
+}
+async function afterSignIn(u){
+  fbUser=u;
+  const id='g:'+u.uid;
+  let p=profiles.find(x=>x.id===id);
+  if(!p){
+    /* FIRST TIME on this Google account. Rather than silently minting a profile
+       and dropping the user into the app, move to gate step 2 and open the
+       editor prefilled from their account \u2014 signing in leads to creating a
+       profile, which is the whole point of splitting the gate in two.
+       Nothing is written to `profiles` until they press Save. */
+    showGate('profiles');
+    draft={id:id,name:(u.displayName||'Me').split(' ')[0],
+           av:u.photoURL?{t:'p',v:u.photoURL,c:'#8b5cf6'}:{t:'e',v:'\uD83E\uDE7A',c:'#8b5cf6'},pin:''};
+    drawProfileEditor(false);
+    return;
+  }
+  /* Returning account with a profile already on this device: show it on step 2
+     rather than auto-entering, so the picker is always the last thing before
+     the app and switching between profiles behaves the same way every time. */
+  showGate('profiles');
+}
+async function signOutCloud(){
+  try{if(window.firebase&&firebase.auth)await firebase.auth().signOut()}catch(e){}
+  fbUser=null;setSync('off');
+  me=null;closeModal();showGate();
+  toast('Signed out \u2014 your progress stays on this device');
+}
+
+function docRef(){
+  if(!fbUser||!window.firebase)return null;
+  return firebase.firestore().collection('users').doc(fbUser.uid);
+}
+function mergeStates(a,b){
+  const at=a.updatedAt||0, bt=b.updatedAt||0;
+  const newer=at>=bt?a:b, older=at>=bt?b:a;
+  const out=JSON.parse(JSON.stringify(newer));
+  out.answers={};
+  const ids=new Set(Object.keys(a.answers||{}).concat(Object.keys(b.answers||{})));
+  ids.forEach(id=>{
+    const x=(a.answers||{})[id], y=(b.answers||{})[id];
+    if(!x){out.answers[id]=y;return}
+    if(!y){out.answers[id]=x;return}
+    out.answers[id]=((x.at||0)>=(y.at||0))?x:y;
+  });
+  ['srs','hl','flags','conf','days','sched'].forEach(k=>{
+    out[k]=Object.assign({},older[k]||{},newer[k]||{});
+  });
+  out.schedule=newer.schedule||older.schedule||null;
+  out.updatedAt=Math.max(at,bt);
+  return out;
+}
+async function pullCloud(){
+  const ref=docRef();
+  if(!ref)return;
+  setSync('busy');
+  try{
+    const snap=await ref.get();
+    if(snap.exists){
+      const cloud=snap.data()&&snap.data().state?JSON.parse(snap.data().state):null;
+      if(cloud){
+        S=mergeStates(S,cloud);
+        if(!S.hl)S.hl={};
+        await save();
+      }
+    }
+    setSync('idle');render();
+    await pushCloud();
+  }catch(e){setSync('err')}
+}
+function schedulePush(){
+  if(!fbUser)return;
+  clearTimeout(pushTimer);
+  pushTimer=setTimeout(pushCloud,1200);
+}
+async function pushCloud(){
+  const ref=docRef();
+  if(!ref)return;
+  setSync('busy');
+  try{
+    await ref.set({state:JSON.stringify(S),updatedAt:Date.now(),
+                   name:(fbUser.displayName||''),email:(fbUser.email||'')},{merge:true});
+    setSync('idle');
+  }catch(e){setSync('err')}
+}
+
+/* restore an existing session on load */
+async function restoreSession(){
+  if(!cloudEnabled())return false;
+  const ok=await initCloud();
+  if(!ok)return false;
+  /* if we came back from a redirect sign-in, pick that up first */
+  try{
+    const r=await firebase.auth().getRedirectResult();
+    if(r&&r.user){await afterSignIn(r.user);return true}
+  }catch(e){}
+  return new Promise(res=>{
+    let done=false;
+    const un=firebase.auth().onAuthStateChanged(async u=>{
+      if(done)return;
+      done=true;un();
+      if(!u){res(false);return}
+      await afterSignIn(u);
+      res(true);
+    });
+    setTimeout(()=>{if(!done){done=true;try{un()}catch(e){}res(false)}},12000);
+  });
+}
+function showSplash(msg){
+  const s=$('splash');
+  if(!s)return;
+  if(msg){const m=$('splashMsg');if(m)m.textContent=msg}
+  s.classList.remove('hide');
+}
+function hideSplash(){const s=$('splash');if(s)s.classList.add('hide')}
+
+/* ---- setup helper ---- */
+function syncSetup(){
+  const cfg=cloudConfig();
+  showModal(`<h3>\u2601\uFE0F Set up sync</h3>
+   <p>Signing in with Google keeps your progress the same on your laptop, iPhone and iPad. It is free and needs no payment method.</p>
+   <ol class="steps">
+     <li>Go to <b>console.firebase.google.com</b> and click <b>Add project</b>. Any name will do.</li>
+     <li>In the left menu open <b>Build \u2192 Authentication \u2192 Get started</b>, choose <b>Google</b>, enable it, and save.</li>
+     <li>Open <b>Build \u2192 Firestore Database \u2192 Create database</b>. Pick <b>production mode</b>.</li>
+     <li>Open the <b>Rules</b> tab and replace everything with this, then Publish:
+       <div style="margin-top:6px"><code style="display:block;white-space:pre;padding:10px;line-height:1.5">rules_version = '2';
+service cloud.firestore {
+  match /databases/{db}/documents {
+    match /users/{uid} {
+      allow read, write: if request.auth != null
+                         &amp;&amp; request.auth.uid == uid;
+    }
+  }
+}</code></div>
+       <div style="margin-top:5px;font-size:12px;color:var(--ink-4)">This is what stops anyone reading anyone else's progress. Don't skip it.</div>
+     </li>
+     <li>Click the gear \u2192 <b>Project settings</b>. Under <b>Your apps</b> choose the web icon <code>&lt;/&gt;</code>, register the app, and copy the <code>firebaseConfig</code> object.</li>
+     <li>Paste it below and press Save.</li>
+   </ol>
+   <textarea class="cfgbox" id="cfgIn" placeholder='{ "apiKey": "\u2026", "authDomain": "\u2026", "projectId": "\u2026", "appId": "\u2026" }'>${cfg?esc(JSON.stringify(cfg,null,2)):''}</textarea>
+   <div class="ai-note" style="font-size:11.5px;color:var(--ink-4);font-weight:600;margin-top:9px;line-height:1.55">
+     These keys are meant to be public \u2014 Firebase security comes from the rules in step 4, not from hiding them.
+     <br><b>Sign-in only works from a web address, not a downloaded file.</b> Step 7 below covers that.</div>
+   <ol class="steps" start="7" style="margin-top:12px">
+     <li>Put the app online so your phone can reach it. Easiest free route: in Firebase click <b>Build \u2192 Hosting \u2192 Get started</b>, or drop this file into any static host. You then open it at a real address like <code>yourproject.web.app</code>.</li>
+     <li>On iPhone: open that address in Safari \u2192 Share \u2192 <b>Add to Home Screen</b>. It then behaves like an installed app.</li>
+   </ol>
+   <div class="modal-actions" style="margin-top:18px">
+     <button class="btn sec" onclick="closeModal();showGate()">Close</button>
+     ${cfg?`<button class="btn" style="background:var(--bad);border-color:var(--bad)" onclick="clearCfg()">Remove</button>`:''}
+     <button class="btn go" onclick="saveCfg()">Save</button>
+   </div>`,true);
+}
+function saveCfg(){
+  const t=$('cfgIn');
+  let raw=(t&&t.value||'').trim();
+  if(!raw){toast('Paste the config first');return}
+  raw=raw.replace(/^\s*(const|var|let)\s+\w+\s*=\s*/,'').replace(/;\s*$/,'');
+  let obj=null;
+  try{obj=JSON.parse(raw)}
+  catch(e){
+    try{obj=(new Function('return ('+raw+')'))()}
+    catch(e2){toast('That does not look like a Firebase config');return}
+  }
+  if(!obj||!obj.apiKey){toast('Config is missing apiKey');return}
+  try{localStorage.setItem('wardround.fbconfig',JSON.stringify(obj))}catch(e){}
+  closeModal();toast('Saved \u2014 now sign in with Google');showGate();
+}
+function clearCfg(){
+  try{localStorage.removeItem('wardround.fbconfig')}catch(e){}
+  closeModal();showGate();toast('Sync configuration removed');
+}
+
+/* ============ PROFILES ============ */
+const PKEY='wardround.profiles', LASTKEY='wardround.lastprofile';
+let profiles=[], me=null;
+const AVATARS=['\uD83E\uDE7A','\uD83E\uDDE0','\uD83D\uDC68\u200D\u2695\uFE0F','\uD83D\uDC69\u200D\u2695\uFE0F','\uD83E\uDDB4','\uD83D\uDC8A','\uD83D\uDD2C','\uD83E\uDEC0','\uD83E\uDEC1','\uD83D\uDC41\uFE0F',
+  '\uD83D\uDC3B','\uD83E\uDD8A','\uD83D\uDC3C','\uD83E\uDD89','\uD83D\uDC27','\uD83E\uDD81','\uD83D\uDC2F','\uD83D\uDC38',
+  '\u26A1','\uD83C\uDF1F','\uD83D\uDD25','\uD83C\uDFAF','\uD83D\uDE80','\uD83C\uDF08'];
+const AVCOLS=['#ff5a5f','#00b37e','#8b5cf6','#3b82f6','#f59e0b','#ec4899','#14b8a6','#6a6390'];
+
+function stateKey(id){return 'wardround.v3.'+id}
+function loadProfiles(){
+  try{profiles=JSON.parse(localStorage.getItem(PKEY))||[]}catch(e){profiles=[]}
+}
+function saveProfiles(){try{localStorage.setItem(PKEY,JSON.stringify(profiles))}catch(e){}}
+function bootstrapProfiles(){
+  loadProfiles();
+  if(profiles.length)return;
+  let old=null;
+  try{old=localStorage.getItem('wardround.v2')}catch(e){}
+  if(old){
+    const p={id:'p'+Date.now(),name:'Me',av:{t:'e',v:'\uD83E\uDE7A',c:'#8b5cf6'},pin:''};
+    profiles.push(p);saveProfiles();
+    try{localStorage.setItem(stateKey(p.id),old)}catch(e){}
+  }
+}
+function avHTML(av,cls){
+  av=av||{t:'e',v:'\uD83E\uDE7A',c:'#8b5cf6'};
+  if(av.t==='p')return `<div class="${cls}" style="background:${av.c}"><img src="${av.v}" alt=""></div>`;
+  return `<div class="${cls}" style="background:${av.c}">${av.v}</div>`;
+}
+
+/* ---- gate ----
+   TWO STEPS, in this order: sign in, then choose or create a profile.
+
+   showGate() picks the step for itself unless told which one:
+     - already signed in, or cloud unavailable  -> profiles. A sign-in step
+       would be pointless in the first case and a dead end in the second.
+     - otherwise                                -> sign-in first.
+   Passing a step explicitly is how the Continue and Back buttons move.
+
+   Every call rewrites innerHTML. That is deliberate: fresh elements are what
+   makes the staggered entrance animations replay on each step change.        */
+let gateStep='signin';
+const GOOGLE_MARK=`<svg viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.7 1.22 9.2 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24s.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>`;
+
+/* The orb field and the theme toggle belong to the gate, not to either step. */
+function gateChrome(){
+  return `<div class="gate-amb" aria-hidden="true">
+      <span class="gorb g1"></span><span class="gorb g2"></span>
+      <span class="gorb g3"></span><span class="gorb g4"></span>
+    </div>
+    <button class="tb-btn themebtn gate-theme" onclick="toggleTheme()"></button>`;
+}
+
+function showGate(step){
+  const g=$('gate');g.classList.remove('hide');hideSplash();
+  gateStep=step||((fbUser||!cloudEnabled())?'profiles':'signin');
+  g.innerHTML=gateChrome()+(gateStep==='signin'?gateSignInStep():gateProfileStep());
+  paintThemeBtn();
+}
+function hideGate(){$('gate').classList.add('hide');hideSplash()}
+
+/* STEP 1 --------------------------------------------------------------------
+   One decision and nothing else. The escape hatch is worded for what it
+   actually does, which differs depending on whether this device already has
+   profiles on it.                                                           */
+function gateSignInStep(){
+  /* Google OAuth requires an http(s) origin. Opened straight from disk as a
+     file:// URL, signInGoogle() can ONLY ever fail, with
+     auth/operation-not-supported-in-this-environment — verified in the browser,
+     not assumed. Offering it as the primary action there would make step 1 a
+     dead end, so on file:// the local path becomes the main button and the
+     cloud button stays visible but explains itself. On a hosted copy the
+     original order returns. */
+  const offline=location.protocol==='file:';
+  const onward=profiles.length?'Choose your profile':'Create your profile';
+  if(offline){
+    return `<div class="gstep" data-step="signin">
+      <div class="gmark" style="--d:0ms">🩺</div>
+      <h1 class="gtitle" style="--d:80ms">Herophilus</h1>
+      <p class="gtag" style="--d:150ms">ENT · Ophthalmology · Neuropsychiatry · Pediatrics.<br>${QUESTIONS.length} questions, transcribed from the real banks.</p>
+      <button class="btn go gbig" style="--d:230ms" onclick="showGate('profiles')">${onward} →</button>
+      <div class="gsign off" style="--d:300ms" aria-disabled="true">${GOOGLE_MARK}<span>Sign in with Google</span></div>
+      <p class="gnote" style="--d:370ms"><b>Google sign-in needs the app to be online.</b> Opened directly from the file on this computer it cannot run — so your progress saves here instead, which works fully and offline.</p>
+    </div>`;
+  }
+  return `<div class="gstep" data-step="signin">
+    <div class="gmark" style="--d:0ms">🩺</div>
+    <h1 class="gtitle" style="--d:80ms">Herophilus</h1>
+    <p class="gtag" style="--d:150ms">ENT · Ophthalmology · Neuropsychiatry · Pediatrics.<br>${QUESTIONS.length} questions, transcribed from the real banks.</p>
+    <button class="gsign" style="--d:230ms" onclick="signInGoogle()">${GOOGLE_MARK}<span>Sign in with Google</span></button>
+    <button class="glink" style="--d:300ms" onclick="showGate('profiles')">${profiles.length?'Use a profile on this device':'Continue without an account'} →</button>
+    <p class="gnote" style="--d:370ms">Signing in keeps your progress the same on your phone and your laptop. Without it everything still works — it just stays on this device.</p>
+  </div>`;
+}
+
+/* STEP 2 ------------------------------------------------------------------- */
+function gateProfileStep(){
+  /* Back only makes sense when there is a sign-in step to go back TO. */
+  const canBack=!fbUser&&cloudEnabled();
+  let d=0;const step=()=>`--d:${d+=70}ms`;
+  let h=`<div class="gstep" data-step="profiles">
+    <div class="glogo" style="--d:0ms"><span class="blip">🩺</span> Herophilus</div>`;
+  if(fbUser){
+    h+=`<div class="gwho" style="${step()}">✓ Signed in as <b>${esc(fbUser.displayName||fbUser.email||'your Google account')}</b></div>`;
+  }
+  h+=`<h2 style="${step()}">${profiles.length?"Who's studying?":'Create your profile'}</h2>
+    <div class="pgrid">`;
+  profiles.forEach(p=>{
+    const av=p.av||{t:'e',v:'🩺',c:'#8b5cf6'};
+    const inner=av.t==='p'?`<img src="${av.v}" alt="" referrerpolicy="no-referrer">`:av.v;
+    h+=`<button class="pcard" style="${step()}" onclick="pickProfile('${p.id}')">
+      <div class="pav" style="background:${av.c}">${inner}${p.pin?'<span class="lock">🔒</span>':''}${p.id.indexOf('g:')===0?'<span class="lock" style="background:#4285F4;font-size:10px">☁</span>':''}</div>
+      <div class="pname">${esc(p.name)}</div></button>`;
+  });
+  h+=`<button class="pcard add" style="${step()}" onclick="editProfile(null)">
+      <div class="pav">+</div><div class="pname">Add profile</div></button></div>`;
+  h+=`<div class="gfoot" style="${step()}">`;
+  if(canBack)h+=`<button class="btn sec" onclick="showGate('signin')">← Back</button>`;
+  if(profiles.length)h+=`<button class="btn sec" onclick="manageProfiles()">Manage profiles</button>`;
+  /* Sync settings button hidden — config is embedded in FIREBASE_CONFIG above.
+     If sync is ever NOT configured, still offer setup so the file stays reusable. */
+  if(!cloudEnabled())h+=`<button class="btn sec" onclick="syncSetup()">☁️ Set up sync</button>`;
+  h+=`</div></div>`;
+  return h;
+}
+
+function pickProfile(id){
+  const p=profiles.find(x=>x.id===id);
+  if(!p)return;
+  if(p.pin){askPin(p);return}
+  enterProfile(p);
+}
+async function enterProfile(p){
+  me=p;
+  KEY=stateKey(p.id);
+  try{localStorage.setItem(LASTKEY,p.id)}catch(e){}
+  S={answers:{},flags:{},conf:{},sched:{},srs:{},days:{},hl:{},banks:{},schedule:null};
+  await loadState();
+  sanitiseBanks();
+  closeModal();hideGate();
+  view={name:'home'};
+  render();
+  /* A cloud profile pulls once on entry. This used to sit in afterSignIn(), but
+     the two-step gate means signing in no longer enters a profile directly —
+     the user picks or creates one first, so the pull belongs here instead. */
+  if(fbUser&&p.id.indexOf('g:')===0){
+    try{await pullCloud()}catch(e){}
+  }
+}
+function switchProfile(){
+  if(fbUser){
+    showModal(`<h3>Switch or sign out?</h3>
+     <p>You are signed in as <b>${esc(fbUser.displayName||fbUser.email||'your Google account')}</b>. Signing out stops syncing on this device; your progress stays in the cloud.</p>
+     <div class="modal-actions">
+       <button class="btn sec" onclick="closeModal()">Stay</button>
+       <button class="btn sec" onclick="me=null;closeModal();showGate()">Switch profile</button>
+       <button class="btn" style="background:var(--bad);border-color:var(--bad)" onclick="signOutCloud()">Sign out</button>
+     </div>`);
+    return;
+  }
+  me=null;closeModal();showGate();
+}
+
+/* ---- PIN ---- */
+function askPin(p){
+  showModal(`<h3>${esc(p.name)}</h3>
+   <p>Enter the 4-digit PIN.</p>
+   <div class="pinbox">
+     ${[0,1,2,3].map(i=>`<input class="pind" id="pd${i}" inputmode="numeric" maxlength="1"
+        oninput="pinHop(${i})" onkeydown="pinBack(event,${i})">`).join('')}
+   </div>
+   <div class="pinerr" id="pinErr"></div>
+   <div class="modal-actions">
+     <button class="btn sec" onclick="closeModal();showGate()">Back</button>
+     <button class="btn go" onclick="tryPin('${p.id}')">Unlock</button>
+   </div>`);
+  setTimeout(()=>{const f=$('pd0');if(f&&f.focus)f.focus()},60);
+}
+function pinHop(i){
+  const el=$('pd'+i);
+  if(el&&el.value&&i<3){const n=$('pd'+(i+1));if(n&&n.focus)n.focus()}
+}
+function pinBack(e,i){
+  if(e.key==='Backspace'&&!$('pd'+i).value&&i>0){const pv=$('pd'+(i-1));if(pv&&pv.focus)pv.focus()}
+  if(e.key==='Enter'){const b=document.querySelector('.modal .btn.go');if(b)b.click()}
+}
+function readPin(){return [0,1,2,3].map(i=>($('pd'+i)||{}).value||'').join('')}
+function tryPin(id){
+  const p=profiles.find(x=>x.id===id);
+  if(!p)return;
+  if(readPin()===p.pin){enterProfile(p);return}
+  const e=$('pinErr');if(e)e.textContent='Wrong PIN \u2014 try again';
+  [0,1,2,3].forEach(i=>{const el=$('pd'+i);if(el)el.value=''});
+  const f=$('pd0');if(f&&f.focus)f.focus();
+}
+
+/* ---- create / edit ---- */
+let draft=null;
+function editProfile(id){
+  const p=id?profiles.find(x=>x.id===id):null;
+  draft=p?JSON.parse(JSON.stringify(p)):{id:'p'+Date.now(),name:'',av:{t:'e',v:AVATARS[0],c:AVCOLS[2]},pin:''};
+  drawProfileEditor(!!p);
+}
+function drawProfileEditor(isEdit){
+  showModal(`<h3>${isEdit?'Edit profile':'New profile'}</h3>
+   ${avHTML(draft.av,'avprev')}
+   <input class="keyin" id="pfName" placeholder="Name" value="${esc(draft.name)}"
+     style="width:100%;font-family:inherit;font-weight:700;margin-bottom:14px"
+     oninput="draft.name=this.value">
+   <div style="font-size:11px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin-bottom:8px">Picture</div>
+   <div class="emgrid">
+     ${AVATARS.map(e=>`<button class="emb ${draft.av.t==='e'&&draft.av.v===e?'on':''}"
+       onclick="draft.av={t:'e',v:'${e}',c:draft.av.c};drawProfileEditor(${isEdit})">${e}</button>`).join('')}
+   </div>
+   <div class="colrow">
+     ${AVCOLS.map(c=>`<button class="colb ${draft.av.c===c?'on':''}" style="background:${c}"
+       onclick="draft.av.c='${c}';drawProfileEditor(${isEdit})"></button>`).join('')}
+   </div>
+   <div style="margin-bottom:16px">
+     <button class="btn sec" onclick="document.getElementById('pfPhoto').click()">\uD83D\uDCF7 Upload a photo</button>
+     ${draft.av.t==='p'?`<button class="ai-p" onclick="draft.av={t:'e',v:AVATARS[0],c:draft.av.c};drawProfileEditor(${isEdit})" style="border:2px solid var(--line-2);padding:7px 13px;border-radius:20px;font-size:12px;font-weight:700;margin-left:7px">Use an emoji instead</button>`:''}
+     <input type="file" id="pfPhoto" accept="image/*" style="display:none" onchange="pfUpload(event,${isEdit})">
+   </div>
+   <div style="font-size:11px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin-bottom:8px">PIN (optional)</div>
+   <input class="keyin" id="pfPin" inputmode="numeric" maxlength="4" placeholder="4 digits \u2014 leave blank for none"
+     value="${esc(draft.pin||'')}" style="width:100%;font-family:inherit;font-weight:700"
+     oninput="draft.pin=this.value.replace(/[^0-9]/g,'').slice(0,4)">
+   <div class="ai-note" style="font-size:11.5px;color:var(--ink-4);font-weight:600;margin-top:8px;line-height:1.5">
+     Keeps other people from clicking into your profile by accident. It is not real security \u2014 anyone determined can get past it.</div>
+   <div class="modal-actions" style="margin-top:18px">
+     <button class="btn sec" onclick="closeModal();showGate()">Cancel</button>
+     ${isEdit?`<button class="btn" style="background:var(--bad);border-color:var(--bad)" onclick="deleteProfile('${draft.id}')">Delete</button>`:''}
+     <button class="btn go" onclick="saveProfile()">Save</button>
+   </div>`,true);
+}
+function pfUpload(e,isEdit){
+  const f=e.target.files&&e.target.files[0];
+  if(!f)return;
+  const r=new FileReader();
+  r.onload=()=>{
+    const img=new Image();
+    img.onload=()=>{
+      const c=document.createElement('canvas'),SZ=160;
+      c.width=SZ;c.height=SZ;
+      const x=c.getContext('2d');
+      const s=Math.min(img.width,img.height);
+      x.drawImage(img,(img.width-s)/2,(img.height-s)/2,s,s,0,0,SZ,SZ);
+      draft.av={t:'p',v:c.toDataURL('image/jpeg',0.8),c:draft.av.c};
+      drawProfileEditor(isEdit);
+    };
+    img.onerror=()=>toast('Could not read that image');
+    img.src=r.result;
+  };
+  r.readAsDataURL(f);
+  e.target.value='';
+}
+function saveProfile(){
+  const n=$('pfName');
+  draft.name=((n&&n.value)||draft.name||'').trim()||'Untitled';
+  if(draft.pin&&draft.pin.length!==4){toast('PIN must be 4 digits, or blank');return}
+  const i=profiles.findIndex(p=>p.id===draft.id);
+  if(i>=0)profiles[i]=draft; else profiles.push(draft);
+  saveProfiles();
+  const saved=draft;draft=null;
+  closeModal();
+  if(me&&me.id===saved.id){me=saved;render();toast('Profile updated')}
+  else if(!me)enterProfile(saved);
+  else{showGate()}
+}
+function deleteProfile(id){
+  const p=profiles.find(x=>x.id===id);
+  if(!p)return;
+  showModal(`<h3>Delete ${esc(p.name)}?</h3>
+   <p>This erases that profile's answers, highlights, schedule and review deck. It cannot be undone.</p>
+   <div class="modal-actions">
+     <button class="btn sec" onclick="editProfile('${id}')">Cancel</button>
+     <button class="btn" style="background:var(--bad);border-color:var(--bad)" onclick="doDeleteProfile('${id}')">Delete</button>
+   </div>`);
+}
+function doDeleteProfile(id){
+  profiles=profiles.filter(p=>p.id!==id);
+  saveProfiles();
+  try{localStorage.removeItem(stateKey(id))}catch(e){}
+  if(me&&me.id===id)me=null;
+  closeModal();showGate();toast('Profile deleted');
+}
+function manageProfiles(){
+  let h=`<h3>Manage profiles</h3><p>Pick one to rename, change its picture or PIN, or delete it.</p>`;
+  profiles.forEach(p=>{
+    h+=`<button class="ch-row" style="margin-bottom:8px" onclick="editProfile('${p.id}')">
+      ${avHTML(p.av,'rav').replace('class="rav"','class="rav" style="width:34px;height:34px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;overflow:hidden;background:'+(p.av?p.av.c:'#8b5cf6')+'"')}
+      <span class="ch-name">${esc(p.name)}</span>
+      <span class="ch-count">${p.pin?'\uD83D\uDD12 PIN set':'no PIN'}</span></button>`;
+  });
+  h+=`<div class="modal-actions" style="margin-top:16px">
+     <button class="btn sec" onclick="closeModal();showGate()">Back</button>
+     <button class="btn go" onclick="editProfile(null)">Add profile</button></div>`;
+  showModal(h,true);
+}
+
+/* ============ ROUTER ============ */
+let view={name:'home'};
+function go(v){view=v;render();window.scrollTo(0,0);closeRail()}
+/* Screens where the learner READS for minutes at a time. The cinematic layer
+   pauses the ambient orbs on these, so nothing drifts beside a clinical stem.
+   Everything else is a browse screen and stays alive. */
+const STILL_VIEWS=['quiz','mock','review','theory'];
+
+function render(){
+  renderNav();
+  const p=$('page');
+  // Drives body[data-view] in CSS — the alive-to-browse / calm-to-read gate.
+  document.body.dataset.view=view.name||'home';
+  ({home:vHome,module:vModule,quiz:vQuiz,review:vReview,schedule:vSchedule,theory:vTheory,
+    moved:vMoved,flagged:vFlagged,mock:vMock}[view.name]||vHome)(p);
+  revealOnScroll(p);
+}
+
+/* Fade cards up as they enter the viewport — browse screens only. Reading
+   screens get the page entrance animation and then hold completely still.
+   Falls back to showing everything if IntersectionObserver is unavailable. */
+let _revealObs=null;
+function revealOnScroll(root){
+  if(_revealObs){_revealObs.disconnect();_revealObs=null}
+  if(STILL_VIEWS.includes(view.name)) return;
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  const items=root.querySelectorAll('.card,.stat,.ch-row,.th-ch,.day');
+  if(!items.length||!('IntersectionObserver' in window)) return;
+  _revealObs=new IntersectionObserver((entries,obs)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target)} });
+  },{rootMargin:'0px 0px -40px 0px',threshold:.06});
+  items.forEach((el,i)=>{
+    el.classList.add('reveal');
+    el.style.transitionDelay=Math.min(i,10)*26+'ms';
+    _revealObs.observe(el);
+  });
+}
+
+
+function renderNav(){
+  const rp=$('railProf');
+  if(rp&&me){
+    rp.innerHTML=avHTML(me.av,'rav')+
+      `<span style="flex:1;min-width:0"><span class="rn">${esc(me.name)}</span><br><span class="rs">Switch profile</span></span>`;
+  }
+  drawRailSync();
+  const st=streakCount();
+  $('streakBox').innerHTML=`<span class="fl">${st>=3?'🔥':'🌱'}</span>
+    <span><span class="n">${st}</span> <span class="t">day${st===1?'':'s'} in a row</span></span>`;
+  const due=dueNow().length;
+  const flagged=Object.keys(S.flags).filter(k=>S.flags[k]).length;
+  const moves=buildSchedule().catchups.length;
+  let h=`<button class="nav-item ${view.name==='home'?'on':''}" onclick="go({name:'home'})"><span class="ic">🏠</span> Dashboard</button>`;
+  h+=`<button class="nav-item ${view.name==='schedule'?'on':''}" onclick="go({name:'schedule'})"><span class="ic">📅</span> Schedule</button>`;
+  h+=`<button class="nav-item ${view.name==='moved'?'on':''}" onclick="go({name:'moved'})"><span class="ic">🔀</span> Rescheduled${moves?`<span class="badge-due">${moves}</span>`:'<span class="cnt">0</span>'}</button>`;
+  h+=`<button class="nav-item ${view.name==='theory'?'on':''}" onclick="go({name:'theory'})"><span class="ic">&#128218;</span> Theory<span class="cnt">${theoryCount()}</span></button>`;
+  h+=`<div class="nav-label">Modules</div>`;
+  MODULES.forEach(m=>{
+    h+=`<button class="nav-item ${view.name==='module'&&view.id===m.id?'on':''}" onclick="go({name:'module',id:'${m.id}'})">
+      <span class="ic">${m.icon}</span> ${m.name}<span class="cnt">${qsInModule(m.id).length}</span></button>`;
+  });
+  h+=`<div class="nav-label">Practice</div>`;
+  h+=`<button class="nav-item ${view.name==='review'?'on':''}" onclick="go({name:'review'})"><span class="ic">🔁</span> Review deck
+    ${due?`<span class="badge-due">${due}</span>`:'<span class="cnt">0</span>'}</button>`;
+  h+=`<button class="nav-item ${view.name==='flagged'?'on':''}" onclick="go({name:'flagged'})"><span class="ic">🚩</span> Flagged<span class="cnt">${flagged}</span></button>`;
+  h+=`<button class="nav-item ${view.name==='mock'?'on':''}" onclick="go({name:'mock'})"><span class="ic">⏱️</span> Mock exam</button>`;
+  $('nav').innerHTML=h;
+}
+
+/* ============ DASHBOARD ============ */
+function vHome(p){
+  const total=QUESTIONS.length;
+  const done=QUESTIONS.filter(q=>isAnswered(q.id)).length;
+  const acc=accuracy(QUESTIONS);
+  const due=dueNow().length;
+  let h=`<div class="eyebrow">Second term · July–August</div><h1>Where you stand 📊</h1>
+  <p class="page-sub">${total} questions loaded. More arrive as you send sources — every chapter is already wired and waiting.</p>
+  <div class="grid g4" style="margin-bottom:30px">
+    <div class="stat"><span class="emo">✏️</span><div class="n">${done}<span style="font-size:15px;color:var(--ink-4)">/${total}</span></div><div class="l">Answered</div></div>
+    <div class="stat"><span class="emo">🎯</span><div class="n" style="color:${accColor(acc)}">${acc===null?'—':acc+'%'}</div><div class="l">Accuracy</div></div>
+    <div class="stat"><span class="emo">🔁</span><div class="n" style="color:${due?'var(--ent)':'var(--ok)'}">${due}</div><div class="l">Due for review</div></div>
+    <div class="stat"><span class="emo">🚩</span><div class="n">${Object.keys(S.flags).filter(k=>S.flags[k]).length}</div><div class="l">Flagged</div></div>
+  </div>`;
+
+  const t=todayISO();
+  const rows=buildSchedule().rows;
+  const today=rows.find(d=>d.date===t);
+  if(today&&today.items&&today.items.length){
+    h+=`<h2>&#128204; On today</h2><div class="card" style="margin-bottom:28px;--c:rgba(139,92,246,.4)">
+      ${today.items.map(it=>`<div class="day-line">${it.label?`<span class="tag" style="background:${it.hex}">${esc(it.label)}</span>`:''}${esc(it.text)}</div>`).join('')}
+      </div>`;
+  }
+
+  h+=`<h2>Modules</h2><div class="grid g3">`;
+  MODULES.forEach(m=>{
+    const qs=qsInModule(m.id);
+    const d=qs.filter(q=>isAnswered(q.id)).length;
+    const a=accuracy(qs);
+    const pct=qs.length?d/qs.length*100:0;
+    const chs=m.groups.reduce((n,g)=>n+g.chapters.length,0);
+    h+=`<button class="card mod-card" style="--c:${m.color}" onclick="go({name:'module',id:'${m.id}'})">
+      <div class="mod-top"><span class="mod-ic">${m.icon}</span><span class="mod-name">${m.name}</span></div>
+      <div class="mod-meta">${chs} chapters · ${qs.length} question${qs.length===1?'':'s'}</div>
+      <div class="ringrow">${ring(pct,m.hex)}
+        <div class="ringmeta"><div class="a" style="color:${accColor(a)}">${a===null?'—':a+'%'}</div>
+        <div class="b">${d}/${qs.length} answered</div></div></div>
+    </button>`;
+  });
+  h+=`</div>`;
+  p.innerHTML=h;
+}
+
+/* ============ MODULE ============ */
+function vModule(p){
+  const m=moduleOf(view.id);
+  const qs=qsInModule(m.id);
+  const a=accuracy(qs);
+  let h=`<button class="tb-btn" style="padding-left:0;margin-bottom:8px" onclick="go({name:'home'})">← Dashboard</button>
+  <div class="eyebrow" style="background:${m.hex}">${m.name}</div>
+  <h1>${m.icon} ${m.name}</h1>
+  <p class="page-sub">${qs.length} question${qs.length===1?'':'s'} · ${qs.filter(q=>isAnswered(q.id)).length} answered${a!==null?` · <b style="color:${accColor(a)}">${a}% accuracy</b>`:''}</p>`;
+
+  /* Source filter. Only rendered for banks this module actually has questions
+     from, so an empty module does not offer three dead toggles. */
+  const allQ=allQsInModule(m.id);
+  const present=BANKS.filter(b=>allQ.some(q=>bankOf(q)===b.id));
+  if(present.length>1){
+    const sel=S.banks[m.id]||[];
+    const filtering=sel.length>0;
+    h+=`<div class="bankbar">
+      <span class="bank-lbl">Source</span>
+      ${present.map(b=>{
+        const on=!filtering||sel.indexOf(b.id)>=0;
+        const n=allQ.filter(q=>bankOf(q)===b.id).length;
+        return `<button class="bankchip ${on?'on':''}" style="--bk:${b.hex}"
+          onclick="toggleBank('${m.id}','${b.id}')"
+          aria-pressed="${on}">${b.name}<span class="bankn">${n}</span></button>`;
+      }).join('')}
+      ${filtering?`<button class="bankchip reset" onclick="clearBanks('${m.id}')">Show all</button>`:''}
+    </div>`;
+  }
+
+  if(qs.length){
+    const un=qs.filter(q=>!isAnswered(q.id));
+    h+=`<div class="filterbar">
+      <button class="btn go" onclick="startQuiz(${JSON.stringify(qs.map(q=>q.id)).replace(/"/g,'&quot;')},'${m.name} — all')">▶ Practise all ${qs.length}</button>
+      ${un.length?`<button class="btn sec" onclick="startQuiz(${JSON.stringify(un.map(q=>q.id)).replace(/"/g,'&quot;')},'${m.name} — new')">Unanswered (${un.length})</button>`:''}
+    </div>`;
+  }
+
+  m.groups.forEach(g=>{
+    h+=`<div class="grouphdr">${g.name}</div>`;
+    g.chapters.forEach(([cid,cname])=>{
+      const cq=qsIn(cid);
+      const ca=accuracy(cq);
+      const cd=cq.filter(q=>isAnswered(q.id)).length;
+      const dot=cq.length?(ca===null?'#fff':accColor(ca)):'transparent';
+      h+=`<button class="ch-row" ${cq.length?'':'disabled'} onclick="startQuiz(${JSON.stringify(cq.map(q=>q.id)).replace(/"/g,'&quot;')},'${esc(cname).replace(/'/g,"\\'")}')">
+        <span class="ch-dot" style="background:${dot}"></span>
+        <span class="ch-name">${cname}</span>
+        <span class="ch-count">${cq.length?`${cd}/${cq.length}`:'coming soon'}</span>
+        <span class="ch-acc" style="color:${accColor(ca)}">${ca===null?'':ca+'%'}</span>
+      </button>`;
+    });
+  });
+  p.innerHTML=h;
+}
+
+/* ============ QUIZ ============ */
+let Q={ids:[],i:0,title:'',sel:null,shown:false,t0:null,txt:'',peek:false};
+function startQuiz(ids,title){
+  if(!ids||!ids.length){toast('No questions there yet 🤷');return}
+  Q={ids:ids.slice(),i:0,title:title,sel:null,shown:false,t0:Date.now(),txt:'',peek:false};
+  go({name:'quiz'});
+}
+
+/* ---- Free-text cases ----------------------------------------------------
+   Some sources print a vignette and a diagnosis with no options at all.
+   Those become type:'case': the learner types a diagnosis and it is graded
+   on concept keys, never on exact wording — "right otomycosis" and
+   "fungal otitis externa of the right ear" both earn the same key.       */
+function normTxt(s){
+  return String(s||'').toLowerCase()
+    .replace(/[^a-z0-9 ]+/g,' ').replace(/\s+/g,' ').trim();
+}
+function lev(a,b){                        // edit distance, for typo tolerance
+  const m=a.length,n=b.length;
+  if(!m)return n; if(!n)return m;
+  let prev=Array.from({length:n+1},(_,j)=>j),cur=new Array(n+1);
+  for(let i=1;i<=m;i++){
+    cur[0]=i;
+    for(let j=1;j<=n;j++){
+      cur[j]=Math.min(prev[j]+1,cur[j-1]+1,prev[j-1]+(a[i-1]===b[j-1]?0:1));
+    }
+    [prev,cur]=[cur,prev];
+  }
+  return prev[n];
+}
+function keyHit(hay,terms){
+  const words=hay.split(' ');
+  return (terms||[]).some(t=>{
+    const n=normTxt(t); if(!n)return false;
+    if(hay.indexOf(n)>=0)return true;
+    if(n.indexOf(' ')>=0)return false;          // multi-word: exact only
+    const tol=n.length>7?2:(n.length>4?1:0);    // single word: allow typos
+    return tol>0&&words.some(w=>Math.abs(w.length-n.length)<=tol&&lev(w,n)<=tol);
+  });
+}
+function gradeCase(q,txt){
+  const hay=normTxt(txt), keys=q.keys||[];
+  const hits=keys.map(k=>keyHit(hay,k.terms));
+  const got=hits.filter(Boolean).length;
+  return {hits:hits,got:got,total:keys.length,ok:keys.length>0&&got===keys.length,blank:!hay};
+}
+function revealCase(){
+  const q=QUESTIONS.find(x=>x.id===Q.ids[Q.i]);
+  const el=document.getElementById('caseInput');
+  const txt=el?el.value:'';
+  if(!normTxt(txt)){toast('Type a diagnosis first ✍️');return}
+  Q.txt=txt; Q.shown=true; Q.peek=false;
+  const g=gradeCase(q,txt);
+  if(!S.answers[q.id]||S.answers[q.id].text!==txt){
+    S.answers[q.id]={text:txt,got:g.got,total:g.total,ok:g.ok,at:Date.now()};
+    scheduleSRS(q.id,g.ok);
+  }
+  markDayActive();save();render();
+}
+/* Deliberate escape hatch for a learner who is stuck. It is never automatic,
+   it scores nothing and it records no answer — otherwise a case with no
+   recallable diagnosis would be a dead end, since Skip never shows the
+   explanation either. */
+function peekCase(){
+  Q.txt=''; Q.shown=true; Q.peek=true;
+  render();
+}
+function vCase(p,q,m,prev){
+  /* A case is NEVER auto-revealed, not even one answered before — the whole
+     point is to type the diagnosis first (user's instruction, 2026-07-26).
+     Returning to an answered case therefore starts blank again; the previous
+     attempt is shown as a chip so the earlier score is not lost. */
+  const flagged=!!S.flags[q.id];
+  const g=(Q.shown&&!Q.peek)?gradeCase(q,Q.txt):null;
+  const verdict=Q.peek?['bad','👀','Revealed — not scored']
+    :!g?null:(g.ok?['ok','🎯','Spot on']
+    :g.got>0?['part','🟡','Partly right — '+g.got+' of '+g.total+' key points']
+    :['bad','📕','Not quite']);
+
+  let h=`<div class="qwrap">
+   <div class="qhead">
+    <button class="tb-btn" style="padding-left:0" onclick="go({name:'module',id:'${q.module}'})">←</button>
+    <span class="pill" style="background:${m.hex}">${esc(chapterName(q.chapter))}</span>
+    <span class="pill ghost">✍️ Case</span>
+    <span class="pill bankpill" style="background:${(BANKS.find(b=>b.id===bankOf(q))||{hex:'#6a6390'}).hex}">${esc(bankName(bankOf(q)))}</span>
+    ${q.source?`<span class="pill ghost">${esc(q.source)}</span>`:''}
+    <button class="qprog" title="Jump to a question (J)" onclick="openJump()">${Q.i+1} / ${Q.ids.length} &nbsp;&#9776;</button>
+   </div>
+   <div class="qcard">
+    ${markbar(q.id)}
+    <div class="stem${armed?' arm':''}">${md(q.stem)}</div>
+    <div class="caseask">🩺 What is your diagnosis?</div>
+    <textarea id="caseInput" class="caseinput" rows="3" ${Q.shown?'disabled':''}
+      placeholder="Type the diagnosis in your own words — wording is not marked, the concepts are."
+      >${esc(Q.txt||'')}</textarea>`;
+
+  if(!Q.shown&&prev&&prev.text){
+    h+=`<div class="lastgo">🔁 You answered this before — ${prev.got} of ${prev.total} key points. Have another go.</div>`;
+  }
+
+  if(!Q.shown){
+    h+=`<div class="qactions">
+      <button class="btn go" onclick="revealCase()">Check my answer</button>
+      <button class="btn sec" onclick="peekCase()">👀 Reveal</button>
+      <button class="btn sec flag ${flagged?'on':''}" onclick="toggleFlag('${q.id}')">🚩 ${flagged?'Flagged':'Flag'}</button>
+      <div style="margin-left:auto;display:flex;gap:9px">
+        ${Q.i>0?'<button class="btn sec" onclick="navQ(-1)">←</button>':''}
+        <button class="btn sec" onclick="navQ(1)">Skip →</button>
+      </div></div>`;
+  }else{
+    h+=`<div class="verdict ${verdict[0]}"><span class="big">${verdict[1]}</span>${verdict[2]}</div>`;
+    h+=`<div class="modelans"><b>The source's diagnosis</b><div>${md(q.answer)}</div></div>`;
+    if((q.keys||[]).length){
+      h+=`<div class="keys"><div class="keys-h">What was being looked for</div>`;
+      q.keys.forEach((k,i)=>{
+        const hit=g?g.hits[i]:false;
+        h+=`<div class="key ${g?(hit?'hit':'miss'):''}"><span>${g?(hit?'✅':'⬜'):'•'}</span>
+            <span>${esc(k.label)}</span></div>`;
+      });
+      h+=`</div>`;
+    }
+    if(!Q.peek&&(!prev||prev.conf===undefined)){
+      h+=`<div class="conf"><div class="conf-q">🤔 How sure were you? This sets when it comes back.</div>
+       <div class="conf-btns">
+        <button class="conf-b" onclick="setConf('${q.id}',0)">🎲 Guessed</button>
+        <button class="conf-b" onclick="setConf('${q.id}',1)">😐 Unsure</button>
+        <button class="conf-b" onclick="setConf('${q.id}',2)">💪 Confident</button>
+       </div></div>`;
+    }
+    const hasExp=q.explanation&&q.explanation.trim().length>0;
+    h+=`<div class="explain">
+      <button class="ex-head" onclick="toggleExp(this)">💡 Explain this case<span class="chev">▾</span></button>
+      <div class="ex-body">${hasExp?md(q.explanation):'<div class="noexp">No explanation came with this case.</div>'}
+      ${q.objective?`<div class="objective"><b>🎓 Educational objective</b>${md(q.objective).replace(/<\/?p>/g,'')}</div>`:''}
+      </div></div>`;
+    const th=qTheory(q.id);
+    if(th)h+=`<button class="readtheory" onclick="openTheoryFor('${q.id}')">
+      &#128218; <span>Read the notes on this &mdash; <b>${esc(th.h)}</b></span>
+      <span style="margin-left:auto">&rarr;</span></button>`;
+    h+=`<div class="qactions">
+      <button class="btn sec flag ${flagged?'on':''}" onclick="toggleFlag('${q.id}')">🚩 ${flagged?'Flagged':'Flag'}</button>
+      <div style="margin-left:auto;display:flex;gap:9px">
+        ${Q.i>0?'<button class="btn sec" onclick="navQ(-1)">←</button>':''}
+        <button class="btn go" onclick="navQ(1)">${Q.i===Q.ids.length-1?'Finish 🏁':'Next →'}</button>
+      </div></div>`;
+  }
+  h+=`</div></div>`;
+  p.innerHTML=h;
+  const stemEl=p.querySelector('.stem');
+  if(stemEl){
+    applyHighlights(stemEl,S.hl[q.id]||[]);
+    stemEl.addEventListener('mouseup',onStemSelect);
+    stemEl.addEventListener('touchend',onStemSelect);
+  }
+  const inp=document.getElementById('caseInput');
+  if(inp&&!Q.shown){
+    inp.focus();
+    inp.addEventListener('keydown',e=>{        // Ctrl/Cmd+Enter submits
+      if(e.key==='Enter'&&(e.ctrlKey||e.metaKey)){e.preventDefault();revealCase()}
+    });
+  }
+}
+
+function vQuiz(p){
+  const q=QUESTIONS.find(x=>x.id===Q.ids[Q.i]);
+  if(!q){p.innerHTML='<div class="empty"><div class="big">🎉</div><h3>Set complete</h3></div>';return}
+  const m=moduleOf(q.module)||{hex:'#6a6390'};
+  const prev=S.answers[q.id];
+  if(q.type==='case'){vCase(p,q,m,prev);return}
+  if(prev&&!Q.shown&&Q.sel===null){Q.sel=prev.pick;Q.shown=true}
+  const flagged=!!S.flags[q.id];
+
+  let h=`<div class="qwrap">
+   <div class="qhead">
+    <button class="tb-btn" style="padding-left:0" onclick="go({name:'module',id:'${q.module}'})">←</button>
+    <span class="pill" style="background:${m.hex}">${esc(chapterName(q.chapter))}</span>
+    <span class="pill bankpill" style="background:${(BANKS.find(b=>b.id===bankOf(q))||{hex:'#6a6390'}).hex}">${esc(bankName(bankOf(q)))}</span>
+    ${q.source?`<span class="pill ghost">${esc(q.source)}</span>`:''}
+    <button class="qprog" title="Jump to a question (J)" onclick="openJump()">${Q.i+1} / ${Q.ids.length} &nbsp;&#9776;</button>
+   </div>
+   <div class="qcard">
+    ${markbar(q.id)}
+    <div class="stem${armed?' arm':''}">${md(q.stem)}</div>
+    <div class="opts">`;
+  q.options.forEach((o,i)=>{
+    let cls='opt';
+    if(Q.shown){ if(i===q.answer)cls+=' correct'; else if(i===Q.sel)cls+=' wrong' }
+    else if(i===Q.sel)cls+=' sel';
+    const mark=Q.shown?(i===q.answer?'<span class="mark">✅</span>':(i===Q.sel?'<span class="mark">❌</span>':'')):'';
+    h+=`<button class="${cls}" ${Q.shown?'disabled':''} onclick="pick(${i})">
+      <span class="ltr">${'ABCDE'[i]}</span><span>${esc(o)}</span>${mark}</button>`;
+  });
+  h+=`</div>`;
+
+  if(!Q.shown){
+    h+=`<div class="qactions">
+      <button class="btn go" ${Q.sel===null?'disabled':''} onclick="reveal()">Check answer</button>
+      <button class="btn sec flag ${flagged?'on':''}" onclick="toggleFlag('${q.id}')">🚩 ${flagged?'Flagged':'Flag'}</button>
+      <div style="margin-left:auto;display:flex;gap:9px">
+        ${Q.i>0?'<button class="btn sec" onclick="navQ(-1)">←</button>':''}
+        <button class="btn sec" onclick="navQ(1)">Skip →</button>
+      </div></div>`;
+  }else{
+    const ok=Q.sel===q.answer;
+    h+=`<div class="verdict ${ok?'ok':'bad'}"><span class="big">${ok?'🎯':'📕'}</span>
+      ${ok?'Correct!':'Not quite — the answer is '+'ABCDE'[q.answer]}</div>`;
+
+    if(!prev||prev.conf===undefined){
+      h+=`<div class="conf"><div class="conf-q">🤔 How sure were you? This sets when it comes back.</div>
+       <div class="conf-btns">
+        <button class="conf-b" onclick="setConf('${q.id}',0)">🎲 Guessed</button>
+        <button class="conf-b" onclick="setConf('${q.id}',1)">😐 Unsure</button>
+        <button class="conf-b" onclick="setConf('${q.id}',2)">💪 Confident</button>
+       </div></div>`;
+    }
+
+    const hasExp=q.explanation&&q.explanation.trim().length>0;
+    h+=`<div class="explain">
+      <button class="ex-head" onclick="toggleExp(this)">💡 Explain this answer<span class="chev">▾</span></button>
+      <div class="ex-body">${hasExp?md(q.explanation):'<div class="noexp">No explanation came with this question. Flag it and I can write one.</div>'}
+      ${q.objective?`<div class="objective"><b>🎓 Educational objective</b>${md(q.objective).replace(/<\/?p>/g,'')}</div>`:''}
+      </div></div>`;
+
+    const th=qTheory(q.id);
+    if(th)h+=`<button class="readtheory" onclick="openTheoryFor('${q.id}')">
+      &#128218; <span>Read the notes on this &mdash; <b>${esc(th.h)}</b></span>
+      <span style="margin-left:auto">&rarr;</span></button>`;
+
+    h+=`<div class="qactions">
+      <button class="btn sec flag ${flagged?'on':''}" onclick="toggleFlag('${q.id}')">🚩 ${flagged?'Flagged':'Flag'}</button>
+      <div style="margin-left:auto;display:flex;gap:9px">
+        ${Q.i>0?'<button class="btn sec" onclick="navQ(-1)">←</button>':''}
+        <button class="btn go" onclick="navQ(1)">${Q.i===Q.ids.length-1?'Finish 🏁':'Next →'}</button>
+      </div></div>`;
+  }
+  h+=`</div></div>`;
+  p.innerHTML=h;
+  const stemEl=p.querySelector('.stem');
+  if(stemEl){
+    applyHighlights(stemEl,S.hl[q.id]||[]);
+    stemEl.addEventListener('mouseup',onStemSelect);
+    stemEl.addEventListener('touchend',onStemSelect);
+  }
+}
+function pick(i){if(Q.shown)return;Q.sel=i;render()}
+function reveal(){
+  if(Q.sel===null)return;
+  const q=QUESTIONS.find(x=>x.id===Q.ids[Q.i]);
+  const ok=Q.sel===q.answer;
+  Q.shown=true;
+  if(!S.answers[q.id]||S.answers[q.id].pick!==Q.sel){
+    S.answers[q.id]={pick:Q.sel,ok:ok,at:Date.now()};
+    scheduleSRS(q.id,ok);
+  }
+  markDayActive();save();render();
+}
+function setConf(id,c){
+  S.conf[id]=c;
+  if(S.answers[id]){
+    S.answers[id].conf=c;
+    if(c===0){ /* guessed → back tomorrow, in the deck */
+      S.srs[id]={lvl:0,due:(()=>{const d=new Date();d.setDate(d.getDate()+1);return d.toISOString().slice(0,10)})()};
+    }
+  }
+  save();render();
+  toast(c===0?'Added to your review deck 🎲':c===1?'Noted — it will come back soon':'Nice 💪');
+}
+function navQ(d){
+  const n=Q.i+d;
+  if(n<0)return;
+  if(n>=Q.ids.length){finishSet();return}
+  Q.i=n;Q.sel=null;Q.shown=false;Q.txt='';Q.peek=false;render();
+}
+function finishSet(){
+  const done=Q.ids.filter(id=>isAnswered(id));
+  const right=done.filter(id=>isCorrect(id)).length;
+  const mins=Math.round((Date.now()-Q.t0)/60000);
+  const pct=done.length?Math.round(right/done.length*100):0;
+  if(pct>=80&&done.length>=3)confetti();
+  const face=pct>=90?'🏆':pct>=75?'🎉':pct>=50?'👍':'📚';
+  showModal(`<h3>${face} ${pct}%</h3>
+   <p>You answered <strong>${done.length}</strong> question${done.length===1?'':'s'} and got <strong>${right}</strong> right${mins?` in ${mins} min`:''}.
+   ${done.length-right>0?` The ${done.length-right} you missed are in your review deck.`:' Clean sweep.'}</p>
+   <div class="modal-actions">
+     <button class="btn sec" onclick="closeModal();go({name:'home'})">Dashboard</button>
+     ${done.length-right>0?`<button class="btn go" onclick="closeModal();go({name:'review'})">Review mistakes</button>`:`<button class="btn go" onclick="closeModal()">Nice</button>`}
+   </div>`);
+}
+function toggleFlag(id){S.flags[id]=!S.flags[id];save();render();toast(S.flags[id]?'Flagged 🚩':'Flag removed')}
+function toggleExp(b){b.classList.toggle('open');b.nextElementSibling.classList.toggle('open')}
+
+
+
+
+/* ============ JUMP NAVIGATOR ============ */
+function openJump(){
+  const n=Q.ids.length;
+  let h=`<h3>&#127919; Go to question</h3>
+   <p style="margin-bottom:15px">${n} question${n===1?'':'s'} in this set. Type a number or pick one from the grid.</p>
+   <div class="jumprow">
+     <input class="jumpin" id="jumpNum" type="number" min="1" max="${n}" placeholder="e.g. ${Math.min(100,n)}"
+       onkeydown="if(event.key==='Enter'){event.preventDefault();jumpGo()}">
+     <button class="btn go" onclick="jumpGo()">Go</button>
+     <button class="btn sec" onclick="jumpNextUnanswered()">Next unanswered</button>
+     <button class="btn sec" onclick="jumpFirstWrong()">First wrong</button>
+   </div>
+   <div class="jumpkey">
+     <span class="k"><span class="sw" style="background:var(--neuro)"></span>Current</span>
+     <span class="k"><span class="sw" style="background:var(--ok-bg);border-color:var(--ok)"></span>Correct</span>
+     <span class="k"><span class="sw" style="background:var(--bad-bg);border-color:var(--bad)"></span>Wrong</span>
+     <span class="k"><span class="sw" style="background:var(--card)"></span>Not answered</span>
+     <span class="k"><span class="sw" style="background:var(--gold)"></span>Flagged</span>
+   </div>
+   <div class="qgrid" id="qgrid">`;
+  Q.ids.forEach((id,i)=>{
+    const cls=['qg'];
+    if(i===Q.i)cls.push('cur');
+    else if(isAnswered(id))cls.push(isCorrect(id)?'ok':'bad');
+    if(S.flags[id])cls.push('flagged');
+    h+=`<button class="${cls.join(' ')}" onclick="jumpTo(${i})">${i+1}</button>`;
+  });
+  h+=`</div><div class="modal-actions" style="margin-top:18px">
+     <button class="btn sec" onclick="closeModal()">Close</button></div>`;
+  showModal(h,true);
+  setTimeout(()=>{
+    const inp=$('jumpNum');if(inp&&inp.focus)inp.focus();
+    const cur=document.querySelector('.qg.cur');
+    if(cur&&cur.scrollIntoView)cur.scrollIntoView({block:'center'});
+  },40);
+}
+function jumpTo(i){
+  if(i<0||i>=Q.ids.length)return;
+  Q.i=i;Q.sel=null;Q.shown=false;Q.txt='';Q.peek=false;
+  closeModal();render();window.scrollTo(0,0);
+}
+function jumpGo(){
+  const inp=$('jumpNum');
+  const v=parseInt(inp&&inp.value,10);
+  if(!v||v<1||v>Q.ids.length){toast(`Enter a number between 1 and ${Q.ids.length}`);return}
+  jumpTo(v-1);
+}
+function jumpNextUnanswered(){
+  for(let k=1;k<=Q.ids.length;k++){
+    const i=(Q.i+k)%Q.ids.length;
+    if(!isAnswered(Q.ids[i])){jumpTo(i);return}
+  }
+  toast('Every question in this set is answered \u2705');
+}
+function jumpFirstWrong(){
+  for(let k=1;k<=Q.ids.length;k++){
+    const i=(Q.i+k)%Q.ids.length;
+    const id=Q.ids[i];
+    if(isAnswered(id)&&!isCorrect(id)){jumpTo(i);return}
+  }
+  toast('Nothing wrong in this set \u2705');
+}
+
+/* ============ HIGHLIGHTER ============ */
+let armed='y';           /* active pen: y/g/p/b, or 'er' to erase */
+const PENS=[['y','Yellow'],['g','Green'],['p','Pink'],['b','Blue']];
+
+function setPen(c){armed=(armed===c)?null:c;render()}
+
+function offsetOf(root,node,off){
+  let acc=0;
+  const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);
+  let n;
+  while(n=w.nextNode()){
+    if(n===node)return acc+off;
+    acc+=n.nodeValue.length;
+  }
+  return -1;
+}
+function stripMarks(root){
+  root.querySelectorAll('mark.hl').forEach(m=>{
+    const p=m.parentNode;
+    while(m.firstChild)p.insertBefore(m.firstChild,m);
+    p.removeChild(m);
+  });
+  root.normalize();
+}
+function paint(root,s,e,c){
+  const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);
+  let acc=0,n;const hits=[];
+  while(n=w.nextNode()){
+    const len=n.nodeValue.length, ns=acc, ne=acc+len;
+    if(ne>s&&ns<e)hits.push({node:n,from:Math.max(s-ns,0),to:Math.min(e-ns,len)});
+    acc=ne;
+  }
+  hits.forEach(({node,from,to})=>{
+    if(to<=from)return;
+    const r=document.createRange();
+    r.setStart(node,from);r.setEnd(node,to);
+    const m=document.createElement('mark');
+    m.className='hl';m.dataset.c=c;
+    try{r.surroundContents(m)}
+    catch(err){const f=r.extractContents();m.appendChild(f);r.insertNode(m)}
+  });
+}
+function applyHighlights(root,list){
+  stripMarks(root);
+  (list||[]).slice().sort((a,b)=>a.s-b.s).forEach(h=>paint(root,h.s,h.e,h.c));
+}
+function carve(list,s,e){
+  const out=[];
+  (list||[]).forEach(h=>{
+    if(h.e<=s||h.s>=e){out.push(h);return}
+    if(h.s<s)out.push({s:h.s,e:s,c:h.c});
+    if(h.e>e)out.push({s:e,e:h.e,c:h.c});
+  });
+  return out;
+}
+function onStemSelect(){
+  if(!armed)return;
+  const sel=window.getSelection();
+  if(!sel||sel.isCollapsed||!sel.rangeCount)return;
+  const root=document.querySelector('.stem');
+  if(!root)return;
+  const r=sel.getRangeAt(0);
+  if(!root.contains(r.commonAncestorContainer))return;
+  const s=offsetOf(root,r.startContainer,r.startOffset);
+  const e=offsetOf(root,r.endContainer,r.endOffset);
+  if(s<0||e<0||e<=s)return;
+  const q=QUESTIONS.find(x=>x.id===Q.ids[Q.i]);
+  if(!q)return;
+  let list=carve(S.hl[q.id]||[],s,e);
+  if(armed!=='er')list.push({s:s,e:e,c:armed});
+  list.sort((a,b)=>a.s-b.s);
+  /* merge touching runs of the same colour */
+  const merged=[];
+  list.forEach(h=>{
+    const p=merged[merged.length-1];
+    if(p&&p.c===h.c&&h.s<=p.e)p.e=Math.max(p.e,h.e);
+    else merged.push(Object.assign({},h));
+  });
+  S.hl[q.id]=merged;
+  sel.removeAllRanges();
+  save();
+  applyHighlights(root,merged);
+}
+function clearHl(){
+  const q=QUESTIONS.find(x=>x.id===Q.ids[Q.i]);
+  if(!q)return;
+  delete S.hl[q.id];save();render();
+  toast('Highlights cleared');
+}
+function markbar(qid){
+  const n=(S.hl[qid]||[]).length;
+  let h='<div class="mkbar"><span class="lb">&#128396;&#65039; Marker</span>';
+  PENS.forEach(([c,name])=>{
+    h+=`<button class="pen ${c} ${armed===c?'on':''}" title="${name} highlighter" onclick="setPen('${c}')"></button>`;
+  });
+  h+=`<button class="pen er ${armed==='er'?'on':''}" title="Eraser" onclick="setPen('er')">&#9003;</button>`;
+  if(n)h+=`<button class="clr" onclick="clearHl()">Clear all</button>`;
+  h+=`<span class="hint">${armed?(armed==='er'?'Select text to erase':'Select text to highlight'):'Pick a colour to start'}</span>`;
+  return h+'</div>';
+}
+
+/* ============ REVIEW DECK — CHANGE 3: by module ============ */
+function vReview(p){
+  const deck=deckAll();
+  const due=dueNow();
+  let h=`<div class="eyebrow" style="background:var(--ent)">Spaced repetition</div><h1>🔁 Review deck</h1>
+  <p class="page-sub">Anything you got wrong — or got right but marked as a guess — lands here. It comes back after 1 day, then 3, 7, 21, 60. Right answer moves it out a step; wrong resets it.</p>`;
+  if(!deck.length){
+    h+=`<div class="empty"><div class="big">🌤️</div><h3>Deck is empty</h3>
+     <p>Nothing wrong and nothing guessed. Keep going and this fills itself.</p></div>`;
+    p.innerHTML=h;return;
+  }
+  h+=`<div class="grid g4" style="margin-bottom:24px">
+    <div class="stat"><span class="emo">⏰</span><div class="n" style="color:${due.length?'var(--ent)':'var(--ok)'}">${due.length}</div><div class="l">Due today</div></div>
+    <div class="stat"><span class="emo">📦</span><div class="n">${deck.length}</div><div class="l">In the deck</div></div>
+    <div class="stat"><span class="emo">🎲</span><div class="n">${deck.filter(q=>S.answers[q.id].conf===0&&isCorrect(q.id)).length}</div><div class="l">Lucky guesses</div></div>
+    <div class="stat"><span class="emo">🎓</span><div class="n">${deck.filter(q=>(S.srs[q.id]||{}).lvl>=3).length}</div><div class="l">Nearly retired</div></div>
+  </div>`;
+  if(due.length){
+    h+=`<div class="filterbar"><button class="btn go" onclick="startQuiz(${JSON.stringify(due.map(q=>q.id)).replace(/"/g,'&quot;')},'Review — due today')">▶ Start ${due.length} due</button>
+    <button class="btn sec" onclick="startQuiz(${JSON.stringify(deck.map(q=>q.id)).replace(/"/g,'&quot;')},'Review — all')">Whole deck (${deck.length})</button></div>`;
+  }else{
+    h+=`<div class="filterbar"><button class="btn sec" onclick="startQuiz(${JSON.stringify(deck.map(q=>q.id)).replace(/"/g,'&quot;')},'Review — all')">Nothing due — practise anyway (${deck.length})</button></div>`;
+  }
+
+  MODULES.forEach(m=>{
+    const md_=deck.filter(q=>q.module===m.id);
+    if(!md_.length)return;
+    const mdue=md_.filter(q=>due.includes(q));
+    h+=`<div class="grouphdr">${m.icon} ${m.name} — ${md_.length}${mdue.length?` · ${mdue.length} due`:''}</div>`;
+    h+=`<div class="filterbar">
+      ${mdue.length?`<button class="chip on" style="--c:${m.hex}" onclick="startQuiz(${JSON.stringify(mdue.map(q=>q.id)).replace(/"/g,'&quot;')},'${m.name} — due')">▶ ${mdue.length} due now</button>`:''}
+      <button class="chip" onclick="startQuiz(${JSON.stringify(md_.map(q=>q.id)).replace(/"/g,'&quot;')},'${m.name} — review')">All ${md_.length}</button>
+    </div>`;
+    md_.forEach(q=>{
+      const s=S.srs[q.id]||{lvl:0,due:todayISO()};
+      const isDue=s.due<=todayISO();
+      const guess=isCorrect(q.id)&&S.answers[q.id].conf===0;
+      h+=`<button class="ch-row" onclick="startQuiz(['${q.id}'],'Single question')">
+        <span class="ch-dot" style="background:${isDue?'var(--ent)':'var(--line-2)'}"></span>
+        <span class="ch-name" style="font-size:13.2px;font-weight:600">${guess?'🎲 ':''}${esc(q.stem.slice(0,96))}…</span>
+        <span class="ch-count">${esc(chapterName(q.chapter))}</span>
+        <span class="ch-acc" style="color:${isDue?'var(--ent)':'var(--ink-4)'};min-width:62px">${isDue?'due now':'in '+daysUntil(s.due)+'d'}</span>
+      </button>`;
+    });
+  });
+  p.innerHTML=h;
+}
+function daysUntil(iso){return Math.max(Math.ceil((new Date(iso)-new Date(todayISO()))/86400000),0)}
+
+function vFlagged(p){
+  const f=QUESTIONS.filter(q=>S.flags[q.id]);
+  let h=`<div class="eyebrow" style="background:var(--gold);color:var(--on-accent)">Marked by you</div><h1>🚩 Flagged</h1>
+  <p class="page-sub">Anything you wanted to come back to, right or wrong.</p>`;
+  if(!f.length){
+    h+=`<div class="empty"><div class="big">🚩</div><h3>No flags yet</h3><p>Hit the flag button on any question — or press <b>F</b> — to park it here.</p></div>`;
+  }else{
+    MODULES.forEach(m=>{
+      const fm=f.filter(q=>q.module===m.id);
+      if(!fm.length)return;
+      h+=`<div class="grouphdr">${m.icon} ${m.name} — ${fm.length}</div>
+      <div class="filterbar"><button class="chip on" style="--c:${m.hex}" onclick="startQuiz(${JSON.stringify(fm.map(q=>q.id)).replace(/"/g,'&quot;')},'${m.name} — flagged')">▶ Practise ${fm.length}</button></div>`;
+      fm.forEach(q=>{
+        h+=`<button class="ch-row" onclick="startQuiz(['${q.id}'],'Flagged')">
+          <span class="ch-dot" style="background:var(--gold)"></span>
+          <span class="ch-name" style="font-size:13.2px;font-weight:600">${esc(q.stem.slice(0,100))}…</span>
+          <span class="ch-count">${esc(chapterName(q.chapter))}</span></button>`;
+      });
+    });
+  }
+  p.innerHTML=h;
+}
+
+/* ============ MOCK — CHANGE 3: by module ============ */
+let mockMods={};
+function vMock(p){
+  MODULES.forEach(m=>{if(mockMods[m.id]===undefined)mockMods[m.id]=qsInModule(m.id).length>0});
+  const pool=QUESTIONS.filter(q=>mockMods[q.module]);
+  let h=`<div class="eyebrow" style="background:var(--neuro)">Exam conditions</div><h1>⏱️ Mock exam</h1>
+  <p class="page-sub">Pick your modules, pick a length. Random order, clock running, no peeking at explanations until you finish.</p>
+  <h2>1 · Choose modules</h2><div class="filterbar">`;
+  MODULES.forEach(m=>{
+    const n=qsInModule(m.id).length;
+    h+=`<button class="chip ${mockMods[m.id]&&n?'on':''}" style="--c:${m.hex};${n?'':'opacity:.4'}"
+      ${n?`onclick="mockMods['${m.id}']=!mockMods['${m.id}'];render()"`:'disabled'}>
+      ${m.icon} ${m.name} <span style="opacity:.7">${n}</span></button>`;
+  });
+  h+=`</div>`;
+  h+=`<h2>2 · Choose length</h2>`;
+  if(!pool.length){
+    h+=`<div class="empty"><div class="big">📭</div><h3>Nothing selected</h3><p>Pick at least one module that has questions loaded.</p></div>`;
+  }else{
+    h+=`<p class="page-sub" style="margin-bottom:14px">${pool.length} question${pool.length===1?'':'s'} in the selected pool.</p><div class="grid g3" style="max-width:780px">`;
+    [10,20,40].forEach(n=>{
+      const ok=pool.length>=n;
+      h+=`<button class="card" ${ok?`onclick="runMock(${n})"`:'disabled'} style="--c:rgba(139,92,246,.4)">
+        <div class="mod-top"><span class="mod-ic" style="background:var(--neuro)">⏱️</span><span class="mod-name">${n} questions</span></div>
+        <div class="mod-meta">~${Math.round(n*1.2)} minutes${ok?'':' · pool too small'}</div></button>`;
+    });
+    if(pool.length<40)h+=`<button class="card" onclick="runMock(${pool.length})" style="--c:rgba(139,92,246,.4)">
+      <div class="mod-top"><span class="mod-ic" style="background:var(--gold)">🎲</span><span class="mod-name">All ${pool.length}</span></div>
+      <div class="mod-meta">Everything in the pool</div></button>`;
+    h+=`</div>`;
+  }
+  p.innerHTML=h;
+}
+function runMock(n){
+  const pool=QUESTIONS.filter(q=>mockMods[q.module]).slice();
+  for(let i=pool.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]]}
+  startQuiz(pool.slice(0,n).map(q=>q.id),'Mock exam');
+}
+
+/* ============ SCHEDULE — CHANGE 1: two markers ============ */
+function vSchedule(p){
+  const t=todayISO();
+  const {rows,catchups,overflow}=buildSchedule();
+  const landing={};
+  catchups.forEach(c=>{if(c.to)(landing[c.to]=landing[c.to]||[]).push(c)});
+  const ed=!!S.editSched;
+
+  let h=`<div class="eyebrow" style="background:var(--peds)">Your plan</div><h1>&#128197; Study schedule</h1>
+  <p class="page-sub">Every subject has its own <b>&#10003; done</b> and <b>&#10007; missed</b> buttons. Missed work moves to a catch-up slot on a free day; nothing else shifts.</p>
+  <div class="edbar">
+    <button class="btn ${ed?'':'sec'}" onclick="S.editSched=!S.editSched;save();render()">${ed?'\u2713 Done editing':'\u270f\ufe0f Edit schedule'}</button>
+    ${ed?`<button class="ed-t danger" onclick="resetSchedule()">Reset to the original plan</button>`:''}
+  </div>`;
+
+  if(!ed){
+    h+=`<div class="sched-legend">
+      <span class="leg"><span class="sw" style="background:var(--neuro)"></span>Today</span>
+      <span class="leg"><span class="sw" style="background:var(--bad)"></span>Missed</span>
+      <span class="leg"><span class="sw" style="background:var(--ok)"></span>Done</span>
+      <span class="leg"><span class="sw" style="background:var(--bg-2);border-style:dashed"></span>Free \u00b7 catch-up slot</span>
+    </div>`;
+    const n=catchups.length;
+    if(n){
+      h+=`<button class="card" style="margin-bottom:20px;--c:rgba(139,92,246,.4)" onclick="go({name:'moved'})">
+        <div style="display:flex;align-items:center;gap:11px">
+          <span class="mod-ic" style="background:var(--neuro)">&#128260;</span>
+          <div><div class="mod-name" style="font-size:14.5px">${n} missed item${n===1?'':'s'} to catch up</div>
+          <div class="mod-meta" style="margin:0">${overflow>0?`&#9888;&#65039; ${overflow} with no slot left`:'All of it has a new date'} &rarr;</div></div>
+        </div></button>`;
+    }
+  }
+
+  rows.forEach((d,di)=>{
+    const isToday=d.date===t;
+    const marks=d.items.map(it=>S.sched[d.date+'|'+it.idx]);
+    const allDone=d.items.length&&marks.every(m=>m==='done');
+    const anyMissed=marks.some(m=>m==='missed');
+    const cls=['day'];
+    if(ed)cls.push('editing');
+    else{
+      if(d.rest||!d.items.length)cls.push('rest');
+      if(anyMissed)cls.push('missed'); else if(allDone)cls.push('done');
+      if(isToday)cls.push('today');
+    }
+    const dt=new Date(d.date+'T00:00:00');
+    const wd=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][dt.getDay()];
+    const dd=dt.toLocaleDateString('en-GB',{day:'numeric',month:'short'});
+    const landed=landing[d.date]||[];
+
+    h+=`<div class="${cls.join(' ')}">
+      <span class="day-date"><span class="day-d">${dd}</span><br><span class="day-w">${wd}${isToday&&!ed?' \u00b7 today':''}</span></span>
+      <span class="day-body">`;
+
+    if(ed){
+      d.items.forEach(it=>{
+        h+=`<div class="ed-item">
+          <span class="ed-col" style="background:${it.hex}" title="Change colour" onclick="cycleColour(${di},${it.idx})"></span>
+          <input class="ed-lab" value="${esc(it.label)}" placeholder="Label"
+            onchange="editItem(${di},${it.idx},'label',this.value)">
+          <input class="ed-txt" value="${esc(it.text)}" placeholder="What to study"
+            onchange="editItem(${di},${it.idx},'text',this.value)">
+          <button class="ed-x" title="Remove" onclick="delItem(${di},${it.idx})">&times;</button>
+        </div>`;
+      });
+      h+=`<button class="ed-add" onclick="addItem(${di})">+ Add a subject</button>`;
+    }else{
+      if(!d.items.length){
+        h+=`<div class="track"><span class="track-body" style="color:var(--ink-4);font-style:italic">&#128564; Free day \u2014 catch-up slot</span></div>`;
+      }
+      d.items.forEach(it=>{
+        h+=trackRow(d.date,it.idx,it.label,it.hex,it.text,S.sched[d.date+'|'+it.idx]);
+      });
+      landed.forEach(c=>{
+        h+=`<div class="track catchup">
+          <span class="track-body"><span class="tag" style="background:${c.hex}">${esc(c.label)}</span>${esc(c.text)}
+          <div class="movednote">&#8627; caught up from ${fmtShort(c.date)}</div></span></div>`;
+      });
+    }
+    h+=`</span>`;
+    if(ed){
+      h+=`<span class="ed-day-tools">
+        <button class="ed-t danger" onclick="delDay(${di})">Delete day</button>
+      </span>`;
+    }
+    h+=`</div>`;
+  });
+
+  if(ed){
+    h+=`<div class="newday">
+      <b style="font-size:13px">Add a day:</b>
+      <input type="date" id="newDate" value="${nextFreeDate()}">
+      <button class="btn go" onclick="addDay()">Add</button>
+      <span style="font-size:11.5px;color:var(--ink-4);font-weight:600">A day with no subjects becomes a catch-up slot.</span>
+    </div>`;
+  }
+  p.innerHTML=h;
+}
+function fmtShort(iso){
+  const d=new Date(iso+'T00:00:00');
+  return d.toLocaleDateString('en-GB',{day:'numeric',month:'short'});
+}
+function trackRow(date,idx,label,hex,text,mark){
+  return `<div class="track ${mark==='missed'?'is-missed':mark==='done'?'is-done':''}">
+    <span class="track-body">${label?`<span class="tag" style="background:${hex}">${esc(label)}</span>`:''}${esc(text)}</span>
+    <span class="day-marks">
+      <button class="mk done ${mark==='done'?'on':''}" title="Mark done" onclick="setMark('${date}',${idx},'done')">&#10003;</button>
+      <button class="mk miss ${mark==='missed'?'on':''}" title="Mark missed" onclick="setMark('${date}',${idx},'missed')">&#10007;</button>
+    </span></div>`;
+}
+function setMark(date,idx,mark){
+  const k=date+'|'+idx;
+  if(S.sched[k]===mark)delete S.sched[k]; else S.sched[k]=mark;
+  markDayActive();save();render();
+  if(S.sched[k]==='missed'){
+    const {overflow}=buildSchedule();
+    toast(overflow>0?`Queued for catch-up \u2014 \u26a0\ufe0f ${overflow} with no slot left`:'Queued for catch-up \u2705');
+  }else if(S.sched[k]==='done')toast('Nice work \u2705');
+  else toast('Cleared');
+}
+
+/* Rebuild the plan. Content from missed days flows forward into later study days. */
+function buildSchedule(){
+  const rows=activeSchedule().map(d=>({
+    date:d.date,rest:!!d.rest,
+    items:(d.items||[]).map((it,i)=>({label:it.label,text:it.text,hex:it.hex||'#6a6390',idx:i}))
+  }));
+  const missed=[];
+  rows.forEach(r=>{
+    if(r.rest)return;
+    r.items.forEach(it=>{
+      if(S.sched[r.date+'|'+it.idx]==='missed')
+        missed.push({date:r.date,idx:it.idx,text:it.text,label:it.label,hex:it.hex});
+    });
+  });
+  if(!missed.length)return {rows,catchups:[],overflow:0,capacity:0};
+
+  const earliest=missed[0].date;
+  const slots=[];
+  rows.forEach(r=>{
+    if(r.date<=earliest)return;
+    if(r.rest||!r.items.length)slots.push({date:r.date,kind:'rest',cap:2});
+  });
+  const catchups=[];
+  let si=0,used=0;
+  missed.forEach(m=>{
+    while(si<slots.length&&used>=slots[si].cap){si++;used=0}
+    if(si>=slots.length){catchups.push(Object.assign({to:null,kind:null},m));return}
+    catchups.push(Object.assign({to:slots[si].date,kind:slots[si].kind},m));
+    used++;
+  });
+  return {rows,catchups,overflow:catchups.filter(c=>!c.to).length,
+          capacity:slots.reduce((n,s)=>n+s.cap,0)};
+}
+
+
+/* ============ SCHEDULE EDITOR ============ */
+function editItem(di,idx,field,val){
+  const s=activeSchedule();
+  if(!s[di]||!s[di].items[idx])return;
+  s[di].items[idx][field]=val;
+  save();
+}
+function cycleColour(di,idx){
+  const s=activeSchedule();
+  const it=s[di]&&s[di].items[idx];
+  if(!it)return;
+  const cur=SUBJ_COLOURS.findIndex(c=>c[0].toLowerCase()===String(it.hex).toLowerCase());
+  it.hex=SUBJ_COLOURS[(cur+1)%SUBJ_COLOURS.length][0];
+  saveSchedule();
+}
+function addItem(di){
+  const s=activeSchedule();
+  if(!s[di])return;
+  s[di].rest=false;
+  s[di].items.push({label:'',text:'',hex:'#6a6390'});
+  saveSchedule();
+}
+function delItem(di,idx){
+  const s=activeSchedule();
+  if(!s[di])return;
+  const date=s[di].date;
+  s[di].items.splice(idx,1);
+  /* marks are index-based, so re-key them for this day */
+  const keep={};
+  Object.keys(S.sched).forEach(k=>{
+    const [d,i]=k.split('|');
+    if(d!==date){keep[k]=S.sched[k];return}
+    const n=+i;
+    if(n===idx)return;
+    keep[d+'|'+(n>idx?n-1:n)]=S.sched[k];
+  });
+  S.sched=keep;
+  saveSchedule();
+}
+function addDay(){
+  const inp=$('newDate');
+  const v=inp&&inp.value;
+  if(!v){toast('Pick a date first');return}
+  const s=activeSchedule();
+  if(s.some(d=>d.date===v)){toast('That day is already in the plan');return}
+  s.push({date:v,rest:false,items:[]});
+  s.sort((a,b)=>a.date<b.date?-1:1);
+  saveSchedule();toast('Day added');
+}
+function delDay(di){
+  const s=activeSchedule();
+  if(!s[di])return;
+  const date=s[di].date;
+  s.splice(di,1);
+  Object.keys(S.sched).forEach(k=>{if(k.split('|')[0]===date)delete S.sched[k]});
+  saveSchedule();toast('Day removed');
+}
+function nextFreeDate(){
+  const s=activeSchedule();
+  if(!s.length)return todayISO();
+  const last=s[s.length-1].date;
+  const d=new Date(last+'T00:00:00');
+  d.setDate(d.getDate()+1);
+  return d.toISOString().slice(0,10);
+}
+function resetSchedule(){
+  showModal(`<h3>Reset the schedule?</h3>
+   <p>This restores the original plan and clears every done / missed mark on it. Your answers, highlights and review deck are not affected.</p>
+   <div class="modal-actions">
+     <button class="btn sec" onclick="closeModal()">Cancel</button>
+     <button class="btn" style="background:var(--bad);border-color:var(--bad)" onclick="doResetSchedule()">Reset</button>
+   </div>`);
+}
+function doResetSchedule(){
+  S.schedule=defaultSchedule();S.sched={};
+  save();closeModal();render();toast('Schedule reset');
+}
+
+/* ============ RESCHEDULED PAGE — CHANGE 2 ============ */
+function vMoved(p){
+  const {catchups,overflow,capacity}=buildSchedule();
+  let h=`<div class="eyebrow" style="background:var(--neuro)">Catch-up plan</div><h1>&#128260; Rescheduled</h1>
+  <p class="page-sub">Only the subjects you marked missed, and the day each one has been moved to. Nothing else in the schedule was touched.</p>`;
+
+  if(!catchups.length){
+    h+=`<div class="empty"><div class="big">&#10024;</div><h3>Nothing missed</h3>
+     <p>You're on plan. Mark a subject missed on the schedule and it appears here with a new date.</p>
+     <div style="margin-top:20px"><button class="btn go" onclick="go({name:'schedule'})">Open schedule</button></div></div>`;
+    p.innerHTML=h;return;
+  }
+
+  const placed=catchups.filter(c=>c.to);
+  const dropped=catchups.filter(c=>!c.to);
+  h+=`<div class="grid g4" style="margin-bottom:24px">
+    <div class="stat"><span class="emo">&#128260;</span><div class="n">${placed.length}</div><div class="l">Given a new date</div></div>
+    <div class="stat"><span class="emo">${overflow?'\u26a0\ufe0f':'\u2705'}</span><div class="n" style="color:${overflow?'var(--bad)':'var(--ok)'}">${overflow}</div><div class="l">No slot left</div></div>
+    <div class="stat"><span class="emo">&#128203;</span><div class="n">${capacity}</div><div class="l">Catch-up capacity</div></div>
+  </div>`;
+
+  if(overflow){
+    h+=`<div class="card" style="margin-bottom:22px;background:var(--bad-bg);border-color:var(--bad)">
+      <b>\u26a0\ufe0f ${overflow} item${overflow===1?'':'s'} have nowhere to go.</b>
+      <div style="margin-top:7px;font-size:13.3px;color:var(--ink-2);font-weight:500">
+      Rest days and buffer days are full. Either double up on a catch-up day, drop something, or tell me and I'll re-compress the whole plan.</div></div>`;
+  }
+
+  const byDate={};
+  placed.forEach(c=>{(byDate[c.to]=byDate[c.to]||[]).push(c)});
+  Object.keys(byDate).sort().forEach(dt=>{
+    const kind=byDate[dt][0].kind;
+    h+=`<div class="grouphdr">&rarr; ${fmtShort(dt)} &middot; ${kind==='rest'?'rest day':'buffer day'}</div>`;
+    byDate[dt].forEach(c=>{
+      h+=`<div class="ch-row" style="cursor:default;align-items:flex-start">
+        <span class="ch-dot" style="background:${c.hex};margin-top:4px"></span>
+        <span class="ch-name">
+          <div class="day-line"><span class="tag" style="background:${c.hex}">${esc(c.label)}</span>${esc(c.text)}</div>
+          <div class="movednote">missed ${fmtShort(c.date)} &nbsp;&rarr;&nbsp; <b style="color:var(--ok)">${fmtShort(c.to)}</b></div>
+        </span></div>`;
+    });
+  });
+
+  if(dropped.length){
+    h+=`<div class="grouphdr" style="color:var(--bad)">No catch-up slot available</div>`;
+    dropped.forEach(c=>{
+      h+=`<div class="ch-row" style="cursor:default;align-items:flex-start;border-color:var(--bad);background:var(--bad-bg)">
+        <span class="ch-dot" style="background:var(--bad);margin-top:4px"></span>
+        <span class="ch-name">
+          <div class="day-line"><span class="tag" style="background:${c.hex}">${esc(c.label)}</span>${esc(c.text)}</div>
+          <div class="movednote" style="color:var(--bad)">missed ${fmtShort(c.date)} &mdash; nowhere left to put it</div>
+        </span></div>`;
+    });
+  }
+  p.innerHTML=h;
+}
+
+/* ============ SEARCH ============ */
+function doSearch(){
+  const v=$('search').value.trim().toLowerCase();
+  const box=$('results');
+  if(v.length<2){box.classList.remove('show');return}
+  const hits=[];
+  for(const q of QUESTIONS){
+    const hay=(q.stem+' '+((q.options||[]).join(' '))+' '+(q.type==='case'?(q.answer||'')+' ':'')+(q.explanation||'')+' '+(q.objective||'')+' '+chapterName(q.chapter)).toLowerCase();
+    const idx=hay.indexOf(v);
+    if(idx>=0)hits.push({kind:'q',q:q,idx:idx});
+    if(hits.length>=40)break;
+  }
+  const thits=[];
+  Object.keys(THEORY).forEach(ch=>{
+    (THEORY[ch].sections||[]).forEach(s=>{
+      const hay=(s.h+' '+(s.body||'')+' '+JSON.stringify(s.table||'')+' '+JSON.stringify(s.flow||'')).toLowerCase();
+      const idx=hay.indexOf(v);
+      if(idx>=0)thits.push({kind:'t',ch:ch,sec:s,idx:idx});
+    });
+  });
+  thits.sort((a,b)=>a.idx-b.idx);
+  hits.sort((a,b)=>a.idx-b.idx);
+  if(!hits.length&&!thits.length){
+    box.innerHTML='<div class="res-empty">Nothing matched \u2014 try a shorter term. Search covers questions, explanations and the notes.</div>';
+    box.classList.add('show');return;
+  }
+  let h='';
+  thits.slice(0,5).forEach(t=>{
+    h+=`<div class="res-item" onclick="jumpTheory('${t.ch}','${t.sec.id}')">
+      <div class="res-tag" style="color:var(--neuro)">&#128218; Notes \u00b7 ${esc(chapterName(t.ch))}</div>
+      <div class="res-txt"><b>${esc(t.sec.h)}</b></div></div>`;
+  });
+  hits.slice(0,12).forEach(({q})=>{
+    const m=moduleOf(q.module)||{hex:'#6a6390'};
+    h+=`<div class="res-item" onclick="jump('${q.id}')">
+      <div class="res-tag" style="color:${m.hex}">${esc(chapterName(q.chapter))}</div>
+      <div class="res-txt">${esc(q.stem.slice(0,130))}\u2026</div></div>`;
+  });
+  const more=(hits.length-12)+(thits.length-5);
+  if(more>0)h+=`<div class="res-empty">+${more} more</div>`;
+  box.innerHTML=h;box.classList.add('show');
+}
+function jumpTheory(ch,sec){
+  $('search').value='';$('results').classList.remove('show');
+  const mod=(QUESTIONS.find(q=>q.chapter===ch)||{}).module||'pediatrics';
+  go({name:'theory',mod:mod,ch:ch,sec:sec});
+}
+function jump(id){$('search').value='';$('results').classList.remove('show');startQuiz([id],'Search result')}
+
+/* ============ MODALS / IO ============ */
+function showModal(html,wide){const m=$('modal');m.innerHTML=html;if(m.classList){wide?m.classList.add('wide'):m.classList.remove('wide')}$('modalBg').classList.add('show')}
+function closeModal(){$('modalBg').classList.remove('show')}
+function showShortcuts(){
+  showModal(`<h3>⌨️ Shortcuts</h3>
+   <div class="shortcuts">
+     <span><span class="kbd">A</span>–<span class="kbd">E</span></span><span class="d">Pick an answer</span>
+     <span><span class="kbd">Enter</span></span><span class="d">Check, then next</span>
+     <span><span class="kbd">→</span> / <span class="kbd">←</span></span><span class="d">Next / previous</span>
+     <span><span class="kbd">E</span></span><span class="d">Toggle explanation</span>
+     <span><span class="kbd">F</span></span><span class="d">Flag question</span>
+     <span><span class="kbd">J</span></span><span class="d">Jump to any question</span>
+     <span><span class="kbd">1</span>–<span class="kbd">4</span></span><span class="d">Pick a highlighter colour</span>
+     <span><span class="kbd">0</span></span><span class="d">Eraser</span>
+     <span><span class="kbd">/</span></span><span class="d">Jump to search</span>
+     <span><span class="kbd">T</span></span><span class="d">Light / dark mode</span>
+     <span><span class="kbd">Esc</span></span><span class="d">Close</span>
+   </div>
+   <div class="modal-actions" style="margin-top:21px"><button class="btn go" onclick="closeModal()">Got it</button></div>`);
+}
+function exportData(){
+  const blob=new Blob([JSON.stringify({v:2,saved:new Date().toISOString(),state:S},null,2)],{type:'application/json'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);a.download=`herophilus-progress-${todayISO()}.json`;a.click();
+  toast('Progress downloaded 💾');
+}
+function importData(e){
+  const f=e.target.files[0];if(!f)return;
+  const r=new FileReader();
+  r.onload=()=>{
+    try{
+      const d=JSON.parse(r.result);
+      if(d.state){S=Object.assign(S,d.state);save();render();toast('Progress restored ✅')}
+      else toast('That file is not a progress export')
+    }catch(err){toast('Could not read that file')}
+  };
+  r.readAsText(f);e.target.value='';
+}
+function toggleRail(){$('rail').classList.toggle('open')}
+function closeRail(){$('rail').classList.remove('open')}
+
+/* ============ KEYBOARD ============ */
+document.addEventListener('keydown',e=>{
+  if(e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA')return;
+  if(e.key==='Escape'){closeModal();$('results').classList.remove('show');return}
+  if(e.key==='/'){e.preventDefault();$('search').focus();return}
+  /* Global, so it works while reading theory as well as in a quiz. Safe above
+     the quiz guard because typing targets bailed out at the top of the handler. */
+  if(e.key==='t'||e.key==='T'){toggleTheme();return}
+  if(view.name!=='quiz')return;
+  const q=QUESTIONS.find(x=>x.id===Q.ids[Q.i]);
+  if(!q)return;
+  const k=e.key.toUpperCase();
+  if('ABCDE'.includes(k)&&!Q.shown&&q.options){const i='ABCDE'.indexOf(k);if(i<q.options.length){pick(i);return}}
+  if(k==='E'&&Q.shown){const b=document.querySelector('.ex-head');if(b)toggleExp(b);return}
+  if('1234'.includes(e.key)){setPen(PENS[+e.key-1][0]);return}
+  if(e.key==='0'){setPen('er');return}
+  if(k==='J'){openJump();return}
+  if(k==='F'){toggleFlag(q.id);return}
+  if(e.key==='Enter'){e.preventDefault();Q.shown?navQ(1):(q.type==='case'?revealCase():reveal());return}
+  if(e.key==='ArrowRight'){navQ(1);return}
+  if(e.key==='ArrowLeft'){navQ(-1);return}
+});
+$('search').addEventListener('input',doSearch);
+document.addEventListener('click',e=>{if(!e.target.closest('.search-wrap'))$('results').classList.remove('show')});
+
+boot();
+async function boot(){
+  paintThemeBtn();          /* the icon depends on the theme the head script chose */
+  bootstrapProfiles();
+  if(cloudEnabled()){
+    showSplash('Restoring your session\u2026');
+    let restored=false;
+    try{
+      restored=await Promise.race([
+        restoreSession(),
+        new Promise(r=>setTimeout(()=>r(false),15000))
+      ]);
+    }catch(e){}
+    hideSplash();
+    /* A restored session no longer means "straight into the app": afterSignIn()
+       now hands off to gate step 2 so a profile is always chosen explicitly.
+       Returning here is still right \u2014 that path has already drawn the gate. */
+    if(restored)return;
+  }else{
+    hideSplash();
+  }
+  showGate();
+}
+</script>
+</body>
+</html>

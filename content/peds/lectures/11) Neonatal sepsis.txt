@@ -1,0 +1,446 @@
+SOURCE: Semester 8\Pedo\Theoritical\PPT\11) Neonatal sepsis.pdf
+
+Neonatal Sepsis
+
+             By
+Topics
+ -definition of sepsis
+-Magnitude of the problem
+-Classification of sepsis
+-Risk factors
+-Organisms
+-Diagnostic markers
+-Management
+Antibiotic treatment
+Supportive therapy
+Adjuvant therapy
+Definition
+
+
+
+
+      • Neonatal sepsis is a clinical syndrome
+        characterized by signs and symptoms of
+        infection with or without accompanying
+        bacteremia in the first month of life.
+                     Definite sepsis
+
+• Clinical syndrome of signs associated with sepsis along with growth of
+   bacteria in one or more sterile body sites (positive blood, CSF or BAL
+   cultures)
+                      Probable sepsis
+
+
+• Clinical features suggestive of sepsis with sterile cultures and usually with
+   supportive tests such as inflammatory biomarkers, Csf or urine, or chest
+   xray.
+                     Possible sepsis
+
+   • Only clinical features suggestive of sepsis or presence of risk factors for
+      early onset sepsis, but not supported by laboratory tests or cultures.
+Magnitude of
+ problem
+
+
+
+
+          According to the World Health Organization (WHO), in 2016,
+          46% of deaths in children underfive were neonates and 7% of
+          these were caused by neonatal sepsis.
+
+          30-50% of deaths in the first week of life in developing
+          countries are related to sepsis.
+              EONS                             LONS
+
+
+• first 72 hours of life.          • after 72 hours of life.
+
+• Vertical or horizontal           • Horizontal transmission
+
+• Asymptomatic      at    birth,
+  pneumonia or septicemia          • Septicemia, septic arthritis, UTI ,
+• Maternal Risk factors              catheter associated infection , VAP
+
+• GBS and Echoli                   • Environmental risk F
+                                   • CONS (staph epidermidis) , staph.
+                                     aureus
+    Group B streptococci infection
+
+
+             EONS                                    Risk factors
+                                         preterm, especially preterm prolonged
+                                         rupture of the
+                                         membranes
+Around 15%–40% of pregnant
+women have rectal or vaginal             • prolonged (>18 hours) or prelabour
+colonization of group B streptococci     rupture of the
+; about 50% of these infants become      membranes
+colonized
+and 1%–2% of the colonized               • intrapartum fever >38°C or
+infants develop early-onset infection.   chorioamnionitis
+                                         • previous child with GBS infection
+                                         • GBS bacteriuria during pregnancy
+                      Organ affected
+
+
+01   Septicemia and blood stream infection
+
+02      Pneumonia
+
+03      UTI
+
+04      Meningitis
+
+05     joint and bone infections
+          Neonate liable sepsis
+
+
+
+
+Defect in skin and mm barriers
+        decrease acidity
+
+
+Passive immunity lacks in
+         preterm
+
+Defect in humoral and cellular
+ immune R, no opsonization
+
+
+Vlbw ..prologed hospital stay
+     Risk factors of neonatal
+               sepsis
+             Maternal
+
+
+    Vulvovaginitis
+
+
+
+  chorioamnionitis
+
+
+   UTI and pyrexia
+
+
+
+STI and inadequate ANC
+        Risk factors of neonatal
+                  sepsis
+                hypoxia
+
+
+  Need for resuscitation MSL
+
+
+
+   Low APGAR score
+
+
+Prolonged labor >24h or PROM
+
+
+
+Instrumental labour or vaginal
+          delivery
+     Risk factors of neonatal
+               sepsis
+              neonate
+
+
+
+        male
+
+Premature and LBW(3-                 IV fluids
+         10)
+
+                                     Iv cannulation Ng
+                                          feeding
+      interventions
+                                     Central lines
+                                     including UC , PICC
+                                     lines
+        Mechanical ventilation
+        /ETT
+                                 Urinary catheters
+Clinical picture
+
+
+
+
+         • Not doing well
+         • Off colors ,earthy look
+         • Hypo/hyperthermia
+         • Tachypnea /apnea/ RD / shallow breathing
+         • Heart rate variability
+         •   Hypotension, shock
+         • Hypoactivity/ convulsions
+         • FI, vomiting, poor feeding
+Common DD
+
+
+                  EOS                               LOS
+Diseases presented with sepsis like
+pictures
+                                      • LVOT obstruction
+•   Perinatal asphyxia
+                                      • PDA
+•   Hypoglycemia
+                                      • IEM
+•   IEM
+•   Viral infection                   • Congenital adrenal hyperplasia
+                                      • Abdominal     catastrophes   like
+                                        volvulus
+Clinical picture
+
+
+
+
+                                   For patients on MV
+                   Increased secretion , colored secretions , increased
+                                   ventilatory settings
+                                       Meningitis
+                   Mostly non-specific.. • tense or bulging
+                   fontanelle
+                   • head retraction (opisthotonos)
+                   Rarely seizure and disturbed senso.
+                                             UTI
+                    Urinary catheter and malformations
+                    Mostly Non-specfic
+                    Vomiting , fever, prolonged jaundice , poor weight
+                    gain
+                                Bone and joints
+                     Limited and painful movement or fever
+      diagnosis
+
+                          Laboratory
+
+• CBC (TLC, ANC, I/T, PLt abn count and V., PLR, NLR, RDW,
+  Toxic granules)
+
+• Inflammatory      and   immunological   markers   :   CRP,
+  procalcitonin , SAA, IL6,8, CD64 (earliest marker) , CD163,
+  CD 14 (presepsisn)
+
+• Triple tabs blood culture , CSF analysis and culture, urine
+  analysis and culture
+
+• Joint fluid , conjunctival swab , BAL
+                  Hematological markers of sepsis
+
+
+leucopenia                        WBC count <5000/ mm3 >4h of life
+leukocytosis                      WBCs >20,000/mm3
+neutropenia                       ANC < 1000/mm3 at ≥4 h)
+neutrophilia                      ANC ≥ 10,000/ mm3
+IT Ratio high                     >0.27 in term and >0.22 in preterm
+PLT count                         < 120,000/mm3
+Mean PLt volume                   cut-off level between 8.6 and 11.4
+
+
+NLR                               1.24:6
+PLR                               57:94
+Diagnosis
+
+
+               CRP                           Hematological markers
+Overall perform better in LONS than
+EONS
+                                         Poor ability to discriminate between
+NPPV increases with serial –ve CRP 12-   sepsis and no sepsis
+24 h apart
+                                         Sepsis screen
+In LOS sensitivity 62% and specif 71%    NPP: ranging from 65-95%
+(why?))                                  PPV v low
+
+
+                                         .
+CRP vs PCL
+
+
+                CRP                                    PCL
+
+                                        PCL perform better than CRP
+In LOS sensitivity 62% and specif 71%
+                                        sensitivity90% and specificity 88%
+                                        Better to combine both
+Overall perform better in LONS than
+EONS                                    Also LOS>EOS but better than CRP
+                                        in LOS
+Serum CRP concentrations rise within
+12 h in response to infection and the   Start to rise 4 h and peak 8 h
+peak 48 h,                              (earlier) (Shorter Abic duration)
+
+                                        Discriminate between viral and
+                                        bacterial infection
+              EOS
+      Soluble CD14 fragment
+(presepsin) is a specific and high-
+Presepsin, PCT, IL-6, and IL-8
+               affinity
+were compared in the diagnosis
+     receptor complex of LPSs
+of EOS and presepsin was found
+              presepsin
+as the most accurate biomarker
+was as accurate as PCT and CRP in
+with 88.9% sensitivity and 85.7%
+     the diagnosis of neonatal
+specificity.
+    Sepsis (esp:Gram-negative
+             infections )
+SAA levels increase with age,
+with the lowest levels
+seen in umbilical cord blood,
+                    EOS
+and    the highest levels seen in
+  It is influenced by hepatic function and
+oldage.
+  nutritional status
+ In response to infection or
+injury, SAA levels rapidly
+increase up to 1000 times
+higher than baseline
+  Sepsis
+biomarkers
+
+               The challenge of biomarker identification is reflected by
+               the fact that over 3000 sepsis biomarker studies have
+               been published
+
+
+                With almost 200 candidate biomarkers evaluated.
+
+
+
+
+             However, there is not a single biomarker that has
+             sufficient diagnostic accuracy for the diagnosis of
+             neonatal sepsis. The combination of biomarkers or
+             their serial measurements may be strategies to
+             enhance diagnostic accuracy.
+      diagnosis
+
+                       1-Blood culture
+
+• Volume of inoculated blood to broth ratio (1:5 or 1 :10)
+• Most of Gram positive and neg grow in 24 and 48 h ,
+  respectively.
+
+• False negative : inadequate sample and prior antibiotic , cold
+  bottle.
+
+• False positive: contamination
+    CSF & urine
+
+
+2
+                            CSF eamination
+         • WBC>25 (PNL)/ UL, Pr >150 mg/dl, G<30
+         • CSF culture is GOLD standard by LP but false neg. is
+           common BCZ of prior Antibiotics
+
+
+
+
+                        ConUrine examination
+3       • WBCs > 10/ for uncentrifuged sample
+        • Urine culture is GOLd standard by sterile
+          catheterization or suprapubic sample.
+Treatment of sepsis
+
+
+
+
+               Prevention
+                      Antibiotic and supportive measures
+                  Adjuvant treatment
+Pharmacotherapy
+                                                                                        IVH &
+                                                                                          PH
+                             Empirical antibiotics
+
+    • should be tailored according to local data of aetiologic organism
+      and antibiograms (consider narrowest spectrum , consider
+      synergism)
+
+
+    Areas with available local data (6 month data … WHONET program ..1st and
+    second and 3rd lines)
+
+
+
+
+    •   Areas with no access to local antibiotic data… general roles
+
+
+
+
+    •   - After cultures results modify antibiotic to simplest and narrowest spectrum
+• Areas with no access to
+  local antibiotic data
+
+
+• Areas with no access to local antibiotic data
+-septicemia and pneumonia:ampicillin+ genta/amikin
+-Meningitis ampicillin+cefotaximes
+Suspect resistant stains ….cipro/piperacillin-tazobactam +amikacin
+Second line meropenem (add vancomycin if MARSA is suspected)
+
+-Narrowest spectrum antibiotics are preferred
+-Avoid as possible 3rd G cephalosporins (except minngitis)
+-Suspected anerobic infection (NEC).. Metronidazole or clindamycin
+-Suspected pseudomonas infection.. piperacillin-tazobactam
+Diagnosis                                      duration of antibiotics
+suspected infection with clinical course and   Stop empirical antibiotics
+biomarkers are not suggestive of sepsis        once culture shows negative
+                                               results
+Culture negative probable or possible sepsis   5-7 days
+Culture negative sepsis with no meningitis     14 days
+Meningitis                                     21 days
+ventriculitis                                  4-6 weeeks
+Bone and joint infection                       4-6 weeks
+Deeply seated infection                        4-6 weeks
+Supportive care
+
+
+ 2
+                             Suppotive care
+       • Supportive care plays a main role in management of
+         septic sick neonate (why)
+       • Most of mortality in the first 24 hours can be prevented
+         by supportive care
+
+
+
+                                  Why ?
+        • Because antibiotics needs at least 12 hours to work and
+          also with action of antibiotics there is bacterial lysis
+          leading to systemic manifestations
+        • .
+   Strong and mutual relation
+between hypothermia and sepsis
+Keep neonates in normal temp. )
+
+
+
+
+Strong and mutual relation between
+hypothermia and sepsis
+
+
+Hypothermia can cause suppression of immunity
+
+Neonatal sepsis is manifested by hypothermia
+
+It is one of limbs of Energy triangle in neonates
+Adjuntive
+ therapy
+
+
+
+
+            .
+Thank you
+

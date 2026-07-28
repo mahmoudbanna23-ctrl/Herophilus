@@ -1,0 +1,35 @@
+# ============================================================================
+# Herophilus — what does NOT go to GitHub
+#
+# THE SOURCE MATERIAL STAYS ON THE PC. `Semester 8\` is 4.0 GB of scanned books
+# and question banks; `ENT endpoint.pdf` alone is 332 MB, well past GitHub's
+# 100 MB per-file limit. It is also the original supplied material, which
+# CLAUDE.md §5 forbids modifying, moving or deleting — keeping it out of version
+# control keeps that guarantee simple.
+#
+# The practical consequence, and it is not a small one: TRANSCRIBING NEW
+# QUESTIONS CANNOT BE DONE FROM A CLONE. That work needs these scans plus
+# Poppler to render pages to images. Everything else — theory writing, editing
+# existing questions, app and design work, the duplicate and integrity sweeps —
+# travels fine, because the lecture text is already cached as plain text in
+# `content\` and every question already lives in `app\data\`.
+# ============================================================================
+
+Semester 8/
+
+# The original delivery. Superseded by the folders it was unpacked into, and
+# tracked here would just be a second copy of everything.
+files.zip
+
+# Per-machine Claude Code permissions. Holds absolute Windows paths that mean
+# nothing in a cloud checkout, and it is named `.local` precisely because it is
+# not meant to be shared. `.claude/settings.json` (no `.local`) WOULD be tracked
+# if it ever existed — that one is project config rather than machine config.
+.claude/settings.local.json
+
+# Windows and editor litter
+Thumbs.db
+desktop.ini
+*.tmp
+~$*
+.DS_Store

@@ -1,0 +1,422 @@
+SOURCE: Semester 8\Pedo\Theoritical\PPT\Asthma_.pdf
+
+                                Childhood Asthma
+
+Definition
+
+Asthma is a heterogeneous disease of chronic airway inflammation which is
+defined by the history of recurrent symptoms of wheeze, cough, shortness of
+breath and chest tightness, that vary in intensity and over time together with
+variable expiratory airflow limitation which is reversible.
+
+Airflow limitation may be persistent later in the course of the disease. Asthma is
+usually associated with airway hyperresponsiveness and airway inflammation,
+but they are not essential to make the diagnosis.
+
+   - Asthma is heterogenous as it is a polygenic disease, with multiple clinical
+     asthma phenotypes, and it is a variable disease.
+   - Asthma is a variable disease. Variability is over time (day and night,
+     seasons in the year), intensity and in airflow limitation.
+   - Expiratory airflow: it is the airflow pattern as measured by spirometry and
+     pulmonary functions.
+   - associated with a trigger
+   - In case of atopic asthma which is the most common clinical type, it may be
+     associated with other allergies and patients may have family history of
+     atopy.
+
+Epidemiology
+- Asthma is the most common chronic respiratory diseases worldwide
+  • In Egypt:
+              • School age: 6.5 – 20%
+              • Adults: 4.4 – 6.7%
+       – Worldwide: WHO report 2022: 9% of children and 11% of
+          adolescents have asthma
+– Asthma has a high impact on people’s lives, 1/3 to 1/2 of children, adolescents
+  and adults with asthma have severe symptoms that regularly interfere with
+  everyday life such as awaking from sleep, morning coughing, effort
+  intolerance, and absence from school
+- Asthma affects all community groups, both genders and all socioeconomic
+  classes.
+
+
+
+
+                                        1
+Pathophysiology
+Asthma is a type TH2-mediated immune response which represents a skewing
+from the normal TH1-mediated immune response.
+
+
+
+
+Diagnosis of asthma:
+
+A) Clinical Presentation:
+Asthma symptoms:
+   • Wheezing
+   • Non-productive
+   • Shortness of breath
+   • Chest tightness
+All these symptoms are typically:
+   • variable over time and vary in intensity
+   • often worse at night or on waking
+   • often triggered by exercise, laughter, allergens, cold air
+   • worsen after end-exercise (very distinctive)
+   • often appear or worsen with viral infections
+
+Asthma signs
+   • May be normal between attacks.
+   • Inspection:
+        – Hyperinflation of the chest: in long-standing asthma
+        – Harrison sulci: in cases where the onset of the disease was in early
+           childhood and left without treatment
+   • Palpation: decreased chest expansion
+   • Percussion: hyper-resonant note
+   • Auscultation:
+
+                                        2
+        – Decreased breath sounds bilaterally
+        – Vesicular breathing with prolonged expiration
+        – generalized polyphonic (musical) expiratory wheeze, expiratory or
+          inspiratory or both, and if severe the child may suffer a silent chest
+   • Evidence of atopy: nasal, skin, eye
+   • Growth assessment: usually normal
+
+Clinical asthma phenotypes:
+
+Allergic asthma: This is the most common and easily recognized asthma
+phenotype. It often starts in childhood and is associated with a past and/or family
+history of allergic disease such as eczema, allergic rhinitis, or food or drug allergy.
+It usually responds well to ICS treatment. The cellular profile of this type is
+usually eosinophilic
+
+Non-allergic asthma: asthma that is not associated with allergy. It usually has
+less response to ICS. The cellular profile of the sputum of these patients may be
+neutrophilic, eosinophilic or contain only a few inflammatory cells.
+
+Cough variant asthma and cough predominant asthma: cough may be the only
+symptom of asthma, and evidence of airflow limitation may be absent. They
+respond well to ICS. Some patients later develop wheezing and bronchodilator
+responsiveness.
+
+Asthma with persistent airflow limitation: in longstanding poorly controlled
+asthma, some patients develop persistent irreversible airflow limitation. This is
+thought to be due to airway wall remodeling.
+
+Asthma with obesity: a different pattern of AW inflammation may be present in
+obese asthmatics.
+
+Adult-onset (late-onset) asthma: presentation with asthma for the first time in
+adulthood. It tends to be non-allergic, and often requires higher doses of ICS
+
+Red flags of Asthma
+  • Chronic wet productive cough
+  • Finger clubbing
+  • Growth faltering
+  • Chronic diarrhea
+Any of these flags suggest a condition characterized by chronic infection such as
+cystic fibrosis, immunodeficiency, or PCD
+   • Chest pain à pulmonary embolism
+
+                                          3
+   • Cardiac murmur, FTTà CHD/heart failure
+
+Differential Diagnosis: Causes of recurrent or persistent childhood wheeze
+   • Viral episodic wheeze /Multiple trigger wheeze
+   • Asthma
+   • Recurrent anaphylaxis (e.g. in food allergy)
+   • Chronic aspiration
+   • Cystic fibrosis
+   • Bronchopulmonary dysplasia
+   • Tracheo-bronchomalacia
+   • Foreign body aspiration
+
+Diagnosis
+
+Age < 6y
+The diagnosis of asthma is based on history of typical symptoms, examination
+and response to treatment. It is mainly clinical.
+All the following criteria should be met:
+
+   1- Recurrent acute wheezing episode(s):
+      A history of at least two reported acute wheezing episodes in the past 12
+      months
+      OR
+      At least one acute wheezing episode AND asthma-like symptoms between
+      episodes: e.g., dry cough, coughing, symptoms worse during sleep, or after
+      laughing, crying or activity.
+
+• Acute wheezing episodes are defined as asthma-like symptoms such as
+  wheezing on expiration, accessory muscle use, breathlessness, or difficult fast
+  breathing that the caregiver reported had lasted for more than 24 hours or were
+  confirmed as wheezing by a healthcare worker.
+
+   2- No likely alternative cause for the respiratory symptoms (except for a
+      concurrent viral respiratory infection)
+
+   3- A timely clinical response to asthma treatment.
+
+
+Age > 6y
+Diagnosis of asthma relies on history of typical symptoms and sign of asthma
+with confirmed variable expiratory airflow, with absence of symptoms or signs
+suggesting alternative diagnoses.
+
+
+                                       4
+1. History of typical symptoms, examination and response to treatment
+2. Confirmation of variable expiratory airflow by:
+      a. Peak expiratory flow rate (PEFR) – measured with peak flow
+         meters
+            • The child should fully inhale before placing the mouthpiece
+                between their teeth and sealing tightly with their lips à A
+                sharp, fast exhalation à estimate of the maximum rate of
+                exhalation
+            • In poorly controlled asthma there is increased variability in
+                PEFR:
+            • diurnal variability (morning usually lower than evening)
+            • day-to-day variability.
+      b. Spirometry
+            • A non-invasive measure of flow through the airways
+            • Blowing out as hard and fast as possible for as long as
+               possible.
+            • Measures the volume expired in the first second (forced
+               expiratory volume in 1 second – FEV1) and the total volume
+               of expired air (forced vital capacity – FVC).
+            • In asthma there is a pattern of obstructive spirometry
+               i. Low FEV1 and FVC is normal à low FEV1/FVC ratio
+                  <80%
+              ii. In mild to moderate asthma, the child may have normal
+                  spirometry when well.
+
+      c. Increase in lung function after 4 weeks of ICS-containing treatment
+      d. Positive bronchial provocation test
+
+
+
+
+                                   5
+Treatment of asthma
+ • Controller         therapy:      Inhaled
+   corticosteroids (ICS)
+       – The standard treatment of asthma
+         for all ages
+       – Side effects: High doses for long
+         duration may lead to systemic side-
+         effects such as impaired growth,
+         adrenal suppression and altered
+         bone metabolism
+       – How to reduce the risk of side-
+         effects?
+Treatment with ICS should always be at the
+lowest dose possible
+
+   - MART therapy: Maintenance And
+      Reliever Therapy
+Small regular dose of combined ICS/LABA
+which is used for older children and adolescents. It improves patient compliance
+and efficacy
+
+
+
+
+• Bronchodilator therapy:
+   Short acting                       Long acting
+   B-agonist (SABA)                   B-agonist (LABA)
+
+    Rapid onset (5-10 min)            Variable
+
+    Short acting (2-4h)               Long duration (up to
+                                      12h)
+
+    Used in acute attack, rescue      Not used in acute attack
+    therapy
+
+
+
+
+                                       6
+    Can be used alone in            Must be combined with
+    intermittent asthma             ICS
+
+    Salbutamol                      Salmeterol
+                                    formoterol
+
+
+– Anticholinergic bronchodilator: Ipratropium bromide: it is sometimes given
+  to children as an add-on therapy but not alone
+
+Choosing the correct inhaler
+
+Pressurized metered dose inhaler (MDI)
+   • Suitable for adolescents, need cooperation
+   • Deep slow inspiration then breath holding
+   • Increases drug deposition to the lungs and reduces oropharyngeal
+      deposition à decreased systemic side effects
+   • Portable, easy
+   • Less useful in acute attack as it needs deep breath
+   • Needs cooperation and good breath
+   • limited drugs
+
+Pressurized metered dose inhaler (MDI) and spacer
+   • Suitable for all ages as it doesn’t need cooperation or effort
+   • With face mask <3y, Mouthpiece ≥ 3y
+   • Needs tidal breathing
+   • Increases drug deposition to the lungs and reduces oropharyngeal
+      deposition à decreased systemic side effects
+   • Useful for acute asthma attacks when poor inspiratory effort may impair
+      the use of inhalers direct to the mouth.
+   • Large size, limited drugs
+   • Spacers lose their efficacy with time and need replacement
+
+Dry powder inhaler
+  • Suitable for ≥6y, as it needs effort
+  • Needs high flow
+  • Increases drug deposition to the lungs
+  • Easy to use
+  • Portable
+  • Not Useful in acute exacerbation as it needs effort
+  • Needs effort
+  • Gets clumps with time, so more deposition in the oropharynx
+
+                                     7
+Nebulizer
+  • Any age
+  • Needs pressured air/O2 source, electricity
+  • Can use O2 in the session
+  • Easy to use, doesn’t need cooperation
+  • Wide variety of medications
+  • Useful in acute exacerbation, can supply O2
+  • Least efficient
+  • Largest oropharyngeal deposition
+  • Very long time per session
+  • Needs electricity and source of pressurized air
+
+Add-on therapy
+  • > 5 years: LABA
+  • < 5 years: oral leukotriene receptor antagonist: montelukast: especially in
+     combined asthma and AR
+  • Antibiotics are of no value in the absence of a bacterial infection
+  • cough medicines and decongestants are of no value
+  • Antihistamines can be used in combined allergic rhinitis
+Non-pharmacological measures
+  • Avoiding smoking: inhaling second-hand cigarette smoke / e-cigarette
+     vapour is the most devastating exposure to the airway
+  • In children with allergy to house dust mite:
+        – dust-mite-impermeable bedding may reduce exacerbations of
+            asthma requiring hospitalization.
+  • Allergen immunotherapy is effective for treating atopic asthma due to a
+     single allergen
+
+Steps of asthma treatment:
+
+
+
+
+                                      8
+   Definition of Complete control
+   1. no daytime symptoms
+   2. no night-time symptoms
+   3. no limit on activities (including exercise)
+   4. no need for reliever use
+   5. normal lung function
+   6. no exacerbations (need for hospitalization or oral steroids) in the previous
+      6 months
+
+   Risk factors for exacerbations
+   • Poor symptom control
+   • History of ≥1 exacerbation in the previous year
+   • SABA-only treatment (without any ICS)
+   • Over-use of SABA
+   • Incorrect inhaler technique
+   • Socioeconomic problems, poor adherence
+   • Exposures: smoking
+   • Low FEV1
+   • Blood eosinophilia.
+
+Acute asthma exacerbation
+
+Definition: acute or sub-acute worsening in symptoms and lung function from
+the patient’s usual status
+   • In some cases, a patient may present for the first time during an
+       exacerbation.
+   • Criteria for admission to hospital
+Criteria for admission to hospital
+If, after high-dose inhaled bronchodilator therapy, they:
+    1. have not responded adequately clinically, i.e. persisting breathlessness or
+        tachypnoea
+    2. are becoming exhausted
+    3. still have a marked reduction in their predicted (or
+    4. usual best) PFR or FEV1 (<50%)
+    5. have a reduced SO2 <92% in air
+
+Diagnosis and treatment of asthma exacerbation: look at the table:
+
+
+
+
+                                        9
+                                             <6y                                                                 ≥ 6y
+ Exacerbation    Mild\moderate                  Severe\life threatening           Mild\moderate                         Severe\life threatening
+ Severity
+ Consciousness   Conscious                       Agitated\confused or drowsy        Same as <6y
+ Speech          Sentences, normal cry           Words\unable to speak              Same as <6y
+ SO2             ≥ 92%                           <92%                               ≥ 90%                               <90%
+ HR              ≤ 150 (4-5y)                    >150 (4-5y)                        <120                                >120
+                 ≤ 180 (0-3y)                    >180 (0-3y)
+ RR              ≤ 40                            >40                                ≤ 30                                >30
+ Wheeze                                                 Silent chest indicates severe/life threatening disease
+                                                                   Treat the child
+                 -Nebulized salbutamol* ±        -Notify ICU                        -Nebulized salbutamol* ±            -Notify ICU if confused or
+                 nebulized ipratropium \20min    -Do as management of               nebulized ipratropium \20min for    drowsy or silent chest
+                 for 1st hour                    mild\moderate attack +             1st hour                            -Do as mild/moderate +
+                 -O2 to keep SO2= 94-98%             • Repeat nebulization as -O2 to keep SO2= 94-98%                       • Repeat nebulization as
+                 -Monitor for 1-2h:                       needed                    -Start oral steroids                         needed
+                   • Deteriorated/no                 • Steroids#: Oral or IV        -follow for 1 hour:                     • Steroids#: Oral or IV
+                     improvement: manage as          • ± IV magnesium                    • Deteriorated: manage as          • ± IV magnesium
+                     severe\life threatening              sulfate (40-50mg/kg                severe\life threatening             sulfate
+                   • If no symptoms recurred:             infusion over 1h)              • Improved: discharge plan
+                     discharge plan
+                   • If symptoms recurred: Add
+                     oral prednisolone# 1-
+                     2mg/kg + monitor à
+                     improved à Discharge plan
+
+*Dose of inhaled salbutamol: 2.5 mg (0.5ml 0f 0.5% solution) in 3ml normal saline. # Dose of steroids: Oral prednisolone=1-2mg/kg,
+max 20mg <2y, 30mg in age 2-6y. Intravenous steroids equivalents: dexamethasone 0.15-0.2mg/kg, hydrocortisone 5-10mg/kg,
+methylprednisolone 1-2mg/kg
+
+
+
+
+                                                                     10
+Asthma patient education
+   • What is asthma?
+   • Should he use medications regularly or as required?
+   • How to use the medications: Inhaler technique
+   • Dose of the drugs
+   • Asthma action plan
+
+
+
+References:
+
+   1- Global Initiative for Asthma. Global strategy for asthma management and prevention. [Internet]. Fontana: GINA; 2025
+      [cited 2026 Mar 13]. Available from: https://ginasthma.org/wp-content/uploads/2025/11/GINA-2025-Update-
+      25_11_08-WMS.pdf
+   2- Ghonem M.G.A. Prevalence of Bronchial Asthma among Primary School Children. Egypt J Hosp Med. 2022
+      Jul;88:3256-3261.                                           Available                                         from:
+      https://ejhm.journals.ekb.eg/article_247135_f70f7af1b442e38103b583a02bb268d4.pdf
+   3- Tarraf H, Aydin O, Mungan D, Albader M, Mahboub B, Doble A, Lahlou A, Tariq L, Aziz F, El Hasnaoui A. Prevalence
+      of asthma among the adult general population of five Middle Eastern countries: results of the SNAPSHOT program.
+      BMC Pulm Med. 2018 May 11;18(1):68. doi: 10.1186/s12890-018-0621-9. PMID: 29751756; PMCID: PMC5948696.
+   4- El-Hefny AM, Nassar SI, El-Heneidy FM, Said M, El-Beleidy AS, El-Marsam E, et al. Epidemiology of childhood
+      asthma in Cairo. Med J Cairo Univ. 1994 Jun;62(2):505-518.
+   5- Zedan MM, Wassefy ME, Khashaba EO, et al. Prevalence of bronchial asthma and correlation between the chemokine
+      receptor 3 gene polymorphism and clinical asthma phenotypes among Egyptian asthmatic children. Egypt Pediatric
+      Association Gaz. 2023;71(47). doi: 10.1186/s43054-023-00182-x.
+   6- Abd Elgawad M, editor. Pediatric Emergency Room Protocol. 2nd ed. Alexandria, Egypt: Alexandria University
+      Children Hospital; 2024.
+
+                                                           11
+

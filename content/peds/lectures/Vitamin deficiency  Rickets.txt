@@ -1,0 +1,436 @@
+SOURCE: Semester 8\Pedo\Theoritical\PPT\Vitamin deficiency  Rickets.pdf
+
+        Chapter 3: Nutritional Disorders                                                              31
+
+
+
+
+                             SPECIFIC VITAMIN DEFICIENCIES
+
+                                              VITAMIN D
+Vitamin D is not really a vitamin. It is a prohormone closely related to classical steroids.
+Vitamin D metabolism:
+•       Vitamin D is a fat-soluble vitamin present in 2 natural forms:
+         1. Vitamin D3 (Cholecalciferol) formed in the skin by ultraviolet irradiation of 7-dehydro-
+            cholesterol. It is also present in cod liver oil, butter, liver, and egg yolk. Breast milk
+            content of vitamin D is low (contains only ±30 IU of vitamin D / liter) and cow's milk
+            content is even lower. Breast milk vitamin D probably is adequate if the lactating mother
+            and infant are exposed sufficiently to sun light.
+         2. Vitamin D2 is formed by ultraviolet irradiation of ergosterol in green plants.
+The daily requirement of vitamin D for infants is 400 IU (or 10 μg). If not sufficiently exposed to sun
+light, babies fed on breast milk or unmodified cow's milk will usually need supplementary vitamin D.
+Most commercial milk formulas and baby foods are fortified with vit. D but still insufficient for daily
+needs.
+•       Vitamin D activation :
+            •    Vitamin D3 and D2 are biologically inactive forms (pro-hormones).
+            •    They are transported to the liver to be hydroxylated to 25 hydroxy-vit.D (Calcidiol).
+            •    They are then further hydroxylated in the proximal renal tubules to 1,25 dihydroxy-vit D
+                (Calcitriol) which is the biologically active form.
+
+
+
+
+    •     Physiological actions of Calcitriol (1,25 hydroxy-vit.D):
+            •  GIT: promotes calcium (Ca) and phosphorus (P) absorption in the small intestine.
+            •  Kidney: increases Ca and P reabsorption.
+            •  Bones and teeth: It affects Ca and P resorption from old bones and deposition in newly
+              formed bone and teeth through its regulatory effect on the level of serum alkaline
+              phosphatase enzyme.
+            • Immune system: helps differentiation of immune cells helps to prevent infection.
+            • Non skeletal action: immune cells, brain, pancreas, breast.
+
+
+            VITAMIN D DEFICINCY AND INFANTILE RICKETS
+Definition:
+It is a metabolic disorder of infancy and childhood caused by vitamin D deficiency and affecting:
+         • Growing bones: defective mineralization of osteoid tissue and slow growth.
+         • Skeletal muscles and ligaments: rickety myopathy (hypotonia) and laxity of ligaments.
+NB: Rickets is the disease of infancy (growing bones) i.e. till the age of 2 years.
+32                                                           Madkour's Essentials of Pediatrics
+
+Causes of infantile rickets:
+I- Vitamin D deficiency: defective supply / synthesis (commonest):
+
+         1. Lack of exposure to sun rays to the infant or pregnant mothers’.
+                • Race: black race is more susceptible due to dark skin interfering with ultraviolet
+                    rays.
+                • Environmental factors: clouds, smoke, dust and ordinary window glass prevent
+                    ultraviolet rays from reaching babies’ skin. Thus, rickets is more common in
+                    winter, in big smoky towns, and in children always kept in-door.
+         2. Relative deficiency (increased need):
+             Rapidly growing infants: prematures, twins and infants recovering from malnutrition.
+                 NB: Marasmic infants and cretins rarely develop rickets due to arrested growth
+                     (atrophic rickets).
+         3. Deficiency of vitamin D storage from pregnant mother (congenital rickets).
+              Risk factors: a. Low maternal nutrition of vit. D during pregnancy.
+                             b. Low sun exposure during pregnancy.
+                             c. Closely spaced pregnancy.
+              Clinical picture: early rickets and early tetany and convulsions
+II- Defective activation of vitamin D to calcitriol (1,25 Hydroxy-D):
+        1. Liver diseases defective 25-hydroxylation of vit D.
+        2. Chronic renal diseases (renal osteodystrophy) defective 1, 25 hydroxylation of vit. D.
+        3. Deficiency of 1-hydroxylase enzyme inadequate renal production of 1,25 hydroxy vit.D
+           (Vit. D dependent rickets type I) (rare).
+        4. Anticonvulsant therapy: phenytoin and phenobarbital interfere with normal activation of
+           vitamin D abnormal vit D metabolites.
+III- Defective Vitamin D absorption:
+        1) Malabsorption syndromes, celiac disease, chronic diarrhea, etc.
+        2) Rachitogenic diets like:
+           - Yoghurt and unmodified cow’s milk (its high P content decreases the absorption of Ca)
+           - Cereals (high phytic acid content which forms insoluble salts with calcium).
+IV- End-organ resistance to calcitriol in bones:Vitamin D dependent rickets type II (rare).
+Pathogenesis of infantile rickets:
+                                       VITAMIN D DEFICIENCY
+                                                   ¯
+                                   ¯ Intestinal absorption of Ca & P
+                                               ¯
+                                 ¯ Ca level in blood & ECF
+                                               ¯
+                         Stimulation of Parathyroid gland ® ­PTH
+                        ¯                                         ¯
+        BONES: ­ mobilization of Ca                       KIDNEYS: ¯ reabsorption of P
+                    ¯                                                             ¯
+       Normal Serum Ca level (9 mg/dl)           ¯ Serum P level (<3mg/dl) Phosphaturia
+                               ¯                            ¯
+                            Low Ca X P solubility product (< 30)
+                                               ¯
+                          Failure of calcification of osteoid tissue
+Pathology of infantile rickets:
+Failure of calcification of the osteoid tissue around the osteoblasts of growing bone will lead to:
+    Chapter 3: Nutritional Disorders                                                                  33
+
+
+•  At the end of long bones osteoblasts will continue forming excess osteoid tissue which fails to
+ calcify or is poorly calcified. Consequently, a wide, irregular zone of non rigid tissue is produced at
+ the bone-cartilage junction present at the metaphysis. This uncalcified osteoid tissue is easily
+ compressible and is responsible for the skeletal abnormalities seen in rickets (widening of ends of
+ long bones, rachitic rosary, etc.) as well as the X-ray findings (broadening, cupping and fraying of
+ epiphyseal line).
+• In the shaft of long bones, the pre-formed bone is resorbed and is replaced by excess uncalcified
+ osteoid tissue, formed from the periosteum, in the form of a shell which surrounds the shaft over its
+ entire length. In X-rays, this will appear as rarefaction of cortical bone, periosteal elevation
+ deformities and sometimes, green stick fractures.
+
+                    Pathological changes in rickets appear in the following order:
+                          First: Biochemical changes: ALP and inorganic phosphate
+                          Then: Radiological changes: seen in X-ray wrist region
+                         Lastly: Clinical features: Craniotabes, rickety rosary etc.
+
+Clinical picture of rickets:
+•  Bony changes of infantile rickets appear after several months of vitamin D deficiency.
+•  They usually appear in the second half of 1st year and during 2nd year of age.
+•  They may appear earlier (e.g. 2nd month) in breast-fed infants of vitamin D deficient mothers (as
+  defective sun exposure during pregnancy).
+• It is rare to find active rickets in late childhood.
+Early manifestations (less than 6th month):
+    1.
+     Increased sweating, particularly around the head.
+    2.
+     Irritability by day.
+    3.
+     Insomnia.
+    4.
+     Craniotabes (thinning of outer table of skull) is the earliest bony change. Detected by firmly
+    and gently pressing over the occiput or posterior part of parietal bone away from sutures. A
+    ping- pong ball sensation will be felt (it is preferable not to try to detect it). It must be
+    differentiated from craniotabes caused by prematurity, osteogenesis imperfecta and
+    hydrocephalus where the softening is generalized or along the sutures.
+5. Rachitic rosaries and Harrison sulcus (see later).
+Other manifestations later on:
+Symptoms:
+         •   Delayed sitting, standing, walking (due to hypotonia).
+         •   Delayed teeth eruption.
+Signs:
+                                          I. Bony changes:
+Changes in the skeleton are greatest at the sites where growth is most rapid and the deformities are the
+result of gravity and traction of muscles on the affected bones.
+1- Head:
+    i. Craniotabes: usually disappears before the end of 1st year.
+    ii. Anterior fontanel is wider and its closure is delayed than normal.
+    iii. Frontal and parietal bossings are due to deposits of osteoid tissue which is situated mainly
+         around the centers of ossification of these bones.
+    i. The head is larger than normal and may remain so throughout life (DD. Large head). The
+         Shape: frontal and parietal bossings and the grooves between the bosses may result in square
+         skull (caput quadratum). The skull may be permanently asymmetric.
+    i. Deciduous teeth: delayed eruption, enamel defect and sometimes extensive caries.
+
+2- Thorax:
+34                                                            Madkour's Essentials of Pediatrics
+
+  i. Rickety (or rachitic) rosary: prominent enlargement of the costochondral junctions seen and
+     felt as a row of beads about the size of cherries extending down and backwards along the line of
+      costochondral junction.
+ ii. Pigeon breast deformity: -Longitudinal grooves develop posterior to the rosary.
+                                    -Flattening of sides of chest cage.
+                                    -Sternum and its adjacent cartilages are projected forward.
+ iii. Harrison's sulcus: horizontal groove corresponding to the line of attachment of the diaphragm
+       with flaring of the costal margins below. It is due to inward pull by the diaphragm on the soft rib
+       cage.
+3- Extremities:
+
+
+
+
+     Knock-knees(genu                      Normal variants of legs                    Bowlegs (genu varum)
+         valgum)
+
+ i. Epiphyseal enlargement is common and is best felt at the wrists and ankles (Marfan sign).
+ ii. Deformities: bending of the soft shafts of weight bearing long bones may results in:
+          • Bowlegs or knock-knees due to deformed tibia and fibula if infant has started to walk.
+          • Femur and tibia may also acquire an anterior convexity.
+          • The humerus, radius and ulna may be bent as the infant crawls.
+iii. Rickety dwarfism occurs if there are deformities of Legs + Spine + Pelvis together.
+iv. Greenstick fractures of long bones occur often with no clinical symptoms. The bones, being soft,
+     are not broken completely, but only partially. In other words, it is a fracture of the soft bony cortex
+     within the intact periosteum. There is no pain or swelling. The fracture is detectable only in X-ray.
+4- Spinal Column : changes are mostly due to laxity of ligaments and hypotonia of muscles, so it is
+not a bony fixed deformity.
+1. Scoliosis (mild to moderate lateral curvature of spine) is common.
+2. Kyphosis of dorsolumbar region when sitting.
+3. Lordosis of lumbar region is exaggerated in erect posture.
+5- Pelvis: deformity of pelvis occurs commonly in children with lordosis.
+1. Size: smaller due to retarded growth.
+2. Narrowed pelvic entrance due to shortened anteroposterior diameter.
+3. Narrowed pelvic outlet due to forward displacement of sacrum.
+In females, if these deformities are permanent, they may interfere with normal delivery later on when
+they become pregnant.
+
+                                   II. Ligaments and Muscles
+  Motor delay secondary to myopathy, hypotonia, poor muscle development and laxity of ligaments
+  leading to:
+• Delayed sitting, standing and walking, but other milestones as language and social are normal.
+• Extremities and spinal deformity and acrobatic rickets: flaccidity of whole body and hyper-
+  extensibility of joints.
+• Pot belly due to hypotonia of abdominal wall, gastric and intestinal muscles and downward
+  displacement of liver and spleen (ptosis) by the deformed thoracic cage
+Investigations:
+1-Radiological findings:
+      Chapter 3: Nutritional Disorders                                                                  35
+
+
+Active Rickets: A radiograph of wrist is best for early diagnosis, and shows:
+    1. Broadening + cupping (concave) + fraying
+       (irregularity) of the lower ends of radius and ulna.
+    2. Increased distance between the calcified ends of radius
+       and ulna and the carpal or metacarpal bones (the large
+       non calcified epiphyseal end of shaft will not appear in
+       the X-rays).
+    3. Epiphyseal line is indistinct.
+    4. Shafts: bone density and prominent trabeculae.
+    5. Periosteal elevation may be seen.
+    6. Fractures of greenstick type, or deformities.
+
+2- Biochemical (laboratory) findings :
+•   Serum calcium: usually normal due to compensatory hyperparathyroidism
+   (normal level = 9 -11 mg/ dl).
+• Serum phosphate: Low (< 3 mg /dl) due to compensatory hyperparathyroidism
+   (normal = 4.56.5 mg/dl).
+• Calcium X Phosphate solubility product is low < 30 (normal is > 40).
+• Serum alkaline phosphatase activity is high (normal 515 Bodansky Unit /dl, or 145-200
+IU/liter).
+Healing Rickets:
+After starting treatment, evidence of healing may take 2-3 weeks to appear in X-rays.
+ 1. Line of preparatory calcification: it is an irregular band of calcification separated from ends of long
+    bones by the uncalcified metaphysial zone of osteoid tissue.
+2. As healing progresses, the osteoid tissue between this line and end of long bones becomes
+    calcified and the shaft grows toward the line of preparatory calcification until it becomes united
+    with it.
+Complications of infantile rickets :
+1. Neurological: hypocalcemic tetany.
+2. Respiratory: chest deformities may produce atelectasis and expose rachitic children to recurrent
+   chest infections like bronchitis and bronchopneumonia.
+3. Skeletal: fractures and severe bony deformities (particularly pelvis in females).
+Differential diagnosis of rickets: Differentiate from other causes of:
+   1. Delayed motor development (as in cerebral palsy and global developmental delay cases)
+   2. Large head.
+   3. Head bosses: scurvy, syphilis, achondroplasia.
+   4. Deformities and fractures: physiologic bow legs (no lab or X-ray features of rickets, resolves
+      spontaneously in a few years), chondrodysplasia, osteogenesis imperfecta.
+Prevention of infantile rickets :
+•     Exposure of both infant, pregnant and lactating mother to ultraviolet rays (direct sun-light, clear
+      sky, around noon).
+•     Supplying the daily requirements of vitamin D orally (syrup or drops) preferably in water
+      miscible vehicle:
+      - For breast-fed infants 400 IU (or 10 g) of vitamin D/ day, starting from birth.
+      - For prematures, twins and infants of mothers with osteomalacia: 1000 IU/day, starting after
+         birth.
+      - Vitamin D should also be given to the pregnant and lactating mother.
+Treatment of rickets:
+36                                                              Madkour's Essentials of Pediatrics
+
+•  A daily oral dose of (4000 - 6000 IU) (50-150 μg) will produce healing in 2 to 4 weeks
+  demonstrable in Xray. Alternatively, we can treat with a single huge dose (600,000 IU or 15,000
+  μg) orally or intramuscularly.
+• After healing is complete, reduce the dose to 400 IU/day (or 10 μg/day).
+• We have to be sure that the infants and children are receiving adequate calcium and phosphorus.
+HYPOCALCEMIA AND HYPOCALCEMIC TETANY
+Tetany is caused by increased activity of the motor nerve fibers and muscles due to a decrease in free
+ionized calcium.
+Plasma calcium (normal total plasma calcium) = 9-11 mg/dL is present in 2 forms:
+• Diffusible Ca = 5.5 mg/dL: Ionized Ca= 5 mg/dL (affected by plasma pH).
+                                Non-ionized Ca = 0.5 mg/dL.
+• Protein-bound Ca = 4.5 mg/dL (its amount is affected by the level of plasma proteins).
+Etiology of Hypocalcemia (after the Neonatal period):
+     1. Infantile tetany (commonest): it is a complication of infantile rickets and is usually precipitated
+        by febrile illness (infection) failure of parathyroid compensatory mechanism or spontaneous
+        exhaustion of parathyroid gland.
+     2. Hypoparathyroidism.
+     3. Alkalosis (metabolic or respiratory). In the presence of a high pH (alkalemia), the ionized
+        calcium concentration decreases as a result of increased binding of calcium to albumin.
+        Decreased ionized calcium concentration may cause tetany. Alkalosis may occur in:
+            • Excessive vomiting (due to single gastric cause e.g cong.pyloric stenosis)         loss of
+                hydrochloric acid        alkalosis     pH      ionized calcium.
+            • Excess administration of alkalies e.g. citrates, bicarbonates or phosphates alkalosis.
+            • Hyperventilation of lungs alkalosis, e.g. in some cases of encephalitis.
+            • Postacidotic tetany: due to rapid and over correction of acidosis with bicarbonate (as in
+                severe dehydration and acidosis in acute diarrhea).
+     4. Hypomagnesemia (magnesium is necessary for PTH formation and action).
+Clinical picture:
+I. Latent tetany: occurs if serum Ca is between 7 - 9 mg/dl.
+All the manifestations under this group are due to hyperirritability of the nerves.
+    1. Chvostek's sign: when you lightly tap the facial nerve anterior to the ear, the facial muscles
+       supplied by it will twitch briefly with each tap.
+    2. Trousseau's sign: inflation of the sphygmomanometer cuff applied on the arm to above the
+       systolic pressure provokes a carpal spasm within 4 minutes.
+    3. Erb's sign: applying a current less than 5 milliamperes causes contraction of muscles.
+       Normally, a more powerful current is needed.
+    4. Peroneal sign: when you tap the peroneal nerve on the neck of fibula, the muscles it supplies
+       contract, and the foot is everted.
+II. Manifest tetany: occurs if serum Ca is less than 7 mg/dl, in the following forms:
+    1. Carpal and pedal spasms that may occur instantaneously or after an attack of fever. In carpal
+       spasm, there is extension of interphalangeal joints, flexion of metacarpo-phalangeal joints and
+       adduction of thumb and flexion of wrist (Obstetrician hand or Main d’Accoucheur). In pedal
+       spasm the feet are extended and adducted and the toes are plantar flexed.
+    2. Laryngeal spasm: crouping or whooping sound, maximal occurrence is between 6 to 15
+       months.
+    3. Generalized convulsions are common in infants and older children.
+Diagnosis :
+     •   Clinical picture of tetany + clinical picture of etiological factor (Rickets).
+     •   Laboratory findings: low serum calcium.
+     •   Radiographic study if rickets is suspected as a cause.
+                      Cases of convulsions or laryngeal spasm must be thoroughly
+                          Investigated before diagnosing tetany as an etiology.
+    Chapter 3: Nutritional Disorders                                                              37
+
+
+
+
+Management:
+1. Emergency:
+        • Intravenous Calcium gluconate (5-10 ml of 10% solution) slowly over 10 minutes.
+        • Acute seizure treatment: IV diazepam 0.3 mg/kg/dose.
+        • Oxygen inhalation for laryngeal stridor.
+2. Maintenance: - Oral Ca gluconate or Ca lactate 200-500 mg/kg/day, divided.
+                  - Oral vitamin D: 4000 U/day in cases due to rickets.
+3. Investigate the etiological factor and treat the underlying cause.
+Treat the precipitating condition, e.g. acute infection.
+
+                               HYPERVITAMINOSIS D
+Hypervitaminosis D is usually iatrogenic due to huge or repeated doses of vitamin D.
+Manifestations : all are attributed to hypercalcemia, and appear 1-3 months after intake of large
+doses of vitamin D.
+    1. Anorexia, irritability.                         Complications:
+    2. Vomiting with no apparent cause.                    •   Nephrocalcinosis
+    3. Constipation with hard stool pellets.               •   Renal failure.
+    4. Excess thirst and polyuria
+    5. Evidence of dehydration.                        Investigations: increased serum calcium
+    6. Hypotonia .                                     ultrasound or X ray abdomen: nephrocalcinosis
+Treatment :
+   1. Stop administration of vitamin D and calcium.
+   2. Fluids for correction of dehydration.
+   3. Rachitogenic diet (poor in milk and rich in carbohydrates and cereals).
+   4. In severe cases (serum Ca > 12 mg/dl): Prednisone 2 mg/kg/day until serum Ca drops to 12.
+5. Oral aluminium hydroxide also may be used.
+                               VITAMIN A DEFICIENCY
+Vitamin A is a fat-soluble vitamin. It exerts important functions in the body:
+       1. Formation of the visual pigment (essential for vision in dim light and color vision).
+       2. It maintains the integrity of the epithelial surfaces.
+       3. Formation of mucopolysaccharides in the matrix of bones and teeth.
+       4. It is essential for growth.
+Sources:
+1. Animal fats, milk and milk products, egg yolk, liver, especially cod liver oil.
+2. Yellow and green fruits and vegetables (e.g. carrots rich in carotene).
+Daily requirements : 4000 IU (15005000 IU) vit. A (or 150-500 g retinol equivalents).
+Causes of vit. A deficiency:
+   1.   Deficient intake e.g. vegetarian diet.
+   2.   Impaired absorption e.g. celiac disease, cholestatic jaundice, etc.
+   3.   Deficient storage as in liver cirrhosis.
+   4.   Hypoproteinemia (albumin is a carrier for vitamin A) e.g. in kwashiorkor.
+Manifestations of vit A deficiency:
+1. Eye manifestations:
+        •   Night blindness.
+        •   Xerophthalmia (dryness of conjunctiva).
+38                                                          Madkour's Essentials of Pediatrics
+
+        •   Keratomalacia (softening of the cornea).
+        •   Corneal ulcerations, necrosis and permanent corneal scar.
+        •   Bitot spots (dry white plaques on the bulbar conjunctiva).
+2. Skin and mucous membranes:
+        •    Xerosis of skin: the skin is dry, scaly and rough.
+        •    Follicular hyperkeratosis over buttocks and extensor surface of arms and legs (toad skin).
+        •    Recurrent respiratory and urinary infections, due to epithelial cell metaplasia and low
+            immune response.
+3. Skeletal system
+        •   Faulty epiphyseal bone formation.
+        •   Retardation of growth.
+                       Vit. A deficiency is usually associated with
+            * Increased susceptibility to infection      * Increased mortality
+
+Prophylaxis: Both World Health Organization and Ministry of Health recommend giving:
+A- For normal children:
+    • 1st dose: 100,000 IU orally at age of 9 months.
+    • 2nd dose: 200,000 IU orally at age of 18 months (at the time of booster OPV and DPT).
+B- For children at high risk of complications of vit.A deficiency:
+  In cases of severe malnutrition, persistent diarrhea, respiratory infections, measles:
+        • For infants < 6 months:         single oral dose of 50,000 IU.
+        • For infants 6-12 months:        single oral dose of 100, 000 IU.
+        • For children > 12 months: single oral dose of 200,000 IU.
+C- For lactating mothers: single oral dose of 200,000 IU within 8 weeks of delivery.
+Treatment of vitamin A deficiency: WHO and Ministry of Health recommend:
+        •   For infants < 6 months:   single oral dose of 50,000 IU.
+        •   For infants 6-12 months:  single oral dose of 100, 000 IU.
+        •   For children > 12 months: single oral dose of 200,000 IU.
+•    Alternatively we can give oral vitamin A 5000 - 10,000 IU / day for 2 weeks.
+•    In malabsorption: oral vitamin A, 10,000 - 25,000 IU / day.
+
+                            Fat soluble vitamines:
+                                             E–D–A–K
+                            Water soluble vitamines:
+                                   B1 – B2 – B3 – B6 – B12 – Folate - C
+    Chapter 3: Nutritional Disorders                                                                                                                                        39
+
+
+    VITAMIN                    FUNCTION                               EFFECT OF DEFICIENCY                                     SOURCE                      TREATMENT
+                                                                                                                                                             (Daily dose)
+B1 (Thiamine)       Co-enzyme in decarboxylation of        Beri-beri:                                             Liver, meat, milk.                      5-25 mg orally
+                    pyruvic acid acetyl CoA                -Polyneuropathy,Tender calfs, Areflexia,               Cereals, nuts, legumes
+                                                           -Ophthalmoplegia      -Heart failure, Edema            N.B.: Rice is very poor in thiamin
+B2 (Riboflavin)     Co-enzyme in oxidation-reduction       Anorexia, No weight gain, Anemia                       Liver, meat, milk, cheese, eggs,        5-25 mg orally
+                    (FAD Co-enzyme)                        Angular stomatitis, Cheilosis, Glossitis, Mucositis,   whole grain, green leafy vegetables
+                                                           Nasolabial seborrhea,
+                                                           Photophobia, Corneal vascularization
+B3 (Niacin)         Co-enzyme in oxidation-reduction       Pellagra:                                              Liver, meat, fish                       25-50 mg orally
+                    (NAD Co-enzyme)                        Photosensitivity                                       Whole grain, green leafy vegetables
+                                                           Dermatitis and rough skin over exposed parts           N.B:Tryptophan is niacin precursor
+                                                           Dementia, Diarrhea, Death.                             N.B.: Corn is very poor in niacin
+B6 (Pyridoxine)     Co-factor in amino acid metabolism     Vomiting, Diarrhea, Seborrhea, Scaly dermatitis        Liver, meat                             5-25 mg orally
+                                                           Microcytic hypochromic anemia                          Whole grain, peanuts, Soya beans        For dependency:
+                                                           Seizures, Peripheral neuropathy, Hyperacusis           N.B.: children on INH therapy need      10-250 mg orally
+                                                           Vit B6 dependency: no response to usual doses of B6    supplementation with vit B6
+B10 (Folic acid)    DNA synthesis                          Megaloblastic anemia                                   Liver, cheese, cereals,                 1 mg orally
+                                                                                                                  green vegetables
+B12                 DNA synthesis,                         Megaloblastic anemia, Vitiligo,                        Meat, fish, cheese,                     50-100 g, IM,
+(Cyanocobalamine)   Co-enzyme in folate metabolism         Peripheral neuropathy, Spinal posterior & lateral                                              monthly
+                                                           column disease
+Biotin              Co-factor in amino acid metabolism     Anorexia, Nausea, Pallor,                              Meat, yeast, eggs                       0.15 - 0.3 mg orally
+                    (Carboxylase reactions)                Dermatitis, Alopecia, Glossitis                        (normally, it is synthesized by
+                                                           Mental changes, Hypotonia, Death                        intestinal flora)
+C (ascorbic acid)   Reducing agent                         Scurvy :                                               Citrus fruits, green vegetables         250-500 mg orally
+                    Collagen metabolism (cartilage, bone   Irritability, Purpura, Bleeding gums,                  ( Destroyed by cooking )
+                    matrix, connective tissue of blood     Periosteal hemorrhages, Bone aches,
+                    vessels)                               Pseudoparalysis with frog position of extremities
+E (α-tocopherol)    Antioxidant                            Hemolysis in preterm infants, ataxia, areflexia        Seeds, germ oils, green leafy veget.    1 - 3 IU orally
+K                   Carboxylation of clotting factors      Hemorrhagic disease of newborn, prothrombin time       Liver, green veget., intestinal flora   1 mg IM (once)
+                                                           Vitamins B complex, C, E and K
+40   Madkour's Essentials of Pediatrics
+

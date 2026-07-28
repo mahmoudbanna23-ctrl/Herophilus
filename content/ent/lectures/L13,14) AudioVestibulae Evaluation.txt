@@ -1,0 +1,600 @@
+SOURCE: Semester 8\ENT\Theoritical\PPT\L13,14) AudioVestibulae Evaluation.pdf
+
+Audio-Vestibular Medicine:
+  Basics and Evaluation
+
+
+            Hesham Kozou
+     Professor of Audio-Vestibular Medicine
+         Alexandria University, EGYPT
+Agenda
+▪ What is Audio-Vestibular Medicine (AVM)?
+▪ Importance of Hearing and Balance Senses.
+▪ Hearing Testing in Adults and Children.
+▪ Basic Audiological Evaluation.
+▪ Pure Tone Audiometry.
+▪ Tympanometry.
+▪ Neonatal Hearing Screening.
+▪ How to test for Balance?
+▪ Bedside/Office Balance Tests.
+▪ Vestibular Evaluation.
+Audio-Vestibular System
+
+Medical management of the hearing & balance systems.
+
+
+                           AVM
+
+       Audiology                      Vestibulogy
+
+
+Diagnosis          Rehab         Diagnosis          Rehab
+Audio-Vestibular System
+The Importance of Hearing
+▪ Hearing is one of the most
+  important of the human senses
+
+▪ It is essential for:
+  - Location of sounds that may
+  warn of danger
+  - Enjoyment of pleasant sounds
+  such as music
+  - Development of speech and
+  language for communication
+Which is More Important?
+
+
+
+
+    Hearing       Vision
+  The Importance of Hearing
+Helen Keller, the well-known
+deaf-blind once said:
+
+"...after a lifetime in silence and
+   darkness, that to be deaf is a
+   greater affliction than to be
+   blind...I have imagination, the
+   power of association, the sense of
+   touch, smell and taste, and I
+   never feel blind, but how can I      Helen Keller & Alexander Graham Bell
+
+   replace the loss of hearing?"
+   Importance of Balance
+    Balance is the ability to
+     maintain control of a
+   particular body position
+   whilst performing a given
+  task with minimal postural
+             sway.
+
+
+Static balance is the ability to maintain control of a
+position whilst remaining stationary - for example,
+balancing on one leg or holding a headstand.
+Dynamic balance is the ability to maintain balance and
+control of the body whilst moving, such as hopping,
+jumping, riding a bike or snowboarding.
+Which is More Important?
+
+
+
+
+   Hearing       Balance
+                6th Sense
+                     4. Processing
+                       (Cortical)
+
+
+
+
+1. Reception
+
+ Sensory
+               2. Transduction       3. Processing
+Processing
+               (Sensory Coding)      (Sub-Cortical)
+We “Sense” with our Brain …
+
+
+
+
+                6th Sense
+So .. What is the Function of the Ear?
+
+              Photo Editing Process
+
+
+
+
+  CPU          Cable           Scanner
+
+  Brain        Nerve             Ear
+ Hearing Testing
+in Adults and Children
+What is Needed for Normal Hearing?
+▪ Adequate stimulus (SOUND).
+▪ Conduction of stimulus to sensory organs of
+  hearing (Conductive Apparatus = EE/ME).
+▪ Sensory transduction of stimulus at organs of
+  hearing (Cochlea).
+▪ Neural transmission of the signal (Nerve).
+▪ Central auditory processing of the signal
+  (Initial/Subcortical, Final/Cortical).
+How Sensitive the Ear to Sounds?
+
+ ▪ The Human ear is sensitive to sounds over a
+   wide range of:
+      - Frequencies: 20 – 20,000 Hz
+      - Amplitudes: 0.0002 – 200 dyne/cm2
+
+ ▪ It can detect the difference between two
+   sounds occurring 10 µsec apart in time.
+
+Note: The wide sensitivity range of human hearing
+necessitates the use of Logarithmic (Ratio) scales rather
+than Linear (Numerical) scales.
+ Logarithmic Scales
+▪ Decibel (dB) scale for sound pressure levels:
+     - 0 dB = 0.0002 dyne/cm2 (threshold)
+     - 120 dB = 200 dyne/cm2 (limit)
+     So, the range of hearing is reduced to only 120
+     units of measurement (instead of (10)6 units).
+
+▪ Octave scale for sound frequency in Hz:
+     frequency range is measured in octave bands
+     i.e. each frequency is double the previous one
+     e.g. 250, 500, 1000, 2000, 4000 Hz, …etc.
+   Human Auditory Field
+
+
+
+
+Note: The human ear is not equally sensitive across frequency range
+  Hearing Tests (Audiometry)
+
+▪ Behavioral Audiometry: where a behavioral
+  response is needed to measure responses to
+  sounds.
+  (In cooperative children and adults).
+
+
+▪ Electrophysiological Audiometry: where a
+  physiological reflex or involuntary response is
+  measured in response to sounds.
+  (In Infants/toddlers and uncooperative adults).
+Basic Audiological
+   Evaluation
+Basic Audiological Evaluation
+
+ ▪ Symptoms/History.
+ ▪ Physical Examination.
+ ▪ Tuning fork tests.
+ ▪ Hearing tests:
+   ▪   Pure Tone Audiometry (PTA).
+   ▪   Tympanometry.
+   ▪   Speech Audiometry.
+Symptoms of Ear Diseases
+
+ ▪ Hearing loss.
+ ▪ Tinnitus (ringing in ears).
+ ▪ Dizziness/Vertigo.
+ ▪ Otalgia.
+ ▪ Discharge (otorrhea).
+Physical Examination
+
+ ▪ General examination.
+ ▪ ENT examination.
+ ▪ Otoscopy.
+Straighten the EAC
+Otoscopy
+Tuning Fork Tests
+
+ ▪ Weber test.
+ ▪ Rinne test.
+ ▪ Schwabach test.
+   Rinne Test
+Determines if HL is Conductive or Sensorineural
+
+ Bone conduction (BC)              Air conduction (AC)
+
+
+
+
+   AC > BC (Positive Rinne test)      Normal (or SNHL)
+   BC > AC (Negative Rinne test)      Conductive HL
+     Weber Test
+     Determines if unilateral or asymmetric HL is
+     Conductive or Sensorineural
+
+
+Midline or not lateralized      Midline Bone conduction (BC)
+     No difference
+
+
+Lateralized to better ear
+     Poorer ear is SNHL
+
+
+Lateralized to poorer ear
+     Poorer ear is conductive
+Schwabach Test
+  Determines if ear is Conductive or Sensorineural
+
+         Examiner’s BC               Patient’s BC
+
+
+
+
+Ex > Pt (Shortened Schwabach)    Normal (or SNHL)
+Pt > Ex (Prolonged Schwabach)    Conductive HL
+Hearing Tests in BAE
+
+ ▪ Pure Tone Audiometry (PTA).
+ ▪ Tympanometry.
+ ▪ Speech Audiometry.
+    Pure Tone Audiometry (PTA)
+
+PTA Measures
+hearing thresholds
+for pure tone sounds
+to which the ear is most
+sensitive (250 - 8000
+Hz in octave intervals).
+  Pure Tone Audiometry (PTA)
+
+                         AC
+The pure tones
+introduced by 2 ways :
+     ▪ Earphones for
+       AC thresholds.
+
+                         BC
+   ▪ Bone vibrator for
+     BC thresholds.
+  Pure Tone Audiometry (PTA)
+ Both AC thresholds
+ and BC thresholds are
+ displayed on a graph
+ called the
+ “AUDIOGRAM”
+
+
+▪ Y-axis is Intensity
+  scaled in dB
+▪ X-axis is Frequency
+  scaled in Hz
+Pure Tone Audiometry (PTA)
+Procedure:
+
+
+
+
+PTA is done while the patient in a sound treated room
+ Pure Tone Audiometry (PTA)
+
+The relationship between AC & BC Thresholds
+in the audiogram gives an idea about:
+
+   ▪   Presence or absence of HL.
+   ▪   Type of HL.
+   ▪   Degree of HL.
+   ▪   Configuration of HL.
+   Normal Audiogram
+
+                      Bone conduction
+▪ AC - Normal.
+▪ BC - Normal.
+Across the             Air conduction
+
+Frequency Range.
+   Type of HL – Conductive HL
+
+
+▪ AC - Abnormal.
+▪ BC - Normal.         Bone conduction
+Across the Frequency
+Range.
+                         Air conduction
+Type of HL – Sensorineural HL
+▪ Abnormal equal AC & BC Thresholds.
+
+
+  Bone                                 Bone
+  conduction                           conduction
+
+
+
+
+           Air                    Air
+        conduction             conduction
+
+
+
+
+Low frequency SNHL         High frequency SNHL
+Type of HL – Mixed HL
+
+
+
+▪ Abnormal      Bone conduction
+  Unequal
+  AC & BC
+  Thresholds.
+
+                 Air conduction
+Speech Audiometry
+Measures hearing using Speech Stimuli:
+    - Words.
+    - Sentences.
+
+Measures the ability of a patient to :
+ ▪   Detect speech at the patient hearing threshold
+     (Speech Reception Threshold = SRT)
+ ▪   Discriminate speech at levels above threshold
+     (Speech Discrimination Score = SDS)
+ Speech Discrimination Scores
+
+Helps to identify type of hearing loss:
+     - Conductive HL           Excellent SDS
+     - Sensory HL              Good SDS
+     - Neural HL               Poor SDS
+
+
+Provides an idea about the benefit of a hearing aid
+to restore normal speech discrimination.
+    Tympanometry
+
+    Measure 2 Middle Ear features :
+
+▪    The Pressure of the middle ear cavity.
+
+▪    The Degree of Elasticity or the resistance
+     of the middle ear system.
+Tympanometry
+
+ Procedure
+
+
+               Probe
+                       Head-
+                       phone
+
+   Manometer
+    Tympanometry
+    Tympanometry Patterns
+    differentiate types of
+    middle ear pathologies:
+
+▪   Type A: Normal ME pressure,
+             Normal ME compliance.
+      As (with reduced compliance).
+      Ad (with increased compliance).
+
+▪   Type B: Non-compliant ME
+            (flat curve).
+▪   Type C: Negative ME pressure,
+            Good compliance.
+Auditory Brainstem Response (ABR)
+
+Are electrical voltages recorded from the brain
+   stem auditory pathway using electrodes placed
+   on the skull.
+
+Are used to measure the hearing thresholds in
+   newborns, infants, mental retardation and
+   malingerers.
+Also used to measure the neural conduction in
+   neurological disorders (i.e., space occupying
+   lesions and MS).
+Auditory Brainstem Response (ABR)
+
+                     Normal ABR
+                     morphology
+                     and latencies
+Auditory Brainstem Response (ABR)
+
+
+
+
+Typical ABR morphology in Neonates
+Otoacoustic Emissions (OAEs)
+Are low level sounds generated by the cochlear
+   hair cells movements either spontaneously or in
+   response to sound (Evoked).
+
+Can be recorded putting a sensitive
+  microphone in the EAC.
+Are used to measure the hearing
+   thresholds as well as the
+   cochlear function in different
+   otologic disorders.
+Otoacoustic Emissions (OAEs)
+
+
+                             Easy and fast test
+
+
+
+
+Ideal for
+Neonatal Hearing Screening
+How do we maintain Balance?
+     What is Dizziness ?
+
+
+
+
+Impairment in Spatial perception and Stability
+Definition
+
+Dizziness is a
+Non-specific term
+used by patients to
+describe a group of
+symptoms        with
+different underlying
+pathophysiologic
+processes.
+How common is Dizziness?
+
+Very Common
+How big of a Problem is Dizziness?
+ Epidemiology
+
+
+• 2nd most common complaint in medical practice.
+
+• Overall Incidence ~30%.
+
+• Average age incidence ~ 45 years.
+
+• With every 5 years age increase 10% increase.
+Epidemiology
+
+By the age 75 y:
+• 90% have
+  Dizziness.
+
+
+
+• Dizziness is the
+  most common
+  complaint.
+36% in Women
+22% in Men
+Dizziness is a Diagnostic Challenge
+
+
+Complex
+
+
+
+
+Frustrating
+Challenges
+
+• Vague Symptoms
+• Numerous Causes
+• Multi-System/Sensory Deficit
+• Referral challenge
+• Diagnostic Approach
+• Red Flags/Life threatening
+• Diagnostic Tools/Technology
+ Causes of Dizziness
+• More than 90% are Benign in nature.
+
+• Less than 5% are Serious underlying disorder.
+
+
+• Most common cause of Peripheral Vertigo is ..?
+• Most common cause of Central Vertigo is ..?
+• Most common cause of Dizziness is ..?
+ Most common cause of Dizziness
+
+Lack of Sleep
+Diagnosis of Dizziness
+▪ History taking reveals a provisional diagnosis in
+  80% of cases.
+
+▪ Examination does not make the diagnosis in
+  most of cases but helps to confirm it.
+
+▪ Investigations workup
+  ▪ Audiological
+  ▪ Vestibular
+  ▪ Laboratory
+  ▪ Radiological
+History is the KEY
+  Simple Symptomatic Approach
+▪ Type I Dizziness --      Vertigo
+
+▪ Type II Dizziness --     Syncope/Pre-Syncope
+
+▪ Type III Dizziness -- Disequilibrium
+
+▪ Type IV Dizziness -- Non-Specific Dizziness
+                  No precise meaning or
+                  consistency to the word
+                  “Dizzy” “‫ ”دايخ‬yet, all our
+                  patients will use it.
+
+▪ Describe what happened to you and DON’T use
+  the word “DIZZY”.
+▪ When did it start?
+▪ How long does it last?
+▪ How often does it happen?
+▪ What are you doing when it happens?
+▪ Anything you can do to make it better or worse?
+Dissecting out their description of
+“Dizziness” “‫ ”دوخة‬will match one of:
+
+   Vertigo            Motion Intolerance
+
+Unsteadiness             Drop Attack
+
+Pre-Syncope            Balance-Related
+  Syncope                   Fall
+
+   Vague                  Oscillopsia
+Why Vertigo?
+
+
+
+
+     Vertigo is Vestibular
+ Diagnosis of Dizziness
+
+▪ History taking          ▪ Precise understanding of
+ reveals a provisional      the symptoms helps
+ diagnosis in 80% of        determine
+ cases.                     Investigations
+                            workup
+▪ Examination does          ▪ Audiological
+ not make the diagnosis     ▪ Vestibular
+ in most of cases but       ▪ Laboratory
+ helps to confirm it.       ▪ Radiological
+ Step-by-Step Workup
+• The HISTORY.
+• Provocative Testing:
+  ▪ Rotation-induced (RCT)
+  ▪ Positioning (Dix-Hallpike)
+  ▪ Orthostatic (Bedside Tilt)
+  ▪ Hyperventilation
+• Examination
+• Investigations:
+  ▪ Audiological
+  ▪ Vestibular (vHIT, VEMP, VNG, Posturography)
+  ▪ Radiological
+  ▪ Laboratory
+• Specialty Consultation
+Clinical Tests for Dizziness
+ Take Home Message:
+▪ Hearing is essential for   ▪ We hear/balance
+  Communication and            with our Brain not
+  Language                     with our ears.
+  development.
+                             ▪ PTA is the gold
+                               standard of
+▪ Balance is essential for
+                               Hearing evaluation.
+  keeping us upright,
+  walk without
+                             ▪ Tympanometry is
+  assistance & prevent
+                               important in hearing
+  injury/fall.
+                               assessment.
+   Take Home Message:
+▪ Dizziness is a            ▪ Clinical office tests
+  symptom caused by           are important.
+  many etiologies.
+                            ▪ Vestibular Tests are
+▪ Vertigo results from        to confirm diagnosis.
+  vestibular disorder.
+                            ▪ Reassurance,
+▪ History is the key in       treatment of the cause
+  diagnosis of dizziness.     and rehabilitation are
+                              main R modalities.
+Good Luck
+

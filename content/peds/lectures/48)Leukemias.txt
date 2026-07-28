@@ -1,0 +1,507 @@
+SOURCE: Semester 8\Pedo\Theoritical\PPT\48)Leukemias.pdf
+
+      CAR T- CELLS
+
+BY ASOCIATE PROF . MAHA YOUSSEF
+ HAEMATOLOGY ONCOLOGY UNIT
+     PAEDIATRIC DEPARTMENT
+     ALEXANDRIA UNIVERSITY.
+          Discovery of Leukemia
+• Craigie and Bennett described a case of suppuration
+  of the blood in 1845. Subsequently referred to the
+  disease as leukocythemia.
+• Rudolph Virchow, also in 1845, described a similar
+  case, but did not think this simply pus in the blood
+  and related it to simultaneous splenic enlargement.
+  Subsequently referred to the disease as Weisses Blut
+  (white blood),then suggested the term leukemia
+                   Definition
+•a clonal expansion and arrest at a specific stage of
+normal myeloid or lymphoid hematopoiesis.
+
+
+
+•Acute leukemias constitute 97% of all childhood
+leukemias.
+It consist of the following types:
+
+• Acute lymphoblastic leukemia (ALL) 75%
+• Acute myeloblastic leukemia (AML), also known
+  as acute non-lymphocytic leukemia (ANLL) 20%
+• Acute undifferentiated leukemia (AUL) < 0.5%
+• Acute mixed-lineage leukemia (AMLL).
+• Chronic myeloid leukemias constitute 3% of all
+  childhood leukemias and consist of:
+
+   Philadelphia chromosome positive (Ph1
+    positive)chronic myeloid leukemia.
+
+
+
+   Juvenile myelomonocytic leukemia (JMML).
+Characteristic             Acute leukamia     Chronic leukamia
+
+
+Onset                      Abrupt             Subtle
+
+Morbidity                  Months             Years
+
+Age                        All                Adult
+
+WBCs                       Variable           Elevated
+
+Predominant cells          Blasts and other   Mature
+                           immature
+                           white cells
+
+Anemia, thrombocytopenia   Present            Variable
+
+neutropinia                Present            Variable
+
+organomegaly               Mild               Marked
+INCIDENCE of Acute leukemia:
+
+ ALL: 3–4 cases per 100,000 white children,
+  2,500–3,000 children diagnosed in the USA
+  per year; AML: 500 new cases in the USA per
+  year.
+ Peak incidence between 2 and 5 years of age
+ Accounts for 25–30% of all childhood
+  cancers.
+ETIOLOGY:
+
+The etiology of acute leukemia is unknown. The
+  following factors are important in the
+  pathogenesis of leukemia:
+• Ionizing radiation.
+• Chemicals (e.g., benzene in AML).
+• Drugs (e.g., use of alkylating agents either
+  alone or in combination with radiation therapy
+  increases the risk of AML)
+• Genetic considerations:
+
+ Identical twins – If one twin develops leukemia
+ during the first 5 years of life the risk of the
+ second twin developing leukemia is 20%
+
+ Incidence of leukemia in siblings of leukemia
+ patient is four times greater than that of the
+ general population
+Chromosomal abnormalities:
+
+   Group              Risk      Time Interval
+
+
+   Trisomy 21 (Down   1 in 95   <10 years of age
+   syndrome)
+
+
+
+   Bloom syndrome     1 in 8    <30 years of age
+
+
+   Fanconi anemia     1 in 12   <16 years of age
+ Increased incidence with the following
+ genetically determined conditions:
+
+  Congenital agammaglobulinemia
+  Poland syndrome
+  Shwachman–Diamond syndrome
+  Ataxia telangiectasia
+  Neurofibromatosis
+  Diamond–Blackfan anemia
+  Kostmann disease
+  Bloom syndrome
+• Most cases of leukemia do not originate from
+  an inherited genetic predisposition but from
+  somatic genetic alterations.
+             Acute Leukemias:
+        Classification Systems
+
+• French-American-British (FAB):
+  – Used from 1970’s-2001
+• World Health Organization (WHO):
+  – Published 2001
+  – Revised version published in 2008
+            Acute Leukemias:
+         FAB Classification
+• Three types of lymphoblastic leukemias
+• Eight types of myeloid leukemias
+• Based on morphology & cytochemical
+  stains
+• Does not incorporate cytogenetics,
+  phenotype, molecular tests
+• Limited prognostic significance
+              Acute Leukemias:
+           WHO Classification
+• Incorporates all types of information about
+  leukemias:
+   – Immunophenotype
+   – Cytogenetics & molecular tests
+   – Clinical syndromes
+• Definite prognostic & treatment
+  significance
+ACUTE LYMPHOBLASTIC LEUKEMIA (ALL)
+CLINICAL FEATURES OF ACUTE LYMPHOBLASTIC
+LEUKEMIA (ALL):
+  A)General Systemic Effects:
+  1. Fever (60%).
+  2. Lassitude (50%).
+  3. Pallor (40%).
+B)Hematologic Effects Arising from Bone
+Marrow Invasion:
+ 1. Anemia: causing pallor, fatigability,
+   tachycardia and dyspnea.
+ 2. Neutropenia: causing fever, ulceration of
+   buccal mucosa and infection.
+ 3. Thrombocytopenia: causing petechiae,
+   purpura, easy bruisability, bleeding from
+   mucous membrane and sometimes internal
+   bleeding (e.g., intracranial hemorrhage).
+4. 1-2% of patients present initially
+   withpancytopenia and may be mistakenly
+   diagnosed as having aplastic anemia or bone
+   marrow failure (represents 5% of acquired aplastic
+   anemia) and finally develop acute leukemia. In
+   these cases the illness is characterized by:
+• Pancytopenia or single cytopenia
+• Hypocellular bone marrow
+• No hepatosplenomegaly
+• Diagnosis of leukemia 1–9 months after onset of
+   symptoms.
+        Clinical and Laboratory Presenting Features in
+                 Acute Lymphoblastic Leukemia
+Clinical and Laboratory Presenting Features   Percentage of Patients
+
+Symptoms and physical findings
+fever                                         61%
+Bleeding                                      48%
+Bone pain                                     23%
+lymphadenopathy                               50%
+Splenomegaly                                  63%
+hepatosplenomegaly                            68%
+Laboratory features
+Leukocyte count (mm3)
+<10,000                                       53%
+10,000-49,000                                 30%
+>50,000                                       17%
+Clinical and Laboratory Presenting Features       Percentage of Patients
+
+Hemoglobin (g/dl)
+<7.0                                              43%
+7.0 – 11.0                                        45%
+>11.0                                             12%
+Platelet count (mm3)
+<20,000                                           28%
+20,000 -99,000                                    47%
+>100,000                                          25%
+Lymphoblast morphology
+L1                                                84%
+L2                                                15%
+L3                                                1%
+
+From: Pizzo PA, Poplack DG. Principles and Practice of Pediatric Oncology. 5th ed. Philadelphia:
+Lippincott-Williams and Wilkins, 2006, with permission.
+C)Clinical Manifestations Arising from
+Lymphoid System Infiltration:
+1. Lymphadenopathy : sometimes presents
+   with bulky mediastinal lymphadenopathy
+   causing superior vena cava syndrome. More
+   common in T-cell leukemia in adolescents.
+
+2. Splenomegaly.
+
+3. Hepatomegaly.
+D)Clinical Manifestations of Extramedullary
+Invasion:
+A)Central Nervous System (CNS)Involvement:
+• This occurs in less than 5% of children with
+  ALL at initial diagnosis. It may present with
+  the following:
+
+1)Signs and symptoms of raised intracranial
+    pressure (e.g., headache, morning vomiting,
+    papilledema, bilateral sixth-nerve palsy)
+
+2) Signs and symptoms of parenchymal
+   involvement (e.g., focal neurologic signs such
+   as hemi paresis, cranial nerve palsies,
+   convulsions, cerebellar involvement – ataxia,
+   dysmetria, hypotonia, hyperflexia)
+3) Hypothalamic syndrome (polyphagia with excessive weight
+   gain, hirsutism and behavioral disturbances).
+
+4) Diabetes insipidus (posterior pituitary involvement).
+
+5)Chloromas (myeloid sarcoma)of the spinal cord (very
+  infrequent in ALL) : multiple, malignant, localized green
+  masses of abnormal cells, usually myeloblasts.
+• may present with back pain, leg pain, numbness, weakness,
+  Brown–Se´quard syndrome and bladder and bowel sphincter
+  problems.
+
+6) CNS hemorrhage:complication that occurs more frequently
+   in patients with AML than in ALL. It is caused by:
+   • Leukostasis in cerebral blood vessels, leading to leukothrombi,
+      infarcts and hemorrhage
+   • Thrombocytopenia and coagulopathy, contributing to CNS
+      hemorrhage.
+Genitourinary Tract Involvement
+A)Testicular Involvement
+1.Usually presents with painless enlargement of the testis.
+
+2. Occurs in 10–23% of boys during the course of the disease at a median
+    time of 13 months from diagnosis.
+
+3. Occult testicular involvement is recognized in 10–33% of boys undergoing
+    bilateral wedge biopsies.
+
+4. Risk factors for the development of testicular involvement include:
+     T-cell ALL
+     Leukocytosis at diagnosis (>20,000/mm3)
+     Presence of a mediastinal mass
+     Moderate to severe hepatosplenomegaly and lymphadenopathy
+     Thrombocytopenia (<30,000/mm3).
+
+B)Ovarian Involvement
+1. Occurs very rarely
+C)Renal Involvement
+1. Occasionally may present with hematuria,
+   hypertension and renal failure.
+
+2. Evaluated in many patients by
+  ultrasonography; renal involvement more
+  common in T-cell ALL or mature B-cell ALL.
+D)Gastrointestinal Involvement
+1. The gastrointestinal (GI) tract may be involved
+  in ALL. The most common manifestation is
+  bleeding.
+2. Leukemic infiltrates in the GI tract are usually
+  clinically silent until terminal stages when
+  necrotizing enteropathy might occur. The
+  most common site for this is the cecaum
+  leading to typhlitis .
+E)Bone and Joint Involvement
+• Bone pain is one of the initial symptoms in
+   25% of patients. It may result from:
+• direct leukemic infiltration of the
+   periosteum,
+• bone infarction,
+• or expansion of marrow cavity by leukemic
+   cells.
+• Radiologic changes occasionally seen
+   include:
+    Osteolytic lesions involving medullary cavity
+     and cortex
+    Transverse metaphyseal radiolucent bands
+    Transverse metaphyseal lines of increased
+     density (growth arrest lines)
+    Subperiosteal new bone formation.
+F)Skin Involvement
+Skin involvement occurs occasionally in neonatal
+  leukemia or AML.
+
+G)Cardiac Involvement
+One-half to two-thirds of patients have demonstrated
+  cardiac involvement at autopsy, although symptomatic
+  heart disease occurs in less than 5% of cases.
+Pathologic findings may include leukemic infiltrates and
+  hemorrhage of the myocardium or the pericardium.
+
+H)Lung Involvement
+Lung involvement is uncommon and may be due to
+  leukemic infiltrates or hemorrhage.
+Diagnosis of ALL :
+
+A)Laboratory Studies:
+1. Blood count
+a. Hemoglobin:
+   Moderate to marked reduction.
+   Normocytic; normochromic red cell morphology.
+   Low hemoglobin indicates longer duration of leukemia;
+    higher hemoglobin indicates a more rapidly proliferating
+    leukemia
+b. White blood cell count: Low, normal, or increased
+Diagnosis:
+A)Laboratory Studies:
+c. Blood smear:
+   Blasts are present on blood smear, Very few to none (in
+    patients with leukopenia).
+   When the white blood cell (WBC) count is greater than
+    10,000/mm3, blasts are usually abundant.
+   Eosinophilia is seen uncommonly in children with ALL.
+    20% of patients with AML have an increased number of
+    basophils.
+
+d. Thrombocytopenia: 92% of patients have platelet
+   counts below normal. Serious hemorrhage (GI or
+   intracranial) occurs at platelet counts less than
+   20,000/mm3.
+Diagnosis:
+A)Laboratory Studies:
+
+2. Bone marrow:
+    Bone marrow is usually replaced by 80–100% blasts.
+    Megakaryocytes are usually absent.
+    Leukemia must be suspected when the bone marrow contains
+     more than 5% blasts.
+    The hallmark of the diagnosis of acute leukemia is the blast cell,
+     a relatively undifferentiated cell with diffusely distributed
+     nuclear chromatin, one or more nucleoli and basophilic
+     cytoplasm.
+    Special bone marrow studies, which help in detailed cell
+     classification, include the following:
+        Histochemistry
+        Immunophenotyping
+        Cytogenetics.
+Classification of acute leukemia:
+
+• Acute leukemia can be classified based on:
+ morphologic characteristics ,
+ cytochemical features ,
+ immunologic characteristics,
+ cytogenetic and molecular characteristics (WHO)
+
+• Light microscopy, cytochemistry,
+  immunophenotyping and cytogenetics are
+  necessary studies to characterize leukemic
+  subtypes.
+Classification:
+
+Morphology:
+Light Microscopy:
+• Certain morphologic criteria have been
+  established to differentiate lymphoblasts from
+  myeloblasts . Acute lymphoblastic leukemia
+  can be further subclassified
+Morphologic Characteristic of Lymphoblasts
+and Myeloblasts:
+Characteristic          Lymphoblasts          Myeloblasts
+size                    10–20 μm              14–20 μm
+Nucleus
+• shape                 Round or oval         Round or oval
+• chromatin             Smooth, homogeneous   Spongy, loose
+• nucleoli              0–2 and indistinct    2–5 and distinct “punched-
+                                              out”
+• nuclear membrane      Smooth, round         Irregular
+• nuclear-cytoplasmic   high                  low
+ratio
+Cytoplasm
+• color                 blue                  Blue-gray
+• amount                Thin rim              More abundant
+• granule               Absent                Present
+• aure-rods             Absent                Present
+                      Immunophenotype
+                       distirbution of ALL
+
+
+
+
+             B-cell                          T-cell
+
+
+
+
+Pre-B cell               Mature B-cell
+FLT 3 mutations
+          Down Syndrome and AML:
+
+• Down syndrome children with AML, despite
+  having an increased frequency of M7
+  leukemia, have a markedly superior outcome
+  compared to children with non-Down
+  Syndrome AML. Down syndrome AML
+  patients usually present with
+a lower initial WBC,
+ no central nervous system involvement and
+ fewer cytogenetic abnormalities.
+Down Syndrome and AML:
+
+• These patients should be treated with less-
+  intensive chemotherapy regimens using
+  highdose cytarabine, reduced anthracycline
+  and reduced intrathecal therapy. Maintenance
+  therapy, cranial radiation and stem cell
+  transplantation are not required in the Down
+  syndrome AML patients.
+Down Syndrome and AML:
+
+• The remission rates are about 90% with event-
+  free survival approximating 70–80%. This may
+  be partially explained by the increased
+  sensitivity of Down syndrome blasts to
+  cytarabine because of the GATA1 mutation
+  (Erythroid transcription factor essential
+  for erythroid and megakaryocytic
+  development)seen in these patients.
+NEW ERA OF TREATMENT OF CANCER
+• For decades, the Foundations of cancer
+  treatment have been chemo , radiotherapy.
+• These continue to be critical mainstay of
+  treatment.
+• New categories of treatment have recently
+  helped to transform the options of treatment
+  for cancer patients.
+• IN 2000, emergence of targeted therapy as
+  IMATINIB, HERCEPTIN by killing cancer cells
+  through homingon specific molecular changes
+  seen in these cells.
+• Over the past decade , immunotherapy that
+  strengthen the power of the patient immune
+  system to attack tumors has rapidly become
+  what we call FIFTH PILLAR OF CANCER
+  TREATMENT.
+• These drugs have shown the ability to shrink
+  even eradicate tumors in some people.
+• Drugs are called immune check point
+  inhibitors.
+• Since 2017 6 CAR-T ells have been approved
+  by FDA , for treatment of
+• 1- blood cancers.
+• 2- lymphoma.
+• 3- multiple myeloma.
+       CAR-T cells is a living drug
+• It is equivalent of giving a patient a living drug.
+• As it name implies T-cells which help
+  orchestrate the immune response , directly kill
+  cells infected by pathogens which are the
+  backbone of CAR –T cell therapy.
+• Currently available CAR- T-cells therapies are
+  customized for each individual. They are made
+  by collecting T cells from the patient ,
+  reengineering them in labs to produce
+  proteins on their surface called CHIMERIC
+  ANTIGEN RECEPTORS.
+• Cars recognize .binds to specific proteins or
+  antigens on the surface of cancer cells.
+• These receptors are synthetic molecules, they
+  don’t exist naturally.
+• After revamped T-cellsare expanded to millions in
+  lab, they are reinfused into the patient.
+• I f all goes as planned , CAR T-cells will continue
+  to multiply in patient bodywith guidance from
+  engineered receptor, recognize, kill any cancer
+  cells that harbor or target Ag on their surfaces.
+  NEW TREATMENT OPTIONS WHERE
+           FEW EXISTED
+• The initial development of CAR therapies
+  focused on the most common cancer in
+  pediatrics which is ALL.
+• 2017 FIRST CAR-T cell approved by FDA for
+  relapsed ALL .
+          MAKING CART –cells
+• Each CAR bridges cell membrane part of
+  receptor located outside the cell , part in the
+  cell.
+• The part of CAR that extends from cell surface
+  is usu composed of fragments, domains which
+  binds to antigen on surface of tumor .
+• The internal part of CAR has signalling , co
+  stimulatory domains that transmit signals to
+  cell after receptor interacts with antigen.
+            DRAW BACKS
+• 1- cytokine release syndrome.(CRS)
+• 2-CONFUSION, SEIZURE LIKE ACTIVITY,
+  IMPAIRED SPEECH DT IMMUNE –EFFECTOR
+  CELL ASS, NEUROTOXICITY(CANS)
+

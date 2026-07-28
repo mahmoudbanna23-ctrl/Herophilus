@@ -1,0 +1,283 @@
+SOURCE: Semester 8\Pedo\Theoritical\PPT\diabetes mellitus for under grad_8acf29c9d51bcde47ca89846d49176b2.pdf
+
+             Diabetes Mellitus in children & adolescents
+
+
+
+Introduction / Overview
+      Diabetes mellitus is a chronic metabolic disorder characterized by
+       hyperglycemia due to impaired insulin secretion, action, or both.
+      It includes multiple subtypes, each with different causes, treatments, and
+       outcomes, making proper classification essential.
+      In children, type 1 diabetes mellitus is the most common form and usually
+       results from autoimmune destruction of pancreatic beta cells.
+
+      Diabetic ketoacidosis (DKA) is a life-threatening acute complication of
+       diabetes.
+
+Classification of Diabetes Mellitus
+1. Type 1 Diabetes Mellitus (T1DM)
+      Most common type in children and adolescents.
+
+      Caused by autoimmune destruction of pancreatic β-cells.
+
+      Results in absolute insulin deficiency.
+
+      Patients require lifelong insulin therapy.
+
+2. Type 2 Diabetes Mellitus (T2DM)
+      Caused by insulin resistance with relative insulin deficiency.
+
+      More common in obese adolescents.
+
+      Associated with family history, obesity, and sedentary lifestyle.
+
+3. Monogenic Diabetes
+Includes:
+
+       a. MODY (Maturity-Onset Diabetes of the Young): Caused by single gene
+       mutations affecting insulin secretion.
+
+       b. Neonatal Diabetes: Diabetes diagnosed before 6 months of age.it May be
+       transient or permanent.
+
+4. Secondary Diabetes
+• Due to endocrine disorders, pancreatic diseases, medications, or genetic
+    syndromes.
+    Category            Key Mechanism                  Important Examples
+                β-cell destruction → absolute     Autoimmune (most common),
+Type 1 Diabetes
+                       insulin deficiency                   Idiopathic
+                 Insulin resistance + relative
+Type 2 Diabetes                                     Obesity-related diabetes
+                       insulin deficiency
+  Monogenic      Single gene defect affecting    MODY (HNF1A, GCK), Neonatal
+   Diabetes             insulin secretion               DM (KCNJ11, INS)
+  Pancreatic
+                   Destruction of pancreas         Cystic fibrosis, Pancreatitis
+    Disease
+  Endocrine       Excess counter-regulatory             Cushing syndrome,
+   Disorders               hormones                      Hyperthyroidism
+ Drug-Induced Insulin resistance or ↓ secretion     Steroids, Antipsychotics
+    Genetic       Associated chromosomal
+                                                Turner syndrome, Down syndrome
+  Syndromes                disorders
+
+
+Epidemiology
+       T1DM = >90% of pediatric diabetes
+       T2DM : once rare in children, is now increasingly common, especially in high-
+        risk and certain ethnic populations, due to obesity, lifestyle, and genetic
+        factors
+       Monogenic diabetes is rare but underdiagnosed
+
+
+
+Etiology and Pathophysiology of Type 1 Diabetes Mellitus
+T1DM results from autoimmune destruction of pancreatic β-cells in genetically
+   susceptible individuals (especially HLA genes).
+
+Environmental factors such as viral infections( as enterovirus) may trigger the
+   autoimmune process.
+
+Progressive β-cell destruction leads to absolute insulin deficiency.
+
+Insulin deficiency causes: decreased glucose utilization by tissues and increased
+   gluconeogenesis.
+
+Increased counter-regulatory hormones (glucagon, cortisol, catecholamines, growth
+   hormone) worsen hyperglycemia.
+
+Increased lipolysis leads to ketone body formation and metabolic acidosis.
+
+   Protein breakdown and weight loss.
+
+Osmotic diuresis results in dehydration and electrolyte loss.
+Clinical Presentation of Type 1 Diabetes Mellitus:
+Classic symptoms:
+
+     Polyuria
+     Polydipsia
+     Polyphagia
+     Weight loss
+     Fatigue
+     Nocturnal enuresis
+     Abdominal Pain
+     DKA could be the first presentation :Vomiting, Abdominal pain, Kussmaul
+      breathing, Dehydration, Altered consciousness
+
+Diagnostic Criteria
+
+     Diagnosis is confirmed by ANY ONE:
+     Random glucose ≥ 200 mg/dL + symptoms
+     Fasting glucose ≥ 126 mg/dL
+     OGTT ≥ 200 mg/dL
+     HbA1c ≥ 6.5%
+
+Management of Type 1 Diabetes Mellitus
+
+     Insulin therapy is essential.
+     Basal-bolus regimen is preferred.
+     Carbohydrate counting and nutritional education are important.
+      Regular exercise is encouraged.
+      Blood glucose monitoring and HbA1c monitoring are required.
+
+Insulin Regimens
+
+      Intensive insulin therapy (basal–bolus regimen), either by multiple daily
+       injections or insulin pumps, aiming to mimic normal pancreatic insulin
+       secretion with basal and meal-time insulin is the gold standard regimen.
+      Premix insulin regimen using NPH and regular soluble insulin should not be
+       considered a best practice treatment for T1DM.
+      Newer insulin analogs and technologies (e.g., continuous glucose monitoring
+       (CGM), insulin pumps) improve glycemic control and reduce complications.
+      Insulin needs in children vary with age, growth, puberty, activity, and illness,
+       requiring frequent dose adjustments and individualized care.
+
+Types of Insulin
+
+Bolus (Meal-time) Insulin
+
+      Rapid-acting insulin: Lispro, Aspart, Glulisine.
+      Given before meals (10–15 min)
+      50-70% of the total daily insulin dose.
+
+      Controls: Post-meal glucose rise
+
+Basal Insulin:
+
+      Long-acting (Given once or twice daily): Glargine, Detemir . or Ultra-long
+       acting (Given once daily): Degludec.
+      30–50% of the total daily insulin dose.
+Management of Type 2 Diabetes Mellitus
+
+     Lifestyle modification (Healthy diet (reduce calories, balanced meals), Weight
+      reduction, Regular physical activity, Limit sedentary behavior (screen time)
+     Pharmacological therapy : Metformin (First-line drug in most patients), it
+      Improves insulin sensitivity, Insulin Therapy may be indicated if severe
+      hyperglycemia , ketosis or DKA
+     Education of patient and family is essential.
+     Regular blood glucose monitoring
+     Management of Comorbidities : Hypertension , Dyslipidemia and Obesity
+Prediabetes:
+Definition: Intermediate state before diabetes
+
+Criteria
+
+      Fasting: 100–125 mg/dL
+      OGTT: 140–199 mg/dL
+      HbA1c: 5.7–6.4%
+
+Importance
+
+      High risk of progression
+      Preventable with lifestyle
+
+Complications of T1Dm:
+      Acute complications : DKA and Hypoglycemia
+      Chronic complications : microvascular complications (nephropathy ,
+       retinopathy , neuropathy) and macro vascular complications.
+
+       2. chronic complications:
+Follow-up & screening in type 1 diabetes mellitus:
+
+Routine Monitoring: Regular follow-up visits are essential
+          Monitor: Height, weight, BMI, Growth velocity, Pubertal development and
+           Assessment glycemic control (HbA1c/ 3 months, glucose logs)
+          Screening of associated comorbidities:
+
+               a. Thyroid Disease Screening: At diagnosis and every 2 years:TSH and
+                  Anti-thyroid antibodies
+               b. Celiac Disease Screening: At diagnosis (or within first year) and
+                  Every 2–5 years thereafter by TTG-IgA (first-line test)
+               c. Other Autoimmune Diseases: Addison’s disease, Autoimmune
+                  gastritis
+
+          Injection Site Care each visit: examine for Lipohypertrophy and
+           Lipoatrophy and Educate on: Proper injection technique, Rotation of sites
+           and Avoid reuse of needles.
+
+
+
+Clinical Pearls
+          T1DM is the most common form of diabetes in children and adolescents.
+
+          Polyuria, polydipsia, and weight loss are the classical presenting
+           symptoms of diabetes mellitus.
+
+          Always check blood glucose in any ill child presenting with dehydration,
+           vomiting, abdominal pain, or altered consciousness.
+
+          Insulin therapy is mandatory in type 1 diabetes mellitus.
+
+          Basal-bolus insulin regimens provide better glycemic control and greater
+           flexibility than premixed insulin regimens.
+
+          DKA may be the first presentation of type 1 diabetes.
+
+Clinical Case
+
+A 12-year-old boy presents with polyuria, polydipsia, weight loss, vomiting, abdominal pain,
+and deep rapid breathing. On examination, he is dehydrated with Kussmaul respiration and
+acetone odor of the breath. Blood glucose is 480 mg/dL, venous pH is 7.1, bicarbonate is 8
+mmol/L, and ketones are strongly positive.
+Questions and Answers
+
+1. What is the most likely diagnosis?
+
+   The child has Newly diagnosed type 1 diabetes mellitus presenting with DKA
+
+2. How severe is the DKA?
+
+   This is moderate DKA because: pH = 7.1 and bicarbonate = 8 mmol/L
+
+3. What are the important clinical signs suggesting DKA?
+
+   Dehydration, Kussmaul breathing, Vomiting, Abdominal pain, Acetone breath odor ,
+    Weight loss and disturbed level of conciouseness
+
+4. What is the first step in management?
+
+   Initial management includes: Airway, breathing, circulation assessment
+
+   Start isotonic fluid resuscitation with 0.9% saline
+
+5. When should insulin therapy be started?
+
+   Intravenous insulin infusion should be started after initial fluid therapy, usually after the
+    first hour.
+
+6. What is the most serious complication to monitor for?
+
+   Cerebral edema is the most serious and life-threatening complication of pediatric DKA.
+
+Self-Assessment Questions
+    1. What are the three diagnostic criteria of DKA?
+
+    2. Why is potassium replacement important in DKA?
+
+    3. What is the most feared complication of pediatric DKA?
+
+    4. Why should insulin bolus be avoided?
+
+References
+
+    1. ISPAD Clinical Practice Consensus Guidelines 2022: Definition, epidemiology, and
+       classification of diabetes in children and adolescents
+
+    2. International Society for Pediatric and Adolescent Diabetes Clinical Practice
+       Consensus Guidelines 2024: Insulin Treatment in Children and Adolescents with
+       Diabetes.
+
+    3. American Diabetes Association Standards of Care in Diabetes 2024: Classification
+       and Diagnosis of Diabetes.
+4. Nelson Textbook of Pediatrics.
+
+5. International Society for Pediatric and Adolescent Diabetes Clinical Practice
+   Consensus Guidelines 2022: Diabetic Ketoacidosis and Hyperglycemic Hyperosmolar
+   State.
+
+6. International Society for Pediatric and Adolescent Diabetes Clinical Practice
+   Consensus Guidelines 2022: Microvascular and macrovascular complications in
+   children and adolescents with diabetes
+

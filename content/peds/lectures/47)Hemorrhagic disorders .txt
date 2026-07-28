@@ -1,0 +1,749 @@
+SOURCE: Semester 8\Pedo\Theoritical\PPT\47)Hemorrhagic disorders .pdf
+
+HAEMORRHAGIC DISORDERS
+A.PROF NEHAD HASSANEIN
+Objectives
+ Distinguish the useful screening tests of bleeding
+ disorders
+ Differentiate between the clinical features and treatment
+ of hemophilia and von Willebrand disease
+ Identify the acquired disorders of coagulation
+ Recognize immune thrombocytopenic purpura
+ Classify causes of purpura in children
+ Identify disseminated intravascular coagulation in children
+In Case if there is an Endothelial Injury
+(Bleeding must be prevented at site of injury)
+Flow must be Maintained
+
+
+
+
+          drmsaiem
+                HEMOSTASIS
+
+
+ Definition
+Hemostasis: derives from the Greek meaning “The
+stoppage of blood flow”.
+HEMOSTASIS
+
+
+  Hemostasis can be divided into two stages:
+          Primary and Secondary.
+  Primary hemostasis includes the platelet and vascular
+  response to vessel injury.
+
+  Secondary hemostasis includes the coagulation factors
+  response to such injury.
+
+  Together, platelets, vessels, and coagulation factors
+  combine to stop bleeding and allow for vessel repair
+  through formation of a stable fibrin-platelet plug at
+  the site of injury.
+   PLATELET ACTIVATION
+
+
+
+
+Resting                     vWF
+Platelets        Platelet
+                Adhesion
+PLATELET ACTIVATION
+
+
+
+
+                   II       IIa
+               X       Xa
+               VIIa-
+   Platelet     TF
+  Activation
+Platelet Release
+
+
+        TxA2, ADP,
+        Serotonin,
+        Fibrinogen,
+      Thrombospondin
+
+
+
+
+                   II       IIa
+              X        Xa
+              VIIa-
+               TF
+PLATELET PLUG FORMATION
+ COAGULATION CASCADE
+                                               EXTRINSIC PATHWAY
+
+
+    Prothrombin                                                        FVII
+     Time (PT)                                             TF
+
+
+                                           FVIIa
+                                                            Ca+2
+
+
+
+
+                                   VIIa/TF
+Middle Components            FX   Ca+2
+
+                                         FXa        Ca+2
+
+                        T
+                    V       Va                 Va/Xa/PL
+                                          PT         Ca+2
+
+
+Common Pathway
+                                                                   T
+                                               FG
+                                                                        F
+            COAGULATION CASCADE
+ INTRINSIC PATHWAY
+FXII
+                    FXIIa             Surface Active
+                                       Components
+                                                                               aPTT
+   FXI             HMWK
+
+                   FXIa
+             FIX           Ca+2
+
+                                  FIXa
+              T                                        Ca+2
+
+
+VIII                  VIIIa                              VIIIa/IXa/PL
+       Middle Components                                       FX       Ca+2
+
+                                                                               FXa        Ca+2
+
+                                               T
+                                  V                           Va                     Va/Xa/PL
+                                                                                PT         Ca+2
+
+
+       Common Pathway
+                                                                                                  T
+                                                                                     FG
+                                                                                                      F
+    COAGULATION CASCADE
+                     Common Pathway
+
+
+    IXa/VIIIa/PL              VIIa/TF/PL
+    FX                         Ca+2
+                                      FX
+             Ca+2
+
+V         Va +        F Xa                  Xa/Va/PL
+
+                                      PT    Ca+2
+     Prothrombinase Complex
+                                                   T
+                               Fibrinogen
+                                                    Fibrin
+                                                   monomer
+      Haemorrhagic Disorders
+
+
+
+Disorders characterized by abnormal
+bleeding tendency due to hemostatic
+defect
+    Haemostatic mechanisms
+
+I. Vascular
+
+   II. Platelet
+
+       III. Coagulation factors
+
+          IV.Coagulation inhibitors
+
+                  V.Fibrinolysis
+             Haemostatic mechanisms
+
+
+ I. Vascular
+
+• Local vasoconstriction.
+• Initiation of intrinsic pathway (factor XII).
+• Activation of extrinsic pathway (tissue thromboplastin).
+• Promotion of platelet adhesion & aggregation (release of
+  vWF & ADP).
+           Haemostatic mechanisms
+
+
+ II. Platelet
+
+• Platelet adhesion
+• Aggregation (release of ADP, release of thromboxane A2).
+             Haemostatic mechanisms
+
+
+     III. Coagulation factors
+Three steps
+
+I       ends by activation of factor X
+II      active thrombin
+III     fibrinogen           fibrin
+      Haemostatic mechanisms
+
+
+IV. Coagulation inhibitors
+      Haemostatic mechanisms
+
+
+V.Fibrinolysis
+                   Haemostatic mechanisms
+
+     Intrinsic                                         Extrinsic
+
+      XII                                  Tissue thromboplastin
+              XI
+                   IX
+    PTT
+                        VIII                     VII
+(25-40 sec)
+                                      X                      PT
+                                                         (11-14 sec)
+                                      V
+                            TT
+                        (15-20 sec)   II
+
+                                      I
+                Haemorrhagic Disorders
+                         Classification
+
+             Bleeding                Coagulation diseases
+ Platelet               Vascular    Hereditary    Acquired
+Thrombocytopenia
+
+Platelet dysfunction
+              Haemorrhagic Disorders
+                       Classification
+
+           Bleeding                Coagulation diseases
+ Platelet             Vascular    Hereditary    Acquired
+Thrombocytopenia
+            Haemorrhagic Disorders
+                THROMBOCYTOPENIA
+
+       INCREASED PLATELET DESTRUCTION
+    IMMUNE                NON IMMUNE
+      ITP                  HEMOLYTIC UREMIC SYNDROME
+      SLE                               DIC
+                                HYPERSPLENISM
+       IMPAIRED PLATELET PRODUCTION
+   CONGENITAL                ACQUIRED
+  FANCONI ANEMIA                 APLASTIC ANEMIA
+WISKOTT-ALDRICH SYNDROME        MARROW INFILTRATION
+                                  DRUG INDUCED
+              Haemorrhagic Disorders
+                        Classification
+
+       Bleeding                     Coagulation diseases
+Platelet        Vascular           Hereditary    Acquired
+
+Thromboasthenia
+    Inherited
+            Glanzman
+            von-willebrand
+    Acquired
+            Drugs
+            Uremia
+            Haemorrhagic Disorders
+                     Classification
+
+       Bleeding                  Coagulation diseases
+Platelet      Vascular          Hereditary    Acquired
+
+            Hereditary
+            Haemorrhagic Disorders
+                     Classification
+
+       Bleeding                      Coagulation diseases
+Platelet      Vascular               Hereditary   Acquired
+
+            Acquired
+                   Vasculitis
+                   Metabolic
+                   Infection (SBE)
+                   Collagenic
+                   Scurvey
+            Haemorrhagic Disorders
+                    Classification
+
+       Bleeding                 Coagulation diseases
+Platelet      Vascular         Hereditary       Acquired
+
+                                 Haemophilias
+                                       A
+                                       B
+                                       C
+            Haemorrhagic Disorders
+                    Classification
+
+       Bleeding                 Coagulation diseases
+Platelet      Vascular         Hereditary     Acquired
+
+                                            -DIC
+                                            -Hgic disease of
+                                            newborn
+                                            -Liver disease
+                                            -anticoagulants
+       Tests for coagulation & bleeding
+
+1. CBC
+2. Platelet count
+3. Platelet function
+4. T.T. (15-20 sec)
+5. PT (12-14 sec)
+6. PTT (24-40 sec)
+7. QUANTITATIVE FIBRINOGEN ASSAY
+8. D-DIMERS
+HEMORRHAGIC DISORDERS
+Immune thrombocytopenic
+purpura
+Definition:
+ Autoimmune destruction
+ of platelets by IgG
+ autoantibodies causing
+ reduced platelet count and
+ increased megakaryocytes
+ with no budding in the
+ bone marrow
+ Abnormal autoantibodies,
+ usually (IgG) against one or more
+ platelet membrane glycoproteins
+ resulting in
+ circulating autoantibody-coated
+ platelets ,recognized by Fc
+ receptor on splenic macrophages
+ ,phagocytosed and destroyed .
+
+
+
+The spleen is the key organ in the
+pathophysiology of ITP ,
+• the site of autoantibody production (white pulp)
+• the site of phagocytosis (red pulp).
+Etiology:-
+• The cause of ITP remains unknown in most cases, but recent
+  history of viral infection EBV, varicella virus, CMV, rubella
+  virus, or hepatitis virus (A, B, or C).
+• In children; mostly it’s an acute disease and resolves
+  spontaneously within 1-6 weeks .
+
+
+Epidemiology:-
+  ❖Sex :- Males more than females
+  ❖Age :- Any age Peak 1-6 years
+Classification
+• • Newly diagnosed ITP
+• ≤3 months from diagnosis
+• • Persistent ITP
+• 3–12 months from diagnosis, including:
+• Patients not reaching spontaneous remission
+• Patients failing to maintain Complete Remission to therapy
+• • Chronic ITP
+• >12 months from diagnosis
+Clinical presentation:-
+➢ History of preceding viral infection 1-4 weeks before onset of
+  thrombocytopenia.
+
+➢ The classical presentation is sudden onset of petechiae and purpura
+  in previously healthy child.
+
+➢ Bleeding symptoms :
+❖Epistaxis
+❖Bleeding gums
+❖Easily bruising
+❖Very rarely intracranial hemorrhage (ICH): headache, nausea,
+  vomiting, lethargy, irritability, decreased consciousness or
+  neurological symptoms.
+➢ Normal otherwise physical examination; presence of HSM or bone
+  or joint pain suggests another diagnosis.
+Laboratory investigations:-
+✓ CBC :- isolated thrombocytopenia , normal platelet shape
+✓ The peripheral smear may show large platelets in acute ITP
+✓ Bone marrow aspirate and biopsy:-
+   • Not recommended in children with typical ITP.
+   • Done if no response to treatment for > 6 months ,
+      associated with another cytopenia .
+   • Normal cellularity of myeloid and erythroid cells with
+      normal or increased number of megakaryocytes.
+✓ Other lab inv should be done to exclude other causes of
+  thrombocytopenia (eg, ANA to exclude SLE, Coombs test to
+  exclude Evan’s syndrome).
+Management
+• First-line treatment options in newly diagnosed patients
+• Wait and Watch (irrespective of platelet count)
+• Corticosteroids (short course: prednisone)
+• IVIg (single dose, alternative to corticosteroid)
+• IV anti-D$ (for Rh+ non-splenectomized patients)
+• Treatment options in non-responders to first-line, or in
+  persistent/chronic ITP*
+• TPO-RA (Romiplostim, Eltrombopag)
+• Rituximab (in patients failing first-line treatment or
+splenectomy)
+• Splenectomy should be delayed by ≥12 months (may be given
+when unresponsive to corticosteroids, IVIg, anti-D, and/or in
+those who have a need for improved quality of life)
+Management
+ Management of newly diagnosed ITP in children is based
+ largely on the severity of bleeding, risk factors, degree of
+ thrombocytopenia .
+ Observe and wait? --> Mild ITP
+ Consider steroids? --> Moderate ITP
+ Second line therapy? If symptoms persist >12 months or
+ relapse after first line treatment
+ Rituximab
+ Thrombopoietin receptor agonists
+Management
+  Mild cases (platelet count > 20,000, no intracranial or
+  mucous membrane bleeding):
+• Observation and follow up and avoidance of trauma as
+  most children with acute ITP do not require treatment,
+  and thrombocytopenia resolves spontaneously
+Management
+Symptomatic patient (= active bleeding)
+
+ Corticosteroids (oral Prednisone)
+• Intravenous immunoglobulin (IVIG) are the second choice
+  when a rapid increase in platelet count is important.
+• IV Anti D in Rh positive patients
+• Platelet transfusion: temporary effect in cases of severe
+  bleeding
+Treatment of chronic ITP
+• Treatment of chronic, refractory ITP may introduce risks of toxicity
+  from medications that are comparable in severity to the risks of
+  untreated thrombocytopenia. These treatments also may impact
+  adversely on the patient's quality of life
+
+ 1- Thrombopoietin receptor agonist (2nd Line) Romiplostim,
+ Eltrombopag.
+
+ 2- Immunosuppressive therapy (Rituximab, Azathioprine (AZA),
+ Cyclosporine, Mycophenolate mofetil (MMF)
+
+ 3- Splenectomy very rarely indicated in pediatric patients being the
+ last option if not responding to medical treatment
+ Henoch-Schonlein purpura
+Also known as IgA vasculitis is a disorder that causes the small blood vessels
+in your skin, joints, intestines and kidneys to become inflamed and bleed.
+he most striking feature of this form of vasculitis is a purplish rash, typically on
+the lower legs and buttocks.
+Symptoms
+
+ The four main characteristics of Henoch-Schonlein purpura include:
+
+• Rash (purpura) : Reddish-purple spots that look like bruises develop on
+  the buttocks, legs and feet. The rash can also appear on the arms, face
+  and trunk and may be worse in areas of pressure .
+
+• Swollen, sore joint : People with Henoch-Schonlein purpura often have
+  pain and swelling around the joints — mainly in the knees and ankles.
+  Joint pain sometimes precedes the classical rash by one or two weeks.
+
+• Digestive tract symptoms : Many children with Henoch-Schonlein
+  purpura develop belly pain, nausea, vomiting and bloody stools. These
+  symptoms sometimes occur before the rash appears.
+
+• Kidney involvement : Henoch-Schonlein purpura can also affect the
+  kidneys. In most cases, this shows up as protein or blood in the urine,
+  which you may not even know is there unless you have a urine test done.
+Histopathology
+ Renal biopsy is the
+ most definitive tool
+ to diagnose both
+ IgAV with nephritis
+ and IgA
+ nephropathy. Both
+ are likely to show
+ mesangial IgA
+ deposits. IgAV with
+ nephritis is more
+ likely to show
+ capillary and
+ subendothelial IgA
+ deposits and
+ neutrophilic
+ infiltration.
+Complications
+The most serious complication of Henoch-Schonlein
+purpura is kidney damage. This risk is greater in adults
+than in children. Occasionally the damage is severe
+enough that dialysis or a kidney transplant is needed.
+
+Bowel obstruction In rare cases, Henoch-Schonlein
+purpura can cause intussusception — a condition in
+which a section of the bowel folds into itself like a
+telescope, which prevents matter from moving through
+the bowel.
+Treatment / Management
+
+Supportive and Symptomatic Care
+
+   Rehydration with intravenous (IV) fluids
+   Pain management
+   Wound care for ulcerative skin lesions
+
+Management of IgA Vasculitis Nephritis
+
+   Angiotensin-converting enzyme inhibitors
+   Corticosteroids
+   Plasmapheresis or plasma exchange
+   Immunosuppressants
+Haemophilia A
+  X- linked recessive
+• Composition:
+                        FACTOR     Ag      Procoagulant
+                          VIII   VIII-Ag      VIII-c
+
+ In haemophilia A VIII Ag        normal
+             VIII c
+HAEMOPHILIA A
+• Classification:
+           severe      0- 1% activity
+           moderate 1- 5%
+           mild       5-25%
+           carrier female 50- 60%
+ HAEMOPHILIA A
+• CLINICAL:
+  Male + family history
+  Newborn bleeding [ umbilicus, circumcision, I.C Hge ]
+  Infants and children:
+   * Ecchymosis
+    * I.C Hge
+    * Haemarthrosis
+    * Intramuscular haematomas
+    * Bleeding from mucous membranes& GIT bleeding
+    * Haematuria
+    * Other sites { intraocular, retroperitoneal}
+ HAEMOPHILIA A
+• LAB:
+  PTT prolonged {N 25- 45 sec }
+  PT normal
+  Factor VIII reduced
+  Prenatal diagnosis using chorionic villous biopsy
+  Genetic counselling
+HAEMOPHILIA A
+• Treatment:
+1- prevention:
+  Avoidance of trauma
+  Avoid IM injection
+  Avoid surgery
+  Non- violent exercise
+  Avoid aspirin
+2- prevention of blood born infections by:
+  Proper screening
+  Immunization HBV
+HAEMOPHILIA A
+ 3- Education & psychologic rehabilitation
+ 4- Replacement therapy
+ A- plasma
+ B- cryoprecipitate
+ C- factor VIII concentrates
+HAEMOPHILIA A
+  Factor VIII concentrates: dose:
+  Haemarthrosis 25 unit/ kg/ 12 hr
+  Hematuria & GIT 50 unit/ kg/ 12 hr
+  CNS bleeding       75 unit/ kg/ 8 hr
+• Side effects:
+ * Isoimmunization         → hemolysis[ anti A& B]
+ * Infection [AIDS, Hepatitis B & C]
+  * Factor VIII inhibitors
+HAEMOPHILIA A
+5- local measures: cold compresses
+
+6- drugs:   Epsilon aminocaproic acid
+
+7- DDAVP ( Desmopressin) in mild and moderate
+cases
+HAEMOPHILIA A
+• 8-Treatment of inhibitors:
+*High doses
+*Exchange transfusion or plasma pheresis
+*Factor VII concentrates
+*Activated prothrombin complex concentrates (FEIBA)
+*Hemlibra –bispecific factor IX and factor X directed
+antibody designed to bring them together
+*ITI
+                     Emicizumab
+
+Emicizumab is a subcutaneous humanized bispecific IgG4
+monoclonal antibody that mimics a key function of activated FVIII
+(FVIIIa): bridging FIXa and the FX zymogen to accelerate
+activation of the latter.
+The antibody recognizes FIX/IXa with one Fab arm and FX/Xa
+with the other.
+Emicizumab is not recognized by FVIII-neutralizing allo inhibitory
+antibodies, so it remains effective in their presence and is now
+licensed for bleed prophylaxis in hemophilia A patients, both with
+and without FVIII inhibitors.
+                              ITI
+
+Frequent administration of FVIII concentrate to induce immune
+tolerance to exogenous FVIII.
+
+The goals of ITI are an undetectable inhibitor titer, restoring the
+ability to treat bleeds with FVIII concentrates.
+HAEMOPHILIA B ( Christmas
+disease)
+  15 % of cases
+  Mild x- linked recessive disease
+  Lab. Like haemophilia A
+ Treatment factor IX concentrates and plasma
+HAEMOPHILIA C
+Mild autosomal dominant disease
+VON-WILLEBRAND DISEASE
+ The most common inherited bleeding disorder affecting
+ 0.1 - 1% of the population.
+  Caused by a deficiency (either quantitative or functional)
+ in von Willebrand Factor (vWF).
+ Affects males and females
+VON-WILLEBRAND DISEASE
+ Characterised by easy bruising, bleeding from mucous
+ membranes (particularly epistaxis, oral mucosa,
+ menorrhagia) and post-op bleeding.
+ Role of vWF:
+   Mediates platelet adhesion to damaged endothelium
+   Carrier protein for factor VIII
+   Essential for proper clotting
+Types of VWD
+ Type 1: Partial quantitative deficiency (most common)
+ Type 2: Qualitative defect (subtypes: 2A, 2B, 2M, 2N)
+ Type 3: complete deficiency (most severe)
+VWD type I
+ VWD type I causes a mild to moderate quantitative
+ deficiency of vWF (ie, about 20-50% of normal levels).
+ type I is usually inherited in autosomal dominant fashion
+ the most common type, accounting for 60–80% of all
+ VWD patients.
+ Typical symptoms include mucosal bleeding, such as
+ epistaxis and menorrhagia, as well as easy bruising and
+ potentially surgical bleeding.
+ Diagnostic guidelines use a VWF level, as measured by
+ the VWF antigen assay
+VWD type II
+ vWD type II is due to qualitative vWF abnormalities and is
+ subdivided into types IIA, IIB, IIN, and IIM.
+ vWD type IIA, the most common qualitative abnormality
+ of vWF, is associated with selective loss of large and
+ medium-sized multimers.
+VWD type III
+ Patients with vWD type III, a severe, quantitative
+ deficiency associated with very little or no detectable
+ plasma or platelet vWF, have a profound bleeding
+ disorder.
+ vWD type III appears to result from the inheritance of a
+ mutant vWF gene from both parents.
+Diagnosis
+ Personal and family bleeding history
+ Laboratory tests:
+ vWF antigen
+ Ristocetin cofactor activity (vWF:RCo)
+ Factor VIII levels
+ Multimer analysis (for type 2)
+Management
+ Antifibrinolytics (Tranexamic acid)Often helpful for
+ mucosal bleeding (most common form of bleeding) -
+ mouth, epistaxis, menorrhagia. May be given alone or as
+ adjunct therapy to Desmopressin/factor concentrate
+ Desmopressin (DDAVP) for Type 1 (stimulates vWF
+ release)
+ vWF/factor VIII concentrates for more severe types
+ Hormonal therapy for menstrual bleeding in teens
+Prognosis
+ Most children lead normal lives with proper management
+ Regular follow-up with hematologist
+ Monitoring for complications like anemia
+                         VWD             Hemophilia
+   symptoms        Bruising, epistaxis   Joint& muscle
+                                            bleeding
+      sex           Males=females            males
+Abnormal protein          VWF             Factor VIII
+
+  chromosome            Chr 12               X chr
+   inhibitors             rare               25%
+ Bleeding time         Abnormal             normal
+
+
+      PTT                N or ↑                ↑
+  Factor VIII       ↓ or borderline            ↓
+    VWF Ag            ↓ or absent              N
+D.I.C
+      Wide spread deposition of fibrin and microthrombi
+
+
+
+
+  Consumption of       Tissue ischemia        Secondary
+ coagulation factors      & necrosis          fibrinolysis
+
+
+
+
+      bleeding                                   bleeding
+DIC
+• Etiology
+ clinical state that occurs in a variety of diseases:
+* Hypoxia
+* Acidosis
+* endotoxaemia
+* Snake bite
+* Incompatible blood transfusion
+* Promyelocytic leukemia
+* Malignancy
+* Renal vein thrombosis
+* Giant haemangioma
+D.I.C
+                      DIC   Vit K deficiency
+
+    Bleeding time
+                       p           n
+        PTT            p           p
+        PT             p           p
+        TT             p           n
+  Platelet count      ↓↓           n
+        FDP           +            -
+   fibrinogen         ↓↓           n
+ Burr& helmet cells
+                      ++           -
+D.I.C
+• D- dimer:
+ new Ag that is formed during the process of digestion of
+  fibrin, characteristic of DIC.
+   clinical picture:
+1- clinical picture of the underlying disease
+2- clinical picture of bleeding ( GIT, pulmonary Hge,
+  petechiae, hematuria)
+3- clinical picture of thrombosis and necrosis (convulsion,
+  gangrene, renal failure)
+4- clinical picture of intravascular hemolysis
+  (microangiopathic hemolytic anemia)
+DIC
+•Treatment:
+1- control the original disease usually sepsis
+2- blood components – plasma
+                _ platelet transfusion
+                _ cryoprecipitate
+3- Heparin in purpura fulminans
+4- exchange transfusion in newborn
+5-Antithrombin and protein C concentrates.
+References:
+ Fish JD, Lipton JM, Lanzkowsky P. SPEC – Lanzkowsky's
+ Manual of Pediatric Hematology and Oncology, 7th
+ Edition, 12-Month Access, eBook: Elsevier Science; 2021.
+ Chakravorty S, Roberts IAG. Haematological disorders. In:
+ Lissauer T, Carroll W, editors. Illustrated Textbook of
+ Paediatrics. 6th ed. London: Elsevier; 2022. p. 403-423.
+ Madkour AA. Madkour's Essentials of Pediatrics. 16th ed:
+ Ayad Press, Alexandria; 2017.
+

@@ -1,0 +1,349 @@
+SOURCE: Semester 8\Neuro\Theoritical\PPT\L6) Peripheral neuropathy.pdf
+
+‫بسم هللا الرحمن‬
+   ‫الرحيم‬
+Peripheral Neuropathies
+DR Doaa Elsalamawy
+Professor of neuropsychiatry
+Faculty of medicine Alexandria
+university
+
+    Doaa.Elsalamawy@gmail.com
+ILOs:
+By the end of this session, the students
+should be able to:
+-Identify different types of peripheral
+neuropathy.
+-Understands clinical picture of
+Gullian Barre syndrome
+-know possible causes of Gullian Barre
+-Discuss diagnosis and managements
+This Photo by Unknown Author is licensed under CC BY
+• Peripheral neuropathy and polyneuropathy
+• terms that describe syndromes resulting from
+    diffuse lesions of peripheral nerves, usually
+    manifested by weakness, sensory loss, pain, and
+    autonomic dysfunction.
+• Mononeuropathy
+• indicates a disorder of a single nerve.
+ Mononeuropathy multiplex signifies focal
+    involvement of two or more nerves.
+•
+• Symptoms and signs
+• Symptoms of polyneuropathy include acral (distal)
+ pain, paresthesias, weakness, and sensory loss and may
+ be sharp or burning. Paresthesias are usually described
+ as numbness tingling, buzzing, stinging, burning. Lack
+ of pain perception may result in repeated traumatic
+ injuries with degeneration of joints (arthropathy or
+ Charcot joints).
+• Weakness is greatest in distal limb
+ muscles in most neuropathies;
+• there may be paralysis of the intrinsic
+ foot and hand muscles with foot drop or
+ wrist-drop.
+• Tendon reflexes are often lost, especially
+ in demyelinating neuropathy
+•      In severe polyneuropathy, the patient
+    may become quadriplegic and respirator
+    dependent. The cranial nerves may be
+    affected, particularly in GBS and
+    diphtheritic neuropathy. Cutaneous
+    sensory loss appears in a stocking and
+    glove distribution. All modes of sensation
+    may be affected.
+• Involvement of autonomic nerves
+ may cause miosis (small pupil), Adie
+ pupils, anhidrosis (impaired sweating),
+ orthostatic hypotension, sphincter
+ disturbance, GI dysmotility,
+ impotence, and vasomotor
+ abnormalities.
+• Table (1): Neuropathy
+Diagnosis and Laboratory
+         Tests*.
+ Cause or Diagnosis       Manifestations     Laboratory Tests
+
+Vitamin               S, SM, SYM           Vitamins           B12,
+deficiency/excess                          pyridoxine (B6), B1,
+                                           folate,  vitamin    E,
+                                           methylmalonic acid
+Infectious
+
+Lyme disease          S, SM, SYM, MF,CN    Serology, PCR
+
+HIV-1                 S, SM, SYM, MF,CN    Serology, PCR
+
+Hepatitis C           S, SM, SYM, MF,CN    Serology, PCR
+
+Herpes zoster         S, radicular         Serology, PCR
+
+CMV                   S, SM, SYM, MF       Serology, PCR, culture
+Immune mediated
+
+
+Guillain-Barre` and variants   SM,S,M,SYM,MF,CN        IgG anti-ganglioside antibodies
+                                                       (GM-1,GD1a, GQ1b, GD1b),
+                                                       urine porphyrins
+IgM antibody associated        M,MF                    IgM anti-GM-1, GD1a
+                               S,SM,SYM                IgM anti-MAG, sulfatide,
+                                                       GD1b, GQ1b
+Monoclonal gammopathy          M,S, SM, SYM, MF        Serum            immunofixation
+                                                       electrophoresis,    quantitative
+                                                       immunoglobulins
+Autonomic neuropathy           Autonomic dysfunction   Anti-nicotinic     acetylcholine
+                                                       receptor antibodies, anti-HU
+Vasculitis                     SM, S, MF,SYM           ESR, cryoglobulins, hepatitis C
+                                                       serology, or PCR
+Sarcoidosis                    SM, S, MF,SYM           ACE, chest radiograph
+
+
+Celiac disease                 S, SM, MF,SYM           Antigliadin,       endomysial,
+                                                       transglutaminase antibodies
+Rheumatologic diseases         SM, S, MF,SYM           SSA-Ro, SSB-La antibodies
+ Sjogren syndrome                                      ANA,      ANCA         (PR3,
+ Lupus                                                 myeloperoxidase), dsDNA, Ab,
+ Wegener granulomatosis                                RNP, rheumatoid factor
+ Rheumatoid arthritis
+ Paraneoplastic
+
+
+
+
+ Lung cancer      S,SYM             Anti-Hu Ab,      chest
+                                    radiograph/CT
+
+
+
+ Waldenstrom      SM, S, M,SYM,MF   Serum immunofixation
+syndrome                            electrophoresis
+
+
+
+Myeloma           SM, M, SYM,MF     Serum      and   urine
+                                    immunofixation
+                                    electrophoresis,
+                                    skeletal survey
+Hereditary
+
+CMT-1           Demyelinating,          DNA tests for PMP-
+                SM,SYM,MF               22,   MPZ,   EGR2,
+                                        Cx32, others
+
+CMT-2           Axonal, SM, SYM         DNA tests for NF-L,
+                                        Cx32, MPZ, others
+
+
+Mitochondrial   NARP, SM, MF            Serum         lactate,
+                                        thymidine
+                                        phosphorylase, DNA
+                                        testing
+Other           Axonal     S,      SM, DNA        tests     for
+                amyloid, porphyria     transthyretin, periaxin,
+                                       urine porphyrins
+ Metabolic/toxic
+
+
+ Diabetes          S,  SM,      SYM, Fasting      glucose,
+                   MF,CN             HgbA1c,       glucose
+                                     tolerance test
+
+ Renal failure     S, SM, SYM         Chem 7
+
+
+ Thyroid disease   S, SM, SYM, MF     TSH, T4
+
+
+ Heavy metal       S, SM, SYM, MF     Urine          lead,
+toxicity                              mercury,    arsenic,
+                                      thallium
+• *CN, cranial nerves; Cx32, connexin; EGR, early
+    growth response protein; GM-1, GD1a, ganglioside
+    components of myelin; M, motor; MF, multifocal;
+    MPZ, myelin protein zero; NARP, neuropathy, ataxia,
+    retinitis pigmentosa; NF-Lneurofilament light chain;
+    PCR, polymerase chain reaction; PMP, peripheral myelin
+    protein, RNP, ribonudeoprotein; S, sensory; SM,
+    sensorimotor; SSA, SSB, antigens for Sjogren syndrome
+    severe antibodies; SYM, symmetric.
+•
+• Superficial cutaneous nerves may be
+ thickened and visibly enlarged secondary
+ to Schwann cell
+ proliferation.Hypertrophic nerves may be
+ observed or palpated in the demyelinating.
+
+
+• Fasciculations, or spontaneous
+ contractions of individual motor units, are
+ visible twitches of limb or cranial muscles.
+• Etiology and diagnosis
+• Peripheral nerve disorders may be divided into
+    hereditary and acquired forms. The most
+    common hereditary disorder is CMT. The most
+    commonly acquired neuropathies in the United
+    States are associated with diabetes mellitus;
+    selected other causes of polyneuropathy are listed
+    in table (1).
+•
+• Trauma, compression, and entrapment are
+ considered in the differential diagnosis of
+ mononeuropathies, especially median
+ neuropathy at the wrist, ulnar nerve at the
+ elbow, or peroneal nerve across the fibular
+ head. Patients with any form of
+ polyneuropathy are more vulnerable to
+ mechanical and toxic nerve injury; cachectic or
+ immobile patents may develop focal
+ neuropathy from pressure or trauma.
+• In the evaluation of a patient with
+ peripheral neuropathy, a detailed family,
+ social, and medical and medication history;
+ neurologic examination; and
+ electrodiagnostic and laboratory testing are
+ usually necessary for diagnosis.
+Treatment
+  Treatment of patients with peripheral
+nerve disorders can be divided into two
+phases: removal or treatment of the
+inciting condition     and symptomatic
+therapy. Specific treatments are
+considered in discussions of individual
+disorders.
+• Symptomatic treatment of polyneuropathy
+    consists of general supportive measures,
+    amelioration of pain, and physiotherapy.
+    Tracheal intubation and respiratory support
+    may be needed in GBS. The bed is kept clean
+    and the sheets are kept smooth to prevent
+    injury to the anesthetic skin. Paralyzed limbs
+    are splinted to prevent contractures. Physical
+    therapy includes massage and passive joint
+    movement.
+•
+• Guliiain-Barre' syndrome
+• The Guliiain-Barre' syndrome (GBS) is
+    characterized by acute onset of peripheral and
+    cranial nerve dysfunction. viral respiratory or
+    gastrointestinal infection, immunization, or
+    surgery often precedes neurologic symptoms by 5
+    days to 4 weeks. Symptoms and signs include
+    rapidly progressive symmetric weakness, loss of
+    tendon reflexes, facial diplegia, oropharyngeal and
+    respiratory paresis, and impaired sensation in the
+    hands and feet.
+•
+• The condition worsens for several days
+ to 3 weeks, followed by a period of
+ stability and then gradual improvement to
+ normal or nearly normal function. Early
+ plasmapheresis or IVIG accelerates
+ recovery and diminishes the incidence of
+ long-term neurologic disability.
+• Etiology
+• There is evidence that it is immune
+ mediated. There is inflammatory pathology
+ and patients improve with
+ immunomodulatory therapy. An important
+ first step in autoimmune disease is the
+ impairment of self-tolerance, and there is
+ evidence that this occurs by molecular
+ mimicry with cross-reactive epitopes between
+ Campylobacter jejuni and peripheral nerve.
+• Electrophysiology and Pathology
+• Nerve conduction velocities are reduced in
+ GBS. Histologically, GBS is characterized by
+ focal segmental demyelination with
+ perivascular and endoneurial infiltrates of
+ lymphocytes and monocytes or macrophages.
+ These lesions are scattered throughout the
+ nerves, nerve roots, and cranial nerves. In
+ particularly severe lesions, there is both axonal
+ degeneration and segmental demyelination.
+This Photo by Unknown Author is licensed under CC BY-SA-NC
+• Fig. ( 1): Diffuse mononuclear infiltrate in
+           peripheral nerve in GBS
+• Fig. ( ): Wallerian degeneration. After axotomy, the axon
+  and myelin sheath distal to the transaction begin to
+  degenerate. Within a few days, macrophages are recruited
+  into the injury site and digest the debris. Changes also
+  occur proximal to the site of injury. A degree of wallerian
+  degeneration takes place up to the first encountered node
+  of Ranvier, and the cell body undergoes chromatolysis,
+  which represents a switch in function of the cell body
+  from axon maintenance to axon regeneration. If
+  regeneration does not take place, the target tissue is not
+  reinnervated, and degeneration of the target organ
+  eventually occurs.
+    Incidence
+
+• GBS is the most frequently acquired
+    demyelinating neuropathy. The
+    incidence increases gradually with age,
+    but the disease may occur at any age.
+    Men and women are affected equally.
+•
+• Symptoms and Signs
+• GBS often appears days to weeks
+ after symptoms of a viral upper
+ respiratory or gastrointestinal
+ infection, symmetric limb weakness,
+ often with paresthesia.
+• In contrast to most other
+ neuropathies, proximal muscles are
+ sometimes initially affected more than
+ distal muscles. Occasionally, facial,
+ ocular, or oropharyngeal muscles are
+ affected first; more than 50% of
+ patients have facial diplegia, dysphagia
+ and dysarthria.
+• Some patients require mechanical ventilation. Tendo
+ reflexes are lost. The degree of sensory impairment
+ varies. Diminution is perception of joint position,
+ vibration, pain, and temperature in stocking-and-glov
+ distribution. Autonomic dysfunction, including
+ orthostatic hypotension, labile blood pressure,
+ tachyarrhythmia, frequent in more severe cases and an
+ important cause of morbidity and mortality
+• Diagnosis and differential diagnosis
+• The characteristic history of subacute
+    development of symmetric motor or
+    sensorimotor neuropathy after a viral illness,
+    delivery, or surgery, together with
+    compatible electrophysiology and an
+    elevated CSF protein content with normal
+    cell count, defines GBS.
+•
+•
+•      Differential diagnosis:
+• Diphtheritic polyneuropathy ,
+ acute poliomyelitis, toxic
+ neuropathies: arsenic ingestion and
+ lead poising,tick paralysis.
+• Treatment
+• Early plasmapheresis or IVIG
+ therapy has proved useful in
+ patients with GBS. Mechanically
+ assisted ventilation is sometimes
+ necessary. Exposure keratitis must
+ be prevented in patients with facial
+ diplegia.
+• Diabetic neuropathy
+• Peripheral neuropathy occurs in
+    approximately 50% of patients with
+    diabetes mellitus, most commonly as a
+    distal symmetric neuropathy. Painful
+    neuropathies, mononeuropathies, and
+    radiculopathies with a disabling and
+    continuous pain, often a burning sensation
+    in a stocking distribution.
+
+•
+• Sensorimotor polyneuropathies with
+ or without autonomic symptoms and
+ signs. Although the progressive
+ symmetric polyneuropathy is probably
+ owing to microvascular disease,
+ resulting from hyperglycemia.
+This Photo by Unknown Author is licensed under CC BY-SA
+

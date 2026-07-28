@@ -1,0 +1,164 @@
+SOURCE: Semester 8\ENT\Theoritical\PPT\L19.1) hearing loss.pdf
+
+‫بسم هللا الرحمن الرحيم‬
+
+‫‪HEARING LOSS.‬‬
+    Definition of hearing loss.
+• Detectable impairment of hearing.
+• The term deafness is limited to cases with
+  profound or total hearing loss.
+  Classification of hearing loss.
+• Types:                 • Severity:
+1- Conductive H.L.       1- Mild:    20-40dB
+2- Sensory H.L.          2- Moderate: 40-60 dB
+3-Neural H.L.
+                         3- Severe:   60-90 dB
+4- Sensori-neural H.L.
+                         4- Profound: 90-110 dB
+5- Central H.L.
+                         5- Total:    >110 dB
+6- Mixed H.L.
+7- Psychogenic H.L.
+      A- Conductive hearing loss.
+• External auditory canal:
+1- Atresia.
+- Congenital.
+- Acquired.
+2 – Complete obstruction:
+- Impacted wax.
+- Foreign body.
+- Debris or discharge.
+- Tumour.
+       A- Conductive hearing loss.
+*Tympanic membrane:
+1- Perforation.
+2- Retraction/adhesions.
+3- Tympanosclerosis.
+*Ossicular chain:
+1- Discontinuity:
+- Head trauma.
+- Inflammatory.
+2- Fixation:
+- Otosclerosis.
+- Tympanosclerosis.
+- Congenital.
+     A- Conductive hearing loss.
+• Middle ear fluid:
+- Serous: S.O.M.
+- Pus: Acute Supp. O.M.
+- Blood: Haemotympanum.
+• Windows obstruction:
+- Otosclerosis.
+* Eustachian tube dysfun.
+     How drum or ossicular
+  abnormalities affect hearing?
+
+• 99.9% of sound energy is lost when the
+  sound pass from air to a fluid medium.
+• Pressure transformer system of the middle
+  ear:
+1- Hydraulic ratio action (areal ratio) = 17
+2- Ossicular lever action = 1.3
+    Pressure transformer system.
+• Hydraulic ratio action (areal ratio):
+- Ratio between the surface area of the ear drum
+  (90mm) & that of the foot plate of stapes (3mm).
+- Vibrating area of the T.M= 55mm.
+- Areal ratio= 55/3 = 17 i.e. increase in the sound
+  energy falling on the foot plate by 17 times.
+ Pressure transformer system.
+• Ossicular lever action:
+• Ratio between the length of the handle of
+  malleus to the long process of incus = 1.3
+• Sound P transformer mechanism of the middle
+  ear = areal ratio x ossicul. Lever action= 22
+  (this increases the sound energy by 26dB).
+           B- Sensori-neural H.L.
+• Hearing loss due to a lesion affecting
+   the cochlea(sensory) or the auditory
+   nerve (neural).
+• Causes:
+- Congenital: consanguinity or perinatal.
+- Traumatic: barotrauma, noise trauma,
+                     temporal bone
+   fracture.
+- Inflam.: bacterial, viral or specific ($).
+- Neoplastic: CPA tumour, glomus.
+         B- Sensori-neural H.L.
+- Aging : presbyacusis.
+- Ototoxic drugs : aminoglycosides.
+- Autoimmune diseases.
+- Meniere’s disease.
+- Metabolic or endocrinal dis.: DM.
+- CNS lesions: DS.
+- Idiopathic sudden H.L.
+           Diagnosis of H.L.
+
+
+• Depends on 3:     • To answer 3:
+1-History.          1- Where is the lesion?
+2- Examination.     2- What is the lesion?
+3- Hearing tests.   3- Severity?
+           Hearing tests.
+
+1- Tuning fork tests.
+2- Pure tone audiometry.
+3- Speech audiometry.
+4- Tympanometry&acoustic reflexes.
+5- Auditory evoked potentials.
+A-Tuning fork tests.
+      1- Weber test.
+Tuning fork tests.
+     2-Rinne test.
+       B- Pure tone audiometry.
+• This is a qualitative and quantitative method.
+• Idea: delivering sounds of variable frequencies and
+  intensities to the ear via an earphones and a bone
+  vibrator and recording the patient’s response on a chart.
+• Determine the threshold of hearing at the start of the
+  procedure (the minimum intensity of sound necessary to be
+  audible in at least 50% of presentations).
+B- Pure tone audiometry.
+  Normal < 20dB.      Mild 20-40dB.     Moderate 40-60dB.
+
+
+
+
+Severe 60-90dB.    Profound 90-110dB.
+      C- Speech audiometry.
+
+• Records the patient’s response to words, it
+  includes:
+1- Speech discrimination score (SDS).
+2- Speech reception score (SRS).
+
+Scores are excellent in cochlear lesions and
+  poor in retrocochlear lesions.
+      D- Tympanometry&acoustic
+              reflexes.
+• Tympanometer is important to:
+1- Test the mobility of the ear drum and the ossicular chain
+   (compliance):
+- reduced mobility: e.g. tympano-ossicular fixation.
+- Absent mobility: e.g. middle ear effusion.
+2- measurement of acoustic reflex (stapedius cont.):
+- absent reflex: e.g CHL.
+- Impaired reflex: e.g. SNHL.
+Normal.   e.g. SOM.   e.g. Eustacian tube
+                      dysfunction.
+    E- Auditory evoked potentials.
+• Idea: recording the electrical current along the
+  auditory pathway.
+1- Cochlea: electrocochleography.
+2- Nerve&brain stem: auditory brain stem response.
+3- Subcortical centers: middle latency response.
+4- Auditory cortex: cortical auditory potentials.
+              Treatment.
+• CHL: Medical or surgical treatment according
+  to the cause.
+• SNHL:
+1- Medical: Intratympanic or general.
+2- Hearing aids.
+3- Surgical: e.g. Cochlear implant.
+END.
+

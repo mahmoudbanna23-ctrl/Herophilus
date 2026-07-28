@@ -1,0 +1,236 @@
+SOURCE: Semester 8\Pedo\Theoritical\PPT\26)allergy_.pdf
+
+ALLERGY IN CHILDREN
+
+      Dr Ashraf Galal
+   Professor of Pediatrics
+ Up to 40% of children in the UK have one or more allergic
+  disorders (eczema, allergic rhinitis, or asthma) and 3%–6%
+  have food allergy.
+ Allergic diseases occur when individuals make an abnormal
+  immune response to harmless environmental stimuli, usually
+  proteins.
+             Definitions
+
+ Hypersensitivity – objectively reproducible symptoms or signs
+  following exposure to a defined stimulus (e.g. food, drug,
+  pollen) at a dose that is usually tolerated by most people.
+ Allergy –is the result of immune reaction to antigens known as
+  allergens. This can be IgE mediated (e.g. peanut allergy) or
+  non-IgE mediated (e.g. celiac disease)
+ Atopy –genetically mediated predisposition to produce specific
+  IgE after exposure to allergens. Strongly associated with asthma,
+  allergic rhinitis and conjunctivitis, eczema and food allergy.
+ Sensitization – a positive test to an allergen, either by skin prick
+  test, or specific IgE. Does not equate to allergy unless a clinical
+  reaction is initiated on exposure. However, the higher the number
+  of positive tests, the more likely the person is going to be “allergic”
+ Anaphylaxis – a serious allergic reaction with bronchial, laryngeal,
+  or cardiovascular involvement that is rapid in onset and may
+  cause death.
+PATHOGENESIS
+ Many genes have been linked to the development of allergic
+  disease. Polymorphisms or mutations in these genes lead to a
+  susceptibility to allergy.
+ Allergy is an ‘epigenetic condition’ where the environment
+  interacts with these genes.
+ Intact barrier function of the skin appears to be important.
+  Alterations in the filaggrin gene are associated with increased
+  risk of eczema and food allergy.
+     Normal skin
+ In healthy people the skin acts
+  as a protective barrier against
+  external irritants, moisture
+  loss, and infection.
+ Filaggrin , a structural protein
+  in the epidermis, and its
+  breakdown products are
+  critical to skin barrier function,
+  including moisturization of the
+  skin.
+ These mediators and others are responsible for the symptoms that arise in
+  an allergic reaction:
+ Vasodilation leading to erythema.
+ Increased permeability of the vasculature yielding swelling.
+ Smooth muscle constriction that results in bronchoconstriction and
+  abdominal pain.
+ Nerve activation that is responsible for itching, sneezing, coughing.
+Types of allergic reactions
+                                        Type 1              Type 4
+                                      IMMEDIATE            DELAYED
+                                    IgE-mediated       T-CELL MEDIATED
+
+
+
+
+                            Urticaria/angioedema   Dermatitis
+Chemical mediator
+                            histamine              T cell-derived cytokines
+Onset                       Minutes                Hours
+
+Total & allergen-specific   Can help               avoid
+IgE
+
+
+Antihistamine               help                   Not effective
+Laboratory
+             skin prick test
+ Food allergy
+
+  Over 80% of children with food allergy present in the first year of life; many have atopic eczema.
+
+ The most common food allergens are milk, egg, soy, wheat, peanut, tree nuts,
+  fish, and shellfish.
+
+ Seeds, with sesame being the most common, are also increasingly identified as
+  allergens.
+ Food allergy is most commonly primary, where children usually react on first
+  exposure.
+ It can also be secondary to cross-reactivity between proteins present in fresh
+  fruits/ vegetables/nuts and those present in pollens, e.g. a child who can eat
+  apples may develop allergy to apples when older if they become allergic to birch
+  tree pollen, because the apple and birch pollen share a very similar protein. This
+  common condition is termed the ‘pollen food allergy syndrome’ or “oral allergy
+  syndrome”
+       Adverse reactions to foods
+
+
+food intolerances         food allergies
+
+
+
+                   IgE-              non–IgE
+                 mediated           mediated
+  Clinical features
+
+
+ It is usually IgE-mediated, with a history of allergic symptoms
+  varying from urticaria to facial swelling to anaphylaxis, usually 10–
+  15 minutes (up to 2 hours) after ingestion of a food.
+ Cutaneous: urticaria, angioedema, pruritus, flushing, morbilliform rash
+ Gastrointestinal: Swelling of lips/tongue/uvula, nausea, vomiting,
+  abdominal cramps, diarrhea
+ Cardiovascular: Tachycardia, hypotension, pallor, shock, loss of
+  consciousness
+ Respiratory Upper airway: rhinorrhea, nasal pruritus, nasal congestion,
+  sneezing, hoarseness, stridor. Lower airway: cough, wheeze, dyspnea,
+  cyanosis
+ Neurologic: Anxiety, headache, seizure, altered mental status, feeling of
+  impending doom
+ Ocular: Conjunctival erythema and tearing
+ Non- IgE-mediated food allergy typically occurs hours after ingestion and
+  usually involves the gastrointestinal tract, with diarrhea, vomiting, abdominal
+  pain and sometimes faltering growth.
+ It sometimes presents in an infant with blood in the stools in the first few weeks
+  of life from proctitis, or rarely with severe repetitive vomiting in an infant
+  following milk or rice which can result in shock (food protein induced
+  enterocolitis syndrome).
+  Diagnosis
+
+ The clinical history is key in food allergy diagnosis. Food allergy
+  should be suspected if typical symptoms occur following exposure
+  to a particular food.
+ For IgE-mediated food allergy, the most helpful confirmatory tests
+  are skinprick tests and measurement of specific IgE antibodies in
+  blood as described above.
+           Diagnosis of
+           food allergy
+
+
+Careful    Evidence of
+                          Oral food
+clinical    allergen-
+                          challenge
+history    specific IgE
+   Allergen challenge
+ If results from the history and investigations are not clear, or if the child is
+  thought to have grown out of an allergy,
+ This is usually a food challenge for food allergy. The child is given increasing
+  quantities of the food, starting with a tiny amount, until a full portion is
+  reached.
+ Sometimes these are ‘placebo controlled’, where the child and parents do not
+  know which of the challenges involves the food or a placebo.
+ The test should be performed in a hospital with full resuscitation facilities
+  available, with close monitoring for signs of anaphylaxis.
+       Natural History
+
+The natural course of the disease differs depending on the allergen.
+
+
+Most outgrowing milk, egg, wheat, and/or soy allergies
+and those with peanut, tree nut, fish, and/or shellfish allergies tending to
+have lifelong allergy.
+   Management
+
+ The management of a food-allergic child involves avoidance of the relevant
+  food(s).
+ If a child is diagnosed with one allergy, related allergies need to be considered;
+ Proteins with an unstable tertiary structure may be rendered non-allergenic by
+  heat degradation or other forms of processing
+ In addition to dietary management, the child and family must be able to
+  manage an allergic reaction.
+ Immunotherapy for food allergy involves giving the child minute amounts of
+  the food they are allergic to and building up that amount over time.
+  Prevention of allergic diseases
+  Oral tolerance induction
+
+ This is the induction of “immune tolerance” by feeding common
+  food allergens such as eggs, cow’s milk and peanut to young
+  infants to reduce the risk of allergy.
+ This is now often suggested in infant feeding guidelines for
+  countries where food allergy is common.
+ Immunological tolerance to a food depends on early exposure
+  through the GIT and the development of allergic sensitization
+  occurs by exposure to foods through an impaired skin barrier. A
+  hypothesis supported by many clinical studies.
+ATOPIC MARCH
+
+
+      AD
+
+BA          FA
+
+
+ AR        AC
+A 10-month-old infant is brought to the clinic. The
+mother reports that the child has a positive skin prick
+test to peanuts but has never consumed them and has
+no history of clinical symptoms upon exposure to other
+foods. Which of the following best describes the child's
+current status?
+
+A.Anaphylaxis
+B.Clinical Peanut Allergy
+C.Sensitization
+D.Oral Allergy Syndrome
+A 10-month-old infant is brought to the clinic. The
+mother reports that the child has a positive skin prick
+test to peanuts but has never consumed them and has
+no history of clinical symptoms upon exposure to other
+foods. Which of the following best describes the child's
+current status?
+
+A.Anaphylaxis
+B.Clinical Peanut Allergy
+C.Sensitization
+D.Oral Allergy Syndrome
+An infant presents with severe repetitive vomiting and
+diarrhea that occurs consistently 4 hours after the
+ingestion of cow's milk. Based on the timing and
+symptoms, this reaction is most likely:
+
+A. Type 1 IgE-mediated reaction
+B. Non-IgE-mediated food allergy
+C. Atopic March
+D. Immediate Hypersensitivity
+An infant presents with severe repetitive vomiting and
+diarrhea that occurs consistently 4 hours after the
+ingestion of cow's milk. Based on the timing and
+symptoms, this reaction is most likely:
+
+A. Type 1 IgE-mediated reaction
+B. Non-IgE-mediated food allergy
+C. Atopic March
+D. Immediate Hypersensitivity
+THANK YOU
+

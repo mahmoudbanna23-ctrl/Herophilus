@@ -1,0 +1,272 @@
+SOURCE: Semester 8\Pedo\Theoritical\PPT\32)Acute bronchiloitis_.pdf
+
+Acute bronchiolitis
+Professor Nader Fasseeh, Respiratory and Allergy Unit, Alexandria University
+
+Member of Scientiﬁc Committee of Arab Board of Pediatric Pulmonology
+
+Chairman of Egyptian Pediatric Pulmonology Society
+
+
+
+Bronchiolitis is an acute viral respiratory infection involving the terminal and
+respiratory bronchioli in infants, resulting in small airways obstruction. There is
+difference between European and American Academy of Pediatric guideline
+de�inition of acute bronchiolitis.
+
+European guideline definition: a seasonal viral illness in infants <12 months of
+age characterized by nasal discharge, cough, tachypnoea, retractions and bilateral
+crackles.
+American Academy of Pediatric guideline definition: bronchiolitis as a disorder in
+infants <24 months of age that is most commonly caused by a viral lower respiratory tract
+infection characterized by wheezing
+
+These definitions reflect differences in how the disease is interpreted, and the North Rearly
+wheezy bronchitis
+
+Etiology of bronchiolitis
+   1. RSV 62%
+   2. Human bocavirus
+   3. Rhinovirus
+   4. Human metapneumovirus                       38%
+   5. Influenzas A and B viruses
+   6. Parainfluenza 1-3
+
+Risk factors for severe bronchiolitis are age <3 months, male sex, low socioeconomic
+conditions, maternal smoking and RSV infection. Other risk factors for severe bronchiolitis
+are prematurity with BPD, and coexisting comorbidities, such as cardiovascular diseases,
+immunodeficiency and chronic respiratory diseases. The only known protective factor is
+maternal breastfeeding.
+
+RSV viral structure
+   •   Single-stranded, RNA genome; 10 genes encoding 11 proteins
+   •   2 key surface glycoproteins allow RSV to infect host cells:
+           •   G protein: attachment to mucosal epithelium of nose or eyes
+           •   F protein: fusion with epithelial cell membranes
+                   1. Entry into host cell
+                   2. Fusion with adjacent cells (syncytia formation)
+    •   Variation in the G glycoprotein yields:
+        a) 2 major subtypes, Groups A and B
+        b) Different strains within each group
+                 I. 12 genotypes of RSV-A
+                II. 20 genotypes of RSV-B
+
+
+
+
+\
+
+
+
+The global pediatric burden of RSV disease
+    •   RSV is the leading cause of severe respiratory infections
+    •   Global incidence RSV LRTI (lower respiratory tract infection)
+                   1. 22% LRTI due to RSV
+                   2. 33.8 million RSV worldwide
+    •   RSV is a Leading cause of pediatric hospitalization (3.6 million)
+                   1. < 6 months of age (39%)
+                   2. 6 months to 5 years (61%)
+    •   Important cause of pediatric mortality
+                   1. < 6 months (46%)
+                   2. 6 month – 5 years (54%)
+    •   Mortality burden > 99% of mortality in low-income countries
+    •   Risk factors
+                   1. Mortality is 30 times more in HIV infection
+                   2. Mortality id 13 times more in VLBW <1500 gm compared to > 2500 gm
+                   3. Mortality is 4.3 times more in primary immune deﬁcient patients
+
+RSV infections
+          1. Upper respiratory tract infection
+          2. Lower respiratory tract infections (5%)
+          3. Severe RSV illness (bronchiolitis and pneumonia)
+
+RSV Transmission
+   •   RSV is transmitted:
+          • By droplets, large particles, and fomites
+          • Directly – Contact with infectious secretions of an infected individual
+          • Indirectly – Contact with infectious secretions in the environment
+   •   RSV can survive for 6–12 hours or more on hard, nonporous surfaces
+   •   Nosocomial infection remains a major problem
+
+
+RSV
+Period of incubation and infectivity
+   •   RSV incubation period is 2–8 days
+   •   Viral shedding typically occurs for:
+           • 1–2 days in adults
+           • Average of 9 days in infants
+           • Up to 4 weeks in critically ill infants
+
+High risk for severe bronchiolitis
+
+   1. Infants born prematurely (<35 weeks’ gestation)
+   2. <3 months of age at presentation
+   3. Decreased hydration and feeding (<50% of usual fluid intake in preceding 24 h)
+   4. Hemodynamically significant cardiac disease
+   5. Chronic lung disease
+   6. BPD
+   7. Neuromuscular disorder
+   8. Down syndrome
+   9. Immunodeficiency
+   10. Environmental factors: exposure to tobacco smoke and or air pollution
+   11. Social factors: distance from the hospital or difficulty to access to the hospital; poor
+       social circumstances; unreliable parents or parents do not able to spot red flag
+       symptoms
+
+Pathogenesis of RSV bronchiolitis
+   1. Following the incubation period, RSV replicates in and destroys ciliated epithelial
+      cells that line the airways
+   2. Resulting in either complete obstruction with resultant atelectasis or Bal valve
+      effect with resultant alveolar overinflation
+   3. Both resulted in V/Q mismatch with resultant hypoxemia
+
+
+Diagnosis of Acute Bronchilitis
+
+   • Bronchiolitis is diagnosed on clinical grounds alone
+   • In infant < 12 months with exposure of child or adult with RVI will
+     develop coryza and signs of LRI
+     RD, Low SpO2, rales and rarely wheezing in severe cases
+
+   • Incubation period 1-5 days followed by URT symptoms (coryza for 3 days)
+     followed by LRTI symptoms. Fever can be present during the coryza period
+     and absent when LRTI starts.
+   • The risk of reduction of food intake, dehydration and severe respiratory
+     symptoms usually peaks between 3-5 days after the onset of rhinitis
+   • Chest radiographs and blood tests are required only if suggested by clinical
+     indications
+   • ABG analysis is recommended only in more severe cases.
+   • Rapid virus detection could reduce antibiotic use and is important for
+     cohorting
+
+
+Indications of hospital admission
+   1. Respiratory distress
+
+   2. Apnea
+
+   3. Tachypnea
+
+   4. Oxygen requirement
+
+   5. Poor feeding
+
+   6. Dehydration
+
+   7. Requirements for continuous clinical airway clearance
+
+   8. underlying chronic disease,
+   9. inappropriate social and family conditions
+
+
+
+Indication of PICU admission
+   1. Failure to maintain SpO2 >92% with oxygen therapy,
+   2. Deteriorating respiratory status with exhaustion
+   3. Recurrent apnea
+
+
+
+Management of Acute Bronchiolitis
+In mild case:
+   •   Breastfeeding should be supported in a small frequent feed
+   •   With Severe bronchiolitis NG feeding or IV hydration to prevent dehydration is not
+       >80% of daily requirement
+   •   Cleaning the upper airways with saline is an important step in the initial
+       management of infants with bronchiolitis
+
+In severe cases
+Oxygen therapy
+oxygen should be administered only when SpO2 at room air is <92% in the absence of
+respiratory distress, while the. Pre-warmed and humidi�ied oxygen is usually administered
+with low-�low systems such as via a nasal cannula or head box. Recent evidence shows that
+oxygen can be given ef�icaciously with a heated humidi�ied high-�low nasal cannula
+(HHHFNC); its presumed role is reduction of the work of breathing, prevention of dynamic
+airways collapse and improvement of gas exchange by administering humidi�ied, pre-
+warmed oxygen at a known inspiratory oxygen fraction (FIO2) and with a �low that should
+be a little higher than the infant’s peak inspiratory pressure, usually 1–2 L·kg−1 of body
+weight. Several studies have demonstrated that while this technique does not shorten the
+course of disease, it improves the work of breathing, thus reducing the need for intensive
+care and mechanical ventilation
+
+
+
+
+PICU and CPAP indications:
+       1. Severe respiratory distress,
+       2. Need for an FIO2 >0.5
+       3. The presence of apnea
+
+
+Pharmacological treatment
+   •     Nebulized Salbutamol or adrenaline
+   •     Nebulized Hypertonic saline 3%                       No role of these medications
+   •     Nebulized Atrovent                                    except nebulized salbutamol
+   •     Nebulized ICS or systemic steroids                   if good response continue
+   •     Nebulized DNase
+   •     Antibiotic except in 2ry bacterial infections
+
+
+
+
+The major discharge criteria are:
+   1. SpO2 that remains stable at 94% in room air in the absence of respiratory distress
+      for 4 h including during sleeping, and
+   2. Adequate daily oral intake (>75% of usual intake) at a level to prevent dehydration,
+   3. Followed by adequate parental care and family education about the potential
+      duration of acute symptoms
+
+
+
+Prophylaxis
+   •     Palivizumab is a humanised monoclonal anti-RSV antibody licensed for preventing
+         the development of severe diseases arising from an RSV infection
+   •     Nirsevimb (Beyfortus) mAB directected against Ø on RSV perF Administration in
+         early infancy and beyond for high-risk infants
+   •     RSVpreF maternal (Abrysvo) : Bivalant RSV A/B RSV perfusion F vaccine
+         administration during pregnancy
+
+
+
+
+References:
+
+   1. Everard ML, et al. (2014). SABRE: a multicentre randomised control trial of nebulised
+      hypertonic saline in infants hospitalized with acute bronchiolitis. Thorax; 69: 1105–
+    1112. • Fernandes RM, et al. (2010). Glucocorticoids for acute viral bronchiolitis in
+    infants and young children. Cochrane Database Syst Rev; 10: CD004878
+2. Florin TA, et al. (2017). Viral bronchiolitis. Lancet; 389: 211–224.
+3. Gadomski AM, et al. (2010). Bronchodilators for bronchiolitis. Cochrane Database
+    Syst Rev; 12: CD001266.
+4. Natalie I Mazur, Mauricio T Caballero, Marta C Nunes. Severe respiratory syncytial
+    virus infection in children: burden, management, and emerging therapies. The
+    Lancet, 2024, 404 (10458), pp.1143-1156. ff10.1016/S0140-6736(24)01716-1ff.
+    ffhal-04898161f
+5. ERS Handbook: Paediatric Respiratory Medicine 2022 2nd Edition
+6. Griffin MP, et al. (2020). Single-dose nirsevimab for prevention of RSV in preterm
+    infants. N Engl J Med; 383: 415–425.
+7. Hancock DG, et al. (2017). The heterogeneity of viral bronchiolitis: a lack of universal
+    consensus deﬁnitions. Pediatric Pulmonol; 52: 1234–1240.
+8. Kepreotes E, et al. (2017). High-ﬂow warm humidiﬁed oxygen versus standard low-
+    ﬂow nasal cannula oxygen for moderate bronchiolitis (HFWHO RCT): an open,
+    phase 4, randomised controlled trial. Lancet; 389: 930–939.
+9. Mazur NI, et al. (2015). Lower respiratory tract infection caused by respiratory
+    syncytial virus: current management and new therapeutics. Lancet Respir Med; 3:
+    888–900.
+10. Midulla F, et al. (2010). Respiratory syncytial virus, human bocavirus and rhinovirus
+    bronchiolitis in infants. Arch Dis Child; 95: 35–41.
+11. Nair H, et al. (2010). Global burden of acute lower respiratory infectious due to
+    respiratory syncytial virus in young children: a systematic review and meta-analysis.
+    Lancet; 375: 1545 1555.
+12. Openshaw PJM, et al. (2017). Protective and harmful immunity to RSV infection.
+    Annu Rev Immunol; 35: 501–532.
+13. Resch B (2017). Product review on the monoclonal antibody palivizumab for
+    prevention of respiratory syncytial virus infection. Hum Vaccin Immunother; 13:
+    2138–2149.
+14. Spurling GK, et al. (2011). Antibiotics for bronchiolitis in children. Cochrane
+    Database Syst Rev; 6: CD005189.
+15. Teunissen J, et al. (2014). The effect of 3% and 6% hypertonic saline in viral
+    bronchiolitis: a randomised controlled trial. Eur Respir J; 44: 913–921.
+16. Zhang L, et al. (2017). Nebulized hypertonic saline solution for acute bronchiolitis in
+    infants. Cochrane Database Syst Rev; 12: CD006458.
+

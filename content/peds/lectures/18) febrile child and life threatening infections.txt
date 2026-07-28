@@ -1,0 +1,236 @@
+SOURCE: Semester 8\Pedo\Theoritical\PPT\18) febrile child and life threatening infections.pdf
+
+Febrile child
+(i) How is fever identified in children?
+
+   At home, Parents usually know if their child has been febrile.
+   In hospital, it is measured at:
+         • <4 weeks old by an electronic thermometer in the axilla
+         • >4 weeks to 5 years by an electronic or chemical dot
+                                thermometer in the axilla
+                                or infrared tympanic thermometer.
+   In general, axillary temperatures underestimate body temperature by
+    0.5°C.
+    (ii) Evaluation varies by age group
+Accepted categories are:
+-    neonates (≤ 28 days),
+-    young infants (1 to 3 mo),
+-    and older infants and children (3 to 24 mo).
+If a cause of fever was determined ……..treat
+If the cause was not identified………….. think bacteremia
+    especially young infants below 6 months are protected against
+    common viral infections
+(iii) Are there risk factors for infection?
+   Illness of other family members
+   If a specific illness is prevalent in the community
+   Unimmunised
+   Recent travel abroad, e.g. malaria, typhoid
+   Contact with animals, e.g. brucellosis.
+   Increased susceptibility from immunodeficiency.
+   Immunedefieceny
+      Postautosplenectomy in SCD
+
+      Splenectomy
+
+      Nephrotic syndrome
+
+      Primary immune defeciency
+Management of fever
+There are NICE guidelines for the management of the child with
+fever
+
+
+ The child should not be underdressed.
+
+ The use of antipyretic agents either paracetamol or ibuprofen
+    can be used.
+    They can be given alternatively if unresponsive to a single
+    agent.
+ Evidence that antipyretics prevent febrile seizures is lacking.
+(iv) How ill is the child? Red flags
+  Age < 1 mo
+
+  Lethargy, excess irritabilty,or toxic appearance
+
+  Respiratory distress
+
+  Petechiae or purpura
+
+  Inconsolability
+
+  A seizure occurs.
+
+  A change in consciousness occurs.
+
+  The child has a headache that will not go away.
+
+  The child continues to vomit.
+
+  The child has complex medical problems
+1- All febrile children < 1 mo
+= admission
+   Require a WBC count with a manual differential, blood cultures, urinalysis and
+    urine culture
+    CSF evaluation with culture and appropriate PCR testing (eg, for herpes
+    simplex, enterovirus) .
+    Chest x-ray is done in those with respiratory manifestations,
+   Stool cultures are done in those with diarrhea.
+
+
+    * give empiric IV antibiotic coverage for the most common neonatal pathogens
+    * Acyclovir also should be added if viral infection is suspected.
+2- young infants (1 to 3 mo),
+                                                After assessment
+
+
+
+
+                                                                   High risk infants with
+                     Low risk healthy infants
+                                                                         red flags
+
+
+
+
+       Obtain investigations          Obtain investigations                   Admit to
+         Use antipyretic                Use antipyretics                    hospital start
+        Empiric antibiotic             Observation 48 h                     sepsis work-
+                                                                            up &empiric
+                                                                              antibiotic
+Message to take home
+ Most acute fever is caused by viral infections.
+
+ Causes and evaluation of acute fever differ depending on the
+  age of a child.
+ A number of children < 24 mo with fever without localizing signs
+  can have pathogenic bacteria (occult bacteremia) a potentially
+  life-threatening infection.
+ Follow-up of the clinical course remains the most sensitive
+  indicator in serious conditions.
+ Do not abuse antibiotics: FEVER does not mean ANTIBIOTIC.
+LIFE THREATENING
+    INFECTIONS
+           1. MENINGITIS AND ENCEPHALITIS
+
+• Meningitis occurs when there is inflammation of the meninges covering the
+  brain.
+• Viral infections are the most common cause of meningitis.
+• Bacterial meningitis may have severe consequences.
+• Tuberculous meningitis is rare in countries with low TB prevalence.
+• Fungal and parasitic meningitis are rare .
+• Causes of noninfectious meningitis (malignancy and autoimmune diseases)
+          BACTERIAL MENINGITIS
+
+• Bacterial meningitis (5% to 10%) mortality.
+• Over 10% of survivors are left with long-term neurological impairment.
+
+             Organisms causing bacterial meningitis according to age
+             Neonatal to 3 months
+              Group B streptococcus
+             Escherichia coli
+             Listeria monocytogenes
+             1 month to 6 years
+             Neisseria meningitides
+             Streptococcus pneumoniae
+             Haemophilus influenza
+             >6 years
+             Neisseria meningitides
+             Streptococcus pneumoniae
+COMPLICATIONS:
+• Obstructive or communicating hydrocephalus.
+• Stroke.
+• Subdural effusion or empyema
+• Brain abscess.
+• Dural sinus thrombophlebitis.
+• Cranial nerve palsies
+• Hearing loss .
+• Neurological sequele (CP,blindness,microcephaly,developmental delay)
+• Macular red rapidly changed
+• maculopapular dark lesion
+• on the trunk and limbs
+• become petechic-purpuric
+  within few hours
+      ASSOCIATED SIGN & SYMPTOMS
+• Acute onset of fever, prostration
+• Progresses to hypotension (shock).
+• Rash…
+• headache, myalgia,
+• nausea, vomiting,
+• loss of consciousness
+• In some patients, signs of meningeal irritation
+  (stiff neck, kernig and brudzinski signs)
+   MENINGOCOCCEMIA.
+
+• Meningococcemia with / or without meningitis
+• Severe and life-threatening disease that
+  frequently affects children and adolescents.
+• Very rapid progression
+• High morbidity and mortality
+CONTRAINDICATIONS TO LUMBAR PUNCTURE:
+• Cardiorespiratory instability
+• Focal neurological signs
+• Signs of raised intracranial pressure
+    e.g. coma, high BP, low heart rate or papilloedema
+• Coagulopathy
+• Thrombocytopenia
+• Local infection at the site of LP
+• If it causes undue delay in starting antibiotics
+PROPHYLAXIS
+
+ • Rifampicin or ciprofloxacin to eradicate nasopharyngeal carriage is given to
+   all household contacts for meningococcal meningitis and Hib infection.
+ • Or third-generation cephalosporin
+MANAGEMENT
+
+ No delay in the administration of antibiotics and supportive
+therapy.
+• A third-generation cephalosporin, e.g. ceftriaxone, is the
+  preferred choice to cover the most common bacterial causes.
+• Evidence suggesting that dexamethasone administered with
+  antibiotics reduces the risk of long-term complications such as
+  deafness.
+               VIRAL MENINGITIS
+• Two-thirds of CNS infections are viral.
+• Causes include: enteroviruses, Epstein–Barr virus, adenoviruses and
+•                  mumps. (Mumps meningitis is now rare due to MMR).
+• Viral meningitis is usually much less severe than bacterial meningitis.
+• Full recovery can be anticipated.
+• Diagnosis of viral meningitis can be confirmed by PCR of CSF; and
+  serology
+                 ENCEPHALITIS
+
+• Inflammation of the brain tissue
+• Onset can be insidious and includes behavioural change.
+• Consider if HSV could be the cause.
+• Treat potential HSV with parenteral high-dose aciclovir until this
+  diagnosis is excluded.
+2. Toxic shock syndrome
+      DESCRIBE THE RASH
+• •   Diffuse
+••    Erythematous
+••    Blanching
+••    “Erythroderma”
+••    Sunburn
+                  ASSOCIATED SIGNS/SYMPTOMS
+••   Fever: 40ºC, 1 day
+••   Signs of shock: Yes
+••   Headache
+••   Injected bulbar conjunctiva
+••   Hyperemic mucous membrane
+••   Dizzyness
+••   Myalgias
+••   Vomiting and diarrhea
+     TOXIC SHOCK SYNDROME
+••   Staphylococcus aureus
+             – Bacteremia uncommon
+••   Streptococcus pyogenes
+            – Bacteremia common
+•         Enumerate staphylococcus serious infections
+
+1. Toxic shock syndrome
+2. Necrotizing fasciitis/cellulitis
+3. Peri-orbital cellulitis
+4. Staph scalded skin syndrome
+5. Impetigo
+6. boils
+

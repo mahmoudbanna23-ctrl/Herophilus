@@ -1,0 +1,315 @@
+SOURCE: Semester 8\Neuro\Theoritical\PPT\L1) INTRODUCTION AND LOCALISATION IN NEUROLOGY.pdf
+
+INTRODUCTION AND LOCALISATION IN NEUROLOGY
+
+
+     PREPARED BY DR MERVAT HAMED
+       ASSOCIATE PROFESSOR OF
+          NEUROPSYCHIATRY
+       ALEXANDRIA UNIVERSITY
+Nervus System
+ The nervous system is divided into:
+ Central Nervous System (CNS)
+ Brain
+ Spinal cord
+ Peripheral Nervous System (PNS)
+ Cranial nerves
+ Spinal nerves
+ Peripheral nerves
+ Autonomic Nervous System (ANS)
+ Sympathetic system
+ Parasympathetic system
+Nervus system anatomy
+ Cortex
+ Subcortex
+ Brainstem
+ Cerebellum
+ Spinal cord
+ Nerve root
+ Peripheral nerve
+ Neuromuscular junction
+ Muscle
+Pyramidal tracts
+ The pyramidal tracts are descending motor pathways
+  originating from the upper motor neurons in the cerebral
+  cortex. They are primarily responsible for voluntary control
+  of skeletal muscles, including fine motor movements of the
+  limbs and face
+ The pyramidal system is divided into two main pathways:
+ Corticospinal tract: Controls voluntary movements of the
+  trunk and limbs.
+ Corticobulbar (corticonuclear) tract: Controls voluntary
+  movements of the face, head, and neck by synapsing with
+  cranial nerve motor nuclei
+ The corticospinal is a two neuron system
+  consisting of upper motor neurons in the Primary
+  Motor Cortex and lower motor neurons in the
+  anterior horn of the spinal cord. Each of these
+  neurons have extremely long axons.
+ The upper motor neuron axon extends all the
+  way from the brain down to the spinal cord, and
+  the lower motor neuron axon extends from the
+  spinal cord to the skeletal muscles of the arms or
+  legs.
+ Most of the cortico-spinal fibers (about 80%) cross
+  over to the contralateral side in the medulla oblongata
+  (pyramidal decussation). Those that cross in the
+  medulla oblongata travel in the lateral corticospinal
+  tract.
+ 10% enter the lateral corticospinal tract on the same
+  side.
+ The remainder of them (10%) cross over at the level
+  that they exit the spinal cord, and these travel in the
+  anterior corticospinal tract.
+ The internal capsule is an area of white
+  matter in the brain that separates the caudate
+  nucleus and the thalamus from the lenticular
+  nucleus.
+ The internal capsule contains both ascending
+  and descending axons.
+ It consists of axonal fibres that run between
+  the cerebral cortex and the pyramids of the
+  medulla.
+Upper Motor Neuron Manifestations
+ Bulbar symptoms:
+ Emotional instability
+ spastic dysarthria
+ Brisky Jaw
+ Chocking attacks on fluid intake
+ Spastic tongue
+
+  SPINAL:
+ Hyper reflexia
+ Extensor planter
+ Weakness
+ Clasp knife spasticity
+Lower Motor Neuron Manifestations
+  Bulbar:
+• Fasciculations of the tongue
+• Wasting of the tongue
+• Weakness of deglutition, chewing and articulation muscles
+ Nasal regurge of food and fluid
+
+ Spinal:
+ Fasciculations
+ Wasting
+ Weakness
+ Cramps
+Cranial nerves
+ There are twelve cranial nerves :
+ (I) Olfactory           ( VIII) Vestibulocochelar
+ (II) Optic               ( IX) Glossopharyngeal
+ (III) Occulomotor         (X) Vagus
+ (VI) Trochelar             (XI )Spinal accessory
+ (V)Trigeminal              (XII) Hypoglossal
+ (VI)Abducent
+ (VII) Facial
+Extrapyramidal system
+ Extrapyramidal system is a neural network
+  located in the brain that is part of the motor system
+  involved in the coordination of movement.
+ The pyramidal pathways (corticospinal and some
+  corticobulbar tracts) may directly innervate motor
+  neurons of the spinal cord or brainstem (anterior
+  (ventral) horn cells or certain cranial nerve nuclei),
+  whereas the extrapyramidal system centers around
+  the modulation and regulation (indirect control) of
+  anterior (ventral) horn cells.
+Extrapyramidal system
+
+
+File:Spinal cord tracts - English.svg
+ Extrapyramidal tracts are chiefly found in the reticular
+  formation of the pons and medulla, and target neurons
+  in the spinal cord involved in reflexes, locomotion,
+  complex movements, and postural control.
+ These tracts are in turn modulated by various parts of
+  the central nervous system, including the nigrostriatal
+  pathway, the basal ganglia, the cerebellum, the
+  vestibular nuclei, and different sensory areas of the
+  cerebral cortex.
+The cerebellum
+ The cerebellum (Latin for little brain) is a region
+  of the brain that plays an important role in motor
+  control.
+ It is also involved in some cognitive functions such
+  as attention and language, and probably in some
+  emotional functions such as regulating fear and
+  pleasure responses, and regulating coordination of
+  motor function.
+ The cerebellum does not initiate movement, but it
+  contributes to coordination, precision, and accurate
+  timing. It receives input from sensory systems and
+  from other parts of the brain and spinal cord, and
+  integrates these inputs to fine tune motor activity,
+ Because of this fine-tuning function, damage to the
+  cerebellum does not cause paralysis, but instead
+  produces disorders in fine movement, equilibrium,
+  posture, and motor learning.
+                 The cerebellum
+File:CerebellumDiv.png
+
+
+
+                                  File:CerebellumRegions.jpg
+Spinal tracts
+Sensory tracts:
+ Dorsal Columns: the tracts that carry touch and
+  proprioceptive information.Therefore, light touch,
+  deep pressure, and proprioceptive senses (carried
+  out by muscle spindles and other sensory receptors)
+  are carried through these pathways. (uncrossed)
+ Spinothalamic tracts : carry Pain and temperature
+  (the free nerve endings in skin) sensory
+  information is carried by these tracts,lateral
+  spinothalamic tract anterior spinothalamic tract
+  (crossed tract)
+ Neurological Localization
+
+ Neurological localization is the process of
+  determining the site of a lesion within the
+  nervous system based on the patient's
+  symptoms and physical examination findings.
+ It is the cornerstone of neurological diagnosis.
+ In neurology, diagnosis follows a two-step
+ approach:
+
+ Where is the lesion? (Localization)
+ What is the lesion? (Pathology—vascular,
+ inflammatory, infectious, neoplastic,
+ degenerative, metabolic, etc.)
+Hemiplegia
+  Hemiplegia is a symptom that involves one-sided
+   weakness or paralysis. Hemiplegia affects either
+   the right or left side of body.
+  It happens because of brain or spinal cord injuries
+   and conditions. Depending on the cause,
+   hemiplegia can be temporary or permanent.
+  Some causes of hemiplegia are treatable or even
+   reversible with immediate medical care.
+Clinical picture
+ Aphasia
+ Conjugate eye deviation
+ Cranial nerve palsies
+ Weakness of pyramidal distribution in the upper and lower
+  limb
+ Circumduction gait
+ Clasp knife spasticity
+ Hemiplegic posture (wrist and foot drop)
+ Exaggerated deep tendon reflexes
+ Absent superficial reflexes
+ Extensor plantar
+ Hemianaesthesia
+Localisation of Hemiplegia
+ 1-Cortical lesion
+ 2-Subcortical lesion
+ 3-Brainstem lesion
+ 4-Spinal cord lesion
+Cerebral lesions
+ Cerebral lesions are the most
+ common causes of hemiplegia with
+ lesions in either cortical or
+ subcortical structures
+Cerebral lesion
+Cortical lesions
+ Cortical lesions produce weakness, which is
+ more focal than the weakness seen with
+ subcortical lesions.
+
+ Weakness associated with signs of cortical
+ dysfunction (aphasia ,seizures)
+Subcortical lesions
+ Subcortical lesions are more likely to produce equal
+  weakness of the face, arm, and leg on the contralateral
+  side(due to pyramidal decussation), because the
+  descending axons that project to the brainstem and
+  spinal cord converge into a small volume in the
+  internal capsule. Hemiparesis associated with UMN
+  facial on same side.
+Brainstem lesion
+ Brain stem lesions are more likely to
+ produce equal weakness of the face,
+ arm, and leg on the contralateral
+ side(due to pyramidal decussation)+
+ ipsilateral LMN cranial nerve lesions.
+Brainstem lesion
+Brainstem lesion
+Spinal lesions
+ Spinal lesions can produce hemiplegia
+  sparing the face, although they mostly will
+  cause bilateral weakness.
+ The lesion should be at the cervical region
+  above C5 to cause hemiplegia (hemisection
+  of spinal cord).
+Spinal lesions
+  Hemisection of the spinal cord
+  ( Brown sequard syndrome)
+1-Segmental LMN signs and sensory changes at the
+level of lesion due to damage of the roots and
+anterior horn cells at the level of lesion.
+
+2-Loss of pain, temp on the contralateral side due
+to interruption of crossed spino- thalamic tract.
+
+3- Loss of proprioception ( on the same side) due to
+interruption of ascending fibers of posterior column.
+
+
+4- Spastic weakness( on the same side) due to
+interruption of descending cortico spinal tract
+Causes
+ Cerebrovascular Accident (CVA)
+   Thrombosis, Embolism or hemorrhage
+ Transient Ischemic Attack (TIA)
+ Migraine syndrome
+ Head Trauma
+   Brain Contusion
+   Subdural Hematoma
+   Epidural hematoma
+ Post ictal (Todd's Paralysis)
+ Diabetes Mellitus
+ Brain Tumor (Primary or metastatic disease)
+ Infection
+   Brain abscess
+   Encephalitis
+   Subdural empyema
+   Meningitis
+ Nonketotic hyperosmolar Coma
+ Vasculitis
+ Demyelinating disease
+   Multiple Sclerosis
+   Acute necrotizing myelitis
+ Hereditary disease
+   Leukodystrophies
+ Congenital or perinatal injury
+ Onset
+ Vascular – Acute or sudden
+ Epilepsy – progression over seconds to
+  minutes
+ Migraine - progression over seconds to
+  minutes
+ Demyelinating disease - progression over
+  days
+ Space occupying lesion (tumor or abscess) -
+  progression over weeks
+Causes of progressive hemiplegias
+Progressive hemiplegias can be caused
+ by:
+ 1-AV malformations
+  2-Brain abscesses
+ 3-Tumours
+ 4-Demyelinating disease
+  5-Sturge Weber syndrome
+Causes of transient hemiplegia
+ TIA
+ Migraine
+ Post ictal (Todd’s paralysis)
+ Multiple Sclerosis
+Diagnosis
+ Hemiplegia is identified by history,
+ clinical examination and radiological
+ studies like a CT scan or MRI of the
+ brain or spinal cord should be used to
+ confirm injury in the brain or spinal
+ cord.
+

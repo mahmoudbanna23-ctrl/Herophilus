@@ -1,0 +1,541 @@
+SOURCE: Semester 8\Neuro\Theoritical\PPT\L8) OCD & PTSD.pdf
+
+Obsessive-Compulsive
+Disorder & Post-Traumatic
+Stress Disorder
+4th Year Medical Students – Psychiatry Rotation | Evidence-Based Clinical
+Education
+
+ DEPARTMENT OF PSYCHIATRY     DSM-5 & ICD-11 ALIGNED
+Learning Objectives
+
+Define & Diagnose                                              Neurobiology
+Define OCD & PTSD using DSM-5 criteria; distinguish from       Explain the neurobiology and pathophysiology underlying OCD
+differential diagnoses                                         and PTSD
+
+
+
+
+Management                                                     Clinical Cases
+Outline evidence-based pharmacological and psychotherapeutic   Analyse case studies; apply Y-BOCS, PCL-5, CAPS-5; discuss
+management                                                     epidemiology, risk factors & prognosis
+Introduction: Anxiety & Trauma-Related Disorders
+
+
+
+
+DSM-5 Reclassification (2013): OCD and PTSD were separated from Anxiety Disorders due to distinct neurobiological,
+phenomenological, and treatment profiles.
+
+
+
+
+  ~18%                                                                                      2–3%                               7–30%
+  Lifetime prevalence of anxiety disorders worldwide                                        OCD lifetime prevalence globally   PTSD: 7–8% general population; up to 30% in trauma-exposed groups
+ PART ONE
+
+
+
+OCD — Obsessive-
+Compulsive Disorder
+Definition · Neurobiology · Diagnosis · Management
+Definition of OCD
+
+Obsessions
+Recurrent, intrusive thoughts, urges, or images
+causing marked anxiety. Recognised as
+products of one's own mind; individual
+attempts to suppress or neutralise them.
+
+
+
+Compulsions
+Repetitive behaviours or mental acts
+performed in response to obsessions or rigid
+rules, aimed at reducing distress — not
+realistically connected to what they prevent.
+
+
+
+     Clinical Threshold: Symptoms must be
+     time-consuming (>1 hr/day) or cause
+     clinically significant distress or functional
+     impairment.
+Epidemiology of OCD
+
+                      2–3%                                                 10th
+                    Lifetime Prevalence                                 Leading Disability
+                            Worldwide                                        WHO ranking
+
+
+
+
+                          ~17                                              50%
+                        Age of Onset                                        Early Onset
+                         Average (years)                                 Cases before age 20
+
+
+Gender & Onset                                      Comorbidities
+•   Males: onset age 6–15; females: age 20–29       •   90% have at least one other psychiatric disorder
+•   Bimodal peak: childhood and early adulthood     •   Major depression: 67% comorbidity rate
+•   3–5× increased risk in first-degree relatives   •   Mean delay to diagnosis: 11 years globally
+Etiology & Risk Factors of OCD
+
+
+Genetic                                                                    Neurobiological
+Heritability 40–65% (twin studies). COMT, SLC1A1, SERT variants.           CSTC circuit dysfunction. Serotonergic dysregulation.
+Higher MZ vs DZ concordance.                                               Glutamatergic & dopaminergic involvement. OFC & caudate
+                                                                           hyperactivation.
+
+
+
+
+Psychological                                                              Environmental
+Inflated responsibility, overestimation of threat, perfectionism,          Childhood trauma, streptococcal infection (PANDAS/PANS),
+intolerance of uncertainty, behavioural conditioning.                      stressful life events, perinatal factors.
+
+
+
+     Note: OCD is multifactorial — the biopsychosocial model applies in all clinical evaluations.
+Neurobiology & Pathophysiology of OCD
+
+
+
+
+                                        Neurotransmitter Changes
+
+                                         Neurotransmitter          Change         Significance
+
+                                         Serotonin (5-HT)          ↓ Activity     Key target of SSRIs
+
+                                         Dopamine                  ↑ Striatum     Reward & habit reinforcement
+
+
+                                         Glutamate                 ↑ In OFC       Excitatory drive in CSTC loop
+
+                                         GABA                      ↓ Inhibition   Loss of inhibitory control
+DSM-5 Diagnostic Criteria for OCD (300.3 / F42)
+                             1                                                             2
+
+Obsessions & Compulsions                                      Time-Consuming or Impairing
+Recurrent intrusive thoughts with attempts to suppress;       Symptoms >1 hr/day OR cause clinically significant
+repetitive acts driven by obsession aimed at distress         distress/impairment in social, occupational, or other areas
+reduction
+
+
+
+                             3                                                             4
+
+Not Due to Substance/Medical                                  Not Better Explained
+Not attributable to physiological effects of a substance or   Not better explained by GAD, BDD, trichotillomania,
+another medical condition                                     excoriation disorder, stereotypies, or eating disorders
+Common Obsessions & Compulsions
+Obsessions (Intrusive Thoughts)                                                 Compulsions (Responses)
+
+     Contamination                                                                     Cleaning/Washing
+     Fear of germs, dirt, bodily fluids                                                Excessive hand-washing, avoiding surfaces
+
+
+     Harm                                                                              Checking
+     Fear of hurting self or others; violent images                                    Repeatedly checking locks, gas, appliances
+
+
+     Symmetry/Order                                                                    Counting/Repeating
+     Need for things to be 'just right'                                                Counting to specific numbers, re-reading
+
+
+     Forbidden Thoughts                                                                Mental Rituals
+     Sexual, religious (scrupulosity), taboo thoughts                                  Praying, mental reviewing, seeking reassurance
+
+
+
+     Clinical Pearl: Compulsions provide only temporary relief — they perpetuate the OCD cycle by reinforcing avoidance.
+OCD Subtypes & Specifiers
+Contamination (~40%)                                                       Checking (~30%)
+Most common. Fear of germs, chemicals, bodily fluids. Associated           Repetitive checking driven by harm avoidance. Doors, stoves,
+with excessive cleaning.                                                   driving routes.
+
+
+
+Symmetry/Ordering (~25%)                                                   Hoarding (~15%)
+'Just right' experiences. Linked to tics and early onset.                  Now classified separately in DSM-5. Difficulty discarding due to
+                                                                           perceived need.
+
+
+
+Pure-O (~20%)                                                              PANDAS/PANS
+Distressing intrusive thoughts without overt rituals. Mental rituals       Paediatric autoimmune neuropsychiatric disorder associated with
+are covert compulsions.                                                    streptococcus — acute onset OCD in children.
+
+
+
+     DSM-5 Specifiers: With good/fair insight | With poor insight | With absent insight/delusional beliefs | Tic-related
+Differential Diagnosis of OCD
+Disorder                   Similarities to OCD                         Key Distinguishing Features
+
+GAD                        Repetitive worry, anxiety                   Worries are realistic, ego-syntonic; no
+                                                                       rituals
+
+Body Dysmorphic Disorder   Intrusive thoughts, repetitive behaviours   Focus on perceived physical defect; poor
+                                                                       insight
+
+Eating Disorders           Ritualised behaviours                       Content limited to food/weight/shape
+
+Schizophrenia              Intrusive, bizarre thoughts                 Ego-syntonic, lack of insight, positive
+                                                                       symptoms
+
+PTSD                       Intrusive content, avoidance                Trauma-specific re-experiencing; no
+                                                                       compulsions
+
+Tic Disorders (Tourette)   Repetitive movements                        Tics are involuntary, not aimed at
+                                                                       neutralising anxiety
+
+Depression (rumination)    Repetitive negative thinking                No neutralising compulsions; mood-
+                                                                       congruent themes
+Assessment & Psychiatric Evaluation of OCD
+Clinical Assessment                                                     OCD Severity: Y-BOCS
+
+•      Chief Complaint: Primary obsessions & compulsions in             Gold standard clinician-administered scale. 10 items (5 obsession
+       patient's own words                                              + 5 compulsion). Each scored 0–4. Total range: 0–40. Y-BOCS
+•      HPI: Onset, duration, triggers, fluctuation, functional impact   ≥16 = moderate; primary treatment indication.
+•      MSE: Ritualised behaviours, thought content (ego-dystonic
+       vs syntonic), insight (good/poor/absent), mood & affect
+•      Physical Exam: Skin changes from washing; tic assessment
+•      Collateral History: Family accommodation and reassurance-
+       giving
+
+
+
+
+    5 Dimensions                                                        Other Scales
+    Time occupied · Interference · Distress · Resistance · Control      OCI-R (self-report) · DOCS · CY-BOCS (paediatric) · PADUA
+    (×2 for obsessions & compulsions)                                   Inventory
+Management of OCD
+                                                                               Pharmacological Treatment
+   Step 1 — Psychoeducation & Self-Help
+   OCD information, online CBT tools, support groups (e.g., OCD-UK)              Drug                        Class                     Target Dose
+
+                                                                                 Fluoxetine ★                SSRI 1st line             40–80 mg/day
+
+      Step 2 — CBT-ERP + SSRI                                                    Fluvoxamine ★               SSRI 1st line             100–300 mg/day
+
+      First-line combination; high-dose SSRI for 8–12 weeks                      Sertraline ★                SSRI 1st line             100–200 mg/day
+
+                                                                                 Paroxetine ★                SSRI 1st line             40–60 mg/day
+
+          Step 3 — Specialist CBT + Augmentation                                 Clomipramine ★              TCA 2nd line              100–250 mg/day
+
+          Intensive ERP, antipsychotic augmentation, risk management
+                                                                                        Augmentation (SSRI-refractory): Risperidone, Aripiprazole, Memantine,
+                                                                                        D-cycloserine (enhances ERP learning)
+             Step 4 — Specialist/Inpatient Care
+             IV clomipramine, DBS, rTMS, multidisciplinary team
+
+
+
+
+  NICE Guidelines (2005, updated 2021): First-line — CBT-ERP ± SSRI. Stepped-care approach based on severity and response.
+CBT & Exposure Response Prevention (ERP)
+
+
+                                                                                 Response
+          Psychoeducati          Fear Hierarchy            Exposure              Prevention            Cognitive
+               on                                        Graduated in vivo                            Restructuring
+                                 Rank triggers using                            Resist rituals to
+           Explain the OCD          SUDS 0–100          and imaginal tasks     allow habituation         Identify and
+          cycle and rationale                                                                             challenge
+                                                                                                          distortions
+
+
+
+
+Evidence: ERP achieves 50–70% symptom reduction. Meta-analyses confirm superiority over supportive therapy and waitlist. (Foa et
+al., 2005; APA Guidelines 2007)
+Prognosis & Complications of OCD
+Prognosis & Course                                               Complications & Comorbidities
+
+•   Chronic, fluctuating course in most patients                 •   Major depression (67% comorbidity)
+•   ~20% full remission; ~40% partial; ~40% persistent           •   Social isolation, occupational dysfunction
+    symptoms                                                     •   Substance misuse (self-medication)
+•   Good factors: Good insight, mild severity, social support,   •   Suicide risk: 10× higher than general population
+    ERP adherence                                                •   Dermatological: contact dermatitis from washing
+•   Poor factors: Hoarding subtype, poor insight, comorbid       •   Paediatric: school refusal, family accommodation
+    OCPD, early onset
+Clinical Case Study: OCD
+ AHMED, 28-YEAR-OLD MALE ENGINEER
+
+
+Presenting complaint: 3-year history of contamination fear (doorknobs,
+taps, shared surfaces). Spends 4–5 hrs/day washing hands until 'raw.'
+Cannot shake hands or use public transport. Recently stopped attending
+work. PHQ-9 = 16. Insight intact.
+Case Discussion: Ahmed
+
+ Diagnosis                                               Rating Scale
+ OCD (F42.2), Contamination subtype, with good insight   Y-BOCS: assess time, interference, distress, resistance,
+                                                         and control — for both obsessions & compulsions
+
+
+
+ Management Plan                                         Response Timeline
+ Step 2: ERP (graduated hierarchy — touching surfaces,   ERP response in 6–12 weeks; full SSRI effect at 8–12
+ delaying washing) + Sertraline 50→200 mg.               weeks at therapeutic dose
+ Psychoeducation. PHQ-9 monitoring.
+KEY TAKEAWAYS
+
+
+
+OCD — Summary
+Diagnosis
+DSM-5: obsessions + compulsions >1 hr/day causing distress or impairment;
+assess insight carefully
+
+
+Neurobiology
+CSTC circuit hyperactivation; serotonergic, dopaminergic & glutamatergic
+dysregulation
+
+
+Treatment
+First-line: CBT-ERP ± SSRI (high dose, 8–12 weeks). Stepped-care per NICE
+guidelines.
+
+
+Prognosis
+Chronic course; suicide risk 10×; early treatment = better outcomes
+PART TWO: PTSD
+Post-Traumatic Stress Disorder — Definition · Neurobiology · Diagnosis ·
+Management
+Definition of PTSD
+PTSD is a psychiatric disorder occurring after experiencing or witnessing a traumatic event — disaster, accident, combat, rape, or threat of
+death, sexual violence, or serious injury.
+
+
+  Re-Experiencing                                                        Avoidance
+  Flashbacks, nightmares, intrusive memories — trauma relived            Avoiding trauma-related thoughts, feelings, places, activities, or
+  as if present                                                          people
+
+
+
+  Negative Cognitions                                                    Hyperarousal
+  Distorted beliefs; persistent negative emotions; detachment            Hypervigilance, exaggerated startle, sleep disturbance,
+                                                                         irritability
+
+
+
+       DSM-5 (2013): PTSD moved from Anxiety Disorders → Trauma- & Stressor-Related Disorders | ICD-11: also includes Complex PTSD
+       (CPTSD)
+Epidemiology of PTSD
+                                                7–8%
+                                              Lifetime Prevalence
+                                                 General population
+
+
+
+                                                      2×
+                                               Higher in Women
+                                                       vs. men
+
+
+
+                                                ~30%
+                                               Combat Veterans
+                                                      Affected
+
+
+
+                                                50%+
+                                                 Rape Survivors
+                                                   Develop PTSD
+  ~70% of adults experience trauma; only 20% develop PTSD. Median onset within 3 months.
+
+
+
+  12-month prevalence: 3.5% USA; 0.5–1.0% Europe. Comorbid MDD in 50%; SUD in 35–52%.
+
+
+
+  Higher rates in conflict zones, refugee populations, and children/adolescents (15–43% post-trauma).
+Causes & Traumatic Triggers of PTSD
+
+  DSM-5 Criterion A: Exposure to actual/threatened death, serious injury, or sexual violence via direct experience,
+  witnessing, learning of trauma to a close person, or repeated exposure to aversive details (e.g., first responders).
+
+
+
+   Combat & Military                                                    Sexual Violence
+   War zones, military service, peacekeeping missions                   Rape, sexual assault, childhood sexual abuse
+
+
+   Accidents                                                            Natural Disasters
+   Motor vehicle, workplace, aviation incidents                         Earthquakes, floods, hurricanes, wildfires
+
+
+   Interpersonal Violence                                               Medical Trauma
+   Domestic abuse, assault, robbery, kidnapping                         Life-threatening illness, ICU admission, difficult
+                                                                        childbirth
+Neurobiology of PTSD
+
+
+
+
+                       Key Neurotransmitters
+
+                         ↑ Noradrenaline       ↓ Serotonin
+                         Drives hyperarousal   Impairs mood & fear regulation
+
+
+
+                         Altered GABA          ↑ CRH
+                         Inhibition deficit    Stress axis activation
+DSM-5 Diagnostic Criteria for PTSD (309.81 / F43.10)
+        Criterion A — Trauma Exposure
+ 1      Direct, witnessed, learned, or repeated exposure to traumatic event
+
+
+
+
+        Criterion B — Intrusion (≥1)
+ 2      Flashbacks, nightmares, intrusive memories, reactivity to trauma cues
+
+
+
+
+        Criterion C — Avoidance (≥1)
+ 3      Avoidance of trauma-related thoughts/feelings or external reminders
+
+
+
+
+        Criterion D — Neg. Cognitions (≥2)
+ 4      Negative beliefs, blame, persistent negative emotions, detachment, anhedonia
+
+
+
+
+        Criterion E — Arousal (≥2)
+ 5      Hypervigilance, startle, sleep disturbance, irritability, concentration difficulties
+
+
+
+
+        Criteria F & G
+ 6      Duration >1 month; clinically significant distress or functional impairment
+
+
+
+     Specifiers: With dissociative symptoms (depersonalisation/derealisation) | With delayed expression (onset ≥6 months post-trauma)
+Symptom Clusters — Clinical Features
+
+Re-Experiencing (B)                                    Avoidance (C)
+•   Intrusive memories & nightmares                    •   Avoidance of thoughts, feelings, reminders
+•   Flashbacks — dissociative re-experiencing          •   Social withdrawal and isolation
+•   Physiological reactivity (tachycardia, sweating)   •   Emotional numbing (alcohol, work)
+
+
+
+
+Neg. Cognitions (D)                                    Hyperarousal (E)
+•   Trauma amnesia (dissociative)                      •   Hypervigilance; exaggerated startle
+•   Beliefs: "I am bad / world is dangerous"           •   Insomnia, irritability, aggression
+•   Guilt, shame, anhedonia, detachment                •   Poor concentration; reckless behaviour
+Acute Stress Disorder vs PTSD
+Feature            Acute Stress Disorder (ASD)              PTSD
+
+Duration           3 days – 1 month post-trauma             >1 month post-trauma
+
+DSM-5 Code         308.3 / F43.0                            309.81 / F43.10
+
+Dissociation       Required criterion (≥9 of 14 symptoms)   Optional specifier only
+
+Symptom Clusters   Any 9+ from five clusters                B:≥1, C:≥1, D:≥2, E:≥2
+
+Predictive Value   ~50% convert to PTSD                     Established diagnosis
+
+Treatment          Psychological First Aid, TF-CBT          TF-CBT, EMDR, SSRIs
+Management of PTSD: Overview
+       Psychological First Aid
+       Safety, calming, connectedness, self-efficacy. Avoid formal debriefing (harmful).
+
+
+
+       Trauma-Focused Psychotherapy
+       TF-CBT (12–20 sessions), EMDR (8–12 sessions), CPT, Prolonged Exposure
+
+
+
+       Pharmacotherapy
+       SSRIs: Sertraline, Paroxetine (FDA). SNRIs: Venlafaxine. Prazosin (nightmares).
+
+
+
+       Adjunctive
+       Mindfulness, group therapy, inpatient for complex/suicidal cases
+
+
+
+
+  NICE 2018: TF-CBT or EMDR recommended first-line. SSRIs when psychological therapy
+  declined or unavailable.
+Trauma-Focused CBT & EMDR
+Trauma-Focused CBT                                           EMDR
+
+•   12–20 sessions: psychoeducation, stabilisation, trauma   •   8 phases across 8–12 sessions; bilateral stimulation
+    processing, cognitive restructuring                          while recalling trauma
+•   Variants: Prolonged Exposure (in-vivo + imaginal), CPT   •   Mechanism: working memory overload reduces vividness
+    (targeting "stuck points")                                   of trauma memory
+•   60–80% response rate (APA Guidelines 2017)               •   WHO & NICE recommended; especially effective for
+                                                                 single-event trauma
+                                                             •   No detailed verbal narrative required — advantage for
+                                                                 some patients
+Clinical Case Study: PTSD
+Nour, 34-year-old Female Nurse
+                                                               Diagnosis                            PCL-5 = 48
+8 months post-traumatic ICU shift (witnessed multiple
+COVID-19 deaths). Presents with nightmares, intrusive          PTSD: Criteria A (witnessed          >31 threshold = probable PTSD.
+memories, hypervigilance in hospitals, avoidance of medical    deaths), B, C, D, E, F (>1 month),   Monitor at 4 and 8 weeks of
+news, emotional distance from family, extended sick leave.     G (impairment) all met.              treatment.
+
+MSE: Flat affect, hypervigilance. PHQ-9 = 14. PCL-5 = 48. No
+suicidal ideation.
+                                                               First-Line Treatment                 Complex PTSD (ICD-
+                                                                                                    11)
+                                                               TF-CBT (12–16 sessions). If
+                                                               declined: sertraline                 Consider if:
+                                                               50→200mg. Occupational               prolonged/repeated trauma,
+                                                               health referral.                     affect dysregulation, negative
+                                                                                                    self-concept, disturbed
+                                                                                                    relationships — modified
+                                                                                                    therapy required.
+Summary & Key Takeaways
+OCD — Key Points                                               PTSD — Key Points
+
+•   Intrusive obsessions + ritualistic compulsions >1hr/day    •   Trauma + B/C/D/E clusters >1 month with impairment
+    with impairment                                            •   Amygdala ↑, hippocampal volume ↓, PFC ↓; PCL-5 screen /
+•   CSTC circuit: OFC/caudate hyperactivation; serotonin &         CAPS-5 gold standard
+    glutamate key                                              •   First-line: TF-CBT (12–20 sessions) or EMDR (8–12
+•   Y-BOCS gold standard (0–40); first-line: ERP + high-dose       sessions)
+    SSRI (sertraline 200mg)                                    •   FDA SSRIs: sertraline, paroxetine — treat ≥12 months;
+•   Clomipramine: highest efficacy TCA but more side               prazosin for nightmares
+    effects                                                    •   Avoid benzodiazepines (impair extinction learning); 50%
+•   Chronic course: 40% persistent; 20% full remission;            of ASD → PTSD
+    comorbid MDD 67%
+References
+1.    American Psychiatric Association. (2013). DSM-5. APA Publishing.
+2.    NICE. (2021). OCD and body dysmorphic disorder: treatment (CG31).
+3.    NICE. (2018). Post-traumatic stress disorder (NG116).
+4.    Goodman WK, et al. (1989). The Yale-Brown Obsessive Compulsive Scale. Archives of General Psychiatry, 46(11), 1006–1011.
+5.    Foa EB, et al. (2005). Randomised trial of prolonged exposure for PTSD. J Consulting and Clinical Psychology, 73(5), 953–964.
+6.    Shapiro F. (2018). EMDR Therapy (3rd ed.). Guilford Press.
+7.    World Health Organization. (2022). ICD-11. WHO.
+8.    Weathers FW, et al. (2013). The PTSD Checklist for DSM-5 (PCL-5). National Center for PTSD.
+9.    Soomro GM, et al. (2008). SSRIs versus placebo for OCD. Cochrane Database of Systematic Reviews.
+10.   Kessler RC, et al. (2005). Lifetime prevalence of DSM-IV disorders. Archives of General Psychiatry, 62(6), 593–602.
+11.   Van der Kolk BA. (2015). The Body Keeps the Score. Viking Penguin.
+12.   Bisson JI, et al. (2020). Psychological therapies for PTSD. Psychological Medicine, 50(4), 626–636.
+                Thank You
+                    Questions & Discussion
+
+OCD & PTSD — Psychiatry Curriculum | 4th Year Medical Students
+                 Department of Psychiatry
+

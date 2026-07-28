@@ -1,0 +1,396 @@
+SOURCE: Semester 8\Pedo\Theoritical\PPT\12) HIE.pdf
+
+Definition
+    Intrapartum Distress or
+       Neonatal Distress
+               +
+Neonatal Neurological Symptoms
+                     Intrapartum Distress
+                       Neonatal Distress
+                               +
+                Neonatal Neurological Symptoms
+Obstetrical Evidence
+o CTG signs of fetal distress
+o Depressed scalp pH
+o Fresh meconium
+
+Obstetrical Causes
+o Prolaps of umbilical cord
+o Placental abruption
+o Rupture of uterus
+                       Intrapartum Distress
+                         Neonatal Distress
+                                 +
+                  Neonatal Neurological Symptoms
+
+
+Neonatal Distress
+o Depressed Apgar Score at 5 and/or 10 min
+o Need for ventilatory support post partum>5 min
+o Decreased pH (<7.1) umbilical cord or first hour
+  post partum
+o Increased Base Deficit ( > 10 mEqu/l )
+                   Intrapartum Distress
+                     Neonatal Distress
+                             +
+              Neonatal Neurological Symptoms
+
+
+Cerebral Dysfunction
+o Abnormal muscular tone& posture
+o Abnormal level of consciousness
+o Abnormal posture
+o Abnormal primitive reflexes eg sucking
+  Seizures
+Incidence and magnitude
+    of the problem
+                                  4.7 % of cases admitted
+                                            to NICU in
+                                      El-shatbi H. (2016)
+
+
+Lawn et al Int J Epidemiol 2006   Lawn JE, et al, Lancet 2005.
+ 23% of all neonatal deaths annually
+   are caused by perinatal asphyxia
+     Global estimates of BA related
+     deaths 0.7-1.2 million deaths/y
+
+Global estimates of intrapartal stillbirth and intrapartal neonatal deaths
+                    WHO 2004 – BA birth asphyxia
+  1- Lack of filing system
+
+
+ 2- High incidence of home
+         deliveries
+
+
+    3- Lack of diagnosis
+
+
+   4- the cause of death in
+     healthcare facilities is
+often inadequately documented
+  School-age outcomes of mod & severe HIE
+
+                                  Moderate                Severe
+                                  (n = 181)               (n = 11)
+                                       %                       %
+   Disabled                            21                    100
+   CP                                  12                    100
+   Cognitive deficits                   8                      82
+   Epilepsy                             2                     72
+   Legal blindness                      1                     46
+   Hearing loss (aids)                  6                      9
+   Multiply-disabled                    8                    100
+   *1974-79 / 1982-86 (combined); Post-Discharge Deaths 9%, Canada
+
+
+
+Robertson, CM. Fetal & Neo Brain Injury, Chapter Cambridge Press 2002
+Economic Costs Associated with Mental Retardation, Cerebral Palsy,
+    Hearing Loss, and Vision Impairment --- United States, 2003
+Causes and
+pathogenesis
+                                         ▪ Antepartal 50% of cases
+                                         ▪ Intrapartum in 40%
+                                         ▪ postpartum in 10%
+
+
+
+
+Haider b et al, Birth Asphyxia in Developing Countries: Curr Probl Pediatr Adolesc
+Health Care 2006;
+• Oligohydramnios
+
+
+• Cord prolapse
+
+
+• Carboxyhemoglobin
+
+
+
+•   Significant anaemia
+    isoimmunization, ruptured vasa
+    previa
+▪   Excessive uterine activity
+
+
+
+▪   Placental abruption
+
+
+
+▪   Placental infarction-
+
+
+
+▪   Chorioamnionitis
+Clinical picture
+       Hypoxic ischemic encephalopathy Classification
+              modified from Sarnat and Sarnat
+
+                                Moderate HIE
+                  Mild HIE(I)                      Severe HIE(III)
+                                    (II)
+
+Level of
+                   Hyperalert      Lethargic             coma
+consciousness
+
+Muscle tone         Normal       Mild hypotonia         Flaccid
+
+suck              Normal/Weak     Weak/Absent           Absent
+
+Moro                Strong      Weak/ incomplete        Absent
+
+                                                   Frequent/difficult
+Seizures            Absent          common
+                                                      to control
+    Thompson score
+    Sign          0             1                  2              3
+    Tone        normal        hyper              hypo          flaccid
+   Level of
+                normal     Alert, stare        lethargic      comatose
+consciousness
+
+    Fits        none        <2 per day        >2 per day
+
+                                             Strong distal
+   posture      normal   Fisting &cycling                    Decerebrate
+                                                flexion
+
+  Suckling      normal         poor             absent
+
+    Moro        normal        partial           absent
+   Grasp        normal         poor             absent
+ Respiration    normal   hyperventillation    Brief apnea    Apnea (IPPV)
+ fontanelles    normal         Full              tense
+neuroimaging
+1
+    Crainial u/s
+2
+        CT
+3
+       MRI
+4
+      aEEG
+ T1W: high signal in the posterior limb of the internal
+  capsule (long arrow) and in the thalami (short arrow).
+
+ T2W : low signal in the same regions.
+10 µV   Normal aEEG
+        Upper Voltage > 10 µV
+5 µV
+        Lower Voltage > 5 µV
+
+
+
+        Moderately abn. aEEG
+        Upper Voltage > 10 µV
+        Lower Voltage < 5 µV
+
+
+
+        Severly abn. aEEG
+        Upper Voltage < 10 µV
+        Lower Voltage < 5 µV
+Neonatal Seizure Detection
+Hypothermia as neuroprotective
+Baltimore, 1955
+   Excellent results (long term
+   average: 42 months) with
+   94% survival and 3% with
+   neurologic sequelae
+
+
+Hypothermia and transfusion with oxygenated blod in the treatment of
+asphxia neonatorum Westin B etal Acta Paediatr Suppl 1962;139:1-80
+Cool Cap       (Gluckman, et al, Lancet, 2005)
+
+
+  NICHD          (Shankaran, et al, NEJM, 2005)
+
+
+  TOBY           (Azzopardi, et al, NEJM, 2009)
+
+
+China Study    (Zhou WH, et al, J Peds, 2010),
+   Group
+
+
+   ICE trial
+               (Simbruner, et al, Pediatrics,2016)
+Effective   Safe
+Asphyxiated newborns have a temperature
+2ºC less than non-asphyxiated newborns.
+ (Burnard 1958)
+1     Cerebral metabolism by 5 -7% for each degree
+         Celsius decrease in body temperature
+
+
+2    Apoptosis
+
+3  Excitatory amino acids
+
+4  Production of free radicals
+
+5  Duration of seizures
+
+6  Disruption of blood brain barrier
+
+7  Cerebral edema
+ Olympic Medical Seattle USA           Tecotherm, Teccom Germany
+
+
+
+
+Pediatrics. 2001 Nov;108(5):1103-10.               Blanktrol
+Hot and cold gel pack (matress)
+WBC
+
+
+
+
+      All brain layer
+      homogenously
+         cooled
+                                     Clinical + Lab
+
+
+
+              Criteria A
+
+
+Apgar score of ≤ 5 at 5 minutes after birth.
+Continued need for resuscitation > 10 minutes.
+Signs of fetal distress
+PH < 7.1 within 60 minutes of birth.
+Base Deficit ≥ 10mmol/L within 60 minutes of birth.
+                                    Clinical
+
+
+
+              Criteria B
+
+Disturbed consciousness PLUS 1≥ of the following:
+    Abnormal pupillary reflexes.
+    Abnormal muscle tone.
+    Absent or weak suck.
+    Clinical seizures.
+                                          aEEG
+
+
+
+                Criteria C
+
+A CFM record of at least 30 minutes duration should be
+obtained within the first 6 hours of life and should show one
+of the following if cooling is to be started:
+1) Normal background with some electrical seizure activity
+2) Moderate abnormal trace
+3) Severely abnormal trace
+     .
+1- Maintain oxygenation and ventilation
+
+           2- Maintain adequate perfusion
+
+            3- Vasopressors
+
+    4- Maintain normal hematocrit, blood glucose and
+               electrolyte level esp calcium
+5-Treat seizures: phenobarbital, phenytoin,
+         midazolam and lidocaine
+                    Cooling was commenced as early
+Time of starting   as possible, within the first 6 hours
+  hypothermia                    of birth
+
+
+    Target           A rectal temperature of 33 °C -
+ temperature                     35 °C.
+
+
+  Duration of
+                                 84 hours.
+   cooling
+
+                    Active cooling
+  Technique of
+    cooling
+                   Passive cooling
+1. Switch off radiant heater.
+
+2. Nurse the baby naked.
+
+
+
+ From the refrigerator (NEVER the freezer) the temperature of
+   the ‘Cool Paks or cool matress’ should be at around 10°C .
+• The standard evidence-based
+  neuroprotective treatment for moderate-to-
+  severe neonatal HIE is:
+  A. Phenobarbital
+  B. Mannitol
+  C. Therapeutic hypothermia
+  D. Exchange transfusion
+• Therapeutic hypothermia is ideally initiated
+  within:
+  A. 1 hour of birth only
+  B. 6 hours of birth
+  C. 12 hours of birth
+  D. 24 hours of birth
+• The usual target core temperature during therapeutic
+  hypothermia is:
+  A. 30–31°C
+  B. 32°C exactly
+  C. 33.5–34.5°C
+  D. 36–37°C
+• The usual duration of therapeutic hypothermia in
+  eligible neonates is:
+  A. 12 hours
+  B. 24 hours
+  C. 48 hours
+  D. 72 hours
+• Amplitude-integrated EEG (aEEG) in HIE is best described
+  as:
+  A. A replacement for clinical examination
+  B. An adjunct tool that can support assessment and
+  prognosis
+  C. Useless in cooled infants
+  D. Diagnostic only for infection
+• Which statement about mild HIE is most accurate?
+  A. It is always completely benign
+  B. It is routinely cooled in all centers with proven benefit
+  C. Outcomes are not always fully favorable, but routine
+  cooling remains uncertain
+  D. It never requires follow-up
+• The commonly used clinical staging system
+  for neonatal HIE is:
+  A. APGAR classification
+  B. Bell staging
+  C. Sarnat staging
+  D. Ballard score
+• Which of the following best describes the
+  purpose of therapeutic hypothermia?
+  A. To treat jaundice
+  B. To reduce secondary brain injury after
+  hypoxic-ischemic insult
+  C. To increase heart rate
+  D. To prevent all neonatal infections
+Which infant is the best candidate for standard
+therapeutic hypothermia under current
+guidance?
+A. A 35-week infant with mild encephalopathy
+B. A 37-week infant with moderate HIE
+presenting at 4 hours of age
+C. A 32-week infant with seizures
+D. A term infant presenting for the first time at
+30 hours of age
+• Standard therapeutic hypothermia is
+  recommended mainly for neonates who are:
+  A. <34 weeks’ gestation
+  B. ≥36 weeks’ gestation with moderate-to-
+  severe HIE
+  C. Any gestational age with mild HIE only
+  D. Only neonates with seizures
+

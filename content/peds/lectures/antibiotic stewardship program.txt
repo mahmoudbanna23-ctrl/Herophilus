@@ -1,0 +1,91 @@
+SOURCE: Semester 8\Pedo\Theoritical\PPT\antibiotic stewardship program.pdf
+
+                                      Antibiotic resistance
+
+Antibiotic resistance is a natural evolutionary phenomenon accelerated by human
+activity, leading to "superbugs" that survive drugs designed to kill them. It is currently
+one of the top 10 global public health threats, directly responsible for over 1.2 million
+deaths annually.
+World Health Organization (WHO)
+
+Key Bacteria with Developed Resistance
+Health organizations like the World Health Organization (WHO) and the CDC classify
+resistant bacteria by threat level:
+    •   Urgent Threats (Critical Priority):
+
+             o   Carbapenem-Resistant Enterobacterales (CRE): Often called
+                 "nightmare bacteria," these include E. coli and Klebsiella pneumoniae that
+                 are resistant to nearly all available antibiotics.
+
+             o   Carbapenem-Resistant Acinetobacter baumannii: A major cause of
+                 hospital-acquired pneumonia and bloodstream infections.
+
+             o   Drug-Resistant Neisseria gonorrhoeae: Now showing resistance to
+                 cephalosporins, the last-line treatment for gonorrhea.
+
+    •   Serious Threats:
+
+             o   Methicillin-Resistant Staphylococcus aureus (MRSA): Resistant to
+                 penicillin-like antibiotics; a common cause of skin and life-threatening
+                 bloodstream infections.
+
+             o   Vancomycin-Resistant Enterococcus (VRE): Frequently causes
+                 infections in healthcare settings.
+
+             o   Drug-Resistant Streptococcus pneumoniae: Leading cause of bacterial
+                 pneumonia and meningitis.
+
+             o   Multidrug-Resistant Mycobacterium tuberculosis (MDR-B): Requires
+                 longer, more toxic, and more expensive treatments.
+
+                 Centers for Disease Control and Prevention | CDC (.gov) +5
+Primary Causes of Resistance
+Resistance is driven by both biological and socio-economic factors:
+   1. Overuse and Misuse:
+
+          1. Inappropriate Prescribing: Using antibiotics for viral infections like colds
+              or the flu where they are ineffective.
+
+          2. Patient Non-compliance: Stopping a course of antibiotics early allows
+              the strongest bacteria to survive and multiply.
+
+   2. Agricultural Practices:
+
+          1. Growth Promotion: Up to 80% of antibiotics in some regions are used in
+             livestock to promote growth rather than treat disease, creating a reservoir
+              of resistant bacteria that reaches humans through food.
+
+   3. Environmental Factors:
+
+          1. Poor Sanitation & Hygiene: Inadequate handwashing and waste
+              management facilitate the spread of resistant strains.
+
+          2. Global Travel: Rapid movement of people allows resistant bacteria to
+              cross borders quickly.
+
+              Cleveland Clinic
+
+
+
+
+An Antimicrobial Stewardship Program (ASP) is a systematic, multi-disciplinary
+approach in healthcare settings designed to optimize the use of antimicrobials. The
+primary goal is to ensure the "5 Rights" of antibiotic use: the right patient, right drug,
+right dose, right route, and right duration.
+Core Objectives
+   1. Improve Patient Outcomes: Ensure the fastest and most effective cure for
+       infections.
+
+   2. Enhance Patient Safety: Reduce adverse drug events, such as C.
+       difficile infections or allergic reactions.
+
+   3. Combat Resistance: Slow the development of multidrug-resistant organisms
+       (MDROs) by reducing unnecessary drug pressure.
+  4. Reduce Costs: Lower healthcare spending by eliminating unnecessary
+     prescriptions and reducing hospital stays.
+
+     Impact of ASPs
+When implemented correctly, ASPs have been shown to reduce antibiotic use by 20–
+40% without compromising patient safety, and they significantly decrease the incidence
+of healthcare-associated infections.
+

@@ -1,0 +1,318 @@
+SOURCE: Semester 8\Neuro\Theoritical\PPT\L9) CNS infection.pdf
+
+CNS INFECTIONS                             Personal Photo
+
+
+
+
+                  DR Doaa Elsalamawy
+             Professor of neuropsychiatry
+       Faculty of medicine Alexandria university
+
+   Email Doaa.Elsalamawy@gmail.com
+ILOs:
+By the end of this session, the students should be able
+to:
+-Detect meningitis early
+-Differentiate between different types of meningitis
+-Investigate a case of meningitis and encephalitis
+-know how to treat and prevent serious complications
+.Clinical approach to “CNS infections”
+Case 1
+A 28-year-old man presents to the emergency room with a 48-
+hour complaint of headache. The headache is primarily in the
+frontal and occipital regions and associated with mild nausea. He
+has taken various analgesics without any improvement in the
+headache. The intensity of the headache has gradually increased
+since it began prompting evaluation as he was no longer able to
+tolerate it. His only other symptom besides nausea, is a tightness
+in the shoulders and neck. He is not known to have any medical
+illnesses, and there is no history of head trauma.
+.Clinical approach to “CNS infections”
+
+On examination, he has a temperature of 40°C; blood pressure,
+110/68 mmHg; and pulse, of 110 beats/min. He is awake and
+alert and fully oriented; however, he feels he is taking too much
+time to answer the questions. His general examination is notable
+for the finding of a Kernig sign without evidence of any skin rash.
+A Brudzinski sign is present. Cranial nerves are normal except
+for bilateral horizontal nystagmus. His motor, sensory, and
+cerebellar examinations are normal.
+.Clinical approach to “CNS infections”
+
+The deep tendon reflexes are hyperreflexia throughout with
+evidence of a Babinski sign. A CT scan of the head is performed
+without contrast, which is read as normal. Importantly his
+headache is worse now than what it was when he presented to
+the emergency room.
+◆ What is the most likely diagnosis?
+◆ What is the best diagnostic next step?
+◆ What is the next step in therapy?
+Case analysis :
+The presentation of a crescendo headache associated with
+nausea, fever, and slowness in responding to questions should
+alert the clinician of meningitis or encephalitis. It is also
+suspected if the patient presented with a triad of headache,
+fever and disturbed level f consciousness. The presence of neck
+tightness and a Kernig sign is consistent with meningitis rather
+than encephalitis.
+The lumbar puncture CSF study is the best way to determine the
+etiology of meningitis allowing one to distinguish between a
+bacterial versus viral, and so forth. Although CSF studies are key
+to identifying meningitis, an imaging study with either a CT head
+scan or preferably MRI brain scan with contrast is preferably done
+prior to the spinal tap.
+• MRI brain scan offers better resolution than a CT head scan, but it
+  may not always be ready available. The importance of the imaging
+  studies is to help exclude increased intracranial pressure caused by
+  impaired CSF drainage or a space-occupying lesion. Increased
+  intracranial pressure could potentially lead to cerebral herniation and
+  death of the patient.
+Focal neurologic findings or the presence of papilledema
+mandate an imaging study.
+
+Once it is determined that the risk of herniation is low, a lumbar
+puncture is performed. Lumbar puncture analysis should include
+opening and closing pressure, and CSF studies for glucose,
+protein, cell count with differential, Gram stain, culture.
+CNS Infection
+Meningitis and encephalitis are diffuse infection of the CNS.
+Meningitis implies primary involvement of the meninges,
+whereas encephalitis indicates brain parenchymal involvement.
+Because these anatomic boundaries are often not distinct, many
+patients have evidence of both meningeal and parenchymal
+involvement and should be considered to have
+meningoencephalitis.
+BACTERIAL INFECTIONS
+- Bacterial meningitis
+- Tuberculosis
+CNS Infection
+VIRAL INFECTIONS
+- Viral meningitis
+- Herpes simplex encephalitis
+Fungal infections
+- Cryptococcal meningitis
+Meningitis
+1- Acute Bacterial Meningitis
+2-Tuberculous Meningitis
+3-Aseptic Meningitis
+Acute Bacterial Meningitis
+Epidemiology:
+- Incidence: 5-10 cases / 100,000 population.
+- Sex: Males are generally more affected than females.
+- Age: according to the causative organism:
+    H. Influenza, between 3 months and 7 years
+Pneumococci: children and adult.
+    Meningococci: children and adult, rarely seen above the age of 50.
+- Season: Winter, Spring, and Fall
+Acute Bacterial Meningitis
+Causative Agent:
+Streptococcus pneumoniaE, Neisseria meningitides, and H. Influenza are
+responsible for 80% of cases.
+ - Enterobacteria e.g. E. coli, Pseudomonas, Proteus, Klebsiella.
+ - Group B Streptococci, Staph. Aureus, Listeria monocytogenes.
+Route of entry:
+A-Upper respiratory tract droplet infection
+B- Hematogenous spread:
+C- Extension from adjacent structures: Sinusitis, mastoiditis, ear infection.
+D- Penetrating wounds, or iatrogenic during lumbar or brain surgery
+Acute Bacterial Meningitis
+Symptoms and signs:
+- Fever, irritability, lethargy.
+- Headache, vomiting, blurring of vision, photophobia,
+- Neck rigidity
+- positive Kernig sign, positive Brudzinski sign.
+• Brudzinski sign
+   • - Passive neck flex------hips & knees flex
+   • Passive lower limb flex------hip, knee flexion other lower limb
+. Kernig sign
+     Sever stiffness of the hamstrings causes an inability to straighten
+the leg when the hip is flexed to 90 degrees
+Acute Bacterial Meningitis
+Symptoms and signs:
+- Convulsion,
+- Disturbed state of consciousness: drowsiness, confusion,
+delirium, stupor or coma.
+- Purpuric rash, petechial hemorrhage, and ecchymosis [in
+meningococcal meningitis]
+- In infants and neonates, headache is not described and
+   meningeal signs appear late and might not be evident.
+- Bulging fontanels and sutures in neonates
+Acute Bacterial Meningitis
+Complications
+- Focal neurological signs due to:
+    - Todd's paralysis
+    - Focal collection of exudates or brain abscess .
+    - Vascular occlusion and infarction, cranial nerve
+involvement.
+- In severe infection leading to circulatory collapse
+- Hydrocephalus
+-Subdural empyema
+Acute Bacterial Meningitis
+Investigations:
+Lumbar puncture & CSF examination prior to beginning
+antibiotic therapy. Starting antibiotic should not be delayed for
+culture and sensitivity
+CT brain before LP if there is; signs of lateralization or deteriorating level
+of consciousness
+Contraindications to L.P.:
+- Signs of possible herniation: Altered pupillary responses. New focal
+neurologic deficits.
+- Local skin infection over lumbar spine
+Acute Bacterial Meningitis
+• CSF ANALYSIS
+ - Increased pressure
+ - Increased cells, usually 1000-10,000/dl, mainly neutrophils
+ - Increased protein, usually above 45 mg/dl (100-500 mg/dl)
+ - Decreased sugar, less than 40 mg/dl, [or < 40% of blood sugar]
+ - Gram staining
+ - Culture and sensitivity test
+Acute Bacterial Meningitis
+Radiological investigations: CT and MRI brain in case of
+lateralization or suspicious increase intracranial pressure.
+Treatment
+General principles.
+    - Hospitalization:
+    - The minimum duration of antibiotic therapy: At least 10
+days from the start of treatment and at least 7 days after the
+patient becomes afebrile.
+Acute Bacterial Meningitis
+Recommended Empiric Antibiotics for Suspected Bacterial
+Meningitis,
+Vancomycin + ceftriaxone By anti meningitic dose
+Corticosteroids; dexamethasone inj. Decrease mortality and
+sequelae.
+Empirical treatment should be given until the results of CSF
+culture and sensitivity is available and then give the specific
+antibiotic.
+• Prevention
+• Chemoprophylaxis for contact with patient Ciprofloxacin 500mg single
+  dose in adults, children could receive either single dose of ceftriaxone
+  IM or 4 oral doses of rifampin
+• Vccination
+• Polysaccharide polyvalant vaccine against meningococcal meningitis
+Tuberculous Meningitis
+The incidence of TB meningitis has increased progressively since
+1985. This is related mainly (but not exclusively) to the increased
+incidence of HIV.
+
+Clinical picture:
+   - Headache, lethargy, vomiting, meningeal signs and seizures.
+   - Unlike other bacterial meningitis, TB meningitis is
+characterized by:
+Tuberculous Meningitis
+- Less rapid onset, over one or two weeks.
+- More frequent involvement of cranial nerves, especially, 3rd,
+4th, and 6th nerves, facial nerve and auditory nerve.
+- Focal neurological signs are more common.
+- Only two third of the patients have evidence of pulmonary TB
+- TB toxemia loss of weight night sweating anorexia.
+If left untreated, progressive deterioration of consciousness
+occur, up to stupor and deep coma. Mortality in undiagnosed
+case is nearly 100%.
+Tuberculous Meningitis
+Investigation
+• CSF analysis
+  - Increased pressure -Ground glass appearance
+  - Increased cells,50-100/dl, mainly lymphocytes
+  - Increased protein, (usually >500 mg/dl)
+  - Decreased sugar
+  - Decreased chloride
+  - Zeihl- Neelsen staining
+  - Culture
+  - PCR
+Tuberculous Meningitis
+
+• CT scan and MRI brain:
+ - Focal neurological granulomas
+ - Tuberculomas
+ - Hydrocephalus
+
+• CBC, Serum electrolyte, renal and liver functions
+Tuberculous Meningitis
+Treatment:
+  - A 2-month initiation phase with four drugs (rifampicin,
+isoniazid, pyrazinamide and ethambutol) followed by a 10 – 12
+month continuation phase of two drugs (rifampicin and
+isoniazid)
+
+ - Adjunctive corticosteroids appear to improve survival
+Aseptic meningitis
+The term aseptic meningitis is used to describe a syndrome with
+the following criteria:
+1 - Acute onset of meningeal symptoms and signs.
+2 - CSF suggestive of meningitis, showing small or large number
+of cells, mainly mononuclear cells and lymphocytes, increased
+protein, and normal sugar.
+3 - Absence of bacteria in CSF as demonstrated by culture.
+4 - Relatively short, benign course of illness.
+Encephalitis
+Encephalitis is an inflammation of the brain, which is often the
+result of an unusual complication from a common viral infection.
+The most common viral encephalitis is herpes simplex
+encephalitis.
+Many viruses can affect the brain: e.g. Herpes simplex virus
+[most common], Epstein-Barr virus, Cytomegalovirus….ect.
+Herpes Simplex Encephalitis
+- The commonest and gravest form of acute encephalitis.
+- It is fatal in 30-70% of cases, and most survivors have sequalae.
+- It is due to herpes simplex virus type 1 most common
+- The brain gets affected via local spread from oropharyngeal
+    infection to the brain via trigeminal or olfactory nerves, or
+    possible viremia,
+Clinical Picture Acute onset of headache, fever, confusion,
+delirium, stupor and may proceed into coma. [Edema may cause
+temporal lobe herniation leading to severe coma and death]
+re
+Clinical picture:
+• Acute onset of headache, fever , confusion,delirium ,stupor ,may
+  progress to coma, oedema may be sever causing temporal lobe
+  herniation and death
+Herpes Simplex Encephalitis
+- Manifestation of temporal lobe insult including: complex
+   partial seizures, psychotic or behavioral changes, olfactory
+   and/or gustatory hallucination, dysphasia, hemiplegia.
+- Memory change which is usually a late manifestation.
+Investigations
+- CSF: Increased pressure, increased protein, increased cells
+(mainly lymphocytes), and normal sugar. HSV DNA can be
+detected in the CSF by PCR assay, and this is the diagnostic test
+of choice.
+Herpes Simplex Encephalitis
+- CT scan and MRI brain:
+characteristically the lesion in the
+inferior and medial portion of the temporal
+lobe with scattered areas of hemorrhage
+and surrounding edema.
+- EEG: Periodic high voltage sharp
+ waves and slow waves complexes in
+the temporal area.
+Herpes Simplex Encephalitis
+Treatment
+ - IV acyclovir (Zovirax): 10 mg/Kg/8 hrs for 2 weeks.
+ - Corticosteroids may be used for acute edema.
+Case 2 ( test yourself)
+A 17 years old male was presented with fever, recurrent syncope
+and seizures following tooth extraction. He attended to a
+different clinic with the syncope and seizure symptoms on the
+following day. As his clinical progression went worse, he was
+transferred to the hospital for advanced diagnosis. He went into
+status epilepticus (SE) three days after the extraction, on the day
+we administered him to the ICU. His medical history was
+unremarkable. His fever was 38.5°C with arterial tension 125/75
+mmHg, heart rate 84/min, Kernig-Brundzki sign negative.
+Case 2 ( test yourself)
+Lumbar puncture results revealed insignificant cell count,
+cerebrospinal fluid (CSF) glucose: 72 mg/dl and protein: 35gr/dl. His
+cranial MRI revealed findings concordant with left temporal lobe
+encephalopathy. The seizures were controlled with anticonvulsive,
+other medications and the patient was awake and cooperative. As
+the general condition improved the patient was discharged from the
+intensive care unit to the infectious diseases ward on the fourth day
+of his admission.
+• What is your provisional diagnosis ?
+• How can you support your diagnosis ?
+• What is the lines of treatment ?
+Resources/References
+Bradly's neurology in clinical practice
+

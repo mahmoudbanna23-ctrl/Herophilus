@@ -1,0 +1,413 @@
+SOURCE: Semester 8\Pedo\Theoritical\PPT\PNEUMONIA.pdf
+
+PNEUMONIA
+BY
+
+Maged Eissa, MD
+Professor of Pediatrics
+Pulmonology Unit
+
+The Forgotten Killer of Children
+
+
+
+
+KEY FACTS
+   •   Leading cause of death in children worldwide.
+   •   Kills an estimated 1.4 million children under age of ﬁve every years (more than
+       AIDS, TB, and malaria combined).
+   •   Can be prevented by immunization, adequate nutrition and addressing
+       environmental factor.
+   •   Only 30% children with pneumonia receive the antibiotics they need.
+
+
+DEFINTION
+Inﬂammation of the lungs that is caused by infectious organisms or physical or
+chemical irritants.( PNEUMONIA VS PNEUMONITIS).
+
+Acute inﬂammatory consolidation of alveoli or inﬁltration of the interstitial tissue of
+the lung with inﬂammatory cells, or combination of both.
+
+
+
+
+CLASSIFICATION
+
+Clinical Classiﬁcation: primary without underlying cause or secondary to
+pulmonary disease as bronchiectasis or extrapulmonary diseases like aspiration in
+cerebral palsy.
+
+
+
+
+Combined Clinical Classiﬁcation:
+
+   •   The most commonly used classiﬁcation.
+  •   It guides the selection of appropriate initial treatments before the
+      microbiological cause of the disease is know
+  •   Identify all of a patient's important risk factors .
+
+
+
+
+  •   It classify pneumonia into :
+  •   Community Acquired Pneumonia (CAP ) which is infectious pneumonia in a
+      person who has not recently been hospitalized ,mostly caused by
+      Pneumococci, H.inﬂuenzae, viruses and atypical bacteria.
+  •   Hospital-Acquired Pneumonia ( HAP ) or nosocomial pneumonia which Is
+      pneumonia acquired 72 hours or more after admission to the hospital for
+      another illness or procedure or within 14 day after discharge from hospital.
+      Usually caused by MRSA, Pseudomonas , Enterobactr,and Serratia.
+  •   Ventilator Associated Pneumonia ( VAP )is a subset of nosocomial
+      pneumonia which occurs after at least 48 hours of intubation and mechanical
+      ventilation .
+
+
+
+
+Anatomical Classiﬁcation (Radiological)
+
+
+  •   Lobar
+  •   Segmental
+  •   Bronchopneumonia (Bilateral lobular)
+  •   Interstitial
+
+
+Etiological Classiﬁcation
+
+
+  •   Infective pneumonia:
+      Viral
+      Bacterial
+      Atyptical ( mycoplasma, chlamydia)
+      Mycotic.
+      Tuberculous.
+      Parasitic ( Loe_ler pneumonia)
+   •   Non- Infective pneumonia:
+       Immune mediated
+       Aspiration: (meconium, Hydrocarbon, FB).
+       Radiation pneumonitis
+
+
+
+
+Pathogenesis of pneumonia
+ Micro-organisms gain access to respiratory tract through:
+  • 1- Aspiration of oropharyngeal contents.
+  • 2- Inhalation of aerosolized particles.
+  • 3- Entry via blood stream.
+
+Occurrence of the disease will depend on:
+  • Inoculum size
+  • Virulence of the organism
+  • Host defenses.
+
+
+Factors aCecting host defenses:
+
+   •   Injury to muco-cilliary apparatus.
+   •   Loss or suppression of cough reﬂex.
+   •   Interference with phagocytic function of alveolar macrophages.
+   •   Pulmonary congestion and edema.
+   •   Accumulation of secretions.
+
+
+
+Following entry of organism into the lower respiratory tract and alveolar spaces
+outpouring of edema ﬂuid and accumulation of PNL the organism multiply in edema
+ﬂuid and spread of infection from one alveolus to another.
+Tissue response:
+
+   •   The inﬂammatory response to Streptococcus pneumoniae or Haemophilus
+       inﬂuenzae often produces lobar consolidation, but these infections rarely
+       result in tissue necrosis .
+   •   Staphylococci and many Gram-negative bacilli often produce necrosis, which
+       can lead to cavitation and even frank abscess formation; a peribronchial
+       distribution is characteristic, but lobar consolidation may occur.
+   •   Viruses generally produce interstitial inﬂammation rather than air-space
+       exudates. The infection is usually bilateral and causes di_use alveolar damage
+       and interstitial edema. Similar tissue responses may be initiated by
+       Mycoplasma, Chlamydia, and Legionella species.
+   •   Mycobacteria and fungi typically evoke a slow granulomatous response.
+
+Stages of Bacterial Pneumonia
+
+   •   Stage of Congestion.
+   •   Stage of Red hepatization.
+   •   Stage of Gray hepatization.
+   •   Stage of Resolution.
+
+Etiology of infective Pneumonia:
+
+Child Age is a good predictor of the likely pathogen.
+Neonate younger than 3 weeks:
+Infection is through vertical transmission from the mother during birth.
+Group B Streptococci and Gram negative enterococci and bacilli are the most
+common bacterial pathogens.
+Three weeks to 3 months:
+Most often bacterial in origin, and Streptococcus pneumoniae is the most common
+pathogen
+Four months to ﬁve years:
+Viruses are the most frequent cause of pneumonia in preschool-aged children.
+ Streptococcus pneumoniae & H. inﬂuenzae are the most common bacterial
+pathogens.
+Five years to Adolescence:
+Pneumococci ,Mycoplasma and Chlamydophila pneumoniae often are the etiologic
+agents in children older than ﬁve years and in adolescence.
+In General: Streptococcus pneumoniae is the most common bacterial cause of CAP
+after the neonatal period. Less common bacterial etiologies include haemophilus
+inﬂuenzae type B, Moraxella catarrhalis, and Staphylococcus aureus.
+Clinical Manifestations:
+General Signs:
+Tachypnea, fever, dyspnea, grunting, cyanosis
+Nasal ﬂare, chest indrawing and tachycardia
+WHO age speciﬁc criteria for tachypnea
+    • Infants aged < 2 months: RR > 60 breath/min.
+    • Infants 2-12 months: RR > 50 breath/min.
+    • Children >12months - 5years: RR > 40 breath/min.
+    • Children > 5 years: RR > 30 breath/min.
+Local Signs:
+Lobar pneumonia:
+- Stage of Congestion: Decrease AE, Vocal
+  resonance, TVF, and presence of ﬁne and crackling rales.
+    - Stage of hepatization: Decrease chest movement
+  increase TVF, VR, decrease AE, bronchial breathing, no
+  rales and dullness to percussion.
+    - Stage of resolution:rales reappear,
+  decrease in BB and decrease in dullness.
+Bronchopneumonia:
+Main feature is the presence of medium sized consonating crepetations , with the
+general signs of pneumonia. if conﬂuent , signs of consolidation will be present.
+
+
+
+Some features of speciﬁc oragnisms:
+Staphylococcal pneumonia:
+At the onset is indistinguishable from pneumococcal pneumonia.
+Almost exclusively a disease of infants but can complicate inﬂuenza in older children.
+ Staphylococcal often cause tissue necrosis and lead to cavitation, abscess formation
+and pyopneumothorax in rapid sequence .
+Viral pneumonia:
+Preceded by URTI, gradual onset, dry cough,low grade or no fever, dyspnea and
+retractions.Clinical examination is unrevealing due to absence of excudate and there
+may be wheezing.
+Mycoplasma Pneumonia:
+Gradual onset, non-productive paroxysmal cough that turn productive.
+Severity of symptoms > clinical ﬁndings.
+Non-pulmonary symptoms ( vomiting, diarrhea, myalgia, arthritis, skin rash,
+myocarditis, hemolytic anemia and meningeo-encephalitis).
+Course is prolonged than viral pneumonia and it occurs in school aged children.
+Clinical evaluation:
+The strongest predictors of pneumonia in children are fever, cyanosis and more than
+one of the following signs of respiratory distress
+   • Tachypnea.
+   • Cough.
+   • Nasal ﬂaring.
+   • Chest indrawing.
+   • Rales.
+   • Decreased breath sounds.
+
+Atypical presentation:
+   •   Consider pneumonia in kids with neck sti_ness
+   •   Consider pneumonia in kids with acute abdominal pain.
+   •
+Diagnostic testing:
+In the community
+There is no indication for any test in a child with pneumonia in the community
+ in Hospitals :
+Mostly commonly done tests are chest X ray, CBC, blood culture , serum electrolytes ,
+viral studies , C reactive Protein, Arterial blood gases and ESR.
+    • Pulse oximetry:
+    • Pulse oximetry should be performed in every child admitted to hospital with
+        pneumonia .
+    • Acute phase reactants:
+    • Acute phase reactants do not distinguish between bacterial and viral infections
+        in children and should not be measured routinely [A].
+    • Urea and electrolytes:
+    • Urea and electrolytes to assess electrolyte imbalance is undertaken if the
+        patient is severely ill or shows evidence of dehydration
+
+
+Chest X Ray
+Can not reliably di_erentiate between bacterial and viral pneumonia.
+Bacterial pneumonia: Consolidation with air bronchogram.
+Viral pneumonia: Hyperexpansion, parahilar and peribronchial
+inﬁltrate, atelectasis and hilar adenopathy.
+   Follow up Chest-X Ray: Generally is not required with simple consolidation or in
+   patients who recover well rapidly. Repeat Chest X-Ray is required only in kids with
+   lobar collapse , atelectasis after 4-6 weeks. Kids who do not recover clinically need
+   follow up by Ultrasonography or X ray to rule out parapneumonic e_usion.
+Microbiological investigations:
+Only in Hospital
+   When to search for organism in CAP:
+   § Severe symptoms.
+   § Hospitalized patients.
+   § Complicated clinical course.
+   § Community outbreak.
+
+In hospital
+Bacterial Pneumonia
+
+   •  Blood culture.
+   •  Lung Aspiration.
+   •  Pleural ﬂuid:
+      • Culture
+      • Antigen detection
+      • CIE.
+      • Latex agglutination.
+      • Dot ELISA
+    • Serological diagnosis:
+      • Urine for antigen detection
+      • Serum: for pneumococcal antigen and antibodies.
+In hospital
+Mycoplasma Pneumonia
+    • Complement ﬁxation test.
+       a rise in paired titer is regarded as the gold standard for the diagnosis.
+    • IgM ELISA:
+    • Cold agglutinins:
+
+In hospital
+Viral Pneumonia
+    • Viral antigen detection in nasopharyngeal aspirate
+    • Viral cultures.
+    • Serological tests:
+       A rise in titer in paired serum samples.
+TREATMENT:
+Home treatment
+  • Families of children who are well enough to be cared for at home need
+      information on managing pyrexia, preventing dehydration, and identifying any
+      deterioration.
+  • The child cared for at home should be mild pneumonia and must be reviewed by
+      a general practitioner if deteriorating, or if not improving after 48 hours on
+      treatment .
+Hospitalization
+  • All infants from birth to 3 weeks.
+  • Infants 3 weeks to 3 months of age with fever.
+  • All children who appear toxic.
+  • Children with signs of severe disease and saturation < 92%.
+General management
+  • Oxygen if saturation less than 92%.
+  • Hydration and Fluid therapy.
+  • Fever and pain.
+  • Monitoring.
+
+ANTIMICROBIAL THERAPY:
+
+   •   Whether to treat with antibiotics.
+   •   Choice of antibiotic.
+   •   Route of administration.
+   •   Switching from parenteral to oral antibiotics.
+   •   Duration of antibiotic treatment.
+
+ANTIMICROBIAL THERAPY:
+
+   •   Early empiric therapy is important to decrease mortality. Once organism is
+       identiﬁed , Spectrum has to be narrowed.
+   •   Duration of treatment is 7-10 days or longer in certain cases.
+   •   Think in Viruses, S.aureus, Anaerobes or multiresistant organisms if no
+       response to initial antimicrobial.
+Empiric Antimicrobial for presumed Bacterial pneumonia
+
+ Age Group                             Antibiotics
+
+
+
+ < 2 mon                               Ampicillin + Ceftriaxone or Cefotaxime
+                                       ( oral Erythromycin if Chlamydia is suspected)
+
+
+
+ 2mon-5 yrs                            Amoxicillin ( oral)
+ (mild)
+
+
+
+
+ 2mon-5 yrs                            Ceftriaxone or Cefotaxime; add Oxacillin or
+ (Severe)                              Vancomycin if Staph.aureus is suspected
+
+
+
+
+ 5 – 21 yrs                            Macrolides ( oral or intravenous depending on severity)
+
+
+
+Empiric Antimicrobial for presumed Atypical pneumonia
+
+
+   • Chlamydia Pneumonia:
+ Treated with Macrolides such as Erythromycin.
+   • Mycoplasma pneumoniae:
+ Treated with tetracyclines if old enough and intolerant to
+ macrolides.
+
+
+Empiric Antimicrobial for presumed Viral pneumonia
+
+   •   Viral pneumonia caused by inﬂuenza A may be treated with Rimantadine or
+       Amantadine, while viral pneumonia caused by inﬂuenza A or B may be treated
+       with Oseltamivir or Zanamivir. These treatments are beneﬁcial only if they are
+       started within 48 hours of the onset of symptoms.
+   •    There are no known e_ective treatments for viral pneumonias caused by the
+       SARS coronavirus, adenovirus, hantanvirus, or parainﬂuenza virus.
+Oral versus Intravenous Antibiotics:
+   • Intravenous : Is needed to achieve high concentration of drug in blood and
+       tissues to ensure eradication of the organism.
+   • Oral: Can be used in mild cases.
+   • Switch therapy: shorter hospital stay; cost savings in drugs, nursing time, and
+       IV solutions; fewer hospital-related complications, such as phlebitis or falls;
+       and greater patient satisfaction.
+
+Prevention
+
+   •  Cessation of smoking: is important not only because it helps to limit lung
+      damage, but also because cigarette smoke interferes with many of the body's
+      natural defenses against pneumonia.
+Prevention
+
+   •   In newborn: testing and treating pregnant women for Group B Streptococci and
+       Chlamydia trachomatis. Also suctioning oropharynx to prevent meconium
+       aspiration.
+
+   •   Vaccination: Against Pneumococci and Haemophilus inﬂuenzae in children and
+       against Inﬂuenza .
+
+Global action plan for the prevention and control of pneumonia (GAPP)
+   • Protect: promote breast feeding, hand washing and reduce indoor air pollution.
+   • Prevent: with vaccination.
+   • Treat: every sick child has access to the right kind of care
+Recurrent or Persistent Pneumonia:
+   • Gastro-esophageal Reﬂux Disease.
+   • Pulmonary congestion.
+   • Cleft palate.
+   • Tracheoesophageal ﬁstula.
+   • Immotile cilia .
+   • Cystic ﬁbrosis.
+   • Sequestrated lobe.
+   • FB
+Complications of Pneumonia:
+
+If a child remains pyrexial or unwell 48 hours after start of treatment , re-evaluation is
+necessary with consideration given to possible complications such as empyema or
+abscess.
+Complications of Pneumonia:
+   • Empyema.
+   • Pericarditis.
+   • Mediastinitis.
+   • Hematogenous spread leading to meningitis,
+     arthritis, and peritonitis, etc.
+   • Sepsis.
+
+Take Home messages:
+References
+   • Ostapchuk MD, Roberts DM, Haddy RD. Community acquired pneumonia in
+      infants and childen. Am Fam Physician 2004; sep1;70(5)899-908.
+   • British thoracic society guidelines for community acquired pneumonia in
+      pediatrics.Thorax 2011.www.thorax.bmj.com
+   • Kenneth McIntosh,MD. Community-Acquired pneumonia in children. N Eng J
+      Med 2002;vol.346.No.6.
+   • Bennett NJ, and Steele RW. Pediatric pneumonia.
+      Http://emedicine.medscape.com/article/967822.
+

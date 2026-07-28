@@ -1,0 +1,639 @@
+SOURCE: Semester 8\Neuro\Theoritical\PPT\L4) Seizures_Epilepsy.pdf
+
+SEIZURES &
+E PI LE PS Y
+A Comprehensive Clinical Overview
+
+
+Prof. Mohamed Hamdy
+Professor of Neurology | Alexandria University
+DEFINING SEIZURE & EPILEPSY
+
+
+
+Epileptic Seizure                                 Epilepsy (ILAE 2014)
+
+A transient occurrence of signs and/or symptoms   A brain disorder characterized by an enduring
+due to abnormal excessive or synchronous          predisposition to generate seizures and its
+neuronal activity in the brain.                   consequences.
+
+   Paroxysmal: Sudden onset and termination.         At least 2 unprovoked seizures occurring >24
+
+   Mechanistic: Hyperexcitability of neurons.        hours apart.
+                                                     1 unprovoked seizure with a high risk of
+   Semiology: Observable motor, sensory, or
+                                                     recurrence (>60%) over 10 years.
+   autonomic manifestations.
+CLINICAL DIFFERENTIATION
+
+Provoked vs. Unprovoked
+Provoked (Acute Symptomatic): Occur in close
+temporal relationship with systemic insult (fever,
+metabolic shift, trauma). These do not constitute
+epilepsy.
+
+Ictal and Post-ictal States
+Clinical observation focus: Aura (initial warning),
+Ictus (the event itself), and Post-ictal (period of
+recovery, confusion, or Todd’s paralysis).
+
+The Role of EEG
+While a seizure is a clinical diagnosis, the EEG is vital
+for identifying interictal epileptiform discharges
+                                                            Visualizing Paroxysmal Activity: EEG Spike-and-Wave Pattern
+(spikes/waves), helping classify the epilepsy type.
+FACING A CASE OF EPILEPSY
+
+                01                                        02                                        03
+
+
+
+
+     Is it a Seizure?                             What Type?                          What is the Cause?
+
+
+
+Distinguish true seizures from syncope,   Classify as focal vs. generalized — this   Idiopathic vs. symptomatic — find the
+    pseudoseizures & other mimics            drives your entire management                      underlying driver
+Psychogenic Non-Epileptic Seizures
+
+                           What is PNES?
+                           Psychogenic Non-Epileptic Seizures (PNES) are paroxysmal events
+                           that superficially resemble epileptic seizures but are not caused
+                           by abnormal electrical discharges in the brain.
+                               Functional Disorder: Often linked to psychological distress,
+                               trauma, or internal conflicts.
+                               Involuntary: Patients are not "faking"; the events are a
+                               manifestation of the mind-body connection.
+Differentiating PNES from Epilepsy
+
+Clinical Feature                       Epileptic Seizure                            PNES (Pseudoseizure)
+
+Onset                                  at any occasion even during sleep            Drama
+
+
+Duration                               Short (< 2-3 minutes)                        Often Prolonged (> 5 minutes)
+
+
+Cyanosis                               Yes                                          No
+
+
+Movements                              Stereotypical rhythmicity                    Asynchronous, thrashing, pelvic thrusting
+
+
+Self wetting, soling and injury        Yes                                          No
+
+
+Head Movement                          Usually fixed or one direction             Side-to-side head shaking
+                                  *Video-EEG Monitoring remains the gold standard for definitive differentiation.
+
+Post-ictal State                       Common (Confusion, Fatigue)                  Rapid return to baseline behavior
+Understanding Syncope
+
+
+Mechanisms of Fainting
+Syncope is a transient loss of consciousness (TLOC) due to global
+cerebral hypoperfusion. It is characterized by rapid onset, short
+duration, and spontaneous complete recovery.
+    Neurally Mediated: Vasovagal (emotional stress/pain),
+    Situational.
+    Orthostatic: Blood pressure drop upon standing.
+
+    Cardiac: Arrhythmias or structural heart disease (Requires
+    urgent workup).
+Seizure vs. Syncope Checklist
+
+
+      Prodrome / Aura                                      Muscle Tone                                     The Recovery
+  Syncope: Lightheadedness, "tunnel                Syncope: Flaccid tone (limp). Note:                Syncope: Very rapid recovery of
+     vision," sweating, or warmth.                    Myoclonic jerks can occur in                           full orientation.
+    Seizure: Foul smells, deja-vu, or                     syncope but are brief.                        Seizure: Post-ictal confusion,
+      rising epigastric sensation.                  Seizure: Tonic rigidity or sustained               Todd's paralysis, or deep sleep.
+                                                             rhythmic jerking.
+
+
+
+
+ Clinical Pearl: Urinary incontinence and tongue biting (especially the side of the tongue) are highly specific markers for generalized
+ tonic-clonic seizures rather than syncope.
+  DIFFERENTIAL DIAGNOSIS: EPISODE OF COLLAPSE
+
+       Feature       True Seizure               Syncope             Pseudoseizure
+
+
+Age of onset        Usually younger           Usually older              Any age
+
+
+Posture               Any posture          Depends on trigger        Dramatic onset
+
+
+Muscle tone      Increased (tonic phase)     Usually flaccid     Variable, often thrashing
+
+
+Duration              1–2 minutes             ~10 seconds          Prolonged, variable
+
+
+Sleep onset      May occur during sleep    Rarely during sleep     Never during sleep
+
+
+Incontinence           Common                     Rare                     Rare
+
+
+Tongue biting      May occur (lateral)          Unlikely           Tip of tongue, rarely
+
+
+Skin color        Flushed or cyanosed             Pale                   Normal
+
+
+EEG               Epileptiform changes       Usually normal          No EEG changes
+                    SEIZURE CLASSIFICATION
+                                                  ILAE 2017 Framework
+
+                                                   SEIZURE ONSET
+
+
+
+
+  FOCAL                                           GENERALIZED                                                UNKNOWN
+
+
+  Focal Aware                                           Tonic-Clonic                                           Tonic-Clonic
+
+
+
+Focal w/ Impaired                                      Tonic / Clonic
+                                                                                                             Epileptic Spasms
+   Awareness                                            Myoclonic
+
+
+Focal → Bilateral                                        Absence
+                                                                                                               Unclassified
+  Tonic-Clonic                                            Atonic
+
+
+                     ★ KEY PRINCIPLE: Consciousness is the critical differentiator in generalized seizures
+FOCAL SEIZURES                                               Arise from one hemisphere / network
+
+
+
+            AWARENESS CLASSIFICATION                        SEMIOLOGY CLASSIFICATION
+
+
+             Focal AWARE (Simple Partial)                  MOTOR
+
+                                            › Clonic (rhythmic jerking)
+Patient remains fully conscious
+Knows what's happening                      › Tonic (sustained stiffening)
+Can recall the event                        › Myoclonic (brief jerk)
+Aura = focal aware seizure
+                                            › Automatisms (lip smacking, picking)
+
+                                            › Hypermotor (bicycling)
+
+              Focal IMPAIRED Awareness                 NON-MOTOR
+
+                                            › Sensory (tingling, visual, smell)
+Consciousness is altered
+May stare, automatisms                      › Autonomic (nausea, palpitations)
+No recall of event                          › Cognitive (déjà vu, jamais vu)
+Most common type in TLE
+                                            › Emotional (fear, laughter)
+
+                                            › Behavioral arrest
+GENERALIZED SEIZURES
+               ALL generalized seizures involve COMPLETE loss of consciousness — EXCEPT myoclonic (brief) and atonic
+
+
+  TONIC-CLONIC                                                                  MYOCLONIC
+  (Grand Mal)
+  Most dramatic. Tonic phase → fall → clonic jerks. Postictal                   Brief, sudden muscle jerks. Consciousness relatively preserved!
+  confusion. Duration 1-3 min.                                                  Worst in morning. JME hallmark.
+
+
+
+  TONIC                                                                         ABSENCE
+                                                                                (Petit Mal)
+  Sudden sustained stiffening. Bilateral. Falls. No clonic phase.               Sudden stare, 5-30 sec. No postictal phase. 3Hz spike-wave on
+  Common in Lennox-Gastaut.                                                     EEG. Children. DON'T use carbamazepine!
+
+
+
+  CLONIC                                                                        ATONIC
+                                                                                (Drop Attack)
+                                                                                Sudden loss of muscle tone → fall. Injury risk. Helmet essential.
+  Rhythmic jerking without prior tonic phase. Rare as isolated type.
+                                                                                Associated with Lennox-Gastaut.
+CAUSES OF EPILEPSY
+
+                          SYMPTOMATIC / STRUCTURAL CAUSES
+
+
+                        Congenital                      Traumatic
+
+                        Brain malformations, cortical   TBI, penetrating injury,
+
+
+
+    40%
+                        dysplasia                       surgery
+
+
+
+
+                        Infectious                      Vascular
+      IDIOPATHIC
+       (Genetic)
+                        Meningitis, encephalitis,       Stroke, hemorrhage,
+                        neurocysticercosis              hypertensive encephalopathy
+      No underlying
+     structural cause
+          found
+                        Neoplastic                      Immune
+
+                        Primary / metastatic brain      Autoimmune encephalitis
+                        tumors                          (anti-NMDAR, LGI1)
+ESTABLISHING THE DIAGNOSIS
+
+                                                                              Witness History
+                 HISTORY TAKING                                               The single most valuable account — what did the
+                                                                              eyewitness SEE?
+                 #1 DIAGNOSTIC TOOL
+                                                                              Home Video
+                                                                              Parents should record with phone — gold standard
+Diagnosis is clinical. EEG & MRI SUPPORT — they don't replace your history.   for clinic review
+
+
+                                                                              EEG
+        D: Diagnosis is ESTABLISHED CLINICALLY                                Confirms epileptiform activity; may be normal
+                                                                              between seizures
+
+
+                                                                              Video-EEG Monitoring
+                                                                              Gold standard: captures clinical + electrical
+                                                                              simultaneously
+
+
+                                                                              MRI Brain
+                                                                              Detects structural causes; protocol matters —
+                                                                              epilepsy sequences essential
+ EEG SIGNATURES IN EPILEPSY
+
+EEG Patterns You Must Recognize
+  Focal Spikes: Localized epileptogenic cortex
+  Generalized Spike-Wave: Absence epilepsy signature
+  Polyspike-Wave: Juvenile myoclonic epilepsy
+  PLEDs: Acute stroke, infection, or tumor
+  Hypsarrhythmia: Severe infantile epilepsy
+ TREATMENT DECISION FRAMEWORK
+
+                                            Confirmed Seizure
+
+
+
+
+PROVOKED                         PROVOKED or UNPROVOKED?                UNPROVOKED
+
+
+
+          No Chronic AED                                            1st Unprovoked Seizure
+           Treatment                                            → Usually NO treatment
+                                                                (discuss risk, +EEG/MRI)
+Treat the CAUSE:
+• Hypoglycemia
+• Hyponatremia                  AED SELECTION FACTORS
+• Fever/infection
+• Drug toxicity            • Seizure type                             2nd Unprovoked → START AED
+• Alcohol withdrawal
+                           • Co-morbidities
+                           • Side effects
+                           • Pharmacokinetics
+                           • Cost & compliance
+MATCHING THE RIGHT AED TO THE RIGHT SEIZURE
+
+                                 GENERALIZED                  ABSENCE                        MYOCLONIC
+  FOCAL SEIZURES
+                                 TONIC-CLONIC                 SEIZURES                        SEIZURES
+
+1st Line:                    1st Line:                 1st Line:                        1st Line:
+
+ Carbamazepine (Tegretol)     Valproate (Depakote) ★    Ethosuximide ★ (first choice)    Valproate (Depakote) ★
+
+ Phenytoin (Dilantin)         Lamotrigine               Valproate                        Levetiracetam
+
+ Oxcarbazepine (Trileptal)    Levetiracetam             Lamotrigine                      Clonazepam
+
+2nd / Special:               2nd / Special:            2nd / Special:                   2nd / Special:
+
+ Lamotrigine                  Topiramate                   NEVER: Carbamazepine          Topiramate
+
+ Levetiracetam                Zonisamide                   NEVER: Phenytoin              Zonisamide
+
+ Lacosamide                   Perampanel                   NEVER: Vigabatrin                Carbamazepine – AVOID
+BEYOND AEDs: INTRACTABLE EPILEPSY
+OPTIONS
+                                Drug-Resistant Epilepsy = Failure of ≥2 appropriate AEDs at adequate doses
+
+
+           Epilepsy Surgery                           Vagus Nerve Stimulation                                Ketogenic Diet
+
+
+Resection of seizure focus                       Implanted device                               High fat, low carb
+Most effective for temporal lobe                 Stimulates left vagus nerve                    Effective in children
+70% seizure-free post-op                         ~50% reduction in seizure frequency            Mechanism: altered brain metabolism
+Requires video-EEG + neuroimaging                Non-invasive, no cognitive SE                  Requires specialist dietitian
+
+
+
+
+                                                            Responsive
+      Deep Brain Stimulation                                                                            Laser Ablation (LITT)
+                                                         Neurostimulation
+
+
+Thalamic (ANT) stimulation                       Detects & aborts seizures                      MR-guided laser therapy
+FDA-approved 2018                                Focal cortex stimulation                       Minimally invasive
+For focal & generalized                          Learns patient's EEG patterns                  Hypothalamic hamartomas
+Adjustable & reversible                          Requires implantation                          Alternative to open surgery
+           STATUS EPILEPTICUS — EMERGENCY PROTOCOL
+
+                       DEFINITION: Seizure ≥ 5 min OR ≥2 seizures without recovery → ≥30 min = permanent neuronal injury risk
+
+
+         0–5 min                                   5–10 min                                 10–30 min                                  >30 min
+
+
+
+
+           ABC                                   DIAZEPAM                                PHENYTOIN                                REFRACTORY
+
+
+
+                                                                                    IV 1000 mg adults / 18-20 mg/kg
+                                                                                                                                  IV Thiopental / Propofol /
+                                          IV 10 mg (adults) / 0.1-0.3 mg/kg                      children
+ Airway · Breathing · Circulation                                                                                                    Midazolam infusion
+                                                     (children)                           Slow over 20 min OR
+O₂, IV access, glucose check, ECG                                                                                              ICU admission · EEG monitoring
+                                                  Over 15 seconds                      Levetiracetam 3000 mg IV if
+                                                                                                                                  Aim for burst suppression
+                                                                                               unavailable
+
+
+
+
+               ONLY IV ROUTE in convulsive status. NEVER oral / IM during active convulsions (unless no IV access → rectal diazepam or IM midazolam)
+THE 3-STEP DIAGNOSTIC FRAMEWORK
+            01                               02                              03
+      IS IT A SEIZURE?                   WHAT TYPE?                   WHAT CAUSED IT?
+
+
+ Distinguish true seizures from   Focal vs. Generalized — drives   Idiopathic vs. Symptomatic —
+  syncope, PNES, and mimics         your entire management                 find the driver
+CASE 1: MARIAM
+Clinical Presentation                Socio-Clinical Context
+    Age: 7 years old                    Family income: Limited
+
+    Student in Cairo public school       Transport to clinic: Difficult
+
+     Chief Complaint:                   School impact: Failing grades
+ "Staring spells" 50-100x/day
+    Duration: 5-10 seconds each         Belief: "Evil eye" curse
+
+    Eyes roll up briefly                 No meds yet
+
+    No post-ictal confusion              EEG at clinic:
+                                     3 Hz spike-wave
+    NO injury or incontinence            MRI: Normal
+CASE 1: DIAGNOSTIC REASONING
+  ✓ IS IT A SEIZURE?                           ✓ WHAT TYPE?                                  ✓ CAUSE?
+  YES                                          GENERALIZED                                   IDIOPATHIC
+  • Paroxysmal                                 Absence (Petit Mal)                           (Genetic)
+  • Stereotyped                                • 3Hz spike-wave                              • Childhood onset
+  • No syncope features                        • Brief stare                                 • Normal MRI
+  • EEG confirms                               • No recovery confusion                       • Family Hx common
+
+      CRITICAL: NEVER use Carbamazepine or Phenytoin in absence seizures — they worsen seizures!
+
+DIAGNOSIS: Childhood Absence Epilepsy (CAE)
+
+TREATMENT STRATEGY:
+  1st Line: Ethosuximide (Zarontin) 15-20 mg/kg/day OR Sodium Valproate (Depakin) 15-20 mg/kg/day
+
+  2nd Line: Lamotrigine if valproate contraindicated (teratogenic concerns in reproductive-age females)
+
+  • Goal: Seizure control + return to school + normal development
+
+
+  •    Social Challenge: Transport to clinic every 2-4 weeks, cost of medications (subsidized programs available)
+CASE 2: AHMED
+Clinical Presentation                Socio-Clinical Context
+    Age: 22 years old                   Monthly income: 2,500 LE
+
+    Factory worker in Alexandria        Lives in informal settlement
+
+     Chief Complaint:                   Job risk: Factory machinery
+ "Strange episodes" 2-3x/week
+    Aura: Foul smell                    Frequent seizures = job loss
+
+    Lip smacking movements              Stigma in community
+
+    Loss of awareness                    EEG:
+                                     Left temporal focal spikes
+    Duration: 1-2 minutes               MRI: Left hippocampal atrophy
+
+    Post-ictal confusion: 5-10 min
+CASE 2: DIAGNOSTIC & MANAGEMENT
+REASONING
+ ✓ IS IT A SEIZURE?
+
+ YES — Aura (olfactory), automatisms (lip smacking), altered consciousness, post-ictal confusion
+
+
+
+ ✓ WHAT TYPE?
+
+ FOCAL with IMPAIRED awareness (temporal lobe) — likely mesial TLE based on semiology
+
+
+
+
+ ✓ CAUSE?
+
+ SYMPTOMATIC — Left hippocampal atrophy suggests mesial temporal sclerosis (MTS)
+
+    CLINICAL PEARL: Mesial TLE with hippocampal atrophy — surgery candidate (70% seizure-free post-op)
+
+INITIAL MANAGEMENT:
+CASE 3: FATIMA
+Clinical Presentation              Psychosocial Context
+    Age: 28 years old                Recent divorce (stigmatized)
+
+    Divorcee, lives with parents     Family conflict & tension
+
+    Chief Complaint:                 Emotional distress: High
+ "Convulsions" 2-5x/week
+    Sudden onset with drama          Multiple ED visits
+
+    Asynchronous thrashing           "Seizure" meds failing
+
+    Duration: 5-15 minutes (!)       EEG:
+                                   COMPLETELY NORMAL
+    Side-to-side head shaking        MRI: Normal
+
+    No cyanosis, NO incontinence
+CASE 3: WHEN IS IT NOT A SEIZURE?
+Feature                                             True Seizure                            PNES (Fatima)
+
+Duration                                            1-2 minutes                             5-15 minutes ✗
+
+Consciousness                                           Lost                           Often preserved/aware ✗
+
+Movements                                           Stereotyped                        Asynchronous, thrashing ✗
+
+Cyanosis                                           YES (common)                                  NO ✗
+
+Incontinence                                          Common                                    RARE ✗
+
+Head movements                                    Fixed/1 direction                          Side-to-side ✗
+
+EEG during event                                    Epileptiform                              NORMAL ✗
+
+Recovery                                         Post-ictal confusion                   Rapid return to baseline
+
+     DIAGNOSIS: Psychogenic Non-Epileptic Seizures (PNES)
+
+NOT "faking" — functional neurology disorder linked to psychological distress, trauma, and life stress. Real condition.
+Real suffering. Needs compassionate, non-judgmental care.
+CASE 4: YASIN
+Clinical Presentation             Socio-Clinical Context
+    Age: 16 years old               Sleep habits: Irregular
+
+    Secondary school student         Late-night gaming
+
+    Chief Complaint:                 Academic stress: High
+ "Morning jerks" past 6 months
+    TIMING: Upon waking               Family Hx: Grandfather had seizures
+
+    Brief arm jerks (myoclonic)      NOT on meds yet
+
+    Sleep deprivation worsens         EEG:
+                                  Polyspike-wave (3-4 Hz)
+    NO loss of consciousness         MRI: Normal
+
+    Recent: GTCS (1 episode)
+CASE 4: JUVENILE MYOCLONIC EPILEPSY (JME)
+✓ IS IT A SEIZURE?                               ✓ WHAT TYPE?                                      ✓ CAUSE?
+
+                                                 GENERALIZED
+YES — Myoclonic jerks (brief, bilat-eral,                                                          IDIOPATHIC (Genetic)
+                                                 Myoclonic + GTCS (progresses with
+symmetric) + recent GTCS. Classic JME                                                              Adolescent onset, family Hx, stress/sleep
+                                                 waking). Polyspike-wave on EEG. Classic
+pattern.                                                                                           triggers. Normal imaging.
+                                                 JME.
+
+
+
+        JME Hallmarks:                                                         Treatment:
+     • Age: 12-18 years (adolescence)                                      ✓ 1st Line: Valproate 15-25 mg/kg/day
+     • Female > Male (2:1)                                                 ✓ 2nd Line: Levetiracetam
+     • Morning myoclonic jerks                                             ✗ NEVER: Carbamazepine or Phenytoin!
+     • Sleep deprivation trigger                                           ✓ Lifestyle: Regular sleep, no alcohol
+     • 30-50% have generalized GTCS                                            Women: Contraception needed (VPA teratogenic)
+     • Polyspike-wave 3-4 Hz EEG                                           ✓ Long-term: Usually lifelong therapy
+
+
+
+       Egyptian Reality:
+   Yasin needs Valproate, but reproductive counseling is essential. Consider levetiracetam if he were female. Ensure sleep hygiene
+CASE 5: BABY OMAR
+Clinical Presentation             Risk Factors & Context
+    Age: Day 3 of life              Mother: No prenatal care
+
+    Born at government hospital      Difficult delivery (vacuum)
+
+     Chief Complaint:               Intrapartum fever noted
+ "Jerky movements"
+    Eye deviation + staring          No antibiotic prophylaxis
+
+    Episodes: Multiple/hour           Labs:
+                                  CSF: Pleocytosis
+    Postictal: Deep sleep            Culture: Pending
+
+   Temperature: 38.5°C               EMERGENCY situation
+
+   Feeding difficulty
+CASE 5: NEONATAL SEIZURES — PROVOKED vs.
+UNPROVOKED
+   CRITICAL: Neonatal seizures are PROVOKED until proven otherwise!
+Find the CAUSE → Treat the cause → Seizures often resolve
+
+
+Differential Diagnosis for Neonatal Seizures:
+
+  INFECTION (40%)            Meningitis, encephalitis → Omar: fever, CSF pleocytosis — MENINGITIS SUSPECTED
+
+
+  HYPOXIA-ISCHEMIA           Birth asphyxia, difficult delivery → Omar: vacuum delivery, risk
+
+
+  METABOLIC                  Hypoglycemia, hyponatremia, hypocalcemia
+
+
+  INTRACRANIAL               Intraventricular hemorrhage, stroke
+
+
+  DRUG WITHDRAWAL            Maternal opioids, benzodiazepines
+
+
+  GENETIC                    Benign neonatal epilepsy (rare, familial)
+BRINGING IT TOGETHER
+Case                  Diagnosis                      Type                     Key Feature
+
+Mariam                Childhood Absence              Generalized              3 Hz spike-wave
+
+
+Ahmed                 Mesial TLE                     Focal (impaired)         Hippocampal atrophy
+
+
+Fatima                PNES                           Non-epileptic            Normal EEG, psychological
+
+
+Yasin                 JME                            Generalized myoclonic    Morning jerks, polyspike
+
+
+Omar                  Neonatal seizures              Provoked                 Meningitis
+
+
+
+
+  KEY TAKEAWAYS FOR EGYPTIAN CLINICIANS:
+
+1. Diagnosis is CLINICAL first — history from witness is your #1 tool
+
+2. EEG SUPPORTS diagnosis but doesn't replace history. Normal EEG ≠ no epilepsy
+KEY CLINICAL TAKEAWAYS
+01   History is the cornerstone of epilepsy diagnosis — EEG and MRI SUPPORT, not replace.
+
+
+
+02   Epilepsy = ≥2 unprovoked seizures OR 1 unprovoked with high recurrence risk.
+
+
+
+03   NEVER give carbamazepine or phenytoin to absence or myoclonic epilepsy patients.
+
+
+
+04   Status epilepticus: A-B-C → Diazepam IV → Phenytoin IV → ICU. Time is neurons.
+
+
+
+05   Drug-resistant? Refer early — epilepsy surgery offers 70% seizure freedom in TLE.
+
+
+
+06   Always think autoimmune encephalitis in young patients with new atypical seizures.
+
+                           Prof. Mohamed Hamdy | Department of Neurology | Alexandria University
+

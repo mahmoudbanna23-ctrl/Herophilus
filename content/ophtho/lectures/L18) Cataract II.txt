@@ -1,0 +1,654 @@
+SOURCE: Semester 8\Opthalmo\Theoritical\PPT\L18) Cataract II.pdf
+
+                                                                     5th
+                                                                     Year
+
+          THE LENS
+          Anatomy · Cataract · Surgery · Complications
+
+
+
+
+             Dr. Amr Said
+             Assistant Professor of Ophthalmology
+             Alexandria University
+
+
+
+Dr. Amr Said | Alexandria University | Undergraduate Ophthalmology          1 / 28
+Learning Objectives
+By the end of this lecture you will be able to…
+
+
+
+              Describe the anatomy of the crystalline lens and its role in   Classify cataract by morphology and maturity with clinical
+              vision                                                         correlations
+
+
+
+              Differentiate senile, pediatric, traumatic, and complicated
+                                                                             Recognise the key signs on slit-lamp and red reflex examination
+              cataract
+
+
+
+
+              Outline surgical options and intraocular lens types            Identify postoperative complications and their management
+
+
+
+
+              Apply prognostic indicators in the pre-surgical assessment
+
+
+
+
+Dr. Amr Said | Alexandria University Undergraduate Ophthalmology                                                                               2 / 28
+Anatomy of the Crystalline Lens
+
+  Position:                                                          Lens Layers — Cross Section
+  Behind iris; anterior to vitreous body
+                                                        Capsule
+
+  Shape:                                                Anterior
+  Biconvex — steeper posterior curve                    Epithelium
+
+
+                                                        Cortex
+  Structure:
+  Avascular, transparent — nutrition via aqueous
+
+                                                                           Nucleus
+  Suspension:
+  Zonules from ciliary processes → equatorial capsule
+
+
+  Optical power:
+  ~18–20 D (one-third of total ~60 D)
+
+
+  Refractive index:
+  1.386 (nucleus) — increases with age
+
+
+
+
+                                                                                                   3 / 28
+Cataract — Definition & Overview
+Leading cause of reversible blindness worldwide
+
+
+
+                               CATARACT = Any opacity of the crystalline lens sufficient to impair vision
+
+
+
+
+                 Senile                                      Pediatric                         Traumatic                                Complicated
+       Most common — age-related                     Congenital / developmental          Blunt or penetrating injury           Secondary to ocular/systemic disease
+
+
+
+    Global Burden                                                                    Key Clinical Principle
+
+
+
+    Cataract accounts for 51% of world blindness (WHO). In Egypt and the Arab        Cataract alone (without posterior segment disease) should NEVER reduce vision
+    world, it is the commonest cause of avoidable blindness, particularly in rural   to less than Hand Motion (HM). VA < HM → suspect concurrent retinal or optic
+    settings. Prevalence rises steeply after age 60.                                 nerve pathology.
+
+
+
+
+                                                                                                                                                                      4 / 28
+Senile Cataract — Symptoms & Signs
+Most common presentation in clinical practice
+
+                                      SYMPTOMS                                                               SIGNS
+
+        Gradual progressive visual loss                                    Reduced VA
+        Painless — most common complaint                                   Not less than HM in mature cataract
+
+
+        Glare                                                              Normal pupillary reaction
+                                                                           Afferent pathway intact
+        Difficulty in bright light / oncoming headlights (PSC worst)
+
+                                                                           Normal VF by confrontation
+        Duskiness
+                                                                           Retinal function preserved
+        Sensation of poorly illuminated environment
+                                                                           Red reflex
+        Halos around lights                                                Absent (mature), dim (immature), altered (nuclear)
+        Due to prismatic effect of opaque fibres
+                                                                           Slit-lamp
+        Monocular diplopia                                                 Nucleus, cortex or posterior opacity pattern
+
+        Multiple images with one eye (cortical or nuclear)
+                                                                           Projection of light
+        'Second sight'                                                     Good in all 4 directions = good prognosis
+
+        Nuclear: myopic shift allows reading without glasses (temporary)
+                                                                           Color discrimination
+                                                                           Red vs green test = good retinal function
+
+                                                                                                                                5 / 28
+Classification by Morphology
+Three main types — each with distinct slit-lamp and clinical features
+
+
+                     Nuclear Cataract                                            Cortical Cataract                              Posterior Subcapsular Cataract (PSC)
+
+     •      Exaggeration of nuclear sclerosis (yellowing       •        Opacification of lens fibres surrounding           •       Opacity at posterior capsule (nodal point
+            → brunescence)                                              nucleus                                                    location)
+
+     •      Increased nuclear refractive index →               •        Begins as wedge-shaped / spoke-like                •       Most visually disabling per unit size — near
+            acquired myopia                                             peripheral opacities                                       nodal point
+
+                                                                                                                           •       Worst symptoms: near vision, bright light,
+     •      Interferes predominantly with distant vision       •        Appear dark against the red reflex
+                                                                                                                                   miosis
+
+     •      'Second sight': elderly regain near vision         •        Impact on VA depends on proximity to               •       Appears dark against red reflex
+            temporarily                                                 visual axis                                                (retroillumination)
+
+     •      Red reflex: central distortion / dark nucleus      •        Glare prominent when opacities are                 •       Causes: steroids, DM, uveitis, irradiation,
+            against reflex                                              equatorial                                                 myotonic dystrophy
+
+
+
+
+    :nuclear cataract → myopia, not hyperopia. PSC → worst        Cortical spokes are often asymmetric and can be missed     PSC + young patient + systemic steroids = Always ask
+    near vision.                                               without dilation.                                           about steroid use!
+
+
+
+                                                                                                                                                                                    6 / 28
+Classification by Maturity
+Progressive stages — each with specific VA and red reflex findings
+
+
+                            VA:   6/18 – 6/6 (mild or none)
+                                              Clear centrally, dark
+                            Red Reflex:
+                                              periphery                       Spoke-like cortical opacities at periphery; minimal visual complaint
+
+         Incipient
+
+
+                            VA:   6/18 – CF (variable)
+                            Red Reflex:        Dim red reflex                 Partial opacification; VA reduced but ≥ CF. Water clefts visible. Shadow test: POSITIVE (iris shadow
+                                                                              on lens)
+        Immature
+
+
+                            VA:   HM only (not less!)
+                            Red Reflex:        ABSENT                         Totally opaque white lens. Shadow test: NEGATIVE. Good projection + colour discrimination =
+                                                                              good prognosis
+          Mature
+
+
+                            VA:   HM or less
+                            Red Reflex:        Variable                       SHRUNKEN type: cortex leaks → wrinkled capsule. MORGAGNIAN type: liquefied cortex, nucleus
+                                                                              sinks inferiorly (pathognomonic pseudohypopyon-like appearance). Risk: phacolytic glaucoma
+       Hypermature
+
+      Shadow Test: Oblique torch → crescent shadow on lens = IMMATURE. No shadow = MATURE.
+    Shine a torch obliquely from temporal side. If an iris shadow appears on the lens (crescentic shadow) → IMMATURE cataract (partial opacity, light bends around opaque
+    cortex). NO
+    Shadow      shadow
+              Test      → MATURE
+                   (Oblique          cataract (totally opaque, all light reflected).
+                             Illumination)                                                                                                                                           7 / 28
+Morphological Types — Clinical Comparison
+High-yield exam table
+
+
+                     Feature                                             Nuclear                     Cortical                     PSC
+
+   Location                                           Central nucleus              Peripheral cortex            Posterior capsule
+
+
+                                                      Distant worse                Variable (depends            Near worse
+   Near/Dist vision
+                                                      (myopic shift)               on axis proximity)           (miosis aggravates)
+
+                                                                                                                SEVERE
+   Glare                                              Mild                         Moderate
+                                                                                                                (esp. at night)
+
+                                                      Yellow/brown                 Spoke-like peripheral        Granular posterior
+   Slit-lamp
+                                                      nucleus                      opacities                    capsule plaque
+
+                                                      Dark nucleus                 Dark spokes                  Dark plaque at
+   Red reflex
+                                                      centrally                    peripherally                 posterior pole
+
+                                                      'Second sight'               Asymmetric,                  Steroid-induced
+   Special feature
+                                                      myopia                       often bilateral              pattern
+
+                                                      Driving / TV                 Any visual                   Reading &
+   Most troubled by
+                                                      (distance)                   task (variable)              bright sunlight
+
+
+
+
+Dr. Amr Said | Alexandria University Eye Center | Undergraduate Ophthalmology                                                           8 / 28
+Pre-Operative Assessment
+Ensuring optimal outcomes — the surgeon's pre-flight checklist
+
+
+                                         History                                                            Visual Function Tests
+
+    •      Symptom duration and impact on daily activities                           •   Best-corrected visual acuity (BCVA)
+
+    •      Medications (anticoagulants, alpha-1 blockers → IFIS risk)                •   Projection of light in all 4 directions (dense cataract)
+
+    •      Systemic diseases (DM, hypertension, bleeding disorders)                  •   Color discrimination (red vs green)
+
+    •      Prior eye surgery or trauma                                               •   Potential acuity measurement (PAM) if doubt about macular function
+
+    •      Lens status: monocular vs binocular patient                               •   Pupillary reflexes (relative afferent pupillary defect?)
+
+
+
+                       Posterior Segment Evaluation                                                     Biometry & IOL Calculation
+    •      B-scan ultrasound if fundus not visible → rule out retinal detachment /
+                                                                                     •   Axial length (IOL Master/Lenstar preferred)
+           tumour
+    •      Electroretinogram (ERG) if macular disease suspected                      •   Keratometry (corneal curvature)
+
+    •      OCT when possible in hypermature cataract                                 •   Formulae: SRK/T (standard), Haigis, Holladay (long/short eyes)
+
+                                                                                     •   Target refraction: plano (standard) or slight myopia in elderly
+
+
+
+
+                                                                                                                                                              12 / 28
+Cataract Surgery — Techniques
+Evolution from large-incision to microincision surgery
+
+  Phacoemulsification (PHACO)                   STANDARD          ECCE — Extracapsular Extraction                                 ICCE — Intracapsular Extraction
+
+    Incision: 2.2 – 3.0 mm (clear corneal or scleral                                                                                 Incision: Large incision — entire lens + capsule
+                                                                     Incision: 8 – 10 mm limbal incision
+    tunnel)                                                                                                                          removed
+
+    •        Continuous curvilinear capsulorhexis (CCC) —            •       Manual expression of nucleus through anterior           •      ENTIRE lens including capsule removed (cryo or
+             anterior capsule opening                                        capsulotomy                                                    forceps)
+
+
+    •        Hydrodissection separates cortex from capsule           •       Posterior capsule LEFT IN PLACE (supports IOL)          •      Historical procedure — rarely performed today
+
+
+    •        Ultrasonic probe emulsifies nucleus into
+                                                                                                                                     •      No capsular bag → IOL placed in anterior
+             fragments (divide & conquer, stop & chop,               •       RIGID PMMA IOL implanted (doesn't fold)
+                                                                                                                                            chamber (ACIOL)
+             phaco chop)
+
+    •        Aspiration of cortex → IOL implantation into            •       Requires 10/0 nylon wound sutures →                     •      High rate of complications: bullous
+             capsular bag                                                    significant astigmatism                                        keratopathy, glaucoma, vitreous prolapse
+
+
+    •        FOLDABLE acrylic IOL — fits through 2.2 mm              •       Still used for very hard (grade 4–5) nuclei,            •      Still performed in Morgagnian cataract with
+             incision                                                        subluxated lenses, resource-limited settings                   zonular weakness (careful selection)
+
+
+    •        Self-sealing incision — NO sutures needed →
+             less astigmatism
+
+
+    •        Gold standard worldwide for routine cataract
+             surgery
+
+        Femtosecond laser-assisted cataract surgery (FLACS): laser creates the incision, capsulorhexis, and nucleus fragmentation — then phaco finishes the case. Emerging technology,
+        not yet universally adopted.
+                                                                                                                                                                                          13 / 28
+Intraocular Lenses (IOL) — Types & Positions
+Choosing the right IOL for each patient
+
+
+                      By POSITION                                                       By MATERIAL                                           By OPTICS
+
+                   Posterior Chamber IOL                                                Foldable Acrylic                                       Monofocal
+                           (PCIOL)                                                    (hydrophobic/philic)
+                                                                                                                       Single focal point — standard. Patient needs glasses for
+                                                                         Standard for phaco. Passes through 2.2 mm     near or distance.
+      In the capsular bag (preferred) or ciliary sulcus.                 incision. Reduced PCO vs PMMA.
+      Most physiological position.
+                                                                                                                                               Multifocal
+                                                                                           Rigid PMMA
+                                                                                                                       Near + distance foci. Halos/glare tradeoff. High patient
+                   Anterior Chamber IOL                                                                                selection required.
+                          (ACIOL)                                        For ECCE. Requires large incision. Durable,
+                                                                         cheap.                                                    Extended Depth of Focus (EDOF)
+      When no capsular support. Angle-supported or
+      iris-fixated (Artisan® lens).                                                          Silicone                  Continuous range of vision — reduced halos vs multifocal.
+
+
+                                                                                                                                                  Toric
+                     Scleral-fixated IOL
+                                                                                                                       Corrects corneal astigmatism. Axis must be marked pre-op.
+                                                                                        Collamer (STAAR)
+      Sutured to sclera when no capsule —
+                                                                                                                                           Blue-light filtering
+      technically demanding.
+
+                                                                                                                       Protective against phototoxicity — standard in most
+                                                                                                                       modern IOLs.
+
+Dr. Amr Said | Alexandria University Eye Center | Undergraduate Ophthalmology                                                                                                      14 / 28
+Indications for Cataract Surgery
+Not all cataracts need operating — shared decision-making is key
+
+
+          ELECTIVE (Most Cases)                                                       URGENT / MANDATORY
+
+
+      •     Visual impairment affecting quality of life (driving, reading, ADL)   •    Phacomorphic glaucoma — swollen lens causing angle closure
+
+
+                                                                                  •    Phacolytic glaucoma — leaking lens proteins → macrophage-
+      •     Patient-reported functional disability despite glasses update
+                                                                                       induced raised IOP
+
+
+      •     VA below driving standard (typically <6/12 in driving eye)            •    Phacoanaphylactic uveitis — lens protein hypersensitivity
+
+
+
+      •     Monocular diplopia interfering with daily activities                  •    Dense congenital cataract — prevent amblyopia (within weeks)
+
+
+      •     To facilitate management of posterior segment disease (e.g.,
+                                                                                  •    Subluxated lens with acute pupillary block
+            diabetic retinopathy requiring laser/OCT monitoring)
+
+
+      •     Refractive cataract surgery (lens-based refractive correction)        •    Lens-induced uveitis unresponsive to medical therapy
+
+
+
+
+                                                                                                                                                      15 / 28
+Postoperative Complications
+Early recognition saves vision
+
+  Posterior Capsule Opacification (PCO)                                Endophthalmitis                                            Cystoid Macular Oedema (CME)
+
+      Months–years                                                         24–72 hrs (acute) or weeks (delayed)                     Weeks–months
+
+
+                                                                          Most serious vision-threatening complication.
+                                                                                                                                    Irvine-Gass syndrome. Fluid accumulates in Henle's
+     Most common late complication. Lens epithelial cells                 Causative agents: CoNS (Staphylococcus epidermidis
+                                                                                                                                    layer of macula.
+     migrate on the posterior capsule → 'after-cataract'.                 most common), S. aureus, streptococci.
+                                                                                                                                    Risk ↑ with: vitreous loss, uveitis, DM, pre-existing
+     Presents as gradual return of visual blurring.                       Signs: pain, redness, reduced VA, hypopyon, yellowish
+                                                                                                                                    CME.
+     Tx: Nd:YAG laser capsulotomy — outpatient,                           vitreous haze.
+                                                                                                                                    Dx: OCT (petaloid fluid pattern). Tx: topical NSAIDs +
+     definitive, excellent outcomes.                                      Tx: urgent vitreous tap + intravitreal antibiotics
+                                                                                                                                    steroids, sub-Tenon's triamcinolone.
+                                                                          (vancomycin + ceftazidime). Severe: vitrectomy.
+
+
+
+
+  Corneal Deco mpensatio n                                             Refractive Surprise                                        Other Complications
+
+      Early or late                                                        Immediate                                                Variable
+
+
+                                                                                                                                    • Posterior capsule rupture + vitreous loss (intraop) →
+     Bullous keratopathy from endothelial cell loss —                     Unexpected post-op refraction error from biometry
+                                                                                                                                    higher risk of retinal detachment
+     especially in Fuchs' dystrophy patients.                             inaccuracy, wrong formula, or IOL misidentification.
+                                                                                                                                    • Dropped nucleus → vitrectomy required
+     Also: retained viscoelastic, raised IOP.                             Prevention: double-check calculations, use modern
+                                                                                                                                    • IOL decentration / dislocation
+     Prevention: low-energy phaco technique, OVD                          formulae for outlier eyes.
+                                                                                                                                    • Raised IOP (transient or glaucoma)
+     removal. Tx: penetrating or endothelial keratoplasty                 Tx: IOL exchange or piggyback IOL, LASIK
+                                                                                                                                    • Wound leak / wound burn (phaco tip)
+     (DSAEK/DMEK).                                                        enhancement.
+                                                                                                                                    • Iris trauma (IFIS)
+
+
+
+Dr. Amr Said | Alexandria University Eye Center | Undergraduate Ophthalmology                                                                                                                 16 / 28
+Pseudophakia & Aphakia
+The eye after lens removal
+
+
+                              PSEUDOPHAKIA — Eye with Artificial IOL                                                        APHAKIA — No Lens
+
+            Slit-lamp signs                                                                                        Causes          ICCE (historical); posterior IOL
+                                        IOL visible in pupillary area; haptics may be seen at periphery;
+                                                                                                                                   dislocation into vitreous;
+                                        Purkinje reflexes from IOL surfaces
+                                                                                                                                   traumatic lens loss
+
+
+          Posterior capsule                                                                                    Refractive error
+                                        Remains — supports IOL in bag. Can become opaque (PCO → YAG                                +10 to +12 D hypermetropia
+                                        laser)                                                                                     (previously emmetropic eye)
+
+
+
+              Refraction                                                                                         Classic signs     Iridodonesis (tremulous iris); deep
+                                        Usually emmetropic if biometry correct; no accommodation
+                                                                                                                                   anterior chamber; jet-black (dark)
+                                        (presbyopia-like state)
+                                                                                                                                   pupil; absence of lens
+
+
+      Key examination finding                                                                                    Correction        Aphakic spectacles (+10–12 D:
+                                        Absent crystalline lens; IOL typically PCIOL in capsular bag; clear
+                                                                                                                                   thick, minifying, ring scotoma);
+                                        red reflex if no PCO
+                                                                                                                                   contact lens; secondary IOL
+
+
+              Watch for                                                                                       Paediatric aphakia   Contact lens preferred < 2 years;
+                                        Posterior capsule opacification, decentration, tilt, sunset/sunrise
+                                                                                                                                   secondary IOL when eye growth
+                                        syndrome
+                                                                                                                                   stabilises (~2 years)
+
+
+Dr. Amr Said | Alexandria University Eye Center | Undergraduate Ophthalmology                                                                                            18 / 28
+Clinical Approach to the Cataract Patient
+Structured examination framework for the OSCEs and clinical rounds
+
+
+    1    History                                                       2   Visual Function Assessment
+
+     •     Chief complaint: type and duration of visual loss           •    BCVA — both distance and near
+
+     •     Glare, halos, monocular diplopia, reading difficulties      •    Pupils: RAPD (afferent defect = another pathology)
+
+     •     Systemic: DM, steroids, autoimmune disease                  •    Visual fields: confrontation
+
+     •     Ocular: prior uveitis, trauma, glaucoma drops               •    Light projection (all 4 quadrants) — dense cataract
+
+     •     Medications: steroids, alpha-blockers (IFIS), amiodarone    •    Color discrimination — red vs green torch test
+
+
+
+    3    Slit-Lamp Examination                                         4   Fundal Examination
+
+     •     Lids, conjunctiva, cornea (Fuchs' endothelial dystrophy?)   •    Dilated fundus exam with +90D or indirect
+
+     •     Anterior chamber: depth, cells, flare, synechiae            •    Macula: AMD, diabetic maculopathy, ERM
+
+     •     Lens: morphology (nuclear/cortical/PSC), maturity           •    Disc: glaucomatous cupping?
+
+     •     Pupil dilation essential — grade opacity properly           •    Periphery: retinal breaks, lattice degeneration
+
+     •     Vitreous: any pigment? Schafer sign → retinal tear?         •    If not visible → B-scan ultrasound mandatory
+
+
+                                                                                                                                  20 / 28
+Q: What is the minimum VA in mature cataract?          Q: Most serious post-op complication?                   Q: Shadow test negative =?
+
+
+A: Hand Motion. Never less — if PL/NoPL → posterior    A: Endophthalmitis — intravitreal vancomycin +
+                                                                                                               A: MATURE cataract (totally opaque, no shadow cast)
+pathology                                              ceftazidime
+
+
+
+
+Q: Nuclear cataract → which vision affected most?      Q: Marfan lens direction?                               Q: Steroid-induced cataract pattern?
+
+
+A: DISTANT vision (myopic shift). Patient may read     A: Superior-temporal subluxation (zonules intact
+                                                                                                               A: PSC — Posterior SubCapsular
+better ('second sight')                                inferiorly)
+
+
+
+
+Q: PSC → which condition worst?                        Q: Homocystinuria lens direction?                       Q: DM cataract in young =?
+
+
+A: Near vision in BRIGHT LIGHT (miosis brings opaque                                                           A: Snowflake cataract (acute hyperglycaemia) —
+                                                       A: Inferior-nasal (all zonules weak, lens falls down)
+area into visual axis)                                                                                         bilateral, rapidly progressive
+
+
+
+
+Q: Most common post-op complication?                   Q: Phacomorphic vs phacolytic glaucoma?                 Q: Leukocoria first-exclude?
+
+
+                                                       A: Phacomorphic: swollen immature lens → angle
+                                                                                                               A: RETINOBLASTOMA — malignant, requires urgent B-
+A: PCO — treated by Nd:YAG laser capsulotomy           closure. Phacolytic: mature → protein leaks →
+                                                                                                               scan + MRI
+                                                       macrophage blockage of TM
+                                                                   Dr. Amr Said | Alexandria University
+Modern Advances in Cataract Management(the future of cataract surgery)
+
+                  Femtosecond Laser-Assisted                                 Extended Depth of Focus (EDOF)
+                                                                                                                                    Light-Adjustable IOL (LAL)
+                    Cataract Surgery (FLACS)                                        and Trifocal IOLs
+
+
+
+
+      Laser-created incisions, capsulorhexis, and nuclear            New-generation premium IOLs reduce spectacle       Postoperative non-invasive UV adjustment of IOL
+      fragmentation. More reproducible capsulorhexis,                dependence. EDOF: continuous range, fewer halos.   power. Allows refraction fine-tuning after healing.
+      less phaco energy. No clear superiority over                   Trifocal: near/intermediate/distance. Patient      FDA approved. Excellent for post-LASIK eyes with
+      conventional phaco in most RCTs for routine cases.             selection is critical.                             unreliable biometry.
+
+
+
+
+                   Dropless Cataract Surgery                                 Artificial Intelligence in Biometry               Pharmacologic Cataract Treatment
+
+
+
+
+      Intracameral antibiotics (cefuroxime, moxifloxacin)            AI-based IOL power formulae (e.g., Kane, Pearl-    Lanosterol, oxysterols — preclinical and early
+      ± steroids injected at end of case. Reduces patient            DGS, ORCA) outperform traditional formulae in      trials. Topical drops aiming to dissolve early
+      drop burden, ensures compliance. Becoming                      outlier eyes. Machine learning trained on large    cataracts. NOT yet clinical standard. Surgery
+      standard worldwide.                                            datasets improves refractive accuracy.             remains the definitive treatment.
+
+
+
+
+Dr. Amr Said | Alexandria University | Undergraduate Ophthalmology                                                                                                            22 / 28
+Case 1 — Clinical Problem Solving
+Apply your knowledge
+
+
+   CASE A
+
+
+      A 68-year-old man presents with a 6-month history of difficulty reading the newspaper and problems with near vision. He had been using reading glasses for
+      10 years but now cannot read even with them. He also reports severe glare when driving at night. On examination: BCVA 6/9 dis tance, N10 near (with
+      reading correction). Slit-lamp shows a granular brownish-yellow opacity just posterior to the lens capsule. Red reflex: dark plaque visible in the posterior pole.
+      No RAPD. Fundus examination: normal macula.
+
+
+
+
+    Questions:                                                                              Key Answers:
+
+      1. What is the most likely diagnosis?                                                  1. PSC — Posterior SubCapsular Cataract
+
+                                                                                             2. PSC is near nodal point → near tasks and miosis (reading) maximise the
+      2. Why is near vision MORE affected than distance?
+                                                                                             effect of the opacity
+
+      3. What is the red reflex finding and what does it indicate?                           3. Dark plaque posteriorly on retroillumination — classic PSC pattern
+
+
+      4. What investigations would you order?                                                4. Biometry, B-scan if needed; check for systemic steroids / DM
+
+
+      5. What are the indications for surgery in this case?                                  5. Visual disability affecting daily life — functional indication met
+
+
+
+Dr. Amr Said | Alexandria University Eye Center | Undergraduate Ophthalmology                                                                                              23 / 28
+Summary — Cataract at a Glance
+Complete revision overview
+
+ Type                               Typical Patient                 Morphology                      Key VA Finding             Special Feature                 Surgery
+
+
+ Senile Nuclear                     >60 y                           Dark nucleus on retroillum.     HM in mature               Second sight (myopia)           Phaco
+
+
+ Senile Cortical                    >60 y                           Spokes — dark on red reflex     Varies (axis prox.)        Glare, asymmetric               Phaco
+
+
+                                                                                                                               Worst in bright light /
+ PSC                                Any age (steroids, DM)          Posterior plaque (dark on RI)   Near > distant                                             Phaco
+                                                                                                                               reading
+
+
+ Pediatric                          0–16 years                      Variable (nuclear, lamellar…)   VA loss + amblyopia risk   Leukocoria, squint              Aspiration ± IOL
+
+
+                                                                    Rosette (blunt), diffuse
+ Traumatic                          Any (more common young)                                         Depends on severity        Vossius ring (blunt)            Phaco / ECCE
+                                                                    (penetrating)
+
+
+ Complicated                        Systemic/ocular disease         Usually PSC                     Variable                   Posterior synechiae (uveitis)   Treat cause first
+
+
+ Phacomorphic Glaucoma              Immature cataract               Swollen lens → angle closure Red eye + pain + HM           Raised IOP, corneal oedema      Urgent phaco
+
+
+                                                                    Liquefied cortex leaks
+ Phacolytic Glaucoma                Hypermature/mature                                              HM, pain, redness          Macrophages block TM            Urgent lens removal
+                                                                    proteins
+
+
+
+
+Dr. Amr Said | Alexandria University| Undergraduate Ophthalmology                                                                                                                    26 / 28
+Thank You
+  Questions? Discussion?
+
+            Dr. Amr Said
+
+ Assistant Professor of Ophthalmology
+
+        Alexandria University
+
+
+               exandria
+               University
+

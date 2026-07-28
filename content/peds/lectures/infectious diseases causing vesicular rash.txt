@@ -1,0 +1,395 @@
+SOURCE: Semester 8\Pedo\Theoritical\PPT\infectious diseases causing vesicular rash.pdf
+
+List of infectious diseases causing vesicular rash
+    • Varicella/ zoster disease
+    • Human herpes infection
+    • Coxsackie infections
+
+                                                      Chickenpox
+Chickenpox (Varicella) is a highly contagious viral infection historically common in
+childhood, though it can affect individuals of any age. While usually a mild, self-limiting
+disease in healthy children, it can lead to severe or life-threatening complications in
+adults, neonates, and the immuno-compromised.
+
+        National Centre for Infectious Diseases
+
+Causative Agent
+Chickenpox is caused by the Varicella-Zoster Virus (VZV), also known as human
+herpesvirus 3 (HHV-3). VZV is a DNA virus of the herpesvirus family. After the initial
+infection is resolved, the virus remains latent in the sensory nerve ganglia for life and can
+reactivate later to cause herpes zoster (shingles).
+Department of Health, Victoria
+
+Incubation and Infectivity Periods
+    •      Incubation Period: Typically, 10 to 21 days after exposure, with an average of
+           14–16 days.
+
+    •      Infectivity Period: A person is contagious from 1 to 2 days before the rash
+           appears until all the blisters have dried and become scabs. This typically takes
+           about 5 to 7 days from the onset of the rash.
+
+           Centers for Disease Control and Prevention | CDC
+
+
+Clinical Picture
+The disease progresses through a prodromal phase followed by a characteristic
+eruptive phase.
+   • Prodrome: Often more pronounced in adults, this phase lasts 1–2 days and
+       includes fever, malaise, headache, loss of appetite, and muscle aches. In
+           children, the rash is often the first visible sign.
+  •   The Rash (Exanthem):
+
+          o    Distribution: Typically starts on the face, scalp, or trunk before
+               spreading centripetally to the limbs.
+
+          o    Morphology: Progresses rapidly from small red spots (macules) to raised
+               bumps (papules) and then to clear, fluid-filled blisters (vesicles)
+               described as "dew drops on a rose petal".
+
+          o    "Crops": Lesions appear in waves over 3–5 days, meaning an individual
+               will simultaneously have spots at all developmental stages (macules,
+               vesicles, and scabs).
+
+          o    Mucous Membranes: Painful ulcers (enanthem) can also occur in the
+               mouth, nose, and genital area.
+
+               Centers for Disease Control and Prevention | CDC
+
+
+Complications
+  •   Bacterial Superinfection: The most common complication in children, often
+      caused by Staphylococcus or Streptococcus due to scratching.
+
+  •   Pneumonia: The most common serious complication in adults and pregnant
+      women.
+
+  •   Neurological: Encephalitis (brain inflammation) and acute cerebellar
+      ataxia (loss of coordination).
+
+  •   Pregnancy & Neonatal Risks: Infection in early pregnancy (before 20 weeks)
+      can lead to fetal varicella syndrome (limb hypoplasia, scarring). Maternal
+      infection around delivery can cause severe neonatal varicella.
+
+  •   Reye Syndrome: A rare but fatal condition linked to using aspirin during the
+      infection.
+
+      Department of Health, Victoria +6
+
+
+Treatment and Prevention
+  •   Treatment: Primarily supportive of healthy children:
+
+          o    Symptom Relief: Calamine lotion or antihistamines for itching;
+               acetaminophen for fever. Aspirin must be avoided.
+           o   Antivirals: Oral or intravenous acyclovir may be prescribed for high-risk
+               patients (adults, pregnant women, immunocompromised) if started within
+               24 hours of rash onset.
+
+   •    Prevention:
+
+           o   Vaccination: The Varicella vaccine is highly effective (approx. 90-98%)
+               and usually given in two doses.
+
+           o   Isolation: Keeping infected individuals at home until all lesions have
+               scabbed over to prevent spread.
+
+           o   Post-Exposure Prophylaxis (PEP): Vaccination within 3–5 days of
+               exposure can prevent or lessen the disease. High-risk individuals may
+               receive Varicella-Zoster Immune Globulin (VARIZIG).
+
+               WA Health
+
+
+       herpes zoster
+Zona, more commonly known as shingles or herpes zoster, is a painful viral infection
+resulting from the reactivation of a dormant virus. Unlike chickenpox, which is the
+primary infection, shingles occur later in life when immunity wanes.
+Causative Agent
+The disease is caused by the Varicella-Zoster Virus (VZV), a member of the
+herpesvirus family. After a person recovers from chickenpox, the virus remains latent in
+the dorsal root ganglia (nerve tissues near the spinal cord). Reactivation can be
+triggered by aging, stress, or a weakened immune system.
+Medscape
+
+Incubation and Infectivity Periods
+   •    Incubation Period: Technically, shingles have no incubation period because it
+        is a reactivation of a virus already present in the body. However, if a person is
+        exposed to VZV for the first time (leading to chickenpox), the incubation period is
+        typically 10 to 21 days.
+
+   •    Infectivity Period: A person with shingles is infectious from the moment
+        the rash appears until all blisters have dried and crusted over, which usually
+        takes 7 to 10 days. Transmission occurs through direct contact with blister fluid; it
+       can cause chickenpox in those who are non-immune, but it cannot directly cause
+       shingles in another person.
+
+Clinical Picture
+The progression of shingles is typically divided into three distinct stages:
+   1. Prodrome: Lasting 1 to 5 days before the rash, this phase involves localized
+      burning, tingling, itching, or stabbing pain in a specific area of the skin. Some
+       may also experience fever, headaches, or malaise.
+
+   2. The Rash (Acute Eruptive Phase):
+
+           1. Distribution: The rash is characteristically unilateral (one side of the
+              body) and follows a dermatome (a band of skin supplied by a single
+               spinal nerve). It most commonly appears on the torso or face.
+
+           2. Morphology: It starts as red patches that quickly develop into clusters of
+              fluid-filled vesicles. These blisters eventually burst, ulcerate, and scab
+               over within 2 to 4 weeks.
+
+   3. Chronic Phase: For some, pain persists long after the rash has healed.
+
+       World Health Organization (WHO)
+
+
+Complications
+   •   Postherpetic Neuralgia (PHN): The most common complication, where severe
+       nerve pain lasts for months or years after the rash clears.
+
+   •   Herpes Zoster Ophthalmicus: Shingles involving the eye can cause
+       permanent vision loss.
+
+   •   Ramsay Hunt Syndrome: Reactivation in the facial nerves can lead to facial
+       paralysis and hearing loss.
+
+   •   Bacterial Superinfection: Open blisters can become infected with bacteria
+       like Staph or Strep.
+
+       Medscape
+
+
+Treatment and Prevention
+   •   Treatment: Antiviral medications—such as acyclovir, valacyclovir, or
+       famciclovir—are most effective when started within 72 hours of rash onset.
+    Pain management may include over-the-counter analgesics, nerve pain
+    medications (gabapentin), or topical numbing patches.
+
+•   Prevention: The CDC Shingles Vaccine Recommendation is two doses of
+    the Shingrix vaccine for adults aged 50 and older. To prevent spreading the
+    virus, patients should keep the rash covered and avoid contact with pregnant
+    women or immunocompromised individuals until scabbing is complete.
+                                Herpes Simplex Virus (HSV)
+Herpetic gingivostomatitis is the most common clinical manifestation of a
+primary Herpes Simplex Virus (HSV) virus, typically occurring in children between 6
+months and 5 years of age. While often self-limiting, it presents as a debilitating oral
+infection that can lead to severe dehydration and systemic distress.
+The Royal Children's Hospital
+
+Causative Agent
+The primary cause is Herpes Simplex Virus Type 1 (HSV-1), a double-stranded DNA
+virus with a specific tropism for oral epithelium. Although less common, HSV-2 can also
+cause gingivostomatitis in adults, often transmitted through oro-genital contact.
+National Institutes of Health
+
+Incubation and Infectivity Periods
+     •    Incubation Period: Typically ranges from 2 to 12 days, with an average of
+          about 4 to 8 days following contact with an infected individual.
+
+     •    Infectivity Period: Patients are most contagious when active vesicles are
+          present. Children typically shed the virus for at least one week and sometimes
+          for several weeks (median of 3 weeks). The virus can also be shed
+          asymptomatically throughout life.
+
+          World Health Organization (WHO)
+
+
+Clinical Picture
+The disease is characterized by a sudden onset and a progression through several
+phases:
+   • Prodrome: Lasts about 1 to 4 days before oral lesions appear. Symptoms
+          include high-grade fever, malaise, irritability, headache, and decreased appetite.
+
+     •    Oral Manifestations (The "Rash"):
+
+               o    Vesicles & Ulcers: Numerous small (2–5 mm), fluid-filled vesicles appear
+                    on the gingiva (gums), tongue, buccal mucosa, and palate. These
+                    rapidly rupture to form painful, irregular ulcers with a yellowish-grey center
+                    and a red halo.
+
+               o    Gingivitis: The gums become fiery red, swollen, and friable, bleeding
+                    easily even with slight contact.
+           o    Associated Signs: Severe halitosis (bad breath), drooling, and painful
+                cervical or submandibular lymphadenopathy are common.
+
+                National Institutes of Health (NIH) |
+
+
+Complications
+  •   Dehydration: The most common complication due to refusal to drink because of
+      extreme oral pain.
+
+  •   Autoinoculation: The virus can spread to other body parts, leading to Herpetic
+      Whitlow (fingers, often from thumb sucking) or Herpetic Keratitis (eyes), which
+      can cause vision damage.
+
+  •   Neurological: In rare cases, the virus can lead to life-threatening HSV
+      encephalitis or meningitis.
+
+  •   Secondary Infection: Bacterial superinfection of the ulcers may occur if oral
+      hygiene is severely neglected.
+
+      National Institutes of Health
+
+
+Treatment and Prevention
+  •   Treatment: Primarily supportive, focusing on pain management and hydration.
+
+           o    Supportive Care: Acetaminophen or ibuprofen for fever/pain. Soft, cold,
+                and non-acidic foods/fluids are recommended.
+
+           o    Antivirals: Oral Acyclovir (15 mg/kg for children, 800 mg for adults) is
+                effective if started within 72 hours of symptom onset to shorten the
+                duration of fever and lesions.
+
+           o    Topical Agents: Viscous lidocaine or diphenhydramine rinses may
+                provide temporary local numbing for older children and adults.
+
+  •   Prevention:
+
+           o    Avoid Contact: Refrain from kissing or sharing utensils, toothbrushes, or
+                toys with someone who has active cold sores or oral lesions.
+
+           o    Hygiene: Frequent handwashing and disinfecting toys in childcare
+                settings.
+                 Hand, Foot, and Mouth Disease (HFMD)
+Hand, Foot, and Mouth Disease (HFMD) is a highly contagious viral syndrome that
+primarily affects infants and children under the age of five, though it can occur in adults.
+While typically mild, it is known for causing characteristic "blister-like" eruptions on
+specific areas of the body.
+Causative Agent
+HFMD is caused by viruses belonging to the Enterovirus genus. The most frequent
+culprits include:
+   •   Coxsackievirus A16: The most common cause of mild cases.
+
+   •   Enterovirus A71 (EV-A71): Often linked to more severe disease and
+       neurological complications.
+
+   •   Coxsackievirus A6: Increasingly responsible for "atypical" HFMD involving more
+       extensive rashes and nail loss.
+
+Incubation and Infectivity Periods
+   •   Incubation Period: The time from exposure to the first symptoms is usually 3 to
+       6 days.
+
+   •   Infectivity Period: Patients are most contagious during the first week of
+       illness. However, the virus can remain in the respiratory tract for 1–3 weeks and
+       can be shed in the stool for several weeks or months after symptoms
+       disappear.
+
+Clinical Picture
+The disease follows a predictable clinical course:
+   1. Prodrome: Lasting 24 to 48 hours, symptoms include a low-grade fever, sore
+       throat, malaise, and loss of appetite.
+
+   2. The Rash (Exanthem and Enanthem):
+
+          1. Oral Lesions (Enanthem): Small red spots appear on the tongue, gums,
+             and inside of the cheeks, which quickly turn into painful blisters or ulcers.
+              This often makes swallowing difficult.
+
+          2. Skin Rash (Exanthem): A characteristic rash develops on the palms of
+             the hands and soles of the feet. These lesions are typically flat or raised
+             red spots, sometimes with blisters (vesicles) that have a "greyish" center.
+             Unlike many other rashes, these are usually not itchy but can be tender.
+
+         3. Other Sites: The rash may also appear on the buttocks, knees, elbows, or
+             genital area.
+
+Complications
+  •   Dehydration: The most frequent complication, as painful mouth sores
+      discourage children from drinking fluids.
+
+  •   Onychomadesis: Temporary loss of fingernails or toenails may occur several
+      weeks after recovery, particularly with Coxsackievirus A6.
+
+  •   Viral Meningitis or Encephalitis: Rare but serious inflammation of the brain or
+      spinal cord, primarily seen with EV-A71.
+
+  •   Acute Flaccid Paralysis: A very rare, polio-like weakness in the limbs.
+
+Treatment and Prevention
+  •   Treatment: There is no specific antiviral medication; management is supportive.
+
+         o   Pain/Fever Relief: Use of acetaminophen or ibuprofen. Avoid aspirin in
+             children.
+
+         o   Hydration: Giving cold liquids, milkshakes, or popsicles to soothe the
+             throat and maintain fluid intake.
+
+         o   Topical Relief: Over-the-counter anesthetic mouth gels can help with oral
+             pain.
+
+  •   Prevention:
+
+         o   Hand Hygiene: Strict handwashing protocols after changing diapers or
+             using the restroom.
+
+         o   Disinfection: Cleaning shared toys and surfaces with a chlorine-based
+             bleach solution.
+
+         o   Isolation: Keeping infected children out of school or daycare until the
+             fever is gone and all blisters have dried.
+                                         Herpangina
+Herpangina is a common childhood illness characterized by a sudden onset of high fever
+and painful oral ulcers. While it shares the same viral family as Hand, Foot, and Mouth
+Disease (HFMD), its clinical manifestation is restricted to the posterior oropharynx.
+Causative Agent
+Herpangina is primarily caused by Group A Coxsackieviruses (serotypes 1–10, 16, and
+22). Less common causes include Group B Coxsackieviruses, Echoviruses,
+and Enterovirus 71. These viruses belong to the Picornaviridae family and are most
+prevalent during summer and autumn months in temperate climates.
+Incubation and Infectivity Periods
+   •   Incubation Period: Typically ranges from 3 to 5 days.
+
+   •   Infectivity Period: Patients are most contagious during the first week of
+       symptoms. However, because the virus is shed in feces, it can be transmitted
+       for several weeks after the illness has clinically resolved. Transmission occurs
+       through the fecal-oral route, respiratory droplets, or contact with contaminated
+       surfaces.
+
+Clinical Picture
+The presentation is usually acute and follows a rapid progression:
+   • Prodrome: The illness begins abruptly with a high fever (often reaching 38.9°C
+       to 40°C), sore throat, headache, and malaise. In infants and toddlers, irritability
+       and vomiting are common.
+
+   •   The Lesions (Enanthem): Unlike HFMD, herpangina does not typically feature
+       a skin rash on the hands or feet.
+
+          o   Appearance: Small (1–2 mm) vesicles appear, which rapidly enlarge and
+              ulcerate to form shallow, grey-white lesions with a red halo.
+
+          o   Location: Specifically located on the posterior oral cavity, including the
+              soft palate, uvula, and tonsils. This distinguishes it from herpetic
+              gingivostomatitis, which usually involves the front of the mouth and gums.
+
+Complications
+   •   Dehydration: The most frequent complication, as the severe pain (odynophagia)
+       leads to the refusal of fluids.
+  •   Febrile Seizures: High, rapid-onset fevers can trigger seizures in susceptible
+      young children.
+
+  •   Neurological Involvement: Very rare, but Enterovirus 71 strains can lead to
+      aseptic meningitis or encephalitis.
+
+Treatment and Prevention
+  •   Treatment: Management is entirely supportive.
+
+         o   Analgesics: Acetaminophen or ibuprofen to manage fever and pain.
+
+         o   Hydration: Encouraging small, frequent sips of cold fluids. Acidic or salty
+             foods should be avoided as they irritate the ulcers.
+
+         o   Topical Therapy: Some clinicians suggest "magic mouthwash" (a mix of
+             liquid antacid and diphenhydramine) for older children to coat the sores.
+
+  •   Prevention:
+
+         o   Handwashing: Rigorous hand hygiene, especially after diaper changes,
+             is the most effective CDC prevention strategy.
+
+         o   Exclusion: Children should stay home from school or daycare until the
+             fever has subsided for 24 hours.
+

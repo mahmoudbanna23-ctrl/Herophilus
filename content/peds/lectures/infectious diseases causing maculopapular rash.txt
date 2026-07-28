@@ -1,0 +1,585 @@
+SOURCE: Semester 8\Pedo\Theoritical\PPT\infectious diseases causing maculopapular rash.pdf
+
+Types of rash
+
+1. Primary Morphology (Shape and Structure)
+These terms describe the individual lesions before they change due to scratching or
+healing.
+Geeky Medics
+
+    •   Macule: A flat, discolored spot less than 1 cm (e.g., freckles or early measles). If
+        larger than 1 cm, it is called a patch.
+
+    •   Papule: A solid, raised bump less than 1 cm (e.g., warts or insect bites).
+
+    •   Plaque: A broad, raised, flat-topped area, often formed by many papules joining
+        together (e.g., psoriasis).
+
+    •   Vesicle: A small, clear, fluid-filled blister less than 1 cm (e.g., chickenpox or
+        herpes). If larger than 1 cm, it is called a bulla.
+
+    •   Pustule: A small, raised lesion filled with pus (e.g., acne or impetigo).
+
+    •   Wheal (Hive): A temporary, itchy, raised area caused by swelling in the skin,
+        often with a pale center (e.g., allergic reactions).
+
+          MSD Manuals +8
+
+
+2. Secondary Morphology (Arrangement and Changes)
+These describe how the rash evolves or spreads.
+  MSD Manuals +1
+
+    •   Annular: Ring-shaped with a clear center (e.g., ringworm).
+
+    •   Linear: Lesions that form a straight line, often from scratching or certain plants
+        like poison ivy.
+
+    •   Target (Iris): Concentric rings like a bull's-eye (e.g., Lyme disease or Erythema
+        multiforme).
+
+    •   Crust (Scab): Dried fluid, blood, or pus on the skin surface (e.g., the "honey-
+        colored" crust of impetigo).
+
+    •   Scale: Flaky, silver, or white dead skin cells heaped on the surface (e.g.,
+        psoriasis or fungal infections).
+    •   Umbilicated: A raised bump with a central "dimple" or indentation (e.g.,
+        molluscum contagiosum).
+
+          MSD Manuals +2
+
+
+  3. Distribution (Where it appears)
+    •   Generalized: Spread randomly over most of the body (e.g., viral exanthems).
+
+    •   Symmetrical: Appearing similarly on both sides of the body.
+
+    •   Dermatomal: Following a specific nerve path on one side (e.g., shingles).
+
+    •   Acral: Affecting the distal parts of the body like hands, feet, or ears.
+
+
+
+
+The most important infectious causes of maculopapular rash
+        Measles (Rubeola)
+        Rubella (German Measles)
+        Scarlet Fever
+        Roseola (Exanthem Subitum)
+        Erythema Infectiosum (Fifth Disease)
+        Infectious Mononucleosis (EBV)
+        Enteroviruses.
+                                                        Measles
+Measles (Rubeola) is a highly contagious, acute viral respiratory illness that remains a
+leading cause of vaccine-preventable death globally, especially among young children.
+Centers for Disease Control and Prevention | CDC.
+
+Causative Agent
+Measles is caused by the measles virus, an enveloped, single-stranded RNA virus in
+the genus Morbillivirus of the family Paramyxoviridae. Humans are the only natural
+reservoir; the virus is transmitted primarily via airborne droplets or direct contact with
+respiratory secretions.
+National Institutes of Health.
+
+Incubation and Infectivity
+     •    Incubation Period: Typically, 10 to 14 days (range 7–21 days) from exposure to
+          the onset of the rash. Fever usually begins around day 10–12.
+
+     •    Infectivity Period: Highly contagious from 4 days before to 4 days after the
+          appearance of the rash.
+
+          Centers for Disease Control and Prevention | CDC.
+
+
+Clinical Picture
+The disease progresses through distinct stages:
+1. Prodrome (2–4 days)
+Characterized by a stepwise increase in fever (often peaking at 103°F–105°F) and the
+"three Cs": Cough, Coryza (runny nose), and Conjunctivitis.
+Centers for Disease Control and Prevention | CDC (.gov) +1
+
+Koplik Spots: Pathognomonic tiny white-to-bluish specks on a red base appear on the
+buccal mucosa (opposite the molars) 1–2 days before the rash.
+ National Centre for Infectious Diseases +1
+
+
+2. Exanthem (Rash Stage)
+The characteristic maculopapular (morbilliform) rash appears about 14 days after
+exposure.
+Centers for Disease Control and Prevention | CDC.
+
+     •    Pattern: Begins at the hairline and face, then
+          spreads cephalocaudally (downward) to the neck, trunk, and eventually the
+          extremities (including palms and soles in severe cases).
+     •    Evolution: Initially discrete lesions that later become confluent, especially on
+          the face and upper body. As it fades (after 5–6 days), it may leave a coppery-
+          brown discoloration and fine skin peeling (desquamation).
+
+          National Centre for Infectious Diseases
+
+
+Complications
+Complications occur in approximately 30–40% of cases.
+National Institutes of Health
+
+     •    Common: Otitis media (7–9%), diarrhea (8%), and pneumonia.
+
+     •    Severe: Pneumonia is the leading cause of measles-related death in children.
+          Neurological issues include acute encephalitis (1 in 1,000 cases) which can lead
+          to permanent brain damage or deafness.
+
+     •    Long-term: Subacute Sclerosing Panencephalitis (SSPE) is a rare (1 in
+          10,000–100,000), fatal, progressive brain degeneration occurring years after
+          infection.
+
+          Centers for Disease Control and Prevention | CDC
+
+
+Treatment and Prevention
+     •    Treatment: There is no specific antiviral therapy. Management is supportive:
+          hydration, antipyretics (avoiding aspirin in children), and treating secondary
+          bacterial infections. Vitamin A supplementation is recommended for all
+          pediatric cases to reduce mortality and eye damage.
+
+     •    Prevention: The primary strategy is the MMR (Measles, Mumps, Rubella)
+          vaccine, typically given in two doses (at 12–15 months and 4–6 years).
+
+     •    Post-Exposure Prophylaxis (PEP): Unvaccinated individuals may receive the
+          vaccine within 72 hours or immune globulin (IG) within 6 days of exposure to
+          prevent or attenuate the disease.
+
+          National Institutes of Health
+                                               German Measles
+Rubella, commonly known as German Measles or "three-day measles," is a viral
+infection that is generally mild in children and adults but can be devastating if contracted
+during pregnancy.
+Mayo Clinic +1
+
+Causative Agent
+Rubella is caused by the rubella virus, an enveloped, positive-sense, single-stranded
+RNA virus. It is the sole member of the genus Rubivirus within the family Matonaviridae.
+Humans are the only known reservoir for the virus.
+Centers for Disease Control and Prevention | CDC (.gov) +2
+
+Incubation and Infectivity
+    •    Incubation Period: Typically, 14 to 17 days, with a broader range of 12 to 23
+         days from exposure to the onset of symptoms.
+
+    •    Infectivity Period: Patients are most contagious from 7 days before to 7 days
+         after the appearance of the rash. Notably, infants with congenital rubella
+         syndrome can shed the virus in their secretions for up to a year or more after
+         birth.
+
+         National Institutes of Health (NIH)
+
+
+Clinical Picture
+Approximately 25% to 50% of rubella infections are asymptomatic or subclinical.
+Centers for Disease Control and Prevention
+
+1. Prodrome
+In children, the rash is often the first sign of illness. In adolescents and adults, a mild
+prodrome lasting 1–5 days usually precedes the rash. Cleveland Clinic
+    • Symptoms: Low-grade fever (<39°C/102.2°F), headache, malaise, mild
+         conjunctivitis, and upper respiratory symptoms (coryza).
+
+    •    Lymphadenopathy: A hallmark feature is tender post-auricular, occipital, and
+         posterior cervical lymphadenopathy, which typically appears 5–10 days
+         before the rash.
+
+    •    Forchheimer Spots: Small, red spots (petechiae) may sometimes be seen on
+         the soft palate, though these are not pathognomonic.
+       Centers for Disease Control and Prevention | CDC
+
+
+2. Rash (Exanthem)
+The rubella rash is typically finer and less bright than the measles (rubeola) rash.
+   •   Appearance: A pink or light-red maculopapular eruption.
+
+   •   Pattern: It begins on the face and neck and
+       spreads cephalocaudally (downward) to the trunk and extremities, usually
+       becoming generalized within 24 hours.
+
+   •   Duration: The rash characteristically fades by the third day ("three-day
+       measles") in the same order it appeared, without the staining or skin peeling
+       seen in measles.
+
+       Centers for Disease Control and Prevention | CDC
+
+
+Complications
+While acute illness is usually benign, complications can occur:
+  • Arthralgia and Arthritis: Common in adult women (up to 70%), usually affecting
+       small joints of the hands.
+
+   •   Rare Complications: Thrombocytopenic purpura (bleeding issues) and
+       encephalitis (1 in 5,000–6,000 cases).
+
+   •   Congenital Rubella Syndrome (CRS): The most severe complication. Infection
+       during the first trimester carries an 85–90% risk of fetal damage,
+       including deafness, cataracts, and heart defects (the "classic triad").
+
+       National Institutes of Health (NIH)
+
+
+Treatment and Prevention
+   •   Treatment: There is no specific antiviral therapy. Management is strictly
+       supportive, including rest, fluids, and acetaminophen for fever.
+
+   •   Prevention: The MMR (Measles, Mumps, Rubella) vaccine is the standard of
+       care. It is a live-attenuated vaccine typically given in two doses: the first at 12–15
+       months and the second at 4–6 years of age.
+
+   •   Screening: Women of childbearing age should have their immunity confirmed
+       via serology before pregnancy, as the vaccine is contraindicated during
+       pregnancy.
+Congenital Rubella Syndrome (CRS) is a devastating constellation of physical
+defects resulting from maternal infection with the rubella virus during pregnancy. Unlike
+the mild postnatal "German Measles," the intrauterine version is a major cause of
+preventable birth defects and fetal death.
+Incubation and Infectivity Period
+   •   Incubation: There is no "incubation period" for the syndrome itself; rather, it
+       depends on the timing of maternal infection. The risk to the fetus is highest
+       during the first trimester (up to 90% risk of defects if infected before 12 weeks
+       gestation).
+
+   •   Infectivity: Infants with CRS are highly infectious. They can shed the virus in
+       nasopharyngeal secretions and urine for months, and sometimes up to one
+       year after birth. This poses a significant risk to healthcare workers and pregnant
+       women in contact with the infant.
+
+Clinical Picture
+Unlike postnatal rubella, CRS does not have a traditional "prodrome and rash" phase for
+the infant. Instead, it presents as a multisystemic developmental catastrophe.
+1. The Classic Triad (Gregg’s Triad)
+   1. Cataracts/Glaucoma: Leading to "white pupils" and potential blindness.
+
+   2. Sensorineural Deafness: The most common single finding in CRS.
+
+   3. Cardiac Defects: Specifically Patent Ductus Arteriosus (PDA) and pulmonary
+       artery stenosis.
+
+2. "Blueberry Muffin" Rash
+While not a standard maculopapular rash, infants often present with extramedullary
+hematopoiesis. This appears as purplish-red spots on the skin, known as a "blueberry
+muffin" rash, representing the skin's attempt to produce blood cells because the bone
+marrow is compromised.
+3. Other Findings
+   •   Microcephaly (small head size) and intellectual disabilities.
+
+   •   Intrauterine Growth Restriction (IUGR) and low birth weight.
+
+   •   Hepatosplenomegaly and jaundice.
+Complications
+Complications are often lifelong and may be delayed:
+   •   Progressive Panencephalitis: A rare, late-onset neurological deterioration.
+
+   •   Endocrinopathies: A significantly increased risk of developing Type 1 Diabetes
+       Mellitus and thyroid dysfunction later in childhood or adolescence.
+
+   •   Glaucoma: May develop years after birth.
+
+Treatment and Management
+There is no cure or specific antiviral treatment for CRS.
+   • Multidisciplinary Care: Management is supportive and involves cardiac surgery
+      for heart defects, cataract removal, hearing aids or cochlear implants, and
+       intensive developmental therapy.
+
+   •   Isolation: Infants must be managed with contact precautions until they are at
+       least one year old or have repeated negative viral cultures.
+
+Prevention
+The only effective strategy is pre-conception immunization.
+   •   MMR Vaccine: Ensuring high population immunity (herd immunity) through the
+       2-dose pediatric schedule.
+
+   •   Screening: Women of childbearing age should be screened for rubella IgG
+       antibodies. If non-immune, they should be vaccinated and advised not to
+       become pregnant for at least 28 days (as the vaccine is live-attenuated).
+
+   •   No Treatment in Pregnancy: If a non-immune pregnant woman is exposed,
+       Immune Globulin (IG) may be considered, but it does not reliably prevent fetal
+       infection.
+                                      Scarlet Fever
+Scarlet Fever (Scarlatina) is a bacterial exanthem that arises as a complication of
+Group A Streptococcal (GAS) infection, primarily in children aged 5 to 15 years.
+Causative Agent
+The disease is caused by Group A Streptococcus (Streptococcus pyogenes). The
+characteristic rash is a delayed-type hypersensitivity reaction to Streptococcal
+Pyrogenic Exotoxins (SPE-A, B, or C) produced by the bacteria. Only strains of GAS
+that carry these erythrogenic toxins cause the rash.
+Incubation and Infectivity
+   •   Incubation Period: Short, typically 2 to 5 days (range 1–7 days) after exposure.
+
+   •   Infectivity Period: Patients are highly infectious during the acute phase. With
+       appropriate antibiotic treatment, they are no longer contagious after 24 hours.
+       Without treatment, they may remain infectious for weeks.
+
+Clinical Picture
+The presentation is distinct and follows a predictable pattern.
+1. Prodrome (Sudden Onset)
+Symptoms usually begin abruptly with:
+   •   High Fever and chills.
+
+   •   Sore Throat (Pharyngitis) with beefy red tonsils and often white/yellow exudates.
+
+   •   Headache, malaise, and abdominal pain (nausea/vomiting is common in
+       children).
+
+   •   Strawberry Tongue: Initially, the tongue has a white coating with red papillae
+       (White Strawberry Tongue); after a few days, the coating peels, leaving a bright
+       red, bumpy surface (Red Strawberry Tongue).
+
+2. Rash (Exanthem)
+The rash appears 12–48 hours after the fever begins.
+    • Texture: Described as "sandpaper"—it is finely papular and feels rough to the
+       touch.
+
+   •   Pattern: Usually begins on the trunk and neck, spreading to the extremities. It
+       blanches under pressure.
+   •   Pastia Lines: The rash is more intense in skin folds (axilla, groin, antecubital
+       fossa), forming linear streaks of petechiae.
+
+   •   Circumoral Pallor: The face is flushed, but the area around the mouth remains
+       characteristically pale.
+
+   •   Desquamation: As the rash fades (after 3–7 days), the skin may peel,
+       particularly on the fingertips, toes, and groin.
+
+Complications
+Complications are divided into suppurative (local spread) and non-suppurative
+(immune-mediated).
+   •   Suppurative: Peritonsillar abscess, otitis media, sinusitis, and pneumonia.
+
+   •   Non-Suppurative:
+
+          o   Acute Rheumatic Fever (ARF): A serious inflammatory disease affecting
+              the heart, joints, and CNS.
+
+          o   Post-Streptococcal Glomerulonephritis (PSGN): Kidney inflammation
+              causing "cola-colored" urine.
+
+Treatment and Prevention
+   •   Treatment: The primary goal is to prevent rheumatic fever. Penicillin (oral
+       Penicillin V or intramuscular Penicillin G) is the gold standard. Amoxicillin is
+       often used in children for palatability. For penicillin-allergic patients,
+       cephalosporins or macrolides are used.
+
+   •   Prevention: There is no vaccine. Prevention relies on:
+
+          o   Prompt treatment of "strep throat" to stop the spread.
+
+          o   Hand hygiene and respiratory etiquette.
+
+          o   Exclusion from school/daycare until the child has been on antibiotics for at
+              least 24 hours and is afebrile.
+                                    Roseola Infantum
+Roseola Infantum, also known as Exanthem Subitum or Sixth Disease, is a
+common, generally benign viral illness affecting infants and toddlers. It is most famous
+for its "surprise" rash that appears just as the child seems to be getting better.
+Causative Agent
+The primary cause is Human Herpesvirus 6 (HHV-6), and less frequently, Human
+Herpesvirus 7 (HHV-7). These are large, enveloped DNA viruses. By age 2, most
+children have been infected with HHV-6 [1].
+Incubation and Infectivity
+   •   Incubation Period: Typically, 5 to 15 days.
+
+   •   Infectivity Period: The virus is shed in the saliva of healthy individuals and
+       infected children. It is most contagious during the febrile phase (the high-fever
+       stage), before the rash appears. By the time the rash breaks out, the child is
+       generally no longer contagious.
+
+Clinical Picture
+Roseola is unique because the rash and the fever rarely overlap.
+1. Prodrome (Febrile Phase)
+The illness begins abruptly with a very high fever (often >40°C or 104°F) that lasts
+for 3 to 5 days.
+    • Appearance: Despite the high fever, the child often appears surprisingly well
+       and alert.
+
+   •   Associated Signs: Mild irritability, slight runny nose, and Nagayama
+       spots (small erythematous papules on the soft palate and base of the uvula).
+
+   •   The "Crisis": The fever ends abruptly (the "crisis"), followed immediately by the
+       rash.
+
+2. Rash (Exanthem Phase)
+The rash typically appears within 12 to 24 hours of the fever's resolution.
+    • Characteristics: Small (2–5 mm), pale pink, almond-shaped macules or
+       papules. They are non-pruritic (not itchy).
+
+   •   Pattern: The rash starts on the trunk and may spread to the neck and proximal
+       extremities. It rarely affects the face.
+  •   Duration: It is transient, often lasting only a few hours to two days, and
+      disappears without scaling or pigmentation.
+
+Complications
+  •   Febrile Seizures: Because the fever rises so rapidly, approximately 10% to
+      15% of children with roseola experience a febrile seizure. This is the most
+      common complication.
+
+  •   Rare Complications: Encephalitis, hepatitis, or thrombocytopenia, primarily in
+      immunocompromised patients.
+
+Treatment
+  •   Treatment: Management is entirely supportive.
+
+         o   Antipyretics: Acetaminophen or ibuprofen to manage fever and
+             discomfort.
+
+         o   Hydration: Ensuring adequate fluid intake.
+
+         o   Antivirals: Ganciclovir is only considered for severe cases in
+             immunocompromised children.
+                                Erythema Infectiosum
+Erythema Infectiosum, popularly known as Fifth Disease, is a common childhood viral
+exanthem famous for its distinct "slapped-cheek" appearance.
+Causative Agent
+The disease is caused by Human Parvovirus B19, a small, non-enveloped, single-
+stranded DNA virus. It specifically targets and replicates in erythroid progenitor
+cells (immature red blood cells) in the bone marrow.
+Incubation and Infectivity
+   •   Incubation Period: Typically, 4 to 14 days, but can extend up to 21 days.
+
+   •   Infectivity Period: Patients are most contagious during the initial viremic
+       phase (the prodrome), which occurs before the rash appears. Once the
+       characteristic rash develops, the child is considered no longer infectious and
+       may return to school or daycare.
+
+Clinical Picture
+The illness typically presents in two distinct phases:
+1. Prodrome (Viremic Phase)
+A mild, non-specific illness occurs about a week after exposure.
+    • Symptoms: Low-grade fever, headache, malaise, and mild upper respiratory
+       symptoms (coryza).
+
+   •   Significance: This is when viral shedding is at its peak.
+
+2. Rash (Immune-Mediated Phase)
+The rash appears 2–5 days after the prodrome and evolves in three stages:
+    • Stage 1 ("Slapped-Cheek"): Bright red, erythematous flushing on the cheeks
+       with circumoral pallor (paleness around the mouth).
+
+   •   Stage 2 (Lacy/Reticular): 1–4 days later, a pink maculopapular rash appears on
+       the trunk and extensor surfaces of the limbs. As it clears centrally, it takes on
+       a lacy, marble-like, or reticular appearance.
+
+   •   Stage 3 (Recurrence): The rash can fluctuate in intensity for weeks, often
+       reappearing in response to heat, sunlight, exercise, or stress.
+Complications
+While usually benign in healthy children, Parvovirus B19 can be serious for specific
+groups:
+   • Arthropathy: More common in adult women; presents as symmetrical joint pain
+       (arthritis) in the hands, wrists, and knees.
+
+   •   Aplastic Crisis: In children with high red cell turnover (e.g., Sickle Cell
+       Disease or Thalassemia), the virus can temporarily shut down red blood cell
+       production, leading to life-threatening anemia.
+
+   •   Fetal Hydrops: Infection during pregnancy (especially the second trimester) can
+       cause severe fetal anemia and heart failure, potentially leading to fetal loss.
+
+Treatment and Prevention
+   •   Treatment: No specific antiviral exists. Management is supportive (fluids and
+       acetaminophen for fever). For those in aplastic crisis, blood transfusions or
+       intravenous immunoglobulin (IVIG) may be required.
+
+   •   Prevention:
+
+          o   There is no vaccine.
+
+          o   Hygiene: Frequent handwashing and avoiding shared utensils.
+
+          o   Exposure: Pregnant women or immunocompromised individuals who
+              have been exposed should consult a physician for serological testing.
+                               Infectious Mononucleosis
+Infectious Mononucleosis (IM), colloquially known as "mono" or the "kissing disease," is
+a common contagious syndrome characterized by a triad of fever, pharyngitis, and
+lymphadenopathy. While typically a self-limiting illness in healthy adolescents, its
+prolonged recovery and potential for rare but serious complications necessitate careful
+clinical management.
+Causative Agent
+The primary causative agent is the Epstein-Barr virus (EBV), also known as human
+herpesvirus 4 (HHV-4), which is responsible for approximately 90% of cases. Other
+pathogens that can induce a similar "mononucleosis-like" syndrome include:
+A.T. Still University (ATSU)
+
+    •    Cytomegalovirus (CMV) (the most common non-EBV cause).
+
+    •    Toxoplasma gondii.
+
+    •    Human Immunodeficiency Virus (HIV) (during acute infection).
+
+    •    Adenoviruses and Human Herpesvirus 6 (HHV-6).
+
+Incubation and Infectivity Periods
+    •    Incubation Period: In adolescents and young adults, the incubation period is
+         notably long, typically ranging from 4 to 6 weeks (roughly 30–50 days). It may be
+         shorter in young children.
+
+    •    Infectivity Period: Transmission occurs primarily through saliva (deep kissing,
+         sharing utensils). An individual is most contagious during the acute phase (first 6
+         weeks), but EBV can be shed intermittently in saliva for months to a year after
+         symptoms are resolved. Once infected, the virus remains latent in B-lymphocytes
+         for life and can reactivate periodically.
+
+         Mayo Clinic
+
+
+Clinical Picture
+The disease often progresses through distinct stages:
+   1. Prodrome: Lasting 3 to 5 days, this phase is marked by vague symptoms
+         including malaise, headache, low-grade fever, and fatigue.
+   2. Acute Phase (The Triad):
+
+           1. Fever: Often high (up to 40°C), peaking in the afternoon.
+
+           2. Sore Throat (Pharyngitis): Often severe with enlarged tonsils and
+               white/gray exudates.
+
+           3. Lymphadenopathy: Primarily affecting the posterior cervical lymph
+               nodes, though axillary and inguinal nodes may also swell.
+
+   3. Rash:
+
+           1. Spontaneous Rash: A faint, non-itchy maculopapular rash occurs in
+               roughly 10% of cases.
+
+           2. Antibiotic-Induced Rash: A classic clinical sign occurs when patients are
+               misdiagnosed with strep throat and given amoxicillin or ampicillin; up to
+               90% of these patients develop a vivid, itchy maculopapular rash.
+
+               A.T. Still University (ATSU)
+
+
+Complications
+Though rare, complications can be life-threatening:
+   • Splenic Rupture: Occurs in 0.1%–0.5% of cases, typically in the 2nd or 3rd
+       week; it is a surgical emergency.
+
+   •   Airway Obstruction: Severe tonsillar swelling can compromise breathing.
+
+   •   Neurological: Encephalitis, meningitis, and Guillain-Barré syndrome.
+
+   •   Hematological: Hemolytic anemia and thrombocytopenia.
+
+       Johns Hopkins Medicine +7
+
+
+Treatment and Prevention
+   •   Treatment: There is no specific antiviral cure or vaccine for mono.
+       Management is primarily supportive:
+
+           o   Rest and Hydration: Critical for recovery and managing fatigue.
+
+           o   Analgesics: Acetaminophen or NSAIDs for fever and pain (avoid aspirin
+               in children to prevent Reye’s syndrome).
+       o   Corticosteroids: Used only for severe complications like impending
+           airway obstruction.
+
+       o   Activity Restriction: Patients must avoid contact sports and heavy
+           lifting for at least 3–4 weeks to prevent splenic rupture.
+
+•   Prevention: Focuses on personal hygiene, such as avoiding sharing drinks,
+    food, or toothbrushes and refraining from kissing while symptomatic.
+

@@ -1,0 +1,363 @@
+SOURCE: Semester 8\ENT\Theoritical\PPT\L15) Facial nerve disorders.pdf
+
+      Ilo’s
+
+
+1-      Enumerate the parts of the facial nerve
+2-      Enumerate branches of the facial nerve and their functions
+3-      List the types of facial nerve paralysis
+4-      Differentiate between upper motor neuron and lower motor
+neuron facial paralysis
+5-      Recall the pathological grades of facial nerve injury
+6-      Enumerate the causes of facial nerve paralysis
+7-      Relate the associated manifestations to the site of the injury
+8-      Outline the treatment of Bell's palsy
+9-      Differentiate Bell’s palsy from Ramsay-Hunt syndrome
+7000 axons:    3000 axons:
+              Secretomotor
+  Motor
+                          Facial nerve proper
+                                (motor)
+
+
+
+
+                         Components of
+                           facial nerve
+
+Special sensory fibres                          Parasympathetic fibers:
+  (taste fibers) from                            arises from superior
+    solitary nucleus                                salivary nucleus
+Three nuclei supply the FN:
+  A- The motor nucleus: in the pons. Sup. Part:
+  bilateral innervations from the motor cortex, inferior
+  part: unilateral crossed cortical innervations.
+  B- The superior salivatory nucleus: parasympathetic
+  secretory fibers to lacrimal glands, nasal glands,
+  submandibular, sublingual and palatal salivary
+  glands.
+  C- The nucleus of the tractus solitarius: receives
+  taste sensation.
+Components of facial nerve
+
+
+
+   1. Facial nerve proper
+      (motor) : arises from
+      facial motor nucleus in
+      pons
+Course (Segments and branches) of
+facial nerve
+
+1. Intracranial
+2. Intratemporal
+3. Extratemporal
+• It arises from the inferior border of the pons
+  (pontomedullary sulcus) crosses the CPA to
+  enter the IAC.
+• Anatomical segments:
+     1- Intracranial segment
+     2- IAC segment
+     3- Labyrinthine segment which ends by the
+        geniculate ganglion
+     4- Tympanic (horizontal) segment
+     5- Mastoid (vertical) segment which ends by
+        the stylomastoid foramen.
+Branches:
+A- Intra-temporal branches:
+         1-     Greater     superficial
+            petrosal (parasympathetic secretory)
+         2- Nerve to stapedius muscle
+         3- Chorda tympani (Taste)
+B- Extra-temporal branches:
+1- Post auricular nerve
+2- Nerve to stylohyoid & posterior belly of digastric
+3- Cranio-temporal division
+4- Cranio-cervical division
+Intratemporal part
+ Mastoid segment (vertical segment, 15-20mm)
+
+
+
+
+               6
+              7
+
+
+
+
+                                                         Greater petrosal nerv
+                                                            Geniculate ganglio
+                                                    stapedius
+                                                     Chorda
+                                                     tympani
+            Mastoid process
+                                     stylomastoid
+1. Neuropraxia: Physiologic block, No anatomical
+   disruption, temporary, lasts few days and full return
+   of function is expected. The axoplasm can still be
+   transported from and to the cell body across the
+   blocked area and so; the nerve fiber distal to the site
+   of injury retains normal electrical response.
+2. Axonotmesis: Axon sheath is intact but the axon is
+   divided. i.e. more severe lesion. Distal degeneration
+   (Wallerian) occurs. Epineurium is intact.
+3. Neurotmesis: Epineurium enclosing all nerve
+   fascicles is also torn. Regeneration is the worst and
+   traumatic neuroma may develop.
+   Seddon       Sunderland Pathophysiologic Process
+Classification Classification
+
+Neuropraxia         I       Physiologic block
+
+
+Axonotmesis        II       Axons disrupted
+                   III      Axons and endoneurium
+                            disrupted
+                   IV       Axons, endoneurium, &
+                            perineurium disrupted
+Neurotmesis        V        Complete transection
+2. Second degree/ Axonotmesis.
+   -The axons continuity are disrupted.
+
+3. Third degree.
+   -The endoneurium are disrupted.
+
+4. Forth degree.
+   -The perineum surrounding the nerve fascicles are
+   disrupted.
+- What is the lesion?
+- Where is the lesion?
+- Degree of the lesion:
+- Causes of the lesion:
+What is the lesion?
+   Is the face paralyzed or not?
+    Inspection of the face movement.
+    Testing for facial movement and
+    emotional movement. (Laughing;
+    blinking, wrinkling, closing eyes,
+    whistling, grinning and blowing of
+    the cheeks).
+- Where is the lesion?
+Lesions can be either :
+    1. Supra-nuclear (UMNL),
+    2. Nuclear,
+    3. Infra-nuclear (LMNL).
+                    Supra-Nuclear   Infra-Nuclear
+   Difference
+                       UMNL            LMNL
+Type of paralysis      Spastic         Flaccid
+  Distribution       Lower face      Whole face
+
+  Other signs        Crossed            _ve
+                     hemiplegia         _
+Where is the lesion?
+
+i- Nuclear lesions are associated by crossed
+hemiplegia, crossed hemianesthesia, other
+cranial nerves palsies specially VI.
+Lacrimation, salivation and taste are
+normal.
+
+ii- LMNL : FN may be affected at different
+sites of its course.
+1. Schirmer’s tear test
+2. Stapedius reflex
+3. Evaluation of Taste
+4. Submandibular salivary flow
+Degree of the lesion
+1. Maximum nerve excitability
+   test (Hilgers test)
+2. Electroneuronograpy
+(ENoG)
+3. Electromyography (EMG)
+   1- Maximum nerve excitability test (Hilger’s
+test): The response on the involved side is
+compared to the normal side. The idea is that the
+distal segment of a completely cut nerve may
+continue to conduct when stimulated by a faradic
+current (distal to the cut) for as long as 24-72
+hours. The response then disappear due to
+Wallerian degeneration. Ideally testing is started
+on the third post onset day.
+  2- Electroneuronography (ENOG) =
+Evoked electromyography: Similar to
+maximum stimulation test in which the evoked
+CAP are recorded. The height of the action
+potential is compared with the good side and a
+percentage comparison is made. It is a
+quantitative test. Degeneration of more than
+90% means recovery is poor.
+   3- Electromyography (EMG): The paralyzed
+side is explored by the EMG needle while the
+patient is attempting to move it.
+   In the first 10 days, the presence of voluntary
+CAP indicates less than total transaction. After
+10-14 days, the presence of fibrillation indicates
+denervation. After 10 weeks have passed, the
+test is prognostic. These action potentials can be
+found a week or two before the clinical
+evidence of recovery.
+Supra-nuclear or nuclear: Hemorrhage; vascular; encephalitis;
+tumors, cerebral palsy; ……. Infra-nuclear:
+1.Congenital: poor facial muscular development
+2. Inflammatory: Malignant ext. otitis; AOM, Ch.OM,
+   cholesteatoma, Herpes zoster oticus (Ramasy Hunt
+   syndrome), spirochetes (Lyme disease)
+3. Traumatic: Fracture base, forceps delivery,
+4. Toxic: Diphteria, tetanus,..
+5. Metabolic: Diabetes
+6. Neoplastic: 1ry tumor: FN neuroma; 2ry tumors of middle
+   ear and parotid and CPA.
+7. Iatrogenic: mastoid, parotid, CPA surgery
+8. Idiopathic: Bell’s palsy
+         A- Complications due to FN paralysis:
+1-   Drooling
+     2- Eye complication: exposure keratitis; corneal ulcer;
+     panophthalmitis.
+3-   Facial contractures (fixed shortening of the muscles)
+4-   Psychological disturbance, depression, and suicidal tendencies.
+B- Complications due to abnormal regeneration
+1.   Facial tics and spasms: due to short-circuiting between nerve fibers
+2.   Abnormal mass movement of the face: Synkinesis.
+3.   Crocodile tears: due to misdirected salivation fibers to the lacrimal
+     gland.
+4.   Frey’s syndrome: facial flushing and sweating over the parotid
+     during mastication = misdirected salivary fibers to the sweat
+     glands.
+1- Treatment of the cause
+2- Treatment of the complication: eg. Gold weight for protection
+  of the cornea; Facial plastic surgery for the contractures.
+3- Treatment of the facial paralysis by facial re-animation
+  surgery meant to:
+  a- Restoration of anatomical integrity of the FN. Eg. FN
+  decompression; anastomosis and grafting. May be indicated in
+  Bell’s palsy, Herpes zoster oticus, acute or chronic otitis media,
+  trauma, and tumors
+  b- Restoration of the functional integrity of the
+  neuromuscular system of the face: includes:
+  i.   nerve substitution technique e.g. Facial-hypoglossal
+  anastomosis; and       ii.   muscle substitution techniques e.g.
+  Masseter or temporalis muscle transfer.
+4- Facial rehabilitation: e.g. Massage, heat and facial exercises.
+Defined as the sudden occurrence of a flaccid
+
+  facial paralysis (LMNL) in an apparently
+
+  healthy individual. It is the commonest cause
+
+  of intratemporal causes of facial paralysis.
+
+- Incidence: 1/5000 per year.
+
+  It is the most common form of FN paralysis.
+
+  It is attributed to sudden exposure to cold.
+-    Etiology:       Due      to     VIRAL       causes
+
+    (Activation of Herpes Simplex).
+Pathogenesis: Segmental demyelination followed by
+
+    2ry edema and compression.
+
+Clinical picture: Sudden onset of FN paralysis of LMN
+
+    type. Pain in the ear is noted in over half of patients.
+
+    Recovery starts even without treatment in most cases
+
+    within few days up to 3 weeks.
+- Prognosis: 71% complete recovery; 25%
+
+  recovers with slight sequalae; and 4% with
+
+  severe sequelae. Not a single patient who
+
+  does not show some recovery.
+
+- Diagnosis: It’s a diagnosis of exclusion.
+A- Conservative treatment is helpful in 96% of cases.
+
+    1. Zovirax (800 mg 5 x daily for ONE week) + Cortisone
+
+        therapy
+
+    2. Physiotherapy treatment:      massage,     heat,   and   facial
+
+        exercises.
+
+    3. Dark eye glasses and artificial tears. Protection of the eye.
+
+   B                                                                     -
+
+  Surgical treatment: For complete paralysis with more than 90%
+
+   degeneration by ENOG within 6 days: Decompression of the FN
+
+   (specially the entry of the nerve into the Fallopian canal) through
+
+   Middle Cranial Fossa.
+• 5-15% of acute facial palsy
+• Palsy appears 2-7 days
+• 30-50% show incomplete recovery
+• Diffuse lymphocytic infiltration..?
+• Vesicles may also affect palate & anterior 2/3
+  of tongue
+• The FN appears to be more severely
+  damaged in herpes zoster oticus
+  than with idiopathic facial palsy.
+  Only 30% of patients will recover
+  normal function, and thus 70%
+  experience some sequelae.
+Ramsay Hunt Syndrome consists of
+• Facial paralysis;
+• Auditory and vestibular     dysfunction
+  associated with
+• Painful herpetic vesicles of the auricle
+  and the EAC.
+1)     Acyclovir    (Zovirax)      should   be
+
+     started as early as possible (800 mg
+
+     5 times daily for a week) +
+
+2) Oral steroids 1m/kg/day for 2 weeks
+
+3) Decompression if degeneration is
+
+     more than 90% in 2 weeks.
+1. Accidental: eg. Fracture of the
+   petrous temporal bone:
+2. Iatrogenic (Unintentional surgical
+   injury)
+3. Surgical   (unavoidable     injury
+   during surgery)
+Accidental: eg. Fracture of the petrous
+  temporal bone:
+     a-   10% of cases of longitudinal fractures
+     b-   40% of cases of transverse fractures.
+  The site of the lesion is commonly at the
+  geniculate ganglion.
+     c- Extratemporal trauma is not common.
+  Occasionally, direct trauma may damage the
+  nerve.
+Iatrogenic (Unintentional surgical injury)
+           a-   Incision of a postauricular abscess in
+      infant. Incision must be placed high.
+      b-    Classical cortical & radical mastoidectomies
+      c-    Congenital ear surgery
+      d-    Surgery of CPA.
+Intraoperative Facial Nerve Monitoring (IOM) is of great
+    help to prevent surgical trauma during difficult
+    otological/neurotological surgery.
+Surgical (unavoidable injury during surgery)
+  Impossible to preserve the FN during
+  surgery as in some cases of malignancies,
+  Tumors of the CPA, extensive
+  cholesteatomas, …
+    Management: Diagnosis:. electric testing;
+     Medical steroids; Surgical Exploration..
+MYRINGOTOMY
+• Definition:
+  Deliberate surgical incision of TM.
+

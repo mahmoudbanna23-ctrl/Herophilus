@@ -1,0 +1,485 @@
+SOURCE: Semester 8\Pedo\Theoritical\PPT\58) cerebral palsy.pdf
+
+                                   Cerebral Palsy
+Professor Tarek E. I. Omar
+Professor of Paediatrics and Paediatric Neurology – Alexandria University
+Fellow in Paediatric Neurology – Edinburgh University - UK
+
+
+
+Learning Objectives
+
+   •   Understand the operational definition of cerebral palsy.
+
+   •   Assess, identify children with cerebral palsy and list consequences of the brain insult
+       on their potential development.
+
+   •   Identify different types of classifications and associated impairments of cerebral
+       palsy.
+
+   •   Acquire skills needed to early detect children with cerebral palsy.
+
+   •   Acquire skills and principles of diagnosis and management of children with cerebral
+       palsy.
+
+
+
+Definition of Cerebral Palsy
+
+Umbrella term for a permanent disorder of movement and/or posture and motor
+function due to a non-progressive abnormality of the developing brain; often accompanied
+by disturbances of cognition, communication, vision, perception, sensation, behaviour, seizure
+disorder and secondary musculoskeletal problems.
+
+
+
+Explanation of the Definition
+
+Umbrella term
+A term used to cover a broad category of things rather than a single specific item. Many types
+are grouped together because they share common features.
+
+Permanent…..
+lasting or intended to last or remain unchanged indefinitely. Not DISAPPEARING.
+
+A disorder…..
+Disorder NOT Disease. …what is the difference?
+
+   •   Disease: The condition resulting from a pathophysiological response to external or
+       internal factors…so you know the cause.
+
+   •   Disorder: A disruption of the disease to the normal or regular functions in the body or a
+       part of the body…so you do not know the cause.
+
+Movement, Posture AND motor function …..
+MAINLY MOTOR manifestations.
+due to a non-progressive abnormality
+Non-progressive…..already ESTABLISHED & NO LONGER ACTIVE pathology….ALREADY
+discharged from hospital.
+Non-progressive lesion & static damage. Clinical manifestations emerge over time. Normal
+versus abnormal cerebral maturation.
+
+of the developing brain.
+Foetal or infant’s brain…..period of brain growth and development…conception till first 2 – 3
+years of life = achievement of motor milestones.
+If the injury occurs after 2 years…. ACQUIRED BRAIN INJURY.
+
+often accompanied by disturbances of cognition, communication, vision, perception,
+sensation, behaviour, seizure disorder and secondary musculoskeletal problems.
+
+CP is a multi-axial condition with comorbidities that significantly influence prognosis and
+quality of life.
+Accompanied……co-morbid / multi-axial deficits…. outcome.
+
+
+
+Epidemiology & Aetiology
+
+   •   MOST COMMON CAUSE of motor impairment / disability in children.
+
+   •   The cause can be identified only in 50% of cases.
+
+   •   Certain factors in the history can increase risk (incidence in those with one or more RISK
+       FACTORS is higher than those without).
+
+   •   Prematurity and Low birth weight are the two most important risk factors.
+
+   •   Postnatal risk factors are more important in developing countries.
+
+Distribution of Causes (Developed Countries)
+
+   •   Antenatal: ~80%
+   •   Perinatal (e.g., birth asphyxia): ~10%
+   •   Postnatal: ~10%
+
+Prevalence:
+
+   •   Developed countries: 1.5–2.5 per 1000 live births
+   •   Developing countries: 1.5–5.6 per 1000 live births
+
+       Timing-Based Risk Factors
+
+       Prenatal (Conception → Onset of Labor)
+
+   •   Prematurity
+   •   Low birth weight
+   •   Intrauterine infections (TORCH)
+   •   Placental insufficiency
+   •   Maternal diseases (e.g., preeclampsia, diabetes)
+   •   Cortical migration disorders
+   •   Structural brain maldevelopment
+   •   Thrombotic disorders
+   •   In vitro fertilization
+   •   Small for gestational age
+
+
+
+       Perinatal (28 Weeks Gestation → 7th Day of Life)
+
+   •   Hypoxic-ischemic encephalopathy (HIE)
+   •   Birth asphyxia
+   •   Obstructed labor
+   •   Premature rupture of membranes
+   •   Neonatal sepsis or meningitis
+   •   Intracranial hemorrhage
+   •   Kernicterus
+
+
+
+       Postnatal (Birth → First 2 Years)
+
+   •   CNS infections (meningitis, encephalitis)
+   •   Severe dehydration (± hypernatremia)
+   •   Intracranial trauma (including child abuse)
+
+
+
+
+CHANGING PICTURE OF CEREBRAL PALSY
+
+   •   There are significant racial and SES disparities in the prevalence of CP; the
+       prevalence of CP is 70% higher in low/middle income families than high income
+       families.
+
+   •   Most individuals with CP are now living well into adulthood.
+
+   •   Adults with CP experience a premature ‘aging’, with chronic pain, extreme fatigue,
+       osteoporosis, and osteoarthritis – resulting in an early loss of ambulation and
+       independence.
+
+
+
+Early Detection & Presentations
+
+   •   Follow up of "at risk" infants (born prematurely, following birth asphyxia, kernicterus).
+
+   •   Diagnosis is made by CLINICAL EXAMINATION of:
+
+          o   Abnormal muscle tone in the limbs and trunk
+
+          o   Postural abnormalities
+            o   Hand dysfunction
+
+            o   Abnormal Gait
+
+
+
+Classifications
+
+1. Etiological classification:
+
+    •   No single cause for CP, it is multifactorial.
+
+    •   The most common single factor is prematurity / Low birth weight.
+
+    •   Timing-Based Risk Factors:
+
+A – Pre-natal risk factors / causes (conception to onset of labour):
+
+    1. prematurity
+
+    2. intrauterine infections (TORCH).
+
+    3. congenital structural CNS malformations and cortical migration disorders.
+
+    4. eclampsia or pre-eclampsia.
+
+    5. placental insufficiency.
+
+    6. uterine bleeding.
+
+    7. small for gestational age.
+
+    8. uncontrolled gestational DM.
+
+    9. maternal chronic diseases as renal failure.
+
+    10. in vitro fertilization (IVF) babies are at increased risk for CP.
+
+B - Perinatal risk factors / causes (28 Weeks Gestation to 7th Day of Life):
+
+    1. hypoxic-ischemic encephalopathy / birth asphyxia.
+
+    2. respiratory anoxia e.g. respiratory distress.
+
+    3. obstructed labour.
+
+    4. premature rupture of membranes.
+
+    5. kernicterus
+
+    6. neonatal sepsis and meningitis
+
+    7. intracranial haemorrhage.
+
+C - Postnatal risk factors / causes (birth to first 2 years):
+
+   1. CNS infection as meningitis or encephalitis.
+
+   2. intracranial trauma e.g. child abuse.
+
+   3. severe dehydration with or without hypernatremia.
+2 & 3. Anatomical and Clinical Classifications:
+
+Based on the site of brain involvement:
+
+   •   Pyramidal: involvement of motor area (4) and paramotor area (6) leading to UMNL
+       manifestations. e.g spastic CP.
+
+   •   Extrapyramidal: involvement of basal ganglia. e.g. dyskinetic CP.
+
+   •   Cerebellum and its connections: leading to ataxic CP.
+
+  4. Clinical & Topographic Classification (Neurological Features)
+     Note: Topographic categorization according to the body affected into hemiplegia,
+     quadriplegia, diplegia) are no longer used. Instead, Surveillance of Cerebral Palsy in
+     Europe (SCPE) Classification is the used on:
+      Spastic CP (≈ 90%)
+   • Increased tone
+   • Hyperreflexia
+   • Pathological reflexes
+   • Babinski sign
+      Subtypes:
+   • Bilateral spastic
+   • Unilateral spastic (hemiplegia)
+
+       Dyskinetic CP (≈ 6%)
+   •   Dystonia
+   •   Chorea
+   •   Athetosis
+   •   Fluctuating tone
+   •   Primitive reflex patterns
+
+       Ataxic CP (≈ 4%)
+   •   Loss of coordinated movement
+   •   Abnormal force, rhythm, and accuracy
+
+  5. Functional Classification (gross motor functional level): using Gross Motor Functional
+     Classification System (GMFCS).
+
+       Gross Motor Function Classification System:
+       Level        Description
+
+       I            Walks without limitations
+
+       II           Walks with limitations
+
+       III          Walks with assistive device
+
+       IV           Limited self-mobility; may use powered mobility
+      Level         Description
+
+      V             Dependent; transported in manual wheelchair
+
+  6. Clinical Types and Features:
+     Unilateral CP (Hemiplegia)
+   • Often due to perinatal stroke
+   • One side affected (arm > leg)
+   • Possible visual field defects
+   • Risk of seizures and learning difficulties
+   • Usually GMFCS I–II
+
+      Bilateral Spastic CP — Diplegia
+  •    Common in prematurity
+  •    Legs more affected than arms
+  •    Toe walking and scissoring gait
+  •    Good cognition and communication in many cases
+  •    Often GMFCS I–III
+
+      Bilateral Spastic CP — Quadriplegia
+  •    Extensive brain damage
+  •    All limbs involved
+  •    Associated impairments common:
+            o Intellectual disability
+            o Feeding problems
+            o Speech difficulties
+            o Vision and hearing deficits
+            o Seizures
+  •    High risk of hip dislocation and scoliosis
+  •    Often GMFCS IV–V
+
+      Dyskinetic CP
+  •   Often due to perinatal asphyxia or kernicterus
+  •   Involuntary movements
+  •   Feeding difficulties common
+  •   Cognition may be preserved
+  •   Frequently GMFCS IV–V
+
+
+
+
+Management
+
+  •   Parents should be given details of the diagnosis as early as possible.
+
+  •   Prognosis is difficult during infancy until the severity and pattern of evolving signs and
+      the child’s developmental progress have become clearer over several months or years of
+      life.
+   •   Children with CP are likely to have a wide range of associated medical, psychological
+       and social problems, making it essential to adopt a multidisciplinary approach to
+       assessment and management.
+
+
+
+Principles of Management
+
+   •   For aetiology
+
+   •   For Associated impairments / secondary problems
+
+
+
+Investigations
+
+   1. Neuroimaging
+      Recommended if aetiology is not established. MRI, when available, is preferred to CT
+      (higher yield of type and timing of insult).
+
+   2. Metabolic or genetic testing
+      not routinely needed Unless suspected different diagnosis (inherited neuro-metabolic
+      or degenerative disease…loss of acquired milestones, organomegaly, dysmorphic
+      features).
+
+   3. Testing for Congenital Infections
+      TORCH screening is needed if suspected congenital infection to prevent further sibling
+      affection.
+
+   4. Coagulation studies
+      For unexplained cerebral infarction on imaging and hemiplegic CP, to diagnose a
+      hereditary coagulation disorder.
+
+   5. Associated conditions
+
+          o      An EEG should not be done for the purpose of determining aetiology of CP but
+                 for findings in history to suggest epileptic seizures.
+
+          o      Because of the high incidence of associated conditions, children with CP should
+                 be screened for:
+
+                    ▪   Intellectual disability (IQ test)
+
+                    ▪   Ophthalmologic and hearing impairments (visual and hearing exam)
+
+                    ▪   Speech and language disorders (speech and language assessment)
+
+                    ▪   Swallowing, Nutrition and growth (barium studies. Etc)
+
+                    ▪   Secondary joint dislocation or fracture (skeletal X ray)
+
+
+
+Treatment Strategy
+
+   •   Problems of Severe Spasticity in CP
+
+   •   Tasks of Spasticity for the Caregiver
+   •   Current Treatment Options of Spasticity
+
+Treatment approaches should be in an integrated rather sequential way.
+
+           o   Exercise and physical therapy
+
+           o   Chemo-denervation injections by Botulinum Toxin into spastic muscles
+
+           o   Systemic oral anti-spasticity drugs
+
+           o   Intra-thecal baclofen
+
+           o   Orthopaedic (tendon lengthening) or neurosurgical methods (selective dorsal
+               rhizotomy or deep brain stimulation)
+
+
+
+Team Approach for Management
+
+Local Neurodevelopment Team:
+
+   •   Neurodevelopment paediatrician / paediatric neurologist
+
+   •   Physiatrist
+
+   •   Physiotherapist, occupational therapist
+
+   •   Speech therapist, psychologist
+
+   •   Audiologist, ophthalmologist
+
+   •   Nutritionist, dietician
+
+   •   Social worker, nurse, educational advisor
+
+   •   Surgeons (orthopaedics – neurosurgery – GIT..etc)
+
+Effective management requires coordination among these team members.
+
+
+
+Paediatrician’s Role in the Management of Cerebral Palsy
+
+   •   Medical Management:
+
+           o   Treatment of spasticity by either systemic oral drugs (tizanidine, baclofen,
+               diazepam) or by Motor point intra-muscular injections (Botulinum toxin type A)
+               or by Intra-thecal baclofen (not available in Egypt).
+
+           o   Medical treatment for associated problems (seizures, GORD, failure to thrive,
+               sleep & behaviour problems).
+
+           o   Coordination of care and follow up of developmental progress of the child.
+
+
+
+Therapists’ Role: (Physio, O.T., Speech, Orthotics)
+
+   •   As soon as possible
+   •   Both at home and centre-based
+
+   •   Specialist knowledge of child development & CP
+
+   •   Close liaison between team members
+
+   •   Work with Clearly defined goals and specific outcomes
+
+   •   Focus on empowering child & family
+
+
+
+References
+
+   1. Rosenbaum P, Paneth N, Leviton A, et al. A report: The definition and classification of
+      cerebral palsy. Developmental Medicine & Child Neurology. 2007;49(s109):8–14.
+
+   2. Bax, M., Goldstein, M., Rosenbaum, P., Leviton, A., Paneth, N., Dan, B., ... & Damiano, D.
+      Proposed definition and classification of cerebral palsy. Developmental Medicine &
+      Child Neurology. 2005; 47(8), 571-576.
+
+   3. Novak I, Morgan C, Adde L, et al. Early detection and intervention in cerebral palsy. JAMA
+      Pediatrics. 2017;171(9):897–907.
+
+   4. Palisano, R., Rosenbaum, P., Walter, S., Russell, D., Wood, E., & Galuppi, B.
+      Development and reliability of a system to classify gross motor function in children with
+      cerebral palsy. Developmental Medicine & Child Neurology. 1997; 39(4), 214-223.
+
+   5. Oskoui, M., Coutinho, F., Dykeman, J., Jetté, N., & Pringsheim, T. An update on the
+      prevalence of cerebral palsy: a systematic review and meta-analysis. Developmental
+      Medicine & Child Neurology. 2013; 55(6), 509-519.
+
+   6. Durkin, M. S., & Benedict, R. E. Cerebral palsy in low-and middle-income
+      countries. Developmental Medicine & Child Neurology. 2018; 60(3), 212-213.
+
+   7. Haak, P., Lenski, M., Hidecker, M. J. C., Li, M., & Paneth, N. Cerebral palsy and
+      aging. Developmental Medicine & Child Neurology. 2009; 51(s4), 16-23.
+
+   8. Ashwal, S., Russman, B. S., Blasco, P. A., Miller, G., Sandler, A., Shevell, M., &
+      Stevenson, R. Practice parameter: diagnostic assessment of the child with cerebral
+      palsy: report of the Quality Standards Subcommittee of the American Academy of
+      Neurology and the Practice Committee of the Child Neurology Society. Neurology. 2004;
+      62(6), 851-863.
+
+   9. Novak, I., McIntyre, S., Morgan, C., Campbell, L., Dark, L., Morton, N., ... & Goldsmith, S.
+      A systematic review of interventions for children with cerebral palsy: state of the
+      evidence. Developmental Medicine & Child Neurology. 2013; 55(10), 885-910.
+
+   10. Graham, H. K., Rosenbaum, P., Paneth, N., Dan, B., Lin, J. P., Damiano, D. L., ... & Lieber,
+       R. L. Cerebral palsy. Nature Reviews Disease Primers. 2016; 2(1), 1-24.
+

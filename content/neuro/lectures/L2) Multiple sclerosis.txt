@@ -1,0 +1,556 @@
+SOURCE: Semester 8\Neuro\Theoritical\PPT\L2) Multiple sclerosis.pdf
+
+Prof .Dr .Ghada Abdel Hady Ashmawy
+             Prof Of Neurology
+           Faculty Of Medicine
+          Alexandria University
+
+
+   MULTIPLE SCLEROSIS
+    Learning objectives
+ 1- Define the multiple sclerosis
+ 2- Recognize Pathogenesis and
+
+  Pathophysiology
+ 3- Define Risk Factors
+
+ 4- Recognize the clinical picture
+
+ 5- Determine the management
+            Demyelinating Diseases
+    A demyelinating disease is any disease of the nervous
+    system in which the myelin sheath of neurons is damaged.
+
+ Demyelinating diseases are traditionally classified in two
+  kinds:
+    Demyelinating Myelinoclastic Diseases
+normal and healthy myelin is destroyed by a toxic, chemical or
+autoimmune substance e.g. multiple sclerosis)
+    Demyelinating Leukodystrophic Diseases ( Dysmyelinating
+  Diseases) , describes an inborn error of metabolism affecting
+  myelinogenesis that causes it to be abnormal, arrested, or
+  delayed
+                                                               
+Multiple Sclerosis
+            Multiple Sclerosis
+             Definition
+ Multiple sclerosis (MS) is the
+  most       common        chronic
+  inflammatory, demyelinating and
+  neurodegenerative disease of the
+  central nervous system in young
+  adults
+   In most patients, reversible
+    episodes     of     neurological
+    dysfunction lasting several days
+    or weeks characterize the
+    initial stages of the disease
+    (that   is, clinically isolated
+    syndrome      and     relapsing–
+    remitting MS)..
+ A key principle for diagnosing
+  MS is to uncover evidence that
+ demonstrates lesions in the
+  central nervous system (brain
+  and spinal cord) showing
+  “dissemination in space” (DIS –
+  suggestions of damage in more
+  than one place in the nervous
+  system)
+ and “dissemination in time”
+  (DIT – suggestions that damage
+  has occurred more than once).
+                                      The Pathogenesis And
+                                        Pathophysiology
+ The dysregulation of the BBB increases the trans-endothelial
+  migration of activated leukocytes, including macrophages, T
+  cells and B cells, into the CNS, which leads to further
+  inflammation and demyelination, followed by oligodendrocyte
+  loss, reactive gliosis and neuro-axonal degeneration.
+ The attack causes inflammation that eventually leads to
+  sclerosis, which is the medical term for scarring
+ Figure 1 Schematic diagram of impulse
+ conduction in normal (upper panel) and
+ demyelinated (lower panel) regions of a nerve
+ fiber. The solid arrow indicates the direction
+ of impulse conduction; the shaded area
+ indicates the region occupied by the impulse.
+ Currentflow is indicated by the broken arrows.
+ In normally myelinated regions (top), the hig
+ resistance, low capacitance directs the
+ majority of action current to the next node of
+ Ranvier. In contrast, in demyelinated regions
+ (bottom), action current is short-circuited
+ through the damaged myelin sheath or
+ denuded regions of the axon, and hence
+ further propagation of the action potential is
+ blocked. (Reprinted with permission from
+ Waxman, S. G. 1982, "Membranes, myelin, and
+ the pathophysiology of multiple sclerosis," N
+ Engl J Med, vol. 306, pp. 1529-1533.)
+             The Pathogenesis And
+               Pathophysiology:
+
+
+ The pathological hallmark of MS
+  plaques is the accumulation of
+  demyelinating lesions that occur in the
+  white matter of the brain and spinal
+  cord.
+ They are typically located around post-
+  capillary venules
+              Risk Factors
+ The pathogenesis and pathophysiology of MS remains
+  incompletely understood.
+ This disorder is a heterogeneous, multifactorial, immune-
+  mediated disease( T and B cs mediated) that is influenced by
+  both
+ 1-Genetic such as the human leukocyte antigen (HLA) genes on
+  chromosome 6, including(HLA)DRB1*15:01polymorphisms( 3-
+  4 risk)
+ 2- Environmental Factors (modifiable factors)such as
+
+ Smoking,
+
+ Low Vitamin D Level,
+
+ Epstein–barr Virus (EBV) Infectious mononucleosis),
+
+ Obesity
+
+ Gut microbiome
+                           Risk Factors
+
+
+   Symptoms usually begin during young adulthood,
+    with the peak onset at age 24. (20-40)
+
+   MS has a predilection for whites, especially those of
+    northern European heritage.
+                   Risk Factors
+
+
+ Women are affected more than men (Ratio ~3:1)..
+ Pregnancy does not alter the risk of developing MS,
+
+  but it does seem to influence disease activity
+ The annualized relapse rate drops from
+
+  approximately 0.56 to 0.12 by the third trimester, but
+  this is offset by an increase to 1.2 in the first 3
+  postpartum months
+                                  Q1
+
+   Which age group is MS most likely to strike?
+   A. Children under 12
+   B. Teens
+   C. Adults ages 20 to 40
+   D. Adults ages 65 and older
+                                  Q1
+
+   Which age group is MS most likely to strike?
+   A. Children under 12
+   B. Teens
+   C. Adults ages 20 to 40
+   D. Adults ages 65 and older
+                                       Subtypes of MS
+The temporal course of MS can
+be described by one of four
+categories:
+ 1- Relapsing-Remitting (RR),
+    (87%) which characterized by unpre- dictable acute attacks followed by
+    periods of remission
+
+
+   2- Secondary Progressive (SP),
+    Nearly 65% of patients with RRMS will subsequently develop SPMS
+    which is considered the second phase of this disease
+
+
+ 3-primary Progressive (PP),
+  (  10-15%)
+
+
+ 4- and Progressive Relapsing
+
+  (PR).
+            Relapsing Remitting
+ -Symptoms of a clinical attack
+  (relapse) typically show an acute
+  or sub-acute onset, worsen with a
+  duration of at least 24 hours ,over
+  days or weeks, reach a peak
+  severity within 2–3 weeks and
+ (remit )to a variable degree,
+  ranging from minimal resolution to
+  complete recovery normally 2–4
+  weeks after reaching maximum
+  deficit and In the absence of fever
+  or infection
+      Clinical picture
+      The clinical presentation of MS is
+  heterogeneous multifocal and depends on the
+location of demyelinating lesions within the CNS
+                     optic neuritis
+                          (ON)
+   The initial symptom of MS is optic neuritis (ON) in
+    14% to 23% of patients, and more than 50%
+    experience a clinical episode of ON during their
+    lifetime.
+ The most common manifestation is visual loss in one
+  eye that evolves over a few days.
+ Periocular pain, especially with eye movement,
+
+  usually accompanies and may precede the visual
+  symptoms.
+                 Sensory symptoms
+ Sensory symptoms are the most common presenting
+  manifestation in MS (21% to 55%) Loss of sensation
+  (numbness), paresthesias (tingling), dysesthesias
+  (burning), and hyperesthesias are common.
+ Impairment of vibration and joint position sensation,
+
+  and reduced pain and light touch perception.
+ These symptoms can temporarily worsen with
+
+  increased body temperature and resolve when the
+  body temperature cools to normal or after a period of
+  rest (known as Uhthoff phenomenon).
+                  Motor manifestations
+
+     2- Motor manifestations is common in MS
+      and are characterized by pyramidal signs
+      (such as Babinski sign, more- pronounced
+      reflexes and clonus), paresis and spasticity
+
+
+
+
+Exaggerated                             Babinski
+reflexes                 clonus         sign
+                     Cerebellar pathways
+
+ Cerebellar pathways are frequently involved during
+  the course of MS, but a predominately cerebellar
+  syndrome is uncommon at onset.
+ The manifestations include dysmetria,
+  dysdiadochokinesia, action tremor with terminal
+  accentuation, dysrhythmia, and loss of balance
+
+
+
+
+dysdiadochokinesia   action tremor with terminal   Dysmetria
+                             accentuation
+              Visceral complaints
+
+
+ Urinary urgency, frequency, and urge
+  incontinence Constipation
+ Sexual dysfunction
+          Brainstem
+
+ Intense vertigo
+ the trigeminal nerve is frequently
+
+  involved
+ Dysphagia is often due to impairment
+  of cranial nerves IX, X, and XII
+ Internuclear ophthalmoplegia
+Internuclear Ophthalmoplegia, is the most
+common cause of diplopia in MS patients
+
+
+                                              normal
+
+
+
+
+                                        Internuclear
+                                        ophthalmoplegia
+
+
+
+
+                                            convergence
+Internuclear ophthalmoplegia
+         Fatigue and cognitive function
+
+
+   Fatigue Over 75% of MS patients
+    experience fatigue during their disease
+    course.
+
+   Cognitive Disorders are now known to
+    be present in 40% to 70% of MS
+    patients
+              Paroxysmal symptoms
+ Paroxysmal symptoms are characteristic of MS
+ Symptoms are typically brief (seconds to 2
+  minutes) and recur frequently, occasionally
+  dozens of times per day.
+ Tonic Spasms
+
+ Trigeminal neuralgia
+
+ Lhermitte's sign (transient sensory symptoms
+  usually precipitated by neck flexion) is usually
+  described as an electrical or tingling sensation
+  that travels down the spine or into the
+  extremities.
+                          Q2
+ Which is the most common cranial nerve affected in
+  multiple sclerosis
+             i. The vagus nerve
+            ii. The facial nerve
+            iii. The optic nerve
+            iv. The olfactory nerve
+                          Q2
+ Which is the most common cranial nerve affected in
+  multiple sclerosis
+             i. The vagus nerve
+            ii. The facial nerve
+            iii. The optic nerve
+            iv. The olfactory nerve
+                 Differential Diagnosis
+                      (Multifocal)
+
+1-    Vasculitis e.g., systemic lupus erythromatosis.
+2-    Behcet ` s disease (oral genital ulcer and uveitis).
+3-    Acute disseminated encephalomyelitis.
+4-    Lymphoma.
+5- Neuromyelitis optica
+6-MOG antibody disease
+                      Evaluation
+
+                                  for diagnosis of MS
+    The 2017 revision of the McDonald criteria
+  is based on the demonstration of white matter
+  lesions disseminated in time(At least two attacks in
+  between at least 1 month) and space in the absence
+  of another identifiable explanation.
+ MS remains a clinical diagnosis, although MRI,
+  evoked potentials, and CSF examination can help
+  clarify less certain cases.
+The 2024 revision of the McDonald criteria for diagnosis of
+RRMS depends on dissemination in time and space
+                          MRI
+
+ 1-MRI brain (T2-weighted images) and spinal
+  cord:
+ The investigation of choice to support the
+  diagnosis of MS by detection of MS plaques.
+ ✓ The plaques typically are seen in the white
+  matter of the brain and spinal cord; typically,
+  in the periventricular region, juxtacortical and
+  infratentorial regions of the brain and in the
+  spinal cord
+ ✓ Contrast enhanced lesions gadolinium-
+  based contrast denotes recent disease activity.
+.
+Common Sites Of Lesions
+        Periventricular
+         Juxtacortical
+         Optic Nerve
+          Spinal Cord
+           Cerbellum
+para magnetic rim lesions   central vein sign
+                           CSF
+ Oligoclonal bands [OCB]: A subtype of globulin can be detected in the
+  CSF of MS patient . It is helpful in confirming the diagnosis.
+ Kappa free light chain index
+
+ The presence of myelin components, antimyelin antibodies
+
+ ✓ Increased IgG index; due to increased intrathecal production of IgG.
+
+ -A lymphocytic pleocytosis occurs during acute exacerbations in about
+  one third of patients
+              Evoked potentials
+   VEP: More than 90% of persons with a history of ON
+    have an abnormal VEP,
+
+
+
+
+  and somatosensory evoked potentials (SSEPs) may
+  detect subclinical sites of demyelination, thus providing
+  evidence of multifocality.
+ Brain stem auditory evoked potentials (BAEPs) are
+  occasionally informative
+                       Treatment
+ There is no available prevention or cure
+  for MS. Treatments focus on three areas:
+ Treating Acute Exacerbations(relapse) And
+
+  Hastening Their Recovery;
+ Altering The Natural course Of MS;
+
+ And Providing Symptomatic Relief Of
+
+  Current Symptoms By Enhancing Physical
+  Abilities And Preventing Or Treating
+  Complications
+                Acute Exacerbations
+                     (relapse )
+
+
+ Corticosteroids are the most commonly used
+  treatment for MS, although there have been few
+  studies to address their efficacy.
+ Intravenous Methylprednisolone Became The
+
+  Preferred Treatments
+        Alteration of the Natural Course
+                       DMT
+
+ The primary goal of drug treatment is to alter the
+  natural course of the disease
+ (e.g., reducing the frequency
+
+ and severity of relapses,
+
+ preventing the chronic progressive phase,
+
+ and slowing the progression of disability).
+        Disease Modifying Therapy DIT
+   β-Interferons
+   Interferon-β 1b (Betaseron)
+    subcutaneous injection every other day.
+
+
+
+   Interferon-β 1a (Avonex)
+   Once-weekly intramuscular                     Combined Azathioprine and
+                                                  Interferon-β 1b
+                                                  Methotrexate
+Non symptomatic MS, RRMS, and SPMS                Intravenous Immunoglobulin
+                                                  rituximab
+                     Recent drugs
+Tysabri® Natalizumab.
+Aubagio® (teriflunomide), 14 mg once daily.
+Gilenya (fingolimod)® 0.5 mg cap once daily
+Cladribine (mavenclad) 10 mg
+Ocrevus(ocrelizumab) infusion every 6 m for 1ry
+progressive type
+          Symptomatic Treatment of
+          Existing Disabilities
+
+
+
+Spasticity                baclofen.
+ Fatigue                   Amantadine at 100mg
+                                     twice a day
+   Paroxysmal Symptoms   carbamazepine
+References
+          ILA 1
+   A 24-year-old right-handed student female was
+    studying late at night for an examination. As she
+    looked at her textbook, she experienced a numbness
+    sensation in the left foot and her entire left leg. The
+    feeling lasted 1 week and then slowly went away.
+    She dismissed the complaint, recalling that she had
+    similar symptoms 6 months ago. She remembered
+    that 2 years ago her left eye became blurred and her
+    vision went out and in 1 week, her vision returned to
+    normal. She had not seen a physician for any of
+    these previous symptoms. She decided to seek
+    medical consultation the next day.
+   What is wrong with this women ?
+ Psychic
+ Organic
+      What is the lesion?
+
+
+
+
+   From the above history
+        Where is the lesion?
+
+
+ Examination was significant for brisk reflexes
+  and sustained clonus at the right ankle. Babinski
+  sign was present on the right .
+ What is the most likely diagnosis in this case and
+
+  the investigations needed to confirm the
+  diagnosis?
+Localisation (central or peripheral)
+ Sensory (superficial deep cortical) ( site )
+ Motor LMN (site )
+
+        (pyramidal UMN ,
+         extra pyramidal
+
+    Cerebellum
+    Other cranial nerves
+   A 24-year-old right-handed student female was
+    studying late at night for an examination. As she
+    looked at her textbook, she experienced a numbness
+    sensation in the left foot and her entire left leg. The
+    feeling lasted 1 week and then slowly went away. She
+    dismissed the complaint, recalling that she had similar
+    symptoms 6 months ago. She remembered that 2 years
+    ago her left eye became blurred and her vision went out
+    and in 1 week, her vision returned to normal. She had
+    not seen a physician for any of these previous
+    symptoms. She decided to seek medical consultation the
+    next day
+   Examination was significant for brisk reflexes
+    and sustained clonus at the right ankle. Babinski
+    sign was present on the right.
+   What is the most likely diagnosis?
+ 1- Seizure
+ 2-Transient ischemic attack
+
+ 3-Parkinson`s disease
+
+ 4-Anaplastic astrocyoma
+
+ 5- Multiple sclerosis
+           Next step
+
+
+What are the investigations?
+ MRI brain with contrast
+ CSF analysis
+
+ VEP
+Test yourself
+                                 q2
+ A 35 year old white female. She came to Neurology Clinic for
+  evaluation of her long-term neurologic complaints. The patient
+  relates that for many years she had noticed some significant
+  changes in neurologic functions, particularly heat intolerance
+  precipitating a stumbling gait and a tendency to fall. Her visual
+  acuity also seemed to change periodically during several years.
+  Two months ago the patient was working very hard and was
+  under a lot of stress. She got sick with flu and her neurologic
+  condition worsened. At that time, she could not hold objects in her
+  hands, had significant tremors and severe exhaustion. She also
+  had several bad falls.. Then, the patient abruptly developed a
+  right hemisensory deficit after several days of work.
+ ◆ What is the most likely diagnosis?
+
+ ◆ What is the next diagnostic step?
+
+ ◆ What is the next step in therapy?
+                       Q3
+ Which of the following treatment used in multiple
+  sclerosis relapse
+              a. β-Interferons
+              b. methyl prednisolone
+              c. Methotrexate
+              d. Intravenous Immunoglobulin
+                     Q4
+ If symptoms and a physical exam suggest MS,
+  how does a healthcare provider confirm it?
+ A. MRI brain
+
+ B. Spinal tap
+
+ C. Visual evoked potential (VEP) tests
+
+ D. All of the above
+Thank you
+

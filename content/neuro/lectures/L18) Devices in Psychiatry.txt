@@ -1,0 +1,329 @@
+SOURCE: Semester 8\Neuro\Theoritical\PPT\L18) Devices in Psychiatry.pdf
+
+    Devices In Psychiatry
+
+
+  By/ Mohamed Eisa
+ Lecturer of Neuropsychiatry –
+Faculty of Medicine – Alexandria
+           University
+             DRUGS
+
+
+
+
+          PSYCHIATRIC   PSYCHO
+SURGERY
+          TREATMENTS    THERAPY
+
+
+
+
+             DEVICES
+• For decades, clinical psychiatry relied
+  heavily on the "chemical imbalance"
+  model—modulating diffuse
+  neurotransmitter systems globally via oral
+  pharmacology.
+
+• While effective, this approach often lacks
+  anatomical precision, leading to systemic
+  side effects and treatment resistance.
+
+• Modern psychiatry increasingly views
+  psychiatric disorders as conditions of
+  dysfunction within specific neural circuits
+  (dysconnectivity). If pathology is localized
+  within a circuit, the intervention should
+  ideally target that circuit directly.
+• By directly targeting specific brain
+  circuits, devices like TMS and modern
+  ECT change how neurons fire,
+  delivering proven, life-changing results
+  for patients with severe treatment-
+  resistant conditions.
+
+• However, the hype around "brain-
+  hacking" has created a massive market
+  for unproven gadgets and wellness
+  bands. Many of these consumer devices
+  lack real scientific backing, exploiting
+  vulnerable patients by acting as
+  expensive placebos driven by business
+  rather than medicine.
+Invasive Devices
+•ECT (Electroconvulsive Therapy) / BST (Brain
+ Synchronization Therapy)
+• DBS (Deep Brain Stimulation)
+• VNS (Vagus Nerve Stimulation)
+
+
+Non-invasive Devices
+• Transcranial Magnetic Stimulation (TMS / rTMS)
+• Transcranial Direct Current Stimulation (tDCS)
+• EEG Neurofeedback Systems
+• Other AI Recent Devices
+ECT: The Oldest, Most Effective Tool in the Shed
+• ECT was Introduced in 1938, It is one of
+  the oldest treatments in modern
+  psychiatry. Despite decades of
+  pharmacological expansion, it remains
+  irreplaceable in clinical practice.
+
+• Highly Evidence-Based: It is the most
+  effective acute treatment available for
+  severe mood disorders, boasting a 70–
+  80% response rate in patients who have
+  failed multiple trials of antidepressants.
+ECT: The exact procedure
+• How It Is Delivered:
+   • Performed under general
+     anesthesia with a muscle relaxant
+     (succinylcholine) to prevent
+     physical movement.
+   • A brief, controlled electrical
+     stimulus is applied transcranially
+     (unilateral or bilateral) to induce a
+     generalized therapeutic seizure
+     lasting 20–60 seconds.
+   • The patient wakes up within
+     minutes, completely unaware of
+     the seizure
+     ECT: when used and how it works ?
+• Indications:                                 • Mechanism of Action (NOT FULLY
+   • Treatment-Resistant Depression              UNDERSTOOD!)
+     (TRD): When multiple drugs fail.            • Neurotransmitter "Reset": Induces a
+   • Severe Catatonia: Often life-saving;          massive, simultaneous release and
+     highly responsive to ECT.                     upregulation of serotonin, dopamine, and
+   • Acute Suicidality: Used when                  norepinephrine receptors.
+     immediate biological intervention is        • Neuroplasticity Surge: Strongly stimulates
+     required to save a life.
+                                                   the release of Brain-Derived Neurotrophic
+   • Severe Mania or Psychosis: In                 Factor (BDNF), inducing neurogenesis
+     treatment-resistant bipolar disorder or       (new neuron growth) in the hippocampus.
+     schizophrenia.
+   • Some less common uses : parkinsonian        • Network Functional Connectivity: Calms
+     crisis , Status epilepticus !!!               the hyperactive functional connectivity
+                                                   seen in the Default Mode Network (DMN)
+                                                   of severely depressed brains.
+ECT: The Controversy & Stigma (Perception vs. Reality)
+• Media depictions (e.g., One Flew Over the
+  Cuckoo's Nest) historically associate ECT with
+  punishment and pain. This completely ignores
+  modern anaesthesia, leading to widespread
+  public and patient fear. A new name has been
+  suggested for ECT to overcome the stigma →
+  (BRAIN SYNCRONISING THERAPY)
+
+• The fact is that ECT is a highly safe procedure
+  despite its bad reputation. The true primary
+  clinical drawback is transient cognitive
+  disruption and anterograde/retrograde memory
+  gaps around the treatment period. Modern
+  ultra-brief pulse width delivery significantly
+  minimizes these cognitive side effects.
+TMS (Transcranial Magnetic Stimulation )
+• Unlike ECT, repetitive TMS (rTMS) is
+  completely non-invasive and performed while
+  the patient is fully awake. It uses an
+  electromagnetic coil placed against the scalp to
+  generate localized, high-intensity magnetic pulses
+  (around 1.5 to 2Tesla, similar to an MRI
+  machine)
+• These magnetic fields pass through the skull
+  entirely unimpeded, inducing a targeted focal
+  electrical current in the underlying cortical
+  tissue to depolarize or hyperpolarize local
+  neuron at certain brain regions
+• For example; For depression, the primary target
+  is the Left Dorsolateral Prefrontal Cortex
+  (DLPFC), which restores functional connectivity
+  down to deeper limbic systems.
+The Clinical Landscape of TMS
+• Treatment-Resistant Major Depressive Disorder (MDD): The primary
+  mainstream indication; approved for both adults and adolescents.
+• Obsessive-Compulsive Disorder (OCD): Typically utilizes Deep TMS (dTMS)
+  with a specialized H-coil targeting the supplementary motor area (SMA) and
+  anterior cingulate cortex.
+• Anxious Depression: Comorbid anxiety symptoms within a major depressive
+  episode.
+• Smoking Cessation: Targeted addiction protocol to reduce cravings by
+  stimulating the bilateral prefrontal cortex and insula.
+• Migraine with Aura: Acute pain management using acute handheld single-
+  pulse devices.
+Important Notes On TMS
+• Critics and some clinical trials note that standard rTMS has a relatively
+  modest real-world remission rate). Some patients are non-responders, leading
+  to debates about its cost-effectiveness compared to pharmacotherapy or ECT.
+• Standard TMS protocols require an immense commitment: 5 days a week for
+  4 to 6 consecutive weeks (typically 20–30 total sessions). This high clinic-visit
+  frequency creates a massive barrier for patients due to travel, cost, and time
+  off work.
+• This exact operational weakness is why accelerated protocols like the SAINT
+  protocol (compressing the entire course into 5 high-density days using fMRI
+  guidance) were developed to maximize efficacy and eliminate logistical
+  friction.
+TMS (The Research vs. Market Frontier)
+• Because TMS is safe and highly
+  marketable, commercial clinics heavily
+  advertise it off-label for Autism,
+  ADHD, Tinnitus, and stroke
+  rehabilitation.
+• While active trials are underway, using
+  it as a routine commercial clinical
+  treatment for these conditions
+  currently outpaces replicated, high-
+  quality RCT data
+    DBS (Deep Brain Stimulation)
+• DBS is an invasive neuromodulatory procedure. It
+  requires stereotactic neurosurgery to permanently
+  implant thin micro-electrodes directly into localized,
+  deep subcortical brain structures.
+• The intracranial electrodes are tunneled and connected
+  to an implanted pulse generator (IPG)—essentially a
+  "brain pacemaker"—placed subcutaneously under the
+  clavicle.
+• The Mechanism of Action:
+   • Unlike surface devices (TMS), DBS bypasses the cortex to
+     deliver continuous, high-frequency electrical stimulation
+     directly to specialized subcortical nodes.
+   • It disrupts abnormal, synchronized pathological firing
+     patterns within hyperactive neural loops, effectively acting as
+     an "informational block" to reset network connectivity.
+     DBS (Deep Brain Stimulation)
+• Indications:
+    • Severe, Intractable OCD: The primary psychiatric
+      indication Target: The Ventral Striatum / Ventral Capsule
+      to disrupt hyperactive cortico-striato-thalamo-cortical
+      (CSTC) loops.
+    • Treatment-Resistant Depression (TRD): Highly effective
+      but remains investigational.Target: Subgenual Cingulate
+      Cortex (Area 25)
+    • Neurological: Parkinson’s disease and some movement
+      disorders
+• Because it requires open neurosurgery, it carries
+  serious intrinsic medical risks that non-invasive tools
+  do not, including intracranial hemorrhage, localized
+  hardware infection, and device malfunction.
+
+• DBS is never a first-line or routine outpatient option.
+  It is strictly reserved as an ultimate resort for patients
+  facing severe, treatment-refractory, functionally
+  disabling neurobehavioral conditions.
+ VNS (Vagus Nerve Stimulation)
+• VNS does not target the brain directly. Instead, it accesses
+  central limbic networks by stimulating the left vagus
+  nerve (Cranial Nerve X) in the neck.
+• A pulse generator is surgically implanted subcutaneously
+  in the left chest wall. Lead wires are wrapped around the
+  left vagus nerve trunk, delivering pre-programmed,
+  intermittent electrical pulses 24 hours a day.
+• The Neurobiology and Mechanism of action:
+   • The vagus nerve is 80% afferent (carrying sensory signals up to
+     the brain).Electrical pulses travel up the vagus nerve to the
+     Nucleus Tractus Solitarius (NTS) in the brainstem.
+   • The NTS projects widely to modulatory centers (like the Locus
+     Coeruleus and Raphe Nuclei), triggering a steady release of
+     norepinephrine and serotonin throughout the limbic system
+     improving several psychiatric symptoms
+   • Peripherally, it enhances parasympathetic vagal tone, helping to
+     dampen the chronic sympathetic overdrive and systemic
+     neuroinflammation frequently seen in severe psychiatric
+     disorders.
+VNS (Vagus Nerve Stimulation)
+• Indications :
+   • Treatment-Resistant Depression (TRD).
+   • Refractory Epilepsy:
+• VNS is not an acute intervention. VNS requires 3 to 12 months of
+  continuous stimulation before patients show significant clinical
+  improvement. It is a long-term "slow-burn" therapy.
+• Because it stimulates a peripheral autonomic nerve, side effects are
+  directly related to the pulse cycle and include transient hoarseness,
+  throat tickling, a mild cough, or voice alteration during active
+  stimulation phases.
+Transcranial Direct Current Stimulation
+(tDCS)
+• tDCS is a non-invasive device that delivers a weak,
+  constant, low-intensity electrical current (typically 1
+  to 2 mA) via surface sponge electrodes placed directly
+  on the scalp.
+• Unlike ECT or TMS, the current from a tDCS
+  device is sub-threshold. It does not force neurons to
+  fire an immediate action potential, nor does it cause
+  a seizure. Instead, it alters the resting membrane
+  potential of cortical neurons, modifying their
+  baseline excitability.
+• Polarity Dictates Function:
+   • Anodal tDCS (Positive Electrode): Depolarizes the
+     underlying cortical tissue, increasing neuronal excitability
+     and priming the circuit for neuroplasticity.
+   • Cathodal tDCS (Negative Electrode): Hyperpolarizes the
+     underlying cortical tissue, decreasing neuronal excitability
+     to quiet down overactive circuits.
+tDCS – Clinical Status & Practical
+Advantages
+• Supported by robust clinical trials for Major Depressive Disorder (anodal
+  stimulation targeting the left DLPFC) and chronic neuropathic pain. While it
+  lacks widespread primary FDA approval as a frontline hospital intervention,
+  it is actively prescribed as a regulated home-use medical device under strict
+  clinical supervision (e.g., CE-marked platforms in Europe).
+• Unlike the massive, expensive hardware required for TMS or ECT, tDCS
+  devices are highly compact, lightweight, and run on basic low-voltage battery
+  configurations. This significantly lowers manufacturing costs and increases
+  accessibility.
+• Because of its safety profile and simple design, tDCS is uniquely suited for
+  supervised at-home deployment. Clinicians can remotely program the device
+  via secure apps, setting strict "lockout" parameters to prevent over-dosing
+ EEG Neurofeedback - Training the Brain to Self-Regulate via
+ Real-Time Loop
+
+• a non-invasive, computer-mediated therapy. It measures
+  raw scalp electroencephalography (EEG) signals and
+  loops that data back to the patient in real time via visual
+  or auditory cues (e.g., a video game that moves faster
+  when specific brainwaves are produced).
+• It relies on operant conditioning. When the patient
+  naturally hits a target brainwave state, the software
+  rewards them with sensory feedback. Over multiple
+  sessions, this reinforces specific neural pathways and
+  induces local synaptic neuroplasticity.
+• Common Clinical Protocol indications:
+    • ADHD: Training patients to decrease high-amplitude Theta
+      waves (associated with daydreaming/inattention) and increase
+      Beta waves (associated with active processing and focus).
+    • Anxiety & PTSD: Training patients to upregulate Alpha waves
+      (associated with relaxed, awake alertness) to calm autonomic
+      hyperarousal.
+ EEG Neurofeedback - Evidence vs. The Placebo
+ Debate
+• The Evidence Base: Demonstrates legitimate clinical
+  efficacy as an adjunctive, non-pharmacological option
+  for pediatric ADHD, treatment-refractory insomnia,
+  and specific anxiety disorders. When used under
+  medical supervision, it provides an objective pathway for
+  patients to improve top-down executive control.
+• The Sham-Blinding Problem: It is incredibly difficult to
+  design a fake feedback loop for clinical trials. Because of
+  this, critics argue that many reported benefits are driven
+  by a strong placebo effect rather than actual neural
+  rewiring.
+• Commercial Overpromising: Because consumer EEG
+  bands are cheap and highly marketable, the wellness
+  industry heavily commercializes "brain-training" gadgets
+  which might have limited evidence.
+AI integrated and other Digital devices
+• Virtual Reality (VR) Systems: FDA-cleared, immersive headsets used
+  for Graded Exposure Therapy. It allows controlled, real-time
+  desensitization for PTSD (combat/trauma recreations) and severe
+  specific phobias.
+• Smart Devices & Passive Phenotyping: Using smartphone sensors,
+  typing cadence, and wearable biometrics to track sleep, voice
+  acoustics, and psychomotor activity. This provides an objective, early-
+  warning system to predict manic or psychotic relapses before clinical
+  symptoms manifest.
+• AI Chatbots & Conversational Agents: 24/7 automated platforms
+  utilizing natural language processing to deliver immediate, text-based
+  Cognitive Behavioral Therapy (CBT) techniques and triage support for
+  low-acuity anxiety and distress.
+Thank YOU
+

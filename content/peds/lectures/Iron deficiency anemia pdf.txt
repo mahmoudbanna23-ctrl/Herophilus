@@ -1,0 +1,168 @@
+SOURCE: Semester 8\Pedo\Theoritical\PPT\Iron deficiency anemia pdf.pdf
+
+                          Iron deficiency anemia
+Definition:
+
+   •   Iron deficiency refers to a state in which there is insufficient total body iron to
+       maintain normal physiologic functions.
+
+   •   Iron deficiency anemia is defined as hemoglobin concentration that ≥ 2SD below
+       the mean Hb for a healthy population of the same age and sex, that results from ID.
+
+
+
+
+Epidemiology:
+
+   •   ID is the most common nutritional deficiency worldwide.
+
+   •   Affects 25% of the global population, nearly 2 billion people.
+
+   •   IDA is the most common anemia worldwide
+
+   •   Highest with low socioeconomic status.
+
+
+
+IDA has two peaks of incidence:
+
+   1. Infancy and Toddlerhood (6-24 months)
+
+   2. Adolescence, especially female (abnormal uterine bleeding, heavy menstruation)
+Physiology of iron
+
+Iron comes from:
+
+   •   Fetal iron acquisition: about 60% of fetal iron is acquired from the maternal blood
+       through the placenta during the third trimester.
+
+   •   Neonatal iron acquisition from:
+
+1. Breast milk ( low iron content but 50% of iron is absorbed), Adequate iron if totally
+   breastfed for first 6 months (unless preterm)
+
+2. Formula (supplemented with adequate amounts of iron),
+
+3. Cow’s milk ( low iron content and poor bioavailability, so poor source of iron).
+
+   •   Solids introduced at weaning
+
+                           About 10% only of dietary iron is absorbed.
+
+Dietary sources of iron:
+Etiology of IDA:
+
+1. Inadequate iron supply: Prematurity, multiple twins (decreased iron stores), early
+   cow milk feeding (low iron content of cow's milk and blood loss in the stools due to
+   cow's milk protein allergy), exclusive breastfeeding after 6 months of age without an
+   iron supplement, Low intake of iron-containing foods
+
+
+
+2. Increased iron requirements: Failure to meet the increased demands of iron like in:
+   Premature infants, During adolescence ( pubertal growth spurt)
+
+
+
+3. Decreased gastrointestinal absorption: Celiac disease, Chronic diarrhea,
+   Inflammatory bowel diseases, Parasitic infestations.
+
+4. Blood loss Cow’s milk protein allergy, Meckel’s diverticulum, Bleeding diathesis.
+
+
+
+Clinical manifestations:
+
+  1. General manifestations of anemia:
+
+     • Pallor (palms, nail beds, mucous membranes of the mouth and conjunctiva).
+     • Exercise intolerance, easy fatigability and lassitude.
+     • General weakness.
+     • Dyspnea and palpitation on exertion or emotion.
+     • Headache, lack of concentration, irritability.
+     • Syncopal attacks.
+     • Hemic murmurs
+
+
+   2. GIT manifestations:
+      Anorexia, atrophic glossitis, dysphagia, pica (ingestion of wall plaster, clay, etc.),
+      geophagia (ingestion of earth) and pagophagia (ingestion of ice).
+
+   3. CNS: Short attention span,  alertness,  learning ability and school performance.
+
+   4. Changes in epithelial structures seen in adults, such as spoon-shaped or concave nails,
+      are uncommon in infants and children.
+
+
+   5. Immunological: Upper respiratory infections are more common
+Laboratory investigations
+
+   •   CBC: ↓ Hb, ↓ MCV, ↓ MCH, ↑ RDW, normal/low reticulocytes
+   •   Iron studies:↓ ferritin, ↓ serum iron ,↑ TIBC, ↓ T-SAT%
+   •   Peripheral smear: Anisopoikilocytosis, hypochromia microcytosis, pencil cells.
+   •   Consider stool occult blood, celiac screen ( if history or examination suggest a non-
+       dietary cause or failure to respond to therapy)
+
+
+Diagnosis of iron deficiency anemia:
+   1. Clinical manifestations.
+   2. Laboratory findings.
+   3. Therapeutic trial: best diagnostic study. Successful therapy with oral iron will cause:
+   •   Improvement in neurologic function after 24 - 48 hrs
+   •   Reticulocytosis after 48 - 72 hours, peak 5-7th day
+   •   Increase in Hb after 4-30 days (1 g/dl/week)
+       Repletion of iron stores in 1 - 3 months
+
+
+Differential diagnosis:
+       Other causes of microcytic hypochromic anemia:
+   •   Thalassemia trait
+   •   Anemia of chronic disease
+   •   Lead poisoning
+   •   Sideroblastic anemia
+
+
+Prevention
+   •   Exclusively breastfed infants are at increasing risk of ID after 4 completed months of age.
+       Therefore, at 4 months of age, breastfed infants should be supplemented with 1 mg/kg per
+       day of oral iron beginning at 4 months of age until appropriate iron-containing
+       complementary foods (including iron-fortified cereals) are introduced in the diet.
+   •   Preterm infants fed human milk should receive an iron supplement of 2 mg/kg per day by
+       1 month of age, and this should be continued until the infant is weaned to iron-fortified
+       formula or begins eating complementary foods that supply the 2 mg/kg of iron.
+
+
+Treatment:
+   •   For most children management includes dietary advice and oral iron supplementation.
+
+
+       Dietary advice:
+   •   Promote breastfeeding for at least 6 months, if possible.
+   •   An alternate to breastfeeding is iron-fortified infant formula
+   •   Increase iron-rich foods and reduce cow milk consumption
+   •   Cow milk should not be offered to children <12 months and should be limited to <500
+       mL/day in those older than 12 months
+
+
+       Iron therapy:
+       1. Oral iron medication:
+   •   Dose: Oral iron salts: 3-6 mg/kg/day.
+   •   Iron supplements should be continued for a minimum of 3 months after anaemia has been
+       corrected to replenish stores.
+   •   Practical considerations
+          •   Advise parents that iron preparations can make a child’s stool black in colour and
+              may cause constipation
+          •   Oral iron preparations may also stain a child’s teeth. Consider having the child
+              drink the iron preparation through a straw and brush the child’s teeth following
+              administration
+          •   Iron is better absorbed if taken with vitamin C eg orange juice
+       2. Treatment of etiological factors, e.g. correct diet, treat parasitic infestations, and stop
+       cow milk intake.
+       3. Parenteral iron therapy: only used in malabsorption, poor compliance with oral iron,
+       or the need for rapid correction of severe iron deficiency anemia.
+4. Newer iron formulation: liposomal iron preparations, iron bisglycinate, in case of
+intolerance to oral iron salts.
+5. Blood transfusion: Rarely needed except in severely anemic children with
+hemoglobin level below 4 g/dl and signs of cardiac dysfunction or associated with
+infection and hypoxia. It is given as small amounts of packed red blood cells (2-3cc/kg)
+

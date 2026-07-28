@@ -1,0 +1,707 @@
+SOURCE: Semester 8\Opthalmo\Theoritical\PPT\L37) Red Eye.pdf
+
+CHAPTER 4
+
+The Red Eye
+ OBJECTIVES
+
+ As a primary care provider, you should be able to determine whether a
+ patient with a red eye requires the prompt attention of an ophthalmologist or
+ whether you can appropriately evaluate and treat the condition. To achieve
+ this objective, you should learn to
+
+         obtain an accurate ocular history and perform an examination
+         differentiate between acute and chronic conditions
+         recognize the signs of a red eye that indicate a vision-threatening
+         condition
+         describe the treatment for those cases you can manage and recognize
+         the more serious problems that should be referred
+         describe the serious complications of prolonged use of topical
+         anesthetic and corticosteroid drops
+
+
+Relevance
+    primary care provider frequently encounters patients who complain of a red
+A   eye. The condition causing the red eye is often a simple disorder, such as a
+subconjunctival hemorrhage or an infectious conjunctivitis. These conditions
+either resolve spontaneously or can be treated easily by the primary care
+provider. Occasionally, the condition causing a red eye is a more serious
+disorder, such as intraocular inflammation, corneal inflammation, or acute
+glaucoma. A patient with one of these vision-threatening conditions requires the
+urgent attention of an ophthalmologist, whose specialized skills, knowledge, and
+examining instruments are needed in order to make correct therapeutic decisions.
+Basic Information
+Red eye refers to hyperemia, or injection of the superficially visible vessels, of
+the conjunctiva, episclera, or sclera. Hyperemia can be caused by disorders of
+these outer structures or of the cornea, iris, ciliary body, and ocular adnexa. An
+accurate history followed by exam will aid in narrowing the differential
+diagnosis and instituting appropriate management.
+
+
+History
+
+When a patient presents with a red eye, taking a thorough history is essential.
+Occasionally a red eye may indicate systemic disease; therefore, a complete
+medical history and review of systems is required.
+   Additional questions to ask include
+
+       Was the onset sudden or progressive?
+       What is the timeline of symptoms; hours, days, or intermittent?
+       Any family members with a red eye recently (ie, exposure to people with
+       the same symptoms)?
+       Is the patient using any over-the-counter or prescription eye
+       medications?
+       Is there a history of trauma or out-of-the-ordinary activity recently?
+       Has the patient had recent eye surgery? (If so, immediately refer the
+       patient to the surgeon who performed the procedure.)
+       Does the patient wear contact lenses? If so, does the patient sleep in the
+       contacts; when were the contacts last changed, and has anything recently
+       changed regarding care of the lens?
+       Has the patient had a recent cold or upper respiratory tract infection?
+       Has the vision decreased?
+       Is there pain? If so, can the patient describe the pain?
+       Is there discharge from the involved eye(s)?
+       Is the eye itching?
+       Is there light sensitivity?
+       Do the symptoms change with environment?
+How to Examine
+
+Nine diagnostic steps are used to evaluate a patient with a red eye:
+
+   1.   Determine whether the visual acuity is normal or decreased, using a
+        Snellen chart (see Chapter 1) or near card.
+   2.   Decide by inspection what pattern of redness is present and whether it is
+        due to subconjunctival hemorrhage, conjunctival hyperemia, ciliary
+        flush, or a combination of these.
+   3.   Detect the presence of conjunctival discharge and categorize it as to
+        amount—profuse or scant—and character—purulent (Fig 4-1),
+        mucopurulent, or serous.
+   4.   Detect opacities of the cornea, including large keratic precipitates
+        (inflammatory deposits on the corneal endothelium, Fig 4-2); corneal
+        edema (Fig 4-3); corneal leukoma (a white opacity caused by scar tissue
+        or corneal infiltrate, Fig 4-4); and irregular corneal reflection (Fig 4-5).
+        Examination is done using a penlight, transilluminator, or slit lamp.
+   5.   Search for disruption of the corneal epithelium by staining the cornea
+        with fluorescein (see Chapter 1).
+   6.   Estimate the depth of the anterior chamber as normal or shallow (see
+        Chapter 1); detect any layered blood or pus, which would indicate either
+        hyphema or hypopyon, respectively. (Compare Fig 4-6, a corneal ulcer
+        with hypopyon, with hyphema, Fig 5-3.)
+   7.   Detect irregularity of the pupils and determine whether 1 pupil is larger
+        than the other. Observe the reactivity of the pupils to light to determine
+        whether one pupil is more sluggish than the other or is nonreactive (see
+        Chapters 1 and 7).
+   8.   If elevated intraocular pressure (IOP) is suspected, as in angle-closure
+        glaucoma, and reliable tonometry is available, then measurement of IOP
+        can help confirm the diagnosis. (Tonometry is omitted when there is an
+        obvious external infection.)
+   9.   Detect the presence of proptosis (Fig 4-7), eyelid malfunction, or any
+        limitations of eye movement.
+FIGURE 4-1 Purulent conjunctivitis. With the lower eyelid everted, a creamy-white exudate is visible,
+highlighted by the conjunctival hyperemia.
+FIGURE 4-2 Large keratic precipitates. Multiple gray-white opacities on the back surface of the cornea
+are seen against the background of the red reflex. These precipitates can result from chronic iridocyclitis.
+FIGURE 4-3 Corneal edema. In this fiery red eye, the normally sharp corneal reflex is replaced by a
+diffuse, hazy appearance. Iris details are not as clear as in a healthy eye.
+FIGURE 4-4 Corneal leukoma. This dense, white corneal scar represents fibrosis secondary to a
+previous corneal insult, most frequently trauma or infection. Outside the scar, the cornea is clear. If the
+scar encroaches on the visual axis, acuity may be impaired.
+FIGURE 4-5 Irregular corneal reflection. This localized irregularity of the normally sharp corneal light
+reflection indicates local disruption of the corneal epithelium.
+FIGURE 4-6 Corneal ulcer with hypopyon. This inflamed eye shows a white corneal opacity associated
+with an irregular corneal reflex. In addition, a prominent layering of purulent material appears in the
+inferior aspect of the anterior chamber, a hypopyon.
+ FIGURE 4-7 Chronic proptosis. The right eye of this patient is proptotic, or anteriorly displaced. Marked
+ edema (chemosis) with hyperemia of the conjunctiva is also evident, with tissue prolapse over the lower
+ eyelid margin. The patient has an orbital tumor.
+
+
+
+Disorders Associated With a Red Eye
+Classification of a red eye depends primarily on whether the condition is acute
+or chronic. Acute is defined by symptoms starting within days, and chronic is
+defined by symptoms being present for longer than a week.
+
+
+The Acute, Painful Red Eye
+
+Symptoms that have begun within days should be assessed primarily for the
+presence of pain. The painful, red eye is an urgent situation and should be
+discussed with an ophthalmologist. Arriving to a diagnosis with an acute, painful
+red eye will rely on the provider assessing each of the anatomic structures of the
+eye to determine the etiology, starting with the cornea and progressing to the
+sclera, anterior chamber, and posterior segment.
+
+Corneal disorders
+
+Disruption of the corneal epithelium results in significant pain for the patient.
+This disruption can occur due to trauma, causing a corneal abrasion or foreign
+body injury, or due to bacterial or viral infections.
+    A patient with an abrasion or foreign body will usually give a history of
+trauma causing the pain. An infectious keratitis will usually occur in a cornea
+that has been compromised through contact lens use or a previous ocular
+disorder.
+    A red eye associated with soft contact lenses can be due to poor fit or
+inadequate lens hygiene. Symptoms can range from mild conjunctival or
+superficial corneal irritation to a more serious, vision-threatening infection of the
+cornea. Referral to an ophthalmologist is advised to interpret the subtle slit-lamp
+findings.
+    Loss of the integrity of the corneal epithelium accompanied with infection or
+inflammation can result in an ulcer with associated hyperemia. Often the
+normally clear cornea appears hazy or white in the area of the ulcer. Mucus
+secretions in the eye (called mattering) and pain are common as well as
+photophobia.
+    Herpes simplex keratitis is an infection of the cornea caused by the herpes
+simplex virus (Fig 4-8). This form of keratitis is common, potentially serious,
+and can lead to corneal ulceration or scarring. Characteristic dendrites can often
+be seen in the corneal epithelium.
+
+
+
+
+ FIGURE 4-8 Herpes simplex keratitis. In the center of the cornea is an irregular, dendritic (branchlike)
+ lesion of the corneal epithelium.
+
+
+Scleral inflammations
+
+The sclera is the “white of the eye” and can become inflamed with or without
+associated autoimmune disease (eg, rheumatoid arthritis, granulomatosis with
+polyangiitis). Scleritis is an inflammation (localized or diffuse) of the sclera (Fig
+4-9) that is uncommon, often protracted, and usually accompanied by pain,
+which may be severe. A violaceous hue of sclera may indicate serious systemic
+disease such as a collagen vascular disorder.
+ FIGURE 4-9 Scleritis. This localized, raised hyperemic lesion is characteristic of scleritis, which is
+ associated with collagen vascular disorders and rheumatoid diseases. In contrast, episcleritis appears flat,
+ involves more superficial tissue, and is usually not associated with serious systemic disease.
+
+    Episcleritis is an inflammation (often sectoral) of the episclera, the vascular
+layer between the conjunctiva and the sclera. The condition is uncommon and
+has the following features: no discharge, not vision threatening, and often tender
+over the inflamed area. If recurrent, it may be associated with an underlying
+systemic inflammatory disease.
+
+Anterior chamber disorders
+
+The acute, painful red eye associated with anterior chamber disorders can be
+categorized into acute glaucoma or acute inflammation. Acute angle-closure
+glaucoma is an uncommon form of glaucoma due to sudden and complete
+occlusion of the anterior chamber angle by iris tissue (Fig 4-10). The condition is
+serious. The more common chronic open-angle glaucoma causes no redness of
+the eye. (See Chapter 3 for a discussion of glaucoma.)
+ FIGURE 4-10 Acute angle-closure glaucoma. The irregular corneal reflection and hazy cornea suggest
+ edema. The pupil is mid-dilated; the iris appears to be displaced anteriorly, with shallowing of the
+ anterior chamber. These findings plus elevated intraocular pressure are diagnostic of acute angle-closure
+ glaucoma.
+
+    Iritis (more strictly iridocyclitis) is an inflammation of the iris alone or of
+the iris and ciliary body, often manifested by ciliary flush (Fig 4-11). This is a
+serious condition that requires attention.
+ FIGURE 4-11 Ciliary flush. Dilated deep conjunctival and episcleral vessels adjacent and
+ circumferential to the corneal limbus cast a violet hue characteristic of ciliary flush and best seen in
+ natural light.
+
+
+
+Acute, Nonpainful Red Eye
+
+The nonpainful red eye that develops within days should not be associated with
+any inflammation of the globe. The condition should be limited to the
+conjunctiva and is nonurgent. Exceptions to this are patients who cannot “feel”
+their eye, as in patients with a fifth cranial nerve palsy. Patients who have poor
+corneal sensitivity and a red eye should be referred urgently to an
+ophthalmologist.
+
+Subconjunctival hemorrhage
+
+A subconjunctival hemorrhage is an accumulation of blood in the potential
+space between the conjunctiva and the sclera (see Fig 5-9). Although this
+condition may look alarming, it is rarely vision threatening unless associated
+with significant ocular trauma. The patient may note some ocular irritation but
+should not complain of significant pain. Vision should be unaffected.
+
+Conjunctivitis
+
+Conjunctivitis is hyperemia of the conjunctival blood vessels (Fig 4-12). Causes
+fall into several categories, including bacterial, viral, or allergic; exposure to
+chemical irritants (including eyedrops); or mechanical irritation (eg, eyelashes or
+foreign bodies). Conjunctivitis is common and often not serious.
+
+
+
+
+ FIGURE 4-12 Conjunctivitis. The hyperemia seen here is produced by a diffuse dilation of the
+ conjunctival blood vessels. The dilation tends to be less intense in the perilimbal region, in contrast to the
+ perilimbal dilation of deeper vessels characteristic of ciliary flush.
+
+   History should guide the provider to the correct diagnosis. A history of a cold
+or contact with others who have similar symptoms suggests a viral
+conjunctivitis; in addition, the eyelids will often be stuck together in the
+morning. Itching is strongly suggestive of an allergic reaction to topical remedies
+or environmental exposure. Bacterial conjunctivitis is relatively uncommon;
+however, a chronic unilateral conjunctivitis should be evaluated for chlamydia
+while hyperpurulent conjunctivitis suggests gonorrhea and is an urgent
+condition.
+
+
+Chronic, Irritated Red Eye
+
+The chronic red eye is, in general, a nonurgent condition. Patients can be
+categorized into whether they experience ocular irritation or not. Ocular irritation
+associated with a red eye can be due to any process that disrupts a smooth tear
+film across the surface of the cornea. A systematic approach should closely
+examine the ocular surface to determine the etiology of the irritation. The
+surface of the conjunctiva should be examined for any source of the irritation
+including foreign bodies. The function of the meibomian glands should be
+assessed to determine if an adequate lipid layer is being produced for the tear
+film. The surface of the cornea should be examined for evidence of keratopathy
+using fluorescein. (See Video 1-10.)
+
+Keratoconjunctivitis sicca
+
+Keratoconjunctivitis sicca, commonly called dry eye, is a disorder resulting
+from tear deficiency or dysfunction. It causes pain, blurred vision, light
+sensitivity (photophobia), and ocular redness.
+
+Pterygium
+
+Pterygium is an abnormal growth consisting of a triangular fold of tissue that
+advances progressively over the cornea, usually from the nasal side (Fig 4-13). It
+is usually not serious. Localized conjunctival inflammation may be associated
+with pterygium. It is associated with ultraviolet exposure and occurs more
+frequently in tropical climates. Surgical excision is indicated if the pterygium
+starts to encroach on the visual axis.
+FIGURE 4-13 Pterygium. This wedge-shaped growth of vascularized conjunctiva extends onto the
+cornea. The initial sign of pterygium may be a localized chronic conjunctivitis.
+
+
+
+Chronic Red Eye Without Irritation
+
+The red eye that has no associated irritation is usually due to a congestive
+process that has resulted in decreased flow of blood in the veins that drain the
+orbit. Orbital processes that cause a red eye are discussed below.
+
+
+Adnexal Disease
+
+Adnexal disease affects the eyelids, lacrimal apparatus, and orbit. Eyelid
+inflammations include stye (hordeolum) and blepharitis. A red eye can also
+occur secondary to eyelid lesions (such as basal cell carcinoma, squamous cell
+carcinoma, or molluscum contagiosum). In general, eyelid inflammations and
+lesions can be referred to the ophthalmologist nonurgently.
+    Abnormal eyelid function, as seen in Bell palsy and thyroid eye disease,
+cause ocular exposure and corneal breakdown and may present with a red eye.
+Lagophthalmos, or poor eyelid closure, is also commonly seen in comatose
+patients. It can result in exposure keratitis, corneal ulceration, and blindness. An
+eyelid that turns in toward the eye with the lashes contacting the globe surface
+(entropion) can result in pain, photophobia, tearing, and redness of the eye. A red
+eye secondary to an eyelid malposition should be discussed with the
+ophthalmologist urgently.
+    Lacrimal diseases that can cause a red eye include dacryocystitis (Fig 4-14)
+and canaliculitis. Orbital inflammations, such as thyroid eye disease, and
+vascular lesions in the orbit may cause a red eye as well. Any lacrimal or orbital
+disease that causes a red eye should be urgently referred to the ophthalmologist.
+
+
+
+
+ FIGURE 4-14 Dacryocystitis. This obvious, raised erythematous mass represents an acute inflammation
+ of the lacrimal sac, usually secondary to a nasolacrimal duct obstruction. A purulent discharge may be
+ extruded from the eyelid puncta by massage over the lacrimal sac.
+
+
+
+Further Interpretation of the Findings
+As noted earlier, several signs and symptoms of a red eye warrant immediate
+attention. The presence of 1 or more of these findings should alert the provider
+that the patient has a disorder requiring an ophthalmologist’s attention. Tables 4-
+1 and 4-2 summarize significant symptoms and signs in the differential diagnosis
+of a red eye.
+
+Table 4-1
+
+
+
+
+Table 4-2
+
+
+
+
+Symptoms of a Red Eye
+
+In the symptoms of a red eye that follow, a red symbol            by the heading
+indicates a danger signal.
+
+  Blurred vision
+
+Blurred vision often indicates serious ocular disease (see “Reduced Visual
+Acuity” in the following section, “Signs of a Red Eye”). Blurred vision that
+improves with blinking suggests a discharge or mucus on the ocular surface.
+
+  Severe pain
+
+Pain may indicate keratitis, ulcer, iridocyclitis, scleritis, or acute glaucoma.
+Patients with conjunctivitis may complain of a scratchiness or mild irritation but
+not of severe pain.
+
+  Photophobia
+
+Photophobia is an abnormal sensitivity to light that accompanies iridocyclitis,
+either alone or secondary to corneal inflammation. Patients with conjunctivitis
+have normal light sensitivity.
+
+  Colored halos
+
+Rainbow-like fringes or colored halos seen around a point of light are usually a
+symptom of corneal edema, often resulting from an abrupt rise in IOP.
+Therefore, colored halos are a danger signal suggesting acute glaucoma as the
+cause of a red eye.
+
+Exudation
+
+Exudation, also called mattering, is a typical result of conjunctival or eyelid
+inflammation and does not occur in iridocyclitis or glaucoma. Patients will often
+complain that their eyelids are “stuck together” on awakening from sleep.
+Corneal ulcer is a serious condition that may or may not be accompanied by
+exudate.
+
+Itching
+
+Although it is a nonspecific symptom, itching usually indicates an allergic
+conjunctivitis.
+
+
+Signs of a Red Eye
+
+In the signs of a red eye that follow, a red symbol   indicates a danger signal.
+  Reduced visual acuity
+
+Reduced visual acuity suggests a serious ocular disease, such as an inflamed or
+infected cornea, iridocyclitis, or glaucoma. It never occurs in simple
+conjunctivitis unless there is associated corneal involvement.
+
+  Ciliary flush
+
+Ciliary flush (see Fig 4-11) is an injection of the deep conjunctival and episcleral
+vessels surrounding the cornea. Seen most easily in daylight, ciliary flush
+appears as a faint violaceous ring in which individual vessels are indiscernible to
+the unaided eye. Ciliary flush is a danger sign often seen in eyes with corneal
+inflammation, iridocyclitis, or acute glaucoma. Usually, ciliary flush is not
+present in conjunctivitis.
+
+  Conjunctival hyperemia
+
+Conjunctival hyperemia (see Fig 4-12) is an engorgement of the larger and more
+superficial bulbar conjunctival vessels. A nonspecific sign, it may be seen in
+almost any of the conditions causing a red eye.
+
+  Corneal opacification
+
+In a patient with a red eye, corneal opacities always denote disease. These
+opacities may be detected by direct illumination with a penlight, or they may be
+seen with a direct ophthalmoscope (with a plus lens in the viewing aperture)
+outlined against the red fundus reflex. Several types of corneal opacities may
+occur:
+
+        Keratic precipitates, or cellular deposits on the corneal endothelium,
+        usually too small to be visible but occasionally forming large clumps;
+        these precipitates can result from iritis or from chronic iridocyclitis (see
+        Fig 4-2).
+        A diffuse haze obscuring the pupil and iris markings, characteristic of
+        corneal edema (see Fig 4-3) and frequently seen in acute glaucoma.
+        Localized opacities due to keratitis or ulcer (see Fig 4-6).
+
+  Corneal epithelial disruption
+Disruption of the corneal epithelium occurs in corneal inflammations and
+trauma. It can be detected in 2 ways:
+
+   1.   Position yourself so that you can observe the reflection from the cornea
+        of a single light source (eg, window, penlight) as the patient moves the
+        eye into various positions. Epithelial disruptions cause distortion and
+        irregularity of the reflection (see Fig 4-5).
+   2.   Apply fluorescein to the eye. Diseased epithelium or areas denuded of
+        epithelium will stain a bright green. (See Figs 1-14 and 1-15, Video 1-10,
+        and accompanying text in Chapter 1 for the technique of fluorescein
+        staining.)
+
+  Pupillary abnormalities
+
+The pupil in an eye with iridocyclitis typically is somewhat smaller than that of
+the other eye, due to reflex spasm of the iris sphincter muscle. The pupil is also
+distorted occasionally by posterior synechiae, which are inflammatory adhesions
+between the lens and the iris. In acute glaucoma, the pupil is usually fixed, mid-
+dilated (5–6 mm), and slightly irregular. Conjunctivitis does not affect the pupil.
+
+  Shallow anterior chamber depth
+
+In a red eye, a shallow anterior chamber should always suggest the possibility of
+acute angle-closure glaucoma (see Fig 4-10). Anterior chamber depth can be
+estimated through side illumination with a penlight. If possible, compare the
+anterior chamber depth of the red eye with that of the other, unaffected eye. (See
+Chapter 1 for details on estimating the depth of the anterior chamber.)
+
+  Elevated intraocular pressure
+
+IOP is unaffected by common causes of red eye other than iridocyclitis (IOP
+often low) and glaucoma (IOP often elevated). IOP should be measured when
+angle-closure glaucoma is suspected. (See Chapter 1 for details on the use of
+tonometry to measure IOP; also see Video 1-8.)
+
+  Proptosis
+
+Proptosis is a forward displacement of the globe. Sudden proptosis suggests
+serious orbital or cavernous sinus disease; in children, orbital infection or tumor
+should be suspected. The most common cause of chronic proptosis is thyroid
+disease; however, orbital mass lesions also result in proptosis. These lesions
+should be ruled out early in the diagnosis (see Fig 4-7). Proptosis may be
+accompanied by conjunctival hyperemia or limitation of eye movement. Small
+amounts of proptosis are detected most easily by tilting the chin up and looking
+from the chin over the maxilla at the relative corneal position.
+
+Discharge
+
+The type of discharge may be an important clue to the cause of a patient’s
+conjunctivitis. Purulent (creamy-white, see Fig 4-1) or mucopurulent (yellowish)
+exudate suggests a bacterial cause. Serous (watery, clear, or yellow-tinged)
+discharge suggests a viral cause. Scant, white, stringy discharge sometimes
+occurs in allergic conjunctivitis and in keratoconjunctivitis sicca, a condition
+commonly known as dry eye.
+
+Preauricular lymph-node enlargement
+
+Enlargement of the lymph node just in front of the auricle is a frequent sign of
+viral conjunctivitis. Usually, such enlargement does not occur in acute bacterial
+conjunctivitis. Preauricular node enlargement can be a prominent feature of
+some unusual varieties of chronic granulomatous conjunctivitis, known
+collectively as Parinaud oculoglandular syndrome. Cat-scratch fever can present
+with these findings.
+
+
+Associated Systemic Problems
+
+The primary care provider should be aware that systemic conditions may include
+ocular involvement. (See Chapter 9 for additional details.)
+
+Upper respiratory tract infection and fever
+
+Infection of the upper respiratory tract accompanied by fever may be associated
+with conjunctivitis, particularly when these symptoms are due to adenovirus type
+3 or type 7 (both of which cause pharyngoconjunctival fever). Allergic
+conjunctivitis may be associated with the seasonal rhinitis of hay fever.
+Erythema multiforme
+
+Erythema multiforme is an acute, immune-mediated condition characterized by
+the appearance of distinctive target-like lesions on the skin. These lesions are
+often accompanied by erosions or bullae involving the oral, genital, and/or
+ocular mucosae. Erythema multiforme can result in severe conjunctivitis,
+irreversible conjunctival scarring, and blindness. Stevens-Johnson syndrome and
+toxic epidermal necrolysis are severe mucocutaneous reactions, triggered by
+medications or infections, characterized by extensive necrosis and detachment of
+the epidermis. Ocular involvement may include severe conjunctivitis with a
+purulent discharge. Corneal ulceration is frequent, and anterior uveitis or
+panophthalmitis may occur. Pain and photophobia are common presenting
+symptoms. Scarring with the development of synechiae between the eyelids and
+conjunctiva (symblepharon) may be late sequelae. These conditions should be
+attended to by an ophthalmologist.
+
+
+Laboratory Diagnosis
+
+In practice, most mild cases of conjunctivitis are managed without laboratory
+assistance. This approach represents a compromise with ideal management, but
+it is justified by the economic waste of obtaining routine smears and cultures in
+such a common and benign disease. Most clinicians, after making a presumptive
+clinical diagnosis of bacterial conjunctivitis, proceed directly to broad-spectrum
+topical ophthalmic antibiotic treatment. Cases of presumed bacterial
+conjunctivitis that do not improve after 2 days of antibiotic treatment should be
+referred to an ophthalmologist for confirmation of the diagnosis and appropriate
+laboratory studies. In addition, in cases of hyperpurulent conjunctivitis, when
+copious purulent discharge is produced, conjunctival cultures, and
+ophthalmologic consultation are indicated due to a possible gonococcal cause.
+Gonococcal hyperpurulent conjunctivitis is a serious, potentially blinding
+disease.
+     In doubtful cases, smears of exudate or conjunctival scrapings can confirm
+clinical impressions regarding the type of conjunctivitis. Typical findings include
+polymorphonuclear cells and bacteria in bacterial conjunctivitis, lymphocytes in
+viral conjunctivitis, and eosinophils in allergic conjunctivitis. Cultures for
+bacteria and determinations of antibiotic sensitivity are useful in cases resistant
+to therapy.
+Management or Referral
+The following conditions either require no treatment or may be appropriately
+treated by a primary care provider. Patients with chronic, unilateral blepharitis
+should be referred to an ophthalmologist to rule out a malignant process such as
+sebaceous cell carcinoma or squamous cell carcinoma.
+    Cases requiring prolonged treatment or those in which the expected response
+to treatment does not occur promptly should also be referred to an
+ophthalmologist. (See Table 4-3 for a summary of instructions for patients to
+follow.)
+
+Table 4-3
+
+
+
+
+Blepharitis
+
+Response to the treatment of blepharitis, or inflammation of the eyelid, is often
+frustratingly slow, and relapses are common. The inflammation of the eyelid can
+primarily be in the anterior aspect of the eyelid, as in staphylococcal blepharitis,
+or the posterior aspect of the eyelid, as in blepharitis secondary to acne rosacea.
+Treatment should address the following considerations.
+
+Eyelid hygiene
+
+Warm compresses (tap water on clean washcloth) can be applied for 3–5
+minutes, each morning and before bedtime. If eyelids are oily, follow with eyelid
+scrubs using dilute baby shampoo (2 drops of shampoo in 2 oz of water).
+
+Staphylococcal infection
+
+Staphylococcal infection (Fig 4-15) may be present. If so, it should be treated
+with application of appropriate antibiotic ointment (bacitracin or erythromycin)
+to the eyelid margin at night for 1 week.
+
+
+
+
+ FIGURE 4-15 Staphylococcal blepharitis. Chronic staphylococcal eyelid infection produces inflamed,
+ swollen eyelids that may ulcerate. The oily discharge binds the lashes and sometimes condenses to form a
+ collarette around a lash.
+
+
+Associated acne rosacea/meibomian gland dysfunction
+
+These symptoms should be treated with doxycycline 100 mg twice a day and
+tapered to once a day for 2 months or longer. Artificial tears may be applied 4–8
+times a day as needed for symptoms of dryness.
+
+Scalp seborrhea
+
+Treatment with antidandruff shampoos can improve symptoms of seborrheic
+blepharitis (Fig 4-16).
+ FIGURE 4-16 Seborrheic blepharitis. The dry, flaky lashes and red eyelid margins seen here are
+ characteristic of seborrheic blepharitis.
+
+
+Contact dermatitis
+
+Contact dermatitis (Fig 4-17) can masquerade as blepharitis. A careful history of
+the eyelid redness associated with application of medication helps make the
+diagnosis. For example, the glaucoma medication brimonidine can produce a red
+eye with erythematous, swollen eyelids that have a dry “leathery” texture. Any
+ocular medication or cosmetics can be associated with similar clinical findings.
+Discontinuing the offending product should result in improvement in symptoms
+within 48 hours, but healing may take up to 2 weeks.
+ FIGURE 4-17 Contact dermatitis. Allergic contact dermatitis shown here is secondary to topical
+ ophthalmic medication.
+
+
+
+Stye and Chalazion
+
+A stye, or hordeolum, is an acute, usually sterile, inflammation of the glands or
+hair follicles in the eyelid. Hordeola can be categorized as external or internal,
+according to where the inflammation is located in the eyelid (Figs 4-18, 4-19). A
+chalazion is a chronic inflammation of a meibomian gland in the eyelid that may
+develop spontaneously or may follow a hordeolum (Fig 4-20). A persistent or
+recurring eyelid mass should undergo biopsy because it may be a rare sebaceous
+gland carcinoma, squamous cell carcinoma, or basal cell carcinoma of the eyelid
+rather than a benign chalazion.
+FIGURE 4-18 External hordeolum. This large, acute swelling, which is red and painful, involves the hair
+follicles or associated glands of Zeis or Moll and points toward the skin.
+FIGURE 4-19 Internal hordeolum. An acute infection of a meibomian gland produces a swelling
+directed internally toward the conjunctiva. This figure demonstrates a discrete, circumscribed area of
+inflammation highlighted by a hyperemic conjunctiva.
+FIGURE 4-20 Chalazion. This large, nontender eyelid mass is a chronic granulomatous inflammation of
+a meibomian gland.
+   The mainstays of treatment are the following:
+
+        Apply warm compresses to the eyelid 4 times a day for 3–5 minutes.
+        Massage the eyelid and lash line to encourage the glands to open up and
+        drain.
+        Apply topical ocular antibiotic ointment to the lash line and over the area
+        if there is tenderness and infection is suspected. Rarely, oral antibiotics
+        may be indicated if there is a secondary bacterial infection.
+        Refer the patient for incision and curettage of the lesion if there is no
+        resolution in 3–4 weeks.
+
+
+Subconjunctival Hemorrhage
+
+In the absence of blunt trauma, hemorrhage into the subconjunctival space, the
+potential space between the conjunctiva and the sclera, requires no treatment
+and, unless recurrent, no evaluation (see Fig 5-9). Causes include a sudden
+increase in ocular venous pressure, such as occurs with coughing, sneezing,
+vomiting, or vigorous rubbing of the eye. Many subconjunctival hemorrhages
+occur during sleep. Some patients may note mild tenderness with the onset of the
+hemorrhage, but this resolves in 1 or 2 days. If recurrent, an underlying bleeding
+disorder should be considered. Blood pressure should be measured, as marked
+elevation can result in subconjunctival hemorrhage.
+
+
+Conjunctivitis
+
+There is no specific medicinal treatment for viral conjunctivitis, although
+patients should be instructed in proper precautions to prevent contagion. Here
+are some treatments often recommended:
+
+        Apply cool compresses periodically throughout the day.
+        Use artificial tears if irritation occurs.
+        Apply antibiotic eyedrops (eg, trimethoprim/sulfacetamide or
+        fluoroquinolones) 4–6 times a day if bacterial infection is suspected.
+        Minimize spread to other family members and co-workers (eg, washing
+        hands after touching eye secretions, no sharing of towels).
+
+   Corticosteroids have limited use in treatment of infectious conjunctivitis.
+Eyedrops containing a combination of antibiotics and corticosteroids should be
+used only under the close observation of an ophthalmologist.
+
+
+Therapeutic Warnings
+
+Because of possible serious health risks, caution is required in the use of the
+following therapeutic agents.
+
+Topical anesthetics
+
+Topical anesthetics should never be prescribed for prolonged analgesia in ocular
+inflammations and injuries for 3 reasons:
+        Topical anesthetics inhibit growth and healing of the corneal epithelium.
+        Although rare, severe allergic reactions may result from instillation of
+        topical anesthetics.
+        Corneal anesthesia eliminates the protective blink reflex, exposing the
+        cornea to dehydration, injury, and infection.
+
+Topical corticosteroids
+
+Topical corticosteroids have 3 potentially serious ocular side effects:
+
+        Both herpes simplex keratitis (see Fig 4-8) and fungal keratitis are
+        markedly potentiated by corticosteroids. Corticosteroids may mask
+        symptoms of inflammation, making the patient “feel” better, while the
+        cornea may be melting away or even perforating.
+        Prolonged use of corticosteroids, locally or systemically, often leads to
+        cataract formation.
+        Local application of corticosteroids for 2–6 weeks may cause an
+        elevation of IOP in approximately one-third of the population. The
+        pressure rise may be severe in a small percentage of cases. Optic nerve
+        damage and permanent loss of vision can occur. The combination of a
+        corticosteroid and an antibiotic carries the same risk. Topical
+        corticosteroids alone or in combination with antibiotics should not be
+        administered to the eye by a primary care provider. They can be very
+        helpful when used under the close supervision of an ophthalmologist.
+
+
+         POINTS TO REMEMBER
+
+          If visual acuity is acutely and significantly reduced, a diagnosis of
+          conjunctivitis is extremely unlikely.
+          Fluorescein should always be instilled in a red eye to test for
+          integrity of the corneal epithelium.
+          A pupillary inequality or irregularity in a patient with red eye(s) is a
+          danger signal for serious ocular disease.
+          If the patient wears soft contact lenses, referral to an ophthalmologist
+          is advised because differentiation between mild and severe
+
