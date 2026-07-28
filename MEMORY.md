@@ -191,8 +191,8 @@ published date, consistent with the schedule ending 2026-08-31. **Do not rebuild
 - **Measure, then believe.** *Check the sum and inspect the entries before recording any number* — a
   count that did not reconcile has been written down **three times**. *Check the auditor before
   believing the audit* — **three** successive contrast auditors produced false failures (`CLAUDE.md`
-  §7). Every one was caught by re-measuring, never by re-reading. **README's "94 chapters" is wrong;
-  it is 104.**
+  §7). Every one was caught by re-measuring, never by re-reading. README was rewritten against
+  `app\data\` on 2026-07-28 and its numbers are current; the stale "94 chapters" is gone.
 - **Cleanup awaiting approval** — `Opthalmo\Theoritical\PPT\drive-download-…-001.zip` (173 MB)
   duplicates all 29 loose Ophthalmology lecture files, and two Pediatrics PPT files are broken stubs
   (`  Myocardial diseases.pdf` 134 B, `  stenotic lesions.pdf` 120 B). All sit inside `Semester 8\`,
