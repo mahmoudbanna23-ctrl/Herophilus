@@ -172,16 +172,16 @@ what you do first:
 - **The read tool rejects PDFs over 100 MB** — all 7 books and 3 of the 7 banks.
 - **No Python, Node, ImageMagick or Ghostscript.** Image work is PowerShell `System.Drawing`.
 - **Headless Chrome is the only way to screenshot the app** (`CLAUDE.md` §7).
+- **The project is on GitHub, PRIVATE**: `mahmoudbanna23-ctrl/Herophilus`, branch `main`, first push
+  2026-07-28. `Semester 8\` and `files.zip` are gitignored — **ledger §13 for the push method.**
 
-Full source inventory — 140 lecture PDFs, 16 PowerPoints, 7 books (1,637 pages), 7 question banks —
-is in ledger §9. **`ENT endpoint.pdf` is both a question bank and a theory source**: 3,075 pages,
-332 MB, no text layer, one 800×450 JPEG per page.
+Source inventory — ledger §9: 140 lecture PDFs, 16 PowerPoints, 7 books (1,637 pages), 7 banks.
+**`ENT endpoint.pdf` is bank AND theory source**: 3,075 pages, 332 MB, no text, 800×450 JPEG/page.
 
 ## Deadline
 
 **Semester 8 exam period: approximately early September 2026** — the user's own estimate, not a
-published date, consistent with the schedule ending 2026-08-31. **Exact dates not provided — do not
-rebuild the schedule on this until real dates are given.**
+published date, consistent with the schedule ending 2026-08-31. **Do not rebuild the schedule on it.**
 
 ## Open items
 

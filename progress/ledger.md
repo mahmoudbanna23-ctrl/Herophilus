@@ -1550,3 +1550,48 @@ string and the `int[]` conversion fails.
 **Two PowerShell gotchas that cost real time on 2026-07-28**, both when calling a native exe:
 `2>$null` on the chrome call makes the run produce nothing, and capturing chrome's stdout into a
 variable returns empty — `Start-Process … -RedirectStandardOutput` is required instead.
+
+### Git and GitHub — set up 2026-07-28
+
+`git init` on 2026-07-28 at the user's request, so the project can be worked on from an iPad through
+claude.ai/code. Remote is **`https://github.com/mahmoudbanna23-ctrl/Herophilus.git`**, branch `main`,
+first commit `5e481ad` — **197 files, 22 MB**. Repo config: `core.autocrlf false`,
+`credential.helper manager`.
+
+**The repo MUST stay private.** The questions are transcribed from three commercial banks; a public
+copy would be republishing someone else's material.
+
+**`Semester 8\` is gitignored and always must be** — 4.0 GB, and `ENT endpoint.pdf` alone is 332 MB,
+past GitHub's 100 MB per-file limit. The consequence is permanent: **transcribing new questions
+cannot be done from a clone.** Theory writing, editing existing questions, app and design work and
+the integrity sweeps all travel, because the lecture text is already cached as plain text in
+`content\` and every question already lives in `app\data\`.
+
+**⚠️ PUSHING NEEDS THE DEVICE-CODE FLOW. A plain `git push` HANGS FOREVER.** Three separate walls,
+each of which cost a run:
+
+1. **Git Credential Manager's default is a GUI sign-in window on the PC.** Under remote control the
+   user never sees the PC screen, so nothing clicks it and the push blocks indefinitely. Fix:
+   `git config --local credential.gitHubAuthModes device` + `credential.guiPrompt false`.
+2. **The harness sets `GCM_INTERACTIVE=never` and `GIT_TERMINAL_PROMPT=0`** — deliberately, so git can
+   never hang on a prompt. It also kills the device flow before it starts, with
+   *"Cannot prompt because user interactivity has been disabled."* Both must be overridden **in the
+   launching process only**. Note the two shells differ: those variables are set in the PowerShell
+   tool's environment and **empty in Bash's**, which is why the Bash push hung silently while the
+   PowerShell one failed fast with a usable error.
+3. **GCM writes the one-time code to `CONOUT$` directly, bypassing stdout redirection.** Capturing
+   stdout returns an empty file and the process just sits there. The code is only readable out of the
+   **console screen buffer** — `$host.UI.RawUI.GetBufferContents(...)`, which works here (120×9001).
+
+The working script lived in the session scratchpad and is gone with it; rebuild it from the three
+points above — set the env vars, `Start-Process git push -NoNewWindow -PassThru`, sleep ~12 s, read
+the buffer, print the code. **Run `git push`, not
+`git-credential-manager get`** — git consumes the token internally and GCM files it in Windows
+Credential Manager, so no secret ever lands in a file. `git-credential-manager get` would print the
+token to stdout in plaintext.
+
+**This is one-time.** The token is now stored; `git ls-remote` and later pushes authenticate with no
+prompt at all. Only a revoked or expired token brings the dance back.
+
+`gh` (GitHub CLI) is **not** installed. GCM is at
+`C:\Program Files\Git\mingw64\bin\git-credential-manager.exe`, v2.9.0, .NET Framework 4.8.
