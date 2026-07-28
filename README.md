@@ -22,18 +22,22 @@ point must stay named **`index.html`** so the bare URL works.
 
 ## Architecture
 
-**An HTML shell plus plain data files.** No build step, no dependencies, no bundler. CSS and the entire application are inline in `app\index.html` (~131 KB); content lives in `app\data\*.js`.
+**An HTML shell plus plain data files.** No build step, no dependencies, no bundler. CSS and the entire application are inline in `app\index.html` (~198 KB); content lives in `app\data\*.js`.
 
 ```
 app\
 ├─ index.html              HTML, CSS, and one inline <script> — all the logic
+├─ assets\                 module artwork and the Herophilus medallion (~910 KB)
 └─ data\
    ├─ modules.js           MODULES — the syllabus taxonomy
    ├─ schedule.js          SCHEDULE — the default study plan
    ├─ questions.{ent,peds,ophtho,neuro}.js
-   ├─ questions.js         aggregator → QUESTIONS
+   ├─ cases.{ent,…}.js     free-text cases (type:'case')
+   ├─ questions.js         aggregator → QUESTIONS (MCQs + cases, shuffled)
    ├─ theory.{ent,peds,ophtho,neuro}.js
-   └─ theory.js            aggregator → THEORY
+   ├─ theory.js            aggregator → THEORY
+   └─ fonts.js             Cinzel + EB Garamond, base64 — loaded from <head>,
+                           before the stylesheet, NOT with the other data files
 ```
 
 This was deliberate: it must run from a `file://` download, from any static host, and offline. The only network dependency is the Firebase SDK, loaded from CDN at runtime and **fully optional** — the app degrades to local-only storage if it fails.
@@ -47,9 +51,12 @@ They are `<script src>` tags before the inline script — **classic scripts, not
 Per-subject files use `var`, so the aggregators can read them off `window` and degrade to an empty list if one is missing instead of throwing:
 
 ```js
-const QUESTIONS = [].concat(window.Q_ENT||[], window.Q_PEDS||[], window.Q_OPHTHO||[], window.Q_NEURO||[]);
-const THEORY    = Object.assign({}, window.T_ENT||{}, window.T_PEDS||{}, window.T_OPHTHO||{}, window.T_NEURO||{});
+const Q_ALL  = [].concat(window.Q_ENT||[], window.Q_PEDS||[], window.Q_OPHTHO||[], window.Q_NEURO||[],
+                         window.C_ENT||[], window.C_PEDS||[], window.C_OPHTHO||[], window.C_NEURO||[]);
+const THEORY = Object.assign({}, window.T_ENT||{}, window.T_PEDS||{}, window.T_OPHTHO||{}, window.T_NEURO||{});
 ```
+
+Free-text cases sit in the **same** array as the MCQs, so the quiz engine, SRS, search and progress counters pick them up with no special casing. `QUESTIONS` is then `Q_ALL` **shuffled by hashing each id** (FNV-1a plus a murmur3 finalizer) rather than by `Math.random()`: the order is stable across reloads and across devices — so cloud-synced progress lines up — and a question added later lands in the middle rather than on the end, so no module ever needs re-shuffling when it is finished.
 
 Load order matters: per-subject files before the aggregators, and all of `data\` before the inline script.
 
@@ -63,28 +70,56 @@ Load order matters: per-subject files before the aggregators, and all of `data\`
 
 ```js
 {
-  id: 'p1-32',                    // unique; prefix = source
-  module: 'pediatrics',           // must match a MODULES id
-  chapter: 'emergencies',         // must match a chapter id in MODULES
-  stem: 'A 2-year-old boy...',    // markdown: **bold**, tables
+  id: 'entqb-32',                 // unique; prefix = source bank
+  bank: 'gradegain',              // 'endpoint' | 'house' | 'gradegain'
+  module: 'ent',                  // must match a MODULES id
+  chapter: 'ent-csom',            // must match a chapter id in MODULES
+  stem: 'A 34-year-old man...',   // markdown: **bold**, tables
   options: ['...', '...'],        // 2–5 strings
   answer: 1,                      // 0-based index
   explanation: '...',             // markdown; UWorld style
   objective: '...',               // one-line takeaway
-  source: 'Pediatrics Part 1'
+  source: 'ENT QB p.44'           // file and page
 }
 ```
+
+**Every module draws on three commercial banks**, and `bank` names which one a question came from — the app shows it on the question and filters by it. Id prefixes: `entqb-`, `enthd-`, `entep-`, `peds-`, `opmcq-`, `opqb-`, `npqb-`.
+
+| `bank` | On screen | Colour |
+|---|---|---|
+| `endpoint` | Endpoint | `#9a6b1f` bronze |
+| `house` | House | `#2f6b8f` aegean |
+| `gradegain` | Grade Gain | `#8f3f5c` madder |
+
+### Free-text cases — same array, `type:'case'`
+
+Some sources print a vignette and a diagnosis with **no options**. Forcing those into the MCQ shape would mean inventing distractors, so they carry `type:'case'` instead and the learner types the diagnosis:
+
+```js
+{
+  id:'entep-case-18', bank:'endpoint', module:'ent', chapter:'ent-csom', type:'case',
+  stem:'A 55-year-old diabetic female...',
+  answer:'Left CSOM – unsafe type (cholesteatoma) complicated with petrositis',  // source's own, verbatim
+  keys:[                                          // what the typed answer must contain
+    {label:'Unsafe CSOM / cholesteatoma', terms:['unsafe','cholesteatoma','atticoantral','csom']},
+    {label:'Petrositis (Gradenigo)',      terms:['petrositis','gradenigo','apicitis']}
+  ],
+  explanation:'...', objective:'...', source:'... p.750 (Case 18)'
+}
+```
+
+Grading is on **concepts, never wording**: input is normalised, each key matches if *any* of its `terms` appears, and single-word terms tolerate typos by Levenshtein distance. Score is `got/total`. Write `terms` generously — abbreviation, full name, common misspellings and the clinical synonym.
 
 ### `MODULES` — the syllabus taxonomy
 
 ```js
 {
-  id:'ent', name:'ENT', icon:'👂', color:'var(--ent)', hex:'#ff5a5f',
+  id:'ent', name:'ENT', icon:'ear', color:'var(--ent)', hex:'#b4472f',
   groups:[ { name:'Ear', chapters:[ ['ent-csom','CSOM and complications'], ... ] } ]
 }
 ```
 
-**104 chapters** across 4 modules — ENT 30, Ophthalmology 26, Neuropsychiatry 27, Pediatrics 21; counted live in the browser 2026-07-26. (An earlier draft of this file said 94; that was wrong, and contradicted its own Status table. The count was 114 until split topics — Glaucoma 1/2, Cataract 1/2, Rhinitis 1/2 and seven others — were merged into single chapters on 2026-07-26.) Chapters with no questions render greyed-out but visible — deliberate, so the syllabus shape is always apparent.
+**104 chapters** across 4 modules — ENT 30, Ophthalmology 26, Neuropsychiatry 27, Pediatrics 21; counted from `modules.js` on 2026-07-28, matching the last real `file://` boot. (An earlier draft of this file said 94; that was wrong. The count was 114 until split topics — Glaucoma 1/2, Cataract 1/2, Rhinitis 1/2 and seven others — were merged into single chapters on 2026-07-26.) Chapters with no questions render greyed-out but visible — deliberate, so the syllabus shape is always apparent.
 
 ### `THEORY` — high-yield notes, keyed by chapter id
 
@@ -188,15 +223,18 @@ service cloud.firestore {
 
 ## Status
 
-Verified in-browser 2026-07-26, after the restructure.
+Counted from `app\data\` on 2026-07-28, matching the last in-browser verification.
 
-| Module | Chapters | Questions | Theory |
-|---|---|---|---|
-| ENT | 32 | 0 | 0 |
-| Pediatrics | 21 | 0 | 0 |
-| Ophthalmology | 33 | 0 | 0 |
-| Neuropsychiatry | 28 | 0 | 0 |
-| **Total** | **104** | **70** | **0** |
+| Module | Chapters | MCQs | Cases | Theory |
+|---|---|---|---|---|
+| ENT | 30 | 515 | 82 | 0 |
+| Pediatrics | 21 | 0 | 0 | 0 |
+| Ophthalmology | 26 | 0 | 0 | 0 |
+| Neuropsychiatry | 27 | 0 | 0 | 0 |
+| **Total** | **104** | **515** | **82** | **0** |
+
+`QUESTIONS.length` is **597** — MCQs and free-text cases share one array. By bank: **576 Endpoint,
+21 House, 0 Grade Gain**. All 30 ENT chapters hold at least one question.
 
 **The content was deliberately reset on 2026-07-26.** The app previously held 65 Pediatrics questions and 2 written theory chapters (`emergencies`, `growth-puberty`); these were discarded by decision so that all content is rebuilt to one consistent standard. They remain recoverable in `archive\discarded-content\`.
 
@@ -235,9 +273,9 @@ Everything lives in `Semester 8\`, and splits into **three tiers with very diffe
 
 | Tier | What | Text layer? | Cost |
 |---|---|---|---|
-| **Lecture slides** | 140 PDFs + 16 `.pptx`/`.ppt` in `*/Theoritical/PPT/` | **Yes** — 126 of 140 PDFs extract cleanly with `pdftotext`; `.pptx` extracts fully from `ppt/slides/slide*.xml` | Nearly free |
+| **Lecture slides** | 140 PDFs + 16 `.pptx`/`.ppt` in `*/Theoritical/PPT/` | **Yes** — 131 of 140 PDFs extract with `pdftotext`; 15 of 16 PowerPoints extract from `ppt/slides/slide*.xml` | Nearly free |
 | **Books** | 7 PDFs, 1,637 pages | **No** — image-only scans | Render + visual read |
-| **Question banks** | 7 PDFs in `*/Questions/` | **No** — image-only scans, ~843 known pages | Render + visual read |
+| **Question banks** | 7 PDFs in `*/Questions/` | **No** — image-only scans; 846 pages across six, plus `ENT endpoint.pdf` at 3,075 | Render + visual read |
 
 Books and question banks need Poppler (`winget install --id oschwartz10612.Poppler`). Two walls make it unavoidable: the reader rejects PDFs over 100 MB outright — that is all 7 books and 3 of the 7 question banks — and everything under that still needs `pdftoppm`. Render page ranges to PNG in the scratchpad and read the images; the size limit then stops applying, because the PDF itself is never opened by the reader.
 
@@ -246,6 +284,8 @@ pdftoppm -png -r 150 -f <first> -l <last> "<source.pdf>" "<scratchpad>/<prefix>"
 ```
 
 No OCR tooling (`tesseract`) is installed and none is needed on this route. Cache every page you read into `content\` and record the range in `progress\ledger.md` — a scanned page should be rendered and read once, ever.
+
+**The lecture text harvest is already done** — 146 files in `content\<subject>\lectures\*.txt` (ENT 32, Pediatrics 64, Ophthalmology 25, Neuropsychiatry 25), one pass, never repeated. **Check that cache before rendering anything.** The 10 files that yielded nothing are listed in `progress\ledger.md` §1.
 
 ---
 
@@ -273,8 +313,8 @@ Baseline after any structural change — open `app\index.html` as a `file://` UR
 
 - boots with **zero console errors**
 - all four modules render, all 104 chapters present (empty ones greyed-out but visible)
-- `QUESTIONS.length` and `Object.keys(THEORY)` match `progress\ledger.md`
-- `SCHEDULE` still spans 2026-07-25 → 2026-08-31
+- `QUESTIONS.length` is **597** and `Object.keys(THEORY).length` is **0** — both match `progress\ledger.md`
+- `SCHEDULE` still spans 2026-07-25 → 2026-08-31 across 38 days
 
 Per content batch: every question's `module` and `chapter` resolve against `MODULES`; every `answer` index is within range of its `options`; every `qs` id in `THEORY` resolves to a real question.
 
@@ -284,11 +324,17 @@ Areas worth re-testing after any change that could touch them: schedule reschedu
 
 ## Design
 
-Deliberately playful rather than clinical-sterile: bright saturated palette, chunky 2.5 px outlines with hard offset shadows, spring easing (`cubic-bezier(.34,1.56,.64,1)`), progress rings, confetti above 80% on a set.
+**Greek, rebuilt 2026-07-28** from artwork the user supplied — classical figures in ochre and brass on parchment. Light and dark both ship (`<html data-theme>`, chosen by an inline script in `<head>` before the stylesheet so light-mode users get no dark flash); dark is *the library at night*, light is *the page itself*. Cinzel and EB Garamond, embedded as base64. Stroked SVG glyphs on a 24-unit grid rather than emoji, so they theme for free. Spring easing (`cubic-bezier(.34,1.56,.64,1)`), progress rings, confetti above 80% on a set. Module artwork is shown whole in a square panel at the top of each card, two cards per row.
 
-Module colours are consistent across the app, the Notion workspace and the PDF schedule: ENT `#ff5a5f`, Ophthalmology `#00b37e`, Neuropsychiatry `#8b5cf6`, Pediatrics `#3b82f6`.
+**Alive to browse, calm to read.** The ambient background field runs on home, module, schedule, moved and flagged; it is paused and dimmed on quiz, mock, review and theory. Nothing moves beside a clinical stem.
 
-Question stems are set in a serif face — they read like an exam paper, and it separates content from interface.
+Module colours were **replaced** with the Greek palette at the user's decision: ENT `#b4472f` terracotta, Ophthalmology `#5c7a52` olive, Neuropsychiatry `#6d4c7d` tyrian purple, Pediatrics `#2e5f8a` lapis. Every one is dark enough that white text on it passes AA (4.6–7.1:1); the old bright set — ENT `#ff5a5f`, Ophthalmology `#00b37e`, Neuropsychiatry `#8b5cf6`, Pediatrics `#3b82f6` — failed at 2.15–4.23:1. **The Notion workspace and the PDF schedule still carry the old colours**, a divergence accepted knowingly until they are updated.
+
+Question stems are set in a serif face at 17px — they read like an exam paper, and it separates content from interface.
+
+The app is **WCAG-AA clean**, re-audited 2026-07-28 across 1,294 text elements, 5 views × 2 themes, with zero real failures. **Re-audit after any colour change** — and check the auditor before believing the audit; three successive auditors produced false failures.
+
+The pre-redesign look is preserved at `archive\index.pre-redesign-2026-07-27.html`, the pre-Greek one at `archive\index.pre-greek-2026-07-28.html`.
 
 ---
 
