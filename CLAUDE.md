@@ -29,7 +29,9 @@ Herophilus\
 │     ├─ questions.js        aggregator — concatenates both into QUESTIONS
 │     └─ fonts.js            Cinzel + EB Garamond as base64 (see §6); loaded from
 │                            <head>, NOT with the other data files
-├─ Images\                   the user's original supplied art — source, never edited
+├─ Design\                   design source material — never deployed
+│  ├─ Images\                the user's original supplied art — source, never edited
+│  └─ Video clip\            ambient footage, added 2026-07-28; not yet used by the app
 ├─ content\<subject>\        working notes — never deployed
 │  ├─ lectures\*.txt         cached lecture-slide text
 │  ├─ qb-pages\*.md          verbatim question-bank transcriptions
@@ -470,7 +472,7 @@ Sources: ENT is 1254² but the other three are only ~615²; all are re-encoded t
 `app\assets\`. Displayed near 430px they are fine, and mildly soft on a 2× display — raising the
 encode would only help ENT, since 615² is the real ceiling for the other three.
 
-**The icon is `Images\Icons\Herophilus 3.png`** (user's choice, 2026-07-28): the navy medallion. Its
+**The icon is `Design\Images\Icons\Herophilus 3.png`** (user's choice, 2026-07-28): the navy medallion. Its
 circle is cut out of the white square and saved with a transparent surround, so it sits on any
 background. The medallion edge is **found by scanning for non-white pixels, not guessed**.
 
