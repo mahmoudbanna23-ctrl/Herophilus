@@ -1225,6 +1225,31 @@ body{
     radial-gradient(150% 105% at 50% 48%, transparent 38%, rgba(7,13,22,.46) 100%);
 }
 
+/* PORTRAIT IS A DIFFERENT PICTURE, not the same one narrower.
+   object-fit:cover crops to the middle of the frame, and on a tall viewport
+   that middle is only about 39% of a 16:9 source. For this clip the middle
+   band is the scholar's unlit back; the oil lamp — the one bright, legible
+   thing in the shot — sits ~14% from the left and is cropped away entirely.
+   The result on an iPad in portrait was an apparently blank navy page.
+
+   So the framing moves toward the lamp rather than the figure, and the film
+   lifts to carry a crop that is inherently darker. Found by rendering at
+   820x1180; it is invisible in the CSS and invisible on a desktop window. */
+   And it needs a harder push than a wider screen does, because in portrait the
+   cards run nearly edge to edge: the only film left showing is the strip above
+   the first card and the gaps between sections. What survives has to carry the
+   whole effect, so the film runs brighter here than it ever does on a desktop. */
+@media (max-aspect-ratio:5/4){
+  .ambient .film{object-position:18% 45%;opacity:.72}
+  .ambient .film-scrim{
+    background:
+      linear-gradient(180deg,
+        rgba(7,13,22,.78) 0%, rgba(7,13,22,.28) 14%,
+        rgba(7,13,22,.14) 48%, rgba(7,13,22,.52) 100%),
+      radial-gradient(170% 95% at 50% 45%, transparent 50%, rgba(7,13,22,.34) 100%);
+  }
+}
+
 .app{position:relative;z-index:1}
 
 /* ---- the gate: still while reading -------------------------------------- */
