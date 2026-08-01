@@ -1462,7 +1462,7 @@ lands on `--bg-2`. Re-measured against the **darkest** surface it touches: `#6b5
 
 ### 2026-07-28 · the Greek restyle
 
-From artwork the user supplied in `Images\`. Shell 178 KB → 195 KB, plus `app\assets\` (831 KB, down
+From artwork the user supplied in `Design\Images\` (was `Images\` until 2026-07-28). Shell 178 KB → 195 KB, plus `app\assets\` (831 KB, down
 from 16 MB of originals) and `app\data\fonts.js` (128 KB). Backups:
 `archive\index.pre-greek-2026-07-28.html`, `archive\modules.pre-greek-2026-07-28.js`.
 Method, the palette table and the traps are in `CLAUDE.md` §6.
