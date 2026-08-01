@@ -1398,19 +1398,28 @@ button.card:active:not(:disabled){transform:translateY(-1px)}
 :root[data-theme="light"] .ambient .orb{opacity:.20}
 :root[data-theme="light"] .ambient .o4{opacity:.13}
 
-/* The film is a night scene, and light mode is the page in daylight. Rather
-   than drop it — which would read as broken to anyone who only ever uses light
-   mode — it is pulled right back and washed with parchment instead of navy, so
-   it survives as a faint sepia texture rather than a dark rectangle. */
+/* The film is a night scene and this is the page in daylight, so it cannot
+   simply run dimmer here — a dark image at low opacity on parchment is a grey
+   smudge, and at .14 it was invisible altogether, which is how it first
+   shipped. The trick is to BRIGHTEN IT INTO A PALE PRINT rather than show a
+   dark photograph faintly: brightness well above 1 lifts the shadows off the
+   floor, low contrast keeps them there, and the warmth that survives reads as
+   a faded fresco on the page rather than a window onto a dark room.
+   Higher opacity than dark mode, therefore, not lower. */
 :root[data-theme="light"] .ambient .film{
-  opacity:.14;filter:saturate(.42) contrast(.94) brightness(1.16);
+  opacity:.42;filter:saturate(.55) contrast(.68) brightness(1.78);
 }
 :root[data-theme="light"] .ambient .film-scrim{
   background:
     linear-gradient(180deg,
-      rgba(247,244,236,.88) 0%, rgba(247,244,236,.72) 24%,
-      rgba(247,244,236,.68) 55%, rgba(247,244,236,.86) 100%),
-    radial-gradient(140% 100% at 50% 50%, rgba(247,244,236,.34) 30%, rgba(247,244,236,.80) 100%);
+      rgba(247,244,236,.72) 0%, rgba(247,244,236,.44) 22%,
+      rgba(247,244,236,.36) 55%, rgba(247,244,236,.66) 100%),
+    radial-gradient(140% 100% at 50% 50%, rgba(247,244,236,.14) 34%, rgba(247,244,236,.58) 100%);
+}
+/* Light mode's selector outranks the portrait media query, so portrait needs
+   saying again here or it silently keeps the wide-screen values. */
+@media (max-aspect-ratio:5/4){
+  :root[data-theme="light"] .ambient .film{opacity:.56}
 }
 
 :root[data-theme="light"] .rail{

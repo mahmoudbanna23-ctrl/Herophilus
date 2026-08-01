@@ -509,9 +509,17 @@ its scrim entirely (`display:none`, poster included), and the print block's exis
 already covers it. **`play()` is called with a swallowed `.catch()`**: autoplay refusal is an expected
 outcome, not an error, and it degrades to the poster frame.
 
-**Light mode keeps it, washed rather than dropped.** It is a night scene, so it runs at `.14` with a
-parchment scrim instead of navy — a faint sepia texture. Dropping it outright would read as broken to
-anyone who only ever uses light mode.
+**Light mode BRIGHTENS the film into a pale print — it does not dim it.** This is the opposite of the
+obvious move and the obvious move is wrong: a night scene at low opacity on parchment is a grey
+smudge, and the first attempt at `.14` was invisible, which the user reported. `brightness(1.78)`
+lifts the shadows off the floor, `contrast(.68)` keeps them there, and what survives reads as a faded
+fresco. So light mode runs at **`.42` — HIGHER than dark mode's `.48` is relative to its own ground**,
+not lower. Measured after the change: card interiors identical to baseline in both themes, bare
+background 9.69:1 → 9.15:1 for dark text, still past AAA.
+
+**Light mode's selector outranks the portrait media query** (`:root[data-theme=…] .ambient .film` is
+four classes to the query's two), so portrait values must be restated inside the light block or they
+are silently ignored.
 
 **⚠️ PORTRAIT IS A DIFFERENT PICTURE — test it separately, always.** `object-fit:cover` crops to the
 middle of the frame, and at 820×1180 that middle is only **~39%** of a 16:9 source. For this clip the
