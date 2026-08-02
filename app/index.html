@@ -727,11 +727,11 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
 .gate-amb .film-scrim::after{
   content:'';position:absolute;inset:0;
   background:radial-gradient(46% 42% at 50% 52%,
-    rgba(7,13,22,.82) 0%, rgba(7,13,22,.64) 45%, transparent 78%);
+    rgba(7,13,22,.88) 0%, rgba(7,13,22,.72) 45%, transparent 78%);
 }
 :root[data-theme="light"] .gate-amb .film-scrim::after{
   background:radial-gradient(46% 42% at 50% 52%,
-    rgba(247,244,236,.88) 0%, rgba(247,244,236,.72) 45%, transparent 78%);
+    rgba(247,244,236,.92) 0%, rgba(247,244,236,.78) 45%, transparent 78%);
 }
 
 /* A faint grid, masked to fade out at the edges. Without it four big blurs on
@@ -1434,28 +1434,84 @@ button.card:active:not(:disabled){transform:translateY(-1px)}
    Higher opacity than dark mode, therefore, not lower. */
 :root[data-theme="light"] .ambient .film,
 :root[data-theme="light"] .gate-amb .film{
-  opacity:.42;filter:saturate(.55) contrast(.68) brightness(1.78);
+  /* .42 -> .55 at the user's request: at .42 it was present but easy to miss.
+     The brightening does the work, not the opacity — see the note above. */
+  opacity:.55;filter:saturate(.58) contrast(.66) brightness(1.82);
 }
 :root[data-theme="light"] .ambient .film-scrim,
 :root[data-theme="light"] .gate-amb .film-scrim{
   background:
     linear-gradient(180deg,
-      rgba(247,244,236,.72) 0%, rgba(247,244,236,.44) 22%,
-      rgba(247,244,236,.36) 55%, rgba(247,244,236,.66) 100%),
-    radial-gradient(140% 100% at 50% 50%, rgba(247,244,236,.14) 34%, rgba(247,244,236,.58) 100%);
+      rgba(247,244,236,.64) 0%, rgba(247,244,236,.34) 22%,
+      rgba(247,244,236,.26) 55%, rgba(247,244,236,.58) 100%),
+    radial-gradient(140% 100% at 50% 50%, rgba(247,244,236,.08) 34%, rgba(247,244,236,.50) 100%);
 }
 /* Light mode's selector outranks the portrait media query, so portrait needs
    saying again here or it silently keeps the wide-screen values. */
 @media (max-aspect-ratio:5/4){
   :root[data-theme="light"] .ambient .film,
-  :root[data-theme="light"] .gate-amb .film{opacity:.56}
+  :root[data-theme="light"] .gate-amb .film{opacity:.68}
 }
 
-:root[data-theme="light"] .rail{
-  /* the rail keeps its dark gradient; only its edge changes so it does not cut
-     a hard black line down a light page */
-  border-right:1px solid rgba(16,27,45,.12);
+/* ---- the gate runs the film harder than the app does ----------------------
+   The user asked for it to be more obvious on the sign-in screen, and the gate
+   can carry it: it is a five-second screen with nothing to read on it, so the
+   calm-to-read half of the rule does not apply. What keeps the type legible is
+   .film-scrim::after, the pool under the centre column — NOT the film opacity.
+   Both were re-measured together after this change; raising one without
+   checking the other is how the type would quietly slip below AA.
+
+   Placed after every shared rule on purpose: these match the shared selectors'
+   specificity exactly, so they win on source order alone. Moving this block
+   higher silently disables it. */
+.gate-amb .film{opacity:.66}
+:root[data-theme="light"] .gate-amb .film{opacity:.62}
+@media (max-aspect-ratio:5/4){
+  .gate-amb .film{opacity:.86}
+  :root[data-theme="light"] .gate-amb .film{opacity:.78}
 }
+
+/* ---- the rail follows the theme (2026-07-28, user's request) --------------
+   It used to stay dark in light mode on purpose. The user asked for it to
+   change with the theme, so it does — but the rail was built on the assumption
+   that its ground is always near-black, and roughly a dozen colours inside it
+   are hardcoded white or lilac rather than tokenised. Flipping only the
+   background would have left white text on parchment. Every one of them is
+   restated here, and the whole rail is re-measured after. */
+:root[data-theme="light"] .rail{
+  --rail:#eae2d3; --rail-2:#ded3bf; --rail-3:#cec0a6; --rail-text:#4f4536;
+  /* The token alone does NOTHING here. The cinematic layer re-declares .rail
+     with a hardcoded dark gradient, so background-color computes to
+     transparent and --rail is never consulted. Found by reading the computed
+     background, which came back rgba(0,0,0,0) while --rail was correctly
+     #eae2d3 — the token had applied and changed nothing. The gradient is what
+     has to be replaced. Contrast below is measured against the DARKER stop. */
+  background:linear-gradient(180deg,#ece5d7,#e6dccb);
+  border-right:1px solid rgba(16,27,45,.14);
+  backdrop-filter:none;-webkit-backdrop-filter:none;
+}
+:root[data-theme="light"] .rail .logo{color:#2a2118}
+:root[data-theme="light"] .rail .logo .blip{
+  /* the gold ring existed to separate a navy medallion from a near-black rail.
+     On parchment the disc already stands out, so it becomes a plain soft edge */
+  box-shadow:0 0 0 1px rgba(122,90,20,.30),0 3px 9px rgba(60,45,20,.20);
+}
+:root[data-theme="light"] .rail-sub,
+:root[data-theme="light"] .nav-label,
+:root[data-theme="light"] .railprof .rs{color:#60533e}
+:root[data-theme="light"] .nav-item:hover,
+:root[data-theme="light"] .nav-item.on,
+:root[data-theme="light"] .railprof .rn{color:#2a2118}
+:root[data-theme="light"] .nav-item .cnt{color:#60533e}
+:root[data-theme="light"] .nav-item.on .cnt{color:#4f4536}
+:root[data-theme="light"] .railprof .rav{border-color:rgba(42,33,24,.18)}
+:root[data-theme="light"] .railsync{background:rgba(42,33,24,.055);color:#60533e}
+:root[data-theme="light"] .streak{
+  background:linear-gradient(135deg,rgba(217,180,74,.26),rgba(180,71,47,.14));
+  border-color:rgba(154,107,31,.38);
+}
+:root[data-theme="light"] .streak .n{color:#7a5200}
+:root[data-theme="light"] .streak .t{color:#60533e}
 :root[data-theme="light"] .modal{
   background:linear-gradient(160deg,rgba(255,255,255,.98),rgba(243,247,252,.97));
   border:1px solid var(--line-2);
