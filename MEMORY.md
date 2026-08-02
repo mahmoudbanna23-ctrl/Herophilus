@@ -52,7 +52,8 @@ break it.
 ## The app
 
 **Boots clean from `file://`** — zero console errors, 4 modules, 104 chapters, 597 questions, all
-views rendering. `app\index.html` 203 KB, `fonts.js` 128 KB, `app\assets\` 1,262 KB.
+views rendering, re-verified 2026-08-02. `app\index.html` 269 KB, `fonts.js` 128 KB,
+`app\assets\` 1,262 KB.
 **Fully WCAG-AA clean** — re-audited 2026-07-28: 1,294 text elements, 5 views × 2 themes, **zero
 real failures**. **Re-audit after any colour change**; a palette move already inverted one fix once.
 
@@ -69,6 +70,22 @@ is the icon AND the app's mark**, in **five** places that must move together. **
 `assets\ambient-library.mp4`, 321 KB, **ping-pong looped**, paused by `syncFilm()` on reading views,
 dropped for reduced motion and print. **The gate carries its own second copy** — the only place type
 sits on the film (4.89:1 dark / 5.57:1 light). **`CLAUDE.md` §6.**
+
+**The Clepsydra + study sessions + automatic backup — 2026-08-02** (backup
+`archive\index.pre-clepsydra-2026-08-02.html`). A laurel-crowned hologram clock in the corner who
+carries the session timer across every screen and explains each one on first arrival; an original
+character in the Miss Minutes *idiom*, not a copy. New **Study session** view: focus/break/cycles,
+live ring, questions answered and accuracy inside the session, history. **Import/Export are gone** —
+replaced by rolling `wardround.bak.<profileId>` snapshots with silent restore. **She glitches on the
+reading views too — the user's explicit call, made after the concern was raised.**
+**Rules and traps: `CLAUDE.md` §6.**
+
+**She was REDRAWN the same day from the user's own Canva artwork, which is now her spec** — a solid
+orange woodgrain disc with dark line work, shaded in 3D by nine gradients, replacing bright outlines
+on nothing. Her copy was cut to roughly two-thirds at the same request. **The laurel is the one part
+NOT in the reference.** Three traps came with it, all in `CLAUDE.md` §6: **`CL_R` is the face radius
+(31), not the silhouette**; **the hands must be drawn before the eyes** or they rule a line across
+her face; and `--cl-hand` / `.cl-limb` are **retired**, not to be reintroduced.
 
 **Still outstanding:** the **Notion board and PDF schedule still carry the old module colours** —
 the user accepted that divergence knowingly.

@@ -78,6 +78,9 @@ invisible to users. Renaming them orphans every existing user's progress.
 | `wardround.v3.<profileId>` | per-profile state |
 | `wardround.lastprofile` | last used |
 | `wardround.v2` | legacy — migrated on first load |
+| `wardround.theme` | light/dark — **device**, never synced |
+| `wardround.clep` | the Clepsydra's corner, mute and collapsed state — **device** |
+| `wardround.bak.<profileId>` | rolling progress snapshots (§8) |
 
 **The source filter must work over the banks a module actually has**, not over all of `BANKS`.
 `banksPresent(mod)` exists for this. Filtering over all three let a bank with no questions count as
@@ -582,9 +585,19 @@ A comment was closed early and four lines of prose left sitting in front of `@me
 (max-aspect-ratio:5/4)`. CSS error recovery swallowed the prelude *and the whole media block*, so the
 portrait rules never applied — while a before/after screenshot comparison still "looked improved",
 because that judgement was made by eye. It was found only by enumerating `document.styleSheets` and
-counting parsed `CSSRule`s: **one** aspect-ratio media rule where there should have been two.
-**After any CSS edit, check `/*` and `*/` balance and confirm the rule you just wrote is live via
-`getComputedStyle`.** A picture cannot tell you a rule parsed.
+counting parsed `CSSRule`s. **The correct count is THREE `max-aspect-ratio:5/4`
+blocks** — page film, light-mode film, gate film — verified 2026-08-02 against
+the pre-Clepsydra backup; an earlier note here said two and was wrong.
+**After any CSS edit, confirm the rule you just wrote is live** — enumerate `document.styleSheets`,
+count parsed `CSSRule`s **recursively** (a top-level count cannot see a swallowed media block), and
+check the selector is present. A picture cannot tell you a rule parsed.
+
+> **⚠️ A NAIVE `/*` vs `*/` COUNT IS INVALID ON THIS FILE — it reported 286 vs 291 on a perfectly
+> healthy build.** The markdown renderer holds regex literals like `/\*\*(.+?)\*\*/g` and
+> `.replace(/;\s*$/,'')`; each contains the substring `*/` and none contains `/*`, so four such lines
+> manufacture six phantom unclosed comments. **Balance is a hint, never the verdict** — the verdict
+> is the parsed-rule enumeration above, plus a zero-error boot. Verified 2026-08-02: 710 rules,
+> **three** `max-aspect-ratio:5/4` blocks, 0 console errors.
 
 **The icon is `Design\Images\Icons\Herophilus 3.png`** (user's choice, 2026-07-28): the navy medallion. Its
 circle is cut out of the white square and saved with a transparent surround, so it sits on any
@@ -627,6 +640,108 @@ fixes it. Found by rasterising the rail at 1:1 — it is invisible in source.
    per item and profile avatars save their colour, so both kept rendering the old palette from
    `localStorage` long after the hex was gone from the source. `migrateColours()` is keyed on the
    old values, so it is idempotent. **Prefer storing a token, not a hex.**
+
+### The Clepsydra — 2026-08-02
+
+A κλεψύδρα is the Alexandrian water clock. She is the study companion: a warm
+amber cartoon clock, laurel-crowned, projected in the corner with scanlines, a
+flicker and random glitch bursts. **Original, not a copy of any existing
+character** — the user asked for a Miss Minutes lookalike and got the same idiom
+(rubber-hose clock, gloves, big eyes, hologram) with a Greek layer instead.
+
+**REDRAWN 2026-08-02 FROM THE USER'S OWN CANVA ARTWORK, WHICH IS NOW THE
+REFERENCE.** They generated a vintage clock mascot themselves and said *"this is
+what I need"* — so the figure is matched to it rather than invented: a **solid
+orange woodgrain disc with dark line work**, big lashed cartoon eyes, cream
+mitten and open waving hand, orange boots with cream soles. That is close to the
+inverse of what she was, which was bright amber *outlines* on nothing, and it is
+why almost every rule below moved with it. **Her artwork is the spec — check the
+Canva reference before changing her proportions.**
+
+**She is shaded, not flat** (the user asked for 3D). Nine gradients do it: a
+radial dome on the face, a metallic bezel carrying a bounce-light stop at 86%,
+an inner ambient-occlusion ring, a gloss ellipse clipped to the dial, and domed
+gradients on the eyes, iris, gloves, boots and laurel. **Six tokens now shade
+the disc light-to-deep** — `--cl-hi`, `--cl-1`…`--cl-4` — plus `--cl-out` for
+all line work, `--cl-w` cream, `--cl-d` for pupils and mouth, and `--cl-rim`.
+
+**Everything she says is generated from the data the screen renders from**, so a
+number she quotes cannot drift out of date with the page. `CL_TIPS` holds one
+explainer per view; `clepFacts()` holds app facts. Never hardcode a count there.
+
+- **She is ONE fixed element, so `backdrop-filter` would be affordable — and is
+  still not used.** She floats over a scrolling page and a blurred backdrop on a
+  fixed element repaints every frame of that scroll.
+- **Layering: 150.** Under gate 200, confetti 250, modal 300, toast 400.
+- **The figure is generated, not hand-drawn**: `clTicks()`, `clGrain()`,
+  `clWreath()`, `clHose()`, `clEye()` and `clLashes()` compute their geometry, so
+  the maths lives beside the drawing. The woodgrain is **deterministic, not
+  random** — a `Math.random()` grain shimmers between two paints of one figure.
+- **⚠️ `CL_R` is the FACE radius (31), NOT the silhouette.** The bezel rides at
+  36.4 outside it and the wreath at `CL_R+7.5` clears both. It dropped 35 → 31
+  when she became a solid disc; leaving it at 35 throws the leaves off the rim
+  entirely, and nothing else in the file will complain.
+- **⚠️ THE CLOCK HANDS MUST BE DRAWN BEFORE THE EYES AND THE MOUTH.** They pivot
+  at the dial's centre and the eyes sit above it, so there is no hand length that
+  avoids them. Drawn *on top* they rule a bright line straight across her face —
+  she reads as struck through, which a still at 12 o'clock does not even reveal;
+  it took rendering the hands at two real times to see. Drawn *underneath* they
+  are occluded by the face, which is how a cartoon clock works. Cream core plus
+  a dark hairline (`.cl-hand` over `.cl-hand-o`), because the core reads on the
+  deep half of the dial and the hairline reads on the lit top-left.
+- **`--cl-rim` exists because a near-black limb on a near-black ground is
+  invisible.** The reference's limbs are black line work; the app's ground is
+  `#070d16`. `clHose()` therefore lays **three** strokes — a warm rim, the dark
+  tube, then an offset highlight that turns a flat stroke into a cylinder.
+- **~~`--cl-hand` and `.cl-limb`.~~ RETIRED 2026-08-02.** They existed because
+  unoutlined luminous white vanished on parchment. Every cream shape now carries
+  its own dark contour, so the condition is gone. Do not reintroduce them.
+- **The laurel died twice before it read as one.** Leaves pointed radially
+  render as a spiked crown; carried round to the sides (~30°/150°) they render
+  as pigtails. They must lie along the rim's TANGENT and stay inside the top arc,
+  59°–121°. Three big leaves a side, never four small — at 90px an 11-unit leaf
+  is under 8 screen pixels and the ring reads as serration.
+- **The laurel is NOT in the Canva reference** — it is the Greek layer the user
+  asked for separately ("a crown or something like that"). It is the one part of
+  her that is deliberately not matched to the artwork.
+- **Her copy is deliberately short** (user's request, 2026-08-02): the nine
+  static `CL_TIPS` went 1,642 → 1,078 characters and `clepFacts()` 926 → 666,
+  same information. A companion who talks past the second line stops being read.
+- **`.sess-live .grid` restates its columns.** The shared `.g3` asks for a 258px
+  minimum, right for the page and wrong beside a 172px ring: three tiles wrapped
+  to 2 + 1.
+- **Motion, at the user's explicit decision (2026-08-02), is NOT gated on the
+  reading views** — she glitches everywhere, including mid-question. The concern
+  was raised and overruled. `prefers-reduced-motion` still stops every loop, and
+  `clepGlitchLoop()` checks it before scheduling, because CSS alone would leave
+  the JS timer running.
+- **Idle chatter is the one thing held back from `STILL_VIEWS`.** A tip you
+  triggered by arriving is welcome mid-question; an unprompted aside is not.
+- **Tips fire once per view per visit**, tracked in `CLEP.seen` (memory only, so
+  it resets each session). Tapping her always re-explains. That is the line
+  between a companion and a nag.
+
+### Sessions and automatic backup — 2026-08-02
+
+**Every session time is a TIMESTAMP, never "seconds remaining."** A phone that
+sleeps, a lid, a reload — all of them stop a decremented countdown and none of
+them touch a clock recomputed from when the block started. `S.sess.lost`
+accumulates paused time. Questions answered during a session are counted off
+`S.answers[id].at`, not tallied as they go, so the count survives a reload.
+
+**The 1 s tick repaints four nodes via `paintSessionLive()`, never `render()`** —
+a full render every second rebuilds the page under the reader's cursor.
+
+**Import / Export are gone** (user's request, 2026-08-02). They worked; they
+just required remembering to press them. Replaced by `wardround.bak.<profileId>`:
+newest three snapshots, then one per day for seven days, then whatever fits a
+1.5 MB budget, with two surviving the budget regardless. `loadState()` reaches
+for the newest snapshot when the live key is **missing or unparseable** — the
+parse got its own `try` for exactly this, since a corrupt value used to drop the
+app to memory-only. **It deliberately does not second-guess a state that loads
+cleanly**: "your progress looks smaller than it did" is a judgement, and a wrong
+one silently overwrites real work. A thinner-but-valid state is offered in the
+list instead. The rescue download and file-restore live inside the panel.
 
 ---
 
@@ -674,6 +789,34 @@ Four things that each cost a wasted run:
   or the shot catches a keyframe mid-entrance — the first attempt photographed a half-faded gate.
 - **One Chrome at a time, each with its own `--user-data-dir`.** Three concurrent invocations all
   silently produce no file. Do not use `2>$null` on the call either; that also swallows the run.
+  In practice a run still fails roughly one time in three with no output — **just re-issue it with
+  a fresh `--user-data-dir`**; it succeeds on the retry.
+- **Stub `showGate` in the harness** (`showGate=function(){}` at parse time). `boot()` raises the
+  gate only after `loadSDK()` gives up, which offline is its full **8 s** timeout — long after a
+  harness that merely enters a profile and waits. Two shots were of the sign-in screen before this.
+- **`IntersectionObserver` never fires under headless virtual time**, so every `.reveal` element
+  stays at `opacity:0` and the page photographs half-empty. Force `.reveal{opacity:1!important}`
+  in the harness or you will "find" missing content that renders fine for the user.
+- **Build the URL into a variable before passing it to Chrome.** PowerShell mangles a query string
+  written inline and Chrome receives everything after the first `&` as separate arguments.
+
+> **⚠️ PIXEL-SAMPLED CONTRAST: the box and the pixels must come from ONE frame.**
+> Sampling the rendered PNG is the right instrument — it cannot be fooled the way a style-walking
+> auditor can. But three separate things each produced phantom failures at ~1.0–1.5:1, and the
+> signature is always the same: **the reported "worst background pixel" is the text colour itself.**
+> 1. Boxes from a second Chrome run — its own empty `localStorage` changed the modal's height.
+> 2. Sharing one `--user-data-dir` between the two runs — the screenshot run inherited the first
+>    run's state, wrote an extra snapshot row, and the layout moved again.
+> 3. Even `--screenshot` and `--dump-dom` in a single invocation still disagreed for a
+>    **`position:fixed` centred modal**, by about one text line.
+>
+> Measure the **text Range**, not the element box — `getBoundingClientRect()` on the element
+> includes its padding and its 1px border, and the border of a pill is the brightest thing in it.
+> Fixing that alone moved three readings from 3.7–4.2 to 5.8–15.4.
+>
+> For normal-flow content this method is sound and was used to clear the companion and the session
+> panel. **For a centred modal, compute from the tokens instead** — against the *darker* gradient
+> stop — and say that is what you did.
 
 For values rather than pictures, `--dump-dom` with the results written into a `<pre>` works — but
 `Start-Process … -RedirectStandardOutput` is needed, since capturing chrome's stdout into a
