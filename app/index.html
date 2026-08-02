@@ -701,7 +701,10 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
 .gate.hide{display:none}
 
 .gate-amb{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
-.gate-amb .gorb{position:absolute;border-radius:50%;filter:blur(80px);opacity:.5;will-change:transform}
+/* .5 before the film went in behind them. Same lesson as the page's orbs: two
+   ambient systems at full strength cancel, and an 80px blur at half opacity
+   simply fogs the room away. */
+.gate-amb .gorb{position:absolute;border-radius:50%;filter:blur(80px);opacity:.34;will-change:transform}
 /* one orb per module, in the module's own colour — the four colours of the app
    are the first thing you see */
 .gate-amb .g1{width:44vw;height:44vw;left:-10vw;top:-16vh;background:radial-gradient(circle,var(--neuro),transparent 68%);animation:gd1 26s ease-in-out infinite}
@@ -713,6 +716,23 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
 @keyframes gd3{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(6vw,-7vh,0) scale(1.16)}}
 :root[data-theme="light"] .gate-amb .gorb{opacity:.26}
 :root[data-theme="light"] .gate-amb .g4{opacity:.18}
+
+/* THE GATE IS THE ONE PLACE TEXT SITS DIRECTLY ON THE FILM.
+   Everywhere else in the app the type is on an opaque card, which is why the
+   film cost nothing in contrast — measured, twice. Here there is no card, and
+   the ground underneath MOVES: the scholar's pale robe drifts behind the small
+   print, so contrast would rise and fall frame by frame and the worst frame is
+   the one that matters. This pool fixes a constant ground under the centre
+   column while leaving the lamp and the edges of the room fully visible. */
+.gate-amb .film-scrim::after{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(46% 42% at 50% 52%,
+    rgba(7,13,22,.82) 0%, rgba(7,13,22,.64) 45%, transparent 78%);
+}
+:root[data-theme="light"] .gate-amb .film-scrim::after{
+  background:radial-gradient(46% 42% at 50% 52%,
+    rgba(247,244,236,.88) 0%, rgba(247,244,236,.72) 45%, transparent 78%);
+}
 
 /* A faint grid, masked to fade out at the edges. Without it four big blurs on
    a flat ground read as soup; the straight lines give the blur something to be
@@ -1205,7 +1225,11 @@ body{
    slowly pushes in, so a plain loop snapped back to the wide framing every six
    seconds — the one thing a background must never do. Reversed, the push-in
    becomes a slow breath with no seam at either end. */
-.ambient .film{
+/* .gate-amb rides on every one of these rules. The gate is opaque and sits at
+   z-index 200 above .app, so the page's film is unreachable from behind it and
+   it carries its own copy — but it must never drift out of step with this one,
+   so the selectors are shared rather than duplicated. */
+.ambient .film,.gate-amb .film{
   position:absolute;inset:0;width:100%;height:100%;
   object-fit:cover;object-position:50% 42%;
   opacity:.48;
@@ -1216,7 +1240,7 @@ body{
 /* The scrim is the contrast guarantee, not a mood effect. It is heaviest top
    and bottom — behind the top bar and below the fold — and lightest across the
    middle band where the lamp and the figure actually are. */
-.ambient .film-scrim{
+.ambient .film-scrim,.gate-amb .film-scrim{
   position:absolute;inset:0;
   background:
     linear-gradient(180deg,
@@ -1234,14 +1258,15 @@ body{
 
    So the framing moves toward the lamp rather than the figure, and the film
    lifts to carry a crop that is inherently darker. Found by rendering at
-   820x1180; it is invisible in the CSS and invisible on a desktop window. */
+   820x1180; it is invisible in the CSS and invisible on a desktop window.
+
    And it needs a harder push than a wider screen does, because in portrait the
    cards run nearly edge to edge: the only film left showing is the strip above
    the first card and the gaps between sections. What survives has to carry the
    whole effect, so the film runs brighter here than it ever does on a desktop. */
 @media (max-aspect-ratio:5/4){
-  .ambient .film{object-position:18% 45%;opacity:.72}
-  .ambient .film-scrim{
+  .ambient .film,.gate-amb .film{object-position:18% 45%;opacity:.72}
+  .ambient .film-scrim,.gate-amb .film-scrim{
     background:
       linear-gradient(180deg,
         rgba(7,13,22,.78) 0%, rgba(7,13,22,.28) 14%,
@@ -1367,7 +1392,8 @@ button.card:active:not(:disabled){transform:translateY(-1px)}
   /* The film is the most insistent motion on the page, so it goes entirely —
      poster included. Its scrim goes with it, or the page keeps a dark wash
      that is now shading nothing. */
-  .ambient .film,.ambient .film-scrim{display:none!important}
+  .ambient .film,.ambient .film-scrim,
+  .gate-amb .film,.gate-amb .film-scrim{display:none!important}
   .reveal{opacity:1!important;transform:none!important}
   /* the gate is the most animated screen in the app, so it needs the most
      thorough opt-out: orbs, staggered entrances, the halo and the sheen */
@@ -1406,10 +1432,12 @@ button.card:active:not(:disabled){transform:translateY(-1px)}
    floor, low contrast keeps them there, and the warmth that survives reads as
    a faded fresco on the page rather than a window onto a dark room.
    Higher opacity than dark mode, therefore, not lower. */
-:root[data-theme="light"] .ambient .film{
+:root[data-theme="light"] .ambient .film,
+:root[data-theme="light"] .gate-amb .film{
   opacity:.42;filter:saturate(.55) contrast(.68) brightness(1.78);
 }
-:root[data-theme="light"] .ambient .film-scrim{
+:root[data-theme="light"] .ambient .film-scrim,
+:root[data-theme="light"] .gate-amb .film-scrim{
   background:
     linear-gradient(180deg,
       rgba(247,244,236,.72) 0%, rgba(247,244,236,.44) 22%,
@@ -1419,7 +1447,8 @@ button.card:active:not(:disabled){transform:translateY(-1px)}
 /* Light mode's selector outranks the portrait media query, so portrait needs
    saying again here or it silently keeps the wide-screen values. */
 @media (max-aspect-ratio:5/4){
-  :root[data-theme="light"] .ambient .film{opacity:.56}
+  :root[data-theme="light"] .ambient .film,
+  :root[data-theme="light"] .gate-amb .film{opacity:.56}
 }
 
 :root[data-theme="light"] .rail{
@@ -2504,6 +2533,11 @@ const GOOGLE_MARK=`<svg viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54
 /* The orb field and the theme toggle belong to the gate, not to either step. */
 function gateChrome(){
   return `<div class="gate-amb" aria-hidden="true">
+      <video class="film" autoplay muted loop playsinline preload="auto"
+             poster="assets/ambient-library.jpg" tabindex="-1">
+        <source src="assets/ambient-library.mp4" type="video/mp4">
+      </video>
+      <span class="film-scrim"></span>
       <span class="gorb g1"></span><span class="gorb g2"></span>
       <span class="gorb g3"></span><span class="gorb g4"></span>
     </div>
@@ -2515,8 +2549,12 @@ function showGate(step){
   gateStep=step||((fbUser||!cloudEnabled())?'profiles':'signin');
   g.innerHTML=gateChrome()+(gateStep==='signin'?gateSignInStep():gateProfileStep());
   paintThemeBtn();
+  /* innerHTML was just rewritten, so this is a brand-new <video> every time the
+     gate moves between its two steps — autoplay covers the normal case, and
+     this covers a browser that refuses it until asked. */
+  syncFilm();
 }
-function hideGate(){$('gate').classList.add('hide');hideSplash()}
+function hideGate(){$('gate').classList.add('hide');hideSplash();syncFilm()}
 
 /* STEP 1 --------------------------------------------------------------------
    One decision and nothing else. The escape hatch is worded for what it
@@ -2811,14 +2849,22 @@ const STILL_VIEWS=['quiz','mock','review','theory'];
    is not left with an invisible video still decoding. Every failure path is
    silent — play() rejects whenever autoplay is blocked, and that is a
    perfectly acceptable outcome that must never surface as an error. */
-function syncFilm(){
-  const f=document.querySelector('.ambient .film');
+function setFilm(f,on){
   if(!f) return;
-  const still=STILL_VIEWS.includes(view.name)
-    || window.matchMedia('(prefers-reduced-motion:reduce)').matches;
-  if(still){ f.pause(); return }
+  if(!on){ f.pause(); return }
   const p=f.play();
   if(p&&p.catch) p.catch(()=>{});
+}
+function syncFilm(){
+  const reduce=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  setFilm(document.querySelector('.ambient .film'),
+          !reduce && !STILL_VIEWS.includes(view.name));
+  /* The gate's copy. A hidden <video> keeps decoding — display:none does not
+     stop it — so it has to be paused explicitly the moment the gate closes,
+     or it runs for the whole session behind a screen nobody is looking at. */
+  const g=$('gate');
+  setFilm(document.querySelector('.gate-amb .film'),
+          !reduce && !!g && !g.classList.contains('hide'));
 }
 
 function render(){
