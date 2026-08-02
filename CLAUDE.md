@@ -378,12 +378,25 @@ ink), `--sheen` (the top-light wash on cards), `--tint`/`--tint-2` (input and op
 `--stem`/`--prose`/`--strong` (the clinical reading surface), and `--warn` (the 60–79% accuracy
 colour, previously a hardcoded `#e08a00` that failed AA on white).
 
-**Two asymmetries, both load-bearing — do not "fix" them:**
+**~~The rail stays dark in light mode.~~ SUPERSEDED 2026-07-28 — the user asked for the rail to
+follow the theme, and it now does.** It is parchment in light mode. Two traps came with it:
 
-1. **The rail stays dark in light mode.** A dark sidebar against a light page is deliberate, keeps
-   the app recognisable across both themes, and keeps the ~12 hardcoded `#fff` values inside
-   `.rail` / `.railprof` / `.railsync` correct instead of white-on-white.
-2. **`--gold` stays bright in light mode.** It is a *background* in 7 places and a text colour in
+- **The `--rail` token is a decoy.** The cinematic layer re-declares `.rail` with a hardcoded dark
+  `linear-gradient`, so `background-color` computes to `transparent` and `--rail` is never consulted.
+  Overriding the token changes *nothing* — **the gradient is what must be replaced.** Diagnosed by
+  reading the computed background (`rgba(0,0,0,0)`) while `--rail` correctly read `#eae2d3`: the
+  token had applied and done nothing. `backdrop-filter` is also switched off, since an opaque rail
+  cannot show a blur and it is the most expensive property on the page.
+- **The rail was built assuming a near-black ground**, so about a dozen colours inside it are
+  hardcoded `#fff` or lilac rather than tokenised. Flipping the background alone leaves white on
+  parchment. All of them are restated under `:root[data-theme="light"]`, and the muted tone is
+  `#60533e` — `#6b5c45` was tried first and **failed twice**, at 4.37:1 on `--rail-2` and 4.35:1 on
+  the streak gradient. **Measure against the DARKER gradient stop**, not the average: all 12 rail
+  elements now clear AA against `#e6dccb`, lowest 4.43:1.
+
+**One asymmetry remains — do not "fix" it:**
+
+1. **`--gold` stays bright in light mode.** It is a *background* in 7 places and a text colour in
    none. `--ok` and `--bad` **do** darken, because `accColor()` returns those as text. Darkening
    gold would put dark text on a dark badge — the opposite of the intended fix.
 
@@ -508,6 +521,19 @@ reading views; `syncFilm()` calls `pause()` so the decoder actually stops. **CSS
 its scrim entirely (`display:none`, poster included), and the print block's existing `.ambient *` rule
 already covers it. **`play()` is called with a swallowed `.catch()`**: autoplay refusal is an expected
 outcome, not an error, and it degrades to the poster frame.
+
+**The gate runs the film harder than the app** (`.66` dark / `.62` light, `.86` / `.78` portrait) —
+the user asked for it to be more obvious there, and a five-second screen with nothing to read on it
+can carry it. **The gate block must stay AFTER every shared film rule**: it matches their specificity
+exactly and wins on source order alone, so moving it higher silently disables it. What protects the
+type is the centre pool, not the film opacity — the pool went to `.88`/`.72` when the film rose, and
+both were re-measured together (4.78:1 dark, 5.20:1 light across 5 frames of the loop).
+
+**⚠️ When sampling "the background" behind type, hide the type with a STYLESHEET rule.** An inline
+`style.visibility` on `.gstep` is discarded the moment `showGate()` rewrites the gate's innerHTML,
+which put the text back into one frame and made the auditor measure the small print as its own
+background — a false failure of 0.89:1 among five passes. **A single wild outlier in a set of
+otherwise identical readings is a broken probe, not a broken page.**
 
 **Light mode BRIGHTENS the film into a pale print — it does not dim it.** This is the opposite of the
 obvious move and the obvious move is wrong: a night scene at low opacity on parchment is a grey
