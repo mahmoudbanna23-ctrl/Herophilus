@@ -61,14 +61,14 @@ embedded Cinzel + EB Garamond, stroked SVG glyphs instead of emoji, duotoned mod
 Herophilus dashboard panel whose biography comes from the user's image and **carries no page
 citation**. **Rules and traps: `CLAUDE.md` §6. Full history: `ledger.md` §12.**
 
-**Cards, glyphs and icon settled 2026-07-28, all the user's calls** (backups
-`archive\index.pre-cards-2026-07-28.*`): module painting shown WHOLE in a square panel, two per row;
-Neuro is a brain and Pediatrics a teddy; **`Herophilus 3.png`, the navy medallion, is the icon AND
-the app's own mark**, in **five** places that must all move together. **Detail: `CLAUDE.md` §6.**
+**Cards, glyphs and icon settled 2026-07-28** (backups `archive\index.pre-cards-2026-07-28.*`):
+module painting shown WHOLE, two per row; Neuro a brain, Pediatrics a teddy; **`Herophilus 3.png`
+is the icon AND the app's mark**, in **five** places that must move together. **`CLAUDE.md` §6.**
 
 **Ambient film added 2026-07-28** (backup `archive\index.pre-ambient-video-2026-07-28.html`):
-`assets\ambient-library.mp4`, 321 KB, **ping-pong looped**; plays on browse views, **paused by
-`syncFilm()`** on reading views, dropped for reduced motion and print. **AA re-measured, untouched.**
+`assets\ambient-library.mp4`, 321 KB, **ping-pong looped**, paused by `syncFilm()` on reading views,
+dropped for reduced motion and print. **The gate carries its own second copy** — the only place type
+sits on the film (4.89:1 dark / 5.57:1 light). **`CLAUDE.md` §6.**
 
 **Still outstanding:** the **Notion board and PDF schedule still carry the old module colours** —
 the user accepted that divergence knowingly.

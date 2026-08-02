@@ -531,8 +531,34 @@ against `.48` wide, because in portrait the cards span nearly the full width and
 the first card and the gaps between sections still show any film at all. **Render at 820×1180 and
 1180×820 after any change to the film, the scrim, or the page's max width.**
 
-**The film does not appear on the splash or the gate.** Both paint an opaque ground over it. That is
-pre-existing and was not changed; do not "fix" it without deciding the gate should have a new look.
+**The gate carries its OWN copy of the film** (2026-07-28, user's request). `.gate` is opaque and
+sits at z-index 200 above `.app`, so the page's film is unreachable from behind it — making `.gate`
+transparent would reveal the dashboard, not the film. `gateChrome()` therefore emits a second
+`<video class="film">` inside `.gate-amb`, and **every film rule names `.ambient .film,.gate-amb
+.film` rather than being duplicated**, so portrait, light mode and reduced motion cannot drift apart.
+Gate orbs went `.5` → `.34` for the same reason the page's did. `hideGate()` calls `syncFilm()`:
+**a `display:none` video keeps decoding**, so it must be paused explicitly or it runs all session.
+
+**⚠️ The gate is the ONE place type sits directly on the film — and the ground under it MOVES.**
+Everywhere else the text is on an opaque card, which is why the film cost nothing in contrast.
+`.gate-amb .film-scrim::after` lays a radial pool under the centre column to fix a constant ground.
+**Measured across five frames of the loop, with the type hidden so the real ground was sampled:**
+worst pixel in the text band gives **4.89:1 dark** (small print `rgb(156,139,113)`) and **5.57:1
+light** (`rgb(92,75,54)`) — both past AA. The five frames returning an identical worst pixel is the
+pool working, not a broken probe; that was confirmed separately by diffing the lamp side, where
+4,633 of 9,801 sampled pixels change.
+
+**The film does not appear on the splash.** It paints an opaque ground over it. That is pre-existing
+and was left alone — it is a sub-second loading state and a third decoding video would be waste.
+
+**⚠️ A STRAY `*/` SILENTLY DELETED THE ENTIRE PORTRAIT FIX, AND SCREENSHOTS DID NOT CATCH IT.**
+A comment was closed early and four lines of prose left sitting in front of `@media
+(max-aspect-ratio:5/4)`. CSS error recovery swallowed the prelude *and the whole media block*, so the
+portrait rules never applied — while a before/after screenshot comparison still "looked improved",
+because that judgement was made by eye. It was found only by enumerating `document.styleSheets` and
+counting parsed `CSSRule`s: **one** aspect-ratio media rule where there should have been two.
+**After any CSS edit, check `/*` and `*/` balance and confirm the rule you just wrote is live via
+`getComputedStyle`.** A picture cannot tell you a rule parsed.
 
 **The icon is `Design\Images\Icons\Herophilus 3.png`** (user's choice, 2026-07-28): the navy medallion. Its
 circle is cut out of the white square and saved with a transparent surround, so it sits on any
