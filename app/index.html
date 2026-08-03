@@ -2171,10 +2171,33 @@ const BANKS=[
 const MOD_ART={ent:'mod-ent',ophtho:'mod-ophtho',neuropsych:'mod-neuro',pediatrics:'mod-peds'};
 const bankOf=q=>q.bank||'endpoint';
 const bankName=b=>(BANKS.find(x=>x.id===b)||{name:b}).name;
+/* ---- a question can belong to MORE THAN ONE bank ------------------------
+   The commercial banks reprint each other, so the same question genuinely
+   appears in two of them. It used to be stored as TWO entries, one per bank,
+   which meant that ticking both sources showed the learner the same question
+   twice (user, 2026-08-03).
+
+   So a question now carries its origin bank in `bank` and any OTHER bank it
+   also appears in in `alsoIn`. One entry, several banks: it shows up whichever
+   of its banks is ticked, exactly once however many are ticked, and vanishes
+   only when none of them is.
+
+   ⚠️ EVERYTHING THAT TOUCHES A BANK MUST GO THROUGH banksOf(), NOT bankOf().
+   Miss one and the failure is silent and asymmetric — the question filters
+   correctly but is missing from a count, or counts but cannot be filtered to.
+   `bankOf` survives only as "which bank was this transcribed from", which is
+   what the id prefix and the source citation record.
+   ------------------------------------------------------------------------ */
+const banksOf=q=>[bankOf(q)].concat(q.alsoIn||[]);
+/* One pill per bank the question appears in, origin first. */
+const bankPills=q=>banksOf(q).map(id=>
+  `<span class="pill bankpill" style="background:${(BANKS.find(b=>b.id===id)||{hex:'#7a6a55'}).hex}">${esc(bankName(id))}</span>`
+).join('');
 /* Empty or absent filter = show everything. Filtering lives here, in the two
    selectors the whole app already reads through, so chapter rows, counts,
    quizzes, search and progress all agree without any of them knowing about it. */
-const bankOn=q=>{const f=S.banks&&S.banks[q.module];return !f||!f.length||f.indexOf(bankOf(q))>=0};
+const bankOn=q=>{const f=S.banks&&S.banks[q.module];
+  return !f||!f.length||banksOf(q).some(b=>f.indexOf(b)>=0)};
 const qsIn=ch=>QUESTIONS.filter(q=>q.chapter===ch&&bankOn(q));
 const qsInModule=m=>QUESTIONS.filter(q=>q.module===m&&bankOn(q));
 /* Unfiltered, for the filter UI itself — it must count what it would reveal. */
@@ -2183,7 +2206,7 @@ const allQsInModule=m=>QUESTIONS.filter(q=>q.module===m);
    THIS, not over all of BANKS — otherwise a bank with no questions yet counts
    as "still selected", so turning off every visible source leaves the module
    showing nothing while the guard below thinks a source is still on. */
-const banksPresent=mod=>BANKS.map(x=>x.id).filter(id=>QUESTIONS.some(q=>q.module===mod&&bankOf(q)===id));
+const banksPresent=mod=>BANKS.map(x=>x.id).filter(id=>QUESTIONS.some(q=>q.module===mod&&banksOf(q).indexOf(id)>=0));
 function toggleBank(mod,b){
   const present=banksPresent(mod);
   const stored=S.banks[mod]||[];
@@ -3421,15 +3444,19 @@ function vModule(p){
   /* Source filter. Only rendered for banks this module actually has questions
      from, so an empty module does not offer three dead toggles. */
   const allQ=allQsInModule(m.id);
-  const present=BANKS.filter(b=>allQ.some(q=>bankOf(q)===b.id));
+  const present=BANKS.filter(b=>allQ.some(q=>banksOf(q).indexOf(b.id)>=0));
   if(present.length>1){
     const sel=S.banks[m.id]||[];
     const filtering=sel.length>0;
     h+=`<div class="bankbar">
       <span class="bank-lbl">Source</span>
       ${present.map(b=>{
+        /* A shared question counts for EVERY bank it is in, so these chips can
+           sum to more than the module's question count. That is the honest
+           reading — the question really is in both banks — and it is the
+           user's choice (2026-08-03). Do not "fix" it by counting origins. */
         const on=!filtering||sel.indexOf(b.id)>=0;
-        const n=allQ.filter(q=>bankOf(q)===b.id).length;
+        const n=allQ.filter(q=>banksOf(q).indexOf(b.id)>=0).length;
         return `<button class="bankchip ${on?'on':''}" style="--bk:${b.hex}"
           onclick="toggleBank('${m.id}','${b.id}')"
           aria-pressed="${on}">${b.name}<span class="bankn">${n}</span></button>`;
@@ -3550,7 +3577,7 @@ function vCase(p,q,m,prev){
     <button class="tb-btn" style="padding-left:0" onclick="go({name:'module',id:'${q.module}'})">←</button>
     <span class="pill" style="background:${m.hex}">${esc(chapterName(q.chapter))}</span>
     <span class="pill ghost">${ico('stylus',13)} Case</span>
-    <span class="pill bankpill" style="background:${(BANKS.find(b=>b.id===bankOf(q))||{hex:'#7a6a55'}).hex}">${esc(bankName(bankOf(q)))}</span>
+    ${bankPills(q)}
     ${q.source?`<span class="pill ghost">${mdInline(q.source)}</span>`:''}
     <button class="qprog" title="Jump to a question (J)" onclick="openJump()">${Q.i+1} / ${Q.ids.length} &nbsp;&#9776;</button>
    </div>
@@ -3644,7 +3671,7 @@ function vQuiz(p){
    <div class="qhead">
     <button class="tb-btn" style="padding-left:0" onclick="go({name:'module',id:'${q.module}'})">←</button>
     <span class="pill" style="background:${m.hex}">${esc(chapterName(q.chapter))}</span>
-    <span class="pill bankpill" style="background:${(BANKS.find(b=>b.id===bankOf(q))||{hex:'#7a6a55'}).hex}">${esc(bankName(bankOf(q)))}</span>
+    ${bankPills(q)}
     ${q.source?`<span class="pill ghost">${mdInline(q.source)}</span>`:''}
     <button class="qprog" title="Jump to a question (J)" onclick="openJump()">${Q.i+1} / ${Q.ids.length} &nbsp;&#9776;</button>
    </div>

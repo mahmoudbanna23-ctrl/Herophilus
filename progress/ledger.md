@@ -216,10 +216,12 @@ Log one row per batch: bank · pages · date · questions produced · anything u
 
 | 2026-07-26 | ENT endpoint | 398–426 | Ear Questions Q128–Q142 | `entep-ear-91`…`103` | 12 | 15 read, **3 dropped** (Q128 p.398 = `entep-ear-32`, its third reprint; Q129 p.400 = `entep-ear-56`; Q136 p.414 = `entep-ear-55`). No explanation box on any page. Q131/Q132 (pp.404/406) are a **linked pair** — Q132's stem says only "the condition in the previous case", so `entep-ear-93` carries a bracketed summary of Q131 to stand alone, flagged in its `source`. |
 
-> **Superseded — current total is 600 ENT items** (518 MCQs + 82 cases; 579 Endpoint, 21 House,
-> 0 Grade Gain), validated 2026-08-03. The three added since are `entep-mfe1-1…3`, from Model Final
-> Exam 1; **Model Final Exam 2 added none.** The dated snapshot below is kept as the record of what
-> was checked on 2026-07-27 and how.
+> **Superseded — current total is 600 ENT items** (518 MCQs + 82 cases), validated 2026-08-03.
+> Added since: `entep-mfe1-1…3` from Model Final Exam 1 and `entep-mfe3-1` from Exam 3; **Exam 2
+> added none.** One House entry was **folded** on 2026-08-03 when a question gained `alsoIn`, so the
+> array grew by 4 and shrank by 1. **By bank: 580 Endpoint, 21 House, 0 Grade Gain — which sums to
+> 601, not 600, because one question is in two banks and counts in both.** The dated snapshot below
+> is kept as the record of what was checked on 2026-07-27 and how.
 
 **Running total: 597 ENT items** — 515 MCQs (21 `enthd-` + 243 `entep-ear-` + 115 `entep-nose-`
 + 136 `entep-throat-`) + **82 free-text cases** (37 Ear `entep-case-`, 21 Nose `entep-nose-case-`,
@@ -1261,6 +1263,43 @@ prints it without the "on" as well, making the tally 3:1** (pp.260, 947, 2060 ag
 was changed back on 2026-08-03. A lone variant against three agreeing printings is the odd one out,
 not the correction. **The rule that "the better printing wins" needs a companion: count the printings
 first.** Nothing turns on it clinically — the option is a distractor either way.
+
+### One question, many banks — the filter fix, 2026-08-03
+
+**The user reported it as a feature request and it was a defect.** A question printed in two banks was
+held as **two entries**, one per bank, under the old rule that a cross-bank duplicate is never folded
+— the reasoning being that deleting either copy would misreport what that bank contains. That
+reasoning was sound about the *banks* and wrong about the *learner*: **ticking both sources showed
+the same question twice.**
+
+The fix is a question that belongs to several banks rather than two questions that each belong to
+one: `bank` keeps its meaning as the bank the question was transcribed from, and **`alsoIn` lists
+every other bank that prints it.** Both properties now hold at once — each bank's contents are
+reported accurately, and the question renders exactly once under any combination of sources.
+
+**Measured against the real filter, not reasoned about:** all sources → 1; Endpoint + House → 1;
+House only → 1 (module shows 21); Endpoint only → 1 (module shows 580); Grade Gain only → absent.
+Zero duplicate ids visible in the module under any selection, 2 pills on the card, 0 console errors.
+
+- **Only one such question existed to fold** — `entep-throat-103` / the retired `enthd-ear-15`,
+  because House is the only non-Endpoint bank transcribed so far. **This is the cheapest moment this
+  change will ever be made**; five banks are still to come and the ENT ones reprint each other hard.
+- **Per-bank counts now exceed the question count** — ENT reads 580 + 21 across 600. The user chose
+  this explicitly over the tidier alternatives. It is the honest reading: the question really is in
+  both banks.
+- **⚠️ `bankOf()` → `banksOf()` in four places**, and a miss would have been silent and asymmetric —
+  a question that filters correctly but is absent from a count, or counts but cannot be filtered to.
+- **⚠️ Folding an id leaves dangling references.** Three mentions of the retired id survived in other
+  entries' prose, and **backticked ids are read as live references by the cross-reference checker**,
+  so all three had to be rewritten. The convention already existed for retired case ids; it now
+  applies to folded ones.
+- The folded entry kept `ent-dysph` and records `ent-otalgia` — the House entry's chapter, and
+  arguably the better home — as a **secondary**. Moving it is a separate decision, not this one.
+- **⚠️ THERE ARE NOW TWO DIFFERENT "COUNT BY BANK" NUMBERS, and mixing them looks like data loss.**
+  Counting `q.bank` gives **origins** (580 Endpoint, **20** House); counting `banksOf(q)` gives
+  **membership** (580, **21**). The post-batch validation probe counts origins, so after this change
+  it reports House 20 and reads as though a question vanished. **The app must always use membership;
+  a probe reporting origins must say so.** Nothing is missing — 600 entries, 601 memberships.
 
 ### Reading method refined — 2026-08-02
 

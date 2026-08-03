@@ -186,6 +186,38 @@ is House — neither is guessable from its name. Render page 1 before assigning 
 A question with no `bank` is treated as `endpoint` — that is where everything transcribed before the
 field existed came from. **Set `bank` explicitly on every new question anyway.**
 
+### A question can belong to more than one bank — 2026-08-03
+
+**~~A duplicate spanning two banks is NEVER folded.~~ SUPERSEDED at the user's request.** The banks
+reprint each other, so the same question genuinely appears in two of them. It used to be held as
+**two entries**, one per bank, so that neither bank's contents were misreported — and the price was
+that **ticking both sources showed the learner the same question twice.** The user asked for one
+entry that belongs to several banks: visible whichever of its banks is ticked, **exactly once however
+many are ticked**, gone only when none of them is.
+
+```js
+{ id:'entep-throat-103', bank:'endpoint', alsoIn:['house'], … }
+```
+
+`bank` keeps its old meaning — **the bank the question was transcribed from**, which is what the id
+prefix and the source citation record. `alsoIn` lists every *other* bank that prints it.
+
+- **⚠️ EVERYTHING THAT TOUCHES A BANK MUST GO THROUGH `banksOf(q)`, NEVER `bankOf(q)`.** The filter,
+  `banksPresent()`, the chip counts and the pills all do. Miss one and the failure is **silent and
+  asymmetric**: the question filters correctly but is missing from a count, or counts but cannot be
+  filtered to. Grep for `bankOf(` after any work here — the only legitimate uses left are inside
+  `banksOf` itself and anywhere that genuinely means *origin*.
+- **Per-bank counts now sum to MORE than the question count**, because a shared question is really
+  one of Endpoint's *and* one of House's. ENT reads 580 + 21 across 600 questions. **That is correct
+  and deliberate (user's choice) — do not "fix" it by counting origins.**
+- **The card shows one pill per bank**, origin first, via `bankPills(q)`.
+- **When the sweep finds a cross-bank match, ADD THE BANK — do not add an entry.** Keep the printing
+  with the fuller explanation, fold the other's citation into its `source`, and note the loser's
+  chapter as a secondary if it differed.
+- **A folded id must lose its backticks everywhere it is still mentioned.** Retired ids written as
+  `` `enthd-ear-15` `` are read as live references by the cross-reference checker; three such
+  mentions had to be rewritten when this one was folded.
+
 ### Question order
 
 `data\questions.js` **shuffles `QUESTIONS` by hashing each id**, so questions are never practised in

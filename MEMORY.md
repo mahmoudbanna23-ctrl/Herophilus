@@ -1,11 +1,10 @@
 # Herophilus — Memory
 
-Running record for the Herophilus project. ISO dates only; anything unverified is marked as such
-rather than filled in. **This file holds only what is needed to pick the work up cold, and stays
-under 200 lines** — method and rules live in `CLAUDE.md`, detail and history in
-`progress\ledger.md`. **`CLAUDE.md` imports this file, so both are always in context: repeating a
-rule from `CLAUDE.md` here buys nothing and costs the budget.** Organised around *resuming the work*,
-not *when things happened* (2026-07-28; previous version in `archive\`).
+Running record for the Herophilus project. ISO dates only; anything unverified is marked as such.
+**This file holds only what is needed to pick the work up cold, and stays under 200 lines** — method
+and rules live in `CLAUDE.md`, detail and history in `progress\ledger.md`. **`CLAUDE.md` imports this
+file, so both are always in context: repeating a rule from `CLAUDE.md` here buys nothing and costs
+the budget.** Organised around *resuming the work*, not *when things happened* (2026-07-28).
 
 ## Resume here
 
@@ -24,34 +23,33 @@ and Q71–Q73 (**both wrong**: Q29/Q30 and Q44/Q45). Both errors were made and c
 A sample shows the option count and *that* parity is unstable; nothing else.
 
 **⚠️ EVERY PARITY SHIFT IS A SPILL PAGE** — a box too tall for its tile, given a page of its own; all
-four in the model exams (pp.1935, 1966, 2038, 2171), and Exam 3 shifts at **Q1**. **Check every
-tile.**
+four in the model exams (pp.1935, 1966, 2038, 2171), and Exam 3 shifts at **Q1**. **Check every tile.**
 
-**Method: two passes.** Read at `-CropTop 0.32` (18 per sheet — stem, options, highlight; box
-clipped), sweep, then re-render **only the survivors** at `0.45` for their boxes. `ledger.md` §7.
+**Method: two passes.** Read at `-CropTop 0.32` (18/sheet — stem, options, highlight; box clipped),
+sweep, then re-render **only the survivors** at `0.45` for their boxes. `ledger.md` §7.
 
 After Exams 4–7: Recently Edited (~10 answered pages), Exam Night Review (~120), then the six other
-banks. **~400 answered pages remain in `ENT endpoint.pdf`**, but on three exams' evidence the *new*
-question count is far below that. **Order of work:** ENT → Pediatrics → Ophthalmology →
-Neuropsychiatry — all questions first across all four modules, then theory. **The full ENT review
-below is owed before Pediatrics begins.**
+banks. **~400 answered pages remain**, but on three exams' evidence the *new* question count is far
+below that. **Order of work:** ENT → Pediatrics → Ophthalmology → Neuropsychiatry — all questions
+first across all four modules, then theory. **The ENT review below is owed before Pediatrics.**
 
 ## What exists
 
 **104 chapters** — ENT 30, Ophthalmology 26, Neuropsychiatry 27, Pediatrics 21. **All content is ENT
 so far**; the other three hold **0** questions and **no module has any theory written**.
-`QUESTIONS.length` is **601** — 519 MCQs + 82 cases in one array. By bank: **580 Endpoint, 21 House,
-0 Grade Gain**. **All 30 ENT chapters hold ≥1 question.**
+`QUESTIONS.length` is **600** — 518 MCQs + 82 cases in one array, **all 30 ENT chapters holding ≥1**.
+By bank: **580 Endpoint, 21 House, 0 Grade Gain** — summing to 601 because **one question is in two
+banks** and counts in both.
 
-**Fully validated in a real `file://` boot, 2026-08-03** — all 601 present, 0 bad module or chapter
+**Fully validated in a real `file://` boot, 2026-08-03** — all 600 present, 0 bad module or chapter
 refs, 0 duplicate ids, every `answer` index in range, nothing missing a `source`, `explanation` or
 `objective`, every `THEORY` `qs` id resolving, 0 console errors. Re-run after every batch
 (`CLAUDE.md` §7). **⚠️ ANY SYNTAX SLIP IN A DATA FILE FAILS SILENTLY AND LOOKS LIKE A CONTENT BUG** —
 the app boots, throws nothing visible, and reports **82** questions (cases only), because `Q_ENT`
-never parsed and the error listener is registered by a later script. Hit twice on 2026-08-03: `\\'`
-where `\'` was meant, and **a missing comma after what used to be the last array element**.
-**⚠️ `file://` reports only "Script error." at line 0** — for a real line number, inline the data file
-into a `<script>` block in the scratchpad and load that.
+never parsed and the listener is registered by a later script. Hit twice on 2026-08-03: `\\'` for
+`\'`, and **a missing comma after what used to be the last array element**. **⚠️ `file://` reports
+only "Script error." at line 0** — for a real line number, inline the data file into a `<script>`
+block in the scratchpad and load that.
 
 **Lecture text cache — complete 2026-07-26.** 146 files in `content\<subject>\lectures\*.txt`,
 1.78 MB; 131 of 140 lecture PDFs and 15 of 16 PowerPoints yielded text. **Check this cache before
@@ -61,13 +59,13 @@ break it.
 
 ## The app
 
-**Boots clean from `file://`** — zero console errors, 4 modules, 104 chapters, 601 questions, home
+**Boots clean from `file://`** — zero console errors, 4 modules, 104 chapters, 600 questions, home
 rendering all 4 module cards, 9 Clepsydra poses, **761 CSS rules with all 3 `max-aspect-ratio:5/4`
 blocks intact**, re-verified 2026-08-03. (761 counts rules **recursively** — the only kind that can
-see a swallowed media block; the older 708/710 figures were top-level and are not comparable.)
-`app\index.html` 272 KB, `fonts.js` 128 KB, `app\assets\` 2,344 KB (`clep\` 1,082 KB of it); bundle
-**4.77 MB**. **Fully WCAG-AA clean** — re-audited 2026-07-28: 1,294 text elements, 5 views × 2
-themes, **zero real failures**. **Re-audit after any colour change**; a palette move inverted one fix.
+see a swallowed media block; the older 708/710 figures were top-level, not comparable.)
+`app\index.html` 272 KB, `fonts.js` 128 KB, `app\assets\` 2,344 KB (`clep\` 1,082 KB); bundle **4.77
+MB**. **Fully WCAG-AA clean** — re-audited 2026-07-28, 1,294 text elements, 5 views × 2 themes, zero
+real failures. **Re-audit after any colour change**; a palette move inverted one fix.
 
 **What it is now:** Greek light/dark design from the user's own artwork (2026-07-28), an ambient film,
 and **the Clepsydra** — a hologram companion carrying the study-session timer (2026-08-02).
@@ -87,8 +85,8 @@ accepted that divergence knowingly.
 
 **`ENT endpoint.pdf`: the three question sections and Model Final Exams 1–3 are COMPLETE**, every
 boundary verified by render — Ear pp.143–760 (243 entries), Nose pp.891–1185 (136), Throat
-pp.1350–1720 (160), Exam 1 pp.1721–1875 (3), Exam 2 pp.1876–2034 (**0**), Exam 3 pp.2035–2189 (1).
-Detail: `ledger.md` §"Transcribed ranges".
+pp.1350–1720 (160), Exam 1 pp.1721–1875 (3), Exam 2 pp.1876–2034 (**0**), Exam 3 pp.2035–2189 (1);
+one House entry was folded away 2026-08-03, so the array holds 600. `ledger.md` §"Transcribed ranges".
 
 **All three SECTIONS share one shape:** MCQs printed **twice**, then a title page, then a case
 section printed **once**, two per page. **Not one of the 84 cases carries a printed explanation.**
@@ -96,18 +94,18 @@ section printed **once**, two per page. **Not one of the 84 cases carries a prin
 four times across Ear and Throat, twice inside Exam 2 and twice inside Exam 3: **never assume it.**
 
 **Box presence is a property of the page, not the section.** The Throat section ran **103 consecutive
-answered pages with none** (pp.1537–1720), so every entry from `entep-throat-70` on is authored;
-Exam 1 then printed a box on **all 77**. **From Exam 2's Q62 the box style changes** — short, red
-keyword lead-in, commentary rather than textbook.
+answered pages with none** (pp.1537–1720), so every entry from `entep-throat-70` on is authored; Exam
+1 then printed a box on **all 77**. **From Exam 2's Q62 the box style changes** — short, red keyword
+lead-in, commentary rather than textbook.
 
-**⚠️ For CASES the ANSWER decides fold-vs-variant, not the stem** — a case has no options to compare,
-so it is the only test available. Worked example and precedent: `ledger.md` §"Fold or variant".
+**⚠️ For CASES the ANSWER decides fold-vs-variant, not the stem** — a case has no options to compare.
+Worked example and precedent: `ledger.md` §"Fold or variant".
 
 ## Three rules that change what you do first
 
-`progress\ledger.md` §7 holds the rest — corrupt explanation boxes, the recycling pattern, unreliable
-numbering, deliberate repetition, linked sets, layout and key defects, and the bank's own wrong
-answers. **Read §7 before opening `ENT endpoint.pdf`.** These three govern the batch:
+`progress\ledger.md` §7 holds the rest — corrupt boxes, the recycling pattern, unreliable numbering,
+linked sets, layout and key defects, the bank's own wrong answers. **Read §7 before opening
+`ENT endpoint.pdf`.** These three govern the batch:
 
 - **ASSUME NOTHING FROM PAGE TO PAGE.** Parity, explanation boxes and reprint rate are all
   unpredictable. **Check every tile for a highlight before transcribing it.**
@@ -135,10 +133,12 @@ recurring ones are the nasopharynx, the eponymous signs, Vincent's angina and le
 `endpoint` / `house` / `gradegain`; map and cover-identification rule in `CLAUDE.md` §4.
 **Still missing: House for Neuropsychiatry, Grade Gain for Pediatrics** — not yet supplied.
 
-**⚠️ THE BANKS OVERLAP — and a duplicate spanning two banks is NEVER folded.** `bank` is content the
-learner filters on, so deleting either copy would misreport what that bank contains. **The one
-standing exception to the delete-duplicates rule** (precedent: `enthd-ear-15` / `entep-throat-103`);
-expect many more as the other banks are transcribed.
+**⚠️ THE BANKS OVERLAP — one entry, MANY banks (2026-08-03, user's request).** `bank` is the bank a
+question was transcribed from; **`alsoIn:['house']` lists every other bank that prints it.** It shows
+under any of its banks, **once however many are ticked**; the old two-entry rule showed a duplicate
+whenever both sources were on. **When the sweep finds a cross-bank match, add the bank, never an
+entry.** Rules and the `banksOf()` trap: `CLAUDE.md` §4. One such question so far
+(`entep-throat-103`); expect many more.
 
 ## Owed in the end-of-ENT review
 
@@ -146,9 +146,9 @@ expect many more as the other banks are transcribed.
 
 1. **⚠️ Sweep the WHOLE file for the "Ask ChatGPT" marker** — scope widened 2026-08-03; 5 known
    (pp.1011, 1015, 1489, **2146**, **2168**), each found by eye, never by a search.
-2. **67 entries record no provenance either way** — 46 inside `entep-ear-1`…`68` and all 21 House.
+2. **67 entries record no provenance either way** — 46 inside `entep-ear-1`…`68`, all 21 House.
    Almost certainly authored, **not verified**. **⚠️ The Model Final Exams may close much of this for
-   free**: Exam 1 boxes `entep-ear-1…25`, `nose-1…24`, `throat-1…24`, and Exams 2–3 box
+   free**: Exam 1 boxes `entep-ear-1…25`, `nose-1…24`, `throat-1…24`, Exams 2–3 box
    `entep-ear-26…53` — exactly the early no-provenance entries. Check before re-rendering pp.144–342.
 3. **Re-run the duplicate check per module as it completes** — all **four** variants of it.
 4. **⚠️ The nasopharynx — the highest-value single gap in ENT.** Up to **27** entries rest on outside
@@ -166,8 +166,8 @@ expect many more as the other banks are transcribed.
 
 ## Environment
 
-**Full details in `progress\ledger.md` §13** — Poppler and its PATH trap, the browsers, the
-PowerShell image pipeline, what is absent, two native-exe gotchas. What changes what you do first:
+**Full details in `progress\ledger.md` §13** — Poppler's PATH trap, the browsers, the PowerShell
+image pipeline, what is absent, two native-exe gotchas. What changes what you do first:
 
 - **Poppler is installed** and handles the 332 MB file; **`pdftotext` returns 0 characters on every
   book and question bank**, so scans must be rendered to PNG and read as images. **The read tool
@@ -184,7 +184,7 @@ Source inventory — ledger §9: 140 lecture PDFs, 16 PowerPoints, 7 books (1,63
 ## Deadline
 
 **Semester 8 exam period: approximately early September 2026** — the user's own estimate, not a
-published date, consistent with the schedule ending 2026-08-31. **Do not rebuild the schedule on it.**
+published date; consistent with the schedule ending 2026-08-31. **Do not rebuild the schedule on it.**
 
 ## Open items
 
@@ -196,5 +196,5 @@ published date, consistent with the schedule ending 2026-08-31. **Do not rebuild
   **three** contrast auditors produced false failures (`CLAUDE.md` §7), each caught by re-measuring.
 - **Cleanup awaiting approval** — `Opthalmo\…\drive-download-…-001.zip` (173 MB) duplicates all 29
   loose Ophthalmology lecture files; two Pediatrics PPT files are broken stubs (`  Myocardial
-  diseases.pdf` 134 B, `  stenotic lesions.pdf` 120 B). All inside protected `Semester 8\` —
-  **nothing deleted without a yes.** Also `files.zip`, the redundant original.
+  diseases.pdf` 134 B, `  stenotic lesions.pdf` 120 B), all inside protected `Semester 8\`. Also
+  `files.zip`. **Nothing deleted without a yes.**
