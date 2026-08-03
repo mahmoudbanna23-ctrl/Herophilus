@@ -1209,6 +1209,59 @@ to commentary than to the textbook extracts earlier in the file. **No "Ask ChatG
 any of them** — checked at full height on pp.2002, 2012, 2018, 2026. Nothing was taken from these
 boxes, since every question was already held, but the style change is a flag for review item 1.
 
+### MODEL FINAL EXAM 3 IS COMPLETE — 76 questions, 1 new — 2026-08-03
+
+Read end to end, pp.2035–2189, title page p.2035. One question survived all four checks:
+`entep-mfe3-1` (Q29, tensor tympani insertion). Running tally across the three exams: **231
+printings read, 4 new questions.**
+
+**⚠️ NUMBERED 1–77 BUT THERE IS NO Q20.** Verified by render, not inferred: p.2073 is Q19
+unanswered, p.2074 Q19 answered, p.2075 Q21 unanswered, p.2076 Q21 answered. The parity is
+undisturbed — the source just skips the number. Fresh evidence for the standing rule that the
+printed numbers do not count the questions, and the reason the count here is 76 and not 77.
+
+**Parity shifts twice, both on spill pages, and the first lands on Q1** — no earlier exam did that:
+
+| Range | Answered | |
+|---|---|---|
+| Q1 | **ODD** p.2037 | |
+| — | p.2038 | spill: rest of Q1's Ludwig-angina box |
+| Q2–Q68 | **EVEN** pp.2040–2170 | |
+| — | p.2171 | spill: rest of Q68's smell-disorders box |
+| Q69–Q77 | **ODD** pp.2173–2189 | |
+
+Three exams, three different parity patterns. The spill page is now confirmed as *the* mechanism —
+four of the four shifts seen inside the model exams are caused by one.
+
+#### ⚠️ THE "Ask ChatGPT" MARKER IS NOT CONFINED TO THE EARLY FILE
+
+Found at **p.2146 (Q56)** — "…surgery that required intubation.**Ask ChatGPT**" — and **p.2168
+(Q67)** — "…or orbital extension.**Ask ChatGPT**". Only three instances were known before, all below
+p.1011, and §11 item 1 was written on the assumption that the contamination sat in the early file.
+**It does not.** Neither question is new, so nothing was taken from either box, but the sweep owed in
+the end-of-ENT review must now cover the *whole* file rather than only pp.1–1011.
+
+#### Check D worked — and its threshold is wrong
+
+The new token-overlap check caught **Q11 → `entep-ear-38`** on its first outing, which all three
+older checks missed. It then **missed Q13 → `entep-ear-31`**, where the only difference is
+"C2 **&** C3 nerves" against "C2 **and** C3 nerves". On a four-token answer one word is 0.75 overlap
+— just under the 0.8 gate.
+
+**A ratio is the wrong shape for short answers.** The same one-word difference scores 0.75 on a
+four-token key and 0.95 on a twenty-token one, so no single ratio can serve both. **Compare the
+NUMBER of differing tokens instead — flag anything differing by ≤1 — which catches the short and
+long cases alike.** Change this before the next exam.
+
+#### A correction reversed, and why
+
+`entep-ear-46` option A was changed on 2026-08-02 from "usually increases movement" to "usually
+increases **on** movement", on the reasoning that p.1945 was the better printing. **Exam 3 p.2060
+prints it without the "on" as well, making the tally 3:1** (pp.260, 947, 2060 against p.1945), so it
+was changed back on 2026-08-03. A lone variant against three agreeing printings is the odd one out,
+not the correction. **The rule that "the better printing wins" needs a companion: count the printings
+first.** Nothing turns on it clinically — the option is a distractor either way.
+
 ### Reading method refined — 2026-08-02
 
 **Two passes beat one.** Read the batch at `-CropTop 0.32`, which fits **18 pages** on a sheet and
@@ -1521,10 +1574,14 @@ mistakes rhyme: **generalising from one sample, and recording a number without r
 MEMORY.md keeps a one-line pointer per item so nothing is forgotten at the moment it matters; the
 reasoning and the ids live here. **Work this list before Pediatrics begins.**
 
-**1. Sweep every explanation box read before p.1011 for the "Ask ChatGPT" marker.** Three are known
-(pp.1011, 1015, 1489) and all three were found only because a box was read closely. Everything
-before p.1011 was transcribed before the marker was known to exist, so the sweep has never been run
-over it.
+**1. ⚠️ SWEEP THE WHOLE FILE for the "Ask ChatGPT" marker — SCOPE WIDENED 2026-08-03.** This item
+used to read "before p.1011", on the belief that the contamination sat in the early file. **Model
+Final Exam 3 broke that**: the marker is at **p.2146** and **p.2168**, roughly 1,100 pages past the
+last previously known instance. Five are now known — pp.1011, 1015, 1489, 2146, 2168 — and **every
+one was found only because a box happened to be read closely**, never by a search. Neither of the
+two new ones sits on a question that was transcribed, so nothing held is affected by them; the point
+is that the marker's distribution is unknown across the whole 3,075 pages, not that it is confined
+anywhere. Sweep everything already read, and check each box on sight from here on.
 
 **2. Settle the 67 entries with no provenance marker either way** — neither "source prints its own
 box" nor `Written for this bank`. **46 inside `entep-ear-1`...`68` (pp.144-342 only)**, written

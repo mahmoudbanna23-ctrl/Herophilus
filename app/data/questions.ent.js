@@ -549,11 +549,11 @@ var Q_ENT = [
 
 { id:'entep-ear-46', bank:'endpoint', module:'ent', chapter:'ent-vertigo',
   stem:'Which of the following statements best defines the term **"Vertigo"**?',
-  options:['Sensation of imbalance that usually increases on movement.','Sensation of spinning: as if the patient is spinning, or the world spins around the patient.','Sensation of anorexia coupled with fainting.','Momentary loss of consciousness and light-headedness.'],
+  options:['Sensation of imbalance that usually increases movement.','Sensation of spinning: as if the patient is spinning, or the world spins around the patient.','Sensation of anorexia coupled with fainting.','Momentary loss of consciousness and light-headedness.'],
   answer:1,
   explanation:'**Difference between vertigo, dizziness, and syncope:**\n\n**Vertigo** is the descriptive term for spinning sensation and is caused by vestibular diseases (inner ear diseases).\n\n**Dizziness** is the descriptive term for unsteadiness or dysequilibrium and is related to a pathology in the sensory organs (eyes/ears), CNS, or CVS.\n\n**Syncope** is the descriptive term for momentary loss of consciousness and is mostly related to a pathology in CVS. Also, it may result from CNS involvement.',
   objective:'Vertigo is specifically an illusion of rotation — of the patient or of the surroundings — not imbalance or presyncope.',
-  source:'ENT AlexMed Endpoints, Ear Questions, p.260; reprinted Nose Questions p.947 (Q30), identical stem and options. **The p.947 printing carries the source\'s own explanation box and the p.260 printing did not** — the box is transcribed above verbatim and replaces the explanation previously written here, per the rule that the better printing wins. **Printed a third time in Model Final Exam 2, p.1945 (Q34)**, with the same box. Option A is transcribed from that third printing: pp.260 and 947 both print "usually increases movement", which is a grammatical slip in the source, and p.1945 prints "usually increases **on** movement". The better printing wins again — and the missing word is why the stem+options check did not match it.' },
+  source:'ENT AlexMed Endpoints, Ear Questions, p.260; reprinted Nose Questions p.947 (Q30), identical stem and options. **The p.947 printing carries the source\'s own explanation box and the p.260 printing did not** — the box is transcribed above verbatim and replaces the explanation previously written here, per the rule that the better printing wins. **Printed twice more — Model Final Exam 2 p.1945 (Q34) and Model Final Exam 3 p.2060 (Q12)** — both with the same box.\n\n⚠️ **Option A: the source is inconsistent, and the majority reading is the ungrammatical one.** Three printings (pp.260, 947, 2060) read "usually increases movement"; one (p.1945) reads "usually increases **on** movement". Option A was briefly changed to the p.1945 wording on the reasoning that the better printing wins, then **changed back on 2026-08-03 once Exam 3 made the tally 3:1** — a lone variant against three agreeing printings is the odd one out, not the corrected one. The dominant text is transcribed; the p.1945 variant is recorded here. It is a distractor either way, so nothing turns on it clinically. **What does matter: that one word is why the stem+options check missed this reprint twice.**' },
 
 { id:'entep-ear-47', bank:'endpoint', module:'ent', chapter:'ent-aom',
   stem:'Which of the following is the most common causative organism of **acute otitis media (AOM)**?',
@@ -4638,7 +4638,7 @@ var Q_ENT = [
   answer:0,
   explanation:'Adenoid enlargement obstructs the nasopharyngeal airway, causing mouth breathing in children. Allergic rhinitis or septal deviation are less common causes at this age.',
   objective:'In a child, mouth breathing is adenoid hypertrophy until proved otherwise — the adenoid is at its largest around this age.',
-  source:'ENT AlexMed Endpoints, Model Final Exam 1, p.1855 (Q67) — the source prints this explanation box. Not a duplicate of `entep-ear-203`, which asks the adenoid\'s role in recurrent bilateral acute otitis media.' }
+  source:'ENT AlexMed Endpoints, Model Final Exam 1, p.1855 (Q67) — the source prints this explanation box. Not a duplicate of `entep-ear-203`, which asks the adenoid\'s role in recurrent bilateral acute otitis media.' },
 
 /* ===== MODEL FINAL EXAM 2 — pp.1876–2034 ==================================
    Read end to end 2026-08-03. NOTHING WAS ADDED FROM IT: all 78 printings were
@@ -4694,5 +4694,51 @@ var Q_ENT = [
    — every question was already held — but the style change is a flag for the
    provenance sweep owed in the end-of-ENT review.
    ========================================================================= */
+
+/* ===== MODEL FINAL EXAM 3 — pp.2035–2189 ==================================
+   Read end to end 2026-08-03. Title page p.2035. **76 questions, 1 new.**
+
+   ⚠️ NUMBERED 1–77 BUT THERE IS NO Q20. Verified by render, not inferred:
+   p.2073 is Q19 unanswered, p.2074 Q19 answered, p.2075 Q21 unanswered,
+   p.2076 Q21 answered. The parity is undisturbed — the source simply skips the
+   number. Fresh evidence for the standing rule that the printed numbers do not
+   count the questions.
+
+   ⚠️ PARITY SHIFTS TWICE, both on spill pages, and the first one lands on Q1:
+     Q1       answered ODD  p.2037
+     p.2038   spill: the rest of Q1's Ludwig-angina box
+     Q2–Q68   answered EVEN pp.2040–2170
+     p.2171   spill: the rest of Q68's smell-disorders box
+     Q69–Q77  answered ODD  pp.2173–2189
+   Three exams, three different parity patterns; Exam 3 shifts at the very
+   first question, which no earlier exam did.
+
+   ⚠️ THE "Ask ChatGPT" MARKER IS HERE — pp.2146 (Q56) and 2168 (Q67), where a
+   box ends "...that required intubation.Ask ChatGPT" and "...or orbital
+   extension.Ask ChatGPT". Only three instances were known before, all below
+   p.1011, and the end-of-ENT review item was written on the assumption that
+   the contamination was confined to the early file. It is not. See ledger §7.
+
+   Only ONE question survived all four duplicate checks: Q29 (`entep-mfe3-1`
+   below). Q13, Q19, Q22 and Q58 came back "clean" and are NOT new — each is a
+   documented variant of a held question with its option set rewritten
+   (`entep-ear-31`, `-21`, `-22`, `-20` respectively).
+
+   ⚠️ CHECK D WORKED, AND ITS THRESHOLD IS STILL TOO TIGHT. The new token-overlap
+   check caught Q11 → `entep-ear-38`, which all three older checks missed. But it
+   missed Q13 → `entep-ear-31`, where the only difference is "C2 **&** C3 nerves"
+   against "C2 **and** C3 nerves": on a four-token answer one word is 0.75
+   overlap, just under the 0.8 gate. **A ratio is the wrong shape for short
+   answers — compare the NUMBER of differing tokens instead (≤1 differing token),
+   which catches the short and long cases alike.**
+   ========================================================================= */
+
+{ id:'entep-mfe3-1', bank:'endpoint', module:'ent', chapter:'ent-earanat',
+  stem:'The **tensor tympani** muscle inserts into which of the following structures?',
+  options:['Malleus','Incus','Stapes','Tympanic annulus'],
+  answer:0,
+  explanation:'The tensor tympani muscle originates from the cartilaginous portion of the auditory tube and inserts onto the handle of the malleus.',
+  objective:'Tensor tympani inserts on the handle of the malleus; stapedius inserts on the neck of the stapes.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 3, p.2092 (Q29) — the source prints this explanation box. Not a duplicate of `enthd-ear-1` (Dr. HOUSE in ENT p.23), which asks which middle-ear **wall** harbours the tensor tympani rather than where it inserts. Different question, and a different bank besides — cross-reference, not variant.' }
 
 ];
