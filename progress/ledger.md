@@ -216,12 +216,12 @@ Log one row per batch: bank · pages · date · questions produced · anything u
 
 | 2026-07-26 | ENT endpoint | 398–426 | Ear Questions Q128–Q142 | `entep-ear-91`…`103` | 12 | 15 read, **3 dropped** (Q128 p.398 = `entep-ear-32`, its third reprint; Q129 p.400 = `entep-ear-56`; Q136 p.414 = `entep-ear-55`). No explanation box on any page. Q131/Q132 (pp.404/406) are a **linked pair** — Q132's stem says only "the condition in the previous case", so `entep-ear-93` carries a bracketed summary of Q131 to stand alone, flagged in its `source`. |
 
-> **Superseded — current total is 632 ENT items** (550 MCQs + 82 cases), validated 2026-08-03 in a
+> **Superseded — current total is 678 ENT items** (596 MCQs + 82 cases), validated 2026-08-03 in a
 > real `file://` boot. Added from the model exams: `entep-mfe1-1…3` (Exam 1), `entep-mfe3-1`
-> (Exam 3), `entep-mfe4-1…32` (Exam 4); **Exam 2 added none.** One House entry was **folded** on
-> 2026-08-03 when a question gained `alsoIn`. **By bank: 612 Endpoint, 21 House, 0 Grade Gain —
-> which sums to 633, not 632, because one question is in two banks and counts in both.** The dated
-> snapshot below is kept as the record of what was checked on 2026-07-27 and how.
+> (Exam 3), `entep-mfe4-1…32` (Exam 4), `entep-mfe5-1…46` (Exam 5); **Exam 2 added none.** One House
+> entry was **folded** on 2026-08-03 when a question gained `alsoIn`. **By bank: 658 Endpoint, 21
+> House, 0 Grade Gain — which sums to 679, not 678, because one question is in two banks and counts
+> in both.** The dated snapshot below is kept as the record of what was checked on 2026-07-27 and how.
 
 **Running total: 597 ENT items** — 515 MCQs (21 `enthd-` + 243 `entep-ear-` + 115 `entep-nose-`
 + 136 `entep-throat-`) + **82 free-text cases** (37 Ear `entep-case-`, 21 Nose `entep-nose-case-`,
@@ -955,17 +955,19 @@ the scratchpad and the images are read instead of the PDF.
 
 **THE WHOLE THROAT SECTION IS DONE — pp.1350–1720, MCQs and cases both, 2026-07-27.**
 
-**Next: `ENT endpoint.pdf` p.1721 onward — the 7 Model Final Exams (pp.1721–2816).** This is the
-largest single block left in the file, **~548 answered pages**. Two things to establish at the
-boundary **before** committing to a batch size, because nothing about this block has been verified:
+**Model Final Exams 1–5 are DONE — pp.1721–2504, 387 printings read, 82 new questions.**
 
-1. **Is each exam printed twice, unanswered then answered, like the question sections?** Assume
-   nothing — render p.1721 and the few pages after it and look for the highlight.
-2. **Does an exam end with a free-text case set?** All three question sections did. Check.
+**Next: `ENT endpoint.pdf` p.2505 — Model Final Exam 6 (pp.2505–2659), then Exam 7 (pp.2660–2816).**
+Both structural questions are settled for this block: each exam **is** printed twice, unanswered then
+answered, and **none ends with a case set**. What is *not* settled and must be measured per exam:
 
-**Run the whole-file duplicate sweep before writing anything.** A model exam is the most likely place
-in the entire file to recycle questions already held — it has now been shown to recycle across
-section boundaries five times, and these exams draw on all three sections at once.
+1. **The reprint rate.** Exams 1–3 gave 3, 0, 1 new; Exams 4 and 5 gave 32 and 46. **Budget 6 and 7
+   as unknown** — the compilation finding is retired.
+2. **Parity, and where it shifts.** Three different causes are now known and one of them is invisible
+   on the tile (§7). Never sample to find a shift.
+
+**Run the five-stage duplicate sweep before writing anything, and treat its clean column as a
+shortlist.** Five of the clean set were reprints in Exam 4 and five again in Exam 5.
 
 After that: Recently Edited (pp.2817–2835), Exam Night Review (pp.2835–3074).
 
@@ -1232,8 +1234,11 @@ printed numbers do not count the questions, and the reason the count here is 76 
 | — | p.2171 | spill: rest of Q68's smell-disorders box |
 | Q69–Q77 | **ODD** pp.2173–2189 | |
 
-Three exams, three different parity patterns. The spill page is now confirmed as *the* mechanism —
-four of the four shifts seen inside the model exams are caused by one.
+Three exams, three different parity patterns. ~~The spill page is now confirmed as *the* mechanism —
+four of the four shifts seen inside the model exams are caused by one.~~ **RETIRED 2026-08-03 by
+Exam 5**, whose shift is a stray *reprinted answered page* (p.2436), not a spill. Four of five, not
+five of five — and the fifth is the one that mattered, because a spill page can be recognised on
+sight while a duplicated answered page cannot. See the Exam 5 entry below.
 
 #### ⚠️ THE "Ask ChatGPT" MARKER IS NOT CONFINED TO THE EARLY FILE
 
@@ -1368,6 +1373,102 @@ The exception in an otherwise fully boxed exam, so it is easy to miss. All three
 - **p.2326 (Q68)** keys submandibular *gland* enlargement as not a sign of tonsil chronicity, while
   **`entep-throat-77`** answers the same question by keying congestion of the anterior pillar — a
   key already recorded as disputed. Not duplicates; they should be read together.
+
+### ⚠️ MODEL FINAL EXAM 5 — 79 printings, **46 NEW**, and the parity rule breaks — 2026-08-03
+
+Read end to end, pp.2345–2504, title page p.2345, Exam 6's title page p.2505. **79 printings,
+numbered 1–77 with 45 and 55 EACH USED TWICE** for two entirely different questions — so the printed
+numbers undercount by two, in the opposite direction to Exam 3's missing Q20. No case section.
+
+**46 of the 79 are new.** With Exam 4's 32 that is 78 new questions from two consecutive exams,
+against 4 from the three before them. Running tally across five exams: **387 printings read, 82 new.**
+
+| | Exam 1 | Exam 2 | Exam 3 | Exam 4 | **Exam 5** |
+|---|---|---|---|---|---|
+| Printings | 77 | 78 | 76 | 77 | **79** |
+| New | 3 | 0 | 1 | 32 | **46** |
+| Parity shifts | 0 | 2 | 2 | 0 | **1** |
+| Boxes | all 77 | from Q62, restyled | most | 74 of 77 | **78 of 79** |
+
+#### ⚠️ THE PARITY SHIFT IS NOT A SPILL PAGE — the rule is retired
+
+Answered pages run **ODD 2347–2435** (Q1–Q45a), then **EVEN 2438–2504** (Q45b–Q77); 45 + 34 = 79.
+Every one of the four earlier shifts in the model exams (pp.1935, 1966, 2038, 2171) was a **spill
+page** — an explanation box too tall for its tile, given a page of its own — and "every parity shift
+is a spill page" had been written down as settled. **This one is a different mechanism entirely:
+p.2436 reprints Q44 ANSWERED a second time, out of sequence**, and that one stray page is what pushes
+everything after it onto even pages.
+
+It was found only by rendering **pp.2433–2444 consecutively** instead of sampling across the shift.
+A sampled pair either side shows the parity change and nothing about its cause, and the cause is what
+tells you whether a page was skipped. **When parity changes, render the whole run through it.**
+
+#### What the five stages caught — measured, not remembered
+
+Reconciled after writing: 46 written + 33 dropped = 79 staged, every staged page matched to an entry
+or to a drop, no written page absent from the stage, no page carrying two entries.
+
+| Stage | Flagged | Of those, actually reprints | Kept |
+|---|---|---|---|
+| A — normalised stem + sorted options | 10 | 10 | 0 |
+| B — sorted options + keyed answer | 14 | 14 | 0 |
+| C — keyed answer + option count | 14 | 1 | 13 |
+| D — ≤1 differing token in the keyed answer | 6 | 3 | 3 |
+| *(clean)* | 35 | **5** | 30 |
+
+**Check C was almost pure noise here** — 14 flagged, 1 reprint — against 8/6 in Exam 4. It is an
+eye-list by design and that is the cost of it; the one it caught (Q24) would not have been found
+otherwise.
+
+**The clean column gave 5 reprints again, exactly as in Exam 4.** Stage E — stem-token ranking of
+everything A–D let through, added to the sweep after Exam 4 proved the need — caught four of them on
+its first outing: **Q7 ≡ `entep-ear-204`**, **Q8 ≡ `entep-ear-205`**, **Q29 ≡ `entep-nose-58`**, and
+**Q73 ≡ `entep-mfe4-3`** at r=1.00 — a reprint of a question added an hour earlier in the previous
+batch, which nothing keyed on the answer could have seen. The fifth, **Q75, is a verbatim WITHIN-EXAM
+reprint of Q8**; since Q8 itself reprints `entep-ear-205`, neither is held.
+
+#### ⚠️ Stage E LISTS, it never decides — a 0.95 match that is a different question
+
+**Q33 (p.2411) scores 0.95 against `entep-throat-101` and is not a duplicate.** The two stems are the
+same sentence but for one word: "stridor and a **NORMAL** cry" against "stridor and an **abnormal**
+cry". That word inverts the answer — normal cry keys **subglottic stenosis** (the lesion spares the
+cords), abnormal cry keys **laryngeal web**. Both are held, and each entry names the other.
+
+So stage E must never auto-fold. It is exactly as blind to meaning as A–D are; it is only blind in a
+*different direction*, which is the whole reason it is worth running.
+
+#### The second-term pass caught what stage E could not — a tie
+
+**Q42 (Ludwig's angina, p.2429) ranks 0.73 against `entep-throat-79` — tied with `entep-throat-17`,
+which won the sort and displaced it out of the top three.** Only the per-question keyword search
+surfaced the pair. Read in full they share the key and nothing else: the other three distractors are
+entirely different, so it is a variant and both are kept.
+
+**A tie in a ranked list silently hides the loser.** This is the second independent reason the
+keyword pass is not optional, on top of the vignette-vs-direct-question rewrite from Exam 4.
+
+#### The one unboxed page — p.2435 — and a conflict with the course material
+
+Q45a is the only printing in the exam with no explanation box, so its explanation is **written and
+marked** (`entep-mfe5-20`). Grounding it surfaced a genuine disagreement:
+
+- `L11) Vocal cord paralysis.pdf` tabulates **bilateral adductor** paralysis as **aphonia +
+  aspiration**.
+- The bank keys **"hoarseness with aspiration"** — and its own table, printed three pages later at
+  **p.2438**, reads "Bilateral adductor (complete) → **Aphonia** and aspiration", agreeing with the
+  slide and contradicting the key it printed at p.2435.
+- **None of the offered options matches the slide exactly.**
+
+Transcribed as keyed, with the slide's wording, the bank's own table and the mismatch all recorded in
+the entry. **The bank contradicts itself three pages apart** — the second such self-contradiction in
+two exams, after Exam 4's supraclavicular/head-and-neck pair 66 pages apart.
+
+#### Two smaller notes
+
+- **Q46 depends on Q45b** — it opens "In the previous case", so the two must be read together and
+  neither can be folded independently of the other.
+- **Q60 (p.2470) is the Dix–Hallpike question**, a reprint of `entep-ear-85`. `entep-mfe5-2` points at
+  `entep-ear-85` rather than at a page in this exam, since the held entry is the one that survives.
 
 ### One question, many banks — the filter fix, 2026-08-03
 
@@ -1563,6 +1664,18 @@ had ever been seen — a tile turning up without a highlight — and the cause w
 This does not change the working rule (**check every tile for a highlight; never project a parity
 forward**), but it explains why flips cluster where they do and why they cannot be predicted from
 page numbers: they are printing defects, not a pattern.
+
+**Three causes are now known, and they are NOT equally visible** — this matters because two of them
+can be spotted from the tile and the third cannot:
+
+| Cause | Seen at | Recognisable on sight? |
+|---|---|---|
+| Stray **unanswered** page reprinted | p.1654, p.1878 area | Yes — a tile with no highlight |
+| **Spill page** (a box too tall for its tile) | pp.1935, 1966, 2038, 2171 | Yes — it prints prose, not a question |
+| Stray **ANSWERED** page reprinted, out of sequence | **p.2436** (Exam 5) | **No** — it looks like a normal answered tile |
+
+The third was only found by rendering **the whole run through the shift** rather than sampling either
+side of it. **When parity changes and neither of the first two explains it, render consecutively.**
 
 ### Fold or variant — the rule, settled 2026-07-27
 
