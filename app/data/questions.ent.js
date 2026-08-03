@@ -194,7 +194,7 @@ var Q_ENT = [
   answer:2,
   explanation:'Presbyacusis is age-related sensorineural hearing loss, typically bilateral and progressive, with a normal ear exam. Acoustic neuroma causes asymmetric hearing loss.',
   objective:'Bilateral progressive hearing loss in the elderly with a normal otoscopy = presbyacusis.',
-  source:'ENT AlexMed Endpoints, Ear Questions, p.144 — same item re-asked at p.212 (Q35) with a different option set; kept once' },
+  source:'ENT AlexMed Endpoints, Ear Questions, p.144 — same item re-asked at p.212 (Q35) with a different option set; kept once. **Asked a THIRD time in Model Final Exam 2, p.1932 (Q28)**, with the duration and the otoscopy finding dropped from the stem and a five-option set — Meniere\'s / Aminogylcosides [sic] / **Presbyacusis** / DM / Labyrinthitis — plus a box: "The most common cause of sensori-neural hearing loss is presbyacusis (diminished hearing that accompanies aging)."' },
 
 { id:'entep-ear-2', bank:'endpoint', module:'ent', chapter:'ent-aom',
   stem:'A 4-year-old boy has fever, right side otalgia, and a congested tympanic membrane. What is the first-line treatment plan that should be followed?',
@@ -345,7 +345,7 @@ var Q_ENT = [
   answer:0,
   explanation:'The Dix-Hallpike maneuver provokes nystagmus in posterior canal BPPV to confirm diagnosis. Epley is a therapeutic repositioning maneuver, not diagnostic.',
   objective:'Dix-Hallpike diagnoses posterior canal BPPV; Epley and Semont treat it.',
-  source:'ENT AlexMed Endpoints, Ear Questions, p.182' },
+  source:'ENT AlexMed Endpoints, Ear Questions, p.182 — **re-asked in Model Final Exam 2, p.1972 (Q47)** as "Which of the following maneuvers is useful in the diagnosis of a patient with BPPV?", the posterior-canal detail dropped from the stem and two distractors swapped for "Friedrich maneuver" and "All of the above"; same key, kept once. Cross-reference: `entep-ear-85` (p.364) asks the same fact from the other side.' },
 
 { id:'entep-ear-21', bank:'endpoint', module:'ent', chapter:'ent-earanat',
   stem:'What is the direction of pointing of the **cone of light** in the tympanic membrane?',
@@ -353,7 +353,7 @@ var Q_ENT = [
   answer:2,
   explanation:'On otoscopy, the cone of light points anteriorly and inferiorly in the tympanic membrane. Posterior or superior directions are incorrect.',
   objective:'Cone of light points anteroinferiorly.',
-  source:'ENT AlexMed Endpoints, Ear Questions, p.184 — same item re-asked at p.219 (Q39, "normal location of the cone of light"); kept once' },
+  source:'ENT AlexMed Endpoints, Ear Questions, p.184 — same item re-asked at p.219 (Q39, "normal location of the cone of light"); kept once. **The p.219 wording is printed a third time in Model Final Exam 2, p.1951 (Q37)** — options Antero-superior / **Antero-inferior** / Postero-superior / Postero-inferior, with a box: "Normal tympanic membrane shows a “cone of light” on the anteroinferior aspect, which is light reflected off the lateral surface of the drum due to the oblique position of the TM in relation to the horizontal plane (55° with the floor). The cone of light is either disturbed or absent in pathological cases (abnormal TM)."' },
 
 { id:'entep-ear-22', bank:'endpoint', module:'ent', chapter:'ent-earanat',
   stem:'A patient presented with hearing loss after a road traffic accident. His CT findings showed a fracture in the **incudomalleolar joint**. Which process of hearing is interrupted in this case?',
@@ -361,7 +361,7 @@ var Q_ENT = [
   answer:3,
   explanation:'The incudomalleolar joint is the joint between the malleus and incus, two of the three ossicles in the middle ear. These bones play a crucial role in the mechanical conduction of sound from the tympanic membrane to the inner ear. So, if the incudomalleolar joint is disrupted, it leads to impaired mechanical conduction of sound — conductive hearing loss.',
   objective:'Ossicular disruption interrupts conduction, not transduction or neural transmission.',
-  source:'ENT AlexMed Endpoints, Ear Questions, p.186 — same item re-asked at p.217 (Q38) whose own note reads: "Incudomalleolar joint is the joint between the incus and malleus. This joint is responsible for sound conduction. Thus, if any pathology affects (disrupts) that joint, hearing conduction will be affected."; kept once — EAR TRAUMA: filed under ent-earanat as nearest fit' },
+  source:'ENT AlexMed Endpoints, Ear Questions, p.186 — same item re-asked at p.217 (Q38) whose own note reads: "Incudomalleolar joint is the joint between the incus and malleus. This joint is responsible for sound conduction. Thus, if any pathology affects (disrupts) that joint, hearing conduction will be affected."; kept once — EAR TRAUMA: filed under ent-earanat as nearest fit. **The p.217 wording is printed a third time in Model Final Exam 2, p.1937 (Q30)** — "Disruption of an incudomalleolar joint affects which of the following processes of hearing?", options Transduction / Magnification / **Hearing conduction** / All of the above, with that same box.' },
 
 { id:'entep-ear-23', bank:'endpoint', module:'ent', chapter:'ent-audio',
   stem:'What is the level that is **NOT** examined with an ABR (auditory brainstem response)?',
@@ -369,7 +369,7 @@ var Q_ENT = [
   answer:0,
   explanation:'ABR tests up to the brainstem (cochlear nerve, lateral lemniscus, inferior colliculus), but does not assess cortical auditory processing.',
   objective:'ABR assesses the pathway up to the brainstem, not the auditory cortex.',
-  source:'ENT AlexMed Endpoints, Ear Questions, p.188 — same item re-asked at p.210 (Q34, "ABR involves all of the following except"); kept once' },
+  source:'ENT AlexMed Endpoints, Ear Questions, p.188 — same item re-asked at p.210 (Q34, "ABR involves all of the following except"); kept once. **Reprinted in Model Final Exam 1, p.1819 (Q49)**, where the fourth option is misspelt "Lateral **leminiscus**" — that single character is why the exact stem+options check missed it and only the eye caught it. The MFE printing adds an explanation box: "ABR tests up to the brainstem (cochlear nerve, lateral lemniscus, inferior colliculus), but does not assess cortical auditory processing." **Reprinted a fourth time in Model Final Exam 2, p.1928 (Q26)**, as "Auditory brainstem responses involve all of the following anatomical structures except?" with the options reworded again — "**Auditory nerve**" for cochlear nerve and "**Cerebral cortex**" for auditory cortex, the "leminiscus" misspelling still travelling with it — and a third, different box: "Auditory brainstem responses involve the auditory nerve, lateral leminiscus, and inferior colliculus, but NOT the cerebral cortex."' },
 
 { id:'entep-ear-24', bank:'endpoint', module:'ent', chapter:'ent-aom',
   stem:'A 55-year-old male patient complains of right-sided diminution of hearing 3 months ago. On examination, the right tympanic membrane was dull, the Rinne test was negative on the right side, and the Weber test was lateralized to the right side. A type B tympanogram was obtained, and there were enlarged upper deep cervical lymph nodes on the right side of the neck for 2 months. What is the next step in management?',
@@ -441,7 +441,7 @@ var Q_ENT = [
   answer:4,
   explanation:'Tympanic membrane perforation and otosclerosis are causes of conductive hearing loss. However, presbyacusis and aminoglycosides are causes of sensori-neural hearing loss. Cholesteatoma causes mixed hearing loss as follows: It causes CHL at first, and then progresses to cause synovial labyrinthitis (SNHL), eventually leading to mixed hearing loss.',
   objective:'Cholesteatoma gives mixed hearing loss — conductive first, then sensorineural once the labyrinth is involved.',
-  source:'ENT AlexMed Endpoints, Ear Questions, p.206 — also asked at p.152 (as entep-ear-5, options: impacted wax / vestibular schwannoma / cholesteatoma / EAC osteoma) and reprinted at p.248 (Q52), where the same note reads "serous labyrinthitis (SNHL) due to involving the inner ear (cochlea)" rather than p.206\'s "synovial labyrinthitis"; and again at p.324 (Q91, options: impacted wax / unsafe CSOM / acoustic neuroma at CPA / presbyacusis, where the answer is named "unsafe CSOM" rather than "cholesteatoma"); and again at p.376 (Q117) and p.398 (Q128), both with options impacted wax / unsafe CSOM / acoustic neuroma / presbyacusis; kept once' },
+  source:'ENT AlexMed Endpoints, Ear Questions, p.206 — also asked at p.152 (as entep-ear-5, options: impacted wax / vestibular schwannoma / cholesteatoma / EAC osteoma), a THIRD time in Model Final Exam 1 p.1733 (Q6) with that same four-option set and its own explanation box, and reprinted at p.248 (Q52), where the same note reads "serous labyrinthitis (SNHL) due to involving the inner ear (cochlea)" rather than p.206\'s "synovial labyrinthitis"; and again at p.324 (Q91, options: impacted wax / unsafe CSOM / acoustic neuroma at CPA / presbyacusis, where the answer is named "unsafe CSOM" rather than "cholesteatoma"); and again at p.376 (Q117) and p.398 (Q128), both with options impacted wax / unsafe CSOM / acoustic neuroma / presbyacusis; kept once' },
 
 { id:'entep-ear-33', bank:'endpoint', module:'ent', chapter:'ent-audio',
   stem:'Which of the following modalities would be the best option to screen for hearing impairment in a 6-month-old age?',
@@ -549,11 +549,11 @@ var Q_ENT = [
 
 { id:'entep-ear-46', bank:'endpoint', module:'ent', chapter:'ent-vertigo',
   stem:'Which of the following statements best defines the term **"Vertigo"**?',
-  options:['Sensation of imbalance that usually increases movement.','Sensation of spinning: as if the patient is spinning, or the world spins around the patient.','Sensation of anorexia coupled with fainting.','Momentary loss of consciousness and light-headedness.'],
+  options:['Sensation of imbalance that usually increases on movement.','Sensation of spinning: as if the patient is spinning, or the world spins around the patient.','Sensation of anorexia coupled with fainting.','Momentary loss of consciousness and light-headedness.'],
   answer:1,
   explanation:'**Difference between vertigo, dizziness, and syncope:**\n\n**Vertigo** is the descriptive term for spinning sensation and is caused by vestibular diseases (inner ear diseases).\n\n**Dizziness** is the descriptive term for unsteadiness or dysequilibrium and is related to a pathology in the sensory organs (eyes/ears), CNS, or CVS.\n\n**Syncope** is the descriptive term for momentary loss of consciousness and is mostly related to a pathology in CVS. Also, it may result from CNS involvement.',
   objective:'Vertigo is specifically an illusion of rotation — of the patient or of the surroundings — not imbalance or presyncope.',
-  source:'ENT AlexMed Endpoints, Ear Questions, p.260; reprinted Nose Questions p.947 (Q30), identical stem and options. **The p.947 printing carries the source\'s own explanation box and the p.260 printing did not** — the box is transcribed above verbatim and replaces the explanation previously written here, per the rule that the better printing wins.' },
+  source:'ENT AlexMed Endpoints, Ear Questions, p.260; reprinted Nose Questions p.947 (Q30), identical stem and options. **The p.947 printing carries the source\'s own explanation box and the p.260 printing did not** — the box is transcribed above verbatim and replaces the explanation previously written here, per the rule that the better printing wins. **Printed a third time in Model Final Exam 2, p.1945 (Q34)**, with the same box. Option A is transcribed from that third printing: pp.260 and 947 both print "usually increases movement", which is a grammatical slip in the source, and p.1945 prints "usually increases **on** movement". The better printing wins again — and the missing word is why the stem+options check did not match it.' },
 
 { id:'entep-ear-47', bank:'endpoint', module:'ent', chapter:'ent-aom',
   stem:'Which of the following is the most common causative organism of **acute otitis media (AOM)**?',
@@ -600,7 +600,7 @@ var Q_ENT = [
   answer:4,
   explanation:'Infantile larynx has the following anatomical features:\n- Small relative to the body surface area.\n- Higher in position (ends at C4 in children vs. C6 or C7 in adults).\n- Funnel-shaped; Narrow SG region (4.5 mm).\n- Epiglottis: Long & folded on itself.\n- Large arytenoids, short VC.\n- Loose submucosal tissue leading to edema formation.',
   objective:'The infantile larynx is small, high (C4), funnel-shaped with a narrow subglottis, a long folded epiglottis and large arytenoids.',
-  source:'ENT AlexMed Endpoints, Ear Questions, p.294 — **reprinted verbatim in the THROAT section at p.1446 (Q48)**, same five options and same key, where the keyed option is highlighted in **CYAN** and no explanation box is printed. Kept once. Secondary chapter: `ent-paedlar`. **Variant** in the Throat section at `entep-throat-19` (p.1390), which asks the same anatomy as an EXCEPT question with a different option set.' },
+  source:'ENT AlexMed Endpoints, Ear Questions, p.294 — **reprinted verbatim in the THROAT section at p.1446 (Q48)**, same five options and same key, where the keyed option is highlighted in **CYAN** and no explanation box is printed. Kept once. Secondary chapter: `ent-paedlar`. **Variant** in the Throat section at `entep-throat-19` (p.1390), which asks the same anatomy as an EXCEPT question with a different option set. **Printed a THIRD time in Model Final Exam 2, p.1994 (Q58)**, again in cyan and again with no box, where the keyed option reads "Diameter at **the** cricoid region is 3.5–4.5 mm at birth." — one inserted word and an en dash for the hyphen. ⚠️ **That single word defeated all THREE duplicate checks** and the reprint was found only by grepping a distinctive phrase; see `ledger.md` §7 on the fourth, fuzzy check this made necessary.' },
 
 { id:'entep-ear-52', bank:'endpoint', module:'ent', chapter:'ent-stridor',
   stem:'Following the **tracheostomy** procedure, a patient was noticed to have acute dyspnea and diminished air entry on the left side. The tube was noticed to be clear and well-positioned. Which of the following is the most likely cause of this?',
@@ -2279,7 +2279,7 @@ var Q_ENT = [
   answer:1,
   explanation:'**Peritonsillar abscess (quinsy)** presents with **trismus, muffled "hot potato" voice, and uvular deviation away from the lesion**. It is a complication of acute tonsillitis.',
   objective:'Quinsy: unilateral, muffled hot-potato voice, trismus, uvula pushed to the opposite side, referred earache.',
-  source:'ENT AlexMed Endpoints, Nose Questions, p.891 (Q1) — the source prints its own explanation box here, transcribed verbatim. Filed under Nose Questions but pharyngeal in content. **Reprinted verbatim in the THROAT section, p.1378 (Q14)** — its proper home — with the same four options and key; that printing misspells option d as "Retroaryngeal abscess". First confirmed instance of the Throat section reprinting an earlier section.' },
+  source:'ENT AlexMed Endpoints, Nose Questions, p.891 (Q1) — the source prints its own explanation box here, transcribed verbatim. Filed under Nose Questions but pharyngeal in content. **Reprinted verbatim in the THROAT section, p.1378 (Q14)** — its proper home — with the same four options and key; that printing misspells option d as "Retroaryngeal abscess". First confirmed instance of the Throat section reprinting an earlier section. **Printed a THIRD time in Model Final Exam 1, p.1769 (Q24)**, carrying the same "Retroaryngeal" misspelling — so the typo travels with the reprint and is what defeated the exact stem+options check both times.' },
 
 { id:'entep-nose-2', bank:'endpoint', module:'ent', chapter:'ent-nasalmass',
   stem:'A **60-year-old male** patient presented with **unilateral nasal obstruction and recurrent attacks of mild epistaxis**. He started to develop a **toothache with numbness of the cheek**. He is a **smoker** and used to work as a **carpenter for 20 years**. What is the most probable diagnosis?',
@@ -2625,7 +2625,7 @@ var Q_ENT = [
   answer:3,
   explanation:'A **CT scan of the paranasal sinuses** is the best investigation for an elderly patient with a unilateral nasal mass because it:\n\n1. **Provides detailed information about bone involvement.**\n2. **Helps assess the extent of the lesion, erosion, and sinus invasion.**\n3. **Is essential for surgical planning.**\n\n*The p.975 printing of this question puts it differently:* "**CT** provides detailed bone and soft tissue assessment and guides biopsy planning in older patients at risk for malignancy. **X-ray or MRI alone is less informative, and excision biopsy without imaging is unsafe.**"',
   objective:'Unilateral nasal mass in an older patient: CT first — bone erosion, extent, surgical planning. Never biopsy before imaging.',
-  source:'ENT AlexMed Endpoints, Nose Questions, p.995 (Q54) and p.975 (Q44) — the SAME question printed twice, each with its own explanation box; both boxes are transcribed above. The p.995 printing is the one held because **p.975 misprints "MRI" as "MRL"** and prints option d as "CT scan..". Cross-reference: `entep-nose-15` (p.919) is the paediatric counterpart, where MRI joins CT.' },
+  source:'ENT AlexMed Endpoints, Nose Questions, p.995 (Q54) and p.975 (Q44) — the SAME question printed twice, each with its own explanation box; both boxes are transcribed above. The p.995 printing is the one held because **p.975 misprints "MRI" as "MRL"** and prints option d as "CT scan..". **Printed a THIRD time in Model Final Exam 2, p.2020 (Q71)** — the p.975 text exactly, misprint and doubled full stop and all, which is why the two strict checks (built on the p.995 option set) both missed it and only the loose keyed-answer probe surfaced it. Cross-reference: `entep-nose-15` (p.919) is the paediatric counterpart, where MRI joins CT.' },
 
 { id:'entep-nose-40', bank:'endpoint', module:'ent', chapter:'ent-epistaxis',
   stem:'*[The bank prints no vignette for this question — see the note in `source`. Reconstructed from its own answer key: an **adolescent male with recurrent, profuse epistaxis** and a **nasopharyngeal mass**, bleeding actively.]*\n\nWhich of the following is the **best initial step** recommended in the management of that patient?',
@@ -3600,7 +3600,7 @@ var Q_ENT = [
   answer:3,
   explanation:'All intrinsic muscles of the larynx are supplied by the recurrent laryngeal nerve (RLN) except the cricothyroid muscle (tensor muscle of the vocal cord), which is supplied by an external branch of the superior laryngeal nerve.\n\n*Added here — the box above is the source\'s own text. Three consequences of that single exception are what the exam actually tests:*\n\n1. **The cricothyroid controls pitch.** It tilts the thyroid cartilage forward, lengthening and tensing the cord. Lose it and the voice is otherwise normal but **cannot reach high notes** — the classic post-thyroidectomy complaint of a singer.\n2. **Its nerve runs with the superior thyroid artery.** The **external branch of the superior laryngeal nerve** is injured when that vessel is ligated too high in thyroid surgery — a different nerve, a different vessel and a different symptom from RLN injury, which is why the two are examined together.\n3. **Everything else is RLN.** The **posterior cricoarytenoid is the only abductor** — the one muscle that opens the glottis — and the **thyroarytenoid**, **thyroepiglottic**, **lateral cricoarytenoid** and **interarytenoid** are adductors or tensors. That is why bilateral RLN injury threatens the airway: the sole opener is paralysed on both sides.\n\n*Cross-reference `entep-throat-9` (p.1368), a **variant** with a genuinely different option set — it offers the interarytenoid where this printing offers the thyroepiglottic. Both kept.*\n\n*Written for this bank — the addition is not part of the source\'s box.*',
   objective:'The RLN supplies every intrinsic laryngeal muscle except the cricothyroid (external branch of the superior laryngeal nerve), which tenses the cord and sets pitch.',
-  source:'ENT AlexMed Endpoints, Throat Questions, p.1402 — the source prints its own explanation box here, transcribed verbatim; the marked paragraph after it is authored. **⚠️ SOURCE NUMBERING DEFECT: this one question is printed as Q26 on p.1401 (unanswered) and as Q27 on p.1402 (answered)** — the number advances between the two printings. Both facing pages rendered and compared; the stems and option sets are identical. Held once, citing both numbers. **Reprinted again at p.1477 (Q64)**, same options, same key, same box. **Variant** of `entep-throat-9` (p.1368).' },
+  source:'ENT AlexMed Endpoints, Throat Questions, p.1402 — **reprinted in Model Final Exam 2, p.1880 (Q2)**, where option c is misspelt "Thyro**i**epiglottic"; that one character is why the exact and option-set checks both missed it. The source prints its own explanation box here, transcribed verbatim; the marked paragraph after it is authored. **⚠️ SOURCE NUMBERING DEFECT: this one question is printed as Q26 on p.1401 (unanswered) and as Q27 on p.1402 (answered)** — the number advances between the two printings. Both facing pages rendered and compared; the stems and option sets are identical. Held once, citing both numbers. **Reprinted again at p.1477 (Q64)**, same options, same key, same box. **Variant** of `entep-throat-9` (p.1368).' },
 
 { id:'entep-throat-26', bank:'endpoint', module:'ent', chapter:'ent-stridor',
   stem:'Which of the following **infectious agents is the causative organism responsible for acute epiglottitis**?',
@@ -4600,6 +4600,99 @@ var Q_ENT = [
   answer:4,
   explanation:'**No explanation box is printed for this question.**\n\n**The question turns on what CT adds that the endoscope cannot already see.** The doctor has just looked at the larynx and described the tumour: which cord it is on, how big it is, and — critically — that the cord is **fixed**. Options a and b are therefore already answered, and options c and d describe **mucosal surfaces** that endoscopy visualises directly.\n\n**What no endoscope can see is what lies UNDER the mucosa**: whether the tumour has invaded the **thyroid or cricoid cartilage**, and whether it has spread into the **paraglottic** and **pre-epiglottic** spaces — the fat-filled potential spaces inside the laryngeal framework through which tumour travels silently. **That is what CT is for**, and it is the answer.\n\n**And "fixed" is the word that makes it urgent.** A vocal cord that no longer moves means the tumour has gone **deep** — into the thyroarytenoid muscle, the cricoarytenoid joint, or the paraglottic space — rather than sitting on the surface. `L2) Hoarsness of Voice.pdf` lists **glottic cancer** among the causes of *"**Vocal Fold Fixation**"*. Fixation moves the tumour into an advanced stage and changes the whole treatment plan.\n\n**Why that changes management, and this is the practical point of the question:**\n\n| CT finding | What it means |\n|---|---|\n| Tumour confined, cartilage clear | **Larynx-preserving** treatment remains possible — radiotherapy or partial laryngectomy |\n| **Cartilage invaded** / deep paraglottic spread | Radiotherapy is far less likely to cure and the cartilage may necrose → **total laryngectomy** ± post-operative radiotherapy |\n\nSo the scan is not a formality; it decides whether the patient keeps a larynx. `L2` puts *"**Ct scan**"* and *"**MRI**"* in its radiological investigation list, and *"**Biopsy from suspicious lesions, tumors**"* alongside — imaging stages the tumour, biopsy proves it, and neither replaces the other.\n\n**The rest of the vignette is `L2`\'s own picture of glottic carcinoma:** *"Most commonly present with **hoarsness** = early present in early stage. Mostly **squamous cell carcinoma**. Arises from **true vocal cord**... causes hoarseness early when tumor is small, leading to early detection and **high cure rate**... **High cure rate also due to lack of lymphatics in true vocal cord**. Treatment: **radiotherapy, surgical excision according to the stage**."* And the risk factor is in the stem — `L2` heads its list of causes of hypertrophic laryngitis with *"**Smoking**"*.\n\n**⚠️ Hoarseness "of several months not responsive to medical treatment" is the failure the whole chapter exists to prevent.** The rule the bank keeps testing (`entep-throat-10`, `41`) is that hoarseness lasting more than **two to three weeks** in an adult gets the larynx **looked at**, not treated blind. Months of medical treatment in a 60-year-old smoker is months of delay.\n\n**⚠️ The paraglottic and pre-epiglottic spaces, cartilage invasion, and the role of CT in choosing between larynx preservation and laryngectomy are named in no cached ENT slide.** `L2` lists CT and MRI among the investigations and stops there. **This part of the explanation is not taken from the course material** — the same gap as `entep-throat-131` (p.1692), which turns on the paraglottic space from the other direction.\n\n*Written for this bank — the endpoint file prints no explanation here.*',
   objective:'In laryngeal cancer, endoscopy shows the site, size and mucosal spread; CT is for what lies UNDER the mucosa — cartilage invasion and the paraglottic and pre-epiglottic spaces. That is what decides between larynx preservation and total laryngectomy. A fixed cord means deep invasion.',
-  source:'ENT AlexMed Endpoints, Throat Questions, p.1706 (Q176) — **no explanation box.** **Five options. THIS IS THE LAST MCQ OF THE THROAT SECTION**; p.1707 is the "Solved Cases" title page. Grounded in `L2) Hoarsness of Voice.pdf` (glottic carcinoma, glottic cancer as a cause of vocal fold fixation, CT and MRI among the investigations, biopsy, smoking under hypertrophic laryngitis). **⚠️ Cartilage invasion, the paraglottic and pre-epiglottic spaces, and CT\'s role in choosing larynx preservation are in no cached slide** — flagged, and on the gap list with `entep-throat-131` (p.1692). Cross-reference: `entep-throat-89` (p.1589) on early glottic treatment, `entep-throat-10` (p.1370) and `41` (p.1446) on investigating adult hoarseness, `entep-throat-112` (p.1653) on smoking.' }
+  source:'ENT AlexMed Endpoints, Throat Questions, p.1706 (Q176) — **no explanation box.** **Five options. THIS IS THE LAST MCQ OF THE THROAT SECTION**; p.1707 is the "Solved Cases" title page. Grounded in `L2) Hoarsness of Voice.pdf` (glottic carcinoma, glottic cancer as a cause of vocal fold fixation, CT and MRI among the investigations, biopsy, smoking under hypertrophic laryngitis). **⚠️ Cartilage invasion, the paraglottic and pre-epiglottic spaces, and CT\'s role in choosing larynx preservation are in no cached slide** — flagged, and on the gap list with `entep-throat-131` (p.1692). Cross-reference: `entep-throat-89` (p.1589) on early glottic treatment, `entep-throat-10` (p.1370) and `41` (p.1446) on investigating adult hoarseness, `entep-throat-112` (p.1653) on smoking.' },
+
+/* ===== MODEL FINAL EXAM 1 — pp.1721–1875 ==================================
+   Read end to end 2026-08-02. 77 MCQs, each printed twice (unanswered then
+   answered, answered pages ODD 1723–1875, no parity flip). Every answered page
+   carries the source's own explanation box, so nothing below is authored.
+
+   ⚠️ 74 OF THE 77 WERE ALREADY HELD. The exam is a COMPILATION, not new
+   material: it re-prints entep-ear-1…25, entep-nose-1…24 and entep-throat-1…24
+   in near-sequence. Only these three survived the sweep. Two more escaped the
+   exact check only because the source MISSPELLS one option each — Q24
+   "Retroaryngeal" for Retropharyngeal (= entep-nose-1) and Q49 "leminiscus"
+   for lemniscus (= entep-ear-23); both folded. Q6 is a THIRD printing of the
+   mixed-hearing-loss item already folded into entep-ear-32.
+   ========================================================================= */
+
+{ id:'entep-mfe1-1', bank:'endpoint', module:'ent', chapter:'ent-csom',
+  stem:'During the course of **left acute otitis media**, a 9-year-old child suddenly complained of **diplopia and retrobulbar pain**. What will be the expected extension of the pathology?',
+  options:['The orbit.','The visual cortex.','The lateral rectus muscle.','The petrous apex'],
+  answer:3,
+  explanation:"Extension of infection from the middle ear to the petrous apex causes Gradenigo's syndrome (triad: otorrhea, deep facial pain, and diplopia due to abducens nerve palsy). Hence, diplopia and retrobulbar pain suggest petrous apicitis.",
+  objective:'Diplopia with retrobulbar pain during otitis media means the infection has reached the petrous apex — petrositis, giving Gradenigo\'s triad.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 1, p.1735 (Q7) — the source prints this explanation box. **Kept rather than folded into `entep-ear-37`** (p.225), which asks the same fact but through a route-of-spread option set (petrous apex / sinus plate / anterior tegmen / mastoid bone) against this one\'s anatomical-site set; same precedent as `entep-ear-227`/`44`. Cross-reference: `entep-ear-37`, and `entep-throat-…` items on Gradenigo\'s triad.' },
+
+{ id:'entep-mfe1-2', bank:'endpoint', module:'ent', chapter:'ent-paedlar',
+  stem:'A **2-year-old child** presented with slowly progressive low-grade fever, **biphasic stridor, hoarseness of voice, and a barking cough** following upper respiratory tract infection. The most probable diagnosis is:',
+  options:['Acute laryngotracheobronchitis (Croup)','Acute epiglottitis (Supraglottitis)','Acute viral laryngitis','Acute follicular tonsillitis'],
+  answer:0,
+  explanation:'Croup presents with barking cough, hoarseness, and inspiratory stridor in children after URTI. Epiglottitis usually causes high fever, drooling, and severe distress.',
+  objective:'Barking cough + hoarseness + stridor in a toddler after a URTI is croup; high fever with drooling and toxaemia is epiglottitis.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 1, p.1821 (Q50) — the source prints this explanation box. Secondary chapter: stridor and tracheostomy.' },
+
+{ id:'entep-mfe1-3', bank:'endpoint', module:'ent', chapter:'ent-tonsils',
+  stem:'What is the most common cause of **mouth breathing in a 5-year-old child**?',
+  options:['Adenoid hypertrophy','Allergic rhinitis','Septal deviation','Antrochoanal polyp'],
+  answer:0,
+  explanation:'Adenoid enlargement obstructs the nasopharyngeal airway, causing mouth breathing in children. Allergic rhinitis or septal deviation are less common causes at this age.',
+  objective:'In a child, mouth breathing is adenoid hypertrophy until proved otherwise — the adenoid is at its largest around this age.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 1, p.1855 (Q67) — the source prints this explanation box. Not a duplicate of `entep-ear-203`, which asks the adenoid\'s role in recurrent bilateral acute otitis media.' }
+
+/* ===== MODEL FINAL EXAM 2 — pp.1876–2034 ==================================
+   Read end to end 2026-08-03. NOTHING WAS ADDED FROM IT: all 78 printings were
+   already held, so this comment is the entire record of the exam.
+
+   Shape. 77 numbered questions but 78 printings — the number 71 is used TWICE,
+   once for a standalone item (p.2020) and once to open the linked set (p.2022).
+   Each is printed twice, unanswered then answered. Five options in many items
+   where the section printings had four, option sets rewritten throughout, and
+   linked sets that say "that patient".
+
+   ⚠️ PARITY SHIFTS TWICE INSIDE THE EXAM, and both times the cause is a spill
+   page — an explanation box too tall for its tile, printed on a page of its own:
+     Q1–Q29   answered EVEN, pp.1878–1934
+     p.1935   spill: the rest of Q29's box ("Causes of vertigo:")
+     Q30–Q44  answered ODD,  pp.1937–1965
+     p.1966   spill: the rest of Q44's box ("Treatment of traumatic ear drum
+              perforation:")
+     Q45–Q77  answered EVEN, pp.1968–2034
+   Neither shift is visible without checking each tile for a highlight. A sweep
+   that assumed one parity would have read 24 unanswered pages as answered ones.
+
+   Where they came from. The exam draws on all three sections, interleaved, and
+   reaches deeper into each than Exam 1 did — Exam 1 re-printed the first ~25 of
+   each section in blocks, whereas this one pulls from entep-ear-26…53,
+   entep-nose-13…51 and entep-throat-25…110 in no order at all.
+
+   ⚠️ EIGHT of the 60 in the second batch defeated all three duplicate checks and
+   were only found by grepping a distinctive phrase. Six were variants with the
+   option set rewritten (Q26, Q28, Q30, Q37, Q47, Q71-standalone). The other two
+   are the important ones, because they are near-verbatim reprints that the
+   checks still missed:
+     Q34 p.1945 — held copy reads "usually increases movement", this printing
+                  "usually increases ON movement". One word.
+     Q58 p.1994 — held copy "Diameter at cricoid region", this printing
+                  "Diameter at THE cricoid region". One word.
+   A missing or added word survives normalisation exactly as the source's own
+   misspellings do ("Retroaryngeal", "leminiscus", "Thyroiepiglottic", "MRL"),
+   and the loose keyed-answer probe cannot see it either, because the key text is
+   what changed. See `ledger.md` §7 for the fuzzy check this made necessary.
+
+   ⚠️ ONE SOURCE DEFECT WORTH KNOWING. Q75–Q77 (pp.2030, 2032, 2034) all say
+   "that patient" and NO VIGNETTE IS PRINTED FOR THEM ANYWHERE — verified by
+   rendering pp.2028–2031 at full height, not inferred. Their answers (nasal
+   packing → juvenile nasopharyngeal angiofibroma → embolization) reconstruct the
+   missing case, and all three are held with their proper stems as
+   entep-nose-40/41/42.
+
+   From Q62 (p.2002) to the end, the explanation boxes change style: short, with
+   a red keyword lead-in, closer to commentary than to the textbook extracts
+   earlier in the file. No "Ask ChatGPT" marker appears in any of them (checked at
+   full height on pp.2002, 2012, 2018, 2026). Nothing was taken from these boxes
+   — every question was already held — but the style change is a flag for the
+   provenance sweep owed in the end-of-ENT review.
+   ========================================================================= */
 
 ];

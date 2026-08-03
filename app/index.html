@@ -1676,17 +1676,12 @@ button.card:hover .mod-art{opacity:1;filter:saturate(1.12)}
   position:fixed;right:20px;bottom:18px;z-index:150;
   display:flex;align-items:flex-end;gap:9px;
   touch-action:none;                 /* the figure is a drag handle */
-  /* Six values shade the disc, light to deep. She is a solid volume now, not
-     line art, so every one of these is a fill or a gradient stop. */
-  --cl-hi:#ffe6c0;                   /* dome highlight, top-left */
-  --cl-1:#ffb96a;                    /* face light */
-  --cl-2:#ef8228;                    /* face mid */
-  --cl-3:#bc540f;                    /* face deep */
-  --cl-4:#7d3208;                    /* rim, ambient occlusion */
-  --cl-out:#2f1204;                  /* line work: contours, ticks, limbs */
-  --cl-w:#fff1da;                    /* cream: gloves, eye whites, soles, hands */
-  --cl-d:#3d1a05;                    /* pupils and the inside of the mouth */
-  --cl-rim:#ffc98a;                  /* the rim light — see .cl-fig note below */
+  /* The figure is a PNG now, so it carries its own colour and needs no ramp.
+     Six shading tokens went with the SVG. These three are still hers because
+     the CHROME around her is drawn in CSS, not painted into the sprite. */
+  --cl-1:#ffb96a;                    /* bold text in her speech bubble */
+  --cl-2:#ef8228;                    /* the light pool, and tool-button hover */
+  --cl-w:#fff1da;                    /* the small dial on her collapsed pill */
   --cl-glow:rgba(255,150,55,.5);
   --cl-glow2:rgba(255,125,30,.26);
   --cl-panel:rgba(24,15,4,.94);
@@ -1696,41 +1691,93 @@ button.card:hover .mod-art{opacity:1;filter:saturate(1.12)}
 .clep[hidden]{display:none}          /* display:flex would otherwise beat it */
 .cl-col{display:flex;flex-direction:column;align-items:flex-end;gap:7px}
 
-/* ---- the figure --------------------------------------------------------- */
-.cl-body{position:relative;width:96px;height:126px;cursor:grab;flex:0 0 auto}
+/* ---- the figure ---------------------------------------------------------
+   NINE poses of the user's OWN artwork, supplied 2026-08-02, cut out of their
+   white sheet and landed on one shared 360x360 canvas by scripts/poses*.ps1.
+   She faces the viewer in every one of them and wears her own gold wreath, so
+   the CSS stephane that used to be drawn here is GONE — leaving it would put a
+   second crown on her head.
+
+   ⚠️ THE CANVAS IS SQUARE NOW. .cl-body was 96x99 for the old 0.967 artwork;
+   a non-square box letterboxes her inside her own drag handle, silently and
+   with no error. Both the desktop and the mobile size must stay 1:1.
+
+   ⚠️ The box is BIGGER than the old one (112 vs 96) because the new canvas
+   has headroom: her figure occupies ~83% of it rather than filling it, so at
+   96px she rendered noticeably smaller than before. 112 x 0.83 restores her
+   old on-screen height.
+
+   TWO stacked images, not one. The swap needs the outgoing frame to stay on
+   screen while it is torn apart — see clepPose(). */
+.cl-body{position:relative;width:112px;height:112px;cursor:grab;flex:0 0 auto}
 .clep.drag .cl-body{cursor:grabbing}
 .cl-stage{position:absolute;inset:0;animation:clBob 3.6s ease-in-out infinite}
-.cl-fig{display:block;width:100%;height:100%;overflow:visible;
+.cl-fig{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;
+  -webkit-user-drag:none;user-select:none;
   filter:drop-shadow(0 0 4px var(--cl-glow)) drop-shadow(0 0 13px var(--cl-glow2))}
+.cl-ghost{opacity:0;pointer-events:none}   /* the outgoing frame, only alive mid-swap */
 
-.cl-tick{stroke:var(--cl-out);stroke-width:1.7;stroke-linecap:round;opacity:.86}
-.cl-tick.q{stroke-width:3;opacity:1}
-.cl-grain{stroke:var(--cl-3);stroke-width:1.1;fill:none}
-.cl-lash{stroke:var(--cl-out);stroke-width:2.2;stroke-linecap:round;fill:none}
-.cl-base{fill:var(--cl-2);opacity:.28}
-/* Cream core, dark hairline — the core reads on the deep half of the dial, the
-   hairline reads on the lit top-left. Both hands are drawn BEFORE the eyes and
-   the mouth, so a sweeping hand is occluded by the face rather than striking
-   through it. Drawn on top they read as a line ruled across her eyes. */
-.cl-hand{stroke:var(--cl-w);stroke-width:2.4;stroke-linecap:round;fill:none}
-.cl-hand-o{stroke:var(--cl-out);stroke-width:4;stroke-linecap:round;fill:none;opacity:.85}
+/* ---- the pose change ----------------------------------------------------
+   A hologram does not dissolve, it FAILS and re-forms. So the outgoing pose is
+   not cross-faded out: it is shunted sideways, squashed on the vertical and
+   dropped in steps, while the incoming pose comes up underneath it doing the
+   same thing out of phase. The existing burst (.gl) rides along on top and
+   supplies the shake and the red/cyan split, so the two systems stay in sync
+   by construction rather than by matching two sets of numbers.
+
+   .46s is deliberate: shorter read as a flicker rather than a change of pose,
+   and longer started to feel like a transition the reader has to wait out. */
+@keyframes clSwapOut{
+  0%  {opacity:1;  transform:translate3d(0,0,0)     scaleY(1)}
+  18% {opacity:1;  transform:translate3d(-5px,0,0)  scaleY(1.05)}
+  34% {opacity:.85;transform:translate3d(6px,0,0)   scaleY(.94)}
+  52% {opacity:.35;transform:translate3d(-3px,0,0)  scaleY(1.08)}
+  70% {opacity:.12;transform:translate3d(2px,0,0)   scaleY(.97)}
+  100%{opacity:0;  transform:none}
+}
+@keyframes clSwapIn{
+  0%  {opacity:0;  transform:translate3d(4px,0,0)   scaleY(1.06)}
+  30% {opacity:.18;transform:translate3d(-4px,0,0)  scaleY(.95)}
+  55% {opacity:.6; transform:translate3d(3px,0,0)   scaleY(1.04)}
+  78% {opacity:.92;transform:translate3d(-1px,0,0)  scaleY(.99)}
+  100%{opacity:1;  transform:none}
+}
+/* the lit slice jumps four times across the swap instead of sitting still */
+@keyframes clTear{
+  0%{top:14%} 25%{top:63%} 50%{top:31%} 75%{top:79%} 100%{top:46%}
+}
+.clep.swap .cl-ghost{animation:clSwapOut .46s cubic-bezier(.3,.9,.3,1) forwards}
+.clep.swap .cl-main {animation:clSwapIn  .46s cubic-bezier(.3,.9,.3,1) forwards}
+.clep.swap .cl-band {animation:clTear    .46s steps(4,end)}
+.clep.swap .cl-scan {opacity:.9}
+
+/* The light pool she stands on. It was part of the artwork's background and
+   was removed with it, so it is redrawn here as a DOM element — it has to
+   pulse with the bob, and it must not be baked into the sprite or it would
+   drag a grey ellipse onto the parchment theme.
+   ⚠️ bottom:9%, not 0. On the shared canvas her feet land at 89% of the
+   height, not at the very bottom; a pool at the box edge floats below her. */
+.cl-base{
+  position:absolute;left:50%;bottom:9%;transform:translateX(-50%);
+  width:56%;height:9px;border-radius:50%;pointer-events:none;
+  background:radial-gradient(50% 50% at 50% 50%,var(--cl-2),transparent 72%);
+  opacity:.3;animation:clPool 3.6s ease-in-out infinite;
+}
 
 /* ---- she is alive ------------------------------------------------------- */
 @keyframes clBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
-@keyframes clBlink{0%,92%,100%{transform:scaleY(1)}95%,97%{transform:scaleY(.08)}}
-@keyframes clWave{0%,100%{transform:rotate(0)}25%{transform:rotate(-14deg)}70%{transform:rotate(9deg)}}
-@keyframes clSpin{to{transform:rotate(360deg)}}
-@keyframes clPool{0%,100%{opacity:.28;transform:scaleX(1)}50%{opacity:.4;transform:scaleX(1.06)}}
-.cl-eye{transform-box:fill-box;transform-origin:center;animation:clBlink 5.4s ease-in-out infinite}
-.cl-eye.r{animation-delay:.04s}      /* the two lids are never quite in step */
-.cl-wave{transform-box:fill-box;transform-origin:6% 96%;animation:clWave 2.8s ease-in-out infinite}
-.cl-base{transform-box:fill-box;transform-origin:center;animation:clPool 3.6s ease-in-out infinite}
-/* Free-running hands when no session is on the clock; when one is, JS drives
-   the minute hand to the fraction of the block remaining and this stops. */
-.cl-hmin,.cl-hhr{transform-box:view-box;transform-origin:64px 68px}
-.cl-hmin{animation:clSpin 60s linear infinite}
-.cl-hhr{animation:clSpin 720s linear infinite}
-.clep.timed .cl-hmin,.clep.timed .cl-hhr{animation:none}
+/* The pool is centred with translateX(-50%), so every keyframe has to RESTATE
+   it — a bare scaleX() replaces the whole transform and shunts the ellipse
+   half its width to the right. */
+@keyframes clPool{
+  0%,100%{opacity:.3;transform:translateX(-50%) scaleX(1)}
+  50%    {opacity:.42;transform:translateX(-50%) scaleX(1.07)}
+}
+/* Blink, wave and the sweeping hands are GONE with the SVG. They were per-part
+   animations and a flat sprite has no parts; the artwork has no hands to sweep
+   either. What still carries her is on the container, not the drawing: the bob,
+   the scanlines, the glitch bursts and the glow. The session time now lives
+   only in the HUD pill, which is where a reader actually looks for it. */
 
 /* ---- projection artefacts ----------------------------------------------- */
 .cl-scan{
@@ -1816,15 +1863,32 @@ button.card:hover .mod-art{opacity:1;filter:saturate(1.12)}
 .clep.mini .cl-body,.clep.mini .cl-col{display:none}
 .clep.mini .cl-mini{display:inline-flex}
 
-/* ---- light: she is a projection on parchment, so the line work darkens --- */
-/* The disc keeps its own colour on parchment — it is a painted object, not a
-   glow — so the ramp only deepens a step and the halo pulls back. Every cream
-   shape now carries its own dark contour, which is what retired two earlier
-   workarounds: a separate --cl-hand token and a .cl-limb outline class, both
-   of which existed only because unoutlined white vanished on cream. */
+/* ---- docked to the other corner -----------------------------------------
+   On the question screens she stands bottom-LEFT (user, 2026-08-02). Skip and
+   Next are pushed hard against the RIGHT edge of the question card — .qactions
+   does it with margin-left:auto — so in her usual corner she was sitting on
+   top of the two buttons the reader presses most.
+
+   The row is REVERSED rather than the figure being moved on its own: her
+   bubble, readout and tools all hang off her, and left un-flipped they would
+   run off the left edge of the window. Flipping puts the figure on the outside
+   and everything that grows on the inside, where there is room.
+
+   These rules only need to beat the base corner when nothing is stored;
+   clepPlace() writes inline left/top when she has been dragged, and inline
+   always wins. ------------------------------------------------------------ */
+.clep.left{flex-direction:row-reverse;right:auto;left:20px}
+.clep.left .cl-col{align-items:flex-start}
+.clep.left .cl-say{transform-origin:0 100%}
+.clep.left .cl-say::after{right:auto;left:-6px;transform:rotate(135deg)}
+
+/* ---- light: only her CHROME re-themes now -------------------------------
+   The figure itself does NOT change between themes and must not be made to:
+   it is one fixed piece of artwork, and a filter that "adapts" it for
+   parchment would be repainting the user's drawing. What still flips is the
+   panel, the text, the edge and the halo — all CSS around her. */
 :root[data-theme="light"] .clep{
-  --cl-hi:#ffdcae; --cl-1:#f0a24d; --cl-2:#d9701a; --cl-3:#a8460b; --cl-4:#6d2b06;
-  --cl-out:#3b1705; --cl-w:#fffaf0; --cl-d:#3d1a05; --cl-rim:#ffcf96;
+  --cl-1:#a4540a; --cl-2:#c2670f; --cl-w:#fffaf0;
   --cl-glow:rgba(196,100,20,.26); --cl-glow2:rgba(196,100,20,.12);
   --cl-panel:#fff6e6; --cl-text:#4a2c07; --cl-edge:rgba(164,84,10,.42);
 }
@@ -1834,7 +1898,8 @@ button.card:hover .mod-art{opacity:1;filter:saturate(1.12)}
 /* ---- small screens: she gets out of the way ----------------------------- */
 @media(max-width:700px){
   .clep{right:12px;bottom:12px}
-  .cl-body{width:72px;height:95px}
+  .clep.left{right:auto;left:12px}
+  .cl-body{width:84px;height:84px}   /* SQUARE, like the desktop size — see above */
   .cl-say{max-width:min(64vw,240px);font-size:12.6px}
 }
 
@@ -1842,9 +1907,12 @@ button.card:hover .mod-art{opacity:1;filter:saturate(1.12)}
 /* Reduced motion keeps the companion but stops every loop, including the ones
    JS starts: clepGlitch() checks the same query before scheduling a burst. */
 @media (prefers-reduced-motion:reduce){
-  .cl-stage,.cl-eye,.cl-wave,.cl-base,.cl-hmin,.cl-hhr,.cl-scan{animation:none!important}
+  .cl-stage,.cl-base,.cl-scan{animation:none!important}
   .clep.gl .cl-stage{animation:none!important}
   .clep.gl .cl-fig{filter:drop-shadow(0 0 4px var(--cl-glow))!important}
+  /* the pose still changes — it just cuts, with no tear and no burst */
+  .clep.swap .cl-ghost,.clep.swap .cl-main,.clep.swap .cl-band{animation:none!important}
+  .cl-ghost{opacity:0!important}
   .cl-band{display:none}
   .cl-say{transition:none}
 }
@@ -3219,7 +3287,7 @@ function render(){
   revealOnScroll(p);
   /* The companion travels with the view: she repaints her readout and, the
      first time she meets a screen, explains it. */
-  clepPaint(); clepOnView();
+  clepPaint(); clepPlace(); clepOnView();
 }
 
 /* Fade cards up as they enter the viewport — browse screens only. Reading
@@ -3454,6 +3522,8 @@ function revealCase(){
     scheduleSRS(q.id,g.ok);
   }
   markDayActive();save();render();
+  /* a case is graded got/total, so partly right gets its own reading */
+  clepPose(g.ok?'dancing':(g.got>0?'thinking':'surprised')); clepSettle(3200);
 }
 /* Deliberate escape hatch for a learner who is stuck. It is never automatic,
    it scores nothing and it records no answer — otherwise a case with no
@@ -3653,6 +3723,8 @@ function reveal(){
     scheduleSRS(q.id,ok);
   }
   markDayActive();save();render();
+  /* she reacts, then settles back to the screen's own pose */
+  clepPose(ok?'dancing':'surprised'); clepSettle(3200);
 }
 function setConf(id,c){
   S.conf[id]=c;
@@ -3670,6 +3742,9 @@ function navQ(d){
   if(n<0)return;
   if(n>=Q.ids.length){finishSet();return}
   Q.i=n;Q.sel=null;Q.shown=false;Q.txt='';Q.peek=false;render();
+  /* a new question: back to the screen's own pose. clepOnView cannot do this —
+     the view key has not changed, so its dedupe returns early. */
+  clearTimeout(CLEP.settleT); clepPose(clepViewPose());
 }
 function finishSet(){
   const done=Q.ids.filter(id=>isAnswered(id));
@@ -3677,6 +3752,8 @@ function finishSet(){
   const mins=Math.round((Date.now()-Q.t0)/60000);
   const pct=done.length?Math.round(right/done.length*100):0;
   if(pct>=80&&done.length>=3)confetti();
+  /* the end of a set is the one moment she gets to jump */
+  clepPose(pct>=80&&done.length>=3?'jumping':'presenting'); clepSettle(5000);
   const face=ico(pct>=90?'laurel':pct>=75?'target':pct>=50?'hourglass':'scroll',40);
   showModal(`<h3>${face} ${pct}%</h3>
    <p>You answered <strong>${done.length}</strong> question${done.length===1?'':'s'} and got <strong>${right}</strong> right${mins?` in ${mins} min`:''}.
@@ -4454,169 +4531,102 @@ function jump(id){$('search').value='';$('results').classList.remove('show');sta
    and are deliberately not synced.
    ============================================================================ */
 const CLKEY='wardround.clep';
-/* CL_R is the FACE radius, not the silhouette: the bezel rides at 36.4 outside
-   it, and the wreath at CL_R+7.5 clears both. It dropped 35 -> 31 when she
-   became a solid disc; leaving it at 35 throws the leaves off the rim. */
-const CL_CX=64, CL_CY=68, CL_R=31;
-const CLEP={on:false,mini:false,muted:false,pos:null,seen:{},
-            typer:null,hideT:null,glT:null,tickT:null,lastSay:0,idleT:null};
+const CLEP={on:false,mini:false,muted:false,pos:null,posQ:null,seen:{},
+            typer:null,hideT:null,glT:null,tickT:null,lastSay:0,idleT:null,
+            pose:null,swapT:null,settleT:null,shiftT:null};
 
-/* ---- the figure. Ticks and laurel are computed, so the maths sits with the
-   drawing rather than being frozen into a path string by hand. ------------ */
-function clTicks(){
-  let o='';
-  for(let i=0;i<12;i++){
-    const a=i*30*Math.PI/180, q=i%3===0;
-    const r1=q?22.5:24.5, r2=27.5;
-    o+=`<line class="cl-tick${q?' q':''}" x1="${(CL_CX+r1*Math.sin(a)).toFixed(1)}"
-        y1="${(CL_CY-r1*Math.cos(a)).toFixed(1)}" x2="${(CL_CX+r2*Math.sin(a)).toFixed(1)}"
-        y2="${(CL_CY-r2*Math.cos(a)).toFixed(1)}"/>`;
-  }
-  return o;
-}
-/* Woodgrain, the way the reference art streaks the disc. Deterministic rather
-   than random, so she never shimmers between two paints of the same figure. */
-function clGrain(){
-  let o='';
-  [-24,-18,-12,-5,3,10,17,23].forEach((dx,i)=>{
-    const bow=(i%2?1:-1)*(2+(i%3));
-    o+=`<path class="cl-grain" d="M${CL_CX+dx} ${CL_CY-32}q${bow} 32 0 64" opacity="${(0.16+0.05*(i%3)).toFixed(2)}"/>`;
-  });
-  return o;
-}
-/* Leaves lie along the rim's TANGENT and stay inside the top arc, 59°–121°.
-   Two drafts died here: pointed radially they render as a spiked crown, and
-   carried round to the sides (~30°/150°) they render as pigtails. */
-function clWreath(){
-  const rr=CL_R+7.5, out=[];
-  const put=(deg,len,tilt)=>{
-    const a=deg*Math.PI/180;
-    const x=CL_CX+rr*Math.cos(a), y=CL_CY-rr*Math.sin(a);
-    const rot=Math.atan2(-Math.cos(a),-Math.sin(a))*180/Math.PI+tilt;
-    const w=len, h=len*0.44, f=n=>n.toFixed(1);
-    out.push(`<g transform="translate(${f(x)},${f(y)}) rotate(${f(rot)})">
-      <path d="M${f(-w/2)} 0Q${f(-w/6)} ${f(-h)} ${f(w/2)} 0Q${f(-w/6)} ${f(h)} ${f(-w/2)} 0z"
-        fill="url(#clLeaf)" stroke="var(--cl-out)" stroke-width="1.1" stroke-linejoin="round"/>
-      <path d="M${f(-w/2+1.6)} 0H${f(w/2-1.6)}" stroke="var(--cl-out)" stroke-width=".8" opacity=".5" fill="none"/></g>`);
-  };
-  [[121,19],[103,17],[92,13]].forEach(p=>put(p[0],p[1],-20));
-  [[59,19],[77,17],[88,13]].forEach(p=>put(p[0],p[1],20));
-  return out.join('');
-}
-/* A rubber-hose limb is THREE strokes, not one: a warm rim so a near-black limb
-   still reads on the app's near-black ground, the dark tube itself, then a
-   top-left highlight that turns a flat stroke into a cylinder. */
-function clHose(d,w){
-  return `<path d="${d}" fill="none" stroke="var(--cl-rim)" stroke-width="${w+2.6}" stroke-linecap="round" opacity=".42"/>
-    <path d="${d}" fill="none" stroke="var(--cl-out)" stroke-width="${w}" stroke-linecap="round"/>
-    <path d="${d}" fill="none" stroke="var(--cl-rim)" stroke-width="${(w*0.3).toFixed(2)}" stroke-linecap="round" opacity=".5" transform="translate(-0.7,-0.8)"/>`;
-}
-/* One eye: cream lens, domed iris, two speculars. Tilted outward, as drawn. */
-function clEye(cx,cy,tilt){
-  return `<g class="cl-eye${tilt>0?' r':''}"><g transform="rotate(${tilt} ${cx} ${cy})">
-    <ellipse cx="${cx}" cy="${cy}" rx="9.6" ry="11.6" fill="url(#clEyeG)" stroke="var(--cl-out)" stroke-width="1.6"/>
-    <circle cx="${cx+1.3}" cy="${cy+2.2}" r="4.9" fill="url(#clIris)"/>
-    <circle cx="${cx+3}" cy="${cy}" r="1.9" fill="#fff" opacity=".95"/>
-    <circle cx="${cx-1.6}" cy="${cy+4.6}" r="1" fill="#fff" opacity=".6"/>
-  </g></g>`;
-}
-function clLashes(cx,cy,s){
-  return `<path class="cl-lash" d="M${cx-7.4*s} ${cy-9.2}l${-2.6*s} -3.2M${cx-0.6*s} ${cy-11.8}l${-1*s} -4M${cx+6.2*s} ${cy-9.8}l${1.6*s} -3.6"/>`;
+/* ---- the figure, in nine poses ------------------------------------------
+   THE USER'S OWN ARTWORK, not a drawing of it. Nine poses supplied on
+   2026-08-02, cut out of their white sheet and landed on one shared 360x360
+   canvas — see CLAUDE.md for the cutout and the alignment, and why a colour
+   threshold cannot do either.
+
+   She faces the viewer in all nine and wears her own gold wreath. That
+   retired two earlier pieces of work: the CSS stephane (she has a real crown
+   now) and the note that she could not be turned to face the reader.
+
+   An <img> is NOT CORS-blocked over file:// the way a font or an ES module
+   is, so a relative path works from a double-clicked copy. Only the bundler
+   turns these into data: URIs, because a single file has no assets/ folder —
+   which is why the filename is a VALUE in this map rather than being built
+   inline, exactly as MOD_ART is.
+   ------------------------------------------------------------------------ */
+const CLEP_POSES={
+  waving:'waving', welcoming:'welcoming', talking:'talking', pointing:'pointing',
+  thinking:'thinking', surprised:'surprised', dancing:'dancing',
+  jumping:'jumping', presenting:'presenting'
+};
+const CL_REST='waving';
+function poseSrc(p){ return `assets/clep/${CLEP_POSES[p]||CLEP_POSES[CL_REST]}.png`; }
+
+/* Which pose belongs to which screen. Anything not named here falls back to
+   CL_REST, so a view added later cannot throw. */
+const CL_POSE_VIEW={
+  home:'welcoming', module:'pointing', theory:'pointing', flagged:'pointing',
+  moved:'pointing', schedule:'presenting', session:'presenting',
+  quiz:'thinking', mock:'thinking', review:'thinking'
+};
+/* The rest poses she drifts between when nothing is happening. Kept to the two
+   that read as "waiting" — the expressive ones are reserved for events, or
+   they stop meaning anything. */
+const CL_IDLE_POSES=['waving','welcoming'];
+
+/* Every pose is fetched once, up front. Without this the first swap to a pose
+   shows an EMPTY frame while the file loads — the ghost has already faded and
+   the incoming image has no pixels yet. Decoding costs nothing later. */
+function clepPreload(){
+  Object.keys(CLEP_POSES).forEach(p=>{ const i=new Image(); i.src=poseSrc(p); });
 }
 function clepFigure(){
-  return `<svg class="cl-fig" viewBox="0 0 128 168" aria-hidden="true" focusable="false">
-<defs>
-  <radialGradient id="clFace" cx="33%" cy="26%" r="86%">
-    <stop offset="0" stop-color="var(--cl-hi)"/><stop offset=".3" stop-color="var(--cl-1)"/>
-    <stop offset=".68" stop-color="var(--cl-2)"/><stop offset="1" stop-color="var(--cl-3)"/>
-  </radialGradient>
-  <linearGradient id="clBezel" x1="16%" y1="0%" x2="84%" y2="100%">
-    <stop offset="0" stop-color="var(--cl-1)"/><stop offset=".34" stop-color="var(--cl-3)"/>
-    <stop offset=".74" stop-color="var(--cl-4)"/>
-    <stop offset=".9" stop-color="var(--cl-2)"/>   <!-- bounce light off the desk -->
-    <stop offset="1" stop-color="var(--cl-4)"/>
-  </linearGradient>
-  <radialGradient id="clAO" cx="50%" cy="50%" r="50%">
-    <stop offset=".72" stop-color="var(--cl-4)" stop-opacity="0"/>
-    <stop offset="1" stop-color="var(--cl-4)" stop-opacity=".55"/>
-  </radialGradient>
-  <linearGradient id="clGloss" x1="0%" y1="0%" x2="60%" y2="100%">
-    <stop offset="0" stop-color="#fff" stop-opacity=".42"/>
-    <stop offset="1" stop-color="#fff" stop-opacity="0"/>
-  </linearGradient>
-  <radialGradient id="clGlove" cx="34%" cy="30%" r="80%">
-    <stop offset="0" stop-color="#fff"/><stop offset=".6" stop-color="var(--cl-w)"/>
-    <stop offset="1" stop-color="#e0bb92"/>
-  </radialGradient>
-  <radialGradient id="clEyeG" cx="34%" cy="28%" r="82%">
-    <stop offset="0" stop-color="#fff"/><stop offset=".62" stop-color="var(--cl-w)"/>
-    <stop offset="1" stop-color="#e6c49d"/>
-  </radialGradient>
-  <radialGradient id="clIris" cx="32%" cy="26%" r="78%">
-    <stop offset="0" stop-color="#96552a"/><stop offset=".55" stop-color="var(--cl-d)"/>
-    <stop offset="1" stop-color="#210c01"/>
-  </radialGradient>
-  <linearGradient id="clBoot" x1="20%" y1="0%" x2="70%" y2="100%">
-    <stop offset="0" stop-color="var(--cl-1)"/><stop offset=".55" stop-color="var(--cl-2)"/>
-    <stop offset="1" stop-color="var(--cl-3)"/>
-  </linearGradient>
-  <linearGradient id="clLeaf" x1="0%" y1="0%" x2="0%" y2="100%">
-    <stop offset="0" stop-color="var(--cl-1)"/><stop offset="1" stop-color="var(--cl-3)"/>
-  </linearGradient>
-  <clipPath id="clDialClip"><circle cx="64" cy="68" r="31"/></clipPath>
-</defs>
+  return `<img class="cl-fig cl-main" id="clepFig" src="${poseSrc(CL_REST)}"
+            alt="" draggable="false" width="360" height="360">`+
+         /* the ghost carries a src from the start: an <img> with none draws a
+            broken-image glyph in the corner, which is what shipped for one
+            render before a screenshot caught it */
+         `<img class="cl-fig cl-ghost" id="clepGhost" src="${poseSrc(CL_REST)}"
+            alt="" aria-hidden="true" draggable="false" width="360" height="360">`;
+}
 
-<ellipse class="cl-base" cx="64" cy="158" rx="34" ry="5.5"/>
+/* ---- changing pose ------------------------------------------------------
+   The swap is hidden inside a glitch burst rather than cross-faded: she is a
+   projection, and a projection that changes should fail and re-form. The
+   outgoing frame is copied into the ghost so it can be torn apart while the
+   new one comes up underneath it; both animations live in CSS.
 
-${clHose('M57 100c-1.6 12-2.4 20-2.6 28',3.2)}
-${clHose('M71 100c1.6 12 2.4 20 2.6 28',3.2)}
-<g>
-  <path d="M54.6 127.5v6.2c0 2.3-1.4 3.6-4 3.6H37.6c-2.5 0-3.8-1.1-3.8-2.7 0-1.9 1.8-2.8 4.7-4 3.4-1.4 5.6-2.5 6.6-3.7z" fill="url(#clBoot)" stroke="var(--cl-out)" stroke-width="1.6" stroke-linejoin="round"/>
-  <path d="M34.2 136.6h20.2" stroke="var(--cl-w)" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-  <path d="M45.6 128.6c1.6 2.4 4.4 3.6 8.8 3.6" stroke="var(--cl-out)" stroke-width="1.2" fill="none" opacity=".55"/>
-</g>
-<g>
-  <path d="M73.4 127.5v6.2c0 2.3 1.4 3.6 4 3.6h13c2.5 0 3.8-1.1 3.8-2.7 0-1.9-1.8-2.8-4.7-4-3.4-1.4-5.6-2.5-6.6-3.7z" fill="url(#clBoot)" stroke="var(--cl-out)" stroke-width="1.6" stroke-linejoin="round"/>
-  <path d="M93.8 136.6H73.6" stroke="var(--cl-w)" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-  <path d="M82.4 128.6c-1.6 2.4-4.4 3.6-8.8 3.6" stroke="var(--cl-out)" stroke-width="1.2" fill="none" opacity=".55"/>
-</g>
-
-${clHose('M34 90c-6.5 6-11.5 12.5-14.5 19',3)}
-<g>
-  <path d="M22.2 108.4c1.8 1.2 2.4 3.4 1.6 5.6l-2.4 6.4c-1.1 2.9-3.6 4.4-6.6 4.4-4 0-7-2.6-7.8-6.6-.6-3 .4-5.6 2.6-7.2l-2.8-1.4c-1.7-.9-2.2-2.6-1.3-4.1.9-1.5 2.7-1.8 4.4-.9z" fill="url(#clGlove)" stroke="var(--cl-out)" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M11.4 116.2c1.9 1.1 4.2 1.3 6.3.5M12.6 120c1.7.8 3.5.9 5.2.3" stroke="var(--cl-out)" stroke-width="1" fill="none" opacity=".55"/>
-  <ellipse cx="14.4" cy="112.6" rx="3.2" ry="2.1" fill="#fff" opacity=".5" transform="rotate(-30 14.4 112.6)"/>
-</g>
-
-<g class="cl-wave">
-  ${clHose('M94 62c7-4.5 13-11.5 16-19.5',3)}
-  <path d="M106.6 40.4c-1.4-3.4.4-6.4 3.4-7 2.4-.5 4.2.8 5 2.6l.4-4.6c.2-2 1.6-3.2 3.3-3 1.7.2 2.7 1.6 2.6 3.5l-.3 4.3 1.6-3.4c.8-1.7 2.5-2.4 3.9-1.7 1.4.7 1.8 2.4 1 4.1l-2.8 6.2c-1.6 3.6-4.4 5.8-8.2 5.8-4 0-7.4-2.4-9.9-6.8z" fill="url(#clGlove)" stroke="var(--cl-out)" stroke-width="1.5" stroke-linejoin="round"/>
-  <ellipse cx="111" cy="39.5" rx="3.2" ry="2.1" fill="#fff" opacity=".5" transform="rotate(-34 111 39.5)"/>
-  <path d="M104.6 47.6l3.6-2.2M106.6 50.4l3.4-2.2" stroke="var(--cl-out)" stroke-width="1.5" stroke-linecap="round" fill="none" opacity=".7"/>
-</g>
-
-<circle cx="64" cy="68" r="36.4" fill="url(#clBezel)" stroke="var(--cl-out)" stroke-width="2.4"/>
-<circle cx="64" cy="68" r="31" fill="url(#clFace)"/>
-<g clip-path="url(#clDialClip)">${clGrain()}</g>
-<circle cx="64" cy="68" r="31" fill="url(#clAO)"/>
-<circle cx="64" cy="68" r="31" fill="none" stroke="var(--cl-out)" stroke-width="1.9"/>
-<path d="M40 44.5A34 34 0 0 1 86 42" fill="none" stroke="var(--cl-hi)" stroke-width="2" stroke-linecap="round" opacity=".42"/>
-${clTicks()}
-
-<g class="cl-hmin"><line class="cl-hand-o" x1="64" y1="68" x2="64" y2="45"/><line class="cl-hand" x1="64" y1="68" x2="64" y2="45"/></g>
-<g class="cl-hhr" style="animation-delay:-240s"><line class="cl-hand-o" x1="64" y1="68" x2="64" y2="52"/><line class="cl-hand" x1="64" y1="68" x2="64" y2="52"/></g>
-<circle cx="64" cy="68" r="2.6" fill="var(--cl-w)" stroke="var(--cl-out)" stroke-width="1.4"/>
-
-${clEye(53,58,-6)}
-${clEye(75,58,6)}
-${clLashes(53,58,1)}
-${clLashes(75,58,-1)}
-<path d="M54.5 76.5c2.8 6.8 16.2 6.8 19 0 .4-1-.4-1.8-1.4-1.3-4.8 2.3-11.4 2.3-16.2 0-1-.5-1.8.3-1.4 1.3z" fill="var(--cl-d)" stroke="var(--cl-out)" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M58.6 80.4c2.6 1.5 6.8 1.5 9.4 0z" fill="#c4603f" opacity=".8"/>
-<ellipse cx="47" cy="50" rx="16" ry="10.5" fill="url(#clGloss)" clip-path="url(#clDialClip)" transform="rotate(-24 47 50)"/>
-
-${clWreath()}
-</svg>`;
+   Restarting the animation needs the class removed, a forced reflow, and the
+   class added again — without the reflow the browser coalesces the two style
+   changes and a second swap inside .46s simply does nothing. */
+const CL_SWAP_MS=460;
+function clepPose(name,opt){
+  opt=opt||{};
+  const el=$('clep'), fig=$('clepFig'), gh=$('clepGhost');
+  if(!el||!fig)return;
+  const p=CLEP_POSES[name]?name:CL_REST;
+  if(p===CLEP.pose&&!opt.force)return;
+  const prev=CLEP.pose||CL_REST;
+  CLEP.pose=p;
+  /* collapsed or hidden: no one can see her, so just hold the state */
+  if(el.hidden||CLEP.mini){ fig.src=poseSrc(p); return }
+  if(clepReduced()){ fig.src=poseSrc(p); return }   /* cut, no tear */
+  if(gh)gh.src=poseSrc(prev);
+  fig.src=poseSrc(p);
+  el.style.setProperty('--cl-band-y',(10+Math.random()*70).toFixed(0)+'%');
+  el.classList.remove('swap','gl');
+  void el.offsetWidth;                               /* reflow — see above */
+  el.classList.add('swap','gl');
+  clearTimeout(CLEP.swapT);
+  CLEP.swapT=setTimeout(()=>{ el.classList.remove('swap','gl') },CL_SWAP_MS);
+}
+/* The pose the current screen asks for. Used to settle her back after an
+   event pose, so "she reacted" always returns to "she is here with you". */
+/* guarded: clepShow() can run before `view` exists on a cold boot, and an
+   undefined global there would throw inside the mount rather than degrade */
+function clepViewPose(){
+  try{ return CL_POSE_VIEW[clepViewKey()]||CL_REST }catch(e){ return CL_REST }
+}
+function clepSettle(ms){
+  clearTimeout(CLEP.settleT);
+  CLEP.settleT=setTimeout(()=>clepPose(clepViewPose()),ms||2600);
 }
 function clepMiniDial(){
   return `<svg viewBox="0 0 24 24" width="21" height="21" fill="none" aria-hidden="true">
@@ -4628,11 +4638,15 @@ function clepMiniDial(){
 function clepLoadCfg(){
   try{
     const o=JSON.parse(localStorage.getItem(CLKEY)||'null');
-    if(o){CLEP.mini=!!o.mini;CLEP.muted=!!o.muted;CLEP.pos=o.pos||null}
+    /* posQ is the question screens' own spot and is read separately: an older
+       stored value has only `pos`, and she should fall back to the new default
+       corner there rather than inheriting the browsing one */
+    if(o){CLEP.mini=!!o.mini;CLEP.muted=!!o.muted;CLEP.pos=o.pos||null;CLEP.posQ=o.posQ||null}
   }catch(e){}
 }
 function clepSaveCfg(){
-  try{localStorage.setItem(CLKEY,JSON.stringify({mini:CLEP.mini,muted:CLEP.muted,pos:CLEP.pos}))}catch(e){}
+  try{localStorage.setItem(CLKEY,JSON.stringify(
+    {mini:CLEP.mini,muted:CLEP.muted,pos:CLEP.pos,posQ:CLEP.posQ}))}catch(e){}
 }
 const clepReduced=()=>matchMedia('(prefers-reduced-motion:reduce)').matches;
 
@@ -4656,6 +4670,7 @@ function clepMount(){
   </div>
   <div class="cl-body" id="clepBody" role="button" tabindex="0" aria-label="Clepsydra — ask about this screen">
     <div class="cl-stage">${clepFigure()}</div>
+    <span class="cl-base"></span>
     <span class="cl-scan"></span><span class="cl-band"></span>
   </div>
   <button class="cl-mini" onclick="clepMini()" aria-label="Bring the Clepsydra back">
@@ -4667,25 +4682,49 @@ function clepMount(){
   });
   addEventListener('resize',clepPlace);
   clepPaintTools();
+  clepPreload();
 }
 function clepShow(){
   clepMount();
   const el=$('clep'); if(!el)return;
   CLEP.on=true; el.hidden=false;
   el.classList.toggle('mini',CLEP.mini);
-  clepPlace(); clepGlitchLoop(); clepPaint(); clepIdleLoop();
+  clepPlace(); clepGlitchLoop(); clepPaint(); clepIdleLoop(); clepShiftLoop();
+  /* arrive in the pose this screen asks for, without a tear — there is no
+     previous pose to fail out of */
+  CLEP.pose=clepViewPose();
+  const fig=$('clepFig'); if(fig)fig.src=poseSrc(CLEP.pose);
 }
 function clepHide(){
   CLEP.on=false;
   const el=$('clep'); if(el)el.hidden=true;
   clearTimeout(CLEP.glT); clearTimeout(CLEP.idleT);
+  clearTimeout(CLEP.shiftT); clearTimeout(CLEP.settleT); clearTimeout(CLEP.swapT);
 }
 
-/* ---- where she stands --------------------------------------------------- */
+/* ---- where she stands ---------------------------------------------------
+   She keeps TWO spots, not one. On the question screens Skip and Next are
+   pinned to the right edge of the card and she was covering them, so there she
+   docks bottom-LEFT; everywhere else she keeps her usual bottom-right corner.
+   Two remembered positions rather than one, because a single one would mean
+   dragging her anywhere on a browse screen puts her back over the buttons the
+   next time a question opens. Both are device preferences, like the theme. */
+const CL_LEFT_VIEWS=['quiz','mock','review'];
+/* guarded the same way clepViewPose() is: clepPlace() can run before `view`
+   exists on a cold boot */
+function clepOnLeft(){
+  try{ return CL_LEFT_VIEWS.includes(view.name) }catch(e){ return false }
+}
 function clepPlace(){
   const el=$('clep'); if(!el||el.hidden)return;
-  const p=CLEP.pos;
-  if(!p){el.style.left=el.style.top=el.style.right=el.style.bottom='';return}
+  const left=clepOnLeft();
+  el.classList.toggle('left',left);
+  const p=left?CLEP.posQ:CLEP.pos;
+  if(!p){
+    el.style.left=el.style.top=el.style.right=el.style.bottom='';
+    if(left)clepClearRail(el);
+    return;
+  }
   /* clamped every time, not just on drag: a window that shrank between visits
      would otherwise leave her parked off-screen with no way back */
   const w=el.offsetWidth||160, h=el.offsetHeight||140;
@@ -4693,6 +4732,30 @@ function clepPlace(){
   const y=Math.min(Math.max(p.y,6),Math.max(6,innerHeight-h-6));
   el.style.left=x+'px'; el.style.top=y+'px';
   el.style.right='auto'; el.style.bottom='auto';
+}
+/* ⚠️ The window's bottom-left corner IS THE RAIL — 238px wide and full height —
+   and moving her onto it would only trade one covered control for another. The
+   rail is fixed too, so unlike an overlap with the question card that one
+   cannot be scrolled out of the way: the links would be under her for good.
+   Measured, not assumed: docked at the window edge at 1440x760 she landed on
+   Review deck and Mock exam.
+
+   So the left dock is the RAIL'S right edge, not the window's — the bottom-left
+   of the reading column. Asked of the element rather than encoded as a
+   breakpoint, because the rail slides off-canvas below 860px and there the bare
+   window edge is right again; one geometry test covers both.
+
+   Collapsed counts too. The pill looked small enough to be exempt and is not:
+   measured at 1366x768 it sat on Review deck. .cl-body is display:none then, so
+   its rect is all zeros — which reads as "at the window edge" and moves the
+   pill for the same reason, with no special case needed. */
+function clepClearRail(el){
+  const nav=$('nav'), body=el.querySelector('.cl-body');
+  if(!nav||!body)return;
+  const r=nav.getBoundingClientRect();
+  if(r.right<=body.getBoundingClientRect().left)return;   /* off-canvas, or clear */
+  el.style.left=Math.round(r.right+12)+'px';
+  el.style.right='auto';
 }
 function clepDrag(e){
   if(e.button!==undefined&&e.button!==0)return;
@@ -4706,7 +4769,9 @@ function clepDrag(e){
       moved=true; el.classList.add('drag');
     }
     if(!moved)return;
-    CLEP.pos={x:ev.clientX-ox,y:ev.clientY-oy};
+    /* the drag writes to whichever of the two spots this screen is using */
+    const at={x:ev.clientX-ox,y:ev.clientY-oy};
+    if(clepOnLeft())CLEP.posQ=at; else CLEP.pos=at;
     clepPlace();
   };
   const up=()=>{
@@ -4783,12 +4848,18 @@ function clepSay(text,opt){
   }
   const dwell=Math.min(15000,Math.max(4500,2600+total*46));
   CLEP.hideT=setTimeout(clepDismiss,dwell);
-  /* a small flicker as she speaks — she is a projection, not a chat window */
-  if(!clepReduced())clepGlitchBurst(120);
+  /* She turns to speak. The swap carries its own burst, so the bare flicker
+     that used to fire here would be a second, overlapping one. */
+  clearTimeout(CLEP.settleT);
+  if(opt.pose!==false)clepPose('talking');
+  else if(!clepReduced())clepGlitchBurst(120);
 }
 function clepDismiss(){
   clearInterval(CLEP.typer); clearTimeout(CLEP.hideT);
   const box=$('clepSay'); if(box)box.classList.remove('show');
+  /* back to whatever this screen asks for, so "she said something" always
+     resolves rather than leaving her mid-gesture */
+  if(CLEP.pose==='talking')clepSettle(900);
 }
 
 /* ---- the glitch --------------------------------------------------------- */
@@ -4890,6 +4961,10 @@ function clepOnView(){
   const k=clepViewKey()+(view.name==='module'?':'+view.id:'');
   if(k===_clLastView)return;
   _clLastView=k;
+  /* The pose follows the screen even when she is muted: muting silences her,
+     it does not freeze her. It sits ABOVE the mute check for that reason. */
+  clearTimeout(CLEP.settleT);
+  clepPose(clepViewPose());
   if(!CLEP.on||CLEP.muted||CLEP.mini)return;
   const seenKey=clepViewKey();
   if(CLEP.seen[seenKey])return;
@@ -4911,6 +4986,23 @@ function clepIdleLoop(){
     clepIdleLoop();
   },240000);
 }
+/* Ambient pose drift, separate from the idle chatter above and much more
+   frequent — she shifts her weight between the two resting poses so the corner
+   is not a still image, but she never does it on a reading screen, mid-speech,
+   or while an event pose is on display. Those three guards are what keep it
+   from becoming noise beside a clinical stem. */
+function clepShiftLoop(){
+  clearTimeout(CLEP.shiftT);
+  if(!CLEP.on||clepReduced())return;
+  CLEP.shiftT=setTimeout(()=>{
+    if(CLEP.on&&!CLEP.mini&&!STILL_VIEWS.includes(view.name)
+       &&CL_IDLE_POSES.includes(CLEP.pose)
+       &&Date.now()-CLEP.lastSay>9000){
+      clepPose(clPick(CL_IDLE_POSES.filter(p=>p!==CLEP.pose)));
+    }
+    clepShiftLoop();
+  },26000+Math.random()*44000);
+}
 
 /* ---- the readout -------------------------------------------------------- */
 function clMMSS(ms){
@@ -4930,16 +5022,12 @@ function clepPaint(){
       hud.innerHTML=`<span class="ph">${label}</span>${clMMSS(phaseLeft())}`;
     }
     if(mt)mt.textContent=clMMSS(phaseLeft());
-    /* the minute hand becomes the block: a full turn is the whole block, and
-       it winds down rather than round */
-    const frac=phaseMs()?1-phaseLeft()/phaseMs():0;
-    const h=el.querySelector('.cl-hmin');
-    if(h)h.style.transform='rotate('+(frac*360).toFixed(1)+'deg)';
+    /* The minute hand used to wind down here, one full turn per block. The
+       artwork has no hands, so the block's progress now lives only in the HUD
+       pill and the ring on the session screen. */
   }else{
     if(hud)hud.innerHTML='';
     if(mt)mt.textContent='Clepsydra';
-    const h=el.querySelector('.cl-hmin');
-    if(h)h.style.transform='';
   }
 }
 
@@ -4989,7 +5077,9 @@ function startSession(o){
     scope:o.scope||'all', paused:false, pausedAt:0
   };
   save(); sessStartTick(); clepPaint();
-  clepSay(`**${o.focus} minutes.** I have the clock — go.`,{force:true});
+  /* pose:false — startQuiz is about to move her to the quiz screen's pose,
+     and a turn-to-talk in between would be a third swap in under a second */
+  clepSay(`**${o.focus} minutes.** I have the clock — go.`,{force:true,pose:false});
   /* Starting a session should start the studying, not just the timer. */
   const ids=sessScopeIds(o.scope);
   if(ids.length)startQuiz(ids,sessScopeName(o.scope));
@@ -5043,10 +5133,14 @@ function endSession(completed){
     answered:st.n, correct:st.ok, scope:s.scope, completed:!!completed
   });
   S.sessLog=S.sessLog.slice(0,80);
-  S.sess=null; save(); sessStopTick(); clepPaint(); clepGlitchBurst(500);
+  S.sess=null; save(); sessStopTick(); clepPaint();
+  /* finishing the set she timed is worth a jump; stopping early is not.
+     The pose carries its own burst, so the bare one that was here is gone. */
+  clepPose(completed?'jumping':'presenting'); clepSettle(4200);
   clepSay(completed
     ? `Set complete: **${mins} min**, **${st.n}** questions${st.acc!==null?` at **${st.acc}%**`:''}.`
-    : `Stopped. **${mins} min**, **${st.n}** questions logged.`,{force:true});
+    : `Stopped. **${mins} min**, **${st.n}** questions logged.`,
+    {force:true,pose:false});   /* pose:false — she is mid-jump, do not turn her */
   render();
 }
 /* One second is enough: nothing here animates off this timer, it only repaints

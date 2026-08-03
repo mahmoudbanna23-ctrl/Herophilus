@@ -216,6 +216,11 @@ Log one row per batch: bank · pages · date · questions produced · anything u
 
 | 2026-07-26 | ENT endpoint | 398–426 | Ear Questions Q128–Q142 | `entep-ear-91`…`103` | 12 | 15 read, **3 dropped** (Q128 p.398 = `entep-ear-32`, its third reprint; Q129 p.400 = `entep-ear-56`; Q136 p.414 = `entep-ear-55`). No explanation box on any page. Q131/Q132 (pp.404/406) are a **linked pair** — Q132's stem says only "the condition in the previous case", so `entep-ear-93` carries a bracketed summary of Q131 to stand alone, flagged in its `source`. |
 
+> **Superseded — current total is 600 ENT items** (518 MCQs + 82 cases; 579 Endpoint, 21 House,
+> 0 Grade Gain), validated 2026-08-03. The three added since are `entep-mfe1-1…3`, from Model Final
+> Exam 1; **Model Final Exam 2 added none.** The dated snapshot below is kept as the record of what
+> was checked on 2026-07-27 and how.
+
 **Running total: 597 ENT items** — 515 MCQs (21 `enthd-` + 243 `entep-ear-` + 115 `entep-nose-`
 + 136 `entep-throat-`) + **82 free-text cases** (37 Ear `entep-case-`, 21 Nose `entep-nose-case-`,
 **24 Throat `entep-throat-case-`**).
@@ -1051,6 +1056,171 @@ discrepancy visible, so the learner knows which parts of their bank to distrust.
 **A source defect worth remembering: Q45–Q47 (pp.977–981) have NO vignette.** All three read "that
 patient" and no case is printed on any surrounding page. A bracketed vignette reconstructed from the
 bank's own answer key is supplied and marked as reconstructed in both stem and `source`.
+
+### ⚠️ THE MODEL FINAL EXAMS ARE COMPILATIONS, NOT NEW MATERIAL — 2026-08-02
+
+**Model Final Exam 1 (pp.1721–1875) is read end to end. 74 of its 77 MCQs were already held.**
+That is a **96% reprint rate**, and it changes the shape of everything left in this file.
+
+Structure, verified by render at both boundaries:
+
+| Pages | Content |
+|---|---|
+| p.1721 | title page, **"Model Final Exam 1"** |
+| pp.1722–1875 | **MCQs Q1–Q77, printed twice**; answered pages **ODD**, 1723–1875 |
+| p.1876 | title page, **"Model Final Exam 2"** — straight on, **no case section** |
+
+- **No parity flip anywhere in the exam.** `1723 + 2(n−1)` lands exactly on Q77 = p.1875, and every
+  sampled tile agreed. The arithmetic closing exactly on the last page is itself the proof there is
+  no stray page; it is worth checking before assuming a flip must be hunted.
+- **An exam does NOT end with free-text cases.** The three question *sections* all did; the exams do
+  not. Settled by rendering pp.1865–1876.
+- **Every one of the 77 answered pages carries an explanation box.** The longest unbroken run of
+  boxes in the file. They are the same AI-generated style as elsewhere — terse, two to three
+  sentences, later ones with a red lead-in phrase. None of the boxes read carried "Ask ChatGPT".
+
+**What it re-prints, and in what order.** The exam is assembled from consecutive runs off the front
+of each section — `entep-ear-1…25`, `entep-nose-1…24`, `entep-throat-1…24`, interleaved in blocks:
+
+| Exam questions | Maps to |
+|---|---|
+| Q1–Q3, Q5, Q8–Q10 | `entep-ear-1…4`, `6`, `7`, `8` |
+| Q11–Q23, Q51–Q56, Q59–Q62 | `entep-throat-1…24` |
+| Q25–Q34, Q57–Q58, Q63–Q65, Q68–Q71 | `entep-nose-1…20` |
+| Q35–Q48, Q66, Q72 | `entep-ear-9…25` |
+| Q73–Q77 | `entep-throat-24`, `entep-nose-21…24` |
+
+**Only three survived: Q7, Q50, Q67** → `entep-mfe1-1`, `-2`, `-3`. All three carry the source's own
+box, so none is authored.
+
+**⚠️ THE SOURCE'S OWN TYPOS ARE THE MAIN THING THAT DEFEATS A DUPLICATE CHECK — THREE CASES SO FAR**,
+and only the near-miss probe and the eye caught any of them. `entep-throat-25` vs Exam 2 p.1880 is
+the third: "Thyro**i**epiglottic" for thyroepiglottic. The two from Exam 1:
+
+- **Q24 p.1769** = `entep-nose-1` — option d printed "Retro**a**ryngeal abscess". The p.1378 printing
+  carries the *same* typo, so **the misspelling travels with the reprint** and defeated the check
+  both times.
+- **Q49 p.1819** = `entep-ear-23` — "Lateral **leminiscus**" for lemniscus.
+
+**Consequence for the method: the exact stem+options check is not enough, and neither is the sorted
+option-set check** (both missed these two — the option-set check hashes the misspelt string too).
+The loose probe that saved them matches on **the keyed answer's text plus the option count**, listing
+candidates for the eye rather than deciding. **Run all three.**
+
+**Q6 was a THIRD printing** of the mixed-hearing-loss item already folded from `entep-ear-5` into
+`entep-ear-32` on 2026-07-26. The removal comment left in the data file is what caught it — **those
+comments earn their keep; do not tidy them away.**
+
+### ⚠️ EXAM 2 IS NOT EXAM 1 — do not generalise the 96% — 2026-08-02
+
+Sampled 15 pages across pp.1876–2034 before committing. It differs on every axis that matters:
+
+- **Answered pages are EVEN** (Q1 answered p.1878), the opposite parity to Exam 1.
+- **Two one-page shifts inside the exam**, located to between Q42–Q51 and between Q71–Q73. Same
+  cause as the Throat section's p.1654: a stray page. **So parity is unstable again here.**
+- **Five options labelled A–E**, against Exam 1's four labelled a–d — a different authoring
+  generation, and the option sets are **rewritten** rather than reprinted. p.1880 Q2 and p.1900 Q12
+  ask the same items as Exam 1's Q19 and Q6 with entirely different distractors, which under the
+  standing rule are **kept as variants, not folded**.
+- **Linked sets** — Q71, Q73, Q75, Q76, Q77 all read "that patient's condition", hanging off a
+  vignette printed earlier in the exam.
+- p.1960 Q42 **is** an exact reprint of `entep-ear-37`, so it is not free of duplicates either.
+
+> **⚠️ CORRECTION, same day — the inference from that sample was WRONG.** Rewritten option sets read
+> like new questions, so this section first predicted "a much lower reprint rate and real
+> transcription work". **Q1–Q18 were then read in full and 18 of 18 were already held** —
+> `entep-ear-26…53` and `entep-throat-25…30`, i.e. the compilation pattern continuing from a *later*
+> slice of the same pool. The rewritten option sets match questions held from **further into** the
+> sections, not nothing at all.
+>
+> **The lesson is about the sample, not about Exam 2:** a 15-page spread across 79 answered pages
+> shows *formatting* reliably and *reprint rate* not at all, because a reprint is only visible after
+> the sweep. **Sample to find the parity, the option count and the shifts. Never sample to estimate
+> how much is new — run the sweep.**
+
+Sample each remaining block for its structure, then sweep every question in it.
+
+### MODEL FINAL EXAM 2 IS COMPLETE — 78 printings, ZERO new — 2026-08-03
+
+Read end to end, pp.1876–2034. **Every one of the 78 printings was already held**, so nothing was
+added. Exam 1 gave 3 new questions from 77; Exam 2 gives 0 from 78. The compilation finding is now
+established across both exams rather than resting on one.
+
+77 numbered questions but **78 printings — the number 71 is used twice**, once for a standalone item
+(p.2020) and once to open a linked set (p.2022).
+
+**Where it draws from.** Exam 1 re-printed the *first* ~25 of each section in consecutive blocks.
+Exam 2 reaches deeper and interleaves: `entep-ear-26…53`, `entep-nose-13…51`, `entep-throat-25…110`,
+in no order. So the two exams do not overlap much with each other — they sample different slices of
+the same pool.
+
+**⚠️ PARITY SHIFTED TWICE, and both times a spill page caused it** — an explanation box too tall for
+its tile, given a page of its own:
+
+| Range | Answered pages | |
+|---|---|---|
+| Q1–Q29 | **EVEN** 1878–1934 | |
+| — | p.1935 | spill: rest of Q29's box, "Causes of vertigo:" |
+| Q30–Q44 | **ODD** 1937–1965 | |
+| — | p.1966 | spill: rest of Q44's box, "Treatment of traumatic ear drum perforation:" |
+| Q45–Q77 | **EVEN** 1968–2034 | |
+
+This is the same mechanism as the Throat section's p.1654 and it is invisible except by checking
+each tile for a highlight. The earlier 15-page sample put the shifts "between Q42–Q51 and between
+Q71–Q73" — **both locations were wrong**; the real ones are Q29/Q30 and Q44/Q45. A sample can see
+*that* parity is unstable and cannot see *where*.
+
+#### ⚠️ A FOURTH, FUZZY CHECK IS NOW REQUIRED — one word defeated all three
+
+Eight of the last 60 came back "clean" from all three checks. Six were genuine variants with the
+option set rewritten, which the checks are not expected to catch. **Two were near-verbatim reprints
+that they missed anyway:**
+
+| | Held | This printing |
+|---|---|---|
+| Q34 p.1945 → `entep-ear-46` | "usually increases movement" | "usually increases **on** movement" |
+| Q58 p.1994 → `entep-ear-51` | "Diameter at cricoid region" | "Diameter at **the** cricoid region" |
+
+Both were found by grepping a distinctive phrase, not by any check. **An inserted or dropped word
+survives normalisation exactly as the source's own misspellings do** — "Retroaryngeal", "leminiscus",
+"Thyroiepiglottic", "MRL" — and the loose keyed-answer probe cannot see it either when the key text
+is the thing that changed.
+
+**So the sweep needs a fourth pass: token-overlap on the keyed answer.** Normalise, split to words,
+and list any held question whose keyed answer shares ≥80% of its tokens with a staged one. It is a
+candidate list for the eye, like check C, not a decision. Cheap to run and it would have caught both.
+
+**Q34 also produced a real correction.** pp.260 and 947 both print "usually increases movement";
+p.1945 prints it with the "on". The better printing wins, so option A was corrected and all three
+printings recorded in the source field.
+
+#### ⚠️ A source defect: Q75–Q77 have no vignette
+
+pp.2030, 2032 and 2034 all say "that patient" and **no vignette is printed for them anywhere** —
+verified by rendering pp.2028–2031 at full height, not inferred from the crop. Their keys reconstruct
+the missing case (nasal packing → juvenile nasopharyngeal angiofibroma → embolization). All three are
+held with their proper stems as `entep-nose-40/41/42`. This is the **second** such defect in the file
+— compare §"A defect in the source: Q45–Q47 have no vignette".
+
+#### The box style changes at Q62
+
+From p.2002 to the end, the explanation boxes are short, with a red keyword lead-in, and read closer
+to commentary than to the textbook extracts earlier in the file. **No "Ask ChatGPT" marker appears in
+any of them** — checked at full height on pp.2002, 2012, 2018, 2026. Nothing was taken from these
+boxes, since every question was already held, but the style change is a flag for review item 1.
+
+### Reading method refined — 2026-08-02
+
+**Two passes beat one.** Read the batch at `-CropTop 0.32`, which fits **18 pages** on a sheet and
+gives stem, options and the highlight but clips the box. Sweep those. Then re-render **only the
+survivors** at `0.45` for their explanation boxes. On a 96%-reprint block that turns 77 box-quality
+reads into 77 cheap ones plus 3 expensive ones.
+
+**⚠️ Sheet legibility depends on the sheet's WIDTH, not on how many pages are on it.** The read tool
+fits the image inside a 2000px box, so a 3-column sheet renders at the same scale whether it has 4
+rows or 6 — 3747px wide always comes back at 1.87×. An 18-page sheet at `0.45` is 4908px **tall**,
+which caps on height instead and drops to 2.45×, visibly tighter. So: **more rows are free at a
+shallow crop; a deep crop must stay at 12 pages.**
 
 ### Throat section behaviour, moved from `MEMORY.md` 2026-07-27
 

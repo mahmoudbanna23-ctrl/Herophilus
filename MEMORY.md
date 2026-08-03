@@ -1,47 +1,54 @@
 # Herophilus — Memory
 
-Running record for the Herophilus project, imported by `CLAUDE.md`. ISO dates only; anything
-unverified is marked as such rather than filled in. **This file holds only what is needed to pick the
-work up cold** — method and rules live in `CLAUDE.md`, detail and history in `progress\ledger.md`.
-Restructured 2026-07-28 around *resuming the work* rather than *when things happened*; previous
-version at `archive\MEMORY.pre-restructure-2026-07-28.md`.
+Running record for the Herophilus project. ISO dates only; anything unverified is marked as such
+rather than filled in. **This file holds only what is needed to pick the work up cold, and stays
+under 200 lines** — method and rules live in `CLAUDE.md`, detail and history in
+`progress\ledger.md`. **`CLAUDE.md` imports this file, so both are always in context: repeating a
+rule from `CLAUDE.md` here buys nothing and costs the budget.** Organised around *resuming the work*
+rather than *when things happened* (2026-07-28; previous version in `archive\`).
 
 ## Resume here
 
-**`ENT endpoint.pdf` p.1721 — the 7 Model Final Exams (pp.1721–2816), ~548 answered pages.** The
-largest block left in the project's largest source.
+**`ENT endpoint.pdf` p.2035 — Model Final Exam 3. Exams 1 and 2 are DONE.**
 
-**Nothing about this block is verified.** Render p.1721 onward and settle two things before choosing
-a batch size: **(1) is each exam printed twice**, unanswered then answered, and **(2) does an exam
-end with a free-text case set** — as all three question sections did on both counts. Then run the
-whole-file duplicate sweep **before writing anything**; a model exam is the likeliest place in the
-file to recycle questions already held.
+**The model exams are COMPILATIONS, and that is now established on both of them, not inferred from
+one.** Exam 1 (pp.1721–1875): 74 of 77 held, 3 new (`entep-mfe1-1…3`). **Exam 2 (pp.1876–2034):
+78 printings, ZERO new** — 77 numbers but 78 printings, because **the number 71 is used twice**.
+Exam 1 re-prints the *first* ~25 of each section in blocks; Exam 2 reaches deeper and interleaves
+(`entep-ear-26…53`, `entep-nose-13…51`, `entep-throat-25…110`), so the two barely overlap each other.
+Settled boundaries: **each exam IS printed twice** (unanswered then answered) and **an exam does NOT
+end with a case set**.
 
-After that: Recently Edited (~10 answered pages), Exam Night Review (~120), then the six other banks.
-**~678 answered pages remain in `ENT endpoint.pdf`.** **Order of work:** ENT → Pediatrics →
-Ophthalmology → Neuropsychiatry — all questions first across all four modules, then theory. **The
-full ENT review below is owed before Pediatrics begins.**
+**⚠️ SAMPLE FOR STRUCTURE, NEVER FOR REPRINT RATE — AND NEVER FOR WHERE A SHIFT IS.** A 15-page
+spread of Exam 2 predicted "mostly new" (wrong: zero new) and put its two parity shifts at Q42–Q51
+and Q71–Q73 (**both wrong**: Q29/Q30 and Q44/Q45). Both errors were made and corrected the same week.
+A sample shows the option count and *that* parity is unstable; nothing else. **Each shift is a spill
+page** — a box too tall for its tile, given a page of its own (pp.1935, 1966). **Check every tile.**
+
+**Method: two passes.** Read at `-CropTop 0.32` (18 per sheet — stem, options, highlight; box
+clipped), sweep, then re-render **only the survivors** at `0.45` for their boxes. `ledger.md` §7.
+
+After Exams 3–7: Recently Edited (~10 answered pages), Exam Night Review (~120), then the six other
+banks. **~480 answered pages remain in `ENT endpoint.pdf`**, but on two exams' evidence the *new*
+question count is far below that. **Order of work:** ENT → Pediatrics → Ophthalmology →
+Neuropsychiatry — all questions first across all four modules, then theory. **The full ENT review
+below is owed before Pediatrics begins.**
 
 ## What exists
 
-| Module | Chapters | MCQs | Cases | Theory chapters |
-|---|---|---|---|---|
-| ENT | 30 | 515 | 82 | 0 |
-| Ophthalmology | 26 | 0 | 0 | 0 |
-| Neuropsychiatry | 27 | 0 | 0 | 0 |
-| Pediatrics | 21 | 0 | 0 | 0 |
-| **Total** | **104** | **515** | **82** | **0** |
+**104 chapters** — ENT 30, Ophthalmology 26, Neuropsychiatry 27, Pediatrics 21. **All content is ENT
+so far**: 518 MCQs + 82 cases. The other three modules hold **0** questions, and **no theory chapter
+is written for any module**.
 
-`QUESTIONS.length` is **597** — MCQs and cases share one array. By bank: **576 Endpoint, 21 House,
-0 Grade Gain** (no Grade Gain question transcribed yet in any module). **All 30 ENT chapters hold at
-least one question.**
+`QUESTIONS.length` is **600** — MCQs and cases share one array. By bank: **579 Endpoint, 21 House,
+0 Grade Gain** (none transcribed yet in any module). **All 30 ENT chapters hold ≥1 question.**
 
-**Validated in-browser, and 597 confirmed in a real `file://` boot (2026-07-28):** 0 bad module or
-chapter refs, 0 duplicate ids, 0 broken cross-references, every `answer` index in range, option
-counts all 2–5, every case carrying a valid `answer` and non-empty `keys`, nothing missing a
-`source`, `explanation` or `objective`, and the chapter split sums to 597 (so no sparse array hole).
-**The preview pane serves a stale snapshot of an edited data file** — load it fresh into the live
-page instead (`CLAUDE.md` §7).
+**Fully validated in a real `file://` boot, 2026-08-03** — all 600 present, 0 bad module or chapter
+refs, 0 duplicate ids, every `answer` index in range, nothing missing a `source`, `explanation` or
+`objective`, every `THEORY` `qs` id resolving, 0 console errors. Re-run after every batch
+(`CLAUDE.md` §7). **⚠️ A bad escape in a `source` string kills the whole data file silently** — the
+app then boots to 82 questions with an empty error list, because the listener is registered by a
+later script. `\'` inside a single-quoted string, never `\\'`.
 
 **Lecture text cache — complete 2026-07-26.** 146 files in `content\<subject>\lectures\*.txt`,
 1.78 MB; 131 of 140 lecture PDFs and 15 of 16 PowerPoints yielded text. **Check this cache before
@@ -51,76 +58,50 @@ break it.
 
 ## The app
 
-**Boots clean from `file://`** — zero console errors, 4 modules, 104 chapters, 597 questions, all
-views rendering, re-verified 2026-08-02. `app\index.html` 269 KB, `fonts.js` 128 KB,
-`app\assets\` 1,262 KB.
+**Boots clean from `file://`** — zero console errors, 4 modules, 104 chapters, 600 questions, home
+rendering all 4 module cards, 9 Clepsydra poses, **761 CSS rules with all 3 `max-aspect-ratio:5/4`
+blocks intact**, re-verified 2026-08-03. (761 is a **recursive** count, which is the only kind that
+can see a swallowed media block; earlier figures of 708/710 were counted at top level and are not
+comparable.) `app\index.html` 272 KB, `fonts.js` 128 KB,
+`app\assets\` 2,344 KB (of which `assets\clep\` is 1,082 KB). Single-file bundle **4.77 MB**.
 **Fully WCAG-AA clean** — re-audited 2026-07-28: 1,294 text elements, 5 views × 2 themes, **zero
 real failures**. **Re-audit after any colour change**; a palette move already inverted one fix once.
 
-**Design — Greek, 2026-07-28**, from artwork the user supplied: light/dark parchment-and-ink,
-embedded Cinzel + EB Garamond, stroked SVG glyphs instead of emoji, duotoned module artwork, and a
-Herophilus dashboard panel whose biography comes from the user's image and **carries no page
-citation**. **Rules and traps: `CLAUDE.md` §6. Full history: `ledger.md` §12.**
+**What it is now:** Greek light/dark design from the user's own artwork (2026-07-28), an ambient film,
+and **the Clepsydra** — a hologram companion carrying the study-session timer (2026-08-02).
+Import/Export were replaced by automatic `wardround.bak.<profileId>` snapshots. **Every rule, token
+contract and trap is in `CLAUDE.md` §6, which loads alongside this file — deliberately NOT repeated
+here. History: `ledger.md` §12. Backups: `archive\index.pre-*.html`.**
 
-**Cards, glyphs and icon settled 2026-07-28** (backups `archive\index.pre-cards-2026-07-28.*`):
-module painting shown WHOLE, two per row; Neuro a brain, Pediatrics a teddy; **`Herophilus 3.png`
-is the icon AND the app's mark**, in **five** places that must move together. **`CLAUDE.md` §6.**
-
-**Ambient film added 2026-07-28** (backup `archive\index.pre-ambient-video-2026-07-28.html`):
-`assets\ambient-library.mp4`, 321 KB, **ping-pong looped**, paused by `syncFilm()` on reading views,
-dropped for reduced motion and print. **The gate carries its own second copy** — the only place type
-sits on the film (4.89:1 dark / 5.57:1 light). **`CLAUDE.md` §6.**
-
-**The Clepsydra + study sessions + automatic backup — 2026-08-02** (backup
-`archive\index.pre-clepsydra-2026-08-02.html`). A laurel-crowned hologram clock in the corner who
-carries the session timer across every screen and explains each one on first arrival; an original
-character in the Miss Minutes *idiom*, not a copy. New **Study session** view: focus/break/cycles,
-live ring, questions answered and accuracy inside the session, history. **Import/Export are gone** —
-replaced by rolling `wardround.bak.<profileId>` snapshots with silent restore. **She glitches on the
-reading views too — the user's explicit call, made after the concern was raised.**
-**Rules and traps: `CLAUDE.md` §6.**
-
-**She was REDRAWN the same day from the user's own Canva artwork, which is now her spec** — a solid
-orange woodgrain disc with dark line work, shaded in 3D by nine gradients, replacing bright outlines
-on nothing. Her copy was cut to roughly two-thirds at the same request. **The laurel is the one part
-NOT in the reference.** Three traps came with it, all in `CLAUDE.md` §6: **`CL_R` is the face radius
-(31), not the silhouette**; **the hands must be drawn before the eyes** or they rule a line across
-her face; and `--cl-hand` / `.cl-limb` are **retired**, not to be reintroduced.
+**⚠️ THE ONE THING THAT MUST SURVIVE ANY SUMMARY: THE CLEPSYDRA IS THE USER'S OWN ARTWORK** — nine
+poses at `app\assets\clep\*.png`, source at `Clypsedra\`. **Do not redraw her and do not draw
+anything onto her.** Three rounds of wasted work in one day; each time the answer was *ask for
+artwork, do not manufacture it*.
 
 **Still outstanding:** the **Notion board and PDF schedule still carry the old module colours** —
 the user accepted that divergence knowingly.
 
-**⭐ THE PREVIEW PANE CANNOT SCREENSHOT — use headless Chrome**, the only way to actually *look* at a
-change, and what killed two glyphs that were sound on paper. Method and traps: **`CLAUDE.md` §7**.
-
 ## Where transcription stands
 
-**All three `ENT endpoint.pdf` question sections are COMPLETE**, every boundary verified by render.
+**`ENT endpoint.pdf`: the three question sections and Model Final Exams 1 and 2 are COMPLETE**, every
+boundary verified by render — Ear pp.143–760 (243 entries), Nose pp.891–1185 (136), Throat
+pp.1350–1720 (160), Exam 1 pp.1721–1875 (3), Exam 2 pp.1876–2034 (**0**). Detail: `ledger.md`
+§"Transcribed ranges".
 
-| Section | Pages | Result | Done |
-|---|---|---|---|
-| Ear | 143–760 | Q1–Q298 + 37 cases → **243 `entep-ear-` entries** | 2026-07-26 |
-| Nose | 891–1185 | Q1–Q143 → 115 MCQs + 21 cases → **136 entries** | 2026-07-27 |
-| Throat | 1350–1720 | Q1–Q176 → 136 MCQs + Cases 1–26 → 24 → **160 entries** | 2026-07-27 |
+**All three SECTIONS share one shape:** MCQs printed **twice**, then a title page, then a case
+section printed **once**, two per page. **Not one of the 84 cases carries a printed explanation.**
+**⚠️ The MODEL EXAMS do NOT follow this shape — they carry no case section at all.**
 
-**All three sections share one shape:** MCQs printed **twice**, then a title page, then a case
-section printed **once**, two per page. **Not one of the 84 cases across Ear, Nose and Throat carries
-a printed explanation.** Expect the shape again and check only at the boundary.
+**Parity is not stable — never assume it.** Flipped four times across Ear and Throat and **twice
+inside Exam 2 alone** (Q29/Q30, Q44/Q45); Exams 1 and 2 start on opposite parities. Ranges: §7.
 
-**Parity is not stable — never assume it.** Flipped four times: twice in Ear pp.188–258, twice in
-Throat. The Throat flips are located exactly — answered pages are **even pp.1352–1462**, **odd
-pp.1465–1653**, **even pp.1656–1706**. The second has a visible cause: **p.1654 reprints Q150
-unanswered a second time**, one stray page that shifts every pairing after it.
+**Box presence is a property of the page, not the section.** The Throat section ran **103 consecutive
+answered pages with none** (pp.1537–1720), so every entry from `entep-throat-70` on is authored;
+Exam 1 then printed a box on **all 77**. **From Exam 2's Q62 (p.2002) the box style changes** —
+short, red keyword lead-in, commentary rather than textbook, no "Ask ChatGPT" marker in any checked.
 
-**Explanation boxes stopped at p.1535** — none across **103 consecutive answered pages, pp.1537–1720**,
-the longest boxless run in the file, so every entry from `entep-throat-70` onward is authored.
-**Box presence is a property of the page, not the section.**
-
-**⚠️ For CASES the ANSWER decides fold-vs-variant, not the stem.** Two vignettes can read nearly
-identically and still be different questions if the diagnosis demanded differs —
-`entep-throat-case-15` was kept against `entep-case-9` for exactly that reason (*"Right SOM"* vs
-*"SOM caused by NPC"*), while two other near-pairs were folded. A case has no options to compare, so
-this is the only test available.
+**⚠️ For CASES the ANSWER decides fold-vs-variant, not the stem** — a case has no options to compare,
+so it is the only test available. Worked example and precedent: `ledger.md` §"Fold or variant".
 
 ## Three rules that change what you do first
 
@@ -133,10 +114,15 @@ answers. **Read §7 before opening `ENT endpoint.pdf`.** These three govern the 
 - **NEITHER THE PRINTED NUMBERS NOR THE PAGE COUNT COUNTS THE QUESTIONS.** Only reading every
   answered page does.
 - **RUN THE DUPLICATE SWEEP OVER THE WHOLE FILE BEFORE WRITING A BATCH.** The file recycles across
-  section boundaries; since the sweep moved *before* the writing it has caught **17 reprints with
-  nothing wasted**. **Normalise first** — lowercase, strip punctuation, **sort the options**: most
-  reprints differ from their twin by a word, and the sorted option-set check is the only one that has
-  ever caught a cross-bank pair.
+  section boundaries; since the sweep moved *before* the writing it has caught **169 reprints with
+  nothing wasted** — 74 in Model Final Exam 1 and 78 in Exam 2. **Normalise first** — lowercase,
+  strip punctuation, **sort the options**: most reprints differ from their twin by a word, and the
+  sorted option-set check is the only one that has ever caught a cross-bank pair. **⚠️ FOUR CHECKS
+  ARE NOW REQUIRED**, the last two listing candidates for the eye rather than deciding: (3) keyed
+  answer plus option count, (4) **≥80% token overlap on the keyed answer**. A one-word or
+  one-character difference survives normalisation and defeats everything stricter — five catches so
+  far, from the source's own misspellings ("Retroaryngeal", "leminiscus", "Thyroiepiglottic", "MRL")
+  and from an inserted word ("increases **on** movement", "at **the** cricoid region").
 
 **Where the source prints no explanation box, the explanation is written here** — the rule and its
 marker are in `CLAUDE.md` §4. **156 passages** carry the flag. Grep for the live gap list; the
@@ -144,51 +130,50 @@ recurring ones are the nasopharynx, the eponymous signs, Vincent's angina and le
 
 ## Three question banks per module
 
-`endpoint` / `house` / `gradegain`, carried on every question as `bank` and filterable per module;
-map in `CLAUDE.md` §4. **Identify a bank by its COVER, not its filename.**
+`endpoint` / `house` / `gradegain`; map and cover-identification rule in `CLAUDE.md` §4.
 **Still missing: House for Neuropsychiatry, Grade Gain for Pediatrics** — not yet supplied.
 
-**⚠️ THE BANKS OVERLAP — and a duplicate spanning two banks is NEVER folded.** `enthd-ear-15` (House
-p.26) and `entep-throat-103` (Endpoint p.1623) are the same pyriform-fossa question, reworded. **Both
-kept**, cross-referenced, because `bank` is content the learner filters on — deleting either would
-misreport what that bank contains. **The one standing exception to the delete-duplicates rule**, and
-expect many more as the other banks are transcribed. Only the sorted option-set check found it.
+**⚠️ THE BANKS OVERLAP — and a duplicate spanning two banks is NEVER folded.** `bank` is content the
+learner filters on, so deleting either copy would misreport what that bank contains. **The one
+standing exception to the delete-duplicates rule** (precedent: `enthd-ear-15` / `entep-throat-103`),
+and expect many more as the other banks are transcribed.
 
 ## Owed in the end-of-ENT review
 
 **Detail, ids and reasoning: `progress\ledger.md` §11.** One line each so nothing is forgotten at the
 moment it matters. **Work this list before Pediatrics begins.**
 
-1. **Sweep every box read before p.1011 for the "Ask ChatGPT" marker** — 3 known, never swept below
-   p.1011.
-2. **67 entries record no provenance either way** — 46 inside `entep-ear-1`…`68` (pp.144–342) and all
-   21 House. Almost certainly authored, **not verified**. Closed by re-rendering pp.144–342 and one
-   House page.
-3. **Re-run the normalised duplicate check per module as it completes.** It has caught reprints every
-   time it was tightened.
+1. **Sweep every box read before p.1011 for the "Ask ChatGPT" marker** — 3 known, never swept below.
+2. **67 entries record no provenance either way** — 46 inside `entep-ear-1`…`68` and all 21 House.
+   Almost certainly authored, **not verified**. **⚠️ The Model Final Exams may close much of this for
+   free**: Exam 1 boxes `entep-ear-1…25`, `nose-1…24`, `throat-1…24`, and Exam 2 boxes
+   `entep-ear-26…53` — exactly the early no-provenance entries. Check before re-rendering pp.144–342.
+3. **Re-run the duplicate check per module as it completes** — all **four** variants of it.
 4. **⚠️ The nasopharynx — the highest-value single gap in ENT.** Up to **27** entries rest on outside
-   knowledge (upper bound, not verified entry by entry). **One ENT-nose-book read fixes the whole
-   set**, together with item 6.
+   knowledge (upper bound, unverified). **One ENT-nose-book read fixes it**, with item 6.
 5. **Fourteen Throat slide gaps**, incl. **Vincent's angina**, **leucoplakia**, and the **thyroglossal
    cyst's tongue-protrusion sign** — the last absent from **all 32** ENT files.
 6. **Three Nose slide gaps** — dangerous area of the face, CSF-leak management, ammonia as a
    trigeminal stimulus.
-7. **⚠️ Four disputed printed keys** — `entep-throat-77`, `entep-throat-83`, and Q136/Q153 of the
-   pp.1617–1706 batch. All transcribed **as keyed**, both readings recorded. **Case 10 (Ludwig's
-   angina, p.1712) makes the same clash as Q153.**
+7. **⚠️ Four disputed printed keys** — `entep-throat-77`, `83`, and Q136/Q153 of pp.1617–1706, all
+   transcribed **as keyed** with both readings recorded; **Case 10 (p.1712) clashes as Q153 does.**
+   Two more from Exam 1: **Q13 p.1747** keys *epiglottitis* in a **newborn**; **Q16 p.1753** keys
+   *medical treatment and follow-up* for a **teacher** with bilateral cord oedema where voice therapy
+   is standard teaching — **Exam 2 keys it the same way again at p.1902**, so it is the bank's
+   settled position, not a slip.
 8. **A full content and design review**, at the user's request, before the other three modules.
 
 ## Environment
 
 **Full details in `progress\ledger.md` §13** — Poppler and its PATH trap, the browsers, the
-PowerShell image pipeline, what is absent, and two native-exe gotchas. The four facts that change
-what you do first:
+PowerShell image pipeline, what is absent, and two native-exe gotchas. The facts that change what you
+do first:
 
 - **Poppler is installed** and handles the 332 MB file; **`pdftotext` returns 0 characters on every
-  book and question bank**, so scans must be rendered to PNG and read as images.
-- **The read tool rejects PDFs over 100 MB** — all 7 books and 3 of the 7 banks.
-- **No Python, Node, ImageMagick or Ghostscript**; images via PowerShell `System.Drawing`, video via **ffmpeg** (added 2026-07-28, off PATH).
-- **Headless Chrome is the only way to screenshot the app** (`CLAUDE.md` §7).
+  book and question bank**, so scans must be rendered to PNG and read as images. **The read tool
+  rejects PDFs over 100 MB** — all 7 books and 3 of the 7 banks.
+- **No Python, Node, ImageMagick or Ghostscript**; images via PowerShell `System.Drawing`, video via
+  **ffmpeg** (2026-07-28, off PATH). **Headless Chrome is the only way to screenshot the app.**
 - **The project is on GitHub, PRIVATE**: `mahmoudbanna23-ctrl/Herophilus`, branch `main`, first push
   2026-07-28. `Semester 8\` and `files.zip` are gitignored — **ledger §13 for the push method.**
 
@@ -205,11 +190,9 @@ published date, consistent with the schedule ending 2026-08-31. **Do not rebuild
 - **Reading all 1,637 book pages is not realistic.** Book reading is driven by the questions and by
   gaps in the slide text, using each book's contents page to locate ranges. **A chapter resting on
   slides and questions alone must be reported as such**, never implied to have book coverage.
-- **Measure, then believe.** *Check the sum and inspect the entries before recording any number* — a
-  count that did not reconcile has been written down **three times**. *Check the auditor before
-  believing the audit* — **three** successive contrast auditors produced false failures (`CLAUDE.md`
-  §7). Every one was caught by re-measuring, never by re-reading. README was rewritten against
-  `app\data\` on 2026-07-28 and its numbers are current; the stale "94 chapters" is gone.
+- **Measure, then believe.** *Check the sum before recording any number* — a count that did not
+  reconcile has been written down **three times**. *Check the auditor before believing the audit* —
+  **three** contrast auditors produced false failures (`CLAUDE.md` §7), each caught by re-measuring.
 - **Cleanup awaiting approval** — `Opthalmo\Theoritical\PPT\drive-download-…-001.zip` (173 MB)
   duplicates all 29 loose Ophthalmology lecture files, and two Pediatrics PPT files are broken stubs
   (`  Myocardial diseases.pdf` 134 B, `  stenotic lesions.pdf` 120 B). All sit inside `Semester 8\`,

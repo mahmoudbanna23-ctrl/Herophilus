@@ -644,26 +644,127 @@ fixes it. Found by rasterising the rail at 1:1 — it is invisible in source.
 ### The Clepsydra — 2026-08-02
 
 A κλεψύδρα is the Alexandrian water clock. She is the study companion: a warm
-amber cartoon clock, laurel-crowned, projected in the corner with scanlines, a
-flicker and random glitch bursts. **Original, not a copy of any existing
-character** — the user asked for a Miss Minutes lookalike and got the same idiom
-(rubber-hose clock, gloves, big eyes, hologram) with a Greek layer instead.
+amber cartoon clock in a chiton and a gold wreath, projected in the corner with
+scanlines, a flicker and random glitch bursts, and changing pose with the screen.
+**The character is the user's own** — they generated her in Canva after asking
+for a Miss Minutes lookalike, which is not something to reproduce; the app
+supplies the hologram treatment around their drawing, never the drawing.
 
-**REDRAWN 2026-08-02 FROM THE USER'S OWN CANVA ARTWORK, WHICH IS NOW THE
-REFERENCE.** They generated a vintage clock mascot themselves and said *"this is
-what I need"* — so the figure is matched to it rather than invented: a **solid
-orange woodgrain disc with dark line work**, big lashed cartoon eyes, cream
-mitten and open waving hand, orange boots with cream soles. That is close to the
-inverse of what she was, which was bright amber *outlines* on nothing, and it is
-why almost every rule below moved with it. **Her artwork is the spec — check the
-Canva reference before changing her proportions.**
+**⚠️ SHE IS THE USER'S OWN ARTWORK. DO NOT REDRAW HER, AND DO NOT DRAW ANYTHING
+ONTO HER.** Settled three times on 2026-08-02, the same lesson each time:
 
-**She is shaded, not flat** (the user asked for 3D). Nine gradients do it: a
-radial dome on the face, a metallic bezel carrying a bounce-light stop at 86%,
-an inner ambient-occlusion ring, a gloss ellipse clipped to the dial, and domed
-gradients on the eyes, iris, gloves, boots and laurel. **Six tokens now shade
-the disc light-to-deep** — `--cl-hi`, `--cl-1`…`--cl-4` — plus `--cl-out` for
-all line work, `--cl-w` cream, `--cl-d` for pupils and mouth, and `--cl-rim`.
+1. A hand-drawn SVG version was rejected — *"why don't you take the actual exact
+   design from Canva instead of redrawing it"*. ~150 lines of generated SVG went.
+2. A CSS stephane was drawn over her head when she had no crown. The user then
+   supplied poses that **already wear a gold wreath**, and the whole ornament had
+   to be deleted — it would have been a second crown.
+3. Her single pose could not be turned to face the reader. Rather than accept a
+   generated substitute, the user drew nine new poses.
+
+**Every time the answer was: ask for artwork, do not manufacture it.**
+
+### The nine poses — 2026-08-02
+
+`Clypsedra\*.png` (source, never edited) → `app\assets\clep\<pose>.png`, nine
+files, 360×360, 1,082 KB total. **She faces the viewer in all nine** and wears
+her own wreath and chiton, which retired both the "she cannot face you"
+limitation and the CSS crown.
+
+Poses: `waving` `welcoming` `talking` `pointing` `thinking` `surprised`
+`dancing` `jumping` `presenting`.
+
+**Cutting them out** (`Design\scripts\poses-cut.ps1`):
+
+- Same method as the first cutout: a **flood fill inward from the border that
+  judges each pixel against the NEIGHBOUR it spread from**, not against a fixed
+  seed. Her dark contour is a cliff the fill stops at.
+- **A brightness threshold cannot do it.** These sit on WHITE, and her chiton,
+  her gloves and her eye whites are all cream — "delete the bright pixels"
+  deletes exactly those.
+- Tolerance **6** here, against 3 for the orange original: a flat white sheet is
+  far more uniform than a radial gradient, so the fill needs no slack to cross
+  it and the extra headroom only helps at the anti-aliased edge. Two erosion
+  passes, and erosion only ever eats pixels that are themselves pale — never her
+  outline. 62–72% of each canvas removed.
+- `Welcoming.png` arrives **already transparent** and the other eight do not, so
+  the border seeding accepts either an alpha-0 pixel or a near-white one.
+
+**Aligning them** (`Design\scripts\poses-align.ps1`) — this is the part that
+makes a swap read as one character rather than two:
+
+- **⚠️ Do NOT align on the bounding box.** In `Jumping` and `Waving` her hands
+  rise above her head, so the box top is a *hand*; matching box tops sinks her
+  body by the height of an arm.
+- Seven of the nine arrive on an identical 377² canvas from the same generator,
+  so **their framing is already consistent** — they are scaled 360/377 and left
+  alone. Only `Presenting` (1254²) and `Welcoming` (1024²) are fitted, and for
+  those two the head *is* the topmost thing, so box top + box height works.
+- An automatic head-finder was written first and returned head widths of 24–91px
+  on a canvas where the head is ~250. **It was abandoned rather than debugged**,
+  because the framing was already given by the source.
+- **The check is an overlay, not a number**: all nine stacked at 22% opacity. A
+  sharp face means they register; a blurred one means they drift. Hers came out
+  sharp through the eyes, wreath and toga, with only the arms varying.
+
+**What a flat sprite costs:** blink, wave and the sweeping minute hand are gone —
+they were per-part SVG animations and a sprite has no parts. Session progress
+lives in the HUD pill and the ring. What still carries her is all on the
+container: the bob, the scanlines, the glitch bursts and the glow — **and now the
+pose changes, which give back most of what the per-part animation did.**
+
+### Changing pose — the glitch swap
+
+**A hologram does not dissolve, it fails and re-forms.** So the swap is not a
+cross-fade: `.cl-stage` holds **two** stacked `<img>`s, `.cl-main` and
+`.cl-ghost`. `clepPose(name)` copies the outgoing pose into the ghost, points
+the main at the new one, and adds `swap` + `gl` for 460 ms. The ghost is shunted
+sideways, squashed on the vertical and dropped in steps while the incoming pose
+rises underneath out of phase; the existing burst supplies the shake and the
+red/cyan split, so **the two systems cannot drift apart — the swap rides the
+glitch rather than reimplementing it.**
+
+- **460 ms is measured, not guessed.** Shorter reads as a flicker rather than a
+  change of pose; longer starts to feel like something the reader waits out.
+- **⚠️ The class must be removed, the layout forced, then added again.** Without
+  `void el.offsetWidth` between them the browser coalesces the two style changes
+  and a second swap inside the window silently does nothing.
+- **⚠️ The ghost needs a `src` from the moment it is built.** An `<img>` with
+  none draws a broken-image glyph in the corner — that shipped for exactly one
+  render before a screenshot caught it.
+- **Every pose is preloaded** by `clepPreload()`. Without it the first swap to a
+  pose shows an *empty* frame: the ghost has already faded and the incoming file
+  has not arrived.
+- **The same pose twice is a no-op**, or every `render()` would re-tear her.
+- **To photograph the transition, freeze it.** Headless gives one frame per run,
+  so `Design`-side `strip.ps1` pins the animation with a negative
+  `animation-delay` plus `animation-play-state:paused` and takes five runs.
+
+**Which pose goes where.** `CL_POSE_VIEW` maps screen → pose, and anything not
+named falls back to `CL_REST` so a view added later cannot throw. Events
+override it and then `clepSettle()` returns her to the screen's own pose.
+
+| | |
+|---|---|
+| home | `welcoming` |
+| module, theory, flagged, moved | `pointing` |
+| schedule, session | `presenting` |
+| quiz, mock, review | `thinking` |
+| while a bubble is open | `talking` |
+| right answer / wrong answer | `dancing` / `surprised` |
+| set finished ≥80%, session completed | `jumping` |
+
+- **The pose follows the screen even when she is MUTED.** Muting silences her,
+  it does not freeze her — the call sits above the mute check in `clepOnView()`
+  for that reason.
+- **`navQ()` has to set the pose itself.** `clepOnView()` cannot: the view key
+  has not changed between questions, so its dedupe returns early.
+- **`clepSay()` turns her to `talking`, so anything that sets a pose and then
+  speaks must pass `{pose:false}`** — otherwise `endSession()`'s jump is
+  overwritten by a turn-to-talk in the same tick.
+- **`clepShiftLoop()` is ambient drift**, 26–70 s, between the two resting poses
+  only, and it is skipped on the reading views, within 9 s of her speaking, and
+  whenever an event pose is on display. Those three guards are what keep it from
+  becoming noise beside a clinical stem.
 
 **Everything she says is generated from the data the screen renders from**, so a
 number she quotes cannot drift out of date with the page. `CL_TIPS` holds one
@@ -673,37 +774,93 @@ explainer per view; `clepFacts()` holds app facts. Never hardcode a count there.
   still not used.** She floats over a scrolling page and a blurred backdrop on a
   fixed element repaints every frame of that scroll.
 - **Layering: 150.** Under gate 200, confetti 250, modal 300, toast 400.
-- **The figure is generated, not hand-drawn**: `clTicks()`, `clGrain()`,
-  `clWreath()`, `clHose()`, `clEye()` and `clLashes()` compute their geometry, so
-  the maths lives beside the drawing. The woodgrain is **deterministic, not
-  random** — a `Math.random()` grain shimmers between two paints of one figure.
-- **⚠️ `CL_R` is the FACE radius (31), NOT the silhouette.** The bezel rides at
-  36.4 outside it and the wreath at `CL_R+7.5` clears both. It dropped 35 → 31
-  when she became a solid disc; leaving it at 35 throws the leaves off the rim
-  entirely, and nothing else in the file will complain.
-- **⚠️ THE CLOCK HANDS MUST BE DRAWN BEFORE THE EYES AND THE MOUTH.** They pivot
-  at the dial's centre and the eyes sit above it, so there is no hand length that
-  avoids them. Drawn *on top* they rule a bright line straight across her face —
-  she reads as struck through, which a still at 12 o'clock does not even reveal;
-  it took rendering the hands at two real times to see. Drawn *underneath* they
-  are occluded by the face, which is how a cartoon clock works. Cream core plus
-  a dark hairline (`.cl-hand` over `.cl-hand-o`), because the core reads on the
-  deep half of the dial and the hairline reads on the lit top-left.
-- **`--cl-rim` exists because a near-black limb on a near-black ground is
-  invisible.** The reference's limbs are black line work; the app's ground is
-  `#070d16`. `clHose()` therefore lays **three** strokes — a warm rim, the dark
-  tube, then an offset highlight that turns a flat stroke into a cylinder.
-- **~~`--cl-hand` and `.cl-limb`.~~ RETIRED 2026-08-02.** They existed because
-  unoutlined luminous white vanished on parchment. Every cream shape now carries
-  its own dark contour, so the condition is gone. Do not reintroduce them.
-- **The laurel died twice before it read as one.** Leaves pointed radially
-  render as a spiked crown; carried round to the sides (~30°/150°) they render
-  as pigtails. They must lie along the rim's TANGENT and stay inside the top arc,
-  59°–121°. Three big leaves a side, never four small — at 90px an 11-unit leaf
-  is under 8 screen pixels and the ring reads as serration.
-- **The laurel is NOT in the Canva reference** — it is the Greek layer the user
-  asked for separately ("a crown or something like that"). It is the one part of
-  her that is deliberately not matched to the artwork.
+
+### Which corner she stands in — 2026-08-02
+
+**She docks LEFT on the question screens and keeps the right corner everywhere
+else** (user's request: she was covering Skip and Next). `CL_LEFT_VIEWS` is
+`quiz`, `mock`, `review` — the three that render `.qactions`, whose right-hand
+group is pushed against the card's right edge by `margin-left:auto`, which is
+exactly where she stood.
+
+- **The row REVERSES, the figure does not just move.** Her bubble, readout and
+  tools hang off her; left un-flipped they run off the window. `.clep.left` sets
+  `flex-direction:row-reverse`, flips `.cl-col` to `flex-start`, and moves the
+  bubble's tail and `transform-origin` to the other side.
+- **⚠️ The window's bottom-left corner IS THE RAIL** — 238px wide, full height.
+  Docking at the window edge only traded one covered control for another, and a
+  worse one: the rail is `position:fixed` too, so unlike the question card that
+  overlap **cannot be scrolled away**. Measured at 1440×760, she landed on
+  *Review deck* and *Mock exam*. `clepClearRail()` therefore docks her to the
+  **rail's right edge**, in the gutter between rail and card.
+- **It asks the element, it does not use a breakpoint.** The rail slides
+  off-canvas below 860px and there the bare window edge is correct again; one
+  `getBoundingClientRect()` test covers both, where a media query would have to
+  encode the rail width, the 860px breakpoint and `.qwrap`'s 830px cap at once.
+- **Collapsed counts.** The pill looked too small to matter and was not — at
+  1366×768 it sat on *Review deck*. `.cl-body` is `display:none` when mini, so
+  its rect is all zeros, which reads as "at the window edge" and moves the pill
+  for the same reason with no special case.
+- **She keeps TWO remembered positions, `pos` and `posQ`.** One would mean a
+  single drag on a browse screen puts her back over the buttons the next time a
+  question opens. A stored value with only `pos` falls back to the new default
+  on the question screens rather than inheriting the browsing one.
+- **`clepPlace()` runs from `render()`**, not only from `clepShow()` and resize —
+  the corner is a function of the view now.
+- **Measured, at 1920×1080 / 1440×760 / 1366×768 / 1280×800 / 1100×900 /
+  900×700:** no overlap with the rail or with Skip/Next at any of them, on the
+  MCQ screen, the answered screen and the free-text case screen. Below ~1300
+  wide her figure overlaps the *card's left edge* — that is fine and deliberate,
+  because the card scrolls.
+- **⚠️ Her bubble opens over the card on a short window.** It is transient and
+  has a close button, and it did the same thing over the card from the right
+  corner before. Left alone.
+- **⚠️ `.cl-body` must match the artwork's aspect ratio, which is now 1:1.** It is
+  `112×112`, and `84×84` at the mobile breakpoint. Change one number without the
+  other and `object-fit:contain` letterboxes her inside her own drag handle —
+  silently, with no error. **Both sizes must move together.** It grew from 96
+  because the shared canvas has headroom: her figure fills ~83% of it rather than
+  all of it, so at the old size she rendered visibly smaller than before.
+- **⚠️ `.cl-base` sits at `bottom:9%`, not 0.** Her feet land at 89% of the shared
+  canvas; a light pool at the box edge floats below her.
+- **⚠️ `naturalWidth` is the only check that catches a broken `src`.** A wrong
+  path boots clean, throws nothing, logs nothing, and simply shows an empty
+  corner. Assert `img.complete && img.naturalWidth > 0`, never mere presence —
+  and assert it for **all nine**, not just the one on screen.
+- **The `<img>` is fine over `file://`** — images are not CORS-restricted the way
+  a font or an ES module is, so a relative path works from a double-clicked copy.
+  **Only the bundler turns them into data: URIs**, because a single file has no
+  `assets\` folder. That is why the filename is a **value in `CLEP_POSES`** and
+  the path is built at runtime by `poseSrc()` — the same shape as `MOD_ART`, so
+  `bundle.ps1` rewrites the map's values and drops the wrapper. Miss that step
+  and the corner goes empty on the first pose change.
+- **⚠️ The screenshot harness must copy the WHOLE `app\` folder.** Copying only
+  `index.html` left it with no `assets\clep\` and photographed a broken-image
+  glyph that looked exactly like an app bug.
+- **The light pool is a DOM element, not part of the sprite.** It has to pulse
+  with the bob, and baking it in would drag a grey ellipse onto the parchment
+  theme. `@keyframes clPool` **restates `translateX(-50%)` in every frame** — the
+  pool is centred with a transform, and a bare `scaleX()` replaces the whole
+  transform and shunts it half its width sideways.
+- **The figure does NOT re-theme, and must not be made to.** Only her chrome
+  flips: panel, text, edge, halo. A filter that "adapts" her for parchment is
+  repainting the user's drawing. Three tokens survive — `--cl-1` (bubble bold),
+  `--cl-2` (pool, tool hover), `--cl-w` (the small dial on her collapsed pill).
+- **~~She wears a CSS stephane.~~ DELETED 2026-08-02, same day it was built.**
+  It was drawn because her single pose had no crown. The nine poses **wear a
+  gold wreath in the artwork**, so the CSS one became a second crown on her head
+  and every rule serving it was removed: `.cl-crown`, `.cr-leaf`, `.cr-band`,
+  `.cr-gem`, `.cr-scan`, `--cl-cr`, `clepCrown()`.
+  **Do not rebuild it.** Two findings from it are worth keeping anyway:
+  - **⚠️ ANY CLOSED SHAPE ON HER HEAD READS AS A HAT at 30px.** A filled dome
+    photographed as a **pith helmet**; flattening it only turned it into a
+    **beret**. Openwork — a fillet with leaves rising off it — is what reads as
+    a crown. Three rounds, each judged by rasterising, none of it visible in the
+    source.
+  - **⚠️ Ornaments do not centre at 50%.** In the old artwork her head spanned
+    x=48..327 of 440, so its centre was **42.6%** of the box; centring on the box
+    parked the crown over her ear. **The new poses are centred**, but measure
+    before assuming that of any future artwork.
 - **Her copy is deliberately short** (user's request, 2026-08-02): the nine
   static `CL_TIPS` went 1,642 → 1,078 characters and `clepFacts()` 926 → 666,
   same information. A companion who talks past the second line stops being read.
