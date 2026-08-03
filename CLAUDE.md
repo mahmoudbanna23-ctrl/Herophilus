@@ -307,15 +307,58 @@ before that case graded correctly.
 
 ### Theory
 
+**⚠️ THE THEORY IS A NEW STUDY SOURCE, NOT A SUMMARY OF THE LECTURES — the user's explicit
+instruction, 2026-08-04.** It must be **sufficient to study and sit the exam from, on its own**,
+without opening a slide deck or a book. Verbatim: *"not as a short summary… use them all to make a
+new study source on your own that covers every important aspect of the lectures and ignoring the
+non-important parts… I want the study notes to be sufficient for me to depend on for my studying and
+preparations for the exams. It doesn't necessarily need to be short if it ignores important parts of
+the lecture."*
+
+**Length is never the goal. Completeness of the important is the goal.** If a chapter needs 4,000
+words, it gets 4,000 words. **Dropping something important to keep it short is the one unacceptable
+failure** — the user sits an exam on this.
+
 Written **backwards from the questions**. Read the chapter's question set first, work out what
 examiners actually test, then structure the notes around that — not around the textbook's ordering.
 
-Three sources, in this order of use:
+**What decides "important"** — the user's answer was *"based on the questions and your judgement."*
+Four tests, in this order. Anything meeting **one** of them is in:
+
+1. **The bank asks it.** Any fact that is the key, a distractor, or the discriminator of any
+   transcribed question in that chapter — including the *wrong* options, since knowing why they are
+   wrong is what the exam tests. This is the hard floor: **every question in a chapter must be
+   answerable from that chapter's notes alone.**
+2. **The slides give it weight** — a whole slide, a table, a bolded line, a repeated point, or the
+   lecturer's own emphasis. The slides define the syllabus's own scope.
+3. **Clinical judgement** — it changes management, it is an emergency, it is what distinguishes two
+   look-alikes, or missing it harms a patient. Red flags and complications stay in even when the
+   bank has never asked.
+4. **It is a named/eponymous entity, a classic sign, or a number** the material states — the things
+   MCQs are built from.
+
+**What gets dropped**, and it must be *said* that it was dropped: history-of-the-specialty asides,
+epidemiology with no bearing on an answer, drug doses the material does not state, mechanism deeper
+than the material goes, and anything the slides mention once in passing that no question touches.
+Record the omissions per chapter so a gap is a decision on the record, not an accident.
+
+**Use every source in the folder, not three.** Lecture slides and `.pptx`, the book, the transcribed
+questions, `examiner-patterns.md`, the Endpoint file's own notes and explanation boxes, and anything
+else in `Semester 8\` that proves useful. Order of use:
 
 1. **Lecture slides** — the backbone. They define the syllabus's own scope and ordering, and they
    cost nothing to read.
 2. **Questions + `examiner-patterns.md`** — set the emphasis, the `w` weighting, and the `intro`.
-3. **Book** — depth, mechanisms, and whatever the slides skip. Page-cited.
+3. **Endpoint's own notes/explanation boxes** — what the bank itself thinks the answer turns on.
+4. **Book** — depth, mechanisms, and whatever the slides skip. Page-cited.
+
+Anatomy and physiology textbooks are to be added to the folder by the user for diagrams; ask when
+one is needed rather than substituting outside knowledge.
+
+**Images, diagrams and charts are wanted** (user, 2026-08-04) — Chrome and Canva are available for
+producing them. Anything illustrative must still obey §5: an image taken from the material is cited
+like any other fact, and one produced here is marked as produced here. **Assets stay local** — no
+CDN, no hotlink, §2 still governs.
 
 Each chapter's `intro` states the *shape* of its questions — what the examiner keeps asking, not
 what the topic is.

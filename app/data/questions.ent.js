@@ -2279,7 +2279,7 @@ var Q_ENT = [
   answer:1,
   explanation:'**Maxillary sinus carcinoma** presents with unilateral nasal obstruction, epistaxis, and **infraorbital nerve involvement** causing cheek numbness. Occupational exposure (e.g., wood dust) is a major risk factor.',
   objective:'Unilateral obstruction + epistaxis + cheek numbness + wood-dust exposure = maxillary sinus carcinoma. Numbness means nerve invasion.',
-  source:'ENT AlexMed Endpoints, Nose Questions, p.893 (Q2) — the source prints its own explanation box here, transcribed verbatim' },
+  source:'ENT AlexMed Endpoints, Nose Questions, p.893 (Q2) — the source prints its own explanation box here, transcribed verbatim. **⚠️ DISPUTED KEY — the bank contradicts itself.** Reprinted at **Model Final Exam 7, p.2786 (Q63)** with the identical stem and the identical four options, but the highlight moved from **b (Sinonasal malignancy)** to **c (Inverted papilloma)**; that page prints no explanation box. **The p.893 key is the one kept**, because it is the printing the source itself explains, and because **numbness of the cheek means infraorbital nerve invasion** — a red flag for malignancy that a benign inverted papilloma does not produce; 20 years of **wood dust** as a carpenter is the classic occupational risk for sinonasal carcinoma. Not held twice: same stem, same options, so a second entry would only show the learner the same question again. Recorded in the end-of-ENT review.' },
 
 { id:'entep-nose-3', bank:'endpoint', module:'ent', chapter:'ent-epistaxis',
   stem:'Which artery is called the **artery of epistaxis**?',
@@ -2415,7 +2415,7 @@ var Q_ENT = [
   answer:1,
   explanation:'**CSF leaks** present with **clear, unilateral rhinorrhea that increases with head position or straining**. **Allergic or infectious causes are usually bilateral and not position-dependent**.',
   objective:'Unilateral clear rhinorrhoea worse on bending forward = CSF leak. Bilateral and position-independent points to rhinitis instead.',
-  source:'ENT AlexMed Endpoints, Nose Questions, p.927 — the source prints its own explanation box here, transcribed verbatim. **Source numbering error:** the identical question is printed as **Q19** (unanswered, p.926) and as **Q20** (answered, p.927); there is no separate Q19 answer page and no separate Q20 question page. Verified by rendering pp.924, 926 and 928.' },
+  source:'ENT AlexMed Endpoints, Nose Questions, p.927 — the source prints its own explanation box here, transcribed verbatim. **Source numbering error:** the identical question is printed as **Q19** (unanswered, p.926) and as **Q20** (answered, p.927); there is no separate Q19 answer page and no separate Q20 question page. Verified by rendering pp.924, 926 and 928. **Reprinted at Model Final Exam 7, p.2784 (Q62) with ALL FOUR OPTIONS REPLACED** — CSF rhinorrhoea deleted from the list — and keyed *juvenile angiofibroma*; held separately as `entep-mfe7-1`, where the key is dismantled. **This printing carries the answer the bank itself supports everywhere else.**' },
 
 { id:'entep-nose-20', bank:'endpoint', module:'ent', chapter:'ent-nasalmass',
   stem:'A **12-year-old male child** presented with **recent recurrent attacks of severe epistaxis**. **Anterior rhinoscopy was normal**. What is the most probable diagnosis?',
@@ -5422,6 +5422,43 @@ var Q_ENT = [
   answer:3,
   explanation:'**⚠️ Transcribed as the bank keys it — but the course material contradicts the key, and so does the bank itself.**\n\n**What the slide says.** `L16) Chronic otitis media.pdf`, under **Chronic Otitis Media (Tubo-tympanic type) → Symptoms**, gives the otorrhoea of this type as **"Muco-purulent, odourless, profuse and intermittent"** — which makes **option d a textbook description of tubotympanic disease, not an exception**. The same slide gives the perforation as **"Central, in pars tensa"** (option b) and cholesteatoma/granulations as **"Absent"**.\n\n**So options a, b and d are all features of the tubotympanic type.** The one that is not is **option c, "High incidence of complications"** — the tubotympanic type is called the **safe** type precisely because it lacks cholesteatoma and therefore rarely erodes bone or produces intracranial complications; a high complication rate belongs to the **attico-antral (unsafe)** type.\n\n**The bank keys option c correctly elsewhere.** `entep-ear-59` (p.318) prints this identical stem with option d reading "Negative Rinne test in the affected ear", and keys **"High incidence of complications"**. Exam 6 replaced that distractor with "Profuse odourless otorrhoea" and moved the highlight onto the replacement.\n\n**And it contradicts itself 47 pages earlier in this same exam.** Q15 (p.2535, held as `entep-ear-72`) asks "In safe chronic suppurative otitis the discharge is usually:" and keys **"Profuse and odorless"** — the very thing Q62 says is not seen. Its explanation box adds that safe CSOM gives "non-fetid, thin discharge due to central tympanic membrane perforation without cholesteatoma". `entep-ear-205` likewise reads "intermittent **odorless** discharge" with a central perforation as safe CSOM.\n\n**Answer option c if this stem appears with a full set of options.** Written for this bank — the endpoint file prints no explanation here.',
   objective:'**Safe = tubotympanic = profuse, odourless, mucopurulent, intermittent discharge through a CENTRAL perforation, and few complications.** Unsafe = attico-antral = scanty, fetid discharge through a marginal/attic perforation, with cholesteatoma and a high complication rate. **The bank mis-keys this one:** it marks the odourless discharge as the exception when the exception is the high complication rate.',
-  source:'ENT AlexMed Endpoints, Model Final Exam 6, p.2629 (Q62) — **p.2629 prints no explanation box**, the only unboxed page found in this exam. **⚠️ NOT a duplicate of `entep-ear-59`** despite an identical stem: that printing offers "Negative Rinne test in the affected ear" as option d and keys option c. Both are held, because the option sets and the keys differ. **DISPUTED KEY — recorded in the end-of-ENT review.** Contradicted by `L16) Chronic otitis media.pdf` (tubo-tympanic symptoms slide), by `entep-ear-59`, and by this exam\'s own Q15 at p.2535 (`entep-ear-72`).' }
+  source:'ENT AlexMed Endpoints, Model Final Exam 6, p.2629 (Q62) — **p.2629 prints no explanation box**, the only unboxed page found in this exam. **⚠️ NOT a duplicate of `entep-ear-59`** despite an identical stem: that printing offers "Negative Rinne test in the affected ear" as option d and keys option c. Both are held, because the option sets and the keys differ. **DISPUTED KEY — recorded in the end-of-ENT review.** Contradicted by `L16) Chronic otitis media.pdf` (tubo-tympanic symptoms slide), by `entep-ear-59`, by this exam\'s own Q15 at p.2535 (`entep-ear-72`), and by a **fourth** source found later: Model Final Exam 7 p.2722 prints an explanation box reading "Tubotympanic CSOM presents with **central perforation** and **safe, mucopurulent discharge** without complications."' },
+
+/* ==================================================================
+   MODEL FINAL EXAM 7 — pp.2660–2816
+   ------------------------------------------------------------------
+   The last exam of the block. 78 printings; the printed numbers run
+   1–77 with **70 used TWICE** (pp.2800 and 2802 are unrelated
+   questions both numbered 70). Title page p.2660; answered pages EVEN
+   2662–2816 throughout — no parity shift, no spill page, no case
+   section. 70 of the 78 pages carry an explanation box; the eight bare
+   ones are pp.2670, 2712, 2784, 2786, 2788, 2792, 2794 and 2808.
+
+   77 of the 78 are reprints. ONE new entry, and — as in Exam 6 — it is
+   new only because the bank rewrote the options and moved the key.
+
+   ⚠️ THIS EXAM HOLDS **TWO** SELF-CONTRADICTIONS, not the one that
+   Exams 4, 5 and 6 each held, and they sit on consecutive questions:
+
+   • Q62 (p.2784) reprints the stem of `entep-nose-19` verbatim,
+     REPLACES ALL FOUR OPTIONS — deleting the correct answer from the
+     list — and keys juvenile angiofibroma in a 30-year-old woman.
+     Held below as `entep-mfe7-1`.
+   • Q63 (p.2786) reprints `entep-nose-2` with the SAME four options
+     and simply moves the highlight from b to c. Same question, so it
+     is NOT held twice; the mis-key is recorded in that entry.
+
+   Both mis-keyed pages are among the eight that print no explanation
+   box — the same coincidence Exam 6 showed at p.2629.
+   ================================================================== */
+
+{ id:'entep-mfe7-1', bank:'endpoint',
+  module:'ent', chapter:'ent-nasalobs',
+  stem:'A **30-year-old female** patient has been suffering from **unilateral watery rhinorrhea which increases on bending forward**, what is the most probable diagnosis?',
+  options:['Juvenile angiofibroma','Inverted papilloma','Persistent adenoids','Antro-choanal polyp'],
+  answer:0,
+  explanation:'**⚠️ Transcribed as the bank keys it — but NONE of the four offered options fits this vignette, and the bank answers this same vignette correctly seven other times.**\n\n**What the vignette describes.** Unilateral, clear, watery rhinorrhoea that increases on bending forward is **CSF rhinorrhoea**. `L31) nasal symptoms 1.pdf` splits nasal discharge by laterality and puts **CSF rhinorrhoea first under "Unilateral"**, with allergic rhinitis and the other rhinitides under "Bilateral". *(The slides list the causes but do not name the bending-forward sign itself; that detail comes from the bank, not from the course material.)*\n\n**Why juvenile angiofibroma cannot be the answer.** `L26) nasal masses.pdf` states the tumour arises in **"Males during adolescence"** — this patient is a **30-year-old female**, wrong sex and roughly twice the age. The same slide gives its presentation as **nasal obstruction, epistaxis, ear fullness, facial asymmetry**, and a firm vascular lesion in the posterior nasal cavity on endoscopy. **Watery rhinorrhoea is not on that list at all**, and a vascular tumour that bleeds does not produce clear fluid.\n\n**The bank keys the same stem CSF rhinorrhoea elsewhere.** `entep-nose-19` (p.927) prints this **identical stem** with the options *atrophic rhinitis / CSF rhinorrhoea / allergic rhinitis / rhinoscleroma* and keys **CSF rhinorrhoea**, with the source\'s own explanation box. Exam 7 replaced all four options, which **removed the correct answer from the list**, and put the highlight on juvenile angiofibroma. The same diagnosis is keyed for the same picture at `entep-nose-28`, `entep-nose-59`, `entep-nose-73`, `entep-nose-103`, `entep-mfe5-8` and the free-text `entep-nose-case-5`.\n\n**What to do in the exam.** If CSF rhinorrhoea is offered, it is the answer. Faced with exactly these four options, the least wrong is **antro-choanal polyp** — it is at least unilateral — but it causes nasal **obstruction with mucoid discharge**, not position-dependent watery rhinorrhoea, so treat this printing as defective rather than as a fact to learn. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'**Unilateral clear watery rhinorrhoea, worse on bending forward, = CSF rhinorrhoea** — the leak drains when the head goes down. **Juvenile angiofibroma is a tumour of adolescent MALES** presenting with obstruction and epistaxis, never with clear fluid. **This printing is defective:** the bank deleted the right answer from its own option list and keyed a diagnosis its own slide rules out on age and sex.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 7, p.2784 (Q62) — **p.2784 prints no explanation box.** **⚠️ NOT a duplicate of `entep-nose-19`** despite an identical stem: Exam 7 replaces all four options and keys a different diagnosis, so the option sets share nothing. Both are held. **DISPUTED KEY — recorded in the end-of-ENT review.** Contradicted by `L26) nasal masses.pdf` (angiofibroma occurs in adolescent males), by `L31) nasal symptoms 1.pdf` (CSF rhinorrhoea heads the unilateral-discharge list), and by seven of the bank\'s own printings.' }
 
 ];

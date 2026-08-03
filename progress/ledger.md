@@ -216,13 +216,13 @@ Log one row per batch: bank · pages · date · questions produced · anything u
 
 | 2026-07-26 | ENT endpoint | 398–426 | Ear Questions Q128–Q142 | `entep-ear-91`…`103` | 12 | 15 read, **3 dropped** (Q128 p.398 = `entep-ear-32`, its third reprint; Q129 p.400 = `entep-ear-56`; Q136 p.414 = `entep-ear-55`). No explanation box on any page. Q131/Q132 (pp.404/406) are a **linked pair** — Q132's stem says only "the condition in the previous case", so `entep-ear-93` carries a bracketed summary of Q131 to stand alone, flagged in its `source`. |
 
-> **Superseded — current total is 679 ENT items** (597 MCQs + 82 cases), validated 2026-08-04 in a
+> **Superseded — current total is 680 ENT items** (598 MCQs + 82 cases), validated 2026-08-04 in a
 > real `file://` boot. Added from the model exams: `entep-mfe1-1…3` (Exam 1), `entep-mfe3-1`
-> (Exam 3), `entep-mfe4-1…32` (Exam 4), `entep-mfe5-1…46` (Exam 5), `entep-mfe6-1` (Exam 6);
-> **Exam 2 added none.** One House entry was **folded** on 2026-08-03 when a question gained
-> `alsoIn`. **By bank: 659 Endpoint, 21 House, 0 Grade Gain — which sums to 680, not 679, because one
-> question is in two banks and counts in both.** The dated snapshot below is kept as the record of
-> what was checked on 2026-07-27 and how.
+> (Exam 3), `entep-mfe4-1…32` (Exam 4), `entep-mfe5-1…46` (Exam 5), `entep-mfe6-1` (Exam 6),
+> `entep-mfe7-1` (Exam 7); **Exam 2 added none.** One House entry was **folded** on 2026-08-03 when a
+> question gained `alsoIn`. **By bank: 660 Endpoint, 21 House, 0 Grade Gain — which sums to 681, not
+> 680, because one question is in two banks and counts in both.** The dated snapshot below is kept as
+> the record of what was checked on 2026-07-27 and how.
 
 **Running total: 597 ENT items** — 515 MCQs (21 `enthd-` + 243 `entep-ear-` + 115 `entep-nose-`
 + 136 `entep-throat-`) + **82 free-text cases** (37 Ear `entep-case-`, 21 Nose `entep-nose-case-`,
@@ -956,25 +956,30 @@ the scratchpad and the images are read instead of the PDF.
 
 **THE WHOLE THROAT SECTION IS DONE — pp.1350–1720, MCQs and cases both, 2026-07-27.**
 
-**Model Final Exams 1–6 are DONE — pp.1721–2659, 464 printings read, 83 new questions.**
+**THE MODEL FINAL EXAM BLOCK IS COMPLETE — pp.1721–2816, all 7 exams, 542 printings read, 84 new
+questions.**
 
-**Next: `ENT endpoint.pdf` p.2660 — Model Final Exam 7 (pp.2660–2816), the last of the block.**
-Both structural questions are settled: each exam **is** printed twice, unanswered then answered, and
-**none ends with a case set**. What is *not* settled and must be measured:
+**Next: `ENT endpoint.pdf` p.2817 — Recently Edited (pp.2817–2835), then Exam Night Review
+(pp.2835–3074).** These are **not** model exams and nothing learned about exam structure transfers
+to them by default. What must be established on the first render, not assumed:
 
-1. **The reprint rate.** It has gone 96 → 100 → 99 → 58 → 42 → 99% across the six. **Budget Exam 7
-   as unknown** — there is no trend to extrapolate.
-2. **Parity, and where it shifts.** Three different causes are now known and one of them is invisible
-   on the tile (§7). Never sample to find a shift.
-3. **Whether it contradicts itself.** Exams 4, 5 and 6 each contain one self-contradiction, always
-   the same shape: a question the bank has already keyed correctly, reprinted and re-keyed wrongly.
-   **Go looking for it rather than waiting to trip over it.**
+1. **Whether the two-page (unanswered → answered) shape holds at all.** It held for every section and
+   every exam, which is exactly why an exception would be missed. Check the parity of the first ten
+   pages before staging anything.
+2. **The reprint rate.** Across the whole file it has gone 96 → 100 → 99 → 58 → 42 → 99 → 99%.
+   Three consecutive exams near 99% still does not license a prediction — the same reasoning missed
+   Exam 5 by 46 questions. **Budget as unknown.**
+3. **Whether a case section returns.** The three big sections each ended with one; none of the seven
+   exams did.
+4. **Whether it contradicts itself.** Exams 4, 5 and 6 held one self-contradiction each and **Exam 7
+   held two**. **Go looking rather than waiting to trip over it**, and note that four of four have
+   sat on a page that prints **no explanation box** — treat a bare page as a prompt to check the key.
 
-**Run the five-stage duplicate sweep before writing anything, rank ALL of them at stage E (not just
-the clean column — see the Exam 6 entry for the hole that leaves), and keyword-search every
-survivor twice.**
-
-After that: Recently Edited (pp.2817–2835), Exam Night Review (pp.2835–3074).
+**Run the five-stage duplicate sweep before writing anything, rank ALL of them at stage E, and then
+read side by side EVERY staged question whose option set differs from its stem twin — that is stages
+C, D and clean together, not the clean column alone.** Exam 7's only new question came out of stage
+C while its clean column was 3-for-3 noise; reading only the clean set would have found neither of
+that exam's two mis-keys. Keyword-search every survivor twice, differently worded.
 
 Then the other two ENT banks — `ENT QB.pdf` (Grade Gain, 185 pp, `entqb-`, **no Grade Gain question
 transcribed anywhere yet**) and `d house ENT mcq.pdf` (House, resume at PDF p.15, `enthd-`), the
@@ -1589,6 +1594,109 @@ makes anterior-pillar congestion a definite sign and enlarged crypts the doubtfu
 **A second identical printing does not make it right, but it does settle what it is:** the bank's
 consistent position, not a typesetting slip — the same conclusion reached for Exam 1's Q16 once Exams
 2 and 3 keyed it the same way. It stays in the review list, reclassified.
+
+### ⚠️ MODEL FINAL EXAM 7 — 78 printings, **1 new**, and the exam holds **TWO** self-contradictions — 2026-08-04
+
+**THE MODEL EXAM BLOCK IS COMPLETE.** Read end to end, pp.2660–2816, title page p.2660. **78
+printings**, and once again **the printed numbering lies**: the numbers run 1–77 with **70 used
+twice** — pp.2800 and 2802 are two unrelated questions, a nasal-bone-fracture vignette and a
+Kiesselbach's-plexus recall, both printed as "70". **Answered pages EVEN 2662–2816 throughout: no
+parity shift, no spill page, no case section.** Every tile carried a highlight; three use cyan
+(Q26 p.2712, Q33 p.2726, Q35 p.2730) rather than yellow, which is printing variation only.
+
+**77 of the 78 are reprints — 98.7%, level with Exam 6.** Running tally across the whole block:
+**542 printings read, 84 new.**
+
+| | Exam 1 | Exam 2 | Exam 3 | Exam 4 | Exam 5 | Exam 6 | **Exam 7** |
+|---|---|---|---|---|---|---|---|
+| Printings | 77 | 78 | 76 | 77 | 79 | 77 | **78** |
+| New | 3 | 0 | 1 | 32 | 46 | 1 | **1** |
+| Parity shifts | 0 | 2 | 2 | 0 | 1 | 0 | **0** |
+| Numbering defects | — | 71 twice | no Q20 | — | 45 and 55 twice | — | **70 twice** |
+| Boxes | all 77 | from Q62, restyled | most | 74 of 77 | 78 of 79 | 76 of 77 | **70 of 78** |
+
+**Final reprint rate across the block: 96 → 100 → 99 → 58 → 42 → 99 → 99%.** Exams 4 and 5 are the
+anomaly and everything either side of them is a compilation. **Three exams in a row have now ended at
+98–99%, and that still does not license extrapolating to the other banks** — the same reasoning
+predicted Exam 5 wrongly by 46 questions.
+
+**Boxes are the sparsest of any exam — 8 bare pages** (2670, 2712, 2784, 2786, 2788, 2792, 2794,
+2808) against Exam 6's one. **⚠️ And both mis-keyed pages are among the bare eight**, exactly as
+p.2629 was in Exam 6. That is now four unboxed mis-keys out of four: **a missing explanation box is
+worth treating as a signal to check the key**, not merely as a gap to fill.
+
+#### ⚠️ TWO self-contradictions, on consecutive questions
+
+Every exam since Exam 4 has held exactly one. **This one holds two, and they are Q62 and Q63** — the
+same shape as before (a question the bank already keyed correctly, reprinted and re-keyed wrongly),
+but in two different mechanisms, and it matters which, because the mechanism decides whether a new
+entry is written:
+
+| | **Q62, p.2784** → `entep-mfe7-1` | **Q63, p.2786** → *no new entry* |
+|---|---|---|
+| Twin | `entep-nose-19` (p.927) | `entep-nose-2` (p.893) |
+| Stem | identical | identical |
+| Options | **all four replaced** | **identical, same order** |
+| Key | moved to a new option | moved b → c within the same list |
+| Held how | **separate entry** — the option sets share nothing | **not held twice** — a second entry would show the learner the same question again; the mis-key is recorded in `entep-nose-2` |
+
+**Q62 is the worst-keyed question found in this file so far, because the bank deleted the correct
+answer from its own option list.** The vignette — *30-year-old female, unilateral watery rhinorrhoea
+increasing on bending forward* — is CSF rhinorrhoea, and `entep-nose-19` prints this exact stem with
+CSF rhinorrhoea among the options and keys it, with the source's own explanation box. Exam 7 swapped
+in *juvenile angiofibroma / inverted papilloma / persistent adenoids / antro-choanal polyp* and keyed
+the first. **`L26) nasal masses.pdf` puts angiofibroma in "Males during adolescence"** and lists its
+presentation as obstruction, epistaxis, ear fullness and facial asymmetry — so the keyed answer is
+wrong on **sex, on age and on symptom** simultaneously. `L31) nasal symptoms 1.pdf` heads its
+**unilateral** discharge list with CSF rhinorrhoea. The bank itself keys this picture CSF rhinorrhoea
+in **seven** other places (`entep-nose-19`, `-28`, `-59`, `-73`, `-103`, `entep-mfe5-8`,
+`entep-nose-case-5`). Transcribed as keyed, with all of that recorded in the entry.
+
+**Q63 is the same defect in the simpler form.** 60-year-old male carpenter, smoker, unilateral
+obstruction, epistaxis, toothache and **numbness of the cheek**; p.893 keys *sinonasal malignancy*
+and prints its own box explaining the infraorbital-nerve involvement, and p.2786 keys *inverted
+papilloma* with no box. The p.893 key is kept — cheek numbness means nerve invasion and 20 years of
+wood dust is the classic occupational risk — and the discrepancy is written into that entry's
+`source`.
+
+#### What the five stages caught
+
+Reconciled after writing: **1 written + 77 dropped = 78 staged**, every staged page matched to an
+entry or a drop, no written page absent from the stage.
+
+| Stage | Flagged | Of those, actually reprints |
+|---|---|---|
+| A — normalised stem + sorted options | 22 | 22 |
+| B — sorted options + keyed answer | 31 | 31 |
+| C — keyed answer + option count | 17 | **16** |
+| D — ≤1 differing token in the keyed answer | 5 | 5 |
+| *(clean)* | 3 | **3** |
+
+**⚠️ THE ONLY NEW QUESTION CAME OUT OF STAGE C, AND THE CLEAN SET WAS 3 FOR 3 REPRINTS.** Every
+previous exam found its new questions in the clean column, which is why the clean column is the one
+that gets read carefully. **Here the clean column was pure noise** — three one-word respellings
+(*innitus* for tinnitus, *presented* for present, *laryngotracheobrochitis* for
+laryngotracheobronchitis) — and the single genuinely new question was sitting in a stage that had
+declared it matched. Stage C matched Q62 to `entep-nose-19` **on the answer text of a completely
+different option list**, which is exactly the failure mode C exists to be loose about.
+
+**So the resolution rule generalises: read every staged question whose OPTION SET differs from its
+stem twin, whatever stage flagged it.** That set is precisely C ∪ D ∪ clean — 25 of 78 here — and it
+is where a changed distractor or a moved key can hide. Running the side-by-side over all 25 took one
+probe and found both contradictions; reading only the clean 3 would have found neither.
+
+Stage E, run over all 78 per the rule added in Exam 6, ranked Q62 at **1.00** against `entep-nose-19`
+— the stems are word-for-word identical — which is what made the option-set substitution visible at
+all. **A 1.00 stem match that did NOT reach stage A or B is a re-optioned reprint by definition**,
+and worth treating as its own alarm.
+
+#### One more independent source against Exam 6's mis-key
+
+**Exam 7 p.2722 prints an explanation box reading "Tubotympanic CSOM presents with central
+perforation and safe, mucopurulent discharge without complications."** That is a **fourth**
+source contradicting `entep-mfe6-1`, after the slide, `entep-ear-59`, and Exam 6's own Q15. Added to
+that entry's `source`. It also means the bank states the correct fact in one exam and keys against it
+in the previous one — the contradictions are not confined within an exam.
 
 ### One question, many banks — the filter fix, 2026-08-03
 
