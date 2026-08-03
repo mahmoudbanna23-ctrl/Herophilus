@@ -216,12 +216,13 @@ Log one row per batch: bank · pages · date · questions produced · anything u
 
 | 2026-07-26 | ENT endpoint | 398–426 | Ear Questions Q128–Q142 | `entep-ear-91`…`103` | 12 | 15 read, **3 dropped** (Q128 p.398 = `entep-ear-32`, its third reprint; Q129 p.400 = `entep-ear-56`; Q136 p.414 = `entep-ear-55`). No explanation box on any page. Q131/Q132 (pp.404/406) are a **linked pair** — Q132's stem says only "the condition in the previous case", so `entep-ear-93` carries a bracketed summary of Q131 to stand alone, flagged in its `source`. |
 
-> **Superseded — current total is 678 ENT items** (596 MCQs + 82 cases), validated 2026-08-03 in a
+> **Superseded — current total is 679 ENT items** (597 MCQs + 82 cases), validated 2026-08-04 in a
 > real `file://` boot. Added from the model exams: `entep-mfe1-1…3` (Exam 1), `entep-mfe3-1`
-> (Exam 3), `entep-mfe4-1…32` (Exam 4), `entep-mfe5-1…46` (Exam 5); **Exam 2 added none.** One House
-> entry was **folded** on 2026-08-03 when a question gained `alsoIn`. **By bank: 658 Endpoint, 21
-> House, 0 Grade Gain — which sums to 679, not 678, because one question is in two banks and counts
-> in both.** The dated snapshot below is kept as the record of what was checked on 2026-07-27 and how.
+> (Exam 3), `entep-mfe4-1…32` (Exam 4), `entep-mfe5-1…46` (Exam 5), `entep-mfe6-1` (Exam 6);
+> **Exam 2 added none.** One House entry was **folded** on 2026-08-03 when a question gained
+> `alsoIn`. **By bank: 659 Endpoint, 21 House, 0 Grade Gain — which sums to 680, not 679, because one
+> question is in two banks and counts in both.** The dated snapshot below is kept as the record of
+> what was checked on 2026-07-27 and how.
 
 **Running total: 597 ENT items** — 515 MCQs (21 `enthd-` + 243 `entep-ear-` + 115 `entep-nose-`
 + 136 `entep-throat-`) + **82 free-text cases** (37 Ear `entep-case-`, 21 Nose `entep-nose-case-`,
@@ -955,19 +956,23 @@ the scratchpad and the images are read instead of the PDF.
 
 **THE WHOLE THROAT SECTION IS DONE — pp.1350–1720, MCQs and cases both, 2026-07-27.**
 
-**Model Final Exams 1–5 are DONE — pp.1721–2504, 387 printings read, 82 new questions.**
+**Model Final Exams 1–6 are DONE — pp.1721–2659, 464 printings read, 83 new questions.**
 
-**Next: `ENT endpoint.pdf` p.2505 — Model Final Exam 6 (pp.2505–2659), then Exam 7 (pp.2660–2816).**
-Both structural questions are settled for this block: each exam **is** printed twice, unanswered then
-answered, and **none ends with a case set**. What is *not* settled and must be measured per exam:
+**Next: `ENT endpoint.pdf` p.2660 — Model Final Exam 7 (pp.2660–2816), the last of the block.**
+Both structural questions are settled: each exam **is** printed twice, unanswered then answered, and
+**none ends with a case set**. What is *not* settled and must be measured:
 
-1. **The reprint rate.** Exams 1–3 gave 3, 0, 1 new; Exams 4 and 5 gave 32 and 46. **Budget 6 and 7
-   as unknown** — the compilation finding is retired.
+1. **The reprint rate.** It has gone 96 → 100 → 99 → 58 → 42 → 99% across the six. **Budget Exam 7
+   as unknown** — there is no trend to extrapolate.
 2. **Parity, and where it shifts.** Three different causes are now known and one of them is invisible
    on the tile (§7). Never sample to find a shift.
+3. **Whether it contradicts itself.** Exams 4, 5 and 6 each contain one self-contradiction, always
+   the same shape: a question the bank has already keyed correctly, reprinted and re-keyed wrongly.
+   **Go looking for it rather than waiting to trip over it.**
 
-**Run the five-stage duplicate sweep before writing anything, and treat its clean column as a
-shortlist.** Five of the clean set were reprints in Exam 4 and five again in Exam 5.
+**Run the five-stage duplicate sweep before writing anything, rank ALL of them at stage E (not just
+the clean column — see the Exam 6 entry for the hole that leaves), and keyword-search every
+survivor twice.**
 
 After that: Recently Edited (pp.2817–2835), Exam Night Review (pp.2835–3074).
 
@@ -1469,6 +1474,121 @@ two exams, after Exam 4's supraclavicular/head-and-neck pair 66 pages apart.
   neither can be folded independently of the other.
 - **Q60 (p.2470) is the Dix–Hallpike question**, a reprint of `entep-ear-85`. `entep-mfe5-2` points at
   `entep-ear-85` rather than at a page in this exam, since the held entry is the one that survives.
+
+### MODEL FINAL EXAM 6 — 77 printings, **1 new**, and it is a mis-key — 2026-08-04
+
+Read end to end, pp.2505–2659, title page p.2505. **77 printings, numbered 1–77 with no gap and no
+repeat** — the printed numbers and the question count agree, as they did only in Exam 4. **Answered
+pages ODD 2507–2659 throughout: no parity shift, no spill page, no case section.** Every tile carried
+a highlight; two of them (Q47 p.2599, Q49 p.2603) use a **cyan** highlight rather than yellow, which
+is a printing variation and nothing more.
+
+**76 of the 77 are reprints — 98.7%, the highest rate of any exam.** This one *is* the compilation
+that Exams 4 and 5 were not. Running tally across six exams: **464 printings read, 83 new.**
+
+| | Exam 1 | Exam 2 | Exam 3 | Exam 4 | Exam 5 | **Exam 6** |
+|---|---|---|---|---|---|---|
+| Printings | 77 | 78 | 76 | 77 | 79 | **77** |
+| New | 3 | 0 | 1 | 32 | 46 | **1** |
+| Parity shifts | 0 | 2 | 2 | 0 | 1 | **0** |
+| Boxes | all 77 | from Q62, restyled | most | 74 of 77 | 78 of 79 | **76 of 77** |
+
+**So the reprint rate has now gone 96 → 100 → 99 → 58 → 42 → 99%.** Two consecutive exams broke the
+compilation pattern and the next one restored it completely. **There is no trend to extrapolate.**
+Budget Exam 7 as unknown, exactly as before.
+
+#### ⚠️ STAGE E MUST RUN ON ALL OF THEM, NOT ONLY ON THE CLEAN SET
+
+The sweep routes each staged question to the first stage that matches, and stages A–D hand back a
+candidate list **keyed on the answer**. Stage E was then run only over what A–D called clean. That
+leaves a hole, and Exam 6 fell into it:
+
+**Q21 (p.2547) was routed to stage C**, whose answer-keyed list offered `entep-ear-108` and
+`entep-ear-100` — two long clinical vignettes that share nothing with it but the words "Acoustic
+neuroma". Read side by side they are obviously not the same question, and on that basis Q21 would
+have been declared new. **It never got stem-ranked, because it was not in the clean set.**
+
+Re-running the ranking over **all 77** put Q21 at **0.54** against `entep-ear-57` — low, because the
+bank rewrote the stem from a question into a statement:
+
+> `entep-ear-57`: "**Which of the following conditions can cause** unilateral high frequency
+> sensorineural hearing loss?"
+> Exam 6 Q21: "Unilateral high frequency Sensorineural hearing loss **can be due to**:"
+
+Even 0.54 was not the thing that settled it — **the keyword search was**, and then the verdict came
+from a note written in an earlier batch. `entep-ear-57`'s own `source` field already recorded that
+p.366 reprints it "one distractor changed (**bilateral wax** for unilateral secretory OM)", and Exam
+6's Q21 is precisely that variant. **A reprint was identified by a sentence written months of
+batches earlier — which is the whole argument for recording variants in `source` rather than
+discarding them.**
+
+Two rules out of this:
+
+1. **Rank every staged question, not just the clean ones.** It costs one pass and closes the hole.
+2. **The keyword pass stays mandatory.** This is the third independent time it has caught what
+   ranking could not — after Exam 4's vignette rewrite and Exam 5's tie-displacement.
+
+#### What the five stages caught
+
+Reconciled after writing: 1 written + 76 dropped = 77 staged, every staged page matched to an entry
+or a drop, no written page absent from the stage.
+
+| Stage | Flagged | Of those, actually reprints |
+|---|---|---|
+| A — normalised stem + sorted options | 46 | 46 |
+| B — sorted options + keyed answer | 9 | 9 |
+| C — keyed answer + option count | 12 | 12 |
+| D — ≤1 differing token in the keyed answer | 1 | 1 |
+| *(clean)* | 9 | **8** |
+
+**Check C was 12 for 12 here and 1 for 14 in Exam 5.** Its precision swings wildly between exams and
+is worth nothing as a signal; what makes it worth running is that it never *misses*. The clean column
+gave 8 reprints of 9 — stage E ranked all eight at **0.83–1.00**, the usual crop of one-word
+respellings the bank reprints itself with: *Peumothorax* for Pneumothorax, *Herptic* for Herpetic,
+*Impeding* for Impending, *Postcricoid* for Post-cricoid, *Stidor* for Stridor, *Seborrhic* for
+Seborrhoic, *Aeuroginosa* for Aeruginosa, *dipheteria* for diphetria.
+
+#### ⚠️ The one new question is the bank mis-keying its own stem — `entep-mfe6-1`
+
+**Q62 (p.2629) prints the stem of `entep-ear-59` (p.318) verbatim**, swaps one distractor, and moves
+the key onto the swap:
+
+| | `entep-ear-59` (p.318) | Exam 6 Q62 (p.2629) |
+|---|---|---|
+| a | Intermittent mucopurulent otorrhoea | Intermittent mucopurulent otorrhoea |
+| b | Central tympanic membrane perforation | Central tympanic membrane perforation |
+| c | **High incidence of complications** ← keyed | High incidence of complications |
+| d | Negative Rinne test in the affected ear | **Profuse odourless otorrhoea** ← keyed |
+
+Held as a separate entry, because the option set and the key both differ. **The Exam 6 key is wrong,
+and three independent sources say so:**
+
+- **The slide.** `L16) Chronic otitis media.pdf`, under *Chronic Otitis Media (Tubo-tympanic type) →
+  Symptoms → Otorrhoea*, reads **"Muco-purulent, odourless, profuse and intermittent."** Option d is
+  a near-verbatim quotation of the slide's description of the very type the question asks about.
+- **The bank's earlier printing.** `entep-ear-59` keys option c — correctly: the tubotympanic type is
+  called *safe* precisely because complications are rare.
+- **This same exam, 47 pages earlier.** Q15 (p.2535, held as `entep-ear-72`) asks "In safe chronic
+  suppurative otitis the discharge is usually:" and keys **"Profuse and odorless"** — the exact thing
+  Q62 declares not to be seen. Its box adds that safe CSOM gives "non-fetid, thin discharge".
+
+**That is a third self-contradiction in three consecutive exams** — after Exam 4's supraclavicular /
+head-and-neck pair 66 pages apart and Exam 5's vocal-cord table three pages apart. It is no longer an
+oddity: **assume each exam contains one and go looking for it.** The pattern in all three is the
+same — the bank reprints a question it has already keyed correctly and re-keys it wrongly.
+
+**p.2629 is the only unboxed page in the exam**, so its explanation is written and marked.
+
+#### A disputed key that is now settled as the bank's position
+
+**Q47 (p.2599) reprints `entep-throat-77` identically** — the same four options, the same key,
+"Congestion of the anterior pillar" as the sign that is *not* definite in chronic tonsillitis. That
+key has stood in the disputed list since the Throat section, on the grounds that standard teaching
+makes anterior-pillar congestion a definite sign and enlarged crypts the doubtful one.
+
+**A second identical printing does not make it right, but it does settle what it is:** the bank's
+consistent position, not a typesetting slip — the same conclusion reached for Exam 1's Q16 once Exams
+2 and 3 keyed it the same way. It stays in the review list, reclassified.
 
 ### One question, many banks — the filter fix, 2026-08-03
 

@@ -5395,6 +5395,33 @@ var Q_ENT = [
   answer:1,
   explanation:'Once a suspicious lesion is identified on office laryngoscopy, the most definitive diagnostic step is direct laryngoscopy with biopsy under general anesthesia. This allows proper visualization, tissue sampling, and histopathological diagnosis, especially when malignancy like laryngeal cancer is suspected.',
   objective:'**Office laryngoscopy looks; direct laryngoscopy with biopsy diagnoses.** The word in the stem — initial step versus best diagnostic tool — is the whole discrimination.',
-  source:'ENT AlexMed Endpoints, Model Final Exam 5, p.2504 (Q77) — the source prints this explanation box. **The deliberate contrast partner of `entep-mfe5-45` (p.2502)**, printed immediately before it with an identical vignette. Cross-reference: `entep-throat-10` on diagnosing hoarseness of two months\' duration.' }
+  source:'ENT AlexMed Endpoints, Model Final Exam 5, p.2504 (Q77) — the source prints this explanation box. **The deliberate contrast partner of `entep-mfe5-45` (p.2502)**, printed immediately before it with an identical vignette. Cross-reference: `entep-throat-10` on diagnosing hoarseness of two months\' duration.' },
+
+/* ==================================================================
+   MODEL FINAL EXAM 6 — pp.2505–2659
+   ------------------------------------------------------------------
+   77 printings, numbered 1–77 with no gap and no repeat. Title page
+   p.2505; answered pages ODD 2507–2659 throughout — no parity shift,
+   no spill page, no case section. 76 of the 77 are reprints, the
+   highest rate of any exam so far: this one IS the compilation that
+   Exams 4 and 5 were not.
+
+   ONE new question, and it is new only because the bank changed a
+   distractor and moved the key onto it. Q62 (p.2629) reprints the stem
+   of `entep-ear-59` verbatim, swaps option d, and keys the swap — see
+   that entry for why the key does not survive contact with the slide.
+
+   Q65 (p.2635) is a verbatim within-exam reprint of Q26 (p.2557), and
+   both reprint `entep-mfe4-3`; none is held twice.
+   ================================================================== */
+
+{ id:'entep-mfe6-1', bank:'endpoint',
+  module:'ent', chapter:'ent-csom',
+  stem:'All of the following may be seen in the **tubotympanic type** of chronic suppurative otitis media **EXCEPT**:',
+  options:['Intermittent mucopurulent otorrhoea','Central tympanic membrane perforation','High incidence of complications','Profuse odourless otorrhoea'],
+  answer:3,
+  explanation:'**⚠️ Transcribed as the bank keys it — but the course material contradicts the key, and so does the bank itself.**\n\n**What the slide says.** `L16) Chronic otitis media.pdf`, under **Chronic Otitis Media (Tubo-tympanic type) → Symptoms**, gives the otorrhoea of this type as **"Muco-purulent, odourless, profuse and intermittent"** — which makes **option d a textbook description of tubotympanic disease, not an exception**. The same slide gives the perforation as **"Central, in pars tensa"** (option b) and cholesteatoma/granulations as **"Absent"**.\n\n**So options a, b and d are all features of the tubotympanic type.** The one that is not is **option c, "High incidence of complications"** — the tubotympanic type is called the **safe** type precisely because it lacks cholesteatoma and therefore rarely erodes bone or produces intracranial complications; a high complication rate belongs to the **attico-antral (unsafe)** type.\n\n**The bank keys option c correctly elsewhere.** `entep-ear-59` (p.318) prints this identical stem with option d reading "Negative Rinne test in the affected ear", and keys **"High incidence of complications"**. Exam 6 replaced that distractor with "Profuse odourless otorrhoea" and moved the highlight onto the replacement.\n\n**And it contradicts itself 47 pages earlier in this same exam.** Q15 (p.2535, held as `entep-ear-72`) asks "In safe chronic suppurative otitis the discharge is usually:" and keys **"Profuse and odorless"** — the very thing Q62 says is not seen. Its explanation box adds that safe CSOM gives "non-fetid, thin discharge due to central tympanic membrane perforation without cholesteatoma". `entep-ear-205` likewise reads "intermittent **odorless** discharge" with a central perforation as safe CSOM.\n\n**Answer option c if this stem appears with a full set of options.** Written for this bank — the endpoint file prints no explanation here.',
+  objective:'**Safe = tubotympanic = profuse, odourless, mucopurulent, intermittent discharge through a CENTRAL perforation, and few complications.** Unsafe = attico-antral = scanty, fetid discharge through a marginal/attic perforation, with cholesteatoma and a high complication rate. **The bank mis-keys this one:** it marks the odourless discharge as the exception when the exception is the high complication rate.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 6, p.2629 (Q62) — **p.2629 prints no explanation box**, the only unboxed page found in this exam. **⚠️ NOT a duplicate of `entep-ear-59`** despite an identical stem: that printing offers "Negative Rinne test in the affected ear" as option d and keys option c. Both are held, because the option sets and the keys differ. **DISPUTED KEY — recorded in the end-of-ENT review.** Contradicted by `L16) Chronic otitis media.pdf` (tubo-tympanic symptoms slide), by `entep-ear-59`, and by this exam\'s own Q15 at p.2535 (`entep-ear-72`).' }
 
 ];
