@@ -216,12 +216,12 @@ Log one row per batch: bank · pages · date · questions produced · anything u
 
 | 2026-07-26 | ENT endpoint | 398–426 | Ear Questions Q128–Q142 | `entep-ear-91`…`103` | 12 | 15 read, **3 dropped** (Q128 p.398 = `entep-ear-32`, its third reprint; Q129 p.400 = `entep-ear-56`; Q136 p.414 = `entep-ear-55`). No explanation box on any page. Q131/Q132 (pp.404/406) are a **linked pair** — Q132's stem says only "the condition in the previous case", so `entep-ear-93` carries a bracketed summary of Q131 to stand alone, flagged in its `source`. |
 
-> **Superseded — current total is 600 ENT items** (518 MCQs + 82 cases), validated 2026-08-03.
-> Added since: `entep-mfe1-1…3` from Model Final Exam 1 and `entep-mfe3-1` from Exam 3; **Exam 2
-> added none.** One House entry was **folded** on 2026-08-03 when a question gained `alsoIn`, so the
-> array grew by 4 and shrank by 1. **By bank: 580 Endpoint, 21 House, 0 Grade Gain — which sums to
-> 601, not 600, because one question is in two banks and counts in both.** The dated snapshot below
-> is kept as the record of what was checked on 2026-07-27 and how.
+> **Superseded — current total is 632 ENT items** (550 MCQs + 82 cases), validated 2026-08-03 in a
+> real `file://` boot. Added from the model exams: `entep-mfe1-1…3` (Exam 1), `entep-mfe3-1`
+> (Exam 3), `entep-mfe4-1…32` (Exam 4); **Exam 2 added none.** One House entry was **folded** on
+> 2026-08-03 when a question gained `alsoIn`. **By bank: 612 Endpoint, 21 House, 0 Grade Gain —
+> which sums to 633, not 632, because one question is in two banks and counts in both.** The dated
+> snapshot below is kept as the record of what was checked on 2026-07-27 and how.
 
 **Running total: 597 ENT items** — 515 MCQs (21 `enthd-` + 243 `entep-ear-` + 115 `entep-nose-`
 + 136 `entep-throat-`) + **82 free-text cases** (37 Ear `entep-case-`, 21 Nose `entep-nose-case-`,
@@ -1264,6 +1264,111 @@ was changed back on 2026-08-03. A lone variant against three agreeing printings 
 not the correction. **The rule that "the better printing wins" needs a companion: count the printings
 first.** Nothing turns on it clinically — the option is a distractor either way.
 
+### ⚠️ MODEL FINAL EXAM 4 BREAKS THE PATTERN — 77 printings, **32 NEW** — 2026-08-03
+
+Read end to end, pp.2190–2344, title page p.2190, Exam 5's title page p.2345. **Answered pages are
+EVEN throughout — no parity shift**, which follows from it having no spill page: every explanation
+box fits its own tile. (Exam 1 was likewise stable, at ODD; it is Exams 2 and 3 that shift. **Stable
+does not mean predictable — the stable exams disagree on which parity.**) Numbered 1–77 with no gap
+and no repeat, so here the printed numbers and the question count agree for once. No case section.
+
+**The compilation finding does not hold for this exam.** Exams 1–3 gave 3, 0 and 1 new across 231
+printings — 98% reprint. Exam 4 gives **32 new out of 77**, only 58% reprint, and the fresh half is
+concentrated in **Nose and Throat**: a near-continuous run from Q45 to Q77 is new but for four
+questions. Ear is still almost entirely reprint. Running tally across four exams: **308 printings
+read, 36 new questions.**
+
+**⚠️ DO NOT CARRY "the model exams are compilations" INTO EXAMS 5–7 AS SETTLED.** It was written up
+after three exams agreed, and the fourth disagreed flatly. What survives is the *method* — sweep
+before writing — not the expectation. The sweep is what made this batch cheap either way: it cost
+one pass over 77 staged questions to learn that 45 were already held.
+
+| | Exam 1 | Exam 2 | Exam 3 | **Exam 4** |
+|---|---|---|---|---|
+| Printings | 77 | 78 | 76 | **77** |
+| New | 3 | 0 | 1 | **32** |
+| Parity shifts | 0 | 2 | 2 | **0** |
+| Boxes | all 77 | from Q62, restyled | most | **74 of 77** |
+
+#### What the four checks caught, and what they did not
+
+| Check | Flagged | Of those, actually reprints |
+|---|---|---|
+| A — normalised stem + sorted options | 20 | 20 |
+| B — sorted options + keyed answer | 13 | 13 |
+| C — keyed answer + option count | 8 | 6 |
+| D — ≤1 differing token in the keyed answer | 4 | 1 |
+| *(clean)* | 32 | **5** |
+
+**The clean column is the important one. Five of the 32 "clean" questions were reprints** — the
+checks are all keyed on the *answer*, and a reprint that rewords its options escapes every one of
+them. `entep-ear-9` prints "repeated suction **of debris** with antifungal drops" where Exam 4
+prints "repeated suction **toilet** with antifungal drops"; `entep-ear-99` says "causes vertigo for
+few days" against "episode of vertigo lasts for a few days"; `entep-ear-89` says "antibiotic
+therapy" against "specific antibiotic therapy after culture and sensitivity". Same question, same
+key, different words.
+
+**So a clean sweep result is a shortlist, not a verdict.** Two further passes were needed and both
+earned their place:
+
+1. **Stem-token ranking of every clean question against the whole bank.** All five hidden reprints
+   ranked 0.90–1.00 on the stem while their keys differed. This is the cheap pass — run it always.
+2. **A keyword search per question, then a SECOND search with a differently-worded term.** A stem
+   rewritten from a direct question into a vignette scores low against its own twin, so ranking
+   alone is not enough. The second term changed no verdict this time, but it is the only reason the
+   32 can be asserted rather than assumed: "adductors EXCEPT" had to be searched again as
+   "abductor", "sensory nerve supply" as "internal laryngeal", "tonsil chronicity" as "chronic
+   tonsillitis".
+
+#### Check D, rebuilt before this batch
+
+Changed from the ≥0.8 overlap ratio to **≤1 differing token** (symmetric difference), as the Exam 3
+entry above required. It flagged 4 and only 1 was a reprint — a worse precision than the ratio had,
+and that is fine: C and D are eye-lists by design. The one it caught, `entep-nose-2` against Q58,
+differs only in "sinonasal **squamous cell carcinoma**" versus "sinonasal **malignancy**".
+
+#### Three pages print no explanation box — pp.2324, 2328, 2338
+
+The exception in an otherwise fully boxed exam, so it is easy to miss. All three explanations are
+**written and marked**, and all three ground cleanly:
+
+- **p.2324 (Q67)** reactionary haemorrhage after adenoidectomy → `L3) DISEASES OF THE TONSILS &
+  ADENOIDS.pdf` gives the 24-hour window and the three causes (high BP, slipped ligature, dislodged
+  clot), and lists the adenoidectomy techniques — curettage, suction diathermy, coblation,
+  microdebrider, endoscopic — **none of which ligates anything**, which is what leaves the clot.
+  **No slide ranks the three causes**, and the explanation says so.
+- **p.2328 (Q69)** septal deviation → `L24) diseases of the nasal septum.pdf` states the obstruction
+  "can be on the same side of the deviation **or opposite side** because of the hypertrophic changes
+  in turbinate", which is exactly why "strictly unilateral" is the odd one out, and lists headache
+  (anterior ethmoidal nerve syndrome) and sinusitis among the symptoms.
+- **p.2338 (Q74)** bilateral choanal atresia → `L23) Anatomy of the Nose.pdf` management slide reads
+  "creating oral airway: 1. McGovern nipple 2. Oral airway 3. intubation", with the surgical
+  approaches listed separately. **This resolves an apparent contradiction with `entep-nose-105`**,
+  which keys transnasal endoscopic repair: one question asks the initial airway, the other the
+  definitive treatment.
+
+#### Source defects found in Exam 4
+
+- **⚠️ p.2278 (Q44) — the keyed option contradicts the bank's own box.** The option reads "metastatic
+  lymph node from **supraclavicular** primary"; the box justifies it as metastasis "from **head and
+  neck** cancers". A supraclavicular primary is not a head and neck primary. Transcribed as keyed.
+  **The same exam prints the correct wording as Q77 (p.2344)** — "from head and neck malignancy" —
+  so the bank contradicts itself 66 pages apart on the same clinical question. Both are held
+  (`entep-mfe4-8` and `entep-mfe4-32`).
+- **⚠️ p.2296 (Q53) — disputed key.** The stem describes trauma to the **middle third of the face**,
+  which standard teaching images by CT; the key is plain AP and lateral radiographs, and the box
+  narrows the question to "nasal trauma" to justify it. Transcribed as keyed, both readings recorded.
+  **This is a fifth disputed key** on top of the four already in §11 item 6, plus the two from Exam 1.
+- **p.2302 (Q56) — two defects in one question.** The stem asks the treatment "for **allergists**"
+  where it means patients with allergic rhinitis, and option c reads "**Intravenous** tympanic
+  steroid injection", conflating intravenous with intratympanic. Left as printed.
+- **p.2308 (Q59)** calls a "diffuse periorbital headache" *matching* sinusitis, then rejects
+  "diffuse, band-like pressure" — the discrimination rests on the band, not the diffuseness. Noted
+  in the entry rather than corrected.
+- **p.2326 (Q68)** keys submandibular *gland* enlargement as not a sign of tonsil chronicity, while
+  **`entep-throat-77`** answers the same question by keying congestion of the anterior pillar — a
+  key already recorded as disputed. Not duplicates; they should be read together.
+
 ### One question, many banks — the filter fix, 2026-08-03
 
 **The user reported it as a feature request and it was a defect.** A question printed in two banks was
@@ -1601,10 +1706,19 @@ mistakes rhyme: **generalising from one sample, and recording a number without r
   ENT has **3** question banks, not 2.
 - **Workspace `MEMORY.md` said Neuro was empty.** It is not: 22 lecture PDFs, a 292-page book, a
   142-page question bank.
-- **A count that does not reconcile against its total has been written down three times** — the
-  chapter split twice (once summing to 297 against a stated 273), and the unmarked-provenance figure
-  twice (80, then 77, against a measured **67**). **Check the sum, and inspect the entries, before
-  recording any number.** Both classes of error were found by re-measuring, never by re-reading.
+- **A count that does not reconcile against its total has been written down four times** — the
+  chapter split twice (once summing to 297 against a stated 273), the unmarked-provenance figure
+  twice (80, then 77, against a measured **67**), and now the authored-explanation figure. **Check
+  the sum, and inspect the entries, before recording any number.** Every one was found by
+  re-measuring, never by re-reading.
+- **MEMORY.md said "156 passages" carry the authored-explanation marker. The real figure is 473** —
+  measured 2026-08-03 by matching `explanation` against the marker in a real boot: 392 MCQs + 81 of
+  the 82 cases, one occurrence each, **75% of all 632 ENT entries**. Wrong by a factor of three, and
+  copied forward across many sessions without ever being checked, because it read like a plausible
+  minority. **The correct figure changes the shape of the end-of-ENT review**: the question is not
+  "which few explanations did we write" but "three quarters of them are ours, so which are thinly
+  grounded". The number was never derivable by eye — the entries are one long line each, so even
+  `grep -c` returns lines, not passages, and happens to agree only because the two coincide here.
 
 ---
 

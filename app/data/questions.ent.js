@@ -4731,6 +4731,282 @@ var Q_ENT = [
   answer:0,
   explanation:'The tensor tympani muscle originates from the cartilaginous portion of the auditory tube and inserts onto the handle of the malleus.',
   objective:'Tensor tympani inserts on the handle of the malleus; stapedius inserts on the neck of the stapes.',
-  source:'ENT AlexMed Endpoints, Model Final Exam 3, p.2092 (Q29) — the source prints this explanation box. Not a duplicate of `enthd-ear-1` (Dr. HOUSE in ENT p.23), which asks which middle-ear **wall** harbours the tensor tympani rather than where it inserts. Different question, and a different bank besides — cross-reference, not variant.' }
+  source:'ENT AlexMed Endpoints, Model Final Exam 3, p.2092 (Q29) — the source prints this explanation box. Not a duplicate of `enthd-ear-1` (Dr. HOUSE in ENT p.23), which asks which middle-ear **wall** harbours the tensor tympani rather than where it inserts. Different question, and a different bank besides — cross-reference, not variant.' },
+
+/* ==================================================================
+   MODEL FINAL EXAM 4 — pp.2190–2344
+   ------------------------------------------------------------------
+   77 printings, numbered 1–77 with no gap and no repeat. Answered
+   pages are EVEN throughout (2192 … 2344) — the FIRST exam with no
+   parity shift, which follows from it having no spill page: every
+   explanation box fits its own tile. No case section; p.2345 is the
+   Model Final Exam 5 title page.
+
+   ⚠️ THIS EXAM BREAKS THE PATTERN OF THE FIRST THREE. Exams 1–3
+   yielded 3, 0 and 1 new questions out of 231 printings. Exam 4
+   yields 32 out of 77 — it is only 58% reprint, and the fresh half is
+   concentrated in Nose and Throat. Do not carry the "model exams are
+   compilations" expectation into Exams 5–7 as though it were settled.
+
+   Three of the 32 carry NO explanation box — pp.2324, 2328 and 2338;
+   those three are written here and marked. The other 29 boxes are
+   transcribed verbatim.
+   ================================================================== */
+
+{ id:'entep-mfe4-1', bank:'endpoint', module:'ent', chapter:'ent-csom',
+  stem:'The **Gradenigo triad** of ear discharge, retro-orbital pain and **6th nerve paralysis** is due to which condition?',
+  options:['Mastoiditis','CSOM','Petrositis','Masked mastoiditis'],
+  answer:2,
+  explanation:'Petrositis, a complication of otitis media, affects the petrous apex of the temporal bone, causing ear discharge, retro-orbital pain, and abducens (6th cranial) nerve palsy. This classic triad is pathognomonic.',
+  objective:'Otorrhoea + retro-orbital pain + 6th nerve palsy localises the disease to the petrous apex: petrositis.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 4, p.2206 (Q8) — the source prints this explanation box. **Variant of `entep-ear-27`** (Ear Questions p.196), which tests the same triad against labyrinthitis and mastoid abscess rather than CSOM and masked mastoiditis; neither option list contains the other, so both are kept. Cross-reference: `entep-ear-192`, `entep-ear-202`, `entep-ear-79`, `entep-ear-133`.' },
+
+{ id:'entep-mfe4-2', bank:'endpoint', module:'ent', chapter:'ent-phon',
+  stem:'Which of the following techniques would be the **best** for you to use if you want to judge **symmetry of vocal fold vibration**?',
+  options:['Videostroboscopy','Electromyography','Electroglottography','Videofluoroscopy'],
+  answer:0,
+  explanation:'Videostroboscopy allows slow-motion visualization of vocal fold vibration and symmetry during phonation. Electromyography and electroglottography measure muscle activity or electrical signals but do not visualize motion directly.',
+  objective:'Only videostroboscopy images the vibratory cycle itself; EMG and electroglottography record signals, and videofluoroscopy images swallowing.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 4, p.2220 (Q15) — the source prints this explanation box.' },
+
+{ id:'entep-mfe4-3', bank:'endpoint', module:'ent', chapter:'ent-hearing',
+  stem:'Which of the following diseases can cause **mixed hearing loss**?',
+  options:['Impacted wax','Unsafe type of chronic suppurative otitis media','Acoustic neuroma extending to cerebellopontine angle','Presbyacusis'],
+  answer:1,
+  explanation:'Unsafe CSOM can cause both conductive loss (ossicular chain damage) and sensorineural loss (toxic effects on cochlea), producing mixed hearing loss. Impacted wax and presbyacusis cause mainly conductive or sensorineural loss, respectively.',
+  objective:'Unsafe CSOM damages the ossicular chain and poisons the cochlea at once — the classic mixed loss.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 4, p.2234 (Q22) — the source prints this explanation box. **Variant of `entep-ear-32`**, which asks the same question over a different five-option set and keys cholesteatoma; kept separately because neither option list contains the other\'s key.' },
+
+{ id:'entep-mfe4-4', bank:'endpoint', module:'ent', chapter:'ent-csom',
+  stem:'What is the cause of **primary acquired cholesteatoma**?',
+  options:['Migration of skin into the middle ear through a marginal perforation','Embryological remnants inside the middle ear that grow progressively','Suction of the pars flaccida inside the attic','Implantation of squamous epithelium following myringotomy'],
+  answer:2,
+  explanation:'Primary acquired cholesteatoma usually arises from retraction pockets in the pars flaccida, which accumulate keratin and grow over time. Other options describe secondary or congenital forms.',
+  objective:'Primary acquired = an attic retraction pocket of the pars flaccida. Migration through a perforation is secondary acquired; embryological remnants are congenital.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 4, p.2256 (Q33) — the source prints this explanation box. Cross-reference: `entep-ear-138` on what cholesteatoma consists of, `entep-ear-35` on the congenital form.' },
+
+{ id:'entep-mfe4-5', bank:'endpoint', module:'ent', chapter:'ent-pharsupp',
+  stem:'A **2-year-old boy** presented with **3 days fever, right paramedian posterior pharyngeal wall swelling, nuchal rigidity** and **torticollis to the left**. What is the most probable diagnosis?',
+  options:['Right peritonsillar abscess','Left intratonsillar abscess','Left parapharyngeal abscess','Right acute retropharyngeal abscess'],
+  answer:3,
+  explanation:'Retropharyngeal abscess is common in young children and presents with fever, neck stiffness, and torticollis. The posterior pharyngeal wall swelling is typical, unlike peritonsillar or parapharyngeal abscesses, which are more lateral.',
+  objective:'Posterior pharyngeal wall swelling paramedian to one side in a toddler = acute retropharyngeal abscess; peritonsillar and parapharyngeal swellings sit laterally.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 4, p.2272 (Q41) — the source prints this explanation box. Cross-reference: `entep-throat-64` is the adult peritonsillar counterpart, reprinted as Q40 of this same exam; `entep-throat-17` lists what acute retropharyngeal abscess is not.' },
+
+{ id:'entep-mfe4-6', bank:'endpoint', module:'ent', chapter:'ent-stridor',
+  stem:'What is the **most common cause of stridor in infants**?',
+  options:['Vocal cord paralysis','Laryngomalacia','Subglottic stenosis','Glottic web'],
+  answer:1,
+  explanation:'Laryngomalacia is the most frequent congenital cause of stridor in infants, characterized by supraglottic collapse during inspiration.',
+  objective:'Laryngomalacia is the commonest cause of infantile stridor — inspiratory, from supraglottic collapse.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 4, p.2274 (Q42) — the source prints this explanation box. **Variant of `entep-throat-97`**, which reaches laryngomalacia from a vignette set against croup, epiglottitis and pneumonia; this printing is the direct question set against the other congenital laryngeal lesions, so the discrimination differs. **Secondary chapter: `ent-paedlar`.**' },
+
+{ id:'entep-mfe4-7', bank:'endpoint', module:'ent', chapter:'ent-hoarse',
+  stem:'What is the **main cause of Reinke\'s edema**?',
+  options:['Alcohol','Smoking tobacco','Laryngopharyngeal reflux','Voice abuse'],
+  answer:1,
+  explanation:'Chronic smoking irritates the vocal cords, leading to fluid accumulation in Reinke\'s space. Voice abuse and reflux can contribute but are secondary factors.',
+  objective:'Smoking is the main cause of Reinke\'s oedema; reflux and voice abuse are contributory.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 4, p.2276 (Q43) — the source prints this explanation box. Cross-reference: `entep-throat-20` asks the same association from the other direction (which lesion is most commonly associated with smoking), and `entep-throat-108` is the Reinke\'s vignette.' },
+
+{ id:'entep-mfe4-8', bank:'endpoint', module:'ent', chapter:'ent-neck',
+  stem:'An **adult male patient** with a **painless growing lateral neck mass of 6 months duration**. What is your provisional diagnosis?',
+  options:['Acute lymphadenitis','Branchial cyst','Metastatic lymph node from supraclavicular primary','Supraglottic carcinoma'],
+  answer:2,
+  explanation:'In adults, a new painless lateral neck mass often represents metastatic disease from head and neck cancers, especially if slowly growing. Acute lymphadenitis is usually painful and branchial cysts present earlier in life.',
+  objective:'A painless, slowly enlarging lateral neck node in an adult is a metastatic node until proven otherwise.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 4, p.2278 (Q44) — the source prints this explanation box. **⚠️ THE KEYED OPTION CONTRADICTS THE BANK\'S OWN BOX.** The option reads "metastatic lymph node from **supraclavicular** primary" while the box justifies the answer as metastasis "from **head and neck** cancers" — a supraclavicular primary is not a head and neck primary. **Transcribed as keyed**, with the discrepancy recorded. The same exam prints the correctly worded version as Q77 (`entep-mfe4-32`, p.2344), whose option reads "metastatic lymph node from head and neck malignancy". Cross-reference: `entep-throat-30` and `entep-throat-99` ask the next step (CT) for the same presentation.' },
+
+{ id:'entep-mfe4-9', bank:'endpoint', module:'ent', chapter:'ent-pharsupp',
+  stem:'What is the **most common source of deep neck space infection in children**?',
+  options:['Trauma','Odontogenic infections','Tonsillitis','Mastoiditis'],
+  answer:2,
+  explanation:'In children, tonsillar infections frequently spread to parapharyngeal and retropharyngeal spaces, causing deep neck infections. Odontogenic infections are more common in adults.',
+  objective:'Deep neck space infection is tonsillar in children and odontogenic in adults.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 4, p.2280 (Q45) — the source prints this explanation box.' },
+
+{ id:'entep-mfe4-10', bank:'endpoint', module:'ent', chapter:'ent-paedlar',
+  stem:'What is the **most commonly used medical treatment for laryngeal papillomatosis**?',
+  options:['Photodynamic therapy','Cidofovir','Viral vaccine','Topical steroid'],
+  answer:1,
+  explanation:'Cidofovir is an intralesional antiviral that reduces papilloma growth. Surgical debulking is often combined, but topical steroids or vaccines are not standard primary treatments.',
+  objective:'Intralesional cidofovir is the usual medical adjunct to surgical debulking in laryngeal papillomatosis.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 4, p.2282 (Q46) — the source prints this explanation box. Cross-reference: `entep-throat-68` on the features of the juvenile type, `entep-throat-137` on its presentation.' },
+
+{ id:'entep-mfe4-11', bank:'endpoint', module:'ent', chapter:'ent-pharanat',
+  stem:'Which of the following statements is **true regarding the infantile larynx**?',
+  options:['Situated low in the neck','Firm laryngeal cartilages','Omega shaped epiglottis','Well developed coordinated reflexes'],
+  answer:2,
+  explanation:'The infant larynx has a characteristic omega-shaped epiglottis and is higher in the neck. Cartilages are soft, and reflexes are not fully coordinated.',
+  objective:'Infantile larynx: high in the neck, soft cartilages, omega-shaped epiglottis, immature reflexes.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 4, p.2284 (Q47) — the source prints this explanation box. **Variant of `entep-ear-51`** (a five-option printing keyed on the cricoid diameter) and of `entep-throat-19` (the EXCEPT form keyed on its position in the neck). All three work the same list from different angles and no option list contains another\'s key.' },
+
+{ id:'entep-mfe4-12', bank:'endpoint', module:'ent', chapter:'ent-stridor',
+  stem:'Which one of the following is considered a **non-obstructive indication for tracheostomy**?',
+  options:['Glottic cancer','Subglottic stenosis','Prolonged endotracheal intubation','Bilateral vocal cord paralysis'],
+  answer:2,
+  explanation:'Prolonged intubation may require tracheostomy to prevent laryngeal injury, even if airway obstruction is absent. Other options listed are primarily obstructive causes.',
+  objective:'Prolonged intubation is the classic non-obstructive indication — the airway is patent; the tube itself is the problem.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 4, p.2286 (Q48) — the source prints this explanation box.' },
+
+{ id:'entep-mfe4-13', bank:'endpoint', module:'ent', chapter:'ent-epistaxis',
+  stem:'A **60-year-old male** patient with a **long standing history of hypertension** presented with **acute severe epistaxis**. What is the most probable site of bleeding?',
+  options:['Anterior ethmoidal artery in middle meatus','Little\'s area in the anterior septal area','Sphenopalatine artery as it exits from its foramen','Vascular plexus in nasopharynx'],
+  answer:2,
+  explanation:'Posterior epistaxis in adults, especially with hypertension, most often arises from the sphenopalatine artery. Anterior bleeding (Little\'s area) is more common in children.',
+  objective:'Posterior epistaxis in a hypertensive adult points to the sphenopalatine artery; Little\'s area is the anterior, paediatric site.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 4, p.2288 (Q49) — the source prints this explanation box. Cross-reference: `entep-nose-3` names the sphenopalatine as the artery of epistaxis, and `entep-nose-68` keys its coagulation as the treatment in the same clinical setting.' },
+
+{ id:'entep-mfe4-14', bank:'endpoint', module:'ent', chapter:'ent-nasalobs',
+  stem:'A **54-year-old female** patient presented with **clear unilateral rhinorrhea**. What is the probable diagnosis?',
+  options:['Defect in the skull base','Chronic rhinitis','Foreign body in the nose','Antrochoanal polyp'],
+  answer:0,
+  explanation:'Unilateral clear rhinorrhea suggests CSF leak, usually from trauma or a skull base defect. Chronic rhinitis or polyps usually cause bilateral symptoms or colored discharge.',
+  objective:'Unilateral watery rhinorrhoea is a CSF leak from a skull base defect until proven otherwise; rhinitis and polyps run bilateral.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 4, p.2290 (Q50) — the source prints this explanation box. **Variant of `entep-nose-19`/`entep-nose-28`**, which key the diagnosis by name ("CSF rhinorrhea"); this printing keys the underlying defect instead, so the two option lists share no answer.' },
+
+{ id:'entep-mfe4-15', bank:'endpoint', module:'ent', chapter:'ent-facialpain',
+  stem:'A female patient presented with **unilateral pulsating headache** associated with **photophobia and phonophobia**. What is the most probable diagnosis?',
+  options:['Tension headache','Migraine','Chronic sinusitis','Septal deviation'],
+  answer:1,
+  explanation:'Migraines present with unilateral, pulsating headache and sensory sensitivities. Tension headaches are typically bilateral and pressure-like.',
+  objective:'Unilateral, pulsating, with photophobia and phonophobia = migraine; bilateral and band-like = tension headache.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 4, p.2292 (Q51) — the source prints this explanation box. Cross-reference: `entep-mfe4-19` (p.2308) tests the same three-way contrast from the sinusitis side.' },
+
+{ id:'entep-mfe4-16', bank:'endpoint', module:'ent', chapter:'ent-septum',
+  stem:'A **40-year-old female** patient was involved in a **road traffic accident**; there was **edema and contusion of the middle portion of the face including the nose**. What is the **initial diagnostic modality**?',
+  options:['Plain x-ray in Anteroposterior and lateral views','Contrast enhanced computed tomography','Computed tomography with three dimensional reconstruction','Magnetic resonance imaging'],
+  answer:0,
+  explanation:'Initial imaging for nasal trauma is usually plain X-rays to assess bony injury. CT is reserved for complex fractures or suspected orbital involvement.',
+  objective:'The bank keys plain AP and lateral radiographs as the first imaging step after nasal trauma, reserving CT for complex fractures or suspected orbital involvement.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 4, p.2296 (Q53) — the source prints this explanation box. **⚠️ DISPUTED KEY.** The stem describes injury to the **middle third of the face**, not the nose alone, and midfacial trauma is imaged by CT in standard teaching; the bank\'s own box quietly narrows the question to "nasal trauma" in order to justify the plain film. **Transcribed as keyed**, with both readings recorded. Cross-reference: `entep-nose-12`, `entep-nose-97` and `entep-nose-112` on the timing of reduction after nasal fracture.' },
+
+{ id:'entep-mfe4-17', bank:'endpoint', module:'ent', chapter:'ent-rhin',
+  stem:'A **male adolescent** presented with a **long standing history of nasal obstruction**; examination revealed **hypertrophy of the inferior turbinates**. What is the **long term** treatment modality to relieve the obstruction?',
+  options:['Local steroid sprays','Local decongestant drops','Systemic steroid tablets','Systemic antihistaminic tablets'],
+  answer:0,
+  explanation:'Topical nasal steroids reduce turbinate size long-term with minimal systemic side effects. Decongestants provide short-term relief but are not suitable for chronic management.',
+  objective:'Topical nasal steroid is the long-term answer for turbinate hypertrophy; topical decongestants are short-term only.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 4, p.2300 (Q55) — the source prints this explanation box. Cross-reference: `entep-mfe4-30` (p.2336) is what happens when the decongestant is used long term instead.' },
+
+{ id:'entep-mfe4-18', bank:'endpoint', module:'ent', chapter:'ent-rhin',
+  stem:'What is the **mainstay initial treatment modality** for **allergists**?',
+  options:['Local steroids and antihistaminic tablets','Surgical reduction of the turbinates','Intravenous tympanic steroid injection','Local decongestant and antihistaminic tablets'],
+  answer:0,
+  explanation:'Allergic rhinitis is primarily managed with topical nasal steroids and oral antihistamines to reduce inflammation and control symptoms. Surgery or IV therapy is reserved for refractory cases.',
+  objective:'First line in allergic rhinitis is a topical nasal steroid plus an oral antihistamine; surgery is for refractory turbinate hypertrophy.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 4, p.2302 (Q56) — the source prints this explanation box. **Two defects in the printed question, both left as printed:** the stem says "**allergists**" where it means patients with **allergic rhinitis** (the box confirms the intent), and option c reads "**Intravenous** tympanic steroid injection", conflating intravenous with **intratympanic**. Cross-reference: `entep-nose-60` keys topical nasal steroids as the most effective medical treatment in nasal allergy.' },
+
+{ id:'entep-mfe4-19', bank:'endpoint', module:'ent', chapter:'ent-facialpain',
+  stem:'Which of the following is **not matching** the headache caused by **acute sinusitis**?',
+  options:['Diffuse periorbital headache increasing with bending forward','Associated with nasal obstruction and mucopurulent discharge','May be relieved by systemic decongestants','Pressure like a band surrounding the head'],
+  answer:3,
+  explanation:'Sinusitis headaches are usually localized over affected sinuses and worsen with bending forward. Diffuse, band-like pressure is more typical of tension headaches.',
+  objective:'A band around the head is tension headache; sinusitis pain is localised over the sinus and worse on bending forward.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 4, p.2308 (Q59) — the source prints this explanation box. **⚠️ The keyed option and option a sit awkwardly together**: the bank calls a "diffuse periorbital headache" matching, then rejects "diffuse, band-like pressure" — the box resolves it on the *band*, not the diffuseness. Cross-reference: `entep-mfe4-15` (p.2292) and `entep-nose-84`.' },
+
+{ id:'entep-mfe4-20', bank:'endpoint', module:'ent', chapter:'ent-sinusitis',
+  stem:'A **25-year-old female** patient suffered from a recent attack of **common cold since 10 days**. She started to develop **nasal blockage and mucopurulent rhinorrhea with tenderness overlying the cheek**. What is the most probable diagnosis?',
+  options:['Acute bacterial rhinosinusitis','Acute viral rhinosinusitis','Fungal rhinosinusitis','Chronic bacteria rhinosinusitis'],
+  answer:0,
+  explanation:'Symptoms >10 days after a viral cold suggest bacterial superinfection. Viral rhinosinusitis usually resolves within 7–10 days.',
+  objective:'Symptoms persisting or worsening beyond 10 days after a cold mark the switch from viral to bacterial rhinosinusitis.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 4, p.2312 (Q61) — the source prints this explanation box. Cross-reference: `entep-nose-4` and `entep-nose-76` are the same presentation keyed as acute maxillary sinusitis by side.' },
+
+{ id:'entep-mfe4-21', bank:'endpoint', module:'ent', chapter:'ent-nasalmass',
+  stem:'Which of the following is **characteristic of antrochoanal polyp**?',
+  options:['Protrudes through the nostril','Originates from the ethmoid sinus','Premalignant','Single & unilateral'],
+  answer:3,
+  explanation:'Antrochoanal polyps arise from the maxillary sinus, extend into the choana, and are typically solitary and unilateral. They do not protrude through the nostril or have premalignant potential.',
+  objective:'Antrochoanal polyp: single, unilateral, from the maxillary sinus, growing backwards into the choana rather than forwards out of the nostril.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 4, p.2316 (Q63) — the source prints this explanation box. Cross-reference: `entep-nose-46` and `entep-nose-92` on its treatment.' },
+
+{ id:'entep-mfe4-22', bank:'endpoint', module:'ent', chapter:'ent-rhin',
+  stem:'What is the **characteristic appearance of the nasal mucosa in allergic rhinitis**?',
+  options:['Congested & swollen','Bluish & swollen','Atrophic','Bluish and atrophic'],
+  answer:1,
+  explanation:'Allergic rhinitis causes pale bluish, edematous mucosa due to venous engorgement and inflammation. Congested red mucosa is more typical of infection.',
+  objective:'Allergic mucosa is pale-bluish and boggy; infective mucosa is red and congested; atrophic mucosa belongs to atrophic rhinitis.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 4, p.2318 (Q64) — the source prints this explanation box.' },
+
+{ id:'entep-mfe4-23', bank:'endpoint', module:'ent', chapter:'ent-pharanat',
+  stem:'All of the following laryngeal muscles are **adductors** of the vocal cord **EXCEPT**:',
+  options:['Posterior cricoarytenoid','Lateral cricoarytenoid','Thyroarytenoid','Oblique arytenoid'],
+  answer:0,
+  explanation:'Posterior cricoarytenoid is the only abductor of the vocal cords; the lateral cricoarytenoid, thyroarytenoid, and oblique arytenoid are adductors.',
+  objective:'Posterior cricoarytenoid is the sole abductor of the vocal cords — every other intrinsic muscle adducts or tenses.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 4, p.2320 (Q65) — the source prints this explanation box. Cross-reference: `entep-throat-9` and `entep-throat-25` on the cricothyroid, the one intrinsic muscle spared by recurrent laryngeal nerve injury.' },
+
+{ id:'entep-mfe4-24', bank:'endpoint', module:'ent', chapter:'ent-pharanat',
+  stem:'What is the **sensory nerve supply to the larynx above the level of the vocal cord**?',
+  options:['Glossopharyngeal','Superior laryngeal','Recurrent laryngeal','Pharyngeal branch of vagus'],
+  answer:1,
+  explanation:'The internal branch of the superior laryngeal nerve supplies sensation to the larynx above the vocal cords. Recurrent laryngeal supplies below the cords.',
+  objective:'Above the cords, sensation is the internal branch of the superior laryngeal nerve; below the cords, the recurrent laryngeal.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 4, p.2322 (Q66) — the source prints this explanation box.' },
+
+{ id:'entep-mfe4-25', bank:'endpoint', module:'ent', chapter:'ent-tonsils',
+  stem:'What is the **most common cause of reactionary hemorrhage after adenoidectomy**?',
+  options:['Slipped ligature','Dislodged clot','Incomplete removal','Infection'],
+  answer:1,
+  explanation:'`L3) DISEASES OF THE TONSILS & ADENOIDS.pdf` defines **reactionary** haemorrhage as bleeding **within the first 24 hours**, and gives its causes as **high blood pressure, a slipped ligature, or a dislodged clot**. **Secondary** haemorrhage is later — usually 5–10 days — and is due to infection, and **primary** haemorrhage happens during the operation itself. That timing alone removes *infection*, which belongs to the secondary window.\n\nThe same file separates the two operations by technique. Tonsillectomy includes a "**cold dissection\\ligation**" method, so a tonsillar bed has a ligature that can slip. The adenoidectomy techniques it lists — **conventional curettage**, suction diathermy, coblation, microdebrider and endoscopic-guided removal — involve **no ligature at all**, which leaves the clot as the thing that can give way in the first 24 hours after an adenoidectomy. *Incomplete removal* is listed under adenoidectomy bleeding, but as residual tissue that keeps bleeding rather than as a reactionary event.\n\n**⚠️ No slide ranks the three reactionary causes against one another**, so the bank\'s "most common" is not a figure the course material states; what the material supports is the elimination above.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Reactionary bleeding is within 24 hours; after an adenoidectomy, where nothing is ligated, the cause is a dislodged clot. Infection causes secondary bleeding at 5–10 days.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 4, p.2324 (Q67) — **no explanation box.** One of only three unboxed pages in this exam (pp.2324, 2328, 2338). Cross-reference: `entep-nose-51` (reprinted as Q1 of this exam, p.2192) keys the *type* of bleeding at 12 hours as reactionary; this question asks its cause. `entep-throat-35` lists the indications for adenoidectomy.' },
+
+{ id:'entep-mfe4-26', bank:'endpoint', module:'ent', chapter:'ent-tonsils',
+  stem:'Which of the following is **not a sign of tonsil chronicity**?',
+  options:['Hypertrophy of tonsils','Irregularity in size and shape','Crypts ooze pus on pressure','Submandibular gland enlargement'],
+  answer:3,
+  explanation:'Chronic tonsillitis shows hypertrophy, irregular shape, and crypt exudate. Submandibular gland enlargement is not a direct chronicity sign.',
+  objective:'The signs of chronicity are in the tonsil itself and its draining jugulodigastric nodes — the submandibular *salivary gland* is not among them.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 4, p.2326 (Q68) — the source prints this explanation box. **Read alongside `entep-throat-77`**, which asks the same list and keys **congestion of the anterior pillar** as the odd one out — a key already recorded as disputed. The two are not duplicates (no shared option list), but the bank is answering "which is not a sign of chronicity" two different ways.' },
+
+{ id:'entep-mfe4-27', bank:'endpoint', module:'ent', chapter:'ent-septum',
+  stem:'Which of the following statements is **not matching** the nasal obstruction caused by **septal deviation**?',
+  options:['Strictly unilateral','May cause frontal morning headache','May be associated with sinusitis','Can be bilateral'],
+  answer:0,
+  explanation:'`L24) diseases of the nasal septum.pdf` states the nasal obstruction of a deviated septum **"can be on the same side of the deviation or opposite side because of the hypertrophic changes in turbinate"** — so it is **not strictly unilateral**, which is what makes option a the statement that does not match. The same slide lists among the symptoms **headache** (attributed to "pressure exerted by septal deviations on adjacent sensory nerves — anterior ethmoidal nerve syndrome") and **sinusitis**, which is what makes options b and c true, and it confirms option d directly.\n\nThe *morning* and *frontal* qualifiers in option b are not stated by the slide; the slide gives only headache from the anterior ethmoidal nerve, whose distribution is frontal.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Deviated-septum obstruction is often bilateral — the roomy side hypertrophies its turbinate and blocks too. Headache and sinusitis are recognised consequences.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 4, p.2328 (Q69) — **no explanation box.** Cross-reference: `entep-nose-26` on the complications of septal deviation, `entep-nose-90` on the facts about it, `entep-nose-77` on the obstruction that only partly improves with decongestants.' },
+
+{ id:'entep-mfe4-28', bank:'endpoint', module:'ent', chapter:'ent-sinusitis',
+  stem:'A **10-year-old male** patient with **renal failure on dialysis** presented with **nasal blockage and recurrent blood stained mucoid discharge**. Examination revealed a **necrotic black tissue covering the middle turbinate**. What is the probable diagnosis?',
+  options:['Allergic fungal sinusitis','Invasive fungal sinusitis','Simple fungal sinusitis','Complicated acute rhinosinusitis'],
+  answer:1,
+  explanation:'Immunocompromised patients, like those on dialysis, are prone to invasive fungal sinusitis (e.g., mucormycosis), which causes necrotic tissue. Allergic or simple fungal sinusitis does not cause necrosis.',
+  objective:'Black necrotic mucosa in an immunocompromised patient is invasive fungal sinusitis until proven otherwise — the non-invasive forms do not kill tissue.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 4, p.2332 (Q71) — the source prints this explanation box. Cross-reference: `entep-nose-94` on invasive fulminant fungal sinusitis.' },
+
+{ id:'entep-mfe4-29', bank:'endpoint', module:'ent', chapter:'ent-sinusitis',
+  stem:'A **36-year-old male** patient underwent a **dental extraction 3 days ago**. He started to suffer from **foul discharge from the nose**. What is the most probable diagnosis?',
+  options:['Acute dental sinusitis','Foreign body in nose','Fungal ball','Mucormycosis'],
+  answer:0,
+  explanation:'Recent dental extraction can infect the maxillary sinus, causing purulent foul-smelling discharge. Fungal infections or mucormycosis are less common in this scenario.',
+  objective:'Foul unilateral nasal discharge days after an upper dental extraction is dental (odontogenic) maxillary sinusitis.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 4, p.2334 (Q72) — the source prints this explanation box. Cross-reference: `entep-nose-37` and `entep-nose-54` on the offensive unilateral discharge of dental origin, `entep-nose-102` on oro-antral fistula after extraction of the upper second molar, `entep-nose-66` on the chronic form.' },
+
+{ id:'entep-mfe4-30', bank:'endpoint', module:'ent', chapter:'ent-rhin',
+  stem:'What is the **causative agent in rhinitis medicamentosa**?',
+  options:['Systemic steroid therapy','Systemic decongestant therapy','Local decongestant therapy','Local steroid therapy'],
+  answer:2,
+  explanation:'Prolonged use of topical nasal decongestants causes rebound congestion. Systemic steroids or oral medications are not responsible.',
+  objective:'Rhinitis medicamentosa is rebound congestion from prolonged **topical** decongestant use — local, not systemic, and decongestant, not steroid.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 4, p.2336 (Q73) — the source prints this explanation box. **The bank now prints this fact three ways**: `entep-nose-7` asks which drug is linked to it, `entep-nose-63` states it as a completion, and this printing adds the local-versus-systemic axis. Cross-reference: `entep-mfe4-17` (p.2300) is the long-term alternative.' },
+
+{ id:'entep-mfe4-31', bank:'endpoint', module:'ent', chapter:'ent-nasalobs',
+  stem:'A **newborn** was diagnosed with **bilateral choanal atresia**. What is the **initial treatment modality**?',
+  options:['Immediate surgical intervention','Endotracheal intubation','Oropharyngeal airway placement','Nasogastric tube placement'],
+  answer:2,
+  explanation:'`L23) Anatomy of the Nose.pdf` treats bilateral choanal atresia as an airway emergency, because the newborn is an **obligate nasal breather** for the first 6–8 weeks and "complete nasal obstruction in a newborn may cause death from asphyxia". Its management slide for the bilateral case reads **"creating oral airway: 1. McGovern nipple 2. Oral airway 3. intubation"**, together with **stimulating the infant to cry**, a genetics consult and a work-up for other anomalies. So the first move is to establish an **oral** airway, and the listed methods are given in that order — the nipple and the oral airway before intubation.\n\nDefinitive repair comes afterwards; the same file lists the surgical approaches separately as **transnasal, transpalatal and transseptal**, and notes that in the *unilateral* case surgery is deliberately delayed to let the patient grow and reduce restenosis.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'A newborn is an obligate nasal breather, so bilateral choanal atresia is first treated by creating an oral airway (McGovern nipple or oral airway), with surgical repair afterwards.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 4, p.2338 (Q74) — **no explanation box.** **Not a duplicate of `entep-nose-105`**, which asks how bilateral choanal atresia is *best treated* and keys the transnasal endoscopic repair: that question is about definitive surgery, this one about the initial airway, and the two keys only look contradictory. Cross-reference: `entep-nose-6` and `entep-nose-29` on choanography, the abandoned diagnostic method.' },
+
+{ id:'entep-mfe4-32', bank:'endpoint', module:'ent', chapter:'ent-neck',
+  stem:'A **55-year-old man** presents with a **painless neck mass** that has been **progressively enlarging over the past 6 months**. He has **no history of fever, trauma, or recent infection**. What is the most likely diagnosis?',
+  options:['Tuberculous lymphadenitis','Reactive cervical lymphadenopathy','Metastatic lymph node from head and neck malignancy','Branchial cleft cyst'],
+  answer:2,
+  explanation:'A painless, progressively enlarging neck mass in an older adult with no signs of infection or inflammation strongly suggests a metastatic lymph node, especially from a head and neck malignancy. This presentation is common in squamous cell carcinoma, particularly in smokers or older patients.',
+  objective:'Painless, progressive, no infective signs, older adult — a metastatic node from a head and neck primary, not a reactive or congenital swelling.',
+  source:'ENT AlexMed Endpoints, Model Final Exam 4, p.2344 (Q77) — the source prints this explanation box. **This is the correctly worded twin of Q44 (`entep-mfe4-8`, p.2278)**, which asks the same clinical question but keys an option reading "supraclavicular primary" against a box that explains a head and neck primary. Both are transcribed as printed.' }
 
 ];
