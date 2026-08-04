@@ -1,8 +1,6 @@
 # Herophilus — Memory
 
-Running record, organised around *resuming*. ISO dates; unverified is marked as such. **Only what is
-needed to pick the work up cold; under 200 lines — measure with `(Get-Content).Count`.** Method in
-`CLAUDE.md`, detail in `ledger.md` — **`CLAUDE.md` imports this, so repeating its rules costs budget.**
+Running record, organised around *resuming*. ISO dates; unverified marked as such. **Only what is needed to pick the work up cold; under 200 lines — `(Get-Content).Count`.** Method in `CLAUDE.md`, detail in `ledger.md` — **`CLAUDE.md` imports this, so repeating its rules costs budget.**
 
 ## Resume here — **`ENT endpoint.pdf` IS FULLY READ, all 3,074 pp.**
 
@@ -11,22 +9,18 @@ Exam Night Review's **104 MCQs are READ, STAGED and SWEPT but NOT WRITTEN**; sta
 (`ledger.md` §6); the image pipeline — job 1 — is DONE (§11a).**
 
 1. **RESOLUTION DONE (`ledger.md` §11b) — WRITE THE 37 NEW ENTRIES.** Every verdict is in
-   `content\ent\qb-pages\exam-night-review-resolution.md`, comparisons in `…-sidebyside.txt`.
-   **ZERO pages print a box, so all 37 are authored+marked.** Also fold 64 reprints and attach the
-   18 images — **17 to new entries, p.3024 to `entep-ear-26`** (it folds but brings its picture).
-   **⚠️ 14 of the 37 came from stages C/D, NOT the clean column, and 8 "clean" were reprints** —
-   the sweep's columns were wrong both ways on 22 of 104.
+   `content\ent\qb-pages\exam-night-review-resolution.md`, comparisons in `…-sidebyside.txt`. **ZERO
+   pages print a box, so all 37 are authored+marked.** Fold 64 reprints; attach the 18 images — **17
+   to new entries, p.3024 to `entep-ear-26`** (it folds but brings its picture). **⚠️ 14 of the 37
+   came from stages C/D, not the clean column, and 8 "clean" were reprints.**
 2. **Fold 3 within-batch dupes:** Q15≡Q24, Q21≡Q47, Q52≡Q53 (4 flagged, 3 pairs).
 3. **Read pp.3047–3069 ODD (unread), harvest pp.3046–3070 into `examiner-patterns.md`** — **fact
    lists, NOT questions**; forcing them into `QUESTIONS` would mean inventing distractors.
 
 **18 question images are cut into `app\assets\q\q-<page>.jpg`** (312 KB) by `Design\scripts\
 q-images.ps1`; `image` holds the **basename**, `qImgSrc()` builds the path. **⚠️ `bundle.ps1` DOES NOT
-EXIST** (`CLAUDE.md` claimed it did); the single-file build is owed. **⚠️ THREE bugs this session were SILENT and every one was
-caught by LOOKING, not counting**: `Sort-Object -Property` no-ops on hashtables in PS 5.1; tone spread
-must be pooled across a component, never measured inside a cell (a photo is locally smooth, text is
-not, so the filter rejected pictures and kept paragraphs); and a probe read a **missing** JSON key and
-silently answered "no" to all 18. Detail: `ledger.md` §11a.
+EXIST** (`CLAUDE.md` claimed it did); the single-file build is owed. **⚠️ Three bugs here were SILENT
+and all were caught by LOOKING, not counting** — traps in `CLAUDE.md` §4 and `ledger.md` §11a.
 
 **⚠️ EXAM NIGHT REVIEW BREAKS EVERY PATTERN: ZERO stage-A matches** (first time ever — the bank rewrote
 its stems); 31/104 clean but **37 new after resolution**; **18 carry photographs, 10 unanswerable
@@ -46,21 +40,21 @@ correctly, reprinted and **re-keyed wrongly**. **Go looking for it**; all four s
 the key moved → record it in the existing entry, never a second entry.**
 
 **⚠️ ~~EVERY PARITY SHIFT IS A SPILL PAGE~~ — RETIRED by Exam 5.** Three causes, **only two visible on
-the tile**: a stray *unanswered* page, a *spill* page (prose) — and **a stray ANSWERED page reprinted
-out of sequence, which looks normal** (p.2436). **When parity shifts and no visible cause explains it,
-render the whole run consecutively.** Stable parity ≠ predictable parity.
+the tile** — a stray *unanswered* page, a *spill* page, and **a stray ANSWERED page out of sequence,
+which looks normal** (p.2436). **When parity shifts with no visible cause, render the run
+consecutively.** Stable parity ≠ predictable parity.
 
 **Method: THREE passes.** (1) Read at `-CropTop 0.32` (18/sheet, `Cols 3 -Dpi 110`) + **five-stage**
-sweep. (2) Resolve survivors — the "shortlist, not a verdict" rule below. (3) Re-render survivors at
-`-CropTop 0.40 -Cols 2` for boxes. Then the six other banks. **Order of work:** ENT → Pediatrics →
-Ophthalmology → Neuropsychiatry, all questions first, then theory. **The ENT review below is owed
-before Pediatrics.**
+sweep. (2) Resolve survivors — "shortlist, not a verdict", below. (3) Re-render survivors at `-CropTop
+0.40 -Cols 2` for boxes. **Order:** ENT → Pediatrics → Ophthalmology → Neuropsychiatry, all questions
+first, then theory. **The ENT review below is owed before Pediatrics.**
 
 **⚠️ THE THEORY BRIEF CHANGED, 2026-08-04 — it is a NEW STUDY SOURCE, sufficient to sit the exam from
 alone, NOT a summary.** Every source in the folder, images/diagrams wanted, "important" decided by the
 questions first; **length is never the goal, dropping something important is the one unacceptable
-failure.** Four tests + drop-list in `CLAUDE.md` §4. User will add anatomy/physiology textbooks (**ask,
-never substitute outside knowledge**) and offered a source interview — **take it first.**
+failure.** Four tests + drop-list in `CLAUDE.md` §4. User will add anatomy/physiology textbooks and
+offered a source interview — **take it first**; **ask for a diagram rather than inventing one**, but
+a *fact* gap is filled and tagged, per the answer-the-gap rule below.
 
 ## What exists — **104 chapters**: ENT 30, Ophthalmology 26, Neuropsychiatry 27, Pediatrics 21
 
@@ -74,8 +68,7 @@ never substitute outside knowledge**) and offered a source interview — **take 
 SYNTAX SLIP IN A DATA FILE FAILS SILENTLY AND LOOKS LIKE A CONTENT BUG** — the app boots, throws
 nothing, and reports **82** questions (cases only), because `Q_ENT` never parsed; on 2026-08-04 from
 **one missing comma**. **`file://` gives only "Script error." at line 0** — inline the data file into
-a scratchpad `<script>` for a real line number. **⚠️ The same shape of silent failure bit the image
-cutter twice — see §11a. Where an error is impossible, LOOK at the output; do not count it.**
+a scratchpad `<script>` for a real line number.
 
 **Lecture text cache — complete 2026-07-26**, 146 files in `content\<subject>\lectures\*.txt`; **check
 it before rendering** (10 failures: `ledger.md` §1). `SCHEDULE` — 38 days to 2026-08-31.
@@ -89,10 +82,10 @@ harness's own `<style>`** — its 2 rules made the same boot read 770.) **WCAG-A
 
 **What it is now:** Greek light/dark design from the user's own artwork (2026-07-28), an ambient film,
 and **the Clepsydra** — a hologram companion carrying the study-session timer (2026-08-02).
-Import/Export were replaced by automatic `wardround.bak.<profileId>` snapshots. **Every rule, token
-contract and trap is in `CLAUDE.md` §6 — NOT repeated here. History: `ledger.md` §12 and §11a.
-Backups: `archive\index.pre-*.html`.** Outstanding: the **Notion board and PDF schedule still carry
-the old module colours** (knowingly accepted), and **no single-file bundler exists.**
+Import/Export replaced by automatic `wardround.bak.<profileId>` snapshots. **Every rule, token
+contract and trap is in `CLAUDE.md` §6 — NOT repeated here. History: `ledger.md` §12 and §11a. Backups:
+`archive\index.pre-*.html`.** Outstanding: the **Notion board and PDF schedule still carry the old
+module colours** (knowingly accepted), and **no single-file bundler exists.**
 
 **⚠️ THE ONE THING THAT MUST SURVIVE ANY SUMMARY: THE CLEPSYDRA IS THE USER'S OWN ARTWORK** — nine
 poses at `app\assets\clep\*.png`, source at `Clypsedra\`. **Do not redraw her, do not draw anything
@@ -101,9 +94,9 @@ onto her.** Three rounds of wasted work in a day; the answer was always *ask for
 ## Where transcription stands — everything in `ENT endpoint.pdf` is WRITTEN except Exam Night Review
 
 Boundaries all verified by render — Ear pp.143–760 (243 entries), Nose pp.891–1185 (136), Throat
-pp.1350–1720 (160); detail in `ledger.md` §"Transcribed ranges". **All three SECTIONS share one shape:** MCQs
-printed **twice**, a title page, then a case section printed **once**, two per page; **no case carries
-a printed explanation. ⚠️ No exam has a case section.**
+pp.1350–1720 (160); detail in `ledger.md` §"Transcribed ranges". **All three SECTIONS share one shape:**
+MCQs printed **twice**, a title page, then cases printed **once**, two per page; **no case carries a
+printed explanation. ⚠️ No exam has a case section.**
 
 **Box presence is a property of the page, not the section.** Throat ran **103 consecutive answered pages
 with none** (pp.1537–1720), so every entry from `entep-throat-70` on is authored; **Exams 4–7 box 74/77,
@@ -125,19 +118,25 @@ fold-vs-variant, not the stem** (`ledger.md`).
   difference), (E) **stem-token ranking over ALL of them**. Rationale: `ledger.md` §7.
 - **⚠️ A–D ALL KEY ON THE ANSWER, SO A REWORDED OR RE-OPTIONED REPRINT PASSES THEM ALL, and E lists
   without deciding. Every stage's verdict is a shortlist — proven on Exam Night Review, where the
-  columns were wrong BOTH WAYS on 22 of 104.** Resolution is not optional: **read side
-  by side EVERY staged question whose OPTION SET differs from its stem twin — stages C, D and clean
-  TOGETHER.** **⚠️ The new question need not be in the clean column** — 14 of Exam Night Review's 37
-  were not. **A 1.00 stem match that did NOT reach stage A or B is a re-optioned reprint by
-  definition**, and **a changed option set can move the key LEGITIMATELY** (`ledger.md` §11b) — that
-  is not a self-contradiction, which needs IDENTICAL options. **A fold can still carry something the
-  held entry lacks — check before dropping.** Then keyword-search every survivor **twice, differently
-  worded**. Worked failures: `ledger.md` §7, §11b and the Exam 4–7 entries.
+  columns were wrong BOTH WAYS on 22 of 104.** Resolution is not optional: **read side by side EVERY
+  staged question whose OPTION SET differs from its stem twin — stages C, D and clean TOGETHER.**
+  **⚠️ The new question need not be in the clean column** — 14 of Exam Night Review's 37 were not. **A
+  1.00 stem match that did NOT reach stage A or B is a re-optioned reprint by definition**, and **a
+  changed option set can move the key LEGITIMATELY** (`ledger.md` §11b) — not a self-contradiction,
+  which needs IDENTICAL options. **A fold can still carry something the held entry lacks.** Then
+  keyword-search every survivor **twice, differently worded**. Failures: `ledger.md` §7, §11b.
 
 **Where the source prints no explanation box, the explanation is written here** — rule and marker in
 `CLAUDE.md` §4. **476 of the 680 entries carry the marker — 70%**, measured 2026-08-04 in a real boot:
 **seven tenths of ENT's explanations are written, not transcribed — the real scope of the end-of-ENT
-review.** Recurring gaps: review item 4 below.
+review** (recurring gaps: review item 4).
+
+**⚠️ A GAP IN THE MATERIAL IS NOW ANSWERED, NOT DECLARED — user's instruction, 2026-08-04, REVERSING
+the workspace rule for this project only.** Where slides and book do not cover a point, **fill it from
+general medical knowledge** and give the whole answer; keep `not taken from the course material` only
+as a short tag on the claim, never as a sentence that stops. Shape to copy: `entep-throat-103`.
+**⚠️ Before leaving anything unanswered, INTERVIEW THE USER** — batched as one list per batch, never
+per sentence (211 tagged passages already exist across 177 entries). Contract: `CLAUDE.md` §4.
 
 **Three banks per module** (`endpoint`/`house`/`gradegain`); map, cover-identification and the
 `alsoIn` contract in `CLAUDE.md` §4. **Still missing: House for Neuropsychiatry, Grade Gain for
@@ -151,24 +150,24 @@ an entry.** One so far.
    Almost certainly authored, **not verified**. **⚠️ The exams may close much of this for free:**
    Exam 1 boxes `entep-ear-1…25`, `nose-1…24`, `throat-1…24`; Exams 2–3 box `26…53`.
 3. **Re-run the duplicate check per module as it completes** — all **five** stages of it.
-4. **⚠️ The nasopharynx — the highest-value single gap in ENT.** Up to **27** entries rest on outside
-   knowledge (upper bound, unverified); **one ENT-nose-book read fixes it**, with item 5. Plus
-   **fourteen Throat slide gaps** (**Vincent's angina**, **leucoplakia**, the **thyroglossal cyst's
-   tongue-protrusion sign** — absent from **all 32** ENT files), **three Nose gaps** (dangerous area
-   of the face, CSF-leak management, ammonia as a trigeminal stimulus), and **the eponymous signs**.
-5. **⚠️ Eleven disputed printed keys, each transcribed as keyed with both readings recorded in its
-   own entry — reasoning in `ledger.md` §11 and in the Exam 4–7 entries.** **⚠️ A DISPUTED KEY IS
-   PROVISIONAL UNTIL THE BANK REPRINTS IT** — five are now **settled as the bank's deliberate
-   position**, every one reclassified by a *later* printing, never by re-reading the original:
-   `entep-throat-77`, Exam 1's **Q16**, `entep-throat-28`, and `entep-throat-2`/`entep-mfe5-20`
-   (**pp.2820/2823/2828 in Recently Edited — the compiler's own ERRATA LIST — re-affirm all three
-   with newly written boxes**). Still open: `entep-throat-83`, Q136/Q153 of pp.1617–1706, Exam 1's
-   **Q13**, `entep-mfe4-16`, `entep-mfe6-1`, **`entep-mfe7-1`** and **`entep-nose-2`**.
-   **FIVE are self-contradictions** (bank keys it correctly, reprints it, re-keys it wrongly):
-   `entep-mfe4-8`↔`-mfe4-32`, `entep-mfe5-20`↔its own p.2438 table, `entep-mfe6-1`↔`entep-ear-59`
-   (contradicted by **four** sources), and **Exam 7's two on consecutive questions** —
-   `entep-mfe7-1`↔`entep-nose-19` (**the bank deleted the correct answer from its own option
-   list**) and `entep-nose-2`↔its p.2786 reprint.
+4. **⚠️ The nasopharynx — the highest-value single gap in ENT**, and now the top **book**-read target
+   under the answer-the-gap rule. Up to **27** entries rest on outside knowledge (upper bound,
+   unverified); **one ENT-nose-book read fixes it.** Plus **fourteen Throat slide gaps** (**Vincent's
+   angina**, **leucoplakia**, the **thyroglossal cyst's tongue-protrusion sign** — absent from **all
+   32** ENT files), **three Nose gaps** (dangerous area of the face, CSF-leak management, ammonia as a
+   trigeminal stimulus), and **the eponymous signs**. **These are the interview shortlist.**
+5. **⚠️ Eleven disputed printed keys, each transcribed as keyed with both readings in its own entry**
+   — reasoning in `ledger.md` §11 and the Exam 4–7 entries. **⚠️ A DISPUTED KEY IS PROVISIONAL UNTIL
+   THE BANK REPRINTS IT** — five are **settled as the bank's deliberate position**, every one
+   reclassified by a *later* printing, never by re-reading the original: `entep-throat-77`, Exam 1's
+   **Q16**, `entep-throat-28`, `entep-throat-2`/`entep-mfe5-20` (**pp.2820/2823/2828, Recently Edited
+   — the compiler's own ERRATA LIST — re-affirm all three with newly written boxes**). Still open:
+   `entep-throat-83`, Q136/Q153 of pp.1617–1706, Exam 1's **Q13**, `entep-mfe4-16`, `entep-mfe6-1`,
+   **`entep-mfe7-1`**, **`entep-nose-2`**. **FIVE are self-contradictions** (keyed right, reprinted,
+   re-keyed wrong): `entep-mfe4-8`↔`-mfe4-32`, `entep-mfe5-20`↔its p.2438 table,
+   `entep-mfe6-1`↔`entep-ear-59` (contradicted by **four** sources), and **Exam 7's two on
+   consecutive questions** — `entep-mfe7-1`↔`entep-nose-19` (**the bank deleted the correct answer
+   from its own option list**) and `entep-nose-2`↔its p.2786 reprint.
 6. **A full content and design review**, at the user's request, before the other three modules.
 
 ## Environment — **full details in `ledger.md` §13** (Poppler's PATH trap, the browsers, the PowerShell image pipeline, what is absent, two native-exe gotchas). What changes what you do first:
@@ -181,20 +180,19 @@ an entry.** One so far.
   via **ffmpeg** (off PATH). **Headless Chrome is the only way to screenshot or probe the app**, and
   **Chrome + Canva are available for producing theory diagrams** (user, 2026-08-04).
 - **The project is on GitHub, PRIVATE**: `mahmoudbanna23-ctrl/Herophilus`, branches `main` and
-  `design/clepsydra-and-sessions` (holds the Clepsydra artwork — the only copy off this drive).
-  `Semester 8\` and `files.zip` gitignored — **ledger §13 for the push method.** Sources: ledger §9.
+  `design/clepsydra-and-sessions` (the only copy of the Clepsydra artwork off this drive). `Semester
+  8\` and `files.zip` gitignored — **push method: ledger §13.** Sources: ledger §9.
 
 ## Deadline and open items — exam period **approximately early September 2026**, the user's own estimate, not a published date. **Do not rebuild the schedule on it.**
 
-- **Reading all 1,637 book pages is not realistic.** Book reading is driven by the questions and by
-  slide gaps, located via each book's contents page. **A chapter resting on slides and questions
-  alone must be reported as such.**
+- **Reading all 1,637 book pages is not realistic**, but the answer-the-gap rule raises the book's
+  value: **the book is the first place to look before filling a gap from general knowledge.** Driven
+  by the questions and by slide gaps, located via each book's contents page.
 - **Measure, then believe.** *Check the sum* — a count that did not reconcile has been written down
   **five times** (e.g. "156 authored passages" against a measured 473; a MEMORY line count via
   `Measure-Object -Line`, **which skips blank lines** — use `(Get-Content).Count`). *Check the
   auditor* — **three** contrast auditors gave false failures (`CLAUDE.md` §7). *Reconcile the batch*
-  — written + dropped must equal staged. **And where no error is possible, LOOK: two silent image-
-  cutter bugs each produced a plausible wrong crop that every numeric check passed.**
+  — written + dropped must equal staged. **And where no error is possible, LOOK.**
 - **Cleanup awaiting approval** — `Opthalmo\…\drive-download-…-001.zip` (173 MB) duplicates all 29
-  loose Ophthalmology lecture files; two Pediatrics PPT files are broken stubs, both inside protected
-  `Semester 8\`; also `files.zip`. **Nothing deleted without a yes.**
+  loose Ophthalmology lectures; two Pediatrics PPT stubs; both inside protected `Semester 8\`; also
+  `files.zip`. **Nothing deleted without a yes.**

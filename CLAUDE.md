@@ -319,9 +319,33 @@ unreliable, and makes transcription indistinguishable from judgement.
 **Explanations.** Where the source prints an explanation box, capture it verbatim and leave it
 unmarked. Where it prints none, **write the explanation** — grounded in the chapter's cached lecture
 slide, naming the slide file in the text — and end it with the marker `Written for this bank — the
-endpoint file prints no explanation here.` If the slides do not cover the point, say `not taken from
-the course material` in the explanation itself. The marker is what keeps transcribed and authored
-text distinguishable; it is not optional.
+endpoint file prints no explanation here.` The marker is what keeps transcribed and authored text
+distinguishable; it is not optional.
+
+**⚠️ A GAP IN THE MATERIAL IS ANSWERED, NOT DECLARED — the user's explicit instruction, 2026-08-04.**
+Where the slides and the book do not cover a point, **answer it from general medical knowledge** and
+give the learner the whole thing: the entity, how it presents, why the distractors are wrong, and the
+comparison the examiner is testing. Verbatim: *"If the explanations doesn't exist in the Book and the
+PPT you fill it from general medical knowledge. Try to avoid writing 'the course material doesn't
+cover this' as much as you can."* **This supersedes the workspace rule in `D:\claude os\CLAUDE.md`
+§1/§6 for Herophilus only** — that file still governs the other projects.
+
+- **The tag stays, the refusal goes.** Keep `not taken from the course material` as a short
+  parenthetical on the sentence it qualifies, so an unsourced claim is still identifiable when a
+  lecturer contradicts it. **What must not survive is the dead end** — a sentence that announces the
+  gap and stops, or a `source` field that leads with the gap instead of the grounding. The Vincent's
+  angina entry (`entep-throat-103`, p.1555) is the shape to copy: no slide covers it anywhere in the
+  32 ENT files, and the explanation still delivers the organisms, the presentation, the treatment and
+  a discrimination table against diphtheria.
+- **Never present outside knowledge as sourced**, and never blend it into a cited passage without the
+  tag. That half of §5 is unchanged — the change is that the gap is *filled*, not that it is hidden.
+- **⚠️ INTERVIEW THE USER BEFORE LEAVING ANY POINT UNANSWERED** (their instruction, same date). If a
+  point cannot be answered safely even from general knowledge — a disputed key, a claim that needs a
+  textbook figure, a place where the honest answer is "this depends on the lecturer" — **stop and ask
+  them**, so a solution is found together. Do not write the disclaimer as a way out.
+- **Batch the interview, do not fire it per sentence.** 211 passages already carry the tag across 177
+  entries; asking once per occurrence would stall every batch. Collect the genuinely unanswerable
+  points while writing, then bring them **as one list at the end of the batch**.
 
 ### Free-text cases
 
@@ -449,8 +473,11 @@ from the material, and that must be stated explicitly and kept separate from sou
 Preserve medical terminology exactly as the source writes it. Do not paraphrase a clinical term into
 an approximate one.
 
-If the material does not cover something, **say the material does not cover it.** Do not fill the
-gap from general knowledge.
+**⚠️ Where the material does not cover something, ANSWER IT ANYWAY from general medical knowledge and
+tag the claim** — the user's instruction of 2026-08-04, which **reverses the workspace rule for this
+project only**. The full contract, including when to stop and interview the user instead, is in §4
+under *Explanations*. What survives unchanged: outside knowledge is **always identifiable as such**
+and is never passed off as sourced.
 
 All study output is in **English**.
 
