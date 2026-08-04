@@ -10,10 +10,12 @@ Exam Night Review's **104 MCQs are READ, STAGED and SWEPT but NOT WRITTEN**; sta
 `content\ent\qb-pages\exam-night-review-mcqs.staged.js` + `…-sweep.json`. **Three jobs left
 (`ledger.md` §6); the image pipeline — job 1 — is DONE (§11a).**
 
-1. **Write the 31 clean entries. ZERO pages print a box**, so every one is authored+marked. **Attach
-   the 18 images here** (`image`+`imgAlt`, +`imgEssential` for 10): **13 sit on clean questions, 5 on
-   reprint candidates** (Q25, Q96, Q98, Q100, Q102). **⚠️ `sweep.json` has NO `.clean` key** —
-   `counts.clean` + `cleanIds`; reading `.clean` returns null and silently answers "no" to all.
+1. **RESOLUTION DONE (`ledger.md` §11b) — WRITE THE 37 NEW ENTRIES.** Every verdict is in
+   `content\ent\qb-pages\exam-night-review-resolution.md`, comparisons in `…-sidebyside.txt`.
+   **ZERO pages print a box, so all 37 are authored+marked.** Also fold 64 reprints and attach the
+   18 images — **17 to new entries, p.3024 to `entep-ear-26`** (it folds but brings its picture).
+   **⚠️ 14 of the 37 came from stages C/D, NOT the clean column, and 8 "clean" were reprints** —
+   the sweep's columns were wrong both ways on 22 of 104.
 2. **Fold 3 within-batch dupes:** Q15≡Q24, Q21≡Q47, Q52≡Q53 (4 flagged, 3 pairs).
 3. **Read pp.3047–3069 ODD (unread), harvest pp.3046–3070 into `examiner-patterns.md`** — **fact
    lists, NOT questions**; forcing them into `QUESTIONS` would mean inventing distractors.
@@ -27,11 +29,11 @@ not, so the filter rejected pictures and kept paragraphs); and a probe read a **
 silently answered "no" to all 18. Detail: `ledger.md` §11a.
 
 **⚠️ EXAM NIGHT REVIEW BREAKS EVERY PATTERN: ZERO stage-A matches** (first time ever — the bank rewrote
-its stems), **31/104 clean**, **18 carry photographs and 10 are unanswerable without them** (3 being
-*labelled* anatomy diagrams — "the structure labeled X" — which no words can replace). **⚠️ NEVER CARRY
-STRUCTURE ACROSS A SECTION BOUNDARY:** every section and all 7 exams print each question **twice**,
-**Recently Edited prints each ONCE already answered**, the fact-list run prints each page once. Check
-the first ten pages before staging.
+its stems); 31/104 clean but **37 new after resolution**; **18 carry photographs, 10 unanswerable
+without them** (3 *labelled* anatomy diagrams — "the structure labeled X"). **⚠️ NEVER CARRY STRUCTURE
+ACROSS A SECTION BOUNDARY:** every section and all 7 exams print each question **twice**, **Recently
+Edited prints each ONCE already answered**, the fact-list run prints each page once. Check the first
+ten pages before staging.
 
 **⚠️ THE REPRINT RATE HAS NO TREND — DO NOT EXTRAPOLATE IT.** 7 exams + Recently Edited: **96 → 100 →
 99 → 58 → 42 → 99 → 99 → 100%**, then Exam Night Review at **~70%**. Near-100% runs predict nothing.
@@ -60,10 +62,9 @@ questions first; **length is never the goal, dropping something important is the
 failure.** Four tests + drop-list in `CLAUDE.md` §4. User will add anatomy/physiology textbooks (**ask,
 never substitute outside knowledge**) and offered a source interview — **take it first.**
 
-## What exists
+## What exists — **104 chapters**: ENT 30, Ophthalmology 26, Neuropsychiatry 27, Pediatrics 21
 
-**104 chapters** — ENT 30, Ophthalmology 26, Neuropsychiatry 27, Pediatrics 21. **All content is ENT
-so far**; the other three hold **0** questions and **no theory is written anywhere**.
+**All content is ENT so far**; the other three hold **0** questions and **no theory is written**.
 `QUESTIONS.length` is **680** — 598 MCQs + 82 cases, **all 30 ENT chapters holding ≥1**. By bank:
 **660 Endpoint, 21 House, 0 Grade Gain** — 681, because one question is in two banks.
 
@@ -79,13 +80,12 @@ cutter twice — see §11a. Where an error is impossible, LOOK at the output; do
 **Lecture text cache — complete 2026-07-26**, 146 files in `content\<subject>\lectures\*.txt`; **check
 it before rendering** (10 failures: `ledger.md` §1). `SCHEDULE` — 38 days to 2026-08-31.
 
-## The app
+## The app — boots clean from `file://`
 
-**Boots clean from `file://`** — zero console errors, 9 Clepsydra poses, **768 CSS rules with all 3
-`max-aspect-ratio:5/4` blocks intact**, re-verified 2026-08-04. (Count **recursively** — the only way
-to see a swallowed media block. **⚠️ Match by `media.mediaText`, not a regex on `5/4`**: Chrome
-normalises it to `5 / 4`. **⚠️ Subtract the harness's own `<style>`** — it added 2 and made the same
-boot read 770.) **WCAG-AA clean**, 2026-07-28. **Re-audit after any colour change.**
+Zero console errors, 9 Clepsydra poses, **768 CSS rules, all 3 `max-aspect-ratio:5/4` blocks intact**,
+re-verified 2026-08-04. (Count **recursively** — the only way to see a swallowed media block. **⚠️ Match
+on `media.mediaText`, not a regex on `5/4`**: Chrome normalises it to `5 / 4`. **⚠️ Subtract the
+harness's own `<style>`** — its 2 rules made the same boot read 770.) **WCAG-AA clean**, 2026-07-28.
 
 **What it is now:** Greek light/dark design from the user's own artwork (2026-07-28), an ambient film,
 and **the Clepsydra** — a hologram companion carrying the study-session timer (2026-08-02).
@@ -98,11 +98,10 @@ the old module colours** (knowingly accepted), and **no single-file bundler exis
 poses at `app\assets\clep\*.png`, source at `Clypsedra\`. **Do not redraw her, do not draw anything
 onto her.** Three rounds of wasted work in a day; the answer was always *ask for artwork*.
 
-## Where transcription stands
+## Where transcription stands — everything in `ENT endpoint.pdf` is WRITTEN except Exam Night Review
 
-**`ENT endpoint.pdf`: everything is WRITTEN except Exam Night Review's 104 staged MCQs.** Boundaries
-all verified by render — Ear pp.143–760 (243 entries), Nose pp.891–1185 (136), Throat pp.1350–1720
-(160); detail in `ledger.md` §"Transcribed ranges". **All three SECTIONS share one shape:** MCQs
+Boundaries all verified by render — Ear pp.143–760 (243 entries), Nose pp.891–1185 (136), Throat
+pp.1350–1720 (160); detail in `ledger.md` §"Transcribed ranges". **All three SECTIONS share one shape:** MCQs
 printed **twice**, a title page, then a case section printed **once**, two per page; **no case carries
 a printed explanation. ⚠️ No exam has a case section.**
 
@@ -120,18 +119,20 @@ fold-vs-variant, not the stem** (`ledger.md`).
 - **NEITHER THE PRINTED NUMBERS NOR THE PAGE COUNT COUNTS THE QUESTIONS.** Only reading every
   answered page does.
 - **RUN THE DUPLICATE SWEEP OVER THE WHOLE FILE BEFORE WRITING A BATCH.** The file recycles across
-  section boundaries; run *before* the writing it has caught **493+ reprints with nothing wasted**.
-  **Normalise first** (lowercase, punctuation, **sort the options**). **⚠️ FIVE STAGES:** (A) stem +
-  option set, (B) option set + key, (C) key + option count, (D) **≤1 DIFFERING TOKEN in the key**
-  (symmetric difference — no ratio serves short and long answers alike), (E) **stem-token ranking,
-  over ALL of them**. Rationale: `ledger.md` §7.
+  sections; run *before* writing it has caught **557+ reprints with nothing wasted**. **Normalise
+  first** (lowercase, punctuation, **sort the options**). **⚠️ FIVE STAGES:** (A) stem + option set,
+  (B) option set + key, (C) key + option count, (D) **≤1 DIFFERING TOKEN in the key** (symmetric
+  difference), (E) **stem-token ranking over ALL of them**. Rationale: `ledger.md` §7.
 - **⚠️ A–D ALL KEY ON THE ANSWER, SO A REWORDED OR RE-OPTIONED REPRINT PASSES THEM ALL, and E lists
-  without deciding. Every stage's verdict is a shortlist.** Resolution is not optional: **read side
+  without deciding. Every stage's verdict is a shortlist — proven on Exam Night Review, where the
+  columns were wrong BOTH WAYS on 22 of 104.** Resolution is not optional: **read side
   by side EVERY staged question whose OPTION SET differs from its stem twin — stages C, D and clean
-  TOGETHER.** **⚠️ The new question need not be in the clean column** — Exam 7's only one came out of
-  stage C while its clean 3 were noise, and Exam 6's Q21 was never ranked. **A 1.00 stem match that
-  did NOT reach stage A or B is a re-optioned reprint by definition.** Then keyword-search every
-  survivor **twice, differently worded**. Worked failures: `ledger.md` §7 and the Exam 4–7 entries.
+  TOGETHER.** **⚠️ The new question need not be in the clean column** — 14 of Exam Night Review's 37
+  were not. **A 1.00 stem match that did NOT reach stage A or B is a re-optioned reprint by
+  definition**, and **a changed option set can move the key LEGITIMATELY** (`ledger.md` §11b) — that
+  is not a self-contradiction, which needs IDENTICAL options. **A fold can still carry something the
+  held entry lacks — check before dropping.** Then keyword-search every survivor **twice, differently
+  worded**. Worked failures: `ledger.md` §7, §11b and the Exam 4–7 entries.
 
 **Where the source prints no explanation box, the explanation is written here** — rule and marker in
 `CLAUDE.md` §4. **476 of the 680 entries carry the marker — 70%**, measured 2026-08-04 in a real boot:
@@ -145,8 +146,7 @@ an entry.** One so far.
 
 ## Owed in the end-of-ENT review — detail in `ledger.md` §11; work it before Pediatrics begins
 
-1. **⚠️ Sweep the WHOLE file for the "Ask ChatGPT" marker** — 5 known (pp.1011, 1015, 1489, 2146,
-   2168), each found by eye, never by a search.
+1. **⚠️ Sweep the WHOLE file for "Ask ChatGPT"** — 5 known (pp.1011, 1015, 1489, 2146, 2168), each found by eye, never by a search.
 2. **67 entries record no provenance either way** — 46 inside `entep-ear-1`…`68`, all 21 House.
    Almost certainly authored, **not verified**. **⚠️ The exams may close much of this for free:**
    Exam 1 boxes `entep-ear-1…25`, `nose-1…24`, `throat-1…24`; Exams 2–3 box `26…53`.

@@ -1,0 +1,1163 @@
+﻿════════════════════════════════════════════════════════════════
+STAGED Q1  p.2838   stage=D   stemMatch=1
+  A 20-year-old male patient sustained head trauma in a motorcycle accident. There was bleeding from the right ear and right lower motor neuron facial paralysis. Which statement best describes the facial movements?
+      a) Inability to close the left eye with deviation of the angle of the mouth to the right
+   >> b) Inability to close the right eye with deviation of the angle of the mouth to the left
+      c) Deviation of the angle of the mouth to the left with normal eye closure
+      d) Inability to close both eyes
+
+  ── best existing match: entep-ear-63  (ent-facial)
+  A 20-year-old male patient sustained head trauma in a motorcycle accident. There was bleeding from the right ear and right lower motor neuron facial paralysis. Which statement best describes the facial movements?
+      a) Inability to close left eye with angle of mouth deviation to the right
+   >> b) Inability to close right eye with angle of mouth deviation to the left
+      c) Angle of mouth deviation to the left with normal eye closure
+      d) Inability to close both eyes
+  2nd: entep-nose-50 0.33 | Anti-edematous treatment, then reduction after 5 days
+
+════════════════════════════════════════════════════════════════
+STAGED Q85  p.3006   stage=C   stemMatch=1
+  A 45-year-old female patient underwent a hysterectomy surgery for a uterine fibroid. Following the operation, she was doing well but it was noticed that her voice was hoarse. Which of the following might be the cause of hoarseness of voice in that patient?
+      a) Normal postoperative effect
+      b) Reinke's edema
+      c) Vocal nodules
+      d) Vocal polyp
+   >> undefined) Intubation granuloma
+
+  ── best existing match: entep-throat-53  (ent-hoarse)
+  A 45-year-old female patient underwent a hysterectomy surgery for a uterine fibroid. Following the operation, she was doing well, but it was noticed that her voice was hoarse. Which of the following might be the cause of hoarseness of voice in that patient?
+      a) Normal postoperative adverse effect.
+      b) Reinke's edema.
+      c) Vocal nodules.
+      d) Vocal polyp.
+   >> undefined) Intubation granuloma.
+  2nd: entep-ear-36 1 | Intubation granuloma.
+
+════════════════════════════════════════════════════════════════
+STAGED Q36  p.2908   stage=C   stemMatch=0.95
+  A 7-year-old child has bilateral secretory otitis media for 6 months. What is the treatment of choice?
+      a) Observe for 3 months
+      b) Adenoidectomy
+   >> c) Bilateral grommet tube insertion after myringotomy
+      d) Medical treatment
+
+  ── best existing match: entep-ear-197  (ent-aom)
+  A 7-year-old male has bilateral secretory otitis media for 6 months. What is the treatment of choice?
+      a) Wait and see for 3 months
+      b) Adenoidectomy
+   >> c) Bilateral grommet tube insertion after myringotomy
+      d) Medical treatment
+  2nd: entep-ear-43 0.53 | Mastoidectomy.
+
+════════════════════════════════════════════════════════════════
+STAGED Q2  p.2840   stage=clean   stemMatch=0.93
+  A 30-year-old female teacher presented to the outpatient clinic complaining of hoarseness of voice for 3 weeks. A rigid endoscopic examination revealed that both vocal cords are inflamed and edematous, with no signs of a pathological organic mass. What is the most recommended line of treatment?
+      a) Only antireflux medications
+      b) Antireflux medications and follow-up
+   >> c) Antireflux medications and voice therapy
+      d) Only voice therapy
+
+  ── best existing match: entep-throat-6  (ent-hoarse)
+  A 30-year-old female teacher presented to the outpatient clinic, complaining of hoarseness of voice for 4 months. Rigid endoscopic examination revealed that both vocal cords were inflamed and edematous with no signs of pathological organic mass. What is the most recommended line of treatment?
+      a) Only medical treatment.
+   >> b) Medical treatment and follow-up.
+      c) Medical treatment and voice therapy.
+      d) Only voice therapy.
+  2nd: entep-throat-28 0.45 | Medical treatment and follow-up.
+
+════════════════════════════════════════════════════════════════
+STAGED Q92  p.3020   stage=C   stemMatch=0.91
+  All of the following are symptoms of Meniere's disease except:
+      a) Sensorineural hearing loss
+      b) Tinnitus
+   >> c) Loss of consciousness
+      d) Ear fullness
+      undefined) Vertigo
+
+  ── best existing match: entep-ear-44  (ent-vertigo)
+  All of the following are among the symptoms of Meniere's disease except?
+      a) SNHL
+      b) Tinnitus.
+   >> c) Loss of consciousness.
+      d) Sensation of ear fullness
+      undefined) Vertigo.
+  2nd: entep-ear-99 0.82 | Causes vertigo for few days
+
+════════════════════════════════════════════════════════════════
+STAGED Q59  p.2954   stage=C   stemMatch=0.87
+  What is the most common cause of recurrent bilateral acute otitis media in children?
+   >> a) Adenoid hypertrophy
+      b) Acute mastoiditis
+      c) Foreign body
+      d) Ear trauma
+
+  ── best existing match: entep-ear-203  (ent-aom)
+  Which of the following is the most common cause of recurrent bilateral acute otitis media in children?
+   >> a) Adenoid hypertrophy
+      b) Acute mastoiditis
+      c) Foreign body
+      d) Trauma to the ears
+  2nd: entep-ear-147 0.63 | Breast feeding in the flat position
+
+════════════════════════════════════════════════════════════════
+STAGED Q13  p.2862   stage=D   stemMatch=0.85
+  A 4-year-old boy presents with snoring and mouth breathing. What is the optimum modality to assess the adenoids?
+   >> a) Flexible nasopharyngoscopy
+      b) Frontal X-ray of paranasal sinuses.
+      c) Examination under general anasthesia.
+      d) Computed tomography (CT)
+
+  ── best existing match: entep-nose-56  (ent-tonsils)
+  A 3 year old boy presents with snoring and mouth breathing. The optimum imaging modality to assess the adenoids is by:
+      a) Ultrasongraphy.
+   >> b) Plain X-ray.
+      c) MRI.
+      d) Angiography.
+  2nd: entep-nose-75 0.52 | X ray
+
+════════════════════════════════════════════════════════════════
+STAGED Q17  p.2870   stage=clean   stemMatch=0.83
+  A 25-year-old male presented to the ENT clinic with pain and tenderness over the left cheek, as well as nasal discharge and headache. The patient gave a history of root canal treatment of his second left upper premolar tooth. What is your next step of management plan?
+      a) Topical corticosteroids
+   >> b) Computed tomography
+      c) Maxillary antral lavage
+      d) Functional endoscopic sinus
+
+  ── best existing match: entep-nose-4  (ent-sinusitis)
+  A 25-year-old male presented to the ENT clinic with pain and tenderness over the left cheek as well as nasal discharge and headache. The patient gave a history of root canal treatment of his second left premolar tooth. The most probable diagnosis is:
+      a) Antrochoanal polyp
+      b) Acute bacterial pansinusitis
+   >> c) Left acute maxillary sinusitis
+      d) Common cold
+  2nd: entep-nose-76 0.56 | Acute right sided maxillary sinusitis
+
+════════════════════════════════════════════════════════════════
+STAGED Q37  p.2910   stage=C   stemMatch=0.81
+  A 33-year-old patient complains of vertigo with normal hearing. Neurological exam is normal, but electronystagmography shows weak vestibular nerve function. What is the most likely diagnosis?
+      a) Meniere's disease
+   >> b) Vestibular neuritis
+      c) BPPV
+      d) Vertebrobasilar insufficiency
+
+  ── best existing match: entep-ear-198  (ent-vertigo)
+  A 33-year-old patient complains of vertigo with normal hearing. Neurological examination is normal. Electronystagmography revealed a weak vestibular nerve. What is the most probable diagnosis?
+      a) Meniere's disease
+   >> b) Vestibular neuritis
+      c) BPPV
+      d) VBI
+  2nd: entep-ear-209 0.5 | Vestibular neuritis
+
+════════════════════════════════════════════════════════════════
+STAGED Q60  p.2956   stage=clean   stemMatch=0.8
+  Which statement is true regarding management of laryngeal trauma?
+      a) Can be delayed up to 48 hours
+      b) Timing does not affect prognosis
+   >> c) Should be managed as soon as possible
+      d) No role for medical management
+
+  ── best existing match: entep-throat-107  (ent-stridor)
+  Which of the following is true regarding management of laryngeal trauma?
+      a) Management can be delayed up to 48 hours following presentation to ER
+      b) Time of management doesn't influence the prognosis
+   >> c) Management should be conducted as soon as possible
+      d) Medical management can't be employed in any case with neck trauma
+  2nd: entep-nose-92 0.56 | The primary treatment is endoscopic sinus surgery
+
+════════════════════════════════════════════════════════════════
+STAGED Q39  p.2914   stage=C   stemMatch=0.76
+  A 4-year-old child presents with bilateral nasal obstruction, discharge, and snoring. What is the best imaging modality to assess adenoid hypertrophy?
+   >> a) X-ray
+      b) CT
+      c) MRI
+      d) Ultrasound
+
+  ── best existing match: entep-nose-75  (ent-tonsils)
+  A 4-year-old child presented with bilateral nasal obstruction, discharge and snoring. What's the best imaging modality to assess hypertrophied adenoids in this child?
+   >> a) X ray
+      b) CT
+      c) MRI
+      d) US
+  2nd: entep-nose-56 0.57 | Plain X-ray.
+
+════════════════════════════════════════════════════════════════
+STAGED Q73  p.2982   stage=D   stemMatch=0.73
+  Which of the following organisms is responsible for acute epiglottitis?
+   >> a) Haemophilus influenzae type B
+      b) Parainfluenza virus
+      c) Staphylococcus aureus
+      d) Moraxella catarrhalis
+      undefined) Herpes simplex virus type II
+
+  ── best existing match: entep-ear-217  (ent-otalgia)
+  Which of the following organisms is most commonly responsible for furunculosis?
+      a) Streptococcus pyogenes.
+      b) Escherichia coli.
+   >> c) Staphylococcus aureus.
+      d) Pseudomonas aeruginosa.
+  2nd: entep-throat-26 0.69 | Haemophilus influenzae type B bacteria.
+
+════════════════════════════════════════════════════════════════
+STAGED Q89  p.3014   stage=D   stemMatch=0.73
+  Best treatment for middle ear effusion lasting more than 3 months?
+      a) Myringotomy
+      b) Myringoplasty
+   >> c) Myringotomy with grommet tube insertion
+      d) Myringotomy with T-tube insertion
+
+  ── best existing match: entep-ear-212  (ent-aom)
+  What is the best treatment for neglected middle ear effusion lasting more than 3 months?
+      a) Myringotomy
+      b) Myringoplasty
+   >> c) Myringotomy with insertion of grommet tube
+      d) Myringotomy with insertion of T-tube
+  2nd: entep-ear-41 0.45 | Myringotomy with insertion of Grommets tube.
+
+════════════════════════════════════════════════════════════════
+STAGED Q30  p.2896   stage=C   stemMatch=0.71
+  A patient has recurrent vertigo lasting for hours, associated with tinnitus and unilateral hearing loss. What is the cause?
+   >> a) Endolymphatic hydrops
+      b) Vestibular nerve inflammation
+      c) Dislodged otolith crystals
+      d) Vertebrobasilar insufficiency (VBI)
+
+  ── best existing match: entep-ear-195  (ent-vertigo)
+  A patient has attacks of vertigo that persist for hours, tinnitus, and unilateral hearing loss. What is the cause of this condition?
+   >> a) Endolymphatic hydrops
+      b) Vestibular nerve inflammation
+      c) Dislodgement of crystals from otolith into semicircular canal
+      d) Vertebrobasilar insufficiency (VBI)
+  2nd: entep-ear-163 0.53 | Presbyacusis
+
+════════════════════════════════════════════════════════════════
+STAGED Q57  p.2950   stage=clean   stemMatch=0.71
+  Diplopia in Gradenigo's syndrome is due to involvement of which structure?
+      a) Trigeminal ganglion
+   >> b) Abducens nerve
+      c) Vestibulocochlear nerve
+      d) Orbital structures
+
+  ── best existing match: entep-ear-202  (ent-csom)
+  Diplopia occurring in petrositis (Gradenigo's triad) is due to involvement of which nerve?
+      a) Trigeminal ganglion
+   >> b) Abducent nerve
+      c) Vestibulocochlear nerve
+      d) Orbital structures
+  2nd: entep-ear-79 0.64 | VI nerve
+
+════════════════════════════════════════════════════════════════
+STAGED Q78  p.2992   stage=C   stemMatch=0.71
+  A lesion at the level of the vocal cord causes which type of stridor?
+   >> a) Inspiratory only
+      b) Expiratory only
+      c) Biphasic
+      d) Variable
+
+  ── best existing match: entep-throat-34  (ent-stridor)
+  A lesion at the level of the vocal cord will cause which of the following types of stridor?
+   >> a) Inspiratory only.
+      b) Expiratory only.
+      c) Both inspiratory and expiratory (Biphasic).
+      d) Variable.
+  2nd: entep-throat-36 0.43 | Bilateral adductor VC paralysis.
+
+════════════════════════════════════════════════════════════════
+STAGED Q12  p.2860   stage=clean   stemMatch=0.7   [IMAGE]
+  An 11-year-old child presents with recurrent painless episodes of left ear discharge, coinciding with upper respiratory tract infections. The discharge is typically mucopurulent, odorless, and profuse. What is the most probable diagnosis?
+      a) Acute otitis media
+      b) Acute mastoiditis
+   >> c) Chronic otitis/tubo-tympanic type
+      d) Chronic otitis/attico-antral type
+
+  ── best existing match: entep-ear-6  (ent-csom)
+  A 4-year-old child presents with recurrent painless episodes of left ear discharge, coinciding with upper respiratory tract infections. The discharge is typically mucopurulent, odorless, and profuse. What is the most descriptive statement for the tympanic membrane perforation in this case?
+      a) Attic in pars flaccida.
+      b) Marginal rounding in pars tensa.
+   >> c) Central rounding in pars tensa.
+      d) Marginal with cholesteatoma.
+  2nd: entep-mfe1-2 0.47 | Acute laryngotracheobronchitis (Croup)
+
+════════════════════════════════════════════════════════════════
+STAGED Q28  p.2892   stage=C   stemMatch=0.65
+  A child presents with right-sided diminished air entry. He has a history of peanut ingestion 2 days ago. Chest X-ray shows right-sided hyperinflation with tracheal deviation to the left. What is the next step in management?
+      a) CT lung
+   >> b) Rigid bronchoscopy under general anesthesia
+      c) Reassurance and follow-up
+      d) None of the above
+
+  ── best existing match: entep-throat-98  (ent-stridor)
+  A child presented with right-sided diminished air entry. His parents report that he ate peanuts 2 days ago. X-ray revealed right-sided hyperinflated chest with tracheal deviation to the left side. What is the next step to properly manage this child?
+      a) CT lung
+   >> b) Rigid bronchoscopy under general anesthesia
+      c) Assurance and follow up
+      d) None of the above
+  2nd: entep-throat-51 0.35 | Transfer escorted to the operating room to secure the airway.
+
+════════════════════════════════════════════════════════════════
+STAGED Q96  p.3028   stage=D   stemMatch=0.64   [IMAGE, ESSENTIAL]
+  A patient complains of unilateral hear loss comes to clinical attention. Otoscopic examination revealed the attached photo of ear drum. Which of the following is the most likely diagnosis?
+      a) Acute suppurative otitis media
+      b) Chronic suppurative otitis media
+   >> c) Middle ear effusion
+      d) Glomus tumor
+
+  ── best existing match: entep-mfe5-23  (ent-aom)
+  A patient with unilateral hearing loss comes to clinical attention. Otoscopic examination reveals middle ear effusion. Which of the following is the suitable management of this patient?
+      a) Myringotomy with insertion of t-tube
+      b) Myringotomy with insertion of Grommet's tube
+   >> c) Watchful waiting for 3 months
+      d) Antibiotics
+  2nd: entep-ear-39 0.54 | Furunculosis.
+
+════════════════════════════════════════════════════════════════
+STAGED Q29  p.2894   stage=clean   stemMatch=0.63
+  A patient complains of vertigo triggered when lying on one side. Hallpike test is positive. What is the next step in management?
+      a) Gentamicin injection
+      b) Singular nerve section
+   >> c) Epley's maneuver
+      d) Anti-vertiginous drugs
+
+  ── best existing match: entep-ear-194  (ent-vertigo)
+  A patient complains of attacks of a turning sensation whenever he sleeps on one side. The doctor performed a Hallpike test which was positive. What is the next step in management?
+      a) Gentamycin injection
+      b) Singular nerve cutting
+   >> c) Epley's procedure
+      d) Anti-vertiginous drugs
+  2nd: entep-throat-57 0.38 | Unilateral pharyngeal weakness
+
+════════════════════════════════════════════════════════════════
+STAGED Q64  p.2964   stage=clean   stemMatch=0.63
+  A 34-year-old female presents with hearing loss and a sensation of ear fullness. Otoscopy shows air-fluid level behind an intact tympanic membrane. What tympanometry finding is expected?
+   >> a) Type B with low volume
+      b) Type B with high volume
+      c) Type C
+      d) Type As
+
+  ── best existing match: entep-ear-204  (ent-audio)
+  A 34-year-old female presents with left-sided hearing loss and a sensation of air fullness. Otoscopy reveals bubbles and a hairline behind an intact drum. Which tympanometry pattern will be seen?
+   >> a) Type B tympanogram with low basic volume
+      b) Type B tympanogram with high basic volume
+      c) Type C tympanogram
+      d) Type As tympanogram
+  2nd: entep-mfe5-6 0.38 | Type B tympanometry with high basic volume
+
+════════════════════════════════════════════════════════════════
+STAGED Q33  p.2902   stage=C   stemMatch=0.6
+  A football player presents 2 hours after nasal trauma with fracture, deviation, severe edema, and tenderness. What is the best management?
+      a) Immediate digital reduction without anesthesia
+      b) Immediate digital reduction under anesthesia
+      c) Immediate operative reduction under anesthesia
+   >> d) Conservative treatment for 1 week then reassessment
+
+  ── best existing match: entep-nose-74  (ent-septum)
+  A football player presented with deviated and fractured nose with a history of nose trauma two hours ago. He had severe edema and tenderness, what is the best management?
+      a) Immediate digital reduction without anesthesia
+      b) Immediate digital reduction under anesthesia
+      c) Immediate reduction intraoperatively under anesthesia
+   >> d) Conservative treatment for 1 week then reassessment
+  2nd: entep-nose-50 0.4 | Anti-edematous treatment, then reduction after 5 days
+
+════════════════════════════════════════════════════════════════
+STAGED Q76  p.2988   stage=C   stemMatch=0.6
+  A 35-year-old male presents with a depressed nasal fracture after trauma 2 days ago with severe facial edema. Best management?
+      a) Digital reduction without anesthesia
+   >> b) Anti-edematous treatment, then reduction after 5 days
+      c) Immediate surgical reduction under anesthesia
+      d) Wait 6 months then rhinoplasty
+
+  ── best existing match: entep-nose-50  (ent-septum)
+  A 35-year-old male presented with a depressed nasal fracture that was caused by trauma 2 days ago. Examination revealed severe facial edema. Which of the following is the best management?
+      a) Digital reduction without anesthesia
+   >> b) Anti-edematous treatment, then reduction after 5 days
+      c) Immediate surgical reduction under anesthesia
+      d) Waiting for 6 months, then rhinoplasty
+  2nd: entep-nose-12 0.43 | Anti-edema measures followed by reduction after five days
+
+════════════════════════════════════════════════════════════════
+STAGED Q62  p.2960   stage=C   stemMatch=0.59
+  A 56-year-old male presents with unilateral nasal obstruction and a firm mass extending from the maxillary sinus into the nasal cavity. What is the next step to confirm diagnosis?
+      a) X-ray
+      b) Repeat endoscopy
+   >> c) CT scan
+      d) All of the above
+
+  ── best existing match: entep-nose-80  (ent-nasalmass)
+  A 56-year-old male patient comes to your clinic with unilateral nasal obstruction and rhinorrhea. Endoscopic examination revealed an irregular firm mass extending from maxillary antrum into nasal cavity. Which of the following is the next step in order to confirm the diagnosis of this mass?
+      a) X ray
+      b) Repeat endoscopy
+   >> c) CT
+      d) All of the above
+  2nd: entep-nose-15 0.42 | Combined CT and MRI
+
+════════════════════════════════════════════════════════════════
+STAGED Q9  p.2854   stage=C   stemMatch=0.58
+  What is the most common organism causing acute laryngotracheobronchitis (Croup) in children?
+      a) Haemophilus influenzae.
+      b) Staphylococcus aureus.
+      c) Streptococcus pneumoniae.
+   >> d) Parainfluenza virus.
+
+  ── best existing match: entep-nose-104  (ent-sinuscomp)
+  The most common complication associated with acute ethmoid sinusitis in children is:
+   >> a) Orbital cellulitis
+      b) Osteomyelitis of the frontal bone
+      c) Subdural abscess
+      d) Cavernous sinus thrombosis
+  2nd: entep-mfe4-9 0.54 | Tonsillitis
+
+════════════════════════════════════════════════════════════════
+STAGED Q10  p.2856   stage=clean   stemMatch=0.57
+  A 20-year-old patient was subjected to a major road traffic accident. He has hearing loss on the right side. He has clear fluid otorrhea from the same ear. Which of the following is the most appropriate statement about this otorrhea?
+      a) A possible CSF leak, which is a dangerous condition that needs immediate repair.
+      b) A likely acute ear infection resulting from trauma and needs appropriate
+      c) This is an unremarkable finding, and the patient only needs follow-up at an outpatient clinic.
+   >> d) This is a probable CSF leak, and the patient needs conservative management and close follow-up.
+
+  ── best existing match: entep-ear-10  (ent-otorrhea)
+  A 30-year-old male was subject to a major road traffic accident. He complains of leaking a clear watery fluid from his left ear. Which of the following is the most likely nature of the discharge?
+   >> a) CSF
+      b) Blood
+      c) Mucous
+      d) Pus
+  2nd: entep-ear-52 0.4 | Pneumothorax.
+
+════════════════════════════════════════════════════════════════
+STAGED Q4  p.2844   stage=clean   stemMatch=0.56   [IMAGE, ESSENTIAL]
+  What is the usual initial symptom for the shown condition?
+      a) Ear pain
+   >> b) Pulsatile tinnitus
+      c) Episodic vertigo
+      d) Ear discharge
+
+  ── best existing match: entep-mfe4-18  (ent-rhin)
+  What is the mainstay initial treatment modality for allergists?
+   >> a) Local steroids and antihistaminic tablets
+      b) Surgical reduction of the turbinates
+      c) Intravenous tympanic steroid injection
+      d) Local decongestant and antihistaminic tablets
+  2nd: entep-throat-55 0.44 | Anomia
+
+════════════════════════════════════════════════════════════════
+STAGED Q45  p.2926   stage=C   stemMatch=0.56
+  What is the main causative organism of croup?
+      a) Haemophilus influenzae type B
+   >> b) Parainfluenza virus
+      c) Influenza virus
+      d) Rhinovirus
+
+  ── best existing match: entep-mfe4-7  (ent-hoarse)
+  What is the main cause of Reinke's edema?
+      a) Alcohol
+   >> b) Smoking tobacco
+      c) Laryngopharyngeal reflux
+      d) Voice abuse
+  2nd: entep-throat-102 0.55 | Parainfluenza virus
+
+════════════════════════════════════════════════════════════════
+STAGED Q54  p.2944   stage=D   stemMatch=0.56
+  A 62-year-old male presents with a painless ulcerative mass on the right side of the tongue that gradually increased in size. What is the best next step in management?
+      a) Reassurance and follow-up
+      b) Incision biopsy
+   >> c) CT scan for exclusion of malignancy
+      d) Simple excision
+
+  ── best existing match: entep-throat-104  (ent-neck)
+  A 62-year-old male patient presented with a painless ulcerative mass on the right side of his tongue. He reported that it was smaller and then began to enlarge gradually. What is the best next step in order to properly manage this lesion?
+      a) Assurance and follow up
+      b) Incision biopsy
+   >> c) CT for exclusion of malignancy
+      d) Simple excision
+  2nd: entep-throat-30 0.5 | CT scan.
+
+════════════════════════════════════════════════════════════════
+STAGED Q75  p.2986   stage=C   stemMatch=0.56
+  A 62-year-old male presents with a lateral neck mass for 7 months, gradually increasing in size. What is the best next step?
+      a) X-ray
+   >> b) CT scan
+      c) Reassurance and follow-up
+      d) CBC
+
+  ── best existing match: entep-throat-30  (ent-neck)
+  A 62-year-old male patient comes to your clinic with a lateral neck mass that appeared 7 months ago and gradually increased in size. What's the best next step in order to properly manage this patient?
+      a) X-ray scan.
+   >> b) CT scan.
+      c) Reassurance and follow-up.
+      d) CBC.
+  2nd: entep-throat-99 0.55 | Contrast-enhanced CT
+
+════════════════════════════════════════════════════════════════
+STAGED Q35  p.2906   stage=D   stemMatch=0.55
+  A 42-year-old male presents with a lateral neck mass increasing in size over 7 months. What is the next step?
+      a) X-ray
+   >> b) Contrast-enhanced CT scan
+      c) Reassurance and follow-up
+      d) CBC
+
+  ── best existing match: entep-throat-99  (ent-neck)
+  A 42-year-old male patient comes to your clinic with a lateral neck mass that appeared 7 months ago and gradually increased in size. What is the next step in order to properly manage this patient?
+      a) X ray
+   >> b) Contrast-enhanced CT
+      c) Assurance and follow up
+      d) CBC
+  2nd: entep-throat-30 0.47 | CT scan.
+
+════════════════════════════════════════════════════════════════
+STAGED Q56  p.2948   stage=C   stemMatch=0.55
+  Cocaine addicts are prone to which nasal condition?
+      a) Septal deviation
+      b) Septal fracture
+   >> c) Septal perforation
+      d) Nasopharyngeal angiofibroma
+
+  ── best existing match: entep-nose-79  (ent-septum)
+  Cocaine addicts are prone for which of the following nasal conditions?
+      a) Septal deviation
+      b) Septal fractures
+   >> c) Septal perforation
+      d) Nasopharyngeal angiofibroma
+  2nd: entep-ear-54 0.25 | Labyrinthitis
+
+════════════════════════════════════════════════════════════════
+STAGED Q23  p.2882   stage=clean   stemMatch=0.52
+  A 20-year-old male patient presented with an acute onset of left ear pain, vesicles behind the left external ear canal, inability to close the left eye, and deviation of the mouth to the right side. What is the likely diagnosis?
+      a) Left-side Bell's palsy
+      b) Left-side complicated acute otitis media
+      c) Left-side malignant otitis externa
+   >> d) Left-side herpes zoster oticus
+
+  ── best existing match: entep-ear-207  (ent-facial)
+  A woman presents with severe left ear pain and auricular vesicles. She cannot close her left eye and her mouth deviates to the right. What is the most likely diagnosis?
+      a) Right-sided Bell's palsy
+      b) Left-sided Bell's palsy
+      c) Right-sided herpes zoster oticus
+   >> d) Left-sided herpes zoster oticus
+  2nd: entep-mfe5-30 0.49 | Herpes zoster (Ramsay Hunt syndrome)
+
+════════════════════════════════════════════════════════════════
+STAGED Q7  p.2850   stage=clean   stemMatch=0.5
+  A 60-year-old male patient presented with unilateral hearing loss for 3 months. Otoscopy revealed unilateral middle ear effusion. What is the next step?
+      a) PTA and myringotomy and ventilation tube insertion
+      b) Wait and follow up after 3 months
+      c) CT temporal bone
+   >> d) Nasal and Nasopharyngeal endoscopy
+
+  ── best existing match: entep-ear-41  (ent-aom)
+  What is the best line of treatment for a patient presenting with neglected middle ear effusion that lasted more than 3 months?
+      a) Myringotomy.
+      b) Myringoplasty.
+   >> c) Myringotomy with insertion of Grommets tube.
+      d) Myringotomy with insertion of T-tube.
+  2nd: entep-nose-9 0.46 | Inverted papilloma
+
+════════════════════════════════════════════════════════════════
+STAGED Q15  p.2866   stage=clean   stemMatch=0.5
+  A football player presented with nasal trauma one month ago. After the marked edema and contusion of the nasal dorsum subsided, there is evident deviation of the nasal pyramid. What is your management plan?
+      a) Immediate manual reduction without anesthesia
+      b) Immediate intraoperative closed reduction and fixation
+      c) Immediate closed (endonasal) rhinoplasty
+   >> d) Open rhinoplasty after five months
+
+  ── best existing match: entep-nose-74  (ent-septum)
+  A football player presented with deviated and fractured nose with a history of nose trauma two hours ago. He had severe edema and tenderness, what is the best management?
+      a) Immediate digital reduction without anesthesia
+      b) Immediate digital reduction under anesthesia
+      c) Immediate reduction intraoperatively under anesthesia
+   >> d) Conservative treatment for 1 week then reassessment
+  2nd: entep-nose-12 0.39 | Anti-edema measures followed by reduction after five days
+
+════════════════════════════════════════════════════════════════
+STAGED Q24  p.2884   stage=clean   stemMatch=0.5
+  A football player presented with nasal trauma one month ago. After the marked edema and contusion of the nasal dorsum subsided, there is evident deviation of the nasal pyramid. What is your management plan?
+      a) Immediate manual reduction without anesthesia
+      b) Immediate intraoperative closed reduction and fixation
+      c) Immediate closed (endonasal) rhinoplasty
+   >> d) Open rhinoplasty after five months
+
+  ── best existing match: entep-nose-74  (ent-septum)
+  A football player presented with deviated and fractured nose with a history of nose trauma two hours ago. He had severe edema and tenderness, what is the best management?
+      a) Immediate digital reduction without anesthesia
+      b) Immediate digital reduction under anesthesia
+      c) Immediate reduction intraoperatively under anesthesia
+   >> d) Conservative treatment for 1 week then reassessment
+  2nd: entep-nose-12 0.39 | Anti-edema measures followed by reduction after five days
+
+════════════════════════════════════════════════════════════════
+STAGED Q31  p.2898   stage=clean   stemMatch=0.5
+  A patient with right-sided Bell's palsy will show which of the following?
+      a) Cannot close right eye, mouth deviated to right side
+   >> b) Cannot close right eye, mouth deviated to left side
+      c) Cannot close left eye, mouth deviated to left side
+      d) Cannot close left eye, mouth deviated to right side
+
+  ── best existing match: entep-nose-25  (ent-septum)
+  Which of the following is the best treatment for a patient with nasal septal hematoma?
+      a) Watchful expectancy.
+   >> b) Immediate surgical evacuation.
+      c) Antibiotics for 1 week followed by surgical evacuation later.
+      d) Corticosteroids.
+  2nd: entep-ear-251 0.5 | Idiopathic paralysis of the facial nerve that recovers completely in most cases
+
+════════════════════════════════════════════════════════════════
+STAGED Q38  p.2912   stage=clean   stemMatch=0.5
+  A 40-year-old female is diagnosed with a vocal cord polyp. What is the main symptom?
+      a) Dyspnea
+      b) Aspiration
+   >> c) Hoarseness
+      d) All of the above
+
+  ── best existing match: entep-mfe4-14  (ent-nasalobs)
+  A 54-year-old female patient presented with clear unilateral rhinorrhea. What is the probable diagnosis?
+   >> a) Defect in the skull base
+      b) Chronic rhinitis
+      c) Foreign body in the nose
+      d) Antrochoanal polyp
+  2nd: entep-throat-100 0.5 | Hoarse voice
+
+════════════════════════════════════════════════════════════════
+STAGED Q40  p.2916   stage=D   stemMatch=0.5
+  A 22-year-old patient has bilateral negative Rinne test and Weber test lateralizing to the left ear. What is the diagnosis?
+   >> a) Bilateral conductive hearing loss, worse on the left
+      b) Bilateral conductive hearing loss, worse on the right
+      c) Bilateral sensorineural hearing loss, worse on the left
+      d) Bilateral sensorineural hearing loss, worse on the right
+
+  ── best existing match: entep-ear-67  (ent-audio)
+  A 22-year-old patient complains of reduced hearing. Upon examination, it was evident that this patient has bilateral -ve Rinne test with lateralization of Weber's test to the left ear. What's your diagnosis?
+   >> a) Bilateral conductive hearing loss, worse on the left ear
+      b) Bilateral conductive hearing loss, worse on the right ear
+      c) Bilateral sensory-neural hearing loss, worse on the left ear
+      d) Bilateral sensory-neural hearing loss, worse on the right ear
+  2nd: entep-ear-185 0.46 | Conductive hearing loss
+
+════════════════════════════════════════════════════════════════
+STAGED Q50  p.2936   stage=C   stemMatch=0.5
+  A 3-year-old boy presents with a unilateral nasal polyp. What is the next step?
+      a) Observation
+      b) Biopsy
+      c) Excision
+   >> d) CT scan
+
+  ── best existing match: entep-nose-100  (ent-nasalobs)
+  A 4-year-old child presented with unilateral nasal offensive purulent discharge. The likely diagnosis is:
+      a) CSF Rhinorrhea
+      b) Antro-choanal Polyp
+   >> c) FB in the nose
+      d) Allergic Rhinitis
+  2nd: entep-mfe4-14 0.5 | Defect in the skull base
+
+════════════════════════════════════════════════════════════════
+STAGED Q80  p.2996   stage=clean   stemMatch=0.5
+  Which statement best defines vertigo?
+      a) Sensation of imbalance increasing with movement
+   >> b) Sensation of spinning (self or surroundings)
+      c) Anorexia with fainting
+      d) Loss of consciousness with lightheadedness
+
+  ── best existing match: entep-ear-210  (ent-vertigo)
+  Which of the following best defines the term "Vertigo"?
+      a) Sensation of imbalance that increases on movement
+   >> b) Sensation of spinning as if the patient or the surroundings are moving
+      c) Sensation of faintness with anorexia
+      d) Momentary loss of consciousness and light-headedness
+  2nd: entep-ear-46 0.44 | Sensation of spinning: as if the patient is spinning, or the world spins around the patient.
+
+════════════════════════════════════════════════════════════════
+STAGED Q93  p.3022   stage=clean   stemMatch=0.5   [IMAGE]
+  A 40-year-old female presents with gradual bilateral hearing loss. Rinne test is negative bilaterally, and Weber lateralizes to the left. What is the most likely diagnosis?
+      a) Bilateral otosclerosis, worse on the right
+   >> b) Bilateral otosclerosis, worse on the left
+      c) Presbycusis, worse on the right
+      d) Presbycusis, worse on the left
+
+  ── best existing match: entep-throat-42  (ent-dysph)
+  A 24-year-old female patient presents with a triad of pallor, angular cheilosis, and difficult swallowing (dysphagia). What is the most likely diagnosis?
+      a) Esophageal stricture.
+      b) Hypopharyngeal carcinoma.
+      c) Cricopharyngeal spasm.
+   >> d) Plummer-Vinson syndrome.
+      undefined) Zenker's diverticulum.
+  2nd: entep-ear-205 0.48 | Safe CSOM (right ear)
+
+════════════════════════════════════════════════════════════════
+STAGED Q100  p.3036   stage=C   stemMatch=0.5   [IMAGE, ESSENTIAL]
+  The lesion shown in the opposite picture will cause which of the following complaints mostly?
+      a) Stridor
+      b) Muffled voice
+   >> c) Hoarse voice
+      d) Choking
+
+  ── best existing match: entep-throat-34  (ent-stridor)
+  A lesion at the level of the vocal cord will cause which of the following types of stridor?
+   >> a) Inspiratory only.
+      b) Expiratory only.
+      c) Both inspiratory and expiratory (Biphasic).
+      d) Variable.
+  2nd: entep-ear-216 0.44 | Inability to close the right eye and deviation of the mouth to the left.
+
+════════════════════════════════════════════════════════════════
+STAGED Q101  p.3038   stage=clean   stemMatch=0.5   [IMAGE, ESSENTIAL]
+  A 34-year-old female teacher presents with voice hoarseness. Laryngoscopy revealed the shown lesion. Which of the following is the line of treatment of that patient?
+      a) Voice therapy
+   >> b) Microlaryngosurgery (MLS)
+      c) Voice rest
+      d) None of the above
+
+  ── best existing match: entep-mfe5-45  (ent-hoarse)
+  A 60-year-old smoker complains of persistent hoarseness of voice for 4 months. Which of the following is the most initial step in the management of that patient?
+      a) Contrast-enhanced CT neck
+      b) Direct laryngoscopy under general anesthesia
+   >> c) Office laryngoscopy
+      d) None of the above
+  2nd: entep-mfe5-46 0.48 | Direct laryngoscopy and biopsy
+
+════════════════════════════════════════════════════════════════
+STAGED Q103  p.3042   stage=clean   stemMatch=0.5   [IMAGE]
+  A patient presents to the ENT clinic with pain in left ear, marked tenderness on tragus that increases on touching or moving. Which of the following parts of the EAC is affected?
+      a) Inner third
+      b) Middle third
+   >> c) Outer third
+      d) Outer two-thirds
+
+  ── best existing match: entep-ear-39  (ent-otalgia)
+  A patient visits the ENT clinic and complains about left ear pain during mastication. Examination revealed that the left ear tragus is tender. Which of the following is the most likely diagnosis of that patient?
+   >> a) Furunculosis.
+      b) Otitis media.
+      c) Otitis interna.
+      d) Mastoiditis.
+      undefined) Otomycosis.
+  2nd: entep-mfe5-6 0.43 | Type B tympanometry with high basic volume
+
+════════════════════════════════════════════════════════════════
+STAGED Q97  p.3030   stage=clean   stemMatch=0.49   [IMAGE]
+  A 9-year-old child complains of unilateral nasal obstruction together with loud snores and rhinorrhea. Endoscopic examination showed a smooth surfaced mass in posterior nasal cavity extending backwards. The rhinologist ordered a CT scan which showed opacification of maxillary sinus extending into nasopharynx. What's the most probable diagnosis?
+      a) Adenoids
+   >> b) Antrochoanal polyp
+      c) Angiofibroma
+      d) Intranasal meningoencephalocele
+
+  ── best existing match: entep-nose-80  (ent-nasalmass)
+  A 56-year-old male patient comes to your clinic with unilateral nasal obstruction and rhinorrhea. Endoscopic examination revealed an irregular firm mass extending from maxillary antrum into nasal cavity. Which of the following is the next step in order to confirm the diagnosis of this mass?
+      a) X ray
+      b) Repeat endoscopy
+   >> c) CT
+      d) All of the above
+  2nd: entep-nose-15 0.42 | Combined CT and MRI
+
+════════════════════════════════════════════════════════════════
+STAGED Q68  p.2972   stage=clean   stemMatch=0.48
+  A 36-year-old female presents with dyspnea and stridor. Chest X-ray is normal. She had recent ICU admission. Most likely diagnosis?
+      a) Surgical emphysema
+   >> b) Tracheomalacia
+      c) Recurrent laryngeal nerve paralysis
+      d) None of the above
+
+  ── best existing match: entep-throat-42  (ent-dysph)
+  A 24-year-old female patient presents with a triad of pallor, angular cheilosis, and difficult swallowing (dysphagia). What is the most likely diagnosis?
+      a) Esophageal stricture.
+      b) Hypopharyngeal carcinoma.
+      c) Cricopharyngeal spasm.
+   >> d) Plummer-Vinson syndrome.
+      undefined) Zenker's diverticulum.
+  2nd: entep-ear-209 0.39 | Vestibular neuritis
+
+════════════════════════════════════════════════════════════════
+STAGED Q5  p.2846   stage=clean   stemMatch=0.47
+  A newborn baby was brought to the primary health care for otoacoustic emission hearing screening. The result was no bilateral response. Clinically, external ear canals and tympanic membranes were normal bilaterally. It was repeated after 3 months and still no bilateral response. What is the appropriate next step?
+      a) Wait until the age of three and perform play audiometry
+      b) Tympanometry testing and pure tone audiometry (PTA)
+   >> c) Tympanometry and Auditory Brainstem Response (ABR) Test
+      d) Tympanometry and Electroencephalogram (EEG) Test
+
+  ── best existing match: entep-ear-64  (ent-audio)
+  A three-month-old baby is brought by his parents because they are concerned about his hearing. Clinically, external ear canals and tympanic membranes are normal bilaterally. What is the appropriate next step?
+      a) Wait till the age of three years and perform play audiometry
+      b) Tympanometry testing
+   >> c) Auditory brain response
+      d) Reassurance
+  2nd: entep-ear-8 0.33 | Offer bilateral myringotomy and grommet tube insertion.
+
+════════════════════════════════════════════════════════════════
+STAGED Q18  p.2872   stage=clean   stemMatch=0.47   [IMAGE]
+  A 40-year-old female patient presented with bilateral hearing loss for years and bilateral tinnitus. Tuning fork testing showed bilaterally negative Rinne test, and Weber test lateralizing to the right ear. Audiometry showed bilateral conductive hearing loss. Otoscopy findings are shown by the image (similar on both sides). What is the likely diagnosis?
+      a) Bilateral presbyacusis, worse hearing on the left
+      b) Bilateral otosclerosis, worse hearing on the left
+      c) Bilateral presbyacusis, worse hearing on the right
+   >> d) Bilateral otosclerosis, worse hearing on the right
+
+  ── best existing match: entep-ear-247  (ent-hearing)
+  A 30-year-old female presented by bilateral gradual hearing loss, more in the right ear. Her older sister had the same problem. On examination, a healthy intact tympanic membrane was seen. Rinne test was negative on the right and positive on the left. Weber test was lateralized to the right. The most probable diagnosis is:
+   >> a) Otosclerosis
+      b) Ototoxicity
+      c) Presbycusis
+      d) Early Middle Ear Effusion
+      undefined) Glomus Tympanicum
+  2nd: entep-ear-108 0.41 | Acoustic neuroma
+
+════════════════════════════════════════════════════════════════
+STAGED Q20  p.2876   stage=clean   stemMatch=0.47   [IMAGE, ESSENTIAL]
+  A female teacher presented with the shown lesion seen on office laryngoscopy. What is the treatment of choice?
+      a) DL and biopsy with mitomycin application
+   >> b) Microlaryngosurgery
+      c) Antireflux medications
+      d) Voice therapy
+
+  ── best existing match: entep-ear-43  (ent-csom)
+  What is the treatment of choice for a patient diagnosed with attico-antral chronic suppurative otitis media?
+      a) Watchful expectancy.
+      b) Antibiotics.
+      c) Myringoplasty.
+   >> d) Mastoidectomy.
+  2nd: entep-mfe4-14 0.41 | Defect in the skull base
+
+════════════════════════════════════════════════════════════════
+STAGED Q34  p.2904   stage=C   stemMatch=0.46
+  A 32-year-old female presents after being slapped on the ear, resulting in tympanic membrane perforation. What is the best management?
+      a) Myringoplasty
+      b) Myringotomy
+      c) Antibiotics
+   >> d) Watchful waiting for 3 months
+
+  ── best existing match: entep-ear-196  (ent-aom)
+  A 32-year-old female was slapped on her face and felt severe ear pain. Otoscopic examination revealed a perforated eardrum due to the slap. What is the best management?
+      a) Myringoplasty
+      b) Myringotomy
+      c) Antibiotic therapy
+   >> d) Watchful waiting for 3 months
+  2nd: entep-ear-209 0.38 | Vestibular neuritis
+
+════════════════════════════════════════════════════════════════
+STAGED Q63  p.2962   stage=clean   stemMatch=0.46
+  A 12-year-old boy presents with recurrent severe epistaxis and a vascular nasal mass. What is the next step?
+   >> a) Endoscopic examination
+      b) X-ray
+      c) CT scan
+      d) MRI
+
+  ── best existing match: entep-nose-20  (ent-nasalmass)
+  A 12-year-old male child presented with recent recurrent attacks of severe epistaxis. Anterior rhinoscopy was normal. What is the most probable diagnosis?
+   >> a) Juvenile angiofibroma
+      b) Inverted papilloma
+      c) Persistent adenoids
+      d) Antrochoanal polyp
+  2nd: entep-nose-56 0.45 | Plain X-ray.
+
+════════════════════════════════════════════════════════════════
+STAGED Q102  p.3040   stage=C   stemMatch=0.46   [IMAGE]
+  A patient presents to the ENT clinic with pain in left ear, marked tenderness on tragus that increases on touching or moving. What's the most probable diagnosis?
+      a) Aspergillosis
+   >> b) Furunculosis
+      c) Acute suppurative otitis media
+      d) Chronic suppurative otitis media
+
+  ── best existing match: entep-ear-39  (ent-otalgia)
+  A patient visits the ENT clinic and complains about left ear pain during mastication. Examination revealed that the left ear tragus is tender. Which of the following is the most likely diagnosis of that patient?
+   >> a) Furunculosis.
+      b) Otitis media.
+      c) Otitis interna.
+      d) Mastoiditis.
+      undefined) Otomycosis.
+  2nd: entep-ear-207 0.42 | Left-sided herpes zoster oticus
+
+════════════════════════════════════════════════════════════════
+STAGED Q104  p.3044   stage=clean   stemMatch=0.46   [IMAGE, ESSENTIAL]
+  A 33-year-old female patient presented with difficulty swallowing. The attached photo is a barium swallow study ordered for this patient. What's your diagnosis?
+      a) Zenker's diverticulum
+      b) Nasopharyngeal carcinoma
+   >> c) Cricopharyngeal spasm
+      d) Hiatus hernia
+
+  ── best existing match: entep-mfe4-14  (ent-nasalobs)
+  A 54-year-old female patient presented with clear unilateral rhinorrhea. What is the probable diagnosis?
+   >> a) Defect in the skull base
+      b) Chronic rhinitis
+      c) Foreign body in the nose
+      d) Antrochoanal polyp
+  2nd: entep-throat-42 0.46 | Plummer-Vinson syndrome.
+
+════════════════════════════════════════════════════════════════
+STAGED Q79  p.2994   stage=D   stemMatch=0.45
+  Right lower motor neuron facial palsy causes:
+   >> a) Inability to close right eye with deviation of mouth to the left
+      b) Inability to close right eye with deviation of mouth to the right
+      c) Inability to close left eye with deviation of mouth to the left
+      d) Inability to close left eye with deviation of mouth to the right
+
+  ── best existing match: entep-ear-161  (ent-facial)
+  The following are causes of lower motor neuron facial paralysis except:
+      a) Bell's palsy
+      b) Cholesteatoma
+   >> c) Otitis media with effusion
+      d) Adenoid cystic carcinoma of the parotid
+  2nd: entep-ear-215 0.43 | Lacrimation and taste are not affected
+
+════════════════════════════════════════════════════════════════
+STAGED Q3  p.2842   stage=clean   stemMatch=0.44   [IMAGE]
+  A 32-year-old white female presented with left ear pain for two days. The pain increases when touching her left auricle and when chewing food. On examination, there is marked tenderness on pressure over the left tragus. What is your management?
+      a) Biopsy and histopathological examination of this lesion
+   >> b) Systemic antibiotics, analgesics, and local antibiotics
+      c) Swab for culture and sensitivity testing from this lesion
+      d) No treatment is required because this illness is self-limiting
+
+  ── best existing match: entep-ear-14  (ent-otalgia)
+  A 20-year-old female patient had a piercing placed in the upper part of her right auricle three days ago. She presented with pain in the right ear and diffuse swelling of the right auricle. On examination, the right auricle is diffusely red and tender to palpation. What is the likely diagnosis?
+      a) Right diffuse external otitis
+      b) Right malignant external otitis
+      c) Right auricular hematoma
+   >> d) Right auricular perichondritis
+  2nd: entep-ear-196 0.43 | Watchful waiting for 3 months
+
+════════════════════════════════════════════════════════════════
+STAGED Q94  p.3024   stage=clean   stemMatch=0.44   [IMAGE, ESSENTIAL]
+  A patient comes to the ENT clinic with severe itchy painless left ear together with ear discharge. Otoscopic examination revealed the attached photo. What's the best treatment for this patient?
+      a) Systemic antifungal therapy
+   >> b) Ear cleaning (wash/suction) and antifungal drops
+      c) Systemic antibiotics
+      d) Local antibiotic drops
+
+  ── best existing match: entep-ear-26  (ent-otorrhea)
+  A 24-year-old male patient comes to the ENT clinic with an itchy left ear that is coupled with ear discharge. History revealed that this ear was not painful. Which of the following options would be the best management of this patient?
+      a) Systemic anti-fungal therapy.
+   >> b) Ear suction and topical anti-fungal drops.
+      c) Systemic antibiotics.
+      d) Local antibiotic drops.
+      undefined) None of the above.
+  2nd: entep-mfe5-23 0.38 | Watchful waiting for 3 months
+
+════════════════════════════════════════════════════════════════
+STAGED Q16  p.2868   stage=clean   stemMatch=0.42
+  A 60-year-old female patient with a medical history of diabetes mellitus and hypertension complains of sudden, severe rotational vertigo with nausea, vomiting, and headache that was nearly continuous for three days. Her hearing is normal bilaterally. On examination, otoscopy was free. On gait examination, she had a tendency to fall to the right side. What is the next best step in her management?
+   >> a) MRI brain and cerebellum
+      b) Video-nystagmography (VNG)
+      c) Pure-toned audiometry (PTA)
+      d) Vestibular evoked myogenic potential (VEMP)
+
+  ── best existing match: entep-ear-24  (ent-aom)
+  A 55-year-old male patient complains of right-sided diminution of hearing 3 months ago. On examination, the right tympanic membrane was dull, the Rinne test was negative on the right side, and the Weber test was lateralized to the right side. A type B tympanogram was obtained, and there were enlarged upper deep cervical lymph nodes on the right side of the neck for 2 months. What is the next step in management?
+      a) Give him antibiotics and oral prednisolone.
+   >> b) Do a nasopharyngeal endoscopy.
+      c) Advise him to wear a hearing aid.
+      d) Perform myringotomy and ventilation tube insertion.
+  2nd: entep-ear-19 0.4 | Vestibular neuritis
+
+════════════════════════════════════════════════════════════════
+STAGED Q53  p.2942   stage=C   stemMatch=0.42
+  A 22-year-old male patient was severely injured in an accident and admitted to the ICU. Several days after recovery, he complained of hoarseness of voice. What is the most likely cause?
+      a) Contact granuloma
+   >> b) Intubation granuloma
+      c) Vocal cord polyp
+      d) Vocal cord nodules
+
+  ── best existing match: entep-ear-10  (ent-otorrhea)
+  A 30-year-old male was subject to a major road traffic accident. He complains of leaking a clear watery fluid from his left ear. Which of the following is the most likely nature of the discharge?
+   >> a) CSF
+      b) Blood
+      c) Mucous
+      d) Pus
+  2nd: entep-throat-41 0.39 | Office laryngoscopy.
+
+════════════════════════════════════════════════════════════════
+STAGED Q66  p.2968   stage=C   stemMatch=0.42
+  A patient develops severe ear pain after tonsillectomy. Which nerve mediates this referred pain?
+      a) Trigeminal nerve
+   >> b) Glossopharyngeal nerve
+      c) Vagus nerve
+      d) Hypoglossal nerve
+
+  ── best existing match: entep-throat-109  (ent-tonsils)
+  A patient complained of severe ear pain following surgical removal of inflamed tonsils. What is the nerve along which the pain is referred?
+      a) Trigeminal
+   >> b) Glossopharyngeal
+      c) Vagus
+      d) Hypoglossal
+  2nd: entep-mfe5-39 0.27 | Slipped ligature
+
+════════════════════════════════════════════════════════════════
+STAGED Q8  p.2852   stage=C   stemMatch=0.41
+  A 45-year-old female patient presented with right-sided intermittent watery rhinorrhea and frequent headaches. The discharge increases on bending down and straining. Nasal examination showed mild deviation of the nasal septum, but there is no nasal obstruction. What is your provisional diagnosis?
+      a) Allergic rhinitis
+      b) Non-allergic rhinitis
+      c) Chronic sinusitis
+   >> d) CSF leak
+
+  ── best existing match: entep-ear-14  (ent-otalgia)
+  A 20-year-old female patient had a piercing placed in the upper part of her right auricle three days ago. She presented with pain in the right ear and diffuse swelling of the right auricle. On examination, the right auricle is diffusely red and tender to palpation. What is the likely diagnosis?
+      a) Right diffuse external otitis
+      b) Right malignant external otitis
+      c) Right auricular hematoma
+   >> d) Right auricular perichondritis
+  2nd: entep-nose-15 0.41 | Combined CT and MRI
+
+════════════════════════════════════════════════════════════════
+STAGED Q22  p.2880   stage=C   stemMatch=0.41
+  A 30-year-old woman presented with a history of slaps on her left ear for 6 months. Examination revealed a left tympanic membrane perforation. What is the appropriate treatment?
+      a) Antibiotic ear drops.
+      b) Tympanomastoidectomy
+   >> c) Myringoplasty.
+      d) Observation with protection of the ear against water.
+
+  ── best existing match: entep-mfe4-17  (ent-rhin)
+  A male adolescent presented with a long standing history of nasal obstruction; examination revealed hypertrophy of the inferior turbinates. What is the long term treatment modality to relieve the obstruction?
+   >> a) Local steroid sprays
+      b) Local decongestant drops
+      c) Systemic steroid tablets
+      d) Systemic antihistaminic tablets
+  2nd: entep-ear-197 0.41 | Bilateral grommet tube insertion after myringotomy
+
+════════════════════════════════════════════════════════════════
+STAGED Q95  p.3026   stage=clean   stemMatch=0.4   [IMAGE, ESSENTIAL]
+  In the tympanic membrane, the structure labeled "X" has which characteristic?
+   >> a) It has no fibrous layer
+      b) It is the most durable part of the eardrum
+      c) The Eustachian tube opens into it
+      d) All of the above
+
+  ── best existing match: enthd-ear-5  (ent-earanat)
+  Which of the following statements best describes the healthy tympanic membrane?
+      a) It's a semi-transparent membrane with an elastic upper part
+   >> b) It's a semi-transparent membrane with an elastic lower part
+      c) It's an opaque membrane with an elastic upper part
+      d) It's an opaque membrane with an elastic lower part
+  2nd: enthd-ear-13 0.4 | All of the above
+
+════════════════════════════════════════════════════════════════
+STAGED Q99  p.3034   stage=clean   stemMatch=0.4   [IMAGE, ESSENTIAL]
+  What is the function of the structures labeled X and Y?
+      a) Hearing
+      b) Angular acceleration
+   >> c) Linear acceleration
+      d) All of the above
+
+  ── best existing match: entep-mfe4-4  (ent-csom)
+  What is the cause of primary acquired cholesteatoma?
+      a) Migration of skin into the middle ear through a marginal perforation
+      b) Embryological remnants inside the middle ear that grow progressively
+   >> c) Suction of the pars flaccida inside the attic
+      d) Implantation of squamous epithelium following myringotomy
+  2nd: entep-nose-69 0.4 | Squamous cell carcinoma
+
+════════════════════════════════════════════════════════════════
+STAGED Q25  p.2886   stage=C   stemMatch=0.38   [IMAGE]
+  A female patient, 34 years old presented by slowly progressive dysphagia in the last 8 years. On examination the patient was pale and underweight with angular stomatitis and glazed tongue. Barium swallow is shown. What is the most probable diagnosis?
+      a) Cricopharyngeal spasm.
+      b) Zenker's Diverticulum.
+   >> c) Plummer-Vinson syndrome.
+      d) Esophageal stricture
+
+  ── best existing match: entep-mfe4-28  (ent-sinusitis)
+  A 10-year-old male patient with renal failure on dialysis presented with nasal blockage and recurrent blood stained mucoid discharge. Examination revealed a necrotic black tissue covering the middle turbinate. What is the probable diagnosis?
+      a) Allergic fungal sinusitis
+   >> b) Invasive fungal sinusitis
+      c) Simple fungal sinusitis
+      d) Complicated acute rhinosinusitis
+  2nd: entep-throat-42 0.38 | Plummer-Vinson syndrome.
+
+════════════════════════════════════════════════════════════════
+STAGED Q98  p.3032   stage=C   stemMatch=0.38   [IMAGE, ESSENTIAL]
+  The labeled structure in the ear diagram corresponds to:
+   >> a) Malleus
+      b) Incus
+      c) Stapes
+      d) Cone of light
+
+  ── best existing match: entep-ear-240  (ent-otalgia)
+  The causative organism in ear furuncle is:
+      a) Proteus
+      b) Pseudomonas
+   >> c) Staph. Aureus
+      d) E.coli
+  2nd: entep-ear-173 0.38 | Oval window
+
+════════════════════════════════════════════════════════════════
+STAGED Q61  p.2958   stage=C   stemMatch=0.37
+  A 48-year-old heavy smoker presents with low-pitched hoarseness and diffuse vocal cord edema. All are management options except:
+      a) Smoking cessation
+      b) Voice rest
+      c) Microlaryngeal surgery (MLS)
+   >> d) Bilateral cordectomy
+
+  ── best existing match: entep-throat-108  (ent-hoarse)
+  A 48-year-old male patient complains of low-pitched hoarse voice. He reports being a heavy smoker for the past 20 years. Laryngoscopy revealed edema along the whole length of the vocal cords. All of the following are among lines of management of this patient except?
+      a) Smoking cessation
+      b) Voice rest
+      c) MLS
+   >> d) Bilateral cordectomy
+  2nd: entep-ear-91 0.35 | Biopsy is essential to verify the pathological nature.
+
+════════════════════════════════════════════════════════════════
+STAGED Q11  p.2858   stage=C   stemMatch=0.36
+  A 7-year-old boy with left acute otitis media started to complain of post-auricular redness and tenderness. Which situation do we have to suspect?
+      a) Petrositis
+   >> b) Mastoiditis
+      c) Labyrinthitis
+      d) Extradural abscess
+
+  ── best existing match: entep-nose-11  (ent-sinuscomp)
+  A 60-year-old male patient with a recent history of acute rhinosinusitis started to develop headaches and personality changes. What is the most probable diagnosis?
+      a) Cavernous sinus thrombosis
+   >> b) Frontal lobe abscess
+      c) Meningoencephalitis
+      d) Temporal lobe abscess
+  2nd: entep-ear-206 0.36 | Labyrinthitis
+
+════════════════════════════════════════════════════════════════
+STAGED Q82  p.3000   stage=C   stemMatch=0.36
+  Which vocal cord lesion causes hoarseness with aspiration?
+      a) Unilateral adductor paralysis
+   >> b) Bilateral adductor paralysis
+      c) Unilateral abductor paralysis
+      d) Bilateral abductor paralysis
+
+  ── best existing match: entep-throat-36  (ent-vocal)
+  Which of the following vocal cord lesions is a cause of hoarseness of voice and aspiration?
+      a) Unilateral adductor VC paralysis.
+   >> b) Bilateral adductor VC paralysis.
+      c) Unilateral abductor VC paralysis.
+      d) Bilateral abductor VC paralysis.
+  2nd: entep-throat-2 0.3 | Bilateral adductor paralysis
+
+════════════════════════════════════════════════════════════════
+STAGED Q19  p.2874   stage=C   stemMatch=0.35
+  A 4-week-old baby started to develop a noise, particularly while crying. The baby had no problems while breastfeeding or sleeping and no fever. The noise occurred only during inhalation. There was no cyanosis or distress. What is the most probable diagnosis?
+      a) Acute epiglottis
+      b) Acute laryngotracheobronchitis
+      c) Congenital subglottic hemangioma
+   >> d) Laryngomalacia
+
+  ── best existing match: entep-nose-11  (ent-sinuscomp)
+  A 60-year-old male patient with a recent history of acute rhinosinusitis started to develop headaches and personality changes. What is the most probable diagnosis?
+      a) Cavernous sinus thrombosis
+   >> b) Frontal lobe abscess
+      c) Meningoencephalitis
+      d) Temporal lobe abscess
+  2nd: entep-mfe4-20 0.34 | Acute bacterial rhinosinusitis
+
+════════════════════════════════════════════════════════════════
+STAGED Q49  p.2934   stage=C   stemMatch=0.34
+  A 12-year-old boy has recurrent severe epistaxis. Endoscopy shows a smooth vascular nasal mass. Next step?
+      a) Reassurance
+      b) X-ray
+   >> c) CT scan
+      d) Medical treatment
+
+  ── best existing match: entep-nose-82  (ent-nasalmass)
+  A 12-year-old boy presented to the ENT clinic with severe epistaxis. Endoscopy revealed a firm mass in the posterior part of nasal cavity. Which of the following is the most probable diagnosis?
+      a) Inverted papilloma
+      b) Antrochoanal polyp
+   >> c) Juvenile nasopharyngeal angiofibroma
+      d) Nasopharyngeal carcinoma
+  2nd: entep-nose-20 0.29 | Juvenile angiofibroma
+
+════════════════════════════════════════════════════════════════
+STAGED Q52  p.2940   stage=C   stemMatch=0.32
+  A patient develops hoarseness after ICU admission and recovery from severe trauma. Most likely cause?
+      a) Contact granuloma
+   >> b) Intubation granuloma
+      c) Vocal cord polyp
+      d) Vocal cord nodules
+
+  ── best existing match: entep-mfe5-39  (ent-tonsils)
+  A patient develops significant bleeding within 2 hours after undergoing a tonsillectomy. What is the most likely cause of this early postoperative hemorrhage?
+      a) Infection
+   >> b) Slipped ligature
+      c) Granulation tissue formation
+      d) Reactionary bleeding due to clot breakdown
+  2nd: entep-mfe5-9 0.29 | Post-intubation tracheal stenosis
+

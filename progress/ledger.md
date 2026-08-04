@@ -970,10 +970,13 @@ MCQs are **read, staged and swept but NOT written.** The remaining work on this 
    `imgEssential`, and the figure renders between the stem and the options. Full entry below.
    **The images are not yet ATTACHED to any entry** — that happens in step 2, because which entry
    holds a given printing is exactly what resolution decides.
-2. **Write the ~30 new entries** from `content\ent\qb-pages\exam-night-review-mcqs.staged.js`, using
-   `…\exam-night-review-sweep.json` for the stage verdicts. **Resolve stages C, D and clean together
-   by reading each against its stem twin** — not the clean column alone. **No page in this section
-   prints an explanation box, so every one needs an authored, marked explanation.**
+2. **RESOLUTION IS DONE — 37 new entries to write, not ~30.** All 72 stage-C/D/clean questions were
+   read side by side against their stem twin; the verdict for every one is in
+   `content\ent\qb-pages\exam-night-review-resolution.md`, with the raw comparisons in
+   `…-sidebyside.txt`. **What remains is the writing itself**, and **no page in this section prints
+   an explanation box, so all 37 need an authored, marked explanation.** Also fold the 32 stage-B
+   and 32 resolved reprints into their existing entries, and attach the 18 images (17 to new
+   entries, **p.3024 to `entep-ear-26`**).
 3. **Fold the three within-batch duplicates:** Q15≡Q24, Q21≡Q47, Q52≡Q53.
 4. **Read pp.3047–3069 odd** — the unread half of the fact-list run — and harvest all of
    pp.3046–3070 into `content\ent\examiner-patterns.md`. **These are not questions and must not be
@@ -2257,6 +2260,62 @@ both readings recorded so the learner can see the bank is unreliable:
 
 **8. A full content and design review**, at the user's request — both the ENT content and whether the
 app's design needs changing — **before the other three modules are started.**
+
+---
+
+## §11b Exam Night Review — resolution, 2026-08-04
+
+**All 72 stage-C/D/clean questions read side by side against their best stem match.** Verdicts in
+`content\ent\qb-pages\exam-night-review-resolution.md`; raw comparisons in `…-sidebyside.txt`.
+
+| | count |
+|---|---|
+| staged | **104** |
+| stage B — reprints, folded without argument | 32 |
+| resolved by reading (C + D + clean) | 72 |
+| → folded into an entry already held | 32 |
+| → folded into another staged question (Q24→Q15, Q79→Q31, Q52→Q53) | 3 |
+| → **written as new entries** | **37** |
+
+**⚠️ 14 OF THE 37 NEW QUESTIONS WERE NOT IN THE CLEAN COLUMN.** They came out of stages C and D,
+where the *answer* matched something already held and the *question* did not. **And 8 of the 31
+"clean" questions turned out to be reprints**, which would have been written twice. So the sweep's
+own columns were wrong in both directions on 22 of 104 — **the strongest confirmation yet of the
+rule that C, D and clean are resolved together and every stage's verdict is only a shortlist.**
+
+**Four patterns worth carrying to the other banks:**
+
+- **The option set decides, not the question.** Q9 and Q45 ask the same thing — the commonest
+  organism in croup — and **Q45 folds while Q9 does not**, because Q45's four options are
+  `entep-throat-102`'s four options and Q9's are not. Same for Q102 vs `entep-ear-39`.
+- **A changed option set can move the key LEGITIMATELY, and that is not a self-contradiction.**
+  Q13 drops the word *imaging* from "optimum imaging modality" and adds flexible nasopharyngoscopy
+  to the list, so the answer stops being plain X-ray. Q49 and Q63 are the same boy with the same
+  mass: Q63 offers endoscopy and keys it, Q49 states endoscopy is already done and keys CT. **Both
+  pairs are internally correct.** Distinguish this from the four real self-contradictions in Exams
+  4–7, where the options were IDENTICAL and only the key moved.
+- **The same vignette re-asked is a new question, not a reprint** — Q12 asks the diagnosis where
+  `entep-ear-6` asked about the perforation; Q17 asks management where `entep-nose-4` asked the
+  diagnosis; Q10 asks what to do about the otorrhoea where `entep-ear-10` asked what it is.
+- **A fold can still bring something with it.** Q94 folds into `entep-ear-26` — options identical
+  bar a dropped filler — but it carries an **essential photograph** the held entry has never had.
+  **Folding is not discarding: check what the losing printing adds before dropping it.**
+
+**One key conflict found, and it is the fifth of its kind.** Q2 (p.2840) keys **antireflux
+medications and voice therapy** for a teacher with hoarseness and inflamed oedematous cords, while
+`entep-throat-6` and `entep-throat-28` both key **medical treatment and follow-up** for a
+near-identical vignette — and `entep-throat-28`'s key was **re-affirmed by the bank's own errata
+section at p.2823 with a newly written box**. The option set is replaced ("medical treatment" →
+"antireflux medications" throughout), so by the mechanism rule this is a new entry rather than a
+re-key. **The duration does not explain it**: p.2840 says 3 weeks against the others' 4 months, and
+a shorter history argues for less intervention, not more. Record in both directions when written.
+
+**Two high-value questions the bank has not asked before**, both closing recorded gaps:
+`Q7` (p.2850) — unilateral middle-ear effusion in a 60-year-old, next step **nasopharyngeal
+endoscopy** — and `Q16` (p.2868) — continuous vertigo with normal hearing and a directional fall,
+next step **MRI brain and cerebellum**. `Q8` (p.2852) keys **CSF leak** for unilateral watery
+rhinorrhoea worse on bending, which is **the very answer the bank deleted from its own option list**
+in Exam 7's `entep-mfe7-1`; cross-reference the two when writing.
 
 ---
 
