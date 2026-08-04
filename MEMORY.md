@@ -10,21 +10,21 @@ Exam Night Review's **104 MCQs are READ, STAGED and SWEPT but NOT WRITTEN**; sta
 `content\ent\qb-pages\exam-night-review-mcqs.staged.js` + `…-sweep.json`. **Three jobs left
 (`ledger.md` §6); the image pipeline — job 1 — is DONE (§11a).**
 
-1. **Write the ~30 new entries. ZERO pages print a box**, so every one is authored+marked. **Attach
-   the 18 images here** — `image:'q-<page>'` + `imgAlt` (+ `imgEssential` for the 10) — since which
-   entry holds a printing is exactly what resolution decides. Only 5 pages have even a shortlisted
-   home so far.
-2. **Fold 3 within-batch dupes:** Q15≡Q24, Q21≡Q47, Q52≡Q53.
-3. **Read pp.3047–3069 ODD (unread) and harvest pp.3046–3070 into `examiner-patterns.md`** — **rapid-
-   fire fact lists, NOT questions**; forcing them into `QUESTIONS` would mean inventing distractors.
+1. **Write the 31 clean entries. ZERO pages print a box**, so every one is authored+marked. **Attach
+   the 18 images here** (`image`+`imgAlt`, +`imgEssential` for 10): **13 sit on clean questions, 5 on
+   reprint candidates** (Q25, Q96, Q98, Q100, Q102). **⚠️ `sweep.json` has NO `.clean` key** —
+   `counts.clean` + `cleanIds`; reading `.clean` returns null and silently answers "no" to all.
+2. **Fold 3 within-batch dupes:** Q15≡Q24, Q21≡Q47, Q52≡Q53 (4 flagged, 3 pairs).
+3. **Read pp.3047–3069 ODD (unread), harvest pp.3046–3070 into `examiner-patterns.md`** — **fact
+   lists, NOT questions**; forcing them into `QUESTIONS` would mean inventing distractors.
 
 **18 question images are cut into `app\assets\q\q-<page>.jpg`** (312 KB) by `Design\scripts\
-q-images.ps1`; `image` holds the **basename**, `qImgSrc()` builds the path. **⚠️ `bundle.ps1` DOES
-NOT EXIST** — `CLAUDE.md` said it already made data: URIs of `MOD_ART`/`CLEP_POSES`; it is not on
-disk. Corrected; the single-file build is owed. **⚠️ Both cutter bugs were SILENT and both were
-caught by LOOKING, not counting** — `Sort-Object -Property` does nothing on hashtables in PS 5.1,
-and tone spread must be measured across a component, never inside a cell (a photo is locally smooth,
-text is not, so the filter rejected pictures and kept paragraphs). Detail: `ledger.md` §11a.
+q-images.ps1`; `image` holds the **basename**, `qImgSrc()` builds the path. **⚠️ `bundle.ps1` DOES NOT
+EXIST** (`CLAUDE.md` claimed it did); the single-file build is owed. **⚠️ THREE bugs this session were SILENT and every one was
+caught by LOOKING, not counting**: `Sort-Object -Property` no-ops on hashtables in PS 5.1; tone spread
+must be pooled across a component, never measured inside a cell (a photo is locally smooth, text is
+not, so the filter rejected pictures and kept paragraphs); and a probe read a **missing** JSON key and
+silently answered "no" to all 18. Detail: `ledger.md` §11a.
 
 **⚠️ EXAM NIGHT REVIEW BREAKS EVERY PATTERN: ZERO stage-A matches** (first time ever — the bank rewrote
 its stems), **31/104 clean**, **18 carry photographs and 10 are unanswerable without them** (3 being

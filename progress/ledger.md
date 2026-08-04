@@ -2277,10 +2277,19 @@ so the crop does not have to be renamed when the entry that holds it is folded o
 job 1 could therefore be finished before job 2 decides which entry that is. Where a question prints
 twice, the **answered** page is used, matching the `source` convention.
 
-**The images are cut but NOT yet attached to any entry.** Only 5 of the 18 pages have a resolved
-home (`nearMiss`/`fuzzy` hits: p.2886→`entep-throat-12`/`-42`, p.3028→`entep-ear-250`,
-p.3032→`entep-mfe3-1`, p.3036→`entep-throat-100`, p.3040→`entep-ear-39`) and even those are
-shortlists, not verdicts, under the standing rule. Attaching them is part of job 2.
+**The images are cut but NOT yet attached to any entry**, which is part of job 2. **13 of the 18 sit
+on CLEAN questions** — Q3, Q4, Q12, Q18, Q20, Q93, Q94, Q95, Q97, Q99, Q101, Q103, Q104 — so their
+picture goes on a new entry. The other **5 are reprint candidates**: p.2886 (Q25, stage C),
+p.3028 (Q96, stage D), p.3032 (Q98, C), p.3036 (Q100, C), p.3040 (Q102, C) — shortlists, not
+verdicts, so where they land is decided by reading them side by side, and the picture follows.
+
+> **⚠️ Corrected 2026-08-04, same day: an earlier note here said "only 5 of the 18 have a resolved
+> home" — the exact inverse of the truth.** The probe that produced it read `sweep.json`'s `.clean`,
+> **which does not exist**: the count lives in `counts.clean` and the ids in `cleanIds`. PowerShell
+> returns `$null` for the missing property, `foreach` over `$null` iterates zero times, and the
+> lookup silently answered "no" for every page. **No error, no empty-result warning — the same
+> silent-failure shape as the two cutter bugs.** Check that a probe's input is non-empty before
+> believing a negative result from it.
 
 ### The cutter — `Design\scripts\q-images.ps1`
 
