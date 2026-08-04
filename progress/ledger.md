@@ -2380,6 +2380,55 @@ partial capture; rendering p.2860 showed the bank itself prints a small, low-inf
 and the crop is faithful. The `imgAlt` says so plainly, since the question is answered from the
 history and a learner should not hunt the picture for a perforation it cannot show.
 
+### Batch 2 of 3 — nose and throat, written 2026-08-04
+
+**13 entries, `entep-enr-6, 7, 11, 12, 14, 16, 17, 21, 22, 23, 24, 25, 26`** (pp.2852–2972), filling
+the gaps batch 1 left. `Q_ENT` 611 → **624 MCQs**; `QUESTIONS` 693 → **706**; authored markers 489 →
+**502**. Ids `entep-enr-1`…`26` are now contiguous.
+
+| id | page | Q | chapter | id | page | Q | chapter |
+|---|---|---|---|---|---|---|---|
+| `enr-6` | 2852 | Q8 | `ent-nasalobs` | `enr-17` | 2876 | Q20 | `ent-hoarse` (image, essential) |
+| `enr-7` | 2854 | Q9 | `ent-paedlar` | `enr-21` | 2898 | Q31 | `ent-facial` |
+| `enr-11` | 2862 | Q13 | `ent-tonsils` | `enr-22` | 2934 | Q49 | `ent-nasalmass` |
+| `enr-12` | 2866 | Q15 | `ent-septum` | `enr-23` | 2936 | Q50 | `ent-nasalmass` |
+| `enr-14` | 2870 | Q17 | `ent-sinusitis` | `enr-24` | 2942 | Q53 | `ent-hoarse` |
+| `enr-16` | 2874 | Q19 | `ent-paedlar` | `enr-25` | 2962 | Q63 | `ent-nasalmass` |
+| | | | | `enr-26` | 2972 | Q68 | `ent-stridor` |
+
+Grounded in six further decks — `L3) DISEASES OF THE TONSILS & ADENOIDS`, `L6) Stridor and
+tracheostomy`, `L24) diseases of the nasal septum`, `L26) nasal masses`, `L27.1) ACUTE
+rhinosinusitis`, `L27.2) Chronic Sinusitis`, `L31) nasal symptoms 1` — plus `L2` and `L15` again.
+**Nine of the 13 are keyed outright by a slide**: croup = parainfluenza, adenoid diagnosis by
+endoscopy before X-ray, open reduction for a dislocated dorsum, CT only for a complication or before
+surgery, laryngomalacia's whole clinical picture, MLS for a fold polyp, the LMN facial table,
+angiofibroma's work-up order, tracheomalacia as a late tracheostomy complication.
+
+**Three within-batch self-duplicates were folded while writing rather than left for the fold pass:**
+Q24 (p.2884) into `enr-12`, Q79 (p.2994) into `enr-21`, Q52 (p.2940) into `enr-24`. Both pages are
+cited in each `source`. **That closes ledger job 2 for the within-batch dupes**; only the 64
+cross-section reprints remain.
+
+**Two pairs where the bank is right twice, and the option set is the reason — worth carrying to the
+other banks.** `enr-22` (Q49) keys **CT** and `enr-25` (Q63) keys **endoscopy** for the same 12-year-
+old with the same angiofibroma, because Q49 states endoscopy is already done and Q63 does not.
+`enr-11` (Q13) keys **flexible nasopharyngoscopy** where `entep-nose-56` keys **plain X-ray**,
+because the twin asks the optimum *imaging* modality and this printing drops the word. **Neither is
+a self-contradiction** — those need IDENTICAL options with only the key moved.
+
+**Five passages needed the answer-the-gap rule**, each tagged and none a dead end: bacterial
+tracheitis as the *Staph. aureus* disease, the radiation argument for endoscopy over CT in a
+4-year-old, the two-week closed-reduction window and six-month rhinoplasty deferral, the CT findings
+of odontogenic sinusitis, why an angiofibroma is not biopsied (the slide writes only *"Biopsy ??"*),
+the consequence of biopsying a meningoencephalocele, and the cuff-pressure mechanism of
+tracheomalacia. **No point was left unanswered, so batch 2 raises no interview items either.**
+
+**Validated in a real `file://` boot: 104 chapters, 706 questions, 0 bad chapter refs, 0
+module/chapter mismatches, 0 duplicate ids, every `answer` in range and matching the staged key, all
+13 carrying the authored marker, every ENT chapter still ≥1, `THEORY` `qs` all resolving.** By bank
+686 Endpoint / 21 House / 0 Grade Gain. **Four forward references remain live** — `enr-15`→`enr-27`,
+`enr-17`→`enr-34`, `enr-2`→`enr-35`/`enr-36`, all batch-3 ids.
+
 ---
 
 ## §11a Question images — built 2026-08-04
@@ -2628,6 +2677,17 @@ string and the `int[]` conversion fails.
 **Two PowerShell gotchas that cost real time on 2026-07-28**, both when calling a native exe:
 `2>$null` on the chrome call makes the run produce nothing, and capturing chrome's stdout into a
 variable returns empty — `Start-Process … -RedirectStandardOutput` is required instead.
+
+> **⚠️ NEVER ROUND-TRIP A PROJECT FILE THROUGH `Get-Content` → `Set-Content` (2026-08-04).** It
+> **double-encodes every non-ASCII character and corrupts the file silently.** PowerShell 5.1's
+> `Get-Content` has no `-Encoding` default of UTF-8: it reads a BOM-less UTF-8 file as Windows-1252,
+> so `—` arrives as `â€"`; `Set-Content -Encoding UTF8` then writes *those* characters as UTF-8. One
+> such command turned `MEMORY.md` — which is full of em-dashes, arrows and ⚠️ — into mojibake, **and
+> the `-replace` it was doing did not even apply**, because the patterns had been written against the
+> real text. **Use the Edit tool for every content change to a tracked file.** If a scripted edit is
+> unavoidable, read and write bytes explicitly. Recovery here was `git checkout -- MEMORY.md`
+> followed by redoing the edits properly, which is only cheap because the previous batch was already
+> committed — **commit before any bulk text operation.**
 
 ### Git and GitHub — set up 2026-07-28
 

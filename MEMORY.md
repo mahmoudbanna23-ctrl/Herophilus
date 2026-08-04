@@ -8,14 +8,14 @@ Exam Night Review is READ, STAGED, SWEPT and RESOLVED; staging at `content\ent\q
 exam-night-review-mcqs.staged.js` + `…-sweep.json`, verdicts in `…-resolution.md`, comparisons in
 `…-sidebyside.txt`. **ZERO pages print a box, so all 37 new entries are authored+marked.**
 
-1. **WRITING THE 37 — BATCH 1 OF 3 IS DONE (`ledger.md` §11c), 24 LEFT.** Written: `entep-enr-1,2,3,
-   4,5,8,9,10,13,15,18,19,20` (pp.2840–2886). **Ids follow the printed order of all 37, so batches 2
-   and 3 fill the gaps.** `QUESTIONS` 680 → **693**, validated in a real boot. **Batch 2** = Q8, Q9,
-   Q13, Q15, Q17, Q19, Q20, Q31, Q49, Q50, Q53, Q63, Q68 → `enr-6,7,11,12,14,16,17,21,22,23,24,25,
-   26`; **batch 3** = the picture run pp.3022–3044 → `enr-27…37`. **⚠️ `entep-enr-15` and `-2` already
-   cite `enr-27`, `-35`, `-36`; re-run the dead-id check after batch 3.**
-2. **Then fold 64 reprints** (32 stage-B + 32 resolved) **and 3 within-batch dupes** (Q24→Q15,
-   Q79→Q31, Q52→Q53); attach **p.3024 to `entep-ear-26`** — it folds but brings its picture.
+1. **WRITING THE 37 — BATCHES 1 AND 2 DONE (`ledger.md` §11c), 11 LEFT.** `entep-enr-1`…`26` written
+   and contiguous (pp.2840–2972); `QUESTIONS` 680 → **706**, validated in a real boot. **Batch 3 is
+   the picture run, pp.3022–3044 → `enr-27…37`** = Q93, Q95–Q104, **all 11 carrying images, 7 of them
+   essential.** **⚠️ FOUR FORWARD REFS ARE ALREADY LIVE** — `enr-15`→`-27`, `enr-17`→`-34`,
+   `enr-2`→`-35`/`-36`; **re-run the dead-backticked-id check after batch 3.**
+2. **Then fold the 64 cross-section reprints** (32 stage-B + 32 resolved); attach **p.3024 to
+   `entep-ear-26`** — it folds but brings its picture. **The 3 within-batch dupes are already folded
+   in place while writing** (Q24→`enr-12`, Q79→`enr-21`, Q52→`enr-24`), both pages cited in `source`.
 3. **Read pp.3047–3069 ODD (unread), harvest pp.3046–3070 into `examiner-patterns.md`** — **fact
    lists, NOT questions**; forcing them into `QUESTIONS` would mean inventing distractors.
 
@@ -57,8 +57,8 @@ a *fact* gap is filled and tagged, per the answer-the-gap rule below.
 ## What exists — **104 chapters**: ENT 30, Ophthalmology 26, Neuropsychiatry 27, Pediatrics 21
 
 **All content is ENT so far**; the other three hold **0** questions and **no theory is written**.
-`QUESTIONS.length` is **693** — 611 MCQs + 82 cases, **all 30 ENT chapters holding ≥1**. By bank:
-**673 Endpoint, 21 House, 0 Grade Gain** — 694, because one question is in two banks.
+`QUESTIONS.length` is **706** — 624 MCQs + 82 cases, **all 30 ENT chapters holding ≥1**. By bank:
+**686 Endpoint, 21 House, 0 Grade Gain** — 707, because one question is in two banks.
 
 **Fully validated in a real `file://` boot, 2026-08-04** — 0 bad module/chapter refs, 0 mismatches,
 0 duplicate ids, every `answer` in range, nothing missing a `source`/`explanation`/`objective`, every
@@ -127,7 +127,7 @@ fold-vs-variant, not the stem** (`ledger.md`).
   keyword-search every survivor **twice, differently worded**. Failures: `ledger.md` §7, §11b.
 
 **Where the source prints no explanation box, the explanation is written here** — rule and marker in
-`CLAUDE.md` §4. **489 of the 693 entries carry the marker — 71%**, measured 2026-08-04 in a real boot:
+`CLAUDE.md` §4. **502 of the 706 entries carry the marker — 71%**, measured 2026-08-04 in a real boot:
 **seven tenths of ENT's explanations are written, not transcribed — the real scope of the end-of-ENT
 review** (recurring gaps: review item 4). **⚠️ READ EVERY OPTION AS A SENTENCE BEFORE WRITING** — p.2856
 printed one truncated mid-word and it survived staging and both sweep passes (`ledger.md` §11c).
