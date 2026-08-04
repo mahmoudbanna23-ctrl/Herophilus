@@ -959,21 +959,26 @@ the scratchpad and the images are read instead of the PDF.
 **THE MODEL FINAL EXAM BLOCK IS COMPLETE — pp.1721–2816, all 7 exams, 542 printings read, 84 new
 questions.**
 
-**Next: `ENT endpoint.pdf` p.2817 — Recently Edited (pp.2817–2835), then Exam Night Review
-(pp.2835–3074).** These are **not** model exams and nothing learned about exam structure transfers
-to them by default. What must be established on the first render, not assumed:
+**Recently Edited (pp.2817–2835) is DONE — 18 printings, 0 new, and it proved the point about not
+assuming structure: it prints each question ONCE, already answered.**
 
-1. **Whether the two-page (unanswered → answered) shape holds at all.** It held for every section and
-   every exam, which is exactly why an exception would be missed. Check the parity of the first ten
-   pages before staging anything.
-2. **The reprint rate.** Across the whole file it has gone 96 → 100 → 99 → 58 → 42 → 99 → 99%.
-   Three consecutive exams near 99% still does not license a prediction — the same reasoning missed
-   Exam 5 by 46 questions. **Budget as unknown.**
-3. **Whether a case section returns.** The three big sections each ended with one; none of the seven
-   exams did.
+**Next: `ENT endpoint.pdf` p.2836 — Exam Night Review (pp.2836–3074), the last section of the file.**
+Title p.2836, questions from p.2837, **two-page shape confirmed, answered pages EVEN.** ~119
+printings. Established by render, not assumed. What is still open:
+
+1. **⚠️ IT CONTAINS PHOTOGRAPHS** (p.2841 onwards) and the schema has no image field. **A user
+   decision is pending** — see the Recently Edited entry for the three options. **Do not silently
+   drop an image question**; that loss would be invisible in every count.
+2. **The reprint rate.** Across the file: 96 → 100 → 99 → 58 → 42 → 99 → 99%, then 100% for Recently
+   Edited. **Budget as unknown** — the same reasoning missed Exam 5 by 46 questions.
+3. **Whether a case section returns.** The three big sections each ended with one; neither the seven
+   exams nor Recently Edited did.
 4. **Whether it contradicts itself.** Exams 4, 5 and 6 held one self-contradiction each and **Exam 7
    held two**. **Go looking rather than waiting to trip over it**, and note that four of four have
    sat on a page that prints **no explanation box** — treat a bare page as a prompt to check the key.
+5. **Watch for more errata.** Recently Edited re-affirmed three disputed keys with new boxes. A
+   disputed key is provisional until the bank reprints it, and every reclassification so far has come
+   from a later printing.
 
 **Run the five-stage duplicate sweep before writing anything, rank ALL of them at stage E, and then
 read side by side EVERY staged question whose option set differs from its stem twin — that is stages
@@ -1697,6 +1702,68 @@ perforation and safe, mucopurulent discharge without complications."** That is a
 source contradicting `entep-mfe6-1`, after the slide, `entep-ear-59`, and Exam 6's own Q15. Added to
 that entry's `source`. It also means the bank states the correct fact in one exam and keys against it
 in the previous one — the contradictions are not confined within an exam.
+
+### RECENTLY EDITED QUESTIONS — 18 printings, **0 new**, and it is the bank's own errata list — 2026-08-04
+
+pp.2817–2835, title page p.2817. **⚠️ THE TWO-PAGE SHAPE DOES NOT HOLD HERE, AND THAT IS THE POINT
+OF CHECKING RATHER THAN ASSUMING.** Every section and all seven exams print each question twice,
+unanswered then answered. **This section prints each question ONCE, already answered** — 18 single
+pages, 2818–2835, one question per page. Had the answered-parity assumption been carried over,
+**half the section would have been skipped as "unanswered pages".**
+
+**The printed numbers are non-sequential:** 80, 252, 2, 18, 135, 31, 49, 25, 26, 118, 47, 48, 106,
+123, 42, 37, 120, 35. Each question **keeps the number it carries in its home section**, which is the
+clue to what this section is. Highlights are mostly **cyan**; boxes on only 4 of 18 (pp.2820, 2823,
+2825, 2835).
+
+**All 18 are reprints — the sweep returned a ZERO clean column**, the first time that has happened.
+Stage A caught 10, B 3, C 4, D 1. The five at C/D were read side by side per the Exam 7 rule and are
+all one-word respellings or an option printed in full versus abbreviated.
+
+#### ⚠️ What this section actually is, and why it is worth more than 18 reprints
+
+**It is the compiler's errata list**, and it revisits questions whose keys have been contested. Three
+of the long-standing disputed keys appear here, **re-affirmed, two of them with a newly written
+explanation box that was not printed at the original**:
+
+| Page | Question | What it settles |
+|---|---|---|
+| **2820** | `entep-throat-2`, bilateral adductor paralysis | New box: "**Bilateral adductor paralysis = Hoarseness + Aspiration**; **Bilateral abductor paralysis = Airway obstruction (stridor)**" |
+| **2823** | `entep-throat-28`, the 37-year-old teacher | New box: "**HOV + inflamed edematous vocal cords without MAP lesions = medical treatment and follow-up** (we can't leave the edema and inflammation of the VCs without medical treatment)" |
+| **2828** | `entep-throat-77`, definite signs of chronic tonsillitis | Reprinted identically — the **third** printing of that key, after Exam 6 p.2599 |
+
+**p.2820 is the decisive one for `entep-mfe5-20`.** That dispute was logged because the bank keyed
+*hoarseness + aspiration* for bilateral adductor palsy while `L11) Vocal cord paralysis.pdf`
+tabulates **aphonia**, and because the bank's own table at p.2438 sided with the slide. The errata
+section now states the MCQ pairing explicitly, in a box written for the purpose. **So the bank has
+looked at this again and kept hoarseness.** The clash with the course material is real and permanent
+rather than a typo: **learn the bank's pairing for the bank's exam, and know the slide says aphonia.**
+All three annotations went into the existing entries; no new entries were written.
+
+**Rule this yields: a "disputed key" is only ever provisional until the bank reprints it.** Five of
+the eleven disputed keys are now reclassified as the bank's settled position — `entep-throat-77`,
+Exam 1's Q16, `entep-throat-28`, `entep-throat-2`/`entep-mfe5-20` — and every one of those
+reclassifications came from a *later* printing, never from re-reading the original.
+
+#### ⚠️ Exam Night Review begins at p.2836, and it contains PHOTOGRAPHS
+
+Boundary verified by render: **p.2835 is the last Recently Edited question, p.2836 is the Exam Night
+Review title page, questions start p.2837.** That section **does** return to the two-page shape —
+2837 unanswered / 2838 answered, answered pages EVEN.
+
+**⚠️ AND IT PRINTS CLINICAL IMAGES.** p.2841/2842 carries an otoscopic photograph beside the stem
+("a 32-year-old white female… marked tenderness on pressure over the left tragus"). **No question
+anywhere else in this file has had one, and the question schema has no image field.** Three options,
+none of them free, and this is a **user decision, not a transcription judgement**:
+
+1. **Transcribe the stem and describe the image in words**, marked as a description rather than a
+   quotation. Cheapest, keeps the app unchanged, loses the visual diagnosis skill the question tests.
+2. **Crop the image out of the PDF into `app\assets\q\` and add an optional `image` field.** Faithful,
+   costs a schema change plus render/crop tooling, and grows the deployed folder.
+3. **Skip image-dependent questions**, recording each one skipped.
+
+Nothing decided; raised with the user. **Until it is decided, do not silently drop an image question
+— that would be a content loss invisible in every count.**
 
 ### One question, many banks — the filter fix, 2026-08-03
 
