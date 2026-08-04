@@ -2317,6 +2317,69 @@ next step **MRI brain and cerebellum**. `Q8` (p.2852) keys **CSF leak** for unil
 rhinorrhoea worse on bending, which is **the very answer the bank deleted from its own option list**
 in Exam 7's `entep-mfe7-1`; cross-reference the two when writing.
 
+### §11c Writing the 37 — batch 1 of 3, written 2026-08-04
+
+**13 entries written, `entep-enr-1` … `entep-enr-20`** (the numbering runs over the printed order of
+all 37, so batches 2 and 3 fill the gaps). `Q_ENT` 598 → **611 MCQs**; `QUESTIONS` 680 → **693**.
+
+| id | page | Q | chapter | image |
+|---|---|---|---|---|
+| `entep-enr-1` | 2840 | Q2 | `ent-hoarse` | — |
+| `entep-enr-2` | 2842 | Q3 | `ent-otalgia` | `q-2842` |
+| `entep-enr-3` | 2844 | Q4 | `ent-hearing` | `q-2844` **essential** |
+| `entep-enr-4` | 2846 | Q5 | `ent-audio` | — |
+| `entep-enr-5` | 2850 | Q7 | `ent-aom` | — |
+| `entep-enr-8` | 2856 | Q10 | `ent-otorrhea` | — |
+| `entep-enr-9` | 2858 | Q11 | `ent-aom` | — |
+| `entep-enr-10` | 2860 | Q12 | `ent-csom` | `q-2860` |
+| `entep-enr-13` | 2868 | Q16 | `ent-vertigo` | — |
+| `entep-enr-15` | 2872 | Q18 | `ent-hearing` | `q-2872` |
+| `entep-enr-18` | 2880 | Q22 | `ent-aom` | — |
+| `entep-enr-19` | 2882 | Q23 | `ent-facial` | — |
+| `entep-enr-20` | 2886 | Q25 | `ent-dysph` | `q-2886` |
+
+**All 13 explanations are authored and marked** — Exam Night Review prints no box anywhere. Grounded
+in eight cached decks: `L2) Hoarsness of Voice`, `L10) Dysphagia From ENT Perspective`,
+`L13,14) AudioVestibulae Evaluation`, `L15) Facial nerve disorders`, `L16) Chronic otitis media`,
+`L17,18) Otorrhea and otalgia`, `L19.1) hearing loss`, `L19.2) Tinnitus`, `L20) vertigo`,
+`L21.1) acute otitis media`, `L21.2) Otitis media with effusion`, `L22) Anatomy of Ear`.
+
+**Only four passages needed the answer-the-gap rule**, each tagged in place and none of them a dead
+end: the topical half of the furuncle regimen (the slide lists systemic antibiotics + analgesia
+only), the meningitis risk behind "strict water precautions", the three-month interval for a
+traumatic perforation to heal, and the note that a directional fall does not by itself localise a
+vertigo. **No point was left unanswered, so the batch raises no interview items.**
+
+**⚠️ A SOURCE DEFECT WAS REPAIRED, NOT SMOOTHED OVER.** p.2856 (Q10) prints option b truncated —
+*"A likely acute ear infection resulting from trauma and needs appropriate"* — and stops mid-word.
+Completed to "…needs appropriate antibiotic treatment", with the repair recorded in the entry's
+`source`. **The truncation survived staging and both sweep passes**; it was caught only by reading
+the option list aloud while writing. Read every option as a sentence before writing an entry.
+
+**⚠️ ONE MISSING COMMA COST A BOOT.** The previous last entry (`entep-mfe7-1`) had no trailing
+comma, so appending after it produced `' }` followed by `{ id:` and the whole file failed to parse —
+`Q_ENT` undefined, app reporting **0 MCQs and no error at all**. This is the identical failure
+recorded on 2026-08-04 for a different missing comma. **Diagnosed by inlining the data file into a
+scratchpad `<script>`**, which gave `Unexpected token '{' @line 5474` and a real line number, where
+`file://` gives only *"Script error."* at line 0. **Always append by first adding the comma.**
+
+**⚠️ THE CHAPTER AUDITOR WAS WRONG BEFORE THE APP WAS.** A first validation run reported **~500 bad
+chapter references** — it walked `m.chapters`, and the real shape is **`m.groups[].chapters[]`, each
+chapter an ARRAY (`c[0]` id, `c[1]` title)**, not an object. `MODULES chapters: 0` in the same output
+was the tell. A run where nearly everything fails is a broken auditor. Corrected walk, real boot:
+**104 chapters, 693 questions, 0 bad chapter refs, 0 module/chapter mismatches, 0 duplicate ids,
+every `answer` in range, every ENT chapter still ≥1, THEORY `qs` all resolving.** Authored-marker
+entries **476 → 489**, which reconciles exactly with 13 written.
+
+**Three forward references are live and expected:** `entep-enr-15` cites `entep-enr-27` (its Weber
+mirror, p.3022) and `entep-enr-2` cites `entep-enr-35`/`entep-enr-36` (pp.3040, 3042). All three are
+batch-3 ids. **Re-run the dead-backticked-id check after batch 3** — until then they read as dead.
+
+**One crop was re-verified against its source page rather than trusted.** `q-2860` looked like a
+partial capture; rendering p.2860 showed the bank itself prints a small, low-information photograph
+and the crop is faithful. The `imgAlt` says so plainly, since the question is answered from the
+history and a learner should not hunt the picture for a perforation it cannot show.
+
 ---
 
 ## §11a Question images — built 2026-08-04

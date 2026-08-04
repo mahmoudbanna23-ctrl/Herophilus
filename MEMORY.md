@@ -4,16 +4,18 @@ Running record, organised around *resuming*. ISO dates; unverified marked as suc
 
 ## Resume here — **`ENT endpoint.pdf` IS FULLY READ, all 3,074 pp.**
 
-Exam Night Review's **104 MCQs are READ, STAGED and SWEPT but NOT WRITTEN**; staging survives at
-`content\ent\qb-pages\exam-night-review-mcqs.staged.js` + `…-sweep.json`. **Three jobs left
-(`ledger.md` §6); the image pipeline — job 1 — is DONE (§11a).**
+Exam Night Review is READ, STAGED, SWEPT and RESOLVED; staging at `content\ent\qb-pages\
+exam-night-review-mcqs.staged.js` + `…-sweep.json`, verdicts in `…-resolution.md`, comparisons in
+`…-sidebyside.txt`. **ZERO pages print a box, so all 37 new entries are authored+marked.**
 
-1. **RESOLUTION DONE (`ledger.md` §11b) — WRITE THE 37 NEW ENTRIES.** Every verdict is in
-   `content\ent\qb-pages\exam-night-review-resolution.md`, comparisons in `…-sidebyside.txt`. **ZERO
-   pages print a box, so all 37 are authored+marked.** Fold 64 reprints; attach the 18 images — **17
-   to new entries, p.3024 to `entep-ear-26`** (it folds but brings its picture). **⚠️ 14 of the 37
-   came from stages C/D, not the clean column, and 8 "clean" were reprints.**
-2. **Fold 3 within-batch dupes:** Q15≡Q24, Q21≡Q47, Q52≡Q53 (4 flagged, 3 pairs).
+1. **WRITING THE 37 — BATCH 1 OF 3 IS DONE (`ledger.md` §11c), 24 LEFT.** Written: `entep-enr-1,2,3,
+   4,5,8,9,10,13,15,18,19,20` (pp.2840–2886). **Ids follow the printed order of all 37, so batches 2
+   and 3 fill the gaps.** `QUESTIONS` 680 → **693**, validated in a real boot. **Batch 2** = Q8, Q9,
+   Q13, Q15, Q17, Q19, Q20, Q31, Q49, Q50, Q53, Q63, Q68 → `enr-6,7,11,12,14,16,17,21,22,23,24,25,
+   26`; **batch 3** = the picture run pp.3022–3044 → `enr-27…37`. **⚠️ `entep-enr-15` and `-2` already
+   cite `enr-27`, `-35`, `-36`; re-run the dead-id check after batch 3.**
+2. **Then fold 64 reprints** (32 stage-B + 32 resolved) **and 3 within-batch dupes** (Q24→Q15,
+   Q79→Q31, Q52→Q53); attach **p.3024 to `entep-ear-26`** — it folds but brings its picture.
 3. **Read pp.3047–3069 ODD (unread), harvest pp.3046–3070 into `examiner-patterns.md`** — **fact
    lists, NOT questions**; forcing them into `QUESTIONS` would mean inventing distractors.
 
@@ -25,24 +27,20 @@ and all were caught by LOOKING, not counting** — traps in `CLAUDE.md` §4 and 
 **⚠️ EXAM NIGHT REVIEW BREAKS EVERY PATTERN: ZERO stage-A matches** (first time ever — the bank rewrote
 its stems); 31/104 clean but **37 new after resolution**; **18 carry photographs, 10 unanswerable
 without them** (3 *labelled* anatomy diagrams — "the structure labeled X"). **⚠️ NEVER CARRY STRUCTURE
-ACROSS A SECTION BOUNDARY:** every section and all 7 exams print each question **twice**, **Recently
-Edited prints each ONCE already answered**, the fact-list run prints each page once. Check the first
-ten pages before staging.
+ACROSS A SECTION BOUNDARY:** sections and all 7 exams print each question **twice**, Recently Edited
+**once already answered**, the fact-list run once. Check the first ten pages before staging.
 
 **⚠️ THE REPRINT RATE HAS NO TREND — DO NOT EXTRAPOLATE IT.** 7 exams + Recently Edited: **96 → 100 →
 99 → 58 → 42 → 99 → 99 → 100%**, then Exam Night Review at **~70%**. Near-100% runs predict nothing.
 **The printed numbering lies** — 71 twice, no Q20, 45 AND 55 twice, 70 twice, and Recently Edited is
 non-sequential throughout. **⚠️ SAMPLE FOR STRUCTURE, NEVER FOR RATE OR FOR WHERE A SHIFT IS.**
 
-**⚠️ EXAMS 4–6 HOLD ONE SELF-CONTRADICTION EACH, EXAM 7 HOLDS TWO** — a question the bank already keyed
-correctly, reprinted and **re-keyed wrongly**. **Go looking for it**; all four sat on a page printing
-**NO box**. The mechanism decides handling: **options replaced → new entry; options identical and only
-the key moved → record it in the existing entry, never a second entry.**
-
-**⚠️ ~~EVERY PARITY SHIFT IS A SPILL PAGE~~ — RETIRED by Exam 5.** Three causes, **only two visible on
-the tile** — a stray *unanswered* page, a *spill* page, and **a stray ANSWERED page out of sequence,
-which looks normal** (p.2436). **When parity shifts with no visible cause, render the run
-consecutively.** Stable parity ≠ predictable parity.
+**⚠️ EXAMS 4–6 HOLD ONE SELF-CONTRADICTION EACH, EXAM 7 HOLDS TWO** — keyed correctly once, reprinted
+and **re-keyed wrongly**. **Go looking for it**; all four sat on a page printing **NO box**. Mechanism
+decides: **options replaced → new entry; options identical and only the key moved → record it in the
+existing entry, never a second.** **⚠️ ~~EVERY PARITY SHIFT IS A SPILL PAGE~~ — RETIRED by Exam 5:**
+three causes, **only two visible on the tile** (the third is a stray ANSWERED page out of sequence,
+p.2436, which looks normal). **When parity shifts with no visible cause, render consecutively.**
 
 **Method: THREE passes.** (1) Read at `-CropTop 0.32` (18/sheet, `Cols 3 -Dpi 110`) + **five-stage**
 sweep. (2) Resolve survivors — "shortlist, not a verdict", below. (3) Re-render survivors at `-CropTop
@@ -59,12 +57,14 @@ a *fact* gap is filled and tagged, per the answer-the-gap rule below.
 ## What exists — **104 chapters**: ENT 30, Ophthalmology 26, Neuropsychiatry 27, Pediatrics 21
 
 **All content is ENT so far**; the other three hold **0** questions and **no theory is written**.
-`QUESTIONS.length` is **680** — 598 MCQs + 82 cases, **all 30 ENT chapters holding ≥1**. By bank:
-**660 Endpoint, 21 House, 0 Grade Gain** — 681, because one question is in two banks.
+`QUESTIONS.length` is **693** — 611 MCQs + 82 cases, **all 30 ENT chapters holding ≥1**. By bank:
+**673 Endpoint, 21 House, 0 Grade Gain** — 694, because one question is in two banks.
 
 **Fully validated in a real `file://` boot, 2026-08-04** — 0 bad module/chapter refs, 0 mismatches,
 0 duplicate ids, every `answer` in range, nothing missing a `source`/`explanation`/`objective`, every
-`THEORY` `qs` id resolving, **0 dead backticked ids in prose**. Re-run after every batch. **⚠️ ANY
+`THEORY` `qs` id resolving (3 forward refs to unwritten batch-3 ids are expected). **⚠️ THE CHAPTER
+AUDITOR IS THE THING THAT BREAKS FIRST: `MODULES` is `m.groups[].chapters[]` and each chapter is an
+ARRAY (`c[0]` id), not an object** — walking `m.chapters` reports ~500 false failures. **⚠️ ANY
 SYNTAX SLIP IN A DATA FILE FAILS SILENTLY AND LOOKS LIKE A CONTENT BUG** — the app boots, throws
 nothing, and reports **82** questions (cases only), because `Q_ENT` never parsed; on 2026-08-04 from
 **one missing comma**. **`file://` gives only "Script error." at line 0** — inline the data file into
@@ -127,9 +127,10 @@ fold-vs-variant, not the stem** (`ledger.md`).
   keyword-search every survivor **twice, differently worded**. Failures: `ledger.md` §7, §11b.
 
 **Where the source prints no explanation box, the explanation is written here** — rule and marker in
-`CLAUDE.md` §4. **476 of the 680 entries carry the marker — 70%**, measured 2026-08-04 in a real boot:
+`CLAUDE.md` §4. **489 of the 693 entries carry the marker — 71%**, measured 2026-08-04 in a real boot:
 **seven tenths of ENT's explanations are written, not transcribed — the real scope of the end-of-ENT
-review** (recurring gaps: review item 4).
+review** (recurring gaps: review item 4). **⚠️ READ EVERY OPTION AS A SENTENCE BEFORE WRITING** — p.2856
+printed one truncated mid-word and it survived staging and both sweep passes (`ledger.md` §11c).
 
 **⚠️ A GAP IN THE MATERIAL IS NOW ANSWERED, NOT DECLARED — user's instruction, 2026-08-04, REVERSING
 the workspace rule for this project only.** Where slides and book do not cover a point, **fill it from
