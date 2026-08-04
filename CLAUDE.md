@@ -244,11 +244,65 @@ module ever needs re-shuffling when it is finished.
   answer: 1,                      // 0-based index
   explanation: '...',             // markdown; UWorld style
   objective: '...',               // one-line takeaway
-  source: 'ENT QB p.44'           // file and page
+  source: 'ENT QB p.44',          // file and page
+  image: 'q-2844',                // optional — see below; NEVER a path
+  imgAlt: 'Otoscopy of the left ear',   // required whenever `image` is set
+  imgEssential: true              // optional — the question is unanswerable without it
 }
 ```
 
 Id prefixes by source bank: `entqb-`, `enthd-`, `entep-`, `peds-`, `opmcq-`, `opqb-`, `npqb-`.
+
+### Questions that print a picture — 2026-08-04
+
+The banks print clinical photographs, and some questions **cannot be answered without them** — Exam
+Night Review alone holds 18 pictures, 10 of them load-bearing, 3 being *labelled* anatomy diagrams
+("the structure labeled X") that no verbal description can replace. **The user chose to crop them
+into the app** rather than describe or skip them.
+
+**`Design\scripts\q-images.ps1` cuts them**, one JPEG per source page into `app\assets\q\`:
+
+```bash
+.\q-images.ps1 -Pages 2844,3026 -Pdf "…\ENT endpoint.pdf"        # add -DryRun -Report to tune
+```
+
+- **The file is named for its source page — `q-2844.jpg` — so the filename is its own citation** and
+  does not have to change when the entry holding it is folded, renumbered or rewritten. Where a
+  question is printed twice, use the **answered** page, matching how `source` is cited.
+- **⚠️ `image` stores the BASENAME, never a path.** `qImgSrc(name)` builds `assets/q/<name>.jpg` at
+  runtime, for the same reason `poseSrc()` and `MOD_ART` exist: a single-file build has no `assets\`
+  folder, so a bundler has to rewrite these to data: URIs and needs **one** place to intercept. A
+  literal `src` in a template is a broken image the bundler cannot see and that throws nothing.
+  **⚠️ No bundler exists in this repo yet** — `bundle.ps1` is referred to in §6 but is not on disk
+  and never has been; the single-file build is still owed. Writing paths through `qImgSrc()` is what
+  keeps that job cheap when it comes.
+- **`imgAlt` is required whenever `image` is set**, and `imgEssential` marks the ones that cannot be
+  answered without the picture — the caption says so, because a learner whose images failed to load
+  otherwise just sees a question that makes no sense.
+- **The figure renders between the stem and the options**, which is where the paper prints it and
+  the only place it can go: an option chosen before looking at the picture is not an answer.
+- **It PRINTS.** Unlike `.mod-art` — a background image browsers drop — it is content, so `@media
+  print` keeps it and only caps its width.
+
+**Two traps in the cutter, both of which failed silently and produced a plausible-looking wrong
+crop rather than an error:**
+
+- **⚠️ Measure tone spread ACROSS a component, never inside a cell.** A photograph is locally smooth
+  — a 12px patch varies by ~6 — while black-on-white text varies by ~77 within every cell it
+  touches. A per-cell reading rejects pictures and keeps paragraphs, exactly backwards. The real
+  photo was found, sized correctly at 1,999 cells, and thrown away as "flat".
+- **⚠️ `Sort-Object -Property` does nothing on an array of hashtables in PowerShell 5.1.** It
+  returns them in arbitrary order with no error, so "take the largest component" took whichever one
+  the scan happened to reach first. Use `[pscustomobject]`. Verified directly, not assumed.
+
+Two more worth keeping: **cream is not enough to find the page's card** — the rendered sheet is far
+taller than the slide and the space below it is pure white, which passes any cream test and runs the
+card's bottom edge off the page; require the teal surround beside the row. And **padding must be
+asymmetric** — a leader-line label always sits *beside* the picture, the question text always
+*above*, so a symmetric pad wide enough to catch the label drags a strip of the question in with it.
+
+**Every crop must be LOOKED AT.** All 18 were rasterised into one contact sheet and checked before
+being kept; two rounds were discarded that way, and no numeric check would have caught either.
 
 Where a question straddles two chapters — stridor sits in both ENT and Pediatrics — assign a primary
 chapter and **note the secondary**. Do not silently guess.
@@ -904,11 +958,16 @@ exactly where she stood.
   and assert it for **all nine**, not just the one on screen.
 - **The `<img>` is fine over `file://`** — images are not CORS-restricted the way
   a font or an ES module is, so a relative path works from a double-clicked copy.
-  **Only the bundler turns them into data: URIs**, because a single file has no
-  `assets\` folder. That is why the filename is a **value in `CLEP_POSES`** and
-  the path is built at runtime by `poseSrc()` — the same shape as `MOD_ART`, so
-  `bundle.ps1` rewrites the map's values and drops the wrapper. Miss that step
-  and the corner goes empty on the first pose change.
+  **Only a bundler would turn them into data: URIs**, because a single file has
+  no `assets\` folder. That is why the filename is a **value in `CLEP_POSES`**
+  and the path is built at runtime by `poseSrc()` — the same shape as `MOD_ART`
+  and `qImgSrc()` — so a bundler rewrites the map's values and drops the
+  wrapper. Miss that step and the corner goes empty on the first pose change.
+  **⚠️ Correction, 2026-08-04: `bundle.ps1` DOES NOT EXIST and never did.** This
+  note used to say it "already does" this; searching the repo found no such
+  file. The single-file build is still owed work. What is real is the *shape* —
+  every image path in the app is built by a function from a stored basename,
+  which is what will make that build a small job rather than a rewrite.
 - **⚠️ The screenshot harness must copy the WHOLE `app\` folder.** Copying only
   `index.html` left it with no `assets\clep\` and photographed a broken-image
   glyph that looked exactly like an app bug.

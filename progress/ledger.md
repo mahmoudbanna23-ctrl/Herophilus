@@ -965,10 +965,11 @@ assuming structure: it prints each question ONCE, already answered.**
 **`ENT endpoint.pdf` IS NOW FULLY READ — all 3,074 pages accounted for.** Exam Night Review's 104
 MCQs are **read, staged and swept but NOT written.** The remaining work on this file, in order:
 
-1. **Build the `image` field and the crop pipeline** — the user chose to crop the photographs into
-   the app (2026-08-04). 18 of the 104 carry pictures and **10 cannot be answered without them**.
-   Four sub-tasks in the Exam Night Review entry below, including **the `bundle.ps1` data-URI step,
-   which is easy to miss and silently breaks the single-file build.**
+1. ~~**Build the `image` field and the crop pipeline**~~ — **DONE 2026-08-04.** All 18 pictures are
+   cut into `app\assets\q\q-<page>.jpg` (312 KB total), the schema carries `image`/`imgAlt`/
+   `imgEssential`, and the figure renders between the stem and the options. Full entry below.
+   **The images are not yet ATTACHED to any entry** — that happens in step 2, because which entry
+   holds a given printing is exactly what resolution decides.
 2. **Write the ~30 new entries** from `content\ent\qb-pages\exam-night-review-mcqs.staged.js`, using
    `…\exam-night-review-sweep.json` for the stage verdicts. **Resolve stages C, D and clean together
    by reading each against its stem twin** — not the clean column alone. **No page in this section
@@ -2256,6 +2257,101 @@ both readings recorded so the learner can see the bank is unreliable:
 
 **8. A full content and design review**, at the user's request — both the ENT content and whether the
 app's design needs changing — **before the other three modules are started.**
+
+---
+
+## §11a Question images — built 2026-08-04
+
+**18 clinical photographs cut out of `ENT endpoint.pdf` and into the app**, closing job 1 of four on
+Exam Night Review. The user chose "crop them into the app" over describing them in words or skipping
+them; **10 of the 18 questions cannot be answered without their picture**, three of those being
+*labelled* anatomy diagrams — "the structure labeled X" — which no wording can substitute for.
+
+**Pages cut:** 2842, 2844, 2860, 2872, 2876, 2886, 3022, 3024, 3026, 3028, 3030, 3032, 3034, 3036,
+3038, 3040, 3042, 3044. Output `app\assets\q\q-<page>.jpg`, longest edge 560 px, JPEG q80,
+**312 KB for all 18** — measured, not estimated. Content is otoscopy (11), laryngoscopy (2), barium
+swallow (2), a coronal sinus CT, an auricle photograph and two line diagrams.
+
+**Named for the page, not for the entry.** `q-2844.jpg` cites `ENT endpoint.pdf p.2844` on its own,
+so the crop does not have to be renamed when the entry that holds it is folded or renumbered — and
+job 1 could therefore be finished before job 2 decides which entry that is. Where a question prints
+twice, the **answered** page is used, matching the `source` convention.
+
+**The images are cut but NOT yet attached to any entry.** Only 5 of the 18 pages have a resolved
+home (`nearMiss`/`fuzzy` hits: p.2886→`entep-throat-12`/`-42`, p.3028→`entep-ear-250`,
+p.3032→`entep-mfe3-1`, p.3036→`entep-throat-100`, p.3040→`entep-ear-39`) and even those are
+shortlists, not verdicts, under the standing rule. Attaching them is part of job 2.
+
+### The cutter — `Design\scripts\q-images.ps1`
+
+Renders the page at 300 dpi, finds the card, grids it at 12 px, marks cells that are ≥55% non-paper,
+takes 8-neighbour connected components, rejects the ones that are too small / flat / yellow, and
+crops the largest survivor with asymmetric padding. `-DryRun` reports the box; `-Report` lists every
+component and why it was rejected; `-Box @{2844=@(x,y,w,h)}` overrides a page by hand.
+
+**Four defects, and every one of them failed SILENTLY — a plausible wrong crop, never an error:**
+
+1. **⚠️ `Sort-Object -Property` does nothing on an array of hashtables in PowerShell 5.1.** No error,
+   no warning, arbitrary order — so "take the largest component" took whichever the scan reached
+   first, which was a block of question text. Confirmed directly: `@(@{area=5},@{area=99},@{area=50})`
+   sorts to `50,99,5`; the same data as `[pscustomobject]` sorts to `99,50,5`.
+2. **⚠️ Tone spread was measured INSIDE each cell instead of across the component.** A photograph is
+   locally smooth — a 12 px patch of it varies by ~6 — while black-on-white text varies by ~77
+   within every cell it touches. The "reject flat fills" filter therefore rejected pictures and kept
+   paragraphs. The real photo on p.2844 was found, correctly sized at **1,999 cells**, and discarded
+   as "flat" with sd 6.3 while a 51-cell scrap of the question survived at sd 77.
+3. **Cream alone cannot find the card.** The rendered sheet is far taller than the slide and the
+   space below it is pure white, which passes any cream test — so the card's bottom edge ran off the
+   end of the page. Fixed by requiring the teal surround beside the row: true on every row of the
+   card, false on every row below it.
+4. **Padding has to be asymmetric.** A leader-line label — the "X" of "the structure labeled X" —
+   always sits *beside* the picture; the question text always sits *above* it. A symmetric pad wide
+   enough to reach the label dragged a strip of the question into half the crops. Now 4% horizontal,
+   1% vertical.
+
+**What found them: looking, not counting.** Defect 1 was caught by opening one crop and seeing
+"tial symptom for" instead of an ear. Defects 2 and 4 were caught on a contact sheet of all 18.
+**A numeric check would have passed all four** — every run reported a plausible box, a plausible
+cell count and no error. This is the same lesson as the glyphs and the pose overlay: rasterise it
+and look at it.
+
+### In the app
+
+- **`qImgSrc(name)` builds `assets/q/<name>.jpg` at runtime**, next to `MOD_ART`. `image` stores the
+  **basename only** — never a path — so a future single-file build has one function to intercept.
+  **⚠️ `bundle.ps1` does not exist and never did**; `CLAUDE.md` §6 claimed it "already" rewrote
+  `MOD_ART` and `CLEP_POSES` to data: URIs, and a repo-wide search found no such file. Corrected in
+  place. The single-file build is still owed.
+- **`qFigure(q)` renders between the stem and the options** — where the paper prints it, and the
+  only place it can go, since an option chosen before looking at the picture is not an answer. A
+  question with no `image` emits the empty string.
+- **`imgAlt` is required with `image`; `imgEssential` puts "this question cannot be answered without
+  it" into the caption** — a learner whose images fail to load otherwise just sees a question that
+  makes no sense.
+- **Click to enlarge** (`.qzoom`, z-index 300 with the modals). The crops carry detail — a speck of
+  debris, a leader line — that a 430 px column cannot show.
+- **It prints.** Unlike `.mod-art`, which is a background image browsers drop, this is content.
+
+**Verified in a real `file://` boot** (headless Chrome, whole `app\` folder copied): the figure
+present and in the right place (`mkbar > stem > qfig > opts > qactions`), `src` = `assets/q/q-2844.jpg`,
+**image actually decoded at 560×377** — asserted on `naturalWidth`, the only check that catches a
+wrong path, since a broken `src` boots clean and throws nothing — rendered at 430×291, caption
+correct, **all 18 files load (18/18)**, `qFigure` empty for a question without one, 680 questions,
+**0 console errors**. Full content sweep re-run: 598 MCQ + 82 cases, 0 bad module/chapter refs,
+0 answers out of range, 0 missing `source`/`explanation`/`objective`, 0 duplicate ids, every
+`THEORY` `qs` id resolving. **768 CSS rules, all 3 `max-aspect-ratio:5/4` blocks intact.**
+
+**⚠️ The rule count is 768, not 770** — the screenshot harness adds its own two-rule `<style>`, so a
+probe that instruments the page reads two high. Count from an uninstrumented boot, or subtract.
+
+**Two checker faults found while validating, both mine, neither a content bug:**
+
+- **The dead-backticked-id check flagged 10 live CHAPTER ids** (`ent-otalgia`, `ent-dysph`, …). Its
+  pattern matched any backticked `word-word` and tested it only against question ids. A backticked
+  token is dead only if it is neither a live question *nor* a live chapter — 20 legitimate chapter
+  mentions sit in prose. **A run where a whole category fails is a broken checker, not broken data.**
+- With that fixed it found **one real defect**: `entep-nose-73`'s source cited `` `case-18` `` where
+  the id is `entep-nose-case-18`. Repaired; re-run clean.
 
 ---
 

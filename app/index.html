@@ -416,6 +416,21 @@ button.card:active:not(:disabled){transform:translate(1px,1px);box-shadow:0 2px 
 .stem th{background:var(--bg-2);font-weight:800}
 .stem tr:last-child td{border-bottom:none}
 
+/* The clinical photograph some questions cannot be answered without. It sits
+   between the stem and the options because that is where the paper prints it,
+   and because an answer chosen before looking at the picture is not an answer.
+   Capped rather than stretched: the crops top out around 560px and enlarging
+   past their own resolution only makes a scan look worse. */
+.qfig{margin:0 0 21px;display:flex;flex-direction:column;align-items:flex-start;gap:7px}
+.qfig img{max-width:min(100%,430px);height:auto;display:block;border-radius:12px;
+  border:2px solid var(--line-2);background:#fff;box-shadow:0 8px 22px var(--sh-soft);cursor:zoom-in}
+.qfig figcaption{font-size:11.5px;letter-spacing:.03em;color:var(--ink-2)}
+/* Full-size look. The crops carry fine detail — a speck of debris, a leader
+   line — that a 430px column cannot show. */
+.qzoom{position:fixed;inset:0;z-index:300;display:flex;align-items:center;justify-content:center;
+  padding:24px;background:rgba(3,7,14,.86);cursor:zoom-out}
+.qzoom img{max-width:100%;max-height:100%;border-radius:10px;background:#fff;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+
 .opts{display:flex;flex-direction:column;gap:9px}
 .opt{
   display:flex;gap:13px;align-items:flex-start;padding:13px 16px;
@@ -1029,7 +1044,12 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
 /* ---------- Print / Save as PDF ---------- */
 @media print{
   @page{margin:16mm 14mm}
-  .rail,.topbar,.th-test,.th-toc .wb,.readtheory,.toast,.modal-bg,.splash,.gate{display:none!important}
+  .rail,.topbar,.th-test,.th-toc .wb,.readtheory,.toast,.modal-bg,.splash,.gate,.qzoom{display:none!important}
+  /* A question's photograph is content, so it PRINTS — unlike the module
+     artwork below. It is an <img>, not a background, so it needs nothing but
+     room; the caption's "tap to enlarge" is meaningless on paper. */
+  .qfig img{max-width:78mm;box-shadow:none}
+  .qfig figcaption{color:#444}
   /* The module artwork is a background-image, and browsers do not print those by
      default — left in, it reserves a square of blank paper per card. It carries
      no information anyway, so drop it and let the card collapse to its text. */
@@ -2169,6 +2189,39 @@ const BANKS=[
 /* Module id -> artwork basename. The ids and the filenames diverge (neuropsych
    vs mod-neuro), so this map exists rather than a string template. */
 const MOD_ART={ent:'mod-ent',ophtho:'mod-ophtho',neuropsych:'mod-neuro',pediatrics:'mod-peds'};
+
+/* A question's clinical photograph, cropped out of the bank by
+   Design\scripts\q-images.ps1 and named for the source page it came from —
+   q.image is 'q-2844', which cites ENT endpoint.pdf p.2844 by itself.
+
+   ⚠️ The path is BUILT HERE and never written as a literal src in a template.
+   A single-file build has no assets\ folder, so the bundler has to rewrite
+   these to data: URIs — the same reason poseSrc() and MOD_ART exist. One
+   function is one place for it to intercept; a literal src is a broken image
+   that the bundler cannot see and that throws nothing when it fails. */
+function qImgSrc(name){ return `assets/q/${name}.jpg`; }
+
+/* The figure block. `imgAlt` is the bank's own wording for what the picture is
+   ("otoscopy of the left ear"); where a question is unanswerable without the
+   picture the caption says so, because a learner whose images failed to load
+   otherwise just sees a question that makes no sense. */
+function qFigure(q){
+  if(!q.image) return '';
+  const alt=q.imgAlt||'Clinical image printed with this question';
+  return `<figure class="qfig">
+    <img src="${qImgSrc(q.image)}" alt="${esc(alt)}" onclick="openZoom('${q.image}')">
+    <figcaption>${esc(alt)}${q.imgEssential?' — this question cannot be answered without it.':''}
+      Tap to enlarge.</figcaption>
+  </figure>`;
+}
+function openZoom(name){
+  const d=document.createElement('div');
+  d.className='qzoom';
+  d.innerHTML=`<img src="${qImgSrc(name)}" alt="">`;
+  d.onclick=()=>d.remove();
+  document.body.appendChild(d);
+}
+
 const bankOf=q=>q.bank||'endpoint';
 const bankName=b=>(BANKS.find(x=>x.id===b)||{name:b}).name;
 /* ---- a question can belong to MORE THAN ONE bank ------------------------
@@ -3584,6 +3637,7 @@ function vCase(p,q,m,prev){
    <div class="qcard">
     ${markbar(q.id)}
     <div class="stem${armed?' arm':''}">${md(q.stem)}</div>
+    ${qFigure(q)}
     <div class="caseask">${ico('asclepius',17)} What is your diagnosis?</div>
     <textarea id="caseInput" class="caseinput" rows="3" ${Q.shown?'disabled':''}
       placeholder="Type the diagnosis in your own words — wording is not marked, the concepts are."
@@ -3678,6 +3732,7 @@ function vQuiz(p){
    <div class="qcard">
     ${markbar(q.id)}
     <div class="stem${armed?' arm':''}">${md(q.stem)}</div>
+    ${qFigure(q)}
     <div class="opts">`;
   q.options.forEach((o,i)=>{
     let cls='opt';
