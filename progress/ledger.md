@@ -962,23 +962,24 @@ questions.**
 **Recently Edited (pp.2817–2835) is DONE — 18 printings, 0 new, and it proved the point about not
 assuming structure: it prints each question ONCE, already answered.**
 
-**Next: `ENT endpoint.pdf` p.2836 — Exam Night Review (pp.2836–3074), the last section of the file.**
-Title p.2836, questions from p.2837, **two-page shape confirmed, answered pages EVEN.** ~119
-printings. Established by render, not assumed. What is still open:
+**`ENT endpoint.pdf` IS NOW FULLY READ — all 3,074 pages accounted for.** Exam Night Review's 104
+MCQs are **read, staged and swept but NOT written.** The remaining work on this file, in order:
 
-1. **⚠️ IT CONTAINS PHOTOGRAPHS** (p.2841 onwards) and the schema has no image field. **A user
-   decision is pending** — see the Recently Edited entry for the three options. **Do not silently
-   drop an image question**; that loss would be invisible in every count.
-2. **The reprint rate.** Across the file: 96 → 100 → 99 → 58 → 42 → 99 → 99%, then 100% for Recently
-   Edited. **Budget as unknown** — the same reasoning missed Exam 5 by 46 questions.
-3. **Whether a case section returns.** The three big sections each ended with one; neither the seven
-   exams nor Recently Edited did.
-4. **Whether it contradicts itself.** Exams 4, 5 and 6 held one self-contradiction each and **Exam 7
-   held two**. **Go looking rather than waiting to trip over it**, and note that four of four have
-   sat on a page that prints **no explanation box** — treat a bare page as a prompt to check the key.
-5. **Watch for more errata.** Recently Edited re-affirmed three disputed keys with new boxes. A
-   disputed key is provisional until the bank reprints it, and every reclassification so far has come
-   from a later printing.
+1. **Build the `image` field and the crop pipeline** — the user chose to crop the photographs into
+   the app (2026-08-04). 18 of the 104 carry pictures and **10 cannot be answered without them**.
+   Four sub-tasks in the Exam Night Review entry below, including **the `bundle.ps1` data-URI step,
+   which is easy to miss and silently breaks the single-file build.**
+2. **Write the ~30 new entries** from `content\ent\qb-pages\exam-night-review-mcqs.staged.js`, using
+   `…\exam-night-review-sweep.json` for the stage verdicts. **Resolve stages C, D and clean together
+   by reading each against its stem twin** — not the clean column alone. **No page in this section
+   prints an explanation box, so every one needs an authored, marked explanation.**
+3. **Fold the three within-batch duplicates:** Q15≡Q24, Q21≡Q47, Q52≡Q53.
+4. **Read pp.3047–3069 odd** — the unread half of the fact-list run — and harvest all of
+   pp.3046–3070 into `content\ent\examiner-patterns.md`. **These are not questions and must not be
+   forced into `QUESTIONS`.**
+
+Then the other two ENT banks — `ENT QB.pdf` (Grade Gain, 185 pp, `entqb-`, **no Grade Gain question
+transcribed anywhere yet**) and `d house ENT mcq.pdf` (House, resume at PDF p.15, `enthd-`).
 
 **Run the five-stage duplicate sweep before writing anything, rank ALL of them at stage E, and then
 read side by side EVERY staged question whose option set differs from its stem twin — that is stages
@@ -1764,6 +1765,68 @@ none of them free, and this is a **user decision, not a transcription judgement*
 
 Nothing decided; raised with the user. **Until it is decided, do not silently drop an image question
 — that would be a content loss invisible in every count.**
+
+### EXAM NIGHT REVIEW — read and staged, NOT yet written — 2026-08-04
+
+pp.2836–3074, the last section of `ENT endpoint.pdf`. **⚠️ IT IS THREE DIFFERENT THINGS, not one
+section**, and only the first is MCQs:
+
+| Pages | What | Shape |
+|---|---|---|
+| 2836 | title | — |
+| **2837–3045** | **104 MCQs** | printed **twice**, answered pages **EVEN** 2838–3044 |
+| **3046–3070** | **~25 pages of rapid-fire "prompt → answer" fact lists** | printed **ONCE each**, every page unique |
+| 3071–3074 | closing devotional pages (Arabic du'ā), no content | — |
+
+**All 104 MCQs are read and staged**, with the sweep run. Nothing is written into the data file yet
+— that is the next session's work. The artefacts are in the project, not the scratchpad:
+`content\ent\qb-pages\exam-night-review-mcqs.staged.js` (all 104, with `img` and `imgEssential`
+flags), `…\recently-edited.staged.js`, and `…\exam-night-review-sweep.json`.
+
+#### ⚠️ This section is unlike every other one in the file
+
+- **ZERO exact (stage A) matches — the first time that has happened.** Every other section and exam
+  opened with a block of verbatim reprints. Here the bank has genuinely rewritten its stems.
+- **31 of 104 came through clean**, the largest new-question yield since Exam 5's 46. Stage B 32,
+  C 32, D 9. **Budget this as a large batch, not a compilation.**
+- **No explanation box on ANY page.** So every entry written from this section will need an authored,
+  marked explanation — ~30+ of them, which is the real cost of this batch.
+- **Within-batch duplicates:** Q15≡Q24 (nasal trauma one month), Q21≡Q47 (pyriform-fossa nerve),
+  Q52≡Q53 (intubation granuloma). Fold each to one.
+
+#### ⚠️ The images — 18 of 104, and the user has decided
+
+**The user chose: crop the photographs into the app** (2026-08-04), i.e. extract each into
+`app\assets\q\` and add an optional `image` field to the question schema. Not yet built.
+
+Images sit on pp.2842, 2844, 2860, 2872, 2876, 2886, **and then densely from 3018 to 3044** —
+that block is 12 of 14 pages. **Ten are `imgEssential`: the question cannot be answered without the
+picture at all** (Q4, Q20, Q94, Q95, Q96, Q98, Q99, Q100, Q101, Q104). Q95/Q98/Q99 are *labelled
+anatomical diagrams* — "the structure labeled X" — which no verbal description can substitute for.
+
+**What building it requires**, none of it done yet:
+
+1. `image:'q-en-95.jpg'` as an optional field, rendered above the options in the quiz card.
+2. A crop script: render the PDF page at high DPI, locate the photo's bounding box, write a JPEG
+   into `app\assets\q\`. The pictures are framed with a visible border, so the box is findable by
+   scanning for it rather than by hand-measuring each one.
+3. **⚠️ `bundle.ps1` must rewrite these to data: URIs**, exactly as it already does for `MOD_ART`
+   and `CLEP_POSES` — so the path must be a **value in a map resolved at runtime**, never a literal
+   `src` in the entry. Miss this and the single-file build shows broken images.
+4. `CLAUDE.md` §4 schema block updated.
+
+#### The fact-list pages are NOT questions — they belong in the theory
+
+pp.3046–3070 are the bank's own high-yield cram sheet: one line per fact, "*Pulsatile tinnitus is
+seen in → Glomus tumour*", "*Absent laryngeal click indicates → Post-cricoid tumour*". They are not
+MCQs and not cases, and **forcing them into `QUESTIONS` would mean inventing distractors**, which is
+authoring.
+
+**They are, however, exactly what `CLAUDE.md` §4 says should drive the theory** — the examiner's own
+statement of what he keeps asking. **Harvest them into `content\ent\examiner-patterns.md`**, where
+they set each chapter's `intro` and its `w` weighting. About half were read this session (pp.3046,
+3048, 3050, 3052, 3053, 3054, 3056, 3058, 3060, 3062, 3064, 3066, 3068, 3070); **the odd-numbered
+pages in that run have NOT been read** and are unique pages, not reprints.
 
 ### One question, many banks — the filter fix, 2026-08-03
 

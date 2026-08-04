@@ -1,0 +1,1589 @@
+﻿{
+ "held": 680,
+ "staged": 104,
+ "mcqHeld": 598,
+ "exact": [],
+ "optionSet": [
+  {
+   "q": "6",
+   "p": 2848,
+   "hits": [
+    "entep-throat-5"
+   ]
+  },
+  {
+   "q": "14",
+   "p": 2864,
+   "hits": [
+    "entep-ear-9"
+   ]
+  },
+  {
+   "q": "21",
+   "p": 2878,
+   "hits": [
+    "entep-throat-103"
+   ]
+  },
+  {
+   "q": "26",
+   "p": 2888,
+   "hits": [
+    "entep-throat-96"
+   ]
+  },
+  {
+   "q": "27",
+   "p": 2890,
+   "hits": [
+    "entep-throat-97"
+   ]
+  },
+  {
+   "q": "32",
+   "p": 2900,
+   "hits": [
+    "entep-nose-73"
+   ]
+  },
+  {
+   "q": "41",
+   "p": 2918,
+   "hits": [
+    "entep-throat-101"
+   ]
+  },
+  {
+   "q": "42",
+   "p": 2920,
+   "hits": [
+    "entep-nose-76"
+   ]
+  },
+  {
+   "q": "43",
+   "p": 2922,
+   "hits": [
+    "entep-ear-199"
+   ]
+  },
+  {
+   "q": "44",
+   "p": 2924,
+   "hits": [
+    "entep-ear-200"
+   ]
+  },
+  {
+   "q": "46",
+   "p": 2928,
+   "hits": [
+    "entep-throat-43"
+   ]
+  },
+  {
+   "q": "47",
+   "p": 2930,
+   "hits": [
+    "entep-throat-103"
+   ]
+  },
+  {
+   "q": "48",
+   "p": 2932,
+   "hits": [
+    "entep-nose-77"
+   ]
+  },
+  {
+   "q": "51",
+   "p": 2938,
+   "hits": [
+    "entep-ear-201"
+   ]
+  },
+  {
+   "q": "55",
+   "p": 2946,
+   "hits": [
+    "entep-throat-105"
+   ]
+  },
+  {
+   "q": "58",
+   "p": 2952,
+   "hits": [
+    "entep-throat-106"
+   ]
+  },
+  {
+   "q": "65",
+   "p": 2966,
+   "hits": [
+    "entep-ear-205"
+   ]
+  },
+  {
+   "q": "67",
+   "p": 2970,
+   "hits": [
+    "entep-nose-82"
+   ]
+  },
+  {
+   "q": "69",
+   "p": 2974,
+   "hits": [
+    "entep-nose-83"
+   ]
+  },
+  {
+   "q": "70",
+   "p": 2976,
+   "hits": [
+    "entep-ear-206"
+   ]
+  },
+  {
+   "q": "71",
+   "p": 2978,
+   "hits": [
+    "entep-ear-207"
+   ]
+  },
+  {
+   "q": "72",
+   "p": 2980,
+   "hits": [
+    "entep-throat-25"
+   ]
+  },
+  {
+   "q": "74",
+   "p": 2984,
+   "hits": [
+    "entep-ear-50"
+   ]
+  },
+  {
+   "q": "77",
+   "p": 2990,
+   "hits": [
+    "entep-ear-209"
+   ]
+  },
+  {
+   "q": "81",
+   "p": 2998,
+   "hits": [
+    "entep-nose-49"
+   ]
+  },
+  {
+   "q": "83",
+   "p": 3002,
+   "hits": [
+    "entep-ear-211"
+   ]
+  },
+  {
+   "q": "84",
+   "p": 3004,
+   "hits": [
+    "entep-nose-28"
+   ]
+  },
+  {
+   "q": "86",
+   "p": 3008,
+   "hits": [
+    "entep-nose-13"
+   ]
+  },
+  {
+   "q": "87",
+   "p": 3010,
+   "hits": [
+    "entep-throat-37"
+   ]
+  },
+  {
+   "q": "88",
+   "p": 3012,
+   "hits": [
+    "entep-throat-110"
+   ]
+  },
+  {
+   "q": "90",
+   "p": 3016,
+   "hits": [
+    "entep-throat-39",
+    "entep-ear-52"
+   ]
+  },
+  {
+   "q": "91",
+   "p": 3018,
+   "hits": [
+    "entep-ear-42"
+   ]
+  }
+ ],
+ "nearMiss": [
+  {
+   "q": "8",
+   "p": 2852,
+   "key": "CSF leak",
+   "hits": [
+    "entep-nose-73"
+   ]
+  },
+  {
+   "q": "9",
+   "p": 2854,
+   "key": "Parainfluenza virus.",
+   "hits": [
+    "entep-throat-102"
+   ]
+  },
+  {
+   "q": "11",
+   "p": 2858,
+   "key": "Mastoiditis",
+   "hits": [
+    "entep-ear-50"
+   ]
+  },
+  {
+   "q": "19",
+   "p": 2874,
+   "key": "Laryngomalacia",
+   "hits": [
+    "entep-throat-97",
+    "entep-mfe4-6"
+   ]
+  },
+  {
+   "q": "22",
+   "p": 2880,
+   "key": "Myringoplasty.",
+   "hits": [
+    "entep-mfe5-11"
+   ]
+  },
+  {
+   "q": "25",
+   "p": 2886,
+   "key": "Plummer-Vinson syndrome.",
+   "hits": [
+    "entep-throat-12",
+    "entep-throat-42"
+   ]
+  },
+  {
+   "q": "28",
+   "p": 2892,
+   "key": "Rigid bronchoscopy under general anesthesia",
+   "hits": [
+    "entep-throat-98"
+   ]
+  },
+  {
+   "q": "30",
+   "p": 2896,
+   "key": "Endolymphatic hydrops",
+   "hits": [
+    "entep-ear-42",
+    "entep-ear-18",
+    "entep-ear-195"
+   ]
+  },
+  {
+   "q": "33",
+   "p": 2902,
+   "key": "Conservative treatment for 1 week then reasses",
+   "hits": [
+    "entep-nose-74"
+   ]
+  },
+  {
+   "q": "34",
+   "p": 2904,
+   "key": "Watchful waiting for 3 months",
+   "hits": [
+    "entep-ear-196",
+    "entep-mfe5-23"
+   ]
+  },
+  {
+   "q": "36",
+   "p": 2908,
+   "key": "Bilateral grommet tube insertion after myringo",
+   "hits": [
+    "entep-ear-197"
+   ]
+  },
+  {
+   "q": "37",
+   "p": 2910,
+   "key": "Vestibular neuritis",
+   "hits": [
+    "entep-ear-105",
+    "entep-ear-198",
+    "entep-ear-209",
+    "entep-ear-19",
+    "entep-ear-34"
+   ]
+  },
+  {
+   "q": "39",
+   "p": 2914,
+   "key": "X-ray",
+   "hits": [
+    "entep-nose-75"
+   ]
+  },
+  {
+   "q": "45",
+   "p": 2926,
+   "key": "Parainfluenza virus",
+   "hits": [
+    "entep-throat-102"
+   ]
+  },
+  {
+   "q": "49",
+   "p": 2934,
+   "key": "CT scan",
+   "hits": [
+    "entep-throat-30",
+    "entep-nose-23",
+    "entep-nose-39"
+   ]
+  },
+  {
+   "q": "50",
+   "p": 2936,
+   "key": "CT scan",
+   "hits": [
+    "entep-throat-30",
+    "entep-nose-23",
+    "entep-nose-39"
+   ]
+  },
+  {
+   "q": "52",
+   "p": 2940,
+   "key": "Intubation granuloma",
+   "hits": [
+    "entep-throat-53",
+    "entep-ear-36"
+   ]
+  },
+  {
+   "q": "53",
+   "p": 2942,
+   "key": "Intubation granuloma",
+   "hits": [
+    "entep-throat-53",
+    "entep-ear-36"
+   ]
+  },
+  {
+   "q": "56",
+   "p": 2948,
+   "key": "Septal perforation",
+   "hits": [
+    "entep-nose-79"
+   ]
+  },
+  {
+   "q": "59",
+   "p": 2954,
+   "key": "Adenoid hypertrophy",
+   "hits": [
+    "entep-mfe1-3",
+    "entep-nose-38",
+    "entep-ear-203"
+   ]
+  },
+  {
+   "q": "61",
+   "p": 2958,
+   "key": "Bilateral cordectomy",
+   "hits": [
+    "entep-throat-108"
+   ]
+  },
+  {
+   "q": "62",
+   "p": 2960,
+   "key": "CT scan",
+   "hits": [
+    "entep-throat-30",
+    "entep-nose-23",
+    "entep-nose-39"
+   ]
+  },
+  {
+   "q": "66",
+   "p": 2968,
+   "key": "Glossopharyngeal nerve",
+   "hits": [
+    "entep-ear-53"
+   ]
+  },
+  {
+   "q": "75",
+   "p": 2986,
+   "key": "CT scan",
+   "hits": [
+    "entep-throat-30",
+    "entep-nose-23",
+    "entep-nose-39"
+   ]
+  },
+  {
+   "q": "76",
+   "p": 2988,
+   "key": "Anti-edematous treatment, then reduction after",
+   "hits": [
+    "entep-nose-50"
+   ]
+  },
+  {
+   "q": "78",
+   "p": 2992,
+   "key": "Inspiratory only",
+   "hits": [
+    "entep-throat-34"
+   ]
+  },
+  {
+   "q": "82",
+   "p": 3000,
+   "key": "Bilateral adductor paralysis",
+   "hits": [
+    "entep-throat-2"
+   ]
+  },
+  {
+   "q": "85",
+   "p": 3006,
+   "key": "Intubation granuloma",
+   "hits": [
+    "entep-throat-53",
+    "entep-ear-36"
+   ]
+  },
+  {
+   "q": "92",
+   "p": 3020,
+   "key": "Loss of consciousness",
+   "hits": [
+    "entep-ear-227",
+    "entep-ear-44"
+   ]
+  },
+  {
+   "q": "98",
+   "p": 3032,
+   "key": "Malleus",
+   "hits": [
+    "entep-mfe3-1"
+   ]
+  },
+  {
+   "q": "100",
+   "p": 3036,
+   "key": "Hoarse voice",
+   "hits": [
+    "entep-throat-100"
+   ]
+  },
+  {
+   "q": "102",
+   "p": 3040,
+   "key": "Furunculosis",
+   "hits": [
+    "entep-ear-39"
+   ]
+  }
+ ],
+ "fuzzy": [
+  {
+   "q": "1",
+   "p": 2838,
+   "key": "Inability to close the right eye with deviatio",
+   "hits": [
+    "entep-ear-63"
+   ]
+  },
+  {
+   "q": "13",
+   "p": 2862,
+   "key": "Flexible nasopharyngoscopy",
+   "hits": [
+    "entep-mfe5-1",
+    "entep-ear-49"
+   ]
+  },
+  {
+   "q": "35",
+   "p": 2906,
+   "key": "Contrast-enhanced CT scan",
+   "hits": [
+    "entep-throat-99"
+   ]
+  },
+  {
+   "q": "40",
+   "p": 2916,
+   "key": "Bilateral conductive hearing loss, worse on th",
+   "hits": [
+    "entep-ear-67"
+   ]
+  },
+  {
+   "q": "54",
+   "p": 2944,
+   "key": "CT scan for exclusion of malignancy",
+   "hits": [
+    "entep-throat-104"
+   ]
+  },
+  {
+   "q": "73",
+   "p": 2982,
+   "key": "Haemophilus influenzae type B",
+   "hits": [
+    "entep-throat-26"
+   ]
+  },
+  {
+   "q": "79",
+   "p": 2994,
+   "key": "Inability to close right eye with deviation of",
+   "hits": [
+    "entep-ear-63"
+   ]
+  },
+  {
+   "q": "89",
+   "p": 3014,
+   "key": "Myringotomy with grommet tube insertion",
+   "hits": [
+    "entep-ear-212"
+   ]
+  },
+  {
+   "q": "96",
+   "p": 3028,
+   "key": "Middle ear effusion",
+   "hits": [
+    "entep-ear-250"
+   ]
+  }
+ ],
+ "rankAll": {
+  "Q1": {
+   "p": 2838,
+   "st": "D",
+   "r": 1,
+   "best": "entep-ear-63",
+   "bestKey": "Inability to close right eye with angle of mouth deviation to the left",
+   "bestCh": "ent-facial",
+   "second": "entep-nose-50 0.33 | Anti-edematous treatment, then reduction after 5 days"
+  },
+  "Q2": {
+   "p": 2840,
+   "st": "clean",
+   "r": 0.93,
+   "best": "entep-throat-6",
+   "bestKey": "Medical treatment and follow-up.",
+   "bestCh": "ent-hoarse",
+   "second": "entep-throat-28 0.45 | Medical treatment and follow-up."
+  },
+  "Q3": {
+   "p": 2842,
+   "st": "clean",
+   "r": 0.44,
+   "best": "entep-ear-14",
+   "bestKey": "Right auricular perichondritis",
+   "bestCh": "ent-otalgia",
+   "second": "entep-ear-196 0.43 | Watchful waiting for 3 months"
+  },
+  "Q4": {
+   "p": 2844,
+   "st": "clean",
+   "r": 0.56,
+   "best": "entep-mfe4-18",
+   "bestKey": "Local steroids and antihistaminic tablets",
+   "bestCh": "ent-rhin",
+   "second": "entep-throat-55 0.44 | Anomia"
+  },
+  "Q5": {
+   "p": 2846,
+   "st": "clean",
+   "r": 0.47,
+   "best": "entep-ear-64",
+   "bestKey": "Auditory brain response",
+   "bestCh": "ent-audio",
+   "second": "entep-ear-8 0.33 | Offer bilateral myringotomy and grommet tube insertion."
+  },
+  "Q6": {
+   "p": 2848,
+   "st": "B",
+   "r": 0.98,
+   "best": "entep-throat-5",
+   "bestKey": "Post-intubation tracheal stenosis",
+   "bestCh": "ent-stridor",
+   "second": "entep-ear-24 0.33 | Do a nasopharyngeal endoscopy."
+  },
+  "Q7": {
+   "p": 2850,
+   "st": "clean",
+   "r": 0.5,
+   "best": "entep-ear-41",
+   "bestKey": "Myringotomy with insertion of Grommets tube.",
+   "bestCh": "ent-aom",
+   "second": "entep-nose-9 0.46 | Inverted papilloma"
+  },
+  "Q8": {
+   "p": 2852,
+   "st": "C",
+   "r": 0.41,
+   "best": "entep-ear-14",
+   "bestKey": "Right auricular perichondritis",
+   "bestCh": "ent-otalgia",
+   "second": "entep-nose-15 0.41 | Combined CT and MRI"
+  },
+  "Q9": {
+   "p": 2854,
+   "st": "C",
+   "r": 0.58,
+   "best": "entep-nose-104",
+   "bestKey": "Orbital cellulitis",
+   "bestCh": "ent-sinuscomp",
+   "second": "entep-mfe4-9 0.54 | Tonsillitis"
+  },
+  "Q10": {
+   "p": 2856,
+   "st": "clean",
+   "r": 0.57,
+   "best": "entep-ear-10",
+   "bestKey": "CSF",
+   "bestCh": "ent-otorrhea",
+   "second": "entep-ear-52 0.4 | Pneumothorax."
+  },
+  "Q11": {
+   "p": 2858,
+   "st": "C",
+   "r": 0.36,
+   "best": "entep-nose-11",
+   "bestKey": "Frontal lobe abscess",
+   "bestCh": "ent-sinuscomp",
+   "second": "entep-ear-206 0.36 | Labyrinthitis"
+  },
+  "Q12": {
+   "p": 2860,
+   "st": "clean",
+   "r": 0.7,
+   "best": "entep-ear-6",
+   "bestKey": "Central rounding in pars tensa.",
+   "bestCh": "ent-csom",
+   "second": "entep-mfe1-2 0.47 | Acute laryngotracheobronchitis (Croup)"
+  },
+  "Q13": {
+   "p": 2862,
+   "st": "D",
+   "r": 0.85,
+   "best": "entep-nose-56",
+   "bestKey": "Plain X-ray.",
+   "bestCh": "ent-tonsils",
+   "second": "entep-nose-75 0.52 | X ray"
+  },
+  "Q14": {
+   "p": 2864,
+   "st": "B",
+   "r": 1,
+   "best": "entep-ear-9",
+   "bestKey": "Repeated suction of debris with antifungal drops",
+   "bestCh": "ent-otorrhea",
+   "second": "entep-ear-219 0.45 | Otomycosis"
+  },
+  "Q15": {
+   "p": 2866,
+   "st": "clean",
+   "r": 0.5,
+   "best": "entep-nose-74",
+   "bestKey": "Conservative treatment for 1 week then reassessment",
+   "bestCh": "ent-septum",
+   "second": "entep-nose-12 0.39 | Anti-edema measures followed by reduction after five days"
+  },
+  "Q16": {
+   "p": 2868,
+   "st": "clean",
+   "r": 0.42,
+   "best": "entep-ear-24",
+   "bestKey": "Do a nasopharyngeal endoscopy.",
+   "bestCh": "ent-aom",
+   "second": "entep-ear-19 0.4 | Vestibular neuritis"
+  },
+  "Q17": {
+   "p": 2870,
+   "st": "clean",
+   "r": 0.83,
+   "best": "entep-nose-4",
+   "bestKey": "Left acute maxillary sinusitis",
+   "bestCh": "ent-sinusitis",
+   "second": "entep-nose-76 0.56 | Acute right sided maxillary sinusitis"
+  },
+  "Q18": {
+   "p": 2872,
+   "st": "clean",
+   "r": 0.47,
+   "best": "entep-ear-247",
+   "bestKey": "Otosclerosis",
+   "bestCh": "ent-hearing",
+   "second": "entep-ear-108 0.41 | Acoustic neuroma"
+  },
+  "Q19": {
+   "p": 2874,
+   "st": "C",
+   "r": 0.35,
+   "best": "entep-nose-11",
+   "bestKey": "Frontal lobe abscess",
+   "bestCh": "ent-sinuscomp",
+   "second": "entep-mfe4-20 0.34 | Acute bacterial rhinosinusitis"
+  },
+  "Q20": {
+   "p": 2876,
+   "st": "clean",
+   "r": 0.47,
+   "best": "entep-ear-43",
+   "bestKey": "Mastoidectomy.",
+   "bestCh": "ent-csom",
+   "second": "entep-mfe4-14 0.41 | Defect in the skull base"
+  },
+  "Q21": {
+   "p": 2878,
+   "st": "B",
+   "r": 0.46,
+   "best": "entep-throat-103",
+   "bestKey": "Vagus nerve",
+   "bestCh": "ent-dysph",
+   "second": "entep-nose-80 0.39 | CT"
+  },
+  "Q22": {
+   "p": 2880,
+   "st": "C",
+   "r": 0.41,
+   "best": "entep-mfe4-17",
+   "bestKey": "Local steroid sprays",
+   "bestCh": "ent-rhin",
+   "second": "entep-ear-197 0.41 | Bilateral grommet tube insertion after myringotomy"
+  },
+  "Q23": {
+   "p": 2882,
+   "st": "clean",
+   "r": 0.52,
+   "best": "entep-ear-207",
+   "bestKey": "Left-sided herpes zoster oticus",
+   "bestCh": "ent-facial",
+   "second": "entep-mfe5-30 0.49 | Herpes zoster (Ramsay Hunt syndrome)"
+  },
+  "Q24": {
+   "p": 2884,
+   "st": "clean",
+   "r": 0.5,
+   "best": "entep-nose-74",
+   "bestKey": "Conservative treatment for 1 week then reassessment",
+   "bestCh": "ent-septum",
+   "second": "entep-nose-12 0.39 | Anti-edema measures followed by reduction after five days"
+  },
+  "Q25": {
+   "p": 2886,
+   "st": "C",
+   "r": 0.38,
+   "best": "entep-mfe4-28",
+   "bestKey": "Invasive fungal sinusitis",
+   "bestCh": "ent-sinusitis",
+   "second": "entep-throat-42 0.38 | Plummer-Vinson syndrome."
+  },
+  "Q26": {
+   "p": 2888,
+   "st": "B",
+   "r": 0.55,
+   "best": "entep-throat-96",
+   "bestKey": "Stridor",
+   "bestCh": "ent-stridor",
+   "second": "entep-throat-97 0.39 | Laryngomalacia"
+  },
+  "Q27": {
+   "p": 2890,
+   "st": "B",
+   "r": 0.5,
+   "best": "entep-mfe4-6",
+   "bestKey": "Laryngomalacia",
+   "bestCh": "ent-stridor",
+   "second": "entep-throat-50 0.44 | Thyroglossal cyst."
+  },
+  "Q28": {
+   "p": 2892,
+   "st": "C",
+   "r": 0.65,
+   "best": "entep-throat-98",
+   "bestKey": "Rigid bronchoscopy under general anesthesia",
+   "bestCh": "ent-stridor",
+   "second": "entep-throat-51 0.35 | Transfer escorted to the operating room to secure the airway."
+  },
+  "Q29": {
+   "p": 2894,
+   "st": "clean",
+   "r": 0.63,
+   "best": "entep-ear-194",
+   "bestKey": "Epley's procedure",
+   "bestCh": "ent-vertigo",
+   "second": "entep-throat-57 0.38 | Unilateral pharyngeal weakness"
+  },
+  "Q30": {
+   "p": 2896,
+   "st": "C",
+   "r": 0.71,
+   "best": "entep-ear-195",
+   "bestKey": "Endolymphatic hydrops",
+   "bestCh": "ent-vertigo",
+   "second": "entep-ear-163 0.53 | Presbyacusis"
+  },
+  "Q31": {
+   "p": 2898,
+   "st": "clean",
+   "r": 0.5,
+   "best": "entep-nose-25",
+   "bestKey": "Immediate surgical evacuation.",
+   "bestCh": "ent-septum",
+   "second": "entep-ear-251 0.5 | Idiopathic paralysis of the facial nerve that recovers completely in most cases"
+  },
+  "Q32": {
+   "p": 2900,
+   "st": "B",
+   "r": 0.57,
+   "best": "entep-nose-73",
+   "bestKey": "CSF leak",
+   "bestCh": "ent-nasalobs",
+   "second": "entep-ear-209 0.52 | Vestibular neuritis"
+  },
+  "Q33": {
+   "p": 2902,
+   "st": "C",
+   "r": 0.6,
+   "best": "entep-nose-74",
+   "bestKey": "Conservative treatment for 1 week then reassessment",
+   "bestCh": "ent-septum",
+   "second": "entep-nose-50 0.4 | Anti-edematous treatment, then reduction after 5 days"
+  },
+  "Q34": {
+   "p": 2904,
+   "st": "C",
+   "r": 0.46,
+   "best": "entep-ear-196",
+   "bestKey": "Watchful waiting for 3 months",
+   "bestCh": "ent-aom",
+   "second": "entep-ear-209 0.38 | Vestibular neuritis"
+  },
+  "Q35": {
+   "p": 2906,
+   "st": "D",
+   "r": 0.55,
+   "best": "entep-throat-99",
+   "bestKey": "Contrast-enhanced CT",
+   "bestCh": "ent-neck",
+   "second": "entep-throat-30 0.47 | CT scan."
+  },
+  "Q36": {
+   "p": 2908,
+   "st": "C",
+   "r": 0.95,
+   "best": "entep-ear-197",
+   "bestKey": "Bilateral grommet tube insertion after myringotomy",
+   "bestCh": "ent-aom",
+   "second": "entep-ear-43 0.53 | Mastoidectomy."
+  },
+  "Q37": {
+   "p": 2910,
+   "st": "C",
+   "r": 0.81,
+   "best": "entep-ear-198",
+   "bestKey": "Vestibular neuritis",
+   "bestCh": "ent-vertigo",
+   "second": "entep-ear-209 0.5 | Vestibular neuritis"
+  },
+  "Q38": {
+   "p": 2912,
+   "st": "clean",
+   "r": 0.5,
+   "best": "entep-mfe4-14",
+   "bestKey": "Defect in the skull base",
+   "bestCh": "ent-nasalobs",
+   "second": "entep-throat-100 0.5 | Hoarse voice"
+  },
+  "Q39": {
+   "p": 2914,
+   "st": "C",
+   "r": 0.76,
+   "best": "entep-nose-75",
+   "bestKey": "X ray",
+   "bestCh": "ent-tonsils",
+   "second": "entep-nose-56 0.57 | Plain X-ray."
+  },
+  "Q40": {
+   "p": 2916,
+   "st": "D",
+   "r": 0.5,
+   "best": "entep-ear-67",
+   "bestKey": "Bilateral conductive hearing loss, worse on the left ear",
+   "bestCh": "ent-audio",
+   "second": "entep-ear-185 0.46 | Conductive hearing loss"
+  },
+  "Q41": {
+   "p": 2918,
+   "st": "B",
+   "r": 0.42,
+   "best": "entep-throat-101",
+   "bestKey": "Laryngeal web",
+   "bestCh": "ent-paedlar",
+   "second": "entep-throat-29 0.4 | Congenital laryngeal web."
+  },
+  "Q42": {
+   "p": 2920,
+   "st": "B",
+   "r": 0.54,
+   "best": "entep-nose-76",
+   "bestKey": "Acute right sided maxillary sinusitis",
+   "bestCh": "ent-sinusitis",
+   "second": "entep-nose-9 0.44 | Inverted papilloma"
+  },
+  "Q43": {
+   "p": 2922,
+   "st": "B",
+   "r": 1,
+   "best": "entep-ear-199",
+   "bestKey": "Chronic suppurative otitis media (tubotympanic type)",
+   "bestCh": "ent-csom",
+   "second": "entep-mfe4-14 0.5 | Defect in the skull base"
+  },
+  "Q44": {
+   "p": 2924,
+   "st": "B",
+   "r": 0.58,
+   "best": "entep-ear-21",
+   "bestKey": "Anteriorly and inferiorly",
+   "bestCh": "ent-earanat",
+   "second": "entep-ear-11 0.58 | Observation with ear protection against water"
+  },
+  "Q45": {
+   "p": 2926,
+   "st": "C",
+   "r": 0.56,
+   "best": "entep-mfe4-7",
+   "bestKey": "Smoking tobacco",
+   "bestCh": "ent-hoarse",
+   "second": "entep-throat-102 0.55 | Parainfluenza virus"
+  },
+  "Q46": {
+   "p": 2928,
+   "st": "B",
+   "r": 0.5,
+   "best": "entep-throat-20",
+   "bestKey": "Reinke's oedema",
+   "bestCh": "ent-hoarse",
+   "second": "entep-mfe5-44 0.5 | Unsafe type of chronic suppurative otitis media (CSOM)"
+  },
+  "Q47": {
+   "p": 2930,
+   "st": "B",
+   "r": 0.42,
+   "best": "entep-throat-109",
+   "bestKey": "Glossopharyngeal",
+   "bestCh": "ent-tonsils",
+   "second": "entep-ear-199 0.4 | Chronic suppurative otitis media (tubotympanic type)"
+  },
+  "Q48": {
+   "p": 2932,
+   "st": "B",
+   "r": 0.44,
+   "best": "entep-nose-77",
+   "bestKey": "Deviated nasal septum",
+   "bestCh": "ent-septum",
+   "second": "entep-nose-66 0.25 | Chronic sinusitis of dental origin"
+  },
+  "Q49": {
+   "p": 2934,
+   "st": "C",
+   "r": 0.34,
+   "best": "entep-nose-82",
+   "bestKey": "Juvenile nasopharyngeal angiofibroma",
+   "bestCh": "ent-nasalmass",
+   "second": "entep-nose-20 0.29 | Juvenile angiofibroma"
+  },
+  "Q50": {
+   "p": 2936,
+   "st": "C",
+   "r": 0.5,
+   "best": "entep-nose-100",
+   "bestKey": "FB in the nose",
+   "bestCh": "ent-nasalobs",
+   "second": "entep-mfe4-14 0.5 | Defect in the skull base"
+  },
+  "Q51": {
+   "p": 2938,
+   "st": "B",
+   "r": 0.39,
+   "best": "entep-ear-201",
+   "bestKey": "Petrous apex",
+   "bestCh": "ent-csom",
+   "second": "entep-nose-108 0.36 | Ammonia"
+  },
+  "Q52": {
+   "p": 2940,
+   "st": "C",
+   "r": 0.32,
+   "best": "entep-mfe5-39",
+   "bestKey": "Slipped ligature",
+   "bestCh": "ent-tonsils",
+   "second": "entep-mfe5-9 0.29 | Post-intubation tracheal stenosis"
+  },
+  "Q53": {
+   "p": 2942,
+   "st": "C",
+   "r": 0.42,
+   "best": "entep-ear-10",
+   "bestKey": "CSF",
+   "bestCh": "ent-otorrhea",
+   "second": "entep-throat-41 0.39 | Office laryngoscopy."
+  },
+  "Q54": {
+   "p": 2944,
+   "st": "D",
+   "r": 0.56,
+   "best": "entep-throat-104",
+   "bestKey": "CT for exclusion of malignancy",
+   "bestCh": "ent-neck",
+   "second": "entep-throat-30 0.5 | CT scan."
+  },
+  "Q55": {
+   "p": 2946,
+   "st": "B",
+   "r": 0.5,
+   "best": "entep-ear-110",
+   "bestKey": "Acute otitis media",
+   "bestCh": "ent-aom",
+   "second": "entep-throat-105 0.48 | Acute lymphadenitis"
+  },
+  "Q56": {
+   "p": 2948,
+   "st": "C",
+   "r": 0.55,
+   "best": "entep-nose-79",
+   "bestKey": "Septal perforation",
+   "bestCh": "ent-septum",
+   "second": "entep-ear-54 0.25 | Labyrinthitis"
+  },
+  "Q57": {
+   "p": 2950,
+   "st": "clean",
+   "r": 0.71,
+   "best": "entep-ear-202",
+   "bestKey": "Abducent nerve",
+   "bestCh": "ent-csom",
+   "second": "entep-ear-79 0.64 | VI nerve"
+  },
+  "Q58": {
+   "p": 2952,
+   "st": "B",
+   "r": 0.57,
+   "best": "entep-ear-209",
+   "bestKey": "Vestibular neuritis",
+   "bestCh": "ent-vertigo",
+   "second": "entep-throat-42 0.52 | Plummer-Vinson syndrome."
+  },
+  "Q59": {
+   "p": 2954,
+   "st": "C",
+   "r": 0.87,
+   "best": "entep-ear-203",
+   "bestKey": "Adenoid hypertrophy",
+   "bestCh": "ent-aom",
+   "second": "entep-ear-147 0.63 | Breast feeding in the flat position"
+  },
+  "Q60": {
+   "p": 2956,
+   "st": "clean",
+   "r": 0.8,
+   "best": "entep-throat-107",
+   "bestKey": "Management should be conducted as soon as possible",
+   "bestCh": "ent-stridor",
+   "second": "entep-nose-92 0.56 | The primary treatment is endoscopic sinus surgery"
+  },
+  "Q61": {
+   "p": 2958,
+   "st": "C",
+   "r": 0.37,
+   "best": "entep-throat-108",
+   "bestKey": "Bilateral cordectomy",
+   "bestCh": "ent-hoarse",
+   "second": "entep-ear-91 0.35 | Biopsy is essential to verify the pathological nature."
+  },
+  "Q62": {
+   "p": 2960,
+   "st": "C",
+   "r": 0.59,
+   "best": "entep-nose-80",
+   "bestKey": "CT",
+   "bestCh": "ent-nasalmass",
+   "second": "entep-nose-15 0.42 | Combined CT and MRI"
+  },
+  "Q63": {
+   "p": 2962,
+   "st": "clean",
+   "r": 0.46,
+   "best": "entep-nose-20",
+   "bestKey": "Juvenile angiofibroma",
+   "bestCh": "ent-nasalmass",
+   "second": "entep-nose-56 0.45 | Plain X-ray."
+  },
+  "Q64": {
+   "p": 2964,
+   "st": "clean",
+   "r": 0.63,
+   "best": "entep-ear-204",
+   "bestKey": "Type B tympanogram with low basic volume",
+   "bestCh": "ent-audio",
+   "second": "entep-mfe5-6 0.38 | Type B tympanometry with high basic volume"
+  },
+  "Q65": {
+   "p": 2966,
+   "st": "B",
+   "r": 0.58,
+   "best": "entep-ear-205",
+   "bestKey": "Safe CSOM (right ear)",
+   "bestCh": "ent-csom",
+   "second": "entep-ear-219 0.46 | Otomycosis"
+  },
+  "Q66": {
+   "p": 2968,
+   "st": "C",
+   "r": 0.42,
+   "best": "entep-throat-109",
+   "bestKey": "Glossopharyngeal",
+   "bestCh": "ent-tonsils",
+   "second": "entep-mfe5-39 0.27 | Slipped ligature"
+  },
+  "Q67": {
+   "p": 2970,
+   "st": "B",
+   "r": 0.45,
+   "best": "entep-nose-82",
+   "bestKey": "Juvenile nasopharyngeal angiofibroma",
+   "bestCh": "ent-nasalmass",
+   "second": "entep-nose-100 0.44 | FB in the nose"
+  },
+  "Q68": {
+   "p": 2972,
+   "st": "clean",
+   "r": 0.48,
+   "best": "entep-throat-42",
+   "bestKey": "Plummer-Vinson syndrome.",
+   "bestCh": "ent-dysph",
+   "second": "entep-ear-209 0.39 | Vestibular neuritis"
+  },
+  "Q69": {
+   "p": 2974,
+   "st": "B",
+   "r": 0.41,
+   "best": "entep-nose-100",
+   "bestKey": "FB in the nose",
+   "bestCh": "ent-nasalobs",
+   "second": "entep-throat-42 0.39 | Plummer-Vinson syndrome."
+  },
+  "Q70": {
+   "p": 2976,
+   "st": "B",
+   "r": 0.68,
+   "best": "entep-ear-206",
+   "bestKey": "Labyrinthitis",
+   "bestCh": "ent-vertigo",
+   "second": "entep-ear-234 0.42 | Otitis Media with Effusion"
+  },
+  "Q71": {
+   "p": 2978,
+   "st": "B",
+   "r": 0.77,
+   "best": "entep-ear-207",
+   "bestKey": "Left-sided herpes zoster oticus",
+   "bestCh": "ent-facial",
+   "second": "entep-ear-191 0.57 | Myringotomy"
+  },
+  "Q72": {
+   "p": 2980,
+   "st": "B",
+   "r": 0.83,
+   "best": "entep-throat-25",
+   "bestKey": "Cricothyroid muscle",
+   "bestCh": "ent-pharanat",
+   "second": "entep-throat-9 0.47 | Cricothyroid muscle."
+  },
+  "Q73": {
+   "p": 2982,
+   "st": "D",
+   "r": 0.73,
+   "best": "entep-ear-217",
+   "bestKey": "Staphylococcus aureus.",
+   "bestCh": "ent-otalgia",
+   "second": "entep-throat-26 0.69 | Haemophilus influenzae type B bacteria."
+  },
+  "Q74": {
+   "p": 2984,
+   "st": "B",
+   "r": 0.75,
+   "best": "entep-ear-50",
+   "bestKey": "Mastoiditis.",
+   "bestCh": "ent-aom",
+   "second": "entep-throat-60 0.7 | Viral"
+  },
+  "Q75": {
+   "p": 2986,
+   "st": "C",
+   "r": 0.56,
+   "best": "entep-throat-30",
+   "bestKey": "CT scan.",
+   "bestCh": "ent-neck",
+   "second": "entep-throat-99 0.55 | Contrast-enhanced CT"
+  },
+  "Q76": {
+   "p": 2988,
+   "st": "C",
+   "r": 0.6,
+   "best": "entep-nose-50",
+   "bestKey": "Anti-edematous treatment, then reduction after 5 days",
+   "bestCh": "ent-septum",
+   "second": "entep-nose-12 0.43 | Anti-edema measures followed by reduction after five days"
+  },
+  "Q77": {
+   "p": 2990,
+   "st": "B",
+   "r": 0.81,
+   "best": "entep-ear-209",
+   "bestKey": "Vestibular neuritis",
+   "bestCh": "ent-vertigo",
+   "second": "entep-ear-34 0.39 | Vestibular neuritis."
+  },
+  "Q78": {
+   "p": 2992,
+   "st": "C",
+   "r": 0.71,
+   "best": "entep-throat-34",
+   "bestKey": "Inspiratory only.",
+   "bestCh": "ent-stridor",
+   "second": "entep-throat-36 0.43 | Bilateral adductor VC paralysis."
+  },
+  "Q79": {
+   "p": 2994,
+   "st": "D",
+   "r": 0.45,
+   "best": "entep-ear-161",
+   "bestKey": "Otitis media with effusion",
+   "bestCh": "ent-facial",
+   "second": "entep-ear-215 0.43 | Lacrimation and taste are not affected"
+  },
+  "Q80": {
+   "p": 2996,
+   "st": "clean",
+   "r": 0.5,
+   "best": "entep-ear-210",
+   "bestKey": "Sensation of spinning as if the patient or the surroundings are moving",
+   "bestCh": "ent-vertigo",
+   "second": "entep-ear-46 0.44 | Sensation of spinning: as if the patient is spinning, or the world spins around the patient."
+  },
+  "Q81": {
+   "p": 2998,
+   "st": "B",
+   "r": 0.31,
+   "best": "entep-nose-49",
+   "bestKey": "Rhinolalia clausa",
+   "bestCh": "ent-nasalobs",
+   "second": "entep-throat-7 0.22 | Unilateral adductor paralysis."
+  },
+  "Q82": {
+   "p": 3000,
+   "st": "C",
+   "r": 0.36,
+   "best": "entep-throat-36",
+   "bestKey": "Bilateral adductor VC paralysis.",
+   "bestCh": "ent-vocal",
+   "second": "entep-throat-2 0.3 | Bilateral adductor paralysis"
+  },
+  "Q83": {
+   "p": 3002,
+   "st": "B",
+   "r": 0.82,
+   "best": "entep-ear-211",
+   "bestKey": "Anteroinferior",
+   "bestCh": "ent-earanat",
+   "second": "entep-ear-21 0.73 | Anteriorly and inferiorly"
+  },
+  "Q84": {
+   "p": 3004,
+   "st": "B",
+   "r": 0.47,
+   "best": "entep-ear-199",
+   "bestKey": "Chronic suppurative otitis media (tubotympanic type)",
+   "bestCh": "ent-csom",
+   "second": "entep-nose-28 0.47 | CSF rhinorrhea."
+  },
+  "Q85": {
+   "p": 3006,
+   "st": "C",
+   "r": 1,
+   "best": "entep-throat-53",
+   "bestKey": "Intubation granuloma.",
+   "bestCh": "ent-hoarse",
+   "second": "entep-ear-36 1 | Intubation granuloma."
+  },
+  "Q86": {
+   "p": 3008,
+   "st": "B",
+   "r": 0.67,
+   "best": "entep-throat-67",
+   "bestKey": "Ophthalmoplegia",
+   "bestCh": "ent-nasalmass",
+   "second": "entep-throat-116 0.44 | White spots on the surface of the tonsil"
+  },
+  "Q87": {
+   "p": 3010,
+   "st": "B",
+   "r": 0.73,
+   "best": "entep-throat-37",
+   "bestKey": "Peritonsillar abscess.",
+   "bestCh": "ent-pharsupp",
+   "second": "entep-throat-27 0.3 | Video-fluoroscopy."
+  },
+  "Q88": {
+   "p": 3012,
+   "st": "B",
+   "r": 0.22,
+   "best": "entep-throat-110",
+   "bestKey": "Lateral neck X-ray",
+   "bestCh": "ent-tonsils",
+   "second": "entep-mfe4-18 0.22 | Local steroids and antihistaminic tablets"
+  },
+  "Q89": {
+   "p": 3014,
+   "st": "D",
+   "r": 0.73,
+   "best": "entep-ear-212",
+   "bestKey": "Myringotomy with insertion of grommet tube",
+   "bestCh": "ent-aom",
+   "second": "entep-ear-41 0.45 | Myringotomy with insertion of Grommets tube."
+  },
+  "Q90": {
+   "p": 3016,
+   "st": "B",
+   "r": 0.6,
+   "best": "entep-throat-39",
+   "bestKey": "Pneumothorax.",
+   "bestCh": "ent-stridor",
+   "second": "entep-mfe5-5 0.44 | Middle ear effusion (Secretory otitis media)"
+  },
+  "Q91": {
+   "p": 3018,
+   "st": "B",
+   "r": 0.8,
+   "best": "entep-ear-42",
+   "bestKey": "Endolymphatic hydrops.",
+   "bestCh": "ent-vertigo",
+   "second": "entep-ear-175 0.67 | Increased endolymphatic pressure"
+  },
+  "Q92": {
+   "p": 3020,
+   "st": "C",
+   "r": 0.91,
+   "best": "entep-ear-44",
+   "bestKey": "Loss of consciousness.",
+   "bestCh": "ent-vertigo",
+   "second": "entep-ear-99 0.82 | Causes vertigo for few days"
+  },
+  "Q93": {
+   "p": 3022,
+   "st": "clean",
+   "r": 0.5,
+   "best": "entep-throat-42",
+   "bestKey": "Plummer-Vinson syndrome.",
+   "bestCh": "ent-dysph",
+   "second": "entep-ear-205 0.48 | Safe CSOM (right ear)"
+  },
+  "Q94": {
+   "p": 3024,
+   "st": "clean",
+   "r": 0.44,
+   "best": "entep-ear-26",
+   "bestKey": "Ear suction and topical anti-fungal drops.",
+   "bestCh": "ent-otorrhea",
+   "second": "entep-mfe5-23 0.38 | Watchful waiting for 3 months"
+  },
+  "Q95": {
+   "p": 3026,
+   "st": "clean",
+   "r": 0.4,
+   "best": "enthd-ear-5",
+   "bestKey": "It's a semi-transparent membrane with an elastic lower part",
+   "bestCh": "ent-earanat",
+   "second": "enthd-ear-13 0.4 | All of the above"
+  },
+  "Q96": {
+   "p": 3028,
+   "st": "D",
+   "r": 0.64,
+   "best": "entep-mfe5-23",
+   "bestKey": "Watchful waiting for 3 months",
+   "bestCh": "ent-aom",
+   "second": "entep-ear-39 0.54 | Furunculosis."
+  },
+  "Q97": {
+   "p": 3030,
+   "st": "clean",
+   "r": 0.49,
+   "best": "entep-nose-80",
+   "bestKey": "CT",
+   "bestCh": "ent-nasalmass",
+   "second": "entep-nose-15 0.42 | Combined CT and MRI"
+  },
+  "Q98": {
+   "p": 3032,
+   "st": "C",
+   "r": 0.38,
+   "best": "entep-ear-240",
+   "bestKey": "Staph. Aureus",
+   "bestCh": "ent-otalgia",
+   "second": "entep-ear-173 0.38 | Oval window"
+  },
+  "Q99": {
+   "p": 3034,
+   "st": "clean",
+   "r": 0.4,
+   "best": "entep-mfe4-4",
+   "bestKey": "Suction of the pars flaccida inside the attic",
+   "bestCh": "ent-csom",
+   "second": "entep-nose-69 0.4 | Squamous cell carcinoma"
+  },
+  "Q100": {
+   "p": 3036,
+   "st": "C",
+   "r": 0.5,
+   "best": "entep-throat-34",
+   "bestKey": "Inspiratory only.",
+   "bestCh": "ent-stridor",
+   "second": "entep-ear-216 0.44 | Inability to close the right eye and deviation of the mouth to the left."
+  },
+  "Q101": {
+   "p": 3038,
+   "st": "clean",
+   "r": 0.5,
+   "best": "entep-mfe5-45",
+   "bestKey": "Office laryngoscopy",
+   "bestCh": "ent-hoarse",
+   "second": "entep-mfe5-46 0.48 | Direct laryngoscopy and biopsy"
+  },
+  "Q102": {
+   "p": 3040,
+   "st": "C",
+   "r": 0.46,
+   "best": "entep-ear-39",
+   "bestKey": "Furunculosis.",
+   "bestCh": "ent-otalgia",
+   "second": "entep-ear-207 0.42 | Left-sided herpes zoster oticus"
+  },
+  "Q103": {
+   "p": 3042,
+   "st": "clean",
+   "r": 0.5,
+   "best": "entep-ear-39",
+   "bestKey": "Furunculosis.",
+   "bestCh": "ent-otalgia",
+   "second": "entep-mfe5-6 0.43 | Type B tympanometry with high basic volume"
+  },
+  "Q104": {
+   "p": 3044,
+   "st": "clean",
+   "r": 0.46,
+   "best": "entep-mfe4-14",
+   "bestKey": "Defect in the skull base",
+   "bestCh": "ent-nasalobs",
+   "second": "entep-throat-42 0.46 | Plummer-Vinson syndrome."
+  }
+ },
+ "cleanIds": [
+  "2",
+  "3",
+  "4",
+  "5",
+  "7",
+  "10",
+  "12",
+  "15",
+  "16",
+  "17",
+  "18",
+  "20",
+  "23",
+  "24",
+  "29",
+  "31",
+  "38",
+  "57",
+  "60",
+  "63",
+  "64",
+  "68",
+  "80",
+  "93",
+  "94",
+  "95",
+  "97",
+  "99",
+  "101",
+  "103",
+  "104"
+ ],
+ "selfDupes": [
+  [
+   "options",
+   "15",
+   "24"
+  ],
+  [
+   "stem",
+   "15",
+   "24"
+  ],
+  [
+   "options",
+   "21",
+   "47"
+  ],
+  [
+   "options",
+   "52",
+   "53"
+  ]
+ ],
+ "counts": {
+  "exact": 0,
+  "optionSet": 32,
+  "nearMiss": 32,
+  "fuzzy": 9,
+  "clean": 31
+ }
+}

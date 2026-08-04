@@ -6,52 +6,53 @@ needed to pick the work up cold; under 200 lines — measure with `(Get-Content)
 
 ## Resume here
 
-**`ENT endpoint.pdf` p.2836 — Exam Night Review (pp.2836–3074), the LAST section of the file. ~119
-printings. The 7 exams and Recently Edited are DONE.** Title p.2836, questions from p.2837,
-**two-page shape, answered pages EVEN** — established by render.
+**`ENT endpoint.pdf` IS FULLY READ — all 3,074 pp.** Exam Night Review's **104 MCQs are READ, STAGED
+and SWEPT but NOT WRITTEN**; staging survives in the project at
+`content\ent\qb-pages\exam-night-review-mcqs.staged.js` + `…-sweep.json`. **Four jobs left, in order
+(`ledger.md` §6):**
 
-**⚠️ IT CONTAINS PHOTOGRAPHS (p.2841 on) AND THE SCHEMA HAS NO IMAGE FIELD. A USER DECISION IS
-PENDING** — describe in words / crop into `app\assets\` with a new `image` field / skip and record.
-`ledger.md` "Recently Edited" entry. **Do not silently drop an image question — invisible in counts.**
+1. **Build the `image` field + crop pipeline** (user chose *crop into the app*, 2026-08-04). **⚠️
+   `bundle.ps1` MUST rewrite the paths to data: URIs like `MOD_ART`/`CLEP_POSES`** — store the
+   filename as a **map value resolved at runtime**, never a literal `src`, or the single-file build
+   silently shows broken images.
+2. **Write the ~30 new entries. ZERO pages print a box**, so every one is authored+marked.
+3. **Fold 3 within-batch dupes:** Q15≡Q24, Q21≡Q47, Q52≡Q53.
+4. **Read pp.3047–3069 ODD (unread) and harvest pp.3046–3070 into `examiner-patterns.md`** — **rapid-
+   fire fact lists, NOT questions**; forcing them into `QUESTIONS` would mean inventing distractors.
 
-**⚠️ NEVER CARRY STRUCTURE ACROSS A SECTION BOUNDARY.** Every section and all 7 exams print each
-question **twice**; **Recently Edited prints each ONCE, already answered.** Assuming otherwise would
-have skipped half of it as "unanswered pages". Check the first ten pages before staging anything.
+**⚠️ EXAM NIGHT REVIEW BREAKS EVERY PATTERN: ZERO stage-A matches** (first time ever — the bank
+rewrote its stems), **31/104 clean**, **18 carry photographs and 10 are unanswerable without them**
+(3 being *labelled* anatomy diagrams — "the structure labeled X" — which no words can replace).
+**⚠️ NEVER CARRY STRUCTURE ACROSS A SECTION BOUNDARY:** every section and all 7 exams print each
+question **twice**, **Recently Edited prints each ONCE already answered**, and the fact-list run
+prints each page once. Check the first ten pages before staging.
 
-**⚠️ THE REPRINT RATE HAS NO TREND — DO NOT EXTRAPOLATE IT.** Seven exams + Recently Edited, **560
-printings read, 84 new** — 3 / 0 / 1 / **32** / **46** / 1 / 1 / 0, i.e. **96 → 100 → 99 → 58 → 42 →
-99 → 99 → 100%**. Near-100% runs predict nothing; the same reasoning missed Exam 5 by 46. **The
-printed numbering lies** — Exam 2 uses 71 twice, Exam 3 has no Q20, Exam 5 uses 45 AND 55 twice, Exam
-7 uses **70 twice**, and Recently Edited is non-sequential throughout (each question keeps its home
-number). **⚠️ SAMPLE FOR STRUCTURE, NEVER FOR REPRINT RATE OR FOR WHERE A SHIFT IS** — a 15-page
-spread of Exam 2 predicted "mostly new" (it had zero) and placed both parity shifts wrong.
+**⚠️ THE REPRINT RATE HAS NO TREND — DO NOT EXTRAPOLATE IT.** 7 exams + Recently Edited: **96 → 100 →
+99 → 58 → 42 → 99 → 99 → 100%**, then Exam Night Review at **~70%**. Near-100% runs predict nothing.
+**The printed numbering lies** — 71 twice, no Q20, 45 AND 55 twice, 70 twice, and Recently Edited is
+non-sequential throughout. **⚠️ SAMPLE FOR STRUCTURE, NEVER FOR RATE OR FOR WHERE A SHIFT IS.**
 
-**⚠️ EXAMS 4, 5 AND 6 HOLD ONE SELF-CONTRADICTION EACH AND EXAM 7 HOLDS TWO** — always the same
-shape: a question the bank already keyed correctly, reprinted and **re-keyed wrongly**. **Go looking
-for it.** **All four sit on a page printing NO explanation box — treat a bare page as a prompt to
-check the key.** The mechanism decides the handling: **options replaced → new entry; options
-identical and only the key moved → record the mis-key in the existing entry, never a second entry.**
+**⚠️ EXAMS 4–6 HOLD ONE SELF-CONTRADICTION EACH, EXAM 7 HOLDS TWO** — a question the bank already
+keyed correctly, reprinted and **re-keyed wrongly**. **Go looking for it**; all four sat on a page
+printing **NO box**. The mechanism decides handling: **options replaced → new entry; options
+identical and only the key moved → record it in the existing entry, never a second entry.**
 
 **⚠️ ~~EVERY PARITY SHIFT IS A SPILL PAGE~~ — RETIRED by Exam 5.** Three causes, **only two visible
 on the tile**: a stray *unanswered* page, a *spill* page (prose) — and **a stray ANSWERED page
-reprinted out of sequence, which looks completely normal** (p.2436). **When parity shifts and no
-visible cause explains it, render the whole run through it consecutively.** Exams 1, 4, 6 and 7 do
-not shift, but sit at **both** parities across the block, so stable ≠ predictable.
+reprinted out of sequence, which looks normal** (p.2436). **When parity shifts and no visible cause
+explains it, render the whole run consecutively.** Stable parity ≠ predictable parity.
 
-**Method: THREE passes.** (1) Read at `-CropTop 0.32` (18/sheet, `Cols 3 -Dpi 110`) and run the
-**five-stage** sweep. (2) Resolve the survivors — the "shortlist, not a verdict" rule below; not
-optional. (3) Re-render survivors at `-CropTop 0.40 -Cols 2` for boxes.
+**Method: THREE passes.** (1) Read at `-CropTop 0.32` (18/sheet, `Cols 3 -Dpi 110`) + **five-stage**
+sweep. (2) Resolve survivors — the "shortlist, not a verdict" rule below. (3) Re-render survivors at
+`-CropTop 0.40 -Cols 2` for boxes. Then the six other banks. **Order of work:** ENT → Pediatrics →
+Ophthalmology → Neuropsychiatry, all questions first, then theory. **The ENT review below is owed
+before Pediatrics.**
 
-After it: the six other banks — **~119 answered pages remain here. Order of work:** ENT → Pediatrics
-→ Ophthalmology → Neuropsychiatry, all questions first across all four modules, then theory. **The
-ENT review below is owed before Pediatrics.**
-
-**⚠️ THE THEORY BRIEF CHANGED, 2026-08-04 — it is a NEW STUDY SOURCE, sufficient to sit the exam
-from alone, NOT a summary.** Every source in the folder, images/diagrams wanted, "important" decided
-by the questions first. **Length is never the goal; dropping something important is the one
-unacceptable failure.** The four tests and the drop-list are in `CLAUDE.md` §4 — read it before
-writing any theory. User will add anatomy/physiology textbooks for diagrams (**ask, never substitute
-outside knowledge**) and offered an interview on sources — **take it before theory starts.**
+**⚠️ THE THEORY BRIEF CHANGED, 2026-08-04 — it is a NEW STUDY SOURCE, sufficient to sit the exam from
+alone, NOT a summary.** Every source in the folder, images/diagrams wanted, "important" decided by the
+questions first. **Length is never the goal; dropping something important is the one unacceptable
+failure.** Four tests + drop-list in `CLAUDE.md` §4. User will add anatomy/physiology textbooks (**ask,
+never substitute outside knowledge**) and offered a source interview — **take it first.**
 
 ## What exists
 
@@ -91,18 +92,18 @@ onto her.** Three rounds of wasted work in a day; the answer was always *ask for
 
 ## Where transcription stands
 
-**`ENT endpoint.pdf`: the three question sections, ALL SEVEN Model Final Exams and Recently Edited
-are COMPLETE**, every boundary verified by render — Ear pp.143–760 (243 entries), Nose pp.891–1185
-(136), Throat pp.1350–1720 (160); per-batch detail in `ledger.md` §"Transcribed ranges". **All three
-SECTIONS share one shape:** MCQs printed **twice**, a title page, then a case section printed
-**once**, two per page; **no case carries a printed explanation. ⚠️ No exam has a case section.**
+**`ENT endpoint.pdf`: everything is WRITTEN except Exam Night Review's 104 staged MCQs.** Boundaries
+all verified by render — Ear pp.143–760 (243 entries), Nose pp.891–1185 (136), Throat pp.1350–1720
+(160); detail in `ledger.md` §"Transcribed ranges". **All three SECTIONS share one shape:** MCQs
+printed **twice**, a title page, then a case section printed **once**, two per page; **no case
+carries a printed explanation. ⚠️ No exam has a case section.**
 
 **Box presence is a property of the page, not the section.** Throat ran **103 consecutive answered
 pages with none** (pp.1537–1720), so every entry from `entep-throat-70` on is authored; **Exams 4–7
-box 74/77, 78/79, 76/77 and 70/78, Recently Edited only 4/18, and 4 of 4 mis-keys sat on a bare page
-— check every tile for box as for highlight.** ⚠️ The box often falls BELOW the `-CropTop 0.32` cut,
-so a bare-looking tile may not be (p.2722): re-render before recording one as bare. **⚠️ For CASES
-the ANSWER decides fold-vs-variant, not the stem** — worked example in `ledger.md` §"Fold or variant".
+box 74/77, 78/79, 76/77, 70/78, Recently Edited 4/18, Exam Night Review ZERO of 104, and 4 of 4
+mis-keys sat on a bare page — check every tile for box as for highlight.** ⚠️ The box often falls
+BELOW the `-CropTop 0.32` cut, so a bare-looking tile may not be (p.2722): re-render before recording
+one as bare. **⚠️ For CASES the ANSWER decides fold-vs-variant, not the stem** (`ledger.md`).
 
 ## Four rules that change what you do first
 
@@ -114,19 +115,18 @@ defects. Read it before opening `ENT endpoint.pdf`.**
 - **NEITHER THE PRINTED NUMBERS NOR THE PAGE COUNT COUNTS THE QUESTIONS.** Only reading every
   answered page does.
 - **RUN THE DUPLICATE SWEEP OVER THE WHOLE FILE BEFORE WRITING A BATCH.** The file recycles across
-  section boundaries; run *before* the writing it has caught **493 reprints with nothing wasted** —
-  74/78/75/45/33/76/77 across Exams 1–7, then 18/18. **Normalise first** (lowercase, punctuation, **sort
-  the options**). **⚠️ FIVE STAGES:** (A) stem + option set, (B) option set + key, (C) key + option
-  count, (D) **≤1 DIFFERING TOKEN in the key** (symmetric difference — no ratio serves short and long
-  answers alike), (E) **stem-token ranking, run over ALL of them**. Rationale: `ledger.md` §7.
+  section boundaries; run *before* the writing it has caught **493+ reprints with nothing wasted**.
+  **Normalise first** (lowercase, punctuation, **sort the options**). **⚠️ FIVE STAGES:** (A) stem +
+  option set, (B) option set + key, (C) key + option count, (D) **≤1 DIFFERING TOKEN in the key**
+  (symmetric difference — no ratio serves short and long answers alike), (E) **stem-token ranking,
+  over ALL of them**. Rationale: `ledger.md` §7.
 - **⚠️ A–D ALL KEY ON THE ANSWER, SO A REWORDED OR RE-OPTIONED REPRINT PASSES THEM ALL, and E lists
-  without deciding. Every stage's verdict is a shortlist.** The resolution step is not optional:
-  **read side by side EVERY staged question whose OPTION SET differs from its stem twin — stages C, D
-  and clean TOGETHER** (25 of 78 in Exam 7). **⚠️ The new question need not be in the clean column at
-  all** — Exam 7's only one came out of stage C while its clean 3 were noise, and Exam 6's Q21 was
-  never even ranked. **A 1.00 stem match that did NOT reach stage A or B is a re-optioned reprint by
-  definition.** Then keyword-search every survivor **twice, differently worded** — that search has
-  caught three things ranking could not. Worked failures: `ledger.md` §7 and the Exam 4–7 entries.
+  without deciding. Every stage's verdict is a shortlist.** Resolution is not optional: **read side
+  by side EVERY staged question whose OPTION SET differs from its stem twin — stages C, D and clean
+  TOGETHER.** **⚠️ The new question need not be in the clean column** — Exam 7's only one came out of
+  stage C while its clean 3 were noise, and Exam 6's Q21 was never ranked. **A 1.00 stem match that
+  did NOT reach stage A or B is a re-optioned reprint by definition.** Then keyword-search every
+  survivor **twice, differently worded**. Worked failures: `ledger.md` §7 and the Exam 4–7 entries.
 
 **Where the source prints no explanation box, the explanation is written here** — rule and marker in
 `CLAUDE.md` §4. **476 of the 680 entries carry the marker — 70%**, measured 2026-08-04 in a real
@@ -144,8 +144,8 @@ are ticked. **When the sweep finds a cross-bank match, add the bank, never an en
 1. **⚠️ Sweep the WHOLE file for the "Ask ChatGPT" marker** — 5 known (pp.1011, 1015, 1489, 2146,
    2168), each found by eye, never by a search.
 2. **67 entries record no provenance either way** — 46 inside `entep-ear-1`…`68`, all 21 House.
-   Almost certainly authored, **not verified**. **⚠️ The exams may close much of this for free**:
-   Exam 1 boxes `entep-ear-1…25`, `nose-1…24`, `throat-1…24`, Exams 2–3 box `26…53`. Check first.
+   Almost certainly authored, **not verified**. **⚠️ The exams may close much of this for free:**
+   Exam 1 boxes `entep-ear-1…25`, `nose-1…24`, `throat-1…24`; Exams 2–3 box `26…53`.
 3. **Re-run the duplicate check per module as it completes** — all **five** stages of it.
 4. **⚠️ The nasopharynx — the highest-value single gap in ENT.** Up to **27** entries rest on outside
    knowledge (upper bound, unverified); **one ENT-nose-book read fixes it**, with item 5. Plus
@@ -173,8 +173,8 @@ are ticked. **When the sweep finds a cross-bank match, add the bank, never an en
 image pipeline, what is absent, two native-exe gotchas. What changes what you do first:
 
 - **Poppler is installed** and handles the 332 MB file; **`pdftotext` returns 0 characters on every
-  book and question bank**, so scans must be rendered to PNG and read as images. **The read tool
-  rejects PDFs over 100 MB** — all 7 books and 3 of the 7 banks.
+  book and question bank**, so scans are rendered to PNG and read as images. **The read tool rejects
+  PDFs over 100 MB** — all 7 books and 3 of the 7 banks.
 - **No Python, Node, ImageMagick, Ghostscript or `gh` CLI**; images via PowerShell `System.Drawing`,
   video via **ffmpeg** (off PATH). **Headless Chrome is the only way to screenshot or probe the app**,
   and **Chrome + Canva are available for producing theory diagrams** (user, 2026-08-04).
@@ -188,8 +188,8 @@ image pipeline, what is absent, two native-exe gotchas. What changes what you do
 published date. **Do not rebuild the schedule on it.**
 
 - **Reading all 1,637 book pages is not realistic.** Book reading is driven by the questions and by
-  gaps in the slides, using each book's contents page to locate ranges. **A chapter resting on slides
-  and questions alone must be reported as such.**
+  slide gaps, located via each book's contents page. **A chapter resting on slides and questions
+  alone must be reported as such.**
 - **Measure, then believe.** *Check the sum before recording any number* — a count that did not
   reconcile has been written down **five times**, including "156 authored passages" against a measured
   473, and a MEMORY line count read via `Measure-Object -Line`, **which skips blank lines** (use
