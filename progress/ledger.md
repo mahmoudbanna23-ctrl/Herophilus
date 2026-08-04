@@ -2429,6 +2429,60 @@ module/chapter mismatches, 0 duplicate ids, every `answer` in range and matching
 686 Endpoint / 21 House / 0 Grade Gain. **Four forward references remain live** — `enr-15`→`enr-27`,
 `enr-17`→`enr-34`, `enr-2`→`enr-35`/`enr-36`, all batch-3 ids.
 
+### Batch 3 of 3 — the picture run, written 2026-08-04. **EXAM NIGHT REVIEW'S 37 ARE COMPLETE.**
+
+**11 entries, `entep-enr-27`…`37`** (pp.3022–3044), every one of them carrying an image and **9
+essential**. `Q_ENT` 624 → **635 MCQs**; `QUESTIONS` 706 → **717**; authored markers 502 → **513**.
+**`entep-enr-1`…`37` are contiguous and all four forward references now resolve — the dead-id check
+returns clean.** 17 of the 18 images are attached and **all 17 load** (asserted by `naturalWidth`,
+not by presence); the 18th, `q-3024`, goes onto `entep-ear-26` in the fold pass.
+
+| id | page | Q | chapter | id | page | Q | chapter |
+|---|---|---|---|---|---|---|---|
+| `enr-27` | 3022 | Q93 | `ent-hearing` | `enr-33` | 3036 | Q100 | `ent-hoarse` * |
+| `enr-28` | 3026 | Q95 | `ent-earanat` * | `enr-34` | 3038 | Q101 | `ent-hoarse` * |
+| `enr-29` | 3028 | Q96 | `ent-aom` * | `enr-35` | 3040 | Q102 | `ent-otalgia` |
+| `enr-30` | 3030 | Q97 | `ent-nasalmass` | `enr-36` | 3042 | Q103 | `ent-otalgia` |
+| `enr-31` | 3032 | Q98 | `ent-earanat` * | `enr-37` | 3044 | Q104 | `ent-dysph` * |
+| `enr-32` | 3034 | Q99 | `ent-earanat` * | | | | (* = image essential) |
+
+**⚠️ THE CAPTIONS GAVE AWAY THE ANSWERS, AND NOTHING WOULD HAVE CAUGHT IT BUT READING THE RENDERER.**
+All 17 `imgAlt` values were first written as careful radiological descriptions — correct as alt text,
+and **fatal here, because `qFigure()` prints `imgAlt` as the visible `<figcaption>`.** A caption
+reading *"a leader line marked X points to … the pars flaccida"* answers *"the structure labeled X
+has which characteristic"* outright; *"a smooth shelf indenting the barium column posteriorly, no
+retained contrast"* settles cricopharyngeal spasm against Zenker before the learner thinks; *"the
+'rising sun' appearance of a glomus tympanicum"* names the condition whose symptom is being asked.
+**At least six of the eleven were spoiled**, plus three in batches 1 and 2. All 17 rewritten to name
+**only the modality and the view**. The rule is now in `CLAUDE.md` §4. **The lesson generalises: a
+field is not documentation until you have read what renders it** — every validation run had passed.
+
+**Three pairs in this run share one photograph**, which is why the whole section had to be resolved
+together rather than page by page: pp.3036/3038 print the same laryngeal image (symptom, then
+treatment) and pp.3040/3042 print the same ear (diagnosis, then which third of the canal). Each pair
+is held as two entries because each asks a different question of the same picture.
+
+**`entep-throat-100` settled a reading the photograph alone could not.** The laryngeal lesion at
+pp.2876/3036/3038 is a single swelling on one fold, which by `L2` means polyp or cyst and therefore
+surgery — but a *nodule* would start with voice therapy, and at this resolution one lesion versus two
+is a judgement. The bank's own twin **names it a vocal cord polyp**, which confirms the surgical key.
+Recorded in all three entries: **count the lesions in the picture, do not decide from the patient's
+occupation.**
+
+**One CT was re-rendered at 240 dpi before its caption was written** — at the printed size the
+laterality was not readable, and guessing it would have put a false finding in front of the learner.
+
+**Two passages needed the answer-the-gap rule:** the otoconia mechanism of the maculae, and
+**cricopharyngeal spasm itself, which is not named anywhere in the 32 cached ENT slides** — `L10`
+gives the cricopharyngeus and its raised resting tone in the Zenker section and stops there. The bar
+sign, the C5–C6 level and the management by dilatation, botulinum toxin or myotomy are filled from
+general knowledge and tagged. **No point was left unanswered; the section raises no interview items.**
+
+**Validated in a real `file://` boot: 104 chapters, 717 questions, 0 bad chapter refs, 0
+module/chapter mismatches, 0 duplicate ids, every `answer` in range and matching its staged key, all
+11 carrying the authored marker, every ENT chapter still ≥1, `THEORY` `qs` all resolving, 0 dead
+backticked ids, 17 of 17 images loading.** By bank 697 Endpoint / 21 House / 0 Grade Gain.
+
 ---
 
 ## §11a Question images — built 2026-08-04

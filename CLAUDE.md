@@ -279,6 +279,16 @@ into the app** rather than describe or skip them.
 - **`imgAlt` is required whenever `image` is set**, and `imgEssential` marks the ones that cannot be
   answered without the picture — the caption says so, because a learner whose images failed to load
   otherwise just sees a question that makes no sense.
+- **⚠️ `imgAlt` IS RENDERED AS THE VISIBLE `<figcaption>`, SO IT MUST NOT ANSWER THE QUESTION.**
+  Name the **modality and the view** and nothing more — *"Otoscopy of the tympanic membrane"*,
+  *"Coronal CT of the paranasal sinuses"*, *"an arrow marks the abnormality"*. **Never name the
+  diagnosis, the labelled structure, or the finding the options turn on.** Found 2026-08-04 after
+  writing all 17 captions as careful radiological descriptions: they read correctly as alt text and
+  **gave away at least six answers on the page** — a caption calling X *"the pars flaccida"* answers
+  *"which characteristic does X have"*, and *"a smooth shelf indenting the column posteriorly, no
+  retained contrast"* decides cricopharyngeal spasm against Zenker before the learner has thought.
+  **The detailed read belongs in the `explanation`**, which is shown only after answering. A blind
+  learner is served by the stem plus that explanation; a sighted one is spoiled by a caption.
 - **The figure renders between the stem and the options**, which is where the paper prints it and
   the only place it can go: an option chosen before looking at the picture is not an answer.
 - **It PRINTS.** Unlike `.mod-art` — a background image browsers drop — it is content, so `@media

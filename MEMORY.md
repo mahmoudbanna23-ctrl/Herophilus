@@ -8,14 +8,14 @@ Exam Night Review is READ, STAGED, SWEPT and RESOLVED; staging at `content\ent\q
 exam-night-review-mcqs.staged.js` + `…-sweep.json`, verdicts in `…-resolution.md`, comparisons in
 `…-sidebyside.txt`. **ZERO pages print a box, so all 37 new entries are authored+marked.**
 
-1. **WRITING THE 37 — BATCHES 1 AND 2 DONE (`ledger.md` §11c), 11 LEFT.** `entep-enr-1`…`26` written
-   and contiguous (pp.2840–2972); `QUESTIONS` 680 → **706**, validated in a real boot. **Batch 3 is
-   the picture run, pp.3022–3044 → `enr-27…37`** = Q93, Q95–Q104, **all 11 carrying images, 7 of them
-   essential.** **⚠️ FOUR FORWARD REFS ARE ALREADY LIVE** — `enr-15`→`-27`, `enr-17`→`-34`,
-   `enr-2`→`-35`/`-36`; **re-run the dead-backticked-id check after batch 3.**
-2. **Then fold the 64 cross-section reprints** (32 stage-B + 32 resolved); attach **p.3024 to
-   `entep-ear-26`** — it folds but brings its picture. **The 3 within-batch dupes are already folded
-   in place while writing** (Q24→`enr-12`, Q79→`enr-21`, Q52→`enr-24`), both pages cited in `source`.
+1. **✅ ALL 37 ARE WRITTEN (`ledger.md` §11c).** `entep-enr-1`…`37` contiguous, pp.2840–3044;
+   `QUESTIONS` 680 → **717**; 17 of the 18 images attached and **all 17 load**. Validated in a real
+   boot with **0 dead backticked ids**. **⚠️ `imgAlt` RENDERS AS THE VISIBLE CAPTION** — all 17 first
+   gave away the answer and were rewritten to name only the modality and view (`CLAUDE.md` §4).
+2. **NEXT: fold the 64 cross-section reprints** (32 stage-B + 32 resolved) — verdicts in
+   `…-resolution.md`; add each page to the `source` of the entry it duplicates. **Attach `q-3024` to
+   `entep-ear-26`** (p.3024 folds but brings an **essential** picture; it is the 18th image). **The 3
+   within-batch dupes are already folded in place** (Q24→`enr-12`, Q79→`enr-21`, Q52→`enr-24`).
 3. **Read pp.3047–3069 ODD (unread), harvest pp.3046–3070 into `examiner-patterns.md`** — **fact
    lists, NOT questions**; forcing them into `QUESTIONS` would mean inventing distractors.
 
@@ -57,12 +57,12 @@ a *fact* gap is filled and tagged, per the answer-the-gap rule below.
 ## What exists — **104 chapters**: ENT 30, Ophthalmology 26, Neuropsychiatry 27, Pediatrics 21
 
 **All content is ENT so far**; the other three hold **0** questions and **no theory is written**.
-`QUESTIONS.length` is **706** — 624 MCQs + 82 cases, **all 30 ENT chapters holding ≥1**. By bank:
-**686 Endpoint, 21 House, 0 Grade Gain** — 707, because one question is in two banks.
+`QUESTIONS.length` is **717** — 635 MCQs + 82 cases, **all 30 ENT chapters holding ≥1**. By bank:
+**697 Endpoint, 21 House, 0 Grade Gain** — 718, because one question is in two banks.
 
 **Fully validated in a real `file://` boot, 2026-08-04** — 0 bad module/chapter refs, 0 mismatches,
 0 duplicate ids, every `answer` in range, nothing missing a `source`/`explanation`/`objective`, every
-`THEORY` `qs` id resolving (3 forward refs to unwritten batch-3 ids are expected). **⚠️ THE CHAPTER
+`THEORY` `qs` id resolving, **0 dead backticked ids, 17 of 17 question images loading**. **⚠️ THE CHAPTER
 AUDITOR IS THE THING THAT BREAKS FIRST: `MODULES` is `m.groups[].chapters[]` and each chapter is an
 ARRAY (`c[0]` id), not an object** — walking `m.chapters` reports ~500 false failures. **⚠️ ANY
 SYNTAX SLIP IN A DATA FILE FAILS SILENTLY AND LOOKS LIKE A CONTENT BUG** — the app boots, throws
@@ -127,7 +127,7 @@ fold-vs-variant, not the stem** (`ledger.md`).
   keyword-search every survivor **twice, differently worded**. Failures: `ledger.md` §7, §11b.
 
 **Where the source prints no explanation box, the explanation is written here** — rule and marker in
-`CLAUDE.md` §4. **502 of the 706 entries carry the marker — 71%**, measured 2026-08-04 in a real boot:
+`CLAUDE.md` §4. **513 of the 717 entries carry the marker — 72%**, measured 2026-08-04 in a real boot:
 **seven tenths of ENT's explanations are written, not transcribed — the real scope of the end-of-ENT
 review** (recurring gaps: review item 4). **⚠️ READ EVERY OPTION AS A SENTENCE BEFORE WRITING** — p.2856
 printed one truncated mid-word and it survived staging and both sweep passes (`ledger.md` §11c).
