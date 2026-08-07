@@ -978,9 +978,10 @@ MCQs are **read, staged and swept but NOT written.** The remaining work on this 
    and 32 resolved reprints into their existing entries, and attach the 18 images (17 to new
    entries, **p.3024 to `entep-ear-26`**).
 3. **Fold the three within-batch duplicates:** Q15≡Q24, Q21≡Q47, Q52≡Q53.
-4. **Read pp.3047–3069 odd** — the unread half of the fact-list run — and harvest all of
-   pp.3046–3070 into `content\ent\examiner-patterns.md`. **These are not questions and must not be
-   forced into `QUESTIONS`.**
+4. ~~**Read pp.3047–3069 odd** — the unread half of the fact-list run — and harvest all of
+   pp.3046–3070 into `content\ent\examiner-patterns.md`.~~ **DONE 2026-08-07 — see §11d.**
+   `ENT endpoint.pdf` **IS NOW CLOSED**: all 3,074 pages read, and every page that carries content
+   is either transcribed into `QUESTIONS` or harvested into `examiner-patterns.md`.
 
 Then the other two ENT banks — `ENT QB.pdf` (Grade Gain, 185 pp, `entqb-`, **no Grade Gain question
 transcribed anywhere yet**) and `d house ENT mcq.pdf` (House, resume at PDF p.15, `enthd-`).
@@ -1779,7 +1780,7 @@ section**, and only the first is MCQs:
 |---|---|---|
 | 2836 | title | — |
 | **2837–3045** | **104 MCQs** | printed **twice**, answered pages **EVEN** 2838–3044 |
-| **3046–3070** | **~25 pages of rapid-fire "prompt → answer" fact lists** | printed **ONCE each**, every page unique |
+| **3046–3070** | **25 pages of rapid-fire "prompt → answer" fact lists**, 230 lines | ~~printed **ONCE each**, every page unique~~ **WRONG — corrected 2026-08-07, see §11d** |
 | 3071–3074 | closing devotional pages (Arabic du'ā), no content | — |
 
 **All 104 MCQs are read and staged**, with the sweep run. Nothing is written into the data file yet
@@ -1827,10 +1828,8 @@ MCQs and not cases, and **forcing them into `QUESTIONS` would mean inventing dis
 authoring.
 
 **They are, however, exactly what `CLAUDE.md` §4 says should drive the theory** — the examiner's own
-statement of what he keeps asking. **Harvest them into `content\ent\examiner-patterns.md`**, where
-they set each chapter's `intro` and its `w` weighting. About half were read this session (pp.3046,
-3048, 3050, 3052, 3053, 3054, 3056, 3058, 3060, 3062, 3064, 3066, 3068, 3070); **the odd-numbered
-pages in that run have NOT been read** and are unique pages, not reprints.
+statement of what he keeps asking. **Harvested into `content\ent\examiner-patterns.md` on
+2026-08-07; the file is written and this paragraph's claim about the run's shape was wrong — §11d.**
 
 ### One question, many banks — the filter fix, 2026-08-03
 
@@ -2533,6 +2532,65 @@ module/chapter mismatches, 0 duplicate ids, 0 dead backticked ids, `THEORY` `qs`
 ENT chapter ≥1, and 18 of 18 images loading.** `git diff` showed **63 insertions / 63 deletions** —
 one touched line per folded entry and nothing else, which is the check that the script did not
 rewrite the file wholesale.
+
+### §11d The fact-list run, pp.3046–3070 — harvested 2026-08-07. **`ENT endpoint.pdf` IS CLOSED.**
+
+The last content in the file. **25 pages, 230 printed "prompt → answer" one-liners**, no options and
+no distractors, so **none of it enters `QUESTIONS`** — inventing the wrong answers would be
+authoring. It is harvested instead into `content\ent\examiner-patterns.md`, which did not exist
+before this session and which `CLAUDE.md` §4 has always named as the file that sets each chapter's
+`intro` and `w`.
+
+**230 lines reduce to 166 distinct facts, spread over all 30 ENT chapters** — every chapter of the
+syllabus is represented, verified by comparing the ids used in the file against `modules.js`.
+
+**⚠️ THE RUN IS NOT 25 UNIQUE PAGES — the earlier note in §7 was wrong, and wrong because it was
+written from a half-read.** It recorded *"printed ONCE each, every page unique"* after reading only
+the even-numbered pages. Reading all 25 shows:
+
+- **pp.3061–3063 are a condensed re-run of pp.3057–3060**, in order, in shorter wording.
+- Reprints also occur inside pp.3046–3060 with **no block structure at all** — *absent laryngeal
+  click* on 3048 and 3056, *Quinsy* on 3050 and 3056, *cacosmia* on 3052 and 3054, *pulsatile
+  tinnitus* on 3053 and 3055, *vocal nodule site* on 3047 and 3057.
+- **pp.3064–3070 are largely fresh** and carry the densest new material.
+
+**This is the same lesson as every other section: sampling the even pages described the odd ones
+wrongly.** But here the duplication is *useful* rather than waste — **a repeat count is the
+examiner's own weighting.** Every page a fact appears on is therefore recorded, not just one.
+Top of the table: **allergic rhinitis on 7 pages** (4 different stems), **"early supraglottic
+carcinoma → referred otalgia" five times as the identical line**, unsafe CSOM on 5.
+
+**32 of the 230 lines are negative stems** — *all true except*, *NOT*, *false statement*, *cannot be
+done*. **One line in seven asks for the wrong option**, which is the strongest single argument for
+the rule that the theory must teach why distractors are wrong.
+
+**Two defects and one corroboration:**
+
+- **p.3046 prints a prompt with no answer** — *"Initial presentation of glottic carcinoma"*, no
+  arrow. **Nothing is lost**: the next line and p.3056 both answer it. Recorded so a line count does
+  not read as a missing fact.
+- **p.3064's "preserved sulcus → acute mastoiditis" is right, and reads wrong.** The taught sign is
+  the *obliterated* sulcus. Both hold at different stages, and `L16) Chronic otitis media.txt` says
+  so itself — it separates *"the stage of acute mastoiditis"* (tenderness, redness) from *"when
+  post-auricular abscess develops"* (auricle pushed out and down). **Not a bank error.** The theory
+  must draw the line explicitly, because the slide's own named differential is furunculosis with
+  post-auricular lymphadenitis — the look-alike the sulcus decides.
+- **The adenoid-imaging line corroborates §11b's resolution.** pp.3048 and 3054 both key **plain
+  X-ray**, and 3054's stem says *"best **imaging** modality"* — exactly the distinction that made
+  `entep-enr-11` (nasopharyngoscopy) and `entep-nose-56` (X-ray) both correct rather than a
+  contradiction. The pyriform-fossa nerve is likewise confirmed twice, on 3050 and 3065.
+
+**Six named entities in the run have no transcribed question behind them** — T4a laryngeal staging,
+mutational falsetto, the thumbprint sign, *delayed language development except tongue-tie*, office
+stroboscopy, and *Streptococcus hemolyticus* in acute necrotising otitis media. **That is a targeted
+search of 32 distinctive terms, NOT an exhaustive audit**, and the file says so — re-run it fact by
+fact when ENT's theory is written.
+
+**Method note:** the pages are a short list on the top ~46% of an A4 sheet, so they were rendered
+cropped (`pdftoppm -r 150 -x 0 -y 0 -W 1240 -H 820`) and tiled **3 per sheet** — 9 reads instead of
+25. **⚠️ `Measure-Object` returns `Double`, and `New-Object System.Drawing.Bitmap` throws
+"Parameter is not valid" on one** — cast to `[int]`. Same family as the `Sort-Object` trap in §11a:
+PowerShell's own types, failing at the GDI+ boundary.
 
 ---
 

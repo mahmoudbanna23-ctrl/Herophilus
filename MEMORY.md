@@ -2,32 +2,34 @@
 
 Running record, organised around *resuming*. ISO dates; unverified marked as such. **Only what is needed to pick the work up cold; under 200 lines — `(Get-Content).Count`.** Method in `CLAUDE.md`, detail in `ledger.md` — **`CLAUDE.md` imports this, so repeating its rules costs budget.**
 
-## Resume here — **`ENT endpoint.pdf` IS FULLY READ, all 3,074 pp.**
+## Resume here — **✅ `ENT endpoint.pdf` IS CLOSED. All 3,074 pp. read, transcribed or harvested.**
 
-Exam Night Review is READ, STAGED, SWEPT and RESOLVED; staging at `content\ent\qb-pages\
-exam-night-review-mcqs.staged.js` + `…-sweep.json`, verdicts in `…-resolution.md`, comparisons in
-`…-sidebyside.txt`. **ZERO pages print a box, so all 37 new entries are authored+marked.**
-
-1. **✅ EXAM NIGHT REVIEW IS CLOSED (`ledger.md` §11c).** 104 printings = **37 written**
+1. **EXAM NIGHT REVIEW IS CLOSED (`ledger.md` §11c).** 104 printings = **37 written**
    (`entep-enr-1`…`37`, pp.2840–3044) + **3 self-dupes** + **64 folded into 63 held entries** —
    reconciles exactly. `QUESTIONS` 680 → **717**; **all 18 images attached and loading**. Real boot:
    0 bad refs, 0 dupes, **0 dead backticked ids**. **⚠️ `imgAlt` RENDERS AS THE VISIBLE CAPTION** —
    all 17 first gave away the answer, rewritten to name only modality and view (`CLAUDE.md` §4).
-2. **NEXT: read pp.3047–3069 ODD (unread) and harvest pp.3046–3070 into `examiner-patterns.md`** —
-   **fact lists, NOT questions**; forcing them into `QUESTIONS` would mean inventing distractors.
-   That closes `ENT endpoint.pdf` entirely. **Then the other two ENT banks:** `ENT QB.pdf` (Grade
-   Gain, `entqb-`) and `d house ENT mcq.pdf` (House, `enthd-`, resume at PDF p.15).
+   Staging kept at `content\ent\qb-pages\exam-night-review-*`.
+2. **THE FACT-LIST RUN IS HARVESTED (`ledger.md` §11d), 2026-08-07.** pp.3046–3070, **230 one-liners
+   → 166 distinct facts across all 30 ENT chapters**, now in **`content\ent\examiner-patterns.md`**
+   (new file). **Nothing entered `QUESTIONS`** — no options are printed, so inventing them is
+   authoring. **⚠️ The ledger's "every page unique" was WRONG, written from reading only the even
+   pages**: pp.3061–3063 re-run pp.3057–3060 and reprints scatter through 3046–3060. **The repeats
+   are the examiner's own weighting** — allergic rhinitis on 7 pages, *"early supraglottic ca →
+   referred otalgia"* the identical line 5×, unsafe CSOM 5. **32 of 230 lines are negative stems.**
+3. **NEXT: the other two ENT banks** — `ENT QB.pdf` (Grade Gain, `entqb-`, **nothing transcribed
+   anywhere yet**) and `d house ENT mcq.pdf` (House, `enthd-`, resume at PDF p.15). Then the
+   **end-of-ENT review** below, then Pediatrics.
 
-**18 question images are cut into `app\assets\q\q-<page>.jpg`** (312 KB) by `Design\scripts\
-q-images.ps1`; `image` holds the **basename**, `qImgSrc()` builds the path. **⚠️ `bundle.ps1` DOES NOT
-EXIST** (`CLAUDE.md` claimed it did); the single-file build is owed. **⚠️ Three bugs here were SILENT
-and all were caught by LOOKING, not counting** — traps in `CLAUDE.md` §4 and `ledger.md` §11a.
+**Question images** live at `app\assets\q\q-<page>.jpg`, cut by `Design\scripts\q-images.ps1`; `image`
+holds the **basename**, `qImgSrc()` builds the path. **⚠️ `bundle.ps1` DOES NOT EXIST** (`CLAUDE.md`
+claimed it did); the single-file build is owed. **⚠️ Three bugs here were SILENT, all caught by
+LOOKING, not counting** — traps in `CLAUDE.md` §4 and `ledger.md` §11a.
 
-**⚠️ EXAM NIGHT REVIEW BREAKS EVERY PATTERN: ZERO stage-A matches** (first time ever — the bank rewrote
-its stems); 31/104 clean but **37 new after resolution**; **18 carry photographs, 10 unanswerable
-without them** (3 *labelled* anatomy diagrams — "the structure labeled X"). **⚠️ NEVER CARRY STRUCTURE
-ACROSS A SECTION BOUNDARY:** sections and all 7 exams print each question **twice**, Recently Edited
-**once already answered**, the fact-list run once. Check the first ten pages before staging.
+**⚠️ NEVER CARRY STRUCTURE ACROSS A SECTION BOUNDARY:** sections and all 7 exams print each question
+**twice**, Recently Edited **once already answered**, the fact-list run **irregularly, with a 4-page
+block re-run inside it**. Exam Night Review also gave **ZERO stage-A matches**, a first. Check the
+first ten pages before staging — **and read EVERY page, never alternate ones** (`ledger.md` §11b–d).
 
 **⚠️ THE REPRINT RATE HAS NO TREND — DO NOT EXTRAPOLATE IT.** 7 exams + Recently Edited: **96 → 100 →
 99 → 58 → 42 → 99 → 99 → 100%**, then Exam Night Review at **~70%**. Near-100% runs predict nothing.
@@ -43,15 +45,18 @@ p.2436, which looks normal). **When parity shifts with no visible cause, render 
 
 **Method: THREE passes.** (1) Read at `-CropTop 0.32` (18/sheet, `Cols 3 -Dpi 110`) + **five-stage**
 sweep. (2) Resolve survivors — "shortlist, not a verdict", below. (3) Re-render survivors at `-CropTop
-0.40 -Cols 2` for boxes. **Order:** ENT → Pediatrics → Ophthalmology → Neuropsychiatry, all questions
-first, then theory. **The ENT review below is owed before Pediatrics.**
+0.40 -Cols 2` for boxes. **Order:** ENT → Pediatrics → Ophthalmology → Neuropsychiatry, questions
+first, then theory; **the ENT review below is owed before Pediatrics.**
 
 **⚠️ THE THEORY BRIEF CHANGED, 2026-08-04 — it is a NEW STUDY SOURCE, sufficient to sit the exam from
 alone, NOT a summary.** Every source in the folder, images/diagrams wanted, "important" decided by the
 questions first; **length is never the goal, dropping something important is the one unacceptable
 failure.** Four tests + drop-list in `CLAUDE.md` §4. User will add anatomy/physiology textbooks and
 offered a source interview — **take it first**; **ask for a diagram rather than inventing one**, but
-a *fact* gap is filled and tagged, per the answer-the-gap rule below.
+a *fact* gap is filled and tagged, per the answer-the-gap rule below. **⚠️ START FROM
+`content\ent\examiner-patterns.md`** — it sets every ENT chapter's `w` and `intro` from the bank's own
+repeat counts, and lists **6 named facts no transcribed question teaches** (T4a staging, mutational
+falsetto, thumbprint sign, tongue-tie, office stroboscopy, *Strep. hemolyticus*).
 
 ## What exists — **104 chapters**: ENT 30, Ophthalmology 26, Neuropsychiatry 27, Pediatrics 21
 
@@ -59,15 +64,15 @@ a *fact* gap is filled and tagged, per the answer-the-gap rule below.
 `QUESTIONS.length` is **717** — 635 MCQs + 82 cases, **all 30 ENT chapters holding ≥1**. By bank:
 **697 Endpoint, 21 House, 0 Grade Gain** — 718, because one question is in two banks.
 
-**Fully validated in a real `file://` boot, 2026-08-04** — 0 bad module/chapter refs, 0 mismatches,
-0 duplicate ids, every `answer` in range, nothing missing a `source`/`explanation`/`objective`, every
-`THEORY` `qs` id resolving, **0 dead backticked ids, 17 of 17 question images loading**. **⚠️ THE CHAPTER
-AUDITOR IS THE THING THAT BREAKS FIRST: `MODULES` is `m.groups[].chapters[]` and each chapter is an
-ARRAY (`c[0]` id), not an object** — walking `m.chapters` reports ~500 false failures. **⚠️ ANY
-SYNTAX SLIP IN A DATA FILE FAILS SILENTLY AND LOOKS LIKE A CONTENT BUG** — the app boots, throws
-nothing, and reports **82** questions (cases only), because `Q_ENT` never parsed; on 2026-08-04 from
-**one missing comma**. **`file://` gives only "Script error." at line 0** — inline the data file into
-a scratchpad `<script>` for a real line number.
+**Fully validated in a real `file://` boot, 2026-08-04** — 0 bad module/chapter refs, 0 mismatches, 0
+duplicate ids, every `answer` in range, nothing missing a `source`/`explanation`/`objective`, every
+`THEORY` `qs` id resolving, **0 dead backticked ids, 18 of 18 question images loading**. **⚠️ THE
+CHAPTER AUDITOR BREAKS FIRST: `MODULES` is `m.groups[].chapters[]` and each chapter is an ARRAY
+(`c[0]` id), not an object** — walking `m.chapters` reports ~500 false failures. **⚠️ ANY SYNTAX SLIP
+IN A DATA FILE FAILS SILENTLY AND LOOKS LIKE A CONTENT BUG** — the app boots, throws nothing, and
+reports **82** questions (cases only) because `Q_ENT` never parsed; on 2026-08-04 from **one missing
+comma**. **`file://` gives only "Script error." at line 0** — inline the file into a scratchpad
+`<script>` for a real line number.
 
 **Lecture text cache — complete 2026-07-26**, 146 files in `content\<subject>\lectures\*.txt`; **check
 it before rendering** (10 failures: `ledger.md` §1). `SCHEDULE` — 38 days to 2026-08-31.
@@ -90,19 +95,19 @@ module colours** (knowingly accepted), and **no single-file bundler exists.**
 poses at `app\assets\clep\*.png`, source at `Clypsedra\`. **Do not redraw her, do not draw anything
 onto her.** Three rounds of wasted work in a day; the answer was always *ask for artwork*.
 
-## Where transcription stands — everything in `ENT endpoint.pdf` is WRITTEN except Exam Night Review
+## Where transcription stands — **`ENT endpoint.pdf` is DONE, end to end**
 
-Boundaries all verified by render — Ear pp.143–760 (243 entries), Nose pp.891–1185 (136), Throat
+Boundaries verified by render — Ear pp.143–760 (243 entries), Nose pp.891–1185 (136), Throat
 pp.1350–1720 (160); detail in `ledger.md` §"Transcribed ranges". **All three SECTIONS share one shape:**
-MCQs printed **twice**, a title page, then cases printed **once**, two per page; **no case carries a
-printed explanation. ⚠️ No exam has a case section.**
+MCQs printed **twice**, a title page, then cases **once**, two per page; **no case carries a printed
+explanation. ⚠️ No exam has a case section.**
 
-**Box presence is a property of the page, not the section.** Throat ran **103 consecutive answered pages
-with none** (pp.1537–1720), so every entry from `entep-throat-70` on is authored; **Exams 4–7 box 74/77,
-78/79, 76/77, 70/78, Recently Edited 4/18, Exam Night Review ZERO of 104, and 4 of 4 mis-keys sat on a
-bare page — check every tile for box as for highlight.** ⚠️ The box often falls BELOW the `-CropTop 0.32`
-cut, so a bare-looking tile may not be (p.2722): re-render first. **⚠️ For CASES the ANSWER decides
-fold-vs-variant, not the stem** (`ledger.md`).
+**Box presence is a property of the PAGE, not the section.** Throat ran **103 consecutive answered
+pages with none** (pp.1537–1720), so every entry from `entep-throat-70` on is authored; **Exams 4–7
+box 74/77, 78/79, 76/77, 70/78, Recently Edited 4/18, Exam Night Review ZERO of 104, and 4 of 4
+mis-keys sat on a bare page — check every tile for box as for highlight.** ⚠️ The box often falls
+BELOW the `-CropTop 0.32` cut (p.2722): re-render before believing a bare tile. **⚠️ For CASES the
+ANSWER decides fold-vs-variant, not the stem** (`ledger.md`).
 
 ## Four rules that change what you do first — **`ledger.md` §7 holds the rest (corrupt boxes, recycling, numbering, linked sets, layout and key defects). Read it before opening `ENT endpoint.pdf`.**
 
@@ -126,22 +131,21 @@ fold-vs-variant, not the stem** (`ledger.md`).
   keyword-search every survivor **twice, differently worded**. Failures: `ledger.md` §7, §11b.
 
 **Where the source prints no explanation box, the explanation is written here** — rule and marker in
-`CLAUDE.md` §4. **513 of the 717 entries carry the marker — 72%**, measured 2026-08-04 in a real boot:
+`CLAUDE.md` §4. **513 of 717 entries carry the marker — 72%**, measured 2026-08-04 in a real boot:
 **seven tenths of ENT's explanations are written, not transcribed — the real scope of the end-of-ENT
-review** (recurring gaps: review item 4). **⚠️ READ EVERY OPTION AS A SENTENCE BEFORE WRITING** — p.2856
-printed one truncated mid-word and it survived staging and both sweep passes (`ledger.md` §11c).
+review** (item 4). **⚠️ READ EVERY OPTION AS A SENTENCE** — p.2856 printed one truncated mid-word and
+it survived staging and both sweep passes (`ledger.md` §11c).
 
 **⚠️ A GAP IN THE MATERIAL IS NOW ANSWERED, NOT DECLARED — user's instruction, 2026-08-04, REVERSING
 the workspace rule for this project only.** Where slides and book do not cover a point, **fill it from
 general medical knowledge** and give the whole answer; keep `not taken from the course material` only
 as a short tag on the claim, never as a sentence that stops. Shape to copy: `entep-throat-103`.
-**⚠️ Before leaving anything unanswered, INTERVIEW THE USER** — batched as one list per batch, never
-per sentence (211 tagged passages already exist across 177 entries). Contract: `CLAUDE.md` §4.
+**⚠️ Before leaving anything unanswered, INTERVIEW THE USER** — one batched list, never per sentence
+(211 tagged passages across 177 entries). Contract: `CLAUDE.md` §4.
 
-**Three banks per module** (`endpoint`/`house`/`gradegain`); map, cover-identification and the
-`alsoIn` contract in `CLAUDE.md` §4. **Still missing: House for Neuropsychiatry, Grade Gain for
-Pediatrics.** **⚠️ THE BANKS OVERLAP — when the sweep finds a cross-bank match, ADD THE BANK, never
-an entry.** One so far.
+**Three banks per module** (`endpoint`/`house`/`gradegain`); map, covers and the `alsoIn` contract in
+`CLAUDE.md` §4. **Missing: House for Neuropsychiatry, Grade Gain for Pediatrics.** **⚠️ THE BANKS
+OVERLAP — on a cross-bank match ADD THE BANK, never an entry.** One so far.
 
 ## Owed in the end-of-ENT review — detail in `ledger.md` §11; work it before Pediatrics begins
 
@@ -156,18 +160,12 @@ an entry.** One so far.
    angina**, **leucoplakia**, the **thyroglossal cyst's tongue-protrusion sign** — absent from **all
    32** ENT files), **three Nose gaps** (dangerous area of the face, CSF-leak management, ammonia as a
    trigeminal stimulus), and **the eponymous signs**. **These are the interview shortlist.**
-5. **⚠️ Eleven disputed printed keys, each transcribed as keyed with both readings in its own entry**
-   — reasoning in `ledger.md` §11 and the Exam 4–7 entries. **⚠️ A DISPUTED KEY IS PROVISIONAL UNTIL
-   THE BANK REPRINTS IT** — five are **settled as the bank's deliberate position**, every one
-   reclassified by a *later* printing, never by re-reading the original: `entep-throat-77`, Exam 1's
-   **Q16**, `entep-throat-28`, `entep-throat-2`/`entep-mfe5-20` (**pp.2820/2823/2828, Recently Edited
-   — the compiler's own ERRATA LIST — re-affirm all three with newly written boxes**). Still open:
-   `entep-throat-83`, Q136/Q153 of pp.1617–1706, Exam 1's **Q13**, `entep-mfe4-16`, `entep-mfe6-1`,
-   **`entep-mfe7-1`**, **`entep-nose-2`**. **FIVE are self-contradictions** (keyed right, reprinted,
-   re-keyed wrong): `entep-mfe4-8`↔`-mfe4-32`, `entep-mfe5-20`↔its p.2438 table,
-   `entep-mfe6-1`↔`entep-ear-59` (contradicted by **four** sources), and **Exam 7's two on
-   consecutive questions** — `entep-mfe7-1`↔`entep-nose-19` (**the bank deleted the correct answer
-   from its own option list**) and `entep-nose-2`↔its p.2786 reprint.
+5. **⚠️ Eleven disputed printed keys**, each transcribed as keyed with both readings in its entry;
+   roster, reasoning and the five self-contradictions in **`ledger.md` §11**. **⚠️ A DISPUTED KEY IS
+   PROVISIONAL UNTIL THE BANK REPRINTS IT** — five are now **settled as the bank's deliberate
+   position**, every one reclassified by a *later* printing, never by re-reading the original.
+   **Still open: `entep-throat-83`, Q136/Q153 of pp.1617–1706, Exam 1's Q13, `entep-mfe4-16`,
+   `entep-mfe6-1`, `entep-mfe7-1`, `entep-nose-2`.**
 6. **A full content and design review**, at the user's request, before the other three modules.
 
 ## Environment — **full details in `ledger.md` §13** (Poppler's PATH trap, the browsers, the PowerShell image pipeline, what is absent, two native-exe gotchas). What changes what you do first:
@@ -189,10 +187,10 @@ an entry.** One so far.
   value: **the book is the first place to look before filling a gap from general knowledge.** Driven
   by the questions and by slide gaps, located via each book's contents page.
 - **Measure, then believe.** *Check the sum* — a count that did not reconcile has been written down
-  **five times** (e.g. "156 authored passages" against a measured 473; a MEMORY line count via
-  `Measure-Object -Line`, **which skips blank lines** — use `(Get-Content).Count`). *Check the
-  auditor* — **three** contrast auditors gave false failures (`CLAUDE.md` §7). *Reconcile the batch*
-  — written + dropped must equal staged. **And where no error is possible, LOOK.**
+  **six times** ("156 authored passages" vs a measured 473; a MEMORY line count via `Measure-Object
+  -Line`, **which skips blank lines** — use `(Get-Content).Count`; "35 EXCEPT stems" vs a counted 32).
+  *Check the auditor* — **three** contrast auditors gave false failures (`CLAUDE.md` §7). *Reconcile
+  the batch* — written + dropped must equal staged. **And where no error is possible, LOOK.**
 - **Cleanup awaiting approval** — `Opthalmo\…\drive-download-…-001.zip` (173 MB) duplicates all 29
   loose Ophthalmology lectures; two Pediatrics PPT stubs; both inside protected `Semester 8\`; also
   `files.zip`. **Nothing deleted without a yes.**
