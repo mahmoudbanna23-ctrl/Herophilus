@@ -2483,6 +2483,57 @@ module/chapter mismatches, 0 duplicate ids, every `answer` in range and matching
 11 carrying the authored marker, every ENT chapter still ≥1, `THEORY` `qs` all resolving, 0 dead
 backticked ids, 17 of 17 images loading.** By bank 697 Endpoint / 21 House / 0 Grade Gain.
 
+### The fold pass — 2026-08-04. **EXAM NIGHT REVIEW IS CLOSED.**
+
+**64 reprint pages folded into 63 held entries**, each one gaining a sentence in its `source` naming
+the Exam Night Review page that reprints it. **No new entries, no duplicates, no questions lost.**
+
+```
+staged printings                                  104
+  written as new entries                           37
+  folded into another staged question               3   (Q24→enr-12, Q79→enr-21, Q52→enr-24)
+  folded into an entry already held                64   ← this pass
+                                                  ---
+                                                  104   reconciles exactly
+```
+
+**`entep-throat-103` takes two pages** — pp.2878 (Q21) and 2930 (Q47) — because Exam Night Review
+reprints the same held question **twice within its own run**. It is the only such target, and its
+note says so; the other 62 take one page each. **64 pages, 63 notes, and the two numbers must not be
+assumed equal.**
+
+**One ambiguous target had to be resolved by reading, not by the sweep.** Q90 (p.3016) matched
+**two** held entries on option set and key — `entep-throat-39` and `entep-ear-52`, themselves near
+twins. It is verbatim `entep-throat-39`; `entep-ear-52` adds *"acute dyspnea and diminished air entry
+**on the left side**. The tube was noticed to be **clear and well-positioned**."* **A stage-B hit
+with more than one target is still a shortlist.**
+
+**`q-3024` is attached to `entep-ear-26`, and it is the 18th image — all 18 now load.** It is the
+only otomycosis photograph in the entire 3,074-page file, and the entry it now illustrates had never
+had one. **It is deliberately NOT marked `imgEssential`, although the staging flagged it so:** the
+held entry's stem already gives *itchy, painless, discharging*, which is answerable without a
+picture, and a false "cannot be answered without it" caption would be a lie to the learner. **An
+`imgEssential` flag belongs to a stem, not to a photograph** — re-judge it when a picture moves.
+
+**⚠️ THE SAME ENCODING TRAP BIT AGAIN, ONE LEVEL DEEPER: THE SCRIPT FILE ITSELF.** `fold.ps1` was
+written as UTF-8, and **PowerShell 5.1 reads a BOM-less UTF-8 `.ps1` as ANSI**, so the single em dash
+in one of its string literals was mangled *before* it was ever written out — putting mojibake into 1
+of the 63 notes. Avoiding `Get-Content` was not enough. **Keep helper scripts ASCII-ONLY and build
+any non-ASCII character from its code point** (`[char]0x2014`), which is what `fixdash.ps1` and
+`fixstop.ps1` do. Caught by grepping the data file for `â€` immediately after the run — **run that
+grep after every scripted edit.**
+
+**Eight of the 63 source fields did not end in sentence punctuation**, so the appended note ran on
+from the previous clause. Fixed with a negative-character-class regex that touched only those eight
+(`fixstop.ps1`), not all 63. **A generated sentence has to be read where it lands, not only where it
+was written.**
+
+**Validated in a real `file://` boot: 104 chapters, 717 questions, 0 bad chapter refs, 0
+module/chapter mismatches, 0 duplicate ids, 0 dead backticked ids, `THEORY` `qs` all resolving, every
+ENT chapter ≥1, and 18 of 18 images loading.** `git diff` showed **63 insertions / 63 deletions** —
+one touched line per folded entry and nothing else, which is the check that the script did not
+rewrite the file wholesale.
+
 ---
 
 ## §11a Question images — built 2026-08-04

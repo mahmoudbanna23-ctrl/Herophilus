@@ -8,16 +8,15 @@ Exam Night Review is READ, STAGED, SWEPT and RESOLVED; staging at `content\ent\q
 exam-night-review-mcqs.staged.js` + `…-sweep.json`, verdicts in `…-resolution.md`, comparisons in
 `…-sidebyside.txt`. **ZERO pages print a box, so all 37 new entries are authored+marked.**
 
-1. **✅ ALL 37 ARE WRITTEN (`ledger.md` §11c).** `entep-enr-1`…`37` contiguous, pp.2840–3044;
-   `QUESTIONS` 680 → **717**; 17 of the 18 images attached and **all 17 load**. Validated in a real
-   boot with **0 dead backticked ids**. **⚠️ `imgAlt` RENDERS AS THE VISIBLE CAPTION** — all 17 first
-   gave away the answer and were rewritten to name only the modality and view (`CLAUDE.md` §4).
-2. **NEXT: fold the 64 cross-section reprints** (32 stage-B + 32 resolved) — verdicts in
-   `…-resolution.md`; add each page to the `source` of the entry it duplicates. **Attach `q-3024` to
-   `entep-ear-26`** (p.3024 folds but brings an **essential** picture; it is the 18th image). **The 3
-   within-batch dupes are already folded in place** (Q24→`enr-12`, Q79→`enr-21`, Q52→`enr-24`).
-3. **Read pp.3047–3069 ODD (unread), harvest pp.3046–3070 into `examiner-patterns.md`** — **fact
-   lists, NOT questions**; forcing them into `QUESTIONS` would mean inventing distractors.
+1. **✅ EXAM NIGHT REVIEW IS CLOSED (`ledger.md` §11c).** 104 printings = **37 written**
+   (`entep-enr-1`…`37`, pp.2840–3044) + **3 self-dupes** + **64 folded into 63 held entries** —
+   reconciles exactly. `QUESTIONS` 680 → **717**; **all 18 images attached and loading**. Real boot:
+   0 bad refs, 0 dupes, **0 dead backticked ids**. **⚠️ `imgAlt` RENDERS AS THE VISIBLE CAPTION** —
+   all 17 first gave away the answer, rewritten to name only modality and view (`CLAUDE.md` §4).
+2. **NEXT: read pp.3047–3069 ODD (unread) and harvest pp.3046–3070 into `examiner-patterns.md`** —
+   **fact lists, NOT questions**; forcing them into `QUESTIONS` would mean inventing distractors.
+   That closes `ENT endpoint.pdf` entirely. **Then the other two ENT banks:** `ENT QB.pdf` (Grade
+   Gain, `entqb-`) and `d house ENT mcq.pdf` (House, `enthd-`, resume at PDF p.15).
 
 **18 question images are cut into `app\assets\q\q-<page>.jpg`** (312 KB) by `Design\scripts\
 q-images.ps1`; `image` holds the **basename**, `qImgSrc()` builds the path. **⚠️ `bundle.ps1` DOES NOT
