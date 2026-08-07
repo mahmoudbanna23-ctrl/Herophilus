@@ -106,9 +106,14 @@ and drop the rest. Near-matches (same question, reworded) get checked by eye bef
   **`Answer: X` printed inline** after each. Grouped by section, e.g. "Ear MCQs → 1. Surgical
   anatomy of the ear". Some questions carry clinical images. Faint bleed-through from the reverse
   of each sheet, but the primary text is crisp. **Best starting point.**
-- **`ENT QB.pdf`** — "ASM MiNDS". Has a **table of contents giving, per topic, the question start
-  page, the answer start page, and the question count** — so transcription can run topic by topic in
-  chapter order instead of sweeping pages. Answers live on separate pages from the questions.
+- **`ENT QB.pdf`** — "ASM MiNDS' ENT **GRADE GAIN** edition, GG", 1st edition, 185 PDF pages.
+  **Reconnaissance done 2026-08-07 — full map in §14.** Contents pages (PDF 5–9) give, per topic,
+  the question start page, the answer start page and the question count. **⚠️ PDF page = book page +
+  9.** **1,080 questions over 29 topics** — Ear 244, Nose 258, Throat 578. **~45 % carry a printed
+  explanation** (13 of 29 in the sampled section); the rest print only *"Correct answer: X"*.
+  Questions carry photographs. Options run **a–d or a–e**. Answers are lettered, on separate pages,
+  **but a question tail and the answer block can share one page** — the TOC's "Page As" is where the
+  answers *start*, not where the questions stop.
 
 ### `ENT endpoint.pdf` — "ENT AlexMed Endpoints", the largest question source
 
@@ -2896,3 +2901,89 @@ prompt at all. Only a revoked or expired token brings the dance back.
 
 `gh` (GitHub CLI) is **not** installed. GCM is at
 `C:\Program Files\Git\mingw64\bin\git-credential-manager.exe`, v2.9.0, .NET Framework 4.8.
+
+---
+
+## §14 `ENT QB.pdf` — Grade Gain. Reconnaissance, 2026-08-07
+
+**The cover settles the bank**: *"ASM MINDS' ENT — GRADE GAIN EDITION"*, "GG EDITION", PREMIUM,
+1st edition. Identified by the cover, per the rule — the filename says nothing.
+
+**⚠️ PDF page = book page + 9.** PDF 10 is book p.1. Verified against the printed footer
+(`| P a g e 1`), not assumed. 185 PDF pages = book pp.1–176. PDF 2 is blank, PDF 3–4 are Arabic
+adverts, PDF 5–9 are the contents.
+
+### What the contents pages promise — **1,080 questions over 29 topics**
+
+Page numbers are **book** pages; add 9 for the PDF.
+
+| Ch | Topic | Qs | As | N |
+|---|---|---|---|---|
+| **EAR — 244** | | | | |
+| 1 | Surgical anatomy of ear | 1 | 4 | 29 |
+| 2 | Diseases of External Ear | 6 | 8 | 20 |
+| 3 | Acute Otitis Media | 9 | 13 | 40 |
+| 4 | Chronic Otitis Media | 15 | 18 | 30 |
+| 5 | Facial nerve | 20 | 24 | 24 |
+| 6 | Otalgia and otorrhea | 26 | 28 | 21 |
+| 7 | Tinnitus & Hearing loss | 30 | 32 | 17 |
+| 8 | Audiological investigations | 33 | 38 | 38 |
+| 9 | Vertigo and vestibular diagnosis | 40 | 43 | 25 |
+| **NOSE — 258** | | | | |
+| 1 | Anatomy of the nose | 44 | 48 | 46 |
+| 2 | Epistaxis and smell Disorders | 50 | 53 | 37 |
+| 3 | Rhinitis | 55 | 61 | 60 |
+| 4 | Rhinosinusitis | 64 | 67 | 22 |
+| 5 | Nasal symptoms | 69 | 71 | 21 |
+| 6 | Nasal fractures | 73 | 75 | 12 |
+| 7 | Sino-nasal masses | 76 | 80 | 31 |
+| 8 | Nasal septal diseases | 81 | 84 | 22 |
+| 9 | Minor Nasal Procedures | 85 | 86 | 7 |
+| **THROAT — 578** | | | | |
+| 1 | Anatomy & physiology of throat | 87 | 91 | 40 |
+| 2 | Pharyngeal and neck suppurations | 92 | 98 | 46 |
+| 3 | Dysphagia | 99 | 107 | 60 |
+| 4 | Tonsils and Adenoids | 110 | 121 | **98** |
+| 5 | Pediatric Laryngeal Lesions | 124 | 130 | 52 |
+| 6 | Neck Masses | 132 | 136 | 31 |
+| 7 | Trauma of the neck | 137 | 143 | 44 |
+| 8 | Stridor & Tracheotomy | 144 | 151 | 65 |
+| 9 | Simplified Phoniatrics Principles | 153 | 159 | 56 |
+| 10 | Hoarseness Of Voice | 161 | 170 | 66 |
+| 11 | Clinical Assessment of Voice | 172 | 174 | 20 |
+
+**The TOC is internally consistent** — every topic's question pages hold ~10 questions at 2 columns
+x 5, and every span checks out against its count. That is a real cross-check, not a reading of the
+numbers back to themselves.
+
+**1,080 is larger than everything transcribed so far** (717 entries from the whole of
+`ENT endpoint.pdf`, 3,074 pages). **Do not start this bank without deciding what it is for.**
+
+### What the pages actually look like
+
+- **Questions:** two columns, ~10 per page, numbered continuously **within a topic** (restarting at
+  1 each topic). Options **a-d or a-e** — the 5-option case is real, so no schema assumption holds.
+- **Some questions carry photographs**, e.g. Ear ch.1 Q28 prints an otoscopy image. Count unknown;
+  the `image` pipeline from §11a already exists to take them.
+- **Answers:** a separate block headed *"<Topic> / Answers"*, numbered to match, each line
+  *"Correct answer: D."* and **sometimes** an *"Explanation:"* paragraph. Explanations include
+  **tables** (ch.1 Q20 prints a cochlea / vestibule / SCC table), which the app renders natively.
+- **⚠️ A QUESTION TAIL AND THE ANSWER BLOCK SHARE A PAGE.** Book p.4 carries Q28-Q29 in the left
+  column and *"Answers"* starting in the right. The TOC's "Page As" is where answers **begin**, not
+  where questions end — reading only up to it drops the last two questions of every topic.
+- **~45 % carry a printed explanation** — 13 of 29 in Ear ch.1 (Q1, 2, 4, 6, 9, 10, 12, 13, 15, 17,
+  20, 24, 26). **The other 55 % need an authored, marked explanation**, so on the TOC's numbers this
+  bank alone implies **~600 written explanations**. That is the real cost, and it is the same shape
+  as `ENT endpoint.pdf` (72 % authored) only larger.
+
+### What must be true before any of it is written
+
+- **⚠️ THE FIVE-STAGE SWEEP RUNS AGAINST ALL 717 EXISTING ENTRIES, NOT WITHIN THIS BANK.** A match
+  is a **cross-bank** match, and the rule is **ADD THE BANK (`alsoIn`), NEVER ADD AN ENTRY**
+  (`CLAUDE.md` §4). Only one such fold exists in the project so far, so the overlap rate here is
+  **unknown and must not be guessed** - the House bank's 21 questions produced exactly 1.
+- Chapter mapping is close but **not** 1:1 with the app's 30 ENT chapters: this bank has no separate
+  "Complications of sinusitis" or "Facial pain" topic, splits voice across three (Phoniatrics,
+  Hoarseness, Clinical Assessment of Voice), and its "Pediatric Laryngeal Lesions" and "Trauma of
+  the neck" cut across `ent-paedlar`/`ent-stridor` and `ent-neck`/`ent-stridor`. **Map topic to
+  chapter per question, not per topic.**
