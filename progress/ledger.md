@@ -2987,3 +2987,72 @@ numbers back to themselves.
   Hoarseness, Clinical Assessment of Voice), and its "Pediatric Laryngeal Lesions" and "Trauma of
   the neck" cut across `ent-paedlar`/`ent-stridor` and `ent-neck`/`ent-stridor`. **Map topic to
   chapter per question, not per topic.**
+
+### §14a Grade Gain Ear ch.1 — written 2026-08-08. **29 printed = 25 written + 4 folded.**
+
+Book pp.1–5 (PDF 10–14). `entqb-ear1-1`…`28`, with **gaps at 7, 11, 24 and 29** — those four numbers
+are the folds, and the gap is deliberate so the id still names the printed question number.
+
+| Fold | Into | Why |
+|---|---|---|
+| Q7 ossicle order | `entep-ear-180` | identical option set, identical key; stems differ only in asking "lateral to medial" vs "order of sound transmission" |
+| Q11 cone of light | `entep-ear-211` | same four quadrants, same key — the option sets differ **only by the literal word "quadrant"**, which is why stage B did not fire |
+| Q24 pyriform fossa | `entep-throat-103` | **the project's first THREE-bank question** (endpoint + house + gradegain) |
+| Q29 FB impaction | `entep-mfe5-35` | 1.00 stem match reaching neither A nor B = re-optioned reprint by definition |
+
+**Q24 was folded into `entep-throat-103` rather than `entep-throat-24`**, though it sits one distractor
+from each (it offers "Facial" where 103 offers "Hypoglossal"; "Trigeminal" where 24 offers "Facial").
+Both are wrong distractors, so the question is the same question, and 103 is already the designated
+cross-bank home — keeping every bank membership of one item in one place.
+
+#### ⚠️ Stage F — the option-token pass — was added here and is now permanent
+
+**Stage E ranks STEMS ONLY.** Two folds above scored **1.00 on options and 0.21 / 0.24 on stems**,
+because their content lives in the option list, not the wording of the question. Without F they would
+have been written as new entries and the learner would have met each twice.
+
+**F has its own blind spot, found the same day:** the token filter drops words of ≤3 characters, so an
+option set like `C1, C2 / C2, C3 / C3, C4` normalises to **nothing** and scores 0 against everything.
+Q22 had to be checked by hand against `entep-ear-31`. **Short-code options defeat F — check by eye.**
+
+#### ⚠️ The bank mis-keys Q26 against its own printed evidence
+
+`entqb-ear1-26` asks which statement about the **pars flaccida** is true and prints **"Correct answer:
+A" — "It has a fibrous layer."** Two things in the same bank contradict that:
+
+1. Its **own explanation on that line**: *"1st part to be perforated is pars tensa, 1st part to be
+   retracted is pars flaccida"* — which states option **D**.
+2. Its **own Q12 explanation** two pages earlier: the fibrous layer is *"lacking in pars flaccida"*.
+
+**Keyed to D here, with what the bank printed recorded in the entry**, per `CLAUDE.md` §4 — a source
+error is repaired but never silently overwritten. This is a different class from the eleven *disputed*
+keys: those are arguable readings, this is the bank disagreeing with itself on the same page.
+
+A second, milder instance: **Q17's explanation says the "bony end" is opened by the palatal muscles**,
+while its own Q13 keys the bony end as always patent. The mechanism tested is right; the wording is
+not. Recorded in the entry, key unchanged.
+
+#### Images
+
+`q-gg-3.jpg` (Q26, labelled drum) and `q-gg-4.jpg` (Q28, otoscopy). **Named `q-gg-<book page>`** —
+`q-<page>` alone would collide with the endpoint file's numbering. **`Design\scripts\q-images.ps1`
+cannot cut these** — it hunts the endpoint file's cream card on a teal surround, and Grade Gain is
+black text on white in two columns. Cropped by hand with `pdftoppm -x -y -W -H` at 200 dpi, then
+encoded to JPEG q80 at longest edge 560, matching the existing 18. **Both first attempts were wrong
+and only looking caught it**: one clipped the "Pars flaccida" and "Pars tensa" labels off the left and
+swallowed a line of the question, the other caught the first option's text under the photograph.
+
+#### Verified in a real `file://` boot
+
+`Q_ENT` 635 → **660**, total 717 → **742**; 0 bad chapter refs, 0 duplicate ids, every answer in
+range, nothing missing a source or explanation, 0 dead backticked ids, **20 of 20 images loading**.
+By bank **697 endpoint / 21 house / 29 gradegain** = 747 over 742 questions, the excess being the
+**five** shared memberships across **four** questions. Grade Gain's 29 = 25 origin + 4 `alsoIn`.
+
+**⚠️ THE AUDITOR FAILED TWICE BEFORE THE APP DID, AND BOTH LOOKED CATASTROPHIC.** First run reported
+**742 bad chapter refs — every question in the file** — because `MODULES` is declared `const` and
+**`window.MODULES` is therefore undefined**; the tell was `MODULES chapters: 0` in the same output.
+Second run reported **19 dead backticked ids**, all of them **chapter** ids (`ent-phon`,
+`ent-paedlar`) matched by a regex that only knew ids start with `ent`. Both fixed in the harness, not
+the data. **A run where everything fails is a broken auditor** — the same lesson the three contrast
+auditors taught, now proven on content.
