@@ -3492,3 +3492,121 @@ By bank **697 endpoint / 21 house / 119 gradegain** = 837 over 827 — **ten** s
 **Reconciles:** ch.1 29 (25 + 4) + ch.2 20 (20 + 0) + ch.3 41 (38 + 3) + ch.4 31 (27 + 4) =
 **121 printed, 110 written, 11 folded** — of which **9 are cross-bank `alsoIn`** and **2 are
 within-bank reprints held once**.
+
+---
+
+### §14e — Grade Gain, Ear chapter 5: "Facial Nerve" (book pp.20–25, PDF 29–34)
+
+**35 printed = 34 written + 1 folded.** Ids `entqb-ear5-122` … `entqb-ear5-156`, gap at **155**.
+`Q_ENT` 745 → **779**, total 827 → **861**.
+
+#### ⚠️ 35 WHERE THE MAP SAID 24 — AND THE PATTERN IS NOW CLEAR
+
+Chapter 6 opens at **Q157** on book p.26, verified by rendering it. Three chapters running short of
+the contents page: **41 for 40, 31 for 30, and now 35 for 24.**
+
+**⚠️ THE USEFUL DISTINCTION: §14's PAGE RANGES HAVE BEEN RIGHT EVERY SINGLE TIME; ONLY ITS COUNTS
+DRIFT.** Render the range the table gives, then count what is actually printed and ignore the number
+in the last column. On the TOC's own arithmetic the remaining 24 topics promise 959 questions; on this
+chapter's ratio the real figure could be half as large again. **Do not plan the rest of the bank on the
+contents page.**
+
+#### The one fold
+
+**Q155 → `entep-ear-55`** — *"Ramsay Hunt syndrome includes all of the followings EXCEPT"* with **the
+same four options in the same order and the same key**. Stage B, stage C and a stage-F score of
+**1.00** all fired at once. **The second word-for-word cross-bank match in the project**, after ch.3's
+Q87. Its explanation was rewritten on folding, using the triad Grade Gain prints at its own Q135.
+
+**Six near misses were read side by side and held**, all on the replaced-distractor test:
+
+| staged | nearest held | difference |
+|---|---|---|
+| Q122 branches | `entep-ear-174` | different question (*gives off* vs *intra-temporal*), different key |
+| Q132 stylomastoid | `entep-ear-188` | that one localises from **taste** after ear surgery, three options differ |
+| Q133/Q134 eye-and-mouth | `entep-ear-216`, `entep-ear-68`, `entep-enr-21` | those offer four left/right permutations; Grade Gain **replaces two with "intact eye closure"** so the pair also tests UMNL vs LMNL |
+| Q136 commonest cause | `entep-ear-229` | drops Ramsay Hunt, adds mastoid surgery and Guillain-Barré — neither set contains the other |
+| Q144 most important step | `entep-ear-75`, `entep-ear-150`, `entep-ear-162` | those ask what the treatment *is*; this asks which step is **most important** |
+| Q150 facial palsy in AOM | `entep-ear-191` | vignette vs bare question, three of four options differ |
+| Q154 does not cause palsy | `entep-ear-78` | **replaces** *car accidents* with *cholesteatoma* — a replaced distractor, so a new question |
+
+#### ⚠️ Q141 — the third Grade Gain self-contradiction, and the most clear-cut
+
+*"How do you test greater superficial petrosal nerve?"* **Key C, the lemon test**, with the printed
+explanation *"We should test submandibular flow by lemon test"* — which describes the **chorda
+tympani**. Three things in the same file convict it:
+
+1. **Its own Q122 explanation**: the greater superficial petrosal is *"secretomotor to lacrimal gland
+   and nasal mucosal glands"*, while the chorda tympani serves *"submandibular and submental salivary
+   glands"*.
+2. **Its own Q140**, which keys **Schirmer's test** as the test of lacrimation.
+3. **`L15) Facial nerve disorders.pdf`**, whose topognostic list separates *"Schirmer's tear test"*
+   from *"submandibular salivary flow"*.
+
+**Corrected to B, printed key recorded.** Same class as `entqb-ear1-26` and `entqb-ear3-79` — the bank
+contradicting its own evidence, not an arguable reading. **Three self-contradictions in five chapters;
+the rate is not falling, so keep looking.**
+
+#### The best-grounded chapter in the bank
+
+`L15) Facial nerve disorders.pdf` supports **essentially every key**, and several verbatim:
+
+- **Hilger's test on the third day**, because a cut nerve conducts distally for *"24–72 hours"* before
+  Wallerian degeneration (Q137).
+- **EMG prognostic after 10 weeks** — *"after 10 weeks have passed, the test is prognostic"*, with
+  voluntary potentials in the first 10 days and fibrillation at 10–14 (Q138). **This one looked wrong
+  and is not** — the slide says it in as many words.
+- **ENoG is the quantitative test**; *"degeneration of more than 90 % means recovery is poor"* (Q139,
+  Q142).
+- **Decompression at >90 % within 6 days** in Bell's palsy, **>90 % after 2 weeks** in Ramsay Hunt
+  (Q147, Q148) — same threshold, different window.
+- **71 % / 25 % / 4 %** for Bell's palsy against **30 % / 70 %** for herpes zoster oticus (Q146).
+- **10 % of longitudinal and 40 % of transverse** petrous fractures, *"the site of the lesion is
+  commonly at the geniculate ganglion"* (Q156).
+
+**Only three points needed outside knowledge**, each tagged in place: the absence of the mastoid
+process in infancy (Q149), the axonal growth rate behind the 10-week figure (Q138), and the
+correlation of fracture plane with the type of hearing loss (Q156).
+
+#### Two runs written as sets
+
+**Q127–Q132** walk the lesion down the nerve — supranuclear, nuclear, IAC/CPA, geniculate ganglion,
+below geniculate, stylomastoid foramen — and **Q125/Q126/Q133/Q134/Q152/Q153** work the same two-step
+reading (*the eye names the level, the failing eye names the side, the mouth points away*). Each entry
+carries the anatomy the next one needs, **because after the shuffle they will never be met together.**
+
+#### One stem repaired, and it is the same defect as ch.4's Q120
+
+**Q153 is printed as the bare phrase *"In the following picture"*** — a heading, a photograph and four
+options, with **no question at all**. Written out as a question. **Second instance of an absent
+interrogative**, which is now a recognised shape rather than a one-off. Q135's doubled verb
+(*"…what is the most likely diagnosis is:"*) was tidied without changing meaning.
+
+#### The image
+
+**`q-gg-23.jpg`** (Q153, 335×228, 19.5 KB). Right first time on the crop rectangle, wrong on the
+height — it caught the first option line and was re-cut. **⚠️ It is a clinical photograph of an
+identifiable child.** That is unremarkable for private study and it is **a question to settle before
+any publication**, alongside the copyright question already open on the transcribed content.
+
+#### Explanations: 20 printed, 15 authored
+
+**~57 % printed — the highest Grade Gain rate so far** (ch.1 ~45 %, ch.2 45 %, ch.3 ~46 %, ch.4 ~35 %).
+Running Grade Gain figure: **70 of 156 printings, ~45 %**.
+
+#### Verified in a real `file://` boot
+
+`parse errors: none`; `Q_ENT` **779** / `C_ENT` **82** / total **861**; `MODULES chapters: 104`;
+0 bad chapter refs, 0 duplicate ids, every answer in range, nothing missing a source, explanation or
+objective; **0 dead backticked ids**; **32 of 32 question images loading**; mojibake scan clean.
+By bank **697 endpoint / 21 house / 154 gradegain** = 872 over 861 — **eleven** shared memberships
+across **ten** questions. Grade Gain's 154 = **144 origin + 10 `alsoIn`**.
+
+**⚠️ One editing trap worth recording.** Rewriting `entep-ear-55`'s explanation on folding left the
+entry with **two `explanation:` keys**. JavaScript takes the last one silently — the app booted, the
+right text displayed, and no check in the harness would have caught it. Found by reading the entry
+back after the edit. **After replacing a field in an existing entry, read the entry, not the output.**
+
+**Reconciles:** ch.1 29 (25 + 4) + ch.2 20 (20 + 0) + ch.3 41 (38 + 3) + ch.4 31 (27 + 4) +
+ch.5 35 (34 + 1) = **156 printed, 144 written, 12 folded** — **10 cross-bank `alsoIn`** and
+**2 within-bank reprints held once**.

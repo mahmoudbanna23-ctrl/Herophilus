@@ -2,19 +2,19 @@
 
 Running record, organised around *resuming*. ISO dates; unverified marked as such. **Only what is needed to pick the work up cold; under 200 lines — `(Get-Content).Count`.** Method in `CLAUDE.md`, detail in `ledger.md` — **`CLAUDE.md` imports this, so repeating its rules costs budget.**
 
-## Resume here — **✅ `ENT endpoint.pdf` CLOSED (all 3,074 pp.). Grade Gain OPEN, Ear ch.1–4 done.**
+## Resume here — **✅ `ENT endpoint.pdf` CLOSED (all 3,074 pp.). Grade Gain OPEN, Ear ch.1–5 done.**
 
 1. **GRADE GAIN IS OPEN — `ENT QB.pdf`, contents page promises 1,080** (Ear 244, Nose 258, Throat 578
    over 29 topics; map in `ledger.md` §14). **⚠️ PDF page = book page + 9. ⚠️ THE PRINTED NUMBERING
-   RUNS CONTINUOUSLY ACROSS CHAPTERS** (ch.1 Q1–29, ch.2 Q30–49, ch.3 Q50–90, ch.4 Q91–121) **and the
-   running header says "Chapter 1" on EVERY page — the contents page is the only authority on chapter
-   boundaries.** **⚠️ ITS COUNTS ARE A PLAN, NOT A COUNT** — ch.1–2 matched, then **ch.3 printed 41 for
-   40 and ch.4 31 for 30.** **Ear ch.1–4 DONE**: 29 (25 written + 4 folded), 20 (20 + 0), 41 (38 + 3),
-   31 (27 + 4). **~41 % carry a printed explanation**; the rest are authored.
+   RUNS CONTINUOUSLY ACROSS CHAPTERS** (ch.1 Q1–29, 2 Q30–49, 3 Q50–90, 4 Q91–121, 5 Q122–156) **and
+   the running header says "Chapter 1" on EVERY page.** **⚠️ THE CONTENTS PAGE'S PAGE RANGES ARE ALWAYS
+   RIGHT; ITS COUNTS ARE NOT** — ch.1–2 matched, then **41 for 40, 31 for 30, 35 for 24.** Render the
+   range, then count what is printed. **Ear ch.1–5 DONE**: 29 (25 written + 4 folded), 20 (20+0),
+   41 (38+3), 31 (27+4), 35 (34+1). **~45 % carry a printed explanation**; the rest are authored.
    **⚠️ A QUESTION TAIL AND THE ANSWER BLOCK SHARE A PAGE** — "Page As" is where answers *begin*, not
    where questions end; it cost **four** questions in ch.4. **⚠️ THE BANK ALSO REPRINTS ITSELF ACROSS
-   CHAPTERS** — 2 of ch.4's 4 folds were within-bank, which take **no `alsoIn`**, just hold once.
-   **Next: Ear ch.5, "Facial nerve", book pp.20–25 (PDF 29–34), 24 promised, opening at Q122.**
+   CHAPTERS** — 2 of ch.4's folds were within-bank, which take **no `alsoIn`**, just hold once.
+   **Next: Ear ch.6, "Otalgia and otorrhea", book pp.26–29 (PDF 35–38), 21 promised, opens at Q157.**
 2. **Then `d house ENT mcq.pdf`** (House, `enthd-`, resume at PDF p.15), then the **end-of-ENT review**
    below, then Pediatrics. **User chose "finish ENT completely" over breadth, 2026-08-08**, knowing
    the other three modules hold 0 questions and the exam is ~4 weeks out.
@@ -37,11 +37,11 @@ Gain prints **once**, ~10 per page, questions and answers on separate pages **th
 first ten pages before staging — **and read EVERY page, never alternate ones. ⚠️ THE REPRINT RATE HAS
 NO TREND** (endpoint: 96 → 100 → 99 → 58 → 42 → 99 → 99 → 100%, then ~70%). **The printed numbering
 lies. ⚠️ SAMPLE FOR STRUCTURE, NEVER FOR RATE. ⚠️ NO CONTENTS PAGE COUNTS EITHER** — Grade Gain's held
-twice, then was one short twice (§11b–d, §14). **Only reading every answered page counts.**
+twice, then ran short three times, once by **eleven** (§11b–d, §14). **Only reading every page counts.**
 
 **⚠️ EVERY BANK MIS-KEYS ITSELF SOMEWHERE — GO LOOKING FOR IT.** Endpoint: 5 self-contradictions, **all
-on pages printing NO box**. Grade Gain: **two in four chapters** — `entqb-ear1-26` (key A, its own
-explanation states D) and **`entqb-ear3-79`** (key A, its own box describes B and its own Q80 keys B).
+on pages printing NO box**. Grade Gain: **three in five chapters** — `entqb-ear1-26`, `entqb-ear3-79`
+and `entqb-ear5-141` (GSPN keyed to the lemon test; its own Q122 and Q140 say Schirmer's).
 **Mechanism decides: options replaced → new entry; options identical and only the key moved → record it
 in the existing entry, never a second; the bank contradicting its own explanation → correct the key and
 record what was printed** (`CLAUDE.md` §4). **⚠️ A PRINTED BOX CAN BE WRONG ABOUT SOMETHING OTHER THAN
@@ -64,13 +64,13 @@ transcribed question teaches**.
 ## What exists — **104 chapters**: ENT 30, Ophthalmology 26, Neuropsychiatry 27, Pediatrics 21
 
 **All content is ENT so far**; the other three hold **0** questions and **no theory is written**.
-`QUESTIONS.length` is **827** — 745 MCQs + 82 cases, **all 30 ENT chapters holding ≥1**. By bank:
-**697 Endpoint, 21 House, 119 Grade Gain** — 837, because **ten** memberships are shared across
-**nine** questions. **`entep-throat-103` is the project's first THREE-bank question**
+`QUESTIONS.length` is **861** — 779 MCQs + 82 cases, **all 30 ENT chapters holding ≥1**. By bank:
+**697 Endpoint, 21 House, 154 Grade Gain** — 872, because **eleven** memberships are shared across
+**ten** questions. **`entep-throat-103` is the project's first THREE-bank question**
 (endpoint + house + gradegain). Verified in a real `file://` boot 2026-08-09.
 
 **Fully validated in a real `file://` boot, 2026-08-09** — 0 bad module/chapter refs, 0 duplicate ids,
-every `answer` in range, nothing missing a `source`/`explanation`, **0 dead backticked ids, 31 of 31
+every `answer` in range, nothing missing a `source`/`explanation`, **0 dead backticked ids, 32 of 32
 question images loading**. **⚠️ THE DEAD-ID CHECK CATCHES REAL DAMAGE** — folding a printing retires
 an id, and three entries written before the fold still cited it in backticks.
 **⚠️ THE AUDITOR BREAKS BEFORE THE APP DOES — TWICE OVER, AND BOTH LOOK LIKE CATASTROPHIC CONTENT
@@ -98,7 +98,7 @@ on the data `<script>` tags** — the last gates publishing (item 3).
 
 **⚠️ THE ONE THING THAT MUST SURVIVE ANY SUMMARY: THE CLEPSYDRA IS THE USER'S OWN ARTWORK** — nine poses at `app\assets\clep\*.png`, source at `Clypsedra\`. **Do not redraw her, do not draw anything onto her.** Three rounds of wasted work in a day; the answer was always *ask for artwork*.
 
-## Where transcription stands — **`ENT endpoint.pdf` DONE end to end; Grade Gain Ear ch.1–4 done**
+## Where transcription stands — **`ENT endpoint.pdf` DONE end to end; Grade Gain Ear ch.1–5 done**
 
 Endpoint boundaries and shapes: `ledger.md` §"Transcribed ranges" and §7; **Exam Night Review and the
 fact-list run closed 2026-08-08** (§11c–d). **Box presence is a property of the PAGE, not the
@@ -133,7 +133,7 @@ page**. **⚠️ For CASES the ANSWER decides fold-vs-variant, not the stem.**
 **Where the source prints no explanation box, the explanation is written here** — rule and marker in
 `CLAUDE.md` §4. **~72 % of ENT entries carry the marker** (513 of 717) — seven tenths of the
 explanations are written, not transcribed, **which is the real scope of the end-of-ENT review**;
-Grade Gain improves on it at **~41 % printed**. **⚠️ READ EVERY OPTION AS A SENTENCE** — p.2856
+Grade Gain improves on it at **~45 % printed**. **⚠️ READ EVERY OPTION AS A SENTENCE** — p.2856
 printed one truncated mid-word and it survived staging and both sweep passes. **⚠️ AND EVERY STEM: a
 reference to "the previous case" or to a picture must be repaired, because the deck is SHUFFLED** —
 5 of 41 in ch.3, one of them pointing at a figure **the page never printed**.
@@ -147,8 +147,8 @@ THE USER** — one batched list, never per sentence. Contract: `CLAUDE.md` §4.
 **Three banks per module** (`endpoint`/`house`/`gradegain`); map, covers and the `alsoIn` contract in
 `CLAUDE.md` §4. **Missing: House for Neuropsychiatry, Grade Gain for Pediatrics.** **⚠️ THE BANKS
 OVERLAP — on a cross-bank match ADD THE BANK, never an entry.** **Eight memberships over seven
-questions**; Grade Gain Ear ch.1 gave **4 folds in 29**, ch.2 **0 in 20**, ch.3 **3 in 41**, ch.4
-**4 in 31** — unpredictable, so **run the full sweep on every topic.** **⚠️ THE TEST: A DROPPED (or
+questions**; Grade Gain Ear folds ran **4 in 29, 0 in 20, 3 in 41, 4 in 31, 1 in 35** — unpredictable,
+so **run the full sweep on every topic.** **⚠️ THE TEST: A DROPPED (or
 ADDED) DISTRACTOR IS A REPRINT, A REPLACED ONE IS A NEW QUESTION** (§14c–d). **⚠️ A BANK ALSO REPRINTS
 ITSELF** — a within-bank match takes **no `alsoIn`**, it is just held once. **A folded id must lose
 its backticks everywhere it is still mentioned.**
