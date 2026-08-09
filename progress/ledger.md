@@ -3610,3 +3610,102 @@ back after the edit. **After replacing a field in an existing entry, read the en
 **Reconciles:** ch.1 29 (25 + 4) + ch.2 20 (20 + 0) + ch.3 41 (38 + 3) + ch.4 31 (27 + 4) +
 ch.5 35 (34 + 1) = **156 printed, 144 written, 12 folded** — **10 cross-bank `alsoIn`** and
 **2 within-bank reprints held once**.
+
+---
+
+### §14f — Grade Gain, Ear chapter 6: "Otalgia and Otorrhea" (2026-08-09)
+
+**Book pp.26–28 (PDF 35–37); answers book pp.28–29 (PDF 37–38). 22 printed, Q157 … Q178.**
+**19 written (`entqb-ear6-157` … `entqb-ear6-178`, gaps at 159, 160 and 176), 3 folded.**
+Chapters: 14 `ent-otalgia`, 5 `ent-otorrhea`.
+
+#### The contents page ran short again — a fourth time
+
+**22 printed against 21 promised.** Chapter 7 (*Tinnitus & Hearing loss*) opens at **Q179 on book
+p.30**, verified by rendering rather than inferred. Running record of the map: ch.1 **29/29 ✓**,
+ch.2 **20/20 ✓**, ch.3 **41/40**, ch.4 **31/30**, ch.5 **35/24**, ch.6 **22/21**. **The page ranges
+have been right every single time; only the counts drift, and always upward.** On the TOC's own
+arithmetic the remaining topics promise 959 — the real figure will be materially larger.
+
+#### The answer block again overlaps the question block
+
+**Book p.28 carries Q175–Q178 in its LEFT column and the start of the answer key in its RIGHT.**
+Same shape as ch.4, where mistaking "Page As" for the end of the questions cost four questions.
+The rule holds: **render every page of the stated range and read both columns.**
+
+#### Three folds — and two of them are the bank reprinting itself
+
+| Printed | Verdict | Where it went |
+|---|---|---|
+| **Q159** dental caries → which cranial nerve | **within-bank reprint** of Ear ch.1 Q21 | note added to `entqb-ear1-21`, **no `alsoIn`** |
+| **Q160** disc prolapse → C1,C2 / C2,C3 / C3,C4 | **within-bank reprint** of Ear ch.1 Q22 | note added to `entqb-ear1-22`, **no `alsoIn`** |
+| **Q176** otalgia from mouth ulcers → trigeminal | **cross-bank** match with `entep-mfe5-42` | `alsoIn:['gradegain']` added |
+
+**Grade Gain reprints itself across its own chapters** — first seen in ch.4 (Q94/Q97), now twice
+more. A within-bank match takes **no `alsoIn`**: the question is simply held once, and the second
+printing is recorded in the held entry's `source`.
+
+**Running fold record: 4 in 29, 0 in 20, 3 in 41, 4 in 31, 1 in 35, 3 in 22.** No trend — run the
+full six-stage sweep on every topic.
+
+#### The sweep's exact stages are brittle in a way worth naming
+
+Q176 (*"trigeminal nerve"*) versus `entep-mfe5-42` (*"trigeminal"*) differs by **one appended word**,
+and elsewhere by **one parenthesis** (*"(CN V)"*). Stages A–D all normalise punctuation but not
+vocabulary, so **a single added token defeats every exact stage** and the match only surfaced in the
+token-ranking stages E and F. **Third documented blind spot**, after the ≤3-character token filter
+(ch.1) and the abbreviated-versus-spelled-out option set (ch.4, Q98 → `entep-ear-199` at F **0.13**).
+
+#### Six stems repaired — more than any chapter so far
+
+- **Q166, Q167, Q170** open *"In the previous case"*. The deck is shuffled, so each was rewritten to
+  carry its own case: Q166/Q167 restate the unilateral clear otorrhoea of Q165, Q170 restates the
+  attico-antral perforation of Q169.
+- **Q168, Q169, Q173** open *"The following perforation / patient"* with a photograph. Each stem now
+  names the modality so it stands alone beside its figure.
+
+#### Three images
+
+`q-gg-27a.jpg` (Q168, 286×197, 12.1 KB), `q-gg-27b.jpg` (Q169, 397×266, 20.5 KB),
+`q-gg-27c.jpg` (Q173, 335×289, 21.7 KB) — all three right on the first cut, because they sit in
+white space. **`imgAlt` names the modality only**: naming the perforation type would answer Q168 and
+Q169 outright, and naming the glomus would answer Q173. Q180 in chapter 7 reprints the glomus
+photograph, so `q-gg-27c` will be reused rather than re-cut.
+
+#### One printed-box defect, and one typo
+
+- **Q169's box reads "attic0-antral"** — a digit zero for the letter *o*. Corrected silently in the
+  entry, recorded here.
+- **Q163's box describes Hitzelberger's sign as "pain or discomfort".** Classically it is
+  **numbness** of the conchal patch. The underlying anatomy is right, so the box is transcribed
+  verbatim and the correction added as a tagged caveat.
+
+#### Two more material gaps
+
+**Hitzelberger's sign** and **foreign body in the ear as the commonest cause of fetid discharge in
+children** (Q172) appear on **no cached ENT lecture slide** — checked across all 32. Both answered
+from general knowledge and tagged, and both added to the interview shortlist in §11. This brings the
+Grade Gain gap list to: acute necrotic otitis media, the compass taxonomy of mastoid spread /
+Citelli's / zygomatic abscess, Hitzelberger's sign, aural foreign body.
+
+#### Explanations: 13 printed, 9 authored
+
+**~59 % printed — a new Grade Gain high** (ch.1 ~45 %, ch.2 45 %, ch.3 ~46 %, ch.4 ~35 %, ch.5 ~57 %).
+Running Grade Gain figure: **83 of 178 printings, ~47 %**.
+
+#### Verified in a real `file://` boot
+
+`parse errors: none`; `Q_ENT` **798** / `C_ENT` **82** / total **880**; `MODULES chapters: 104`;
+0 bad chapter refs, 0 duplicate ids, every answer in range, nothing missing a source, explanation or
+objective; **35 of 35 question images loading**; mojibake scan clean. By bank
+**697 endpoint / 21 house / 174 gradegain** = 892 over 880 — **twelve** shared memberships across
+**eleven** questions. Grade Gain's 174 = **163 origin + 11 `alsoIn`**.
+
+**⚠️ The dead-id check earned its place again.** `entqb-ear6-163` cited `entqb-ear7-181` in backticks
+— a **forward** reference to a chapter not yet transcribed, written on the assumption that ch.7's
+numbering would hold. Rewritten to name the chapter in prose. **Never backtick an id that does not
+exist yet**; the cross-reference checker cannot tell a forward reference from a dead one.
+
+**Reconciles:** ch.1 29 (25 + 4) + ch.2 20 (20 + 0) + ch.3 41 (38 + 3) + ch.4 31 (27 + 4) +
+ch.5 35 (34 + 1) + ch.6 22 (19 + 3) = **178 printed, 163 written, 15 folded** — **11 cross-bank
+`alsoIn`** and **4 within-bank reprints held once**.
