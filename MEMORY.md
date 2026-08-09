@@ -12,8 +12,7 @@ Running record, organised around *resuming*. ISO dates; unverified marked as suc
    always upward.** Render the range, then count what is printed. **Ear ch.1–6 DONE**: 29 (25 written +
    4 folded), 20 (20+0), 41 (38+3), 31 (27+4), 35 (34+1), 22 (19+3). **~47 % carry a printed
    explanation**; the rest are authored. **⚠️ A QUESTION TAIL AND THE ANSWER BLOCK SHARE A PAGE** —
-   "Page As" is where answers *begin*, not
-   where questions end; it cost **four** questions in ch.4, and ch.6 did it again.
+   "Page As" is where answers *begin*, not where questions end; it cost **four** questions in ch.4.
    **⚠️ THE BANK ALSO REPRINTS ITSELF ACROSS CHAPTERS** — 4 folds so far are within-bank, which take
    **no `alsoIn`**, just hold once. **⚠️ NEVER BACKTICK AN ID THAT DOES NOT EXIST YET** — a forward
    reference to the next chapter reads as a dead id.
@@ -152,10 +151,10 @@ THE USER** — one batched list, never per sentence. Contract: `CLAUDE.md` §4.
 `CLAUDE.md` §4. **Missing: House for Neuropsychiatry, Grade Gain for Pediatrics.** **⚠️ THE BANKS
 OVERLAP — on a cross-bank match ADD THE BANK, never an entry.** **Twelve memberships over eleven
 questions**; Grade Gain Ear folds ran **4/29, 0/20, 3/41, 4/31, 1/35, 3/22** — unpredictable,
-so **run the full sweep on every topic.** **⚠️ THE TEST: A DROPPED (or
-ADDED) DISTRACTOR IS A REPRINT, A REPLACED ONE IS A NEW QUESTION** (§14c–d). **⚠️ A BANK ALSO REPRINTS
-ITSELF** — a within-bank match takes **no `alsoIn`**, it is just held once. **A folded id must lose
-its backticks everywhere it is still mentioned.**
+so **run the full sweep on every topic.** **⚠️ THE TEST: A DROPPED (or ADDED) DISTRACTOR IS A REPRINT,
+A REPLACED ONE IS A NEW QUESTION** (§14c–d). **⚠️ A BANK ALSO REPRINTS ITSELF** — a within-bank match
+takes **no `alsoIn`**, it is just held once. **A folded id must lose its backticks everywhere it is
+still mentioned, and an id that does not exist YET must never be backticked either.**
 
 ## Owed in the end-of-ENT review — detail in `ledger.md` §11; work it before Pediatrics begins
 
