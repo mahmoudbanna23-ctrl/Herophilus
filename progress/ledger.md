@@ -1,4 +1,4 @@
-﻿# Progress ledger
+# Progress ledger
 
 What has been read, transcribed, and written. **This file is load-bearing** — the source material is
 large enough that the work spans many sessions, and this is what makes it resumable. Update it in
@@ -2261,6 +2261,10 @@ both readings recorded so the learner can see the bank is unreliable:
 | `entep-throat-83` | 1575 | `L6`'s own list makes **two** options true for a low tracheostomy — pleural dome and innominate vessels. The bank keys only the pleura. |
 | Q136 | pp.1617-1706 | Keys "never do an incision biopsy" for a **tongue ulcer**. That rule applies to cervical **nodes**, not to a primary; incisional biopsy of a tongue primary is standard. |
 | Q153 | pp.1617-1706 | Keys **pus** in **Ludwig's angina**, where `L4) PHARYNGEAL SUPPURATIONS.pdf` states **twice** that there is no abscess and no pus. |
+| `entqb-ear3-83` | ENT QB p.12 | **Added 2026-08-09 — the first dispute raised against a LECTURE SLIDE rather than another printing.** Grade Gain keys **SNHL** as the one thing that is *not* a complication of middle ear effusion; `L21.2) Otitis media with effusion.pdf` lists **SNHL as complication 5 of 5**. The slide's list contains none of the other three options either, so the question is not drawn from the lecture at all. **A student answering from the Alexandria slide would not pick D.** |
+
+*(Four more entries in this roster came from Model Final Exams and Exam 1 and are listed in §12; the
+count of open disputes stands at **eight**.)*
 
 **8. A full content and design review**, at the user's request — both the ENT content and whether the
 app's design needs changing — **before the other three modules are started.**
@@ -3185,3 +3189,177 @@ same **five** shared memberships across **four** questions. Grade Gain's 49 = **
 
 **Reconciles:** 29 printed in ch.1 (25 written + 4 folded) + 20 printed in ch.2 (20 written + 0
 folded) = **49 printed, 45 written, 4 folded.**
+
+---
+
+### §14c — Grade Gain, Ear chapter 3: "Acute Otitis Media" (book pp.9–14, PDF 18–23)
+
+**41 printed = 38 written + 3 folded cross-bank.** Ids `entqb-ear3-50` … `entqb-ear3-90`,
+**with deliberate gaps at 80, 82 and 87** — the three folded printings.
+`Q_ENT` 680 → **718**, total 762 → **800**.
+
+#### ⚠️ THE CONTENTS PAGE PROMISED 40 AND THE BANK PRINTS 41
+
+Chapters 1 and 2 matched §14's map exactly — 29 and 20. This one does not. Q50 … Q90 with **no
+number skipped**, and chapter 4 opens at **Q91** on book p.15, verified by rendering that page rather
+than inferred from the map. **So §14's table is a plan for what to render, never a count of what was
+printed** — the same lesson the endpoint file taught about its own numbering, now proven on the one
+source whose counts had held twice.
+
+The two ch.2 corrections both held again: the numbering runs **continuously** from Q49 into Q50, and
+the running header says **"Chapter 1"** on every page of this chapter too, with only the title beside
+it correct.
+
+#### Three folds, and the line that decided them
+
+| printed | folded into | why |
+|---|---|---|
+| Q87 | `entep-nose-36` | **word for word the same stem and the same four options in the same order** — the cleanest cross-bank match in the project so far, and the only stage-B hit in the chapter |
+| Q82 | `entep-ear-66` | same 50-year-old with left cervical lymphadenopathy and left ear fullness, same key; **a subset of the endpoint options** — "audiogram and tympanometry" dropped, "nasal endoscopy" written as "nasopharyngoscopy" |
+| Q80 | `entep-ear-2` | same 4-year-old with otalgia and a congested drum, same watchful-waiting key; **a subset** — "myringotomy and drainage of pus" dropped |
+
+**⚠️ THE TEST TO REUSE: A DROPPED DISTRACTOR IS A REPRINT; A REPLACED ONE IS A NEW QUESTION.** It
+resolves the tension between ch.1, which folded cross-bank matches sitting one distractor apart, and
+ch.2, which held variants two and three options apart — and it is not arbitrary, because a **dropped**
+option leaves the discrimination the examiner was testing intact while a **replaced** one creates a
+different discrimination.
+
+**Q76 is the case that proves it and was held apart on it.** Grade Gain's traumatic-perforation
+question offers *myringoplasty / conservative + water restriction / myringotomy with tube / **no
+treatment is necessary***, where `entep-ear-196` and `entep-ear-38` offer *myringoplasty / myringotomy
+/ **antibiotic therapy** / watchful waiting*. Swapping "antibiotic therapy" for "no treatment is
+necessary" turns the question from *which treatment* into **water precautions versus doing nothing** —
+a discrimination the endpoint printings never ask, and the better one. Held as a variant.
+
+Three more were read side by side and held: **Q52** against `entep-ear-47` (two of three options
+absent from that set), **Q72** against `entep-ear-212`/`entep-ear-41` (three of four differ; those two
+make the learner choose *between tubes*, this one between drainage and more medicine), and **Q74**
+against `entep-mfe5-27` (the same scenario over **two** options rather than four).
+
+#### ⚠️ Q79 — the chapter's mis-key, and the bank convicts itself three times over
+
+The stem asks the treatment of a **first-time acute otitis media without perforation**. **p.14 prints
+"Correct Answer: A" — immediate antibiotics.** Against it:
+
+1. **The explanation box printed on the same line** states *"the approach is symptomatic management
+   with analgesics and close observation. Antibiotics are only necessary if symptoms worsen or do not
+   improve within 48–72 hours."* — which is **option B**.
+2. **Its own Q80**, on the next page, keys *"analgesics and antipyretics with observation for 48 hours
+   **without antibiotics**"* for the same policy.
+3. **`entep-ear-2`** in the endpoint bank keys the same thing — and Q80 folds **into** it.
+
+**Keyed to B, printed key recorded in the entry.** Same class as `entqb-ear1-26` (pars flaccida): the
+bank contradicting its own printed evidence, not an arguable reading. **That is two self-contradictions
+in three Grade Gain chapters — the rate is not falling, so keep looking.**
+
+#### ⚠️ Q83 — a DISPUTED key: the bank against the LECTURE, not against itself
+
+*"All of the following are complications of MEE except: blue ear / tympanosclerosis / CHL / SNHL."*
+Key **D (SNHL)**. But `L21.2) Otitis media with effusion.pdf` lists the complications of otitis media
+with effusion as *"1) Developmental & behavioural changes. 2) Atrophic tympanic membrane. 3) Ossicular
+chain erosion. 4) Chronic O.M. **5) SNHL**"* — **sensorineural loss is complication 5 of 5 on the
+Alexandria slide.**
+
+**Key left as printed** and the conflict stated in full in the entry, because this is a *disputed*
+reading and not a self-contradiction: nothing in Grade Gain argues against its own key here. **Added
+to the disputed roster in §11 — it is now eight open, and the first one raised against a lecture
+slide rather than against another printing.** Worth noting that the slide's list contains **none** of
+the other three options either, so the question is not drawn from the lecture at all.
+
+#### Five stems repaired, one figure missing from the source
+
+| Q | as printed | repaired to |
+|---|---|---|
+| 61 | "The following otoscopy is characteristic of:" | "The otoscopy **shown below**…", image attached |
+| 69 | two sentences split by the photograph | joined into one stem with "shown below" |
+| 88 | "**The following plaques** on ear drum is called ………" | "The **chalky white plaques seen on the ear drum** are called ………" |
+| 89 | "If **these plaques** reach annulus…" | "If **tympanosclerotic plaques** reach the annulus…" |
+| 90 | "In **the previous case** which curve appears in tympanometry" | the condition restated in the stem |
+
+**⚠️ Q88 REFERS TO A PICTURE THE PAGE DOES NOT PRINT.** No photograph appears anywhere on book p.12 —
+the reference has no referent **in the original**, not merely after the shuffle. The appearance is
+stated in words (*chalky white plaques*), which is what any figure would have shown, and the missing
+figure is recorded rather than invented. **This is a new failure mode: a dangling reference that
+predates the transcription.**
+
+Q88–Q90 are a **linked trio**, all three of which had to be repaired; `data\questions.js` hashes ids
+to order the deck, so a chain of three consecutive questions is the worst case for it.
+
+#### The sweep
+
+Six stages over all **762** held entries. **One stage-A/B hit (Q87).** Stage F again paid for itself
+and again showed its blind spot:
+
+- **Q90 scored 1.00 on options against `entep-ear-4`** (Type A / A(d) / B / A(s) against Type A / B /
+  As) while stage E scored the stems far apart. Read side by side: different scenario, **different
+  key** — that entry keys Type B for a child with air bubbles, this one Type As for a stiff drum.
+  Held apart. **F lists; only reading decides.**
+- **Q89 and Q54 and Q68 are short-code option sets** (CHL / SNHL / Mixed), so the ≤3-character token
+  filter empties them and they score 0 or 1.00 for the wrong reason. Checked by hand.
+
+#### What the material does not cover — two gaps, both logged
+
+1. **⚠️ ACUTE NECROTIC OTITIS MEDIA IS ABSENT FROM ALL 32 CACHED ENT LECTURE FILES.** `necrotic` /
+   `necrotis` / `necrotiz` returns only `L17,18) Otorrhea and otalgia.pdf`, and there it means
+   **necrotising EXTERNAL otitis** — a different disease with a different organism. **Four entries
+   rest on general knowledge for it**: Q58 (organism), Q59 (treatment), Q61 (the photograph), Q81 (the
+   discharge). A well-bounded book-read target; added to §11 item 4 beside the nasopharynx and
+   exostosis.
+2. **The compass taxonomy of mastoid spread** — anterior / posterior / medial / lateral / inferior —
+   together with **Citelli's abscess** and the **zygomatic abscess**, appears on **no** slide.
+   `L16) Chronic otitis media.pdf` gives acute mastoiditis, the post-auricular abscess, sagging,
+   petrositis and Gradenigo's triad, but not the scheme the bank builds Q60, Q63 and Q64 on.
+   **Bezold's abscess** survives only in `L4) PHARYNGEAL SUPPURATIONS.pdf`, as a cause of
+   parapharyngeal abscess — which is itself a useful link and is recorded on the entry.
+
+#### ⚠️ Q75's printed explanation box is defective
+
+It ends *"the most IMPORTANT drugs are Allergic hypo sensitization, Valsalva maneuver"*. **Neither is a
+drug.** The slide's medical arm separates the two properly — *"I) Antibiotics, antihistaminics,
+corticosteroids. II) **Eustachian tube ventilation**: as Valsalva, gum chewing."* Transcribed verbatim
+and corrected in the text beneath it; the key is unaffected. **A printed box being wrong about
+something other than the key is a third defect class**, alongside ch.2's Q31 (a box answering a
+different question) and this chapter's Q79 (a box contradicting its own key).
+
+#### Chapter mapping
+
+**31 to `ent-aom`, 7 to `ent-csom`.** The complications run — Q60, Q62, Q63, Q64, Q65, Q66, Q67 — goes
+to `ent-csom` with `ent-aom` noted as secondary, because **acute mastoiditis, petrositis and
+Gradenigo's triad are taught on `L16) Chronic otitis media.pdf`**, and because the held endpoint
+entries for them (`entep-ear-222`, `entep-ear-81`, `entep-ear-133`, `entep-mfe4-1`, `entep-ear-27`)
+already sit there. Secondary chapters also noted on Q89 (`ent-hearing`) and Q90 (`ent-audio`).
+
+#### Images
+
+**`q-gg-10a.jpg`** (Q61, 500×405, 50.4 KB) and **`q-gg-10b.jpg`** (Q69, 342×198, 14.0 KB) — book p.10
+prints two, so both take a letter. Located at 130 dpi, cut at 200 dpi, and **both re-cut after
+looking**: the first pass clipped the right edge of Q61's photograph and caught a descender from the
+question text above Q69's. **That is nine crops in three chapters and the first cut has been wrong
+every single time.**
+
+**A third figure was deliberately NOT cropped.** The answer page prints a labelled diagram of the
+tympanic membrane's blood supply — manubrial, circumferential and radial branches from the maxillary
+artery — inside Q61's explanation box. It **explains the answer**, so putting it beside the stem would
+give the question away, exactly as the `imgAlt` audit of 2026-08-04 found. It is described in the
+explanation instead.
+
+#### Explanations: 19 printed, 19 authored
+
+**~46 %** printed, holding ch.1's and ch.2's rate.
+
+#### Verified in a real `file://` boot
+
+`parse errors: none`; `Q_ENT` **718** / `C_ENT` **82** / total **800**; `MODULES chapters: 104`;
+0 bad chapter refs, 0 duplicate ids, every answer in range, nothing missing a source, explanation or
+objective; **0 dead backticked ids**; **28 of 28 question images loading**; mojibake scan clean.
+By bank **697 endpoint / 21 house / 90 gradegain** = 808 over 800 questions — **eight** shared
+memberships across **seven** questions. Grade Gain's 90 = **83 origin + 7 `alsoIn`**.
+
+**⚠️ THE DEAD-ID CHECK EARNED ITS PLACE.** The first boot reported **three dead backticked ids**:
+`entqb-ear3-80` and `entqb-ear3-82`, cited by number in two of the entries written before the folds
+were applied. **A folded id must lose its backticks everywhere it is still mentioned** — the same rule
+that cost three rewrites when `enthd-ear-15` was folded. Rewritten to name the printed question
+numbers instead, and re-verified clean.
+
+**Reconciles:** ch.1 29 printed (25 written + 4 folded) + ch.2 20 (20 + 0) + ch.3 41 (38 + 3) =
+**90 printed, 83 written, 7 folded.**
