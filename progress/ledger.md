@@ -3056,3 +3056,132 @@ Second run reported **19 dead backticked ids**, all of them **chapter** ids (`en
 `ent-paedlar`) matched by a regex that only knew ids start with `ent`. Both fixed in the harness, not
 the data. **A run where everything fails is a broken auditor** — the same lesson the three contrast
 auditors taught, now proven on content.
+
+---
+
+### §14b — Grade Gain, Ear chapter 2: "Diseases of External Ear" (book pp.6–8, PDF 15–17)
+
+**20 printed = 20 written, NOTHING folded.** Ids `entqb-ear2-30` … `entqb-ear2-49`, no gaps.
+`Q_ENT` 660 → **680**, total 742 → **762**.
+
+#### ⚠️ Two facts recorded in §14 from chapter 1 were wrong, and chapter 2 corrected them
+
+1. **The printed numbering is CONTINUOUS ACROSS CHAPTERS, not per chapter.** Chapter 1 ran Q1–Q29;
+   chapter 2 opens at **Q30** and closes at **Q49**. §14 read the numbering as restarting, which
+   would have made every id from here on collide with chapter 1's.
+2. **The running header says "Chapter 1" on EVERY chapter.** It is printed once into the page
+   furniture and never updated. **The contents page is the only authority on which chapter a page
+   belongs to** — the header on the page itself is a defect, and a page-range plan built from it
+   would have been silently one chapter out for the whole file.
+
+Both facts are cheap to verify at the top of each topic and expensive to discover late. Check the
+first and last printed question number of every chapter against §14's map before staging it.
+
+#### Zero folds — and the threshold that settles it
+
+The full six-stage sweep ran over all **742** held entries. **No stage-A and no stage-B hit
+anywhere.** Three entries came close enough to be read side by side and were **held as variants**:
+
+| staged | nearest held | why it is a different question |
+|---|---|---|
+| Q33 (furuncle site) | `entep-enr-35` | three options differ; the held one asks the causative organism |
+| Q42 (otomycosis treatment) | `entep-ear-14` | two options differ; different key, different step of management |
+| Q46 (malignant OE organism) | `entep-ear-69` | two options differ; the held one names the diabetic context in the stem |
+
+**The threshold is the project's own precedent, not a new judgement.** `entep-ear-96`/`entep-ear-76`
+and `entep-ear-17`/`entep-ear-98` are each kept as **separate entries on a ONE-option difference**.
+Two- and three-option differences are therefore comfortably clear of the line. Recording it here so
+the next batch does not re-litigate it: **a fold needs the same question, not a similar one.**
+
+#### ⚠️ Stage F earned its place a second time — and its blind spot bit twice more
+
+**Q45 scored 1.00 on options against `entqb-ear1-23` while stage E scored it 0.25.** Both list the
+same four cranial nerves; the questions and the keys are different. Stage E alone would have filed it
+as unrelated and stage F alone would have filed it as a reprint — **only reading them side by side
+decided it**, which is the standing rule that every stage's verdict is a shortlist.
+
+**F's token filter drops words of ≤3 characters**, so two staged questions scored 0 against
+everything and had to be checked by hand:
+
+- **Q36** — options include `A and B`; every token is ≤3 characters, so the set normalises to empty.
+- **Q48** — options are `CHL` / `SNHL` / `Mixed`; only one token survives the filter.
+
+#### Five stems repaired, because `questions.js` SHUFFLES and a stem cannot lean on its neighbour
+
+`data\questions.js` hashes ids to order the deck, so a staged question never appears beside the one
+printed above it. Five stems referred to something outside themselves and were repaired in place,
+each repair marked in the entry (precedent: `entep-ear-93`):
+
+| Q | as printed | repaired to |
+|---|---|---|
+| 35 | "The treatment includes:" — names no disease at all | the condition named, taken from the printed set it belongs to |
+| 36 | "The organism causing the appearance shown in **the previous image**" | "**shown below**", with the image attached to this entry |
+| 40 | names no disease | `**[In malignant otitis externa]**` — a flagged inference |
+| 41 | names no disease | `**[In malignant otitis externa]**` — a flagged inference |
+| 48 | "**this case**" | the case restated inside the stem |
+
+**The bracketed inferences are flagged as inferences in the `source` field**, not presented as the
+bank's own wording. Q40 and Q41 sit inside a run of malignant-otitis-externa questions and are
+unanswerable outside it; leaving them as printed would have shipped two questions with no subject.
+
+#### ⚠️ Q31 — the printed explanation answers a DIFFERENT question
+
+The stem asks the treatment of **auricular perichondritis**; the printed box beneath it describes the
+management of an **auricular haematoma**. The key ("antibiotics with surgical incision") is right for
+the stem and the slides support it, so **the key stands and the mismatch is recorded in the entry and
+in `source`**. This is a defect in the bank's typesetting, not a disputed key — it does not join the
+seven-item roster in §11.
+
+#### Q30 and Q32 print IDENTICAL options with OPPOSITE keys — and that is not a self-contradiction
+
+Both list the same option set; the keys point to different options. **The stems differ**, and the pair
+is the bank's own discrimination exercise: it is teaching the reader that the same list resolves two
+ways depending on what is asked. **A self-contradiction requires an identical stem as well** — the
+`entqb-ear1-26` case in §14 is what one actually looks like. Recorded so a later sweep does not
+"fix" one of them.
+
+#### A cross-bank contradiction on ear wash, recorded rather than resolved away
+
+Grade Gain lists **otitis externa as a contraindication to ear wash**. `entep-ear-80` (endpoint)
+treats **seborrhoeic external otitis as an indication for aural toilet**. Both are held, and the
+explanation reconciles them the way the clinical literature does — **gentle aural toilet under vision
+is not forceful syringing** — with the disagreement stated. Neither bank is overwritten.
+
+#### Exostosis is a complete gap in the material
+
+`exostos*` returns **nothing in any of the 32 ENT lecture files** and nothing in the 742 previously
+transcribed questions. Answered from general medical knowledge under the answer-the-gap rule
+(`CLAUDE.md` §4) and tagged on the claim. **Nominated for the book read** in §11 item 4 alongside the
+nasopharynx — it is a small, well-bounded target.
+
+#### Explanations: 9 printed, 11 authored
+
+Chapter 1 ran ~45 % printed; chapter 2 runs **45 %** (9 of 20). Grade Gain's printed-explanation rate
+is holding, and it is far better than endpoint's ~28 %.
+
+#### Images — the naming scheme gains a letter
+
+Three cut: **`q-gg-6.jpg`** (book p.6, serves Q34, Q35 and Q36), **`q-gg-7a.jpg`** and
+**`q-gg-7b.jpg`** (book p.7 prints **two** pictures). **The letter is only used where one page prints
+more than one image**, and letters run in printed order down the page; a page with a single picture
+keeps the bare `q-gg-<page>` form. `q-gg-7b` serves Q47 and Q48.
+
+**⚠️ ALL THREE CROPS WERE WRONG ON THE FIRST CUT, and only looking caught it** — the same trap §14
+recorded and the third batch in a row to hit it. Each caught a line of question text above the
+picture, and `q-gg-7b` also caught the first option line below. The cause is the documented
+asymmetric-padding rule: a leader-line label sits *beside* the picture, the question text sits
+*above*, so any pad wide enough to catch the label drags the question in with it. Located at 130 dpi,
+re-cut at 200 dpi with tightened `-x -y -W -H`, and **every re-cut was rasterised and looked at**
+before encoding.
+
+#### Verified in a real `file://` boot
+
+`parse errors: none`; `Q_ENT` **680** / `C_ENT` **82** / total **762**; `MODULES chapters: 104`;
+0 bad chapter refs, 0 duplicate ids, every answer in range, nothing missing a source, explanation or
+objective; **0 dead backticked ids**; **26 of 26 question images loading**; mojibake scan clean.
+By bank **697 endpoint / 21 house / 49 gradegain** = 767 over 762 questions, the excess being the
+same **five** shared memberships across **four** questions. Grade Gain's 49 = **45 origin + 4
+`alsoIn`**.
+
+**Reconciles:** 29 printed in ch.1 (25 written + 4 folded) + 20 printed in ch.2 (20 written + 0
+folded) = **49 printed, 45 written, 4 folded.**

@@ -2,21 +2,21 @@
 
 Running record, organised around *resuming*. ISO dates; unverified marked as such. **Only what is needed to pick the work up cold; under 200 lines — `(Get-Content).Count`.** Method in `CLAUDE.md`, detail in `ledger.md` — **`CLAUDE.md` imports this, so repeating its rules costs budget.**
 
-## Resume here — **✅ `ENT endpoint.pdf` CLOSED (all 3,074 pp.). Grade Gain OPEN, Ear ch.1 done.**
+## Resume here — **✅ `ENT endpoint.pdf` CLOSED (all 3,074 pp.). Grade Gain OPEN, Ear ch.1–2 done.**
 
-1. **EXAM NIGHT REVIEW CLOSED and THE FACT-LIST RUN HARVESTED** (`ledger.md` §11c–d). 104 printings
-   = 37 written + 3 self-dupes + 64 folded; pp.3046–3070 gave **230 one-liners → 166 distinct facts**
-   in **`content\ent\examiner-patterns.md`**, **nothing entering `QUESTIONS`** (no options printed, so
-   inventing them is authoring). **⚠️ `imgAlt` RENDERS AS THE VISIBLE CAPTION** — all 17 first gave
-   away the answer (`CLAUDE.md` §4). **⚠️ The repeats in a fact list are the examiner's own
-   weighting**, not padding — allergic rhinitis on 7 pages, one identical line 5×.
-3. **GRADE GAIN IS OPEN — `ENT QB.pdf`, and its contents page promises 1,080 questions** (Ear 244,
-   Nose 258, Throat 578 over 29 topics; full map in `ledger.md` §14). **⚠️ PDF page = book page + 9.**
-   **Ear ch.1 is DONE** — 29 printed = **25 written** (`entqb-ear1-1`…`28`, gaps at 7/11/24/29) +
-   **4 folded cross-bank**. **~45 % carry a printed explanation**; the rest are authored.
+1. **EXAM NIGHT REVIEW CLOSED and THE FACT-LIST RUN HARVESTED** (`ledger.md` §11c–d): 104 printings =
+   37 written + 3 self-dupes + 64 folded; pp.3046–3070 gave **230 one-liners → 166 distinct facts** in
+   **`content\ent\examiner-patterns.md`**, **none entering `QUESTIONS`** (no options printed, so
+   inventing them is authoring). **⚠️ The repeats in a fact list are the examiner's own weighting.**
+3. **GRADE GAIN IS OPEN — `ENT QB.pdf`, contents page promises 1,080** (Ear 244, Nose 258, Throat 578
+   over 29 topics; map in `ledger.md` §14). **⚠️ PDF page = book page + 9. ⚠️ THE PRINTED NUMBERING
+   RUNS CONTINUOUSLY ACROSS CHAPTERS** (ch.1 Q1–29, ch.2 Q30–49) **and the running header says
+   "Chapter 1" on EVERY page — the contents page is the only authority on chapter boundaries.**
+   **Ear ch.1 DONE** (29 printed = 25 written + 4 folded); **ch.2 DONE** (20 printed = **20 written,
+   0 folded**). **~45 % carry a printed explanation**; the rest are authored.
    **⚠️ A QUESTION TAIL AND THE ANSWER BLOCK SHARE A PAGE** — "Page As" is where answers *begin*,
    not where questions end; reading only to it drops the last two questions of **every** topic.
-   **Next: Ear ch.2, "Diseases of External Ear", book pp.6–8, 20 questions.**
+   **Next: Ear ch.3, "Acute Otitis Media", book pp.9–13 (PDF 18–22), 40 questions, opening at Q50.**
 4. **Then `d house ENT mcq.pdf`** (House, `enthd-`, resume at PDF p.15), then the **end-of-ENT review**
    below, then Pediatrics. **User chose "finish ENT completely" over breadth, 2026-08-08**, knowing
    the other three modules hold 0 questions and the exam is ~4 weeks out.
@@ -32,11 +32,11 @@ Running record, organised around *resuming*. ISO dates; unverified marked as suc
    public at all, given the content is transcribed from commercial banks.**
 
 **Question images** live at `app\assets\q\` — `q-<page>.jpg` for endpoint (cut by
-`Design\scripts\q-images.ps1`), **`q-gg-<book page>.jpg` for Grade Gain**, whose layout that script
-cannot read: crop it by hand with `pdftoppm -x -y -W -H` and **LOOK at the result** (both first
-attempts clipped a label or caught option text). `image` holds the **basename**, `qImgSrc()` builds
-the path. **⚠️ `bundle.ps1` DOES NOT EXIST**; the single-file build is owed. **⚠️ Three bugs here were
-SILENT, all caught by LOOKING, not counting** — traps in `CLAUDE.md` §4 and `ledger.md` §11a.
+`Design\scripts\q-images.ps1`), **`q-gg-<book page>[a|b].jpg` for Grade Gain** (letter only where one
+page prints two), whose layout that script cannot read: crop by hand with `pdftoppm -x -y -W -H` and
+**LOOK** — **every crop so far was wrong on the first cut**, clipping a label or catching question or
+option text. `image` holds the **basename**, `qImgSrc()` builds the path; traps in `CLAUDE.md` §4 and
+`ledger.md` §11a. **⚠️ `bundle.ps1` DOES NOT EXIST**; the single-file build is owed.
 
 **⚠️ NEVER CARRY STRUCTURE ACROSS A SECTION BOUNDARY.** Endpoint sections and all 7 exams print each
 question **twice**, Recently Edited **once already answered**, the fact-list run **irregularly**;
@@ -69,13 +69,13 @@ from the bank's own repeat counts, and lists **6 named facts no transcribed ques
 ## What exists — **104 chapters**: ENT 30, Ophthalmology 26, Neuropsychiatry 27, Pediatrics 21
 
 **All content is ENT so far**; the other three hold **0** questions and **no theory is written**.
-`QUESTIONS.length` is **742** — 660 MCQs + 82 cases, **all 30 ENT chapters holding ≥1**. By bank:
-**697 Endpoint, 21 House, 29 Grade Gain** — 747, because **five** memberships are shared across
+`QUESTIONS.length` is **762** — 680 MCQs + 82 cases, **all 30 ENT chapters holding ≥1**. By bank:
+**697 Endpoint, 21 House, 49 Grade Gain** — 767, because **five** memberships are shared across
 **four** questions. **`entep-throat-103` is the project's first THREE-bank question**
-(endpoint + house + gradegain). Verified in a real `file://` boot 2026-08-08.
+(endpoint + house + gradegain). Verified in a real `file://` boot 2026-08-09.
 
-**Fully validated in a real `file://` boot, 2026-08-08** — 0 bad module/chapter refs, 0 duplicate ids,
-every `answer` in range, nothing missing a `source`/`explanation`, **0 dead backticked ids, 20 of 20
+**Fully validated in a real `file://` boot, 2026-08-09** — 0 bad module/chapter refs, 0 duplicate ids,
+every `answer` in range, nothing missing a `source`/`explanation`, **0 dead backticked ids, 26 of 26
 question images loading**. **⚠️ THE AUDITOR BREAKS BEFORE THE APP DOES — TWICE OVER, AND BOTH LOOK
 LIKE CATASTROPHIC CONTENT FAILURES.** (1) **`MODULES` is `m.groups[].chapters[]`, each chapter an
 ARRAY (`c[0]` id)**, and **it is declared `const`, so `window.MODULES` IS UNDEFINED** — read the bare
@@ -96,17 +96,16 @@ Zero console errors, 9 Clepsydra poses, **768 CSS rules, all 3 `max-aspect-ratio
 **WCAG-AA clean**. (Count **recursively**; match on `media.mediaText`, not a regex on `5/4` — Chrome
 normalises it to `5 / 4`; **subtract the harness's own `<style>`**.) Greek light/dark design from the
 user's own artwork, an ambient film, and **the Clepsydra** carrying the study-session timer;
-Import/Export replaced by automatic `wardround.bak.<profileId>` snapshots. **Every rule, token
-contract and trap is in `CLAUDE.md` §6 — NOT repeated here. History: `ledger.md` §12, §11a. Backups:
-`archive\index.pre-*.html`.** Outstanding: **old module colours in the Notion board and PDF schedule**
-(knowingly accepted), **no single-file bundler**, and **no cache-busting on the data `<script>` tags**
-— the last must be fixed before publishing (resume item 5).
+Import/Export replaced by automatic `wardround.bak.<profileId>` snapshots. **Every rule and trap is in
+`CLAUDE.md` §6. History: `ledger.md` §12, §11a. Backups: `archive\index.pre-*.html`.** Outstanding:
+**old module colours in the Notion board and PDF schedule** (knowingly accepted), **no single-file
+bundler**, **no cache-busting on the data `<script>` tags** — the last gates publishing (item 5).
 
 **⚠️ THE ONE THING THAT MUST SURVIVE ANY SUMMARY: THE CLEPSYDRA IS THE USER'S OWN ARTWORK** — nine
 poses at `app\assets\clep\*.png`, source at `Clypsedra\`. **Do not redraw her, do not draw anything
 onto her.** Three rounds of wasted work in a day; the answer was always *ask for artwork*.
 
-## Where transcription stands — **`ENT endpoint.pdf` DONE end to end; Grade Gain Ear ch.1 done**
+## Where transcription stands — **`ENT endpoint.pdf` DONE end to end; Grade Gain Ear ch.1–2 done**
 
 Endpoint boundaries and shapes: `ledger.md` §"Transcribed ranges" and §7. **Box presence is a
 property of the PAGE, not the section** — Throat ran 103 consecutive answered pages with none, Exam
@@ -153,8 +152,9 @@ THE USER** — one batched list, never per sentence. Contract: `CLAUDE.md` §4.
 **Three banks per module** (`endpoint`/`house`/`gradegain`); map, covers and the `alsoIn` contract in
 `CLAUDE.md` §4. **Missing: House for Neuropsychiatry, Grade Gain for Pediatrics.** **⚠️ THE BANKS
 OVERLAP — on a cross-bank match ADD THE BANK, never an entry.** **Five memberships over four
-questions**; Grade Gain Ear ch.1 gave **4 folds in 29 (~14 %)** — too few to predict from, so **run
-the full sweep on every topic.**
+questions**; Grade Gain Ear ch.1 gave **4 folds in 29**, ch.2 **0 in 20** — the rate is unpredictable,
+so **run the full sweep on every topic.** **A fold needs the SAME question, not a similar one** — the
+precedent is `entep-ear-96`/`76`, kept apart on a ONE-option difference (`ledger.md` §14b).
 
 ## Owed in the end-of-ENT review — detail in `ledger.md` §11; work it before Pediatrics begins
 
@@ -162,11 +162,11 @@ the full sweep on every topic.**
 2. **67 entries record no provenance either way** — 46 inside `entep-ear-1`…`68`, all 21 House.
    Almost certainly authored, **not verified**. **⚠️ Exams 1–3 box much of this range for free.**
 3. **Re-run the duplicate check per module as it completes** — all **six** stages of it.
-4. **⚠️ The nasopharynx — the highest-value single gap in ENT**, and the top **book**-read target
-   under the answer-the-gap rule: up to **27** entries rest on outside knowledge and **one
-   ENT-nose-book read fixes it.** Plus **fourteen Throat slide gaps** (Vincent's angina, leucoplakia,
-   the thyroglossal cyst's tongue-protrusion sign — absent from **all 32** ENT files), **three Nose
-   gaps**, and **the eponymous signs**. **These are the interview shortlist** (`ledger.md` §11).
+4. **⚠️ The nasopharynx — the highest-value single gap in ENT**, and the top **book**-read target under
+   the answer-the-gap rule: up to **27** entries rest on outside knowledge and **one ENT-nose-book read
+   fixes it.** Plus **fourteen Throat slide gaps** (Vincent's angina, leucoplakia, the thyroglossal
+   cyst's tongue-protrusion sign), **three Nose gaps**, **exostosis** — all absent from **all 32** ENT
+   files — and **the eponymous signs**. **Interview shortlist** (`ledger.md` §11, §14b).
 5. **⚠️ Seven disputed printed keys still open** — `entep-throat-83`, Q136/Q153 of pp.1617–1706,
    Exam 1's Q13, `entep-mfe4-16`, `entep-mfe6-1`, `entep-mfe7-1`, `entep-nose-2`; roster and
    reasoning in **`ledger.md` §11**. **⚠️ A DISPUTED KEY IS PROVISIONAL UNTIL THE BANK REPRINTS IT**
@@ -192,9 +192,8 @@ the full sweep on every topic.**
 - **Reading all 1,637 book pages is not realistic**, but **the book is the first place to look before
   filling a gap from general knowledge** — driven by the questions and slide gaps, via its contents page.
 - **Measure, then believe.** *Check the sum* — a count that did not reconcile has been written down
-  **six times** (use `(Get-Content).Count`; `Measure-Object -Line` skips blank lines). *Check the
-  auditor* — **three** contrast auditors and **two** content auditors gave false failures
-  (`CLAUDE.md` §7). *Reconcile the batch* — written + folded must equal printed. **And where no error
-  is possible, LOOK.**
+  **six times** (`(Get-Content).Count`; `Measure-Object -Line` skips blank lines). *Check the auditor*
+  — **three** contrast and **two** content auditors gave false failures (`CLAUDE.md` §7). *Reconcile
+  the batch* — written + folded must equal printed. **And where no error is possible, LOOK.**
 - **Cleanup awaiting approval** — a 173 MB Ophthalmology zip duplicating all 29 loose lectures, two
   Pediatrics PPT stubs (both inside protected `Semester 8\`), and `files.zip`. **Nothing without a yes.**
