@@ -93,9 +93,7 @@ questions (cases only) because `Q_ENT` never parsed; on 2026-08-04 from **one mi
 Zero console errors, 9 Clepsydra poses, **768 CSS rules, all 3 `max-aspect-ratio:5/4` blocks intact**,
 **WCAG-AA clean**. (Count **recursively**; match on `media.mediaText`, not a regex on `5/4` — Chrome
 normalises it to `5 / 4`; **subtract the harness's own `<style>`**.) Greek light/dark design from the
-user's own artwork, an ambient film, and **the Clepsydra** carrying the study-session timer;
-Import/Export replaced by automatic `wardround.bak.<profileId>` snapshots. **Every rule and trap is in
-`CLAUDE.md` §6. History: `ledger.md` §12, §11a. Backups: `archive\index.pre-*.html`.** Outstanding:
+user's own artwork, an ambient film, and **the Clepsydra** carrying the study-session timer; Import/Export replaced by automatic `wardround.bak.<profileId>` snapshots. **Every rule and trap is in `CLAUDE.md` §6. History: `ledger.md` §12, §11a. Backups: `archive\index.pre-*.html`.** Outstanding:
 **old module colours in Notion and the PDF schedule** (accepted), **no bundler**, **no cache-busting
 on the data `<script>` tags** — the last gates publishing (item 3).
 
