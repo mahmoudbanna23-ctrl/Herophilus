@@ -3363,3 +3363,132 @@ numbers instead, and re-verified clean.
 
 **Reconciles:** ch.1 29 printed (25 written + 4 folded) + ch.2 20 (20 + 0) + ch.3 41 (38 + 3) =
 **90 printed, 83 written, 7 folded.**
+
+---
+
+### §14d — Grade Gain, Ear chapter 4: "Chronic Otitis Media" (book pp.15–19, PDF 24–28)
+
+**31 printed = 27 written + 4 folded.** Ids `entqb-ear4-91` … `entqb-ear4-121`, with gaps at
+**94, 95, 97 and 98**. `Q_ENT` 718 → **745**, total 800 → **827**.
+
+#### ⚠️ 31 WHERE THE MAP SAID 30 — TWO CHAPTERS RUNNING
+
+Chapter 5 (Facial Nerve) opens at **Q122** on book p.20, verified by rendering that page. Combined
+with ch.3's 41-for-40, **§14's contents-page table has now been wrong twice in a row after being
+right twice.** It is a plan for what to render. It is not a count.
+
+#### ⚠️ THE ANSWER BLOCK OPENS IN THE RIGHT-HAND COLUMN OF A PAGE WHOSE LEFT COLUMN IS STILL QUESTIONS
+
+Book p.18 carries **Q118, Q119, Q120 and Q121** on the left and *"Chronic Otitis Media / Answers"*
+starting on the right. Stopping at the TOC's "Page As" would have dropped **four** questions — the
+largest bite this trap has taken, and the third chapter in which it has bitten at all.
+
+#### ⚠️ GRADE GAIN REPRINTS ITSELF ACROSS CHAPTERS — new behaviour, not seen in ch.1–3
+
+Two of this chapter's four folds are **within-bank**:
+
+| printed | folded into | relation |
+|---|---|---|
+| Q94 "intracranial complications of OM except" | `entqb-ear3-65` | ch.4 prints **four** options where ch.3 prints three — *Meningitis* added. Same key. |
+| Q97 "Gradenigo's triad is caused by" | `entqb-ear3-62` | ch.4 prints **two** options where ch.3 prints three — *Sinus thrombophlebitis* dropped. Same key. |
+
+**A within-bank reprint takes NO `alsoIn`.** That field means *another bank also prints this*; the
+question is simply held once, in the printing with the fuller option set and the explanation box.
+
+**Adding an option is the mirror of dropping one** — the two sets stand in a subset relation with
+nothing **replaced**, so the ch.3 test applies unchanged and both are reprints.
+
+The other two folds are cross-bank, and both are subsets:
+
+| printed | folded into | relation |
+|---|---|---|
+| Q95 "most common complication of OM" | `entep-ear-50` | the endpoint's five options minus *facial paralysis*; same key |
+| Q98 "commonest cause of mucopurulent, profuse, intermittent otorrhoea" | `entep-ear-199` | the endpoint's four options minus *chronic non-suppurative otitis media*; same key |
+
+#### ⚠️ THE SWEEP MISSED Q98 COMPLETELY, AND ABBREVIATION IS THE REASON
+
+`entep-ear-199` writes *"Acute suppurative otitis media"*, *"Chronic suppurative otitis media
+(tubotympanic type)"*, *"Chronic suppurative otitis media (atticoantral type)"*. Grade Gain writes
+**"AOM"**, **"CSOM safe type(tubo-tympanic)"**, **"CSOM unsafe type (attico-antral)"**.
+
+**Not one token matches.** Stages A–D key on exact normalised strings and saw nothing; stage E ranked
+the twin nowhere; **stage F scored it 0.13**. The fold was found only by *reading the staged question
+and recognising the three adjectives* — profuse, mucopurulent, intermittent — as the slide's own
+description of tubo-tympanic disease.
+
+**⚠️ NO TOKEN METHOD CAN COVER A SHARED ABBREVIATION.** This is a different blind spot from stage F's
+≤3-character filter: there the tokens were too short to survive, here they are simply *different
+words for the same thing*. **The mitigation is not another stage — it is reading the staged list.**
+Recorded on `entep-ear-199` as well as here.
+
+#### Two printing defects, recorded not repaired
+
+- **Q94's option b is truncated to the bare word "Brain."** Read as *brain abscess*, which is what the
+  bank's own three-tier list makes it. Recorded on `entqb-ear3-65`.
+- **Q101's printed mnemonic reads "1 ear + 2 nose"** for Gradenigo's triad, whose two non-otological
+  elements are **orbital** — retrobulbar pain and diplopia. Transcribed as printed, corrected in the
+  text, key unaffected. **A third instance of a printed box being wrong about something other than the
+  key**, after ch.2's Q31 and ch.3's Q75.
+- The bank writes the pinna is *"pushed forwards and downwards"* by a mastoid abscess where
+  `L16) Chronic otitis media.pdf` writes *"outwards and downwards"* — the same displacement from a
+  different angle. Recorded on `entqb-ear4-96`, not treated as an error.
+
+#### No mis-key, and no new disputed key
+
+**The first Grade Gain chapter with neither.** All 31 keys are consistent with the bank's own
+explanations and with the cached slides — including Q111, whose key (*Gram-negative organisms are NOT
+a feature of tubo-tympanic disease*) is lifted straight from the slide's investigations line for the
+**attico-antral** column.
+
+#### Five stems repaired
+
+Q110 (*"this photo"*), Q112 (*"The following image shows…"*), Q120 (**printed as a bare phrase with no
+question at all**, beside a photograph). Q91 and the rest needed none. **Q120 is a new shape of
+defect** — not a dangling reference but an *absent interrogative*: the page prints a heading, a
+picture and four options, and the reader is left to infer what is being asked.
+
+#### A three-question run this chapter is built on
+
+**Q101–Q105 take Gradenigo's triad apart element by element** — the cause of the facial pain
+(trigeminal ganglion), the cause of the diplopia (abducent nerve), the muscle (lateral rectus), the
+cause of the discharge (the underlying otitis media), and the triad itself. Written as a set, with
+each entry carrying the anatomy the next one needs, because after the shuffle they will never be met
+together.
+
+#### Chapter mapping
+
+**24 to `ent-csom`, 2 to `ent-aom`** (Q113, the site of the AOM perforation; Q93 is in `ent-csom` with
+`ent-aom` secondary because acute mastoiditis is taught on the chronic slide), **1 to `ent-otalgia`**
+(Q96, furunculosis — matching `entep-ear-152`, `entep-ear-167`, `entep-ear-171`, `entep-ear-217`).
+
+#### Images
+
+**`q-gg-16.jpg`** (Q110, central perforation, 283×243, 16.3 KB), **`q-gg-17.jpg`** (Q112, attic lesion,
+362×374, 32.1 KB) and **`q-gg-18.jpg`** (Q120, post-auricular swelling, 355×305, 27.0 KB) — one
+picture per page, so none takes a letter.
+
+**All three were right on the first cut.** That ends a run of nine wrong first attempts, and the reason
+is worth recording: these three sit in a **column of their own with white space above and below**,
+where the earlier ones were wedged between a question line and an option line. **The trap is the
+layout, not the method.**
+
+**Two of the three are `imgEssential`**; Q120's is not — the question is answerable from the words,
+and the photograph illustrates rather than carries it.
+
+#### Explanations: 11 printed, 20 authored
+
+**~35 %** printed — **the lowest Grade Gain rate so far** (ch.1 ~45 %, ch.2 45 %, ch.3 ~46 %). The
+running Grade Gain figure is now **50 of 121 printings, ~41 %**, still far better than the endpoint
+file's ~28 %.
+
+#### Verified in a real `file://` boot
+
+`parse errors: none`; `Q_ENT` **745** / `C_ENT` **82** / total **827**; `MODULES chapters: 104`;
+0 bad chapter refs, 0 duplicate ids, every answer in range, nothing missing a source, explanation or
+objective; **0 dead backticked ids**; **31 of 31 question images loading**; mojibake scan clean.
+By bank **697 endpoint / 21 house / 119 gradegain** = 837 over 827 — **ten** shared memberships across
+**nine** questions. Grade Gain's 119 = **110 origin + 9 `alsoIn`**.
+
+**Reconciles:** ch.1 29 (25 + 4) + ch.2 20 (20 + 0) + ch.3 41 (38 + 3) + ch.4 31 (27 + 4) =
+**121 printed, 110 written, 11 folded** — of which **9 are cross-bank `alsoIn`** and **2 are
+within-bank reprints held once**.
