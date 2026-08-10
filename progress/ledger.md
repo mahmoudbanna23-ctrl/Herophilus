@@ -3088,10 +3088,13 @@ auditors taught, now proven on content.
 1. **The printed numbering is CONTINUOUS ACROSS CHAPTERS, not per chapter.** Chapter 1 ran Q1–Q29;
    chapter 2 opens at **Q30** and closes at **Q49**. §14 read the numbering as restarting, which
    would have made every id from here on collide with chapter 1's.
-2. **The running header says "Chapter 1" on EVERY chapter.** It is printed once into the page
-   furniture and never updated. **The contents page is the only authority on which chapter a page
-   belongs to** — the header on the page itself is a defect, and a page-range plan built from it
-   would have been silently one chapter out for the whole file.
+2. **The running header says "Chapter 1" on EVERY chapter.** **⚠️ CORRECTED IN §14i (2026-08-10) —
+   THIS IS NOT A DEFECT.** The header's number is the **section** (1 = Ear, 2 = Nose, 3 = Throat) and
+   only the title beside it names the topic, so `Chapter 1` is *correct* on every Ear page. What the
+   contents page calls "chapters" are topics inside a section. Read that way, the header and the
+   continuous numbering agree with each other, and the restart at Nose Q1 follows from both. **The
+   contents page remains the only authority on which topic a page belongs to**, which is what makes a
+   page-range plan built from the header wrong at the topic level.
 
 Both facts are cheap to verify at the top of each topic and expensive to discover late. Check the
 first and last printed question number of every chapter against §14's map before staging it.
@@ -3986,3 +3989,163 @@ ch.5 35 (34 + 1) + ch.6 22 (19 + 3) + ch.7 18 (18 + 0) + ch.8 39 (35 + 4) = **23
 
 **Next: Ear ch.9, "Vertigo and vestibular diagnosis", book pp.40–43 (PDF 49–52), 25 promised, opens
 at Q236.** That closes the Ear section; Nose ch.1 begins at book p.44.
+
+---
+
+### §14i — Grade Gain, Ear chapter 9: "Vertigo and vestibular diagnosis" (2026-08-10) — **CLOSES THE EAR SECTION**
+
+**Book pp.40–42 (PDF 49–51); answers book p.43 (PDF 52), all on one page.**
+**26 printed, Q236 … Q261. 25 written (`entqb-ear9-236` … `entqb-ear9-261`, gap at 250), 1 folded.**
+All 25 in `ent-vertigo`.
+
+#### ⚠️⚠️ THE NUMBERING RESTARTS AT THE SECTION BOUNDARY, NOT AT THE CHAPTER
+
+This is the single structural finding of the batch and it changes the id scheme for everything that
+remains. The Ear section ran **one continuous sequence, Q1 … Q261, across nine chapters**. Book
+**p.44 opens `CHAPTER 2: NOSE — Anatomy of the nose — Questions — 1.`** — verified by rendering PDF
+p.53, not inferred. So the continuous run was a property of the **section**, and Nose begins again
+at **1**.
+
+**⚠️ THE RUNNING HEADER HAD BEEN SAYING SO ALL ALONG, AND IT WAS MISREAD FOR NINE CHAPTERS.** Book
+p.42 heads **`Chapter 1: Vertigo and Vestibular diagnosis`** — the *number* is the **section** (1 =
+Ear) and the *title* is the topic. Earlier notes recorded this as *"the header says Chapter 1 on
+every page"* and treated the constant `1` as a defect of the header. **It is not a defect: `1` is
+correct on every Ear page, because the whole Ear section is Chapter 1.** What the contents page calls
+"chapters" are topics inside a section. Once read that way, the continuous numbering and its restart
+at Nose stop being surprises and become the obvious consequence — **the book has three chapters, not
+twenty-nine.**
+
+**Consequence: a Nose id of `entqb-nose-1` would collide with nothing today, but `entqb-1` or any
+scheme that trusts the printed number as globally unique would collide immediately.** Ear ids already
+carry a chapter token (`entqb-ear9-236`), so the fix is only to keep doing that — **the section token
+is now load-bearing, not cosmetic.** Nose ids take the form `entqb-nose<ch>-<printed n>`.
+
+**⚠️ Do not assume the Nose section is one continuous run either.** The Ear section's behaviour was
+discovered chapter by chapter and was wrong-footed twice before it settled. Read the first two
+chapters' opening numbers before committing to a scheme.
+
+#### 26 against 25 promised — seven chapters over, eight page ranges right
+
+Running record: **29/29 ✓, 20/20 ✓, 41/40, 31/30, 35/24, 22/21, 18/17, 39/38, 26/25.** The contents
+map's **page ranges have now been correct nine chapters running — every chapter of the Ear section**;
+its **counts have been wrong seven times, always upward.** The rule stands unchanged and is now
+proven over a whole section: **trust the map for *where*, never for *how many*.**
+
+#### The answer block did NOT overlap here
+
+All 26 questions sit on pp.40–42 and the whole key sits on p.43 alone — the cleanest layout of the
+run. Ch.4 and ch.6 shared a page between a question tail and the answer block and it cost four
+questions the first time; ch.7, ch.8 and now ch.9 did not. **It remains a property of the page, so it
+is checked every chapter regardless.**
+
+#### One fold — and it is the bank reprinting itself
+
+**Q250 → `entqb-ear7-181`** (ch.7, `ent-hearing`). Both print *unilateral SNHL or unilateral tinnitus
+→ next step*, with the same three options reworded (*to exclude vestibular schwannoma* for *to rule
+out CPA tumors*) and a **fourth option, tympanometry, added**. By the settled test **an added
+distractor is a reprint, a replaced one is a new question**, so the two are held once. **A within-bank
+reprint takes no `alsoIn`** — that field names *other banks* only.
+
+**⚠️ THE FOLD CONVERTED AUTHORED TEXT INTO SOURCED TEXT, AND THE MARKER HAD TO COME OFF.**
+`entqb-ear7-181` carried `Written for this bank — ENT QB prints no explanation here.` because ch.7
+printed no box. **Ch.9's printing of the same question DOES print one** — *"Any patient with
+unilateral otologic symptom → suspect Vestibular schwannoma"* — so the marker was removed and the
+sentence quoted into the explanation. This is the **second** time a fold has done this (ch.8 did it to
+`entep-ear-121`'s 5-year implant window). **Check for it on every fold: the held entry's provenance
+can change even though its text barely does.**
+
+That single removal is also why the authored-marker counter moved by **20** across **21** newly
+authored entries. **A counter that does not move by the expected amount is a finding** — it was
+chased to its cause rather than accepted.
+
+#### Two stems repaired, and one is a defect of a kind not seen before
+
+- **Q243 and Q244** both open *"In the previous case…"* — the linked-set problem, fatal here because
+  `data\questions.js` **shuffles the deck**. Both were repaired to name **BPPV** explicitly from Q242,
+  which the answer key confirms.
+- **⚠️ Q245 PRINTS TWO QUESTIONS IN ONE STEM.** It reads *"…what is the most probable cause? The
+  pathology of the previous disease is characterized by which of the following?"* — and **the four
+  options answer only the second.** The first question is left with no options at all. The printed
+  box (*"The case is Meniere disease"*) supplies the missing answer, so the entry was repaired to ask
+  the pathology question and the diagnosis is carried in the explanation. **This is a new defect
+  category: not a linked set, but a set collapsed into one stem with only one option list.**
+
+#### Two printed defects recorded rather than silently corrected
+
+- **Q251's stem writes "discrimation" for discrimination.**
+- **Q260's printed box writes "betahestine" for betahistine.**
+
+Both are transcription-level typos in the source, corrected in the entry with the printing recorded in
+`source`, per `CLAUDE.md` §4.
+
+#### Q256 prints only three options
+
+*"All of the following are causes of vertigo and nystagmus without hearing loss except"* — three
+options where every neighbour prints four. Held as printed; the schema allows 2–5. **Not a truncation:
+book p.42 was re-rendered at 200 dpi and read — Q256 ends at `c. BPPV` with the rest of the column
+blank, and the page's lower third is empty white space.** The same render is what settled the header
+question above.
+
+#### No figures
+
+The chapter prints none — the first Grade Gain chapter since ch.7 with nothing to cut. The image
+count therefore stays at **44**.
+
+#### Four material gaps answered from general knowledge and tagged
+
+The **caloric test and COWS** (the slides name the test but not the direction rule), the **posterior
+canal** as the commonest site in BPPV, the **lateral canal** as the commonest site of a
+cholesteatoma-induced fistula, and the **Tullio phenomenon** beyond the printed box's two-line list.
+All four are tagged in place and added to §11's material-gap list.
+
+#### The chapter is well grounded where the slides reach
+
+`L20) vertigo.pdf` supplies the **terminology separation** (disequilibrium / dizziness / syncope and
+pre-syncope / ataxia / vertigo), the **central causes** list — cerebellar lesions, MS, vertiginous
+epilepsy, VBI, lateral medullary syndrome, migraine-associated vertigo — and the **peripheral** set
+including BPPV, vestibular neuritis, labyrinthitis and Ménière's. `L13,14) AudioVestibulae
+Evaluation.pdf` supplies *"Vertigo is Vestibular"*, the instruction to make the patient **describe the
+sensation rather than say "dizzy"**, and the figure that **history alone gives a provisional diagnosis
+in 80 % of cases** — which is what makes Q259 (*"the first step to diagnose vertigo is"* → **History**)
+a slide-backed question rather than a truism.
+
+#### Explanations: 5 printed, 21 authored
+
+**~19 % printed — the thinnest chapter of the Grade Gain run.** Running Grade Gain figure:
+**109 of 261 printings, ~42 %.**
+
+#### Verified in a real `file://` boot
+
+`parse errors: none`; `Q_ENT` **876** / `C_ENT` **82** / total **958**; `MODULES chapters: 104`;
+0 bad chapter refs, 0 duplicate ids, every answer in range, nothing missing a source, explanation or
+objective; **0 dead backticked ids**; **44 of 44 question images loading**; mojibake scan clean.
+By bank **697 endpoint / 21 house / 255 gradegain** = 973 over 958 — **fifteen** shared memberships
+across **fourteen** questions. Grade Gain's 255 = **241 origin + 14 `alsoIn`**.
+
+#### ⚠️ THE FILE WOULD NOT PARSE, AND THE APP DID NOT SAY SO
+
+The first validation run reported `Q_ENT: 0` and the harness's only message was **`Script error.
+@line 0:0`** — the whole of `Q_ENT` gone, the app still booting, nothing thrown that named a file or a
+line. **Over `file://` a syntax error in a cross-origin script is redacted to exactly that.** The
+cause was one entry's explanation quoting the slide's phrase **`the word 'Dizzy'`** inside a
+single-quoted JS string, with the apostrophes unescaped — every other apostrophe on the same line was
+escaped correctly, which is why it read as fine.
+
+**The diagnosis method, which is the reusable part:** inline the whole data file into a scratchpad
+`<script>` tag in a local HTML page. Same-origin, so the browser reports the real message —
+`Uncaught SyntaxError: Unexpected identifier 'Dizzy' @line 7823 col 644` — and subtracting the
+harness's own preamble gives the line in the data file. **This is the third time a data-file syntax
+slip has presented as a content failure** (§11 records the missing comma of 2026-08-04). It is now the
+first thing to check whenever a count collapses to the cases alone.
+
+**Every cross-referenced page number in this batch was read out of the target entry's own `source`
+field before being written** — §14g's lesson, applied for the third batch running.
+
+**Reconciles:** ch.1 29 (25 + 4) + ch.2 20 (20 + 0) + ch.3 41 (38 + 3) + ch.4 31 (27 + 4) +
+ch.5 35 (34 + 1) + ch.6 22 (19 + 3) + ch.7 18 (18 + 0) + ch.8 39 (35 + 4) + ch.9 26 (25 + 1) =
+**261 printed, 241 written, 20 folded** — **14 cross-bank `alsoIn`** and **6 within-bank reprints held
+once**. **That is the whole Ear section: the contents page promised 244, the pages printed 261.**
+
+**Next: the NOSE section. Nose ch.1, "Anatomy of the nose", book p.44 (PDF 53), 46 promised,
+questions p.44 and answers p.48 — and it opens at Q1 again.** Nose holds 9 chapters (258 promised),
+Throat 11 (578 promised).
