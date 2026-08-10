@@ -4317,3 +4317,164 @@ material was first cited to `L21) facial nerve.pdf`, **which does not exist** �
 **Next: Nose ch.2, "Epistaxis and smell Disorders", book pp.50–52 (PDF 59–61), answers p.53 (PDF 62),
 37 promised.** ⚠️ Check its first question's number before choosing ids — if it opens at **47** the
 Nose section is one continuous run like Ear; if at **1**, the numbering restarts per topic here.
+
+---
+
+### §14k — Grade Gain, NOSE chapter 2: "Epistaxis and smell disorders" (2026-08-10)
+
+**Book pp.50–53 (PDF 59–62); answers book pp.53–54 (PDF 62–63).**
+**38 printed, Q47 … Q84. 34 written (`entqb-nose2-47` … `entqb-nose2-84`, gaps at 63, 64, 65, 66), 4 folded.**
+Chapters: `ent-epistaxis` 26, `ent-noseanat` 3, `ent-nasalmass` 2, `ent-septum` 2, `ent-nasalobs` 1.
+
+#### ✅ IT OPENS AT Q47 — THE NOSE SECTION IS ONE CONTINUOUS RUN
+
+This settles the question §14j left open. Nose ch.1 ran **Q1–Q46**; ch.2 resumes at **47**, not at 1.
+So the numbering restarts **only at a section boundary**, exactly as the Ear section behaved
+(Q1–Q261 over nine topics). **Nose ch.1's ids stand and nothing needs rework.** The topic token in
+`entqb-nose2-…` is kept for readability, not for uniqueness — the numbers alone could not collide.
+
+**Projected: Nose should end near Q258+ and Throat should restart at 1.** Verify at the Throat
+boundary (book p.87) rather than assuming.
+
+#### 38 against 37 promised, and the answers overlapped a second time running
+
+Running record: 29/29 ✓, 20/20 ✓, 41/40, 31/30, 35/24, 22/21, 18/17, 39/38, 26/25, 46/46 ✓, **38/37.**
+Page ranges right **eleven** chapters running; counts wrong **eight** times, always upward.
+
+**Book p.53 carries Q81–Q84 in the left column and the Answers heading in the right** — the same
+overlap as Nose ch.1. **Two Nose chapters, two overlaps; the Ear section did it three times in nine.**
+
+#### Four folds, all cross-bank into endpoint — and one is verbatim down to a typo
+
+| Grade Gain | Folded into | Evidence |
+|---|---|---|
+| **Q63** *"…All of the following may be used to stop the bleeding EXCEPT"* | **`entep-nose-14`** (p.917) | same four options, same key |
+| **Q64** *"Recurrence of this bleeding in the previous case may need"* | **`entep-nose-68`** (p.1063) | near-verbatim stem, same options and key |
+| **Q65** *"The most common cause of epistaxis in children"* | **`entep-nose-61`** (p.1049) | **verbatim** |
+| **Q66** *"The kiesselbach's plexus in the little area is formed by the following except"* | **`entep-nose-65`** (p.1057) | **verbatim, including the misspelling "shenopalatine" in option b** |
+
+**⚠️ THE SHARED TYPO IS THE STRONGEST EVIDENCE YET THAT ONE BANK IS SET FROM THE OTHER.** Two banks
+can independently ask the same fact; they do not independently misspell *sphenopalatine* the same way
+in the same option slot. Worth remembering when judging future near-matches: **a shared defect is
+stronger evidence than a shared answer.**
+
+**⚠️ GRADE GAIN MERGES ENDPOINT'S TWO VIGNETTES.** Endpoint runs the same case twice — a **cardiac
+50-year-old** asking what may *not* be used (`entep-nose-14`) and a **diabetic 60-year-old** asking
+what ligation is needed (`entep-nose-68`). Grade Gain's Q63 asks the *first* question over the
+*second* vignette. Neither the options nor the key changes, so the merge is cosmetic — but it is why
+Q63's stem matches one entry and its content matches the other, and it is the sort of thing that makes
+a stem-only comparison misleading.
+
+Grade Gain's memberships are now **319 origin + 20 `alsoIn`**.
+
+#### ⚠️ THE BANK CONTRADICTS ITSELF ON ADJACENT PAGES — and it is a difference of menus
+
+**Q58** (p.50) asks the common cause of epistaxis in children and keys **nose picking**.
+**Q65** (p.51) asks the most common cause of epistaxis in children and keys **idiopathic**.
+
+**Neither option list contains the other's key** — Q58 offers no *idiopathic*, Q65 offers no *nose
+picking* — so each keys the best it prints. The lecture supports both readings: *"Idiopathic"* heads
+the aetiology slide, and the age table reads *"Children — foreign body, **nose picking**"*
+(`L25.1) epistaxis.pdf`). Recorded in both entries with the instruction to **read the option list, not
+your memory of the fact.**
+
+**This is the same shape as §14j's choanal-atresia airway finding** — two correct answers separated by
+what each question offers. **It is now a recognised category and should be looked for**, not treated as
+a defect each time.
+
+#### One more two-correct-answers option list, and a box that names a different entity
+
+- **Q72** (hyperosmia + hyperacusis in a 25-year-old) keys **"Personality disorders"**, while its own
+  printed box says *"Hyperosmia can be the 1st sign of **schizophrenia**"*. **Schizophrenia is a
+  psychotic disorder, not a personality disorder.** The lecture lists *"Psychiatric conditions: for
+  example, depression, hysteric conversion reactions, and schizophrenia"* among causes of smell
+  dysfunction (`L25.2) smell.pdf`), so the option is best read as shorthand for *a psychiatric cause*.
+  The keyed letter is the only defensible one in the list; recorded, not corrected.
+
+#### One stem repaired
+
+**Q64** opens *"Recurrence of this bleeding in the previous case"* — but it folded into
+`entep-nose-68`, whose own stem already names the case, so no repair was needed in the app. Recorded
+here because the linked-set pattern recurs and would have needed repair had the fold not absorbed it.
+
+#### No figures
+
+The chapter prints none; the image count stays at **45**.
+
+#### The best-grounded chapter of the Nose section so far
+
+`L25.1) epistaxis.pdf` carries nearly the whole epistaxis half: the **bimodal age distribution**, the
+**anterior 90 % / posterior** split with its full comparison, **Little's area** with its four arteries
+and its drying-and-finger-nail mechanism, **Woodruff's plexus** on the lateral wall behind the inferior
+turbinate, the **bleeding areas** list including the ethmoidal vessels, the **four-part aetiology**
+(idiopathic / local / systemic / environmental) with each category's contents, the **five prognostic
+omens**, *"Severe + elderly patient = hypertension"*, and the **age table** — children, adults, middle
+age, old age — which alone keys four separate questions.
+
+`L25.2) smell.pdf` carries the smell half just as completely: the **conductive/sensorineural**
+division in the slide's own words, the **six-term vocabulary table** (anosmia, hyposmia, hyperosmia,
+dysosmia, parosmia, phantosmia), the **percentage cause table** (head injury 19 %, post-URI 17 %,
+idiopathic-nasal 17, nasal/sinus 16 %), **psychiatric and epileptic** causes, the **10 %** shearing
+figure in major head injury, the **Covid-19** figures (**50 %** sudden loss, **90 %** improved by six
+weeks), the **AR-versus-Covid** table, the **investigation** list including *"Seizure history …… EEG"*,
+and the **treatment** list ending *"oral steroids are contraindicated in the acute stage"*.
+
+**⚠️ ONE TERM IS ABSENT FROM THE SLIDE AND WAS FILLED FROM ENDPOINT INSTEAD OF FROM GENERAL
+KNOWLEDGE: CACOSMIA.** `L25.2` gives six terms and not this one. Endpoint's own printed box at
+`entep-mfe5-17` supplies the clinically important split — a **true** (objective) cacosmia, smelt by
+others too and implying a real source, against a **false** (subjective) one. **Using the other bank as
+a source is preferable to tagging outside knowledge where the other bank actually prints it.**
+
+**Six points needed general knowledge and are tagged in place:** the **three-part division of the
+maxillary artery** by the lateral pterygoid and its branch table, the **24–12–6 rule** of the medial
+orbital wall, the **retrocolumellar vein**, the **septal spur's stretch-and-dry mechanism**, the
+**trigeminal common chemical sense** behind the ammonia test, and **hyperosmia's other causes**
+(migraine, pregnancy, Addison's). All six are added to §11's material-gap list.
+
+#### Explanations: 5 printed, 29 authored
+
+**~13 % printed.** Boxes at Q59, Q61, Q62, Q72 and Q80. Running Grade Gain figure: **120 of 345
+printings, ~35 %.**
+
+#### ⚠️ THE MARKER COUNT WAS SIX SHORT — the second batch running
+
+Expected 29 new markers, got 23. The missing six were **Q73, Q74, Q76, Q78, Q79 and Q83** — not a
+contiguous block this time but scattered across all three writing blocks, every one an entry whose
+explanation ended on a strong closing line that read as finished. **The failure mode is now clear: the
+marker gets dropped when the last paragraph feels like an ending.** Computing the expected delta before
+looking at the actual one caught it in both batches.
+
+#### ⚠️ AND THE PARSE BROKE TWICE ON THE FOLD NOTES, BEFORE THE ENTRIES WERE EVEN WRITTEN
+
+Three unescaped apostrophes — *endpoint's*, *entry's*, *Grade Gain's* in one note, and *the other's* in
+another — inside single-quoted `source` strings. Same failure as §14i's *'Dizzy'*, and found the same
+way: **inline the file into a scratchpad `<script>` for a real line and column.**
+
+**⚠️ A NAIVE QUOTE-BALANCE SCAN OVER THIS FILE IS INVALID and was tried and discarded.** Counting
+unescaped `'` per line and flagging odd counts returned **150 lines** on a file with exactly one
+fault — because `stem:"…"` and `objective:"…"` are legitimately double-quoted and legitimately
+contain apostrophes. **This is the same trap as the `/*` vs `*/` count in `CLAUDE.md` §6: the parse is
+the verdict, a count is not.** The three blocks of entries written afterwards parsed **first time**,
+because every apostrophe was escaped as it was typed.
+
+#### Verified in a real `file://` boot
+
+`parse errors: none`; `Q_ENT` **954** / `C_ENT` **82** / total **1,036**; `MODULES chapters: 104`;
+0 bad chapter refs, 0 duplicate ids, every answer in range, nothing missing a source, explanation or
+objective; **0 dead backticked ids**; **45 of 45 question images loading**; mojibake scan clean.
+By bank **697 endpoint / 21 house / 339 gradegain** = 1,057 over 1,036 — **twenty-one** shared
+memberships across **twenty** questions. Grade Gain's 339 = **319 origin + 20 `alsoIn`**.
+
+**Reconciles:** Ear 261 (241 + 20) + Nose ch.1 46 (44 + 2) + Nose ch.2 38 (34 + 4) = **345 printed,
+319 written, 26 folded** — **20 cross-bank `alsoIn`** and **6 within-bank reprints held once**.
+
+**Next: Nose ch.3, "Rhinitis", book pp.55–60 (PDF 64–69), answers p.61 (PDF 70), 60 promised — the
+largest Nose topic, and equal-fourth largest in the book behind Throat ch.4 (98), ch.10 (66) and
+ch.8 (65).** It should open at **Q85**, and it is six question pages, so expect the count to run over.
+
+**⚠️ The dedicated slides are `L29) Rhinitis 1.txt` and `L30) Rhinitis 2.txt`** — both cached, and
+neither was in the list first written here, which had to be corrected by listing the directory.
+`L27.1) ACUTE rhinosinusitis.txt`, `L27.2) Chronic Sinusitis.txt`, `L31) nasal symptoms 1.txt` and
+`L32) nasal symptoms 2.txt` supplement them. **This is the second lecture-filename error in three
+batches** (§14j cited a non-existent `L21) facial nerve.pdf`). **List `content\ent\lectures\` before
+citing or planning — a filename from memory is as unreliable as a page number from memory.**
