@@ -4149,3 +4149,171 @@ once**. **That is the whole Ear section: the contents page promised 244, the pag
 **Next: the NOSE section. Nose ch.1, "Anatomy of the nose", book p.44 (PDF 53), 46 promised,
 questions p.44 and answers p.48 — and it opens at Q1 again.** Nose holds 9 chapters (258 promised),
 Throat 11 (578 promised).
+
+---
+
+### §14j — Grade Gain, NOSE chapter 1: "Anatomy of the nose" (2026-08-10) — **OPENS THE NOSE SECTION**
+
+**Book pp.44–48 (PDF 53–57); answers book pp.48–49 (PDF 57–58).**
+**46 printed, Q1 … Q46. 44 written (`entqb-nose1-1` … `entqb-nose1-45`, gaps at 8 and 46), 2 folded.**
+Chapters: `ent-noseanat` 28, `ent-nasalobs` 10, `ent-epistaxis` 3, `ent-pharanat` 2, `ent-sinusitis` 1.
+
+#### ✅ The numbering restarted at 1, exactly as §14i predicted
+
+Book p.44 heads **`CHAPTER 2: NOSE`** and its first question is numbered **1**. The running header on
+pp.45–49 then reads **`Chapter 2: Anatomy of the Nose`** — **number = section, title = topic**,
+confirming the correction §14i made to the nine-chapter misreading. Ids therefore carry a section
+token (`entqb-nose1-…`) and cannot collide with the Ear run.
+
+**⚠️ Still unverified for Nose: whether the section is ONE continuous run like Ear.** Ear ran Q1–Q261
+across nine topics. Nose ch.2 must be checked at its first question before its ids are chosen — if it
+opens at 47 the section is continuous, if at 1 the restart is per topic.
+
+#### ✅ 46 against 46 promised — the contents page is right for the first time since Ear ch.2
+
+Running record: **29/29 ✓, 20/20 ✓, 41/40, 31/30, 35/24, 22/21, 18/17, 39/38, 26/25, 46/46 ✓.** Page
+ranges now correct **ten** chapters running; counts wrong seven times, always upward — **and right
+three times.** The rule is unchanged: trust the map for *where*, count what is printed for *how many*.
+
+#### ⚠️ The answer block overlapped again — and it cost six questions' worth of reading
+
+Book **p.48 carries Q41–Q46 in the left column and "Anatomy of nose / Answers" beginning in the
+right.** Stopping at the TOC's "Page As" would have dropped six questions, including the whole
+definitive-treatment and orbital-complication pair. Ch.4 and ch.6 of Ear did this, ch.7–9 did not, and
+now the first Nose chapter does. **It remains a property of the page; check every chapter.**
+
+#### Two folds, both cross-bank, both into endpoint
+
+| Grade Gain | Folded into | Why |
+|---|---|---|
+| **Q8** *"All of the following open into the middle meatus except"* | **`entep-nose-21`** (p.931) | same stem, same four sinuses, same key — only *Anterior ethmoidal sinus* for *Anterior ethmoid* |
+| **Q46** *"Orbit complications can occur through which of the following sinuses?"* | **`entep-nose-34`** (p.965) | same four sinuses, same key, same question |
+
+Both gained `alsoIn:['gradegain']`. Grade Gain's memberships are now **285 origin + 16 `alsoIn`**.
+
+**⚠️ STAGE F FOUND Q8; STAGE B DID NOT.** The two option sets differ only by the four characters
+*"al sinus"* on one option, so exact-set matching missed it and it surfaced only in the option-token
+ranking at **0.71**. This is the abbreviated-versus-spelled-out blind spot §7 records, hitting for the
+third time. **Stage F is not optional.**
+
+#### ⚠️ Two option lists contain TWO correct answers — a new defect category
+
+Neither is a mis-key: in both cases the printed key is itself right, and the **option list** is what is
+defective. Recorded rather than corrected, because correcting a key that is not wrong would hide the
+real fault.
+
+- **Q11** *"All of the following form the bony septum except"* — options run vomer / perpendicular
+  plate / **nasal bone** / **cribriform plate**, keyed to the cribriform. But the lecture's own septum
+  is *"perpendicular plate of ethmoids, Vomer bone"* (`L23) Anatomy of the Nose.pdf`) — **the nasal
+  bone is not septal either.** Endpoint asks the same fact with *quadrangular cartilage* in that slot
+  (`entep-nose-22`), which leaves exactly one exception; replacing it is what created the ambiguity.
+- **Q19** *"__________ are the posterior group of sinuses"* — offers **posterior ethmoid** and
+  **sphenoid** and keys the sphenoid. On the slide's own map the posterior group is **both of them**.
+
+**This is distinct from the eight disputed keys in §11.** There the bank contradicts a source or
+itself; here the bank's answer is correct and its question is unanswerable as set.
+
+#### ⚠️ A third defect of the same family: a key that drops its own discriminator
+
+**Q29** (sneeze reflex arc) offers *"Afferent: Trigeminal **(V1)**, Efferent: Vagus"* and *"Afferent:
+Trigeminal **(V2)**, Efferent: Vagus"* — identical but for the division. **The printed key reads
+"A. Afferent: Trigeminal, Efferent: Vagus nerve", omitting the qualifier that separates them.** The
+key names the right option letter, so the entry is unambiguous; but a learner checking the answer text
+alone cannot tell which was meant. The V1 reasoning — the sneeze afferent is the **anterior ethmoidal
+nerve**, a nasociliary branch of V1 — is supplied in the explanation and tagged as outside the
+material.
+
+#### Printed transcription defects, recorded not silently repaired
+
+- **Q45's stem prints its number twice** — *"45.45.Pus collected…"*.
+- **Q36's key prints its number twice** — *"36.36.Correct answer B."*
+- **Q25's key is a bare "B."** with no option text beside it, the only such key in the chapter.
+- **Q16's option d reads "Supereior ethmoidal cell"** — the chapter's only spelling defect.
+- **Q22 and Q42 print only THREE options.**
+
+#### One stem repaired, one figure block cut
+
+**Q40** opens *"In the previous case…"* and is repaired to name bilateral choanal atresia, because the
+deck is shuffled. **Q39 prints two figures** — a nasal endoscopy labelled MT / IT / S above an axial
+CT — cropped together as **`q-gg-47.jpg`** (560×691, 101 KB) in the stacked order the page prints
+them, since the schema holds one `image` per entry and the page's own layout is a single column.
+**The crop was right first time**, because both figures sit clear of the text with white space around
+them — the ch.4/ch.6 situation, not ch.8's. Image count **44 → 45**.
+
+**The caption names modality and view only** — *"Nasal endoscopy with septum and turbinates labelled,
+above an axial CT of the nose and skull base"*. **`imgEssential` is NOT set**: the stem alone
+(3-hour neonate, cyanosis worse when not crying, feeding difficulty) is fully diagnostic.
+
+#### ⚠️ A cross-bank difference of MENUS, not of medicine
+
+**Q40** asks the immediate management of bilateral choanal atresia and keys **intubation with
+orogastric feeding**. Endpoint's `entep-mfe4-31` asks the same decision and keys **oropharyngeal
+airway placement**. The lecture settles it: *"Bilateral: creating oral airway — 1. Mcgovern nipple
+2. Oral airway 3. intubation"* (`L23`). **Grade Gain's option list simply does not offer the first two
+rungs of that ladder**, so its key is the best of what it prints. Recorded in both entries so the
+concept is not learnt as "intubation". **This is NOT a cross-bank divergence in the §11 sense** — the
+banks agree on the medicine and differ only in what they offer.
+
+#### The best-grounded chapter of the Grade Gain run so far
+
+`L23) Anatomy of the Nose.pdf` carries an unusual amount of this chapter directly: the **roof and
+floor**, the **four-line drainage map**, the **two-line bony/cartilaginous septum**, **Kiesselbach's
+four arteries** and Woodruff's plexus, the **three interior areas and their linings**, the **ordered
+function list**, and then the whole choanal-atresia block — *"most common congenital nasal anomaly"*,
+**1 in 7,000–10,000**, **2:1 unilateral:bilateral**, **F > M**, right-sided predominance, **6 %
+chromosomal anomalies**, the **CHARGE** acronym in full, **obligate nasal breathing for 6–8 weeks**,
+*"cyclical cyanosis alleviated by crying"*, the **CT** investigation, the **oral-airway ladder**, the
+three surgical approaches, delayed unilateral repair to reduce **restenosis**, and **CNPAS** as the
+mimic. `L25.1) epistaxis.pdf` supplies the rest of the vascular content plus *"Idiopathic"* and
+*"Severe + elderly patient = hypertension"*, which key Q23 and Q24 outright.
+
+**Five points needed general knowledge and are tagged in place:** the **lymphatic drainage** of the
+nasal cavity (absent from all nine cached nose files), the **venous route to the cavernous sinus**,
+the **osteomeatal complex's component list** (agger nasi, bulla, uncinate, hiatus semilunaris,
+infundibulum, lamina papyracea), the **sneeze reflex arc**, and the **tongue's four-nerve table**.
+All five are added to §11's material-gap list.
+
+#### Explanations: 6 printed, 38 authored
+
+**~13 % printed — thinner than Ear ch.9.** Running Grade Gain figure: **115 of 307 printings, ~37 %.**
+Boxes at Q1, Q2, Q10, Q12, Q18 and Q22.
+
+#### ⚠️ THE MARKER COUNT WAS 15 SHORT, AND THAT IS HOW A WHOLE BLOCK WAS CAUGHT
+
+The first validation gave **674 markers** where **689** was owed. Chasing the arithmetic found the
+marker missing from **Q11, Q15, Q19 and the entire twelve-entry block Q34–Q45** — a block written in
+one pass in which the closing marker was simply never typed. Nothing else in the run would have caught
+it: every entry parsed, cited, and read correctly, and the app rendered them without complaint. **The
+only signal was a counter that did not move by the expected amount.** Fixed by appending the marker to
+all fifteen; the count now reconciles exactly as 38 authored + 6 printed = 44.
+
+**This is the third time the marker counter has caught real damage** (§14g put the marker in the wrong
+field, §14i found a fold converting authored text to sourced). **Compute the expected delta before
+looking at the actual one.**
+
+#### ⚠️ And the dead-id check caught a forward reference again
+
+`entqb-nose1-4`'s explanation cited **`entqb-nose1-8`** in backticks — an id that was folded and
+therefore never written. Rewritten to name the fold's destination (`entep-nose-21`). §14i's rule
+holds: **never backtick an id that does not exist yet, and re-check after every fold.**
+
+#### Verified in a real `file://` boot
+
+`parse errors: none`; `Q_ENT` **920** / `C_ENT` **82** / total **1002**; `MODULES chapters: 104`;
+0 bad chapter refs, 0 duplicate ids, every answer in range, nothing missing a source, explanation or
+objective; **0 dead backticked ids**; **45 of 45 question images loading**; mojibake scan clean.
+By bank **697 endpoint / 21 house / 301 gradegain** = 1,019 over 1,002 — **seventeen** shared
+memberships across **sixteen** questions. Grade Gain's 301 = **285 origin + 16 `alsoIn`**.
+
+**Every cross-referenced page number in this batch was read out of the target entry's own `source`
+field before being written**, and one lecture citation was caught the same way: the chorda tympani
+material was first cited to `L21) facial nerve.pdf`, **which does not exist** — the file is
+`L15) Facial nerve disorders.pdf`, confirmed by reading it before the citation was corrected.
+**⚠️ A LECTURE FILENAME WRITTEN FROM MEMORY IS THE SAME TRAP AS A PAGE NUMBER.** List the directory.
+
+**Reconciles:** Ear 261 (241 + 20) + Nose ch.1 46 (44 + 2) = **307 printed, 285 written, 22 folded** —
+**16 cross-bank `alsoIn`** and **6 within-bank reprints held once**.
+
+**Next: Nose ch.2, "Epistaxis and smell Disorders", book pp.50–52 (PDF 59–61), answers p.53 (PDF 62),
+37 promised.** ⚠️ Check its first question's number before choosing ids — if it opens at **47** the
+Nose section is one continuous run like Ear; if at **1**, the numbering restarts per topic here.

@@ -2,7 +2,7 @@
 
 Running record, organised around *resuming*. ISO dates; unverified marked as such. **Only what is needed to pick the work up cold; under 200 lines — `(Get-Content).Count`.** Method in `CLAUDE.md`, detail in `ledger.md` — **`CLAUDE.md` imports this, so repeating its rules costs budget.**
 
-## Resume here — **✅ `ENT endpoint.pdf` CLOSED. ✅ Grade Gain EAR SECTION CLOSED (all 9 topics, 261 printed). NOSE next.**
+## Resume here — **✅ `ENT endpoint.pdf` CLOSED. ✅ Grade Gain EAR CLOSED (261 printed). NOSE OPEN — ch.1 done, ch.2 next.**
 
 1. **GRADE GAIN IS OPEN — `ENT QB.pdf`, contents page promises 1,080** (Ear 244, Nose 258, Throat 578
    over 29 topics; map in `ledger.md` §14). **⚠️ PDF page = book page + 9.**
@@ -14,23 +14,26 @@ Running record, organised around *resuming*. ISO dates; unverified marked as suc
    only the title beside it names the topic. **Ids must carry a section+topic token** —
    `entqb-ear9-236`, `entqb-nose1-1` — or Nose collides with Ear. **⚠️ Do not assume Nose is one run
    either: check its first two topics' opening numbers.**
-   **⚠️ THE CONTENTS PAGE'S PAGE RANGES WERE RIGHT ALL NINE TIMES; ITS COUNTS WERE NOT** — ch.1–2
-   matched, then **41/40, 31/30, 35/24, 22/21, 18/17, 39/38, 26/25, always upward.** Trust the map for
-   *where*, never for *how many*: render the range, then count what is printed. **EAR ch.1–9 DONE**:
-   29 (25 written + 4 folded), 20 (20+0), 41 (38+3), 31 (27+4), 35 (34+1), 22 (19+3), 18 (18+0),
-   39 (35+4), 26 (25+1) = **261 printed, 241 written, 20 folded** against 244 promised. **~42 % carry a
-   printed explanation**; the rest are authored. **⚠️ A QUESTION TAIL AND THE ANSWER BLOCK CAN SHARE A
-   PAGE** — "Page As" is where answers *begin*; it cost **four** questions in ch.4, and ch.6 repeated
-   it, but ch.7–9 did not — **it is a property of the page, check every chapter.**
-   **⚠️ THE BANK ALSO REPRINTS ITSELF ACROSS CHAPTERS** — 6 folds so far are within-bank, which take
-   **no `alsoIn`**, just hold once. **⚠️ NEVER BACKTICK AN ID THAT DOES NOT EXIST YET** — a forward
-   reference to the next chapter reads as a dead id. **⚠️ A FOLD CAN CONVERT AUTHORED TEXT INTO SOURCED
-   TEXT** — it has happened **twice** (ch.8's box gave `entep-ear-121` its 5-year implant window; ch.9's
-   gave `entqb-ear7-181` an explanation it had authored), and both times the tag or marker had to come
-   off. Check on every fold — **and reconcile the marker counter afterwards, because that is how the
-   second one was caught.**
-   **Next: NOSE ch.1, "Anatomy of the nose", book p.44 (PDF 53), 46 promised, questions p.44 and
-   answers p.48 — opening at Q1 again.** Nose holds 9 topics (258 promised), Throat 11 (578).
+   **⚠️ PAGE RANGES RIGHT ALL TEN TIMES; COUNTS WRONG SEVEN, ALWAYS UPWARD** — 29/29 ✓, 20/20 ✓, 41/40,
+   31/30, 35/24, 22/21, 18/17, 39/38, 26/25, **46/46 ✓**. Trust the map for *where*, never for *how
+   many*: render the range, then count what is printed. **EAR ch.1–9 = 261 printed, 241 written,
+   20 folded** against 244 promised (29, 20, 41, 31, 35, 22, 18, 39, 26). **NOSE ch.1 = 46 printed,
+   44 written, 2 folded.** **~37 % carry a printed explanation**; the rest are authored.
+   **⚠️ A QUESTION TAIL AND THE ANSWER BLOCK CAN SHARE A PAGE** — "Page As" is where answers *begin*;
+   it cost **four** questions in Ear ch.4, Ear ch.6 repeated it, Ear ch.7–9 did not, and **Nose ch.1
+   did again (six questions on the answers' page)** — **it is a property of the page, check every one.**
+   **⚠️ THE BANK ALSO REPRINTS ITSELF** — 6 within-bank folds take **no `alsoIn`**, just hold once.
+   **⚠️ NEVER BACKTICK AN ID THAT DOES NOT EXIST YET** — caught **twice** now, the second time citing an
+   id that a fold meant was never written; **re-run the dead-id check after every fold.**
+   **⚠️ A FOLD CAN CONVERT AUTHORED TEXT INTO SOURCED TEXT** — twice (`entep-ear-121`, `entqb-ear7-181`);
+   the tag or marker must come off. Check on every fold, **and reconcile the marker counter afterwards.**
+   **⚠️ NEW CATEGORY: AN OPTION LIST WITH TWO CORRECT ANSWERS** — Nose ch.1 Q11 (nasal bone is not septal
+   either) and Q19 (posterior group is posterior ethmoid **and** sphenoid). **The printed key is right and
+   the QUESTION is defective**, so record it; do not "correct" a key that is not wrong. Distinct from the
+   disputed keys in §11.
+   **Next: NOSE ch.2, "Epistaxis and smell Disorders", book pp.50–52 (PDF 59–61), answers p.53, 37
+   promised.** ⚠️ **CHECK ITS FIRST QUESTION NUMBER BEFORE CHOOSING IDS** — 47 means the Nose section is
+   one run like Ear, 1 means it restarts per topic. Nose holds 9 topics (258), Throat 11 (578).
 2. **Then `d house ENT mcq.pdf`** (House, `enthd-`, resume at PDF p.15), then the **end-of-ENT review**
    below, then Pediatrics. **User chose "finish ENT completely" over breadth, 2026-08-08**, knowing
    the other three modules hold 0 questions and the exam is ~4 weeks out.
@@ -66,15 +69,18 @@ transcribed question teaches**.
 ## What exists — **104 chapters**: ENT 30, Ophthalmology 26, Neuropsychiatry 27, Pediatrics 21
 
 **All content is ENT so far**; the other three hold **0** questions and **no theory is written**.
-`QUESTIONS.length` is **958** — 876 MCQs + 82 cases, **all 30 ENT chapters holding ≥1**. By bank:
-**697 Endpoint, 21 House, 255 Grade Gain** — 973, because **fifteen** memberships are shared across
-**fourteen** questions. Grade Gain's 255 = **241 origin + 14 `alsoIn`**. **`entep-throat-103` is the project's first THREE-bank question**
+`QUESTIONS.length` is **1,002** — 920 MCQs + 82 cases, **all 30 ENT chapters holding ≥1**. By bank:
+**697 Endpoint, 21 House, 301 Grade Gain** — 1,019, because **seventeen** memberships are shared across
+**sixteen** questions. Grade Gain's 301 = **285 origin + 16 `alsoIn`**. **`entep-throat-103` is the project's first THREE-bank question**
 (endpoint + house + gradegain). Verified in a real `file://` boot 2026-08-10.
 
 **Fully validated in a real `file://` boot, 2026-08-10** — 0 bad module/chapter refs, 0 duplicate ids,
-every `answer` in range, nothing missing a `source`/`explanation`, **0 dead backticked ids, 44 of 44
-question images loading**. **⚠️ THE DEAD-ID CHECK CATCHES REAL DAMAGE** — folding a printing retires
-an id, and three entries written before the fold still cited it in backticks.
+every `answer` in range, nothing missing a `source`/`explanation`, **0 dead backticked ids, 45 of 45
+question images loading**. **⚠️ THE DEAD-ID CHECK CATCHES REAL DAMAGE, TWICE NOW** — a fold retires an
+id, and entries written before it still cited it in backticks; the second time the id was one a fold
+meant was **never written at all**. **⚠️ SO DOES THE MARKER COUNT: compute the expected delta FIRST.**
+It has caught three separate faults, the worst a **twelve-entry block that carried no marker at all** —
+every entry parsed, cited and rendered fine, and nothing else in the run would have seen it.
 **⚠️ THE AUDITOR BREAKS BEFORE THE APP DOES — TWICE OVER, AND BOTH LOOK LIKE CATASTROPHIC CONTENT
 FAILURES.** (1) **`MODULES` is `m.groups[].chapters[]`, each chapter an ARRAY (`c[0]` id)**, and **it
 is declared `const`, so `window.MODULES` IS UNDEFINED** — read the bare binding. Either slip gives 0
@@ -102,7 +108,7 @@ on the data `<script>` tags** — the last gates publishing (item 3).
 
 **⚠️ THE ONE THING THAT MUST SURVIVE ANY SUMMARY: THE CLEPSYDRA IS THE USER'S OWN ARTWORK** — nine poses at `app\assets\clep\*.png`, source at `Clypsedra\`. **Do not redraw her, do not draw anything onto her.** Three rounds of wasted work in a day; the answer was always *ask for artwork*.
 
-## Where transcription stands — **`ENT endpoint.pdf` DONE end to end; Grade Gain EAR SECTION done**
+## Where transcription stands — **`ENT endpoint.pdf` DONE end to end; Grade Gain EAR done, NOSE ch.1 done**
 
 Endpoint boundaries and shapes: `ledger.md` §"Transcribed ranges" and §7; **Exam Night Review and the fact-list run closed 2026-08-08** (§11c–d). **Box presence is a property of the PAGE, not the section** — Throat ran 103 answered pages with none, ENR **zero of 104**, **4 of 4 mis-keys on a bare page**. **⚠️ For CASES the ANSWER decides fold-vs-variant, not the stem.**
 
@@ -132,14 +138,16 @@ Endpoint boundaries and shapes: `ledger.md` §"Transcribed ranges" and §7; **Ex
   lacks.** Then keyword-search every survivor **twice, differently worded**. Failures: §7, §11b.
 
 **Where the source prints no explanation box, the explanation is written here** — rule and marker in
-`CLAUDE.md` §4. **~68 % of ENT entries carry the marker** (651 of 958) — two thirds of the
+`CLAUDE.md` §4. **~69 % of ENT entries carry the marker** (689 of 1,002) — over two thirds of the
 explanations are written, not transcribed, **which is the real scope of the end-of-ENT review**;
-Grade Gain improves on it at **~42 % printed**. **⚠️ READ EVERY OPTION AS A SENTENCE** — p.2856
+Grade Gain improves on it at **~37 % printed**. **⚠️ READ EVERY OPTION AS A SENTENCE** — p.2856
 printed one truncated mid-word and it survived staging and both sweep passes. **⚠️ AND EVERY STEM: a
 reference to "the previous case" or to a picture must be repaired, because the deck is SHUFFLED** —
-5 of 41 in ch.3, **6 of 22 in ch.6**, 2 of 26 in ch.9, one pointing at a figure **the page never
-printed**. **⚠️ AND A STEM CAN HOLD TWO QUESTIONS WITH ONE OPTION LIST** — ch.9 Q245 asks the
-diagnosis *and* the pathology; only the pathology has options, and the printed box supplied the rest.
+5 of 41 in Ear ch.3, **6 of 22 in ch.6**, 2 of 26 in ch.9, 1 of 46 in Nose ch.1, one pointing at a
+figure **the page never printed**. **⚠️ AND A STEM CAN HOLD TWO QUESTIONS WITH ONE OPTION LIST** — Ear
+ch.9 Q245 asks the diagnosis *and* the pathology; only the pathology has options, and the box supplied
+the rest. **⚠️ AND A KEY CAN DROP ITS OWN DISCRIMINATOR** — Nose ch.1 Q29 offers Trigeminal **V1** and
+**V2** with the same efferent, and the key prints neither qualifier; the letter still decides it.
 
 **⚠️ A GAP IN THE MATERIAL IS ANSWERED, NOT DECLARED — user's instruction, 2026-08-04, REVERSING the
 workspace rule for this project only.** Fill it from general medical knowledge and give the whole
@@ -149,9 +157,9 @@ THE USER** — one batched list, never per sentence. Contract: `CLAUDE.md` §4.
 
 **Three banks per module** (`endpoint`/`house`/`gradegain`); map, covers and the `alsoIn` contract in
 `CLAUDE.md` §4. **Missing: House for Neuropsychiatry, Grade Gain for Pediatrics.** **⚠️ THE BANKS
-OVERLAP — on a cross-bank match ADD THE BANK, never an entry.** **Fifteen memberships over fourteen
-questions**; Grade Gain Ear folds ran **4/29, 0/20, 3/41, 4/31, 1/35, 3/22, 0/18, 4/39, 1/26** —
-unpredictable, so **run the full sweep on every topic.** **⚠️ THE TEST: A DROPPED (or ADDED) DISTRACTOR IS A REPRINT, A REPLACED ONE IS A NEW QUESTION** (§14c–d). **⚠️ A BANK ALSO REPRINTS ITSELF** — a within-bank match takes **no `alsoIn`**, it is just held once. **A folded id must lose its backticks everywhere it is still mentioned, and an id that does not exist YET must never be backticked either.** **⚠️ SAME OPTIONS + SAME KEY + DIFFERENT STEM IS NOT A FOLD** — ch.7 printed the commonest SNHL *in the elderly* and *in general* over one option list; both are held. **⚠️ NEW CATEGORY: CROSS-BANK DIVERGENCE** (ledger §11 item 7b) — two banks keying one fact differently is neither a mis-key nor a fold; hold both, reconcile in the text, take it to the interview. First: **commonest SNHL in children** — Grade Gain *hereditary*, endpoint *meningitis*.
+OVERLAP — on a cross-bank match ADD THE BANK, never an entry.** **Seventeen memberships over sixteen
+questions**; Grade Gain folds ran **4/29, 0/20, 3/41, 4/31, 1/35, 3/22, 0/18, 4/39, 1/26** across Ear
+and **2/46** in Nose ch.1 — unpredictable, so **run the full sweep on every topic.** **⚠️ THE TEST: A DROPPED (or ADDED) DISTRACTOR IS A REPRINT, A REPLACED ONE IS A NEW QUESTION** (§14c–d). **⚠️ A BANK ALSO REPRINTS ITSELF** — a within-bank match takes **no `alsoIn`**, it is just held once. **A folded id must lose its backticks everywhere it is still mentioned, and an id that does not exist YET must never be backticked either.** **⚠️ SAME OPTIONS + SAME KEY + DIFFERENT STEM IS NOT A FOLD** — ch.7 printed the commonest SNHL *in the elderly* and *in general* over one option list; both are held. **⚠️ NEW CATEGORY: CROSS-BANK DIVERGENCE** (ledger §11 item 7b) — two banks keying one fact differently is neither a mis-key nor a fold; hold both, reconcile in the text, take it to the interview. First: **commonest SNHL in children** — Grade Gain *hereditary*, endpoint *meningitis*.
 
 ## Owed in the end-of-ENT review — detail in `ledger.md` §11; work it before Pediatrics begins
 
@@ -159,7 +167,7 @@ unpredictable, so **run the full sweep on every topic.** **⚠️ THE TEST: A DR
 2. **67 entries record no provenance either way** — 46 inside `entep-ear-1`…`68`, all 21 House. Almost
    certainly authored, **not verified**. **⚠️ Exams 1–3 box much of this range for free.**
 3. **Re-run the duplicate check per module as it completes** — all **six** stages of it.
-4. **⚠️ The nasopharynx — the highest-value single gap in ENT**, and the top **book**-read target under the answer-the-gap rule: up to **27** entries rest on outside knowledge and **one ENT-nose-book read fixes it.** Plus **fourteen Throat slide gaps** (Vincent's angina, leucoplakia, the thyroglossal cyst's tongue-protrusion sign), **three Nose gaps**, **exostosis**, **acute necrotic otitis media** (4 entries), the **compass of mastoid spread / Citelli's abscess** — all absent from **all 32** ENT files — the **eponymous signs**, and the **Ear ch.8–9 set**: the 4 kHz notch, the acoustic reflex arc, canal volume, congenital cholesteatoma, the caloric test's COWS rule, the posterior canal in BPPV, the lateral canal in cholesteatoma fistula, and the Tullio phenomenon. **Interview shortlist** (§11, §14b, §14c).
+4. **⚠️ The nasopharynx — the highest-value single gap in ENT**, and the top **book**-read target under the answer-the-gap rule: up to **27** entries rest on outside knowledge and **one ENT-nose-book read fixes it.** Plus **fourteen Throat slide gaps** (Vincent's angina, leucoplakia, the thyroglossal cyst's tongue-protrusion sign), **three Nose gaps**, **exostosis**, **acute necrotic otitis media** (4 entries), the **compass of mastoid spread / Citelli's abscess** — all absent from **all 32** ENT files — the **eponymous signs**, the **Ear ch.8–9 set** (4 kHz notch, acoustic reflex arc, canal volume, congenital cholesteatoma, COWS, posterior canal in BPPV, lateral canal in cholesteatoma fistula, Tullio), and the **Nose ch.1 set**: nasal **lymphatic drainage**, the **venous route to the cavernous sinus**, the **osteomeatal complex's components** (agger nasi, bulla, uncinate, hiatus semilunaris, infundibulum, lamina papyracea), the **sneeze reflex arc**, and the **tongue's four-nerve table** — the last three absent from all nine cached nose files. **Interview shortlist** (§11, §14b, §14c).
 5. **⚠️ Eight disputed printed keys still open** — `entep-throat-83`, Q136/Q153 of pp.1617–1706,
    Exam 1's Q13, `entep-mfe4-16`, `entep-mfe6-1`, `entep-mfe7-1`, `entep-nose-2`, and **`entqb-ear3-83`
    — the first raised against a LECTURE SLIDE** (`L21.2` lists SNHL as a complication of effusion; the
@@ -179,6 +187,6 @@ unpredictable, so **run the full sweep on every topic.** **⚠️ THE TEST: A DR
 
 - **Reading all 1,637 book pages is not realistic**, but **the book is the first place to look before
   filling a gap from general knowledge** — driven by the questions and slide gaps, via its contents page.
-- **Measure, then believe.** *Check the sum* — a count that did not reconcile has been written down **six times** (`(Get-Content).Count`; `Measure-Object -Line` skips blank lines). *Check the auditor* — **three** contrast and **two** content auditors gave false failures (`CLAUDE.md` §7). *Reconcile the batch* — written + folded = printed. **⚠️ A COUNTER THAT DOES NOT MOVE IS A FINDING** — the authored-marker count stayed at 596 across 18 new entries because they carried the marker in `source`, not at the end of `explanation` where `CLAUDE.md` §4 puts it; one older entry had the same defect. **⚠️ NEVER WRITE A CROSS-REFERENCED ENTRY'S PAGE NUMBER FROM MEMORY — 6 of 6 were wrong** (§14g), and no automated check can see it: read that entry's own `source`. **And where no error is possible, LOOK.**
+- **Measure, then believe.** *Check the sum* — a count that did not reconcile has been written down **six times** (`(Get-Content).Count`; `Measure-Object -Line` skips blank lines). *Check the auditor* — **three** contrast and **two** content auditors gave false failures (`CLAUDE.md` §7). *Reconcile the batch* — written + folded = printed. **⚠️ A COUNTER THAT DOES NOT MOVE IS A FINDING** — the authored-marker count stayed at 596 across 18 new entries because they carried the marker in `source`, not at the end of `explanation` where `CLAUDE.md` §4 puts it; one older entry had the same defect. **⚠️ NEVER WRITE A CROSS-REFERENCED ENTRY'S PAGE NUMBER FROM MEMORY — 6 of 6 were wrong** (§14g), and no automated check can see it: read that entry's own `source`. **⚠️ SAME FOR A LECTURE FILENAME** — `L21) facial nerve.pdf` was cited twice and **does not exist**; the file is `L15) Facial nerve disorders.pdf`. List `content\ent\lectures\` before citing. **And where no error is possible, LOOK.**
 - **Cleanup awaiting approval** — a 173 MB Ophthalmology zip duplicating all 29 loose lectures, two
   Pediatrics PPT stubs (both inside protected `Semester 8\`), and `files.zip`. **Nothing without a yes.**
