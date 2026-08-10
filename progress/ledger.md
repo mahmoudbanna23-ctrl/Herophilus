@@ -2266,6 +2266,14 @@ both readings recorded so the learner can see the bank is unreliable:
 *(Four more entries in this roster came from Model Final Exams and Exam 1 and are listed in §12; the
 count of open disputes stands at **eight**.)*
 
+**7b. CROSS-BANK DIVERGENCES — a new category, opened 2026-08-09.** Not disputed keys: nothing
+contradicts itself, and neither printing is altered. Two banks simply key the same clinical fact
+differently, and a lecturer will settle each in one sentence. **Take these to the source interview.**
+
+| The fact | Grade Gain says | Endpoint says | Reconciliation written into the entries |
+|---|---|---|---|
+| **Commonest cause of SNHL in children** | **hereditary factors** — `entqb-ear7-189`, ENT QB p.30 | **meningitis** / **post-meningitic** — `entep-ear-154` (p.534), `entep-ear-238` (p.712) | hereditary dominates loss **present from birth**; meningitis is the commonest **acquired, post-natal** deafness in a previously hearing child. `L19.1) hearing loss.pdf` lists *"Congenital: consanguinity or perinatal"* first, which leans to the Grade Gain key. **Answer by the stem.** |
+
 **8. A full content and design review**, at the user's request — both the ENT content and whether the
 app's design needs changing — **before the other three modules are started.**
 
@@ -3709,3 +3717,141 @@ exist yet**; the cross-reference checker cannot tell a forward reference from a 
 **Reconciles:** ch.1 29 (25 + 4) + ch.2 20 (20 + 0) + ch.3 41 (38 + 3) + ch.4 31 (27 + 4) +
 ch.5 35 (34 + 1) + ch.6 22 (19 + 3) = **178 printed, 163 written, 15 folded** — **11 cross-bank
 `alsoIn`** and **4 within-bank reprints held once**.
+
+---
+
+### §14g — Grade Gain, Ear chapter 7: "Tinnitus & Hearing loss" (2026-08-09)
+
+**Book pp.30–31 (PDF 39–40); answers book p.32 (PDF 41), the whole key on one page.**
+**18 printed, Q179 … Q196. 18 written (`entqb-ear7-179` … `entqb-ear7-196`), 0 folded.**
+All 18 in `ent-hearing`.
+
+#### The contents page ran short a fifth time — and the page ranges were right a seventh time
+
+**18 printed against 17 promised.** Chapter 8 (*Audiological Investigations*) opens at **Q197 on
+book p.33**, verified by rendering. Running record: **29/29 ✓, 20/20 ✓, 41/40, 31/30, 35/24, 22/21,
+18/17.** Five overruns in a row, every one **upward**, none of them large except ch.5's eleven.
+**The page ranges have not been wrong once in seven chapters** — that asymmetry is now firm enough
+to plan on: trust the map for *where*, never for *how many*.
+
+#### The answer block did NOT overlap here
+
+Book p.32 is answers only, unlike ch.4 and ch.6 where the key opened in the right-hand column of a
+page whose left column still carried questions. **The overlap is a property of the page, not of the
+bank** — check it every chapter rather than assuming either way.
+
+#### Zero folds — the first chapter since ch.2
+
+The six-stage sweep raised four candidates that all failed on inspection, and each failure is a
+different shape worth recording:
+
+| Staged | Candidate | Why it is NOT a fold |
+|---|---|---|
+| **Q180** glomus, earliest manifestation | `entep-enr-3` — same key, *pulsatile tinnitus* | **two of four distractors replaced** (episodic vertigo → hearing loss, ear discharge → bloody otorrhoea). A replaced distractor is a new question |
+| **Q184** commonest CHL in adults | `entep-ear-84` — same key, *impacted wax* | **all four distractors differ**, and that stem specifies *bilateral* |
+| **Q185** malleoincus dislocation | `entqb-ear2-48`, `entqb-ear3-89` — stage F **1.00** | the **option set is identical** (CHL/SNHL/Mixed) and the stems are wholly different diseases. **Stage F scoring 1.00 on a three-word option set means nothing** |
+| **Q194** ototoxic drug | `entep-ear-30` — same key, *Amikacin* | every distractor differs, and endpoint's list includes **aspirin**, which changes the question |
+
+**Stage F's 1.00 on Q185 is the ≤3-character blind spot inverted.** The filter keeps only tokens of
+four characters or more, so *CHL / SNHL / Mixed* reduces to the single token **mixed** — and every
+question using that option set scores a perfect match against every other. **A 1.00 from a
+three-option abbreviation set is noise, not evidence.** Ch.1 recorded the same filter scoring **0**;
+this is the other half of it.
+
+#### The bank prints the same fact twice in one chapter, and both printings are held
+
+**Q186** (*commonest SNHL in **elderly people***) and **Q191** (*commonest SNHL **in general***) carry
+an **identical option list and an identical key** — presbyacusis. Only the stem qualifier differs.
+Both are printed, so both are held, and each names the other. **This is not a within-bank reprint**:
+a reprint is the *same* question printed twice, and these ask two different questions that happen to
+share an answer.
+
+#### ⚠️ A cross-bank disagreement on a fact, not a key defect
+
+**Q189 — the commonest cause of SNHL in children.** Grade Gain keys **hereditary factors** over
+congenital infection, ototoxicity and noise. **The endpoint bank keys a meningitic cause twice**:
+`entep-ear-154` (p.534) offers *Heredofamilial* among its options and keys **meningitis**, and
+`entep-ear-238` (p.712) keys **post-meningitic**.
+
+Neither bank is mis-keying itself, so **neither entry is altered**. The reconciliation written into
+`entqb-ear7-189` is that hereditary causes dominate loss **present from birth**, while meningitis is
+the commonest **acquired, post-natal** deafness in a previously hearing child — and the stem decides
+which is being asked. **Added to §11's review roster as a cross-bank divergence**, a new category
+there: it is not a disputed key (nothing contradicts itself) but it is the kind of thing a lecturer
+will settle in one sentence.
+
+`L19.1) hearing loss.pdf` supports the Grade Gain key indirectly — it lists SNHL causes with
+*"Congenital: **consanguinity** or perinatal"* first, and consanguinity is a genetic mechanism.
+
+#### One stem repaired, one image cut
+
+**Q180** is printed as *"The earliest manifestation of the following tumor is"* — a fragment above a
+photograph. Rewritten to *"…of the tumour shown in the photograph below"* so it survives the shuffle.
+**The picture itself is not described in the stem**, deliberately: naming it as vascular would hand
+over the answer, which is why the entry carries `imgEssential:true`.
+
+**`q-gg-30.jpg`** (350×330, 22.1 KB). **It is the same photograph the bank printed at ch.6 Q173** —
+but the two questions are different (*discharge* there, *earliest symptom* here), so it was cut again
+under its own page number rather than reusing `q-gg-27c`. **The filename is a citation; reusing one
+across pages would make it lie.** Two crops: the first caught the stem line above and was moved down.
+
+#### ⚠️ SIX PAGE CITATIONS WERE WRITTEN FROM MEMORY AND ALL SIX WERE WRONG
+
+Cross-references to endpoint entries were drafted with page numbers recalled rather than read —
+`entep-ear-154` cited as p.630 (really **534**), `entep-ear-84` as p.396 (**382**), `entep-ear-77` as
+p.372 (**364**), `entep-enr-3` as p.2907 (**2844**), `entep-ear-30` as p.140 (**202**),
+`entep-ear-83` as p.400 (**380**). Caught before the splice by grepping each id's own `source` field.
+
+**⚠️ NEVER WRITE A PAGE NUMBER FOR A CROSS-REFERENCED ENTRY WITHOUT READING THAT ENTRY'S `source`.**
+A wrong page is invisible to every automated check in the project — the id resolves, the entry
+exists, the app boots — and it sends the reader to the wrong page of a 3,074-page file. The
+one-line check is:
+
+```bash
+grep -A25 "id:'<id>'," questions.ent.js | grep -m1 -o "source:'[^']\{0,60\}"
+```
+
+#### ⚠️ AND THE AUTHORED MARKER WAS PUT IN THE WRONG FIELD
+
+All twelve authored explanations opened with the marker in **`source`** instead of ending the
+**`explanation`** with it, which is what `CLAUDE.md` §4 requires and what ch.1–6 did. The harness
+caught it as a **flat count**: *"entries carrying an authored marker: 596 of 898"* — the same 596 as
+before eighteen entries were added. **A counter that does not move is a finding.** Moved into the
+explanations; the count went 596 → 608.
+
+The same check then found **one older entry with the same defect** — `entqb-ear3-53`, whose marker
+sat only in its `source`. Fixed in the same pass; final count **609 of 898**.
+
+#### Explanations: 6 printed, 12 authored
+
+**~33 % printed — the lowest Grade Gain rate since ch.4** (ch.1 ~45 %, ch.2 45 %, ch.3 ~46 %,
+ch.4 ~35 %, ch.5 ~57 %, ch.6 ~59 %). Running Grade Gain figure: **89 of 196 printings, ~45 %**.
+Where the bank does print a box here it is often **lifted from the lecture slide** — Q196's treatment
+list reproduces `L19.1) hearing loss.pdf` almost word for word, and Q195's severity statement is the
+slide's own definition.
+
+#### The chapter is unusually well grounded
+
+`L19.1) hearing loss.pdf` and `L19.2) Tinnitus.pdf` between them cover **the severity scale
+(normal <20, mild 20–40, moderate 40–60, severe 60–90, profound 90–110, total >110 dB), the
+definition of deafness, the full conductive and sensorineural cause lists, the pressure-transformer
+figures, idiopathic sudden hearing loss and its intratympanic treatment, the tinnitus type list and
+the instruction to image a unilateral tinnitus.** Only three points needed general knowledge:
+**"malleoincus dislocation" as a term** (the mechanism, ossicular discontinuity, *is* on the slide),
+**otosclerosis's clinical portrait** — paracusis Willisii, Schwartze's sign, Carhart's notch, none of
+which any cached slide names — and the **proportions** behind the childhood-SNHL answer.
+
+#### Verified in a real `file://` boot
+
+`parse errors: none`; `Q_ENT` **816** / `C_ENT` **82** / total **898**; `MODULES chapters: 104`;
+0 bad chapter refs, 0 duplicate ids, every answer in range, nothing missing a source, explanation or
+objective; **0 dead backticked ids**; **36 of 36 question images loading**; mojibake scan clean.
+By bank **697 endpoint / 21 house / 192 gradegain** = 910 over 898 — **twelve** shared memberships
+across **eleven** questions, unchanged. Grade Gain's 192 = **181 origin + 11 `alsoIn`**.
+
+**Reconciles:** ch.1 29 (25 + 4) + ch.2 20 (20 + 0) + ch.3 41 (38 + 3) + ch.4 31 (27 + 4) +
+ch.5 35 (34 + 1) + ch.6 22 (19 + 3) + ch.7 18 (18 + 0) = **196 printed, 181 written, 15 folded** —
+**11 cross-bank `alsoIn`** and **4 within-bank reprints held once**.
+
+**Next: Ear ch.8, "Audiological Investigations", book p.33 onward (PDF 42 onward), opens at Q197.**
+Q205 prints a pure-tone audiogram that will need cutting.
