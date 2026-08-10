@@ -2,7 +2,7 @@
 
 Running record, organised around *resuming*. ISO dates; unverified marked as such. **Only what is needed to pick the work up cold; under 200 lines — `(Get-Content).Count`.** Method in `CLAUDE.md`, detail in `ledger.md` — **`CLAUDE.md` imports this, so repeating its rules costs budget.**
 
-## Resume here — **✅ `ENT endpoint.pdf` CLOSED. ✅ Grade Gain EAR CLOSED (261). NOSE OPEN — ch.1–2 done, ch.3 next.**
+## Resume here — **✅ Endpoint CLOSED. ✅ Grade Gain EAR CLOSED. NOSE ch.1–2 written; ch.3 STAGED + SWEPT, NOT WRITTEN.**
 
 1. **GRADE GAIN IS OPEN — `ENT QB.pdf`, contents page promises 1,080** (Ear 244, Nose 258, Throat 578
    over 29 topics; map in `ledger.md` §14). **⚠️ PDF page = book page + 9.**
@@ -13,33 +13,39 @@ Running record, organised around *resuming*. ISO dates; unverified marked as suc
    **section** (`Chapter 1` on every Ear page is *correct*, not the defect earlier notes called it);
    only the title beside it names the topic. **Ids must carry a section+topic token** —
    `entqb-ear9-236`, `entqb-nose1-1` — or Nose collides with Ear.
-   **⚠️ PAGE RANGES RIGHT ALL ELEVEN TIMES; COUNTS WRONG EIGHT, ALWAYS UPWARD** — 29/29 ✓, 20/20 ✓,
-   41/40, 31/30, 35/24, 22/21, 18/17, 39/38, 26/25, **46/46 ✓**, 38/37. Trust the map for *where*, never
-   for *how many*: render the range, then count what is printed. **EAR ch.1–9 = 261 printed, 241
-   written, 20 folded** against 244 promised (29, 20, 41, 31, 35, 22, 18, 39, 26). **NOSE ch.1 = 46
-   (44+2), ch.2 = 38 (34+4).** **~35 % carry a printed explanation**; the rest are authored.
-   **⚠️ A QUESTION TAIL AND THE ANSWER BLOCK CAN SHARE A PAGE** — "Page As" is where answers *begin*;
-   it cost **four** questions in Ear ch.4, Ear ch.6 repeated it, Ear ch.7–9 did not, and **both Nose
-   chapters did** — **it is a property of the page, check every one.**
+   **⚠️ PAGE RANGES RIGHT ALL TWELVE TIMES; COUNTS WRONG NINE, ALWAYS UPWARD** — 29/29 ✓, 20/20 ✓, 41/40,
+   31/30, 35/24, 22/21, 18/17, 39/38, 26/25, **46/46 ✓**, 38/37, 61/60. Trust the map for *where*, never
+   for *how many*: render the range, then count what is printed. **EAR ch.1–9 = 261 printed, 241 written,
+   20 folded** against 244 promised. **NOSE ch.1 = 46 (44+2), ch.2 = 38 (34+4), ch.3 = 61 (56+5, unwritten).**
+   **~35 % carry a printed explanation**; the rest are authored.
+   **⚠️ A QUESTION TAIL AND THE ANSWER BLOCK CAN SHARE A PAGE** — "Page As" is where answers *begin*; it
+   cost **four** questions in Ear ch.4, and Ear ch.6 and both of Nose ch.1–2 repeated it, while Ear ch.7–9
+   and Nose ch.3 did not — **it is a property of the page, check every one.**
    **⚠️ THE BANK ALSO REPRINTS ITSELF** — 6 within-bank folds take **no `alsoIn`**, just hold once.
-   **⚠️ NEVER BACKTICK AN ID THAT DOES NOT EXIST YET** — caught **twice** now, the second time citing an
-   id that a fold meant was never written; **re-run the dead-id check after every fold.**
-   **⚠️ A FOLD CAN CONVERT AUTHORED TEXT INTO SOURCED TEXT** — twice (`entep-ear-121`, `entqb-ear7-181`);
-   the tag or marker must come off. Check on every fold, **and reconcile the marker counter afterwards.**
-   **⚠️ CATEGORY: AN OPTION LIST WITH TWO CORRECT ANSWERS** — Nose ch.1 Q11 and Q19. **The printed key is
-   right and the QUESTION is defective**, so record it; do not "correct" a key that is not wrong.
-   **⚠️ AND ITS SIBLING: TWO QUESTIONS, TWO DIFFERENT KEYS, BECAUSE THE MENUS DIFFER** — Nose ch.2 Q58
-   keys *nose picking* and Q65 keys *idiopathic* for the same question, and neither list holds the
-   other's key; Nose ch.1 Q40 vs `entep-mfe4-31` do the same on the choanal-atresia airway. **Not a
-   contradiction — record both and tell the learner to read the option list.** Both distinct from §11's
-   disputed keys.
+   **⚠️ NEVER BACKTICK AN ID THAT DOES NOT EXIST YET** — caught **twice**; **re-run the dead-id check after
+   every fold.** **⚠️ A FOLD CAN CONVERT AUTHORED TEXT INTO SOURCED TEXT** — twice so far, and Nose ch.3's
+   Q107 will be the third; the tag or marker must come off. Check on every fold, **and reconcile the
+   marker counter afterwards — it has caught a whole unmarked block and six scattered misses.**
+   **⚠️ CATEGORY: AN OPTION LIST WITH TWO CORRECT ANSWERS** — Nose ch.1 Q11, Q19. **The printed key is right
+   and the QUESTION is defective**; record it, never "correct" a key that is not wrong.
+   **⚠️ AND ITS SIBLING: TWO QUESTIONS, TWO KEYS, BECAUSE THE MENUS DIFFER** — Nose ch.2 Q58 keys *nose
+   picking* and Q65 *idiopathic*; Nose ch.1 Q40 vs `entep-mfe4-31` on the choanal-atresia airway. **Not a
+   contradiction — hold both and tell the learner to read the option list.** Distinct from §11's disputed keys.
    **⚠️ A SHARED TYPO IS STRONGER EVIDENCE OF A REPRINT THAN A SHARED ANSWER** — Nose ch.2 Q66 reprints
    `entep-nose-65` down to "shenopalatine" in option b.
-   **Next: NOSE ch.3, "Rhinitis", book pp.55–60 (PDF 64–69), answers p.61, 60 promised — six question
-   pages, opens at Q85.** Slides: **`L29) Rhinitis 1`, `L30) Rhinitis 2`** + `L27.1`, `L27.2`, `L31`,
-   `L32`. Nose holds 9 topics (258), Throat 11 (578). **✅ THE NOSE SECTION IS ONE CONTINUOUS RUN** —
-   ch.2 opened at 47, so numbering restarts only at a SECTION boundary; **check that again at Throat
-   (book p.87)**.
+   **⚠️⚠️ NOSE ch.3 "Rhinitis" IS READ, STAGED AND SWEPT BUT NOT WRITTEN — RESUME EXACTLY THERE.** All 9
+   pages read (book pp.55–63, PDF 64–72); **61 printed against 60 promised, Q85–Q145**, all transcribed
+   verbatim into `content\ent\qb-pages\gg-nose-ch3.staged.js`, **whose header carries every finding**.
+   Sweep run against all 1,036 entries. **OWED: apply 5 folds, write 56 entries (`entqb-nose3-85`…`-145`),
+   cut Q145's endoscopy, validate, ledger §14l, MEMORY, commit.** **The 5 folds, all verbatim cross-bank
+   into endpoint:** Q86→`entep-nose-5`, Q106→`entep-nose-16`, Q107→`entep-nose-60`, Q123→`entep-nose-63`,
+   Q124→`entep-nose-64`. **⚠️ Q145 is TWO questions with one option list and the treatment half is answered
+   NOWHERE — interview item.** **⚠️ The ANSWER pages print two explanation figures** (coronal CT under
+   Q104's key, drugs-vs-symptoms table under Q112's); the table is already transcribed as markdown, the CT
+   is to be described, not cropped. Slides: **`L29) Rhinitis 1`, `L30) Rhinitis 2`** + `L27.1`, `L27.2`,
+   `L31`, `L32`. **Then NOSE ch.4 "Rhinosinusitis", book pp.64–66 (PDF 73–75), answers p.67, 22 promised.**
+   Nose holds 9 topics (258), Throat 11 (578). **✅ THE NOSE SECTION IS ONE CONTINUOUS RUN** — ch.2 opened
+   at 47 and ch.3 at 85; **check that again at Throat (book p.87)**.
 2. **Then `d house ENT mcq.pdf`** (House, `enthd-`, resume at PDF p.15), then the **end-of-ENT review**
    below, then Pediatrics. **User chose "finish ENT completely" over breadth, 2026-08-08**, knowing
    the other three modules hold 0 questions and the exam is ~4 weeks out.
@@ -55,14 +61,10 @@ Running record, organised around *resuming*. ISO dates; unverified marked as suc
    public at all, given the content is transcribed from commercial banks.**
 
 **Question images** live at `app\assets\q\` — `q-<page>.jpg` for endpoint (cut by `Design\scripts\q-images.ps1`), **`q-gg-<book page>[a|b].jpg` for Grade Gain** (letter only where one page prints two), whose layout that script cannot read: crop by hand with `pdftoppm -x -y -W -H` and **LOOK** — **9 of the first 9 crops were wrong**, clipping a label or catching question or option text; **ch.4's and ch.6's were right first time because they sit in white space; ch.8's AUDIOGRAMS and TYMPANOGRAMS sit tight against the text and 5 of 8 needed a re-cut — the trap is the LAYOUT.** **⚠️ A figure that EXPLAINS the answer is described, never cropped** (ch.3 Q61). `image` holds the **basename**, `qImgSrc()` builds the path; traps in `CLAUDE.md` §4, `ledger.md` §11a. **⚠️ `bundle.ps1` DOES NOT EXIST**; the single-file build is owed.
-
 **⚠️ NEVER CARRY STRUCTURE ACROSS A SECTION BOUNDARY.** Endpoint sections and all 7 exams printed each question **twice** at a rate that ran **42–100 % with no trend**, Recently Edited **once already answered**, the fact-list run **irregularly**; Grade Gain prints **once**, ~10 per page, questions and answers on separate pages **that overlap**. Check the first ten pages before staging — **read EVERY page, never alternate ones, and ⚠️ SAMPLE FOR STRUCTURE, NEVER FOR RATE. The printed numbering lies, and ⚠️ NO CONTENTS PAGE COUNTS EITHER** — Grade Gain's held twice, then ran short **seven** times, once by **eleven** (§11b–d, §14). **Only reading every page counts.**
-
-**⚠️ EVERY BANK MIS-KEYS ITSELF SOMEWHERE — GO LOOKING FOR IT.** Endpoint: 5 self-contradictions, **all on pages printing NO box**. Grade Gain: **three in nine chapters** — `entqb-ear1-26`, `entqb-ear3-79` and `entqb-ear5-141` (GSPN keyed to the lemon test; its own Q122 and Q140 say Schirmer's).
-**Mechanism decides: options replaced → new entry; options identical and only the key moved → record it in the existing entry, never a second; the bank contradicting its own explanation → correct the key and record what was printed** (`CLAUDE.md` §4). **⚠️ A PRINTED BOX CAN BE WRONG ABOUT SOMETHING OTHER THAN THE KEY** — ch.2 Q31 answers a different question, ch.3 Q75 calls Valsalva a drug.
+**⚠️ EVERY BANK MIS-KEYS ITSELF SOMEWHERE — GO LOOKING FOR IT.** Endpoint: 5 self-contradictions, **all on pages printing NO box**. Grade Gain: **three in nine chapters** — `entqb-ear1-26`, `entqb-ear3-79` and `entqb-ear5-141` (GSPN keyed to the lemon test; its own Q122 and Q140 say Schirmer's). **Mechanism decides: options replaced → new entry; options identical and only the key moved → record it in the existing entry, never a second; the bank contradicting its own explanation → correct the key and record what was printed** (`CLAUDE.md` §4). **⚠️ A PRINTED BOX CAN BE WRONG ABOUT SOMETHING OTHER THAN THE KEY** — ch.2 Q31 answers a different question, ch.3 Q75 calls Valsalva a drug. **⚠️ AND A KEY THAT LOOKS ARGUABLE MAY BE CONFIRMED BY THE OTHER BANK** — Nose ch.3 Q131's cacosmia key was flagged, then settled by `entep-nose-44`; **run the sweep before writing a dispute down.**
 
 **Method: THREE passes.** **Grade Gain needs no tiling** — ~10 questions in two columns at `-r 130`; endpoint's tiling parameters are in `ledger.md` §7. **Order:** ENT → Pediatrics → Ophthalmology → Neuropsychiatry, questions then theory; **the ENT review below is owed before Pediatrics.**
-
 **⚠️ THE THEORY BRIEF CHANGED, 2026-08-04 — it is a NEW STUDY SOURCE, sufficient to sit the exam from
 alone, NOT a summary.** Every source in the folder, images/diagrams wanted, "important" decided by the
 questions first; **length is never the goal, dropping something important is the one unacceptable
@@ -101,7 +103,7 @@ error." at line 0** — inline the whole file into a scratchpad `<script>` for t
 then subtract the harness's preamble. **A count that collapses to the cases alone means this, not
 content.**
 
-**Lecture text cache — complete**, 146 files in `content\<subject>\lectures\*.txt`; **check it before rendering** (10 failures: §1). `SCHEDULE` — 38 days to 2026-08-31.
+**Lecture text cache — complete**, 146 files in `content\<subject>\lectures\*.txt`; **check it before rendering** (10 failures: §1) — **and LIST it before citing a filename, twice wrong from memory now.** `SCHEDULE` — 38 days to 2026-08-31.
 
 ## The app — boots clean from `file://`
 
