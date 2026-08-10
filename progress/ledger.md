@@ -4713,3 +4713,236 @@ It should open at **Q146**. Three question pages, so expect the count to run ove
 **check whether the answer block overlaps the last question page.** The slides are `L27.1) ACUTE
 rhinosinusitis.txt` and `L27.2) Chronic Sinusitis.txt`, both already read in full for this chapter.
 **There is no complications-of-sinusitis slide to fall back on** — see the gap above.
+
+---
+
+### §14m — Grade Gain, NOSE chapter 4: "Rhinosinusitis" (2026-08-10)
+
+**Book pp.64–66 (PDF 73–75); answers book pp.67–68 (PDF 76–77).**
+**23 printed, Q146 … Q168. 19 written (`entqb-nose4-146` … `entqb-nose4-168`, gaps at 150, 153, 165,
+166), 4 folded.** Chapters: `ent-sinusitis` 11, `ent-sinuscomp` 4, `ent-noseanat` 3, `ent-facialpain` 1.
+
+#### ⚠️ THE ANSWERS RAN TO TWO PAGES WHERE THE MAP PROMISED ONE
+
+The contents map gives the answers as p.67. **They run pp.67–68**, and p.68 was rendered only because
+the tail of Q161's option-by-option box visibly ran off the foot of p.67. Had that box ended tidily,
+**Q162–Q168's keys — seven of the twenty-three — would have been missed entirely.**
+
+**⚠️ NEW RULE: RENDER ONE PAGE PAST THE LAST ANSWER PAGE, EVERY TIME.** The existing rule covers the
+*question* side ("a question tail and the answer block can share a page"); this is the mirror defect on
+the *answer* side, and nothing in the notes anticipated it. The map is reliable about **where answers
+begin** and says nothing trustworthy about where they end.
+
+Rendering p.69 as well is what confirmed the boundary: **ch.5 "Nasal symptoms" opens at Q169**, so the
+chapter is exactly Q146–Q168 with nothing lost between them.
+
+#### 23 against 22 promised, and no overlap
+
+Running record: 29/29 ✓, 20/20 ✓, 41/40, 31/30, 35/24, 22/21, 18/17, 39/38, 26/25, 46/46 ✓, 38/37,
+61/60, **23/22.** Page ranges right for the *questions* **thirteen** chapters running; counts wrong
+**ten** times, always upward.
+
+**No overlap** — p.66 ends the questions cleanly. Two Nose chapters running without it; five of
+thirteen chapters have had it.
+
+#### ✅ THE NOSE SECTION IS ONE CONTINUOUS RUN — FOURTH CONFIRMATION
+
+Ch.4 opens at **Q146** and ch.5 at **Q169**. Running header reads `Chapter 2: Rhinosinusitis` on the
+question pages and `Chapter 2: Nasal Symptoms` on p.69 — **number = section, title = topic**, exactly
+as §14i established. This can now be treated as settled for the Nose section; **it still has to be
+re-checked at the Throat boundary (book p.87)**, where the number should become 3 and the numbering
+should restart at 1.
+
+#### Four folds, all cross-bank into endpoint
+
+| Grade Gain | Folded into | Stage | Evidence |
+|---|---|---|---|
+| **Q150** nasal discharge in dental sinusitis | **`entep-nose-54`** (p.1027) | **A** | verbatim — identical stem, options and key |
+| **Q153** teeth related to the maxillary sinus | **`entep-nose-24`** (p.937) | **B** | same four options in a different order, same key |
+| **Q165** unilateral fetid discharge in a child | **`entep-nose-71`** (p.1071) | **B** | verbatim, correcting endpoint's "in an child" |
+| **Q166** cold 10 days then fever and cheek tenderness | **`entep-mfe4-20`** (p.2312) | E 0.45 / F 0.71 | same vignette, **one dropped distractor** |
+
+**Q166 is the clearest illustration yet of why the dropped/replaced test earns its keep.** Grade Gain's
+option set is a strict **subset** of endpoint's — *chronic bacterial rhinosinusitis* is gone and nothing
+takes its place — so by the settled test it is a reprint and the two are held once. It reached neither
+stage A nor B (three options against four); **only the stage-E and stage-F rankings surfaced it.**
+
+Grade Gain's memberships are now **394 origin + 29 `alsoIn`**.
+
+#### ⚠️ A FOURTH AUTHORED→SOURCED CONVERSION, AND A FOLD THAT ENRICHED THE HELD ENTRY
+
+**Q150 → `entep-nose-54`**: endpoint prints no box and the entry carried the authored marker; **Grade
+Gain prints one** — *"Unilateral offensive fetid discharge in adult = sinusitis of dental origin till
+proved otherwise ▪ If the same complain from a child = foreign body."* Marker withdrawn, box quoted in.
+**Caught at sweep time again, as in §14l.**
+
+**Q166 → `entep-mfe4-20`** is the other half of the pattern and is worth its own note: **both** banks
+print a box, and **Grade Gain's is substantially fuller.** Endpoint gives one sentence about the 10-day
+rule; Grade Gain adds the plateau-then-recovery course *and* the double-sickening relapse. **A fold can
+enrich the held entry even when it changes nothing about the provenance** — the addition was folded in
+and the entry's objective rewritten around the two patterns rather than the one.
+
+#### ⚠️ THREE NEAR-MISSES HELD, EACH BY A SETTLED RULE — the sweep's real work
+
+| Held pair | Rule |
+|---|---|
+| **Q154** vs `entep-mfe4-28` | *atrophic rhinitis* **replaces** *simple fungal sinusitis*. **A replaced distractor is a new question**, and here it genuinely moves the discrimination from fungal-versus-fungal to fungal-versus-non-fungal |
+| **Q155** vs `entep-nose-4` | same four options (bar the word "Left") and the same key, different vignette — **same options + same key + different stem is not a fold** |
+| **Q158** vs `entep-nose-23`, **Q159** vs `entep-nose-17` | same fact, same key, **wholly different distractors** — endpoint offers *surgical* alternatives to FESS and *radiological* alternatives to CT, Grade Gain offers *medical* ones. Each therefore tests something different |
+
+**The Q158/Q159 pair is the most useful of the three to remember**, because the stems are nearly
+identical and the temptation to fold is strong. What decides it is that endpoint's distractors ask
+*which operation* and *which scan*, while Grade Gain's ask *whether an operation* and *whether a scan* —
+different questions wearing the same stem.
+
+#### ⚠️ TWO STAGE-E/F FALSE POSITIVES WORTH NAMING
+
+- **Q162 scored E 0.63 against `entqb-ear4-119`** — an *ear* question about cholesteatoma. The whole
+  match is the boilerplate *"which of the following statements is true regarding…"*. **Stems that open
+  with a stock phrase will always rank against each other**; discount the opening clause by eye.
+- **Q146 scored F 0.71 against `entep-nose-45` and `entqb-nose1-4`** on sinus **names** alone, while
+  asking a completely different question — anterior-*group* membership, not drainage site. Note that
+  `entqb-nose1-4` was itself held against `entep-nose-45` for the same reason in §14j. **A cluster of
+  questions sharing one small vocabulary will rank highly against each other forever.**
+
+#### ⚠️ THE BANK CONTRADICTS ITSELF ON THE CHARACTER OF SINUS PAIN, TWO PAGES APART
+
+**Q164** keys **"throbbing"** as the one criterion sinusitis pain does **not** have. **Q155's own
+vignette** describes its maxillary sinusitis as *"a **dull, throbbing** pain localized over his left
+cheek."*
+
+**Neither option list contains the other's wording, so neither key is correctable** — this is the
+"two questions, two keys, because the menus differ" category again, but with a new twist: **the
+conflict is between a KEY and a STEM, not between two keys.** A stem narrating a case uses a word
+loosely that a criteria question keys as the exception. Both are held and each entry records the other.
+
+**Look for this shape specifically**: a bank that writes vignettes and criteria questions about the same
+topic will eventually let a vignette contradict a criteria key. It cannot be found by comparing keys.
+
+#### ⚠️ AN OPTION THAT IS A SUBSET OF THE KEY — a new sub-shape
+
+**Q160** describes a child with periorbital swelling and mild proptosis after a cold, and keys
+**"Complicated rhinosinusitis"** over an option list that also offers **"Orbital cellulitis."**
+**Orbital cellulitis is not a wrong answer — it is a *member* of the keyed category**, and the mild
+proptosis in the stem actually argues for the more specific label.
+
+The printed box settles it by fiat — *"Child with eye swelling during respiratory tract infection =
+complicated rhinosinusitis"* — and the key is defensible because the stem asks for the *diagnosis*
+rather than the *complication*. **Recorded, not corrected.** This is distinct from the two-correct-answers
+category of §14l: there the two options were siblings, here one contains the other.
+
+#### ⚠️ FOUR ENTRIES LAND IN THE CHAPTER WHOSE LECTURE DOES NOT EXIST
+
+`entqb-nose4-160`, `-161`, `-162` and `-163` are assigned to **`ent-sinuscomp`**, and §14l established
+that **there is no `L28`** — the ENT slide set runs `L27.2) Chronic Sinusitis` straight to `L29)
+Rhinitis 1`. So the pre-septal/post-septal distinction, the lamina papyracea, the routes of intracranial
+spread, the diploic veins and Pott's puffy tumour are **all tagged as outside the course material**,
+answered in full under the answer-the-gap rule.
+
+**This is the first chapter where the missing lecture has actually cost something measurable**, and it
+strengthens the interview item: four questions, plus every future question in `ent-sinuscomp`, rest on
+general knowledge because one file was never supplied.
+
+The three printed boxes carry more than usual here and were leaned on accordingly — **Q160's**
+*"more in children due to weak ossification"*, **Q161's** four-option walkthrough, and **Q162's**
+*"sinusitis is the commonest cause of frontal lobe abscess"* and *"complications occur in acute and
+chronic rhinosinusitis, but more on top of acute."*
+
+#### Two other defects recorded as printed
+
+- **⚠️ Q152's option c reads "Streptococcus influenza", which is not an organism** — it conflates
+  *Streptococcus pneumoniae* with *Haemophilus influenzae*. **The key (Pseudomonas) is unaffected and
+  correct**, so the question still works; the option is simply wrong as set. Recorded, not repaired,
+  and the entry gives the real three-organism list.
+- **⚠️ Q166 and Q167 print only THREE options each**; **Q155, Q158, Q160 and Q164 print their numbers
+  twice** ("164.164.Criteria of sinusitis pain…"). Both recorded per entry.
+
+#### ⚠️ THE BANK GIVES ITS OWN CLASSIFICATION TWO DIFFERENT WAYS
+
+**Q149** keys subacute rhinosinusitis as **4–12 weeks**. The printed box at **`entqb-nose3-98`**,
+twenty-one questions earlier, gives *"Acute… less than 3 weeks… Subacute… between 3 weeks and 3
+months… Chronic… more than 3 months."* Same disease, different boundaries, and **neither option list
+offers the other's numbers**, so neither key can be corrected.
+
+**The lecture decides which to quote:** `L27.2) Chronic Sinusitis.pdf` defines CRS as *"more than 12
+weeks"*. Both entries record the discrepancy and point at 12 weeks.
+
+#### Explanations: 6 printed among the 19 written, 13 authored
+
+Boxes at Q146, Q150 (folded), Q156, Q158, Q160, Q161, Q162, Q166 (folded) — **eight printed of the 23**,
+six among the 19 written. **~26 % printed**, against ch.3's 20 % and ch.2's 13 %. Running Grade Gain
+figure: **140 of 429 printings, ~33 %.**
+
+#### ✅ THE SCRATCHPAD MARKER AUDIT CAUGHT ONE, AND THE DEAD-ID CHECK CAUGHT TWO MORE
+
+Auditing the blocks **before** splicing found **Q147** written without the authored marker — one miss
+across 13 authored entries, against two in §14l and six in §14k. **The practice is now clearly worth
+its cost.**
+
+**⚠️ AND THE SAME PASS CAUGHT TWO BACKTICKED IDS THAT DO NOT EXIST YET.** Q146 and Q155 both cited
+`` `entqb-nose5-177` `` — a Nose ch.5 question that has not been transcribed. **This is the third
+occurrence of the same slip**, and it happened here for a specific reason worth naming: **ch.5 had
+already been rendered** (to find the chapter boundary), so its content was in mind while ch.4 was being
+written. **Reading ahead makes forward references feel safe. They are not.** Both were rewritten as
+prose — *"a point the next chapter of this bank asks directly"* — which says the same thing and cannot
+go stale.
+
+Marker delta computed before validating: **+13 new − 1 withdrawn by the Q150 fold = +12**, 761 → **773**.
+Matched exactly.
+
+#### ⚠️ THE PARSE BROKE ONCE — ON A DOUBLE-ESCAPED QUOTE, WHICH IS A NEW VARIANT
+
+`\\'boggy swelling\\'` inside a single-quoted string. The intent was an escaped quote inside the
+string; `\\` produces a **literal backslash** and the following `'` then **closes the string**.
+Every other apostrophe in the batch was correctly written `\'`, so the file's own consistency was no
+guard — **over-escaping fails exactly like under-escaping.**
+
+Found in one run by the `window.addEventListener('error', …)` probe, which reports **line and column**:
+*"ERR line 9207 col 1503 :: Uncaught SyntaxError: Unexpected identifier 'boggy'"*, minus a 3-line
+preamble. **⚠️ THIS IS A BETTER PROBE THAN THE `typeof Q_ENT` ONE AND SHOULD REPLACE IT** — the old
+probe reports only *that* the file failed, this one reports *where*, and the identifier it names is
+usually the fix itself. Both are cheap; run the error-reporting one.
+
+#### Grounding
+
+`L27.1) ACUTE rhinosinusitis.pdf` and `L27.2) Chronic Sinusitis.pdf` carry the acute and chronic halves
+almost completely — the contiguity of nose and sinus, the burden figures (**2–3 colds per adult and 3–8
+per child a year, up to 80 % involving the sinuses, ~1 billion viral cases a year of which only
+0.5–2 % turn bacterial**), the nine predisposing factors with ICAM-1 and the smoking-flora mechanism,
+the major/minor diagnostic criteria, the **four features of bacterial disease including double
+sickening**, the antibiotic-resistance mechanisms with the worked under-dosing case, the CRS definition
+requiring **≥12 weeks of two symptoms PLUS objective inflammation**, the CRSwNP/CRSsNP split, why
+**MRI is discouraged**, and the FESS indications and goals.
+
+`L23) Anatomy of the Nose.pdf` supplied the drainage map that makes the anterior/posterior grouping of
+Q146 intelligible, and the respiratory-versus-olfactory epithelium of Q147. `L30) Rhinitis 2.pdf`
+carried Q154's invasive fungal sinusitis.
+
+**Filled from general knowledge and tagged:** the mucus-swallowing interval (Q148 — no slide states a
+figure); the three-organism list for acute bacterial rhinosinusitis and *Pseudomonas*'s actual niches;
+the sinus-by-sinus **pain map**; the anaerobic microbiology of odontogenic sinusitis; the mucociliary
+direction argument for *functional* surgery; and **the whole of `ent-sinuscomp`** — pre-septal versus
+post-septal, the lamina papyracea, the diploic veins of Breschet, Pott's puffy tumour, and the
+ear-versus-sinus routes of intracranial abscess. All are added to §11's material-gap list.
+
+#### Verified in a real `file://` boot
+
+`parse errors: none`; `Q_ENT` **1,029** / `C_ENT` **82** / total **1,111**; `QUESTIONS` **1,111**;
+`MODULES chapters: 104`; 0 bad chapter refs, 0 bad module refs, 0 duplicate ids, every answer in range,
+no empty options, nothing missing a source, explanation or objective; **0 dead backticked ids out of
+2,429 references**; **46 image references over 43 unique files, all loading** (this chapter prints no
+figures); mojibake scan clean.
+
+By bank **697 endpoint / 21 house / 423 gradegain** = 1,141 over 1,111 — **30** shared memberships
+across **29** questions. Origin only: **697 / 20 / 394**. Authored markers **773 of 1,111**.
+
+**Reconciles:** Ear 261 (241 + 20) + Nose ch.1 46 (44 + 2) + ch.2 38 (34 + 4) + ch.3 61 (56 + 5) +
+ch.4 23 (19 + 4) = **429 printed, 394 written, 35 folded** — **29 cross-bank `alsoIn`** and **6
+within-bank reprints held once**.
+
+**Next: Nose ch.5, "Nasal symptoms", opening at Q169 on book p.69 (PDF 78).** The contents map's page
+range and promised count for it are in §14; **verify the range by rendering, and render one page past
+the last answer page.** Its slides are `L31) nasal symptoms 1.txt` and `L32) nasal symptoms 2.txt` —
+`L31` has already been read in full for chapters 2–4, `L32` has not. The first page shows the chapter
+is largely **headache and facial pain**, so `ent-facialpain` will take most of it, and **migraine
+versus rhinogenic headache** is plainly the discrimination it is built on.
