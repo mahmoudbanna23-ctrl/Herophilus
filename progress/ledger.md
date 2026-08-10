@@ -2273,6 +2273,13 @@ differently, and a lecturer will settle each in one sentence. **Take these to th
 | The fact | Grade Gain says | Endpoint says | Reconciliation written into the entries |
 |---|---|---|---|
 | **Commonest cause of SNHL in children** | **hereditary factors** — `entqb-ear7-189`, ENT QB p.30 | **meningitis** / **post-meningitic** — `entep-ear-154` (p.534), `entep-ear-238` (p.712) | hereditary dominates loss **present from birth**; meningitis is the commonest **acquired, post-natal** deafness in a previously hearing child. `L19.1) hearing loss.pdf` lists *"Congenital: consanguinity or perinatal"* first, which leans to the Grade Gain key. **Answer by the stem.** |
+| **Schwabach test in a conductive loss** | **prolonged** — `entqb-ear8-223`, ENT QB p.36 | **normal** — `entep-ear-185` (p.596), inside the stem rather than as the key | **The lecture supports Grade Gain**: `L13,14) AudioVestibulae Evaluation.pdf` states *"Pt > Ex (Prolonged Schwabach) → Conductive HL"*. The endpoint key (conductive) is still right, because its Rinne and Weber settle the question without the Schwabach — but its stem's Schwabach value contradicts the slide. Neither entry altered. **Found 2026-08-10 while transcribing ch.8, by re-reading an old entry against the slide.** |
+
+**⚠️ Material gaps added 2026-08-10 from Ear ch.8**, all four answered from general knowledge and
+tagged in place: the **4 kHz notch** of acoustic trauma; the **acoustic reflex arc** beyond its two
+nerves (`L19.1` gives only *absent in CHL / impaired in SNHL*); **equivalent canal volume** as the
+discriminator between a type B effusion and a type B perforation; and **congenital cholesteatoma**,
+which appears on none of the 32 cached ENT slides.
 
 **8. A full content and design review**, at the user's request — both the ENT content and whether the
 app's design needs changing — **before the other three modules are started.**
@@ -3855,3 +3862,127 @@ ch.5 35 (34 + 1) + ch.6 22 (19 + 3) + ch.7 18 (18 + 0) = **196 printed, 181 writ
 
 **Next: Ear ch.8, "Audiological Investigations", book p.33 onward (PDF 42 onward), opens at Q197.**
 Q205 prints a pure-tone audiogram that will need cutting.
+
+---
+
+### §14h — Grade Gain, Ear chapter 8: "Audiological Investigations" (2026-08-10)
+
+**Book pp.33–37 (PDF 42–46); answers book pp.38–39 (PDF 47–48).**
+**39 printed, Q197 … Q235. 35 written (`entqb-ear8-197` … `entqb-ear8-235`, gaps at 225, 227, 228,
+229), 4 folded.** All 35 in `ent-audio` — **the largest single-chapter batch of the Grade Gain run.**
+
+#### 39 against 38 promised — six chapters over, seven page ranges right
+
+Chapter 9 (*Vertigo and vestibular diagnosis*) opens at **Q236 on book p.40**, verified by rendering.
+Running record: **29/29 ✓, 20/20 ✓, 41/40, 31/30, 35/24, 22/21, 18/17, 39/38.** The map's **page
+ranges have now been correct eight chapters running**; its counts have been wrong six times, always
+upward. **Trust it for *where*, never for *how many*.**
+
+#### Four folds — three cross-bank, one within-bank
+
+| Printed | Verdict | Where it went |
+|---|---|---|
+| **Q225** 3-year-old, severe SNHL, hearing aid failed | **cross-bank reprint** of `entep-ear-121` (p.468) — same stem, *Mastoidectomy* **dropped** | `alsoIn:['gradegain']` |
+| **Q227** cochlear implant is indicated in | **cross-bank reprint** of `entep-ear-83` (p.380) — identical option set bar abbreviations | `alsoIn:['gradegain']` |
+| **Q228** newborn, two failed OAE screens | **cross-bank reprint** of `entep-enr-4` (p.2846) — same four options | `alsoIn:['gradegain']` |
+| **Q229** malleoincus dislocation → type of loss | **within-bank reprint** of ch.7 `entqb-ear7-185` — same three options spelled out, a fourth **added** | note added, **no `alsoIn`** |
+
+**Two of the three cross-bank folds carry an explanation the endpoint printing lacks**, and one of
+them **retires a tag**: `entep-ear-121` said the urgency of implanting a young child was *"not taken
+from the course material"* — Grade Gain's box states it outright, *"preferably before the age of 5
+years (before maturation of the auditory cortex)"*, so the claim is now sourced and the tag was
+removed. **A fold can convert authored text into transcribed text; check for that every time.**
+
+**Running fold record: 4/29, 0/20, 3/41, 4/31, 1/35, 3/22, 0/18, 4/39.** Still no trend.
+
+#### Seven figures printed — and an eighth that is missing
+
+| Question | Figure | File |
+|---|---|---|
+| Q205 | audiogram, air-bone gap on a normal bone line | `q-gg-33.jpg` |
+| Q206 | audiogram, low-frequency SNHL | `q-gg-34a.jpg` |
+| Q207 | audiogram, high-frequency SNHL | `q-gg-34b.jpg` |
+| Q209 | audiogram, 4 kHz notch | `q-gg-34c.jpg` |
+| Q210 | tympanogram, type B | `q-gg-34d.jpg` |
+| Q211 | audiogram, mixed loss | `q-gg-35a.jpg` |
+| Q212 | tympanogram, type As | `q-gg-35b.jpg` |
+| Q218 | tympanogram, type C | `q-gg-36.jpg` |
+
+**All eight are `imgEssential` — every stem reads *"the following …"* and none is answerable without
+the picture.** Five of the eight needed a second cut, and **every failure was the same failure**: a
+line of stem text above or an option line below. **Audiograms and tympanograms sit tight against the
+text, unlike the photographs of ch.4 and ch.6 that float in white space** — so the ch.4 lesson
+("white space means right first time") does not transfer here.
+
+**⚠️ The `imgAlt` captions name the modality and the ear and nothing else** — *"Pure-tone audiogram
+of the left ear, air and bone conduction plotted"*. Naming the **shape** would answer Q206, Q207 and
+Q209 outright, and naming the **type letter** would answer Q210, Q212 and Q218. The type letter is
+printed **inside** the tympanogram images by the source, which is the bank's choice, not ours.
+
+**⚠️ Q235 REFERS TO A PURE-TONE AUDIOGRAM THAT IS NOT PRINTED.** Book p.37 ends after option c —
+verified by rendering the foot of the page at 200 dpi, not inferred from the page image. **Second
+dangling figure in this bank** after ch.3 Q88. The answer box names the disease (*"the pattern of PTA
+is suggestive of otosclerosis"*), so the stem was repaired from the box to *"A pure-tone audiogram
+shows the pattern of otosclerosis…"*.
+
+**⚠️ THAT REPAIR HAS A COST AND IT IS RECORDED HERE RATHER THAN HIDDEN.** Naming the disease makes
+Q235 a near-twin of ch.7 `entqb-ear7-188` (*"the primary type of hearing loss in otosclerosis"*). The
+two are held separately because their **third option differs — Central there, Mixed here** — and the
+Mixed option is exactly the point Q235's own box makes (*"rarely mixed"*). But the similarity is an
+artefact of the missing figure, not of the bank.
+
+#### ⚠️ A DIVERGENCE AGAINST THE LECTURE SLIDE, IN THE ENDPOINT BANK'S FAVOUR — no, against it
+
+**Q223** asks the Rinne, Weber **and Schwabach** in a right conductive loss, and keys *Rinne negative,
+lateralises right, **Schwabach prolonged***. `L13,14) AudioVestibulae Evaluation.pdf` states exactly
+that: *"Pt > Ex (**Prolonged** Schwabach) → **Conductive HL**"*.
+
+**`entep-ear-185` (p.596) presents a conductive ear with a "normal Schwabach test."** Its key
+(conductive) is right, and the Rinne and Weber in its stem settle it without the Schwabach — but the
+**Schwabach value in its stem does not match the Alexandria slide.** Neither entry was altered; the
+divergence is added to §11 item 7b. **This is the first divergence found by transcribing a NEW bank
+and re-reading an OLD entry against the slide** — worth remembering as a way these get caught.
+
+#### The best-grounded chapter of the whole Grade Gain run
+
+`L13,14) AudioVestibulae Evaluation.pdf` covers, almost question for question: the **Rinne, Weber and
+Schwabach** tables; **PTA at 250–8000 Hz in octave intervals**; the **20–20,000 Hz** range of hearing
+and the rationale for the decibel; the **four audiogram patterns** including the two labelled *"Low
+frequency SNHL"* and *"High frequency SNHL"* that Q206 and Q207 print; **SRT and SDS** with the
+excellent/good/poor rule and the sentence about hearing-aid benefit; the **five tympanogram
+patterns**; **ABR** and its indication list naming *newborns, infants, mental retardation and
+malingerers*; and **OAE** as *ideal for neonatal screening*. `L19.1) hearing loss.pdf` supplies the
+acoustic-reflex pair (**absent in CHL, impaired in SNHL**) and `L22) Anatomy of Ear Undergraduate.pdf`
+the **stapedius → VII, tensor tympani → V** innervations.
+
+**Four points needed general knowledge and are tagged in place:** the **4 kHz notch** of acoustic
+trauma, the **acoustic reflex arc** beyond its two nerves, **canal volume** as the discriminator
+between a type B effusion and a type B perforation, and **congenital cholesteatoma**. All four are
+added to §11's material-gap list.
+
+#### Explanations: 15 printed, 20 authored
+
+**~38 % printed.** Running Grade Gain figure: **104 of 235 printings, ~44 %**. Two printed boxes have
+defects recorded rather than silently repaired: **Q213's box stops mid-phrase** at *"Impaired reflex
+e.g. Sensorineural Hearing"* — completed from `L19.1`, with the truncation noted — and **Q228's box
+writes "optoacoustic" for otoacoustic**. Q228's third option also reads **"Tympanometry and APT"**
+where the endpoint printing reads **"PTA"**; the letters are transposed and the key is unaffected.
+
+#### Verified in a real `file://` boot
+
+`parse errors: none`; `Q_ENT` **851** / `C_ENT` **82** / total **933**; `MODULES chapters: 104`;
+0 bad chapter refs, 0 duplicate ids, every answer in range, nothing missing a source, explanation or
+objective; **0 dead backticked ids**; **44 of 44 question images loading**; mojibake scan clean.
+By bank **697 endpoint / 21 house / 230 gradegain** = 948 over 933 — **fifteen** shared memberships
+across **fourteen** questions. Grade Gain's 230 = **216 origin + 14 `alsoIn`**.
+
+**Every cross-referenced page number in this batch was read out of the target entry's own `source`
+field before being written** — the discipline §14g had to learn the hard way. Two were wrong on the
+first draft (`entep-ear-67` and `entep-ear-48`) and both were corrected before the splice.
+
+**Reconciles:** ch.1 29 (25 + 4) + ch.2 20 (20 + 0) + ch.3 41 (38 + 3) + ch.4 31 (27 + 4) +
+ch.5 35 (34 + 1) + ch.6 22 (19 + 3) + ch.7 18 (18 + 0) + ch.8 39 (35 + 4) = **235 printed,
+216 written, 19 folded** — **14 cross-bank `alsoIn`** and **5 within-bank reprints held once**.
+
+**Next: Ear ch.9, "Vertigo and vestibular diagnosis", book pp.40–43 (PDF 49–52), 25 promised, opens
+at Q236.** That closes the Ear section; Nose ch.1 begins at book p.44.
