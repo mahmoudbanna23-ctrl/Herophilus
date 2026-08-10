@@ -4478,3 +4478,238 @@ neither was in the list first written here, which had to be corrected by listing
 `L32) nasal symptoms 2.txt` supplement them. **This is the second lecture-filename error in three
 batches** (§14j cited a non-existent `L21) facial nerve.pdf`). **List `content\ent\lectures\` before
 citing or planning — a filename from memory is as unreliable as a page number from memory.**
+
+---
+
+### §14l — Grade Gain, NOSE chapter 3: "Rhinitis" (2026-08-10)
+
+**Book pp.55–60 (PDF 64–69); answers book pp.61–63 (PDF 70–72).**
+**61 printed, Q85 … Q145. 56 written (`entqb-nose3-85` … `entqb-nose3-145`, gaps at 86, 106, 107,
+123, 124), 5 folded.** Chapters: `ent-rhin` 45, `ent-sinusitis` 10, `ent-nasalobs` 1.
+
+The chapter was **read, staged and swept in the previous session** and written in this one; the nine
+page renders were never repeated. `content\ent\qb-pages\gg-nose-ch3.staged.js` holds all 61 verbatim.
+
+#### ✅ THE RUNNING HEADER CONFIRMS THE SECTION FINDING A THIRD TIME
+
+Book p.60 prints **`Chapter 2: Rhinitis`** in its running header. **The number is the SECTION (2 =
+Nose) and the title is the TOPIC.** This is the same structure §14i established from the Ear pages
+and is now confirmed on a Nose page, in a chapter the contents page calls number 3. **The book has
+three chapters; the contents page lists twenty-nine topics.** Nothing about the header needs
+interpreting again — but it is worth re-reading once at the Throat boundary (book p.87), where the
+number should become 3 and the numbering should restart at 1.
+
+#### 61 against 60 promised, and the answer block did NOT overlap
+
+Running record: 29/29 ✓, 20/20 ✓, 41/40, 31/30, 35/24, 22/21, 18/17, 39/38, 26/25, 46/46 ✓, 38/37,
+**61/60.** Page ranges right **twelve** chapters running; counts wrong **nine** times, always upward.
+
+**Book p.61 is answers only** — the questions stop cleanly at the foot of p.60. **First Nose chapter
+without the overlap**, after both ch.1 and ch.2 had it. The tally is now five of twelve chapters
+overlapping, with no pattern: **it stays a property of the page, to be checked every time.**
+
+#### Five folds, all verbatim, all cross-bank into endpoint
+
+| Grade Gain | Folded into | Evidence |
+|---|---|---|
+| **Q86** seasonal obstruction + watery discharge + sneezing | **`entep-nose-5`** (p.899) | verbatim; its stem matches endpoint's **p.1067 reprint** wording, not the p.899 one |
+| **Q106** features of atrophic rhinitis EXCEPT | **`entep-nose-16`** (p.921) | verbatim but for *"from nose"* / *"from the nose"* |
+| **Q107** most effective medical treatment in nasal allergy | **`entep-nose-60`** (p.1047) | verbatim |
+| **Q123** rhinitis medicamentosa | **`entep-nose-63`** (p.1053) | verbatim |
+| **Q124** all true about scleroma EXCEPT | **`entep-nose-64`** (p.1055) | verbatim but for *"granulations in nose"* / *"in the nose"* |
+
+Grade Gain's memberships are now **375 origin + 25 `alsoIn`**.
+
+#### ⚠️ A FOLD CONVERTED AUTHORED TEXT INTO SOURCED TEXT — THE THIRD TIME, AND IT WAS PREDICTED
+
+**`entep-nose-60` printed no box and carried the authored marker; Grade Gain's Q107 DOES print one**
+— *"Antihistamines affect the first cascade of mast cells (early response). While corticosteroids
+affect the late response and the early response… We usually use local corticosteroids to avoid side
+effects."* **The marker was withdrawn and the box quoted into the closing paragraph.**
+
+This is the first time the conversion was **caught during the sweep and written into the staged
+file's header before any entry was touched**, rather than found afterwards. The two earlier cases
+(§14h on `entep-ear-121`, §14i on `entqb-ear7-181`) were both discovered late. **Record the
+conversion at sweep time — it is visible the moment the two printings are compared side by side.**
+
+Its consequence for the counter is exact: **44 new authored markers minus 1 withdrawn = +43**,
+718 → **761**. Computed before the check was run, and matched.
+
+#### ⚠️ A THIRD OPTION LIST WITH TWO CORRECT ANSWERS — AND THE BANK REFUTES ITSELF NINETEEN QUESTIONS APART
+
+**Q135** asks where **saddle nose deformity** occurs and keys **Wegener's granulomatosis** over a list
+that also offers **syphilis**. **Q116**, in the same chapter, asks the cause of a **shrunken bridge
+deformity** — the same lesion under another name — and keys **syphilis** over a list that does not
+offer Wegener's.
+
+**Both keys are individually defensible and the two questions cannot both be exclusive.** `L30)
+Rhinitis 2.pdf` states that *"ulceration of the septum with crusting and saddle nose are common nasal
+presentations"* of Wegener's and says nothing about the deformity under syphilis, so **Wegener's is
+the only *sourced* answer and is what to pick when both appear.** Recorded, not corrected — the
+printed key is right and the **question** is defective, exactly as with Nose ch.1's Q11 and Q19.
+
+**This is now the third instance of the category and the first where the bank's own other printing is
+the disproof.** Look for it: a bank that prints the same fact twice over different menus will
+sometimes leave one menu holding two right answers.
+
+#### ⚠️ ONE FLAGGED KEY — Q114, and it is a category of its own
+
+**Q114** asks which allergic-rhinitis drug *"may affect the kidneys"* and keys **ipratropium
+bromide**. **No option on the list is nephrotoxic.** The key is defensible only if read as *urinary
+tract* rather than *renal*: ipratropium is an anticholinergic, and its labelled cautions are urinary
+retention in bladder outflow obstruction and prostatic hypertrophy. **On the stricter reading — which
+drug needs renal dose adjustment — the answer would be an antihistamine**, since cetirizine and
+levocetirizine are excreted largely unchanged by the kidney, and that option is printed.
+
+**This is not a mis-key and not a disputed key: it is a stem whose wording does not match any option
+cleanly.** The entry answers as the bank does, explains both readings, and tells the learner not to
+carry away the idea that ipratropium harms the kidney. **Added to §11's roster as flagged rather than
+disputed** — the distinction being that a disputed key is one the material contradicts, while this
+one is a question that cannot be answered precisely as asked.
+
+#### ⚠️ Q145 — TWO QUESTIONS IN ONE STEM, AND THE SLIDE ANSWERED WHAT THE BANK DID NOT
+
+Q145 asks for *"the most likely diagnosis **and** the preferred treatment"*, prints options for the
+diagnosis alone, and keys only that. **The staged file recorded the treatment half as unanswerable
+and listed it as an interview item. It is not — `L29) Rhinitis 1.pdf` prints the treatment
+outright:** *"irrigations, humidification to provide moisture, experimental surgical procedures
+aiming at narrowing the nasal cavity with submucosal implants."*
+
+**⚠️ THE INTERVIEW ITEM WAS WITHDRAWN BY READING THE SLIDE, NOT BY REASONING ABOUT IT.** The staged
+note was written while transcribing, before the lecture was opened. **Do not carry a staged interview
+item into the interview without re-checking the cached lectures first** — the staging pass sees only
+the bank.
+
+This is the same shape as Ear ch.9's Q245 (§14i), where the printed box supplied the missing half.
+**Here nothing in the bank did and the lecture did.** No interview items remain from this chapter.
+
+#### One figure cut, and two explanation figures that were not
+
+- **`q-gg-60.jpg`** — 474 × 384, 53 KB, cut from book p.60 (PDF 69) at 200 dpi, `-x 991 -y 1474 -W
+  474 -H 384`. The nasal endoscopy printed **in the question** at Q145. It sits in clear white space
+  between the stem and the options, so it cropped correctly on the second attempt; the first was two
+  pixels of *"Diagnosis:"* too high. `imgAlt` is **"Nasal endoscopy of the nasal cavity"** — modality
+  and view only. **`imgEssential` is NOT set**: the stem already describes the crusts and the roomy
+  cavity in words, so the question is answerable without the picture.
+- **The coronal CT under Q104's key is DESCRIBED, not cropped**, and the **drugs-versus-symptoms
+  table under Q112's key is transcribed as markdown.** Both are **explanation figures on the answer
+  page**. The schema's single `image` renders **between stem and options**, so cropping either would
+  put the answer on the page before the learner had chosen. **An explanation figure goes into the
+  `explanation`, in words or in markdown — never into `image`.** Same rule as ch.3 Q61 in the Ear
+  section.
+
+Image count: **46 references over 43 unique files** — three basenames are legitimately shared, since
+the filename names the source page and one page can hold two entries.
+
+#### Explanations: 12 printed, 44 authored
+
+**~20 % printed**, against ch.2's 13 % and ch.1's rate. Boxes at Q87, Q96, Q98, Q99, Q102, Q107
+(folded), Q108, Q110, Q112, Q113, Q115, Q133, Q143 — thirteen printed of the 61, twelve among the 56
+written. Running Grade Gain figure: **132 of 406 printings, ~33 %.**
+
+**Q112's box is the drug-and-symptoms matrix itself**, which also appears on `L29) Rhinitis 1.pdf` —
+the bank reproduced the lecturer's own table as its explanation.
+
+#### ✅ THE MARKER COUNT WAS RIGHT — BECAUSE IT WAS CHECKED BEFORE SPLICING, NOT AFTER
+
+**Two of the 44 authored entries — Q135 and Q145 — were written without the marker**, both of them
+entries whose closing paragraph read as finished. This is the identical failure mode to §14j's
+twelve-entry block and §14k's scattered six. **The difference is that this time the blocks were
+audited in the scratchpad before being spliced**, so the count was correct on its first run in the
+app rather than being repaired afterwards.
+
+**Make the marker audit a step of writing the block, not a step of validating the file.**
+
+#### The parse held first time
+
+Every apostrophe was escaped as it was typed, and stems or objectives containing them were
+double-quoted throughout. **The five fold edits and all three entry blocks parsed on the first
+attempt** — against §14k, where the fold notes broke the parse twice. The inline-probe method
+(`Q_ENT` reported from a scratchpad `<script>`) was run **after the folds and again after the
+splice**, so a failure would have been localised to one of two small edits rather than to 56 entries.
+
+#### Grounding: this is the best-covered chapter of the Nose section
+
+`L29) Rhinitis 1.pdf` and `L30) Rhinitis 2.pdf` between them carry almost the whole chapter, and
+several questions are answered in the lecturer's own words:
+
+- **`L29`** — the IgE definition of allergic rhinitis verbatim; the **ARIA grid** (intermittent <4
+  days/week *or* <4 weeks, persistent >4 *and* >4) with the separate mild / moderate-severe severity
+  scale; the allergen list; the sensitisation cascade; external and intranasal signs including **pale
+  bluish oedematous turbinates** and the **allergic salute / shiners**; **Samter's triad** named;
+  the asthma comorbidity slide with its five mechanisms; the investigations with the **50 % total
+  IgE** figure; the **drug and symptoms matrix**; the adjunctive list; common cold and influenza; the
+  three chronic non-specific rhinitides including **mulberry mucosa at the posterior end of the
+  inferior turbinate**; atrophic rhinitis in full — definition, primary and secondary aetiology,
+  symptoms and signs, the **five characteristic CT findings**, and the treatment.
+- **`L30`** — scleroma complete (organism, endemicity in Egypt, four stages, Mikulicz cells, Russell
+  bodies, expansile granuloma on CT, biopsy + culture, long antibiotics + excision); sarcoidosis,
+  **Wegener's** and **Stewart's** with their markers and treatments; vasomotor rhinitis, NARES and
+  rhinitis medicamentosa; and the **five-part fungal sinusitis classification** with the host and
+  organism for each, the 50–80 % mortality of acute invasive disease, and *"cacosmia"* under fungus
+  ball.
+- **`L27.2)`** supplied the CRS criteria that key Q131 and the AERD paragraph behind Q132;
+  **`L31)`** supplied the nasal-obstruction classification behind Q127 and the watery-discharge
+  laterality rule behind Q87; **`L27.1)`** the cold burden figures and the viral-versus-bacterial
+  criteria.
+
+**Points filled from general knowledge and tagged in place:** the **early/late phase split** of the
+allergic response and its symptom lists (Q90–Q93 — the slides give the sensitisation cascade but not
+the two phases); the **atopy triad** as a named entity; the **bone-versus-cartilage rule** for
+syphilis, TB and scleroma (Q116, Q117); the **Hebra nose** eponym; the **Mott cell**; the **Type I /
+Type II** division of atrophic rhinitis; the **arachidonic-acid shunt** behind Samter's triad; the
+comparative histology of **leprosy**; the **iron / ketoacidosis** mechanism of mucormycosis; the
+**allergic mucin and CT appearance** of allergic fungal sinusitis; and the **"dropper type"** term
+with the **vidian / sphenopalatine** anatomy behind it. All are added to §11's material-gap list.
+
+**Cacosmia was again filled from the other bank** (`entep-mfe5-17`'s printed box, the true/objective
+versus false/subjective split) rather than from general knowledge, as in §14k. `L25.2) smell.pdf`
+gives six smell terms and still not this one.
+
+#### Verified in a real `file://` boot
+
+`parse errors: none`; `Q_ENT` **1,010** / `C_ENT` **82** / total **1,092**; `QUESTIONS` **1,092**;
+`MODULES chapters: 104`; 0 bad chapter refs, 0 bad module refs, 0 duplicate ids, every answer in
+range, no empty options, nothing missing a source, explanation or objective; **0 dead backticked ids
+out of 2,379 references**; **46 image references over 43 unique files, all 43 loading, none broken**;
+every `image` a basename and every one carrying an `imgAlt`; mojibake scan clean.
+
+By bank **697 endpoint / 21 house / 400 gradegain** = 1,118 over 1,092 — **26** shared memberships
+across **25** questions. Origin only: **697 / 20 / 375**. Authored markers **761 of 1,092**.
+
+**Reconciles:** Ear 261 (241 + 20) + Nose ch.1 46 (44 + 2) + ch.2 38 (34 + 4) + ch.3 61 (56 + 5) =
+**406 printed, 375 written, 31 folded** — **25 cross-bank `alsoIn`** and **6 within-bank reprints
+held once**.
+
+#### ⚠️⚠️ A LECTURE IS MISSING FROM THE SUPPLIED MATERIAL — `L28` DOES NOT EXIST
+
+**Found by listing the directory before citing a filename, which is exactly what that rule is for.**
+A draft of this section named `L28) complications of sinusitis` as a supplementary slide for the next
+chapter. **There is no L28 — not in the cache and not in the source.** The ENT lecture numbering runs
+`… L26) nasal masses → L27.1) ACUTE rhinosinusitis → L27.2) Chronic Sinusitis → **[gap]** → L29)
+Rhinitis 1 → L30) Rhinitis 2 …`
+
+Verified both ways on 2026-08-10:
+
+| | Count | |
+|---|---|---|
+| `Semester 8\ENT\Theoritical\PPT\*.pdf` | **34** | no L28 |
+| `content\ent\lectures\*.txt` | **32** | no L28 |
+| Missing from the cache only | 2 | `L1.1) Surgical anatomy of the larynx`, `L1.2) Anatomy of the pharynx` — present as PDFs, never extracted |
+
+**⚠️ THIS MATTERS BECAUSE `ent-sinuscomp` — "Complications of sinusitis" — IS A REAL CHAPTER IN
+`MODULES`, and the slot between sinusitis (L27) and rhinitis (L29) is exactly where its lecture would
+sit.** Every question assigned to that chapter has therefore been answered without a dedicated slide.
+**→ INTERVIEW ITEM: ask the user whether an L28 exists and was not copied across.** Two earlier
+"missing" filenames turned out to be misremembered; **this one was checked and is genuinely absent.**
+
+**And the earlier note that outside knowledge was "absent from all 32 ENT files" is right about the
+cache but understates the source: there are 34 PDFs.** `L1.1` and `L1.2` — larynx and pharynx anatomy
+— have never been extracted, so **no Throat gap should be declared until those two are read**, and
+the Throat section is the next major run after the Nose one.
+
+**Next: Nose ch.4, "Rhinosinusitis", book pp.64–66 (PDF 73–75), answers p.67 (PDF 76), 22 promised.**
+It should open at **Q146**. Three question pages, so expect the count to run over by one or two, and
+**check whether the answer block overlaps the last question page.** The slides are `L27.1) ACUTE
+rhinosinusitis.txt` and `L27.2) Chronic Sinusitis.txt`, both already read in full for this chapter.
+**There is no complications-of-sinusitis slide to fall back on** — see the gap above.
