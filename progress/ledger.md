@@ -5125,3 +5125,203 @@ as options c and d.** Its slide is `L24) diseases of the nasal septum.txt` — *
 `L23) Anatomy of the Nose.txt`. **⚠️ Q191 asks where saddle nose occurs and offers Wegener's and
 neglected nasal haematoma with "Both" as the key candidate — compare against `entqb-nose3-135`, which
 keys Wegener's over a list offering syphilis.**
+
+---
+
+### §14o — Grade Gain, NOSE chapter 6: "Nasal fractures" (2026-08-11)
+
+**Questions book pp.73–74 (PDF 82–83); answers book p.75 (PDF 84).**
+**13 printed, Q191 … Q203. 13 written (`entqb-nose6-191` … `entqb-nose6-203`), 0 folded.**
+Chapters: `ent-septum` 13 — the first Grade Gain chapter to land entirely in one chapter.
+
+#### The page shape is CLEAN, for the first time in three chapters
+
+No question tail on the answer page and no run-over: all thirteen keys sit on book p.75, and p.76
+opens "Sino-nasal masses" at Q204 under its own Questions banner. **Rendering one page past the last
+promised answer page is what established that** — the rule cost one page and settled the boundary,
+exactly as it did when it caught the ch.4 and ch.5 defects.
+
+Answer-page overlap now stands at **six of fifteen** chapters; answer run-over at **two of three**
+since it was first looked for. **Neither defect is predictable in either direction** — three chapters
+running produced overlap-only, both-at-once, and now neither.
+
+#### 13 against 12 promised
+
+Running record: 29/29 ✓, 20/20 ✓, 41/40, 31/30, 35/24, 22/21, 18/17, 39/38, 26/25, 46/46 ✓, 38/37,
+61/60, 23/22, 22/21, **13/12.** Question ranges right **fifteen** chapters running; counts wrong
+**twelve** times, always upward.
+
+Running header `Chapter 2: Nasal Fractures` throughout and `Chapter 2: Sino-nasal Masses` on p.76 —
+number = section, title = topic, sixth confirmation for Nose.
+
+#### ⚠️ ZERO FOLDS — AND THE SWEEP WAS RUN IN FULL ANYWAY
+
+Stages **A, B and C returned nothing at all.** Stage D returned three, all the same false positive:
+Grade Gain's key *"3D CT"* differs from endpoint's *"CT"* by one token, so `entep-nose-78`, `-80` and
+`-81` — three **nasal-mass** questions — matched on the key alone. Stage E returned one at 0.57 and
+stage F one at 0.67, and **both were rejected on reading:**
+
+| Ranked pair | Verdict |
+|---|---|
+| Q191 ↔ `entqb-nose3-135` (E 0.57) | same opening sentence, wholly replaced option set — ch.3 offers syphilis, RA and atrophic rhinitis; this one offers *Both* and *None*. **New question.** |
+| Q196 ↔ `entep-nose-23` (F 0.67) | the option words are *CT / MRI / X-ray / ultrasound* in both, but `entep-nose-23` asks about **chronic rhinosinusitis**. **A short-option false positive** — the classic stage-F failure mode |
+
+Both keyword passes were then run, twice differently worded. **`wing fracture`, `open book`,
+`angulated`, `depressed fracture`, `lateral blow`, `frontal blow`, `boxing`, `medicolegal`,
+`walsham`, `pollock`, `3d ct` and `osteotomy` returned ZERO hits across the entire corpus** — this
+chapter's terminology is simply absent from endpoint. That is why zero folds is credible here rather
+than suspicious: endpoint prints the *timing* of nasal-fracture management eight times over and the
+*classification* of nasal fractures not once.
+
+Fold run: **4/29, 0/20, 3/41, 4/31, 1/35, 3/22, 0/18, 4/39, 1/26** across Ear and
+**2/46, 4/38, 5/61, 4/23, 1/22, 0/13** in Nose. Third zero-fold chapter of the fifteen.
+
+#### ⚠️ THE LESSON OF THE TIMING CLUSTER: A KEY IS THE BEST OPTION OFFERED, NOT THE BEST TREATMENT
+
+Between the two banks the nasal-fracture timing rule is now printed **twelve times**, and it survives
+every printing intact — except that one endpoint entry *appears* to disagree, and the reason is
+instructive. Four printings of the **same 30-minute, no-oedema patient**:
+
+| Entry | Earliest option its menu offers | Key |
+|---|---|---|
+| `entep-nose-112` (p.1159) | *immediately* | **immediately** |
+| `entep-nose-97` (p.1127) | *within a week* — **no immediate option exists on that list** | **within a week** |
+| `entep-mfe5-14` (p.2413) | *referral for reduction immediately* | **refer immediately** |
+| `entqb-nose6-202` | *immediate digital reduction* | **immediate digital reduction** |
+
+**`entep-nose-97` is not a divergence and must not be recorded as one.** Its key is the best
+available choice on a menu that never offers the right answer. **This is a distinct thing from a
+mis-key and from a cross-bank divergence, and it is worth checking for before either is written
+down: read what the option list ACTUALLY OFFERS before concluding two banks disagree.**
+
+The other tiers agree across banks without qualification — `entep-nose-74`, `-50`, `-12` and
+`entqb-nose6-201` on the oedema tier; `entep-mfe5-15`, `entep-enr-12`, `entqb-nose6-200` and
+`entqb-nose6-203` on the six-month tier, where Grade Gain's *"after 5 months"* at one month post-
+injury and endpoint's *"after five months"* at one month post-injury are the same sentence.
+
+#### ⚠️ TWO PRINTING FORMATS THIS BANK HAD NOT USED BEFORE
+
+* **Q198 is a TRUE/FALSE with two options only** — the first in the Grade Gain material, and the
+  first two-option question anywhere in the project. Transcribed as printed; the validation harness
+  reports its option count as 2 and every check passes, so nothing in the app assumes four.
+* **Q191 offers "Both" as c and "None of the above" as d, and keys "Both"** — the first "Both" key
+  in this bank. **It also resolves, in passing, the defect recorded at `entqb-nose3-135`:** that
+  question keys Wegener's alone over a list offering syphilis, and this one shows the bank does
+  accept multiple causes of saddle nose when the option list lets it.
+
+#### ⚠️ A BOX LOOSE ABOUT ITS OWN MECHANISM WHILE RIGHT ABOUT THE KEY — FOURTH OCCURRENCE
+
+**Q199's** box argues for a right-sided deviation via *"deviation… toward the opposite side of the
+impact"* plus *"strikes coming from the right side"* — which read literally gives a **LEFT**
+deviation, the answer it is arguing against. The coherent reading, and the one that yields the key:
+a right-handed opponent's punch lands on the victim's **left** sidewall and drives the nose to the
+victim's **right**. Recorded as printed with the correction marked.
+
+Fourth instance of this shape after §14k's Q72, §14l's Q96 and §14n's Q176. **A printed box is
+evidence, not authority** — and note that all four were wrong about the *reasoning*, never the key.
+
+#### ⚠️ ONE STEM REPAIRED, AND IT WAS INTERNALLY INCONSISTENT AS WELL AS DANGLING
+
+**Q203 reads "What is the most appropriate treatment for THIS PATIENT'S nasal fracture, given that
+he presents 1 month after the injury?"** The back-reference points at Q201's basketball vignette in
+the facing column — **whose patient presented at 12 hours, not one month.** So the reference is both
+unresolvable in a shuffled deck *and* contradicted by its own antecedent. Repaired to *"a patient's"*;
+nothing else altered.
+
+Q202 was left unaltered: it says *"a patient's"* and carries its own 30-minutes-and-no-swelling
+clause, so it stands alone even though it was printed as part of the same set.
+
+Running total of repaired linked-set stems: 5 of 41 in Ear ch.3, 6 of 22 in ch.6, 2 of 26 in ch.9,
+1 of 46 in Nose ch.1, 1 of 22 in ch.5, **1 of 13 here.**
+
+**Q197 prints its own number twice** — *"197. 197.Nasal fracture is best diagnosed by"*. Stripped.
+Fourth occurrence after Nose ch.3's Q102, Q103 and Q145.
+
+#### ⚠️ A PAIR THAT LOOKS LIKE A CONTRADICTION AND IS A READING TEST
+
+**Q196** asks the *most informative investigation* and keys **3D CT**; **Q197** asks how a nasal
+fracture is *best diagnosed* and keys **physical examination** — and 3D CT sits in **both** option
+lists. Neither key is wrong: the diagnosis is clinical, the most informative imaging is CT. The two
+are printed back to back, which reads as deliberate.
+
+**This also bears on an open dispute.** `entep-mfe4-16` (p.2296) keys **plain X-ray** as the
+*initial* diagnostic modality after an RTA with midfacial oedema, with *"computed tomography with
+three dimensional reconstruction"* offered as a distractor; it is on the disputed roster because the
+stem describes the **middle third of the face**, where CT is standard. **Grade Gain keying 3D CT here
+does not contradict it** — *initial* and *most informative* are different questions, and `L24` prints
+exactly that order — **but it does strengthen the objection already recorded.** Noted in the roster;
+the dispute stays open.
+
+#### Grounding: `L24` read for the first time, and `L25.2` used for something new
+
+`L24) diseases of the nasal septum.txt` is this chapter's slide and had never been read. It carries
+the aetiopathogenesis (*"Trauma (RTA, Sports) inflicted from front, side or below"*), the buckling
+patterns, the three classification axes, the full **signs** list (*"external deformity difficult to
+examine in acute condition… better seen after the edema has reduced… Look for movements of eye…
+Palpate the nose to look for: deformity, deviation, crepitus, mobility, any tenderness… Look for
+septal hematoma, abscess"*), *"Investigation: xray nasal bone"* with CT for severe facial injury, the
+reduction principle (*"mobilize the fragments first by increasing and then decreasing the degree of
+deformity"*), the instruments **Freer / Ashe / Walsham forceps**, splints, and open reduction
+(**septorhinoplasty**) for *"dislocation of nasal dorsum and significant septal deformity"*. It also
+supplies the septal cartilage's **3–4 mm thickness** and its role in *"support to the tip and dorsum"*,
+which is the whole of Q191's haematoma pathway.
+
+**`L25.2) smell.txt` answered Q195's hyposmia and had not been used this way before.** It gives both
+routes: **conductive** — *"physical obstacle of odorant to reach olfactory epithelium"* — and
+traumatic/sensorineural — *"occasionally associated with a fracture running through the nose and the
+cribriform plate… shearing or stretching of the olfactory nerves at the cribriform plate, which
+occurs in approximately **10 % of major head injuries**"*. **A conductive hyposmia clears with the
+swelling; a cribriform one may not, and that is the clinically useful half.**
+
+`L30) Rhinitis 2.txt` supplied Wegener's saddle nose verbatim; `L25.1) epistaxis.txt` supplied trauma
+as the local cause of bleeding; the other bank's `entep-nose-101` (p.1135) confirmed the
+haematoma → saddle-nose link, which **no cached slide states** — preferring the other bank to outside
+knowledge, as the standing rule requires.
+
+**Filled from general knowledge and tagged**, all added to §11's list: the **angulated/depressed** and
+**wing/open-book** classification by direction and force of blow; the **failure modes of the plain
+nasal film** (suture lines and vascular grooves mimicking fractures, overlap hiding them); the
+**medicolegal** rationale for taking it anyway; the **NOE and cribriform** associations of an
+open-book fracture; the **bilobed flap's** actual indication (resurfacing a soft-tissue defect of the
+tip or ala, not straightening a skeleton); the **soft-tissue remodelling** rationale for the six-month
+wait; and the **saddle-nose cause table** beyond Wegener's and syphilis (leprosy, rhinoscleroma,
+cocaine, over-resection).
+
+#### Explanations: 4 printed among the 13, 9 authored
+
+**~31 % printed.** Boxes at Q199, Q200, Q201 and Q202 — all four in the management run, and none on
+the classification or investigation questions. Running Grade Gain figure: **149 of 464 printings,
+~32 %.**
+
+#### Verified in a real `file://` boot
+
+`parse errors: none` on the first attempt, both after the blocks were written and again after the
+splice. `Q_ENT` **1,063** / `C_ENT` **82** / total **1,145**; `MODULES chapters: 104`; 0 bad chapter
+or module refs, 0 duplicate ids, every answer in range, no empty options, nothing missing a source,
+explanation or objective; **0 dead backticked ids out of 2,603 references**; **46 image references
+over 43 unique files, all loading** (this chapter prints no figures); mojibake clean; `imgAlt` present
+on every image and no path-instead-of-basename.
+
+By bank **697 endpoint / 21 house / 458 gradegain** = 1,176 over 1,145 — **31** shared memberships
+across **30** questions. Origin only: **697 / 20 / 428**. Authored markers **798 of 1,145**, matching
+the predicted **+9** exactly (13 written − 4 boxed).
+
+**The marker audit was run both ways in the scratchpad before splicing**, as §14n required, and came
+out clean on the first pass: 9 present where expected, 4 absent where a box was transcribed, 0
+mismatches. **First chapter with no marker fault at all** — misses ran 6 → 2 → 1, then one spurious,
+then none.
+
+**Reconciles:** Ear 261 (241 + 20) + Nose ch.1 46 (44 + 2) + ch.2 38 (34 + 4) + ch.3 61 (56 + 5) +
+ch.4 23 (19 + 4) + ch.5 22 (21 + 1) + ch.6 13 (13 + 0) = **464 printed, 428 written, 36 folded** —
+**30 cross-bank `alsoIn`** and **6 within-bank reprints held once**.
+
+**Next: Nose ch.7, "Sino-nasal masses", book pp.76–80 (PDF 85–89), answers p.80, 31 promised** — the
+largest Nose topic after ch.3. It opens at **Q204**, already confirmed by rendering p.76. **Render
+PDF 85–90**, one past the promised answer page.
+**⚠️ IT PRINTS AT LEAST ONE PHOTOGRAPH WITH A QUESTION** — Q210 ("A man had a trauma in the nose.
+There is no fever. What is the diagnosis?") carries a clinical photograph of the nasal vestibule on
+book p.76, and it is **load-bearing**: the four options are septal haematoma / abscess / perforation /
+synechiae and nothing in the stem separates them. **That one must be cropped** (`q-gg-76.jpg`), unlike
+an explanation figure on an answer page. **⚠️ Q208 opens "In the previous case…"** — a linked set off
+Q207's midline-nasal-swelling infant, so expect stem repairs. Slides: `L26) nasal masses.txt` (already
+cached and used) plus `L23) Anatomy of the Nose.txt`.
