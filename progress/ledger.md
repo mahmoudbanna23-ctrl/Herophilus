@@ -5805,3 +5805,98 @@ first page prints Q1–Q10 in two columns, so expect the usual ~10 per page. **B
 it, read `L1.1) Surgical anatomy of the larynx.pdf` and `L1.2) Anatomy of the pharynx.pdf`** — both
 are ENT source PDFs with **no cached `.txt`**, and both are exactly this topic. **Do not declare a
 Throat anatomy gap until they have been read.**
+
+---
+
+### §14s — Grade Gain, THROAT topic 1: "Anatomy & physiology of throat" — READ AND STAGED (2026-08-11)
+
+**Questions book pp.87–90 (PDF 96–99); answers book p.91 (PDF 100).**
+**40 printed, Q1 … Q40, against 40 promised — EXACT.** Verbatim staging in
+`content\ent\qb-pages\gg-throat-ch1.staged.js`. **⚠️ NOT YET WRITTEN — do not re-render PDF 96–101.**
+
+#### The section opens exactly as the Nose close predicted
+
+Full-page **"CHAPTER 3: THROAT"** banner on book p.87; numbering **restarts at 1**; the running header
+then reads **"Chapter 3: <topic>"** and Q40 → Q41 runs straight across into topic 2 on book p.92.
+Third section, same structure three times. **Ids take a `thr` token: `entqb-thr1-1` … `-40`.**
+
+**Fifth clean sheet running** — all 40 keys on one page, no question tail on it, no run-over.
+Fourth exact count in nineteen chapters (29/29, 46/46, 7/7, 40/40).
+
+#### ⚠️ ONE PRINTED BOX IN FORTY — 2.5 %, THE LOWEST RATE YET
+
+Q25 alone (*"SLN supplies cricothyroid muscle which is the only tensor of the cord and responsible of
+high-pitched sound."*). The whole answer sheet is otherwise a bare key list. Against this bank's
+running ~30 %, and below Nose ch.7's previous low of ~3 %. **Box presence is a property of the PAGE**
+— now demonstrated in both banks and in all three sections. **Expect ~39 authored explanations**,
+which makes this a large writing job for its question count.
+
+#### ⚠️ FOUR THINGS FOUND IN THE READ, ALL RECORDED IN THE STAGING
+
+1. **Q2 may have two correct answers.** *"All of the following occurs at the lower border of C6
+   except"* keys **"Beginning of pharynx"** — right, since the pharynx begins at the skull base and
+   *ends* at C6. **But "Bifurcation of carotid artery" is not a C6 event either**: the common carotid
+   divides at the upper border of the thyroid cartilage, **C3–C4**. At C6 sit the cricoid, the end of
+   the larynx, the start of trachea and oesophagus, and the carotid tubercle. **Check
+   `L1.2) Anatomy of the pharynx.pdf` before writing** — if the lecture itself teaches C6, the key
+   stands unremarked. Otherwise: key as printed, note beside, per the user's ruling of 2026-08-11.
+2. **Q19 offers a muscle that does not exist** — option a, *"anterior cricoarytenoid muscle"*. The
+   pair are **posterior** (abductor, and the key) and **lateral** (adductor). Transcribe as printed
+   and say so.
+3. **Q21 is ambiguous as worded.** *"What is the result if vocal cords are in paramedian position?"*
+   keys **stridor**, true only if the position is **bilateral**; unilateral paramedian gives
+   hoarseness, which is offered as option d. The bank is internally consistent (Q34 keys bilateral
+   abductor palsy for stridor), so the intended reading is bilateral — supply the qualifier and say
+   it was supplied. **This is the "flagged, not disputed" shape**, like Nose ch.3 Q114.
+4. **Q12 prints FIVE options** and keys **E**. Option counts of 2, 3, 4 and 5 now all coexist.
+
+#### ⚠️ AN IDENTICAL-MENU CLUSTER THAT WILL TRIP THE SWEEP
+
+**Q34, Q35 and Q36 share one four-option list** — bilateral adductor / bilateral abductor /
+unilateral abductor / unilateral adductor — and key **three different answers** (B, A, D). Q21, Q22,
+Q25 and Q39 test the same axis from other directions. **Stages B, C and F will pair Q34/Q35/Q36 with
+each other at or near 1.00.** Same trap as Nose ch.8's Q250/Q258/`entqb-nose7-210`: **an identical
+menu with a different key is not a fold, and only the stem decides.** Expect it and do not re-derive
+it.
+
+#### ⚠️⚠️ VERIFIED: `L1.1` AND `L1.2` ARE IMAGE-ONLY — THAT IS WHY THEY WERE NEVER CACHED
+
+Tested directly with `pdftotext -layout` on 2026-08-11:
+
+| Lecture | Pages | Extracted |
+|---|---|---|
+| `L1.1) Surgical anatomy of the larynx.pdf` | 16 | **306 chars — the title slide only** |
+| `L1.2) Anatomy of the pharynx.pdf` | 24 | **330 chars — the title slide only** |
+
+Both return the author's name and the deck title and **nothing else**. Earlier notes recorded these
+two as "PDFs with no cached text" without saying why; **the answer is that extraction genuinely
+fails**, so they belong to the render-and-read tier despite being lecture slides. **They are the only
+two ENT decks in that state** — the count therefore stands at **34 ENT source PDFs / 32 cached, and
+the two uncached ones cannot be cached by extraction.** This closes an open question in §11 and
+removes them from the "not yet harvested" category: they were never harvestable.
+
+**Both are rendered and waiting** at `<scratchpad>\lec-l1\` (`pharynx-01..24`, `larynx-01..16`,
+110 dpi, 40 slides). **Read them visually BEFORE writing this topic and cache the transcription to
+`content\ent\lectures\`** — 40 questions of pure anatomy rest on them, and so does much of the rest of
+Throat. **⚠️ Do not declare a Throat anatomy gap until they have been read.**
+
+#### Sweep not yet run — expect folds, unlike the last two chapters
+
+Endpoint's Throat run is the largest in that bank, so the two zero-fold chapters just closed are no
+guide. Candidates flagged in the staging: Waldeyer's ring (Q12), the only complete ring (Q17),
+posterior cricoarytenoid as sole abductor (Q19), cadaveric position (Q22, Q39), Reinke's space (Q26),
+Killian's dehiscence and Zenker's (Q31), fossa of Rosenmuller and nasopharyngeal carcinoma (Q40), and
+**secretory otitis media as the commonest paediatric conductive loss (Q5), which overlaps the Ear run
+heavily.**
+
+**Q40 also touches §11's highest-value open gap** — the nasopharynx, where up to 27 entries rest on
+outside knowledge and one book read would fix it.
+
+#### Next steps, in order
+
+1. **Read the 40 rendered slides** of `L1.1` and `L1.2`; cache both to `content\ent\lectures\`.
+2. Run the six-stage sweep for `GGT1_STAGED`; expect and discount the Q34/Q35/Q36 self-pairing.
+3. Resolve Q2 against `L1.2`.
+4. Write, marker-audit both ways, parse-check, splice, validate, ledger, MEMORY, commit.
+
+**No figures on any of the five pages.**
