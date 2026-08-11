@@ -1,6 +1,10 @@
 /* Grade Gain — ENT QB.pdf — NOSE section, chapter 8: "Nasal septal diseases"
    Questions book pp.81-83 (PDF 90-92); answers book p.84 (PDF 93).
-   Verbatim staging. Read 2026-08-11. ⚠️ READ AND STAGED — NOT YET WRITTEN.
+   Verbatim staging. Read 2026-08-11. ✅ WRITTEN 2026-08-11 — all 23 are live as
+   `entqb-nose8-236` … `entqb-nose8-258`, ZERO folds. Sweep run and recorded in
+   `progress\ledger.md` §14q. ⚠️ The "Cottle test" gap predicted below was WRONG:
+   `L24` prints it — *"Deviations in region of nasal valve cause greatest
+   obstruction : cottle test"*. Kept as the verbatim record of the page.
 
    ── COUNT ────────────────────────────────────────────────────────────────
    23 printed, Q236 … Q258, against 22 promised. Fourteenth chapter running

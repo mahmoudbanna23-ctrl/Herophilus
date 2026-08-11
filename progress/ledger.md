@@ -5484,3 +5484,192 @@ fracture classification** (Q236–Q240) that appears **nowhere in `L24) diseases
 the population") that will need checking against `L24`'s own *"Extremly common 80 % of population,
 more in males"*. **⚠️ Q242's option d and option a contradict each other on the same axis (Caucasians
 vs Africans), so read the key carefully.**
+
+---
+
+### §14q — Grade Gain, NOSE chapter 8: "Nasal septal diseases" (2026-08-11)
+
+**Questions book pp.81–83 (PDF 90–92); answers book p.84 (PDF 93).**
+**23 printed, Q236 … Q258, against 22 promised. ALL 23 WRITTEN (`entqb-nose8-236` … `-258`), ZERO folds.**
+Every entry is `ent-septum` — the first single-chapter batch in the Nose section.
+Page split: p.81 = Q236–Q243, p.82 = Q244–Q249, p.83 = Q250–Q258.
+
+#### Page shape clean for the third chapter running
+
+All 23 keys on p.84; no question tail on the answer page, no run-over. Book p.85 opens "Minor Nasal
+Procedures" at **Q259** and holds that whole chapter (7 promised) on one page. Overlap six of
+seventeen; run-over two of four. Running count record: …, 22/21, 13/12, 32/31, **23/22** — ranges
+right **seventeen** times, counts wrong **fourteen**, always upward.
+
+#### ⚠️ ZERO FOLDS — AND THE ZERO IS EXPLAINED, NOT JUST REPORTED
+
+Stage A returned nothing. Every other stage's hits were run down side by side and all are false
+positives; the reason is that **endpoint teaches DNS through its *symptoms and complications* and
+never through its *classification or examination*.** The chapter's whole vocabulary is absent from
+the corpus:
+
+| Term searched | Hits corpus-wide |
+|---|---|
+| `cottle` | **0** |
+| `osteocartilaginous` | **0** |
+| `c-shaped` / `s shaped` | **0** |
+| `nasal valve` | **0** |
+| `turbinate hypertroph` | **0** |
+| `caucas` | **0** |
+| `anterior dislocation` | **0** |
+
+**Three near-misses worth recording, because each is a known trap firing again:**
+
+| Staged | Matched | Stage | Verdict |
+|---|---|---|---|
+| **Q256** | `entqb-nose6-198` | **B + F 1.00** | **NOT a fold — the TRUE/FALSE collision.** Same option set (`True`/`False`), same key (`True`), **different stem**. Second time a two-option question has produced a spurious 1.00 |
+| **Q258** | `entqb-nose7-210` | **F 1.00** | **NOT a fold.** Identical four-option menu (hematoma / perforation / synechae / abscess) but a **different key**. `entqb-nose8-250` shares the same menu and keys a third answer |
+| **Q252** | `entep-nose-77` | C + F 0.50 | **NOT a fold.** Same discriminator (steroids fail, decongestants help partly) and same key, but **two of four distractors are replaced** — a replaced distractor is a new question |
+
+**⚠️ THE TRUE/FALSE FORMAT WILL KEEP DOING THIS.** Any two true/false questions in the bank match at
+stage B, stage C and stage F 1.00 by construction, because their option set and their key are drawn
+from a two-item vocabulary. **A true/false hit at B/C/F is worthless — only the stem decides**, and
+stage E is the only stage that reads it (Q256 vs `entqb-nose6-198` scored **0.17**). Expect the same
+false pair on every future true/false.
+
+#### The septal-haematoma cluster: three questions, three held, none folded
+
+Q246 / Q247 / Q248 sit against endpoint's four (`entep-nose-8`, `-25`, `-88`, `-101`) and this bank's
+own `entqb-nose7-210`. **Every pairing has a replaced option set and a different vignette**, so all
+are held. The set is now the fullest treatment of one topic in ENT, and the questions divide cleanly
+by *what they ask*: Q246 diagnosis at day 0, Q247 diagnosis at day 7 with fever, Q248 treatment.
+**The bank's own box at Q247 supplies the rule that separates them** — *"Any hematoma more than 3
+days = infection Any infection = abscess = necrosis of cartilage"* — and it is quoted into Q246,
+Q248 and Q251, so one printed line grounds four entries.
+
+#### ⚠️ Q242 HAS TWO CORRECT ANSWERS — AND THE UNKEYED ONE IS THE ONE THE LECTURE TEACHES
+
+Key **a**: *"Caucasians are more affected than Africans, with a prevalence of 92 % vs. 40 %."*
+Option **b**: *"DNS is more common in males than females"* — **also true, and stated verbatim on
+`L24) diseases of the nasal septum.pdf`**: *"Extremly common 80 % of population, more in males."*
+The slide's own **80 %** matches **neither** offered figure (92 %/40 %, or 50 % in option c).
+
+Fourth question of this shape after Nose ch.1 Q11 and Q19 and ch.3 Q135. **Handled under the user's
+standing instruction of 2026-08-11** (below): keyed as the bank keys it, with the discrepancy written
+beside it in the explanation. **Not added to the disputed roster** — under the new rule there is no
+roster to add it to.
+
+#### ⚠️ THE USER'S RULING OF 2026-08-11 — DEFECTIVE KEYS ARE NOTED, NOT DISPUTED
+
+Asked about `entqb-nose7-206`, the user answered verbatim: *"put the answer as Grade Gain says and
+put a note beside it that it's not mentioned directly in the lectures. **Do that with any questions
+that have errors like that, just leave a note beside.**"*
+
+**This closes the disputed-key roster as a category of open work.** `answer` is always the bank's
+printed key; the discrepancy becomes a short note inside the `explanation` naming what the lecture
+says or that no lecture covers it. **Do not raise a key dispute with the user again** — raise only
+things they can actually supply, such as a missing lecture file. The nine open disputes in §11 are to
+be rewritten as notes rather than carried as questions.
+
+#### ⚠️ THE TYPE 1/2/3 CLASSIFICATION IS IN NO CACHED SLIDE — FIVE ENTRIES TAGGED
+
+Q236–Q240 turn entirely on a three-type grading of septal fracture. `L24` gives only three *axes* —
+*"Classification: Nature of injury / Extent of deformity / Pattern of fracture"* — and names no types.
+The scheme was **recovered from the bank's own four keys read together** and written into
+`entqb-nose8-236` as a table, tagged as outside the course material:
+
+| Type | Lines | Crosses the osteocartilaginous junction | Stability | Complications |
+|---|---|---|---|---|
+| 1 | single | no | most | fewest |
+| 2 | single | **yes** | intermediate | intermediate |
+| 3 | **multiple** | may | least | most |
+
+**The discriminating axis changes between the pairs** — crossing separates 1 from 2; *number of
+lines* separates 2 from 3. Q240's key says *"Can be crossing"*, which is what makes that explicit.
+Also: the bank prints Q240's stem as *"nasal septal fractures"* while Q236–Q239 say *"nasal
+fracture"*; the osteocartilaginous junction is a septal landmark, so one classification is meant
+throughout. Transcribed as printed.
+
+#### ⚠️ THE NUMBER-PRINTED-TWICE DEFECT MOVES TO THE ANSWER LIST
+
+**Q252–Q258 print their own number twice in the ANSWERS** (*"252. 252.Correct answer: …"*), **seven
+in a row**, while their question stems are clean. Every previous instance — Nose ch.3 ×3, ch.6 Q197,
+ch.7 Q220 and Q231 — was in the **question**. Q265 on p.85 shows the stem form again, so both
+locations are live. Cosmetic; stripped in transcription.
+
+#### `L24` carries far more of this chapter than expected — including the Cottle test
+
+`L24) diseases of the nasal septum.pdf` had been read for ch.6 but is the backbone here. It supplied:
+the **three-part septal anatomy**; the quadrilateral cartilage at *"3-4 mm thick"* and its role in
+*"support to the tip and dorsum"* — the single most load-bearing sentence in the chapter, grounding
+six entries; the arterial supply; the fracture aetiopathogenesis and the *"Look for septal hematoma,
+abscess"* instruction; the observation / closed-reduction / *"Open reduction (Septorhinoplasty)"*
+ladder with its instruments; the **four-group DNS aetiology** (trauma, developmental, racial,
+mass effect); the **morphological list** (*C or S shaped*, *Spurs*, *Anterior dislocation* — three
+separate entries, which is what makes Q256 answerable); the full **symptom list** including
+*"Mucosal changes : dryness, crusting and epistaxis"* and the *"Anterior ethmoidal nerve syndrome"*;
+and the two operations, *SMR* and *Septoplasty*.
+
+**⚠️ The Cottle test IS on the slide, and the staged file was wrong to expect a gap.** `L24` ends the
+DNS symptoms with *"Deviations in region of nasal valve cause greatest obstruction : **cottle
+test**"* — the exact link Q245 tests. **Fifth time now that a point staged as "not covered" has been
+found in the lectures once they were actually read.** Staging sees only the bank; read the slide
+before declaring a gap.
+
+**Filled from general knowledge and tagged** (added to §11): the Type 1/2/3 scheme and the
+cartilage-versus-bone mechanics; the **rankings** the slide declines to give (commonest cause of
+symptomatic DNS, commonest morphological type, commonest cause of perforation, commonest
+complication of septal surgery); the **definition and management of nasal synechiae**, which no
+cached ENT slide defines at all; the **septal-abscess complication list** and the cavernous-sinus
+route behind its meningitis; the **causes-of-perforation list**; the **obstructive mechanism of
+hyposmia** in DNS; the **triad of septal perforation** (crusting / epistaxis / whistling) and why
+whistling implies a *small* defect; the internal nasal valve's boundaries and the Cottle manoeuvre
+itself; and the per-type unilateral/bilateral obstruction mapping.
+
+#### Two figures, and the first clean first-pass crops in this bank
+
+- **`q-gg-83a`** (Q250, book p.83) — coronal CT with the bank's **red arrow**, kept. **`imgEssential`:
+  the stem says only *"this disease"* and the box only *"The CT shows DNS"**, so the picture is the
+  entire identification. 782×590, 138 KB.
+- **`q-gg-83b`** (Q258, book p.83) — endoscopic view of the perforation. **Supporting**, since the
+  printed triad is already diagnostic. 1012×514, 163 KB.
+
+**Both were clean on the first attempt — the first time that has happened with a Grade Gain page.**
+The running record was 13 of 13 wrong; it is now **13 of 15**. What was done differently: the page
+was rendered once at 300 dpi and cropped with `System.Drawing` against the 130 dpi proof, so the
+boundaries could be read off a picture already looked at rather than estimated from the PDF. Assets:
+47 → **49 files, all referenced, all loading.**
+
+#### Verified in a real `file://` boot
+
+`parse errors: none` on the first attempt, before and after the splice. `Q_ENT` **1,116** / `C_ENT`
+**82** / total **1,198**; 104 chapters; 0 bad refs, 0 duplicate ids, every answer in range, no empty
+options, nothing missing a source, explanation or objective; **0 dead backticked ids out of 2,991
+references**; **52 image references over 49 unique files, all loading**; every `imgAlt` present, no
+path-instead-of-basename; mojibake clean.
+
+By bank **697 endpoint / 21 house / 513 gradegain** = 1,231 over 1,198 — **33** shared memberships
+across **32** questions, unchanged. Origin only: **697 / 20 / 481**. Authored markers **847 of
+1,198**, matching the predicted **+20** exactly (23 written − 3 boxed).
+
+**The pre-splice marker audit was clean both ways on the first run** — the first chapter for which
+that is true. Misses by chapter: 6 → 2 → 1 → 0 → 2 → **0**.
+
+**Option counts:** 22 fours and one two (`entqb-nose8-256`). Counts of 2, 3 and 4 continue to coexist.
+
+**Reconciles:** Ear 261 + Nose ch.1 46 + ch.2 38 + ch.3 61 + ch.4 23 + ch.5 22 + ch.6 13 + ch.7 32 +
+ch.8 23 = **519 printed, 481 written, 38 folded** — **32 cross-bank `alsoIn`** and **6 within-bank
+reprints held once**. Grade Gain origin count **481** matches exactly.
+
+#### ⚠️ REVIEW ITEM 1 IS NOW AUTOMATED AND SATISFIED
+
+§11's first owed item was *"sweep the WHOLE file for 'Ask ChatGPT' — 5 known, each found by eye,
+never by a search."* **The validator now runs that search every time.** It returns **four entries** —
+`entep-nose-34`, `entep-nose-35`, `entep-throat-33`, `entep-throat-53` — and **all four are already
+flagged deliberately**: each records that *the bank's own printed explanation box* ends with the
+literal string, pasted out of a chatbot by the compilers, and marks it `⚠️` rather than trusting it.
+A fifth defect of the same class, the placeholder *"[Effect not specified here]"*, is likewise
+recorded. **Nothing is residue and nothing needs removing** — the item can be struck, and the search
+now runs on every batch rather than depending on the eye.
+
+**Next: Nose ch.9, "Minor Nasal Procedures", book p.85 (PDF 94).** It opens at **Q259**, 7 promised,
+and **the entire question set fits on that one page, which is already rendered** at
+`<scratchpad>\gg8\p-094.png`. **Q265 prints its own number twice in the stem.** After it, Nose closes
+at 9 topics against 258 promised, and the **Throat section begins at book p.87** — **check the
+running header there**: the number should become **3** and the numbering should **restart at 1**.
+Nose has held one continuous run from Q1 to Q265 with headers reading *"Chapter 2: <topic>"*.
