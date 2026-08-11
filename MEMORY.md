@@ -2,7 +2,7 @@
 
 Running record, organised around *resuming*. ISO dates; unverified marked as such. **Only what is needed to pick the work up cold; under 200 lines — `(Get-Content).Count`.** Method in `CLAUDE.md`, detail in `ledger.md` — **`CLAUDE.md` imports this, so repeating its rules costs budget.**
 
-## Resume here — **✅ Endpoint CLOSED. ✅ Grade Gain EAR CLOSED. NOSE ch.1–8 WRITTEN. Resume at NOSE ch.9.**
+## Resume here — **✅ Endpoint CLOSED. ✅ Grade Gain EAR CLOSED. ✅ Grade Gain NOSE CLOSED. Resume at Grade Gain THROAT topic 1.**
 
 0. **⚠️⚠️ USER'S RULING, 2026-08-11 — A DEFECTIVE KEY IS NOTED, NEVER DISPUTED.** Verbatim: *"put the answer as Grade Gain says and put a note beside it that it's not mentioned directly in the lectures. **Do that with any questions that have errors like that, just leave a note beside.**"* `answer` is always the bank's printed key; the discrepancy is a short note **inside the `explanation`** saying what the lecture says or that none covers it. **This CLOSES the disputed-key roster as open work** — the nine in §11 become notes, not questions. **Never take a key dispute to the user again**; interview only for things they can supply (a missing file). **Still owed at the interview: whether `L28` exists** — asked 2026-08-11, unanswered.
 
@@ -13,11 +13,11 @@ Running record, organised around *resuming*. ISO dates; unverified marked as suc
    section**. In the running header the **number is the section, the title is the topic** (`Chapter 1` on
    every Ear page was *correct*, not the defect earlier notes called it). **Ids must carry a section+topic
    token** — `entqb-ear9-236`, `entqb-nose1-1` — or Nose collides with Ear.
-   **⚠️ QUESTION-PAGE RANGES RIGHT ALL SEVENTEEN TIMES; COUNTS WRONG FOURTEEN, ALWAYS UPWARD** — 29/29 ✓, 20/20 ✓,
-   41/40, 31/30, 35/24, 22/21, 18/17, 39/38, 26/25, **46/46 ✓**, 38/37, 61/60, 23/22, 22/21, 13/12, 32/31, 23/22. Trust the
-   map for *where*, never for *how many*: render the range, then count what is printed. **EAR ch.1–9 = 261 printed,
-   241 written, 20 folded** against 244 promised. **NOSE ch.1 = 46 (44+2), ch.2 = 38 (34+4), ch.3 = 61 (56+5),
-   ch.4 = 23 (19+4), ch.5 = 22 (21+1), ch.6 = 13 (13+0), ch.7 = 32 (30+2), ch.8 = 23 (23+0).** **~30 % carry a printed explanation**;
+   **⚠️ QUESTION-PAGE RANGES RIGHT ALL EIGHTEEN TIMES; COUNTS WRONG FOURTEEN, ALWAYS UPWARD** — 29/29 ✓, 20/20 ✓,
+   41/40, 31/30, 35/24, 22/21, 18/17, 39/38, 26/25, **46/46 ✓**, 38/37, 61/60, 23/22, 22/21, 13/12, 32/31, 23/22, **7/7 ✓**. Trust the
+   map for *where*, never for *how many*: render the range, then count what is printed. **✅ EAR = 261 printed, 241 written, 20 folded** (244 promised).
+   **✅ NOSE = 265 printed, 247 written, 18 folded** (258 promised) — per topic 46(44+2), 38(34+4), 61(56+5), 23(19+4), 22(21+1), 13(13+0), 32(30+2), 23(23+0), 7(7+0).
+   **⚠️ FOLDS ARE UNPREDICTABLE — run the full six-stage sweep on EVERY topic regardless of the last one.** **~30 % carry a printed explanation**;
    the rest authored — **⚠️ but ch.7 printed ONE box in THIRTY-TWO. Box presence is a property of the PAGE.**
    **⚠️⚠️ THE MAP'S "Page As" IS WHERE ANSWERS *BEGIN* AND NOTHING MORE — IT LIES AT BOTH ENDS, AND CH.5 HIT
    BOTH DEFECTS ON ONE SHEET.** A question tail can share that page (**six of fifteen** chapters: Ear ch.4 — which
@@ -31,12 +31,12 @@ Running record, organised around *resuming*. ISO dates; unverified marked as suc
    **⚠️ FOUR DEFECT SHAPES, ALL RECORDED AND NEVER "CORRECTED" — the printed key is right and the QUESTION is at fault.** (1) **Two correct answers**: Nose ch.1 Q11, Q19, ch.3 Q135 (saddle nose — Wegener's keyed, syphilis offered, and the bank's OWN Q116 keys syphilis; **ch.6 Q191 then offers "Both" and keys it**). (2) **An option that is a SUBSET of the key**: ch.4 Q160 keys the umbrella *complicated rhinosinusitis* over *orbital cellulitis*; ch.5 Q189 keys the specific. (3) **Two questions, two keys, because the MENUS differ**: ch.2 Q58 vs Q65, ch.3 Q128 vs Q130, ch.4 Q149 vs ch.3 Q98's box, ch.1 Q40 vs `entep-mfe4-31` — hold both, say to read the option list. (4) **A key contradicting a *STEM*, not another key**: ch.4 Q164 keys *throbbing* as NOT a criterion of sinus pain while Q155's vignette calls it throbbing. **No key comparison finds (4).**
    **⚠️ A SHARED TYPO IS STRONGER EVIDENCE OF A REPRINT THAN A SHARED ANSWER** — ch.2 Q66 reprints `entep-nose-65` down to "shenopalatine" in option b.
    **⚠️ AN EXPLANATION FIGURE ON THE ANSWER PAGE IS NEVER CROPPED** — `image` renders BETWEEN stem and options and would give the answer away. Describe it or transcribe it as markdown; only a figure printed **with the question** is cut. **⚠️ RE-CHECK A STAGED INTERVIEW ITEM AGAINST THE LECTURES BEFORE RAISING IT** — ch.3 Q145's "answered nowhere" was withdrawn once `L29) Rhinitis 1` was read, and **ch.8's Cottle test was staged as a gap and is printed on `L24`** — *"Deviations in region of nasal valve cause greatest obstruction : cottle test"*. **Fifth time; staging sees only the bank. READ THE SLIDE BEFORE DECLARING A GAP.**
-   **⚠️⚠️ RESUME AT NOSE ch.9, "Minor Nasal Procedures", book p.85 (PDF 94) — Q259–Q265, 7 promised, and the WHOLE question set fits on that one page, ALREADY RENDERED at `<scratchpad>\gg8\p-094.png`. Q265 prints its own number twice in the stem.** Then Nose closes (9 topics / 258 promised) and **Throat begins at book p.87 — CHECK THE HEADER THERE**: the number should become **3** and numbering should **restart at 1**. Nose ran continuously Q1→Q265 under *"Chapter 2: <topic>"*.
-   **⚠️ CH.8 CLOSED WITH ZERO FOLDS AND THE ZERO EXPLAINED**: `cottle`, `osteocartilaginous`, `c-shaped`, `nasal valve`, `turbinate hypertroph`, `caucas` and `anterior dislocation` all return **0 hits corpus-wide** — endpoint teaches DNS through its *symptoms and complications*, never its *classification or examination*. **⚠️ NEW PERMANENT TRAP: ANY TWO TRUE/FALSE QUESTIONS MATCH AT STAGES B, C **AND** F 1.00 BY CONSTRUCTION** (two-item option set, two-item key vocabulary). ch.8 Q256 vs `entqb-nose6-198` did exactly that; **only the STEM decides, and only stage E reads it** (scored 0.17). Expect this on every future true/false. **⚠️ AND AN IDENTICAL FOUR-OPTION MENU WITH A DIFFERENT KEY IS NOT A FOLD** — Q258, Q250 and `entqb-nose7-210` share one menu and key three different answers.
-   Nose holds 9 topics (258), Throat 11 (578). **✅ THE NOSE SECTION IS ONE CONTINUOUS RUN** — ch.2 opened at
-   47, ch.3 at 85, ch.4 at 146, ch.5 at 169, ch.6 at 191, ch.7 at 204, ch.8 at 236, headers reading **`Chapter 2: <topic>`**
-   throughout (number = section, title = topic). **Settled for Nose; check again at Throat (book p.87)**, where the number
-   should become 3 and the numbering restart at 1.
+   **⚠️⚠️ RESUME AT THROAT TOPIC 1, "Anatomy & physiology of throat", book p.87 (PDF 96) — ALREADY RENDERED at `<scratchpad>\gg9\p-096.png` and `p-097.png`.** Q1–Q10 on that first page in two columns, so expect the usual ~10 per page. Throat = **11 topics, 578 promised — larger than Ear and Nose combined**; map in §14.
+   **⚠️ BEFORE WRITING ANY THROAT ANATOMY, READ `L1.1) Surgical anatomy of the larynx.pdf` AND `L1.2) Anatomy of the pharynx.pdf`** — both are ENT source PDFs with **NO cached `.txt`**, and both are exactly this topic. **Do not declare a Throat anatomy gap until they are read.**
+   **✅ THE SECTION BOUNDARY IS SETTLED.** Book p.87 opens a **full-page "CHAPTER 3: THROAT" banner and the numbering RESTARTS AT 1** — confirming that the header's **number is the SECTION, title is the TOPIC**, continuous within a section. Nose ran unbroken Q1→Q265 under *"Chapter 2: <topic>"*. **⚠️ Throat ids need their own token — `entqb-thr1-1` — or they collide with Nose Q1 AND Ear Q1.**
+   **⚠️ TWO ZERO-FOLD CHAPTERS IN A ROW, BOTH EXPLAINED BY ABSENT VOCABULARY.** ch.8: `cottle`, `osteocartilaginous`, `c-shaped`, `nasal valve`, `turbinate hypertroph`, `caucas`, `anterior dislocation` — all **0 hits**. ch.9: `cobblestone`, `turbinectomy`, `silver nitrate`, `gold standard`, `empty nose`, `submucous` — all **0**. Endpoint teaches DNS by *symptoms and complications*, never *classification, examination or operations*. **Say why a zero is a zero.**
+   **⚠️ NEW PERMANENT TRAP: ANY TWO TRUE/FALSE QUESTIONS MATCH AT STAGES B, C **AND** F 1.00 BY CONSTRUCTION** (two-item option set, two-item key vocabulary). ch.8 Q256 vs `entqb-nose6-198` did exactly that; **only the STEM decides, and only stage E reads it** (0.17). **⚠️ AND AN IDENTICAL FOUR-OPTION MENU WITH A DIFFERENT KEY IS NOT A FOLD** — ch.8 Q258, Q250 and `entqb-nose7-210` share one menu and key three different answers.
+   **⚠️⚠️ A LATER PRINTING CORRECTED WORK WRITTEN THE SAME DAY** — ch.9 Q259 keys *"SMR, **cocaine abuse**"* for the top two causes of septal perforation, while `entqb-nose8-249`, written hours earlier, had called trauma the commonest non-surgical cause. Both entries fixed in place. **First time the settled "a later printing resolves an earlier judgement" rule has fired inside one session. Read a whole section before writing any of it where context allows.**
    **⚠️⚠️ THERE IS NO `L28` — A LECTURE IS MISSING FROM THE SUPPLIED MATERIAL.** Verified 2026-08-10 in both trees: ENT
    holds **34 source PDFs / 32 cached .txt**, numbered `… L27.2 → [GAP] → L29 …`. That slot is exactly where
    **`ent-sinuscomp` — "Complications of sinusitis", a real `MODULES` chapter** — belongs, so it has been answered with no
@@ -59,13 +59,13 @@ tests + drop-list in `CLAUDE.md` §4. User will add anatomy/physiology textbooks
 ## What exists — **104 chapters**: ENT 30, Ophthalmology 26, Neuropsychiatry 27, Pediatrics 21
 
 **All content is ENT so far**; the other three hold **0** questions and **no theory is written**.
-`QUESTIONS.length` is **1,198** — 1,116 MCQs + 82 cases, **all 30 ENT chapters holding ≥1**. By bank:
-**697 Endpoint, 21 House, 513 Grade Gain** — 1,231, because **thirty-three** memberships are shared across
-**thirty-two** questions. Grade Gain's 513 = **481 origin + 32 `alsoIn`**. **`entep-throat-103` is the project's first THREE-bank question**
+`QUESTIONS.length` is **1,205** — 1,123 MCQs + 82 cases, **all 30 ENT chapters holding ≥1**. By bank:
+**697 Endpoint, 21 House, 520 Grade Gain** — 1,238, because **thirty-three** memberships are shared across
+**thirty-two** questions. Grade Gain's 520 = **488 origin + 32 `alsoIn`**. **`entep-throat-103` is the project's first THREE-bank question**
 (endpoint + house + gradegain). Verified in a real `file://` boot 2026-08-11.
 
 **Fully validated in a real `file://` boot, 2026-08-11** — 0 bad module/chapter refs, 0 duplicate ids,
-every `answer` in range, nothing missing a `source`/`explanation`, **0 dead backticked ids over 2,991
+every `answer` in range, nothing missing a `source`/`explanation`, **0 dead backticked ids over 3,049
 references, 52 image references over 49 unique files all loading** (a page's crop is legitimately shared
 by two entries). **⚠️ OPTION COUNTS OF 2, 3 AND 4 NOW COEXIST** — `entqb-nose6-198` is a TRUE/FALSE and
 `entqb-nose7-226` prints three options; nothing in the app assumes four, verified. **⚠️ THE DEAD-ID CHECK CATCHES REAL DAMAGE, TWICE NOW** — a fold retires an id, and entries
@@ -122,7 +122,7 @@ Endpoint boundaries and shapes: `ledger.md` §"Transcribed ranges" and §7; **Ex
 **Where the source prints no explanation box, the explanation is written here** — rule and marker in
 `CLAUDE.md` §4. **~70 % of ENT entries carry the marker** (789 of 1,132) — over two thirds of the
 explanations are written, not transcribed, **which is the real scope of the end-of-ENT review**;
-Grade Gain improves on it at **~30 % printed** (153 of 519). **⚠️ READ EVERY OPTION AS A SENTENCE** — p.2856
+Grade Gain improves on it at **~30 % printed** (155 of 526). **⚠️ READ EVERY OPTION AS A SENTENCE** — p.2856
 printed one truncated mid-word and it survived staging and both sweep passes. **⚠️ AND EVERY STEM: a
 reference to "the previous case" or to a picture must be repaired, because the deck is SHUFFLED** —
 5 of 41 in Ear ch.3, **6 of 22 in ch.6**, 2 of 26 in ch.9, 1 of 46 in Nose ch.1, 1 of 22 in ch.5, 1 of 13 in ch.6,
@@ -142,7 +142,7 @@ TWICE** — Nose ch.3 Q102, Q103, Q145, ch.6 Q197, ch.7 Q220 and Q231; strip it.
 `CLAUDE.md` §4. **Missing: House for Neuropsychiatry, Grade Gain for Pediatrics.** **⚠️ THE BANKS
 OVERLAP — on a cross-bank match ADD THE BANK, never an entry.** **Twenty-six memberships over twenty-five
 questions**; Grade Gain folds ran **4/29, 0/20, 3/41, 4/31, 1/35, 3/22, 0/18, 4/39, 1/26** across Ear
-and **2/46, 4/38, 5/61, 4/23, 1/22, 0/13, 2/32, 0/23** in Nose — unpredictable, so **run the full sweep on every topic.**
+and **2/46, 4/38, 5/61, 4/23, 1/22, 0/13, 2/32, 0/23, 0/7** in Nose — unpredictable, so **run the full sweep on every topic.**
 **⚠️ STAGE A IS THE MOST FRAGILE STAGE, NOT THE STRICTEST** — ch.7's Q204 is word-for-word `entep-nose-69` except for a
 leading *"The"*, and **A missed it while B caught it** (E and F both 1.00). The stages are different projections, not a
 hierarchy. **⚠️ AND WHEN A STAGED QUESTION FOLDS, ITS NUMBER IS DEAD AT THAT MOMENT** — ch.7 shipped **ten** backticked

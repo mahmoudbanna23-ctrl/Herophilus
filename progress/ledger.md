@@ -5673,3 +5673,135 @@ and **the entire question set fits on that one page, which is already rendered**
 at 9 topics against 258 promised, and the **Throat section begins at book p.87** — **check the
 running header there**: the number should become **3** and the numbering should **restart at 1**.
 Nose has held one continuous run from Q1 to Q265 with headers reading *"Chapter 2: <topic>"*.
+
+---
+
+### §14r — Grade Gain, NOSE chapter 9: "Minor Nasal Procedures" — **AND THE NOSE SECTION CLOSES** (2026-08-11)
+
+**Questions book p.85 (PDF 94); answers book p.86 (PDF 95).**
+**7 printed, Q259 … Q265, against 7 promised — EXACT. All 7 written (`entqb-nose9-259` … `-265`), ZERO folds.**
+Chapters: `ent-septum` 3, `ent-rhin` 3, `ent-epistaxis` 1.
+
+#### The third exact count in eighteen chapters
+
+29/29, 46/46 and now **7/7**. Running record: ranges right **eighteen** times, counts wrong **fourteen**,
+always upward. **Fourth clean sheet running** — whole question set on one page, every key on the next,
+no question tail on the answer page and no run-over.
+
+#### ✅ THE SECTION BOUNDARY IS SETTLED — AND IT BEHAVED EXACTLY AS PREDICTED
+
+Book p.87 (PDF 96) opens a **full-page banner reading "CHAPTER 3: THROAT"**, the first topic is
+*"Anatomy & physiology of throat"*, and **the numbering RESTARTS AT 1**. That closes the question
+carried since Ear: **the running header's number is the SECTION and its title is the TOPIC**;
+numbering runs continuously inside a section and restarts only at one. Nose ran unbroken from Q1 to
+Q265 under *"Chapter 2: <topic>"*.
+
+**⚠️ Throat ids need their own section token — `entqb-thr1-1` — or they collide with both Nose Q1 and
+Ear Q1.** The pattern `entqb-<section><topic>-<n>` has held for eighteen chapters; keep it.
+
+#### ⚠️ A LATER PRINTING CORRECTED WORK DONE EARLIER THE SAME DAY
+
+**Q259 keys *"SMR, Cocaine abuse"*** — a two-blank fill-in-the-blank whose options are **pairs**, so
+both halves must be right. It ranks the causes of septal perforation explicitly: **SMR first, cocaine
+second.**
+
+`entqb-nose8-249`, written four hours earlier, keys SMR as commonest and its explanation had called
+trauma *"the commonest non-surgical cause"* — which puts trauma second. **The bank's own later
+printing says cocaine.** Both entries were corrected in place: Q249's table now orders cocaine above
+trauma and cites Q259 for the ranking. **Fresh instance of the settled rule that a later printing
+resolves an earlier judgement** — and the first time it has corrected something written in the same
+session rather than months earlier. **Argument for reading a whole section before writing any of it;
+the counter-argument is context, and context lost that round.**
+
+#### Zero folds, explained again
+
+Stage A, stage B **and stage E** all returned nothing — the first chapter where three stages are
+simultaneously empty. Every C/D/F hit is a shared-key-word artefact (*atrophic rhinitis*, *septal
+perforation*, *all of the above*). Corpus-wide keyword checks: `cobblestone` **0**, `turbinectomy`
+**0**, `silver nitrate` **0**, `gold standard` **0**, `empty nose` **0**, `submucous` **0**, `smr`
+**1** (the entry written this morning). **This chapter is about operations, and neither bank has
+asked about nasal operations before.**
+
+Two near-pairs held rather than folded: **Q261** (gold standard for DNS → septoplasty) against
+`entqb-nose2-83` (definitive treatment of DNS with a spur causing epistaxis → septoplasty) — same key,
+wholly replaced option set; and **Q260** (cobblestone occurs in all **except** atrophic rhinitis)
+against `entqb-nose3-101` (which condition shows mulberry mucosa → chronic hypertrophic rhinitis) —
+reciprocal questions, and **consistent**, since hypertrophic rhinitis is the end-stage that allergic,
+infective and vasomotor rhinitis all converge on.
+
+#### The best explanation box in the Nose section
+
+Q265's box is the longest and by some distance the most useful, and it is written in the first person:
+
+> *"…it is mucosa on mucosa without cartilage in between so more liable for septal perforation… in
+> perforation the air enters through the perforation to both sides causing resistance to air in both
+> sides → we call this functional nasal obstruction→ **I converted laminar flow to turbulent flow**
+> leading to crustations, bleeding, bad odor and resistance to flow."*
+
+It answers *"which is a complication of SMR?"* by **chaining all three options together** — perforation
+→ turbulent flow → crusting, bleeding, bad odour and paradoxical obstruction — which is why *All of
+the above* is right and why the entry is written as a chain rather than a list. **It also grounds
+three other entries**: Q259's mechanism, Q261's septoplasty-over-SMR argument, and Q263's empty nose.
+Q262's shorter box supplies Q263's answer outright.
+
+**Boxes 2 of 7 (~29 %)**, against the section's running ~30 %.
+
+#### ⚠️ Q265 PRINTS ITS OWN NUMBER TWICE IN THE STEM — predicted, and confirmed
+
+*"265. 265.Which of the following is a complication of SMR?"* The ch.8 read predicted this from the
+facing page. **Both locations of the fault are now live in the same bank** — Q252–Q258 in the answer
+list, Q265 in a stem. Seventh stem instance overall.
+
+#### Grounding
+
+`L24) diseases of the nasal septum.pdf` supplied the two operations (*SMR*, *Septoplasty*) and the
+*"3-4 mm thick"* avascular cartilage that explains **every** perforation on the page; `L29) Rhinitis
+1.pdf` supplied the *"Thick, nodular mucosa… (mulberry like)"* line and the atrophic-rhinitis picture.
+
+**Filled from general knowledge and tagged** (added to §11): **empty nose syndrome**, which appears on
+no cached slide and is the point of two questions; the **SMR-versus-septoplasty comparison table**;
+the **primary/secondary atrophic rhinitis** split and the causes of the secondary form; **silver
+nitrate cautery**, its both-sides hazard and the **4–6 week staging interval**, neither of which any
+slide describes; the term **cobblestone**; the **turbinate's role in airflow resistance and sensation**;
+and the **ranking** of perforation causes beyond what Q259 itself states.
+
+#### Verified in a real `file://` boot
+
+`parse errors: none`, first attempt, before and after the splice. `Q_ENT` **1,123** / `C_ENT` **82** /
+total **1,205**; 104 chapters; 0 bad refs, 0 duplicate ids, every answer in range, nothing missing a
+source, explanation or objective; **0 dead backticked ids out of 3,049 references**; 52 image
+references over 49 files, all loading; mojibake clean. By bank **697 / 21 / 520** = 1,238 over 1,205 —
+**33** shared memberships across **32** questions, unchanged since ch.7. Origin only **697 / 20 /
+488**. Authored markers **852 of 1,205**, matching the predicted **+5** exactly (7 written − 2 boxed).
+The pre-splice marker audit was **clean both ways on the first run for the second chapter running**.
+
+---
+
+### ✅ THE GRADE GAIN **NOSE** SECTION IS CLOSED — 9 topics, book pp.44–86
+
+| Topic | Book pp. | Printed | Promised | Written | Folded |
+|---|---|---|---|---|---|
+| 1 Nasal symptoms & epistaxis | 44–48 | 46 | 46 | 44 | 2 |
+| 2 Epistaxis & related | 49–54 | 38 | 37 | 34 | 4 |
+| 3 Rhinitis | 55–63 | 61 | 60 | 56 | 5 |
+| 4 Rhinosinusitis | 64–68 | 23 | 22 | 19 | 4 |
+| 5 Nasal symptoms II | 69–72 | 22 | 21 | 21 | 1 |
+| 6 Nasal fractures | 73–75 | 13 | 12 | 13 | 0 |
+| 7 Sino-nasal masses | 76–80 | 32 | 31 | 30 | 2 |
+| 8 Nasal septal diseases | 81–84 | 23 | 22 | 23 | 0 |
+| 9 Minor nasal procedures | 85–86 | 7 | 7 | 7 | 0 |
+| **NOSE TOTAL** | **44–86** | **265** | **258** | **247** | **18** |
+
+**The section ran seven questions longer than its own contents page promised** — the same upward
+drift as Ear. **Folds were completely unpredictable** (2, 4, 5, 4, 1, 0, 2, 0, 0), which is the
+argument for running the full six-stage sweep on every topic regardless of how the last one went.
+
+**Grade Gain overall: Ear 261 + Nose 265 = 526 printed, 488 written, 38 folded** — 32 cross-bank
+`alsoIn` and 6 within-bank reprints held once. The origin count reads **488**, matching exactly.
+**Throat remains: 11 topics, 578 promised, book pp.87 onward — larger than Ear and Nose combined.**
+
+**Next: Throat topic 1, "Anatomy & physiology of throat", book p.87 (PDF 96), already rendered.** Its
+first page prints Q1–Q10 in two columns, so expect the usual ~10 per page. **Before writing any of
+it, read `L1.1) Surgical anatomy of the larynx.pdf` and `L1.2) Anatomy of the pharynx.pdf`** — both
+are ENT source PDFs with **no cached `.txt`**, and both are exactly this topic. **Do not declare a
+Throat anatomy gap until they have been read.**
