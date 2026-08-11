@@ -5325,3 +5325,162 @@ synechiae and nothing in the stem separates them. **That one must be cropped** (
 an explanation figure on an answer page. **⚠️ Q208 opens "In the previous case…"** — a linked set off
 Q207's midline-nasal-swelling infant, so expect stem repairs. Slides: `L26) nasal masses.txt` (already
 cached and used) plus `L23) Anatomy of the Nose.txt`.
+
+---
+
+### §14p — Grade Gain, NOSE chapter 7: "Sino-nasal masses" (2026-08-11)
+
+**Questions book pp.76–79 (PDF 85–88); answers book p.80 (PDF 89).**
+**32 printed, Q204 … Q235, against 31 promised. 30 written (`entqb-nose7-205` … `-235`, gaps at 204 and 232), 2 folded.**
+Chapters: `ent-nasalmass` 26, `ent-nasalobs` 2, `ent-septum` 1, `ent-epistaxis` 1, `ent-sinusitis` 1.
+Largest Nose topic after ch.3, and the largest single-chapter batch since Ear ch.3.
+
+#### Page shape clean for the second chapter running
+
+All 32 keys on p.80; no question tail on the answer page, no run-over. Book p.81 opens "Nasal septal
+diseases" at **Q236** under its own banner. Overlap six of sixteen; run-over two of four.
+Running count record: …, 23/22, 22/21, 13/12, **32/31** — ranges right sixteen times, counts wrong
+thirteen, always upward.
+
+#### ⚠️ ONE PRINTED BOX IN THIRTY-TWO — ~3 %, AGAINST A RUNNING ~32 %
+
+Q217 alone. **Box presence is a property of the PAGE, not the section**, and this is the sharpest
+demonstration of it inside Grade Gain — the same finding endpoint's Throat run produced over 103
+answered pages. Running Grade Gain figure: **150 of 496 printings, ~30 %.**
+
+#### The two folds, and why one of them evaded stage A
+
+| Fold | Stage | Note |
+|---|---|---|
+| **Q232 → `entep-nose-57`** (p.1041) | **A** — identical stem, options and key | The strictest possible match. Neither prints a box, so the held entry's authored marker stays |
+| **Q204 → `entep-nose-69`** (p.1065) | **B**, with E and F both 1.00 | **Stage A missed it by the single word *"The"*** at the start of the stem. Same four options in the same order, same key |
+
+**⚠️ THAT NEAR-MISS IS THE POINT: stage A is defeated by one leading article.** Stage B caught it
+because B ignores the stem entirely. **The stages are not a hierarchy of strictness — they are
+different projections, and A is the most fragile of them.**
+
+#### ⚠️ TEN DEAD BACKTICKED REFERENCES TO THE ID THE FOLD RETIRED
+
+The validator reported **`entqb-nose7-232` × 10 dead** — cited across five entries written *before*
+the fold list was applied, because Q232 was staged with a number like every other question and the
+number is what the cross-references reached for. All ten repointed to `entep-nose-57`, and the one
+cross-reference list that then held the id twice was rewritten.
+
+**Fourth occurrence of this fault, and the first at this scale.** The three earlier ones were single
+references to ids retired by a fold or not yet written. **The rule needs sharpening: when a staged
+question folds, its number is dead the moment the fold is decided — grep the drafted blocks for it
+BEFORE splicing, not after.** The dead-id check caught it either way, which is the third time that
+check has found real damage.
+
+#### ⚠️ ONE DISPUTED KEY — Q206, RAISED FOR INTERVIEW
+
+*"What is the most common congenital nasal mass?"* keys **meningoencephalocele** over a list offering
+**dermoid cyst**. Standard teaching makes the **nasal dermoid** the commonest congenital midline nasal
+mass by a wide margin (of the order of 60 % against 5–10 % each for encephalocele and glioma).
+**`L26) nasal masses.pdf` classifies these lesions and ranks nothing**, and the corpus sweep found no
+entry in either bank that ranks them — `entep-nose-48` (p.993) keys *encephalocele* but from a
+vignette, not a frequency. **Nothing in the material settles it.** Transcribed as keyed, both readings
+recorded, added to the interview list and to the disputed roster in §11.
+
+Distinguish it from `entqb-nose1-34`, which asks the commonest congenital **anomaly** and keys
+**choanal atresia** — grounded in `L23`. *Anomaly* and *mass* are different categories and both keys
+can stand.
+
+#### ⚠️ FIVE STEM REPAIRS IN ONE CHAPTER — THE MOST OF ANY SO FAR
+
+| Q | Defect |
+|---|---|
+| **Q208** | *"In the previous case…"* → back-reference to Q207 |
+| **Q220** | *"in the previous case…"* → back-reference to Q219, **and prints its own number twice** |
+| **Q221** | *"In the same case…"* → **three-deep chain**, Q219 → Q220 → Q221, the longest in the bank |
+| **Q227** | **NO INTERROGATIVE AT ALL** — the vignette stops at *"denies any associated facial pain or fever"* and the question sentence is simply absent |
+| **Q229** | *"…of the previous case?"* → back-reference to Q228 |
+| **Q235** | **asks itself twice** — *"…diagnosis and the best next step in management? What is the most Probable Diagnosis:"* — and the options answer only the diagnosis |
+| **Q231** | prints its own number twice |
+
+**⚠️ Q227 IS A NEW DEFECT SHAPE: A STEM WITH NO QUESTION.** Every previous repair fixed a reference
+that could not resolve; this one supplies a sentence that was never printed. It is only answerable at
+all because the option list is a differential. Running total of repaired linked-set stems: 5/41 Ear
+ch.3, 6/22 ch.6, 2/26 ch.9, 1/46 Nose ch.1, 1/22 ch.5, 1/13 ch.6, **5/32 here.**
+Number-printed-twice: Nose ch.3 ×3, ch.6 ×1, **ch.7 ×2** — six in all.
+
+#### ⚠️ A THIRD OPTION-COUNT FORMAT
+
+**Q226 prints only THREE options.** Ch.6 gave the first two-option question (`entqb-nose6-198`); this
+is the first three-option one. Both parse and render, and the validator confirms option counts of 2,
+3 and 4 all coexisting without incident.
+
+#### Four figures cut, all printed WITH the question
+
+`q-gg-76` (Q210, septal haematoma — **essential**, the stem gives only "trauma… no fever"),
+`q-gg-77` (Q216, two-panel endoscopy — supporting), `q-gg-79a` (Q234, two endoscopic views —
+**essential**, the printed stem carries **no clinical detail beyond the laterality**) and `q-gg-79b`
+(Q235, endoscopy + axial CT + angiogram — supporting).
+
+**All four first-pass crops caught option or question text** and were re-cut once; the second pass was
+clean on all four. **That is 13 of 13 Grade Gain crops now wrong on the first attempt** — the layout,
+not the measurement, is the trap. Assets: 43 → **47 files, all referenced, all loading.**
+
+**Q234 is the strongest case yet for `imgEssential`**: its entire printed stem is *"A patient complains
+of unilateral nasal obstruction. By examination:"* followed by *"The treatment is"*. Without the
+photographs there is no question at all.
+
+#### Grounding: `L26` carries almost the whole chapter
+
+`L26) nasal masses.pdf` had been read before but never used at this depth. It supplied: the location
+table (midline / unilateral / bilateral); the septal-haematoma definition; the encephalocele
+definition (*"intracranial tissue herniates through a defect in the cranium"*); **inverted papilloma**
+(LNW at MT and maxillary ostium, *males 40–60*, HPV, **malignancy 5–15 %**, irregular pinkish masses
+with a tendency to bleed, ribbons of hyperplastic epithelium in an inverted pattern); **antrochoanal
+polyp** (smooth soft inflammatory mass from the maxillary sinus, solid nasal + cystic antral component
+on a narrow neck, sometimes too huge to extract through the nose); **angiofibroma** (centred on the
+**SPF**, males in adolescence, presentation list including **facial asymmetry**, *"Biopsy ??"*, CT
+angiography, **Holman-Miller sign**, widening of the SPF, **salt-and-pepper** flow voids, *"mainly
+supplied from **ECA (IMAX)**"*); the **malignancy** list headed by squamous cell carcinoma with its
+presentation percentages; **polyp origins by site** (80 % uncinate–MT–infundibulum, 66 % bulla–hiatus,
+48 % frontal recess…); the aetiology list including **cystic fibrosis**; the medical-treatment and
+surgical-indication lists; and the **alarming symptoms** slide.
+
+**Filled from general knowledge and tagged**, all added to §11's list: the **relative frequencies of
+congenital midline nasal masses** and the dermoid/glioma/meningocele discrimination table; the
+**Furstenberg test**; **beta-2 transferrin** and the confirm-versus-localise split for CSF leaks; the
+**fossa of Rosenmüller's** anatomy and the unilateral-serous-otitis rule; the **osteomeatal complex**
+anatomy (infundibulum, uncinate, hiatus semilunaris) behind Q226; the antrochoanal polyp's **2:1 sex
+ratio** (absent from every slide); the **Caldwell-Luc** comparison; and the **pre-operative
+embolisation interval**.
+
+#### ⚠️ A DISPUTED KEY IN THE OTHER BANK IS FURTHER UNDERMINED
+
+`entep-mfe7-1` (p.2784) keys **juvenile angiofibroma** for *"unilateral watery rhinorrhea which
+increases on bending forward"*. **Grade Gain's Q209 asks that exact sentence and keys "exclude
+meningocele"** — the CSF pathway. With `entep-nose-19` (p.927, keys **CSF rhinorrhoea**) and
+`entep-enr-6` (p.2852, keys **CSF leak**), that is **three printings against one**. The dispute stays
+open pending a reprint, but it is now much the weaker side.
+
+#### Verified in a real `file://` boot
+
+`parse errors: none` on the first attempt for both blocks and again after each splice. `Q_ENT` **1,093**
+/ `C_ENT` **82** / total **1,175**; 104 chapters; 0 bad refs, 0 duplicate ids, every answer in range,
+no empty options, nothing missing a source, explanation or objective; **0 dead backticked ids out of
+2,849 references** after the repair; **50 image references over 47 unique files, all loading**; every
+`imgAlt` present and no path-instead-of-basename; mojibake clean.
+
+By bank **697 endpoint / 21 house / 490 gradegain** = 1,208 over 1,175 — **33** shared memberships
+across **32** questions. Origin only: **697 / 20 / 458**. Authored markers **827 of 1,175**, matching
+the predicted **+29** exactly (30 written − 1 boxed).
+
+**The both-ways marker audit caught two misses before splicing** (Q207 and Q234), which is what it is
+for. One of them had already gone into the file with block A and was repaired in place.
+
+**Reconciles:** Ear 261 + Nose ch.1 46 + ch.2 38 + ch.3 61 + ch.4 23 + ch.5 22 + ch.6 13 + ch.7 32 =
+**496 printed, 458 written, 38 folded** — **32 cross-bank `alsoIn`** and **6 within-bank reprints held
+once**.
+
+**Next: Nose ch.8, "Nasal septal diseases", book p.81 onward (PDF 90 onward).** It opens at **Q236**,
+confirmed by rendering. **Check the contents map for its page range and promised count, then render
+one page past the last answer page as always.** Its first page shows a **Type 1 / 2 / 3 septal
+fracture classification** (Q236–Q240) that appears **nowhere in `L24) diseases of the nasal septum.txt`**
+— expect to fill it and tag it — plus DNS prevalence figures (Q242 offers "92 % vs 40 %" and "50 % of
+the population") that will need checking against `L24`'s own *"Extremly common 80 % of population,
+more in males"*. **⚠️ Q242's option d and option a contradict each other on the same axis (Caucasians
+vs Africans), so read the key carefully.**
