@@ -4946,3 +4946,182 @@ the last answer page.** Its slides are `L31) nasal symptoms 1.txt` and `L32) nas
 `L31` has already been read in full for chapters 2–4, `L32` has not. The first page shows the chapter
 is largely **headache and facial pain**, so `ent-facialpain` will take most of it, and **migraine
 versus rhinogenic headache** is plainly the discrimination it is built on.
+
+---
+
+### §14n — Grade Gain, NOSE chapter 5: "Nasal symptoms" (2026-08-10)
+
+**Questions book pp.69–71 (PDF 78–80); answers book pp.71–72 (PDF 80–81).**
+**22 printed, Q169 … Q190. 21 written (`entqb-nose5-169` … `entqb-nose5-190`, gap at 177), 1 folded.**
+Chapters: `ent-nasalobs` 12, `ent-facialpain` 8, `ent-sinusitis` 1 (`entqb-nose5-186`), `ent-rhin` 1.
+
+#### ⚠️⚠️ BOTH PAGE DEFECTS AT ONCE, ON THE SAME SHEET
+
+**Book p.71 carries Q187–Q190 in the LEFT column and the "Nasal symptoms — Answers" heading in the
+RIGHT.** The map calls p.71 the answer page; **four questions are on it.** And the answers then **run
+to p.72**, where the map promised p.71 — the second chapter running.
+
+**The rule written in §14m paid for itself on the very next chapter.** Rendering one page past the
+last promised answer page is what caught the run-over; reading every question page is what caught the
+overlap. **Neither defect is predictable and both were present here simultaneously**, which is the
+strongest argument yet for treating the contents map as a pointer and nothing more.
+
+Overlap tally: **six of fourteen** chapters. Answer run-over: **two of two** since it was first looked for.
+
+#### 22 against 21 promised
+
+Running record: 29/29 ✓, 20/20 ✓, 41/40, 31/30, 35/24, 22/21, 18/17, 39/38, 26/25, 46/46 ✓, 38/37,
+61/60, 23/22, **22/21.** Question ranges right **fourteen** chapters running; counts wrong **eleven**
+times, always upward.
+
+Ch.6 "Nasal fractures" opens at **Q191** on book p.73 — the Nose section is one continuous run for the
+fifth confirmation, and the running header reads `Chapter 2: Nasal Symptoms` throughout.
+
+#### ⚠️ STAGES A AND B RETURNED NOTHING — AND THE ONE FOLD WAS FOUND BY E AND F
+
+**`Q177 → entep-nose-72` (p.1073)**, identical stem and identical key. **Stage B missed it for four
+words**: Grade Gain abbreviates option d to *"over the bridge of nose & between eyes"* against
+endpoint's *"over the bridge of the nose and between the eyes"*. **Stages E and F both scored it 1.00.**
+
+This is the third chapter in which a fold reached neither strict stage. **The strict stages are a
+convenience; the rankings are the instrument.** Neither bank prints a box here, so the held entry's
+authored marker stays.
+
+#### ⚠️ SIX NEAR-MISSES HELD, AND EVERY ONE IS A *REPLACED* DISTRACTOR
+
+| Held pair | What changed |
+|---|---|
+| **Q186** vs `entep-nose-37` | adult foetid discharge — *acute viral rhinitis* and *nasal polyps* replace *cancer* and *allergic rhinitis* |
+| **Q183** vs `entep-nose-71` | the child version, wholly different option set |
+| **Q178** vs `entep-nose-73` | CSF rhinorrhoea on straining — two replaced options |
+| **Q179** vs `entep-nose-43` | most feared complication of a CSF leak; endpoint's stem is post-acoustic-neuroma surgery with otological distractors |
+| **Q173** vs `entep-mfe4-15` | pulsatile headache → migraine; *cluster headache* and *sinusitis* replace *chronic sinusitis* and *septal deviation* |
+| **Q190** vs `entqb-nose3-127` | **within this bank** — both key *common cold*, two of four options replaced |
+
+**The unilateral-foetid-discharge fact is now printed SEVEN times across the two banks**, each with a
+distinct option set: `entep-nose-18`, `-71`, `-100`, `-107`, `-111`, `-114` and `entqb-nose5-183`.
+Endpoint alone prints it six ways. **When a bank works one fact through six option sets, the sweep will
+keep surfacing it and the answer will keep being "hold".** That is not a failure of the sweep — the
+menus genuinely differ, and a learner who has only seen one of them has not learnt the fact.
+
+**Q190 is the more interesting of the two within-bank pairs**, because both printings key the same
+answer. That is the opposite of §14k's Q58/Q65 and §14l's Q128/Q130, where different menus produced
+different keys. **Here the answer survives a change of distractors, which is what distinguishes a real
+fact from an artefact of one option list.** A within-bank match takes no `alsoIn` either way.
+
+#### ⚠️ THE SUBSET SHAPE AGAIN — AND REVERSED
+
+**Q189** asks the commonest **laterality** of nasal obstruction and keys **alternating** over a list
+that also offers **bilateral** — while `L31) nasal symptoms 1.pdf` states that *"alternating nasal
+obstruction is actually a variety of **bilateral** nasal obstruction."* **The key is a member of
+another option.**
+
+**Ch.4's Q160 had the identical shape and keyed the UMBRELLA** (complicated rhinosinusitis over orbital
+cellulitis). **This one keys the SPECIFIC.** There is no rule that makes both consistent, and neither
+key is wrong. Recorded in both entries with the instruction to read the option list.
+
+Option d (*intermittent*) is excluded by a different route worth noting: it names the **duration** axis,
+not the laterality one. **Spotting that an option belongs to the wrong axis is faster than ranking the
+right ones.**
+
+#### ⚠️ ONE LINKED-SET STEM REPAIRED, AND IT WOULD HAVE BEEN UNANSWERABLE
+
+**Q179 reads "What is the most feared complication of THIS CONDITION?"** — a back-reference to Q178's
+CSF rhinorrhoea in the facing column. **The deck in this app is shuffled**, so the stem was repaired to
+name the condition. Without it the question is not merely obscure but **impossible**: nothing in the
+stem or the four options identifies the disease.
+
+Running total of repaired linked-set stems: 5 of 41 in Ear ch.3, 6 of 22 in ch.6, 2 of 26 in ch.9,
+1 of 46 in Nose ch.1, **1 of 22 here.**
+
+#### ⚠️ THE BOX AND THE SLIDE DISAGREE ON A NUMBER — Q176
+
+Q176's printed box says migraine *"may come with dizziness or **bilateral which is more common than
+unilateral**"*. `L32) nasal symptoms 2.pdf` says *"Severe usually unilateral throbbing pain. **May be
+bilateral in 40 % of cases.**"* — i.e. bilateral is the **minority**.
+
+**Both are recorded and the slide is the figure to quote.** What neither disputes, and what the key
+actually turns on, is that the word ***strictly*** makes the option false. **This is a box wrong about
+a supporting fact while right about the answer** — the same shape as §14k's Q72 and §14l's Q96, and
+the third occurrence. **A printed box is evidence, not authority.**
+
+#### ⚠️ ONE PRINTED BOX IS TRUNCATED MID-WORD
+
+**Q185's** box ends *"- In Common cold → mucosa is wet an"*. The completion is supplied in the entry
+from `L29) Rhinitis 1.pdf` (red, congested mucosa) and **marked as an addition**. Recorded as printed.
+
+#### ⚠️ THE MARKER COUNT WAS ONE **OVER**, WHICH IS A NEW FAILURE DIRECTION
+
+Expected +16 authored markers across 21 entries with five printed boxes; the count came out **+17**.
+Chasing it found **`entqb-nose5-180` carrying the authored marker although the source prints a box**
+(*"Beta trace protein and beta 2 transferrin"*), which the entry itself quotes.
+
+**Every previous marker fault has been a MISSING marker. This is the first spurious one**, and it
+matters just as much: it labels transcribed text as authored, which is the same class of error in the
+opposite direction. **The one-line box is what made it easy to miss** — a single fragment does not
+*feel* like an explanation, and the entry around it is 90 % written here.
+
+**⚠️ CHECK THE MARKER AGAINST THE BOX BOTH WAYS.** The scratchpad audit added in §14m looks for
+entries lacking a marker; it must also look for entries carrying one where a box was transcribed. The
+per-entry audit that found this took one run and should become standard.
+
+#### Grounding: `L32` was read for the first time and carries most of the chapter
+
+`L32) nasal symptoms 2.pdf` had never been extracted into use before this batch and turns out to answer
+eight questions almost directly:
+
+- ***"Rhinogenic headache is controversial"***, and *"the most common type of headache in ENT patients
+  is **primary** headache… triggered by nasal irritation (**stimulation of the trigeminal nerve**)"* —
+  Q169, Q170, Q171.
+- ***"Acute sinusitis causes facial pain rather than headache. This includes 'vacuum headache' (morning
+  pain over the forehead due to obstruction of the frontal recess during sleep)"*** — **Q172's printed
+  box is this sentence paraphrased.**
+- The **primary/secondary** classification — Q174.
+- Migraine: *"unilateral, pulsating… aggravated by exercise, nausea/vomiting, photophonophobia"*,
+  **bilateral in 40 %**, aura in one third — Q173, Q176. Plus full management: NSAIDs, triptans by name
+  and dose, and prophylaxis for 4–6 months.
+- Tension headache as *"the **most common type of primary headaches**"*, female-predominant, bilateral
+  and band-like — Q169, Q174.
+- Cluster headache, trigeminal neuralgia, **Tolosa-Hunt** (cavernous sinus) and **Gradenigo**.
+- **Three true/false slides** that between them key Q183 (*"foreign bodies… most common cause of
+  unilateral nasal discharge with bad odor in children"*), Q187 (*"adenoids is an example of mucosal
+  nasal obstruction"* — false), Q188 (*"septal deviations cause fluctuating nasal obstruction"* —
+  false) and Q190 (*"viral infections are the most common cause of nasal obstruction"*).
+
+`L31) nasal symptoms 1.pdf` supplied the obstruction classification on all four axes, the mucosal and
+structural lists, and the **foetid** and **watery** discharge lists behind Q178, Q181 and Q186.
+
+**Filled from general knowledge and tagged:** the **contents of the cavernous sinus** and the abducent
+nerve's position within it (Q175 — no cached slide lists them); the **beta-2 transferrin** assay and
+the confirm-versus-localise split; **Brudzinski's and Kernig's** signs and the treat-meningitis-first
+sequence; the **nasal cycle** as the reason a deviated septum seems to alternate; **button battery** as
+a nasal emergency; and the migraine-versus-rhinogenic discrimination table. All added to §11's list.
+
+#### Explanations: 5 printed among the 21 written, 16 authored
+
+**~24 % printed.** Boxes at Q172, Q176, Q180, Q185 and Q188. Running Grade Gain figure: **145 of 451
+printings, ~32 %.**
+
+#### Verified in a real `file://` boot
+
+`parse errors: none` (first attempt, both after the fold and after the splice); `Q_ENT` **1,050** /
+`C_ENT` **82** / total **1,132**; `MODULES chapters: 104`; 0 bad chapter or module refs, 0 duplicate
+ids, every answer in range, nothing missing a source, explanation or objective; **0 dead backticked ids
+out of 2,492 references**; **46 image references over 43 unique files, all loading** (this chapter
+prints no figures); mojibake clean.
+
+By bank **697 endpoint / 21 house / 445 gradegain** = 1,163 over 1,132 — **31** shared memberships
+across **30** questions. Origin only: **697 / 20 / 415**. Authored markers **789 of 1,132**, matching
+the predicted +16 after the spurious one was removed.
+
+**Reconciles:** Ear 261 (241 + 20) + Nose ch.1 46 (44 + 2) + ch.2 38 (34 + 4) + ch.3 61 (56 + 5) +
+ch.4 23 (19 + 4) + ch.5 22 (21 + 1) = **451 printed, 415 written, 36 folded** — **30 cross-bank
+`alsoIn`** and **6 within-bank reprints held once**.
+
+**Next: Nose ch.6, "Nasal fractures", book pp.73–75 (PDF 82–84), answers p.75, 12 promised.** It opens
+at **Q191**, already confirmed by rendering. **Two shapes seen on its first page that this bank has not
+used before: Q198 is a TRUE/FALSE with only two options, and Q191 offers "Both" and "None of the above"
+as options c and d.** Its slide is `L24) diseases of the nasal septum.txt` — **not yet read** — plus
+`L23) Anatomy of the Nose.txt`. **⚠️ Q191 asks where saddle nose occurs and offers Wegener's and
+neglected nasal haematoma with "Both" as the key candidate — compare against `entqb-nose3-135`, which
+keys Wegener's over a list offering syphilis.**
