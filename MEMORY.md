@@ -29,12 +29,15 @@ Running record, organised around *resuming*. ISO dates; unverified marked as suc
    **⚠️ FOUR DEFECT SHAPES, ALL RECORDED AND NEVER "CORRECTED" — the printed key is right and the QUESTION is at fault.** (1) **Two correct answers**: Nose ch.1 Q11, Q19, ch.3 Q135 (saddle nose — Wegener's keyed, syphilis offered, and the bank's OWN Q116 keys syphilis; **ch.6 Q191 then offers "Both" and keys it**). (2) **An option that is a SUBSET of the key**: ch.4 Q160 keys the umbrella *complicated rhinosinusitis* over *orbital cellulitis*; ch.5 Q189 keys the specific. (3) **Two questions, two keys, because the MENUS differ**: ch.2 Q58 vs Q65, ch.3 Q128 vs Q130, ch.4 Q149 vs ch.3 Q98's box, ch.1 Q40 vs `entep-mfe4-31` — hold both, say to read the option list. (4) **A key contradicting a *STEM*, not another key**: ch.4 Q164 keys *throbbing* as NOT a criterion of sinus pain while Q155's vignette calls it throbbing. **No key comparison finds (4).**
    **⚠️ A SHARED TYPO IS STRONGER EVIDENCE OF A REPRINT THAN A SHARED ANSWER** — ch.2 Q66 reprints `entep-nose-65` down to "shenopalatine" in option b.
    **⚠️ AN EXPLANATION FIGURE ON THE ANSWER PAGE IS NEVER CROPPED** — `image` renders BETWEEN stem and options and would give the answer away. Describe it or transcribe it as markdown; only a figure printed **with the question** is cut. **⚠️ RE-CHECK A STAGED INTERVIEW ITEM AGAINST THE LECTURES BEFORE RAISING IT** — ch.3 Q145's "answered nowhere" was withdrawn once `L29) Rhinitis 1` was read. **Staging sees only the bank.**
-   **⚠️⚠️ RESUME AT NOSE ch.8 "Nasal septal diseases", book p.81 on (PDF 90 on); opens at Q236, confirmed by rendering.**
-   **Check the contents map for its range and promised count, then render one page past the last answer page.** Its first
-   page runs a **Type 1/2/3 septal-fracture classification** (Q236–Q240) that is **nowhere in `L24) diseases of the nasal
-   septum.txt`** — expect to fill and tag it — plus **DNS prevalence figures** (Q242 offers "92 % vs 40 %" and "50 % of
-   the population") to check against `L24`'s *"Extremly common 80 % of population, more in males"*. **⚠️ Q242's options a
-   and d contradict each other on the same axis (Caucasians vs Africans) — read the key carefully.**
+   **⚠️⚠️ RESUME AT NOSE ch.8 — ALREADY READ AND STAGED, NOT YET WRITTEN.** All 23 verbatim + every finding are in
+   `content\ent\qb-pages\gg-nose-ch8.staged.js`; **do not re-render pp.90–94.** Book pp.81–84 (PDF 90–93), **23 printed
+   Q236–Q258 against 22 promised**, keys all on p.84, sheet clean. **Next steps: run the six-stage sweep, cut two figures,
+   write, splice, validate.** Its own findings: a **Type 1/2/3 septal-fracture classification** (Q236–Q240) that is
+   **nowhere in `L24`** — 5 entries will need tagging; **Q242 has TWO CORRECT ANSWERS** (keys the 92 %/40 % racial figure
+   while option b, "more in males", is true and is on `L24`, whose own 80 % matches neither offered number); **Q252–Q258
+   print their number twice IN THE ANSWER LIST**, a new location for that fault; **Q256 is another TRUE/FALSE**; and
+   **Q250's coronal CT is load-bearing** — its stem says only "this disease" and the box says only "The CT shows DNS".
+   **Then ch.9 "Minor Nasal Procedures", Q259–Q265, 7 promised, whole question set on book p.85 (PDF 94) — already rendered.**
    Nose holds 9 topics (258), Throat 11 (578). **✅ THE NOSE SECTION IS ONE CONTINUOUS RUN** — ch.2 opened at
    47, ch.3 at 85, ch.4 at 146, ch.5 at 169, ch.6 at 191, ch.7 at 204, ch.8 at 236, headers reading **`Chapter 2: <topic>`**
    throughout (number = section, title = topic). **Settled for Nose; check again at Throat (book p.87)**, where the number
