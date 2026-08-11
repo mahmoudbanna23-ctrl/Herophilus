@@ -5900,3 +5900,98 @@ outside knowledge and one book read would fix it.
 4. Write, marker-audit both ways, parse-check, splice, validate, ledger, MEMORY, commit.
 
 **No figures on any of the five pages.**
+
+---
+
+### §14t — Grade Gain, THROAT topic 1: "Anatomy & physiology of throat" — WRITTEN (2026-08-11)
+
+**40 printed, Q1 … Q40, against 40 promised — EXACT. 34 written (`entqb-thr1-1` … `-39`), 6 FOLDED.**
+Chapters: `ent-pharanat` 27, `ent-vocal` 5, `ent-hearing` 1, `ent-tonsils` 1.
+
+#### ⚠️ THE TWO IMAGE-ONLY LECTURES ARE NOW CACHED — 40 SLIDES READ VISUALLY
+
+`L1.1) Surgical anatomy of the larynx.pdf` (16 slides) and `L1.2) Anatomy of the pharynx.pdf`
+(24 slides) were rendered at 110 dpi, read as **four-up contact sheets** (10 reads instead of 40),
+and transcribed to `content\ent\lectures\L1.1) ….txt` and `L1.2) ….txt`. **The four-up sheet at
+760 px per slide keeps headings and bullets legible** and cost roughly half of forty single reads;
+fine print inside embedded textbook plates is not legible and is recorded as "figure present".
+
+**They repay the effort out of all proportion.** `L1.2` alone grounded **eleven** questions verbatim —
+the four-wall list of the oropharynx (Q6), the pillars (Q7), *"Passawnt's bridge"* spelled exactly as
+the bank spells it (Q8), the six-item function list with its *"2nd 'pharyngeal' phase"* parenthesis on
+which Q9 entirely turns, the four-component tonsillar bed (Q10), *"Tonsillar branch of Facial artery
+(main)"* (Q11), the *"Jugulo-diagastric LN"* (Q30), the five-member Waldeyer's ring (Q12/Q27),
+Killian's triangle beside Zenker diverticulum (Q31), and the fossa of Rosenmuller (Q4/Q40).
+`L1.1` grounded the arytenoid processes (Q18), the muscle set (Q19/Q24), the layered fold with its
+squamous epithelium (Q23/Q26), and the SLN/RLN division (Q20/Q25/Q29).
+
+**⚠️ It also SETTLED a staged question by proving a negative.** Q2's suspected second answer was
+checked slide by slide against both decks: **neither states any vertebral level and neither labels
+the carotid bifurcation.** So nothing in the course material resolves it — recorded, not corrected.
+Each cache file ends with an explicit **"NOT COVERED ANYWHERE IN THIS DECK"** list for exactly this.
+
+#### The six folds — and the identical-menu prediction was exactly right
+
+| Staged | Folds into | Stage | Note |
+|---|---|---|---|
+| Q12 Waldeyer's ring | `entep-throat-66` | E 0.67 / F 0.60 | Grade Gain **ADDS a fifth option** (*Lingual tonsils*) and writes *Adenoid* for *Nasopharyngeal tonsils*. **An added distractor is a reprint** |
+| Q35 HOV + aspiration | `entep-throat-36` | **B** | same option set, same key |
+| Q36 breathy weak voice | `entep-throat-33` | **B** | same option set, same key |
+| Q37 muscle spared by RLN | `entep-throat-9` | C, F 0.83 | **abbreviates** *Posterior cricoarytenoid* to *Cricoarytenoid* — an abbreviated distractor is the same distractor |
+| Q38 pyriform fossa referred pain | `entep-throat-103` | **B**, F 1.00 | **⚠️ NO BANK ADDED** — that entry already carries `gradegain` from Ear ch.1 Q24, so this is a **within-bank second printing**. Recorded only |
+| Q40 fossa of Rosenmuller | `entep-nose-67` | **B**, F 1.00 | same stem, same options, same key |
+
+**⚠️ THE IDENTICAL-MENU TRAP BEHAVED EXACTLY AS PREDICTED IN §14s.** Q34, Q35 and Q36 share one
+option list; stages B, C and F paired all three with `entep-throat-33`/`-36` at or near 1.00.
+**Two folded and one did not** — Q34 keys *bilateral abductor* for stridor-with-normal-voice, which
+endpoint asks only from the other direction (`entep-throat-4`). **Predicting the trap in the staging
+is what made this quick**; the rule holds — an identical menu with a different key is not a fold.
+
+**Held rather than folded, with reasons:** Q5 against `entqb-ear7-190` and `entep-ear-245` (same key,
+**all distractors replaced** in each); Q21 against `entep-throat-4` (inverted question); Q28's
+pyriform-fossa fish bone (no corpus match — *fish bone* and *impaction* return nothing).
+
+#### ⚠️ A FIFTH SILENT PARSE FAILURE — AND A NEW MECHANISM WORTH NAMING
+
+The fold notes were applied with PowerShell `.Replace()`, and **PowerShell's `''` escape emits a
+literal apostrophe**, which then closed the **single-quoted** JS `source:` string it landed in.
+Three occurrences — *Henle's*, *entry's*, *this one's* — each breaking the file silently.
+
+**The signature was diagnostic and is worth memorising:** the validator reported **36 dead backticked
+ids that unmistakably exist** (`entep-throat-9` ×6, `entep-throat-103` ×4 …). **A dead-id list full of
+ids you know are real means the DATA FILE DID NOT PARSE, not that the references are wrong.** The
+error probe then gave line 4002, column 736, `Unexpected identifier 's'` — the fix itself.
+
+**Rule going forward: when injecting prose into a single-quoted field, escape apostrophes as `\'`
+in the replacement string — and remember PowerShell's own `''` is not that escape.**
+
+#### One box in forty — 2.5 %, the lowest rate in the project
+
+Q25 only (*"SLN supplies cricothyroid muscle which is the only tensor of the cord…"*), so **33 of the
+34 entries carry the authored marker**. Below Nose ch.7's ~3 % and far below this bank's running ~30 %.
+
+#### Two defects recorded beside their keys, under the user's ruling of 2026-08-11
+
+- **Q2** — keys *"Beginning of pharynx"* as the non-C6 event, correctly; but **the carotid bifurcation
+  is C3–C4**, so option b is also not a C6 event. Neither deck settles it. Keyed as printed, noted.
+- **Q19** — option a names an **"anterior cricoarytenoid muscle", which does not exist**. Transcribed
+  as printed and said so.
+- **Q21** — **stem qualified.** *"Vocal cords in paramedian position"* gives stridor only if
+  **bilateral**; unilaterally it gives hoarseness, which is offered as option d. *(bilaterally)* added,
+  justified from the bank's own Q34, and the addition declared.
+
+#### Verified in a real `file://` boot
+
+`Q_ENT` **1,157** / `C_ENT` **82** / total **1,239**; 104 chapters; 0 bad refs, 0 duplicate ids, every
+answer in range, nothing missing a source, explanation or objective; **0 dead backticked ids out of
+3,228 references**; 52 image references over 49 files, all loading; mojibake clean.
+By bank **697 / 21 / 559** = 1,277 over 1,239 — **38** shared memberships across **37** questions
+(**+5**, since Q38 added none). Origin only **697 / 20 / 522**. Authored markers **885 of 1,239**,
+matching the predicted **+33** exactly (34 written − 1 boxed).
+
+**Reconciles:** Grade Gain **Ear 261 + Nose 265 + Throat topic 1 40 = 566 printed, 522 written,
+44 folded** — 37 cross-bank `alsoIn` and 7 within-bank reprints held once. Origin count **522** matches.
+
+**Next: Throat topic 2, "Pharyngeal and neck suppurations", book p.92 (PDF 101) onward.** It opens at
+**Q41** and PDF 101–102 are **already rendered** at `<scratchpad>\gg9\`. Check the contents map for its
+page range and promised count, and **render one page past the last answer page as always.**

@@ -1,0 +1,182 @@
+SOURCE: Semester 8\ENT\Theoritical\PPT\L1.2) Anatomy of the pharynx.pdf
+⚠️ THIS DECK IS IMAGE-ONLY. `pdftotext` returns 330 characters — the title slide alone.
+Verified 2026-08-11. This file is a VISUAL transcription of all 24 slides, rendered at 110 dpi
+and read as four-up contact sheets. Slide numbering is the PDF page number.
+Where a slide is a labelled figure with no prose, the figure and its legible labels are recorded
+as such; fine print inside embedded textbook diagrams is noted but not reproduced.
+
+Anatomy and Physiology of the Pharynx — Prof. Ahmed Tantawy, M.D. Ph.D.
+Chief Executive, Alexandria National University – Medical School Program;
+Professor of ORL, Faculty of Medicine, Alexandria University.
+
+--------------------------------------------------------------------------
+SLIDE 1 — Title.
+
+SLIDE 2 — "Regions of the Pharynx"
+Sagittal figure with the three regions colour-coded (Nasopharynx / Oropharynx /
+Laryngopharynx) and four boundary arrows:
+  • Posterior Choana
+  • Hard Palate
+  • Hyoid bone
+  • Lower border of Cricoid cartilage
+⚠️ THE DECK GIVES THE BOUNDARIES AS STRUCTURES, NOT AS VERTEBRAL LEVELS.
+No slide in this deck states a C-level for any region, and none mentions the carotid
+artery or its bifurcation. (Relevant to Grade Gain Throat Q1 and Q2.)
+
+SLIDE 3 — "Regions of the Pharynx"
+Coronal/posterior-opened figure of the whole pharynx from choana to oesophagus,
+with the three regions marked down the left side and the trachea below.
+
+SLIDE 4 — Section header: "NASOPHAYNX" (printed thus, without the R).
+
+SLIDE 5 — "Relationships of Nasopharynx"
+Figures only: post-nasal mirror examination showing the pharyngeal tonsil,
+eustachian tube orifice and nasal septum; two endoscopic views.
+
+SLIDE 6 — "Lateral wall of Nasopharynx"
+Cadaveric sagittal figure, labelled:
+  • Fossa of Rosenmuller
+  • Tubal elevation (Torus tubarius)
+  • Salpingopharyngeal fold
+  • Salpingopalatine fold
+  • ET orifice — "(1.5 cm behind post. end of IT)"   [IT = inferior turbinate]
+
+SLIDE 7 — "PARTS OF OROPHAYNX" (printed thus)
+  • Sup. wall: Soft palate & Uvula.
+  • Lat. wall: Ant. & Post. pillars + Tonsillar fossae & Palatine Tonsils.
+  • Ant. wall: Tongue base (& lingual tonsils) + Vallecullae.
+  • Post. wall: extends from soft palate to tip of epiglottis.
+
+SLIDE 8 — "Lateral wall of Oropharynx"
+Coronal figure labelled:
+  • Palatoglossus muscle (Anterior pillar)
+  • Palatine Tonsil
+  • Palatopharyngeus muscle (Posterior pillar)
+
+SLIDE 9 — "OROPHAYNX" (printed thus)
+Sagittal figure with two arrows:
+  • Velopharyngeal isthmus
+  • Oropharyngeal isthmus
+
+SLIDE 10 — "Physiological considerations" — Velopharyngeal sphincter
+  "Closure of the sphincter-like mechanism between the oropharynx & nasopharynx
+   is essential for normal deglutition & speech."
+  It is effected by combined:
+   - Postero-superior movement of the soft palate.
+   - Medial movement of the lat. ph. walls.
+   - Slight anterior movement of post. ph. wall (Passawnt's bridge)
+  "The uvula plays an important role in the perfection of this closure."
+  ⚠️ The deck spells it "Passawnt's bridge" — the same spelling Grade Gain uses.
+
+SLIDE 11 — "Physiological considerations" — Functions of the Oropharynx:
+  1. Common pathway for food & air.
+  2. Respiratory function (Patent pathway between nose & larynx).
+  3. Reflex actions (sneezing, coughing & vomiting).
+  4. Speech resonance (articulation of vowels).
+  5. Deglutition (2nd "pharyngeal" phase of swallowing).
+  6. Drainage of mucus from nasopharynx.
+  ⚠️ NOTE "2nd pharyngeal phase" — the oropharynx is the SECOND phase, not the third.
+
+SLIDE 12 — "The Palatine tonsils"
+  • A pair of lymphoid tissue masses lying on either side of the oropharynx.
+  • Normal tonsils are flush with the edges of the fauces.
+  • Medial surface is covered by mucous membrane showing 8–30 depressions (crypts).
+  • The largest crypt (crypta magna) separates the upper pole from the tonsillar body.
+  (Histology micrograph inset.)
+
+SLIDE 13 — "The Palatine tonsils" — the BED
+  "Its lateral (deep) surface is bounded by a fibrous tissue capsule, which separates
+   the tonsil from its bed that is made up of:"
+     - Superior constrictor muscle.
+     - Glossopharyngeal nerve.
+     - Facial artery.
+     - Buccopharyngeal fascia.
+  • "The lower pole may extend to the BOT & become continuous with the lingual tonsil."
+  ⚠️ THE BED IS THE **SUPERIOR** CONSTRICTOR. The middle constrictor is NOT part of it.
+
+SLIDE 14 — "Blood supply of palatine tonsils"
+  • Tonsillar branch of Facial artery (main).
+  • Ascending palatine a.
+  • Dorsalis linguae a.
+  • Descending palatine a.
+  • Ascending pharyngeal a.
+  Lymphatic drainage: "Upper deep cervical LNs (esp. the Jugulo-diagastric LN)"
+  (printed "diagastric"). Diagram also labels the paratonsillar vein.
+
+SLIDE 15 — "Waldeyer's Ring"
+  Definition: "Ring of Lymphoid tissue guarding entrance to the digestive & respiratory tracts.
+  It plays an important role in early recognition of pathogenic microorganisms &
+  initiation of an immune response."
+    1. Nasopharyngeal Tonsil (Adenoid).
+    2. Tubal Tonsils.
+    3. Palatine Tonsils.
+    4. Lingual Tonsils.
+    5. Lat. Pharyngeal bands.
+  ⚠️ FIVE COMPONENTS. Henle's lymphoid tissue is NOT among them.
+
+SLIDE 16 — Section header: "HYPOPHAYNX (LARYNGOPHARYNX)" (printed thus).
+
+SLIDE 17 — "PARTS OF HYPOPHAYNX"
+  Endoscopic view labelled:
+   • Posterior Pharyngeal wall
+   • Post-cricoid region
+   • Piriform fossae
+
+SLIDE 18 — "PARTS OF HYPOPHAYNX"
+  Opened posterior figure labelled: Posterior 1/3 of tongue, Epiglottis,
+  Pharyngoepiglottic fold, Aryepiglottic fold, Piriform recess (fossa),
+  Thyroid gland, Esophagus.
+
+SLIDE 19 — "Muscles of Pharynx (Lateral view)"
+  Textbook figure: superior / middle / inferior pharyngeal constrictors, stylopharyngeus,
+  styloglossus, stylohyoid, hyoglossus, mylohyoid, digastric, buccinator, cricothyroid
+  (straight and oblique parts), thyrohyoid, sternohyoid, oesophagus.
+  ⚠️ The MIDDLE constrictor is the one attached to the hyoid bone (greater cornu) —
+  visible in the figure; see also slide 20's parts list.
+
+SLIDE 20 — "Constrictor muscles of Pharynx"
+  Figure labelling the parts of each constrictor:
+   • Superior pharyngeal constrictor — pterygopharyngeal, buccopharyngeal,
+     mylopharyngeal, glossopharyngeal parts
+   • Middle pharyngeal constrictor — chondropharyngeal, ceratopharyngeal parts
+     (i.e. attached to the LESSER and GREATER CORNUA OF THE HYOID)
+   • Inferior pharyngeal constrictor — thyropharyngeal, cricopharyngeal parts
+   • Crico-thyroid (straight, oblique parts), trachea, oesophagus.
+
+SLIDE 21 — "Constrictor muscles of Pharynx"
+  Posterior figure with the pharyngeal raphe, plus an inset labelling:
+   • Killian's triangle
+   • Laimer's triangle
+   • Cricopharyngeus — oblique part and fundiform part
+   • "Fundiform part of cricopharyngeus"
+   • Zenker diverticulum
+  ⚠️ KILLIAN'S TRIANGLE AND ZENKER'S DIVERTICULUM ARE BOTH ON THIS SLIDE, together,
+  at the junction of thyropharyngeus and cricopharyngeus.
+
+SLIDE 22 — "Inferior constrictor muscle of Pharynx"
+  Two figures; the dehiscence is shaded green and labelled "dehiscence" — the gap between
+  the thyropharyngeal and cricopharyngeal parts.
+
+SLIDE 23 — "Nerve supply of the Pharynx"
+  Textbook figure, "Afferent Innervation of Mouth and Pharynx", colour-coded by nerve:
+  Trigeminal (V2 maxillary, V3 mandibular), Facial (VII, intermediate nerve — taste via
+  chorda tympani and lingual nerve), Glossopharyngeal (IX — via pharyngeal plexus and
+  lingual branches), Vagus (X — "via internal branch of superior laryngeal nerve").
+  ⚠️ THE VAGUS SUPPLIES THE VALLECULA/EPIGLOTTIC REGION VIA THE INTERNAL BRANCH OF THE
+  SUPERIOR LARYNGEAL NERVE — NOT the recurrent laryngeal nerve.
+  Label print is small; the nerve-by-nerve territory list is not separately spelled out
+  in prose anywhere in the deck.
+
+SLIDE 24 — "Nerve supply of the Pharynx"
+  Brainstem/pathway diagram: nucleus ambiguus, solitary nucleus, spinal nucleus of the
+  trigeminal, superior and inferior ganglia, corticonuclear tract, "to nucleus of reticular
+  formation (gag and swallowing reflex)", sensation from the ear (tympanic nerve),
+  stylopharyngeus and pharyngeal constrictor motor supply. Motor / somatic sensory /
+  visceral sensory colour key.
+
+--------------------------------------------------------------------------
+NOT COVERED ANYWHERE IN THIS DECK (checked slide by slide):
+  • Vertebral (C-spine) levels of any pharyngeal region.
+  • The carotid artery or its bifurcation.
+  • Fish-bone impaction sites.
+  • Retropharyngeal / parapharyngeal spaces (they belong to the suppurations lecture).

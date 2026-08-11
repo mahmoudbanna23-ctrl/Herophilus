@@ -1,0 +1,149 @@
+SOURCE: Semester 8\ENT\Theoritical\PPT\L1.1) Surgical anatomy of the larynx.pdf
+⚠️ THIS DECK IS IMAGE-ONLY. `pdftotext` returns 306 characters — the title slide alone.
+Verified 2026-08-11. This file is a VISUAL transcription of all 16 slides, rendered at 110 dpi
+and read as four-up contact sheets. Slide numbering is the PDF page number.
+
+⚠️ THIS DECK IS ALMOST ENTIRELY LABELLED FIGURES, WITH ALMOST NO PROSE. Most slides carry a
+Gray's Anatomy / Netter plate and nothing else — not even a heading. What follows records the
+labels that are legible and the structures each plate teaches. Where a fact is examinable it is
+called out; where the deck simply does not say something in words, that is stated.
+
+Surgical anatomy of the larynx — Prof. Ahmed Tantawy, M.D. Ph.D.
+Chief Executive, Alexandria National University – Medical School Program;
+Professor of ORL, Faculty of Medicine, Alexandria University.
+
+--------------------------------------------------------------------------
+SLIDE 1 — Title.
+
+SLIDE 2 — Two plates.
+  (A) Block diagram of the upper aerodigestive tract: nasal cavities, oral cavity, pharynx,
+      larynx, trachea, oesophagus, shown as interlocking colour-coded volumes.
+  (B) Lateral view of the laryngeal skeleton: Epiglottis, Laryngeal inlet, Hyoid bone,
+      Thyroid cartilage, Cricoid cartilage, Trachea, with the extent of "Larynx" bracketed.
+
+SLIDE 3 — Laryngeal skeleton, two views.
+  Left (posterior): Greater cornu of hyoid, Epiglottis, Cartilago triticea, Thyrohyoid
+   membrane, Lateral thyrohyoid ligament, Superior cornu of thyroid cartilage, Thyroid lamina,
+   Thyroepiglottic ligament, Corniculate cartilage, Arytenoid cartilage, Inferior cornu of
+   thyroid cartilage, Posterior cricoarytenoid ligament, First tracheal cartilage.
+  Right (sagittal): Epiglottis, Hyoid bone, Thyrohyoid membrane, Thyroid cartilage lamina,
+   Corniculate cartilage, Arytenoid cartilage, MUSCULAR PROCESS, VOCAL PROCESS, Vocal ligament,
+   Cricothyroid ligament, Cricoid cartilage, Trachea.
+  ⚠️ THE ARYTENOID'S TWO PROCESSES ARE LABELLED HERE — muscular and vocal.
+
+SLIDE 4 — Thyroid and cricoid cartilages in isolation.
+  (A) Thyroid cartilage, three aspects: Thyroid notch, Laryngeal prominence, Superior cornu,
+      Inferior cornu, Superior thyroid tubercle, Inferior tubercle, Oblique line.
+  (B) Cricoid cartilage: LAMINA and ARCH labelled separately, Airway, Trachea, and two facets —
+      "Facet for articulation with arytenoid cartilage" and "Facet for articulation with
+      inferior horn of thyroid cartilage"; arytenoid shown with its Ridge and Depressions.
+  ⚠️ THE CRICOID IS DRAWN AS A COMPLETE RING (lamina behind, arch in front) — the deck shows
+  this but nowhere states in words that it is the only complete ring of the airway.
+
+SLIDE 5 — Epiglottis and the small cartilages.
+  Anterior and posterior surfaces of the epiglottis, Epiglottic tubercle, Right thyroid lamina,
+  Thyro-epiglottic ligament, Cricoid, Trachea; second figure labels the CUNEIFORM CARTILAGES
+  and CORNICULATE CARTILAGES sitting on the arytenoids.
+
+SLIDE 6 — Extrinsic membranes and ligaments.
+  Hyo-epiglottic ligament, Hyoid bone, Lateral thyrohyoid ligaments, Triticeal cartilage,
+  "Aperture for internal branch of superior laryngeal nerve and associated artery",
+  Thyrohyoid membrane, Median thyrohyoid ligament, Cricotracheal ligament.
+  Second (line) figure: Hyoid, Middle thyro-hyoid ligament, Thyroid cartilage,
+  Middle crico-thyroid ligament, Cricoid cartilage, Trachea.
+  ⚠️ THE INTERNAL BRANCH OF THE SLN PIERCES THE THYROHYOID MEMBRANE — labelled here.
+
+SLIDE 7 — Internal membranes.
+  Hyo-epiglottic ligament, Airway, QUADRANGULAR MEMBRANE (left), Cuneiform cartilage,
+  Corniculate cartilage, Arytenoid cartilage, Vestibular ligament (cut away);
+  second figure: Vocal ligament, Cricothyroid ligament, Median cricothyroid ligament.
+
+SLIDE 8 — The glottis from above, plus an endoscopic photograph.
+  Diagram labelled: Quadrangular membrane, Epiglottis, Vestibular ligament, Vocal ligament,
+  Cricothyroid ligament, Vocal process of arytenoid, Muscular process of arytenoid,
+  Corniculate cartilage. Photograph: normal cords in adduction.
+
+SLIDE 9 — Intrinsic muscles, three plates.
+  Posterior view: TRANSVERSE ARYTENOID, OBLIQUE ARYTENOID, POSTERIOR CRICO-ARYTENOID,
+   Rima glottidis, Vocal ligaments, VOCALIS MUSCLE, LATERAL CRICO-ARYTENOID,
+   Lateral cricothyroid ligament.
+  Lateral view: Aryepiglottic muscle, Superior thyroid notch, Saccule, THYRO-ARYTENOID MUSCLE.
+  Inset: CRICOTHYROID MUSCLE, oblique part and straight part.
+  ⚠️ THE ONLY MUSCLE NAMED "POSTERIOR CRICO-ARYTENOID" IS THE ABDUCTOR; the adductor pair is
+  the LATERAL crico-arytenoid. There is no "anterior cricoarytenoid" muscle anywhere in the
+  deck or in anatomy. (Relevant to Grade Gain Throat Q19, whose option a invents one.)
+  ⚠️ VOCALIS IS DRAWN AS THE MEDIAL PART OF THE THYRO-ARYTENOID.
+
+SLIDE 10 — The laryngeal cavity.
+  (A) Laryngeal inlet, Epiglottis, Aryepiglottic fold, Cut edge of mucosa, Cuneiform tubercle,
+      Corniculate tubercle, Interarytenoid depression, Cut edge of right thyroid lamina,
+      Vestibule, LARYNGEAL SACCULE, LARYNGEAL VENTRICLE, Infraglottic space, Cricoid arch.
+  (B) Coronal: Laryngeal saccule, Middle part of cavity, VESTIBULAR FOLD (mucosa overlying
+      vestibular ligament), VOCAL FOLD (mucosa overlying vocal ligament), Trachea.
+  (C) From above: Vocal fold, Vestibular fold, Aryepiglottic fold, RIMA VESTIBULI,
+      RIMA GLOTTIDIS, Cuneiform tubercle, Corniculate tubercle, Interarytenoid fold.
+  ⚠️ THE RIMA GLOTTIDIS IS THE SPACE BETWEEN THE TRUE VOCAL FOLDS — labelled, not defined in prose.
+
+SLIDE 11 — Sagittal line drawing of the laryngeal compartments.
+  Base of tongue, VALLECULA, Suprahyoid epiglottis (tip), Hyoid, PRE-EPIGLOTTIC SPACE,
+  Aryepiglottic fold, Infrahyoid epiglottis, FALSE CORD, VENTRICLE, TRUE VOCAL CORD,
+  Thyroid cartilage, Thyro-cricoid membrane, SUBGLOTTIC SPACE, Cricoid cartilage.
+  ⚠️ THE SUPRAGLOTTIS / GLOTTIS / SUBGLOTTIS DIVISION IS SHOWN HERE GRAPHICALLY.
+
+SLIDE 12 — Cadaveric dissection (posterior) and a schematic.
+  Dissection labelled: Superior horn of thyroid cartilage, Epiglottis, Aryepiglottic fold,
+  Thyroid cartilage, Aryepiglottic muscle, Arytenoid cartilage, Posterior cricoarytenoid
+  muscle, Cricoid cartilage, Inferior horn of thyroid cartilage.
+  Schematic (coronal): Hyoid bone, PIRIFORM SINUS, Thyroid cartilage, Ventricle,
+  Cricoid cartilage — showing the piriform sinus lateral to the larynx.
+
+SLIDE 13 — The layered structure of the vocal fold.
+  Left: EPITHELIUM, then SUPERFICIAL / INTERMEDIATE / DEEP layers, then MUSCULARIS.
+  Right: SQUAMOUS EPITHELIUM over the fold, COLUMNAR EPITHELIUM above and below it,
+  Vestibular ligament, VOCALIS, and the LAMINA PROPRIA bracketed as
+  Superficial / Intermediate / Deep.
+  ⚠️ THE TWO EXAMINABLE FACTS OF THIS SLIDE: the vocal cord is covered by SQUAMOUS
+  epithelium (the rest of the larynx is columnar/respiratory), and the SUPERFICIAL LAYER OF
+  THE LAMINA PROPRIA is the subepithelial layer — REINKE'S SPACE. The deck draws it but does
+  not print the eponym "Reinke".
+
+SLIDE 14 — Nerve supply, two plates (right lateral view).
+  Superior laryngeal nerve with its INTERNAL BRANCH and EXTERNAL BRANCH; the external branch
+  running to the CRICOTHYROID MUSCLE; inferior pharyngeal constrictor; CRICOPHARYNGEUS MUSCLE
+  (part of inferior pharyngeal constrictor); RECURRENT LARYNGEAL NERVE.
+  Second plate (thyroid lamina removed): Internal branch of superior laryngeal nerve,
+  SENSORY BRANCHES TO LARYNX, Anastomosis (of Galen), Aryepiglottic muscle, Thyroepiglottic
+  muscle, Transverse and oblique arytenoid muscles, Thyroarytenoid muscle, Vocalis muscle,
+  Lateral cricoarytenoid muscle, Posterior cricoarytenoid muscle, Cricothyroid articular facet,
+  Anterior and posterior branches of inferior laryngeal nerve, Recurrent laryngeal nerve.
+  ⚠️ THIS IS THE SLIDE BEHIND FOUR QUESTIONS: the EXTERNAL branch of the SLN supplies the
+  CRICOTHYROID — the one intrinsic muscle the RLN does NOT supply; the INTERNAL branch carries
+  the sensory supply of the larynx above the cords; the RLN supplies every other intrinsic
+  muscle and the sensation below the cords.
+
+SLIDE 15 — Recurrent laryngeal nerve injury, schematic.
+  "Transection of recurrent laryngeal nerve" → cords drawn ABDUCTED (apart).
+  "Trauma but no transection" → cords drawn ADDUCTED, with arrows pushing them together.
+  ⚠️ The deck gives NO named cord positions (median / paramedian / cadaveric) and NO table of
+  voice outcomes. Those must come from elsewhere.
+
+SLIDE 16 — Blood supply.
+  Right lateral: Internal carotid artery, Superior laryngeal artery, External carotid artery,
+  Thyrohyoid membrane, Superior thyroid artery, Common carotid artery, Thyroid cartilage,
+  Inferior constrictor muscle of pharynx, Cricoid cartilage, INFERIOR LARYNGEAL ARTERY,
+  Inferior thyroid artery, Trachea, Thyrocervical trunk, Subclavian artery, Oesophagus,
+  Scalene tubercle on rib I, Rib I.
+  Anterior: Right internal jugular vein, Hyoid bone, Superior thyroid vein, Superior laryngeal
+  vein, Thyrohyoid membrane, Cricothyroid ligament, Thyroid gland, Inferior laryngeal vein,
+  Inferior thyroid vein, Right subclavian vein, Manubrium of sternum.
+  ⚠️ THE CAROTID BIFURCATION IS DRAWN but NOT LABELLED WITH A VERTEBRAL LEVEL, and no slide in
+  either L1.1 or L1.2 states a C-level for it. (Relevant to Grade Gain Throat Q2.)
+
+--------------------------------------------------------------------------
+NOT COVERED ANYWHERE IN THIS DECK (checked slide by slide):
+  • Named vocal-cord positions (median, paramedian, cadaveric, abduction) and the voice
+    outcome of each — only the transected/non-transected schematic of slide 15.
+  • Lymphatic drainage of the larynx by region (supraglottic / glottic / subglottic).
+  • The word "Reinke" — the space is drawn as the superficial lamina propria, unnamed.
+  • The phrase "only complete ring" for the cricoid — drawn, never stated.
+  • Referred otalgia and the nerve pathways behind it.
