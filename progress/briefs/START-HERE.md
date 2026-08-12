@@ -483,3 +483,72 @@ the chapter's complete THEORY entry (the new-study-source brief, `CLAUDE.md` §4
 The hub splices into `theory.<mod>.js` under the same single-writer rules.
 
 **Now read your module file.**
+
+---
+
+## 12. ⚠️ WRITING BUDGET — the user's ruling of 2026-08-13, and it SUPERSEDES the 2026-08-12 "full depth everywhere" choice
+
+The user asked how to go faster and spend fewer tokens **without ignoring anything important**, was
+offered the trade-offs explicitly, and chose **adaptive depth** and **write-once tables**. Three
+rules follow. **They change how much is written, never WHAT is covered.**
+
+> **⚠️ SCOPE IS UNTOUCHED AND THIS IS NOT NEGOTIABLE.** Every question in every bank is still
+> transcribed, every one of the six sweep stages still runs, every defect is still recorded, every
+> gap is still *answered* and tagged, and the theory notes are still a new study source sufficient
+> to sit the exam from. The user's correction of 2026-08-12 stands verbatim: *"I don't want in your
+> brief to ignore any questions or any important thing in the theoretical notes."* **If time runs
+> short, say so loudly — never trim a bank.**
+
+### 12.1 Adaptive depth — full depth where it earns it, ~250 words where it does not
+
+**Keep the full ~520-word treatment for:**
+
+- **clinical vignettes** — anything with a patient in it, where management or a differential turns
+  on the answer;
+- **defective or flagged keys**, and every **cross-bank divergence** — the note has to carry the
+  reasoning or it is worthless;
+- **gap-filled questions** — where the answer comes from general medical knowledge and is tagged.
+  A tagged claim with no supporting depth is the "dead end" the user forbade;
+- **discrimination questions** — anything turning on telling two look-alikes apart;
+- anything the bank prints **no box** for **and** the lectures cover **thinly**.
+
+**Write ~250 words for a straight slide-recall question** — *"which sentence is on the slide"*, an
+`except` list that is one slide's bullets inverted, a definition, a named law. Four things are
+mandatory and nothing else is:
+
+1. the **key**, with the **verbatim source quote** that grounds it;
+2. **why each wrong option is wrong** — never skipped, the exam tests the distractors;
+3. **one** clinical point that makes the fact usable;
+4. the citation.
+
+**⚠️ THE TEST IS NOT LENGTH, IT IS WHETHER THE CHAPTER'S NOTES COULD STILL BE WRITTEN FROM THESE
+ENTRIES.** If cutting a paragraph would lose a fact the theory pass needs, the paragraph stays.
+
+### 12.2 Write the shared table ONCE
+
+Sibling questions in a topic keep re-printing the same comparison (VFSS vs FEES appeared in four of
+topic 11's entries; rigid vs flexible vs direct vs mirror in five). **Put the fullest version in one
+entry and give the siblings a single line — "full comparison table in `<id>`."**
+
+- **⚠️ ONLY EVER POINT AT AN ID THAT ALREADY EXISTS.** The dead-id rule is unchanged and this makes
+  it easier to break: never backtick a number you have not written yet, and re-run the pre-splice
+  grep after every fold.
+- The app links questions to each other, so the learner reaches it in one tap.
+- **A discrimination table that IS the answer to its own question is not shared** — it stays in
+  full, in place.
+
+### 12.3 `source` is a CITATION, not a second explanation
+
+`source` had grown to 150–250 words restating what the explanation already said. **It carries only:**
+
+> bank file + page + printed number; whether a box was printed; the lecture file(s) that ground it,
+> named; **where the "not taken from the course material" tags sit**; any defect note; cross-refs.
+
+Quote the lecture **in the explanation**, cite it in `source`. The marker audit anchors on the
+**end of `explanation`**, so this is safe — but **⚠️ the marker still must never live in `source`**,
+which has been the single most repeated fault in this project.
+
+### 12.4 What did NOT change
+
+**Subagent cap stays at 2 per chat.** The bottleneck is the shared usage pool, not the number of
+slots — a third agent adds contention, not throughput. Everything in §§1–11 stands.

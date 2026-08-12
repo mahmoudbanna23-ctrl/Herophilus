@@ -7203,3 +7203,82 @@ copy **and** the user-data-dir to a double-dash-free directory — `%LOCALAPPDAT
 here — and the boot check runs normally. The preview pane cannot substitute: it renders a file
 outside the project as a static snapshot and `javascript_tool` returns *"No site is open in this
 tab."*
+
+---
+
+## §14cc — Grade Gain, Throat topic 11 "Clinical Assessment of Voice" — CLOSED 2026-08-13
+
+**21 printed, 21 written, 0 folded.** Contents promised 20 — over by one, the **22nd** time the
+map's count has run short while its page range was right. `Q_ENT` 1,617 → **1,638**. Marker delta
+predicted **+21** and measured **+21** — every entry authored, **zero boxes in 21**, so the
+prediction was trivially checkable and still worth computing first.
+
+**This closes the Grade Gain THROAT section except topic 10**, which subagent A is drafting.
+Throat now stands at **500 printed / 494 written / 27 folded** across t1–t9 and t11.
+
+### ⚠️ THE ch.5 DOUBLE DEFECT FIRED ON ITS OTHER HALF — FIRST TIME IN FOUR TOPICS
+
+**Q584–Q587 are printed on book p.174, in the left column, beside the Answers banner in the right.**
+Reading only "the question pages" pp.172–173 would have lost **four questions**. At t8 and t9 the
+defect ran the *other* way — answers spilling **past** the stated page, hiding 28 and 24 keys
+respectively. Here it runs backwards: a **question tail sharing the answer page**.
+
+> **Both halves remain unpredictable in both directions, and the standing rule covers both:
+> render one page past the last answer page, every time, and read every page in the range.**
+
+The far end was clean for once: all 21 keys fit on p.174, PDF 184 is blank, and the topic ends the
+Throat section. Rendered one page past anyway.
+
+### Zero folds, and the zero is evidenced
+
+**12 of 22 distinctive terms return 0 hits across the whole corpus** — `talbot`, `auditory
+perceptual`, `voice handicap`, `grbas`, `inverse filtering`, `electroneurograph`, `acoustic
+analysis`, `swallow screening`, `pass/fail`, `rigid laryngoscopy`, `non-instrumental`. **Neither
+endpoint nor House teaches the voice-assessment protocol at all** — endpoint teaches hoarseness by
+*disease*, never by *instrument*. Per the standing rule: **say why a zero is a zero.**
+
+### Both staged flags resolved FROM THE LECTURE, not from judgement
+
+- **Q577** (real-time recording → VFSS) was staged with *"⚠️ FLAG: FEES is also a real-time recorded
+  study."* `L7) Assessment And Management Of Swallowing Disorders` settles it: FEES *"does not
+  permit visualization of either the oral or the oesophageal phase"* and *"passage of the bolus and
+  movement of the pharyngeal structures cannot be observed during the swallow because of the
+  'white-out' effect"*, while VFSS gives *"the real-time visualization of the bolus from the oral to
+  the oesophageal cavity."* **Key stands, no defect.**
+- **Q587** (both oral AND pharyngeal phases → VFSS) resolved by the same passage. **Key stands.**
+
+> **Eighth and ninth time "read the slide before declaring a gap" has paid.** Both would have been
+> written up as defects on the staging note alone.
+
+### Defect recorded (1)
+
+**Q580 — TWO OPTIONS ARE THE SAME NUMBER.** The Talbot's-law question offers *"5 images / second"*
+(keyed) and *"2 images each 0.4 seconds"*, and **2 ÷ 0.4 = 5 per second.** They are arithmetically
+identical. Per the user's ruling of 2026-08-11 the printed key is kept and the flaw is noted inside
+the `explanation`; the answer is defended on **wording** — `L8` prints *"1 image per 0.2 seconds or
+**5 images per second**"*, and option (c) is that clause verbatim.
+
+**A new shape: previous "two correct answers" defects were two clinically defensible answers. This
+is one answer expressed twice in different units** — invisible to any key comparison, and invisible
+to a reader who does not do the arithmetic.
+
+### Q585 is an outlier and a genuine gap
+
+*"Deep neck space mass, how to investigate in kids?"* sits in a voice-assessment topic and belongs
+to `ent-neck`. **The material never names the modality:** `L4) PHARYNGEAL SUPPURATIONS` prints only
+*"Lateral soft-tissue neck radiograph (plain X-ray) confirms the diagnosis"*, and `L5) NECK MASS`'s
+work-up lists a bare *"1- Imaging"*. Answered from general medical knowledge and tagged throughout,
+per the answer-the-gap rule — and **consistent with the bank's own `entqb-thr6-327`**, which keys
+contrast CT for an adult lateral neck mass.
+
+### Chapters
+
+`ent-phon` ×15, `ent-swallow` ×5, `ent-neck` ×1.
+
+### Validation
+
+Whole-corpus run after the splice: **2,075 questions, 0 bad entries, 0 dead ids over 6,276
+backticked references (1,543 distinct), 0 markers misplaced into `source`, 0 duplicate ids, every
+`answer` in range.** Pre-splice dead-id grep returned clean — all eight external references
+(`entep-throat-103`, `entqb-thr6-327`, six `entqb-thr9-*`) verified live before splicing. **Ninth
+run of that check, second consecutive topic with nothing to repair.**
