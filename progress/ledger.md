@@ -6285,3 +6285,211 @@ the contents page promises **98 — the largest topic in the book**, answers beg
 and topic 5 opens book p.124. **PDF 119 is already rendered** at `<scratchpad>\thr3\p-119.png`.
 Render one page past the last answer page as always, and **expect the question tail to share the
 answer page until proved otherwise.**
+
+---
+
+### §14w — Grade Gain **THROAT topic 4, "Tonsils and Adenoids"** — written (2026-08-12)
+
+**Book pp.110–123 (PDF 119–132). 99 printed against 98 promised. 98 written, 1 folded.**
+**The largest topic in the book, and the largest single batch in the project.**
+Reading and sweeping were done in the previous session (`gg-throat-ch4.staged.js`,
+`gg-throat-ch4.array.js`); this section records the writing.
+
+| | |
+|---|---|
+| Questions | book pp.110–120 (PDF 119–129), Q149–Q247 unbroken |
+| Answers | book pp.121–123 (PDF 130–132), list ends with the lower right column blank |
+| Printed boxes | **7 of 99 (~7 %)** — Q203, Q204, Q234, Q235, Q236, Q242, Q243 |
+| Written / folded | **98 / 1** |
+| Authored markers | **+91** — predicted before writing and matched exactly |
+| Figures cropped | **1** (`q-gg-120a`, Q245, not essential) |
+| Back-references repaired | **6** — Q205, Q206, Q207, Q241, Q244, Q246 |
+| Chapters | `ent-tonsils` 83, `ent-osa` 5, `ent-nasalmass` 4, `ent-pharanat` 4, `ent-neck` 2 |
+| Five-option questions | **3** — Q158 (key E), Q181 (key A), Q227 (key D) |
+
+#### The lectures carry this topic better than any other in the project
+
+`L3) DISEASES OF THE TONSILS & ADENOIDS.pdf` is the backbone and grounds the overwhelming
+majority of the chapter **verbatim** — the adenoid clinical picture and facies list, the CO₂-retention
+symptoms, all five indications for adenoidectomy with their numeric thresholds, all five
+adenoidectomy techniques with their temperatures, all six complications, the three haemorrhage
+types with their windows and causes, healing by secondary intention at 5/10/15 days, the six
+tonsillectomy indications with the 7/5/3 episode counts, the extracapsular/intracapsular
+distinction, the pharyngitis organism lists, and the slides on diphtheria, mononucleosis,
+herpangina, herpes simplex, herpes zoster and candidiasis. `L1.2) Anatomy of the pharynx.pdf`
+supplies the tonsillar bed, the five arteries, the 8–30 crypts and crypta magna, the
+jugulodigastric drainage, Waldeyer's five components and the velopharyngeal sphincter with
+*"Passawnt's bridge"*. `L9) Snoring & OSA.pdf` supplies *"Adenoid (most common cause in children)"*
+and the complications of untreated OSA. `L5) NECK MASS.pdf` supplies the branchial anomalies.
+
+**Gaps confirmed by corpus-wide search of all 34 ENT files (0 hits each):** Thornwaldt,
+Rathke, Grisel, Paul-Bunnell, Vincent's angina, scarlet fever, fusiform/Borrelia, adenoid
+**grading**, Hutchinson's incisors, immunoglobulin isotypes, pigeon chest/any chest deformity,
+palatal petechiae, contraindications to tonsillectomy, and any **discharge time**. All answered
+from general medical knowledge and tagged; added to the end-of-ENT gap list.
+
+#### ⚠️⚠️ THE MARKER-IN-SOURCE FAULT AGAIN — THIS TIME IN **FOURTEEN OLDER ENTRIES**
+
+The new batch was written correctly: a **field-aware** pre-splice audit — *"does the entry's
+`explanation` END with the marker"*, the fix §14v said was owed — passed at 91/98 before splicing,
+and the post-splice delta was **895 → 986, exactly +91**.
+
+**But the same audit run over the whole file found 14 pre-existing entries carrying the marker
+inside `source` and nowhere else:** `entqb-ear3-53`, `entqb-ear8-208`, `-215`, `-216`, `-221`,
+`-222`, `-223`, `-230`, `-231`, `-232`, `entqb-ear9-246`, `-255`, `-256`, `-261`. Thirteen carry it
+bolded mid-sentence (`**Written for this bank …**` right after the key citation); one carries it
+plain at the end of `source`. **All relocated to the end of `explanation`.** Source-line count is
+now **0** and total occurrences are unchanged at 1,000, confirming nothing was duplicated or lost.
+
+**This is the third occurrence and the largest.** The earlier fix pass caught only
+`entqb-ear8-218`/`-219` because it looked for the *absence* of a marker rather than for its
+*presence in the wrong field*. **The field-aware check is now the standard pre-splice audit and
+should also be run over the whole file, not only the new batch.**
+
+#### ⚠️⚠️ FIFTH AND SIXTH SILENT PARSE FAILURES — NESTED **STRAIGHT** SINGLE QUOTES IN PROSE
+
+Two parse errors, both the same class and both new in mechanism: **quoting a phrase from the
+lecture with straight apostrophes inside a single-quoted JS field.**
+
+1. `*"**Chest complications 'including pneumonia'**…"*` — three occurrences.
+2. `**'Kissing disease'**` — one occurrence.
+
+**The fix was NOT to escape them.** `L3` prints both with **curly** quotes — `“including pneumonia”`
+and `‘Kissing disease’` — so replacing the straight quotes with the source's own typography is
+**simultaneously the more faithful transcription and immune to the parser.** Prefer this to `\'`
+whenever the source itself uses curly quotes.
+
+- **⚠️ `sed -i` with a `\\'` replacement silently did nothing** — reported no error and left the file
+  unchanged, which cost a round trip. Verified with `cat -A`. Use the Edit tool for this.
+- **⚠️ A `<script src>` over `file://` still reports only "Script error. @line 0".** Inlining the
+  data into the probe gave `Unexpected identifier 'including' @line 375` and then
+  `Unexpected identifier 'Kissing' @line 439` — the offending token named both times, which is the
+  fix itself. **Always inline.**
+- **A one-line regex finds them all before Chrome does:** `grep -n -o "[ (*\">]'[A-Za-z]"` over the
+  block, minus field-delimiter matches. It returned exactly the surviving occurrence after the
+  first fix and nothing after the second.
+
+#### ⚠️ SEVENTH CROSS-REFERENCE PAGE NUMBER WRITTEN FROM MEMORY, SEVENTH TIME WRONG
+
+`entep-throat-111` was cited as p.1641 while drafting; it is **p.1651 (Q149)**, and it has **five**
+options. Caught by reading its own `source` before splicing. **7 of 7. Never write one from memory.**
+
+#### The fold — within-bank, so no membership added
+
+**Q169 → `entqb-thr1-11`** (Throat topic 1, book p.87). *"Which artery is the main blood supply to
+the palatine tonsils?"* against *"Which of the following is the main blood supply to the tonsils?"*,
+same key. Topic 1 prints the key as **"Tonsillar artery"** and topic 4 spells it out as **"Tonsillar
+branch of the facial artery"** — the same vessel abbreviated, which by the settled test is the same
+distractor — with one wrong option genuinely replaced (*ascending palatine* → *ascending
+pharyngeal*), the single-replaced-wrong-distractor case settled at `entep-throat-103`.
+**Grade Gain reprints itself for the seventh time; held once, no `alsoIn`.**
+
+#### ⚠️⚠️ CROSS-BANK DIVERGENCE — THE SECOND IN THE PROJECT, AND THE FIRST DECIDED BY ONE WORD
+
+**Q224 (`entqb-thr4-224`) vs `entep-throat-77` (p.1557) print the SAME FOUR OPTIONS and key
+different ones.**
+
+- endpoint keys **"Congestion of the anterior pillar"** as NOT a definite sign of chronic tonsillitis;
+- Grade Gain keys **"Enlarged REGULAR tonsillar crypts"**.
+
+**The qualifier *regular* is the whole difference.** Endpoint's crypt option reads *"Enlarged
+tonsillar crypts"* unqualified, which is the classic **doubtful** sign — so its list holds two
+arguable candidates and it keys the other. Grade Gain's option, qualified, describes a **normal
+variant**, and its key agrees with the standard teaching that anterior-pillar congestion **is** a
+definite sign. **Both held; neither folded** — identical options with different keys are a
+divergence, not a reprint. Notes added to **both** entries.
+
+#### Zeros explained: stages A and B both returned nothing across 99 questions
+
+Credible, and for a specific reason recorded at sweep time: **this topic is mostly adenoid and
+operative material, and endpoint barely covers either.** Endpoint's tonsil set is clinical
+vignettes and membranous-tonsillitis differentials; Grade Gain spends forty-odd questions on
+adenoid anatomy, grading, technique, preoperative work-up and complications. The real fold came
+from a **within-bank** match that no cross-bank stage was looking for.
+
+**⚠️ And a generic "EXCEPT" stem is to stage E what a generic option menu is to stage F** — nine
+questions scored 0.50–0.80 at stage E on the shared tokens *following / true / except / about*
+alone. Third chapter running in which the rankings had to be read rather than trusted.
+
+#### Eleven defects recorded beside their keys (2026-08-11 ruling), none corrected
+
+1. **Q179 is self-contradictory**: an *"except"* stem whose key is *"All of the above"*. The option
+   set was plainly written for a positive stem.
+2. **Q207 offers no correct option** — every choice contains an antibiotic and none treats EBV;
+   levofloxacin appears in three of four. The key is the least wrong (no ampicillin, plus steroids,
+   which have a narrow airway indication).
+3. **Q163 does not offer the right technique.** *"Microdebrider-assisted"* is a technique on `L3`'s
+   own slide and is absent from the options; the key is *endoscopic-guided*, which is how the
+   microdebrider is used.
+4. **Q180 offers synonyms** — *catarrhal* and *superficial* pharyngitis are the same thing, so
+   neither can be the answer.
+5. **Q198 offers the same bleed twice** — *"infected bed at 10 days"* and *"slough separation"* are
+   the timing and the mechanism of secondary haemorrhage.
+6. **Q159's grading conflicts with Parikh's.** The bank calls soft-palate contact **grade 3**;
+   Parikh's endoscopic system calls it **grade 4**. No cached slide grades the adenoid at all.
+7. **Q151 keys involution at 11 years**; `L3` gives only *"Can shrink naturally after 6-8 years"*.
+8. **Q182's option b** calls the diphtheritic membrane *"well-defined"*, contradicting the standard
+   description of a spreading, ill-defined membrane. Not the key, so no key comparison sees it.
+9. **Q237 keys discharge at 3 hours**, inside the 24-hour reactionary-haemorrhage window; usual
+   practice is 4–6 hours with admission criteria.
+10. **Q244 keys penicillin for 2 weeks**; the standard course is 10 days. The principle being
+    tested — a full course rather than symptomatic care — is right.
+11. **Q242's printed box states metronidazole targets *"anaerobic and aerobic organisms"***; it is
+    active against anaerobes only. **A printed box wrong about pharmacology, not about the key.**
+
+Plus two softer ones: **Q239** describes an infected cyst that discharged — strictly an acquired
+**sinus** — while the key says *fistula*; and **Q228** keys mononucleosis on palatal petechiae in a
+vignette whose **one-day history and unilateral membrane** are atypical for it.
+
+#### The three-vignette ladder, and why it is worth teaching as a set
+
+Q234, Q235 and Q236 print near-identical stems differing by one clause and key three different
+answers: 2-year-old with a mucus plug → **conservative to age 3**; the same child **plus snoring and
+daytime sleepiness** → **adenoidectomy** (OSA overrides the age rule); a 4-year-old whose palate is
+**clefted into two halves** → **partial adenoidectomy**. All three carry printed boxes, and the boxes
+between them state the rule: *"Adenoidectomy is done under 3 years only if patient had OSA"* and
+*"Partial adenoidectomy is indicated in case of cleft palate with middle ear complications to allow
+better ET aeration without velopharyngeal insufficiency"*. **The differing clause IS the question.**
+
+#### The one figure — right on the second attempt, and the miss was padding, not detection
+
+The **dark-region detector** from §14v found the photograph's box exactly on the first run:
+rows >55 % non-white (luminance <232) in the right column half gave y=576..808, and the same test
+by column gave x=692..1095. **A 12 px symmetric pad then dragged in a strip of question text**,
+because the line above sits closer than that. Re-cropped at **3 px** and looked at: clean.
+`q-gg-120a`, 410×239, 26 KB. **The detector is reliable; the padding is not — always LOOK.**
+Assets now **56 files, 2.3 MB**.
+
+Caption is modality and view only — *"Oral cavity photograph of the soft palate and uvula"* — and
+`imgEssential` is **not** set, because the stem already states the vesicles are on the soft palate
+and uvula.
+
+#### Verified in a real `file://` boot
+
+`Q_ENT` **1,358** / `C_ENT` **82** / total **1,440**; 104 chapters; 0 bad module or chapter refs,
+0 duplicate ids, every answer in range, nothing missing a stem, source, explanation or objective;
+**0 dead backticked ids out of 3,948 references (1,165 distinct)**; **60 image references over 56
+files, all loading, none without `imgAlt`**; mojibake clean; **0 console errors, 4 module cards,
+770 CSS rules including 2 from the harness, all 3 `max-aspect-ratio:5/4` blocks intact**.
+
+By bank **697 / 21 / 764** = 1,482 over 1,440 — **42** shared memberships across **41** questions,
+**unchanged**, because topic 4's only fold was within-bank. Origin only **697 / 20 / 723**.
+Option counts {2:5, 3:53, 4:1179, 5:121} — the three new five-option questions took 118 → 121.
+
+**Reconciles:** Grade Gain **Ear 261 + Nose 265 + Throat 40 + 47 + 61 + 99 = 773 printed,
+723 written, 50 folded** (41 cross-bank `alsoIn` + 9 within-bank held once). Origin count **723**
+matches the validator exactly.
+
+**Throat stands at 4 of 11 topics: 247 printed, 235 written, 12 folded, against 578 promised.**
+
+**Next: Throat topic 5, "Pediatric Laryngeal Lesions", book p.124 (PDF 133) onward, opening at
+Q248, 52 promised.** PDF 133 is already rendered at `<scratchpad>\thr4\`. Render one page past the
+last answer page as always, and expect the question tail to share the answer page until proved
+otherwise — **topic 4 had neither defect, which is itself no guide to topic 5.**
+
+#### Environment correction
+
+**Node.js IS installed — v26.7.0**, verified 2026-08-12 by `node -v`. `MEMORY.md` and §13 have
+listed "no Node" since the environment was first surveyed; that is wrong. Nothing in the current
+toolchain needs it, but a JS-based validator or bundler is now a real option and the single-file
+build owed in §2 no longer requires hand-rolled PowerShell. **Python is still absent.**
