@@ -5995,3 +5995,143 @@ matching the predicted **+33** exactly (34 written − 1 boxed).
 **Next: Throat topic 2, "Pharyngeal and neck suppurations", book p.92 (PDF 101) onward.** It opens at
 **Q41** and PDF 101–102 are **already rendered** at `<scratchpad>\gg9\`. Check the contents map for its
 page range and promised count, and **render one page past the last answer page as always.**
+
+---
+
+### §14u — Grade Gain **THROAT topic 2, "Pharyngeal and neck suppurations"** — read, swept, written (2026-08-12)
+
+**Book pp.92–98 (PDF 101–107). 47 printed against 46 promised. 45 written, 2 folded.**
+
+| | |
+|---|---|
+| Questions | book pp.92–97 (PDF 101–106), Q41–Q87 unbroken |
+| Answers | book p.98 (PDF 107) — **all 47 keys on one page** |
+| Next topic | book p.99 (PDF 108) opens "Dysphagia" at Q88 |
+| Printed boxes | **3 of 47 (~6 %)** — Q69, Q86, Q87, all one-line diagnosis recaps |
+| Written / folded | **45 / 2** |
+| Chapter | `ent-pharsupp`, all 45 — the first single-chapter topic in Grade Gain |
+
+**⚠️ The answer page was self-contained — no question tail on it, and no keys running past it.**
+Both defects were checked for and neither was present. Six of the previous fifteen chapters had the
+first and two had the second, so the check stays.
+
+#### The lecture carried this chapter almost entirely
+
+`L4) PHARYNGEAL SUPPURATIONS.pdf` (Prof. Emad A. Magdy) was already cached and covers the topic
+line for line. **Thirty-plus keys are confirmed verbatim from it**, and — the finding that matters —
+**four keys staged as suspected defects were WITHDRAWN once the slide was read:**
+
+- **Q51** "laryngeal oedema" as NOT a parapharyngeal complication. L4 lists exactly four
+  (IJV thrombosis/Lemierre's, carotid rupture, CN IX–XII or sympathetic chain, mediastinitis) and
+  places laryngeal oedema under **quinsy** and **acute retropharyngeal abscess** instead.
+- **Q53** odynophagia keyed to **parapharyngeal** — L4's parapharyngeal picture reads *"High fever,
+  sore throat & **odynophagia**"*, and the word appears under no other suppuration.
+- **Q55** "rapid strong bounding pulse" keyed to **quinsy** — L4's quinsy signs read *"High
+  temperature (39-40°C) & **rapid strong bounding pulse**"*. Verbatim.
+- **Q56/Q61/Q62/Q85** the chronic retropharyngeal abscess as a **midline** swelling **behind** the
+  prevertebral fascia in a **middle-aged adult**, with normal temperature and pulse, painless nodes
+  and vertebral tenderness — **every clause of Q62's vignette is a line of L4.**
+
+**⚠️ SIXTH OCCURRENCE OF THE SAME LESSON. Staging sees only the bank. READ THE LECTURE BEFORE
+DECLARING A GAP OR A DISPUTE** — four would have been written down as defects, and all four were
+the lecture's own words.
+
+#### Two folds, and only one of them reached a strict stage
+
+| Fold | Target | How it was caught |
+|---|---|---|
+| Q76 | `entep-throat-37` (p.1438) | **Neither A nor B.** Stage E 0.75, stage F 0.63 |
+| Q85 | `entep-throat-74` (p.1551) | Stage B, plus F 1.00 |
+
+Q76 is *"Which of the following causes uvular deviation to the opposite side with dysphagia?"* — the
+same four options and key as endpoint, differing by one hyphen and four full stops. **Endpoint prints
+that item four times (pp.1438, 1473, 1647, and Exam Night Review p.3010) and Grade Gain once; it is
+held exactly ONCE.** Q85 is endpoint's bare stem-completion *"Chronic retro-pharyngeal abscess:"*
+re-set as a question over an identical menu.
+
+**⚠️ A MODEST STAGE-F SCORE IS NOT EVIDENCE AGAINST A FOLD.** Q76 scored only 0.63 on option tokens
+*because all four of its options contain the word "abscess"*, which swamps the set. The fifth
+chapter now in which a fold was found by the rankings rather than by a strict stage.
+
+#### ⚠️ NEW AND GENERAL: A SHORT, GENERIC OPTION MENU MAKES STAGE F WORTHLESS
+
+Stage F returned **three separate 1.00 matches that are not folds**, all because the corpus reuses a
+handful of four-item menus:
+
+- **Q74** vs `entep-throat-115` — the four neck **spaces**; different stem, **different key**.
+- **Q70** vs `entep-nose-23` — the four **imaging modalities** (US / CT / MRI / plain X-ray).
+- **Q46** vs `entep-throat-103` — the four **referred-otalgia nerves**; keyed to the vagus there.
+
+On this chapter **stage E did the real work and stage F produced more noise than signal** — the exact
+reverse of Ear ch.1, where E scored 0.21/0.24 on two folds that F caught at 1.00. **Neither ranking
+dominates the other. Run both, and read the staged list.**
+
+Q46 additionally matches `entep-throat-109` on **options and key** (both glossopharyngeal) over a
+*post-tonsillectomy* stem rather than a *quinsy* one — the settled **same options + same key +
+different stem is NOT a fold** rule. All three held.
+
+#### Held, not folded, on the replaced-distractor test
+
+- **Q57 and Q75 vs `entep-throat-32`** (pp.1426, 1499) — three questions on drainage routes over
+  overlapping menus; each replaces at least one option and each keys a different line.
+- **Q72 vs `entep-throat-17`** — same keyed *fact* (midline swelling is the false one) with **three
+  of four options replaced**.
+- **Q62 vs `entep-throat-92`** — same diagnosis, **no shared distractor at all** (four abscesses
+  there, four differentials here), which is why no stage saw the pair.
+
+#### Three defects recorded beside their keys, under the user's ruling of 2026-08-11
+
+1. **⚠️ Q64 PRINTS ITS OPTION LETTERS TWICE** — "b. b. Surgical…", "c. c. Spinal…". Typographic,
+   stripped. **But option b also says the chronic retropharyngeal abscess is drained "via transoral
+   or external approach", and L4 says externally "through the neck & NEVER through the mouth".**
+   **⚠️ THE OPTION IS WRONG AND IS NOT THE KEY, SO NO KEY CHECK CAN SEE IT.** A new shape: previous
+   defects were mis-keys or ambiguous keys; this is a **false distractor in a correctly keyed
+   question**. Recorded and explained in the entry.
+2. **Q54 vs Q72 name the same nodes two different ways** — *"LN of **Renvier**"* at Q54 and *"LNs of
+   **Henle**"* at Q72. **L4 uses Henle**; *Renvier* is a corruption of **Rouvière**. Both transcribed
+   as printed, both explained. (`rouviere` and `renvier` each return **0 hits** corpus-wide before
+   this chapter.)
+3. **Q45 keys "All of the above"**, which requires **Grisel's syndrome** — an entity in **no cached
+   ENT slide** (0 hits corpus-wide). Answered from general medical knowledge and tagged.
+
+#### Four back-references repaired, in two chains
+
+Q63 and Q64 both open *"In the previous case"* pointing at Q62; Q70 and Q71 point at Q69. The deck is
+shuffled, so each was restated with its own antecedent. **4 of 47.**
+
+#### ⚠️⚠️ THE MARKER AUDIT CAUGHT A REAL FAULT, AND IT WAS MINE — FOURTH TIME THIS CHECK HAS PAID
+
+All **42** authored markers were written at the end of the **`source`** field instead of at the end of
+the **`explanation`**, where `CLAUDE.md` §4 puts them. Every entry parsed, cited and rendered fine;
+nothing else would have seen it. **The signature was the counter moving the WRONG WAY** — 885 → 776
+across a batch that added 45 entries. `MEMORY.md` already carried this exact warning from an earlier
+batch of 18, and the trap was walked into again.
+
+- Fixed by a line-wise pass that strips the sentence from `source` and appends it to `explanation`.
+- **The same audit then found TWO OLDER ENTRIES with the same misplacement** — `entqb-ear8-218` and
+  `entqb-ear8-219`, carrying the marker in `source` **only**. Both fixed. Fourteen further Ear ch.8–9
+  entries carry it in **both** fields, which is untidy but harmless and was left alone.
+- **⚠️ THE HISTORICAL FIGURE OF "885 of 1,239" CANNOT BE REPRODUCED** by any single definition and
+  should not be quoted forward. The definition now in the validator is *"the entry's `explanation`
+  contains the phrase"*, which gives **820 of 1,284**. **What is trustworthy is the DELTA, not the
+  level** — +42 new, +2 repaired, predicted and matched exactly.
+
+#### Verified in a real `file://` boot
+
+`Q_ENT` **1,202** / `C_ENT` **82** / total **1,284**; 104 chapters; 0 bad module or chapter refs,
+0 duplicate ids, every answer in range, nothing missing a source, explanation or objective;
+**0 dead backticked ids out of 3,361 references**; 52 image references over 49 files, all loading;
+mojibake clean; **0 console errors, 4 module cards, 768 CSS rules** on a full app boot.
+
+By bank **697 / 21 / 606** = 1,324 over 1,284 — **40** shared memberships across **39** questions
+(+2, the two folds). Origin only **697 / 20 / 567**.
+**Option counts now 2, 3, 4 and 5** — {2:5, 3:53, 4:1028, 5:116}; Q86 and Q87 are five-option
+questions and render correctly.
+
+**Reconciles:** Grade Gain **Ear 261 + Nose 265 + Throat 40 + 47 = 613 printed, 567 written,
+46 folded** — 39 cross-bank `alsoIn` and 7 within-bank reprints held once. Origin count **567** matches.
+
+**Next: Throat topic 3, "Dysphagia", book p.99 (PDF 108) onward.** It opens at **Q88**, the contents
+page promises **60**, answers begin book p.107 (PDF 116), and topic 4 opens book p.110. **PDF 108 is
+already rendered** at `<scratchpad>\thr2\p-108.png`. Render one page past the last answer page as
+always.
