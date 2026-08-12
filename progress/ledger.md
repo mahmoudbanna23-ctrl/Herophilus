@@ -6947,3 +6947,134 @@ misplaced into `source`.** Option counts {2:5, 3:53, 4:1293, 5:127}.
 
 **Next: topic 8, "Stridor & Tracheotomy", book p.144 (PDF 153), Q378 onward, 65 promised — the largest
 remaining topic. `L6` covers it in full, so expect the reverse of topic 7: heavy grounding, few gaps.**
+
+---
+
+## §14aa — Grade Gain, Throat topic 8: "Stridor & Tracheotomy" (closed 2026-08-12)
+
+**Book pp.144–150, PDF 153–159; answers pp.150–152, PDF 159–161. 66 printed, 65 written, 1 folded.
+The contents page promised 65 — over by one, the eighteenth time the promised count has run short.**
+
+`entqb-thr8-378` … `entqb-thr8-443`, **skipping 411**. Chapters: `ent-stridor` 47, `ent-paedlar` 9,
+`ent-hoarse` 8, `ent-vocal` 1. **7 printed explanation boxes of 66 (~11 %)** — Q414, Q415, Q424 and
+the whole Q426–Q429 linked set.
+
+**Reconciliation — every figure measured after the splice, none estimated:**
+
+| | |
+|---|---|
+| `Q_ENT` | 1,478 → **1,543** (+65) |
+| Authored markers in `Q_ENT` | 1,021 → **1,079** (+58 = 65 written − 7 boxed) — **predicted +58 exactly** |
+| `QUESTIONS` in a real `file://` boot | **1,828**; ENT 1,625; topic 8 = 65 |
+| Dead backticked ids | **0** over 5,578 refs, 1,425 distinct |
+| Bad entries / markers in `source` | **0 / 0** |
+| Boot | **0 console errors**, 4 modules, 104 chapters, 768 CSS rules, 3 `max-aspect-ratio:5/4` blocks, 9/9 poses |
+
+### The boundary defect fired again, and rendering one page past saved 28 of 66 keys
+
+**The map said the answers begin on p.151 (PDF 160). They ran onto p.152.** Rendering one page past
+the last answer page — the standing rule since ch.4 — recovered the keys for **Q416 onward, 28
+questions**. **Twenty-second consecutive topic where the page RANGE was right and something about the
+count or the extent was not.**
+
+### The fold is a new shape: a vignette-dependent question REPRINTED SELF-CONTAINED
+
+**Q411 — *"What is the characteristic sign seen in X-ray in case of croup?"*, four options, keyed
+*steeple sign* — is topic 5's Q275 with the header vignette INLINED INTO THE STEM.** Folded into
+`entqb-thr5-275`; **no `alsoIn`, since both printings are Grade Gain.** Ninth within-bank reprint.
+
+**⚠️⚠️ THE FOLD TARGET WAS THE DANGEROUS PART, AND CHOOSING WRONG WOULD HAVE INVERTED THE ANSWER.**
+Topic 5 prints **two** questions with that identical stem and identical option list:
+`entqb-thr5-268` under an **epiglottitis** vignette, keyed **thumbprint**, and `entqb-thr5-275` under
+a **croup** vignette, keyed **steeple**. **Only the header separates them.** A stem-and-options match
+(stage A) hits both at 1.00. **The KEY is what selects the target, and it was checked before folding.**
+
+**⚠️ NEW RULE: WHERE A BANK PRINTS TWINS THAT DIFFER ONLY BY A HEADER VIGNETTE, A LATER SELF-CONTAINED
+REPRINT MUST BE MATCHED ON THE KEY, NEVER ON THE STEM.** The tool written for this
+(`<scratchpad>\wrT8\t8vt5.js`) matches on the **option set alone** and deliberately reports
+key-MISMATCHES too, precisely so such a pair surfaces as a warning rather than a silent wrong fold.
+
+### The biggest finding is NOT a fold — a four-question cross-bank set no stage caught as a set
+
+**GG Q426–Q429 maps one-to-one onto endpoint's Q53–Q56: same vignette (65-year-old smoker, voice
+change without hoarseness, neck node), same four questions in the same order, same four keys.**
+
+| GG | endpoint | asks | key |
+|---|---|---|---|
+| Q426 | `entep-throat-44` | site of the lesion | Supraglottic |
+| Q427 | `entep-throat-45` | most significant risk factor | Smoking |
+| Q428 | `entep-throat-46` | stage of the tumour | Advanced malignancy |
+| Q429 | `entep-throat-47` | best biopsy site | the laryngeal mass |
+
+**ALL EIGHT HELD. Every option list is REPLACED, not trimmed** — and the settled test is that a
+**dropped or added** distractor is a reprint while a **replaced** one is a new question. Q427 even
+differs in option *count*. **Noted in both directions in all four new entries.**
+
+**⚠️ NO SWEEP STAGE SAW THE SET AS A SET.** Stage C found Q426→`-44` and Q428→`-46` only because those
+keys happen to collide; Q427 and Q429 surfaced against unrelated entries. **A shared VIGNETTE spanning
+four questions is invisible to every projection the sweep computes, because each stage reads one
+question at a time.** Worth a dedicated check if another linked block appears.
+
+### Nine defects recorded per the 2026-08-11 ruling — key held as printed, note in the explanation
+
+1. **⚠️⚠️ Q400 SITS ON AN INTERNAL CONTRADICTION IN `L6` ITSELF, AND IT IS THE MOST SERIOUS OF THE
+   NINE.** Its **causes** slide puts *acute nonspecific laryngitis* first for children; its
+   **laryngomalacia** slide says laryngomalacia is *"the most common congenital anomaly of the larynx
+   and **most frequent cause of stridor in children**."* **Unlike Q393, laryngomalacia IS on this
+   menu**, so it cannot be excused as a limited option list. Reconciled as **chronic (laryngomalacia)
+   versus acute (laryngitis)**. **⚠️ FOUND ONLY BY READING THE WHOLE DECK — the first Q400 draft cited
+   the causes slide alone and would have shipped a confidently wrong explanation.**
+2. **Q393** keys *acute nonspecific laryngitis* as commonest in **infants**, where `L12` says
+   laryngomalacia and `entep-mfe4-6` keys laryngomalacia on the identical stem — but laryngomalacia is
+   **not offered**, so the printed key is the best available (the `entep-nose-97` precedent).
+3. **Q405 HAS NO QUESTION SENTENCE** — it stops at the end of its vignette. Supplied from Q415, which
+   asks *"first line of treatment"* over the **identical four options**.
+4. **Q407 keys "aerophagia", which appears NOWHERE in `L6`** — not on the early list, not anywhere in
+   the deck. Defensible (the only option both early and paediatric) and recorded as unsupported.
+5. **Q415's printed box names laryngospasm and a prolonged QT interval, neither in its own stem** —
+   the same shape as t3 Q138.
+6. **Q435 "stridor at birth"**: on `L6`'s own **onset** slide only the **web** is present strictly at
+   birth — laryngomalacia is *1st week*, haemangioma *1st 6 months*. Read as "congenital/neonatal".
+7. **Q440's option (b), *"It needs investigations in every case"*, is made true BY FIAT by an
+   "all the above" key**, and sits awkwardly with the conservative management of mild laryngomalacia.
+8. **Q442 prints cuff pressure as "< 20 mm Water"**; the accepted figure is ~20–30 **cm H₂O**.
+9. **Q401's stem prints "NOT indication for indications of"** — the phrase duplicated. Q421 prints
+   *"Wight loss"*, Q436 *"laryngotrachcobronchitis"*. All transcribed corrected, all recorded.
+
+**⚠️ Q412, Q418 AND Q403 ARE THREE DIFFERENT JUDGEMENTS ABOUT THE THREE TRACHEOSTOMY LEVELS AND MUST
+NOT BE MERGED: MID is the most DIFFICULT (the thyroid isthmus crosses rings 2–4), LOW the most
+DANGEROUS (innominate artery, pleural domes), HIGH the most DAMAGING to the larynx (cricoid
+perichondritis).** A first draft of Q403 cross-referenced Q418 as "low is the most hazardous" and had
+to be corrected — **the bank asks all three, and a merged note would have been wrong for two of them.**
+
+### Back-references: 5 of 66 (~8 %), including a three-deep chain
+
+Q417→Q416, Q423→Q422, and **Q427, Q428 and Q429 all → Q426**. All restated in full, nothing added
+beyond what the antecedent prints. **The three-deep chain off one vignette is the second such structure
+in two topics (t7 had two adjacent two-deep chains).**
+
+### Two process results worth keeping
+
+**✅ THE PRE-SPLICE DEAD-ID GREP CAUGHT ITS TARGET FOR THE SECOND TOPIC RUNNING** — one backticked
+reference to the folded `entqb-thr8-411`, in Q436's croup-versus-epiglottitis table. Rewritten to
+`entqb-thr5-275` before splicing. **One command; always run it.** *(A second dead id,
+`entqb-thr8-370`, was a plain typo for `entqb-thr7-370` and was caught post-splice by the validator.)*
+
+**⚠️⚠️ NEW MARKER FAULT, FIFTH OCCURRENCE, AND THE FIRST IN THE OPPOSITE DIRECTION: SEVEN ENTRIES
+CARRIED THE AUTHORED MARKER THAT SHOULD NOT HAVE.** All four previous faults were *missing* or
+*misplaced* markers; this was a **spurious** one on every boxed entry — the count read **65 against a
+predicted 58**. The convention was confirmed by measurement before fixing, not from memory:
+`entqb-ear3-79` and `entqb-thr7-355/358/362/363/374` are the six existing boxed Grade Gain entries and
+**none of them carries a marker**. Stripped with `<scratchpad>\wrT8\fixbox.js`; the count then read 58.
+**Compute the expected delta FIRST and it does not matter which direction the error runs.**
+
+**⚠️ AND A SHELL-ENCODING TRAP INSIDE THAT FIX: A LITERAL-STRING MATCH ON THE MARKER, WRITTEN THROUGH
+A BASH HEREDOC, SILENTLY MATCHED NOTHING** — it reported "marker absent already" seven times on a file
+that demonstrably contained all seven. **The em-dash is the only non-ASCII character in the sentence.**
+Rewriting the script with the Write tool and matching by **regex stepping over the dash** fixed it.
+*Prefer a regex that steps over non-ASCII to a literal match whenever a script reaches disk via a shell.*
+
+**Grade Gain running total: 969 printed, 908 written, 61 folded.** Throat t1–t8 printed 40, 47, 61, 99,
+53, 32, 45, 66 = **443 printed / 420 written / 23 folded.**
+
+**Next: topic 9, Q444 onward, 56 promised.** Then t10 66, t11 20.
