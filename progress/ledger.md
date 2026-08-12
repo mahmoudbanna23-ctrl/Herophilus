@@ -6777,3 +6777,173 @@ and check `source` as well as `explanation`.**
 
 **Next: topic 7, "Trauma of the neck", book p.137 (PDF 146), Q333 onward, 44 promised. Boundary
 already confirmed; pp.146–148 already rendered at `<scratchpad>\thr6\`.**
+
+### §14z — Grade Gain, Chapter 3 (Throat), topic 7: "Trauma of the neck" — WRITTEN 2026-08-12
+
+**45 printed = 44 written + 1 folded.** Ids `entqb-thr7-333` … `entqb-thr7-376`, unbroken; **377 is the
+fold and does not exist as an entry.** Book pp.137–143 (PDF 146–152), read in the previous session and
+staged at `content\ent\qb-pages\gg-throat-ch7.array.js` + `.staged.js`.
+
+**Reconciliation: 45 printed − 1 folded = 44 written.** Corpus 1,516 → **1,560**. Grade Gain memberships
+847 → **892** (+44 origin, +1 `alsoIn`). Shared memberships **49 over 48 questions → 50 over 49**.
+
+**Chapters:** `ent-stridor` 34, `ent-vocal` 7 (Q336, 360, 361, 362, 363, 364, 367), `ent-pharanat` 2
+(Q333, 334), `ent-hoarse` 1 (Q366).
+
+**Boxes: 5 of 45 (~11 %)** — Q355, Q358, Q362, Q363, Q374. All five in written entries, so **no marker
+withdrawn**. **Predicted marker delta +39; measured +39 exactly** (corpus 1,027 → 1,066).
+
+**Neither boundary defect** — questions end on p.142, p.143 is answers only, keys do not run past it.
+Same as topic 6, unlike topic 5. The pattern still has no rule; keep rendering one page past the last
+answer page.
+
+#### The fold — the only one, and the lowest of any Throat topic
+
+**Q377 → `entep-throat-107` (p.1631, Q139), which gains `alsoIn:['gradegain']`.** Stem identical but for
+*"true about"* / *"true regarding"*; **options a, b and c verbatim**; option d differs only in wording —
+GG *"Medical management cannot be employed at any case of laryngeal trauma"* against endpoint
+*"Medical management can't be employed in any case with neck trauma"*. Same statement, same key index.
+**A typographical variation is not a replaced option.** Neither bank prints a box, so no marker moved.
+That entry was **already** recorded as reprinted in Exam Night Review at p.2956 (Q60) — so it is now a
+question printed **three times across two banks**, held once.
+
+**⚠️ The page number was read off the entry's own `source`, not written from memory** — the recorded
+count of getting that wrong from memory stands at **7 of 7**.
+
+#### ⚠️⚠️ NEW FAULT, AND THE MARKER COUNT IS THE ONLY THING THAT FOUND IT: SEVEN ENTRIES LOST THEIR MARKER AT WRITING TIME
+
+The prediction was +39 and the first measurement gave **+32**. Twelve entries carried no marker where
+only five should — **Q356, Q357, Q359, Q361, Q364, Q367 and Q373 had simply been written without the
+closing sentence.** Every one of them parsed, validated, cited correctly and rendered fine. **Nothing
+else in the toolchain would ever have seen it.**
+
+This is the **fourth** time the marker count has caught a real fault and the **first** time the fault was
+a scatter rather than a contiguous block — which matters, because a block is visible when scrolling and
+seven singletons across four drafting files are not. **Fixed by anchoring on each entry's own
+`{ id:'…',` and the following `,\n  objective:`**, so the insertion point is the closing quote of
+`explanation` and nothing else; script kept at `<scratchpad>\wrT7\fixmarkers.js` as the shape to reuse.
+
+**⚠️ AND A MEASUREMENT TRAP THAT COST TWO FALSE ALARMS IN ONE PASS — "no level figure is reproducible
+across definitions" fired twice in five minutes:**
+
+1. **The baseline was taken on `Q_ENT` and the check on `QUESTIONS`.** `QUESTIONS` folds in the 82 cases,
+   45 of which carry the marker, so the delta read **+77** against a predicted +39. Not a content fault —
+   two different populations.
+2. **A probe that omitted the trailing-asterisk strip under-counted by 239.** Older entries italicise the
+   marker (`*Written for this bank — …*`) and newer ones do not, so `endsWith(MARKER)` without
+   `.replace(/\*+$/,'')` silently drops every italicised one. It reported **743** where the same corpus
+   reads **1,066**.
+
+**Both signatures look like catastrophic content failures and neither was one. Fix the definition into a
+file and reuse it** — `<scratchpad>\wrT7\validate.js` now carries the canonical one and states why the
+strip is not optional.
+
+#### ⚠️ The dead-id fault fired again — but was caught PRE-splice for the first time
+
+**Eight backticked references to `entqb-thr7-377`** were written into d2 and d3 while drafting, because
+the staged file numbers it like every other question. Its own next-steps note had predicted exactly this.
+**Caught by grepping the drafted blocks before splicing** and rewritten to `entep-throat-107`, which is
+where the content now lives — so the post-splice dead-id check returned **0** rather than 8.
+
+**Seventh occurrence, and the first with no repair work after the splice.** Grep the drafted blocks for
+every folded number before splicing; it costs one command.
+
+#### Traps in the source, all handled
+
+- **⚠️ ONE HEADER VIGNETTE over Q355–Q359** — *"For questions 355, 356, 357, 358 and 359"* + a 35-year-old
+  with a comminuted thyroid fracture after an MVA. **Restated in full into all five**; Q356–Q359 are
+  unanswerable without it. *Fourth topic running with a header vignette: t3 had three, t5 two, t7 one.*
+- **⚠️⚠️ TWO SEPARATE BACK-REFERENCE CHAINS SIT ADJACENT ON ONE PAGE, AND MERGING THEM INVERTS AN ANSWER.**
+  `Q362 → Q361` is **unilateral** post-thyroidectomy palsy and keys *observe and voice therapy*;
+  `Q364 → Q363` is **bilateral** post-extubation palsy and keys *posterior cordectomy*. Attached to Q361
+  that operation would be **frankly wrong** — it widens the glottis at the cost of voice, in a patient
+  whose problem is already a weak voice and whose airway is safe. **Both cases restated into their own
+  question, and each entry states which chain it belongs to.**
+  **`L11) Vocal cord paralysis.pdf` settled it independently**: posterior cordotomy appears only under
+  *Management of Bil. abductor VC paralysis*.
+- Back-references total **7 of 45 = 16 %**, the lowest since Throat t1.
+- **No five-option questions and no figures anywhere in this topic** — all 45 are four-option, so no crop
+  work and assets stay at 56 files.
+
+#### Defects recorded beside their keys (2026-08-11 ruling) — seven
+
+1. **⚠️⚠️ Q367 KEYS "C = Bronchoscope" FOR AN OBSTRUCTING PAEDIATRIC AIRWAY, AND IT LOOKS LIKE A COPIED
+   LETTER.** Q363 poses the same problem in an adult — bilateral paramedian cords, stridor, stable — and
+   keys **C = "Perform a tracheostomy"** *with a printed box saying so*. Q367 reorders its options, so
+   **C now lands on "Bronchoscope"**: the letter matches its twin, the content does not. `L11` puts *care
+   of the airway* first. **The one defensible reading is that "bronchoscope" means rigid endoscopy under
+   GA, which is itself an airway** — recorded as such.
+2. **Q373 contradicts the bank's own Q372.** Both are stable-airway blunt neck trauma with an abnormal
+   voice, both offer mirror and flexible transnasal laryngoscopy; **Q372 keys flexible, Q373 keys the
+   mirror.** The reconciling clause is *"without evidence of facial affection"* — Q372's patient has
+   mandibular fractures and trismus so his mouth will not open, and Q373's will. **The bank never says
+   so.** Recorded in both.
+3. **Q352 offers the same complication twice** — *vocal cord paralysis* (a) and *recurrent laryngeal
+   nerve injury* (c) are one entity under two names. Key is *all of the above*, so nothing turns on it.
+   **Seventh instance of the same-answer-twice shape** (after t3 Q134's rat-tail pair).
+4. **Q365's vignette says "subglottic" and its key says "tracheal" stenosis.** Different levels strictly;
+   post-intubation stenosis spans both and **no option offers "subglottic"**, so the key is the only fit.
+5. **Q346 ranks cortisone above voice rest** as *the most important step in medical treatment of laryngeal
+   trauma*. Defensible only as the step that preserves the **airway**; voice rest is arguably the most
+   important for the **voice**. No slide covers it.
+6. **Q351 keys stainless steel wires** for fixing displaced laryngeal cartilage fractures where modern
+   practice largely favours **titanium miniplates** — option (b) — wherever the cartilage is ossified.
+7. **Q349 keys chest physiotherapy** as contraindicated in partial airway obstruction, where standard
+   paediatric teaching makes the **Heimlich manoeuvre** the answer (do not intervene while the cough is
+   effective). **Both are real** — chest physiotherapy can float a bronchial object into the trachea —
+   so both are recorded.
+   *(Also noted inside entries rather than listed here: Q347's "classic triad" is undefined by the bank
+   and the widely taught version substitutes decreased breath sounds for dyspnoea; Q362's box says
+   6–12 months where `L11` says 6; Q364 writes "cordectomy" where `L11` writes "cordotomy".)*
+
+#### ⚠️ Laryngeal trauma is the largest general-knowledge proportion of any Grade Gain topic so far
+
+**No cached ENT lecture covers it.** `L6) Stridor  and tracheostomy.pdf` names trauma **only as a cause of
+stridor** — its open/closed classification is real and grounded Q369 — and gives **tracheostomy in full**
+(indications, functions, levels, and the operative/early/late complication lists), which carried Q344,
+Q356 and Q368. But **the Schaefer-Fuhrman classification, the zones of the neck, the management algorithm,
+the intubation-trauma complications and the whole of oesophageal injury are on no slide.**
+
+What *did* ground the topic, and more than the staging expected:
+
+- **`L11) Vocal cord paralysis.pdf` carried the entire cord-palsy chain** — Q360, Q361, Q362, Q363, Q364,
+  Q367 — verbatim: the RLN as motor to all laryngeal muscles except cricothyroid, the
+  **paramedian-versus-cadaveric** discrimination, thyroidectomy first among iatrogenic causes, the
+  presentation table giving **"Stridor. Normal voice."** for bilateral abductor palsy, laryngeal EMG at
+  1–6 months, and both management ladders in full. **Read the slide before declaring a gap: this is the
+  seventh time that rule has paid.**
+- **`L12) Pediatric Laryngeal Lesions.pdf`** carried every foreign-body question (Q347, Q348, Q354, Q370,
+  Q371) — the four impaction sites with percentages, the acute and late phases, the premature cough
+  reflex, the expiratory film, and the 20 % → under-2 % mortality figures.
+- **`L6`'s phase-to-site rule** (inspiratory = supraglottic/glottic, biphasic = subglottic/tracheal,
+  expiratory = bronchial) and its **Poiseuille's law** slide did more work than any other two lines in the
+  cache — they decide Q348, Q354, Q363, Q365 and Q376 between them.
+
+#### Sweep — false positives worth recording, because two are now repeat offenders
+
+- **⚠️ A BARE ORDINAL OPTION LIST DEFEATS EVERY OPTION-BASED STAGE, AND IT NOW HAS FOUR VICTIMS.**
+  Q345, Q355, Q374 and Q375 all matched each other **and `entqb-thr4-159`, which grades an ADENOID**, at
+  **1.00 on stage F**; Q345 also reached **stage B**. *"Grade I / II / III / IV"* is an option list
+  containing no content at all, so B, C, D and F match on nothing. **Same class as the true/false pair at
+  Nose ch.8.** Only the stem decides, and only stage E reads it.
+- **The generic imaging menu produced its third false positive in three chapters** — Q357 vs
+  `entqb-thr6-315`, both keying CT off *X-ray / US / CT / MRI*. Different organ, different question.
+- **`entep-ear-126` (ear wax) captured its sixth and seventh questions** — Q369 and Q370, at 0.57 each,
+  on the generic *"which of the following"* stem alone.
+
+**Held after side-by-side comparison, not folded:** Q376 and Q365 against `entep-mfe5-9` (p.2377) — same
+key, but a full vignette against a bare stem with one option replaced. **Three questions, one fact.**
+
+#### Verified in a real `file://` boot, 2026-08-12
+
+**0 console errors**, QUESTIONS **1,560**, 4 module cards, **768 app CSS rules**, **all 3
+`max-aspect-ratio:5/4` blocks intact**, **56/56 question images loading**, **9/9 Clepsydra poses**.
+Validator: **0 bad module/chapter refs, 0 duplicate ids, 0 out-of-range answers, 0 missing
+`source`/`explanation`, 0 dead backticked ids over 4,878 references (1,315 distinct), 0 markers
+misplaced into `source`.** Option counts {2:5, 3:53, 4:1293, 5:127}.
+
+**Grade Gain running total: 903 printed / 843 written / 60 folded.** Throat t1–t7 = **377 printed /
+355 written / 22 folded.**
+
+**Next: topic 8, "Stridor & Tracheotomy", book p.144 (PDF 153), Q378 onward, 65 promised — the largest
+remaining topic. `L6` covers it in full, so expect the reverse of topic 7: heavy grounding, few gaps.**
