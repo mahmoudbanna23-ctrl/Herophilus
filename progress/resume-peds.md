@@ -135,14 +135,39 @@ Verified: PDF p.2 shows book pp. 2 and 3; PDF p.8 shows book pp. 14 and 15.
 | 16 | Growth & puberty | 121 | 61 | `growth-puberty` | |
 | 17 | Pediatric emergencies | 126 | 64 | `emergencies` | |
 | 18 | Accidents & poisoning | 135 | 68 | `accidents` | |
-| 19 | Liver disorders | 137 | 69 | `liver` | |
-| 20 | Malignant disease | **125 ⚠️** | — | `malignant` | ⚠️ see below |
-| II | Pediatric **surgery** end-of-round MCQs | 149 | 75 | — | **❌ OUT OF SCOPE** — user's ruling |
+| 19 | Liver disorders | 137–140 | 69–70 | `liver` | |
+| 20 | Malignant disease | **141–148 ✅ corrected** | 71–75 | `malignant` | ~22 printed |
+| II | Pediatric **surgery** end-of-round MCQs | 149 | 75 (right half) | — | **❌ OUT OF SCOPE** — user's ruling |
 | III | Pediatric **surgery** OSCE spots | 181 | 91 | — | **⏸ DEFERRED** — its own section, last |
 
-**⚠️ The contents page gives Malignant disease as p.125, which is out of sequence** — it is listed
-after Accidents (135) and Liver (137), and 125 sits inside Pediatric emergencies (126–134). Almost
-certainly a typo for ~145. **Unverified — establish it by reading when the run reaches p.137.**
+### ✅ The contents page's one page error is now resolved — verified 2026-08-12
+
+The contents page prints **Malignant disease as p.125**, which cannot be right: 125 sits inside
+Pediatric emergencies (126–134) and it is listed *after* Accidents (135) and Liver (137).
+
+**It is book p.141, not 125 — the contents page is wrong by 16.** Verified by rendering rather than
+inferred: PDF p.71's right half carries the full-width **"Malignant disease"** banner over book
+p.141 with the numbering restarting at 1, and PDF p.73 (book pp.144|145) is unambiguously that
+chapter — neuroblastoma, Wilms, ALL, Hodgkin, brain tumour, retinoblastoma. **Liver disorders
+therefore runs pp.137–140 only, four pages.**
+
+**This is the project's standing rule confirming itself once more: trust a contents page for *where*,
+never for *how many* — and check even the where.**
+
+### ⚠️ The stop line, verified
+
+**The medicine part is book pp.3–148 = PDF pp.2 through the LEFT half of PDF p.75.** The right half
+of PDF p.75 opens **"Pediatric surgery end-of-round MCQs"**, which the user ruled out of scope.
+Malignant disease's last question is **Q22 on book p.148**, immediately before that break.
+
+Worth knowing if Part II is ever revisited: **its opening pages are not MCQs at all** but a numbered
+fact list (*"Incidence of esophageal atresia… Most common type… VACTERL…"*), a different format
+again from Part III's OSCE spots.
+
+**⚠️ Malignant disease prints at least one diagram figure** — a labelled *"Looking left / Looking
+right"* eye-movement diagram on book p.144, in a yellow box beside its question. It is a **diagram,
+not a photograph**: transcribe it as markdown in the stem if the labels reproduce faithfully, and
+crop only if they do not.
 
 **⚠️ Parts II and III are pediatric SURGERY**, which no `MODULES` chapter cleanly holds, and Part III
 is OSCE spots rather than MCQs. **Both are a scope decision for the user** — raise them when the
