@@ -25,11 +25,30 @@ reconnaissance, not a topic**: ENT's Endpoint printed every question twice at a 
 
 ### Subagent board
 
-| Slot | Bank | Topic | State | Last manifest counts |
+| Slot | Bank | Topic | State | Counts |
 |---|---|---|---|---|
-| A | Grade Gain | t3 "Orbit", book pp.16–20, Q113 onward, 26 promised | launched 2026-08-12 | — |
-| B | House (`ophthalmology MCQ.pdf`) | recon of the first ten pages, then chapter 1 | launched 2026-08-12 | — |
-| C | Endpoint | — | not opened; needs a free slot | — |
+| A | Grade Gain | t3 "Orbit" | **✅ MERGED 2026-08-12** | 26 printed / 26 written / 0 folded / 4 boxed |
+| A | Grade Gain | t4 "Lacrimal System", book pp.21–24 (+1 past), 26 promised | ready to launch | — |
+| B | House (`ophthalmology MCQ.pdf`) | ch.1 — **DRAFT INCOMPLETE, HELD** | 56 staged, **only 22 drafted** | not spliced |
+| C | Endpoint | — | not opened | — |
+
+**⚠️⚠️ BOTH SUBAGENTS WERE KILLED MID-WORK BY THE SESSION USAGE LIMIT (resets 1 am Africa/Cairo), AND
+NEITHER RETURNED ITS MANIFEST.** That is the §11 stall condition: **drop to 1 live subagent** until a
+clean run. Everything below was recovered by reading what they left on disk, not from a manifest.
+
+**⚠️ A KILLED SUBAGENT'S OUTPUT CAN STILL BE COMPLETE — AND CAN STILL BE HALF-WRITTEN. CHECK, NEVER
+ASSUME EITHER WAY.** Slot A died at "validating the draft" and its 26 entries were **whole and
+correct**; slot B's last words were "starting Q1–Q10" and it had in fact drafted **22**. The status
+message is a stale snapshot; **the files are the truth.** Parse-check every `.array.js` and
+`.draft.js`, count the entries, and compare the id range against the staged range before believing
+anything.
+
+**⚠️ DO NOT SPLICE A PARTIAL CHAPTER.** House ch.1 has 56 questions staged verbatim and 22 drafted.
+Splicing 22 would leave `opmcq-c1-1…22` live while 23–56 do not exist, and any fold decided later
+across that boundary would be made against half a chapter. `house-c1.draft.js` is therefore **kept,
+not deleted** — resume the drafting from **Q23** and merge the chapter whole. **Its bank identity is
+also still unconfirmed:** the recon that was supposed to render page 1 and read the cover never
+reported, so **nothing may be labelled `house` until that cover is looked at.**
 
 ### The hub's two instruments — `<scratchpad>\ophtho\`
 
@@ -56,6 +75,48 @@ ledger says otherwise is the auditor, not the content.**
 
 **Baseline before any subagent splice, 2026-08-12: ophtho 112 entries, 104 markers, 0 bad entries,
 0 dead backticked ids, option counts all 4.**
+**After topic 3: 138 entries, 126 markers (+22 = 26 drafted − 4 boxed, predicted and observed),
+0 bad entries, 0 dead ids.**
+
+### Topic 3 "Orbit" — closed 2026-08-12, 26 printed / 26 written / **0 folded**
+
+**Both of this bank's recorded page defects fired on one topic.** A **question tail shares the first
+answer page** — Q138 is printed in the left column of book p.19 while the answer block starts in the
+right column of the same page — and the **answers run one page past the stated "Page As"**, with
+**eleven of twenty-six keys (Q128–Q138) on book p.20**. Stopping where the contents page says would
+have lost a question *and* eleven keys. **The contents count was exact for the third time running**
+(71, 41, 26); ENT's Grade Gain contents was wrong 17 times in 21, so this bank is behaving
+differently — worth noting, still never worth trusting.
+
+**4 printed boxes (Q116, Q127, Q128, Q133), 22 authored.** Box presence remains a property of the
+PAGE: topic 1 printed 0, topic 2 printed 8, topic 3 printed 4.
+
+**Zero folds, and here is why the zero is a zero.** The only corpus to sweep against was topics 1–2 —
+examination of the eye, and optics/refraction. Sixteen orbital terms were checked against it and
+**every one returned 0 hits**: proptosis, exophthalmos, cellulitis, exenteration, evisceration,
+enucleation, Hertel, mucormycosis, pseudotumour, dermoid, rhabdomyosarcoma, cavernous, lagophthalmos,
+retrobulbar, orbital. There is also **no second bank in the corpus yet**, so a cross-bank fold was
+not yet possible. Stages C and D did fire six times and **all six were menu recycling, not reprints**
+— the bank reuses one four-item menu (thyroid eye disease / orbital cellulitis / cavernous sinus
+thrombosis / lacrimal gland tumour) across Q117, Q118, Q122, Q135 and Q138, which asks five different
+questions off it. **Same options + same key + different stem is not a fold**, and `opqb-t3-117`
+("commonest cause of unilateral exophthalmos") against `opqb-t3-138` (a Graves vignette) is that rule
+exactly, at **F=0.91 with E=0.00**.
+
+**Two defects recorded per the ruling, keyed as printed and noted in the explanation:**
+- **`opqb-t3-127`** — options **B and D both describe enucleation**; D ("the optic nerve is cut and
+  the whole globe is removed as a whole") is how the operation is performed, and matches the bank's
+  own printed box. Keyed B.
+- **`opqb-t3-132`** — **chemosis is also expected** in retrobulbar haemorrhage, and **this bank says
+  so itself** at `opqb-t3-121`, which lists chemosis among its signs. Keyed C (ophthalmoplegia).
+
+**Two transcription repairs**, both recorded shapes: Q125 says "the **previous case**" and the deck is
+shuffled, so the vignette was carried into the stem; **Q126 prints no question sentence at all** — it
+ends at the vignette — so the sentence its four options answer was supplied.
+
+**All fifteen lecture filenames cited across the batch were checked against the directory and all
+fifteen resolve** — that check exists because a filename has been written wrongly from memory three
+times in this project.
 
 **Slot A's next topic when it merges:** t4 "Lacrimal System", book pp.21–24 (+1 past), 26 promised,
 ids `opqb-t4-` onward. **⚠️ Its grounding deck `L9) lacrimal system..txt` is a CamScanner watermark

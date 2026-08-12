@@ -1,0 +1,428 @@
+SOURCE: Semester 8\Opthalmo\Theoritical\PPT\L3,4) Clinical- Ocular examination.pdf
+SLIDES: 59
+
+⚠️ THIS DECK IS IMAGE-ONLY. `pdftotext` returns 59 characters (one form feed per slide) and
+NOTHING else. It was read visually on 2026-08-12 as fifteen 4-up contact sheets rendered at 60 dpi
+(800x450 px per slide) and transcribed below. Bracketed notes describe photographs that carry no
+text. Do not re-render it — read this file.
+
+Author on the title slide: DR. AMR ELHADY.
+
+================================================================================
+SLIDE 1 — title
+CLINICAL EXAMINATION
+BY DR. AMR ELHADY
+
+--------------------------------------------------------------------------------
+SLIDE 2 — The following should be performed:
+1. Examination of the eyelids, lacrimal, orbit, conjunctiva, cornea, sclera, iris and lens.
+2. Assessment of the anterior chamber depth and contents
+3. Assessment of pupillary reactions.
+4. Intraocular pressure (IOP) evaluation.
+5. Testing extraocular muscles actions..
+6. Fundus examination.
+
+--------------------------------------------------------------------------------
+SLIDE 3 — Tools required for ocular examination:
+1. Penlight
+2. Mydriatic eyedrops
+3. Topical anaesthetic eye drops
+4. Direct ophthalmoscope
+5. Fluorescein strips
+[photographs: tropicamide bottle, BENOX 0.4% (benoxinate) bottle, FUL-GLO fluorescein strip
+packet, a penlight, and a direct ophthalmoscope head]
+
+--------------------------------------------------------------------------------
+SLIDE 4 — Tools required for ocular examination: Slit Lamp
+- Used by ophthalmologist for examination the anterior segment of the eye
+- Can also be used in the assessment of the red reflex and fundus examination (biomicroscopy)
+
+--------------------------------------------------------------------------------
+SLIDE 5 — Eyelid: you may find
+[four clinical photographs, labelled]  Stye | Chalazion | Entropion | Ectropion
+
+--------------------------------------------------------------------------------
+SLIDE 6 — Eyelid: you may find
+[four clinical photographs, labelled]  Ptosis | Lagophthalmos | BCC | Xanthelasma
+
+--------------------------------------------------------------------------------
+SLIDE 7 — Lacrimal : you may find
+[three clinical photographs, labelled]  Dacryoadenitis | Dacryocystitis | +ve Regurge
+
+--------------------------------------------------------------------------------
+SLIDE 8 — Orbit : Proptosis
+[two photographs: a lateral view of marked unilateral proptosis, and a "worm's-eye"/
+submental view demonstrating asymmetry of globe projection]
+
+--------------------------------------------------------------------------------
+SLIDE 9 — Conjunctiva: Eversion of the upper eyelid
+- It is sometimes required to search for conjunctival foreign bodies or other conjunctival signs.
+- The patient is asked to look down, and the examiner grasps the eyelashes of the upper eyelid
+  between the thumb and the index finger.
+- A cotton-tipped applicator is used to press gently downward over the superior border of the
+  tarsal plate as the eyelid margin is pulled upward by pulling the lashes.
+[diagram: "Twist cotton-tipped swab upward" / "Look downward"]
+
+--------------------------------------------------------------------------------
+SLIDE 10 — Conjunctiva: Eversion of the upper eyelid
+- With the penlight the examiner inspects the exposed conjunctival surface of the upper eyelid
+  for a foreign body or other abnormality.
+- A cotton-tipped applicator soaked in topical anaesthetic can be used to remove a foreign body.
+- To return the eyelid to its normal position, the examiner releases the eyelid margin, and the
+  patient is instructed to look up or, simply, blink.
+
+--------------------------------------------------------------------------------
+SLIDE 11 — Conjunctiva: you may find
+[three photographs, labelled]  Papillae | Follicles | Giant papillae
+
+--------------------------------------------------------------------------------
+SLIDE 12 — Conjunctiva: you may find
+[three photographs, labelled]  Pterygium | Scarring T4 | PTCs
+(T4 = trachomatous scarring grade; PTCs = pale trachomatous concretions / conjunctival
+concretions as printed)
+
+--------------------------------------------------------------------------------
+SLIDE 13 — Conjunctiva: Redness
+[three photographs, labelled]
+  Conjunctival injection | Ciliary injection | Subconjunctival hemorrhage
+
+--------------------------------------------------------------------------------
+SLIDE 14 — Cornea: you may find
+[three photographs, labelled]  FB | Corneal erosion | Corneal erosion stained with fluorescein
+
+--------------------------------------------------------------------------------
+SLIDE 15 — Cornea: you may find
+[three photographs, labelled]  Opacity (Scarring) | Infective keratitis | Dendritic ulcer
+
+--------------------------------------------------------------------------------
+SLIDE 16 — Cornea: Staining with fluorescein
+- Fluorescein: a yellow dye that gives a green colour when illuminated with the cobalt blue
+  filter emitted light in the ophthalmoscope or the slit lamp.
+- Corneal staining with fluorescein is useful in diagnosing defects of the corneal epithelium.
+- Fluorescein is applied in the form of a sterile filter-paper strip, which is moistened with
+  topical anaesthetic and then touched to the palpebral conjunctiva.
+- A few blinks will spread the fluorescein over the cornea.
+- Areas of bright-green staining denote absent or diseased epithelium
+
+--------------------------------------------------------------------------------
+SLIDE 17 — Sclera : you may find
+[two photographs, labelled]  Episcleritis | Scleritis
+
+--------------------------------------------------------------------------------
+SLIDE 18 — Iris: you may find
+[three photographs, labelled]  Iridodialysis | Posterior synechiae | Rubeosis iridis
+
+--------------------------------------------------------------------------------
+SLIDE 19 — Lens
+You can examine lens using
+- Focal illumination
+- Slit lamp
+- Direct Ophthalmoscope
+
+--------------------------------------------------------------------------------
+SLIDE 20 — Lens: Pupil colour
+[three photographs, labelled]
+  Black (Newly born & Aphakia)
+  Grayish in old age — Nuclear sclerosis (bright RR) / IMSC (Dim RR)
+  Leukocoria (Mature cataract)
+(RR = red reflex; IMSC = immature senile cataract)
+
+--------------------------------------------------------------------------------
+SLIDE 21 — Lens: you may find
+[four photographs, labelled]  IMSC | MSC | Hypermature shrunken type | Morgagnian cataract
+
+--------------------------------------------------------------------------------
+SLIDE 22 — Lens opacities appear as dark shadows against Red Reflex
+[three photographs of lens opacities silhouetted against the red reflex]
+
+--------------------------------------------------------------------------------
+SLIDE 23 — Lens may be Subluxated
+[two photographs showing a displaced lens edge crossing the pupil]
+
+--------------------------------------------------------------------------------
+SLIDE 24 — Assessment of the depth of the anterior chamber
+1. Shine a light from the temporal side of the head across the front of the eye parallel to the
+   plane of the iris.
+2. Look at the nasal aspect of the iris. If two-thirds or more of the nasal iris is in shadow,
+   the chamber is probably shallow and the angle narrow.
+[diagram: "Light source" arrow across a Deep iris (evenly lit) versus a Shallow iris (nasal half
+in shadow), with cross-sectional drawings beneath]
+
+--------------------------------------------------------------------------------
+SLIDE 25 — Assessment of the depth of the anterior chamber
+[three slit-lamp photographs, labelled]  Shallow | Normal | Deep
+
+--------------------------------------------------------------------------------
+SLIDE 26 — Assessment of the depth of the anterior chamber   ⚠️ TABLE
+
+| Shallow AC                    | Deep AC      |
+|-------------------------------|--------------|
+| Hypermetropia                 | High myopia  |
+| Angle closure glaucoma        | Aphakia      |
+| Intumescent cataract          | Buphthalmos  |
+| Perforated corneal ulcer      |              |
+| Leakage from surgical wound   |              |
+
+--------------------------------------------------------------------------------
+SLIDE 27 — Anterior chamber content
+[three photographs, labelled]
+  Blood (Hyphema) | Pus (Hypopyon) | Cells & Flare (Uveitis)
+
+--------------------------------------------------------------------------------
+SLIDE 28 — Assessment of Pupils
+- Size and shape of the pupil
+- Assessment of pupillary reactions.
+
+--------------------------------------------------------------------------------
+SLIDE 29 — Size and shape of the pupil
+- The first step in pupillary examination is to observe the resting state of the pupils in room
+  light.
+  - Normally, both pupils are round and equal in diameter (Isocoria)
+  - Difference in size between both pupils termed anisocoria
+[diagram labelled Isocoria / Anisocoria]
+
+--------------------------------------------------------------------------------
+SLIDE 30 — Size and shape of the pupil   ⚠️ HIGH YIELD
+- Anisocoria greater than 1 mm, should be assessed both in very bright and very dim lighting.
+  - Anisocoria that is MORE IN DIM LIGHTING may indicate dysfunction of the dilating sympathetic
+    nervous system (Horner syndrome).
+  - Anisocoria that is MORE PRONOUNCED IN BRIGHT LIGHTING signifies abnormal constriction and may
+    indicate parasympathetic dysfunction (third nerve palsy) or pupillary trauma.
+
+--------------------------------------------------------------------------------
+SLIDE 31 — Size and shape of the pupil
+- You may notice abnormal irregular pupillary shape
+- E.g., festooned pupil due to posterior synechiae in uveitis
+[photograph of a festooned/irregular pupil]
+
+--------------------------------------------------------------------------------
+SLIDE 32 — Assessment of Pupillary light reactions
+- Dim room light
+- Ask Patient to Fixate at distant object
+- Bright light is shone directly into each pupil slightly temporal to the visual axis
+- Perform Direct/ Consensual test
+- Perform Swinging flashlight test (RAPD)
+[diagram of the pupillary light reflex arc, labelled: Optic nerve, Third cranial nerve, Ciliary
+ganglion, Light source]
+
+--------------------------------------------------------------------------------
+SLIDE 33 — Assessment of Pupillary light reactions
+Left Direct and Consensual light reflex
+[two photographs: "Direct pupillary reflex" and "Consensual reflex – observe contralateral pupil"]
+
+--------------------------------------------------------------------------------
+SLIDE 34 — Assessment of Pupillary light reactions: Swinging-Flash Light Test
+[table-style diagram, two columns: "Normal" and "Relative afferent pupillary defect".
+Three rows show the light being swung between the eyes; under Normal the pupil "Constricts",
+under RAPD the pupil "Dilates"]
+
+--------------------------------------------------------------------------------
+SLIDE 35 — Intraocular pressure (IOP) Assessment
+[cartoon of a figure inflating two eyeballs with a pump]
+
+--------------------------------------------------------------------------------
+SLIDE 36 — Intraocular pressure (IOP) measurement   ⚠️ HIGH YIELD
+- Normal range 10-21 mmHg (mean = 16 mmHg)
+- Methods of measurement :
+  - Digitally
+    - Rough estimation
+    - Comparison between both eyes
+  - Tonometry:
+    - Applanation tonometry
+    - Indentation tonometry
+
+--------------------------------------------------------------------------------
+SLIDE 37 — Intraocular pressure (IOP) measurement — Digitally
+- Ask patient to look down
+- Two index finger placed above the level of tarsus
+- The middle, ring and little fingers must be resting on the patient's forehead (for one hand)
+  and temple (for the other hand).
+- Test tension as in fluctuation
+[diagram of applied forces F1 and F2 with displacements X1 and X2]
+
+--------------------------------------------------------------------------------
+SLIDE 38 — Intraocular pressure (IOP) measurement
+- Applanation Tonometry
+  e.g., Goldman applanation tonometer
+[photograph of a hand-held (Perkins-type) applanation tonometer]
+
+--------------------------------------------------------------------------------
+SLIDE 39 — Intraocular pressure (IOP) measurement
+- Applanation Tonometry — e.g., Goldman applanation tonometer
+[photographs: the blue-light applanation mires, and a slit-lamp-mounted Goldmann tonometer
+labelled Bi-prism, Mobile feeder arm, Control weight and housing, Adjustment knob]
+
+--------------------------------------------------------------------------------
+SLIDE 40 — Intraocular pressure (IOP) measurement
+- Indentation tonometry (Schiotz)
+  Indentation of the cornea by known weight
+[diagram of the plunger indenting the cornea, plus two photographs of a Schiotz tonometer in use
+and its scale]
+
+--------------------------------------------------------------------------------
+SLIDE 41 — title slide
+Extraocular muscle testing (ocular alignment and ocular movements)
+
+--------------------------------------------------------------------------------
+SLIDE 42 — Extraocular muscles (EOM)
+- 4 Rectus muscles:
+  - Superior rectus
+  - Inferior rectus
+  - Medial rectus
+  - Lateral rectus
+- 2 Oblique muscles:
+  - Superior oblique
+  - Inferior oblique
+[anatomical diagram, anterior view, right eye, labelling Superior rectus, Trochlea, Superior
+oblique, Lateral rectus, Medial rectus, Inferior oblique, Inferior rectus]
+
+--------------------------------------------------------------------------------
+SLIDE 43 — Action and Nerve supply of EOM   ⚠️⚠️ HIGH YIELD TABLE
+
+| EOM              | Nerve supply | Action                              |
+|------------------|--------------|-------------------------------------|
+| Medial Rectus    | III          | adduction                           |
+| Lateral Rectus   | VI           | abduction                           |
+| Superior Rectus  | III          | elevation, (Mainly in abduction)    |
+| Inferior Rectus  | III          | depression (Mainly in abduction)    |
+| Superior Oblique | IV           | depression (Mainly in adduction)    |
+| Inferior Oblique | III          | elevation (Mainly in adduction)     |
+
+--------------------------------------------------------------------------------
+SLIDE 44 — 6 cardinal positions of gaze
+[diagram, right eye and left eye, naming the muscle tested in each of six directions:
+Right eye — Superior rectus (up & out), Inferior oblique (up & in), Lateral rectus (out),
+Medial rectus (in), Inferior rectus (down & out), Superior oblique (down & in).
+Left eye — mirror image.]
+
+--------------------------------------------------------------------------------
+SLIDE 45 — 1. Test for ocular alignment in primary position using corneal light reflex
+Corneal light reflex
+- Normally, the light is reflected on each cornea symmetrically, relative to the pupil and visual
+  axis of each eye.
+- In a deviating eye, the light reflection will be eccentric and, in a direction, OPPOSITE to
+  that of the deviation.
+- The amount of deviation can be estimated
+[three photographs of children showing symmetric and eccentric reflexes]
+
+--------------------------------------------------------------------------------
+SLIDE 46 — 2. Performs ductions for each eye alone in six cardinal directions of gaze
+Duction movements:
+- Test each eye separately (Uniocular eye movement)
+- Test each muscle in its primary field of action.
+- Detect if any limitation in the direction of action of certain muscle
+[diagram "MUSCLE TESTING: CARDINAL POSITIONS" with UP & OUT / UP & IN / OUT / IN / DOWN & OUT /
+DOWN & IN and the muscle for each]
+
+--------------------------------------------------------------------------------
+SLIDE 47 — 3. Performs versions with both eyes open in all 8 directions of gaze
+Version movements
+- Testing binocular eye movement
+- Detect: conjugate gaze palsy
+- Detect : Overaction or Underaction of the muscles
+[nine-position gaze photograph montage]
+
+--------------------------------------------------------------------------------
+SLIDE 48 — title slide
+Fundus Examination & Red Reflex
+[photograph of a direct ophthalmoscope]
+
+--------------------------------------------------------------------------------
+SLIDE 49 — Red Reflex
+- Light reflected off the fundus of the patient normally produces a red reflex when viewed
+  through the ophthalmoscope.
+- Normal red reflex is not interrupted by shadows, and is evidence that the cornea, anterior
+  chamber, lens, and vitreous are clear and are not a significant source for decreased vision.
+[photograph of symmetric red reflexes in a child]
+
+--------------------------------------------------------------------------------
+SLIDE 50 — Abnormal forms of the reflex
+- Opacities in the media
+  (e.g., corneal scar, cataract, vitreous haemorrhage)
+  appear as black shadows and can be best seen when the pupil has been dilated.
+
+--------------------------------------------------------------------------------
+SLIDE 51 — Abnormal forms of the reflex   ⚠️⚠️ HIGH YIELD
+- Absent Reflex:
+  - Mature cataract
+  - Dense vitreous hemorrhage (Black reflex)
+- Grey Reflex: Retinal detachment
+
+--------------------------------------------------------------------------------
+SLIDE 52 — Abnormal forms of the reflex   ⚠️⚠️ HIGH YIELD
+- Yellow/ white Reflex:
+  - Retinoblastoma
+  - Pus in the vitreous (endophthalmitis)
+[photograph of unilateral leukocoria beside a normal red reflex]
+
+--------------------------------------------------------------------------------
+SLIDE 53 — Direct Ophthalmoscopy (Fundoscopy)
+- It is a test that allows a health professional to see inside the eye using a direct
+  ophthalmoscope.
+- Pharmacologic dilation of the patient's pupils greatly facilitates ophthalmoscopy
+[diagram contrasting the portion of retina seen through an UNDILATED PUPIL with that seen
+through a DILATED PUPIL]
+
+--------------------------------------------------------------------------------
+SLIDE 54 — Direct Ophthalmoscope
+[labelled photographs of the instrument: Viewing window, Lens wheel, Lens power scale, Light
+adjustment collar, Power base and handle, Mirror, Colour adjustment button, Aperture adjustment
+wheel]
+
+--------------------------------------------------------------------------------
+SLIDE 55 — Direct Ophthalmoscopy
+1. Have the patient comfortably seated. With the room lights dimmed, instruct the patient to look
+   at a point on the wall straight ahead, trying not to move the eyes.
+2. Set the aperture wheel to select the large, round, white light and set the focusing wheel to
+   zero.
+3. Begin to look at the right eye about 1 foot from the patient. Use your right eye with the
+   ophthalmoscope in your right hand. When you look straight down the patient's visual axis at
+   the pupil, you will see the red reflex.
+
+--------------------------------------------------------------------------------
+SLIDE 56 — Direct Ophthalmoscopy
+4. Place your free hand on the patient's forehead to aid you to keep yourself steady.
+5. Slowly come close to the patient at an angle of about 15° temporal to the patient's visual
+   axis. Try to keep the pupil in view.
+
+--------------------------------------------------------------------------------
+SLIDE 57 — Direct Ophthalmoscopy
+6. Starts to use dial to get focus. When a retinal vessel comes into view, follow it to the optic
+   disc which lies NASAL to the center of the retina. (Consider the joining of blood vessels as
+   arrows that point to the optic disc)
+7. Examine the optic disc, retinal blood vessels, and macula.
+8. Repeat for the patient's left eye, holding the ophthalmoscope in your left hand and viewing
+   with your left eye.
+
+--------------------------------------------------------------------------------
+SLIDE 58 — Fundus picture
+[labelled fundus photograph: Optic cup, Optic disk, Retinal artery, Retinal vein, Macula, Fovea]
+
+--------------------------------------------------------------------------------
+SLIDE 59 — Thank you
+
+================================================================================
+⚠️ NOT COVERED ANYWHERE IN THIS DECK — verified by reading all 59 slides
+================================================================================
+The following points are NOT stated anywhere in this deck. Where a question turns on one of
+them, look in another deck first (`L1,2)…`, `L21) Optic Nerve`, `L22) Pupil and Visual pathway`,
+`L5) Eyelid disease`) and treat it as a genuine gap only after that.
+
+- THE GREY LINE, the line of Marx, the mucocutaneous junction or Arlt's line. The lid margin is
+  never dissected; slides 5-6 show lid PATHOLOGY only.
+- The layers of the eyelid (skin / muscle / tarsus / palpebral conjunctiva) in order.
+- Any measurement of the OPTIC DISC — no diameter in mm, no cup-to-disc ratio figure, no
+  disc colour or margin description. Slide 58 labels the parts and stops.
+- The normal retinal VEIN-TO-ARTERY RATIO.
+- Visual acuity testing, the Snellen chart, the pinhole, CF/HM/PL/NPL, legal blindness, visual
+  FIELD testing, confrontation, the Amsler grid, colour-vision testing and the Ishihara plates.
+  ⚠️ All of these are in `L1,2) Ocular Anatomy, Symptomatology & Basic Eye Examination` instead —
+  this deck begins AFTER visual acuity and deliberately does not repeat it.
+- Contraindications to pupil dilatation (shallow AC, head trauma), and any statement that contact
+  lenses must be removed before fluorescein. Slide 16 gives the fluorescein method only.
+- Monocular versus binocular diplopia and their causes.
+- Any definition of version / vergence / duction beyond "uniocular" and "binocular" on slides
+  46-47; the word "vergence" never appears.
+- Concomitant versus incomitant squint, the cover test and the cover-uncover test.
+- Photopsia, floaters, metamorphopsia and the rest of the symptom vocabulary (in `L1,2)…`).
+- Which conditions are vision-threatening emergencies (in `L1,2)…`).

@@ -1,0 +1,554 @@
+L25) Trauma I.pdf — "Ocular Trauma", Department of Ophthalmology, Alexandria University
+======================================================================================
+68 slides. READ VISUALLY 2026-08-12 and cached here.
+
+⚠️ THIS DECK IS IMAGE-ONLY. `pdftotext` returns 68 bytes for 68 pages — nothing at
+all. It was rendered at 110 dpi into 17 four-up contact sheets and read as images.
+Do not try to re-extract it with pdftotext.
+
+⚠️ THIS DECK WAS NOT IN THE CACHE UNTIL NOW. The ophthalmology module brief lists 25
+cached decks and notes that "L26) Trauma II implies a Trauma I that is not cached" —
+it exists in `Semester 8\Opthalmo\Theoritical\PPT\L25) Trauma I.pdf` and is cached
+here. It is the ONLY deck in the module that covers ORBITAL FLOOR (BLOW-OUT)
+FRACTURE, which the L10 orbit deck explicitly lists as not covered.
+
+⚠️ Its first ~14 slides on chemical injuries OVERLAP `L26) Trauma II.txt` almost
+exactly. Where the two differ, L25 is the fuller version (it prints the grading
+table with prognosis and the first-aid sequence in detail).
+
+Transcribed close to verbatim, including the lecturer's own spelling and typos
+("mor damage", "pastic", "Hyphema").
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 1 — Title
+─────────────────────────────────────────────────────────────────────
+Ocular Trauma
+DEPARTMENT OF OPHTHALMOLOGY
+ALEXANDRIA UNIVERSITY
+
+
+═════════════════════════════════════════════════════════════════════
+PART 1 — CHEMICAL INJURIES  (slides 2–14)
+═════════════════════════════════════════════════════════════════════
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 2 — Chemical Injuries
+─────────────────────────────────────────────────────────────────────
+ ➤ They are the MOST URGENT ophthalmic emergency.   [printed in red]
+ ➤ They require emergency management by the first person who sees the affected
+   patient.
+ ➤ Alkali burns are TWICE AS COMMON as acid burns, since alkalis are more widely
+   used both at home and in industry.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 3 — Chemical Injuries: severity
+─────────────────────────────────────────────────────────────────────
+The severity of a chemical injury is related to:
+ ➤ The properties of the chemical
+ ➤ The area of affected ocular surface
+ ➤ Duration of exposure
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 4 — Chemical Injuries: alkalis vs acids
+─────────────────────────────────────────────────────────────────────
+ • ALKALIS cause mor [sic] damage as they tend to PENETRATE more deeply than
+   acids and continue penetration for WEEKS.
+ • On the other hand, ACIDS COAGULATE SURFACE PROTEINS, forming a PROTECTIVE
+   BARRIER against further penetration.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 5 — Chemical Injuries: clinical picture (1)
+─────────────────────────────────────────────────────────────────────
+ ➤ Damage to the conjunctival and corneal epithelium.
+ ➤ Occlusion of the limbal vessels (LIMBAL ISCHAEMIA) and loss of LIMBAL STEM
+   CELLS may lead to persistent corneal epithelial defects with sterile corneal
+   ulceration and perforation.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 6 — Chemical Injuries: clinical picture (2)
+─────────────────────────────────────────────────────────────────────
+ ➤ Deep penetration into the cornea results in corneal stromal opacification due
+   to denaturation of the corneal collagen bundles.
+ ➤ Later, dry eye, symblepharon, cicatricial entropion, corneal scarring and
+   vascularization can develop.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 7 — Grading of chemical injuries of the eye  ★ TABLE
+─────────────────────────────────────────────────────────────────────
+| Grade | Limbal ischemia | Corneal involvement                                  | Prognosis |
+|-------|-----------------|-----------------------------------------------------|-----------|
+| I     | No              | Cornea clear, only epithelial damage                | Good      |
+| II    | < 1/3           | Corneal haze, visible iris details                  | Good      |
+| III   | 1/3 – 1/2       | Total epithelial loss, stromal haze, obscured iris details | Guarded |
+| IV    | > 1/2           | Opaque cornea, with obscured iris and pupil         | Poor      |
+
+(NOTE: `L26) Trauma II.txt` prints the SAME grading with the prognosis wording
+"excellent / good / guarded / very poor". The four grades and the limbal-ischaemia
+fractions are identical in both decks.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 8 — Grading of chemical injuries (photographs)
+─────────────────────────────────────────────────────────────────────
+Grade I — only epithelial loss
+Grade II — corneal haze, visible iris details, limbal ischemia <1/3
+Grade III — obscured iris details, limbal ischemia 1/3 – 1/2
+Grade IV — opaque cornea, obscured iris & pupil, limbal ischemia >1/2
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 9 — Chemical Injuries: First aid treatment (1)
+─────────────────────────────────────────────────────────────────────
+ ➤ Should be STARTED IMMEDIATELY by the health care provider and an
+   ophthalmologist should be called.
+ ➤ COPIOUS IRRIGATION (with saline 2 L for 15–30 min) is very important to:
+   • To restore the pH in the conjunctival sac back to normal as much as possible
+     rapidly.
+   • Decrease the duration of contact with the chemical.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 10 — Chemical Injuries: First aid treatment (2)
+─────────────────────────────────────────────────────────────────────
+ ➤ EVERSION OF THE UPPER EYELID: any retained particulate matter trapped in the
+   conjunctival fornices is identified and removed by a sterile cotton swab.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 11 — Chemical Injuries: medical treatment
+─────────────────────────────────────────────────────────────────────
+Following emergency measures, medical treatment is started in the form of:
+ ➤ Topical cycloplegia.
+ ➤ Topical antibiotics.
+ ➤ Eye patching
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 12 — Chemical Injuries: referral
+─────────────────────────────────────────────────────────────────────
+Referral to ophthalmology emergencies for further management by:
+ ➤ Topical steroids
+ ➤ Systemic ascorbic acid
+ ➤ Systemic DOXYCYCLINE as collagenase inhibitors.
+ ➤ Elevated IOP: Oral acetazolamide or topical medications
+ ➤ Prevention of SYMBLEPHARON formation by lysis of newly forming adhesions by a
+   sterile GLASS ROD.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 13 — Chemical Injuries: surgical intervention
+─────────────────────────────────────────────────────────────────────
+Surgical intervention may include:
+ ➤ Limbal stem cell transplantation
+ ➤ Amniotic membrane grafting
+ ➤ Conjunctival grafting
+ ➤ Correction of cicatrising lid deformities e.g., cicatricial entropion.
+ ➤ Keratoplasty for opaque corneas
+ ➤ Keratoprosthesis (in severe cases with blindness and total limbal stem cell
+   deficiency)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 14 — Chemical injuries (figures)
+─────────────────────────────────────────────────────────────────────
+Limbal stem cell transplantation (before/after diagram) · Keratoplasty ·
+Keratoprosthesis
+
+
+═════════════════════════════════════════════════════════════════════
+PART 2 — MECHANICAL TRAUMA  (slides 15 onward)
+═════════════════════════════════════════════════════════════════════
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 15/16 — Ocular FB: conjunctiva / cornea
+─────────────────────────────────────────────────────────────────────
+(Photographs only — lid eversion to reveal a subtarsal foreign body, and a
+corneal foreign body seen at the slit lamp. No prose.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 17 — Blunt trauma: Ecchymosis (black eye)
+─────────────────────────────────────────────────────────────────────
+(Title slide with photograph — periorbital ecchymosis.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 18 — Blunt trauma: Surgical emphysema
+─────────────────────────────────────────────────────────────────────
+(Title slide with four-panel figure — clinical lid swelling A/B and axial +
+coronal CT C/D showing orbital air.)
+
+★ THIS IS THE DECK'S ONLY NAMED SLIDE ON ORBITAL/SURGICAL EMPHYSEMA. It is
+listed under BLUNT TRAUMA and appears immediately BEFORE the blow-out fracture
+slides, i.e. the deck treats emphysema as the presenting sign of the fracture.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 19 — Blunt trauma: Blow-out fracture of the orbital floor
+─────────────────────────────────────────────────────────────────────
+(Title slide, with a clinical photograph of limited elevation and a coronal CT of
+the orbits.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 20 — Orbital floor fracture: presentation  ★ CORE
+─────────────────────────────────────────────────────────────────────
+ ➤ History of trauma (FIST, TENNIS BALL)
+ ➤ ECCHYMOSIS, OEDEMA, and ± SUBCUTANEOUS EMPHYSEMA.
+ ➤ Subconjunctival hemorrhage
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 21 — Orbital floor fracture: Diplopia  ★ CORE
+─────────────────────────────────────────────────────────────────────
+ ➤ Diplopia:
+   • Diplopia occurs in BOTH UPGAZE AND DOWNGAZE
+   • RESTRICTIVE ocular motility due to MECHANICAL ENTRAPMENT of the INFERIOR
+     OBLIQUE or INFERIOR RECTUS muscles within the fracture, or adjacent
+     connective tissue and fat.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 22 — Orbital floor fracture: other signs  ★ CORE
+─────────────────────────────────────────────────────────────────────
+ ➤ INFRAORBITAL NERVE ANAESTHESIA:
+   Involving the lower lid, cheek, side of nose, upper lip, upper teeth and gums
+   if the fracture involves the infraorbital canal
+ ➤ ENOPHTHALMOS (SEVERE CASES)
+ ➤ ± Ocular damage
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 23 — Orbital floor fracture: CT  ★ CORE
+─────────────────────────────────────────────────────────────────────
+ ➤ CT scan of the orbit (CORONAL SECTION)
+   • Fracture of the orbital floor ± other orbital wall
+   • Tissue entrapment within the fracture  ( TEAR DROP SIGN )
+   • ± Surgical emphysema
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 24 — Orbital floor fracture: Management  ★ CORE
+─────────────────────────────────────────────────────────────────────
+ ➤ The patient is instructed to REFRAIN FROM BLOWING THE NOSE and, preferably
+   coughing or sneezing)
+ ➤ Systemic antibiotics
+ ➤ Surgical intervention (when required)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 25 — Blunt trauma: Hyphema — grading
+─────────────────────────────────────────────────────────────────────
+ • Grade I     < 1/3
+ • Grade II    1/3 – 1/2
+ • Grade III   > 1/2
+ • Grade IV    Total
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 26 — Hyphema (figure + note)
+─────────────────────────────────────────────────────────────────────
+"Due to decreased oxygen the initially red blood turns very dark (impaired
+aqueous circulation)"  — i.e. the eight-ball hyphaema.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 27 — Hyphema: Complications
+─────────────────────────────────────────────────────────────────────
+ ➤ RE-BLEEDING common in the FIRST 5 DAYS
+ ➤ Uncontrolled high IOP which can cause:
+   • Optic nerve damage
+   • BLOOD STAINING OF THE CORNEA
+   • CRAO
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 28 — Hyphema: Treatment
+─────────────────────────────────────────────────────────────────────
+ ➤ Hospitalization: NOT EVERY CASE (children, sickle cell disease, uncontrolled
+   high IOP, coagulation or bleeding disorders)
+ ➤ Bed rest (45 degree)
+ ➤ Cycloplegics (atropine)
+ ➤ Topical steroid
+ ➤ Antiglaucoma if increased IOP
+ ➤ Surgical evacuation:
+   • Persistent elevated IOP
+   • Total hyphema > 5 days
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 29 — Blunt trauma: Iridodialysis
+─────────────────────────────────────────────────────────────────────
+Iridodialysis — (UNIOCULAR DIPLOPIA)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 30/31 — Blunt trauma: Vossious ring
+─────────────────────────────────────────────────────────────────────
+(Title slides with photographs — pigment ring on the anterior lens capsule.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 32/33 — Blunt trauma: Rosette-shaped cataract
+─────────────────────────────────────────────────────────────────────
+(Title slides with photographs, including the red-reflex view.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 34 — Blunt trauma: Subluxation
+─────────────────────────────────────────────────────────────────────
+Subluxation — (UNIOCULAR DIPLOPIA)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 35/36 — Blunt trauma: Commotio retinae (Berlin's edema)
+─────────────────────────────────────────────────────────────────────
+Fundus photograph labelled: CHERRY-RED SPOT · RETINAL EDEMA
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 37/38 — Blunt trauma: Retinal breaks ± Retinal detachment
+─────────────────────────────────────────────────────────────────────
+(Photographs labelled RETINAL TEAR and RETINAL DETACHMENT.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 39 — Blunt trauma: Choroidal rupture
+─────────────────────────────────────────────────────────────────────
+(Fundus photograph — concentric crescent temporal to the disc.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 40 — Eyelid lacerations: skin wounds
+─────────────────────────────────────────────────────────────────────
+ ➤ Skin wounds
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 41 — Eyelid lacerations: lid margin
+─────────────────────────────────────────────────────────────────────
+ ➤ Laceration involving LID MARGIN [cut lid]
+(Figure — direct closure of a marginal eyelid laceration: placement of initial
+margin suture, partial-thickness lamellar sutures in the tarsus, margin sutures
+tied through skin sutures.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 42 — Eyelid lacerations: lacrimal canaliculi
+─────────────────────────────────────────────────────────────────────
+ ➤ Laceration involving LACRIMAL CANALICULI
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 43 — Trauma to cornea and sclera: rupture globe
+─────────────────────────────────────────────────────────────────────
+ • RUPTURE GLOBE (blunt object)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 44 — Trauma to cornea and sclera: laceration
+─────────────────────────────────────────────────────────────────────
+ • Partial or full thickness laceration (SHARP OBJECT)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 45 — Trauma to cornea and sclera: open globe
+─────────────────────────────────────────────────────────────────────
+ • OPEN-GLOBE INJURY: (Rupture globe or full thickness laceration)
+   → REPAIRED WITH SUTURES
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 46/47 — Intraocular FB
+─────────────────────────────────────────────────────────────────────
+ ➤ Iron  (SIDEROSIS)
+ ➤ Copper (CHALCOSIS)
+ ➤ Inert (stone, glass, pastic [sic], wood, ….)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 48 — Management of patient with Ocular trauma (section title)
+─────────────────────────────────────────────────────────────────────
+Three steps, repeated as a running contents slide:
+ 1. Ruling out open-globe injury
+ 2. Focused History relating to Ocular Trauma
+ 3. Focused Exam relevant to Ocular Trauma
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 49/50 — Ruling out open-globe injury  ★ CORE
+─────────────────────────────────────────────────────────────────────
+ ➤ MOST DEVASTATING of all eye injuries
+ ➤ RULE OUT BEFORE detailed history and focused exam
+ ➤ Suspicious history: e.g. HAMMERING, …. etc.
+ ➤ Signs of suspected open globe may include:
+   • PEAKED PUPIL
+   • Shallow or deep anterior chamber
+   • BULLOUS SUBCONJUNCTIVAL HEMORRHAGE
+   • A positive SEIDEL TEST will help detect leaking aqueous
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 51 — If you suspect an open globe or globe is ruptured  ★ CORE
+─────────────────────────────────────────────────────────────────────
+ ➤ Place EYE SHIELD & CALL for OPHTHALMOLOGIST immediately
+ ➤ DO NOT PLACE A PATCH as pressure can extrude intraocular contents
+ ➤ DO NOT CHECK EYE PRESSURE
+ ➤ No further eye exam or eye drops or ointment on an open globe
+ ➤ Instruct the patient to withhold food and fluids (NPO) preparing for GA
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 52 — If you suspect IOFB  ★ CORE
+─────────────────────────────────────────────────────────────────────
+ ➤ The presence of an intraocular foreign body (IOFB) suggests globe penetration.
+ ➤ Investigation may include:
+   • Plain film x-rays of the head
+   • CT SCAN
+     – Determine the location and presence of a metallic IOFB.
+     – Show the shape and integrity of the traumatized globe.
+   • DO NOT DO MRI SCAN IF A METALLIC IOFB IS SUSPECTED.
+   • Ultrasound may be useful.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 53/54 — Intraocular FB (figures)
+─────────────────────────────────────────────────────────────────────
+"Metallic IOFB ??? → CT ✓ · MRI ✗" with axial CTs; fundus photo and B-scan
+ultrasound of an IOFB.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 56 — Focused History relating to Ocular Trauma
+─────────────────────────────────────────────────────────────────────
+ ➤ Mechanism of Injury — Blunt · Sharp · Chemical
+ ➤ Timing of Injury — "Exactly when did the trauma occur?"
+ ➤ Associated Symptoms — Vision Loss · Diplopia · Bleeding · Flashes / Floaters
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 57 — Focused History: Past Ocular History
+─────────────────────────────────────────────────────────────────────
+ ➤ Poor vision since birth
+ ➤ Recent eye surgery (Cataract / Refractive)
+ ➤ Previous history of eye trauma
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 58 — Focused Examination — STEP 1
+─────────────────────────────────────────────────────────────────────
+ ➤ INSPECTION (eyelids/eyebrows, conjunctiva, cornea, sclera, AC, iris, pupils)
+   • Periocular ecchymosis
+   • Eyelid lacerations
+   • Integrity of cornea, sclera, & conjunctiva
+   • Blood in anterior chamber
+   • "Peaked Pupil"
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 59 — Focused Examination — STEP 2
+─────────────────────────────────────────────────────────────────────
+ ➤ Visual Acuity
+ ➤ Visual Fields
+ ➤ Pupillary Response
+ ➤ Extraocular Movements (EOMs)  — (ENTRAPPED MUSCLES?)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 60 — Focused Examination — STEP 3
+─────────────────────────────────────────────────────────────────────
+ ➤ OPHTHALMOSCOPE EXAMINATION
+   • ?? Retinal Detachment
+   • ?? Vitreous Hemorrhage
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 61 — Focused Examination — STEP 4
+─────────────────────────────────────────────────────────────────────
+ ➤ SEIDEL TESTING
+   • Assess for corneal break
+   • Apply fluorescein to suspected area
+     – Normally appears "green" under cobalt blue light
+     – Dye turns "clear" when break present as aqueous dilutes fluorescein
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDES 62–67 — Clinical problems (the lecturer's own MCQs, no keys printed)
+─────────────────────────────────────────────────────────────────────
+CLINICAL PROBLEM 1 — Your neighbor, a 43-year-old woman, is cleaning her swimming
+pool. While she is pouring some concentrated algaecide into the pool, a large
+amount of this solution splashes into her right eye. When you hear her screams,
+you come to her aid less than 30 seconds after the injury.
+Which of the following should you do first?
+ A. Bundle her into your car and speed off for the nearest emergency center.
+ B. Run back to your study to look up the specific antidote for algaecide
+ C. Carefully examine her eye for evidence of ocular hyperemia.
+ D. Copious irrigation with water from the nearest source instructing her to hold
+    her eyes open to flush out chemical
+ [NO KEY PRINTED. Slide 9 answers it: irrigation is started immediately.]
+
+CLINICAL PROBLEM 2 — 25-year-old man complaining of decreased vision and pain in
+his right eye after being involved in a fist fight. There are edema and ecchymosis
+of the eyelids. His visual acuity is OD 6/12 and OS 6/6, pupils are round and
+reactive, normal IOP and no restriction of ocular motility. On examination of the
+anterior segment, you notice a diffuse haze in the anterior chamber and early
+layering of blood inferiorly.
+Regarding your diagnosis; which of the following would be the most appropriate
+treatment?
+ A. Bed rest in 45 degree and close follow up.
+ B. Assurance of patient, and no need for follow up.
+ C. Hospitalization and giving patient IV mannitol.
+ D. Surgical evacuation as soon as possible.
+ [NO KEY PRINTED. Slide 28 answers it: hyphaema with normal IOP in an adult with
+ no risk factor does not need hospitalisation — bed rest at 45° and follow-up.]
+
+CLINICAL PROBLEM 3 — 28-year-old male patient has pain, tearing and blurred vision
+in his right eye. Earlier in afternoon, while he had been working on his car with a
+hammer and chisel, he noticed that something flying into his right eye. Examination
+revealed that visual acuity is 6/60 in the right eye. There is conjunctival
+hyperemia. The pupil seems to be peaked and pointing to the 7 o'clock position of
+the limbus. There is a small, dark, slightly elevated body at the 7 o'clock position
+of the limbus. The left eye is normal.
+Which of the following would be the appropriate initial management for this
+situation?
+ A. Irrigation of the limbal foreign body
+ B. Application of a protective shield
+ C. Removal of the limbal foreign body using a cotton-tipped applicator
+ D. Removal of the limbal foreign body using forceps
+ [NO KEY PRINTED. Slides 49–51 answer it: hammering + peaked pupil = suspected open
+ globe → shield and call the ophthalmologist; do not manipulate.]
+
+SLIDE 68 — "Thank you"
+
+
+═════════════════════════════════════════════════════════════════════
+NOT COVERED ANYWHERE IN THIS DECK
+═════════════════════════════════════════════════════════════════════
+Recorded so a gap can be settled by proving a negative rather than by memory.
+
+ • RETROBULBAR HAEMORRHAGE / ORBITAL COMPARTMENT SYNDROME as a named entity —
+   its signs, its IOP rise, and lateral canthotomy/cantholysis. The deck names
+   ecchymosis, surgical emphysema and orbital floor fracture but never the
+   retrobulbar bleed. `L10) orbit.txt` mentions "retrobulbar hge" only once, in a
+   list of causes of proptosis. NEITHER DECK DESCRIBES IT.
+ • The WHITE-EYED BLOW-OUT FRACTURE of childhood, and the urgency rule that a
+   child with a trapdoor fracture needs surgery within 24–48 h. The deck says only
+   "surgical intervention (when required)".
+ • The TIMING of blow-out fracture repair (the 2-week window) and the indications
+   for it.
+ • MEDIAL WALL (lamina papyracea) fracture as a separate entity — the deck says
+   "orbital floor ± other orbital wall" and no more.
+ • ORBITAL ROOF and apex fractures, and traumatic optic neuropathy.
+ • SYMPATHETIC OPHTHALMIA — not mentioned anywhere despite the open-globe section.
+ • Tetanus prophylaxis in ocular trauma.
+ • Any drug DOSE anywhere in the deck.
+ • The ocular trauma score, or any prognostic scoring system.
+ • CHANDLER'S CLASSIFICATION (also absent from L10).
+ • The FORCED DUCTION TEST by name — the deck asks "(Entrapped muscles?)" under
+   EOMs on slide 59 but never names the test. (Also cut off in L10 slide 10.)
