@@ -106,9 +106,9 @@ questions 17–22.
 | 01 | Neurological Sheet | 1–3 | 6–8 | 22 | **22** | ✅ read, transcribed, written |
 | 02 | Localization | 4–6 | 9–11 | 12 | **12** (Q23–34) | ✅ read, transcribed, written |
 | 03 | Ischemic Cerebrovascular Stroke | 7–13 | 12–18 | 20 | **20** (Q35–54) | ✅ read, transcribed, written |
-| 04 | Hemorrhagic Cerebrovascular Stroke | 14 | 19 | 7 | — | not read |
-| 05 | Cranial Nerves Disorders | 14–21 | 19–26 | 27 | — | not read |
-| 06 | Hemiplegia & Paraplegia | 22–26 | 27–31 | 30 | — | not read |
+| 04 | Hemorrhagic Cerebrovascular Stroke | 14 | 19 | 7 | **7** (Q55–61) | ✅ written |
+| 05 | Cranial Nerves Disorders | **17–21** | **22–26** | 27 | **27** (Q62–88) | ✅ written — ⚠️ starts p.17, NOT p.14 |
+| 06 | Hemiplegia & Paraplegia | 22–26 | 27–31 | 30 | **30** (Q89–118) | ✅ written (subagent A) |
 | 07 | Headache | 27–30 | 32–35 | 22 | — | not read |
 | 08 | Epilepsy | 31–36 | 36–41 | 36 | — | not read |
 | 09 | Coma | 37–40 | 42–45 | 22 | — | not read |
@@ -125,7 +125,7 @@ pages, so a topic boundary can fall mid-page.
 
 | # | Topic | Book pp. | PDF pp. | Promised | Printed | Status |
 |---|---|---|---|---|---|---|
-| 15 | Symptomatology & Myths | 65–67 | 70–72 | 18 | — | not read |
+| 15 | Symptomatology & Myths | 65–67 | 70–72 | 18 | **18** (Q1–18) | ✅ written (subagent B) |
 | 16 | Anxiety & Related Disorders | 68–71 | 73–76 | 21 | — | not read |
 | 17 | Mood Disorders | 72–75 | 77–80 | 22 | — | not read |
 | 18 | Somatic Symptoms & Related Disorders | 76–78 | 81–83 | 11 | — | not read |
