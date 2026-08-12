@@ -7078,3 +7078,128 @@ Rewriting the script with the Write tool and matching by **regex stepping over t
 53, 32, 45, 66 = **443 printed / 420 written / 23 folded.**
 
 **Next: topic 9, Q444 onward, 56 promised.** Then t10 66, t11 20.
+
+
+### §14bb — Grade Gain, Throat topic 9 "Phoniatrics" — CLOSED 2026-08-12
+
+**Book pp.153–158 (PDF 162–167); answers book pp.159–160 (PDF 168–169). 57 printed, 53 written,
+4 folded. Contents page promised 56 — over by one, the twentieth time the map's count has run
+short and the twenty-first time its page range has been right.**
+
+`Q_ENT` 1,543 → **1,596**. Marker delta **+50**, exactly as predicted. Chapters: `ent-phon` 26,
+`ent-hoarse` 22, `ent-paedlar` 4, `ent-neck` 1.
+
+**Verified in a real `file://` boot, 2026-08-12: 0 console errors, `QUESTIONS` 1,901, ENT 1,678
+(1,596 MCQs + 82 cases), 0 bad chapter refs, 0 dead backticked ids, 0 markers misplaced into
+`source`, 4 module cards, 770 CSS rules, all 3 `max-aspect-ratio:5/4` blocks.**
+
+#### ⚠️⚠️ The boundary defect fired for the SECOND TOPIC RUNNING and HARDER than at t8
+
+The map gives the answer page as 159. **The keys for Q477–Q500 — TWENTY-FOUR OF FIFTY-SEVEN — are
+on p.160.** Rendering one page past the last answer page is the only reason they were read. At t8
+the same defect hid 28 of 66; here it hid 24 of 57. **It is now the rule rather than the
+exception, and the instruction stands unchanged: render one page past the last answer page, every
+time.**
+
+The *other* half of the ch.5 double defect did **not** fire — p.158 ends with Q500 and p.159 opens
+with the Answers banner, so no question tail shared the answer page. **Both halves remain
+unpredictable in both directions.**
+
+#### The four folds — all cross-bank, all into endpoint
+
+| GG | folds into | mechanism |
+|---|---|---|
+| Q485 | `entep-throat-69` (p.1535) | Stem reworded; **four options identical in identical order**, same key. Nothing dropped, added or replaced |
+| Q489 | `entep-nose-49` (p.999) | Endpoint prints **five** options, GG four — GG **drops** "Dysphonia" and adds a vignette. A dropped distractor is a reprint |
+| Q498 | `entep-throat-54` (p.1503) | Stem word-for-word identical; options differ only in capitalisation and "Speech fillers"/"speech filler" |
+| Q499 | `entep-throat-55` (p.1505) | Stem word-for-word identical; the same four options **reordered**; same key |
+
+Each target gained `alsoIn:['gradegain']` and the Grade Gain citation folded into its `source`.
+**No marker moved:** `-69` keeps its authored marker because Grade Gain prints no box for Q485
+either, and `-49`, `-54`, `-55` were already sourced from endpoint's own boxes. **The predicted
+authored-to-sourced conversion did not occur — checking for it is still the right habit, and this
+is the first topic where the check came back negative.**
+
+**⚠️ Q499 IS THE FIRST FOLD IN MANY TOPICS TO REACH STAGE A — and the lesson is what it says about
+the other three.** Q485 and Q489, equally real folds, reached **neither A nor B**: a reworded stem
+defeats A and a dropped option defeats B. **The rankings found all four; the strict stages found
+two.** E and F remain the instrument.
+
+#### ⚠️⚠️ SIXTH MARKER FAULT — and the SECOND in the "spurious marker on a boxed entry" direction
+
+Predicted 50, measured 51. **Q459 prints an explanation box and carried the authored marker
+anyway.** Same shape as t8's seven, one entry instead of seven, and found the same way: **by
+computing the expected delta before counting.** Nothing else could have seen it — the entry
+parsed, cited, quoted its box verbatim and rendered correctly.
+
+**A boxed entry takes NO marker.** Fixed by writing the repair script with the Write tool and
+matching **by regex over the em-dash**, per the t8 finding that a literal-string match on that
+sentence written through a bash heredoc silently matches nothing.
+
+#### ⚠️ The pre-splice dead-id grep earned its place for the SECOND TOPIC RUNNING
+
+**Four backticked references to folded numbers** — three to `entqb-thr9-485` and one to
+`entqb-thr9-498` — caught in the drafted blocks **before** splicing and rewritten to the fold
+targets, so the post-splice check returned **0** instead of 4. Eighth occurrence of the fault,
+second consecutive catch with no repair work afterwards. One of the three even read
+`` `entqb-thr9-485` (folded into `entep-throat-69`) `` — **annotating a dead id does not stop it
+being read as a live reference.**
+
+#### Defects recorded, keys held as printed (the 2026-08-11 ruling)
+
+1. **⚠️⚠️ Q455 "bambo nodules" keys TUBERCULOSIS.** The entity is **bamboo nodes**, whose defining
+   association is **autoimmune disease** — classically SLE, then rheumatoid arthritis and
+   Sjögren's — **and both are offered as distractors.** The most serious defect in the topic.
+2. **Q451** asks what is not typical of "congenital laryngeal stenosis" and keys *a web that
+   partially occludes the glottis* — **but a glottic web IS a congenital laryngeal stenosis**, and
+   the other three options are the endoscopic findings of **laryngomalacia**. The key works only
+   if the stem means *congenital laryngeal STRIDOR*, the older name for laryngomalacia.
+3. **⚠️ Q496 keys SURGICAL TRIMMING for ventricular dysphonia while the bank's own Q494 keys VOICE
+   THERAPY for hyperfunctional dysphonia** — two conditions `L8` files in the same **functional**
+   column, with opposite first treatments. **Neither `L2` nor `L8` prints any treatment for
+   ventricular dysphonia at all**, and *"speech therapy"* is offered as option (a), so the bank
+   chose surgery deliberately. Key held; the vignette's *"secondary compensatory hypertrophy"* is
+   what makes it defensible, and the discrepancy is stated in both entries.
+4. **⚠️ Q479 offers the SAME ANSWER TWICE** — *"difficulty in producing language"* and *"normal
+   comprehension with impaired expression"* both name **expressive aphasia**. The key (receptive)
+   is unaffected, but the question really offers three options. **Second appearance of the
+   same-answer-twice shape** (t3 Q134 was the first).
+5. **Spellings corrected and recorded:** *"Sulcus glottidaus"* (Q449, Q452, Q463) for sulcus
+   glottidis; *"Haemophiles influenzae"* (Q454); *"Reineck's Edema"* (Q491); *"asthetosis"* on
+   `L8`'s own slide against *"athetosis"* in Q469.
+
+**✅ Three internal consistency checks PASSED, which is worth recording because they usually
+fail:** Q449 against Q463 on the sex distribution of sulcus; Q476 (*cleft palate causes
+hyponasality* keyed FALSE) against Q497 (*rhinolalia aperta* keyed for a cleft palate); and Q470
+(extra-pyramidal → monotonous) against Q500 (pyramidal → slurred).
+
+#### Two gaps answered from general knowledge rather than declared
+
+`L8` **defines stuttering in detail and never states a cause** — so **Q473's genetic theory** is
+answered from outside knowledge and tagged: family clustering, twin concordance, GNPTAB/GNPTG/NAGPA,
+the 4:1 male ratio. **The deck's own DSM-5 quote settles the psychological theory from inside the
+material**, though: *"the disturbance **causes** anxiety about speaking"* — the arrow points from
+the stutter to the anxiety. Likewise `L8` covers **learning disability** as a category and never
+names **dyslexia**, so **Q478** is answered and tagged.
+
+#### ⚠️ The false positives were the same two shapes as ever, and one set a record
+
+**Five questions in one topic** — Q444, Q445, Q469, Q474, Q476 — topped out against
+`entep-nose-64` at E 0.50–0.67 for one reason: the shared boilerplate *"All of the following are
+true about X except"*. **The largest cluster of that artefact yet.** And `entep-ear-126` (*"Which
+of the following is not true about ear wax?"*) captured Q449 at E 0.67 — its **eighth** capture,
+making it the corpus's single most prolific false positive. **Read both on sight as noise.**
+
+#### ⚠️ ENVIRONMENT — a new, reusable trap that cost five failed runs
+
+**Headless Chrome (and Edge) fail with `Multiple targets are not supported in headless mode` when
+`--user-data-dir` points inside a path containing a DOUBLE DASH.** The session scratchpad is
+`…\Temp\claude\D--claude-os-Herophilus\…`, and that `--` is enough: **every invocation died before
+loading anything, with `--dump-dom` and with `--screenshot`, in both browsers, in both old and new
+headless.** The identical command against `C:\Windows\Temp\cudx` worked first time.
+
+**⚠️ THE FAILURE LOOKS LIKE A BROKEN BROWSER AND IS A BROKEN PATH.** Copy the instrumented `app\`
+copy **and** the user-data-dir to a double-dash-free directory — `%LOCALAPPDATA%\Temp\hb9` was used
+here — and the boot check runs normally. The preview pane cannot substitute: it renders a file
+outside the project as a static snapshot and `javascript_tool` returns *"No site is open in this
+tab."*
