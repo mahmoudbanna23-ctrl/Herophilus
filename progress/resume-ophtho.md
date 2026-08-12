@@ -9,17 +9,41 @@
 
 **✅ TOPICS 1 AND 2 CLOSED — 112 printed, 112 written, 0 folded, validated in a full run.**
 
-**Next action: render PDF pp.23–28 (book pp.16–21) and work topic 3, "Orbit", Q113 onward, 26
-promised.** Questions are book pp.16–18, answers p.19 — **render book p.20 (PDF 27) too, one page
-past the last answer page. That rule already saved 14 of 41 keys on topic 2 and is not optional.**
-Ids `opqb-t3-113` onward. **PDF p.23 is already rendered and read** — it holds Q113–Q122 and confirms
-the topic boundary.
+**⚠️⚠️ THIS CHAT IS NOW A HUB, 2026-08-12 at the user's decision.** Protocol: `START-HERE.md` §11.
+**I am the SOLE WRITER** of `questions.ophtho.js`, `cases.ophtho.js`, `theory.ophtho.js`, this file
+and every git commit. Background Opus subagents draft ONE topic each into
+`content\ophtho\qb-pages\*.array.js` + `*.draft.js` and **never touch a data file, a resume file or
+git.** I run the six-stage sweep, every fold decision, the splice, the §7 validation, the marker
+delta and the commit — **one batch at a time**, because batch B's sweep must run against a corpus
+that already contains batch A or cross-bank folds are missed.
 
-**⚠️ Topic 3's grounding deck is a problem to solve first.** `L10) orbit.txt` is cached but holds
-only **686 characters** — it is an extraction failure, not a short lecture. Orbit questions will need
-it read **visually as four-up contact sheets** before they can be grounded. Q113–Q122 already read
-include proptosis causes, evisceration vs enucleation vs exenteration, lagophthalmos, pulsating
-exophthalmos and retrobulbar haemorrhage — none of which the 686 cached characters can support.
+**Cap 2 live subagents** (all four module chats share one usage pool). **Scale to 3 only after a
+full day with no rate-limit stalls; drop to 1 after any stall.** Slot C, when it opens, is
+**Endpoint — `Opthalmology endpoint.pdf`, 2,442 pages — and its FIRST invocation is structure
+reconnaissance, not a topic**: ENT's Endpoint printed every question twice at a rate that ran
+42–100 % with no trend, and nothing about that is guessable from the outside.
+
+### Subagent board
+
+| Slot | Bank | Topic | State | Last manifest counts |
+|---|---|---|---|---|
+| A | Grade Gain | t3 "Orbit", book pp.16–20, Q113 onward, 26 promised | launched 2026-08-12 | — |
+| B | House (`ophthalmology MCQ.pdf`) | recon of the first ten pages, then chapter 1 | launched 2026-08-12 | — |
+| C | Endpoint | — | not opened; needs a free slot | — |
+
+**Slot A's next topic when it merges:** t4 "Lacrimal System", book pp.21–24 (+1 past), 26 promised,
+ids `opqb-t4-` onward. **⚠️ Its grounding deck `L9) lacrimal system..txt` is a CamScanner watermark
+(33 slides, no text) and must be read as 4-up contact sheets first.**
+
+**✅ `L10) orbit` IS NOW CACHED IN FULL** — all 48 slides read visually as twelve 4-up contact sheets
+at 110 dpi and written to `content\ophtho\lectures\L10) orbit.txt`, replacing the 686-byte watermark.
+It ends with an explicit **"NOT COVERED ANYWHERE IN THIS DECK"** list, which is what lets a gap be
+settled by proving a negative instead of from memory. Ten slides **overflow their text box in the
+original PowerPoint** and lose their last line or two — those are marked `[text cut off in the
+original]`; the words are genuinely not on the slide, so a question turning on one of them is a real
+gap, not a transcription failure. The most load-bearing casualty: slide 10 announces *"Tests used to
+differentiate a restrictive from a neurological motility defect:"* and **the list itself is cut off**,
+so the forced duction test is never named anywhere in the deck.
 
 ---
 
@@ -181,6 +205,49 @@ another chat that may be mid-work — the cure is far more dangerous than a cosm
    say so.
 2. **The Bash tool is Bash, not PowerShell.** `@'…'@` here-strings are PowerShell syntax; in Bash
    they pass the `@` through as literal text. Use a real heredoc, or `-F` with a file.
+
+---
+
+## ⚠️⚠️ THE LECTURE CACHE IS 21 DECKS, NOT 25 — FOUR CACHED FILES CONTAIN ONLY A WATERMARK
+
+**Verified 2026-08-12 by reading them, not by trusting their size.** Four `.txt` files in
+`content\ophtho\lectures\` look cached and are **empty of content**: `pdftotext` extracted nothing
+but the **"CamScanner"** watermark stamped on every slide of a phone-scanned deck.
+
+| File | Slides | What the cache actually holds |
+|---|---|---|
+| `L10) orbit.txt` | **48** | the word *CamScanner*, 48 times. Nothing else |
+| `L9) lacrimal system..txt` | **33** | *CamScanner* × 33 |
+| `L24) Ocular tumors..txt` | **78** | *CamScanner* × 77 |
+| `L21) Optic Nerve.txt` | **20** | 22 blank lines, a title and one stray line |
+
+**⚠️ A NON-ZERO FILE SIZE IS NOT EVIDENCE OF A CACHE.** `L10) orbit.txt` is 686 bytes — big enough to
+look real in a directory listing, and 100 % worthless. **Check chars-per-slide, and open anything
+under ~200 chars/slide.** The healthy decks run 500–3,000 chars per slide.
+
+### So EIGHT of the 29 ophthalmology decks need visual reading — **one now done, SEVEN left**
+
+Four that were never cached (image-only, listed below) **plus** these four whose cache is a watermark:
+
+| Deck | Slides | Chapters it grounds |
+|---|---|---|
+| `L3,4) Clinical- Ocular examination` | — | `op-intro`, `op-va` |
+| `L13,14) Uvea & Sclera` | — | `op-uvea`, `op-sclera` |
+| `L25) Trauma I` | — | `op-trauma` |
+| `L27,28) Problems of External Appearance` | — | `op-appear` |
+| ~~`L10) orbit`~~ | 48 | **✅ DONE 2026-08-12** — read as twelve 4-up sheets, full transcription written over the watermark, with a "NOT COVERED" list at the end |
+| **`L9) lacrimal system.`** | 33 | `op-lac` — topic 4 |
+| **`L21) Optic Nerve`** | 20 | `op-neuro` |
+| **`L24) Ocular tumors.`** | 78 | `op-onc` |
+
+**Read each one as FOUR-UP CONTACT SHEETS at 110 dpi** — the ENT trick: 12 reads instead of 48, with
+headings and bullets still legible at ~760 px per slide. **Read a deck when its topic comes up, cache
+the transcription into `content\ophtho\lectures\`, and overwrite the watermark file** so the next
+reader is not misled the way I was.
+
+**This does NOT mean a lecture is missing.** All 29 decks exist in `Semester 8\Opthalmo\Theoritical\
+PPT\`. There is nothing to interview the user about — the ENT precedent of a genuinely absent deck
+(`L28`) does not repeat here. It is purely an extraction problem, and the fix is reading.
 
 ---
 

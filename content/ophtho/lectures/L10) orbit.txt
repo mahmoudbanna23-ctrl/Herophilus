@@ -1,51 +1,684 @@
-SOURCE: Semester 8\Opthalmo\Theoritical\PPT\L10) orbit.pdf
+L10) orbit.pdf — "The Orbit", Ihab M. Osman
+==========================================
+48 slides. READ VISUALLY 2026-08-12 and cached here.
 
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-
+⚠️ THIS DECK IS IMAGE-ONLY. `pdftotext` returns 686 bytes — the CamScanner
+watermark and nothing else. It was rendered at 110 dpi into 12 four-up contact
+sheets and read as images. Do not try to re-extract it with pdftotext; it will
+look like a short lecture and is not.
+
+⚠️ Several slides OVERFLOW their text box in the original PowerPoint — the last
+line or two is cut off by the slide edge. Those are marked [text cut off in the
+original] below. Nothing was skipped here; the words simply are not on the slide.
+
+Transcribed close to verbatim. Slide headings kept as printed, including the
+lecturer's own spelling ("exophthalmoeter", "Oular", "Crouzen", "Eviscerarion",
+"Excentration", "enophthamous").
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 1 — Title
+─────────────────────────────────────────────────────────────────────
+The Orbit
+Ihab M. Osman
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 2 — Bones of the orbit (labelled diagram, no prose)
+─────────────────────────────────────────────────────────────────────
+Labels printed on the figure:
+  Optic foramen · Supraorbital notch · Trochlear notch
+  Frontal · Ethmoid · Anterior lacrimal crest · Lacrimal · Palatine
+  Lesser and greater wings of sphenoid
+  Superior and inferior orbital fissures
+  Zygomatic · Maxillary · Infraorbital groove · Infraorbital foramen
+  Zygomatic–maxillary suture
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 3 — Contents of the fissures and the optic canal
+─────────────────────────────────────────────────────────────────────
+Superior orbital Fissure
+  Between greater and lesser wings of sphenoid
+  Cranial III (oculomotor superior and inferior Branches)
+  Cranial IV (trochlear)
+  Cranial V (lacrimal, frontal and nasociliary)
+  Cranial VI (abducent)
+  Superior ophthalmic vein
+
+Inferior orbital Fissure
+  Between greater wing of sphenoid and maxilla
+  Maxillary nerve
+  Zygomatic nerve
+  Inferior ophthalmic vien [sic]
+
+Optic canal
+  optic nerve
+  Ophthalmic artery
+
+(The accompanying figure labels the common tendinous ring and the branches
+passing inside vs outside it: lacrimal, frontal and trochlear pass OUTSIDE the
+ring; superior and inferior branches of III, nasociliary and VI pass INSIDE it.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 4 — General Clinical picture of orbital diseases
+─────────────────────────────────────────────────────────────────────
+Symptoms:
+ • Eyelid and conjunctival swelling, redness, watering,
+ • Pain (sometimes on, or exacerbated by, eye movement),
+ • Double vision and blurring
+ • Pulsing sensation or audible bruit.
+
+Signs:
+ • Soft tissue involvement — Eyelid and periocular oedema, skin discoloration,
+   ptosis, [text cut off in the original]
+
+Figure 4.4 — Chemosis and injection in orbital disease
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 5 — Change in the ocular prominence: 1) Enophthalmos
+─────────────────────────────────────────────────────────────────────
+ • Globe is being retracted backwards
+ • Most common: fracture of orbital floor with orbital fat prolapse,
+   radiotherapy, sclerosing [lesion — partly obscured by the photo]
+ • Pseudoenophthalmos: [obscured by the photo] … phthisis bulbi,
+   … contralateral proptosis or pseudoproptosis
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 6 — Change in the ocular prominence: 2) Proptosis — causes
+─────────────────────────────────────────────────────────────────────
+Forward protrusion of the globe
+
+Causes:
+ ➤ The globe being pushed forward (retrobulbar hge, tumor etc,…)
+ ➤ The bony orbit is shallow (premature closure of sutures e.g. Crouzen
+   syndrome)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 7 — Proptosis: Direction of proptosis
+─────────────────────────────────────────────────────────────────────
+(Figures only — an axial proptosis and an eccentric/dystopic one with MRI.
+No prose on the slide.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 8 — Proptosis: Measurement of proptosis
+─────────────────────────────────────────────────────────────────────
+ • Visualization from above
+ • Hertel exophthalmoeter [sic]
+ • Readings greater than 20 mm are indicative of proptosis and a difference of
+   2–3 mm or more between the two eyes is suspicious regardless of the
+   [absolute value — text cut off in the original]
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 9 — Pseudoptosis
+─────────────────────────────────────────────────────────────────────
+ • Lid retraction
+ • High myopia
+ • Buphthalmos
+ • Facial asymmetry
+ • Contralateral enophthamous [sic — enophthalmos]
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 10 — Ophthalmoplegia
+─────────────────────────────────────────────────────────────────────
+ • Defective ocular motility
+
+Causes:
+ ➤ An orbital mass (mechanical effect)
+ ➤ Restrictive myopathy (e.g. thyroid eye disease)
+ ➤ Orbital myositis
+ ➤ Tethering of muscles or tissue after orbital wall fracture
+ ➤ Oular [sic] motor nerve involvement (cavernous sinus, orbital fissures or
+   posterior orbit (e.g. carotid–cavernous fistula, Tolosa–Hunt syndrome,
+   malignant lacrimal gland tumours).
+
+Tests used to differentiate a restrictive from a neurological motility defect:
+[the list itself is cut off in the original]
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 11 — Ophthalmoplegia (figure)
+─────────────────────────────────────────────────────────────────────
+Fig. 4.7 — Restrictive myopathy and bilateral lid retraction and proptosis in
+thyroid eye disease — nine positions of gaze
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 12 — Dynamic properties
+─────────────────────────────────────────────────────────────────────
+ • Increasing venous pressure by dependent head position, the Valsalva
+   manoeuvre or jugular compression may induce or exacerbate proptosis in
+   patients with orbital venous anomalies or infants with orbital capillary
+   haemangioma.
+ • Pulsation is caused either by an arteriovenous communication or a defect in
+   the orbital roof.
+ • A bruit is a sign found with a larger carotid–cavernous fistula. It is best
+   heard with the bell of the stethoscope and is lessened or abolished by
+   gently compressing the ipsilateral carotid artery in the neck.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 13 — Fundus picture (figure)
+─────────────────────────────────────────────────────────────────────
+Fig. 4.8 — Fundus changes in orbital disease.
+ (A) Disc swelling
+ (B) optic atrophy with choroidal folds
+ (C) opticociliary vessels in the presence of optic atrophy
+ (D) choroidal folds
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 14 — Investigations
+─────────────────────────────────────────────────────────────────────
+ • Computed tomography (CT) is useful for depicting bony structures and the
+   location and size of space-occupying lesions.
+ • Magnetic resonance imaging (MRI) can demonstrate orbital apex lesions,
+   orbital tumours and imaging orbital inflammatory disease.
+ • Plain X-rays are little used except for the initial diagnosis of traumatic
+   bony injury.
+ • Ultrasonography
+ • Fine needle biopsy in suspected neoplastic disease.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 15 — THYROID EYE DISEASE / Graves ophthalmopathy
+─────────────────────────────────────────────────────────────────────
+ • Graves disease, the most common form of hyperthyroidism, is an autoimmune
+   disorder in which IgG antibodies bind to thyroid stimulating hormone (TSH)
+   receptors in the thyroid gland and stimulate secretion of thyroid hormones.
+ • It is more common in females.
+ • Symptoms including weight loss despite good appetite, increased bowel
+   frequency, sweating, heat intolerance, nervousness, irritability,
+   palpitations, weakness and fatigue.
+ • There may be enlargement of the thyroid gland, tremor, palmar erythema and
+   warm and sweaty skin.
+ • Cardiac manifestations may include sinus tachycardia and other arrhythmias
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 16 — Clinical picture of TED: a) Soft tissue involvement
+─────────────────────────────────────────────────────────────────────
+ • Grittiness, red eyes, lacrimation, photophobia, puffy lids and retrobulbar
+   discomfort.
+
+Fig. 4.10 — Soft tissue involvement in thyroid eye disease.
+ (A) Epibulbar hyperaemia overlying a horizontal rectus muscle
+ (B) periorbital oedema, chemosis and prolapse of fat into the eyelids
+ (C) superior limbic keratoconjunctivitis
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 17 — Clinical picture of TED: b) Lid retraction  ★ THE FOUR LID SIGNS
+─────────────────────────────────────────────────────────────────────
+Fig. 4.11 — Lid signs in thyroid eye disease.
+ (A) Mild left lid retraction
+ (B) moderate bilateral asymmetrical lid retraction — DALRYMPLE SIGN
+ (C) severe bilateral lid retraction — KOCHER SIGN
+ (D) right lid lag on downgaze — VON GRAEFE SIGN
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 18 — Clinical picture of TED: c) Proptosis (figures only)
+─────────────────────────────────────────────────────────────────────
+(A) bilateral proptosis with lid retraction
+(C) severe proptosis with exposure keratopathy / corneal ulceration
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 19 — Clinical picture of TED: d) Restrictive Myopathy
+─────────────────────────────────────────────────────────────────────
+ • Double vision and often discomfort in some p[ositions of gaze — text cut
+   off in the original]
+
+Fig. 4.7 — Restrictive myopathy and bilateral lid retraction and proptosis in
+thyroid eye disease — nine positions of gaze
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 20 — Clinical picture of TED: e) Optic neuropathy
+─────────────────────────────────────────────────────────────────────
+ • Impairment of central vision
+ • Test: Visual acuity, Colour desaturation, relative afferent pupillary defect
+   and Visual field defects regularly
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 21 — MRI in TED (figure)
+─────────────────────────────────────────────────────────────────────
+Axial MRI, arrows on the enlarged extraocular muscle bellies.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 22 — Treatment of TED: Mild disease
+─────────────────────────────────────────────────────────────────────
+ • Stop smoking   [printed larger and first — the lecturer's emphasis]
+ • Lubricants, Topical anti-inflammatory agents (steroids, non-steroidal
+   anti-inflammatory drugs (NSAIDs)
+ • Head elevation with three pillows during sleep to reduce periorbital oedema.
+ • Eyelid taping during sleep may alleviate mild exposure keratopathy.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 23 — Treatment of TED: Moderate–severe active disease
+─────────────────────────────────────────────────────────────────────
+ • Systemic steroids: oral or (Intravenous methylprednisolone for acute
+   compressive optic neuropathy)
+ • Orbital steroid injections are occasionally used.
+ • Low-dose fractionated radiotherapy
+ • Orbital wall decompression for compressive optic neuropathy or residual
+   proptosis
+ • Strabismus and lid surgery for squint and lid retraction later
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 24 — Orbital infections: 1) Preseptal Cellulitis
+─────────────────────────────────────────────────────────────────────
+ • Infection of the subcutaneous tissues anterior to the orbital septum.
+ • Organisms are Staphylococcus aureus and Streptococcus pyogenes
+ • Causes including:
+   ➤ Local skin trauma such as laceration or insect bites
+   ➤ Spread from periocular infection as an acute hordeolum, dacryocystitis,
+     conjunctivitis or sinusitis
+   ➤ Haematogenous spread from remote infection such as the upper respiratory
+     tract or middle ear.
+ • Manifests with a swollen, often firm, tender red eyelid that may be very
+   severe.
+ • However, in contrast to orbital cellulitis, proptosis and chemosis are
+   ABSENT and VA, pupillary reactions and ocular motility are UNIMPAIRED.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 25 — Preseptal cellulitis (figure)
+─────────────────────────────────────────────────────────────────────
+Fig. 4.16 — Preseptal cellulitis.
+ (A) Left preseptal cellulitis resulting from an infected eyelid abrasion
+ (B) axial CT showing opacification ANTERIOR to the orbital septum
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 26 — Orbital infections: 2) Bacterial Orbital Cellulitis
+─────────────────────────────────────────────────────────────────────
+ • Serious infection of the soft tissues BEHIND the orbital septum.
+ • More common in children.
+ • Streptococcus pneumoniae, Staphylococcus aureus, Streptococcus pyogenes and
+   Haemophilus influenzae are common causative organisms
+ • Infection originating typically from the paranasal (especially ETHMOID)
+   sinuses.
+ • Malaise and Pyrexia, often marked.
+ • Tender, firm, erythematous and warm eyelids, with periocular and
+   conjunctival (chemosis) oedema, conjunctival injection and sometimes
+   subconjunctival haemorrhage.
+ • Painful ophthalmoplegia
+ • VA may be reduced and colour vision impaired, raising the possibility of
+   optic nerve compression
+ • Diplopia
+ • Relative afferent pupillary defect
+ • Proptosis
+ • Choroidal folds and optic disc swelling may be present on fundus
+   [text cut off in the original]
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 27 — Bacterial Orbital Cellulitis: complications
+─────────────────────────────────────────────────────────────────────
+ ➤ Ocular complications include optic neuropathy, exposure keratopathy, raised
+   IOP, endophthalmitis and occlusion of the central retinal artery or vein.
+ ➤ Subperiosteal abscess, most frequently located along the MEDIAL orbital wall.
+ ➤ Intracranial complications, which are uncommon but extremely serious,
+   include [meningitis, brain abscess and cavernous sinus thrombosis — text cut
+   off in the original]
+
+Fig. 4.17 — (A) Right orbital cellulitis with ophthalmoplegia;
+ (B) axial CT showing both preseptal and orbital opacification
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 28 — Orbital cellulitis (figure)
+─────────────────────────────────────────────────────────────────────
+FIGURE 8-16 — Left orbital cellulitis. A, Left periorbital erythema and edema.
+The motility of the eye is restricted and painful. B, Coronal computed
+tomography scan shows a left ethmoid sinusitis with a subperiosteal abscess
+adjacent to the medial orbital wall in the left orbit.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 29 — Bacterial Orbital Cellulitis: Investigations and Treatment
+─────────────────────────────────────────────────────────────────────
+Investigations:
+ • Ascertainment of tetanus immunization status in cases of trauma.
+ • White cell count.
+ • Blood cultures.
+ • Culture of nasal discharge.
+ • High-resolution CT of the orbit, sinuses and brain.
+ • MRI.
+ • Lumbar puncture if meningeal or cerebral signs develop.
+
+Treatment:
+ • Hospital admission is mandatory,
+ • Intravenous Antibiotics (aerobe and anaerobe coverage till culture and
+   sensitivity are obtained)
+ • Intravenous antibiotics should be continued until the patient has been
+   apyrexial for 4 days, followed by 1–3 weeks of oral treatment.
+ • Monitoring of optic nerve function
+ • Surgery — Drainage of an orbital abscess should be considered at an early
+   stage.
+ • Severe optic nerve compression may warrant an [orbital decompression — text
+   cut off in the original]
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 30 — Orbital infections: 3) Rhino-orbital mucormycosis
+─────────────────────────────────────────────────────────────────────
+ • Mucormycosis is a rare aggressive and often fatal infection caused by fungi
+   of the family Mucoraceae.
+ • It typically affects patients with diabetic ketoacidosis or immunosuppression
+ • Invasion of blood vessels by the hyphae results in occlusive vasculitis with
+   infarction of orbital tissues.
+ • Infarction superimposed on septic necrosis is responsible for the classic
+   BLACK ESCHAR
+
+Treatment
+ • Correction of the immune status
+ • Intravenous antifungal treatment.
+ • Daily packing and irrigation of the involved areas with antifungal agent.
+ • Wide excision of devitalized and necrotic tissues.
+ • Exenteration may be required
+ • Adjunctive hyperbaric oxygen may be helpful
+
+Fig. 4.18 — Necrosis of the eyelid in rhino-orbital mucormycosis
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 31 — Orbital infections: 4) Acute dacryoadenitis
+─────────────────────────────────────────────────────────────────────
+ ➤ Idiopathic or due to viral (e.g. mumps, Epstein–Barr, cytomegalovirus
+ ➤ Rapid onset of discomfort in the region of the gland.
+ ➤ Swelling of the lateral aspect of the eyelid overlying the palpebral lobe
+   leads to a characteristic S-SHAPED PTOSIS
+ ➤ Enlargement of the orbital lobe may give a slight downward and inward
+   dystopia
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 32 — NON-NEOPLASTIC VASCULAR ABNORMALITIES: 1) Cavernous sinus thrombosis
+─────────────────────────────────────────────────────────────────────
+ ➤ Clotting within the cavernous sinus, usually resulting from infection such
+   as sinusitis, orbital or preseptal cellulitis or otitis.
+ ➤ There is a high mortality rate: 20% treated and up to 100% untreated die.
+ ➤ Rapid onset and may include severe headache, malaise, nausea and vomiting
+ ➤ Unilateral or often BILATERAL proptosis, chemosis, congestion of the facial,
+   conjunctival and retinal veins
+ ➤ Reduced vision and, ocular motility signs (III to VI CRN affection)
+ ➤ Diagnosis is MRI and MRI venography.
+ ➤ Treatment consists of intravenous antibiotics and sometimes surgical
+   drainage. [last line partly cut off in the original]
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 33 — NON-NEOPLASTIC VASCULAR ABNORMALITIES: 2) Carotid–cavernous fistula
+─────────────────────────────────────────────────────────────────────
+ • Development of an arteriovenous fistula between the carotid artery and the
+   venous cavernous sinus with a rise in venous pressure in the sinus and
+   structures draining to it.
+
+Carotid–cavernous fistulae are classified:
+ • Direct fistulae are HIGH-FLOW SHUNTS in which carotid artery blood passes
+   directly into the cavernous sinus through a defect in the wall of the
+   intracavernous portion of the internal carotid artery as a result of
+   TRAUMA (75%).
+ • Indirect fistula ('dural shunt'), the intracavernous portion of the internal
+   carotid artery remains intact. Arterial blood flows through the meningeal
+   branches of the external or internal carotid arteries indirectly into the
+   cavernous sinus and the clinical features are subtler than in a direct
+   fistula such that the condition may be overlooked. [text cut off in the
+   original]
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 34 — Carotid–cavernous fistula: DIRECT CCF
+─────────────────────────────────────────────────────────────────────
+Presentation may be days or weeks after head injury with a CLASSIC TRIAD of
+PULSATILE PROPTOSIS, CONJUNCTIVAL CHEMOSIS and a WHOOSHING NOISE IN THE HEAD
+ • Visual affection
+ • Marked epibulbar vascular dilatation
+ • Chemosis
+ • Pulsatile proptosis associated with a bruit and a thrill, both of which can
+   be abolished by ipsilateral carotid compression in the neck.
+ • Increased IOP due to elevated episcleral venous pressure
+ • Anterior segment ischaemia, characterized by corneal epithelial oedema,
+   aqueous cells and flare and in severe cases iris atrophy, cataract and
+   rubeosis iridis.
+ • Ptosis due to third nerve involvement.
+ • Fundus examination may show optic disc [swelling — text cut off in the
+   original]
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 35 — Carotid–cavernous fistula: INDIRECT CCF
+─────────────────────────────────────────────────────────────────────
+ ➤ Gradual onset of redness
+ ➤ Exaggerated ocular pulsation, which is readily detected on slit lamp
+   applanation tonometry.
+ ➤ Presence of 'CORKSCREW' epibulbar vessels
+ ➤ Raised IOP, often bilateral but higher on the side of the fistula
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 36 — Carotid–cavernous fistula: investigations
+─────────────────────────────────────────────────────────────────────
+ ➤ CT and MRI may demonstrate prominence of the SUPERIOR OPHTHALMIC VEIN and
+   diffuse enlargement of extraocular muscles,
+ ➤ Orbital Doppler imaging may show abnormal flow patterns.
+ ➤ Definitive diagnosis may involve selective catheter digital subtraction
+   angiography
+
+Fig. 4.23 — CT in direct carotid–cavernous fistula. (A) Axial CT image showing
+enlargement of the right superior ophthalmic vein; (B) coronal view showing
+enlargement of extraocular muscles on the right
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 37 — NON-INFECTIVE INFLAMMATORY DISEASE
+           Idiopathic orbital inflammatory disease (orbital pseudotumour)
+─────────────────────────────────────────────────────────────────────
+ ➤ Non-neoplastic, noninfective, space-occupying orbital infiltration with
+   inflammatory features.
+ ➤ Pleomorphic inflammatory cellular infiltration followed by reactive fibrosis.
+ ➤ Biopsy is usually needed
+ ➤ Treatment
+ ➤ Observation / NSAI / ORAL STEROIDS / RADIOTHERAPY / SURGICAL DEBULKING
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 38 — Benign Neoplastic orbital lesions: 1) Dermoids
+─────────────────────────────────────────────────────────────────────
+ ➤ An orbital dermoid cyst is a CHORISTOMA (a mass of histologically normal
+   tissue in an abnormal location)
+ ➤ Painless nodule, most commonly located in the SUPEROTEMPORAL and
+   occasionally the superonasal part of the orbit.
+ ➤ CT to exclude bony involvement
+ ➤ Excision
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 39 — Benign Neoplastic orbital lesions: 2) VASCULAR TUMOURS
+           a) Primary orbital varices
+─────────────────────────────────────────────────────────────────────
+ (combined venous–lymphatic malformations of the orbit) consist of a plexus of
+ thin-walled distensible low-flow vein-like vessels.
+ ➤ They are probably hamartomatous (hamartoma — a disorganized overgrowth of
+   mature tissues normally present in the involved area
+ ➤ REVERSIBLE PROPTOSIS may be [precipitated or exacerbated by … — text cut off
+   in the original; see slide 12, Dynamic properties]
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 40 — Benign Neoplastic orbital lesions: 2) VASCULAR TUMOURS
+           b) Capillary haemangioma
+─────────────────────────────────────────────────────────────────────
+ b) Capillary haemangioma is THE MOST COMMON TUMOUR OF THE ORBIT AND
+    PERIORBITAL AREA IN CHILDHOOD.
+ ➤ The natural course is characterized by rapid growth followed by a slower
+   phase of natural resolution in which 30% of lesions resolve by the age of 3
+   years and about 75% by the age of 7.
+ ➤ Treatment is indicated principally for AMBLYOPIA
+ ➤ Beta-blockers. Oral propranolol is now widely used.
+ ➤ Steroids — Injection of triamcinolone acetonide
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 41 — Benign Neoplastic orbital lesions: 2) VASCULAR TUMOURS
+           c) Cavernous haemangioma
+─────────────────────────────────────────────────────────────────────
+ ➤ It is THE MOST COMMON ORBITAL TUMOUR IN ADULTS.
+ ➤ Symptoms. Slowly progressive unilateral proptosis.
+ ➤ Well encapsulated
+ ➤ Surgical excision
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 42 — LACRIMAL GLAND TUMOURS: Pleomorphic lacrimal gland adenoma
+─────────────────────────────────────────────────────────────────────
+ ➤ Benign mixed-cell tumour is the most common EPITHELIAL tumour of the
+   lacrimal gland and is derived from the ducts and secretory elements
+   including myoepithelial cells.
+ ➤ PAINLESS SLOWLY PROGRESSIVE proptosis or swelling in the superolateral
+   eyelid, usually of MORE THAN A YEAR'S DURATION
+ ➤ Proptosis / s-shaped ptosis, dystopia
+ ➤ CT shows a round or oval mass, with a smooth outline and indentation but not
+   [bony destruction — text cut off in the original]
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 43 — LACRIMAL GLAND TUMOURS: Lacrimal gland carcinoma
+─────────────────────────────────────────────────────────────────────
+ ➤ Lacrimal gland carcinoma is a rare tumour that carries a high morbidity and
+   mortality.
+ ➤ In order of frequency the main histological types are ADENOID CYSTIC (50%),
+   pleomorphic adenocarcinoma, mucoepidermoid and squamous cell.
+ ➤ Picture of proptosis of RAPID ONSET
+ ➤ BONY EROSIONS by CT
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 44 — Orbital Neural Tumours: 1) Optic nerve glioma
+─────────────────────────────────────────────────────────────────────
+ • Slowly growing, typically affects CHILDREN (median age 6.5 years).
+   Approximately 30% of patients have associated NEUROFIBROMATOSIS TYPE I
+ • CT shows FUSIFORM ENLARGEMENT of the optic nerve
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 45 — Orbital Neural Tumours: 2) Optic nerve sheath meningioma
+─────────────────────────────────────────────────────────────────────
+ • Benign tumour arising from meningothelial cells of the arachnoid villi
+   surrounding the optic nerve.
+ • The prognosis for life is good in adults
+ • They are more common in NEUROFIBROMATOSIS TYPE II (NF2).
+ • The onset of VISUAL LOSS usually occurs BEFORE the onset of PROPTOSIS.
+ • Signs. The CLASSIC TRIAD consists of progressive visual loss, optic atrophy
+   and [opticociliary shunt vessels — text cut off in the original; the vessels
+   are shown on slide 13 (Fig. 4.8 C)]
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 46 — Malignant orbital tumours: RHABDOMYOSARCOMA
+─────────────────────────────────────────────────────────────────────
+ ➤ THE MOST COMMON SOFT TISSUE SARCOMA OF CHILDHOOD
+ ➤ It is the most common PRIMARY ORBITAL MALIGNANCY IN CHILDREN but is still a
+   rare condition.
+ ➤ The tumour is derived from undifferentiated mesenchymal cells that have the
+   potential to differentiate into striated muscle
+ ➤ RAPIDLY PROGRESSIVE UNILATERAL PROPTOSIS is usual and may mimic an
+   inflammatory condition such as orbital cellulitis.
+ ➤ CT shows a poorly defined mass of homogeneous density, often with adjacent
+   BONY DESTRUCTION.
+ ➤ Incisional biopsy is performed to [confirm the diagnosis — text cut off in
+   the original]
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 47 — Anophthalmic Socket
+─────────────────────────────────────────────────────────────────────
+ • Enucleation
+ • Eviscerarion [sic — Evisceration]
+ • Excentration [sic — Exenteration]
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 48 — Table 4.1 Differential Diagnosis of an Acutely Inflamed Orbit
+─────────────────────────────────────────────────────────────────────
+Infection
+ • Bacterial orbital cellulitis
+ • Fungal orbital infection
+ • Dacryocystitis
+ • Infective dacryoadenitis
+
+Vascular lesions
+ • Acute orbital haemorrhage
+ • Cavernous sinus thrombosis
+ • Carotid–cavernous fistula
+
+Neoplasia
+ • Rapidly progressive retinoblastoma
+ • Lacrimal gland tumour
+ • Other neoplasm, e.g. metastatic lesion with inflammation, lymphoma,
+   Waldenström macroglobulinaemia
+ • Rhabdomyosarcoma, leukaemia, lymphangioma or neuroblastoma in children
+
+Endocrine
+ • Thyroid eye disease of rapid onset
+
+Non-neoplastic inflammation
+ • Idiopathic orbital inflammatory disease
+ • Tolosa–Hunt syndrome
+ • Orbital myositis
+ • Acute allergic conjunctivitis with lid swelling
+ • Herpes zoster ophthalmicus
+ • Herpes simplex skin rash
+ • Sarcoidosis
+ • Vasculitides: granulomatosis with polyangiitis, polyarteritis nodosa
+ • Scleritis, including posterior scleritis
+ • Ruptured dermoid cyst
+
+
+═════════════════════════════════════════════════════════════════════
+NOT COVERED ANYWHERE IN THIS DECK
+═════════════════════════════════════════════════════════════════════
+Recorded so a gap can be settled by proving a negative rather than by memory.
+
+ • The four WALLS of the orbit named as walls, their individual bones, and
+   which wall is thinnest. Slide 2 labels bones on a figure only; no wall is
+   named and no bone is called the thinnest.
+ • The VOLUME of the orbit, its dimensions, or the depth of the orbital rim.
+ • The ANNULUS OF ZINN by that name (the figure on slide 3 labels a "common
+   tendinous ring"; the eponym is not printed).
+ • The ORBITAL SEPTUM's own anatomy — it is referred to on slides 24–26 as the
+   landmark separating preseptal from orbital cellulitis, but is never defined
+   or described.
+ • CHANDLER'S CLASSIFICATION of orbital complications of sinusitis. Absent.
+ • The FORCED DUCTION TEST by name. Slide 10 announces "Tests used to
+   differentiate a restrictive from a neurological motility defect:" and the
+   list is CUT OFF by the slide edge — the test itself is never printed.
+ • NASOLACRIMAL / lacrimal drainage anatomy (that is L9, a separate deck, whose
+   cached .txt is ALSO watermark-only and still unread).
+ • Any orbital FRACTURE detail — blow-out fracture mechanism, white-eyed
+   blow-out, entrapment management, orbital floor vs medial wall. Only the
+   passing mentions on slides 5 and 10.
+ • ORBITAL LYMPHOMA, metastatic orbital disease, and neuroblastoma beyond their
+   one-line appearance in Table 4.1 (slide 48).
+ • Optic nerve glioma TREATMENT, and optic nerve sheath meningioma treatment.
+ • Any drug DOSE anywhere in the deck.
+ • Thyroid eye disease ACTIVITY/SEVERITY SCORING (CAS, EUGOGO, NOSPECS) — the
+   deck splits treatment into "mild" and "moderate–severe active" without ever
+   saying how that is scored. "NOSPECS" does not appear.
+ • The Werner mnemonic, or any eponymous TED lid sign beyond the three on
+   slide 17 (Dalrymple, Kocher, von Graefe). Stellwag, Mobius, Joffroy and
+   Griffith are NOT in this deck.
