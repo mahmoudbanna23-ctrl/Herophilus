@@ -408,4 +408,78 @@ bank, skip a topic, thin an explanation or shorten the notes to make the remaind
   performance in the exam."* Where the **source itself** is wrong, follow §4(b): key it as printed,
   note the discrepancy.
 
+---
+
+## 11. ⚠️ SUBAGENT PROTOCOL — adopted 2026-08-12 at the user's decision
+
+Each module chat now runs **hub-and-spoke**: the chat itself is the **hub**, and it launches
+**background Opus subagents** to draft topics in parallel. The point is wall-clock speed at the
+same quality bar. **Nothing in §§1–10 is relaxed by this section.**
+
+### The one rule that makes it safe: THE HUB IS THE SOLE WRITER
+
+**Subagents draft. The hub merges.** The six-stage sweep and the `alsoIn` fold contract are only
+correct when merging happens in one place, in sequence — and two writers on one data file corrupt
+it silently (proven five times in ENT).
+
+| | The HUB (your main chat) | A SUBAGENT |
+|---|---|---|
+| Writes | `questions.<mod>.js`, `cases.<mod>.js`, `theory.<mod>.js`, `resume-<mod>.md`, git commits | `content\<mod>\qb-pages\<bank>-<topic>.array.js` + `.draft.js`, lecture-cache files it transcribed, image crops |
+| Never | — | **data files, resume files, MEMORY/ledger/briefs, `index.html`, git — ever** |
+| Does | authoritative sweep, fold decisions, splice, §7 validation, marker-delta check, spot-check, commit, interview batching | render → read every page → stage verbatim → ground in lectures → draft finished entries → return a manifest |
+
+### Launching a subagent
+
+- **One topic/chapter of one bank per invocation** — never a whole bank; it will not fit a context.
+- `general-purpose` agent, **`model: "opus"`**, **run in background**. **≤ 2 live at once per chat**
+  (all four chats share one usage pool — 8 streams total). **Scale to 3 only after a full day with
+  no rate-limit stalls**, and drop to 1 after any stall or collision.
+- **Prompt template** (keep it lean — the subagent reads the briefs from disk, do not inline them):
+
+> Read `D:\claude os\Herophilus\progress\briefs\START-HERE.md` (especially §2–§6 and §10) and
+> `progress\briefs\<module>.md`, then follow them exactly. You are drafting ONE topic:
+> **<bank name>, topic <n> "<title>"**, questions book pp.X–Y, answers p.Z
+> (**PDF page = book page + <k>**), ids `<prefix>-<n>` onward. Method: render the range **plus one
+> page past the last answer page** (Poppler command in §5), read EVERY page visually, count what is
+> printed (never trust the promised count), stage verbatim to
+> `content\<mod>\qb-pages\<bank>-t<n>.array.js` (`var <NAME>_STAGED = [...]` with n/p/key/stem/opts,
+> plus box/note/ref where printed). Ground every entry in `content\<mod>\lectures\` — **read the
+> slide before declaring a gap**; if a needed deck is uncached or a watermark, read it as 4-up
+> contact sheets at 110 dpi and cache the transcription. Then draft FINISHED entries at full depth
+> (~520-word explanations, §4 structure, markers/tags/defect notes per §4a–c) to
+> `content\<mod>\qb-pages\<bank>-t<n>.draft.js` — entry objects only, comma-separated, no wrapper.
+> Run a within-batch duplicate check and list suspected cross-corpus duplicates; do NOT fold
+> anything yourself. Image crops go to `app\assets\q\q-<mod token>-<bank token>-<page>.jpg`, looked
+> at before keeping, `imgAlt` per §3.6. **You must NOT touch any `app\data\*.js`, any resume file,
+> MEMORY.md, the ledger, the briefs, index.html, or git.** Return ONLY a compact manifest — no
+> question text: printed/drafted/boxed counts; the page map you actually used + offset; defects
+> found (§4b shape); suspected duplicates (question number + normalized key + what it matched);
+> gaps filled and tagged; interview items; exact paths of your deliverables; predicted marker
+> delta (drafted − boxed).
+
+### Merging a batch (the hub, on each manifest)
+
+1. **Splice ONE batch at a time.** If two banks' batches are waiting, do A fully, then B — B's
+   sweep must run against the corpus that already includes A, or cross-bank folds are missed.
+2. Run the **authoritative six-stage sweep** (§6) of the draft against the whole corpus. Decide
+   folds yourself; apply `alsoIn`/fold notes; **grep the draft for folded ids before splicing**.
+3. Splice, then §7 validator, then **marker delta** (predicted vs observed — it has caught five
+   faults in ENT, in both directions), then reconcile **written + folded = printed**.
+4. **Spot-check 3–5 entries in full and every defect note** against the staged array.
+5. Delete the `.draft.js` (the `.array.js` stays as the permanent verbatim record). Commit own
+   paths only. Update the resume file, including the **subagent board**:
+
+```
+| Slot | Bank | Topic | State (launched / manifest received / merged) | Last manifest counts |
+```
+
+6. **Batch interview items** to the user at topic close — never per sentence.
+
+### Theory, when your module's last bank closes
+
+Switch the subagent slots to **one CHAPTER per subagent**: input is that chapter's full question
+set + its 1–3 lecture decks + `content\<mod>\examiner-patterns.md` (where it exists); output is
+the chapter's complete THEORY entry (the new-study-source brief, `CLAUDE.md` §4) to a draft file.
+The hub splices into `theory.<mod>.js` under the same single-writer rules.
+
 **Now read your module file.**
