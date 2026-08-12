@@ -7,13 +7,19 @@
 
 ## Resume here
 
-**✅ TOPIC 1 CLOSED — 71 printed, 71 written, 0 folded, validated in a full run.**
+**✅ TOPICS 1 AND 2 CLOSED — 112 printed, 112 written, 0 folded, validated in a full run.**
 
-**Next action: render PDF pp.16–23 (book pp.9–16) and work topic 2, "Optics and Errors of
-Refraction", Q72 onward, 41 promised.** Its questions are book pp.9–13, answers p.14 — **and render
-book p.15 (PDF 22) as well, one page past the last answer page, every time.** Ids `opqb-t2-72`
-onward. `L7,8) Refractive errors` is cached, 19,611 chars, and covers this topic in full — expect
-heavy grounding and few general-knowledge gaps, the reverse of a topic like Trauma.
+**Next action: render PDF pp.23–28 (book pp.16–21) and work topic 3, "Orbit", Q113 onward, 26
+promised.** Questions are book pp.16–18, answers p.19 — **render book p.20 (PDF 27) too, one page
+past the last answer page. That rule already saved 14 of 41 keys on topic 2 and is not optional.**
+Ids `opqb-t3-113` onward. **PDF p.23 is already rendered and read** — it holds Q113–Q122 and confirms
+the topic boundary.
+
+**⚠️ Topic 3's grounding deck is a problem to solve first.** `L10) orbit.txt` is cached but holds
+only **686 characters** — it is an extraction failure, not a short lecture. Orbit questions will need
+it read **visually as four-up contact sheets** before they can be grounded. Q113–Q122 already read
+include proptosis causes, evisceration vs enucleation vs exenteration, lagophthalmos, pulsating
+exophthalmos and retrobulbar haemorrhage — none of which the 686 cached characters can support.
 
 ---
 
@@ -34,10 +40,15 @@ heavy grounding and few general-knowledge gaps, the reverse of a topic like Trau
   printed; never infer from the page count.
 - **Each question prints ONCE.** No reprint-per-section behaviour like ENT's endpoint file.
 - **Questions and answers are in separate blocks**, questions first, then an answer page.
-- **⚠️ THE ANSWER KEY IS BARE LETTERS — `1. Correct Answer: B` — WITH NO EXPLANATION BOXES AT ALL.**
-  Verified on the topic-1 answer page (book p.8). **Consequence: 100 % of explanations are authored,
-  so every single entry carries the marker** `Written for this bank — ophthalmology qb.pdf prints no
-  explanation here.` The predicted marker delta equals the entry count exactly, every batch.
+- **⚠️⚠️ EXPLANATION BOXES: PRESENT IN SOME TOPICS, ABSENT IN OTHERS. THE BOX IS A PROPERTY OF THE
+  PAGE, NOT OF THE BANK.** Topic 1's answer page prints **bare letters only** — `1. Correct Answer: B`
+  — across all 71. On that evidence I wrote here that the bank prints no boxes anywhere. **That was
+  an over-generalisation from a single page and topic 2 disproved it immediately: topic 2 prints
+  EIGHT boxes in 41** (Q74, 81, 87, 92, 99, 101, 108, 112), some of them substantial — Q87's sets out
+  the whole latent/facultative/absolute/manifest/total hyperopia scheme, Q112's lists every
+  complication of myopia. **Count the boxes on every topic's answer pages and predict the marker
+  delta as `new entries − boxed`; never assume from the previous topic.** This is the same lesson ENT
+  learned when one chapter printed a single box in thirty-two.
 - **⚠️ QUESTION NUMBERING RUNS CONTINUOUSLY ACROSS TOPICS** — topic 1 ends at Q71 and topic 2 opens
   at **Q72**, not at Q1. It does not restart at a topic the way ENT's Grade Gain restarted at a
   section. *(Not yet confirmed for the End Exams at the back — check when reached.)*
@@ -46,8 +57,16 @@ heavy grounding and few general-knowledge gaps, the reverse of a topic like Trau
 ### The page map — transcribed from the contents pages (PDF pp.3–7)
 
 **⚠️ Treat the page ranges as reliable and the counts as unreliable** — that is how ENT's Grade Gain
-behaved (counts wrong 17 times in 21, always upward). **Topic 1 is the first datapoint here and its
-count of 71 was EXACT.** One exact count is not a pattern; keep counting what is printed.
+behaved (counts wrong 17 times in 21, always upward). **This bank is behaving differently: topics 1
+and 2 both printed EXACTLY the promised count** (71 and 41). Two exact counts is a promising pattern
+and still not a guarantee — keep counting what is printed.
+
+> **⚠️⚠️ BUT THE "Page As" FIGURE LIES, AND IT LIED ON THE SECOND TOPIC.** Topic 2's contents entry
+> says **Page As 14**. The keys for **Q99–Q112 are on book p.15** — fourteen of forty-one, more than
+> a third of the topic, on a page the map does not mention. **Rendering one page past the last
+> stated answer page is what caught it, on the first topic where it could possibly have mattered.**
+> This is the identical defect ENT's Grade Gain showed (its ch.4 nearly lost seven of twenty-three
+> keys the same way). **RENDER ONE PAGE PAST THE LAST ANSWER PAGE, EVERY TIME, WITHOUT EXCEPTION.**
 
 Book pages; add 7 for the PDF page.
 
@@ -93,40 +112,75 @@ wrong on the first attempt — the trap is the layout, not the measurement).
 
 ## Counts — written + folded = printed
 
-| Topic | Printed | Written | Folded | Status |
-|---|---|---|---|---|
-| 01 Examination of the Eye | **71** | **71** | **0** | ✅ closed 2026-08-12 — reconciles |
+| Topic | Printed | Written | Folded | Boxed | Authored | Status |
+|---|---|---|---|---|---|---|
+| 01 Examination of the Eye | **71** | **71** | **0** | 0 | 71 | ✅ closed 2026-08-12 |
+| 02 Optics and Errors of Refraction | **41** | **41** | **0** | **8** | **33** | ✅ closed 2026-08-12 |
+| **Total** | **112** | **112** | **0** | **8** | **104** | reconciles |
 
-**Module total: 71 questions in `app\data\questions.ophtho.js`, all `bank:'gradegain'`.**
-Validated in a full run: 0 bad module/chapter refs, 0 duplicate ids, every `answer` in range, every
-entry carrying `source` and `explanation`, **71/71 markers at the end of `explanation` and 0 in
-`source`**. All 71 print four options.
+**Module total: 112 questions in `app\data\questions.ophtho.js`, all `bank:'gradegain'`.**
+Validated in a full run across every module's data file: **0 bad module/chapter refs, 0 duplicate
+ids, 0 dead backticked ids, every `answer` in range, every entry carrying `source` and
+`explanation`, 0 markers misplaced into `source`.** All 112 print four options. Mean explanation
+length **592 words**. One image (`q-op-gg-11`), file present, `imgAlt` set.
 
-**⚠️ Marker delta: predicted +71, observed +71.** With no explanation boxes anywhere in this bank,
-the predicted delta always equals the entry count exactly — which makes it a **weaker** check here
-than it was in ENT, where boxed questions made the number non-trivial. It still catches a marker put
-in the wrong field.
+**⚠️ Marker delta topic 2: predicted +33 (41 new − 8 boxed), observed +33 — exact.** All 8 boxed
+entries correctly carry **no** marker. **This check is only meaningful because topic 2 had boxes**;
+in topic 1, where the delta necessarily equalled the entry count, it could only ever have caught a
+marker written into the wrong field.
 
-### The within-bank sweep — topic 1
+### The within-bank sweep — all 112, run 2026-08-12
 
-Run over all 71 with normalisation (lowercase, punctuation stripped, options sorted). **Result: ZERO
-folds.** Three pairs surfaced and all three are false positives of kinds already documented:
+All six stages, normalised (lowercase, punctuation stripped, options sorted). **Result: ZERO folds
+across both topics.** Seven pairs surfaced; every one is a false positive of a documented kind:
 
 | Stage | Pair | Why it is not a fold |
 |---|---|---|
-| **C** (key + option count) | `opqb-t1-48` / `opqb-t1-60` | Both key *retinal detachment*, but the stems and option sets are entirely different. **Same key + different stem is not a fold** |
-| **F** = 0.71 | `opqb-t1-7` / `opqb-t1-9` | Both option lists are anatomy nouns (iris, retina, lens, cornea, choroid). Shared vocabulary, unrelated questions |
-| **F** = 1.00, **E** = 0.04 | `opqb-t1-11` / `opqb-t1-14` | **Identical four-option menu** — Rods / Cones / Ganglion cells / Bipolar cells — with **different keys and unrelated stems.** The textbook short-generic-menu false positive |
+| **C** | `opqb-t1-48` / `opqb-t1-60` | Both key *retinal detachment*; stems and option sets entirely different. **Same key + different stem is not a fold** |
+| **C** | `opqb-t2-84` / `opqb-t2-92` | Both key *macular oedema*, both ask what pinhole-worsening implies. **Two of four options are REPLACED** (myopic astigmatism + OAG vs hyperopic astigmatism + keratoconus), so by the folding test this is a **new question — both held.** The nearest thing to a genuine within-bank repeat so far |
+| **E** = 0.67 | `opqb-t2-87` / `opqb-t2-90` | Both on the components of hypermetropia, but **different option sets and different keys** (facultative-decreases-with-age vs absolute-not-corrected-by-accommodation). F is only 0.36 |
+| **F** = 1.00, E = 0.04 | `opqb-t1-11` / `opqb-t1-14` | **Identical four-option menu** — Rods / Cones / Ganglion / Bipolar — with different keys and unrelated stems |
+| **F** = 0.71 | `opqb-t1-7` / `opqb-t1-9` | Shared anatomy vocabulary (iris, retina, lens, cornea, choroid); unrelated questions |
+| **F** = 0.67 | `opqb-t2-74` / `opqb-t2-103` | Shared positional vocabulary (*in front of / behind* the retina, lens, cornea). One asks where a myopic eye focuses, the other where the hyperopic far point lies |
+| **E** = 0.50, F = 0.00 | `opqb-t2-95` / `opqb-t2-112` | Both stems contain *most common* and *myopia*; **option sets share nothing at all** |
 
-**⚠️ That last pair is the standing warning made concrete on this bank's very first topic: an
-identical short option menu scores F = 1.00 for the wrong reason, and only stage E (0.04) separates
-them.** Run both rankings and read the list; never fold on F alone.
+**⚠️ Two standing warnings are now confirmed on this bank's own data.** (1) `opqb-t1-11`/`-14` is the
+short-generic-menu false positive at **F = 1.00**, separated only by stage E at 0.04. (2)
+`opqb-t2-95`/`-112` is its mirror — a **stem-vocabulary** false positive at **E = 0.50** with F = 0.00.
+**Neither ranking dominates. Run both and read the list; never fold on one number.**
 
-**Zero folds is credible here for a structural reason, not a lucky one:** this is the **first** topic
-of the **first** bank in an empty module, so there was nothing cross-bank to sweep against, and a
-71-question introductory topic covering distinct examination techniques has little internal reason to
-reprint itself. **The real test of the sweep comes at topic 2 and beyond**, and especially when bank
-2 (House) arrives.
+**Zero folds so far is credible rather than lucky.** There is nothing cross-bank to sweep against
+until House arrives, and these two topics cover largely disjoint material — examination technique and
+optics. **The sweep has not yet been properly tested**, and it will not be until bank 2. Do not let
+two clean topics erode the habit of running all six stages.
+
+---
+
+## ⚠️ NEVER `git commit --amend` IN THIS REPO — learned the hard way, 2026-08-12
+
+**Four chats commit to one branch. HEAD can move between the command that reads it and the command
+that rewrites it, and `--amend` rewrites whatever HEAD points at *now*, not the commit you meant.**
+
+What happened: I committed topic 1, noticed the subject line had picked up a stray `@` (from writing
+a PowerShell here-string `@'…'@` into the **Bash** tool, which does not understand it). I ran
+`git log -1` to read the message back — correct at that moment — and then `git commit --amend`.
+**In between those two commands the Neuropsychiatry chat committed.** My amend therefore rewrote
+*their* commit, prepending my subject line to theirs.
+
+**No content was lost** — my three files are intact in `d7a3ed6`, the neuro chat's files and full
+message body are intact in `9851b40`, and the Pediatrics commit on top was untouched. The damage is
+one spurious line in one commit subject.
+
+**It was NOT repaired, deliberately.** Fixing it means rewriting two commits, one of which belongs to
+another chat that may be mid-work — the cure is far more dangerous than a cosmetic flaw in a message.
+**Rewriting history is what caused this; doing it again to fix it would be the same mistake twice.**
+
+**The two rules that follow:**
+
+1. **Get the commit message right the first time. Never amend.** If a message is wrong, leave it and
+   say so.
+2. **The Bash tool is Bash, not PowerShell.** `@'…'@` here-strings are PowerShell syntax; in Bash
+   they pass the `@` through as literal text. Use a real heredoc, or `-F` with a file.
 
 ---
 
@@ -187,16 +241,17 @@ turned on this and were filed by direct analogy:
 the pupil, ocular motility, or a fundus sign examined as such — which in an "Examination of the Eye"
 topic is a large share.
 
-**Topic 1's actual distribution (71 questions):**
+**Distribution after topics 1 and 2 (112 questions, 17 of 26 chapters seeded):**
 
-`op-va` 13 · `op-intro` 13 · `op-pupil` 12 · `op-refract` 5 · `op-glauc` 5 · `op-squint` 5 ·
-`op-ret` 4 · `op-vissym` 3 · `op-cornea` 2 · `op-acute` 2 · `op-lid` 1 · `op-lac` 1 · `op-neuro` 1 ·
+`op-refract` 38 · `op-va` 16 · `op-intro` 13 · `op-pupil` 12 · `op-squint` 6 · `op-glauc` 5 ·
+`op-ret` 5 · `op-cornea` 5 · `op-vissym` 3 · `op-acute` 2 · `op-lid` 1 · `op-lac` 1 · `op-neuro` 1 ·
 `op-uvea` 1 · `op-red` 1 · `op-conj` 1 · `op-cat` 1
 
-That spread is expected and is not a filing failure: an examination topic tours the whole eye, so it
-seeds seventeen of the twenty-six chapters. **Nine chapters still hold zero** — `op-orbit`,
-`op-sclera`, `op-onc`, `op-trauma`, `op-appear`, `op-systemic`, `op-white`, `op-insid`, `op-lid`
-(near-zero) — and every one of them has a dedicated topic later in this bank, so they will fill.
+The concentration is expected and correct: topic 1 is an examination tour that seeds many chapters
+thinly, and topic 2 is almost entirely refraction. **Nine chapters still hold zero** — `op-orbit`,
+`op-sclera`, `op-onc`, `op-trauma`, `op-appear`, `op-systemic`, `op-white`, `op-insid` and
+`op-vissym` (near-zero) — and every one has a dedicated topic later in this bank, so they will fill.
+**Do not rebalance by re-filing questions; file each by what it tests and let the topics do the work.**
 
 Secondary chapters are named in the explanation, in italics, wherever a question genuinely sits in
 two — thirteen entries in topic 1 carry one.
