@@ -11,19 +11,67 @@ work up cold.
 
 ## Resume here
 
-**▶ NEXT ACTION: render PDF pp. 13–18 (book pp. 24–35) and transcribe chapter 3, "Cardiac
-disorders".** Chapters 1 and 2 are closed. **PDF p.13 is already rendered** at `<scratchpad>\pd\` and
-shows chapter 3 opening on book p.24 with the numbering restarting at 1; its Q1–Q6 are already
-visible there. The contents page puts chapter 4 at book p.32, so render **through PDF p.18**.
+**⚠️ THIS CHAT IS NOW A HUB, NOT A TRANSCRIBER — adopted 2026-08-12 per `START-HERE.md` §11.**
+Background Opus subagents draft one chapter each into `content\peds\qb-pages\*.array.js` +
+`*.draft.js`. **This chat is the SOLE WRITER** of `questions.peds.js`, `cases.peds.js`,
+`theory.peds.js`, this file, and every git commit. Subagents touch none of those, ever.
 
-**Chapter 3 already shows a figure at Q6** — a phonocardiogram/ECG trace labelled A₂ and P₂, printed
-beside the question. It is a **diagram, not a photograph**, so transcribe it as markdown in the stem
-rather than cropping it if the labels can be rendered faithfully; crop only if they cannot.
+**▶ NEXT ACTION: wait for the two manifests below, then merge ONE batch at a time** —
+sweep → fold → splice → validate → marker delta → reconcile → spot-check → commit → update this
+board. **Slot A first, then B**, so B's sweep runs against a corpus that already contains A.
 
-**Lectures for chapter 3** (list the directory before citing): `33)Congenital acyanotic heart
-disease_.txt`, `35)Cyanotic CHDs.txt`, `34)Students Obstructive diseases.txt` — **note this last one
-is CARDIAC outflow obstruction despite sounding respiratory** — `36)Myocardial diseases.txt`
-(arrhythmias, SVT, myocarditis, Kawasaki, endocarditis) and `37)RF.txt`.
+### Subagent board
+
+| Slot | Bank | Topic | State | Last manifest counts |
+|---|---|---|---|---|
+| **A** | House | ch.3 "Cardiac disorders", book pp.24–31 (PDF 13–16, +1 = 17), ids `pedhd-card-` | **launched** 2026-08-12 | — |
+| **B** | Endpoint | `part1.pdf` — establish identity/offset/structure on pp.1–10, **then** stage section 1 only, ids `pedep-` | **launched** 2026-08-12 | — |
+
+**Cap 2 live subagents.** Scale to 3 only after a full day with no rate-limit stalls; drop to 1 after
+any stall or collision. All four module chats share one usage pool.
+
+**Slot A was told** the five chapter-3 figures already cropped on disk — `q-pd-hd-25.jpg`,
+`-26a`, `-26b`, `-26c`, `-27` — are there to be **matched and reused, not re-cut**, and to report any
+that is wrong or unmatched. They are untracked and unreferenced until A's batch is spliced.
+
+**Slot B was warned about the ENT-endpoint traps specifically**: every question printed **twice** at
+an unpredictable rate, questions **recycled across sections**, printed numbering that lies, and a
+contents page that has never counted correctly. It was also told **not to assume a simple page
+offset** — House turned out to be a 2-up spread scan — and that stopping after phase 1 with the
+structure settled is a success, not a failure.
+
+### Baseline before any merge — measured 2026-08-12, `START-HERE.md` §7 validator
+
+| | |
+|---|---|
+| `QUESTIONS` total (all four modules) | **1,848** |
+| Bad entries / dead backticked ids | **0 / 0** |
+| Pediatrics entries | **57** (infection 31, renal 26) |
+| Carrying the authored marker | **57 of 57** — consistent with **zero boxes printed** in ch.1 and ch.2 |
+| Markers misplaced into `source` | **0** |
+
+**Use these numbers for the marker-delta check on the next splice.** Predict the delta *before*
+splicing: `drafted − boxed`. In ENT that check caught five faults, in both directions.
+
+### The merge tool — `content\peds\tools\sweep.js`
+
+One runnable file holding **both** `START-HERE.md` §6 (the six-stage sweep) and §7 (the validator),
+so no two batches are ever swept slightly differently — a fault that cost ENT real work three times.
+
+```bash
+node content/peds/tools/sweep.js                    # validate the live corpus
+node content/peds/tools/sweep.js <path/to.draft.js> # sweep a subagent draft against it
+```
+
+It reads a draft in exactly the shape a subagent returns (entry objects, comma-separated, no
+wrapper), runs the batch **against itself first** — a bank reprints itself, and that fold takes **no
+`alsoIn`** — then against the whole live corpus, printing stage flags plus the E and F rankings.
+
+**⚠️ Verified with a positive control before first use**, per the project's own *check the auditor
+before believing the audit* rule: two entries already in the corpus were fed back in and both
+returned `ABCD E1.00 F1.00` against their true twins. The same run independently re-surfaced the
+chapter-2 **shared-option-menu family** (`pedhd-renal-10`…`-14`) at **F 0.64 with E as low as 0.33** —
+the documented blind spot, reproduced. **That is the tool working, not a fold.**
 
 ---
 
