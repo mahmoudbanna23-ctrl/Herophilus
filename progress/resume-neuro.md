@@ -212,18 +212,65 @@ The module has no neurosurgery chapter and none is needed now. Within the 27 rea
 
 | | |
 |---|---|
-| **Transcribed verbatim** | topics 01, 02 and 03 → `content\neuro\qb-pages\` |
-| **Written into `questions.neuro.js`** | **48 MCQs** |
-| **Written into `cases.neuro.js`** | **6 cases** (the multi-answer questions, §4) |
+| **Transcribed verbatim** | Neurology topics 01–05 → `content\neuro\qb-pages\*.md`; topic 06 and Psychiatry topic 15 → `*.array.js` staging |
+| **Written into `questions.neuro.js`** | **129 MCQs** |
+| **Written into `cases.neuro.js`** | **7 cases** (the multi-answer questions, §4) |
 | **Folded** | 0 |
-| **Reconciliation** | **54 printed (Q1–Q54) = 48 MCQs + 6 cases + 0 folded ✅**, every id present exactly once |
-| **Images** | 1 — `app\assets\q\q-np-8.jpg`, used by `npqb-nr-43`, `imgEssential` |
+| **Reconciliation** | **136 printed = 129 MCQs + 7 cases + 0 folded ✅**, every id present exactly once |
+| **Images** | 2 — `q-np-gg-8.jpg` (`npqb-nr-43`) and `q-np-gg-20.jpg` (`npqb-nr-87`), both `imgEssential` |
 
-Chapters so far: `nr-intro` 22, `nr-stroke` 20, `nr-cranial` 7, `nr-hemi` 4, `nr-movement` 1.
-Authored markers: **25** of 54 — this bank prints boxes far more often than ENT's did.
+**Per topic:** Neurology t01 22 · t02 12 · t03 20 · t04 7 · t05 27 · t06 30 = **118 (Q1–Q118)**.
+Psychiatry t15 **18 (Q1–Q18)**. Grand total **136**.
+
+Chapters: `nr-hemi` 29, `nr-intro` 23, `nr-cranial` 34, `nr-stroke` 29, `nr-movement` 2, `nr-ms` 1,
+`nr-lmn` 1, `ps-symptom` 11, `ps-psychoed` 5, `ps-ocd` 1, `ps-mood` 1.
+Authored markers: **90** of 136 — this bank prints boxes far more often than ENT's did.
 
 **Within-bank duplicate sweep:** run from the start, since a bank reprints itself. **No cross-bank
-sweep is possible or useful** — this module has one bank and House was never supplied.
+sweep is possible or useful** — this module has one bank and House was never supplied. *(That changes
+the moment `Neuro endpoint.pdf` starts landing — see §10.)*
+
+---
+
+### ⚠️ Image naming — `q-np-gg-<book page>.jpg`, and the `gg` token is not optional
+
+`q-np-8.jpg` was renamed **`q-np-gg-8.jpg`** on 2026-08-13. An unqualified page number would have
+collided with `Neuro endpoint.pdf`'s own book page 8 the moment the endpoint bank starts. The module
+token alone is not enough — **the bank token has to be there too.**
+
+---
+
+## 6a. Subagent board — hub-and-spoke, adopted 2026-08-12 (START-HERE §11)
+
+**This chat is the hub: the SOLE writer of `questions.neuro.js`, `cases.neuro.js` and this file, and
+the only one that sweeps, folds, splices, validates, commits or touches git.** Subagents draft one
+topic each into `content\neuro\qb-pages\*.array.js` + `*.draft.js` and touch nothing else.
+
+| Slot | Bank | Topic | State | Last manifest |
+|---|---|---|---|---|
+| **A** | Grade Gain | Neurology **t06** "Hemiplegia & Paraplegia" (Q89–Q118) | ✅ **merged 2026-08-13** | 30 printed / 30 drafted / 0 folded · 2 boxed · marker +28 |
+| **A** | Grade Gain | Neurology **t07** "Headache" (from Q119) | ⬜ **not yet launched** | — |
+| **B** | Grade Gain | Psychiatry **t15** "Symptomatology & Myths" (Q1–Q18) | ✅ **merged 2026-08-13** | 18 printed / 18 drafted / 0 folded · 3 boxed · marker +15 |
+| **B** | Grade Gain | Psychiatry **t16** "Anxiety & Related Disorders" (from Q19) | ⬜ **not yet launched** | — |
+
+Cap **2 live subagents**; scale to 3 after a clean day. Both merges on 2026-08-13 were clean, so the
+third slot is available from 2026-08-14.
+
+**What the merge actually costs the hub** — do not skip any of it:
+
+1. **Re-sweep the batch against everything that landed AFTER the subagent read the file.** Slot A
+   swept against 54 entries because topics 04–05 were still unwritten when it started; the hub had to
+   re-run all six stages against the full 88. **A subagent's sweep is always a snapshot.**
+2. Adjudicate every staged hit by reading both questions side by side.
+3. Splice **one batch at a time**, then run the validator before the next.
+4. **Predict the marker delta before splicing and confirm it after.** Both batches matched exactly.
+5. Spot-check 3–5 entries — including **every boxed one**, which must carry the printed box verbatim
+   and **no** authored marker.
+6. Delete the `.draft.js`; **keep the `.array.js`** as the verbatim record.
+
+**Both merges produced zero folds**, and in both the only staged hits were the documented
+short-generic-menu false positives — `npqb-ps-5` vs `npqb-nr-26` share *Auditory / Visual /
+Olfactory* while asking about hallucinations and thalamic relay respectively.
 
 ---
 
@@ -291,28 +338,48 @@ chat's file mid-batch, not this module.** Do not touch them and do not treat the
 
 ## 9. Next concrete action
 
-**Render, read and write topics 04 and 05 TOGETHER — they share book page 14.**
+**Relaunch both subagent slots, then merge.** Topics 01–06 of Neurology and topic 15 of Psychiatry
+are closed; the next two topics are the two slots in §6a.
 
-*Hemorrhagic Cerebrovascular Stroke* (7 promised, Q55 onward) and *Cranial Nerves Disorders* (27
-promised) **both begin on book p.14**, so the topic boundary falls **mid-page** and the two must be
-read in one pass. Book pp.14–21 = **PDF 19–26**; render **PDF 19–27** to get one page past.
+- **Slot A → Neurology t07 "Headache", from Q119.** Topic 06's answers end on book p.26 and **PDF 32
+  (book p.27) opens t07 at Q119** — confirmed by slot A's own one-past render, so the boundary is
+  already known and needs no probing. Grounding deck: `L7) Headache`.
+- **Slot B → Psychiatry t16 "Anxiety & Related Disorders", from Q19.** **PDF 73 (book p.68) opens it
+  at Q19** — likewise already confirmed. Grounding: `L7) Anxiety disorders` plus `L4,5) Psychiatric
+  symptomatology`.
 
-```bash
-pdftoppm -png -r 130 -f 19 -l 27 "…/neuropsychiatry & neurosurgery qb.pdf" "<scratch>/np/t0405"
-```
-
-**PDF 19 is already rendered and read** — it holds Q55–Q61, and **Q58 and Q61 are already visible as
-multi-answer** (*"Choose as many as applicable"*), so expect more cases. Q58 also prints an option
-**"e. C and D"**, which is a *combined* option rather than a multi-answer instruction — that one
-stays an ordinary MCQ.
+**⚠️ Both boundaries were established by the mandatory one-page-past render. That is the whole reason
+that rule exists — it pays for the NEXT topic, not the current one.**
 
 **Standing checks for every batch from here:**
 
-- **⚠️ Check each answer's LETTER against its printed NAME** (§7).
+- **⚠️ Check each answer's LETTER against its printed NAME** (§7) — *where the bank prints a name at
+  all.* Topics 05 and 06 print **bare letters**, so the check is simply unavailable there; say so
+  rather than implying it passed.
 - **⚠️ Repair every back-reference and restate every header vignette** — the deck is shuffled.
 - **⚠️ Predict the authored-marker delta before splicing**, then confirm it moved by exactly that.
+  Four batches running, four exact matches.
 - **⚠️ Render one page past the last answer page.**
-- Grounding decks: `L10) Stroke` for topic 04, `L8) Cranial nerves` for topic 05.
+- **⚠️ Re-sweep a subagent's batch against everything spliced since it started reading** (§6a item 1).
+- **⚠️ A multi-answer question goes to `cases.neuro.js`; a *combined* option ("e. C and D") stays an
+  ordinary MCQ.** Both shapes appeared in topic 04.
 
-Then topic 06 (*Hemiplegia & Paraplegia*, book pp.22–26) — `L12) hemi,parap&ataxia` covers it in
-full, so expect heavy grounding and few gaps.
+---
+
+## 10. Owed before this module can be called done
+
+1. **`Neuro endpoint.pdf`** — not started. Prefix `npep-`. **Sample the first ten pages for
+   structure before staging anything**; endpoint's ENT file printed every question twice at a rate
+   that varied 42–100 % with no trend. **The moment endpoint entries exist, the cross-bank sweep
+   becomes real for this module for the first time**, and `alsoIn` folds become possible.
+2. **Grade Gain Neurology t07–t14 and Psychiatry t16–t23.**
+3. **Theory notes for all 27 chapters** — in scope by the user's ruling of 2026-08-12, which
+   overruled the brief's §9. One chapter per subagent once the banks are closed.
+4. **⚠️ The five-option cap in `app\index.html` (§4a) is now WORSE than first reported.** Topic 06
+   holds **six questions with TEN options**, and the bank's own printed letters for that matching set
+   are **non-contiguous — A B C D E F J k L M** (G, H and I are skipped). So `'ABCDE'[i]` yields
+   `undefined` beyond the fifth option, and even a corrected `String.fromCharCode(65+i)` would render
+   index 6 as "G" where the book prints "J". **The option TEXT and the scoring are correct** — only
+   the badge letter is wrong — and each entry's `source` records the printed letter as a fallback.
+   **`index.html` is not this chat's file to edit. Still awaiting the user's decision.**
+5. **Neurosurgery stays excluded** — the user's standing instruction, ~273 questions, book pp.94–136.
