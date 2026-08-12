@@ -104,7 +104,7 @@ questions 17–22.
 | # | Topic | Book pp. | PDF pp. | Promised | Printed | Status |
 |---|---|---|---|---|---|---|
 | 01 | Neurological Sheet | 1–3 | 6–8 | 22 | **22** | ✅ read, transcribed, written |
-| 02 | Localization | 4–6 | 9–11 | 12 | **12** (Q23–34) | read; not yet written |
+| 02 | Localization | 4–6 | 9–11 | 12 | **12** (Q23–34) | ✅ read, transcribed, written |
 | 03 | Ischemic Cerebrovascular Stroke | 7–13 | 12–18 | 20 | — | not read |
 | 04 | Hemorrhagic Cerebrovascular Stroke | 14 | 19 | 7 | — | not read |
 | 05 | Cranial Nerves Disorders | 14–21 | 19–26 | 27 | — | not read |
@@ -191,11 +191,13 @@ The module has no neurosurgery chapter and none is needed now. Within the 27 rea
 
 | | |
 |---|---|
-| **Transcribed verbatim** | topic 01 (22), topic 02 (12) → `content\neuro\qb-pages\` |
-| **Written into `questions.neuro.js`** | **22** (topic 01, `npqb-nr-1` … `npqb-nr-22`) |
-| **Written into `cases.neuro.js`** | 0 |
+| **Transcribed verbatim** | topics 01 and 02 → `content\neuro\qb-pages\` |
+| **Written into `questions.neuro.js`** | **31 MCQs** |
+| **Written into `cases.neuro.js`** | **3 cases** (the multi-answer questions, §4) |
 | **Folded** | 0 |
-| **Reconciliation** | topic 01: 22 printed = 22 written + 0 folded ✅ |
+| **Reconciliation** | **34 printed (Q1–Q34) = 31 MCQs + 3 cases + 0 folded ✅**, every id present exactly once |
+
+Chapters so far: `nr-intro` 22, `nr-cranial` 7, `nr-hemi` 4, `nr-movement` 1.
 
 **Within-bank duplicate sweep:** run from the start, since a bank reprints itself. **No cross-bank
 sweep is possible or useful** — this module has one bank and House was never supplied.
@@ -212,6 +214,22 @@ sweep is possible or useful** — this module has one bank and House was never s
 | `npqb-nr-7` | prints an explanation that **stops mid-sentence** — *"…can lead to upper motor neuron lesions (UMNL),"* | transcribed verbatim as printed, then completed in the written text below it |
 | `npqb-nr-16` | prints only **three** options (a/b/c) | verified at 200 dpi — not a rendering cut. Held as a 3-option question |
 | `npqb-nr-18` | stem begins with a stray `.` — *".A patient can move their leg…"* | stripped |
+| **`npqb-nr-23`** | **⚠️ THE KEY'S LETTER CONTRADICTS THE KEY'S NAME** — prints *"CORRECT ANSWER: **C.** Motor Cortex"*, but Motor Cortex is option **b** and option **c** is Somatosensory Cortex | **The NAME is authoritative**: motor cortex is the only option that paralyses a limb, and the bank's own box says the *others* do "cognitive, sensory, and visual processing". Written as index 1 |
+| `npqb-nr-26` | printed box names the **ventrolateral (VL)** nucleus as the thalamic relay for touch | VL is a **motor** relay; touch relays in the **ventral posterolateral (VPL)**. The box's conclusion is unaffected |
+| `npqb-nr-28` | printed box says a basal ganglia lesion *"causes Huntington's disease"* | the causation is backwards — `L3) MOVEMENT DISORDERS` calls Huntington's *"an autosomal dominant hereditary disorder"* whose pathogenesis is atrophy **of** the caudate and putamen |
+| `npqb-nr-29` | printed box only defines what hypertonia *is* | it never says why the answer is motor cortex then basal ganglia — it answers a different question |
+| `npqb-nr-34` | printed box ends mid-flow with no full stop | transcribed as printed |
+
+### ⚠️⚠️ THE LETTER/NAME MISMATCH IS A NEW DEFECT SHAPE AND IT CHANGES THE READING PROCEDURE
+
+`npqb-nr-23` is the first key in this project whose **letter and name disagree**. Reading the letter
+alone would have keyed *Somatosensory Cortex* for a question about limb paralysis — **a silently
+wrong answer that no validator can ever catch**, because the entry would be perfectly well-formed.
+
+**FROM NOW ON, CHECK EVERY ANSWER BOTH WAYS: resolve the letter against the option list AND read the
+name the bank prints beside it.** All 34 answers so far were re-checked; **Q23 is the only mismatch**,
+and in the three multi-answer keys the letters and names agree (the names are simply printed in the
+other order).
 
 **Transcription artefacts corrected silently** (the source's own typos, kept out of the app):
 `Latera!` → *Lateral* (Q5b), `Trigimnal` → *Trigeminal* (Q6a), `spastisity` → *spasticity* (Q2c),
@@ -219,38 +237,52 @@ sweep is possible or useful** — this module has one bank and House was never s
 
 ---
 
-## 8. Verification of the topic 01 batch — run 2026-08-12, all green
+## 8. Verification after topics 01 and 02 — run 2026-08-12, all green
 
 Node validator over all nine data files plus `modules.js`:
 
 | Check | Result |
 |---|---|
-| Parse | all files parse; `Q_NEURO` = **22** |
-| Reaching the aggregator | **22** `npqb-` entries in `QUESTIONS`, 22 with `module:'neuropsych'` |
+| Parse | all files parse; `Q_NEURO` = **31**, `C_NEURO` = **3** |
+| Reaching the aggregator | all 34 in `QUESTIONS` with `module:'neuropsych'` |
 | Bad module / chapter refs, duplicate ids, out-of-range answers, missing source/explanation | **0** |
-| **Authored marker at the END of `explanation`** | **21** — predicted 21 (22 written − 1 boxed) ✅ |
+| Case schema — `answer` a string, ≥1 key, every key with a label and terms | **0 faults** |
+| **Reconciliation** | **34 printed (Q1–Q34) = 31 + 3 + 0 folded ✅**, ids 1–34 each present once |
+| **Authored marker at the END of `explanation`** | **21** — unchanged from topic 01, **exactly as predicted**, because all twelve of topic 02 were boxed |
 | **Marker wrongly in `source`** | **0** ✅ (the fault that cost ENT fourteen entries) |
-| Chapters | `nr-intro` 13, `nr-cranial` 5, `nr-hemi` 4 = 22 ✅ |
-| Option counts | `{3:2, 4:19, 5:1}` — matches the printed page exactly |
-| Explanation length | 399–559 words, mean **482** |
-| Reconciliation | **22 printed = 22 written + 0 folded** ✅ |
+| Chapters | `nr-intro` 22, `nr-cranial` 7, `nr-hemi` 4, `nr-movement` 1 = 34 ✅ |
+| MCQ option counts | `{3:3, 4:27, 5:1}` — matches the printed pages |
+| Dead backticked **neuro** ids | **0** |
 
-**⚠️ The validator reports 7 dead backticked ids, all `pedhd-inf-*`. They are the PEDIATRICS chat's
-file mid-batch, not this module's.** Do not touch them and do not treat them as a neuro failure.
+**⚠️ A counter that did NOT move is only correct because it was PREDICTED not to move.** The marker
+count held at 21 across a twelve-entry batch — which would be a red flag under any other
+circumstances, and is the right answer here. **Always predict the delta before splicing.**
+
+**Case grading was simulated against the real algorithm** (normalise, then any term of a key matching
+scores that key). Results: full answers score 2/2, partial answers 1/2, wrong answers 0/2, and the
+near-miss *"thalamus"* correctly scores **0/2** against `npqb-nr-27` rather than matching
+*hypothalamus*.
+
+**⚠️ The validator also reports dead backticked ids beginning `pedhd-`. They belong to the PEDIATRICS
+chat's file mid-batch, not this module.** Do not touch them and do not treat them as a neuro failure.
 
 ## 9. Next concrete action
 
-**Write topic 02 (*Localization*, Q23–34, book pp.4–6, PDF 9–11).** Already rendered and read; the
-verbatim transcription still has to be written into `content\neuro\qb-pages\nr-t02-localization.md`
-before the entries.
+**Render, read and write topic 03 — *Ischemic Cerebrovascular Stroke*, book pp.7–13 = PDF 12–18,
+starting at Q35. 20 promised, expect more.**
 
-- **Three of the twelve are multi-answer** — Q24 keys `A + B`, Q27 keys `B + C`, Q28 keys `D + E`.
-  They go to `cases.neuro.js` per §4, keeping the printed option list verbatim inside the `stem`.
-  The other **nine** are ordinary MCQs for `questions.neuro.js`.
-- **⚠️ Every one of the twelve carries a printed explanation box**, so the **predicted authored-marker
-  delta for this batch is 0.** Confirm that after splicing — a marker count that moves is a fault.
-- Q34 prints **three** options.
+```bash
+pdftoppm -png -r 130 -f 12 -l 19 "…/neuropsychiatry & neurosurgery qb.pdf" "<scratch>/np/t03"
+```
 
-Then topic 03 (*Ischemic Cerebrovascular Stroke*, book pp.7–13, PDF 12–18) — render, **read every
-page**, and **render one page past the last answer page**. It opens with a **header vignette over
-Q38–41** (see §4); check where that block stops before assuming Q42 inherits it.
+- **⚠️ Render PDF 19 as well** — one page past the expected last answer page, every time.
+- **⚠️ It opens with a header vignette.** Book p.7 prints *"A 60 year-old male patient presented to
+  the ED complaining of weakness of the right upper limb and the right side of the face. Questions
+  below will be related to this scenario"* above **Q38–41**. Restate it into each question that
+  inherits it, and **check where the block stops** rather than assuming Q42 does.
+- **⚠️ Check every answer's letter against its printed name** — see the box at the end of §7.
+- `L10) Stroke.txt` is the grounding deck, with `L12) hemi,parap&ataxia` for the vascular
+  territories (its MCA/ACA/PCA list) and `L1)` for the pyramidal anatomy.
+
+Then topic 04 (*Hemorrhagic stroke*, book p.14) and topic 05 (*Cranial Nerves Disorders*, book
+pp.14–21) — **both start on book p.14, so the topic boundary falls mid-page.**
