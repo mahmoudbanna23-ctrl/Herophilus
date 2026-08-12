@@ -140,6 +140,29 @@ Verified: PDF p.2 shows book pp. 2 and 3; PDF p.8 shows book pp. 14 and 15.
 | II | Pediatric **surgery** end-of-round MCQs | 149 | 75 (right half) | — | **❌ OUT OF SCOPE** — user's ruling |
 | III | Pediatric **surgery** OSCE spots | 181 | 91 | — | **⏸ DEFERRED** — its own section, last |
 
+### ✅ The page map is MEASURED, not trusted — nine anchors verified 2026-08-12
+
+After finding the contents page wrong by 16 on one chapter, four further boundaries were
+spot-checked across the whole range by rendering the top banner band of each candidate sheet.
+**All four are exact.** So the contents page is reliable for chapter *starts*, and the Malignant
+disease entry is an isolated typo rather than a pattern — but it was only found by looking.
+
+| PDF p. | Book pp. | What is actually printed there |
+|---|---|---|
+| 2 | 2 \| 3 | Contents; **Infection and immunity** banner |
+| 8 | 14 \| 15 | ch.1 tail; **Kidney & urinary tract disorders** banner |
+| 13 | 24 \| 25 | **Cardiac disorders** banner, numbering restarts at 1 |
+| 25 | 48 \| 49 | ch.5 Genetics tail (its Q19); **Perinatal medicine** banner |
+| 41 | 80 \| 81 | ch.10 Nutrition tail (its Q15); **Gastroenterology** banner |
+| 56 | 110 \| 111 | ch.13 Respiratory tail (its Q27); **Diabetes & endocrinology** banner |
+| 64 | 126 \| 127 | **Pediatric emergencies** banner on the LEFT half |
+| 71 | 140 \| 141 | ch.19 Liver tail; **Malignant disease** banner ⚠️ *not p.125* |
+| 75 | 148 \| 149 | ch.20 tail (its Q22); **Pediatric surgery** — the stop line |
+
+**The spread formula is confirmed on both parities** — an odd book page on the right half (49, 81,
+111, 141, 149) and an even one on the left (126, 148). Free minimum counts fell out of it:
+**Genetics ≥ 19, Nutrition ≥ 15, Respiratory ≥ 27** questions.
+
 ### ✅ The contents page's one page error is now resolved — verified 2026-08-12
 
 The contents page prints **Malignant disease as p.125**, which cannot be right: 125 sits inside
