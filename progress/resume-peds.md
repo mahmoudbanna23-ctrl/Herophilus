@@ -11,9 +11,19 @@ work up cold.
 
 ## Resume here
 
-**▶ NEXT ACTION: render PDF pp. 8–13 (book pp. 15–25) and transcribe chapter 2, "Kidney & urinary
-tract disorders".** Chapter 1 is closed. Chapter 2's questions restart at 1 and run from book p.15;
-the contents page puts chapter 3 at p.24, so render **through PDF p.13** to catch the overrun.
+**▶ NEXT ACTION: render PDF pp. 13–18 (book pp. 24–35) and transcribe chapter 3, "Cardiac
+disorders".** Chapters 1 and 2 are closed. **PDF p.13 is already rendered** at `<scratchpad>\pd\` and
+shows chapter 3 opening on book p.24 with the numbering restarting at 1; its Q1–Q6 are already
+visible there. The contents page puts chapter 4 at book p.32, so render **through PDF p.18**.
+
+**Chapter 3 already shows a figure at Q6** — a phonocardiogram/ECG trace labelled A₂ and P₂, printed
+beside the question. It is a **diagram, not a photograph**, so transcribe it as markdown in the stem
+rather than cropping it if the labels can be rendered faithfully; crop only if they cannot.
+
+**Lectures for chapter 3** (list the directory before citing): `33)Congenital acyanotic heart
+disease_.txt`, `35)Cyanotic CHDs.txt`, `34)Students Obstructive diseases.txt` — **note this last one
+is CARDIAC outflow obstruction despite sounding respiratory** — `36)Myocardial diseases.txt`
+(arrhythmias, SVT, myocarditis, Kawasaki, endocarditis) and `37)RF.txt`.
 
 ---
 
@@ -60,8 +70,8 @@ Verified: PDF p.2 shows book pp. 2 and 3; PDF p.8 shows book pp. 14 and 15.
 | # | Topic | Book p. | PDF p. | My chapter id | State |
 |---|---|---|---|---|---|
 | 1 | Infection & immunity | 3 | 2 | `infection` | **✅ DONE — 31 questions** |
-| 2 | Kidney & urinary tract disorders | 15 | 8 | `renal` | ▶ next |
-| 3 | Cardiac disorders | 24 | 13 | `cardiac` | |
+| 2 | Kidney & urinary tract disorders | 15 | 8 | `renal` | **✅ DONE — 26 questions** |
+| 3 | Cardiac disorders | 24 | 13 | `cardiac` | ▶ next |
 | 4 | Haematological disorders | 32 | 17 | `haematology` | |
 | 5 | Genetics | 42 | 22 | `genetics` | |
 | 6 | Perinatal medicine | 49 | 25 | `perinatal` | |
@@ -126,14 +136,26 @@ you finish everything else."* Do not transcribe it, and do not quietly reinstate
 | | Printed | Written | Folded |
 |---|---|---|---|
 | Ch.1 Infection & immunity | 31 | 31 | 0 |
-| **Total** | **31** | **31** | **0** |
+| Ch.2 Kidney & urinary tract | 26 | 26 | 0 |
+| **Total** | **57** | **57** | **0** |
 
-Written + folded = printed. ✅
+Written + folded = printed. ✅ Verified in Node: `Q_PEDS` = 57, `{infection:31, renal:26}`.
 
-**Duplicate sweep:** a within-bank sweep of chapter 1 against itself returned nothing — expected,
-since it is the first chapter and the module started empty. **There is no second Pediatrics bank
-transcribed yet, so no cross-bank sweep is possible or meaningful.** Start sweeping in earnest from
-chapter 2 onward, against everything already in `Q_PEDS`.
+**Duplicate sweep — 0 folds so far, and the zero is explained.** There is no second Pediatrics bank
+transcribed, so **no cross-bank sweep is possible yet**; this is a within-bank sweep only.
+
+Chapter 2 contains two option-list families that look like reprints and are not:
+
+- **Q10–Q14** share the list *Balanitis / Glomerulonephritis / Nephrotic syndrome (or Renal stone) /
+  Perineal contamination / UTI*. Five different vignettes, **four different keys** — decided by how
+  the sample was collected and what grew. **A shared option list is not a fold when the keys differ.**
+- **Q15–Q18** share *DMSA / urinary electrolytes / urine microscopy / ultrasound / plasma creatinine*.
+  Four vignettes, three different keys.
+
+**⚠️ These two families are exactly the blind spot `START-HERE.md` §6 warns about** — a short generic
+option menu scores 1.00 at the option-token stage against questions it has nothing to do with. Both
+were resolved by **reading the stems**, not by a score. Expect the same in later chapters; the bank
+clearly likes this format.
 
 ---
 
@@ -168,8 +190,18 @@ discrepancy is a note.** Never taken to the user.
 | `pedhd-inf-13`, `-14`, `-16` | Printed *"the the most appropriate NEXT step"*. Typo repaired silently. |
 | `pedhd-inf-26` | **An option worded ambiguously enough to change the answer.** Asks which pathogen is *not* associated with vesicular lesions; keys *"Human herpesvirus"* (E). `infectious diseases causing vesicular rash.txt` opens with a three-item list — *"Varicella/zoster disease, **Human herpes infection**, Coxsackie infections"* — which reads as though E belongs on the vesicular list and **C, Staphylococcus aureus, is the odd one out**. The key is nonetheless defensible: HSV is already offered separately as D, so an unnumbered *"Human herpesvirus"* can only mean **HHV-6/7**, whose rash (roseola) is maculopapular — and Staph aureus does blister, as bullous impetigo. **Keyed E as printed; both readings spelled out in the explanation.** |
 
-**No mis-keyed answers of the classic kind found in chapter 1** beyond `-26`. Keep looking — every
-bank mis-keys itself somewhere.
+**Chapter 2:**
+
+| Question | Defect |
+|---|---|
+| `pedhd-renal-22` | **A unit error that makes the value impossible.** Prints *"creatinine 200 **mmol/L**"*; creatinine is measured in **µmol/L**. The bank's own Q8 prints the same figure correctly as *"200 µmol/L (normal 20–80)"*. **Corrected in the stem** — unlike a disputed *key*, an impossible *unit* makes the question unanswerable rather than merely arguable — and the discrepancy is noted in the explanation. |
+| `pedhd-renal-4` | **Explicit back-reference** — printed as *"In Johnathan's particular case (the previous question)"*. Vignette restated. The bank also spells the boy **Jonathan** in Q3 and **Johnathan** in Q4. |
+| `pedhd-renal-7` | **Back-reference** — *"Freddie's condition"*, with the vignette only in Q6. Restated. |
+| `pedhd-renal-24` | Option B prints *"**>105** white blood cells/mL"* — a lost superscript for 10⁵. It is a **false** option anyway (the 10⁵ threshold is a colony count of organisms, not white cells), so the typo does not change the key. Set as **10⁵** in the entry. |
+| `pedhd-renal-9` | Prints *"drink waterfrom a bottle"* — missing space. Repaired silently. |
+
+**No mis-keyed answers of the classic kind found in either chapter** beyond ch.1 `-26`. Keep looking
+— every bank mis-keys itself somewhere, and 57 questions in, this one has not yet.
 
 ---
 
@@ -190,6 +222,22 @@ grounded on:
 - `32)Acute bronchiloitis_.txt` — RSV, admission and PICU criteria.
 - `23).1) Acute diarrhea.txt` — **the dehydration plans A/B/C and the 20 ml/kg shock bolus.**
 
+Chapter 2 was grounded on:
+
+- `38)UTI.txt` — **the richest single file used so far.** Carries the cystitis-vs-pyelonephritis
+  split, the **urine collection reliability table** (bag = *"Unacceptable"*), the **>10⁵ CFU/ml**
+  threshold, contamination as *"a growth of mixed organisms"*, the **<3 months → IV antibiotics**
+  rule, the simple/atypical/recurrent classification, and the imaging timings (US at 6 weeks or
+  48–72 h if atypical; MCUG at 2–3 weeks; **DMSA only after 2 months**, or false scars are read).
+- `41)Proteinuria -1.txt` — nephrotic syndrome, and the six features of **minimal change disease**
+  (1–10 yr, boys, no macroscopic haematuria, normal BP, normal complement, normal renal function),
+  its **85–90%** share, and the four complications.
+- `39)Hematuria.txt` — glomerular vs extra-glomerular localisation, **RBC casts pathognomonic**,
+  APSGN in full (latent period **1–2 weeks throat / 3–6 weeks skin**, *"C3 depression is the most
+  common positive lab finding"*, 90%), and **HSP/IgA vasculitis** with its renal outcome figures.
+- `40)Congenital anomalies of the kidneys and the urinary tracts 5 th year.txt` — CAKUT, **PUV
+  "occurs in males only"**, renal agenesis → **Potter sequence**, and the investigation table.
+
 **⚠️ Gaps found — filled from general knowledge and tagged in the explanation**, per the user's
 2026-08-04 instruction:
 
@@ -202,6 +250,15 @@ grounded on:
   *"Egyptian compulsory vaccination schedule"* whose **tables did not extract**, so the schedule
   itself is not in the cache. Not needed by chapter 1, but it will be. **If a later chapter turns on
   the schedule, render those slides visually rather than guessing.**
+- **Chapter 2 gaps** — the **urease/struvite mechanism** behind Proteus stones, the **Shiga-toxin**
+  basis of HUS and its O157:H7 association, the differential for **secondary enuresis**, the
+  **electron-microscopic** appearance of minimal change disease, and the **Gram morphology table**
+  (chains vs clusters vs bacilli). All answered in full and tagged; none is a dead end.
+- **⚠️ Two lecture files are misleadingly named — do not go by the title.**
+  `34)Students Obstructive diseases.txt` is **cardiac** outflow obstruction (aortic stenosis,
+  pulmonary stenosis, coarctation), *not* airway obstruction. And `Vitamin deficiency Rickets.txt`
+  is the only file in the cache mentioning *croup* and *whooping*, because it discusses
+  **hypocalcaemic laryngospasm** — it is not a respiratory lecture.
 
 ---
 
