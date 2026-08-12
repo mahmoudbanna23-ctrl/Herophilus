@@ -333,16 +333,69 @@ that lets your work be picked up cold after a compaction. It must always answer:
 
 ---
 
-## 9. Scope — what NOT to do
+## 9. Scope — the whole module, in the cheapest order
 
-- **Do not write theory notes.** `theory.<yours>.js` stays empty. It is an enormous separate job and
-  no module has any. Questions with full explanations *are* the study material.
-- **Do not touch the app's design, the Clepsydra, the schedule, or the gate.**
-- **Do not attempt the module's `endpoint` PDF unless your module file tells you to.** They run
-  2,000–4,000 pages for ~700 questions; the compact banks run ~150 pages for ~1,000. Measured
-  2026-08-12. **Your module file names the order to work in — follow it.**
-- **Do not read a whole PDF.** Explicit page ranges only.
-- **Cache everything you read.** A scanned page should be rendered and read once, ever.
+**⚠️⚠️ THE PARALLEL CHATS EXIST TO GO FASTER, NOT TO DO LESS — the user's explicit correction,
+2026-08-12: *"I don't want in your brief to ignore any questions or any important thing in the
+theoretical notes. I did the separate chats to speed up not to have unfinished work."***
+
+**Your module's full scope is: every question in every bank it has, then its theory notes.** The
+ordering below is about **sequencing for value, not about dropping anything.** Nothing on this list
+is optional, and **you may not quietly narrow it.**
+
+### The order, and why
+
+1. **The compact bank(s) first** — Grade Gain and/or House, ~100–185 pages each.
+2. **Then the endpoint file** — 2,000–4,000 pages. It is **in scope and must be done**; it goes last
+   only because it runs **4.4 pages per question against the compact banks' 0.17** (measured
+   2026-08-12), so the same hours buy far more coverage earlier in the compact books.
+3. **Then the theory notes for the module** — see below.
+
+**⚠️ Tell the user where you are at each handover between those three.** Not to ask permission to
+continue — to keep them informed about pace so the decisions stay theirs.
+
+### Theory notes are IN SCOPE, and the brief for them is demanding
+
+**⚠️ THE THEORY IS A NEW STUDY SOURCE, NOT A SUMMARY OF THE LECTURES** — the user's instruction of
+2026-08-04. It must be **sufficient to study and sit the exam from, on its own**, without opening a
+slide deck or a book. Verbatim: *"I want the study notes to be sufficient for me to depend on for my
+studying… It doesn't necessarily need to be short if it ignores important parts of the lecture."*
+
+**Length is never the goal. Completeness of the important is the goal. Dropping something important
+to keep it short is the one unacceptable failure.** If a chapter needs 4,000 words, it gets 4,000.
+
+Write it **backwards from the questions**: read the chapter's transcribed question set first, work
+out what examiners actually test, then structure the notes around that. **The hard floor is that
+every question in a chapter must be answerable from that chapter's notes alone.**
+
+**Four tests for "important" — anything meeting ONE of them is in:** (1) the bank asks it, including
+as a *wrong* option, since knowing why it is wrong is what the exam tests; (2) the slides give it
+weight — a whole slide, a table, a bolded or repeated line; (3) clinical judgement — it changes
+management, it is an emergency, it distinguishes two look-alikes, or missing it harms a patient;
+(4) it is a named entity, a classic sign, or a number the material states.
+
+**What may be dropped, and it must be SAID that it was dropped:** history-of-the-specialty asides,
+epidemiology with no bearing on an answer, drug doses the material does not state, mechanism deeper
+than the material goes, and anything the slides mention once that no question touches. **Record the
+omissions per chapter, so a gap is a decision on the record rather than an accident.**
+
+Full schema, the `w` weighting, `intro`, tables and flowcharts: `CLAUDE.md` §4 under *Theory*.
+**Prefer discrimination tables wherever a question turns on telling two look-alikes apart, and
+populate `qs` so the question↔notes linking works.**
+
+### Genuinely out of scope
+
+- **The app's design, the Clepsydra, the schedule, the gate** — do not touch any of them.
+- **Reading a whole PDF in one go.** Explicit page ranges only — that is a method rule, not a scope
+  cut; every page still gets read.
+
+**Cache everything you read.** A scanned page should be rendered and read once, ever.
+
+### ⚠️ If you cannot finish, SAY SO LOUDLY — never scale the work down silently
+
+Scaling the work down is the user's call, not yours. If time or context runs short, **finish what
+you are on, write the exact resume state, and report plainly what is left and why.** Never trim a
+bank, skip a topic, thin an explanation or shorten the notes to make the remainder fit.
 
 ---
 

@@ -31,17 +31,21 @@ for it. Page counts measured 2026-08-12 with `pdfinfo`.
 | **2nd** | Endpoint | `Semester 8\Pedo\Questions\Pediatrics endpoint part1.pdf` | **1,991** | Id prefix **`pedep-`** |
 | **3rd** | Endpoint | `Semester 8\Pedo\Questions\Pediatrics endpoint part2.pdf` | **1,993** | same prefix, continuous numbering |
 
+**Then the module's theory notes**, per `START-HERE.md` §9. **Both banks and the theory are your
+scope; the order is about sequencing, not about dropping anything.**
+
 **⚠️ YOUR MODULE IS THE ODD ONE OUT: your compact bank is the smallest of any module (104 pages),
-so you will exhaust it soonest and face the 3,984-page endpoint pair.** Two consequences:
+so you will reach the 3,984-page endpoint pair soonest.** Two consequences:
 
 1. **Work the House bank first and completely.** It is the cheapest coverage in the project.
-2. **When it is done, STOP AND TELL THE USER what you found** — how many questions it yielded and
-   how the endpoint file is structured on its first ten pages — **before** committing to a
-   4,000-page read. That is a scope decision, and it is theirs. Do not silently start it.
+2. **When it is done, TELL THE USER what you found** — how many questions it yielded and how the
+   endpoint file is structured on its first ten pages — **and then carry straight on into the
+   endpoint pair.** Report it so they can see the pace and steer; **do not wait for permission, and
+   do not treat the endpoint file as optional.**
 
 **Why this order:** ENT's endpoint file ran **3,075 pages for 697 questions** — 4.4 pages per
 question. The compact banks run about **0.17 pages per question**, roughly **25× more productive per
-page read.** With the exam close, that ratio is the whole argument.
+page read**, so doing House first means the same hours buy far more coverage earlier.
 
 **⚠️ Confirm the bank identity by rendering page 1 before assigning `bank`.** In ENT, `ENT QB.pdf`
 turned out to be Grade Gain and `ophthalmology MCQ.pdf` is House — neither was guessable from its

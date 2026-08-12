@@ -32,11 +32,16 @@ for it. Page counts measured 2026-08-12 with `pdfinfo`.
 | Order | Bank | File | Pages | Notes |
 |---|---|---|---|---|
 | **1st** | **Grade Gain** | `Semester 8\Neuro\Questions\neuropsychiatry & neurosurgery qb.pdf` | **142** | Id prefix **`npqb-`**. ⚠️ The `&` in the filename breaks some shells — **quote the whole path** |
-| **stretch only** | Endpoint | `Semester 8\Neuro\Questions\Neuro endpoint.pdf` | **2,190** | Id prefix **`npep-`**. **Do not start this** unless Grade Gain is finished and the user says so |
+| **2nd** | **Endpoint** | `Semester 8\Neuro\Questions\Neuro endpoint.pdf` | **2,190** | Id prefix **`npep-`**. **In scope and to be done** — second only because it is the most expensive per question |
+
+**Then the module's theory notes**, per `START-HERE.md` §9. **Both banks and the theory are your
+scope; the order is about sequencing, not about dropping anything.**
 
 **Why that order:** ENT's endpoint file ran **3,075 pages for 697 questions** — 4.4 pages per
 question. Grade Gain ran **185 pages for ~1,080** — 0.17 pages per question, roughly **25× more
-productive per page read.** With the exam close, that ratio is the whole argument.
+productive per page read**, so doing it first means the same hours buy far more coverage earlier.
+**⚠️ Tell the user when you finish the Grade Gain book** — not to ask permission to carry on, but so
+they can see the pace and steer if they want to.
 
 **⚠️ Confirm the bank identity by rendering page 1 before assigning `bank`.** In ENT, `ENT QB.pdf`
 turned out to be Grade Gain and `ophthalmology MCQ.pdf` is House — neither was guessable from its

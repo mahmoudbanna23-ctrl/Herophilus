@@ -28,11 +28,16 @@ Three exist. **The page arithmetic decides the order** — measured 2026-08-12 w
 |---|---|---|---|---|
 | **1st** | **Grade Gain** | `Semester 8\Opthalmo\Questions\ophthalmology qb.pdf` | **185** | Id prefix **`opqb-`**. ENT's equivalent held ~1,080 questions in 185 pages |
 | **2nd** | **House** | `Semester 8\Opthalmo\Questions\ophthalmology MCQ.pdf` | **126** | Id prefix **`opmcq-`**. ⚠️ Its filename says "MCQ" but **its cover reads *Dr. HOUSE in …*** — identify by the cover, never the filename |
-| **stretch only** | Endpoint | `Semester 8\Opthalmo\Questions\Opthalmology endpoint.pdf` | **2,442** | Id prefix `opep-`. **Do not start this** unless both compact banks are finished and the user says so |
+| **3rd** | **Endpoint** | `Semester 8\Opthalmo\Questions\Opthalmology endpoint.pdf` | **2,442** | Id prefix **`opep-`**. **In scope and to be done** — it is last only because it is the most expensive per question |
+
+**Then the module's theory notes**, per `START-HERE.md` §9. **All three banks and the theory are your
+scope; the order is about sequencing, not about dropping anything.**
 
 **Why that order:** ENT's endpoint file ran **3,075 pages for 697 questions** — 4.4 pages per
 question. Grade Gain ran **185 pages for ~1,080** — 0.17 pages per question. The compact banks are
-roughly **25× more productive per page read.** With the exam close, they are where the value is.
+roughly **25× more productive per page read**, so doing them first means the same hours buy far more
+coverage earlier. **⚠️ Tell the user when you finish each bank** — not to ask permission to carry on,
+but so they can see the pace and steer if they want to.
 
 **⚠️ Confirm each bank's identity by rendering page 1 before assigning `bank`.** In ENT,
 `ENT QB.pdf` turned out to be Grade Gain and `ophthalmology MCQ.pdf` is House — neither is
