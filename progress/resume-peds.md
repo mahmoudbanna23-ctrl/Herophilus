@@ -16,16 +16,33 @@ Background Opus subagents draft one chapter each into `content\peds\qb-pages\*.a
 `*.draft.js`. **This chat is the SOLE WRITER** of `questions.peds.js`, `cases.peds.js`,
 `theory.peds.js`, this file, and every git commit. Subagents touch none of those, ever.
 
-**▶ NEXT ACTION: wait for the two manifests below, then merge ONE batch at a time** —
-sweep → fold → splice → validate → marker delta → reconcile → spot-check → commit → update this
-board. **Slot A first, then B**, so B's sweep runs against a corpus that already contains A.
+**▶ NEXT ACTION: relaunch both slots.**
+**Slot B — DRAFTING ONLY, no rendering**: point it at the completed 89-record staging file
+`content\peds\qb-pages\endpoint-s01-growth-puberty.array.js` and have it write finished entries to
+`endpoint-s01-growth-puberty.draft.js`. **85 of 89 already carry a printed explanation box** — those
+are transcribed verbatim and take **no marker**; only n45, n55, n83 and n87 are authored.
+**Slot A — House ch.4 "Haematological disorders"**, book pp.32–41 = PDF pp.17–21 (render through 22),
+ids `pedhd-haem-`, chapter `haematology`. Lectures: `44)BM FAILURE.txt`,
+`47)Hemorrhagic disorders .txt`, `48)Leukemias.txt`, `Iron deficiency anemia pdf.txt`.
+
+Then merge **one batch at a time** — sweep → fold → splice → validate → marker delta → reconcile →
+spot-check → commit → update this board. **⚠️ From now on the sweep matters for real**: House and
+Endpoint are two banks over one syllabus, so **cross-bank matches take `alsoIn`, never a second
+entry.**
 
 ### Subagent board
 
 | Slot | Bank | Topic | State | Last manifest counts |
 |---|---|---|---|---|
-| **A** | House | ch.3 "Cardiac disorders", book pp.24–31 (PDF 13–16, +1 = 17), ids `pedhd-card-` | **launched** 2026-08-12 | — |
-| **B** | Endpoint | `part1.pdf` — establish identity/offset/structure on pp.1–10, **then** stage section 1 only, ids `pedep-` | **launched** 2026-08-12 | — |
+| **A** | House | ch.3 "Cardiac disorders", book pp.24–31 | **✅ MERGED** 2026-08-12 | 24 printed / 24 drafted / 0 boxed / 0 folded |
+| **B** | Endpoint | `part1.pdf` §1 "Growth & Puberty", PDF pp.5–210 | **⚠️ FAILED mid-run — staging COMPLETE, drafting NOT DONE** | 89 staged / 0 drafted / 85 boxed |
+
+**▶ SLOT B MUST BE RELAUNCHED TO DRAFT ONLY.** It died on a **session/usage limit**, not an error in
+the work. Its phase-1 findings and its full 89-record verbatim staging survived and are **verified
+sound by the hub** (see *The Endpoint bank* below) — `content\peds\qb-pages\endpoint-s01-growth-puberty.array.js`.
+**The relaunch does NOT need to re-render or re-read a single page**: point it at that array and have
+it write finished entries to `endpoint-s01-growth-puberty.draft.js`. That is most of a day's rendering
+already paid for.
 
 **Cap 2 live subagents.** Scale to 3 only after a full day with no rate-limit stalls; drop to 1 after
 any stall or collision. All four module chats share one usage pool.
@@ -52,6 +69,50 @@ structure settled is a success, not a failure.
 
 **Use these numbers for the marker-delta check on the next splice.** Predict the delta *before*
 splicing: `drafted − boxed`. In ENT that check caught five faults, in both directions.
+
+---
+
+## The Endpoint bank — structure settled 2026-08-12, and it is NOTHING like House
+
+`Semester 8\Pedo\Questions\Pediatrics endpoint part1.pdf`, 1,991 pages. Id prefix `pedep-`,
+`bank:'endpoint'`. **Established by reading, and independently re-checked by the hub.**
+
+| | |
+|---|---|
+| **Page offset** | **ZERO — PDF page = printed page.** Not a 2-up spread like House. Verified on pp.2, 3, 4, 5, 20, 30, 210 |
+| §1 "Growth & Puberty" | PDF pp.5–210 · summary slides pp.5–27 · `Questions` divider p.28 · **questions pp.29–209** · closing slide p.210 |
+| §2 "Nutrition" | begins p.211 — which **confirms the contents page's ranges** |
+| Questions in §1 | **89** |
+| Printed explanation boxes | **85 of 89** |
+| Figures | **none at all** — the file's own p.4 says the exam contains no picture questions |
+
+**⚠️ EVERY QUESTION IS PRINTED TWICE** — an unanswered page, then an answered page carrying the same
+stem and options with **the key highlighted in yellow** and usually a bordered explanation box. Only
+the answered printing is staged. **This is the ENT-endpoint trap reproducing exactly**, and it is why
+the module brief ordered the compact bank first.
+
+**⚠️ AND THREE QUESTIONS TAKE A *THIRD* PAGE.** Where the explanation box does not fit, it is printed
+**alone on the page after** the answered page — n39→p107, n59→p148, n60→p151. Those overflows **flip
+the odd/even parity of the answered pages twice**, so *reading alternate pages loses three explanation
+boxes outright*. This is the concrete proof of the standing rule: **read every page, never alternate.**
+
+**⚠️ THE PRINTED QUESTION NUMBER IS NOT AN IDENTIFIER.** Printed numbers run 1–87, but **two numbers
+are printed twice** — 69 appears on pp.169 *and* 171, 81 on pp.195 *and* 197 — so the section holds
+**89** questions, not 87. Established two independent ways: counting yellow highlights (89) and
+reconciling the printed sequence (87 + 2). The staging record therefore carries **both** a true
+sequential `n` and the printed `pr`. **Ids must be built from `n`.**
+
+**⚠️ HUB CORRECTION TO THE STAGING HEADER — the marker delta is +4, not +3.** The file's own header
+says three questions lack a printed box (n45, n83, n87). Counting the records directly gives **four**:
+**n45 (p.119), n55 (p139), n83 (p.197), n87 (p.205)** — it missed n55. So the split is **85 boxed /
+4 authored**, and when this section is drafted and spliced the predicted marker delta is **+4**.
+*A count stated in prose is not the count; the count is what the data says.*
+
+**What this means for scheduling.** Endpoint prints its own explanations for 96% of questions, so
+drafting it is far cheaper per question than House — where **all 81 entries so far are authored**. But
+it costs ~2.3 PDF pages per question against House's ~0.3.
+
+---
 
 ### The merge tool — `content\peds\tools\sweep.js`
 
@@ -233,9 +294,13 @@ you finish everything else."* Do not transcribe it, and do not quietly reinstate
 |---|---|---|---|
 | Ch.1 Infection & immunity | 31 | 31 | 0 |
 | Ch.2 Kidney & urinary tract | 26 | 26 | 0 |
-| **Total** | **57** | **57** | **0** |
+| Ch.3 Cardiac disorders | 24 | 24 | 0 |
+| **Total** | **81** | **81** | **0** |
 
-Written + folded = printed. ✅ Verified in Node: `Q_PEDS` = 57, `{infection:31, renal:26}`.
+Written + folded = printed. ✅ Verified in Node: `Q_PEDS` = 81,
+`{infection:31, renal:26, cardiac:24}`. Marker delta on the ch.3 splice was **predicted +24 and
+measured +24**; markers in `source`: **0**. Corpus-wide at that splice: 2,028 questions, 0 bad
+entries, 0 dead backticked ids.
 
 **Duplicate sweep — 0 folds so far, and the zero is explained.** There is no second Pediatrics bank
 transcribed, so **no cross-bank sweep is possible yet**; this is a within-bank sweep only.
@@ -296,8 +361,60 @@ discrepancy is a note.** Never taken to the user.
 | `pedhd-renal-24` | Option B prints *"**>105** white blood cells/mL"* — a lost superscript for 10⁵. It is a **false** option anyway (the 10⁵ threshold is a colony count of organisms, not white cells), so the typo does not change the key. Set as **10⁵** in the entry. |
 | `pedhd-renal-9` | Prints *"drink waterfrom a bottle"* — missing space. Repaired silently. |
 
-**No mis-keyed answers of the classic kind found in either chapter** beyond ch.1 `-26`. Keep looking
-— every bank mis-keys itself somewhere, and 57 questions in, this one has not yet.
+**~~No mis-keyed answers of the classic kind found in either chapter.~~ SUPERSEDED at chapter 3 —
+the bank does mis-key itself, and it took 81 questions to surface.** `pedhd-card-5` keys *vagal
+manoeuvre* where the lecture says adenosine is first line **and adenosine is on the menu**.
+
+### Chapter 3 (cardiac) — verified against the staged record at merge
+
+| Question | Defect |
+|---|---|
+| `pedhd-card-5` | **Key contradicts the lecture.** Bank keys *vagal stimulation manoeuvre*; `36)Myocardial diseases.pptx` says *"for hemodynamically stable patients, **IV adenosine is the first line**"* and never mentions vagal manoeuvres — and adenosine is **option A**. Keyed E as printed, both readings spelled out. |
+| `pedhd-card-5` | **A false distractor inside a correctly keyed question** — option B offers ***bilateral*** carotid sinus massage, which is never performed. Not the key, so **no key comparison could ever see it**. |
+| `pedhd-card-21` | **The same answer offered twice** — option B *"Streptococcus pyogenes"* and option D *"Group A haemolytic streptococcus"* are one organism, so the menu is really four wide. Key (C, *S. viridans*) unaffected. **Same shape as `pedhd-inf-11`** — the bank does this repeatedly. |
+| `pedhd-card-24` | **Soft conflict with the lecture** — `35)Cyanotic CHDs.pdf` teaches TOF cyanosis as appearing *after* the neonatal period, but the patient is 3 days old. The key is still the only defensible option, since TGA is not on the menu. Noted. |
+| `pedhd-card-23` | An S3 is a normal finding in many healthy children, so *"always pathological"* would be false — but the slide's innocent-murmur criterion is *"no added sounds"*, so the key holds. Noted. |
+| `pedhd-card-11`, `-12`, `-21` | Typos repaired silently: `"His 1respiratory rate"`, `"broadspectrum"`, and `39.5C` with no degree symbol. |
+| `pedhd-card-6`…`-10` | **Back-reference repair** — all five printed *"the opposite figure"*, meaningless once the app renders the figure inline. Changed to *"the figure"*. |
+
+### ⚠️ Chapter 3's defining trap — five questions whose ENTIRE content is a picture
+
+`pedhd-card-6` and `pedhd-card-8` print a **word-for-word identical stem AND an identical option
+list**, and key **different answers** (PDA vs ASD). They hit **stage A at 1.00** — the strict stage —
+and they are **NOT a fold and NOT a self-contradiction**: the discriminator is the phonocardiogram,
+which differs. Verified at merge by reading both traces rather than trusting the manifest — Q6's
+murmur runs continuously **through** A₂/P₂ into diastole (the machinery murmur of a duct); Q8's stops
+before a **widely split** S2 (ASD).
+
+All five figure questions (`-6`…`-10`) score **E = 1.00 against each other**, because their content
+sits in an image no sweep stage can read. **This is the documented blind spot in its purest form: a
+1.00 at stage A that must be rejected.** All five carry `imgEssential:true`, and all five `imgAlt`
+captions name the modality only — *"Phonocardiogram trace of one cardiac cycle, with components of
+the second heart sound labelled"* — so the caption cannot give the answer away. The crops were
+verified distinct **by checksum**, not assumed.
+
+**⚠️ Do not "tidy" these five by merging them or rewriting the shared stem.** The bank prints them
+that way and the picture is the question.
+
+### ⚠️ Process lesson — a drafting agent DELETED apostrophes to dodge the quote hazard
+
+Slot A's draft arrived with **19 possessive apostrophes silently missing** — `the deck s`,
+`the bank s`, `the mother s`, and worst the eponyms **`Gregg s triad`** and **`Ebstein s anomaly`**.
+The agent had avoided the single-quote hazard of `START-HERE.md` §3.2 by *deleting* the apostrophe
+rather than using a curly one, which turns a correctly spelled medical eponym into an error — exactly
+what `CLAUDE.md` §5 forbids.
+
+**Nothing else would have caught it**: the file parsed, validated, spliced and rendered fine.
+
+**⚠️ Grep every incoming draft before splicing:**
+
+```bash
+grep -o "\(deck\|slide\|bank\|mother\|child\|patient\|lecture\|examiner\|Gregg\|Ebstein\|Duke\|Fallot\|Down\|Turner\) s [a-z]" <draft>
+```
+
+Repair script at `<scratchpad>\fixapos.js`; it inserts **U+2019**, which is correct typography *and*
+immune to the hazard. **Tell every future subagent to use curly apostrophes rather than dropping
+them.**
 
 ---
 

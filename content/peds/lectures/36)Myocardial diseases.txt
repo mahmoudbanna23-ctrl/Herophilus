@@ -242,3 +242,102 @@ nd
 
 --- slide 59 ---
 Thank You 
+
+
+=====================================================================
+ADDENDUM — slides 47-57 (INFECTIVE ENDOCARDITIS), recovered 2026-08-12
+=====================================================================
+
+WHY THIS IS HERE. The pptx text extraction above returns only the words
+"Infective endocarditis" for slides 47-57: the entire content of that section is
+pasted-in pictures, not text boxes. Nine of the eleven pictures are .emf
+(Enhanced Metafile) vector objects — ppt/media/image40.emf, image41.emf,
+image42.emf, image43.emf, image46.emf and image51.emf carry the prose. They were
+converted to PNG with System.Drawing (New-Object System.Drawing.Imaging.Metafile,
+drawn at 2x into a Bitmap) and read visually. `strings -e l` on the .emf files
+returns nothing — the glyphs are drawn, not stored as text.
+
+Transcribed verbatim below. Slides 52, 53, 55 and 56 are clinical photographs
+(vegetations, positive blood-culture bottles) with no text.
+
+--- slide 48 (image40.emf) ---
+BACTERIAL ENDOCARDITIS
+Bacterial (or infective) endocarditis is a state of septicemia resulting in
+infection of endocardium which may occur after :
+  • Dental extraction
+  • Central venous catheter.
+  • Cardiac surgery.
+Bacterial endocarditis may affect:
+  • Congenitally abnormal valves.
+  • Rheumatic valve disease.
+  • Cyanotic Congenital heart disease
+  • Shunts e.g. VSD, PDA.
+
+--- slide 49 (image41.emf) ---
+Causative organisms:
+  • Common: Streptococcus viridians, enterococcus faecalis , and Staphylococus
+    aureus
+  • HACEK group ( Haemophilus, Aggregatibacter, Cardiobacterium, Eikenella, and
+    Kingella)
+  • Other microorganisms could also cause ( Pseudomonas , Klebsiella , ……)
+
+--- slide 50 (image42.emf) ---
+Clinical manifestations:
+General non-specific manifestations:
+  • Prolonged fever,                      [bolded on the slide]
+  • Chills, headache, malaise, anorexia.
+  • Easy fatigue.
+  • Arthralgia/myalgia.
+  • Splenomegaly.
+  • Petechiae in the skin and mucous membranes.
+  • Clubbing of fingers, splinter hemorrhages under finger nails if diagnosis is
+    late.
+Cardiac manifestations:
+  • Tachycardia.
+  • New murmurs or changing character of existing murmurs.
+  • Arrhythmias.
+  • Acute or subacute congestive heart failure.
+
+--- slide 51 (image43.emf) ---
+Embolic vascular dissemination :
+  • Major systemic and pulmonary emboli/infarcts and abscesses.
+  • Haematogenous osteoarticular septic complications (i.e. spondylodiscitis)
+  • Mycotic aneurysms.
+  • Intracranial ischaemic/haemorrhagic lesions.
+  • Conjunctival haemorrhages.
+  • Janeway's lesions.
+Immunological phenomena:
+  • Glomerulonephritis.
+  • Osler nodes and Roth spots.
+
+--- slide 54 (image46.emf) ---
+Investigations:
+  • leukocytosis.,Anemia
+  • ↑ESR (may be low in CHF), ↑ CRP.
+  • Positive blood culture (multiple ) (should be repeated several times if
+    negative).
+  • Echocardiographic evidence of valve vegetations, new valve regurgitation,
+    and valve dehiscence
+  • CT heart may detect paravalvular abscess
+  • Urine: microscopic hematuria.
+Diagnosis : Modified Duke's Criteria is used to diagnose infective endocarditis
+( 2 major , one major + 3 minor , 5 minor citeria )
+
+--- slide 57 (image51.emf) ---
+Treatment:
+  • Prophylaxis :  antibiotic prophylaxis against bacterial endocarditis
+  • For culture positive patients: appropriate intravenous bactericidal
+    antibiotics parenterally in large doses for  4 -8 weeks.
+  • If results of blood culture are not available: empirical intravenous
+    antibiotics till blood culture results are available
+
+=====================================================================
+STILL IMAGE-ONLY IN THIS DECK, NOT YET RECOVERED (no chapter-3 question
+turns on them, so they were left):
+  slides 30-39  — the European 2018 consensus criteria for complete Kawasaki
+                  disease, and the Kawasaki clinical photographs.
+  slides 3-9, 12-16, 18, 20-24, 27, 31-39, 42, 44-45 — ECG strips, echo stills,
+                  the normal-ECG and heart-failure-treatment slides.
+Recover them the same way (convert ppt/media/*.emf to PNG and read) if a later
+chapter tests Kawasaki criteria or arrhythmia recognition.
+=====================================================================
