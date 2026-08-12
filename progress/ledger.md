@@ -6644,3 +6644,136 @@ check after the splice as well as after the folds.** Fifth occurrence of the fol
 fault.
 
 **Next: topic 6, "Neck Masses", book p.132 (PDF 141), Q301 onward, 31 promised.**
+
+---
+
+### §14y — Grade Gain **THROAT topic 6, "Neck Masses"** — written (2026-08-12)
+
+**Book pp.132–136 (PDF 141–145). 32 printed against 31 promised — the nineteenth wrong count in
+twenty-three, still always upward, and this time by exactly one. 32 = 29 written + 3 folded. Ids
+`entqb-thr6-301`…`-332`, skipping 320, 326, 330.**
+
+Chapters: `ent-neck` 27, `ent-pharsupp` 2. Two five-option questions survive (Q328, Q329); the third
+(Q330) folded. **Marker delta +29 exactly as predicted** — whole-corpus 1107 → 1136 — because there
+were no boxes to withdraw one.
+
+**⚠️ ZERO EXPLANATION BOXES IN THE WHOLE TOPIC.** p.136 is a **bare key list, Q301–Q332 complete on
+one page**, with no prose anywhere. That is the second-cleanest page structure yet met (after ENR's
+104 boxless pages) and it means **all 29 explanations are authored.** *Box presence remains a
+property of the PAGE: t5 printed seven in 53, t6 printed none in 32.*
+
+**Both boundary defects were ABSENT this time.** The question tail did **not** share the answer page —
+questions end at Q332 on p.135, keys occupy p.136 alone — and the keys did **not** run past it. p.137
+opens *"Chapter 3: Trauma of the neck"* with Q333, **confirmed by rendering it**. Numbering ran
+continuously from topic 5's Q300, as the section rule predicts.
+
+#### Three folds, one of them by a rule that had not fired before at this scale
+
+| GG | Folds into | What decided it |
+|---|---|---|
+| Q320 | `entep-mfe5-29` (p.2454) | Same four options, same key. Grade Gain prints the stem **without** endpoint's parenthetical *"(or solid / hard lateral neck swelling)"* — a **dropped clause** is a reprint. **+`alsoIn`** |
+| Q326 | `entep-throat-105` (p.1627) | Word-for-word stem (GG drops two commas), the same four options in a **different order**, same key. **+`alsoIn`** |
+| Q330 | `entep-throat-79` (p.1563) | Same stem, same key — and **Grade Gain ADDS A FIFTH OPTION**, *"Stridor may develop rapidly"*, which endpoint does not print. **An ADDED distractor is a reprint, not a new question** (§14c–d). **+`alsoIn`** |
+
+**⚠️ Q330 IS THE FIRST FOLD WHERE THE OPTION COUNT ITSELF DIFFERS — 5 against 4.** The added option is
+true and worth keeping: `L4` gives *"respiratory obstruction in 12-24 hrs."* Every previous
+added-distractor fold had matched counts. **The test is the SET, not the length.**
+
+⇒ 32 printed = **29 written + 3 folded**, **+3 memberships**.
+
+#### Sweep
+
+Stage A empty. **Stage B caught all three folds and nothing else** — the cleanest B in the project.
+Stages C and D were noise-heavy as usual (22 and 55 pairs).
+
+**⚠️ A NEW NOISE SHAPE, AND IT IS THE GENERIC-STEM TRAP IN ITS PUREST FORM: ONE EAR-WAX QUESTION
+MATCHED SIX NECK QUESTIONS AT STAGE E.** `entep-ear-126` — *"Which of the following is not true about
+ear wax?"* — ranked top for **Q303, Q307, Q310, Q311, Q312 and Q331** at 0.57–0.80, on the words
+*which, following, true, about* alone. **Fourth chapter running where the E ranking had to be read
+rather than trusted**, and the first where a single unrelated question captured six slots.
+
+Held after side-by-side reading, each for a stated reason:
+
+- **Q301 vs `entep-mfe5-34`** (p.2468) — same option set reordered, same key, but a **different
+  vignette** (2 days vs 3; sore throat and tenderness vs fever and pain). A changed vignette is a new
+  question. **Both are the paediatric-inflammatory-mass question and both banks pair it with an adult
+  contrast on the same page** — GG at Q302, endpoint at p.2466.
+- **Q325 vs `entep-mfe5-19`** (p.2431) — **stage E 1.00, identical stem**, and still not a fold:
+  **all four options are replaced**, endpoint offering midline/lateral × compressible/non-compressible
+  permutations against Grade Gain's four clinical descriptions. **⚠️ This is the counter-example to
+  the ENR rule that "a 1.00 stem match that did not reach A or B is a re-optioned reprint by
+  definition."** That rule was derived from a file reprinting itself; **across banks, a wholly
+  replaced option list is a new question** (§14c–d).
+- **Q327 vs `entep-throat-99`** (p.1611) — two of four options replaced, different age and duration.
+  `entep-throat-30` (pp.1418, 1485) is a third printing of the same family. **Three printings, three
+  option sets, one rule.**
+- **Q323 vs `entep-throat-106`** (p.1629) and **`entqb-thr3-93`** (p.99) — same diagnosis, wholly
+  different vignettes and option sets.
+- **Q324 vs `entep-throat-43`** (pp.1452, 1491) — same key, three of four distractors replaced.
+- **Q315 vs `entep-nose-23`** — pure imaging-menu noise (X-ray / US / CT / MRI).
+
+#### Seven defects recorded beside their keys (2026-08-11 ruling) — none corrected
+
+1. **⚠️⚠️ Q315 AND Q319 KEY DIFFERENT IMAGING MODALITIES FOR THE SAME ORGAN, ONE PAGE APART** — CT as
+   *"most sensitive"*, ultrasound as *"most readily available and informative"*. **Both keys stand,
+   because the stems ask different questions** — but **`L5) NECK MASS.pdf` RANKS NO MODALITY AT ALL**;
+   its list reads only *"1- Imaging. 2- F.N.A. …"*. Both rankings are the bank's own. The word
+   *sensitive* is also loose: MRI has greater soft-tissue sensitivity and ultrasound is better for
+   cystic-versus-solid. Recorded in both entries, cross-linked.
+2. **Q314 keys "matted lymph nodes" as a feature of lymphoma.** `L5` lists lymphoma under
+   constitutional malignancy and **prints no physical signs**. In standard teaching **matting describes
+   tuberculous adenitis or extracapsular metastatic spread**, while lymphoma nodes are rubbery and
+   discrete. **The key is reachable only by eliminating the other three.**
+3. **Q310 option b, asserted TRUE: *"CT is mandatory in hemangioma."*** No slide says so; a superficial
+   infantile haemangioma is a clinical diagnosis and MRI is preferred where imaging is needed in an
+   infant. **Not the key — the sixth defect of the shape no key comparison can see.**
+4. **Q312 option b calls Zenker's *"anterior"* to the laryngocele.** It is **posterior** — the pouch
+   lies retropharyngeally through Killian's dehiscence while a laryngocele exits anterolaterally
+   through the thyrohyoid membrane. **One wrong word in an otherwise sound comparison.** Not the key.
+5. **Q322's key rejects incision and drainage *"as it is a cellulitis."*** Sound as far as it goes —
+   `L4` gives *"no tendency for abscess formation"* and *"a straw-colored exudate, rather than true
+   abscess fluid"* — **but `L4` DOES mandate a rapid submental decompression** incising mylohyoid to
+   open both compartments. The option as worded could be read as excluding all surgery.
+6. **Q331 option b calls the obstructed lesion a *"retention cyst."*** Strictly a **saccular cyst**:
+   an obstructed saccule fills with **mucus**, not air, and `L5` defines a laryngocele as
+   *"**air-filled**"*. The bank collapses the distinction and keys the same causation again at Q332.
+7. **Q323's 65-year-old contradicts `L4`'s *"young patient with poor dentition."*** Recorded; age does
+   not exclude Ludwig's, and the bank is using immunocompromise to explain it.
+
+#### What the topic rests on
+
+**`L5) NECK MASS.pdf` grounds most of it and is unusually quotable** — the **Rule of 7**, the **Rule of
+80**, the **80:20 rule**, the age table, the embryogenesis timeline (which supplies all four of Q303's
+options verbatim), the neck's borders, the branchial cleft derivative map, the thyroglossal and 2nd
+branchial cyst entries, the laryngocele and Zenker's entries, the eight-item investigation order and
+the **"NEVER: incision biopsy"** prohibition. **`L4) PHARYNGEAL SUPPURATIONS.pdf` grounds Ludwig's
+angina completely**, including the detail that settles Q330: *"the lateral pharyngeal wall & tonsil
+are usually displaced medially"* belongs to **parapharyngeal abscess**, not Ludwig's.
+
+**Six points are answered from general knowledge and tagged**, each verified absent from `L5` first —
+which lists the entity as a heading and prints nothing beneath it: **chronic/tuberculous lymphadenitis**
+(Q313), **cystic hygroma** (Q316, Q310), **the infected thyroglossal cyst and the Sistrunk operation**
+(Q307), **laryngocele treatment** (Q329), **laryngocele causation, primary vs secondary** (Q331, Q332),
+and the **imaging-modality comparison** (Q315, Q319). *`L5` is a classification lecture: it names 30-odd
+entities and describes six.*
+
+#### Verified state after the splice
+
+`Q_ENT` **1434**, `QUESTIONS` **1516**, 104 chapters, 4 modules, 4 module cards, **768 CSS rules**,
+**3 `max-aspect-ratio:5/4` blocks**, **0 console errors** in a real `file://` boot. 0 bad chapter or
+module refs, 0 duplicate ids, every answer in range, nothing missing a field, **0 dead ids over 4,460
+backticked references (1,269 distinct)**, 56/56 images loading, 9/9 poses, mojibake clean. Banks:
+**endpoint 697, house 21, gradegain 847** = 1,565 memberships over 1,516 = **49 extra across 48 shared
+questions**. Grade Gain origin **799** = 770 + 29.
+
+**Reconciliation:** Grade Gain **858 printed / 799 written / 59 folded** across Ear (261/241/20),
+Nose (265/247/18) and Throat t1–t6 (332/311/21).
+
+**⚠️ THE FOLDED-NUMBER-STILL-CITED FAULT FIRED AGAIN, SIXTH TIME — AND THE §14x NOTE PREDICTED IT
+EXACTLY.** Eight backticked references to `entqb-thr6-320`, `-326` and `-330` survived into the spliced
+batch, because the entries were drafted while those numbers were still live. The dead-id check caught
+all eight. **The fix is procedural: grep the drafted blocks for every folded number BEFORE splicing,
+and check `source` as well as `explanation`.**
+
+**Next: topic 7, "Trauma of the neck", book p.137 (PDF 146), Q333 onward, 44 promised. Boundary
+already confirmed; pp.146–148 already rendered at `<scratchpad>\thr6\`.**
