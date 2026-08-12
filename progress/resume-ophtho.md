@@ -31,6 +31,32 @@ reconnaissance, not a topic**: ENT's Endpoint printed every question twice at a 
 | B | House (`ophthalmology MCQ.pdf`) | recon of the first ten pages, then chapter 1 | launched 2026-08-12 | — |
 | C | Endpoint | — | not opened; needs a free slot | — |
 
+### The hub's two instruments — `<scratchpad>\ophtho\`
+
+`sweep.js <draft.js>` runs all six stages of a draft against the corpus **and against itself** (a
+bank reprints itself), and prints the **E and F top-3 for every entry regardless of score** — because
+a real fold has scored 0.13 at F and 0.17 at E, so a threshold would have hidden it. It flags the
+option sets on which stage F is worthless (two-item true/false, bare ordinal, fewer than four content
+tokens) instead of scoring them 1.00 and wasting a read. Verified against a synthetic draft: stage A
+caught an exact reprint, stage D caught a dropped-distractor variant, and the known
+`opqb-t1-11`/`opqb-t1-14` false-positive pair surfaced at **F=1.00 with E=0.04**, which is the
+recorded blind spot behaving exactly as documented.
+
+`validate.js [expectedMarkerDelta]` is §7 plus the four checks its inline snippet lacks: the marker
+count, misplaced markers, the "Ask ChatGPT" sweep, and per-module/per-bank counts.
+
+**⚠️ IT BROKE BEFORE THE CONTENT DID, ON ITS FIRST RUN — the fifth auditor in this project to do so.**
+It reported **0 authored markers across 112 entries** whose batches closed at a verified +104. The
+cause was `[^.]*` standing in for the bank name: **the filename `ophthalmology qb.pdf` contains a
+period**, so a no-period class cannot cross it and nothing ever matched. A second fault sat behind
+it — 16 entries end with a legitimate `*(Secondary chapter: …)*` note **after** the marker, so a
+strict "ends with" is false for them. Both fixed; it now reads **104, reconciling exactly** as
+71 (topic 1, no boxes) + 33 (topic 2, 41 written − 8 boxed). **A count of exactly zero where the
+ledger says otherwise is the auditor, not the content.**
+
+**Baseline before any subagent splice, 2026-08-12: ophtho 112 entries, 104 markers, 0 bad entries,
+0 dead backticked ids, option counts all 4.**
+
 **Slot A's next topic when it merges:** t4 "Lacrimal System", book pp.21–24 (+1 past), 26 promised,
 ids `opqb-t4-` onward. **⚠️ Its grounding deck `L9) lacrimal system..txt` is a CamScanner watermark
 (33 slides, no text) and must be read as 4-up contact sheets first.**
