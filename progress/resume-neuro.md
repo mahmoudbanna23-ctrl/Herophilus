@@ -105,7 +105,7 @@ questions 17–22.
 |---|---|---|---|---|---|---|
 | 01 | Neurological Sheet | 1–3 | 6–8 | 22 | **22** | ✅ read, transcribed, written |
 | 02 | Localization | 4–6 | 9–11 | 12 | **12** (Q23–34) | ✅ read, transcribed, written |
-| 03 | Ischemic Cerebrovascular Stroke | 7–13 | 12–18 | 20 | — | not read |
+| 03 | Ischemic Cerebrovascular Stroke | 7–13 | 12–18 | 20 | **20** (Q35–54) | ✅ read, transcribed, written |
 | 04 | Hemorrhagic Cerebrovascular Stroke | 14 | 19 | 7 | — | not read |
 | 05 | Cranial Nerves Disorders | 14–21 | 19–26 | 27 | — | not read |
 | 06 | Hemiplegia & Paraplegia | 22–26 | 27–31 | 30 | — | not read |
@@ -172,6 +172,27 @@ no distractor authored. **Record every question handled this way in §7 below.**
 
 ---
 
+## 4a. ⚠️⚠️ BLOCKER RAISED WITH THE USER — `app\index.html` CAPS OPTIONS AT FIVE
+
+**Found 2026-08-12 when topic 03 produced the project's first questions with more than five options**
+— Q43 prints **nine** (a–i) and Q51 prints **eight** (a–h). Three places in the shared shell assume
+at most five, and **`index.html` is on this chat's forbidden list, so it has NOT been edited.**
+
+| Line | Code | What breaks |
+|---|---|---|
+| **3746** | `<span class="ltr">${'ABCDE'[i]}</span>` | the letter badge renders **`undefined`** for every option past E |
+| **3761** | `'Not quite — the answer is '+'ABCDE'[q.answer]` | for `npqb-nr-43` (answer index 6) the verdict reads **“the answer is undefined”** |
+| **5452** | `if('ABCDE'.includes(k) …)` | keyboard shortcuts only reach A–E; options F–I are mouse-only |
+
+**The questions still work** — the option text renders, clicking scores correctly, the ✅/❌ marks and
+the explanation are all fine. **Only the letter badge and the verdict line are wrong.** So the
+content is shipped as printed rather than held back.
+
+**The fix is one expression, in all three places:** `String.fromCharCode(65+i)` in place of
+`'ABCDE'[i]`, and a matching widening of the keyboard handler. **It is the app chat's or the user's
+call, not this one's.** ⚠️ It affects every module — Ophthalmology and Pediatrics will hit it the
+moment their banks print a sixth option.
+
 ## 5. Chapter filing decisions — keep later batches consistent with these
 
 The module has no neurosurgery chapter and none is needed now. Within the 27 real chapters:
@@ -191,13 +212,15 @@ The module has no neurosurgery chapter and none is needed now. Within the 27 rea
 
 | | |
 |---|---|
-| **Transcribed verbatim** | topics 01 and 02 → `content\neuro\qb-pages\` |
-| **Written into `questions.neuro.js`** | **31 MCQs** |
-| **Written into `cases.neuro.js`** | **3 cases** (the multi-answer questions, §4) |
+| **Transcribed verbatim** | topics 01, 02 and 03 → `content\neuro\qb-pages\` |
+| **Written into `questions.neuro.js`** | **48 MCQs** |
+| **Written into `cases.neuro.js`** | **6 cases** (the multi-answer questions, §4) |
 | **Folded** | 0 |
-| **Reconciliation** | **34 printed (Q1–Q34) = 31 MCQs + 3 cases + 0 folded ✅**, every id present exactly once |
+| **Reconciliation** | **54 printed (Q1–Q54) = 48 MCQs + 6 cases + 0 folded ✅**, every id present exactly once |
+| **Images** | 1 — `app\assets\q\q-np-8.jpg`, used by `npqb-nr-43`, `imgEssential` |
 
-Chapters so far: `nr-intro` 22, `nr-cranial` 7, `nr-hemi` 4, `nr-movement` 1.
+Chapters so far: `nr-intro` 22, `nr-stroke` 20, `nr-cranial` 7, `nr-hemi` 4, `nr-movement` 1.
+Authored markers: **25** of 54 — this bank prints boxes far more often than ENT's did.
 
 **Within-bank duplicate sweep:** run from the start, since a bank reprints itself. **No cross-bank
 sweep is possible or useful** — this module has one bank and House was never supplied.
@@ -268,21 +291,28 @@ chat's file mid-batch, not this module.** Do not touch them and do not treat the
 
 ## 9. Next concrete action
 
-**Render, read and write topic 03 — *Ischemic Cerebrovascular Stroke*, book pp.7–13 = PDF 12–18,
-starting at Q35. 20 promised, expect more.**
+**Render, read and write topics 04 and 05 TOGETHER — they share book page 14.**
+
+*Hemorrhagic Cerebrovascular Stroke* (7 promised, Q55 onward) and *Cranial Nerves Disorders* (27
+promised) **both begin on book p.14**, so the topic boundary falls **mid-page** and the two must be
+read in one pass. Book pp.14–21 = **PDF 19–26**; render **PDF 19–27** to get one page past.
 
 ```bash
-pdftoppm -png -r 130 -f 12 -l 19 "…/neuropsychiatry & neurosurgery qb.pdf" "<scratch>/np/t03"
+pdftoppm -png -r 130 -f 19 -l 27 "…/neuropsychiatry & neurosurgery qb.pdf" "<scratch>/np/t0405"
 ```
 
-- **⚠️ Render PDF 19 as well** — one page past the expected last answer page, every time.
-- **⚠️ It opens with a header vignette.** Book p.7 prints *"A 60 year-old male patient presented to
-  the ED complaining of weakness of the right upper limb and the right side of the face. Questions
-  below will be related to this scenario"* above **Q38–41**. Restate it into each question that
-  inherits it, and **check where the block stops** rather than assuming Q42 does.
-- **⚠️ Check every answer's letter against its printed name** — see the box at the end of §7.
-- `L10) Stroke.txt` is the grounding deck, with `L12) hemi,parap&ataxia` for the vascular
-  territories (its MCA/ACA/PCA list) and `L1)` for the pyramidal anatomy.
+**PDF 19 is already rendered and read** — it holds Q55–Q61, and **Q58 and Q61 are already visible as
+multi-answer** (*"Choose as many as applicable"*), so expect more cases. Q58 also prints an option
+**"e. C and D"**, which is a *combined* option rather than a multi-answer instruction — that one
+stays an ordinary MCQ.
 
-Then topic 04 (*Hemorrhagic stroke*, book p.14) and topic 05 (*Cranial Nerves Disorders*, book
-pp.14–21) — **both start on book p.14, so the topic boundary falls mid-page.**
+**Standing checks for every batch from here:**
+
+- **⚠️ Check each answer's LETTER against its printed NAME** (§7).
+- **⚠️ Repair every back-reference and restate every header vignette** — the deck is shuffled.
+- **⚠️ Predict the authored-marker delta before splicing**, then confirm it moved by exactly that.
+- **⚠️ Render one page past the last answer page.**
+- Grounding decks: `L10) Stroke` for topic 04, `L8) Cranial nerves` for topic 05.
+
+Then topic 06 (*Hemiplegia & Paraplegia*, book pp.22–26) — `L12) hemi,parap&ataxia` covers it in
+full, so expect heavy grounding and few gaps.
