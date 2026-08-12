@@ -29,8 +29,40 @@ reconnaissance, not a topic**: ENT's Endpoint printed every question twice at a 
 |---|---|---|---|---|
 | A | Grade Gain | t3 "Orbit" | **✅ MERGED 2026-08-12** | 26 printed / 26 written / 0 folded / 4 boxed |
 | A | Grade Gain | t4 "Lacrimal System", book pp.21–24 (+1 past), 26 promised | ready to launch | — |
-| B | House (`ophthalmology MCQ.pdf`) | ch.1 — **DRAFT INCOMPLETE, HELD** | 56 staged, **only 22 drafted** | not spliced |
-| C | Endpoint | — | not opened | — |
+| B | House | ch.1 "Examination of the eye" — **Q23–Q56 relaunched**, Q1–Q22 already drafted | running | 56 staged / 22+34 drafting |
+| C | Endpoint | — | not opened; **stay at 1 slot until a clean run** | — |
+
+### ✅ THE HOUSE BANK — identity and structure, settled 2026-08-12
+
+**Cover rendered and looked at:** *"Dr. HOUSE in Ophthalmology MCQs, December 2025 edition"*, with the
+Hugh Laurie artwork and the HOUSE wordmark. **It is genuinely House — `bank:'house'`.** The cover
+also advertises **OSCE spots, end-of-round exams and final exams** alongside chapterwise MCQs, so the
+126 pages hold more than one kind of section; expect the structure to change at a section boundary and
+**never carry structure across one.** It claims to follow *"the latest update of the published
+relative-weight list of the department"*, which will matter when the theory `w` weighting is set.
+
+**⚠️⚠️ ITS PAGE ARITHMETIC IS UNLIKE ANYTHING ELSE IN THIS PROJECT — A4 LANDSCAPE, TWO BOOK PAGES PER
+PDF PAGE**, left = even, right = odd. `PDF page = floor(book page / 2) + 2`; conversely PDF page N
+carries book pages `2N−4` and `2N−3`. PDF p.1 is `[book p.1 | the cover]` and PDF p.2 is blank. A
+simple "book + k" offset **does not exist for this file** — assuming one silently halves your reading.
+
+**Answers are printed INLINE beneath each question** ("Answer: C"). There is **no pooled answer page
+and no key section**, so the "Page As lies" defect cannot occur here — but neither can a missing key
+be spotted by a page count.
+
+**⚠️ QUESTION NUMBERING RESTARTS AT 1 IN EVERY CHAPTER** (confirmed — ch.2 opens at Q1 on book p.16).
+Ids must therefore carry a chapter token: **`opmcq-c1-<n>`**. Without it every chapter collides.
+
+**Chapter 1 prints 56 questions (Q1–Q56), NO explanation box and NO figure anywhere** — all six PDF
+pages read. So every ch.1 entry is authored and takes the marker, whose text names this bank's own
+file: `Written for this bank — ophthalmology MCQ.pdf prints no explanation here.` **Box presence is a
+property of the PAGE; do not carry that zero into chapter 2.**
+
+**⚠️ CROSS-BANK FOLDS BECOME POSSIBLE FOR THE FIRST TIME WITH THIS BATCH.** Until now the module held
+one bank, which is why topics 1–3 could return zero folds honestly. House ch.1 is *"Examination of the
+eye"* and Grade Gain topic 1 is *"Examination of the Eye"* — **the same subject, from two banks that
+reprint each other.** Run the full six-stage sweep and expect hits; on a match **ADD THE BANK via
+`alsoIn`, never add an entry.**
 
 **⚠️⚠️ BOTH SUBAGENTS WERE KILLED MID-WORK BY THE SESSION USAGE LIMIT (resets 1 am Africa/Cairo), AND
 NEITHER RETURNED ITS MANIFEST.** That is the §11 stall condition: **drop to 1 live subagent** until a
