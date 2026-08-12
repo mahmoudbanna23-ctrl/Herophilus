@@ -119,8 +119,16 @@ These have each cost real work. None throws a useful error.
 
 ## 4. What an explanation must contain
 
-**The user chose full teaching depth on 2026-08-12, knowing it is slower.** The ENT corpus averages
-~520 words per explanation in recent work. Match that. Structure that works:
+> **⚠️⚠️ READ §12 BEFORE THIS SECTION — IT SETS HOW MUCH OF THE BELOW TO WRITE, AND IT SUPERSEDED
+> THE OLD "full depth everywhere" RULE ON 2026-08-13.** §4 says **what an explanation must contain**;
+> **§12 says how far to take it.** Full ~520 words for clinical vignettes, defective or flagged keys,
+> cross-bank divergences, gap-filled tagged answers and discrimination questions; **~250 words for a
+> straight slide-recall question**, still carrying the key, the verbatim quote, **why every distractor
+> is wrong**, one clinical point and the citation. **Nothing below becomes optional at either length**
+> — items 1–5 of the structure are the floor, not the ceiling.
+
+The ENT corpus averages ~520 words per explanation in the work written before that ruling. Structure
+that works, at either depth:
 
 - **Lead with the key and why it is right**, in one bolded sentence.
 - **Ground it in the lecture slides**, quoted, with the filename named in the text.

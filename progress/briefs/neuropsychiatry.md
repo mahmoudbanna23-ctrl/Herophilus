@@ -3,6 +3,15 @@
 **Read `progress\briefs\START-HERE.md` first.** It holds the method, the file boundaries, the
 schema, the sweep and the validator. This file holds only what is specific to Neuropsychiatry.
 
+> **⚠️ NEW, 2026-08-13 — READ `START-HERE.md` §12 BEFORE DRAFTING ANYTHING ELSE.** The user revised
+> the writing budget: **adaptive depth** (~520 words where it earns it, **~250 for straight
+> slide-recall**), **shared comparison tables written ONCE** with siblings pointing at the id, and
+> **`source` as a citation, not a second explanation.** It changes **how much is written, never what
+> is covered** — every question, every bank, all six sweep stages, every defect and every gap-fill
+> stay exactly as they were, and the theory notes remain a study source sufficient to sit the exam
+> from. **If time runs short, say so loudly — never trim a bank.** Apply from your next batch; do not
+> rewrite finished entries.
+
 ---
 
 ## Your identifiers
