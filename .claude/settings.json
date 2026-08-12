@@ -1,10 +1,10 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
 
-  "//": "Shared by ALL FOUR parallel module chats. Broad allow-rules so routine project work runs without prompting; deny-rules keep the irreversible things asking. Prefix wildcards only — an exact-command list (see settings.local.json) re-prompts on every one-character variation, which is what made this necessary.",
+  "//": "Shared by ALL FOUR parallel module chats. defaultMode 'dontAsk' means NOTHING prompts — the user asked for zero permission requests, 2026-08-13. The deny list below is the only guardrail left: a denied command is REFUSED outright rather than asked about, so nothing in it can be run by accident and nothing else interrupts. The allow list is now redundant for prompting but kept as documentation of what routine project work looks like, and so the file still works if defaultMode is ever put back to 'acceptEdits'.",
 
   "permissions": {
-    "defaultMode": "acceptEdits",
+    "defaultMode": "dontAsk",
 
     "allow": [
       "Read",
