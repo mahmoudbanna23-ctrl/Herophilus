@@ -6135,3 +6135,153 @@ questions and render correctly.
 page promises **60**, answers begin book p.107 (PDF 116), and topic 4 opens book p.110. **PDF 108 is
 already rendered** at `<scratchpad>\thr2\p-108.png`. Render one page past the last answer page as
 always.
+
+---
+
+### §14v — Grade Gain **THROAT topic 3, "Dysphagia"** — read, swept, written (2026-08-12)
+
+**Book pp.99–109 (PDF 108–118). 61 printed against 60 promised. 58 written, 3 folded.**
+**The largest chapter in the project so far, and the one with the most moving parts.**
+
+| | |
+|---|---|
+| Questions | book pp.99–106 **and the left column of p.107**, Q88–Q148 unbroken |
+| Answers | book pp.107–109 (PDF 116–118) |
+| Next topic | book p.110 (PDF 119) opens "Tonsils and Adenoids" at Q149 |
+| Printed boxes | **11 of 61 (~18 %)** — Q93, Q102, Q105, Q106, Q108, Q113, Q117, Q129, Q135, Q137, Q138 |
+| Written / folded | **58 / 3** |
+| Figures cropped | **6** |
+| Back-references repaired | **17 of 61 — 28 %, the highest rate in the project** |
+| Chapters | `ent-dysph` 48, `ent-pharsupp` 5, `ent-swallow` 3, `ent-tonsils` 2 |
+
+#### ⚠️⚠️ THE QUESTION TAIL SHARED THE ANSWER PAGE — SEVENTH TIME IN SEVENTEEN
+
+**Q146, Q147 and Q148 are printed in the LEFT column of p.107 while the answer list starts in the
+right.** Treating the answer page as answers-only would have lost three questions silently — and one
+of them, Q148, turned out to be a fold. The keys did not run past p.109, so only half the defect was
+present. **Neither half is predictable. Read every page.**
+
+#### ⚠️⚠️ NEW BACK-REFERENCE SHAPE: A VIGNETTE PRINTED AS A HEADER OVER A NUMBERED BLOCK
+
+Three blocks are introduced by a line like *"For the following questions 106, 107, 108 and 109"*
+followed by a vignette that **belongs to no question's text**:
+
+| Header | Covers | Patient |
+|---|---|---|
+| *"For the following questions 106, 107, 108 and 109"* | Q106–Q109 | 82-year-old, Zenker's diverticulum |
+| *"For the following questions 113, 114, 115 and 116"* | Q113–Q116 | 45-year-old, Plummer–Vinson |
+| *"For the following questions 117, 118, 119, 120 and 121"* | Q117–Q121 | 60-year-old, pyriform sinus carcinoma |
+
+**A naive transcription leaves Q107, Q108, Q109, Q114, Q115, Q116, Q118 and Q119 with no vignette at
+all**, and several of them are unanswerable without one. Each was restated with its own antecedent.
+
+**⚠️ BUT NOT EVERY QUESTION UNDER A HEADER INHERITS IT.** Q120 (*which nerve carries referred otalgia
+in hypopharyngeal carcinoma*) and Q121 (*the definition of Moure's sign*) sit inside the third block
+and ask **general** questions; giving them the vignette would have invented a patient. **Read what the
+question actually asks before inheriting a header.**
+
+Added to the eight ordinary *"In the previous case"* references (Q94, Q103, Q104, Q105, Q126, Q127,
+Q130, Q133, Q139) and Q131's *"the barium swallow above"*, that is **17 of 61 — 28 %**, against 4 of
+47 in topic 2 and 5 of 32 at the previous worst.
+
+#### Six figures, and all six crops right at the first attempt — the first time
+
+| Crop | Question | Panels | Essential |
+|---|---|---|---|
+| `q-gg-104a` | **Q129 and Q131 share it** | 2 (frontal, lateral) | ✔ |
+| `q-gg-104b` | Q132 | 1 | ✔ |
+| `q-gg-105a` | Q135 | 1 | ✘ — the vignette decides itself |
+| `q-gg-105b` | Q137 | 1 | ✘ |
+| `q-gg-106a` | Q139 | 4 (2 endoscopic, 2 axial) | ✔ |
+| `q-gg-106b` | Q143 | 2 | ✘ |
+
+**⚠️ WHY THEY WORKED WHEN THE PREVIOUS FOURTEEN DID NOT.** Every earlier Grade Gain crop was measured
+by hand and every one was wrong first time. These were found by a **dark-region detector**: scan each
+column half for rows where more than 55 % of pixels are non-white (luminance < 232), merge runs
+separated by fewer than 45 rows, then bound the columns the same way. **Barium films and endoscopic
+photographs are overwhelmingly non-white; a page of text is 90 %+ white.** The signal is enormous and
+the method is exact.
+- A first attempt using a **dark** threshold (< 110) failed on two of six, returning a 54-pixel-tall
+  band — because the **barium column itself is bright white** and breaks a dark run in two. **Measure
+  "not paper", not "dark".**
+- The merge step is what fixes multi-panel figures, whose inter-panel gutters are white.
+- **All six were still looked at.** No numeric check would have caught a clipped label.
+
+`app\assets\q\` is now **55 files, 2.3 MB**; 59 references over 55 unique files, all loading.
+
+#### The lectures carry the disease half and none of the physiology half
+
+`L10) Dysphagia From ENT Perspective.pdf` (Prof. Rania M Abdou) is excellent for this chapter and
+grounds hypopharyngeal carcinoma (**pyriform sinus commonest**, the subsite ranking, the absent
+laryngeal click, tobacco/alcohol/HPV 10.9 %/Plummer–Vinson-for-post-cricoid), Zenker's diverticulum
+(Killian's triangle, left-sided, C5–C6, contrast retention, the endoscopic perforation warning),
+Plummer–Vinson (the triad, middle-aged females, iron correction and dilatation), achalasia (bird's
+beak) and globus pharyngeus. `L7)` covers FEES, VFSS and manometry.
+
+**⚠️ BUT THE PHYSIOLOGY IS ABSENT FROM ALL 34 CACHED FILES — verified by grep, not assumed.**
+**0 hits corpus-wide** for `oral phase`, `propulsive`, `grade 5`, `Moure`, `silent area`,
+`dysphagia lusoria`, `rat tail`, `apple core`, `aphthous`, `vascular ring`, `stationary dysphagia`.
+`pharyngeal phase` occurs only in `L1.2` and in an ILO line of `L7`; `laryngeal click` is a bare
+bullet in `L8`, never defined.
+
+So **Q88–Q92, Q96, Q121–Q128, Q131, Q133, Q134, Q145** are answered from general medical knowledge and
+tagged — the swallowing phases and their durations, the voluntary/involuntary split, cord adduction,
+the dysphagia grading, oral ulceration, oesophageal foreign bodies and their four constrictions,
+dysphagia lusoria, the rat-tail/apple-core radiology, the squamous/adenocarcinoma division and the
+concept of a silent area. **This is the largest single block of gap-filling in the project** and goes
+on the end-of-ENT review list.
+
+#### Six defects recorded beside their keys (2026-08-11 ruling)
+
+1. **⚠️ Q112 HAS TWO CORRECT OPTIONS.** *"What is present in hypopharyngeal carcinoma?"* keys *absent
+   laryngeal click*, but `L10` states that *"**Globus sensation may be the only presenting
+   complaint**"* — option a. The defensible reading is *specific sign* over *non-specific symptom*;
+   the option list does not force it.
+2. **Q115 bundles vitamin B12** into the treatment of Plummer–Vinson. `L10` gives *"Correction of iron
+   deficiency anemia"* alone, and the anaemia is **microcytic**, not macrocytic.
+3. **Q114 keys oesophagoscopy** to confirm Plummer–Vinson where `L10` lists **barium swallow** first
+   and captions its own web illustration with it. Defensible — endoscopy is what excludes post-cricoid
+   carcinoma — and recorded.
+4. **Q139 keys *pyriform fossa cancer* for a patient whose history predicts a POST-CRICOID tumour**
+   (untreated Plummer–Vinson). "Post-cricoid" is not on the option list. **A key is the best option
+   offered.**
+5. **Q134 offers the same answer twice** — *"Rat tail appearance"* and *"Smooth, tapered narrowing"*
+   are a name and its description, both belonging to the benign stricture.
+6. **Q144 prints "dysphasia" for "dysphagia"**, and **Q148 prints "Strider" for "stridor"**, and
+   **Q139 prints "Vocal coed nodule"**. All transcribed as printed. The key survives all three.
+   **Q138's printed box describes earache and neck swelling that its own stem never mentions.**
+
+#### ⚠️⚠️ THE MARKER AUDIT CAUGHT THE SAME FAULT AGAIN — TWICE IN ONE SESSION
+
+All **47** authored markers went into `source` instead of the end of `explanation`, exactly as in
+§14u, **and for the worse reason: the pattern was copied from the drafting of topic 2 rather than
+from the convention.** The pre-splice audit did **not** see it, because that awk check concatenates
+the whole entry and cannot tell which field the sentence landed in.
+
+**What caught it was the counter refusing to move: 820 → 820 across a batch that added 58 entries.**
+Fixed by the same line-wise pass; the count then went 820 → **867**, the predicted +47 exactly.
+
+**⚠️ THE PRE-SPLICE MARKER AUDIT MUST BE MADE FIELD-AWARE.** As written it answers *"does this entry
+contain the sentence"*, which is the wrong question; it must answer *"does this entry's `explanation`
+end with the sentence"*. Until it is, **the post-splice validator delta is the only check that works**
+— and it has now caught this same fault twice.
+
+#### Verified in a real `file://` boot
+
+`Q_ENT` **1,260** / `C_ENT` **82** / total **1,342**; 104 chapters; 0 bad module or chapter refs,
+0 duplicate ids, every answer in range, nothing missing a source, explanation or objective;
+**0 dead backticked ids out of 3,543 references**; **59 image references over 55 files, all loading**;
+mojibake clean; **0 console errors, 4 module cards, 768 CSS rules** on a full app boot.
+
+By bank **697 / 21 / 666** = 1,384 over 1,342 — **42** shared memberships across **41** questions
+(+2; Q120's fold added none, being within-bank). Origin only **697 / 20 / 625**.
+Option counts {2:5, 3:53, 4:1084, 5:118}.
+
+**Reconciles:** Grade Gain **Ear 261 + Nose 265 + Throat 40 + 47 + 61 = 674 printed, 625 written,
+49 folded** — 41 cross-bank `alsoIn` and 8 within-bank reprints held once. Origin count **625** matches.
+
+**Next: Throat topic 4, "Tonsils and Adenoids", book p.110 (PDF 119) onward.** It opens at **Q149**,
+the contents page promises **98 — the largest topic in the book**, answers begin book p.121 (PDF 130),
+and topic 5 opens book p.124. **PDF 119 is already rendered** at `<scratchpad>\thr3\p-119.png`.
+Render one page past the last answer page as always, and **expect the question tail to share the
+answer page until proved otherwise.**
