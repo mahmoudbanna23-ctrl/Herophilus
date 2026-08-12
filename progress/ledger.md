@@ -6493,3 +6493,154 @@ otherwise — **topic 4 had neither defect, which is itself no guide to topic 5.
 listed "no Node" since the environment was first surveyed; that is wrong. Nothing in the current
 toolchain needs it, but a JS-based validator or bundler is now a real option and the single-file
 build owed in §2 no longer requires hand-rolled PowerShell. **Python is still absent.**
+
+---
+
+### §14x — Grade Gain **THROAT topic 5, "Pediatric Laryngeal Lesions"** — written (2026-08-12)
+
+**Book pp.124–131 (PDF 133–140). 53 printed against 52 promised — the eighteenth wrong count in
+twenty-two, and still always upward. 53 = 47 written + 6 folded. Ids `entqb-thr5-248`…`-300`,
+skipping 291, 292, 293, 296, 298, 299.**
+
+Chapters: `ent-paedlar` 39, `ent-stridor` 7, `ent-vocal` 1. Four five-option questions (Q258, Q262,
+Q294, Q295). **Seven printed boxes in 53 (~13 %)** — Q257, Q263, Q266, Q273, Q278, Q296, Q297 — of
+which six landed in written entries and the seventh (Q296) went into a *fold*, which is what
+withdrew an authored marker. **No figures anywhere in this topic**, the first since Nose ch.9.
+
+**Marker delta +40 exactly as predicted** (41 new − 1 withdrawn): whole-corpus count 1067 → 1107.
+Field-aware audit over the WHOLE file: **marker-in-`source` = 0**, marker-not-at-end = 0.
+
+#### The six folds — the highest of any Throat topic, and only four add a membership
+
+| GG | Folds into | What decided it |
+|---|---|---|
+| Q291 | `entep-throat-98` (p.1609) | Word-for-word stem, identical options and key. **+`alsoIn`** |
+| Q292 | `entep-throat-36` (p.1436) | Identical option set and key; **the entry already carried `alsoIn:['gradegain']`** from GG's own Q35, so this is a **within-bank reprint on top of a cross-bank one — note only, no membership.** That entry now holds **four printings across two banks.** |
+| Q293 | `entqb-thr1-34` (p.90) | Identical stem and key, options reordered. **WITHIN-BANK — no `alsoIn`.** Ninth within-bank reprint. |
+| Q296 | `entep-throat-101` (p.1615) | Word-for-word stem, identical key; **one wrong distractor replaced** (*subglottic* → *glottic* stenosis) — the `entep-throat-103` precedent. **+`alsoIn`** |
+| Q298 | `entep-throat-96` (p.1605) | Identical vignette, options and key. **+`alsoIn`** |
+| Q299 | `entep-throat-97` (p.1607) | Same options and key; **both banks print it as the second question on one vignette**, which is exactly what GG's *"In the previous case"* makes it. **+`alsoIn`** |
+
+**⚠️ A FOLD CONVERTED AUTHORED TEXT INTO SOURCED TEXT FOR THE FIFTH TIME, AND THIS ONE RAN THE OTHER
+WAY.** Every previous instance was Grade Gain inheriting an endpoint box. Here **endpoint prints no
+box and GRADE GAIN DOES** — so `entep-throat-101` gained Grade Gain's printed explanation at the head
+of its `explanation` and **lost its authored marker**. *The two banks together supply what neither
+does alone.* **Check the direction, not just the fact, when a fold meets a box.**
+
+#### Two structural traps, one of them new at this scale
+
+**⚠️⚠️ TWO VIGNETTES PRINTED AS HEADERS OVER NUMBERED BLOCKS — AND THIS TIME IT PRODUCED FOUR
+QUESTIONS WITH IDENTICAL TEXT AND CONTRADICTORY KEYS.** The shape was first met in topic 3; here it
+is worse:
+
+- *"For questions 266, 267, 268, 269"* + a 5-year-old with **acute epiglottitis**
+- *"For questions 273, 274, 275, 276 and 277"* + a 2-year-old with **croup**
+
+**Q267 and Q274 are word-for-word identical stems over an identical option list, keyed to different
+organisms** (Hib vs parainfluenza). **Q268 and Q275 likewise, keyed to different X-ray signs**
+(thumbprint vs steeple). **Nothing inside the question distinguishes them — only the header does.**
+In a shuffled deck they would have shipped as four questions carrying two answers each. All nine
+questions under the two headers have had their vignette restated, and each of the four carries an
+explicit ⚠️ naming its twin.
+
+**⚠️ Back-references hit 19 of 53 = 36 %, the project's highest**, beating topic 3's 28 %. Ten
+ordinary ones (Q258–Q262 → Q257; Q264, Q265 → Q263; Q279, Q280 → Q278; Q299 → Q298) plus the nine
+under headers.
+
+**⚠️ THE QUESTION TAIL SHARED THE ANSWER PAGE FOR THE EIGHTH TIME IN EIGHTEEN CHAPTERS** — Q298, Q299
+and Q300 sit in the **left column of p.130** while the answers begin in the right. **Two of the three
+are folds**, so treating the answer page as answers-only would have lost two cross-bank memberships
+silently. The keys did **not** run past p.131. Topic 4 had neither defect; topic 5 had one.
+
+#### Sweep
+
+**⚠️ AN "ALL OF THE ABOVE" KEY MAKES STAGES C AND D WORTHLESS FOR THAT QUESTION.** Q262's key is
+*"all of the above"*, which matched **thirty** unrelated questions; stage D returned 79 pairs and is
+almost entirely noise as a result. **The real folds came from A and B**, which is the reverse of
+topics 2 and 3 — *neither ranking dominates; the projections differ per topic.*
+
+Held after side-by-side reading: **Q274 vs `entep-throat-102`** (p.1617 — same key, reworded stem,
+one replaced distractor: *new question* per §14c–d); **Q267 vs the same** (identical GG stem, different
+key, because its header is epiglottitis); **Q292/Q293 vs `entep-throat-33`** (three questions over one
+menu); **Q297 vs `entep-mfe5-13`** (p.2411 — same key, two options replaced, different stem);
+**Q263/Q273 vs `entep-mfe1-2`** (p.1821); **Q276 vs `entep-throat-100`** (p.1613 — stage-F noise off a
+four-word menu).
+
+#### Nine defects recorded beside their keys (2026-08-11 ruling) — none corrected
+
+1. **⚠️ THE EPIGLOTTITIS HEADER VIGNETTE CONTRADICTS ITSELF** — *"no cough or fever"* and then
+   *"Temperature is 39.1 C"*. Transcribed as printed; the fever matches `L12`'s *"Temp. > 38.5"* and
+   the **absence of cough is a genuine discriminator against croup**, so both halves are usable.
+2. **⚠️ Q250 AND Q255 TAKE OPPOSITE VIEWS OF THE SAME FACT, ONE PAGE APART.** Q250 keys *"epiglottis
+   is short and folded on itself"* as NOT a criterion of the infantile larynx — **correct**, `L12`
+   says *"Long & folded on itself"*. Q255 then keys *"Adult Epiglottis is curved & folded"* as TRUE,
+   which **contradicts `L12` and its own Q250**. On Q255's list **no option is correct as stated**;
+   the key is the least wrong, reached by eliminating three outright inversions.
+3. **Q249** keys *"7th month"* for laryngeal recanalization, read off `L12`'s fetal-phase line
+   *"9 wks. – 7 mo."*. The slide never uses the word; standard embryology recanalizes by ~10 weeks,
+   making option (b) the nearer figure.
+4. **Q272** keys FB aspiration as the **second** commonest cause of paediatric stridor. **No cached
+   lecture ranks beyond first place**; `L6`'s list is unordered and **croup has as good a claim.**
+5. **Q283 option b**, asserted TRUE: *"Most common foreign body in adults is the veil pin"* — a
+   **regional** observation (headscarf-pin practice), on no slide. **Not the key, so no key comparison
+   could see it** — the fifth defect of that shape.
+6. **Q282** says GERD in **75–80 %** where `L12` prints **80–90 %**.
+7. **Q290 arguably has two false options** in an *except* question: the key (*managed at home*) and
+   option (d), *"Ampicillin-sulbactam is most used"*, where `L12` names **ceftriaxone**. The key
+   stands because home management is dangerous rather than merely unsupported.
+8. **⚠️⚠️ Q297 IS DEFECT SHAPE (3) IN ITS PUREST FORM — THE SAME STEM IS DECIDABLE ON ONE MENU AND
+   UNDECIDABLE ON ANOTHER.** Its box discriminates on *"normal cry"* to key **subglottic stenosis**.
+   Endpoint asks the identical question at `entep-mfe5-13` (p.2411) and keys the same answer — but
+   **its option list does not offer laryngomalacia**, so there the key is unarguable. **Grade Gain
+   offers it, and laryngomalacia also has a normal cry**; worse, the vignette's *"worse during feeding
+   or crying"* is `L12`'s own laryngomalacia wording. **The discriminator the box uses does not
+   discriminate on the list the box is printed under.**
+9. **Two transcription repairs, both recorded:** Q274 option b printed *"Hemophilus influenzae type"*
+   with the **B missing**; the epiglottitis header prints *"strider"* for stridor and its box *"acute
+   epiglottis"* for acute epiglottitis.
+
+**⚠️ THE TWO CACHED LECTURES DISAGREE ON THE AGE OF EPIGLOTTITIS** — `L12` gives **2–6 years** (which
+the bank keys, twice) and `L6` gives **3–7 years**. They agree exactly on croup, 6 m–3 y. *First
+lecture-versus-lecture conflict recorded in this project; both are cited.*
+
+**Three entities are answered from general knowledge and tagged**, all verified absent from both
+backbone decks first: **bacterial tracheitis / membranous LTB** (Q278, Q279, Q280 — `L12` names only
+three acute laryngitides; the same gap is already recorded at `entep-enr-7`, p.2854), **button
+batteries** (Q286), and **propranolol as first-line for subglottic haemangioma** (Q256) — where
+**`L6`'s seven-item treatment list is simply out of date**, running tracheotomy → corticosteroid →
+laser → interferon → cryosurgery → irradiation → excision with no beta-blocker anywhere.
+
+#### Two harness bugs that manufactured false zeros — the "check the auditor" rule again
+
+The boot probe reported **0 of 56 question images loading** and **0 Clepsydra poses**, either of which
+would read as a catastrophic asset failure. Both were the probe:
+
+- **`[].slice.call(aSet)` RETURNS AN EMPTY ARRAY.** A `Set` is not array-like — it has no `.length` —
+  so the image list was empty and the completion callback fired immediately with a count of zero.
+  **Use `Array.from`.**
+- **`CLEP_POSES` is a top-level `const`, so `window.CLEP_POSES` is `undefined`** — the same trap
+  already recorded for `MODULES`. **Read the bare binding.**
+
+Re-run with both fixed: **56/56 images, 9/9 poses, 0 broken.** *A zero that would mean disaster is a
+broken probe until proved otherwise.*
+
+#### Verified state after the splice
+
+`Q_ENT` **1405**, `QUESTIONS` **1487**, 104 chapters, 4 modules, 4 module cards, **768 CSS rules**,
+**3 `max-aspect-ratio:5/4` blocks**, **0 console errors** in a real `file://` boot. 0 bad chapter or
+module refs, 0 duplicate ids, every answer in range, nothing missing a field, **0 dead ids over 4,261
+backticked references (1,238 distinct)**, 60 image refs over 56 unique files all loading, none without
+`imgAlt`, mojibake clean. Banks: **endpoint 697, house 21, gradegain 815** = 1,533 memberships over
+1,487 questions = **46 extra across 45 shared questions**. Grade Gain origin **770** = 723 + 47.
+
+**Reconciliation:** Grade Gain **826 printed / 770 written / 56 folded** across Ear (261/241/20),
+Nose (265/247/18) and Throat t1–t5 (300/282/18). Throat: **t1 40 (34+6), t2 47 (45+2), t3 61 (58+3),
+t4 99 (98+1), t5 53 (47+6).**
+
+**⚠️ ONE DEAD ID WAS CAUGHT AFTER THE SPLICE, IN A `source` FIELD.** `entqb-thr5-298` was fixed in the
+`explanation` of Q276 and **missed in the same entry's `source`** — the fold list had been applied to
+one field and not the other. **When a staged number folds, grep BOTH fields, and re-run the dead-id
+check after the splice as well as after the folds.** Fifth occurrence of the folded-number-still-cited
+fault.
+
+**Next: topic 6, "Neck Masses", book p.132 (PDF 141), Q301 onward, 31 promised.**
