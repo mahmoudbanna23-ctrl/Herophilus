@@ -88,10 +88,75 @@
    exception (key C) — `L1.2` gives the **glossopharyngeal** nerve as part of the tonsillar bed.
    Q201 keys the glossopharyngeal for referred otalgia in tonsillitis, consistent.
 
-   NEXT STEPS WHEN WRITING:
-     1. Run the full six-stage sweep — `ent-tonsils` already holds a large endpoint set, so expect folds.
-     2. Crop `q-gg-120a` from PDF 129 with the dark-region detector (see ledger §14v), and LOOK.
-     3. Ids `entqb-thr4-149` … `entqb-thr4-247`.
-     4. ⚠️ PUT THE AUTHORED MARKER AT THE END OF `explanation`, NOT IN `source` — that trap has now
-        been sprung twice in one session (ledger §14u, §14v).
+   ============================================================================================
+   ✅ THE SIX-STAGE SWEEP HAS BEEN RUN. Full output at `<scratchpad>\swT4\sweep.txt`; the staged
+   array used for it is at `<scratchpad>\swT4\stage.js` and is complete and verbatim.
+
+   ⚠️⚠️ STAGES A AND B BOTH RETURNED **ZERO** — for a 99-question chapter, against an `ent-tonsils`
+   set that already holds 34 endpoint entries. That is the first time a chapter this size has done
+   it, and it is credible for a specific reason: **this topic is mostly ADENOID and OPERATIVE
+   material, and endpoint barely covers either.** Endpoint's tonsil set is clinical vignettes and
+   membranous-tonsillitis differentials; Grade Gain spends 40-odd questions on adenoid anatomy,
+   grading, adenoidectomy technique, preoperative work-up, and the complications of both operations.
+   **Say why a zero is a zero.**
+
+   ONE FOLD — WITHIN-BANK, so it adds NO membership:
+     • **Q169 → `entqb-thr1-11`** (Throat topic 1). *"Which artery is the main blood supply to the
+       palatine tonsils?"* against *"Which of the following is the main blood supply to the
+       tonsils?"*, same key. The key is printed as **"Tonsillar artery"** in topic 1 and
+       **"Tonsillar branch of the facial artery"** here — the same vessel abbreviated and spelled
+       out, which by the settled test is the same distractor. One genuine replacement among the
+       wrong options (*ascending palatine* → *ascending pharyngeal*), which is the single-replaced-
+       wrong-distractor case already settled at `entep-throat-103`. **Grade Gain reprints itself
+       again; hold once, add no bank.** ⇒ 99 printed = **98 written + 1 folded**.
+
+   ⚠️⚠️ AND A CROSS-BANK DIVERGENCE — THE SECOND IN THE PROJECT, AND THE FIRST WHERE ONE WORD
+   EXPLAINS IT. **Q224 vs `entep-throat-77` (p.1557) share ALL FOUR OPTIONS AND KEY DIFFERENT ONES.**
+     - endpoint keys **"Congestion of the anterior pillar"** as NOT a definite sign of chronic
+       tonsillitis;
+     - Grade Gain keys **"Enlarged REGULAR tonsillar crypts"** as NOT a sure sign.
+   **The word "regular" is the whole difference.** Enlarged *irregular* crypts oozing cheesy material
+   are a sign; enlarged *regular* crypts are a normal variant — so Grade Gain's key is defensible on
+   its own wording, while endpoint's option omits the qualifier. **Standard teaching makes anterior
+   pillar congestion a classic sign of chronic tonsillitis**, which puts endpoint's key at odds with
+   it. **Hold both, reconcile in the text, note the divergence.** Do NOT fold: identical option sets
+   with different keys are the definition of a divergence, not a reprint.
+
+   HELD, NOT FOLDED — checked side by side, each with a specific reason:
+     • Q190 (*which artery does NOT supply the tonsil* → thyroid) vs `entep-throat-21` — an "except"
+       against a "which is the main", different question.
+     • Q192 and Q226 vs `entep-throat-124` — three questions on tonsillectomy contraindications;
+       Q192 shares only the key (haemophilia) and replaces three options, Q226 keys acute tonsillitis
+       over an entirely different list.
+     • Q173 (*primary* bleeding after adenoidectomy → adenoid remnant) vs `entep-mfe4-25`
+       (*reactionary* → dislodged clot) — different haemorrhage, different answer.
+     • Q231 (12 h after adenoidectomy) vs `entep-mfe5-37` (20 h after tonsillectomy) — different
+       operation, different option set.
+     • Q161 vs `entep-throat-35` — both "indications for adenoidectomy except", no shared distractor.
+     • Q209 vs `entep-throat-88` — commonest cause of paediatric OSA; endpoint keys *"hypertrophied
+       adenoid AND tonsils"*, Grade Gain keys *adenoid hypertrophy* alone, and one distractor is
+       replaced. Cross-reference rather than fold.
+     • Q201 (referred otalgia in **tonsillitis** → IX) vs `entep-throat-109` (**post-tonsillectomy**
+       → IX) and `entqb-thr3-46` (**quinsy** → IX) — three different clinical moments over near-
+       identical nerve menus. Consistent with how `entqb-thr3-46` was already held.
+     • Q149, Q150, Q162, Q168, Q177, Q182, Q184, Q185, Q189 all scored 0.50-0.80 at stage E against
+       `entep-ear-126`, `entep-nose-64`, `entep-nose-106` and `entqb-thr1-4`. **All noise** — the
+       shared tokens are *"following"*, *"true"*, *"except"*, *"about"*. **⚠️ A generic EXCEPT stem
+       is to stage E what a generic option menu is to stage F.** Third chapter running in which the
+       rankings needed reading rather than trusting.
+
+   NEXT STEPS WHEN WRITING — everything below is pure execution, no re-reading needed:
+     1. Ids `entqb-thr4-149` … `entqb-thr4-247`, **skipping 169** (folded).
+        98 entries; **7 boxed, so 91 authored markers.** Predicted marker delta: **+91**.
+     2. Apply the fold: add a note to `entqb-thr1-11`'s `source` recording the Throat ch.4 reprint.
+        **No `alsoIn` change — it is within-bank.**
+     3. Crop `q-gg-120a` from PDF 129 (book p.120), right column, Q245's photograph, with the
+        dark-region detector from ledger §14v — **rows >55 % non-white (lum <232), merge gaps <45,
+        then bound columns** — and **LOOK at it**. Caption: modality and view only.
+     4. Chapters: mostly `ent-tonsils`. Q152-Q154 (Thornwaldt's, Rathke's) and Q212 → `ent-nasalmass`
+        or `ent-tonsils`; Q157, Q158, Q165, Q209, Q210, Q214, Q218 (OSA sequelae) → `ent-osa`;
+        Q186 and Q239 (branchial cleft fistula) → `ent-neck`; Q238 (Grisel's) → `ent-tonsils`.
+     5. ⚠️⚠️ PUT THE AUTHORED MARKER AT THE END OF `explanation`, NOT IN `source`. **That trap has
+        been sprung twice in one session** (ledger §14u, §14v) and the pre-splice audit cannot see
+        it — only the validator's marker delta can.
 */
