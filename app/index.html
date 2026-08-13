@@ -2696,8 +2696,8 @@ function md(s){
     if(!tbl.length)return;
     let t='<table>';
     tbl.forEach((r,i)=>{
-      if(/^\s*\|?\s*[-: ]+\|/.test(r))return;
-      const cells=r.split('|').filter(c=>c.trim()!=='');
+      if(isMdRule(r))return;
+      const cells=mdCells(r);
       t+='<tr>'+cells.map(c=>i===0?`<th>${c.trim()}</th>`:`<td>${c.trim()}</td>`).join('')+'</tr>';
     });
     out+=t+'</table>';tbl=[];
@@ -2803,6 +2803,32 @@ function qTheory(qid){
   return QTHEORY[qid]||null;
 }
 
+/* ⚠️⚠️ IS THIS ROW THE `|---|---|` RULE? The old test was
+   `/^\s*\|?\s*[-: ]+\|/`, and it ATE THE HEADER of every table whose first
+   column is unlabelled: in `| | **A** | **B** |` the `[-: ]+` happily matched
+   the single SPACE between the first two pipes, so the header was discarded as
+   a separator and the first data row was promoted into it — silently, with
+   every column label shifted one row up. The rule row contains nothing but
+   pipes, dashes, colons and spaces, and it must contain a dash; test for
+   exactly that. */
+function isMdRule(row){
+  const t=String(row).trim();
+  return /^[|\s:-]+$/.test(t)&&t.indexOf('-')>=0;
+}
+/* ⚠️ SPLIT A PIPE-TABLE ROW WITHOUT LOSING ITS EMPTY CELLS. The old code was
+   `row.split('|').filter(c=>c.trim()!=='')`, which drops the two empty
+   fragments either side of the row — and every empty cell INSIDE it too. A
+   comparison table's header almost always starts with a blank corner cell
+   (`| | **A** | **B** |`), so its header came out one column short and every
+   column label shifted left by one against the body. Found by rendering a
+   two-column comparison to PDF and reading it; nothing throws, and the table
+   still looks like a table. Trim only the outer delimiters. */
+function mdCells(row){
+  const c=String(row).split('|');
+  if(c.length&&c[0].trim()==='')c.shift();
+  if(c.length&&c[c.length-1].trim()==='')c.pop();
+  return c;
+}
 function mdBlock(s){
   if(!s)return '';
   let h=esc(s);
@@ -2822,8 +2848,8 @@ function mdBlock(s){
     let t='<table class="th-table">';
     let r=0;
     tbl.forEach(row=>{
-      if(/^\s*\|?\s*[-: ]+\|/.test(row))return;          // the |---|---| separator
-      const cells=row.split('|').filter(c=>c.trim()!=='');
+      if(isMdRule(row))return;                           // the |---|---| separator
+      const cells=mdCells(row);
       t+='<tr>'+cells.map(c=>r===0?`<th>${c.trim()}</th>`:`<td>${c.trim()}</td>`).join('')+'</tr>';
       r++;
     });
