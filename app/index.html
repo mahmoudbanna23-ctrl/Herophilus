@@ -1193,9 +1193,20 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
      have shown this. print-color-adjust makes the fill survive either way. */
   .th-table th,.th-table tr:nth-child(even) td,.fbox,.flow,.th-intro,.wbadge,.eyebrow{
     -webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
-  .th-table th{background:#14181f!important;color:#fff!important}
+  /* Table heads take the module colour too, so a table reads as part of the
+     chapter rather than as a black slab dropped into it. */
+  .th-table{border:.6pt solid #d8dde5!important;border-radius:2pt!important;overflow:hidden}
+  .th-table th{background:var(--mod,#14181f)!important;color:#fff!important}
   .th-table th strong,.th-table th em{color:#fff!important}
-  .th-table tr:nth-child(even) td{background:#f4f6f9!important}
+  .th-table tr:nth-child(even) td{background:#f6f7fa!important}
+  .th-table td{border-bottom:.5pt solid #e4e8ee!important}
+  /* A callout is the other thing the eye should catch. Tinted ground, a solid
+     bar in the warn colour, and room to breathe. */
+  .th-body blockquote{
+    border-left:3pt solid #c08a1e!important;background:#fdf7e8!important;
+    border-radius:0 2pt 2pt 0!important;
+    -webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;
+  }
   .app{display:block}
   .page{padding:0;max-width:100%}
   .th-sec{break-inside:auto;page-break-inside:auto;margin-bottom:20px;padding-left:12px}
@@ -1231,13 +1242,32 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
      in the colour, the weight badge inline. `break-after:avoid` already stops a
      heading stranding at the foot of a page. */
   .th-sec{margin-bottom:9pt!important;padding-left:0!important;border-left:none!important}
+  /* The heading is a solid bar in the module colour with the type reversed out —
+     the strongest cheap signal on the page, and it makes flicking to a section
+     possible at arm's length. */
+  /* ⚠️ `flex-wrap:wrap` (the screen default) DROPPED THE BADGE ONTO ITS OWN LINE
+     and turned a one-line bar into a three-line slab on any section with a long
+     title. nowrap + a flexible h2 keeps the number left, the badge right, and
+     lets the TITLE be the thing that wraps. */
   .th-h{
-    margin:0 0 5pt!important;padding:3.4pt 6pt!important;
-    background:#f2f4f8!important;border-left:2.6pt solid var(--ent)!important;
-    align-items:baseline!important;
+    margin:0 0 6pt!important;padding:4pt 8pt!important;
+    background:var(--mod,#b4472f)!important;border:none!important;
+    align-items:baseline!important;border-radius:2pt!important;
+    flex-wrap:nowrap!important;gap:7pt!important;
+    -webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;
   }
-  .th-h h2{font-size:11.6pt!important;letter-spacing:.02em!important;margin:0!important}
-  .th-num{color:var(--ent)!important;font-size:8.6pt!important;font-weight:900!important}
+  .th-h h2{
+    font-size:11.4pt!important;letter-spacing:.03em!important;margin:0!important;
+    color:#fff!important;flex:1 1 auto;min-width:0;
+  }
+  .th-num{
+    color:rgba(255,255,255,.72)!important;font-size:8.4pt!important;font-weight:900!important;
+    flex:0 0 auto;
+  }
+  .th-h .wbadge{
+    background:rgba(255,255,255,.2)!important;color:#fff!important;border:none!important;
+    flex:0 0 auto;white-space:nowrap;
+  }
   .wbadge{
     font-size:6.6pt!important;padding:1pt 4pt!important;letter-spacing:.09em!important;
     -webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;
@@ -1263,27 +1293,36 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
      cover image cannot be generated per chapter for 104 chapters, and the module
      colour already carries the identity. A rule above the title, the module in
      small caps, the chapter, a rule below, and the counts as a footer line. */
+  /* A SOLID PANEL IN THE MODULE'S COLOUR, type reversed out of it. True
+     full-bleed is not reachable through @page margins, so the panel is a wide
+     band instead — it still reads as designed rather than as a bare title. */
+  /* ⚠️ TRUE FULL BLEED IS NOT REACHABLE. Negative margins that would push the
+     panel into the @page margin are clipped by Chrome — measured: -15mm left/
+     right moved the edge not at all, and it left a stray rule at the foot of the
+     sheet. So the panel fills the whole PRINTABLE area instead: A4 297mm less
+     the 18mm/16mm page margins = 263mm, which reads as a cover rather than as a
+     banner with white under it. */
   .doc-head{
     break-after:page;page-break-after:always;
-    padding-top:88mm;text-align:center;border-bottom:none;position:relative;
-  }
-  .doc-head::before{
-    content:'';display:block;width:34mm;height:2.4pt;background:var(--ent);
-    margin:0 auto 11mm;
+    margin:0;padding:84mm 22mm 0;min-height:238mm;box-sizing:border-box;
+    text-align:center;border-bottom:none;
+    background:var(--mod,#b4472f)!important;color:#fff!important;
+    -webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;
   }
   .doc-head .eyebrow{
-    display:inline-block;margin-bottom:9mm;background:none!important;
-    color:var(--ent)!important;font-size:10pt;letter-spacing:.34em;font-weight:800;
-    padding:0;border:none;
+    display:inline-block;margin-bottom:11mm;background:none!important;
+    color:rgba(255,255,255,.82)!important;font-size:9.5pt;letter-spacing:.4em;
+    font-weight:800;padding:0;border:none;
   }
   .doc-head .eyebrow svg{display:none}
-  .doc-head h1{font-size:32pt;line-height:1.12;letter-spacing:.03em;margin:0}
-  .doc-head .doc-meta{
-    margin-top:11mm;font-size:9.5pt;letter-spacing:.16em;text-transform:uppercase;
-    color:#3a424e!important;font-weight:700;
+  .doc-head h1{
+    font-size:31pt;line-height:1.1;letter-spacing:.035em;margin:0;
+    color:#fff!important;
   }
-  .doc-head::after{
-    content:'';display:block;width:16mm;height:.9pt;background:#b9c1cd;margin:9mm auto 0;
+  .doc-head .doc-meta{
+    margin-top:12mm;padding-top:7mm;font-size:9pt;letter-spacing:.18em;
+    text-transform:uppercase;color:rgba(255,255,255,.9)!important;font-weight:700;
+    border-top:.8pt solid rgba(255,255,255,.42);display:inline-block;
   }
   /* ── RUNNING HEAD AND PAGE NUMBERS ─────────────────────────────────────────
      @page margin boxes are the only way to repeat furniture on every sheet;
@@ -2888,6 +2927,19 @@ function vTheory(p){
   const allQs=[];
   secs.forEach(s=>(s.qs||[]).forEach(q=>{if(allQs.indexOf(q)<0)allQs.push(q)}));
   const LBL={must:'must know',high:'high yield',know:'background'};
+  /* The printed chapter is designed in the MODULE's colour, so the stylesheet
+     needs to know which module this is. Chrome supports neither `string-set` nor
+     a var() inside an @page margin box, so the running head is written as a
+     literal into a style element instead — one per chapter, replaced each time. */
+  document.documentElement.style.setProperty('--mod',m.hex);
+  (function(){
+    let st=document.getElementById('printhead');
+    if(!st){st=document.createElement('style');st.id='printhead';document.head.appendChild(st);}
+    const esq=s=>String(s).replace(/\\/g,'\\\\').replace(/"/g,'\\"');
+    st.textContent='@media print{@page{@top-right{content:"'+esq(chapterName(view.ch))+
+      '";font-family:\'EB Garamond\',Georgia,serif;font-size:8.5pt;color:#8a94a3;'+
+      'letter-spacing:.06em}}@page:first{@top-right{content:""}}}';
+  })();
   const HEX={must:'var(--ent)',high:'var(--gold)',know:'var(--ink-4)'};
 
   let h=`<button class="tb-btn" style="padding-left:0;margin-bottom:8px" onclick="go({name:'theory',mod:'${view.mod}'})">&larr; ${esc(m.name)} notes</button>

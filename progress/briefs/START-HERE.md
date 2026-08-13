@@ -689,6 +689,12 @@ first two chapters ran to.
   around it. A citation still names the slide.
 - **Connective and framing sentences** — *"Now that we have covered X, the next thing to note is…"*
 - **Repeating a shared table** — §12.2 already said this and it still applies.
+- **⚠️ DO NOT WRITE A CLOSING "SIEVE" OR "EVERY PATTERN IN THIS CHAPTER" SECTION.** The tonsils
+  chapter grew one and it was **100 % duplication** — all 24 rows repeated facts held elsewhere, at a
+  cost of ~1.3 printed pages, and **all 19 of its `qs` were already linked by other sections.**
+  Deleted on the user's instruction, 2026-08-13. A consolidated revision table is appealing and it
+  is the cheapest page in the chapter to lose. **If a pattern is worth collecting, it belongs in the
+  section that teaches it.**
 
 **Keep, always:**
 

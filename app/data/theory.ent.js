@@ -1735,33 +1735,6 @@ var T_ENT = {
           "entqb-thr4-231",
           "entqb-thr4-237"
         ]
-      },
-      {
-        "id": "tons-g1",
-        "w": "high",
-        "h": "The one-page sieve — every vignette pattern in this chapter",
-        "body": "**Revise from this table last. Every clinical vignette in the 117 questions resolves to one line of it.**\n\n| Deciding clause in the stem | Answer |\n|---|---|\n| Child 5–7 yrs · fever · **pus/follicles on bilaterally red tonsils** · **tender LOCAL jugulodigastric nodes** · **NO cough** | **Acute bacterial (streptococcal) tonsillitis** → penicillin |\n| Teenager · 5 days · **extreme fatigue** · **grey membrane** · **GENERALISED nodes + hepatosplenomegaly** · **atypical lymphocytes** · **palatal petechiae** | **Infectious mononucleosis** → supportive; ⚠️ NO ampicillin; Paul-Bunnell |\n| **Thick grey membrane that BLEEDS on removal**, spreading beyond the tonsil · **BULL NECK** · **LOW-grade fever**, toxic | **Diphtheria** → isolate, airway, **antitoxin EARLY**, antibiotics |\n| **UNILATERAL** · **punched-out RAGGED ulcer** on tonsil and gums · grey slough · **foul metallic breath** · **bleeding gums** · patient not very ill | **Vincent’s angina** → **penicillin + metronidazole** |\n| **Strawberry tongue** · punctate rash · **desquamation ~7 days after the rash** · circumoral pallor | **Scarlet fever** → full course of penicillin |\n| Young child · summer · **vesicles on the SOFT PALATE, uvula, posterior oropharynx** | **Herpangina (Coxsackie A)** → symptomatic; check hands and feet |\n| **Vesicles on GUMS, LIPS, TONGUE, INNER CHEEKS**; no seasonal pattern | **Herpes simplex gingivostomatitis** → aciclovir |\n| **UNILATERAL** painful vesicles along one nerve, **never crossing the midline** | **Herpes zoster** → early famciclovir |\n| **White patches that SCRAPE OFF** · **NO fever, NO pus** · recent **antibiotics** / denture / immunocompromised | **Candidiasis (moniliasis)** → antifungal + remove the cause |\n| **TRISMUS** · **uvula pushed to the opposite side** · tonsil pushed down and medially · cannot swallow saliva · adult male | **Quinsy** → drainage; tonsillectomy 1 month later *(taught in `ent-pharsupp`)* |\n| **Bilateral FIRM NON-TENDER** jugulodigastric nodes in a child, no fever | **Chronic tonsillitis** |\n| Snoring · sleep apnoea · dysphagia · **tonsils touching the midline**, no fever | **Chronic hypertrophic tonsillitis (kissing tonsils, grade 4)** |\n| **UNILATERAL** enlarged tonsil in an adult | **⚠️ MALIGNANCY — lymphoma or epidermoid carcinoma. Tonsillectomy = biopsy** |\n| Infant/toddler · **mouth breathing · snoring · difficult suckling · sleep apnoea** | **Adenoid hypertrophy** |\n| **RECURRENT BILATERAL AOM failing adequate medical treatment** | **Adenoid hypertrophy** → adenoidectomy (+ grommets for effusion) |\n| **Nocturnal enuresis, nightmares, dullness** in a mouth-breathing child | **Chronic CO₂ retention (hypercapnia) from adenoid obstruction** |\n| Adolescent **MALE** · nasal obstruction · **EPISTAXIS** | **⚠️ NASOPHARYNGEAL ANGIOFIBROMA — NEVER curette it** |\n| **Painful torticollis days after adenoidectomy or a URTI** | **⚠️ GRISEL’S SYNDROME — image the craniocervical junction** |\n| Bleeding **during** surgery | **PRIMARY** (adenoid: **residual tissue**) |\n| Bleeding **< 24 h** (2 h, 12 h, 20 h) | **REACTIONARY** — 2 h: **slipped ligature**; adenoid: **dislodged clot**; **rising pulse = swallowed blood** |\n| Bleeding **5–10 days / \"one week\"** | **SECONDARY — INFECTION.** Admit, observe, IV antibiotics |\n| **Fever + worsening pain + foul breath at 7 days**, no bleeding | **Secondary infection of the beds** — precursor of secondary bleeding |\n| **White slough on the tonsillar beds at 5–15 days**, child comfortable | **NORMAL healing by secondary intention — reassure** |\n| **Severe earache after tonsillectomy**, ear normal | **Referred otalgia via the GLOSSOPHARYNGEAL nerve** — expected; analgesia |",
-        "qs": [
-          "entqb-thr4-203",
-          "entqb-thr4-222",
-          "entqb-thr4-228",
-          "entqb-thr4-230",
-          "entqb-thr4-242",
-          "entqb-thr4-243",
-          "entqb-thr4-245",
-          "entqb-thr4-219",
-          "entqb-thr4-220",
-          "entqb-thr4-229",
-          "entqb-thr4-238",
-          "entep-throat-111",
-          "entep-throat-case-1",
-          "entep-throat-case-4",
-          "entep-throat-case-5",
-          "entep-throat-case-18",
-          "entep-throat-109",
-          "entqb-thr3-97",
-          "entqb-thr3-98"
-        ]
       }
     ]
   }
