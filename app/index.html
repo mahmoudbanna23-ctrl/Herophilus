@@ -1091,7 +1091,7 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
 .th-table th strong,.th-table th em{color:#fff}
 .th-table td{padding:10px 13px;border-bottom:1.5px solid var(--line);vertical-align:top;line-height:1.55}
 .th-table tr:last-child td{border-bottom:none}
-.th-table tr:nth-child(even) td{background:rgba(255,255,255,.03)}
+.th-table tbody tr:nth-child(odd) td{background:rgba(255,255,255,.03)}
 
 .flow{margin:4px 0 18px;border:2.5px dashed var(--neuro);border-radius:14px;padding:16px 17px;background:rgba(109,76,125,.12)}
 .flow-title{font-size:11px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:var(--neuro);margin-bottom:14px}
@@ -1194,14 +1194,14 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
      white, which prints white-on-white and loses every column label. Headless
      --print-to-pdf prints backgrounds regardless, so the harness could never
      have shown this. print-color-adjust makes the fill survive either way. */
-  .th-table th,.th-table tr:nth-child(even) td,.fbox,.flow,.th-intro,.wbadge,.eyebrow{
+  .th-table th,.th-table tbody tr:nth-child(odd) td,.fbox,.flow,.th-intro,.wbadge,.eyebrow{
     -webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
   /* Table heads take the module colour too, so a table reads as part of the
      chapter rather than as a black slab dropped into it. */
   .th-table{border:.6pt solid #d8dde5!important;border-radius:2pt!important;overflow:hidden}
   .th-table th{background:var(--mod,#14181f)!important;color:#fff!important}
   .th-table th strong,.th-table th em{color:#fff!important}
-  .th-table tr:nth-child(even) td{background:#f6f7fa!important}
+  .th-table tbody tr:nth-child(odd) td{background:#f6f7fa!important}
   .th-table td{border-bottom:.5pt solid #e4e8ee!important}
   /* A callout is the other thing the eye should catch. Tinted ground, a solid
      bar in the warn colour, and room to breathe. */
@@ -1214,7 +1214,18 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
   .page{padding:0;max-width:100%}
   .th-sec{break-inside:auto;page-break-inside:auto;margin-bottom:20px;padding-left:12px}
   .th-h{break-after:avoid;page-break-after:avoid}
-  .th-table,.flow,.fbox,.th-body blockquote{break-inside:avoid;page-break-inside:avoid}
+  /* ⚠️⚠️ `.th-table` IS DELIBERATELY NOT IN THIS LIST ANY MORE, AND THAT ONE
+     CHANGE IS WORTH MORE PAGES THAN ANY AMOUNT OF FURTHER WORD-CUTTING.
+     Measured: rewriting a chapter from prose into tables cut it from 10,384
+     words to 3,826 and left the page count at 16 — density fell from ~350 words
+     a page to ~240. With `break-inside:avoid`, a ten-row table that will not fit
+     in the space remaining jumps WHOLE to the next page and leaves the bottom
+     third of the sheet blank; on a page made of medium tables that happens over
+     and over. Rows still never split, and <thead> repeats the column labels on
+     the continuation page, so a broken table stays readable. */
+  .flow,.fbox,.th-body blockquote{break-inside:avoid;page-break-inside:avoid}
+  .th-table thead{display:table-header-group}
+  .th-table tr{break-inside:avoid;page-break-inside:avoid}
   .fbox,.th-table,.th-toc{box-shadow:none!important}
   /* ⚠️ THE PDF IS A BOOK, NOT THE SCREEN (user's instruction, 2026-08-13):
      title page, contents, then straight into the notes. The exam-patterns
@@ -1276,9 +1287,13 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
     -webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;
   }
   .wbadge.know{display:none!important}   /* "background" is the default; saying so costs a line */
-  .th-table{margin:4pt 0 8pt!important;font-size:9.6pt!important}
-  .th-table th{padding:4pt 6pt!important;font-size:8.4pt!important}
-  .th-table td{padding:4pt 6pt!important;line-height:1.38!important}
+  /* Cell padding is charged once per ROW, so on a table-heavy page it is the
+     single biggest consumer of vertical space after the break behaviour above.
+     4pt → 2.6pt saves ~2.8pt a row; a chapter with 150 table rows gets ~15 cm
+     of paper back for nothing. */
+  .th-table{margin:3pt 0 6pt!important;font-size:9.6pt!important}
+  .th-table th{padding:2.6pt 6pt!important;font-size:8.4pt!important}
+  .th-table td{padding:2.6pt 6pt!important;line-height:1.3!important}
   .th-body blockquote{margin:6pt 0!important;padding:6pt 9pt!important}
   .flow{margin:4pt 0 8pt!important;padding:7pt 9pt!important}
   .fbox{padding:5pt 7pt!important}
@@ -2707,13 +2722,7 @@ function md(s){
   const lines=h.split('\n');let out='',tbl=[],para=[];
   const flushT=()=>{
     if(!tbl.length)return;
-    let t='<table>';
-    tbl.forEach((r,i)=>{
-      if(isMdRule(r))return;
-      const cells=mdCells(r);
-      t+='<tr>'+cells.map(c=>i===0?`<th>${c.trim()}</th>`:`<td>${c.trim()}</td>`).join('')+'</tr>';
-    });
-    out+=t+'</table>';tbl=[];
+    out+=mdTable(tbl,'');tbl=[];
   };
   const flushP=()=>{if(para.length){out+='<p>'+para.join(' ')+'</p>';para=[]}};
   for(const ln of lines){
@@ -2836,6 +2845,26 @@ function isMdRule(row){
    column label shifted left by one against the body. Found by rendering a
    two-column comparison to PDF and reading it; nothing throws, and the table
    still looks like a table. Trim only the outer delimiters. */
+/* ⚠️⚠️ THE HEADER ROW GOES IN A <thead>, AND IT IS A PRINT DECISION, NOT TIDINESS.
+   Measured: compressing a chapter from prose into tables cut its word count by
+   63 % and its PAGE count by nothing at all — 3,826 words still printed 16
+   pages, where the 10,384-word prose version printed 30. Density fell from ~350
+   words a page to ~240. The cause is `break-inside:avoid` on a page full of
+   medium tables: a ten-row table that will not fit in the space left jumps
+   whole to the next page and leaves the bottom third of the sheet blank, over
+   and over. Letting tables break is only safe if the reader can still see the
+   column labels on the continuation page, and `display:table-header-group` on a
+   real <thead> is what repeats them. Emitted here so md() and mdBlock() cannot
+   drift apart. */
+function mdTable(rows,attr){
+  const body=rows.filter(r=>!isMdRule(r)).map(mdCells);
+  if(!body.length)return '';
+  const cell=(c,t)=>`<${t}>${c.trim()}</${t}>`;
+  let t='<table'+(attr||'')+'>';
+  t+='<thead><tr>'+body[0].map(c=>cell(c,'th')).join('')+'</tr></thead>';
+  if(body.length>1)t+='<tbody>'+body.slice(1).map(r=>'<tr>'+r.map(c=>cell(c,'td')).join('')+'</tr>').join('')+'</tbody>';
+  return t+'</table>';
+}
 function mdCells(row){
   const c=String(row).split('|');
   if(c.length&&c[0].trim()==='')c.shift();
@@ -2858,15 +2887,7 @@ function mdBlock(s){
      are applied to the whole string above, so cells arrive already formatted. */
   const ft=()=>{
     if(!tbl.length)return;
-    let t='<table class="th-table">';
-    let r=0;
-    tbl.forEach(row=>{
-      if(isMdRule(row))return;                           // the |---|---| separator
-      const cells=mdCells(row);
-      t+='<tr>'+cells.map(c=>r===0?`<th>${c.trim()}</th>`:`<td>${c.trim()}</td>`).join('')+'</tr>';
-      r++;
-    });
-    out+=t+'</table>';tbl=[];
+    out+=mdTable(tbl,' class="th-table"');tbl=[];
   };
   lines.forEach(ln=>{
     const t=ln.trim();
@@ -2909,15 +2930,17 @@ function flowHTML(f){
 }
 function tableHTML(t){
   if(!t)return '';
-  let h='<table class="th-table"><tr>';
+  /* <thead> for the same reason mdTable() uses one — it repeats the column
+     labels when a long table breaks across a printed page. */
+  let h='<table class="th-table"><thead><tr>';
   (t.head||[]).forEach(c=>{h+=`<th>${mdInline(c)}</th>`});
-  h+='</tr>';
+  h+='</tr></thead><tbody>';
   (t.rows||[]).forEach(r=>{
     h+='<tr>';
     r.forEach(c=>{h+=`<td>${mdInline(c)}</td>`});
     h+='</tr>';
   });
-  return h+'</table>';
+  return h+'</tbody></table>';
 }
 function mdInline(s){
   return esc(String(s||'')).replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');

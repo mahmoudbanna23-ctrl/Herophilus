@@ -1,15 +1,54 @@
 /* ent-aom v2 — "Acute otitis media and effusion", ENT.
    Rewritten 2026-08-14 under START-HERE.md §14 (slide-density revision notes).
    v1 was 12,352 body words over 22 sections / 34 printed pages — rejected for length.
+   An intermediate pass reached 2,964 words / 14 sections / 14 printed pages / 3
+   flowcharts.
    Lectures: L21.1 553 w + L21.2 424 w = 977 w (this chapter's own).
-   BUDGET COMPUTED BEFORE WRITING: cap 2,000 body words (§14.1 formula gives 977;
-   the caller relaxed it to 2,000 because the chapter also leans on L22, L17,18,
-   L13,14, L16, L19.1 and L3 and carries 106 linked questions).
+   BUDGET: cap 2,000 body words (§14.1 formula gives 977; the caller relaxed it to
+   2,000 because the chapter also leans on L22, L17,18, L13,14, L16, L19.1 and L3
+   and carries 106 linked questions).
+
+   ⚠️ MEASURED OUTCOME: 2,259 body words — 2,964 → 2,259 (−705, −24 %), and
+   2 flowcharts removed. THE CAP IS MISSED BY 259 WORDS, and that is reported
+   rather than hidden. 1,779 of those words are prose and 480 are table cells;
+   nothing non-protected is left in either. The next 200 words could only come
+   out of the protected list, and would cost, in ascending order of yield lost:
+     · aom-3 "Stage 2 pathology"  — 29 w, one whole L21.1 slide (hyperaemia and
+       swelling of the mucoperiosteum of the whole cleft, outpouring of serum
+       from dilated subepithelial capillaries, exudate under tension)
+     · aom-8 histopathology       — 25 w, one whole L21.2 slide (disrupted
+       basement membrane, PNL + lymphocytes + macrophages, histamine,
+       leukotrienes)
+     · aom-13 "all five in order" — 27 w, one whole L21.2 slide, and the section's
+       own defect note ("SNHL is complication 5 of 5") is unreadable without it
+     · aom-9 the five otoscopic findings — 30 w, one whole L21.2 slide, and it
+       carries the keyed "fluid level with bubbles is most diagnostic"
+     · aom-6 the necrotic-OM table — 52 w, a discrimination table; its six
+       questions are unanswerable from the rest of the chapter
+     · aom-5 the myringotomy indication list — the remaining ~40 w, seven
+       indications of which four are keys
+   That is four complete lecture slides plus a discrimination table, so the cut
+   was not made. Scaling the cap is the caller's decision, not this file's.
 
    FLOOR KEPT BOTH WAYS — every fact, number, stage, organism, sign and treatment
    L21.1 and L21.2 state (except the four items deferred by name below), and every
    linked question's KEY and DISCRIMINATOR as a line or a table cell. All 106
    question ids preserved and redistributed, none dropped.
+
+   FLOWCHARTS — 3 in the intermediate pass, 1 now. A `flow` block costs far more
+   vertical space per fact than a table or a list, and two of the three were not
+   decisions at all:
+     · aom-3 "the four stages" — a SEQUENCE, not a branch, and it restated the
+       before/after-perforation table beside it. Now the numbered line that opens
+       the section; its two unique facts (the stage-1 picture, and the radial
+       incision) folded into aom-3 and aom-5.
+     · aom-14 "a perforated drum after trauma" — every node duplicated a sentence
+       or a table cell already in that section's body. Deleted, nothing lost.
+     · aom-12 "the effusion ladder" — KEPT, trimmed from 7 nodes to 5. It is the
+       one genuine branch in the chapter, and what it carries is PRECEDENCE, which
+       the situation→answer table above it cannot express: adult-unilateral stops
+       everything (9 questions), and language delay overrides the 3-month clock
+       (2 questions flip on that clause alone).
 
    OMISSION NOTE — cut on purpose, each a decision on the record:
      1. Distractor-by-distractor rejection (~4,000 words of v1). It lives in every
@@ -28,6 +67,13 @@
         reasoning, aminoglycoside ototoxicity, why the mastoid sulcus reads both
         ways, the areal-ratio arithmetic behind myringoplasty, the antero-superior
         and postero-inferior quadrant contents.
+     6. THIS PASS ONLY, and no fact went with them: clauses that justify a kept
+        fact instead of stating it; sentences reduced to fragments; and each
+        fact's second and third printing across sections — the colour list
+        (aom-4 keeps it, aom-13 dropped it), "child bilateral / adult unilateral"
+        (aom-11 keeps it), "opens on yawning and swallowing" (aom-1), the
+        water-precaution list (aom-14 states it once), the type-B tympanogram
+        (aom-8's table and aom-9's table), the myringotomy site (aom-5).
 
    CROSS-CHAPTER DEFERRALS (§14.5) — named, so each is a promise not a deletion.
    Each was checked against all 106 of this chapter's questions: none tests it.
@@ -74,10 +120,10 @@ var THEORY_ENT_AOM = {
   id: 'aom-1', w: 'must',
   h: 'The cleft, the tube, and the two halves of the drum',
   body: [
-    '**Cleft = 4 parts: Eustachian tube · tympanic cavity · mastoid antrum · mastoid air cells.** Antrum = largest air cell, reached by the aditus.',
-    '**Routes: 1) tube, COMMONEST** — rhinitis, sinusitis, adenoiditis, milk, vomitus, nasal packing **· 2) perforated drum · 3) haematogenous, rare, immunocompromised.**',
-    '**Tube:** middle ear → nasopharynx, **ventilates it and clears fluid to the nasopharynx. Upper 1/3 BONY, always PATENT · lower 2/3 CARTILAGINOUS, potentially closed, OPENS ON YAWNING AND SWALLOWING**, by **tensor + levator veli palatini**. **Child: SHORTER, WIDER, MORE HORIZONTAL** — “infection is commoner in infants”.',
-    '**Closed tube → gas absorbed → NEGATIVE intratympanic pressure → TRANSUDATION** = every effusion here.',
+    '**Cleft = 4 parts: Eustachian tube · tympanic cavity · mastoid antrum · mastoid air cells.** Antrum = largest air cell, via the aditus.',
+    '**Routes: 1) TUBE, commonest** — rhinitis, sinusitis, adenoiditis, milk, vomitus, nasal packing **· 2) perforated drum · 3) haematogenous**, rare, immunocompromised.',
+    '**Tube** = middle ear → nasopharynx; ventilates and drains it. **Upper 1/3 BONY, always PATENT · lower 2/3 CARTILAGINOUS, potentially closed, OPENS ON YAWNING AND SWALLOWING** by **tensor + levator veli palatini**. **Child: SHORTER, WIDER, MORE HORIZONTAL** — infection commoner in infants.',
+    '**Closed tube → gas absorbed → NEGATIVE intratympanic pressure → TRANSUDATION.**',
     '',
     '||**PARS TENSA**|**PARS FLACCIDA** (Shrapnell)|',
     '|---|---|---|',
@@ -87,7 +133,7 @@ var THEORY_ENT_AOM = {
     '|Negative pressure|late|**RETRACTS FIRST**|',
     '|Ends as|central, safe perforation|**attic pocket → cholesteatoma**|',
     '',
-    '- **Umbo and handle = attachment points**, never first to rupture or retract. AOM hole: **small · central · pars tensa · antero-inferior** — thinnest, most dependent, and the **myringotomy site**. **POSTERO-SUPERIOR = DANGEROUS**: incudostapedial joint, stapes, chorda tympani, facial nerve at the 2nd genu. *(Quadrants not in course material.)*',
+    '- AOM hole: **small · central · pars tensa · antero-inferior**, thinnest and most dependent. **Umbo and handle = attachment points. POSTERO-SUPERIOR = DANGEROUS**: incudostapedial joint, stapes, chorda tympani, facial nerve 2nd genu. *(Quadrants not in course material.)*',
     '- Defect: a box calls the **bony** end the muscle-opened end; it is the **cartilaginous** end.',
     '',
     'Src: L21.1; L21.2; L22'
@@ -99,12 +145,11 @@ var THEORY_ENT_AOM = {
   id: 'aom-2', w: 'must',
   h: 'Acute otitis media — definition, organisms, aetiology',
   body: [
-    '**Definition:** infection **involving the middle ear**; drum **inflamed and opaque**, vessels **dilate**, fluid accumulates, inflammation **does not extend beyond the mucoperiosteal layer of the cleft** — the line against mastoiditis. **SUPPURATIVE = bacterial** · **cleft**, not middle ear · **acute < 3 weeks, subacute 3 weeks–3 months, chronic > 3 months** *(durations not in course material).*',
-    '**BACTERIAL: β-haemolytic streptococcus · *Streptococcus pneumoniae* · *Haemophilus influenzae*. VIRAL: influenza · adenovirus · measles.** Plus ***Moraxella***; **pneumococcus ≈ 50 %**; rank **pneumoniae > influenzae > Moraxella**; on a list the specific **“Pneumococci”** beats generic “Streptococcus”. ***Pseudomonas* is nowhere on the AOM list** — it is a canal organism, with *Staph. aureus* (furuncle) and *Aspergillus* / *Candida*. Middle ear organisms come **through the nose**, canal organisms from **skin and water**.',
-    '**Aetiology, complete: 1) pre-existing middle ear effusion with its predisposing factors — adenoids · nasopharyngeal carcinoma · post-nasal packing · cleft palate · nasal allergy · 2) faulty technique during lactation · 3) gastro-oesophageal reflux.**',
-    '- **First-year recurrent AOM → breast feeding FLAT** (faulty lactation technique): milk tracks up the short horizontal tube.',
-    '- **Recurrent BILATERAL AOM in a child → ADENOID**, midline between both orifices; **2–6 yrs**, giving **AOM, earache, CHL, chronic effusion**.',
-    '- **HYPOnasal = adenoid; HYPERnasal + nasal regurgitation = CLEFT PALATE. Mastoiditis is a complication, not a cause.**',
+    '**Definition:** infection **involving the middle ear**; drum **inflamed and opaque**, vessels **dilate**, fluid accumulates; **inflammation confined to the mucoperiosteal layer of the cleft**. **SUPPURATIVE = bacterial**; disease of the **cleft**. **Acute < 3 weeks · subacute 3 weeks–3 months · chronic > 3 months** *(durations not in course material).*',
+    '**BACTERIAL: β-haemolytic streptococcus · *Streptococcus pneumoniae* · *Haemophilus influenzae* · *Moraxella*. VIRAL: influenza · adenovirus · measles. Pneumococcus ≈ 50 %**; rank **pneumoniae > influenzae > Moraxella**; specific **“Pneumococci”** beats generic “Streptococcus”. ***Pseudomonas*, *Staph. aureus* (furuncle), *Aspergillus*/*Candida* = CANAL organisms.**',
+    '**Aetiology: 1) pre-existing middle ear effusion** — adenoids · nasopharyngeal carcinoma · post-nasal packing · cleft palate · nasal allergy **· 2) faulty lactation technique · 3) gastro-oesophageal reflux.**',
+    '- **First-year recurrent AOM → breast feeding FLAT.** **Recurrent BILATERAL AOM in a child → ADENOID**, midline between both orifices, **2–6 yrs** — AOM, earache, CHL, chronic effusion.',
+    '- **HYPOnasal = adenoid · HYPERnasal + nasal regurgitation = CLEFT PALATE. Mastoiditis is a complication, not a cause.**',
     '',
     'Src: L21.1; L21.2; L3'
   ].join('\n'),
@@ -115,8 +160,8 @@ var THEORY_ENT_AOM = {
   id: 'aom-3', w: 'must',
   h: 'The four stages, and before versus after perforation',
   body: [
-    '**1) Acute catarrhal — E.T. occlusion · 2) A.S.O.M before perforation · 3) A.S.O.M after perforation · 4) resolution or complications.** **“Stage of salpingitis” is not one.**',
-    '**Pathology, stage 2:** hyperaemia and swelling of the mucoperiosteum lining **the whole cleft**; signs confined to the tympanic cavity; **outpouring of serum from dilated subepithelial capillaries**; **exudate under tension**.',
+    '**1) Acute catarrhal — E.T. occlusion** (blocked feeling, dull or retracted drum, no pus) **· 2) A.S.O.M before perforation · 3) A.S.O.M after perforation · 4) resolution or complications.** **“Stage of salpingitis” is not one.**',
+    '**Stage 2 pathology:** hyperaemia and swelling of the mucoperiosteum lining **the whole cleft**, signs confined to the tympanic cavity; **outpouring of serum from dilated subepithelial capillaries**; **exudate under tension**.',
     '',
     '||**BEFORE perforation**|**AFTER perforation**|',
     '|---|---|---|',
@@ -127,23 +172,11 @@ var THEORY_ENT_AOM = {
     '|Drum|injected → **BULGING, nippling**|small central pars tensa hole|',
     '|Infant|**pulling at the ear, irritability**|—|',
     '',
-    '- **Perforation is RELIEF** — pain stops abruptly as the ear runs.',
-    '- **Earache FOLLOWING an upper respiratory tract infection** — cold, forceful nose-blowing, tonsillitis.',
-    '- **“If myringotomy is not done, spontaneous perforation will occur.”** **Pulsating (light-house) discharge** = active suppuration *(not in course material)*. **Pain returning, or never settling, = a complication.**',
+    '- **Perforation is RELIEF. Earache FOLLOWING a URTI** — cold, forceful nose-blowing, tonsillitis.',
+    '- **“If myringotomy is not done, spontaneous perforation will occur”** — a ragged tear. **Pulsating (light-house) discharge** = active suppuration *(not in course material)*. **Pain returning, or never settling, = a complication.**',
     '',
     'Src: L21.1'
   ].join('\n'),
-  flow: {
-    title: 'The four stages of acute otitis media',
-    steps: [
-      { k:'step', t:'1. ACUTE CATARRHAL — Eustachian tube occlusion', n:'Blocked feeling, mild discomfort, dull or retracted drum. No pus yet' },
-      { k:'step', t:'2. A.S.O.M BEFORE PERFORATION', n:'Exudate under tension. Severe throbbing pain + fever. Drum injected, then BULGING with nippling. Hearing only slightly affected' },
-      { k:'decision', t:'Is myringotomy done?', yes:'Radial incision, antero-inferior quadrant — drains and heals cleanly', no:'Spontaneous perforation will occur — a ragged tear' },
-      { k:'step', t:'3. A.S.O.M AFTER PERFORATION', n:'Pain disappears, fever lessens, hearing loss increases. Discharge haemorrhagic, then serosanguineous, then mucopurulent and odourless' },
-      { k:'decision', t:'4. Does it resolve?', yes:'Drum heals, hearing returns', no:'Fluid persists as otitis media with effusion, or complications' },
-      { k:'alert', t:'Pain that returns, or never settles, is a complication', n:'Post-auricular redness = acute mastoiditis. Facial weakness, vertigo, rigors — see ent-csom' }
-    ]
-  },
   qs: ['entep-ear-235','entqb-ear3-53','entep-ear-183','entep-ear-104','entep-ear-110','entep-case-36','entep-case-8','entep-case-10']
 },
 
@@ -151,18 +184,17 @@ var THEORY_ENT_AOM = {
   id: 'aom-4', w: 'must',
   h: 'Reading the drum and the discharge',
   body: [
+    '*(AOM drum → the stage table above · effusion drum → the AOM-vs-OME table below. The rest:)*',
+    '',
     '|Drum|Means|Pain|',
     '|---|---|---|',
-    '|Injected, dilated vessels|early AOM|yes|',
-    '|**BULGING, nippling**|**AOM before perforation**|**SEVERE**|',
-    '|Perforated, mucopurulent odourless discharge|AOM after perforation|relieved|',
-    '|**RETRACTED, dull, landmarks lost**|**EFFUSION**|**NONE**|',
     '|Attic/marginal hole, scanty **fetid** discharge|unsafe CSOM → `ent-csom`|no|',
-    '|Chalky white plaques · blue-black|tympanosclerosis · haemotympanum|no|',
+    '|**Chalky white plaques**|tympanosclerosis|no|',
+    '|**Blue-black**|haemotympanum, high jugular bulb|no|',
     '',
     '- **Severe pain + retracted is self-contradictory:** retraction = negative pressure = effusion = painless.',
-    '- AOM discharge is **mucopurulent AND odourless**. **Odourless excludes cholesteatoma** (fetor = osteitis). **Mucoid proves the source** — *“no mucous glands in the EAC; mucus always comes from the ME.”* **Pure purulent = mucosa destroyed. Profuse, re-accumulating after cleaning = reservoir sign → mastoiditis.**',
-    '- **AOM hearing loss is CONDUCTIVE** — the lesion is mechanical and in the middle ear. **SNHL or vertigo during AOM = labyrinthitis**, no longer simple AOM.',
+    '- AOM discharge **mucopurulent AND odourless**; **odourless excludes cholesteatoma** (fetor = osteitis). **Mucoid proves the source — no mucous glands in the EAC. Pure purulent = mucosa destroyed. Profuse, re-accumulating after cleaning = reservoir sign → mastoiditis.**',
+    '- **AOM hearing loss is CONDUCTIVE. SNHL or vertigo during AOM = labyrinthitis.**',
     '',
     'Src: L21.1; L17,18'
   ].join('\n'),
@@ -173,21 +205,13 @@ var THEORY_ENT_AOM = {
   id: 'aom-5', w: 'must',
   h: 'Treatment of AOM, and myringotomy',
   body: [
-    '**Medical: 1) antibiotics UNTIL RESOLUTION · 2) antihistaminics · 3) decongestant · 4) analgesic and antipyretics** — treat the nose to treat the ear. **Surgical: myringotomy ± grommet or T-tube.**',
-    '- **48-hour rule:** healthy child, **first uncomplicated** attack, **congested not bulging** drum → analgesia and antipyresis, **review at 48 h**; antibiotics if not improving by **48–72 h**. **Excluded: < 6 months**, toxic, bilateral in the very young, already perforated, recurrent, immunocompromised *(not in course material).*',
-    '- **Non-resolution = inadequate antibiotic therapy**; URTIs, nasal obstruction and low immunity cause **recurrence** instead. **AOM is CLINICAL** — CT/MRI petrous bones is the odd one out; image only a suspected complication.',
-    '- Defect: GG keys **A, immediate antibiotics**, while its own box describes **B, observe and treat if no improvement in 48–72 h** — keyed B, printed key recorded.',
-    '**Myringotomy = deliberate incision of the drum. Indications:** impending perforation (**bulging, nippling**) · **thick drum in a child** · **a complication — facial palsy or labyrinthitis, myringotomy FIRST** · unresponsive AOM · **secretory OM after failed medical treatment**, the operation of choice · **atelectasis** · a small inadequately draining or high attic perforation.',
-    '',
-    '|“All except”|Exception|',
-    '|---|---|',
-    '|All drum appearances except|**a CONGESTED drum** — no fluid under tension yet|',
-    '|Not a treatment of AOM|**“myringotomy in ALL cases”**|',
-    '|All require myringotomy except|**OTOSCLEROSIS** — dry ear, normal drum; needs stapedectomy|',
-    '',
-    '- **Never incise postero-superiorly; antero-inferior is safe and dependent.**',
-    '- **MYRINGOtomy makes a hole · MYRINGOplasty closes one · TYMPANOplasty = myringoplasty + ossiculoplasty · STAPEDECTOMY replaces a fixed stapes.**',
-    '- Tube complications: **residual perforation · tympanosclerosis · otorrhoea through the tube · early extrusion or blockage.**',
+    '**Medical: 1) antibiotics UNTIL RESOLUTION · 2) antihistaminics · 3) decongestant · 4) analgesic and antipyretics. Surgical: myringotomy ± grommet or T-tube.**',
+    '- **48-h rule:** healthy child, **first uncomplicated** attack, **congested not bulging** drum → analgesia + antipyresis, **review at 48 h**; antibiotics if no improvement by **48–72 h**. **Excluded: < 6 months**, toxic, bilateral in the very young, perforated, recurrent, immunocompromised *(not in course material).*',
+    '- **Non-resolution = inadequate antibiotic therapy**; **recurrence** = URTIs, nasal obstruction, low immunity. **AOM is CLINICAL** — image only a suspected complication.',
+    '- Defect: GG keys **immediate antibiotics** while its own box describes **observe, treat if no improvement in 48–72 h** — keyed as printed.',
+    '**Myringotomy = deliberate incision; RADIAL, ANTERO-INFERIOR, never postero-superior. Indications:** impending perforation (**bulging, nippling**) · **thick drum in a child** · **complication — facial palsy or labyrinthitis, myringotomy FIRST** · unresponsive AOM · **secretory OM after failed medical treatment** (operation of choice) · **atelectasis** · small inadequately draining or high attic perforation.',
+    '- **Not indications:** a **CONGESTED drum** (no fluid under tension) · **OTOSCLEROSIS** (dry ear, normal drum).',
+    '- **MYRINGOtomy makes a hole · MYRINGOplasty closes one · TYMPANOplasty = myringoplasty + ossiculoplasty · STAPEDECTOMY replaces a fixed stapes.** Tube complications: **residual perforation · tympanosclerosis · otorrhoea through the tube · early extrusion or blockage.**',
     '',
     'Src: L21.1; L21.2; L15'
   ].join('\n'),
@@ -198,21 +222,21 @@ var THEORY_ENT_AOM = {
   id: 'aom-6', w: 'must',
   h: 'Acute NECROTIC otitis media',
   body: [
-    '*(Absent from all 34 cached ENT files — **not in course material**. Six questions.)*',
+    '*(Absent from all 34 cached ENT files — **not in course material**.)*',
     '',
     '||**Ordinary suppurative OM**|**ACUTE NECROTIC OM**|',
     '|---|---|---|',
     '|Organism|pneumococcus, H. influenzae|**GROUP A β-HAEMOLYTIC STREP**|',
-    '|Setting|after a cold|**debilitated child during or after an exanthem — MEASLES, scarlet fever, influenza**|',
+    '|Setting|after a cold|**debilitated child during/after an exanthem — MEASLES, scarlet fever, influenza**|',
     '|Mechanism|mucosal inflammation|**exotoxins thrombose the drum’s vessels**|',
     '|Discharge|**mucopurulent, odourless, profuse**|**PURE PURULENT, scanty**|',
     '|Perforation|small, central|**LARGE, KIDNEY-SHAPED**, may take the annulus|',
     '|Middle ear|congested mucosa|**BARE PROMONTORY**|',
     '|Healing|spontaneous|**never — needs MYRINGOPLASTY**|',
     '',
-    '- **First to die: the central kidney-shaped pars tensa. Manubrium, annulus and pars flaccida resist longer**; severe cases slough most of the drum with its annulus.',
-    '- Antibiotics urgently, but true of every AOM; **myringotomy is pointless, the drum has gone.** *Immediate* step = antibiotics; **the treatment of the entity = myringoplasty.**',
-    '- **Name trap: otitis MEDIA** = group A strep, child, post-measles. **Malignant otitis EXTERNA** = ***Pseudomonas***, elderly uncontrolled diabetic, skull-base osteomyelitis, cranial nerve palsies, 3–6 months of IV cover.',
+    '- **First to die: the central kidney-shaped pars tensa; manubrium, annulus and pars flaccida resist longer.**',
+    '- **Immediate step = antibiotics; treatment of the entity = MYRINGOPLASTY** — myringotomy is pointless.',
+    '- **Name trap: otitis MEDIA** = group A strep, child, post-measles. **Malignant otitis EXTERNA** = ***Pseudomonas***, elderly uncontrolled diabetic, skull-base osteomyelitis, cranial nerve palsies, 3–6 months IV cover.',
     '',
     'Src: L17,18 (externa only)'
   ].join('\n'),
@@ -223,11 +247,10 @@ var THEORY_ENT_AOM = {
   id: 'aom-7', w: 'must',
   h: 'Complications of AOM — the boundary',
   body: [
-    '**Extension beyond the confines of the middle ear cleft. Cranial: acute mastoiditis and mastoid abscess — MOST COMMON** · petrositis · labyrinthitis · facial paralysis. **Intracranial and extracranial groups: `ent-csom`.**',
-    '- Mastoiditis is commonest **by CONTINUITY** — the antrum is part of the cleft, through the aditus. Everything else must **break out**.',
-    '- **AOM + post-auricular redness and tenderness = ACUTE MASTOIDITIS**, pinna out and down; sulcus **preserved**, then **obliterated** once a subperiosteal abscess forms. Petrositis = **Gradenigo** (otorrhoea + retrobulbar V pain + VI palsy); labyrinthitis = vertigo + SNHL; extradural abscess = no local sign.',
-    '- Look-alike: **furunculosis with post-auricular lymphadenitis** — **tragal tenderness**, a discrete mobile node, no mucoid discharge, normal middle ear.',
-    '- **Mastoiditis → antibiotics; mastoid abscess → cortical mastoidectomy.**',
+    '**Complication = extension beyond the confines of the middle ear cleft. Cranial: acute mastoiditis and mastoid abscess — MOST COMMON**, by **continuity** through the aditus · petrositis · labyrinthitis · facial paralysis. **Intracranial and extracranial groups: `ent-csom`.**',
+    '- **AOM + post-auricular redness and tenderness = ACUTE MASTOIDITIS**, pinna out and down; sulcus **preserved**, then **obliterated** with a subperiosteal abscess. **Mastoiditis → antibiotics; mastoid abscess → cortical mastoidectomy.**',
+    '- Petrositis = **Gradenigo** (otorrhoea + retrobulbar V pain + VI palsy) · labyrinthitis = vertigo + SNHL · extradural abscess = no local sign.',
+    '- Look-alike: **furunculosis with post-auricular lymphadenitis** — **tragal tenderness**, discrete mobile node, normal middle ear.',
     '',
     'Src: L16'
   ].join('\n'),
@@ -238,7 +261,7 @@ var THEORY_ENT_AOM = {
   id: 'aom-8', w: 'must',
   h: 'Otitis media with effusion — definition, AOM vs OME, causes',
   body: [
-    '**“A NON-SUPPURATIVE middle ear fluid”** — no active infection, so **no pain, no fever**. **Disease of infants and young age, peak 6–24 MONTHS, rises in WINTER and SPRING.**',
+    '**“A NON-SUPPURATIVE middle ear fluid”** — no active infection: **no pain, no fever. Infants and young age, peak 6–24 MONTHS, rises in WINTER and SPRING.**',
     '',
     '||**ACUTE OTITIS MEDIA**|**EFFUSION** (glue ear, SOM, MEE)|',
     '|---|---|---|',
@@ -250,20 +273,19 @@ var THEORY_ENT_AOM = {
     '|Hearing|slight, then increases|**mild-to-moderate CONDUCTIVE, bilateral**|',
     '|Tympanogram|—|**FLAT, TYPE B**|',
     '',
-    '**Three routes: 1) persistence of fluid after an AOM resolves** (commonest) **· 2) Eustachian tube malfunction · 3) air-pressure trauma, after an air flight or a scuba dive.** **Organisms: group A β-haemolytic streptococci, H. influenzae.** **Pathology:** dilated intercellular spaces with **disrupted basement membrane** · **PNL + lymphocytes + macrophages** · **histamine, leukotrienes.** **Fluid: SEROUS** (sterile, pale yellow, watery, translucent — the one that bubbles) · **MUCOID** (cloudy, cell secretion, glue, in SOM) · **PURULENT** (in ASOM).',
+    '**Three routes: 1) persistence of fluid after an AOM resolves** (commonest) **· 2) Eustachian tube malfunction · 3) air-pressure trauma — flight or scuba dive. Organisms: group A β-haemolytic streptococci, H. influenzae. Pathology:** dilated intercellular spaces, **disrupted basement membrane · PNL + lymphocytes + macrophages · histamine, leukotrienes. Fluid: SEROUS** (sterile, pale yellow, watery, translucent — the one that bubbles) **· MUCOID** (cloudy, cell secretion, glue, in SOM) **· PURULENT** (in ASOM).',
     '',
     '|Cause|Mechanism|',
     '|---|---|',
-    '|**Adenoids, adenoiditis**|**mechanical obstruction of the tubal orifice** + reservoir|',
+    '|**Adenoids, adenoiditis**|**obstruct the tubal orifice** + reservoir|',
     '|**Cleft palate**|**tensor and levator dysfunction · tube stenosis** → **T-tube**|',
     '|Allergic oedema|with adenoiditis, sinusitis, rhinitis|',
     '|Viral · immune deficiency · radiotherapy|tubal oedema · recurrent infection · fibrosis|',
-    '|**Iatrogenic, post-adenoidectomy**|the slide lists the operation as cause **and** cure|',
+    '|**Iatrogenic, post-adenoidectomy**|listed as cause **and** cure|',
     '|**Nasopharyngeal carcinoma**|adult, unilateral|',
     '|**Barotrauma**|**flight or scuba dive**; fullness **ON DESCENT**, retracted drum with bubbles|',
     '',
-    '- **Barotrauma prevention = REGULAR SWALLOWING** (sweets, gum, drinking induce swallows) — the cartilaginous tube opens on **yawning and swallowing**, not on mouth-opening, head-tossing or hands over the ears. Do not fly with a URTI. **Autoinflation: Valsalva, gum chewing.**',
-    '- **Child bilateral = adenoid · adult unilateral = carcinoma.**',
+    '- **Barotrauma prevention = REGULAR SWALLOWING** (sweets, gum, drinking). Do not fly with a URTI. **Autoinflation: Valsalva, gum chewing.**',
     '',
     'Src: L21.2; L21.1'
   ].join('\n'),
@@ -275,9 +297,9 @@ var THEORY_ENT_AOM = {
   h: 'Otoscopy and investigation of an effusion',
   body: [
     '**Five drum findings: opaque UMBER-YELLOW · ABSENT LANDMARKS (cone of light, umbo) · RETRACTED · FLUID LEVEL, BUBBLING WITH VALSALVA · LIMITED MOBILITY.** Nose and nasopharynx **may reveal adenoid enlargement**.',
-    '**History: decreased hearing · earaches · recurrent ASOM · manifestations of adenoids or cleft palate.** Earache is on the slide yet every key calls effusion painless — **new pain = superimposed AOM**.',
-    '- **Most diagnostic: a hair-line FLUID LEVEL with BUBBLES** — air **and** fluid, so a thin serous effusion. Distorted cone of light, foreshortened handle and prominent short process are signs of **retraction only**, which occurs with no fluid (type C).',
-    '**PTA → CONDUCTIVE loss, MILD TO MODERATE. Tympanometry → FLAT, TYPE B. Plain X-ray for adenoids · CT nasopharynx.**',
+    '**History: decreased hearing · earaches · recurrent ASOM · adenoid or cleft-palate features** — though every key calls effusion painless: **new pain = superimposed AOM**.',
+    '- **Most diagnostic: a hair-line FLUID LEVEL with BUBBLES.** Distorted cone of light, foreshortened handle, prominent short process = **retraction only**, no fluid (type C).',
+    '**Investigations: PTA · tympanometry · plain X-ray for adenoids · CT nasopharynx.**',
     '',
     '|Curve|Pressure|Compliance|Cause|',
     '|---|---|---|---|',
@@ -287,9 +309,9 @@ var THEORY_ENT_AOM = {
     '|**B**|—|**FLAT, no peak**|**FLUID**; also perforation or patent grommet (**high canal volume**)|',
     '|**C**|**NEGATIVE**|good|**tube dysfunction**, retraction without fluid|',
     '',
-    '- **Tympanometry tests compliance** — **reduced** in tympano-ossicular fixation, **absent** in middle ear effusion — **and the acoustic (stapedial) reflex: ABSENT in CHL, IMPAIRED in SNHL.**',
-    '- **In a toddler the tympanogram beats PTA:** PTA is **subjective** and needs cooperation, tympanometry is **objective** and takes seconds. Gold standard for a child’s hearing = **ABR**.',
-    '- **Bilateral symmetrical effusion:** BC normal and symmetrical, AC reduced both sides, **Weber does NOT lateralise**. **Unilateral CHL → Weber to the AFFECTED ear, Rinne negative; SNHL → Weber to the better ear.**',
+    '- **Tympanometry measures compliance and the acoustic (stapedial) reflex: ABSENT in CHL, IMPAIRED in SNHL.**',
+    '- **Toddler: tympanogram beats PTA** — PTA **subjective**, tympanometry **objective**. Gold standard for a child’s hearing = **ABR**.',
+    '- **Bilateral symmetrical effusion: Weber does NOT lateralise. Unilateral CHL → Weber to the AFFECTED ear, Rinne negative; SNHL → Weber to the better ear.**',
     '',
     'Src: L21.2; L21.1; L13,14'
   ].join('\n'),
@@ -300,10 +322,10 @@ var THEORY_ENT_AOM = {
   id: 'aom-10', w: 'must',
   h: 'Glue ear — commonest childhood deafness, presenting as behaviour',
   body: [
-    '**OME is the commonest cause of conductive, and of bilateral conductive, hearing loss in a child** — four option lists, one answer.',
-    '- Not: **otosclerosis** (adult, type As, normal drum) · **congenital cholesteatoma** (rare, unilateral) · **CSOM** (discharge + perforation) · **adhesive OM** (glue ear’s own end stage) · **wax, congenital atresia** (visible) · **congenital deaf mutism** (from birth) · **noise** (SNHL) · **traumatic rupture** (single event) · **acute OM** (painful, febrile, brief).',
-    '- **Painless, so missed.** The slide lists **developmental and behavioural changes FIRST** among its complications. The child is brought **inattentive or thought naughty**, turning the **TV up**, **missing consonants**, with **delayed speech**, **falling behind at school**, or **tugging the ears with recurrent colds, no fever and no pain**.',
-    '- **Autism trap:** recurrent URTIs, ear tugging and a **fluctuating** measurable loss point to the ear; congenital loss would date from birth.',
+    '**OME = commonest cause of conductive, and of bilateral conductive, hearing loss in a child.**',
+    '- **Painless, so missed** — presents as behaviour: **inattentive or thought naughty**, **TV up**, **missing consonants**, **delayed speech**, **falling behind at school**, **tugging the ears with recurrent colds, no fever, no pain**.',
+    '- Look-alikes: **otosclerosis** (adult, As) · **congenital cholesteatoma** · **CSOM** · **adhesive OM** · **congenital deaf mutism** (from birth) · **noise** (SNHL) · **traumatic rupture** · **acute OM** · **wax, atresia** (visible).',
+    '- **Autism trap:** recurrent URTIs, ear tugging and a **fluctuating** measurable loss point to the ear.',
     '- **Poor listening, inattention or delayed speech → tympanogram. Adenoids → test the hearing.**',
     '',
     'Src: L21.2'
@@ -315,12 +337,11 @@ var THEORY_ENT_AOM = {
   id: 'aom-11', w: 'must',
   h: 'Adult + unilateral effusion = nasopharyngeal carcinoma',
   body: [
-    '**A unilateral middle ear effusion in an adult is nasopharyngeal carcinoma until the nasopharynx has been looked at.** Nine questions, no qualification.',
-    '- The tube opens at the **fossa of Rosenmüller**, also the **commonest site of origin of NPC**: tumour blocks that one tube → gas absorbed → negative pressure → transudate. `L21.1` names it beside adenoids as a cause of effusion.',
-    '- **Age and laterality together are the alarm.** A child’s effusion is bilateral and explained; an adult’s one-sided effusion has no benign explanation and may be the **only** sign.',
-    '- **The answer is always to LOOK — nasopharyngeal or nasal endoscopy, and biopsy** — keyed over a bare principle, 50- to 71-year-olds, a diabetic, a normal otoscopy, a neck node, and a case wanting both halves, **“SOM caused by NPC”**. Every wrong option is a way of missing it: **grommet or medical treatment abolish the sign, not the cause**; audiogram and tympanometry confirm what is not in doubt; **CT and MRI stage but yield no tissue**; CT temporal bone is the **wrong end of the tube**; observing 3 months is right **in a child**.',
-    '- One printing keys **watchful waiting 3 months** — it gives **no age** and **does not offer nasopharyngoscopy. The key is the best option on the list.**',
-    '- Corroborating: **ipsilateral upper deep cervical node**, **epistaxis or blood-stained postnasal discharge**.',
+    '**A unilateral middle ear effusion in an adult is nasopharyngeal carcinoma until the nasopharynx has been looked at** — and may be the **only** sign.',
+    '- The tube opens at the **fossa of Rosenmüller**, also the **commonest site of origin of NPC**.',
+    '- **Answer = LOOK: nasopharyngeal or nasal endoscopy, and BIOPSY** — CT and MRI stage, they give no tissue.',
+    '- Defect: one printing keys **watchful waiting 3 months** — no age given, nasopharyngoscopy not offered; **the key is the best option on the list.**',
+    '- Corroborating: **ipsilateral upper deep cervical node · epistaxis or blood-stained postnasal discharge.**',
     '',
     'Src: L21.1; L21.2 *(NPC beyond that one line is not in course material)*'
   ].join('\n'),
@@ -331,45 +352,42 @@ var THEORY_ENT_AOM = {
   id: 'aom-12', w: 'must',
   h: 'Management of an effusion — the three-month ladder, grommet or T-tube',
   body: [
-    '**MEDICAL I: antibiotics · antihistaminics · corticosteroids. MEDICAL II: Eustachian tube ventilation — Valsalva, gum chewing. SURGICAL I: myringotomy with ventilatory tubes. SURGICAL II: surgical treatment of related conditions, as adenoidectomy.** Add decongestants and treatment of allergy or sinusitis.',
+    '**MEDICAL I: antibiotics · antihistaminics · corticosteroids. MEDICAL II: tubal ventilation — Valsalva, gum chewing. SURGICAL I: myringotomy + ventilatory tubes. SURGICAL II: related conditions, as adenoidectomy.** Plus decongestants, treat allergy and sinusitis.',
     '',
     '|Situation|Answer|',
     '|---|---|',
-    '|**1 week** bilateral · **after a cold**|**conservative** — decongestants, nasal steroids, watch|',
+    '|**1 week**, after a cold|**conservative** — decongestants, nasal steroids|',
     '|**1 month**, development **normal**|**wait and see 2 more months**|',
     '|**1 month + LANGUAGE DELAY**|**IMMEDIATE myringotomy + ventilation tubes**|',
     '|After treated AOM, **CHL persists**|**wait and watch 3 months**|',
-    '|**> 3 months / 90 days** despite adequate medical treatment|**MYRINGOTOMY + GROMMET**|',
+    '|**> 3 months / 90 days** despite medical treatment|**MYRINGOTOMY + GROMMET**|',
     '|**3 months + language delay**, or **6 months** bilateral|**bilateral myringotomy + grommets**|',
     '|**Recurrent, type B**|myringotomy + ventilation tubes|',
     '|**With adenoid hypertrophy**|**ADENOIDECTOMY *AND* VENTILATION TUBE, one sitting**|',
     '|**With cleft palate**|**T-TUBE**|',
     '|**Adult, unilateral**|**NASOPHARYNGOSCOPY FIRST**|',
     '',
-    '- **Language delay overrides the clock:** two questions print the same child, the same month and the same options, and the answer flips from *wait* to *tubes* on that clause alone.',
-    '- **Myringotomy alone fails — the incision heals in 48–72 h.** **Adenoidectomy alone** does not evacuate the fluid. **Tympanoplasty** repairs a perforation; this drum is **intact**. **Long-term antibiotics** treat a **non-suppurative** condition; **penicillin to age 15** is rheumatic-fever prophylaxis.',
+    '- **Language delay overrides the clock. Myringotomy alone fails — the incision heals in 48–72 h.**',
     '',
     '||**GROMMET**|**T-TUBE**|',
     '|---|---|---|',
     '|Stays|**~6–12 months, extrudes itself**|**years**, removed deliberately|',
-    '|For|a **TEMPORARY** cause — adenoids, cold, allergy|a **PERSISTENT** one: **cleft palate**, craniofacial anomaly, post-irradiation, chronic tubal failure, recurrent extrusion|',
+    '|For|**TEMPORARY** — adenoids, cold, allergy|**PERSISTENT** — **cleft palate**, craniofacial anomaly, post-irradiation, chronic tubal failure, recurrent extrusion|',
     '|Risk|extrusion, blockage|**persistent perforation**|',
     '',
-    '*(Dwell times not in course material.)* **Cleft palate takes a T-tube from the outset** — a malinserted tensor is a **structural, lifelong** failure.',
-    '- Defects, keyed as printed: one keys **systemic steroids for 48 hours** as initial treatment (the slide gives corticosteroids with **no duration**, and watchful waiting is not offered); a box calls **hyposensitisation and Valsalva “the most important drugs”** — neither is a drug.',
+    '*(Dwell times not in course material.)*',
+    '- Defects, keyed as printed: **systemic steroids for 48 h** as initial treatment (slide gives corticosteroids, **no duration**); a box calls **hyposensitisation and Valsalva “the most important drugs”** — neither is a drug.',
     '',
     'Src: L21.2'
   ].join('\n'),
   flow: {
-    title: 'The effusion ladder — does this ear need an operation?',
+    title: 'The effusion ladder — precedence, not a list',
     steps: [
       { k:'decision', t:'ADULT with a UNILATERAL effusion?', yes:'STOP — nasopharyngeal endoscopy and biopsy first. Do not treat the ear', no:'Continue' },
       { k:'decision', t:'Delayed language development, or a measurable developmental cost?', yes:'Myringotomy + ventilation tubes NOW — the clock is overridden', no:'Continue' },
-      { k:'step', t:'MEDICAL TREATMENT — the slide’s two arms', n:'I) antibiotics, antihistaminics, corticosteroids (± decongestants, treat allergy and sinusitis). II) tubal ventilation: Valsalva, gum chewing' },
-      { k:'decision', t:'Persisted 3 MONTHS (90 days) despite adequate medical treatment?', yes:'MYRINGOTOMY + GROMMET', no:'Keep watching — most effusions after a cold clear within weeks' },
-      { k:'decision', t:'Obstructing ADENOID?', yes:'Adenoidectomy in the same sitting — remove the cause, ventilate the ear', no:'Continue' },
-      { k:'decision', t:'Is the tubal failure PERMANENT — cleft palate, craniofacial anomaly, post-irradiation?', yes:'Long-stay T-TUBE, not a grommet that will extrude', no:'Short-stay grommet' },
-      { k:'alert', t:'Do not repeat a failed medical course', n:'Three more months of impaired hearing, and language development does not wait' }
+      { k:'step', t:'MEDICAL — I) antibiotics, antihistaminics, corticosteroids · II) tubal ventilation: Valsalva, gum chewing', n:'± decongestants; treat allergy and sinusitis' },
+      { k:'decision', t:'Persisted 3 MONTHS (90 days) despite adequate medical treatment?', yes:'MYRINGOTOMY + GROMMET — plus adenoidectomy in the same sitting if an adenoid obstructs', no:'Keep watching, and do not repeat a failed medical course' },
+      { k:'alert', t:'Permanent tubal failure — cleft palate, craniofacial anomaly, post-irradiation', n:'Long-stay T-TUBE, not a grommet that will extrude' }
     ]
   },
   qs: ['entqb-ear3-73','entqb-ear3-75','entqb-ear3-74','entqb-ear3-72','entqb-ear3-71','entep-mfe5-26','entep-mfe5-27','entep-mfe5-24','entep-mfe5-23','entep-nose-36','entep-ear-8','entep-ear-41','entep-ear-153','entep-ear-197','entep-ear-212','entep-ear-249','entqb-ear3-70','entep-mfe5-25']
@@ -383,15 +401,13 @@ var THEORY_ENT_AOM = {
     '',
     '|Entity|What it is|Loss|',
     '|---|---|---|',
-    '|**ADHESIVE OM**|**the sequel of long-standing OME** — drum thins, loses its fibrous layer, is drawn in and **adheres to promontory and ossicles**|**permanent CONDUCTIVE**|',
+    '|**ADHESIVE OM**|**THE sequel of long-standing OME**, not CSOM; drum thins, loses its fibrous layer, **adheres to promontory and ossicles**|**permanent CONDUCTIVE**|',
     '|**ATELECTASIS**|before adhesion — collapsed, not yet stuck; **an indication for myringotomy + tube**|conductive|',
-    '|**TYMPANOSCLEROSIS**|**chalky white plaques**, hyalinised often calcified collagen, sparing the handle|**none** until it reaches annulus or ossicles → **conductive**|',
+    '|**TYMPANOSCLEROSIS**|**chalky white plaques**, hyalinised often calcified collagen, sparing the handle|**none** until annulus or ossicles → **conductive**|',
     '|**BLUE EAR**|old effusion, dark cholesterol-laden fluid|conductive|',
     '',
-    '- **The sequel of OME is ADHESIVE OM.** CSOM, mastoiditis and labyrinthitis are **suppurative**; **OME is non-suppurative**.',
-    '- **Tympanosclerosis follows** repeated AOM, long-standing OME and **previous ventilation tube sites**. At the annulus → **conductive** loss, **Rinne negative**, **Weber to the worse ear**, **tympanogram TYPE As** — not B (fluid), not A (mobile drum). It **never crosses the oval or round window**: never SNHL, never mixed. **Otosclerosis leaves the drum NORMAL.**',
-    '- **Colour:** chalky white = tympanosclerosis · dull amber = effusion · blue-black = haemotympanum or high jugular bulb · red and bulging = AOM.',
-    '- Defect: one entry keys **SNHL** as the non-complication of effusion, while **`L21.2` lists SNHL as complication 5 of 5** (and lists neither blue ear, tympanosclerosis nor CHL). Keyed as printed — **from the lecture, SNHL is not a safe “except”. Know both lists.**',
+    '- **Tympanosclerosis follows** repeated AOM, long-standing OME and **previous ventilation tube sites**. At the annulus → **conductive** loss, **Rinne negative, Weber to the worse ear, tympanogram TYPE As**. It **never crosses the oval or round window**: never SNHL, never mixed. **Otosclerosis leaves the drum NORMAL.**',
+    '- Defect: one entry keys **SNHL** as the non-complication of effusion, while **`L21.2` lists SNHL as complication 5 of 5** — keyed as printed; know both lists.',
     '',
     'Src: L21.2; L19.1'
   ].join('\n'),
@@ -402,7 +418,7 @@ var THEORY_ENT_AOM = {
   id: 'aom-14', w: 'must',
   h: 'Traumatic perforation of the drum',
   body: [
-    '*(The slides cover ear trauma only as a cause of CSF otorrhoea — halo sign, β2-transferrin, β2-trace protein, head elevation, water precautions — and of bloody otorrhoea. The rest is **not in course material**. Ten questions; `MODULES` has no trauma chapter.)*',
+    '*(Slides carry ear trauma only as CSF otorrhoea — halo sign, β2-transferrin, β2-trace protein, head elevation — and bloody otorrhoea. The rest **not in course material**; `MODULES` has no trauma chapter.)*',
     '',
     '||**TRAUMATIC — a TEAR**|**INFECTIVE — a MELT**|',
     '|---|---|---|',
@@ -413,25 +429,13 @@ var THEORY_ENT_AOM = {
     '|Middle ear|**normal**|**congested mucosa**|',
     '',
     '**Size, number and site do NOT separate them.**',
-    '**Management is one number: THREE MONTHS.** Fresh, dry, uninfected — slap, blast, cotton bud, blow → **nothing in the ear + STRICT WATER PRECAUTIONS**; most close spontaneously. **Still open at ~3 months, or 6 → MYRINGOPLASTY** (graft, usually **temporalis fascia**; with ossicular damage, a **tympanoplasty**). Operate only on a **dry** ear, hearing measured.',
-    '- **Water precautions ARE the treatment** — which is why *“no treatment, let it heal naturally”* is the best distractor here, and how a self-limiting tear becomes CSOM. Cotton wool with petroleum jelly for washing; no swimming, no diving, **no drops, never syringe**; review at 3 months.',
-    '- Harmful, not merely unnecessary: **drops and packs** put fluid through an open drum into a sterile middle ear; **syringing out the clots** floods it, and **clots separate on their own**; **immediate myringoplasty** repairs a drum that would heal; **myringotomy** drains an ear already open.',
-    '- **TEST THE HEARING.** Mild conductive loss is expected and recovers. **Vertigo, or a sensorineural or severe loss → EXPLORATION** for ossicular disruption or a **perilymph fistula**.',
-    '- **Iatrogenic:** **bleeding during syringing** = the jet tore the drum; **discharge on day 2 is secondary infection**, i.e. AOM. Trauma first, infection after.',
+    '**Management is one number: THREE MONTHS.** Fresh, dry, uninfected — slap, blast, cotton bud, blow → **nothing in the ear + STRICT WATER PRECAUTIONS** (cotton wool with petroleum jelly for washing; no swimming, diving, **drops or syringing**). Most close spontaneously. **Still open at ~3 months, or 6 → MYRINGOPLASTY** — graft usually **temporalis fascia** or tragal perichondrium; with ossicular damage a **tympanoplasty**, on a **dry** ear, hearing measured.',
+    '- **Drops, packs and syringing are harmful** — fluid through an open drum turns a self-limiting tear into CSOM; **clots separate on their own.**',
+    '- **TEST THE HEARING.** Mild conductive loss expected, recovers. **Vertigo, or a sensorineural or severe loss → EXPLORATION** for ossicular disruption or a **perilymph fistula**.',
+    '- **Iatrogenic: bleeding during syringing** = the jet tore the drum; **discharge on day 2 = secondary infection** (AOM).',
     '',
     'Src: L17,18'
   ].join('\n'),
-  flow: {
-    title: 'A perforated drum after trauma',
-    steps: [
-      { k:'step', t:'CONFIRM IT IS TRAUMATIC', n:'Irregular slit-like defect, ragged everted edges, blood clot at the margin, dry, middle ear mucosa normal' },
-      { k:'decision', t:'Vertigo, or a sensorineural / severe hearing loss?', yes:'EXPLORATION under GA — suspect ossicular disruption or perilymph fistula', no:'Continue' },
-      { k:'decision', t:'Is the ear dry and uninfected?', yes:'Continue', no:'Treat the infection first — a discharging ear will not heal and will not be grafted' },
-      { k:'step', t:'NOTHING PER EAR + STRICT WATER PRECAUTIONS', n:'Cotton wool with petroleum jelly for washing. No swimming, no diving, no drops, never syringe. Test the hearing' },
-      { k:'decision', t:'Still open at ~3 MONTHS?', yes:'MYRINGOPLASTY — temporalis fascia or tragal perichondrium graft', no:'Healed — discharge from follow-up' },
-      { k:'alert', t:'Irrigating or instilling drops through an open drum is the harm', n:'It converts a sterile self-healing tear into a discharging ear' }
-    ]
-  },
   qs: ['entep-ear-127','entep-ear-129','entep-ear-196','entep-ear-221','entep-ear-242','entep-ear-244','entep-enr-18','entqb-ear3-76','entqb-ear3-77','entep-case-2']
 }
 
