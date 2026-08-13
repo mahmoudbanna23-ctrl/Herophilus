@@ -560,3 +560,90 @@ which has been the single most repeated fault in this project.
 
 **Subagent cap stays at 2 per chat.** The bottleneck is the shared usage pool, not the number of
 slots — a third agent adds contention, not throughput. Everything in §§1–11 stands.
+
+---
+
+## 13. ⚠️⚠️ THEORY NOW COMES FIRST — the user's decision of 2026-08-13, and it REVERSES §9's ordering and §11's "when your module's last bank closes"
+
+The user set a deadline, was shown the measured arithmetic, and chose the split. **Read this before
+§9 and §11 — where they conflict, this section wins.**
+
+### 13.1 The decision
+
+| | |
+|---|---|
+| **NOW → ~2026-08-22** | **Both subagent slots write THEORY CHAPTERS.** Question transcription pauses. |
+| **~2026-08-22 → ~2026-09-07** | Question banks resume and run to completion. Nothing is dropped. |
+
+**Why this order, and it is not arbitrary.** The exam is approximately early September. **Notes
+that arrive the week of the exam are notes the user skims.** The corpus already holds **1,930
+questions** and **zero chapters of notes** — so the marginal value of one more chapter of notes is
+far higher than one more topic of MCQs. Finishing theory by the 22nd leaves **~2 weeks to actually
+revise from it**, which is the entire point of writing it.
+
+**Questions resuming afterwards costs the user nothing**, because `S.answers` is keyed by **question
+id** in `wardround.v3.<profileId>`: questions added later are **purely additive**. No counter
+resets, no progress is disturbed, nothing already answered has to be re-done. The bank fills in
+underneath the learner while they revise.
+
+### 13.2 ⚠️ THE REAL COST OF REORDERING, AND IT MUST NOT BE HIDDEN
+
+`CLAUDE.md` §4 says theory is **written backwards from the questions** — read the chapter's question
+set first, then structure the notes around what examiners actually test. **That instrument is now
+weaker for three of the four modules**, and the honest numbers are:
+
+| Module | Questions | Chapters | Per chapter | Test 1 strength |
+|---|---|---|---|---|
+| **ENT** | 1,638 | 30 | **~55** | **Strong — write normally** |
+| **Ophthalmology** | 112 | 26 | ~4.3 | **⚠️ Thin** |
+| **Neuropsychiatry** | 99 | 27 | ~3.7 | **⚠️ Thin** |
+| **Pediatrics** | 81 | 21 | ~3.9 | **⚠️ Thin** |
+
+**What this changes, concretely.** Of the four importance tests in `CLAUDE.md` §4, only **test 1
+("the bank asks it")** weakens. **Tests 2, 3 and 4 are untouched** and now carry the weight:
+
+2. **The slides give it weight** — and every module's lecture cache is complete and paid for:
+   **ENT 34, Pediatrics 64, Ophthalmology 27, Neuropsychiatry 25 = 150 cached files.** The slides
+   *define the syllabus's own scope and ordering*; that was always the backbone, and it still is.
+3. **Clinical judgement** — emergencies, red flags, what changes management, what distinguishes two
+   look-alikes.
+4. **Named entities, classic signs, and numbers** the material states.
+
+**⚠️ SO FOR THE THREE THIN MODULES, LEAN HARDER ON THE SLIDES AND SAY SO IN THE CHAPTER'S OMISSION
+NOTE.** Do not pretend a 4-question chapter told you what examiners emphasise. `examiner-patterns.md`
+exists for **ENT only** — the other three have none, and inventing one from 4 questions would be
+manufacturing evidence.
+
+### 13.3 ⚠️ THE RECONCILIATION PASS — mandatory, and it is what makes this safe
+
+The hard floor in `CLAUDE.md` §4 is **"every question in a chapter must be answerable from that
+chapter's notes alone."** Writing notes before the banks close makes that a **moving target**: a
+question transcribed in September may not be answerable from notes written in August.
+
+> **⚠️ THEREFORE: WHEN A MODULE'S BANKS FINALLY CLOSE, RE-CHECK EVERY CHAPTER'S NEW QUESTIONS
+> AGAINST ITS NOTES AND PATCH THE GAPS.** This is cheap — it is a diff, not a rewrite — and it is
+> **not optional.** Without it the theory quietly stops meeting its own contract.
+
+Record it per chapter, so a gap is a decision on the record rather than an accident:
+
+- while writing, append each chapter's `qs` from the questions that **exist now**;
+- at reconciliation, add the later ids and patch any fact the notes do not cover;
+- the omission note says which pass it was written in.
+
+### 13.4 Working rules for the theory sprint
+
+- **One CHAPTER per subagent invocation.** Input: that chapter's full current question set, its
+  1–3 cached lectures, and `examiner-patterns.md` where it exists. Output: the chapter's `THEORY`
+  entry drafted to `content\<mod>\theory-drafts\<chapter-id>.draft.js`.
+- **Subagents still never touch `theory.<mod>.js`, git, or any data file.** §11's boundaries are
+  unchanged — the chat splices.
+- **The four theory stub files are already wired** into `index.html` (`theory.ent.js`,
+  `theory.peds.js`, `theory.ophtho.js`, `theory.neuro.js`), so nothing shared needs editing.
+- **⚠️ §12's adaptive depth DOES NOT APPLY TO THEORY.** It governs question *explanations*. The
+  theory brief is unchanged and absolute: **a new study source, sufficient to sit the exam from
+  alone, length never the goal, dropping something important the one unacceptable failure.** The
+  saving §12 buys is spent here.
+- **Chapter budget:** 30 ENT + 26 Ophthalmology + 27 Neuropsychiatry + 21 Pediatrics = **104**.
+  Eight streams, ~13 chapters each, ~2 per stream per day.
+- **⚠️ If a chat will not make the 22nd, SAY SO EARLY AND LOUDLY.** The user's standing instruction
+  holds: never thin the notes to make the remainder fit. Scaling down is their call, not yours.

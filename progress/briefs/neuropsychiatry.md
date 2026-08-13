@@ -11,6 +11,13 @@ schema, the sweep and the validator. This file holds only what is specific to Ne
 > stay exactly as they were, and the theory notes remain a study source sufficient to sit the exam
 > from. **If time runs short, say so loudly — never trim a bank.** Apply from your next batch; do not
 > rewrite finished entries.
+>
+> **⚠️⚠️ AND READ §13 — THEORY NOW COMES FIRST.** The user set a deadline on 2026-08-13: **both your
+> subagent slots write THEORY CHAPTERS from now until ~2026-08-22**, then question banks resume and
+> run to completion (~Sep 7). Notes that arrive the week of the exam are notes that get skimmed;
+> finishing them by the 22nd leaves ~2 weeks to revise from. **Nothing is dropped — the banks resume
+> after.** §13 carries the reconciliation pass you owe when your banks finally close, and the warning
+> that §12 depth rules do NOT apply to theory.
 
 ---
 
