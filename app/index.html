@@ -1135,7 +1135,9 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
 
 /* ---------- Print / Save as PDF ---------- */
 @media print{
-  @page{margin:16mm 14mm}
+  /* @page lives further down with the cover rules, so the margin and the page
+     number are declared together. Two @page blocks would merge silently and the
+     later one would win — one place is clearer. */
   /* ⚠️ .filterbar and .tb-btn were missing here, so "Test the whole lecture",
      "Save as PDF" and the "← ENT notes" back link all printed onto paper —
      three controls that do nothing on a sheet of paper. Reported by the user
@@ -1223,8 +1225,24 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
   .th-body p{margin:0 0 6pt!important}
   .th-body ul{margin:4pt 0 6pt!important}
   .th-body li{margin-bottom:2pt!important}
-  .th-sec{margin-bottom:9pt!important}
-  .th-h{margin-bottom:5pt!important}
+  /* ── SECTION HEADINGS ──────────────────────────────────────────────────────
+     Revision notes are SCANNED, so a heading has to be findable at arm's length
+     and cheap in vertical space. A tinted band in the module colour, the number
+     in the colour, the weight badge inline. `break-after:avoid` already stops a
+     heading stranding at the foot of a page. */
+  .th-sec{margin-bottom:9pt!important;padding-left:0!important;border-left:none!important}
+  .th-h{
+    margin:0 0 5pt!important;padding:3.4pt 6pt!important;
+    background:#f2f4f8!important;border-left:2.6pt solid var(--ent)!important;
+    align-items:baseline!important;
+  }
+  .th-h h2{font-size:11.6pt!important;letter-spacing:.02em!important;margin:0!important}
+  .th-num{color:var(--ent)!important;font-size:8.6pt!important;font-weight:900!important}
+  .wbadge{
+    font-size:6.6pt!important;padding:1pt 4pt!important;letter-spacing:.09em!important;
+    -webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;
+  }
+  .wbadge.know{display:none!important}   /* "background" is the default; saying so costs a line */
   .th-table{margin:4pt 0 8pt!important;font-size:9.6pt!important}
   .th-table th{padding:4pt 6pt!important;font-size:8.4pt!important}
   .th-table td{padding:4pt 6pt!important;line-height:1.38!important}
@@ -1240,14 +1258,45 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
     columns:auto!important;column-gap:normal!important;
     height:auto!important;transform:none!important;transition:none!important}
   .bk-bar,.bk-prog,.bk-run,.bk-tap{display:none!important}
+  /* ── THE COVER ─────────────────────────────────────────────────────────────
+     Typographic, not illustrated: Canva was considered and set aside because a
+     cover image cannot be generated per chapter for 104 chapters, and the module
+     colour already carries the identity. A rule above the title, the module in
+     small caps, the chapter, a rule below, and the counts as a footer line. */
   .doc-head{
     break-after:page;page-break-after:always;
-    padding-top:74mm;text-align:center;border-bottom:none;
+    padding-top:88mm;text-align:center;border-bottom:none;position:relative;
   }
-  .doc-head .eyebrow{display:inline-block;margin-bottom:10mm}
-  .doc-head h1{font-size:30pt;line-height:1.15}
-  .doc-head .doc-meta{margin-top:8mm;font-size:11pt}
-  .th-toc{break-after:page;page-break-after:always;border:none;padding:0}
+  .doc-head::before{
+    content:'';display:block;width:34mm;height:2.4pt;background:var(--ent);
+    margin:0 auto 11mm;
+  }
+  .doc-head .eyebrow{
+    display:inline-block;margin-bottom:9mm;background:none!important;
+    color:var(--ent)!important;font-size:10pt;letter-spacing:.34em;font-weight:800;
+    padding:0;border:none;
+  }
+  .doc-head .eyebrow svg{display:none}
+  .doc-head h1{font-size:32pt;line-height:1.12;letter-spacing:.03em;margin:0}
+  .doc-head .doc-meta{
+    margin-top:11mm;font-size:9.5pt;letter-spacing:.16em;text-transform:uppercase;
+    color:#3a424e!important;font-weight:700;
+  }
+  .doc-head::after{
+    content:'';display:block;width:16mm;height:.9pt;background:#b9c1cd;margin:9mm auto 0;
+  }
+  /* ── RUNNING HEAD AND PAGE NUMBERS ─────────────────────────────────────────
+     @page margin boxes are the only way to repeat furniture on every sheet;
+     Chrome supports the counter but not `string-set`, so the chapter name is
+     written in by the renderer as a CSS variable rather than pulled from h1. */
+  @page{
+    margin:18mm 15mm 16mm;
+    @bottom-center{
+      content:counter(page);
+      font-family:'EB Garamond',Georgia,serif;font-size:9pt;color:#5a6472;
+    }
+  }
+  @page:first{ @bottom-center{content:''} }
   .th-toc .tl{font-size:13pt;letter-spacing:.14em;margin-bottom:6mm}
   .th-toc li{margin-bottom:3.4mm;font-size:11.5pt}
   .th-toc a{color:#14181f!important;border-bottom:none}

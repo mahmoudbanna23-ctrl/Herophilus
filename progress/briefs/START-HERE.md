@@ -647,3 +647,65 @@ Record it per chapter, so a gap is a decision on the record rather than an accid
   Eight streams, ~13 chapters each, ~2 per stream per day.
 - **⚠️ If a chat will not make the 22nd, SAY SO EARLY AND LOUDLY.** The user's standing instruction
   holds: never thin the notes to make the remainder fit. Scaling down is their call, not yours.
+
+---
+
+## 14. ⚠️⚠️ THEORY IS REVISION NOTES, NOT A TEXTBOOK — the user's ruling of 2026-08-13, and it SUPERSEDES §13.4 and `CLAUDE.md` §4's "new study source" brief
+
+The user read a real printed chapter — 42 pages for one topic — and said it was too long
+against a lecture of about fifteen slides. Shown the three options and their costs, they chose
+**revision-notes format**, accepting the stated trade: *"you get the what, less of the why."*
+
+### 14.1 What changes: the FORM. What does not: the COVERAGE.
+
+> **⚠️ THE HARD FLOOR SURVIVES INTACT. Every question filed under a chapter must still be
+> answerable from that chapter's notes alone**, and that still includes **why each wrong option is
+> wrong**, because that is what the exam tests. **Compression is of WORDS, never of FACTS.**
+> Deleting a fact to hit a page count is the same failure as it always was.
+
+**Target: 18–22 A4 pages for a large chapter, 6–10 for a small one.** Roughly half of what the
+first two chapters ran to.
+
+### 14.2 How to write it
+
+**Default to a table or a bullet. Prose is the exception, not the rule.**
+
+| Write it as | When |
+|---|---|
+| **A table** | Anything comparing two or more things — always. Anything with a repeating shape (cause → feature → treatment; age → state; type → appearance) |
+| **A bullet list** | Lists of causes, features, indications, complications, steps |
+| **A flowchart** | Anything algorithmic |
+| **A short prose line** | Only where a fact genuinely needs a sentence to be true |
+
+**Cut these, every time:**
+
+- **The teaching voice.** *"This table answers more questions in this chapter than any other single
+  item"*, *"the whole teaching point is"*, *"read the vignette for the discriminating clause"*.
+  Useful once in the `intro`; dead weight repeated through 31 sections.
+- **Meta-commentary about the bank** — how many times something is asked, which revision page it
+  appears on, how the examiner phrases it. **That belongs in `intro` only.**
+- **Restating a fact in prose after a table has already given it.** Pick one.
+- **Long verbatim block quotes.** Quote the **phrase** that is examinable, not the paragraph
+  around it. A citation still names the slide.
+- **Connective and framing sentences** — *"Now that we have covered X, the next thing to note is…"*
+- **Repeating a shared table** — §12.2 already said this and it still applies.
+
+**Keep, always:**
+
+- every fact, number, eponym, named entity, classic sign and discriminator
+- **why each wrong option is wrong** — compress it to a clause, never delete it
+- every defect note, every `(not taken from the course material)` tag, every citation
+- the `w` weighting, the `qs` links, the flowcharts and the tables
+
+### 14.3 The test
+
+**Read the chapter's question set with only the notes beside you. If every question is answerable,
+the compression is correct. If one is not, a fact was cut and must go back.** Length is the
+constraint; coverage is still the contract.
+
+### 14.4 What this costs, said plainly
+
+The 2026-08-04 brief asked for notes *"sufficient to sit the exam from, on their own"*. Revision
+notes are sufficient to **revise** from and to answer the bank from; they are thinner on
+**mechanism and reasoning** than the textbook version was. **The user was shown this trade and
+accepted it.** Do not re-litigate it, and do not quietly write a textbook chapter anyway.
