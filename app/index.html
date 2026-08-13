@@ -2543,18 +2543,41 @@ function mdBlock(s){
   let h=esc(s);
   h=h.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/(^|[^*])\*([^*]+?)\*/g,'$1<em>$2</em>');
   const lines=h.split('\n');
-  let out='',para=[],list=[],quote=[];
+  let out='',para=[],list=[],quote=[],tbl=[];
   const fp=()=>{if(para.length){out+='<p>'+para.join(' ')+'</p>';para=[]}};
   const fl=()=>{if(list.length){out+='<ul>'+list.map(i=>'<li>'+i+'</li>').join('')+'</ul>';list=[]}};
   const fq=()=>{if(quote.length){out+='<blockquote>'+quote.join(' ')+'</blockquote>';quote=[]}};
+  /* Pipe tables. The `table:{head,rows}` field still works and is unchanged — this
+     is for tables written inline in `body`, which a section may hold several of.
+     Same logic md() already runs on every question explanation, emitting the
+     th-table class so it inherits the styling tableHTML() gets. Bold and italic
+     are applied to the whole string above, so cells arrive already formatted. */
+  const ft=()=>{
+    if(!tbl.length)return;
+    let t='<table class="th-table">';
+    let r=0;
+    tbl.forEach(row=>{
+      if(/^\s*\|?\s*[-: ]+\|/.test(row))return;          // the |---|---| separator
+      const cells=row.split('|').filter(c=>c.trim()!=='');
+      t+='<tr>'+cells.map(c=>r===0?`<th>${c.trim()}</th>`:`<td>${c.trim()}</td>`).join('')+'</tr>';
+      r++;
+    });
+    out+=t+'</table>';tbl=[];
+  };
   lines.forEach(ln=>{
     const t=ln.trim();
+    if(t.startsWith('|')){fp();fl();fq();tbl.push(t);return}
+    ft();
     if(!t){fp();fl();fq();return}
+    /* ⚠️ esc() runs above, so a markdown "> " has ALREADY become "&gt; " by the
+       time we get here — matching only '> ' meant blockquotes never rendered at
+       all and the marker showed as literal text. Match the escaped form too. */
+    if(t.startsWith('&gt; ')){fp();fl();quote.push(t.slice(5));return}
     if(t.startsWith('> ')){fp();fl();quote.push(t.slice(2));return}
     if(t.startsWith('- ')){fp();fq();list.push(t.slice(2));return}
     fl();fq();para.push(t);
   });
-  fp();fl();fq();
+  fp();fl();fq();ft();
   return out;
 }
 function flowHTML(f){
