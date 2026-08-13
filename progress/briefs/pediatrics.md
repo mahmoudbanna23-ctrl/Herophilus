@@ -18,6 +18,25 @@ schema, the sweep and the validator. This file holds only what is specific to Pe
 > finishing them by the 22nd leaves ~2 weeks to revise from. **Nothing is dropped — the banks resume
 > after.** §13 carries the reconciliation pass you owe when your banks finally close, and the warning
 > that §12 depth rules do NOT apply to theory.
+>
+> **⚠️⚠️ AND §14 WAS REWRITTEN LATE ON 2026-08-13 — THE THEORY FORMAT CHANGED AGAIN AND THE NEW ONE
+> IS MUCH SHORTER. READ IT BEFORE YOU BRIEF A SINGLE THEORY SUBAGENT.** The user read printed ENT
+> chapters at 30–47 pages against lectures of 977–2,289 words and rejected them: *"toooo much… the
+> original sources are much less than yours."* The cause was the old rule *"every question
+> answerable from the notes alone including why each wrong option is wrong"* — it duplicated each
+> question's own `explanation`, which the app already shows one tap away through the `qs` link.
+> **Now: a HARD word budget — body words ≤ the summed word count of that chapter's cached lecture
+> files (floor 600, cap 3,000), checked by script at merge.** Coverage stays two-sided: every
+> important LECTURE fact, plus every linked question's **key and discriminator** as a line or a
+> cell — **but never the distractor essay.** Telegraphic fragments, tables by default, no question
+> ids in body text, one `Src:` line per section, `intro` ≤ 50 words. **§14.5 adds a DEFERRAL
+> REGISTER: a fact you move to another chapter must be named there, or it is a deletion wearing a
+> promise's clothes.**
+>
+> **⚠️ THE WORKED EXAMPLE THE USER APPROVED is
+> `content\ent\theory-drafts\ent-stridor.v2.draft.js` — 14 sections, 3,759 words, 13 printed pages, 113 questions linked, rewritten down from 47 pages.
+> Read it and match its density before writing anything. Your module's chapters are far thinner on
+> questions than ENT's, so most of yours should land WELL under 2,000 words.**
 
 ---
 
