@@ -650,68 +650,67 @@ Record it per chapter, so a gap is a decision on the record rather than an accid
 
 ---
 
-## 14. ⚠️⚠️ THEORY IS REVISION NOTES, NOT A TEXTBOOK — the user's ruling of 2026-08-13, and it SUPERSEDES §13.4 and `CLAUDE.md` §4's "new study source" brief
+## 14. ⚠️⚠️ THEORY IS SLIDE-DENSITY REVISION NOTES — the user's SECOND ruling of 2026-08-13, which SUPERSEDES the first §14, §13.4, and `CLAUDE.md` §4's "new study source" brief
 
-The user read a real printed chapter — 42 pages for one topic — and said it was too long
-against a lecture of about fifteen slides. Shown the three options and their costs, they chose
-**revision-notes format**, accepting the stated trade: *"you get the what, less of the why."*
+**The first revision-notes format FAILED and the user said so twice.** Chapters written under it
+printed at 30–47 pages against lectures of 977–2,289 words — **6× to 13× the source**. Verbatim:
+*"The PDF you send is toooo much… the original sources are much less than yours. Studying from your
+source is going to be a waste of time and actually contraindicates the whole purpose of the project
+which is making my study easier and faster."*
 
-### 14.1 What changes: the FORM. What does not: the COVERAGE.
+**The root cause is known and it was a RULE, not sloppiness:** *"every question answerable from the
+notes alone, including why each wrong option is wrong"* forced ~450 distractor-rejections per big
+chapter into prose — **duplicating explanations the app already holds inside every question
+entry**, one click away through the `qs` links. That rule is now REVOKED in that form.
 
-> **⚠️ THE HARD FLOOR SURVIVES INTACT. Every question filed under a chapter must still be
-> answerable from that chapter's notes alone**, and that still includes **why each wrong option is
-> wrong**, because that is what the exam tests. **Compression is of WORDS, never of FACTS.**
-> Deleting a fact to hit a page count is the same failure as it always was.
+### 14.1 The word budget — hard, computed BEFORE writing, stated in the draft header
 
-**Target: 18–22 A4 pages for a large chapter, 6–10 for a small one.** Roughly half of what the
-first two chapters ran to.
+> **body words ≤ the summed word count of the chapter's cached lecture files**
+> (`wc -w` on `content\<mod>\lectures\<file>.txt`), **floor 600, cap 3,000.**
 
-### 14.2 How to write it
+The lecture is the syllabus; notes the size of the lecture are notes, notes at 9× the lecture are
+a second textbook. The four known ENT examples: Stridor (L6) ≈ 2,300 w · Tonsils (L3) ≈ 1,800 w ·
+CSOM (L16 + L17,18) ≈ 1,570 w · AOM (L21.1 + L21.2) ≈ 1,000 w. **The validator counts body words
+at merge; over budget by >10 % goes back for compression, not into the app.**
 
-**Default to a table or a bullet. Prose is the exception, not the rule.**
+### 14.2 The two-sided coverage floor — what "important" means now
 
-| Write it as | When |
-|---|---|
-| **A table** | Anything comparing two or more things — always. Anything with a repeating shape (cause → feature → treatment; age → state; type → appearance) |
-| **A bullet list** | Lists of causes, features, indications, complications, steps |
-| **A flowchart** | Anything algorithmic |
-| **A short prose line** | Only where a fact genuinely needs a sentence to be true |
+1. **Everything important the LECTURE states goes in** — every fact, number, classification, list,
+   eponym, sign. The user's own caveat, verbatim: *"make sure not to ignore anything important in
+   the lecture content."* The omission note records anything left out and why.
+2. **Every linked question's TESTED FACT — its key and its discriminator — appears in the notes.**
+   The distractor-by-distractor reasoning does **NOT** — it already lives in that question's own
+   `explanation`, which the learner reaches through the `qs` link. **One exception:** where the
+   real teaching point is telling two look-alikes apart (croup vs epiglottitis, safe vs unsafe
+   CSOM), a discrimination table carries it — that is a fact, not commentary.
 
-**Cut these, every time:**
+**The test:** read the chapter's questions with only the notes beside you. For each, **the fact
+that decides it must be findable in the notes** — as a line or a cell, not as an essay. If it is
+not, a fact was cut and goes back. If the notes also re-argue the wrong options, words go out.
 
-- **The teaching voice.** *"This table answers more questions in this chapter than any other single
-  item"*, *"the whole teaching point is"*, *"read the vignette for the discriminating clause"*.
-  Useful once in the `intro`; dead weight repeated through 31 sections.
-- **Meta-commentary about the bank** — how many times something is asked, which revision page it
-  appears on, how the examiner phrases it. **That belongs in `intro` only.**
-- **Restating a fact in prose after a table has already given it.** Pick one.
-- **Long verbatim block quotes.** Quote the **phrase** that is examinable, not the paragraph
-  around it. A citation still names the slide.
-- **Connective and framing sentences** — *"Now that we have covered X, the next thing to note is…"*
-- **Repeating a shared table** — §12.2 already said this and it still applies.
-- **⚠️ DO NOT WRITE A CLOSING "SIEVE" OR "EVERY PATTERN IN THIS CHAPTER" SECTION.** The tonsils
-  chapter grew one and it was **100 % duplication** — all 24 rows repeated facts held elsewhere, at a
-  cost of ~1.3 printed pages, and **all 19 of its `qs` were already linked by other sections.**
-  Deleted on the user's instruction, 2026-08-13. A consolidated revision table is appealing and it
-  is the cheapest page in the chapter to lose. **If a pattern is worth collecting, it belongs in the
-  section that teaches it.**
+### 14.3 Style — telegraphic
 
-**Keep, always:**
+- **Fragments over sentences.** *"Delayed haemorrhage day 5+ = innominate erosion."* Tables and
+  bullets by default; prose only where a fact needs a sentence to be true; flowcharts for
+  algorithms.
+- **BANNED, every occurrence:** the teaching voice ("the highest-yield sentence in…"), ⚠️-essay
+  headers, bank meta-commentary in body text, **question ids in body text** (the `qs` array
+  carries them), restating a table in prose, connective/framing sentences, long verbatim block
+  quotes (quote only the examinable phrase), closing "sieve"/summary sections (100 % duplication —
+  measured).
+- **Citations: ONE compact source line per section** — `Src: L6; GG pp.146–151` — never per-fact
+  clauses. Keep the `(not in course material)` tag on genuinely unsourced claims; compress each
+  defect note to one line (*"GG keys X; L6 says Y — noted, key as printed"*).
+- **`intro` ≤ 50 words.** Schema unchanged: `w`, `qs`, `table`, `flow`. **`qs` still covers 100 %
+  of the chapter's filed questions** — ids in arrays are nearly free.
 
-- every fact, number, eponym, named entity, classic sign and discriminator
-- **why each wrong option is wrong** — compress it to a clause, never delete it
-- every defect note, every `(not taken from the course material)` tag, every citation
-- the `w` weighting, the `qs` links, the flowcharts and the tables
+### 14.4 Expected size, honestly
 
-### 14.3 The test
+Median ENT chapter ~4–6 printed pages; the largest ~8–10; all 30 ENT chapters ≈ 150 pages total.
+Tables lower words-per-page, so **report the measured page count, never a promised one.**
 
-**Read the chapter's question set with only the notes beside you. If every question is answerable,
-the compression is correct. If one is not, a fact was cut and must go back.** Length is the
-constraint; coverage is still the contract.
+### 14.5 What this costs, said plainly
 
-### 14.4 What this costs, said plainly
-
-The 2026-08-04 brief asked for notes *"sufficient to sit the exam from, on their own"*. Revision
-notes are sufficient to **revise** from and to answer the bank from; they are thinner on
-**mechanism and reasoning** than the textbook version was. **The user was shown this trade and
-accepted it.** Do not re-litigate it, and do not quietly write a textbook chapter anyway.
+The notes alone no longer explain why each wrong option is wrong — **the linked questions do**,
+and they are one click away in the app. The user was shown this and chose it. Do not re-litigate
+it, and do not quietly write the reasoning back in.
