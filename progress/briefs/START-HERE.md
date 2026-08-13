@@ -709,7 +709,25 @@ not, a fact was cut and goes back. If the notes also re-argue the wrong options,
 Median ENT chapter ~4–6 printed pages; the largest ~8–10; all 30 ENT chapters ≈ 150 pages total.
 Tables lower words-per-page, so **report the measured page count, never a promised one.**
 
-### 14.5 What this costs, said plainly
+### 14.5 ⚠️ CROSS-CHAPTER DEFERRALS — the register, and the rule that makes them safe
+
+A lecture often carries slides that belong to a **different** chapter. Dropping them from the
+chapter you are writing is correct — repeating them is duplication — **but a deferral is only safe
+if the receiving chapter actually gets it.**
+
+> **⚠️ RULE: A DEFERRED FACT IS NAMED, WITH ITS RECEIVING CHAPTER, IN THE DRAFT HEADER *AND* ADDED
+> TO THE REGISTER BELOW. "It belongs elsewhere" is a promise, and an unrecorded promise is a
+> deletion.** Verify before deferring that **no question filed under your chapter tests it.**
+
+**Register — owed, not yet written** (tick when the receiving chapter is merged):
+
+| Deferred from | Fact | Owed to | Written? |
+|---|---|---|---|
+| `ent-stridor` (L6) | **JORRP / RRP** — HPV aetiology, recurrence tendency, airway compromise, no consistently effective treatment | `ent-paedlar` | ☐ |
+| `ent-stridor` (L6) | **Benign laryngeal tumours** — juvenile papillomatosis, **chondroma**, haemangioma | `ent-paedlar` | ☐ |
+| `ent-stridor` (L6) | **Causes of laryngeal paralysis** — central vs peripheral (traumatic, neuritis, neuropathy, neoplastic, idiopathic); surgical: neck/laryngeal trauma, thyroid surgery, **R.N.D**, tracheostomy, **scalene LN biopsy** | `ent-vocal` | ☐ |
+
+### 14.6 What this costs, said plainly
 
 The notes alone no longer explain why each wrong option is wrong — **the linked questions do**,
 and they are one click away in the app. The user was shown this and chose it. Do not re-litigate
