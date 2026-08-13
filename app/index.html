@@ -967,6 +967,93 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
   margin-bottom:34px;padding-left:20px;border-left:5px solid var(--c,var(--neuro));
   scroll-margin-top:80px;
 }
+
+/* ---------- The book reader ----------
+   The user asked for a chapter to read like a BOOK rather than a long scroll
+   (2026-08-13): fixed pages, page numbers, turned rather than scrolled.
+
+   The pagination is done by CSS multi-column, not by measuring and slicing the
+   DOM. The browser already knows how to flow prose into a fixed-height column
+   and where it is legal to break; reimplementing that in JS would be fragile and
+   would fight every table and figure. `.bk-flow` is one tall column-set as wide
+   as it needs to be, and turning a page is a translateX of exactly one column
+   plus one gap. Page count falls out of scrollWidth.
+
+   ⚠️ EVERY RULE HERE IS GATED ON .bk-on, and @media print unsets the lot — a
+   columned, translated, overflow-hidden container prints as ONE page and loses
+   the whole chapter. The print block below is not optional. */
+.bk-wrap{position:relative}
+/* With the book on, the chapter title shrinks to a spine label — the big
+   display setting belongs on the printed title page, not above a live reader
+   that needs the window height. */
+.bk-on .doc-head{margin-bottom:6px;padding-bottom:8px}
+.bk-on .doc-head h1{font-size:26px;letter-spacing:.06em}
+.bk-on .doc-head .doc-meta{font-size:11.5px}
+.bk-on .th-intro{margin-top:0}
+/* The intro opens the chapter, so it is a first page, not a tinted callout. */
+.bk-on .th-intro.bk-first{
+  border:none;background:none;box-shadow:none;padding:0;
+}
+.bk-on .bk-view{
+  overflow:hidden;                    /* the window the pages slide behind */
+  position:relative;
+}
+.bk-on .bk-flow{
+  column-gap:var(--bk-gap,54px);
+  column-fill:auto;                   /* fill each column fully before the next */
+  height:var(--bk-h,70vh);
+  transition:transform .42s cubic-bezier(.22,1,.36,1);
+  will-change:transform;
+}
+/* Small blocks stay whole; a heading never sits alone at the foot of a page.
+   ⚠️ TALL blocks are NOT in this list and must not be — see bkMeasure(). An
+   element with break-inside:avoid that is taller than its column overflows or
+   is clipped, and clipped means the learner silently loses content. */
+.bk-on .fbox,.bk-on .qfig,.bk-on .th-h{break-inside:avoid;page-break-inside:avoid}
+.bk-on .th-keep{break-inside:avoid;page-break-inside:avoid}
+.bk-on .th-h{break-after:avoid;page-break-after:avoid}
+.bk-on .th-sec{margin-bottom:26px}
+
+/* Turning furniture */
+.bk-bar{
+  display:flex;align-items:center;gap:14px;justify-content:center;
+  margin:16px auto 4px;max-width:640px;
+}
+.bk-btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:44px;height:44px;border-radius:50%;cursor:pointer;
+  border:1px solid var(--line-2);background:var(--card);color:var(--tx);
+  box-shadow:0 1px 0 var(--sh-soft);
+  transition:transform .18s cubic-bezier(.34,1.56,.64,1),background .18s ease;
+}
+.bk-btn:hover:not(:disabled){transform:translateY(-2px);background:var(--bg-2)}
+.bk-btn:disabled{opacity:.32;cursor:default}
+.bk-num{
+  font-size:12.5px;font-weight:800;letter-spacing:.05em;color:var(--ink-3);
+  min-width:132px;text-align:center;font-variant-numeric:tabular-nums;
+}
+.bk-run{
+  display:flex;justify-content:space-between;align-items:baseline;gap:16px;
+  border-bottom:1px solid var(--line);padding-bottom:7px;margin-bottom:14px;
+  font-size:10.5px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink-4);
+}
+.bk-run .r{color:var(--ink-3);text-transform:none;letter-spacing:.02em;font-weight:700}
+/* A thin progress rule under the turning bar — how far through the chapter. */
+.bk-prog{height:3px;border-radius:2px;background:var(--line);max-width:640px;margin:0 auto 6px}
+.bk-prog i{display:block;height:100%;border-radius:2px;background:var(--gold);
+  transition:width .42s cubic-bezier(.22,1,.36,1)}
+/* Click the outer thirds of the sheet to turn, as you would a page. */
+.bk-on .bk-tap{position:absolute;top:0;bottom:0;width:11%;cursor:pointer;z-index:2}
+.bk-on .bk-tap.l{left:0}
+.bk-on .bk-tap.r{right:0}
+@media (max-width:700px){
+  .bk-on .bk-tap{width:16%}
+  .bk-num{min-width:104px;font-size:11.5px}
+}
+@media (prefers-reduced-motion:reduce){
+  .bk-on .bk-flow,.bk-prog i{transition:none}
+}
 .th-h{display:flex;align-items:center;gap:11px;margin-bottom:13px;flex-wrap:wrap}
 .th-h h2{
   margin:0;font-size:21px;font-weight:900;letter-spacing:-.028em;color:var(--tx);line-height:1.2;
@@ -1049,7 +1136,12 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
 /* ---------- Print / Save as PDF ---------- */
 @media print{
   @page{margin:16mm 14mm}
-  .rail,.topbar,.th-test,.th-toc .wb,.readtheory,.toast,.modal-bg,.splash,.gate,.qzoom{display:none!important}
+  /* ⚠️ .filterbar and .tb-btn were missing here, so "Test the whole lecture",
+     "Save as PDF" and the "← ENT notes" back link all printed onto paper —
+     three controls that do nothing on a sheet of paper. Reported by the user
+     from a real saved PDF. */
+  .rail,.topbar,.th-test,.th-toc .wb,.readtheory,.toast,.modal-bg,.splash,.gate,.qzoom,
+  .filterbar,.tb-btn,.clep{display:none!important}
   /* A question's photograph is content, so it PRINTS — unlike the module
      artwork below. It is an <img>, not a background, so it needs nothing but
      room; the caption's "tap to enlarge" is meaningless on paper. */
@@ -1099,8 +1191,31 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
   .th-sec{break-inside:auto;page-break-inside:auto;margin-bottom:20px;padding-left:12px}
   .th-h{break-after:avoid;page-break-after:avoid}
   .th-table,.flow,.fbox,.th-body blockquote{break-inside:avoid;page-break-inside:avoid}
-  .th-intro,.th-toc{box-shadow:none}
-  .fbox,.th-table,.th-toc,.th-intro{box-shadow:none!important}
+  .fbox,.th-table,.th-toc{box-shadow:none!important}
+  /* ⚠️ THE PDF IS A BOOK, NOT THE SCREEN (user's instruction, 2026-08-13):
+     title page, contents, then straight into the notes. The exam-patterns
+     intro is screen-only — on paper the user asked to start with the
+     explanation directly. */
+  .th-intro{display:none!important}
+  /* ⚠️ UNDO THE BOOK READER ENTIRELY. A fixed-height, overflow-hidden,
+     translated column-set prints as ONE page and silently loses the rest of the
+     chapter. Paper does its own pagination and needs the plain flow back. */
+  .bk-on .bk-view{overflow:visible!important}
+  .bk-on .bk-flow{
+    columns:auto!important;column-gap:normal!important;
+    height:auto!important;transform:none!important;transition:none!important}
+  .bk-bar,.bk-prog,.bk-run,.bk-tap{display:none!important}
+  .doc-head{
+    break-after:page;page-break-after:always;
+    padding-top:74mm;text-align:center;border-bottom:none;
+  }
+  .doc-head .eyebrow{display:inline-block;margin-bottom:10mm}
+  .doc-head h1{font-size:30pt;line-height:1.15}
+  .doc-head .doc-meta{margin-top:8mm;font-size:11pt}
+  .th-toc{break-after:page;page-break-after:always;border:none;padding:0}
+  .th-toc .tl{font-size:13pt;letter-spacing:.14em;margin-bottom:6mm}
+  .th-toc li{margin-bottom:3.4mm;font-size:11.5pt}
+  .th-toc a{color:#14181f!important;border-bottom:none}
   h1{font-size:22pt}
   .th-h h2{font-size:14pt}
   .th-body{font-size:10.5pt;line-height:1.55}
@@ -2342,6 +2457,9 @@ function accColor(p){
 const ICONS={
   /* brand */
   asclepius:'M12 2v20M12 5.5c-3.2 0-3.2 3.2 0 3.2s3.2 3.2 0 3.2-3.2 3.2 0 3.2 3.2 3.2 0 3.2M9.5 4.3h5',
+  /* page turning — plain chevrons; they are a control, not an ornament */
+  'chev-l':'M15 5 8 12l7 7',
+  'chev-r':'M9 5l7 7-7 7',
   /* modules — these must read as the specialty first and as Greek second */
   ear:'M8.5 21c0-2.5-1.5-3.5-1.5-8a5 5 0 0 1 10 0c0 2.5-1.5 3-2.5 4.5S13.5 21 12 21M12 8.6a2.4 2.4 0 0 1 0 4.8',
   eye:'M2 12s3.8-6.6 10-6.6S22 12 22 12s-3.8 6.6-10 6.6S2 12 2 12z@M12 12m-2.8 0a2.8 2.8 0 1 0 5.6 0a2.8 2.8 0 1 0-5.6 0',
@@ -2684,12 +2802,18 @@ function vTheory(p){
     <div class="doc-meta">${secs.length} sections \u00b7 ${secs.filter(s=>s.w==='must').length} must-know \u00b7 ${allQs.length} linked questions</div>
   </div>`;
 
-  if(t.intro)h+=`<div class="th-intro">${mdBlock(t.intro)}</div>`;
+  /* ⚠️ THE OPENING AND THE CONTENTS GO *INSIDE* THE BOOK, as its first two
+     pages. Left above it they had to be scrolled past before the reader was
+     even visible, which is the long-scroll the user asked to be rid of. In a
+     book you turn to the contents; you do not scroll past it. */
+  h+=`<div class="bk-wrap" id="bkWrap">
+    <div class="bk-run"><span>${esc(chapterName(view.ch))}</span><span class="r" id="bkRun"></span></div>
+    <div class="bk-view">
+      <div class="bk-tap l" onclick="bkTurn(-1)" title="Previous page"></div>
+      <div class="bk-tap r" onclick="bkTurn(1)" title="Next page"></div>
+      <div class="bk-flow" id="bkFlow">`;
 
-  h+=`<div class="filterbar">
-    ${allQs.length?`<button class="btn go" onclick="startQuiz(${JSON.stringify(allQs).replace(/"/g,'&quot;')},'${esc(chapterName(view.ch)).replace(/'/g,"\\'")}')">\u25b6 Test the whole lecture (${allQs.length})</button>`:''}
-    <button class="btn sec" onclick="window.print()">&#128424;&#65039; Save as PDF</button>
-  </div>`;
+  if(t.intro)h+=`<div class="th-intro bk-first">${mdBlock(t.intro)}</div>`;
 
   h+=`<div class="th-toc"><div class="tl">In this lecture</div><ol>`;
   secs.forEach(s=>{
@@ -2715,14 +2839,149 @@ function vTheory(p){
     }
     h+=`</div></section>`;
   });
+
+  h+=`</div></div>
+    <div class="bk-prog"><i id="bkProg"></i></div>
+    <div class="bk-bar">
+      <button class="bk-btn" id="bkPrev" onclick="bkTurn(-1)" aria-label="Previous page">${ico('chev-l',18)}</button>
+      <span class="bk-num" id="bkNum"></span>
+      <button class="bk-btn" id="bkNext" onclick="bkTurn(1)" aria-label="Next page">${ico('chev-r',18)}</button>
+    </div>
+    <div class="filterbar" style="justify-content:center;margin-top:14px">
+      ${allQs.length?`<button class="btn go" onclick="startQuiz(${JSON.stringify(allQs).replace(/"/g,'&quot;')},'${esc(chapterName(view.ch)).replace(/'/g,"\\'")}')">\u25b6 Test the whole lecture (${allQs.length})</button>`:''}
+      <button class="btn sec" onclick="window.print()">&#128424;&#65039; Save as PDF</button>
+    </div>
+  </div>`;
+
   p.innerHTML=h;
-  if(view.sec){
-    const el=document.getElementById('sec-'+view.sec);
-    if(el&&el.scrollIntoView)setTimeout(()=>el.scrollIntoView({block:'start',behavior:'smooth'}),80);
+  bkInit(view.sec);
+}
+
+/* ---------- book reader ----------
+   BK.page is the current column index. Everything else is derived from the
+   layout, never stored, so a resize or a font swap cannot leave it stale. */
+var BK={page:0,pages:1,step:0,secs:[]};
+function bkOn(){return document.body.classList.contains('bk-on')}
+function bkInit(jumpTo){
+  const wrap=document.getElementById('bkWrap');
+  if(!wrap)return;
+  document.body.classList.add('bk-on');
+  BK.page=0;
+  bkMeasure();
+  if(jumpTo)bkToSec(jumpTo);
+  else bkPaint();
+  /* ⚠️ MEASURE AGAIN ONCE LAYOUT HAS SETTLED. The first pass runs in the same
+     tick as the render, and anything that changes height afterwards — a font
+     finishing, an image arriving — repaginates the columns while BK.pages still
+     describes the old layout. The symptom is silent and ugly: the final pages
+     turn up BLANK, because the transform walks past where the content now ends.
+     Two rAFs cover same-frame layout; fonts.ready covers the slow case. */
+  const settle=()=>{
+    if(!bkOn())return;
+    let anchor='';BK.secs.forEach(s=>{if(s.page<=BK.page)anchor=s.id});
+    const was=BK.pages;
+    bkMeasure();
+    if(BK.pages!==was&&anchor)bkToSec(anchor);else bkPaint();
+  };
+  requestAnimationFrame(()=>requestAnimationFrame(settle));
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(settle).catch(()=>{});
+}
+function bkMeasure(){
+  const flow=document.getElementById('bkFlow'),view=flow&&flow.parentElement;
+  if(!flow)return;
+  /* Height: fill the window under the furniture, with a floor so a short
+     window still shows a usable page rather than three lines. */
+  const top=view.getBoundingClientRect().top;
+  const h=Math.max(360,Math.round(window.innerHeight-top-118));
+  flow.style.setProperty('--bk-h',h+'px');
+  const gap=parseFloat(getComputedStyle(flow).columnGap)||54;
+  const w=view.clientWidth;
+  flow.style.columnWidth=w+'px';
+  BK.step=w+gap;
+  /* ⚠️ Decide per element whether it may be kept whole, by MEASURING it against
+     the page height. A table or flowchart that fits gets `th-keep` and is never
+     split; one that is taller than the page must be allowed to break, because
+     break-inside:avoid on an over-tall block clips it — and a clipped table is
+     content the learner never sees, with nothing on screen to say so.
+     Measured with the class off, so a previous pass cannot bias the reading. */
+  [].slice.call(flow.querySelectorAll('.th-table,.flow,.th-body blockquote,.th-body ul'))
+    .forEach(el=>{
+      el.classList.remove('th-keep');
+      if(el.getBoundingClientRect().height<=h-24)el.classList.add('th-keep');
+    });
+  /* ⚠️ WHERE DOES THE CONTENT ACTUALLY STOP? Two obvious answers are both
+     wrong and both give a BLANK FINAL PAGE, which only a screenshot reveals:
+       - scrollWidth: the arithmetic is exact (N columns span N*w + (N-1)*gap)
+         but the browser keeps a trailing empty column once content ends near a
+         boundary, so it counts one too many;
+       - the greatest offsetLeft in the flow: inside a multi-column container
+         Chrome does not reliably report the FRAGMENTED position, so this
+         returned the same inflated number.
+     A Range over the flow's contents does report one rect per column fragment,
+     so the right-most rect is the last column holding anything. Measured with
+     the transform off, or every rect is displaced by the current page. */
+  const prevT=flow.style.transform;
+  flow.style.transform='none';
+  const fr=flow.getBoundingClientRect();
+  let maxL=0;
+  const note=r=>{const rel=r.left-fr.left;if(r.width>0&&r.height>0&&rel>maxL)maxL=rel;};
+  /* ⚠️ ONLY REAL TEXT COUNTS. A range over the whole flow also returns a rect
+     for a section's BOX fragment — its border-left and padding spill into the
+     next column carrying no words — which is what kept manufacturing a blank
+     last page. Walk the text nodes instead and ignore whitespace-only ones. */
+  const tw=document.createTreeWalker(flow,NodeFilter.SHOW_TEXT,{
+    acceptNode:n=>n.nodeValue&&n.nodeValue.trim()?NodeFilter.FILTER_ACCEPT:NodeFilter.FILTER_REJECT
+  });
+  const rg=document.createRange();
+  let n;
+  while((n=tw.nextNode())){
+    rg.selectNodeContents(n);
+    const rs=rg.getClientRects();
+    for(let i=0;i<rs.length;i++)note(rs[i]);
   }
+  [].slice.call(flow.querySelectorAll('img')).forEach(im=>note(im.getBoundingClientRect()));
+  flow.style.transform=prevT;
+  BK.pages=Math.max(1,Math.round(maxL/BK.step)+1);
+  BK.secs=[].slice.call(flow.querySelectorAll('.th-sec')).map(el=>({
+    id:el.id.replace(/^sec-/,''),
+    h:(el.querySelector('h2')||{}).textContent||'',
+    page:Math.max(0,Math.round(el.offsetLeft/BK.step))
+  }));
+  if(BK.page>BK.pages-1)BK.page=BK.pages-1;
+}
+function bkPaint(){
+  const flow=document.getElementById('bkFlow');
+  if(!flow)return;
+  flow.style.transform='translateX('+(-BK.page*BK.step)+'px)';
+  const n=document.getElementById('bkNum');
+  if(n)n.textContent='Page '+(BK.page+1)+' of '+BK.pages;
+  const pr=document.getElementById('bkProg');
+  if(pr)pr.style.width=(BK.pages<2?100:(BK.page/(BK.pages-1))*100)+'%';
+  const pv=document.getElementById('bkPrev'),nx=document.getElementById('bkNext');
+  if(pv)pv.disabled=BK.page<=0;
+  if(nx)nx.disabled=BK.page>=BK.pages-1;
+  /* Running head: the last section that has started on or before this page. */
+  const run=document.getElementById('bkRun');
+  if(run){
+    let cur='';
+    BK.secs.forEach(s=>{if(s.page<=BK.page)cur=s.h});
+    run.textContent=cur;
+  }
+}
+function bkTurn(d){
+  if(!bkOn())return;
+  const p=BK.page+d;
+  if(p<0||p>BK.pages-1)return;
+  BK.page=p;bkPaint();
+}
+function bkToSec(id){
+  const s=BK.secs.filter(x=>x.id===id)[0];
+  BK.page=s?s.page:0;
+  bkPaint();
 }
 function jumpSec(e,id){
   if(e&&e.preventDefault)e.preventDefault();
+  if(bkOn()){bkToSec(id);return}
   const el=document.getElementById('sec-'+id);
   if(el&&el.scrollIntoView)el.scrollIntoView({block:'start',behavior:'smooth'});
 }
@@ -3400,6 +3659,11 @@ function render(){
   const p=$('page');
   // Drives body[data-view] in CSS — the alive-to-browse / calm-to-read gate.
   document.body.dataset.view=view.name||'home';
+  /* ⚠️ Drop the reader before EVERY render. bk-on is set by bkInit() on the way
+     into a chapter; left on, its overflow:hidden and fixed column height apply
+     to whatever view comes next and clip it. Clearing here means only the
+     chapter view can ever turn it back on. */
+  document.body.classList.remove('bk-on');
   syncFilm();
   ({home:vHome,module:vModule,quiz:vQuiz,review:vReview,schedule:vSchedule,theory:vTheory,
     moved:vMoved,flagged:vFlagged,mock:vMock,session:vSession}[view.name]||vHome)(p);
@@ -4806,6 +5070,31 @@ function clepMount(){
     if(e.key==='Enter'||e.key===' '){e.preventDefault();clepAsk()}
   });
   addEventListener('resize',clepPlace);
+  /* Re-measure the book on resize — the column width IS the view width, so a
+     window change repaginates. Debounced: measuring forces layout, and a drag
+     fires this continuously. The page index is kept by anchoring on the section
+     currently in view rather than the number, which a repagination invalidates. */
+  let bkRT=null;
+  addEventListener('resize',()=>{
+    if(!bkOn())return;
+    let anchor='';BK.secs.forEach(s=>{if(s.page<=BK.page)anchor=s.id});
+    clearTimeout(bkRT);
+    bkRT=setTimeout(()=>{bkMeasure();if(anchor)bkToSec(anchor);else bkPaint();},140);
+  });
+  /* Swipe, for reading on a phone or tablet. Horizontal intent only — a mostly
+     vertical drag is the user trying to scroll the page, not turn a leaf. */
+  let sx=0,sy=0,sw=false;
+  document.addEventListener('touchstart',e=>{
+    if(!bkOn()||!e.touches[0])return;
+    sx=e.touches[0].clientX;sy=e.touches[0].clientY;sw=true;
+  },{passive:true});
+  document.addEventListener('touchend',e=>{
+    if(!sw||!bkOn()||!e.changedTouches[0])return;
+    sw=false;
+    const dx=e.changedTouches[0].clientX-sx,dy=e.changedTouches[0].clientY-sy;
+    if(Math.abs(dx)<48||Math.abs(dx)<Math.abs(dy)*1.4)return;
+    bkTurn(dx<0?1:-1);
+  },{passive:true});
   clepPaintTools();
   clepPreload();
 }
@@ -5485,6 +5774,14 @@ document.addEventListener('keydown',e=>{
   /* Global, so it works while reading theory as well as in a quiz. Safe above
      the quiz guard because typing targets bailed out at the top of the handler. */
   if(e.key==='t'||e.key==='T'){toggleTheme();return}
+  /* Page turning. Above the quiz guard so it works while reading, and it only
+     fires when the reader is actually up. */
+  if(bkOn()){
+    if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' '){e.preventDefault();bkTurn(1);return}
+    if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();bkTurn(-1);return}
+    if(e.key==='Home'){e.preventDefault();BK.page=0;bkPaint();return}
+    if(e.key==='End'){e.preventDefault();BK.page=BK.pages-1;bkPaint();return}
+  }
   if(view.name!=='quiz')return;
   const q=QUESTIONS.find(x=>x.id===Q.ids[Q.i]);
   if(!q)return;
