@@ -2313,15 +2313,26 @@ const FIREBASE_CONFIG = {
 const SUBJ_COLOURS=[['#b4472f','ENT'],['#5c7a52','Ophthalmology'],['#6d4c7d','Neuro/Psych'],
                     ['#2e5f8a','Pediatrics'],['#7a6a55','Revision'],['#9a6b1f','Buffer'],['#2f6b8f','Other']];
 
-/* built-in plan -> {date, rest, items:[{label,text,hex}]} */
+/* built-in plan -> {date, rest, items:[{label,text,hex}]}
+
+   Row shape: [date, key1, label1, text1, key2, label2, text2]
+   ⚠️ REBUILT 2026-08-13 for the real exam dates. The old parser hardwired the
+   SECOND track to Pediatrics and had no Pediatrics colour in its map, because
+   the original plan ran Peds as a permanent side-track under ENT/Ophtho/Neuro.
+   Pediatrics is now the FIRST exam (OSCE 14 Sep), so it has to be able to sit on
+   the main track in its own colour, and the second track has to be able to carry
+   any subject. Both tracks now take their own key and label.
+
+   The editor works on the PARSED shape, not on these rows, so widening the row
+   costs it nothing. */
+const SCH_HEX={ent:'#b4472f',ophtho:'#5c7a52',neuropsych:'#6d4c7d',peds:'#2e5f8a',
+               exam:'#a3182a',revision:'#7a6a55',buffer:'#9a6b1f'};
 function defaultSchedule(){
   return SCHEDULE.map(r=>{
     if(r[1]==='rest')return {date:r[0],rest:true,items:[]};
     const items=[];
-    const HEX={ent:'#b4472f',ophtho:'#5c7a52',neuropsych:'#6d4c7d',
-                revision:'#7a6a55',buffer:'#9a6b1f'};
-    if(r[3])items.push({label:r[2]||'',text:r[3],hex:HEX[r[1]]||'#7a6a55'});
-    if(r[4])items.push({label:'Pediatrics',text:r[4],hex:'#2e5f8a'});
+    if(r[3])items.push({label:r[2]||'',text:r[3],hex:SCH_HEX[r[1]]||'#7a6a55'});
+    if(r[6])items.push({label:r[5]||'',text:r[6],hex:SCH_HEX[r[4]]||'#2e5f8a'});
     return {date:r[0],rest:false,items:items};
   });
 }
