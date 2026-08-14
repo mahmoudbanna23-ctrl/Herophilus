@@ -1,129 +1,66 @@
-# Paste into the other three chats
+# Paste into the other three chats — STAND DOWN ON THEORY, 2026-08-14
 
-The theory format changed after they were last briefed. Each chat needs this before it launches
-another theory subagent, or it will keep producing 30-page chapters. **One message per chat —
-paste the whole block.**
+**⚠️ THIS FILE REPLACES ITS OWN PREVIOUS CONTENTS.** It used to tell each chat to re-read the
+rewritten §14 and carry on writing its own module's theory. **That instruction is dead.** The user
+decided on 2026-08-14, after being shown the measured numbers below, that **all 99 remaining theory
+chapters are written from the ENT/hub chat, for all four modules.**
 
----
+## Why — the two measurements that decided it
 
-## → Ophthalmology chat
+1. **THE USAGE POOL IS SHARED ACROSS ALL FOUR CHATS.** Four subagents died on session limits on
+   2026-08-13/14 with only two of the hub's running. **More chats do not multiply throughput; they
+   multiply failures.** Splitting the same capped capacity four ways buys nothing and costs four
+   different reviewers applying a format that took three revisions to settle.
+2. **THEORY IS SHORT.** A chapter written from scratch under §14 takes **~9–10 minutes of agent
+   time** (`ent-otalgia`: 12 sections, 1,752 words, 75 questions linked, 6 printed pages, 8.6 min).
+   The 20–36 minute jobs were all *rewrites* of the dead long format. **~97 chapters ≈ 8 agent-hours
+   ≈ 2–3 days at two concurrent.** The QUESTION BANKS are the 16-day job, not theory.
 
-```
-The theory format changed late on 2026-08-13 and your brief has been updated. Re-read
-progress\briefs\START-HERE.md §14 (rewritten) and the notice at the top of
-progress\briefs\ophthalmology.md before you launch another theory subagent.
-
-Short version: the user read printed ENT chapters at 30-47 pages against lectures of 977-2,289
-words and rejected them outright. The cause was the old rule "every question answerable from the
-notes alone including why each wrong option is wrong" -- it forced hundreds of distractor
-rejections into prose, duplicating each question's own explanation, which the app already shows
-one tap away through the qs link.
-
-New contract:
-- HARD word budget: body words <= the summed word count of that chapter's cached lecture files
-  (floor 600, cap 3,000). Compute it before writing, state it in the draft header, check it before
-  merging.
-- Two-sided coverage floor: every important LECTURE fact (the user's explicit caveat -- "make sure
-  not to ignore anything important in the lecture content"), PLUS every linked question's key and
-  discriminator as a line or a table cell. Never the distractor essay. Look-alike discrimination
-  tables still count as facts and stay.
-- Telegraphic style: fragments, tables by default, no question ids in body text, one "Src:" line
-  per section, intro <= 50 words.
-- §14.5 is a DEFERRAL REGISTER. If you drop a slide because it belongs to another chapter, name it
-  and its receiving chapter there. An unrecorded promise is a deletion -- three L6 slides were one
-  unwritten chapter away from being lost that way.
-
-The worked example the user approved is content\ent\theory-drafts\ent-stridor.v2.draft.js --
-14 sections, 3,759 words, 13 printed pages, 113 questions linked, rewritten down from 47 pages.
-Read it and match its density.
-
-Your chapters average ~5 questions each against ENT's 57, so most of yours should land WELL under
-2,000 words -- probably 3-5 printed pages. Your 26 chapters are the cheap kind; ENT's are not.
-
-One scheduling note the orchestrator asked me to pass on: Ophthalmology has the tightest margin of
-the four modules. Projected theory done 23 Aug, then ~1,800 bank questions against a 27 Sep exam --
-about 33 days of bank work in 35 days of calendar. Start your endpoint bank the day your chapters
-are finished; do not wait for anything else.
-```
-
----
-
-## → Neuropsychiatry chat
+## → Every one of the three chats
 
 ```
-The theory format changed late on 2026-08-13 and your brief has been updated. Re-read
-progress\briefs\START-HERE.md §14 (rewritten) and the notice at the top of
-progress\briefs\neuropsychiatry.md before you launch another theory subagent.
+STAND DOWN until further notice. Do not launch any subagent, and do not start a new bank topic.
 
-Short version: the user read printed ENT chapters at 30-47 pages against lectures of 977-2,289
-words and rejected them outright. The cause was the old rule "every question answerable from the
-notes alone including why each wrong option is wrong" -- it forced hundreds of distractor
-rejections into prose, duplicating each question's own explanation, which the app already shows
-one tap away through the qs link.
+The user decided on 2026-08-14 that all remaining theory is written from the ENT/hub chat for all
+four modules, because the usage pool is shared between us and four chats running agents only
+multiplies session-limit deaths. Theory is ~2-3 days of work in total.
 
-New contract:
-- HARD word budget: body words <= the summed word count of that chapter's cached lecture files
-  (floor 600, cap 3,000). Compute it before writing, state it in the draft header, check it before
-  merging.
-- Two-sided coverage floor: every important LECTURE fact (the user's explicit caveat -- "make sure
-  not to ignore anything important in the lecture content"), PLUS every linked question's key and
-  discriminator as a line or a table cell. Never the distractor essay. Look-alike discrimination
-  tables still count as facts and stay.
-- Telegraphic style: fragments, tables by default, no question ids in body text, one "Src:" line
-  per section, intro <= 50 words.
-- §14.5 is a DEFERRAL REGISTER. If you drop a slide because it belongs to another chapter, name it
-  and its receiving chapter there. An unrecorded promise is a deletion.
+What to do right now, in this order:
+1. FINISH AND COMMIT whatever topic you are mid-way through. Clean topic boundaries only, never
+   mid-topic. If you are between topics, commit and stop there.
+2. Write your progress\resume-<mod>.md so the next session can pick up cold: the exact next page,
+   the next id in sequence, and any staged finding not yet written up.
+3. Say in one line what your next topic would have been, then stop. No new work.
 
-The worked example the user approved is content\ent\theory-drafts\ent-stridor.v2.draft.js --
-14 sections, 3,759 words, 13 printed pages, 113 questions linked, rewritten down from 47 pages.
-Read it and match its density.
-
-Your chapters average ~6 questions each against ENT's 57, so most of yours should land WELL under
-2,000 words -- probably 3-5 printed pages.
-
-Scheduling: you have the most comfortable margin of the four. Projected theory done 23 Aug, all 27
-chapters plus ~800 bank questions finished ~7 Sep against a 3 Oct exam. Neurosurgery stays excluded.
+Nothing you have transcribed is affected and nothing is being taken away -- the banks are still
+yours and you will resume them. Questions added later are purely additive, because S.answers is
+keyed by question id.
 ```
 
----
+## → Resume order, when theory lands (~17 Aug)
 
-## → Pediatrics chat
+**⚠️ OPHTHALMOLOGY GOES FIRST, ALONE, BEFORE THE OTHER TWO** (user's decision, 2026-08-14). It has
+the least slack of the four modules: **~1,800 questions remaining against an exam on 27 September**
+— roughly 33 days of bank work against 35 days of calendar. Neuropsychiatry (~800 remaining, exam
+3 Oct) and Pediatrics (~1,170, papers 17 Sep and 18–19 Oct) both have room; Ophthalmology does not.
 
-```
-The theory format changed late on 2026-08-13 and your brief has been updated. Re-read
-progress\briefs\START-HERE.md §14 (rewritten) and the notice at the top of
-progress\briefs\pediatrics.md before you launch another theory subagent.
+| Order | Chat | Remaining | Exam | Slack in the base case |
+|---|---|---|---|---|
+| **1st** | Ophthalmology | ~1,800 | 27 Sep | **+2 d** |
+| 2nd | Pediatrics | ~1,170 | 14/17 Sep, 18–19 Oct | +2 d |
+| 3rd | Neuropsychiatry | ~800 | 3 Oct | +26 d |
 
-Short version: the user read printed ENT chapters at 30-47 pages against lectures of 977-2,289
-words and rejected them outright. The cause was the old rule "every question answerable from the
-notes alone including why each wrong option is wrong" -- it forced hundreds of distractor
-rejections into prose, duplicating each question's own explanation, which the app already shows
-one tap away through the qs link.
+**⚠️ Those remaining-question counts are extrapolated from ENT's own page ratios, ±30%.** Nobody has
+counted the pages of the other three banks. That uncertainty is larger than any rate assumption, and
+the first real page count from each bank should be reported to the hub so the projection is
+corrected rather than trusted.
 
-New contract:
-- HARD word budget: body words <= the summed word count of that chapter's cached lecture files
-  (floor 600, cap 3,000). Compute it before writing, state it in the draft header, check it before
-  merging. NOTE: Pediatrics has 64 cached lecture files against 21 chapters, so several chapters
-  map to several lectures -- sum only the ones the chapter actually rests on, and say which.
-- Two-sided coverage floor: every important LECTURE fact (the user's explicit caveat -- "make sure
-  not to ignore anything important in the lecture content"), PLUS every linked question's key and
-  discriminator as a line or a table cell. Never the distractor essay. Look-alike discrimination
-  tables still count as facts and stay.
-- Telegraphic style: fragments, tables by default, no question ids in body text, one "Src:" line
-  per section, intro <= 50 words.
-- §14.5 is a DEFERRAL REGISTER. If you drop a slide because it belongs to another chapter, name it
-  and its receiving chapter there. An unrecorded promise is a deletion.
+## What the hub owes each chat in return
 
-The worked example the user approved is content\ent\theory-drafts\ent-stridor.v2.draft.js --
-14 sections, 3,759 words, 13 printed pages, 113 questions linked, rewritten down from 47 pages.
-Read it and match its density.
-
-Your chapters average ~4 questions each against ENT's 57, so the QUESTION set will not carry your
-emphasis -- lean on the lectures and say so in each chapter's omission note. Do not manufacture an
-examiner-patterns file from 4 questions.
-
-Scheduling: yours is the FIRST exam -- OSCE 14 Sep, papers 1+2 on 17 Sep, then papers again 18-19
-Oct. Projected theory done 21 Aug, everything done ~12 Sep. That is two days of slack, the joint
-tightest of the four modules, and ~1,170 bank questions is the reason. Start your banks the day
-your 21 chapters are done.
-```
+- Every module's theory chapters merged into `theory.<mod>.js` before the chat resumes, so its
+  reconciliation pass (§13.3) has something to reconcile against.
+- Any cross-chapter deferral touching your module recorded in **§14.5's register** with the chapter
+  that owes it.
+- **The reconciliation pass in §13.3 is unchanged and still mandatory**: when your banks finally
+  close, re-check every chapter's new questions against its notes and patch the gaps. Theory written
+  now cannot know about a question transcribed in September. It is a diff, not a rewrite.

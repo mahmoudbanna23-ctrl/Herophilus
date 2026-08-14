@@ -1,5 +1,28 @@
 # Module brief — NEUROPSYCHIATRY
 
+> ## ⚠️⚠️ STAND DOWN ON THEORY — 2026-08-14
+>
+> **This module’s theory is now written by the ENT/hub chat, not here** (user’s decision,
+> 2026-08-14). The usage pool is **shared between all four chats**, so four chats running agents
+> multiplies session-limit deaths rather than throughput — four died on 13/14 Aug. Theory is also
+> far shorter than projected: a chapter written from scratch under §14 takes **~9–10 minutes**
+> (`ent-otalgia`, 1,752 words, 75 questions linked, 6 printed pages), so all ~97 remaining
+> chapters are **2–3 days**, not two weeks.
+>
+> **Launch no subagent. Finish and commit the topic you are on — clean topic boundaries only —
+> write `progressesume-<mod>.md`, and stop.** Full instruction and the paste text:
+> `progressriefsPASTE-theory-format-changed.md`.
+>
+> **When the banks resume (~17 Aug): **THIRD.** ~800 remain against an exam on 3 Oct — the most slack of the four.**
+>
+> ⚠️ Your remaining-question figure is **extrapolated from ENT’s page ratios, ±30 %** — nobody has
+> counted your bank’s pages. **Report the first real count to the hub** so the projection is
+> corrected rather than trusted.
+>
+> §13.3’s **reconciliation pass is unchanged and still mandatory** when your banks close: theory
+> written now cannot know about a question transcribed in September. It is a diff, not a rewrite.
+
+
 **Read `progress\briefs\START-HERE.md` first.** It holds the method, the file boundaries, the
 schema, the sweep and the validator. This file holds only what is specific to Neuropsychiatry.
 
