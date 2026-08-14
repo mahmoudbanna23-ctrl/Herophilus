@@ -3614,5 +3614,309 @@ var T_ENT = {
         ]
       }
     ]
+  },
+  "ent-neck": {
+    "intro": "Three rules carry most of this chapter — 7 days / 7 months / 7 years, the Rule of 80, and adult 80:20 malignant against paediatric 80:20 benign. Then site and age decide the list. Laryngocele and thyroglossal cyst are the two most-asked lesions.",
+    "sections": [
+      {
+        "id": "neck-1",
+        "w": "must",
+        "h": "The definition, and the three numerical rules",
+        "body": "**NECK MASS = an abnormal lesion (CONGENITAL or ACQUIRED) that is VISIBLE, PALPABLE, or SEEN ON IMAGING. BELOW THE MANDIBLE, ABOVE THE CLAVICLE, DEEP TO THE SKIN** — may involve the overlying skin secondarily.\n- From **INFECTIOUS · INFLAMMATORY · CONGENITAL · TRAUMATIC · BENIGN or MALIGNANT NEOPLASTIC** processes.\n- **⚠️ AN ADULT NECK MASS IS MALIGNANT UNTIL PROVEN OTHERWISE.** An **asymptomatic LATERAL** adult neck mass may be the **INITIAL OR ONLY** sign of head and neck cancer — **HNSCC, lymphoma, thyroid, salivary**.\n\n|RULE OF 80|%|\n|---|---|\n|Non-thyroid masses|**80 % NEOPLASTIC**|\n|Neoplastic|**80 % MALE**|\n|Neoplastic|**80 % MALIGNANT**|\n|Malignant|**80 % METASTATIC**|\n|Metastatic|**80 % from a SUPRACLAVICULAR primary**|\n\n|RULE OF 7 — duration|Means|\n|---|---|\n|**7 DAYS**|**INFLAMMATORY**|\n|**7 MONTHS**|**NEOPLASTIC**|\n|**7 YEARS**|**CONGENITAL / DEVELOPMENTAL**|\n\n- **80:20 RULE: ADULT = 80 MALIGNANT : 20 benign. PAEDIATRIC = 80 BENIGN : 20 malignant.**\n- **⚠️ Rule of 80: 80 % of neoplastic masses are MALIGNANT** — the benign side is the 80:20 rule, and only in a child.\n\nSrc: L5",
+        "qs": [
+          "entqb-thr6-305"
+        ]
+      },
+      {
+        "id": "neck-2",
+        "w": "high",
+        "h": "Embryogenesis, borders and triangles",
+        "body": "**⚠️ THE ADULT NECK DOES NOT EXIST IN THE EMBRYO.**\n\n|Week|Event|\n|---|---|\n|**5th**|**PHARYNX separates head from heart**|\n|**7th**|**CONSTRICTION between head and thorax**|\n|**12th**|**TRUE NECK visible**|\n\n- Neck structures arise by **DIFFERENTIATION AND MIGRATION** of the **FOREGUT** and the **BRANCHIAL APPARATUS**.\n- **FOREGUT → MIDLINE** (thyroid, thyroglossal tract, thymus); **BRANCHIAL APPARATUS → LATERAL** (arches, clefts, pouches) — midline congenital masses descend from the tongue, lateral ones are branchial *(split not in course material)*.\n- **UPPER BORDER: MANDIBLE → APEX OF THE MASTOID → EXTERNAL OCCIPITAL PROTUBERANCE. LOWER BORDER: SUPRASTERNAL NOTCH · CLAVICLE · SPINOUS PROCESS OF C7.**\n- **⚠️ THE HYOID IS NOT A BORDER** — it lies inside the neck at **C3** *(not in course material)*, and is a normal structure mistaken for a mass.\n- Neck = **osteomuscular** part + **visceral** part.\n- **TRIANGLES, divided by STERNOMASTOID: ANTERIOR = midline to the anterior border of SCM; POSTERIOR = between SCM and TRAPEZIUS.** Each is a **3D space — sides, roof, floor, contents.**\n\nSrc: L5",
+        "qs": [
+          "entqb-thr6-303",
+          "entqb-thr6-306",
+          "entqb-thr6-317"
+        ]
+      },
+      {
+        "id": "neck-3",
+        "w": "must",
+        "h": "Age, site and duration — the differential grid",
+        "body": "History asks: **AGE · LOCATION · ONSET AND COURSE · PAIN.** Location has three answers: **MIDLINE · ANTERIOR TRIANGLE · POSTERIOR TRIANGLE.**\n\n|Age group|Likeliest, in order|\n|---|---|\n|**0–15 and 16–40**|**INFLAMMATORY → CONGENITAL / DEVELOPMENTAL → NEOPLASM**|\n|**40+**|**MALIGNANCY → BENIGN → INFLAMMATORY**|\n\n|Site|CYSTIC|SOLID|\n|---|---|---|\n|**MIDLINE**|**THYROGLOSSAL CYST — commonest midline swelling** · dermoid · subhyoid bursa · thyroid isthmus cyst|thyroid isthmus nodule · **prelaryngeal (DELPHIAN) node** · normal hyoid|\n|**LATERAL / ANTERIOR ∆**|**BRANCHIAL CYST** · **LARYNGOCELE — compressible, at the hyoid** · Zenker’s pouch · cystic metastatic node|**⚠️ LYMPH NODE — commonest SOLID LATERAL and commonest neck swelling overall** · salivary · **CAROTID BODY TUMOUR — pulsatile** · neurogenic · goitre|\n|**POSTERIOR ∆**|**CYSTIC HYGROMA**|**LYMPH NODE** — tuberculous, lymphoma, supraclavicular metastasis|\n\n- **Paediatric MIDLINE: thyroglossal cyst · dermoid · submental node · ectopic thyroid.**\n- **Paediatric LATERAL: reactive lymphadenitis (commonest) · branchial cyst · cystic hygroma · haemangioma · sternomastoid tumour.**\n- *Both paediatric lists not in course material — L5 prints those slides as photographs.*\n\nSrc: L5",
+        "qs": [
+          "entep-throat-23",
+          "entep-mfe5-29"
+        ]
+      },
+      {
+        "id": "neck-4",
+        "w": "high",
+        "h": "The eight-group classification",
+        "body": "|Group|Members|\n|---|---|\n|**1 CONGENITAL**|**THYROGLOSSAL · BRANCHIAL · THYMUS · HAEMANGIOMA · DERMOID · CYSTIC HYGROMA**|\n|**2 DEVELOPMENTAL**|**LARYNGOCELE · ZENKER’S DIVERTICULUM**|\n|**3 NORMAL STRUCTURES**|**hyoid · carotid bulb · transverse process · thyroid · salivary glands**|\n|**4 TRAUMATIC**|haematoma, pseudoaneurysm *(L5 names the group only)*|\n|**5 INFLAMMATORY**|**LYMPHADENITIS**|\n|**6 DEEP NECK SPACE INFECTION**|**LUDWIG’S ANGINA** and the pharyngeal abscesses — Pharyngeal suppurations chapter|\n|**7 BENIGN TUMOURS**|**THYROID · SALIVARY · NEUROGENIC · PARAGANGLIOMAS**|\n|**8 MALIGNANT TUMOURS**|**PRIMARY** (constitutional, sarcoma, thyroid, salivary) · **METASTATIC** (supraclavicular, infraclavicular)|\n\n- **⚠️ CONGENITAL AND DEVELOPMENTAL ARE DIFFERENT GROUPS HERE.** Present at birth = **CONGENITAL**; **laryngocele and Zenker’s are DEVELOPMENTAL and ACQUIRED**, appearing in adult life. So a **midline cystic swelling found at birth is BENIGN–CONGENITAL**, almost always a thyroglossal cyst.\n\nSrc: L5",
+        "qs": [
+          "entqb-thr6-318"
+        ]
+      },
+      {
+        "id": "neck-5",
+        "w": "must",
+        "h": "Examination and the work-up",
+        "body": "**EXAMINATION — 1) the MASS: SIZE · SITE · MOBILITY · CONSISTENCY · PULSATION. 2) the NECK: other masses, every LYMPH NODE group. 3) ENT: MIRROR · BIMANUAL · OFFICE ENDOSCOPY. 4) GENERAL: INFRACLAVICULAR PRIMARY · systemic pathology.**\n\n**INVESTIGATIONS, in L5’s order: 1 IMAGING · 2 F.N.A. · 3 ENDOSCOPY for the primary · 4 ASPIRATION for C&S · 5 EXCISION BIOPSY · 6 TUMOUR MARKERS · 7 ABDOMINAL IMAGING · 8 SKIN TEST.**\n\n|Modality|Role|\n|---|---|\n|**ULTRASOUND**|**the most readily available and informative investigation for the MAJORITY of neck masses** — no radiation or sedation; cystic vs solid, nodal morphology, vascularity, thyroid; **guides the needle**. Blind behind the mandible and past air, so it never closes an adult work-up|\n|**CT WITH CONTRAST**|**the standard study for a suspicious adult mass** — whole neck, nodal necrosis, invasion, hunts the occult primary. **RING enhancement = a drainable ABSCESS, diffuse = CELLULITIS**, so it is also the test for a **deep neck space mass in a child**|\n|**MRI**|soft-tissue detail, skull base, perineural spread|\n|**PLAIN X-RAY**|only the lateral soft-tissue film in suspected retropharyngeal collection|\n\n*Ranking not in course material — L5 lists only \"1- Imaging\".*\n\n|Presentation|Next step|\n|---|---|\n|**ADULT · months · PAINLESS · hard · enlarging**|**CONTRAST-ENHANCED CT**, then **FNAC**|\n|**Not settled by 4–6 weeks**|investigate as neoplastic *(threshold not in course material)*|\n\n- **⚠️ NEVER INCISION-BIOPSY A NECK NODE** — it seeds tumour. **Excision biopsy** only after a non-diagnostic FNAC.\n- **A painless, enlarging ULCER of the tongue or oral cavity in an older adult is SCC until proved otherwise** — never reassurance, never simple excision. *Defect: the bank keys contrast CT here; incision biopsy of a PRIMARY lesion is standard, and L5’s prohibition covers NODES. Key as printed.*\n\nSrc: L5",
+        "qs": [
+          "entep-throat-30",
+          "entep-throat-99",
+          "entep-throat-104",
+          "entqb-thr6-302",
+          "entqb-thr6-315",
+          "entqb-thr6-319",
+          "entqb-thr6-327",
+          "entqb-thr11-585"
+        ]
+      },
+      {
+        "id": "neck-6",
+        "w": "must",
+        "h": "Thyroglossal cyst",
+        "body": "**THE COMMONEST CONGENITAL NECK SWELLING. ANYWHERE FROM THE FORAMEN CAECUM TO THE NECK. 90 % MIDLINE, 85 % BELOW THE HYOID.** Presents as a **SOLID MASS, a CYST, or a SINUS**.\n- Also the **commonest MIDLINE swelling**, **midline CYSTIC swelling** and **midline INFRAHYOID lesion**.\n- Painless, smooth, fluctuant; mobile side-to-side.\n\n|Sign|Why|\n|---|---|\n|**Moves up ON SWALLOWING**|attached to larynx and hyoid — **shared with a GOITRE, so it does not discriminate**|\n|**⚠️ RISES ON TONGUE PROTRUSION**|**the discriminator** — the tract is **tethered to the FORAMEN CAECUM** and runs **through the BODY OF THE HYOID**. **No other neck swelling does this**|\n\n- **TREATMENT: SISTRUNK’S OPERATION — the cyst + its whole tract + the CENTRAL BODY OF THE HYOID.** Leaving the hyoid leaves the tract, and it recurs.\n- **⚠️ IF INFECTED: ANTIBIOTICS, THEN EXCISE. NEVER INCISE AND DRAIN** — it becomes a persistent fistula.\n- **⚠️ Confirm a NORMALLY SITED THYROID first** (ultrasound or isotope): the cyst may hold the **only functioning thyroid tissue**. Papillary carcinoma arises rarely in its wall.\n- *The tongue-protrusion sign and its mechanism, the ectopic-thyroid check, the drainage prohibition and Sistrunk’s operation are not in course material.*\n\nSrc: L5",
+        "qs": [
+          "entep-throat-50",
+          "entep-throat-80",
+          "entep-mfe5-28",
+          "entqb-thr6-304",
+          "entqb-thr6-307",
+          "entep-throat-case-25"
+        ]
+      },
+      {
+        "id": "neck-7",
+        "w": "must",
+        "h": "Branchial anomalies",
+        "body": "|Cleft / arch|Derivative|\n|---|---|\n|**1st**|**PINNA · EAC · MIDDLE EAR · EUSTACHIAN TUBE**|\n|**2nd**|**TONSIL**|\n|**3rd**|**PYRIFORM FOSSA**|\n|**4th**|**OESOPHAGUS**|\n|**2nd–6th clefts**|buried as the **CERVICAL SINUS** when the 2nd arch overgrows them; **failure to obliterate = the 2nd branchial cyst**|\n\n- **⚠️ THE 1st CLEFT IS NOT RELATED TO THE HYOID** — the hyoid comes from the **2nd and 3rd ARCHES**.\n- **THE 2ND BRANCHIAL CYST IS THE COMMONEST BRANCHIAL ANOMALY: UPPER NECK, ANTERIOR TO STERNOMASTOID, and the FULL TRACK MAY REACH THE TONSIL.** It runs **between the internal and external carotids**, presents in the **2nd–3rd decade**, and often **enlarges after a URTI**.\n\n|Form|Openings|Presentation|\n|---|---|---|\n|**CYST**|**none**|a swelling only|\n|**SINUS**|**one** — skin or pharynx|a discharging punctum at the anterior border of SCM|\n|**FISTULA**|**two** — skin AND pharynx|**SALIVA DISCHARGES FROM THE NECK ON CHEWING**|\n\n- **TREATMENT: COMPLETE EXCISION OF THE WHOLE TRACT — \"PULL-THROUGH BRANCHIAL FISTULECTOMY\". ⚠️ Incising or draining it makes a chronic sinus.**\n- **⚠️ OVER 40, A \"BRANCHIAL CYST\" IS A CYSTIC METASTATIC NODE UNTIL PROVED OTHERWISE** — HPV-related tonsil or base-of-tongue SCC.\n- *The cervical sinus, carotid course, decade, URTI trigger, cyst/sinus/fistula distinction, pull-through indication and over-40 rule are not in course material.*\n\nSrc: L5",
+        "qs": [
+          "entqb-thr4-186",
+          "entqb-thr4-239",
+          "entqb-thr6-308",
+          "entqb-thr6-309"
+        ]
+      },
+      {
+        "id": "neck-8",
+        "w": "high",
+        "h": "The other congenital masses, and telling the four apart",
+        "body": "*L5 lists these names only — this section is not in course material.*\n- **CYSTIC HYGROMA (lymphangioma)** — macrocystic **LYMPHATIC malformation**; the lymphatic sacs fail to join the venous system, i.e. **LYMPHATIC OBSTRUCTION. POSTERIOR TRIANGLE, lateral. SOFT, COMPRESSIBLE, BRILLIANTLY TRANSILLUMINANT, ⚠️ ILL-DEFINED — no capsule, infiltrates between structures**, which is why excision is hard. Birth to 2 years; **enlarges suddenly with haemorrhage or infection**; large ones obstruct the airway. **Sclerotherapy or excision.**\n- **HAEMANGIOMA** — infantile, first weeks, **PROLIFERATES then INVOLUTES**; a **clinical diagnosis**, **MRI over CT** in an infant. *Defect: the bank asserts as TRUE that \"CT is mandatory in haemangioma\". Not the key; key as printed.*\n- **THYMIC CYST** — **3rd pouch**, descending with the inferior parathyroid, so **low and lateral along the carotid sheath**.\n\n|Feature|THYROGLOSSAL|BRANCHIAL (2nd)|CYSTIC HYGROMA|DERMOID|\n|---|---|---|---|---|\n|**Site**|**MIDLINE**, 85 % infrahyoid|**LATERAL, anterior to SCM**|**LATERAL, POSTERIOR ∆**|**MIDLINE**, submental or suprasternal|\n|**Age**|any childhood age|**2nd–3rd decade**|**birth to 2 years**|child, young adult|\n|**Sign**|**RISES ON TONGUE PROTRUSION**|**saliva onto the skin**; swells after a URTI|**TRANSILLUMINATES, ILL-DEFINED**|doughy, no tongue movement|\n|**Tract**|**FORAMEN CAECUM, through the hyoid**|**TONSILLAR FOSSA**|**none — infiltrating**|**none** — ectodermal inclusion at a fusion line|\n|**Treatment**|**SISTRUNK, with the central hyoid**|**pull-through fistulectomy**|**sclerotherapy or excision**|simple excision|\n\nSrc: L5 for the names only",
+        "qs": [
+          "entqb-thr6-310",
+          "entqb-thr6-316"
+        ]
+      },
+      {
+        "id": "neck-9",
+        "w": "must",
+        "h": "Laryngocele",
+        "body": "**AN AIR-FILLED CYSTIC DILATATION OF THE LARYNGEAL SACCULE** — the saccule arises from the **LARYNGEAL VENTRICLE**, which is **SUPRAGLOTTIC**.\n\n- **THREE TYPES — INTERNAL:** within the larynx, **no neck lump** (supraglottic swelling, hoarseness). **EXTERNAL:** through the **THYROHYOID MEMBRANE** — the **neck lump. MIXED / COMBINED:** both.\n- **⚠️ THERE IS NO SUBGLOTTIC LARYNGOCELE** — the saccule is supraglottic.\n- **LATERAL, SOFT, COMPRESSIBLE, REDUCIBLE, AT THE LEVEL OF THE HYOID. ⚠️ NOT midline and NOT low in the neck** — the two false statements the bank keeps keying.\n- **ENLARGES ON VALSALVA or blowing, EMPTIES ON PRESSURE.**\n\n- **TWO CAUSES — PRIMARY:** chronically **raised intralaryngeal pressure** (**trumpeters, saxophonists, glass-blowers**). **⚠️ SECONDARY:** a **MALIGNANCY OF THE LARYNGEAL VENTRICLE** obstructing the saccule as a **one-way valve**.\n- **⚠️ EXAMINE THE VENTRICLE IN EVERY ADULT LARYNGOCELE BEFORE EXCISING IT** — the lump may be the first sign of a silent ventricular carcinoma.\n- **Contents name the lesion: AIR = laryngocele · MUCUS = saccular (retention) cyst · PUS = laryngopyocele.**\n- **TREATMENT: SURGICAL EXCISION** — endoscopic if internal, external cervical approach if external. Nothing medical shrinks a herniated air sac, and observation is not the answer for a symptomatic one.\n- *Causation, the Valsalva sign, the thyrohyoid exit, the air/mucus/pus naming and the treatment are not in course material.*\n- *Two defects, keys as printed: one printing sites the swelling at the THYROID CARTILAGE where L5 says hyoid; another calls the obstructed saccule a \"retention cyst\" — strictly a saccular cyst, filled with mucus, not air.*\n\nSrc: L5; saccule and thyrohyoid membrane L1.1",
+        "qs": [
+          "entep-throat-58",
+          "entep-throat-81",
+          "entep-mfe5-19",
+          "entqb-thr6-311",
+          "entqb-thr6-325",
+          "entqb-thr6-328",
+          "entqb-thr6-329",
+          "entqb-thr6-331",
+          "entqb-thr6-332",
+          "entqb-thr9-450"
+        ]
+      },
+      {
+        "id": "neck-10",
+        "w": "high",
+        "h": "Zenker’s as a lump, the normal structures, and the pulsatile mass",
+        "body": "- **ZENKER’S DIVERTICULUM — a PHARYNGEAL MUSCLE DEFECT: a LATERAL (usually left) neck mass, GURGLING, ASPIRATION, regurgitation of undigested food, ⚠️ HALITOSIS** from food stagnating in the pouch. **Symptoms precede the palpable pouch, and it lies POSTERIOR and deeper to a laryngocele — never anterior, never midline.** Full account in the Dysphagia chapter. *Defect: one printing calls it \"anterior\". Not the key; key as printed.*\n- **NORMAL STRUCTURES mistaken for a mass: HYOID (midline, C3) · CAROTID BULB (pulsatile, at the bifurcation) · TRANSVERSE PROCESS (hard, deep, immobile) · THYROID GLAND (moves on swallowing) · SALIVARY GLANDS (parotid tail, submandibular).** Test: **SYMMETRY — identical on the other side** *(not in course material)*.\n- **BENIGN TUMOURS, L5’s four groups: THYROID** (adenoma, nodular goitre — **moves on swallowing**) **· SALIVARY** (pleomorphic adenoma, parotid tail or submandibular) **· NEUROGENIC** (schwannoma, neurofibroma — **mobile horizontally, not vertically**) **· PARAGANGLIOMA.**\n- **⚠️ A PULSATING LATERAL NECK MASS IS A PARAGANGLIOMA (CAROTID BODY TUMOUR) UNTIL PROVED OTHERWISE** — L5’s own rule. At the **carotid bifurcation**, **mobile side-to-side but not up and down**, may carry a **bruit**; contrast CT or MRA shows **splaying of the carotids**. **⚠️ NEVER FNA a pulsatile neck mass** *(signs, imaging and the FNA warning not in course material)*.\n\nSrc: L5; Zenker’s in full L10",
+        "qs": [
+          "entqb-thr6-312"
+        ]
+      },
+      {
+        "id": "neck-11",
+        "w": "must",
+        "h": "Cervical lymphadenopathy — the four-way discrimination",
+        "body": "**The lymph node is the commonest neck swelling of all.** L5 files acute lymphadenitis under *inflammatory*, lymphoma under *constitutional malignancy*.\n\n|Feature|ACUTE lymphadenitis|CHRONIC (TUBERCULOUS)|LYMPHOMA|METASTATIC node|\n|---|---|---|---|---|\n|**History**|**DAYS**, after **URTI, tonsillitis or dental sepsis**|**weeks–months**, low-grade fever, night sweats, weight loss|**B symptoms** — fever, night sweats, weight loss|**MONTHS**; age 40+, smoker or drinker|\n|**Node**|**TENDER, firm, MOBILE**, one group|**MULTIPLE and MATTED**, upper deep cervical or posterior ∆; caseates into a **COLLAR-STUD ABSCESS** and a sinus|**multiple, RUBBERY, DISCRETE**, several groups ± axillary, inguinal, spleen|**HARD**, may be **FIXED** to deeper structures or skin|\n|**Pain / course**|**PAINFUL; RESOLVES IN ABOUT A WEEK**|painless, persists|painless, persists|painless, progresses|\n|**Next step**|**CBC**, treat the infection — **no imaging, no biopsy**|**FNAC + culture, Mantoux / SKIN TEST, CXR**, anti-tuberculous therapy. **Always needs investigation**|**EXCISE A WHOLE NODE** — subtyping needs architecture FNAC cannot sample|**contrast CT → FNAC → endoscopy for the primary**|\n\n- **A mass that fails to settle is not reactive** — a **secondarily infected branchial cyst** mimics it exactly *(not in course material)*.\n- *Defect: the bank keys **MATTED** nodes as the feature of lymphoma. L5 prints no signs for lymphoma, and matting classically means tuberculous adenitis or extracapsular metastatic spread. Key as printed.*\n\nSrc: L5; node characteristics and the collar-stud abscess not in course material",
+        "qs": [
+          "entep-throat-105",
+          "entep-mfe5-34",
+          "entqb-thr6-301",
+          "entqb-thr6-313",
+          "entqb-thr6-314"
+        ]
+      },
+      {
+        "id": "neck-12",
+        "w": "must",
+        "h": "Malignancy — the primary, the metastatic node and the occult primary",
+        "body": "**PRIMARY — CONSTITUTIONAL: LYMPHOMA · LYMPHOEPITHELIOMA · LYMPHOSARCOMA · RETICULUM CELL CARCINOMA · LEUKAEMIA. PRIMARY — OTHER: SARCOMA · THYROID · SALIVARY. METASTATIC: a SUPRACLAVICULAR or an INFRACLAVICULAR primary.**\n\n- **A \"constitutional\" tumour is PRIMARY IN THE NODE, not metastatic TO it** — never the answer to where cervical nodes receive metastases FROM.\n- **⚠️ 80 % OF METASTATIC NECK MASSES COME FROM A SUPRACLAVICULAR PRIMARY.** L5 uses *supraclavicular* to mean the primary **sits ABOVE the clavicle** — i.e. **a HEAD AND NECK primary**, usually **SCC of the upper aerodigestive tract**. The two wordings are one answer.\n\n|Node position|Think of|\n|---|---|\n|**UPPER DEEP CERVICAL / JUGULODIGASTRIC (II)**|**NASOPHARYNGEAL CARCINOMA — the node is often the FIRST and only sign**; also tonsil, base of tongue. NPC in full in Nasal masses|\n|**Submandibular / submental (I)**|lip, oral cavity, anterior tongue|\n|**Mid / lower jugular (III, IV)**|larynx, hypopharynx, thyroid|\n|**Posterior triangle (V)**|**nasopharynx**, scalp|\n|**⚠️ LEFT SUPRACLAVICULAR — VIRCHOW’S**|an **INFRACLAVICULAR primary** — stomach, lung, breast, pancreas, testis|\n\n*Position grid and Virchow’s node not in course material — L5 divides metastases into supraclavicular and infraclavicular only.*\n\n**L5’s METASTATIC-NODE WORK-UP:**\n- **⚠️ NEVER INCISION BIOPSY.**\n- **F.N.A.C. — benign vs malignant · differentiates LYMPHOMA from METASTATIC SCC · 97 % SENSITIVITY, 98 % SPECIFICITY.**\n- **EXCISION BIOPSY** if FNAC is non-diagnostic — a **whole node** if lymphoma is suspected.\n- **OCCULT PRIMARY** — node positive, primary not found: **panendoscopy with directed biopsies of nasopharynx, tonsil, base of tongue, pyriform fossa**, ipsilateral tonsillectomy, **PET-CT** *(not in course material)*.\n\nSrc: L5",
+        "qs": [
+          "entep-throat-43",
+          "entep-mfe4-8",
+          "entep-mfe4-32",
+          "entqb-thr6-321",
+          "entqb-thr6-324"
+        ]
+      }
+    ]
+  },
+  "ent-nasalobs": {
+    "intro": "Four axes decide it before the endoscope: mucosal or structural, fluctuating or constant, one side or two, position-dependent or not. Then two topics carry two thirds of the questions — the blocked newborn, and clear fluid from one nostril that gets worse on bending forward.",
+    "sections": [
+      {
+        "id": "nobs-1",
+        "w": "must",
+        "h": "Four axes — classify the obstruction before you name the lesion",
+        "body": "**Take all four before instrumenting the nose.**\n\n|Axis|Options|Decides|\n|---|---|---|\n|**Aetiology**|**mucosal** · **structural** · **mixed**|medical vs surgical|\n|**Duration**|**FLUCTUATING = mucosal or mixed** · **CONSTANT = structural**|a nose that varies has swollen lining; one that never varies has a fixed obstacle|\n|**Laterality**|**UNILATERAL → structural or unilateral pathology** (antrochoanal polyp, odontogenic) · **BILATERAL → mucosal, structural or mixed** · **ALTERNATING → a variety of BILATERAL, frequently position-related**|unilateral is the red flag at every age|\n|**Position**|**DEPENDENT = allergy, rhinitis, rhinosinusitis** · **NON-DEPENDENT = septal deviation, tumours**|dependent-side blocking is mucosal|\n\n- **Alternating is the commonest pattern** and is mucosal — the **physiological nasal cycle** amplified by allergy. A deviated septum only *seems* to alternate, the cycle riding on a fixed narrowing *(cycle not in course material)*.\n- **Unilateral IMPAIRED breathing in a child = deviated septum.** Unilateral **ABSENT** breathing = choanal atresia; rhinitis and pansinusitis are bilateral.\n- **Adenoid hypertrophy is STRUCTURAL, not mucosal** — on the true/false slide as a statement to be corrected.\n- **Defect note:** one key gives *alternating* as the commonest type by laterality while the lecture calls it a variety of *bilateral*, offered as a distractor — the key is a subset of another option. Keyed as printed.\n\nSrc: L31 lines 14–20, 21–38; L32 lines 140–172",
+        "qs": [
+          "entqb-nose5-187",
+          "entqb-nose5-188",
+          "entqb-nose5-189",
+          "entep-nose-33"
+        ]
+      },
+      {
+        "id": "nobs-2",
+        "w": "must",
+        "h": "Aetiology — the two lists, and the cause that changes with age",
+        "body": "|MUCOSAL (6)|STRUCTURAL — congenital (2)|STRUCTURAL — acquired (8)|\n|---|---|---|\n|**All forms of rhinitis** · **nasal allergy** · **acute rhinosinusitis** · **chronic rhinosinusitis** · **fungal rhinosinusitis** · **mucosal pathology due to systemic disease**|**Choanal atresia** · **pyriform aperture stenosis**|**Adenoids** · **trauma** · **septal deviation** · **septal perforation** · **hypertrophy of the turbinates** · **nasal valve dysfunction** · **nasal polyps** · **sinonasal and nasopharyngeal tumours and cysts**|\n\n**BY AGE — a blocked nose at three days is a different disease from one at forty.**\n\n|Age|Think first|Emergency|\n|---|---|---|\n|**NEONATE**|**choanal atresia** · **pyriform aperture stenosis** · congenital masses and cysts|**bilateral choanal atresia — obligate nasal breathing, death from asphyxia**|\n|**CHILD**|**adenoids** (commonest STRUCTURAL) · **rhinitis and allergy** (commonest overall) · **foreign body** (unilateral) · **polyps → cystic fibrosis until excluded**|**button battery** *(not in course material)*|\n|**ADULT**|**nasal allergy and viral infections — commonest overall** · septal deviation · turbinate hypertrophy · polyps · **tumour if unilateral and progressive**|—|\n\n- **THE COMMONEST CAUSE IS THE COMMON COLD** — viral infection and nasal allergy in adults; allergy and adenoids in children. A cold past **5–10 days** is something else *(duration not in course material)*.\n- **Bilateral obstruction at 2–6 years = adenoid hypertrophy**, second only to the cold. **Unilateral in the same child = foreign body or deviated septum.**\n\nSrc: L31 lines 39–65, 66–76, 77–81; L32 lines 140–172",
+        "qs": [
+          "entqb-nose3-127",
+          "entqb-nose5-190",
+          "entqb-nose5-182",
+          "entep-nose-38",
+          "entqb-nose7-225"
+        ]
+      },
+      {
+        "id": "nobs-3",
+        "w": "must",
+        "h": "Assessment and treatment — two subjective scales, three objective tests, one drug rule",
+        "body": "|Tier|Tool|What it gives|\n|---|---|---|\n|**SUBJECTIVE**|**History** — **laterality, duration, other symptoms**|the four axes above|\n|**SUBJECTIVE**|**NOSE scale** — Nasal Obstruction Symptom Evaluation, **5 items, obstruction only** *(content not in course material)*|validated severity; a before/after measure for surgery|\n|**SUBJECTIVE**|**SNOT-22** — Sino-Nasal Outcome Test, **22 items, whole sinonasal quality of life** *(not in course material)*|broader than NOSE; standard in rhinosinusitis|\n|**OBJECTIVE**|**Clinical examination + NASAL ENDOSCOPY**|sees the obstacle — the workhorse|\n|**OBJECTIVE**|**CT · MRI**|CT for bone, MRI for soft tissue and intracranial extension|\n|**OBJECTIVE**|**RHINOMANOMETRY** — pressure and flow together = airway **RESISTANCE** *(mechanism not in course material)*|**\"mostly of academic interest\"** — the lecturer’s words|\n|**OBJECTIVE**|**ACOUSTIC RHINOMETRY** — reflected sound = cross-sectional **AREA against distance**, i.e. *where* *(not in course material)*|same caveat|\n\n**TREATMENT**\n- **Treat the cause — the main line.** The rest is temporary relief.\n- **TOPICAL decongestant drops: NOT MORE THAN 5 DAYS**, or **RHINITIS MEDICAMENTOSA** (drug-induced rhinitis) follows — rebound obstruction worse than the original.\n- **ORAL decongestant (pseudoephedrine, phenylephrine): CONTRAINDICATED in HYPERTENSION, PROSTATIC HYPERTROPHY and GLAUCOMA.**\n- **⚠️ Never decongest a nose leaking clear fluid** — useless against a skull-base defect, and it delays the diagnosis.\n\nSrc: L31 lines 82–101",
+        "qs": [
+          "entqb-nose3-127",
+          "entep-nose-91"
+        ]
+      },
+      {
+        "id": "nobs-4",
+        "w": "must",
+        "h": "Choanal atresia — the commonest congenital nasal anomaly, and a neonatal emergency",
+        "body": "**A bony or membranous plate closes the posterior choana.** **Roederer described it 1755; Emmert did the first successful repair, 1854.**\n\n**THE NUMBERS, a slide of its own:** **commonest congenital nasal anomaly, 1 in 7,000 to 1 in 10,000 live births** · **unilateral : bilateral = 2:1** · **unilateral more often RIGHT-sided** · **F > M** · **no racial difference** · **maternal age and parity do NOT increase the frequency** · **chromosomal anomalies in 6 %**.\n\n**AETIOLOGY — four theories:** persistent buccopharyngeal / **failure of the bucconasal membrane to rupture** · medial outgrowth of the vertical and horizontal processes of the **palatine bone** · abnormal **mesodermal adhesions** in the choanal area · **misdirected mesodermal flow**.\n\n**⚠️ WHY BILATERAL IS AN EMERGENCY: OBLIGATE NASAL BREATHING FOR THE FIRST 6 TO 8 WEEKS** (degree and duration variable). **Complete nasal obstruction in a newborn may cause death from asphyxia.**\n\n|Form|Presentation|\n|---|---|\n|**BILATERAL**|**Severe airway obstruction + CYCLICAL CYANOSIS ALLEVIATED BY CRYING — the classic sign.** Worse on **feeding** (mouth occupied), relieved by crying (mouth open). **Respiratory distress WITHOUT stridor** — the obstruction is above the larynx|\n|**UNILATERAL**|**Presents LATER with unilateral rhinorrhoea** — mistaken for years for rhinitis or a foreign body|\n\n**CHARGE (Hall 1979, Pagon 1981):** **C** coloboma · **H** congenital heart disease · **A** atresia of the choanae · **R** retarded growth and development · **G** genital anomalies in males · **E** ear abnormalities and deafness. **Marfan is not part of it.**\n\n**DIAGNOSIS:** **failure to pass a CATHETER** into the nasopharynx is the bedside screen *(not in course material)* · **endoscopic examination** · **CT — AXIAL plane**, showing the plate front-to-back, bony vs membranous, and its thickness; **decongest and suction first** *(plane and prep not in course material)*. **⚠️ CHOANOGRAPHY IS OBSOLETE** — contrast into the supine nose, then a radiograph: it shows only *that* the choana is blocked, never what or how thick, and risks aspirating contrast *(not in course material)*.\n\n**MANAGEMENT**\n- **BILATERAL — CREATE AN ORAL AIRWAY FIRST:** **1 McGovern nipple · 2 oral airway · 3 intubation.** **Stimulate the infant to cry.** Orogastric feeding. **Nasal oxygen useless; immediate surgery premature.** **Genetics consult and work-up for the other anomalies.**\n- **UNILATERAL — repair DELAYED** to let the child grow and **reduce restenosis**.\n- **DEFINITIVE = CHOANOPLASTY**, removing the atretic plate and posterior vomer. **Three approaches: TRANSNASAL** (endoscopic — modern default) · **TRANSPALATAL** · **TRANSSEPTAL**. **Restenosis is the main complication** *(both not in course)*.\n\nSrc: L23 lines 87–166",
+        "qs": [
+          "entep-nose-6",
+          "entep-nose-29",
+          "entep-nose-105",
+          "entep-mfe4-31",
+          "entep-mfe5-7",
+          "entqb-nose1-34",
+          "entqb-nose1-35",
+          "entqb-nose1-36",
+          "entqb-nose1-37",
+          "entqb-nose1-38",
+          "entqb-nose1-39",
+          "entqb-nose1-40",
+          "entqb-nose1-41",
+          "entqb-nose1-42",
+          "entqb-nose1-43",
+          "entep-nose-case-2"
+        ]
+      },
+      {
+        "id": "nobs-5",
+        "w": "high",
+        "h": "The blocked neonate — pyriform aperture stenosis, and what else it could be",
+        "body": "**CONGENITAL NASAL PYRIFORM APERTURE STENOSIS (CNPAS)** — **a rare cause of airway obstruction in infants, EASILY MISTAKEN FOR CHOANAL ATRESIA.** The narrowing is the **anterior** bony inlet, not the posterior choana. **First described radiologically by Ey et al, 1988.** **CT: HEIGHT of the nasal cavity usually normal; WIDTH under 11 mm in a term infant is DIAGNOSTIC** (Belden et al, 1999). Same emergency, same reason, same first move — an oral airway.\n\n|Diagnosis|Discriminator|\n|---|---|\n|**Bilateral choanal atresia**|**Cyclical cyanosis RELIEVED BY CRYING, worse on feeding. No stridor.** Catheter will not pass|\n|**CNPAS**|Identical picture; **catheter obstructs ANTERIORLY**, CT width **< 11 mm**|\n|**Laryngomalacia**|**INSPIRATORY STRIDOR**, worse supine and on feeding, **better prone**; nose patent|\n|**Congenital subglottic stenosis**|**BIPHASIC stridor**, recurrent \"croup\"; nose patent|\n|**Tracheo-oesophageal fistula**|**Choking and cyanosis WITH feeds**, not relieved by crying; tube will not pass to the stomach|\n*(the last three are `ent-stridor`’s and `ent-paedlar`’s; here only as the discrimination)*\n\nSrc: L23 lines 167–177",
+        "qs": [
+          "entep-mfe5-7",
+          "entqb-nose1-39",
+          "entqb-nose1-42"
+        ]
+      },
+      {
+        "id": "nobs-6",
+        "w": "must",
+        "h": "Nasal foreign body — unilateral, foetid, and in a child",
+        "body": "**⚠️ UNILATERAL FOETID NASAL DISCHARGE IN A CHILD IS A FOREIGN BODY UNTIL PROVED OTHERWISE** — printed on the true/false slide as *the most common cause of unilateral nasal discharge with bad odour in children*.\n\n- **Usually NO history** — unwitnessed, or concealed. **Its absence is not evidence against it.**\n- **Unilateral, purulent, offensive, often BLOOD-TINGED** — granulation tissue forms around the object, so the same child may instead present as **unilateral epistaxis**.\n- **⚠️ FAILURE OF REPEATED ANTIBIOTICS AND ANTI-ALLERGIC TREATMENT IS ITSELF THE CLUE** — a unilateral discharge outlasting several courses is mechanical, not infective.\n- **SAME PICTURE, DIFFERENT AGE, DIFFERENT DISEASE:** unilateral foetid discharge in a **CHILD** = foreign body · in an **ADULT** = **odontogenic (dental) sinusitis** · **offensive and blood-stained in an older patient = neoplasm**.\n\n**REMOVAL** *(not in course material)*: **under DIRECT VISION**, a hook passed **behind** the object — **never blind forceps**, which push it into the nasopharynx and risk aspiration. **An uncooperative child goes to theatre** with the airway secured. **⚠️ A BUTTON BATTERY IS AN IMMEDIATE EMERGENCY** — liquefactive necrosis and septal perforation within hours.\n\nSrc: L31 lines 66–76, 125–130; L32 lines 152–162",
+        "qs": [
+          "entep-nose-18",
+          "entep-nose-71",
+          "entep-nose-100",
+          "entep-nose-107",
+          "entep-nose-111",
+          "entep-nose-114",
+          "entqb-nose2-84",
+          "entqb-nose5-183",
+          "entep-nose-case-4"
+        ]
+      },
+      {
+        "id": "nobs-7",
+        "w": "high",
+        "h": "The structural blockers — turbinate, valve, adenoid, and one line each for the neighbours",
+        "body": "**TURBINATE HYPERTROPHY** — the **INFERIOR** turbinate; the commonest structural cause an endoscope finds in an adult.\n- **MUCOSAL** component (venous sinusoids — shrinks with a decongestant) vs **BONY** (does not); **the decongestant separates them** *(test not in course material)*.\n- **COMPENSATORY hypertrophy on the CONCAVE side of a deviated septum** is why L24 says obstruction may sit **opposite the deviation**, and why septoplasty alone can fail.\n- Mucosal enlargement is **hypertrophic rhinitis** → `ent-rhin`. Reduction (turbinoplasty, submucous diathermy, radiofrequency) is a last resort; **over-resection gives the empty nose** *(not in course material)*.\n\n**NASAL VALVE DYSFUNCTION** — L24 prints one clause: *\"deviations in region of nasal valve cause greatest obstruction : cottle test\"*. The rest is **not in course material**.\n\n|Valve|Boundaries|Note|\n|---|---|---|\n|**INTERNAL (limen nasi)**|**caudal upper lateral cartilage · septum · head of the inferior turbinate · nasal floor**|**Angle 10–15°. NARROWEST PART OF THE AIRWAY — up to half of total nasal resistance.** A millimetre here outweighs a centimetre behind|\n|**EXTERNAL**|**ala · columella · nasal sill · caudal septum**|Collapses inward on brisk inspiration|\n\n- **STATIC** narrowing (caudal deviation, narrow angle) blocks always; **DYNAMIC** collapse only on brisk inspiration.\n- **COTTLE TEST: draw the cheek laterally — airflow improves = the valve.** **Modified Cottle** supports the lateral wall with a probe and says *which* valve.\n- **RECONSTRUCTION: SPREADER GRAFT** widens the internal angle · **ALAR BATTEN GRAFT** stiffens the external valve · **flaring suture** opens the internal valve. Decongestants do nothing — the obstacle is cartilage.\n\n**ADENOID HYPERTROPHY — obstruction face only; full account in `ent-tonsils`.** Commonest **structural** cause of **bilateral** obstruction in a child; **peaks 2–6 years, shrinks after 6–8**. **Mouth breathing, snoring ± sleep apnoea, hyponasal voice, adenoid facies**, and via the Eustachian tubes **OME and conductive hearing loss**.\n\n**Written elsewhere:** **deviated septum, perforation, nasal trauma** → `ent-septum` · **polyps, antrochoanal polyp, angiofibroma, sinonasal tumours** → `ent-nasalmass` · **the rhinitides** → `ent-rhin`.\n\nSrc: L31 lines 57–65; L24 lines 122–134; L3 (adenoid picture, written in full in `ent-tonsils`)",
+        "qs": [
+          "entqb-nose5-182",
+          "entep-nose-33",
+          "entqb-nose7-225",
+          "entep-nose-38"
+        ]
+      },
+      {
+        "id": "nobs-8",
+        "w": "must",
+        "h": "Nasal discharge — read the character, then the side",
+        "body": "**Two directions: ANTERIOR** (from the anterior nares) and **POSTERIOR** (post-nasal). **⚠️ NORMAL NASAL DRAINAGE IS POSTERIOR — the patient only feels it in excess.** **Four characters, each with its own cause list.**\n\n|Character|Unilateral|Bilateral|\n|---|---|---|\n|**WATERY**|**CSF RHINORRHOEA**|**allergic rhinitis** · **early stages of acute viral rhinitis (common cold)**|\n|**MUCOPURULENT / PURULENT**|—|**rhinosinusitis** · **stagnation of nasal secretions**|\n|**FOETID (bad odour)**|**foreign body** (child) · **odontogenic sinusitis** (adult)|**sinonasal neoplasms** · **fungal infections**|\n|**BLOOD-STAINED**|**sinonasal neoplasms** · **fungal infections**|—|\n\n- **⚠️ FOETID = STAGNATION PLUS ANAEROBES — four causes: FOREIGN BODY, ODONTOGENIC SINUSITIS, SINONASAL NEOPLASM, FUNGAL INFECTION.** **An acute viral cold is never foetid** — watery, then mucopurulent, then stops.\n- **Odontogenic sinusitis is foetid and PURULENT, not watery** — printed on the true/false slide as a statement to be corrected. **Mucopurulent discharge is indicative of rhinosinusitis** — printed as true.\n- **Laterality outranks character in a child:** unilateral anything is a foreign body until the nose has been looked into.\n\nSrc: L31 lines 102–107, 108–134; L32 lines 152–172",
+        "qs": [
+          "entqb-nose5-181",
+          "entep-nose-28",
+          "entep-nose-59",
+          "entep-nose-71",
+          "entep-nose-100",
+          "entqb-nose5-183"
+        ]
+      },
+      {
+        "id": "nobs-9",
+        "w": "must",
+        "h": "CSF rhinorrhoea — one nostril, clear, and worse on bending forward",
+        "body": "**⚠️ UNILATERAL CLEAR WATERY RHINORRHOEA IS A CSF LEAK UNTIL PROVED OTHERWISE.** Allergic and viral rhinitis are **bilateral**; sinusitis is **mucopurulent**; a tumour is bloody or obstructive. **Laterality plus character is the whole discriminator.**\n\n**THE PROVOKING MANOEUVRES ARE THEMSELVES DIAGNOSTIC: BENDING FORWARD, STRAINING, COUGHING** — all raise intracranial pressure and increase the flow. **Salty or sweet taste** and **headache** complete it; **obstruction is typically absent** — a leak does not block.\n\n**CAUSES:** **head trauma with a skull-base or mid-facial fracture** (commonest — cribriform plate, fovea ethmoidalis, sphenoid) · **post skull-base surgery** · **after acoustic tumour removal** · **spontaneous**, with raised intracranial pressure · **congenital meningocele or encephalocele** — exclude it before any nasal instrument goes in.\n\n|Question|Test|Verdict|\n|---|---|---|\n|**IS it CSF?**|**HALO (double-ring) sign** — a drop on gauze spreads as a central blood spot inside a clear ring|**bedside, suggestive, NOT diagnostic**|\n|**IS it CSF?**|**Reduces FEHLING’S SOLUTION — CSF contains glucose** *(not in course material)*|**suggestive only** — tears, blood and mucus mislead|\n|**IS it CSF?**|**BETA-2 TRANSFERRIN** — an isoform found only in CSF, perilymph and aqueous humour|**THE CONFIRMATORY TEST — most specific**|\n|**IS it CSF?**|**BETA TRACE PROTEIN**|the alternative confirmatory assay|\n|**WHERE is it?**|**HRCT skull base** · **MR cisternography** · **CT cisternography with intrathecal contrast** · intrathecal fluorescein *(last three not in course material)*|localisation only — none proves the fluid is CSF|\n\n**⚠️ CONFIRM AND LOCALISE ARE DIFFERENT QUESTIONS.** No scan says the fluid is CSF; no assay says where the hole is. *Most specific* wants beta-2 transferrin, never imaging.\n\n**MANAGEMENT**\n- **⚠️ NEVER PACK THE NOSE** — it obstructs drainage and drives infection intracranially. **Never decongest. Never biopsy. Never reassure and discharge.**\n- **TRAUMATIC LEAKS USUALLY RESPOND TO CONSERVATIVE MANAGEMENT: ELEVATION OF THE HEAD · DRUGS TO LOWER CSF PRESSURE · STRICT WATER PRECAUTIONS**, plus no nose-blowing, straining or coughing (acetazolamide, *name not in course material*). **If it does not respond — EXPLORATION AND REPAIR.**\n- **⚠️ THE FEARED COMPLICATION IS MENINGITIS**, usually pneumococcal, risk cumulative — which is why a persistent leak is repaired rather than watched. **Fever, photophobia, neck stiffness or Brudzinski’s sign with a clear unilateral discharge = meningitis on a leak: treat that first, repair after.**\n- **Defect note:** one printing asks this exact vignette after deleting *CSF rhinorrhoea* from its own option list and keys **juvenile angiofibroma** — a tumour of adolescent males, never clear fluid. Keyed as printed.\n\nSrc: L31 lines 114–120; L17,18 lines 26–45 (halo sign, beta-2 transferrin, beta trace protein, conservative ladder — in full in `ent-otorrhea`); L26 line 357; L32 line 156",
+        "qs": [
+          "entep-nose-19",
+          "entep-nose-27",
+          "entep-nose-28",
+          "entep-nose-43",
+          "entep-nose-59",
+          "entep-nose-73",
+          "entep-nose-91",
+          "entep-nose-103",
+          "entep-nose-106",
+          "entep-mfe4-14",
+          "entep-mfe5-8",
+          "entep-mfe7-1",
+          "entep-enr-6",
+          "entqb-nose5-178",
+          "entqb-nose5-179",
+          "entqb-nose5-180",
+          "entqb-nose5-184",
+          "entqb-nose7-209",
+          "entep-nose-case-5"
+        ]
+      },
+      {
+        "id": "nobs-10",
+        "w": "know",
+        "h": "What a blocked nose does to the voice — clausa vs aperta",
+        "body": "**Speech is mostly oral; /m/ and /n/ must resonate in the NOSE. Disturbed nasality = resonance reduced (HYPONASALITY) or excessive (HYPERNASALITY).**\n\n|  |**Rhinolalia CLAUSA**|**Rhinolalia APERTA**|\n|---|---|---|\n|Resonance|**HYPOnasal — too little**|**HYPERnasal — too much**|\n|Fault|**the NOSE is blocked**|**the PALATE does not close**|\n|Causes|**ADENOID HYPERTROPHY** · polyps · **rhinoscleroma** · gross septal deviation|**cleft palate** · **palatal paralysis** · **fistula of the palate** · post-adenoidectomy velopharyngeal insufficiency|\n|Sign|/m/ and /n/ lose nasal quality|air and fluid escape down the nose|\n\n- **The enlarged adenoid gives CLAUSA** — a blockage loses resonance, it does not add it. Each half is asked as the other’s exception.\n- **Rhinoscleroma is CLAUSA, not aperta:** it narrows the nose, it does not open the palate.\n- Neither is dysphonia (voice quality), stuttering (fluency) or dysarthria (neuromuscular articulation).\n\nSrc: L8 lines 208–212 (hypo/hypernasality — `ent-phon`’s deck, cited only); the Latin names, the cause lists and the palatal mechanisms are not in course material",
+        "qs": [
+          "entep-nose-49",
+          "entep-nose-109"
+        ]
+      }
+    ]
   }
 };

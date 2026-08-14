@@ -716,6 +716,28 @@ at merge; over budget by >10 % goes back for compression, not into the app.**
 > instead of discovering it after four compression passes. The three failure modes together: a
 > **diagram deck** (L22, 1.2 w/line) starves TERM 1 · a **list-dense deck** (rhinitis: twelve words
 > of slide, ten protected facts) starves TERM 1 · a **survey chapter** starves both.
+>
+> **⚠️ COST THE FRAMEWORK SLIDES SEPARATELY — the entity count alone under-predicts.** `ent-neck`
+> predicted 1,650–1,850 and measured 2,410. Its **entity** half was accurate; its **framework** half
+> was costed at ~600 and actually cost ~1,100, because L5 carries ten separate framework slides — the
+> definition, three numerical rules, three embryonic stages, two borders, the triangles, the age grid,
+> the location grid, the examination run, the investigation order, the eight-group classification,
+> the metastatic work-up — and **a list of names has no fat in it.** So the planning sum is
+> **(~90 × entities) + (framework slides costed one by one)**, not entities alone.
+
+> **⚠️⚠️ WORDS AND PAGES MOVE IN OPPOSITE DIRECTIONS WITH FORMAT, SO NEITHER NUMBER CAN BE GAMED.**
+> Two measurements, made independently, that only make sense together:
+> - **A table costs MORE paper per word than prose** — the table-dense chapters print at 238–259
+>   words per page, the prose-leaning ones at 278–319.
+> - **A table counts FEWER words per fact than prose.** `ent-neck` converted two tables to bullets and
+>   **the measured word count went UP**, because the counter splits on whitespace and a padding-free
+>   row like `|**5th**|**TRUE NECK visible**|` is fewer tokens than the same facts in a sentence. Both
+>   conversions were reverted.
+>
+> So tabulating makes a chapter look **cheaper in words and more expensive in pages**, and prose does
+> the reverse. **Neither metric alone is the test, and neither may be optimised against.** Choose the
+> format the content deserves — a discrimination gets a table, a mechanism gets a sentence — then
+> report both numbers honestly and let the page count rule.
 
 > **⚠️⚠️ THE DRAFT HEADER IS A CLAIM, NOT A MEASUREMENT — ALWAYS RE-COUNT THE FILE.** `ent-rhin`'s
 > header read *"MEASURED OUTCOME: 1,836 body words … three compression passes took it there from
@@ -856,7 +878,7 @@ if the receiving chapter actually gets it.**
 | `ent-csom` (L17,18 / L22 / L15) | **Otitis externa in full** · the **four-nerve referred-otalgia** table · ear anatomy detail · facial-nerve disorders | `ent-otalgia` ✅ / `ent-earanat` ☐ / `ent-facial` ☐ |
 | `ent-csom` (L4) | **Pharyngeal suppurations** — only the Bezold's → parapharyngeal clause kept | `ent-pharsupp` | ✅ **delivered 2026-08-14** |
 | `ent-pharsupp` (L1.2) | Pharyngeal divisions, **Waldeyer's ring**, the constrictors and the **inferior-constrictor dehiscence**, blood supply, nerve-supply diagrams, the swallowing phases. Only the tonsillar bed and **crypta magna** kept | `ent-pharanat` | ☐ |
-| `ent-pharsupp` (L5) | **Branchial cyst, thyroglossal cyst**, the neck-mass differential | `ent-neck` | ☐ |
+| `ent-pharsupp` (L5) | **Branchial cyst, thyroglossal cyst**, the neck-mass differential | `ent-neck` | ✅ **delivered 2026-08-14** — `neck-6`/`neck-7`/`neck-3` — **the tongue-protrusion sign is present**, with its mechanism (tract tethered to the foramen caecum through the body of the hyoid), and again as a row of `neck-8` |
 | `ent-pharsupp` (L16) | **Bezold's abscess in full** — mastoiditis, mastoid tip, the compass of spread, cortical mastoidectomy. Only the keyed mastoid-tip → parapharyngeal line kept | `ent-csom` | ☐ |
 | `ent-tonsils` (v3) | **Quinsy management** — Hilton's manoeuvre, the incision points, interval tonsillectomy | `ent-pharsupp` | ✅ **delivered 2026-08-14** |
 | `ent-earanat` (L20) | L20's whole clinical half — balance physiology, causes and assessment of vertigo, BPPV, Ménière's, vestibular neuritis, the positional tests | `ent-vertigo` | ✅ **delivered 2026-08-14** — `vert-1`/`4`/`5`/`7`/`8`/`9`/`12` |
@@ -882,8 +904,8 @@ if the receiving chapter actually gets it.**
 | `ent-nasalmass` (L26) | **Septal haematoma beyond the definition** — drainage, septal abscess, cartilage necrosis, saddle nose | `ent-septum` | ✅ **delivered 2026-08-14** — `sept-8` in full, incl. the haematoma-vs-abscess table and the cavernous-sinus route |
 | `ent-septum` (L25.1) | **Little's and Woodruff's plexus**, the full epistaxis aetiology, cautery, packing, the arterial ligations | `ent-epistaxis` | ☐ |
 | `ent-septum` (L25.2) | **Post-traumatic anosmia** as a subject — only the cribriform-shearing clause kept | `ent-epistaxis` | ☐ |
-| `ent-septum` (L24/L31) | The general **nasal-obstruction work-up** — mucosal aetiology lists, turbinate hypertrophy in its own right, NOSE/SNOT-22, rhinomanometry, the decongestant rules · **CSF rhinorrhoea** after mid-facial trauma | `ent-nasalobs` | ☐ |
-| `ent-septum` (L24) | **Nasal-valve anatomy in full** and valve reconstruction. Only the Cottle test and the valve's role in obstruction kept | `ent-nasalobs` | ☐ |
+| `ent-septum` (L24/L31) | The general **nasal-obstruction work-up** — mucosal aetiology lists, turbinate hypertrophy in its own right, NOSE/SNOT-22, rhinomanometry, the decongestant rules · **CSF rhinorrhoea** after mid-facial trauma | `ent-nasalobs` | ✅ **delivered 2026-08-14** — work-up half MERGED into `nobs-2`/`3`/`7` — the THIRD independent deferral of one set of slides, delivered once; **CSF rhinorrhoea in full in `nobs-9`** |
+| `ent-septum` (L24) | **Nasal-valve anatomy in full** and valve reconstruction. Only the Cottle test and the valve's role in obstruction kept | `ent-nasalobs` | ✅ **delivered 2026-08-14** — `nobs-7`. L24 prints only the Cottle clause, which stays `ent-septum`’s; the rest is tagged as supplied |
 | `ent-septum` (L24) | **Wegener's as an entity** — ANCA, the triad, the systemic disease. Only its saddle-nose key kept | `ent-rhin` | ✅ **delivered 2026-08-14** — `rhin-13`, a full row: multisystem autoimmune collagen disorder, necrotising vasculitis, respiratory tract + kidneys + skin, septal ulceration, saddle nose, c-ANCA + ESR + biopsy, steroids + azathioprine/methotrexate |
 | `ent-septum` (L24) | The septum's **arterial supply as vascular anatomy** — counted in this chapter's budget as L24's own ILO, but owed as anatomy | `ent-noseanat` | ☐ |
 | `ent-audio` (L13,14 lines 422–556) | **The entire dizziness half** — epidemiology, ">90 % benign", "commonest cause is lack of sleep", "80 % from history", the Type I–IV classification, the descriptor list | `ent-vertigo` | ✅ **delivered 2026-08-14** — `vert-1`+`vert-2`, fact by fact |
@@ -892,9 +914,9 @@ if the receiving chapter actually gets it.**
 | `ent-audio` (L19.1) | The **seven hearing-loss types**, the CHL/SNHL cause lists, treatment | `ent-hearing` | ☐ |
 | `ent-audio` (L19.1) | **The pressure transformer system** — areal ratio 17, lever 1.3, product 22, 26 dB | `ent-hearing` | ☐ |
 | `ent-audio` (L19.2) | **Tinnitus in full** | `ent-hearing` | ☐ |
-| `ent-nasalmass` (L31) | The full **nasal-obstruction aetiology** (mucosal causes, choanal atresia, pyriform aperture stenosis, turbinate hypertrophy, nasal valve dysfunction), **NOSE and SNOT-22**, rhinomanometry, acoustic rhinometry, the decongestant rules | `ent-nasalobs` | ☐ |
+| `ent-nasalmass` (L31) | The full **nasal-obstruction aetiology** (mucosal causes, choanal atresia, pyriform aperture stenosis, turbinate hypertrophy, nasal valve dysfunction), **NOSE and SNOT-22**, rhinomanometry, acoustic rhinometry, the decongestant rules | `ent-nasalobs` | ✅ **delivered 2026-08-14** — `nobs-2`/`4`/`5`/`7`, scales and objective tests in `nobs-3` |
 | `ent-nasalmass` (L25) | **Epistaxis management as a subject** — packing, cautery, the arterial ligations. Only angiofibroma embolisation kept | `ent-epistaxis` | ☐ |
-| `ent-rhin` (L31) | The **nasal-obstruction work-up**, NOSE/SNOT-22, rhinomanometry · **discharge types as a subject** | `ent-nasalobs` | ☐ **2nd chapter to owe this** |
+| `ent-rhin` (L31) | The **nasal-obstruction work-up**, NOSE/SNOT-22, rhinomanometry · **discharge types as a subject** | `ent-nasalobs` | ✅ **delivered 2026-08-14** — work-up half MERGED into `nobs-3` (same slides as the row above, not written twice); its own new half, discharge as a subject, in `nobs-8` |
 | `ent-rhin` (L27.1/L27.2) | **Acute and chronic rhinosinusitis in full** — only the viral-vs-bacterial line and the AERD/Samter clause kept | `ent-sinusitis` | ☐ |
 | `ent-rhin` (L29) | **Nasal polyposis** | `ent-nasalmass` | ✅ already written — `nmass-5` |
 | `ent-rhin` (L25.2) | **Smell disorders** as a subject · **epistaxis** | `ent-epistaxis` | ☐ |
@@ -904,7 +926,7 @@ if the receiving chapter actually gets it.**
 | `ent-dysph` (L7) | **The whole swallowing-assessment deck** except its aetiology table — 1,522 of its 1,616 words | `ent-swallow` | ☐ |
 | `ent-dysph` (L1.2) | **Pharyngeal anatomy** — only Killian's triangle kept | `ent-pharanat` | ☐ **⚠️ 2ND CHAPTER TO OWE IT — `ent-pharsupp` registered it first** |
 | `ent-dysph` (L8) | **The phoniatric protocol** — only the laryngeal click kept | `ent-phon` | ☐ **⚠️ 2ND CHAPTER TO OWE IT — `ent-hoarse` registered it first** |
-| `ent-dysph` (L5) | The **neck-mass differential** — only the cystic swelling kept | `ent-neck` | ☐ |
+| `ent-dysph` (L5) | The **neck-mass differential** — only the cystic swelling kept | `ent-neck` | ✅ **delivered 2026-08-14** — `neck-3` — the same grid, organised on the cystic-vs-solid axis it kept |
 | `ent-dysph` (L2) | The **supraglottic/glottic/subglottic carcinoma table** — verified present in `hoar-8`, which also already carries the Plummer–Vinson-is-premalignant-for-postcricoid-not-laryngeal line | `ent-hoarse` | ✅ already written |
 | `ent-hearing` (L19.2 lines 85–148) | The **otorrhoea slides appended to the cached tinnitus file** | `ent-otorrhea` | ✅ **delivered 2026-08-14** — `otor-1`/`4`/`7` |
 | `ent-hearing` (L19.2 lines 120–148) | The **otalgia slides** — verified already written in the merged chapter before deferring, not assumed | `ent-otalgia` | ✅ already written |
@@ -920,6 +942,8 @@ if the receiving chapter actually gets it.**
 | `ent-otorrhea` (L17,18 lines 87–249 · L19.2 lines 120–148) | **The whole otalgia half** | `ent-otalgia` | ✅ already written — verified before deferring |
 | `ent-otorrhea` (L15) | **Facial palsy from temporal-bone fracture as a subject** — only the 10 % longitudinal / 40 % transverse palsy rates kept, which `L15` does print and are therefore sourced | `ent-facial` | ☐ **⚠️ facial is already merged; reconciliation work** |
 | `ent-otorrhea` (L19.1) | **Haemotympanum, and the CHL/SNHL lists as hearing loss** | `ent-hearing` | ✅ already written |
+| `ent-nasalobs` (L32 lines 6–139) | **Headache in full** — 547 words, the whole facial-pain half of the deck | `ent-facialpain` | ☐ |
+| `ent-nasalobs` (L23 lines 1–86) | **Nasal anatomy** — 297 words; only the choanal-atresia and CNPAS half (87–177) was claimed here | `ent-noseanat` | ☐ |
 
 > **⚠️⚠️ `ent-otorrhea` IS NOW OWED THE SAME OTORRHOEA DECK BY THREE CHAPTERS INDEPENDENTLY** —
 > `ent-otalgia`, `ent-csom` and `ent-hearing`, none of which knew of the others. That is not
