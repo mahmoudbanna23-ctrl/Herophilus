@@ -2798,5 +2798,184 @@ var T_ENT = {
         ]
       }
     ]
+  },
+  "ent-rhin": {
+    "intro": "One mucosa, many inflammations, and the examiner asks which. Pale and boggy is allergic, red and wet is a cold, mulberry is hypertrophic, roomy and crusted is atrophic. Then the named organisms — Klebsiella twice over — and the granulomas.",
+    "sections": [
+      {
+        "id": "rhin-1",
+        "w": "must",
+        "h": "The rhinosinusitis tree, and the nose’s six defences",
+        "body": "**Nose and sinus lining are continuous → inflammation involves both → RHINOSINUSITIS.**\n\n**Defence mechanisms (6):** **mucociliary system** · epithelial integrity · **reflexes — cough, sneeze** · lysozymes, opsonins and complement · **immunoglobulins — secretory IgA and IgE** · macrophages and lymphocytes.\n\n|Branch|Members|\n|---|---|\n|**Allergic**|seasonal · perennial · occupational · food- and drug-induced|\n|**Infective viral — ACUTE**|**common cold · influenza**|\n|**Infective bacterial — CHRONIC NON-SPECIFIC**|**chronic simple · hypertrophic · atrophic** rhinitis|\n|**Infective bacterial — CHRONIC SPECIFIC**|**syphilis · T.B. · scleroma**|\n|**Granulomatous**|**sarcoidosis · Wegener’s · Stewart’s (midline lethal) granuloma**|\n|**Infective fungal**|invasive (3) · non-invasive (2)|\n|**Non-allergic, non-infective**|**NARES · vasomotor rhinitis · rhinitis medicamentosa**|\n\n- **\"Specific\" = a NAMED ORGANISM with characteristic histology.** Granulomatous disease is a separate branch.\n\nSrc: L29; L30",
+        "qs": []
+      },
+      {
+        "id": "rhin-2",
+        "w": "must",
+        "h": "Allergic rhinitis — definition, allergens, ARIA classification",
+        "body": "**IgE-mediated hypersensitivity of the nasal mucous membrane**, in **atopic individuals exposed to common aero-allergens**: **sneezing · itching · watery rhinorrhoea · sensation of nasal obstruction**. **May also involve the sinus lining. Genetically inherited — autosomal recessive OR autosomal dominant.**\n\n**Allergens:** seasonal · perennial · occupational · food- and drug-induced · **pollution**. **Pollen → seasonal/intermittent; house dust mite, animal dander, mould → perennial/persistent.**\n\n|Axis|Intermittent|Persistent|\n|---|---|---|\n|Frequency|**< 4 days/week OR < 4 consecutive weeks per year**|**> 4 days/week AND > 4 consecutive weeks per year**|\n\n**Severity graded separately:** **mild** = normal sleep, no impairment of daily activities, no troublesome symptoms untreated. **Moderate-to-severe** = abnormal sleep, impaired daily activity, abnormal work.\n\n- **Bilateral, allergen-triggered, itchy eyes and sneezing. Alternating obstruction is mucosal, never structural. A UNILATERAL watery discharge is CSF rhinorrhoea until proved otherwise.**\n\nSrc: L29; L31 (bilateral watery discharge)",
+        "qs": [
+          "entep-nose-5",
+          "entep-nose-10",
+          "entqb-nose3-85",
+          "entqb-nose3-87",
+          "entqb-nose3-88",
+          "entqb-nose3-89",
+          "entqb-nose3-129",
+          "entep-nose-case-16"
+        ]
+      },
+      {
+        "id": "rhin-3",
+        "w": "must",
+        "h": "The allergic reaction — early and late phase",
+        "body": "**Cascade: sensitization → IgE production → arming of mast cells → release of mediators → clinical effects.** **First exposure only sensitises — no symptoms.**\n\n|Phase|Timing|Cells and mediators|Symptoms|\n|---|---|---|---|\n|**Early / immediate**|**minutes**|allergen cross-links IgE on armed **MAST CELLS** → **histamine and leukotrienes**|**sneezing · itching · watery rhinorrhoea** (+ some congestion)|\n|**Late / delayed**|**4–8 hours**|**T-cell activation and EOSINOPHIL recruitment**|**nasal congestion · hyposmia/anosmia · nasal hyperreactivity** (also to cold air and smoke)|\n\n- **Sneezing and itching early only. Smell loss and hyperreactivity late only. Congestion in both.** The two-phase division *(not in course material — L29 prints the cascade, never the split)*.\n- Late-phase eosinophils are why **steroids beat antihistamines for congestion**.\n\nSrc: L29",
+        "qs": [
+          "entqb-nose3-90",
+          "entqb-nose3-91",
+          "entqb-nose3-92",
+          "entqb-nose3-93"
+        ]
+      },
+      {
+        "id": "rhin-4",
+        "w": "must",
+        "h": "Atopy, co-morbidities and Samter’s triad",
+        "body": "**Atopy triad / triangle** *(name not in course material)*: **bronchial asthma + allergic rhinitis + ECZEMA.**\n\n**Co-morbidities: nasal polyposis · sinusitis · otitis media.**\n\n**Allergic rhinitis and bronchial asthma frequently coexist** — aspiration of secretions · dryness of the LRT · increased vagal stimulation · bacterial toxins · inflammatory cytokines. **So treating the rhinitis may also improve the asthma.**\n\n**Samter’s triad:** *\"Allergic rhinitis with diffuse sinonasal polyposis + aspirin hypersensitivity and bronchial asthma.\"* **Not IgE-mediated:** COX-1 blockade **shunts arachidonic acid to cysteinyl leukotrienes** *(shunt not in course material)*. **All non-selective NSAIDs contraindicated**; polyps recur after surgery.\n\nSrc: L29; L27.2 (AERD)",
+        "qs": [
+          "entqb-nose3-94",
+          "entqb-nose3-132"
+        ]
+      },
+      {
+        "id": "rhin-5",
+        "w": "must",
+        "h": "Signs, and telling the look-alikes apart",
+        "body": "**External signs: allergic salute · mouth breathing · allergic shiners · pale bluish oedematous nasal turbinates.**\n\n**Intranasal signs: polyps · septal deflection · prominent nasal turbinates.**\n\n|Condition|Mucosa|Discharge|Discriminator|\n|---|---|---|---|\n|**Allergic rhinitis**|**PALE, BLUISH, oedematous (boggy)**|watery, **bilateral**|itching, sneezing bouts, **no fever**, recurrent/seasonal|\n|**Common cold**|**RED, WET, congested**|watery → mucopurulent|**fever, malaise, sore throat**; resolves **5–10 days**|\n|**Chronic simple rhinitis**|**RED** = active infection, **PURPLE** = venous stasis, elsewhere **pale and oedematous**|postnasal, **mucous strands**|transient anosmia, headache|\n|**Chronic hypertrophic**|**thick, nodular, MULBERRY-like** at the posterior end of the inferior turbinate|—|permanent hypertrophy|\n|**Atrophic rhinitis**|**atrophic, ulcerated, bleeding**|**green, yellow or black crusts**|**ROOMY** nose, **fetor**, anosmia|\n\n- **Bluish + swollen = allergic; congested + swollen = infective; atrophic = atrophic rhinitis.** \"Bluish and atrophic\" is not a real appearance.\n\nSrc: L29; L26 (the allergic-rhinitis endoscopic run)",
+        "qs": [
+          "entqb-nose3-95",
+          "entep-mfe4-22",
+          "entqb-nose5-185"
+        ]
+      },
+      {
+        "id": "rhin-6",
+        "w": "must",
+        "h": "Investigations",
+        "body": "**Skin allergy test** — allergen extract into the skin by **scratching or pricking with a sharp device, or intradermal injection**.\n\n**Blood: total IgE · specific IgE (RAST).** ⚠️ **~50 % of allergic rhinitis patients have a NORMAL total IgE; 20 % of unaffected people have an ELEVATED one.** **Specific IgE is the most diagnostic test — it names the allergen**, which avoidance and immunotherapy both need.\n\n**Eosinophils — blood sample and nasal smear: only SUPPORT the diagnosis, neither sensitive nor specific.** Also raised in **non-allergic eosinophilic rhinitis (NARES)** and **parasitic infection**.\n\nSrc: L29",
+        "qs": [
+          "entqb-nose3-96"
+        ]
+      },
+      {
+        "id": "rhin-7",
+        "w": "must",
+        "h": "Management of allergic rhinitis",
+        "body": "**Three arms: allergen avoidance · pharmacotherapy · immunotherapy.** **Medical, never surgical first** — surgery treats a complication or fixed obstruction, not the allergy. **Immunotherapy alone modifies the sensitisation** *(not in course material)*.\n\n|Drug|Sneezing|Itching|Rhinorrhoea|Congestion|\n|---|---|---|---|---|\n|**Antihistamines**|5|4|3|—|\n|**Anticholinergic — ipratropium bromide**|—|—|**5**|—|\n|**Corticosteroids**|**5**|**5**|**3**|**3**|\n|**Decongestants**|—|—|—|**5**|\n|**Mast cell stabilisers**|5|3|1|—|\n|**Antileukotrienes**|3|2|—|4|\n\n*(L29 grades each cell 1–5 stars; a dash is no effect.)*\n\n- **Intranasal corticosteroid — the single most effective drug, the ONLY class covering all four symptoms, and the only one acting on BOTH phases.** **Antihistamines: histamine, early phase only, fast onset.** **Ipratropium: rhinorrhoea alone. Decongestants: congestion alone.**\n- **Mainstay initial treatment: topical nasal steroid + antihistamine.** Given topically to avoid systemic steroid effects — local steroids are **not** avoided for side effects.\n- **Adjunctive management (7):** antibiotics · mucolytic · anti-leukotrienes · **irrigations — saline douches** · **GERD control** · **FESS** · **myringotomy ± grommet tube insertion**.\n\n⚠️ One key names **ipratropium bromide** as the rhinitis drug that may affect the kidneys; its documented caution is **urinary retention** (and glaucoma), and cetirizine is the renally cleared one. Answer as printed.\n\nSrc: L29",
+        "qs": [
+          "entep-nose-60",
+          "entep-mfe4-18",
+          "entqb-nose3-111",
+          "entqb-nose3-112",
+          "entqb-nose3-113",
+          "entqb-nose3-114",
+          "entqb-nose3-128",
+          "entqb-nose3-130"
+        ]
+      },
+      {
+        "id": "rhin-8",
+        "w": "high",
+        "h": "Acute infective viral — common cold and influenza",
+        "body": "**Common cold — the commonest viral infection in humans. Rhinovirus and coronavirus** (also adenovirus, RSV *(not in course material)*). **Viral invasion → mediators from infected cells: IL-8, kinins, prostaglandins.**\n\n**Clinical picture:** fever, headache, malaise · **dryness of the nose** · sore throat · sneezing · nasal obstruction · **watery, then mucopurulent rhinorrhoea** · **resolution within 5–10 days**.\n\n**Complications (10):** sinusitis · pharyngitis · **adenoiditis** · tonsillitis · **otitis media** · laryngotracheitis · bronchitis · pneumonia · **nephritis** · **rheumatic fever**.\n\n**Treatment:** bed rest · vitamins · fluids · analgesic · antipyretic · antihistaminic · anticholinergic · decongestant · antibiotics.\n\n**Influenza** — one of the commonest infectious diseases; **influenza virus types A, B and C**; occurs **in epidemics** (Spanish flu 1918, 20 million dead). **A distinct disease, NOT a cause of the common cold.**\n\n- **Risk-based list — both for cold/flu complications and for annual influenza vaccination** *(not in course material)*: **6–23 months · ≥ 65 · pregnancy · nursing-home residents · health-care workers · anyone 6 months–64 years with cardiopulmonary, renal, metabolic or immunodeficient disease.** **NOT healthy adults 18–40; NOT healthy school-age children.**\n\nSrc: L29; L27.1 (viral vs bacterial)",
+        "qs": [
+          "entqb-nose3-97",
+          "entqb-nose3-99",
+          "entqb-nose3-100"
+        ]
+      },
+      {
+        "id": "rhin-9",
+        "w": "must",
+        "h": "Non-allergic, non-infective — vasomotor, NARES, medicamentosa",
+        "body": "|Entity|Mechanism|Discriminator|Treatment|\n|---|---|---|---|\n|**Vasomotor rhinitis**|**changes in vascular tone**, with **activation of the parasympathetic nerves** supplying the nasal mucosa|**commonest non-allergic rhinitis, especially in older patients**; mimics allergic rhinitis; **allergy tests negative, no nasal eosinophilia**|**intranasal steroids** · **anticholinergic spray (ipratropium bromide) decreases the rhinorrhoea** · oral/local decongestants|\n|**NARES**|**allergic-like rhinitis with EOSINOPHILIA in nasal secretions**|**allergy testing typically negative** — eosinophils without allergy|**as vasomotor rhinitis**|\n|**Rhinitis medicamentosa**|**prolonged excessive use of nasal DECONGESTANTS → rebound congestion (rebound phenomenon)**|**topical/LOCAL decongestant** — not systemic, not steroid, not antihistamine|**stop the spray**; **saline washes and topical steroids** reverse the changes|\n\n- **Vasomotor triggers:** **humidity and temperature change** · environmental pollution · **active and passive smoking** · occupational irritants · **emotional factors** · **endocrine — menstruation, pregnancy** · **drugs: ACE inhibitors, β-blockers, oral contraceptives.**\n- **Autonomic split: sympathetic = vasoconstriction and an open nose**, so lost tone engorges the turbinate sinusoids → **nasal blockage** (hence every decongestant is an alpha-agonist); **parasympathetic overactivity = glandular hypersecretion → watery \"dropper type\" rhinitis** *(term not in course material)*.\n- **Topical decongestant ≤ 5 days.** Medicamentosa is **reversible thickening, never atrophy.**\n\nSrc: L30; L31 (the 5-day rule)",
+        "qs": [
+          "entep-nose-7",
+          "entep-nose-63",
+          "entep-mfe4-30",
+          "entqb-nose3-125",
+          "entqb-nose3-126"
+        ]
+      },
+      {
+        "id": "rhin-10",
+        "w": "must",
+        "h": "Chronic non-specific — simple, hypertrophic, and the turbinate",
+        "body": "**Simple chronic rhinitis.** **Nasal obstruction (chronic hyperaemia, nasopulmonary reflex)** · **postnasal discharge** · headache · **transient anosmia**. **Management: correct the predisposing factors · nasal wash · topical ± systemic steroids · antibiotics ±.**\n\n**Chronic hypertrophic rhinitis** — **the advanced stage of non-specific chronic rhinitis, with PERMANENT whole-mucosa hypertrophy**. **Thick, nodular mucosa especially at the posterior end of the inferior turbinate — \"mulberry like\"** (cobblestone *(term not in course material)*). **Polyps may form. ± rhinitis medicamentosa.**\n\n- **Mulberry / cobblestone change ends chronic rhinitis of ANY cause** — allergic, infective, vasomotor. **Atrophic rhinitis is the exception.**\n\n**Turbinate hypertrophy — the ladder. Topical nasal steroid is both the initial AND the long-term treatment**, at any age. **Topical decongestants give short-term relief only** (≤ 5 days). **Systemic steroids and systemic antihistamines are not the answer. Surgery last, after failed medical treatment.**\n\n- **Gold standard operation: PARTIAL turbinectomy** *(not total, not laser)*. *\"You must leave head of inferior turbinate and part of it to protect from secondary atrophic rhinitis (empty nose syndrome).\"* **Over-resection → secondary atrophic rhinitis** *(the syndrome name is not in course material)*.\n\nSrc: L29; GG p.85 (partial turbinectomy box)",
+        "qs": [
+          "entqb-nose3-101",
+          "entqb-nose3-110",
+          "entep-mfe4-17",
+          "entqb-nose9-260",
+          "entqb-nose9-262",
+          "entqb-nose9-263"
+        ]
+      },
+      {
+        "id": "rhin-11",
+        "w": "must",
+        "h": "Atrophic rhinitis",
+        "body": "**Definition:** progressive atrophy of the nasal mucosa **AND the underlying BONE of the turbinates**, with **scanty viscid secretions that rapidly dry into crusts emitting a characteristic foul odour (OZAENA)**, and **abnormal patency of the nasal passages**.\n\n**Primary — exact cause unknown:** **chronic bacterial infection — *Klebsiella* (ozaenae), pertussis, diphtheria** · **nutritional — vitamin A, iron deficiency** · **endocrine — oestrogen deficiency** · **autoimmune**.\n\n**Secondary (4):** **excessive surgical destruction of nasal mucosa** · **irritants, cocaine or toxic agents** · **healed granulomatous disease — T.B., scleroma** · **radiotherapy**.\n\n- **NOT causes: allergic rhinitis, rhinitis medicamentosa** — both thicken mucosa. **Cocaine IS** — true ischaemic necrosis.\n\n|Symptoms|Signs|\n|---|---|\n|nasal obstruction · headache · **epistaxis** · **bad odour from the nose** · **choking**|**fetor oris** · **green, yellow or black crusts** · **ulcerated bleeding mucosa** · **atrophy of the inferior and middle turbinates**|\n\n- **Paradox: a ROOMY nose that feels blocked** — *\"narrow nasal chambers\"* is the wrong option.\n- **The patient is ANOSMIC; others smell the ozaena.** Anosmia, **not cacosmia** (= smelling it yourself).\n\n**CT (5):** mucosal thickening of the paranasal sinuses · **loss of definition of the ostiomeatal complex from resorption of the ethmoid bulla and uncinate process** · **hypoplasia of the maxillary sinuses** · **enlarged nasal cavities with erosion and bowing of the lateral nasal wall** · bony resorption and mucosal atrophy of the inferior and middle turbinates.\n\n**Treatment: irrigations · humidification · experimental surgery narrowing the cavity with submucosal implants.** Mechanical, not antibiotic.\n\n- **Type I vs Type II** *(not in course material)*: **Type I = endarteritis obliterans** — poor blood supply, poor surgical candidate; **Type II = dilated capillaries**. Endarteritis obliterans is also the lesion of **tertiary syphilis and radiation injury**.\n\nSrc: L29; L25.2 (anosmia)",
+        "qs": [
+          "entep-nose-16",
+          "entqb-nose3-102",
+          "entqb-nose3-103",
+          "entqb-nose3-104",
+          "entqb-nose3-105",
+          "entqb-nose3-108",
+          "entqb-nose3-109",
+          "entqb-nose3-115",
+          "entqb-nose3-145",
+          "entep-nose-case-8"
+        ]
+      },
+      {
+        "id": "rhin-12",
+        "w": "must",
+        "h": "Chronic specific infections — scleroma, syphilis, T.B., leprosy",
+        "body": "**SCLEROMA (rhinoscleroma)** — chronic specific infection of the respiratory tract, **especially the nose**. ***Klebsiella rhinoscleromatis*, GRAM NEGATIVE** — bacterial, never fungal. **Mode of infection unknown. Endemic in Egypt. Teenagers, especially females, of the poor classes. Granulomatous tissue infiltrates the SUBMUCOSA with plasma cells, lymphocytes and fibroblasts**, settling at **the transition between two types of epithelium**.\n\n**Four stages: catarrhal** → **hypertrophic**, overgrowth of dense fibrous tissue → **atrophic**, reabsorption and breakdown of tissue → **cicatricial**, scar of new connective tissue over the healing sore.\n\n- **The ATROPHIC stage is a roomy nose with considerable crusts** — turbinates shrunken, not swollen.\n\n**Pathology (2 cells): Mikulicz cells — large FOAM cells containing the causative bacilli within their vacuoles; PATHOGNOMONIC.** **Russell bodies — degenerated plasma cells with an eosinophil-staining cytoplasm.** **Mott cell = the intermediate between plasma cell and Russell body** *(not in course material)*.\n\n**CT PNS → expansile granuloma.** Late external deformity is the broadened, fibrotic **\"Hebra nose\"** *(not in course material)* — the opposite of the syphilitic saddle.\n\n**Diagnosis: BIOPSY, culture and sensitivity. Treatment: 1 — a LONG course of antibiotics (aminoglycosides, tetracycline) ± systemic steroids. 2 — surgical excision of the nasal granuloma.** **Antibiotics FIRST** — the bacilli live inside Mikulicz cells.\n\n|Infection|Tissue destroyed|Nasal result|Histology|\n|---|---|---|---|\n|**Syphilis**|**BONE** — vomer, bony septum|**saddle / shrunken bridge deformity**|endarteritis obliterans, gummata|\n|**Tuberculosis**|**CARTILAGE** — anterior septum|**anterior cartilaginous perforation**|**CASEATING** granuloma, Langhans giant cells|\n|**Scleroma**|**BOTH cartilage and bone**|expansile granuloma, cicatricial stenosis, Hebra nose|**Mikulicz cells, Russell bodies**|\n|**Leprosy**|cartilage, then bone|septal perforation, saddle nose|**lepra (Virchow) cells packed with acid-fast bacilli**|\n\n- **The bone-vs-cartilage rule, the histology column and leprosy are all *(not in course material)*** — L30 details scleroma alone.\n\nSrc: L30",
+        "qs": [
+          "entep-nose-64",
+          "entep-nose-98",
+          "entep-nose-115",
+          "entqb-nose3-116",
+          "entqb-nose3-117",
+          "entqb-nose3-118",
+          "entqb-nose3-119",
+          "entqb-nose3-120",
+          "entqb-nose3-121",
+          "entqb-nose3-122",
+          "entqb-nose3-144"
+        ]
+      },
+      {
+        "id": "rhin-13",
+        "w": "must",
+        "h": "Granulomatous rhinosinusitis — sarcoidosis, Wegener’s, Stewart’s",
+        "body": "|Disease|Nature|Nose|Diagnosis|Treatment|\n|---|---|---|---|---|\n|**Sarcoidosis**|**idiopathic systemic granulomatous disease**, frequent head-and-neck manifestations; **NON-caseating**|mucosa **swollen, granular, dry, erythematous, STRAWBERRY-like**; **crusting and stenosis**; ± neck and hilar adenopathy, eye and bone problems|**serum ACE elevated**; **biopsy from the nasal septum or turbinates is often diagnostic**|**steroids · immunosuppressives — azathioprine, methotrexate**; topical steroid sprays do control symptoms|\n|**Wegener’s granuloma**|**autoimmune collagen disorder, MULTISYSTEM**; **necrotizing VASCULITIS**; **respiratory tract, kidneys and skin** most often involved|**ulceration of the septum with crusting, and SADDLE NOSE** — the common nasal presentations; perforation|**raised serum c-ANCA · ESR · BIOPSY**|**steroids · immunosuppressives — azathioprine, methotrexate.** Medical, not surgical|\n|**Midline lethal granuloma (Stewart’s)**|**rare, locally destructive**|progressive midfacial destruction|—|**radiotherapy and chemotherapy may halt the process; most cases progress rapidly to death**|\n\n- **Caseating = TB. Non-caseating = sarcoidosis.** Sarcoid is **slow**, crusting and stenosis — not rapid onset with polyps.\n- **Saddle nose:** **Wegener’s** (cartilage collapse after septal ulceration) · **syphilis** (bone) · relapsing polychondritis · cocaine · leprosy · **neglected septal haematoma** · trauma. **Not rheumatoid arthritis, not atrophic rhinitis.** ⚠️ One printing keys **Wegener’s** alone over a list also offering syphilis, which this bank keys elsewhere for the same deformity; another offers Wegener’s and the neglected haematoma and keys **\"Both\"**. Read the option list.\n\nSrc: L30",
+        "qs": [
+          "entqb-nose3-133",
+          "entqb-nose3-134",
+          "entqb-nose3-135"
+        ]
+      },
+      {
+        "id": "rhin-14",
+        "w": "know",
+        "h": "Fungal rhinosinusitis",
+        "body": "**Invasive (3) and non-invasive (2).**\n\n|Form|Host|Key facts|\n|---|---|---|\n|**Acute invasive**|**poorly controlled diabetics**; **immunocompromised with severe neutropenia** — chemotherapy, BMT, transplant, AIDS, where **Aspergillus accounts for 80 %**|**most lethal form — mortality 50–80 %. Early signs: necrosis of nasal tissue and BLACKISH mucosa.** Palate, orbit, anterior cranial fossa; **meningitis, intracranial abscess, cavernous sinus thrombosis. Treat: correct the immune suppression · aggressive surgical debridement · systemic antifungal, mainly amphotericin B**|\n|**Chronic invasive**|usually **immunocompetent**|history of chronic rhinosinusitis|\n|**Chronic granulomatous invasive**|**immunocompetent**|primary paranasal granuloma, indolent; ***Aspergillus flavus***; **NON-caseating granulomas**|\n|**Allergic fungal sinusitis**|**immunocompetent**|**MOST COMMON form of fungal sinusitis**; hypersensitivity to inhaled fungi → chronic non-infectious inflammation — **type I (IgE) AND type III**; **eosinophil-rich \"allergic mucin\"** *(not in course material)*|\n|**Fungus ball (mycetoma)**|**immunocompetent**, older, **female > male**|asymptomatic or minimal, chronic pressure or discharge; **CACOSMIA**; **surgically treated**|\n\n- **Immunocompetence is the axis: only the acute invasive form needs a compromised host. Blackish mucosa in a diabetic is an emergency.**\n\nSrc: L30",
+        "qs": []
+      }
+    ]
   }
 };

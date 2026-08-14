@@ -685,6 +685,16 @@ at merge; over budget by >10 % goes back for compression, not into the app.**
 > why. Send it back only when the pages agree with the words. This is the same finding as
 > "do not chase the printed page count with word cuts", read from the other end.
 
+> **⚠️⚠️ THE DRAFT HEADER IS A CLAIM, NOT A MEASUREMENT — ALWAYS RE-COUNT THE FILE.** `ent-rhin`'s
+> header read *"MEASURED OUTCOME: 1,836 body words … three compression passes took it there from
+> 2,178"*, itemising which duplications went. **The file on disk was 2,682.** The agent had planned
+> the pass, written the header describing it, and lost its connection before applying it — so the
+> header documented work the file did not contain, in the confident past tense, and it was very
+> nearly accepted on that basis. **The links, the section count and the structure were all sound;
+> only the number was fiction.** Run the validator on every draft before ruling on it, and where the
+> header and the validator disagree, **the file wins and the header gets rewritten.** The same
+> applies to a resumed agent: its transcript remembers intentions it may never have executed.
+
 **⚠️ SUM THE CHAPTER'S REAL LECTURE SET, DO NOT COPY THE EXAMPLE ABOVE.** Stridor's budget was set
 by hand at 2,400 from L6 alone and the agent was right to challenge it: the chapter also draws on
 L12 and L11, so the formula gives the 3,000 cap. Run `wc -w` on the files you actually use.
@@ -806,17 +816,17 @@ if the receiving chapter actually gets it.**
 | `ent-hoarse` (L1.1) | Laryngeal cartilages, membranes and ligaments, extrinsic muscles, blood supply, the nerve-supply plates, piriform sinus, pre-epiglottic space **as anatomy** | `ent-pharanat` | ☐ |
 | `ent-hoarse` (L8) | **The phoniatric evaluation protocol in full** — GRBAS parameter by parameter, VHI / VHI-10 / V-RQoL, the elementary/clinical/instrumental tiers, external laryngeal examination, mirror vs rigid vs flexible vs direct, stroboscopy, aerodynamic measures, the content of voice therapy, dysarthria/dyslalia/aphasia | `ent-phon` | ☐ |
 | `ent-hoarse` (L6) | Stridor typing, tracheostomy, the adult and paediatric cause lists | `ent-stridor` | ✅ already written |
-| `ent-hoarse` (L30) | **Rhinoscleroma of the nose** — its nasal stages and nasal management | `ent-rhin` | ☐ |
+| `ent-hoarse` (L30) | **Rhinoscleroma of the nose** — its nasal stages and nasal management | `ent-rhin` | ✅ **delivered 2026-08-14** — `rhin-12`; `hoar-6` keeps the subglottis and the stridor-with-normal-voice line, checked so neither re-argues the other |
 | `ent-hoarse` (L17,18) | Referred otalgia in full, the four nerves and their territories | `ent-otalgia` | ✅ already written |
-| `ent-nasalmass` (L26) | The **"Reaching a diagnosis" allergic-rhinitis run** and the allergic-rhinitis clinical picture | `ent-rhin` | ☐ |
+| `ent-nasalmass` (L26) | The **"Reaching a diagnosis" allergic-rhinitis run** and the allergic-rhinitis clinical picture | `ent-rhin` | ✅ **delivered 2026-08-14** — `rhin-2`/`rhin-4`/`rhin-5`. ⚠️ L26's run is **three captioned photographs with no prose**; the written source is L29's own signs slides |
 | `ent-nasalmass` (L26) | The **adenoid slides** — obstructive vs non-obstructive adenoid, adenoid facies | `ent-tonsils` | ☐ **⚠️ tonsils is already merged; reconciliation work** |
-| `ent-nasalmass` (L30) | **Rhinoscleroma in full** — *Klebsiella rhinoscleromatis*, Egyptian endemicity, the three stages, **Mikulicz cells and Russell bodies**, the expansile granuloma on CT, management | `ent-rhin` | ☐ |
+| `ent-nasalmass` (L30) | **Rhinoscleroma in full** — *Klebsiella rhinoscleromatis*, Egyptian endemicity, the stages, **Mikulicz cells and Russell bodies**, the expansile granuloma on CT, management | `ent-rhin` | ✅ **delivered 2026-08-14** — `rhin-12`. ⚠️ **THIS ROW WAS WRONG: L30 prints FOUR stages, not three** — catarrhal, hypertrophic, atrophic **and cicatricial**. The receiving agent read the deck and corrected it. **A register row is a promise, not a specification — the deck outranks it.** |
 | `ent-nasalmass` (L26) | **Septal haematoma beyond the definition** — drainage, septal abscess, cartilage necrosis, saddle nose | `ent-septum` | ✅ **delivered 2026-08-14** — `sept-8` in full, incl. the haematoma-vs-abscess table and the cavernous-sinus route |
 | `ent-septum` (L25.1) | **Little's and Woodruff's plexus**, the full epistaxis aetiology, cautery, packing, the arterial ligations | `ent-epistaxis` | ☐ |
 | `ent-septum` (L25.2) | **Post-traumatic anosmia** as a subject — only the cribriform-shearing clause kept | `ent-epistaxis` | ☐ |
 | `ent-septum` (L24/L31) | The general **nasal-obstruction work-up** — mucosal aetiology lists, turbinate hypertrophy in its own right, NOSE/SNOT-22, rhinomanometry, the decongestant rules · **CSF rhinorrhoea** after mid-facial trauma | `ent-nasalobs` | ☐ |
 | `ent-septum` (L24) | **Nasal-valve anatomy in full** and valve reconstruction. Only the Cottle test and the valve's role in obstruction kept | `ent-nasalobs` | ☐ |
-| `ent-septum` (L24) | **Wegener's as an entity** — ANCA, the triad, the systemic disease. Only its saddle-nose key kept | `ent-rhin` | ☐ **agent briefed** |
+| `ent-septum` (L24) | **Wegener's as an entity** — ANCA, the triad, the systemic disease. Only its saddle-nose key kept | `ent-rhin` | ✅ **delivered 2026-08-14** — `rhin-13`, a full row: multisystem autoimmune collagen disorder, necrotising vasculitis, respiratory tract + kidneys + skin, septal ulceration, saddle nose, c-ANCA + ESR + biopsy, steroids + azathioprine/methotrexate |
 | `ent-septum` (L24) | The septum's **arterial supply as vascular anatomy** — counted in this chapter's budget as L24's own ILO, but owed as anatomy | `ent-noseanat` | ☐ |
 | `ent-audio` (L13,14 lines 422–556) | **The entire dizziness half** — epidemiology, ">90 % benign", "commonest cause is lack of sleep", "80 % from history", the Type I–IV classification, the descriptor list | `ent-vertigo` | ☐ |
 | `ent-audio` (L13,14 lines 63–83) | **Static vs dynamic balance** | `ent-vertigo` | ☐ |
@@ -826,6 +836,13 @@ if the receiving chapter actually gets it.**
 | `ent-audio` (L19.2) | **Tinnitus in full** | `ent-hearing` | ☐ |
 | `ent-nasalmass` (L31) | The full **nasal-obstruction aetiology** (mucosal causes, choanal atresia, pyriform aperture stenosis, turbinate hypertrophy, nasal valve dysfunction), **NOSE and SNOT-22**, rhinomanometry, acoustic rhinometry, the decongestant rules | `ent-nasalobs` | ☐ |
 | `ent-nasalmass` (L25) | **Epistaxis management as a subject** — packing, cautery, the arterial ligations. Only angiofibroma embolisation kept | `ent-epistaxis` | ☐ |
+| `ent-rhin` (L31) | The **nasal-obstruction work-up**, NOSE/SNOT-22, rhinomanometry · **discharge types as a subject** | `ent-nasalobs` | ☐ **2nd chapter to owe this** |
+| `ent-rhin` (L27.1/L27.2) | **Acute and chronic rhinosinusitis in full** — only the viral-vs-bacterial line and the AERD/Samter clause kept | `ent-sinusitis` | ☐ |
+| `ent-rhin` (L29) | **Nasal polyposis** | `ent-nasalmass` | ✅ already written — `nmass-5` |
+| `ent-rhin` (L25.2) | **Smell disorders** as a subject · **epistaxis** | `ent-epistaxis` | ☐ |
+| `ent-rhin` (L30) | **Septal perforation and saddle nose as lesions** — verified present in `sept-7`/`sept-8` before deferring | `ent-septum` | ✅ already written |
+| `ent-rhin` (L30) | **Laryngeal scleroma** — verified present in `hoar-6` before deferring | `ent-hoarse` | ✅ already written |
+| `ent-rhin` (L29) | **Adenoids** | `ent-tonsils` | ☐ **⚠️ tonsils is already merged; reconciliation work. 2nd chapter to owe it** |
 
 > **⚠️ TWO CHAPTERS CAN DEFER THE SAME FACT TO EACH OTHER — the register is what catches it.**
 > `ent-paedlar` sent the full RRP account to `ent-hoarse`; `ent-hoarse`, written afterwards, sent it
