@@ -56,6 +56,16 @@ schema, the sweep and the validator. This file holds only what is specific to Op
 > REGISTER: a fact you move to another chapter must be named there, or it is a deletion wearing a
 > promise's clothes.**
 >
+> **⚠️⚠️ LAYOUT — §14.3a, ADDED 2026-08-14 AFTER THE USER SAW THE PRINTED PDF:** *"it doesn’t
+> look apetising at all. Some parts just look like plain paragraphs."* **The `·`-chained
+> mega-paragraph is BANNED** — cap ~45 words a paragraph, ~15 a bullet. **Use `### ` sub-headings**
+> once a section covers more than two entities. **Open every entity block and every `**Term**`
+> bullet with an EARLY COLON or em-dash** — `**Quinsy:** …` — because the renderer colours the text
+> before the first `:`/`—` inside 44 characters and a lead bold without one gets no anchor at all.
+> One-line asides and cross-refs go in `*single italics*` on their own line; `Src:` stays the last
+> line. **Read §14.3a before writing — it is a layout rule, it removes no facts, and the budget is
+> unchanged.**
+>
 > **⚠️ THE WORKED EXAMPLE THE USER APPROVED is
 > `content\ent\theory-drafts\ent-stridor.v2.draft.js` — 14 sections, 3,759 words, 13 printed pages, 113 questions linked, rewritten down from 47 pages.
 > Read it and match its density before writing anything. Your module's chapters are far thinner on

@@ -1076,6 +1076,22 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
 .th-body ul{margin:0 0 14px;padding-left:22px}
 .th-body li{margin-bottom:7px}
 .th-body li::marker{color:var(--c,var(--neuro))}
+/* Three line kinds mdBlock() now marks up. On screen they are STRUCTURAL only —
+   the module colour they take in print is deliberately absent here, because
+   those hues are chosen dark enough for white text to sit on them and are
+   therefore poor as text on the dark ground (CLAUDE.md §6). */
+.th-body .th-sub{
+  margin:22px 0 10px;padding-bottom:5px;border-bottom:1px solid var(--line);
+  font-family:var(--font-display),Georgia,serif;font-size:13px;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--tx)}
+.th-body .th-sub:first-child{margin-top:0}
+.th-body .src{
+  margin:14px 0 0;padding-top:7px;border-top:1px solid var(--line);
+  font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-4)}
+.th-body .xref{color:var(--ink-4);font-size:13.6px}
+.th-body .xref em{color:var(--ink-4)}
+.th-body p.lead{margin-top:20px}
+.th-body p.lead:first-child{margin-top:0}
 .th-body blockquote{
   margin:0 0 15px;padding:13px 18px;background:var(--gold-bg);border-left:4px solid var(--gold);
   border-radius:0 10px 10px 0;font-weight:700;color:var(--tx);font-size:14.5px;
@@ -1201,7 +1217,11 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
   .th-table{border:.6pt solid #d8dde5!important;border-radius:2pt!important;overflow:hidden}
   .th-table th{background:var(--mod,#14181f)!important;color:#fff!important}
   .th-table th strong,.th-table th em{color:#fff!important}
-  .th-table tbody tr:nth-child(odd) td{background:#f6f7fa!important}
+  /* The stripe was a neutral grey, which read as a printing artefact next to a
+     coloured head. Tinting it from --mod at 7% ties the body of the table to its
+     own header. The fallback keeps the old grey if a view sets no --mod. */
+  .th-table tbody tr:nth-child(odd) td{
+    background:color-mix(in srgb,var(--mod,#14181f) 7%,#fff)!important}
   .th-table td{border-bottom:.5pt solid #e4e8ee!important}
   /* A callout is the other thing the eye should catch. Tinted ground, a solid
      bar in the warn colour, and room to breathe. */
@@ -1250,6 +1270,46 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
   .th-body p{margin:0 0 6pt!important}
   .th-body ul{margin:4pt 0 6pt!important}
   .th-body li{margin-bottom:2pt!important}
+  /* ── THE PAGE IS SCANNED, NOT READ (user, 2026-08-14: the PDF "doesn't look
+     appetising at all. Some parts just look like plain paragraphs") ───────────
+     Nothing below changes a single word. It gives the four kinds of line the
+     format already produces four different appearances, so the eye can tell an
+     entity from a citation from an aside without reading any of them.
+     ⚠️ COLOUR HERE IS PRINT-ONLY AND MUST STAY THAT WAY. The module hues are
+     dark by design (CLAUDE.md §6) so white text passes on them — which is the
+     same thing as saying they are nearly invisible AS text on the dark screen
+     ground. On white paper they are exactly right. */
+  /* The lead anchor, chosen by mdLead() — see the long note at that function
+     for why this is not `strong:first-child`. Only the term is coloured; the
+     rest of the bold statement stays near-black, so the colour marks WHERE a
+     block starts instead of shouting the whole of it. */
+  .th-body .lt{color:var(--mod,#14181f)!important}
+  /* Entity blocks need air between them or they read as one slab. Ordinary
+     paragraphs keep the tight 6pt above. */
+  .th-body p.lead{margin-top:8pt!important}
+  .th-body p.lead:first-child{margin-top:0!important}
+  /* A citation is furniture. Small, spaced, muted, ruled off — findable when
+     checked, skipped when reading. */
+  .th-body .src{
+    margin:7pt 0 0!important;padding-top:3pt!important;
+    border-top:.4pt solid #e4e8ee!important;
+    font-size:7.5pt!important;font-weight:500!important;letter-spacing:.09em!important;
+    text-transform:uppercase!important;color:#8a94a3!important}
+  /* ⚠️ `.th-body .xref` is TWO classes so it outranks the `.th-body p` weight
+     rule above, which forces 500 on every paragraph. A single-class selector
+     loses and the aside prints at full prose weight. */
+  .th-body .xref{font-size:9pt!important;font-weight:400!important;color:#5a6472!important}
+  .th-body .xref em,.th-body .xref i{color:#5a6472!important;font-weight:400!important}
+  /* Sub-heading inside a section — the lever that breaks a long body into
+     scannable blocks. Coloured text, hairline rule, never stranded at a foot. */
+  .th-body .th-sub{
+    margin:9pt 0 4pt!important;padding-bottom:2pt!important;
+    border-bottom:.4pt solid #e4e8ee!important;
+    font-family:var(--font-display),Georgia,serif!important;
+    font-size:9.5pt!important;font-weight:700!important;letter-spacing:.07em!important;
+    text-transform:uppercase!important;color:var(--mod,#14181f)!important;
+    break-after:avoid;page-break-after:avoid}
+  .th-body .th-sub:first-child{margin-top:0!important}
   /* ── SECTION HEADINGS ──────────────────────────────────────────────────────
      Revision notes are SCANNED, so a heading has to be findable at arm's length
      and cheap in vertical space. A tinted band in the module colour, the number
@@ -2871,13 +2931,45 @@ function mdCells(row){
   if(c.length&&c[c.length-1].trim()==='')c.pop();
   return c;
 }
+/* The coloured anchor at the head of an entity block or a "**Term** — fact"
+   bullet. ⚠️ IT CANNOT BE DONE IN CSS. `strong:first-child` was tried and
+   painted whole paragraphs terracotta: measured over all 30 ENT chapters, the
+   MEDIAN line that opens in bold carries 71 characters of it and the longest
+   440, because the telegraphic format bolds the whole clinical statement, not
+   just its subject. Colouring that is a wall, not a rail.
+   What the format really writes is `**TERM: rest**` or `**TERM — rest**`, so
+   the anchor is the part before that punctuation — "Definition:", "TRUE:",
+   "FETOR = OSTEITIS". 65 % of bold-opening lines yield one; the rest keep plain
+   bold, which is the correct outcome for a line that has no single subject.
+   Returns null when there is no anchor, so the caller leaves the line alone. */
+function mdLead(t){
+  if(!t.startsWith('<strong>'))return null;
+  const end=t.indexOf('</strong>');
+  if(end<0)return null;
+  const inner=t.slice(8,end);
+  /* Only ever cut inside the leading run of PLAIN text. An organism name is
+     `<em>`-wrapped inside the bold, and splitting across a tag boundary would
+     emit crossed tags — which browsers silently repair into something else. */
+  const lt=inner.indexOf('<');
+  const plain=lt<0?inner:inner.slice(0,lt);
+  const ci=plain.slice(0,44).search(/[:—]/);
+  let cut=-1;
+  if(ci>0)cut=ci+1;
+  else if(lt<0&&inner.length<=44)cut=inner.length;   // a short bold IS the term
+  if(cut<0)return null;
+  return '<strong><span class="lt">'+inner.slice(0,cut)+'</span>'+
+         inner.slice(cut)+'</strong>'+t.slice(end+9);
+}
 function mdBlock(s){
   if(!s)return '';
   let h=esc(s);
   h=h.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/(^|[^*])\*([^*]+?)\*/g,'$1<em>$2</em>');
   const lines=h.split('\n');
-  let out='',para=[],list=[],quote=[],tbl=[];
-  const fp=()=>{if(para.length){out+='<p>'+para.join(' ')+'</p>';para=[]}};
+  let out='',para=[],list=[],quote=[],tbl=[],pcls='';
+  /* ⚠️ THE PARAGRAPH CLASS IS DECIDED BY THE LINE THAT OPENS THE PARAGRAPH, so it
+     is captured when the first line is pushed and cleared when the paragraph is
+     flushed. Deciding it at flush time would read the LAST line instead. */
+  const fp=()=>{if(para.length){out+='<p'+(pcls?' class="'+pcls+'"':'')+'>'+para.join(' ')+'</p>';para=[];pcls=''}};
   const fl=()=>{if(list.length){out+='<ul>'+list.map(i=>'<li>'+i+'</li>').join('')+'</ul>';list=[]}};
   const fq=()=>{if(quote.length){out+='<blockquote>'+quote.join(' ')+'</blockquote>';quote=[]}};
   /* Pipe tables. The `table:{head,rows}` field still works and is unchanged — this
@@ -2903,8 +2995,29 @@ function mdBlock(s){
        neither test above and fell through to become a paragraph containing a
        single stray angle bracket. Close the open quote and drop the marker. */
     if(t==='&gt;'||t==='>'){fp();fl();fq();return}
-    if(t.startsWith('- ')){fp();fq();list.push(t.slice(2));return}
-    fl();fq();para.push(t);
+    if(t.startsWith('- ')){fp();fq();const b=t.slice(2);list.push(mdLead(b)||b);return}
+    /* ── THREE LINE KINDS THAT ARE NOT PROSE ────────────────────────────────
+       ⚠️ ALL THREE MATCH THE CONVERTED HTML, NOT THE MARKDOWN. esc() and the
+       bold/italic replacement both run over the WHOLE string above, before this
+       loop, so by the time a line arrives here `**X**` is already `<strong>X…`
+       and `*x*` is already `<em>x</em>`. Matching asterisks here finds nothing —
+       and finds it silently, since a missed match just falls through to <p>. */
+    if(t.startsWith('### ')){fp();fl();fq();out+='<h3 class="th-sub">'+t.slice(4)+'</h3>';return}
+    /* The `Src:` line closes almost every section written under the §14 format.
+       It is a citation, not a sentence — styled as a caption so the eye skips it
+       while reading and finds it when checking. Every merged chapter already
+       ends its sections this way, so they all take the new look with no rewrite. */
+    if(t.startsWith('Src:')){fp();fl();fq();out+='<p class="src">'+t+'</p>';return}
+    /* A whole line in italics is a cross-reference or an aside — "*full table in
+       ent-csom*". Anchored at both ends and allowing no inner tag, so a paragraph
+       that merely BEGINS with an italic phrase is not mistaken for one. */
+    if(/^<em>[^<]*<\/em>$/.test(t)){fp();fl();fq();out+='<p class="xref">'+t+'</p>';return}
+    fl();fq();
+    /* A paragraph opening on a bold term is an ENTITY BLOCK — "**DIPHTHERIA (L3):**
+       …". Marking it lets print colour just that first term, which is what turns a
+       column of grey paragraphs into a scannable list without touching the words. */
+    if(!para.length&&t.startsWith('<strong>')){pcls='lead';para.push(mdLead(t)||t);return}
+    para.push(t);
   });
   fp();fl();fq();ft();
   return out;

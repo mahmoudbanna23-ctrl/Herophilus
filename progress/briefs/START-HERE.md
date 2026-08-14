@@ -865,6 +865,50 @@ not, a fact was cut and goes back. If the notes also re-argue the wrong options,
 - **`intro` ≤ 50 words.** Schema unchanged: `w`, `qs`, `table`, `flow`. **`qs` still covers 100 %
   of the chapter's filed questions** — ids in arrays are nearly free.
 
+### 14.3a ⚠️ LAYOUT — how a body is SHAPED (new 2026-08-14, and it is not optional)
+
+The user read the printed ENT chapters and ruled the PDF unappetising: *"it doesn't look apetising
+at all. Some parts just look like plain paragraphs."* **This is a LAYOUT rule, not a scope rule —
+nothing here removes a fact.** The renderer was restyled the same day and now gives four kinds of
+line four different appearances, but **it can only style what the markdown distinguishes.** Write
+to these shapes or the styling has nothing to work with.
+
+**⚠️ THE `·`-CHAINED MEGA-PARAGRAPH IS BANNED.** The commonest failure in ENT was packing a whole
+clinical entity into one run-on line — the diphtheria block in `ent-tonsils` is **783 characters**
+of bold chained with `·`. On paper that is a grey slab. Instead:
+
+```
+**DIPHTHERIA (L3):** one-line essence.
+- **Organism** — C. diphtheriae, gram-positive bacillus.
+- **Never** dislodge the membrane.
+```
+
+- **Hard cap ~45 words per paragraph.** Past that, break to `- ` bullets or a table.
+- **A bullet is ≤ ~15 words.** Longer means it is really two facts.
+
+**Four line kinds the renderer now styles. Use them deliberately:**
+
+| Write | Renders as | Use for |
+|---|---|---|
+| `### Heading` | small caps sub-heading in the module colour | **required** once a section covers more than two entities |
+| `**Term:** rest` or `**Term —** rest` | *Term* coloured, rest plain bold | the head of every entity block and every `**Term** — fact` bullet |
+| `Src: L6; GG pp.146–151` | small muted ruled caption at the section foot | the one citation line — unchanged, now styled |
+| `*a whole line in italics*` | muted italic aside | cross-references (*"full table in `ent-csom`"*) and one-line defect notes |
+
+**⚠️ THE COLOURED ANCHOR IS CHOSEN BY PUNCTUATION, SO PUNCTUATE FOR IT.** `mdLead()` colours the
+text before the first `:` or `—` **when that falls inside the first 44 characters**, otherwise the
+whole bold if it is itself ≤ 44 characters, otherwise nothing. Measured over all 30 ENT chapters,
+the **median** bold-opening line carries **71** characters of bold and the longest **440** — which
+is exactly why `strong:first-child` was tried, painted whole paragraphs, and was thrown away.
+**A lead bold with no early colon gets no anchor and the block loses its marker.** Write
+`**Quinsy:** …`, not `**Quinsy is pus between the tonsillar capsule and the lateral wall** …`.
+
+**⚠️ `###` AND THE EXTRA BULLETS COST WORDS LIKE ANY OTHER TEXT.** The budget arithmetic in §14.1
+is unchanged and the ~2,400-word / ~10-page ceiling still governs. Breaking a paragraph into
+bullets *raises* the word count slightly (the counter splits on whitespace) — that is the
+words-and-pages opposition of §14.1 rule (2), and it is not a licence to drop a protected fact.
+**Budget the sub-headings when planning: count each `###` as a line, not free.**
+
 ### 14.4 Expected size, honestly
 
 Median ENT chapter ~4–6 printed pages; the largest ~8–10; all 30 ENT chapters ≈ 150 pages total.
