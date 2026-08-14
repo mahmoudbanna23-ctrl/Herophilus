@@ -1081,8 +1081,13 @@ if the receiving chapter actually gets it.**
 > syringing · Gerlach and Luschka. **Half printed:** the sneeze reflex — `L23` names "reflex function"
 > and `L29` lists "reflexes (cough, sneeze)" among the six defences, but the *arc* is not printed.
 >
-> **⚠️ A spelling can hide a hit: the decks write *ostio-*, and `osteomeatal` returns 0.** Grep the
-> stem, not the word. **The lesson is the standing one — READ THE SLIDE BEFORE DECLARING A GAP — and
+> **⚠️⚠️ A SPELLING CAN HIDE A HIT, AND IT HAS NOW DONE SO TWICE — GREP THE STEM, NEVER THE WORD.**
+> The decks write *ostio-*, so `osteomeatal` returns **0** while `ostiomeatal` is printed; and they
+> write **"Uvelopalatopharyngoplasty"**, so `uvulopalato` returns **0** while `uvelopalato` finds it.
+> **Both would have produced a confident, wrong "absent from all 34 decks" and a tag on sourced
+> material.** Grep the shortest distinctive stem, try the obvious misspelling, and where a deck's
+> spelling is non-standard **write both forms into the notes** so a search from either side finds it,
+> as `ent-osa` did. **The lesson is the standing one — READ THE SLIDE BEFORE DECLARING A GAP — and
 > it has now paid twelve times.** Treat every remaining item on that review list as unverified.
 
 

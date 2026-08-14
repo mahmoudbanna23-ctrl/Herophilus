@@ -5111,5 +5111,110 @@ var T_ENT = {
         ]
       }
     ]
+  },
+  "ent-osa": {
+    "intro": "One spectrum, two populations. In the adult it is obesity and the answer is CPAP; in the child it is the adenoid and the answer is surgery. Everything else is polysomnography, and the level of obstruction that picks the operation.",
+    "sections": [
+      {
+        "id": "osa-1",
+        "w": "must",
+        "h": "Definitions, and the spectrum from primary snoring to severe OSA",
+        "body": "**SNORING** — harsh, noisy sound produced by **vibration of the soft tissue of the throat and upper airway**, due to **PARTIAL** airflow obstruction **during sleep**.\n\n**SLEEP APNOEA** — **cessation of airflow through the nose and mouth during sleep for more than 10 seconds.**\n\n|Type|Mechanism|Respiratory effort|\n|---|---|---|\n|**OBSTRUCTIVE**|secondary to **obstruction of the upper airway**|**present and continues** — the chest still tries|\n|**CENTRAL**|secondary to **cessation of thoracic and abdominal respiratory effort**|**absent** — the drive itself stops|\n\n- **A SPECTRUM: primary snoring** (snoring without OSA — occasional or habitual) at one end, **severe OSA** at the other. **Sleep-related breathing disorders** = snoring **and** OSA.\n- **All patients with OSA are snorers, but not all snorers have OSA.** What separates simple snoring from OSA in a vignette is a **witnessed apnoea or an arousal**, not the noise.\n- **Incidence: 30 y = 30 % · 40 y = 40 % · 50 y = 60 %** — it rises with age. **Male : female = 2 : 1.** Commoner in the **obese with a short neck**.\n\nSrc: L9 lines 26–50 and 296–299",
+        "qs": [
+          "entep-throat-case-17"
+        ]
+      },
+      {
+        "id": "osa-2",
+        "w": "must",
+        "h": "Pathophysiology and the four risk factors",
+        "body": "**Partial obstruction** of the upper airway → **negative pressure and turbulent airflow during inspiration** → **vibration of the palate and uvula = SNORING**.\n\n**Complete obstruction** of the upper airway → **OSA** → **frequent arousal**.\n\nPartial obstruction arises from either a **space-occupying lesion** or **hypotonia of the palatal and pharyngeal muscles** — mass or tone.\n\n|Risk factor|Stated mechanism|\n|---|---|\n|**OBESITY**|**deposition of fat narrows the upper airway lumen** — and it is the **commonest cause of OSA in the adult**|\n|**SMOKING**|**congestion of the upper airway mucosa** leading to partial obstruction|\n|**ALCOHOL, and drugs — hypnotics, sedatives**|**hypotonia of the palatal and pharyngeal muscles** leading to their collapse|\n|**SLEEPING POSITION**|**sleeping on the back makes the tongue fall backward** and obstruct the upper airway|\n\n- All four reappear as rungs of lifestyle modification — each risk factor is a treatment in reverse.\n- **Second obesity mechanism** *(not in course material)*: a large abdomen lowers end-expiratory lung volume, losing the caudal traction that splints the pharynx — narrower **and** less supported.\n\nSrc: L9 lines 51–80",
+        "qs": [
+          "entep-throat-121"
+        ]
+      },
+      {
+        "id": "osa-3",
+        "w": "must",
+        "h": "Aetiology by LEVEL — the list the operation is chosen from",
+        "body": "|#|Level|Causes|\n|---|---|---|\n|**1**|**NASAL obstruction**|**deviated septum · hypertrophy of the inferior turbinate · nasal polyp**|\n|**2**|**PHARYNGEAL obstruction**|**ADENOID — the most common cause IN CHILDREN** · tonsillar hypertrophy · bulky base of tongue · hypertrophy of the lingual tonsils · receding mandible · macroglossia|\n|**3**|**Excessive length of the UVULA and SOFT PALATE**|developmental · secondary to mouth breathing|\n|**4**|**HYPOTONIA of the palatal and pharyngeal muscles**|ageing · drug-induced · neurological disease|\n\n- **The level chooses the operation** — nothing else in the chapter does.\n- **Level 1 is rarely the answer alone in an adult.** Allergic rhinitis and polyps block the nose but do not collapse the pharynx; **marked obesity** beats them, and beats an **elongated uvula** too, because obesity acts at every level at once.\n- The nose as a symptom and its work-up are written under nasal obstruction; the adenoid as a disease under the tonsils and adenoids.\n\nSrc: L9 lines 81–94",
+        "qs": [
+          "entep-throat-88",
+          "entqb-thr4-209"
+        ]
+      },
+      {
+        "id": "osa-4",
+        "w": "must",
+        "h": "ADULT vs CHILD — the contrast the examiner keeps asking",
+        "body": "**Read the age before the option list — the two populations invert almost every answer.**\n\n|Axis|**ADULT**|**CHILD**|\n|---|---|---|\n|**Commonest cause**|**MARKED OBESITY**|**ADENOID hypertrophy ± tonsillar hypertrophy**|\n|Level|diffuse — fat and tone at every level|**level 2, pharyngeal** — a fixed lymphoid mass|\n|Habitus|**obese, short neck, BMI >30**|often **normal or underweight — retarded general growth, failure to thrive**|\n|Extra features|morning headache · daytime sleepiness · GERD · hypertension|**nocturnal enuresis · nightmares/night terrors · falling school performance · mouth breathing**|\n|**First-line treatment**|**lifestyle first, then CPAP for moderate and severe disease**|**ADENOTONSILLECTOMY — usually curative**|\n|Role of surgery|for snoring and mild OSA, or when **CPAP fails or is not tolerated**|**first line**|\n\n- **Adult OSA is a medical disease operated on only after failure; paediatric OSA is a surgical disease.**\n- **The standing paediatric distractors are all nasal (level 1)** — bilateral choanal atresia (neonate), angiofibroma (adolescent male with epistaxis), allergic polypi. None causes habitual childhood OSA.\n\nSrc: L9 lines 66–94, 169–241; paediatric column from L3 (written in full under the tonsils and adenoids)",
+        "qs": [
+          "entep-throat-88",
+          "entep-throat-121",
+          "entqb-thr4-209"
+        ]
+      },
+      {
+        "id": "osa-5",
+        "w": "must",
+        "h": "Presentation, and what untreated OSA costs",
+        "body": "**Presentation**\n\n- **Loud snoring — average 60 dB, can reach 85 dB.**\n- **Mouth breathing** → **dry mouth, dental caries, chronic sore throat.**\n- **Witnessed attacks of sleep apnoea, and frequent arousal.**\n- **Morning headache.**\n- **Daytime sleepiness.**\n- **Frequent attacks of GERD.**\n\n**Complications of untreated OSA**\n\n|System|Complications|\n|---|---|\n|**Cardiovascular**|**hypertension · IHD · arrhythmia**|\n|**Cerebrovascular**|**decreased cerebral blood flow → a high incidence of cerebrovascular events**|\n|**Psychological**|**poor memory and loss of concentration · irritability and mood changes · depression**|\n|**Social**|interferes with **performance at work or school** · **disruption of family life** · **diminished libido**|\n|**Metabolic**|**DM** — named only in the deck’s key-points slide, but named|\n\n- **OSA causes weight GAIN, not weight loss** — fragmented sleep raises appetite and lowers activity, so obesity is both cause and consequence *(direction not in course material; asked as an EXCEPT)*. **Weight loss in a snorer points elsewhere.**\n- The complete vignette: **obese, hypertensive, snoring, witnessed apnoeas** — cause, disease and consequence in one stem.\n\nSrc: L9 lines 95–122, 300",
+        "qs": [
+          "entep-throat-case-17"
+        ]
+      },
+      {
+        "id": "osa-6",
+        "w": "must",
+        "h": "The child with OSA — two routes, and only one of them is hypoxia",
+        "body": "**Chronic upper-airway obstruction in a child injures by TWO separate routes, and the examiner tests which route a symptom came down.**\n\n|Route|Consequences|\n|---|---|\n|**A. NOCTURNAL HYPOXIA and chronic CO₂ RETENTION** (the OSA route)|**lassitude · dullness · NIGHTMARES / night terrors · NOCTURNAL ENURESIS** · **daytime somnolence** · **decreased scholastic achievement** · **retarded general growth**|\n|**B. MOUTH BREATHING — DRYING, not hypoxia**|**dry lips, tongue and pharynx · dry bleeding gums · DENTAL CARIES · THIRST · chronic sore throat**|\n\n- **THIRST IS ROUTE B — the classic EXCEPT.** Enuresis, nightmares and poor school performance are hypoxia and CO₂ retention; thirst and a dry mouth are air moving over an unwetted pharynx all night.\n- **Enuresis + night terrors + daytime somnolence = all of the above** — all three are sleep fragmentation, so no odd one out.\n- **Decreased scholastic achievement here is SLEEP APNOEA, and it is REVERSIBLE** — not mental retardation, aphasia or obesity. **Check the hearing too**: the same adenoid gives OME and conductive loss.\n- **Growth failure is an indication to operate.** Fragmented sleep suppresses nocturnal growth-hormone release *(mechanism not in course material; the material states the outcome, \"retarded general growth\")*.\n- **Skeletal change — the chest.** Years of forced inspiration against a blocked airway generate large negative intrathoracic pressures that deform the compliant paediatric chest wall. **The bank keys PIGEON CHEST**; the spinal options are pure distractors. ⚠️ Noted, not disputed: **no cached lecture prints \"pigeon chest\" or \"pectus carinatum\"**, and the two decks naming a chest deformity in chronic paediatric obstruction call it **pectus EXCAVATUM** or leave it unqualified. Key as printed.\n- Adenoid facies, the two obstructions, grading and the adenoidectomy grids are under the tonsils and adenoids.\n\nSrc: L9 lines 100–122; the consequence list verbatim from L3 (counted and written under the tonsils and adenoids); chest-deformity comparison from L6 and L12",
+        "qs": [
+          "entqb-thr4-165",
+          "entqb-thr4-210",
+          "entqb-thr4-214",
+          "entqb-thr4-218"
+        ]
+      },
+      {
+        "id": "osa-7",
+        "w": "high",
+        "h": "Clinical assessment — the two numbers, and the three levels",
+        "body": "**1. Symptoms** — snoring, attacks of sleep apnoea, frequent arousal.\n\n**2. General examination**\n\n- **Obesity, and BMI — kg/m², abnormal above 30.**\n- **NECK CIRCUMFERENCE — greater than 17 inches in a male, greater than 16 inches in a female.** Learn the pair; a single figure quoted without a sex is incomplete.\n- **Receding mandible · macroglossia** — the two skeletal/soft-tissue features that crowd the pharynx in a patient who is not obese.\n\n**3. ENT examination, level by level**\n\n|Level|What to look for|\n|---|---|\n|**Nasal**|**deviated septum · polyp · hypertrophy of the inferior turbinates**|\n|**Oropharyngeal**|**bulky soft palate · long uvula · big tonsils**|\n|**Indirect laryngoscopy**|**bulky base of tongue · long folded epiglottis**|\n\n- **EPWORTH SLEEPINESS SCALE** *(not in course material — absent from all 34 lecture files)*: self-completed, chance of dozing in **eight everyday situations** (reading, television, sitting inactive in public, car passenger, lying down in the afternoon, sitting talking, after lunch, stopped in traffic), **0–3 each, out of 24**; **above 10 = excessive daytime sleepiness**. It quantifies the SYMPTOM only — **never diagnoses OSA and never grades it**, which is the discrimination against polysomnography.\n\nSrc: L9 lines 123–133",
+        "qs": [
+          "entep-throat-121"
+        ]
+      },
+      {
+        "id": "osa-8",
+        "w": "must",
+        "h": "Endoscopy, imaging, and POLYSOMNOGRAPHY — the diagnostic standard",
+        "body": "**Endoscopic assessment**\n\n|Test|What it is|What it gives|\n|---|---|---|\n|**Flexible nasopharyngolaryngoscopy**|awake endoscopy|assessment of the upper airway **from the nose down to the larynx**|\n|**DISE — Drug Induced Sleep Endoscopy**|examination of the upper airway **under general anaesthesia WITHOUT muscle relaxant**|**the LEVEL of airway collapse / obstruction** — and it is DISE that **documents the site to which surgery is tailored**|\n\n- **The \"without muscle relaxant\" clause is the whole test** — a relaxant would paralyse the very tone whose loss is being reproduced, so the collapse seen would be the drug’s.\n\n**Radiological assessment of the upper airway** — named as a step, printed as a bare figure. *(Supplied, not in course material:)* **lateral cephalometry** — posterior airway space, hyoid position, mandibular retrusion — and **CT** where skeletal surgery is planned.\n\n**POLYSOMNOGRAPHY — the overnight sleep study, and the answer whenever a stem asks what investigates sleep apnoea.**\n\n|Channel|Records|\n|---|---|\n|**EEG**|brain activity — sleep staging|\n|**Airflow**|nose and mouth — defines the apnoea|\n|**Oxygen saturation**|desaturation|\n|**ECG**|heart rhythm|\n|**EOG**|eye movement|\n|**EMG**|muscle activity|\n\n**What it reports:** **sleep efficiency · presence of desaturation · the APNOEA–HYPOPNOEA INDEX (AHI) · arousal index · the severity of the sleep apnoea.**\n\n|Severity|**Events per hour**|\n|---|---|\n|**Mild**|**5 – 15**|\n|**Moderate**|**16 – 30**|\n|**Severe**|**more than 30**|\n\n- **AHI = apnoeas plus hypopnoeas per hour of sleep.** A **hypopnoea** is a **reduction**, not a cessation, of airflow, at least 10 seconds, with desaturation or an arousal *(the index is named in the course material; the definition of a hypopnoea is printed nowhere in it — greped across all 34 decks)*.\n- **The severity grid is where CPAP is decided** — moderate and severe, i.e. AHI above 15.\n- **Obstructive is separated from central by RESPIRATORY EFFORT** — effort persists against a closed airway, and ceases altogether in central apnoea. *(The thoracoabdominal effort belts recording it are not named in the course material; the distinction they measure is.)*\n\nSrc: L9 lines 138–168, 310–312",
+        "qs": [
+          "entep-throat-84",
+          "entep-throat-122",
+          "entep-throat-case-17"
+        ]
+      },
+      {
+        "id": "osa-9",
+        "w": "must",
+        "h": "Management — lifestyle first, CPAP for moderate and severe",
+        "body": "**1. Lifestyle modification — helpful, and applied FIRST for every patient with snoring or OSA.**\n\n- **Weight reduction.**\n- **Stop smoking / alcohol consumption.**\n- **Avoid sleeping in the supine position.**\n- **Elevate the head of the bed.**\n- **Avoid sleeping pills and sedatives.**\n- **Avoid a high-fat diet before sleep.**\n\n**2. Medications** — **intranasal corticosteroids / antihistamines**; **non-steroidal nasal or oral sprays**. They treat the nasal level only.\n\n**3. Appliances** — **nasal dilators**; **mandibular repositioning devices**.\n\n**4. CPAP — Continuous Positive Airway Pressure. THE TREATMENT OF CHOICE FOR MODERATE AND SEVERE OSA.** It **transmits air into the upper airway at positive pressure**, splinting it open.\n\n|Limitation|Detail|\n|---|---|\n|**Compliance**|**only 60 % of cases** — the single biggest problem, and the reason the surgical indication exists|\n|**Aerophagia**|swallowed air|\n|**Rhinitis**|with a nasal mask|\n|**Significant upper airway obstruction**|**difficult to use** — a blocked nose or a large mass defeats the pressure|\n\n- **The ladder is not skipped.** Lifestyle for everyone including the severe; CPAP added for moderate and severe; surgery only for snoring and mild disease, or where CPAP has failed.\n\nSrc: L9 lines 169–207, 302–306",
+        "qs": [
+          "entep-throat-121",
+          "entqb-thr4-209"
+        ]
+      },
+      {
+        "id": "osa-10",
+        "w": "high",
+        "h": "Surgery — indications, and the operation the LEVEL chooses",
+        "body": "**Indications**\n\n- **Snoring and MILD OSA.**\n- **Moderate and severe OSA NOT COMPLIANT with CPAP.**\n\n**Surgery is according to the SITE of obstruction, documented by DISE.** The four sites named: **nose / nasopharynx · oropharynx and soft palate · base of tongue · mandibular advancement**.\n\n|Level|Operation|\n|---|---|\n|**Nose**|**Septoplasty** for a deviated nasal septum · **FESS** for nasal polyps|\n|**Nasopharynx**|**Adenoidectomy**|\n|**Tonsils**|**Tonsillectomy** · **laser tonsillotomy**|\n|**Soft palate / oropharynx**|radiofrequency coagulation · UPPP · LAUP · expansion palatopharyngoplasty — below|\n|**Base of tongue**|tongue base reduction · hypoglossal nerve stimulator — below|\n|**Skeleton**|**mandibular advancement surgery**|\n|**Failure of everything**|**tracheostomy**|\n\n**Palatal surgery, in the deck’s own order**\n\n|Procedure|What is done|Verdict as stated|\n|---|---|---|\n|**A. Radiofrequency coagulation**|coagulation of the **palatal muscles** using radiofrequency|**SNORING ONLY** — not an OSA operation|\n|**B. UPPP — uvulopalatopharyngoplasty** (the deck spells it *Uvelopalatopharyngoplasty*)|**excision of the uvula, part of the soft palate, the tonsils and the anterior commissure**|**LOW SUCCESS RATE — not done now**|\n|**C. LAUP — laser-assisted uvulopalatoplasty**|done under **LOCAL anaesthesia**|**limited success in treating OSA**|\n|**D. Expansion palatopharyngoplasty**|**tonsillectomy** · dissection of the **palatopharyngeus** muscle · **cutting in its lower third** · **suturing to the hamulus superiorly and laterally**|the current palatal operation — it widens the lateral wall rather than removing palate|\n\n**Tongue base surgery**\n\n- **Tongue base reduction** — **endoscopic or open**, using **laser or coblator**.\n- **Hypoglossal nerve stimulator** — **implantable electrical device**; **stimulates the hypoglossal nerve so the tongue moves FORWARD during sleep**, preventing obstruction.\n\n**Tracheostomy** — **severe OSA with failure of ALL other modalities.** A **small tube bypasses the upper airway obstruction**; **capped by day, de-capped during sleep**. The one operation that cannot fail, because it leaves the obstruction behind rather than treating it.\n\nSrc: L9 lines 208–295, 307–312",
+        "qs": [
+          "entqb-thr4-209",
+          "entep-throat-88"
+        ]
+      }
+    ]
   }
 };
