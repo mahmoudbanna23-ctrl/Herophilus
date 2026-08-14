@@ -685,13 +685,21 @@ at merge; over budget by >10 % goes back for compression, not into the app.**
 > why. Send it back only when the pages agree with the words. This is the same finding as
 > "do not chase the printed page count with word cuts", read from the other end.
 
-> **⚠️ MEASURED ACROSS FIFTEEN CHAPTERS, 2026-08-14 — `PAGES ≈ BODY WORDS ÷ 270`, ±12 %.** Every
-> merged chapter, rendered and counted: 243–319 words per page, mean 270, across 1,701–3,826 words
-> and 6–15 pages. **So the page test can be run in your head before rendering**, and two things
-> follow. **(1) THE OPERATIVE CEILING IS ~2,700 BODY WORDS**, because that is where ~10 pages falls —
+> **⚠️ MEASURED ACROSS SEVENTEEN CHAPTERS, 2026-08-14 — `PAGES ≈ BODY WORDS ÷ 240`, AND IT IS A
+> ±1-PAGE ESTIMATOR, NOT AN IDENTITY.** **⚠️ CORRECTED ONCE ALREADY: the first version of this rule
+> said ÷270 on a 15-chapter mean and then UNDER-PREDICTED TWICE RUNNING** — `ent-hearing` 7.2 → 8,
+> `ent-vertigo` 7.0 → 8. The real spread is **238–319 words per page**, which is far too wide to
+> divide by the mean. **Divide by 240, the densest observed, so the estimate never under-predicts** —
+> under-predicting is the failure that matters, because it accepts a chapter that prints too long.
+> The spread itself is informative: the **table-dense** current-format chapters sit at 238–259
+> (`ent-vertigo` 238, `ent-audio` 243, `ent-hearing` 245) and the **prose-leaning** ones at 278–319
+> (`ent-hoarse` 309, `ent-csom` 319). **A table costs more paper per word than a paragraph** — which
+> is the same finding as "converting prose to tables costs paper per word saved", seen from the
+> other side. Two things follow. **(1) THE OPERATIVE CEILING IS ~2,400 BODY WORDS**, because that is
+> where ~10 pages falls at the dense end —
 > not the formula's number, which every overrunning chapter so far has beaten and been accepted at
 > (`ent-audio` +17.3 % → 7 pp · `ent-dysph` +28.8 % → 8 pp · `ent-rhin` +39.1 % → 9 pp). Treat the
-> computed budget as the **target** and 2,700 as the **ceiling**; between the two, state the bill and
+> computed budget as the **target** and 2,400 as the **ceiling**; between the two, state the bill and
 > let the hub rule on pages. **(2) This does NOT contradict "layout owns pages."** Both hold: at a
 > fixed layout pages track words, which is why the ratio is tight; but *changing* the layout —
 > `break-inside` on tables, cell padding, `<thead>` — moves pages at constant words, which is how AOM
@@ -825,7 +833,7 @@ if the receiving chapter actually gets it.**
 | `ent-pharsupp` (L5) | **Branchial cyst, thyroglossal cyst**, the neck-mass differential | `ent-neck` | ☐ |
 | `ent-pharsupp` (L16) | **Bezold's abscess in full** — mastoiditis, mastoid tip, the compass of spread, cortical mastoidectomy. Only the keyed mastoid-tip → parapharyngeal line kept | `ent-csom` | ☐ |
 | `ent-tonsils` (v3) | **Quinsy management** — Hilton's manoeuvre, the incision points, interval tonsillectomy | `ent-pharsupp` | ✅ **delivered 2026-08-14** |
-| `ent-earanat` (L20) | L20's whole clinical half — balance physiology, causes and assessment of vertigo, BPPV, Ménière's, vestibular neuritis, the positional tests | `ent-vertigo` | ☐ |
+| `ent-earanat` (L20) | L20's whole clinical half — balance physiology, causes and assessment of vertigo, BPPV, Ménière's, vestibular neuritis, the positional tests | `ent-vertigo` | ✅ **delivered 2026-08-14** — `vert-1`/`4`/`5`/`7`/`8`/`9`/`12` |
 | `ent-earanat` (L16) | Attic-retraction cholesteatoma, safe vs unsafe, perforation types, mastoid disease, the tegmen-erosion complication lists | `ent-csom` | ✅ already written |
 | `ent-facial` (L22) | Auricle, EAC, TM layers and landmarks, annulus, middle-ear walls and parts, ossicles, mastoid air-cell types, Eustachian tube, inner ear | `ent-earanat` | ✅ **delivered 2026-08-14** |
 | `ent-facial` (L15) | **Myringotomy as a procedure** and its indications. Only the keyed line — myringotomy is the FIRST measure in facial palsy complicating AOM — kept | `ent-aom` | ☐ **⚠️ aom is already merged; add at reconciliation** |
@@ -852,8 +860,8 @@ if the receiving chapter actually gets it.**
 | `ent-septum` (L24) | **Nasal-valve anatomy in full** and valve reconstruction. Only the Cottle test and the valve's role in obstruction kept | `ent-nasalobs` | ☐ |
 | `ent-septum` (L24) | **Wegener's as an entity** — ANCA, the triad, the systemic disease. Only its saddle-nose key kept | `ent-rhin` | ✅ **delivered 2026-08-14** — `rhin-13`, a full row: multisystem autoimmune collagen disorder, necrotising vasculitis, respiratory tract + kidneys + skin, septal ulceration, saddle nose, c-ANCA + ESR + biopsy, steroids + azathioprine/methotrexate |
 | `ent-septum` (L24) | The septum's **arterial supply as vascular anatomy** — counted in this chapter's budget as L24's own ILO, but owed as anatomy | `ent-noseanat` | ☐ |
-| `ent-audio` (L13,14 lines 422–556) | **The entire dizziness half** — epidemiology, ">90 % benign", "commonest cause is lack of sleep", "80 % from history", the Type I–IV classification, the descriptor list | `ent-vertigo` | ☐ |
-| `ent-audio` (L13,14 lines 63–83) | **Static vs dynamic balance** | `ent-vertigo` | ☐ |
+| `ent-audio` (L13,14 lines 422–556) | **The entire dizziness half** — epidemiology, ">90 % benign", "commonest cause is lack of sleep", "80 % from history", the Type I–IV classification, the descriptor list | `ent-vertigo` | ✅ **delivered 2026-08-14** — `vert-1`+`vert-2`, fact by fact |
+| `ent-audio` (L13,14 lines 63–83) | **Static vs dynamic balance** | `ent-vertigo` | ✅ **delivered 2026-08-14** — `vert-1` |
 | `ent-audio` (L20) | Everything but the fistula test and the investigation categories | `ent-vertigo` | ☐ **⚠️ 2ND CHAPTER TO OWE THIS — `ent-earanat` registered it first and it is still unwritten. Two independent deferrals of one deck means `ent-vertigo` must be written against BOTH rows.** |
 | `ent-audio` (L19.1) | The **seven hearing-loss types**, the CHL/SNHL cause lists, treatment | `ent-hearing` | ☐ |
 | `ent-audio` (L19.1) | **The pressure transformer system** — areal ratio 17, lever 1.3, product 22, 26 dB | `ent-hearing` | ☐ |
@@ -875,9 +883,13 @@ if the receiving chapter actually gets it.**
 | `ent-hearing` (L19.2 lines 85–148) | The **otorrhoea slides appended to the cached tinnitus file** | `ent-otorrhea` | ☐ **⚠️⚠️ 3RD CHAPTER TO OWE THIS DECK — `ent-otalgia` and `ent-csom` registered it first and it is STILL UNWRITTEN. See the note below the table.** |
 | `ent-hearing` (L19.2 lines 120–148) | The **otalgia slides** — verified already written in the merged chapter before deferring, not assumed | `ent-otalgia` | ✅ already written |
 | `ent-hearing` (L19.1) | **Glomus as a lesion in its own right** — jugulare/tympanicum, staging, embolisation. Only the pulsatile-tinnitus presentation kept | `ent-otorrhea` | ☐ |
-| `ent-hearing` (L20) | **Ménière's in full** — only the low-frequency audiometric signature kept | `ent-vertigo` | ☐ **agent briefed** |
+| `ent-hearing` (L20) | **Ménière's in full** — only the low-frequency audiometric signature kept | `ent-vertigo` | ✅ **delivered 2026-08-14** — `vert-8` |
 | `ent-hearing` (L16/L17,18) | **Cholesteatoma / unsafe CSOM** | `ent-csom` | ✅ already written |
 | `ent-hearing` (L21.2) | **Secretory otitis media in full** | `ent-aom` | ✅ already written |
+| `ent-vertigo` (L20) | L20's **four inner-ear anatomy slides** — verified in `earan-10` (two labyrinths, two fluids) and `earan-11` (the full receptor table) before deferring | `ent-earanat` | ✅ already written |
+| `ent-vertigo` (L20/L13,14) | **The vestibular battery as procedures** — verified present in `aud-10` before deferring | `ent-audio` | ✅ already written |
+| `ent-vertigo` (L20) | **CSOM / cholesteatoma as subjects** | `ent-csom` | ✅ already written |
+| `ent-vertigo` (L20) | **Otosclerosis, ototoxicity and acoustic neuroma as entities** | `ent-hearing` | ✅ already written |
 
 > **⚠️⚠️ `ent-otorrhea` IS NOW OWED THE SAME OTORRHOEA DECK BY THREE CHAPTERS INDEPENDENTLY** —
 > `ent-otalgia`, `ent-csom` and `ent-hearing`, none of which knew of the others. That is not

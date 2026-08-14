@@ -3328,5 +3328,162 @@ var T_ENT = {
         ]
       }
     ]
+  },
+  "ent-vertigo": {
+    "intro": "Two shapes carry this chapter: how long did the attack last and was hearing involved, and is this peripheral or central. Learn the duration grid and the hearing-loss classification as grids — almost every vignette is decided by one cell of them.",
+    "sections": [
+      {
+        "id": "vert-1",
+        "w": "must",
+        "h": "Balance, dizziness and the words",
+        "body": "**BALANCE = control of a body position whilst performing a given task with MINIMAL POSTURAL SWAY.**\n\n- **STATIC** — control whilst **remaining stationary**: one leg, a headstand. **DYNAMIC** — control **whilst moving**: hopping, jumping, cycling, snowboarding.\n- Three inputs — **VESTIBULAR, VISION, PROPRIOCEPTION** — integrated centrally *(not in course material; the slide is a diagram)*.\n\n**DIZZINESS = a NON-SPECIFIC term used by PATIENTS for a group of symptoms with different underlying pathophysiologic processes** — impairment of **spatial perception and stability**.\n\n|Term|Means|\n|---|---|\n|**VERTIGO**|**an ILLUSION of movement — the patient spinning, or the world spinning around the patient. SUBJECTIVE, and VESTIBULAR**|\n|**Disequilibrium**|**loss of balance WITHOUT the illusion of spinning**|\n|**Pre-syncope**|faintness, light-headedness, anorexia|\n|**Syncope**|**momentary LOSS OF CONSCIOUSNESS**|\n|**Ataxia / gait disturbance**|incoordinated movement and walking|\n\n- **Both \"subjective\" and \"objective\" vertigo are SUBJECTIVE.** Vertigo is **not** true loss of balance, and **not** confined to inner-ear disease — central lesions cause it too.\n\n|Simple symptomatic approach|Is|\n|---|---|\n|**TYPE I**|**VERTIGO**|\n|**TYPE II**|**SYNCOPE / PRE-SYNCOPE**|\n|**TYPE III**|**DISEQUILIBRIUM**|\n|**TYPE IV**|**NON-SPECIFIC DIZZINESS**|\n\n- **\"Describe what happened and DON’T use the word DIZZY\"** — it has no consistent meaning, yet every patient uses it. Ask: **when did it start · how long does it last · how often · what were you doing · what makes it better or worse.**\n- The description matches one of: **vertigo · motion intolerance · unsteadiness · drop attack · pre-syncope · balance-related fall · syncope · oscillopsia · vague.**\n\nSrc: L20; L13,14",
+        "qs": [
+          "entep-ear-46",
+          "entep-ear-210",
+          "entqb-ear9-236"
+        ]
+      },
+      {
+        "id": "vert-2",
+        "w": "high",
+        "h": "How common, how dangerous, and what makes the diagnosis",
+        "body": "|Epidemiology|Figure|\n|---|---|\n|Rank as a complaint|**2nd commonest in medical practice**|\n|Overall incidence|**~30 %**|\n|Average age|**~45 years**|\n|Ageing|**+10 % per 5 years of age**|\n|By age 75|**90 % have dizziness**, and it is then **the commonest complaint**|\n|Sex|**36 % of women vs 22 % of men**|\n\n- **>90 % OF CAUSES ARE BENIGN; <5 % a serious underlying disorder.**\n- **THE COMMONEST CAUSE OF DIZZINESS IS LACK OF SLEEP.** Commonest **peripheral** vertigo **BPPV**; commonest **central**, **migraine-associated vertigo**.\n- **HISTORY GIVES A PROVISIONAL DIAGNOSIS IN 80 % OF CASES** — the first step. **Examination CONFIRMS rather than diagnoses.** Workup: **audiological · vestibular · laboratory · radiological.**\n- Why it is hard: **vague symptoms · numerous causes · multi-system/sensory deficit · referral difficulty · no simple diagnostic approach · life-threatening red flags · dependence on technology.**\n\nSrc: L13,14",
+        "qs": [
+          "entqb-ear9-259"
+        ]
+      },
+      {
+        "id": "vert-3",
+        "w": "must",
+        "h": "Nystagmus — central vs peripheral, and which way it beats",
+        "body": "|Feature|**CENTRAL**|**PERIPHERAL**|\n|---|---|---|\n|**Suppressed by VISUAL FIXATION**|**NO**|**YES**|\n|**Direction**|**may be VERTICAL**|horizontal / horizonto-rotatory, **never vertical**|\n|**Direction-changing with gaze**|**YES**|**no — unidirectional**|\n|**FATIGUE**|**NO fatigue**|**FATIGUES**|\n|Provoked|spontaneous|**spontaneous OR INDUCED** — Hallpike, caloric|\n\n- **VERTICAL, DIRECTION-CHANGING, or not suppressed by fixation = CENTRAL until proved otherwise.**\n- **THE SLOW PHASE IS THE VESTIBULAR ONE and drifts TOWARDS THE DISEASED labyrinth; the FAST corrective phase beats TOWARDS THE HEALTHY EAR — and the fast phase NAMES the nystagmus.** Cold caloric irrigation mimics a dead labyrinth and reproduces the pattern.\n- **Frenzel glasses abolish fixation** and unmask a suppressed peripheral nystagmus *(not in course material)*.\n\nSrc: L20",
+        "qs": [
+          "entqb-ear9-237",
+          "entqb-ear9-238",
+          "entqb-ear9-239"
+        ]
+      },
+      {
+        "id": "vert-4",
+        "w": "must",
+        "h": "Central vertigo — causes and red flags",
+        "body": "|Central cause|Note|\n|---|---|\n|**MIGRAINE-ASSOCIATED VERTIGO**|**the COMMONEST central cause** *(L20 lists it but never ranks it — not in course material)*. Mimics Ménière’s; **hearing discriminates** — migraine spares it|\n|**Cerebellar lesions**|vertigo **with incoordination, ataxia, a directional tendency to fall**|\n|**VASCULAR — vertebrobasilar insufficiency (VBI) · lateral medullary syndrome (PICA)**|brainstem ischaemia and stroke|\n|**Multiple sclerosis**|demyelination|\n|**Vertiginous epilepsy**|vertigo as the seizure|\n\n**RED FLAGS — treat as central and IMAGE FIRST:** severe **CONTINUOUS** vertigo with **NORMAL hearing** · **headache** · vascular risk factors (diabetes, hypertension) · **incoordination, ataxia or falling to one side** · vertical or direction-changing nystagmus · any neurological sign.\n\n- **MRI of the brain and cerebellum / posterior fossa comes BEFORE any vestibular test** — no vestibular test excludes a stroke. Where cerebellar incoordination dominates, **contrast CT** is the bank’s keyed first study.\n- **Never lumbar puncture before imaging** when a posterior fossa mass is possible.\n\nSrc: L20; imaging category L13,14",
+        "qs": [
+          "entqb-ear9-240",
+          "entep-ear-155",
+          "entep-enr-13"
+        ]
+      },
+      {
+        "id": "vert-5",
+        "w": "must",
+        "h": "Peripheral vertigo classified by the HEARING LOSS — the master grid",
+        "body": "|Hearing|Cause|\n|---|---|\n|**NO HEARING LOSS**|**1. BPPV · 2. VESTIBULAR NEURITIS** — only these two|\n|**LOW-FREQUENCY SNHL**|**MÉNIÈRE’S DISEASE (ONLY)**|\n|**UNILATERAL HIGH-FREQUENCY SNHL**|**VIRAL LABYRINTHITIS**. *(Vestibular schwannoma is struck through on the slide — retrocochlear, not labyrinthine)*|\n|**BILATERAL HIGH-FREQUENCY SNHL**|**OTOTOXICITY**|\n|**CONDUCTIVE (CHL)**|**THIRD-WINDOW ABNORMALITIES**|\n|**MIXED**|**CSOM WITH FISTULA · OTOSCLEROSIS · TRAUMA**|\n\n- **The \"vertigo WITH hearing loss, except\" shape resolves in one step — the exception is BPPV or vestibular neuritis.** Reversed, the exception is a **third window**: an inner-ear lesion giving a **conductive** loss.\n\nSrc: L20",
+        "qs": [
+          "entqb-ear9-255",
+          "entqb-ear9-256"
+        ]
+      },
+      {
+        "id": "vert-6",
+        "w": "must",
+        "h": "The four look-alikes — duration decides",
+        "body": "|Feature|**BPPV**|**MÉNIÈRE’S**|**VESTIBULAR NEURITIS**|**LABYRINTHITIS**|\n|---|---|---|---|---|\n|**DURATION**|**SECONDS**|**minutes to HOURS**|**DAYS, continuous**|**DAYS, continuous**|\n|**TRIGGER**|**CHANGE OF HEAD POSITION** — turning in bed, lying back, looking up|**spontaneous**, episodic|**spontaneous, after a URTI**|**after a URTI or OTITIS MEDIA**|\n|**HEARING LOSS**|**NONE**|**fluctuating LOW-frequency SNHL**|**NONE**|**HIGH-frequency SNHL**|\n|**TINNITUS / FULLNESS**|**no**|**YES — both**|**no**|may occur|\n|**Nausea, vomiting**|mild|yes|**SEVERE**|severe|\n|**Fatigability**|**FATIGABLE**|no|no|no|\n|**Test that decides**|**DIX–HALLPIKE positive**|**PTA: LOW-frequency SNHL**|**ENG/VNG: unilateral vestibular weakness**|**PTA: HIGH-frequency SNHL**|\n|**Treatment**|**EPLEY repositioning**|low-salt diet + diuretic|symptomatic, then rehabilitation|treat the cause|\n\n- **SECONDS → BPPV · HOURS + hearing loss → MÉNIÈRE’S · DAYS without hearing loss → NEURITIS · DAYS with hearing loss → LABYRINTHITIS.**\n- **CONSCIOUSNESS IS NEVER LOST in any of the four** — a blackout is Type II dizziness. **Vertigo lasting days is never Ménière’s**; **neuritis is the nerve alone, labyrinthitis the whole labyrinth.**\n\nSrc: L20",
+        "qs": [
+          "entep-ear-99",
+          "entep-ear-65",
+          "entqb-ear9-248",
+          "entqb-ear9-242",
+          "entep-mfe5-2"
+        ]
+      },
+      {
+        "id": "vert-7",
+        "w": "must",
+        "h": "Benign paroxysmal positional vertigo",
+        "body": "**THE COMMONEST PERIPHERAL VERTIGO, and the commonest peripheral EPISODIC vertigo.**\n\n**TRIAD: a) vertigo for SECONDS · b) in CERTAIN HEAD POSITIONS · c) FATIGABLE.**\n\n- **CANALOLITHIASIS — otoconia dislodged from the UTRICULAR MACULA fall into a canal and deflect the cupula with gravity** *(not in course material)*.\n- **The POSTERIOR canal is much the commonest, being the most DEPENDENT**; lateral next, anterior rare *(ranking not in course material)*.\n- **No hearing loss, no tinnitus, no neurological signs. Otoscopy, PTA and CALORIC all NORMAL; fistula sign negative** — a normal caloric separates it from vestibular neuritis.\n\n|Step|What|\n|---|---|\n|**DIAGNOSIS**|**DIX–HALLPIKE (Hallpike) POSITIONING TEST**, for **posterior-canal** BPPV|\n|Positive test|**latency of seconds → torsional up-beating nystagmus with vertigo → FATIGUES on repetition → REVERSES on sitting** *(signature not in course material)*|\n|**TREATMENT, 1st line**|**REPOSITIONING / POSITIONAL EXERCISE — not drugs, not surgery. The EPLEY manoeuvre** (posterior canal)|\n|Alternatives|**Semont** manoeuvre · **Brandt–Daroff** home exercises · the **roll (barbecue)** manoeuvre for the lateral canal *(not in course material)*|\n|Not helpful|**vestibular sedatives and antihistamines MASK the attack and DELAY central compensation**|\n|Intractable|singular neurectomy, canal occlusion *(not in course material)*|\n\n- **DIX–HALLPIKE DIAGNOSES, EPLEY TREATS** — the same vignette is asked both ways.\n- **Defect note:** Grade Gain prints one BPPV stem as vertigo lasting **\"minutes\"** where L20 says **seconds** — keyed as printed.\n\nSrc: L20; positioning test L13,14",
+        "qs": [
+          "entep-ear-20",
+          "entep-ear-40",
+          "entep-ear-85",
+          "entep-ear-106",
+          "entep-ear-111",
+          "entep-ear-120",
+          "entep-ear-194",
+          "entqb-ear9-241",
+          "entqb-ear9-243",
+          "entqb-ear9-244",
+          "entqb-ear9-249",
+          "entqb-ear9-258",
+          "entep-case-33"
+        ]
+      },
+      {
+        "id": "vert-8",
+        "w": "must",
+        "h": "Ménière’s disease",
+        "body": "**IDIOPATHIC ENDOLYMPHATIC HYDROPS — distension of the ENDOLYMPH compartment, i.e. RAISED ENDOLYMPHATIC PRESSURE.** Prosper Menière, 1799–1862.\n\n|Tetrad|Detail|\n|---|---|\n|**Episodic VERTIGO**|**minutes to HOURS**, recurrent, with nausea and vomiting|\n|**FLUCTUATING SNHL**|**LOW-FREQUENCY, unilateral, progressive — the ONLY peripheral cause of a low-frequency loss**|\n|**TINNITUS**|in the affected ear|\n|**AURAL FULLNESS**|pressure in the ear|\n\n- **CONSCIOUSNESS IS NEVER LOST**, and there is **no reservoir sign** — canal refilling with pus after mopping belongs to a suppurating middle ear. **The drum is INTACT.**\n- **Rinne positive both sides, WEBER TO THE BETTER (opposite) EAR** — so a Weber to the left names a **right** Ménière’s.\n\n|Treatment ladder|Step|\n|---|---|\n|**1**|**LOW-SALT DIET + DIURETICS** — first line, aimed at the hydrops|\n|**2**|**INTRATYMPANIC CORTICOSTEROID**|\n|**3**|**INTRATYMPANIC GENTAMICIN** — chemical ablation of the vestibular end organ|\n|**4a**|**Surgery, SERVICEABLE hearing → SELECTIVE VESTIBULAR NEURECTOMY** (abolishes vertigo, keeps hearing)|\n|**4b**|**Surgery, NO serviceable hearing → LABYRINTHECTOMY** (destroys hearing, so only a profoundly deaf ear)|\n\n- **Betahistine between attacks**, to improve inner-ear blood flow *(not in course material)*.\n- **ANTIVIRALS HAVE NO ROLE — hydrops, not infection.** Prolonged bed rest delays compensation; surgery is the last step, never the first.\n\nSrc: L20",
+        "qs": [
+          "entep-ear-18",
+          "entep-ear-42",
+          "entep-ear-44",
+          "entep-ear-61",
+          "entep-ear-175",
+          "entep-ear-195",
+          "entep-ear-227",
+          "entep-ear-239",
+          "entqb-ear9-245",
+          "entqb-ear9-246",
+          "entqb-ear9-260",
+          "entqb-ear9-261",
+          "entep-case-22"
+        ]
+      },
+      {
+        "id": "vert-9",
+        "w": "must",
+        "h": "Vestibular neuritis and labyrinthitis",
+        "body": "**VESTIBULAR NEURITIS — FOLLOWING URTI · SEVERE VERTIGO · FOR DAYS.**\n\n- **Functional failure / inflammation of the VESTIBULAR DIVISION ALONE. THE COCHLEAR DIVISION IS SPARED, so HEARING IS NORMAL** and there is no tinnitus.\n- Severe **nausea and vomiting**, prostrate. **Otoscopy normal, neurological examination normal, consciousness intact.**\n- **Nystagmus spontaneous, horizontal, FAST PHASE TO THE HEALTHY EAR**, suppressed by fixation. **ENG/VNG shows UNILATERAL VESTIBULAR WEAKNESS** — the bank prints this as a \"weak vestibular nerve\"; the caloric on that side is reduced.\n- **Symptomatic antiemetics and anti-vertiginous drugs SHORT TERM, then VESTIBULAR REHABILITATION.** Continuing sedatives delays compensation.\n- **Neither exertion nor head position triggers it** — attacks appearing during activity after a cold are still neuritis.\n\n**LABYRINTHITIS = inflammation of the INNER EAR itself — so vertigo AND hearing loss together.**\n\n|Labyrinthitis|Detail|\n|---|---|\n|**Viral labyrinthitis**|L20’s entry: peripheral vertigo with **UNILATERAL HIGH-FREQUENCY SNHL**, lasting days|\n|**Suppurative labyrinthitis**|**follows acute or chronic suppurative otitis media** — vertigo, nystagmus and SNHL in an infected ear; may spread to the meninges *(the route is not in course material)*|\n|**Discriminator**|**HEARING. Neuritis spares it; labyrinthitis does not.**|\n\nSrc: L20",
+        "qs": [
+          "entep-ear-19",
+          "entep-ear-34",
+          "entep-ear-105",
+          "entep-ear-198",
+          "entep-ear-206",
+          "entep-ear-209",
+          "entqb-ear9-247",
+          "entep-case-34"
+        ]
+      },
+      {
+        "id": "vert-10",
+        "w": "high",
+        "h": "Vestibular schwannoma",
+        "body": "**Struck through on L20’s peripheral list because it is RETROCOCHLEAR, not labyrinthine** — a vestibular nerve sheath tumour at the cerebellopontine angle.\n\n- **UNILATERAL, PROGRESSIVE HIGH-FREQUENCY SNHL with tinnitus, and UNSTEADINESS rather than acute rotational vertigo** — slow growth allows central compensation. **The loss never fluctuates**, which separates it from Ménière’s.\n- **SPEECH DISCRIMINATION POOR OUT OF PROPORTION TO THE PURE-TONE AUDIOGRAM** — the retrocochlear signature *(criterion not in course material)*.\n- **ABR: DELAYED WAVE V and PROLONGED INTERWAVE LATENCY** *(latency criteria not in course material)*. Normal wave V, normal intervals and normal discrimination argue against it.\n- **IMAGING OF THE PETROUS BONE AND POSTERIOR FOSSA** — MRI with gadolinium is the gold standard.\n\nSrc: L20; speech discrimination and ABR L13,14",
+        "qs": [
+          "entqb-ear9-251"
+        ]
+      },
+      {
+        "id": "vert-11",
+        "w": "high",
+        "h": "Third-window lesions, labyrinthine fistula, and the mixed group",
+        "body": "**A THIRD WINDOW is an extra opening into the inner ear beside the oval and round windows — L20 files it under CONDUCTIVE hearing loss. Every row of the table below except the hearing loss itself is *(not in course material)*.**\n\n|**Superior semicircular canal dehiscence**|Feature|\n|---|---|\n|**Hearing loss**|**CONDUCTIVE, with a NORMAL middle ear and drum**|\n|Mechanism|air-conducted sound **leaks out**; bone-conduction thresholds become supranormal|\n|**vs OTOSCLEROSIS**|**STAPEDIAL REFLEX PRESERVED in a dehiscence, ABSENT in otosclerosis**|\n|**TULLIO PHENOMENON**|**SOUND-induced vertigo — classic cause is SSCD**|\n|**Hennebert’s sign**|**PRESSURE-induced vertigo** through the same hole|\n|Also|autophony; high-resolution temporal bone CT confirms|\n\n- **FISTULA TEST — Siegle’s speculum or TRAGAL COMPRESSION. Vertigo and nystagmus on pressure = POSITIVE = a third window or a labyrinthine fistula.** Negative in BPPV, Ménière’s and neuritis.\n- **CSOM WITH FISTULA — cholesteatoma erodes into a canal, giving a MIXED loss and a positive fistula sign. THE LATERAL (HORIZONTAL) CANAL IS THE ONE ERODED**, its prominence bulging into the attic and aditus *(the canal is named on no cached ENT slide)*. Threatens hearing and meninges.\n- **OTOTOXICITY — BILATERAL high-frequency SNHL with unsteadiness and oscillopsia rather than rotational vertigo** (aminoglycosides, cisplatin, loop diuretics — *drug classes not in course material*).\n- **OTOSCLEROSIS and TEMPORAL BONE TRAUMA** complete the mixed-loss group.\n\nSrc: L20",
+        "qs": [
+          "entqb-ear9-252",
+          "entqb-ear9-253",
+          "entqb-ear9-254"
+        ]
+      },
+      {
+        "id": "vert-12",
+        "w": "must",
+        "h": "Assessment and general treatment",
+        "body": "|Stage|Content|\n|---|---|\n|**1. HISTORY — the first step, settles 80 %**|**a) DURATION · b) PRECIPITATING FACTORS · c) ASSOCIATED MANIFESTATIONS**|\n|**2. Clinical examination** — confirms, rarely diagnoses|**a) general medical · b) NEUROLOGICAL · c) EYE examination FOR NYSTAGMUS · d) EAR examination**|\n|**3. Audiological**|PTA — it assigns the case to a row of the hearing-loss grid|\n|**4. Vestibular**|**they CONFIRM, they do not diagnose**|\n|**5. Imaging**|**petrous bone and posterior fossa**|\n|**6. Laboratory**|—|\n\n- **Not MRI, not EEG, not PTA first — HISTORY FIRST.**\n- What a vestibular result means here: **caloric NORMAL in BPPV and REDUCED on the affected side in neuritis; COWS — Cold Opposite, Warm Same — names the FAST phase; a positive fistula sign means a third window.**\n\n|General treatment|Step|\n|---|---|\n|**1**|**COUNSELLING AND ASSURANCE** — over 90 % of causes are benign|\n|**2**|**SYMPTOMATIC — ANTI-EMETICS and ANTI-VERTIGINOUS drugs**|\n|**3**|**TREATMENT OF THE CAUSE**|\n|**4**|**VESTIBULAR REHABILITATION EXERCISES**|\n\nSrc: L20; caloric and COWS L13,14",
+        "qs": [
+          "entqb-ear9-257"
+        ]
+      }
+    ]
   }
 };
