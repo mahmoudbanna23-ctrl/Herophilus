@@ -1964,5 +1964,149 @@ var T_ENT = {
         ]
       }
     ]
+  },
+  "ent-paedlar": {
+    "intro": "Two questions settle most of this chapter: does the cry change, and when did the noise start. After that it is croup against epiglottitis, and the numbers the bank asks straight out — 60 %, 10 %, 4 mm, 2:1, 1:3, 1:4.",
+    "sections": [
+      {
+        "id": "paed-1",
+        "w": "must",
+        "h": "Development, and why the infant larynx is different",
+        "body": "**4th arch → SUPRAglottis** (superior laryngeal nerve). **6th arch → GLOTTIS and SUBglottis** (recurrent laryngeal nerve, itself 6th arch). **The cricothyroid is the only intrinsic muscle NOT supplied by the RLN** — it takes the **external branch of the SUPERIOR laryngeal nerve**.\n**Embryonic phase 0–8 weeks = organogenesis. Fetal phase 9 weeks – 7 months = organ maturation.** The lumen is briefly obliterated by epithelium and must **recanalise**; arrest gives a **web, subglottic stenosis or atresia**.\n\n|Infantile larynx|Consequence|\n|---|---|\n|**Small** relative to body surface area|—|\n|**HIGHER — C3–4**|—|\n|**FUNNEL shaped, subglottis 4.5 mm** at term|**narrowest point = CRICOID**, the only complete ring, so oedema goes inward. **Adult: GLOTTIS narrowest, larynx cylindrical**|\n|**Epiglottis LONG, tubular, folded on itself (omega)**|collapses inward|\n|**SHORT aryepiglottic fold**|tethers the epiglottis back|\n|**Big arytenoids, SHORT vocal cords**|—|\n|**Softer cartilage**|collapse — laryngomalacia|\n|**LOOSE submucosa**, loosely attached to mucosa|**oedema forms freely** — the answer to “why so liable to severe oedema”|\n|**Premature neuromuscular control**|**cord spasm**|\n|**Premature cough reflex**|**FB aspiration**|\n\n- **Poiseuille’s law** — resistance rises with the **4th power** of the radius: 1 mm of oedema in a 4.5 mm airway is catastrophic, in an adult nothing.\n- Defect: one printing keys *“adult epiglottis is curved and folded”* — the omega epiglottis is the **infant’s**. Key as printed.\n- Defect: recanalisation keyed at the **7th month** off the fetal-phase line; standard embryology says ~10 weeks *(not in course material)*. Key as printed.\n\nSrc: L12; L6; cricothyroid supply L1.1, L11",
+        "qs": [
+          "entqb-thr5-248",
+          "entqb-thr5-249",
+          "entqb-thr5-250",
+          "entqb-thr5-251",
+          "entqb-thr5-255",
+          "entqb-thr8-378",
+          "entqb-thr8-379"
+        ]
+      },
+      {
+        "id": "paed-2",
+        "w": "must",
+        "h": "The congenital anomalies — rank, cry, onset, phase",
+        "body": "**Order of incidence: LARYNGOMALACIA (60 %) > congenital VC paralysis (10 %) > congenital subglottic stenosis > laryngeal web > posterior laryngeal cleft.** **Commonest is not most serious — subglottic stenosis is third and the most serious.**\n\n|Presentation|Lesions|\n|---|---|\n|**STRIDOR**, persistent or recurrent|laryngomalacia · congenital subglottic stenosis · **bilateral ABDUCTOR** cord paralysis · **thick** laryngeal web|\n|**ABNORMAL / WEAK CRY**|**laryngeal web** · vocal cord paralysis|\n|**ASPIRATION / CHOKING**|**bilateral ADDUCTOR** cord paralysis · **severe** laryngomalacia · **posterior laryngeal cleft**|\n\n- **THE CRY LOCALISES THE LESION.** Abnormal or weak cry = lesion **on the cords** — web or palsy. Normal cry = cords spared, so **supraglottic** (laryngomalacia) or **subglottic** (stenosis, haemangioma). **Stridor + weak cry = WEB · stridor + normal cry = SUBGLOTTIC STENOSIS.**\n- **ONSET DATES IT.** *Immediately after birth* — **subglottic stenosis, congenital VC paralysis**. *First week* — **laryngomalacia**. *First 6 months* — **subglottic haemangioma**.\n- **PHASE SITES IT. Inspiratory = supraglottic or glottic · biphasic = subglottic or tracheal (fixed) · expiratory = bronchial.**\n- **Rankings follow the adjective:** congenital and neonatal → **laryngomalacia** · **extralaryngeal** congenital → **VASCULAR RING** · infectious → **croup**.\n- Defect: two printings key **acute non-specific laryngitis** as commonest cause of stridor “in infants” and “in children”, off the first line of the children column, while the same lecture’s laryngomalacia slide calls that the most frequent cause in children. Read **acute** against **chronic**; keys as printed.\n- **Congenital EXTRAlaryngeal: cystic hygroma · congenital goitre · thymic remnants and cysts · mediastinal swellings, e.g. teratoma · tracheal stenosis · tracheomalacia · VASCULAR RING**; dermoid cyst among the external anomalies. A ring encircles trachea **and** oesophagus.\n\nSrc: L12; L6",
+        "qs": [
+          "entqb-thr5-252",
+          "entqb-thr5-253",
+          "entqb-thr5-254",
+          "entqb-thr5-271",
+          "entqb-thr8-393",
+          "entqb-thr8-395",
+          "entqb-thr8-400",
+          "entqb-thr8-404",
+          "entqb-thr8-435",
+          "entep-throat-29",
+          "entep-throat-101",
+          "entep-mfe5-13"
+        ]
+      },
+      {
+        "id": "paed-3",
+        "w": "must",
+        "h": "Laryngomalacia — the disease",
+        "body": "**Laryngo = larynx, malacia = abnormal flaccidity: COLLAPSE OF THE SUPRAGLOTTIC COMPONENTS DURING INSPIRATION — epiglottis, aryepiglottic folds, arytenoids.**\n\n|Figure|Value|\n|---|---|\n|**Commonest congenital laryngeal anomaly**|**60 %**|\n|**Commonest cause of chronic stridor in infants**|—|\n|**Boys : girls**|**2 : 1**; commoner in **prematures**|\n|**GERD association**|**80–90 %** (one printing says 75–80 %)|\n|**Synchronous airway anomalies**|**15–20 %**|\n|**Spontaneous resolution**|**18–24 months in 80–90 %**; improved by age 2 in **90 %**|\n\n**High-pitched INSPIRATORY stridor** from the **first days to weeks** — not at birth — harsh, crowing, intermittent, **worsening over 6–9 months** before it settles.\n**WORSE: supine · feeding · agitation and crying · neck flexion. BETTER: prone · neck extension · held upright · mandible elevated.**\n**Cry and voice NORMAL · feeding NORMAL (interrupted only in severe cases) · general condition NORMAL · no aspiration.**\n- **Positional variation is the discriminator** — a fixed lesion does not change with posture.\n- **Olney types** *(classification not in course material)*: **1 tight aryepiglottic folds · 2 redundant arytenoid mucosa · 3 POSTERIOR DISPLACEMENT OF THE EPIGLOTTIS** — the three structures the lecture lists as collapsing, and the three supraglottoplasty addresses.\n\nSrc: L12; L6",
+        "qs": [
+          "entep-throat-97",
+          "entep-enr-16",
+          "entqb-thr5-257",
+          "entqb-thr5-282",
+          "entqb-thr8-392",
+          "entep-throat-case-16"
+        ]
+      },
+      {
+        "id": "paed-4",
+        "w": "must",
+        "h": "Laryngomalacia — confirming it, and when to operate",
+        "body": "**Diagnosis = clinical picture + ENDOSCOPY. NO diagnostic radiological feature** — imaging cannot confirm it. **Flexible endoscopy under local**, or **rigid direct endoscopy under GA only during INDUCTION and RECOVERY** — a fully anaesthetised child does not collapse the supraglottis.\n**Endoscopy: OMEGA-shaped (infantile) epiglottis · SHORT aryepiglottic fold · REDUNDANT MUCOSA over tall, thin, flaccid arytenoids · epiglottis collapsing on inspiration · signs of GERD.** *“Long aryepiglottic fold”* is the standing keyed falsehood.\n**Conservative, and the answer in a thriving baby: 1) ASSURANCE OF THE PARENTS · 2) ANTI-REFLUX — feeding type, position, proton pump inhibitor, prokinetic · 3) FOLLOW-UP, monitoring GROWTH and respiratory distress.**\n**Surgery, indicated by any one of: severe stridor with CYANOTIC ATTACKS · weight loss, FAILURE TO THRIVE · chest deformity (PECTUS EXCAVATUM) · pulmonary hypertension / cor pulmonale · hypoxia, hypercarbia.**\n**SUPRAGLOTTOPLASTY (laser): aryepiglottic fold lysis · trimming or partial amputation of the epiglottis · vaporisation or removal of redundant supra-arytenoid mucosa and the lateral epiglottic borders.** **Tracheostomy is the second option** — it bypasses rather than treats.\n- Defect: one “except” calls a **glottic web** untypical of *congenital laryngeal stenosis* while listing three laryngomalacia findings; the stem means laryngomalacia, and read literally a web **is** a congenital stenosis. Key as printed.\n\nSrc: L12; L6",
+        "qs": [
+          "entqb-thr5-258",
+          "entqb-thr5-259",
+          "entqb-thr5-260",
+          "entqb-thr5-261",
+          "entqb-thr5-262",
+          "entqb-thr9-451"
+        ]
+      },
+      {
+        "id": "paed-5",
+        "w": "must",
+        "h": "The other four congenital lesions",
+        "body": "|Lesion|Numbers and causes|Presentation|Treatment|\n|---|---|---|---|\n|**CONGENITAL VC PARALYSIS**|**10 % of congenital laryngeal lesions. Bilateral : unilateral = 1 : 4.** **Unilateral (Lt > Rt)** — cardiovascular anomalies (**VSD, Fallot’s tetralogy, PDA**); surgery for **T-E fistula**, congenital heart disease, cervical oesophagostomy. **Bilateral** — **central** (**meningomyelocele, Arnold-Chiari, bulbar palsy**), **birth trauma** (prolonged 2nd stage, **forceps**), hereditary very rare|**Unilateral: WEAK BREATHY CRY**, aspiration of pharyngeal secretions, choking and cyanotic attacks on feeding (rare). **Bilateral: severe inspiratory stridor IMMEDIATELY after birth**, better asleep, worse on activity|**Unilateral — NONE, resolves spontaneously.** **Bilateral — tracheotomy and follow-up**, then arytenoidectomy or cordotomy|\n|**CONGENITAL SUBGLOTTIC STENOSIS**|**< 4 mm at term, < 3 mm preterm; normal 4.5 mm.** **3rd commonest, THE MOST SERIOUS.** Cartilaginous or soft-tissue. Failure of complete recanalisation|**Severe: stridor and cyanosis IMMEDIATELY after birth. Mild–moderate: PERSISTENT CROUP (stridor > 3 weeks) · difficult intubation under GA · DIFFICULT DECANNULATION.** **BIPHASIC** — fixed narrowing at a complete ring. Cry normal|Conservative + follow-up if mild · **tracheotomy and follow-up, many outgrow it** · endoscopic|\n|**LARYNGEAL WEB**|Fibrous band from **INCOMPLETE RECANALISATION**. Thin membranous / fibrous / cartilaginous. **GLOTTIC commonest** · interarytenoid (posterior glottic) · subglottic, with SG stenosis in **1 : 3** · supraglottic very rare|**ABNORMAL CRY OR VOICE**; **feeding normal**; distress and stridor **only with a thick large web** or the associated stenosis. Clinical, endoscopy, lateral X-ray and CT|**Bronchoscopic dilatation · MLS + KEEL insertion · laser incision + keel · laryngofissure + keel**|\n|**SUBGLOTTIC HAEMANGIOMA**|**Vascular malformation from mesodermal rests**, subglottic. **50 % have haemangiomas elsewhere in the head and neck. FEMALE : MALE = 2 : 1** — reverse of laryngomalacia|**Inspiratory stridor at ~6 MONTHS** as it proliferates, worse on crying and feeding. **Endoscopy and imaging — NEVER BIOPSY**|**PROPRANOLOL first-line** *(not in course material — the slide predates it)*. Slide list: **tracheotomy, follow-up for spontaneous regression at 2–4 years** · corticosteroid, systemic or intralesional · laser · interferon · cryosurgery · external irradiation · excision|\n\n- Defect: one vignette keys **subglottic stenosis** off a *“normal cry”*, which does not separate it from laryngomalacia — both spare the cords — while its own wording (worse on feeding or crying) is the lecture’s laryngomalacia line. Key as printed.\n\nSrc: L6; L12",
+        "qs": [
+          "entqb-thr5-256",
+          "entqb-thr5-289",
+          "entqb-thr5-297",
+          "entqb-thr9-452",
+          "entqb-thr9-458"
+        ]
+      },
+      {
+        "id": "paed-6",
+        "w": "must",
+        "h": "The acute laryngeal infections of childhood",
+        "body": "**ACUTE NON-SPECIFIC LARYNGITIS is the umbrella and it holds three: acute VIRAL LARYNGITIS · acute EPIGLOTTITIS (= supraglottitis) · acute LARYNGOTRACHEOBRONCHITIS (= CROUP).** A fourth, membranous LTB, is asked here and is on no slide.\n\n||**VIRAL LARYNGITIS**|**CROUP** (LTB)|**EPIGLOTTITIS**|**MEMBRANOUS LTB** *(not in course material)*|\n|---|---|---|---|---|\n|Level|glottic|**SUBglottic**|**SUPRAglottic**|tracheal|\n|Organism|**rhinovirus, RSV, parainfluenza, adenovirus**|**PARAINFLUENZA** (RSV next)|***H. INFLUENZAE type b, 90 %***, other 10 %|***Staph. aureus***, strep, Moraxella, Haemophilus|\n|Age|any|**6 months – 3 years**|**2–6 y (L12) · 3–7 y (L6)**|any child|\n|Onset|days|**GRADUAL, days**|**RAPIDLY PROGRESSIVE, overnight**|after a viral illness|\n|Fever|low grade|low grade|**> 38.5 °C**|**high**|\n|Cough|dry|**BARKING**|**ABSENT**|harsh|\n|Voice|**hoarse, dysphonia**|**HOARSE**|**MUFFLED**|—|\n|Swallow|normal|normal|**SEVERE ODYNOPHAGIA, DROOLING**|—|\n|Posture|normal|normal|**sitting upright, neck extended, irritable, open mouth**|**TOXIC**|\n|Stridor|**only under 1 year**|**BIPHASIC**|**INSPIRATORY**|**biphasic**|\n|Film / scope|—|**STEEPLE sign** — ballooned hypopharynx, narrowed subglottis|**THUMBPRINT (“cucumber”) sign**, lateral neck film|**fibrinous membrane**, thick purulent secretions|\n\n- **Croup: commonest infectious cause of airway obstruction in children**, and commonest cause of laryngitis in children. **Runny nose then a barking cough** opens it.\n- **LARYNGOSCOPY IS CONTRAINDICATED IN EPIGLOTTITIS. The HIB vaccine cut incidence by > 90 %**, but it *can occur at any age*.\n- **Sign and phase follow the level:** supraglottic → inspiratory → thumbprint, **lateral** film; subglottic → biphasic → steeple, **AP** film.\n- Defect: one vignette states *“no cough or fever”* then prints 39.1 °C — transcribed as printed.\n\nSrc: L12; L6",
+        "qs": [
+          "entep-throat-3",
+          "entep-throat-102",
+          "entep-mfe1-2",
+          "entep-enr-7",
+          "entqb-thr5-263",
+          "entqb-thr5-264",
+          "entqb-thr5-266",
+          "entqb-thr5-267",
+          "entqb-thr5-268",
+          "entqb-thr5-270",
+          "entqb-thr5-273",
+          "entqb-thr5-274",
+          "entqb-thr5-275",
+          "entqb-thr5-276",
+          "entqb-thr5-278",
+          "entqb-thr5-284",
+          "entqb-thr5-287",
+          "entqb-thr8-436",
+          "entep-throat-case-21"
+        ]
+      },
+      {
+        "id": "paed-7",
+        "w": "must",
+        "h": "Treating the four",
+        "body": "|Disease|Treatment|\n|---|---|\n|**Acute viral laryngitis**|**CONSERVATIVE — NO ANTIBIOTIC.** Antipyretics · humidification · decongestants · **voice rest**|\n|**Croup**|Good hydration · analgesics, antipyretics · **NEBULISED RACEMIC EPINEPHRINE** · **steroids, systemic AND nebulised** · antibiotics · **severe obstruction, rare: intubation or tracheostomy**|\n|**Acute epiglottitis**|**EMERGENCY — SECURE THE AIRWAY FIRST: intubation, tracheostomy if that fails.** Then **steroids in MASSIVE dose** · **CEFTRIAXONE immediately** · analgesics, antipyretics, fluids, observation. **Constant hospital supervision mandatory; never managed at home.** Do not examine the throat|\n|**Membranous LTB** *(not in course material)*|**PULMONARY TOILET — bronchoscopic clearance of pus and pseudomembrane — plus IV anti-staphylococcal antibiotics**, usually with intubation and intensive care|\n\n- Defect: one “except” asserts **ampicillin-sulbactam is “most used”** where the slide names **ceftriaxone** and never mentions it, so that stem arguably carries two false options. Key as printed.\n\nSrc: L12; L6",
+        "qs": [
+          "entqb-thr5-265",
+          "entqb-thr5-269",
+          "entqb-thr5-277",
+          "entqb-thr5-279",
+          "entqb-thr5-280",
+          "entqb-thr5-290",
+          "entqb-thr5-295"
+        ]
+      },
+      {
+        "id": "paed-8",
+        "w": "must",
+        "h": "JORRP, and the benign laryngeal tumours",
+        "body": "**Benign laryngeal tumours, the whole slide: MULTIPLE JUVENILE PAPILLOMATOSIS · CHONDROMA · HAEMANGIOMA.** Malignant ones are sited by **when** stridor appears: **glottic and supraglottic → LATE · subglottic → EARLY**.\n\n**JORRP — juvenile-onset recurrent respiratory papillomatosis.**\n- **Aetiology: HPV**, recognised as the agent for over two decades; **types 6 and 11**.\n- **Commonest BENIGN tumour of the larynx**; infants and children.\n- *“A frustrating disease”* on the two counts the slide names: **RECURRENCE TENDENCY** and **AIRWAY COMPROMISE**.\n- **Residual viral genome persists in tissue treated by standard surgical therapy → CHRONICITY and RECURRENCE.**\n- **Despite multiple therapeutic protocols, NO CONSISTENTLY EFFECTIVE TREATMENT of RRP is available.**\n- **Multiple · recurrent · seeds onto traumatised epithelium — implantation, the isomorphic phenomenon. So AVOID TRACHEOSTOMY.**\n- **NOT precancerous** — the standing “all except”. **Spontaneous involution at puberty.**\n- Picture: **months of hoarseness**, then **stridor**, **afebrile**, **warty growths on both cords** narrowing the respiratory chink.\n- **Treatment: endoscopic debulking — laser, microdebrider — with mitomycin, valacyclovir, indol-3-carbinol, isotretinoin.** **Intralesional CIDOFOVIR is the commonest medical adjunct** *(not in course material)*.\n\nSrc: L6 (JORRP slides, benign tumour list); L2 (HPV 6/11, involution, avoid tracheostomy, drug list)",
+        "qs": [
+          "entep-throat-68",
+          "entep-throat-137",
+          "entep-mfe4-10"
+        ]
+      },
+      {
+        "id": "paed-9",
+        "w": "know",
+        "h": "Three more the bank asks",
+        "body": "- **Developmental lesions — the slide names them and stops: SACCULAR CYST and LARYNGOCELE.** Cyst = **fluid-filled, no communication** with the lumen; laryngocele = **air-filled dilatation of the saccule that does communicate** *(distinction not in course material)*. **Neither is a recanalisation failure** — that gives subglottic stenosis, web or atresia; **laryngomalacia is flaccidity of normally formed structures**.\n- **Cri du chat — 5p deletion** *(whole entity not in course material)*: **microcephaly and intellectual disability**, **HIGH-pitched cat-like cry** from a small larynx with a **diamond-shaped posterior glottic chink** — **structurally abnormal**, and **glottic**, so no biphasic stridor.\n- **Inhaled foreign body**, the line one case here turns on: **choking attack while eating → quiet interval → persistent cough, dyspnoea or unilateral wheeze** in a toddler. **Rigid bronchoscopy under GA**; a normal film excludes nothing. Incidence, impaction sites and the expiratory film sit in `ent-stridor`.\n\nSrc: L6 (developmental slide); L12 (foreign body); cri du chat unsourced",
+        "qs": [
+          "entqb-thr9-453",
+          "entep-throat-case-19"
+        ]
+      }
+    ]
   }
 };

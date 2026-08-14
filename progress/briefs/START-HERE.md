@@ -783,6 +783,9 @@ if the receiving chapter actually gets it.**
 | `ent-earanat` (L16) | Attic-retraction cholesteatoma, safe vs unsafe, perforation types, mastoid disease, the tegmen-erosion complication lists | `ent-csom` | ✅ already written |
 | `ent-facial` (L22) | Auricle, EAC, TM layers and landmarks, annulus, middle-ear walls and parts, ossicles, mastoid air-cell types, Eustachian tube, inner ear | `ent-earanat` | ✅ **delivered 2026-08-14** |
 | `ent-facial` (L15) | **Myringotomy as a procedure** and its indications. Only the keyed line — myringotomy is the FIRST measure in facial palsy complicating AOM — kept | `ent-aom` | ☐ **⚠️ aom is already merged; add at reconciliation** |
+| `ent-paedlar` (L6) | **Causes of laryngeal paralysis** — central vs peripheral and the surgical list. The congenital cord-palsy facts that ARE tested are written in `paed-5` | `ent-vocal` | ☐ **still owed — 2nd chapter to defer it** |
+| `ent-paedlar` (L2) | The full **RRP treatment list**, the **adult-onset** form, and the rest of the hoarseness deck | `ent-hoarse` | ☐ |
+| `ent-paedlar` (L12) | The entire **foreign-body half** — incidence, the six reasons, impaction sites, phases, the expiratory film, rigid bronchoscopy. Verified present in `strid-6`/`strid-7` before deferring | `ent-stridor` | ✅ already written |
 
 ### 14.6 What this costs, said plainly
 
