@@ -731,6 +731,32 @@ at merge; over budget by >10 % goes back for compression, not into the app.**
 by hand at 2,400 from L6 alone and the agent was right to challenge it: the chapter also draws on
 L12 and L11, so the formula gives the 3,000 cap. Run `wc -w` on the files you actually use.
 
+> **⚠️⚠️ COUNT ONLY THE PART YOU USE — BY LINE RANGE — AND NEVER COUNT A HALF YOU DEFERRED.**
+> Two rules, and the second was found the hard way.
+>
+> **(a) The line-range rule.** Where a chapter rests on part of a deck, name the line ranges and count
+> **only those**; where a deck contributes a single clause, list it as *cited only, not counted*.
+> Claiming a whole file for one clause makes the budget meaningless, and dropping it to zero
+> understates the chapter. `ent-nasalmass` counted 193 of L31's 456 words across three named ranges;
+> `ent-audio` counted 1,009 of L13,14's 1,671 and 305 of L19.1's 661; `ent-hearing` then took 356
+> more of L19.1 **by naming ranges around what `ent-audio` had already spent.** That is the standard.
+>
+> **(b) ⚠️ DEFERRING AND COUNTING ARE OPPOSITES — whatever goes into your deferral list comes OUT of
+> your TERM 1.** Found 2026-08-14 by `ent-otorrhea` auditing its own inheritance: `ent-otalgia` had
+> counted the **whole 684 words** of `L17,18` while writing only the otalgia half and deferring the
+> otorrhoea half onward, and `ent-otorrhea` then correctly counted those same 218 words again. **The
+> deck was billed twice across two chapters, inflating the first one's budget by the exact size of
+> what it gave away.** Neither chapter's content is wrong and neither needs rewriting — but the budget
+> measures what a chapter *carries*, and a chapter cannot carry what it handed on. **State the split
+> in your header** — *"lines 3–86 are mine, 87–249 are `ent-otalgia`'s"* — as `ent-otorrhea` and
+> `ent-hearing` both did.
+>
+> **⚠️ One consequence has no clean answer and must simply be stated:** a fact can arrive by deferral
+> while its words stay charged elsewhere, when the two chapters split a *slide* rather than a
+> section. `ent-hearing`'s seven hearing-loss types sit inside a two-column slide `ent-audio` had
+> already counted for the severity ladder. **Say so in the header rather than double-counting or
+> silently dropping it.**
+
 > **⚠️⚠️ REVISED 2026-08-14 — THE WORD COUNT ALONE IS NOT THE BUDGET, BECAUSE A DIAGRAM DECK
 > EXTRACTS TO ALMOST NOTHING:**
 >
@@ -819,14 +845,14 @@ if the receiving chapter actually gets it.**
 | `ent-stridor` (L6) | **JORRP / RRP** — HPV aetiology, recurrence tendency, airway compromise, no consistently effective treatment | `ent-paedlar` | ✅ **delivered 2026-08-14** — `paed-8` |
 | `ent-stridor` (L6) | **Benign laryngeal tumours** — juvenile papillomatosis, **chondroma**, haemangioma | `ent-paedlar` | ✅ **delivered 2026-08-14** — `paed-8`, the whole slide |
 | `ent-stridor` (L6) | **Causes of laryngeal paralysis** — central vs peripheral (traumatic, neuritis, neuropathy, neoplastic, idiopathic); surgical: neck/laryngeal trauma, thyroid surgery, **R.N.D**, tracheostomy, **scalene LN biopsy** | `ent-vocal` | ☐ |
-| `ent-otalgia` (L17,18) | **The entire OTORRHOEA half of the deck** — the four discharge types and their cause lists · **CSF otorrhoea** (temporal bone fracture types, halo sign, β2-transferrin, β2-trace protein, head elevation + CSF-pressure-lowering drugs, repair) · "no mucous glands in the EAC" · mucopurulent vs purulent attribution · **bloody otorrhoea and glomus tumours in full** | `ent-otorrhea` | ☐ |
-| `ent-otalgia` (L17,18 / L16) | **The safe-vs-unsafe CSOM DISCHARGE table** | `ent-otorrhea` + `ent-csom` | ☐ |
+| `ent-otalgia` (L17,18) | **The entire OTORRHOEA half of the deck** — the four discharge types and their cause lists · **CSF otorrhoea** (temporal bone fracture types, halo sign, β2-transferrin, β2-trace protein, head elevation + CSF-pressure-lowering drugs, repair) · "no mucous glands in the EAC" · mucopurulent vs purulent attribution · **bloody otorrhoea and glomus tumours in full** | `ent-otorrhea` | ✅ **delivered 2026-08-14** — `otor-1`/`2`/`3`/`4`/`7`/`8` — CSF and glomus written ONCE, not twice to satisfy two promises |
+| `ent-otalgia` (L17,18 / L16) | **The safe-vs-unsafe CSOM DISCHARGE table** | `ent-otorrhea` + `ent-csom` | ✅ **delivered 2026-08-14** — `otor-4` — only the four discharge rows; `ent-csom` already carries the full fifteen-row comparison |
 | `ent-otalgia` (L16) | **Acute and coalescent mastoiditis in full**, mastoid fistula, cortical mastoidectomy, the complication lists, cholesteatoma, **Gradenigo's triad in full** | `ent-csom` | ☐ |
 | `ent-otalgia` (L22) | The two cartilage-deficient areas and the **end-aural incision**, **fissures of Santorini**, "up and back", Eustachian tube, middle-ear walls and contents, inner ear | `ent-earanat` | ☐ |
 | `ent-otalgia` (L15) | **Ramsay Hunt** prognosis (30 % full recovery), aciclovir, the steroid regimen, contrast with Bell's palsy | `ent-facial` | ☐ |
 | `ent-otalgia` (L21.1) | **ASOM staging and treatment** | `ent-aom` | ✅ already written |
 | `ent-aom` (L21.1) | Otitis externa, otomycosis, **malignant otitis externa**, furunculosis, hard impacted wax, bullous myringitis | `ent-otalgia` | ✅ **delivered 2026-08-14** |
-| `ent-csom` (L17,18) | **CSF otorrhoea** in full · **bloody otorrhoea and glomus tumours** | `ent-otorrhea` | ☐ |
+| `ent-csom` (L17,18) | **CSF otorrhoea** in full · **bloody otorrhoea and glomus tumours** | `ent-otorrhea` | ✅ **delivered 2026-08-14** — `otor-2`/`otor-3`/`otor-7`/`otor-8` — the same deck row 1 deferred, delivered once |
 | `ent-csom` (L17,18 / L22 / L15) | **Otitis externa in full** · the **four-nerve referred-otalgia** table · ear anatomy detail · facial-nerve disorders | `ent-otalgia` ✅ / `ent-earanat` ☐ / `ent-facial` ☐ |
 | `ent-csom` (L4) | **Pharyngeal suppurations** — only the Bezold's → parapharyngeal clause kept | `ent-pharsupp` | ✅ **delivered 2026-08-14** |
 | `ent-pharsupp` (L1.2) | Pharyngeal divisions, **Waldeyer's ring**, the constrictors and the **inferior-constrictor dehiscence**, blood supply, nerve-supply diagrams, the swallowing phases. Only the tonsillar bed and **crypta magna** kept | `ent-pharanat` | ☐ |
@@ -880,9 +906,9 @@ if the receiving chapter actually gets it.**
 | `ent-dysph` (L8) | **The phoniatric protocol** — only the laryngeal click kept | `ent-phon` | ☐ **⚠️ 2ND CHAPTER TO OWE IT — `ent-hoarse` registered it first** |
 | `ent-dysph` (L5) | The **neck-mass differential** — only the cystic swelling kept | `ent-neck` | ☐ |
 | `ent-dysph` (L2) | The **supraglottic/glottic/subglottic carcinoma table** — verified present in `hoar-8`, which also already carries the Plummer–Vinson-is-premalignant-for-postcricoid-not-laryngeal line | `ent-hoarse` | ✅ already written |
-| `ent-hearing` (L19.2 lines 85–148) | The **otorrhoea slides appended to the cached tinnitus file** | `ent-otorrhea` | ☐ **⚠️⚠️ 3RD CHAPTER TO OWE THIS DECK — `ent-otalgia` and `ent-csom` registered it first and it is STILL UNWRITTEN. See the note below the table.** |
+| `ent-hearing` (L19.2 lines 85–148) | The **otorrhoea slides appended to the cached tinnitus file** | `ent-otorrhea` | ✅ **delivered 2026-08-14** — `otor-1`/`4`/`7` |
 | `ent-hearing` (L19.2 lines 120–148) | The **otalgia slides** — verified already written in the merged chapter before deferring, not assumed | `ent-otalgia` | ✅ already written |
-| `ent-hearing` (L19.1) | **Glomus as a lesion in its own right** — jugulare/tympanicum, staging, embolisation. Only the pulsatile-tinnitus presentation kept | `ent-otorrhea` | ☐ |
+| `ent-hearing` (L19.1) | **Glomus as a lesion in its own right** — jugulare/tympanicum, staging, embolisation. Only the pulsatile-tinnitus presentation kept | `ent-otorrhea` | ✅ **delivered 2026-08-14** — `otor-8` — jugulare/tympanicum, Fisch staging A–D, pre-op embolisation |
 | `ent-hearing` (L20) | **Ménière's in full** — only the low-frequency audiometric signature kept | `ent-vertigo` | ✅ **delivered 2026-08-14** — `vert-8` |
 | `ent-hearing` (L16/L17,18) | **Cholesteatoma / unsafe CSOM** | `ent-csom` | ✅ already written |
 | `ent-hearing` (L21.2) | **Secretory otitis media in full** | `ent-aom` | ✅ already written |
@@ -890,6 +916,10 @@ if the receiving chapter actually gets it.**
 | `ent-vertigo` (L20/L13,14) | **The vestibular battery as procedures** — verified present in `aud-10` before deferring | `ent-audio` | ✅ already written |
 | `ent-vertigo` (L20) | **CSOM / cholesteatoma as subjects** | `ent-csom` | ✅ already written |
 | `ent-vertigo` (L20) | **Otosclerosis, ototoxicity and acoustic neuroma as entities** | `ent-hearing` | ✅ already written |
+| `ent-otorrhea` (L16) | **Mastoiditis, cholesteatoma and the complication lists** | `ent-csom` | ✅ already written — verified before deferring |
+| `ent-otorrhea` (L17,18 lines 87–249 · L19.2 lines 120–148) | **The whole otalgia half** | `ent-otalgia` | ✅ already written — verified before deferring |
+| `ent-otorrhea` (L15) | **Facial palsy from temporal-bone fracture as a subject** — only the 10 % longitudinal / 40 % transverse palsy rates kept, which `L15` does print and are therefore sourced | `ent-facial` | ☐ **⚠️ facial is already merged; reconciliation work** |
+| `ent-otorrhea` (L19.1) | **Haemotympanum, and the CHL/SNHL lists as hearing loss** | `ent-hearing` | ✅ already written |
 
 > **⚠️⚠️ `ent-otorrhea` IS NOW OWED THE SAME OTORRHOEA DECK BY THREE CHAPTERS INDEPENDENTLY** —
 > `ent-otalgia`, `ent-csom` and `ent-hearing`, none of which knew of the others. That is not

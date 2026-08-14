@@ -3485,5 +3485,134 @@ var T_ENT = {
         ]
       }
     ]
+  },
+  "ent-otorrhea": {
+    "intro": "Four types, and each one names the tissue that made it. Examined as: clear fluid after a road accident, an itchy painless canal full of black specks, mucus that can only be middle ear, and blood behind an intact drum.",
+    "sections": [
+      {
+        "id": "otor-1",
+        "w": "must",
+        "h": "The four types — and the rule that makes the classification work",
+        "body": "**Otorrhoea = ear discharge. Name the TYPE first — it names the TISSUE, and the tissue names the disease.**\n\n|Type|Tissue|Causes|\n|---|---|---|\n|**WATERY / SEROUS**|**subarachnoid space**|**CSF** — trauma (temporal bone fracture) · **post acoustic tumour removal** · post skull-base surgery|\n|**MUCOID / MUCOPURULENT**|**MIDDLE-EAR MUCOSA — nothing else**|**CSOM tubo-tympanic (safe)** · **AOM after perforation**|\n|**PURULENT**|canal skin, or bone stripped of mucosa|**external otitis** · **CSOM attico-antral (unsafe)**|\n|**BLOODY**|vessel or vascular tumour|**trauma** — skull-base fracture, minor EAC trauma · **tumour** — **glomus**, **carcinoma of EAC**|\n|**COMBINATIONS**|—|a listed type: blood-stained mucopus = CSOM with granulations|\n\n- **⚠️ THE MASTER RULE: NO MUCOUS GLANDS IN THE EAC. MUCUS ALWAYS COMES FROM THE MIDDLE EAR.** Mucus proves a middle-ear source **and** a hole in the drum. No mucus = canal disease, or middle-ear mucosa dead or eroded.\n- **Two names for the same four types** — `L17,18` **watery** / **mucopurulent**, `L19.2` **serous** / **mucoid**. Option lists use both.\n- **Side and smell, before otoscopy:** unilateral clear = CSF · unilateral fetid in a **child** = foreign body · unilateral fetid in an **adult** = cholesteatoma · bilateral profuse = safe CSOM or otitis externa.\n\nSrc: L17,18 lines 19–86; L19.2 lines 85–119",
+        "qs": [
+          "entqb-ear6-165",
+          "entqb-ear6-171",
+          "entqb-ear6-173"
+        ]
+      },
+      {
+        "id": "otor-2",
+        "w": "must",
+        "h": "Watery (serous) otorrhoea = CSF until proved otherwise",
+        "body": "**Clear watery discharge from one ear is a breach of the skull base, not an infection.** Infection discharges mucus or pus; a bare perforation discharges nothing.\n\n**CAUSES:** **head trauma with temporal bone fracture** (commonest) · **post acoustic tumour / CPA surgery** · **post skull-base surgery** · rarely spontaneous, through a tegmen defect.\n\n**TEMPORAL BONE FRACTURE — the two types** *(the deck prints the slide title only; anatomy and findings not in course material, the palsy rates are L15’s)*\n\n|Type|Line|Ear findings|Facial palsy|\n|---|---|---|---|\n|**LONGITUDINAL** (~80 %, commoner)|parallel to the petrous axis, through canal roof and middle ear|**CSF OTORRHOEA** + bleeding from a torn drum · **CONDUCTIVE loss** · Battle sign|**10 %**|\n|**TRANSVERSE** (~20 %)|across the petrous pyramid, through the labyrinth|**INTACT drum + HAEMOTYMPANUM**, no otorrhoea — CSF runs down the tube to the nose · **SNHL + vertigo**|**40 %**|\n\n**CONFIRMING IT — the three the lecture names:**\n- **HALO (double-ring) sign** — a drop on gauze spreads as a central blood spot with a clear ring. **Bedside, suggestive, NOT diagnostic.**\n- **BETA-2 TRANSFERRIN** — **the confirmatory test.** The isoform exists only in CSF, perilymph and aqueous humour.\n- **BETA TRACE PROTEIN** — the alternative confirmatory assay, faster and cheaper.\n- **Glucose sticks are unreliable** — tears, mucus and blood all read positive. **HRCT temporal bone** localises the defect after confirmation; tympanometry and audiometry answer a different question *(both not in course material)*.\n\nSrc: L17,18 lines 26–37; L15 (fracture percentages); L19.2 lines 91–97",
+        "qs": [
+          "entep-ear-10",
+          "entqb-ear6-165",
+          "entqb-ear6-166"
+        ]
+      },
+      {
+        "id": "otor-3",
+        "w": "must",
+        "h": "CSF otorrhoea — management, and the one complication that matters",
+        "body": "**⚠️ TRAUMATIC LEAKS USUALLY STOP BY THEMSELVES.** `L17,18`: *“usually responds to conservative management”*. **Conservative first; not immediate repair, and not reassurance with a routine outpatient appointment.**\n\n|Step|Content|\n|---|---|\n|**1 Conservative**|**ELEVATION OF THE HEAD** · **drugs to LOWER CSF PRESSURE** · **STRICT WATER PRECAUTIONS** · avoid nose-blowing, straining, coughing · **close follow-up**|\n|**2 Confirm / localise**|beta-2 transferrin or beta trace protein · HRCT temporal bone|\n|**3 If it does not stop**|**exploration and repair**|\n|**Post skull-base surgery**|the lecture lists it as its own cause; managed the same way|\n\n- **⚠️ MENINGITIS is the feared complication** — an open route into the subarachnoid space, and what turns a persistent leak into a surgical problem. **Not facial palsy, hearing loss or tinnitus** — those come from the fracture, not the leak.\n- Acetazolamide is the usual pressure-lowering drug; pneumococcal vaccination in a persistent leak; routine prophylactic antibiotics are not given *(not in course material)*.\n\nSrc: L17,18 lines 38–45",
+        "qs": [
+          "entep-enr-8",
+          "entqb-ear6-167",
+          "entqb-ear6-175"
+        ]
+      },
+      {
+        "id": "otor-4",
+        "w": "must",
+        "h": "Mucoid vs purulent — reading the discharge back to the tissue",
+        "body": "**Mucus can only be middle ear. Run the rule backwards and the differential falls out:**\n\n|Discharge|Middle-ear mucosa|Diagnoses|\n|---|---|---|\n|**MUCOPURULENT / MUCOID**|**alive and inflamed — MUCOSITIS**|**CSOM tubo-tympanic (SAFE)** · **AOM after perforation**|\n|**PURULENT, no mucus**|**absent, dead or never involved**|**external otitis** — canal skin only · **CSOM attico-antral (UNSAFE)** — osteitis, mucosa replaced by cholesteatoma · **acute necrotic OM** — mucosa sloughed|\n\n**⚠️ Absence of mucus in a purulent otorrhoea therefore occurs in external ear disease, acute necrotic OM and UNSAFE CSOM — and NEVER in safe CSOM, which is mucositis by definition.**\n\n**THE DISCHARGE ALONE SEPARATES SAFE FROM UNSAFE** (*Otorrhea in CSOM*):\n\n||**SAFE — tubo-tympanic (MUCOSITIS)**|**UNSAFE — attico-antral (OSTEITIS)**|\n|---|---|---|\n|Character|**MUCOPURULENT**|**PURULENT**|\n|Amount|**PROFUSE**|**SCANTY**|\n|Pattern|**INTERMITTENT** — flares with a cold or water|**CONTINUOUS**|\n|Smell|**ODOURLESS**|**FETID**|\n\n- **Scanty + continuous + fetid = cholesteatoma until the attic is seen.** Perforation site, granulations, X-ray and treatment belong to chronic otitis media.\n- **ASOM discharge after perforation is profuse and odourless**; the pain relieves as it appears.\n- **Acute necrotic OM** — measles or scarlet fever in a child, rapid sloughing of drum and mucosa, so purulent, mucus-free, large perforation *(entity detail not in course material)*.\n- **Acute mastoiditis: profuse mucopurulent with a positive RESERVOIR SIGN** — re-accumulates immediately after cleaning.\n\nSrc: L17,18 lines 46–69; L19.2 lines 98–113; L16 (reservoir sign)",
+        "qs": [
+          "entqb-ear6-171"
+        ]
+      },
+      {
+        "id": "otor-5",
+        "w": "must",
+        "h": "Otomycosis — the itchy, PAINLESS discharging ear",
+        "body": "`L17,18`, printed as its own slide: **“Otomycosis is painless. Associated pain = associated bacterial infection.”**\n\n|Feature|Otomycosis|\n|---|---|\n|**Cardinal symptom**|**ITCHING** — not pain, hearing loss, offensive smell or pain on jaw movement|\n|**Otoscopy**|**fungal hyphae or debris, “WET NEWSPAPER”-like** · **white/greyish debris studded with BLACK SPECKS** (Aspergillus spore heads) · creamy-white curd (Candida) · wet patches|\n|**Organisms**|**ASPERGILLUS — A. niger commonest, the black specks — AND CANDIDA ALBICANS.** Not Staph. aureus, which is furunculosis|\n|**Predisposing**|**hot weather · humidity · sweating · manipulation and scratching · immune deficiency (DIABETES) · allergy · pre-existing discharge · topical ANTIBIOTIC drops**|\n|**Pain present?**|**secondary bacterial otitis externa** — tender tragus, pain on pulling the auricle. Treat both|\n\n**TREATMENT — THE ORDER IS ITSELF AN ANSWER:**\n\n**1 CLEAN** the debris — instrumentation, **suction**, or **ear wash** → **2 DRY THOROUGHLY** → **3 salicylic acid in alcohol drops** (acidify and dry) → **4 TOPICAL ANTIFUNGAL — clotrimazole drops, ear pack with Castellani paint, boric acid 4 %.**\n\n- **⚠️ Drops over a debris-filled canal never reach the skin** — which is why clearance comes first, and why any sequence beginning with drops is wrong.\n- **Repeated suction + topical antifungal is the treatment of choice**, diabetic or not. **Systemic antifungals are not the treatment; antibiotic drops are a CAUSE, not a cure.**\n- **Itchy + painless + black specks in a diabetic is still otomycosis.** It becomes **malignant otitis externa** only with deep night pain, granulations and cranial nerve signs.\n\nSrc: L17,18 lines 216–230",
+        "qs": [
+          "entep-ear-9",
+          "entep-ear-26",
+          "entep-ear-160",
+          "entep-ear-193",
+          "entep-ear-219",
+          "entqb-ear2-34",
+          "entqb-ear2-35",
+          "entqb-ear2-36",
+          "entqb-ear2-44",
+          "enthd-ear-29",
+          "entep-case-5"
+        ]
+      },
+      {
+        "id": "otor-6",
+        "w": "high",
+        "h": "Otitis externa and malignant otitis externa — the discharge face",
+        "body": "**DIFFUSE EXTERNAL OTITIS** — diffuse hyperaemia, **discharge and debris**, pain on tragal pressure. Discharge **purulent, mucus-free** (canal skin has no mucous glands). Treat: **aural toilet · topical antibiotic + steroid drops · treat the predisposing factor.**\n\n**MALIGNANT (NECROTISING) EXTERNAL OTITIS = SKULL-BASE OSTEOMYELITIS. “Malignant” is the BEHAVIOUR — an infection, NOT a neoplastic disease.**\n\n- **Host: immunocompromised — DIABETES classically, also renal failure, HIV, haematologic and immune deficiency.** **Organism: PSEUDOMONAS AERUGINOSA.** **ESR raised** — used to diagnose and to follow response.\n- **Discharge + GRANULATIONS in the canal**; pain chronic, **worse at night**, disabling; cranial nerve palsies and intracranial spread make it **potentially fatal**.\n- **Biopsy the granulations as well as debriding them — to rule out malignancy**, because carcinoma of the canal presents identically.\n- **Control the causative factor** + **long anti-pseudomonal systemic antibiotics (3–6 months, usually IV combination)**. The full account, imaging list and hyperbaric oxygen belong to otalgia.\n\nSrc: L17,18 lines 172–215",
+        "qs": [
+          "entep-ear-94",
+          "entep-case-5"
+        ]
+      },
+      {
+        "id": "otor-7",
+        "w": "must",
+        "h": "Bloody otorrhoea — two groups, and what not to do",
+        "body": "|Group|Causes|\n|---|---|\n|**TRAUMA**|**skull-base / temporal bone fracture** — blood, often with CSF · **minor trauma to the EAC** — cotton bud, fingernail, instrumentation, a self-inflicted laceration|\n|**TUMOUR**|**GLOMUS tumour** · **CARCINOMA OF THE EAC**|\n\n- **Blood plus clear fluid after a head injury = base-of-skull fracture.** **Do not pack, do not syringe, do not instrument the canal** — keep it dry and let it drain.\n- **Blood-stained discharge with no trauma is a tumour until the canal and the drum have been seen.** A recurring canal **granulation gets biopsied**; a **red mass behind an intact drum does NOT**.\n- **Combinations** are a listed type: blood-stained mucopus is CSOM with granulations rather than a tumour.\n\nSrc: L17,18 lines 70–86; L19.2 lines 114–119",
+        "qs": [
+          "entqb-ear6-173",
+          "entqb-ear6-174"
+        ]
+      },
+      {
+        "id": "otor-8",
+        "w": "must",
+        "h": "Glomus tumour (paraganglioma) — the vascular mass behind the drum",
+        "body": "`L17,18` names glomus as a cause of bloody otorrhoea and asks for pathology, main types, presentation, investigations and treatment — then prints those five words as headings with no content. *Supplied below and not taken from the course material, except the bloody-otorrhoea attribution and pulsatile tinnitus, which are on the slides.*\n\n|Item|Glomus|\n|---|---|\n|**Pathology**|**benign, slow-growing, LOCALLY DESTRUCTIVE, intensely VASCULAR** neuroendocrine tumour of **paraganglion cells** at the **jugular bulb** and along **Jacobson’s (IX) and Arnold’s (X) nerves**. **Commonest tumour of the middle ear.** Middle-aged **women**; may be multicentric or familial; a minority secrete catecholamines|\n|**Main types**|**GLOMUS TYMPANICUM** — confined to the middle ear, on the promontory · **GLOMUS JUGULARE** — arises at the **jugular bulb**, erodes the jugular foramen and skull base|\n|**Presentation**|**PULSATILE TINNITUS — the EARLIEST symptom**, synchronous with the pulse · **conductive loss** · **BLOODY otorrhoea** once it ulcerates through the drum · **red-blue PULSATING MASS behind an intact drum, the “rising sun”** · **BROWN’S SIGN** — blanches and stops pulsating under positive pneumatic pressure · late **IX–XII palsies (jugular foramen syndrome)** in glomus jugulare|\n|**Investigations**|**HRCT** — moth-eaten erosion; **PHELPS SIGN**, erosion of the caroticojugular spine, separates jugulare from tympanicum · **MRI/MRA** — “salt-and-pepper” flow voids · **angiography** — feeders and the route for embolisation · **urinary catecholamines / VMA** pre-op|\n|**Fisch staging**|**A** middle ear only · **B** + mastoid, no infralabyrinthine erosion · **C** infralabyrinthine + petrous apex (C1–C4 by carotid involvement) · **D** intracranial extension|\n|**Treatment**|**SURGICAL EXCISION** with **PRE-OPERATIVE EMBOLISATION 24–48 h beforehand** to cut blood loss · **radiotherapy** for extensive disease, elderly, unfit · observation if small and asymptomatic|\n\n- **⚠️ NEVER BIOPSY A VASCULAR MASS BEHIND THE DRUM** — it bleeds torrentially. **Image first.**\n\nSrc: L17,18 lines 79–86 (headings only); L19.2 (paraganglioma as pulsatile tinnitus); remainder not in course material",
+        "qs": [
+          "entqb-ear6-173"
+        ]
+      },
+      {
+        "id": "otor-9",
+        "w": "high",
+        "h": "Carcinoma of the external auditory canal",
+        "body": "|Item|Carcinoma of the EAC|\n|---|---|\n|**Histology**|**SQUAMOUS CELL CARCINOMA** — commonest cancer of the ear canal, and **SCC is the commonest malignant tumour of the head and neck region** overall. Basal cell carcinoma belongs to the **pinna** and exposed skin; **adenoid cystic** arises from ceruminous glands, rare; **melanoma** rarer *(comparative epidemiology not in course material)*|\n|**Risk**|**long-standing CSOM** — malignant transformation of a chronically discharging ear|\n|**Presentation**|**BLOODY otorrhoea** · **deep boring pain out of proportion to the signs** · **granulations recurring after treatment** · late facial palsy, pre-auricular nodes|\n|**⚠️ Trap**|**indistinguishable on inspection from chronic infection and malignant otitis externa**|\n|**Rule**|**BIOPSY ANY CANAL GRANULATION THAT RECURS OR FAILS TO SETTLE** — which is why the lecture already requires biopsy of granulations in malignant otitis externa|\n|**Treatment**|lateral or subtotal temporal bone resection + post-operative radiotherapy *(not in course material)*|\n\nSrc: L17,18 lines 76–78, 213–214; epidemiology and treatment not in course material",
+        "qs": [
+          "entqb-ear6-174"
+        ]
+      },
+      {
+        "id": "otor-10",
+        "w": "must",
+        "h": "Wax, ear syringing, and the foreign body",
+        "body": "*The lecture lists hard impacted wax only, as a rare canal cause; indications, contraindications and foreign-body management below are not in course material.*\n\n|Ear wash (syringing)|Items|\n|---|---|\n|**INDICATED**|**impacted wax** · **seborrhoeic and diffuse otitis externa** — aural toilet · **otomycosis** — debris clearance, then dry thoroughly|\n|**⚠️ CONTRAINDICATED**|**FOREIGN BODY — irrigation drives it deeper and swells a vegetable body** · known or suspected **perforation / active CSOM** · **only-hearing ear** · previous ear surgery|\n|**Complications**|**IATROGENIC TM RUPTURE** — sudden severe pain, **fluid felt or tasted in the throat** (water has crossed the perforation into the Eustachian tube), **no hearing improvement afterwards** · vertigo if the water is not body-temperature · otitis externa|\n\n**FOREIGN BODY IN THE EAR**\n- **⚠️ Commonest cause of unilateral FETID discharge in a CHILD = neglected foreign body**, until the canal is seen. **The same smell in an adult means cholesteatoma.** Not acute or chronic otitis media.\n- **No blind or repeated attempts** — each pushes it deeper, lacerates the canal and risks the drum.\n- **By type:** irregular/graspable → **crocodile forceps** · **smooth round bead → a HOOK passed BEYOND it and drawn back**, never forceps (they slip and push it in) · light debris → suction · **live insect → kill with oil or lignocaine first**.\n- **⚠️ GENERAL ANAESTHESIA + OPERATING MICROSCOPE** when the child is **very young or uncooperative**, the object is **deep, smooth and totally occluding**, it is impacted on the drum, or one attempt has failed. **A nine-month-old with a deep occluding bead is a theatre case.**\n\nSrc: L17,18 line 135 (hard impacted wax); L17,18 lines 223–226 (clearance and drying); remainder not in course material",
+        "qs": [
+          "entep-ear-80",
+          "entep-ear-115",
+          "entqb-ear6-172",
+          "entep-case-6"
+        ]
+      },
+      {
+        "id": "otor-11",
+        "w": "must",
+        "h": "Traumatic perforation of the tympanic membrane — the interval decides",
+        "body": "*Not covered by any cached ENT deck; supplied except the myringoplasty ladder, which is L16’s.*\n\n**CAUSES:** **slap on the ear** — the classic, compression of the canal air column · blast · **iatrogenic during ear wash or instrumentation** · welding spark · skull-base fracture · diving and barotrauma.\n\n|Feature|Traumatic perforation|\n|---|---|\n|**Perforation**|**IRREGULAR, ragged margins, PARS TENSA**, often blood-stained — against the smooth round central perforation of healed CSOM|\n|**Symptoms**|**pain at the instant of injury**, then **conductive deafness** and **tinnitus** · scanty **bloody** discharge · **WHISTLING ON BLOWING THE NOSE — proof the drum is open**|\n|**⚠️ Red flag**|**SNHL, severe vertigo or nystagmus = inner-ear injury** (perilymph fistula, ossicular dislocation) — a different problem|\n\n**MANAGEMENT — THE INTERVAL DECIDES, NOT THE MECHANISM:**\n\n|Age of the perforation|Management|\n|---|---|\n|**Fresh, up to 3 months**|**WATCHFUL WAITING + STRICT WATER PRECAUTIONS.** Most close spontaneously. **No drops, no packing, no syringing, no swimming**; antibiotics only if infected|\n|**Persisting 3–6 months+**|**will not close by itself → MYRINGOPLASTY**|\n\n- **Antibiotic ear drops are not indicated** in a clean dry traumatic perforation; aminoglycoside drops are potentially ototoxic through an open drum.\n- **Myringotomy is the wrong operation** — it makes a hole in a drum that already has one.\n\nSrc: L16 (myringoplasty / tympanoplasty); remainder not in course material",
+        "qs": [
+          "entep-ear-11",
+          "entep-ear-38",
+          "entep-mfe5-11",
+          "entep-case-25",
+          "entep-case-6"
+        ]
+      }
+    ]
   }
 };
