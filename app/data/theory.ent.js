@@ -2210,5 +2210,198 @@ var T_ENT = {
         ]
       }
     ]
+  },
+  "ent-otalgia": {
+    "intro": "Ninety-five per cent of ear pain is the ear; five per cent is a normal ear and a lesion elsewhere on V, IX, X or C2–C3. Examined three ways: the tragal sign, the diabetic whose drops fail, and which nerve refers what.",
+    "sections": [
+      {
+        "id": "otal-1",
+        "w": "must",
+        "h": "The 95:5 split, and the sensory supply of the ear",
+        "body": "**Otalgia = pain in the ear. LOCAL 95 %** — a lesion **in the ear or a nearby structure**. **REFERRED 5 %** — a lesion in a **remote area having the same nerve supply**.\n**Normal auricle, canal and drum with real pain = REFERRED**, until mouth, teeth, TMJ, tonsil, larynx, hypopharynx and cervical spine have been examined.\n\n|Part|Sensory supply|\n|---|---|\n|Auricle|branchial system — **great auricular + lesser occipital (C2–C3)**, **auriculotemporal (V)**, **auricular branch of vagus (X)**|\n|**External canal**|**V** and **X**|\n|**Tympanic membrane**|**V · IX · X**|\n|**Middle ear**|**IX** (Jacobson’s)|\n\n- **Four nerves reach the ear, so four territories can refer to it.** The vagal canal branch (**Arnold’s nerve**) is why **ear syringing or canal examination provokes cough** *(reflex not in course material)*.\n\nSrc: L17,18; L22",
+        "qs": [
+          "entep-ear-7",
+          "entep-ear-28",
+          "entep-ear-116",
+          "entqb-ear6-157"
+        ]
+      },
+      {
+        "id": "otal-2",
+        "w": "must",
+        "h": "Referred otalgia — four nerves, four territories",
+        "body": "|Nerve|Territory|Causes|\n|---|---|---|\n|**V trigeminal**|**oral cavity, teeth, nose, NASOPHARYNX, sinuses, TMJ**|**dental caries**, **floor-of-mouth ulcer**, oral or nasopharyngeal cancer, sinusitis, **TMJ disease**|\n|**IX glossopharyngeal**|**tonsil and oropharynx**, tongue base|**tonsillitis**, **quinsy**, **POST-TONSILLECTOMY**, tongue-base carcinoma|\n|**X vagus**|**larynx and hypopharynx**|**SUPRAGLOTTIC CARCINOMA**, **PYRIFORM FOSSA tumour**, laryngeal ulcer|\n|**C2–C3**|neck and **cervical spine**|**cervical spine trauma**, spondylosis, **disc prolapse**, neck nodes|\n\n- **Referred otalgia is the EARLY / initial symptom of supraglottic carcinoma** — the most repeated single line in the model exams. **Unilateral otalgia + a normal ear in an older or smoking adult → scope the larynx and hypopharynx.**\n- **NOT referred: any lesion of the ear itself** — acute serous otitis media, ASOM, mastoiditis are all **local**.\n- **The brain is never a source** — it has no somatic sensation. Neck, pharynx, nose and eye all are.\n- **Acoustic neuroma** hurts through the **FACIAL** nerve, not VIII, which carries no pain fibres: **Hitzelberger’s sign** — altered sensation or numbness over the **concha and postero-superior canal wall** *(eponym and anatomy not in course material)*.\n\nSrc: L17,18; L22",
+        "qs": [
+          "enthd-ear-3",
+          "entep-ear-31",
+          "entep-ear-53",
+          "entep-throat-24",
+          "entep-mfe5-42",
+          "entqb-ear1-21",
+          "entqb-ear1-22",
+          "entqb-ear1-23",
+          "entqb-ear6-158",
+          "entqb-ear6-161",
+          "entqb-ear6-162",
+          "entqb-ear6-163",
+          "entqb-ear6-177",
+          "entqb-ear6-178",
+          "entep-case-32",
+          "entep-ear-116"
+        ]
+      },
+      {
+        "id": "otal-3",
+        "w": "must",
+        "h": "Local causes — the map, and the painless list",
+        "body": "**EAR — external (pinna · EAC) and MIDDLE EAR. NEIGHBOURING STRUCTURES — TMJ · parotid gland · pre-auricular lymph nodes.**\n**Auricle: perichondritis · herpes zoster · gout. EAC: acute localized otitis externa (furunculosis) · acute diffuse otitis externa · otomycosis · herpes zoster · malignant external otitis · trauma · rarely HARD IMPACTED WAX and TUMOURS. Middle ear: ASOM before perforation · complicated CSOM · tympanic plexus neuralgia.**\n\n||**PAINFUL**|**PAINLESS**|\n|---|---|---|\n|Auricle|perichondritis, haematoma auris, herpes zoster, gout|—|\n|Canal|**furunculosis**, diffuse and **malignant** otitis externa, hard impacted wax|**OTOMYCOSIS** — pain means secondary bacterial infection · exostosis, osteoma, soft wax|\n|Drum|**bullous myringitis**|—|\n|Middle ear|**ASOM before perforation**, **complicated** CSOM, acute mastoiditis|**uncomplicated CSOM** — “is not a painful condition” · **effusion / glue ear**|\n|Inner ear|—|**LABYRINTHITIS** — no pain fibres in the inner ear|\n|Nearby|TMJ disease, parotitis, pre-auricular lymphadenitis|—|\n\n- **Labyrinthitis is the standing “except” answer** in any painful-condition list; it gives vertigo and hearing loss.\n- **Pain in a known CSOM is never the CSOM** — it means acute exacerbation, a complication, or malignancy.\n\nSrc: L17,18; L16",
+        "qs": [
+          "entep-ear-54",
+          "entep-ear-76",
+          "entep-ear-96",
+          "entqb-ear6-157",
+          "entqb-ear6-164",
+          "enthd-ear-36",
+          "entep-ear-7",
+          "entep-ear-28"
+        ]
+      },
+      {
+        "id": "otal-4",
+        "w": "high",
+        "h": "The auricle — haematoma and perichondritis",
+        "body": "**Perichondritis** — infection of the perichondrium following **trauma to CARTILAGE: a high (cartilaginous) piercing, laceration, surgery, burns, or incising a canal furuncle.** **The LOBULE is spared — it holds no cartilage**, which is why a lobule piercing is safe and an upper-auricle one is not. ***Pseudomonas* is the usual organism** *(organism not in course material)*.\n\n||**HAEMATOMA AURIS**|**PERICHONDRITIS**|\n|---|---|---|\n|After|**blunt lateral blow** — boxer, wrestler|piercing, laceration, burn, **an undrained haematoma**|\n|Feel|**cystic, fluctuant, PAINFUL but NOT tender**, not hot|**red, hot, diffusely swollen, exquisitely TENDER**|\n|Lesion|**subperichondrial blood strips the cartilage from its blood supply**|infection of the perichondrium itself|\n|Treatment|**EVACUATE early** + pressure dressing|**antibiotics WITH surgical incision and drainage**|\n|Untreated|→ **perichondritis** → cauliflower ear|→ **ABSCESS** → **CAULIFLOWER EAR**|\n\n- **Cartilage is avascular: it dies under any collection left sitting on it.** Both complications on the slide are **abscess** and **cauliflower ear**.\n- Defect: one printed box answers **haematoma** treatment under a **perichondritis** stem — key (antibiotics with surgical incision) kept as printed.\n- **Herpes zoster and gout** are the other two auricular causes.\n\nSrc: L17,18",
+        "qs": [
+          "entep-ear-14",
+          "entep-ear-170",
+          "entep-ear-223",
+          "entqb-ear2-30",
+          "entqb-ear2-31",
+          "entqb-ear2-32",
+          "entqb-ear2-46",
+          "enthd-ear-40",
+          "entep-case-1"
+        ]
+      },
+      {
+        "id": "otal-5",
+        "w": "high",
+        "h": "External otitis — the classification and its predisposing factors",
+        "body": "**INFECTIOUS · REACTIVE.** Infectious splits three ways: **BACTERIAL** — localized (**furunculosis**), **diffuse**, **malignant** · **FUNGAL** — otomycosis · **VIRAL** — bullous myringitis, herpes zoster.\n**Predisposing factors, one list for all of them: HOT WEATHER · HUMIDITY · SWEATING · MANIPULATION · IMMUNE DEFICIENCY · ALLERGY · EAR DISCHARGE.**\n- **Hyperhidrosis and diabetes both belong to that list**, and **treating the predisposing factor is part of the cure** — it is step 3 of diffuse otitis externa’s own treatment.\n\nSrc: L17,18",
+        "qs": [
+          "enthd-ear-41",
+          "entqb-ear2-37",
+          "entep-ear-107"
+        ]
+      },
+      {
+        "id": "otal-6",
+        "w": "must",
+        "h": "Furunculosis — localized external otitis",
+        "body": "**A *Staphylococcus aureus* infection of a HAIR FOLLICLE.** So it is confined to the **OUTER ONE THIRD of the canal — cartilaginous, hair-bearing.** The **inner two thirds are BONY and carry no hair follicles** and can never harbour one.\n**Symptom: ear pain. Signs: TENDERNESS ON THE TRAGUS AND ON PULLING THE AURICLE · LOCALIZED SWELLING in the canal ± discharge.** The **drum is normal and intact**. **Pain increases on MASTICATION** — the cartilaginous canal moves with the TMJ.\n**Treatment: SYSTEMIC ANTIBIOTICS + ANALGESIA.**\n\n|Sign at the bedside|Diagnosis|\n|---|---|\n|**Tragal tenderness, pain on pulling the auricle, localized canal swelling**|**FURUNCLE** — outer third|\n|Same tenderness but **diffuse** canal redness and debris, itch first|**diffuse otitis externa**|\n|**Deep** pain, fever, **bulging drum**, **tragus free**|**ASOM** before perforation|\n|**Painless** discharge through a perforation|**CSOM**|\n|**Pinna pushed OUT and DOWN**, post-auricular swelling **filling the sulcus**|**MASTOID ABSCESS** — not a node|\n|Tragal sign positive **plus** a discrete mobile post-auricular node|**furuncle with reactive lymphadenitis**|\n\n- **It is NOT self-limiting**, and **it must not be incised** — the blade seeds avascular cartilage and causes **perichondritis**. **Recurrent attacks → screen for diabetes** *(both not in course material)*.\n- Defect: the bank writes the mastoid pinna as “pushed forwards and downwards” where L16 writes “outwards and downwards” — the same displacement from a different angle.\n\nSrc: L17,18; L22; L16",
+        "qs": [
+          "enthd-ear-18",
+          "enthd-ear-21",
+          "enthd-ear-38",
+          "enthd-ear-44",
+          "entep-ear-39",
+          "entep-ear-143",
+          "entep-ear-152",
+          "entep-ear-167",
+          "entep-ear-168",
+          "entep-ear-171",
+          "entep-ear-217",
+          "entep-ear-240",
+          "entep-enr-2",
+          "entep-enr-35",
+          "entep-enr-36",
+          "entqb-ear2-33",
+          "entqb-ear2-38",
+          "entqb-ear2-42",
+          "entqb-ear4-96",
+          "entqb-ear6-164",
+          "entep-case-4"
+        ]
+      },
+      {
+        "id": "otal-7",
+        "w": "high",
+        "h": "Diffuse external otitis",
+        "body": "**Itch first, then pain and fullness; the canal is exquisitely tender to examine.** **Signs: DIFFUSE HYPERAEMIA of the whole canal · DISCHARGE and DEBRIS** — often serous, with **no single localized swelling**.\n**Treatment: 1) AURAL TOILETTE · 2) TOPICAL ANTIBIOTIC WITH STEROID DROPS · 3) TREAT THE PREDISPOSING FACTOR.**\n- **Localized = one furuncle → SYSTEMIC antibiotics. Diffuse = the whole canal → TOPICAL drops.** That is the treatment difference the two names carry.\n- **Itch preceding pain** points to a fungal or scratched start with bacterial superinfection — treat both.\n\nSrc: L17,18",
+        "qs": [
+          "entep-ear-107",
+          "enthd-ear-31",
+          "enthd-ear-41"
+        ]
+      },
+      {
+        "id": "otal-8",
+        "w": "must",
+        "h": "Malignant otitis externa — necrotizing external otitis, skull base osteomyelitis",
+        "body": "**Not a neoplasm — “malignant” names the behaviour; there are no mitotic figures.** **Serious and potentially fatal**, with **intracranial spread and cranial nerve palsies**.\n**Host: IMMUNOCOMPROMISED — uncontrolled DIABETES, classically ELDERLY · renal failure · HIV · haematologic or immune deficiency disease.** **Organism: *PSEUDOMONAS AERUGINOSA*.** **Microangiopathy → osteomyelitis of the skull base.**\n**Symptoms: PAIN — chronic, WORSE AT NIGHT, may become disabling, far beyond diffuse otitis externa · ear discharge · hearing loss · symptoms of cranial nerve palsies.** **Signs: GRANULATION TISSUE in the canal floor · discharge · CRANIAL NERVES.** The **drum is typically intact**.\n**Suspect it whenever an external otitis fails to improve on topical drops** — the standing vignette is a diabetic ~10 days into drops with no change.\n\n|Structure reached|Deficit|\n|---|---|\n|**Stylomastoid foramen**|**LMN FACIAL PALSY** — the marker that disease has left the canal|\n|**Petrous apex**|**FACIAL PAIN** — trigeminal|\n|**Jugular foramen**|IX, X, XI — dysphagia, hoarseness, shoulder weakness|\n\n**Investigations: CT · MRI · ISOTOPE SCANNING (Tc99, Ga67) · bacteriological testing · BIOPSY**, which also excludes carcinoma.\n**Treatment: 1) CONTROL THE CAUSATIVE FACTOR · 2) hospitalisation may be needed initially · 3) SYSTEMIC ANTI-PSEUDOMONAL ANTIBIOTICS FOR 3–6 MONTHS, usually an IV COMBINATION · 4) DEBRIDEMENT of canal granulations (plus biopsy) · 5) HYPERBARIC OXYGEN.** *(Quinolones are the bank’s named agent; the slide says only “against pseudomonas”.)*\n- **Most feared complication = INTRACRANIAL SPREAD.** A short oral course, watchful waiting and myringotomy are all wrong answers.\n- Defect: one bank keys **V, VI and VII** as the nerves affected; no lecture names any — the slide states only “cranial nerves”, and **VII is classically first**. Keyed as printed.\n- Two printed stems name no disease at all (“infection spreading to which structure…”); both sit in the malignant-otitis-externa block and are read that way.\n\nSrc: L17,18; L16",
+        "qs": [
+          "entep-ear-13",
+          "entep-ear-69",
+          "entep-ear-131",
+          "entep-ear-220",
+          "entep-ear-246",
+          "entqb-ear2-39",
+          "entqb-ear2-40",
+          "entqb-ear2-41",
+          "entqb-ear2-49",
+          "enthd-ear-32",
+          "enthd-ear-33",
+          "enthd-ear-34",
+          "enthd-ear-37",
+          "enthd-ear-39",
+          "enthd-ear-42",
+          "entep-case-3"
+        ]
+      },
+      {
+        "id": "otal-9",
+        "w": "high",
+        "h": "Otomycosis",
+        "body": "**PAINLESS.** **Itching** and blockage are the symptoms — **“otomycosis is painless; associated pain = associated bacterial infection”**, and scratching is what invites it.\n**Signs: FUNGAL HYPHAE OR DEBRIS, “WET NEWSPAPER-LIKE”.** *Aspergillus* and *Candida* *(organisms not in course material)*.\n**Treatment: 1) CLEAR THE FUNGAL DEBRIS — instrumentation, suction, ear wash, then DRY THOROUGHLY · 2) TOPICAL ANTIFUNGALS — CLOTRIMAZOLE drops, ear pack with CASTELLANI PAINT, BORIC ACID 4 %.**\n- **Itching for weeks, then a vigorous scratch, then a tender tragus = both diagnoses at once** — otomycosis with a superimposed bacterial otitis externa; treat both.\n\nSrc: L17,18",
+        "qs": [
+          "enthd-ear-31",
+          "enthd-ear-36",
+          "entqb-ear2-42"
+        ]
+      },
+      {
+        "id": "otal-10",
+        "w": "know",
+        "h": "The viral pair — bullous myringitis and Ramsay Hunt",
+        "body": "**Bullous myringitis is the VIRAL member of the external otitis group** — the slide files it under Viral, and prints its headings with nothing under them. **Haemorrhagic blebs on the drum and deep canal, severe pain out of proportion to the signs, hearing near normal; analgesia, self-limiting, blebs may be de-roofed** *(all detail not in course material)*.\n**Herpes zoster oticus = RAMSAY HUNT SYNDROME: painful herpetic VESICLES of the auricle and EAC + FACIAL PARALYSIS + auditory and vestibular dysfunction.** Full treatment and prognosis sit in `ent-facial`.\n\nSrc: L17,18; L15",
+        "qs": [
+          "entqb-ear2-37"
+        ]
+      },
+      {
+        "id": "otal-11",
+        "w": "know",
+        "h": "The rest of the canal — wax, exostosis, osteoma, trauma",
+        "body": "**Rare local canal causes: HARD IMPACTED WAX · TUMOURS · TRAUMA.** Soft wax is painless.\n\n||**EXOSTOSIS**|**OSTEOMA**|\n|---|---|---|\n|Number|**MULTIPLE**|**SINGLE**|\n|Side|**may be BILATERAL**|unilateral|\n|Base|**broad, sessile**|pedunculated|\n|Site|deep bony canal|bony–cartilaginous junction|\n|Cause|**COLD WATER** swimming or diving|none known|\n|Symptoms|**USUALLY ASYMPTOMATIC**|usually asymptomatic|\n\n- Symptoms appear only when the lesion **occludes the canal or traps wax and water** — and any obstruction of canal or middle ear gives a **CONDUCTIVE loss**, never sensorineural: the cochlea is untouched.\n\nSrc: **whole section not in course material** — neither exostosis nor osteoma appears in any of the 34 cached ENT lecture files; answered from general medical knowledge, and a candidate for the ENT book read.",
+        "qs": [
+          "entqb-ear2-47",
+          "entqb-ear2-48",
+          "entep-ear-7"
+        ]
+      },
+      {
+        "id": "otal-12",
+        "w": "high",
+        "h": "Middle ear and neighbouring structures",
+        "body": "**Middle ear, three causes: 1) ASOM BEFORE tympanic membrane perforation** — severe throbbing pain, relieved by perforating **· 2) COMPLICATED CSOM, e.g. ACUTE MASTOIDITIS** — uncomplicated CSOM does not hurt **· 3) TYMPANIC PLEXUS NEURALGIA — pain is ABOLISHED AFTER INTRATYMPANIC INJECTION OF XYLOCAINE**, which is both the test and the treatment.\n**Neighbouring structures: TMJ · PAROTID GLAND · PRE-AURICULAR LYMPH NODES.**\n- **TMJ disease causes otalgia BOTH WAYS — LOCALLY**, because the joint abuts the anterior canal wall and is listed among the neighbouring structures, **AND BY REFERRAL** through the **auriculotemporal branch of V** *(the branch is not named in course material)*.\n- **TMJ arthritis: severe otalgia not preceded by a URTI, a completely normal ear, pain on MASTICATION and jaw movement, a TENDER joint and a CLICK on opening the mouth.**\n\nSrc: L17,18; L16",
+        "qs": [
+          "entqb-ear6-157",
+          "entqb-ear6-178",
+          "entep-case-32",
+          "entep-ear-28",
+          "entqb-ear4-96"
+        ]
+      }
+    ]
   }
 };

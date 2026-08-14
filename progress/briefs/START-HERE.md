@@ -743,6 +743,13 @@ if the receiving chapter actually gets it.**
 | `ent-stridor` (L6) | **JORRP / RRP** — HPV aetiology, recurrence tendency, airway compromise, no consistently effective treatment | `ent-paedlar` | ☐ |
 | `ent-stridor` (L6) | **Benign laryngeal tumours** — juvenile papillomatosis, **chondroma**, haemangioma | `ent-paedlar` | ☐ |
 | `ent-stridor` (L6) | **Causes of laryngeal paralysis** — central vs peripheral (traumatic, neuritis, neuropathy, neoplastic, idiopathic); surgical: neck/laryngeal trauma, thyroid surgery, **R.N.D**, tracheostomy, **scalene LN biopsy** | `ent-vocal` | ☐ |
+| `ent-otalgia` (L17,18) | **The entire OTORRHOEA half of the deck** — the four discharge types and their cause lists · **CSF otorrhoea** (temporal bone fracture types, halo sign, β2-transferrin, β2-trace protein, head elevation + CSF-pressure-lowering drugs, repair) · "no mucous glands in the EAC" · mucopurulent vs purulent attribution · **bloody otorrhoea and glomus tumours in full** | `ent-otorrhea` | ☐ |
+| `ent-otalgia` (L17,18 / L16) | **The safe-vs-unsafe CSOM DISCHARGE table** | `ent-otorrhea` + `ent-csom` | ☐ |
+| `ent-otalgia` (L16) | **Acute and coalescent mastoiditis in full**, mastoid fistula, cortical mastoidectomy, the complication lists, cholesteatoma, **Gradenigo's triad in full** | `ent-csom` | ☐ |
+| `ent-otalgia` (L22) | The two cartilage-deficient areas and the **end-aural incision**, **fissures of Santorini**, "up and back", Eustachian tube, middle-ear walls and contents, inner ear | `ent-earanat` | ☐ |
+| `ent-otalgia` (L15) | **Ramsay Hunt** prognosis (30 % full recovery), aciclovir, the steroid regimen, contrast with Bell's palsy | `ent-facial` | ☐ |
+| `ent-otalgia` (L21.1) | **ASOM staging and treatment** | `ent-aom` | ✅ already written |
+| `ent-aom` (L21.1) | Otitis externa, otomycosis, **malignant otitis externa**, furunculosis, hard impacted wax, bullous myringitis | `ent-otalgia` | ✅ **delivered 2026-08-14** |
 
 ### 14.6 What this costs, said plainly
 
