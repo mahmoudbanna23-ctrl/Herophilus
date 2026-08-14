@@ -677,6 +677,28 @@ at merge; over budget by >10 % goes back for compression, not into the app.**
 by hand at 2,400 from L6 alone and the agent was right to challenge it: the chapter also draws on
 L12 and L11, so the formula gives the 3,000 cap. Run `wc -w` on the files you actually use.
 
+> **⚠️⚠️ REVISED 2026-08-14 — THE WORD COUNT ALONE IS NOT THE BUDGET, BECAUSE A DIAGRAM DECK
+> EXTRACTS TO ALMOST NOTHING:**
+>
+> **budget = max( summed lecture words , 25 × the chapter's linked question count ) · floor 600 · cap 3,000**
+
+**Why the second term exists.** `L22) Anatomy of Ear Undergraduate` is **538 words for an entire ear
+anatomy lecture** — because it is labelled diagrams, not prose. Measured: **1.2 words per line**
+against `L4) PHARYNGEAL SUPPURATIONS`'s 5.4. Its slide reading *"Middle Ear Cavity / Walls (6)"* is
+four words on the deck and is six walls with their contents, relations and two facial-nerve segments
+in any usable note. The strict formula gave `ent-earanat` **1,261 words for 66 questions** and its
+agent overran by 46 % — correctly, and it itemised the bill: reaching 1,261 meant deleting five
+sections and leaving **22 of the 66 questions unanswerable**.
+
+**A words-per-line under ~2 means you are looking at a diagram deck; say so in the header and use the
+question term.** The second term also tracks the thing that actually drives length — how much of the
+chapter the bank tests — which is the other half of the §14.2 floor.
+
+**⚠️ AND DO NOT COUNT A LECTURE YOU CITE ONCE.** `ent-csom`'s agent declined to claim 1,476 words of
+headroom for a single clause out of `L4`, and `ent-earanat`'s declined 1,557 from `L15` for one line
+about the chorda tympani. Both were right: counting a deck you touch once makes the budget
+meaningless. Count what the chapter **rests on**, cite the rest.
+
 > **⚠️⚠️ THE BUDGET IS A CEILING ON WORDS, NEVER A LICENCE TO DELETE A PROTECTED FACT. If you cannot
 > reach it without cutting one, STOP AT THE FLOOR AND SAY SO, itemising what the next 200 words
 > would cost.** Two agents did exactly that on 2026-08-14 and both were right — the pages came back
