@@ -5216,5 +5216,99 @@ var T_ENT = {
         ]
       }
     ]
+  },
+  "ent-sinuscomp": {
+    "intro": "The one ENT chapter with no lecture. Every question is a route: which sinus, which barrier, which space. Learn the pre-septal / post-septal line, the Chandler ladder, and that a sinus abscess goes to the FRONTAL lobe while an ear abscess goes to the temporal lobe and cerebellum.",
+    "sections": [
+      {
+        "id": "sc-1",
+        "w": "must",
+        "h": "What “complicated” means, the five groups, and the five routes out",
+        "body": "**COMPLICATED RHINOSINUSITIS = ORDINARY SINUS INFECTION THAT HAS ESCAPED THE SINUS** — into the orbit, the bone, the cranium or the blood. The mucosa is no longer the problem.\n\n|Group|Members|\n|---|---|\n|**ORBITAL**|**the commonest group by far** — pre-septal cellulitis, orbital cellulitis, subperiosteal abscess, orbital abscess|\n|**INTRACRANIAL**|meningitis, extradural abscess, subdural empyema, **frontal-lobe abscess**, cavernous and superior sagittal sinus thrombosis|\n|**OSSEOUS**|**Pott’s puffy tumour** (frontal osteomyelitis), osteomyelitis of the maxilla in infants|\n|**LOCAL**|**mucocele / mucopyocele**, chronic osteitis, oro-antral fistula|\n|**DESCENDING / SYSTEMIC**|pharyngitis, otitis media, bronchitis, exacerbation of asthma, septicaemia|\n\n**⚠️ TWO COUNTER-INTUITIVE RULES, BOTH IN THE BANK’S OWN BOXES:**\n- **COMPLICATIONS ARISE MORE OFTEN ON TOP OF *ACUTE* THAN CHRONIC RHINOSINUSITIS** — both do it, but the classic patient is a previously healthy person one week into a cold.\n- **A CHILD WHOSE EYE SWELLS DURING OR JUST AFTER A RESPIRATORY INFECTION HAS COMPLICATED RHINOSINUSITIS UNTIL PROVED OTHERWISE.**\n\n**FIVE ROUTES OUT** *(not in course material)*: **direct bone erosion / osteitis** · **a congenital DEHISCENCE or suture line** — the lamina papyracea is not merely thin but often frankly deficient · **RETROGRADE THROMBOPHLEBITIS ALONG VALVELESS VEINS** (ethmoid-to-orbit, and the diploic veins of the frontal bone) · along neurovascular foramina · trauma or previous surgery.\n- **⚠️ The venous route crosses INTACT bone** — an unbroken wall on CT does not exclude spread.\n\n**WHY CHILDREN** — the bank’s box says **“more in children due to weak ossification”**. Behind it: the lamina papyracea is incompletely ossified and dehiscent · the **ethmoid is pneumatised from birth**, so an infant can have ethmoiditis · the **frontal sinus is absent until ~5–6 years**, so a young child gets orbital complications and cannot get a Pott’s puffy tumour *(the last two not in course material)*.\n\n**PREDISPOSING** *(not in course material)*: young age · diabetes or immunosuppression · **an inadequately dosed or wrongly chosen antibiotic** — the deck’s own worked case · delay · dental origin · virulent organism.\n\nSrc: L27.1 line 285 + its case lines 286–330; GG pp.67–68 boxes. **⚠️ NO L28 — no lecture on this chapter exists; the rest is general knowledge, tagged.**",
+        "qs": [
+          "entqb-nose4-160",
+          "entqb-nose4-162",
+          "entep-nose-case-13"
+        ]
+      },
+      {
+        "id": "sc-2",
+        "w": "must",
+        "h": "⚑ Which sinus leads where — and the sinus/ear contrast the examiner is really testing",
+        "body": "|Sinus|Where its infection goes|Why|\n|---|---|---|\n|**ETHMOID**|**THE ORBIT** — pre-septal → orbital cellulitis → **subperiosteal abscess**|separated from the orbit only by the **LAMINA PAPYRACEA**, the paper-thin medial orbital wall, thinner and more often dehiscent in a child. **Pneumatised at birth**|\n|**FRONTAL**|**ANTERIOR table → POTT’S PUFFY TUMOUR** · **POSTERIOR table → EXTRADURAL / SUBDURAL / FRONTAL-LOBE ABSCESS**|the posterior table is the **thinner** of the two and is the floor of the anterior cranial fossa; **valveless diploic veins** cross both ways|\n|**SPHENOID**|**CAVERNOUS SINUS THROMBOSIS**, cranial nerve palsies, meningitis|the cavernous sinus, internal carotid and optic nerve lie against its lateral wall|\n|**MAXILLARY**|**least often complicated** — odontogenic disease, oro-antral fistula; **osteomyelitis of the maxilla** in infants|thick walls, and it drains into the middle meatus rather than towards anything vital|\n\n**⚠️⚠️ THE SINGLE HIGHEST-VALUE DISCRIMINATION IN THE CHAPTER — AN INTRACRANIAL ABSCESS IS NAMED BY ITS ROUTE:**\n\n|Source|Abscess site|\n|---|---|\n|**PARANASAL SINUS** (frontal, then ethmoid/sphenoid)|**FRONTAL LOBE**|\n|**MIDDLE EAR AND MASTOID** (CSOM)|**TEMPORAL LOBE and CEREBELLUM**|\n\n- **“Temporal lobe” is never a random distractor** — it is the correct answer to the *otological* version of the same question. *(The lobe attribution itself is not in course material; L16 prints the ear’s complication list — meningitis, extradural, subdural and brain abscess, lateral sinus thrombosis — but not the lobe.)*\n- **SINUSITIS IS THE COMMONEST CAUSE OF A FRONTAL-LOBE ABSCESS** — the bank states it twice, in two separate boxes.\n- **The commonest complication of acute ethmoid sinusitis in a child is ORBITAL CELLULITIS**, because the orbit is the *nearest* space; everything else requires the infection to travel further.\n\nSrc: GG p.68 box; endpoint p.965 box; L16 lines 226–230, 292–296; L30 line 162; anatomy in `ent-noseanat`. **The sinus map and the lobe attribution: not in course material.**",
+        "qs": [
+          "entep-nose-11",
+          "entep-nose-34",
+          "entep-nose-104",
+          "entqb-nose4-162",
+          "entqb-nose4-163"
+        ]
+      },
+      {
+        "id": "sc-3",
+        "w": "must",
+        "h": "⚑ PRE-SEPTAL versus POST-SEPTAL — the line that decides everything",
+        "body": "**THE ORBITAL SEPTUM IS A FIBROUS SHEET RUNNING FROM THE PERIOSTEUM OF THE ORBITAL RIM INTO THE TARSAL PLATES.** It is the only barrier between an infected eyelid and an infected orbit, and which side of it the pus is on decides the diagnosis, the urgency and the treatment. *(the whole comparison is not in course material)*\n\n||**PRE-SEPTAL (periorbital)**|**POST-SEPTAL (orbital)**|\n|---|---|---|\n|**Where**|in front of the septum — **eyelid soft tissue only**|behind it — **inside the orbit**|\n|**Lid swelling, redness, warmth**|**✅ often marked**|✅|\n|**Chemosis**|✗|**✅**|\n|**PROPTOSIS**|**✗ — never**|**✅**|\n|**Eye movement**|**full and painless**|**RESTRICTED and PAINFUL; DIPLOPIA**|\n|**Vision, colour vision, RAPD**|**normal**|**MAY BE REDUCED — sight-threatening**|\n|**Systemic upset**|mild, low fever|**high fever, toxic, unwell**|\n|**Imaging**|not always needed|**URGENT CONTRAST CT — mandatory**|\n|**Treatment**|**oral (or IV) antibiotics, review in 24 h**|**ADMIT · IV antibiotics · urgent CT · DRAIN a collection**|\n\n**⚠️ THREE SIGNS CROSS THE LINE, ANY ONE IS ENOUGH: PROPTOSIS · PAINFUL OR RESTRICTED EYE MOVEMENT · REDUCED VISION.** An eye that will not move is a surgical problem. **The bedside sequence in a swollen eye is fixed** — proptosis, then movements, then acuity and colour vision; lid swelling alone tells you nothing.\n- **Pre-septal disease has other causes** — insect bite, trauma, dacryocystitis, skin sepsis — so the sinus history and sinus tenderness are what make it rhinogenic.\n\n*Defect note: the bank keys the umbrella term “complicated rhinosinusitis” over “orbital cellulitis” in a stem that already describes proptosis. Both are true; the specific answer is orbital cellulitis and the management is identical. Keyed as printed.*\n*Defect note: one printed free-text diagnosis reads “Preseptal Cellulitis and Proptosis”, which cannot both be true — proptosis is by definition post-septal. Transcribed as printed.*\n\nSrc: endpoint p.965 box; GG p.67 box. **The whole comparison is not in course material — 0 hits in all 34 decks for preseptal, post-septal, orbital septum, periorbital, chemosis, orbital cellulitis.**",
+        "qs": [
+          "entep-nose-34",
+          "entqb-nose4-160",
+          "entep-nose-case-13",
+          "entep-nose-104"
+        ]
+      },
+      {
+        "id": "sc-4",
+        "w": "must",
+        "h": "The Chandler staging of orbital complications, I to V",
+        "body": "*(not in course material — standard staging; the bank’s questions map onto it exactly)*\n\n|Stage|What it is|What you see|\n|---|---|---|\n|**I — PRE-SEPTAL (inflammatory oedema)**|oedema of the lid, **no orbital contents involved**|lid swelling and erythema; **no proptosis, full painless movement, normal vision**|\n|**II — ORBITAL CELLULITIS**|**diffuse inflammation of orbital fat, no discrete pus**|**proptosis, chemosis**, some restriction of movement; vision usually preserved|\n|**III — SUBPERIOSTEAL ABSCESS**|pus **between the lamina papyracea and the periorbita**, stripping periosteum off the medial wall|**PROPTOSIS with the GLOBE DISPLACED LATERALLY (out) AND DOWNWARD**, **DIPLOPIA**, restricted medial gaze, tender medial orbit|\n|**IV — ORBITAL ABSCESS**|pus **within the orbital fat itself**|**severe proptosis, COMPLETE OPHTHALMOPLEGIA, chemosis, VISUAL LOSS**|\n|**V — CAVERNOUS SINUS THROMBOSIS**|thrombus in the sinus; the end point|**BILATERAL** signs, multiple cranial nerve palsies, prostration — see the next section but one|\n\n**⚠️ THE EXAMINER’S SIGNATURE FOR STAGE III IS THREE WORDS: DIPLOPIA, PROPTOSIS, LATERALLY DISPLACED GLOBE.** The globe moves *away* from a MEDIAL abscess, so **the direction of displacement names the source sinus.**\n- **I and II are medical; III, IV and V are a collection or a thrombus. AN ABSCESS IS DRAINED**, antibiotics alone being for stage I and early II.\n- **Progression takes hours, not days**, especially in a child — the ladder is a monitoring schedule, not a list.\n\nSrc: **not in course material** (0 hits for “Chandler”). Stage III is this chapter’s only `examiner-patterns.md` entry.",
+        "qs": [
+          "entep-nose-104",
+          "entqb-nose4-162",
+          "entep-nose-99"
+        ]
+      },
+      {
+        "id": "sc-5",
+        "w": "must",
+        "h": "Managing the threatened orbit — image it, drain it, and watch the vision",
+        "body": "**⚠️ CT OF THE NOSE AND PARANASAL SINUSES, WITH CONTRAST, IS THE INVESTIGATION OF CHOICE, AND IT IS URGENT.** The one sentence in 34 decks that says so: *“an important diagnostic tool in assessing for potential **complications** of acute sinus disease.”*\n\n**CT answers the only three questions that matter, in one study** *(framing not in course material)*: **is there a COLLECTION or only cellulitis** — theatre tonight versus antibiotics · **WHICH SINUS**, and the state of the lamina papyracea · **has it reached the CRANIUM.**\n- **MRI is better for intracranial extension, the cavernous sinus and soft tissue**, with MR venography for a suspected sinus thrombosis. Not the first test for an orbit.\n\n**MEDICAL** *(no deck states a regimen for a complication)*: **admit** · **IV broad-spectrum antibiotics crossing the blood–brain barrier** — third-generation cephalosporin + metronidazole, vancomycin where MRSA is a risk · nasal decongestant and topical steroid to open the sinus. **Organisms: *S. pneumoniae*, *H. influenzae*, *M. catarrhalis* acutely; *S. aureus* and anaerobes once there is a collection; polymicrobial in chronic and odontogenic disease.**\n\n**OPERATE WHEN** *(criteria not in course material)*: **abscess on CT** · **acuity falling, or ≤6/60** · **a relative afferent pupillary defect** · **complete ophthalmoplegia** · **no improvement after 24–48 h of IV antibiotics** · a **large or lateral** collection · an **older child or adult**. Small **medial** subperiosteal collections under about 9 years with normal vision may settle medically under hourly review.\n\n**⚠️ IT IS TWO OPERATIONS: DRAIN THE COLLECTION AND DRAIN THE SOURCE SINUS IN THE SAME SITTING** — endoscopic medial decompression, or an external approach for a superior or lateral abscess. The deck’s own case ends in **endoscopic drainage**.\n\n**⚠️ VISION AND COLOUR VISION ARE RE-CHECKED, NOT CHECKED ONCE.** The eye is lost to optic nerve compression and central retinal artery occlusion, in hours.\n\nSrc: L27.1 lines 203–207 (quoted) and 286–330. **Regimens, thresholds and surgical criteria: not in course material.**",
+        "qs": [
+          "entep-nose-99",
+          "entqb-nose4-162",
+          "entep-nose-case-13"
+        ]
+      },
+      {
+        "id": "sc-6",
+        "w": "must",
+        "h": "Cavernous sinus thrombosis — and how it differs from orbital cellulitis",
+        "body": "**SEPTIC THROMBOSIS OF THE CAVERNOUS SINUS, THE END POINT OF THE ORBITAL LADDER AND THE MOST DANGEROUS COMPLICATION IN THIS CHAPTER**, and one of the three `L30` names outright.\n\n**Sources:** **sphenoid and posterior ethmoid** sinusitis · untreated orbital cellulitis or abscess · the **dangerous area of the face**, by retrograde flow through the **valveless ophthalmic veins** — that route is written in full in `ent-noseanat`.\n\n**Adds to an orbital picture** *(not in course material)*: severe headache · **ptosis** · **V1/V2 numbness** · **papilloedema**.\n\n||**Orbital cellulitis / abscess**|**CAVERNOUS SINUS THROMBOSIS**|\n|---|---|---|\n|**Side**|**strictly unilateral**|**BILATERAL within days**, through the intercavernous sinuses. **Near-diagnostic**|\n|**Retinal veins**|normal|**ENGORGED AND CONGESTED; papilloedema** — venous outflow is blocked, not merely inflamed|\n|**Cranial nerves**|movement limited by swelling and pain|**TRUE PALSIES of III, IV, VI, V1/V2. VI FAILS FIRST** — it lies free inside the sinus, the others in its lateral wall|\n|**Systemic**|febrile, unwell|**swinging fever, rigors, prostration, altered consciousness**|\n|**Meningism**|absent|often present|\n|**Course**|localised|**rapid; seeds meningitis and brain abscess**|\n\n**⚠️ ENGORGED RETINAL VEINS MAKE THE DIAGNOSIS.** Orbital cellulitis gives proptosis, chemosis and poor vision too; only a blocked sinus stops the whole orbit draining.\n- **An isolated VI palsy is the earliest cranial nerve sign of cavernous sinus disease** — the anatomy behind Gradenigo’s diplopia, which is an EAR complication and belongs with chronic otitis media.\n\n**MANAGEMENT — emergency** *(not in course material)*: admit · **contrast CT and MRI with MR VENOGRAPHY** · blood cultures · **high-dose IV antibiotics crossing the blood–brain barrier, 3–4 weeks** · **drain the source sinuses** · anticoagulation, debated · steroids for cranial nerve or pituitary involvement. **Mortality is significant even treated; survivors may keep a visual or nerve deficit.**\n\nSrc: L30 line 163 (verbatim); venous route in `nan-9`. **Picture, comparison and management: not in course material.**",
+        "qs": [
+          "entep-nose-case-18",
+          "entep-nose-104"
+        ]
+      },
+      {
+        "id": "sc-7",
+        "w": "must",
+        "h": "The bone — Pott’s puffy tumour, maxillary osteomyelitis, mucocele",
+        "body": "**POTT’S PUFFY TUMOUR = OSTEOMYELITIS OF THE FRONTAL BONE WITH AN OVERLYING SUBPERIOSTEAL ABSCESS.**\n\n- **Not a tumour** — “tumour” in its old sense of a swelling; Percivall Pott, 1760.\n- **The sign:** a **soft, boggy, fluctuant, tender swelling of the FOREHEAD** with fever and frontal headache. **Only the FRONTAL sinus is roofed by the forehead — the name tells you the sinus.**\n- **Mechanism:** erosion of the **ANTERIOR table**, or thrombophlebitis through the **valveless DIPLOIC VEINS OF BRESCHET**.\n- **⚠️ THOSE VEINS RUN BOTH WAYS AND THE POSTERIOR TABLE IS THINNER**, so **up to half also have an extradural, subdural or intracerebral abscess.**\n- **⚠️ IMAGE THE BRAIN FIRST, NOT THE SINUS** — contrast CT or MRI even when neurologically intact. The swelling is a **surface sign of intracranial risk**.\n- **Who: adolescent and young adult males** — frontal sinus newly pneumatised, diploic system at its peak.\n- **Treatment: IV antibiotics ~6 weeks** · **drain the abscess and the frontal sinus** · **debride sequestrum** · neurosurgery for any intracranial collection.\n\n**⚠️ POTT’S versus FRONTAL-LOBE ABSCESS — NEIGHBOURS, NOT ALTERNATIVES.** Same disease, different wall: **ANTERIOR table → forehead swelling · POSTERIOR table → intracranial abscess. They frequently coexist.** A **boggy fluctuant forehead mass** is Pott’s; **personality change** is the lobe.\n\n**OSTEOMYELITIS OF THE MAXILLA** *(not in course material)* — of **infants**, from maxillary sinusitis or dental sepsis: cheek and alveolar swelling, discharging sinuses, sequestra, lost tooth germs. Rare since antibiotics.\n\n**MUCOCELE / MUCOPYOCELE** *(not in course material)* — a **chronically obstructed ostium**; retained mucus expands the sinus and **erodes bone by pressure**. **Commonest FRONTAL, then ethmoid.**\n- **PAINLESS, SLOWLY PROGRESSIVE PROPTOSIS, GLOBE PUSHED DOWN AND OUT**, diplopia, smooth swelling at the superomedial orbital rim. **Months, no fever, no redness** — that is what separates it from an acute orbital complication.\n- **CT: a smooth, expansile, thin-walled opacified sinus.** Infected = **mucopyocele**, behaving acutely. Treated by **MARSUPIALISATION — endoscopic wide drainage into the nose**, not by stripping the lining.\n\nSrc: GG pp.66, 68 (question and distractor only). **None of this section is in course material — 0 hits for Pott, puffy, diploic, mucocele, sequestrum.**",
+        "qs": [
+          "entqb-nose4-163",
+          "entqb-nose4-161"
+        ]
+      },
+      {
+        "id": "sc-8",
+        "w": "must",
+        "h": "Inside the skull — five complications, and the sign that betrays each",
+        "body": "|Complication|How it presents|The point|\n|---|---|---|\n|**MENINGITIS**|**headache, fever, NECK STIFFNESS, photophobia, vomiting**|**the commonest intracranial complication**; usually from **ethmoid or sphenoid** disease. Image before lumbar puncture if there is any suspicion of raised pressure|\n|**EXTRADURAL (epidural) ABSCESS**|**often silent** — dull headache, low fever|between bone and dura; **frontal sinus** the usual source. Usually found by the scan, not by the patient|\n|**SUBDURAL EMPYEMA**|**FULMINANT — headache, high fever, SEIZURES, hemiparesis, rapidly falling consciousness**|pus spreads freely in an unrestricted space: **the fastest deterioration of the six.** Immediate neurosurgery|\n|**FRONTAL-LOBE (intracerebral) ABSCESS**|**headache, fever, and PERSONALITY CHANGE**; later raised pressure — vomiting, papilloedema, falling GCS; seizures|**sinusitis is its commonest cause**|\n|**CAVERNOUS SINUS THROMBOSIS**|see the previous section|the orbital route|\n|**SUPERIOR SAGITTAL SINUS THROMBOSIS**|headache, seizures, **bilateral leg weakness**|rare; from frontal disease|\n\n**⚠️ PERSONALITY CHANGE IS THE FRONTAL-LOBE SIGN AND IT IS EASY TO MISS.** **The frontal lobe is relatively SILENT** — often no weakness, no aphasia, no fit. **Irritability, disinhibition, apathy, poor concentration** may be the whole neurology, and **the family reports it, not the patient.** *(localising value not in course material)*\n\n**INVESTIGATION: contrast CT or MRI of the BRAIN** — diffusion-weighted MRI separates abscess from tumour. **Image the sinuses in the same study.**\n\n**TREATMENT — three parts, all of them** *(not in course material)*: **IV antibiotics crossing the blood–brain barrier**, weeks not days · **neurosurgical drainage of any collection** · **surgery to the SOURCE SINUS.** Draining the head and leaving the sinus is why these recur.\n\nSrc: L30 line 163; L16 lines 226–230, 292–296 (same names, for the EAR); GG p.68 box. **Presentations, localisation and management: not in course material.**",
+        "qs": [
+          "entep-nose-11",
+          "entqb-nose4-161",
+          "entqb-nose4-162"
+        ]
+      }
+    ]
   }
 };
