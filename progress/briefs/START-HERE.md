@@ -685,6 +685,30 @@ at merge; over budget by >10 % goes back for compression, not into the app.**
 > why. Send it back only when the pages agree with the words. This is the same finding as
 > "do not chase the printed page count with word cuts", read from the other end.
 
+> **⚠️ MEASURED ACROSS FIFTEEN CHAPTERS, 2026-08-14 — `PAGES ≈ BODY WORDS ÷ 270`, ±12 %.** Every
+> merged chapter, rendered and counted: 243–319 words per page, mean 270, across 1,701–3,826 words
+> and 6–15 pages. **So the page test can be run in your head before rendering**, and two things
+> follow. **(1) THE OPERATIVE CEILING IS ~2,700 BODY WORDS**, because that is where ~10 pages falls —
+> not the formula's number, which every overrunning chapter so far has beaten and been accepted at
+> (`ent-audio` +17.3 % → 7 pp · `ent-dysph` +28.8 % → 8 pp · `ent-rhin` +39.1 % → 9 pp). Treat the
+> computed budget as the **target** and 2,700 as the **ceiling**; between the two, state the bill and
+> let the hub rule on pages. **(2) This does NOT contradict "layout owns pages."** Both hold: at a
+> fixed layout pages track words, which is why the ratio is tight; but *changing* the layout —
+> `break-inside` on tables, cell padding, `<thead>` — moves pages at constant words, which is how AOM
+> went 14 pp → 9 pp untouched. **Reformat first, cut second.**
+>
+> **⚠️ AND THE FORMULA HAS A THIRD FAILURE MODE, FOUND ON `ent-dysph`: A SURVEY CHAPTER DEFEATS BOTH
+> TERMS AT ONCE, AND THEY AGREE *BECAUSE* BOTH ARE LOW.** Two terms are meant to be independent
+> checks. They are not independent when the chapter is many entities thinly asked: the lecture is a
+> survey deck (L10 covers five entities in 1,336 words of bullets, so TERM 1 is low) *and* 62
+> questions spread over 13 entities is under 5 each (so TERM 2, which assumes clustering, is low
+> too). **Every entity costs ~90 words of floor — what it is, how it presents, what confirms it, what
+> treats it — so the real floor is ~90 × entity count**, 1,170 for `ent-dysph` before a single table.
+> **Count the chapter's distinct entities at planning time and say the expected overrun up front**,
+> instead of discovering it after four compression passes. The three failure modes together: a
+> **diagram deck** (L22, 1.2 w/line) starves TERM 1 · a **list-dense deck** (rhinitis: twelve words
+> of slide, ten protected facts) starves TERM 1 · a **survey chapter** starves both.
+
 > **⚠️⚠️ THE DRAFT HEADER IS A CLAIM, NOT A MEASUREMENT — ALWAYS RE-COUNT THE FILE.** `ent-rhin`'s
 > header read *"MEASURED OUTCOME: 1,836 body words … three compression passes took it there from
 > 2,178"*, itemising which duplications went. **The file on disk was 2,682.** The agent had planned
@@ -843,6 +867,11 @@ if the receiving chapter actually gets it.**
 | `ent-rhin` (L30) | **Septal perforation and saddle nose as lesions** — verified present in `sept-7`/`sept-8` before deferring | `ent-septum` | ✅ already written |
 | `ent-rhin` (L30) | **Laryngeal scleroma** — verified present in `hoar-6` before deferring | `ent-hoarse` | ✅ already written |
 | `ent-rhin` (L29) | **Adenoids** | `ent-tonsils` | ☐ **⚠️ tonsils is already merged; reconciliation work. 2nd chapter to owe it** |
+| `ent-dysph` (L7) | **The whole swallowing-assessment deck** except its aetiology table — 1,522 of its 1,616 words | `ent-swallow` | ☐ |
+| `ent-dysph` (L1.2) | **Pharyngeal anatomy** — only Killian's triangle kept | `ent-pharanat` | ☐ **⚠️ 2ND CHAPTER TO OWE IT — `ent-pharsupp` registered it first** |
+| `ent-dysph` (L8) | **The phoniatric protocol** — only the laryngeal click kept | `ent-phon` | ☐ **⚠️ 2ND CHAPTER TO OWE IT — `ent-hoarse` registered it first** |
+| `ent-dysph` (L5) | The **neck-mass differential** — only the cystic swelling kept | `ent-neck` | ☐ |
+| `ent-dysph` (L2) | The **supraglottic/glottic/subglottic carcinoma table** — verified present in `hoar-8`, which also already carries the Plummer–Vinson-is-premalignant-for-postcricoid-not-laryngeal line | `ent-hoarse` | ✅ already written |
 
 > **⚠️ TWO CHAPTERS CAN DEFER THE SAME FACT TO EACH OTHER — the register is what catches it.**
 > `ent-paedlar` sent the full RRP account to `ent-hoarse`; `ent-hoarse`, written afterwards, sent it

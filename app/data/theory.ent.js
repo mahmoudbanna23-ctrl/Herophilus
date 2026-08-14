@@ -2977,5 +2977,181 @@ var T_ENT = {
         "qs": []
       }
     ]
+  },
+  "ent-dysph": {
+    "intro": "Two shapes dominate. A vignette over the Zenker’s / Plummer–Vinson / cricopharyngeal / carcinoma menu, and a barium film to name. Learn the four look-alikes as one table and the seven barium appearances as another; the rest is Plummer–Vinson and hypopharyngeal cancer.",
+    "sections": [
+      {
+        "id": "dys-1",
+        "w": "must",
+        "h": "Definitions, aspiration, and what dysphagia costs",
+        "body": "**DYSPHAGIA = difficulty swallowing SOLIDS, LIQUIDS or BOTH**; impairment of one or more **PHASES** of swallowing. Usually a **complication of another condition**, not a disease.\n\n|Term|Means|\n|---|---|\n|**DYSPHAGIA**|difficulty swallowing|\n|**ODYNOPHAGIA**|**PAIN** on swallowing|\n|**GLOBUS**|sensation of a **‘lump’** in the throat|\n\n- **ASPIRATION = food or liquid entering the airway BELOW THE TRUE VOCAL FOLDS.** Incompetent or inadequate airway protection; ill-timed uncoordinated events **before, during or after** the swallow triggers.\n- **SILENT ASPIRATION = material reaching trachea or lungs with NO cough, no attempt at expulsion.**\n- **Consequences: DEHYDRATION · MALNUTRITION · ASPIRATION PNEUMONIA**; plus psychosocial harm and a large fall in quality-of-life scores.\n- Care is **holistic, multidisciplinary, multiprofessional**: phoniatrics, ORL, intensive care, neurology, gastroenterology, speech-language pathology, physiotherapy, dietetics.\n\nSrc: L10",
+        "qs": [
+          "entqb-thr3-91"
+        ]
+      },
+      {
+        "id": "dys-2",
+        "w": "must",
+        "h": "Classification — level, mechanism, course, grade",
+        "body": "|Level|Causes|\n|---|---|\n|**HIGH — oropharyngeal**|**post-cricoid carcinoma · pharyngeal pouch · Plummer–Vinson · cricopharyngeal spasm · foreign body at the inlet**|\n|**LOW — oesophageal**|**ACHALASIA** (lower sphincter) **· carcinoma · peptic or corrosive stricture · extrinsic compression**|\n\n|Pattern|Reads as|\n|---|---|\n|**SOLIDS first, liquids later**|**MECHANICAL OBSTRUCTION** — tumour, web, stricture, pouch|\n|**LIQUIDS from the start, or worse for liquids**|**NEUROMUSCULAR** — stroke and the neurogenic list|\n|**PROGRESSIVE**|**CARCINOMA**|\n|**STATIONARY — unchanged over months**|**BENIGN STRICTURE**|\n|**INTERMITTENT**|cricopharyngeal spasm · achalasia · web|\n\n- **GRADE 5 = swallows SALIVA ONLY**; normal saliva swallowing about **4 times a minute** *(both not in course material)*.\n\nSrc: L10; L7",
+        "qs": [
+          "entqb-thr3-123",
+          "entqb-thr3-141"
+        ]
+      },
+      {
+        "id": "dys-3",
+        "w": "high",
+        "h": "The history, the signs, and the order of investigations",
+        "body": "**Symptoms and signs:** drooling, poor oral management of secretions or bolus · ineffective chewing, extra time to chew or swallow · **oral residue** · no lip closure, **anterior loss of bolus** · **NASAL REGURGITATION** · food **“sticking”**, globus · **WET or GURGLY voice** · cough, throat clearing · food avoidance · **weight loss, malnutrition, dehydration** · **ASPIRATION PNEUMONIA**.\n\n|Asking|Test|\n|---|---|\n|Iron-deficiency picture (glossitis, brittle nails, pallor)|**CBC FIRST**, then serum iron and **TIBC**|\n|Structural cause and level|**BARIUM SWALLOW**|\n|Mucosa, biopsy, dilatation|**OESOPHAGOSCOPY**|\n|Extent of malignancy|**CT/MRI neck · CHEST CT** (**SYNCHRONOUS** tumours) **· PET-CT** (metastasis)|\n|Metallic foreign body|**PLAIN X-RAY, PA + lateral**|\n|Motility|**MANOMETRY**|\n\n- **RED FLAGS: progressive dysphagia · weight loss · unilateral otalgia · hoarseness · neck mass · solids advancing to liquids.** Over 50, smoker or drinker: image and scope.\n\nSrc: L10",
+        "qs": [
+          "entqb-thr3-136",
+          "entqb-thr3-138"
+        ]
+      },
+      {
+        "id": "dys-4",
+        "w": "must",
+        "h": "The four look-alikes",
+        "body": "||**PLUMMER–VINSON**|**ZENKER’S POUCH**|**CRICOPHARYNGEAL SPASM**|**CARCINOMA**|\n|---|---|---|---|---|\n|**Patient**|**middle-aged FEMALE**|**ELDERLY**|adult, often 50–65|**over 50, SMOKER + DRINKER**|\n|**Course**|slow, solids, intermittent|a year+, mild, solids|**INTERMITTENT**, months|**RAPID, solids → liquids**|\n|**Give-away**|**KOILONYCHIA · GLOSSITIS · ANGULAR CHEILITIS · PALLOR · microcytic anaemia**|**REGURGITATION OF UNDIGESTED FOOD · HALITOSIS · night cough · fluctuant neck swelling**|**globus, choking, heartburn, EVERYTHING NORMAL**|**WEIGHT LOSS · referred OTALGIA · hoarseness · FIXED neck mass**|\n|**Barium**|**ANTERIOR web**|**POSTERIOR pouch, C5–C6, RETAINS**|**POSTERIOR bar, NO retention**|**“apple core”**|\n|**First move**|**IRON**|**barium, surgery if symptomatic**|**ANTIREFLUX**|**CT + panendoscopy, biopsy**|\n\n- **One discriminator each: iron signs = Plummer–Vinson · undigested food and halitosis = pouch · normal examination AND normal endoscopy = spasm · weight loss and otalgia = cancer.**\n\nSrc: L10",
+        "qs": [
+          "entqb-thr3-102",
+          "entqb-thr3-106",
+          "entqb-thr3-113",
+          "entqb-thr3-117",
+          "entqb-thr3-129",
+          "entqb-thr3-132",
+          "entqb-thr3-135",
+          "entqb-thr3-137",
+          "entqb-thr3-143",
+          "entep-enr-20",
+          "entep-enr-37"
+        ]
+      },
+      {
+        "id": "dys-5",
+        "w": "must",
+        "h": "Plummer–Vinson syndrome",
+        "body": "**TRIAD: DYSPHAGIA + UPPER OESOPHAGEAL (post-cricoid) WEB + IRON-DEFICIENCY ANAEMIA**, in **MIDDLE-AGED FEMALES** — *“more common in males”* is the standing false statement. **PATERSON–BROWN–KELLY = the same disease** *(synonym not in course material)*.\n\n- **INTERMITTENT dysphagia TO SOLIDS, with some ASPIRATION.**\n- **Signs: LETHARGY · GLOSSITIS (glazed, shiny tongue) · ANGULAR CHEILITIS · KOILONYCHIA (spooned, brittle nails) · PALLOR.** **ACHLORHYDRIA** associated *(not in course material)*. **NOT haematemesis** — a thin web obstructs, it does not bleed; bleeding means carcinoma.\n- **Investigations: FULL BLOOD COUNT + IRON STUDIES (serum iron, TOTAL IRON BINDING CAPACITY) · BARIUM SWALLOW for the anterior web · DIRECT or FLEXIBLE OESOPHAGOSCOPY, which excludes the rarely associated POST-CRICOID CARCINOMA but may show no abnormality.**\n- **Management: CORRECTION OF THE IRON DEFICIENCY ANAEMIA · OESOPHAGOSCOPE AND DILATATION** for a persistent web.\n- **⚠️ PREMALIGNANT for POST-CRICOID carcinoma** — the one hypopharyngeal cancer with no tobacco and no alcohol, in women. **Iron does not abolish the risk: follow up long-term for it.** Premalignant for the **HYPOPHARYNX, not the larynx**.\n- Defects: one first-line option adds **vitamin B12**, not in the lecture; one printing keys **oesophagoscopy** as confirming though the lecture also lists barium. Both keyed as printed.\n\nSrc: L10",
+        "qs": [
+          "entep-throat-12",
+          "entep-throat-42",
+          "entep-throat-91",
+          "entep-throat-118",
+          "entep-throat-128",
+          "entqb-thr3-110",
+          "entqb-thr3-114",
+          "entqb-thr3-115",
+          "entqb-thr3-116",
+          "entqb-thr3-146",
+          "entep-throat-case-3"
+        ]
+      },
+      {
+        "id": "dys-6",
+        "w": "must",
+        "h": "Pharyngeal pouch (Zenker’s diverticulum)",
+        "body": "**Outpouching of MUCOSA and SUBMUCOSA through KILLIAN’S TRIANGLE — a FALSE diverticulum**, at the weakness between **THYROPHARYNGEUS and CRICOPHARYNGEUS**, **more commonly LEFT**. The **cricopharyngeal sphincter may have a HIGHER THAN NORMAL RESTING TONE**. **Frequently elderly.**\n\n- **DYSPHAGIA 98 % · REGURGITATION OF UNDIGESTED FOOD · RECURRENT CHEST INFECTIONS from aspiration · HALITOSIS.**\n- **Signs may be NONE. BORBORYGMI on palpating the neck as the pouch empties into the pharynx.** Also a cystic non-tender neck swelling and **froth in the pyriform fossa**.\n- **⚠️ ENDOSCOPY WITH CARE — the scope may pass naturally into the POUCH, not the oesophagus**, and perforate it.\n- **BARIUM SWALLOW or VIDEOFLUOROSCOPY confirms: a diverticulum from the MIDLINE of the POSTERIOR WALL of the distal pharynx near the pharyngo-oesophageal junction, at C5–C6 on the LATERAL view, RETAINING CONTRAST.**\n- **OPEN: DIVERTICULECTOMY WITH CRICOPHARYNGEAL MYOTOMY. ENDOSCOPIC: DIVERTICULOTOMY WITH A STAPLER**, dividing common wall and cricopharyngeus. **Myotomy is part of the operation, never the whole of it.** **Small, mildly symptomatic, very elderly → observe on an antireflux regimen**; symptoms or enlargement → operate.\n\nSrc: L10; Killian’s triangle L1.2; cystic neck swelling L5",
+        "qs": [
+          "entqb-thr3-107",
+          "entqb-thr3-108",
+          "entqb-thr3-109",
+          "entep-throat-case-8"
+        ]
+      },
+      {
+        "id": "dys-7",
+        "w": "high",
+        "h": "Cricopharyngeal spasm",
+        "body": "**Failure of the cricopharyngeus to relax — the raised resting tone that produces a pouch, without the pouch.** *(Entity, aetiology, sign and ladder on no cached slide; only the raised resting tone and myotomy are.)*\n\n- **Commonest cause: REFLUX-INDUCED** — hence antireflux first, not surgery.\n- **INTERMITTENT dysphagia to SOLIDS localised to the throat · GLOBUS · choking · mild heartburn · NO weight loss · examination NORMAL · OESOPHAGOGASTROSCOPY NORMAL.**\n- **BARIUM confirms: a smooth POSTERIOR INDENTATION of the barium column at the pharyngo-oesophageal junction — the CRICOPHARYNGEAL BAR — with NO retained contrast.** The pouch retains; the bar does not.\n- **Ladder: ANTIREFLUX REGIMEN → BOTULINUM TOXIN into the cricopharyngeus (~6 months; for old age or where myotomy is not tolerated) → SURGICAL MYOTOMY.**\n\nSrc: L10 (raised cricopharyngeal resting tone, myotomy); the remainder not in course material",
+        "qs": [
+          "entqb-thr3-100",
+          "entqb-thr3-103",
+          "entqb-thr3-104",
+          "entqb-thr3-105"
+        ]
+      },
+      {
+        "id": "dys-8",
+        "w": "must",
+        "h": "Hypopharyngeal carcinoma",
+        "body": "**HYPOPHARYNX (laryngopharynx) = CAUDAL pharynx, HYOID to LOWER MARGIN OF THE CRICOID. 5–10 % of head and neck cancers; OVER 50. Squamous-lined, so OVER 95 % SQUAMOUS CELL** *(figure not in course material)*.\n\n- **Subsites, commonest first: PYRIFORM SINUS → POSTERIOR PHARYNGEAL WALL → POST-CRICOID.** PS and PPW **male**-predominant; **POST-CRICOID FEMALE**-predominant.\n- **Aetiology: TOBACCO · ALCOHOL · AGE (mean 65) · HPV in 10.9 % · IRON-DEFICIENCY DYSPHAGIA (Plummer–Vinson) for POST-CRICOID tumours.** Tobacco first-listed, alcohol synergistic; voice abuse and infection are not.\n- **DETECTED LATE, often asymptomatic early. Earliest: mild non-specific THROAT DISCOMFORT. GLOBUS SENSATION MAY BE THE ONLY PRESENTING COMPLAINT, WITH NORMAL CLINICAL FINDINGS.** Then **dysphagia to SOLIDS then fluids · HOARSENESS** with laryngeal involvement **· UNILATERAL OTALGIA**, referred along the **VAGUS** from the pyriform fossa (tonsil → glossopharyngeal; teeth and TMJ → trigeminal) **· HALF present with a NECK MASS. STRIDOR IS LATE** — the tumour is behind the larynx, not in it.\n- **ABSENT LARYNGEAL CLICK IN POST-CRICOID CARCINOMA — MOURE’S SIGN: the tumour fills the space, preventing the cricoid from rubbing against the vertebral column.** Elicited by moving the larynx side to side *(eponym on no slide; one bank prints “Maure’s”)*.\n- **Endoscopy: ULCERATED or ERYTHEMATOUS mucosal lesions · HYPERKERATOSIS · VOCAL CORD WEAKNESS · POOLING OF SECRETIONS · LARYNGEAL ASYMMETRY.**\n- **Investigations: BARIUM SWALLOW — detects post-cricoid tumours NOT apparent endoscopically, and pyriform-sinus filling defects · CT or MRI · CHEST CT for SYNCHRONOUS tumours · PET-CT for distant metastasis · PANENDOSCOPY (LARYNGOSCOPY AND OESOPHAGOSCOPY) under GA, for visualisation and BIOPSY.**\n- **Management: locoregional control, MINIMISING FUNCTIONAL MORBIDITY — preserving PHONATION, DEGLUTITION, ORONASAL RESPIRATION. Surgery · radiotherapy · chemotherapy · combination.**\n- **SILENT AREAS present late: NASOPHARYNX · MAXILLARY SINUS · PYRIFORM FOSSA. The GLOTTIS is not** — a millimetre on the vibrating edge is hoarse at once *(term not in course material)*.\n- Defect: one list offers **globus** and **absent laryngeal click** and keys the click; both true, the click specific. Keyed as printed.\n\nSrc: L10; L8 (laryngeal click as an examination item); L1.1 (squamous lining)",
+        "qs": [
+          "entep-throat-22",
+          "entep-throat-86",
+          "entep-throat-103",
+          "entep-throat-114",
+          "entqb-thr3-111",
+          "entqb-thr3-112",
+          "entqb-thr3-118",
+          "entqb-thr3-119",
+          "entqb-thr3-121",
+          "entqb-thr3-139",
+          "entqb-thr3-140",
+          "entqb-thr3-142",
+          "entqb-thr3-145",
+          "entep-throat-case-14"
+        ]
+      },
+      {
+        "id": "dys-9",
+        "w": "high",
+        "h": "Achalasia",
+        "body": "**OESOPHAGEAL MOTILITY DISORDER: APERISTALSIS IN THE BODY + FAILURE OF RELAXATION OF THE LOWER OESOPHAGEAL SPHINCTER**, from impaired **INHIBITORY NEURONS OF THE MYENTERIC PLEXUS OF AUERBACH** in the distal oesophagus. **A LOW dysphagia — never an upper-end cause.**\n\n- **ELDERLY: LONG history of INTERMITTENT dysphagia, occasional ASPIRATION and REGURGITATION. YOUNGER: RETROSTERNAL PAIN from dysmotility and spasm.**\n- **OESOPHAGEAL MANOMETRY: MOST SENSITIVE, the GOLD STANDARD. Barium may be NORMAL initially**, until dilatation and elongation — then **contrast retention with a TAPERING DISTAL GASTRO-OESOPHAGEAL SEGMENT INTO A CLOSED SPHINCTER, the ‘BIRD’S BEAK’. GASTRO-OESOPHAGOSCOPY excludes malignancy.**\n- **NON-SURGICAL: CALCIUM CHANNEL BLOCKERS · BOTOX into the lower oesophageal sphincter · SPHINCTER DILATATION. SURGICAL: LAPAROSCOPIC HELLER MYOTOMY with partial fundoplication is the procedure of choice; PERORAL ENDOSCOPIC MYOTOMY (POEM) a minimally invasive alternative.**\n\nSrc: L10",
+        "qs": [
+          "entqb-thr3-141"
+        ]
+      },
+      {
+        "id": "dys-10",
+        "w": "high",
+        "h": "Globus pharyngeus (globus hystericus)",
+        "body": "**Feeling of a lump in the throat (FOLIT), brought on or made worse by ANXIETY, with NO other organic cause — WHICH MAKES IT A DIAGNOSIS OF EXCLUSION. Normal examination, normal scan. Most cases in adults.**\n\n- **DO THE WORK-UP to exclude serious causes of dysphagia.** Globus **may be the only presenting complaint of a hypopharyngeal carcinoma** — never a first-visit diagnosis.\n- **Reassure that the sensation will diminish as the stress diminishes — however, reassurance is often not enough. A TRIAL OF ANTI-REFLUX TREATMENT and LIFESTYLE CHANGES, FOLLOW-UP IN 4 TO 6 WEEKS, because 30 % OF GLOBUS PATIENTS HAVE REFLUX.**\n\nSrc: L10",
+        "qs": [
+          "entqb-thr3-102",
+          "entqb-thr3-112"
+        ]
+      },
+      {
+        "id": "dys-11",
+        "w": "must",
+        "h": "Oesophageal stricture, carcinoma, and the barium swallow",
+        "body": "|Barium appearance|Diagnosis|\n|---|---|\n|**‘RAT TAIL’ — SMOOTH, TAPERED narrowing**|**BENIGN STRICTURE**|\n|**‘APPLE CORE’ — ABRUPT, IRREGULAR, shouldered filling defect**|**CARCINOMA**|\n|**‘BIRD’S BEAK’**|**ACHALASIA**|\n|**POSTERIOR pouch, C5–C6, RETAINS contrast**|**ZENKER’S**|\n|**Smooth POSTERIOR bar, NO retention**|**CRICOPHARYNGEAL SPASM**|\n|**ANTERIOR web**|**PLUMMER–VINSON**|\n|**PYRIFORM SINUS filling defect**|**hypopharyngeal carcinoma**|\n\n- **PEPTIC STRICTURE: long-standing GERD · STATIONARY solid dysphagia · NO weight loss. REPEATED DILATATION with long-term acid suppression — antireflux alone does not reverse fibrosis.** **CORROSIVE INGESTION gives the other benign stricture: a long smooth fibrotic segment 2–8 WEEKS after the burn.**\n- **CARCINOMA: PROGRESSIVE dysphagia, solids then liquids, WEIGHT LOSS, cachexia. SMOKING + ALCOHOL → SQUAMOUS CELL, upper and middle third. GERD and BARRETT’S → ADENOCARCINOMA, lower third.**\n- *(“Rat tail”, “apple core”, stricture and carcinoma as entities, and the corrosive timing, are not in course material.)* Defect: one printing offers **“rat tail appearance”** and **“smooth, tapered narrowing”** as separate options — a name and its description. Keyed as printed.\n\nSrc: L10 (bird’s beak; pyriform filling defect); the remainder not in course material",
+        "qs": [
+          "entqb-thr3-129",
+          "entqb-thr3-130",
+          "entqb-thr3-131",
+          "entqb-thr3-132",
+          "entqb-thr3-133",
+          "entqb-thr3-134"
+        ]
+      },
+      {
+        "id": "dys-12",
+        "w": "high",
+        "h": "Foreign bodies, extrinsic compression, and the neurogenic causes",
+        "body": "**OESOPHAGEAL FOREIGN BODY: sudden dysphagia with DROOLING after a witnessed ingestion, NO stridor or respiratory distress** — oesophagus, not airway *(whole entity not in course material)*.\n\n- **Commonest lodging site: UPPER OESOPHAGEAL SPHINCTER (cricopharyngeus), narrowest point of the gut.** A **FISH BONE** most often impacts in the **PYRIFORM FOSSA**.\n- **PLAIN X-RAY, PA + LATERAL** — shows a metallic body, separates oesophagus from trachea, identifies a **BUTTON BATTERY** (emergency). **BARIUM CONTRAINDICATED. ENDOSCOPIC EXTRACTION under GA**; surgery only for failed endoscopy or perforation.\n- **DYSPHAGIA LUSORIA: compression by a VASCULAR RING — an ABERRANT RIGHT SUBCLAVIAN ARTERY behind the oesophagus** *(not in course material)*.\n\n|Group|Causes|\n|---|---|\n|**NEUROGENIC**|**CNS — STROKE**, neurodegenerative (**PARKINSON’S, ALS, MS**), **BRAIN TUMOURS**; **NEUROMUSCULAR JUNCTION (MYASTHENIA GRAVIS)**; primary **MUSCLE damage (MYOPATHIES)**. Also **intracranial haemorrhage, embolic stroke, encephalitis**|\n|**STRUCTURAL**|**INTUBATION** or disease · after **HEAD AND NECK or CANCER SURGERY** (defects in mouth and throat, nerve damage) · after **RADIOTHERAPY**|\n|**OTHERS**|**PRESBYPHAGIA · ALZHEIMER’S and DEMENTIA · GERD**|\n\n- **HEARING IMPAIRMENT causes neither dysphagia nor dysphasia** — one printing writes “dysphasia”; the key holds either way.\n\nSrc: L7 (the aetiology table); foreign-body and vascular-ring material not in course material",
+        "qs": [
+          "entqb-thr3-122",
+          "entqb-thr3-124",
+          "entqb-thr3-125",
+          "entqb-thr3-126",
+          "entqb-thr3-127",
+          "entqb-thr3-128",
+          "entqb-thr3-144"
+        ]
+      },
+      {
+        "id": "dys-13",
+        "w": "know",
+        "h": "Oral ulceration — odynophagia before dysphagia",
+        "body": "*(Covered by no cached ENT slide; the whole table is general medical knowledge.)*\n\n|Ulcer|Picture|\n|---|---|\n|**APHTHOUS**|**MULTIPLE, PAINFUL, shallow, GREYISH floor, RED HALO**, non-keratinised mucosa (buccal, labial); recurrent, self-limiting|\n|**HERPETIC STOMATITIS**|**VESICLES breaking into ulcers**, with **FEVER and GINGIVITIS**; primary HSV-1, usually a child|\n|**COXSACKIE** (herpangina, hand-foot-and-mouth)|vesicles and ulcers on **SOFT PALATE and FAUCES**, febrile child|\n|**MALIGNANT**|**SINGLE, INDURATED, raised everted edge, painless at first. ODYNOPHAGIA FIRST, DYSPHAGIA as it enlarges**|\n\n- **Benign ulcers hurt but do not obstruct. Growth from odynophagia into dysphagia is the malignant signature.**\n\nSrc: not in course material",
+        "qs": [
+          "entqb-thr3-92",
+          "entqb-thr3-96"
+        ]
+      }
+    ]
   }
 };
