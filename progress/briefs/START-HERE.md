@@ -779,6 +779,10 @@ if the receiving chapter actually gets it.**
 | `ent-pharsupp` (L5) | **Branchial cyst, thyroglossal cyst**, the neck-mass differential | `ent-neck` | ☐ |
 | `ent-pharsupp` (L16) | **Bezold's abscess in full** — mastoiditis, mastoid tip, the compass of spread, cortical mastoidectomy. Only the keyed mastoid-tip → parapharyngeal line kept | `ent-csom` | ☐ |
 | `ent-tonsils` (v3) | **Quinsy management** — Hilton's manoeuvre, the incision points, interval tonsillectomy | `ent-pharsupp` | ✅ **delivered 2026-08-14** |
+| `ent-earanat` (L20) | L20's whole clinical half — balance physiology, causes and assessment of vertigo, BPPV, Ménière's, vestibular neuritis, the positional tests | `ent-vertigo` | ☐ |
+| `ent-earanat` (L16) | Attic-retraction cholesteatoma, safe vs unsafe, perforation types, mastoid disease, the tegmen-erosion complication lists | `ent-csom` | ✅ already written |
+| `ent-facial` (L22) | Auricle, EAC, TM layers and landmarks, annulus, middle-ear walls and parts, ossicles, mastoid air-cell types, Eustachian tube, inner ear | `ent-earanat` | ✅ **delivered 2026-08-14** |
+| `ent-facial` (L15) | **Myringotomy as a procedure** and its indications. Only the keyed line — myringotomy is the FIRST measure in facial palsy complicating AOM — kept | `ent-aom` | ☐ **⚠️ aom is already merged; add at reconciliation** |
 
 ### 14.6 What this costs, said plainly
 
