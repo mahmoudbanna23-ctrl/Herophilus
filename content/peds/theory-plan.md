@@ -1,0 +1,132 @@
+# Paediatrics theory — the plan, the map, and the budgets
+
+Built 2026-08-14 by the hub chat. **Paediatrics was moved ahead of Ophthalmology at the user's
+instruction**, which matches the calendar: Peds OSCE **14 Sep**, Peds Papers 1+2 **17 Sep**, then
+ENT 22 Sep, Ophtho 27 Sep, Neuropsych 3 Oct, Peds Papers again 18–19 Oct.
+
+Format is `progress\briefs\START-HERE.md` **§14**, including the new **§14.3a layout rules**.
+This file records only what is specific to paediatrics.
+
+---
+
+## ⚠️ THE ONE RULE THAT IS DIFFERENT HERE: NO 3,000-WORD CAP
+
+**User's decision, 2026-08-14.** Paediatrics carries **~4× ENT's lecture load per chapter** —
+4,582 lecture words per chapter against ENT's 1,163. Applying §14's 3,000-word cap would have
+bound on **12 of 21 chapters** and cut ~75 % of the lecture out of respiratory and infection.
+The user chose to let the big chapters run to their lecture length instead.
+
+> **Budget = `max( the chapter's own lecture words , 25 × linked questions , 600 )`. No cap.**
+
+**⚠️ THE BUDGET IS A CEILING, NOT A TARGET.** It exists to stop the ENT failure — notes 6–13×
+longer than the lecture they summarise — and nothing more. Slides are full of title lines,
+repeated bullets and image captions that telegraphic notes shed, so **a good chapter should land
+WELL under its ceiling.** Writing to the ceiling because it is there is the old mistake wearing a
+new number.
+
+What has NOT changed: the two-sided coverage floor, the §14.5 deferral register, the omission note,
+and the ban on dropping a protected fact to fit. If a chapter genuinely cannot hold its important
+lecture content, **say so and itemise the cost** — do not quietly trim.
+
+---
+
+## Per-chapter budgets and deck manifest
+
+`W` = summed words of that chapter's cached decks. `Q` = questions filed today (they will grow —
+see the reconciliation pass below). Ceiling = `max(W, 25Q, 600)`.
+
+| Chapter | Ceiling | W | Q | Decks (in `content\peds\lectures\`) |
+|---|---:|---:|---:|---|
+| `respiratory` | 12,984 | 12,984 | 0 | `30) Pneumonia` · `PNEUMONIA` · `31).1)Asthma part 1` · `31).2)Asthma part 2` · `Asthma_` · `Asthma  e-book` · `32)Acute bronchiloitis_` |
+| `infection` | 12,375 | 12,375 | 31 | `18) febrile child…` · **`25)Immunodeficiency_` ⚠️THIN** · `infectious diseases causing maculopapular rash` · `…vesicular rash` · `specific bacterial infection` · `typhoid and tuberculosis` · `antibiotic stewardship program` |
+| `neurological` | 8,722 | 8,722 | 0 | `53) stroke` · `54) seizures and epilepsy (1)` · `55) Motor_Disorders` · `56) Floppy infant ` · `58) cerebral palsy` |
+| `nutrition` | 8,014 | 8,014 | 0 | `15.1) Faltering Growth` · `15.2) Infant Feeding` · `16) P.E.M` · `17) Vitamin D Defficiency Rickets(1)` · `Vitamin deficiency  Rickets` |
+| `renal` | 7,174 | 7,174 | 26 | `38)UTI` · `39)Hematuria` · `40)Congenital anomalies of the kidneys…` · `41)Proteinuria -1` |
+| `cardiac` | 7,052 | 7,052 | 24 | `33)Congenital acyanotic heart disease_` · **`34)Students Obstructive diseases`** · `35)Cyanotic CHDs` · `36)Myocardial diseases` · `37)RF` |
+| `gastroenterology` | 6,688 | 6,688 | 0 | `22)Vomiting` · `23).1) Acute diarrhea` · `23).2)Constipation` · `24)Abdominal pain` |
+| `neonatal` | 5,969 | 5,969 | 0 | `8) COMMON PROBLEMS IN THE TERM NEWBORN` · `10) new Seizures . Birth injuries , Hpoglycemia 2` · `11) Neonatal sepsis` |
+| `endocrine` | 4,467 | 4,467 | 0 | `51) DKA` · `52) hypothyrodism` · `diabetes mellitus for under grad_8acf…` |
+| `haematology` | 3,827 | 3,827 | 0 | **`44)BM FAILURE` ⚠️THIN** · `47)Hemorrhagic disorders ` · `Iron deficiency anemia pdf` |
+| `perinatal` | 3,773 | 3,773 | 0 | `7) Intro to neonatology` · `9) Respiratory distress in newborn` · `12) HIE` |
+| `malignant` | 3,438 | 3,438 | 0 | `48)Leukemias` · `49)Rhabdomyoma and Brain Tumors Overview` |
+| `normal-dev` | 2,803 | 2,803 | 0 | `1) Normal development` · `Lec 1 Normal development_` |
+| `genetics` | 2,740 | 2,740 | 0 | `6) Genetically determined disease_` |
+| `dev-problems` | 2,584 | 2,584 | 0 | `2) developmental problems` · `Lec 2 Child development_` |
+| `allergy` | 2,222 | 2,222 | 0 | `26)allergy_` · `27)Anaphylaxsis` |
+| `growth-puberty` | 2,093 | 2,093 | 0 | `13) Short stature` · `14) Puberty` |
+| `liver` | 1,565 | 1,565 | 0 | `43)Infantile cholestasis_` · **`42)Viral hepatits_` ⚠️IMAGE-ONLY, not cached** |
+| `emergencies` | 1,235 | 1,235 | 0 | `3) Pediatric resuscitation` · `4) Shock in pediatrics_` |
+| `accidents` | 875 | 875 | 0 | `5) Poisoning in children_` |
+| `mental` | 600 | 0 | 0 | **NO DEDICATED DECK — see below** |
+
+**Totals: 101,200 ceiling words, ~422 printed pages at the /240 estimator.** Expect the real figure
+well below that, for the ceiling-not-target reason above. **Verified: all 64 cached decks map to a
+chapter and none is orphaned.**
+
+---
+
+## ⚠️ Six findings that will each cost a chapter if missed
+
+**1. `34)Students Obstructive diseases` IS CARDIAC, NOT RESPIRATORY.** The title reads respiratory
+and it was mis-filed that way once here. It holds **coarctation, aortic stenosis and pulmonary
+stenosis** — and `33)Congenital acyanotic heart disease_` returns **zero** hits for any of the
+three. Filed wrongly, the cardiac chapter loses exactly the lesions the exam asks about.
+
+**2. `mental` (Mental Health) has no lecture of its own.** Greped: `mental health` appears only in
+`Lec 2 Child development_`, and `ADHD` / `attention deficit` / `autism` only in
+`2) developmental problems` and the development decks — all of which belong to `dev-problems` and
+`normal-dev`. So this chapter is written mostly from **general medical knowledge, tagged**, per
+`CLAUDE.md` §4 — *answer the gap, never declare it.* **Do not raid `dev-problems`' content for it;
+cross-reference instead, and register anything genuinely moved.**
+
+**3. Three decks exist but cannot be read as text. The user chose a VISUAL READ for all three**
+(2026-08-14). Render at 110 dpi and read **FOUR-UP CONTACT SHEETS** — 10 reads instead of 40, and
+headings stay legible at 760 px per slide. This recovered two ENT decks the same way.
+
+| Deck | Chapter | State |
+|---|---|---|
+| `42)Viral hepatits_.pdf` | `liver` | 44 pages, **44 characters extract** — pure images. Not cached at all. |
+| `44)BM FAILURE.pdf` | `haematology` | 54 pages, **326 words = 6.0 w/page**. Cached but effectively empty. |
+| `25)Immunodeficiency_.pdf` | `infection` | 58 pages, **560 words = 9.7 w/page**. Same shape. |
+
+**4. ⚠️ THE NUMBERING GAPS ARE NOT MISSING FILES — 21, 28, 29 and 57 WERE NEVER GIVEN OUT.** The
+user, 2026-08-14: *"The missing lectures were not given to me by the professor."* Do not hunt for
+them, do not raise them. Fill the topic from general knowledge and tag it.
+
+**5. ✅ `19 and 20) INFECTIOUS DISEASES. clean.ppt` IS NOT A GAP EITHER — it is the two cached rash
+decks.** It is a 16 MB **old binary `.ppt`** (OLE2, `d0cf11e0`), which is why it never extracted.
+Converted via PowerPoint COM to `…\hbth1\infdis.pdf` (106 slides) and checked: measles, rubella and
+roseola are all in `infectious diseases causing maculopapular rash`; varicella and Coxsackie in
+`…vesicular rash`. **Only three terms are unique to it — `goose-flesh`, `VZIG`, `pleomorphic` — so
+the infection agent should skim the converted PDF for those and nothing else.**
+
+**6. Duplicate-looking decks are mostly NOT duplicates.** Measured vocabulary overlap:
+`30) Pneumonia` vs `PNEUMONIA` is **93 %** — one real duplicate, count it once. But the asthma trio
+runs **26–27 %**, rickets **40 %**, and the two development pairs **24–28 %**: they are *different
+lectures on the same topic*, and the unnumbered file is often the fuller one. **Read both, count the
+union by line range per §14.1 rule (4), and never bill the same lines to two chapters.**
+
+---
+
+## Order of work
+
+Two agents at a time — the cap is the **shared usage pool**, not slots. Chapters with questions go
+first so both sides of the coverage floor are exercised early; the three visual-read chapters are
+scheduled deliberately, not stumbled into.
+
+1. `cardiac`, `renal` — the two with questions besides infection, mid-size, no visual read
+2. `respiratory`, `gastroenterology`
+3. `neurological`, `nutrition`
+4. `neonatal`, `perinatal`
+5. `endocrine`, `malignant`
+6. `genetics`, `normal-dev`
+7. `dev-problems`, `allergy`
+8. `growth-puberty`, `emergencies`
+9. `accidents`, `mental`
+10. **`infection`** (visual read of `25`, plus the three `.ppt`-only terms) — largest chapter
+11. **`haematology`** (visual read of `44`), **`liver`** (visual read of `42`)
+
+**⚠️ A RECONCILIATION PASS IS OWED when the paediatrics banks close.** Only 81 questions exist today
+(infection 31, renal 26, cardiac 24 — **18 of 21 chapters have none**), so nearly every chapter is
+being written from lectures alone. When the banks are transcribed, re-check each chapter's new
+questions against its notes and patch. It is a diff, not a rewrite.
