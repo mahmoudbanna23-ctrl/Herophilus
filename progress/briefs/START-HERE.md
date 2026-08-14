@@ -762,8 +762,8 @@ if the receiving chapter actually gets it.**
 
 | Deferred from | Fact | Owed to | Written? |
 |---|---|---|---|
-| `ent-stridor` (L6) | **JORRP / RRP** — HPV aetiology, recurrence tendency, airway compromise, no consistently effective treatment | `ent-paedlar` | ☐ |
-| `ent-stridor` (L6) | **Benign laryngeal tumours** — juvenile papillomatosis, **chondroma**, haemangioma | `ent-paedlar` | ☐ |
+| `ent-stridor` (L6) | **JORRP / RRP** — HPV aetiology, recurrence tendency, airway compromise, no consistently effective treatment | `ent-paedlar` | ✅ **delivered 2026-08-14** — `paed-8` |
+| `ent-stridor` (L6) | **Benign laryngeal tumours** — juvenile papillomatosis, **chondroma**, haemangioma | `ent-paedlar` | ✅ **delivered 2026-08-14** — `paed-8`, the whole slide |
 | `ent-stridor` (L6) | **Causes of laryngeal paralysis** — central vs peripheral (traumatic, neuritis, neuropathy, neoplastic, idiopathic); surgical: neck/laryngeal trauma, thyroid surgery, **R.N.D**, tracheostomy, **scalene LN biopsy** | `ent-vocal` | ☐ |
 | `ent-otalgia` (L17,18) | **The entire OTORRHOEA half of the deck** — the four discharge types and their cause lists · **CSF otorrhoea** (temporal bone fracture types, halo sign, β2-transferrin, β2-trace protein, head elevation + CSF-pressure-lowering drugs, repair) · "no mucous glands in the EAC" · mucopurulent vs purulent attribution · **bloody otorrhoea and glomus tumours in full** | `ent-otorrhea` | ☐ |
 | `ent-otalgia` (L17,18 / L16) | **The safe-vs-unsafe CSOM DISCHARGE table** | `ent-otorrhea` + `ent-csom` | ☐ |
@@ -784,8 +784,33 @@ if the receiving chapter actually gets it.**
 | `ent-facial` (L22) | Auricle, EAC, TM layers and landmarks, annulus, middle-ear walls and parts, ossicles, mastoid air-cell types, Eustachian tube, inner ear | `ent-earanat` | ✅ **delivered 2026-08-14** |
 | `ent-facial` (L15) | **Myringotomy as a procedure** and its indications. Only the keyed line — myringotomy is the FIRST measure in facial palsy complicating AOM — kept | `ent-aom` | ☐ **⚠️ aom is already merged; add at reconciliation** |
 | `ent-paedlar` (L6) | **Causes of laryngeal paralysis** — central vs peripheral and the surgical list. The congenital cord-palsy facts that ARE tested are written in `paed-5` | `ent-vocal` | ☐ **still owed — 2nd chapter to defer it** |
-| `ent-paedlar` (L2) | The full **RRP treatment list**, the **adult-onset** form, and the rest of the hoarseness deck | `ent-hoarse` | ☐ |
+| `ent-paedlar` (L2) | The full **RRP treatment list**, the **adult-onset** form, and the rest of the hoarseness deck | `ent-hoarse` | ✅ **delivered 2026-08-14** — see the circular-deferral note below |
 | `ent-paedlar` (L12) | The entire **foreign-body half** — incidence, the six reasons, impaction sites, phases, the expiratory film, rigid bronchoscopy. Verified present in `strid-6`/`strid-7` before deferring | `ent-stridor` | ✅ already written |
+| `ent-hoarse` (L2) | **Congenital laryngeal web** in full — incomplete recanalization, sites, laryngofissure + keel, laser excision, tracheostomy | `ent-paedlar` | ☐ **⚠️ paedlar is already merged; reconciliation work** |
+| `ent-hoarse` (L2) | **Congenital vocal cord paralysis** in full — left-sided predominance, weak cry, aspiration above the SLN origin, bilateral cord positions | `ent-vocal` / `ent-paedlar` | ☐ |
+| `ent-hoarse` (L2) | **The whole aetiology of vocal cord paralysis** — the unilateral ranking (bronchogenic ca 1st, thyroid 2nd, oesophageal 3rd, skull base 4th), the surgical and neurologic lists, bilateral percentages (iatrogenic 80 %, malignancy 10 %, neurologic 5 %), cord positions, RLN-vs-vagus, the management ladders. **Kept here:** only adductor→aspiration, abductor→stridor-with-normal-voice, and the fixation list | `ent-vocal` | ☐ |
+| `ent-hoarse` (L2) | **Croup / ALTB** in full (viral, winter, 1–3 y, barking cough, steeple sign) and **acute epiglottitis**. Kept here as names only, being rows of the laryngitis classification one question's option list reproduces | `ent-stridor` ✅ / `ent-paedlar` ☐ | ☐ |
+| `ent-hoarse` (L2) | **RRP beyond one line** — the full account and treatment ladder. **Kept here:** HPV 6/11, commonest benign laryngeal tumour, involution at puberty, avoid tracheostomy, mitomycin, adult papilloma premalignant | `ent-paedlar` | ✅ **already there** — `paed-8`, written first |
+| `ent-hoarse` (L1.1) | Laryngeal cartilages, membranes and ligaments, extrinsic muscles, blood supply, the nerve-supply plates, piriform sinus, pre-epiglottic space **as anatomy** | `ent-pharanat` | ☐ |
+| `ent-hoarse` (L8) | **The phoniatric evaluation protocol in full** — GRBAS parameter by parameter, VHI / VHI-10 / V-RQoL, the elementary/clinical/instrumental tiers, external laryngeal examination, mirror vs rigid vs flexible vs direct, stroboscopy, aerodynamic measures, the content of voice therapy, dysarthria/dyslalia/aphasia | `ent-phon` | ☐ |
+| `ent-hoarse` (L6) | Stridor typing, tracheostomy, the adult and paediatric cause lists | `ent-stridor` | ✅ already written |
+| `ent-hoarse` (L30) | **Rhinoscleroma of the nose** — its nasal stages and nasal management | `ent-rhin` | ☐ |
+| `ent-hoarse` (L17,18) | Referred otalgia in full, the four nerves and their territories | `ent-otalgia` | ✅ already written |
+| `ent-nasalmass` (L26) | The **"Reaching a diagnosis" allergic-rhinitis run** and the allergic-rhinitis clinical picture | `ent-rhin` | ☐ |
+| `ent-nasalmass` (L26) | The **adenoid slides** — obstructive vs non-obstructive adenoid, adenoid facies | `ent-tonsils` | ☐ **⚠️ tonsils is already merged; reconciliation work** |
+| `ent-nasalmass` (L30) | **Rhinoscleroma in full** — *Klebsiella rhinoscleromatis*, Egyptian endemicity, the three stages, **Mikulicz cells and Russell bodies**, the expansile granuloma on CT, management | `ent-rhin` | ☐ |
+| `ent-nasalmass` (L26) | **Septal haematoma beyond the definition** — drainage, septal abscess, cartilage necrosis, saddle nose | `ent-septum` | ☐ **agent briefed to collect it** |
+| `ent-nasalmass` (L31) | The full **nasal-obstruction aetiology** (mucosal causes, choanal atresia, pyriform aperture stenosis, turbinate hypertrophy, nasal valve dysfunction), **NOSE and SNOT-22**, rhinomanometry, acoustic rhinometry, the decongestant rules | `ent-nasalobs` | ☐ |
+| `ent-nasalmass` (L25) | **Epistaxis management as a subject** — packing, cautery, the arterial ligations. Only angiofibroma embolisation kept | `ent-epistaxis` | ☐ |
+
+> **⚠️ TWO CHAPTERS CAN DEFER THE SAME FACT TO EACH OTHER — the register is what catches it.**
+> `ent-paedlar` sent the full RRP account to `ent-hoarse`; `ent-hoarse`, written afterwards, sent it
+> back to `ent-paedlar`. Neither agent was wrong on its own reasoning, and **a circular deferral
+> deletes the fact while leaving two headers that both look correct.** Checked 2026-08-14 and it had
+> not fired: `paed-8` carries the aetiology, HPV 6/11, the debulking ladder and cidofovir, `hoar-8`
+> carries the adult-onset premalignant form. **The check is one grep across both merged chapters for
+> the fact's own vocabulary — never a reading of the two headers.** Run it whenever the register
+> shows two chapters pointing at each other.
 
 ### 14.6 What this costs, said plainly
 

@@ -2108,5 +2108,385 @@ var T_ENT = {
         ]
       }
     ]
+  },
+  "ent-hoarse": {
+    "intro": "Hoarseness is a symptom, not a diagnosis. Examined three ways: which benign cord lesion is this, is it cancer yet, and is the larynx normal and simply being used wrongly. Beyond three weeks in an adult, look at the cords.",
+    "sections": [
+      {
+        "id": "hoar-1",
+        "w": "must",
+        "h": "Dysphonia, the three parameters, and the map of causes",
+        "body": "**Dysphonia** = any audible change in the habitual voice — one failing the patient’s vocal demands, personality, age, size or gender. Hoarseness is one quality of it.\n**Three parameters: PITCH (frequency) · LOUDNESS (intensity) · QUALITY (resonance, phonation).**\n**Aphonia** = inability to phonate. **Dysodia** = failure of the SINGING voice, speaking voice intact. **Phonasthenia** = voice **FATIGUE**, *felt in the neck and throat rather than heard*: dryness or sourness, tenderness, throat clearing, sticky secretions, inability to continue speaking under vocal stress, increased effort. **The voice itself sounds NORMAL.**\n\n|**FUNCTIONAL**|**MAP** — minimal associated pathological lesions|**ORGANIC**|\n|---|---|---|\n|hyperfunctional childhood dysphonia · **mutational** · **hyperfunctional** · **hypofunctional** · **phonasthenia** · **ventricular** · habitual aphonia · spasmodic|**nodule · polyp · cyst · Reinke’s oedema · contact granuloma**; L2 adds **fibrosis** and **sulcus**|inflammatory and infective · **NEOPLASTIC** · congenital · **paralysis and fixation** · **GERD** · age-related|\n\n- **Cancer of the larynx is ORGANIC, never MAP** — that column is the line between retraining and biopsy.\n- **MAP lesions SHARE:** predisposition by **GERD**, **change of voice**, **favourable prognosis**. **They do NOT share a sex** — nodules and cysts favour women, polyps and contact granuloma men.\n- **Commoner in MALES: contact granuloma · sulcus glottidis · mutational voice disorder. Hyperfunctional dysphonia is the exception.**\n\nSrc: L2; L8 (classification and symptomatology only — the evaluation protocol is `ent-phon`’s)",
+        "qs": [
+          "entqb-thr9-491",
+          "entqb-thr9-465",
+          "entqb-thr9-464",
+          "entqb-thr9-463"
+        ]
+      },
+      {
+        "id": "hoar-2",
+        "w": "must",
+        "h": "The anatomy every answer here turns on",
+        "body": "**Three subsites: SUPRAGLOTTIS** — epiglottis, aryepiglottic folds, false (vestibular) folds, ventricle · **GLOTTIS** — true cords, anterior and posterior commissures, vocal processes · **SUBGLOTTIS** — to the lower border of the cricoid.\n**The CRICOID is the only COMPLETE RING of the airway.**\n**Cord layers: SQUAMOUS epithelium** (the rest of the larynx is columnar respiratory) **→ SUPERFICIAL lamina propria = REINKE’S SPACE → intermediate and deep lamina propria → VOCALIS**, the medial thyroarytenoid. **Body–cover theory: the cover vibrates over the body.**\n\n|Structure|What it explains|\n|---|---|\n|**Superficial lamina propria**|flood it → **Reinke’s oedema**; empty it → **sulcus vocalis**. **One layer, two opposite lesions**|\n|**Vocal process of the arytenoid**|thin mucosa directly on cartilage → **contact and intubation granuloma**, always POSTERIOR|\n|**Junction of the anterior and middle thirds** — the banks word it *anterior 1/3 : posterior 2/3*, the same point from the other end|midpoint of the membranous fold → **maximum amplitude and friction** → **nodules**, bilateral and symmetrical|\n|**Ventricular (false) folds**|can be recruited to phonate → **ventricular dysphonia**; and they **HIDE the true cords**|\n\n- **Only abductor: POSTERIOR cricoarytenoid.** Adductors — lateral cricoarytenoid, transverse and oblique arytenoids. **Tensor — cricothyroid**, the one muscle of the **external branch of the SLN**; **the RLN supplies every other intrinsic muscle.** Sensation above the cords = internal branch of SLN, below = RLN.\n\nSrc: L1.1; L2 (full laryngeal anatomy is `ent-pharanat`’s)",
+        "qs": [
+          "entep-throat-70",
+          "entqb-thr8-430",
+          "entqb-thr8-426",
+          "entqb-thr7-366",
+          "entqb-thr9-492",
+          "entqb-thr9-495"
+        ]
+      },
+      {
+        "id": "hoar-3",
+        "w": "must",
+        "h": "Red flags, and the diagnostic ladder",
+        "body": "**HOARSENESS OVER 2–3 WEEKS IN AN ADULT = LOOK AT THE CORDS** *(the figure is not in course material)*.\n**RED FLAGS — carcinoma until laryngoscopy says otherwise: over 3 weeks · SMOKER · over 40 · progressive, unresponsive to medical treatment · dysphagia · stridor · referred otalgia · NECK NODE · FIXED cord · weight loss.**\n**History: duration, onset, pattern · precipitating factors, recent URTI, change in voice use — shouting, singing · occupation and normal voice use, the impact on a teacher or singer · CHEST DISEASE, THYROID SURGERY, NECK TRAUMA · smoking, alcohol, drugs · dysphagia, GERD, aspiration, throat or ear pain, nasal blockage.**\n\n|Step|Tool|Answers|\n|---|---|---|\n|**1 — always the initial step**|**OFFICE LARYNGOSCOPY** — indirect mirror, rigid or flexible|is there a lesion, and do the cords MOVE|\n|2|**VIDEOSTROBOSCOPY**|mucosal wave, glottic closure, a lesion invisible under continuous light|\n|**3 — the best diagnostic tool**|**DIRECT LARYNGOSCOPY + BIOPSY** under GA|**the histological diagnosis**|\n|4|**CT / MRI**|**not the mucosa** — **cartilage invasion** and the **paraglottic and pre-epiglottic spaces**, which decide larynx preservation against total laryngectomy *(not in course material)*|\n\n- Also on the investigation slide: **high-speed digital imaging**, **electromyography**, **biopsy of any suspicious lesion or tumour**.\n- **Office laryngoscopy LOOKS; direct laryngoscopy with biopsy DIAGNOSES** — *initial step* against *best diagnostic tool* is the whole discrimination.\n- **Inflamed, oedematous cords with NO organic mass = MEDICAL TREATMENT AND FOLLOW-UP** — nothing to operate on, and the review is what excludes a missed malignancy. Defect: one printing replaces every option with anti-reflux wording and keys **anti-reflux medication + voice therapy**; both keyed as printed, and voice therapy is one of L2’s three non-surgical lines.\n\nSrc: L2",
+        "qs": [
+          "entep-throat-10",
+          "entep-throat-41",
+          "entep-mfe5-45",
+          "entep-mfe5-46",
+          "entep-throat-138",
+          "entep-throat-6",
+          "entep-throat-28",
+          "entep-enr-1",
+          "entep-throat-case-24"
+        ]
+      },
+      {
+        "id": "hoar-4",
+        "w": "must",
+        "h": "MAP lesions — the discrimination table",
+        "body": "**MAP = minimal associated pathological lesions: small benign non-neoplastic lesions of voice USE.**\n\n||**NODULE**|**POLYP**|**CYST**|**REINKE’S OEDEMA**|**CONTACT GRANULOMA**|\n|---|---|---|---|---|---|\n|**Site**|**junction of the anterior and middle thirds**|**anterior 1/3 of the free edge**|**membranous fold**; **covering mucosa NORMAL**|**whole length** of both cords|**VOCAL PROCESS of the arytenoid**|\n|**Number**|**BILATERAL, SYMMETRICAL**|**single, unilateral**; pedunculated or sessile|uni- or bilateral, **smooth**|**bilateral in 62–85 %**; bleach-white, fluid-filled|uni- or bilateral; **lobulated, pale, pedunculated**|\n|**Who**|**women, children, singers, lecturers**|**MALES, SMOKERS**, peak **30–50**|**FEMALES**; size varies with the menstrual cycle|**40–60**|**MALES**|\n|**Cause**|**CHRONIC VOICE ABUSE**|irritation, chiefly smoking|**mucus retention** or **epidermoid**|**SMOKING**, GERD, **hypothyroidism**, voice abuse|thin mucosa **crushed repeatedly against the opposite side** — forceful speaking, **reflux**, **cough**|\n|**Voice**|hoarse, **breathy**, **easily fatigued**|**persistent hoarseness**|hoarse, resists therapy|**persistent hoarseness, abnormally LOW PITCH — ≤80 Hz men, ~108 Hz women**; **pain very unusual**|hoarse ± **throat PAIN**, foreign-body sensation, **COUGH**|\n|**Phonation**|**IMMOBILE**|**MOBILE** when pedunculated|—|sessile; mobile when advanced|—|\n|**Treatment**|**SPEECH THERAPY**; surgery only on failure and only when **MATURE**|small → **stop smoking alone**; large → **MICROLARYNGOSURGERY** + **2 days voice rest**|therapy + reduce irritation; **surgery once it enlarges**|**remove the irritant** → **staged DECORTICATION**, one cord, the other **3–4 weeks later**|**voice REST** + treat reflux; surgery a **LAST RESORT**, recurrence common|\n\n- **Reinke’s is the smoker’s lesion and the only benign lesion that LOWERS pitch** — the flooded cover is heavier, so it vibrates slower. Extreme cases give dyspnoea and stridor. **NEVER bilateral cordectomy**: staging exists to avoid an anterior web, and surgery never fully restores the voice.\n- **Polyp types: haemorrhagic · hyalinous · fibrous · gelatinous.** Extreme growth → dyspnoea, stridor, choking, difficult intubation. **Aspiration is NOT a polyp symptom** — that is adductor palsy.\n- **Count the lesions, not the occupation: one discrete mass on one fold → MLS; two symmetrical bumps → voice therapy.** **Mitomycin belongs to recurrent respiratory papillomatosis.**\n- **INTUBATION GRANULOMA — same lesion, same site, cause ENDOTRACHEAL INTUBATION. ADULTS only. Women 4:1**, because the tube falls to the posterior commissure and the mucosa there is thinner. **Hoarseness days to weeks after any operation under GA, or after an ICU stay.** **Excise when pedunculated; avoid the SESSILE stage** (recurrence); **microscopic LASER excision beats surgical excision.** **Only the history separates it from contact granuloma.**\n\nSrc: L2; L8",
+        "qs": [
+          "entep-throat-16",
+          "entep-throat-49",
+          "entqb-thr9-492",
+          "entep-throat-100",
+          "entep-enr-33",
+          "entep-enr-34",
+          "entep-enr-17",
+          "entqb-thr9-466",
+          "entep-ear-36",
+          "entep-throat-53",
+          "entep-enr-24",
+          "entqb-thr7-366",
+          "entqb-thr9-467",
+          "entqb-thr9-463",
+          "entep-throat-20",
+          "entep-mfe4-7",
+          "entep-throat-108",
+          "entqb-thr9-465",
+          "entqb-thr9-491"
+        ]
+      },
+      {
+        "id": "hoar-5",
+        "w": "high",
+        "h": "Sulcus vocalis, bowing and presbylarynx — the empty-layer lesions",
+        "body": "**SULCUS VOCALIS (sulcus glottidis) = thinning or ABSENCE of the SUPERFICIAL LAMINA PROPRIA**, the layer the cover needs in order to vibrate.\n**Aetiology: CONGENITAL, or secondary to vocal trauma, infection, degeneration of benign lesions, or surgery**; linked to **ruptured congenital epidermoid cysts**; familial patterns reported. **Congenital sulci give a lifelong disordered voice** — yet dysphonia may declare only in adulthood, when demand outstrips compensation.\n**Presentation: hoarseness · unusual EFFORT, hence vocal fatigue · a change in PITCH — men mistaken for women on the telephone.** So: **HIGH-PITCHED, BREATHY, commoner in MALES.**\n**Diagnosis: a LINEAR DEPRESSION or an area of INCOMPLETE CLOSURE on the true fold; videostroboscopy shows a DECREASED MUCOSAL WAVE** over the sulcus.\n- **The exact mirror of Reinke’s oedema in the same layer.** Reinke’s floods it → heavy, slow, LOW pitch. Sulcus empties it → light, stiff, fast, HIGH pitch, plus a groove that cannot close. **Diplophonia** = the two folds vibrating at different frequencies *(mechanism not in course material)*.\n- **Surgery is NOT the best choice** — a missing layer cannot be replaced, and scar makes a stiff fold stiffer. Voice therapy first. *(L2 prints no treatment for sulcus.)*\n**BOWING / PRESBYLARYNX** — age-related **atrophy and decreased mass of BOTH folds, resulting in GAPING IN THE MIDDLE.** A concave free edge meets front and back and leaves a **spindle-shaped gap**: breathy, weak, short phrases, fatigue, and a poor cough. **A bowed fold still MOVES; a paralysed one does not.**\n\nSrc: L2",
+        "qs": [
+          "entqb-thr9-448",
+          "entqb-thr9-449",
+          "entqb-thr9-482"
+        ]
+      },
+      {
+        "id": "hoar-6",
+        "w": "high",
+        "h": "Laryngitis — acute and chronic, non-specific and specific",
+        "body": "|Class|Members|\n|---|---|\n|**Acute NON-SPECIFIC**|**acute viral · acute epiglottitis · acute laryngotracheobronchitis (croup) · acute bacterial**|\n|**Acute SPECIFIC**|**DIPHTHERIA**|\n|**Chronic NON-SPECIFIC**|localized — the **MAP lesions**; diffuse — **hypertrophic, reflux, atrophic**|\n|**Chronic SPECIFIC**|**SCLEROMA · TUBERCULOSIS · FUNGAL**|\n\n- **“Specific” = a NAMED ORGANISM with characteristic histology** — which is why scleroma, and not viral laryngitis, epiglottitis or bacterial tracheitis, is the specific chronic laryngitis.\n- **Acute viral:** RSV, rhinovirus, influenza, parainfluenza; with flu or URTI; **low-grade fever**; dysphonia, dysphagia, pain, exudation, cough.\n- **Diphtheria:** *Corynebacterium diphtheriae*; **grey dirty membrane**; **nasopharynx primary**; **culture mandatory — do not wait for it**; **10 % cranial nerve palsies**; DPT vaccine.\n- **SCLEROMA:** ***Klebsiella rhinoscleromatis***, gram-negative, **endemic in Egypt**; **Mikulicz cells** (foam cells holding the bacilli) and **Russell bodies** (degenerated plasma cells); **catarrhal → hypertrophic → atrophic → CICATRICIAL**; **biopsy** plus culture; **long-course aminoglycoside or tetracycline ± steroids, with surgical excision.** **In the larynx it takes the SUBGLOTTIS**, an epithelial transition zone, scarring inside the complete cricoid ring — so **stridor with a normal voice** *(the laryngeal site is named on no slide)*.\n- **TUBERCULOUS laryngitis: secondary to pulmonary TB**, rising again with HIV; **POSTERIOR larynx**; hoarseness, odynophagia, cough, weight loss, night sweats, haemoptysis.\n- **Syphilis:** *Treponema pallidum*, acquired or congenital; **1° localized lesions · 2° mucous patches with generalized lymphadenopathy · 3° nodular, granulomatous, ulcers, GUMMA.**\n- **Fungal:** actinomycosis · **blastomycosis — TRUE CORD** · candida · **histoplasmosis — EPIGLOTTIS and FALSE CORD** · coccidioidomycosis. **Any laryngitis not responding to maximum therapy — suspect mycosis.** Histology: **PSEUDOEPITHELIOMATOUS HYPERPLASIA with hyphae and spores** — which is why every chronic laryngeal mass is biopsied.\n- **Angioedema:** bee sting or allergen exposure; oedema, airway obstruction; **RECURRENT hoarseness · NO FEVER · PALE epiglottis.**\n- **Hypertrophic laryngitis:** smoking, alcohol, GERD, industrial materials, dust.\n- Defect: one bank keys **tuberculosis** for **bamboo nodules** — transverse yellow-white bands across the mid-membranous cord whose standard association is **autoimmune disease: SLE, then rheumatoid arthritis and Sjögren’s**, treated systemically *(not in course material)*; both sit on its own option list. Keyed as printed.\n\nSrc: L2; L30 (scleroma — organism, pathology, stages, treatment); L6 (laryngeal granulomas among the adult causes of stridor)",
+        "qs": [
+          "entqb-thr8-398",
+          "entqb-thr9-454",
+          "entep-throat-69",
+          "entqb-thr9-455"
+        ]
+      },
+      {
+        "id": "hoar-7",
+        "w": "high",
+        "h": "Laryngopharyngeal reflux",
+        "body": "**GERD = laryngopharyngeal reflux: “A MAJOR CAUSE OF HOARSENESS”, and it CAUSES MOST OF THE MAP LESIONS.**\n**90 % of infants and children have GERD. Miller’s asthma = night cough.**\n**Symptoms: cough · post-nasal drip · dysphagia · GLOBUS · throat clearing.**\n**Signs: erythema · oedema · COBBLESTONING · INTERARYTENOID PREDILECTION · ulcers · granulations.**\n**ANTI-REFLUX TREATMENT IS MANDATORY: lifestyle modification · ANTACIDS and HISTAMINE-2 blockers to counter acid secretion · PROKINETICS to raise lower-oesophageal-sphincter pressure, increase oesophageal motility and promote gastric emptying · SUCRALFATE for mucosal protection · surgery — FUNDOPLICATION.**\n\nSrc: L2",
+        "qs": [
+          "entep-enr-1",
+          "entqb-thr9-465"
+        ]
+      },
+      {
+        "id": "hoar-8",
+        "w": "must",
+        "h": "Premalignant lesions and laryngeal carcinoma",
+        "body": "**Potentially malignant laryngeal lesions: LEUCOPLAKIA · TB LARYNX · ADULT-ONSET PAPILLOMA. PLUMMER–VINSON is the standing EXCEPTION** — premalignant for **POSTCRICOID (hypopharyngeal)** carcinoma, not laryngeal *(the list is not in course material)*.\n**Mostly SQUAMOUS CELL. SMOKING is the single dominant, dose-dependent cause**; alcohol second and synergistic; reflux contributes. **BMI, diet and social class are not laryngeal carcinogens** *(the ranking is not in course material)*.\n\n||**SUPRAGLOTTIC**|**GLOTTIC**|**SUBGLOTTIC**|\n|---|---|---|---|\n|**First symptom**|**REFERRED OTALGIA**, and a **MUFFLED “hot-potato” voice WITHOUT hoarseness**|**HOARSENESS, while the tumour is still tiny**|**STRIDOR**|\n|**Why**|the cords are spared, so the voice source is intact; pain travels the **VAGUS** to the ear|it sits on the vibrating edge — millimetres are enough|the only level inside a **COMPLETE RING**; the lumen is all there is to lose|\n|**Nodes**|**EARLY** — rich bilateral lymphatics|**LATE** — the true cord has **almost no lymphatics**|late|\n|**Stridor**|**LATE**|**LATE** — hoarseness first, obstruction months later|**EARLY**|\n|**Prognosis**|worse — nodes often present at diagnosis|**BEST** — early symptom, early detection, **high cure rate**|poor — silent until it obstructs|\n\n- **THE ORDER OF THE SYMPTOMS IS THE DIAGNOSIS.** Hoarseness *then* stridor = **glottic**. Stridor first = **subglottic**. Muffled voice plus a neck node = **supraglottic**. Dysphagia first = **pyriform fossa / hypopharynx**.\n- **Glottic origin: the true cord, the anterior and posterior commissures, the vocal processes.** Spread is by **direct extension into the supraglottis and subglottis**, not by nodes *(the direction is stated on no slide)*.\n- **A palpable cervical node = regional metastasis = ADVANCED malignancy**, whatever the size of the primary *(staging not in course material)*. **BIOPSY THE PRIMARY, NEVER THE NODE** — open node biopsy in an undiagnosed head-and-neck cancer **seeds the neck**, and **FNAC is the only needle permitted** *(not in course material)*.\n- **Advanced disease: WEIGHT LOSS and FETID MOUTH BREATHING** — cachexia plus a necrotic, infected tumour surface. **A FIXED cord means deep invasion**, and is the trigger for CT.\n- **Treatment, L2 verbatim: “radiotherapy, surgical excision according to the stage.” EARLY GLOTTIC → single-modality and voice-preserving: RADIOTHERAPY or transoral LASER cordectomy. TOTAL LARYNGECTOMY is for advanced disease only** *(the early/advanced split and laser surgery are named on no slide)*.\n- **RECURRENT RESPIRATORY PAPILLOMATOSIS: HPV 6 and 11 · the COMMONEST BENIGN TUMOUR OF THE LARYNX · infants and children · SPONTANEOUS INVOLUTION AT PUBERTY · AVOID TRACHEOSTOMY** · laser, debrider, **mitomycin**, valacyclovir, indol-3-carbinol, isotretinoin. Full account in `ent-paedlar`.\n\nSrc: L2; L6 (glottic and supraglottic — late stridor; subglottic — early stridor); L17,18 (the vagus among the four nerves supplying the ear)",
+        "qs": [
+          "entep-throat-82",
+          "entep-throat-14",
+          "entep-mfe5-32",
+          "entep-throat-95",
+          "entep-throat-70",
+          "entep-throat-89",
+          "entep-throat-38",
+          "entqb-thr8-430",
+          "entep-throat-71",
+          "entep-mfe5-33",
+          "entep-throat-44",
+          "entep-throat-45",
+          "entep-throat-46",
+          "entep-throat-47",
+          "entqb-thr8-426",
+          "entqb-thr8-427",
+          "entqb-thr8-428",
+          "entqb-thr8-429",
+          "entep-throat-112",
+          "entqb-thr8-421",
+          "entqb-thr8-437",
+          "entep-throat-138",
+          "entep-throat-case-24"
+        ]
+      },
+      {
+        "id": "hoar-9",
+        "w": "know",
+        "h": "Vocal cord immobility — fixation against paralysis",
+        "body": "**An immobile cord is either FIXATION — a mechanically blocked joint or an invading tumour — or PARALYSIS, a dead nerve.**\n**Causes of FIXATION: POST-SURGICAL, the commonest · irradiation · intubation, with arytenoid dislocation or subluxation · GLOTTIC CANCER · trauma, cicatrization or joint dislocation · systemic disease fixing the cricoarytenoid joint — GOUT, sarcoidosis, TB, RHEUMATOID ARTHRITIS, ankylosing spondylitis · infiltrative disease — Wegener’s granulomatosis, amyloidosis, sarcoidosis, TB, hypothyroidism (only in myxoedema) · myopathic disorders.**\n- **Paralysis is “a sign of another disease”** — neurological, iatrogenic or traumatic, or inflammatory. Its aetiology, the cord positions and the management belong to `ent-vocal`. **Two lines matter here: ADDUCTOR palsy causes ASPIRATION** — which is why aspiration is never a symptom of a cord polyp — **and ABDUCTOR palsy causes STRIDOR with a normal voice.**\n\nSrc: L2; L11",
+        "qs": [
+          "entqb-thr9-482",
+          "entep-throat-138"
+        ]
+      },
+      {
+        "id": "hoar-10",
+        "w": "must",
+        "h": "Non-organic dysphonia — functional and psychogenic",
+        "body": "**Non-organic means the larynx is structurally NORMAL and is being used wrongly.** L2 splits it **PSYCHOGENIC** and **FUNCTIONAL**.\n\n|Disorder|Picture|Treatment|\n|---|---|---|\n|**HYPOfunctional dysphonia**|**WEAK, BREATHY**, asthenic; **INCOMPLETE GLOTTAL CLOSURE** leaks air; no structural lesion, no neurological deficit|**VOICE THERAPY**|\n|**HYPERfunctional dysphonia**|**STRAINED and leaky**, vocal fatigue; **hyperaemic swollen folds, phonatory waste, ventricular hypertrophy**; **the FEMALE exception**|**VOICE THERAPY** — nothing to excise, and it is the engine that later builds nodules, polyp and Reinke’s oedema|\n|**VENTRICULAR dysphonia** = plica ventricularis|**the FALSE cords phonate instead of the true ones**: low-pitched, rough, irregular, leaky; **hypertrophic, red, injected ventricular bands**; usually compensatory, and they **HIDE the true cords**, so the underlying lesion must still be sought|Defect: one bank keys **surgical trimming of the ventricular folds** — recorded as printed; L2 and L8 both classify it FUNCTIONAL and print no treatment, and the same bank keys voice therapy for the other functional dysphonias|\n|**MUTATIONAL voice disorder**|**puberty, essentially male — “failure to attain the low-pitched voice”**; pitch breaks worse with fatigue; **the larynx is held HIGH, never depressed** *(mechanism not in course material; laryngeal POSITION is a formal examination item on L8)*|**VOICE THERAPY**, often quickly — the low register physically already exists|\n|**PHONASTHENIA**|voice **FATIGUE** felt rather than heard; **the voice sounds NORMAL**|voice therapy, vocal hygiene|\n|**PSYCHOGENIC / conversion (hysterical) aphonia**|**more in FEMALES**; a history of psychological trauma; poor or absent voice — **but the COUGH IS NORMAL**: *“order her to cough, she is ok”*|voice therapy, usually rapidly curative|\n|**SPASMODIC dysphonia**|**adductor · abductor · mixed**|—|\n|**Habitual aphonia**|the pattern outlives whatever started it|voice therapy|\n\n- **THE COUGH TEST IS THE DISCRIMINATOR: a normal cough with no voice is FUNCTIONAL; a weak cough with no voice is ORGANIC.** **The larynx must still be examined** before the label is used.\n- **Breathy = air leaking through a gap. Strained = squeezing.** Opposite poles of one fault; both retrained, not operated on.\n\nSrc: L2; L8",
+        "qs": [
+          "entqb-thr9-459",
+          "entqb-thr9-460",
+          "entqb-thr9-461",
+          "entqb-thr9-493",
+          "entqb-thr9-494",
+          "entqb-thr9-495",
+          "entqb-thr9-496",
+          "entqb-thr9-462",
+          "entqb-thr9-486",
+          "entqb-thr9-488",
+          "entqb-thr9-464",
+          "entqb-thr9-463"
+        ]
+      },
+      {
+        "id": "hoar-11",
+        "w": "high",
+        "h": "The lines of treatment",
+        "body": "**NON-SURGICAL, three lines: 1) VOICE HYGIENE ADVICE · 2) TREAT LARYNGO-PHARYNGEAL REFLUX if suspected · 3) VOICE THERAPY.**\n**Goals of voice therapy: eliminate potentially harmful vocal behaviours · alter the manner of voice production · enhance vocal fold tissue healing after injury.** First-line for every FUNCTIONAL disorder and for vocal nodules.\n\n|Operation|For|\n|---|---|\n|**MICROLARYNGOSURGERY (MLS)**|**a discrete MAP mass — polyp, cyst, mature nodule.** Suspension microlaryngoscopy under GA, or indirect microlaryngostroboscopic surgery under LA; **2 days complete voice rest** after either|\n|**CO₂ LASER**|laser-assisted laryngeal surgery, including cordectomy|\n|**DECORTICATION**|Reinke’s oedema — a strip of epithelium, **one cord, the other 3–4 weeks later**|\n|**THYROPLASTY TYPE 1**|**medialize a PARALYSED cord** so it closes the gap and phonates well|\n|**Vocal fold INJECTION**|a **thin or bowed** fold — **fat, Teflon, hyaluronic acid**|\n\n- **Surgery never treats a functional disorder**, and **never treats a swollen fold by adding volume**: injection is for a fold with too little tissue, decortication and trimming for one with too much.\n\nSrc: L2",
+        "qs": [
+          "entep-enr-17",
+          "entep-enr-34",
+          "entep-throat-108",
+          "entqb-thr9-461",
+          "entqb-thr9-494",
+          "entqb-thr9-496",
+          "entqb-thr9-482",
+          "entep-throat-6"
+        ]
+      }
+    ]
+  },
+  "ent-nasalmass": {
+    "intro": "One question decides everything: one side or both. Bilateral and smooth is inflammatory; unilateral is a mass until CT says otherwise. Examined as four patients — the adolescent who bleeds, the child with one polyp, the adult of 40–60, and the adult with a neck node.",
+    "sections": [
+      {
+        "id": "nmass-1",
+        "w": "must",
+        "h": "Classify before you investigate — location, laterality, duration, discharge",
+        "body": "**Preliminary diagnosis first** — it sets **urgency**, **which investigations are needed**, and **whether an office procedure is safe**.\n\n**Four axes:** **anatomical** — unilateral · bilateral · midline · **pathological** — benign · malignant · **symptoms** — pain; obstruction unilateral, bilateral or **alternating**; nasal only vs **extranasal** · **radiological** — **CT: bone-like or soft-tissue-like**; **MRI: signal compared to muscle**.\n\n|Midline|Unilateral|Bilateral|\n|---|---|---|\n|**septal haematoma** · septal tumours|**ACP** · **FB granuloma** · **inverted papilloma** · **angiofibroma** · bleeding polyp · skull-base lesions · **malignancy** · osseous lesions|**DP** diffuse polyposis · **HIT** hypertrophied inferior turbinate|\n\n**Sub-site:** **roof** = encephalocele · **lateral wall** = ACP, inverted papilloma, angiofibroma, malignancy · **floor** = nasoalveolar cyst · **septum** = bleeding polyp · **endonasal** = foreign body.\n\n- **Constant = STRUCTURAL**; fluctuating = mucosal or mixed.\n- **Unilateral = structural or unilateral pathology** (ACP, odontogenic); bilateral = mucosal, structural or mixed; **alternating is a positional variety of bilateral**, not a mass.\n- **Position-dependent = allergy, rhinitis, rhinosinusitis**; non-position-dependent = deviation and **tumours**.\n- **Discharge: blood-stained = neoplasm or fungal · foetid = foreign body, odontogenic sinusitis, neoplasm, fungal · unilateral watery = CSF.** Bloody in an older patient is cancer; foetid in a child is a foreign body.\n\nSrc: L26; L31",
+        "qs": [
+          "entqb-nose7-227",
+          "entep-nose-30"
+        ]
+      },
+      {
+        "id": "nmass-2",
+        "w": "must",
+        "h": "The work-up — sequence, alarming symptoms, imaging, and the biopsy rule",
+        "body": "**Order: history → examination → NASAL ENDOSCOPY → imaging.** The mass is **seen before it is scanned**, and a **normal anterior rhinoscopy localises a lesion posteriorly rather than excluding it**.\n**Probe test** — a polyp is pale, insensitive, mobile and the probe passes around it; a turbinate is sensitive and immobile *(technique not in course material)*.\n\n**ALARMING SYMPTOMS — any one means scope and image:** **persistent unilateral progressive obstruction** · **persistent unilateral watery rhinorrhoea** · **persistent unilateral epistaxis** · **persistent unilateral sinus pain** · **extranasal manifestations**.\n\n|Situation|Imaging|\n|---|---|\n|**Adult, unilateral mass**|**CT PNS first** — origin, extent, **bone erosion = malignancy**, surgical planning|\n|**Child, congenital or midline**|**CT AND MRI** — CT for the bony defect, MRI for the intracranial contents|\n|**Looks vascular** (adolescent, bleeding)|**Contrast CT**, then **CT angiography ± MRI**|\n|Plain X-ray|**Never adequate**|\n|Mass already seen on endoscopy|**Go to CT** — repeating the endoscopy adds nothing|\n\n**BIOPSY RULE — image first, always.** **Contraindicated: meningo/encephalocele** (opens the subarachnoid space → CSF leak, meningitis) **and juvenile angiofibroma** (internal maxillary supply → torrential haemorrhage). **Required: inverted papilloma** (5–15 % harbour carcinoma) **and nasopharyngeal carcinoma**. *(The ban is the slide’s own \"Biopsy ??\"; the mechanisms are not in course material.)*\n- **Steroids, decongestants and reassurance treat mucosa, not masses.**\n\nSrc: L26; L31",
+        "flow": {
+          "title": "Unilateral nasal mass — the safe order",
+          "steps": [
+            {
+              "k": "step",
+              "t": "History: side, duration, epistaxis, discharge, age",
+              "n": "Constant + unilateral = structural"
+            },
+            {
+              "k": "step",
+              "t": "Anterior rhinoscopy, then NASAL ENDOSCOPY",
+              "n": "A normal anterior rhinoscopy localises it posteriorly"
+            },
+            {
+              "k": "decision",
+              "t": "Mass seen, or any alarming symptom?",
+              "yes": "Image it",
+              "no": "Treat the mucosa and review"
+            },
+            {
+              "k": "step",
+              "t": "CT PNS — add MRI in a child or a midline mass; CT angiography if it looks vascular"
+            },
+            {
+              "k": "alert",
+              "t": "NEVER biopsy before imaging; never biopsy an encephalocele or an angiofibroma at all",
+              "n": "CSF leak and meningitis · torrential haemorrhage"
+            },
+            {
+              "k": "step",
+              "t": "Biopsy only where imaging permits, then definitive surgery"
+            }
+          ]
+        },
+        "qs": [
+          "entep-nose-15",
+          "entep-nose-39",
+          "entep-nose-78",
+          "entep-nose-80",
+          "entep-nose-81",
+          "entep-nose-113",
+          "entep-enr-22",
+          "entep-enr-23",
+          "entep-enr-25",
+          "entqb-nose7-205",
+          "entqb-nose7-208",
+          "entqb-nose7-223",
+          "entqb-nose7-229",
+          "entqb-nose7-230"
+        ]
+      },
+      {
+        "id": "nmass-3",
+        "w": "must",
+        "h": "The master differential — six masses, side by side",
+        "body": "||ACP|Ethmoidal polyposis|Angiofibroma|Inverted papilloma|Sinonasal malignancy|NPC|\n|---|---|---|---|---|---|---|\n|**Age**|child, young adult|adult|**10–25**|**40–60**|**50+**|40–60|\n|**Sex**|M 2:1|either|**male only**|male|male|male|\n|**Side**|**unilateral, SOLITARY**|**bilateral, MULTIPLE**|unilateral|unilateral|unilateral|nasopharynx; unilateral ear|\n|**Origin**|**maxillary antrum**|**ethmoid** (uncinate, MT, infundibulum)|**sphenopalatine foramen**|**lateral wall**, MT + maxillary ostium|**maxillary sinus**|**fossa of Rosenmüller**|\n|**Surface**|**smooth, glistening**|smooth, glistening|**firm, vascular, posterior**|**irregular, convoluted, pinkish**|irregular, friable|submucosal|\n|**Bleeds?**|**no**|no|**profusely**|on touch|blood-stained|blood-stained|\n|**Extras**|throat foreign-body sensation|**hyposmia, asthma, aspirin**|**ear fullness, proptosis, facial asymmetry**|**5–15 % malignant**|**cheek numbness, epiphora, proptosis**|**neck node, unilateral glue ear**|\n|**Imaging**|antrum opacified, mass to nasopharynx|pan-ethmoid soft tissue|**Holman-Miller, widened SPF, salt and pepper**|lateral-wall soft tissue|**BONE EROSION**|enhancing nasopharyngeal mass|\n|**Biopsy**|not needed|no|**CONTRAINDICATED**|**yes, must**|yes|**yes**|\n|**Treatment**|**FESS with the antral origin**|**medical first**, FESS if it fails|**embolise, then excise**|**wide excision of the base**|surgery + radiotherapy|**RADIOTHERAPY**|\n\n- **Smooth vs irregular** separates ACP from inverted papilloma; **bleeding** separates angiofibroma from everything else of that age.\n- **Bilateral and smooth is inflammatory; unilateral is a mass.** Under five, a unilateral \"polyp\" is an encephalocele until CT says otherwise.\n\nSrc: L26",
+        "qs": [
+          "entep-enr-30",
+          "entep-throat-135",
+          "entqb-nose7-212",
+          "entqb-nose7-216",
+          "entep-nose-82"
+        ]
+      },
+      {
+        "id": "nmass-4",
+        "w": "must",
+        "h": "Antrochoanal polyp",
+        "body": "**Smooth soft INFLAMMATORY mass arising from the maxillary sinus.** **Two components joined by a NARROW NECK** through the ostium — **solid in the nasal cavity, cystic in the antrum**. Prolapses through the **middle meatus** and grows **backwards into the choana and nasopharynx**; **never forwards out of the nostril, never into the orbit**, so it cannot cause proptosis. **Sometimes too huge to extract through the nose.**\n\n- **Solitary and unilateral** — the defining pair; polyposis is multiple and bilateral.\n- **M:F 2:1** *(ratio not in course material)*; children and young adults.\n- **Unilateral obstruction · ipsilateral rhinorrhoea · foreign-body sensation in the throat** from the nasopharyngeal part; mouth breathing and snoring once it reaches the choana.\n- **It does NOT bleed.** Epistaxis from a unilateral mass means angiofibroma, inverted papilloma or malignancy.\n- **Not premalignant, not fungal, not ethmoidal.**\n- **FESS — remove the nasal part TOGETHER WITH the cystic antral origin.** Polypectomy or avulsion alone leaves the root and it recurs. Steroids, antibiotics, radiotherapy and hormones have no role; Caldwell-Luc is the historic open alternative *(not in course material)*.\n\nSrc: L26",
+        "qs": [
+          "entep-nose-46",
+          "entep-nose-92",
+          "entep-mfe4-21",
+          "entqb-nose7-211",
+          "entqb-nose7-213",
+          "entqb-nose7-214",
+          "entqb-nose7-215",
+          "entqb-nose7-218",
+          "entqb-nose7-234",
+          "entep-nose-case-10"
+        ]
+      },
+      {
+        "id": "nmass-5",
+        "w": "high",
+        "h": "Nasal polyposis — bilateral, ethmoidal, inflammatory",
+        "body": "**Multiple = diffuse polyposis (DP) and middle-meatal polyps (MMP); solitary = antrochoanal polyp.** Bilateral **soft, smooth, glistening, insensitive, mobile** masses; **painless bilateral obstruction with hyposmia**.\n\n**Aetiology, with the slide’s attributions:** drug sensitivity (**Samter, 1968**) · aerodynamic (Ogawa, 1986) · autonomic imbalance (Sasaki, 1988) · mucosal contact (Stammberger, 1991) · infective/inflammatory (Norlander, 1993) · **enzyme abnormality — CYSTIC FIBROSIS** · genetic mucosal hyperreactivity · fungal · allergy.\n- **Samter’s triad:** diffuse sinonasal polyposis + **aspirin hypersensitivity** + **bronchial asthma**, on allergic rhinitis. **Late-onset asthma with bilateral polyps and hyposmia — ask about aspirin.**\n- **Bilateral polyps in a child mean CYSTIC FIBROSIS** until excluded.\n\n**Origin, in the slide’s order — the ETHMOID is the commonest site of nasal polyps:** **80 % uncinate–middle turbinate–infundibulum** · 66 % anterior face of bulla–hiatus · 48 % frontal recess · 42 % between bulla and MT · 30 % inside the bulla · 15 % middle turbinate · 10 % posterior ethmoids–superior turbinate.\n\n**Medical, first line:** topical nasal steroids · systemic oral steroids · antibiotics · antihistamines · steroid-sparing drugs.\n**Steroid-sparing:** **ASA desensitisation** · leukotriene pathway modifiers · frusemide inhalation · gene therapy · antifungal agents (the slide queries this one).\n**Surgery when:** **medical treatment fails** — obstruction, congestion, recurrent infection, **worsening asthma** · prolonged systemic steroids · quality-of-life change · **complications**.\n**Approaches:** external · intranasal with headlight · microscopic · **endoscopic**.\n\nSrc: L26; L29",
+        "qs": [
+          "entep-nose-86",
+          "entqb-nose7-217",
+          "entep-nose-case-19"
+        ]
+      },
+      {
+        "id": "nmass-6",
+        "w": "must",
+        "h": "Inverted papilloma",
+        "body": "**Lateral nasal wall at the middle turbinate and maxillary ostium — NOT the septum. Males 40–60. HPV may be involved. Malignancy in 5–15 %.**\n\n- **Irregular polypoid masses of variable consistency, pinkish, with some tendency to bleed** — a **convoluted / cerebriform** surface against the smooth polyp. Unilateral obstruction, offensive or blood-stained discharge.\n- **Histology: ribbons of hyperplastic respiratory epithelium enclosed by basement membrane, growing INTO the subjacent stroma — the inverted pattern.**\n- **Benign but locally aggressive and recurrent. Biopsy it** — the one unilateral mass that must be sampled. Angiography has no diagnostic role.\n- **WIDE resection including the attachment base** (medial maxillectomy, endoscopic or open); taking the visible mass alone leaves the base. **Radiotherapy has no role** *(surgical detail not in course material)*.\n- **Defect note:** one printed case diagnosis reads \"Right Nasal Carcinoma (mainly Inverted Papilloma)\" — the slide makes it benign with 5–15 % malignant change; recorded as printed.\n\nSrc: L26",
+        "qs": [
+          "entep-nose-9",
+          "entep-nose-110",
+          "entqb-nose7-224",
+          "entep-nose-case-17"
+        ]
+      },
+      {
+        "id": "nmass-7",
+        "w": "must",
+        "h": "Juvenile nasopharyngeal angiofibroma",
+        "body": "**Lobulated mass at the confluence of the posterolateral nasal wall and lateral nasopharynx — CENTRED ON THE SPHENOPALATINE FORAMEN** (banks also write \"sphenopalatine fossa\"). **Males during adolescence**, 10–25, **androgen-sensitive**; **benign histologically, locally aggressive, no metastasis** *(hormonal basis and behaviour not in course material)*.\n\n**Presentation:** **nasal obstruction**, unilateral or bilateral · **EPISTAXIS — recurrent, severe, not held by packing** · **ear fullness** from Eustachian obstruction → **unilateral conductive deafness** · **facial asymmetry** · endoscopy: **firm vascular lesion in the posterior part of the nasal cavity**. **Anterior rhinoscopy is often normal.** Pallor and anaemia from repeated bleeds; **proptosis** means orbital extension.\n\n**Work-up: Biopsy ?? — no · CT · CT angiography · MRI.**\n\n|Sign|What it is|\n|---|---|\n|**Holman-Miller sign**|**Bowing of the posterior maxillary wall** forwards on CT|\n|**Widened SPF**|Sphenopalatine foramen enlarged by the tumour|\n|**Salt and pepper**|**T2 heterogeneous enhancement with signal void**; T1 intermediate; T1-gadolinium prominent enhancement|\n\n**Blood supply: EXTERNAL carotid — the INTERNAL MAXILLARY ARTERY (IMAX)** and its sphenopalatine branch. That one fact explains the profuse bleeding, the failed pack, the biopsy ban and the treatment.\n**Treatment: pre-operative EMBOLISATION of the internal maxillary / sphenopalatine supply, then EXCISION 24–48 hours later**, endoscopic or open. **Never conservative; never operated unembolised.** Radiotherapy only for unresectable intracranial disease — **not** the treatment of choice. *(No slide states the treatment — not in course material.)*\n\nSrc: L26",
+        "qs": [
+          "entep-nose-20",
+          "entep-nose-41",
+          "entep-nose-42",
+          "entep-nose-57",
+          "entep-throat-119",
+          "entep-throat-127",
+          "entep-mfe5-10",
+          "entqb-nose2-59",
+          "entqb-nose7-220",
+          "entqb-nose7-221",
+          "entqb-nose7-222",
+          "entqb-nose7-228",
+          "entqb-nose7-233",
+          "entqb-nose7-235",
+          "entep-throat-case-13"
+        ]
+      },
+      {
+        "id": "nmass-8",
+        "w": "must",
+        "h": "Nasopharyngeal carcinoma",
+        "body": "**Origin: the FOSSA OF ROSENMÜLLER** — the lateral pharyngeal recess behind and above the Eustachian tube orifice; hidden, so the tumour is silent until it spreads. Not the pyriform or postcricoid fossa (hypopharynx), not the tonsillar fossa (oropharynx).\n**EBV-associated — raised IgA titre to Epstein-Barr virus** (viral capsid and early antigens), for diagnosis and for tracking recurrence. Endemic in **southern China and Southeast Asia** and around the **Mediterranean including Egypt**; salted-fish nitrosamines, smoking, alcohol.\n\n|Presentation|Why|\n|---|---|\n|**NECK MASS — the commonest presenting sign**|Rich bilateral lymphatics; a painless upper deep cervical node arrives before the primary declares itself|\n|**Unilateral middle-ear effusion or conductive loss IN AN ADULT**|Eustachian obstruction. **Never dismiss it — examine the postnasal space**|\n|Nasal obstruction, **blood-stained discharge**, epistaxis|Mass extending forward into the nasal cavity|\n|**Cranial nerve palsy**|Late — skull-base disease|\n\n**TROTTER’S TRIAD: unilateral conductive deafness + ipsilateral trigeminal (V3) pain, earache and neuralgia + ipsilateral immobility of the soft palate** (levator palati), sometimes trismus. **Proptosis and ophthalmoplegia are OUTSIDE it** — later superior extension into orbit and cavernous sinus.\n\n**Cranial nerves — the direction decides which.** **Upward** through the foramen lacerum to the **cavernous sinus → III, IV, V, VI** (abducent often first). **Downward** through the **jugular foramen → IX, X, XI, XII**. **The FACIAL nerve is SPARED** — it runs in the temporal bone; a facial palsy means another cause.\n**Nasopharyngoscopy with biopsy** — biopsy is correct here. **RADIOTHERAPY is the treatment of choice**, with concurrent chemotherapy in advanced disease; surgery for residual neck nodes only.\n\nSrc: L1.2 labels the fossa of Rosenmüller; every other fact here is not in course material.",
+        "qs": [
+          "entep-nose-52",
+          "entep-nose-58",
+          "entep-nose-67",
+          "entep-nose-70",
+          "entep-nose-87",
+          "entep-throat-11",
+          "entep-throat-67",
+          "entep-throat-113",
+          "entep-throat-120",
+          "entep-throat-126",
+          "entep-throat-136",
+          "entqb-nose7-231"
+        ]
+      },
+      {
+        "id": "nmass-9",
+        "w": "high",
+        "h": "Sinonasal malignancy",
+        "body": "**Types:** **squamous cell carcinoma** · adenocarcinoma · **adenoid cystic carcinoma** · mucoepidermoid carcinoma · **haemangiopericytoma** · **melanoma**.\n**SCC is the commonest sinonasal malignancy and the MAXILLARY SINUS its commonest site**, including as a tumour cause of epistaxis. Basal cell carcinoma belongs to the **skin** of the external nose *(ranking not in course material)*.\n\n|Presentation|%|Detail|\n|---|---|---|\n|**Nasal**|**50 %**|obstruction, **epistaxis**, rhinorrhoea|\n|**Oral**|**25–35 %**|pain, **trismus**, alveolar ridge fullness, erosion|\n|**Ocular**|**25 %**|epiphora, diplopia, **proptosis**|\n|**Facial**|—|**paraesthesias**, asymmetry|\n\n- **Cheek numbness = infraorbital (V2) invasion** — a red flag no benign lesion produces.\n- **Wood dust**, twenty years a carpenter, is the classic exposure; hardwood dust → **ethmoid adenocarcinoma** *(not in course material)*.\n- **Bone erosion on CT is the malignant sign.** Surgery with radiotherapy.\n- **Defect note:** for the 60-year-old carpenter with cheek numbness the bank keys **sinonasal malignancy** at one printing and **inverted papilloma** at its reprint; the malignancy key is held — numbness means nerve invasion.\n\nSrc: L26",
+        "qs": [
+          "entep-nose-2",
+          "entep-nose-69",
+          "entqb-nose2-60"
+        ]
+      },
+      {
+        "id": "nmass-10",
+        "w": "high",
+        "h": "Congenital, midline and the remaining unilateral lesions",
+        "body": "|Lesion|Site|Feel|Decider|\n|---|---|---|---|\n|**Meningo / encephalocele**|**roof**, midline|**soft, compressible, pulsatile, transilluminates**|**Intracranial tissue herniating through a cranial defect.** **ENLARGES ON CRYING OR STRAINING — Furstenberg sign.** CT for the bony defect + MRI for the contents. **NEVER biopsy**|\n|Nasal **dermoid**|midline|**firm, non-compressible**|**Midline pit, sometimes with hair**; unchanged on crying|\n|Nasal **glioma**|midline or paranasal|**firm, non-compressible**|**No patent intracranial connection** — a fibrous stalk at most; unchanged on crying|\n|**Nasoalveolar cyst**|**floor** of the nose|soft|Fullness of the alar base and nasolabial fold|\n|**Thornwaldt’s cyst**|**midline nasopharyngeal roof**|cystic|Retention cyst of the **pharyngeal bursa — nasopharyngeal ENDODERM**. **Morning foul post-nasal discharge**, occipital headache, Eustachian obstruction. CT **hypodense with thin RIM enhancement**; nodular enhancement = solid tumour. Endoscopic marsupialisation|\n|**Rathke’s cleft cyst**|**pituitary gland**|cystic|From **Rathke’s pouch, stomodeal ectoderm** — not a pharyngeal pouch, not the pharyngeal bursa|\n|**Septal haematoma**|midline septum|soft, often bilateral|**Blood under the mucoperichondrium or mucoperiosteum** of septal cartilage or bone; **bilateral is the more frequent form after severe trauma**|\n|**Fibro-osseous lesions**|antrum, ethmoid|bone-hard|**Fibrous dysplasia, ossifying fibroma — bone expansion pushes the globe → PROPTOSIS.** CT bone-like. An antrochoanal polyp grows backwards and never does this|\n|**Foreign body / granuloma**|endonasal|—|**Unilateral foetid discharge in a child**|\n|**Bleeding polyp**|**septum**|friable|Bleeds on touch|\n\n- **A unilateral \"polyp\" under five is not a polyp** — encephalocele, glioma, ACP or tumour until CT and MRI say otherwise; biopsy or polypectomy first opens the subarachnoid space.\n- **Defect note:** the commonest congenital nasal mass is keyed as **meningoencephalocele**; standard teaching puts the **nasal dermoid** first and nothing cached settles it — keyed as printed.\n\nSrc: L26; Furstenberg, the dermoid and glioma discriminators, Thornwaldt’s cyst, Rathke’s cleft cyst and the fibro-osseous lesions are not in course material.",
+        "qs": [
+          "entep-nose-48",
+          "entqb-nose7-206",
+          "entqb-nose7-207",
+          "entqb-thr4-152",
+          "entqb-thr4-153",
+          "entqb-thr4-154",
+          "entqb-thr4-212",
+          "entep-nose-35"
+        ]
+      }
+    ]
   }
 };
