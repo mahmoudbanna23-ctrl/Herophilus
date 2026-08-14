@@ -47,7 +47,7 @@ see the reconciliation pass below). Ceiling = `max(W, 25Q, 600)`.
 
 | Chapter | Ceiling | W | Q | Decks (in `content\peds\lectures\`) |
 |---|---:|---:|---:|---|
-| `respiratory` | 12,984 | 12,984 | 0 | `30) Pneumonia` · `PNEUMONIA` · `31).1)Asthma part 1` · `31).2)Asthma part 2` · `Asthma_` · `Asthma  e-book` · `32)Acute bronchiloitis_` |
+| `respiratory` | ~~12,984~~ **8,859** | 8,859 | 0 | `30) Pneumonia` · `PNEUMONIA` · `31).1)Asthma part 1` · `31).2)Asthma part 2` · `Asthma_` · ~~`Asthma  e-book`~~ · `32)Acute bronchiloitis_` |
 | `infection` | 12,375 | 12,375 | 31 | `18) febrile child…` · **`25)Immunodeficiency_` ⚠️THIN** · `infectious diseases causing maculopapular rash` · `…vesicular rash` · `specific bacterial infection` · `typhoid and tuberculosis` · `antibiotic stewardship program` |
 | `neurological` | 8,722 | 8,722 | 0 | `53) stroke` · `54) seizures and epilepsy (1)` · `55) Motor_Disorders` · `56) Floppy infant ` · `58) cerebral palsy` |
 | `nutrition` | 8,014 | 8,014 | 0 | `15.1) Faltering Growth` · `15.2) Infant Feeding` · `16) P.E.M` · `17) Vitamin D Defficiency Rickets(1)` · `Vitamin deficiency  Rickets` |
@@ -69,9 +69,21 @@ see the reconciliation pass below). Ceiling = `max(W, 25Q, 600)`.
 | `accidents` | 875 | 875 | 0 | `5) Poisoning in children_` |
 | `mental` | 600 | 0 | 0 | **NO DEDICATED DECK — see below** |
 
-**Totals: 101,200 ceiling words, ~422 printed pages at the /240 estimator.** Expect the real figure
-well below that, for the ceiling-not-target reason above. **Verified: all 64 cached decks map to a
-chapter and none is orphaned.**
+**Totals: 97,075 ceiling words after the respiratory correction, ~404 printed pages at the /240
+estimator.** Expect the real figure well below that, for the ceiling-not-target reason above.
+**Verified: all 64 cached decks map to a chapter and none is orphaned.**
+
+**⚠️ MEASURED, NOT PREDICTED — the first three chapters all landed at ~74–77 % of ceiling:**
+
+| | Ceiling | Body words | % | Sections | Pages |
+|---|---:|---:|---:|---:|---:|
+| `cardiac` | 7,052 | 5,157 | 73 % | 18 | 19 |
+| `renal` | 7,174 | 5,296 | 74 % | 17 | 18 |
+| `respiratory` | 8,859 | 6,521 | 74 % | 22 | 22 |
+
+**Use 74 % of ceiling as the working estimate for the chapters not yet written**, and set each
+agent's target band from it rather than quoting the raw ceiling — quoting 12,984 to the respiratory
+agent invited a 40-page chapter and only the explicit band prevented one.
 
 ---
 
@@ -110,11 +122,27 @@ roseola are all in `infectious diseases causing maculopapular rash`; varicella a
 `…vesicular rash`. **Only three terms are unique to it — `goose-flesh`, `VZIG`, `pleomorphic` — so
 the infection agent should skim the converted PDF for those and nothing else.**
 
-**6. Duplicate-looking decks are mostly NOT duplicates.** Measured vocabulary overlap:
-`30) Pneumonia` vs `PNEUMONIA` is **93 %** — one real duplicate, count it once. But the asthma trio
-runs **26–27 %**, rickets **40 %**, and the two development pairs **24–28 %**: they are *different
-lectures on the same topic*, and the unnumbered file is often the fuller one. **Read both, count the
-union by line range per §14.1 rule (4), and never bill the same lines to two chapters.**
+**6. Duplicate-looking decks are mostly NOT duplicates — but TWO PAIRS ARE, and the second was
+found by an agent after this plan said there was only one.**
+
+| Pair | Verdict |
+|---|---|
+| `Asthma_` vs `Asthma  e-book` | **BYTE-IDENTICAL.** `diff` returns one line — the `SOURCE:` header. Same MD5 from line 2 on. **Count ONCE.** |
+| `30) Pneumonia` vs `PNEUMONIA` | 93 %/91 % overlap. **Count the union once — but read BOTH:** 38 of the pptx's 114 slides extract blank, and the handout uniquely carries the in-hospital test list, the 4–6 week follow-up-CXR rule and the clinical classification prose. |
+| `31).1` / `31).2` vs the unnumbered asthma file | 26–27 % — genuinely different lectures. Read all. |
+| rickets pair | 40 % — different. |
+| the two development pairs | 24–28 % — different. |
+
+> **⚠️ HOW THIS PLAN GOT IT WRONG, so the next module's plan does not repeat it: I tested each
+> unnumbered asthma file against the NUMBERED ones and never against EACH OTHER.** Both scored 26 %
+> against `31).1`, which looked like independent confirmation and was actually the same wrong
+> comparison run twice. **Sweep ALL pairs — an md5 of each file from line 2 onward costs one command
+> and is exact**, where a vocabulary ratio is a guess that can miss a byte-identical file. Re-run
+> properly afterwards: across all 64 decks there is **exactly one identical pair and one
+> near-identical pair**, both above; nothing else exceeds 85 %.
+
+The cost of the miss was a respiratory ceiling of 12,984 when the honest union is **8,859** — the
+naive seven-file sum billed both duplicate pairs twice. Corrected in the table above.
 
 ---
 
