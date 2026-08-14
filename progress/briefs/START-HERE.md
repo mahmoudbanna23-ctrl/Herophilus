@@ -799,7 +799,13 @@ if the receiving chapter actually gets it.**
 | `ent-nasalmass` (L26) | The **"Reaching a diagnosis" allergic-rhinitis run** and the allergic-rhinitis clinical picture | `ent-rhin` | ☐ |
 | `ent-nasalmass` (L26) | The **adenoid slides** — obstructive vs non-obstructive adenoid, adenoid facies | `ent-tonsils` | ☐ **⚠️ tonsils is already merged; reconciliation work** |
 | `ent-nasalmass` (L30) | **Rhinoscleroma in full** — *Klebsiella rhinoscleromatis*, Egyptian endemicity, the three stages, **Mikulicz cells and Russell bodies**, the expansile granuloma on CT, management | `ent-rhin` | ☐ |
-| `ent-nasalmass` (L26) | **Septal haematoma beyond the definition** — drainage, septal abscess, cartilage necrosis, saddle nose | `ent-septum` | ☐ **agent briefed to collect it** |
+| `ent-nasalmass` (L26) | **Septal haematoma beyond the definition** — drainage, septal abscess, cartilage necrosis, saddle nose | `ent-septum` | ✅ **delivered 2026-08-14** — `sept-8` in full, incl. the haematoma-vs-abscess table and the cavernous-sinus route |
+| `ent-septum` (L25.1) | **Little's and Woodruff's plexus**, the full epistaxis aetiology, cautery, packing, the arterial ligations | `ent-epistaxis` | ☐ |
+| `ent-septum` (L25.2) | **Post-traumatic anosmia** as a subject — only the cribriform-shearing clause kept | `ent-epistaxis` | ☐ |
+| `ent-septum` (L24/L31) | The general **nasal-obstruction work-up** — mucosal aetiology lists, turbinate hypertrophy in its own right, NOSE/SNOT-22, rhinomanometry, the decongestant rules · **CSF rhinorrhoea** after mid-facial trauma | `ent-nasalobs` | ☐ |
+| `ent-septum` (L24) | **Nasal-valve anatomy in full** and valve reconstruction. Only the Cottle test and the valve's role in obstruction kept | `ent-nasalobs` | ☐ |
+| `ent-septum` (L24) | **Wegener's as an entity** — ANCA, the triad, the systemic disease. Only its saddle-nose key kept | `ent-rhin` | ☐ **agent briefed** |
+| `ent-septum` (L24) | The septum's **arterial supply as vascular anatomy** — counted in this chapter's budget as L24's own ILO, but owed as anatomy | `ent-noseanat` | ☐ |
 | `ent-nasalmass` (L31) | The full **nasal-obstruction aetiology** (mucosal causes, choanal atresia, pyriform aperture stenosis, turbinate hypertrophy, nasal valve dysfunction), **NOSE and SNOT-22**, rhinomanometry, acoustic rhinometry, the decongestant rules | `ent-nasalobs` | ☐ |
 | `ent-nasalmass` (L25) | **Epistaxis management as a subject** — packing, cautery, the arterial ligations. Only angiofibroma embolisation kept | `ent-epistaxis` | ☐ |
 
