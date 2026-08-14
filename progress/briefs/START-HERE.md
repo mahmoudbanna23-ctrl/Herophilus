@@ -724,6 +724,12 @@ at merge; over budget by >10 % goes back for compression, not into the app.**
 > the location grid, the examination run, the investigation order, the eight-group classification,
 > the metastatic work-up — and **a list of names has no fat in it.** So the planning sum is
 > **(~90 × entities) + (framework slides costed one by one)**, not entities alone.
+>
+> **⚠️ AND COST A COMPARISON GRID AT ROWS × COLUMNS, NOT AS ONE SLIDE.** `ent-phon` costed its four
+> grids at ~500 words between them; they came to **746**, which is most of its 487-word
+> under-prediction. A four-way discrimination across six axes is twenty-four cells, and **every cell
+> is a fact somebody has to write.** The chapters that have predicted accurately — `ent-sinusitis`
+> within 8 %, `ent-pharanat`, `ent-vocal` — all costed at that granularity.
 
 > **⚠️⚠️ WORDS AND PAGES MOVE IN OPPOSITE DIRECTIONS WITH FORMAT, SO NEITHER NUMBER CAN BE GAMED.**
 > Two measurements, made independently, that only make sense together:
@@ -908,7 +914,7 @@ if the receiving chapter actually gets it.**
 | `ent-hoarse` (L2) | **Croup / ALTB** in full (viral, winter, 1–3 y, barking cough, steeple sign) and **acute epiglottitis**. Kept here as names only, being rows of the laryngitis classification one question's option list reproduces | `ent-stridor` ✅ / `ent-paedlar` ☐ | ☐ |
 | `ent-hoarse` (L2) | **RRP beyond one line** — the full account and treatment ladder. **Kept here:** HPV 6/11, commonest benign laryngeal tumour, involution at puberty, avoid tracheostomy, mitomycin, adult papilloma premalignant | `ent-paedlar` | ✅ **already there** — `paed-8`, written first |
 | `ent-hoarse` (L1.1) | Laryngeal cartilages, membranes and ligaments, extrinsic muscles, blood supply, the nerve-supply plates, piriform sinus, pre-epiglottic space **as anatomy** | `ent-pharanat` | ✅ **delivered 2026-08-14** — `pha-11`–`pha-16`. **The row is unambiguously this chapter’s: 22 of its 44 questions test laryngeal anatomy directly**, the nerve plates alone carrying six |
-| `ent-hoarse` (L8) | **The phoniatric evaluation protocol in full** — GRBAS parameter by parameter, VHI / VHI-10 / V-RQoL, the elementary/clinical/instrumental tiers, external laryngeal examination, mirror vs rigid vs flexible vs direct, stroboscopy, aerodynamic measures, the content of voice therapy, dysarthria/dyslalia/aphasia | `ent-phon` | ☐ |
+| `ent-hoarse` (L8) | **The phoniatric evaluation protocol in full** — GRBAS parameter by parameter, VHI / VHI-10 / V-RQoL, the elementary/clinical/instrumental tiers, external laryngeal examination, mirror vs rigid vs flexible vs direct, stroboscopy, aerodynamic measures, the content of voice therapy, dysarthria/dyslalia/aphasia | `ent-phon` | ✅ **delivered 2026-08-14** — `phon-3`–`phon-10` and `phon-14`. **⚠️ ONE PROMISED ITEM IS NOT IN THE DECK — see the note below: L8 prints no "content of voice therapy"** |
 | `ent-hoarse` (L6) | Stridor typing, tracheostomy, the adult and paediatric cause lists | `ent-stridor` | ✅ already written |
 | `ent-hoarse` (L30) | **Rhinoscleroma of the nose** — its nasal stages and nasal management | `ent-rhin` | ✅ **delivered 2026-08-14** — `rhin-12`; `hoar-6` keeps the subglottis and the stridor-with-normal-voice line, checked so neither re-argues the other |
 | `ent-hoarse` (L17,18) | Referred otalgia in full, the four nerves and their territories | `ent-otalgia` | ✅ already written |
@@ -939,7 +945,7 @@ if the receiving chapter actually gets it.**
 | `ent-rhin` (L29) | **Adenoids** | `ent-tonsils` | ☐ **⚠️ tonsils is already merged; reconciliation work. 2nd chapter to owe it** |
 | `ent-dysph` (L7) | **The whole swallowing-assessment deck** except its aetiology table — 1,522 of its 1,616 words | `ent-swallow` | ☐ |
 | `ent-dysph` (L1.2) | **Pharyngeal anatomy** — only Killian's triangle kept | `ent-pharanat` | ✅ **delivered 2026-08-14** — same deck as the row above, **delivered once not twice** — `pha-9`. `dys-11` keeps Killian’s only as the SITE of Zenker’s, so the anatomy is here and the lesion stays `ent-dysph`’s |
-| `ent-dysph` (L8) | **The phoniatric protocol** — only the laryngeal click kept | `ent-phon` | ☐ **⚠️ 2ND CHAPTER TO OWE IT — `ent-hoarse` registered it first** |
+| `ent-dysph` (L8) | **The phoniatric protocol** — only the laryngeal click kept | `ent-phon` | ✅ **delivered 2026-08-14** — same deck as the row above, **delivered once not twice**. It adds exactly one item row 1 did not name — the laryngeal click as an EXAMINATION item, `phon-5`; `dys-8` keeps its ABSENCE as Moure’s sign |
 | `ent-dysph` (L5) | The **neck-mass differential** — only the cystic swelling kept | `ent-neck` | ✅ **delivered 2026-08-14** — `neck-3` — the same grid, organised on the cystic-vs-solid axis it kept |
 | `ent-dysph` (L2) | The **supraglottic/glottic/subglottic carcinoma table** — verified present in `hoar-8`, which also already carries the Plummer–Vinson-is-premalignant-for-postcricoid-not-laryngeal line | `ent-hoarse` | ✅ already written |
 | `ent-hearing` (L19.2 lines 85–148) | The **otorrhoea slides appended to the cached tinnitus file** | `ent-otorrhea` | ✅ **delivered 2026-08-14** — `otor-1`/`4`/`7` |
@@ -1018,6 +1024,23 @@ if the receiving chapter actually gets it.**
 > **`aom-11` carries the adult-unilateral-effusion rule (11 questions)** — different angles, different
 > question sets, both written. **No row is owed and none should be opened.** Flagging it was still
 > correct: a chapter that does not exist cannot be checked for by the validator.
+
+> **⚠️⚠️ A REGISTER ROW CAN PROMISE SOMETHING THE DECK DOES NOT CONTAIN — AND THE RECEIVING CHAPTER
+> MUST SAY SO, NOT MANUFACTURE IT.** `ent-hoarse`’s row promised *"the content of voice therapy"*
+> among L8’s protocol. **L8 prints none.** `ent-phon` greped all 34 decks: the phrase appears only
+> in L2 and L11, and the goals plus the surgical ladder are **already written in `hoar-11`**. So the
+> row was written from the deferring chapter’s expectation of what the deck held, not from the deck.
+> **A deferral is a promise about where a fact BELONGS, never a guarantee that it EXISTS.** When the
+> receiving chapter cannot find it: grep the whole corpus, check whether the deferring chapter wrote
+> it after all, and **report the row as undeliverable with the evidence** — do not quietly fill the
+> gap from general knowledge and tick the row, which would make the register a record of fiction.
+
+> **⚠️ THE INVERSE OF DOUBLE-CHARGING ALSO EXISTS AND IS HARMLESS — words charged to NO chapter.**
+> L8 lines 213–243 (184 w, voice symptomatology and the functional/MAP/organic tree) are **written in
+> `ent-hoarse` but were declined by its budget**, and `ent-phon` excluded them too since that chapter
+> already carries them. Nobody billed them. `ent-phon` stated this rather than sweeping them into
+> TERM 1 to buy headroom, which is the right call: **the budget may understate a chapter, never
+> overstate it.** Under-counting costs nothing; over-counting buys room the content has not earned.
 ### 14.6 What this costs, said plainly
 
 The notes alone no longer explain why each wrong option is wrong — **the linked questions do**,

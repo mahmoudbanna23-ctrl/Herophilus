@@ -4537,5 +4537,166 @@ var T_ENT = {
         ]
       }
     ]
+  },
+  "ent-phon": {
+    "intro": "Half the set is one protocol — which tier a test belongs to, what each scope can and cannot see, and why vibration needs a flashing light. The rest sorts a complaint onto its level: voice, speech or language.",
+    "sections": [
+      {
+        "id": "phon-1",
+        "w": "must",
+        "h": "Phoniatrics, the three levels of communication, and the map of disorders",
+        "body": "**The phoniatrician** = a MEDICAL DOCTOR, holistic management of **swallowing · voice · communication · paediatric hearing**. Works with **speech–language pathologists (SLPs)** on behavioural treatment.\n**Communication = interchange of ideas, feelings, thoughts and emotions.**\n**THREE PHYSIOLOGICAL LEVELS: LANGUAGE (receptive + expressive) · SPEECH · VOICE.** Every disorder sits on exactly one.\n\n|**LANGUAGE disorders**|**SPEECH disorders**|**VOICE disorders**|\n|---|---|---|\n|**DLD** · **APHASIA**|**dyslalia · stuttering · nasality · dysarthria**|functional · MAP · organic|\n\n- **Language** = a **code** expressing ideas through a conventional system of **ARBITRARY signals** *(Bloom and Lahey, 1978)*. Four systems: **phonology** (sounds) · **syntax** (word order) · **semantics** (meaning) · **pragmatics** (social use).\n- **Speech** = articulation of voice into words. **Voice/phonation** = produced by the larynx.\n- **Voice vocabulary: DYSPHONIA** = audible change of the habitual voice · **APHONIA** = cannot phonate · **DYSODIA** = SINGING voice fails, speaking intact · **PHONASTHENIA** = voice **FATIGUE**, *felt in the neck and throat rather than heard* (six features in `ent-hoarse`).\n- Voice disorders classify **FUNCTIONAL / MAP / ORGANIC** — table in `ent-hoarse`. **Spasmodic dysphonia and the mutational voice disorder are FUNCTIONAL.**\n\nSrc: L8 lines 22–65, 213–243; L2 (classification, cited)",
+        "qs": [
+          "entqb-thr9-444",
+          "entqb-thr9-481"
+        ]
+      },
+      {
+        "id": "phon-2",
+        "w": "must",
+        "h": "Phonation — the physiology every voice question rests on",
+        "body": "**Phonation = ADDUCTION of the true cords + vibration by EXPIRED AIR.** ⚠️ **ABDUCTED** cords pass air silently — that is breathing. **Vibration frequency 80–1000 Hz.**\n\n|**Prerequisite**|**Subsystem**|**Fails as**|\n|---|---|---|\n|optimal **pulmonary support**|POWER|asthenic, weak|\n|optimal **cord coaptation**|SOURCE|**breathy** (too little) / **strained** (too much)|\n|normal **mucosal movement**|VIBRATOR|**rough**|\n|patent tract above the larynx|RESONANCE|hyper-/hyponasality|\n\n- ⚠️ **HIGH-FREQUENCY VIBRATION IS NOT A PREREQUISITE** — normal speech sits near the bottom of 80–1000 Hz.\n- **Cord layers outward in: squamous epithelium → SUPERFICIAL lamina propria (Reinke’s space, loose areolar) → intermediate + deep lamina propria (dense CT = vocal ligament) → VOCALIS = medial THYROarytenoid.** ⚠️ No \"thyrocricoid\" muscle exists. *(Layer lesions in `ent-hoarse`; anatomy in `ent-pharanat`.)*\n- **Only ABDUCTOR: posterior cricoarytenoid. TENSOR: cricothyroid — pitch only.** Epiglottis: no vocal role. **Ventricular (false) folds CAN phonate — that is ventricular dysphonia.**\n- **Phonatory cycle: OPENING → OPEN → CLOSING → CLOSED** — two movements, two states, so \"open\" follows \"opening\"; Bernoulli effect closes them *(not in course material)*.\n\nSrc: L8 lines 208–212, 348–353; L1.1 (cord layers, cited)",
+        "qs": [
+          "entqb-thr9-445",
+          "entqb-thr9-446",
+          "entqb-thr9-447",
+          "entqb-thr9-456"
+        ]
+      },
+      {
+        "id": "phon-3",
+        "w": "must",
+        "h": "Voice evaluation — six goals, and the THREE-TIER protocol",
+        "body": "**Goals *(Kotby 1986)*: 1 etiological categorization · 2 degree of the pathology · 3 its nature · 4 CHOICE OF TYPE AND SEQUENCE OF INTERVENTION · 5 monitor the effect · 6 prognostic anticipation.**\n**Protocol *(Kotby et al. 1995)*: I elementary → II clinical aids → III additional instrumental.**\n\n|**Tier**|**Contains**|\n|---|---|\n|**I ELEMENTARY**|**1 patient interview · 2 patient rating scales · 3 auditory perceptual analysis · 4 general examination · 5 ENT examination · 6 laryngeal examination** (external + preliminary visual assessment)|\n|**II CLINICAL AIDS**|**A augmentation and documentation — RIGID laryngoscopy, FLEXIBLE nasopharyngolaryngoscopy**, under **continuous light** or **videostroboscopy** · **B voice recording**|\n|**III ADDITIONAL INSTRUMENTAL**|**1 acoustic analysis · 2 voice range profile · 3 aerodynamic measures · 4 inverse filtering · 5 glottography (EGG) · 6 neurophysiological (EMG, ENoG) · 7 radiology (plain X-ray, CT, MRI)**|\n\n- ⚠️ **LARYNGEAL EMG IS TIER III, NOT ELEMENTARY.**\n- ⚠️ **LARYNGEAL ENDOSCOPY IS FIRST-LINE, BEFORE CT OR MRI** — tier I item 6 against tier III item 7. Most dysphonia is a surface lesion or an immobile cord, invisible on cross-sectional imaging; **a normal CT in a hoarse patient is falsely reassuring.**\n\nSrc: L8 lines 244–256, 425–462",
+        "qs": [
+          "entqb-thr11-570",
+          "entqb-thr11-578"
+        ]
+      },
+      {
+        "id": "phon-4",
+        "w": "must",
+        "h": "GRBAS and the patient rating scales — who is doing the rating",
+        "body": "**Two SEPARATE tier-I items, and the distinction is what is tested.**\n\n|**Item 2 — PATIENT rating scales**|**Item 3 — AUDITORY PERCEPTUAL ANALYSIS**|\n|---|---|\n|**Voice Handicap Index (VHI) · VHI-10 · Voice-Related Quality of Life (V-RQoL)**|**GRBAS (Hirano 1981) · Modified GRBAS (Kotby 1986)**|\n|how much the voice **DISABLES the patient**|what the **CLINICIAN HEARS**|\n\n⚠️ **VHI does NOT assist auditory perceptual analysis** — it is the item above it.\n**GRBAS — five parameters, each 0–3 on a 4-point severity scale:**\n\n|**Letter**|**L8’s definition**|**Accuses**|\n|---|---|---|\n|**G Grade**|overall degree of hoarseness / abnormality|the whole|\n|**R Roughness**|**irregular, raspy vibration**|the VIBRATOR — a lesion ON the cord|\n|**B Breathiness**|**air leakage through the glottis**|CLOSURE → a **mobility** problem|\n|**A Asthenia**|**weakness, lack of power, low intensity**|POWER|\n|**S Strain**|**hyperfunctional, tight, high-pitched effort**|HYPERFUNCTION|\n\n- **STRAINED voice → SPASMODIC DYSPHONIA** (L2: functional; adductor, abductor, mixed). Nodules → **roughness**; paralysis → **breathiness + asthenia**.\n\nSrc: L8 lines 257–277; L2 line 477 (cited)",
+        "qs": [
+          "entqb-thr11-567",
+          "entqb-thr11-571"
+        ]
+      },
+      {
+        "id": "phon-5",
+        "w": "high",
+        "h": "Laryngeal examination — external, and the twelve structures",
+        "body": "**Tier I item 6, two halves: A external laryngeal examination · B preliminary visual assessment of laryngeal pathology.**\n**A — EXTERNAL, five items: laryngeal skeleton · LARYNGEAL CLICK · laryngeal position · cervical veins · neck scars.**\n- **Laryngeal click** = crepitus of the larynx on the cervical vertebrae, moved side to side. **Its ABSENCE is Moure’s sign of post-cricoid carcinoma** *(lesion in `ent-dysph`)*. **Laryngeal POSITION** — the high-held larynx of the mutational voice disorder is read here.\n\n**B — TWELVE structures: 1 vallecula · 2 epiglottis · 3 vocal fold · 4 pyriform fossae · 5 arytenoids · 6 interarytenoids · 7 anterior commissure · 8 subglottis · 9 ventricular folds · 10 ventricles · 11 aryepiglottic folds · 12 post-cricoid region.**\n⚠️ **The UVULA is NOT on the list** — soft palate, OROPHARYNX, not larynx.\n**Four items to be NOTICED: mucous membrane · fold CONFIGURATION · fold MOVEMENTS (gross, and phonatory closure) · ventricular folds.**\n- **Pyriform fossa apex and post-cricoid region are the BLIND SPOTS.**\n\nSrc: L8 lines 278–321",
+        "qs": [
+          "entqb-thr11-574"
+        ]
+      },
+      {
+        "id": "phon-6",
+        "w": "must",
+        "h": "The four ways to look at the larynx",
+        "body": "**INDIRECT: mirror · rigid · flexible nasolaryngoscopy. DIRECT: direct laryngoscopy.**\n\n|**Technique**|**Advantages**|**Disadvantages**|\n|---|---|---|\n|**MIRROR**|**fast, straightforward**; adequate views, **minimal equipment or expense**|**GAG REFLEX**|\n|**RIGID**|**EXCELLENT IMAGE QUALITY** · **STROBOSCOPIC capability** · **recordable** for serial comparison, consultation, patient education|**gag reflex** · **limited dynamic evaluation** · ⚠️ **SWALLOWING CANNOT BE ASSESSED** · may be unavailable outside specialised practice · ⚠️ **NOT under 6 years**|\n|**FLEXIBLE**|**easily performed** · **well tolerated** · ⚠️ **USED UNDER 6 YEARS** · distal-chip cameras; side channels allow **biopsy, laryngeal injection under LA, outpatient laser ablation** (papillomatosis)|⚠️ **EPISTAXIS + mild discomfort on insertion** · severe **septal deviation** challenges exposure|\n|**DIRECT**|larynx **under DIRECT vision**; therapeutic; reaches the post-cricoid and subglottic blind spots|**GENERAL ANAESTHESIA**|\n\n- **The under-6 rule is asked in BOTH directions:** rigid out, flexible in.\n- **Rigid cannot assess swallowing — the telescope OCCUPIES THE MOUTH.** FEES therefore goes through the nose.\n- **Severe gag reflex → DIRECT laryngoscopy under GA.** Flexible avoids gag but is done awake.\n- ⚠️ **\"Poor image quality\" is NOT a drawback of rigid** — it is its first listed advantage.\n\nSrc: L8 lines 290–424",
+        "qs": [
+          "entqb-thr11-568",
+          "entqb-thr11-572",
+          "entqb-thr11-573",
+          "entqb-thr11-581"
+        ]
+      },
+      {
+        "id": "phon-7",
+        "w": "must",
+        "h": "Videostroboscopy — the only way to SEE vibration",
+        "body": "**Three sentences, asked as a chain: 1 the folds vibrate between 80 and 1000 Hertz during phonation · 2 Talbot’s law — \"the retina can only register 1 image per 0.2 seconds or 5 images per second\" · 3 so the free edge appears as a BLUR under a simple white light source.** Ordinary laryngoscopy cannot see vibration at all.\n- **MECHANISM: an OPTICAL ILLUSION created by pulsating flashes of light at multiple points of SEVERAL SUCCESSIVE vibratory cycles, enabling visual SLOWING of the rapid, periodic motion.**\n- ⚠️ **Stroboscopy is a LIGHT SOURCE, not a scope** — the aids split **A continuous light / B videostroboscopy**; the rigid scope carries it.\n- **The test for SYMMETRY of vibration, mucosal wave and glottic closure.** Other signals: **EMG** = muscle potentials · **EGG** = 3 MHz current · **videofluoroscopy** = barium X-rays, imaging swallowing.\n\n|**Significant finding**|**Means**|\n|---|---|\n|**fixation of part or the whole mucosa**|the cover is tethered|\n|**glottal wave ALTERATION**|\"useful information in **vocal fold paralysis**\"|\n|**ABSENCE of glottal waves over NODULES**|their **FIBROUS nature** → surgery, not therapy|\n\n- **LIMITATIONS: severe dysphonia and APERIODIC vibrations** (the illusion needs periodicity) · **quasi-objective analysis.**\n- Defect: one bank offers \"2 images each 0.4 seconds\" and \"5 images / second\" as separate options — **the same rate**. Answered on wording; clause 2 is L8’s verbatim sentence. Keyed as printed.\n\nSrc: L8 lines 340–372; L7 (videofluoroscopy, cited)",
+        "qs": [
+          "entqb-thr9-457",
+          "entep-mfe4-2",
+          "entqb-thr11-579",
+          "entqb-thr11-580",
+          "entqb-thr11-586"
+        ]
+      },
+      {
+        "id": "phon-8",
+        "w": "must",
+        "h": "Tier III — what each instrument actually records",
+        "body": "|**Measure**|**Records**|\n|---|---|\n|**Acoustic analysis**|vocal tract physiology indirectly, from the acoustic components of voice and cord vibration. **Adv: non-invasive, easy, compares pre-/post-treatment. Disadv: NOT DIAGNOSTIC FOR THE AETIOLOGY · no standardization · hard to correlate between studies.** Pitch parameters: **fundamental frequency, optimal pitch, pitch range, perturbation, pitch breaks**|\n|**Voice range profile**|frequency against intensity *(named only; not in course material)*|\n|**Aerodynamic measures**|airflow — **maximum phonation time, mean flow rate, subglottic pressure** *(named only; not in course material)*|\n|**Inverse filtering**|strips the tract’s resonances to recover the glottal source waveform *(not in course material)*|\n|**ELECTROGLOTTOGRAPHY**|**two electrodes either side of the THYROID CARTILAGE at cord level; a HIGH-FREQUENCY 3 MHz CURRENT between them; change in CONDUCTANCE = change in CONTACT AREA between the folds during vibration.** Mechanics, not electrical activity|\n|**ELECTROMYOGRAPHY**|**\"Study electrical potentials generated in a SKELETAL MUSCLE\"**|\n|**Electroneurography**|nerve stimulated, evoked response read as a **% of the healthy side** *(not in course material)*|\n|**Radiology**|**plain X-ray · CT · MRI** — item 7, after endoscopy|\n\n**EMG differentiates: 1 neuromuscular from MECHANICAL lesions** — paralysed cord against **fixed cricoarytenoid joint**, deciding medialisation against joint surgery · **2 neurogenic from MYOGENIC** · ⚠️ **3 RLN from SLN affection**, the only test that does so (SLN → cricothyroid alone, so its palsy can leave a MOVING cord). Also **degree and extent of vocal fold paralysis** and **monitoring the prognosis**.\n\nSrc: L8 lines 425–478",
+        "qs": [
+          "entqb-thr11-569",
+          "entqb-thr11-582",
+          "entqb-thr11-583"
+        ]
+      },
+      {
+        "id": "phon-9",
+        "w": "must",
+        "h": "Dysarthria — six types, and the articulator each nerve moves",
+        "body": "**Dysarthria = a MOTOR SPEECH disorder from impaired NEUROMUSCULAR CONTROL over the speech mechanisms, due to damage of the CENTRAL or PERIPHERAL nervous system.** Language intact; the machinery is not. **Five parameters of speech: RESPIRATION · PHONATION · RESONANCE · ARTICULATION · PROSODY.**\n\n|**Type**|**Lesion**|**Sounds like**|\n|---|---|---|\n|**FLACCID**|**LMNL**|weak, breathy, nasal|\n|**SPASTIC**|**BILATERAL UMNL** (pyramidal)|**SLURRED**, imprecise consonants|\n|**HYPOkinetic**|**PARKINSON DISEASE** (extra-pyramidal)|⚠️ **MONOTONOUS, quiet, EXPRESSIONLESS**|\n|**HYPERkinetic**|**chorea, ATHETOSIS, dystonia**|irregular breakdowns|\n|**ATAXIC**|**CEREBELLAR**|**STACCATO**, scanning|\n|**MIXED**|more than one system|—|\n\n- ⚠️ **ATHETOSIS IS HYPERKINETIC** — L8 prints it beside chorea and dystonia (spelt \"asthetosis\"). **Hypokinetic = Parkinson**, routinely misread as depression.\n- **CAUSES: cerebrovascular STROKE (first) · infectious · traumatic brain insult · anoxic · metabolic · neoplasm and degenerative.** **New slurred speech in an adult is a stroke call.**\n- **TREATMENT: SPEECH THERAPY**, plus medical and prosthetic.\n\n|**Nerve**|**Articulator**|**Sounds**|\n|---|---|---|\n|**V**|jaw|jaw opening|\n|**VII**|**lips**|**B, P, M, F, V**|\n|**X**|larynx + soft palate|voicing, nasality|\n|**XII**|**tongue**|**T, D, K, G**|\n|⚠️ **XI**|**sternocleidomastoid + trapezius**|**NONE — no speech role**|\n\n*(The nerve-to-articulator map is not in course material.)*\n\nSrc: L8 lines 184–207",
+        "qs": [
+          "entqb-thr9-468",
+          "entqb-thr9-469",
+          "entqb-thr9-470",
+          "entqb-thr9-487",
+          "entqb-thr9-500"
+        ]
+      },
+      {
+        "id": "phon-10",
+        "w": "high",
+        "h": "Dyslalia — the same wrong sound with the nervous system intact",
+        "body": "**Dyslalia = inability to correctly produce the proper speech phonetics of a language, based on disorders of the ARTICULATION ORGAN ANATOMY, with the ABSENCE of any neurological disorders and the ABSENCE of any hearing disorders.** ⚠️ **Those two absences are the definition and the discriminator** — they separate it from dysarthria (neurological) and from the deaf child’s speech.\n**AETIOLOGY, multifactorial, in L8’s order:** ⚠️ **1 persistence of mistakes while articulating = RESIDUAL dyslalia, the COMMONEST** — normal articulators, a learning-stage error hardened into habit · 2 incorrect imitation of articulating patterns · 3 vision abnormalities · 4 environmental factors.\n**Named patterns: SIGMATISM = /s/, /z/ · ROTATISM = /r/ · lack of distinction between /t/, /d/ and /k/, /g/** — all tongue stops differing only in FRONT against BACK contact, which is why K, T, G, D confuse as a set.\n- Down syndrome, missing teeth, macroglossia: real, far rarer. **Test hearing first. TREATMENT: SPEECH THERAPY.**\n\nSrc: L8 lines 131–144",
+        "qs": [
+          "entqb-thr9-471",
+          "entqb-thr9-472"
+        ]
+      },
+      {
+        "id": "phon-11",
+        "w": "high",
+        "h": "Stuttering — three layers of behaviour",
+        "body": "**DSM-5: disturbances in the NORMAL FLUENCY and TIME PATTERNING of speech, INAPPROPRIATE for the individual’s age and language skills, and PERSISTING over time; onset in the early developmental period.** Sounds correct — fluency fails.\n\n|**Layer**|**What it is**|\n|---|---|\n|**1 CORE**|**REPETITION** — a sound, syllable or single-syllable word repeated several times · **PROLONGATION** — sound or airflow continues, articulator movement stopped · **BLOCK** — inappropriate stoppage of air or voice, often of the articulators too|\n|**2 SECONDARY** — the speaker’s REACTIONS to his own repetitions, prolongations, blocks|**facial grimaces · eye blinks · forced effort**|\n|**3 AVOIDANCE**|word substitution, speech fillers, starting tricks. **Covert stuttering** = avoidance so skilled the stutter is hidden, with sweating and tachycardia *(not in course material)*|\n\n⚠️ **\"Characteristic of OVERT stuttering\" = the CORE behaviours.** Substitution, fillers, starting tricks are layer 3.\n- **DSM-5: the disturbance \"CAUSES anxiety about speaking or limitations in effective communication, social participation, and academic or occupational performance.\"** ⚠️ **Anxiety is a CONSEQUENCE.**\n- **Onset usually 2–5 years · prevalence about 5 % in children · SPONTANEOUS RECOVERY IS THE FATE IN MOST CHILDREN.** ⚠️ \"80 % need psychological therapy\" inverts that statistic and names the wrong therapy: **speech therapy treats the stutter, psychological therapy the anxiety.**\n- **L8 states no cause. Most accepted = GENETIC** *(not in course material)*: ~50 % have an affected relative, far higher monozygotic concordance, male:female ~4:1.\n\nSrc: L8 lines 145–183 (Conture et al. 1991)",
+        "qs": [
+          "entep-throat-54",
+          "entqb-thr9-473",
+          "entqb-thr9-474"
+        ]
+      },
+      {
+        "id": "phon-12",
+        "w": "must",
+        "h": "Nasality — the resonance disorders",
+        "body": "**Speech sounds are MOSTLY ORAL. Only /m/ and /n/ have to resonate in the NASAL CAVITY. Disturbance of nasality results if nasal resonance is REDUCED (hyponasality) or EXCESSIVE (hypernasality).**\n\n|**HYPOnasality = rhinolalia CLAUSA**|**HYPERnasality = rhinolalia APERTA**|\n|---|---|\n|the nasal **ROOM is BLOCKED**|the **VELOPHARYNGEAL VALVE FAILS**|\n|⚠️ needs **BILATERAL** nasal obstruction|any incompetent palate|\n|**commonest cause: ADENOID** — in the nasopharynx itself, for YEARS, in the speech-learning age; a cold does it for days|**commonest cause: CLEFT PALATE**; also post-adenoidectomy incompetence, submucous cleft, palatal paresis|\n|**loses the NASAL sounds** — /m/→/b/, /n/→/d/|**loses the PRESSURE consonants (K, P, D)**; ⚠️ **NASAL EMISSION** — audible air escaping down the nose on oral sounds — is its specific sign|\n|\"decreased nasal tone\"|nasal tone **plus fluid regurgitating down the nose**|\n\n*(clausa / aperta not in course material; L8 prints only hypo- and hypernasality.)*\n- ⚠️ **CLEFT PALATE CAUSES HYPERNASALITY, NOT HYPONASALITY.**\n- ⚠️ **HOT POTATO VOICE IS A THIRD THING** — a **supraglottic or oropharyngeal MASS** muffling the voice, not a resonance disorder; an **airway red flag** *(not in course material)*.\n- **Adenoidectomy can CONVERT clausa into aperta** — L3’s velopharyngeal incompetence: regurgitation of fluid from the nose and nasal tone, **usually temporary from palatal paresis, possibly PERMANENT from palatal shortening due to fibrosis.** Highest risk with an occult submucous cleft.\n- Test: **cold mirror under the nose**, sentence with no nasal sounds *(not in course material)*.\n\nSrc: L8 lines 208–212; L3 lines 278–279, 347–379 (cited)",
+        "qs": [
+          "entqb-thr9-475",
+          "entqb-thr9-476",
+          "entqb-thr9-477",
+          "entqb-thr9-497"
+        ]
+      },
+      {
+        "id": "phon-13",
+        "w": "must",
+        "h": "Language development and its disorders",
+        "body": "**Four PREREQUISITES of normal language development: 1 INTACT SENSATIONS · 2 intact psyche · 3 intact brain functions · 4 STIMULATING ENVIRONMENT.** ⚠️ **The causes of delay are these four failing, one each** — which is how the question is built.\n\n|**Prerequisite that failed**|**Cause of delayed language**|\n|---|---|\n|**1 sensations**|⚠️ **SENSORINEURAL HEARING LOSS — the COMMONEST.** Language is an ARBITRARY code that can only be RECEIVED; a high-frequency loss strips the consonants|\n|**2 psyche**|autism spectrum disorder|\n|**3 brain functions**|minimal brain damage, cerebral palsy, intellectual disability|\n|**4 environment**|**environmental / cultural DEPRIVATION** — chronic illness, prolonged isolation. **Most reversible; diagnosis of exclusion**|\n\n- ⚠️ **EVERY CHILD WITH DELAYED LANGUAGE GETS A HEARING TEST FIRST.** A deaf child mislabelled autistic is the disaster this prevents.\n- ⚠️ **TONGUE-TIE DOES NOT CAUSE DELAYED LANGUAGE DEVELOPMENT** — articulation at most; asked as the \"all EXCEPT\" *(not in course material)*.\n- **Language disorder *(Paul 1995)*: significant deficit in learning to talk, understand or use any aspect of language, relative to environment and norm-referenced expectations for the developmental level.** Either **DEVELOPMENTAL LANGUAGE DISORDER (DLD)** — born with it — or part of a broader condition: **HEARING LOSS · ADHD · AUTISM SPECTRUM DISORDER · CEREBRAL PALSY · INTELLECTUAL DISABILITIES.**\n- **ECHOLALIA = repetition of what has just been heard** — a **LANGUAGE** disorder, classically autism, also transcortical aphasia; normal in toddlers, **a red flag past 3 years**. Distinguish **PALILALIA** (repeating one’s OWN words) *(neither in course material)*.\n- **MANAGEMENT: family counselling and language intervention programs.**\n\nSrc: L8 lines 66–87, 120–122",
+        "qs": [
+          "entqb-thr9-483",
+          "entqb-thr9-490"
+        ]
+      },
+      {
+        "id": "phon-14",
+        "w": "must",
+        "h": "Aphasia, learning disability and dyslexia",
+        "body": "**Language centres MAINLY IN THE LEFT HEMISPHERE: BROCA’S AREA (production / speech planning) and WERNICKE’S AREA (comprehension), connected by the ARCUATE FASCICULUS, the ANGULAR GYRUS linking sensory input to language. Damage causes APHASIA.**\n**Aphasia = a LANGUAGE disorder affecting understanding of spoken language · verbal expression, incl. word retrieval (ANOMIA) and sentence production · READING · WRITING.**\n\n|**Type**|**Lesion**|**Picture**|\n|---|---|---|\n|**EXPRESSIVE**|**BROCA’S**|**non-fluent, effortful, telegraphic; comprehension PRESERVED; INSIGHT preserved**; right hemiparesis usual|\n|**RECEPTIVE**|**WERNICKE’S**|⚠️ **impaired COMPREHENSION**; **FLUENT but empty**; ⚠️ **NO INSIGHT** → mistaken for confusion|\n|**MIXED**|both|both deficits|\n\n- ⚠️ **ANOMIA IS THE CORE SYMPTOM** — the one deficit common to every type. **APHONIA is a VOICE problem, not a language one.**\n- **SYMPTOMATOLOGY: poor auditory comprehension · word-finding difficulty · preservation and stereotyping · READING AND WRITING AFFECTION.** ⚠️ **The last item separates aphasia from dysarthria — hand the patient a pen.**\n- **AETIOLOGY in L8’s order: CEREBROVASCULAR STROKE (first) · traumatic brain insult · infectious processes · neoplasm · iatrogenic.** **New-onset aphasia is a time-critical stroke call. MANAGEMENT: family counselling and language intervention programs.**\n- Defect: one bank offers \"difficulty in producing language\" and \"normal comprehension with impaired expression\" — **the same answer twice**. Printed key (impaired understanding) correct; noted as printed.\n\n**LEARNING DISABILITY = a NEUROLOGICAL-BASED PROCESSING DISORDER interfering with basic skills (READING, WRITING, MATHS) and higher functions (organization, time management, memory); affects how information is RECEIVED, STORED, RETRIEVED AND USED; impairment DESPITE AVERAGE OR ABOVE-AVERAGE INTELLIGENCE.**\n- ⚠️ **That definition excludes brain damage, hearing impairment and visual impairment by construction.** **DYSLEXIA is its reading form; commonest cause GENETIC** *(L8 never names dyslexia — not in course material)*: 40–50 % risk with an affected parent, high twin heritability. **Phonological, not visual.**\n\nSrc: L8 lines 88–130",
+        "qs": [
+          "entep-throat-55",
+          "entqb-thr9-479",
+          "entqb-thr9-480",
+          "entqb-thr9-484",
+          "entqb-thr9-478"
+        ]
+      }
+    ]
   }
 };
