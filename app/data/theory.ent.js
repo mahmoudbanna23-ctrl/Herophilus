@@ -3153,5 +3153,180 @@ var T_ENT = {
         ]
       }
     ]
+  },
+  "ent-hearing": {
+    "intro": "Two halves. Hearing loss is one drill — conductive or sensorineural, then which cause — and it is asked as “the commonest cause of…” nine times over. Otosclerosis carries a quarter of the chapter. Tinnitus is short, and pulsatile always means the same thing.",
+    "sections": [
+      {
+        "id": "hear-1",
+        "w": "must",
+        "h": "Definition, the seven types, and what counts as deafness",
+        "body": "**HEARING LOSS = detectable impairment of hearing. ⚠️ DEAFNESS is a narrower word — reserved for PROFOUND or TOTAL loss, i.e. a threshold ABOVE 90 dB.**\n\n**SEVEN TYPES: 1 CONDUCTIVE · 2 SENSORY · 3 NEURAL · 4 SENSORI-NEURAL · 5 CENTRAL · 6 MIXED · 7 PSYCHOGENIC.**\n\n- **Sensory = the COCHLEA · neural = the AUDITORY NERVE · sensorineural = either, taken together.** Central is the pathway above the nerve; psychogenic has no lesion.\n- Severity, for the deafness threshold: **normal <20 · mild 20–40 · moderate 40–60 · severe 60–90 · profound 90–110 · total >110 dB.**\n\nSrc: L19.1",
+        "qs": [
+          "entqb-ear7-195"
+        ]
+      },
+      {
+        "id": "hear-2",
+        "w": "high",
+        "h": "The pressure transformer system — why a drum or ossicular lesion deafens",
+        "body": "**99.9 % OF SOUND ENERGY IS LOST passing from AIR to a FLUID medium** — the middle ear wins it back.\n\n|Mechanism|Ratio|How|\n|---|---|---|\n|**Hydraulic / AREAL ratio**|**17**|**drum 90 mm, VIBRATING AREA 55 mm ÷ stapes FOOTPLATE 3 mm = 55/3 = 17**|\n|**OSSICULAR LEVER action**|**1.3**|**handle of MALLEUS ÷ long process of INCUS**|\n|**Total transformer**|**17 × 1.3 = 22**|**a gain of 26 dB**|\n\n- **Any drum or ossicular lesion forfeits that 26 dB — purely conductive.**\n- **OSSICULAR DISCONTINUITY = the LARGEST purely conductive loss.** Malleo-incus dislocation after head trauma: **normal otoscopy, mobile drum, flat ~60 dB gap, type Ad, absent reflex** *(term on no cached ENT slide)*.\n\nSrc: L19.1",
+        "qs": [
+          "entqb-ear7-185"
+        ]
+      },
+      {
+        "id": "hear-3",
+        "w": "must",
+        "h": "Conductive hearing loss — the cause list by site",
+        "body": "**Anything from the auricle to the oval window that blocks, stiffens or interrupts.**\n\n|Site|Causes|\n|---|---|\n|**External auditory canal**|**ATRESIA — congenital or acquired** · **COMPLETE OBSTRUCTION — impacted wax, foreign body, debris or discharge, tumour**|\n|**Tympanic membrane**|**perforation · retraction / adhesions · tympanosclerosis**|\n|**Ossicular chain**|**DISCONTINUITY — head trauma, inflammatory** · **FIXATION — otosclerosis, tympanosclerosis, congenital**|\n|**Middle-ear fluid**|**SEROUS = secretory otitis media · PUS = acute suppurative otitis media · BLOOD = haemotympanum**|\n|**Windows obstruction**|**OTOSCLEROSIS**|\n|**Eustachian tube**|**dysfunction**|\n\n- **⚠️ Wax deafens only when the canal is COMPLETELY occluded**; hygroscopic, so it swells after a bath or swim — **sudden PAINLESS deafness. No pain** excludes otitis externa and malignant otitis externa, **no vertigo** excludes labyrinthitis *(mechanism not in course material)*.\n- **COMMONEST CHL IN ADULTS = IMPACTED WAX**, uni- or bilateral. Otosclerosis is only the commonest *surgically correctable* one.\n- **COMMONEST CHL IN CHILDREN = SECRETORY OTITIS MEDIA from EUSTACHIAN TUBE DYSFUNCTION** — painless, dull retracted drum, flat type B, threatens speech development.\n- **Presbyacusis is cochlear and NEVER conductive.**\n\nSrc: L19.1; effusion detail L21.2",
+        "qs": [
+          "entep-ear-84",
+          "entqb-ear7-183",
+          "entqb-ear7-184",
+          "enthd-ear-35",
+          "entqb-ear7-190",
+          "entqb-thr1-5"
+        ]
+      },
+      {
+        "id": "hear-4",
+        "w": "must",
+        "h": "Sensorineural hearing loss — the cause list, and the frequency signature",
+        "body": "**SNHL = a lesion of the COCHLEA (sensory) or the AUDITORY NERVE (neural).**\n\n|Group|Causes|\n|---|---|\n|**Congenital**|**CONSANGUINITY** or **PERINATAL**|\n|**Traumatic**|**barotrauma · NOISE TRAUMA · temporal bone fracture**|\n|**Inflammatory**|**bacterial · viral · SPECIFIC (syphilis)**|\n|**Neoplastic**|**CPA TUMOUR · GLOMUS**|\n|**Ageing**|**PRESBYACUSIS**|\n|**Ototoxic drugs**|**AMINOGLYCOSIDES**|\n|**Autoimmune**|autoimmune inner-ear disease|\n|**Ménière’s disease**|endolymphatic hydrops|\n|**Metabolic / endocrine**|**DM**|\n|**CNS lesions**|**disseminated sclerosis**|\n|**Idiopathic**|**SUDDEN hearing loss**|\n\n- **⚠️ THE FREQUENCY NAMES THE DISEASE: LOW-frequency = MÉNIÈRE’S · high-frequency BILATERAL = PRESBYACUSIS · a 4 kHz NOTCH = NOISE · high-frequency UNILATERAL = ACOUSTIC NEUROMA.** Presbyacusis and acoustic neuroma both take the high tones; laterality separates them.\n\nSrc: L19.1; low-frequency = Ménière’s from L20; audiogram shapes from L13,14",
+        "qs": [
+          "entep-ear-48"
+        ]
+      },
+      {
+        "id": "hear-5",
+        "w": "high",
+        "h": "Mixed hearing loss — it needs a route into the cochlea",
+        "body": "**A conductive AND a sensorineural component in the same ear.** The conductive lesion must have a way of reaching the labyrinth.\n\n- **Causes: CHOLESTEATOMA / UNSAFE CSOM complicated by LABYRINTHITIS · COCHLEAR (combined) OTOSCLEROSIS · temporal-bone TRAUMA · GLOMUS · congenital ATRESIA with an inner-ear anomaly.**\n- **⚠️ MIDDLE-EAR EFFUSION IS NEVER MIXED** — purely conductive, fully reversible, no route in. Nor are wax, a simple perforation or tympanosclerosis.\n- Purely sensorineural, so never mixed either: presbyacusis, ototoxicity, acoustic neuroma at the CPA.\n\nSrc: L19.1; cholesteatoma from L16",
+        "qs": [
+          "entep-ear-32",
+          "entep-mfe4-3",
+          "entqb-ear7-192"
+        ]
+      },
+      {
+        "id": "hear-6",
+        "w": "must",
+        "h": "Otosclerosis",
+        "body": "**New spongy bone at the OTIC CAPSULE fixing the STAPES FOOTPLATE to the OVAL WINDOW.** L19.1 files it under ossicular **FIXATION** and **WINDOWS OBSTRUCTION**. *(All else below not in course material.)*\n\n|Feature|Otosclerosis|\n|---|---|\n|**Type of loss**|**PRIMARILY CONDUCTIVE** — bilateral, gradual, progressive over years|\n|**Age / sex**|**20–40 · COMMONER IN FEMALES** (not males)|\n|**Family history**|**COMMONLY POSITIVE** — autosomal dominant, reduced penetrance|\n|**Pregnancy**|**PROGRESSES / worsens with it**|\n|**Otoscopy**|**⚠️ NORMAL DRUM.** **SCHWARTZE’S SIGN** — flamingo-red posterosuperior flush from the vascular promontory — is uncommon and **ACTIVE**-phase only; chronic non-active disease = **normal drum**|\n|**Symptoms**|hearing loss + **TINNITUS**; **PARACUSIS WILLISII** — hears better in a noisy place|\n|**Tuning forks**|**RINNE NEGATIVE** (bilaterally if bilateral) · **WEBER TO THE WORSE EAR**|\n|**Audiogram**|conductive gap across all frequencies · **CARHART’S NOTCH, a BC dip at 2 kHz**|\n|**Tympanometry**|**TYPE As** — normal pressure, reduced compliance · **stapedial reflex ABSENT**|\n|**Becomes MIXED**|only if the **COCHLEA / otic capsule** is invaded — cochlear otosclerosis, adding **SNHL or vertigo**|\n|**Treatment**|**STAPEDECTOMY (stapedotomy) + TEFLON PISTON**; alternative **HEARING AID**. **⚠️ NEVER tympanoplasty, myringoplasty, myringotomy or mastoidectomy** — drum and mastoid are healthy|\n\n- **⚠️ WEBER NAMES THE SIDE: in CONDUCTIVE loss it goes to the WORSE ear**, the reverse of SNHL. Bilateral negative Rinne + Weber right = bilateral otosclerosis **worse on the right**; Weber left = worse left.\n- **A negative Rinne excludes presbyacusis** (sensorineural); a perforation excludes otosclerosis.\n- **Hearing loss behind an INTACT NORMAL drum in a young adult = otosclerosis** until excluded.\n\nSrc: L19.1; fork and audiogram reading L13,14",
+        "qs": [
+          "entep-ear-17",
+          "entep-ear-73",
+          "entep-ear-98",
+          "entep-ear-102",
+          "entep-ear-109",
+          "entep-ear-164",
+          "entep-ear-176",
+          "entep-ear-224",
+          "entep-ear-241",
+          "entep-ear-247",
+          "entep-enr-15",
+          "entep-enr-27",
+          "entep-case-20",
+          "entqb-ear7-187",
+          "entqb-ear7-188"
+        ]
+      },
+      {
+        "id": "hear-7",
+        "w": "must",
+        "h": "Presbyacusis",
+        "body": "**Ageing of the cochlea — L19.1 lists it as \"Aging: presbyacusis\". THE COMMONEST SNHL, both IN THE ELDERLY and IN GENERAL.**\n\n- **BILATERAL · SYMMETRICAL · GRADUAL over years · HIGH-FREQUENCY · normal otoscopy · Rinne POSITIVE both sides, Weber CENTRAL.**\n- **TINNITUS accompanies it — 34 % of the elderly have tinnitus.**\n- **⚠️ DISCRIMINATION WORSE THAN THE PURE TONES PREDICT — \"I hear you but cannot understand you.\"** Consonants go first: speech fails on the phone and in a crowded room *(not in course material)*.\n- Treatment: **hearing aid**.\n\nSrc: L19.1; tinnitus figure L19.2; audiogram shape L13,14",
+        "qs": [
+          "entep-ear-1",
+          "entep-ear-77",
+          "entep-ear-163",
+          "entqb-ear7-186",
+          "entqb-ear7-191",
+          "entep-case-35"
+        ]
+      },
+      {
+        "id": "hear-8",
+        "w": "high",
+        "h": "Noise-induced hearing loss",
+        "body": "**L19.1 files NOISE TRAUMA under TRAUMATIC SNHL, beside barotrauma and temporal bone fracture.**\n\n- **Chronic occupational exposure — factory, shipyard, firearms — gives BILATERAL SNHL with a V-SHAPED NOTCH AT 4 kHz that RECOVERS BY 8 kHz** *(the notch not in course material)*.\n- **⚠️ vs PRESBYACUSIS the discriminator is the RIGHT-HAND END: presbyacusis keeps sloping, noise RECOVERS after 4 kHz.** Noise loss also appears in working life.\n- **TINNITUS is often the FIRST symptom**, then muffling and lost speech understanding in a crowd or on the phone.\n- **Irreversible; ear protection is the only treatment.** A single blast = *acoustic trauma* *(not in course material)*.\n\nSrc: L19.1; audiogram configuration L13,14",
+        "qs": [
+          "entep-ear-15",
+          "entep-ear-103"
+        ]
+      },
+      {
+        "id": "hear-9",
+        "w": "must",
+        "h": "Ototoxicity",
+        "body": "**L19.1: \"Ototoxic drugs : AMINOGLYCOSIDES.\"** **BILATERAL, symmetrical, HIGH-FREQUENCY, SENSORINEURAL, PERMANENT**, often with tinnitus, sometimes noticed only after the course ends. *(Table beyond \"aminoglycosides\" not in course material.)*\n\n|Class|Drugs|Chiefly toxic to|\n|---|---|---|\n|**Aminoglycosides**|**AMIKACIN, kanamycin, tobramycin**|**COCHLEA**|\n|**Aminoglycosides**|**streptomycin, gentamicin**|**VESTIBULE**|\n|**Loop diuretics**|furosemide|cochlea, often reversible|\n|**Platinum chemotherapy**|**cisplatin**|cochlea|\n|**Salicylates / antimalarials**|high-dose aspirin, quinine|cochlea, reversible|\n\n- **NOT ototoxic: amoxicillin, ibuprofen, paracetamol, metformin, corticosteroids** — steroids are a *treatment* for SNHL.\n- **A child deafened after a week of injectable antibiotics for a chest infection = aminoglycoside ototoxicity**, bilateral and severe.\n- Defect note: endpoint offers aspirin and \"all of the above\" and keys **amikacin** alone; keyed as printed.\n\nSrc: L19.1",
+        "qs": [
+          "entep-ear-30",
+          "entqb-ear7-194",
+          "entep-case-37"
+        ]
+      },
+      {
+        "id": "hear-10",
+        "w": "must",
+        "h": "Sudden sensorineural hearing loss",
+        "body": "**L19.1 lists IDIOPATHIC SUDDEN HEARING LOSS among the SNHL causes, and its treatment as \"Medical: INTRATYMPANIC OR GENERAL\".**\n\n- Definition: **≥30 dB over ≥3 contiguous frequencies within 72 hours**, usually unilateral, classically noticed on waking *(definition not in course material)*.\n- **⚠️ AN EMERGENCY. ORAL AND/OR INTRATYMPANIC CORTICOSTEROIDS AS EARLY AS POSSIBLE** — recovery falls with each day of delay, so a week of observation wastes the window. Antibiotics and surgery have no role.\n- Then **audiogram + MRI to exclude a vestibular schwannoma.**\n\nSrc: L19.1",
+        "qs": [
+          "entqb-ear7-193"
+        ]
+      },
+      {
+        "id": "hear-11",
+        "w": "must",
+        "h": "Acoustic neuroma — hearing loss as the presentation",
+        "body": "**L19.1 files CPA TUMOUR under NEOPLASTIC SNHL. A vestibular schwannoma of VIII in the cerebellopontine angle.**\n\n- **UNILATERAL, PROGRESSIVE, HIGH-FREQUENCY SNHL with UNILATERAL TINNITUS**, discrimination poorer than the pure tones predict; imbalance rather than true rotatory vertigo.\n- **Rinne POSITIVE; WEBER lateralises AWAY, to the GOOD ear** — the loss is sensorineural.\n- **A hearing loss with ANY cranial-nerve sign is a CPA lesion until excluded:** **V** — facial numbness, lost corneal reflex · **VII** — facial weakness · **VI** — diplopia · headache.\n- **⚠️ ANY unilateral SNHL or unilateral tinnitus is a RED FLAG, even with a NORMAL audiogram and normal forks. Next step = GADOLINIUM MRI of the internal auditory canals, NOT CT** — CT images bone and misses a small intracanalicular tumour. Reassurance, follow-up and anti-tinnitus drugs are wrong *(not in course material; L19.2 states only \"radiological in unilateral tinnitus\")*.\n- On ABR: **wave I preserved, wave V and the interwave latencies prolonged.**\n\nSrc: L19.1; unilateral tinnitus imaging L19.2; ABR pattern L13,14",
+        "qs": [
+          "entep-ear-57",
+          "entep-ear-100",
+          "entep-ear-108",
+          "entep-mfe5-12",
+          "entqb-ear7-181"
+        ]
+      },
+      {
+        "id": "hear-12",
+        "w": "must",
+        "h": "Deafness in children",
+        "body": "**L19.1: CONGENITAL SNHL = CONSANGUINITY or PERINATAL causes.**\n\n- **⚠️ CROSS-BANK DIVERGENCE — commonest childhood SNHL: endpoint keys POST-MENINGITIC, Grade Gain keys HEREDITARY; both keyed as printed.** Hereditary explains congenital loss, meningitis the commonest **acquired** one; congenital CMV the commonest non-genetic congenital cause *(not in course material)*.\n- **POST-MENINGITIC loss is bilateral, profound, and the COCHLEA LATER OSSIFIES — test hearing urgently; the implantation window closes** *(not in course material)*.\n- Commonest childhood hearing loss **overall** = secretory otitis media, but that is **CONDUCTIVE**.\n- **Screening pathway: OAE → fail → repeat → still fail → TYMPANOMETRY + ABR.** Never wait for play audiometry at three; never reassure.\n- **⚠️ UNTREATED CONGENITAL DEAFNESS BECOMES DEAF-MUTISM. Hearing aids first; if they fail, COCHLEAR IMPLANT — PREFERABLY BEFORE AGE 5, before maturation of the auditory cortex** (Grade Gain’s own printed box).\n\nSrc: L19.1; screening pathway L13,14; the age-5 window from ENT QB p.37",
+        "qs": [
+          "entep-ear-154",
+          "entep-ear-238",
+          "entqb-ear7-189",
+          "entep-ear-121"
+        ]
+      },
+      {
+        "id": "hear-13",
+        "w": "must",
+        "h": "Treatment — the ladder, and who gets which device",
+        "body": "**CHL: MEDICAL OR SURGICAL ACCORDING TO THE CAUSE** — wax removal, grommet, myringoplasty, ossiculoplasty, stapedectomy.\n**SNHL, in the lecture’s order: 1 MEDICAL — INTRATYMPANIC OR GENERAL · 2 HEARING AIDS · 3 SURGICAL — e.g. COCHLEAR IMPLANT.**\n\n|Device|Works by|Indicated in|\n|---|---|---|\n|**HEARING AID**|**AMPLIFIES — needs SURVIVING HAIR CELLS**|**mild to moderate loss**; conductive loss; the non-surgical alternative in otosclerosis|\n|**COCHLEAR IMPLANT**|**BYPASSES the hair cells and stimulates the COCHLEAR NERVE directly**|**TOTAL deafness / SEVERE-to-PROFOUND BILATERAL SNHL in which hearing aids have FAILED**|\n\n- **⚠️ The implant is NOT for mixed deafness, bilateral CONDUCTIVE deafness, or UNILATERAL SNHL.**\n- Fenestration, stapes mobilisation, mastoidectomy and conservative management have no place in profound SNHL.\n\nSrc: L19.1",
+        "qs": [
+          "entep-ear-83",
+          "entqb-ear7-196"
+        ]
+      },
+      {
+        "id": "hear-14",
+        "w": "must",
+        "h": "Tinnitus",
+        "body": "**AUDITORY SENSATION OF SOUND WITHIN THE EAR, IN THE ABSENCE OF ANY RELEVANT EXTERNAL SIGNAL. ⚠️ A SYMPTOM, NOT A DISEASE.**\n**SUBJECTIVE = heard only by the patient · OBJECTIVE = heard by patient AND others.** *(NON-VIBRATORY tinnitus has no physical sound source, so it is ALWAYS SUBJECTIVE; objective tinnitus is always vibratory, not the reverse — not in course material.)*\n**INCIDENCE: 17 % of the general population · 34 % of the elderly · 25 % need medical therapy.** Commonest cause **IDIOPATHIC** — Grade Gain’s key; no slide states it, noted, keyed as printed.\n\n|Type|Sources|\n|---|---|\n|**1 From PARA-AUDITORY structures (somatosensation)**|**VASCULAR — RHYTHMIC WITH THE HEART BEAT: PARAGANGLIOMAS (glomus), A-V SHUNT, CAROTICO-CAVERNOUS FISTULA, VENOUS HUMPS** · **MUSCULAR — MIDDLE-EAR MYOCLONUS, PALATAL MUSCLE CONTRACTIONS** · **PATULOUS EUSTACHIAN TUBE**|\n|**2 CONDUCTIVE**|tinnitus **aggravated by a conductive hearing loss**|\n|**3 SNHL**|**PRESBYACUSIS · NOISE-INDUCED HEARING LOSS · ACOUSTIC NEUROMA · MÉNIÈRE’S DISEASE**|\n|**4 PSYCHOLOGICAL**|**hallucination**|\n|**5 PSEUDOTINNITUS**|**malingering**|\n\n- **⚠️ PULSATILE tinnitus = VASCULAR = GLOMUS TUMOUR until excluded.** Red mass behind an intact drum, worse at night; **pulsatile tinnitus is its EARLIEST symptom**, hearing loss follows, bloody otorrhoea and cranial-nerve palsies late. **CT/MRI then ANGIOGRAPHY confirm. ⚠️ NEVER BIOPSY** — torrential haemorrhage; blanches on pneumatic pressure (Brown’s sign) *(not in course material)*.\n- **HISTORY: site — unilateral? CHARACTER — VENOUS = HUMMING, ARTERIAL = HARSH. ASSOCIATIONS — vertigo, SNHL.**\n- **EXAMINATION: general — vital signs, neck · OTOLOGICAL — otoscopy, tuning forks · NEUROLOGICAL — to exclude a retrocochlear lesion · ORAL CAVITY — TMJ, palatal myoclonus.**\n- **INVESTIGATIONS: 1 basic audiological · 2 MEASUREMENT OF THE TINNITUS — PITCH MATCH (frequency similarity), LOUDNESS (intensity similarity), EFFECT OF MASKING (PTA intensity) · 3 RADIOLOGY IN UNILATERAL TINNITUS.**\n- **TREATMENT: 1 treat the CAUSE · 2 MEDICAL — anticonvulsant, IV lidocaine, transtympanic lidocaine, tranquillizer · 3 TINNITUS MASKERS.**\n\nSrc: L19.2",
+        "qs": [
+          "entep-ear-3",
+          "entep-ear-91",
+          "entep-ear-231",
+          "entep-enr-3",
+          "entqb-ear7-179",
+          "entqb-ear7-180",
+          "entqb-ear7-182",
+          "entep-case-29"
+        ]
+      }
+    ]
   }
 };

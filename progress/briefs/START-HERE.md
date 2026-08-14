@@ -872,6 +872,24 @@ if the receiving chapter actually gets it.**
 | `ent-dysph` (L8) | **The phoniatric protocol** — only the laryngeal click kept | `ent-phon` | ☐ **⚠️ 2ND CHAPTER TO OWE IT — `ent-hoarse` registered it first** |
 | `ent-dysph` (L5) | The **neck-mass differential** — only the cystic swelling kept | `ent-neck` | ☐ |
 | `ent-dysph` (L2) | The **supraglottic/glottic/subglottic carcinoma table** — verified present in `hoar-8`, which also already carries the Plummer–Vinson-is-premalignant-for-postcricoid-not-laryngeal line | `ent-hoarse` | ✅ already written |
+| `ent-hearing` (L19.2 lines 85–148) | The **otorrhoea slides appended to the cached tinnitus file** | `ent-otorrhea` | ☐ **⚠️⚠️ 3RD CHAPTER TO OWE THIS DECK — `ent-otalgia` and `ent-csom` registered it first and it is STILL UNWRITTEN. See the note below the table.** |
+| `ent-hearing` (L19.2 lines 120–148) | The **otalgia slides** — verified already written in the merged chapter before deferring, not assumed | `ent-otalgia` | ✅ already written |
+| `ent-hearing` (L19.1) | **Glomus as a lesion in its own right** — jugulare/tympanicum, staging, embolisation. Only the pulsatile-tinnitus presentation kept | `ent-otorrhea` | ☐ |
+| `ent-hearing` (L20) | **Ménière's in full** — only the low-frequency audiometric signature kept | `ent-vertigo` | ☐ **agent briefed** |
+| `ent-hearing` (L16/L17,18) | **Cholesteatoma / unsafe CSOM** | `ent-csom` | ✅ already written |
+| `ent-hearing` (L21.2) | **Secretory otitis media in full** | `ent-aom` | ✅ already written |
+
+> **⚠️⚠️ `ent-otorrhea` IS NOW OWED THE SAME OTORRHOEA DECK BY THREE CHAPTERS INDEPENDENTLY** —
+> `ent-otalgia`, `ent-csom` and `ent-hearing`, none of which knew of the others. That is not
+> triplicated work, it is **one deck that three chapters each correctly refused**, and it means
+> `ent-otorrhea` (29 questions) carries a far larger content debt than its question count suggests.
+> **Write it against all three rows at once**, and expect its entity floor — not its question count —
+> to set the budget. The same is true, at two rows each, for `ent-vertigo` (L20, from `ent-earanat`
+> and `ent-audio`), `ent-pharanat` (L1.2, from `ent-pharsupp` and `ent-dysph`), `ent-phon` (L8, from
+> `ent-hoarse` and `ent-dysph`), `ent-nasalobs` (L31, from `ent-nasalmass` and `ent-rhin`) and
+> `ent-tonsils` (adenoids, from `ent-nasalmass` and `ent-rhin` — and it is **already merged**, so that
+> one is reconciliation work). **⚠️ COUNT THE REGISTER ROWS BEFORE BRIEFING A CHAPTER. A chapter's
+> question count does not predict what it has been handed.**
 
 > **⚠️ TWO CHAPTERS CAN DEFER THE SAME FACT TO EACH OTHER — the register is what catches it.**
 > `ent-paedlar` sent the full RRP account to `ent-hoarse`; `ent-hoarse`, written afterwards, sent it
