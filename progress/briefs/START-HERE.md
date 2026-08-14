@@ -673,6 +673,18 @@ a second textbook. The four known ENT examples: Stridor (L6) ≈ 2,300 w · Tons
 CSOM (L16 + L17,18) ≈ 1,570 w · AOM (L21.1 + L21.2) ≈ 1,000 w. **The validator counts body words
 at merge; over budget by >10 % goes back for compression, not into the app.**
 
+> **⚠️ THE 10 % TOLERANCE IS A TRIGGER TO LOOK, NOT THE ACCEPTANCE TEST. THE ACCEPTANCE TEST IS
+> PAGES, AND IT IS MEASURED — never inferred from the word count.** Ruled 2026-08-14 on `ent-audio`,
+> which came in at **1,701 words against a 1,450 budget, +17.3 %**, and its agent correctly refused
+> to cut: reaching the tolerance cost four lecture slides, and reaching the strict budget left **2 of
+> 58 questions unanswerable.** It was itemised rather than cut, exactly as the rule below requires.
+> **Rendered, it prints at SEVEN PAGES** — the same as `ent-earanat` and `ent-paedlar`, and four
+> under `ent-csom`. **The overrun cost nothing on paper**, because it is ten test modalities carried
+> in dense grids and a table cell is not a prose word. So: **over 10 %, render the chapter and count
+> the pages before ordering compression.** Under ~10 pp with the floor intact, accept it and record
+> why. Send it back only when the pages agree with the words. This is the same finding as
+> "do not chase the printed page count with word cuts", read from the other end.
+
 **⚠️ SUM THE CHAPTER'S REAL LECTURE SET, DO NOT COPY THE EXAMPLE ABOVE.** Stridor's budget was set
 by hand at 2,400 from L6 alone and the agent was right to challenge it: the chapter also draws on
 L12 and L11, so the formula gives the 3,000 cap. Run `wc -w` on the files you actually use.
@@ -806,6 +818,12 @@ if the receiving chapter actually gets it.**
 | `ent-septum` (L24) | **Nasal-valve anatomy in full** and valve reconstruction. Only the Cottle test and the valve's role in obstruction kept | `ent-nasalobs` | ☐ |
 | `ent-septum` (L24) | **Wegener's as an entity** — ANCA, the triad, the systemic disease. Only its saddle-nose key kept | `ent-rhin` | ☐ **agent briefed** |
 | `ent-septum` (L24) | The septum's **arterial supply as vascular anatomy** — counted in this chapter's budget as L24's own ILO, but owed as anatomy | `ent-noseanat` | ☐ |
+| `ent-audio` (L13,14 lines 422–556) | **The entire dizziness half** — epidemiology, ">90 % benign", "commonest cause is lack of sleep", "80 % from history", the Type I–IV classification, the descriptor list | `ent-vertigo` | ☐ |
+| `ent-audio` (L13,14 lines 63–83) | **Static vs dynamic balance** | `ent-vertigo` | ☐ |
+| `ent-audio` (L20) | Everything but the fistula test and the investigation categories | `ent-vertigo` | ☐ **⚠️ 2ND CHAPTER TO OWE THIS — `ent-earanat` registered it first and it is still unwritten. Two independent deferrals of one deck means `ent-vertigo` must be written against BOTH rows.** |
+| `ent-audio` (L19.1) | The **seven hearing-loss types**, the CHL/SNHL cause lists, treatment | `ent-hearing` | ☐ |
+| `ent-audio` (L19.1) | **The pressure transformer system** — areal ratio 17, lever 1.3, product 22, 26 dB | `ent-hearing` | ☐ |
+| `ent-audio` (L19.2) | **Tinnitus in full** | `ent-hearing` | ☐ |
 | `ent-nasalmass` (L31) | The full **nasal-obstruction aetiology** (mucosal causes, choanal atresia, pyriform aperture stenosis, turbinate hypertrophy, nasal valve dysfunction), **NOSE and SNOT-22**, rhinomanometry, acoustic rhinometry, the decongestant rules | `ent-nasalobs` | ☐ |
 | `ent-nasalmass` (L25) | **Epistaxis management as a subject** — packing, cautery, the arterial ligations. Only angiofibroma embolisation kept | `ent-epistaxis` | ☐ |
 

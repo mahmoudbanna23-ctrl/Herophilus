@@ -2655,5 +2655,148 @@ var T_ENT = {
         ]
       }
     ]
+  },
+  "ent-audio": {
+    "intro": "Almost every question is one of two shapes: read this result, or pick the test for this patient. Three grids carry the marks — the tuning-fork grid, the five tympanogram curves and the four audiogram shapes. Learn them as grids, not as prose.",
+    "sections": [
+      {
+        "id": "aud-1",
+        "w": "know",
+        "h": "The numbers, and the two families of hearing test",
+        "body": "**Normal hearing needs five links: STIMULUS (sound) · CONDUCTION (external + middle ear) · TRANSDUCTION (COCHLEA) · NEURAL transmission · CENTRAL processing (subcortical, then cortical).**\n\n|Quantity|Figure|\n|---|---|\n|**Frequency range**|**20 – 20,000 Hz**|\n|**Amplitude range**|**0.0002 – 200 dyne/cm²**|\n|**Speech band**|**500 – 4,000 Hz** *(not in course material)*|\n|**Temporal resolution**|**10 µsec**|\n|**Decibel scale**|**0 dB = 0.0002 · 120 dB = 200 dyne/cm²**; logarithmic — 10⁶ units collapse to 120|\n|**Octave scale**|**each frequency DOUBLE the last: 250, 500, 1000, 2000, 4000 Hz**|\n\n- **The ear is NOT equally sensitive across frequencies.**\n- **BEHAVIOURAL audiometry needs a response** (cooperative children, adults); **ELECTROPHYSIOLOGICAL measures an involuntary reflex or potential** (infants, toddlers, uncooperative adults).\n- **Basic audiological evaluation: history → examination incl. OTOSCOPY → TUNING FORKS → PTA → TYMPANOMETRY → SPEECH AUDIOMETRY.**\n- **Five symptoms of ear disease: hearing loss · tinnitus · dizziness/vertigo · otalgia · otorrhoea.**\n\nSrc: L13,14",
+        "qs": [
+          "entqb-ear8-220"
+        ]
+      },
+      {
+        "id": "aud-2",
+        "w": "must",
+        "h": "Tuning fork tests — the grid",
+        "body": "**512 Hz fork** *(not in course material)*. **RINNE = TYPE, WEBER = SIDE; read Rinne first.**\n\n|Test|Compares|**NORMAL**|**CONDUCTIVE**|**SENSORINEURAL**|\n|---|---|---|---|---|\n|**RINNE**|**AC vs BC, same ear**|**AC > BC = POSITIVE**|**BC > AC = NEGATIVE**|**AC > BC = POSITIVE**|\n|**WEBER**|midline BC, **both ears**|**midline, not lateralized**|**to the POORER (worse) ear**|**to the BETTER ear**|\n|**SCHWABACH**|**patient’s BC vs examiner’s**|equal|**Pt > Ex = PROLONGED**|**Ex > Pt = SHORTENED**|\n|**ABSOLUTE BONE CONDUCTION**|patient’s BC, canal occluded, vs examiner’s|equal|**NORMAL**|**REDUCED** *(ABC is on no cached slide)*|\n\n- **Rinne detects a conductive loss only. POSITIVE = normal OR sensorineural** — both routes fall together, so the comparison is unchanged.\n- **Schwabach and ABC separate CONDUCTIVE from MIXED**: both **normal** in pure conductive loss; shortened Schwabach or reduced ABC = the cochlea is involved.\n- **FALSE-NEGATIVE RINNE — a dead ear.** In severe unilateral SNHL the tone crosses the skull to the **opposite** cochlea, so BC seems to beat AC with no conductive lesion. **Weber unmasks it — it goes to the GOOD ear.** **MASKING** (noise to the non-test ear) removes the crossover *(both not in course material)*.\n- **Bilateral negative Rinne at about 40 with normal drums = OTOSCLEROSIS**; Weber names the worse side.\n- **Defect note:** for right conductive loss Grade Gain keys Schwabach **prolonged**, endpoint **normal**; the slide says prolonged. Both keyed as printed.\n\nSrc: L13,14",
+        "qs": [
+          "entep-ear-67",
+          "entep-ear-132",
+          "entep-ear-185",
+          "entep-ear-190",
+          "entep-ear-225",
+          "entep-mfe5-31",
+          "entqb-ear8-197",
+          "entqb-ear8-198",
+          "entqb-ear8-199",
+          "entqb-ear8-200",
+          "entqb-ear8-203",
+          "entqb-ear8-223",
+          "entqb-ear8-234"
+        ]
+      },
+      {
+        "id": "aud-3",
+        "w": "must",
+        "h": "Pure tone audiometry — the test itself",
+        "body": "**Measures HEARING THRESHOLDS for pure tones, 250 – 8,000 Hz in OCTAVE intervals**, in a **sound-treated room**. **AC by EARPHONES · BC by BONE VIBRATOR. AUDIOGRAM: Y = INTENSITY (dB) · X = FREQUENCY (Hz).**\n\n- **THRESHOLD = the minimum intensity audible in at least 50 % of presentations.**\n- **PTA is SUBJECTIVE and BEHAVIOURAL — it needs a response, so NOT objective.** Still **the GOLD STANDARD of hearing evaluation**; **qualitative and quantitative**.\n- **The AC–BC relationship gives: PRESENCE · TYPE · DEGREE · CONFIGURATION** — and the **side**.\n- **BC BYPASSES THE CONDUCTING APPARATUS, so a raised BC threshold = COCHLEAR DAMAGE.** Glue ear, perforation, ossicular dislocation and fixation leave BC normal.\n- **MASKING** — noise to the non-test ear when the tone could cross the skull *(not in course material)*.\n\n|Degree|Threshold|\n|---|---|\n|**Normal**|**< 20 dB**|\n|**Mild**|**20 – 40 dB**|\n|**Moderate**|**40 – 60 dB**|\n|**Severe**|**60 – 90 dB**|\n|**Profound**|**90 – 110 dB**|\n|**Total**|**> 110 dB**|\n\nSrc: L13,14; L19.1",
+        "qs": [
+          "entep-ear-118",
+          "entep-ear-130",
+          "entqb-ear8-204"
+        ]
+      },
+      {
+        "id": "aud-4",
+        "w": "must",
+        "h": "Reading an audiogram — type first, then shape",
+        "body": "**Read the BONE line first: it decides whether the cochlea is involved.**\n\n|Type|AC|BC|Air-bone gap|\n|---|---|---|---|\n|**NORMAL**|normal|normal|none|\n|**CONDUCTIVE**|**ABNORMAL**|**NORMAL**|**YES**|\n|**SENSORINEURAL**|abnormal|abnormal|**NONE — abnormal EQUAL AC and BC, the lines together**|\n|**MIXED**|abnormal|abnormal|**YES — abnormal UNEQUAL: both lines depressed AND separated**|\n\n**CONFIGURATION** *(named shapes and notches not in course material; the slide names only low- and high-frequency SNHL)*:\n\n|Shape|Reads as|Cause|\n|---|---|---|\n|**Flat, wide air-bone gap, BC normal**|conductive|**middle-ear effusion**|\n|**RISING — worst at the LOW frequencies, lines together**|**low-frequency SNHL**|**MÉNIÈRE’S DISEASE** (endolymphatic hydrops)|\n|**SLOPING DOWN above 1 kHz, lines together**|**high-frequency SNHL**|**PRESBYCUSIS** — bilateral, elderly; costs consonants, so speech is heard but not understood|\n|**V-NOTCH DIPPING AT 4,000 Hz, recovering by 8,000**|noise damage|**ACOUSTIC TRAUMA.** Against presbycusis the discriminator is the RIGHT-HAND END — presbycusis keeps sloping|\n\n- **A MIXED trace needs a route into the cochlea** — trauma, glomus tumour, complicated CSOM. **Middle-ear effusion has none and stays purely conductive.**\n- **OTOSCLEROSIS is MAINLY CONDUCTIVE** — stapes fixed at the oval window, with **CARHART’S NOTCH, a BC dip at 2,000 Hz** *(not in course material)*. Mixed only if the otic capsule is involved.\n\nSrc: L13,14; L20 for low-frequency SNHL = Ménière’s",
+        "qs": [
+          "entqb-ear8-205",
+          "entqb-ear8-206",
+          "entqb-ear8-207",
+          "entqb-ear8-208",
+          "entqb-ear8-209",
+          "entqb-ear8-211",
+          "entqb-ear8-224",
+          "entqb-ear8-235"
+        ]
+      },
+      {
+        "id": "aud-5",
+        "w": "high",
+        "h": "Speech audiometry",
+        "body": "**Hearing measured with SPEECH — WORDS and SENTENCES.** **SRT (speech reception threshold)** = detect speech at threshold; **SDS (speech discrimination score)** = discriminate above threshold.\n\n|Lesion|SDS|\n|---|---|\n|**CONDUCTIVE**|**EXCELLENT** — attenuated, not distorted|\n|**SENSORY (cochlear)**|**GOOD**|\n|**NEURAL (retrocochlear)**|**POOR**|\n\n- **A DECISION-MAKING test: it measures COMPREHENSION, so it predicts HEARING-AID BENEFIT.** Amplification restores a conductive loss; it cannot restore a neural one.\n- **A score POOR OUT OF PROPORTION to the pure-tone audiogram is a RETROCOCHLEAR flag.**\n- It does not give the type of loss alone, test middle-ear integrity, or give a frequency range.\n- **Wording note:** L19.1 states the same grading as *“excellent in cochlear lesions and poor in retrocochlear lesions.”*\n\nSrc: L13,14; L19.1",
+        "qs": [
+          "entqb-ear8-201",
+          "entqb-ear8-230"
+        ]
+      },
+      {
+        "id": "aud-6",
+        "w": "must",
+        "h": "Tympanometry (impedance audiometry) — the five curves",
+        "body": "**Measures TWO middle-ear features: the PRESSURE of the cavity, and the DEGREE OF ELASTICITY (compliance) or resistance of the system.** Probe, headphone, manometer.\n\n|Curve|Pressure|Compliance|Means|\n|---|---|---|---|\n|**A**|**normal**|**normal**|normal middle ear|\n|**As**|**normal**|**REDUCED**, shallow peak|**TYMPANO-OSSICULAR FIXATION — OTOSCLEROSIS, TYMPANOSCLEROSIS. SURGICAL**: stapedectomy or tympanoplasty|\n|**Ad**|**normal**|**INCREASED**, tall peak|**OSSICULAR DISCONTINUITY**, or an **ATROPHIC drum**|\n|**B**|—|**NON-COMPLIANT, FLAT curve**|**ABSENT mobility = MIDDLE-EAR EFFUSION** (secretory otitis media)|\n|**C**|**NEGATIVE**|**good**|**EUSTACHIAN TUBE DYSFUNCTION** — retracted but still mobile; the reversible stage before B|\n\n- **⚠️ A FLAT TYPE B IS TWO DIAGNOSES AND THE CANAL VOLUME DECIDES** *(not in course material)*: **LOW or normal = FLUID behind an intact drum** (bubbles, hairline); **HIGH = PERFORATION or patent grommet**, the probe reading the middle ear too.\n- **Detects ossicular discontinuity, Eustachian tube obstruction, effusion and otosclerosis alike** — hence *“all of the above”*.\n- **No hearing threshold, and it cannot see past wax.** A purely cochlear loss gives a normal trace.\n- **Chain it out: flat B → effusion → conductive → NEGATIVE Rinne, Weber to THAT SAME ear.**\n- **Conductive loss with a NORMAL otoscopy after head trauma = OSSICULAR DISCONTINUITY**, usually incudostapedial: wide flat gap, type Ad, absent reflex.\n\nSrc: L13,14; L19.1",
+        "qs": [
+          "entep-ear-82",
+          "entep-ear-125",
+          "entep-ear-165",
+          "entep-ear-204",
+          "entep-mfe5-4",
+          "entep-mfe5-5",
+          "entep-mfe5-6",
+          "entqb-ear8-202",
+          "entqb-ear8-210",
+          "entqb-ear8-212",
+          "entqb-ear8-218",
+          "entqb-ear8-219",
+          "entqb-ear8-226",
+          "entqb-ear8-231",
+          "entqb-ear8-232"
+        ]
+      },
+      {
+        "id": "aud-7",
+        "w": "must",
+        "h": "The acoustic (stapedial) reflex",
+        "body": "**Contraction of STAPEDIUS to a loud sound, measured on the tympanometer.** Objective, and **bilateral** — one loud sound contracts both stapedii *(bilaterality not in course material)*.\n\n|Link|Structure|\n|---|---|\n|**Stimulus**|**LOUD sound**|\n|**Receptor**|**cochlear HAIR CELLS**|\n|**Afferent**|**AUDITORY NERVE — cochlear division of VIII**|\n|**Centre**|**FACIAL NUCLEUS**|\n|**Efferent**|**MOTOR part of the FACIAL nerve (VII)**|\n|**Effector**|**STAPEDIUS muscle**|\n\n- **Every wrong chain substitutes TENSOR TYMPANI and the TRIGEMINAL.** Tensor tympani: **malleus, V**. Stapedius: **stapes, VII**. Both protect the cochlea against loud sound; only stapedius makes the reflex.\n- **ABSENT reflex = CONDUCTIVE hearing loss. IMPAIRED reflex = SENSORINEURAL loss**, its threshold merely raised.\n- **Lost in: conductive loss · SEVERE and PROFOUND SNHL · FACIAL NERVE PARALYSIS. MILD SNHL leaves it intact.**\n- **A paralysed stapedius is why Bell’s palsy causes HYPERACUSIS.**\n\nSrc: L19.1; L13,14; stapedius/VII and tensor tympani/V from L22",
+        "qs": [
+          "entep-ear-117",
+          "entqb-ear8-213",
+          "entqb-ear8-216",
+          "entqb-ear8-217"
+        ]
+      },
+      {
+        "id": "aud-8",
+        "w": "must",
+        "h": "Objective tests — OAE, ABR and the infant pathway",
+        "body": "**AUDITORY EVOKED POTENTIALS, one per level: cochlea = ELECTROCOCHLEOGRAPHY · nerve and brainstem = ABR · subcortical centres = MIDDLE LATENCY RESPONSE · auditory cortex = CORTICAL AUDITORY POTENTIALS.**\n\n||**OAE**|**ABR (BERA)**|\n|---|---|---|\n|What|**low-level sounds from COCHLEAR HAIR CELL movement**, spontaneous or **evoked**; a **MICROPHONE in the external canal**|**electrical voltages from the BRAINSTEM AUDITORY PATHWAY**; **electrodes on the skull**|\n|Reaches|**the COCHLEA only** — not nerve, brainstem or cortex|**auditory nerve → PONS → MIDBRAIN (inferior colliculus)** via the lateral lemniscus — **NOT the AUDITORY CORTEX**|\n|Use|**IDEAL FOR NEONATAL SCREENING** — easy and fast|**thresholds in NEWBORNS, INFANTS, MENTAL RETARDATION, MALINGERERS**; **neural conduction in space-occupying lesions and MS**|\n\n- **Both are OBJECTIVE, needing no cooperation** — so *“ABR or OAE?”* is usually **both**.\n- **INFANT PATHWAY: OAE screen → fail → repeat → still fail → TYMPANOMETRY + ABR.** Tympanometry because **effusion abolishes OAEs behind a normal drum**; ABR gives the threshold. **Never wait for play audiometry at three; never reassure.**\n- **Tympanometry is objective but reads the MIDDLE EAR, not hearing** — never the answer to *“assess hearing in a neonate”*. **PTA, speech and behavioural/free-field audiometry need cooperation.**\n- **ACOUSTIC NEUROMA on ABR: WAVE I PRESERVED, WAVE V DELAYED, INTERWAVE LATENCIES PROLONGED** — the lesion is distal to the brainstem. **MRI is the gold standard** *(not in course material)*.\n- **Normal OAE with an absent ABR = AUDITORY NEUROPATHY** *(not in course material)*.\n\nSrc: L13,14; L19.1",
+        "qs": [
+          "entep-ear-12",
+          "entep-ear-23",
+          "entep-ear-33",
+          "entep-ear-64",
+          "entep-ear-134",
+          "entep-enr-4",
+          "entqb-ear8-214",
+          "entqb-ear8-215",
+          "entqb-ear8-233"
+        ]
+      },
+      {
+        "id": "aud-9",
+        "w": "high",
+        "h": "Otoscopy — the colour behind an intact drum",
+        "body": "**Otoscopy precedes every instrument.** Behind an INTACT drum the colour is the diagnosis *(table not in course material beyond the two lines cited)*.\n\n|Colour|Lesion|Decider|\n|---|---|---|\n|**RED, pulsatile**|**GLOMUS TUMOUR (paraganglioma)**|**PULSATILE TINNITUS**; **BROWN’S SIGN** — blanches on pneumatic pressure. **Image it, NEVER biopsy**|\n|**WHITE pearl**|**CONGENITAL CHOLESTEATOMA**|a child, **NO perforation, NO discharge**, still erosive|\n|**AMBER or straw, bubbles, hairline**|**middle-ear effusion**|type B, low canal volume|\n|**BLUE**|**haemotympanum**, or a **high (dehiscent) jugular bulb**|trauma; or a variant that bleeds if incised|\n\n- **Tympanosclerosis is white but lies WITHIN the drum**, as chalky plaques.\n- **Otosclerosis leaves the drum NORMAL** — diagnosed by the audiogram and a type As trace. Schwartze’s sign, a flamingo-pink promontory flush, is the rare exception.\n\nSrc: paragangliomas as pulsatile tinnitus L19.2; glomus as bloody otorrhoea L17,18; the remainder not in course material",
+        "qs": [
+          "entqb-ear8-221",
+          "entqb-ear8-222"
+        ]
+      },
+      {
+        "id": "aud-10",
+        "w": "high",
+        "h": "Vestibular evaluation — office tests and laboratory tests",
+        "body": "**HISTORY → PROVOCATIVE TESTING → EXAMINATION → INVESTIGATIONS → specialty consultation. Examination rarely diagnoses but confirms; vestibular tests CONFIRM, they do not diagnose.**\n\n|Provocative test|Provokes|\n|---|---|\n|**Rotation-induced (RCT)**|rotational stimulus to the canals|\n|**POSITIONING — DIX-HALLPIKE**|**BPPV, posterior semicircular canal**; treated by the **EPLEY manoeuvre** *(both names not in course material)*|\n|**Orthostatic — bedside tilt**|presyncope, postural hypotension|\n|**Hyperventilation**|non-vestibular and psychogenic dizziness|\n|**FISTULA TEST**|**Siegle’s speculum or TRAGAL COMPRESSION.** Vertigo and nystagmus on pressure = **third-window / labyrinthine fistula** (CSOM with fistula)|\n\n|Laboratory test|Tests|\n|---|---|\n|**CALORIC TEST**|**the LATERAL (horizontal) SEMICIRCULAR CANAL, ONE LABYRINTH AT A TIME** — the only test examining each ear separately. **Cold 30 °C, warm 44 °C; COWS — Cold Opposite, Warm Same**, the FAST phase *(not in course material)*|\n|**ENG / VNG**|records **eye movements and nystagmus**; the caloric runs inside it|\n|**vHIT**|video head impulse test — high-frequency canal function|\n|**VEMP**|**the OTOLITH organs, UTRICLE and SACCULE** — LINEAR acceleration, which no caloric reaches|\n|**Posturography**|whole-body balance|\n\n- **Match receptor to test: SEMICIRCULAR CANALS (crista, ANGULAR) → caloric, vHIT · UTRICLE and SACCULE (maculae, LINEAR) → VEMP.**\n- Workup also carries **audiological, radiological and laboratory** investigations and **eye examination for nystagmus**.\n\nSrc: L13,14; fistula test and investigation categories L20; receptor pairing L22",
+        "qs": [
+          "entep-ear-128"
+        ]
+      }
+    ]
   }
 };
