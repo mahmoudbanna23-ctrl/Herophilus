@@ -101,15 +101,49 @@ three. Filed wrongly, the cardiac chapter loses exactly the lesions the exam ask
 `CLAUDE.md` §4 — *answer the gap, never declare it.* **Do not raid `dev-problems`' content for it;
 cross-reference instead, and register anything genuinely moved.**
 
-**3. Three decks exist but cannot be read as text. The user chose a VISUAL READ for all three**
-(2026-08-14). Render at 110 dpi and read **FOUR-UP CONTACT SHEETS** — 10 reads instead of 40, and
-headings stay legible at 760 px per slide. This recovered two ENT decks the same way.
+**3. ⚠️⚠️ THE VISUAL READ IS STANDARD FOR EVERY CHAPTER — NOT A SPECIAL CASE FOR THREE DECKS.**
 
-| Deck | Chapter | State |
-|---|---|---|
-| `42)Viral hepatits_.pdf` | `liver` | 44 pages, **44 characters extract** — pure images. Not cached at all. |
-| `44)BM FAILURE.pdf` | `haematology` | 54 pages, **326 words = 6.0 w/page**. Cached but effectively empty. |
-| `25)Immunodeficiency_.pdf` | `infection` | 58 pages, **560 words = 9.7 w/page**. Same shape. |
+This plan first scheduled visual reads for three decks. **That was far too narrow.** Measured across
+all 66 decks (`imgdep.js` — convert every `.pptx` via PowerPoint COM, then count slides whose
+extracted text is under 5 words): **30 decks are ≥25 % pictures, and every chapter carries 8–66 %
+image-dependent content.** The three scheduled were indeed the worst, but they are the head of a
+long tail, not the whole of it.
+
+**The `gastroenterology` agent proved the value unprompted.** It converted its decks and read the 45
+blank slides as contact sheets — about 20 minutes — and recovered, **as sourced rather than tagged**:
+the full **Rome IV** functional-constipation criteria, the **Bristol scale**, the ORS cotransport
+mechanism, the 13-sign dehydration plate, the surgical/medical/extra-abdominal classification, the
+diagnosis-by-age grid, **INSPPIRE criteria**, and **Cullen's and Turner's signs by name**. Roughly
+twenty claims moved from *"not in course material"* to cited. That is the whole argument.
+
+**The recipe** — render at 110 dpi, read **FOUR-UP CONTACT SHEETS** (10 reads instead of 40; headings
+stay legible at 760 px per slide). For a `.pptx`, convert first with PowerPoint COM, **opening
+read-only and exporting to the scratchpad** — `Semester 8\` is never written to. **⚠️ Use a FRESH COM
+instance per file:** one bad deck (`14) Puberty`) crashed the session and cascaded twelve failures.
+
+**Blank-slide share by chapter, all decks pooled** — read this before writing:
+
+| ≥30 % | | 20–30 % | | <20 % | |
+|---|---:|---|---:|---|---:|
+| `liver` | 66 % | `respiratory` | 30 % | `endocrine` | 20 % |
+| `infection` | 60 % | `growth-puberty` | 28 % | `neurological` | 20 % |
+| `cardiac` | 41 % | `normal-dev` | 27 % | `accidents` | 13 % |
+| `perinatal` | 39 % | `malignant` | 24 % | `genetics` | 8 % |
+| `haematology` | 38 % | `neonatal` | 23 % | | |
+| `allergy` | 33 % | `dev-problems` | 23 % | | |
+| `nutrition` | 32 % | `renal` | 22 % | | |
+| `emergencies` | 31 % | | | | |
+| `gastroenterology` | 30 % | | | | |
+
+Worst individual decks: `42)Viral hepatits_` **100 %**, `19 and 20) INFECTIOUS DISEASES` **95 %**,
+`44)BM FAILURE` **78 %**, `36)Myocardial diseases` **72 %**, `25)Immunodeficiency_` **58 %**,
+`34)Students Obstructive diseases` **52 %**, `17) Vitamin D Defficiency Rickets(1)` **50 %**.
+
+**⚠️ A VISUAL-READ PATCH IS OWED ON THE THREE CHAPTERS WRITTEN BEFORE THIS WAS KNOWN** — `cardiac`
+(41 %, four of its five decks affected, and its own agent recorded the Kawasaki criteria as
+unrecovered), `respiratory` (30 %, partly mitigated: its agent recovered content from the duplicate
+pneumonia handout rather than from the images) and `renal` (22 %). **It is a diff, not a rewrite** —
+read the blank slides, report what is missing, patch the sections.
 
 **4. ⚠️ THE NUMBERING GAPS ARE NOT MISSING FILES — 21, 28, 29 and 57 WERE NEVER GIVEN OUT.** The
 user, 2026-08-14: *"The missing lectures were not given to me by the professor."* Do not hunt for
