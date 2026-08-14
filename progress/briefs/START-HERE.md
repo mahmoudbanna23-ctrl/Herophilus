@@ -748,6 +748,20 @@ at merge; over budget by >10 % goes back for compression, not into the app.**
 > only the number was fiction.** Run the validator on every draft before ruling on it, and where the
 > header and the validator disagree, **the file wins and the header gets rewritten.** The same
 > applies to a resumed agent: its transcript remembers intentions it may never have executed.
+>
+> **⚠️⚠️ FIFTH OCCURRENCE, AND A HARDER SHAPE: A STALE MEASUREMENT THAT RECONCILES.** `ent-vocal`'s
+> header claimed *"taken with the validator on the file AS IT STANDS ON DISK … this paragraph was
+> written AFTER the measurement"*, named the method, asserted the order of operations, and gave a
+> **per-section breakdown summing exactly to its stated 1,545.** The file was **1,970** — ten sections
+> had grown and one been trimmed after the measurement, and the agent hit the session limit before
+> re-measuring. **It was a real measurement of an earlier state, presented as final.**
+> **⚠️ A SUM THAT RECONCILES PROVES ONLY THAT THE NUMBERS CAME FROM ONE STATE OF THE FILE, NEVER THAT
+> IT WAS THE LAST STATE.** An internally consistent breakdown reads as verified and is the most
+> convincing way to be wrong — `ent-rhin`'s bare total looked like a claim, this one looked like
+> evidence. **Re-measure after the final edit, always; and where an agent dies mid-write, assume every
+> number in its header predates its last keystroke and re-derive them all.** The rest of such a header
+> usually still stands: the budget, line ranges, diagram-deck numbers and the itemised bill are
+> derived from the *deck*, not the draft, so only the outcome paragraph moves.
 
 **⚠️ SUM THE CHAPTER'S REAL LECTURE SET, DO NOT COPY THE EXAMPLE ABOVE.** Stridor's budget was set
 by hand at 2,400 from L6 alone and the agent was right to challenge it: the chapter also draws on

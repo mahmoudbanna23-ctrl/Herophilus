@@ -4245,5 +4245,297 @@ var T_ENT = {
         ]
       }
     ]
+  },
+  "ent-vocal": {
+    "intro": "Not a disease — a sign of one, so half the work is finding the cause. Two axes decide every answer: which nerve, which sets the cord position; and one cord or two, which decides whether the voice or the airway is the emergency. They point opposite ways.",
+    "sections": [
+      {
+        "id": "voc-1",
+        "w": "must",
+        "h": "What it is, which nerve does what, and the four incidence rules",
+        "body": "**Vocal cord paralysis = immobility of the true cords secondary to INTERRUPTION OF THE NERVE SUPPLY to the laryngeal musculature.** It is **“a sign of another disease”** — **neurological · iatrogenic / traumatic · inflammatory.** An immobile cord that is not denervated is FIXATION (blocked joint or invading tumour) — that list is hoarseness’ own.\n\n|Nerve|Motor|Sensory|\n|---|---|---|\n|**SLN — external branch**|**CRICOTHYROID ONLY** — the tensor|none|\n|**SLN — internal branch**|none|**above the cords**|\n|**RECURRENT LARYNGEAL NERVE**|**ALL intrinsic muscles EXCEPT cricothyroid**|**below the cords**|\n\n- **Actions: one abductor — POSTERIOR CRICOARYTENOID.** Adductors — lateral cricoarytenoid, transverse and oblique interarytenoid. **Tensor — cricothyroid** (also has an adductor effect). **Relaxant — thyroarytenoid.** Full laryngeal anatomy is written under pharyngeal and laryngeal anatomy.\n- **THE FOUR INCIDENCE RULES.** **Unilateral > bilateral** · **bilateral is more symptomatic** · **LEFT is commoner than right — the left RLN has the longer course** · palsy is either **ABDUCTOR** (cord fixed **NEAR the midline**) or **ADDUCTOR** (cord fixed **AWAY from the midline**).\n\nSrc: L11 lines 22–66; anatomy cited from L1.1 slides 14–15 (written under laryngeal anatomy)",
+        "qs": [
+          "entqb-thr7-360",
+          "entqb-thr1-25"
+        ]
+      },
+      {
+        "id": "voc-2",
+        "w": "must",
+        "h": "Where the lesion is decides where the cord sits",
+        "body": "**The single most examined mechanism in the chapter. The cricothyroid is the tie-breaker: spared, it holds the cord PARAMEDIAN; lost as well, the cord falls to CADAVERIC.**\n\n|Lesion|Muscles paralysed|Cord position|Result|\n|---|---|---|---|\n|**RLN alone** — thyroidectomy, neck trauma, chest disease|all intrinsics **except cricothyroid**|**PARAMEDIAN**|**unilateral: hoarse, airway safe. BILATERAL: STRIDOR, voice near normal**|\n|**VAGUS trunk** — at or above the skull base, i.e. **RLN + SLN both lost**|**ALL** intrinsics, plus sensation above the cords|**CADAVERIC (intermediate)**|**hoarse / aphonic PLUS ASPIRATION** — the cord cannot reach the midline and the larynx cannot feel|\n|**SLN external branch alone**|**cricothyroid only**|cord mobile, normal position|**LOSS OF HIGH-PITCHED VOICE**, vocal fatigue. The “singer’s nerve”, injured on the superior thyroid pedicle *(name not in course material)*|\n\n**The four named positions** *(only PARAMEDIAN and CADAVERIC are named by the lecture; median and abducted are supplied — no cached deck names them):*\n\n|Position|Where the cord sits|Put there by|\n|---|---|---|\n|**MEDIAN**|at the midline|normal phonation|\n|**PARAMEDIAN**|just off the midline|**RLN palsy**|\n|**CADAVERIC / intermediate**|between adduction and abduction|**vagal / high lesion — RLN + SLN**|\n|**ABDUCTED**|fully open|normal quiet respiration|\n\n- **A skull-base or jugular-foramen lesion gives a CADAVERIC cord**, because it catches the vagus above both laryngeal branches — hoarseness **plus** aspiration, against the paramedian cord and safe swallow of an isolated RLN palsy. Osteolytic skull-base metastasis is the classic vignette; the jugular-foramen eponymous syndromes are named but not examined *(not in course material)*.\n\nSrc: L11 lines 67–78 (pathophysiology) and 43–54 (nerve supply); L1.1 slide 15",
+        "qs": [
+          "entqb-thr1-21",
+          "entqb-thr1-22",
+          "entqb-thr1-25",
+          "entqb-thr1-39",
+          "entqb-thr7-360"
+        ]
+      },
+      {
+        "id": "voc-3",
+        "w": "must",
+        "h": "The axis — one cord or two, abductor or adductor",
+        "body": "**The lecture’s own grid. Learn it as a square, not as sentences — the bank asks all four cells and asks them backwards.**\n\n||**BILATERAL**|**UNILATERAL**|\n|---|---|---|\n|**ABDUCTOR paralysis** *(cords near the midline)*|**STRIDOR · NORMAL VOICE**|**passes unnoticed** · mild aspiration|\n|**ADDUCTOR paralysis** *(cords away from the midline)*|**ASPIRATION · APHONIA**|**DYSPHONIA** · aspiration|\n\n|                     |**UNILATERAL**|**BILATERAL**|\n|---|---|---|\n|Voice|**bad** — breathy, weak, hoarse (adductor); or near normal (abductor)|**good or normal** if abductor; **aphonic** if adductor|\n|Airway|**safe**|**the emergency** — stridor if abductor|\n|Aspiration|adductor palsy, mild|adductor palsy, severe|\n|Urgency|outpatient|**abductor = secure the airway now** · adductor = protect the chest|\n|Management direction|**move the cord IN** — medialise|**move the cord OUT** — lateralise, or divert feeding|\n\n- **BREATHY, WEAK VOICE = a GLOTTIC GAP = ADDUCTOR palsy** — the cord cannot reach the midline and air escapes on phonation.\n- **STRIDOR WITH A NORMAL VOICE = BILATERAL ABDUCTOR palsy** — both cords paramedian, a slit that phonates well and breathes badly. **Never let the normal voice reassure you.**\n- **Defect: the endpoint bank keys “hoarseness with aspiration” for bilateral adductor palsy and reaffirms it in its own errata; L11 prints “Aspiration / Aphonia”. Key as printed, know the slide.**\n\nSrc: L11 lines 103–112",
+        "qs": [
+          "entep-throat-2",
+          "entep-throat-4",
+          "entep-throat-7",
+          "entep-throat-33",
+          "entep-throat-36",
+          "entep-mfe5-20",
+          "entep-mfe5-21",
+          "entqb-thr1-34",
+          "entqb-thr1-21"
+        ]
+      },
+      {
+        "id": "voc-4",
+        "w": "must",
+        "h": "Aetiology — the anatomical framework, and the surgical list",
+        "body": "**Six groups, followed from the skull base down. IDIOPATHIC (? viral) is listed FIRST by the lecture.**\n\n|Group|Causes|\n|---|---|\n|**IDIOPATHIC**|**? viral** — the lecture’s first line|\n|**INTRACRANIAL & SKULL BASE**|**CVS (stroke)** · tumours · meningitis · trauma|\n|**CERVICAL — iatrogenic**|**THYROIDECTOMY** · parathyroidectomy · **Zenker’s diverticulum** surgery · **cricopharyngeal myotomy**|\n|**CERVICAL — trauma**|external trauma · **intubation** · *(clothesline injury — a horizontal band across the front of the neck, classically with cricotracheal separation, is the mechanism that takes BOTH recurrent nerves at once; not in course material)*|\n|**CERVICAL — tumours**|**cancer thyroid** · **upper oesophageal carcinoma**|\n|**THORACIC — LEFT SIDE ONLY**|**bronchogenic carcinoma** · mediastinal lymph node · oesophageal carcinoma · **apical fibrosis / TB** · iatrogenic — **cardiac, oesophageal or lung surgery** · **dilated left atrium = ORTNER’S SYNDROME**|\n|**SYSTEMIC**|**peripheral neuritis** · **MYASTHENIA GRAVIS**|\n|**CONGENITAL**|see below|\n\n**The stridor lecture’s second axis — the same disease sorted by mechanism rather than by level:**\n\n|Neurological|Surgical|\n|---|---|\n|**1 CENTRAL** · **2 PERIPHERAL** — traumatic · **neuritis** · **neuropathy** · **neoplastic** · idiopathic|**1 neck / laryngeal trauma** · **2 thyroid surgery** · **3 R.N.D (radical neck dissection)** · **4 tracheostomy** · **5 scalene lymph node biopsy**|\n\n- **Post-thyroidectomy is the vignette to recognise on sight.** Hoarseness from the moment of waking, one cord immobile, **no stridor** = unilateral RLN injury — the nerve runs in the tracheo-oesophageal groove behind the gland. Stridor needing an airway = both nerves.\n\nSrc: L11 lines 79–102; L6 lines 443–453",
+        "qs": [
+          "entqb-thr7-336",
+          "entqb-thr7-360",
+          "entqb-thr7-361",
+          "entep-throat-case-22",
+          "entep-throat-94"
+        ]
+      },
+      {
+        "id": "voc-5",
+        "w": "must",
+        "h": "The rankings and the percentages",
+        "body": "**Numbers the framework slide does not print, and every one of them is a key.**\n\n|**UNILATERAL — malignant, ranked**|\n|---|\n|**1st BRONCHOGENIC CARCINOMA (left RLN)**|\n|**2nd THYROID CANCER**|\n|**3rd OESOPHAGEAL**|\n|**4th SKULL BASE** — e.g. **glomus**|\n\n|Unilateral, non-malignant|\n|---|\n|**Surgery: thyroidectomy · neck dissection · anterior cervical spine procedures · cardiothoracic approaches**|\n|**Idiopathic**|\n|**Non-surgical trauma: cricotracheal separation, cut throat**|\n|**Endotracheal intubation**|\n|**Neurologic, four levels: A central motor disorders · B anterior horn cell disorders · C peripheral nerve · D neuromuscular junction**|\n|**Mediastinal and cardiac: mediastinal TUBERCULOSIS · AORTIC ANEURYSM · right atrial hypertrophy · cor pulmonale**|\n\n|**BILATERAL**|**%**|\n|---|---|\n|**IATROGENIC**|**80 %**|\n|**MALIGNANCY**|**10 %**|\n|**NEUROLOGIC**|**5 %**|\n|Intubation · idiopathic (congenital bilateral) · endocrine/metabolic — **diabetes mellitus, hypokalaemia, hypocalcaemia**|—|\n\n- **THYROID SURGERY IS THE COMMONEST CAUSE OF BILATERAL PALSY** — iatrogenic is 80 %, and a total thyroidectomy risks both nerves at once. Both cords rest paramedian: **normal voice, obstructed airway.**\n- **The other airway emergency after the same operation is HYPOCALCAEMIC TETANY**, treated with calcium, not surgery.\n\nSrc: L2 lines 428–470; L6 line 482 (tetany)",
+        "qs": [
+          "entqb-thr8-394",
+          "entep-throat-94"
+        ]
+      },
+      {
+        "id": "voc-6",
+        "w": "high",
+        "h": "Left against right — which causes can only be left",
+        "body": "**The left RLN loops under the AORTIC ARCH and so enters the chest; the right loops under the SUBCLAVIAN ARTERY and stays in the neck** *(the loops themselves are not in course material — what the lecture states is that the thoracic causes are “left side only” and that the left nerve has the longer course).* Everything else follows.\n\n|Cause|Side|\n|---|---|\n|**Aortic aneurysm**|**LEFT ONLY**|\n|**Bronchogenic carcinoma**|**LEFT ONLY** (left RLN)|\n|**Dilated left atrium — Ortner’s**, right atrial hypertrophy, cor pulmonale, mediastinal nodes, apical TB|**LEFT ONLY** — all intrathoracic|\n|Cardiac, oesophageal, lung surgery|**LEFT ONLY**|\n|**Thyroid surgery, thyroid cancer**|**either**|\n|**Radical neck dissection**|**either**|\n|**Postcricoid and upper oesophageal carcinoma**|**either**|\n|Neck trauma, intubation, skull base, idiopathic|**either**|\n\n- **So the EXCEPT question writes itself: in a RIGHT-sided palsy, the only impossible cause on a list of neck causes is the intrathoracic one.** And left palsy being commoner overall is the same anatomy read forwards.\n\nSrc: L11 lines 84–99; L2 lines 428–455",
+        "qs": [
+          "entep-throat-94"
+        ]
+      },
+      {
+        "id": "voc-7",
+        "w": "high",
+        "h": "Congenital vocal cord paralysis",
+        "body": "**Numbers: 10 % of congenital laryngeal lesions · bilateral : unilateral = 1 : 4 · commonly UNILATERAL and ON THE LEFT.**\n\n|                |**UNILATERAL (Lt > Rt)**|**BILATERAL**|\n|---|---|---|\n|Causes|congenital **cardiovascular anomalies — VSD, Fallot’s tetralogy, PDA** · surgery for **T-E fistula**, congenital heart disease, cervical oesophagostomy|**CENTRAL — meningomyelocele, ARNOLD-CHIARI malformation, bulbar palsy** · **birth trauma** — prolonged 2nd stage, **forceps** · hereditary, very rare|\n|Presentation|**WEAK HOARSE CRY AND COUGH**, hoarseness · **mild stridor** · aspiration of pharyngeal secretions, choking and cyanotic attacks on feeding|**attacks of stridor OR aspiration, depending on the position of the cords.** Severe inspiratory stridor **immediately after birth**, better asleep, worse on activity; usually needs tracheotomy|\n|Treatment|**none — resolves spontaneously**|**tracheotomy and follow-up**, then arytenoidectomy or cordotomy|\n\n- **⚠️ THE HEIGHT RULE, IN AN INFANT: ASPIRATION MEANS THE LESION IS PROXIMAL TO THE ORIGIN OF THE SUPERIOR LARYNGEAL NERVE.** Same principle as the cadaveric cord in an adult — above the SLN, the larynx loses its sensation as well as its adductors.\n- **THE NEWBORN DISCRIMINATOR — only a lesion ON the cords changes the CRY.** **Weak, breathy or hoarse cry from birth = vocal cord palsy.** Laryngomalacia — **normal cry**, stridor from a few weeks. Subglottic stenosis — **normal cry**, present at birth, biphasic. Subglottic haemangioma — **~6 months**, as it proliferates. Tracheomalacia — extralaryngeal, cry normal. The full grid of the other congenital lesions is written under paediatric laryngeal lesions.\n\nSrc: L2 lines 259–273; L6 lines 216–248; L12 (cry discrimination)",
+        "qs": [
+          "entqb-thr5-294"
+        ]
+      },
+      {
+        "id": "voc-8",
+        "w": "high",
+        "h": "Diagnosis = searching for the cause",
+        "body": "**The cord is the sign. The diagnosis is whatever cut the nerve, so the work-up follows the nerve from skull base to mediastinum.**\n\n|Step|What for|\n|---|---|\n|**History**|**CVS, trauma, surgery, intubation, systemic disease**|\n|**Neck examination**|**thyroid swelling · lymph nodes · scar of previous surgery**|\n|**Endoscopy + BIOPSY of suspicious lesions**|**larynx, pharynx, trachea and oesophagus**|\n|**Radiology**|**chest X-ray** · **CT brain, skull base, neck AND CHEST** — the whole course of the nerve|\n|**LARYNGEAL EMG, 1–6 MONTHS after onset**|**paresis or paralysis**; on follow-up, **regeneration or progressive degeneration** — it is what decides whether to wait or to operate|\n\n- **EMG plus passive mobility of the arytenoid at endoscopy separates PALSY from ARYTENOID DISLOCATION or joint fixation** *(not in course material)* — a fixed joint moves on neither, a paralysed cord moves passively.\n\nSrc: L11 lines 113–130",
+        "qs": [
+          "entqb-thr7-360",
+          "entqb-thr7-361"
+        ]
+      },
+      {
+        "id": "voc-9",
+        "w": "must",
+        "h": "Management — UNILATERAL: move the cord IN",
+        "body": "**The airway is safe, so nothing is urgent. The problem is a glottic gap, and every step closes it.**\n\n|Step|Detail|\n|---|---|\n|**1 FOLLOW UP 6 MONTHS**|for **spontaneous recovery or compensation** — the other cord crosses the midline|\n|**2 VOICE THERAPY**|first active treatment|\n|**3 INJECTION AUGMENTATION**|**for a VOICE GAP OF 1–3 mm.** **Temporary — autologous:** fat, collagen, fascia; **heterogeneous:** hyaluronic acid. **Permanent / long-lasting:** **hydroxyapatite (Radiesse voice)**. Teflon is also listed|\n|**4 FRAMEWORK SURGERY**|**MEDIALIZATION LARYNGOPLASTY = TYPE 1 THYROPLASTY** — pushes the paralysed cord medially so it phonates and the gap closes|\n\n- **Never operate early.** Six months of observation exists because the nerve may recover, and a permanent medialisation on a cord that then recovers is a second problem.\n- **Tracheostomy has no place in unilateral palsy** — the airway was never the issue.\n- **Defect: a Grade Gain box gives “6–12 months” of observation where L11 says “Follow-up for 6 months”. Key as printed.**\n\nSrc: L11 lines 131–148; L2 lines 566–575 (thyroplasty type 1, injection agents)",
+        "qs": [
+          "entqb-thr7-361",
+          "entqb-thr7-362",
+          "entep-throat-case-22"
+        ]
+      },
+      {
+        "id": "voc-10",
+        "w": "must",
+        "h": "Management — BILATERAL ABDUCTOR: airway first, then move the cords OUT",
+        "body": "**Both cords paramedian. The voice is fine and the patient is suffocating.**\n\n|Step|Detail|\n|---|---|\n|**1 CARE OF THE AIRWAY**|**endotracheal intubation · TRACHEOSTOMY** — before anything else, always|\n|**2 FOLLOW UP 6 MONTHS**|for spontaneous recovery|\n|**3 LATERALIZATION**|**external arytenoidectomy** · **endoscopic arytenoidectomy** · **POSTERIOR CORDOTOMY (laser)** — removes the posterior cord, spares the anterior, widens the glottis and allows decannulation|\n|**4 LARYNGEAL RE-INNERVATION**|—|\n\n- **⚠️ THE INVERSION TRAP, BOTH WAYS. Lateralisation buys airway at the cost of voice; medialisation buys voice at the cost of airway.** Posterior cordotomy on the unilateral weak-voiced patient destroys the voice they came about; injection or thyroplasty on the bilateral patient closes the airway further. **Read the number of cords before the operation.**\n- **Defect: the bank writes “posterior cordectomy” where L11 writes “posterior cordotomy” and captions its figure “Posterior laser cordotomy”. Same operation, key as printed.**\n- **Defect: one paediatric bilateral-palsy vignette keys “Bronchoscope” as the first line where L11 lists intubation then tracheostomy. Key as printed; the defensible reading is rigid endoscopy under GA used as an airway.** The infant subglottis is narrow and decompensates fast.\n\nSrc: L11 lines 149–166",
+        "qs": [
+          "entep-mfe5-22",
+          "entqb-thr7-363",
+          "entqb-thr7-364",
+          "entqb-thr7-367",
+          "entep-throat-case-23",
+          "entqb-thr1-34",
+          "entep-mfe5-21"
+        ]
+      },
+      {
+        "id": "voc-11",
+        "w": "high",
+        "h": "Management — BILATERAL ADDUCTOR: the chest, not the airway",
+        "body": "**Both cords away from the midline. The glottis never closes: aphonia, and a lower airway with nothing guarding it. Nobody obstructs — they aspirate.**\n\n|Step|Detail|\n|---|---|\n|**1 CARE OF FEEDING**|**nasogastric tube · GASTROSTOMY**|\n|**2 CARE OF THE CHEST**|aspiration pneumonia is what kills|\n|**3 SURGERY**|**LARYNGEAL CLOSURE** · **TRACHEAL DIVERSION** — both separate the airway from the food passage and both sacrifice the voice|\n\nSrc: L11 lines 167–179",
+        "qs": [
+          "entep-mfe5-20",
+          "entep-throat-2",
+          "entep-throat-36"
+        ]
+      }
+    ]
+  },
+  "ent-epistaxis": {
+    "intro": "Two subjects, each answered by one axis. The bleeding is answered by SITE — Little’s area in front, Woodruff’s and the sphenopalatine behind, the ethmoidals above — and by AGE. The smell loss is answered by VOCABULARY, and by one split: an obstacle, or damage.",
+    "sections": [
+      {
+        "id": "epi-1",
+        "w": "must",
+        "h": "Why the nose bleeds, and the three places it bleeds from",
+        "body": "**Epistaxis = bleeding from the nose.**\n\n**Why this organ:** highly vascular for **heating and humidification** · **vasculature just under the mucosa** (not squamous) · **arterio-venous anastomoses** · fed by **both carotids**.\n\n**Bimodal, two peaks: childhood**, usually **Little’s area** · the **fifth or sixth decade**, **frequently associated with hypertension**.\n\n|Site|Share|Source|\n|---|---|---|\n|**Anterior**|**>90 % — much the commonest type**|**Little’s area / Kiesselbach’s plexus**, septal|\n|**Posterior**|the remainder|**Woodruff’s plexus**, from the **sphenopalatine or a branch**|\n|**Superior**|—|**anterior and posterior ethmoidal vessels**|\n\nSrc: L25.1",
+        "qs": [
+          "entqb-nose2-52",
+          "entqb-nose2-71",
+          "entqb-nose2-54"
+        ]
+      },
+      {
+        "id": "epi-2",
+        "w": "must",
+        "h": "Little’s area, Woodruff’s plexus, and the four arteries",
+        "body": "**Little’s area:** the **anterior inferior nasal septum, just above the vestibule**, where **four arteries anastomose to form Kiesselbach’s plexus**. Exposed to **the drying effect of the inspiratory current and to finger-nail trauma** — **the usual site of epistaxis in children and young adults**.\n\n|Artery of Kiesselbach’s plexus|Parent trunk|Carotid|\n|---|---|---|\n|**Anterior ethmoidal**|**ophthalmic**|**INTERNAL**|\n|**Sphenopalatine** (septal branch)|**maxillary — a TERMINAL branch**|external|\n|**Greater palatine**|**maxillary**|external|\n|**Septal branch of the superior labial**|**facial**|external|\n\n- **The POSTERIOR ethmoidal artery is NOT part of it** — the odd one out in every printing. And there is **no such vessel as a \"nasolabial artery\"**.\n- Little’s area is therefore an **internal-to-external carotid anastomosis**.\n\n**Woodruff’s plexus:** a **vascular network on the LATERAL WALL, POSTERIOR TO THE INFERIOR TURBINATE** — an anastomosis of the **ascending pharyngeal** and the **posterior nasal branches of the sphenopalatine**, **generally considered responsible for posterior epistaxis**.\n\n**The sphenopalatine is \"the artery of epistaxis\"**, the main source of nose bleeding: a **terminal branch of the third part of the maxillary**, from the **external carotid**. The maxillary’s other terminals — **vidian (pterygoid canal) · palatovaginal (pharyngeal) · posterior lateral nasal · descending palatine**. The **facial** gives the **superior labial** (alar + septal branches), plus the lateral nasal and angular arteries to the **external** nose.\n\n- **The ethmoidals are the nose’s ONLY internal-carotid supply**, reaching it via the **ophthalmic** — so **external carotid ligation cannot stop a superior bleed** *(consequence not in course material)*.\n- The **retrocolumellar vein**, at the front of the septum, is a real but uncommon anterior bleeding point *(not in course material)*.\n\nSrc: L25.1; L23 (its plexus slide, cited)",
+        "qs": [
+          "entep-nose-13",
+          "entep-nose-53",
+          "entep-nose-65",
+          "entep-nose-89",
+          "entqb-nose1-21",
+          "entqb-nose2-51",
+          "entqb-nose2-68",
+          "entqb-nose2-55",
+          "entep-nose-3",
+          "entep-mfe5-16",
+          "entqb-nose2-49",
+          "entqb-nose2-53"
+        ]
+      },
+      {
+        "id": "epi-3",
+        "w": "must",
+        "h": "Anterior versus posterior — the grid the examiner uses",
+        "body": "**Definition of posterior epistaxis:** bleeding arising **so far posteriorly that the site cannot be identified by anterior inspection, or controlled by an anterior pack**. That sentence is the discriminator, not the anatomy.\n\n|  |Anterior|Posterior|\n|---|---|---|\n|**Share**|**>90 %**|the remainder|\n|**Site**|**septal — Little’s area**|**lateral wall / choana, far back**|\n|**Plexus**|**Kiesselbach’s**|**Woodruff’s**|\n|**Vessel**|four-artery anastomosis|**sphenopalatine or a branch**|\n|**Typical patient**|**younger; a child**|**elderly HYPERTENSIVE**|\n|**Severity**|**typically less severe**|severe, recurrent, both cavities fill|\n|**Seen on anterior rhinoscopy?**|**yes**|**NO — that is the definition**|\n|**Held by an anterior pack?**|**yes**|**NO**|\n\n- **Older adult, severe recurrent bleeding, both cavities full, NO local abnormality after aspiration** = posterior, **sphenopalatine**. Not a normal examination — one that cannot reach the site.\n- **Child, mild recurrent unilateral bleeding, congestion over the anterior septum** = idiopathic, **Little’s area**.\n- **Long-standing hypertension + acute severe bleeding** → the **sphenopalatine as it exits its foramen**, not Little’s area.\n\nSrc: L25.1",
+        "qs": [
+          "entep-mfe4-13",
+          "entep-nose-case-20",
+          "entep-nose-case-21"
+        ]
+      },
+      {
+        "id": "epi-4",
+        "w": "must",
+        "h": "Aetiology — four groups, five omens, and the age map",
+        "body": "**Four groups: I idiopathic · II local · III systemic · IV environmental.**\n\n- **IDIOPATHIC is the commonest cause overall AND of anterior epistaxis.** The deck’s own shorthand: **\"Severe + elderly patient = hypertension.\"**\n\n|Group|Causes|\n|---|---|\n|**Local**|**trauma** · **infectious/inflammatory** · **neoplasm** · **vascular** · **iatrogenic** · **structural** (septal spur or deviation — the lesion itself is in `ent-septum`) · **foreign bodies** · **nasal sprays** · other|\n|**Systemic**|**bleeding disorders** · **atherosclerosis and hypertension** · **renal disease** · **hormonal — vicarious menstruation** · **drugs: aspirin, NSAIDs, anticoagulants, nasal steroids**|\n|**— bleeding disorders, expanded**|**coagulopathies** (haemophilia, anticoagulants) · **thrombocytopenia** (hypersplenism, DIC) · **platelet dysfunction** (leukaemia, aspirin, von Willebrand’s) · **vasculitis (Osler–Weber)**|\n|**Environmental**|**desiccation — cold dry air, commoner in wintertime** · **dry heat**|\n\n|Age|Commonest cause|\n|---|---|\n|**Children**|**foreign body, nose picking** — **a third with chronic bleeds have a coagulation disorder**|\n|**Adults**|**trauma, idiopathic**|\n|**Middle age**|**tumours**|\n|**Old age**|**HYPERTENSION** — the severe posterior kind|\n\n- **Adolescent male + recurrent profuse UNILATERAL epistaxis ± a nasopharyngeal mass = juvenile angiofibroma until excluded** (lesion in `ent-nasalmass`). **Unilateral bleeding + foul discharge in a small child = foreign body.**\n- ⚠️ One printing keys the childhood cause **idiopathic**, another **nose picking**; neither menu offers the other’s answer, so each keys the best it prints — the umbrella and the mechanism inside it.\n\n**Prognostic factors (\"omens\"), five: I unilaterality · II frequency · III amount · IV duration (termination of the attack) · V accompanying complaints.**\n\nSrc: L25.1",
+        "qs": [
+          "entqb-nose1-23",
+          "entqb-nose2-56",
+          "entqb-nose1-24",
+          "entqb-nose2-57",
+          "entqb-nose2-58",
+          "entep-nose-61",
+          "entep-nose-31"
+        ]
+      },
+      {
+        "id": "epi-5",
+        "w": "must",
+        "h": "First aid, then assess",
+        "body": "**Initial management: ABC · medical history and medications · vital signs — does this patient need IV? · head bent FORWARD · cold compresses · spit out any blood · nose pinching.**\n\n**The method of choice: direct digital pressure to the LOWER SOFT CARTILAGINOUS part of the nose, pinched for approximately 10 minutes**, the patient **sitting and leaning forward**, **breathing through the mouth**, and may **suck on ice**.\n\n- **Head back is the classic wrong answer** — blood is **aspirated or swallowed**, giving haematemesis and hiding the true loss; supine and flat do the same *(not in course material)*. Pinching the **bony bridge** compresses nothing.\n\n**Then: anterior rhinoscopy · endoscopy · laboratory · radiology.** **Labs, for severe or recurrent bleeding: CBC · coagulation profile · liver function tests · creatinine · cross-match.**\n\n- **Bleeding that has already run 20 minutes has failed pressure — PACK it.** Cautery needs a visible bleeding point and there is none while the field is full of blood.\n\nSrc: L25.1",
+        "qs": [
+          "entqb-nose2-61",
+          "entep-nose-40",
+          "entqb-nose7-219"
+        ]
+      },
+      {
+        "id": "epi-6",
+        "w": "must",
+        "h": "Anterior bleeding — clear, cauterise, pack",
+        "body": "**The ladder: clear the clots → cotton soaked with decongestant → CAUTERY → anterior nasal pack.**\n\n**Cautery, four types: chemical · electric · laser (Nd-YAG) · cryotherapy.**\n\n**Chemical cautery: silver nitrate sticks over Little’s area**, after **topical anaesthetic by spray or impregnated swab**. **Lightly wipe the tip over the area of origin of the bleeding until it is discoloured GREY-WHITE** — light application cauterises the underlying vessels.\n\n- ⚠️ **NEVER cauterise both sides of the septum at one sitting — it perforates it.** The quadrilateral cartilage is avascular and feeds through the mucoperichondrium on each face; burning both faces at one point starves it. **Stage the second side 4–6 weeks later** *(complication and interval not in course material; the avascular cartilage is L24’s)*.\n\n**Anterior nasal pack.** Works **by pressure AND by creating mucosal oedema**. **Indications: cautery not available · cautery fails · bleeding site not identified.**\n\n- **Technique, the two facts that matter:** petrolatum (vaselinised) gauze advanced posteriorly **PARALLEL TO THE NASAL FLOOR**, layered **accordion-fashion** until the cavity is packed.\n- **Modern: biodegradable packs**, expanding sponges (Merocel), **nasal balloons** *(product names not in course material)*.\n- **Complications: uncomfortable · vasovagal attack on insertion AND on removal · secondary sinusitis · TOXIC SHOCK SYNDROME · induced rebleeding.**\n\n- ⚠️ **Adrenaline- or decongestant-soaked cotton is the one measure to AVOID in a hypertensive or cardiac patient** — absorbed systemically across nasal mucosa, it can precipitate a **hypertensive crisis**, tachycardia or arrhythmia. Merocel, balloons and vaselinised gauze are mechanical and carry no such risk *(caution not in course material — the deck lists decongestant cotton without one)*.\n\nSrc: L25.1; L24 (avascular septal cartilage)",
+        "qs": [
+          "entqb-nose9-264",
+          "entep-nose-14",
+          "entqb-nose2-62"
+        ]
+      },
+      {
+        "id": "epi-7",
+        "w": "high",
+        "h": "Posterior bleeding — packs, balloons, and what they cost",
+        "body": "**The ladder: deep anterior pack → antero-posterior pack → IMAX ligation / ethmoid ligation / ECA ligation, or embolisation.**\n\n**Complications of the posterior pack:** **uncomfortable · needs hospitalisation · Eustachian tube dysfunction and HAEMOTYMPANUM · hypoxia and cerebral ischaemia · MYOCARDIAL INFARCTION · toxic shock syndrome · FAILURE RATE 20–50 %.**\n\n**Prerequisites — not a bedside procedure: the elderly and the chronically ill may need ICU · continuous cardiopulmonary monitoring · antibiotics · oxygen · mild sedation/analgesia · IV fluids.**\n\n**Nasal balloon tamponade: pressure in the posterior choana is not uniform · balloon leakage · the same disadvantages as the traditional posterior pack.** Double-balloon catheters exist.\n\n- ⚠️ **Posterior packing has no place in primary epistaxis in a child** — that bleeding is anterior and answers to **compression of Little’s area, decongestant drops and chemical cautery**. In a child a posterior pack is painful, needs admission, and risks everything listed above.\n\nSrc: L25.1",
+        "qs": [
+          "entqb-nose2-69"
+        ]
+      },
+      {
+        "id": "epi-8",
+        "w": "high",
+        "h": "Ligation, embolisation, and the paradigm change",
+        "body": "**Indications for surgery or embolisation: continued bleeding despite nasal packing · a nasal anomaly precluding packing · patient refusal or intolerance of packing · transfusion required, or admission haematocrit <38 %.**\n\n|Vessel|Open|Endoscopic|\n|---|---|---|\n|**Sphenopalatine / maxillary**|**IMAX ligation**|**SPA coagulation at the sphenopalatine foramen**|\n|**Ethmoidal**|**ethmoid ligation**|**ethmoid coagulation**|\n|**External carotid**|**ECA ligation**|**OBSOLETE**|\n\n|  |Packing|TAL / PE|**Endoscopic**|\n|---|---|---|---|\n|**Success**|68 %|88 %|**>90 %**|\n|**Complications**|35 %|27.5 %|**no major**|\n|**Hospital stay**|4.2 days|3.3 days|**<one day**|\n\n**The suggested change: INITIAL DEFINITIVE ENDOSCOPIC CONTROL, ± temporary packing.** The endoscopic approach does three things: **cautery of the bleeding area under vision · endoscopic resection of a septal spur · sphenopalatine coagulation at the foramen**.\n\n- **Recurrent posterior epistaxis in an older patient → the SPHENOPALATINE**, coagulated or ligated at its foramen behind the middle turbinate. Not the superior labial, greater palatine or lesser palatine — anterior and palatal territory.\n- **Ethmoid ligation, the 24–12–6 rule: 24 mm** from the anterior lacrimal crest to the **anterior ethmoidal foramen** · **12 mm** further to the **posterior ethmoidal** · only **6 mm** beyond that to the **OPTIC CANAL**, which is why the posterior artery is usually left alone. **Ethmoidals are clipped, never embolised** — they arise from the ophthalmic and particles reach the retina *(measurements and embolisation rule not in course material)*.\n\nSrc: L25.1",
+        "qs": [
+          "entep-nose-68",
+          "entqb-nose2-67",
+          "entqb-nose2-70"
+        ]
+      },
+      {
+        "id": "epi-9",
+        "w": "must",
+        "h": "The olfactory system, and the seven words",
+        "body": "**The olfactory area: 5 cm² in humans**, upper nose at the superior turbinate and cribriform plate; contains **sensory cells · Bowman’s glands · pigment cells**.\n\n**Pathway: olfactory neurons → olfactory bulb → lateral olfactory tract → PRIMARY OLFACTORY CORTEX (pyriform area)**, with **thalamic** and **hypothalamic** connections. The odorant binds an **odorant receptor protein** on the receptor cell. **\"Osme\" is Greek for odour** — the stem of every term below.\n\n|Term|Meaning|\n|---|---|\n|**ANOSMIA**|**complete loss of smell**|\n|**HYPOSMIA**|**partial loss of smell** — **and the commonest smell disorder of all**|\n|**HYPEROSMIA**|**enhanced smell sensitivity**|\n|**DYSOSMIA**|**distortion in odour perception** — the umbrella term, **including parosmia and phantosmia**|\n|**PAROSMIA**|**distortion of the perception of an EXTERNAL stimulus** — perversion of smell|\n|**PHANTOSMIA**|**smell perception with NO external stimulus**|\n|**CACOSMIA**|**a bad odour felt by the patient** *(the deck defines the other six; not this one)*|\n\n- **Parosmia versus phantosmia turns on one question: is a real odour present?** Real but wrong = **parosmia**; none at all = **phantosmia**. When a stem says *no external source is present*, the specific term beats the umbrella — **phantosmia over dysosmia**.\n- **Hyposmia is commonest** because most insults are partial and because it is under-reported; anosmia is more dramatic but less common *(ranking not in course material)*.\n\nSrc: L25.2",
+        "qs": [
+          "entep-nose-32",
+          "entqb-nose2-73",
+          "entqb-nose2-76"
+        ]
+      },
+      {
+        "id": "epi-10",
+        "w": "must",
+        "h": "Conductive versus sensorineural anosmia, and the causes",
+        "body": "|  |**CONDUCTIVE**|**SENSORINEURAL (perceptive)**|\n|---|---|---|\n|**Lesion**|**physical obstacle to the odorant reaching the olfactory epithelium**; also **abnormal rheology of the mucus**|**impaired olfactory epithelium function** or **disrupted neuronal pathway**|\n|**Commonest cause**|**ALLERGIC RHINITIS**|**POST-VIRAL infection**|\n|**Reversible?**|**yes — relieve the obstruction**|**often not**; post-viral is the exception|\n\n**Causes of anosmia, the deck’s own eight headings:**\n\n|Heading|What it states|\n|---|---|\n|**URT infection**|virus **destroys the normal functioning of the nasal olfactory cells**; **violent coughing damages the nerves in the olfactory glands**|\n|**Sinus problems**|**sinus cauterisation damages the receptors** · severe or chronic infection damages the nerves · **long-term nasal spray**|\n|**TRAUMA**|severe blows, concussion, **even MINOR head trauma** · fracture through the nose and **cribriform plate** · damage to the **olfactory bulbs** · **shearing or stretching of the olfactory nerves at the cribriform plate in ~10 % of MAJOR head injuries**|\n|**Structural**|**deviated septum, crooked nose** — airflow impeded, odorants never delivered: the conductive mechanism made anatomical. Also polyps, tumour, foreign body *(added)*|\n|**Irritants**|cigarette smoke, air pollutants, chemical odours; heavy smoking dries oral mucosa → affects **taste**|\n|**Medical**|**KALLMANN’S SYNDROME** — genetic, **olfactory bulbs fail to develop**, most often males · psychiatric: depression, hysterical conversion, **SCHIZOPHRENIA** · **meningitis in infancy** · **EPILEPSY** — brief vivid unpleasant olfactory hallucinations · **Sjögren’s**|\n|**Congenital isolated**|olfactory nerves never develop; genetically transmissible|\n|**Surgery**|cranial · **transsphenoidal** · any general anaesthetic|\n|**Medications**|antidepressants, anticonvulsants, antihistamines and cold remedies, antihypertensives and cardiac drugs, anti-inflammatories, antimicrobials, antineoplastics, bronchodilators, lipid-lowering, muscle relaxants and antiparkinsonian, **head radiation**, vasodilators|\n\n**Percentages: head injury 19 % · post-URI 17 % · nasal/sinus disease 16 % · idiopathic-nasal 17 · toxic exposure 5 · multiple 5 · congenital 2 · age 1.**\n\n- **HYPERosmia is the odd one out — not a loss.** Heightened smell **with hyperacusis** (ordinary sounds felt as excessively loud) in a young adult = a **central or psychiatric** cause, not a nasal one *(hyperacusis not in course material)*. ⚠️ One printing keys **\"personality disorders\"** while its own box names **schizophrenia** — not the same entity, but the only defensible letter on that menu; keyed as printed.\n\nSrc: L25.2",
+        "qs": [
+          "entqb-nose2-77",
+          "entqb-nose2-78",
+          "entqb-nose2-72"
+        ]
+      },
+      {
+        "id": "epi-11",
+        "w": "must",
+        "h": "Cacosmia, parosmia, phantosmia — who else can smell it?",
+        "body": "**Cacosmia = a bad odour felt by the PATIENT** — **a FALSE sense of an offensive odour**, against **a TRUE sense of an offensive odour, which the patient AND others can smell**. So the question to ask is who else smells it:\n\n|Who smells it|What it is|\n|---|---|\n|**The patient only**|**CACOSMIA** — subjective, a dysosmia|\n|**The patient AND other people**|an **objective** foul odour with a real source: chronic rhinosinusitis, a **fungus ball**, an impacted foreign body, dental sepsis *(cause list not in course material)*|\n|**Other people only — the patient cannot**|**atrophic rhinitis (ozaena)**, where the patient is anosmic. The paradox is written in `ent-rhin`|\n\n- **Parosmia** — a real odour perceived wrongly; classically during recovery from post-viral loss *(timing not in course material)*.\n- **Phantosmia** — no stimulus at all. **Brief, stereotyped, unpleasant episodes raise TEMPORAL-LOBE EPILEPSY**, which is why the work-up asks for a **seizure history and an EEG**.\n- Both are **dysosmias** and **qualitative**; anosmia and hyposmia are **quantitative**.\n\nSrc: L25.2; L30 (cacosmia in fungus ball, cited)",
+        "qs": [
+          "entep-nose-55",
+          "entep-mfe5-17",
+          "entqb-nose2-75",
+          "entqb-nose2-74",
+          "entqb-nose2-81"
+        ]
+      },
+      {
+        "id": "epi-12",
+        "w": "high",
+        "h": "Post-viral loss of smell, and Covid-19",
+        "body": "**Post-viral infection is the commonest REVERSIBLE cause of anosmia and the one with the best recovery** — the epithelium regenerates *(regeneration not in course material)*. **Head trauma, neurodegenerative disease and congenital absence of the olfactory nerve do not recover**; head injury is the largest single share at 19 % and the most often permanent.\n\n**Covid-19: sudden loss of smell 50 % · improvement in 6 weeks 90 % · a positive Covid test needs no further investigation.** **Three triage questions on any loss of smell: isolated or not? · Covid-19 or not? · duration under 2 weeks, or more?**\n\n|  |Allergic rhinitis|Covid-19|\n|---|---|---|\n|**Receptor damage**|**none**|**± receptor damage, neuritis**|\n|**Course**|**usually reversible AND recurrent**|**reversible if neuritis · IRREVERSIBLE if the receptors are damaged**|\n|**Dysosmia**|**+**|**+++**|\n\n**Treatment splits on whether the nose is involved:**\n\n- **With nasal symptoms, >2 weeks: steroid drops · topical nasal steroids** → **olfactory training**.\n- **Isolated, without nasal symptoms: omega-3 · vitamin A drops** → **olfactory training**.\n- ⚠️ **ORAL steroids are CONTRAINDICATED in the acute stage of the disease.** Topical yes, systemic no.\n\nSrc: L25.2",
+        "qs": [
+          "entep-nose-47",
+          "entqb-nose2-79"
+        ]
+      },
+      {
+        "id": "epi-13",
+        "w": "high",
+        "h": "Assessing the patient who cannot smell",
+        "body": "**Work-up:** **history and physical examination · DRUG history · SEIZURE history → EEG · otolaryngologic consultation · nasal endoscopy · taste (TG) assessment — taste receptors can alter olfactory receptors · imaging: CT, MRI · biopsy from a nasal lesion or the olfactory epithelium.**\n\n|Test|What it does|\n|---|---|\n|**Olfactometer**|delivers graded odorant — the **smell threshold** test|\n|**UPSIT**|**scratch-and-sniff identification** test|\n|**EOG — electro-olfactogram**|electrodes **over the nose**; records from the **olfactory epithelium**|\n|**OERP**|olfactory **event-related potential**, from the **scalp**|\n|**EEG**|**alpha-wave** content in response to aromatherapy oils|\n\n- ⚠️ **A genuinely anosmic patient STILL RESPONDS TO AMMONIA** — an **irritant** carried by the **trigeminal** nerve as the common chemical sense, not an odorant on the olfactory nerve. **Coffee, vanilla, garlic and perfume are pure odorants and are lost; ammonia is not.**\n- Two consequences: **denying any reaction to ammonia suggests malingering**, and **test odorants must be non-irritant**, or a trigeminal response is read as smell *(mechanism and the malingering test not in course material)*.\n\nSrc: L25.2; L23 (nerve supply of the nose, cited)",
+        "qs": [
+          "entep-nose-108",
+          "entqb-nose2-80"
+        ]
+      }
+    ]
   }
 };
