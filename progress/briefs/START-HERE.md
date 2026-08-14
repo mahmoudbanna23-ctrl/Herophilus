@@ -917,7 +917,7 @@ if the receiving chapter actually gets it.**
 | `ent-nasalmass` (L31) | The full **nasal-obstruction aetiology** (mucosal causes, choanal atresia, pyriform aperture stenosis, turbinate hypertrophy, nasal valve dysfunction), **NOSE and SNOT-22**, rhinomanometry, acoustic rhinometry, the decongestant rules | `ent-nasalobs` | ✅ **delivered 2026-08-14** — `nobs-2`/`4`/`5`/`7`, scales and objective tests in `nobs-3` |
 | `ent-nasalmass` (L25) | **Epistaxis management as a subject** — packing, cautery, the arterial ligations. Only angiofibroma embolisation kept | `ent-epistaxis` | ☐ |
 | `ent-rhin` (L31) | The **nasal-obstruction work-up**, NOSE/SNOT-22, rhinomanometry · **discharge types as a subject** | `ent-nasalobs` | ✅ **delivered 2026-08-14** — work-up half MERGED into `nobs-3` (same slides as the row above, not written twice); its own new half, discharge as a subject, in `nobs-8` |
-| `ent-rhin` (L27.1/L27.2) | **Acute and chronic rhinosinusitis in full** — only the viral-vs-bacterial line and the AERD/Samter clause kept | `ent-sinusitis` | ☐ |
+| `ent-rhin` (L27.1/L27.2) | **Acute and chronic rhinosinusitis in full** — only the viral-vs-bacterial line and the AERD/Samter clause kept | `ent-sinusitis` | ✅ **delivered 2026-08-14** — `sin-1`/`3`/`4`/`5`/`6`/`8`/`9`/`10`, both decks end to end. `rhin-8` had deleted *"purulent discharge alone does not mean bacterial"* as this chapter’s fact, so it is written here for the first time |
 | `ent-rhin` (L29) | **Nasal polyposis** | `ent-nasalmass` | ✅ already written — `nmass-5` |
 | `ent-rhin` (L25.2) | **Smell disorders** as a subject · **epistaxis** | `ent-epistaxis` | ☐ |
 | `ent-rhin` (L30) | **Septal perforation and saddle nose as lesions** — verified present in `sept-7`/`sept-8` before deferring | `ent-septum` | ✅ already written |
@@ -944,6 +944,8 @@ if the receiving chapter actually gets it.**
 | `ent-otorrhea` (L19.1) | **Haemotympanum, and the CHL/SNHL lists as hearing loss** | `ent-hearing` | ✅ already written |
 | `ent-nasalobs` (L32 lines 6–139) | **Headache in full** — 547 words, the whole facial-pain half of the deck | `ent-facialpain` | ☐ |
 | `ent-nasalobs` (L23 lines 1–86) | **Nasal anatomy** — 297 words; only the choanal-atresia and CNPAS half (87–177) was claimed here | `ent-noseanat` | ☐ |
+| `ent-sinusitis` (L27.1 line 285 · general) | **The complications in full** — pre- vs post-septal cellulitis and the orbital staging, the **lamina papyracea** route, **Pott’s puffy tumour** and the diploic veins, and **sinus → frontal lobe / ear → temporal lobe and cerebellum**. Its two-word orbital caption was **subtracted from this chapter’s TERM 1** rather than counted | `ent-sinuscomp` | ☐ **⚠️ `L28` DOES NOT EXIST — this chapter has no lecture and is written from general knowledge against its own 10 questions. It was deliberately NOT absorbed here; none of `ent-sinusitis`’s 47 tests any of it.** |
+| `ent-sinusitis` (L23 lines 1–86) | **Nasal anatomy**, and the **osteomeatal complex as a named unit** | `ent-noseanat` | ☐ **2nd chapter to register it — `ent-nasalobs` was first** |
 
 > **⚠️⚠️ `ent-otorrhea` IS NOW OWED THE SAME OTORRHOEA DECK BY THREE CHAPTERS INDEPENDENTLY** —
 > `ent-otalgia`, `ent-csom` and `ent-hearing`, none of which knew of the others. That is not
@@ -966,6 +968,22 @@ if the receiving chapter actually gets it.**
 > the fact's own vocabulary — never a reading of the two headers.** Run it whenever the register
 > shows two chapters pointing at each other.
 
+
+> **⚠️ A SECTION MAY LEGITIMATELY LINK NO QUESTIONS — THAT IS THE LECTURE SIDE OF THE FLOOR, NOT A
+> DEFECT. Audited 2026-08-14: exactly 2 of 253 merged sections have an empty `qs`, both in
+> `ent-rhin`** — `rhin-1` (the rhinosinusitis classification tree and the nose’s six defences) and
+> `rhin-14` (fungal rhinosinusitis). Two is a healthy number: it means the question side of the
+> floor is carrying almost all the structure, and the reader still reaches these by browsing.
+>
+> **⚠️ DO NOT "FIX" `rhin-14` BY DELETING IT OR BY LINKING THE FUNGAL QUESTIONS TO IT.** All twelve
+> fungal questions are filed under `ent-sinusitis`, so linking them from `ent-rhin` would register
+> as a wrong-chapter error. The split is deliberate and was made with the reason stated: `rhin-14`
+> is **L30’s own fungal classification, where the rhinitis deck puts it**, and `sin-11` is the
+> **question-facing treatment on the host/organism/lethality axis**, carrying four keys `rhin-14`
+> does not — Mucor as the organism, the iron/ketoacidosis mechanism, steroids being indicated in
+> allergic and contraindicated in invasive disease, and the mucormycosis vignette. L30’s 227 words
+> stay charged to `ent-rhin`. **Writing `sin-11` was the right call: without it twelve questions
+> would have had no reachable notes at all.**
 ### 14.6 What this costs, said plainly
 
 The notes alone no longer explain why each wrong option is wrong — **the linked questions do**,

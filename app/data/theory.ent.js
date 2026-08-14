@@ -3918,5 +3918,146 @@ var T_ENT = {
         ]
       }
     ]
+  },
+  "ent-sinusitis": {
+    "intro": "Two thirds of the questions are one disease: unilateral cheek pain and foetid discharge after dental work. The rest sort on time — under four weeks, over twelve — and on the host: a black turbinate in a diabetic is not sinusitis.",
+    "sections": [
+      {
+        "id": "sin-1",
+        "w": "must",
+        "h": "Definitions and the time ladder",
+        "body": "- **Acute rhinosinusitis = an inflammatory condition involving the NOSE AND THE PARANASAL SINUSES.** The nasal mucosa is **contiguous** with the sinus mucosa, so **sinus inflammation is almost always accompanied by inflammation of the nasal cavity** — hence *rhino*sinusitis.\n- **Chronic rhinosinusitis (CRS) = chronic inflammatory disease of SINUS MUCOSA lasting MORE THAN 12 WEEKS.** One sinus or several. **One of the most prevalent chronic diseases globally.**\n\n|Form|Duration|Note|\n|---|---|---|\n|**Acute**|**< 4 weeks** *(boundary not in course material)*|an **infection**|\n|**Subacute**|**4–12 weeks** *(not in course material)*|resolving or grumbling|\n|**CHRONIC**|**> 12 WEEKS**|an **inflammatory disease**, not simply an infection|\n|**RECURRENT ACUTE**|discrete attacks **each < 1 month**, separated by a **symptom-free period of ≥ 10 days** with return to baseline *(not in course material)*|**not** continuous symptoms — that is chronic|\n\n- **Recurrent acute is one of the four indications for bacterial culture.**\n- **Burden:** up to **80 % of URTIs are associated with rhinosinusitis**; ~**1 billion** viral cases a year in the USA.\n- **Defect note:** the bank prints two ladders — its own box gives acute < 3 weeks and subacute 3 weeks–3 months, another question keys subacute at 4–12 weeks. Both recorded, each keyed as printed.\n\nSrc: L27.1 lines 7–18, 19–55, 184–194, 208–215; L27.2 lines 8–20",
+        "qs": [
+          "entqb-nose3-98",
+          "entqb-nose4-149"
+        ]
+      },
+      {
+        "id": "sin-2",
+        "w": "must",
+        "h": "Where each sinus drains, and where each one hurts",
+        "body": "|Sinus|Drains into|Pain and tenderness *(map not in course material)*|\n|---|---|---|\n|**Maxillary**|**MIDDLE MEATUS**, through the **ethmoidal infundibulum**|**cheek**, referred to the **upper jaw and upper teeth**; **tenderness over the anterior antral wall, below the inferior orbital margin** — the only sinus you can palpate directly|\n|**Frontal**|**MIDDLE MEATUS**|**above the eye**, **tenderness over the eyebrow**; **PERIODIC — starts in the morning, peaks by mid-day, eases by evening**|\n|**Anterior ethmoid**|**MIDDLE MEATUS**|between and behind the eyes, **medial canthus**|\n|**Posterior ethmoid**|**SUPERIOR MEATUS**|deep retro-orbital ache|\n|**Sphenoid**|**SPHENOETHMOIDAL RECESS**|vertex, occiput, deep retro-orbital|\n|*(nasolacrimal duct)*|*inferior meatus* — **no sinus drains here**|—|\n\n- **PUS LOCATES THE SINUS.** Middle meatus = frontal, anterior ethmoid or maxillary. **Superior meatus, between superior turbinate and septum = POSTERIOR ETHMOID.** Sphenoethmoidal recess = **sphenoid**. The last two are the lecture’s named endoscopic findings.\n- **Mucosal swelling in the INFUNDIBULUM — not in the antrum — is what obstructs the maxillary sinus**, so surgery clears the **osteomeatal complex** rather than the sinus. The complex is the confluence of **uncinate process, ethmoid bulla, hiatus semilunaris and infundibulum**; polyps arise at uncinate–middle turbinate–infundibulum in **80 %** and at the anterior face of the bulla / hiatus in **66 %**.\n- **Same cold, two pictures:** eyebrow tenderness with morning-peaking pain = **frontal**; cheek and periorbital tenderness with pus in the middle meatus = **maxillary**. A septum deviated to that side is why it recurs.\n\nSrc: L23 lines 26–38; L27.1 lines 159–183; L26 line 303; L29 line 443",
+        "qs": [
+          "entqb-nose1-45",
+          "entqb-nose7-226",
+          "entep-nose-85",
+          "entep-nose-case-14",
+          "entep-nose-case-15"
+        ]
+      },
+      {
+        "id": "sin-3",
+        "w": "high",
+        "h": "Acute rhinosinusitis — what starts it and what predisposes to it",
+        "body": "- **THE COMMONEST AETIOLOGY IS RHINOGENIC** — a viral **upper respiratory tract infection** obstructs the ostium, secretions stagnate, bacteria overgrow. **Dental is second**; environmental and traumatic causes are minor.\n\n**NINE PREDISPOSING FACTORS, with the mechanisms the lecture annotates:**\n\n|Factor|Mechanism given|\n|---|---|\n|**Environmental exposure**|**air pollution, irritants used in preparing pharmaceutical products, photocopying, forest-fire smoke** — all raise the prevalence of ARS symptoms|\n|**Allergy**|**ICAM-1**, the inflammatory adhesion molecule, is **elevated in allergic rhinitis** → increased susceptibility to respiratory infection|\n|**Smoking**|**active and passive** smoking **alters the normal nasopharyngeal flora** → colonisation by more potential pathogens than in non-smokers|\n|**Ciliary impairment**|**viral infection · smoking · allergy · PRIMARY CILIARY DYSKINESIA**|\n|**Anatomical variations**|narrow the osteomeatal complex|\n|**Laryngopharyngeal reflux**|—|\n|**Anxiety and depression**|—|\n|**Drug resistance**|—|\n|**Concomitant chronic disease**|—|\n\nSrc: L27.1 lines 56–137, 244–252",
+        "qs": [
+          "entqb-nose4-151",
+          "entqb-nose7-226"
+        ]
+      },
+      {
+        "id": "sin-4",
+        "w": "must",
+        "h": "Diagnosing ABRS — the counting rule, and viral versus bacterial",
+        "body": "**THE DIAGNOSTIC RULE — acute rhinosinusitis is strongly suspected with:** **two or more MAJOR** signs or symptoms · **or one major and two minor** · **or more than three minor**.\n- **MAJOR** *(list not in course material)*: facial pain/pressure, facial congestion/fullness, nasal obstruction, purulent nasal or postnasal discharge, hyposmia/anosmia, fever (acute only). **MINOR**: headache, halitosis, fatigue, dental pain, cough, ear pain/pressure/fullness.\n\n**VIRAL OR BACTERIAL — four factors suggest ACUTE BACTERIAL rhinosinusitis:**\n\n|Factor|Why it matters|\n|---|---|\n|**Worsening of symptoms AFTER 5 DAYS**|a cold improves from day 3–5|\n|**Persistence of symptoms for MORE THAN 10 DAYS**|the single commonest criterion met|\n|**Symptoms OUT OF PROPORTION** to a typical viral URTI|high fever, severe unilateral pain|\n|**\"DOUBLE-SICKENING\" — worsening after initial improvement**|**the most specific sign of the switch**|\n\n- **⚠️ PURULENT DISCHARGE ALONE IS NOT BACTERIAL.** Thick yellow-green discharge is a normal stage of an ordinary cold and is **not** a reason to prescribe. Neither is headache.\n- **Only 0.5–2 % of viral rhinosinusitis becomes bacterial** — the arithmetic behind not prescribing. **Viral resolves without antibiotics; bacterial may require antimicrobial therapy.**\n\nSrc: L27.1 lines 138–158, 208–226, 238–243",
+        "qs": [
+          "entep-mfe4-20",
+          "entqb-nose4-156",
+          "entqb-nose4-167"
+        ]
+      },
+      {
+        "id": "sin-5",
+        "w": "high",
+        "h": "When to culture and when to scan an acute sinus",
+        "body": "|Test|Indicated|\n|---|---|\n|**Bacterial culture**|**ONLY in four settings: recurrent acute rhinosinusitis · acute exacerbation of chronic rhinosinusitis · immunosuppression · failure to respond to appropriate initial antibiotic therapy.**|\n|**CT**|**NOT essential to diagnose uncomplicated acute rhinosinusitis.** It **IS** important for **assessing potential complications** of acute sinus disease, or **in anticipation of surgery** on the sinuses.|\n\n- **⚠️ THE NEXT STEP IN UNILATERAL OR ODONTOGENIC DISEASE IS CT, BEFORE ANY TREATMENT.** Unilateral maxillary disease is not the uncomplicated bilateral cold the \"no CT\" rule was written for — it needs the extent, the tooth and the ostium shown first. **Antral lavage and FESS are both surgery**, so imaging precedes them; **topical steroids treat mucosa, not a tooth.**\n\nSrc: L27.1 lines 184–207",
+        "qs": [
+          "entep-enr-14"
+        ]
+      },
+      {
+        "id": "sin-6",
+        "w": "must",
+        "h": "Treating acute bacterial rhinosinusitis — organism, dose, steroid",
+        "body": "- **ORGANISMS** *(not in course material)*: ***Streptococcus pneumoniae*** · ***Haemophilus influenzae*** · ***Moraxella catarrhalis***. **NOT *Pseudomonas aeruginosa*** — that is nosocomial, cystic fibrosis and the immunocompromised, and in ENT it means **malignant otitis externa**.\n- **ANTIBIOTIC: amoxicillin or amoxicillin-clavulanate for 10 days, at an ADEQUATE dose** *(agent and duration not in course material; the lecture works the dose)*. Choose by **local rates of resistance within the country**.\n- **⚠️ UNDER-DOSING MIMICS RESISTANCE.** The worked case: 40 mg/kg/day of amoxicillin-clavulanate ES gave **84 mg of clavulanate where 180 mg was needed** — the **400/57 formulation** was required. Failure, a second inadequate drug, then **endoscopic drainage with a STERILE culture.**\n- **⚠️ CYCLING ANTIBIOTICS IS NOT A STRATEGY** — \"little logic exists\" in TMP/SMX, then cefaclor, then azithromycin. And **a non-responding \"infection\" may not be bacterial**: the second case, a 10-day sore throat given two antibiotic courses, was **viral** and responded to **aciclovir**.\n- **FOUR MECHANISMS OF RESISTANCE:** **beta-lactamase** and other destroying enzymes · **membrane changes making the outer membrane impermeable** · **alterations in the organism’s RNA affecting binding-site affinity** · **efficient membrane EFFLUX transporters.**\n- **INTRANASAL CORTICOSTEROIDS are recommended in ARS** — **monotherapy in moderate** disease, **with oral antibiotics in severe** disease. They are an adjunct, never the whole treatment of a bacterial sinusitis.\n- **SURGERY IN ACUTE DISEASE IS THE EXCEPTION** — the lecture shows only **acute sphenoiditis** and a **complicated** sinus. **FESS is NOT a treatment for uncomplicated acute rhinosinusitis.**\n- **Defect note:** one option is printed as \"Streptococcus influenza\", which is not an organism. Keyed as printed.\n\nSrc: L27.1 lines 227–336",
+        "qs": [
+          "entqb-nose4-152",
+          "entqb-nose4-157"
+        ]
+      },
+      {
+        "id": "sin-7",
+        "w": "must",
+        "h": "Odontogenic (dental) sinusitis and oro-antral fistula",
+        "body": "**THE ANATOMY** *(not in course material)* — the roots of the **UPPER SECOND PREMOLAR and FIRST MOLAR** lie against the **floor of the maxillary sinus**, separated by paper-thin bone or mucosa alone. Lower teeth are in the mandible and have no relation to it.\n- **Defect note:** the bank keys a different tooth in each of its three printings — *the second premolar and first molar* for the plural question, *the upper first molar* for the single tooth, and *the upper second molar* as the commonest cause of oro-antral fistula. Each keyed as printed; the first molar appears in two of the three.\n\n|Feature|Odontogenic maxillary sinusitis|\n|---|---|\n|**Trigger**|**root canal · extraction · a carious upper premolar or molar** — always the **SAME SIDE** as the tooth|\n|**Pain**|**UNILATERAL cheek pain and tenderness**, worse on **bending forward**; may be felt as upper-jaw pain|\n|**Discharge**|**UNILATERAL and FOETID**, purulent — **NEVER watery** (printed as a true/false statement to be corrected)|\n|**Why foetid**|the organisms are **ORAL ANAEROBES** *(not in course material)*|\n|**Other**|obstruction, headache; **congested middle meatus with discharge coming out of it**|\n|**Duration**|**< 4 weeks = acute**; **≥ 12 weeks = chronic** odontogenic maxillary sinusitis|\n|**Imaging**|**CT**; **antral opacity on plain X-ray** in the classic case|\n|**Treatment**|**BOTH ENDS: broad-spectrum, anaerobe-covering antibiotics PLUS dental consultation.** Antibiotics alone relapse; extraction is the dentist’s call; **FESS only for failure or established chronic disease** *(pairing not in course material)*|\n\n- **⚠️ UNILATERAL + FOETID DECIDES IT BY AGE:** **ADULT → odontogenic sinusitis** (commonest) · **CHILD → foreign body** · **older, blood-stained → sinonasal neoplasm.** An acute viral cold is never foetid and never unilateral. **Dental infection is also a named trigger of CRS** — \"infection of an adjacent organ (e.g. teeth)\".\n\n**ORO-ANTRAL FISTULA** *(whole entity not in course material)*\n- **Commonest cause: extraction of an UPPER MOLAR whose roots projected into the antrum** — not acute sinusitis, trauma or the radical antrum operation.\n- **Fluid REGURGITATES from the mouth into the nose on that side**, with offensive discharge, facial pain and a **DIMPLE IN THE GUM** at the socket, congested and covered with discharge. Chronic unilateral maxillary sinusitis follows.\n- **Treat the sinusitis, then CLOSE THE FISTULA WITH A FLAP.**\n\nSrc: L27.2 lines 21–36; L31 lines 122–128; L32 line 154",
+        "qs": [
+          "entep-nose-4",
+          "entep-nose-24",
+          "entep-nose-37",
+          "entep-nose-54",
+          "entep-nose-62",
+          "entep-nose-66",
+          "entep-nose-76",
+          "entep-nose-102",
+          "entep-mfe4-29",
+          "entqb-nose4-155",
+          "entqb-nose4-168",
+          "entqb-nose5-186",
+          "entep-nose-case-3",
+          "entep-nose-case-6"
+        ]
+      },
+      {
+        "id": "sin-8",
+        "w": "must",
+        "h": "Chronic rhinosinusitis — the two phenotypes and the diagnostic criteria",
+        "body": "- **Aetiology UNCLEAR** — host response versus external factors. **Proposed triggers: allergens (e.g. aspirin) · bacteria, especially *Staph. aureus* ENDOTOXINS · viruses · infection of an adjacent organ (e.g. TEETH) · trauma · anatomical variations.**\n- **BIOFILMS and SMOKING → worse outcomes and resistance to treatment; smoking also increases the RISK of CRS.**\n\n|Phenotype|Symptoms it favours|Outcome|\n|---|---|---|\n|**CRSsNP** — without nasal polyps|**more FACIAL PAIN and HEADACHE**|**BETTER treatment outcomes, LOWER recurrence**|\n|**CRSwNP** — with nasal polyps|**more LOSS OF SMELL**|worse; oral steroids and biologics belong here|\n|**Nasal obstruction**|**common in BOTH** — it does not separate them|—|\n|**AERD (aspirin-exacerbated respiratory disease, Samter’s triad)**|as CRSwNP|**often very extensive, significantly WORSE CT findings than non-AERD polyp patients; difficult to treat, HIGHER recurrence**|\n\n- **Consider SECONDARY causes** — vasculitis, immunodeficiency — in patients **unresponsive to treatment or with systemic symptoms.**\n\n**THE DIAGNOSTIC CRITERIA — 12 weeks or longer of TWO OR MORE of:**\n- **Mucopurulent drainage** (anterior, posterior, or both) · **nasal obstruction (congestion)** · **facial pain / pressure / fullness** · **decreased sense of smell.**\n\n**AND inflammation documented by ONE OR MORE of:**\n- **Purulent (NOT clear) mucus or oedema in the middle meatus or anterior ethmoid region** · **polyps in the nasal cavity or middle meatus** · **radiographic imaging showing inflammation of the paranasal sinuses.**\n\n- **⚠️ CACOSMIA IS NOT ON THE LIST** and is the **least common** of the classic four complaints — the common three are **obstruction, postnasal discharge and headache**. A foul smell points instead to a **fungus ball, dental source, foreign body or tumour.**\n- **Symptoms alone are not enough — the definition REQUIRES objective evidence**, which is why CT is mandatory.\n\nSrc: L27.2 lines 21–77",
+        "qs": [
+          "entep-nose-44",
+          "entqb-nose3-131"
+        ]
+      },
+      {
+        "id": "sin-9",
+        "w": "must",
+        "h": "Investigating chronic rhinosinusitis",
+        "body": "|Investigation|Role|\n|---|---|\n|**CT WITHOUT CONTRAST**|**the imaging of choice.** Shows bone and the osteomeatal complex, supplies the objective inflammation the definition demands, and **excludes aggressive infection or neoplastic disease mimicking CRS or ARS**|\n|**MRI**|**DISCOURAGED** — increased **cost** and **overdiagnosis** compared with CT without contrast. Reserved for soft tissue and intracranial extension|\n|**Nasal endoscopy**|complements CT — sees polyps, oedema and pus in the middle meatus; **cannot replace it**|\n|**Allergy testing**|**skin prick testing or RAST**|\n|**Nasal biopsy**|**exclude neoplasia; look for granulomas / vasculitis**|\n|**CBC · serum eosinophilia**|eosinophilic phenotype|\n|**ANCA**|**Wegener’s granulomatosis**|\n|**ACE**|**sarcoidosis**|\n\n- **Plain X-ray and ultrasound have no role** in chronic disease.\n\nSrc: L27.2 lines 81–97",
+        "qs": [
+          "entep-nose-23",
+          "entqb-nose4-158"
+        ]
+      },
+      {
+        "id": "sin-10",
+        "w": "must",
+        "h": "Treating chronic rhinosinusitis — the medical ladder, then FESS",
+        "body": "**MEDICAL — the mainstay:**\n- **SALINE NASAL IRRIGATION** — improves **mucociliary clearance** and **removes antigens and biofilm.**\n- **TOPICAL INTRANASAL CORTICOSTEROIDS (INCS)** — effective anti-inflammatory agents.\n- **No response to INCS → a SHORT COURSE OF ORAL CORTICOSTEROIDS, only in CRSwNP.**\n- **CHRONIC ANTIBIOTICS, especially MACROLIDES → CRSsNP.**\n- **Others: mucolytics · decongestants · BIOLOGICAL THERAPY in CRSwNP.**\n\n**SURGICAL — FUNCTIONAL ENDOSCOPIC SINUS SURGERY (FESS):**\n- **Only after FAILED medical therapy — at least 12 WEEKS of nasal saline, INCS and often systemic steroids.**\n- **Also indicated for patients needing more than 2–3 courses of oral steroids per year.**\n- **Three goals: REMOVE OBSTRUCTION · REDUCE INFLAMMATION · IMPROVE DELIVERY OF TOPICAL MEDICATION** — so topical steroids continue **after** surgery, not instead of it.\n\n|FESS is indicated in|FESS is NOT for|\n|---|---|\n|**medically refractory CRS** · **extensive sinonasal polyposis** · **antrochoanal polyp** · **allergic fungal sinusitis** · **inverted papilloma**|**ATROPHIC RHINITIS** — a nose already too roomy; treat by douching and crust removal, never by widening it further. **Uncomplicated ACUTE rhinosinusitis**|\n\n- **The superseded approaches** *(not in course material)*: **Caldwell-Luc**, **external frontoethmoidectomy** and **repeated sinus irrigation** — historical, and irrigation alone does not hold. FESS **enlarges the NATURAL ostium** rather than creating a dependent one.\n\nSrc: L27.2 lines 98–129",
+        "qs": [
+          "entep-nose-17",
+          "entqb-nose4-159",
+          "entep-nose-96"
+        ]
+      },
+      {
+        "id": "sin-11",
+        "w": "must",
+        "h": "Fungal rhinosinusitis — five forms, sorted by the host",
+        "body": "**INVASIVE (3) and NON-INVASIVE (2). The axis is IMMUNOCOMPETENCE: only the ACUTE invasive form needs a compromised host.**\n\n|Form|Host|Organism|Key facts and treatment|\n|---|---|---|---|\n|**ACUTE INVASIVE**|**poorly controlled DIABETICS** · **immunocompromised with severe NEUTROPENIA** (chemotherapy, BMT, transplant, AIDS)|**MUCOR in the ketoacidotic diabetic** *(organism not in course material)*; ***Aspergillus* accounts for 80 %** in the neutropenic group|**MOST LETHAL form — mortality 50–80 %.** Early signs **necrosis of nasal tissue and BLACKISH mucosa**. Spreads to **palate, orbit, anterior cranial fossa**; **meningitis, intracranial abscess, cavernous sinus thrombosis**. **Treat: correct the immune suppression · AGGRESSIVE SURGICAL DEBRIDEMENT · systemic antifungal, mainly AMPHOTERICIN B**|\n|**CHRONIC INVASIVE**|usually **immunocompetent**|Aspergillus|history of **chronic rhinosinusitis**; indolent|\n|**CHRONIC GRANULOMATOUS INVASIVE**|**IMMUNOCOMPETENT**|***Aspergillus flavus***|primary paranasal granuloma, indolent, mass-like; **NON-CASEATING granulomas** (caseating = TB)|\n|**ALLERGIC FUNGAL**|**IMMUNOCOMPETENT**, often asthmatic|inhaled fungi|**MOST COMMON form of fungal sinusitis.** A **hypersensitivity** reaction → chronic **NON-infectious** inflammation — **type I (IgE) AND type III**. Polyps, eosinophil-rich **allergic mucin** *(term not in course material)*. **Treated with STEROIDS plus FESS** *(not in course material)*|\n|**FUNGUS BALL (mycetoma)**|**IMMUNOCOMPETENT**, older, **female > male**|Aspergillus|asymptomatic or minimal — chronic pressure or discharge, **CACOSMIA**; **SURGICALLY treated**|\n\n- **⚠️ STEROIDS ARE THE TREATMENT OF THE ALLERGIC FORM AND ARE CONTRAINDICATED IN THE INVASIVE ONES**, where they deepen the immune defect *(contraindication not in course material)*.\n- **⚠️ MUCORMYCOSIS IS A SURGICAL EMERGENCY.** The vignette: **uncontrolled diabetic or renal-failure patient** · **black necrotic eschar on hard palate or turbinate** · **blood-stained or blackish discharge** · **proptosis, diminished vision, diminished facial sensation** · fever and headache. The necrosis is **painless INFARCTION** — the fungus is **angioinvasive**. **Biopsy the turbinate the same day.**\n- **Why the ketoacidotic diabetic** *(mechanism not in course material)*: acidosis frees **iron from transferrin**, which Mucor needs to grow.\n- **BLACK NECROTIC MUCOSA IN AN IMMUNOCOMPROMISED PATIENT IS INVASIVE FUNGAL SINUSITIS UNTIL PROVEN OTHERWISE** — the non-invasive forms do not kill tissue.\n\nSrc: L30 lines 138–199 (deck counted by `ent-rhin`); L27.2 lines 61–64",
+        "qs": [
+          "entep-nose-94",
+          "entep-mfe4-28",
+          "entqb-nose3-136",
+          "entqb-nose3-137",
+          "entqb-nose3-138",
+          "entqb-nose3-139",
+          "entqb-nose3-140",
+          "entqb-nose3-141",
+          "entqb-nose3-142",
+          "entqb-nose3-143",
+          "entqb-nose4-154",
+          "entep-nose-case-9"
+        ]
+      }
+    ]
   }
 };
