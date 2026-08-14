@@ -4059,5 +4059,191 @@ var T_ENT = {
         ]
       }
     ]
+  },
+  "ent-pharanat": {
+    "intro": "Boundaries, lists and one nerve line. The examiner asks which structure marks a border, which muscle or artery is not on the list, and — six times over — what the vocal cords divide: sensation above from below, and the one muscle the recurrent nerve never reaches.",
+    "sections": [
+      {
+        "id": "pha-1",
+        "w": "must",
+        "h": "The three regions — boundaries, levels, and what ends at C6",
+        "body": "**Pharynx = fibromuscular tube, SKULL BASE → LOWER BORDER OF THE CRICOID**, where the oesophagus begins.\n\n|Region|From|To|Level|Lining|\n|---|---|---|---|---|\n|**NASOPHARYNX**|**skull base**|**hard palate**|**C1**|**ciliated columnar**|\n|**OROPHARYNX**|**hard palate**|**HYOID BONE**|**C2–C3**|**squamous**|\n|**HYPOPHARYNX (laryngopharynx)**|**hyoid**|**LOWER BORDER OF CRICOID**|**C4–C6**|**squamous**|\n\n- **Boundaries given as STRUCTURES: posterior choana · hard palate · hyoid bone · lower border of cricoid.** Neither anatomy deck states a vertebral level *(all C-levels not in course material)*.\n- **AT THE LOWER BORDER OF C6: cricoid · end of larynx · end of pharynx · beginning of oesophagus.** The pharynx BEGINS at the skull base.\n- **Defect note:** the same key also offers the carotid bifurcation — **C3–C4** *(not in course material)*, equally not a C6 event. Keyed as printed.\n\nSrc: L1.2 slides 2–3 (lines 12–28)",
+        "qs": [
+          "entqb-thr1-1",
+          "entqb-thr1-2"
+        ]
+      },
+      {
+        "id": "pha-2",
+        "w": "must",
+        "h": "Nasopharynx",
+        "body": "**Roof and posterior wall carry the NASOPHARYNGEAL TONSIL (ADENOID)** as subepithelial lymphoid tissue **POSTERIORLY**. **Anterior wall = CHOANAE. Floor = soft palate.**\n\n|Lateral wall|Point|\n|---|---|\n|**Eustachian tube orifice**|**1.5 cm behind the posterior end of the INFERIOR TURBINATE**|\n|**Tubal elevation (TORUS TUBARIUS)**|cartilaginous lip above and behind it|\n|**FOSSA OF ROSENMULLER**|recess **behind and above the torus — where OCCULT NASOPHARYNGEAL CARCINOMA hides**|\n|**Salpingopharyngeal, salpingopalatine folds**|run down and forward from the torus|\n\n- **CHRONIC — not acute — Eustachian obstruction causes middle-ear effusion**; acute blockage gives retraction, fullness, otalgia. **Unilateral adult effusion → nasopharyngoscopy.**\n\nSrc: L1.2 slides 5–6 (lines 32–42)",
+        "qs": [
+          "entqb-thr1-4"
+        ]
+      },
+      {
+        "id": "pha-3",
+        "w": "must",
+        "h": "Oropharynx — four walls, two isthmuses, two pillars",
+        "body": "|Wall|The deck’s own list|\n|---|---|\n|**SUPERIOR**|**soft palate and UVULA**|\n|**LATERAL**|**anterior and posterior PILLARS + tonsillar fossae + PALATINE TONSILS**|\n|**ANTERIOR**|**TONGUE BASE (and lingual tonsils) + VALLECULAE**|\n|**POSTERIOR**|**soft palate → tip of the epiglottis**|\n\n- **OROPHARYNGEAL (FAUCIAL) ISTHMUS — the oral cavity opens into the oropharynx through it.** Soft palate above, anterior pillars laterally, tongue base below *(boundaries not in course material)*.\n- **VELOPHARYNGEAL ISTHMUS** — oropharynx to **nasopharynx**.\n- **ANTERIOR PILLAR = PALATOGLOSSUS. POSTERIOR PILLAR = PALATOPHARYNGEUS.** The tonsil sits in the fossa between them.\n\nSrc: L1.2 slides 7–9 (lines 44–59)",
+        "qs": [
+          "entqb-thr1-3",
+          "entqb-thr1-6",
+          "entqb-thr1-7"
+        ]
+      },
+      {
+        "id": "pha-4",
+        "w": "must",
+        "h": "Velopharyngeal closure, the six functions, the phases of swallowing",
+        "body": "**“Closure of the sphincter-like mechanism between the oropharynx and nasopharynx is ESSENTIAL FOR NORMAL DEGLUTITION AND SPEECH.”** Three combined movements:\n\n|Component|Movement|\n|---|---|\n|**Soft palate**|**POSTERO-SUPERIOR**|\n|**Lateral pharyngeal walls**|**MEDIAL**|\n|**Posterior pharyngeal wall**|**slight ANTERIOR = PASSAWNT’S BRIDGE**|\n\n- **Passawnt’s bridge = the POSTERIOR wall’s contribution**; deck and bank spell it thus, the eponym is **Passavant’s**. **The uvula perfects the closure.** Failure → nasal regurgitation, **rhinolalia aperta** *(not in course material)*.\n\n**SIX FUNCTIONS OF THE OROPHARYNX**: **common pathway for food and air · respiratory function · reflex actions (sneezing, coughing, vomiting) · speech resonance (articulation of vowels) · DEGLUTITION, the 2nd “PHARYNGEAL” PHASE of swallowing · drainage of mucus from the nasopharynx.**\n\n|Phase|Voluntary?|What happens|\n|---|---|---|\n|**1 ORAL**|**VOLUNTARY**|chewing, bolus formation, tongue propels it back|\n|**2 PHARYNGEAL — the OROPHARYNX’S PHASE**|**INVOLUNTARY**|**velopharyngeal sphincter shuts the nasopharynx · larynx elevates and closes (epiglottis, then false and true cords) · RESPIRATION STOPS · cricopharyngeus relaxes**|\n|**3 OESOPHAGEAL**|**INVOLUNTARY**|peristalsis to the stomach|\n\n- **THE OROPHARYNX IS THE 2ND PHASE, NOT THE 3RD.** **Aspiration is failure of the PHARYNGEAL phase** *(phase detail not in course material)*.\n\nSrc: L1.2 slides 10–11 (lines 61–78); phases named in L7 and L10, cited only",
+        "qs": [
+          "entqb-thr1-8",
+          "entqb-thr1-9"
+        ]
+      },
+      {
+        "id": "pha-5",
+        "w": "must",
+        "h": "The palatine tonsil — crypts, capsule, bed",
+        "body": "**A pair of lymphoid masses either side of the oropharynx. Normal tonsils are FLUSH WITH THE EDGES OF THE FAUCES.**\n- **Medial surface: 8–30 DEPRESSIONS (CRYPTS). The largest, the CRYPTA MAGNA, separates the upper pole from the tonsillar body.**\n- **Crypts multiply the surface for direct antigen sampling** — the tonsil has **no afferent lymphatics** *(mechanism not in course material)*; the same pouches trap debris → **tonsilloliths**.\n- **Lateral (deep) surface: a FIBROUS CAPSULE** separating tonsil from bed. **The lower pole may reach the base of tongue and become continuous with the LINGUAL TONSIL.**\n\n|THE BED — four structures|NOT in the bed|\n|---|---|\n|**SUPERIOR CONSTRICTOR**|**MIDDLE constrictor** — attached to the hyoid, below the fossa|\n|**GLOSSOPHARYNGEAL nerve**|the **PILLARS** — palatoglossus in front, palatopharyngeus behind|\n|**FACIAL artery** (tonsillar branch)|—|\n|**BUCCOPHARYNGEAL fascia**|—|\n\n- **The INTERNAL CAROTID lies ~2.5 cm BEHIND AND LATERAL to the tonsil** *(figure not in course material)* — hence the danger of deep dissection. Injury to IX in the bed → **loss of taste over the posterior third, referred otalgia**.\n\nSrc: L1.2 slides 12–13 (lines 80–95; the bed is `ent-pharsupp`’s counted range)",
+        "qs": [
+          "entqb-thr1-10",
+          "entqb-thr4-171",
+          "entqb-thr4-227"
+        ]
+      },
+      {
+        "id": "pha-6",
+        "w": "must",
+        "h": "Tonsil — arteries, paratonsillar vein, lymphatics",
+        "body": "**FIVE ARTERIES, ALL FROM THE EXTERNAL CAROTID. NO THYROID ARTERY CONTRIBUTES.**\n\n|Artery|Parent|\n|---|---|\n|**TONSILLAR branch of the FACIAL — THE MAIN SUPPLY**|facial|\n|**Ascending palatine**|facial|\n|**Dorsalis linguae**|lingual|\n|**Descending palatine**|maxillary|\n|**Ascending pharyngeal**|external carotid, direct|\n\n- **The main vessel enters at the LOWER POLE** — usual source of tonsillectomy haemorrhage *(pole and parent vessels not in course material)*.\n- **PARATONSILLAR VEIN** — drains the **UPPER pole** to the pharyngeal plexus and the **INTERNAL jugular**: the route of **septic IJV thrombophlebitis, LEMIERRE’S, Fusobacterium necrophorum** *(not in course material)*, and of upper-pole bleeding.\n- **LYMPH: UPPER DEEP CERVICAL, especially the JUGULODIGASTRIC node** — printed *“Jugulo-diagastric”*.\n\nSrc: L1.2 slide 14 (lines 97–104)",
+        "qs": [
+          "entep-throat-21",
+          "entqb-thr1-11",
+          "entqb-thr4-190",
+          "entqb-thr4-170"
+        ]
+      },
+      {
+        "id": "pha-7",
+        "w": "must",
+        "h": "Waldeyer’s ring — five components",
+        "body": "**“A ring of LYMPHOID TISSUE GUARDING THE ENTRANCE TO THE DIGESTIVE AND RESPIRATORY TRACTS”** — early recognition of pathogens, initiation of the immune response.\n\n|#|Component|Eponym / site|\n|---|---|---|\n|1|**NASOPHARYNGEAL TONSIL (ADENOID)**|**LUSCHKA’S** — nasopharyngeal roof|\n|2|**TUBAL TONSILS**|**GERLACH’S** — around the Eustachian orifice|\n|3|**PALATINE TONSILS**|tonsillar fossae|\n|4|**LINGUAL TONSILS**|base of tongue|\n|5|**LATERAL PHARYNGEAL BANDS**|posterolateral wall|\n\n- *(Gerlach and Luschka not in course material — zero hits across all 34 decks.)*\n- **BOTH STANDING DISTRACTORS ARE LYMPH NODES, NOT RING TISSUE. HENLE’S lymphoid tissue = retropharyngeal NODES, BEHIND the pharynx, atrophying by about age five** — why retropharyngeal abscess is a disease of small children. **DELPHIAN (prelaryngeal) node** — pretracheal, on the cricothyroid membrane.\n\nSrc: L1.2 slide 15 (lines 106–115); Henle’s nodes from L4, cited only",
+        "qs": [
+          "entep-throat-66",
+          "entqb-thr1-27"
+        ]
+      },
+      {
+        "id": "pha-8",
+        "w": "must",
+        "h": "Hypopharynx — three subsites, and the piriform fossa",
+        "body": "**Hyoid above → lower border of cricoid below.**\n\n|Subsite|Extent|Point|\n|---|---|---|\n|**PIRIFORM (pyriform) FOSSAE**|paired gutters lateral to the larynx, pharyngoepiglottic fold → apex at cricoid level|**commonest hypopharyngeal cancer subsite**|\n|**POST-CRICOID AREA**|**ARYTENOID CARTILAGES above → LOWER BORDER OF CRICOID below**|**Plummer-Vinson web**, post-cricoid carcinoma|\n|**POSTERIOR PHARYNGEAL WALL**|vallecula → pharyngo-oesophageal junction|—|\n\n- **PIRIFORM FOSSA WALLS** *(in prose on neither deck — supplied, not in course material)*: **MEDIALLY the ARYEPIGLOTTIC FOLD, ARYTENOID and CRICOID CARTILAGE — the larynx itself; LATERALLY the THYROID CARTILAGE and THYROHYOID MEMBRANE.**\n- **COMMONEST SITE OF FISH-BONE IMPACTION = THE PIRIFORM FOSSA** *(not in course material — the deck’s own not-covered list names fish-bone impaction)*. **The tonsil and pillars are the first place to LOOK**; a normal-looking throat does not exclude one.\n\nSrc: L1.2 slides 17–18 (lines 119–128); L1.1 slide 12; subsite frequency from L10, cited only",
+        "qs": [
+          "entqb-thr1-13",
+          "entqb-thr1-16",
+          "entqb-thr1-28"
+        ]
+      },
+      {
+        "id": "pha-9",
+        "w": "must",
+        "h": "The constrictors, their four gaps, Killian’s dehiscence",
+        "body": "**Three, overlapping upwards, all inserting into the MIDLINE PHARYNGEAL RAPHE** *(raphe not in course material)*.\n\n|Constrictor|Named parts|Attaches to|\n|---|---|---|\n|**SUPERIOR**|**pterygopharyngeal · buccopharyngeal · mylopharyngeal · glossopharyngeal**|pterygoid, mandible, tongue — **forms the TONSILLAR BED**|\n|**MIDDLE**|**chondropharyngeal · ceratopharyngeal**|**THE HYOID, lesser and greater cornua — the one constrictor attached to the hyoid**|\n|**INFERIOR**|**thyropharyngeal · cricopharyngeal**|thyroid and cricoid; **cricopharyngeus = upper oesophageal sphincter**|\n\n**FOUR GAPS** *(contents supplied — the deck shades only the fourth)*:\n\n|Gap|Transmits|\n|---|---|\n|**Above superior**|Eustachian tube, levator veli palatini|\n|**Superior / middle**|**stylopharyngeus, IX**|\n|**Middle / inferior**|**INTERNAL branch of the SLN, superior laryngeal artery** — through the thyrohyoid membrane|\n|**Below inferior**|**RECURRENT LARYNGEAL NERVE, inferior laryngeal artery**|\n\n- **KILLIAN’S DEHISCENCE — the muscle-free triangle in the POSTERIOR MIDLINE between the THYROPHARYNGEAL and CRICOPHARYNGEAL parts**, shaded and labelled *“dehiscence”*. **Weak because muscular tissue is absent; the site of ZENKER’S DIVERTICULUM**, a pulsion pouch from failed cricopharyngeal relaxation. **LAIMER’S TRIANGLE** lies **below** cricopharyngeus.\n- **Defect note:** one option list offers *thyropharyngeal* and *inferior constrictor* separately — thyropharyngeus is part of the inferior constrictor. Keyed as printed.\n\nSrc: L1.2 slides 19–22 (lines 130–158)",
+        "qs": [
+          "entqb-thr1-14",
+          "entqb-thr1-31"
+        ]
+      },
+      {
+        "id": "pha-10",
+        "w": "must",
+        "h": "Nerve supply of the pharynx, and the tongue’s four nerves",
+        "body": "**Sensory from IX, motor from X, through the PHARYNGEAL PLEXUS** *(composition not in course material)*.\n\n|Region|Sensory nerve|\n|---|---|\n|**Nasopharynx**|**TRIGEMINAL V2**|\n|**Paranasal sinuses**|**TRIGEMINAL**|\n|**Oropharynx, soft palate, PALATINE TONSIL, posterior third of tongue**|**GLOSSOPHARYNGEAL (IX)**|\n|**VALLECULA, epiglottis, hypopharynx, larynx ABOVE the cords**|**VAGUS — INTERNAL BRANCH OF THE SUPERIOR LARYNGEAL NERVE**|\n\n- **THE VALLECULA IS NOT RECURRENT-LARYNGEAL TERRITORY** — the deck labels it *“Vagus (X) — via internal branch of superior laryngeal nerve”*. **The cords are the dividing line**; below them, RLN.\n- **MOTOR: all pharyngeal muscles by the plexus EXCEPT stylopharyngeus (IX) and tensor veli palatini (V3)** *(not in course material)*.\n- **GAG AND SWALLOWING REFLEX: afferent IX, efferent X.** IX also carries **sensation from the ear (tympanic nerve)** — why the tonsil refers pain to the ear.\n\n||**Anterior 2/3 of tongue**|**Posterior 1/3**|\n|---|---|---|\n|**General sensation**|**LINGUAL — TRIGEMINAL V3**|**GLOSSOPHARYNGEAL (IX)**|\n|**Taste**|**CHORDA TYMPANI — FACIAL (VII)**|**GLOSSOPHARYNGEAL (IX)**|\n\n- **In front the two modalities SPLIT between two nerves; behind, IX carries both** *(table not in course material)*. **Loss of taste in front localises a facial palsy ABOVE the chorda tympani.**\n\nSrc: L1.2 slides 23–24 (lines 160–175)",
+        "qs": [
+          "entqb-thr1-15",
+          "entqb-nose1-30",
+          "entqb-nose1-31"
+        ]
+      },
+      {
+        "id": "pha-11",
+        "w": "must",
+        "h": "The laryngeal skeleton, its membranes and its spaces",
+        "body": "**THE LARYNGEAL BOX: HYOID (suspension) + THYROID + CRICOID + EPIGLOTTIS + paired ARYTENOID, CORNICULATE, CUNEIFORM. The MANDIBLE is no part of it.** **Unpaired: thyroid, cricoid, epiglottis** *(grouping not in course material)*.\n\n|Cartilage|Features|\n|---|---|\n|**THYROID**|notch · **laryngeal prominence** · superior and inferior cornua · superior and inferior tubercles · **oblique line**|\n|**CRICOID**|**LAMINA behind, ARCH in front — a signet ring, THE ONLY COMPLETE RING IN THE AIRWAY**; facets for the arytenoid and for the thyroid’s inferior horn|\n|**ARYTENOID**|**PAIRED, pyramidal. VOCAL PROCESS ANTERIORLY (vocal ligament) · MUSCULAR PROCESS LATERALLY (posterior and lateral cricoarytenoid) · BASE on the cricoid**, a synovial joint|\n|**EPIGLOTTIS**|leaf-shaped elastic cartilage; **suprahyoid and infrahyoid parts**; epiglottic tubercle; thyroepiglottic ligament|\n\n- **The complete ring is drawn, never stated in words** *(phrase not in course material)* — it is what **cricoid pressure** acts on.\n\n|Group|Membranes and ligaments|\n|---|---|\n|**EXTRINSIC**|**THYROHYOID MEMBRANE — pierced by the INTERNAL BRANCH OF THE SLN and the superior laryngeal artery** · median + lateral thyrohyoid ligaments · **cartilago triticea** · hyo-epiglottic · cricotracheal|\n|**INTRINSIC**|**QUADRANGULAR MEMBRANE → free lower edge = VESTIBULAR LIGAMENT (false cord)** · **CRICOTHYROID LIGAMENT / conus elasticus → free upper edge = VOCAL LIGAMENT (true cord)** · **MEDIAN CRICOTHYROID LIGAMENT = the cricothyroidotomy site** *(not in course material)*|\n\n- **PRE-EPIGLOTTIC SPACE** — fat-filled; **hyo-epiglottic ligament above, thyroid cartilage and thyrohyoid membrane in front, infrahyoid epiglottis behind**. Continuous with the paraglottic space; no barrier, so **infrahyoid epiglottic tumour enters it early** *(spread not in course material)*.\n\nSrc: L1.1 slides 2–8, 11 (lines 18–92)",
+        "qs": [
+          "entqb-thr1-17",
+          "entqb-thr1-18",
+          "entqb-thr7-333"
+        ]
+      },
+      {
+        "id": "pha-12",
+        "w": "must",
+        "h": "The laryngeal cavity — three compartments",
+        "body": "|Compartment|Extent|Contents|\n|---|---|---|\n|**SUPRAGLOTTIS**|inlet → **floor of the ventricle**|epiglottis · aryepiglottic folds · cuneiform and corniculate tubercles · **VESTIBULE** · **VESTIBULAR (FALSE) FOLDS** with the **RIMA VESTIBULI**|\n|**GLOTTIS**|**THE SPACE BETWEEN THE TRUE VOCAL CORDS — the folds plus the RIMA GLOTTIDIS**|anterior and posterior commissures; vocal processes|\n|**SUBGLOTTIS**|below the cords → **lower border of cricoid** = **infraglottic space**|continuous with the trachea|\n\n- **LARYNGEAL VENTRICLE** — the recess **between true and false folds**; its anterior upward extension is the **SACCULE**, origin of a **laryngocele** *(not in course material)*. **The false cords can hide the true cords at laryngoscopy.**\n\nSrc: L1.1 slides 10–11 (lines 77–92)",
+        "qs": [
+          "entqb-thr1-32"
+        ]
+      },
+      {
+        "id": "pha-13",
+        "w": "must",
+        "h": "The vocal fold — its layers, and Reinke’s space",
+        "body": "**THE VOCAL CORD IS COVERED BY STRATIFIED SQUAMOUS EPITHELIUM — the exception in a tract lined by CILIATED COLUMNAR**, labelled above and below the fold. Squamous because the cord takes friction.\n\n|Layer|What it is|\n|---|---|\n|**EPITHELIUM**|stratified squamous, non-keratinizing|\n|**SUPERFICIAL lamina propria**|**= SUBEPITHELIAL LAYER = REINKE’S SPACE.** Loose, gelatinous, **avascular, almost no lymphatics**|\n|**INTERMEDIATE + DEEP lamina propria**|the **VOCAL LIGAMENT** *(not in course material)*|\n|**MUSCULARIS**|**VOCALIS**, medial part of thyroarytenoid|\n\n- Loose → the **MUCOSAL WAVE**; flooded → **Reinke’s oedema**; nearly avascular → it **delays glottic cancer spread**.\n- **The deck draws it and never prints the eponym**; the name is from the hoarseness lecture. The bank spells it *“Reineck’s”* — as printed.\n\nSrc: L1.1 slide 13 (lines 100–108); the eponym from L2, cited only",
+        "qs": [
+          "entqb-thr1-23",
+          "entqb-thr1-26"
+        ]
+      },
+      {
+        "id": "pha-14",
+        "w": "must",
+        "h": "Muscles — one abductor, the rest adduct or tense",
+        "body": "|Intrinsic muscle|Action|\n|---|---|\n|**POSTERIOR CRICOARYTENOID**|**THE ONLY ABDUCTOR — the only muscle that opens the airway**|\n|**LATERAL CRICOARYTENOID**|adductor|\n|**TRANSVERSE and OBLIQUE ARYTENOID (interarytenoid)**|adductors — close the posterior glottis|\n|**THYROARYTENOID**|adducts, shortens, relaxes|\n|**VOCALIS**|**the MEDIAL PART OF THYROARYTENOID**, beside the vocal ligament — fine tension|\n|**CRICOTHYROID**|**the TENSOR, sets pitch.** The one intrinsic muscle **NOT** supplied by the recurrent laryngeal nerve|\n|**ARYEPIGLOTTIC, THYROEPIGLOTTIC**|sphincter of the inlet|\n\n- **Defect note:** one option list offers an *“anterior cricoarytenoid muscle”*. **No such muscle exists** — the pair are posterior and lateral. Keyed as printed.\n- **Bilateral loss of the posterior cricoarytenoids leaves the cords adducted and the airway shut** — abductor palsy is the emergency.\n- **EXTRINSIC muscles move the larynx; elevation in swallowing is the point** *(lists not in course material)*. **ELEVATORS: mylohyoid · digastric · stylohyoid · geniohyoid · thyrohyoid · stylopharyngeus · palatopharyngeus. DEPRESSORS (infrahyoid straps): sternohyoid · sternothyroid · omohyoid.**\n- **The larynx is shielded by the MANDIBLE above, STERNUM below, STERNOMASTOIDS laterally, cervical spine behind** — blunt laryngeal injury implies major force.\n\nSrc: L1.1 slide 9 (lines 66–75); L1.2 slide 19 for the extrinsic group",
+        "qs": [
+          "entqb-thr1-19",
+          "entqb-thr1-24",
+          "entep-mfe4-23",
+          "entqb-thr7-334"
+        ]
+      },
+      {
+        "id": "pha-15",
+        "w": "must",
+        "h": "Nerve supply of the larynx — the cords divide everything",
+        "body": "**ALL FROM THE VAGUS (X). The HYPOGLOSSAL supplies the tongue and no part of the larynx.**\n\n|Nerve|Motor|Sensory|\n|---|---|---|\n|**SLN — INTERNAL branch**, piercing the thyrohyoid membrane|**none**|**ABOVE the cords** — supraglottis, epiglottis, vallecula. **Afferent limb of the COUGH REFLEX**|\n|**SLN — EXTERNAL branch**|**CRICOTHYROID ONLY**|none|\n|**RECURRENT LARYNGEAL NERVE**|**EVERY OTHER INTRINSIC MUSCLE** — thyroarytenoid, posterior and lateral cricoarytenoid, interarytenoid, thyroepiglottic|**BELOW the cords**|\n\n- **ANASTOMOSIS OF GALEN** — labelled, between the internal SLN and the RLN.\n- **LEFT RLN hooks under the AORTIC ARCH, right under the SUBCLAVIAN** — the left is longer and the one at risk in chest surgery *(not in course material)*. The **external SLN** is at risk on the superior thyroid pedicle: flat voice, no high notes.\n- **Deck schematic: TRANSECTION → cords apart; TRAUMA WITHOUT TRANSECTION → cords driven together.** **Bilateral complete → cadaveric cords, APHONIA and aspiration; bilateral incomplete → paramedian cords and STRIDOR** *(the named positions appear on no slide; supplied)*.\n\nSrc: L1.1 slides 6, 14–15 (lines 48–54, 110–128)",
+        "qs": [
+          "entep-throat-9",
+          "entep-throat-25",
+          "entep-mfe4-24",
+          "entqb-thr1-20",
+          "entqb-thr1-29",
+          "entqb-thr7-334"
+        ]
+      },
+      {
+        "id": "pha-16",
+        "w": "high",
+        "h": "Blood supply and lymphatic drainage of the larynx",
+        "body": "|Vessel|Origin|Runs with|\n|---|---|---|\n|**SUPERIOR LARYNGEAL ARTERY**|**superior thyroid** (external carotid)|**internal branch of the SLN, through the thyrohyoid membrane**|\n|**INFERIOR LARYNGEAL ARTERY**|**inferior thyroid** (thyrocervical trunk)|**recurrent laryngeal nerve**|\n\n- **Veins follow: superior → superior thyroid → INTERNAL JUGULAR; inferior → inferior thyroid → brachiocephalic** *(not in course material)*.\n\n**LYMPHATICS — no cached deck covers this; the whole table is supplied** *(not in course material)*:\n\n|Region|Drains to|Consequence|\n|---|---|---|\n|**SUPRAGLOTTIS**|**UPPER DEEP CERVICAL — rich and BILATERAL**|nodes early, often both sides; **worst prognosis**|\n|**GLOTTIS**|**essentially NONE** — the cords are the watershed|**hoarseness early, nodes late; BEST prognosis**|\n|**SUBGLOTTIS**|**LOWER DEEP CERVICAL, pre- and paratracheal, DELPHIAN (prelaryngeal) node**|silent until late; mediastinal spread|\n\nSrc: L1.1 slide 16 (lines 130–140); lymphatics supplied",
+        "qs": [
+          "entqb-thr1-33"
+        ]
+      },
+      {
+        "id": "pha-17",
+        "w": "high",
+        "h": "The infantile larynx",
+        "body": "|Feature|INFANT|ADULT|\n|---|---|---|\n|**Size**|**small, absolutely AND relative to body surface area**|larger|\n|**Position**|**HIGH — C3–4**|**C6–7** *(adult level not in course material)*|\n|**Shape**|**FUNNEL / CONICAL → narrow SUBGLOTTIS**|cylindrical|\n|**Narrowest point**|**SUBGLOTTIS at the cricoid — 4.5 mm at birth**|the glottis|\n|**Epiglottis**|**LONG, TUBULAR, FOLDED ON ITSELF — OMEGA-shaped**|flat, broad|\n|**Arytenoids / cords**|**BIG arytenoids, SHORT cords**|proportionate|\n|**Cartilage**|**SOFTER**|firm|\n|**Mucosa**|**LOOSELY attached to submucosa → oedema forms fast**|firmly attached|\n|**Reflexes**|**premature neuromuscular control → cord SPASM; premature cough reflex → FOREIGN-BODY ASPIRATION**|mature|\n\n- **POISEUILLE’S LAW:** narrow subglottis + loose submucosa → **1 mm of oedema takes a large fraction of the lumen**.\n- **Defect note:** one key prints the cricoid diameter as **3.5–4.5 mm**; the paediatric lecture prints **4.5 mm**. Keyed as printed.\n\nSrc: L12 and L6, cited only — both anatomy decks omit the infant larynx entirely",
+        "qs": [
+          "entep-ear-51",
+          "entep-throat-19",
+          "entep-mfe4-11"
+        ]
+      }
+    ]
   }
 };

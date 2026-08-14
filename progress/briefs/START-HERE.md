@@ -877,7 +877,7 @@ if the receiving chapter actually gets it.**
 | `ent-csom` (L17,18) | **CSF otorrhoea** in full · **bloody otorrhoea and glomus tumours** | `ent-otorrhea` | ✅ **delivered 2026-08-14** — `otor-2`/`otor-3`/`otor-7`/`otor-8` — the same deck row 1 deferred, delivered once |
 | `ent-csom` (L17,18 / L22 / L15) | **Otitis externa in full** · the **four-nerve referred-otalgia** table · ear anatomy detail · facial-nerve disorders | `ent-otalgia` ✅ / `ent-earanat` ☐ / `ent-facial` ☐ |
 | `ent-csom` (L4) | **Pharyngeal suppurations** — only the Bezold's → parapharyngeal clause kept | `ent-pharsupp` | ✅ **delivered 2026-08-14** |
-| `ent-pharsupp` (L1.2) | Pharyngeal divisions, **Waldeyer's ring**, the constrictors and the **inferior-constrictor dehiscence**, blood supply, nerve-supply diagrams, the swallowing phases. Only the tonsillar bed and **crypta magna** kept | `ent-pharanat` | ☐ |
+| `ent-pharsupp` (L1.2) | Pharyngeal divisions, **Waldeyer's ring**, the constrictors and the **inferior-constrictor dehiscence**, blood supply, nerve-supply diagrams, the swallowing phases. Only the tonsillar bed and **crypta magna** kept | `ent-pharanat` | ✅ **delivered 2026-08-14** — divisions `pha-1` · Waldeyer’s ring `pha-7` · constrictors + dehiscence `pha-9` · blood supply `pha-6` · nerve plates `pha-10` · swallowing phases `pha-4`. The tonsillar bed and crypta magna are written here too (`pha-5`) because questions key both — the declared "arrives by deferral, words stay charged elsewhere" case |
 | `ent-pharsupp` (L5) | **Branchial cyst, thyroglossal cyst**, the neck-mass differential | `ent-neck` | ✅ **delivered 2026-08-14** — `neck-6`/`neck-7`/`neck-3` — **the tongue-protrusion sign is present**, with its mechanism (tract tethered to the foramen caecum through the body of the hyoid), and again as a row of `neck-8` |
 | `ent-pharsupp` (L16) | **Bezold's abscess in full** — mastoiditis, mastoid tip, the compass of spread, cortical mastoidectomy. Only the keyed mastoid-tip → parapharyngeal line kept | `ent-csom` | ☐ |
 | `ent-tonsils` (v3) | **Quinsy management** — Hilton's manoeuvre, the incision points, interval tonsillectomy | `ent-pharsupp` | ✅ **delivered 2026-08-14** |
@@ -893,7 +893,7 @@ if the receiving chapter actually gets it.**
 | `ent-hoarse` (L2) | **The whole aetiology of vocal cord paralysis** — the unilateral ranking (bronchogenic ca 1st, thyroid 2nd, oesophageal 3rd, skull base 4th), the surgical and neurologic lists, bilateral percentages (iatrogenic 80 %, malignancy 10 %, neurologic 5 %), cord positions, RLN-vs-vagus, the management ladders. **Kept here:** only adductor→aspiration, abductor→stridor-with-normal-voice, and the fixation list | `ent-vocal` | ☐ |
 | `ent-hoarse` (L2) | **Croup / ALTB** in full (viral, winter, 1–3 y, barking cough, steeple sign) and **acute epiglottitis**. Kept here as names only, being rows of the laryngitis classification one question's option list reproduces | `ent-stridor` ✅ / `ent-paedlar` ☐ | ☐ |
 | `ent-hoarse` (L2) | **RRP beyond one line** — the full account and treatment ladder. **Kept here:** HPV 6/11, commonest benign laryngeal tumour, involution at puberty, avoid tracheostomy, mitomycin, adult papilloma premalignant | `ent-paedlar` | ✅ **already there** — `paed-8`, written first |
-| `ent-hoarse` (L1.1) | Laryngeal cartilages, membranes and ligaments, extrinsic muscles, blood supply, the nerve-supply plates, piriform sinus, pre-epiglottic space **as anatomy** | `ent-pharanat` | ☐ |
+| `ent-hoarse` (L1.1) | Laryngeal cartilages, membranes and ligaments, extrinsic muscles, blood supply, the nerve-supply plates, piriform sinus, pre-epiglottic space **as anatomy** | `ent-pharanat` | ✅ **delivered 2026-08-14** — `pha-11`–`pha-16`. **The row is unambiguously this chapter’s: 22 of its 44 questions test laryngeal anatomy directly**, the nerve plates alone carrying six |
 | `ent-hoarse` (L8) | **The phoniatric evaluation protocol in full** — GRBAS parameter by parameter, VHI / VHI-10 / V-RQoL, the elementary/clinical/instrumental tiers, external laryngeal examination, mirror vs rigid vs flexible vs direct, stroboscopy, aerodynamic measures, the content of voice therapy, dysarthria/dyslalia/aphasia | `ent-phon` | ☐ |
 | `ent-hoarse` (L6) | Stridor typing, tracheostomy, the adult and paediatric cause lists | `ent-stridor` | ✅ already written |
 | `ent-hoarse` (L30) | **Rhinoscleroma of the nose** — its nasal stages and nasal management | `ent-rhin` | ✅ **delivered 2026-08-14** — `rhin-12`; `hoar-6` keeps the subglottis and the stridor-with-normal-voice line, checked so neither re-argues the other |
@@ -924,7 +924,7 @@ if the receiving chapter actually gets it.**
 | `ent-rhin` (L30) | **Laryngeal scleroma** — verified present in `hoar-6` before deferring | `ent-hoarse` | ✅ already written |
 | `ent-rhin` (L29) | **Adenoids** | `ent-tonsils` | ☐ **⚠️ tonsils is already merged; reconciliation work. 2nd chapter to owe it** |
 | `ent-dysph` (L7) | **The whole swallowing-assessment deck** except its aetiology table — 1,522 of its 1,616 words | `ent-swallow` | ☐ |
-| `ent-dysph` (L1.2) | **Pharyngeal anatomy** — only Killian's triangle kept | `ent-pharanat` | ☐ **⚠️ 2ND CHAPTER TO OWE IT — `ent-pharsupp` registered it first** |
+| `ent-dysph` (L1.2) | **Pharyngeal anatomy** — only Killian's triangle kept | `ent-pharanat` | ✅ **delivered 2026-08-14** — same deck as the row above, **delivered once not twice** — `pha-9`. `dys-11` keeps Killian’s only as the SITE of Zenker’s, so the anatomy is here and the lesion stays `ent-dysph`’s |
 | `ent-dysph` (L8) | **The phoniatric protocol** — only the laryngeal click kept | `ent-phon` | ☐ **⚠️ 2ND CHAPTER TO OWE IT — `ent-hoarse` registered it first** |
 | `ent-dysph` (L5) | The **neck-mass differential** — only the cystic swelling kept | `ent-neck` | ✅ **delivered 2026-08-14** — `neck-3` — the same grid, organised on the cystic-vs-solid axis it kept |
 | `ent-dysph` (L2) | The **supraglottic/glottic/subglottic carcinoma table** — verified present in `hoar-8`, which also already carries the Plummer–Vinson-is-premalignant-for-postcricoid-not-laryngeal line | `ent-hoarse` | ✅ already written |
@@ -946,6 +946,9 @@ if the receiving chapter actually gets it.**
 | `ent-nasalobs` (L23 lines 1–86) | **Nasal anatomy** — 297 words; only the choanal-atresia and CNPAS half (87–177) was claimed here | `ent-noseanat` | ☐ |
 | `ent-sinusitis` (L27.1 line 285 · general) | **The complications in full** — pre- vs post-septal cellulitis and the orbital staging, the **lamina papyracea** route, **Pott’s puffy tumour** and the diploic veins, and **sinus → frontal lobe / ear → temporal lobe and cerebellum**. Its two-word orbital caption was **subtracted from this chapter’s TERM 1** rather than counted | `ent-sinuscomp` | ☐ **⚠️ `L28` DOES NOT EXIST — this chapter has no lecture and is written from general knowledge against its own 10 questions. It was deliberately NOT absorbed here; none of `ent-sinusitis`’s 47 tests any of it.** |
 | `ent-sinusitis` (L23 lines 1–86) | **Nasal anatomy**, and the **osteomeatal complex as a named unit** | `ent-noseanat` | ☐ **2nd chapter to register it — `ent-nasalobs` was first** |
+| `ent-pharanat` (L1.2/L1.1) | **Swallowing going wrong, and every instrument used to look at it** — penetration / aspiration / silent aspiration, the bedside screen, FEES and its white-out, VFSS, manometry, postures, diet, the team. `pha-4` writes the three phases as NORMAL PHYSIOLOGY, including the *"2nd ‘pharyngeal’ phase"* parenthesis a key turns on | `ent-swallow` | ☐ **boundary stated: 2 questions here need the phases, none needs the assessment** |
+| `ent-pharanat` (L1.1) | **Vocal cord paralysis as a subject** | `ent-vocal` | ☐ **⚠️⚠️ 3RD CHAPTER TO OWE THIS — `ent-hoarse` and `ent-paedlar` registered it first. See the note below.** |
+| `ent-pharanat` (L1.2) | **Congenital laryngeal anomalies** | `ent-paedlar` | ☐ **⚠️ paedlar is already merged; reconciliation work** |
 
 > **⚠️⚠️ `ent-otorrhea` IS NOW OWED THE SAME OTORRHOEA DECK BY THREE CHAPTERS INDEPENDENTLY** —
 > `ent-otalgia`, `ent-csom` and `ent-hearing`, none of which knew of the others. That is not
@@ -984,6 +987,23 @@ if the receiving chapter actually gets it.**
 > allergic and contraindicated in invasive disease, and the mucormycosis vignette. L30’s 227 words
 > stay charged to `ent-rhin`. **Writing `sin-11` was the right call: without it twelve questions
 > would have had no reachable notes at all.**
+
+> **⚠️ `ent-vocal` (25 questions) IS NOW OWED VOCAL CORD PARALYSIS BY THREE CHAPTERS** — `ent-hoarse`,
+> `ent-paedlar` and `ent-pharanat`, none aware of the others. **This is the same shape as
+> `ent-otorrhea`**, which turned out to carry the largest content debt in the module behind the
+> smallest question count. Between them the three rows owe: the unilateral aetiology ranking
+> (bronchogenic ca 1st, thyroid 2nd, oesophageal 3rd, skull base 4th), the surgical and neurologic
+> lists, the bilateral percentages (iatrogenic 80 %, malignancy 10 %, neurologic 5 %), the cord
+> positions, the RLN-vs-vagus contrast, the management ladders, and congenital cord palsy.
+> **Brief it against all three rows at once and let its ENTITY floor set the budget, never its 25
+> questions.**
+
+> **✅ HUB RULING, asked for rather than assumed — NASOPHARYNGEAL CARCINOMA DOES HAVE A HOME, IN
+> FACT TWO, AND NEITHER IS MISSING.** `ent-pharanat` flagged that no `ent-npc` exists in `MODULES`
+> and refused to assume. Checked: **`nmass-8` carries NPC as a full entity (12 questions)** and
+> **`aom-11` carries the adult-unilateral-effusion rule (11 questions)** — different angles, different
+> question sets, both written. **No row is owed and none should be opened.** Flagging it was still
+> correct: a chapter that does not exist cannot be checked for by the validator.
 ### 14.6 What this costs, said plainly
 
 The notes alone no longer explain why each wrong option is wrong — **the linked questions do**,
