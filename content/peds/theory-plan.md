@@ -35,6 +35,16 @@ lecture content, **say so and itemise the cost** — do not quietly trim.
 `W` = summed words of that chapter's cached decks. `Q` = questions filed today (they will grow —
 see the reconciliation pass below). Ceiling = `max(W, 25Q, 600)`.
 
+> **⚠️ COUNT WITH `split(/\s+/)` IN NODE, NEVER `wc -w` — THEY DISAGREE BY 3–6 % AND BOTH OF THE
+> FIRST TWO AGENTS REPORTED THE TABLE AS WRONG.** It was not wrong; the per-deck figures quoted in
+> their briefs came from `wc` while this table came from node, so the two never reconciled.
+> **Cause: `pdftotext` leaves a U+000C form feed at every page break** — 99 of them in
+> `39)Hematuria` alone — and JS `\s` merges a form feed with the space beside it while `wc` does
+> not. Renal reads **7,174 (node) / 6,699 (`wc`)**, cardiac **7,052 / 6,867**.
+> **node is the project convention because `vth.js` measures the finished draft that way**, so a
+> ceiling counted with `wc` would be compared against a body counted with node. Nothing here binds —
+> both chapters landed far under either figure — but quote ONE counter.
+
 | Chapter | Ceiling | W | Q | Decks (in `content\peds\lectures\`) |
 |---|---:|---:|---:|---|
 | `respiratory` | 12,984 | 12,984 | 0 | `30) Pneumonia` · `PNEUMONIA` · `31).1)Asthma part 1` · `31).2)Asthma part 2` · `Asthma_` · `Asthma  e-book` · `32)Acute bronchiloitis_` |
