@@ -927,7 +927,7 @@ if the receiving chapter actually gets it.**
 | `ent-septum` (L24/L31) | The general **nasal-obstruction work-up** — mucosal aetiology lists, turbinate hypertrophy in its own right, NOSE/SNOT-22, rhinomanometry, the decongestant rules · **CSF rhinorrhoea** after mid-facial trauma | `ent-nasalobs` | ✅ **delivered 2026-08-14** — work-up half MERGED into `nobs-2`/`3`/`7` — the THIRD independent deferral of one set of slides, delivered once; **CSF rhinorrhoea in full in `nobs-9`** |
 | `ent-septum` (L24) | **Nasal-valve anatomy in full** and valve reconstruction. Only the Cottle test and the valve's role in obstruction kept | `ent-nasalobs` | ✅ **delivered 2026-08-14** — `nobs-7`. L24 prints only the Cottle clause, which stays `ent-septum`’s; the rest is tagged as supplied |
 | `ent-septum` (L24) | **Wegener's as an entity** — ANCA, the triad, the systemic disease. Only its saddle-nose key kept | `ent-rhin` | ✅ **delivered 2026-08-14** — `rhin-13`, a full row: multisystem autoimmune collagen disorder, necrotising vasculitis, respiratory tract + kidneys + skin, septal ulceration, saddle nose, c-ANCA + ESR + biopsy, steroids + azathioprine/methotrexate |
-| `ent-septum` (L24) | The septum's **arterial supply as vascular anatomy** — counted in this chapter's budget as L24's own ILO, but owed as anatomy | `ent-noseanat` | ☐ |
+| `ent-septum` (L24) | The septum's **arterial supply as vascular anatomy** — counted in this chapter's budget as L24's own ILO, but owed as anatomy | `ent-noseanat` | ✅ **delivered 2026-08-14** — `nan-8` — both carotid territories, the ECA’s two terminals, the maxillary artery by part, the septal list. **⚠️ `ent-septum` counted these 31 words AND deferred them, so they are billed twice; the receiving chapter counts what it carries and the sender is not rewritten (the `ent-otalgia`→`ent-otorrhea` precedent). Effect on both budgets nil — TERM 2 governed in each.** Little’s area is named here and pointed at `epi-2`; none of these 40 questions tests it |
 | `ent-audio` (L13,14 lines 422–556) | **The entire dizziness half** — epidemiology, ">90 % benign", "commonest cause is lack of sleep", "80 % from history", the Type I–IV classification, the descriptor list | `ent-vertigo` | ✅ **delivered 2026-08-14** — `vert-1`+`vert-2`, fact by fact |
 | `ent-audio` (L13,14 lines 63–83) | **Static vs dynamic balance** | `ent-vertigo` | ✅ **delivered 2026-08-14** — `vert-1` |
 | `ent-audio` (L20) | Everything but the fistula test and the investigation categories | `ent-vertigo` | ☐ **⚠️ 2ND CHAPTER TO OWE THIS — `ent-earanat` registered it first and it is still unwritten. Two independent deferrals of one deck means `ent-vertigo` must be written against BOTH rows.** |
@@ -963,9 +963,9 @@ if the receiving chapter actually gets it.**
 | `ent-otorrhea` (L15) | **Facial palsy from temporal-bone fracture as a subject** — only the 10 % longitudinal / 40 % transverse palsy rates kept, which `L15` does print and are therefore sourced | `ent-facial` | ☐ **⚠️ facial is already merged; reconciliation work** |
 | `ent-otorrhea` (L19.1) | **Haemotympanum, and the CHL/SNHL lists as hearing loss** | `ent-hearing` | ✅ already written |
 | `ent-nasalobs` (L32 lines 6–139) | **Headache in full** — 547 words, the whole facial-pain half of the deck | `ent-facialpain` | ☐ |
-| `ent-nasalobs` (L23 lines 1–86) | **Nasal anatomy** — 297 words; only the choanal-atresia and CNPAS half (87–177) was claimed here | `ent-noseanat` | ☐ |
+| `ent-nasalobs` (L23 lines 1–86) | **Nasal anatomy** — 297 words; only the choanal-atresia and CNPAS half (87–177) was claimed here | `ent-noseanat` | ✅ **delivered 2026-08-14** — `nan-3`/`4`/`7`/`8`/`10`/`11` |
 | `ent-sinusitis` (L27.1 line 285 · general) | **The complications in full** — pre- vs post-septal cellulitis and the orbital staging, the **lamina papyracea** route, **Pott’s puffy tumour** and the diploic veins, and **sinus → frontal lobe / ear → temporal lobe and cerebellum**. Its two-word orbital caption was **subtracted from this chapter’s TERM 1** rather than counted | `ent-sinuscomp` | ☐ **⚠️ `L28` DOES NOT EXIST — this chapter has no lecture and is written from general knowledge against its own 10 questions. It was deliberately NOT absorbed here; none of `ent-sinusitis`’s 47 tests any of it.** |
-| `ent-sinusitis` (L23 lines 1–86) | **Nasal anatomy**, and the **osteomeatal complex as a named unit** | `ent-noseanat` | ☐ **2nd chapter to register it — `ent-nasalobs` was first** |
+| `ent-sinusitis` (L23 lines 1–86) | **Nasal anatomy**, and the **osteomeatal complex as a named unit** | `ent-noseanat` | ✅ **delivered 2026-08-14** — same 86 lines as the row above, **written once, discharging both**. The genuinely new half — the OMC as an anatomical unit — is `nan-5` in full, keyed by four questions. Declared overlap: `sin-2` keeps one bullet naming four components as the SURGICAL rationale; both correct, neither removable |
 | `ent-pharanat` (L1.2/L1.1) | **Swallowing going wrong, and every instrument used to look at it** — penetration / aspiration / silent aspiration, the bedside screen, FEES and its white-out, VFSS, manometry, postures, diet, the team. `pha-4` writes the three phases as NORMAL PHYSIOLOGY, including the *"2nd ‘pharyngeal’ phase"* parenthesis a key turns on | `ent-swallow` | ☐ **boundary stated: 2 questions here need the phases, none needs the assessment** |
 | `ent-pharanat` (L1.1) | **Vocal cord paralysis as a subject** | `ent-vocal` | ☐ **⚠️⚠️ 3RD CHAPTER TO OWE THIS — `ent-hoarse` and `ent-paedlar` registered it first. See the note below.** |
 | `ent-pharanat` (L1.2) | **Congenital laryngeal anomalies** | `ent-paedlar` | ☐ **⚠️ paedlar is already merged; reconciliation work** |
@@ -1041,6 +1041,26 @@ if the receiving chapter actually gets it.**
 > already carries them. Nobody billed them. `ent-phon` stated this rather than sweeping them into
 > TERM 1 to buy headroom, which is the right call: **the budget may understate a chapter, never
 > overstate it.** Under-counting costs nothing; over-counting buys room the content has not earned.
+> **⚠️⚠️ THE END-OF-ENT REVIEW'S "RESTS ON OUTSIDE KNOWLEDGE" LIST IS ABOUT HALF WRONG, AND MUST BE
+> RE-GREPED ITEM BY ITEM BEFORE ANY BOOK-READING IS PLANNED ON IT.** That list drives the most
+> expensive owed work in the project — *"one ENT-nose-book read fixes it"* — and thirteen of its items
+> have now been checked by the chapters that inherited them. **Found PRINTED and used as sourced:**
+> the Cottle test (`L24`, verbatim) · Samter's triad (`L29`, in full) · the postcricoid risk in
+> Plummer–Vinson (`L10`, twice) · globus as a diagnosis of exclusion (`L10`, verbatim) · bird's beak
+> (`L10`) · the infantile larynx (`L12`, in full, plus C3–4 and Poiseuille on `L6`) · Reinke's (`L2`)
+> · and **five of the seven osteomeatal-complex items** — the term *ostiomeatal complex* itself
+> (`L29`), uncinate, bulla, hiatus and infundibulum (`L26`), which the review lists as absent.
+> **Confirmed genuinely ABSENT, 0 hits corpus-wide, and correctly tagged:** agger nasi · lamina
+> papyracea · nasal lymphatic drainage · the valveless venous route to the cavernous sinus (the
+> *complication* is printed three times, the *route* never) · laryngeal lymphatic drainage · rat tail
+> and apple core · glomus as an entity · temporal-bone fracture types · aural foreign body, wax and
+> syringing · Gerlach and Luschka. **Half printed:** the sneeze reflex — `L23` names "reflex function"
+> and `L29` lists "reflexes (cough, sneeze)" among the six defences, but the *arc* is not printed.
+>
+> **⚠️ A spelling can hide a hit: the decks write *ostio-*, and `osteomeatal` returns 0.** Grep the
+> stem, not the word. **The lesson is the standing one — READ THE SLIDE BEFORE DECLARING A GAP — and
+> it has now paid twelve times.** Treat every remaining item on that review list as unverified.
+
 ### 14.6 What this costs, said plainly
 
 The notes alone no longer explain why each wrong option is wrong — **the linked questions do**,

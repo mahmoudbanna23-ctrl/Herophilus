@@ -4698,5 +4698,152 @@ var T_ENT = {
         ]
       }
     ]
+  },
+  "ent-noseanat": {
+    "intro": "Pure list recall, almost always as an “except”: which sinus into which meatus, which bone in the septum, which structure in the complex, which artery from which carotid. The drainage map, the roof and the osteomeatal complex carry half the chapter.",
+    "sections": [
+      {
+        "id": "nan-1",
+        "w": "must",
+        "h": "The nose in outline, and the two vaults of the external nose",
+        "body": "**A MIDLINE STRUCTURE FROM THE SKULL BASE TO THE HARD PALATE**, **divided by the septum into two nearly symmetrical cavities**, **running from the ANTERIOR NARES to the CHOANA (nasopharynx)**.\n\n||**BONY VAULT** — upper third|**CARTILAGINOUS VAULT** — lower two thirds|\n|---|---|---|\n|Made of|**NASAL BONES · frontal process of the MAXILLA · nasal part of the FRONTAL bone** — three bones, no more|**UPPER LATERAL · LOWER LATERAL (ALAR) · SEPTAL (quadrilateral) cartilages**|\n|The “except”|ethmoid, palatine, vomer and lacrimal are **INTERNAL** — roof, floor, septum|the **VOMER is bone and septal**, never external skeleton|\n\n- **SEPTAL (quadrilateral) cartilage, 3–4 mm thick**: partitions the two cavities **and supports the TIP and DORSUM** — lose it and the dorsum drops (**saddle nose**).\n- **NASION = the ROOT OF THE NOSE, the FRONTONASAL SUTURE — junction of the frontal and nasal bones.** Separates the bony vault above from the cartilaginous below. Not the tip, not the septum. Other landmarks: **rhinion** (the dorsum’s bony–cartilaginous junction), tip, columella, ala.\n\nSrc: L23 lines 12–19; septal cartilage L24 lines 26–31. **The vault lists and all surface landmarks not in course material**",
+        "qs": [
+          "entqb-nose1-10",
+          "entqb-nose1-13",
+          "entqb-nose1-32"
+        ]
+      },
+      {
+        "id": "nan-2",
+        "w": "must",
+        "h": "Roof, floor and choana",
+        "body": "|Wall|Formed by|\n|---|---|\n|**ROOF**|front to back: **NASAL BONE → FRONTAL BONE → CRIBRIFORM PLATE OF THE ETHMOID → body of the SPHENOID**|\n|**FLOOR**|**PALATINE PROCESS OF THE MAXILLA** (front) **+ HORIZONTAL PLATE OF THE PALATINE BONE** (back)|\n|**MEDIAL** / **LATERAL**|the **SEPTUM** / **3 turbinates and 3 meati** — below|\n\n- **⚠️ THE PERPENDICULAR PLATE OF THE ETHMOID IS SEPTAL; THE CRIBRIFORM PLATE IS THE ROOF** — a **horizontal** plate to the roof, a **vertical** plate to the septum. The most reprinted “except” here, asked from both ends.\n- **The CRIBRIFORM PLATE is also the FLOOR OF THE ANTERIOR CRANIAL FOSSA**, the thinnest part of the skull base: **ethmoid damage → CSF RHINORRHOEA**, nasal sepsis → **FRONTAL LOBE**, most at risk in sinus surgery.\n- **CHOANA** — the posterior nasal aperture, the nose’s posterior limit: **VOMER medially · MEDIAL PTERYGOID PLATE laterally · SPHENOID above · horizontal plate of the PALATINE bone below.** Where **choanal atresia** forms (the lesion in `ent-nasalobs`).\n\nSrc: L23 lines 12–25. **The nasal-bone and sphenoid roof contributions, the choanal boundaries and the CSF consequences not in course material**",
+        "qs": [
+          "entqb-nose1-1",
+          "entqb-nose1-2",
+          "entqb-nose1-3",
+          "entqb-nose1-14"
+        ]
+      },
+      {
+        "id": "nan-3",
+        "w": "must",
+        "h": "The septum — the medial wall",
+        "body": "**THE SEPTUM HAS THREE PARTS.**\n\n|Part|Structure|\n|---|---|\n|**MEMBRANOUS**|the mobile strip between the columella and the caudal cartilage|\n|**CARTILAGINOUS**|**QUADRILATERAL (SEPTAL) CARTILAGE**, 3–4 mm thick|\n|**BONY**|**PERPENDICULAR PLATE OF THE ETHMOID** (above, in front) **+ VOMER** (below, behind)|\n\n- **Continuities.** The perpendicular plate is **continuous above with the CRIBRIFORM PLATE and CRISTA GALLI** — continuous with, not part of. The vomer articulates **inferiorly with the nasal crest of maxillae and palatine bones**, **anteriorly with the perpendicular plate and septal cartilage**; its **posterior border is the free edge** at the choana.\n- **NOT SEPTAL, both offered as distractors: the CRIBRIFORM PLATE (roof) and the NASAL BONE (external skeleton).**\n- Defect: one “bony septum, all except” offers **both** the nasal bone and the cribriform plate — two correct exceptions — and keys only the cribriform plate; noted, key as printed.\n\nSrc: L23 lines 38–42; L24 lines 22–48. Arterial supply below; Little’s area and Woodruff’s plexus in `ent-epistaxis`; deviated septum, haematoma and perforation in `ent-septum`",
+        "qs": [
+          "entep-nose-22",
+          "entqb-nose1-11"
+        ]
+      },
+      {
+        "id": "nan-4",
+        "w": "must",
+        "h": "The lateral wall — three turbinates, three meati, and the drainage map",
+        "body": "**3 TURBINATES, 3 MEATI.** Each meatus is the space **under and lateral to** its own turbinate.\n\n|Opening|What drains into it|\n|---|---|\n|**INFERIOR meatus**|**NASOLACRIMAL DUCT — AND NOTHING ELSE. NO sinus drains here.** Also the **LARGEST** meatus *(size not in course material)*|\n|**MIDDLE meatus**|**FRONTAL · MAXILLARY · ANTERIOR ETHMOID** (plus the **MIDDLE ETHMOID** cells where a printing lists them apart) — the **osteomeatal complex**|\n|**SUPERIOR meatus**|**POSTERIOR ETHMOID**|\n|**SPHENOETHMOIDAL RECESS**|**SPHENOID.** It lies **above the superior turbinate, between it and the septum** — a recess, not a fourth meatus|\n\n||**ANTERIOR GROUP**|**POSTERIOR GROUP**|\n|---|---|---|\n|Sinuses|**MAXILLARY · FRONTAL · ANTERIOR ETHMOID**|**POSTERIOR ETHMOID · SPHENOID**|\n|Drains to|**MIDDLE MEATUS**, all three|post. ethmoid → **SUPERIOR MEATUS**; sphenoid → **SPHENOETHMOIDAL RECESS**|\n|Endoscopy|**pus in the MIDDLE MEATUS**|**pus in the SPHENOETHMOIDAL RECESS**|\n\n- **THE SPHENOID ANSWERS “which does NOT open into the middle meatus”; THE POSTERIOR ETHMOID ANSWERS IT WHEN THE SPHENOID IS NOT OFFERED.** Read the option list before choosing the exception.\n- Defect: a stem asking which sinus opens **“between superior turbinate and septum”** means the sphenoethmoidal recess, so the sphenoid; the sphenoid is not offered and **posterior ethmoid** is keyed — key as printed.\n- Defect: a stem asking for **“the posterior group”** as one answer when it holds **two**, offering posterior ethmoid beside sphenoid and keying the sphenoid — key as printed.\n\nSrc: L23 lines 26–37; endoscopic pus sites L27.1 lines 176–183",
+        "qs": [
+          "entep-nose-21",
+          "entep-nose-45",
+          "entep-nose-95",
+          "entqb-nose1-4",
+          "entqb-nose1-6",
+          "entqb-nose1-7",
+          "entqb-nose1-9",
+          "entqb-nose1-15",
+          "entqb-nose1-17",
+          "entqb-nose1-19",
+          "entqb-nose4-146"
+        ]
+      },
+      {
+        "id": "nan-5",
+        "w": "must",
+        "h": "The osteomeatal complex",
+        "body": "**THE OSTEOMEATAL (OSTIOMEATAL) COMPLEX IS THE SHARED FINAL DRAINAGE CHANNEL OF THE FRONTAL, ANTERIOR ETHMOID AND MAXILLARY SINUSES** — a region in and around the **middle meatus**, not a cavity.\n\n|Component|What it is|\n|---|---|\n|**UNCINATE PROCESS**|sickle-shaped bony leaflet, the **medial wall of the infundibulum**|\n|**ETHMOID BULLA**|**the LARGEST ANTERIOR ETHMOID CELL**, bulging into the middle meatus above the uncinate|\n|**HIATUS SEMILUNARIS**|the **crescentic GROOVE between uncinate and bulla** — the doorway into the infundibulum|\n|**ETHMOIDAL INFUNDIBULUM**|the trough beyond the hiatus, receiving the **maxillary ostium** and anterior ethmoid cells|\n|**MIDDLE MEATUS**|the space itself|\n|**FRONTAL RECESS**|the frontal sinus’s outflow, at the front of the complex|\n\n- **BOUNDARIES: MEDIALLY the MIDDLE TURBINATE · LATERALLY the LAMINA PAPYRACEA**, the paper-thin medial orbital wall crossed by both ethmoid infection and sinus instruments — the route to **orbital cellulitis**.\n- **AGGER NASI = the MOST ANTERIOR anterior-ethmoid cell**, in the frontal recess. **Most anterior = agger; LARGEST = bulla.**\n- **⚠️ THE POSTERIOR ETHMOID IS NOT PART OF THE COMPLEX** — it drains to the superior meatus, outside the channel. The standing “except”.\n- **Obstruction is in the CHANNEL, not the sinus** — clear the complex and the sinus drains itself: the anatomical argument for functional endoscopic surgery (`ent-sinusitis`). **Polyps arise inside it**, origin table in `ent-nasalmass`.\n\nSrc: the term L29 line 443; uncinate, bulla, hiatus, infundibulum, frontal recess L26 lines 303–309, L29 lines 443–445. **AGGER NASI and LAMINA PAPYRACEA appear in no cached deck — both not in course material**",
+        "qs": [
+          "entqb-nose1-5",
+          "entqb-nose1-16",
+          "entqb-nose1-18",
+          "entqb-nose1-33"
+        ]
+      },
+      {
+        "id": "nan-6",
+        "w": "must",
+        "h": "The four paranasal sinuses, one by one",
+        "body": "|Sinus|Development|Drains into|Relations|Clinical|\n|---|---|---|---|---|\n|**MAXILLARY** (antrum of Highmore)|**PRESENT AT BIRTH**; enlarges after the second dentition|**MIDDLE MEATUS**, by an **ostium HIGH ON ITS MEDIAL WALL**|roof = **floor of the ORBIT**; floor = alveolus, **roots of premolars and molars**|**the LARGEST sinus.** Ostium above floor, so **clearance is AGAINST GRAVITY, cilia-dependent**; odontogenic sinusitis|\n|**ETHMOID**|**PRESENT AT BIRTH** — the sinus of infancy|**ANTERIOR (+ middle) → MIDDLE MEATUS · POSTERIOR → SUPERIOR MEATUS**|lateral wall = **lamina papyracea**|**commonest source of orbital cellulitis in a child**|\n|**FRONTAL**|**ABSENT AT BIRTH**; visible ~**5–6 y**, adult size in adolescence|**MIDDLE MEATUS**, via the **frontal recess**|posterior wall = anterior cranial fossa; floor = orbital roof|**frontal sinusitis is impossible in an infant**|\n|**SPHENOID**|rudimentary at birth; pneumatises from ~**3 y**|**SPHENOETHMOIDAL RECESS**|**optic nerve, internal carotid, cavernous sinus laterally; pituitary above**|deep vertex / retro-orbital headache|\n\n- **ALL FOUR SHARE THE RESPIRATORY LINING — PSEUDOSTRATIFIED COLUMNAR CILIATED, WITH GOBLET CELLS**, continuous with the nose through the ostia. Not squamous, not non-ciliated, and the goblet cells secrete **continuously, not only during infection**.\n- **Only the MAXILLARY and ETHMOID are present at birth** — neonatal sinusitis is ethmoiditis.\n\nSrc: drainage L23 lines 26–37; epithelium L23 lines 63–64; cilia L27.1 lines 69–120. **Development ages, relations and clinical notes not in course material**",
+        "qs": [
+          "entqb-nose4-147",
+          "entqb-nose1-7",
+          "entqb-nose4-146",
+          "entqb-nose1-17"
+        ]
+      },
+      {
+        "id": "nan-7",
+        "w": "must",
+        "h": "The interior of the nose — three areas, three linings",
+        "body": "|Area|Where|Lining|\n|---|---|---|\n|**VESTIBULE**|**the MOST ANTERIOR part**, inside the nostril|**STRATIFIED SQUAMOUS — it is SKIN**, with **hair (vibrissae) and sebaceous glands**|\n|**OLFACTORY area**|**the UPPER part, related to the SUPERIOR TURBINATE and CRIBRIFORM PLATE** (and facing upper septum)|**COLUMNAR NON-CILIATED cells**|\n|**RESPIRATORY area**|**the REST of the cavity**|**PSEUDOSTRATIFIED COLUMNAR CILIATED, WITH GOBLET CELLS**|\n\n- **⚠️ THE VESTIBULE IS THE ONLY SKIN-LINED, HAIR-BEARING PART OF THE NOSE — SO THE ONLY PART THAT CAN DEVELOP FURUNCULOSIS.** No hair follicle on the septal mucosa, floor or middle meatus, so no boil there.\n- **A vestibular furuncle sits in the DANGEROUS AREA OF THE FACE** (below). **Antibiotics and warm compresses; NEVER squeeze or incise.** The vignette: a **diabetic with a small tender swelling in the nasal vestibule and nothing else** — a furuncle, not a mass.\n- The **limen nasi**, caudal edge of the upper lateral cartilage, is the skin-to-mucosa junction and the narrowest point of the airway.\n\nSrc: L23 lines 55–64. **Vibrissae, glands, the limen nasi and the furuncle management not in course material**",
+        "qs": [
+          "entqb-nose1-20",
+          "entqb-nose1-12",
+          "entep-nose-93",
+          "entep-nose-case-7"
+        ]
+      },
+      {
+        "id": "nan-8",
+        "w": "must",
+        "h": "Arterial supply",
+        "body": "**BOTH CAROTID SYSTEMS SUPPLY THE NOSE — INTERNAL *AND* EXTERNAL**, which is why external carotid ligation alone may fail to stop a nosebleed.\n\n|System|Route|Branches reaching the nose|\n|---|---|---|\n|**INTERNAL carotid**|→ **OPHTHALMIC**|**ANTERIOR and POSTERIOR ETHMOIDAL** — roof, upper septum and lateral wall|\n|**EXTERNAL carotid**|→ **MAXILLARY**|**SPHENOPALATINE** (“the artery of epistaxis”), **DESCENDING / GREATER PALATINE**, posterior lateral nasal|\n|**EXTERNAL carotid**|→ **FACIAL**|**SUPERIOR LABIAL**, lateral nasal, angular — the external nose|\n\n**THE EXTERNAL CAROTID ENDS INSIDE THE PAROTID AS TWO TERMINALS: SUPERFICIAL TEMPORAL and MAXILLARY (internal maxillary, IMAX).** The **ophthalmic is INTERNAL carotid**, never a terminal of the external.\n\n**THE MAXILLARY ARTERY IS DIVIDED INTO THREE PARTS BY THE LATERAL PTERYGOID MUSCLE**, reaching the nose only in the third, which enters the **pterygopalatine fossa** through the **pterygomaxillary fissure**.\n\n|Part|Name|Branches|\n|---|---|---|\n|**1st**|mandibular — **BONE**|middle meningeal, inferior alveolar|\n|**2nd**|pterygoid — **MUSCLE**|**DEEP TEMPORAL**, masseteric, pterygoid, buccal|\n|**3rd**|**pterygopalatine — MUCOSA**|**SPHENOPALATINE · DESCENDING (greater) PALATINE · INFRAORBITAL · POSTERIOR SUPERIOR ALVEOLAR · vidian (pterygoid canal) · palatovaginal (pharyngeal) · posterior lateral nasal**|\n\n- **The rule: 1st = bone, 2nd = muscle, 3rd = mucosa.** So **DEEP TEMPORAL is SECOND-part**, the standing “except” in any third-part list; and the **ANTERIOR superior alveolar branches off the INFRAORBITAL**, so only the **POSTERIOR** arises in the fossa.\n- **SEPTAL SUPPLY: SPHENOPALATINE → posteroinferior · GREATER PALATINE → anteroinferior · SUPERIOR LABIAL · ANTERIOR and POSTERIOR ETHMOIDAL** — both carotid systems, anastomosing on the anterior inferior septum as **LITTLE’S AREA**, in full with Woodruff’s plexus in `ent-epistaxis`.\n\nSrc: septal list and “internal and external carotid system” L24 lines 49–60; IMAX third part, pterygopalatine fossa, facial and ophthalmic runs L25.1 lines 55–100. **The ECA terminals, the three-part division and the 1st/2nd-part lists not in course material**",
+        "qs": [
+          "entqb-nose1-22",
+          "entqb-nose1-44",
+          "entqb-nose2-47",
+          "entqb-nose2-48",
+          "entqb-nose2-50"
+        ]
+      },
+      {
+        "id": "nan-9",
+        "w": "must",
+        "h": "Venous drainage, the dangerous area, and lymphatics",
+        "body": "**VEINS FOLLOW THE ARTERIES, AND ALL THREE UPPER ROUTES REACH THE CRANIAL CAVITY.**\n\n|Direction|Route|Ends in|\n|---|---|---|\n|**ANTERIORLY**|**FACIAL → ANGULAR → OPHTHALMIC veins**|**CAVERNOUS SINUS**|\n|**POSTERIORLY**|sphenopalatine vein → **PTERYGOID PLEXUS** → emissary veins of the foramen ovale|**CAVERNOUS SINUS**|\n|**SUPERIORLY**|ethmoidal veins → **OPHTHALMIC veins**|**CAVERNOUS SINUS**|\n\n- **⚠️ THESE COMMUNICATIONS ARE VALVELESS, SO BLOOD CAN FLOW BACKWARDS INTO THE SKULL.** The **DANGEROUS AREA OF THE FACE** — **nasal vestibule, external nose, upper lip** — drains this way, so sepsis there can cause **CAVERNOUS SINUS THROMBOSIS**.\n- **The one infection in the standard option list lying in that area is FURUNCULOSIS OF THE NASAL VESTIBULE** — acute otitis media, chronic otitis media and an infected preauricular sinus are all outside it. Squeezing is the classic precipitant.\n\n|Lymph from|Drains to|\n|---|---|\n|**VESTIBULE / anterior part**|**SUBMANDIBULAR nodes**|\n|**REST of the cavity** and the sinuses|**RETROPHARYNGEAL → UPPER DEEP CERVICAL nodes**|\n\n- Retropharyngeal nodes are **impalpable**, so posterior nasal and nasopharyngeal malignancy spreads silently.\n\nSrc: **⚠️ NONE OF THIS SECTION IS IN THE COURSE MATERIAL** — over all 34 decks, “valveless”, “pterygoid plexus”, “ophthalmic vein”, “dangerous area” and “lymph” return no nasal hit",
+        "qs": [
+          "entqb-nose1-25",
+          "entqb-nose1-27",
+          "entep-nose-93",
+          "entep-nose-case-7"
+        ]
+      },
+      {
+        "id": "nan-10",
+        "w": "must",
+        "h": "Nerve supply and the olfactory pathway",
+        "body": "|Function|Nerve|Territory|\n|---|---|---|\n|**SMELL**|**OLFACTORY (CN I)**|**the OLFACTORY AREA only** — superior turbinate, cribriform plate, facing upper septum|\n|**Sensation, anterosuperior**|**TRIGEMINAL V1** — **anterior ethmoidal**, infratrochlear|anterior septum and lateral wall, external nose, tip|\n|**Sensation, posteroinferior**|**TRIGEMINAL V2** — **nasopalatine**, posterior superior nasal, greater palatine, infraorbital|most of the septum and lateral wall, the ala|\n|**AUTONOMIC**|**PARASYMPATHETIC** greater petrosal → **VIDIAN** → **PTERYGOPALATINE GANGLION**; **SYMPATHETIC** deep petrosal → vidian|secretion and vasodilatation / vasoconstriction|\n\n- **⚠️ V3 (MANDIBULAR) DOES NOT SUPPLY THE NOSE.** Nor does the facial nerve or the vagus. The keyed pair is always **olfactory + trigeminal V1 and V2**.\n- **OLFACTORY PATHWAY.** Olfactory area **5 cm²**, holding **sensory cells, BOWMAN’S GLANDS and PIGMENT CELLS**. Bipolar **olfactory neurons** → filaments **through the CRIBRIFORM PLATE** → **OLFACTORY BULB** → **LATERAL OLFACTORY TRACT** → **PRIMARY OLFACTORY CORTEX (pyriform area)**, with connections to **thalamus and hypothalamus**. **Shearing those filaments at the cribriform plate is why head injury causes anosmia**; smell disorders in `ent-epistaxis`.\n\nSrc: olfactory area L23 lines 55–60; the pathway, the 5 cm² and the cell populations L25.2 lines 11–30 (`ent-epistaxis`’s deck). **The trigeminal branch lists and the autonomic supply not in course material**",
+        "qs": [
+          "entqb-nose1-26"
+        ]
+      },
+      {
+        "id": "nan-11",
+        "w": "must",
+        "h": "Physiology — functions, air conditioning, mucociliary clearance",
+        "body": "|Function|Content|\n|---|---|\n|**RESPIRATORY**|**airway** + **PURIFICATION OF AIR** — **the MAIN function**|\n|**OLFACTORY**|in the olfactory area|\n|**PHONATORY**|**resonance of voice**|\n|**OTHER**|**lacrimal fluid drainage** · **reflex function**|\n\n- **Main function respiratory, purification delivered by MUCOCILIARY CLEARANCE** — keyed over warming, smell and resonance, all of which the nose also does.\n- **AIR CONDITIONING.** Air is **warmed to ~37 °C**, **humidified to ~85 % RH**, and **filtered in three tiers** — **vibrissae** >10 µm, **mucus blanket** 0.5–10 µm, smaller to the alveoli.\n- **MUCOCILIARY CLEARANCE.** A **two-layer blanket** — watery **periciliary (sol) layer** the cilia beat in, sticky **gel layer** trapping particles. Cilia beat **10–20 a second**, driving mucus **backwards to the nasopharynx**, where it is **swallowed subconsciously — the bank puts the interval at every 4 SECONDS**, about a litre a day.\n- **⚠️ IN THE SINUSES THE BEAT IS ALWAYS TOWARDS THE NATURAL OSTIUM, WHATEVER THE POSITION OF THE HEAD** — and past any accessory opening. Mucus does not obey gravity.\n- **CILIARY IMPAIRMENT is a listed predisposing factor for acute bacterial rhinosinusitis**, its causes **viral infection, smoking, allergy and PRIMARY CILIARY DYSKINESIA**; cystic fibrosis thickens the gel layer.\n- **NASAL CYCLE** — the sides alternate in congestion every **2–7 hours**; alternating block is normal, fixed is not.\n\nSrc: L23 lines 65–75; cilia L27.1 lines 69–120; L29 line 28. **The air-conditioning and clearance figures, the 4-second interval, cystic fibrosis and the nasal cycle not in course material**",
+        "qs": [
+          "entqb-nose1-28",
+          "entqb-nose4-148",
+          "entqb-nose4-147"
+        ]
+      },
+      {
+        "id": "nan-12",
+        "w": "high",
+        "h": "Nasal defences and the sneeze reflex",
+        "body": "**THE SIX DEFENCE MECHANISMS OF THE NOSE AND SINUSES, as the rhinosinusitis lecture lists them:**\n\n- **1. MUCOCILIARY SYSTEM · 2. EPITHELIAL INTEGRITY · 3. REFLEXES (cough, SNEEZE) · 4. LYSOZYMES, OPSONINS, COMPLEMENT · 5. IMMUNOGLOBULINS (secretory IgA, IgE) · 6. MACROPHAGES and LYMPHOCYTES.**\n\n|Sneeze reflex|Nerve|\n|---|---|\n|**AFFERENT**|**TRIGEMINAL — V1**, by the **ANTERIOR ETHMOIDAL nerve**|\n|Centre|sneeze centre, **medulla / lateral brainstem**|\n|**EFFERENT**|**VAGUS**, with phrenic and intercostals driving the blast and the facial nerve closing the eyes|\n\n- **Keyed pair: AFFERENT V1 / EFFERENT VAGUS** — not olfactory, not facial, not trigeminal-to-trigeminal.\n- Defect: the printed key reads *“Afferent: Trigeminal, Efferent: Vagus”* **without the V1 qualifier**, the only thing separating it from the V2 option beside it; the option list resolves it, the key does not. Key as printed.\n\nSrc: the six defences L29 lines 26–35; “reflex function” L23 line 75. **The ARC ITSELF — afferent, centre, efferent — is in no cached deck and is not in course material**",
+        "qs": [
+          "entqb-nose1-29"
+        ]
+      }
+    ]
   }
 };
