@@ -673,6 +673,23 @@ a second textbook. The four known ENT examples: Stridor (L6) ≈ 2,300 w · Tons
 CSOM (L16 + L17,18) ≈ 1,570 w · AOM (L21.1 + L21.2) ≈ 1,000 w. **The validator counts body words
 at merge; over budget by >10 % goes back for compression, not into the app.**
 
+**⚠️ SUM THE CHAPTER'S REAL LECTURE SET, DO NOT COPY THE EXAMPLE ABOVE.** Stridor's budget was set
+by hand at 2,400 from L6 alone and the agent was right to challenge it: the chapter also draws on
+L12 and L11, so the formula gives the 3,000 cap. Run `wc -w` on the files you actually use.
+
+> **⚠️⚠️ THE BUDGET IS A CEILING ON WORDS, NEVER A LICENCE TO DELETE A PROTECTED FACT. If you cannot
+> reach it without cutting one, STOP AT THE FLOOR AND SAY SO, itemising what the next 200 words
+> would cost.** Two agents did exactly that on 2026-08-14 and both were right — the pages came back
+> from layout instead. Reporting the miss is a correct outcome; a chapter that hits its number by
+> losing an eponym is not.
+
+**⚠️ AND DO NOT CHASE THE PAGE COUNT WITH WORD CUTS — PAGES ARE MOSTLY A LAYOUT PROPERTY.** Measured
+2026-08-14: squeezing Tonsils 4,448 → 3,826 words moved the printed chapter **16 pages → 16**.
+Prose prints at ~350 words a page and dense tables at ~240, so converting prose to tables — which
+this format demands — *costs* paper per word saved. Fixing `break-inside` on tables and their cell
+padding took AOM 14 pages → **9** with the text untouched. **Your job is the word budget and the
+coverage floor. The print stylesheet owns the page count.**
+
 ### 14.2 The two-sided coverage floor — what "important" means now
 
 1. **Everything important the LECTURE states goes in** — every fact, number, classification, list,
