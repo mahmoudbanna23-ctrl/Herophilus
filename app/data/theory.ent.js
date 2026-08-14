@@ -4845,5 +4845,147 @@ var T_ENT = {
         ]
       }
     ]
+  },
+  "ent-swallow": {
+    "intro": "Almost every answer is one of four instruments, and each is defined by what it CANNOT see. FEES misses the oral phase and blanks during the swallow; manometry cannot see aspiration at all; VFSS sees everything and costs radiation. Learn the blind spots.",
+    "sections": [
+      {
+        "id": "swa-1",
+        "w": "must",
+        "h": "What goes wrong: penetration, aspiration, silent aspiration",
+        "body": "**Oropharyngeal dysphagia is a CLINICAL SYMPTOM — “the difficulty to effectively move the alimentary bolus from the mouth to the oesophagus” (Cabre 2010).** Aetiology (neurogenic / structural / others) and the symptom and complication list are written under dysphagia.\n\n|Term|Where the material goes|Cough?|Why it matters|\n|---|---|---|---|\n|**PENETRATION**|laryngeal vestibule, **ABOVE the true cords** *(definition not in course material — L7 names it once, never defines it)*|usually yes|a warning, not yet lung injury|\n|**ASPIRATION**|**BELOW the true vocal folds**|yes|aspiration pneumonia|\n|**SILENT ASPIRATION**|below the cords|**NO cough, no attempt at expulsion**|**the dangerous one — invisible at the bedside; only VFSS states its amount and timing**|\n\n- **Mechanism: incompetent or inadequate airway protection, and ill-timed, uncoordinated events BEFORE, DURING or AFTER the swallow has triggered.**\n- **Bedside signs of penetration and/or aspiration = THROAT CLEARING or COUGHING, before / during / after the swallow** — the only bedside handle on it.\n- **A negative bedside exam does NOT exclude aspiration** — silent aspiration produces no sign at all. That is why instrumental assessment exists.\n\nSrc: L7 lines 46–56 (symptom list, written under dysphagia), 122–123, 197–198; aspiration and silent aspiration defined in L10 and written under dysphagia",
+        "qs": [
+          "entqb-thr3-88",
+          "entep-mfe5-41"
+        ]
+      },
+      {
+        "id": "swa-2",
+        "w": "must",
+        "h": "The three phases — the version the bank asks",
+        "body": "**The phases as normal physiology (velopharyngeal closure, laryngeal closure, the oropharynx as the 2nd “pharyngeal” phase) are written under pharyngeal and laryngeal anatomy. What follows is only what the bank keys HERE.**\n\n|Phase|Voluntary?|Duration|What must happen|\n|---|---|---|---|\n|**1 ORAL** — preparatory then propulsive|**VOLUNTARY — the ONLY voluntary phase**|**2–3 s**|chewing, bolus formation, lip seal, tongue propels the bolus back|\n|**2 PHARYNGEAL**|**INVOLUNTARY / reflex**|**SHORTEST, ~1–2 s**|nasopharynx sealed, larynx elevates, **TRUE CORDS ADDUCT**, respiration stops, cricopharyngeus relaxes|\n|**3 OESOPHAGEAL**|**INVOLUNTARY**|**LONGEST, 8–20 s**|peristalsis to the stomach|\n\n- **Oral phase = PREPARATORY (chewing, mixing with saliva) + PROPULSIVE (tongue pushes back). LIQUIDS NEED THE PROPULSIVE PART ONLY** — nothing to chew.\n- **THE CORDS ADDUCT in the pharyngeal phase, they do not abduct** — adduction seals the airway.\n- **ASPIRATION IS A PHARYNGEAL-PHASE EVENT** — the only phase in which airway and food share a route.\n- **A STROKE HITS BOTH ENDS** *(not in course material)*: the voluntary oral phase is cortical (anterior spillage), the reflex pharyngeal phase brainstem (delayed trigger, aspiration) — so the test must show both.\n\nSrc: phases named in L7 line 11 and L10, written as physiology under pharyngeal anatomy; cord adduction from L1.1. Durations, the prep/propulsive split and the liquids rule are in NO cached deck (greped across all 34) and are supplied",
+        "qs": [
+          "entqb-thr3-88",
+          "entqb-thr3-89",
+          "entqb-thr3-90",
+          "entep-mfe5-41",
+          "entep-throat-27"
+        ]
+      },
+      {
+        "id": "swa-3",
+        "w": "must",
+        "h": "Protocol of evaluation — the tree the “EXCEPT” questions are cut from",
+        "body": "**The whole chapter hangs on which tier a named procedure sits in.**\n\n```\n1. SCREENING                     pass/fail, no description\n2. ASSESSMENT\n   ├── NON-INSTRUMENTAL          the bedside exam\n   └── INSTRUMENTAL\n        ├── FEES\n        ├── VFSS\n        ├── High-resolution impedance MANOMETRY\n        └── CT NECK\n```\n\n- **FEES, VFSS, manometry and CT neck are the FOUR instrumental options. Everything else — case history, cranial nerve assessment, structural or functional assessment of the swallowing muscles, observation — is NON-instrumental.**\n- **Screening is NOT assessment.** It asks only whether dysphagia is likely and whether to go further.\n\nSrc: L7 lines 57–66",
+        "qs": [
+          "entqb-thr11-575",
+          "entqb-thr11-584"
+        ]
+      },
+      {
+        "id": "swa-4",
+        "w": "must",
+        "h": "Screening — a pass/fail procedure",
+        "body": "**“Swallowing screening is a PASS/FAIL PROCEDURE.”** Its purpose is to identify **the likelihood that dysphagia exists**, and **the need for further swallowing assessment** *(ASHA, 2009)*. **“Screening does NOT provide a detailed description of the patient’s swallow function”** *(WHO, 2001)* — the deliberate limitation, and the discriminator against every instrumental test.\n\n**Screening protocols may include:**\n\n- an **interview or questionnaire** addressing the patient’s perception of, or concern with, swallowing function;\n- **observation** of (a) signs and symptoms of oropharyngeal swallowing dysfunction and (b) routine or planned **mealtime situations**, if indicated;\n- administration of the **3-oz WATER SWALLOW TEST** *(DePippo, Holas & Reding, 1992)* — the one named screening instrument in the deck;\n- **recommendation for additional assessment.**\n\n- **The 3-oz test in practice** *(mechanics not in course material)*: 3 oz (~90 ml) of water drunk without stopping; **cough, choking or a wet/gurgly voice during it or within a minute = FAIL** → assessment.\n\nSrc: L7 lines 67–85",
+        "qs": [
+          "entqb-thr11-575"
+        ]
+      },
+      {
+        "id": "swa-5",
+        "w": "high",
+        "h": "Assessment — its purpose, and who is a candidate",
+        "body": "**Purpose: identify and describe (1) typical and atypical parameters of the STRUCTURES AND FUNCTIONS affecting swallowing, (2) the effect of the impairment on the individual’s ACTIVITIES, (3) whether the patient is a CANDIDATE for treatment/management.**\n\n|Candidacy is judged on|Fails when|\n|---|---|\n|**Medical stability**|acutely unstable — also a contraindication to instrumental testing|\n|**Cognitive status**|cannot follow instructions or stay alert|\n|**Nutritional status**|already compromised — an indication to go instrumental, not a bar|\n|**Psychosocial, environmental and behavioural factors**|no carer, no adherence to a modified diet|\n\nSrc: L7 lines 86–96",
+        "qs": [
+          "entqb-thr11-584"
+        ]
+      },
+      {
+        "id": "swa-6",
+        "w": "must",
+        "h": "Non-instrumental (bedside) swallowing assessment",
+        "body": "**Everything below is NON-instrumental; FEES, VFSS, manometry and CT neck are not.** *(Martin-Harris et al., 2005)*\n\n|Component|Covers|\n|---|---|\n|**Case history**|the whole history|\n|**Oral mechanism exam — CRANIAL NERVE assessment**|the neurological substrate|\n|**— STRUCTURAL assessment**|**face, jaw, lips, tongue, hard and soft palate, oral pharynx, oral mucosa**|\n|**— FUNCTIONAL assessment of the muscles and structures used in swallowing**|**symmetry · sensation · strength · tone · range and rate of motion · coordination**|\n|**— Observation**|**head–neck control · posture · oral reflexes · involuntary movements**|\n\n**The rest of the bedside run:**\n\n- **Overall physical, social, behavioural and cognitive/communicative status.**\n- **Speech and VOCAL QUALITY at baseline and any change after a bolus** — a wet or gurgly voice after swallowing = pooling or penetration.\n- **Heart rate and oxygen saturation by PULSE OXIMETRY.**\n- **Alterations in bolus delivery and/or use of rehabilitative or compensatory techniques** — the bedside exam also TRIALS the treatment.\n- **Method of bolus presentation (spoon, cup, self-fed, examiner-fed) and RATE.**\n- **Secretion management skills.**\n- **Labial seal and ANTERIOR SPILLAGE, and evidence of oral control** — the oral-phase failure a stroke shows first.\n- **Signs and symptoms of penetration and/or aspiration: throat clearing or coughing BEFORE / DURING / AFTER the swallow.**\n- **Consistency of skills ACROSS the feeding — FATIGUE on feeding and its effect on swallowing safety** *(myasthenia the classic — not in course material)*.\n- **Ability to clear the airway, and assessment of COUGH STRENGTH.**\n\nSrc: L7 lines 97–128",
+        "qs": [
+          "entqb-thr11-584",
+          "entqb-thr11-575"
+        ]
+      },
+      {
+        "id": "swa-7",
+        "w": "must",
+        "h": "Instrumental assessment — indications and contraindications",
+        "body": "**Purpose: evaluate ORAL, PHARYNGEAL, LARYNGEAL, UPPER OESOPHAGEAL and RESPIRATORY function as they apply to normal and abnormal swallowing, and determine the appropriateness and effectiveness of treatment strategies.**\n\n|INDICATIONS|CONTRAINDICATIONS|\n|---|---|\n|Concerns about the **safety and efficiency** of swallowing: **NUTRITIONAL compromise · PULMONARY compromise · concerns for AIRWAY SAFETY (choking)**|**Medically unstable**|\n|**Identify disordered swallowing PHYSIOLOGY**|**Unable to participate** — cognition, alertness|\n|**INCONSISTENT signs and symptoms** on the non-instrumental exam|**If the instrumental assessment WOULD NOT CHANGE the clinical management of the patient**|\n|**Chronic progressive DEGENERATIVE conditions**||\n\n- **A test that cannot change what you do is not indicated**, however abnormal the swallow — the examinable contraindication.\n- **An inconsistent bedside exam is itself an indication** to go instrumental, not a reason to repeat it.\n\nSrc: L7 lines 129–154",
+        "qs": [
+          "entqb-thr11-584",
+          "entqb-thr11-577"
+        ]
+      },
+      {
+        "id": "swa-8",
+        "w": "must",
+        "h": "FEES — and the two things it cannot see",
+        "body": "**Fibreoptic Endoscopic Evaluation Of Swallowing — endoscope through the nose, the swallow watched from above. New distal-chip cameras give excellent detail.**\n\n|ADVANTAGES|DISADVANTAGES|\n|---|---|\n|Can be **completed in the outpatient clinic** — portable, bedside, ICU|**Does NOT permit visualization of EITHER the ORAL or the OESOPHAGEAL phase**|\n|**Frequent use without concerns of RADIATION exposure**|**The “WHITE-OUT” EFFECT** — passage of the bolus and movement of the pharyngeal structures **cannot be observed DURING the swallow**|\n|**Assesses current progress and the effectiveness of therapy**||\n\n**⚠️ THE FIVE EVENTS LOST TO THE WHITE-OUT** *(Langmore, Kenneth & Olsen, 1988)* — the deck lists them and the bank asks them:\n\n- **Epiglottic movement · Pharyngeal constriction · UES opening · Tongue base retraction · Laryngeal closure.**\n\n- **Why it whites out** *(not in course material)*: at the height of the swallow the pharynx constricts onto the endoscope tip and mucosa fills the field. **FEES reads the BEFORE and the AFTER** — pooling, residue, spillage, penetration, aspiration of what is left — **never the swallow itself.** Best ICU/bedside test; still wrong whenever the question names the **oral phase**.\n- ⚠️ **Defect, noted not disputed:** one bank keys **“assessment of laryngeal sensation”** as the item NOT useful during FEES. L7 lists neither that nor maximum phonatory time among FEES’s limitations; laryngeal sensory testing is a recognised extension (FEESST) and maximum phonatory time is a VOICE measure. Answer as the bank prints it.\n\nSrc: L7 lines 155–179",
+        "qs": [
+          "entep-throat-56",
+          "entqb-thr11-577",
+          "entqb-thr11-587"
+        ]
+      },
+      {
+        "id": "swa-9",
+        "w": "must",
+        "h": "VFSS — the modified barium swallow",
+        "body": "**“A radiographic procedure that provides a DIRECT, DYNAMIC VIEW of ORAL, PHARYNGEAL and UPPER OESOPHAGEAL function”** *(Logemann, 1986)*. Food and liquid of various consistencies are **mixed with barium**, so **“the bolus is visualized in REAL TIME on an x-ray DURING the swallow.”**\n\n**VFSS is beneficial in** *(Logemann, 2000)*:\n\n- **identifying WHETHER ASPIRATION HAS OCCURRED · the AMOUNT and TIMING of aspiration, including SILENT aspiration · the anatomy and pathophysiology of swallow function in the ORAL and PHARYNGEAL phases · the influence of COMPENSATORY STRATEGIES and DIET CHANGES** — it tests the treatment, not only the deficit.\n\n|Advantage of VFSS over FEES|Disadvantage of VFSS over FEES|\n|---|---|\n|**Real-time visualization of the bolus from the ORAL to the OESOPHAGEAL cavity**|**RADIATION exposure** — sometimes limited by reducing the number of observations and of follow-ups|\n|**Visualization of the PHARYNGO-OESOPHAGEAL SEGMENT**|**Needs an X-RAY UNIT, so it is UNSUITABLE AS A BEDSIDE examination**|\n\n- **The standard image is the LATERAL view of the oropharynx.** The **A-P view** compares the two sides: **asymmetric transit with MORE RESIDUE ON ONE SIDE = UNILATERAL PHARYNGEAL (constrictor) WEAKNESS**; bilateral residue = tongue-base or generalised pharyngeal weakness *(A-P interpretation not in course material)*.\n- **“Both the oral AND the pharyngeal phase” is always VFSS**, in the ICU as much as the clinic — portability does not cure FEES’s blindness to the oral phase.\n\nSrc: L7 lines 180–211",
+        "qs": [
+          "entep-throat-27",
+          "entep-throat-57",
+          "entep-mfe5-3",
+          "entqb-thr11-577",
+          "entqb-thr11-587"
+        ]
+      },
+      {
+        "id": "swa-10",
+        "w": "high",
+        "h": "The VFSS bolus protocol · manometry · CT neck",
+        "body": "**FOOD PRESENTATION IN VFSS — three swallows of EACH** *(Abou-Elsaad, 2002)*:\n\n|Consistency|Made of|Volumes|\n|---|---|---|\n|**Thin liquid**|**20 % barium sulfate + 80 % water**|3, 5, 10 ml|\n|**Thick liquid**|**50 % barium + 50 % water**|3, 5, 10 ml|\n|**Semisolid**|pudding mixed with barium powder|3, 5, 10 ml|\n|**Solid**|**¼ of a cookie**, coated with pudding + barium powder|—|\n\n**HIGH-RESOLUTION IMPEDANCE MANOMETRY — “performed to assess MOTOR FUNCTION OF THE OESOPHAGUS.”** A catheter of **several electronic pressure probes** passed **into the stomach**, measuring oesophageal contractions and defining **upper and lower oesophageal responses to swallowing.**\n\n**⚠️ Its four printed LIMITATIONS:**\n\n- **No automatic analysis program** · **improper placement of the manometric catheter** · **COULD NOT DETECT ASPIRATION** · **could not represent the degree of pharyngeal residue.**\n- **Manometry measures PRESSURE; aspiration is a question of LOCATION** — no pressure trace can say where the bolus went.\n- **CT neck**, the fourth instrumental option — structural (a mass, a pouch), not a functional study of the swallow.\n\nSrc: L7 lines 212–229",
+        "qs": [
+          "entqb-thr11-576"
+        ]
+      },
+      {
+        "id": "swa-11",
+        "w": "must",
+        "h": "The four instruments side by side — the chapter’s core table",
+        "body": "**Each test is defined by its BLIND SPOT.**\n\n|Test|Sees the ORAL phase|Sees the SWALLOW itself|Detects ASPIRATION|Radiation|Bedside?|Chosen when|\n|---|---|---|---|---|---|---|\n|**Bedside / non-instrumental**|yes, clinically|no|**signs only — MISSES silent aspiration**|none|**yes**|first contact; screening failed|\n|**FEES**|**NO**|**NO — the WHITE-OUT**|**yes**, before and after the swallow|**none**|**yes** — portable, repeatable|ICU, bedside, serial therapy checks, radiation to be avoided|\n|**VFSS**|**YES**|**YES — real time, oral to oesophageal**|**YES, plus AMOUNT and TIMING of SILENT aspiration**|**yes**|**NO — needs an x-ray unit**|**oral + pharyngeal phases together; suspected silent aspiration; testing compensations**|\n|**HR impedance manometry**|no|pressures only|**NO — cannot detect aspiration**, cannot show pharyngeal residue|none|no|**oesophageal MOTOR function**, UES/LES responses|\n\n- **Three shortcuts.** *“Oral phase” / “both phases”* → **VFSS**. *“Real-time recording of the swallow”* → **VFSS** (FEES is blind at that instant). *“White-out”* → **FEES**, always.\n- **CT and MRI are not swallowing tests** — a swallow is a sub-second event and neither acquires fast enough *(not in course material)*.\n\nSrc: L7 lines 155–229; grid assembled from the deck’s own advantage/disadvantage slides",
+        "qs": [
+          "entep-throat-27",
+          "entep-mfe5-3",
+          "entqb-thr11-575",
+          "entqb-thr11-576",
+          "entqb-thr11-577",
+          "entqb-thr11-587",
+          "entep-throat-56"
+        ]
+      },
+      {
+        "id": "swa-12",
+        "w": "must",
+        "h": "Management — the decision, the goals, the two kinds of intervention, the team",
+        "body": "**After the evaluation a DECISION is made on (1) POTENTIAL FOR FUNCTIONAL IMPROVEMENT of the swallow disorder and (2) SAFETY in swallowing liquid and solid food.** It rests on the **PHYSIOLOGIC NATURE of the disorder** and the **ABILITY TO ALTER the dysfunction** — **volume or consistency change · postural adjustment · rehabilitation strategies.**\n\n**Goals** *(ASHA 2019)*: **safe adequate nutrition and hydration, return to safe efficient ORAL intake · optimum feeding method/technique · minimise PULMONARY complications · reduce patient and caregiver burden, maximise QoL · treatment plans improving swallow safety and efficiency.**\n\n|**COMPENSATORY**|**REHABILITATIVE**|\n|---|---|\n|**Minimises the symptoms and adverse consequences** of dysphagia|**Concerted TRAINING**|\n|**DOES NOT CHANGE swallowing physiology**|**OPTIMISES the normal swallowing physiology**|\n|manoeuvres, postures, diet — **short-term**|MDTP, clinician-designed plans — **lasting**|\n\n**The three compensatory interventions, all delivered by THE THERAPIST:**\n\n- **Swallowing MANOEUVRES** — improve the **safety or efficiency** of the swallow; **short-term compensations.**\n- **POSTURAL CHANGES** — **body** and **head** posture; **alter the speed and flow direction of the bolus** → **reduce aspiration or residue** *(Sura et al 2012)*.\n- **DIETARY MODIFICATION** — modifying the **consistency** of food and/or liquid, for **safety and ease of oral consumption** and **safe adequate oral intake.** ⚠️ **Its cost is on the slide: altered taste, texture, appearance → ACCEPTABILITY and ADHERENCE FALL → MALNUTRITION.** Standardised by the **IDDSI framework, the International Dysphagia Diet Standardisation Initiative.**\n\n**REHABILITATIVE:** **highly structured programmes — the McNeill Dysphagia Therapy Program (MDTP)** — or **individual clinician-designed treatment plans.**\n\n**TECHNOLOGY — mechanism: enhance functional recovery by promoting PLASTIC CHANGES OF THE CORTICAL SWALLOWING NETWORK.**\n\n|**PERIPHERAL stimulation**|**CENTRAL stimulation**|\n|---|---|\n|**NMES** — neuromuscular electrical stimulation · **PES** — pharyngeal electrical stimulation|**rTMS** — transcranial magnetic stimulation · **tDCS** — transcranial direct current stimulation|\n\n- **THE MULTIDISCIPLINARY TEAM:** **primary care physician · dentist · pulmonologist · dietician · PHONIATRICIAN · primary caregiver · nurse · SLP · physiotherapist · occupational therapist.**\n\nSrc: L7 lines 230–361",
+        "qs": [
+          "entqb-thr11-584"
+        ]
+      },
+      {
+        "id": "swa-13",
+        "w": "high",
+        "h": "Nutritional support, and the management ladder by severity",
+        "body": "**ENTERAL NUTRITION — the two routes, and the numbers are the question:**\n\n|Route|Duration|Use when|\n|---|---|---|\n|**NASOGASTRIC TUBE**|**SHORT periods — < 2 months**|**no risk of GERD**|\n|**PERCUTANEOUS ENDOSCOPIC GASTROSTOMY (PEG)**|**LONG-term enteral nutrition — > 4–6 weeks**|**chronic or progressive diseases**|\n\n- ⚠️ **The deck’s two thresholds overlap** — NG \"< 2 months\" against PEG \"> 4–6 weeks\". Both as printed; working rule: **a swallow not expected to recover within ~6 weeks goes to PEG.**\n- **ORAL NUTRITIONAL SUPPLEMENTS (ONS) — goals: increase total nutrient consumption · maintain or recover nutritional status · maintain or improve quality of life · reduce morbimortality.**\n\n**THE LADDER, by severity** *(components all L7’s; the severity axis supplied — not in course material)*:\n\n|Severity|Intake|Intervention|\n|---|---|---|\n|**Mild** — occasional cough, no aspiration|full oral|postural adjustment, manoeuvres, slower rate, smaller bolus|\n|**Moderate** — penetration or residue on testing|**modified oral, IDDSI level**|thickened fluids, texture modification, supervised meals, rehabilitation programme|\n|**Severe** — aspiration, especially SILENT; failing nutrition|**oral unsafe → non-oral** *(NPO not stated by the deck)*|**NG < 2 months, PEG > 4–6 weeks or progressive disease**, plus ONS; rehabilitation continues|\n\n- **Non-oral feeding is never the end point** — the first ASHA goal is **return to safe, efficient ORAL intake.**\n\nSrc: L7 lines 362–377; ladder assembled from L7’s own components",
+        "qs": [
+          "entep-mfe5-3"
+        ]
+      }
+    ]
   }
 };

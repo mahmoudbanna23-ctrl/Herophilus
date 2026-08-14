@@ -943,7 +943,7 @@ if the receiving chapter actually gets it.**
 | `ent-rhin` (L30) | **Septal perforation and saddle nose as lesions** — verified present in `sept-7`/`sept-8` before deferring | `ent-septum` | ✅ already written |
 | `ent-rhin` (L30) | **Laryngeal scleroma** — verified present in `hoar-6` before deferring | `ent-hoarse` | ✅ already written |
 | `ent-rhin` (L29) | **Adenoids** | `ent-tonsils` | ☐ **⚠️ tonsils is already merged; reconciliation work. 2nd chapter to owe it** |
-| `ent-dysph` (L7) | **The whole swallowing-assessment deck** except its aetiology table — 1,522 of its 1,616 words | `ent-swallow` | ☐ |
+| `ent-dysph` (L7) | **The whole swallowing-assessment deck** except its aetiology table — 1,522 of its 1,616 words | `ent-swallow` | ✅ **delivered 2026-08-14** — every slide from L7 line 46 to 377. **⚠️ The promised 1,522 w was inflated**: it included a 32-word title block, a 131-word ILO index (a contents list for the body itself, so counting it bills one file twice) and 75 words already written verbatim in `ent-dysph`. Content delivered whole; only the number moved |
 | `ent-dysph` (L1.2) | **Pharyngeal anatomy** — only Killian's triangle kept | `ent-pharanat` | ✅ **delivered 2026-08-14** — same deck as the row above, **delivered once not twice** — `pha-9`. `dys-11` keeps Killian’s only as the SITE of Zenker’s, so the anatomy is here and the lesion stays `ent-dysph`’s |
 | `ent-dysph` (L8) | **The phoniatric protocol** — only the laryngeal click kept | `ent-phon` | ✅ **delivered 2026-08-14** — same deck as the row above, **delivered once not twice**. It adds exactly one item row 1 did not name — the laryngeal click as an EXAMINATION item, `phon-5`; `dys-8` keeps its ABSENCE as Moure’s sign |
 | `ent-dysph` (L5) | The **neck-mass differential** — only the cystic swelling kept | `ent-neck` | ✅ **delivered 2026-08-14** — `neck-3` — the same grid, organised on the cystic-vs-solid axis it kept |
@@ -966,7 +966,7 @@ if the receiving chapter actually gets it.**
 | `ent-nasalobs` (L23 lines 1–86) | **Nasal anatomy** — 297 words; only the choanal-atresia and CNPAS half (87–177) was claimed here | `ent-noseanat` | ✅ **delivered 2026-08-14** — `nan-3`/`4`/`7`/`8`/`10`/`11` |
 | `ent-sinusitis` (L27.1 line 285 · general) | **The complications in full** — pre- vs post-septal cellulitis and the orbital staging, the **lamina papyracea** route, **Pott’s puffy tumour** and the diploic veins, and **sinus → frontal lobe / ear → temporal lobe and cerebellum**. Its two-word orbital caption was **subtracted from this chapter’s TERM 1** rather than counted | `ent-sinuscomp` | ☐ **⚠️ `L28` DOES NOT EXIST — this chapter has no lecture and is written from general knowledge against its own 10 questions. It was deliberately NOT absorbed here; none of `ent-sinusitis`’s 47 tests any of it.** |
 | `ent-sinusitis` (L23 lines 1–86) | **Nasal anatomy**, and the **osteomeatal complex as a named unit** | `ent-noseanat` | ✅ **delivered 2026-08-14** — same 86 lines as the row above, **written once, discharging both**. The genuinely new half — the OMC as an anatomical unit — is `nan-5` in full, keyed by four questions. Declared overlap: `sin-2` keeps one bullet naming four components as the SURGICAL rationale; both correct, neither removable |
-| `ent-pharanat` (L1.2/L1.1) | **Swallowing going wrong, and every instrument used to look at it** — penetration / aspiration / silent aspiration, the bedside screen, FEES and its white-out, VFSS, manometry, postures, diet, the team. `pha-4` writes the three phases as NORMAL PHYSIOLOGY, including the *"2nd ‘pharyngeal’ phase"* parenthesis a key turns on | `ent-swallow` | ☐ **boundary stated: 2 questions here need the phases, none needs the assessment** |
+| `ent-pharanat` (L1.2/L1.1) | **Swallowing going wrong, and every instrument used to look at it** — penetration / aspiration / silent aspiration, the bedside screen, FEES and its white-out, VFSS, manometry, postures, diet, the team. `pha-4` writes the three phases as NORMAL PHYSIOLOGY, including the *"2nd ‘pharyngeal’ phase"* parenthesis a key turns on | `ent-swallow` | ✅ **delivered 2026-08-14** — `swa-2`–`swa-13`. **⚠️⚠️ THE ROW NAMED THE WRONG DECKS.** It attributed this to `L1.2`/`L1.1`; greped, **`L1.1` returns ZERO hits for FEES, VFSS, manometry, aspiration, penetration or screening**, and `L1.2` only the word "deglutition" in two unrelated slides. Every item is in **`L7`** — i.e. in the row above. **The two rows are one deck seen from two chapters, delivered ONCE.** `pha-4`’s boundary is respected: it keeps the phases as normal physiology, `swa-2` adds only what the four phase questions key and `pha-4` lacks |
 | `ent-pharanat` (L1.1) | **Vocal cord paralysis as a subject** | `ent-vocal` | ☐ **⚠️⚠️ 3RD CHAPTER TO OWE THIS — `ent-hoarse` and `ent-paedlar` registered it first. See the note below.** |
 | `ent-pharanat` (L1.2) | **Congenital laryngeal anomalies** | `ent-paedlar` | ☐ **⚠️ paedlar is already merged; reconciliation work** |
 
@@ -1024,6 +1024,30 @@ if the receiving chapter actually gets it.**
 > **`aom-11` carries the adult-unilateral-effusion rule (11 questions)** — different angles, different
 > question sets, both written. **No row is owed and none should be opened.** Flagging it was still
 > correct: a chapter that does not exist cannot be checked for by the validator.
+
+> **⚠️⚠️ A REGISTER ROW IS A CLAIM BY THE DEFERRING CHAPTER, NOT A FACT — VERIFY IT AGAINST THE DECK.
+> THREE DIFFERENT WAYS A ROW HAS NOW BEEN WRONG, EACH CAUGHT ONLY BY THE RECEIVING CHAPTER:**
+> 1. **It over-specified the content.** The rhinoscleroma row promised **three** stages; `L30` prints
+>    **four** — catarrhal, hypertrophic, atrophic *and* cicatricial. `ent-rhin` read the deck and
+>    corrected it.
+> 2. **It promised something the deck does not contain** — the *"content of voice therapy"* case
+>    immediately below.
+> 3. **It named the WRONG DECK.** `ent-pharanat` deferred the swallowing assessment as coming from
+>    `L1.2`/`L1.1`. `ent-swallow` greped both: **`L1.1` returns zero hits for FEES, VFSS, manometry,
+>    aspiration, penetration or screening, and `L1.2` returns only the word "deglutition" inside two
+>    unrelated slides.** Every item the row named is in **`L7`** — which is to say, in the *other* row,
+>    from `ent-dysph`. **The two rows were one deck seen from two chapters**, and were delivered once.
+>
+> **The content was real in all three cases. What was wrong was the description of it.** So: read the
+> named deck, grep the stem across all 34 files, and where the row and the source disagree, **write
+> what the source holds and report the row as mis-stated with the evidence.** Never re-attribute
+> quietly, never manufacture the difference, and never tick a row you could not verify.
+>
+> **⚠️ A ROW CAN ALSO BE ARITHMETICALLY INFLATED.** `ent-swallow`'s promised 1,522 words included a
+> 32-word title block, a 131-word ILO index (a contents list for the body already claimed — counting
+> it bills the same content twice inside one file), and 75 words already written verbatim in the
+> deferring chapter itself. **Content delivered whole; only the number moved.** State the correction
+> rather than inheriting the figure.
 
 > **⚠️⚠️ A REGISTER ROW CAN PROMISE SOMETHING THE DECK DOES NOT CONTAIN — AND THE RECEIVING CHAPTER
 > MUST SAY SO, NOT MANUFACTURE IT.** `ent-hoarse`’s row promised *"the content of voice therapy"*
