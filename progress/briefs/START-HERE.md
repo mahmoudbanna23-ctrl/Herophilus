@@ -750,6 +750,13 @@ if the receiving chapter actually gets it.**
 | `ent-otalgia` (L15) | **Ramsay Hunt** prognosis (30 % full recovery), aciclovir, the steroid regimen, contrast with Bell's palsy | `ent-facial` | ☐ |
 | `ent-otalgia` (L21.1) | **ASOM staging and treatment** | `ent-aom` | ✅ already written |
 | `ent-aom` (L21.1) | Otitis externa, otomycosis, **malignant otitis externa**, furunculosis, hard impacted wax, bullous myringitis | `ent-otalgia` | ✅ **delivered 2026-08-14** |
+| `ent-csom` (L17,18) | **CSF otorrhoea** in full · **bloody otorrhoea and glomus tumours** | `ent-otorrhea` | ☐ |
+| `ent-csom` (L17,18 / L22 / L15) | **Otitis externa in full** · the **four-nerve referred-otalgia** table · ear anatomy detail · facial-nerve disorders | `ent-otalgia` ✅ / `ent-earanat` ☐ / `ent-facial` ☐ |
+| `ent-csom` (L4) | **Pharyngeal suppurations** — only the Bezold's → parapharyngeal clause kept | `ent-pharsupp` | ✅ **delivered 2026-08-14** |
+| `ent-pharsupp` (L1.2) | Pharyngeal divisions, **Waldeyer's ring**, the constrictors and the **inferior-constrictor dehiscence**, blood supply, nerve-supply diagrams, the swallowing phases. Only the tonsillar bed and **crypta magna** kept | `ent-pharanat` | ☐ |
+| `ent-pharsupp` (L5) | **Branchial cyst, thyroglossal cyst**, the neck-mass differential | `ent-neck` | ☐ |
+| `ent-pharsupp` (L16) | **Bezold's abscess in full** — mastoiditis, mastoid tip, the compass of spread, cortical mastoidectomy. Only the keyed mastoid-tip → parapharyngeal line kept | `ent-csom` | ☐ |
+| `ent-tonsils` (v3) | **Quinsy management** — Hilton's manoeuvre, the incision points, interval tonsillectomy | `ent-pharsupp` | ✅ **delivered 2026-08-14** |
 
 ### 14.6 What this costs, said plainly
 
