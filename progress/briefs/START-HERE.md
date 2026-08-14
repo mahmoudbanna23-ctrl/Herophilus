@@ -962,7 +962,7 @@ if the receiving chapter actually gets it.**
 | `ent-otorrhea` (L17,18 lines 87–249 · L19.2 lines 120–148) | **The whole otalgia half** | `ent-otalgia` | ✅ already written — verified before deferring |
 | `ent-otorrhea` (L15) | **Facial palsy from temporal-bone fracture as a subject** — only the 10 % longitudinal / 40 % transverse palsy rates kept, which `L15` does print and are therefore sourced | `ent-facial` | ☐ **⚠️ facial is already merged; reconciliation work** |
 | `ent-otorrhea` (L19.1) | **Haemotympanum, and the CHL/SNHL lists as hearing loss** | `ent-hearing` | ✅ already written |
-| `ent-nasalobs` (L32 lines 6–139) | **Headache in full** — 547 words, the whole facial-pain half of the deck | `ent-facialpain` | ☐ |
+| `ent-nasalobs` (L32 lines 6–139) | **Headache in full** — 547 words, the whole facial-pain half of the deck | `ent-facialpain` | ✅ **delivered 2026-08-14** — `fp-1`–`fp-10`, mapped slide by slide. **✅ THIS ROW VERIFIED EXACT: `sed -n '6,139p' | wc -w` returns 547, the figure the row states, and all 134 lines were read against the delivery list — the deck contains everything promised and nothing in range was left uncollected.** |
 | `ent-nasalobs` (L23 lines 1–86) | **Nasal anatomy** — 297 words; only the choanal-atresia and CNPAS half (87–177) was claimed here | `ent-noseanat` | ✅ **delivered 2026-08-14** — `nan-3`/`4`/`7`/`8`/`10`/`11` |
 | `ent-sinusitis` (L27.1 line 285 · general) | **The complications in full** — pre- vs post-septal cellulitis and the orbital staging, the **lamina papyracea** route, **Pott’s puffy tumour** and the diploic veins, and **sinus → frontal lobe / ear → temporal lobe and cerebellum**. Its two-word orbital caption was **subtracted from this chapter’s TERM 1** rather than counted | `ent-sinuscomp` | ☐ **⚠️ `L28` DOES NOT EXIST — this chapter has no lecture and is written from general knowledge against its own 10 questions. It was deliberately NOT absorbed here; none of `ent-sinusitis`’s 47 tests any of it.** |
 | `ent-sinusitis` (L23 lines 1–86) | **Nasal anatomy**, and the **osteomeatal complex as a named unit** | `ent-noseanat` | ✅ **delivered 2026-08-14** — same 86 lines as the row above, **written once, discharging both**. The genuinely new half — the OMC as an anatomical unit — is `nan-5` in full, keyed by four questions. Declared overlap: `sin-2` keeps one bullet naming four components as the SURGICAL rationale; both correct, neither removable |
@@ -1085,6 +1085,13 @@ if the receiving chapter actually gets it.**
 > stem, not the word. **The lesson is the standing one — READ THE SLIDE BEFORE DECLARING A GAP — and
 > it has now paid twelve times.** Treat every remaining item on that review list as unverified.
 
+
+> **✅ AND A ROW CAN BE EXACTLY RIGHT — do not let the three defects above turn into blanket
+> distrust.** `ent-nasalobs`’s headache row named the correct deck, the correct line range, and a
+> word count that `wc -w` reproduces **to the word**; the receiving chapter read all 134 lines and
+> found everything promised present and nothing uncollected. **The verification is cheap — one
+> `sed -n` and one read-through — and it is the verification, not suspicion, that is the rule.**
+> Check every row; expect most to hold.
 ### 14.6 What this costs, said plainly
 
 The notes alone no longer explain why each wrong option is wrong — **the linked questions do**,

@@ -4987,5 +4987,129 @@ var T_ENT = {
         ]
       }
     ]
+  },
+  "ent-facialpain": {
+    "intro": "Almost every question is a discrimination: a patient sent to ENT with “sinus headache” who has migraine, tension headache or trigeminal neuralgia instead. Learn the grid, the site of each sinus’s pain, and the four controversy bullets the lecture opens with.",
+    "sections": [
+      {
+        "id": "fp-1",
+        "w": "must",
+        "h": "The four things the lecture says before naming a single headache",
+        "body": "**RHINOGENIC HEADACHE IS CONTROVERSIAL.**\n\n1. **The most common type of headache in ENT patients is PRIMARY headache** — tension type, migraine, cluster. Not sinus.\n2. Those primary headaches **may be TRIGGERED by nasal irritation — stimulation of the TRIGEMINAL NERVE.** Trigger, not cause. Allergic and non-allergic rhinitis both do it.\n3. **“Contact headache” is also controversial** (fp-3).\n4. **Acute sinusitis causes FACIAL PAIN rather than headache** — including **vacuum headache** (fp-2).\n\n|Primary headaches (3)|Secondary headaches (8)|\n|---|---|\n|**Migraine**|**Rhinogenic / sinogenic**|\n|**Tension type**|**TMJ related**|\n|**Cluster headache / cephalgia**|**Trigeminal neuralgia**|\n||**Cranial / cervical vascular disorder**|\n||**Substance withdrawal**|\n||**Infection**|\n||**Homeostasis related (“metabolic”)**|\n||**Anxiety / somatisation**|\n\n- **“Sinus headache” is a SECONDARY headache** — so it can never be the answer to “commonest PRIMARY headache”.\n\nSrc: L32 lines 6–34",
+        "qs": [
+          "entqb-nose5-169",
+          "entqb-nose5-170",
+          "entqb-nose5-171",
+          "entqb-nose5-174"
+        ]
+      },
+      {
+        "id": "fp-2",
+        "w": "must",
+        "h": "Sinus pain — where each sinus hurts, what it feels like, and vacuum headache",
+        "body": "**PAIN IS REFERRED OVER THE SINUS.** *(map not in course material — the sinusitis deck carries it as a picture titled “Anatomical Location of Pain & Tenderness” with no text)*\n\n|Sinus|Where the pain is felt|\n|---|---|\n|**Maxillary**|**CHEEK**, referred to upper jaw and upper teeth; tenderness below the inferior orbital margin|\n|**Frontal**|**FOREHEAD / above the eye**, tenderness over the eyebrow|\n|**Anterior ethmoid**|**between and behind the eyes** — over the bridge of the nose, medial canthus|\n|**Posterior ethmoid**|deep retro-orbital ache|\n|**Sphenoid**|**OCCIPUT and VERTEX, deep retro-orbital** — the one sinus with **NO facial tenderness**|\n\n**CRITERIA OF SINUSITIS PAIN** *(characteristics not in course material)*: **DULL, ACHING** · **increases with straining, stooping and bending forward** · **LOCALISED over the sinus** · worse in the morning.\n- **THROBBING is NOT a criterion** — throbbing is vascular (migraine) or dental. *Defect note: the bank keys throbbing out here while describing sinus pain as throbbing in a sibling question; both stand as printed.*\n\n**VACUUM HEADACHE** — the one headache acute sinusitis genuinely causes, and it is printed by name: **morning pain over the FOREHEAD due to obstruction of the FRONTAL RECESS during sleep.** Trapped air absorbed overnight → negative pressure; **pain peaks on waking, eases through the day** as the sinus ventilates.\n- **A frontal headache offered against cluster, tension and “temporal” is VACUUM headache.**\n- Supporting features that make a headache sinugenic: **nasal obstruction, mucopurulent discharge, relief by systemic decongestants, no nausea or vomiting.**\n\nSrc: L32 lines 17–19; L27.1 line 159 (title slide only); L27.2 line 46",
+        "qs": [
+          "entep-nose-72",
+          "entep-nose-84",
+          "entep-mfe4-19",
+          "entqb-nose4-164",
+          "entqb-nose5-172"
+        ]
+      },
+      {
+        "id": "fp-3",
+        "w": "high",
+        "h": "Contact-point headache, and why the trigeminal nerve is the whole story",
+        "body": "**THE TRIGEMINAL NERVE CARRIES ALL NASAL SENSATION** and is the route of **every** headache of nasal origin. The olfactory nerve carries smell and **no pain**; the vagus and glossopharyngeal do not supply the nose.\n\n**CONTACT HEADACHE — the assumption, stated by the lecture as an assumption:**\n- Pressure on **trigeminal nerve endings at a CONTACT POINT** — where a **deviated septum or a spur** touches the lateral nasal wall — **triggers facial pain or headache**.\n- **THE TEST IS ALSO THE TREATMENT TRIAL: apply a LOCAL ANAESTHETIC WITH DECONGESTANT to the contact point.** If the headache is relieved, the contact point is implicated.\n- **The term is controversial** — do not operate on a septum for headache without that test being positive.\n\nSrc: L32 lines 10–16",
+        "qs": [
+          "entqb-nose5-170",
+          "entqb-nose5-171"
+        ]
+      },
+      {
+        "id": "fp-4",
+        "w": "must",
+        "h": "Migraine — the clinical picture",
+        "body": "|Feature|Migraine|\n|---|---|\n|**Duration**|**hours → 3 days**|\n|**Site**|**severe, usually UNILATERAL** — **but BILATERAL in 40 % of cases**|\n|**Character**|**THROBBING / PULSATING**, moderate to severe|\n|**Aggravation**|**by EXERCISE and MOVEMENT** — the cleanest separator from tension headache|\n|**Associated**|**NAUSEA / VOMITING · PHOTOPHOBIA · PHONOPHOBIA**|\n|**Without aura**|**2/3 of cases**|\n|**With aura**|**1/3** — **spreading scotoma · unilateral paraesthesia · dysphasia**|\n|**Family history**|common *(not in course material)*|\n\n- **“STRICTLY localised to one side” is FALSE** — usually unilateral, bilateral in 40 %. *Defect note: the bank’s printed box states bilateral is commoner than unilateral; the slide’s figure is 40 %, i.e. the minority. Keyed as printed, the slide figure is the one to quote.*\n- **Nausea and vomiting are the fastest way to separate migraine from sinus headache** — a sinus headache has neither.\n\nSrc: L32 lines 35–47",
+        "qs": [
+          "entep-mfe4-15",
+          "entqb-nose5-170",
+          "entqb-nose5-173",
+          "entqb-nose5-176"
+        ]
+      },
+      {
+        "id": "fp-5",
+        "w": "high",
+        "h": "Migraine — triggers, acute treatment, prophylaxis",
+        "body": "**PREDISPOSING FACTORS:** stress · fatigue · depression · anxiety · **menstruation** · menopause · head/neck trauma.\n**TRIGGER FACTORS:** **dietary (20 %)** · relaxation · travel · **missing meals or sleep** · bright lights · noise · strenuous exercise · menstruation.\n\n|Attack severity|Treatment|\n|---|---|\n|**Mild to moderate**|**NSAIDs incl. ibuprofen** · non-opioid analgesics · **acetaminophen** · **caffeinated combinations** (aspirin + acetaminophen + caffeine)|\n|**Moderate or severe** — and mild-to-moderate responding poorly to the above|**MIGRAINE-SPECIFIC AGENTS: triptans, dihydroergotamine**|\n\n**TRIPTANS, with the doses the slide prints:** **sumatriptan 50–100 mg** · **zolmitriptan 2.5 mg**, repeat after 2 h, **not in children** · **rizatriptan 10 mg** (equivalent to sumatriptan 100 mg) · **almotriptan 12.5 mg — HIGH EFFICACY, COST EFFECTIVE.**\n\n**PROPHYLAXIS:** use for **4–6 months**, then **taper off over 2–3 weeks**. Agents: **beta-blockers · TCAD (pizotifen) · gabapentin**; others **topiramate · sodium valproate · clonidine**; plus **non-drug therapies**.\n\nSrc: L32 lines 48–88",
+        "qs": [
+          "entqb-nose5-173"
+        ]
+      },
+      {
+        "id": "fp-6",
+        "w": "must",
+        "h": "Tension-type headache — the commonest of all",
+        "body": "|Feature|Tension-type|\n|---|---|\n|**Frequency**|**THE MOST COMMON TYPE OF PRIMARY HEADACHE** — and the commonest headache worldwide *(the worldwide scope is not in course material; the slide says commonest primary)*|\n|**Chronic form**|**more than 15 days per month, often DAILY**|\n|**Trigger**|often **stress / lifestyle** related|\n|**Sex**|**more common in FEMALES**|\n|**Family history**|**common**|\n|**Character**|**TIGHTENING or BAND-LIKE sensation** around **forehead and temples**, may spread to the **occiput**|\n|**Laterality**|**usually BILATERAL**|\n|**Associated**|**none** — no nausea, no photophobia, no autonomic signs|\n\n**TREATMENT:** **painkillers — paracetamol and ibuprofen** · **neck massage**. It **often does not affect the ability to carry out a day-to-day routine** — the low disability is itself a discriminator from migraine.\n\n- **A BAND AROUND THE HEAD IS TENSION HEADACHE AND NOTHING ELSE.** That single word decides the “which is not matching acute sinusitis” question — sinus pain can be diffuse and periorbital, but it is never a band.\n\nSrc: L32 lines 89–103",
+        "qs": [
+          "entep-mfe4-19",
+          "entqb-nose5-169",
+          "entqb-nose5-174"
+        ]
+      },
+      {
+        "id": "fp-7",
+        "w": "must",
+        "h": "Cluster headache",
+        "body": "|Feature|Cluster headache / cephalgia|\n|---|---|\n|**Who**|**MIDDLE-AGED patients**; **male predominance** *(the sex is not in course material)*|\n|**Pattern**|**SYMPTOM-FREE PERIODS** between clusters — the defining rhythm|\n|**Severity and site**|**SEVERE or VERY SEVERE, UNILATERAL — ORBITAL, SUPRAORBITAL and/or TEMPORAL**|\n|**Duration**|**up to 3 hours if untreated**|\n|**Ipsilateral autonomic features**|**LACRIMATION · CONJUNCTIVAL INJECTION · NASAL CONGESTION · facial sweating · PTOSIS · MIOSIS**|\n\n**TREATMENT — and the negative is examinable:**\n- **Simple painkillers (paracetamol, ibuprofen, aspirin) DO NOT HELP.**\n- **OXYGEN** · **triptans** · **local anaesthetics**.\n\n- **Why cluster reaches ENT:** unilateral nasal congestion + a watering eye read as sinus disease until the strictly unilateral, ≤3-hour orbital pattern is taken.\n\nSrc: L32 lines 104–121",
+        "qs": [
+          "entqb-nose5-169",
+          "entqb-nose5-174"
+        ]
+      },
+      {
+        "id": "fp-8",
+        "w": "must",
+        "h": "⚑ THE GRID — telling the five apart",
+        "body": "|Axis|Sinus (rhinogenic)|Migraine|Tension-type|Cluster|Trigeminal neuralgia|\n|---|---|---|---|---|---|\n|**Site**|**over the affected sinus** — cheek / forehead / between the eyes / occiput|**hemicranial**, temple|**forehead + temples**, spreads to occiput|**orbital, supraorbital, temporal**|**one or more DIVISIONS of V — usually MAXILLARY or MANDIBULAR**|\n|**Character**|**DULL, ACHING, pressure**|**THROBBING / PULSATING**|**TIGHT, BAND-LIKE**|**boring, excruciating**|**ELECTRIC-SHOCK, stabbing, PAROXYSMAL**|\n|**Duration**|**days, with the infection**|**hours → 3 days**|**often daily, >15 days/month**|**up to 3 hours**|**up to 2 MINUTES per attack**|\n|**Laterality**|**side of the diseased sinus**|**usually unilateral, bilateral in 40 %**|**BILATERAL**|**STRICTLY unilateral**|**unilateral**|\n|**Aggravated by**|**bending forward, straining, stooping**; worst on **waking**|**movement and exercise**|stress; **little disability**|nothing consistent|**touch, chewing, washing, cold air** *(triggers not in course material)*|\n|**Associated**|**nasal obstruction, mucopurulent discharge; relieved by decongestants; NO nausea**|**nausea/vomiting, photophobia, phonophobia, aura in 1/3**|**none**|**ipsilateral lacrimation, conjunctival injection, nasal congestion, ptosis, miosis**|**none between attacks; refractory period after one**|\n|**Who**|any age, with an URTI|any; strong family history|**female**, family history|**middle-aged**, male|**female, >50 years**|\n\n- **The three fastest single discriminators:** **nausea or photophobia → migraine** · **a band → tension** · **a watering red eye with a blocked nostril for under 3 hours → cluster.**\n- **If the pain is worse on bending forward, worst in the morning, and there is NO nausea, it is the sinus.**\n\nSrc: L32 lines 6–139; the grid is assembled from those slides",
+        "qs": [
+          "entep-nose-84",
+          "entep-mfe4-15",
+          "entep-mfe4-19",
+          "entqb-nose5-169",
+          "entqb-nose5-173",
+          "entqb-nose5-176"
+        ]
+      },
+      {
+        "id": "fp-9",
+        "w": "must",
+        "h": "Trigeminal neuralgia",
+        "body": "|Feature|Trigeminal neuralgia|\n|---|---|\n|**Attacks**|**PAROXYSMAL attacks of sudden pain lasting UP TO 2 MINUTES**|\n|**Territory**|**one or more divisions of the trigeminal nerve — usually MAXILLARY (V2) or MANDIBULAR (V3)**|\n|**Sex**|**more common in FEMALES**|\n|**Age of onset**|**over 50 years**|\n|**Cause, classical type**|**NEUROVASCULAR COMPRESSION of the trigeminal nerve in or around the ROOT ENTRY ZONE** — the commonest cause|\n|**Type 2**|**may be of more CENTRAL origin**|\n\n- **The duration is the discriminator.** Seconds to two minutes, in a nerve division, is neuralgia; hours is a primary headache; days is a sinus.\n- **Treatment** *(not in course material — no drug is named in any of the 34 decks)*: **carbamazepine** first line; then oxcarbazepine, baclofen, lamotrigine; **microvascular decompression** for the neurovascular compression the lecture names.\n- **Red flag:** trigeminal neuralgia **under 40**, or **with sensory loss**, is not classical — image for a posterior fossa lesion or demyelination.\n\nSrc: L32 lines 122–131",
+        "qs": [
+          "entep-nose-84",
+          "entqb-nose5-171"
+        ]
+      },
+      {
+        "id": "fp-10",
+        "w": "high",
+        "h": "The other neuralgias, and the cavernous sinus",
+        "body": "|Entity|What it is|\n|---|---|\n|**Herpetic / post-herpetic neuralgia**|burning pain persisting in the dermatome after a **herpes zoster** eruption. In the ear this is **Ramsay Hunt** territory — the palsy itself is `ent-facial`’s|\n|**Glossopharyngeal neuralgia**|paroxysmal stabbing pain in the **tonsil, tongue base, pharynx and EAR, triggered by SWALLOWING** — the IX-nerve mirror of trigeminal neuralgia|\n|**Tolosa–Hunt syndrome**|**PAINFUL OPHTHALMOPLEGIA** caused by **non-specific inflammation of the CAVERNOUS SINUS or SUPERIOR ORBITAL FISSURE**|\n|**Gradenigo syndrome**|**TRIGEMINAL NEURALGIA + VI NERVE PALSY due to PETROSITIS complicating otitis media** — pain, diplopia and a discharging ear together. The full account of petrositis belongs with chronic otitis media|\n\n**CONTENTS OF THE CAVERNOUS SINUS** *(the nerve list is not in course material — no deck prints it; L32 reaches the sinus only through Tolosa–Hunt)*:\n\n|In the LATERAL WALL|INSIDE the sinus|\n|---|---|\n|**III oculomotor · IV trochlear · V1 ophthalmic · V2 maxillary**|**VI abducens** and the **INTERNAL CAROTID ARTERY**|\n\n- **IX, X and XI are NOT in the cavernous sinus** — they leave the skull through the **jugular foramen**.\n- **VI is the vulnerable one.** Lying free inside the sinus beside the carotid, it fails first: **an isolated VI palsy is the earliest sign of cavernous sinus disease** — and is exactly the sign Gradenigo names.\n\nSrc: L32 lines 132–139; L16 (Gradenigo’s VI palsy); L30 (cavernous sinus thrombosis)",
+        "qs": [
+          "entqb-nose5-175"
+        ]
+      },
+      {
+        "id": "fp-11",
+        "w": "high",
+        "h": "The non-sinus causes ENT must not miss",
+        "body": "**Nose normal, face still painful → work the secondary list.**\n\n|Cause|The give-away|\n|---|---|\n|**TMJ dysfunction**|**pain on CHEWING**, clicking, tenderness over the joint in front of the tragus; **often referred to the EAR with a completely normal drum** *(the clinical detail is not in course material — L32 names “TMJ related” only)*|\n|**Dental disease**|**upper premolar or molar** caries or abscess; pain worse on percussing the tooth. Also the route to odontogenic maxillary sinusitis|\n|**Temporal arteritis (giant cell arteritis)**|*(not in course material — 0 hits in all 34 decks)* **over 50, unilateral temporal headache, a thickened tender pulseless temporal artery, jaw claudication, raised ESR.** **Sight-threatening — start steroids before the biopsy**|\n|**Atypical facial pain**|*(not in course material)* constant, deep, poorly localised, crosses anatomical boundaries, normal examination and normal imaging; associated with anxiety and depression. **A diagnosis of exclusion** — never operate for it|\n|**Referred pain**|the nerve that supplies the painful area also supplies somewhere else. **The four-nerve referred-otalgia table is written in the otalgia chapter** and is the model for the whole idea|\n|**Others L32 lists**|cranial / cervical **vascular** disorder · **substance withdrawal** (analgesic overuse) · **infection** · **homeostasis-related “metabolic”** · **anxiety / somatisation**|\n\n**RED FLAGS — refer out, do not operate on the septum** *(not in course material)*: **new headache over 50 · sudden “worst ever” onset · progressive and worsening · fever, neck stiffness or rash · focal neurology or papilloedema · sensory loss with the pain · visual loss.**\n\nSrc: L32 lines 26–34; L17,18 (TMJ as a neighbouring structure); L27.2 (odontogenic route)",
+        "qs": [
+          "entqb-nose5-171"
+        ]
+      }
+    ]
   }
 };
