@@ -204,15 +204,66 @@ Plus 11 unnumbered files including `Asthma e-book`, `Iron deficiency anemia pdf`
 citing one** — they are different lectures on the same topic, not duplicates, and the fuller one is
 often the unnumbered file.
 
-**⚠️ Gaps in the numbering: no 19, 20, 21, 28, 29, 42, 45, 46, 50, 57.** Before treating any of
-those as a missing lecture, check `Semester 8\Pedo\Theoritical\PPT\` — and note that **two
-Pediatrics PPT stubs are known to exist there** (recorded in the workspace notes as awaiting
-cleanup), so an empty file is a real possibility. If a lecture is genuinely absent from the supplied
-material, raise it with the user — that is a file they can supply, and worth interviewing about.
+### ⚠️ The numbering gaps — SETTLED 2026-08-14, do NOT re-raise them
+
+**The source tree holds 68 lecture files against 64 cached.** Audited file-by-file on 2026-08-14
+(`comm` over the two sorted lists, not by eye). The earlier version of this section listed 19, 20
+and 42 as missing numbers; **all three are files that exist** and it was wrong. What is actually
+true:
+
+**⚠️ NUMBERS 21, 28, 29 AND 57 DO NOT EXIST AND NEVER WILL — the user's answer, 2026-08-14:
+*"The missing lectures were not given to me by the professor."* DO NOT interview about them, do not
+hunt for them, do not tag their topics as a capture failure.** A gap in the numbering here means the
+professor withheld the lecture, and the affected material is filled the way any gap is —
+from general medical knowledge, tagged (`CLAUDE.md` §4). **This also settles ENT's long-open `L28`
+question by the same answer**; that interview item is closed.
+
+45, 46 and 50 are almost certainly the unnumbered files sitting exactly where they belong —
+`Iron deficiency anemia pdf` between 44 (BM failure) and 47 (haemorrhagic disorders),
+`diabetes mellitus for under grad…` between 49 and 51 (DKA). Treat them as those slots.
+
+**⚠️ FOUR DECKS EXIST BUT ARE NOT USABLY CACHED. Budget a visual read for each before writing the
+chapter that needs it** — the four-up contact-sheet method below:
+
+| File | Chapter it serves | Why it is not cached |
+|---|---|---|
+| `19 and 20) INFECTIOUS DISEASES. clean.ppt` | `infection` | **16 MB in the OLD binary `.ppt` format** — the read-the-XML-out-of-the-archive trick works on `.pptx` only. Covers two lecture slots. |
+| `42)Viral hepatits_.pdf` | `liver` | 44 pages, **image-only** — `pdftotext` returns 44 characters. The chapter's only other deck is `43)Infantile cholestasis_` at 1,537 w. |
+| `44)BM FAILURE.pdf` | `haematology` | Cached but **6 words per page over 54 pages** — effectively all diagrams. |
+| `25)Immunodeficiency_.pdf` | `infection` | Cached but **9.7 words per page over 58 pages** — same shape. |
+
+**⚠️ The two stub files are confirmed harmless — 134 and 120 bytes, and not PDFs at all**
+(`pdfinfo`: *"Couldn't find trailer dictionary"*). They are ` Myocardial diseases.pdf` and
+` stenotic lesions.pdf`, both with **two leading spaces** in the name. Their content is elsewhere and
+nothing is lost — but *where* matters, see the next line.
+
+**⚠️⚠️ `34)Students Obstructive diseases` IS A CARDIAC DECK, NOT A RESPIRATORY ONE.** The title reads
+respiratory and it was mis-filed that way once. It is the **coarctation / aortic stenosis / pulmonary
+stenosis** lecture — the content the ` stenotic lesions.pdf` stub was meant to hold. Proven by grep:
+`coarctation` and `aortic stenosis` appear in it and **`33)Congenital acyanotic heart disease_`
+returns ZERO hits for either.** File it under `cardiac`. Filed under `respiratory` it leaves the
+cardiac chapter missing exactly the lesions the exam asks about.
 
 **Lecture slides extract cleanly with `pdftotext`.** If an uncached deck returns almost nothing it
 is image-only: **render at 110 dpi and read FOUR-UP CONTACT SHEETS** — 10 reads instead of 40, with
 headings and bullets still legible at 760 px per slide.
+
+### ⚠️ Paediatrics carries ~4× ENT's lecture load per chapter — expect the budget cap to bind
+
+Measured 2026-08-14 across all four caches:
+
+| | ENT | **Peds** | Ophtho | Neuro |
+|---|---|---|---|---|
+| Chapters | 30 | **21** | 26 | 27 |
+| Cached decks | 34 | **64** | 27 | 25 |
+| Cached words | 34,883 | **96,218** | 33,424 | 43,665 |
+| **Lecture words / chapter** | 1,163 | **4,582** | 1,285 | 1,617 |
+
+The theory budget is `max(lecture words used, 25 × linked questions)`, floor 600, **cap 3,000**.
+With ~4 questions per chapter here, TERM 1 governs everywhere — and **4,582 is past the cap**, so
+unlike ENT (where the cap almost never bound) **most paediatrics chapters will hit it.** Plan for
+that: the §14.5 deferral register will be busy, and *an unrecorded promise is a deletion.* Do not
+silently drop the overflow to fit — itemise it.
 
 ---
 
