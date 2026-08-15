@@ -65,11 +65,23 @@ const MODULES = [
       ['malignant','Malignant Disease']]},
     {name:'Completed earlier', chapters:[
       ['growth-puberty','Growth and puberty'],['nutrition','Nutrition'],['accidents','Accidents and poisoning']]},
+    /* Split 2026-08-15 at the user's instruction. Paediatrics carries ~4x ENT's
+       lecture load per chapter, so writing to lecture length gave 21-32 page
+       chapters — the size the user rejected for ENT. Splitting keeps every fact
+       and returns 3-13 page units. Boundaries follow each written chapter's own
+       contiguous sections, so nothing was reordered or rewritten. SCHEDULE is
+       keyed by date and title, never chapter id, so it is unaffected. */
     {name:'Systems', chapters:[
-      ['gastroenterology','Gastroenterology'],['perinatal','Perinatal medicine'],
+      ['gastroenterology','Vomiting and reflux'],['gi-diarrhoea','Diarrhoea and constipation'],
+      ['gi-abdopain','Abdominal pain'],['perinatal','Perinatal medicine'],
       ['neonatal','Neonatal medicine'],['haematology','Hematological Disorders'],
-      ['respiratory','Respiratory Disorders'],['cardiac','Cardiac Disorders'],
-      ['renal','Kidney and Urinary tract'],['neurological','Neurological Disorders'],
+      ['resp-pneumonia','Pneumonia'],['respiratory','Asthma'],['resp-bronch','Bronchiolitis'],
+      ['cardiac','Congenital heart disease'],['cardiac-cyan','Cyanotic heart disease'],
+      ['cardiac-acq','Acquired heart disease'],
+      ['renal-uti','Urinary tract infection'],['renal','Glomerular disease'],
+      ['renal-cakut','CAKUT, stones and enuresis'],
+      ['neuro-stroke','Stroke and intracranial haemorrhage'],['neurological','Seizures and epilepsy'],
+      ['neuro-nm','Motor and neuromuscular disorders'],['neuro-cp','Cerebral palsy'],
       ['mental','Mental Health'],['endocrine','Diabetes and Endocrine'],['liver','Liver Disorders']]}
   ]}
 ];

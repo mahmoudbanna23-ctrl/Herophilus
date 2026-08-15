@@ -2,7 +2,7 @@
    Written in Phase 4 from lecture slides + questions + book. See CLAUDE.md. */
 var T_PEDS = {
   "cardiac": {
-    "intro": "Ten of the twenty-four questions are one skill: name the lesion from its murmur, its click and its second sound. The rest split three ways — the innocent murmur, the blue or collapsing neonate and its duct, and endocarditis on an already abnormal heart.",
+    "intro": "Almost everything here is one table: the murmur signature grid. Expect a murmur plus one physical sign and a single best diagnosis, or the age a shunt declares itself. Innocent versus pathological is asked directly — learn the \"S\" checklist and the three findings that break it.",
     "sections": [
       {
         "id": "card-1",
@@ -139,7 +139,12 @@ var T_PEDS = {
           "pedhd-card-12",
           "pedhd-card-20"
         ]
-      },
+      }
+    ]
+  },
+  "cardiac-cyan": {
+    "intro": "The examiner wants the blue neonate sorted at the bedside: duct-dependent or not, and prostaglandin started before imaging. Tetralogy dominates — the four components, the boot-shaped heart, and the hypoxaemic spell, which is asked as management rather than diagnosis.",
+    "sections": [
       {
         "id": "card-10",
         "w": "must",
@@ -228,7 +233,12 @@ var T_PEDS = {
           "pedhd-card-11",
           "pedhd-card-18"
         ]
-      },
+      }
+    ]
+  },
+  "cardiac-acq": {
+    "intro": "Rheumatic fever is asked through the Jones criteria and through prophylaxis, not pathology. Kawasaki appears as a fever that will not settle. Endocarditis is asked as who needs cover and what grows. Arrhythmias reduce to complex width and rate.",
+    "sections": [
       {
         "id": "card-15",
         "w": "must",
@@ -263,8 +273,8 @@ var T_PEDS = {
       }
     ]
   },
-  "renal": {
-    "intro": "Four decks, one habit of mind: prove the infection with a culture, prove the blood is blood and say where it comes from, separate heavy protein from active sediment, and remember that half of these children have a malformation underneath.",
+  "renal-uti": {
+    "intro": "The commonest questions are about the sample and the imaging, not the antibiotic: what makes a culture worth acting on, and which child gets an ultrasound. Age decides treatment route. Know what a dipstick can and cannot settle.",
     "sections": [
       {
         "id": "ren-1",
@@ -351,7 +361,12 @@ var T_PEDS = {
           "pedhd-renal-17",
           "pedhd-renal-23"
         ]
-      },
+      }
+    ]
+  },
+  "renal": {
+    "intro": "Glomerular or not is the whole chapter — the discriminators are asked directly. APSGN carries a clock the examiner tests: the interval, the complement, and what not to do. HUS follows bloody diarrhoea. Nephrotic syndrome is asked as its triad and its complications.",
+    "sections": [
       {
         "id": "ren-6",
         "w": "must",
@@ -434,7 +449,12 @@ var T_PEDS = {
           "pedhd-renal-21",
           "pedhd-renal-25"
         ]
-      },
+      }
+    ]
+  },
+  "renal-cakut": {
+    "intro": "Antenatal hydronephrosis and the scarred kidney drive these questions: what to image and when. Reflux is asked through the damage it causes. Stones and enuresis are thinly covered by the decks and are answered here from general knowledge, tagged.",
+    "sections": [
       {
         "id": "ren-14",
         "w": "high",
@@ -480,8 +500,8 @@ var T_PEDS = {
       }
     ]
   },
-  "respiratory": {
-    "intro": "Three diseases and one skill. Pneumonia is answered by the child’s age; asthma by whether the obstruction is variable and reversible; bronchiolitis by the age and the season. Most of the rest is telling a wheeze from a wheeze.",
+  "resp-pneumonia": {
+    "intro": "Age is the pathogen — that single table answers more questions than anything else here. Expect the WHO tachypnoea thresholds as numbers, the empiric antibiotic by age and severity, and the rule that community diagnosis is clinical and needs no film.",
     "sections": [
       {
         "id": "resp-1",
@@ -538,7 +558,12 @@ var T_PEDS = {
         "h": "Prevention, the pneumonia that keeps coming back, and complications",
         "body": "### Prevention\n- **Stop smoking** — it limits lung damage **and** cigarette smoke interferes with the body’s natural defences against pneumonia.\n- **In the newborn:** test and treat pregnant women for **group B streptococci and Chlamydia trachomatis**; **suction the oropharynx** to prevent meconium aspiration.\n- **Vaccinate** against **pneumococci, H. influenzae and influenza**.\n\n**GAPP — the global action plan, three verbs:**\n- **Protect:** promote **breast feeding**, hand washing, **reduce indoor air pollution**.\n- **Prevent:** vaccination.\n- **Treat:** every sick child has access to the right care.\n\n### Recurrent or persistent pneumonia — the eight causes\n**The eight:** **gastro-oesophageal reflux disease · pulmonary congestion · cleft palate · tracheo-oesophageal fistula · immotile cilia · cystic fibrosis · sequestrated lobe · foreign body.**\n\n*Recurrence is an anatomical, aspiration or clearance problem until proved otherwise — the organism is rarely the answer.*\n\n### Complications\n**⚠️ Still unwell at 48 hours:** re-evaluate for a complication — **empyema or abscess**.\n\n- **Empyema.**\n- **Pericarditis.**\n- **Mediastinitis.**\n- **Haematogenous spread** → **meningitis, arthritis, peritonitis**.\n- **Sepsis.**\n\n### The four take-home messages, as printed\n**Take home:** **pneumonia is a leading cause of mortality in the developing world · tachypnoea and chest indrawing are the most important diagnostic signs · empiric CAP treatment is based on the patient’s age and symptoms · prevention is smoking cessation, better housing and immunization.**\n\nSrc: L30 slides 105–111; L30p",
         "qs": []
-      },
+      }
+    ]
+  },
+  "respiratory": {
+    "intro": "Asthma is examined as control and as the acute attack. Expect the severity ladder graded on saturation and speech, the device that suits an age, and the add-on rule. Two of the decks disagree on the spacer age and the saturation cut-off; both readings are given.",
+    "sections": [
       {
         "id": "resp-9",
         "w": "must",
@@ -615,7 +640,12 @@ var T_PEDS = {
         "h": "The acute attack — grading it, admitting it, and treating it",
         "body": "**Exacerbation:** **an acute or sub-acute worsening in symptoms and lung function from the patient’s usual status.** **A patient may present for the FIRST time during an exacerbation.**\n\n**Where each severity is treated: mild at home · moderate and severe in hospital · life-threatening in the PICU.**\n\n### Moderate vs severe (L31.2)\n\n|Feature|Moderate|Severe|\n|---|---|---|\n|**Speech**|**Able to talk**|**Too breathless to talk**|\n|**SpO₂**|**> 92 %**|**< 92 %**|\n|**RR 2–5 y**|**≤ 40 / min**|**> 40 / min**|\n|**RR 5–12 y**|**≤ 30 / min**|**> 30 / min**|\n|**RR 12–18 y**|**≤ 25 / min**|**> 25 / min**|\n|**HR 2–5 y**|**≤ 140 / min**|**> 140 / min**|\n|**HR 5–12 y**|**≤ 125 / min**|**> 125 / min**|\n|**HR 12–18 y**|**≤ 110 / min**|**> 110 / min**|\n|**Chest recession**|**Some intercostal recession**|**Use of accessory neck muscles**|\n\n**⚠️ Tachycardia:** a better guide to severity than respiratory rate — **but it is affected by β2-agonists**.\n\n**Life-threatening: silent chest · cyanosis · poor respiratory effort · exhaustion · arrhythmia and hypotension · altered consciousness · agitation and confusion · PEFR < 33 % of best · SpO₂ < 92 % at ALL ages.**\n\n### The same grading by age (L31A)\n\n|Feature|< 6 y mild/moderate|< 6 y severe|≥ 6 y mild/moderate|≥ 6 y severe|\n|---|---|---|---|---|\n|**Consciousness**|**Conscious**|**Agitated, confused or drowsy**|Same|Same|\n|**Speech**|**Sentences, normal cry**|**Words, or unable to speak**|Same|Same|\n|**SpO₂**|**≥ 92 %**|**< 92 %**|**≥ 90 %**|**< 90 %**|\n|**Heart rate**|**≤ 180 (0–3 y), ≤ 150 (4–5 y)**|**> 180 / > 150**|**< 120**|**> 120**|\n|**Respiratory rate**|**≤ 40**|**> 40**|**≤ 30**|**> 30**|\n|**Wheeze**|—|**A SILENT CHEST indicates severe or life-threatening disease**|—|Same|\n\n*Defect note: L31.2 uses < 92 % at every age; L31A uses < 90 % at 6 years and over. Both printed, neither corrected.*\n\n### Admit if, after high-dose inhaled bronchodilator, the child\n**Admit if:** **persistent breathlessness or tachypnoea · becoming exhausted · PEFR or FEV1 < 50 % of predicted or usual best · SpO₂ < 92 % in air.**\n\n### Treatment\n- **Oxygen if SpO₂ < 92 %**, targeting **94–98 %**.\n- **SABA to all children by MDI and spacer** — except a severe attack, where **nebulizer driven by high-flow oxygen** is used.\n- **A short course of oral steroid for 3–5 days should be given.**\n- **Add nebulized magnesium or nebulized ipratropium INITIALLY in a severe attack.**\n- **IV treatment is given in the ICU.**\n\n**Moderate attack:** SABA via spacer **2–4 puffs, increasing by 2 puffs every 2 minutes to 10 puffs** if needed · **oral prednisolone 1–2 mg/kg** · **monitor response for 15–30 minutes**.\n\n**Severe attack:** **high-flow oxygen** · SABA via spacer **10 puffs or nebulized salbutamol**, reassess and repeat · **oral prednisolone or IV hydrocortisone** · consider **inhaled ipratropium, IV β2-agonist or aminophylline, or nebulized magnesium**.\n\n**Life-threatening:** as for severe, but **nebulized ipratropium is given rather than considered**, response is assessed **continuously**, and **the PICU is involved**.\n\n**Shared aftercare — printed three times:** if responding, **continue bronchodilators every 1–4 hours as needed** · **discharge when stable on 4-hourly treatment** · **continue oral prednisolone for 3–7 days** · **arrange follow-up**.\n\n**Not responding:** **transfer to PICU** · consider the IV therapies not yet used (**magnesium, aminophylline, β2-agonist**) · **chest X-ray for pneumothorax or infection** · **blood gases** · **mechanical ventilation may be needed**.\n\n**Doses, as printed:**\n- **Nebulized salbutamol:** **2.5 mg — 0.5 ml of 0.5 % solution — in 3 ml normal saline.**\n- **± nebulized ipratropium:** **every 20 minutes for the first hour.**\n- **Oral prednisolone:** **1–2 mg/kg**, **max 20 mg under 2 y, 30 mg at 2–6 y.**\n- **IV steroid equivalents:** **dexamethasone 0.15–0.2 mg/kg · hydrocortisone 5–10 mg/kg · methylprednisolone 1–2 mg/kg.**\n- **IV magnesium sulfate:** **40–50 mg/kg infused over 1 hour.**\n\n**The emergency-department algorithm:** assess (history, examination, **PEF or FEV1**) → **bronchodilators, oxygen if needed** → **good response: observe at least 1 hour, discharge if stable** → **incomplete or poor response: ADD SYSTEMIC GLUCOCORTICOSTEROIDS** → good response discharge, **poor response admit** → **respiratory failure: admit to ICU**.\n\nSrc: L31.2 slides 32–46; L31A pp.9–10",
         "qs": []
-      },
+      }
+    ]
+  },
+  "resp-bronch": {
+    "intro": "A wheezing infant with RSV, and the question is almost always what NOT to give — bronchodilators, steroids and antibiotics all appear as distractors. Know the admission thresholds and the two definitions that disagree on the upper age.",
+    "sections": [
       {
         "id": "resp-20",
         "w": "must",
@@ -640,7 +670,7 @@ var T_PEDS = {
     ]
   },
   "gastroenterology": {
-    "intro": "Four decks, one recurring question: is this benign or is it surgical? Green vomit, absent bowel sounds and a distended abdomen are the answer for the acute abdomen; degree of dehydration is the answer for diarrhoea. Everything else is classification.",
+    "intro": "Bile-stained vomiting is the red flag the examiner builds vignettes around. Pyloric stenosis is asked on the character of the vomit and the age. Reflux is asked as when normal becomes disease, and what needs investigating.",
     "sections": [
       {
         "id": "gast-1",
@@ -669,7 +699,12 @@ var T_PEDS = {
         "h": "Bile-stained vomiting — the surgical causes",
         "body": "**Green vomit:** obstructed bowel until proved otherwise. The decks name the causes; detail is supplied where they stop.\n\n### Acute intestinal obstruction — the printed list\n**Incarcerated inguinal hernia · intussusception · volvulus · impacted faecal mass · round worm masses.**\n\n*Intussusception is the commonest cause of obstruction in infants after the neonatal period — in full with the acute abdomen.*\n\n### Malrotation and volvulus\n- **Listed** as a serious abdominal emergency of childhood, and among the **abdominal catastrophes** mimicking neonatal sepsis.\n- **Bilious vomiting in a previously well neonate is midgut volvulus until excluded** *(not in course material)*.\n- **Upper GI contrast** shows an abnormal duodenojejunal flexure; **Ladd’s procedure** is the operation *(not in course material)*.\n- **⚠️ The bowel infarcts within hours** — a well-looking baby with green vomit is still an emergency.\n\n### Strangulated inguinal hernia\n- **Listed** as one of the three bile-stained emergencies of infancy.\n- **Irreducible tender inguinoscrotal swelling with vomiting and distension** *(not in course material)*. **Inguinoscrotal pain or swelling is itself on the surgical-consultation list.**\n\n### Hirschsprung disease\n- **A recognised association of Down syndrome**, listed beside **duodenal atresia**.\n- **Absent ganglion cells in the distal bowel** → functional obstruction *(not in course material)*.\n- **No meconium in the first 48 hours · distension · an EMPTY rectum with explosive stool on withdrawal of the finger** *(not in course material)*.\n- **Rectal suction biopsy is diagnostic** *(not in course material)*.\n\n*\"Explosive stool on withdrawal of finger\" is printed in the constipation deck’s rectal-examination list — the sign separating Hirschsprung from functional constipation, where the rectum is loaded.*\n\nSrc: L22; L24 slides 11, 30, 40; Down association from `6) Genetically determined disease_`, cited only; volvulus as a neonatal catastrophe from `11) Neonatal sepsis`, cited only",
         "qs": []
-      },
+      }
+    ]
+  },
+  "gi-diarrhoea": {
+    "intro": "Dehydration assessment and the fluid plan carry these questions: the two signs that decide severity, and which plan follows. Know zinc, the feeding rule, and which drugs are permitted. Constipation is asked through the Rome IV criteria and the four-step treatment.",
+    "sections": [
       {
         "id": "gast-5",
         "w": "must",
@@ -775,7 +810,12 @@ var T_PEDS = {
         "h": "Constipation — the four-step treatment",
         "body": "**A successful approach has FOUR steps: EDUCATION · DISIMPACTION · PREVENTION OF RE-ACCUMULATION · FOLLOW-UP.**\n\n### 1. Education\n**Simple explanations of bowel function, bowel problems and anorectal physiology · the coexistence of BOWEL AND BLADDER problems · that maintenance therapy runs 6 to 24 MONTHS.**\n\n### 2. Disimpaction\n- **Faecal impaction, defined by any of:** a **hard mass in the lower abdomen** · a **dilated rectum filled with stool** on rectal examination · **excessive colonic stool on radiography** · a **positive history of overflow incontinence**.\n- **⚠️ DISIMPACTION MUST PRECEDE MAINTENANCE THERAPY.** Starting stool softeners **without** it causes **treatment failure** and **worsens overflow incontinence**.\n- **Oral or rectal medication for 3–7 days** — oral, rectal, or a combination, all shown effective.\n\n### 3. Maintenance — diet, behaviour, laxatives\n**Aim: regular bowel movements at normal intervals with good evacuation, preventing recurrent impaction and recurrent withholding. Duration may be months or years.**\n\n|Dietary intervention|Strength of recommendation|\n|---|---|\n|**Increased fluids and carbohydrate**|**HIGHLY RECOMMENDED**|\n|**Limit intake of milk**|**Recommended**|\n|**Dietary fibre**|**No evidence to recommend**|\n|**Probiotics**|**No evidence to recommend**|\n\n- **Carbohydrates, especially SORBITOL** — prune, pear and apple juices — increase stool frequency and water content.\n- **Milk:** excess **exacerbates constipation**, but evidence that eliminating it helps refractory cases is **insufficient**. **A time-limited cow’s-milk-free trial** is reasonable in **infants and young children unresponsive to adequate medical and behavioural management** — **cow’s milk intolerance, particularly with atopy**, is associated with chronic constipation.\n- **Behavioural: scheduled toilet sitting 3 to 10 minutes, once or twice a day. NO PUNISHMENT for not stooling; praise and reward for stooling and for sitting.**\n\n### Laxatives\n- **Osmotic: lactulose · polyethylene glycol · magnesium salts.**\n- **Stool softeners: docusate · mineral oil.**\n- **Also available: stimulant and rectal laxatives.**\n- **⚠️ TITRATE: increase every two days until one to two soft stools daily; decrease if loose.** **The commonest reason for non-response is INADEQUATE DOSING.**\n- **Warn that some leaking or soiling may persist at the start**, and give an **emergency plan**.\n\n### 4. Follow-up and prognosis\n**Regular follow-up essential; treatment for AT LEAST SIX MONTHS. Wean only once bowel movements are regular and easy. Relapse rates are high and stooling problems may persist into adulthood. About 50 % recover and come off medication within 6 to 12 months.**\n\nSrc: L23.2 slides 19–29, 31–34, 37",
         "qs": []
-      },
+      }
+    ]
+  },
+  "gi-abdopain": {
+    "intro": "The first question is always surgical, medical or extra-abdominal. Expect the named emergencies with their signs, and a vignette where the abdomen is innocent and the cause is a chest or a metabolic one. Functional pain is a diagnosis with positive criteria, not a leftover.",
+    "sections": [
       {
         "id": "gast-16",
         "w": "must",
@@ -843,8 +883,8 @@ var T_PEDS = {
       }
     ]
   },
-  "neurological": {
-    "intro": "Five lectures, one question: where is the lesion? Central or peripheral, and at which level. Epilepsy and cerebral palsy are answered by their classifications; the neuromuscular half by site — horn cell, nerve, junction, muscle. The floppy infant is that same question asked in a baby.",
+  "neuro-stroke": {
+    "intro": "Small chapter, and the questions are about recognition: which bleed, from which mechanism, and that a child with focal signs needs imaging urgently. Sickle cell is the aetiology most often planted in a vignette.",
     "sections": [
       {
         "id": "neuro-1",
@@ -866,7 +906,12 @@ var T_PEDS = {
         "h": "Childhood stroke — investigation and treatment",
         "body": "### Investigations\n- **MRI** — the imaging of choice.\n- **MR angiogram and MR venography.**\n- **Echocardiography** — for the cardiac group.\n- **Thrombophilia and vasculitis screen.**\n- **Metabolic tests** for **homocysteine** and **mitochondrial cytopathy**.\n\n### Acute treatment\n**No thrombolysis:** given the **inadequate safety data, emergency thrombolysis is not recommended for children**. This is the single most examinable sentence in the deck.\n\n**Antithrombotics, early:** **early initiation of antithrombotic strategies is paramount to prevent early reinfarction** — **anticoagulation with heparins**, or **antiplatelet strategies, usually aspirin**, depending on the suspected cause.\n\n**Hyperacute neuroprotection — five essentials:**\n- **Control of blood glucose.**\n- **Temperature control.**\n- **Seizure control.**\n- **Maintenance of cerebral perfusion pressure.**\n- **Early management of cerebral oedema.**\n\n### Disease-specific treatment\n- **Sickle cell disease:** **transfusion therapy**.\n- **Vasculitis:** **immunosuppression**.\n- **Moyamoya:** **revascularization surgery**.\n\n### Long-term — secondary prevention\n- **Arteriopathy:** **antiplatelet therapy**.\n- **Cardiogenic causes:** **anticoagulation**.\n- **Rehabilitation:** **multimodal and family-centred**, targeting motor deficits, language and intellectual impairment, behavioural and social disability, and **epilepsy**.\n\nSrc: L53 slides 12–14",
         "qs": []
-      },
+      }
+    ]
+  },
+  "neurological": {
+    "intro": "Classification carries the questions: focal or generalised, aware or not. Febrile seizures are asked as simple versus complex and what that changes. Expect West and Lennox-Gastaut by their triads, the status epilepticus clock as a timed algorithm, and drug choice by seizure type.",
+    "sections": [
       {
         "id": "neuro-4",
         "w": "must",
@@ -943,7 +988,12 @@ var T_PEDS = {
         "h": "Status epilepticus — the timed algorithm",
         "body": "**Definition (ILAE):** either **5 or more minutes of continuous seizure activity**, **or recurrent seizures without regaining baseline consciousness**.\n\n### 0–5 minutes — stabilization phase\n- **Stabilize:** **airway, breathing, circulation, disability** — neurologic exam.\n- **Time the seizure from its onset**, monitor vital signs.\n- **Oxygen** by nasal cannula or mask; **consider intubation** if respiratory assistance is needed.\n- **Initiate ECG monitoring.**\n- **Finger-stick glucose:** if **under 60 mg/dl** — **children ≥ 2 years 2 ml/kg D25W IV**, **children under 2 years 4 ml/kg D12.5W IV**.\n- **IV access:** collect electrolytes, haematology, toxicology screen and anticonvulsant drug levels.\n\n### 5–20 minutes — initial therapy\n**A benzodiazepine is the initial therapy of choice.** Choose **one** of three equivalent first-line options:\n- **IM midazolam** — **10 mg** for over 40 kg, **5 mg** for 13–40 kg, single dose.\n- **IV lorazepam** — **0.1 mg/kg/dose**, max 4 mg, may repeat once.\n- **IV diazepam** — **0.15–0.2 mg/kg/dose**, max 10 mg, may repeat once.\n\n**If none of the three is available:** **IV phenobarbital 15 mg/kg** · **rectal diazepam 0.2–0.5 mg/kg**, max 20 mg · **intranasal or buccal midazolam**.\n\n### 20–40 minutes — second therapy\n**There is no evidence-based preferred second agent.** Choose one, **as a single dose**: **IV fosphenytoin 20 mg PE/kg** (max 1500 mg PE) · **IV valproic acid 40 mg/kg** (max 3000 mg) · **IV levetiracetam 60 mg/kg** (max 4500 mg). If none is available, **IV phenobarbital 15 mg/kg** if not already given.\n\n### 40–60 minutes — third therapy\n**No clear evidence guides this phase.** Choices: **repeat second-line therapy**, or **anaesthetic doses of thiopental, midazolam, pentobarbital or propofol — all with continuous EEG monitoring**.\n\n*At every decision point, if the seizure has stopped and the patient is at baseline, revert to symptomatic medical care.*\n\nSrc: L54 slide 68; slide 70 recovered as an image (AES 2016 algorithm)",
         "qs": []
-      },
+      }
+    ]
+  },
+  "neuro-nm": {
+    "intro": "Every question starts with central or peripheral, then localises to one of four sites. Duchenne, SMA and Guillain-Barré are the named entities. Acute flaccid paralysis is asked as a three-way discrimination — polio, GBS, transverse myelitis.",
+    "sections": [
       {
         "id": "neuro-15",
         "w": "must",
@@ -1027,7 +1077,12 @@ var T_PEDS = {
         "h": "The floppy infant — central versus peripheral",
         "body": "**Three clinical signs on handling:** **slips through your fingers when picked up** · **floppy posture on ventral suspension** · **marked head lag on pull-to-sit**.\n\n**The fuller list:** **head lag · frog-leg posture · abnormal horizontal suspension response · abnormal ventral suspension response · truncal or peripheral hypotonia**, with **muscle power normal or decreased**. It can be caused by an **upper motor neurone lesion (central hypotonia)** or a **lower motor neurone lesion (peripheral hypotonia)**.\n\n### The table that answers the question\n\n|Characteristic|Central hypotonia|Peripheral hypotonia|\n|---|---|---|\n|**Weakness**|**Mild to moderate**|**Significant**|\n|**Deep tendon reflexes**|**Normal or increased**|**Absent**|\n|**Infantile reflexes**|**Present**|**Absent**|\n|**Pull to sit**|**No or mild head lag**|**Marked head lag**|\n|**Milestones**|**Global developmental delay**|**Isolated motor delay**|\n|**Antigravity movements**|**Intact**|**Weak or absent**|\n|**Central manifestations** (seizures, microcephaly)|**Usually present**|**Absent**|\n\n**The second lecturer’s version of the same split:** **central — poor truncal tone with PRESERVED LIMB TONE, brisk reflexes, dysmorphic features**; **peripheral — poor antigravity movements, reduced or absent reflexes, FROG-LEG POSTURE**. The deck stars both of those two signs as the discriminators.\n\n### Causes\n- **Central:** **cerebral malformations · ischaemic · haemorrhagic and intracranial haemorrhage · HIE · metabolic · inborn errors of metabolism · endocrine · chromosomal (Down syndrome)**.\n- **Peripheral:** **spinal cord injury · anterior horn cell disease · neuromuscular junction disorders · muscle**.\n\nSrc: L56 slides 48–49; L55 slides 76–85",
         "qs": []
-      },
+      }
+    ]
+  },
+  "neuro-cp": {
+    "intro": "Cerebral palsy is defined by what it is not: non-progressive, and a disorder of movement and posture. Expect the type from the clinical picture, the timing of the insult, and management as a multidisciplinary list rather than a drug.",
+    "sections": [
       {
         "id": "neuro-27",
         "w": "must",

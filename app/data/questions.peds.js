@@ -336,7 +336,7 @@ var Q_PEDS = [
    back-references repaired, because the deck is shuffled. */
 
 {
-  id:'pedhd-renal-1', bank:'house', module:'pediatrics', chapter:'renal',
+  id:'pedhd-renal-1', bank:'house', module:'pediatrics', chapter:'renal-uti',
   stem:'Emily is a 2-year-old girl. She presents to the Emergency Department with a 2-day history of fever, vomiting and ‘smelly’ urine. She has no significant medical history and is not on any medication. On examination she has a temperature of 39°C and a heart rate of 126 beats/min. She has generalized tenderness over her abdomen. What is the best way to collect a urine sample from her?',
   options:['Bag sample','Catheter sample','Clean catch','Pad/cotton wool balls in nappy','Suprapubic aspirate'],
   answer:2,
@@ -346,7 +346,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-renal-2', bank:'house', module:'pediatrics', chapter:'renal',
+  id:'pedhd-renal-2', bank:'house', module:'pediatrics', chapter:'renal-uti',
   stem:'Becky is a 7-year-old girl. She is seen by her general practitioner with a 2-day history of fever and abdominal pain. Her mother has noted that she is going to the toilet to pass urine more often than usual. On examination she is now afebrile and has no abdominal tenderness. What is the most likely diagnosis?',
   options:['Appendicitis','Cystitis','Diabetic ketoacidosis','Glomerulonephritis','Pyelonephritis'],
   answer:1,
@@ -356,7 +356,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-renal-3', bank:'house', module:'pediatrics', chapter:'renal',
+  id:'pedhd-renal-3', bank:'house', module:'pediatrics', chapter:'renal-cakut',
   stem:'Jonathan is an 8-year-old boy. He has a medical history of urinary tract infections. On this occasion he presents to hospital with acute spasmodic pain on the left side of his abdomen. He says it is the worst pain he has ever experienced. He played football yesterday but had not hurt himself. On examination he is afebrile and his abdomen is soft with no guarding. He is tender in his left loin and there are no palpable masses. He has 2+ of haematuria on dipstick of his urine but no protein or leucocytes. He is not on any medication. What is the most likely cause of his pain?',
   options:['Constipation','Glomerulonephritis','Renal stone','Trauma','Wilms tumour'],
   answer:2,
@@ -366,7 +366,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-renal-4', bank:'house', module:'pediatrics', chapter:'renal',
+  id:'pedhd-renal-4', bank:'house', module:'pediatrics', chapter:'renal-uti',
   stem:'Johnathan is an 8-year-old boy with a history of recurrent urinary tract infections, who has now presented with severe left-sided colicky loin pain and 2+ haematuria, and has been found to have a renal stone. What is the most likely organism to have been the cause of his previous urinary tract infections?',
   options:['Escherichia coli','Klebsiella sp.','Proteus sp.','Pseudomonas aeruginosa','Streptococcus faecalis'],
   answer:2,
@@ -376,7 +376,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-renal-5', bank:'house', module:'pediatrics', chapter:'renal',
+  id:'pedhd-renal-5', bank:'house', module:'pediatrics', chapter:'renal-uti',
   stem:'Eesa, a 1-month-old Pakistani infant, is taken to his general practitioner by his mother. He is vomiting and not taking his feeds as well as normal. He is irritable and has a temperature of 39°C. His heart rate is 170 beats/min and his respiratory rate 45 breaths/min. The remainder of his examination is unremarkable. A clean catch urine sample is obtained and is positive for nitrites, leucocytes and protein on dipstick. Which is the most appropriate next course of action?',
   options:['Intravenous antibiotics','Intravenous fluids','Oral antibiotics','Oral paracetamol','Oral rehydration solution'],
   answer:0,
@@ -417,7 +417,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-renal-9', bank:'house', module:'pediatrics', chapter:'renal',
+  id:'pedhd-renal-9', bank:'house', module:'pediatrics', chapter:'renal-cakut',
   stem:'Jane is a 5-year-old girl who presents to her general practice with bed-wetting. She has been wetting for 4 months and wets on average three nights per week. Her mother is upset as she had been dry during the day and night for almost a year. She recently started school and has had two episodes of wetting at school. She has no other medical problems and is not on any medication. She has always liked to drink water from a bottle she carries. Which of the following would you do first?',
   options:['Blood glucose','Ultrasound of the abdomen','Urinary dipstick','Urinary microscopy and culture','Water deprivation test'],
   answer:2,
@@ -427,7 +427,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-renal-10', bank:'house', module:'pediatrics', chapter:'renal',
+  id:'pedhd-renal-10', bank:'house', module:'pediatrics', chapter:'renal-uti',
   stem:'Ji is a 12-month-old Japanese girl who presents to the Emergency Department. She has a 2-day history of fever and vomiting. Her mother is concerned that she is dehydrated. On examination she is well hydrated and has marked coryza. She has an inflamed pharynx. A urine sample from a bag is sent to the laboratory. You obtain the following result from the microscopy and culture: white blood cells 100/mm³; red blood cells negative; organisms, none seen; red cell casts, none seen; culture, not available. Which of the following is the most likely diagnosis?',
   options:['Balanitis','Glomerulonephritis','Normal result','Perineal contamination','Urinary tract infection (UTI)'],
   answer:3,
@@ -437,7 +437,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-renal-11', bank:'house', module:'pediatrics', chapter:'renal',
+  id:'pedhd-renal-11', bank:'house', module:'pediatrics', chapter:'renal-uti',
   stem:'Harriet, a 12-year-old girl, presents to the Emergency Department. She has abdominal pain and pain on micturition. A mid-stream urine sample is obtained and is positive for leucocytes but negative for nitrites. She was started on oral antibiotics and discharged; 48 hours later you receive the following result from the microscopy and culture: white blood cells >200/mm³; red blood cells, many seen; organisms, none seen; red cell casts, none seen; culture, >10⁵ coliforms. Which of the following is the most likely diagnosis?',
   options:['Balanitis','Glomerulonephritis','Renal stone','Perineal contamination','Urinary tract infection (UTI)'],
   answer:4,
@@ -447,7 +447,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-renal-12', bank:'house', module:'pediatrics', chapter:'renal',
+  id:'pedhd-renal-12', bank:'house', module:'pediatrics', chapter:'renal-uti',
   stem:'Gary is a 6-month-old boy. He has been febrile for 1 day, is feeding poorly and has difficulty breathing. On examination he has a respiratory rate of 60 breaths/min, marked chest recession and on auscultation has widespread wheeze and fine crepitations. He needs admission for oxygen therapy. A urine sample was sent from the Emergency Department and you receive the following results: white blood cells <50/mm³; red blood cells, none seen; organisms, none seen; red cell casts, none seen; culture, mixed coliforms. Which of the following is the most likely diagnosis?',
   options:['Balanitis','Glomerulonephritis','Nephrotic syndrome','Perineal contamination','Urinary tract infection (UTI)'],
   answer:3,
@@ -467,7 +467,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-renal-14', bank:'house', module:'pediatrics', chapter:'renal',
+  id:'pedhd-renal-14', bank:'house', module:'pediatrics', chapter:'renal-uti',
   stem:'Gregor is a 6-week-old baby who has recently moved to the UK from Estonia. He presents with fever and irritability. On examination he is clinically shocked. Because of the urgency to obtain a sample you take a catheter urine sample and start him immediately on intravenous antibiotics after a bolus of saline. You obtain the following result from the microscopy and culture: white blood cells >200/mm³; red blood cells, none seen; organisms seen on microscopy; red cell casts not seen; culture >10⁵ coliforms. Which of the following is the most likely diagnosis?',
   options:['Balanitis','Glomerulonephritis','Nephrotic syndrome','Perineal contamination','Urinary tract infection (UTI)'],
   answer:4,
@@ -477,7 +477,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-renal-15', bank:'house', module:'pediatrics', chapter:'renal',
+  id:'pedhd-renal-15', bank:'house', module:'pediatrics', chapter:'renal-cakut',
   stem:'Max is a 12-year-old boy with cerebral palsy and epilepsy. He presents to the Emergency Department with severe right-sided colicky abdominal pain. He has had one episode of this previously, which ended as quickly as it started. Today the pain is so severe that he has needed morphine in the department. On examination you find a generally tender abdomen. He has a temperature of 37°C, heart rate of 160 beats/min, and his blood pressure is 120/80 mmHg. Urine dipstick has been performed and reveals haematuria. In light of the data given, which of the following investigations would you perform next?',
   options:['DMSA scan','Urinary electrolytes','Urine microscopy and culture','Ultrasound of the kidneys and urinary tract','Plasma creatinine and electrolytes'],
   answer:3,
@@ -487,7 +487,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-renal-16', bank:'house', module:'pediatrics', chapter:'renal',
+  id:'pedhd-renal-16', bank:'house', module:'pediatrics', chapter:'renal-uti',
   stem:'Rosa, a 2-year-old girl, presents to her general practitioner. She has a 24-hour history of vomiting and fever. She has a temperature of 38°C. She has generalized tenderness of the abdomen. A dipstick reveals leucocytes and nitrites. Her blood pressure is 90/50 mmHg. In light of the data given, which of the following investigations would you perform next?',
   options:['DMSA scan','Urinary electrolytes','Urine microscopy and culture','Ultrasound of the kidneys and urinary tract','Plasma creatinine and electrolytes'],
   answer:2,
@@ -497,7 +497,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-renal-17', bank:'house', module:'pediatrics', chapter:'renal',
+  id:'pedhd-renal-17', bank:'house', module:'pediatrics', chapter:'renal-cakut',
   stem:'Usmaan is an 18-hour-old newborn baby boy who you are seeing for his routine discharge baby check. You read in his notes that he was found to have bilateral hydronephrosis and a distended bladder on his antenatal ultrasound scan. His mother is breastfeeding and does not feel she has started producing milk yet as Usmaan has not passed urine. He has a normal blood pressure for a neonate. In light of the data given, which of the following investigations would you perform next?',
   options:['DMSA scan','Urinary electrolytes','Urine microscopy and culture','Ultrasound of the kidneys and urinary tract','Plasma creatinine and electrolytes'],
   answer:3,
@@ -507,7 +507,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-renal-18', bank:'house', module:'pediatrics', chapter:'renal',
+  id:'pedhd-renal-18', bank:'house', module:'pediatrics', chapter:'renal-cakut',
   stem:'John is a 9-year-old boy. He has a history of numerous urinary tract infections. He has had an ultrasound scan, which reveals that his kidneys are dysplastic. You are seeing him in the routine paediatric follow-up clinic. His mother does not feel he is growing as well as his siblings. His blood pressure is 130/90 mmHg. In light of the data given, which of the following investigations would you perform next?',
   options:['DMSA scan','Urinary electrolytes','Urine microscopy and culture','Ultrasound of the kidneys and urinary tract','Plasma creatinine and electrolytes'],
   answer:4,
@@ -557,7 +557,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-renal-23', bank:'house', module:'pediatrics', chapter:'renal',
+  id:'pedhd-renal-23', bank:'house', module:'pediatrics', chapter:'renal-uti',
   stem:'A 3-month-old baby girl presents with a fever of 38.6°C, crying and with vomiting. A dipstick demonstrates white cells and protein in her urine. Which of the following organisms is most likely to be responsible for her urinary tract infection?',
   options:['Enterococcus spp.','Pseudomonas','Proteus','Escherichia coli','Klebsiella'],
   answer:3,
@@ -567,7 +567,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-renal-24', bank:'house', module:'pediatrics', chapter:'renal',
+  id:'pedhd-renal-24', bank:'house', module:'pediatrics', chapter:'renal-uti',
   stem:'A 2-month-old girl is brought to clinic following an admission for a urinary tract infection. When discussing the results with her mother, which of the following statements regarding urinary tract infection (UTI) is true?',
   options:['Is more common in girls under the age of 3 months','Can be diagnosed with >10⁵ white blood cells/mL urine','Presents with specific urinary features in young children','Is most commonly due to enterococci','Risk is increased by constipation'],
   answer:4,
@@ -587,7 +587,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-renal-26', bank:'house', module:'pediatrics', chapter:'renal',
+  id:'pedhd-renal-26', bank:'house', module:'pediatrics', chapter:'renal-cakut',
   stem:'A newborn baby girl is born following a pregnancy complicated by oligohydramnios, with bilateral talipes, and requires ventilation for pulmonary hypoplasia. She fails to pass urine in the first 24 hours of life. Which of the following is likely to be the cause?',
   options:['Nephrotic syndrome','Posterior urethral valves','Bilateral renal agenesis','Autosomal dominant polycystic kidney disease','Duplex kidney'],
   answer:2,
@@ -644,7 +644,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-card-5', bank:'house', module:'pediatrics', chapter:'cardiac',
+  id:'pedhd-card-5', bank:'house', module:'pediatrics', chapter:'cardiac-acq',
   stem:'John, who is 6 years old, presents to the Emergency Department feeling sick and dizzy. He was brought to hospital by a paramedic crew who were called after he became unwell at school. His heart rate was noted to be very quick, at 260 beats/min and supraventricular tachycardia is diagnosed. He says he can feel his heart beating quickly and looks pale. He is crying, saying he wants his mother. Which of the following should be undertaken by the attending team?',
   options:['Adenosine via a large bore intravenous line','Bilateral carotid sinus massage','Direct current cardioversion','Reassure that it will resolve spontaneously','Vagal stimulation manoeuvre'],
   answer:4,
@@ -719,7 +719,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-card-11', bank:'house', module:'pediatrics', chapter:'cardiac',
+  id:'pedhd-card-11', bank:'house', module:'pediatrics', chapter:'cardiac-cyan',
   stem:'Jack is 24 hours old and his mother notices when he is about to breastfeed that he is blue around the mouth. On examination, his tongue looks blue and there is peripheral cyanosis. His respiratory rate is 65 breaths/min. On auscultation of the chest there is no murmur. Pulses in all four limbs can be palpated and are equal in volume. He is watching you and moving his arms and legs vigorously whilst you examine him. In this case, which of the following would be the most likely findings on echocardiography?',
   options:['Persistent ductus arteriosus','Aortic stenosis','Coarctation of the aorta','Transposition of the great arteries','Mitral regurgitation'],
   answer:3,
@@ -789,7 +789,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-card-18', bank:'house', module:'pediatrics', chapter:'cardiac',
+  id:'pedhd-card-18', bank:'house', module:'pediatrics', chapter:'cardiac-cyan',
   stem:'A paediatrician is called to urgently review a 3-day-old baby on the postnatal ward. On arrival, the baby is profoundly cyanotic and saturations do not improve with high flow oxygen therapy. Examination reveals a single loud second heart sound but no murmur. Intravenous access is secured and the blood gas shows severe metabolic acidosis. A CXR performed shows increased pulmonary vasculature. What is the most likely diagnosis?',
   options:['Atrial septal defect','Transposition of the great arteries','Patent ductus arteriosus','Tetralogy of Fallot','Ventricular septal defect'],
   answer:1,
@@ -809,7 +809,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-card-20', bank:'house', module:'pediatrics', chapter:'cardiac',
+  id:'pedhd-card-20', bank:'house', module:'pediatrics', chapter:'cardiac-cyan',
   stem:'A mother on the postnatal ward has urgently requested a medical review on her 3-day-old baby who appears blue. On arrival, the baby is deeply cyanosed with cool peripheries and saturations do not improve despite maximum oxygen therapy. Femoral pulses are palpable and a single, loud second heart sound can be heard but no murmur. The baby is brought to the neonatal unit for further care. What is the next most important intervention?',
   options:['Intravenous furosemide','Intravenous antibiotics','Intravenous fluid bolus of normal saline','Intravenous fluid bolus of dextrose','Intravenous infusion of prostaglandin E1'],
   answer:4,
@@ -819,7 +819,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-card-21', bank:'house', module:'pediatrics', chapter:'cardiac',
+  id:'pedhd-card-21', bank:'house', module:'pediatrics', chapter:'cardiac-acq',
   stem:'A 3-year-old girl with complex congenital heart disease is admitted with fever. On examination, her temperature is 39.5°C and there is a loud ejection systolic murmur. Her CRP is 250 mg/L and a transthoracic echocardiogram confirms vegetations. What is the most likely causative pathogen?',
   options:['Streptococcus pneumoniae','Streptococcus pyogenes','Streptococcus viridans','Group A haemolytic streptococcus','Group B haemolytic streptococcus'],
   answer:2,
@@ -849,7 +849,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-card-24', bank:'house', module:'pediatrics', chapter:'cardiac',
+  id:'pedhd-card-24', bank:'house', module:'pediatrics', chapter:'cardiac-cyan',
   stem:'A 3-day-old male infant is noted to have a cardiac murmur. Four limb blood pressures are normal but oxygen saturation is 78% and does not improve with oxygen therapy. Which of the following congenital heart defects is the most likely diagnosis?',
   options:['Patent ductus arteriosus','Tetralogy of Fallot','Ventricular septal defect','Atrial septal defect','Coarctation of the aorta'],
   answer:1,

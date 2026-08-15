@@ -9,6 +9,54 @@ This file records only what is specific to paediatrics.
 
 ---
 
+## ⚠️⚠️ CHAPTERS ARE SPLIT, NOT COMPRESSED — the user's decision, 2026-08-15
+
+Writing to lecture length worked, and produced chapters of **21–32 printed pages** (mean 25 across
+the first five). That is the size the user rejected outright for ENT, and projecting it over 21
+chapters gave **~532 pages** against ENT's 259 over *thirty* chapters. The notes were not padded —
+they run ~0.7× their lectures, faithful compression rather than the 6–13× inflation that caused the
+original complaint. **They are large because paediatrics genuinely has 96,218 words of lectures
+against ENT's 34,883.**
+
+Offered *"532 pages holding everything"* versus *"~250 that drop things"*, the user chose a third
+option: **split the big chapters.** Nothing is dropped and every unit lands at 3–13 pages.
+
+**Done 2026-08-15 for the five written chapters** — paediatrics **21 → 32 chapters**, project
+**104 → 115**:
+
+| Was | Became |
+|---|---|
+| `cardiac` 21 pp | `cardiac` (Congenital, 10 pp) · `cardiac-cyan` (Cyanotic, 6) · `cardiac-acq` (Acquired, 5) |
+| `renal` 22 pp | `renal-uti` (UTI, 5) · `renal` (Glomerular, 12) · `renal-cakut` (CAKUT/stones/enuresis, 6) |
+| `respiratory` 27 pp | `resp-pneumonia` (8) · `respiratory` (Asthma, 15) · `resp-bronch` (5) |
+| `gastroenterology` 24 pp | `gastroenterology` (Vomiting/reflux, 5) · `gi-diarrhoea` (13) · `gi-abdopain` (6) |
+| `neurological` 32 pp | `neuro-stroke` (3) · `neurological` (Seizures/epilepsy, 12) · `neuro-nm` (13) · `neuro-cp` (4) |
+
+**How it was done, and the two things that made it safe:**
+
+- **Boundaries are CONTIGUOUS section ranges from each chapter's own structure.** No section was
+  reordered, no prose rewritten, no fact touched — a section kept its body, its `qs` and its `Src:`
+  line, and only its parent changed. Every section was checked to land somewhere.
+- **⚠️ QUESTIONS WERE REASSIGNED FROM THE THEORY LINKS, NOT BY GUESSWORK.** A section already names
+  the questions it teaches in `qs`, so a question's new home is the new chapter of the section that
+  links it. All 50 mapped; 0 orphaned. **Ten links crossed a boundary** — a question genuinely
+  taught by two sections now in different chapters — and **first-wins would have been arbitrary, so
+  all six distinct questions were read and placed by what their ANSWER tests. Five of the six needed
+  overriding**, which is why the split script carries an explicit `HOME` map rather than a tie-break
+  rule. A question stays *linked* from both chapters either way; only its home moved.
+- `SCHEDULE` is keyed by **date and title, never chapter id** (`CLAUDE.md` §4), so restructuring
+  cannot break it — and progress is keyed by **question id**, so no answered question was orphaned.
+
+**⚠️ STILL TO SPLIT, when they are written** — apply the same rule, ~12 pages maximum per unit:
+
+| Chapter | Ceiling | Split into |
+|---|---:|---|
+| `infection` | 12,375 | febrile child & serious infection · the exanthems (both rash decks) · immunity & immunodeficiency |
+| `nutrition` | 8,014 | faltering growth, feeding & PEM · rickets and vitamin D (both rickets decks) |
+| `neonatal` | 5,969 | judge on the written length; split only if it passes ~13 pp |
+
+---
+
 ## ⚠️ THE ONE RULE THAT IS DIFFERENT HERE: NO 3,000-WORD CAP
 
 **User's decision, 2026-08-14.** Paediatrics carries **~4× ENT's lecture load per chapter** —
