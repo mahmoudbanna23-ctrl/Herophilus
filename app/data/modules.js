@@ -64,7 +64,8 @@ const MODULES = [
       ['dev-problems','Developmental problems'],['genetics','Genetics'],
       ['malignant','Malignant Disease']]},
     {name:'Completed earlier', chapters:[
-      ['growth-puberty','Growth and puberty'],['nutrition','Nutrition'],['accidents','Accidents and poisoning']]},
+      ['growth-puberty','Growth and puberty'],['nutrition','Nutrition, feeding and malnutrition'],
+      ['nutrition-vit','Rickets and vitamin deficiencies'],['accidents','Accidents and poisoning']]},
     /* Split 2026-08-15 at the user's instruction. Paediatrics carries ~4x ENT's
        lecture load per chapter, so writing to lecture length gave 21-32 page
        chapters — the size the user rejected for ENT. Splitting keeps every fact
