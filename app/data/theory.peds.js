@@ -1332,5 +1332,355 @@ var T_PEDS = {
         "qs": []
       }
     ]
+  },
+  "haematology": {
+    "intro": "Anaemia is examined through the causes tree and the age-specific normal ranges — know the physiological nadir. Iron deficiency carries the microcytic questions. Bone marrow failure is asked as pancytopenia, and Fanconi anaemia by its non-haematological features.",
+    "sections": [
+      {
+        "id": "haem-1",
+        "w": "must",
+        "h": "Where blood is made — sites, cells and the lineage tree",
+        "body": "### Sites of haemopoiesis\n\n|Age|Site|Duration|\n|---|---|---|\n|**Fetal**|**Yolk sac**|**0 – 2 months**|\n|**Fetal**|**Liver & spleen**|**2nd – 7th month**|\n|**Fetal**|**Bone marrow**|**6 – 7th month onward**|\n|**After birth**|**Bone marrow**|**Infant: ALL bones. Older child: CENTRAL bones**|\n\n**Postnatal ranking:** **vertebrae and pelvis** highest for life, then **sternum, ribs**; **femur and tibia fall away**.\n\n### The three classes of haematopoietic cell\n- **1 —** pluripotential progenitor **stem cells**.\n- **2 —** committed proliferating cells of **myeloid, erythroid and megakaryocytic** lineage.\n- **3 —** postmitotic **maturing cells**.\n\n### The lineage tree\n- **Two limbs:** pluripotent stem cell → **myeloid** and **lymphoid** stem cell.\n- **Myeloid → CFU-GEMM:** then **BFU-E → CFU-E** (red), **CFU-Meg** (platelets), **CFU-GM → CFU-G, CFU-M**, **CFU-Eo**, **CFU-Bas**.\n- **Lymphoid:** **pre-B cell** and **prothymocyte** → B and T lymphoblasts.\n\nSrc: L44 pp.5–9 (pp.5, 6, 8, 9 image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "haem-2",
+        "w": "high",
+        "h": "Haemopoietic growth factors",
+        "body": "**Definition:** **glycoprotein hormones and mediators** regulating **proliferation and differentiation of haemopoietic progenitors** and the **function of mature blood cells**. They **may act locally or circulate**.\n\n|Major cell type produced|Factor|\n|---|---|\n|Granulocytes, monocytes, macrophages & eosinophils|**GM-CSF**|\n|Granulocytes (esp. **neutrophils**)|**G-CSF**|\n|Monocytes & macrophages|**M-CSF**|\n|Granulocytes, monocytes, macrophages, eosinophils, basophils & mast cells|**IL-3 (multi-CSF)**|\n|Eosinophils|**IL-5**|\n|**Erythrocytes & megakaryocytes**|**EPO**|\n|Megakaryocytes|**Thrombopoietin**|\n\n*G-CSF returns as the treatment of Shwachman–Diamond neutropenia; thrombopoietin as the receptor agonists of chronic ITP.*\n\nSrc: L44 pp.10–11 (both image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "haem-3",
+        "w": "high",
+        "h": "Haemoglobin types and the switch",
+        "body": "|Haemoglobin|Chains|% at birth|% at 6th month|\n|---|---|---|---|\n|**Fetal (F)**|**2α + 2γ**|**65 %**|**2 %**|\n|**Adult (A1)**|**2α + 2β**|**34 %**|**95 %**|\n|**Adult (A2)**|**2α + 2δ**|**< 1 %**|**3 %**|\n\n**The switch:** γ gives way to β over the **first six months**.\n\nSrc: L44 p.12",
+        "qs": []
+      },
+      {
+        "id": "haem-4",
+        "w": "must",
+        "h": "Normal haematological values by age",
+        "body": "|Age|Hb (g/L)|MCV (fl)|WBC (×10⁹/L)|Platelets (×10⁹/L)|\n|---|---|---|---|---|\n|**Birth**|**145 – 215**|100 – 135|10 – 26|**150 – 450 at ALL ages**|\n|2 weeks|134 – 198|88 – 120|6 – 21|—|\n|**2 months**|**94 – 130**|84 – 105|6 – 18|—|\n|1 year|113 – 141|71 – 85|6 – 17.5|—|\n|2 – 6 years|115 – 135|75 – 87|5 – 17|—|\n|6 – 12 years|115 – 135|77 – 95|4.5 – 14.5|—|\n|**12 – 18 y male**|**130 – 160**|78 – 95|4.5 – 13|—|\n|**12 – 18 y female**|**120 – 160**|78 – 95|4.5 – 13|—|\n\n*⚠️ The 2-month row, 94–130 g/L, is NORMAL here and ANAEMIC by the deck’s own definition slide. Both printed; see haem-6.*\n\nSrc: L44 p.13 (image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "haem-5",
+        "w": "must",
+        "h": "The physiological nadir — term and preterm",
+        "body": "**Term:** Hb **falls in the first few weeks** from reduced production, **nadir 100 g/L at 2 months**.\n\n**Preterm:** a **steeper fall**, mean **65 – 90 g/L at 4 – 8 weeks chronological age**.\n\n### Stores\n- **At birth:** **iron, folic acid and B12 stores are ADEQUATE in both**.\n- **In preterms:** **lower and depleted more quickly** — **maintain by supplements**.\n\nSrc: L44 p.14 (image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "haem-6",
+        "w": "must",
+        "h": "Anaemia — the definition and the age cut-offs",
+        "body": "**Definition:** **reduction of red cell volume (haematocrit) OR haemoglobin concentration below the normal range FOR AGE**.\n\n### L44’s cut-offs\n- **Neonate:** **< 140 g/L**.\n- **1 – 12 months:** **< 100 g/L**.\n- **1 – 12 years:** **< 110 g/L**.\n\n**The load-bearing phrase — *for age*:** 110 g/L is normal at four years and anaemic at birth.\n\n*⚠️ Three different reference sets are printed across the three sources — this one, haem-4’s table and haem-14’s WHO limits. They do not reconcile; all three are carried as printed.*\n\nSrc: L44 p.16",
+        "qs": []
+      },
+      {
+        "id": "haem-7",
+        "w": "high",
+        "h": "Erythropoiesis — three phases, and what it needs",
+        "body": "### The three developmental phases\n- **Phase 1 —** ribosome synthesis. **Phase 2 —** haemoglobin accumulation. **Phase 3 —** ejection of the nucleus.\n\n**The cell sequence:** haemocytoblast → **proerythroblast** → early → late erythroblast → **normoblast** → **reticulocyte** → erythrocyte.\n\n**Requirements:** **iron, folate, vitamin B12, other trace nutrients, erythropoietin (EPO) and a FUNCTIONING BONE MARROW**.\n\n*Those six are the anaemia differential read backwards — remove one and a mechanism in haem-8 appears.*\n\nSrc: L44 p.20",
+        "qs": []
+      },
+      {
+        "id": "haem-8",
+        "w": "must",
+        "h": "Causes of anaemia in infants and children — three mechanisms",
+        "body": "|Mechanism|Branch|Entities|\n|---|---|---|\n|**Impaired production**|**Red cell aplasia**|**Parvovirus B19** · **Diamond–Blackfan anaemia** (congenital red cell aplasia) · **transient erythroblastopenia of childhood** · rarities: **Fanconi anaemia, aplastic anaemia, leukaemia**|\n|**Impaired production**|**Ineffective erythropoiesis**|**Iron deficiency** · **folic acid deficiency** · **chronic inflammation (juvenile idiopathic arthritis)** · **chronic renal failure** · rarities: **myelodysplasia, lead poisoning**|\n|**Increased destruction (haemolysis)**|Red cell **membrane**|**Hereditary spherocytosis**|\n|**Increased destruction (haemolysis)**|Red cell **enzyme**|**Glucose-6-phosphate dehydrogenase deficiency**|\n|**Increased destruction (haemolysis)**|**Haemoglobinopathies**|**Thalassaemias, sickle cell disease**|\n|**Increased destruction (haemolysis)**|**Immune**|**Haemolytic disease of the newborn** · **autoimmune haemolytic anaemia**|\n|**Blood loss**|Feto-maternal bleeding|—|\n|**Blood loss**|Chronic **GI** blood loss|**Meckel diverticulum**|\n|**Blood loss**|Inherited **bleeding** disorders|**von Willebrand disease**|\n\n*Spherocytosis and G6PD are diseases in `neonatal`; thalassaemia’s inheritance in `genetics`; vWD in haem-41.*\n\nSrc: L44 p.17 (image-only, re-rendered at 300 dpi)",
+        "qs": []
+      },
+      {
+        "id": "haem-9",
+        "w": "must",
+        "h": "Anaemia in the newborn, and anaemia of prematurity",
+        "body": "### Anaemia in the newborn — by mechanism\n- **Decreased production:** **Parvovirus B19** · **Diamond–Blackfan anaemia**.\n- **Destruction:** **HDN — Rh, ABO** · **genetic** disorders of haemoglobin, membrane or enzymes.\n- **Blood loss:** **fetomaternal haemorrhage**, **twin-to-twin**, **placental abruption**.\n\n### Anaemia of prematurity — four causes\n- **Inadequate EPO** production. **Decreased RBC life span.**\n- **Frequent blood sampling.** **Iron and folic deficiency at 2 – 3 months.**\n\n**⚠️ The deck’s own highlighted advice:** **DELAY CORD CLAMPING AT BIRTH.**\n\nSrc: L44 pp.18–19 (both image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "haem-10",
+        "w": "must",
+        "h": "Classification by MCV",
+        "body": "|Microcytic|Normocytic|Macrocytic|\n|---|---|---|\n|**Iron deficiency**|**↓ Production**|**Newborn**|\n|**Thalassaemia**|**Blood loss**|**Reticulocytosis**|\n|**Lead poisoning**|**Haemolysis**|**Vitamin B12**|\n|**Chronic disease**|**Chronic disease**|**Folic acid**|\n\n**⚠️ Chronic disease sits in TWO columns** — which is why MCV alone never settles it.\n\n**The matching film:** microcytic — **pencil cells, hypochromia**; normocytic — **normal central pallor**; macrocytic — **oval macrocytes**.\n\nSrc: L44 p.26",
+        "qs": []
+      },
+      {
+        "id": "haem-11",
+        "w": "high",
+        "h": "The blood film — size, shape and inclusions",
+        "body": "- **Anisocytosis:** red cells of **unequal SIZE**. **Poikilocytosis:** **different SHAPES**.\n\n### The named shapes\n- **Spherocytes —** loss of central pallor; hereditary spherocytosis.\n- **Sickle cells —** with erythroblasts on the same film.\n- **Target cells and Howell–Jolly bodies —** the post-splenectomy / haemoglobinopathy pair.\n- **G6PD film —** the bite-and-blister picture of oxidative haemolysis.\n- **Pencil cells —** the microcytic, iron-deficient film.\n\nSrc: L44 pp.26–28",
+        "qs": []
+      },
+      {
+        "id": "haem-12",
+        "w": "must",
+        "h": "Reticulocytes, polychromasia and the markers of destruction",
+        "body": "### The reticulocyte count — the simple measure of PRODUCTION\n- **What it is:** a **young RBC still containing a small amount of RNA**.\n- **Maturation:** **1 day**, **under the influence of EPO**.\n- **Turnover:** **1/120th** of red cells normally.\n- **Normal values:** **5 % in neonates, 1 % later**.\n\n**Polychromasia:** an **increased reticulocyte count is usually accompanied by peripheral smear RBC polychromasia** — the film sign of the same thing.\n\n### Indirect bilirubin — the marker of DESTRUCTION\n- **Why it works:** **80 % of normal bilirubin production is degraded Hb**.\n- **The caveat:** **in the absence of liver disease** it is an **excellent indicator of RBC destruction**.\n- **Other markers:** **LDH** and **haptoglobin**.\n\nSrc: L44 pp.21–22, 24 (all three image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "haem-13",
+        "w": "must",
+        "h": "The diagnostic approach to anaemia in children",
+        "body": "**Two branches only:** the **reticulocyte count**, then the **bilirubin**. Nothing else is needed to place a child in one of three boxes.\n\nSrc: L44 p.23 (image-only, recovered by render)",
+        "flow": {
+          "title": "Anaemia → reticulocytes → bilirubin",
+          "steps": [
+            {
+              "k": "decision",
+              "t": "Reticulocytes VERY LOW?",
+              "yes": "Red cell production reduced — red cell aplasia",
+              "no": "Reticulocytes normal or high — go to bilirubin"
+            },
+            {
+              "k": "alert",
+              "t": "Likely: Parvovirus B19 · Diamond–Blackfan anaemia. Tests: parvovirus serology · BONE MARROW ASPIRATE",
+              "n": "aplasia limb"
+            },
+            {
+              "k": "decision",
+              "t": "Bilirubin RAISED?",
+              "yes": "HAEMOLYSIS",
+              "no": "Blood loss or ineffective erythropoiesis"
+            },
+            {
+              "k": "step",
+              "t": "Haemolysis — likely: hereditary spherocytosis · sickle cell disease · β-thalassaemia. Tests: blood film · Hb HPLC",
+              "n": "haemolysis limb"
+            },
+            {
+              "k": "step",
+              "t": "Bilirubin normal — likely: IRON DEFICIENCY. Tests: blood film · SERUM FERRITIN",
+              "n": "blood loss limb"
+            }
+          ]
+        },
+        "qs": []
+      },
+      {
+        "id": "haem-14",
+        "w": "must",
+        "h": "Iron deficiency anaemia — definitions, WHO limits and who gets it",
+        "body": "**Iron deficiency:** **insufficient total body iron to maintain normal physiologic functions**.\n\n**Iron deficiency anaemia:** **Hb ≥ 2SD below the mean** for a healthy population of the **same age and sex**, **resulting from ID**.\n\n|WHO lower limits|Hb (g/dL)|Haematocrit (%)|\n|---|---|---|\n|Children **6 – 59 months**|**11**|**33**|\n|Children **5 – 11 years**|**11.5**|**34**|\n|Children **12 – 14 years**|**12**|**36**|\n|**Girls > 15 years**|**12**|**36**|\n|**Boys > 15 years**|**13**|**39**|\n\n### Epidemiology and the two peaks\n- **Rank:** ID is the commonest **nutritional deficiency** worldwide; **IDA the commonest ANAEMIA** worldwide.\n- **Burden:** **25 % of the global population, nearly 2 billion people**; **highest with low socioeconomic status**.\n- **Peak 1 —** infancy and toddlerhood, **6 – 24 months**.\n- **Peak 2 —** adolescence, **especially female** (abnormal uterine bleeding, heavy menstruation).\n\n*⚠️ The handout writes \"≥ 2SD below the mean\"; the inequality is inverted in the source and is reproduced as printed.*\n\nSrc: IDA p.1 (the WHO table is an image, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "haem-15",
+        "w": "must",
+        "h": "Physiology of iron, and the dietary sources",
+        "body": "### Where the iron comes from\n- **Fetal:** **60 % crosses the placenta from maternal blood in the THIRD TRIMESTER**.\n- **Breast milk:** **low iron but 50 % absorbed** — **adequate if totally breastfed for 6 months, unless preterm**.\n- **Formula:** **supplemented with adequate iron**.\n- **Cow’s milk:** **low content AND poor bioavailability** — a **poor source**.\n- **Then solids**, at weaning.\n\n**The absorption figure:** **about 10 % ONLY of dietary iron is absorbed.**\n\n### Dietary sources\n- **High:** **red meat** (beef, lamb) · **liver, kidney** · **oily fish** (pilchards, sardines).\n- **Average:** pulses, beans, peas · **fortified cereals with added vitamin C** · wholemeal · **dark green vegetables** · dried fruit · nuts and seeds.\n- **Avoid in excess in toddlers:** **cow’s milk** · **tea — TANNIN inhibits uptake** · **high-fibre — PHYTATES inhibit absorption**.\n\nSrc: IDA p.2 (the dietary box is an image, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "haem-16",
+        "w": "must",
+        "h": "Aetiology of iron deficiency anaemia — four mechanisms",
+        "body": "### 1 — Inadequate iron supply\n- **Prematurity** and **multiple twins** — decreased stores.\n- **Early cow milk feeding —** low iron **AND blood loss in stools from cow’s milk protein allergy**.\n- **Exclusive breastfeeding after 6 months** without supplement.\n- **Low intake** of iron-containing foods.\n\n### 2 — Increased requirements\n- **Premature infants** · **adolescence** (pubertal growth spurt).\n\n### 3 — Decreased GI absorption\n- **Causes:** **coeliac disease · chronic diarrhoea · inflammatory bowel disease · parasitic infestations**.\n\n### 4 — Blood loss\n- **Sources:** **cow’s milk protein allergy · Meckel’s diverticulum · bleeding diathesis**.\n\n*Cow’s milk appears under BOTH supply and blood loss — the single commonest dietary offender.*\n\nSrc: IDA p.3",
+        "qs": []
+      },
+      {
+        "id": "haem-17",
+        "w": "must",
+        "h": "Clinical manifestations of iron deficiency anaemia",
+        "body": "### 1 — General manifestations of anaemia\n- **Pallor:** of **palms, nail beds, oral mucous membranes and conjunctiva**.\n- **Effort:** **exercise intolerance, easy fatigability, lassitude, general weakness**.\n- **Cardiorespiratory:** **dyspnoea and palpitation** on exertion or emotion; **haemic murmurs**.\n- **Cerebral:** **headache, lack of concentration, irritability, syncopal attacks**.\n\n### 2 — GIT manifestations\n- **Mucosal:** **anorexia, atrophic glossitis, dysphagia**.\n- **Pica —** wall plaster, clay; **geophagia —** earth; **pagophagia —** ice.\n\n### 3–5 — CNS, epithelial, immunological\n- **CNS:** **short attention span**, ↓ alertness, ↓ learning ability and school performance.\n- **Epithelial:** **spoon-shaped or concave nails** are adult findings, **UNCOMMON in infants and children**.\n- **Immunological:** **upper respiratory infections are more common**.\n\nSrc: IDA p.3",
+        "qs": []
+      },
+      {
+        "id": "haem-18",
+        "w": "must",
+        "h": "IDA — laboratory findings and the therapeutic trial",
+        "body": "### The laboratory picture\n- **CBC:** **↓ Hb, ↓ MCV, ↓ MCH, ↑ RDW**, **normal or low reticulocytes**.\n- **Iron studies:** **↓ ferritin, ↓ serum iron, ↑ TIBC, ↓ T-SAT %**.\n- **Smear:** **anisopoikilocytosis, hypochromia, microcytosis, PENCIL CELLS**.\n- **Consider:** **stool occult blood** and a **coeliac screen** — if a **non-dietary cause** is suggested, or on **failure to respond**.\n\n### Diagnosis rests on three things\n- **1 —** clinical manifestations. **2 —** laboratory findings.\n- **3 — Therapeutic trial: the BEST diagnostic study.**\n\n|Successful oral iron produces|When|\n|---|---|\n|**Improvement in neurologic function**|**24 – 48 hours**|\n|**Reticulocytosis**|**48 – 72 hours, peak day 5 – 7**|\n|**Increase in Hb**|**4 – 30 days (1 g/dL per week)**|\n|**Repletion of iron stores**|**1 – 3 months**|\n\nSrc: IDA p.4",
+        "qs": []
+      },
+      {
+        "id": "haem-19",
+        "w": "must",
+        "h": "IDA — differential diagnosis and prevention",
+        "body": "**The differential — other microcytic hypochromic anaemias:** **thalassaemia trait · anaemia of chronic disease · lead poisoning · sideroblastic anaemia**.\n\n### Prevention — two supplementation rules\n- **Term, exclusively breastfed:** at risk **after 4 completed months**. **1 mg/kg/day oral iron FROM 4 MONTHS**, until iron-containing complementary foods (incl. **iron-fortified cereals**) are introduced.\n- **Preterm on human milk:** **2 mg/kg/day BY 1 MONTH**, until weaned to iron-fortified formula or eating foods supplying **2 mg/kg**.\n\n*The two figures move with the two risks: 1 mg/kg from 4 months at term, 2 mg/kg from 1 month preterm.*\n\nSrc: IDA pp.4–5",
+        "qs": []
+      },
+      {
+        "id": "haem-20",
+        "w": "must",
+        "h": "IDA — treatment",
+        "body": "**For most children:** **dietary advice plus oral iron supplementation**.\n\n### Dietary advice\n- **Breastfeed at least 6 months** if possible; the alternative is **iron-fortified infant formula**.\n- **Iron-rich foods up, cow milk down.**\n- **Cow milk: NONE under 12 months**, **< 500 mL/day over 12 months**.\n\n### Iron therapy\n- **1 — Oral iron salts, 3 – 6 mg/kg/day**, for **a minimum of 3 MONTHS after the anaemia is corrected**, to replenish stores.\n- **Practical points:** stools turn **black**; may cause **constipation**; may **stain the teeth** — **give through a straw** and brush after; **absorbed better with vitamin C**, e.g. orange juice.\n- **2 — Treat the cause:** correct diet, **treat parasitic infestations**, **stop cow milk**.\n- **3 — Parenteral iron:** only in **malabsorption, poor compliance, or need for rapid correction**.\n- **4 — Newer formulations:** **liposomal iron, iron bisglycinate**, for intolerance to oral salts.\n- **5 — Transfusion:** rarely, except **Hb below 4 g/dL with cardiac dysfunction**, or with infection and hypoxia — **packed cells, 2 – 3 cc/kg**.\n\nSrc: IDA pp.5–6",
+        "qs": []
+      },
+      {
+        "id": "haem-21",
+        "w": "must",
+        "h": "Bone marrow failure and pancytopenia — the definitions",
+        "body": "**BMF (aplastic anaemia):** **reduction or absence of ALL 3 blood cell lineages in the marrow**, giving **peripheral reduction of mature erythrocytes, granulocytes and platelets**.\n\n**It may be partial or complete:** the cytopenia may be a **SINGLE CYTOPENIA**, or **progress to pancytopenia**.\n\n**Pancytopenia:** **reduction below normal of all 3 peripheral lineages, OR AT LEAST TWO cell lines**.\n\n### The bone marrow failure syndromes (BMFS)\n- **Acquired →** aplastic anaemia.\n- **Inherited →** **isolated cytopenia**, or **pancytopenia (aplastic anaemia)**.\n\n*The two phrases the deck highlights are `single cytopenia` and `Pancytopenia` — marrow failure need not present with all three lines down.*\n\nSrc: L44 pp.32–34 (p.33 image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "haem-22",
+        "w": "must",
+        "h": "Aplastic anaemia — aetiology",
+        "body": "### Acquired\n- **Drugs:** **antimetabolites, antimitotic agents, gold, chloramphenicol, phenylbutazone, chemotherapy, sulfonamides**.\n- **Radiation.** **Chemicals:** **benzenes, glue, solvents, insecticides**.\n- **Viruses:** **hepatitis A, B, C, E, G**, **parvovirus B19**, **CMV**.\n- **PNH —** paroxysmal nocturnal haemoglobinuria.\n- **Miscellaneous:** pregnancy, connective-tissue and immune disorders, **graft-versus-host disease**, **BM invasion by malignancy** or metabolic disease.\n\n### Idiopathic — and hereditary\n- **Idiopathic: 70 – 80 % of cases** — by far the largest group.\n- **Hereditary:** **Fanconi’s anaemia** · **Shwachman syndrome**.\n\nSrc: L44 p.36 (image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "haem-23",
+        "w": "must",
+        "h": "Red cell aplasia, the marrow, and how failure presents",
+        "body": "### The four diagnostic clues to RED CELL APLASIA\n- **↓ Reticulocytes DESPITE a low Hb** — production has stopped.\n- **Normal bilirubin** — nothing is being destroyed.\n- **Negative Coombs test** — it is not immune.\n- **Marrow: ABSENT RBC PRECURSORS** on examination.\n\n### The marrow itself\n- **Aspiration site:** the **posterior iliac crest** — through cortical bone into spongy bone and marrow.\n- **Normal:** densely cellular between fat spaces. **Aplastic:** **replaced by fat**, only islands of cells.\n\n### Presentation — one line each\n- **Anaemia →** pallor. **Thrombocytopenia →** petechiae and purpuric eruptions.\n- **Neutropenia →** infection: e.g. **haemorrhagic gum lesions from *Capnocytophaga ochraceus*, easily confused with herpes simplex**.\n\nSrc: L44 pp.29–31, 35, 38–39",
+        "qs": []
+      },
+      {
+        "id": "haem-24",
+        "w": "must",
+        "h": "Fanconi anaemia",
+        "body": "**Fanconi anaemia:** a **rare condition where the BM fails to produce sufficient blood cells** — **reduced or absent production of RBCs, WBCs and platelets**.\n\n**The two facts that place it —** the **MOST COMMON INHERITED APLASTIC ANAEMIA**, and **autosomal recessive**, from a mutation in **one of 22 FANC genes, mostly FANCA**.\n\n### Typical features\n- **The triad:** **progressive pancytopenia** · **macrocytosis** · **multiple congenital anomalies**.\n- **Diagnosis:** **increased chromosome breakage in peripheral blood lymphocytes**, or **genetic analysis of FANC mutation**.\n\n### The congenital anomalies\n- **Core list:** **short stature** · **abnormal radii and thumbs** · **renal malformations** · **microphthalmia** · **microcephaly** · **café-au-lait spots** · **delayed growth and development** · **may be scoliosis**.\n- **The wider plate adds:** tracheo-oesophageal fistula/atresia, vertebral and cardiac defects, deafness with small ear canals, thyroid dysfunction, **reduced fertility**, **low bone mineral density**, mood disorders.\n\n### Outcome and treatment\n- **⚠️ Termination:** FA frequently **ends in MDS AND/OR AML**.\n- **Treatment: HAEMOPOIETIC STEM CELL TRANSPLANTATION (HSCT)** — the deck’s own highlighted answer.\n- **Others:** **androgen therapy**, **transfusions and growth factors**.\n- **Under development:** **gene therapy**, **metformin**.\n\nSrc: L44 pp.40–48 (all image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "haem-25",
+        "w": "must",
+        "h": "Shwachman–Diamond syndrome",
+        "body": "**Shwachman–Diamond syndrome:** a **rare AUTOSOMAL RECESSIVE syndrome**, from a mutation in the **SBDS gene leading to ABNORMAL RIBOSOMES**. It **primarily affects marrow, pancreas and bones**.\n\n### Characterised by\n- **The four:** **BM failure** · **pancreatic exocrine failure** · **skeletal abnormalities** · **50 % neurocognitive abnormalities**.\n- **Rank:** the **2nd most common cause of exocrine pancreatic insufficiency**.\n\n|Clinical features|Laboratory findings|\n|---|---|\n|**FTT · steatorrhoea · recurrent infection**|**Neutropenia** · anaemia and thrombocytopenia|\n|**Short stature · METAPHYSEAL DYSOSTOSIS**|**Low pancreatic trypsinogen · low faecal elastase**|\n|Dipper rash|**High HbF** · fat-soluble vitamin deficiency|\n\n### Diagnosis, risk and treatment\n- **Diagnosis:** **haematological abnormalities PLUS exocrine pancreatic insufficiency**; bloods show **cytopenias**; **genetic testing for SBDS**; **BM biopsy, aspirate smear, cytology and skeletal survey**.\n- **⚠️ THE DISCRIMINATOR:** the **SWEAT CHLORIDE TEST IS NORMAL in SDS**, which **distinguishes it from cystic fibrosis**.\n- **Increased risk of:** **AML** and **MDS**.\n- **Treatment:** **pancreatic enzyme replacement** and **G-CSF**.\n\nSrc: L44 pp.50–52 (all image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "haem-26",
+        "w": "high",
+        "h": "Causes of pancytopenia — four mechanisms",
+        "body": "|Mechanism|Causes|\n|---|---|\n|**BM underproduction**|**Congenital — IBMFS** (inherited bone marrow failure syndromes). **Acquired — idiopathic AA**, or **secondary**: **drugs, toxins, infections, alcohol, radiation, anorexia, PNH, pregnancy, HLH**|\n|**BM infiltration**|**Malignancy · myelofibrosis · granuloma · nutritional**|\n|**Destruction**|**Autoimmune · HLH**|\n|**Sequestration**|**Hypersplenism**|\n\n**Other frameworks the plate offers:** **marrow cellularity** (hypocellular / non-hypocellular) · **clonality** · **duration** (transient / chronic) · **heredity** (congenital / acquired).\n\nSrc: L44 p.53 (image-only, re-rendered at 300 dpi)",
+        "qs": []
+      }
+    ]
+  },
+  "haem-bleeding": {
+    "intro": "The first question is always platelet or coagulation, answered by the site of bleeding and the screening panel. ITP versus haemophilia versus von Willebrand is the discrimination. DIC is asked as the panel that moves in every direction at once.",
+    "sections": [
+      {
+        "id": "haem-27",
+        "w": "must",
+        "h": "Haemostasis — primary and secondary",
+        "body": "**Haemostasis:** from the Greek, **\"the stoppage of blood flow\"**. At an endothelial injury **bleeding must be prevented at the site AND flow must be maintained**.\n\n### Two stages\n- **Primary:** the **PLATELET and VASCULAR response** to vessel injury.\n- **Secondary:** the **COAGULATION FACTOR response** to that injury.\n\n**Together:** platelets, vessels and factors **stop bleeding and allow vessel repair through a STABLE FIBRIN-PLATELET PLUG at the site of injury**.\n\n### The platelet sequence\n- **Adhesion:** resting platelets bind via **vWF**.\n- **Activation, then release:** **TxA2, ADP, serotonin, fibrinogen, thrombospondin**.\n- **Platelet plug formation.**\n\nSrc: L47 pp.3–11",
+        "qs": []
+      },
+      {
+        "id": "haem-28",
+        "w": "must",
+        "h": "The five haemostatic mechanisms",
+        "body": "### I — Vascular\n- **Local vasoconstriction.**\n- **Initiation of the intrinsic pathway** (factor XII).\n- **Activation of the extrinsic pathway** (tissue thromboplastin).\n- **Platelet adhesion and aggregation** — release of **vWF and ADP**.\n\n### II — Platelet\n- **Adhesion**, then **aggregation** — release of **ADP** and **thromboxane A2**.\n\n### III — Coagulation factors, in three steps\n- **Step I:** ends by **activation of factor X**. **Step II:** **active thrombin**. **Step III:** **fibrinogen → fibrin**.\n\n### IV — Coagulation inhibitors · V — Fibrinolysis\n\n*⚠️ Both are named, each given a slide, and neither elaborated — the slides are blank below the heading. Confirmed by rendering pp.22–23.*\n\nSrc: L47 pp.14–23",
+        "qs": []
+      },
+      {
+        "id": "haem-29",
+        "w": "must",
+        "h": "The coagulation cascade — three limbs, three tests",
+        "body": "|Limb|Factor sequence|Test|Normal|\n|---|---|---|---|\n|**Intrinsic**|**XII (Hageman) → XI → IX → VIII**, with **HMWK** and **surface active components**|**PTT / aPTT**|**25 – 40 sec**|\n|**Extrinsic**|**Tissue thromboplastin (TF) → VII**|**PT**|**11 – 14 sec**|\n|**Common**|**X → V → II (prothrombin → thrombin) → I (fibrinogen → fibrin)**|**TT**|**15 – 20 sec**|\n\n**Every activation needs Ca²⁺ and phospholipid**, and the **prothrombinase complex (Xa/Va/PL)** converts prothrombin to thrombin.\n\n**Thrombin feeds back:** it activates **V**, **VIII** and **XIII**, the stabilizing factor that cross-links fibrin monomer into a **stable fibrin clot**.\n\n**Where each disease sits:** **haemophilia A at VIII**, **B at IX**, **C at XI** — all intrinsic, so a long PTT with a normal PT; **vWD at VIII** via its carrier; **vitamin K deficiency** at the common and extrinsic limbs, so **both** prolonged.\n\nSrc: L47 pp.7–10, 21 (the cascade slides extract as loose symbols and were read as images)",
+        "qs": []
+      },
+      {
+        "id": "haem-30",
+        "w": "must",
+        "h": "Screening tests for coagulation and bleeding",
+        "body": "- **1 —** CBC. **2 —** platelet count. **3 —** platelet function.\n- **4 — T.T.** (thrombin time), **15 – 20 sec**.\n- **5 — PT**, **12 – 14 sec**. **6 — PTT**, **24 – 40 sec**.\n- **7 —** quantitative fibrinogen assay. **8 —** D-dimers.\n\n*⚠️ L47 gives the PTT range three ways — 25–40, 24–40, and 25–45 sec on the haemophilia slide. All three printed.*\n\nSrc: L47 p.24",
+        "qs": []
+      },
+      {
+        "id": "haem-31",
+        "w": "must",
+        "h": "Classification of the haemorrhagic disorders",
+        "body": "**Definition:** disorders characterised by an **abnormal bleeding tendency due to a HAEMOSTATIC DEFECT**. Two great branches: **BLEEDING** (platelet, vascular) and **COAGULATION DISEASES** (hereditary, acquired).\n\n|Branch|Sub-branch|Entities|\n|---|---|---|\n|**Bleeding — platelet**|**Thrombocytopenia**|see haem-32|\n|**Bleeding — platelet**|**Platelet dysfunction (thrombasthenia)**|**Inherited: Glanzmann · von Willebrand.** **Acquired: drugs · uraemia**|\n|**Bleeding — vascular**|**Hereditary**|—|\n|**Bleeding — vascular**|**Acquired**|**Vasculitis · metabolic · infection (SBE) · collagenic · scurvy**|\n|**Coagulation — hereditary**|**The haemophilias**|**A · B · C**|\n|**Coagulation — acquired**|—|**DIC** · **haemorrhagic disease of the newborn** · **liver disease** · **anticoagulants**|\n\n*⚠️ The deck files vWD under PLATELET dysfunction, then teaches it as a factor VIII disorder with a long PTT. Both are defensible; it never reconciles them.*\n\nSrc: L47 pp.19, 24–33 (one tree, redrawn nine times; written once)",
+        "qs": []
+      },
+      {
+        "id": "haem-32",
+        "w": "must",
+        "h": "Thrombocytopenia — the causes",
+        "body": "### Increased platelet destruction\n- **Immune:** **ITP** · **SLE**.\n- **Non-immune:** **haemolytic uraemic syndrome** · **DIC** · **hypersplenism**.\n\n### Impaired platelet production\n- **Congenital:** **Fanconi anaemia** · **Wiskott–Aldrich syndrome**.\n- **Acquired:** **aplastic anaemia** · **marrow infiltration** · **drug induced**.\n\n**The axis that decides:** destruction leaves **normal or increased megakaryocytes**; impaired production leaves them **reduced**. That is why the marrow is the test when ITP misbehaves.\n\n*Aplastic anaemia and Fanconi as diseases: haem-22, haem-24. HUS in full: `renal`.*\n\nSrc: L47 p.26",
+        "qs": []
+      },
+      {
+        "id": "haem-33",
+        "w": "must",
+        "h": "Immune thrombocytopenic purpura — definition and classification",
+        "body": "**ITP:** **autoimmune destruction of platelets by IgG autoantibodies**, giving a **reduced platelet count** and **increased megakaryocytes WITH NO BUDDING** in the marrow.\n\n**The mechanism:** autoantibodies, usually **IgG**, against **one or more platelet membrane glycoproteins**; coated platelets are **recognised by the Fc receptor on splenic macrophages, phagocytosed and destroyed**.\n\n**⚠️ The spleen is the key organ —** it is **both the site of autoantibody production (WHITE pulp) and the site of phagocytosis (RED pulp)**.\n\n### Aetiology and epidemiology\n- **Cause:** unknown in most, but often a **recent viral infection — EBV, varicella, CMV, rubella, hepatitis A, B or C**.\n- **Course in children:** mostly **ACUTE**, resolving spontaneously in **1 – 6 weeks**.\n- **Sex and age:** **males > females**; **any age, PEAK 1 – 6 YEARS**.\n\n|Phase|Definition|\n|---|---|\n|**Newly diagnosed**|**≤ 3 months** from diagnosis|\n|**Persistent**|**3 – 12 months** — no spontaneous remission, or failing to maintain complete remission to therapy|\n|**Chronic**|**> 12 months** from diagnosis|\n\nSrc: L47 pp.34–41",
+        "qs": []
+      },
+      {
+        "id": "haem-34",
+        "w": "must",
+        "h": "ITP — presentation and investigation",
+        "body": "### Clinical presentation\n- **History:** a **preceding viral infection 1 – 4 weeks before** the thrombocytopenia.\n- **The classical presentation:** **sudden petechiae and purpura in a PREVIOUSLY HEALTHY CHILD**.\n- **Bleeding:** **epistaxis · bleeding gums · easy bruising**.\n- **Very rarely ICH:** headache, nausea, vomiting, lethargy, irritability, **decreased consciousness**, neurological symptoms.\n- **⚠️ Examination is otherwise NORMAL —** **hepatosplenomegaly, or bone or joint pain, suggests another diagnosis**.\n\n### Laboratory investigations\n- **CBC:** **ISOLATED thrombocytopenia**, **normal platelet shape**.\n- **Smear:** may show **LARGE PLATELETS in acute ITP**.\n- **Marrow aspirate and biopsy — NOT recommended in typical ITP.** Do it on **no response for > 6 months**, or **another cytopenia**. It shows **normal myeloid and erythroid cellularity with normal or increased megakaryocytes**.\n- **Exclude other causes:** **ANA** for SLE, **Coombs** for **Evans syndrome**.\n\nSrc: L47 pp.42–44",
+        "qs": []
+      },
+      {
+        "id": "haem-35",
+        "w": "must",
+        "h": "ITP — management",
+        "body": "**The principle:** management is based **largely on the SEVERITY OF BLEEDING, risk factors and degree of thrombocytopenia** — not on the count alone.\n\n### First line, newly diagnosed\n- **Wait and watch —** *irrespective of platelet count*.\n- **Corticosteroids:** a **short course of prednisone**.\n- **IVIg:** a **single dose**, alternative to corticosteroid.\n- **IV anti-D:** for **Rh-positive, non-splenectomised** patients.\n\n### By severity\n- **Mild —** platelets **> 20,000**, **no intracranial or mucous membrane bleeding**: **observation, follow-up, avoid trauma**. Most acute ITP **needs no treatment** and resolves spontaneously.\n- **Moderate —** consider **steroids**.\n- **Symptomatic (active bleeding):** **oral prednisone**; **IVIG when a RAPID rise matters**; **IV anti-D if Rh positive**; **platelet transfusion — TEMPORARY effect only**, for severe bleeding.\n\n### Second line — persistent, chronic or relapsed\n- **TPO receptor agonists:** **romiplostim, eltrombopag**.\n- **Rituximab** on failing first line or splenectomy; also **azathioprine, ciclosporin, mycophenolate mofetil**.\n- **⚠️ Splenectomy: delay ≥ 12 MONTHS**; very rarely indicated in children, the **last option**.\n- **The caution:** chronic refractory treatment **may carry toxicity comparable to the risks of untreated thrombocytopenia**, and may itself harm quality of life.\n\nSrc: L47 pp.45–49",
+        "qs": []
+      },
+      {
+        "id": "haem-36",
+        "w": "must",
+        "h": "Henoch–Schönlein purpura (IgA vasculitis)",
+        "body": "**HSP, also known as IgA vasculitis:** the **small vessels of SKIN, JOINTS, INTESTINES and KIDNEYS become inflamed and bleed**. **Most striking feature — a purplish rash, typically lower legs and buttocks.**\n\n### The four main characteristics\n- **Rash (purpura):** **reddish-purple spots like bruises** on **buttocks, legs and feet**; may reach arms, face and trunk; **worse over pressure areas**.\n- **Swollen, sore joints:** **mainly KNEES and ANKLES**; **may PRECEDE the rash by one or two weeks**.\n- **Digestive tract:** **belly pain, nausea, vomiting, bloody stools** — **sometimes before the rash**.\n- **Kidney:** **protein or blood in the urine**, silent without a urine test.\n\n### Histopathology and complications\n- **Renal biopsy — the most definitive tool** for IgAV nephritis and IgA nephropathy; **both show MESANGIAL IgA DEPOSITS**.\n- **IgAV nephritis differs:** **CAPILLARY and SUBENDOTHELIAL IgA deposits** and **NEUTROPHILIC INFILTRATION**.\n- **Most serious complication — KIDNEY DAMAGE:** greater in adults, occasionally needing **dialysis or transplant**.\n- **Bowel:** rarely **INTUSSUSCEPTION**, a section telescoping into itself.\n\n### Treatment\n- **Supportive:** **IV rehydration**, **pain management**, **wound care** for ulcerative lesions.\n- **IgA vasculitis nephritis:** **ACE inhibitors · corticosteroids · plasmapheresis · immunosuppressants**.\n\n*⚠️ The platelet count is NORMAL — HSP is a VASCULAR purpura, which separates it from ITP; a febrile, ill child with purpura is meningococcal sepsis until excluded (both not in course material). Nephritis epidemiology and natural history: `renal`.*\n\nSrc: L47 pp.50–54",
+        "qs": []
+      },
+      {
+        "id": "haem-37",
+        "w": "must",
+        "h": "Haemophilia A — genetics, severity, clinical, laboratory",
+        "body": "**Haemophilia A: X-LINKED RECESSIVE.** Factor VIII has two parts, **VIII-Ag** and **VIII-c** (procoagulant): **the ANTIGEN IS NORMAL and VIII-c IS REDUCED**.\n\n|Severity|Factor activity|\n|---|---|\n|**Severe**|**0 – 1 %**|\n|**Moderate**|**1 – 5 %**|\n|**Mild**|**5 – 25 %**|\n|**Carrier female**|**50 – 60 %**|\n\n### Clinical\n- **The setting:** **male, plus a family history**.\n- **Newborn bleeding:** **umbilicus**, **circumcision**, **intracranial haemorrhage**.\n- **Infants and children:** **ecchymosis · ICH · HAEMARTHROSIS · intramuscular haematomas · mucous membrane and GIT bleeding · haematuria · other sites (intraocular, retroperitoneal)**.\n\n### Laboratory\n- **PTT prolonged** (normal 25 – 45 sec); **PT normal**; **factor VIII reduced**.\n- **Prenatal diagnosis:** **chorionic villous biopsy**, plus **genetic counselling**.\n\nSrc: L47 pp.55–58",
+        "qs": []
+      },
+      {
+        "id": "haem-38",
+        "w": "must",
+        "h": "Haemophilia A — treatment",
+        "body": "### 1–2 — Prevention\n- **Avoid:** **trauma · IM injection · surgery · ASPIRIN**; **non-violent exercise** only.\n- **Against blood-borne infection:** **proper screening** of products, **immunization against HBV**.\n\n### 3–4 — Education and replacement\n- **Education and psychological rehabilitation.**\n- **Replacement therapy:** **A — plasma. B — cryoprecipitate. C — factor VIII concentrates.** *(Cryoprecipitate is the cold-insoluble plasma fraction, rich in factor VIII, vWF and fibrinogen — not in course material.)*\n\n|Factor VIII concentrate|Dose|\n|---|---|\n|**Haemarthrosis**|**25 units/kg/12 hr**|\n|**Haematuria & GIT**|**50 units/kg/12 hr**|\n|**CNS bleeding**|**75 units/kg/8 hr**|\n\n**Side effects:** **isoimmunization → haemolysis (anti-A and anti-B)** · **infection (AIDS, hepatitis B and C)** · **factor VIII INHIBITORS**.\n\n### 5–7 — The rest of the ladder\n- **Local measures:** **cold compresses**. **Drugs:** **epsilon aminocaproic acid**.\n- **DDAVP (desmopressin)** in **mild and moderate** cases.\n\nSrc: L47 pp.59–62",
+        "qs": []
+      },
+      {
+        "id": "haem-39",
+        "w": "high",
+        "h": "Haemophilia A — inhibitors, emicizumab and ITI",
+        "body": "### 8 — Treatment of inhibitors\n- **High doses** of factor · **exchange transfusion or plasmapheresis**.\n- **Factor VII concentrates** · **activated prothrombin complex concentrates (FEIBA)**.\n- **Hemlibra —** a **bispecific factor IX and factor X directed antibody designed to bring them together**. · **ITI**.\n\n**Emicizumab:** a **subcutaneous humanized bispecific IgG4 monoclonal antibody** that **mimics activated FVIII — bridging FIXa and the FX zymogen to accelerate activation of the latter**, recognising **FIX/IXa with one Fab arm and FX/Xa with the other**.\n\n**⚠️ Why it matters:** it is **NOT recognised by FVIII-neutralizing alloinhibitory antibodies**, so it **remains effective in their presence**, and is licensed for **bleed prophylaxis both WITH and WITHOUT inhibitors**.\n\n**ITI (immune tolerance induction):** **frequent FVIII concentrate to induce immune tolerance to exogenous FVIII**. Goals: an **undetectable inhibitor titre** and **restored ability to treat bleeds with FVIII concentrates**.\n\nSrc: L47 pp.63–66",
+        "qs": []
+      },
+      {
+        "id": "haem-40",
+        "w": "high",
+        "h": "Haemophilia B and haemophilia C",
+        "body": "**Haemophilia B (Christmas disease):** **15 % of cases**, a **mild X-linked recessive** disease, **laboratory like haemophilia A**. **Treatment: factor IX concentrates and plasma.**\n\n**Haemophilia C:** a **mild autosomal DOMINANT disease**.\n\n*⚠️ Factor XI deficiency is conventionally autosomal RECESSIVE; the deck prints dominant. Noted as printed, not disputed.*\n\nSrc: L47 pp.67–68",
+        "qs": []
+      },
+      {
+        "id": "haem-41",
+        "w": "must",
+        "h": "von Willebrand disease",
+        "body": "**vWD:** the **MOST COMMON INHERITED BLEEDING DISORDER**, **0.1 – 1 % of the population**, from a **quantitative OR functional deficiency of von Willebrand factor**. **Affects males AND females.**\n\n**Role of vWF:** **mediates platelet adhesion to damaged endothelium** · **carrier protein for factor VIII** · **essential for proper clotting**.\n\n**Presentation:** **easy bruising**, **mucous membrane bleeding** — **epistaxis, oral mucosa, menorrhagia** — and **post-operative bleeding**.\n\n|Type|Defect|Detail|\n|---|---|---|\n|**Type 1**|**Partial QUANTITATIVE — commonest**|**20 – 50 % of normal**; **autosomal dominant**; **60 – 80 % of all vWD**; mucosal bleeding, bruising, surgical bleeding; diagnosed on the **vWF antigen assay**|\n|**Type 2**|**QUALITATIVE defect**|Subtypes **2A, 2B, 2M, 2N**; **2A commonest** — **selective loss of LARGE and MEDIUM multimers**|\n|**Type 3**|**COMPLETE deficiency — most severe**|**Little or no detectable plasma or platelet vWF**; **profound** bleeding; **mutant gene from BOTH parents**|\n\n### Diagnosis and management\n- **Diagnosis:** **personal and family bleeding history**; **vWF antigen** · **ristocetin cofactor activity (vWF:RCo)** · **factor VIII levels** · **multimer analysis for type 2**.\n- **Antifibrinolytics (tranexamic acid):** for **mucosal bleeding**, alone or as adjunct.\n- **Desmopressin (DDAVP) for TYPE 1** — stimulates vWF release. *(It releases stored vWF and VIII from endothelium, so cannot work in type 3 — not in course material.)*\n- **Severe types:** **vWF/factor VIII concentrates**; **hormonal therapy** for teenage menorrhagia.\n- **Prognosis:** **most children lead normal lives with proper management**, on **regular follow-up**, **monitored for anaemia**.\n\nSrc: L47 pp.69–77",
+        "qs": []
+      },
+      {
+        "id": "haem-42",
+        "w": "must",
+        "h": "von Willebrand disease versus haemophilia",
+        "body": "||vWD|Haemophilia|\n|---|---|---|\n|**Symptoms**|**Bruising, epistaxis**|**Joint & muscle bleeding**|\n|**Sex**|**Males = females**|**Males**|\n|**Abnormal protein**|**vWF**|**Factor VIII**|\n|**Chromosome**|**Chr 12**|**X chromosome**|\n|**Inhibitors**|**Rare**|**25 %**|\n|**Bleeding time**|**Abnormal**|**Normal**|\n|**PTT**|**Normal or ↑**|**↑**|\n|**Factor VIII**|**↓ or borderline**|**↓**|\n|**vWF Ag**|**↓ or absent**|**Normal**|\n\n**Why factor VIII falls in vWD at all:** normally **vWF is the carrier that PROTECTS VIII:C from degradation**, and is **released by activated thrombin**.\n\n**So the two defects differ:** **haemophilia A is defective SYNTHESIS of VIII:C** (gene on the X chromosome); **vWD is RAPID DEGRADATION of VIII:C in the absence of vWF** (gene on chromosome 12).\n\nSrc: L47 pp.53, 78 (p.53 is a figure, read by render)",
+        "qs": []
+      },
+      {
+        "id": "haem-43",
+        "w": "must",
+        "h": "Disseminated intravascular coagulation",
+        "body": "**DIC:** **widespread deposition of fibrin and microthrombi**. Three consequences run in parallel: **consumption of coagulation factors → bleeding**; **tissue ischaemia and necrosis**; **secondary fibrinolysis → bleeding**.\n\n### Aetiology — a clinical state occurring in a variety of diseases\n- **Metabolic:** **hypoxia · acidosis · endotoxaemia**.\n- **Exogenous:** **snake bite · incompatible blood transfusion**.\n- **Neoplastic:** **promyelocytic leukaemia · malignancy**.\n- **Vascular:** **renal vein thrombosis · giant haemangioma**.\n\n### Clinical picture — four layers\n- **1 —** the picture of the **underlying disease**.\n- **2 — Bleeding:** GIT, **pulmonary haemorrhage**, petechiae, haematuria.\n- **3 — Thrombosis and necrosis:** **convulsion, gangrene, renal failure**.\n- **4 — Intravascular haemolysis:** **microangiopathic haemolytic anaemia**.\n\n### Treatment\n- **1 — Control the original disease, USUALLY SEPSIS.**\n- **2 — Blood components:** **plasma · platelet transfusion · cryoprecipitate**.\n- **3 — Heparin in PURPURA FULMINANS.** **4 —** exchange transfusion in the newborn.\n- **5 —** **antithrombin and protein C concentrates**.\n\nSrc: L47 pp.79–82",
+        "qs": []
+      },
+      {
+        "id": "haem-44",
+        "w": "must",
+        "h": "DIC versus vitamin K deficiency, and haemorrhagic disease of the newborn",
+        "body": "|Test|DIC|Vitamin K deficiency|\n|---|---|---|\n|**Bleeding time**|**Prolonged**|**Normal**|\n|**PTT**|**Prolonged**|**Prolonged**|\n|**PT**|**Prolonged**|**Prolonged**|\n|**TT**|**Prolonged**|**Normal**|\n|**Platelet count**|**↓↓**|**Normal**|\n|**FDP**|**Positive**|**Negative**|\n|**Fibrinogen**|**↓↓**|**Normal**|\n|**Burr & helmet cells**|**++**|**−**|\n\n**⚠️ The rows that decide it —** **platelets, fibrinogen and the film**. Vitamin K deficiency touches only the **factor** limbs, so **TT, platelets and fibrinogen stay normal** and there are **no fragmented cells**.\n\n**D-dimer:** a **new antigen formed during digestion of fibrin — CHARACTERISTIC OF DIC**.\n\n### Haemorrhagic disease of the newborn\n- **Where it sits:** an **ACQUIRED coagulation disease**, beside DIC, liver disease and anticoagulants.\n- **Vitamin K’s function:** **carboxylation of clotting factors**; deficiency gives **haemorrhagic disease of the newborn with a prolonged prothrombin time**.\n- **Sources and dose:** **liver, green vegetables, intestinal flora**; **1 mg IM, once**, as prophylaxis and treatment.\n- **Three onset forms:** **early (< 24 h — maternal anticonvulsants or warfarin)**, **classic (day 2 – 7)**, **late (2 – 12 weeks — exclusively breastfed or malabsorbing)** *(not in course material)*.\n\nSrc: L47 pp.31, 80; vitamin K function, sources and dose from BK p.39 (Madkour’s Essentials of Pediatrics ch.3)",
+        "qs": []
+      }
+    ]
   }
 };

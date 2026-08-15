@@ -75,7 +75,8 @@ const MODULES = [
     {name:'Systems', chapters:[
       ['gastroenterology','Vomiting and reflux'],['gi-diarrhoea','Diarrhoea and constipation'],
       ['gi-abdopain','Abdominal pain'],['perinatal','Perinatal medicine'],
-      ['neonatal','Neonatal medicine'],['haematology','Hematological Disorders'],
+      ['neonatal','Neonatal medicine'],['haematology','Anaemia and marrow failure'],
+      ['haem-bleeding','Bleeding and clotting disorders'],
       ['resp-pneumonia','Pneumonia'],['respiratory','Asthma'],['resp-bronch','Bronchiolitis'],
       ['cardiac','Congenital heart disease'],['cardiac-cyan','Cyanotic heart disease'],
       ['cardiac-acq','Acquired heart disease'],

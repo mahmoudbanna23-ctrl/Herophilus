@@ -192,6 +192,17 @@ instance per file:** one bad deck (`14) Puberty`) crashed the session and cascad
 > But **check any `.pptx` deck's cache against `pdftotext -layout` of the converted PDF before
 > writing its chapter**, and never assume the cache is the whole deck.
 
+> **⚠️⚠️ THE CEILING UNDER-STATES AN IMAGE-HEAVY CHAPTER, BECAUSE IT COUNTS ONLY WHAT EXTRACTS.**
+> `haematology`'s ceiling read 3,827 and the chapter came in at 5,125 — the visual read alone
+> recovered **~1,215 words, 3.6× `44)BM FAILURE`'s entire extracted text** (339 words across 54
+> slides, 33 of them blank, pages 40–54 fifteen consecutive blanks). **Where a chapter's blank-page
+> share is high, treat its ceiling as a floor and expect to exceed it** — that is not inflation, it
+> is content the counter could not see. Say so and split rather than compress.
+
+> **⚠️ FRAMEWORK SLIDES COST ~85 WORDS IN THIS FORMAT, NOT ~55.** §14.3a's anchored bullets and
+> `###` headings are not free, and costing them at the old rate is what made `haematology`'s own
+> prediction a third short. Use 85 in the planning sum.
+
 **Blank-slide share by chapter, all decks pooled** — read this before writing:
 
 | ≥30 % | | 20–30 % | | <20 % | |
