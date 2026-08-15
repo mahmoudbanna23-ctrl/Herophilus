@@ -260,7 +260,124 @@
        both statements carried.
 
    Table pipes carry no padding — mdCells() trims outer delimiters.
-   Curly apostrophes throughout: a straight one closes a single-quoted field. */
+   Curly apostrophes throughout: a straight one closes a single-quoted field.
+
+   ============================================================================
+   ⚠️⚠️ VISUAL-READ PATCH APPLIED 2026-08-15. Body words 5,157 -> 6,495.
+   ============================================================================
+   Additive only. No section was restructured, no correct prose rewritten, no
+   fact removed. All 24 linked questions still linked (42 refs, 24 distinct).
+   Ceiling 7,052 — the patched chapter is 6,495, still 557 UNDER it (92.1 %).
+   Net +1,338 words against the caller's ~1,900 of headroom.
+
+   WHY. theory-plan.md finding 3: this chapter is 41 % blank slides and FOUR of
+   its five decks carry much of their content as pictures. The original author
+   recorded the Kawasaki criteria as "image-only and unrecovered". The four
+   .pptx decks were converted to PDF, every page split on the form feed and
+   flagged under 6 words, and only those pages rendered at 110 dpi and read as
+   FOUR-UP CONTACT SHEETS (the recipe in theory-plan.md finding 3), with the
+   dense tables re-rendered individually at 200-340 dpi to read the cell text.
+
+     L33  71 pages, 25 blank      L34  64 pages, 38 blank
+     L35  66 pages, 14 blank      L36  60 pages, 46 blank
+     L37  38 pages, 15 blank
+
+   ⚠️ THE BLANKS SPLIT CLEANLY IN TWO, AND ONLY ONE HALF WAS WORTH READING.
+   L36 slides 2-21 — the WHOLE arrhythmia half of the deck — are ECG rhythm
+   strips, heart diagrams and drug packaging. Twenty slides, one recoverable
+   sentence between them (slide 15). Likewise L34's twenty-one "diagnosis
+   (ECHO)" / "treatment (CATH)" / "CoA treatment (Stenting)" titles are
+   procedural photographs. The value was concentrated in about a dozen slides
+   that print a TABLE, a FIGURE WITH A CAPTION, or a LABELLED CLASSIFICATION —
+   and those dozen were worth the whole exercise.
+
+   ⚠️ FOUR TAGS CONVERTED FROM "(not in course material)" TO A CITATION:
+     1. THE KAWASAKI CRITERIA — the priority-one item. L36 slide 30 prints the
+        AHA 2017 diagnostic table IN FULL under a "European 2018 consensus"
+        stamp: fever 5+ days plus four of five, each with its own description
+        column, AND the escape clause that fewer than four features suffice if
+        coronary artery abnormalities are found. The old tagged aside named
+        five criteria with no descriptions and did not have the escape clause.
+     2. THE JONES CRITERIA — L37 slide 23 prints "THE JONES CRITERIA UPDATE —
+        1992" under the AHA and WHO logos, all five major and all five minor.
+        Erythema marginatum and the prolonged PR interval are now SOURCED.
+        Only the counting rule (2 major, or 1 major + 2 minor, + evidence of
+        preceding GAS) is absent from the slide and stays tagged.
+     3. THE ACUTE RF REGIMEN — L37 slide 35 is a three-box flow: streptococcal
+        infection -> oral antibiotic 10 DAYS; rheumatic fever ->
+        anti-inflammatory 2-4 WEEKS; RHD -> long-acting penicillin 5-20 YEARS.
+        ⚠️ NOTE FOR THE NEXT PATCHER: this slide DOES extract with
+        `pdftotext -layout` and is simply ABSENT FROM THE CACHED L37 TEXT — so
+        the original author was right that it was not in the cache and wrong
+        that it was an image. Re-extract a deck before trusting its cache.
+     4. BICUSPID AORTIC VALVE — L34 slide 9's figure caption spells it out
+        ("a bicuspid aortic valve often demonstrates mobility but will appear
+        to dome in systole"). Only the abbreviation BAV was sourced before.
+
+   WHAT ELSE THE IMAGES CARRIED, by section:
+     card-1   L34 slide 2 (Table 18.2) — the SYMPTOM column for the six-group
+              grid: breathless / blue / breathless-and-blue / asymptomatic /
+              collapsed with shock. The grid was lesions only.
+     card-2   L33 slides 20 and 56 — NORMAL saturations and pressures, every
+              chamber. The chapter had no reference values at all.
+     card-5   L33 slide 23 — the Eisenmenger chain in five steps, incl. what
+              "remodelling" means (SMC proliferation, increased extracellular
+              matrix, intravascular thrombosis); slide 24 — the large-VSD
+              oximetry step-up, RA 75 % -> RV and PA 85 %; slide 22 —
+              restrictive vs unrestrictive.
+     card-6   L33 slides 39-40 — WHY the PDA murmur is continuous (the
+              aorta-PA gradient persists through the whole cardiac cycle), and
+              that it is not a direct shunt (LV -> aorta -> PA -> RV).
+     card-8   L34 slide 7 — the AS ECG voltage criteria, deep S in V2 + tall R
+              in V6 over 45 mm TOTAL, downgoing T = strain and severe.
+     card-9   THE LARGEST RECOVERY. L34 slide 29 — preductal / postductal /
+              extensive preductal, and the collateral pathway named vessel by
+              vessel (subclavian -> subscapular -> intercostal; inferior
+              epigastric). Slide 35 — the site (distal to the left subclavian,
+              adjacent to the duct), the murmur BETWEEN THE SHOULDER BLADES,
+              and that the CXR is USUALLY NORMAL in a child with rib notching
+              only in young people and adults. Slide 61 — a three-row table
+              separating CoA, INTERRUPTION OF THE AORTIC ARCH (a new entity
+              here) and HLHS by pulse pattern alone. Slide 58 names alprostadil
+              (Prostin VR).
+     card-14  L35 page 44 — HLHS's four anatomical components. It was a
+              one-line entry before.
+     card-15  L36 slide 15 — narrow complex defined as under 120 ms / three
+              small squares, SVT at 250-300/min, breaking on adenosine.
+     card-16  L36 slide 23 — the SIX-GROUP AETIOLOGY of myocardial disease, a
+              whole classification the chapter did not have; slide 27 — the HF
+              drug set by product photograph, of which SPIRONOLACTONE and
+              CARVEDILOL are new; slides 31-39 — the coronary and systemic
+              aneurysms; slide 45 — the CDC / WHO / RCPCH MIS-C case
+              definitions side by side.
+     card-18  L37 slide 27 — the ASO titre CURVE (peak ~800-900 units, falling
+              over ~12 months), which was previously an untagged guess at
+              "rises then falls over months".
+
+   NOT RECOVERED, and it is not a failure: L36 slides 2-21 and L34's procedural
+   slides genuinely carry no prose (see above). No slide in any of the five
+   decks was illegible at 110 dpi; the four that needed re-rendering needed it
+   for cell text, not for legibility.
+
+   TAGS THAT REMAIN, all re-checked and all genuinely absent from the slides:
+   rubella's peripheral pulmonary stenosis · innocent-murmur variability with
+   posture/fever · mitral regurgitation's site · prostaglandin E1's ADVERSE
+   EFFECTS (the drug itself is now sourced) · ectopic-beat benignity · the
+   vagal-manoeuvre ladder · blood cultures before the first dose · MR-commonest-
+   acute / MS-commonest-late · the Jones counting rule · the named
+   anti-inflammatory agents · the benzathine 3-4 week interval.
+
+   ⚠️ RE-MEASURED FROM DISK AS THE LAST ACTION, AFTER THE FINAL EDIT, per
+   §14.1 rule (5) — and the per-section figures below SUM to 6,495, checked:
+     card-1  283 · card-2  267 · card-3  218 · card-4  227 · card-5  562
+     card-6  410 · card-7  401 · card-8  318 · card-9  519 · card-10 207
+     card-11 200 · card-12 343 · card-13 416 · card-14 416 · card-15 235
+     card-16 638 · card-17 298 · card-18 537
+   ⚠️ A FIRST DRAFT OF THIS BLOCK WAS WRITTEN FROM ESTIMATES BEFORE MEASURING
+   and claimed 6,616 with card-18 at 656 — 121 words out on one section. The
+   figures above replaced it after reading the file back. The header is a
+   claim; only the file is the fact.
+   Estimated pages at the /240 estimator: 6,495 / 240 = 27.1. */
 
 var THEORY_PEDS_CARDIAC = {
   'cardiac': {
@@ -283,16 +400,18 @@ var THEORY_PEDS_CARDIAC = {
     '',
     '*Down → AVCD. Turner → coarctation (genetics deck, cited only).*',
     '',
-    '### The six-group classification',
+    '### The six-group classification, and what each group LOOKS like',
     '',
-    '|Group|Lesions|',
-    '|---|---|',
-    '|**Left-to-right shunt**|**VSD · PDA · ASD**|',
-    '|**Right-to-left shunt**|**Tetralogy of Fallot**|',
-    '|**Common mixing**|**AVCD**|',
-    '|**Well child with obstruction**|**PS · AS**|',
-    '|**Sick neonate with obstruction**|**CoA · HLHS**|',
-    '|**Cyanotic group**|**F4 · TA · PA · Ebstein anomaly**|',
+    '|Group|Symptoms|Lesions|',
+    '|---|---|---|',
+    '|**Left-to-right shunt**|**breathless or asymptomatic**|**VSD · PDA · ASD**|',
+    '|**Right-to-left shunt**|**blue**|**Tetralogy of Fallot** (L34 adds **TGA**)|',
+    '|**Common mixing**|**breathless AND blue**|**AVCD** (L34 adds **complex CHD**)|',
+    '|**Well child with obstruction**|**asymptomatic**|**PS · AS** (L34 adds **adult-type CoA**)|',
+    '|**Sick neonate with obstruction**|**COLLAPSED WITH SHOCK**|**CoA · HLHS**|',
+    '|**Cyanotic group**|blue|**F4 · TA · PA · Ebstein anomaly**|',
+    '',
+    '*The symptom column is L34 slide 2 (Table 18.2); the six groups are L33 slide 6. Two of the five sets are one word — asymptomatic and collapsed — and they are the whole triage.*',
     '',
     '- **VSD is the commonest CHD — 30–40 % of newborns with a CHD.** **PDA about 10 %.**',
     '- **Tetralogy of Fallot is 10 % of all CHD and the commonest cause of cyanosis after 1 year of age** — the commonest *cyanotic* lesion, never the commonest lesion.',
@@ -300,7 +419,7 @@ var THEORY_PEDS_CARDIAC = {
     '### How it presents',
     '**Antenatal ultrasound diagnosis · a murmur in an asymptomatic child · growth failure · recurrent chest infection · heart failure · shock · cyanosis, duct-dependent · screening.**',
     '',
-    'Src: L33 slides 4–7, 16, 38, 65; L35 pages 8, 10; Turner–CoA from `6) Genetically determined disease_`, cited only'
+    'Src: L33 slides 4–7, 16, 38, 65; L34 slide 2 (visual read); L35 pages 8, 10; Turner–CoA from `6) Genetically determined disease_`, cited only'
   ].join('\n'),
   qs: ['pedhd-card-2','pedhd-card-22']
 },
@@ -328,11 +447,23 @@ var THEORY_PEDS_CARDIAC = {
     '- Placenta excluded → **right atrial return falls** → **the flap valve of the foramen ovale closes**.',
     '- **The ductus arteriosus closes within the first few hours or days.**',
     '',
+    '### Normal saturations and pressures after birth',
+    '*The reference numbers every shunt is read against — a step-up in saturation localises the defect.*',
+    '',
+    '|Chamber|Saturation|Pressure mmHg|',
+    '|---|---|---|',
+    '|**SVC / IVC → right atrium**|**75 %**|**4** (mean)|',
+    '|**Right ventricle**|**75 %**|**25/0**|',
+    '|**Pulmonary artery**|**75 %**|**25/10**|',
+    '|**Pulmonary veins → left atrium**|**95 %**|**6** (mean)|',
+    '|**Left ventricle**|**95 %**|**100/0**|',
+    '|**Aorta**|**95 %**|**100/70**|',
+    '',
     '**⚠️ The exam point:** a large VSD is quiet at birth because **PVR is still high**. It falls over the following weeks, **the left-to-right shunt widens, and the infant declares at 2–8 weeks** — nothing new has gone wrong.',
     '',
     '**Infant heart failure:** a large left-to-right shunt until proved otherwise — **breathless and sweaty on feeding, poor weight gain, recurrent chest infections, hepatomegaly**. L35 lists hepatomegaly with increased pulmonary blood flow, so it is expected at this age, not absent.',
     '',
-    'Src: L33 slides 10–12, 28; L35 page 52'
+    'Src: L33 slides 10–12, 20, 28, 56 (slides 20 and 56 by visual read); L35 page 52'
   ].join('\n'),
   qs: ['pedhd-card-3','pedhd-card-4']
 },
@@ -411,11 +542,15 @@ var THEORY_PEDS_CARDIAC = {
     '',
     '### Haemodynamics',
     '- **Magnitude of shunt = size + pulmonary vascular resistance.**',
+    '- **Restrictive vs unrestrictive:** a **small VSD is a RESTRICTIVE defect** and is **haemodynamically insignificant**; a **large VSD is unrestrictive**, so the shunt is decided by pulmonary vascular resistance alone.',
     '- **Small, about 3 mm:** the defect itself is the resistance → less flow → **PVR normal**.',
     '- **Large:** minimal resistance at the defect → more flow → **shear and tear, fibrosis** → **high PVR**.',
     '- Systole: **LV → PA → lungs → pulmonary veins → LA → LV** = **volume overload of LA and LV**.',
     '- Shunt dilates the pulmonary artery and raises PVR → **pulmonary hypertension**, more with moderate and larger defects.',
     '- RV pressure rises with time **until Eisenmenger syndrome. Left-to-right early, right-to-left late.**',
+    '',
+    '### Haemodynamics of a large VSD — the numbers',
+    '**Oximetry step-up:** right atrium **75 %**, then **right ventricle 85 % and pulmonary artery 85 %** — the jump is the shunt entering at ventricular level. **RV 60/0 · PA 60/30 · LA mean 8 · LV 100/0 · aorta 100/70**, against the normal set in `card-2`.',
     '',
     '### Small VSD',
     '- **Asymptomatic, accidental discovery; normal weight gain and development.**',
@@ -432,6 +567,9 @@ var THEORY_PEDS_CARDIAC = {
     '- **Late cyanosis means right ventricular failure.**',
     '',
     '### Eisenmenger syndrome',
+    '**The chain, step by step:** **left-to-right shunt → increased pulmonary blood flow (shear stress / circumferential stretch) → endothelial dysfunction and vascular remodelling → increase in PVR → inverted shunt, right-to-left → cyanosis.**',
+    '- **What remodelling means:** **smooth muscle cell proliferation · increase in extracellular matrix · intravascular thrombosis.**',
+    '',
     '- **Reversal of the shunt to right-to-left**, from raised pulmonary artery pressure and pulmonary vascular disease → **cyanosis and right-sided heart failure**.',
     '- **Loud pulmonary sound · very short or no systolic murmur · early diastolic murmur of pulmonary regurgitation · murmur of tricuspid regurgitation.**',
     '- **Around 2 to 3 years of age.**',
@@ -443,7 +581,7 @@ var THEORY_PEDS_CARDIAC = {
     '- **Closure: surgical is first choice over 1 year of age**; transcatheter otherwise.',
     '- **Surgery indicated for: large VSD with pulmonary hypertension · VSD with associated defects · congestive failure not responding to medication.**',
     '',
-    'Src: L33 slides 15–16, 25–32'
+    'Src: L33 slides 15–16, 22–32 (slides 22, 23 and 24 by visual read)'
   ].join('\n'),
   qs: ['pedhd-card-3','pedhd-card-4','pedhd-card-9','pedhd-card-14']
 },
@@ -466,6 +604,10 @@ var THEORY_PEDS_CARDIAC = {
     '- **Higher sensitivity to the vasodilator effects of prostaglandin E2 and nitric oxide.**',
     '- *The wall of the duct is muscularised in the preterm, versus a poor muscle layer in the full term.*',
     '',
+    '### Why the murmur is CONTINUOUS',
+    '- **The gradient never closes:** aortic pressure exceeds pulmonary artery pressure **throughout the cardiac cycle**, so flow across the duct is **continuous** — systolic *and* diastolic. That is the machinery murmur, and no other left-to-right shunt has it.',
+    '- **It is NOT a direct shunt:** the path is **left ventricle → aorta → pulmonary artery → right ventricle**, which is why the LV and LA dilate rather than the right heart first.',
+    '',
     '### Presentation, investigation, treatment',
     '- **Volume overload**; ducts vary in **size, length and shape**; the picture depends on **size and pressure gradient**.',
     '- **Small: asymptomatic.** Otherwise **chest infection, growth failure, heart failure**.',
@@ -477,7 +619,7 @@ var THEORY_PEDS_CARDIAC = {
     '',
     '*A PDA with absent red reflexes and symmetrical growth restriction is congenital rubella.*',
     '',
-    'Src: L33 slides 33–47; L34 slide 57'
+    'Src: L33 slides 33–47 (slides 39 and 40 by visual read); L34 slide 57'
   ].join('\n'),
   qs: ['pedhd-card-6','pedhd-card-15','pedhd-card-22']
 },
@@ -551,16 +693,18 @@ var THEORY_PEDS_CARDIAC = {
     '|Second sound|**A2 delayed and soft**|**P2 delayed and soft**|',
     '|Pulse|**small volume, slow rising; carotid thrill**|normal|',
     '|Extra sign|—|**RV impulse, a heave, when severe**|',
-    '|ECG|**left ventricular hypertrophy**|**RVH — UPRIGHT T WAVE IN V1**|',
+    '|ECG|**LVH — deep S in V2 + tall R in V6, over 45 mm TOTAL; downgoing T = LV STRAIN and SEVERE stenosis**|**RVH — UPRIGHT T WAVE IN V1** (in children)|',
     '|CXR|normal or prominent LV with **post-stenotic dilatation of the ascending aorta (aortopathy)**|normal or **post-stenotic dilatation of the pulmonary artery**|',
     '|Echo, the **gold standard**|degree (mild/mod/severe/critical), LVH, LV function, associations (**CoA, dilated ascending aorta**), aortic regurgitation|degree, RVH, RV function, associations (**ASD, pulmonary branch stenosis**), pulmonary regurgitation|',
     '|Critical neonatal form|duct-dependent **SYSTEMIC** → **shock**|duct-dependent **PULMONARY** → **cyanosis**|',
     '|Treatment|**balloon aortic valvoplasty or aortic valve replacement**|**balloon pulmonary valvoplasty by catheter; surgery rarely required**|',
     '|Indications|**symptoms · severe stenosis · ischaemia on ECG**|**symptoms · severe stenosis**|',
     '',
+    '**Bicuspid aortic valve on echo:** in the long axis it **retains mobility but DOMES IN SYSTOLE** instead of opening flat — the sign that names it, and the commonest valve behind childhood AS.',
+    '',
     '*Pure PS is the one exception to the single-S2 rule in cyanotic assessment — it may give a wide split with a softly audible P2.*',
     '',
-    'Src: L34 slides 3–27; L35 page 53'
+    'Src: L34 slides 3–27 (slides 7, 9 and 18 by visual read); L35 page 53'
   ].join('\n'),
   qs: ['pedhd-card-7','pedhd-card-10','pedhd-card-17']
 },
@@ -569,13 +713,22 @@ var THEORY_PEDS_CARDIAC = {
   id: 'card-9', w: 'must',
   h: 'Coarctation — two different diseases under one name',
   body: [
+    '### Where the narrowing sits, and the four anatomical patterns',
+    '- **Site:** **narrowing of the aorta DISTAL TO THE LEFT SUBCLAVIAN ARTERY, adjacent to the insertion of the arterial duct** — which is why the right arm is hypertensive and the left arm may not be.',
+    '- **Postductal** — beyond the duct; the adult type, survives to present late.',
+    '- **Postductal with collaterals** — the chronic form that notches ribs.',
+    '- **Preductal**, and **extensive preductal** — the neonatal forms, duct-dependent.',
+    '',
+    '**The collateral pathway, named:** **subclavian artery → subscapular artery → INTERCOSTAL ARTERIES → descending aorta**, with the **inferior epigastric artery** feeding the lower route. Those intercostals are what erode the rib undersurfaces.',
+    '',
     '### Adult type — a well child',
     '- **Asymptomatic.**',
     '- **Systemic hypertension in the RIGHT ARM.**',
-    '- **Ejection systolic murmur at the upper sternal edge; collaterals heard as a CONTINUOUS MURMUR AT THE BACK.**',
+    '- **Murmur:** ejection systolic **BETWEEN THE SHOULDER BLADES — or none at all**; collaterals heard as a **CONTINUOUS MURMUR AT THE BACK**.',
     '- **RADIO-FEMORAL DELAY** — blood bypasses the obstruction through chest-wall collaterals, so the leg pulse is late.',
-    '- **CXR: RIB NOTCHING** from large collateral intercostal arteries running under the ribs posteriorly, and the **“3” sign**, a visible notch in the descending aorta at the coarctation site. **ECG: LV hypertrophy.**',
-    '- **Echo:** degree, LVH, LV function, associations — **BAV (bicuspid aortic valve, *expansion not in course material*) and dilated ascending aorta**.',
+    '- **CXR: USUALLY NORMAL in a child.** **RIB NOTCHING** from **aortic-to-aortic collateral arteries** running under the ribs posteriorly appears **only in young people and adults**, alongside the **“3” sign**, a visible notch in the descending aorta at the coarctation site.',
+    '- **ECG: LVH — deep S in V2 + tall R in V6, over 45 mm total, with an UPRIGHT T wave.** A **downgoing T wave means LV strain and SEVERE coarctation and/or hypertension.**',
+    '- **Echo:** degree, LVH, LV function, associations — **bicuspid aortic valve (BAV) and dilated ascending aorta**.',
     '- **CT aortography:** degree, **collaterals**, relation to surrounding structures.',
     '- **Management: CoA stenting by catheter** for **symptoms** or **moderate/severe** coarctation; **surgical repair in some patients**.',
     '',
@@ -584,11 +737,21 @@ var THEORY_PEDS_CARDIAC = {
     '- **Acute circulatory collapse after a few days, when the duct closes.**',
     '- **A sick baby, severe heart failure, ABSENT FEMORAL PULSES, severe metabolic acidosis.**',
     '- **CXR: cardiomegaly from heart failure and shock.** **Echo:** degree, **patency of the PDA**, LV function, associated VSD. **CT aortography:** degree and **arch hypoplasia**.',
-    '- **Surgical CoA repair is the standard curative treatment.**',
+    '- **Duct-dependent SYSTEMIC circulation:** the descending aorta is fed by blood flowing **RIGHT TO LEFT across the duct** — close it and the lower body has no supply.',
+    '- **Surgical CoA repair is the standard curative treatment.** **Prostaglandin: alprostadil (Prostin VR).**',
     '',
-    '*Turner syndrome carries coarctation. Prostaglandin E1 causes apnoea, fever and hypotension — have airway support ready (not in course material).*',
+    '### ⚠️ THE PULSE PATTERN NAMES THE LESION — left heart outflow obstruction in the sick infant',
+    '*All three are duct-dependent, all three collapse, and all three are managed identically. Only the pulses separate them.*',
     '',
-    'Src: L34 slides 28–61'
+    '|Lesion|Clinical features|Management|',
+    '|---|---|---|',
+    '|**Coarctation of the aorta**|circulatory collapse · **ABSENT FEMORAL pulses**|**maintain ABC · prostaglandin infusion**|',
+    '|**Interruption of the aortic arch**|circulatory collapse · **absent femorals AND absent LEFT BRACHIAL pulse**|**maintain ABC · prostaglandin infusion**|',
+    '|**Hypoplastic left heart syndrome**|circulatory collapse · **ALL peripheral pulses absent**|**maintain ABC · prostaglandin infusion**|',
+    '',
+    '*Turner syndrome carries coarctation. Prostaglandin E1 causes apnoea, fever and hypotension — have airway support ready (adverse effects not in course material).*',
+    '',
+    'Src: L34 slides 28–61 (slides 29, 35, 49, 58 and 61 by visual read)'
   ].join('\n'),
   flow: {
     title: 'The collapsed neonate on day 2–7',
@@ -779,7 +942,7 @@ var THEORY_PEDS_CARDIAC = {
     '',
     '**TAPVC:** **fixed split S2. Operate as soon as the diagnosis is made — OBSTRUCTED TAPVC IS A SURGICAL EMERGENCY and any delay may be catastrophic.**',
     '',
-    '**HLHS:** 1–3 %, and one of the two “sick neonate with obstruction” diagnoses beside coarctation.',
+    '**HLHS:** 1–3 %, and one of the two “sick neonate with obstruction” diagnoses beside coarctation. **Four anatomical components: small (hypoplastic) ascending aorta · absent (ATRETIC) mitral valve · small (hypoplastic) left ventricle · atrial septal defect.** The whole systemic output crosses a **patent ductus**, so **ALL peripheral pulses go when it shuts** — see the pulse table in `card-9`.',
     '',
     '**Pulmonary AV fistula:** fistulous vascular communications in the lungs, **large and localised, or multiple, scattered and small**. **Commonest form is Osler–Weber–Rendu syndrome.** Features depend on shunt magnitude; **mild cyanosis**; **routine echo normal — CONTRAST echo is diagnostic.**',
     '',
@@ -788,7 +951,7 @@ var THEORY_PEDS_CARDIAC = {
     '- **Balanced single-ventricle states, SaO2 85–90 % — intervene only if symptoms or cyanosis appear.**',
     '- *Otherwise early correction is desirable: it avoids adverse cardiac, neurodevelopmental and other consequences.*',
     '',
-    'Src: L35 pages 36–46, 58–64; L33 slide 6'
+    'Src: L35 pages 36–46, 58–64 (page 44 by visual read); L33 slide 6'
   ].join('\n'),
   qs: ['pedhd-card-11','pedhd-card-18']
 },
@@ -807,10 +970,11 @@ var THEORY_PEDS_CARDIAC = {
     '|**Ventricular tachycardia**|**WIDE-complex tachycardia**|**unstable → cardioversion first line** · **stable → IV amiodarone usually first line, but not always**|',
     '|**Complete heart block**|**bradycardia with complete atrioventricular dissociation**; **congenital (SLE, CHD)** or **acquired (viral myocarditis, digitalis toxicity)**|**symptomatic → pacemaker implantation**|',
     '',
+    '- **Narrow complex, defined:** **UNDER 120 ms — three small squares.** In SVT the rate runs **250–300 beats/min**, and the strip shows it **breaking straight to sinus rhythm on adenosine** — the response is itself diagnostic.',
     '- **Vagal manoeuvres come BEFORE adenosine in a stable child** — ice to the face in an infant, Valsalva or blowing through a narrow straw in an older one. **Carotid sinus massage is not used in children, and never bilaterally** *(the ladder is not in course material)*.',
     '- **Defect note:** House keys the vagal manoeuvre first; L36 prints IV adenosine as first line for the haemodynamically stable patient and does not mention vagal manoeuvres. **Both recorded, key as printed.**',
     '',
-    'Src: L36 slides 4–21'
+    'Src: L36 slides 4–21 (slide 15 by visual read)'
   ].join('\n'),
   qs: ['pedhd-card-5']
 },
@@ -819,21 +983,60 @@ var THEORY_PEDS_CARDIAC = {
   id: 'card-16', w: 'high',
   h: 'Myocarditis, dilated cardiomyopathy, Kawasaki and MIS-C',
   body: [
+    '### Aetiology of myocardial disease — the lecturer’s six groups',
+    '',
+    '|Group|Causes|',
+    '|---|---|',
+    '|**1 Hereditary (genetic)**|**dilated · hypertrophic · restrictive cardiomyopathy · myopathies (Duchenne) · glycogen storage diseases**|',
+    '|**2 Infective (myocarditis)**|**viral — coxsackie, measles, mumps, varicella** · **bacterial — diphtheria, mycoplasma**|',
+    '|**3 Metabolic and endocrine**|**beri-beri · kwashiorkor · hypothyroidism · hyperthyroidism**|',
+    '|**4 Connective tissue disease**|**rheumatic fever · systemic lupus erythematosus · MIS-C**|',
+    '|**5 Drugs and toxins**|**adriamycin · iron overload · irradiation**|',
+    '|**6 Miscellaneous**|**Kawasaki disease · sickle cell anaemia**|',
+    '',
+    '*Every other entity in this section sits somewhere in that grid — it is the map, not a list.*',
+    '',
     '**Viral myocarditis:** **viral-induced myocardial injury**, ranging **from an asymptomatic patient to fulminant carditis with cardiogenic shock**. **Treatment of heart failure and cardiogenic shock is the cornerstone**; **IV immunoglobulins and steroids in some patients**.',
     '',
     '**Dilated cardiomyopathy:** **genetic myocardial dysfunction** → **impaired systolic function and a dilated left ventricle with global hypokinesia**. Presents with **heart failure and/or cardiogenic shock**; **same cornerstone**.',
     '',
+    '**HF drug set:** as the deck names it — **furosemide (Lasix) · spironolactone (Aldactone) · captopril · digoxin (paediatric elixir 0.05 mg/ml) · carvedilol.** Doses for the shunt lesions are in `card-5`; **spironolactone and carvedilol appear only here.** *The cardiogenic-shock algorithm itself is deferred to `emergencies`.*',
+    '',
     '**Kawasaki disease:** **immune-mediated vasculitis** with a **high tendency for coronary arteritis**.',
     '- **IV immunoglobulin is the GOLD STANDARD for treatment.**',
     '- **Steroids and/or other immunomodulators** in **high-risk and resistant patients, as adjuvant therapy with IVIG**.',
-    '- *The European 2018 consensus criteria are printed as images and are not recoverable from the cached deck. The classic set is fever of 5 days or more plus 4 of 5 — bilateral non-purulent conjunctivitis, lip and oral changes, polymorphous rash, extremity changes, cervical lymphadenopathy (not in course material).*',
+    '',
+    '### Criteria for COMPLETE Kawasaki — AHA 2017, on the European 2018 consensus slide',
+    '**The rule:** **FEVER OF 5 DAYS OR MORE, PLUS FOUR OF THE FIVE BELOW.**',
+    '',
+    '|Criterion|Description|',
+    '|---|---|',
+    '|**1 Conjunctivitis**|**bilateral, BULBAR, conjunctival injection WITHOUT EXUDATE**|',
+    '|**2 Lymphadenopathy**|**cervical, often over 1.5 cm, usually UNILATERAL**|',
+    '|**3 Rash**|**maculopapular, diffuse erythroderma, or erythema multiforme**|',
+    '|**4 Changes of lips or oral mucosa**|**red cracked lips · STRAWBERRY TONGUE · diffuse erythema of the oropharynx**|',
+    '|**5 Changes to extremities**|**erythema and oedema of palms and soles in the ACUTE phase; PERIUNGUAL DESQUAMATION in the SUBACUTE phase**|',
+    '',
+    '- **⚠️ The escape clause: KD may be diagnosed with FEWER THAN FOUR features if CORONARY ARTERY ABNORMALITIES are detected.** That is the whole point of imaging early.',
+    '- **What the imaging shows:** **coronary artery aneurysms — right coronary and left main — with THROMBUS**, on cardiac MRI and angiography; aneurysms are **not confined to the coronaries** and are seen in the **axillary and iliac/femoral** vessels on MR angiography.',
     '',
     '**MIS-C:** **immune-mediated multiorgan dysfunction after COVID infection**, with a **high tendency for cardiac affection — impaired LV systolic function, mitral regurgitation, pericardial effusion, coronary involvement**.',
-    '- **Diagnosis: fever + acute-phase reactants + multi-organ affection + evidence of COVID infection + exclusion of other differentials.**',
+    '- **Diagnosis, the lecturer’s one-line version: fever + acute-phase reactants + multi-organ affection + evidence of COVID infection + exclusion of other differentials.**',
     '- **Steroids, other immunomodulators and IVIG** inhibit the inflammatory cascade.',
     '- **COVID reaches the heart three ways: MIS-C · acute COVID infection · vaccine-related myocarditis.**',
     '',
-    'Src: L36 slides 22–46'
+    '### The three published MIS-C case definitions — ALL FOUR findings required in each',
+    '',
+    '|  |**CDC, under 21 years**|**WHO, 0–19 years**|**RCPCH**|',
+    '|---|---|---|---|',
+    '|**1 Fever**|**38 °C or more, or subjective, for 24 h or more**|**3 days or more**|**fever**|',
+    '|**2 Inflammation**|**CRP, ESR, fibrinogen, D-dimer, ferritin, LDH, IL-6, neutrophilia, hypoalbuminaemia**|**ESR, CRP or procalcitonin raised**|**neutrophilia, raised CRP, LYMPHOPENIA**|',
+    '|**3**|**severe illness REQUIRING HOSPITALISATION**|**no other obvious microbial cause**|**single- or multi-organ dysfunction — shock, cardiac, respiratory, renal, GI or neurological**|',
+    '|**4**|**TWO OR MORE organ systems** — cardiac, renal, respiratory, haematological, GI, dermatological, neurological|**multisystem involvement** — rash, bilateral non-purulent conjunctivitis, mucocutaneous inflammation, hypotension or shock, cardiac dysfunction (pericarditis, valvulitis, coronary abnormality on echo or raised BNP), coagulopathy, acute GI symptoms|**exclusion of any other microbial cause** — bacterial sepsis, staphylococcal or streptococcal shock, enterovirus myocarditis|',
+    '',
+    '*The three differ on what they demand: CDC on severity, WHO on breadth of organ involvement, RCPCH on exclusion. Waiting for those exclusion results must not delay expert advice.*',
+    '',
+    'Src: L36 slides 22–46 (slides 23, 27, 30–39 and 45 recovered by visual read 2026-08-15)'
   ].join('\n'),
   qs: []
 },
@@ -875,7 +1078,7 @@ var THEORY_PEDS_CARDIAC = {
   id: 'card-18', w: 'must',
   h: 'Rheumatic fever and rheumatic heart disease',
   body: [
-    '*L37 is largely a picture deck — the Jones criteria, the treatment slide and the five clinical-picture slides are titles over images. What it states is below; the criteria and the drug regimens are supplied and tagged.*',
+    '*L37 is largely a picture deck. Its Jones criteria table and its treatment ladder were read off the slide images on 2026-08-15 and are now SOURCED, not supplied.*',
     '',
     '### The susceptible patient',
     '**Printed NINE TIMES on consecutive slides — the lecturer’s own emphasis, not nine facts.**',
@@ -891,19 +1094,24 @@ var THEORY_PEDS_CARDIAC = {
     '- **Acute illness: fever · body pains · pallor · rashes · raised ESR.**',
     '- **Polyarthritis · carditis · chorea · rash · subcutaneous nodules.**',
     '',
-    '### The Jones criteria (Dr Duckett Jones)',
-    '*Named on the deck and printed as an image; the content below is not in course material.*',
+    '### The Jones criteria (Dr Duckett Jones) — the 1992 update, AHA and WHO',
     '',
-    '|Major (5)|Minor|',
+    '|Major manifestations (5)|Minor manifestations (5)|',
     '|---|---|',
-    '|**Carditis · Polyarthritis, migratory, large joints · Sydenham chorea · Erythema marginatum · Subcutaneous nodules**|**fever · arthralgia · raised ESR or CRP · PROLONGED PR INTERVAL on ECG**|',
+    '|**1 Carditis**|**1 Clinical findings**|',
+    '|**2 Polyarthritis**|**2 Arthralgia**|',
+    '|**3 Chorea**|**3 Fever**|',
+    '|**4 Erythema marginatum**|**4 Laboratory findings** — **elevated acute-phase reactants, ESR, C-reactive protein**|',
+    '|**5 Subcutaneous nodules**|**5 PROLONGED PR INTERVAL**|',
     '',
-    '**2 major, or 1 major + 2 minor, PLUS evidence of a preceding group A streptococcal infection.**',
+    '**2 major, or 1 major + 2 minor, PLUS evidence of a preceding group A streptococcal infection** *(the counting rule itself is not printed on the slide)*.',
+    '',
+    '*What the deck’s photographs show: the rash is ANNULAR with serpiginous ring margins on the trunk; the nodules are firm and painless over extensor surfaces and the spine; the carditis slide pairs an oedematous infant with cardiomegaly on CXR, an echo and an ECG.*',
     '',
     '### Proving the streptococcus',
     '- **Throat swab.**',
     '- **ASO test — a high anti-streptolysin O antibody titre.** Streptolysin O is the streptococcal antigen; the host makes anti-streptolysin O against it.',
-    '- *The titre rises then falls over months, so one value is a snapshot.*',
+    '- **The titre is a CURVE, not a value:** the deck plots it rising from the GAS infection at month 0 to a **peak near 800–900 units**, then falling back **over roughly 12 months** — so a single reading dates the infection only loosely, and a rising pair is worth more than a high one.',
     '',
     '### Recurrence, RHD and prophylaxis',
     '- **Recurrence follows a NEW group A streptococcal throat infection** — which is what secondary prophylaxis prevents.',
@@ -917,9 +1125,18 @@ var THEORY_PEDS_CARDIAC = {
     '|**Moderate RHD**|**life-long, plus long-term medications**|',
     '|**Severe RHD**|**surgical valve repair or replacement**|',
     '',
-    '- **Acute treatment** *(not in course material — the treatment slide is an image)*: **penicillin to eradicate the streptococcus · aspirin or NSAIDs for the arthritis · corticosteroids for severe carditis · bed rest**. **Secondary prophylaxis is intramuscular benzathine penicillin G every 3 to 4 weeks**, oral penicillin V if injection is refused.',
+    '### ⚠️ Treatment follows the STAGE, and each stage has its own duration',
     '',
-    'Src: L37 slides 7–37; the Jones table, the acute regimen and the benzathine schedule are not in course material'
+    '|Stage|Treatment|Duration|',
+    '|---|---|---|',
+    '|**Streptococcal infection**|**oral antibiotic**|**10 days**|',
+    '|**Rheumatic fever**|**anti-inflammatory**|**2–4 weeks**|',
+    '|**Rheumatic heart disease**|**LONG-ACTING PENICILLIN**|**5–20 years**|',
+    '',
+    '- **Which anti-inflammatory** *(agents not in course material)*: **aspirin or NSAIDs for the arthritis · corticosteroids for severe carditis · bed rest**.',
+    '- **Which long-acting penicillin** *(the interval is not in course material)*: **intramuscular benzathine penicillin G every 3 to 4 weeks**, oral penicillin V if injection is refused. The **5–20 year** span is the deck’s own, and the severity table above is how it is decided.',
+    '',
+    'Src: L37 slides 7–37 (slides 23, 27 and 35 by visual read 2026-08-15); only the Jones counting rule, the named anti-inflammatory agents and the benzathine interval remain outside the course material'
   ].join('\n'),
   qs: []
 }

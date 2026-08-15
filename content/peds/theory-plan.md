@@ -169,6 +169,29 @@ stay legible at 760 px per slide). For a `.pptx`, convert first with PowerPoint 
 read-only and exporting to the scratchpad** — `Semester 8\` is never written to. **⚠️ Use a FRESH COM
 instance per file:** one bad deck (`14) Puberty`) crashed the session and cascaded twelve failures.
 
+> **⚠️⚠️ TRIAGE BEFORE RENDERING — READ THE BLANK PAGES' TITLES FIRST.** Discovered on the `cardiac`
+> patch, which read ~130 blank slides to find that **the value sat in about a dozen.** Split the deck
+> on the form feed and print the titles of the blank pages. A title promising a **criterion,
+> classification, investigation list, table or algorithm** is worth rendering; a run of
+> *"ECHO" / "CATH" / "treatment (Stenting)"* or rhythm-strip titles is procedural photography and is
+> not. One command, and it roughly halves the reading.
+
+> **⚠️⚠️ THE CACHED `.txt` FOR A `.pptx` DECK CAN BE INCOMPLETE — THE XML PASS AND THE PDF RENDER
+> CAPTURE DIFFERENT TEXT, AND NEITHER IS A SUPERSET.** Found when the `cardiac` patch traced a
+> rheumatic-fever regimen that `pdftotext -layout` reads cleanly off the converted deck and that is
+> simply **absent from `37)RF.txt`**. Measured across all 14 converted decks:
+>
+> | Deck | PDF-only vocabulary | Verdict |
+> |---|---:|---|
+> | **`14) Puberty`** | **33 %** | **REAL AND LARGE — `tanner`, `thelarche`, `menarche`, `gonadarche` all ZERO in the cache.** ✅ Cache repaired 2026-08-15: the PDF extraction is appended under a `SUPPLEMENTARY EXTRACTION` banner, 1,068 → 2,694 words. Both passes kept. |
+> | `37)RF` | 8 % | Real but small — the treatment ladder. ✅ Recovered by the cardiac patch. |
+> | `36)Myocardial diseases` | 0 % | **Opposite direction — the cache holds 195 words the PDF does not.** The XML pass won here. |
+> | the other 11 | 0–3 % | Noise: PDF hyphenation artefacts (`peek-a-`, `mycoplasm`, `impairme`), not content. |
+>
+> **So this is bounded, not systemic** — one deck badly affected, one mildly, and it is now fixed.
+> But **check any `.pptx` deck's cache against `pdftotext -layout` of the converted PDF before
+> writing its chapter**, and never assume the cache is the whole deck.
+
 **Blank-slide share by chapter, all decks pooled** — read this before writing:
 
 | ≥30 % | | 20–30 % | | <20 % | |

@@ -281,3 +281,425 @@ resentation in girls:
 --- slide 48 ---
 I
 nvestigations 
+
+
+============================================================================
+SUPPLEMENTARY EXTRACTION - added 2026-08-15 by the hub.
+The block above was built by reading the .pptx slide XML, which MISSED much of
+this deck: tanner, thelarche, menarche and gonadarche all return ZERO hits in
+it while appearing 1-6 times below. What follows is pdftotext -layout over the
+same deck converted to PDF through PowerPoint - 1,459 words against the XML
+pass 1,064. NEITHER EXTRACTION IS A SUPERSET OF THE OTHER, so both are kept.
+Prefer this block on pubertal staging; prefer the one above where a line here
+is broken by PDF hyphenation. The source deck in Semester 8 is unchanged.
+============================================================================
+
+     Puberty
+
+By
+
+Shaymaa Raafat Elsayed
+Assistant professor of Pediatrics
+Endocrinology and Diabetology Unit
+Pediatric Department- Alexandria University
+Introduction
+
+
+
+
+                       In the last two
+  A well defined
+                     decades, girls enter
+   sequence of
+                        puberty at an
+changes in stages.
+                      earlier mean age.
+Age of onset of puberty
+
+
+
+      Female              Male
+
+        8- 13 yrs         9-14 yrs
+          GnRH pulsatile secretion during human
+Ten weeks
+    of                   lifespan
+gestation
+
+
+
+
+                                  Down
+                              regulation of
+            Mini-puberty        secretion
+                • One to 3 years before
+                  the onset of clinically
+                  evident puberty:
+Physiology of    LH during sleep become
+                demonstrable in a pulsatile
+     puberty    fashion and reflects
+                episodic discharge of
+                hypothalamic
+                gonadotropin-releasing
+                hormone(GnRH).
+Physiology of puberty
+
+
+
+
+                               Then in mid puberty appear
+   Nocturnal pulses of LH
+                                during daytime every 90-
+   continue to increase in
+                                 120 min interval  as
+amplitude and frequency as
+                                 menarche approaches,
+clinical puberty approaches.
+                                 pulses are all the time.
+ Gonadotropins
+
+
+
+
+Responsible for                     appearance of
+                   secretion of
+ maturation of                    secondary sexual
+                  sex hormones
+   gonads                             characters
+    Two physiologic process responsible for
+              pubertal changes
+
+             • Onset of gonadal activity due to maturation of HPG axis
+Gonadarche   • Gonadarche and adrenarche not associated
+
+
+
+
+             • Maturational increase in adrenal androgen secretion
+
+Adrenarche   • Increase of DHEA, DHEA-S
+             • At age: 6-8 yrs and not decisive in initiation of puberty
+             • Responsible for pubic and axillary hair, adult body odor
+Pubertal growth spurt
+• Mediated by GONADAL STEROIDS (testosterone and estradiol)
+• Estrogen more than androgens.
+• Add 15% to final adult height
+• Sex steroids cause fusion of epiphyseal growth plates and cessation of
+  growth
+                                               Bone growth and
+                        Direct effect              osseous
+                                                 maturation
+   Estrogen
+                           Indirect            Increase growth
+                                                   hormone
+                            effect                production
+Female
+                                           2-2.5 yrs
+                 6-12 mo
+thelarche                  pubarche                    menarche
+  • Breast bud               • Appearance                • Onset of
+  • First sign                 of pubic hair               menstrual
+                               with                        activity
+                               acceleration              • Growth
+                               of growth                   coming to
+                                                           end (5 cm
+                                                           only after
+                                                           menarche)
+Male
+    Growth of
+  testes(>4ml in                                    Pubarche
+                       Thinning of scrotum
+volume/ 2.5 cm in                               Pubic hair growth
+diameter) first sign
+
+
+
+
+                          Acceleration of
+                                               Growth of penis and
+                        height growth when
+                                                 pigmentation of
+                       testicular volume 12-
+                                                    scrotum
+                               15 ml
+Notes
+
+
+
+
+ Growth spurt in      Development of
+ boys occurs later   acne, axillary hair,
+  than girls with     body odour, and
+greater magnitude      mood changes.
+Assessment of secondary sexual characters
+
+
+
+                          By Marshall &
+                          Tanner staging
+
+
+
+
+           Boys are rated for        Girls are rated for
+                genital             breast development
+           development and             and pubic hair
+           pubic hair growth               growth
+• Stage I (Preadolescent) no pubic hair
+• Stage II - Sparse, long, pigmented hair, which is
+straight or only slightly curled, seen mainly along
+the labia.
+• Stage III - darker, coarser, and curlier sexual hair
+appears. The hair has now spread sparsely over the
+junction of the pubes.
+• Stage IV - The hair distribution is adult in type but
+decreased in total quantity. There is no spread to
+the medial surface of the thighs.
+• Stage V - Hair is adult in quantity and type and
+appears to have an inverse triangle of the classically
+feminine type. There is spread to the medial surface
+of the thighs.
+IN MALES
+
+
+• Stage I (Preadolescent) -no androgen-sensitive pubic hair.
+• Stage II - There is sparse development of long pigmented hair, which is only slightly curled or straight at
+  the base of penis.
+• Stage III - The pubic hair is considerably darker, coarser, and curlier. The distribution is now spread over
+  the junction of the pubes
+• Stage IV - The hair distribution is now adult in type but still is considerably less that seen in adults. There is
+  no spread to the medial surface of the thighs.
+• Stage V - Hair distribution is adult in quantity and type and is described in the inverse triangle. There can
+  be spread to the medial surface of the thighs.
+The stages for male genitalia development
+
+• Stage I (Preadolescent)
+• Stage II - There is enlargement of the scrotum and
+  testes and thinning and redness of the scrotal skin.
+• Stage III - Further growth of the penis has occurred,
+  initially in length, although with some increase in
+  circumference. There also is increased growth of the
+  testes and scrotum.
+• Stage IV - The penis is significantly enlarged in length
+  and circumference, with further development of the
+  glans penis. The testes and scrotum continue to
+  enlarge, and there is distinct darkening of the scrotal
+  skin
+• Stage V - The genitalia are adult with regard to size and
+  shape.
+Testicular volume measured by orchidometer
+early puberty
+Definition
+
+
+
+
+ the onset of secondary
+  sexual characteristics     Menarche before 10
+  before the age of 8 yr            yrs
+in girls and 9 yr in boys.
+  Impact of precocious puberty
+
+
+
+
+Short stature: tall    Psychological      Risk of the
+  as a child and      and behavioral   underlying cause
+short as an adult        problem        as CNS tumors
+  Patterns of premature sexual development:
+
+
+
+
+   Premature
+                      Premature                                Gonadotropin
+   Thelarche:                          Isolated premature
+                   Adrenarche: pubic                            dependent
+premature breast                            menarche
+                   hair development                         precocious puberty
+  development
+Benign incomplete variants
+
+
+
+                            isolated breast development    Age: 1st 2 yr of life mostly ,
+  Premature thelarche:
+                              rarely EXCEED TANNER 3          sometimes at birth.
+
+
+
+
+                                                          It is differentiated from
+  It may be unilateral or     Growth and osseous          precocious puberty by:
+  asymmetric and often       maturation are normal or     • Absence of other features of
+   fluctuates in degree.        slightly advanced.          puberty
+                                                          • No significant acceleration of
+                                                            growth
+High maternal level of prolactin can
+cause neoborn babies to be born with
+breast buds and even to lactate (self-
+limited)
+               • the appearance of sexual hair before the age of 8
+                 yr in girls or 9 yr in boys without other evidence
+                 of maturation or growth acceleration.
+2. Premature   • more frequent in girls than in boys.
+ adrenarche/   • Etiology : sensitivity to androgen production by
+                 adrenal gland (6-8 yrs)
+    pubarche   • There may be a slight increase of growth rate and
+                 bone age
+               • Self-limited
+               • Girls have higher risk for polycystic ovarian
+                 syndrome later on
+• Atypical premature adrenarche: 1 or more
+  features of systemic androgen effect, such as :
+1. marked growth acceleration,
+2. clitoral (girls) or phallic (boys) enlargement,
+3. cystic acne
+4. advanced bone age (>2 SD above the mean for
+    age).
+• Need to test adrenal hormones : ACTH
+  STIMULATION TEST to exclude CAH
+Precocious puberty
+    Classification
+
+
+   Central/ true/gonadotropin            Peripheral/ pseudo/
+           dependent                  gonadotropin independent
+• isosexual                        • Isosexual/ heterosexual
+• Due to stimulation of HPG axis   • By effect of sex steroids from
+• Normal sequence of pubertal        gonads or adrenals
+  development (consonant)          • Abnormal sequence of pubertal
+                                     development (dissonant)
+Central precocious puberty
+
+
+• a result of the early activation of the hypothalamic-pituitary-gonadal axis.
+• It occurs 5-10 folds more frequently in girls than in boys because ovaries
+  are very sensitive to gonadotrophin secretion
+• A high prevalence of idiopathic central precocious puberty has been
+  reported in girls (90%)
+• structural central nervous system (CNS) abnormality can be demonstrated
+  in up to 75% of boys with central precocious puberty.
+• follows the sequence observed in normal puberty.
+   Etiology
+
+
+
+
+Prolonged untreated hypothyroidism
+                 • Sexual development follows the sequence of
+                   normal puberty
+                 • Brain tumors:
+      Clinical   1. The only sign is precocious puberty
+presentation     2. Neurological manifestations
+of central PP    3. Neuroendocrine manifestations as diabetes
+                     insipidus, hyperthermia, unnatural crying or
+                     laughing (gelastic seizures), obesity, and
+                     cachexia
+                 4. Visual manifestations as visual field defect,
+                     proptosis, decreased visual acuity
+                 Gonadotrophin-dependent PP: bilateral
+                 enlargement of testes greater than or
+    Testicular   equal to 4 ml
+ examination
+in precocious    Gonadotrophin-independent PP:
+      puberty    Prepubertal testicular size
+
+
+
+                 Gonadal tumor : unilateral enlarged testis
+                 • Imaging:
+                  Ultrasound examination of the ovaries and uterus
+                 helps us to assess the progress of puberty.
+                 Uterus:
+                 1. Infantile : tubular
+Investigations   2. Pubertal: pear-shaped
+                 3. Endometrial lining identification
+                 • MRI brain with contrast for pituitary gland in
+                   gonadotropin-dependent PP
+             Treatment of underlying pathology
+
+             Gonadotrophin releasing hormones analogues for
+             GDPP
+
+             Reducing the rate of skeletal maturation
+Management
+             Delaying the onset of menarche in girls
+
+
+             Addressing psychological/behavioral difficulties
+Delayed
+puberty
+Definition   Failure of development of any pubertal
+             feature by 13 yrs of age in females or by
+             14 yrs of age in males.
+Etiology   Constitutional delay: normal
+           variant (the commonest)
+
+
+           Hypogonadotropic
+           hypogonadism: low
+           gonadotrphins secretion
+
+           Hypergonadotropic
+           hypogonadism: high
+           gonadotrophin secretion
+Constitution
+al delay
+               The most common cause
+
+               First-degree relative with delayed puberty or short stature
+
+               Height at or below the third centile
+
+               Normal birth weight and length
+
+               Delayed bone age
+
+               Normal final adult height
+
+               Need no treatment
+Hypogonadotropic hypogonadism
+
+• Systemic disorders:
+  as any chronic illness
+• Acquired hypothyroidism
+• Hypothalamic pituitary disorder:
+  may be isolated or part of panhypopituitarism (tumor/
+radiation)
+  kallman syndrome associated with absent sense of smell
+                 Chromosomal abnormalities as Turner
+                 syndrome/ Klinefelter syndrome
+
+Hypergonadotro
+           pic
+ hypogonadism    Acquired gonadal damage:
+
+
+                 after surgery, chemotherapy,
+                 radiotherapy, trauma, tortion,
+                 autoimmune disorder
+               Commoner in boys due to relative
+               insensitivity of the testes to
+               gonadotrophins
+Presentatio
+  n in boys:   Induction of puberty after 14 years of
+               age by low dose intra-muscular
+               testosterone injections for acceleration
+               of growth and secondary sexual
+               characteristics
+Presentatio
+                                               Induction of puberty after 13
+                 Less common due to the         years of age by estrogen for
+
+  n in girls:
+                 relative sensitivity of the     acceleration of growth and
+                ovaries to gonadotrophins             secondary sexual
+                                                       characteristics
+                Karyotype
+
+Investigation   Thyroid function
+            s   Pituitary hormones and sex steroids
+
+                MRI brain if needed
+
