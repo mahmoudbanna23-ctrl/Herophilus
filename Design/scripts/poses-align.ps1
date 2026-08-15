@@ -18,7 +18,7 @@ $ErrorActionPreference = "Stop"
 Add-Type -AssemblyName System.Drawing
 
 if (-not $global:CUT) { throw "run poses.ps1 first - `$global:CUT is empty" }
-$dstDir = "D:\claude os\Herophilus\app\assets\clep"
+$dstDir = "D:\claude os\Medical school\Herophilus\app\assets\clep"
 if (-not (Test-Path $dstDir)) { New-Item -ItemType Directory -Path $dstDir | Out-Null }
 
 function Get-Bounds {

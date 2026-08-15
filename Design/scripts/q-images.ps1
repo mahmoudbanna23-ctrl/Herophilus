@@ -14,7 +14,7 @@
 param(
   [Parameter(Mandatory=$true)][int[]]$Pages,
   [Parameter(Mandatory=$true)][string]$Pdf,
-  [string]$OutDir  = "D:\claude os\Herophilus\app\assets\q",
+  [string]$OutDir  = "D:\claude os\Medical school\Herophilus\app\assets\q",
   [string]$Work    = $env:TEMP,
   [int]$Dpi        = 300,
   [int]$MaxEdge    = 560,

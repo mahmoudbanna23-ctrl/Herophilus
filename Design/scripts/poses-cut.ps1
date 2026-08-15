@@ -14,8 +14,8 @@ param([int]$TOL = 6, [int]$ERODE = 2, [int]$OUT = 440)
 $ErrorActionPreference = "Stop"
 Add-Type -AssemblyName System.Drawing
 
-$srcDir = "D:\claude os\Herophilus\Clypsedra"
-$dstDir = "D:\claude os\Herophilus\app\assets\clep"
+$srcDir = "D:\claude os\Medical school\Herophilus\Clypsedra"
+$dstDir = "D:\claude os\Medical school\Herophilus\app\assets\clep"
 if (-not (Test-Path $dstDir)) { New-Item -ItemType Directory -Path $dstDir | Out-Null }
 
 function Cut-Background {

@@ -278,7 +278,7 @@ question, hold both**. Same options + same key + **different stem** = **not a fo
 ## 7. Validating a batch — run this after every splice
 
 ```bash
-cd "D:/claude os/Herophilus" && node -e "
+cd "D:/claude os/Medical school/Herophilus" && node -e "
 const fs=require('fs'),vm=require('vm');
 const c={window:{},console};c.window=c;vm.createContext(c);
 for(const f of ['questions.ent.js','questions.peds.js','questions.ophtho.js','questions.neuro.js',
@@ -444,7 +444,7 @@ it silently (proven five times in ENT).
   no rate-limit stalls**, and drop to 1 after any stall or collision.
 - **Prompt template** (keep it lean — the subagent reads the briefs from disk, do not inline them):
 
-> Read `D:\claude os\Herophilus\progress\briefs\START-HERE.md` (especially §2–§6 and §10) and
+> Read `D:\claude os\Medical school\Herophilus\progress\briefs\START-HERE.md` (especially §2–§6 and §10) and
 > `progress\briefs\<module>.md`, then follow them exactly. You are drafting ONE topic:
 > **<bank name>, topic <n> "<title>"**, questions book pp.X–Y, answers p.Z
 > (**PDF page = book page + <k>**), ids `<prefix>-<n>` onward. Method: render the range **plus one

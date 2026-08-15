@@ -7,7 +7,9 @@ and digital study material in `Semester 8\`.
 Named after Herophilus of Alexandria, who performed the first systematic human dissections there
 around 300 BC.
 
-These rules apply to everything inside `D:\claude os\Herophilus`. Workspace-wide rules live in
+These rules apply to everything inside `D:\claude os\Medical school\Herophilus` — **the project moved
+under `Medical school\` on 2026-08-15; the old `D:\claude os\Herophilus` path no longer exists and any
+absolute path still pointing there is stale.** Workspace-wide rules live in
 `D:\claude os\CLAUDE.md` and still apply here — this file adds to them, it does not replace them.
 
 ---

@@ -103,8 +103,8 @@
     "deny": [
       "Edit(./Semester 8/**)",
       "Write(./Semester 8/**)",
-      "Edit(//D/claude os/Herophilus/Semester 8/**)",
-      "Write(//D/claude os/Herophilus/Semester 8/**)",
+      "Edit(//D/claude os/Medical school/Herophilus/Semester 8/**)",
+      "Write(//D/claude os/Medical school/Herophilus/Semester 8/**)",
 
       "Bash(rm -rf *)",
       "Bash(rm -fr *)",
