@@ -238,14 +238,37 @@ real time, and the user's Ophthalmology exam is **27 September**.
 
 ---
 
+## ⚠️ `L37) Red Eye.pdf` IS NOT A LECTURE — it is a BOOK CHAPTER
+
+Found 2026-08-16 while chasing a clipping candidate. The file is **"CHAPTER 4 — The Red Eye"**,
+opening with an **OBJECTIVES** box and a *Relevance* section, running as continuous prose with
+**twenty sequential `FIGURE 4-n` plates**. It is the **only one of the 27 files** with that
+numbering — every real slide deck returns zero.
+
+- **`op-red` must cite it as a book chapter, not as a lecture.** Same situation as paediatrics'
+  `Vitamin deficiency Rickets.pdf`, which turned out to be Madkour's Chapter 3.
+- It is also **the densest source in the module at 154 w/pp**, and that is *why* — book prose, not
+  slide bullets. Its 5,104 words make `op-red` the largest naive ceiling in Ophthalmology, so the
+  chapter will need real compression to reach the ~13-page shape.
+- **The book it came from is not identified.** The style (a primary-care audience, objectives,
+  *Relevance*) reads like an AAO-family primer, but nothing in the file names it — **ask rather than
+  guess** if a precise citation is ever needed.
+
+---
+
 ## Cross-checks owed before writing starts
 
-- **Check every `.pptx` cache against `pdftotext -layout`.** `L5) Eyelid disease` and
-  `L6) Conjunctiva` are the module's only `.pptx` files, and in paediatrics the XML pass and the PDF
-  render captured **different** text with neither a superset — `14) Puberty` was 33 % PDF-only.
-  Neither has been checked here.
-- **Run the MediaBox-clipping scan** (`<scratch>\clip-scan.js`). `pdftotext` honours the MediaBox and
-  drops overflowing text silently, mid-sentence; the cache-completeness check cannot see it because
-  both sides of that diff are pdftotext. It found 2 real cases in 2,874 paediatric pages.
+- **✅ MediaBox clipping — CLEAN NEGATIVE, done 2026-08-16** (`<scratch>\clip-oph.js`).
+  **1,192 pages across all 27 PDFs; one candidate, and it was not clipping.** `L37) Red Eye` p.10
+  ends on *"…are common as well as"*, but the **rendered page ends there too** and the sentence
+  resumes with *"photophobia."* at the top of p.11 — because it is a book page, not a slide.
+  **Zero real cases in the module. Do not re-run this.**
+- **⚠️ The `.pptx` cache check is MOOT for `L5` and `L6`, and running it would be a false comfort.**
+  In paediatrics the XML pass and the PDF render captured different text with neither a superset, so
+  the check earned its place. Here both decks carry **5–8 words a slide**: whichever extractor wins,
+  the answer is nearly nothing, and a passing check would only certify that a complete transcription
+  of an almost-wordless deck is complete. **These two need a visual read, not a diff** — the same
+  conclusion the emergencies agent reached in paediatrics, where both cache checks passed on the two
+  most image-dependent decks in that module.
 - **`examiner-patterns.md` does not exist for this module and must not be manufactured** from 138
   questions. ENT's was built from 1,720.
