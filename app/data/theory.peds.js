@@ -4003,5 +4003,166 @@ var T_PEDS = {
         "qs": []
       }
     ]
+  },
+  "dev-problems": {
+    "intro": "What to do once development is outside the normal range. Delay against disability, global delay and its causes, the investigation panel, intellectual subnormality with its adaptive-skill criterion and severity grades, and early intervention.",
+    "sections": [
+      {
+        "id": "dp-1",
+        "w": "must",
+        "h": "What a developmental problem is, and when each kind declares itself",
+        "body": "### The two words the lecture separates\n- **Developmental problem:** any child whose development is **delayed or disordered**, leaving a **difference from peers that WIDENS as the child gets older**.\n- **DELAY — slow acquisition:** the skills come in the right order, but late. **Global** = all skills; **specific** = one particular field or area of skill.\n- **DISORDER — maldevelopment of a skill:** the skill itself is built wrong, not merely late.\n\n*The deck plots this: the slow developer’s line diverges from the median year on year, so the same child looks more abnormal at eight than at two.*\n\n### When each kind presents — a problem shows up while its own field is growing fastest\n- **Motor problems:** during the **first 18 months of age**.\n- **Speech and language problems:** between **18 months and 3 years**.\n- **Social and communication disorders:** between **2 and 4 years of age**.\n\n### Aetiology of abnormal development\n- **Three headings:** **neurodevelopmental disorders** · **chronic ill health** · **the child’s physical or psychological needs not being met**.\n- **Timing:** **prenatal, perinatal or postnatal** — and the **aetiology may be unknown**.\n\n### One delayed field drags the others\n- **The principle:** a delay or disorder in **any one skill area affects the other areas**.\n- **The worked example:** **hearing impairment** damages **social, emotional and behavioural** development as well as **speech and language**.\n- **Neglect and child abuse:** can affect a child **at any age**, but have **particularly profound impacts on ALL developmental domains in young children**.\n- **Why it compounds:** as a child grows, **attention and concentration** matter too, and must be **integrated** with the rest.\n\nSrc: L2 pp.4–6; L2p pp.3–4",
+        "qs": []
+      },
+      {
+        "id": "dp-2",
+        "w": "must",
+        "h": "Global developmental delay — and where it comes from",
+        "body": "### The definition, in one line\n- **GDD:** **significant delay in TWO or more of the five developmental skills** — cognitive, language, gross motor, fine motor, social — **up to age 5**.\n\n*The five domains, median versus limit age and the red flags that raise the suspicion are in `normal-dev`. This chapter starts once the suspicion is raised.*\n\n### Aetiology — a cause is found in only about half\n- **Yield:** aetiology is identified in **~40–60 % of cases**, and is **often multifactorial**.\n- **Idiopathic:** **up to 50 % have no clear cause despite investigation.**\n- **Of the causes that ARE found:** **genetic factors account for up to ~50 %.**\n\n### Prenatal — the commonest group, and it is genetic or structural\n- **Genetic / chromosomal:** **Down syndrome (trisomy 21)** · **Fragile X** · other **copy-number variants** · single-gene disorders such as **Rett syndrome**.\n- **Structural and acquired in utero:** **brain malformations** · **congenital infections (TORCH)** · **teratogens — alcohol, drugs, medications**.\n\n### Perinatal — three\n- **Prematurity.**\n- **Birth asphyxia — hypoxic-ischaemic encephalopathy.**\n- **Low birth weight.**\n\n### Postnatal\n- **Infection:** **meningitis** and **encephalitis**.\n- **Trauma:** **including non-accidental injury**.\n- **Metabolic:** **phenylketonuria** and **hypothyroidism** — the two that are treatable if caught.\n\n*Down syndrome and Fragile X in full in `genetics`; HIE in `perinatal-hie`; congenital hypothyroidism in `endo-thyroid`.*\n\nSrc: L1 pp.35–37 (deck borrowed from `normal-dev`; pp.36–37 image-only)",
+        "qs": []
+      },
+      {
+        "id": "dp-3",
+        "w": "must",
+        "h": "Intellectual subnormality — three limbs, ten skills, four grades",
+        "body": "### ⚠️ The definition has THREE limbs and all three must be met\n\n|Limb|Requirement|\n|---|---|\n|**1 Intellect**|**Subnormal intellectual function with an IQ of 70 or LESS**|\n|**2 Function**|**Limitation in 2 or more of 10 adaptive skills**|\n|**3 Onset**|**Onset of impairment BEFORE age 18 years**|\n\n*A low IQ on its own is not intellectual disability. The adaptive-skill limb and the age limb are what a stem drops to make itself wrong.*\n\n### The ten adaptive skills — two or more must be limited\n- **Self care** · **safety** · **social skills** · **communication** · **use of community resources**.\n- **Home living** · **academic achievement** · **work** · **leisure** · **self direction**.\n\n### Severity, graded by IQ alone\n\n|Grade|IQ|\n|---|---|\n|**Mild**|**<70 – 50**|\n|**Moderate**|**<50 – 35**|\n|**Severe**|**<35 – 20**|\n|**Profound**|**<20**|\n\n### The measurement, and why it is not the whole answer\n- **The formula:** **IQ = (mental age ÷ chronological age) × 100.**\n- **The instruments:** the **WISC** or **Stanford–Binet**, assessing cognitive development against chronological age.\n- **⚠️ Culture and language:** IQ tests **may be affected by cultural background and linguistic skills**.\n- **Coverage:** they **do NOT test all skill areas**.\n- **Prediction:** they **do not necessarily reflect** a child’s **ultimate outcome**.\n- **Disability:** they **may be compromised by a specific disability** such as **cerebral palsy**.\n\n*The normal band (90–110) and the borderline 71–<90 \"slow learner\" band are in `normal-dev`; this chapter picks up at 70 and below.*\n\nSrc: L1 pp.38–43 (borrowed; p38 image-only); L2p p5",
+        "qs": []
+      },
+      {
+        "id": "dp-4",
+        "w": "high",
+        "h": "The six intellectual disabilities the lecture diagnoses from the face",
+        "body": "### The lecture’s own closed set of six — \"Cases of MR diagnosed by Face\"\n\n|#|Condition|What the photograph shows|\n|---|---|---|\n|**1**|**Down syndrome**|**Upslanting palpebral fissures · flat facial profile and nasal bridge · protruding tongue · small low-set ears**|\n|**2**|**Microcephaly**|**A vault disproportionately small for the face**, sloping forehead, normally sized facial features|\n|**3**|**Congenital hypothyroidism**|**Coarse puffy facies · large protruding tongue · depressed nasal bridge · periorbital puffiness**|\n|**4**|**Phenylketonuria**|**FAIR HAIR, PALE SKIN AND BLUE EYES IN A DARK-COMPLEXIONED FAMILY** — the deck prints two children captioned exactly that|\n|**5**|**Severe hydrocephalus**|**Grossly enlarged cranium with dilated scalp veins** and a **small face beneath a huge vault**|\n|**6**|**Total craniostenosis**|**A small, abnormally shaped skull** from **premature fusion of all sutures**, with shallow orbits|\n\n*⚠️ These eight slides are photographs carrying a yellow caption and no other text, so the six NAMES are sourced and the facial descriptions are supplied (not taken from the course material).*\n\n*The PKU pair is the one the lecturer teaches from, and the caption says \"in dark family\" on both: the hypopigmentation is only obvious against the family’s own colouring.*\n\n### The two that are treatable\n- **Two are TREATABLE if caught early:** **congenital hypothyroidism** and **phenylketonuria** — which is why both sit on the newborn screen and in the delay work-up.\n\n*Down syndrome in full in `genetics`; congenital hypothyroidism and its screening programme in `endo-thyroid`; PKU as a postnatal metabolic cause of delay in dp-2.*\n\nSrc: L1 pp.44–51 (borrowed; photographs with captions only)",
+        "qs": []
+      },
+      {
+        "id": "dp-5",
+        "w": "must",
+        "h": "Investigating the child with global delay",
+        "body": "### Who gets screened in the first place\n- **All young children**, and **especially any child with a risk factor**.\n\n### The panel — eight investigations\n\n|Test|What it is looking for|\n|---|---|\n|**Brain MRI**|**Structural malformation, an old insult, white-matter disease**|\n|**Gene study**|**Single-gene disorders**|\n|**Chromosomal study**|**Aneuploidy and copy-number variants**|\n|**Hearing assessment — ABR**|**Deafness, a treatable cause of language delay**|\n|**Fundus / VEP / retinogram**|**Retinal and visual-pathway disease**|\n|**Thyroid function / PKU metabolic screen**|**The two treatable metabolic causes**|\n|**Autism screening tests**|**ASD as the diagnosis, rather than global delay**|\n|**EEG**|**Seizures and epileptic encephalopathy**|\n\n*The slide prints the eight test names inside a graphic and gives no indications; the second column is supplied (not taken from the course material).*\n\nSrc: L1 pp.34, 54 (borrowed; p54 image-only)",
+        "qs": []
+      },
+      {
+        "id": "dp-6",
+        "w": "must",
+        "h": "Early Augmented Intervention Programs",
+        "body": "### Timing is most of the prognosis\n- **As early as possible.**\n- **Best before 2–3 years — the critical period.**\n- **Less benefit from 3–5 years**, and the aim is to act **before intellectual disability is established**.\n- **Frequency:** **repeated sessions — daily, or at least 3 per week.**\n\n### The five kinds of session\n- **Cognitive sessions.**\n- **Language sessions.**\n- **Gross motor sessions.**\n- **Fine motor — occupational sessions.**\n- **Social and communication** — behaviour-modification sessions.\n\n*The slide’s own frequency clause is garbled (\"at least 43 days /week\"); its second bullet prints the intended rule, daily or at least 3 a week.*\n\nSrc: L1 pp.55–56 (borrowed)",
+        "qs": []
+      },
+      {
+        "id": "dp-7",
+        "w": "must",
+        "h": "Developmental screening — the ages, the focus, and the tools",
+        "body": "### The schedule\n- **A standardized screening instrument** is recommended at the **periodic health maintenance examinations** in primary care at **9, 18, 24 or 30 months of age**.\n- **Screening runs across all streams**, but **each visit has its own focus**.\n- **⚠️ Autism-specific screening** is recommended in addition at the **18- and 24-month visits**.\n\n### What each visit looks at, and what it is trying to catch\n\n|Visit|Focus area|Identified concerns|\n|---|---|---|\n|**9 months**|**Vision · hearing · gross and fine motor · receptive language**|**Hearing deficit · vision deficit · neuromotor problem**|\n|**18 months**|**Expressive language · receptive language**|**Hearing and vision deficits · AUTISM · language problem · cognitive deficits**|\n|**30 months**|**Behavioral interactions**|**Attention problems · disruptive behaviors**|\n\n*The prose says \"9, 18, 24 or 30 months\" and the table it sits beside has rows for 9, 18 and 30 only. The autism deck writes the same list as \"9 months, 18 months, 24 or 30 months\". Both are printed; neither is reconciled.*\n\n### The standardized tools, by category\n\n|Category|Tool|\n|---|---|\n|**General developmental**|**ASQ-3** · **PEDS** · **PEDS:DM** · **Survey of Wellbeing of Young Children (SWYC)**|\n|**General behavioral**|**ASQ:SE-2** · **BITSEA** · **Pediatric Symptom Checklist-17 (PSC-17)**|\n|**Language**|**CSBS-DP Infant Toddler Checklist**|\n|**Autism**|**M-CHAT-R/F** · **Social Communication Questionnaire (SCQ)**|\n\n*ASQ = Ages and Stages Questionnaires · PEDS = Parents’ Evaluation of Developmental Status · PEDS:DM = its Developmental Milestones version.*\n\n*BITSEA = Brief Infant Toddler Social Emotional Assessment · CSBS-DP = Communication and Symbolic Behavior Scales: Developmental Profile · M-CHAT-R/F = Modified Checklist for Autism in Toddlers, Revised with Follow-up.*\n\nSrc: L2p pp.4–5 (both tables image-only)",
+        "qs": []
+      },
+      {
+        "id": "dp-8",
+        "w": "high",
+        "h": "Hearing and vision — the two impairments screening exists to catch",
+        "body": "### Hearing\n- **In utero:** by **25–26 weeks’ gestation** a fetus **responds to noises and voice**.\n- **At birth:** the baby **startles to loud sounds** and has a **marked preference for voices**.\n- **⚠️ The dependency:** **subsequent development of speech and language requires adequate hearing** — which is why deafness presents as language delay.\n- **What early detection buys:** better **speech, language and behaviour**, and through them **educational achievement, employment prospects, mental health and participation in society**.\n- **Treatment:** **amplification — hearing aids or cochlear implants** — plus **support and advice to parents** to build effective communication and enhance learning.\n\n### Vision — three scheduled checks\n\n|When|What is done|\n|---|---|\n|**At birth**|**Structure of the eye and the RED REFLEX** — **a cataract impedes the red reflex**. Part of the **Newborn Infant Physical Examination (NIPE)**|\n|**6–8 week check**|**Red reflex for cataracts**, plus **fixing and following**. Also part of NIPE|\n|**Preschool**|**Vision screening by an orthoptist** — **visual acuity and eye alignment**|\n\nSrc: L2p pp.5–6",
+        "qs": []
+      }
+    ]
+  },
+  "dev-nd": {
+    "intro": "The two neurodevelopmental disorders the lecture gives its own divider to. Autism — the triad, screening and why every drug treats a comorbidity; then ADHD — the three presentations, the DSM counting rule, and the drug ladder in order.",
+    "sections": [
+      {
+        "id": "dp-9",
+        "w": "must",
+        "h": "Autism spectrum disorder — what it is, and how common",
+        "body": "### The entity\n- **ASD:** a **behaviour syndrome of neurological dysfunction**, usually declaring itself at **2–4 years of age**, when language and social skills normally expand fastest.\n- **The classical TRIAD:** **defect in language / communication** · **defect in socialization** · **imposition of routine and repetitive behaviour, acts or interest**. Graded **mild / moderate / severe**.\n- **⚠️ DSM-5 counts TWO areas, not three:** a **continuum of mild to severe impairment** in **(1) qualitative impairments in social communication / social interaction** and **(2) restricted and repetitive interests or behaviors**.\n- **Not explained by delay:** the impairments are **not accounted for by general developmental delay**, and they **persist into adulthood, causing chronic disability**.\n\n*Three or two is the deck’s own discrepancy, printed on one slide: DSM-5 folds \"imposition of routine\" into the restricted/repetitive domain. Both counts are examinable.*\n\n### The numbers the lecture prints\n- **Trend:** the **fastest-growing neurobiological condition in the world**.\n- **US prevalence:** **1 in 10,000 (1970s) → 1 in 500 (1999) → 1 in 150 (2000) → 1 in 88 (2008) → 1 in 68 (2014) → 1 in 44 (2021)**.\n- **Against baseline:** **241 % higher than the year-2000 figure.**\n- **Sex:** **male-to-female 4 : 1** — but **females are more likely to have associated cognitive impairment**.\n- **Siblings:** **18 % of infants with an older sibling with ASD developed ASD by 36 months.**\n- **Ability:** **40 % are nonverbal** · **44 % have average or above-average intellectual ability** · **31 % have an intellectual disability**.\n- **⚠️ Late diagnosis:** ASD **can be diagnosed before age two**, yet **most children are diagnosed only after age 4**.\n\nSrc: L2 pp.8–13 (pp.10–11 image-only, read at 250 dpi); L1 p52 (borrowed)",
+        "qs": []
+      },
+      {
+        "id": "dp-10",
+        "w": "must",
+        "h": "Why autism happens — and the DSM-5 counting rule",
+        "body": "### Aetiology\n- **Mostly genetic:** ASD is **mostly a genetic disorder of brain development**, but **nongenetic factors also contribute to the phenotype and its heterogeneity**.\n- **Three headings:** **multifactorial** · **genetic** · **environmental**.\n- **⚠️ Till now:** **NO single factor has been claimed.**\n- **The split:** **non-syndromic (idiopathic) 80 %** against **syndromic 20 %**.\n- **The final common path:** **disrupted brain synaptic connectivity and altered signaling**.\n\n### The genetic layers named on the comorbidity plate\n- **Simple genetic disorders:** **fragile X** · **tuberous sclerosis** · **Rett syndrome**.\n- **Copy-number variants:** **16p11-p12** · **15q11-q13** · **22q13**.\n- **Rare variants:** **NRXN1** · **NLGN4** · **SHANK3** · **SERT**.\n\n### ⚠️ The counting rule — three of three, and two of four\n\n|Core domain|How many|The items|\n|---|---|---|\n|**Impaired social communication / interaction**|**ALL THREE (3/3)**|**Social reciprocity · nonverbal communication · relationships**|\n|**Restricted / repetitive behavior**|**TWO OF FOUR (2/4)**|**Repetitive speech or behavior · insistence on sameness · restricted interests · sensory abnormalities**|\n\n*This grid is the centre of the plate on L2 p20 and the whole slide is one image, so the counting rule is invisible to the text extraction.*\n\nSrc: L2 pp.14–16, 20 (p20 image-only, read at 250 dpi)",
+        "qs": []
+      },
+      {
+        "id": "dp-11",
+        "w": "must",
+        "h": "The clinical picture, and the early signs at 6–12 months",
+        "body": "### The three impairment columns\n\n|Social interaction|Communication|Restricted and repetitive behavior|\n|---|---|---|\n|**Prefers own company; no interest or ability in interacting with peers** — in play or in emotions|**Deficits in NONVERBAL communicative behaviors**|**Stereotyped or repetitive speech, motor movements or use of objects**|\n|**Gaze avoidance**|**Language delay**|**Excessive adherence to routine**|\n|**Lack of joint attention**|**Idiosyncratic language**|**Highly restricted, fixated interests**|\n|**Socially and emotionally inappropriate behaviour**|**Cannot initiate or sustain a conversation**|**Hyper- or hypo-reactivity to sensory input, or unusual interest in sensory aspects of the environment**|\n\n### ⚠️ Early signs — \"what to look for in your 6-to-12-month-old child\"\n- **Is not responding to his or her name.**\n- **Poor eye contact.**\n- **By 10 months** — is not using gestures to communicate.\n- **Delayed babbling.**\n- **Delayed motor development.**\n- **Rarely smiles when approached by caregivers.**\n- **Rarely imitates sounds and movements.**\n\n*`normal-dev` carries the same warning from the other deck as an ASD RED FLAG list — no response to name by 12 months, no pointing by 18 months, no joint attention, no pretend play. The two lists agree and are worth learning side by side.*\n\nSrc: L2 pp.17, 19",
+        "qs": []
+      },
+      {
+        "id": "dp-12",
+        "w": "must",
+        "h": "Autism — comorbidities, diagnosis, screening and treatment",
+        "body": "### Comorbidities, by group\n- **Behavioural:** **hyperactivity / impulsivity** · **agitation / aggression** · **anxiety**.\n- **Cognitive:** **language impairment** · **intellectual disability**.\n- **Medical:** **seizure disorder** · **severe constipation**.\n- **Biomarkers:** **abnormal EEG** · **developmental macrocephaly** · **altered brain region size on neuroimaging** · **altered immune and mitochondrial indices** · **hyper-serotonemia**.\n\n### Diagnosis — three components\n- **Autism-specific behavioral evaluations**, formally administered.\n- **A multi-disciplinary team.**\n- **Genetic testing** — and **screening for related medical issues**.\n\n### Screening\n- **The instrument:** **questionnaires relying on parents’ and/or the physician’s observations**.\n- **The AAP recommendation:** screen for **developmental delays and disabilities** at the ages in dp-7.\n\n### Treatment — two approaches\n- **Behavioral and educational approaches** — the mainstay.\n- **Pharmacologic approaches:** **anticonvulsants** for **seizure disorder**.\n- **Psychostimulants** for **attentional difficulties** — **⚠️ but these medications are LESS EFFECTIVE in these patients** than in ADHD.\n- **Atypical antipsychotics** for **severe behavioural upset**.\n\n*Every drug on the slide treats a comorbidity rather than the core disorder — there is no drug for autism itself (not taken from the course material).*\n\nSrc: L2 pp.20–24",
+        "qs": []
+      },
+      {
+        "id": "dp-13",
+        "w": "must",
+        "h": "ADHD — the definition, the numbers, and the dopamine story",
+        "body": "### The entity\n- **ADHD:** the **most common neurodevelopmental disorder of childhood**.\n- **The definition:** **co-existence of developmentally inappropriate attentional problems AND hyperactivity with impulsivity**, with **each behaviour occurring infrequently alone**.\n- **⚠️ The caution the lecture stars:** **the mere presence of these behaviours does NOT mean the child has ADHD.**\n\n*The deck makes the point with a normal distribution and marks \"cases\" only beyond about 2 standard deviations: these are normally distributed traits, and ADHD is the tail.*\n\n### Prevalence\n- **Worldwide:** **5 % of school-aged children have ADHD**.\n- **Sex:** **boys are 3 times more than girls**.\n- **Still controversial:** prevalence is **increasing**, and **the aetiology is not fully known**.\n\n### Aetiology — six headings\n- **Genetics.**\n- **Neuro-chemical.**\n- **Structural and functional** brain abnormalities.\n- **Environmental.**\n- **Psychosocial.**\n- **Nutritional.**\n\nSrc: L2 pp.25–30 (pp.27, 30 image-only)",
+        "flow": {
+          "title": "The mechanism slide — hypofunctioning dopamine",
+          "steps": [
+            {
+              "k": "step",
+              "t": "Drugs · Genetics · Toxins",
+              "n": "the three inputs the slide names"
+            },
+            {
+              "k": "alert",
+              "t": "HYPOFUNCTIONING DOPAMINE SYSTEMS",
+              "n": "mesocortical · mesolimbic · nigrostriatal"
+            },
+            {
+              "k": "step",
+              "t": "Mesocortical → impaired executive functions"
+            },
+            {
+              "k": "step",
+              "t": "Mesolimbic → shorter delay gradient",
+              "n": "cannot wait for a delayed reward"
+            },
+            {
+              "k": "step",
+              "t": "Nigrostriatal → impaired motor control"
+            },
+            {
+              "k": "step",
+              "t": "Stimulants raise dopamine — hence effect size 1.00 in dp-17"
+            }
+          ]
+        },
+        "qs": []
+      },
+      {
+        "id": "dp-14",
+        "w": "must",
+        "h": "The three presentations, and their eighteen symptoms",
+        "body": "### The three presentations\n- **Predominantly inattentive type.**\n- **Predominantly hyperactive / impulsive type.**\n- **Combined** — the overlap of the two, drawn as the centre of the deck’s own diagram.\n\n### Inattentive presentation — nine items\n\n|#|Symptom|\n|---|---|\n|**1**|**Makes careless mistakes**|\n|**2**|**Difficulty sustaining attention**|\n|**3**|**Does not seem to listen**|\n|**4**|**Does not follow through instructions, fails to finish work**|\n|**5**|**Difficulty organizing tasks and activities**|\n|**6**|**Reluctant to engage in tasks which require sustained mental activity**|\n|**7**|**Loses equipment necessary for activities**|\n|**8**|**Distracted by extraneous stimuli**|\n|**9**|**Forgetful in daily activities**|\n\n### Hyperactive-impulsive presentation — nine items\n\n|#|Symptom|\n|---|---|\n|**1**|**Fidgets with hands or feet, or squirms in seat**|\n|**2**|**Leaves seat where remaining seated is expected**|\n|**3**|**Runs about excessively where it is inappropriate**|\n|**4**|**Difficulty in playing quietly**|\n|**5**|**Often \"on the go\", as if driven by a motor**|\n|**6**|**Talks excessively**|\n|**7**|**Blurts out answers before questions have been completed**|\n|**8**|**Has difficulty awaiting turn**|\n|**9**|**Interrupts or intrudes on others** — pushes into conversations or games|\n\n*Items 1–6 of the second list are the hyperactivity and 7–9 the impulsivity; the deck prints all nine under one heading (not taken from the course material).*\n\nSrc: L2 pp.31–33 (p31 image-only)",
+        "qs": []
+      },
+      {
+        "id": "dp-15",
+        "w": "must",
+        "h": "Making the diagnosis, and what comes with it",
+        "body": "### ⚠️ Step one — to establish the diagnosis before the age of 12 years\n- **Number:** **at least SIX symptoms**, abnormal and persistent.\n- **Duration:** continuing over **a minimum of SIX months**.\n- **Onset:** the symptoms were **present before 12 years of age**.\n- **Setting:** present in **TWO settings** — usually **school (or work, if an adult) AND home**.\n- **Impact:** **clear evidence that the symptoms interfere with, or reduce the quality of, social, academic or occupational functioning.**\n\n### Step two — comorbid disorders\n- **The rule:** the diagnosis is **not complete until comorbidity has been looked for**.\n- **Learning and cognitive:** **learning disabilities · speech and language · dysgraphia · processing speed · working memory · executive dysfunction**.\n- **Psychiatric:** **anxiety disorders · depression · OCD · bipolar disorder · substance abuse**.\n- **Neurological and other:** **tics and Tourette syndrome · developmental coordination disorder · sensory problems · sleep disorder · enuresis**.\n\n### ⚠️ What happens to most children if it is not treated\n- **Education:** **most drop out of school**.\n- **Behaviour:** **antisocial activities**, and **disruptive behaviour disorder** — **oppositional defiant disorder early in life, conduct disorder later**.\n- **Neurological:** **epilepsy**.\n- **Safety:** **more accidents**, and **they speed excessively**.\n- **Mental health:** **depression and personality disorders**.\n- **Relationships:** **difficulty with interpersonal relationships**, **emotional lability**, **low self esteem**.\n\nSrc: L2 pp.34, 36–37 (p36 image-only)",
+        "qs": []
+      },
+      {
+        "id": "dp-16",
+        "w": "must",
+        "h": "Managing ADHD without drugs",
+        "body": "### Prevention — the lecture’s three\n- **Dietary** · **environmental** · **parent-management training**.\n\n### Parent- and family-training programmes\n- **The goal:** help parents **understand their children’s behaviour**, set **clear rules and expectations**, and **discipline more effectively**.\n- **Also:** it **teaches parents effective coping mechanisms**.\n- **The specific skills taught:** **giving instructions in an understanding way** · **using time-outs effectively** · **praising children** · **creating reward systems**.\n\n### Individual behavioural therapy\n- **Social skills training.**\n- **Hyperactivity and impulsivity** management skills.\n- **Skills to help coping with stress.**\n- **Problem-solving skills.**\n- **Improving academic skills.**\n\n### School-based programmes\n- **The aim:** teach children and adolescents to **relate more positively to peers**, and ways to **improve attention and their school work**.\n\nSrc: L2 pp.38–44",
+        "qs": []
+      },
+      {
+        "id": "dp-17",
+        "w": "must",
+        "h": "NICE 2018 — the two algorithms, and the evidence table",
+        "body": "### ⚠️ Children UNDER 5 years — drug treatment is NOT recommended\n- **First line:** an **ADHD-focussed GROUP parent-training programme**.\n- **If it is not effective:** **tertiary specialist opinion**, which then considers **medication**.\n- **Complex, or refuses the group:** **ADHD-focussed INDIVIDUAL-based parent training**.\n\n### Children aged 5 to 18\n- **Everyone first gets:** **information and ADHD-focussed support**.\n- **⚠️ The medication trigger:** **persisting impairment in ≥1 domain AFTER environmental modifications**.\n- **First line:** **methylphenidate**.\n- **If not effective, switch:** **1st Lisdexamfetamine**; **2nd atomoxetine or guanfacine**.\n- **If impairment still persists in ≥1 domain:** **individual-based CBT / social skills training**; if that fails, **tertiary opinion**.\n- **ADHD + ODD/CD:** with **oppositional defiant or conduct disorder**, additionally **offer group parent training** — a programme **developed for the treatment of conduct disorder**.\n\n### Which treatments actually work — effect sizes\n\n|Treatment|Effect size|\n|---|---|\n|**Stimulant medications (e.g. Ritalin)**|**1.00**|\n|**Restrictive elimination diets**|**0.51**|\n|**Artificial food colourings**|**0.42**|\n|**Neurofeedback**|**0.29**|\n|**Cognitive training**|**0.24**|\n|**Omega 3 fatty acids (fish oils)**|**0.16**|\n|**Parent training**|**0.02**|\n\n*The lecturer ticks three bars — stimulants 1.00, artificial food colourings 0.42 and omega 3 0.16.*\n\n*⚠️ Note the tension the deck never resolves: parent training scores 0.02 on this chart and is NICE’s first line under 5. Both slides are on the syllabus.*\n\nSrc: L2 pp.45–47 (all three image-only, read at 250 dpi)",
+        "qs": []
+      }
+    ]
   }
 };

@@ -67,7 +67,8 @@ const MODULES = [
       ['infection-immunity','Immunity and immunodeficiency'],
       ['infection-vaccine','Vaccination and stewardship'],
       ['normal-dev','Normal Development'],
-      ['dev-problems','Developmental problems'],['genetics','Genetics'],
+      ['dev-problems','Developmental delay and disability'],
+      ['dev-nd','Autism and ADHD'],['genetics','Genetics'],
       ['malignant','Leukaemia'],['malignant-solid','Brain and solid tumours']]},
     {name:'Completed earlier', chapters:[
       ['growth-puberty','Growth and short stature'],['puberty','Puberty'],
