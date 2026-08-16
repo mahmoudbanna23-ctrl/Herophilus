@@ -4725,5 +4725,59 @@ var T_PEDS = {
         "qs": []
       }
     ]
+  },
+  "mental": {
+    "intro": "A list chapter. Almost every slide is a named disorder with a DSM-5 definition attached, so expect definitions recited cold, the four IQ bands, the three Tourette criteria and the six learning-disorder symptoms. Autism and ADHD are examined from `dev-nd`.",
+    "sections": [
+      {
+        "id": "ment-1",
+        "w": "must",
+        "h": "How the brain is built, and the eight shelves DSM-5 puts the disorders on",
+        "body": "### The substrate — the growth is in the wiring, not the cells\n- **~100 billion neurons at birth:** **nearly the full population the brain will ever have** — the cellular foundation is already in place.\n- **The real transformation:** growth lies **not in cell count but in the explosive expansion of synaptic connections** enabling learning, emotion and self-regulation.\n- **1,000 trillion synapses by age 3:** formed by rapid branching — **more than the brain will ever need**.\n- **The pruning paradox — \"use it or lose it\":** efficient circuits strengthen, **unused connections are discarded**; **especially at ages 2–3 and in adolescence**.\n- **⚠️ The neurodevelopmental link:** when **overproduction and pruning fail to balance**, **abnormal connectivity** emerges — linked to autism, ADHD and other disorders of social, cognitive and communication function.\n\n### The eight DSM-5 neurodevelopmental disorders\n- **Intellectual disorders** · **communication disorders** · **autism spectrum disorder** · **attention-deficit/hyperactivity disorder** · **specific learning disorders** · **motor disorders** · **tic disorders** · **other neurodevelopmental disorders**.\n\n*Autism spectrum disorder and ADHD — criteria, comorbidity, screening and both treatments — are written in full in `dev-nd` and are not repeated here.*\n\n### Causes of neurodevelopmental disorders — six\n- **Genetic** · **infectious diseases** · **immune disorders** · **nutritional factors** · **physical trauma** · **social deprivation**.\n\nSrc: L14 (Neuropsychiatry deck) pp.2–5",
+        "qs": []
+      },
+      {
+        "id": "ment-2",
+        "w": "must",
+        "h": "Intellectual disability — the DSM-5 three criteria and the four IQ bands",
+        "body": "**The definition:** **BOTH intellectual and adaptive deficits**, across the **conceptual, social and practical** domains.\n\n### All three criteria must be met\n\n|Criterion|What it requires|\n|---|---|\n|**A — Intellect**|Deficits in reasoning, problem solving, planning, abstract thinking, judgment, academic learning and learning from experience. **Confirmed by BOTH clinical assessment AND individualized, standardized intelligence testing**|\n|**B — Adaptive function**|**Failure to meet developmental and sociocultural standards** for personal independence and social responsibility. Without ongoing support the deficits limit **≥ 1 activity of daily life** — communication, social participation, independent living — **across multiple environments**|\n|**C — Onset**|**During the developmental period**|\n\n### The four levels, by IQ\n\n|Level|IQ|\n|---|---|\n|**Mild**|**50 to 70**|\n|**Moderate**|**35 to 49**|\n|**Severe**|**20 to 34**|\n|**Profound**|**< 20**|\n\n- **⚠️ Mild dominates:** it is the **overwhelming majority of cases** — the deck’s percent-of-cases pie gives mild almost the whole circle, the other three thin slivers. **No percentages are printed on it.**\n\n*The Alexandria three-limb definition (IQ ≤ 70 + limitation in ≥ 2 of 10 adaptive skills + onset before 18) and the investigation panel for global delay are in `dev-problems`.*\n\nSrc: L14 (Neuropsychiatry deck) pp.6–7 (the pie on p7 read visually — it carries no numbers)",
+        "qs": []
+      },
+      {
+        "id": "ment-3",
+        "w": "must",
+        "h": "The communication disorders — speech is not language",
+        "body": "### The two words the lecture separates\n- **Speech:** the **expressive production of sounds** — an individual’s **articulation, fluency, voice and resonance quality**.\n- **Language:** the **form, function and use of a conventional system of symbols** — spoken words, sign language, written words, pictures — **in a rule-governed manner** for communication.\n\n### The four DSM-5 communication disorders\n\n|Disorder|The defect|\n|---|---|\n|**Language disorder**|The **symbol system** — acquiring and using language across modalities|\n|**Speech sound disorder**|The **production of speech sounds**, intelligibility below age level|\n|**Social (pragmatic) communication disorder**|**Persistent difficulties in the SOCIAL USE of verbal and nonverbal communication**|\n|**Childhood-onset fluency disorder (stuttering)**|**Disturbances in the normal fluency and time patterning of speech**, inappropriate for the individual’s age and language skills, and **persisting over time**|\n\n*L14 p9 lists all four by name and defines only the lower two, so the top two rows are not taken from the course material.*\n\n### ⚠️ Social pragmatic disorder versus autism — the discriminator\n- **Both share the social-communication deficit.** Social pragmatic disorder has it **WITHOUT the restricted, repetitive behaviours and interests** — the second DSM-5 criterion, and what makes it autism (not taken from the course material).\n\nSrc: L14 (Neuropsychiatry deck) pp.8–11",
+        "qs": []
+      },
+      {
+        "id": "ment-4",
+        "w": "must",
+        "h": "Specific learning disorder — one of six symptoms, six months, despite help",
+        "body": "- **Boys more than girls:** in 2013, **9 % of boys and 6 % of girls aged 6 to 17**.\n\n### The DSM-5 rule, in three clauses\n- **What:** difficulties **learning and using academic skills**.\n- **How much:** **at least ONE** of the six symptoms below.\n- **How long:** **persisting for at least 6 months** — **despite the provision of interventions that target those difficulties**.\n- **⚠️ \"Despite intervention\" is the gate.** A child who has never been taught or helped is not yet a learning disorder (not taken from the course material).\n\n### The six symptoms\n- **1 Reading accuracy:** inaccurate, or **slow and effortful, word reading**.\n- **2 Reading comprehension:** difficulty **understanding the meaning of what is read**.\n- **3 Spelling.**\n- **4 Written expression.**\n- **5 Number sense:** difficulty mastering **number sense, number facts or calculation**.\n- **6 Mathematical reasoning.**\n\n### The three types\n- **With impairment in reading** · **with impairment in written expression** · **with impairment in mathematics**.\n- **Their common names:** **dyslexia**, **dysgraphia** and **dyscalculia** respectively (not taken from the course material).\n\nSrc: L14 (Neuropsychiatry deck) pp.14–15",
+        "qs": []
+      },
+      {
+        "id": "ment-5",
+        "w": "high",
+        "h": "The two neurodevelopmental motor disorders",
+        "body": "|Disorder|Definition|\n|---|---|\n|**Developmental coordination disorder**|**Acquisition and execution of coordinated motor skills substantially below that expected** for the individual’s **chronological age AND opportunity for skill learning and use**|\n|**Stereotypic movement disorder**|**Repetitive, seemingly driven and apparently purposeless motor behaviour** — hand shaking or waving, body rocking, head banging, self-biting, hitting own body|\n\n- **⚠️ DCD has two halves:** stems drop the second. Skills below age is not enough — the child must also have **had the opportunity to learn them**.\n- **DCD in clinic:** the clumsy child — drops things, poor handwriting, late with buttons, laces and cycling (not taken from the course material).\n- **⚠️ Stereotypy is the one that injures:** head banging, self-biting and hitting own body are **self-injurious**, so protection and specialist referral come first (not taken from the course material).\n\nSrc: L14 (Neuropsychiatry deck) pp.16–18",
+        "qs": []
+      },
+      {
+        "id": "ment-6",
+        "w": "must",
+        "h": "Tic disorders and Tourette’s",
+        "body": "- **A tic:** a **sudden, rapid, recurrent, nonrhythmic motor movement or vocalization**.\n\n### Tourette’s disorder — three criteria\n\n|#|Criterion|\n|---|---|\n|**I**|**BOTH multiple motor AND one or more vocal tics** have been present at some time during the illness — **although NOT NECESSARILY CONCURRENTLY**|\n|**II**|Tics **may wax and wane** in frequency but have **persisted for MORE THAN 1 YEAR** since first tic onset|\n|**III**|**Onset before age 18 years**|\n\n- **⚠️ The trap:** \"not necessarily concurrently\" — motor and vocal tics never appearing **together** does not exclude Tourette’s; each only has to have occurred at some point.\n\n### The rest of the tic family — the deck names Tourette’s only\n\n|Disorder|Which tics|Duration|\n|---|---|---|\n|**Tourette’s disorder**|**Motor AND vocal**|**> 1 year**|\n|**Persistent (chronic) motor OR vocal tic disorder**|**One kind only, never both**|**> 1 year**|\n|**Provisional tic disorder**|Motor and/or vocal|**< 1 year**|\n\n*The lower two rows are not taken from the course material — L14 p19 defines a tic then goes straight to Tourette’s. Duration and which tics occur separate the three.*\n\n- **Course and company:** tics begin at **4–6 years**, peak around **10–12**, mostly **attenuate through adolescence**; **ADHD and OCD** commonly accompany them (not taken from the course material).\n- **Premonitory urge and suppressibility:** an uncomfortable urge relieved by the tic, plus **brief voluntary suppression** — what separates tics from chorea and myoclonus (not taken from the course material).\n\n*Tics as a comorbidity of ADHD are listed in `dev-nd`.*\n\nSrc: L14 (Neuropsychiatry deck) p.19",
+        "qs": []
+      },
+      {
+        "id": "ment-7",
+        "w": "high",
+        "h": "The paediatrician’s side — recognise, exclude, refer",
+        "body": "### Recognition, not diagnosis\n- **The task:** spot the pattern, **exclude the medical mimics**, refer for formal DSM-5 assessment.\n- **⚠️ Exclude before labelling:** **hearing loss** before language disorder · **vision** before clumsiness · **seizures** before regression · **hypothyroidism and anaemia** before \"poor concentration\".\n\n### Refer to child and adolescent psychiatry when\n- **Function is failing** — school, home or peers, not the symptom count alone.\n- **The child self-injures**, or behaves unsafely towards self or others.\n- **⚠️ An acquired skill is lost.** **Regression is never normal** at any age; refer urgently.\n\n### The emotional disorders the deck does not reach\n- **Anxiety and depression:** the commonest adolescent psychiatric presentations.\n- **⚠️ Depression looks different in a child** — **irritability, school refusal and somatic complaints** (headache, abdominal pain) rather than stated sadness, which is why a paediatric clinic misses it.\n- **⚠️ Self-harm and suicidal ideation: ask directly.** Asking does not create the risk. **Any adolescent presenting after self-harm needs psychiatric assessment before discharge.**\n\n*This whole section is general medical knowledge, not taken from the course material.*\n\nSrc: none in L14 — the deck carries no referral pathway, mimics or emotional disorders; written per the paediatrician’s-side brief in `theory-plan.md`",
+        "qs": []
+      }
+    ]
   }
 };
