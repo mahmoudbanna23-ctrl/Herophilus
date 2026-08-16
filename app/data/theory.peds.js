@@ -1832,5 +1832,741 @@ var T_PEDS = {
         "qs": []
       }
     ]
+  },
+  "perinatal": {
+    "intro": "One lecture on what a newborn is classified as and what goes wrong when it arrives too early: the gestational-age and weight bands, resuscitation and Apgar, then the preterm organ by organ — lung, duct, brain, gut, temperature — and the two growth extremes.",
+    "sections": [
+      {
+        "id": "per-1",
+        "w": "must",
+        "h": "Definitions and the three classifications",
+        "body": "**Neonatal period:** the **first 28 days of life**.\n\n### By birth weight\n\n|Class|Weight|\n|---|---|\n|**LBW** — low birth weight|**< 2,500 g**|\n|**VLBW** — very low birth weight|**< 1,500 g**|\n|**ELBW** — extremely low birth weight|**< 1,000 g**|\n\n### By gestational age\n\n|Class|Gestation|\n|---|---|\n|**Preterm birth**|**< 37 weeks**|\n|**Extremely preterm**|**< 28 weeks**|\n|**Very preterm**|**28 – < 32 weeks**|\n|**Moderate or late preterm**|**32 – < 37 weeks**|\n|**Term**|**37 – < 42 weeks**|\n|**Post-term**|**≥ 42 weeks**|\n\n### By birth weight FOR gestational age\n- **Plotted:** birth weight against weeks of gestation, on a centile chart.\n- **LGA:** above the **90th centile**.\n- **AGA:** **10th to 90th** centile.\n- **SGA:** below the **10th centile**.\n\n*Independent of each other: a 1,400 g infant is VLBW whether AGA at 30 weeks or SGA at term.*\n\nSrc: L7 pp.4–7 (pp.6, 7 image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "per-2",
+        "w": "high",
+        "h": "Assessing the newborn at birth — three scores the material names but never prints",
+        "body": "### Apgar score *(not in course material)*\n**Scored at 1 and 5 minutes**, each sign **0, 1 or 2**; **maximum 10**.\n\n|Sign|0|1|2|\n|---|---|---|---|\n|**Appearance** (colour)|Blue or pale|Body pink, **extremities blue**|Completely pink|\n|**Pulse**|Absent|**< 100/min**|**> 100/min**|\n|**Grimace** (reflex irritability)|No response|Grimace|**Cry, cough, sneeze**|\n|**Activity** (tone)|Limp|Some flexion|**Active motion**|\n|**Respiration**|Absent|Slow, irregular|**Good, crying**|\n\n*The HIE cooling criteria enter on Apgar ≤ 5 at 5 minutes — phi-11.*\n\n### Gestational-age assessment *(not in course material)*\n- **New Ballard:** six **neuromuscular** and six **physical** criteria, each **−1 to 5**.\n- **Range:** accurate **20–44 weeks**; do it **within 12 hours** in the very preterm.\n- **Dubowitz:** the older, longer predecessor.\n- *L12 offers \"Ballard score\" as a distractor in its own staging question.*\n\n### Silverman–Andersen retraction score *(not in course material)*\n- **Five signs:** chest movement, intercostal retraction, xiphoid retraction, nasal flaring, expiratory grunt.\n- **Scoring:** each **0–2**; **higher = worse**, the opposite of Apgar.\n- *L9 prints the same signs unscored; the score is nowhere in the corpus.*\n\n### Resuscitation at delivery *(not in course material)*\n- **First:** dry, warm, stimulate, position the airway; assess **breathing and heart rate**.\n- **Apnoeic or HR < 100:** five **inflation breaths**, then positive-pressure ventilation.\n- **HR < 60 despite effective ventilation:** **chest compressions 3:1** with ventilation.\n- **Still < 60:** **adrenaline**, preferably by **umbilical venous catheter**.\n- *No deck teaches it: `3) Pediatric resuscitation` contains \"newborn\" zero times.*\n\nSrc: general medical knowledge, tagged; the Apgar entry point L12 p.47, the retraction signs L9 p.12",
+        "qs": []
+      },
+      {
+        "id": "per-3",
+        "w": "must",
+        "h": "Prematurity — incidence and causes",
+        "body": "### Incidence\n- **US livebirths:** **~11 % preterm**; **2 % under 32 weeks**.\n- **By race:** **White 10.5 % · Black 17.5 % · Hispanic 11.5 %**.\n\n### The six causes\n- **Idiopathic —** given its own branch, first.\n- **Intrauterine stretch —** multiple gestation, polyhydramnios, uterine anomalies.\n- **Intrauterine bleeding —** abruption, antepartal haemorrhage.\n- **Infection —** chorioamnionitis, bacterial vaginosis, **PROM**.\n- **Fetal —** **IUGR**, congenital malformation.\n- **Cervical weakness —** incompetent cervix.\n\nSrc: L7 pp.8–9",
+        "qs": []
+      },
+      {
+        "id": "per-4",
+        "w": "must",
+        "h": "Preventing preterm birth — five steps in managing preterm labour",
+        "body": "- **1 Antenatal steroid —** accelerates fetal lung maturity.\n- **2 Antibiotics —** for **PROM**, reducing chorioamnionitis and neonatal infection.\n- **3 Tocolysis —** suppresses contractions, prolonging pregnancy or completing the steroid course.\n- **4 Magnesium sulphate —** reduces the incidence of **cerebral palsy**.\n- **5 In-utero transfer —** to a tertiary centre for preterm care.\n\n*Steroid drug and timing in prd-11, where L9 prints them.*\n\nSrc: L7 p.10",
+        "qs": []
+      },
+      {
+        "id": "per-5",
+        "w": "must",
+        "h": "The preterm lung — the signs, the five problems, and RDS type I",
+        "body": "- **Rank:** the respiratory system is the **most frequently affected system in the preterm**.\n- **Why:** the **lung is the LAST organ to mature** into a functional state.\n\n### Signs of respiratory distress\n**The five signs:** tachypnoea RR > 60 · nasal flaring · retractions of the chest wall · expiratory grunting · central cyanosis.**\n\n### The five respiratory problems of prematurity\n**The five:** 01 RDS type I · 02 congenital pneumonia · 03 pneumothorax · 04 CLD · 05 apnoea / bradycardia / desaturation.**\n\n### RDS type I\n- **What it is:** a **developmental deficiency of surfactant**.\n\n|Gestation|Incidence|\n|---|---|\n|**< 28 weeks**|**~100 %**|\n|**28 – 30 weeks**|**70 %**|\n|**30 – 32 weeks**|**40 %**|\n|**33 – 35 weeks**|**15 %**|\n\n- **Onset:** distress in the **first 4 hours**.\n- **X-ray:** **fine reticulogranular appearance with air bronchogram**.\n- **Treatment:** **surfactant** (tracheal or nebulised), **NCPAP**, **mechanical ventilation** on CPAP failure.\n\n*RDS in full — surfactant physiology, the cascade, prevention, the treatment ladder — in prd-7 to prd-11.*\n\nSrc: L7 pp.11–14 (p.13 image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "per-6",
+        "w": "must",
+        "h": "Congenital pneumonia and pneumothorax in the preterm",
+        "body": "### Congenital pneumonia\n- **Signs:** respiratory distress, hypotension, temperature instability, apnoea, hypoglycaemia, lethargy, shock.\n- **⚠️ Look-alike:** often **indistinguishable from HMD**, ± signs of septicaemia.\n- **Pathogenesis:** **aspiration of infected amniotic fluid**.\n- **Organisms:** the **same as in neonatal sepsis**.\n\n### Pneumothorax\n- **When:** may be **spontaneous**; most commonly **on mechanical ventilation** with an unhealthy lung (RDS).\n- **Presentation:** **sudden deterioration**, rising oxygen requirement.\n- **Signs:** **decreased breath sounds and chest movement** on that side; **chest bulge**.\n- **Diagnosis:** **transillumination**, then **CXR**. **Treatment:** **chest tube with underwater seal**.\n- **Frequency:** **4 %** of VLBW infants.\n\n### Transillumination\n- **Method:** **high-intensity fibreoptic light**; darken the room, use a **cold light** to avoid burns.\n- **False positive:** skin oedema, subcutaneous air, pneumomediastinum, severe pulmonary interstitial emphysema.\n- **False negative:** thick chest wall, darkly pigmented skin, room too light, weak transilluminator.\n- **⚠️ Definitive test:** the **chest X-ray**, always.\n- **If AP is insufficient:** **lateral decubitus** with the **suspected side up**, after turning for **10–15 minutes**.\n\nSrc: L7 pp.15–18 (pp.17, 18 image-only, recovered by render); frequency L7 p.46",
+        "qs": []
+      },
+      {
+        "id": "per-7",
+        "w": "must",
+        "h": "Apnoea of prematurity and chronic lung disease",
+        "body": "### Apnoea of prematurity\n- **What it is:** a **developmental problem with the regulation of respiration**.\n- **Course:** generally **resolves by 36 weeks corrected gestational age**.\n- **Incidence:** **inversely related to gestational age**.\n- **⚠️ May be secondary to:** hypoxia, infection, anaemia, electrolyte disturbance, hypoglycaemia, seizures, heart failure, **aspiration due to gastro-oesophageal reflux**.\n- **The threshold:** **20 seconds** without breathing gives **bradycardia and desaturation**.\n- **Treatment:** gentle physical stimulation, **methylxanthines**, ventilation.\n\n### Chronic lung disease / bronchopulmonary dysplasia\n- **Definition:** **need for oxygen beyond 36 weeks postmenstrual age**.\n- **Mechanism:** **oxygen toxicity**.\n- **Frequency:** **25 %** of VLBW; up to **40 % of the extremely preterm** long term, from reduced exercise tolerance to **home oxygen**.\n\nSrc: L7 pp.19–20; frequencies L7 pp.46, 47 (both image-only)",
+        "qs": []
+      },
+      {
+        "id": "per-8",
+        "w": "must",
+        "h": "The preterm duct — why it stays open and what it does",
+        "body": "**Ductus arteriosus:** the normal fetal connection between **pulmonary artery and aorta**, a **right-to-left shunt** in utero.\n\n### Why prematurity keeps it open\n- **Prevalence:** all structural CHD occurs in preterms, but **PDA is markedly more common** than at term.\n- **Normal closure:** ductal constriction at **12–48 hours**.\n- **⚠️ Oxygen:** its role **as a constrictor INCREASES with advancing gestational age**.\n- **⚠️ PGE2:** ductal **sensitivity to PGE2 vasodilatation DECREASES with increasing gestational age**.\n- **Net effect:** the preterm duct has a **weak constrictor and a strong dilator response**.\n\n### The haemodynamically significant PDA\n- **Murmur:** **systolic, ii/vi, upper left sternal border** — not the machinery murmur of the older child.\n- **Pulses:** **bounding**, with a **widened pulse pressure**.\n- **Also:** **metabolic acidosis**, **worsening respiratory status**.\n- **⚠️ It may be SILENT.** No murmur does not exclude it.\n- **Steal phenomenon:** diastolic runoff into the pulmonary circulation → **pulmonary congestion**.\n\n### Diagnosis and treatment\n- **Diagnosis:** suspected clinically and on **CXR**; **confirmed by echocardiogram with Doppler**.\n- **Medical:** **indomethacin**, a **cyclo-oxygenase (prostaglandin) inhibitor** — **12 %** of VLBW.\n- **Surgical:** **ligation** if medical treatment fails — **3 %** of VLBW.\n\n*The duct as a cardiac lesion — fetal role, machinery murmur, transcatheter closure, duct-dependent circulations — in `cardiac`, `card-6`.*\n\nSrc: L7 pp.21–24; frequencies L7 p.46 (image-only)",
+        "qs": []
+      },
+      {
+        "id": "per-9",
+        "w": "high",
+        "h": "Why the preterm gets infected",
+        "body": "- **Immunity:** all aspects of immune function are **sub-optimal in vitro**.\n- **IgM:** does **not cross the placenta**.\n- **IgG:** crosses **only in the 3rd trimester** — the earlier the birth, the less maternal antibody.\n- **Barrier:** poor — thin skin, indwelling lines.\n- **Origin:** **infection is often the CAUSE of labour**, so the baby arrives infected.\n- **Spread:** poor ability to **localise** infection, so it becomes **septicaemia**.\n\n### The numbers in the VLBW infant\n- **Early-onset 2 %, late-onset 11 %.**\n- **Early-onset organism:** **group B streptococcus**.\n- **⚠️ Main problem:** **NOSOCOMIAL** infection, mainly **coagulase-negative staphylococcus**.\n\n*Neonatal sepsis as a disease — early versus late onset, markers, management — in `neonatal`.*\n\nSrc: L7 p.25; the numbers L7 p.46 (image-only)",
+        "qs": []
+      },
+      {
+        "id": "per-10",
+        "w": "must",
+        "h": "The preterm brain — IVH, PVL and hydrocephalus",
+        "body": "- **The two commonest:** **periventricular–intraventricular haemorrhage (IVH)** and **periventricular leukomalacia (PVL)**.\n- **⚠️ Both are usually SILENT** — found by scanning, not by examining.\n\n### Intraventricular haemorrhage\n- **Source:** the **germinal layer**, whose **fragile subependymal vessels** bleed under **hypoxia**.\n- **Extent:** **germinal layer → intraventricular → parenchymal**.\n- **Frequency:** **25 %** of VLBW, **severe grade III/IV 8 %**.\n- **Grades I–IV** *(not in course material)* — **I** germinal matrix only · **II** intraventricular blood, no dilatation · **III** with dilatation · **IV** parenchymal venous infarction.\n\n### Periventricular leukomalacia\n- **What it is:** **ischaemic white matter injury**, seen as **cystic PVL** on ultrasound.\n- **Frequency:** **3 %** of VLBW.\n\n### Post-haemorrhagic hydrocephalus\n- **Course:** **ventricular dilatation** follows the bleed, and **may need a ventriculo-peritoneal shunt**.\n\n### Cranial ultrasound\n- **Coronal:** the plane runs **ear to ear**. **Sagittal:** the plane runs **front to back**.\n\n*Extradural, subdural and subarachnoid haemorrhage and childhood stroke are in `neuro-stroke`.*\n\nSrc: L7 pp.28–32 (pp.29–32 image-only); frequencies L7 p.46",
+        "qs": []
+      },
+      {
+        "id": "per-11",
+        "w": "must",
+        "h": "Temperature control and the neonatal energy triangle",
+        "body": "### Why the preterm cannot hold its temperature\n- **1 Surface area —** large relative to mass, so **heat loss (area) exceeds heat generation (mass)**.\n- **2 Skin —** thin and heat-permeable; **transepidermal water loss is significant in the first week**.\n- **3 Insulation —** little **subcutaneous fat**.\n- **4 Behaviour —** often **nursed naked**, and **cannot curl up or shiver**.\n\n### Keeping it warm\n- **The three measures:** **polyethylene plastic bag or wrap · head cap · thermal mattress** (pre-warmed towels).\n- **Environment:** **neutral thermal environment**, **incubator or radiant warmer**, clothe if possible.\n- **Humidity:** reduces **evaporative** heat loss.\n\n### The neonatal energy triangle\nThree interlocking gears — **hypothermia, hypoglycaemia, hypoxia** — each driving the next.\n\n- **Cold → hypoglycaemia:** ↑metabolism → ↑glucose uptake → ↑use of glycogen → **depleted stores**.\n- **Hypoglycaemia → hypoxia:** ↓surfactant production and **pulmonary vasoconstriction** → ↑work of breathing → respiratory distress.\n- **Cold → acidosis:** ↑metabolism → ↑O₂ consumption → ↑respiratory rate → **demand exceeds supply** → anaerobic metabolism → **↓pH**, which loops back to deplete glycogen.\n- **Brown fat:** its metabolism **releases fatty acids**, the triangle’s third limb.\n\n*So warming is a treatment for hypoglycaemia and for respiratory distress, not only for cold.*\n\nSrc: L7 pp.33–38 (pp.35–37 image-only, the triangle recovered at 300 dpi)",
+        "qs": []
+      },
+      {
+        "id": "per-12",
+        "w": "must",
+        "h": "The preterm gut and necrotizing enterocolitis",
+        "body": "- **Function:** the GI tract is **functional during the second trimester**.\n- **The real problem:** **motility and tolerance of feeds**, not absorption.\n- **Sucking and swallowing:** mature from **32 to 36 weeks**.\n- **GI signs:** **gastric residual > 25 % of the prior feed**, emesis, abdominal distension, abdominal tenderness.\n\n### Necrotizing enterocolitis\n- **Rank:** the **most common serious GI problem of the preterm**; **5 %** of VLBW.\n- **Aetiology:** **uncertain** — may involve **ischaemia, mucosal insult, infection**.\n- **Incidence:** **inversely related to gestational age**.\n- **Radiological hallmark:** **pneumatosis intestinalis** — gas in the bowel wall.\n- **Management:** **medical**, or **surgery for bowel necrosis or perforation**.\n- **Bell staging** *(not in course material)* — **I** suspected · **II** definite, pneumatosis on film · **III** advanced, perforation or shock.\n\n### Feeding\n- **Route:** **nasogastric tube feeding until 35–36 weeks postmenstrual age**.\n- **Intolerance:** **parenteral nutrition** is often required.\n\nSrc: L7 pp.39–43 (pp.41, 42 print the same slide twice); frequency and feeding L7 p.46",
+        "qs": []
+      },
+      {
+        "id": "per-13",
+        "w": "must",
+        "h": "Metabolic and the other problems of prematurity",
+        "body": "### Metabolic\n- **Hypoglycaemia —** **decreased glycogen stores**. Common.\n- **Hypocalcaemia —** **immature parathyroid gland**.\n- **Hypothermia —** **decreased subcutaneous and brown fat**.\n- **Also:** electrolyte disturbances; **osteopenia of prematurity from phosphate deficiency**.\n\n### The others\n- **Retinopathy of prematurity —** driven by **oxygen therapy**; **5 %** need **laser**.\n- **Fluid and solute retention.**\n- **Hyperbilirubinaemia and kernicterus —** jaundice **common, with a low treatment threshold**.\n- **Anaemia —** often needs **blood transfusion**.\n- **Hearing —** **checked before discharge**.\n\n*Jaundice, kernicterus and neonatal hypoglycaemia as diseases in `neonatal`; anaemia of prematurity in `haematology`, `haem-9`.*\n\nSrc: L7 pp.44–45; thresholds and the 5 % figure L7 p.46 (image-only)",
+        "qs": []
+      },
+      {
+        "id": "per-14",
+        "w": "high",
+        "h": "The numbers in the very low birthweight infant, and life after discharge",
+        "body": "**All figures are for infants under 1,500 g.**\n\n|Problem|Frequency|\n|---|---|\n|**Respiratory distress syndrome**|**74 %**|\n|**Nasal CPAP required**|**86 %**|\n|**High-flow nasal cannula**|**75 %**|\n|**Mechanical ventilation**|**64 %**|\n|**Intraventricular haemorrhage** (any)|**25 %**|\n|**Bronchopulmonary dysplasia**|**25 %**|\n|**PDA — medical treatment**|**12 %**|\n|**Late-onset infection**|**11 %**|\n|**IVH — severe, grade III/IV**|**8 %**|\n|**Necrotizing enterocolitis**|**5 %**|\n|**ROP needing laser**|**5 %**|\n|**Pneumothorax**|**4 %**|\n|**PDA — surgical ligation**|**3 %**|\n|**Periventricular leukomalacia**|**3 %**|\n|**Early-onset infection**|**2 %**|\n\n### Following discharge\n- **Support:** specialist **community nursing** where available.\n- **⚠️ Risk:** **respiratory infection and wheezing**, especially **bronchiolitis (RSV)** and **pertussis**; may need intensive care.\n\n*Bronchiolitis as a disease is in `resp-bronch`.*\n\nSrc: L7 p.46 (image-only, recovered at 300 dpi)",
+        "qs": []
+      },
+      {
+        "id": "per-15",
+        "w": "high",
+        "h": "Long-term impact of preterm birth",
+        "body": "|Domain|Outcome|Examples|Frequency in survivors|\n|---|---|---|---|\n|**Physical**|**Visual impairment**|**Blindness or high myopia after ROP**; hypermetropia and myopia|**~25 % of all extremely preterm**; also moderately preterm if **oxygen therapy is poorly monitored**|\n|**Physical**|**Hearing impairment**|—|**Up to 5–10 % of extremely preterm**|\n|**Physical**|**Chronic lung disease of prematurity**|Reduced exercise tolerance to **home oxygen**; admission for **LRTI**|**Up to 40 % of extremely preterm**|\n|**Physical**|**Cardiovascular and non-communicable disease**|**↑ blood pressure · reduced lung function · ↑ asthma · growth failure in infancy then accelerated weight gain in adolescence**|Burden still to be quantified|\n|**Neuro**|**Mild — executive dysfunction**|**Learning impairments, dyslexia, reduced academic achievement**|—|\n|**Neuro**|**Moderate to severe — global delay**|**Cognitive impairment · motor impairment · CEREBRAL PALSY**|Depends on **gestational age and quality of care**|\n|**Neuro**|**Psychiatric / behavioural**|**ADHD · anxiety and depression**|—|\n|**Family**|**Family, health service, intergenerational**|Psychosocial and economic cost; **risk of preterm birth in the offspring**|Varies with **medical risk, disability, socioeconomic status**|\n\n*Cerebral palsy in `neuro-cp`; ADHD in `dev-problems`.*\n\nSrc: L7 p.47 (image-only, recovered at 300 dpi)",
+        "qs": []
+      },
+      {
+        "id": "per-16",
+        "w": "must",
+        "h": "Small for gestational age — two shapes of growth restriction",
+        "body": "|  |**Asymmetrical IUGR**|**Symmetrical IUGR**|\n|---|---|---|\n|**Body proportions**|**HEAD SPARED**|**Proportionate to the rest of the body**|\n|**Onset**|**After the 18th week**|**After the 18th week** *(as printed)*|\n|**Causes**|**Chronic hypertension · severe malnutrition · genetic mutation (EDS)**|**TORCH · chromosomal anomalies · anaemia · substance abuse (fetal alcohol syndrome)**|\n\n*⚠️ The deck gives both columns the same onset, which cannot discriminate them; the discriminator it does give is head sparing. Recorded as printed.*\n\n### Problems of the SGA infant\n- **Respiratory distress —** **meconium aspiration, pulmonary haemorrhage, pneumothorax**.\n- **Also:** **hypothermia · hypoglycaemia · congenital infection · polycythaemia and hyperbilirubinaemia · necrotizing enterocolitis**.\n\nSrc: L7 pp.48–49",
+        "qs": []
+      },
+      {
+        "id": "per-17",
+        "w": "must",
+        "h": "Large for gestational age and the infant of a diabetic mother",
+        "body": "**LGA:** birth weight **above the 90th centile** for gestation.\n\n### Why the IDM is affected\n- **The chain:** **maternal hyperglycaemia → fetal hyperglycaemia → fetal hyperinsulinaemia**.\n- **Insulin is the fetal growth hormone**, so every problem below follows from it, or from its withdrawal at delivery.\n\n### The eleven problems\n- **1–3:** fetal demise · macrosomia · congenital malformations.\n- **4 RDS —** insulin **delays surfactant maturation**.\n- **5 Hyperbilirubinaemia.**\n- **6 Hypoglycaemia —** hyperinsulinaemia outlasts the maternal glucose supply.\n- **7–9:** hypocalcaemia · polycythaemia · renal vein thrombosis.\n- **10 Cardiomyopathy —** **hypertrophic**, with cardiomegaly on the chest film.\n- **11 Named malformations:** **SACRAL HYPOPLASIA** and **SMALL LEFT COLON SYNDROME**.\n- **The cardiomyopathy** *(not in course material)* — **asymmetrical septal hypertrophy**, usually **transient**, resolving over weeks as insulin falls.\n\nSrc: L7 pp.50–53 (pp.50, 53 image-only)",
+        "qs": []
+      }
+    ]
+  },
+  "perinatal-rd": {
+    "intro": "Why a newborn cannot breathe. The seven signs, the pulmonary and extra-pulmonary causes, and the algorithm that lets gestation and time of onset shortlist them — then RDS, TTN and meconium aspiration in full, set side by side at the end.",
+    "sections": [
+      {
+        "id": "prd-1",
+        "w": "must",
+        "h": "Respiratory distress in the newborn — the size of the problem and who gets it",
+        "body": "- **Rank:** one of the most important causes of **NICU admission** and of **mortality**.\n- **Normal rate:** **40–60 per minute**.\n- **Versus the adult:** newborn respiration is **more rapid, shallower and more irregular**.\n\n### Incidence by maturity\n\n|Group|Incidence|\n|---|---|\n|**Full term**|**15 %**|\n|**Late preterm**|**29 %**|\n|**Preterm, GA < 34 weeks**|**93 %**|\n\n### The six at-risk groups\n**The six:** 01 preterm · 02 birth asphyxia · 03 infant of a diabetic mother · 04 caesarean section · 05 maternal fever, prolonged rupture of membranes or foul-smelling amniotic fluid · 06 meconium in the amniotic fluid.**\n\nSrc: L9 pp.6–8",
+        "qs": []
+      },
+      {
+        "id": "prd-2",
+        "w": "must",
+        "h": "The clinical syndrome — seven signs",
+        "body": "- **01 Tachypnoea —** rate **> 60 per minute**.\n- **02 Retractions —** **intercostal and subcostal**, with **chest indrawing**.\n- **03 Grunting —** expiration against a partly closed glottis; self-generated PEEP.\n- **04 Nasal flaring.**\n- **05 Cyanosis or desaturation** in severe cases.\n- **06 Decreased air entry.**\n- **07 Poor feeding.**\n\n*Five of these, scored 0–2 each, are the Silverman–Andersen retraction score — per-2.*\n\nSrc: L9 p.12",
+        "qs": []
+      },
+      {
+        "id": "prd-3",
+        "w": "must",
+        "h": "Pulmonary causes",
+        "body": "|Group|Conditions|\n|---|---|\n|**Parenchymal**|**Transient tachypnea of the newborn · meconium aspiration and other aspirations · respiratory distress syndrome · pneumonia · pulmonary oedema · pulmonary haemorrhage · pulmonary lymphangiectasia**|\n|**Developmental**|**Lobar emphysema · pulmonary sequestration · cystic adenomatoid malformation · congenital diaphragmatic hernia · tracheo-oesophageal fistula · pulmonary hypoplasia · bronchopulmonary dysplasia**|\n|**Airway**|**Choanal atresia or stenosis · laryngeal web · laryngotracheomalacia or bronchomalacia · subglottic stenosis**|\n|**Mechanical**|**Rib cage anomalies (e.g. Jeune syndrome) · pneumothorax · pneumomediastinum · pleural effusion · chylothorax**|\n\n*Choanal atresia, laryngeal web and subglottic stenosis are named nowhere else in the paediatrics corpus.*\n\nSrc: L9 pp.9–10 (p.10 image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "prd-4",
+        "w": "must",
+        "h": "Extra-pulmonary causes, and the aetiology map",
+        "body": "|Group|Conditions|\n|---|---|\n|**CVS — ↑ pulmonary flow**|**Patent ductus arteriosus · ventricular septal defect · transposition of the great arteries · truncus arteriosus**|\n|**CVS — ↓ pulmonary flow**|**Persistent pulmonary hypertension · pulmonary atresia · tetralogy of Fallot · tricuspid atresia**|\n|**CVS — cardiomegaly**|**Ebstein anomaly · left heart obstruction (coarctation, mitral atresia, TAPVR)**|\n|**Neuromuscular**|**CNS: asphyxia, haemorrhage, malformations, drugs, infection** · **cord: injury, spinal muscular atrophy** · **nerves: phrenic injury, cranial nerve palsy** · **plate: myasthenia gravis** · **muscle: dystrophies**|\n|**Metabolic**|**Metabolic acidosis · hypoglycaemia · hypothermia**|\n|**Haematologic**|**Anaemia · polycythaemia · methaemoglobinaemia**|\n|**Chest wall**|**Thoracic dystrophy**|\n\n### The map by frequency\n- **Pulmonary, COMMON:** **RDS · TTN · pneumonia · meconium aspiration**.\n- **Pulmonary, less common:** **air leak · pulmonary haemorrhage · congenital lobar emphysema · BPD · congenital anomalies**.\n\nSrc: L9 pp.9, 11, 70 (all image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "prd-5",
+        "w": "must",
+        "h": "The algorithm — gestation and onset decide the shortlist",
+        "body": "**Two questions, in order:** preterm or term, and did it start **before or after 6 hours of age**.\n\n|Gestation|Onset|Think|\n|---|---|---|\n|**Preterm**|**< 6 hours**|**HMD · pneumonia · lung anomaly · shock**|\n|**Preterm**|**> 6 hours**|**Pneumonia · congenital heart disease · pulmonary haemorrhage**|\n|**Term**|**< 6 hours**|**TTN · MAS/PPHN · asphyxia · shock · lung anomaly · air leak**|\n|**Term**|**> 6 hours**|**Pneumonia · polycythaemia · congenital heart disease**|\n\nSrc: L9 p.13 (image-only, recovered by render)",
+        "qs": [],
+        "flow": {
+          "title": "Neonatal respiratory distress — sorting by gestation and onset",
+          "steps": [
+            {
+              "k": "step",
+              "t": "Respiratory distress — tachypnoea, retractions, grunt",
+              "n": "the presenting triad"
+            },
+            {
+              "k": "decision",
+              "t": "Preterm or term?",
+              "yes": "Preterm → ask the age",
+              "no": "Term → ask the age"
+            },
+            {
+              "k": "step",
+              "t": "PRETERM, < 6 hours: HMD · pneumonia · lung anomaly · shock",
+              "n": "surfactant deficiency dominates"
+            },
+            {
+              "k": "step",
+              "t": "PRETERM, > 6 hours: pneumonia · CHD · pulmonary haemorrhage",
+              "n": "acquired and cardiac"
+            },
+            {
+              "k": "step",
+              "t": "TERM, < 6 hours: TTN · MAS / PPHN · asphyxia · shock · lung anomaly · air leak",
+              "n": "transition failures"
+            },
+            {
+              "k": "step",
+              "t": "TERM, > 6 hours: pneumonia · polycythaemia · CHD",
+              "n": "later onset"
+            },
+            {
+              "k": "alert",
+              "t": "Sudden deterioration on a ventilator = pneumothorax until transilluminated and filmed",
+              "n": "the one that kills within minutes"
+            }
+          ]
+        }
+      },
+      {
+        "id": "prd-6",
+        "w": "high",
+        "h": "Lung development — five stages",
+        "body": "|Stage|Gestation|Airways|Vasculature|\n|---|---|---|---|\n|**Embryonic**|**5–7 weeks**|**Trachea, right and left bronchus**|Mesenchyme and haematopoietic cells|\n|**Pseudoglandular**|**7–17 weeks**|**Bronchial tree**|Vascular plexus in the lung mesenchyme|\n|**Canalicular**|**17–26 weeks**|**Acinus / ventilatory unit**|**Double-layered capillary network**|\n|**Saccular**|**26–35 weeks**|**Alveolar sac**|**Single-layered capillary network**|\n|**Alveolar**|**36 weeks – 3 years**|**Secondary septation**|Increase in the single-layered network|\n\n**Why it matters:** **type II cells appear in the canalicular–saccular window**, which is why surfactant starts at 24–28 weeks and matures at 35.\n\nSrc: L9 p.22 (image-only, recovered by render); surfactant timing L9 p.18",
+        "qs": []
+      },
+      {
+        "id": "prd-7",
+        "w": "must",
+        "h": "RDS / hyaline membrane disease — surfactant and the first breath",
+        "body": "**RDS:** the **leading cause of mortality and pulmonary morbidity in preterm infants**. **Slight male predominance.**\n\n### Incidence\n- **Rule:** **inversely proportional to gestational age**.\n- **Figures:** **60–80 % under 28 weeks**; **15–30 % at 32–36 weeks**.\n\n### The first breath\n- **In utero:** the alveoli are **filled with fetal lung fluid**.\n- **First breaths:** need a negative pressure of **25–30 cm water**.\n- **Subsequent breaths:** **−5 cm H₂O**.\n- **⚠️ In RDS:** extreme negative pressure is needed for **EVERY breath**, because nothing holds the sac open between them.\n\n### Surfactant\n- **What:** a **lipoprotein material** — why **alveoli do not collapse during expiration**.\n- **Source:** **type II alveolar cells**.\n- **Action:** **decreases surface tension inside the alveoli**.\n- **Timing:** **synthesis begins at 24–28 weeks**, **mature by 35 weeks**.\n- **The physics:** **↑ surface tension → collapse**, and **↑ surface tension → ↓ compliance**. Elastin gives recoil; surfactant opposes it.\n\nSrc: L9 pp.14–21, 72 (pp.18–21, 72 image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "prd-8",
+        "w": "must",
+        "h": "RDS — pathogenesis and pathology",
+        "body": "**The short version:** **pulmonary immaturity plus surfactant deficiency** give **poor compliance, atelectasis, decreased gas exchange, severe hypoxia and acidosis**.\n\n### The cascade as the deck draws it\n- **Prematurity →** **surfactant deficiency** and a **structurally immature lung**.\n- **Both →** **atelectasis** → **V/Q mismatch** and **hypoventilation**.\n- **Then →** **hypoxaemia and hypercarbia** → **respiratory and metabolic acidosis**.\n- **Acidosis →** **pulmonary vasoconstriction** → **impaired endothelial and epithelial integrity**.\n- **Finally →** **proteinaceous exudate** → **fibrin** → **RDS**.\n\n### Pathology\n- **The hallmark:** alveolar sacs **lined by EOSINOPHILIC HYALINE MEMBRANE**, derived from **injured epithelial cells** — the disease’s other name.\n\nSrc: L9 pp.23–25 (pp.24, 25 image-only, recovered by render)",
+        "qs": [],
+        "flow": {
+          "title": "RDS — from prematurity to hyaline membrane",
+          "steps": [
+            {
+              "k": "step",
+              "t": "Prematurity → surfactant deficiency + structurally immature lung",
+              "n": "the two upstream faults"
+            },
+            {
+              "k": "step",
+              "t": "Atelectasis",
+              "n": "alveoli collapse in expiration"
+            },
+            {
+              "k": "step",
+              "t": "V/Q mismatch + hypoventilation → hypoxaemia and hypercarbia",
+              "n": ""
+            },
+            {
+              "k": "step",
+              "t": "Respiratory and metabolic acidosis",
+              "n": "mixed, on the gas"
+            },
+            {
+              "k": "alert",
+              "t": "Pulmonary vasoconstriction → impaired endothelial and epithelial integrity",
+              "n": "the point of no return without support"
+            },
+            {
+              "k": "step",
+              "t": "Proteinaceous exudate → fibrin → hyaline membrane",
+              "n": "RDS established"
+            }
+          ]
+        }
+      },
+      {
+        "id": "prd-9",
+        "w": "must",
+        "h": "RDS — course, radiology and blood gas",
+        "body": "- **Onset:** **immediately or shortly after birth**.\n- **First 48 hours:** **aggravates rapidly**, with progressive distress and cyanosis.\n- **Then:** **stabilises and improves over the next few days with proper management**.\n\n### Chest X-ray — three features\n- **Volume:** **small lung volume**.\n- **Parenchyma:** **fine reticulogranular GROUND-GLASS mottling** in both fields.\n- **Through it:** an **AIR BRONCHOGRAM**.\n\n### Laboratory\n- **Gas:** **progressive hypoxaemia · high PCO₂ · mixed respiratory and metabolic acidosis**.\n\n*The deck’s opening case: a 30-week infant delivered by emergency caesarean for pre-eclampsia, tachypnoeic at 70/min with flaring, retractions and grunting within 30 minutes, 85 % in air, PaO₂ 45, PaCO₂ 60, pH 7.25.*\n\nSrc: L9 pp.3, 5, 26–28 (pp.4, 28 image-only)",
+        "qs": []
+      },
+      {
+        "id": "prd-10",
+        "w": "must",
+        "h": "RDS — four complications",
+        "body": "- **Intraventricular haemorrhage —** **fragile subependymal vessels in prematures**, plus **hypoxia**.\n- **Patent ductus arteriosus —** **a high PaO₂ is needed to close the duct**, and this infant has none.\n- **Air leak syndromes —** pneumothorax; **usually complications of MECHANICAL VENTILATION**, not of the disease.\n- **Respiratory failure and death.**\n\n*IVH and the preterm duct in full in `perinatal`, per-8 and per-10.*\n\nSrc: L9 p.29",
+        "qs": []
+      },
+      {
+        "id": "prd-11",
+        "w": "must",
+        "h": "RDS — prevention and treatment",
+        "body": "### Prevention\n- **Upstream:** prevention of **prematurity** and of the other risk factors.\n- **Antenatal steroids:** **betamethasone or dexamethasone, IM to the mother, 48 hours before delivery, at 34 weeks or less** — **accelerates fetal lung maturity**.\n- *Dose not stated by the deck; the usual course is betamethasone 12 mg IM, two doses 24 hours apart (not in course material).*\n\n### The rationale\n**The aim:** maintain and stabilise the newborn in good condition **UNTIL LUNG MATURITY OCCURS**. Nothing here cures the disease; it buys time.\n\n### The three limbs\n- **1 Supportive care —** delivery-room stabilisation, **thermoregulation**, nutritional support, fluid and electrolyte management, **antibiotic therapy**.\n- **2 Surfactant therapy.**\n- **3 Assisted ventilation.**\n\n### The escalation the deck photographs\n- **Delivery room —** T-piece resuscitator, warmth, early CPAP.\n- **Non-invasive —** **nasal CPAP**, needed by **86 %** of VLBW infants.\n- **Invasive —** intubation and ventilation (**64 %**), with **surfactant** down the tube. The preparation shown is **Survanta (beractant) 25 mg/mL intratracheal suspension**.\n\nSrc: L9 pp.30–34 (pp.32–34 image-only); frequencies L7 p.46",
+        "qs": []
+      },
+      {
+        "id": "prd-12",
+        "w": "must",
+        "h": "Transient tachypnoea of the newborn — the wet lung",
+        "body": "**TTN:** also known as **RDS type 2** or **wet lung**.\n\n### Where it sits\n- **Rank:** the **MOST COMMON cause of neonatal respiratory distress** — **over 40 % of cases**.\n- **Rate:** **11 per 1,000 live births**.\n- **Who:** **TERM and LATE PRETERM** neonates, not the very preterm.\n\n### Pathophysiology\n- **Mechanism:** a **mild, transient** form of distress from **delayed clearance of fetal lung fluid by the lymphatics**.\n\n### Fetal lung fluid\n- **Amount:** **20 mL/kg near term**, produced at **2–5 mL/kg/hour**.\n- **Purpose:** its presence is **important for normal fetal lung development**.\n- **How it is made:** **secondary active transport of CHLORIDE ions** from the interstitial space into the lung lumen.\n- **⚠️ The adrenaline switch:** during **labour and delivery** adrenaline rises, so **lung liquid secretion CEASES and resorption BEGINS**.\n- **Without labour:** an **elective caesarean** **delays that switch** — the whole disease.\n\nSrc: L9 pp.35–38, 73 (p.73 image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "prd-13",
+        "w": "must",
+        "h": "TTN — risk factors, course, diagnosis and management",
+        "body": "- **Risk factors:** **elective caesarean section · male gender · maternal diabetes**.\n- **Onset:** **within 2 hours after delivery**, mild to moderate distress.\n- **Duration:** **a few hours to 3 days**.\n- **Chest radiograph:** **perihilar streaking with fluid in the interlobar fissures** — the wet lung.\n- **⚠️ TTN is a CLINICAL diagnosis.** The film supports it; it does not make it.\n- **Management:** **supplemental oxygen or CPAP**; **resolves in 3 days**; **most cases need no active treatment**.\n\nSrc: L9 pp.39–42",
+        "qs": []
+      },
+      {
+        "id": "prd-14",
+        "w": "must",
+        "h": "Meconium aspiration syndrome — meconium and how it gets into the lung",
+        "body": "**MAS:** respiratory distress from **aspiration of the meconium, in utero or at delivery**.\n\n### What meconium is\n- **Definition:** the **first stool the newborn passes after birth**.\n- **Composition:** a **greenish-black viscid** material of **bile, intestinal secretions and epithelial debris** from the fetal gut.\n- **⚠️ It is STERILE.**\n\n### How it reaches the airway — two steps, one cause\n- **Step 1:** **acute or chronic fetal HYPOXIA stimulates fetal peristalsis and relaxes the anal sphincter** → meconium passes into the amniotic fluid.\n- **Step 2:** **the same hypoxia stimulates fetal breathing (gasping)** → **aspiration** of the meconium-containing fluid.\n- **⚠️ The number:** **only 4–5 %** of infants with meconium-stained amniotic fluid develop MAS.\n\nSrc: L9 pp.44–46, 74 (p.74 image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "prd-15",
+        "w": "must",
+        "h": "MAS — the consequences and the pathophysiology loop",
+        "body": "|Consequence|What it does|\n|---|---|\n|**Chemical pneumonitis**|**Chemical irritation and inflammation of the lungs**|\n|**Complete obstruction**|**Atelectasis**|\n|**Partial obstruction — BALL VALVE**|**Air trapping → over-inflation and emphysema**, possible **air leak → pneumothorax**|\n|**Persistent pulmonary hypertension**|Right-to-left shunting, refractory hypoxaemia|\n|**Promotion of bacterial growth**|**Meconium is sterile and there is no infection** — but it **attenuates the immune response to infection**|\n|**Surfactant deactivation**|Adds a surfactant-deficient lung to an obstructed one|\n\n### The loop\n- **Three limbs:** meconium aspiration → **mechanical obstruction · chemical inflammation · surfactant inactivation**.\n- **Mechanical limb:** **air trapping → uneven ventilation → AIR LEAKS**.\n- **Chemical and surfactant limbs:** **atelectasis → intrapulmonary shunting**.\n- **⚠️ Both converge:** on **hypoxaemia and acidosis**, which **drives primary pulmonary hypertension** — and **PPHN worsens the hypoxaemia**, closing the loop.\n- **PPHN** *(not in course material)* — failure of pulmonary vascular resistance to fall after birth, shunting **right to left through duct and foramen ovale**; the clue is a **pre-/post-ductal saturation gap**.\n\nSrc: L9 pp.47–49 (p.49 image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "prd-16",
+        "w": "must",
+        "h": "MAS — who gets it, how it looks, what the film shows",
+        "body": "**The typical patient:** a **term or post-term infant who suffered placental insufficiency**, shown as **IUGR, fetal distress and meconium-stained amniotic fluid**.\n\n### Risk factors\n- **Fetal:** **post maturity**, **oligohydramnios**.\n- **Maternal:** **hypertension, pre-eclampsia, eclampsia · diabetes · heavy cigarette smoking · chronic respiratory or cardiovascular disease**.\n\n### Clinically\n- **Staining:** of the **skin, umbilical cord and amniotic fluid**.\n- **Chest:** distress with a **BARREL-SHAPED CHEST**, from over-inflation.\n- **⚠️ The rule:** consider MAS in **ANY** infant born through meconium-stained fluid who develops distress.\n- **Timing:** **some are asymptomatic at birth** and worsen as meconium moves into the **lower tracheobronchial tree**.\n- **Against TTN:** greater distress **immediately after delivery**, and gases with **more acidosis, hypercapnia and hypoxaemia**.\n\n### Chest X-ray\n- **1 Parenchyma:** **bilateral scattered atelectasis, obstructive emphysema and pneumonitis**.\n- **2 Air leak:** **pneumomediastinum or pneumothorax** may be present.\n\nSrc: L9 pp.50–54 (pp.52, 53 image-only)",
+        "qs": []
+      },
+      {
+        "id": "prd-17",
+        "w": "must",
+        "h": "MAS — treatment",
+        "body": "### In the delivery room\n- **Suction:** **oral and pharyngeal, as soon as the head is delivered**.\n- **Oxygen supply.**\n\n### In the NICU\n- **Respiratory:** **oxygen and mechanical ventilation if indicated**, judged by the **work of breathing and the blood gases**.\n- **Also:** **prophylactic antibiotics · intravenous fluids**.\n- **Complications:** treat **PPHN** and **pneumothorax**.\n- **⚠️ Expect air leak:** for a post-term baby born apnoeic and floppy with deeply stained meconium, intubated and ventilated, the deck makes **AIR LEAK SYNDROME (pneumothorax)** the commonest NICU complication. *No key is printed with the question; recorded as it stands.*\n\nSrc: L9 pp.55, 66",
+        "qs": []
+      },
+      {
+        "id": "prd-18",
+        "w": "high",
+        "h": "Neonatal pneumonia",
+        "body": "### Three acquisition pathways\n- **Congenital —** acquired **in utero**.\n- **Perinatal —** acquired **during the delivery process**.\n- **Postnatal —** acquired **after birth**, in the NICU or at home; presents **early- or late-onset**.\n\n### The definition note\n- **⚠️ The strict definition:** the presence of **POLYMORPHONUCLEAR LEUKOCYTES in the alveoli or interstitium**.\n- **⚠️ Bacteria:** **not strictly necessary** to meet the pathological definition.\n\n### Radiology and its trap\n- **Film:** **lobar consolidation** — the deck shows **right upper lobe**.\n- **⚠️ Trap:** congenital pneumonia is **often indistinguishable from HMD** (per-6).\n\n*Organisms by age, and pneumonia beyond the newborn, in `resp-pneumonia`; neonatal sepsis in `neonatal`.*\n\nSrc: L9 pp.56–58 (p.57 image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "prd-19",
+        "w": "high",
+        "h": "Pulmonary air leak syndromes",
+        "body": "- **What they are:** a **spectrum with one pathophysiology** — **pneumomediastinum and pneumothorax**.\n- **Mechanism:** **over-distension of alveolar sacs or terminal airways** → **disruption of airway integrity** → **dissection of air into surrounding spaces**.\n- **Sign 1:** **sudden respiratory distress** and deterioration, with **altered vital signs and worsening blood gases**.\n- **Sign 2:** **asymmetry of the thorax** in **unilateral** cases.\n\n*Transillumination, its false positives and negatives, and chest-tube drainage are in per-6.*\n\nSrc: L9 pp.59–62",
+        "qs": []
+      },
+      {
+        "id": "prd-20",
+        "w": "must",
+        "h": "Congenital diaphragmatic hernia",
+        "body": "### The triad\n- **1 Respiratory distress —** **severe and IMMEDIATE**.\n- **2 Abdomen —** **SCAPHOID (sunken)**.\n- **3 Heart sounds —** **shifted to the RIGHT**.\n\n### Diagnosis\n- **Antenatal:** often on **prenatal ultrasound at 18–20 weeks**.\n\n### Management *(not in course material)*\n- **⚠️ Do NOT bag-mask ventilate —** it inflates the herniated bowel and worsens the compression.\n- **Do:** **intubate early**, pass a **large nasogastric tube** to decompress the gut.\n- **Surgery:** repair **AFTER cardiorespiratory stabilisation**, not as an emergency.\n- **Outcome:** turns on **pulmonary hypoplasia** and associated **PPHN**.\n\nSrc: L9 pp.63–65 (pp.63, 65 image-only)",
+        "qs": []
+      },
+      {
+        "id": "prd-21",
+        "w": "must",
+        "h": "The Big Three side by side — RDS, TTN and MAS",
+        "body": "|Variable|**RDS** (hyaline membrane)|**TTN** (wet lung)|**MAS** (aspiration)|\n|---|---|---|---|\n|**Typical patient**|**Preterm**|**Term / late preterm, elective CS**|**Term / post-term, hypoxia or distress**|\n|**Onset and course**|**Immediate, worsens over 48 h**|**< 2 hours, resolves in 3 days**|**Often immediate, progressive; BARREL CHEST**|\n|**Blood gas**|**Progressive hypoxaemia, high PCO₂, mixed acidosis**|**Mild alterations**|**Severe acidosis, hypercapnia, hypoxaemia**|\n|**Core mechanism**|**Surfactant deficiency**|**Fetal lung fluid retention**|**Airway obstruction and chemical pneumonitis**|\n|**Chest X-ray**|**Ground-glass mottling + air bronchogram, small volumes**|**Perihilar streaking, fluid in the fissures**|**Patchy atelectasis, obstructive emphysema, air leak**|\n\n### The mechanism in one line each\n- **RDS —** **high surface tension collapses the sac during expiration**.\n- **TTN —** **interstitial and lymphatic fluid impedes gas exchange**.\n- **MAS —** **viscid meconium blocks airflow and triggers chemical inflammation**.\n\nSrc: L9 pp.71, 75 (both image-only, recovered by render); the X-ray row L9 pp.27, 41, 53",
+        "qs": []
+      }
+    ]
+  },
+  "perinatal-hie": {
+    "intro": "What a period without oxygen does to the brain. The three-part definition, why the damage is delayed and the window six hours wide, Sarnat and Thompson staging, and therapeutic hypothermia — who is cooled, by criteria A, B and C, and how.",
+    "sections": [
+      {
+        "id": "phi-1",
+        "w": "must",
+        "h": "Hypoxic-ischaemic encephalopathy — a three-part definition",
+        "body": "**The definition is an equation:** **intrapartum OR neonatal distress**, **PLUS neonatal neurological symptoms**. Distress alone is not HIE; neurological signs alone are not HIE.\n\n### Intrapartum distress\n- **Obstetrical evidence:** **CTG signs of fetal distress · depressed scalp pH · fresh meconium**.\n- **Obstetrical causes:** **prolapse of the umbilical cord · placental abruption · rupture of the uterus**.\n\n### Neonatal distress — four criteria\n- **Apgar:** **depressed at 5 and/or 10 minutes**.\n- **Ventilation:** needed **post partum for more than 5 minutes**.\n- **pH:** **< 7.1** in the **umbilical cord** or in the **first hour post partum**.\n- **Base deficit:** **> 10 mEq/L**.\n\n### Cerebral dysfunction\n- **Tone and posture:** abnormal.\n- **Consciousness:** abnormal level.\n- **Primitive reflexes:** abnormal, e.g. **sucking**.\n- **Seizures.**\n\n*The Apgar score itself is in per-2 — no deck prints it.*\n\nSrc: L12 pp.3–7 (the definition banner is reprinted over each limb)",
+        "qs": []
+      },
+      {
+        "id": "phi-2",
+        "w": "high",
+        "h": "Magnitude — a problem of quality of life, not of mortality",
+        "body": "### The numbers\n- **NICU admissions:** **4.7 %** — El-Shatbi Hospital, **2016**.\n- **Neonatal deaths:** **23 % of all of them** are caused by perinatal asphyxia.\n- **Global:** **0.7–1.2 million birth-asphyxia deaths per year** (WHO 2004).\n\n### Why the figures under-report\n**The four reasons:** 1 lack of a filing system · 2 high incidence of home deliveries · 3 lack of diagnosis · 4 cause of death in healthcare facilities often inadequately documented.**\n\n### The deck’s own point\n- **The message:** *\"not a matter of mortality, it is a matter of life quality.\"*\n- **Moderate HIE:** **50 % of survivors** have long-term disabilities.\n- **Severe HIE:** **90 % of survivors** do.\n\n### School-age outcomes\n\n|Outcome|**Moderate** (n = 181)|**Severe** (n = 11)|\n|---|---|---|\n|**Disabled**|**21 %**|**100 %**|\n|**Cerebral palsy**|**12 %**|**100 %**|\n|**Multiply disabled**|**8 %**|**100 %**|\n|**Cognitive deficits**|**8 %**|**82 %**|\n|**Epilepsy**|**2 %**|**72 %**|\n|**Legal blindness**|**1 %**|**46 %**|\n|**Hearing loss (aids)**|**6 %**|**9 %**|\n\nSrc: L12 pp.8–14 (p.13 image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "phi-3",
+        "w": "must",
+        "h": "Causes — when, and from where",
+        "body": "- **By timing:** **antepartum 50 % · intrapartum 40 % · postpartum 10 %**.\n- **Fetal and cord:** **oligohydramnios · cord prolapse · carboxyhaemoglobin · significant anaemia (isoimmunisation, ruptured vasa praevia)**.\n- **Uterine and placental:** **excessive uterine activity · placental abruption · placental infarction · chorioamnionitis**.\n\n### Maternal — four groups\n\n|Group|Causes|\n|---|---|\n|**↓ arterial oxygen tension**|**Respiratory disease · hypoventilation, seizure, trauma · smoking**|\n|**↓ oxygen-carrying capability**|**Significant anaemia (iron deficiency, haemoglobinopathies) · carboxyhaemoglobin (smokers)**|\n|**↓ uterine blood flow**|**Hypotension (blood loss, sepsis) · regional anaesthesia · maternal positioning**|\n|**Chronic conditions**|**Vasculopathies — SLE, type I diabetes, chronic hypertension · antiphospholipid syndrome**|\n\nSrc: L12 pp.16–20 (p.20 image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "phi-4",
+        "w": "must",
+        "h": "Pathogenesis — the fetus defends its brain until it cannot",
+        "body": "- **Trigger:** **interruption of placental blood flow**.\n- **Response:** **cardiac output is REDISTRIBUTED** — the fetal diving reflex.\n- **Preserved:** **cerebral, myocardial and adrenal** blood flow.\n- **Reduced:** **renal, intestinal and skin** blood flow.\n- **⚠️ Critical threshold:** past it, the **adaptive circulatory mechanisms FAIL**.\n- **Result:** **hypoxic-ischaemic cerebral injury**.\n\n*Which is why kidney, gut and skin are damaged FIRST and the brain LAST: renal failure and NEC after asphyxia mean a longer insult than encephalopathy alone.*\n\nSrc: L12 p.21 (image-only, recovered by render)",
+        "qs": [],
+        "flow": {
+          "title": "Birth asphyxia — redistribution, then failure",
+          "steps": [
+            {
+              "k": "step",
+              "t": "Interruption of placental blood flow",
+              "n": "abruption, cord prolapse, uterine rupture"
+            },
+            {
+              "k": "step",
+              "t": "Cardiac output redistributed",
+              "n": "the fetal diving reflex"
+            },
+            {
+              "k": "step",
+              "t": "Cerebral, myocardial and adrenal flow PRESERVED",
+              "n": "the brain is defended"
+            },
+            {
+              "k": "step",
+              "t": "Renal, intestinal and skin flow REDUCED",
+              "n": "the price paid for it"
+            },
+            {
+              "k": "alert",
+              "t": "Critical threshold — adaptive circulatory mechanisms FAIL",
+              "n": "the defence collapses"
+            },
+            {
+              "k": "alert",
+              "t": "Hypoxic-ischaemic cerebral injury",
+              "n": ""
+            }
+          ]
+        }
+      },
+      {
+        "id": "phi-5",
+        "w": "must",
+        "h": "The phases of injury — and why the window is six hours",
+        "body": "**Injury is not one event.** The insult opens a delay, and most of the damage that disables the child is done after it.\n\n|Phase|Timing|What is happening|\n|---|---|---|\n|**Hypoxic-ischaemic insult**|**~1 hour**|Primary energy failure|\n|**LATENT phase**|**6–15 hours**|Partial recovery — **the therapeutic window**|\n|**SECONDARY phase**|**3–10 days**|**↓ metabolism · cytotoxic oedema · excitotoxins · DELAYED CELL DEATH**|\n\n- **⚠️ The rationale in one sentence:** **hypothermia causes prolongation of the latent phase** — which is why cooling must start **within the first 6 hours**.\n\n*The deck’s own banner obscures the middle box of its diagram; the latent phase is named by the timeline and the banner rather than by the label.*\n\nSrc: L12 p.22 (image-only, recovered at 300 dpi)",
+        "qs": []
+      },
+      {
+        "id": "phi-6",
+        "w": "must",
+        "h": "HIE is a multi-organ disease",
+        "body": "**The upstream event:** **hypoxia-ischaemia from failure of oxygenation across the placenta, the umbilicus, or postnatal respiratory depression**.\n\n|Organ|Manifestation|\n|---|---|\n|**Brain**|**Encephalopathy — abnormal neurological signs · SEIZURES**|\n|**Lung**|**Respiratory failure — APNOEA**|\n|**Heart**|**Myocardial dysfunction · PPHN · hypotension**|\n|**Metabolic**|**Hypoglycaemia · hypocalcaemia · hyponatraemia**|\n|**Other**|**Renal failure · DIC**|\n\n*Follows from phi-4: the organs the diving reflex sacrificed are the ones that fail.*\n\nSrc: L12 p.53 (image-only, recovered at 300 dpi; the slide reproduces a textbook figure captioned 11.21)",
+        "qs": []
+      },
+      {
+        "id": "phi-7",
+        "w": "must",
+        "h": "Sarnat staging — the grading everything else keys off",
+        "body": "**Modified from Sarnat and Sarnat.** Mild is stage I, moderate II, severe III.\n\n|Sign|**Mild (I)**|**Moderate (II)**|**Severe (III)**|\n|---|---|---|---|\n|**Level of consciousness**|**HYPERALERT**|**Lethargic**|**Coma**|\n|**Muscle tone**|**Normal**|**Mild hypotonia**|**Flaccid**|\n|**Suck**|**Normal / weak**|**Weak / absent**|**Absent**|\n|**Moro**|**Strong**|**Weak / incomplete**|**Absent**|\n|**Seizures**|**Absent**|**Common**|**Frequent, difficult to control**|\n\n- **⚠️ At the mild end:** the discriminator is **HYPERALERTNESS, not depression** — jittery and over-awake, not flat.\n- **⚠️ Who is cooled:** **moderate and severe** only. Mild HIE outcomes are **not always fully favourable**, but routine cooling for it **remains uncertain**.\n\nSrc: L12 p.24; the mild-HIE caveat L12 p.58",
+        "qs": []
+      },
+      {
+        "id": "phi-8",
+        "w": "high",
+        "h": "Thompson score — the bedside numerical alternative",
+        "body": "**Nine signs, each 0 to 3.** Unlike Sarnat it gives a single number that can be repeated daily.\n\n|Sign|**0**|**1**|**2**|**3**|\n|---|---|---|---|---|\n|**Tone**|Normal|**Hyper**|**Hypo**|**Flaccid**|\n|**Level of consciousness**|Normal|**Alert, stare**|**Lethargic**|**Comatose**|\n|**Fits**|None|**< 2 per day**|**> 2 per day**|—|\n|**Posture**|Normal|**Fisting and cycling**|**Strong distal flexion**|**Decerebrate**|\n|**Suckling**|Normal|**Poor**|**Absent**|—|\n|**Moro**|Normal|**Partial**|**Absent**|—|\n|**Grasp**|Normal|**Poor**|**Absent**|—|\n|**Respiration**|Normal|**Hyperventilation**|**Brief apnoea**|**Apnoea (IPPV)**|\n|**Fontanelle**|Normal|**Full**|**Tense**|—|\n\n*Five of the nine top out at 2, so the maximum is 22 (not in course material).*\n\nSrc: L12 p.25",
+        "qs": []
+      },
+      {
+        "id": "phi-9",
+        "w": "must",
+        "h": "Neuroimaging and aEEG",
+        "body": "- **Four modalities, in order:** **1 cranial ultrasound · 2 CT · 3 MRI · 4 aEEG**.\n- **MRI T1-weighted:** **HIGH signal in the posterior limb of the internal capsule and the thalami**.\n- **MRI T2-weighted:** **LOW signal in the same regions**.\n\n### Amplitude-integrated EEG\n\n|Trace|Upper voltage|Lower voltage|\n|---|---|---|\n|**Normal**|**> 10 µV**|**> 5 µV**|\n|**Moderately abnormal**|**> 10 µV**|**< 5 µV**|\n|**Severely abnormal**|**< 10 µV**|**< 5 µV**|\n\n- **Other use:** **neonatal seizure detection**, on a CFM trace beside the raw EEG.\n- **⚠️ What it is:** an **adjunct** supporting assessment and prognosis — **not a replacement for clinical examination**, and **not useless in cooled infants**.\n\nSrc: L12 pp.26–32, 58 (pp.28, 29, 32 image-only)",
+        "qs": []
+      },
+      {
+        "id": "phi-10",
+        "w": "must",
+        "h": "Therapeutic hypothermia — why it works",
+        "body": "**Status:** the **standard evidence-based neuroprotective treatment for moderate-to-severe neonatal HIE**, and the only one. Its purpose is **to reduce SECONDARY brain injury** — the primary insult is already over.\n\n### Not a new idea\n- **Baltimore, 1955:** hypothermia with transfusion of oxygenated blood — **94 % survival, 3 % with neurologic sequelae** at a **42-month** average follow-up (Westin, 1962).\n- **Burnard, 1958:** **asphyxiated newborns run 2 °C cooler** than non-asphyxiated newborns — the body attempts it unaided.\n\n### The evidence base\n**Five trials:** **Cool Cap (Gluckman, Lancet 2005) · NICHD (Shankaran, NEJM 2005) · TOBY (Azzopardi, NEJM 2009) · China Study Group (Zhou, J Peds 2010) · ICE trial (Simbruner, Pediatrics 2016).** Verdict: **effective and safe.**\n\n### Seven mechanisms\n- **1 Cerebral metabolism —** ↓ by **5–7 % per degree Celsius** fall in body temperature.\n- **2–4 Cell death —** ↓ **apoptosis**, ↓ **excitatory amino acids**, ↓ **free radical production**.\n- **5 Seizures —** ↓ **duration**.\n- **6–7 Brain water —** ↓ **blood–brain barrier disruption**, ↓ **cerebral oedema**.\n\nSrc: L12 pp.33–41, 55, 60",
+        "qs": []
+      },
+      {
+        "id": "phi-11",
+        "w": "must",
+        "h": "Who gets cooled — criteria A, B and C",
+        "body": "### Criterion A — clinical and laboratory\n- **Apgar:** **≤ 5 at 5 minutes** after birth.\n- **Resuscitation:** continued need **> 10 minutes**.\n- **Fetal distress:** signs of it.\n- **pH:** **< 7.1 within 60 minutes** of birth.\n- **Base deficit:** **≥ 10 mmol/L within 60 minutes** of birth.\n\n### Criterion B — clinical\n- **The rule:** **disturbed consciousness PLUS at least one** of the following.\n- **The four:** **abnormal pupillary reflexes · abnormal muscle tone · absent or weak suck · clinical seizures**.\n\n### Criterion C — aEEG\n- **The recording:** a **CFM record of at least 30 minutes**, obtained **within the first 6 hours of life**.\n- **Qualifying traces:** **1** normal background with some electrical seizure activity · **2** moderately abnormal · **3** severely abnormal.\n\n### The gestational threshold\n- **⚠️ Standard cooling:** neonates **≥ 36 weeks with moderate-to-severe HIE** *(not in course material)*. **A 32-week infant with seizures and a 35-week infant with mild encephalopathy are not standard candidates.**\n\nSrc: L12 pp.47–49; the threshold from L12 pp.61–62 as an unkeyed question, answered from general knowledge",
+        "qs": []
+      },
+      {
+        "id": "phi-12",
+        "w": "must",
+        "h": "How cooling is done",
+        "body": "|Parameter|The deck’s value|\n|---|---|\n|**Time of starting**|**As early as possible, within the first 6 hours of birth**|\n|**Target temperature**|**Rectal 33 °C – 35 °C**|\n|**Duration**|**84 hours** *(see the defect note)*|\n|**Technique**|**Active** or **passive** cooling|\n\n*⚠️ Defect: L12 p.51 gives 84 hours, while L12 p.57’s own MCQ offers 12 / 24 / 48 / 72 hours and no key. The trial standard in Cool Cap, NICHD and TOBY is 72 hours (not in course material). Both recorded; neither overwritten.*\n\n### Passive cooling\n- **Step 1:** **switch off the radiant heater**.\n- **Step 2:** **nurse the baby naked**.\n- **⚠️ Cool paks and cool mattress:** **from the REFRIGERATOR, NEVER the FREEZER**, at around **10 °C**.\n\n### Whole body versus selective head cooling\n- **Whole body:** **all brain layers homogeneously cooled**.\n- **Selective head:** meant **to decrease the systemic effects** of hypothermia; **⚠️ unfortunately cools only superficial cortical layers**.\n\nSrc: L12 pp.42–46, 51–52 (pp.42, 45 image-only); the defect from L12 pp.51 and 57",
+        "qs": []
+      },
+      {
+        "id": "phi-13",
+        "w": "must",
+        "h": "Supportive management of the asphyxiated newborn",
+        "body": "- **1 Airway —** maintain **oxygenation and ventilation**.\n- **2 Circulation —** maintain **adequate perfusion**.\n- **3 Vasopressors —** where perfusion cannot be maintained otherwise.\n- **4 Homeostasis —** normal **haematocrit, blood glucose and electrolytes, especially CALCIUM**.\n- **5 Seizures —** **phenobarbital, phenytoin, midazolam, lidocaine**.\n\n*⚠️ Phenobarbital is not the neuroprotective treatment — the deck asks this directly, and the answer is therapeutic hypothermia, not phenobarbital, mannitol or exchange transfusion.*\n\n*Neonatal seizures as an entity, and their other causes, are in `neonatal`.*\n\nSrc: L12 pp.50, 55",
+        "qs": []
+      }
+    ]
+  },
+  "endocrine": {
+    "intro": "Type 1 diabetes: classification, the diagnostic numbers, insulin regimens, and what to screen for and when. Ends on hypoglycaemia in the child on insulin — the emergency at the other end of the dose.",
+    "sections": [
+      {
+        "id": "endo-1",
+        "w": "must",
+        "h": "Diabetes mellitus — definition and classification",
+        "body": "**Diabetes mellitus:** a **chronic metabolic disorder characterized by hyperglycemia** due to **impaired insulin secretion, action, or both**.\n\n- **Why classify:** multiple subtypes, each with **different causes, treatments and outcomes** — proper classification is essential.\n- **In children:** **type 1 is the most common form**, usually from **autoimmune destruction of pancreatic beta cells**.\n\n### The classification grid\n|Category|Key mechanism|Important examples|\n|---|---|---|\n|**Type 1 diabetes**|**β-cell destruction → absolute insulin deficiency**|**Autoimmune (most common)**, **idiopathic**|\n|**Type 2 diabetes**|**insulin resistance + relative insulin deficiency**|**obesity-related diabetes**|\n|**Monogenic diabetes**|**single gene defect affecting insulin secretion**|**MODY (HNF1A, GCK)**, **neonatal DM (KCNJ11, INS)**|\n|**Pancreatic disease**|**destruction of pancreas**|**cystic fibrosis**, **pancreatitis**|\n|**Endocrine disorders**|**excess counter-regulatory hormones**|**Cushing syndrome**, **hyperthyroidism**|\n|**Drug-induced**|**insulin resistance or ↓ secretion**|**steroids**, **antipsychotics**|\n|**Genetic syndromes**|**associated chromosomal disorders**|**Turner syndrome**, **Down syndrome**|\n\n### The two monogenic forms, defined\n- **MODY:** *Maturity-Onset Diabetes of the Young* — **single gene mutations affecting insulin secretion**.\n- **Neonatal diabetes:** **diagnosed before 6 months of age**; **may be transient or permanent**.\n\n### Epidemiology\n- **T1DM:** **more than 90 % of paediatric diabetes**.\n- **T2DM:** **once rare in children, now increasingly common** — obesity, lifestyle, genetics, high-risk ethnic populations.\n- **Monogenic:** **rare but underdiagnosed**.\n\n*Cushing syndrome and hyperthyroidism appear here only as causes; both are written as diseases in endo-34 and endo-31. Turner and Down go to `genetics`.*\n\nSrc: DM pp.1–2",
+        "qs": []
+      },
+      {
+        "id": "endo-2",
+        "w": "must",
+        "h": "Type 1 diabetes — aetiology and pathophysiology",
+        "body": "**The lesion:** **autoimmune destruction of pancreatic β-cells** in **genetically susceptible individuals**, especially **HLA genes**.\n\n- **Trigger:** **environmental factors such as viral infections (e.g. enterovirus)** may start the autoimmune process.\n- **Result:** **progressive β-cell destruction → absolute insulin deficiency**.\n\n### What insulin deficiency does, step by step\n- **Glucose handling:** **decreased glucose utilization by tissues** and **increased gluconeogenesis**.\n- **Counter-regulation:** **glucagon, cortisol, catecholamines and growth hormone rise** and **worsen the hyperglycaemia**.\n- **Fat:** **increased lipolysis → ketone body formation → metabolic acidosis**.\n- **Protein:** **protein breakdown and weight loss**.\n- **Water and salt:** **osmotic diuresis → dehydration and electrolyte loss**.\n\n*This is the same cascade DKA runs to completion — the diagram in endo-10 is its full form.*\n\nSrc: DM p.2",
+        "qs": []
+      },
+      {
+        "id": "endo-3",
+        "w": "must",
+        "h": "Presentation, diagnostic criteria and prediabetes",
+        "body": "### The classic symptoms\n- **The triad:** **polyuria** · **polydipsia** · **weight loss**.\n- **Also:** **polyphagia** · **fatigue** · **nocturnal enuresis** · **abdominal pain**.\n- **DKA may be the first presentation:** **vomiting, abdominal pain, Kussmaul breathing, dehydration, altered consciousness**.\n\n**The pearl the handout prints:** **always check blood glucose in any ill child** presenting with **dehydration, vomiting, abdominal pain or altered consciousness**.\n\n### Diagnosis — confirmed by ANY ONE\n|Test|Threshold|\n|---|---|\n|**Random glucose**|**≥ 200 mg/dL + symptoms**|\n|**Fasting glucose**|**≥ 126 mg/dL**|\n|**OGTT**|**≥ 200 mg/dL**|\n|**HbA1c**|**≥ 6.5 %**|\n\n### Prediabetes — the intermediate state before diabetes\n|Test|Range|\n|---|---|\n|**Fasting**|**100–125 mg/dL**|\n|**OGTT**|**140–199 mg/dL**|\n|**HbA1c**|**5.7–6.4 %**|\n\n- **Why it matters:** **high risk of progression**, and **preventable with lifestyle**.\n\n*Nocturnal enuresis and polyuria can be the first sign of diabetes, which is why the enuresis dipstick reads glucose as well as nitrite — that reasoning is written in `renal`, ren-17.*\n\nSrc: DM pp.3, 6",
+        "qs": []
+      },
+      {
+        "id": "endo-4",
+        "w": "must",
+        "h": "Treating type 1 diabetes — insulin",
+        "body": "- **Insulin therapy is essential** and **mandatory** in type 1 diabetes.\n- **Gold standard:** **intensive insulin therapy — the basal–bolus regimen**, by **multiple daily injections or insulin pump**, aiming to **mimic normal pancreatic secretion**.\n- **⚠️ Premix NPH + regular soluble insulin should NOT be considered best practice** for T1DM.\n- **Technology:** **newer analogs, continuous glucose monitoring (CGM) and pumps** improve control and reduce complications.\n- **Dose is not fixed:** needs **vary with age, growth, puberty, activity and illness** — frequent adjustment, individualized care.\n\n### The two components\n|Component|Agents|Timing|Share of total daily dose|Controls|\n|---|---|---|---|---|\n|**Bolus — rapid-acting**|**Lispro, Aspart, Glulisine**|**10–15 min before meals**|**50–70 %**|**post-meal glucose rise**|\n|**Basal — long-acting**|**Glargine, Detemir**|**once or twice daily**|**30–50 %**|**between meals and overnight**|\n|**Basal — ultra-long-acting**|**Degludec**|**once daily**|within the same **30–50 %**|**as above**|\n\n### The rest of the package\n- **Diet:** **carbohydrate counting and nutritional education**.\n- **Activity:** **regular exercise is encouraged**.\n- **Monitoring:** **blood glucose logs** and **HbA1c**.\n\n*Two things no deck names: the honeymoon (partial remission) phase, when residual β-cells briefly cut the insulin requirement after diagnosis, and sick-day rules — never omit insulin during illness, check ketones, give extra fluid (not in course material).*\n\nSrc: DM p.4; the honeymoon phase and sick-day rules are supplied and tagged",
+        "qs": []
+      },
+      {
+        "id": "endo-5",
+        "w": "high",
+        "h": "Treating type 2 diabetes",
+        "body": "### Lifestyle modification — first, and always\n- **Diet:** **healthy diet — reduce calories, balanced meals**.\n- **Weight:** **weight reduction**.\n- **Activity:** **regular physical activity**; **limit sedentary behaviour (screen time)**.\n\n### Drugs\n- **Metformin:** **first-line drug in most patients** — it **improves insulin sensitivity**.\n- **Insulin:** **may be indicated if severe hyperglycemia, ketosis or DKA**.\n\n### The rest\n- **Education of patient and family is essential.**\n- **Regular blood glucose monitoring.**\n- **Management of comorbidities:** **hypertension**, **dyslipidemia**, **obesity**.\n\n*T2DM is associated with family history, obesity and a sedentary lifestyle, and is commoner in obese adolescents (DM p.1). Obesity as a disease — BMI, the centile bands, drugs and surgery — is in `nutrition`.*\n\nSrc: DM pp.1, 5",
+        "qs": []
+      },
+      {
+        "id": "endo-6",
+        "w": "must",
+        "h": "Complications, and when to start screening for them",
+        "body": "- **Acute complications:** **DKA** and **hypoglycemia**.\n- **Chronic — microvascular:** **nephropathy, retinopathy, neuropathy**.\n- **Chronic — macrovascular disease.**\n\n### The screening schedule\n| |When to commence screening|Screening method and frequency|\n|---|---|---|\n|**Nephropathy**|**T1D: at puberty or age 11 years with 2–5 years diabetes duration** · **T2D: at diagnosis**|**urinary ACR**, **confirmed with a 1st morning urine sample** — **annually**|\n|**Retinopathy**|**T1D: 11 years with 2–5 years diabetes duration** · **T2D: at diagnosis**|**fundus photography or mydriatic ophthalmoscopy** — **every 2–3 years**|\n|**Neuropathy**|**T1D: 11 years with 2–5 years diabetes duration** · **T2D: at diagnosis**|**history, physical examination, clinical tests** — **annually**|\n|**Macrovascular disease**|**T1D: 11 years with 2–5 years diabetes duration** · **T2D: at diagnosis**|**lipid panel every 3 years**; **BP at least annually, ideally at every clinic visit**|\n\n*The nephropathy row alone reads \"at puberty OR age 11\"; the other three give the age only. Printed as it stands.*\n\n*The whole grid is an image on the handout page — the extracted text stops at the heading and prints nothing after it.*\n\nSrc: DM p.6 (the grid is image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "endo-7",
+        "w": "high",
+        "h": "Follow-up, and the diseases that travel with type 1 diabetes",
+        "body": "### Routine monitoring at every visit\n- **Growth:** **height, weight, BMI, growth velocity**.\n- **Puberty:** **pubertal development**.\n- **Control:** **HbA1c every 3 months**, plus **glucose logs**.\n\n### Screening for associated autoimmune disease\n- **Thyroid disease:** **at diagnosis and every 2 years** — **TSH and anti-thyroid antibodies**.\n- **Coeliac disease:** **at diagnosis (or within the first year), then every 2–5 years** — **TTG-IgA is the first-line test**.\n- **Others to remember:** **Addison’s disease**, **autoimmune gastritis**.\n\n### Injection sites — examined at every visit\n- **Look for:** **lipohypertrophy** and **lipoatrophy**.\n- **Educate on:** **proper injection technique**, **rotation of sites**, **avoid reuse of needles**.\n\n*Thyroid screening is the one clinical thread joining diabetes to the thyroid half of this chapter — the disease it looks for is endo-30.*\n\nSrc: DM p.7",
+        "qs": []
+      },
+      {
+        "id": "endo-8",
+        "w": "high",
+        "h": "Hypoglycaemia in the child on insulin",
+        "body": "**The gap:** the handout names hypoglycaemia as **one of the two acute complications of T1DM** and teaches nothing about it. What follows is supplied *(not in course material)*.\n\n### Definition and the two symptom groups\n- **Threshold:** **blood glucose below 70 mg/dL** in a child on insulin.\n- **Autonomic, first:** **sweating, tremor, pallor, palpitations, hunger, anxiety**.\n- **Neuroglycopenic, later:** **confusion, irritability, slurred speech, drowsiness, seizure, coma**.\n- **Whipple’s triad:** **low glucose + compatible symptoms + relief on correction**.\n\n### Why it happened — ask every time\n- **Too much insulin**, or **a dose given without the meal it covered**.\n- **A missed or delayed meal**; **unplanned exercise**; **alcohol** in an adolescent.\n\n### Treatment\n- **Conscious:** **15 g of rapid-acting carbohydrate**, **recheck in 15 minutes**, repeat if still low, then a **complex carbohydrate**.\n- **Unconscious or fitting:** **IM glucagon**, or **IV dextrose** if a line is in.\n- **Never give oral glucose to an unconscious child.**\n\n*Two named patterns of morning hyperglycaemia: the **dawn phenomenon** (a physiological pre-waking counter-regulatory surge) and the **Somogyi effect** (rebound after an unrecognised nocturnal hypo — the fix is less insulin, not more).*\n\n*Neonatal hypoglycaemia is a different disease with different causes and is written in `neonatal`, from `10) new Seizures . Birth injuries , Hpoglycemia 2`.*\n\nSrc: DM p.6 names it only; the whole account is supplied and tagged. Neonatal hypoglycaemia cited to `neonatal`, not counted",
+        "qs": []
+      }
+    ]
+  },
+  "endo-dka": {
+    "intro": "The emergency of type 1 diabetes, and frequently its first presentation. The cascade, the misdiagnoses, then management in order — fluids first, insulin an hour later, potassium always, bicarbonate withheld — and cerebral oedema, which is what kills.",
+    "sections": [
+      {
+        "id": "endo-9",
+        "w": "must",
+        "h": "DKA — what it is, the triad, and how bad it is",
+        "body": "- **The leading cause of morbidity and mortality** in children with T1DM.\n- **A potentially life threatening condition.**\n- **Frequently the INITIAL presentation** of children with **new-onset T1DM**.\n- **Public health:** **public awareness campaigns about the early signs of diabetes** reduce the frequency of DKA in new-onset disease.\n\n### The classical triad — all three\n|Component|Threshold|\n|---|---|\n|**Hyperglycemia**|**blood glucose > 200 mg/dL**|\n|**Metabolic acidosis**|**pH < 7.3** and **HCO3 < 18**|\n|**Ketonemia**|**blood β-OHB ≥ 3 mmol/L**, **or moderate/large ketonuria**|\n\n### Severity\n|Severity|pH|HCO3|\n|---|---|---|\n|**Mild**|**< 7.3**|**< 18 mEq/L**|\n|**Moderate**|**< 7.2**|**< 10 mEq/L**|\n|**Severe**|**< 7.1**|**< 5 mEq/L**|\n\n*The bands are ceilings, not exclusive ranges — the mild row repeats the diagnostic threshold, so read down the table and take the worst row the child meets.*\n\n### DKA versus hyperglycaemic hyperosmolar state\n|Feature|DKA|HHS|\n|---|---|---|\n|**Glucose**|**> 200 mg/dL**|**usually > 600 mg/dL**|\n|**pH and ketones**|**pH < 7.3, ketones present**|**pH near normal, ketones minimal**|\n\n*HHS is not taught in any deck; it is supplied because a stem giving very high glucose with a normal pH has no other home (not in course material).*\n\nSrc: L51 pp.4–5, 12; HHS supplied and tagged",
+        "qs": []
+      },
+      {
+        "id": "endo-10",
+        "w": "must",
+        "h": "DKA — the pathophysiological cascade",
+        "body": "**The trigger, either of two:** **absolute insulin deficiency**, **or** **stress, infection or insufficient insulin**.\n\n**The response:** **counter-regulatory hormones rise** — **↑ glucagon**, **↑ cortisol**, **↑ catecholamines**, **↑ growth hormone**.\n\n### The four limbs they drive\n|Limb|What follows|\n|---|---|\n|**↑ Lipolysis**|**↑ FFA to liver** → **↑ ketogenesis** → **↓ alkali reserve** → **ACIDOSIS**|\n|**↓ Glucose utilization**|feeds directly into **hyperglycaemia**|\n|**↑ Proteolysis, ↓ protein synthesis**|**↑ gluconeogenic substrates** → **↑ gluconeogenesis**|\n|**↑ Glycogenolysis**|feeds directly into **hyperglycaemia**|\n\n### And then, in order\n- **HYPERGLYCAEMIA** → **glucosuria (osmotic diuresis)**.\n- **Loss of water and electrolytes** → **DEHYDRATION**, worsened by **decreased fluid intake**.\n- **Dehydration** → **hyperosmolarity** and **impaired renal function**.\n- **Impaired renal function** closes the loop by **worsening the hyperglycaemia**.\n- **Acidosis** is compounded by **↑ lactate** from poor tissue perfusion.\n\n*The whole diagram is an image; the deck’s extracted text is the three-word slide title.*\n\nSrc: L51 p.11 (image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "endo-11",
+        "w": "must",
+        "h": "DKA — clinical signs, the misdiagnoses, and euglycaemic DKA",
+        "body": "### The clinical signs\n- **Gut:** **nausea, vomiting**, **abdominal pain**.\n- **Breathing:** **tachypnea**; **rapid and deep (Kussmaul) respiration**; **fruity breath odor**.\n- **Fluid:** **dehydration, which may be difficult to detect**; **continuing polyuria despite the dehydration**.\n- **Brain:** **confusion, drowsiness, loss of consciousness**.\n- **Circulation:** **shock — rapid pulse rate, poor peripheral circulation**.\n\n### The five misdiagnoses that delay the diagnosis in young children\n|The child presents with|And is called|\n|---|---|\n|**Vomiting**|**gastroenteritis or sepsis**|\n|**Abdominal pain**|**acute abdomen**|\n|**Hyperventilation**|**pneumonia or asthma**|\n|**Polyuria and enuresis**|**UTI**|\n|**Polydipsia**|**psychogenic**|\n\n### Euglycaemic DKA\n- **The warning:** children **known to have T1DM may develop DKA with NORMAL blood glucose levels**.\n- **Suspect if:** **nausea or vomiting** · **abdominal pain** · **hyperventilation** · **dehydration** · **reduced level of consciousness**.\n\nSrc: L51 pp.6–8",
+        "qs": []
+      },
+      {
+        "id": "endo-12",
+        "w": "high",
+        "h": "DKA — risk factors",
+        "body": "### In newly diagnosed cases\n- **Younger age (< 2 yr).**\n- **Delayed diagnosis.**\n- **Lower socioeconomic status.**\n- **Countries with low prevalence of DM.**\n\n### In known diabetic children\n- **Infections.**\n- **Insulin omission.**\n- **Poor metabolic control**; **previous episodes of DKA**.\n- **Gastroenteritis with persistent vomiting.**\n- **Psychiatric (including eating) disorders.**\n- **Challenging social and family circumstances.**\n- **Peripubertal and adolescent girls.**\n- **Limited access to medical services.**\n- **Failures in insulin pump therapy.**\n\nSrc: L51 pp.9–10",
+        "qs": []
+      },
+      {
+        "id": "endo-13",
+        "w": "must",
+        "h": "DKA — where to manage it, the goals, and the first measures",
+        "body": "### Where — four requirements, and what to do without them\n- **A specialist/consultant endocrinologist or paediatrician** with **training and expertise in DKA**.\n- **Experienced nursing staff** trained in **monitoring and management of DKA**.\n- **Written guidelines** for DKA management in children.\n- **A laboratory** giving **frequent and timely measurements** of biochemical variables.\n- **⚠️ If not available — REFER.**\n\n### Goals of therapy\n- **Correct dehydration**; **correct acidosis and reverse ketosis**.\n- **SLOWLY correct hyperosmolarity**; **restore blood glucose to near normal**.\n- **Avoid and treat complications of DKA**; **identify and treat any precipitating event**.\n\n### Immediate assessment — general PALS guidelines\n- **Immediate assessment, vital signs**; **weigh the patient**.\n- **Assess severity of dehydration**; **assess level of consciousness**.\n- **Obtain a blood sample**; **cardiac monitor, ECG**.\n\n### Additional measures\n- **Do NOT give oral fluids**; pass a **nasogastric tube**.\n- **A second peripheral IV catheter** — **avoid CVP**.\n- **Oxygen** in **severe circulatory impairment or shock**; **cardiac monitor**.\n- **Catheterize the bladder** if **unconscious or unable to void on demand**.\n- **Antibiotics to febrile patients AFTER obtaining appropriate cultures** of body fluids.\n\nSrc: L51 pp.14, 17–18, 20",
+        "qs": []
+      },
+      {
+        "id": "endo-14",
+        "w": "must",
+        "h": "DKA — the laboratory work-up, ICU criteria and monitoring",
+        "body": "### Initial labs\n- **Blood glucose** · **urine ketones** · **venous blood gases**.\n- **Basic blood chemistry** · **electrolytes (Na, K, Ca, P)** · **BUN, creatinine**.\n\n### Additional labs\n- **CBC** · **CRP** · **urine analysis** · **HbA1c, C-peptide** · **cultures as indicated**.\n\n### Criteria for ICU admission\n- **Severe DKA.**\n- **Compromised circulation.**\n- **Depressed level of consciousness.**\n- **At increased risk of cerebral edema:** **age < 5 yr** · **severe acidosis** · **low pCO2** · **high blood urea nitrogen**.\n\n### Monitoring — hourly, or more often as indicated\n- **Vital signs** · **neurological observations**.\n- **Amount of administered insulin** · **accurate fluid input and output**.\n- **Capillary blood glucose concentration.**\n- **Laboratory tests, 2–4 hourly:** **serum electrolytes, blood gases and urine acetone**.\n\n**What success needs, in the deck’s own words:** **meticulous monitoring**, **timely adjustments in treatment**, and **documentation on a flow chart**.\n\n*The initial-lab list and the hourly list are both images; only the additional labs and the three headings extract.*\n\nSrc: L51 pp.19, 21–23 (the initial labs and the hourly list image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "endo-15",
+        "w": "must",
+        "h": "DKA — fluid therapy",
+        "body": "**Three objectives:** **restoration of circulating volume** · **replacement of the ECF and ICF deficit** · **improved glomerular filtration with enhanced clearance of glucose and ketones from the blood**.\n\n### The three fluid phases\n|Phase|What to give|\n|---|---|\n|**Resuscitation**|**10 mL/kg** **over 30–60 minutes**, **0.9 % normal saline**|\n|**Deficit replacement**|guided by dehydration — but **the degree of dehydration is so difficult to assess**|\n|**Maintenance**|**1.5–2 times normal**, **spread over 36–48 hours**|\n\n### The sequence, and the glucose rule\n- **Start with 0.9 % saline, then 0.45 % saline.**\n- **Add 5 % glucose to the IV fluid when the plasma glucose falls to 250–300 mg/dL.**\n- **10 % dextrose may be necessary** to **prevent hypoglycemia while continuing to infuse insulin** to correct the metabolic acidosis.\n\n### Two arithmetic rules\n- **Subtract the initial resuscitation fluids** from the total.\n- **Urinary losses should NOT routinely be added** to the replacement calculation — **only in rare circumstances**.\n\n*Every number on this page and the next is an image; the extracted text is three empty headings.*\n\nSrc: L51 pp.25–28 (pp.26–27 image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "endo-16",
+        "w": "must",
+        "h": "DKA — insulin therapy",
+        "body": "- **⚠️ NO IV bolus insulin.**\n- **Prime the tubes with insulin** before connecting.\n- **⚠️ Start the insulin infusion 1–2 hr AFTER starting fluid replacement therapy** — fluids first, insulin second.\n- **Dose:** **0.05–0.1 unit/kg/hr**.\n- **How it is made up:** **dilute 5 units regular insulin in 50 mL normal saline**.\n- **Watch:** the **rate of decline of glucose**.\n- **⚠️ Do NOT stop insulin** — give glucose instead if the sugar falls.\n\n### The line\n- **Insulin should preferably NOT be given through a central line.**\n- **Unless it is the only available option**, because its **infusion may be interrupted when other fluids are given through the same line**.\n\n*Both slides are images; the extracted text is the title and the two footer prompts.*\n\nSrc: L51 pp.29–30 (image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "endo-17",
+        "w": "must",
+        "h": "DKA — potassium, and why bicarbonate is withheld",
+        "body": "### Potassium replacement\n- **Continue it throughout IV fluid therapy**, **except in renal failure**.\n- **⚠️ Defer potassium replacement until the child has voided.**\n- **Monitor:** **ECG — T wave changes**.\n- **Dose:** **40 mmol/L**.\n- **Salt:** **KCl or KPO4**.\n\n### Acidosis — bicarbonate is generally CONTRAINDICATED, for three reasons\n- **It causes a paradoxical CNS acidosis** and **decreases CNS oxygenation**.\n- **It corrects the acidosis too fast**, driving **K+ into cells** and causing **hypokalemia**.\n- **It shifts the oxygen dissociation curve to the left**, so **decreases oxygen delivery to the tissues**.\n\n*Bicarbonate treatment also appears in its own right as a risk factor for cerebral oedema — endo-18.*\n\nSrc: L51 pp.31–32 (p.31 image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "endo-18",
+        "w": "must",
+        "h": "Cerebral oedema — risk and recognition",
+        "body": "- **The most serious complication of DKA.**\n- **May develop WITHOUT warning symptoms.**\n- **Asymptomatic cerebral swelling** is believed to **occur more frequently**.\n- **⚠️ Initiate treatment as soon as the condition is SUSPECTED** — not when it is proven.\n\n### Risk factors\n- **The child:** **younger age** · **new onset diabetes** · **longer duration of symptoms**.\n- **At presentation:** **greater hypocapnia** · **increased BUN** · **severe acidosis**.\n- **From the treatment:** **bicarbonate treatment for correction of acidosis** · **an attenuated rise in serum Na during therapy** · **greater volumes of fluid given in the first 4 hr** · **administration of insulin in the first hour of fluid treatment**.\n\n### Signs and symptoms\n- **Headache and slowing of the heart rate.**\n- **Change in neurological status:** **restlessness, irritability, increased drowsiness, incontinence**.\n- **Specific neurological signs:** **cranial nerve palsies**, **papilledema**.\n- **Rising blood pressure**; **decreased O2 saturation**.\n\n### Timing\n- **Usually within the first 12 hr** after treatment has started.\n- **But it can occur BEFORE treatment has begun.**\n- **Rarely as late as 24–48 hr** after the start of treatment.\n\n*Three of the four treatment-related risk factors are the reasons behind endo-15’s and endo-16’s own rules — no bicarbonate, cautious first-4-hour volumes, insulin delayed to the second hour.*\n\nSrc: L51 pp.33–35",
+        "qs": []
+      },
+      {
+        "id": "endo-19",
+        "w": "must",
+        "h": "Cerebral oedema — diagnostic criteria and treatment",
+        "body": "**The rule:** diagnose on **1 diagnostic criterion**, **2 major criteria**, **or 1 major and 2 minor criteria**.\n\n### Diagnostic criteria\n- **Abnormal motor or verbal response to pain.**\n- **Decorticate or decerebrate posture.**\n- **Cranial nerve palsy.**\n- **Abnormal neurogenic respiratory pattern:** **grunting, tachypnea, Cheyne–Stokes respiration**.\n\n### Major criteria\n- **Altered mentation / fluctuating level of consciousness.**\n- **Sustained heart rate deceleration.**\n- **Age-inappropriate incontinence.**\n\n### Minor criteria\n- **Vomiting** · **headache** · **lethargy or not easily arousable**.\n- **Diastolic blood pressure > 90 mmHg** · **age < 5 yr**.\n\n### Treatment\n- **Initiate treatment as soon as the condition is suspected**; **admit to PICU**.\n- **Reduce the rate of fluid administration.**\n- **Mannitol 0.5–1 g/kg IV over 10–15 min**, **repeat if there is no initial response**.\n- **Hypertonic saline (3 %) IV 2.5–5 mL/kg over 10–15 min.**\n- **Elevate the head of the bed to 30°.**\n- **Intubation** may be necessary for **impending respiratory failure**.\n\n### Imaging — non-contrast CT\n- **⚠️ Treatment should NOT be delayed while waiting for the result.**\n- **What it is looking for:** a **lesion requiring emergency neurosurgery (intracranial haemorrhage)**, or one that **may necessitate anticoagulation (cerebrovascular thrombosis)**.\n\nSrc: L51 pp.36–37",
+        "qs": []
+      },
+      {
+        "id": "endo-20",
+        "w": "high",
+        "h": "Coming off the drip, and preventing the next episode",
+        "body": "### When to shift to the transitional phase — all three\n- **Can take oral fluids without nausea or vomiting.**\n- **Alert.**\n- **Ketosis is resolving:** **pH > 7.3** and **HCO3 > 18**.\n\n**The changeover rule:** **start subcutaneous insulin at least 30 minutes BEFORE stopping the intravenous insulin** — the overlap is what prevents a rebound.\n\n### Prevention\n- **The deck’s closing line:** **management of an episode of DKA is not complete until its cause has been identified and an attempt made to treat it**.\n- **In practice that means:** the **infection**, the **omitted dose**, the **failed pump**, or the **undiagnosed diabetes** — from endo-12’s two risk lists.\n\nSrc: L51 pp.38–39 (p.39 image-only, recovered by render)",
+        "qs": []
+      }
+    ]
+  },
+  "endo-thyroid": {
+    "intro": "The thyroid, then two adrenal disorders. Why a hypothyroid newborn looks normal and is screened on day 3–7 regardless, cretinism if it is missed, goitrous versus non-goitrous, and Graves; then congenital adrenal hyperplasia and Cushing.",
+    "sections": [
+      {
+        "id": "endo-21",
+        "w": "know",
+        "h": "The thyroid gland — structure and function",
+        "body": "### The gland\n- **Shape and position:** a **butterfly-shaped endocrine organ**, **two lobes on either side of the trachea connected by an isthmus**, **just below the larynx in the front of the neck**.\n- **Size:** the **largest endocrine gland**.\n- **Development:** **develops as a bud from the floor of the pharynx** and **descends to its level in the neck**.\n\n### The functional unit\n- **The follicle (acinus)** is the **functional unit of the gland**.\n- **Follicles are lined by epithelial cells and full of colloid.**\n- **Thyroid cells synthesize the hormones, which are STORED in the colloid.**\n\n### What the hormones are for\n- **Normal growth and development:** **linear growth** and **brain maturation**.\n- **Regulation of metabolic rate in every cell of the body.**\n\n*Ectopic thyroid tissue — the commonest developmental defect in congenital hypothyroidism — is a failure of that descent (endo-25).*\n\nSrc: L52 pp.4–7",
+        "qs": []
+      },
+      {
+        "id": "endo-22",
+        "w": "must",
+        "h": "Control, biosynthesis and release",
+        "body": "### The axis\n- **Hypothalamus:** **thyrotropin releasing hormone (TRH)**, which **stimulates the anterior pituitary**.\n- **Anterior pituitary:** **thyroid-stimulating hormone (TSH)**.\n- **Thyroid:** **TSH binds receptors on the epithelial cells**, **stimulating synthesis and secretion**.\n\n**The molecule:** the thyroid hormones are **two tyrosines linked together**, with **iodine added at three or four positions on the aromatic rings**.\n\n### Biosynthesis — four steps\n|Step|What happens|\n|---|---|\n|**1 Iodine trapping**|**plasma iodide → iodide** taken into the cell|\n|**2 Organification**|**oxidation to active iodine**, then **iodination of tyrosine** → **mono- and di-iodotyrosine (MIT + DIT)**|\n|**3 Coupling**|MIT and DIT combine → **tri- and tetra-iodothyronine (T3 & T4)**|\n|**4 Storage and release**|stored in colloid, then **T4 and T3 released**|\n\n### Release of stored hormone — four steps\n- **Endocytosis of thyroglobulin.**\n- **Fusion of the endosome with a lysosome.**\n- **Proteolysis of thyroglobulin.**\n- **Diffusion of free thyroid hormones into the blood.**\n\n### What is secreted, and what is active\n- **Secreted:** **a large majority of what the gland releases is T4**.\n- **Active:** **T3 is the considerably MORE active hormone**.\n- **Where T3 comes from:** **some is secreted, but the bulk is derived by deiodination of T4 in peripheral tissues, especially liver and kidney**.\n- **Reverse T3:** deiodination of T4 also yields **reverse T3, a molecule with NO known metabolic activity**.\n\n*Each of the four biosynthetic steps has its own inherited defect — the dyshormonogenesis list in endo-25 is this table read as a set of diseases.*\n\nSrc: L52 pp.8–12",
+        "qs": []
+      },
+      {
+        "id": "endo-23",
+        "w": "must",
+        "h": "Cretinism — the untreated child",
+        "body": "**Cretinism:** the deck’s own heading is **“mentally retarded dwarf”** — **mental retardation** with **short stature with infantile proportions** and **developmental delay**.\n\n### The characteristic features\n- **Face:** **coarse facial features** · **puffy eyes** · **hypertelorism** · **flat base of the nose** · **infantile nasolabial configuration**.\n- **Head:** **disproportionately large** · **delayed closure of the fontanels** · **low anterior hair line**.\n- **Hair:** **dry and brittle**.\n- **Mouth:** **large protruded tongue**.\n- **Neck:** **short, with redundant folds**.\n- **Radiology:** **absent lower femoral and upper tibial epiphyses** — printed as a knee radiograph.\n\n### The missed case, as the deck presents it\n- **Short with infantile proportions** · **large tongue** · **hoarse cry** · **umbilical hernia**.\n- **Mental deficiency if not treated early.**\n- **⚠️ But the physical stigmata REVERSE with treatment** — the mental deficit does not.\n\n**Endemic goitrous hypothyroidism:** the same picture arising from **iodine deficiency**, illustrated with adult goitres.\n\n*Short stature, bone age and the growth chart as subjects are `growth-puberty`’s — gp-2, gp-7, gp-8. Kept here only as features of this disease.*\n\nSrc: L52 pp.13–14, 21–24, 31–33 (the radiograph and the photographs are plates; the caption extracts)",
+        "qs": []
+      },
+      {
+        "id": "endo-24",
+        "w": "must",
+        "h": "The newborn — why the diagnosis is missed, and the early signs",
+        "body": "### Why it is missed\n- **Mostly ASYMPTOMATIC.** **Affected infants often appear normal at birth.**\n- **If symptomatic, mostly non-specific.**\n- **So:** **the neonatal screen is essential**, and clinically a **high index of suspicion** for the early signs.\n\n### Early signs in the newborn\n|Systemic|Physical|\n|---|---|\n|**Hypothermia**|**large at birth**|\n|**Sluggish and sleepy**|**wide fontanels**; **posterior fontanel > 0.5 cm**|\n|**Feeding difficulty**|**umbilical hernia**|\n|**Respiratory difficulty**|**large tongue**|\n|**Mottling of the skin and cold extremities**|**goiter may be present**|\n|**Constipation**; **hypotonia**|**prolonged physiologic jaundice**|\n\n### Two real records the deck prints as plates\n- **A six-month infant:** **length 56 cm**, **weight 7 kg**, **TSH 74 mU/mL**, **T4 1.6 µg/dL**, **delayed bone age**, with an **umbilical hernia**.\n- **A laboratory slip:** **T4 0.71 µg/mL (normal 7.2–14.4)** with **TSH more than 150 mIU/mL (normal 1.7–9.1)**.\n\n*Prolonged jaundice and umbilical hernia as newborn problems belong to `neonatal`; kept here as signs of this disease.*\n\nSrc: L52 pp.17, 20, 25–26 (pp.17 and 20 image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "endo-25",
+        "w": "must",
+        "h": "Congenital hypothyroidism — non-goitrous versus goitrous",
+        "body": "**The first branch:** **hypothyroidism → non-goitrous or goitrous**. **Whether the child has a goitre tells you which mechanism failed.**\n\n### Non-goitrous — the gland is absent, small or misplaced\n- **95 % developmental defect:** **hypoplasia** · **aplasia or athyrosis** · **ectopia (often hypoplastic)**.\n- **5 % other causes:** **TRH deficiency** · **TSH deficiency** · **TSH unresponsiveness** · **anti-thyroid immunity**.\n\n### Goitrous — the gland is present and being driven\n- **Dyshormonogenesis:** **trapping defect** · **organification defect** · **coupling defect** · **deiodination defect** · **thyroglobulin synthesis defect**.\n- **Iodine deficiency:** **endemic goitrous hypothyroidism**.\n- **Maternal goitrogenic drugs:** **iodides** · **amiodarone** · **antithyroid drugs**.\n\n### The two discriminations the deck examines itself on\n- **Commonest cause in an infant:** **agenesis of the thyroid gland**.\n- **A goitre CAN be found in:** **endemic goitrous hypothyroidism** · **inborn error of thyroxin synthesis** · **maternal drugs containing iodides**.\n- **A goitre is NOT found in:** **agenesis of the gland** · **thyrotropin (TSH) deficiency**.\n\n*The five dyshormonogenetic defects map one-to-one onto the four biosynthetic steps in endo-22.*\n\nSrc: L52 pp.27–29, 54–55",
+        "qs": []
+      },
+      {
+        "id": "endo-26",
+        "w": "must",
+        "h": "Neonatal screening — why it exists",
+        "body": "- **Congenital hypothyroidism is the commonest cause of PREVENTABLE mental retardation.**\n- **Treatment has to be early** to obtain **normal mental and physical development**.\n- **Affected infants often appear normal at birth.**\n- **Signs and symptoms in the newborn and young infant are minimal and non-specific**; the **classic signs appear gradually over 3–6 months**.\n- **Only 5–10 % of cases can be diagnosed in the first month without screening**; **before neonatal screening, less than 5 % were diagnosed in the neonatal period**.\n- **⚠️ Delay of diagnosis and treatment beyond the first 1–3 months of life results in IRREVERSIBLE neurological deficits.**\n- **Missed cases will be mentally retarded dwarfs.**\n\n### What screening buys, and what it does not\n- **Buys:** the **best chance for normal or near normal intellectual development**.\n- **Does not buy certainty:** **6–12 % false negative due to laboratory errors**.\n- **⚠️ So physicians should CONTINUE looking for signs and symptoms** suggestive of congenital hypothyroidism.\n\n*Intellectual disability as a subject belongs to `normal-dev`; kept here only as the outcome this programme prevents.*\n\nSrc: L52 pp.30, 34–35",
+        "qs": []
+      },
+      {
+        "id": "endo-27",
+        "w": "must",
+        "h": "Neonatal screening — how it is done in Egypt",
+        "body": "- **Who:** **all newborns**.\n- **When:** **the 3rd–7th day after birth**.\n- **Sample:** **blood specimens by heel stick**.\n- **Handling:** **adsorbed onto filter paper**, then **air dried**.\n- **Assay:** **analyzed in a central laboratory for TSH**.\n- **Result:** **abnormal results reported to the parents and to the treatment centre**.\n\n*Egypt screens on TSH; some countries use a T4 screen instead.*\n\n*⚠️ Not cord blood, and not day 1–3 — the deck sets its own MCQ on exactly this.*\n\nSrc: L52 pp.36, 48",
+        "qs": []
+      },
+      {
+        "id": "endo-28",
+        "w": "must",
+        "h": "Treatment of congenital hypothyroidism",
+        "body": "### Objectives\n- **Ensure normal growth and development.**\n- **Maintain the serum total T4 in the UPPER HALF of the normal range — 10 to 16 µg/dL.**\n- **With the serum TSH suppressed into the normal range.**\n\n*The deck gives the TSH target twice and differently: p.37 says \"usually below 10 mU/L\", p.38 \"usually below 5 mU/L\". Both as printed.*\n\n### What to give, and how much\n- **L-thyroxine TABLETS only** — **no liquid formulation**.\n\n|Age|Initial dose|\n|---|---|\n|**Newborn and young infant**|**10–15 µg/kg/day**|\n|**Infants 6–12 months**|**6–8 µg/kg/day**|\n|**1–5 years**|**5 µg/kg/day**|\n|**Older children**|**4 µg/kg/day**|\n|**Adults**|**2 µg/kg/day**|\n\n### How to give it\n- **Crush the tablet daily**, **mix with a few mL of water, breast milk or formula**, and feed it to the infant.\n- **⚠️ Do NOT give it with iron or soy protein formula** — they **bind T4 and inhibit absorption**.\n\n### For how long\n- **Most cases are permanent** and **require treatment for life**; **some are transient**.\n- **⚠️ Delay any test for permanency until after 3 years of age.**\n\n**What adequate treatment looks like on paper:** **T4 in the upper normal value for age**, with a **low but DETECTABLE TSH** — not an undetectable one.\n\nSrc: L52 pp.37–40, 47",
+        "qs": []
+      },
+      {
+        "id": "endo-29",
+        "w": "high",
+        "h": "Follow-up, and proving the disease is permanent",
+        "body": "### Follow-up\n- **Periodic follow up of growth and development.**\n- **Follow up of total T4 and TSH**, on this schedule:\n\n|When|Interval|\n|---|---|\n|**After starting L-thyroxine**|**at 2 and 4 weeks**|\n|**First year of life**|**every 1 month**|\n|**Between 1 and 3 years**|**every 2 months**|\n|**Thereafter until growth is completed**|**every 3 months**|\n|**Compliance questioned, or abnormal values**|**more frequently**|\n\n### Permanence can be ASSUMED if\n- **The thyroid uptake and/or scan reveals an ectopic gland or absent thyroid tissue.**\n- **The serum TSH is seen to increase above 20 mU/L after the first year of life** — presumably because of **insufficient T4 replacement**.\n\n### When permanence is NOT established — the withdrawal trial\n- **Discontinue L-thyroxine for 30 days**, at some point **after the child is 3 years of age**.\n- **Then measure T4 and TSH.**\n- **If T4 is low and TSH elevated:** **permanent hypothyroidism is confirmed** and **therapy is reinstituted**.\n\nSrc: L52 pp.41–43",
+        "qs": []
+      },
+      {
+        "id": "endo-30",
+        "w": "high",
+        "h": "Acquired hypothyroidism in the older child",
+        "body": "**The gap:** the deck teaches CONGENITAL hypothyroidism end to end and never leaves the neonate. What follows is supplied *(not in course material)*.\n\n- **Commonest cause:** **autoimmune (Hashimoto) thyroiditis**, in **older children and adolescents**, **commoner in girls**.\n- **Associations:** **type 1 diabetes**, **Down syndrome**, **Turner syndrome**, **coeliac disease**.\n- **Presentation:** a **firm, non-tender goitre**, **growth deceleration WITH weight gain**, **delayed bone age**, **constipation, cold intolerance, dry skin, lethargy**, **delayed puberty**.\n- **Diagnosis:** **TSH high, free T4 low**, with **anti-TPO and anti-thyroglobulin antibodies**.\n- **Treatment:** **L-thyroxine**, as in endo-28.\n\n### Congenital versus acquired\n|Feature|Congenital|Acquired (Hashimoto)|\n|---|---|---|\n|**Age**|**newborn**|**older child, adolescent**|\n|**Found by**|**neonatal screen**|**goitre or growth failure**|\n|**Risk if missed**|**irreversible mental retardation**|**growth loss, reversible**|\n\n*Two sourced anchors from other chapters: acquired hypothyroidism is the **commonest ENDOCRINE cause of short stature** (`growth-puberty` gp-7), and the **obese-and-SHORT** child is endocrine where the obese-and-tall child is nutritional (gp-4). Every child with T1DM is screened for it 2-yearly — endo-7.*\n\nSrc: the disease is supplied and tagged; the short-stature and obesity anchors are `growth-puberty`’s (L13), cited only, not counted",
+        "qs": []
+      },
+      {
+        "id": "endo-31",
+        "w": "must",
+        "h": "Graves disease",
+        "body": "- **The commonest cause of hyperthyroidism in children.**\n- **Less common in children than in adults.**\n- **Can present with non-specific symptoms.**\n- **The mechanism:** **autoimmune thyroiditis secondary to the production of thyroid-stimulating immunoglobulins (TSIs)**.\n\n### Clinical manifestations\n|Group|Features|\n|---|---|\n|**Systemic**|**anxiety, restlessness** · **increased appetite** · **sweating** · **diarrhoea** · **weight loss** · **rapid growth in height** · **advanced bone maturity** · **tremor** · **tachycardia, wide pulse pressure** · **warm, vasodilated peripheries** · **goitre (bruit)**|\n|**Neuropsychiatric**|**learning difficulties / behaviour problems** · **psychosis**|\n|**Eye signs** (uncommon in children)|**exophthalmos** · **ophthalmoplegia** · **lid retraction** · **lid lag**|\n\n### Investigations\n- **Thyroid ultrasound.**\n- **Radioiodine scan:** images at **24 hours after ingestion of iodine-123**; the **Graves thyroid is LARGER and concentrates a HIGHER fraction of radioiodine** than a normal gland.\n- **Thyroid function tests** — but see the note below.\n\n*⚠️ L52 p.59’s TFT panel prints **T4 ↓, T3 ↓, TSH ↓↓** — read at 400 dpi to be sure. Its own case on p.61 gives **T4 > 30 µg/dL** and **T3 > 400 ng/mL** against normal ranges of 4.7–13.5 and 80–200, with **TSH 0.04**. Recorded as printed; the case is the one to learn from.*\n\n### The case the deck builds it on\n- **A 9-year-old girl:** **palpitations, loose stools, 1 kg weight loss despite a good appetite, irritability**.\n- **On examination:** **anxious**, **pulse 130/min**, **BP 110/55 mmHg**, a **diffusely and symmetrically enlarged, firm, non-tender thyroid with an audible bruit**.\n- **Eyes:** **thyroid stare**, **eyelid lag**, **mild proptosis**.\n\n### Treatment\n- **Medical:** **antithyroid drugs** and **beta blockers**.\n- **Definitive:** **radioiodine**, or **surgery**.\n\n*No agent is named on the slide: in practice the antithyroid drug is **carbimazole or methimazole**, with **propylthiouracil** reserved because of hepatotoxicity, and the feared decompensation is **thyroid storm** (not in course material).*\n\nSrc: L52 pp.57–61 (the TFT panel image-only, recovered by render); the drug names and thyroid storm are supplied and tagged",
+        "qs": []
+      },
+      {
+        "id": "endo-32",
+        "w": "high",
+        "h": "Congenital and neonatal thyrotoxicosis",
+        "body": "**The mechanism, in one line:** **maternal Graves disease (autoimmune thyroiditis)** → **transplacental passage of thyroid stimulating antibodies to the fetus** → **fetal and neonatal hyperthyroidism**.\n\n### What the baby shows\n- **Goiter.**\n- **IUGR.**\n- **Tachycardia.**\n\n### Course\n- **Transient — within a few months after birth**, as the maternal antibody clears.\n- **⚠️ But it may produce significant morbidity and may be FATAL** — transient is not the same as harmless.\n\n*The deck writes it \"Congenital thyrotoxicosis\" on one line and \"Fetal/Neonatal Thyrotoxicosis\" on the next; they are the same entity seen before and after delivery.*\n\nSrc: L52 pp.63–64",
+        "qs": []
+      },
+      {
+        "id": "endo-33",
+        "w": "high",
+        "h": "Congenital adrenal hyperplasia",
+        "body": "**The gap:** CAH is named as a cause in three paediatric decks and taught in none. What follows is supplied *(not in course material)*, except the ACTH test, which is printed.\n\n- **Inheritance:** **autosomal recessive**.\n- **The enzyme:** **21-hydroxylase deficiency in more than 90 %**.\n- **The mechanism:** **cortisol (± aldosterone) cannot be made** → **loss of negative feedback** → **ACTH rises** → **adrenal hyperplasia** and **shunting of precursors into ANDROGENS**.\n\n### How it presents\n- **Girls:** **ambiguous genitalia at birth** — virilization in utero.\n- **Boys:** **normal genitalia**, so nothing is noticed until they collapse.\n- **Salt-losing crisis, at 1–3 weeks:** **vomiting, weight loss, dehydration, shock**, with **hyponatraemia, hyperkalaemia, metabolic acidosis and hypoglycaemia**.\n- **Simple virilizing form:** **precocious pseudopuberty**, and the **tall child who becomes a short adult** through early epiphyseal fusion.\n\n### Diagnosis and treatment\n- **Screening biochemistry:** **17-hydroxyprogesterone raised**.\n- **Confirmation:** **the ACTH stimulation test, to exclude CAH** — printed in `14) Puberty`.\n- **Replace:** **hydrocortisone**, plus **fludrocortisone and salt** in salt-losers.\n- **⚠️ Stress dosing:** the **hydrocortisone dose must be increased during illness, injury or surgery**.\n\n*Late-treated virilizing CAH is one of the listed causes of central precocious puberty, and CAH appears in the peripheral-precocious-puberty lists for both sexes — both written in `growth-puberty`, gp-17 and gp-18.*\n\nSrc: the ACTH stimulation test is `14) Puberty`’s (cited only, not counted); the disease is supplied and tagged",
+        "qs": []
+      },
+      {
+        "id": "endo-34",
+        "w": "high",
+        "h": "Cushing syndrome in childhood",
+        "body": "**The gap:** `cushing` returns exactly two hits across all 64 decks and both are one-word entries in a cause list. What follows is supplied *(not in course material)*.\n\n### Causes\n- **Commonest by far:** **exogenous glucocorticoid therapy** — oral, and sometimes high-dose inhaled or topical.\n- **Cushing DISEASE:** a **pituitary ACTH-secreting adenoma** — the commonest endogenous cause in children over 5.\n- **Adrenal:** **adenoma or carcinoma** — commoner in the under-5s.\n- **Ectopic ACTH:** rare in children.\n\n### The paediatric hallmark\n- **⚠️ Growth failure WITH weight gain** — the child is **obese and SHORT**.\n- **That is the discrimination that matters:** **nutritional obesity makes a child obese and TALL** (`growth-puberty` gp-4).\n\n### Other features\n- **Face and trunk:** **moon face** · **buffalo hump** · **central obesity** · **purple striae**.\n- **Skin and hair:** **easy bruising**, **hirsutism**, **acne**.\n- **Systemic:** **hypertension** · **glucose intolerance or frank diabetes** · **osteopenia** · **proximal myopathy**.\n\n### Investigation, in order\n- **Screen:** **24-hour urinary free cortisol**, **late-night salivary cortisol**, or an **overnight low-dose dexamethasone suppression test** — all looking for **loss of the diurnal rhythm**.\n- **Then localise:** **plasma ACTH** separates **ACTH-dependent** from **ACTH-independent** disease, followed by **pituitary or adrenal imaging**.\n\n*Sourced anchors elsewhere: Cushing is listed among the **endocrine causes of short stature** (`growth-puberty` gp-5, gp-10) and among the **endocrine causes of secondary diabetes** (endo-1, DM p.2).*\n\nSrc: named in `13) Short stature` and DM p.2 as a cause only; the disease is supplied and tagged",
+        "qs": []
+      }
+    ]
   }
 };

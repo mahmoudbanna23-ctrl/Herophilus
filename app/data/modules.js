@@ -75,7 +75,10 @@ const MODULES = [
        keyed by date and title, never chapter id, so it is unaffected. */
     {name:'Systems', chapters:[
       ['gastroenterology','Vomiting and reflux'],['gi-diarrhoea','Diarrhoea and constipation'],
-      ['gi-abdopain','Abdominal pain'],['perinatal','Perinatal medicine'],
+      ['gi-abdopain','Abdominal pain'],
+      ['perinatal','The newborn and prematurity'],
+      ['perinatal-rd','Neonatal respiratory distress'],
+      ['perinatal-hie','Birth asphyxia and HIE'],
       ['neonatal','Neonatal medicine'],['haematology','Anaemia and marrow failure'],
       ['haem-bleeding','Bleeding and clotting disorders'],
       ['resp-pneumonia','Pneumonia'],['respiratory','Asthma'],['resp-bronch','Bronchiolitis'],
@@ -85,6 +88,9 @@ const MODULES = [
       ['renal-cakut','CAKUT, stones and enuresis'],
       ['neuro-stroke','Stroke and intracranial haemorrhage'],['neurological','Seizures and epilepsy'],
       ['neuro-nm','Motor and neuromuscular disorders'],['neuro-cp','Cerebral palsy'],
-      ['mental','Mental Health'],['endocrine','Diabetes and Endocrine'],['liver','Liver Disorders']]}
+      ['mental','Mental Health'],
+      ['endocrine','Diabetes mellitus'],['endo-dka','Diabetic ketoacidosis'],
+      ['endo-thyroid','Thyroid and adrenal disorders'],
+      ['liver','Liver Disorders']]}
   ]}
 ];
