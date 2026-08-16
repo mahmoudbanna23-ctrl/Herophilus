@@ -3589,5 +3589,136 @@ var T_PEDS = {
         "qs": []
       }
     ]
+  },
+  "genetics": {
+    "intro": "A mechanisms chapter, not a diseases one. Three things are taken from it: the Down and Turner phenotypes with their numbers, the three cytogenetic mechanisms and the recurrence risk each carries, and reading an inheritance pattern off a pedigree.",
+    "sections": [
+      {
+        "id": "gen-1",
+        "w": "know",
+        "h": "How common, and the four mechanisms that produce a genetic disease",
+        "body": "- **Significant congenital malformation:** **2 %** of live-born babies.\n- **Genetic disorder:** about **5 %** of live-born babies.\n\n### The four causes of genetically determined disease\n\n|#|Mechanism|Covers|\n|---|---|---|\n|**1**|**Chromosomal abnormality**|**numerical** or **structural**|\n|**2**|**Single gene disorder**|**Mendelian** — autosomal and sex-linked, each recessive or dominant|\n|**3**|**Unusual genetic mechanisms**|**Fragile X · mitochondrial · imprinting · uniparental disomy**|\n|**4**|**Genetic–environmental interaction**|**multifactorial**; epigenetic influence on gene expression early in life|\n\n*Mechanisms 3 and 4 are named here and never taught by the deck — supplied in gen-18.*\n\nSrc: L6 pp.2–3",
+        "qs": []
+      },
+      {
+        "id": "gen-2",
+        "w": "know",
+        "h": "Chromosome structure, and the normal karyotype",
+        "body": "- **Genes:** DNA wound on a **core of histone proteins**, packaged into **supercoils** to form chromosomes.\n- **When visible:** by **stains selectively taken up by DNA during cell division**, chromosomes **maximally contracted**.\n- **Each chromosome:** **two chromatids**; each has a **long (q)** and a **short (p) arm**.\n- **Centromere:** joins the arms, consists of DNA, **moves the chromosome during cell division**.\n\n### Classified by centromere position\n\n|Type|Position|\n|---|---|\n|**Metacentric**|**central**|\n|**Sub-metacentric**|**intermediate**|\n|**Acrocentric**|**terminal, with a satellite** of **repeated rRNA genes**|\n\n### The normal complement\n- **46 chromosomes:** **22 pairs of autosomes** + **one pair of sex chromosomes** — **XX** female, **XY** male.\n- **One of each pair from each parent;** members of a pair are **homologues**.\n- **Ploidy:** **somatic diploid 46** · **gametes haploid 23**.\n- **Notation:** a normal male is **46,XY**.\n\nSrc: L6 pp.4–6",
+        "qs": []
+      },
+      {
+        "id": "gen-3",
+        "w": "high",
+        "h": "Chromosomal abnormality — two classes, three frequencies",
+        "body": "### The two classes\n- **Numerical:** **trisomy** · **monosomy**.\n- **Structural:** **translocation** · **deletion** · **duplication**.\n\n### The three frequencies\n\n|Where|Frequency|\n|---|---|\n|**Spermatozoa**|**~10 %**|\n|**Mature oocytes**|**~25 %**|\n|**Live-born**|**~1 in 150**|\n\n- **In gametes:** a **common cause of spontaneous miscarriage** — why the live-born figure is so much lower.\n- **In live-borns:** **multiple congenital anomalies and cognitive difficulties**.\n\nSrc: L6 p.7",
+        "qs": []
+      },
+      {
+        "id": "gen-4",
+        "w": "must",
+        "h": "Down syndrome — the numbers, the diagnosis, the examination",
+        "body": "**Down syndrome (trisomy 21):** **most common autosomal trisomy**, **most common genetic cause of severe learning difficulties**. **~1 in 650 live births**, **rising with maternal age**. Karyotype **47,XX +21**.\n\n### Diagnosis\n- **Suspected at birth —** **facial appearance** + **hypotonia**; **developmental delay** noticed later.\n- **Confirmed by —** **chromosomal analysis: karyotype or FISH**.\n- **Why confirm:** enables **genetic counselling** after **identifying the genetic type** and **calculating recurrence risk** — the three types differ sharply (gen-6).\n\n### The examination\n\n|Craniofacial|Other anomalies|\n|---|---|\n|**Round face, flat nasal bridge**|**Short neck**|\n|**Upslanting palpebral fissures**|**Single palmar (simian) crease**|\n|**Epicanthic folds**|**Incurved short finger**|\n|**Brushfield spots**|**Wide gap between 1st and 2nd toes**|\n|**Small mouth, protruding tongue**|**Hypotonia**|\n|**Small ears**|**Congenital heart defects — 40 %**|\n|**Flat occiput**|**Duodenal atresia · Hirschsprung disease**|\n\n- **Also on the photograph plates:** **prominent forehead** · **flat face** · **short nose** · **neck webbing**.\n\n*The cardiac lesion is an atrioventricular canal defect — `cardiac`.*\n\nSrc: L6 pp.8–13 (pp.9–11 read visually)",
+        "qs": []
+      },
+      {
+        "id": "gen-5",
+        "w": "must",
+        "h": "Down syndrome — the later problems",
+        "body": "### With a stated figure\n\n|Problem|Frequency|\n|---|---|\n|**Conductive hearing defects**|**75 %**|\n|**Obstructive sleep apnoea**|**50–75 %**|\n|**Squint and myopia**|**50 %**|\n|**Hypothyroidism**|**15 %**|\n|**Cataract**|**15 %**|\n|**Leukaemia and solid tumours**|**< 1 %**|\n\n### The rest\n- **Development —** **delayed motor milestones**; **learning difficulties of variable severity**.\n- **Growth —** **short stature**.\n- **Immunity —** **increased susceptibility to infection**.\n- **Skeletal —** **acquired hip dislocation** · **atlantoaxial instability**.\n- **Gut —** **coeliac disease**.\n- **Neurological —** **epilepsy** · **early-onset Alzheimer disease**.\n\n*The quantified 1-in-95 leukaemia risk and the M7/GATA1 account are `malignant` mal-3 and mal-11.*\n\nSrc: L6 p.14",
+        "qs": []
+      },
+      {
+        "id": "gen-6",
+        "w": "must",
+        "h": "Down syndrome cytogenetics — three mechanisms, three different risks",
+        "body": "Phenotype much the same; **recurrence risk and the need to karyotype the parents are not**.\n\n### The three mechanisms side by side\n\n|  |Non-disjunction|Translocation|Mosaicism|\n|---|---|---|---|\n|**Share**|**94 %**|**4 %**|**1 %**|\n|**When**|**Error at meiosis**|At or before conception|**Mitotic non-disjunction AFTER a normal zygote forms**|\n|**Mechanism**|**Chromosome 21 pair fails to separate** — one gamete gets **two 21s**, the other **none**; fertilising the two-21 gamete gives **trisomy 21**|Extra **21 joined onto another chromosome** — **usually 14**, may be **15, 22, 13, 21** — a **Robertsonian translocation**|Some cells normal, some trisomy 21; or **later mitotic non-disjunction in a trisomy 21 conception, losing the extra copy** in one cell line|\n|**Karyotype the parents?**|**NO**|**YES**|not stated|\n|**Recurrence**|**1 in 200** under 35 y; **age-related risk** at 35 y+|**Parents normal in 75 % → < 1 %**; one a **balanced carrier in 25 % → 10–15 %**|not stated|\n|**Phenotype**|full|full|**sometimes milder**|\n\n### The maternal-age paradox\n- **The maternal-age paradox:** incidence **rises with maternal age**, yet **most affected babies are born to YOUNGER mothers**.\n- **Why:** the proportion of all pregnancies occurring in older mothers is small.\n\n*Deck defect: p15 prints translocation at 4 %, p19’s heading at 5 %. Both as printed; 94 % and 1 % agree across both.*\n\n*The translocation slide is cut off at \"10-15% if the …\". It ends: if the MOTHER is the carrier, the risk being lower for a carrier father; a 21;21 carrier has a 100 % recurrence risk (not taken from the course material).*\n\nSrc: L6 pp.15–16, 19–21; karyotypes 46,XY t(15,21) and 46,XX t(21,22) from p20, read visually",
+        "qs": []
+      },
+      {
+        "id": "gen-7",
+        "w": "high",
+        "h": "Down syndrome — prenatal diagnosis and the maternal-age table",
+        "body": "### Non-invasive, 10–14 weeks\n- **Maternal blood —** **biochemical markers**.\n- **Ultrasound —** **nuchal translucency**, thickened soft tissue at the **back of the neck**.\n- **Cell-free fetal DNA —** the recent addition, from **maternal blood**.\n\n### If screening shows increased risk\n- **Confirm:** offer **amniocentesis or chorionic villous sampling** to **check the fetal karyotype**.\n- **Screening gives a risk;** only a karyotype gives the diagnosis.\n\n|Maternal age|Incidence|\n|---|---|\n|**20 years**|**1 : 1530**|\n|**30 years**|**1 : 500**|\n|**35 years**|**1 : 350**|\n|**40 years**|**1 : 110**|\n|**45 years**|**1 : 37**|\n\n- **The shape:** ~**threefold from 20 to 30**, then ~**tenfold from 30 to 45**.\n- **35 years is the pivot —** and the age at which gen-6’s recurrence rule changes.\n\nSrc: L6 pp.17–18 (p.18 table read visually)",
+        "qs": []
+      },
+      {
+        "id": "gen-8",
+        "w": "must",
+        "h": "Turner syndrome",
+        "body": "**Turner syndrome (TS):** a **chromosomal monosomy syndrome** — a **short female with sexual infantilism and certain physical abnormalities**.\n\n- **>95 % of 45,X0 fetuses abort spontaneously;** live-birth incidence **1 : 2500 females**.\n- **Detected prenatally —** on ultrasound by **fetal oedema of the neck, hands or feet**, or a **cystic hygroma**.\n\n### Clinical features\n- **Neonate —** **lymphoedema of the hands and feet**, which **may persist**; **short webbed neck**.\n- **Nails —** **spoon-shaped**.\n- **Growth —** **short stature**, treated with **growth hormone**.\n- **Neck and face —** **webbing**; **receding chin** in the older girl.\n- **Limbs —** **wide carrying angle**.\n- **Chest —** **widely spaced nipples**.\n- **Heart —** **coarctation of the aorta**.\n\n### Cytogenetics — half of it is not 45,X0\n\n|Group|Share|Karyotype|\n|---|---|---|\n|**Full monosomy**|**~50 %**|**45,X0**|\n|**Structural or mosaic**|**the other half**|one normal X plus an X with **short-arm deletion**, or an **isochromosome of two long arms and no short arm**, or any structural abnormality; or **mosaicism such as 46XX/45X0**|\n\n- **⚠️ Y chromosome sequence —** raises the risk of **gonadoblastoma**, so **gonadectomy is indicated**. The one management decision the karyotype changes.\n\n*Deck defect: p27’s karyotype is captioned **(46,X0)** and should read 45,X0 — the image shows a single X and no Y, and pp.22 and 26 both write 45,X0.*\n\n*Renal anomaly (classically horseshoe kidney) and increased susceptibility to infection are the two deferred Turner features this deck omits (not taken from the course material). Mosaic Turner as a short-stature cause is `growth-puberty` gp-13.*\n\nSrc: L6 pp.22–27 (pp.23–24, 27 read visually)",
+        "qs": []
+      },
+      {
+        "id": "gen-9",
+        "w": "high",
+        "h": "The other named syndromes — what the deck names but never teaches",
+        "body": "### The other autosomal trisomies\n\n|  |Patau|Edward|\n|---|---|---|\n|**Karyotype**|**Trisomy 13**|**Trisomy 18**|\n|**Incidence**|**~1 in 10,000**|**~1 in 6,000–8,000**|\n|**Hallmarks**|**Holoprosencephaly · midline facial cleft · microphthalmia · postaxial polydactyly · scalp cutis aplasia**|**Clenched hands with overlapping fingers · rocker-bottom feet · small chin · prominent occiput · low-set ears**|\n|**Outcome**|**most die in the first year**|**most die in the first year**|\n\n*L6 p40 names Patau only as its worked example of a syndrome; the grid’s features, both incidences and all of Edward are supplied (not taken from the course material). Cardiac lesions are `cardiac`.*\n\n### Klinefelter syndrome — 47,XXY\n- **Incidence:** the **commonest sex-chromosome aneuploidy in males**, ~**1 in 600**.\n- **Presents after puberty —** **tall with long limbs**, **small firm testes**, **gynaecomastia**, **azoospermia and infertility**.\n- **Endocrine —** **hypergonadotrophic hypogonadism**; **testosterone replacement**.\n\n*L6 never names Klinefelter; `14) Puberty` names it without a karyotype — supplied (not taken from the course material).*\n\n### Cri du chat — the name for L6’s 5p− karyotype\n- **Cri du chat:** the deck prints **46,XX 5p−** and never names the syndrome it causes.\n- **Features —** **high-pitched cat-like cry in infancy** · **microcephaly** · **round face with hypertelorism** · **severe intellectual disability** *(not taken from the course material)*.\n\n### Three syndromes deferred here, none of them in this deck\n- **Noonan syndrome:** **autosomal dominant** (L6 p48). **Short stature · webbed neck · pectus deformity**, **both sexes**, **normal karyotype**.\n- **Noonan vs Turner —** **Noonan: pulmonary stenosis, either sex, normal karyotype**; **Turner: coarctation, female only, 45,X0** *(the cardiac contrast not taken from the course material)*.\n- **Prader–Willi:** **neonatal hypotonia and poor feeding**, then **hyperphagia and obesity**, **short stature, hypogonadism, learning difficulty**. An **imprinting** disorder — gen-18 *(not taken from the course material)*.\n- **Russell–Silver:** **severe intrauterine growth restriction**, **relative macrocephaly**, **triangular face**, **body asymmetry** *(not taken from the course material)*.\n\nSrc: L6 pp.31, 40, 48; the remainder supplied and tagged in place",
+        "qs": []
+      },
+      {
+        "id": "gen-10",
+        "w": "high",
+        "h": "Structural abnormalities — translocation, deletion, duplication",
+        "body": "**Reciprocal translocation:** **exchange of genetic material between two different chromosomes**. Balanced or unbalanced, and the distinction decides everything.\n\n|  |Balanced|Unbalanced|\n|---|---|---|\n|**Material**|**no loss or gain**|**an incorrect amount**|\n|**Frequency**|**1 in 500 of the general population**|not stated|\n|**Phenotype**|usually normal; may **lose a few genes or disrupt a single gene** → **mainly cognitive difficulties**|**impairs physical AND cognitive development** → **dysmorphic features, congenital malformation, developmental delay, learning difficulties**|\n\n- **⚠️ In a newborn —** on finding an unbalanced translocation, **examine the parents’ chromosomes**.\n- **The question:** **de novo**, or a **balanced translocation in one parent** carrying a **recurrence risk in future pregnancies**? **Prenatal diagnosis is important** in the latter.\n\n*The slide prints \"paternal chromosomes\" where the sense requires PARENTAL — its own next clause says \"one of the parents\", and the deletion slide writes \"parental\".*\n\n### Deletions\n- **Loss of part of a chromosome —** **terminal** or **interstitial**.\n- **Consequence —** usually **physical abnormalities and cognitive impairment**.\n- **Worked example —** **partial deletion of the short arm of chromosome 5**, **46,XX 5p−**.\n- **⚠️ Karyotype the parents —** same question: **de novo**, or **a parent carrying a balanced rearrangement**?\n\n### Duplications\n- **Gain of genetic material —** **congenital malformations and intellectual impairment**, but **often better tolerated than deletion**. Losing gene dose is worse than gaining it.\n\nSrc: L6 pp.28–32 (p.31 karyotype read visually)",
+        "qs": []
+      },
+      {
+        "id": "gen-11",
+        "w": "high",
+        "h": "Dysmorphology — the four pathogenic mechanisms",
+        "body": "**Dysmorphology:** the **study of abnormal form** — assessment of **birth defects and unusual physical features originating during embryogenesis**.\n\n### The four pathogenic mechanisms\n\n|Mechanism|Definition|Deck’s example|\n|---|---|---|\n|**1 Malformation**|**primary structural defect** during **development of tissues or organs**|**Cleft palate**|\n|**2 Deformation**|**abnormal intrauterine mechanical force** distorting a **normally formed** structure|**Talipes equinovarus**|\n|**3 Disruption**|**destruction of a fetal part that initially formed normally**|**Amniotic bands causing limb reduction defects**|\n|**4 Dysplasia**|**abnormal cellular organisation or function of a specific tissue type**|**Ectodermal dysplasia**|\n\n- **The separating axis:** **never formed properly** (malformation) · **formed then squashed** (deformation) · **formed then destroyed** (disruption) · **formed of the wrong cells** (dysplasia).\n\n*The malformation slide is cut off at \"tissues or …\"; the word is organs (not taken from the course material).*\n\nSrc: L6 pp.33–36",
+        "qs": []
+      },
+      {
+        "id": "gen-12",
+        "w": "high",
+        "h": "Clinical classification of birth defects — four terms, used precisely",
+        "body": "### The four terms\n\n|Term|Definition|Example|\n|---|---|---|\n|**1 Single system defect**|a **single congenital malformation**; **often multifactorial**, **fairly low recurrence risk**|**Spina bifida · anencephaly**|\n|**2 Sequence**|multiple abnormalities following **ONE initiating defect**|**Potter sequence** — renal agenesis → **severe oligohydramnios** → **fetal compression and pulmonary hypoplasia**|\n|**3 Association**|malformations together **more often than chance but in DIFFERENT combinations**, **not explicable as a sequence or syndrome**|**VACTERL**|\n|**4 Syndrome**|multiple anomalies **repeatedly in a CONSISTENT pattern**, **known or presumed common causal mechanism**|**Patau syndrome (trisomy 13)**|\n\n### Telling them apart\n- **Sequence vs syndrome:** a **sequence is one cause and a chain of consequences**; a **syndrome is one cause and a fixed set of anomalies**. **Association is the term of last resort** — they cluster and nobody knows why.\n- **A syndrome:** usually carries **moderate to severe cognitive impairment**; due to **chromosomal defects · a single gene defect · teratogen exposure · unknown**.\n\nSrc: L6 pp.37–40",
+        "qs": []
+      },
+      {
+        "id": "gen-13",
+        "w": "must",
+        "h": "Reading a pedigree — the symbols, and each pattern drawn out",
+        "body": "- **Mendelian inheritance:** transmission caused by variation in a **SINGLE gene** in a **characteristic pattern**. **Over 6,000 described** — individually rare, collectively numerous.\n- **Family studies rely on** **observing transmission between generations** or **studying frequency among relatives**.\n- **Proband —** the person through whom the family came to attention; the **index case**.\n\n### The symbols\n\n|Symbol|Meaning|\n|---|---|\n|**Circle · square · diamond**|**female · male · unknown sex**|\n|**Filled · open**|**affected · unaffected**|\n|**Open circle, filled central dot**|**carrier female**|\n|**Single horizontal line**|**mating**|\n|**DOUBLE horizontal line**|**consanguineous mating**|\n|**Small filled circle**|**abortion**|\n\n### Each pattern on a chart\n\n|Pattern|Affected|Generations|Male-to-male?|Giveaway|\n|---|---|---|---|---|\n|**AD**|**both sexes**|**every generation**, vertical|**YES**|an affected parent in each affected line|\n|**AR**|**both sexes**|**one sibship**, horizontal|yes|**unaffected parents** · **consanguinity**|\n|**XLR**|**males only**|**skips via carrier females**|**NEVER**|**carrier mothers**; affected males in the female line|\n|**XLD**|**both, EXCESS of females**|every generation|**NEVER**|affected father → **ALL daughters, NO sons**|\n|**Y-linked**|**males only**|every generation|**always**|father → **every son, no daughter**|\n\n*Male-to-male transmission is the most useful line here: present in AD and Y-linked, impossible in both X-linked patterns.*\n\nSrc: L6 pp.42–44 (p.44 symbol key read visually)",
+        "qs": []
+      },
+      {
+        "id": "gen-14",
+        "w": "must",
+        "h": "Autosomal dominant — characters, penetrance, the homozygote",
+        "body": "**Autosomal dominant (AD):** the **most common type of Mendelian inheritance**. **Alteration in only ONE copy of a gene pair**, so it **appears in the heterozygote despite an intact copy**. The mutation **comes from a previous generation or arises new**.\n\n### Characters, with complete penetrance\n- **Male-to-male transmission is present.**\n- **Both males and females affected.**\n- **Recurrence —** **½ (50 %) in both sexes**.\n- **Unaffected individual —** his children **show no signs of the condition**.\n- **Origin —** **inherited from a parent, or a new mutation**.\n- **On the pedigree —** affected individuals in **all four generations**.\n\n### Reduced penetrance — the exception to the fourth rule\n- **What it looks like:** someone **completely unaffected has BOTH a parent AND a child with the same AD disorder** — **skipping a generation**. That person must carry the gene.\n- **Quoted as a percent:** **80 % means 80 % of heterozygotes express the condition in some way**.\n- *The deck’s pedigree marks the skipped, unaffected carrier with a red arrow.*\n\n### The homozygote, when two heterozygotes have children\n\n|Outcome|Example|\n|---|---|\n|**More severely affected**|**Achondroplasia**|\n|**Earlier age of onset**|**Familial hypercholesterolaemia**|\n|**No more severely affected**|**Huntington disease**|\n\n- **Examples of AD disease:** **achondroplasia · adult polycystic kidney disease · myotonic dystrophy · Noonan’s syndrome · familial hypercholesterolaemia**.\n\nSrc: L6 pp.45–51 (pp.47, 50 pedigrees read visually)",
+        "qs": []
+      },
+      {
+        "id": "gen-15",
+        "w": "must",
+        "h": "Autosomal recessive",
+        "body": "### Characters\n- **Parents normal, sibs affected —** horizontal on the pedigree, not vertical.\n- **Consanguinity:** commoner than in the general population — drawn as a **double line**.\n- **When only ONE parent is heterozygote:** either a **new mutation on the gamete from the other parent**, or **uniparental disomy** — the child **inherits two copies of the heterozygote mutant allele** from the one carrier parent.\n\n### Examples of AR disorders\n- **Six named:** **cystic fibrosis · Hurler’s syndrome (MPS I) · phenylketonuria · galactosaemia · thalassaemia · Gaucher disease**.\n\n*Thalassaemia appears only as this list item; its inheritance is all the course material teaches of it. No cached deck teaches it as a disease — a corpus gap, not a deferral failure.*\n\nSrc: L6 pp.52–54 (p.53 pedigree read visually)",
+        "qs": []
+      },
+      {
+        "id": "gen-16",
+        "w": "must",
+        "h": "X-linked recessive, and the isolated case",
+        "body": "**Sex-linked inheritance:** genes **on either sex chromosome** — **X-linked** or **Y-linked**.\n\n### The rules of transmission\n- **Why carriers transmit:** in **severe** X-linked conditions **affected males often do not survive to have children**, so transmission is **usually only by healthy female carriers**.\n- **A carrier mother —** **½ of daughters carriers**, **½ of sons affected**.\n- **An affected father —** **Y to all sons, who are unaffected**; **X to all daughters, who are ALL carriers**. Hence **no male-to-male transmission, ever**.\n- **Obligate carrier female —** **one affected son AND one affected male relative in the female line**, **or two affected sons**. **All daughters of affected males** qualify.\n\n### The isolated case — a woman with only ONE affected son\n\n|Possibility|Risk in future sons|\n|---|---|\n|**She is a carrier**|**½**|\n|**New mutation** in the gamete that conceived him, at meiosis|**negligible**|\n|**Gonadal mosaicism** — mutation in **early mitotic division of her own embryo**|**variable**, by the **proportion of her ova carrying it**|\n\n*That slide is cut off at \"the proportion of the ova that carry …\"; it ends \"the mutation\" (not taken from the course material).*\n\n- **Examples:** **haemophilia A and B · colour blindness · G6PD deficiency · ocular albinism · Hunter’s disease (MPS II) · Duchenne muscular dystrophy**.\n\n*Haemophilia A is a disease in `haematology`, Duchenne in `neurological`; both stay here as the inheritance examples the deck prints.*\n\nSrc: L6 pp.55–59 (p.57 pedigree read visually)",
+        "qs": []
+      },
+      {
+        "id": "gen-17",
+        "w": "high",
+        "h": "X-linked dominant and Y-linked",
+        "body": "### X-linked dominant\n- **Uncommon, and defined by the female:** **manifest in the HETEROZYGOUS female** as well as the male carrying it on his single X.\n- **Affected male —** transmits to **ALL his daughters and NONE of his sons**.\n- **So: an excess of affected females**, and **direct male-to-male transmission cannot occur**.\n- **Example —** **vitamin D resistant rickets**.\n\n### Y-linked\n- **Only males affected.**\n- **Affected male —** transmits to **ALL his sons and NONE of his daughters** — the mirror of X-linked dominant.\n- **Examples —** **hairy ears** · **webbed toes**.\n- **Why the list is short:** Y-linked genes for **sexual differentiation and spermatogenesis** cause **infertility** when mutated, so they are **rarely transmitted**.\n\n*Rickets as a disease is `nutrition`; the examinable fact here is the pattern.*\n\nSrc: L6 pp.60–61",
+        "qs": []
+      },
+      {
+        "id": "gen-18",
+        "w": "know",
+        "h": "The unusual mechanisms the deck names and never returns to",
+        "body": "L6’s p3 classification (gen-1) lists these as two of its four mechanisms and never returns to them. **Supplied (not taken from the course material)** except where marked.\n\n### Fragile X syndrome\n- **The essence:** the **commonest INHERITED cause of intellectual disability** — a **CGG trinucleotide repeat expansion in FMR1** on the X.\n- **Phenotype —** **long face · large ears · macroorchidism after puberty**, with **autistic features**.\n- **Why \"unusual\" —** the repeat **expands between generations (anticipation)**, and a **normal transmitting male** passes a premutation to daughters whose sons are affected.\n\n### Mitochondrial inheritance\n- **Maternal only:** an **affected mother transmits to ALL her children**, an **affected father to NONE**. No other pedigree looks like this.\n- **Heteroplasmy —** mutant load varies between tissues, so **severity varies widely within one family**.\n- **Hits high-energy tissues —** **brain and muscle**; **MELAS**, **Leber hereditary optic neuropathy**.\n\n### Imprinting and uniparental disomy\n- **Imprinting —** expression depends on the **parent of origin**. **Prader–Willi = loss of the PATERNAL 15q11-13**; **Angelman = loss of the MATERNAL** copy of the same region — one deletion, two diseases.\n- **Uniparental disomy —** **both copies of a chromosome from ONE parent**. Sourced: L6 names it as the explanation for an AR disorder with only one carrier parent (gen-15).\n\n### Multifactorial\n- **Multifactorial:** **gene–environment interaction** plus **epigenetic influence** on gene expression early in life.\n- **Low recurrence risk —** sourced, and the deck’s own example is **spina bifida** (gen-12).\n\nSrc: gap opened by L6 p.3 and closed from general medical knowledge; uniparental disomy and multifactorial sourced to L6 pp.3, 37, 52",
+        "qs": []
+      }
+    ]
   }
 };
