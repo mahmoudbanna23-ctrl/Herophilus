@@ -280,6 +280,35 @@ scheduled deliberately, not stumbled into.
 10. **`infection`** (visual read of `25`, plus the three `.ppt`-only terms) — largest chapter
 11. **`haematology`** (visual read of `44`), **`liver`** (visual read of `42`)
 
+### ⚠️⚠️ A NEW EXTRACTION FAILURE, FOUND 2026-08-16 — AND IT DEFEATS THE CACHE-COMPLETENESS CHECK
+
+**`pdftotext` HONOURS THE MediaBox, so a text box overflowing the bottom of a slide is dropped
+SILENTLY, MID-SENTENCE.** `27)Anaphylaxsis` p.23 ends at *"…intramuscularly in the mid-outer thigh
+in a"* — **the adrenaline dose is the next three words and it is simply gone.**
+`6) Genetically determined disease_` loses text the same way on three pages.
+
+**⚠️ THE CHECK THIS PROJECT HAS BEEN RUNNING CANNOT SEE IT.** "Diff the cached `.txt` against a fresh
+`pdftotext -layout`" reports **0 % difference and declares the cache complete** — because both sides
+are pdftotext and both drop the same words. Every "cache verified complete" in this project is
+verified only up to that blind spot, never past it.
+
+**Two things DO see it.** (1) **Rendering the page** — the `genetics` agent recovered its clipped
+proband/arrow content visually without ever knowing the text was truncated, which is one more reason
+the visual read is the standard. (2) **Rewriting the MediaBox on a SCRATCHPAD COPY**
+(`Semester 8\` is never written to): raw byte-replace `/MediaBox[x0 y0 x1 y1]` with `y0-400`,
+padded to the same byte length, then extract. Script kept at `<scratch>\mediabox.js`.
+
+**⚠️ MEASURED SCOPE — BOUNDED, AND ALREADY REPAIRED. Do not re-sweep it.** A corpus scan
+(`<scratch>\clip-scan.js` — flags any page whose text ends on an article, preposition or
+conjunction) found **8 pages of 2,874 across 68 decks = 0.3 %**, in six decks. Judged one by one:
+**two are real clipping — `27)Anaphylaxsis` and `6) Genetically determined disease_` — and BOTH were
+caught and repaired by their own writing agents.** The other four are false positives: a sentence
+continuing onto the next page (`…vesicular rash` p3), a genuine two-line title (`7) Intro to
+neonatology` p47), a footnote marker, and a lost full stop. **The proxy runs about 50 % false
+positives, so read every hit before acting on it.**
+
+---
+
 ### ⚠️ The last eight chapters — three things settled 2026-08-16, so no agent re-derives them
 
 **`mental` HAS NO PAEDIATRICS DECK, AND THE ANSWER IS NOT "write it from general knowledge".** It was

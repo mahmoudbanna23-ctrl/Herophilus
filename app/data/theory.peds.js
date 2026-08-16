@@ -3844,5 +3844,164 @@ var T_PEDS = {
         "qs": []
       }
     ]
+  },
+  "allergy": {
+    "intro": "Two lectures, two shapes. The allergy half is definitions and discriminations — sensitization versus allergy, IgE versus non-IgE, type 1 versus type 4. The anaphylaxis half is one algorithm and one drug, and every number in it is examinable.",
+    "sections": [
+      {
+        "id": "alg-1",
+        "w": "must",
+        "h": "The five definitions, and the one that is a trap",
+        "body": "- **Allergic disorders in UK children:** up to **40 %** — **eczema, allergic rhinitis or asthma**. **Food allergy 3–6 %**.\n- **What an allergic disease is:** an **abnormal immune response to harmless environmental stimuli, usually proteins**.\n\n### The definitions as the deck words them\n\n|Term|Definition|\n|---|---|\n|**Hypersensitivity**|**Objectively reproducible** symptoms or signs after a defined stimulus (food, drug, pollen) **at a dose usually tolerated by most people**|\n|**Allergy**|Immune reaction to antigens known as **allergens**. **IgE-mediated** (peanut) **or non-IgE-mediated** (coeliac disease)|\n|**Atopy**|**Genetically mediated predisposition** to produce **specific IgE** after exposure. Strongly associated with **asthma, allergic rhinitis and conjunctivitis, eczema, food allergy**|\n|**Sensitization**|**A positive test only** — skin prick or specific IgE. **Does NOT equate to allergy** unless exposure initiates a clinical reaction. **The more positive tests, the more likely** the person is allergic|\n|**Anaphylaxis**|Serious allergic reaction with **bronchial, laryngeal or cardiovascular** involvement, **rapid in onset**, **may cause death**|\n\n### ⚠️ Sensitization is not allergy — the deck asks it directly\n\n- **The vignette:** 10-month-old, **positive peanut skin prick test**, has **NEVER eaten peanut**, no symptoms with other foods.\n- **The answer:** **sensitization** — not clinical peanut allergy, not anaphylaxis, not oral allergy syndrome.\n\nSrc: L26 pp.2–4, 30–31 (the answer is red highlighting on the repeat slide, image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "alg-2",
+        "w": "high",
+        "h": "Pathogenesis — the barrier, the cascade, and four mediator effects",
+        "body": "### Why some children and not others\n\n- **Genes:** many linked to allergic disease; **polymorphisms or mutations** create a **susceptibility**.\n- **An \"epigenetic condition\":** the **environment interacts with those genes**.\n- **The skin barrier:** in health, a **protective barrier against external irritants, moisture loss and infection**.\n- **Filaggrin:** a **structural epidermal protein** whose **breakdown products** are critical to barrier function, **including skin moisturization**.\n- **⚠️ Filaggrin gene alterations:** increased risk of **eczema AND food allergy** — one gene, both ends of the atopic march.\n\n### The sensitisation cascade\n\n**The chain:** **sensitization → IgE production → arming of the mast cell → release of mediators → clinical effects**.\n\n- **First exposure:** allergen crosses skin or mucosa → IgE B cell → **IgE antibody** binds the **IgE Fc receptor** on mast cells **just below** it.\n- **Second exposure:** allergen **cross-links** two adjacent immunoglobulins → **degranulation** → **primary and secondary mediators**.\n- **The clinical effects named:** **anaphylaxis · asthma · hay fever**.\n\n### Four mediator effects — every allergic symptom is one of them\n\n|Effect|Symptom it produces|\n|---|---|\n|**Vasodilation**|**Erythema**|\n|**Increased vascular permeability**|**Swelling**|\n|**Smooth muscle constriction**|**Bronchoconstriction** and **abdominal pain**|\n|**Nerve activation**|**Itching, sneezing, coughing**|\n\nSrc: L26 pp.5–11 (pp.8–10 image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "alg-3",
+        "w": "must",
+        "h": "Type 1 versus type 4 — the grid the deck builds the lecture on",
+        "body": "|Axis|**Type 1 — IMMEDIATE, IgE-mediated**|**Type 4 — DELAYED, T-cell mediated**|\n|---|---|---|\n|**Typical disease**|**Urticaria / angioedema**|**Dermatitis**|\n|**Chemical mediator**|**Histamine**|**T cell-derived cytokines**|\n|**Onset**|**MINUTES**|**HOURS**|\n|**Total and allergen-specific IgE**|**Can help**|**\"avoid\"** — the printed word; the test is of no use here|\n|**Antihistamine**|**Helps**|**NOT effective**|\n|**Immunology on the figure**|Mast cell **degranulation** driven by surface IgE|**Dendritic cell → TSLP, IL-33 → T cell**; **Th2 cytokines IL-4, IL-13, IL-5**; **cytotoxicity**|\n\n*The deck teaches only types 1 and 4 and never mentions the others (not taken from the course material: type 2 is cytotoxic antibody-mediated, type 3 immune-complex).*\n\nSrc: L26 pp.12–13 (the immunology row from p12's figure, image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "alg-4",
+        "w": "high",
+        "h": "The laboratory — three tests and what a positive one is worth",
+        "body": "### The tests the deck names\n\n- **Skin prick test:** a **drop of allergen**, a **small skin prick** through it, then read the **skin reaction** — the wheal.\n- **Allergy blood test:** measures **the concentration of specific IgE antibodies in the blood**.\n- **Total and allergen-specific IgE:** **can help in type 1**; of no use in type 4.\n\n### ⚠️ How to read the result\n\n- **A positive test is SENSITIZATION**, not allergy — see alg-1.\n- **The clinical history is the key** in food allergy diagnosis; the tests are **confirmatory**.\n- **Therapeutic response:** antihistamines help in **type 1** and not in **type 4** — the response is itself information.\n\nSrc: L26 pp.3, 13–15, 23 (pp.14–15 image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "alg-5",
+        "w": "must",
+        "h": "Food allergy — who gets it, to what, and the two routes in",
+        "body": "- **Over 80 %** of children with food allergy **present in the first year of life**; **many have atopic eczema**.\n- **The commonest food allergens:** **milk · egg · soy · wheat · peanut · tree nuts · fish · shellfish**.\n- **Seeds:** increasingly identified as allergens, with **sesame the commonest**.\n\n### Primary versus secondary\n\n- **Primary — the usual route:** **most commonly primary**; children **usually react on FIRST exposure**.\n- **Secondary:** **cross-reactivity** between proteins in **fresh fruits, vegetables and nuts** and those in **pollens**.\n- **The worked example:** a child who eats apples may **become apple-allergic when older** on becoming allergic to **birch tree pollen** — the two **share a very similar protein**.\n- **The name for it:** **\"pollen food allergy syndrome\"**, also called **\"oral allergy syndrome\"**.\n\n### Adverse reactions to foods — the classification\n\n|Branch|Sub-division|\n|---|---|\n|**Food intolerances**|Not immune-mediated; the deck does not develop them|\n|**Food allergies**|**IgE-mediated** · **non-IgE-mediated**|\n\n*Egg allergy and vaccination is `infection-vaccine`.*\n\nSrc: L26 pp.16–18",
+        "qs": []
+      },
+      {
+        "id": "alg-6",
+        "w": "must",
+        "h": "IgE versus non-IgE food allergy — the timing decides it",
+        "body": "### IgE-mediated — minutes, and any system\n\n**Timing:** usually **10–15 minutes**, up to **2 hours**, after ingestion; symptoms range from **urticaria** through **facial swelling** to **anaphylaxis**.\n\n|System|Features|\n|---|---|\n|**Cutaneous**|Urticaria, angioedema, pruritus, flushing, **morbilliform rash**|\n|**Gastrointestinal**|Swelling of **lips, tongue and uvula**, nausea, vomiting, abdominal cramps, diarrhoea|\n|**Cardiovascular**|Tachycardia, hypotension, pallor, **shock, loss of consciousness**|\n|**Respiratory — upper**|Rhinorrhoea, nasal pruritus, nasal congestion, sneezing, **hoarseness, STRIDOR**|\n|**Respiratory — lower**|Cough, wheeze, dyspnoea, **cyanosis**|\n|**Neurologic**|Anxiety, headache, seizure, altered mental status, **feeling of impending doom**|\n|**Ocular**|Conjunctival erythema and tearing|\n\n### Non-IgE-mediated — hours, and mostly gut\n\n- **Timing:** **hours** after ingestion, not minutes.\n- **Tract:** **gastrointestinal** — **diarrhoea, vomiting, abdominal pain**, and sometimes **faltering growth**.\n- **Proctitis:** presents in an infant as **blood in the stools in the first few weeks of life**.\n- **FPIES:** rarely, **severe repetitive vomiting** in an infant following **milk or rice**, **which can result in SHOCK** — **food protein induced enterocolitis syndrome**.\n\n### ⚠️ The deck's own discriminator\n\n- **The vignette:** severe repetitive vomiting and diarrhoea **consistently 4 hours** after cow's milk.\n- **The answer:** **non-IgE-mediated food allergy** — not type 1, not immediate hypersensitivity. **The timing alone decides it.**\n\n*The acutely wheezy child in general is `respiratory` resp-14.*\n\nSrc: L26 pp.20–22, 32–33 (the answer is red highlighting on the repeat slide, image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "alg-7",
+        "w": "high",
+        "h": "Diagnosis — three pillars, and where a challenge may be done",
+        "body": "|Pillar|What it contributes|\n|---|---|\n|**Careful clinical history**|**The key.** Suspect food allergy if **typical symptoms follow exposure to a particular food**|\n|**Evidence of allergen-specific IgE**|For IgE-mediated allergy the **most helpful confirmatory tests** are **skin prick tests** and **specific IgE in blood**|\n|**Oral food challenge**|Used when **history and investigations are not clear**, or when the child is **thought to have grown out of** an allergy|\n\n### The oral food challenge, as the deck describes it\n\n- **Method:** **increasing quantities** of the food, **starting with a tiny amount, until a full portion is reached**.\n- **Blinding:** sometimes **placebo-controlled** — child and parents **do not know** which challenge holds the food.\n- **⚠️ Where:** **in a hospital with full resuscitation facilities available**, with **close monitoring for signs of anaphylaxis**.\n\nSrc: L26 pp.23–25",
+        "qs": []
+      },
+      {
+        "id": "alg-8",
+        "w": "high",
+        "h": "Natural history, management, prevention and the atopic march",
+        "body": "### Natural history — the allergen decides the course\n\n|Allergen|Course|\n|---|---|\n|**Milk, egg, wheat, soy**|**MOST OUTGROW** these allergies|\n|**Peanut, tree nut, fish, shellfish**|**Tend to be LIFELONG**|\n\n### Management\n\n- **Avoidance** of the relevant food or foods — the core of it.\n- **Related allergies** must be considered once a child is diagnosed with one.\n- **Heat and processing:** proteins with an **unstable tertiary structure** may be **rendered non-allergenic** by **heat degradation** or processing.\n- **The family, not only the diet:** child and family **must be able to manage an allergic reaction**.\n- **Immunotherapy:** **minute amounts of the food**, **built up over time**.\n\n### Prevention — oral tolerance induction\n\n- **What it is:** inducing **\"immune tolerance\"** by **feeding common allergens — eggs, cow's milk, peanut — to young infants**.\n- **Where it is used:** now often in **infant feeding guidelines** where food allergy is common.\n- **⚠️ The hypothesis:** tolerance depends on **EARLY EXPOSURE THROUGH THE GIT**; **sensitization occurs through an IMPAIRED SKIN BARRIER**. Supported by many clinical studies.\n\n### The atopic march\n\n- **The five conditions ringed together:** **AD** atopic dermatitis / eczema · **FA** food allergy · **AC** allergic conjunctivitis · **AR** allergic rhinitis · **BA** bronchial asthma.\n\n*The deck never expands the abbreviations; the five come from its own atopy definition.*\n\n*Its arrows do not circulate, so no order reads off the slide — the classic sequence, eczema and food allergy first then airway disease, is not taken from the course material.*\n\n*Asthma itself is `respiratory`.*\n\nSrc: L26 pp.3, 26–29 (p29 image-only, read at 300 dpi)",
+        "qs": []
+      },
+      {
+        "id": "alg-9",
+        "w": "must",
+        "h": "Anaphylaxis — the definition, the numbers, and two mechanisms",
+        "body": "### Definition — five elements, all of them wanted\n\n**Anaphylaxis:** a **sudden**, **severe, serious, life-threatening**, **generalized or systemic hypersensitivity reaction**, due to **sudden release of potent biologically active mediators from inflammatory cells**, presented by **systemic symptoms and signs**.\n\n*L26 words it shorter — see alg-1.*\n\n### The epidemiology the deck opens with\n\n|Figure|Value|\n|---|---|\n|**Global incidence**|**50–112 episodes per 100,000 person-years** — 1 episode for every 1,000 persons|\n|**Estimated lifetime prevalence**|**0.3–5.1 %**|\n|**Incidence in children**|**1–761 per 100,000 person-years (0.76 %)**|\n|**Recurrence**|**27–54 %** of patients, over follow-up of **1.5 to 25 years**|\n\n### The two mechanisms\n\n- **Immune mediated — the commonest:** **IgE-mediated the commonest** of these, **IgG-mediated less common**.\n- **The cascade:** allergen → **bridging of TWO immunoglobulins** on **mast cell / basophil receptors** → **degranulation** → **histamine, PAF and others**.\n- **Non-immune mediated —** **direct mast cell activation**: **viral and bacterial infections · serum sickness and transfusion reactions · certain drugs (opioids, radiocontrast agents, vancomycin, anaesthesia drugs) · exercise**.\n\nSrc: L27 pp.3–6; the short definition L26 p4",
+        "qs": []
+      },
+      {
+        "id": "alg-10",
+        "w": "high",
+        "h": "Triggers — four ranked categories, plus two with no rank",
+        "body": "|Rank|Trigger|Detail|\n|---|---|---|\n|**1**|**FOOD — the most common and important**|**Milk, egg · peanut / tree nut · fish / shellfish · soy, wheat**|\n|**2**|**Medications**|**The most common INPATIENT allergens.** Antibiotics, **NSAIDs** (aspirin, ibuprofen), **rubber latex**, contrast agents|\n|**3**|**Insect bites**|**Hymenoptera** species — **honey bees, wasps, ants, yellow jackets, hornets**|\n|**4**|**Inhalants — RARE**|**Pollen, mould, dust mites**|\n|—|**Direct mast cell activators**|**Radiocontrast media, opioids, certain medications**|\n|—|**Idiopathic anaphylaxis**|**No identifiable cause**|\n\n*\"Inhalants: rare\" is the last line of p10 and falls OFF the bottom edge of the slide, so it is absent from the cached text; its three examples are read off p11's figure.*\n\nSrc: L27 pp.10–11 (p11 image-only, recovered by render; p10's last line recovered by enlarging the page box)",
+        "qs": []
+      },
+      {
+        "id": "alg-11",
+        "w": "must",
+        "h": "The clinical criteria for diagnosis, and low blood pressure by age",
+        "body": "### WAO 2020 — acute onset of an illness over minutes to several hours, then either\n\n|Setting|What is required|\n|---|---|\n|**Allergen UNKNOWN**|**Skin / mucous membrane** **PLUS ONE** of: **respiratory** · **hypotension** · **end-organ dysfunction (collapse / incontinence)** · **severe GI symptoms**|\n|**Allergen LIKELY or KNOWN**|**ONE** of: **hypotension** · **bronchospasm** · **laryngeal involvement**|\n\n### The older three-criterion version the deck also prints\n\n|Setting|What is required|\n|---|---|\n|**Allergen unknown**|Skin / mucous membrane **PLUS ONE** of: respiratory · reduced BP · end-organ dysfunction (collapse / incontinence)|\n|**Allergen likely**|**PLUS TWO** of: skin / mucous membrane · respiratory · reduced BP · end organ · **GIT**|\n|**Allergen known**|**Reduced BP alone** is enough|\n\n### ⚠️ Low systolic BP in children — the two slides do not agree\n\n|Age|Low systolic blood pressure|\n|---|---|\n|**1 month – 1 year**|**< 70 mmHg** — *on p13 only; p12's footnote starts at 1 year and omits infants altogether*|\n|**1 – 10 years**|**< (70 mmHg + [2 × age])** — both slides agree|\n|**11 years upward**|**< 90 mmHg** — *p13 writes \"11 to 17 years\", p12 writes \"11 to adult age\"*|\n|**Any age**|**or greater than a 30 % DECREASE in systolic BP**|\n\nSrc: L27 pp.12–13",
+        "qs": []
+      },
+      {
+        "id": "alg-12",
+        "w": "know",
+        "h": "Who is at risk, and the one blood test that is taken twice",
+        "body": "### Factors increasing the risk, or making anaphylaxis difficult to treat\n\n|Group|Items|\n|---|---|\n|**Age**|**Infants — difficult to diagnose**, cannot describe symptoms · **adolescents — risky behaviours** · **labour and delivery** · **the elderly — increased fatality** from medication and venom-triggered anaphylaxis|\n|**Concomitant disease**|**Asthma and atopy** · chronic lung disease · cardiovascular disease · **depression and cognitive dysfunction** · allergic rhinitis and eczema · **mastocytosis / clonal mast cell disorders**|\n|**Drugs**|**β-blockers, ACE inhibitors** · psychiatric medications, alcohol, substances of abuse · ethanol, sedatives, hypnotics, antidepressants, recreational drugs|\n|**Co-factors that AMPLIFY**|**Exercise** · **acute infection** (a cold or fever) · **emotional stress** · **disruption of routine** (travel) · **premenstrual status**|\n\n### Serum tryptase — a retrospective test, not a bedside one\n\n- **First sample: 30–120 minutes** after the start of the attack.\n- **Baseline sample:** at least **24 hours after complete resolution** of symptoms.\n- **Whose recommendation:** the **EAACI task force**.\n- **What it is for:** **diagnosing anaphylaxis RETROSPECTIVELY** — an elevated level **within two hours**, against a baseline measured before or after, **confirms the diagnosis at a later allergy consultation**.\n\nSrc: L27 pp.14–16 (p14 image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "alg-13",
+        "w": "must",
+        "h": "Community management — the auto-injector, the plan, and the card",
+        "body": "### Emergency preparedness — three parts\n\n- **Auto-injector (EAI):** self-injectable epinephrine, **prescribed to ALL patients who have had anaphylaxis**.\n- **Emergency action plan:** in **all primary care settings**.\n- **Medical identification:** the alert bracelet.\n\n### ⚠️ The rule printed across the head of the card\n\n- **The instruction:** **do NOT depend on antihistamines or inhalers (bronchodilators) to treat a severe reaction. USE EPINEPHRINE.**\n- **Asthma:** ticked as **\"higher risk for a severe reaction\"**.\n\n### Severe symptoms — any ONE means epinephrine immediately\n\n|Body area|Severe finding|\n|---|---|\n|**Lung**|Shortness of breath, wheezing, **repetitive cough**|\n|**Heart**|**Pale or bluish skin**, faintness, **weak pulse**, dizziness|\n|**Throat**|**Tight or hoarse throat**, trouble breathing or swallowing|\n|**Mouth**|**Significant swelling of the tongue or lips**|\n|**Skin**|**Many hives**, widespread redness|\n|**Gut**|**Repetitive vomiting**, severe diarrhoea|\n|**Other**|**Feeling something bad is about to happen**, anxiety, confusion|\n|**Or**|**A COMBINATION of symptoms from different body areas**|\n\n### Mild symptoms — and the rule that turns them severe\n\n|Body area|Mild finding|\n|---|---|\n|**Nose**|Itchy or runny nose, sneezing|\n|**Mouth**|Itchy mouth|\n|**Skin**|A few hives, mild itch|\n|**Gut**|Mild nausea or discomfort|\n\n- **⚠️ More than one area:** mild symptoms in **MORE THAN ONE system area → GIVE EPINEPHRINE**.\n- **A single area:** **antihistamine if ordered by a healthcare provider**; **stay with the person**, alert emergency contacts, **watch closely — if symptoms worsen, give epinephrine**.\n\n### After the injection, in the community\n\n- **Position:** **lay flat, raise the legs, keep warm**. If breathing is difficult or they are vomiting, **let them sit up or lie on their side**.\n- **Repeat:** if symptoms **do not improve or return**, further doses **about 5 minutes or more after the last dose**.\n- **⚠️ Observation:** transport to the ER **even if symptoms resolve**, and **remain there at least 4 HOURS, because symptoms may return** — the same 4 hours the worked scenario advises before going home.\n\n*The deck never uses the term **biphasic reaction**, which is the recurrence the 4-hour rule guards against (not taken from the course material).*\n\nSrc: L27 pp.17–19, 27 (p19, the action-plan card, image-only, recovered by render at 260 dpi)",
+        "qs": []
+      },
+      {
+        "id": "alg-14",
+        "w": "must",
+        "h": "Hospital management — the ten steps, and every dose the deck states",
+        "body": "### ⚠️ EVERY DOSE, AS PRINTED\n\n|Agent|Dose the deck states|Route and site|Repeat and notes|\n|---|---|---|---|\n|**Adrenaline (epinephrine)**|**0.01 mg/kg of a 1:1,000 (1 mg/mL) solution** · max **0.5 mg (adult)** or **0.3 mg (child)**|**IM**, **mid-anterolateral thigh** — p23 words it **\"mid-outer thigh\"**|**RECORD THE TIME.** **Repeat every 5–15 min** if needed; **most respond to 1 or 2 doses**|\n|**Auto-injector strengths**|**0.1 mg · 0.15 mg · 0.3 mg**|**IM**, the action-plan card's checkboxes|Community repeat: **about 5 min or more after the last dose**|\n|**Oxygen**|**High-flow, 6–8 L/minute**|**Face mask or oropharyngeal airway**|\"When indicated\"|\n|**0.9 % (isotonic) saline**|**1–2 litres** · **5–10 mL/kg in the first 5–10 min to an ADULT** · **10 mL/kg to a CHILD**|**IV**, **wide-bore cannula 14–16 gauge**|Given **rapidly**|\n|**Inhaled salbutamol**|**No dose stated**|Nebulised or inhaled|**Additional**, after adrenaline|\n|**Antihistamines, steroids**|**No dose stated**|—|**Additional only — never instead of adrenaline**|\n\n- **⚠️ Two intervals, both printed:** the protocol says **every 5–15 minutes**, the card **about 5 minutes or more**. Both recorded; neither corrected here.\n- **Monitor:** **BP · ECG · SO₂**, at frequent regular intervals — **cardiac rate and function, respiratory status, oxygenation; continuously if possible**.\n\n### Doses the deck names a drug for but never gives\n\n- **Auto-injector by weight:** **0.1 mg for 7.5–15 kg · 0.15 mg for 15–30 kg · 0.3 mg for 30 kg and over** *(not taken from the course material)*.\n- **Chlorphenamine**, IM or slow IV: **250 micrograms/kg under 6 months · 2.5 mg 6 months–6 years · 5 mg 6–12 years · 10 mg over 12** *(not taken from the course material)*.\n- **Hydrocortisone**, IM or slow IV: **25 mg under 6 months · 50 mg 6 months–6 years · 100 mg 6–12 years · 200 mg over 12** *(not taken from the course material; both are adjuncts AFTER adrenaline, and current guidance no longer places either in the initial algorithm)*.\n\nSrc: L27 pp.20–24 (pp.20–22 image-only, the whole protocol recovered by render and the dose re-read at 300 dpi; p23's \"0.01 mg/kg\" lies off the slide edge and was recovered by enlarging the page box)",
+        "flow": {
+          "title": "Anaphylaxis — the WAO emergency protocol",
+          "steps": [
+            {
+              "k": "step",
+              "t": "WRITTEN PROTOCOL — have a printed emergency protocol for recognition and treatment of anaphylaxis, and rehearse it regularly",
+              "n": "steps 1-7 run PROMPTLY AND SIMULTANEOUSLY"
+            },
+            {
+              "k": "step",
+              "t": "REMOVE EXPOSURE to the trigger if possible — e.g. discontinue an intravenous diagnostic or therapeutic agent that seems to be triggering symptoms",
+              "n": "step 2"
+            },
+            {
+              "k": "step",
+              "t": "ASSESS THE PATIENT — airway, breathing, circulation, mental status, skin, and body weight (mass)",
+              "n": "step 3"
+            },
+            {
+              "k": "step",
+              "t": "CALL FOR HELP — the resuscitation team in hospital, or emergency medical services in the community",
+              "n": "step 4"
+            },
+            {
+              "k": "alert",
+              "t": "INJECT ADRENALINE (EPINEPHRINE) intramuscularly in the mid-anterolateral thigh — 0.01 mg/kg of a 1:1,000 (1 mg/mL) solution, maximum 0.5 mg in an adult or 0.3 mg in a child. RECORD THE TIME OF THE DOSE and repeat every 5-15 minutes if needed. Most patients respond to 1 or 2 doses",
+              "n": "step 5 — the only drug that saves life"
+            },
+            {
+              "k": "alert",
+              "t": "POSITION the patient on the back, or in a position of comfort if there is respiratory distress and/or vomiting; ELEVATE THE LOWER EXTREMITIES. Fatality can occur within seconds if the patient stands or sits up suddenly",
+              "n": "step 6 — position kills or saves"
+            },
+            {
+              "k": "step",
+              "t": "OXYGEN when indicated — high-flow supplemental oxygen at 6-8 L/minute, by face mask or oropharyngeal airway",
+              "n": "step 7"
+            },
+            {
+              "k": "step",
+              "t": "IV ACCESS using needles or catheters with a wide-bore cannula, 14-16 gauge. Consider 1-2 litres of 0.9 % isotonic saline rapidly: 5-10 mL/kg in the first 5-10 minutes to an adult, 10 mL/kg to a child",
+              "n": "steps 8-10 IN ADDITION"
+            },
+            {
+              "k": "decision",
+              "t": "Cardiac arrest at any time?",
+              "yes": "Cardiopulmonary resuscitation with CONTINUOUS chest compressions (step 9)",
+              "no": "Go on monitoring"
+            },
+            {
+              "k": "step",
+              "t": "MONITOR at frequent, regular intervals — blood pressure, cardiac rate and function, respiratory status and oxygenation; continuously if possible",
+              "n": "step 10"
+            }
+          ]
+        },
+        "qs": []
+      }
+    ]
   }
 };
