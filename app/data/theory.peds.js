@@ -2568,5 +2568,330 @@ var T_PEDS = {
         "qs": []
       }
     ]
+  },
+  "neonatal": {
+    "intro": "Jaundice in the term newborn — the commonest reason one is readmitted. Physiological against pathological, the nomograms and the five neurotoxicity risk factors that decide which one applies, phototherapy and exchange transfusion, and kernicterus at the end of it.",
+    "sections": [
+      {
+        "id": "nnj-1",
+        "w": "must",
+        "h": "Neonatal jaundice — the numbers, and where bilirubin comes from",
+        "body": "### How common, and how dangerous\n- **Visible jaundice:** **65 % of newborns**, with a **total serum bilirubin (TSB) above 6 mg/dL** in the first week.\n- **Excessive hyperbilirubinaemia:** **8–10 %** of newborns.\n- **Extreme TSB:** rare, but causes **kernicterus** — **injury to the basal ganglia and brainstem**.\n\n### Bilirubin metabolism\n- **Source:** breakdown of **haem (iron protoporphyrin)** in the **RES and bone marrow**.\n- **Haem oxygenase cleaves it to three:** **iron** (conserved) · **carbon monoxide** (exhaled) · **biliverdin**.\n- **Biliverdin → bilirubin:** by **bilirubin reductase**.\n- **Transport:** unconjugated bilirubin **bound to albumin**, taken up by hepatocytes.\n- **Conjugation:** **uridyl diphosphoglucuronyl transferase (UDPGT, glucuronyl transferase)** attaches **one or two glucuronide molecules**.\n- **Excretion:** into **bile → intestine**, metabolised by **normal gut flora**, passed in stool.\n\n### Why the newborn re-absorbs it — the enterohepatic circulation\n- **Two newborn defects:** **absent gut flora** and **slow GI motility**.\n- **Consequence:** conjugated bilirubin **stagnates in the lumen**.\n- **The enzyme that undoes it:** mucosal **β-glucuronidase** strips the glucuronide off.\n- **Result:** **unconjugated bilirubin is reabsorbed** — the **enterohepatic circulation**.\n\nSrc: L8 pp.2–4",
+        "qs": []
+      },
+      {
+        "id": "nnj-2",
+        "w": "must",
+        "h": "Unconjugated or conjugated — the first fork",
+        "body": "- **What sets the level:** the **balance of the rate of production against the rate of excretion**.\n- **⚠️ How it is judged:** an **HOUR-SPECIFIC TSB** against a standard curve of **TSB by age in hours** — never a single number.\n- **Fractionate it:** serum bilirubin splits into an **unconjugated** and a **conjugated** component.\n\n### Which one, and what it means\n- **Unconjugated:** **most neonatal jaundice presenting in the first week**.\n- **Conjugated:** **congenital infections · intrahepatic cholestasis · extrahepatic biliary obstruction**.\n\n*Conjugated hyperbilirubinaemia as a disease — biliary atresia, the infantile cholestasis work-up — is `liver`, from `43)Infantile cholestasis_`.*\n\n**Umbilical hernia** *(not in course material)* **—** a soft, reducible, skin-covered umbilical swelling, common at term and commoner in **prematurity, hypothyroidism and Down syndrome**; **most close by 3–4 years**, and surgery is for persistence, a large defect or incarceration.\n\nSrc: L8 p.5; the umbilical hernia entry supplied and tagged, deferred here by `endocrine`",
+        "qs": []
+      },
+      {
+        "id": "nnj-3",
+        "w": "must",
+        "h": "Physiologic jaundice — four criteria, and the line that makes it pathologic",
+        "body": "### The four defining features\n- **Timing of onset:** visible jaundice appearing **AFTER 24 hours of age**.\n- **Rate of rise:** total bilirubin rises by **less than 5 mg/dL (86 µmol/L) per day**.\n- **Peak:** at **3–5 days of age**, and **no higher than 15 mg/dL (258 µmol/L)**.\n- **Resolution:** by **1 week in the full-term** infant, **2 weeks in the preterm**.\n\n### The five factors that produce it\n- **Low UDPGT activity** · **relatively high red cell mass** · **absence of intestinal flora** · **slow intestinal motility** · **increased enterohepatic circulation** in the first days.\n\n### ⚠️ The exclusion that matters most\n**Before 24 hours:** **visible jaundice with a TSB above 5 mg/dL** is **most commonly significant haemolysis** — never physiologic.\n\nSrc: L8 pp.6–7",
+        "qs": []
+      },
+      {
+        "id": "nnj-4",
+        "w": "must",
+        "h": "Pathologic unconjugated hyperbilirubinaemia — the causes tree",
+        "body": "Two branches only: **overproduction of bilirubin**, or **decreased conjugation**.\n\n### Overproduction — and the reticulocyte count separates the two halves\n\n|Group|Reticulocytes|Coombs (DAT)|Causes|\n|---|---|---|---|\n|**Immune haemolysis**|**Elevated**|**POSITIVE**|**ABO incompatibility · Rh incompatibility · minor blood group antigen incompatibility**|\n|**Non-immune haemolysis**|**Elevated**|**NEGATIVE**|**Abnormal red cell shapes** — spherocytosis, elliptocytosis, pyknocytosis, stomatocytosis · **red cell enzyme defects** — G6PD, pyruvate kinase, hexokinase · **metabolic defects**|\n|**Non-haemolytic**|**NORMAL**|—|**Extravascular haemorrhage** — cephalhaematoma, extensive bruising, intracranial haemorrhage · **polycythaemia** · **exaggerated enterohepatic circulation** — bowel obstruction, functional ileus · **breastfeeding-associated jaundice**|\n\n### Decreased rate of conjugation\n- **Crigler–Najjar type I:** **complete** glucuronyl transferase deficiency, **autosomal recessive**. Rare, severe.\n- **Crigler–Najjar type II:** **partial** deficiency, **autosomal dominant**.\n- **Gilbert syndrome:** **common, milder**.\n- **Hypothyroidism.**\n\n*Cephalhaematoma as a birth injury, with its own differential, is nns-12; congenital hypothyroidism is `endocrine`.*\n\nSrc: L8 pp.7–9",
+        "qs": []
+      },
+      {
+        "id": "nnj-5",
+        "w": "must",
+        "h": "ABO incompatibility and Rh isoimmunisation",
+        "body": "### ABO incompatibility\n- **Who:** **any pregnancy in a type O mother**.\n- **Severity:** usually **mild**, but **UNPREDICTABLE** — maternal **anti-A / anti-B IgG** varies.\n- **The numbers:** **15 % of pregnancies are \"setups\"** (mother O, infant A or B); **33 %** of those are **Coombs-positive**; **under 10 %** of those need therapy.\n- **⚠️ The late trap:** maternal antibody **persists for months**, so the infant may grow **progressively anaemic over the first few weeks**, sometimes needing transfusion.\n\n### Rh isoimmunisation\n- **Character:** **less common, MORE severe, MORE predictable** than ABO.\n- **⚠️ It worsens each time:** severity **increases with each immunised pregnancy**.\n- **Prevention:** **high-titre Rho(D) immune globulin** to the Rh-negative woman after **invasive procedures, miscarriage, abortion, or delivery of an Rh-positive infant**.\n- **At birth:** often **already anaemic**; continued haemolysis gives **hyperbilirubinaemia and worsening anaemia**.\n\n### Erythroblastosis fetalis — the severe end\n- **Triad:** **life-threatening anaemia · generalised oedema · fetal or neonatal heart failure**.\n- **Untreated:** fetal or neonatal **death often results**.\n- **Antenatal cornerstone:** **transfuse the FETUS with Rh-NEGATIVE cells**, into the **umbilical vein** or the **fetal abdominal cavity**.\n- **At delivery:** **phototherapy from birth**, **exchange transfusion frequently needed**.\n- **IVIG** as soon as the diagnosis is made **may reduce the need for exchange** (L8 states no dose).\n- **⚠️ Follow-up:** haemolysis runs until all maternal antibody is gone — **monitor 2–3 months for recurrent anaemia**.\n\n|Feature|ABO|Rh|\n|---|---|---|\n|**Frequency**|**Commoner**|**Less common**|\n|**Severity**|**Usually mild**|**More severe**|\n|**Predictability**|**Unpredictable**|**Predictable**|\n|**Effect of successive pregnancies**|**No trend**|**Worsens each time**|\n|**Preventable antenatally**|**No**|**YES — anti-D**|\n\nSrc: L8 pp.10–11",
+        "qs": []
+      },
+      {
+        "id": "nnj-6",
+        "w": "must",
+        "h": "Hereditary spherocytosis and G6PD deficiency",
+        "body": "### Hereditary spherocytosis\n- **Rank:** the **commonest red cell MEMBRANE defect**.\n- **Mechanism:** haemolysis by **decreasing red cell deformability**.\n- **In the newborn:** hyperbilirubinaemia may be **severe enough to need exchange transfusion**.\n- **Sign:** **splenomegaly may be present**.\n- **Diagnosis:** suspected on the **peripheral blood smear** and the **family history**.\n\n### G6PD deficiency\n- **Rank:** the **commonest red cell ENZYME defect causing haemolysis**.\n- **Who:** infants of **African, Mediterranean or Asian descent**.\n- **⚠️ X-linked, but girls are still at risk:** **female heterozygotes** are affected through **X-chromosome inactivation**.\n- **Two mechanisms at once:** increased bilirubin **production**, exaggerated by a **decreased rate of conjugation**.\n- **⚠️ THE TESTING TRAP:** **G6PD activity is HIGH IN RETICULOCYTES**, so a reticulocytosis gives a **falsely normal enzyme test**.\n- **So:** **a low level always raises suspicion**, and a suspect case with a normal result is **retested at 3 months**.\n\n*Both as haematological diseases outside the newborn are `haematology`; the causes tree there names them and points here.*\n\nSrc: L8 pp.12–13",
+        "qs": []
+      },
+      {
+        "id": "nnj-7",
+        "w": "must",
+        "h": "Non-haemolytic overproduction, and the conjugation defects",
+        "body": "### Non-haemolytic increased production\n- **Enclosed haemorrhage:** **cephalhaematoma · intracranial haemorrhage · extensive skin bruising**.\n- **Polycythaemia:** increased red cell mass, so **more cells reach senescence each day**.\n- **Bowel obstruction:** functional or mechanical, raising the **enterohepatic circulation**.\n\n### Crigler–Najjar syndrome\n- **Defect:** **UDPGT gene mutations** giving **complete or nearly complete absence of enzyme activity**.\n- **Type I:** complete deficiency, **autosomal recessive**. **Type II:** partial, **autosomal dominant**.\n- **Untreated:** **severe unconjugated hyperbilirubinaemia, encephalopathy, death**.\n- **⚠️ Type II is inducible:** **phenobarbital lowers bilirubin by 30–80 %**. Type I is not.\n- **Cure:** **liver transplantation**.\n\n### Gilbert syndrome\n- **Nature:** **common, mild, autosomal dominant**.\n- **Defect:** low hepatic UDPGT activity from a **polymorphism at the PROMOTER region** — not the coding sequence.\n- **Prevalence:** **~9 % homozygous, 42 % heterozygous**.\n- **Behaviour:** jaundice **whenever the bilirubin load rises**; more **prolonged neonatal and breast-milk jaundice**.\n\nSrc: L8 pp.14–16",
+        "qs": []
+      },
+      {
+        "id": "nnj-8",
+        "w": "must",
+        "h": "Race, prematurity, and the two breastfeeding jaundices",
+        "body": "### Unknown or multiple factors\n- **Race:** peak TSB above **12 mg/dL (206 µmol/L)** in **Asians 23 % · whites 10–13 % · African Americans 4 %** — probably **UDPGT polymorphism or G6PD deficiency**.\n- **Prematurity:** **poor enteral intake, delayed stooling, increased enterohepatic circulation, shorter red cell life**.\n- **⚠️ The late-preterm number:** at **35–36 weeks, 13 TIMES more likely than term** to be **readmitted for hyperbilirubinaemia**.\n\n### Breast-FEEDING-associated jaundice — \"lack of breast milk\" jaundice\n- **Incidence:** **9 % of breastfed** infants against **2 % of formula-fed**.\n- **Mechanism:** **poor intake and increased enterohepatic circulation** — a feeding failure, not a milk problem.\n- **⚠️ Read it as a warning:** excessive jaundice **may mean the milk supply is not established**.\n- **Assessing feeding:** monitor **weight, urine output and stool output**.\n- **Management:** **supplemental formula · nurse more often · electric pump every 2 hours · lactation specialist**.\n- **⚠️ Why follow-up exists:** discharge precedes **both the milk supply and the jaundice peak** — AAP advises a **visit 2 days after discharge**.\n\n### Breast-MILK jaundice\n- **Duration:** unconjugated hyperbilirubinaemia **to 2–3 months**, common in breastfed infants.\n- **The diagnostic picture:** **moderate unconjugated hyperbilirubinaemia for 6–12 weeks in a THRIVING breastfed infant**, with **no haemolysis, hypothyroidism or other disease**.\n\n|Feature|Breast-FEEDING jaundice|Breast-MILK jaundice|\n|---|---|---|\n|**Cause**|**Not enough milk taken**|**A property of the milk**|\n|**Timing**|**First week**|**Persists 6–12 weeks, up to 2–3 months**|\n|**Weight**|**Poor gain, excess loss**|**THRIVING**|\n|**Action**|**Feed more, supplement, pump**|**Exclude haemolysis and hypothyroidism, then reassure**|\n\nSrc: L8 pp.17–19",
+        "qs": []
+      },
+      {
+        "id": "nnj-9",
+        "w": "must",
+        "h": "Bilirubin toxicity — what decides whether the brain is hurt",
+        "body": "- **The toxic agent:** the **unconjugated bilirubin ANION**, not total bilirubin.\n- **⚠️ No proven cut-off:** it is **unknown whether a fixed level exists above which damage always occurs**.\n- **The barrier:** the **blood–brain barrier protects**, but **its integrity cannot be measured clinically**.\n- **The buffer:** **albumin binds unconjugated bilirubin** and is **protective**.\n- **So two things matter:** **how much albumin is free**, and **whether other anions are displacing bilirubin off it**.\n\n### The five risk determinants\n- **Duration** of hyperbilirubinaemia · **serum albumin concentration** · **associated illness** · **acidosis** · **competing anions**.\n- **⚠️ The two named competitors:** **sulfamethoxazole** and **ceftriaxone** — both compete for the albumin binding site.\n- **Baseline risk:** small in a **healthy term neonate even at 25–30 mg/dL (430–516 µmol/L)**.\n\nSrc: L8 p.20",
+        "qs": []
+      },
+      {
+        "id": "nnj-10",
+        "w": "must",
+        "h": "Acute bilirubin encephalopathy and kernicterus",
+        "body": "### Acute bilirubin encephalopathy — evolving injury\n- **Early:** **lethargy, poor feeding**.\n- **Then:** **irritability, high-pitched cry**.\n- **Then:** **arching of the neck (retrocollis) and of the trunk (opisthotonos)**.\n- **Late:** **apnoea, seizures, coma**.\n- **⚠️ The earliest sign is the least alarming:** *\"sleepy and not interested in feeding\"* — nonspecific, and still the trigger.\n- **What it triggers:** detailed **birth, postnatal, feeding and elimination history**, urgent assessment for **bilirubin-induced neurologic dysfunction (BIND)**, and **TSB with albumin**.\n- **Most sensitive test of neurotoxicity:** the **auditory brainstem-evoked response**.\n\n### Kernicterus — chronic, and irreversible\n- **Movement:** **extrapyramidal — choreoathetoid cerebral palsy**.\n- **Eyes:** **gaze abnormality, especially limitation of UPWARD gaze**.\n- **Hearing:** deafness; **a failed ABR with NORMAL otoacoustic emissions** — **auditory neuropathy / dyssynchrony**.\n- **Teeth:** **dysplasia of the enamel of the deciduous teeth**.\n- **Diagnosis is CLINICAL.** **MRI is nearly diagnostic** if abnormality is **isolated to the globus pallidus, subthalamic nuclei, or both**.\n\n|Feature|Acute encephalopathy|Kernicterus|\n|---|---|---|\n|**Timing**|**During the hyperbilirubinaemia**|**The permanent sequel**|\n|**Reversible**|**Potentially**|**NO**|\n|**Hallmark**|**Retrocollis and opisthotonos**|**Choreoathetoid CP + deafness**|\n|**Test**|**ABR, TSB, albumin**|**Clinical; MRI globus pallidus / subthalamic nuclei**|\n\n*Kernicterus is also one of L10’s HAM causes of neonatal seizures, and one of `neurological`’s perinatal risk factors for cerebral palsy.*\n\nSrc: L8 pp.21–22",
+        "qs": []
+      },
+      {
+        "id": "nnj-11",
+        "w": "must",
+        "h": "Who is at risk, how the baby is assessed, and the phototherapy thresholds",
+        "body": "### The eight risk factors for severe hyperbilirubinaemia\n- **Bilirubin —** a **predischarge TSB or TcB close to the phototherapy threshold**; **jaundice in the first 24 h**.\n- **Haemolysis —** **blood group incompatibility with a positive direct Coombs**, or **G6PD deficiency**.\n- **Gestational age 35–36 weeks** · **a previous sibling who needed phototherapy**.\n- **Cephalhaematoma or significant bruising** · **exclusive breastfeeding with excessive weight loss**.\n- **Jaundice seen before discharge** · **a macrosomic infant of a diabetic mother**.\n\n### Evaluation\n- **History:** **feeding and elimination**; **birth weight and per cent weight change since birth**.\n- **Examination:** for **sources of excessive haem breakdown**.\n- **Always:** **blood type · Coombs · CBC with smear · serum albumin · TSB**.\n- **G6PD:** if jaundice is **otherwise unexplained**, and in **African-American infants with severe jaundice**.\n- **⚠️ FRACTIONATE the bilirubin** if the infant **appears ill**, or has **prolonged jaundice, acholic stool, hepatosplenomegaly or dark urine** — the cholestasis question.\n- **Transcutaneous bilirubin (TcB)** *(not in course material)* **—** a **non-invasive reflectance screen** for who needs a blood TSB; **unreliable once phototherapy has started** and at high levels, so **a value near the threshold is confirmed on serum**.\n- **Cephalocaudal progression** *(not in course material)* **—** jaundice starts at the **face and descends to the palms and soles as TSB rises**, so **the soles are the alarming site**; visual estimation **never replaces measurement**.\n\n### The AAP 2022 phototherapy thresholds\n- **The plot:** **TSB in mg/dL against age in HOURS**, to **336 h (14 days)**, **one curve per gestational week**.\n- **⚠️ Use TSB — do NOT subtract the direct-reacting or conjugated fraction.**\n- **Two charts, and TABLE 2 picks which:** **Figure 2** with **no neurotoxicity risk factors**, **Figure 3** with **one or more**.\n- **Shape:** thresholds **rise with gestational and postnatal age**, and **plateau at about 96 hours (day 4)**.\n\n|Gestation|Plateau, NO risk factors (Fig 2)|Plateau, ONE OR MORE (Fig 3)|\n|---|---|---|\n|**≥ 40 weeks**|**~21.8 mg/dL**|—|\n|**39 weeks**|**~21.5**|—|\n|**38 weeks**|**~20.8**|**~18.3**|\n|**37 weeks**|**~20.1**|**~18.3**|\n|**36 weeks**|**~19.4**|**~17.0**|\n|**35 weeks**|**~18.7**|**~16.1**|\n\n**TABLE 2 — the five hyperbilirubinaemia neurotoxicity risk factors:**\n- **Gestational age under 38 weeks**, worsening with the degree of prematurity.\n- **Albumin below 3.0 g/dL.**\n- **Isoimmune haemolytic disease** (**positive DAT**), **G6PD deficiency**, or other haemolytic conditions.\n- **Sepsis.**\n- **Instability —** **significant clinical instability in the previous 24 hours**.\n\n*Curve values are read off the printed nomograms and are approximate; the charts are the instrument.*\n\nSrc: L8 pp.23–24, 26–28 (pp.26–28 are image-only nomograms recovered by render; attributed on the slide to Kemper, Newman & Slaughter, Pediatrics 2022, AAP). TcB and cephalocaudal progression supplied and tagged",
+        "qs": []
+      },
+      {
+        "id": "nnj-12",
+        "w": "must",
+        "h": "Phototherapy and exchange transfusion",
+        "body": "### Phototherapy\n- **Rank:** the **commonest treatment** of unconjugated hyperbilirubinaemia; **non-invasive and safe**.\n- **Expected effect:** **TSB down 30–40 % in the first 24 hours** with intensive phototherapy.\n- **⚠️ Shield the eyes — to prevent retinal damage.**\n- **Elective start:** TSB about **6 mg/dL (102 µmol/L) BELOW that infant’s predicted exchange level**.\n- **Tool:** the AAP thresholds for **≥ 35 weeks** are in **BiliTool**.\n- **Feed by mouth** where possible, **to cut the enterohepatic circulation**.\n- **Where:** the **mother’s room**, or a room she can stay in with the infant.\n\n### Exchange transfusion — escalation\n- **⚠️ The trigger:** a bilirubin **within 2 mg/dL of the double-volume exchange threshold** demands **rapid escalation**.\n- **Where:** a **NICU that can perform exchange**, before irreversible neurologic damage.\n- **Meanwhile:** **intensive phototherapy immediately, during transport if possible**.\n\n### Exchange transfusion — the procedure\n- **Volume:** **double volume ≈ 160–200 mL/kg body weight**.\n- **Typical indication:** extreme hyperbilirubinaemia from **Rh isoimmunisation, ABO incompatibility or hereditary spherocytosis**.\n- **What it achieves:** **TSB down ~50 %**, **~80 % of sensitised cells and offending antibody removed**, so haemolysis falls.\n- **Three other indications:** **TSB above 30 mg/dL** · **signs of encephalopathy** · **TSB not down 0.5 mg/dL/h after 4 hours of intensive phototherapy**.\n- **⚠️ Decide on TSB —** **NOT on the unconjugated fraction**.\n\n### Complications\n- **Mortality 1–5 %**, worst in the **smallest, most immature, unstable** infants; do it at a **referral centre**.\n- **⚠️ Sudden death —** it **can occur during the procedure in ANY infant**.\n- **Serious complications 5–10 %:** **necrotizing enterocolitis · infection · electrolyte disturbance · thrombocytopenia**.\n\nSrc: L8 pp.25, 28–31",
+        "qs": []
+      }
+    ]
+  },
+  "neonatal-seiz": {
+    "intro": "Seizures, hypoglycaemia and birth injury in the term newborn. Why the newborn brain seizes differently, the eight benign movements it is mistaken for, the treatment algorithm with its doses, and the scalp swellings and nerve palsies of delivery.",
+    "sections": [
+      {
+        "id": "nns-1",
+        "w": "must",
+        "h": "Neonatal seizures — two definitions, three categories, and the incidence",
+        "body": "### The clinical definition\nA **paroxysmal alteration in neurologic function** — **motor, behavioural and/or autonomic** — indicating **neurological damage or a severe illness needing urgent treatment**.\n\n### The electrographic definition\nA pattern of **sudden, repetitive, evolving stereotyped waveform with a beginning and an end**, **duration usually over 10 seconds**.\n\n### The three categories, and why they exist\n- **Epileptic:** clinical phenomena **WITH** an EEG correlate — e.g. **clonic**.\n- **Non-epileptic:** clinical seizures **WITHOUT** an EEG correlate — e.g. **subtle**, **generalised tonic**.\n- **EEG seizures:** **abnormal EEG activity with no clinical correlate**.\n\n### Incidence\n- **Overall:** **1.5–5.5 per 1,000 live births** (National Neonatal Perinatal Database, 2002–03).\n- **⚠️ It rises as gestation and weight fall.**\n- **Preterm against term:** **20.8 against 8.4 per 1,000** — almost double.\n- **Very low birth weight:** **36.1 per 1,000** — more than four-fold.\n\nSrc: L10 pp.2–3, 20",
+        "qs": []
+      },
+      {
+        "id": "nns-2",
+        "w": "high",
+        "h": "Why the newborn brain seizes, and why so much of it is invisible",
+        "body": "### The excitation–inhibition imbalance\n\n|Increased excitatory|Decreased inhibitory|\n|---|---|\n|**Overabundance of synaptic connections**|**GABA synapses form BEFORE glutamatergic synapses**|\n|**Overexpression of glutamatergic receptors**|**Lack of a developed inhibitory network**|\n|**Altered composition of NMDA and AMPA receptors**|**Immature astrocyte**|\n|**Excitatory nature of GABA**|**Gap junctions are prevalent and facilitate seizure spread**|\n\n- **⚠️ GABA is EXCITATORY in the newborn brain**, which is why the adult logic of inhibition does not transfer.\n\n### Why the seizure may not be seen\n**The rule:** **seizures produce abnormal MOVEMENTS only if the discharge reaches the MOTOR CORTEX**. A discharge confined elsewhere gives nothing to watch — the mechanism behind the electrographic-only rule in nns-7.\n\nSrc: L10 pp.4–5 (both image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "nns-3",
+        "w": "must",
+        "h": "Aetiology — HAM, the six injury groups, and what the cause predicts",
+        "body": "### HAM — the deck’s own aetiology list\n- **Hypoxic-ischaemic encephalopathy — 40 %** — and **stroke**.\n- **Intracranial haemorrhage.**\n- **Kernicterus / hyperbilirubinaemia.**\n- **Meningitis, encephalitis and septicaemia.**\n- **Metabolic:** **hypocalcaemia and hypoglycaemia**.\n- **Also:** **IEM · brain anomalies · abstinence syndrome · pyridoxine deficiency · genetic and epileptic syndromes**.\n\n### The six major causes of neonatal brain injury\n- **HIE / neonatal encephalopathy:** **commonest acute symptomatic cause at term**; onset **in the first 12–24 hours**; eligible infants **benefit from therapeutic hypothermia**.\n- **IVH / white matter injury:** **preterm ≤ 32 weeks or VLBW** — **germinal matrix fragility**, ventricular bleeding, **posthaemorrhagic ventricular dilatation**.\n- **Perinatal stroke:** often **focal clonic**; suspect it when seizures are **lateralized** or imaging is **unilateral**.\n- **Infection:** meningitis, encephalitis and sepsis, which **also worsen the brain injury**.\n- **Metabolic:** **always check glucose, calcium, magnesium, sodium**; consider **pyridoxine-dependent** or other IEM when **refractory**.\n- **Structural / genetic:** **malformations, channelopathies, neonatal epilepsies** — when **persistent or unexplained**.\n\n### ⚠️ Two rankings the deck asks for directly\n- **Commonest cause in the FULL-TERM infant: HIE.**\n- **Commonest cause in the PRETERM infant: IVH.**\n\n### Why identifying the cause matters\n- **Treat the cause and the seizure can stop** — often without long-term therapy.\n- **⚠️ Prognosis follows the CAUSE —** not the seizure. **Good:** SAH, **late-onset** hypocalcaemia. **High risk:** **hypoglycaemia, cerebral malformations, meningitis**.\n\n*HIE as a disease — Sarnat and Thompson staging, the phases of injury, cooling criteria — is `perinatal-hie` in full.*\n\nSrc: L10 pp.6–8; the term/preterm ranking L10 pp.50–51",
+        "qs": []
+      },
+      {
+        "id": "nns-4",
+        "w": "must",
+        "h": "Types of seizure, and the subtle seizure in detail",
+        "body": "|Type|Note|\n|---|---|\n|**Subtle**|**Most common type of seizure**|\n|**Tonic**|**Preterm patients with IVH**|\n|**Clonic**|**Focal clonic has the BEST prognosis**|\n|**Myoclonic**|**WORST prognosis of all types**|\n\n### The five subtle manifestations\n- **Ocular:** **tonic horizontal deviation of the eyes**, or **sustained eye opening with ocular fixation**, or **cycled fluttering**.\n- **Oral–facial–lingual:** **chewing, lip-smacking**.\n- **Limb:** **cycling, paddling**.\n- **Autonomic:** **tachycardia or bradycardia**.\n- **⚠️ Apnoea:** a **rare** manifestation of seizure — with **tachycardia early and bradycardia late**, which is what separates it from apnoea of other causes.\n\nSrc: L10 pp.9–10",
+        "qs": []
+      },
+      {
+        "id": "nns-5",
+        "w": "must",
+        "h": "History and examination — the day of onset does most of the work",
+        "body": "### Describing the event\n- **Get a complete description** from the parents, or by **video recording**.\n- **Awake or asleep:** an event only in sleep suggests **benign neonatal sleep myoclonus**.\n\n### Onset by day of life\n- **Day 0–3:** **perinatal asphyxia · intracranial haemorrhage · drug abstinence · metabolic causes**.\n- **Day 4–7:** **sepsis · meningitis · metabolic causes · developmental defects**.\n- **⚠️ Fifth day:** **benign familial neonatal seizure** — the classic \"fifth-day fit\".\n\n### The rest of the history\n- **Antenatal:** **intrauterine infection, maternal diabetes, narcotic addiction**; **sudden increase in fetal movements**.\n- **Feeding:** a **sepsis-like picture AFTER a feed** suggests **IEM**, or **late-onset hypocalcaemia from cow’s milk**.\n- **Family:** **consanguinity**, family history of **seizures, mental retardation, early fetal or neonatal deaths** → **IEM**. Neonatal seizures **in a parent or sibling** → **benign familial neonatal convulsions (BFNC)**.\n- **BFNC** *(not in course material)* **—** **autosomal dominant**, usually **KCNQ2/KCNQ3** channel mutations, **remitting within weeks to months** with **normal development** in most.\n\n### Examination\n- **Vitals**, then **gestational age, birth weight, pallor, malformations**.\n- **⚠️ Jitteriness on general examination** may itself be **hypoglycaemia or hypocalcaemia**.\n- **CNS:** a **bulging anterior fontanelle** → **meningitis or intracranial haemorrhage**; **fundus for chorioretinitis**.\n- **Systemic:** **hepatosplenomegaly or an abnormal urine odour** → **IEM**.\n- **Skin:** **neurocutaneous markers** — **hypopigmented ash-leaf macules of tuberous sclerosis**.\n\nSrc: L10 pp.11, 15–17; the BFNC genetics supplied and tagged",
+        "qs": []
+      },
+      {
+        "id": "nns-6",
+        "w": "must",
+        "h": "The mimics — jitteriness, sleep myoclonus and the benign movement disorders",
+        "body": "### Jitteriness against seizure\n\n|Feature|Jitteriness|Seizure|\n|---|---|---|\n|**Stimulus sensitive**|**++**|**−**|\n|**Cessation**|**Passive flexion and gentle grasp stop it**|**Nothing stops it**|\n|**Frequency of jerk**|**5–6 per second**|**2–3 per second**|\n|**Rhythmicity**|**Rhythmic oscillation**|**Fast and slow component**|\n|**Abnormal gaze or eye movement**|**Nil**|**Present**|\n|**Autonomic disturbance**|**Nil**|**Increased HR and BP**|\n|**aEEG**|**Normal**|**Abnormal**|\n\n### Benign neonatal sleep myoclonus\n- **When:** **non-REM sleep**, **preterm** infants, **first week of life**.\n- **⚠️ Backwards to a seizure:** **restraint and benzodiazepines INCREASE the jerks**.\n- **The confirming sign:** **rapidly abolished on arousal**; **EEG normal**.\n\n### The other transient benign paroxysmal movement disorders of infancy\n\n|Disorder|Onset|Resolution|Secondary causes|Testing|\n|---|---|---|---|---|\n|**Jitteriness**|**< 2 weeks**|**< 1 month** (2 months–1 year)|**Yes**|**Biochemical tests, EEG**|\n|**Benign neonatal sleep myoclonus**|**< 2 weeks**|**< 6 months**|**Yes**|**EEG**|\n|**Shuddering**|**< 1 year**|**< 4 years**|**No**|**EEG**|\n|**Benign myoclonus of early infancy**|**6 months** (< 1 year)|**< 2–3 years**|**No**|**EEG, brain MRI**|\n|**Transient idiopathic dystonia of infancy**|**5–10 months**|**< 5 years**|**No**|**Brain MRI**|\n|**Spasmus nutans**|**4–18 months**|**1–2 years after onset**|**Yes**|**Brain MRI; ophthalmological evaluation (VEP, ERG)**|\n|**Paroxysmal tonic upgaze of infancy**|**5 months**|**< 4 years**|**Yes**|**EEG, brain MRI, ophthalmology, CACNA1A sequencing**|\n|**Benign paroxysmal torticollis**|**< 3 months**|**< 4 years**|**No**|**EEG, brain and cervical MRI, CACNA1A sequencing**|\n\nSrc: L10 pp.13–14; the movement-disorder table L10 p.12 (image-only, recovered by render; attributed on the slide to Mosca, Martins & Temudo, Rev Neurol 2022)",
+        "qs": []
+      },
+      {
+        "id": "nns-7",
+        "w": "must",
+        "h": "Investigation — the essential list and the five-step approach",
+        "body": "### Table 8.1 — investigations required in neonates with seizures\n\n|Essential (required in all, with few exceptions)|Additional|\n|---|---|\n|**Blood sugar**|**Haematocrit** — if plethoric or at risk of polycythaemia|\n|**Serum sodium and calcium**|**Serum bilirubin** — if icteric|\n|**Cerebrospinal fluid examination**|**Serum magnesium**|\n|**Cranial ultrasound**|**Arterial blood gas and anion gap** — lethargy, vomiting, family history|\n|**EEG and/or amplitude-integrated EEG**|**CT and/or MRI** — if no aetiology after the essential tests|\n|—|**TORCH screen** for congenital infections; **work-up for inborn errors of metabolism**|\n\n### The five-step diagnostic approach\n- **1 Stabilize —** airway, breathing, circulation, temperature, **bedside glucose**; **treat hypoglycaemia immediately**.\n- **2 Rapid reversible causes —** electrolytes, calcium, magnesium, sodium, blood gas, **sepsis screen if indicated**.\n- **3 EEG / aEEG —** **continuous EEG is the GOLD STANDARD**; **aEEG screens and trends, and CAN MISS seizures**.\n- **4 Neuroimaging —** **cranial ultrasound** for IVH and hydrocephalus; **MRI** for stroke, an HIE pattern or malformation.\n- **5 Aetiology-specific work-up —** lumbar puncture, metabolic testing, genetics, stroke evaluation.\n\n### ⚠️ The EEG pearl\n**The pearl:** **many neonatal seizures are electrographic-only** — **never rule them out by observation alone in a high-risk infant**.\n\n*L10 illustrates this with an unlabelled cranial-ultrasound IVH series, one brain-anomaly scan and two MRI slices; it names no grades, so none is written here.*\n\nSrc: L10 pp.18–19, 21–23 (p.18’s table image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "nns-8",
+        "w": "must",
+        "h": "Treatment — reversible causes first, then the drug ladder",
+        "body": "### The principle\n- **⚠️ Reversible cause FIRST —** **hypoglycaemia, hypocalcaemia, hyponatraemia, hypomagnesaemia, infection, toxin or medication**, before any anticonvulsant.\n- **Why:** this **may stop the seizures without any long-term antiseizure therapy**.\n\n### First-line drugs\n- **Phenobarbital** remains the **common first-line** drug; **levetiracetam** is also widely used.\n- **Escalation depends on** the **response, the EEG burden and the aetiology**.\n\n### Monitoring\n- **Watch both —** the **clinical examination AND the EEG trajectory**.\n- **⚠️ Electroclinical uncoupling —** it follows medication: **the movements stop and the discharges do not**.\n\n### The HIE overlay the deck prints here\n- **Who is cooled —** **moderate-to-severe HIE born at ≥ 36 weeks**; **therapeutic hypothermia is standard of care**.\n- **Target 33.5–34.5 °C**, started **within 6 hours of birth**, continued **72 hours**, then **controlled rewarming**.\n- **Where:** centres with **neuromonitoring, neuroimaging and follow-up expertise**.\n\n*Cooling criteria A, B and C and the technique are `perinatal-hie`.*\n\nSrc: L10 pp.24–25; the algorithm below from p.24 (image-only, recovered by render)",
+        "flow": {
+          "title": "Neonate with seizures",
+          "steps": [
+            {
+              "k": "step",
+              "t": "STABILISE AND SAMPLE — identify and characterise the seizure · secure airway, optimise breathing, circulation and temperature · start oxygen if needed · secure IV access and take baseline bloods: sugar, calcium, magnesium, sodium, potassium, arterial blood gas, haematocrit, sepsis screen",
+              "n": "step 1"
+            },
+            {
+              "k": "alert",
+              "t": "IF HYPOGLYCAEMIC (blood sugar < 40 mg/dL) — 2 mL/kg of 10 % dextrose as a bolus, then a continuous infusion of 6–8 mg/kg/min. IF SUGAR IS NORMAL — withdraw a blood calcium; if abnormal, 2 mL/kg of 10 % calcium gluconate IV UNDER CARDIAC MONITORING",
+              "n": "the reversible causes"
+            },
+            {
+              "k": "decision",
+              "t": "Seizures persist?",
+              "yes": "Go to phenobarbitone",
+              "no": "No antiseizure drug needed — the metabolic correction was the treatment"
+            },
+            {
+              "k": "step",
+              "t": "PHENOBARBITONE 20 mg/kg IV stat over 20 minutes",
+              "n": "first line"
+            },
+            {
+              "k": "step",
+              "t": "Seizures continue — repeat phenobarbitone in 10 mg/kg/dose aliquots UNTIL 40 mg/kg IS REACHED",
+              "n": "load to the ceiling"
+            },
+            {
+              "k": "step",
+              "t": "Seizures continue — PHENYTOIN 20 mg/kg IV slowly over 20 minutes under cardiac monitoring. Levetiracetam or lidocaine may replace phenytoin as the second-line agent",
+              "n": "second line"
+            },
+            {
+              "k": "step",
+              "t": "Seizures continue — repeat phenytoin 10 mg/kg/dose",
+              "n": "second line, repeat"
+            },
+            {
+              "k": "step",
+              "t": "Seizures continue — consider a lorazepam or midazolam bolus, and a midazolam infusion if needed",
+              "n": "third line"
+            },
+            {
+              "k": "alert",
+              "t": "SEIZURES CONTROLLED — wean the antiepileptic slowly to maintenance phenobarbitone",
+              "n": "exit"
+            }
+          ]
+        },
+        "qs": []
+      },
+      {
+        "id": "nns-9",
+        "w": "must",
+        "h": "Neonatal hypoglycaemia — thresholds, who gets it, and how",
+        "body": "**Why it matters:** neonatal hypoglycaemia carries **long-term neurological sequelae**, and is one of the seizure causes with a **high risk of adverse outcome**.\n\n### Definition — the deck states there is no consensus\n\n|Age|Blood glucose below|\n|---|---|\n|**First 24 hours**|**30 mg/dL**|\n|**1–3 days**|**40 mg/dL**|\n|**After 3 days**|**45 mg/dL**|\n\n### The six risk groups\n- **LGA** infants · **infants of diabetic mothers**.\n- **SGA** infants — **decreased glycogen stores**.\n- **AGA but under 2 kg**, or **preterm under 37 weeks**.\n- **Disease:** **hypoxia · hypothermia · shock · sepsis · RDS · polycythaemia**.\n\n### The four mechanisms\n- **Hyperinsulinaemia —** **PHHI**, persistent hyperinsulinaemic hypoglycaemia of infancy.\n- **Limited glycogen stores —** **preterm and IUGR**.\n- **Increased glucose use —** **polycythaemia, sepsis, hypothermia**.\n- **Reduced glycogenolysis —** or gluconeogenesis: **inborn errors of metabolism, adrenal insufficiency**.\n\n### Symptoms\n- **⚠️ Non-specific —** they **mimic many illnesses**, hence bedside glucose at step 1 of every neonatal algorithm.\n- **Commonest:** **not looking well · lethargic · weak cry · poor feeding · temperature instability · shallow breathing or apnoea**.\n- **CNS:** **hypotonia · jitteriness · convulsion**.\n\nSrc: L10 pp.28–32",
+        "qs": []
+      },
+      {
+        "id": "nns-10",
+        "w": "must",
+        "h": "Hypoglycaemia — the glucose ladder, and when it will not correct",
+        "body": "### The bolus\n- **Dose:** **intravenous dextrose 0.2 g/kg (200 mg/kg) over 5–15 minutes**.\n- **In practice:** **2 mL/kg of D10 %** — D10 % being **10 g in 100 mL**.\n\n### The infusion\n- **Then:** a **glucose infusion rate (GIR) of 6–8 mg/kg/min** in maintenance fluid.\n- **⚠️ Peripheral line ceiling: 12.5 %.** Above that needs central access.\n- **Recheck:** glucose **after 15–30 minutes**; if still low, **add 1–2 mg/kg/min to the GIR**.\n\n### The two names for failure\n- **Resistant hypoglycaemia:** a requirement of **GIR ≥ 12 mg/kg/min**.\n- **Persistent hypoglycaemia:** hypoglycaemia **beyond 1 week** despite adequate management.\n- **Then:** **rule out inborn errors of metabolism and hyperinsulinism**.\n- **Drugs to consider:** **hydrocortisone · glucagon · diazoxide · octreotide**.\n\n### Neonatal hypocalcaemia\n- **Where it sits:** a **metabolic cause of neonatal seizure**, beside hypoglycaemia.\n- **The cause named:** **cow’s milk intake**, as a **sepsis-like picture after a feed** — late-onset hypocalcaemia.\n- **⚠️ Prognosis:** **late-onset hypocalcaemia has a GOOD neurodevelopmental outcome**, unlike hypoglycaemia.\n- **Treatment, the deck’s only figure:** **2 mL/kg of 10 % calcium gluconate IV under cardiac monitoring**.\n- **Thresholds** *(not in course material)* **—** total calcium **< 7 mg/dL** or ionised **< 1.1 mmol/L** in the term infant.\n- **Early against late** *(not in course material)* **—** **early, under 72 h:** prematurity, infant of a diabetic mother, birth asphyxia, maternal hyperparathyroidism. **Late, past the first week:** high-phosphate feeds such as **cow’s milk**, maternal vitamin D deficiency, hypomagnesaemia, **DiGeorge syndrome**.\n\nSrc: L10 pp.33–36; the calcium gluconate dose L10 p.24 (image-only). Thresholds and the early/late split supplied and tagged; the row deferring this here is corrected in the header, FINDING 5",
+        "qs": []
+      },
+      {
+        "id": "nns-11",
+        "w": "must",
+        "h": "Birth injuries — the classification, and the anatomy that explains the scalp",
+        "body": "### Three groups\n- **Soft tissue —** **caput succedaneum · cephalhaematoma · chignon · bruises and abrasions · subaponeurotic (subgaleal) haemorrhage**.\n- **Nerve palsies —** **brachial plexus (Erb palsy)** · **facial nerve palsy**.\n- **Fractures —** **clavicle · humerus · femur**.\n\n### Two more the deck photographs\n- **Facial in-suffusion —** the congested, bruised face of a **face presentation**.\n- **Forceps mark —** a linear bruise or abrasion along the line of the blade.\n\n### The layers, from outside in — this is what decides the differential\n- **Skin**, then **subcutaneous tissue** — a collection here is a **CAPUT SUCCEDANEUM**, free to spread wherever skin goes.\n- **Galeal aponeurosis**, then the **subgaleal space** — bleeding here is a **SUBAPONEUROTIC (SUBGALEAL) HAEMORRHAGE**, in a space **large enough to reach the orbits and the nape of the neck**.\n- **Periosteum**, then the **parietal bone** — bleeding **under the periosteum** is a **CEPHALHAEMATOMA**; the periosteum is **fixed at the sutures**, so it **cannot cross them**.\n- **Then** the skull bones, **venous sinus** and **dura**.\n\nSrc: L10 pp.37–41 (pp.38, 41 image-only, recovered by render; the layer diagram is captioned \"Location of extracranial haemorrhages\")",
+        "qs": []
+      },
+      {
+        "id": "nns-12",
+        "w": "must",
+        "h": "DD of scalp swellings — the discrimination matrix",
+        "body": "|Feature|Caput succedaneum|Cephalhaematoma|Subgaleal haemorrhage|\n|---|---|---|---|\n|**Location**|**At the point of contact; CAN extend across sutures**|**Usually over the parietal bones; DOES NOT cross sutures**|**Beneath the epicranial aponeurosis; may extend to the ORBITS and the NAPE OF THE NECK**|\n|**Characteristic findings**|**Vaguely demarcated; PITTING oedema that SHIFTS WITH GRAVITY**|**Distinct margins; initially firm, MORE FLUCTUANT AFTER 48 h**|**Firm to fluctuant; ill-defined borders; may have CREPITUS or FLUID WAVES**|\n|**Timing**|**Maximal size and firmness AT BIRTH; resolves in 48–72 h**|**INCREASES after birth for 12–24 h; resolution over 2–3 weeks**|**PROGRESSIVE after birth; resolution over 2–3 weeks**|\n|**Volume of blood**|**Minimal**|**Rarely severe**|**MAY BE MASSIVE**, especially with an associated coagulopathy|\n\n### The line the table does not print\n- **⚠️ Can it kill?** **Only the subgaleal** — the space holds enough blood to **exsanguinate the infant**, and a coagulopathy makes that likely.\n\n### Chignon\n- **What it is:** **subcutaneous scalp oedema from a VENTOUSE delivery** — the artificial caput the cup makes.\n- **Shape:** **discrete and circular**, the diameter of the cup.\n\n### Caput succedaneum, in the deck’s own words\n- **Definition:** **oedema of the subcutaneous tissues of the presenting part**.\n- **Duration:** **may last for 48 hours**.\n\n*Cephalhaematoma is also a non-haemolytic cause of jaundice (nnj-4) and a risk factor for severe hyperbilirubinaemia (nnj-11) — enclosed blood is a bilirubin load.*\n\nSrc: L10 pp.42–46 (the matrix on p.42 is image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "nns-13",
+        "w": "must",
+        "h": "Erb’s palsy",
+        "body": "- **The lesion:** the injury can **stretch, rupture or AVULSE the plexus roots from the spinal cord**.\n- **Rank:** the **commonest birth-related brachial plexus injury — 50–60 %**.\n- **Roots:** **C5 and C6**, and **in some cases C7**.\n\n### ⚠️ The position — what the examiner asks for\n**Waiter’s tip:** the affected arm **lies STRAIGHT and LIMP**, with the **hand PRONATED and the fingers FLEXED**.\n\n### Risk factors\n- **The fetus —** **shoulder dystocia · fetal macrosomia · gestational diabetes**.\n- **A second stage of labour over 60 minutes** · **breech presentation**.\n\n### Diagnosis\n- **MRI of the shoulder:** may show **dislocation**; **pseudomeningoceles indicate AVULSION** of the roots.\n- **EMG / nerve conduction studies:** **fibrillation potentials indicate denervation**.\n\n### Treatment\n- **Physiotherapy** — **usually resolves in 4 months**, **up to 2 years** in some, **± surgery**.\n\nSrc: L10 pp.47–48 (the waiter’s tip description from p.48, image-only, recovered by render)",
+        "qs": []
+      }
+    ]
+  },
+  "neonatal-sepsis": {
+    "intro": "Sepsis in the newborn, early-onset and late. Which organisms belong to which onset, the risk factors, why the signs are non-specific enough to be missed, the septic screen, empirical antibiotics and how long they run, and supportive care.",
+    "sections": [
+      {
+        "id": "nsp-1",
+        "w": "must",
+        "h": "Neonatal sepsis — the definition, the three certainties, and the size of it",
+        "body": "**Neonatal sepsis:** a **clinical syndrome** characterised by **signs and symptoms of infection**, **with OR WITHOUT accompanying bacteraemia**, in the **first month of life**.\n\n### The three levels of certainty\n- **Definite —** the syndrome **plus growth of bacteria in a STERILE site**: positive **blood, CSF or BAL** culture.\n- **Probable —** clinical features of sepsis with **STERILE cultures**, usually with **supportive tests** — biomarkers, CSF or urine, chest X-ray.\n- **Possible —** **only** clinical features, **or** **risk factors for early-onset sepsis**, **unsupported by laboratory tests or cultures**.\n\n### Magnitude\n- **WHO 2016:** **46 % of deaths in children under five were neonates**, and **7 % of those were caused by neonatal sepsis**.\n- **⚠️ First week of life —** in developing countries **30–50 % of all deaths are sepsis-related**.\n\nSrc: L11 pp.5–7",
+        "qs": []
+      },
+      {
+        "id": "nsp-2",
+        "w": "must",
+        "h": "Early-onset against late-onset sepsis",
+        "body": "|Feature|EONS|LONS|\n|---|---|---|\n|**Timing**|**First 72 hours of life**|**After 72 hours**|\n|**Transmission**|**Vertical OR horizontal**|**Horizontal only**|\n|**Presentation**|**Asymptomatic at birth, pneumonia or septicaemia**|**Septicaemia, septic arthritis, UTI, catheter-associated infection, VAP**|\n|**Risk factors**|**MATERNAL**|**ENVIRONMENTAL**|\n|**Organisms named by the deck**|**GBS and E. coli**|**CONS (Staph. epidermidis), Staph. aureus**|\n\n### The five organs sepsis presents through\n- **Septicaemia and bloodstream infection** · **pneumonia** · **UTI** · **meningitis** · **joint and bone infections**.\n\nSrc: L11 pp.8, 11",
+        "qs": []
+      },
+      {
+        "id": "nsp-3",
+        "w": "must",
+        "h": "The organisms, measured",
+        "body": "Percentage of total isolates, early against late onset, from the deck’s own cited dataset.\n\n|Organism|EONS %|LONS %|\n|---|---|---|\n|**Klebsiella species**|**25.5**|**24.6**|\n|**Staphylococcus aureus**|**18.8**|**21.8**|\n|**Escherichia coli**|**11.1**|**11.65**|\n|**CONS**|**9.4**|**0.4**|\n|**Pseudomonas species**|**8**|**5.9**|\n|**Enterobacter species**|**7.6**|**8.2**|\n|**Acinetobacter species**|**5.9**|**7**|\n|**Group D streptococci / Enterococcus**|**2.7**|**3.3**|\n\n### What the numbers say\n- **⚠️ Klebsiella leads BOTH groups —** not GBS, and not E. coli.\n- **Gram-negatives dominate:** **Klebsiella, E. coli, Enterobacter and Acinetobacter together exceed half of all isolates** in both groups.\n- **Staph. aureus is the leading Gram-positive** in both, and **rises** in late onset.\n\n*⚠️ The deck contradicts itself on CONS: this chart makes it a mainly EARLY-onset isolate (9.4 % against 0.4 %), while the EONS/LONS grid in nsp-2 lists CONS as the LATE-onset organism. Both are recorded as printed.*\n\nSrc: L11 p.10 (image-only, recovered by render; attributed on the slide to Chaurasia, BMJ 2019); the conflicting attribution L11 p.8",
+        "qs": []
+      },
+      {
+        "id": "nsp-4",
+        "w": "must",
+        "h": "Group B streptococcus",
+        "body": "### The colonisation cascade\n- **15–40 % of pregnant women** have **rectal or vaginal colonisation** with group B streptococci.\n- **About 50 %** of their infants **become colonised**.\n- **Then:** **1–2 % of colonised infants develop early-onset infection**.\n\n### The five risk factors for GBS early-onset disease\n- **Preterm**, especially **preterm prolonged rupture of the membranes**.\n- **Membranes —** **prolonged rupture over 18 hours, or prelabour rupture**.\n- **Fever —** **intrapartum fever above 38 °C, or chorioamnionitis**.\n- **A previous child with GBS infection.**\n- **GBS bacteriuria during pregnancy.**\n\n- **Prevention:** **screening and treating pregnant women** for **group B streptococcus and Chlamydia trachomatis** — the antenatal half of preventing neonatal pneumonia.\n\nSrc: L11 p.9; antenatal screening from `30) Pneumonia`, cited only, deferred here by `respiratory`",
+        "qs": []
+      },
+      {
+        "id": "nsp-5",
+        "w": "must",
+        "h": "Why the neonate is liable, and the three risk lists",
+        "body": "### Host — why a newborn is defenceless\n- **Barrier:** **defective skin and mucous membrane barriers**, **decreased acidity**.\n- **Passive immunity:** **lacking in the preterm** — transplacental IgG comes late.\n- **Active immunity:** **defective humoral and cellular response**, **no opsonisation**.\n- **Exposure:** **VLBW and prolonged hospital stay**.\n\n### Maternal\n- **Vulvovaginitis** · **chorioamnionitis** · **UTI and pyrexia** · **sexually transmitted infection and inadequate antenatal care**.\n\n### Intrapartum\n- **Hypoxia** · **need for resuscitation, meconium-stained liquor** · **low Apgar score**.\n- **Prolonged labour over 24 hours, or PROM** · **instrumental or vaginal delivery**.\n\n### Neonatal\n- **Male sex.**\n- **⚠️ Prematurity and low birth weight — a 3- to 10-fold risk**, the single largest factor.\n- **Interventions:** **IV fluids · IV cannulation · NG feeding · central lines, umbilical catheters and PICC lines · ventilation and ETT · urinary catheters**.\n\nSrc: L11 pp.12–15",
+        "qs": []
+      },
+      {
+        "id": "nsp-6",
+        "w": "must",
+        "h": "Clinical picture — general, site by site, and what it imitates",
+        "body": "### The general picture\n- **Not doing well** · **off colour, an earthy look**.\n- **Temperature:** **hypothermia OR hyperthermia** — the low reading is the commoner.\n- **Respiratory:** **tachypnoea, apnoea, respiratory distress, shallow breathing**.\n- **Cardiovascular:** **heart rate variability**, then **hypotension and shock**.\n- **Neurological:** **hypoactivity or convulsions**.\n- **Gastrointestinal:** **feed intolerance, vomiting, poor feeding**.\n\n### Site by site\n- **On mechanical ventilation:** **increased secretions, coloured secretions, increased ventilatory settings**.\n- **Meningitis:** **mostly non-specific**; **tense or bulging fontanelle**; **head retraction (opisthotonos)**; **seizure and disturbed sensorium are RARE**.\n- **UTI:** with a **catheter or malformation**; non-specific — **vomiting, fever, PROLONGED JAUNDICE, poor weight gain**.\n- **Bone and joints:** **limited and painful movement**, or fever alone.\n\n### The sepsis-like mimics\n\n|Early onset|Late onset|\n|---|---|\n|**Perinatal asphyxia**|**Left ventricular outflow tract obstruction**|\n|**Hypoglycaemia**|**Patent ductus arteriosus**|\n|**Inborn errors of metabolism**|**Inborn errors of metabolism**|\n|**Viral infection**|**Congenital adrenal hyperplasia**|\n|—|**Abdominal catastrophes such as volvulus**|\n\n*Prolonged jaundice is a presenting sign of neonatal UTI as well as a jaundice problem in its own right — nnj-2 and nnj-8.*\n\nSrc: L11 pp.16–18",
+        "qs": []
+      },
+      {
+        "id": "nsp-7",
+        "w": "must",
+        "h": "The laboratory — what is sent, and the haematological cut-offs",
+        "body": "### What is sent\n- **CBC:** **TLC, ANC, I/T ratio, platelet count and volume, PLR, NLR, RDW, toxic granules**.\n- **Inflammatory and immunological markers:** **CRP · procalcitonin · SAA · IL-6 and IL-8 · CD64 (the EARLIEST marker) · CD163 · CD14 (presepsin)**.\n- **⚠️ The \"triple taps\":** **blood culture · CSF analysis and culture · urine analysis and culture**.\n- **Where indicated:** **joint fluid · conjunctival swab · BAL**.\n\n### Haematological markers of sepsis — the cut-offs\n\n|Marker|Cut-off|\n|---|---|\n|**Leucopenia**|**WBC < 5,000/mm³ after 4 h of life**|\n|**Leucocytosis**|**WBC > 20,000/mm³**|\n|**Neutropenia**|**ANC < 1,000/mm³ at ≥ 4 h**|\n|**Neutrophilia**|**ANC ≥ 10,000/mm³**|\n|**High I:T ratio**|**> 0.27 in term, > 0.22 in preterm**|\n|**Platelet count**|**< 120,000/mm³**|\n|**Mean platelet volume**|**cut-off between 8.6 and 11.4**|\n|**NLR**|**1.24 : 6**|\n|**PLR**|**57 : 94**|\n\nSrc: L11 pp.20–21",
+        "qs": []
+      },
+      {
+        "id": "nsp-8",
+        "w": "must",
+        "h": "CRP, procalcitonin, presepsin — and why no single marker works",
+        "body": "### Haematological markers on their own\n- **⚠️ The weakness —** they are **poor at discriminating sepsis from no sepsis**.\n- **The sepsis screen:** **NPV 65–95 %**, **PPV very low** — it excludes better than it confirms.\n\n### CRP against procalcitonin\n\n|Feature|CRP|Procalcitonin|\n|---|---|---|\n|**Rise**|**Within 12 h**|**Starts at 4 h**|\n|**Peak**|**48 h**|**8 h — earlier**|\n|**Sensitivity / specificity in LOS**|**62 % / 71 %**|**90 % / 88 %**|\n|**Viral vs bacterial**|**No**|**YES, discriminates**|\n|**Practical gain**|**NPV rises with serial negatives 12–24 h apart**|**Shorter antibiotic duration**|\n\n- **Both markers —** better in **LATE-onset than early-onset sepsis**, and **PCT beats CRP even there**.\n- **⚠️ Best practice is to combine both**, not to choose.\n\n### Presepsin — the early-onset marker\n- **What it is:** the **soluble CD14 fragment**, a **high-affinity receptor complex of lipopolysaccharide**.\n- **Head to head in EOS** against PCT, IL-6 and IL-8, **presepsin was most accurate — 88.9 % sensitivity, 85.7 % specificity**.\n- **Strength:** as accurate as PCT and CRP, **especially in Gram-negative infection**.\n\n### Serum amyloid A\n- **Behaviour:** **rises up to 1,000 times baseline** in response to infection or injury.\n- **⚠️ Confounded by** **hepatic function and nutritional status**; **lowest in cord blood, highest in old age**.\n\n### The conclusion the deck draws\n**The conclusion:** **no single biomarker has sufficient diagnostic accuracy** for neonatal sepsis. What works is **combining biomarkers** or **serial measurement**.\n\nSrc: L11 pp.22–26",
+        "qs": []
+      },
+      {
+        "id": "nsp-9",
+        "w": "must",
+        "h": "Cultures — the gold standards and how they fail",
+        "body": "### Blood culture\n- **Technique:** the **volume of inoculated blood to broth ratio is 1:5 or 1:10**.\n- **Time to growth:** **most Gram-positives 24 h, most Gram-negatives 48 h**.\n- **False negative:** **inadequate sample · prior antibiotics · a cold bottle**.\n- **False positive:** **contamination**.\n\n### CSF\n- **Abnormal values:** **WBC > 25 (polymorphs)/µL · protein > 150 mg/dL · glucose < 30**.\n- **⚠️ CSF culture by LP —** the **GOLD STANDARD**, but **prior antibiotics make false negatives common**.\n\n### Urine\n- **Abnormal value:** **WBC > 10 in an uncentrifuged sample**.\n- **⚠️ Urine culture is the GOLD STANDARD**, by **sterile catheterisation or suprapubic sample** — a bag specimen will not do.\n\nSrc: L11 pp.27–28",
+        "qs": []
+      },
+      {
+        "id": "nsp-10",
+        "w": "must",
+        "h": "Antibiotics — choosing them, and how long",
+        "body": "### The principle\n- **Empirical choice follows LOCAL data** on organism and antibiogram — **narrowest spectrum, and consider synergism**.\n- **⚠️ After the culture result, step DOWN** to the simplest and narrowest spectrum.\n\n### Where there is no local antibiogram — the general rules\n- **Septicaemia and pneumonia:** **ampicillin + gentamicin or amikacin**.\n- **Meningitis:** **ampicillin + cefotaxime**.\n- **Suspected resistant strains:** **ciprofloxacin or piperacillin-tazobactam + amikacin**.\n- **Second line:** **meropenem**; **add vancomycin if MRSA is suspected**.\n- **Suspected anaerobes (NEC):** **metronidazole or clindamycin**.\n- **Suspected pseudomonas:** **piperacillin-tazobactam**.\n- **⚠️ Third-generation cephalosporins —** **avoid them wherever possible, EXCEPT in meningitis**.\n\n### Duration\n\n|Diagnosis|Duration of antibiotics|\n|---|---|\n|**Suspected infection, clinical course and biomarkers NOT suggestive of sepsis**|**Stop empirical antibiotics once cultures are negative**|\n|**Culture-negative probable or possible sepsis**|**5–7 days**|\n|**Culture-negative sepsis with no meningitis**|**14 days**|\n|**Meningitis**|**21 days**|\n|**Ventriculitis**|**4–6 weeks**|\n|**Bone and joint infection**|**4–6 weeks**|\n|**Deeply seated infection**|**4–6 weeks**|\n\n*⚠️ The table prints \"culture negative\" in the 5–7 day and the 14 day rows, which cannot both apply to one baby; reproduced as printed rather than corrected.*\n\nSrc: L11 pp.30–32",
+        "qs": []
+      },
+      {
+        "id": "nsp-11",
+        "w": "must",
+        "h": "Supportive care — STABLE, and the hypothermia loop",
+        "body": "### Why supportive care outranks the antibiotic in the first day\n- **Claim:** supportive care plays the **main role** in managing the septic sick neonate.\n- **⚠️ The first 24 hours —** **most of the mortality there is preventable by supportive care**.\n- **Why:** **antibiotics need at least 12 hours to work**, and their action causes **bacterial lysis with systemic manifestations** — the first day is bought by support, not the drug.\n\n### STABLE\n\n|Letter|Element|What it means|\n|---|---|---|\n|**S**|**Sugar and safe**|**Maintain glucose and electrolyte levels with IV fluid**|\n|**T**|**Temperature control**|**Be aware of the methods of heat loss**|\n|**A**|**Airways**|**Suction · positioning · airway management · oxygen, CPAP and IMV**|\n|**B**|**Blood pressure**|**Circulatory management by fluids and inotropes**|\n|**L**|**Laboratory**|**Blood gas · diagnosis of sepsis**|\n|**E**|**Effective organ management**|**Renal: fluid, adjust, dialysis · coagulation: plasma · seizure: anticonvulsant · anaemia: blood**|\n\n### Hypothermia and sepsis\n- **⚠️ It runs BOTH ways —** which is the whole point of the slide.\n- **Cold causes sepsis:** **hypothermia suppresses immunity**.\n- **Sepsis causes cold:** **neonatal sepsis is manifested by hypothermia**.\n- **So:** **keep neonates at normal temperature** — a treatment, not comfort.\n\n*Hypothermia is one limb of the neonatal energy triangle with hypoglycaemia and hypoxia — drawn in full in `perinatal`.*\n\nSrc: L11 pp.33–35 (the STABLE grid on p.34 is image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "nsp-12",
+        "w": "high",
+        "h": "Adjunctive therapy",
+        "body": "The deck lists **eight adjuncts** beside antibiotics and supportive care — none a substitute for either.\n\n- **IVIG —** pooled immunoglobulin.\n- **GM-CSF and G-CSF —** colony-stimulating factors, aimed at the neutropenia.\n- **Lactoferrin —** with **colostrum and exclusive early breast feeding**, the enteral limb.\n- **Zinc.**\n- **Pentoxyphylline.**\n- **Granulocyte transfusion.**\n- **DVET —** **double volume exchange transfusion**.\n- **Melatonin.**\n\n*The deck names them without ranking or evidence; the list itself is the examinable unit.*\n\nSrc: L11 p.36 (image-only, recovered by render — the cached text is the three words \"Adjuntive therapy .\")",
+        "qs": []
+      }
+    ]
   }
 };
