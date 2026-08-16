@@ -31,7 +31,13 @@ const MODULES = [
     {name:'All lectures', chapters:[
       ['op-intro','Introduction, History'],['op-va','VA, Field, Lid, Lac, Orbit'],['op-ant','Anterior Segment'],
       ['op-pupil','Pupil, EOM, Fundus'],['op-lid','Lid'],['op-conj','Conjunctiva'],
-      ['op-refract','Errors of Refraction'],['op-lac','Lacrimal System'],['op-orbit','Orbit'],
+      ['op-refract','Errors of Refraction'],['op-lac','Lacrimal System'],
+      /* Split 2026-08-16: the single Orbit chapter PRINTED at 14 pages, one past
+         the project's 13-page shape. The seam was chosen by the questions —
+         cutting after the carotid-cavernous fistula section leaves exactly one
+         question straddling, against three and two at the other candidates. */
+      ['op-orbit','Orbit, thyroid eye disease and cellulitis'],
+      ['op-orbit-mass','Orbital emergencies, tumours and the socket'],
       ['op-glauc','Glaucoma'],['op-sclera','Sclera'],['op-uvea','Uvea'],
       ['op-cornea','Cornea'],['op-red','Red Eye'],['op-cat','Cataract'],
       ['op-ret','Retina'],['op-neuro','Neuro-ophthalmology'],

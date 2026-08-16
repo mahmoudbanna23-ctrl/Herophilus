@@ -94,5 +94,182 @@ var T_OPHTHO = {
         ]
       }
     ]
+  },
+  "op-orbit": {
+    "intro": "Proptosis dominates: its mechanisms, its commonest causes by age, and the preseptal-versus-orbital split. Thyroid eye disease and the vascular signs carry the rest.",
+    "sections": [
+      {
+        "id": "orb-1",
+        "w": "know",
+        "h": "The bony orbit — the three openings and what goes through each",
+        "body": "- **Bones on the deck figure:** frontal · ethmoid · lacrimal · palatine · **lesser and greater wings of sphenoid** · zygomatic · maxillary.\n- **Landmarks:** optic foramen · supraorbital and trochlear notches · anterior lacrimal crest · infraorbital groove and foramen · zygomatic–maxillary suture.\n\n### The three openings\n\n|Opening|Between|Transmits|\n|---|---|---|\n|**Superior orbital fissure**|**greater and lesser wings of sphenoid**|**III** (superior and inferior branches) · **IV** trochlear · **V** (lacrimal, frontal, nasociliary) · **VI** abducent · **superior ophthalmic vein**|\n|**Inferior orbital fissure**|**greater wing of sphenoid and maxilla**|**maxillary nerve** · **zygomatic nerve** · **inferior ophthalmic vein**|\n|**Optic canal**|within the lesser wing|**optic nerve** · **ophthalmic artery**|\n\n- **Common tendinous ring — INSIDE:** both branches of **III**, **nasociliary**, **VI**.\n- **Common tendinous ring — OUTSIDE:** **lacrimal**, **frontal**, **trochlear (IV)**.\n\n*The deck labels a \"common tendinous ring\" on the figure; the eponym annulus of Zinn is not printed, nor are the four walls named as walls.*\n\nSrc: L10 slides 2–3",
+        "qs": []
+      },
+      {
+        "id": "orb-2",
+        "w": "know",
+        "h": "The orbital syndrome — what any orbital disease looks like, and how it is imaged",
+        "body": "### Symptoms\n- **Eyelid and conjunctival swelling:** redness, watering.\n- **Pain:** sometimes on, or exacerbated by, **eye movement**.\n- **Double vision and blurring.**\n- **Pulsing sensation or audible bruit.**\n\n### Signs\n- **Soft tissue involvement:** eyelid and periocular oedema, **skin discoloration**, ptosis, **chemosis and injection**.\n- **Fundus, four findings:** **disc swelling** · **optic atrophy with choroidal folds** · **opticociliary (shunt) vessels with optic atrophy** · **choroidal folds** alone.\n\n### Investigations\n\n|Test|What it is for|\n|---|---|\n|**CT**|**bony structures**, and the **location and size** of space-occupying lesions|\n|**MRI**|**orbital APEX lesions**, orbital tumours, **inflammatory disease**|\n|**Plain X-ray**|**little used** — only initial diagnosis of traumatic bony injury|\n|**Ultrasonography**|—|\n|**Fine needle biopsy**|**suspected neoplastic disease**|\n\nSrc: L10 slides 4, 13, 14",
+        "qs": []
+      },
+      {
+        "id": "orb-3",
+        "w": "must",
+        "h": "Proptosis — the two mechanisms, the commonest causes, the direction, the number",
+        "body": "**Proptosis:** forward protrusion of the globe. **Only two mechanisms.**\n\n- **The globe is PUSHED forward** — retrobulbar haemorrhage, tumour, and every other space-occupying orbital lesion.\n- **The bony orbit is SHALLOW** — **premature closure of the sutures**, e.g. **Crouzon syndrome**.\n\n### ⚠️ Five different \"commonest\" facts, and swapping two words changes the answer\n\n|Question|Answer|\n|---|---|\n|Commonest cause of proptosis **in ADULTS**, unilateral **or** bilateral|**THYROID EYE DISEASE**|\n|Commonest cause of proptosis **in CHILDREN**|**ORBITAL CELLULITIS** *(as a \"commonest\" claim, not in course material — L10 says only that orbital cellulitis is \"more common in children\")*|\n|Commonest **orbital tumour in ADULTS**|**CAVERNOUS haemangioma**|\n|Commonest tumour of the orbit and periorbital area **in CHILDHOOD**|**CAPILLARY haemangioma**|\n|Commonest **primary orbital MALIGNANCY in children**|**RHABDOMYOSARCOMA**|\n\n- **⚠️ Unilateral does NOT argue against thyroid.** L23 gives it as commonest cause of **unilateral or bilateral** exophthalmos, and L10 illustrates **asymmetrical** lid retraction.\n\n### Direction and measurement\n- **AXIAL (straight forward):** an intraconal lesion, or thyroid eye disease.\n- **ECCENTRIC / dystopic:** an extraconal mass — **the globe moves AWAY from it**, so direction names the quadrant.\n- **Measured by:** **visualization from above** · **Hertel exophthalmometer**.\n- **⚠️ THE NUMBERS: over 20 mm is proptosis; a difference of 2–3 mm or more between the eyes is suspicious regardless of the absolute value** *(the slide is cut off after \"regardless of the\")*.\n\nSrc: L10 slides 6, 7 (figure only), 8, 26, 40, 41, 46; L23 (thyroid exophthalmos), cited only",
+        "qs": [
+          "opqb-t3-113",
+          "opqb-t3-117",
+          "opqb-t3-135"
+        ]
+      },
+      {
+        "id": "orb-4",
+        "w": "know",
+        "h": "Enophthalmos, and the two things that only look like a change in prominence",
+        "body": "**Enophthalmos:** the globe is **retracted backwards**.\n\n- **Commonest cause — FRACTURE OF THE ORBITAL FLOOR with orbital fat prolapse.** Also **radiotherapy** and **sclerosing lesions**.\n\n### The two pseudos — a normal globe in an abnormal setting\n\n|  |**PSEUDOenophthalmos**|**PSEUDOproptosis**|\n|---|---|---|\n|Causes|**ptosis** · **phthisis bulbi** (a small globe) · **contralateral proptosis or pseudoproptosis**|**lid retraction** · **high myopia** (a long globe) · **buphthalmos** · **facial asymmetry** · **contralateral enophthalmos**|\n|Rule|the eye is normal; **its neighbour or its lid is not**|same — **measure both eyes before believing either**|\n\n- **⚠️ HORNER SYNDROME PRODUCES APPARENT ENOPHTHALMOS, NEVER PROPTOSIS.** L22 lists its signs: **miosis · dilation lag · ptosis · apparent enophthalmos · anhydrosis · heterochromia** (congenital). The narrowed palpebral aperture is what does it.\n- **Lid retraction is the sign no orbital MASS produces** — a mass pushes, it does not retract. Proptosis **with** lid retraction is thyroid until proved otherwise.\n\nSrc: L10 slides 5, 9; L22 (Horner signs), cited only",
+        "qs": [
+          "opqb-t3-118"
+        ]
+      },
+      {
+        "id": "orb-5",
+        "w": "high",
+        "h": "Ophthalmoplegia and the dynamic signs — pulsation, bruit, and what a Valsalva proves",
+        "body": "**Ophthalmoplegia:** defective ocular motility. **Five causes, and the first is mechanical.**\n\n- **An orbital MASS** — mechanical effect. *(A haematoma behaves as a mass — see orb-13.)*\n- **RESTRICTIVE MYOPATHY** — e.g. thyroid eye disease.\n- **Orbital MYOSITIS.**\n- **TETHERING** of muscle or tissue after an **orbital wall fracture**.\n- **OCULAR MOTOR NERVE involvement** — at the **cavernous sinus**, the **orbital fissures**, or the **posterior orbit**: carotid–cavernous fistula, **Tolosa–Hunt syndrome**, malignant lacrimal gland tumours.\n\n**Restrictive vs neurological:** the deck asks the question and the slide edge cuts off its answer.\n\n- **The answer is the FORCED DUCTION TEST:** grasp the anaesthetised globe and try to rotate it.\n- **Will not move — restrictive.** The muscle is tethered, as in thyroid eye disease or an entrapped blow-out.\n- **Moves freely — neurological.** The muscle is not tethered; the nerve is at fault.\n\n*The test name and its interpretation are supplied (not taken from the course material); the question itself is the deck’s own.*\n\n### The three dynamic signs\n\n|Sign|How elicited|What it means|\n|---|---|---|\n|**Induced/worsened proptosis**|**dependent head position · Valsalva · jugular compression** — all raise venous pressure|**orbital VENOUS anomalies (varices)**, or an infant with **capillary haemangioma**|\n|**PULSATION**|inspection|**an ARTERIOVENOUS communication**, or a **DEFECT IN THE ORBITAL ROOF** — those two only|\n|**BRUIT**|**bell of the stethoscope**|a **larger carotid–cavernous fistula**; **abolished by gently compressing the ipsilateral carotid in the neck**|\n\n- **⚠️ Pulsating exophthalmos is a two-item differential.** Graves disease, cavernous sinus thrombosis and orbital cellulitis all proptose and **none pulsates** — no arterial connection, intact roof.\n\nSrc: L10 slides 10, 11, 12, 19",
+        "qs": [
+          "opqb-t3-122"
+        ]
+      },
+      {
+        "id": "orb-6",
+        "w": "must",
+        "h": "Thyroid eye disease — the five ocular components and the three lid signs",
+        "body": "**Graves disease:** the **commonest form of hyperthyroidism**; **autoimmune**, **IgG antibodies bind the TSH receptor** and stimulate hormone secretion. **More common in females.**\n\n- **Systemic clue that decides a vignette:** **weight loss DESPITE a good appetite**, increased bowel frequency, sweating, heat intolerance, nervousness, irritability, palpitations, weakness, fatigue; goitre, tremor, palmar erythema, warm sweaty skin; sinus tachycardia and arrhythmias. *Full endocrine account in `op-systemic`.*\n\n### a) Soft tissue involvement\n- **Symptoms:** **grittiness, red eyes, lacrimation, photophobia, puffy lids, retrobulbar discomfort.**\n- **Signs:** epibulbar hyperaemia **over a horizontal rectus**, periorbital oedema, chemosis, **fat prolapse into the lids**, **superior limbic keratoconjunctivitis**.\n\n### b) Lid retraction — the three named signs\n\n|Sign|What it is|\n|---|---|\n|**DALRYMPLE**|**moderate bilateral asymmetrical lid retraction**|\n|**KOCHER**|**severe bilateral lid retraction** — the staring look|\n|**VON GRAEFE**|**lid LAG ON DOWNGAZE**|\n\n### c) Proptosis\n- **Bilateral, with lid retraction**; severe proptosis causes **exposure keratopathy and corneal ulceration**.\n\n### d) Restrictive myopathy\n- **Double vision** and discomfort in some positions of gaze; **enlarged extraocular muscle BELLIES** on axial MRI.\n- **⚠️ The INFERIOR RECTUS is affected most often**, order **inferior → medial → superior → lateral rectus, obliques last** — mnemonic **I’M SLO** *(the ranking and mnemonic are not taken from the course material; the restrictive mechanism is the lecturer’s)*.\n- **⚠️ A TIGHT MUSCLE RESTRICTS THE OPPOSITE MOVEMENT.** A fibrosed **inferior** rectus is short, not weak, so the eye will not **ELEVATE** — mimicking a superior rectus **palsy**. Same trap as orb-14.\n\n### e) Optic neuropathy\n- **Impairment of central vision.** **Monitor regularly: visual acuity · colour desaturation · RAPD · visual fields.**\n\nSrc: L10 slides 15–21; L23 (commonest cause of exophthalmos; autoantibody-mediated muscle enlargement), cited only",
+        "qs": [
+          "opqb-t3-113",
+          "opqb-t3-117",
+          "opqb-t3-137",
+          "opqb-t3-138"
+        ]
+      },
+      {
+        "id": "orb-7",
+        "w": "high",
+        "h": "Treatment of thyroid eye disease — split by activity, and one instruction comes first",
+        "body": "### Mild disease\n- **STOP SMOKING** — printed first and larger than everything else on the slide.\n- **Lubricants**; topical anti-inflammatories (**steroids, NSAIDs**).\n- **Head elevation on three pillows during sleep**, to reduce periorbital oedema.\n- **Eyelid taping during sleep**, for mild exposure keratopathy.\n\n### Moderate–severe ACTIVE disease\n- **Systemic steroids** — oral, or **intravenous methylprednisolone for acute compressive optic neuropathy**.\n- **Orbital steroid injections**, occasionally.\n- **Low-dose fractionated radiotherapy.**\n- **ORBITAL WALL DECOMPRESSION** — for **compressive optic neuropathy** or residual proptosis.\n- **Strabismus and lid surgery** for squint and lid retraction, **later**.\n\n*Squint and lid surgery come last because the disease must burn out first. The deck splits treatment by activity without ever saying how activity is scored — no CAS, EUGOGO or NOSPECS anywhere in it.*\n\nSrc: L10 slides 22–23",
+        "qs": []
+      },
+      {
+        "id": "orb-8",
+        "w": "must",
+        "h": "Preseptal vs orbital cellulitis — one septum, four questions",
+        "body": "**PRESEPTAL CELLULITIS:** infection of the subcutaneous tissues **ANTERIOR to the orbital septum**.\n\n- **Organisms:** **Staphylococcus aureus** and **Streptococcus pyogenes**.\n- **Causes:** **local skin trauma** (laceration, insect bite) · **spread from periocular infection** — acute hordeolum, dacryocystitis, conjunctivitis, sinusitis · **haematogenous spread** from the upper respiratory tract or middle ear.\n- **Presents as:** a **swollen, often firm, tender red eyelid**, which may be **very severe** — severity of the lid is not the discriminator.\n\n### ⚠️ The four findings that decide it — the deck states them as a contrast\n\n|  |**PRESEPTAL**|**ORBITAL**|\n|---|---|---|\n|**Proptosis**|**ABSENT**|**PRESENT**|\n|**Chemosis**|**ABSENT**|**PRESENT**|\n|**Visual acuity**|**UNIMPAIRED**|may be **reduced**, colour vision impaired|\n|**Pupillary reactions**|**UNIMPAIRED**|**RAPD** may appear|\n|**Ocular motility**|**UNIMPAIRED**|**PAINFUL OPHTHALMOPLEGIA**|\n|CT|opacification **anterior** to the septum|opacification **behind** it, ± both|\n\n- **⚠️ Fever, lid oedema and leucocytosis occur in BOTH** and separate nothing. **Open the swollen lid and test those five things** before calling anything preseptal.\n\nSrc: L10 slides 24, 25, 26",
+        "qs": [
+          "opqb-t3-134",
+          "opqb-t3-124"
+        ]
+      },
+      {
+        "id": "orb-9",
+        "w": "must",
+        "h": "Bacterial orbital cellulitis — the child, the ethmoid, and the treatment order",
+        "body": "**A serious infection of the soft tissues BEHIND the orbital septum. MORE COMMON IN CHILDREN.**\n\n- **Organisms:** **Streptococcus pneumoniae · Staphylococcus aureus · Streptococcus pyogenes · Haemophilus influenzae**.\n- **⚠️ SOURCE: THE PARANASAL SINUSES, ESPECIALLY THE ETHMOID** — not metastatic infection, malignancy or lid cellulitis.\n\n### Clinical picture\n- **Systemic:** **malaise and pyrexia, often marked.**\n- **Lids and conjunctiva:** tender, firm, erythematous, warm lids; **chemosis**, injection, sometimes subconjunctival haemorrhage.\n- **Orbit:** **proptosis** · **painful ophthalmoplegia** · **diplopia**.\n- **Nerve:** **reduced VA and impaired colour vision**, raising **optic nerve compression** · **RAPD**.\n- **Fundus:** **choroidal folds and optic disc swelling.**\n- *Proptosis directed **down and out** localises a subperiosteal abscess on the **medial (ethmoid)** wall — the globe moves away from the mass.*\n\n### Complications\n- **Ocular:** **optic neuropathy** · exposure keratopathy · **raised IOP** · endophthalmitis · **OCCLUSION OF THE CENTRAL RETINAL ARTERY OR VEIN** — this is how it blinds.\n- **Subperiosteal abscess — most frequently along the MEDIAL orbital wall.**\n- **Intracranial, uncommon but extremely serious:** **meningitis · brain abscess · CAVERNOUS SINUS THROMBOSIS**.\n\n### Investigations\n- **Tetanus status** if trauma · **white cell count** · **blood cultures** · **culture of nasal discharge** · **high-resolution CT of orbit, sinuses and brain** · **MRI** · **lumbar puncture if meningeal or cerebral signs develop**.\n\n### Treatment — the order is the question\n\n|Step|Detail|\n|---|---|\n|**1 Admit**|**hospital admission is MANDATORY**|\n|**2 IV ANTIBIOTICS — first line**|**aerobe and anaerobe cover** until culture and sensitivity return|\n|**3 Duration**|IV **until apyrexial 4 DAYS**, then **1–3 WEEKS oral**|\n|**4 Monitor**|**optic nerve function**|\n|**5 Surgery**|**abscess drainage considered EARLY**; **orbital decompression** for severe nerve compression|\n\n- **⚠️ DRAINAGE IS CONSIDERED EARLY — NOT after a 10–15 day trial of antibiotics.** It is driven by CT and optic nerve function, and it is *considered*, never automatic.\n- **⚠️ Steroids are not first line here** — this is bacterial. Steroids belong to non-infective orbital inflammation (orb-15).\n\nSrc: L10 slides 26, 27, 28, 29",
+        "qs": [
+          "opqb-t3-124",
+          "opqb-t3-125",
+          "opqb-t3-126",
+          "opqb-t3-129",
+          "opqb-t3-135",
+          "opqb-t3-136"
+        ]
+      },
+      {
+        "id": "orb-10",
+        "w": "must",
+        "h": "Cavernous sinus thrombosis — the intracranial complication that kills",
+        "body": "**Clotting within the cavernous sinus**, usually from **infection: sinusitis, orbital or preseptal cellulitis, or otitis.**\n\n- **⚠️ MORTALITY: 20 % TREATED, UP TO 100 % UNTREATED.**\n- **Onset:** **rapid** — severe headache, malaise, nausea and vomiting.\n- **⚠️ Unilateral or OFTEN BILATERAL proptosis** — the two sinuses communicate, so crossing to the other eye is the signature.\n- **Chemosis**, and **congestion of the facial, conjunctival and retinal veins**.\n- **Reduced vision**, and **ocular motility signs from cranial nerves III to VI** — every motor nerve to the eye runs in or beside the sinus.\n- **Diagnosis:** **MRI and MR VENOGRAPHY.**\n- **Treatment:** **intravenous antibiotics**, sometimes **surgical drainage**.\n\n*A febrile child with orbital cellulitis who develops painful movements, marked chemosis and falling vision is at risk of this — it is the feared complication, not retinal detachment or conjunctivitis.*\n\nSrc: L10 slides 27, 32",
+        "qs": [
+          "opqb-t3-131"
+        ]
+      },
+      {
+        "id": "orb-11",
+        "w": "must",
+        "h": "Carotid–cavernous fistula — direct and indirect, and the classic triad",
+        "body": "**An arteriovenous fistula between the carotid artery and the cavernous sinus**, raising venous pressure in the sinus **and in everything draining into it**.\n\n|  |**DIRECT**|**INDIRECT (‘dural shunt’)**|\n|---|---|---|\n|Flow|**HIGH-FLOW SHUNT**|low flow|\n|Anatomy|**directly** through a **defect in the intracavernous internal carotid wall**|the intracavernous ICA **stays INTACT**; blood arrives via **meningeal branches of the external or internal carotid**|\n|Cause|**TRAUMA — 75 %**|—|\n|Onset|**days to weeks after head injury**|**gradual onset of redness**|\n|Features|florid|**SUBTLER — may be overlooked**|\n\n### Direct CCF — the classic triad\n- **PULSATILE PROPTOSIS · CONJUNCTIVAL CHEMOSIS · A WHOOSHING NOISE IN THE HEAD.**\n- **Marked epibulbar vascular dilatation**; visual affection.\n- **⚠️ Bruit AND thrill, both ABOLISHED BY IPSILATERAL CAROTID COMPRESSION** — the bedside manoeuvre that proves it.\n- **Increased IOP**, from **raised episcleral venous pressure**.\n- **Anterior segment ischaemia:** corneal epithelial oedema, aqueous cells and flare; severe cases **iris atrophy, cataract, rubeosis iridis**.\n- **Ptosis** from **third nerve involvement**; **optic disc swelling**.\n\n### Indirect CCF\n- **Exaggerated ocular pulsation**, detected on **slit lamp applanation tonometry**.\n- **‘CORKSCREW’ epibulbar vessels.**\n- **Raised IOP, often bilateral but higher on the fistula side.**\n\n### Investigations\n- **CT/MRI: prominence of the SUPERIOR OPHTHALMIC VEIN**, diffuse extraocular muscle enlargement.\n- **Orbital Doppler** — abnormal flow patterns.\n- **Definitive: selective catheter DIGITAL SUBTRACTION ANGIOGRAPHY.**\n\n- **⚠️ CREPITUS ON LID PALPATION IS NOT A CCF SIGN** — crackling under the skin is **surgical emphysema from a fractured orbital wall** (orb-14), a different injury from the same blow.\n\nSrc: L10 slides 33, 34, 35, 36",
+        "qs": [
+          "opqb-t3-122",
+          "opqb-t3-123"
+        ]
+      }
+    ]
+  },
+  "op-orbit-mass": {
+    "intro": "Sorted by what the examiner contrasts: the two infected-globe look-alikes, three orbital emergencies, the tumours by age and speed, and the three socket operations.",
+    "sections": [
+      {
+        "id": "orb-12",
+        "w": "must",
+        "h": "Endophthalmitis vs panophthalmitis vs cellulitis — two membranes decide everything",
+        "body": "**⚠️ THE WHOLE GROUP IS ONE QUESTION: WHICH BOUNDARY HAS THE INFECTION CROSSED — the orbital SEPTUM, or the SCLERA?**\n\n|Where it sits|Condition|**Proptosis**|**Motility**|**Vision**|\n|---|---|---|---|---|\n|Anterior to the **orbital septum**|**Preseptal cellulitis**|**No**|Normal|**Normal**|\n|**Behind the septum**, outside the globe|**Orbital cellulitis**|**Yes**|**Painful ophthalmoplegia**|usually preserved; reduced only if the nerve is compressed|\n|**Inside the sclera** only|**Endophthalmitis**|**No**|**Normal**|**Markedly reduced**|\n|Inside the sclera **and through it**|**Panophthalmitis**|**Yes**|**LIMITED**|**Markedly reduced, often to no light perception**|\n\n- **⚠️ THE EQUATION: PANOPHTHALMITIS = ENDOPHTHALMITIS + MOTILITY LIMITATION.** Nothing inside the globe can restrict an extraocular muscle, so restricted movement means the infection has left the eye *(the panophthalmitis entity and this map are not in the course material — no cached deck defines it; `L37) Red Eye` names the word once, among Stevens–Johnson complications)*.\n- **⚠️ VISION — not pain, redness or swelling — separates ORBITAL CELLULITIS from PANOPHTHALMITIS**, because all three occur in both. Cellulitis inflames tissue *around* the globe; panophthalmitis destroys the retina.\n\n### Endophthalmitis, for the contrast\n- **Most serious vision-threatening complication of cataract surgery**; **24–72 h acute**, or weeks (delayed).\n- **Organisms:** **CoNS (Staphylococcus epidermidis commonest)**, S. aureus, streptococci.\n- **Signs:** **pain, redness, reduced VA, HYPOPYON, yellowish vitreous haze** — an absent red reflex is that haze seen from the front. **No proptosis, no lid swelling, no restricted movement.**\n- **Treatment:** urgent **vitreous tap + intravitreal vancomycin and ceftazidime**.\n- **⚠️ Pain and falling vision after day one of cataract surgery are never “usual” inflammation** — expected inflammation is mild and improving by day three.\n\nSrc: L10 slides 24, 26; L18 (endophthalmitis after cataract surgery), cited only; panophthalmitis supplied and tagged above",
+        "qs": [
+          "opqb-t3-116",
+          "opqb-t3-119",
+          "opqb-t3-128"
+        ]
+      },
+      {
+        "id": "orb-13",
+        "w": "must",
+        "h": "Retrobulbar haemorrhage — an orbital compartment syndrome, and the pupil goes big",
+        "body": "*Supplied entity: `L10` slide 6 names “retrobulbar hge” once, among causes of proptosis, and no cached deck describes it — all below but the orbital mechanics is not taken from the course material.*\n\n**Orbital compartment syndrome:** the orbit is a bony cone sealed in front by septum and globe, so blood behind the eye cannot escape and pressure rises.\n\n- **Causes:** blunt or penetrating trauma · **retrobulbar anaesthetic injection** · orbital or lid surgery.\n\n|Sign|Why|\n|---|---|\n|**Proptosis**|the globe is the only mobile wall — **L10 slide 6’s mechanism**|\n|**Chemosis**|conjunctival venous and lymphatic drainage obstructed|\n|**TIGHT, tense lids**|septum under tension; lids will not evert, globe will not retropulse — **the most specific sign**|\n|**Raised IOP**|orbital pressure transmitted to the globe|\n|**Ophthalmoplegia**|a haematoma **behaves as an orbital mass** — **L10 slide 10 lists that cause first**|\n|**Falling vision**|**optic nerve and central retinal artery perfusion failing — THE EMERGENCY**|\n|**Mid-dilated pupil + RAPD**|optic nerve ischaemia|\n\n- **⚠️ MIOSIS NEVER OCCURS — the pupil goes LARGE.** L22’s causes of miosis are parasympathomimetics, **Horner’s**, pontine haemorrhage, acute iridocyclitis and trauma; orbital pressure is not among them. A small pupil in an injured eye means **traumatic iritis** or a ruptured globe.\n- **⚠️ Treatment is IMMEDIATE LATERAL CANTHOTOMY AND CANTHOLYSIS**, at the bedside before imaging — **vision is lost permanently within 60–90 minutes**.\n\n*Defect note: one question keys ophthalmoplegia as expected while offering chemosis as a distractor, and the same bank elsewhere lists chemosis among this condition’s signs. Both correct; keyed as printed.*\n\nSrc: L10 slides 4, 6, 10 (orbital mechanics only); L22 (miosis causes), cited only; the entity, its signs and its management are supplied and tagged",
+        "qs": [
+          "opqb-t3-121",
+          "opqb-t3-132"
+        ]
+      },
+      {
+        "id": "orb-14",
+        "w": "must",
+        "h": "Blow-out fracture of the orbital floor — earliest sign, entrapped muscle, late sign",
+        "body": "*`L25) Trauma I`’s material, written here because two questions filed in this chapter test it; the full trauma account is `op-trauma`’s.*\n\n- **History:** blunt trauma — **FIST, TENNIS BALL**.\n- **Presentation:** **ecchymosis, oedema, ± SUBCUTANEOUS EMPHYSEMA**, subconjunctival haemorrhage.\n\n### ⚠️ Periorbital (surgical) emphysema — the EARLIEST sign\n- **Why immediate:** the floor is the **maxillary sinus roof**, the medial wall the **lamina papyracea** over the ethmoid — the moment bone breaks, orbit and sinus are one cavity.\n- **Felt as crepitus**, worst on **blowing the nose**. The deck gives it **its own slide, immediately BEFORE the blow-out slides**.\n\n### Diplopia\n- **In BOTH UPGAZE AND DOWNGAZE.**\n- **RESTRICTIVE motility from MECHANICAL ENTRAPMENT of the INFERIOR OBLIQUE or INFERIOR RECTUS**, or adjacent connective tissue and fat.\n- **⚠️ An entrapped INFERIOR rectus limits ELEVATION**, so diplopia is worst looking **up** — a tethered muscle is not weak, and the eye cannot be pulled **away** from it. *Same trap as the fibrosed inferior rectus in orb-6.*\n\n### Other signs\n- **INFRAORBITAL NERVE ANAESTHESIA:** **lower lid, cheek, side of nose, upper lip, upper teeth and gums** — if the fracture involves the infraorbital canal.\n- **ENOPHTHALMOS — SEVERE CASES, AND LATE:** early oedema and haematoma push the eye forward and mask the volume lost into the sinus.\n- **± ocular damage.**\n\n### CT — CORONAL section\n- **Fracture of the floor ± another wall** · **tissue entrapment — the TEAR DROP SIGN** · **± surgical emphysema**.\n\n### Management\n- **REFRAIN FROM BLOWING THE NOSE**, preferably from coughing or sneezing — **the channel that admits air admits sinus organisms**.\n- **Systemic antibiotics** · **surgical intervention when required**.\n\nSrc: L25 slides 18–24, cited only (this deck’s words are counted by `op-trauma`); L10 slide 5 (enophthalmos from floor fracture with fat prolapse)",
+        "qs": [
+          "opqb-t3-130",
+          "opqb-t3-133"
+        ]
+      },
+      {
+        "id": "orb-15",
+        "w": "high",
+        "h": "The other three orbital inflammations — mucormycosis, dacryoadenitis, pseudotumour",
+        "body": "### Rhino-orbital MUCORMYCOSIS\n- **Rare, aggressive, often FATAL**; fungi of the family **Mucoraceae**.\n- **⚠️ THE HOST IS THE DIAGNOSIS: DIABETIC KETOACIDOSIS or immunosuppression.**\n- **Mechanism:** **hyphae invade blood vessels → occlusive vasculitis → infarction of orbital tissues**.\n- **⚠️ Infarction on septic necrosis gives the classic BLACK ESCHAR**, and eyelid necrosis.\n- **Treatment:** **correct the immune status** · **IV antifungal** · **daily packing and irrigation with antifungal** · **wide excision of necrotic tissue** · **exenteration may be required** · **hyperbaric oxygen**.\n\n### Acute DACRYOADENITIS\n- **Idiopathic**, or **viral — mumps, Epstein–Barr, cytomegalovirus**.\n- **Rapid onset of discomfort over the gland.**\n- **⚠️ Swelling of the LATERAL lid over the palpebral lobe gives the characteristic S-SHAPED PTOSIS.**\n- Orbital lobe enlargement gives slight **downward and inward dystopia**.\n\n### Idiopathic orbital inflammatory disease (orbital PSEUDOTUMOUR)\n- **Non-neoplastic, non-infective, SPACE-OCCUPYING orbital infiltration with inflammatory features** — it mimics both a tumour and an infection.\n- **Pathology:** **pleomorphic inflammatory cellular infiltration, then reactive fibrosis**.\n- **BIOPSY IS USUALLY NEEDED** — that is what separates it from both look-alikes.\n- **Treatment ladder:** **observation → NSAIDs → ORAL STEROIDS → radiotherapy → surgical debulking.**\n\n*This is the entity steroids are for. An infected orbit gets antibiotics.*\n\nSrc: L10 slides 30, 31, 37",
+        "qs": []
+      },
+      {
+        "id": "orb-16",
+        "w": "high",
+        "h": "Orbital tumours — sorted by age, by speed, and by what the CT does to bone",
+        "body": "|Tumour|Who|Signature|CT / management|\n|---|---|---|---|\n|**DERMOID cyst**|—|**a CHORISTOMA** — normal tissue in an abnormal location. **Painless nodule, SUPEROTEMPORAL** (occasionally superonasal)|**CT to exclude bony involvement**; **excision**|\n|**Primary orbital VARICES**|—|**venous–lymphatic malformation**; **thin-walled distensible LOW-FLOW** plexus; **hamartomatous**|**REVERSIBLE PROPTOSIS** on dependent position, Valsalva, jugular compression (orb-5)|\n|**CAPILLARY haemangioma**|**CHILDHOOD**|**COMMONEST ORBITAL AND PERIORBITAL TUMOUR IN CHILDHOOD.** Rapid growth then resolution — **30 % by age 3, ~75 % by age 7**|**Treat principally for AMBLYOPIA**: oral **PROPRANOLOL**, intralesional **triamcinolone**|\n|**CAVERNOUS haemangioma**|**ADULTS**|**COMMONEST ORBITAL TUMOUR IN ADULTS.** **Slowly progressive UNILATERAL proptosis**; **well encapsulated**|**surgical excision**|\n|**PLEOMORPHIC lacrimal gland ADENOMA**|—|**commonest EPITHELIAL lacrimal gland tumour**; benign mixed-cell, from ducts and secretory elements incl. myoepithelial cells. **PAINLESS, SLOW, OVER A YEAR**; superolateral swelling, **S-shaped ptosis**, dystopia|**CT: smooth round/oval, INDENTATION but NO bony destruction**|\n|**Lacrimal gland CARCINOMA**|—|rare, **high morbidity and mortality**. **ADENOID CYSTIC 50 %**, then pleomorphic adenocarcinoma, mucoepidermoid, squamous. **Proptosis of RAPID ONSET**|**CT: BONY EROSION**|\n|**Optic nerve GLIOMA**|**CHILDREN, median 6.5 y**|**~30 % have NEUROFIBROMATOSIS TYPE I**|**CT: FUSIFORM ENLARGEMENT of the optic nerve**|\n|**Optic nerve sheath MENINGIOMA**|adults|from **arachnoid villi meningothelial cells**; commoner in **NF2**. **⚠️ VISUAL LOSS BEFORE PROPTOSIS**|**TRIAD: progressive visual loss + optic atrophy + OPTICOCILIARY SHUNT VESSELS.** Prognosis for life good|\n|**RHABDOMYOSARCOMA**|**CHILDREN**|**commonest soft tissue sarcoma of childhood** and **commonest PRIMARY ORBITAL MALIGNANCY in children**, still rare. From **undifferentiated mesenchymal cells**. **⚠️ RAPID UNILATERAL PROPTOSIS MIMICKING ORBITAL CELLULITIS**|**CT: poorly defined homogeneous mass, adjacent BONY DESTRUCTION**; **incisional biopsy**|\n\n- **⚠️ Speed:** slow and painless = benign (adenoma, cavernous haemangioma); **rapid = carcinoma or rhabdomyosarcoma**. **Bone: indentation = benign, EROSION or DESTRUCTION = malignant.**\n- **⚠️ A child’s proptosis that does not settle on antibiotics is a rhabdomyosarcoma until imaged and biopsied.**\n\nSrc: L10 slides 38, 39, 40, 41, 42, 43, 44, 45, 46",
+        "qs": []
+      },
+      {
+        "id": "orb-17",
+        "w": "must",
+        "h": "The anophthalmic socket — three operations, three different amounts removed",
+        "body": "**The deck names all three and defines none** — slide 47 is the three words. **The definitions below are not taken from the course material.**\n\n|Operation|What is removed|What is left|\n|---|---|---|\n|**EVISCERATION**|**all the INNER CONTENTS of the eyeball, including the UVEAL tissue**|**the scleral shell** (and usually the muscles attached to it)|\n|**ENUCLEATION**|**the ENTIRE EYEBALL** — **the optic nerve is cut and the whole globe removed as a whole**|extraocular muscles, orbital fat, periorbita|\n|**EXENTERATION**|**ALL THE ORBITAL CONTENTS** — globe, muscles, fat, and often the lids|bare bony orbit|\n\n- **⚠️ Read the option list for the boundary word:** *inner contents* = evisceration · *entire eyeball* = enucleation · *orbital contents* = exenteration. Both evisceration questions are answered by which of those three phrases appears.\n- **Enucleation is the operation for intraocular malignancy** — the globe must leave intact, because eviscerating a tumour spreads it.\n- **Exenteration** appears in this deck as the last resort in **rhino-orbital mucormycosis** (orb-15).\n\nSrc: L10 slide 47 (the three names); the definitions are supplied and tagged",
+        "qs": [
+          "opqb-t3-114",
+          "opqb-t3-127"
+        ]
+      },
+      {
+        "id": "orb-18",
+        "w": "know",
+        "h": "The acutely inflamed orbit — the deck’s own differential, in five groups",
+        "body": "|Group|Causes|\n|---|---|\n|**Infection**|**bacterial orbital cellulitis** · **fungal orbital infection** · **dacryocystitis** · **infective dacryoadenitis**|\n|**Vascular**|**acute orbital haemorrhage** · **cavernous sinus thrombosis** · **carotid–cavernous fistula**|\n|**Neoplasia**|**rapidly progressive retinoblastoma** · **lacrimal gland tumour** · metastatic lesion with inflammation, **lymphoma**, Waldenström macroglobulinaemia · in children **rhabdomyosarcoma, leukaemia, lymphangioma, neuroblastoma**|\n|**Endocrine**|**thyroid eye disease of RAPID ONSET**|\n|**Non-neoplastic inflammation**|**idiopathic orbital inflammatory disease** · **Tolosa–Hunt syndrome** · **orbital myositis** · acute allergic conjunctivitis with lid swelling · **herpes zoster ophthalmicus** · herpes simplex skin rash · **sarcoidosis** · vasculitides (**granulomatosis with polyangiitis**, polyarteritis nodosa) · **scleritis, including posterior scleritis** · **ruptured dermoid cyst**|\n\n- **⚠️ A hot orbit is not automatically an infected orbit.** Four of the five groups are not infections, and two of them — **a rapid thyroid eye disease** and **a rhabdomyosarcoma** — are the ones actually mistaken for cellulitis in practice.\n\nSrc: L10 slide 48 (Table 4.1)",
+        "qs": []
+      }
+    ]
   }
 };
