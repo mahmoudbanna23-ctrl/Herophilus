@@ -280,6 +280,34 @@ scheduled deliberately, not stumbled into.
 10. **`infection`** (visual read of `25`, plus the three `.ppt`-only terms) — largest chapter
 11. **`haematology`** (visual read of `44`), **`liver`** (visual read of `42`)
 
+### ⚠️ The last eight chapters — three things settled 2026-08-16, so no agent re-derives them
+
+**`mental` HAS NO PAEDIATRICS DECK, AND THE ANSWER IS NOT "write it from general knowledge".** It was
+recorded as having no source at all. It does have one, in the sibling module:
+`content\neuro\lectures\L14) Child Psychiatry.txt` — **1,257 words over 30 pages**, covering tics and
+Tourette (17 mentions), intellectual disability, autism, ADHD and learning disability. That is real
+course material from the same faculty and the same year, so it is a **cited source**, not a gap to
+tag. Cite it as `L14) Child Psychiatry.pdf p.<N>` and say in the header that the deck is borrowed
+from Neuropsychiatry.
+
+- **This deliberately overlaps `ps-child` in the Neuropsychiatry module, and that is correct, not
+  duplication.** Both exams test child psychiatry. Peds `mental` is written from the
+  **paediatrician's** side — recognising it in a general clinic, what to do about it, when to refer —
+  and `ps-child` from the psychiatrist's. Write the peds one that way; do not simply mirror the deck.
+- At 42 words per page the deck is **image-dependent to the same degree as the worst paediatrics
+  decks**, so it gets the full visual read like any other.
+
+**⚠️ `dev-problems`' MAIN DECK IS THE DENSEST-BY-PICTURE IN THE MODULE: `2) developmental problems`
+runs 1,355 words over 49 pages = 27 WORDS PER PAGE.** For comparison the whole-module average is
+around 145. Its text cache cannot be more than a skeleton, so **a full end-to-end render is the
+baseline for that chapter, not a triage decision.** Its second deck, `Lec 2 Child development_`,
+is 1,229 words over 8 pages and is ordinary.
+
+**⚠️ `normal-dev`'s TWO DECKS MAY BE NEAR-DUPLICATES — DIFF THEM AGAINST EACH OTHER.** Two decks in
+this corpus were byte-identical under different names, and that was missed the first time because
+each was compared against a third file rather than against its twin. If one is a subset, count the
+union once and never the sum.
+
 **⚠️ A RECONCILIATION PASS IS OWED when the paediatrics banks close.** Only 81 questions exist today
 (infection 31, renal 26, cardiac 24 — **18 of 21 chapters have none**), so nearly every chapter is
 being written from lectures alone. When the banks are transcribed, re-check each chapter's new
