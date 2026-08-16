@@ -4332,5 +4332,212 @@ var T_PEDS = {
         "qs": []
       }
     ]
+  },
+  "accidents": {
+    "intro": "Two halves under one title. Accidents — choking, suffocation, strangulation, drowning — are the book’s, and are algorithms. Poisoning is the lecture’s, and is a five-step approach plus a table of agents. Every number in that table is examinable.",
+    "sections": [
+      {
+        "id": "acc-1",
+        "w": "must",
+        "h": "How big the problem is, and the three kinds of poisoning",
+        "body": "### The scale\n\n- **Accidental injury:** the **most common reason** for children and young people to **seek emergency healthcare**.\n- **External causes:** injuries and poisoning, so called because they depend **entirely on an extrinsic environmental factor** — a motor vehicle, a swimming pool.\n- **Worldwide:** external causes are the **leading cause of death in 1- to 15-year-olds**.\n- **In the UK:** they have declined enough to be **second, after malignant disease**.\n- **⚠️ But in 15- to 19-year-olds** external factors remain the **most common cause of death**.\n\n### Figure 7.1 — deaths aged 1 to 15, England and Wales 2018\n\n**Total deaths 973.** Malignant disease **25 %** · **external causes (injuries and poisoning) 15 %** · congenital anomalies **10 %** · neurological **10 %** · respiratory **10 %** · cardiac **7 %** · infectious **6 %** · other **17 %**.\n\n### The three kinds of poisoning\n\n- **Accidental:** the toddler pattern — exploratory, small quantities, usually one agent.\n- **Iatrogenic:** caused by treatment given.\n- **Intentional:** deliberate self-harm, and the adolescent pattern.\n\n- **⚠️ The age split is the whole of it:** poisoning in **young children is usually accidental**, in contrast to the **deliberate self-harm of young people and adults**.\n\nSrc: B1 p.84 (Fig 7.1); L5 p.2",
+        "qs": []
+      },
+      {
+        "id": "acc-2",
+        "w": "must",
+        "h": "Why severe accidental poisoning has fallen — and why adolescent poisoning has not",
+        "body": "### The fall in young children\n\n**There has been a marked reduction in the incidence of severe poisoning from accidental ingestion by young children.** Two reasons are printed:\n\n- **Child-resistant containers:** for many **medicines and household products**, plus **blister packs** for medicines.\n- **Smaller packs:** a **reduction in the number of tablets available per pack** in **analgesics bought over the counter**.\n\n### The adolescent pattern is different in three ways\n\n- **The agents:** adolescents attempting self-harm ingest **medications commonly found in their environment** — **most often paracetamol and ibuprofen**.\n- **The quantity:** they are likely to have ingested **much larger quantities of tablets** than young children.\n- **The consequence:** they are therefore **more likely to suffer significant toxicological effects**.\n- **Recreational drugs:** vary **greatly in their potency and effects**, so the history predicts the toxicity poorly.\n\n### ⚠️ Who can go home\n\n**Young children exposed to agents of LOW TOXICITY who are ASYMPTOMATIC can usually be discharged with advice to return if symptoms develop.** Both conditions must hold — a low-toxicity agent in a symptomatic child is not covered by this rule.\n\nSrc: L5 pp.4–6",
+        "qs": []
+      },
+      {
+        "id": "acc-3",
+        "w": "must",
+        "h": "Choking, suffocation and strangulation",
+        "body": "### Choking\n\n- **Why toddlers:** they have a **natural tendency to put objects in their mouths**, and their **airway diameter is small** and hence **more readily occluded**.\n- **The commonest cause:** **food** is the most common cause of **non-fatal choking**, **followed by toys**.\n\n### Suffocation\n\n- **The mechanism:** accidental suffocation from **playing with plastic bags or packaging**.\n\n### Strangulation\n\n- **In young children:** accidental — **clothes or bedding caught on furniture**.\n- **⚠️ In adolescents:** it is also a **method of attempting suicide**, so a strangulation injury in this age group is a mental-health presentation until proved otherwise.\n- **Prevention:** **product safety initiatives and public education campaigns**.\n\n- **⚠️ What survivors show:** **dysphonia (hoarseness)** · **difficulty swallowing** · **facial petechiae** · **neck oedema**.\n- **The late risk:** **hypoxic brain damage**, depending on the **duration of the asphyxia**.\n\nSrc: B1 p.84",
+        "qs": []
+      },
+      {
+        "id": "acc-4",
+        "w": "must",
+        "h": "The choking child — the algorithm and the two techniques",
+        "body": "### The severity split decides everything\n\n- **Severe obstruction:** an **INEFFECTIVE cough**. The child cannot clear it and needs thrusts or CPR.\n- **Mild obstruction:** an **EFFECTIVE cough**. **Encourage the child to cough** and **do not intervene** — keep checking for deterioration until the obstruction clears or the cough becomes effective.\n\n### ⚠️ The technique differs by age, and the reason is anatomical\n\n|Age|Manoeuvre|\n|---|---|\n|**Older child, conscious**|**5 abdominal thrusts** — the **Heimlich manoeuvre**|\n|**Infant, conscious**|**5 back blows**, then **5 chest thrusts**|\n|**Either, unconscious**|**Start CPR**|\n\n- **Abdominal thrusts, how:** place a **fist against the child’s upper abdomen in the midline**, grasp it with the other hand, and **pull backwards and upwards** to expel air from the lungs.\n- **⚠️ Why infants get back blows and chest thrusts instead:** abdominal thrusts are **avoided in infants because of the risk of injury to the liver and spleen**.\n\nSrc: B1 p.85 (Figs 7.7, 7.8 — both image-only, read at 150 dpi)",
+        "flow": {
+          "title": "Management of the choking child (FBAO)",
+          "steps": [
+            {
+              "k": "step",
+              "t": "Assess severity of the airway obstruction",
+              "n": "Cough effective or ineffective?"
+            },
+            {
+              "k": "decision",
+              "t": "Is the cough EFFECTIVE?",
+              "yes": "Mild obstruction",
+              "no": "Severe obstruction"
+            },
+            {
+              "k": "step",
+              "t": "MILD: encourage to cough",
+              "n": "Continue to check for deterioration until obstruction cleared or cough becomes effective"
+            },
+            {
+              "k": "decision",
+              "t": "SEVERE — is the child conscious?",
+              "yes": "Give thrusts",
+              "no": "Start CPR"
+            },
+            {
+              "k": "step",
+              "t": "CONSCIOUS child: 5 abdominal thrusts",
+              "n": "Heimlich — fist in the midline of the upper abdomen, pull backwards and upwards"
+            },
+            {
+              "k": "step",
+              "t": "CONSCIOUS infant: 5 back blows, then 5 chest thrusts",
+              "n": "No abdominal thrusts — risk of liver and spleen injury"
+            },
+            {
+              "k": "alert",
+              "t": "UNCONSCIOUS: start CPR",
+              "n": "Do not wait for the obstruction to clear"
+            }
+          ]
+        },
+        "qs": []
+      },
+      {
+        "id": "acc-5",
+        "w": "must",
+        "h": "Drowning",
+        "body": "- **The definition:** **respiratory impairment produced by SUBMERSION or IMMERSION in liquid**.\n\n### Where it happens, by age\n\n- **Babies and toddlers:** **domestic situations** — **baths, paddling pools, garden ponds**.\n- **Older children:** **away from home** — **canals, lakes and the sea**.\n\n### What happens, and what changes the outcome\n\n- **⚠️ Once submerged:** **asphyxiation occurs WITH OR WITHOUT aspiration of water.** Dry drowning kills the same way.\n- **The avoidable share:** **up to 30 % of fatalities can be avoided by skilled on-scene resuscitation.**\n\n### ⚠️ The cold-water rule — the one that changes what you do\n\n**If the water is cold, the resulting HYPOTHERMIA can have a PROTECTIVE EFFECT.** So **even in the presence of fixed dilated pupils, resuscitation should continue until the child is warmed up to a normal body temperature**, because **recovery may still be possible**.\n\n*In other words the usual signs of irreversible brain death cannot be trusted in a cold child — nobody is dead until they are warm and dead.*\n\nSrc: B1 p.85",
+        "qs": []
+      },
+      {
+        "id": "acc-6",
+        "w": "must",
+        "h": "The poisoned child — the five-step approach",
+        "body": "### 1. Identify the agent\n\n- **Ask:** **question the parents, the child, or the young person**.\n- **When the history is unclear:** **clinical symptoms and signs may help** identify the agent.\n\n### 2. Determine the toxicity of the agent — four things to consider\n\n- **Intrinsic toxicity:** of the agent itself — **use the poisons information service**.\n- **Reported dose ingested.**\n- **Presence of symptoms.**\n- **Time since ingestion.**\n\n### 3. Is reduction of absorption possible or indicated?\n\n*The whole of this step is acc-7.*\n\n### 4. Are investigations indicated?\n\n*Also acc-7.*\n\n### 5. Clinical management — mainly determined by the toxicity of the agent\n\n- **Specific management** including the **antidote, as directed by the poisons information service**.\n- **⚠️ Assessment of the circumstances of the ingestion**, which is **important to prevent future recurrence**.\n- **⚠️ Assessment by a child and adolescent psychiatrist or mental health services** in cases of **deliberate self-harm**.\n\nSrc: L5 p.8 (0-word slide, recovered by render at 300 dpi) = B1 p.86 (Fig 7.11) — one figure, two sources, written once",
+        "flow": {
+          "title": "Outline of management of the poisoned child",
+          "steps": [
+            {
+              "k": "step",
+              "t": "Identify the agent",
+              "n": "Question parents, child or young person; signs may help where the history is unclear"
+            },
+            {
+              "k": "step",
+              "t": "Determine toxicity of the agent",
+              "n": "Intrinsic toxicity (poisons information service) · dose ingested · symptoms present · time since ingestion"
+            },
+            {
+              "k": "decision",
+              "t": "Is reduction of absorption possible / indicated?",
+              "yes": "Activated charcoal if within 1 h",
+              "no": "Move to investigations"
+            },
+            {
+              "k": "alert",
+              "t": "Gastric lavage and induced vomiting are NO LONGER RECOMMENDED",
+              "n": "Charcoal is ineffective for iron, hydrocarbons and pesticides"
+            },
+            {
+              "k": "step",
+              "t": "Are investigations indicated?",
+              "n": "Bloods by mechanism · ECG if cardiovascular toxicity · levels only for paracetamol, iron, salicylates, alcohol"
+            },
+            {
+              "k": "step",
+              "t": "Clinical management, determined by the toxicity of the agent",
+              "n": "Antidote as directed · assess the circumstances to prevent recurrence"
+            },
+            {
+              "k": "alert",
+              "t": "Deliberate self-harm: refer to child and adolescent psychiatry",
+              "n": "The ingestion is a symptom; the mental-health assessment is the treatment"
+            }
+          ]
+        },
+        "qs": []
+      },
+      {
+        "id": "acc-7",
+        "w": "must",
+        "h": "Reducing absorption, and the investigations that are actually useful",
+        "body": "### ⚠️ Activated charcoal — three facts, all examinable\n\n- **Why it works:** its **high surface area leads to adsorption of many drugs**.\n- **The time window:** it **can be effective in reducing absorption of the toxic agent if administered WITHIN 1 HOUR of ingestion**.\n- **⚠️ What it does NOT bind:** it is **ineffective for IRON, HYDROCARBONS and PESTICIDES**.\n\n### ⚠️ What is no longer done\n\n**GASTRIC LAVAGE AND INDUCED VOMITING ARE NO LONGER RECOMMENDED.** The deck states this flatly, with no time window and no exception, so there is nothing to memorise about lavage contraindications — the procedure itself is off the algorithm.\n\n*This is the single most likely thing on the slide to be asked as a negative-stem question.*\n\n### Investigations\n\n- **General blood tests:** e.g. **full blood count, renal and liver function** — **dependent on the mechanism and likelihood of toxicity**.\n- **ECG:** for **drugs with cardiovascular toxicity**.\n- **⚠️ Specific blood concentrations are only helpful for FOUR agents:** **paracetamol, iron, salicylates and alcohol**.\n- **⚠️ Urine toxicology screen:** **not helpful in the acute situation**, but **may help to confirm the diagnosis**.\n\nSrc: L5 p.8 (render) = B1 p.86 (Fig 7.11)",
+        "qs": []
+      },
+      {
+        "id": "acc-8",
+        "w": "high",
+        "h": "ABCDE in the poisoned child",
+        "body": "### A and B — airway and breathing: look, listen and feel for\n\n**Airway obstruction or respiratory distress · work of breathing (respiratory effort) · respiratory rate · stridor, wheeze · auscultation for air entry · cyanosis · oxygen saturation.**\n\n### C — circulation: feel and assess\n\n**Heart rate · pulse volume · capillary refill time · blood pressure.**\n\n- **⚠️ In TRAUMA, \"C\" also means:** **abdominal examination**, **assessment for pelvic bony injury**, and **identification of any suspected long bone fractures** — plus **intracranial injuries in infants**.\n- **Why:** **large volumes of blood can be lost into these body cavities**, so a normal external survey does not exclude haemorrhagic shock.\n\n### D — disability: observe and note\n\n- **Level of consciousness:** by **AVPU**.\n- **Posture:** **hypotonia**, **decorticate**, **decerebrate**.\n- **Pupil size and reactivity.**\n\n### E — exposure\n\n*Named on the slide without elaboration; in a poisoning it is what finds the patch, the tablets in the pocket and the rash.*\n\nSrc: L5 pp.20–22; B1 p.84 (the trauma \"C\" note)",
+        "qs": []
+      },
+      {
+        "id": "acc-9",
+        "w": "must",
+        "h": "The antidote and specific-treatment table",
+        "body": "**This is the table the exam is built from. Every figure in it is printed on L5 except the four rows marked with a dagger, which are supplied.**\n\n|Poison|The number or marker|Specific treatment|\n|---|---|---|\n|**Paracetamol**|**Plasma paracetamol concentration**; treatment line **100 mg/L at 4 h**|**IV acetylcysteine** if the concentration is high or liver function abnormal|\n|**Iron**|**Serious toxicity if >75 mg/kg elemental iron** ingested; **serum iron at 4 h** is the best measure of severity|**IV deferoxamine** in moderate-to-severe toxicity|\n|**Organophosphates**|No level given|**Atropine, often in large doses** + **pralidoxime** to reactivate acetylcholinesterase|\n|**Salicylates**|**Plasma salicylate 2–4 h** after ingestion|**Alkalinization of the urine**; **haemodialysis** also removes salicylate|\n|**Tricyclic antidepressants**|No level given|**Sodium bicarbonate** for the arrhythmias; **support breathing**|\n|**Carbon monoxide**|No level given|**High-flow oxygen**; **hyperbaric oxygen role unclear**|\n|**Alcohol**|**Blood alcohol level** may predict severity|**Monitor and correct blood glucose**; **support ventilation**|\n|**Button battery**|Position on **CXR and AXR**|**Endoscopic removal** if oesophageal, failing to pass, or symptomatic|\n|**Lead**|No level given on the deck|**Prevent further exposure** first; **chelation** for acute symptoms|\n|**Opioids** †|Respiratory rate, pinpoint pupils|**Naloxone**, titrated and repeated — its half-life is shorter than most opioids|\n|**Kerosene / hydrocarbons** †|Chest signs, CXR|**Supportive only.** No antidote, no charcoal, **no induced emesis**|\n\n**† Not taken from the course material** — see acc-15 for why these two are written in anyway.\n\n*The three agents with NO antidote at all — CO, alcohol, TCA — are treated by supporting the physiology instead. That is a distinction worth holding: an antidote question is often really asking which poisons have none.*\n\nSrc: L5 pp.10–19, 26 — the whole \"Some poisons and their treatment\" run, gathered into one grid",
+        "qs": []
+      },
+      {
+        "id": "acc-10",
+        "w": "must",
+        "h": "Paracetamol — the commonest, and the one with a graph",
+        "body": "### The two-phase clinical picture\n\n- **Early:** **abdominal pain, vomiting**.\n- **⚠️ Later, 12 h to 24 h:** **liver failure**.\n- **Why the gap matters:** the child who looks well at four hours is not reassuring, because the hepatic phase has not started yet.\n\n### Management\n\n- **Risk assessment:** by **measuring the plasma paracetamol concentration**.\n- **Treatment:** **intravenous acetylcysteine** if the **concentration is high OR liver function is abnormal**.\n\n### ⚠️ The treatment nomogram — read off the graph, which extracts as nothing\n\n- **The axes:** **plasma paracetamol concentration 0–120 mg/L** on the left, the same in **mmol/L 0–0.8** on the right, against **time 0–24 hours**.\n- **⚠️ The treatment line STARTS AT 100 mg/L AT 4 HOURS** and falls away, reaching roughly **5 mg/L at 24 h**.\n- **⚠️ What the 4-hour origin means:** a level taken **before 4 hours cannot be plotted** and does not exclude toxicity. Absorption is incomplete, so an early level reads falsely reassuring.\n- **Above the line:** treat. **Below it:** the risk is low at that time point.\n\nSrc: L5 p.10 (the graph is image-only, read at 400 dpi)",
+        "qs": []
+      },
+      {
+        "id": "acc-11",
+        "w": "must",
+        "h": "Iron — the poisoning with a deceptive middle",
+        "body": "### ⚠️ Three phases, and the middle one is the trap\n\n- **Initial:** **vomiting, diarrhoea, haematemesis, melaena, acute gastric ulceration** — a corrosive gastritis.\n- **⚠️ Then a LATENT PERIOD OF IMPROVEMENT.** The child appears to recover. This is where a discharge decision is wrongly made.\n- **6–12 h later:** **drowsiness, coma, shock, liver failure with hypoglycaemia, and convulsions**.\n- **Long term:** **gut strictures**.\n\n### The numbers\n\n- **Threshold:** **serious toxicity if more than 75 mg/kg of ELEMENTAL iron** has been ingested — elemental, not tablet weight.\n- **The test:** the **serum iron level 4 hours after ingestion is the best laboratory measure of severity**.\n\n### Treatment\n\n- **The chelator:** **intravenous deferoxamine chelates iron** and **should be administered in cases of moderate-to-severe toxicity**.\n- **⚠️ Charcoal is useless here** — iron is one of the three agents it does not bind.\n\nSrc: L5 pp.15–16; charcoal exclusion L5 p.8",
+        "qs": []
+      },
+      {
+        "id": "acc-12",
+        "w": "must",
+        "h": "Organophosphates — the cholinergic crisis",
+        "body": "### Cholinergic effects\n\n**Salivation · lacrimation · urination · diarrhoea and vomiting · muscle weakness, cramps and paralysis · bradycardia · hypotension.**\n\n*That list is the classic secretory picture: everything wet, a slow heart, and weak muscles.*\n\n### Central nervous system effects\n\n**Seizures and coma.**\n\n### Treatment — three limbs, in order\n\n- **Supportive care** first.\n- **Atropine, often in LARGE DOSES:** as an **anticholinergic agent**, opposing the muscarinic effects.\n- **Pralidoxime:** **to REACTIVATE acetylcholinesterase** — the two drugs do different jobs and are not alternatives.\n\n- **⚠️ Charcoal is ineffective for pesticides**, the third of its three exclusions.\n\n### The chronic side, from the same class\n\n**Chronic exposure to organophosphate and carbamate pesticides has adverse effects on neurodevelopment and behaviour.** There is also **evidence associating some pesticides with an increased incidence of leukaemia and brain tumours**.\n\nSrc: L5 pp.17–18, 27; charcoal exclusion L5 p.8",
+        "qs": []
+      },
+      {
+        "id": "acc-13",
+        "w": "must",
+        "h": "Salicylates, tricyclics, carbon monoxide and alcohol",
+        "body": "### Salicylates\n\n- **Early:** **vomiting, tinnitus**.\n- **⚠️ Later:** **respiratory alkalosis FOLLOWED BY metabolic acidosis** — the order is the examinable part.\n- **The level:** **plasma salicylate 2–4 h after ingestion** helps estimate toxicity.\n- **Treatment:** **alkalinization of the urine increases excretion**; **haemodialysis also effectively removes salicylate**.\n\n### Tricyclic antidepressants\n\n- **Early:** **tachycardia, drowsiness, dry mouth** — the anticholinergic triad.\n- **Later:** **arrhythmias, seizures**.\n- **Treatment:** **sodium bicarbonate** for the arrhythmias; **support breathing**.\n\n### Carbon monoxide\n\n- **Early:** **headache, nausea**.\n- **Later:** **confusion, drowsiness leading to coma**.\n- **Treatment:** **high-flow oxygen to hasten dissociation of carbon monoxide**. **The role of hyperbaric oxygen therapy is unclear.**\n\n### Alcohol — accidental, or experimenting by older children\n\n- **The triad:** **hypoglycaemia · coma · respiratory failure**.\n- **Treatment:** **monitor blood glucose and correct if necessary**; **support ventilation if required**; **blood alcohol levels may help predict severity**.\n\nSrc: L5 pp.12–14, 19",
+        "qs": []
+      },
+      {
+        "id": "acc-14",
+        "w": "must",
+        "h": "Button batteries — and the plate that also shows magnets",
+        "body": "### Why a battery is not just a foreign body\n\n- **Presentation:** **abdominal pain**.\n- **⚠️ The complications:** **gut perforation and stricture formation**.\n\n### Management\n\n- **Imaging:** **X-ray of the chest AND abdomen** — to **confirm ingestion and identify the position**.\n- **⚠️ Endoscopic removal is recommended if:** it is **in the oesophagus**, **the object fails to pass**, **or symptoms are present** — e.g. **abdominal pain or melaena**.\n\n*Oesophageal lodgement is the emergency: the battery burns through the wall in hours, which is why position, not size, decides.*\n\n### ⚠️ The agents plate also shows rare-earth magnets\n\nL5 p.3 is a wordless photograph of the agents children swallow: loose tablets, blister packs, button batteries and **a stack of small rare-earth magnets**. The magnets are shown and never discussed.\n\n**Two or more magnets swallowed separately attract each other across bowel loops, trapping the wall between them and causing pressure necrosis, fistula and perforation** *(not taken from the course material)*. One magnet is usually harmless; two is a surgical emergency.\n\nSrc: L5 p.11; the agents plate L5 p.3 (0-word slide, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "acc-15",
+        "w": "must",
+        "h": "Chronic environmental poisoning — lead",
+        "body": "### Why children are more vulnerable than adults — three reasons\n\n- **Behaviour:** **hand-to-mouth activities during play and meals**.\n- **Size:** their **small body size makes them more susceptible to doses that would not harm an adult**.\n- **⚠️ The brain:** their **developing brains are at greater risk of permanent damage** from the **neurotoxic effects of exposure**.\n\n### Symptoms of chronic lead exposure\n\n- **Behavioural changes.**\n- **Hyperactivity or decreased activity** — it runs in both directions.\n- **⚠️ Developmental delay, or LOSS of developmental milestones** — regression, not just delay.\n- **Chronic lead nephropathy.**\n\n### More significant exposure\n\n**Abdominal pain, vomiting, constipation · headache and ataxia · lethargy, seizures and coma.**\n\n### ⚠️ Treatment — the order is the answer\n\n- **First and most important:** **prevent further exposure to lead.**\n- **Chelation therapy:** **can be effective in reversing acute symptoms such as encephalopathy**.\n- **⚠️ Why it is not curative:** **treatment is complex, particularly as lead is deposited in BONE and therefore has a LONG HALF-LIFE**, so the body reloads the blood from its own skeleton.\n\nSrc: L5 pp.23–26",
+        "qs": []
+      },
+      {
+        "id": "acc-16",
+        "w": "high",
+        "h": "Three agents the deck names without teaching, and one it never names",
+        "body": "**Everything in this section is tagged. It is written because the deck creates the questions and does not answer them, not to add material for its own sake.**\n\n### ⚠️ Kerosene and other hydrocarbons — the commonest ingestion locally\n\n- **Why it is here:** L5 p.8 names **hydrocarbons** among the three agents charcoal does not bind, and then says nothing further. Greped across all 64 cached decks, **`kerosene`, `petroleum` and `corrosive` return zero hits**; the only two `hydrocarbon` hits are the pneumonia decks listing it as a cause of **aspiration pneumonia**.\n- **The danger is the LUNG, not the gut:** low viscosity and low surface tension mean a tiny aspirated volume spreads over a huge alveolar surface and causes **chemical pneumonitis** *(not taken from the course material)*.\n- **⚠️ DO NOT induce emesis and DO NOT lavage** — both risk aspirating it *(not taken from the course material)*. **The deck already forbids both for every poisoning**, which settles it from the sourced side too.\n- **Management:** **supportive, with oxygen and a chest film**; charcoal is useless *(not taken from the course material, except the charcoal exclusion, which is L5 p.8)*.\n\n### Corrosives — acids and alkalis\n\n- **⚠️ Neutralise nothing, dilute little, and never induce vomiting** — a second passage burns the oesophagus again *(not taken from the course material)*.\n- **The risk:** **oesophageal stricture**, which is why **endoscopy** grades the injury *(not taken from the course material)*.\n\n### Opioids\n\n- **The triad:** **pinpoint pupils, respiratory depression and coma** *(not taken from the course material)*.\n- **The antidote:** **naloxone**, titrated and repeated, because **its half-life is shorter than that of most opioids** and the child can re-sedate *(not taken from the course material)*.\n\nSrc: kerosene charcoal exclusion L5 p.8; everything else supplied and tagged in place",
+        "qs": []
+      },
+      {
+        "id": "acc-17",
+        "w": "know",
+        "h": "The summary the lecture ends on, and the social question",
+        "body": "### The five closing statements\n\n- **Who:** accidental poisoning is **common in toddlers and young children**.\n- **The other group:** **older children may ingest potentially harmful substances as a form of self-harm, or as part of risk-taking behaviour**.\n- **⚠️ Reassurance:** **most substances do not cause serious harm.**\n- **The method:** when an ingestion has occurred, **identify the agent and assess its toxicity to plan management** — which is steps 1 and 2 of acc-6.\n- **⚠️ The last one is the one that gets forgotten:** **assess the social circumstances behind why it happened.**\n\n### Why the social question is clinical, not administrative\n\nThe algorithm makes the same point twice from the other end: **assessment of the circumstances of ingestion is important to prevent future recurrence**, and **deliberate self-harm requires assessment by a child and adolescent psychiatrist or mental health services**.\n\n*A toddler who reaches a bottle once will reach it again; an adolescent who takes an overdose has a mental-health diagnosis that the ingestion is only the presenting sign of. Neither is treated by the antidote. See `mental` for the referral side.*\n\nSrc: L5 p.28; L5 p.8 (render) = B1 p.86",
+        "qs": []
+      }
+    ]
   }
 };
