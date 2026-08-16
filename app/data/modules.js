@@ -103,6 +103,7 @@ const MODULES = [
       ['mental','Mental Health'],
       ['endocrine','Diabetes mellitus'],['endo-dka','Diabetic ketoacidosis'],
       ['endo-thyroid','Thyroid and adrenal disorders'],
-      ['liver','Liver Disorders']]}
+      ['liver','Infantile cholestasis'],
+      ['liver-hep','Viral hepatitis and chronic liver disease']]}
   ]}
 ];
