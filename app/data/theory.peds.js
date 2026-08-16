@@ -1107,7 +1107,7 @@ var T_PEDS = {
     ]
   },
   "nutrition": {
-    "intro": "Faltering growth is a description, not a diagnosis — expect the causes tree. Breastfeeding is asked on physiology and on management, not on advantages alone. PEM is examined through the two classifications and the discrimination between marasmus and kwashiorkor.",
+    "intro": "Two opposite failures of growth. Faltering growth as a description rather than a diagnosis, and the inadequate-intake tree behind it; then obesity — the BMI centile bands, and how far management runs before drugs and surgery.",
     "sections": [
       {
         "id": "nut-1",
@@ -1142,111 +1142,6 @@ var T_PEDS = {
         "w": "must",
         "h": "Nutritional vulnerability, and the four WHO recommendations",
         "body": "**The premise:** **adequate nutrition is critical for optimal child growth and development**.\n\n### Why infants are vulnerable\n- **Low nutritional stores.**\n- **High nutritional demands for rapid growth.**\n\n**Growth energy falls steeply with age:** which is why the first months are the exposed window.\n\n|Age|Share of dietary energy used for growth|\n|---|---|\n|**First 3 months**|**35 %**|\n|**1 year**|**5 %**|\n|**3 years**|**2 %**|\n|**To mid-adolescence**|**1–2 %**|\n\n*Rapid organ growth is by definition a vulnerable period.*\n\n### Optimal infant and young child feeding — WHO Global Strategy, 2002\n- **Early initiation of breastfeeding:** **within 1 hour of birth**.\n- **Exclusive breastfeeding:** **0 to < 6 months**.\n- **Complementary feeding:** **6 to < 24 months** — complementary foods **after 6 months**.\n- **Continued breastfeeding:** **2 years or beyond**.\n\nSrc: L15.2 slides 2–3",
-        "qs": []
-      },
-      {
-        "id": "nut-6",
-        "w": "must",
-        "h": "Physiology of breastfeeding — two hormones and a local brake",
-        "body": "### The five steps\n- **1 Baby:** uses **rooting, sucking and swallowing** reflexes to locate the nipple and feed.\n- **2 Tactile receptors:** in the **nipple** are activated.\n- **3 Hypothalamus:** sends **efferent impulses to the anterior and posterior pituitary**.\n- **4 Anterior pituitary:** **prolactin** stimulates **milk secretion by the cuboidal cells in the acini**.\n- **5 Posterior pituitary:** **oxytocin** contracts the **myoepithelial cells in the alveoli**, forcing milk into the larger ducts — the **let-down reflex**.\n\n**Emotions feed in:** alongside the hormone stimulation produced by suckling at the breast.\n\n### The local brake — autocrine control\n- **Feedback Inhibition of Lactation (FIL):** an **inhibitor in breast milk** that **regulates milk production locally**.\n- **Consequence:** **if the breast remains full of milk, secretion stops** — a full breast can suppress lactation.\n\n### The oxytocin reflex is psychologically switched\n- **Triggering:** thinking **lovingly of the baby**, the **sound** of the baby, the **sight** of the baby, **confidence**.\n- **Suppression:** **worry, stress, pain, doubt**.\n\n### The three neonatal reflexes\n- **Rooting:** something touches the **lips** → the baby **opens the mouth, tongue down and forward**.\n- **Sucking:** something touches the **palate** → the baby sucks.\n- **Swallowing:** the mouth **fills with milk** → the baby swallows.\n\n*Skill, not reflex: the mother learns to position, the baby learns to take the breast.*\n\nSrc: L15.2 pp.4–6 (image-only, recovered by render)",
-        "qs": []
-      },
-      {
-        "id": "nut-7",
-        "w": "must",
-        "h": "Breast versus cow’s milk — quantity, then quality",
-        "body": "### Gross composition, g/dL\n\n|Constituent|Breast|Cow|\n|---|---|---|\n|**Protein**|**1**|**3.3**|\n|**Fat**|3.8|3.8|\n|**Lactose**|**7**|**4**|\n|**Mineral**|**0.2**|**0.8**|\n\n*Fat is identical in both.*\n\n### Quality of protein, % of total\n\n|Fraction|Breast|Cow|\n|---|---|---|\n|**Casein**|**30**|**80**|\n|**Lactalbumin, lactoferrin etc.**|**40**|—|\n|**β-lactoglobulin**|**0**|**13**|\n|**Immunoglobulins**|**30**|**7**|\n\n*The chart labels the cow column with three numbers only and leaves its top 7 % whey fraction unnamed.*\n\n### Carbohydrate\n- **Double the lactose:** **7 : 4** in favour of breast milk.\n- **Calcium:** lactose **helps calcium absorption**.\n- **Brain:** **essential for brain cerebrosides**.\n- **Gut flora:** **helps growth of lactobacilli** (probiotics).\n- **Prebiotics:** breast milk contains **FOS and GOS**.\n\n### Fatty acids\n- **Breast:** **60 % unsaturated.**\n- **Cow:** **40 % unsaturated.**\n\nSrc: L15.2 slides 8–9, values read off the 200 dpi render of p.8",
-        "qs": []
-      },
-      {
-        "id": "nut-8",
-        "w": "high",
-        "h": "Breast milk is not one fluid — age, stage and time of day",
-        "body": "### By age of the baby, g/dL\n\n|Milk|Lactose|Fat|Protein|\n|---|---|---|---|\n|**Colostrum**|**5**|**3**|**2**|\n|**Mature**|**7**|**3.8**|**1**|\n|**Preterm**|**6**|**3.8**|**2.5**|\n\n*Protein peaks in colostrum and preterm milk, lactose in mature milk.*\n\n### By stage of the feed, g/dL\n\n|Milk|Lactose|Fat|Protein|\n|---|---|---|---|\n|**Foremilk**|7|**1.7**|1|\n|**Hindmilk**|7|**5**|1|\n\n### The three rules for fat\n- **By stage of lactation:** **more in the early months**.\n- **By time of day:** **2.5 times more at mid-day**.\n- **By stage of suckling:** **3 times more in hind milk**.\n\n*Only fat moves — lactose stays 7, protein 1.*\n\nSrc: L15.2 slides 10–11, values read off the 200 dpi render of p.10",
-        "qs": []
-      },
-      {
-        "id": "nut-9",
-        "w": "must",
-        "h": "Advantages of breastfeeding — to the infant and to the mother",
-        "body": "### To the infant\n- **Ideal nutrition:** during the **first 4 to 6 months of life**.\n- **Survival:** **life-saving in developing countries**.\n- **Infection:** reduces **gastrointestinal and respiratory infection**, **otitis media**, **necrotizing enterocolitis**.\n- **Relationship:** **enhances the mother–child relationship**.\n- **Later life:** reduces **insulin-dependent diabetes, hypertension, obesity**.\n- **Digestion:** **better digestion and less colic**.\n- **Development:** **better growth and development, physical and mental**.\n- **Composition:** **natural and perfectly balanced**.\n\n### To the mother\n- **Attachment:** promotes **close attachment between mother and baby**.\n- **Birth spacing:** **increases the interval between children** — important in reducing birth rate in developing countries.\n- **Risk:** reduces **breast and ovarian cancer** and **type 2 diabetes**.\n\nSrc: L15.2 slides 6–7, 11–12",
-        "qs": []
-      },
-      {
-        "id": "nut-10",
-        "w": "must",
-        "h": "Management of breastfeeding — initiation, demand, attachment",
-        "body": "### Getting started\n- **Early initiation of breastfeeding**, within the first hour.\n- **Early skin-to-skin contact.**\n\n**Demand feeding:** also called **unrestricted** or **baby-led** feeding.\n- **Frequency:** **no restrictions**.\n- **Length:** **no restrictions**.\n- **Order:** **finish the first breast first**.\n\n### Why prelacteal feeds harm\n- **They replace the colostrum:** the baby becomes **more liable to infection** and **more liable to allergy and protein intolerance**.\n- **They obstruct breastfeeding:** a satisfied baby **wants the breast less**; **bottle feeding causes difficulty attaching**; the baby **suckles less**; **starting becomes difficult**.\n\n### Attachment — four signs, both ways\n\n|Sign|Good attachment|Poor attachment|\n|---|---|---|\n|**Chin**|**Touching the breast**|**Not touching the breast**|\n|**Mouth**|**Wide open**|**Not widely open, lips pushed forward**|\n|**Lower lip**|**Turned outward**|**Turned in**|\n|**Areola**|**More visible ABOVE** the mouth|**More, or equal, visible BELOW**|\n\n### Technique\n- **Mother:** relaxation, **comfortable position**.\n- **Then, in order:** **baby positioning** → **proper latch on** → **attachment** → **effective sucking**.\n\n*Engorgement, cracked nipple, blocked duct and mastitis are not in course material; all four are managed by correcting attachment and emptying the breast, mastitis also needing antibiotics.*\n\nSrc: L15.2 slides 13–14, 16, 18–21, incl. the image-only p.17",
-        "qs": []
-      },
-      {
-        "id": "nut-11",
-        "w": "must",
-        "h": "Is the baby getting enough? — the two criterion lists",
-        "body": "### Criteria of ADEQUATE breastfeeding\n- **Behaviour:** **calm and satisfied after feeds and in between**.\n- **Sleep:** **sleeps well 2 – 4 hours after nursing**.\n- **Urine:** **6 or more full diapers per day**.\n- **Weight:** **good weight gain, 20 – 30 grams/day**.\n\n**Good motions:** the stools of a **totally breast-fed** baby are **mustard yellow**, **soft to semiliquid**, with an **acidic \"fermentative\" odour**.\n\n**Frequency varies with age:** **one motion after each feed** to **one every 2 – 3 days** — both normal.\n\n### Criteria of INSUFFICIENT breastfeeding\n- **Weight:** **inadequate gain, or weight loss**.\n- **Output:** **inadequate urine and stools**.\n- **Between feeds:** **fretfulness, crying and sucking of fists**.\n- **At the breast:** **unsatisfied**, staying on each breast **more than 30 minutes**.\n- **Sleep:** **sleeplessness or very short sleep**.\n- **Air swallowing** leading to **colic**.\n\nSrc: L15.2 slide 22",
-        "qs": []
-      },
-      {
-        "id": "nut-12",
-        "w": "know",
-        "h": "Infant formula — the two families",
-        "body": "### A — Standard formula (cow milk based)\n- **Stage 1** and **Stage 2**.\n\n### B — Special formula\n- **Hydrolyzed formula.**\n- **Amino acid based formula** (elemental).\n- **LBW formula** for the premature.\n- **Lactose free** milk based formula.\n- **Anti reflux** formula.\n- **Metabolic formulas:** for **inborn errors** or certain diseases.\n\n### When breast milk must not be given\n*Not in course material — the lecture lists formula types and never states a contraindication. Supplied: the infant-side absolute contraindication is **classic galactosaemia**; the mother-side ones are **maternal HIV where safe replacement feeding is available**, **active untreated tuberculosis or herpetic lesions on the breast** until treated, and a few **maternal drugs** including cytotoxics and radioactive isotopes.*\n\nSrc: L15.2 slide 23",
-        "qs": []
-      },
-      {
-        "id": "nut-13",
-        "w": "must",
-        "h": "Complementary feeding — the definitions, and what \"weaning\" means",
-        "body": "**The WHO rule:** **exclusive breastfeeding until 6 months (180 days)** — *\"only breastmilk, no other liquids or solids, not even water, with the exception of necessary vitamins, mineral supplements or medicines.\"*\n\n**At six months:** complementary foods for the growing child’s increasing needs, **with continued breastfeeding until 2 years or beyond**.\n\n### Definition of complementary feeding\n- **What it is:** giving **other foods or energy containing fluids in addition to breast milk or formula**.\n- **What it is a process of:** the **transition from exclusive breast feeding to family foods**.\n- **When:** typically **6 to 24 months**.\n\n**⚠️ Weaning means CESSATION OF BREASTFEEDING** — not the introduction of solids. The lecture states this on its own line.\n\n### Timely — why six months\n- **The guideline:** *\"All infants should start receiving other foods in addition to breast milk from 6 months onwards.\"*\n- **Nutritional reason:** **nutritional gaps start to appear from 6 months** in exclusively breastfed infants.\n- **Developmental reason:** most infants are **developmentally ready** by this age.\n\n**Four readiness signs:** **upright sitting with minimal support** · **midline head held several minutes unsupported** · **vertical motion of the tongue** · **hand-to-mouth motor skills**.\n\nSrc: L15.2 slides 23–26",
-        "qs": []
-      },
-      {
-        "id": "nut-14",
-        "w": "must",
-        "h": "Complementary feeding — adequate, frequent, right texture",
-        "body": "**Four named attributes:** **Timely · Adequate · Properly fed · Safe** — with **frequency, variety, texture** and **active responsive feeding** under them.\n\n**The nutritional gaps:** hardest to fill are **energy, iron, protein, vitamin A and zinc**.\n\n### Frequency\n\n|Age (months)|Energy from complementary feeds (kcal/day)|Meals/day|\n|---|---|---|\n|**6 – 8**|**200**|**2 – 3**|\n|**8 – 12**|**300**|**3 – 4**|\n|**12 – 24**|**550**|**3 – 4**|\n\n**Snacks:** a piece of fruit or bread, **1 – 2 times per day**.\n\n### Introducing a new food\n- **Pace:** **gradually, one at a time, every 3 to 7 days**.\n- **Who accepts more easily:** **breastfed infants**, compared with non-breastfed ones.\n\n### Texture — appropriate for the stage of development\n\n|Age|Texture|\n|---|---|\n|**6 m**|**Pureed, mashed and semisolid**|\n|**8 m**|**Finger foods**|\n|**12 m**|**Family foods**|\n\nSrc: L15.2 slides 25–29",
-        "qs": []
-      },
-      {
-        "id": "nut-15",
-        "w": "must",
-        "h": "Complementary feeding — variety, responsive feeding, safety",
-        "body": "### Preparation — strainer, not blender\n- **Do not use a mixer or blender** for vegetable foods.\n- **Why:** it **transforms the food into a liquid form**, **unsuitable for training the baby to swallow semisolid foods**.\n- **Better:** use a **strainer**.\n\n### Variety\n- **What it means:** **eating a wide selection of foods within and among the major food groups**.\n- **The instruction:** **mind the gaps, go up slowly**.\n\n### Active responsive feeding\n- **Cues:** **responds to early hunger and satiety cues**.\n- **Control:** **allows the child to guide feeding**.\n- **Balance:** helping against **encouraging self-feeding**.\n- **Interaction:** **eye contact, touching, smiling and talking**.\n- **Distraction:** **minimized** during meals and feedings.\n- **Range:** offers different **food combinations, tastes, and textures**.\n\n**Two rules of patience:** children are **slow eaters** — **do not hurry the infant while eating**; and **do not be frustrated from mealtime mess**, **children learn out of mess**.\n\n**Why it matters:** **active feeding improves food ingestion and the infant’s nutritional status and development**.\n\n### Safe\n- **Handling:** foods must be **prepared, served, and stored safely**.\n- **Avoid:** foods that may cause **choking or allergy**.\n\nSrc: L15.2 slides 29–31",
-        "qs": []
-      },
-      {
-        "id": "nut-16",
-        "w": "must",
-        "h": "Protein energy malnutrition — the two classifications",
-        "body": "**Definition:** *\"a range of pathological conditions caused by deficiency of energy + proteins\"*, **usually accompanied by infection**, **most frequent in infants and young children**.\n\n*Severe forms are the visible tip; mild and moderate the submerged bulk.*\n\n### Wellcome classification\n**Weight here means:** the **% of the 50th centile of normal weight for age**.\n\n|Type of PEM|Weight|Oedema|\n|---|---|---|\n|**MILD — Underweight**|**60 – 80 %**|**–**|\n|**SEVERE — Marasmus**|**< 60 %**|**–**|\n|**SEVERE — Kwashiorkor**|**60 – 80 %**|**+**|\n|**SEVERE — Marasmic-kwashiorkor**|**< 60 %**|**+**|\n|**Normal**|**> 80 %**|**–**|\n\n*Oedema is what splits each weight pair.*\n\n### WHO classification\n\n|Criterion|Moderate malnutrition|Severe malnutrition|\n|---|---|---|\n|**Symmetrical oedema**|**No**|**Yes** — *oedematous malnutrition*|\n|**Weight-for-height**|**SD score −2 to −3**|**SD score < −3** — **severe wasting**|\n|**Height-for-age**|**SD score −2 to −3**|**SD score < −3** — **severe stunting**|\n\nSrc: L16 slides 2–5, incl. the image-only pp.8–9 recovered by render",
-        "qs": []
-      },
-      {
-        "id": "nut-17",
-        "w": "must",
-        "h": "The underweight child, and marasmus",
-        "body": "### The underweight child (Wt 60 – 80 %)\n- **Growth failure:** weight **60 – 80 %**.\n- **Infection:** **GIT, chest, parasites**.\n- **Associated deficiencies:** vitamins, minerals.\n- **Anaemia:** **iron, folic and protein deficiency**.\n- **Retarded development.**\n- **Behaviour:** **apathy, restlessness, diminished activity**.\n\n### Marasmus — definition and causes\n**Definition:** a form of PEM occurring during the **first 3 years of life**, **usually the 1st year**.\n\n**Nutritional cause:** protein **plus** energy deficiency.\n\n**Non-nutritional causes:** **chronic kidney disease** · **chronic GIT disease and eating disorders** · **malignant disease** · **congenital heart disease** · **metabolic disorders** · **cerebral palsy**.\n\n### Marasmus — clinical features\n- **Growth failure:** weight **< 60 %**.\n- **Loss of subcutaneous fat.**\n- **Muscle wasting:** **limbs and abdomen**.\n- **On inspection:** **thin limbs**, **visible ribs**, a **triangular face**, redundant **skin folds**.\n- **Psychic changes:** **anxious, irritable, excessively crying, little sleeping**.\n- **Absent:** **no oedema · no dermatosis · no hair changes**, or only mild ones.\n\n**Consequences of PEM:** **impaired immunity** · **delayed wound healing** · **increased operative morbidity and mortality** · **permanent intellectual delay**.\n\nSrc: L16 slides 6, 10–13, 16, incl. the image-only p.15 recovered by render",
-        "qs": []
-      },
-      {
-        "id": "nut-18",
-        "w": "must",
-        "h": "Kwashiorkor, marasmic-kwashiorkor, and the discrimination",
-        "body": "**Kwashiorkor means \"the one before the last\":** *\"the disease the first child gets when the 2nd one is on the way.\"*\n\n**Definition:** a **severe form of PEM** of the **weaning and post-weaning periods**, when the diet is **persistently deficient in essential proteins**.\n\n### ALWAYS present\n- **Growth failure:** by **weight** and by **mid-arm** circumference.\n- **Oedema WITH NO ASCITES.**\n- **Muscle wasting** and a **disturbed muscle / fat ratio**.\n- **Psychic changes:** apathy.\n\n### USUALLY present\n- **Hair changes:** **dry, uncurled, loss of lustre, pickable, discoloured**.\n- **Dermatosis.**\n- **Hepatomegaly.**\n\n**Marasmic-kwashiorkor:** weight **< 60 %** **and** oedema — the worst cell of the Wellcome grid.\n\n### Telling the two severe forms apart\n\n|Feature|Marasmus|Kwashiorkor|\n|---|---|---|\n|**Weight**|**< 60 %**|**60 – 80 %**|\n|**Oedema**|**Absent**|**Present, no ascites**|\n|**Age**|**First 3 years, usually 1st**|**Weaning / post-weaning**|\n|**Deficiency**|**Protein AND energy**|**Protein, persistently**|\n|**Subcutaneous fat**|**Lost**|Disturbed muscle/fat ratio|\n|**Hair**|**No change, or mild**|**Dry, uncurled, pickable, discoloured**|\n|**Dermatosis**|**Absent**|**Present**|\n|**Liver**|—|**Hepatomegaly**|\n|**Mood**|**Anxious, irritable, crying**|**Apathetic**|\n\nSrc: L16 slides 17–20, 24",
-        "qs": []
-      },
-      {
-        "id": "nut-19",
-        "w": "high",
-        "h": "PEM — clinical assessment and investigations",
-        "body": "### 1 — History\n- **Nutritional history**, and a **dietary diary**.\n\n### 2 — Physical examination\n**The labelled signs:** **thin limbs**, **visible ribs**, **triangular face**, **skin folds** — and in kwashiorkor **oedema**, **dermatosis**, **hair change**.\n\n*The cached text jumps from step 1 to step 3; step 2 is a photograph slide — the gap is in the extraction, not the lecture.*\n\n### 3 — Anthropometric data\n- **Length / height:** use **percentile charts**.\n- **Weight:** **for age** and **for height**.\n- **Circumferences:** **head, chest and abdominal**.\n- **Mid-arm circumference:** **11.5 cm**.\n- **Others:** **skin fold thickness**.\n\n*The 11.5 cm figure is printed without its use. Not in course material: MUAC below 11.5 cm at 6–59 months defines severe acute malnutrition and is the standard community screening cut-off.*\n\n### Investigations\n- **Complete blood count + red cell indices.**\n- **Urine:** **urinalysis (pus cells) + culture**.\n- **Stool:** analysis for **ova and parasites**.\n- **Chest radiography.**\n- **Serum albumin** — **in kwashiorkor**.\n- **Specific vitamins and minerals.**\n- **Blood glucose.**\n\nSrc: L16 slides 28–30, incl. the image-only p.15",
-        "qs": []
-      },
-      {
-        "id": "nut-20",
-        "w": "must",
-        "h": "PEM — management, the therapeutic feeds, and the outcome",
-        "body": "### Mild PEM — at home\n- **Infections and parasites:** treat them.\n- **Calories:** **100 – 150 kcal/kg/day.**\n- **Proteins:** **2 – 3 g/kg/day.**\n- **Vitamins:** **A, D, folic acid.**\n- **Minerals:** **iron**, and others.\n\n### Severe PEM — the WHO ten steps\n**Steps 1–6 — stabilize the life-threatening complications:** **hypothermia** · **hypoglycaemia and heart failure** · **dehydration** · **electrolyte disturbance** · **infections** · **correct micronutrient and vitamin deficiency**.\n\n**7 — Cautious initial feeding:** **little, frequent, isotonic feeds**; **do not exceed metabolic capacity**; **oral or NGT route**; **parenteral nutrition ONLY as a last resort**.\n\n*Caution guards against refeeding syndrome — the hypophosphataemia, hypokalaemia and hypomagnesaemia of an insulin surge on depleted stores (not in course material).*\n\n**Subsequent feeding:** **high-energy diet + vitamins + minerals**, plus **stimulation and emotional support**.\n\n**Steps 8–10:** **catch-up growth** · **stimulation, play and emotional support** · **follow up after recovery**.\n\n### The three therapeutic products\n- **Starter feed (\"75\"):** **low lactose, low protein, no fibre**, **0.75 kcal per 1 ml**, for **severely malnourished children 6 – 59 months**; **use under medical supervision**.\n- **Catch-up feed (\"100\"):** the **high-protein** formulation, once the child is stabilised.\n- **RUTF:** **ready to use therapeutic food**, in sachets, for **severe acute malnutrition**.\n\n### Criteria of cure\n- **Mood:** **changes disappear in a few days**.\n- **Appetite:** the child **starts to eat with increasing appetite**.\n- **Diarrhoea stops.**\n- **Oedema:** **INCREASES then disappears — 10 days**.\n- **Skin lesions:** **rapid healing in 10 days**.\n- **Weight:** **initial loss, then gain**.\n- **Recovery:** **return to normal health in 3 months**.\n\n### Failure to respond\n- **Feeding problems:** **inappropriate preparation**, **inadequate amounts**.\n- **Undiagnosed conditions:** **otitis media, TB, UTI**; **congenital, chronic and metabolic disease**.\n- **Psychological:** **emotional deprivation**.\n\nSrc: L16 slides 26–27, 31–32, 36–38, incl. the image-only pp.33–35 recovered by render",
         "qs": []
       }
     ]
@@ -2890,6 +2785,121 @@ var T_PEDS = {
         "w": "high",
         "h": "Adjunctive therapy",
         "body": "The deck lists **eight adjuncts** beside antibiotics and supportive care — none a substitute for either.\n\n- **IVIG —** pooled immunoglobulin.\n- **GM-CSF and G-CSF —** colony-stimulating factors, aimed at the neutropenia.\n- **Lactoferrin —** with **colostrum and exclusive early breast feeding**, the enteral limb.\n- **Zinc.**\n- **Pentoxyphylline.**\n- **Granulocyte transfusion.**\n- **DVET —** **double volume exchange transfusion**.\n- **Melatonin.**\n\n*The deck names them without ranking or evidence; the list itself is the examinable unit.*\n\nSrc: L11 p.36 (image-only, recovered by render — the cached text is the three words \"Adjuntive therapy .\")",
+        "qs": []
+      }
+    ]
+  },
+  "nutrition-feed": {
+    "intro": "How an infant is fed for the first two years. The physiology behind breastfeeding and where cow's milk falls short, whether the baby is getting enough, the two formula families, and complementary feeding done adequately, safely and on time.",
+    "sections": [
+      {
+        "id": "nut-6",
+        "w": "must",
+        "h": "Physiology of breastfeeding — two hormones and a local brake",
+        "body": "### The five steps\n- **1 Baby:** uses **rooting, sucking and swallowing** reflexes to locate the nipple and feed.\n- **2 Tactile receptors:** in the **nipple** are activated.\n- **3 Hypothalamus:** sends **efferent impulses to the anterior and posterior pituitary**.\n- **4 Anterior pituitary:** **prolactin** stimulates **milk secretion by the cuboidal cells in the acini**.\n- **5 Posterior pituitary:** **oxytocin** contracts the **myoepithelial cells in the alveoli**, forcing milk into the larger ducts — the **let-down reflex**.\n\n**Emotions feed in:** alongside the hormone stimulation produced by suckling at the breast.\n\n### The local brake — autocrine control\n- **Feedback Inhibition of Lactation (FIL):** an **inhibitor in breast milk** that **regulates milk production locally**.\n- **Consequence:** **if the breast remains full of milk, secretion stops** — a full breast can suppress lactation.\n\n### The oxytocin reflex is psychologically switched\n- **Triggering:** thinking **lovingly of the baby**, the **sound** of the baby, the **sight** of the baby, **confidence**.\n- **Suppression:** **worry, stress, pain, doubt**.\n\n### The three neonatal reflexes\n- **Rooting:** something touches the **lips** → the baby **opens the mouth, tongue down and forward**.\n- **Sucking:** something touches the **palate** → the baby sucks.\n- **Swallowing:** the mouth **fills with milk** → the baby swallows.\n\n*Skill, not reflex: the mother learns to position, the baby learns to take the breast.*\n\nSrc: L15.2 pp.4–6 (image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "nut-7",
+        "w": "must",
+        "h": "Breast versus cow’s milk — quantity, then quality",
+        "body": "### Gross composition, g/dL\n\n|Constituent|Breast|Cow|\n|---|---|---|\n|**Protein**|**1**|**3.3**|\n|**Fat**|3.8|3.8|\n|**Lactose**|**7**|**4**|\n|**Mineral**|**0.2**|**0.8**|\n\n*Fat is identical in both.*\n\n### Quality of protein, % of total\n\n|Fraction|Breast|Cow|\n|---|---|---|\n|**Casein**|**30**|**80**|\n|**Lactalbumin, lactoferrin etc.**|**40**|—|\n|**β-lactoglobulin**|**0**|**13**|\n|**Immunoglobulins**|**30**|**7**|\n\n*The chart labels the cow column with three numbers only and leaves its top 7 % whey fraction unnamed.*\n\n### Carbohydrate\n- **Double the lactose:** **7 : 4** in favour of breast milk.\n- **Calcium:** lactose **helps calcium absorption**.\n- **Brain:** **essential for brain cerebrosides**.\n- **Gut flora:** **helps growth of lactobacilli** (probiotics).\n- **Prebiotics:** breast milk contains **FOS and GOS**.\n\n### Fatty acids\n- **Breast:** **60 % unsaturated.**\n- **Cow:** **40 % unsaturated.**\n\nSrc: L15.2 slides 8–9, values read off the 200 dpi render of p.8",
+        "qs": []
+      },
+      {
+        "id": "nut-8",
+        "w": "high",
+        "h": "Breast milk is not one fluid — age, stage and time of day",
+        "body": "### By age of the baby, g/dL\n\n|Milk|Lactose|Fat|Protein|\n|---|---|---|---|\n|**Colostrum**|**5**|**3**|**2**|\n|**Mature**|**7**|**3.8**|**1**|\n|**Preterm**|**6**|**3.8**|**2.5**|\n\n*Protein peaks in colostrum and preterm milk, lactose in mature milk.*\n\n### By stage of the feed, g/dL\n\n|Milk|Lactose|Fat|Protein|\n|---|---|---|---|\n|**Foremilk**|7|**1.7**|1|\n|**Hindmilk**|7|**5**|1|\n\n### The three rules for fat\n- **By stage of lactation:** **more in the early months**.\n- **By time of day:** **2.5 times more at mid-day**.\n- **By stage of suckling:** **3 times more in hind milk**.\n\n*Only fat moves — lactose stays 7, protein 1.*\n\nSrc: L15.2 slides 10–11, values read off the 200 dpi render of p.10",
+        "qs": []
+      },
+      {
+        "id": "nut-9",
+        "w": "must",
+        "h": "Advantages of breastfeeding — to the infant and to the mother",
+        "body": "### To the infant\n- **Ideal nutrition:** during the **first 4 to 6 months of life**.\n- **Survival:** **life-saving in developing countries**.\n- **Infection:** reduces **gastrointestinal and respiratory infection**, **otitis media**, **necrotizing enterocolitis**.\n- **Relationship:** **enhances the mother–child relationship**.\n- **Later life:** reduces **insulin-dependent diabetes, hypertension, obesity**.\n- **Digestion:** **better digestion and less colic**.\n- **Development:** **better growth and development, physical and mental**.\n- **Composition:** **natural and perfectly balanced**.\n\n### To the mother\n- **Attachment:** promotes **close attachment between mother and baby**.\n- **Birth spacing:** **increases the interval between children** — important in reducing birth rate in developing countries.\n- **Risk:** reduces **breast and ovarian cancer** and **type 2 diabetes**.\n\nSrc: L15.2 slides 6–7, 11–12",
+        "qs": []
+      },
+      {
+        "id": "nut-10",
+        "w": "must",
+        "h": "Management of breastfeeding — initiation, demand, attachment",
+        "body": "### Getting started\n- **Early initiation of breastfeeding**, within the first hour.\n- **Early skin-to-skin contact.**\n\n**Demand feeding:** also called **unrestricted** or **baby-led** feeding.\n- **Frequency:** **no restrictions**.\n- **Length:** **no restrictions**.\n- **Order:** **finish the first breast first**.\n\n### Why prelacteal feeds harm\n- **They replace the colostrum:** the baby becomes **more liable to infection** and **more liable to allergy and protein intolerance**.\n- **They obstruct breastfeeding:** a satisfied baby **wants the breast less**; **bottle feeding causes difficulty attaching**; the baby **suckles less**; **starting becomes difficult**.\n\n### Attachment — four signs, both ways\n\n|Sign|Good attachment|Poor attachment|\n|---|---|---|\n|**Chin**|**Touching the breast**|**Not touching the breast**|\n|**Mouth**|**Wide open**|**Not widely open, lips pushed forward**|\n|**Lower lip**|**Turned outward**|**Turned in**|\n|**Areola**|**More visible ABOVE** the mouth|**More, or equal, visible BELOW**|\n\n### Technique\n- **Mother:** relaxation, **comfortable position**.\n- **Then, in order:** **baby positioning** → **proper latch on** → **attachment** → **effective sucking**.\n\n*Engorgement, cracked nipple, blocked duct and mastitis are not in course material; all four are managed by correcting attachment and emptying the breast, mastitis also needing antibiotics.*\n\nSrc: L15.2 slides 13–14, 16, 18–21, incl. the image-only p.17",
+        "qs": []
+      },
+      {
+        "id": "nut-11",
+        "w": "must",
+        "h": "Is the baby getting enough? — the two criterion lists",
+        "body": "### Criteria of ADEQUATE breastfeeding\n- **Behaviour:** **calm and satisfied after feeds and in between**.\n- **Sleep:** **sleeps well 2 – 4 hours after nursing**.\n- **Urine:** **6 or more full diapers per day**.\n- **Weight:** **good weight gain, 20 – 30 grams/day**.\n\n**Good motions:** the stools of a **totally breast-fed** baby are **mustard yellow**, **soft to semiliquid**, with an **acidic \"fermentative\" odour**.\n\n**Frequency varies with age:** **one motion after each feed** to **one every 2 – 3 days** — both normal.\n\n### Criteria of INSUFFICIENT breastfeeding\n- **Weight:** **inadequate gain, or weight loss**.\n- **Output:** **inadequate urine and stools**.\n- **Between feeds:** **fretfulness, crying and sucking of fists**.\n- **At the breast:** **unsatisfied**, staying on each breast **more than 30 minutes**.\n- **Sleep:** **sleeplessness or very short sleep**.\n- **Air swallowing** leading to **colic**.\n\nSrc: L15.2 slide 22",
+        "qs": []
+      },
+      {
+        "id": "nut-12",
+        "w": "know",
+        "h": "Infant formula — the two families",
+        "body": "### A — Standard formula (cow milk based)\n- **Stage 1** and **Stage 2**.\n\n### B — Special formula\n- **Hydrolyzed formula.**\n- **Amino acid based formula** (elemental).\n- **LBW formula** for the premature.\n- **Lactose free** milk based formula.\n- **Anti reflux** formula.\n- **Metabolic formulas:** for **inborn errors** or certain diseases.\n\n### When breast milk must not be given\n*Not in course material — the lecture lists formula types and never states a contraindication. Supplied: the infant-side absolute contraindication is **classic galactosaemia**; the mother-side ones are **maternal HIV where safe replacement feeding is available**, **active untreated tuberculosis or herpetic lesions on the breast** until treated, and a few **maternal drugs** including cytotoxics and radioactive isotopes.*\n\nSrc: L15.2 slide 23",
+        "qs": []
+      },
+      {
+        "id": "nut-13",
+        "w": "must",
+        "h": "Complementary feeding — the definitions, and what \"weaning\" means",
+        "body": "**The WHO rule:** **exclusive breastfeeding until 6 months (180 days)** — *\"only breastmilk, no other liquids or solids, not even water, with the exception of necessary vitamins, mineral supplements or medicines.\"*\n\n**At six months:** complementary foods for the growing child’s increasing needs, **with continued breastfeeding until 2 years or beyond**.\n\n### Definition of complementary feeding\n- **What it is:** giving **other foods or energy containing fluids in addition to breast milk or formula**.\n- **What it is a process of:** the **transition from exclusive breast feeding to family foods**.\n- **When:** typically **6 to 24 months**.\n\n**⚠️ Weaning means CESSATION OF BREASTFEEDING** — not the introduction of solids. The lecture states this on its own line.\n\n### Timely — why six months\n- **The guideline:** *\"All infants should start receiving other foods in addition to breast milk from 6 months onwards.\"*\n- **Nutritional reason:** **nutritional gaps start to appear from 6 months** in exclusively breastfed infants.\n- **Developmental reason:** most infants are **developmentally ready** by this age.\n\n**Four readiness signs:** **upright sitting with minimal support** · **midline head held several minutes unsupported** · **vertical motion of the tongue** · **hand-to-mouth motor skills**.\n\nSrc: L15.2 slides 23–26",
+        "qs": []
+      },
+      {
+        "id": "nut-14",
+        "w": "must",
+        "h": "Complementary feeding — adequate, frequent, right texture",
+        "body": "**Four named attributes:** **Timely · Adequate · Properly fed · Safe** — with **frequency, variety, texture** and **active responsive feeding** under them.\n\n**The nutritional gaps:** hardest to fill are **energy, iron, protein, vitamin A and zinc**.\n\n### Frequency\n\n|Age (months)|Energy from complementary feeds (kcal/day)|Meals/day|\n|---|---|---|\n|**6 – 8**|**200**|**2 – 3**|\n|**8 – 12**|**300**|**3 – 4**|\n|**12 – 24**|**550**|**3 – 4**|\n\n**Snacks:** a piece of fruit or bread, **1 – 2 times per day**.\n\n### Introducing a new food\n- **Pace:** **gradually, one at a time, every 3 to 7 days**.\n- **Who accepts more easily:** **breastfed infants**, compared with non-breastfed ones.\n\n### Texture — appropriate for the stage of development\n\n|Age|Texture|\n|---|---|\n|**6 m**|**Pureed, mashed and semisolid**|\n|**8 m**|**Finger foods**|\n|**12 m**|**Family foods**|\n\nSrc: L15.2 slides 25–29",
+        "qs": []
+      },
+      {
+        "id": "nut-15",
+        "w": "must",
+        "h": "Complementary feeding — variety, responsive feeding, safety",
+        "body": "### Preparation — strainer, not blender\n- **Do not use a mixer or blender** for vegetable foods.\n- **Why:** it **transforms the food into a liquid form**, **unsuitable for training the baby to swallow semisolid foods**.\n- **Better:** use a **strainer**.\n\n### Variety\n- **What it means:** **eating a wide selection of foods within and among the major food groups**.\n- **The instruction:** **mind the gaps, go up slowly**.\n\n### Active responsive feeding\n- **Cues:** **responds to early hunger and satiety cues**.\n- **Control:** **allows the child to guide feeding**.\n- **Balance:** helping against **encouraging self-feeding**.\n- **Interaction:** **eye contact, touching, smiling and talking**.\n- **Distraction:** **minimized** during meals and feedings.\n- **Range:** offers different **food combinations, tastes, and textures**.\n\n**Two rules of patience:** children are **slow eaters** — **do not hurry the infant while eating**; and **do not be frustrated from mealtime mess**, **children learn out of mess**.\n\n**Why it matters:** **active feeding improves food ingestion and the infant’s nutritional status and development**.\n\n### Safe\n- **Handling:** foods must be **prepared, served, and stored safely**.\n- **Avoid:** foods that may cause **choking or allergy**.\n\nSrc: L15.2 slides 29–31",
+        "qs": []
+      }
+    ]
+  },
+  "nutrition-pem": {
+    "intro": "Protein energy malnutrition. The two classifications, marasmus against kwashiorkor and the findings that separate them, what to examine and measure, and the therapeutic feeds that treat it.",
+    "sections": [
+      {
+        "id": "nut-16",
+        "w": "must",
+        "h": "Protein energy malnutrition — the two classifications",
+        "body": "**Definition:** *\"a range of pathological conditions caused by deficiency of energy + proteins\"*, **usually accompanied by infection**, **most frequent in infants and young children**.\n\n*Severe forms are the visible tip; mild and moderate the submerged bulk.*\n\n### Wellcome classification\n**Weight here means:** the **% of the 50th centile of normal weight for age**.\n\n|Type of PEM|Weight|Oedema|\n|---|---|---|\n|**MILD — Underweight**|**60 – 80 %**|**–**|\n|**SEVERE — Marasmus**|**< 60 %**|**–**|\n|**SEVERE — Kwashiorkor**|**60 – 80 %**|**+**|\n|**SEVERE — Marasmic-kwashiorkor**|**< 60 %**|**+**|\n|**Normal**|**> 80 %**|**–**|\n\n*Oedema is what splits each weight pair.*\n\n### WHO classification\n\n|Criterion|Moderate malnutrition|Severe malnutrition|\n|---|---|---|\n|**Symmetrical oedema**|**No**|**Yes** — *oedematous malnutrition*|\n|**Weight-for-height**|**SD score −2 to −3**|**SD score < −3** — **severe wasting**|\n|**Height-for-age**|**SD score −2 to −3**|**SD score < −3** — **severe stunting**|\n\nSrc: L16 slides 2–5, incl. the image-only pp.8–9 recovered by render",
+        "qs": []
+      },
+      {
+        "id": "nut-17",
+        "w": "must",
+        "h": "The underweight child, and marasmus",
+        "body": "### The underweight child (Wt 60 – 80 %)\n- **Growth failure:** weight **60 – 80 %**.\n- **Infection:** **GIT, chest, parasites**.\n- **Associated deficiencies:** vitamins, minerals.\n- **Anaemia:** **iron, folic and protein deficiency**.\n- **Retarded development.**\n- **Behaviour:** **apathy, restlessness, diminished activity**.\n\n### Marasmus — definition and causes\n**Definition:** a form of PEM occurring during the **first 3 years of life**, **usually the 1st year**.\n\n**Nutritional cause:** protein **plus** energy deficiency.\n\n**Non-nutritional causes:** **chronic kidney disease** · **chronic GIT disease and eating disorders** · **malignant disease** · **congenital heart disease** · **metabolic disorders** · **cerebral palsy**.\n\n### Marasmus — clinical features\n- **Growth failure:** weight **< 60 %**.\n- **Loss of subcutaneous fat.**\n- **Muscle wasting:** **limbs and abdomen**.\n- **On inspection:** **thin limbs**, **visible ribs**, a **triangular face**, redundant **skin folds**.\n- **Psychic changes:** **anxious, irritable, excessively crying, little sleeping**.\n- **Absent:** **no oedema · no dermatosis · no hair changes**, or only mild ones.\n\n**Consequences of PEM:** **impaired immunity** · **delayed wound healing** · **increased operative morbidity and mortality** · **permanent intellectual delay**.\n\nSrc: L16 slides 6, 10–13, 16, incl. the image-only p.15 recovered by render",
+        "qs": []
+      },
+      {
+        "id": "nut-18",
+        "w": "must",
+        "h": "Kwashiorkor, marasmic-kwashiorkor, and the discrimination",
+        "body": "**Kwashiorkor means \"the one before the last\":** *\"the disease the first child gets when the 2nd one is on the way.\"*\n\n**Definition:** a **severe form of PEM** of the **weaning and post-weaning periods**, when the diet is **persistently deficient in essential proteins**.\n\n### ALWAYS present\n- **Growth failure:** by **weight** and by **mid-arm** circumference.\n- **Oedema WITH NO ASCITES.**\n- **Muscle wasting** and a **disturbed muscle / fat ratio**.\n- **Psychic changes:** apathy.\n\n### USUALLY present\n- **Hair changes:** **dry, uncurled, loss of lustre, pickable, discoloured**.\n- **Dermatosis.**\n- **Hepatomegaly.**\n\n**Marasmic-kwashiorkor:** weight **< 60 %** **and** oedema — the worst cell of the Wellcome grid.\n\n### Telling the two severe forms apart\n\n|Feature|Marasmus|Kwashiorkor|\n|---|---|---|\n|**Weight**|**< 60 %**|**60 – 80 %**|\n|**Oedema**|**Absent**|**Present, no ascites**|\n|**Age**|**First 3 years, usually 1st**|**Weaning / post-weaning**|\n|**Deficiency**|**Protein AND energy**|**Protein, persistently**|\n|**Subcutaneous fat**|**Lost**|Disturbed muscle/fat ratio|\n|**Hair**|**No change, or mild**|**Dry, uncurled, pickable, discoloured**|\n|**Dermatosis**|**Absent**|**Present**|\n|**Liver**|—|**Hepatomegaly**|\n|**Mood**|**Anxious, irritable, crying**|**Apathetic**|\n\nSrc: L16 slides 17–20, 24",
+        "qs": []
+      },
+      {
+        "id": "nut-19",
+        "w": "high",
+        "h": "PEM — clinical assessment and investigations",
+        "body": "### 1 — History\n- **Nutritional history**, and a **dietary diary**.\n\n### 2 — Physical examination\n**The labelled signs:** **thin limbs**, **visible ribs**, **triangular face**, **skin folds** — and in kwashiorkor **oedema**, **dermatosis**, **hair change**.\n\n*The cached text jumps from step 1 to step 3; step 2 is a photograph slide — the gap is in the extraction, not the lecture.*\n\n### 3 — Anthropometric data\n- **Length / height:** use **percentile charts**.\n- **Weight:** **for age** and **for height**.\n- **Circumferences:** **head, chest and abdominal**.\n- **Mid-arm circumference:** **11.5 cm**.\n- **Others:** **skin fold thickness**.\n\n*The 11.5 cm figure is printed without its use. Not in course material: MUAC below 11.5 cm at 6–59 months defines severe acute malnutrition and is the standard community screening cut-off.*\n\n### Investigations\n- **Complete blood count + red cell indices.**\n- **Urine:** **urinalysis (pus cells) + culture**.\n- **Stool:** analysis for **ova and parasites**.\n- **Chest radiography.**\n- **Serum albumin** — **in kwashiorkor**.\n- **Specific vitamins and minerals.**\n- **Blood glucose.**\n\nSrc: L16 slides 28–30, incl. the image-only p.15",
+        "qs": []
+      },
+      {
+        "id": "nut-20",
+        "w": "must",
+        "h": "PEM — management, the therapeutic feeds, and the outcome",
+        "body": "### Mild PEM — at home\n- **Infections and parasites:** treat them.\n- **Calories:** **100 – 150 kcal/kg/day.**\n- **Proteins:** **2 – 3 g/kg/day.**\n- **Vitamins:** **A, D, folic acid.**\n- **Minerals:** **iron**, and others.\n\n### Severe PEM — the WHO ten steps\n**Steps 1–6 — stabilize the life-threatening complications:** **hypothermia** · **hypoglycaemia and heart failure** · **dehydration** · **electrolyte disturbance** · **infections** · **correct micronutrient and vitamin deficiency**.\n\n**7 — Cautious initial feeding:** **little, frequent, isotonic feeds**; **do not exceed metabolic capacity**; **oral or NGT route**; **parenteral nutrition ONLY as a last resort**.\n\n*Caution guards against refeeding syndrome — the hypophosphataemia, hypokalaemia and hypomagnesaemia of an insulin surge on depleted stores (not in course material).*\n\n**Subsequent feeding:** **high-energy diet + vitamins + minerals**, plus **stimulation and emotional support**.\n\n**Steps 8–10:** **catch-up growth** · **stimulation, play and emotional support** · **follow up after recovery**.\n\n### The three therapeutic products\n- **Starter feed (\"75\"):** **low lactose, low protein, no fibre**, **0.75 kcal per 1 ml**, for **severely malnourished children 6 – 59 months**; **use under medical supervision**.\n- **Catch-up feed (\"100\"):** the **high-protein** formulation, once the child is stabilised.\n- **RUTF:** **ready to use therapeutic food**, in sachets, for **severe acute malnutrition**.\n\n### Criteria of cure\n- **Mood:** **changes disappear in a few days**.\n- **Appetite:** the child **starts to eat with increasing appetite**.\n- **Diarrhoea stops.**\n- **Oedema:** **INCREASES then disappears — 10 days**.\n- **Skin lesions:** **rapid healing in 10 days**.\n- **Weight:** **initial loss, then gain**.\n- **Recovery:** **return to normal health in 3 months**.\n\n### Failure to respond\n- **Feeding problems:** **inappropriate preparation**, **inadequate amounts**.\n- **Undiagnosed conditions:** **otitis media, TB, UTI**; **congenital, chronic and metabolic disease**.\n- **Psychological:** **emotional deprivation**.\n\nSrc: L16 slides 26–27, 31–32, 36–38, incl. the image-only pp.33–35 recovered by render",
         "qs": []
       }
     ]

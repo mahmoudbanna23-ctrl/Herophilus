@@ -65,7 +65,9 @@ const MODULES = [
       ['malignant','Malignant Disease']]},
     {name:'Completed earlier', chapters:[
       ['growth-puberty','Growth and short stature'],['puberty','Puberty'],
-      ['nutrition','Nutrition, feeding and malnutrition'],
+      ['nutrition','Faltering growth and obesity'],
+      ['nutrition-feed','Infant feeding'],
+      ['nutrition-pem','Protein energy malnutrition'],
       ['nutrition-vit','Rickets and vitamin deficiencies'],['accidents','Accidents and poisoning']]},
     /* Split 2026-08-15 at the user's instruction. Paediatrics carries ~4x ENT's
        lecture load per chapter, so writing to lecture length gave 21-32 page
