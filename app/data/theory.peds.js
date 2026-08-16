@@ -4539,5 +4539,191 @@ var T_PEDS = {
         "qs": []
       }
     ]
+  },
+  "emergencies": {
+    "intro": "Two decks, one clock. Recognise failure before it becomes arrest, because arrest in a child is the end of a respiratory road, not a sudden cardiac event. Every number here is examinable: the ratio, the depth, the rate, the bolus, the percentages.",
+    "sections": [
+      {
+        "id": "emg-1",
+        "w": "must",
+        "h": "Why children arrest — the premise the whole chapter rests on",
+        "body": "- **\"Children are not small adults\":** the deck opens on this and everything that follows is a consequence of it.\n- **The key to management:** **early recognition and intervention to prevent respiratory or circulatory failure** — *\"once present they are difficult to reverse\".*\n\n### ⚠️ The commonest cause of paediatric arrest\n\nL3 p.3 is a whole slide reading *\"Most common cause of cardiopulmonary arrest in children is ……\"* and no later slide answers it.\n\n- **The answer — hypoxia, from respiratory failure or airway obstruction** *(not taken from the course material)*.\n- **Why it matters:** the child arrests at the end of a **slow respiratory decline** *(not taken from the course material)*.\n- **So the rhythm found is:** **bradycardia progressing to asystole or PEA**, not VF *(not taken from the course material)*.\n- **The adult contrast:** a primary **cardiac** event with **VF** as the presenting rhythm *(not taken from the course material)*.\n\n*This is why the paediatric sequence gives **5 rescue breaths first** and why the shockable arm of the algorithm is the uncommon one.*\n\nSrc: L3 pp.2–5",
+        "qs": []
+      },
+      {
+        "id": "emg-2",
+        "w": "must",
+        "h": "ABCDE — the assessment, and the two postures the diagram defines",
+        "body": "### A and B — airway and breathing\n\n**Look, listen and feel for:**\n\n- **Airway obstruction:** or respiratory distress.\n- **Work of breathing:** respiratory effort.\n- **Respiratory rate · stridor · wheeze.**\n- **Auscultation:** for air entry.\n- **Cyanosis · oxygen saturation.**\n\n### C — circulation\n\n**Feel and assess: heart rate · pulse volume · capillary refill time · blood pressure.**\n\n### D and E — disability and exposure\n\n- **Level of consciousness:** by **AVPU**.\n- **AVPU:** **A**lert · responds to **V**oice · responds to **P**ain · **U**nresponsive *(the deck prints the acronym alone; the expansion is not taken from the course material)*.\n- **Posture:** hypotonia, decorticate, decerebrate.\n- **Pupils:** size and reactivity. Then **exposure**.\n\n### ⚠️ Decorticate versus decerebrate\n\n|Posture|What the limbs do|\n|---|---|\n|**Decorticate**|**Rigid FLEXION of the arms**, extension of the legs|\n|**Decerebrate**|**Rigid EXTENSION and PRONATION** of arms and legs|\n\n*Decerebrate is the deeper lesion of the two and the worse sign (not taken from the course material).*\n\nSrc: L3 pp.6–9 (p.9 image-only, read visually)",
+        "qs": []
+      },
+      {
+        "id": "emg-3",
+        "w": "high",
+        "h": "Respiratory failure — one definition, two gases, four mechanisms",
+        "body": "- **Key element of respiration:** **gas exchange** — **ventilation** and **oxygenation**.\n- **Respiratory failure:** **failure of the lungs to maintain adequate gas exchange.**\n- **The two derangements:** **hypercarbia** and **hypoxia**.\n\n### The four mechanisms\n\n|Mechanism|Note|\n|---|---|\n|**Alveolar hypoventilation**|The ventilation half fails|\n|**Diffusion impairment**|Across the alveolar membrane|\n|**Intrapulmonary or cardiac shunting**|Blood bypasses ventilated lung|\n|**V/Q mismatch**|**Ventilation–perfusion mismatch**|\n\n- **The three causes named for V/Q mismatch:** **asthma · pneumonia · pulmonary embolism.**\n\n*Asthma, pneumonia and bronchiolitis in full are `respiratory`, `resp-pneumonia` and `resp-bronch`.*\n\nSrc: L3 pp.10–11",
+        "qs": []
+      },
+      {
+        "id": "emg-4",
+        "w": "high",
+        "h": "Oxygen, the bag and mask, and when to put a tube in",
+        "body": "### The oxygen and ventilation ladder\n\n- **Face mask · nasal cannula:** simple oxygen delivery.\n- **Non-invasive ventilation:** **ventilatory support WITHOUT endotracheal intubation.**\n- **High-flow nasal cannula therapy.**\n- **Intubation:** endotracheal intubation and mechanical ventilation.\n\n### ⚠️ Effective bag-mask ventilation\n\n- **Volume:** use **only** the force and tidal volume **needed to make the chest rise**.\n- **Avoid:** excessive volume or pressure.\n- **Cricoid pressure:** may **reduce gastric inflation**.\n- **Deflate the stomach** if gastric inflation interferes with ventilation.\n\n**Mask size — the picture rule:** the correct mask covers **mouth, nose and chin but NOT the eyes**. Too large covers the eyes and extends over the chin; too small does not cover nose and mouth well.\n\n### Two-rescuer bag-mask ventilation\n\n- **Rescuer one:** **both hands** to open the airway and hold a tight **mask-to-face seal**.\n- **Rescuer two:** compresses the bag, and may apply **cricoid pressure** if appropriate.\n- **Both:** verify adequate chest expansion.\n\n**⚠️ As effective as a tube:** bag and mask ventilation is **as effective as endotracheal intubation** — stated on **two separate slides**, pp.18 and 34.\n\n### ⚠️ When to intubate\n\nL3 p.35 asks *\"When to intubate ????????\"* over a photograph and gives no criteria. Supplied *(not taken from the course material)*:\n\n- **Failure to oxygenate or ventilate:** despite adequate bag-mask support.\n- **Unprotected airway:** GCS ≤ 8, or an absent gag reflex.\n- **Obstruction, actual or threatened:** burns, angio-oedema.\n- **Logistics:** prolonged transfer, or the need for deep sedation.\n\nSrc: L3 pp.12–18, 34–35; p.14 image-only, read visually",
+        "qs": []
+      },
+      {
+        "id": "emg-5",
+        "w": "must",
+        "h": "Recognising arrest — the triad, and where to feel for a pulse",
+        "body": "### The diagnosis of cardiopulmonary arrest\n\nBased on **three findings**, all three of them clinical:\n\n|#|Finding|\n|---|---|\n|**1**|**Absence of a palpable pulse in a MAJOR artery**|\n|**2**|**Unconsciousness**|\n|**3**|**Apnoea**|\n\n### ⚠️ Where and how long\n\n|Age|Pulse checked at|\n|---|---|\n|**Over 1 year**|**Carotid** or **femoral**|\n|**Under 1 year**|**Brachial** or **femoral**|\n\n- **Time limit:** **maximum 10 seconds** for the pulse — and 10 for breathing.\n- **⚠️ The threshold that starts compressions:** no signs of life, **unless there is a definite pulse over 60/min**.\n\n*A bradycardia under 60/min with poor perfusion is treated as arrest in a child. That single number is the paediatric departure from adult practice.*\n\nSrc: L3 pp.20–21, 24 (pp.21, 24 image-only, read visually)",
+        "qs": []
+      },
+      {
+        "id": "emg-6",
+        "w": "must",
+        "h": "Basic life support — the algorithm, and the airway by age",
+        "body": "### The opening moves\n\n- **SAFE approach:** approach with care, free from danger.\n- **Get help early if:** there is **more than one rescuer**, or the collapse was **witnessed and sudden** — defibrillation may be needed.\n- **Check responsiveness:** ask *\"Are you all right?\"*, stimulate gently. **Do NOT shake infants**, or anyone with suspected cervical spine injury.\n- **Shout for help.**\n- **Open the airway:** **head tilt, chin lift** — **jaw thrust if unsuccessful**.\n- **Check breathing for max 10 s:** look, listen, feel; no or abnormal breathing counts as none.\n- **Breathe:** remove any obvious obstruction, then **give 5 initial rescue breaths**.\n\n### ⚠️ The airway position differs by age\n\n|Age|Head position|Mouth seal if no bag-mask|\n|---|---|---|\n|**Infant**|**NEUTRAL** — avoid overextension|Your mouth over **the nose AND mouth**|\n|**Child**|**\"Sniffing\" position**|**Pinch the nose**, mouth to mouth|\n\n- **Each breath:** **blow for 1 second**; the chest should rise with each breath.\n- **Jaw thrust:** two fingers of each hand behind each side of the mandible, push the jaw forward.\n- **Infant airway:** remove secretions or a foreign body **under direct vision** only.\n\n### ⚠️ If you are alone\n\n- **One minute first:** give **1 minute of resuscitation BEFORE seeking help**.\n- **Carry if you can:** CPR may be continued while carrying an infant or small child to summon help.\n\nSrc: L3 pp.21–24, Figure 6.5 (Resuscitation Council UK, 2015) — image-only, read visually",
+        "flow": {
+          "title": "Paediatric basic life support",
+          "steps": [
+            {
+              "k": "step",
+              "t": "SAFE approach — free from danger",
+              "n": "Get help if >1 rescuer, or witnessed sudden collapse"
+            },
+            {
+              "k": "decision",
+              "t": "Responsive?",
+              "yes": "Reassess, treat the cause",
+              "no": "Shout for help"
+            },
+            {
+              "k": "step",
+              "t": "Open the airway",
+              "n": "Head tilt + chin lift; jaw thrust if unsuccessful"
+            },
+            {
+              "k": "decision",
+              "t": "Breathing normally? (check max 10 s)",
+              "yes": "Recovery position, reassess",
+              "no": "Give 5 initial rescue breaths"
+            },
+            {
+              "k": "alert",
+              "t": "FIVE initial rescue breaths",
+              "n": "Blow for 1 s each; chest should rise"
+            },
+            {
+              "k": "step",
+              "t": "Assess signs of life — movement, coughing, normal breathing",
+              "n": "Check pulse max 10 s: >1 yr carotid/femoral, <1 yr brachial/femoral"
+            },
+            {
+              "k": "decision",
+              "t": "Definite pulse over 60/min?",
+              "yes": "Continue rescue breathing, reassess",
+              "no": "Start chest compressions"
+            },
+            {
+              "k": "alert",
+              "t": "Chest compressions 15:2 at 100–120/min",
+              "n": "Push hard and fast; if alone, 1 min CPR before seeking help"
+            }
+          ]
+        },
+        "qs": []
+      },
+      {
+        "id": "emg-7",
+        "w": "must",
+        "h": "Compressions — the rate, the depth, the position and the ratio",
+        "body": "### The four keys to effective cardiac output\n\n**The four keys:** push hard · push fast · release completely · do not interrupt compressions unnecessarily.\n\n### ⚠️ The numbers\n\n|What|Value|\n|---|---|\n|**Rate**|**100–120 compressions/min** (pp.24, 33) — **but p.36's table prints a flat 100/min**|\n|**Depth**|**At least ONE-THIRD of the depth of the chest**|\n|**Depth, infant**|**4 cm**|\n|**Depth, child**|**5 cm**|\n|**Continuous?**|Continuously, **once intubated**|\n\n### ⚠️ The compression:ventilation ratio — every figure the decks give\n\n|Rescuers / setting|Ratio|Printed on|\n|---|---|---|\n|**One rescuer**|**30 : 2**|L3 p.30; p.36 *\"if one rescuer only\"*|\n|**Two rescuers**|**15 : 2**|L3 p.30, p.36|\n|**Both algorithm figures**|**15 : 2**, no qualifier|L3 pp.24, 33|\n|**Newborn at delivery**|**3 : 1**|*Cross-reference — `perinatal`, per-2. L3 contains \"newborn\" zero times*|\n\n*p.30 and the figures look contradictory and are not: p.36's table reconciles them — the figures print the two-rescuer healthcare-provider ratio, and 30:2 applies when one rescuer is working alone.*\n\n### Hand position by age\n\n|Age|Technique|\n|---|---|\n|**Infant, two rescuers**|**Two THUMBS** on the lower half of the sternum, hands encircling the thorax|\n|**Infant, alone**|Compress the sternum with the **tips of two fingers**|\n|**Small child**|**Heel of ONE hand** over the lower half of the sternum|\n|**Large child**|**BOTH hands** over the lower half of the sternum|\n\n### Why the ratio matters physiologically\n\n- **Two mechanisms of flow:** the **cardiac pump** and the **thoracic pump**.\n- **Coronary perfusion pressure:** **aortic diastolic − right atrial diastolic** pressure.\n- **⚠️ CPP rises with SEQUENTIAL compressions** — it is measurably higher at **15:2 than at 5:1**, because every pause resets it.\n\nSrc: L3 pp.24, 26–32, 33, 36; pp.24, 33, 36 image-only, read visually",
+        "qs": []
+      },
+      {
+        "id": "emg-8",
+        "w": "must",
+        "h": "Advanced life support — the algorithm, the tube, and the shockable fork",
+        "body": "### Airway and breathing\n\n- **Breathing:** **5 initial rescue breaths**, positive pressure ventilation, **preferably bag and mask**.\n- **Advanced airway:** only **if required and a skilled operator is present** — intubate and ventilate, or **laryngeal mask**.\n- **Give high concentration oxygen.**\n\n### ⚠️ Endotracheal tube size by age in whole years\n\n|Measurement|Formula|\n|---|---|\n|**Internal diameter (mm)**|**(age / 4) + 4**|\n|**Length, ORAL tube (cm)**|**(age / 2) + 12**|\n|**Length, NASAL tube (cm)**|**(age / 2) + 15**|\n\n### ⚠️ Intraosseous access — the landmark\n\n- **Needle:** **18-gauge trochar with needle.**\n- **Site:** the **anterior surface of the tibia, 2–3 cm BELOW the tibial tuberosity**.\n- **When:** establish IV access; **if there is delay, use the intraosseous route**.\n\n### ⚠️ Ventilation rate in arrest — the decks disagree\n\n|Source|Rate once intubated|\n|---|---|\n|**L3 p.33** (the ALS figure)|**10–12 / min**|\n|**L3 p.36** (the table)|**8 to 10 / min**|\n\n- **Do NOT pause compressions during ventilation** once intubated, and **confirm tube position**.\n- **Why the rate is low:** in arrest **a lower-than-normal minute ventilation may be appropriate**.\n- **The reason:** cardiac output — and therefore CO2 delivery to the lungs — is low.\n\n### The rhythm fork\n\n|Arm|Rhythms|\n|---|---|\n|**SHOCKABLE**|**Ventricular fibrillation (VF)** · **pulseless ventricular tachycardia (VT)**|\n|**NON-shockable**|**Pulseless electrical activity (PEA)** · **asystole**|\n\n**The loop:** attach the defibrillator/monitor, **minimise interruption**, then **assess rhythm**. It runs back to that diamond after every cycle and exits only on **return of spontaneous circulation**.\n\nSrc: L3 pp.33, 36–37 — image-only, read visually",
+        "qs": []
+      },
+      {
+        "id": "emg-9",
+        "w": "must",
+        "h": "The drugs and the joules — what the deck cannot tell you, and why",
+        "body": "**⚠️ The source is truncated:** and visibly so. L3 p.33 is a **screenshot of a scrolled PDF page**, and the window cut off everything below the shockable/non-shockable row.\n\nSweeping both decks returns **zero hits** for adrenaline, epinephrine, atropine, amiodarone, joule, J/kg, mcg and microgram.\n\n### ⚠️ Everything below is supplied, and every line of it is tagged\n\n|Drug or shock|Dose|Route|Repeat|\n|---|---|---|---|\n|**Adrenaline**|**10 micrograms/kg** = **0.1 mL/kg of 1:10,000**|**IV or IO**|**Every 3–5 min**, i.e. alternate cycles|\n|**First shock**|**4 J/kg**|Defibrillator, VF/pVT only|—|\n|**Subsequent shocks**|**4 J/kg**|Same|After each 2-min cycle|\n|**Amiodarone**|**5 mg/kg**|IV/IO bolus|After the **3rd** and **5th** shocks|\n\n*Every row of that table is (not taken from the course material).*\n\n**⚠️ Two guidelines disagree on the first shock:** learn the UK set.\n\n- **APLS / Resuscitation Council UK — 4 J/kg for EVERY shock.** This is the one to know: the\n  lecturer’s own screenshot is of *Illustrated Textbook of Paediatrics*, a UK book.\n- **AHA PALS — 2 J/kg for the FIRST shock**, then 4 J/kg, escalating to a 10 J/kg ceiling.\n- **If a question offers 2 J/kg as the first shock**, it was written from AHA\n  *(not taken from the course material)*.\n\n### Which arm gets what\n\n- **Shockable (VF/pVT):** **shock first**, then CPR; adrenaline after the **third** shock, then alternate cycles *(not taken from the course material)*.\n- **Non-shockable (PEA/asystole):** **adrenaline IMMEDIATELY**, then every 3–5 min.\n- **⚠️ Never shock asystole or PEA:** defibrillating them does nothing *(not taken from the course material)*.\n\n### ⚠️ Arrest adrenaline versus anaphylaxis adrenaline\n\n**Same dose, different route:** **10 micrograms/kg either way** — arrest is **IV/IO 1:10,000**, anaphylaxis is **IM 1:1,000** into the mid-anterolateral thigh.\n\n*The anaphylaxis dose in full, with its maxima, is `allergy`, alg-14 — it is not repeated here.*\n\nSrc: L3 p.33 (truncated at source — see the chapter header); the doses are supplied and tagged",
+        "qs": []
+      },
+      {
+        "id": "emg-10",
+        "w": "high",
+        "h": "The reversible causes, and what you monitor",
+        "body": "### ⚠️ 4 H and 4 T\n\n|The four Hs|The four Ts|\n|---|---|\n|**Hypoxia**|**Tension pneumothorax**|\n|**Hypovolaemia**|**Thrombosis** — coronary or pulmonary|\n|**Hypokalaemia / hyperkalaemia, metabolic**|**Tamponade** — cardiac|\n|**Hypothermia**|**Toxic / therapeutic disturbances**|\n\n*Hypoxia and hypovolaemia head the list because they are the two the paediatric arrest usually came from.*\n\n### In-hospital versus out-of-hospital arrest\n\nThe difference the deck draws is **monitoring** — four things available inside and not outside:\n\n- **ECG** — the rhythm, and therefore which arm of the algorithm you are on.\n- **ETCO2** — end-tidal CO2.\n- **Pulse oximeter.**\n- **Laboratory** investigations.\n\nSrc: L3 pp.38–39",
+        "qs": []
+      },
+      {
+        "id": "emg-11",
+        "w": "must",
+        "h": "Shock — the definition, the three failures, and the four types",
+        "body": "- **Shock:** present when **the circulation is inadequate to meet the metabolic demands of the tissues**.\n\n### The three mechanisms of haemodynamic decompensation\n\n**The three:** abnormal vascular tone · hypovolaemia · myocardial dysfunction. Every type below is one or more of them.\n\n### The four types\n\n|Type|Examples the deck gives|The failing mechanism|\n|---|---|---|\n|**Hypovolaemic**|Dehydration, haemorrhage, burns|**Volume**|\n|**Distributive**|**Sepsis · anaphylaxis**|**Vascular tone**|\n|**Cardiogenic**|**Arrhythmias · heart failure**|**Myocardial dysfunction**|\n|**Neurogenic**|**Spinal cord injury**|**Vascular tone**, sympathetic loss|\n\n### ⚠️ Telling them apart at the bedside\n\n|Type|The discriminating sign *(not taken from the course material)*|\n|---|---|\n|**Hypovolaemic**|**Cold** peripheries, **narrow** pulse pressure, a history of losses|\n|**Distributive, warm**|**WARM** peripheries, **bounding** pulses, **wide** pulse pressure|\n|**Cardiogenic**|**Hepatomegaly, raised JVP, gallop** — the child is **fluid-overloaded**, not empty|\n|**Neurogenic**|**Hypotension WITHOUT tachycardia** — the only type that fails to mount one|\n\n*Hypovolaemic shock is the commonest in children and is what the rest of this chapter treats. Septic shock recognition in full is `infection`; anaphylaxis is `allergy`.*\n\nSrc: L4 pp.3–5",
+        "qs": []
+      },
+      {
+        "id": "emg-12",
+        "w": "must",
+        "h": "Compensated versus decompensated — the single most examinable point",
+        "body": "**⚠️ Early sign:** **TACHYCARDIA**. **⚠️ Late sign:** **LOW BLOOD PRESSURE**. The deck prints this twice, on pp.8 and 23, captioning the second *\"Don't forget\"*.\n\n**Why it matters:** compensated shock is **REVERSIBLE**; decompensated shock **may be IRREVERSIBLE**.\n\n### The two columns\n\n|Early (COMPENSATED)|Late (DECOMPENSATED)|\n|---|---|\n|**Tachycardia**|**Bradycardia**|\n|**Tachypnoea**|**Acidotic (Kussmaul) breathing**|\n|Decreased skin turgor|**Confusion / depressed cerebral state**|\n|Sunken eyes and fontanelle|**Blue peripheries**|\n|**Delayed capillary refill (> 2 s)**|**Absent** urine output|\n|Mottled, pale, cold skin|**HYPOTENSION**|\n|**Core–peripheral temperature gap (> 4 °C)**|—|\n|**Decreased** urinary output|—|\n\n### ⚠️ Why blood pressure is the trap\n\nA child **maintains blood pressure until late** by raising heart rate and clamping peripheral vessels. **A normal blood pressure does NOT exclude shock**, and by the time it falls the child has already decompensated.\n\n**Hypotension in a child over 1 year:** systolic below **70 + (2 × age in years)** mmHg *(not taken from the course material)*.\n\n### ⚠️ Age-banded vital signs\n\nNeither deck prints a single age band. Supplied *(not taken from the course material)*:\n\n|Age|Heart rate /min|Respiratory rate /min|Systolic BP mmHg|\n|---|---|---|---|\n|**< 1 year**|110–160|30–40|70–90|\n|**1–2 years**|100–150|25–35|80–95|\n|**2–5 years**|95–140|25–30|80–100|\n|**5–12 years**|80–120|20–25|90–110|\n|**> 12 years**|60–100|15–20|100–120|\n\nSrc: L4 pp.6–8, 23; the thresholds and bands are supplied and tagged",
+        "qs": []
+      },
+      {
+        "id": "emg-13",
+        "w": "must",
+        "h": "Dehydration — the causes, and the three degrees by body weight",
+        "body": "**The whole point:** prevention of shock from dehydration relies on **early recognition and treatment**.\n\n### The seven causes\n\n**Seven:** gastroenteritis · burns · sepsis · diabetic ketoacidosis · diabetes insipidus · nephrotic syndrome · poor fluid intake.\n\n### ⚠️ The three degrees — learn these percentages\n\n|Degree|Loss of body weight|\n|---|---|\n|**No clinically detectable dehydration**|usually **< 5 %**|\n|**Clinical dehydration**|**5 % – 9 %**|\n|**SHOCK**|**≥ 10 %**|\n\n### ⚠️ How dehydration is actually measured\n\n- **The most accurate measure:** the **degree of WEIGHT LOSS during the period of illness** — not any clinical sign.\n- **The conversion:** **1 kg of body weight lost = 1 litre of fluid lost**.\n- **The % deficit:** that loss expressed as a proportion of body weight.\n\n*Gastroenteritis and its ORS management in full are `gi-diarrhoea`; DKA fluids are `endo-dka`.*\n\nSrc: L4 pp.9–11, 13, 17; the 1 kg = 1 litre premise from p.18's embedded original, read visually",
+        "qs": []
+      },
+      {
+        "id": "emg-14",
+        "w": "must",
+        "h": "The dehydration grid — thirteen signs across three columns",
+        "body": "**Table 6.3:** the chapter's main discrimination table. It is an image on the slide and appears nowhere in the cached text.\n\n|Sign|No clinical dehydration|Clinical dehydration|SHOCK|\n|---|---|---|---|\n|**General appearance**|Appears well|Appears unwell or deteriorating 🚩|Appears unwell|\n|**Conscious level**|Alert and responsive|Altered responsiveness — irritable, lethargic 🚩|**Decreased level of consciousness**|\n|**Urine output**|Normal|Decreased|Decreased|\n|**Skin colour**|Normal|Normal|**Pale or mottled**|\n|**Extremities**|Warm|Warm|**COLD**|\n|**Eyes**|Normal|Sunken 🚩|**Grossly sunken**|\n|**Mucous membranes**|Moist|Dry|Dry|\n|**Heart rate**|Normal|Tachycardia 🚩|Tachycardia|\n|**Breathing**|Normal|Tachypnoea 🚩|Tachypnoea|\n|**Peripheral pulses**|Normal|Normal|**WEAK**|\n|**Capillary refill time**|Normal|Normal|**Prolonged (> 2 s)**|\n|**Skin turgor**|Normal|Reduced 🚩|Reduced|\n|**Blood pressure**|Normal|**Normal**|**Hypotension — indicates DECOMPENSATED shock**|\n\n- **🚩 marks a red-flag sign** — it identifies a child **at risk of progressing to shock**.\n- **Severity:** the more numerous and more pronounced the signs, the greater it is.\n- **⚠️ Read the last row across:** BP is **normal in clinical dehydration**, falling only in the shock column.\n- **⚠️ And the extremities row:** **warm** in both non-shock columns, **cold** only in shock.\n\nSrc: L4 p.12, Table 6.3 (adapted from NICE, London 2009) — image-only, read visually",
+        "qs": []
+      },
+      {
+        "id": "emg-15",
+        "w": "must",
+        "h": "Fluid resuscitation — the bolus, and the number that calls for a ventilator",
+        "body": "### ⚠️ The bolus\n\n|What|Figure|\n|---|---|\n|**Fluid**|**Balanced crystalloids** — or **blood**|\n|**Volume**|**10 mL/kg**|\n|**Repeat**|**× 4 if necessary** — so **up to 40 mL/kg**|\n|**Then**|**Intensive care**|\n\n**⚠️ Past 40 mL/kg:** children who require **more than 40 mL/kg** of resuscitation fluid are **likely to require mechanical ventilation** — call someone with advanced airway skills if multiple boluses are needed.\n\n*The widely taught alternative bolus is 20 mL/kg (not taken from the course material); L4 teaches 10 mL/kg, from the 6th edition of its source textbook, and 10 is what this chapter records. `endo-dka` independently gives 10 mL/kg over 30–60 minutes.*\n\n### The four phases of fluid management\n\n**The order:** fluid resuscitation → fluid deficit replacement → maintenance fluid → ongoing losses. Only the first is an emergency.\n\nSrc: L4 pp.14–16, Figure 6.8 — p.15 image-only, read visually",
+        "flow": {
+          "title": "Initial fluid resuscitation in shock",
+          "steps": [
+            {
+              "k": "alert",
+              "t": "Balanced crystalloids or blood, 10 mL/kg",
+              "n": "Repeat ×4 if necessary"
+            },
+            {
+              "k": "decision",
+              "t": "Improvement?",
+              "yes": "Correction of hypovolaemia",
+              "no": "Repeat the bolus — up to 4 in total"
+            },
+            {
+              "k": "alert",
+              "t": "Still no improvement after 40 mL/kg — intensive care",
+              "n": "Mechanical ventilation likely; call advanced airway skills"
+            }
+          ]
+        },
+        "qs": []
+      },
+      {
+        "id": "emg-16",
+        "w": "high",
+        "h": "Deficit, maintenance and ongoing losses — the arithmetic",
+        "body": "### Deficit replacement\n\nAssessed **after resuscitation**, by **either**:\n\n- **Clinical features:** **clinical dehydration = 5 % deficit** · **shock = 10 % deficit**.\n- **Change in weight:** where an accurate **premorbid** weight is available.\n- **⚠️ Deduct the boluses:** fluid given during resuscitation comes **off** the deficit.\n\n### ⚠️ Maintenance — the 24-hour formula\n\n|Body weight|Fluid|\n|---|---|\n|**First 10 kg**|**100 mL/kg**|A|\n|**Second 10 kg**|**50 mL/kg**|B|\n|**Every 1 kg thereafter**|**20 mL/kg**|C|\n|**Total in 24 hours**|**A + B + C**||\n\n**The fluid itself:** **0.9 % NaCl with 5 % dextrose**, and consider **20 mmol KCl per 500-mL bag** according to serum levels.\n\n### ⚠️ Two adjustments, both examinable\n\n- **Risk of SIADH — for example pneumonia:** give **two thirds of standard maintenance**.\n- **Hypernatraemic dehydration or DKA:** **increase the replacement time to 48 hours**, to avoid rapid changes in osmolarity.\n\n### Enteral or intravenous?\n\n- **Oral intake counts:** maintenance fluids are reduced to take account of it.\n- **The absorption trade-off:** IV gives **100 % absorption in 30–60 minutes**; oral gives **50–70 % over several hours**.\n\nSrc: L4 pp.17–22; the maintenance table (p.18) and the absorption figures (p.21) image-only, read visually",
+        "qs": []
+      }
+    ]
   }
 };
