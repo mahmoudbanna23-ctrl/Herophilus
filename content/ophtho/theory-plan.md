@@ -112,6 +112,41 @@ rendered as rasters** — the richest pages in the module, invisible to every te
 sample page before believing any density number in the table above. The three probes cost four
 renders and overturned the budget for five chapters.
 
+### Calibration read — `L9) lacrimal system.`, all 33 pages, 2026-08-16
+
+Read end to end as nine four-up contact sheets at 110 dpi, to convert the 726-page estimate from a
+guess about *cost* into a measurement of *value*. It found a **fourth deck pattern**, and the most
+valuable one:
+
+**A labelled-diagram deck.** Not rasterised prose, not an atlas — diagrams whose teaching lives in
+their labels and their result tables. From two sheets alone:
+
+- **p.3** — the tear film's three layers **with thicknesses**: lipid 0.1 µm, water 8 µm, mucin 0.2 µm.
+- **p.4** — the accessory glands labelled by eponym: **Krause** (circled by the lecturer), Wolfring,
+  Manz, Zeis, Moll, Meibomian, against superior/inferior fornix and bulbar/tarsal conjunctiva.
+- **p.18** — **Jones I**, three outcomes mapped to three diagnoses: positive recovery in the nose =
+  patent system · negative = lower duct obstruction *or* atony of the sac · negative = upper
+  canalicular stenosis.
+- **p.19** — **Jones II**, the same again for lacrimal duct obstruction, atony of the sac, common
+  canalicular obstruction and canalicular stenosis.
+- **p.20** — prose on contrast dacryocystography that did not extract either.
+
+**Numbers, eponyms and a result-to-diagnosis table are exactly what MCQs are built from**, and
+`pdftotext` returned **33 words for the whole deck — one per page.** `op-lac` was sitting on the
+600-word floor with all of this invisible behind it.
+
+**So the four patterns, and what each is worth:**
+
+| Pattern | Example | Extractable | Worth reading? |
+|---|---|---|---|
+| Rasterised prose slides | `L24`, `L13,14` | ~0 | **yes — richest** |
+| Labelled diagram deck | `L9` | ~0 | **yes — eponyms, numbers, tables** |
+| Photo atlas | `L27,28` (part) | ~0 | triage first |
+| Text sufficient | `L37`, `L15,16` | full | no render needed |
+
+**Three of the four are worth the render.** That is the opposite of the paediatrics finding, where
+most blank pages were uncaptioned radiographs and triage discarded ~90 % of them.
+
 ---
 
 ## Triage works on some decks and not others — test before trusting it
