@@ -271,5 +271,368 @@ var T_OPHTHO = {
         "qs": []
       }
     ]
+  },
+  "op-glauc": {
+    "intro": "Five questions, and three are bare recall about the pressure itself — the range, what a finger can tell you, which way the Schiötz scale runs. The other two are one story: the crowded hyperopic eye, and the drop that must never be instilled into it.",
+    "sections": [
+      {
+        "id": "glc-1",
+        "w": "must",
+        "h": "Definition — the triad, and the two exceptions that break it",
+        "body": "**The triad both decks open on:** elevated **intraocular pressure (IOP)** · **optic nerve affection (cupping)** · **visual field defects**.\n\n**The definition that supersedes it:** glaucoma is **a specific type of optic neuropathy in which IOP is a significant risk factor**.\n\n### The lecturer’s own gloss\n- **Optic neuropathy —** optic nerve disease.\n- **Specific type —** with special characteristics.\n- **Risk factor, not definition —** pressure is what you treat, not what names the disease.\n\n### The two exceptions\n\n|Entity|Optic nerve|IOP|\n|---|---|---|\n|**Normal tension glaucoma**|**neuropathy present**|**normal**|\n|**Ocular hypertension**|**normal**|**elevated**|\n\n*So glaucoma is diagnosed on pressure, disc and field together — never on the pressure alone.*\n\nSrc: L11 lines 47–71; L12 lines 13–23",
+        "qs": []
+      },
+      {
+        "id": "glc-2",
+        "w": "must",
+        "h": "Classification — two axes, and the open-versus-closed spine",
+        "body": "### Every glaucoma has a value on each axis\n- **Aetiological —** congenital / developmental · acquired: **primary** (no obvious cause) or **secondary** (a cause is seen).\n- **Gonioscopic —** **open** angle · **narrow / closed** angle.\n\n**Gonioscopy —** visualization of the angle of the anterior chamber.\n\n- **Open angle:** the **trabecular meshwork** is **visibly exposed** to the aqueous humour.\n- **Closed angle:** the meshwork is **not visibly exposed**.\n\n### Open versus closed — the chapter’s spine\n\n|Axis|**Primary OPEN angle**|**Acute ANGLE CLOSURE**|\n|---|---|---|\n|**Gonioscopy**|meshwork **exposed**|meshwork **not exposed**|\n|**Block**|**inside** the meshwork|**iris over** the meshwork|\n|**Onset**|years, insidious|**hours**|\n|**Symptoms**|**usually none**|pain ++++, haloes, vomiting|\n|**Eye**|white, quiet|red, ciliary injection|\n|**Cornea / pupil**|clear / normal|**oedematous / mid-dilated oval fixed**|\n|**Chamber**|normal depth|**shallow**, iris bombé|\n|**Refraction at risk**|**myopia**|**hyperopia**|\n|**Definitive surgery**|**trabeculectomy**|**iridotomy**|\n\nSrc: L11 lines 72–95; L12 lines 24–55",
+        "qs": []
+      },
+      {
+        "id": "glc-3",
+        "w": "high",
+        "h": "Aqueous humour — made, circulated, drained",
+        "body": "**IOP elevation is a mismatch —** between aqueous humour **production** and aqueous humour **drainage**.\n\n### The route, in the deck’s three steps\n- **Production:** the **ciliary processes**, around the **lens equator**.\n- **Circulation:** posterior chamber → **pupil** → anterior chamber → **angle** of the anterior chamber.\n- **Drainage:** **trabecular meshwork** → **Schlemm’s canal** → **collector channels** → systemic circulation.\n\n- **Every drug follows from it —** each either cuts production or improves drainage. There is no third option.\n\n*`L1,2) Ocular Anatomy` splits outflow **trabecular (conventional) 90 %** / **uveoscleral (unconventional) 10 %** — `op-intro`’s deck, cited only.*\n\nSrc: L11 lines 96–108; L12 lines 88–102; L1,2 (cited only)",
+        "qs": []
+      },
+      {
+        "id": "glc-4",
+        "w": "must",
+        "h": "Measuring the pressure — the number, the finger, the two tonometers",
+        "body": "**Normal range: 10–21 mmHg, mean 16 mmHg.** Lecturer-flagged HIGH YIELD.\n\n### The two families of method\n- **Digitally —** a **rough estimation**, and a **comparison between both eyes**.\n- **Tonometry —** **applanation** or **indentation**.\n\n### Digital palpation — the technique\n- **Position:** the patient **looks down**.\n- **Hands:** both index fingers on the upper lid **above the level of the tarsus**; the other fingers rest on forehead and temple.\n- **Action:** press **alternately**, **testing the tension as in fluctuation**.\n\n- **Good for:** a **grossly** high or low pressure, and **asymmetry** between the eyes *(the restriction to gross departures is not taken from the course material)*.\n- **Cannot do:** give a number, or catch the 24–30 mmHg at which untreated POAG destroys a field.\n\n### The two tonometers\n- **Applanation —** **Goldmann**. **Flattens** a fixed corneal area and measures the force needed.\n- **Indentation —** **Schiötz**, spelled *Schiotz* on the slide. **Indents** the cornea with a **known weight**.\n\n### ⚠️ The Schiötz scale runs backwards\n- **The rule —** a **LOW** scale reading means a **HARD** eye and a **HIGH IOP**.\n- **Why:** a hard globe resists the plunger, so it sinks **less**. The dial reads depth, not pressure; a conversion table converts it.\n- **The trap:** reading the dial as mmHg inverts every answer *(the direction of the scale is not stated on the slide — not taken from the course material)*.\n\n*Full instrument comparison is in `op-pupil`.*\n\nSrc: L3,4 sl.36–40 (`op-pupil`’s deck — cited only, not counted; carried here because three questions turn on it)",
+        "qs": [
+          "opqb-t1-46",
+          "opqb-t1-47",
+          "opqb-t1-55"
+        ]
+      },
+      {
+        "id": "glc-5",
+        "w": "high",
+        "h": "Reading the number — what a pressure does and does not mean",
+        "body": "**21 is a statistical cut-off —** about two standard deviations above the population mean, **not a threshold at which damage begins** *(not taken from the course material)*.\n\n### Diurnal variation\n- **The number moves —** by roughly **3–5 mmHg**, highest in the **early morning** *(not taken from the course material)*.\n- **So one afternoon reading can miss the peak** — repeat across a day when the diagnosis is uncertain.\n- **It fits the deck:** L11 lists **early-morning headache** as a POAG symptom.\n\n### Central corneal thickness\n- **Applanation measures the cornea too:** a **thick** cornea **over-reads**, a **thin** cornea **under-reads** *(not taken from the course material)*.\n- **A thin cornea is itself a risk factor** for progression, so that patient is doubly under-estimated.\n\n### The other sources of error\n- **Applanation:** corneal oedema or scarring, high astigmatism, wrong fluorescein volume, lid squeezing, breath-holding.\n- **Indentation:** depends on **ocular rigidity**, so Schiötz **under-reads in high myopia** — the eye already at raised risk of POAG.\n\n*Both error lists are not taken from the course material.*\n\n### Gonioscopy\n**The only way to see the angle,** and what separates two diseases with identical pressures and identical discs.\n\n### Target pressure\n- **The definition —** the pressure at which **that** nerve stops deteriorating; set individually, lowered again if the field progresses *(not taken from the course material)*.\n- **The deck’s own aim:** preserve visual function **beyond the patient’s life expectancy**, affordably, with least side effects.\n\nSrc: L11 lines 180–187, 204–205; register row 2 from `op-pupil` (L3,4 sl.36–40)",
+        "qs": []
+      },
+      {
+        "id": "glc-6",
+        "w": "must",
+        "h": "Primary open angle glaucoma — pathology and who gets it",
+        "body": "**The pathology in one line:** **increased resistance** to drainage through **trabecular meshwork → Schlemm’s canal → collector channels**. The angle is open; the block is inside it.\n\n### The five predisposing factors\n\n|Factor|The deck’s statement|\n|---|---|\n|**Age**|older, **beyond the 5th decade**|\n|**Gender**|**more common in females**|\n|**Ethnicity**|**more common AND more severe in dark races**|\n|**Family history**|**10-fold increased risk** in **first-degree relatives**|\n|**Refractive state**|**more common in myopia**|\n\n*`L7,8) Refractive errors` independently lists \"high association with primary open angle glaucoma\" under the complications of myopia — cited only.*\n\nSrc: L11 lines 109–124; L7,8 lines 250–251 (cited only)",
+        "qs": []
+      },
+      {
+        "id": "glc-7",
+        "w": "must",
+        "h": "The glaucomatous disc — structural change",
+        "body": "**Neural rim thinning is the lesion.** Everything at the disc is rim tissue disappearing and the cup enlarging into the space.\n\n### Two patterns of thinning\n- **Focal —** a **polar notch**, **superior** or **inferior**.\n- **Circumferential —** **generalized** thinning of the neural rim.\n\n### What is seen\n- **Cup/disc ratio —** enlargement **beyond 0.3**, the deck’s threshold.\n- **Splinter haemorrhage** at the disc margin.\n- **Total cupping:** with **nasal shift of the blood vessels** — the end-stage disc.\n\n*The measurement itself — the normal C/D figure, the >0.2 inter-eye asymmetry rule and the temporal myopic crescent — is in `op-pupil`.*\n\nSrc: L11 lines 125–144",
+        "qs": []
+      },
+      {
+        "id": "glc-8",
+        "w": "must",
+        "h": "The glaucomatous field — functional change, and why it is silent",
+        "body": "**In the order the disease produces them:**\n\n|Defect|What it is|\n|---|---|\n|**Paracentral scotomata**|in **Bjerrum’s area** — the **10–20 degrees** of central field|\n|**Arcuate scotomata**|**superior** and **inferior**|\n|**Nasal step**|a step across the horizontal meridian, nasally|\n|**Ring scotoma**|a **double arcuate** scotoma|\n|**Constriction of the field**|closing to a **tubular field**|\n|**Temporal island of vision**|the last surviving fragment|\n\n### Visual acuity\n- **Central vision —** lost only in **END-STAGE** disease.\n- **That is the danger:** a patient reading 6/6 can already have lost most of the field, so screening is by disc and field, never by acuity.\n\nSrc: L11 lines 145–157",
+        "qs": []
+      },
+      {
+        "id": "glc-9",
+        "w": "must",
+        "h": "POAG — presentation, examination and the treatment ladder",
+        "body": "### Presentation\n- **Most commonly — asymptomatic.** The headline of the slide.\n- **Less commonly —** **headache**, characteristically **early morning**; **frequent change of reading glasses**.\n- **Advanced disease —** **peripheral visual field loss**, then diminution of vision.\n\n### Examination\n**Three things:** optic neuropathy · elevated IOP · **features of secondary glaucoma** — the third stops a secondary cause being treated as primary.\n\n**Referral:** a **potentially blinding disease**, so referral to an ophthalmologist **is a must**.\n\n### The protocol, in order\n\n|Step|What|\n|---|---|\n|**Medical — decrease production**|**beta-blockers · carbonic anhydrase inhibitors · alpha agonists**|\n|**Medical — increase drainage**|**prostaglandin analogues · miotics · alpha agonists**|\n|**Laser**|**laser trabeculoplasty** — argon, or selective|\n|**Surgery**|**trabeculectomy** — a **fistula between the anterior chamber and the subconjunctival space**|\n\n- **Alpha agonists sit in both medical rows —** the deck’s own placement; they cut production and improve outflow.\n\nSrc: L11 lines 180–217",
+        "qs": []
+      },
+      {
+        "id": "glc-10",
+        "w": "high",
+        "h": "Secondary OPEN angle glaucoma — four causes, one common thread",
+        "body": "**A cause is seen** for the raised outflow resistance — but **the angle is still open on gonioscopy**. The block is inside the meshwork, not over it.\n\n|Cause|What clogs the meshwork|\n|---|---|\n|**Pseudoexfoliation syndrome**|**pseudoexfoliative material** — fibrillar **basement membrane** material — in the meshwork and **all through the anterior segment**|\n|**Pigment dispersion syndrome**|**pigment chaffed out of the iris**, deposited in the meshwork and throughout the anterior segment|\n|**Steroid induced**|**prolonged intake of potent steroids in a predisposed individual** → **decreased permeability** of the meshwork|\n|**Uveitic**|**inflammatory cells** plus **plasmoid (viscid) aqueous humour** → decreased permeability of the meshwork|\n\nSrc: L11 lines 158–173",
+        "qs": []
+      },
+      {
+        "id": "glc-11",
+        "w": "must",
+        "h": "Angle closure — the crowded eye, and what tips it over",
+        "body": "**Two questions, asked separately:** who has an angle capable of closing, and what closes it tonight.\n\n### At risk — crowded anterior segments\n- **Females.**\n- **Hyperopes —** a normal-sized lens in a short eye.\n- **Race —** **South-East Asians**.\n- **Advancing age.**\n- **An affected fellow eye.**\n\n### What raises the risk — the mid-dilated pupil\n- **A dark environment.**\n- **Systemic medications —** **anticholinergics**.\n\n### Why age crowds the angle\n- **The lens grows for life:** nothing is shed, so it thickens, pushes the iris forward and shallows the chamber, worst peripherally.\n- **`L7,8`, under hyperopia:** *\"Predisposition to narrow angle glaucoma due to shallow anterior chamber (especially later in life as the lens becomes thicker).\"*\n\n### Why MID-dilated beats fully dilated\n- **The peripheral iris is at its most bunched** into the angle while pupillary block is still substantial *(mechanism not taken from the course material)*.\n- **So attacks start in the evening —** a dark room, or an anticholinergic; never bright sun.\n\nSrc: L12 lines 109–127; L7,8 lines 339–347 (cited only)",
+        "qs": [
+          "opqb-t1-23"
+        ]
+      },
+      {
+        "id": "glc-12",
+        "w": "must",
+        "h": "The shallow chamber at the bedside — and the drop you must not give",
+        "body": "### The penlight test, in the examination deck’s own words\n- **Shine a light from the temporal side** of the head, across the front of the eye, **parallel to the plane of the iris**.\n- **Look at the nasal aspect of the iris.**\n- **Two-thirds or more in shadow —** the chamber is **probably shallow** and the **angle narrow**.\n\n**Why it works:** a forward-bowed iris casts its own shadow nasally; a deep chamber lets the beam wash across evenly.\n\n### Causes of a shallow chamber\n- **Shallow —** **hypermetropia · angle closure glaucoma** · intumescent cataract · perforated corneal ulcer · surgical wound leak.\n- **Deep —** high myopia · aphakia · **buphthalmos**.\n\n### ⚠️ Do not dilate an occludable angle\n- **A mydriatic drop —** does deliberately what a dark room does by accident *(the drop is not named on the slide, which gives anticholinergics and darkness — not taken from the course material)*.\n- **The test comes before the drop.** It takes five seconds and instils nothing.\n- **Everything else stays safe:** chamber-depth assessment, **undilated** fundus examination, confrontation fields.\n\n### What to do instead\n**Gonioscopy, then laser iridotomy —** it bypasses pupillary block, and dilation is safe afterwards *(the post-iridotomy safety is not taken from the course material)*.\n\nSrc: L3,4 sl.24–26 (`op-va`’s deck — cited only, not counted); L12 lines 109–127, 233–243",
+        "qs": [
+          "opqb-t1-33"
+        ]
+      },
+      {
+        "id": "glc-13",
+        "w": "high",
+        "h": "The angle-closure continuum — one disease, four stages",
+        "body": "**The continuum:** intermittent angle closure → **acute** angle closure (crisis) → **chronic** narrow angle glaucoma → **absolute** glaucoma.\n\n|Stage|Mechanism|Picture|\n|---|---|---|\n|**Intermittent (subacute)**|**short episodes** that **resolve spontaneously**|**minimal or no blurring** · **coloured haloes around light** · **eye pain, brow ache or headache**|\n|**Acute (crisis)**|the angle shuts and stays shut|the emergency|\n|**Chronic narrow angle**|**repeated** attacks → **chronic closure** of the angle|**similar to POAG** — raised IOP, progressive cupping, field changes|\n|**Absolute**|end stage|**blind painful eye**|\n\n### What aborts a subacute attack\n- **Bright illumination** and **sleep** — the deck names both.\n- **Why:** each constricts the pupil, pulling the peripheral iris out of the angle *(mechanism not taken from the course material)*.\n\n### Two treatment lines\n- **Intermittent —** **iridotomy**, laser or surgical. Treat here and the crisis never happens.\n- **Chronic —** the **same protocol as open angle glaucoma**.\n\n**Coloured haloes:** corneal epithelial oedema from an abrupt rise in IOP, so a **danger signal for acute glaucoma** — `L37) Red Eye`, a book chapter rather than a lecture.\n\nSrc: L12 lines 128–164, 244–277; L37 lines 355–360 (cited only)",
+        "qs": []
+      },
+      {
+        "id": "glc-14",
+        "w": "must",
+        "h": "Acute angle-closure glaucoma — the ocular emergency",
+        "body": "### Symptoms\n- **Pain — ++++.** The deck grades it that way.\n- **Coloured haloes around light.**\n- **Vision —** **rapid** diminution, **over several hours**.\n- **Redness.**\n- **Nausea and vomiting —** ⚠️ **DDx: acute abdomen.**\n\n### Signs\n- **Diminution of vision.**\n- **IOP ++++ —** a **stony hard** globe.\n- **Corneal oedema —** so **fundus examination and gonioscopy are usually not possible**.\n- **Ciliary injection.**\n- **Pupil —** **mid-dilated, vertically oval, non-reactive**.\n- **Shallow anterior chamber / iris bombé** — forward bowing.\n- **Eyelid oedema.**\n\n### Medical treatment — hospitalise\n- **Lower the pressure:** **systemic acetazolamide** · topical **beta-blockers**, **alpha agonists**, **CAIs**, **miotics (pilocarpine)**.\n- **Hyperosmotic agents:** **IV mannitol** · **oral hypertonic glycerol**.\n- **Topical steroids.**\n\n### Surgical treatment\n- **Iridotomy —** **laser is standard**; surgical otherwise.\n- **Filtering surgery —** **trabeculectomy**.\n\n*The fellow eye is itself listed as at risk, so it is treated prophylactically (not taken from the course material).*\n\nSrc: L12 lines 165–243",
+        "flow": {
+          "title": "How a mid-dilated pupil blinds an eye in hours",
+          "steps": [
+            {
+              "k": "step",
+              "t": "Mid-dilated position of the pupil",
+              "n": "dark room · systemic anticholinergic · a mydriatic drop"
+            },
+            {
+              "k": "step",
+              "t": "Relative pupil block — aqueous cannot pass the pupil"
+            },
+            {
+              "k": "step",
+              "t": "Accumulation of aqueous humour BEHIND the iris",
+              "n": "the posterior chamber pressurises"
+            },
+            {
+              "k": "step",
+              "t": "IRIS BOMBÉ — the peripheral iris bows forward"
+            },
+            {
+              "k": "step",
+              "t": "Narrowing of the angle → increased resistance to aqueous outflow"
+            },
+            {
+              "k": "alert",
+              "t": "OCULAR EMERGENCY — rapid severe rise of IOP",
+              "n": "stony hard globe · hazy cornea · fixed mid-dilated pupil · vomiting"
+            },
+            {
+              "k": "decision",
+              "t": "Is the cornea clear enough to laser?",
+              "yes": "Laser iridotomy — the standard, and prophylactically to the fellow eye",
+              "no": "Medical lowering first — acetazolamide, topical agents, mannitol — then iridotomy once the cornea clears; trabeculectomy if the pressure persists"
+            }
+          ]
+        },
+        "qs": []
+      },
+      {
+        "id": "glc-15",
+        "w": "know",
+        "h": "Secondary NARROW angle glaucoma — pulled forward or pushed forward",
+        "body": "**The definition:** a cause is seen for the gonioscopically narrow angle. Two mechanisms only — **anterior pulling** and **posterior pushing**.\n\n|Cause|Mechanism|How|\n|---|---|---|\n|**Neovascular glaucoma**|**anterior pulling**|a **neovascular membrane** over the meshwork **contracts**, pulling the peripheral iris over the trabeculum|\n|**Iridocorneal endothelial (ICE) syndrome**|**anterior pulling**|a membrane over trabeculum, iris and **posterior cornea** contracts and pulls the same way|\n|**Intraocular tumours**|**posterior pushing**|any **space-occupying lesion in the posterior segment**|\n|**Retinal vein occlusion**|**posterior pushing**|venous congestion → **forward rotation of the iris–lens diaphragm**|\n\n*Rubeosis iridis and the retinal ischaemia behind neovascular glaucoma are `L19.2) Retinal Vascular Disorders`, and belong to `op-ret`.*\n\nSrc: L12 lines 278–304",
+        "qs": []
+      },
+      {
+        "id": "glc-16",
+        "w": "must",
+        "h": "Congenital / developmental glaucoma — pathogenesis and epidemiology",
+        "body": "### Two groups\n- **Syndromic —** associated with other congenital anomalies: **aniridia**, **Sturge–Weber syndrome**.\n- **Isolated —** not associated with other congenital anomalies.\n\n### The pathology — three lesions at the angle\n- **Persistent mesodermal membrane** on the trabecular meshwork — **goniodysgenesis**.\n- **Anterior iris insertion** obscuring the trabecular meshwork.\n- **Absent Schlemm’s canal.**\n\n### Secondary effects of a raised IOP in an immature eye\n- **Enlargement of the globe →** increased **corneal diameter**, **broad limbus**, increased **antero-posterior diameter**.\n- **Aqueous into the corneal stroma →** **corneal oedema**.\n- **Optic nerve cupping.**\n\n**Why the eye enlarges:** an infant’s sclera is still distensible *(not taken from the course material)*. The enlarged globe is **buphthalmos** — a word this deck never uses, though `L3,4` and `L33,34` print it.\n\n### Epidemiology — four numbers\n- **Western communities —** rare, **1 in 10,000 live births**.\n- **High consanguinity —** **common**.\n- **Males 65 % · bilateral 70 %.**\n\nSrc: L12 lines 317–368; L3,4 sl.26 and L33,34 (cited only)",
+        "qs": []
+      },
+      {
+        "id": "glc-17",
+        "w": "must",
+        "h": "Congenital glaucoma — clinical picture, look-alikes and treatment",
+        "body": "### Symptoms\n- **Photophobia, watering, blepharospasm —** the classic triad, all three the oedematous cornea.\n- **Also —** large eye · abnormal colour of the eye · diminution of vision.\n\n### Signs\n- **Corneal oedema and Haab’s striae —** breaks in **Descemet’s membrane** from stretching *(mechanism not taken from the course material)*.\n- **Enlarged corneal diameter · broad limbus.**\n- **Increased IOP · optic nerve cupping.**\n- **Increased axial length** on **A-scan**.\n\n### The six look-alikes the deck lists\n\n|Differential|What separates it|\n|---|---|\n|**Traumatic corneal oedema, forceps**|birth history; cornea **not enlarged**, IOP normal|\n|**Corneal ulcer**|a **staining epithelial defect**, red eye|\n|**Congenital corneal opacification**|opacity **without** raised IOP or enlargement|\n|**Congenital high myopia**|large eye, **clear cornea**, normal IOP|\n|**Congenital nasolacrimal duct obstruction**|watering **with discharge**, **no photophobia**|\n|**Congenital optic nerve pit**|cupped-looking disc, **normal cornea and IOP**|\n\n*The discriminating column is supplied; the deck prints the six names only — not taken from the course material.*\n\n### Treatment — the cornea chooses the operation\n- **Medical —** **temporary, until surgery**.\n- **Clear cornea →** **goniotomy**.\n- **Opaque cornea →** **trabeculotomy** · **trabeculectomy with antimetabolites** · **synthetic valve implantation**.\n- **Why the cornea decides:** goniotomy is cut under a direct gonioscopic view of the angle *(not taken from the course material)*.\n\nSrc: L12 lines 369–499",
+        "qs": []
+      }
+    ]
+  },
+  "op-cornea": {
+    "intro": "Two shapes dominate. First: which organism, from one clue in the history — a lens, a plant, tap water, a dermatome. Second: which sign proves the cornea is the site — reduced vision and a corneal opacity, never the redness.",
+    "sections": [
+      {
+        "id": "cor-1",
+        "w": "know",
+        "h": "The cornea in numbers, and its five layers",
+        "body": "- **Largest refractive surface of the eye:** supplies **~75 % of total ocular power**.\n- **Completely avascular:** fed by **aqueous humour behind** and **tears in front**.\n- **Most densely innervated tissue in the body** — **trigeminal nerve, ophthalmic division (V1)**.\n- **Transparency is ACTIVE:** the endothelium pumps fluid out continuously.\n\n*Dense V1 innervation is why any epithelial breach hurts out of all proportion to its size (the inference is not drawn on the slide).*\n\n### Key numbers\n\n|Quantity|Value|\n|---|---|\n|**Refractive power**|**~43 D**|\n|**Diameter**|**11.5 mm vertical × 12 mm horizontal**|\n|**Central thickness**|**540 µm** (periphery ~700 µm)|\n|**Endothelial density**|**2,500–3,000 cells/mm²**|\n|**Critical density**|**<700 cells/mm² → oedema risk**|\n|**Innervation**|**CN V1**|\n\n### The five layers\n\n|Layer|Size|What matters|\n|---|---|---|\n|**① Epithelium**|**50 µm**, 5–6 cell layers|**regenerates completely in 5–7 days** · tight junctions give barrier function · **stains with fluorescein when disrupted**|\n|**② Bowman layer**|**12 µm**|acellular condensed collagen · **does NOT regenerate**|\n|**③ Stroma**|**90 % of thickness**|orthogonally arranged collagen lamellae · keratocytes maintain the matrix · **damage → scarring and opacity**|\n|**④ Descemet membrane**|—|**basement membrane of the endothelium**|\n|**⑤ Endothelium**|**single cell layer**|**Na/K ATPase pump** · **cannot regenerate** · cell density critical|\n\n- **⚠️ Two layers never come back: Bowman and endothelium.** An epithelial abrasion heals scarless in days; anything deeper scars, and a failed endothelium needs a graft.\n\nSrc: L15,16 \"Corneal Anatomy: Overview\", \"The Five Layers of the Cornea\" (lines 32–65)",
+        "qs": []
+      },
+      {
+        "id": "cor-2",
+        "w": "high",
+        "h": "Fluorescein — how it is used, what it shows, and the lens that must come out first",
+        "body": "**Fluorescein:** a **yellow dye that fluoresces GREEN under the cobalt blue filter** of the slit lamp or ophthalmoscope.\n\n- **It does NOT stain intact epithelium.** It pools where epithelium is **absent or diseased** — so **bright green = an epithelial defect**.\n- **Method:** a **sterile filter-paper strip**, moistened with topical anaesthetic, touched to the **palpebral conjunctiva**; a few blinks spread it.\n\n### ⚠️ Remove SOFT contact lenses first\n- **Why:** a soft lens is a **water-swollen hydrogel**. The dye enters the matrix and **stains it permanently**.\n- **RIGID lenses are exempt:** non-hydrated, they do not absorb the dye.\n- Fluorescein is used **with** a rigid lens deliberately, to read the tear film beneath it.\n- *The instruction and its reason are not taken from the course material — no cached deck states either.*\n- Not a legal matter and not a source of false corneal staining — the lens is simply ruined.\n\n### What fluorescein finds\n- **Corneal abrasion** — a discrete, sharply bordered green area.\n- **Corneal ulcer** — green staining over an infiltrate.\n- **Herpetic dendrite** — the branching pattern with terminal buds; essentially diagnostic.\n- **SEIDEL TEST:** over a suspected break, concentrated dye is **diluted to CLEAR by leaking aqueous**. A positive Seidel means an **open globe**.\n\nSrc: L3,4 slide 16 (the staining method), L25 slide 61 (Seidel), both cited only; L15,16 \"The Five Layers\" (epithelium stains when disrupted); the soft-lens rule is supplied and tagged",
+        "qs": [
+          "opqb-t1-51"
+        ]
+      },
+      {
+        "id": "cor-3",
+        "w": "must",
+        "h": "Bacterial keratitis — the risk, the organism, and the one instruction that comes first",
+        "body": "### Risk factors\n- **CONTACT LENS WEAR — commonest in the developed world.**\n- **Ocular trauma** — agricultural injury, the developing world.\n- **Ocular surface disease** — dry eye, blepharitis, trichiasis.\n- **Previous corneal surgery** — **LASIK → atypical mycobacteria**.\n- **Host risk:** systemic immunosuppression, diabetes, vitamin A deficiency.\n- **Neurotrophic or exposure keratopathy.**\n\n### Organisms\n\n|Group|Organisms|The clue|\n|---|---|---|\n|**Gram-positive**|**Staphylococcus aureus · S. pneumoniae · Streptococcus pyogenes**|the default|\n|**Gram-negative**|**PSEUDOMONAS AERUGINOSA**|**contact lens — rapid, aggressive**|\n|**Neisseria gonorrhoeae**|—|**can penetrate INTACT epithelium**|\n|**Moraxella**|—|**elderly, debilitated**|\n|**Atypical mycobacteria**|—|**post-refractive surgery**|\n|**In the tropics**|—|**fungal must be excluded**|\n\n### Clinical picture\n- **Symptoms — ACUTE onset:** **pain, photophobia, blurred vision, mucopurulent discharge.**\n- **Signs:** **epithelial defect with a stromal infiltrate**, plus **circumcorneal injection**.\n- **Moderate–severe:** **stromal oedema, HYPOPYON, posterior synechiae, chemosis.**\n- **⚠️ Severe: Pseudomonas can produce a DESCEMETOCELE AND PERFORATE WITHIN 24–48 HOURS.**\n\n### Investigation protocol\n- **Corneal scraping** — scalpel no.11 or 21 G needle.\n- **Gram stain** — Gram-positive take crystal violet.\n- **Culture:** **blood agar, chocolate agar, Sabouraud** (fungal).\n- **Confocal microscopy** in vivo for difficult cases.\n- **⚠️ ALWAYS SCRAPE BEFORE STARTING ANTIBIOTICS** — printed as the deck’s clinical pearl and repeated as take-home message 1. Once treated, the culture is lost.\n\n### Treatment\n- **First line: intensive topical FLUOROQUINOLONE** — ciprofloxacin or ofloxacin, **hourly on day 1**, then taper.\n- **New-generation fluoroquinolones** (moxifloxacin, gatifloxacin) for resistant or Gram-positive organisms.\n- **Cycloplegic drops** (cyclopentolate 1 %): reduce **ciliary spasm pain**, prevent synechiae.\n- **⚠️ Steroids:** avoid topical steroids until infection is excluded or controlled.\n- **Admit if:** **central ulcer >2 mm** · threat of perforation · poor compliance · **no improvement in 48 h**.\n- **⚠️ Red flag: a central ulcer with hypopyon is URGENT.**\n\nSrc: L15,16 \"Bacterial Keratitis\" (risk/organisms, features/investigations, treatment), \"Clinical Scenario 1\", \"Red Flags\" (lines 72–120, 497–512, 621–624)",
+        "qs": [
+          "opqb-t1-62"
+        ]
+      },
+      {
+        "id": "cor-4",
+        "w": "high",
+        "h": "Fungal keratitis — plant matter, feathery edges, and a culture that takes weeks",
+        "body": "- **Geography:** commoner in tropical and subtropical climates.\n\n|Fungus|Who|First-line drug|\n|---|---|---|\n|**FILAMENTOUS — Aspergillus, Fusarium**|**trauma with PLANT MATTER**|**NATAMYCIN 5 %**|\n|**CANDIDA**|**immunocompromised**, contact lens wearers, **topical steroid use**|**AMPHOTERICIN B 0.15 %**|\n\n- **Alternatives:** **voriconazole 1–2 %**, econazole 1 %.\n- **Signs:** **FEATHERY margins and SATELLITE lesions**, a **dry rough surface**, hypopyon.\n- **⚠️ Delayed diagnosis:** it **mimics bacterial keratitis**, and the delay is what loses the eye.\n- **Culture: SABOURAUD agar, and it may take WEEKS.** Treat on suspicion, do not wait.\n- **Onset is SLOWER than bacterial** — that, plus the history, is the discriminator.\n\nSrc: L15,16 \"Fungal Keratitis\", \"Red Eye with Corneal Involvement\" (lines 121–134, 219–237)",
+        "qs": []
+      },
+      {
+        "id": "cor-5",
+        "w": "must",
+        "h": "Herpes simplex keratitis — three forms, and one absolute steroid rule",
+        "body": "**Why it matters:** the commonest infectious cause of corneal blindness in developed countries.\n\n### Epithelial — dendritic / geographic\n- **Active virus replication in the epithelium.**\n- **Classic DENDRITIC ulcer with TERMINAL BUDS** — the branching pattern is pathognomonic.\n- **Two stains:** fluorescein takes the **ULCER BED**, Rose Bengal the **VIRUS-LADEN MARGINS**.\n- **Geographic** = a large irregular lesion, the same disease spread out.\n- **Treatment: topical antiviral** — **aciclovir 3 % ointment 5×/day** or ganciclovir gel. **Debridement** of infected epithelium is adjunctive.\n\n### Disciform — stromal immune\n- **Immune-mediated ENDOTHELIITIS**, not active replication.\n- **Central disc-like corneal OEDEMA**, with **keratic precipitates under the area of oedema**.\n- **Treatment: TOPICAL STEROIDS + antiviral cover.** This is the form steroids are for.\n\n### Necrotizing stromal\n- **Active virus AND immune response together.**\n- **Necrotising stromal:** progressive stromal necrosis and thinning; may perforate, and very difficult to treat.\n- Combined antiviral + steroid, a careful balance.\n\n### ⚠️ The rule\n- **⚠️ Absolute rule:** NEVER use topical steroids in **EPITHELIAL** herpes keratitis. They **promote viral replication**, convert a dendrite into a **geographic ulcer**, and can end in **perforation**.\n- **Recurrence:** **prophylactic oral aciclovir 400 mg twice daily reduces recurrence by ~50 %.**\n\nSrc: L15,16 \"Herpes Simplex Keratitis: Types & Features\", \"Critical Point\", \"Clinical Scenario 2\" (lines 135–178, 513–528)",
+        "qs": []
+      },
+      {
+        "id": "cor-6",
+        "w": "high",
+        "h": "Herpes zoster ophthalmicus — the nose sign, and the 72-hour window",
+        "body": "**What it is:** varicella-zoster reactivation in the **CN V1 (ophthalmic)** dermatome. **1 in 3** people develop herpes zoster in their lifetime.\n\n- **⚠️ HUTCHINSON SIGN:** vesicles on the **TIP or SIDE OF THE NOSE**.\n- **Why it matters:** the **nasociliary branch** is involved, and it also supplies the globe — **HIGH risk of ocular complications**.\n- **Treatment: oral valaciclovir or famciclovir WITHIN 72 HOURS of rash onset.**\n\n### Corneal manifestations\n- **Corneal forms:** punctate epithelial keratitis · **PSEUDODENDRITIC** ulcer · mucous plaques · disciform keratitis · neurotrophic keratopathy.\n\n### Complications\n- Epithelial keratitis · stromal/disciform keratitis · **neurotrophic keratopathy** · **scleritis / episcleritis** · **post-herpetic neuralgia**.\n- **Long term:** post-herpetic neuralgia and **corneal anaesthesia**, which is how it becomes neurotrophic.\n\n### ⚠️ HZO pseudodendrite vs HSV dendrite\n\n|  |**HSV dendrite**|**HZO pseudodendrite**|\n|---|---|---|\n|Size|larger|**SMALLER**|\n|Shape|**branching with TERMINAL BUDS**|**STELLATE, LACKS terminal buds**|\n|Nature|true ulcer, stains in the bed|a raised mucous plaque|\n\nSrc: L15,16 \"Herpes Zoster Ophthalmicus (HZO)\" (lines 179–198)",
+        "qs": []
+      },
+      {
+        "id": "cor-7",
+        "w": "must",
+        "h": "Acanthamoeba keratitis — a lens, water, and pain out of all proportion",
+        "body": "**What it is:** a **PROTOZOAL** infection, strongly associated with contact lens wear plus tap water or swimming.\n\n### The classic triad\n- **A contact lens wearer.**\n- **Exposure to water.**\n- **The signature:** **SEVERE PAIN OUT OF PROPORTION** to the clinical signs.\n\n### Signs\n- **PERINEURAL infiltrate — EARLY.**\n- **RING INFILTRATE — LATE, and PATHOGNOMONIC.**\n- **⚠️ Red flag: a ring infiltrate is Acanthamoeba until proven otherwise.**\n- **⚠️ Misdiagnosis:** taken initially for **HSV or bacterial keratitis** — the commonest reason it is caught late.\n\n### Diagnosis and treatment\n- **Confocal microscopy** demonstrates the **cysts in vivo**.\n- **Culture:** **NON-NUTRIENT AGAR WITH AN E. COLI OVERLAY** — a special medium that must be asked for by name.\n- **Treatment: PHMB (polyhexamethylene biguanide) + propamidine isethionate, HOURLY, FOR WEEKS.** Treatment is prolonged.\n- **Prevention: never use tap water with contact lenses; always use lens solution.**\n\nSrc: L15,16 \"Acanthamoeba Keratitis\", \"Red Flags\" (lines 199–218, 621–624)",
+        "qs": []
+      },
+      {
+        "id": "cor-8",
+        "w": "must",
+        "h": "Telling the four infectious keratitides apart",
+        "body": "|  |**Bacterial**|**Fungal**|**Herpes simplex**|**Acanthamoeba**|\n|---|---|---|---|---|\n|**History**|**contact lens** / trauma|**trauma with PLANT MATTER**; topical steroids|**RECURRENT episodes**|**contact lens + WATER**|\n|**Onset**|**RAPID**|**SLOW**|days|insidious|\n|**Pain**|severe|moderate|mild–moderate|**SEVERE, OUT OF PROPORTION**|\n|**Ulcer**|**large central/paracentral**|**FEATHERY, SATELLITE lesions**, dry rough surface|**DENDRITIC with terminal buds**, or geographic|**PERINEURAL early, RING late**|\n|**Discharge**|**MUCOPURULENT**|—|watery|—|\n|**Hypopyon**|**common**|present|no|—|\n|**Confirm with**|**Gram + blood/chocolate agar**|**SABOURAUD** (weeks)|clinical; fluorescein pattern|**confocal**; **non-nutrient agar + E. coli**|\n|**First line**|**topical fluoroquinolone hourly**|**natamycin 5 %** (filamentous) · **amphotericin B 0.15 %** (Candida)|**aciclovir 3 %**; disciform = **steroid + antiviral**|**PHMB + propamidine**|\n\n- **⚠️ The deciding clue:** a lens alone → bacterial (Pseudomonas); a lens **plus water** → Acanthamoeba; **vegetable matter** → fungal; **recurrence** → herpes.\n- **⚠️ Steroids are wrong in three of the four** and right only in **disciform** HSV, with antiviral cover.\n\nSrc: L15,16 \"Red Eye with Corneal Involvement: Differential Diagnosis\", \"Summary: Infectious Keratitis at a Glance\" (lines 219–237, 587–607)",
+        "qs": []
+      },
+      {
+        "id": "cor-9",
+        "w": "must",
+        "h": "Keratitis against the other red eyes — vision and the cornea decide",
+        "body": "**The tetrad:** severe pain + photophobia + a corneal opacity + reduced vision = **KERATITIS**, and it is sight-threatening.\n\n|  |**Keratitis**|**Conjunctivitis**|**Episcleritis**|**Dry eye**|\n|---|---|---|---|---|\n|**Pain**|**SEVERE**|scratchiness, mild irritation, **NOT severe pain**|**mild ache, tender over the area**|gritty, burning|\n|**Photophobia**|**MARKED**|**normal light sensitivity**|minimal|mild|\n|**Vision**|**REDUCED**|**normal**|**not vision threatening**|fluctuates, clears on blinking|\n|**Cornea**|**OPACITY or ULCER**|clear|clear|punctate staining only|\n|**Redness**|**circumcorneal (ciliary)**|diffuse, worst in the fornices|**sectoral**|mild, interpalpebral|\n|**Discharge**|watery or mucopurulent|**prominent**|**none**|none|\n\n- **⚠️ The two decisive findings:** **REDUCED VISION** and a **CORNEAL OPACITY**. Neither is produced by conjunctival or episcleral disease.\n- **Redness alone decides nothing** — all four eyes are red.\n- **Circumcorneal (ciliary) injection:** points to the **cornea or the anterior chamber**; diffuse fornix-based redness points to the conjunctiva.\n- *The discriminating use of circumcorneal injection is supplied; the sign itself is on the deck.*\n- **Photophobia:** accompanies **iridocyclitis**, alone or **secondary to corneal inflammation** — corneal disease drives ciliary spasm.\n- **⚠️ Referral rule:** any red eye with **reduced vision** is referred, never treated blind.\n- **⚠️ The lens wearer:** a painful red eye in one is **microbial keratitis until proved otherwise**.\n\nSrc: L37 \"Severe pain\", \"Photophobia\", \"Corneal opacities\", episcleritis features (lines 343–353, 178–182, 412–414), cited only; L15,16 \"Bacterial Keratitis\" (circumcorneal injection)",
+        "qs": [
+          "opqb-t1-62"
+        ]
+      },
+      {
+        "id": "cor-10",
+        "w": "must",
+        "h": "Corneal trauma — abrasion, foreign body, and the burn that is irrigated before it is examined",
+        "body": "### Corneal abrasion\n- **Fluorescein delineates the defect.** Treat with **topical antibiotic ± cycloplegic**; **usually heals in 24–48 h**.\n\n### Corneal foreign body\n- **Removal:** under the slit lamp, with a **25 G needle or a burr**.\n- **Always exclude:** a retained **INTRAOCULAR** foreign body — CT scan.\n- **RUST RING** after an iron FB: **remove at 24 h with a burr**, once it has softened overnight.\n\n### ⚠️ Chemical injury — irrigate before anything else\n\n|Step|Action|\n|---|---|\n|**1**|**IMMEDIATE copious irrigation — 1–2 L saline or water**|\n|**2**|**Check pH; target 7.0–7.4**|\n|**3**|**Sweep the fornices for retained particles**|\n|**4**|**THEN examine and refer**|\n\n- **⚠️ DO NOT DELAY FOR EXAMINATION.** Irrigation comes before history, acuity and referral.\n- **⚠️ ALKALI vs acid:** alkali burns are **MORE severe** — **saponification** lets them **penetrate deeper**.\n- *Alkali hydrolyses membrane lipids to soap, so the barrier dissolves ahead of the burn front — the mechanism behind the word is supplied.*\n- **Grading:** **ROPER-HALL I–IV, based on LIMBAL ISCHAEMIA.**\n\n### Penetrating injury\n- **Penetrating injury:** **SHIELD** the eye · **NIL BY MOUTH** · urgent surgical repair · explore for an intraocular foreign body.\n- **Seidel:** a positive test confirms a leaking break (cor-2).\n\nSrc: L15,16 \"Corneal Trauma: Approach & Management\" (lines 546–566); L25 slide 61 (Seidel), cited only",
+        "qs": []
+      },
+      {
+        "id": "cor-11",
+        "w": "must",
+        "h": "Three prescribing errors that blind",
+        "body": "### Topical steroids in BACTERIAL keratitis\n- **Potentiate the infection · delay healing.**\n- **Wait until the infection is controlled**, then use judiciously under ophthalmic supervision.\n\n### Topical steroids in EPITHELIAL HSV\n- **What they do:** promote viral replication · cause a geographic ulcer · risk perforation.\n- **When allowed:** only in the **STROMAL / disciform** stage, and with antiviral cover.\n\n### Topical anaesthetics for analgesia\n- **The harm:** **INHIBIT** epithelial healing · **STROMAL MELTING** · anaesthetic keratopathy → **PERFORATION**.\n- **⚠️ Never for outpatient use:** they abolish the pain that would have brought the patient back.\n\n*The fourth error on this slide — LASIK in keratoconus — is in `op-cornea-surg`.*\n\nSrc: L15,16 \"Common Prescribing Errors in Corneal Disease\", top two boxes and bottom-left box (lines 567–582)",
+        "qs": []
+      }
+    ]
+  },
+  "op-cornea-surg": {
+    "intro": "Almost everything here is one question in two directions: is this cornea the wrong SHAPE or the wrong CLARITY? Shape means topography, cross-linking and a rigid lens; clarity means a graft. Refractive surgery questions are keratoconus questions.",
+    "sections": [
+      {
+        "id": "cor-12",
+        "w": "must",
+        "h": "Corneal ectasia and keratoconus — the signs, the topography, the ladder",
+        "body": "**Corneal ectasia:** a group of conditions with **progressive corneal THINNING and PROTRUSION**.\n\n- **Types:** **KERATOCONUS (commonest)** · **pellucid marginal degeneration** · **keratoglobus**.\n- **Iatrogenic ectasia: post-LASIK**, from an insufficient **residual stromal bed**.\n- **⚠️ All of them:** cause **IRREGULAR ASTIGMATISM → reduced BEST SPECTACLE-CORRECTED acuity**. Glasses stop working — that is the problem.\n- **⚠️ Mandatory screen:** ectasia must be excluded before refractive surgery, by corneal **TOPOGRAPHY**.\n\n### Keratoconus — diagnosis\n- **What it is:** progressive **BILATERAL** (often asymmetric) thinning and protrusion.\n- **Course:** onset at **PUBERTY**, progressing until the 3rd–4th decade.\n- **Risk factors: EYE RUBBING · ATOPY · DOWN SYNDROME · connective tissue disorders.**\n- **VOGT STRIAE:** **vertical stromal stress lines** — stretch marks in the deep stroma.\n- **MUNSON SIGN:** a **V-shaped deformity of the LOWER LID ON DOWNGAZE**.\n- **ACUTE HYDROPS:** **sudden stromal oedema from a rupture of Descemet membrane**.\n- **TOPOGRAPHY: INFERIOR STEEPENING, ASYMMETRIC BOWTIE pattern.** This is the diagnostic instrument.\n\n### Management — an ordered ladder\n\n|Step|Option|When|\n|---|---|---|\n|**1**|**Spectacles**|early, mild|\n|**2**|**Soft / rigid contact lenses**|—|\n|**3**|**Scleral lenses**|advanced astigmatism|\n|**4**|**Corneal collagen CROSS-LINKING (CXL)**|to **stabilise progression**|\n|**5**|**Intracorneal ring segments (ICRS / Intacs)**|—|\n|**6**|**Keratoplasty — DALK preferred, or PKP**|end stage|\n\n- **⚠️ AVOID EYE RUBBING** — printed as its own instruction, and the one modifiable driver.\n\nSrc: L15,16 \"Corneal Ectasia\", \"Keratoconus: Diagnosis & Management\" (lines 244–286)",
+        "qs": [
+          "opqb-t2-99"
+        ]
+      },
+      {
+        "id": "cor-13",
+        "w": "high",
+        "h": "Collagen cross-linking — it stops the disease, it does not fix the vision",
+        "body": "**CXL:** **riboflavin (vitamin B2) drops photosensitize the cornea, then UV-A irradiation strengthens the collagen crosslinks.**\n\n- **Effect:** it can **halt or even partially reverse** ectasia progression.\n- **Indication: DOCUMENTED PROGRESSIVE keratoconus in a YOUNG patient.** Documented progression, not merely a diagnosis.\n- **⚠️ CXL DOES NOT IMPROVE VISION — it stabilises progression.** A patient expecting better sight has been mis-consented.\n- **Combined CXL + ICRS**, or CXL + topography-guided ablation, in selected patients.\n- **Also used for:** post-LASIK ectasia (cor-23).\n\nSrc: L15,16 \"Corneal Collagen Cross-Linking (CXL): A Modern Tool\" (lines 287–300)",
+        "qs": []
+      },
+      {
+        "id": "cor-14",
+        "w": "must",
+        "h": "Corneal dystrophies — bilateral, heritable, and sorted by layer",
+        "body": "**Definition: BILATERAL, primarily NON-INFLAMMATORY, HERITABLE, PROGRESSIVE opacifying disorders.**\n\n- **Classified by the affected layer:** epithelial · Bowman · stromal · Descemet/endothelial.\n- **Most are AUTOSOMAL DOMINANT; some recessive.**\n\n### The five must-know dystrophies\n\n|Dystrophy|Layer|Deposit / lesion|Inheritance|\n|---|---|---|---|\n|**Epithelial basement membrane (MAP-DOT-FINGERPRINT)**|epithelial|— · presents with **RECURRENT EROSIONS**|—|\n|**GRANULAR** (**TGFB1** gene)|stromal|**BREADCRUMB opacities, CLEAR stroma BETWEEN lesions**|**AD**|\n|**LATTICE**|stromal|**AMYLOID — CONGO RED positive**, lattice lines|**AD**|\n|**MACULAR**|stromal|**GLYCOSAMINOGLYCANS**; **EARLIEST onset, WORST vision**|**AR**|\n|**FUCHS endothelial**|endothelial|**GUTTATA**, oedema, **worse in the MORNING**|—|\n\n- **⚠️ Macular:** the odd one out in three ways at once — **recessive, earliest, worst**. Its stroma between lesions is **cloudy**, unlike granular.\n- **Surgical answer depends on the layer:** stromal dystrophies → **DALK**; **Fuchs → DSAEK / DMEK**.\n\nSrc: L15,16 \"Corneal Dystrophies: Classification & Key Features\" (lines 301–318)",
+        "qs": []
+      },
+      {
+        "id": "cor-15",
+        "w": "must",
+        "h": "Fuchs endothelial dystrophy — the morning blur",
+        "body": "**Mechanism:** abnormal endothelial cell function → loss of the dehydrating pump.\n\n### The sequence\n- **First change:** collagen deposited on Descemet membrane → **GUTTATA** (excrescences).\n- **Early: guttata on SPECULAR reflection** — dark spots disrupting the endothelial mosaic.\n- **Progressive → ‘BEATEN METAL’ endothelium.**\n- **Then:** corneal oedema, central stromal then epithelial → **BULLOUS KERATOPATHY**.\n\n### ⚠️ The characteristic symptom\n- **The giveaway:** vision **WORSE IN THE MORNING**, improving through the day.\n- **Why:** overnight the lids are closed, **evaporation stops, oedema is maximal on waking**; through the day evaporation draws the water back out.\n- **Risk factors: FEMALE sex, older age (5th–6th decade).**\n\n### Management\n- **Conservative: hypertonic NaCl 5 %**, and a **hair dryer held 10 cm from the face**.\n- **Surgical: DMEK (preferred) or DSAEK** when vision is significantly affected.\n- **Monitoring:** endothelial cell density, by **SPECULAR MICROSCOPY**.\n\nSrc: L15,16 \"Fuchs’ Endothelial Dystrophy\", \"Clinical Scenario 3\" (lines 319–335, 529–545)",
+        "qs": []
+      },
+      {
+        "id": "cor-16",
+        "w": "high",
+        "h": "Corneal degenerations — arcus, band keratopathy, pterygium and the rest",
+        "body": "*Degenerations are acquired, often age-related and frequently unilateral — the opposite of a dystrophy on every axis.*\n\n### Arcus senilis\n- **A lipid arc at the limbus.** **Physiological in the elderly.**\n- **⚠️ Arcus under 45:** check the lipids.\n\n### Band keratopathy\n- **Deposit:** **CALCIUM in BOWMAN LAYER**, in the **INTERPALPEBRAL zone** — the strip the lids leave exposed.\n- **Causes:** **chronic anterior uveitis** · **HYPERCALCAEMIA** · **silicone oil in the anterior chamber**.\n- **Also:** end-stage ocular disease · **gout (hyperuricaemia)** · familial/hereditary · idiopathic age-related.\n- **Treatment: EDTA CHELATION (effective), or excimer laser PTK.**\n\n### Pterygium and pinguecula\n\n|  |**PTERYGIUM**|**PINGUECULA**|\n|---|---|---|\n|What|**fibrovascular growth from conjunctiva ENCROACHING ONTO THE CORNEA**|**yellowish nasal or temporal conjunctival lesion**|\n|Limbus|**CROSSES it**|**does NOT cross it**|\n|Associated with|**UV exposure**|—|\n|Treatment|**surgical excision if it affects vision or induces astigmatism**|—|\n\n### Salzmann nodular degeneration\n- **SUBEPITHELIAL FIBROUS NODULES**; can cause **irregular astigmatism**.\n\n*A shearing injury such as a fingernail damages the epithelial basement membrane, so recurrent erosion may follow for months or years — the same syndrome map-dot-fingerprint dystrophy produces (the traumatic cause is not taken from the course material).*\n\nSrc: L15,16 \"Corneal Degenerations\" (lines 336–359)",
+        "qs": []
+      },
+      {
+        "id": "cor-17",
+        "w": "high",
+        "h": "Neurotrophic and exposure keratopathy — an anaesthetic cornea and an uncovered one",
+        "body": "### Neurotrophic keratopathy\n- **Sequence: TRIGEMINAL ANAESTHESIA → epithelial breakdown → PERSISTENT EPITHELIAL DEFECT → MELTING.**\n- **Causes: HSV · HZV · ACOUSTIC NEUROMA SURGERY · diabetes mellitus · TOPICAL ANAESTHETIC ABUSE.**\n- **Treatment: PRESERVATIVE-FREE lubrication · bandage lens · TARSORRHAPHY · CENEGERMIN (nerve growth factor) drops.**\n- **⚠️ The trap:** the cornea does not hurt, so the patient does not complain — and it is found late.\n\n### Exposure keratopathy\n- **Mechanism:** **incomplete lid closure → INFERIOR epithelial breakdown**. The exposed strip is the lower third.\n- **Causes: VII NERVE PALSY (Bell) · THYROID EYE DISEASE · PROPTOSIS.**\n- **Treatment: lubricants · taping the eyelid · moisture chamber · TARSORRHAPHY.**\n\nSrc: L15,16 \"Corneal Degenerations\" (neurotrophic), \"Exposure Keratopathy\" (lines 360–367, 378–387)",
+        "qs": []
+      },
+      {
+        "id": "cor-18",
+        "w": "high",
+        "h": "Peripheral corneal ulceration — three entities, and one needs a systemic work-up",
+        "body": "|  |**Marginal keratitis**|**Mooren ulcer**|**Peripheral ulcerative keratitis (PUK)**|\n|---|---|---|---|\n|Mechanism|**IMMUNE reaction to STAPHYLOCOCCAL antigens**|**idiopathic, immune-mediated**|**systemic VASCULITIS**|\n|Appearance|**peripheral SUBEPITHELIAL INFILTRATES with a CLEAR LIMBAL ZONE**|**painful, progressive peripheral ulceration with an OVERHANGING CENTRAL EDGE**|peripheral ulceration|\n|Association|**BLEPHARITIS**|none|**RA · GPA · SLE**|\n|Management|**treat the blepharitis + topical steroids**|**difficult to treat**|**⚠️ URGENT SYSTEMIC WORK-UP**|\n\n- **⚠️ The clear limbal zone:** the marginal-keratitis giveaway. The immune infiltrate sits away from the vessels that fed it.\n- **⚠️ PUK:** not primarily an eye disease. It marks **active systemic vasculitis**, with the eye presenting first.\n\nSrc: L15,16 \"Peripheral Corneal Ulceration & Neurotrophic Keratopathy\" (lines 368–377)",
+        "qs": []
+      },
+      {
+        "id": "cor-19",
+        "w": "must",
+        "h": "Keratoplasty — the indications, the contraindications, and the four operations",
+        "body": "**Corneal transplantation: replacement of diseased host tissue with a healthy donor cornea. It is the MOST COMMONLY PERFORMED AND MOST SUCCESSFUL SOLID ORGAN TRANSPLANT.**\n\n### The three indication groups\n- **OPTICAL:** keratoconus, scarring, dystrophies, **pseudophakic bullous keratopathy**.\n- **TECTONIC:** **restore integrity** — descemetocele, perforation.\n- **THERAPEUTIC:** **remove infected tissue** — active keratitis failing medical therapy.\n\n### Contraindications\n- **Ocular:** **active uncontrolled infection** · **dry eye / ocular surface failure** · **uncontrolled glaucoma**.\n- **Prognostic:** **poor visual potential** (retinal or optic nerve disease) · severe systemic illness · **non-compliance risk**.\n\n### The four operations\n\n|  |**PKP**|**DALK**|**DSAEK**|**DMEK**|\n|---|---|---|---|---|\n|**What is replaced**|**FULL THICKNESS, all layers**|**epithelium + stroma down to Descemet; HOST ENDOTHELIUM PRESERVED**|**Descemet stripped, POSTERIOR STROMA transplanted**|**ONLY Descemet + endothelium, 5–10 µm**|\n|**Technique**|—|**BIG BUBBLE**|small incision **~5 mm**|technically most demanding, **graft handling**|\n|**Best for**|scarring, perforations, **failed DALK**|**KERATOCONUS**, stromal dystrophies|**FUCHS**, bullous keratopathy|**FUCHS — preferred**|\n|**Rejection**|**HIGHEST rate**|**NO endothelial rejection risk; lowest overall**|lower than PKP|**LOWEST of the endothelial grafts**|\n|**Recovery / catch**|**SLOWEST**; **sutures in situ 12–18 months**|—|faster than PKP; **slight HYPEROPIC shift, interface haze**|**FASTEST · BEST VISUAL OUTCOMES OF ALL**|\n\n- **⚠️ The pattern:** the less you transplant, the less there is to reject. **DMEK moves 5–10 µm and has the best outcomes of any keratoplasty.**\n\nSrc: L15,16 \"Keratoplasty: Overview & Indications\", \"Types of Keratoplasty: Comparison\" (lines 394–430)",
+        "qs": []
+      },
+      {
+        "id": "cor-20",
+        "w": "must",
+        "h": "Corneal graft rejection — an emergency, and it is treated on suspicion",
+        "body": "**⚠️ Red flag:** new blurred vision in a keratoplasty patient is **REJECTION UNTIL PROVED OTHERWISE** — the deck prints it as such.\n\n- **Symptoms: SUDDEN blurred vision, pain, redness, photophobia. This is an EMERGENCY.**\n\n### Signs — **KSS**: **K**rachmer rejection line, **S**ubepithelial infiltrates, **S**tromal oedema\n- **EPITHELIAL rejection:** an **elevated rejection line of abnormal epithelium**, around **3 months post-op**.\n- **STROMAL / ENDOTHELIAL rejection:** **keratic precipitates on the donor endothelium (KRACHMER spots)**, **corneal oedema**, and the **KHODADOUST line**.\n\n### Treatment\n- **INTENSIVE topical steroids — prednisolone acetate 1 % HOURLY.**\n- **Systemic steroids** for severe cases.\n- **⚠️ Treat EARLY:** intensive early treatment **greatly improves the chance of reversing the episode and saving the graft**. Delay costs it.\n\nSrc: L15,16 \"Corneal Graft Rejection: Recognition & Emergency Treatment\", \"Red Flags\" (lines 431–447, 621–629)",
+        "qs": []
+      },
+      {
+        "id": "cor-21",
+        "w": "must",
+        "h": "Refractive surgery — selection, and the two investigations that are mandatory",
+        "body": "**Goal: permanently alter corneal curvature to reduce or eliminate refractive error.**\n\n### ⚠️ The two most important pre-operative investigations\n\n|Test|Measures|The question it answers|\n|---|---|---|\n|**CORNEAL TOPOGRAPHY**|**curvature across the WHOLE surface**|**Is the shape normal, or is there an early ectasia?** — **RULE OUT keratoconus**|\n|**PACHYMETRY**|**corneal THICKNESS**|**Is there enough tissue to cut safely?**|\n\n- **⚠️ Why these two:** LASIK is corneal surgery, so the cornea is what is measured — its **SHAPE** and its **THICKNESS**. Biometry (axial length) and keratometry belong to **cataract surgery and IOL power** (L18) — neither is a pre-LASIK test.\n\n### The rest of the mandatory work-up\n- **Refraction STABLE for ≥1 year** · **adequate tear film — Schirmer, TBUT** · **PUPIL SIZE IN DIM LIGHT** · **discontinue contact lenses before mapping**.\n- **Age: typically ≥18–21 years** with a stable refraction.\n\n### Contraindications\n- **FORME FRUSTE KERATOCONUS** · **thin cornea <500 µm** · **unstable refraction** · **dry eye** · **active inflammation**.\n- **⚠️ LASIK IS CONTRAINDICATED IN KERATOCONUS** — it causes severe post-operative ectasia. **CXL + ICRS may be appropriate instead.**\n\n- **Main procedures: LASIK · PRK (surface ablation) · SMILE · phakic IOL.**\n\nSrc: L15,16 \"Refractive Surgery: Principles & Patient Selection\", \"Common Prescribing Errors\" bottom-right box (lines 448–461, 581–586); L18 (keratometry and axial length for IOL power), cited only",
+        "qs": [
+          "opqb-t2-93"
+        ]
+      },
+      {
+        "id": "cor-22",
+        "w": "high",
+        "h": "The four laser procedures compared",
+        "body": "|  |**LASIK**|**PRK (surface ablation)**|**FemtoLASIK**|**SMILE**|\n|---|---|---|---|---|\n|**Access**|**FLAP** cut by microkeratome or femtosecond laser|**epithelium REMOVED; ablation directly on BOWMAN**|**femtosecond flap — more precise, THINNER, no blade**|**femtosecond cuts a LENTICULE inside an INTACT cornea, removed through a 4 mm incision — NO FLAP**|\n|**Recovery**|**FAST, 1–2 days**|**SLOW — 3–5 days of pain, weeks for clarity**|as LASIK|fast|\n|**Risks**|**flap dislocation · ECTASIA · DLK (‘sands of Sahara’)**|**subepithelial HAZE — MMC applied to prevent it**|**still carries all LASIK risks**|**lower infection and ectasia risk; minimal flap issues**|\n|**Advantage**|**wide range — myopia up to −10 D**|**no flap → safer for CONTACT SPORTS and thin corneas**|**better predictability; allows mildly thin corneas**|**less corneal nerve damage → LESS DRY EYE**|\n|**Limit**|—|**used when LASIK is contraindicated**|—|**myopia + astigmatism; hyperopia limited**|\n\n- **⚠️ The flap is the whole trade-off.** A flap buys fast comfortable recovery and costs flap complications and biomechanical strength; no flap costs pain or precision and buys safety.\n\nSrc: L15,16 \"Laser Refractive Procedures: Comparison\" (lines 462–480)",
+        "qs": []
+      },
+      {
+        "id": "cor-23",
+        "w": "must",
+        "h": "Post-LASIK ectasia — the numbers that decide, and what to do if it happens",
+        "body": "**⚠️ The feared one:** ectasia is the most feared long-term complication of LASIK.\n\n### Risk factors\n- **FORME FRUSTE KERATOCONUS** · **thin cornea** · **young age** · **high myopia** · **LOW RESIDUAL STROMAL BED (RSB <300 µm)**.\n\n### The numbers\n\n|Measurement|Threshold|Status|\n|---|---|---|\n|**Central corneal thickness**|**<500 µm**|**RELATIVE contraindication** (checklist target **≥500 µm**)|\n|**Residual stromal bed**|**<300 µm**|**⚠️ ABSOLUTE CONTRAINDICATION** (target **≥300 µm** post-op)|\n|**Topography**|**asymmetric bowtie · inferior steepening**|**CONTRAINDICATION** — must be a regular pattern|\n|**Refraction**|unstable|must be **stable ≥1 year**|\n|**Age**|—|**≥21 years**|\n\n- Plus **no forme fruste keratoconus** and **informed consent** — the deck’s full safe-surgery checklist.\n- **⚠️ Red flag: keratoconus-like topography → DO NOT OPERATE.**\n\n### If ectasia develops\n- **CXL to halt progression** (cor-13). **⚠️ DO NOT OFFER MORE LASER** — more ablation removes more of the stroma that is already failing.\n\nSrc: L15,16 \"Screening for Refractive Surgery: Avoiding Ectasia\", \"Top 10 Take-Home Messages\", \"Red Flags\" (lines 481–496, 608–629)",
+        "qs": [
+          "opqb-t2-93"
+        ]
+      },
+      {
+        "id": "cor-24",
+        "w": "must",
+        "h": "Irregular astigmatism — why keratometry fails, and why a rigid lens works",
+        "body": "**IRREGULAR ASTIGMATISM** — the less common type: the **meridia of minimum and maximum power are NOT PERPENDICULAR**, with **irregular change in power between them**.\n\n- **Cause: an irregular, distorted cornea — CORNEAL SCARS and KERATOCONUS.**\n- **⚠️ Clinical signature:** vision does **NOT** improve with a spherical lens — and a cylinder does no better, because a cylinder can only correct one pair of perpendicular meridians.\n\n### ⚠️ Keratometry vs topography — the reason topography exists\n\n|  |**Keratometry**|**Corneal TOPOGRAPHY**|\n|---|---|---|\n|Samples|**a few central points, in TWO meridians**|**the WHOLE corneal surface**|\n|Assumes|**that the two principal meridia are PERPENDICULAR**|**nothing — it maps what is there**|\n|On an irregular cornea|**its own premise is violated, so the reading is misleading**|**shows the actual distorted contour**|\n|Where it is used|**cataract surgery — corneal curvature for IOL power**|**cornea: keratoconus and pre-LASIK screening**|\n\n*The sampling contrast is supplied and tagged; keratometry appears in the course material only as \"Keratometry (corneal curvature)\" in the cataract biometry list.*\n\n### The correction ladder\n\n|Step|Option|\n|---|---|\n|**1**|**Glasses — MILD DEGREES ONLY**|\n|**2**|**RIGID GAS-PERMEABLE (RGP) contact lenses**|\n|**3**|**Intracorneal ring (ICR) segments**|\n|**4**|**Keratoplasty**|\n\n- **⚠️ Why RGP and not a soft toric:** a **soft lens DRAPES onto the cornea** and reproduces the irregularity on its own front surface. A **rigid lens VAULTS over it**, and the **tear film fills the gap** — tears and cornea have almost the same refractive index, so the distorted surface is **optically neutralised** and the lens’s own regular front surface refracts the eye. *(The mechanism is supplied; the deck gives only the answer.)*\n- **⚠️ LASIK is contraindicated here** — it is for **regular** astigmatism, and ablating an already-compromised cornea risks ectasia (cor-23).\n\nSrc: L7,8 \"Astigmatism — Irregular\", \"Treatment\" (lines 402–442), cited only; L18 (keratometry), cited only; L15,16 \"Corneal Ectasia\" (irregular astigmatism reduces best-corrected acuity); the keratometry contrast and the RGP mechanism are supplied and tagged",
+        "qs": [
+          "opqb-t2-99",
+          "opqb-t2-100"
+        ]
+      }
+    ]
   }
 };

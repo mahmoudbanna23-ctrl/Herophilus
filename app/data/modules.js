@@ -39,7 +39,12 @@ const MODULES = [
       ['op-orbit','Orbit, thyroid eye disease and cellulitis'],
       ['op-orbit-mass','Orbital emergencies, tumours and the socket'],
       ['op-glauc','Glaucoma'],['op-sclera','Sclera'],['op-uvea','Uvea'],
-      ['op-cornea','Cornea'],['op-red','Red Eye'],['op-cat','Cataract'],
+      /* Split 2026-08-17, planned BEFORE writing rather than discovered after:
+         the cornea deck is larger than the orbit deck that printed 14 pages,
+         so the seam was chosen up front. Medical cornea / surgical cornea. */
+      ['op-cornea','Cornea — infection, trauma and the red eye'],
+      ['op-cornea-surg','Cornea — ectasia, grafts and refractive surgery'],
+      ['op-red','Red Eye'],['op-cat','Cataract'],
       ['op-ret','Retina'],['op-neuro','Neuro-ophthalmology'],
       ['op-systemic','Systemic Diseases'],['op-onc','Oncology'],['op-trauma','Trauma'],
       ['op-appear','Problems of Appearance'],['op-squint','Squint'],
