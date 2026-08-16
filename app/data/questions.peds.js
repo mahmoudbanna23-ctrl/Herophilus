@@ -46,7 +46,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-inf-4', bank:'house', module:'pediatrics', chapter:'infection',
+  id:'pedhd-inf-4', bank:'house', module:'pediatrics', chapter:'infection-bact',
   stem:'Graham is 5 years old and has had an intermittent fever for 4 weeks. He presents to the Emergency Department with a headache and neck stiffness. A CT scan is performed, which is normal. A lumbar puncture is performed. You receive the following result from the laboratory:\n\n| | |\n|---|---|\n| Lymphocytes | 95 /mm³ |\n| Neutrophils | 10 /mm³ |\n| Red blood cells | 0 /mm³ |\n| CSF protein | 2.2 g/L |\n| CSF glucose | 1.3 mmol/L |\n| Blood glucose | 6.3 mmol/L |\n\nWhat is the most likely diagnosis?',
   options:['Ascending polyneuritis (Guillain–Barré syndrome)','Bacterial meningitis','Blood-stained tap','Tuberculosis meningitis','Viral meningitis'],
   answer:3,
@@ -56,7 +56,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-inf-5', bank:'house', module:'pediatrics', chapter:'infection',
+  id:'pedhd-inf-5', bank:'house', module:'pediatrics', chapter:'infection-vesic',
   stem:'John, a 2-year-old boy, is brought to the general practitioner by his mother. He has the skin rash shown on both his feet. He also has a few lesions on both hands. They are tender to touch. He is well in himself. What is the most likely cause from the list below?',
   options:['Coxsackie A','Flea bites','Herpes zoster','Scabies','Varicella zoster'],
   answer:0,
@@ -67,7 +67,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-inf-6', bank:'house', module:'pediatrics', chapter:'infection',
+  id:'pedhd-inf-6', bank:'house', module:'pediatrics', chapter:'infection-bact',
   stem:'Imran is a 3-year-old boy who moved to the UK from Bangladesh 4 months ago. He has not gained any weight for the last couple of months. He has a cough. The general practitioner has requested a chest X-ray, shown. What is the most likely diagnosis?',
   options:['Asthma','Neuroblastoma','Pertussis infection','Pneumonia','Tuberculosis'],
   answer:4,
@@ -78,7 +78,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-inf-7', bank:'house', module:'pediatrics', chapter:'infection',
+  id:'pedhd-inf-7', bank:'house', module:'pediatrics', chapter:'infection-vaccine',
   stem:'You are in the baby clinic at a local general practice. One of the mothers is questioning whether or not she should get her baby immunized as she wonders if it is really necessary. He does not go to nursery and has no siblings so is not at risk of infection. What advice would you give?',
   options:['As most other children are immunized it is not crucial for her child to be immunized as he is unlikely to be exposed to any of the infections in the immunization schedule','Immunization is important as a high proportion of children need to be immunized to remove the infections from the community','Immunization is important to provide immunity for her child from serious infections and to remove some of these infections from the community','It is her choice and you do not feel you should give an opinion','Vaccines are associated with side-effects, so you can understand her reasoning'],
   answer:2,
@@ -88,7 +88,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-inf-8', bank:'house', module:'pediatrics', chapter:'infection',
+  id:'pedhd-inf-8', bank:'house', module:'pediatrics', chapter:'infection-rash',
   stem:'Harry, aged 21 months, presents with a 3 day history of cough and fever and is very miserable and feeding poorly. Examination reveals conjunctivitis and the widespread rash shown. Which of the following is the organism that is most likely to be the causative agent in this clinical scenario?',
   options:['Influenza virus','Rhinovirus','Measles virus','Roseola infantum (sixth disease)','Cytomegalovirus infection'],
   answer:2,
@@ -99,7 +99,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-inf-9', bank:'house', module:'pediatrics', chapter:'infection',
+  id:'pedhd-inf-9', bank:'house', module:'pediatrics', chapter:'infection-rash',
   stem:'Maryam, a 10-month-old infant, is brought to her general practitioner. She has had an intermittent fever for 1 day and has a runny nose. Her mother is concerned as her appetite is reduced, but she is still drinking. She is generally miserable when febrile. On examination she has a temperature of 37.9°C, a runny nose and a fine macular rash, mainly on her trunk. Which of the following is the organism that is most likely to be the causative agent in this clinical scenario?',
   options:['Rhinovirus','HIV','RSV','EBV','Chickenpox virus (VZV)'],
   answer:0,
@@ -109,7 +109,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-inf-10', bank:'house', module:'pediatrics', chapter:'infection',
+  id:'pedhd-inf-10', bank:'house', module:'pediatrics', chapter:'infection-rash',
   stem:'Jennifer, aged 12 years, developed a severe sore throat and lethargy. Amoxicillin was prescribed. The next day she developed the florid maculopapular rash shown. Which of the following is the organism that is most likely to be the causative agent in this clinical scenario?',
   options:['Mumps virus','Measles virus','RSV','Epstein-Barr virus (EBV)','Rhinovirus'],
   answer:3,
@@ -120,7 +120,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-inf-11', bank:'house', module:'pediatrics', chapter:'infection',
+  id:'pedhd-inf-11', bank:'house', module:'pediatrics', chapter:'infection-vesic',
   stem:'Philip is 4 years old and has recently started school. He presents with a widespread rash, shown, that is intensely itchy. Which of the following is the organism that is most likely to be the causative agent in this clinical scenario?',
   options:['Chickenpox (varicella zoster virus)','Measles virus','Mumps virus','Lyme disease (Borrelia burgdorferi)','Chickenpox virus (varicella zoster virus)'],
   answer:0,
@@ -131,7 +131,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-inf-12', bank:'house', module:'pediatrics', chapter:'infection',
+  id:'pedhd-inf-12', bank:'house', module:'pediatrics', chapter:'infection-rash',
   stem:'Katie is 6 years old. She missed a few days of school as she had a fever and was generally lethargic. Now she has a temperature of 38.3°C and has a marked erythematous rash on her cheeks. Which of the following is the organism that is most likely to be the causative agent in this clinical scenario?',
   options:['Parvovirus infection (fifth disease)','Roseola infantum (sixth disease)','Measles virus','Mumps virus','Cytomegalovirus infection'],
   answer:0,
@@ -191,7 +191,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-inf-18', bank:'house', module:'pediatrics', chapter:'infection',
+  id:'pedhd-inf-18', bank:'house', module:'pediatrics', chapter:'infection-rash',
   stem:'A 6-month-old female infant is admitted with a 4-day history of high fever with no focus. A full septic screen is performed which yields negative cultures and normal inflammatory markers. On day 7 of her illness she develops a blanching morbilliform rash all over her body and her fever subsides. What is the most likely diagnosis?',
   options:['Measles','Rubella','Roseola infantum','Scarlet fever','Chicken pox'],
   answer:2,
@@ -201,7 +201,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-inf-19', bank:'house', module:'pediatrics', chapter:'infection',
+  id:'pedhd-inf-19', bank:'house', module:'pediatrics', chapter:'infection-bact',
   stem:'A 3-year-old girl of Japanese origin is admitted to hospital with a 7-day history of fever, bilateral conjunctivitis, rash, cervical lymphadenopathy and reddened extremities. Intravenous immunoglobulin and oral aspirin are started. What is the most important investigation in this child’s management?',
   options:['Full blood count','Throat swab','ASOT titre','Echocardiogram','Chest X-ray'],
   answer:3,
@@ -241,7 +241,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-inf-23', bank:'house', module:'pediatrics', chapter:'infection',
+  id:'pedhd-inf-23', bank:'house', module:'pediatrics', chapter:'infection-rash',
   stem:'A 10-year-old boy has a 2-week history of sore throat, fever and lethargy. Upon clinical examination there is pharyngitis, hepatosplenomegaly and bilateral shotty cervical lymph nodes are palpated. Blood tests reveal atypical lymphocytes and an ALT of 190 U/L. What is the most likely causative pathogen?',
   options:['Coxsackievirus','Herpes simplex virus','Varicella zoster virus','Epstein–Barr virus','Cytomegalovirus'],
   answer:3,
@@ -251,7 +251,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-inf-24', bank:'house', module:'pediatrics', chapter:'infection',
+  id:'pedhd-inf-24', bank:'house', module:'pediatrics', chapter:'infection-bact',
   stem:'A 9-year-old girl is admitted to the ward with a history of chest pain on exertion. She is otherwise fit and well but was admitted to hospital at 3 years of age for a prolonged febrile illness where she was observed and discharged without diagnosis or treatment. An ECG is performed which is abnormal and an echocardiogram reveals diffuse dilatation of the left coronary artery. What is most likely to have prevented this condition?',
   options:['Antibiotics','Antivirals','Antifungals','Immunoglobulin','Immunization'],
   answer:3,
@@ -271,7 +271,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-inf-26', bank:'house', module:'pediatrics', chapter:'infection',
+  id:'pedhd-inf-26', bank:'house', module:'pediatrics', chapter:'infection-rash',
   stem:'All of the following infections can cause a rash. However, which one of the following pathogens is **not** associated with vesicular skin lesions?',
   options:['Herpes zoster virus','Varicella zoster virus','Staphylococcus aureus','Herpes simplex virus','Human herpesvirus'],
   answer:4,
@@ -281,7 +281,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-inf-27', bank:'house', module:'pediatrics', chapter:'infection',
+  id:'pedhd-inf-27', bank:'house', module:'pediatrics', chapter:'infection-vaccine',
   stem:'A 1-year-old child is brought to the general practitioner by his mother. He has a history of severe egg allergy with a previous confirmed anaphylactic reaction. Mum is concerned about him receiving his MMR vaccination as she has heard it contains egg. What is the most appropriate advice to give her?',
   options:['He can safely receive all vaccines','He must not be given the MMR as it contains egg and he is at risk of severe allergic reaction','He should avoid all live vaccines as they may precipitate a reaction','He can safely receive the MMR, preferably in hospital, but should not receive the influenza or yellow fever vaccines','He can be given the MMR but should receive antihistamine at the same time'],
   answer:3,
@@ -301,7 +301,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-inf-29', bank:'house', module:'pediatrics', chapter:'infection',
+  id:'pedhd-inf-29', bank:'house', module:'pediatrics', chapter:'infection-vesic',
   stem:'A mother on the postnatal ward is concerned that her toddler has got chicken pox. The rash developed 2 days ago. She has not previously had chicken pox. What is the most appropriate management of the baby?',
   options:['Check maternal antibodies, if negative give VZIG (varicella zoster immunoglobulin)','Observe on postnatal ward for development of chicken pox','Discharge home, advise avoid contact with toddler until lesions crusted','No precautions necessary','Treatment of neonate with aciclovir'],
   answer:0,
@@ -311,7 +311,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-inf-30', bank:'house', module:'pediatrics', chapter:'infection',
+  id:'pedhd-inf-30', bank:'house', module:'pediatrics', chapter:'infection-vaccine',
   stem:'There are very few absolute contraindications to live vaccinations. Which of the following is **not** a contraindication to vaccination with a live vaccine?',
   options:['Acute fever >38°C','On high dose steroid therapy','Previous severe local reaction','Impaired cell mediated immunity','Less than 2.5 kg in weight'],
   answer:4,
@@ -321,7 +321,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-inf-31', bank:'house', module:'pediatrics', chapter:'infection',
+  id:'pedhd-inf-31', bank:'house', module:'pediatrics', chapter:'infection-rash',
   stem:'A 15-year-old boy presents to hospital with malaise, fever and mild jaundice over the last week. He says two other girls at his school have the same symptoms following a recent ski trip to France. On examination he has tender hepatomegaly and cervical lymphadenopathy. What is the most likely cause of his illness?',
   options:['Acute myeloid leukaemia','Leptospirosis','Hepatitis A infection','Non-Hodgkins lymphoma','Epstein–Barr infection (EBV)'],
   answer:4,

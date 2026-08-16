@@ -60,9 +60,15 @@ const MODULES = [
   {id:'pediatrics', name:'Pediatrics', icon:'teddy', color:'var(--peds)', hex:'#2e5f8a', groups:[
     {name:'Non-systems', chapters:[
       ['emergencies','Pediatric emergencies'],['allergy','Allergy'],
-      ['infection','Infection and immunity'],['normal-dev','Normal Development'],
+      ['infection','The febrile child and meningitis'],
+      ['infection-bact','Bacterial infections and Kawasaki'],
+      ['infection-rash','Maculopapular exanthems'],
+      ['infection-vesic','Vesicular exanthems'],
+      ['infection-immunity','Immunity and immunodeficiency'],
+      ['infection-vaccine','Vaccination and stewardship'],
+      ['normal-dev','Normal Development'],
       ['dev-problems','Developmental problems'],['genetics','Genetics'],
-      ['malignant','Malignant Disease']]},
+      ['malignant','Leukaemia'],['malignant-solid','Brain and solid tumours']]},
     {name:'Completed earlier', chapters:[
       ['growth-puberty','Growth and short stature'],['puberty','Puberty'],
       ['nutrition','Faltering growth and obesity'],

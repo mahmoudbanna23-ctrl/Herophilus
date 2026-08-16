@@ -2903,5 +2903,691 @@ var T_PEDS = {
         "qs": []
       }
     ]
+  },
+  "infection": {
+    "intro": "Fever without a focus, and the worst thing it can be. The focus map and the red flags, what to do by age band, then meningitis in full — the CSF table four questions are built on — and the three encapsulated organisms behind it.",
+    "sections": [
+      {
+        "id": "inf-1",
+        "w": "must",
+        "h": "Recognising fever, and why the child’s age decides the work-up",
+        "body": "### Measuring it\n- **Under 4 weeks:** electronic thermometer **in the axilla**.\n- **4 weeks to 5 years:** electronic or **chemical dot** axillary thermometer, **or infrared tympanic**.\n- **Axilla underestimates:** body temperature by **0.5 °C**.\n\n### The three age categories\n- **Neonates:** ≤ 28 days · **young infants:** 1–3 months · **older infants and children:** 3–24 months.\n- **Cause found:** treat it. **Cause not found: think bacteraemia.**\n- **Why the young differ:** *\"young infants below 6 months are protected against common viral infections\"* — so unexplained fever in them is likelier bacterial.\n\n### Message to take home\n- **Most acute fever:** is **viral**.\n- **Occult bacteraemia:** children **< 24 months** with fever and **no localising signs** can carry pathogenic bacteria.\n- **Follow-up:** of the clinical course is the **most sensitive indicator** in serious conditions.\n- **Do not abuse antibiotics:** **FEVER does not mean ANTIBIOTIC.**\n\nSrc: L18 pp.2, 4, 18",
+        "qs": [
+          "pedhd-inf-14",
+          "pedhd-inf-21",
+          "pedhd-inf-22"
+        ]
+      },
+      {
+        "id": "inf-2",
+        "w": "must",
+        "h": "Where the fever is coming from — the focus map",
+        "body": "The deck’s central plate. Work down it in a febrile child with no obvious source; each row is the finding that points to that focus.\n\n|Focus|What points to it|\n|---|---|\n|**Upper respiratory tract infection**|Very common — **may be coincidental with another, more serious illness**|\n|**Otitis media**|**Always examine the tympanic membranes** in a febrile child|\n|**Tonsillitis**|Erythema or **exudate on the tonsils**|\n|**Stridor**|Epiglottitis? viral croup? bacterial tracheitis?|\n|**Pneumonia**|Fever, cough, **raised respiratory rate, chest recession**, abnormal auscultation. **In infants auscultation may be normal** — diagnosis may need a chest X-ray|\n|**Septicaemia**|Hard to recognise **before the rash**. Early signs **tachycardia, tachypnoea, poor perfusion**. Start antibiotics on **clinical suspicion**, not on cultures|\n|**Meningitis / encephalitis**|Lethargy, loss of interest, drowsiness, coma, seizures. Older children: headache, photophobia, neck stiffness, **positive Kernig sign**. **Infants: non-specific**|\n|**Raised intracranial pressure**|Reduced conscious level, abnormal pupils, abnormal posturing, **Cushing triad** (bradycardia, hypertension, abnormal breathing pattern)|\n|**Seizure**|Febrile convulsion? meningitis? encephalitis?|\n|**Periorbital cellulitis**|Redness and swelling of the eyelids; **may spread to the orbit**|\n|**Rash**|Viral exanthem? **purpura from meningococcal infection**?|\n|**Urinary tract infection**|**Urine sample needed for any seriously ill young child, or any febrile illness that does not settle**|\n|**Abdominal pain**|Appendicitis? pyelonephritis? hepatitis?|\n|**Diarrhoea**|Gastroenteritis? **Fever with blood and mucus in the stool** — *Shigella*, *Salmonella* or *Campylobacter*|\n|**Osteomyelitis / septic arthritis**|**Painful bone or joint, or reluctance to move a limb**|\n|**Prolonged fever**|Bacterial infection e.g. **UTI**, bacterial endocarditis; viral, fungal, protozoal; **Kawasaki disease**|\n\n### Three decisions the plate implies but does not print\n- **Pneumonia, admit or not:** saturation **< 92 %**, a toxic child, grunting or failed oral intake → admit for **IV** antibiotics; otherwise **oral amoxicillin at home**. *(Not taken from the course material as a rule; the 92 % itself is printed in `30) Pneumonia`.)*\n- **Stony dullness + reduced air entry:** **pleural fluid, not consolidation** — an effusion needs admission, oxygen and **IV** antibiotics *(not taken from the course material)*.\n- **Diarrhoea, how to rehydrate:** sunken eyes, dry mucosae, reduced turgor, **warm peripheries** = *\"some dehydration\"* → **oral rehydration solution**, not IV.\n\n*Pneumonia and croup as diseases are `resp-pneumonia`/`resp-bronch`; dehydration grading is `gi-diarrhoea`; UTI is `renal-uti`.*\n\nSrc: L18 pp.6–13 (image-only, recovered by render — Illustrated Textbook of Paediatrics ch.14); `30) Pneumonia` and `23).1) Acute diarrhea` cited only",
+        "qs": [
+          "pedhd-inf-9",
+          "pedhd-inf-13",
+          "pedhd-inf-14",
+          "pedhd-inf-15",
+          "pedhd-inf-16",
+          "pedhd-inf-17",
+          "pedhd-inf-19",
+          "pedhd-inf-21"
+        ]
+      },
+      {
+        "id": "inf-3",
+        "w": "high",
+        "h": "Risk factors, and the child who cannot fight encapsulated bacteria",
+        "body": "### Ask about\n- **Illness in the family**, or a specific illness **prevalent in the community**.\n- **Unimmunised.**\n- **Recent travel abroad:** e.g. **malaria, typhoid**. **Animal contact:** e.g. **brucellosis**.\n- **Immunodeficiency:** increased susceptibility.\n\n### The four the deck lists under immunodeficiency\n**The four listed:** post-autosplenectomy in sickle cell disease · splenectomy · nephrotic syndrome · primary immune deficiency.\n\n*The first two are functional asplenia — hence the risk from the capsulated organisms of inf-13 to inf-15. Full account inf-47 to inf-49.*\n\nSrc: L18 p.5",
+        "qs": []
+      },
+      {
+        "id": "inf-4",
+        "w": "must",
+        "h": "Red flags — how ill is this child?",
+        "body": "Ten items, and any one changes the disposition.\n\n- **Age < 1 month.**\n- **Behaviour:** lethargy, irritability or a toxic appearance.\n- **Respiratory distress.**\n- **Petechiae or purpura.**\n- **Inconsolability.**\n- **A seizure**, or **a change in consciousness**.\n- **A headache that will not go away**, or **continued vomiting**.\n- **Complex medical problems.**\n\n*Petechiae or purpura in a febrile child is meningococcal disease until proved otherwise — inf-13.*\n\nSrc: L18 p.15",
+        "qs": [
+          "pedhd-inf-1",
+          "pedhd-inf-22"
+        ]
+      },
+      {
+        "id": "inf-5",
+        "w": "must",
+        "h": "What to do, by age band",
+        "body": "### Under 1 month — admission, always\nEvery febrile child under a month is admitted, however well they look.\n\n- **Always:** WBC with **manual differential**, blood culture, urinalysis and urine culture, **CSF with culture and PCR** (herpes simplex, enterovirus).\n- **Selectively:** chest X-ray only with respiratory signs; stool culture only with diarrhoea.\n- **Treat:** empiric **IV** antibiotics for the common neonatal pathogens; **add aciclovir** if viral infection is suspected.\n\n### 1 to 3 months — assess, then fork\n*Why the band exists: the immune response is immature and localising signs absent, so looking well does not exclude bacteraemia (not taken from the course material).*\n\n### 3 to 24 months\n- **Occult bacteraemia:** fever with no localising signs may still be bacterial.\n- **⚠️ Urine testing:** the one investigation not to skip — **UTI is the serious bacterial infection that presents with fever and a normal examination**.\n\nSrc: L18 pp.4, 16, 17, 18",
+        "flow": {
+          "title": "The febrile young infant, 1–3 months",
+          "steps": [
+            {
+              "k": "step",
+              "t": "After assessment",
+              "n": "History, examination, red-flag check"
+            },
+            {
+              "k": "decision",
+              "t": "Red flags present?",
+              "yes": "High risk",
+              "no": "Low risk, healthy infant"
+            },
+            {
+              "k": "alert",
+              "t": "High risk — ADMIT to hospital",
+              "n": "Start sepsis work-up AND empiric antibiotic"
+            },
+            {
+              "k": "step",
+              "t": "Low risk — option 1",
+              "n": "Obtain investigations · antipyretic · empiric antibiotic"
+            },
+            {
+              "k": "step",
+              "t": "Low risk — option 2",
+              "n": "Obtain investigations · antipyretics · OBSERVATION 48 h"
+            }
+          ]
+        },
+        "qs": [
+          "pedhd-inf-21",
+          "pedhd-inf-22"
+        ]
+      },
+      {
+        "id": "inf-6",
+        "w": "know",
+        "h": "Symptomatic management of the fever itself",
+        "body": "**NICE guidelines** exist for the febrile child; the deck reduces them to four lines.\n\n- **Do not underdress the child.**\n- **Antipyretics:** **paracetamol or ibuprofen**, alternated if a single agent fails.\n- **⚠️ Febrile seizures:** evidence that antipyretics prevent them **is lacking**.\n\nSrc: L18 p.14",
+        "qs": [
+          "pedhd-inf-14"
+        ]
+      },
+      {
+        "id": "inf-7",
+        "w": "must",
+        "h": "Meningitis — what it is, and which organism at which age",
+        "body": "### The frame\n- **Meningitis:** inflammation of the **meninges**. **Commonest cause overall is VIRAL.**\n- **Bacterial:** **5–10 % mortality**; **over 10 % of survivors** keep long-term neurological impairment.\n- **Tuberculous:** rare where TB prevalence is low — not in Egypt (inf-22). **Fungal and parasitic:** rare.\n- **Non-infectious:** **malignancy and autoimmune disease**.\n\n### Bacterial organisms by age\n\n|Age band|Organisms|\n|---|---|\n|**Neonatal to 3 months**|**Group B streptococcus** · *Escherichia coli* · *Listeria monocytogenes*|\n|**1 month to 6 years**|*Neisseria meningitidis* · *Streptococcus pneumoniae* · *Haemophilus influenzae*|\n|**Over 6 years**|*Neisseria meningitidis* · *Streptococcus pneumoniae*|\n\n**Gram film under 3 months:** **cocci in CHAINS** = streptococcal = **group B streptococcus**; **clusters** = staphylococci; *Listeria* is a **bacillus**.\n\nSrc: L18 pp.20, 21; SBI pp.7, 10 (the chains-versus-clusters morphology)",
+        "qs": [
+          "pedhd-inf-25"
+        ]
+      },
+      {
+        "id": "inf-8",
+        "w": "must",
+        "h": "How meningitis presents",
+        "body": "The deck’s five-group grid.\n\n|Group|Features|\n|---|---|\n|**General**|Malaise · irritability · myalgias · headache · **neck or back pain** · restlessness · lethargy|\n|**Gastrointestinal**|Anorexia · **feeding difficulties** · vomiting · diarrhoea · abdominal distension|\n|**Dermatologic**|Cyanosis · **petechiae** · **purpura** · **delayed capillary refill** · non-specific rash|\n|**Neurologic**|Headache · **altered mental status** · focal neurologic signs · seizures · **hearing deficit** · gait disturbance · **nuchal rigidity** · nystagmus · **bulging fontanelle** · **Kernig’s sign** · **Brudzinski’s sign**|\n|**Vital signs**|Fever · **hypothermia** · tachycardia · **bradycardia** · tachypnoea · **apnoea**|\n\n- **Kernig’s sign:** pain on straightening the knee with the hip flexed.\n- **Brudzinski’s sign:** involuntary lifting of the legs when the neck is flexed.\n- **⚠️ The wrong way round:** **hypothermia, bradycardia and apnoea** sit beside fever and tachycardia — the young infant runs the vital signs backwards.\n\nSrc: L18 p.22 (image-only, recovered by render); L18 p.6; SBI pp.1–2",
+        "qs": [
+          "pedhd-inf-3",
+          "pedhd-inf-20"
+        ]
+      },
+      {
+        "id": "inf-9",
+        "w": "must",
+        "h": "The CSF — the table four questions are built on",
+        "body": "Typical changes **beyond the neonatal period**.\n\n|  |Aetiology|Appearance|White cells|Protein|Glucose|\n|---|---|---|---|---|---|\n|**Normal**|—|Clear|**0–5/mm³**|**0.15–0.4 g/L**|**≥ 50 % of blood**|\n|**Meningitis**|**Bacterial**|**Turbid**|**Polymorphs ↑↑**|↑↑|**↓↓**|\n|**Meningitis**|**Viral**|Clear|**Lymphocytes ↑** (*initially may be polymorphs*)|Normal / ↑|**Normal / ↓**|\n|**Meningitis**|**Tuberculosis**|Turbid / clear / **viscous**|**Lymphocytes ↑**|**↑↑↑**|**↓↓↓**|\n|**Encephalitis**|Viral / unknown|Clear|Normal / ↑ lymphocytes|Normal / ↑|Normal / ↓|\n\n### How to read a laboratory sheet\n- **Calculate the ratio:** normal is **≥ 50 % of blood glucose**. CSF 2.1 against blood 7.2 is **29 %** — bacterial, whatever the absolute number looks like.\n- **Bacterial:** **neutrophil predominance + a low ratio**, treated before the culture returns.\n- **⚠️ Tuberculous, not viral:** lymphocytes with a **VERY high protein and VERY low glucose**. Viral leaves glucose normal or barely low and protein under 2 g/L; weeks of fever settles it.\n- **Traumatic tap:** thousands of red cells, few white cells, normal protein and glucose.\n\n*Defect note: SBI p.1’s own CSF row is cut off mid-parenthesis — \"low glucose ( mg/dL)\" — in the PDF itself. The threshold above is L18 p.30’s.*\n\nSrc: L18 p.30 (image-only, recovered by render); SBI p.1",
+        "qs": [
+          "pedhd-inf-3",
+          "pedhd-inf-4",
+          "pedhd-inf-20",
+          "pedhd-inf-28"
+        ]
+      },
+      {
+        "id": "inf-10",
+        "w": "must",
+        "h": "Lumbar puncture — when not to do it",
+        "body": "Seven, and the last is the one candidates forget.\n\n- **Cardiorespiratory instability** · **focal neurological signs**.\n- **Raised intracranial pressure:** coma, high BP, low heart rate, papilloedema.\n- **Coagulopathy** · **thrombocytopenia** · **local infection at the LP site**.\n- **⚠️ Undue delay:** if the LP would delay antibiotics, skip it.\n\n### What to do instead\n- **Blood culture:** positive in **50–75 %** of meningococcal cases, and falls once antibiotics are given.\n- **⚠️ Partially treated:** PCR is definitive — highly sensitive, and **useful when antibiotics were given before sampling**, for meningococcus and Hib alike.\n- **Skin biopsy:** scrape or biopsy of a petechia can show the organism.\n\nSrc: L18 p.31; SBI pp.3, 10",
+        "qs": [
+          "pedhd-inf-2"
+        ]
+      },
+      {
+        "id": "inf-11",
+        "w": "must",
+        "h": "Treating bacterial meningitis; prophylaxis; what it leaves behind",
+        "body": "### Treatment\n- **No delay:** in antibiotics or supportive therapy.\n- **First choice:** a **third-generation cephalosporin — ceftriaxone** or cefotaxime.\n- **Pneumococcal meningitis:** ceftriaxone **plus vancomycin** until sensitivities return.\n- **⚠️ Dexamethasone:** **with, or just before, the first antibiotic dose** — reduces long-term complications, **especially deafness**.\n\n### Prophylaxis of contacts\n- **Who:** **all household contacts** for meningococcal meningitis and Hib — and, for meningococcus, anyone exposed to respiratory secretions.\n- **What:** **rifampicin** twice daily for 2 days, **ciprofloxacin** as a single oral dose, or **ceftriaxone** as a single IM injection, the safe choice in pregnancy.\n- **Why:** to **eradicate nasopharyngeal carriage**, not to treat the contact.\n- **Hib only:** rifampicin **if a vulnerable person is in the house** — a child under 4 not fully vaccinated, or someone immunocompromised.\n- **Isolation:** droplet precautions for **24 hours** after effective antibiotics start.\n\n### Complications\n- **Hearing loss:** the commonest neurological sequel.\n- **Hydrocephalus:** obstructive or communicating.\n- **Also:** **stroke · subdural effusion or empyema · brain abscess · dural sinus thrombophlebitis · cranial nerve palsies**.\n- **Sequelae:** cerebral palsy, blindness, microcephaly, developmental delay.\n\nSrc: L18 pp.23, 32, 33; SBI pp.3, 7, 11",
+        "qs": [
+          "pedhd-inf-3",
+          "pedhd-inf-20"
+        ]
+      },
+      {
+        "id": "inf-12",
+        "w": "high",
+        "h": "Viral meningitis and encephalitis",
+        "body": "### Viral meningitis\n- **Share:** **two-thirds** of CNS infections are viral.\n- **Causes:** **enteroviruses**, EBV, adenoviruses, **mumps** — now rare because of MMR.\n- **Course:** much **less severe** than bacterial; **full recovery anticipated**. Confirm by **PCR of CSF** and serology.\n\n### Encephalitis\n- **Definition:** inflammation of the **brain tissue** itself, not the meninges.\n- **Onset:** can be **insidious**, and includes **behavioural change**.\n- **⚠️ Treat for HSV first:** **parenteral high-dose aciclovir until HSV is EXCLUDED**, not after it is proved.\n- **CSF:** clear, lymphocytes normal or ↑, protein normal or ↑, glucose normal or ↓ (inf-9).\n\nSrc: L18 pp.34, 35, 30",
+        "qs": [
+          "pedhd-inf-4"
+        ]
+      },
+      {
+        "id": "inf-13",
+        "w": "must",
+        "h": "Neisseria meningitidis and meningococcal disease",
+        "body": "### The organism\n- **What it is:** a **Gram-negative aerobic diplococcus** — **kidney-bean shaped pairs with adjacent sides flattened**. A strictly human pathogen.\n- **Carriage:** the nasopharynx of roughly **10 %** of people, asymptomatically; disease follows bloodstream invasion.\n- **Capsule:** the key virulence factor, **prevents phagocytosis**. **12 serogroups**; **A, B, C, W-135, X, Y** cause almost all disease.\n- **Endotoxin (LOS):** massive inflammation → **shock and DIC**. **Pili:** attachment to nasopharyngeal epithelium.\n\n### Two clinical faces\n- **Meningitis:** the classic triad of **fever, neck stiffness and altered mental status**.\n- **Meningococcaemia:** the **more lethal** form, with or without meningitis. **Very rapid progression**, high mortality, children and adolescents.\n\n### The rash\n- **Evolution:** macular red, changing rapidly to **maculopapular and dark** on trunk and limbs, **petechial and purpuric within a few hours**.\n- **Non-blanching:** the **glass test**. Lesions are **irregular in size and outline with a necrotic centre**.\n- **Purpura fulminans:** the extensive form, large confluent purple patches.\n\n### Red flags that mean now\n- **Non-blanching rash** · **bulging fontanelle** · **rapidly progressing purpura** · **cold hands and feet, mottled skin, very rapid breathing**.\n- **Course:** acute fever and prostration → **hypotension**; headache, myalgia, vomiting, loss of consciousness.\n\n### Complications\n- **Hearing loss:** the commonest. **Skin and limb necrosis**, often needing **amputation**.\n- **Waterhouse–Friderichsen syndrome:** massive **adrenal haemorrhage**, acute adrenal failure, death.\n- **Renal failure:** from profound hypotension and DIC.\n\n### Investigation and treatment\n- **CSF:** turbid, high protein, low glucose, neutrophils. **Gram stain:** Gram-negative diplococci, **intra- and extracellular**. **PCR** if pre-treated (inf-10).\n- **⚠️ Never delay treatment for investigations:** oxygen, IV fluids, vasopressors, plus **ceftriaxone or cefotaxime immediately**; **penicillin G** only once proven sensitive.\n- **Prevention:** **MenACWY** and **MenB** for adolescents, travellers to the African **\"meningitis belt\"** and the immunocompromised; ring chemoprophylaxis (inf-11).\n\nSrc: SBI pp.1–3; L18 pp.24–29 (pp.24, 25, 26, 28 image-only, recovered by render)",
+        "qs": [
+          "pedhd-inf-1",
+          "pedhd-inf-2"
+        ]
+      },
+      {
+        "id": "inf-14",
+        "w": "high",
+        "h": "Streptococcus pneumoniae",
+        "body": "### The organism\n- **What it is:** a **Gram-positive, lancet-shaped diplococcus** in pairs or short chains; colonises the nasopharynx asymptomatically.\n- **Capsule:** prevents phagocytosis. **Pneumolysin:** damages host membranes. **Autolysin (LytA):** lyses the bacterium’s **own** wall, **releasing pneumolysin**.\n\n### What it causes\n- **Pneumonia:** sudden **high fever, rigors**, **\"rusty-coloured\" sputum**, **pleuritic** pain, crackles.\n- **Meningitis:** headache, fever, nuchal rigidity, **photophobia**. **Otitis media** and **bacteraemia** complete the list.\n- **Complications:** **permanent hearing loss**, **empyema**, lung abscess, septic shock, **Waterhouse–Friderichsen syndrome**.\n\n### Investigation and treatment\n- **Tests:** chest X-ray for lobar consolidation or effusion; **Gram-positive diplococci with alpha-haemolysis** (greenish) on blood agar; LP; PCR if pre-treated.\n- **Pneumonia:** **amoxicillin** if susceptible. **Meningitis:** IV **ceftriaxone + vancomycin**, with **dexamethasone before the first dose**.\n- **Prevention:** **PCV15/PCV20** conjugate in infants; **daily penicillin prophylaxis in asplenia**.\n\n*Defect note: SBI p.5 calls pneumococcus \"the leading cause of bacterial meningitis in children under 5\", while L18 p.21 lists Neisseria meningitidis first for the 1-month-to-6-year band. Both are printed as they stand.*\n\nSrc: SBI pp.4–7; L18 p.21",
+        "qs": [
+          "pedhd-inf-16"
+        ]
+      },
+      {
+        "id": "inf-15",
+        "w": "must",
+        "h": "Haemophilus influenzae type b — epiglottitis, and the line against croup",
+        "body": "### The organism\n- **What it is:** a small **Gram-negative, pleomorphic coccobacillus**. **Not** a cause of influenza.\n- **Virulence:** the **polyribosylribitol phosphate (PRP)** capsule — resists phagocytosis, allows bloodstream invasion.\n- **Spread:** respiratory droplets from cases or **asymptomatic carriers**; affects children **under 5**.\n\n### Epiglottitis — the hallmark\n- **Onset:** **rapid** — high fever, severe sore throat, a **muffled \"hot potato\" voice**.\n- **Tripod position:** leaning forward, mouth open, jaw thrust out to hold the airway open.\n- **Classic signs:** **drooling** and **stridor**. **Lateral neck X-ray:** the **\"thumbprint sign\"**.\n- **⚠️ Airway first:** secure it, usually by intubation, **before any other procedure**; IV dexamethasone may be used.\n\n### Other invasive disease\n- **Hib meningitis:** fever, headache, vomiting, neck stiffness; infants show only irritability, poor feeding, drowsiness or a **bulging fontanelle**.\n- **Also:** pneumonia, **septic arthritis** of knee or hip, and **facial or periorbital cellulitis** with reddish-blue swelling.\n\n### Investigation, treatment, prevention\n- **Culture** of blood and CSF on **enriched (chocolate) agar** is the gold standard; **PCR** after antibiotics; **latex agglutination** for capsular antigen.\n- **Treat:** **ceftriaxone or cefotaxime**.\n- **Prevent:** the **Hib conjugate vaccine, 95–100 % effective** — in Egypt inside the pentavalent at 2, 4 and 6 months (inf-51). **Rifampicin** to contacts where a vulnerable person is present.\n- **Complications:** **hearing loss in 15–30 % of meningitis survivors**; sudden airway obstruction and death from epiglottitis.\n\n### ⚠️ Epiglottitis versus croup — the discrimination\n\n|  |Acute epiglottitis|Viral croup|\n|---|---|---|\n|**Organism**|**Hib**|**Parainfluenza virus**|\n|**Onset**|**Hours**, no prodrome|Over 1–2 days after **coryza**|\n|**Fever**|**High**|**Absent or low grade**|\n|**Cough**|Absent or slight|**Barking**|\n|**Voice**|**Muffled, \"hot potato\"**|Hoarse|\n|**Drooling**|**Yes**|No|\n|**Posture**|**Tripod, sitting forward**|Any|\n|**Handling**|**Do not examine the throat** — secure the airway|Steroids, usually safe to examine|\n\n*The croup column is not taken from the course material except for the organism.* `30) Pneumonia` and `32)Acute bronchiloitis_` both print parainfluenza, and L18 p.6 lists \"viral croup\" among the causes of stridor.\n\n*No cached deck teaches croup as a disease — it belongs to `resp-bronch`.*\n\nSrc: SBI pp.8–11; L18 p.6; `30) Pneumonia` / `32)Acute bronchiloitis_` cited only",
+        "qs": [
+          "pedhd-inf-17"
+        ]
+      }
+    ]
+  },
+  "infection-bact": {
+    "intro": "The named bacterial infections and the one that imitates them. Staphylococcus and its toxin syndromes, group A streptococcus, then Kawasaki disease — where the answer is an echocardiogram — and typhoid and childhood tuberculosis.",
+    "sections": [
+      {
+        "id": "inf-16",
+        "w": "high",
+        "h": "Staphylococcus aureus",
+        "body": "### The organism\n- **What it is:** a **Gram-positive coccus in clusters**, \"like bunches of grapes\"; a commensal in **~30 %** of people, skin and nostrils.\n- **Catalase positive:** distinguishes it from streptococci. **Coagulase positive:** distinguishes it from *S. epidermidis*.\n- **Protein A:** binds IgG to **hide** the bacterium. **Exotoxins:** **TSST-1** and **exfoliatin**. **Alpha-toxin:** pores → **tissue necrosis**.\n\n### The clinical spectrum\n- **Skin:** abscesses and **boils**, **impetigo with honey-coloured crusts**, cellulitis.\n- **Toxin-mediated:** **toxic shock syndrome** (inf-17), **scalded skin syndrome** (inf-19), and **food poisoning within 1–6 hours** of contaminated food.\n- **Invasive:** line or wound bacteraemia, **endocarditis**, **osteomyelitis** (the commonest cause of bone infection), **necrotising pneumonia** after influenza.\n- **The deck’s own six:** **toxic shock syndrome · necrotising fasciitis/cellulitis · peri-orbital cellulitis · scalded skin syndrome · impetigo · boils**.\n\n### Investigation and treatment\n- **Gram stain and culture** of blood, pus or sputum is the gold standard; **sensitivity testing decides MSSA versus MRSA**; TEE for valve vegetations.\n- **MSSA:** **nafcillin, oxacillin or cefazolin**. **MRSA:** **vancomycin, daptomycin or linezolid**.\n- **⚠️ Skin abscess:** incision and drainage matters more than the antibiotic — and an infected line or prosthesis usually has to come out.\n- **Prevent:** hand hygiene; **mupirocin nasal ointment and chlorhexidine washes** to decolonise carriers before surgery.\n\n*Bullous impetigo blisters, so S. aureus belongs on the vesicular list — inf-38.*\n\nSrc: SBI pp.7–9, 12–14; L18 p.41",
+        "qs": [
+          "pedhd-inf-26"
+        ]
+      },
+      {
+        "id": "inf-17",
+        "w": "must",
+        "h": "Toxic shock syndrome",
+        "body": "### The two organisms\n- **Staphylococcus aureus —** **bacteraemia UNCOMMON**; toxin-driven (TSST-1).\n- **Streptococcus pyogenes —** **bacteraemia COMMON**; often follows a **skin infection**.\n\n### The rash — describe it in five words\n**The rash:** diffuse · erythematous · blanching · \"erythroderma\" · sunburn.\n\n### Associated signs and symptoms\n- **Fever —** **40 °C, one day**.\n- **Signs of shock —** **present**, and that is what separates it from a viral exanthem.\n- **Headache · dizziness · myalgias.**\n- **Injected bulbar conjunctiva** and **hyperaemic mucous membranes**.\n- **Vomiting and diarrhoea.**\n\n**The face in the deck’s own photograph:** **red lips and oedematous eyelids from capillary leak**, in a child ventilated through a nasotracheal tube.\n\n**Streptococcal TSS (STSS):** rapidly progressing shock and multi-organ failure; treated with surgical debridement where there is necrotising fasciitis, plus IV **clindamycin**, which switches off toxin production.\n\nSrc: L18 pp.36–41 (p.37 image-only, recovered by render); SBI pp.9, 12",
+        "qs": []
+      },
+      {
+        "id": "inf-18",
+        "w": "high",
+        "h": "Group A beta-haemolytic streptococcus",
+        "body": "### The organism\n- **What it is:** *Streptococcus pyogenes*, **Gram-positive cocci in chains**, **beta-haemolytic** on blood agar, **bacitracin sensitive**.\n- **M protein:** the most important factor — **resists phagocytosis** and drives the **autoimmune** sequelae.\n- **Streptolysin O and S:** lyse red and white cells. **Pyrogenic exotoxins (SpeA/B/C):** the **scarlet fever rash** and streptococcal toxic shock. **Hyaluronidase:** the **\"spreading factor\"**.\n\n### Pyogenic and toxigenic disease\n- **Pharyngitis:** sudden sore throat, fever, **beefy red tonsils with exudate**. **⚠️ It usually LACKS cough and coryza** — that absence is the clinical discriminator against a viral sore throat.\n- **Skin:** **impetigo** with honey-coloured crusts; **erysipelas**, a bright red **\"butterfly\" facial rash with well-defined borders**; cellulitis → **necrotising fasciitis**.\n- **Toxigenic:** **scarlet fever** (inf-28) and **streptococcal toxic shock** (inf-17).\n\n### The post-streptococcal sequelae — the reason to treat\n- **Acute rheumatic fever:** **2–3 weeks after PHARYNGITIS** — heart (carditis), joints (arthritis), brain (chorea).\n- **Post-streptococcal glomerulonephritis:** after **pharyngitis OR skin infection** — **tea- or cola-coloured urine**, hypertension.\n- **Necrotising fasciitis:** very high mortality; **pain out of proportion** to a normal-looking limb, with **crepitus**.\n\n### Investigation and treatment\n- **RADT** in clinic — high specificity, lower sensitivity; **throat culture is the gold standard if RADT is negative**.\n- **ASO titre** and **anti-DNase B** confirm a **recent past** infection — anti-DNase B is the more useful after a **skin** infection.\n- **First line:** **penicillin V orally or penicillin G IM for 10 days**; **amoxicillin** in children for taste; **azithromycin or clindamycin** if allergic.\n- **Prevention:** early complete treatment **prevents rheumatic fever**; **monthly penicillin for years** after ARF. **No GAS vaccine exists.**\n\n*Rheumatic fever is `cardiac-acq`; post-streptococcal glomerulonephritis is `renal`.*\n\nSrc: SBI pp.10–12, 15–17",
+        "qs": []
+      },
+      {
+        "id": "inf-19",
+        "w": "know",
+        "h": "Staphylococcal scalded skin syndrome (Ritter’s disease)",
+        "body": "### Mechanism\n- **Organism:** specific strains of *S. aureus*, typically **phage group II**.\n- **Toxins:** **exfoliative toxins A and B**, released into blood from a **localised** site — ears, nose or the **umbilical stump**.\n- **Target:** they cleave **desmoglein-1** in the **upper epidermis** → widespread detachment.\n- **Who:** children **under 5** — no protective antibody and **immature renal clearance of the toxin**.\n\n### Clinical picture\n- **Prodrome:** fever, irritability, malaise. **Rash:** painful and widespread, starting on the **face and flexures**.\n- **Blistering:** within **24–48 hours**, large **flaccid bullae**; **\"tissue paper\" skin** and **extreme tenderness**.\n- **⚠️ Mucosal SPARING** — unlike toxic epidermal necrolysis. **Nikolsky sign positive:** skin slips off with gentle rubbing.\n\n### Complications, diagnosis, treatment\n- **Dehydration and electrolyte loss** from raw skin · **hypothermia** · **sepsis** · **acute renal failure**.\n- **⚠️ Culture the primary site — nose, throat, conjunctiva, umbilicus — because the BLISTER FLUID IS STERILE**, the disease being toxin-mediated. Biopsy shows a **superficial split**.\n- **Treat:** admit, often to burns or intensive care; **IV nafcillin or oxacillin**, or **cefazolin**; **vancomycin** if MRSA suspected.\n- **Supportive:** IV fluids, temperature control, analgesia — **avoid ibuprofen because of the renal risk**.\n\nSrc: SBI pp.12–14, 18–19",
+        "qs": [
+          "pedhd-inf-26"
+        ]
+      },
+      {
+        "id": "inf-20",
+        "w": "must",
+        "h": "Kawasaki disease",
+        "body": "L18 names it only under **prolonged fever**; the teaching is in the cardiac deck, whose criteria slides were image-only until now.\n\n- **What it is:** an **immune-mediated vasculitis** of childhood.\n- **⚠️ High tendency for CORONARY ARTERITIS** — that, not the fever, is the whole prognosis.\n\n### Diagnostic criteria — AHA 2017\n**The criteria:** fever of **5 days or more**, PLUS **four of the following five**.\n\n|Criterion|Description|\n|---|---|\n|**1 Conjunctivitis**|**Bilateral, bulbar** conjunctival injection **without exudate**|\n|**2 Lymphadenopathy**|**Cervical, often > 1.5 cm, usually unilateral**|\n|**3 Rash**|**Maculopapular**, diffuse erythroderma, or erythema multiforme|\n|**4 Lips or oral mucosa**|**Red cracked lips**, **strawberry tongue**, or diffuse erythema of the oropharynx|\n|**5 Extremities**|**Erythema and oedema of palms and soles** in the acute phase; **periungual desquamation** in the subacute phase|\n\n**⚠️ The footnote is the exam point:** Kawasaki disease **may be diagnosed with FEWER than four features if coronary artery abnormalities are detected**.\n\n### Treatment and follow-up\n- **IVIG is the gold standard.** **Steroids and other immunomodulators** are added in **high-risk and resistant** patients.\n- **⚠️ Echocardiography is the key investigation**, because coronary involvement decides everything — the deck shows **RCA and left main aneurysms with thrombus** and an angiogram of a coronary aneurysm.\n- **The missed case:** an untreated prolonged childhood fever presenting years later with exertional chest pain and a **dilated left coronary artery**. **IVIG within 10 days prevents the aneurysms**, and **there is no vaccine** *(both not taken from the course material)*.\n\n*MIS-C after COVID is the near look-alike, also treated with IVIG and immunomodulators. It is `cardiac-acq`’s.*\n\nSrc: `36)Myocardial diseases` pp.29–39 (pp.30–39 image-only, recovered by render — AHA 2017 Table 2, presented under the European 2018 consensus); L18 p.13",
+        "qs": [
+          "pedhd-inf-19",
+          "pedhd-inf-24"
+        ]
+      },
+      {
+        "id": "inf-21",
+        "w": "high",
+        "h": "Typhoid (enteric) fever",
+        "body": "### Organism and exposure\n- ***Salmonella* Typhi:** a Gram-negative *Salmonella enterica* serotype. ***S.* Paratyphi A, B, C** cause a **milder** paratyphoid fever.\n- **Onset:** **6 to 30 days** after exposure; recent travel is the history to ask for (inf-3).\n\n### Presentation, and it splits by age\n- **General:** **stepwise high fever** to 40 °C, headache, malaise, anorexia.\n- **Under 5:** **non-specific** — diarrhoea, vomiting, **febrile seizures**.\n- **Older children:** **abdominal pain and CONSTIPATION**.\n- **Signs:** **rose spots** — transient pink macules on chest and abdomen, in **under 20 %** — **hepatosplenomegaly**, and **relative bradycardia**.\n\n### Complications — 10–15 % of hospitalised children, in the 2nd or 3rd week\n- **Gastrointestinal:** **haemorrhage or perforation of the terminal ileum**, paralytic ileus, acalculous cholecystitis.\n- **Neurological:** **typhoid encephalopathy**, meningitis, ataxia. **Other:** myocarditis, pneumonia, hepatitis.\n\n### Diagnosis and treatment\n- **Blood culture:** the practical gold standard, **most sensitive in week 1**, needing **5 mL** in children.\n- **⚠️ Bone marrow culture:** the **MOST sensitive (80–95 %)**, and it **stays positive after antibiotics have started**.\n- **Widal test:** **often unreliable** — cross-reactivity and false positives. **Typhidot** and **TUBEX** are faster, variably accurate.\n- **CBC:** **leukopenia**, or leukocytosis in young children.\n- **Treat:** **azithromycin or ceftriaxone** empirically; **ciprofloxacin** where susceptible; **carbapenems for XDR**. **High-dose dexamethasone** for severe encephalopathy or shock.\n- **Prevent:** **typhoid conjugate vaccine from 6 months**, oral **Ty21a**, injectable **ViPS**; **WASH** — water, sanitation, hygiene.\n\nSrc: TT pp.1–3",
+        "qs": []
+      },
+      {
+        "id": "inf-22",
+        "w": "must",
+        "h": "Tuberculosis in children",
+        "body": "### Organism and the word that governs everything\n- ***Mycobacterium tuberculosis* complex —** with *M. bovis* (unpasteurised dairy) and *M. africanum*. **Acid-fast, slow-growing, aerobic bacilli**, spread by airborne droplets.\n- **⚠️ Paediatric TB is \"PAUCIBACILLARY\" —** a low bacterial load, which is why smears are so often negative and why the diagnosis needs a high index of suspicion.\n\n### Presentation by age\n- **Infants under 2:** **highest risk of rapid progression to disseminated disease**; poor feeding, **failure to thrive**, or a **\"pneumonia\" that fails to respond to standard antibiotics**.\n- **Children 2–10:** often **oligosymptomatic** — chronic **non-productive cough over 2 weeks**, low-grade fever, **weight loss**.\n- **Adolescents over 10:** **\"adult-type\"** disease — productive cough, night sweats, **cavitary lesions**.\n\n### Extrapulmonary TB — up to 25 %, commoner in children than adults\n- **Lymphadenitis (scrofula):** the commonest — **painless, firm, matted cervical nodes**.\n- **TB meningitis:** a **medical emergency** on a background of **weeks** of fever. CSF: **lymphocytes, protein ↑↑↑, glucose ↓↓↓** (inf-9).\n- **Miliary TB:** **\"millet seed\"** spots on X-ray, hepatosplenomegaly, respiratory distress.\n\n### Complications\n- **Pulmonary:** bronchial obstruction from enlarged nodes, bronchiectasis, permanent scarring.\n- **Neurological:** hydrocephalus, stroke, deafness, blindness or intellectual impairment after meningitis.\n- **Skeletal:** **Pott’s disease**, a **gibbus** deformity, possible paraplegia. **Abdominal:** obstruction, tuberculous peritonitis.\n\n### Diagnosis\n- **Screening:** **tuberculin skin test (Mantoux)** or **IGRA**. **⚠️ IGRA is preferred in BCG-vaccinated children**, to avoid false positives.\n- **⚠️ Radiology:** chest X-ray for **HILAR LYMPHADENOPATHY** — **the lateral view is essential** — or a miliary pattern. In children the hallmark is **nodal, not cavitary**.\n- **Microbiology:** **gastric aspirate on 3 consecutive mornings**, **induced sputum**, or **stool** for GeneXpert Ultra.\n- **Molecular:** **GeneXpert MTB/RIF Ultra is the preferred initial test**, detecting TB DNA **and rifampicin resistance**.\n\n### Treatment — intensive phase then continuation\n\n|Condition|Intensive (2 months)|Continuation|Total|\n|---|---|---|---|\n|**Non-severe pulmonary TB**|**HRZ (E)**|HR|**4–6 months**|\n|**Severe / cavitary pulmonary TB**|**HRZE**|HR|**6 months**|\n|**TB meningitis / bone TB**|**HRZE + ethionamide**|HR|**12 months**|\n\n**Key:** H isoniazid · R rifampicin · Z pyrazinamide · E ethambutol.\n\n- **Meningitis or pericarditis —** add **corticosteroids (prednisolone) for 4–6 weeks**.\n- **Hydrocephalus —** may need a **ventriculoperitoneal shunt**.\n\n### Prevention\n- **BCG at birth:** prevents the severe forms — **miliary TB and meningitis** — with **variable efficacy against adult-type pulmonary TB**. *In Egypt, 0.05 mL intradermally into the left shoulder — inf-51.*\n- **TB preventive treatment:** for exposed children — **3 months weekly isoniazid + rifapentine (3HP)** or **4 months daily rifampicin (4R)**.\n- **Contact tracing:** screen all household contacts of an index case.\n\nSrc: TT pp.4–6; L18 pp.20, 30",
+        "qs": [
+          "pedhd-inf-4",
+          "pedhd-inf-6"
+        ]
+      }
+    ]
+  },
+  "infection-rash": {
+    "intro": "The rashes that are flat and red, set side by side because that is how they are examined. The vocabulary an answer is written in, then measles, rubella and its congenital form, scarlet fever, roseola, fifth disease and glandular fever.",
+    "sections": [
+      {
+        "id": "inf-23",
+        "w": "high",
+        "h": "Describing a rash — the vocabulary the answer is written in",
+        "body": "### Primary morphology — the individual lesion\n\n|Term|What it is|Example|\n|---|---|---|\n|**Macule**|**Flat**, discoloured spot **< 1 cm**|Freckles, **early measles**|\n|**Patch**|A macule **> 1 cm**||\n|**Papule**|**Solid, raised** bump < 1 cm|Warts, insect bites|\n|**Plaque**|Broad, raised, **flat-topped**; papules coalescing|Psoriasis|\n|**Vesicle**|Small, **clear fluid-filled blister** < 1 cm|**Chickenpox**, herpes|\n|**Bulla**|A vesicle **> 1 cm**|**SSSS**|\n|**Pustule**|Small raised lesion **filled with pus**|Acne, impetigo|\n|**Wheal (hive)**|Temporary, **itchy**, raised, from dermal swelling, often pale-centred|Allergic reactions|\n\n### Secondary morphology — arrangement and change\n- **Annular:** ring-shaped with a clear centre (ringworm). **Linear:** a straight line, from scratching or poison ivy.\n- **Target (iris):** concentric rings, a bull’s-eye (Lyme disease, erythema multiforme).\n- **Crust (scab):** dried fluid, blood or pus — the **honey-coloured** crust of impetigo. **Scale:** flaky white dead skin.\n- **Umbilicated:** a raised bump with a **central dimple** (molluscum contagiosum).\n\n### Distribution\n- **Generalised —** over most of the body; typical of **viral exanthems**.\n- **Symmetrical —** the same on both sides.\n- **Dermatomal —** one nerve territory, **one side** — that is **zoster**.\n- **Acral —** distal parts: **hands, feet**, ears — that is **hand, foot and mouth disease**.\n\nSrc: MPR pp.1–2",
+        "qs": []
+      },
+      {
+        "id": "inf-24",
+        "w": "must",
+        "h": "The maculopapular exanthems side by side",
+        "body": "Seven diseases; the question is always which one. The **rash-versus-fever timing** separates three of them on its own.\n\n|Disease|Agent|Incubation|Prodrome|Rash|The give-away|\n|---|---|---|---|---|---|\n|**Measles**|**Morbillivirus**, ssRNA, Paramyxoviridae|**10–14 d**|**2–4 d, the \"three Cs\"** — cough, coryza, conjunctivitis; stepwise fever|Begins at the **hairline and face**, spreads **downward**, becomes **confluent**|**Koplik spots**, and **coppery-brown staining with desquamation** as it fades|\n|**Rubella**|Rubella virus, Matonaviridae|**14–17 d**|Mild or none in children|**Pink, finer, less bright**; face and neck → down; **generalised within 24 h**|**Tender post-auricular, occipital and posterior cervical nodes**, 5–10 d before the rash. **Fades by day 3**, no staining|\n|**Scarlet fever**|**Group A strep** pyrogenic exotoxin|**2–5 d**|**Abrupt** high fever, sore throat, **strawberry tongue**|**\"Sandpaper\"**, finely papular; trunk and neck → limbs; **blanches**|**Pastia lines** in the folds, **circumoral pallor**, **fingertip desquamation**|\n|**Roseola**|**HHV-6** (less often HHV-7)|**5–15 d**|**3–5 d of fever > 40 °C in a child who looks WELL**|Small pale-pink **almond-shaped** macules, **trunk**, spares the face; **non-pruritic**|**⚠️ The rash appears only AFTER the fever breaks** — \"the crisis\". **Nagayama spots** on the soft palate|\n|**Erythema infectiosum**|**Parvovirus B19**, ssDNA|**4–14 d**|Mild fever, headache, coryza|**Slapped cheek** → **lacy/reticular** on trunk and extensors → recurs with heat, sun, exercise|**By the time the rash appears the child is no longer infectious**|\n|**Infectious mononucleosis**|**EBV (HHV-4)**|**4–6 weeks**|3–5 d malaise, headache, fatigue|Faint maculopapular in **~10 %**; **florid and itchy in up to 90 % given amoxicillin**|**Posterior cervical nodes, hepatosplenomegaly, atypical lymphocytes**|\n|**Enteroviruses**|Coxsackie, echovirus|Days|Non-specific febrile illness|Variable maculopapular|Summer and autumn; overlaps with HFMD (inf-36)|\n\n### Three timing rules that decide most vignettes\n- **Rash WITH the fever:** after a 3–4 day prodrome — measles.\n- **Rash AFTER the fever breaks:** in a well infant — roseola.\n- **Rash once the child is already better:** erythema infectiosum.\n- **⚠️ Not every febrile rash:** a short mild coryzal illness with a low-grade temperature and a **faint macular trunk rash** in an infant still drinking is an ordinary **rhinovirus cold**.\n- **Read severity and duration first**, before reading the rash.\n\nSrc: MPR pp.3–17; PPT (goose-flesh as the scarlet-fever texture) cited only",
+        "qs": [
+          "pedhd-inf-9"
+        ]
+      },
+      {
+        "id": "inf-25",
+        "w": "must",
+        "h": "Measles",
+        "body": "**Measles (rubeola):** a highly contagious acute **viral respiratory illness**, still a leading cause of **vaccine-preventable death**.\n\n### Agent and spread\n- **Virus:** enveloped **single-stranded RNA**, genus **Morbillivirus**, family **Paramyxoviridae**; **humans are the only reservoir**.\n- **Spread:** **airborne droplets** or contact with respiratory secretions. **Incubation 10–14 days** (7–21); fever from day 10–12.\n- **⚠️ Infectious window:** from **4 days BEFORE to 4 days AFTER** the rash.\n\n### Prodrome — 2 to 4 days\n- **Fever:** **stepwise**, peaking **39.4–40.6 °C**. **The three Cs:** **cough, coryza, conjunctivitis**.\n- **⚠️ Koplik spots:** **pathognomonic** — tiny white-to-bluish specks on a red base on the **buccal mucosa opposite the molars**, **1–2 days before** the rash.\n\n### The rash\n- **Timing:** about **14 days after exposure**.\n- **Pattern:** begins at the **hairline and face**, spreads **cephalocaudally** — palms and soles in severe cases — and becomes **confluent**.\n- **Resolution:** fades after **5–6 days**, leaving **coppery-brown staining and fine desquamation**.\n\n### Complications — 30–40 % of cases\n- **Common:** **otitis media 7–9 %**, **diarrhoea 8 %**, pneumonia.\n- **⚠️ Cause of death:** **pneumonia** is the leading cause of measles death in children.\n- **Acute encephalitis:** **1 in 1,000** — permanent brain damage or deafness.\n- **SSPE:** **1 in 10,000–100,000**, fatal progressive brain degeneration **years** later.\n\n### Treatment and prevention\n- **No antiviral.** Supportive; **avoid aspirin**; treat secondary bacterial infection.\n- **⚠️ Vitamin A for ALL paediatric cases**, to reduce mortality and eye damage.\n- **MMR:** two doses, **12–15 months** and **4–6 years**. *In Egypt at 12 months, boosted at 18 — inf-51.*\n- **Post-exposure prophylaxis:** **vaccine within 72 hours**, or **immune globulin within 6 days**.\n\nSrc: MPR pp.3–5",
+        "qs": [
+          "pedhd-inf-8"
+        ]
+      },
+      {
+        "id": "inf-26",
+        "w": "high",
+        "h": "Rubella (German measles)",
+        "body": "**Rubella:** mild in children — **and devastating in pregnancy**, which is why it is taught.\n\n### Agent and spread\n- **Virus:** enveloped **positive-sense ssRNA**, the sole member of genus **Rubivirus**, family **Matonaviridae**; humans the only reservoir.\n- **Incubation:** **14–17 days** (12–23). **Infectious 7 days before to 7 days after** the rash.\n- **⚠️ 25–50 % of infections are asymptomatic**, which is why serology, not history, decides immunity. **Congenital cases shed virus for a year or more.**\n\n### Clinical picture\n- **In children:** the **rash is often the first sign**; a 1–5 day prodrome occurs mainly in adolescents and adults.\n- **Prodrome:** **low-grade fever (< 39 °C)**, headache, malaise, mild conjunctivitis, coryza.\n- **⚠️ Lymphadenopathy is the hallmark:** **tender post-auricular, occipital and posterior cervical** nodes, **5–10 days BEFORE** the rash.\n- **Forchheimer spots:** red petechiae on the **soft palate**; **not pathognomonic**.\n- **Rash:** pink maculopapular, **finer and less bright than measles**; face and neck → down, **generalised within 24 hours**, **fading by day 3** **without staining or peeling**.\n\n### Complications and prevention\n- **Arthralgia and arthritis:** common in **adult women (up to 70 %)**, small joints of the hands.\n- **Rare:** thrombocytopenic purpura; **encephalitis 1 in 5,000–6,000**.\n- **Congenital rubella syndrome:** **first-trimester infection carries an 85–90 % risk of fetal damage** (inf-27).\n- **MMR:** live attenuated, two doses. **No antiviral.**\n- **⚠️ Before pregnancy:** confirm immunity by **serology** — the vaccine is **contraindicated during** pregnancy, and conception should be avoided for **28 days** after it.\n\nSrc: MPR pp.5–7",
+        "qs": []
+      },
+      {
+        "id": "inf-27",
+        "w": "high",
+        "h": "Congenital rubella syndrome",
+        "body": "**Not a rash illness with a prodrome —** a **multisystem developmental catastrophe** from maternal infection in pregnancy.\n\n### Risk and infectivity\n- **Timing is everything:** risk is highest in the **first trimester**, **up to 90 % if infected before 12 weeks**.\n- **⚠️ Affected infants are HIGHLY INFECTIOUS**, shedding virus in nasopharyngeal secretions and urine **for months, sometimes a year** — a real risk to healthcare workers and pregnant contacts.\n\n### Gregg’s triad\n- **1 Cataracts / glaucoma:** \"white pupils\", potential blindness.\n- **2 Sensorineural deafness:** **the commonest single finding in CRS**.\n- **3 Cardiac defects:** specifically **patent ductus arteriosus** and **pulmonary artery stenosis**.\n\n### Other findings and late complications\n- **\"Blueberry muffin\" rash:** purplish-red spots from **extramedullary haematopoiesis**.\n- **Also:** **microcephaly** and intellectual disability, **IUGR** and low birth weight, hepatosplenomegaly and jaundice.\n- **Late:** progressive panencephalitis; **type 1 diabetes** and thyroid dysfunction; **glaucoma years later**.\n\n### Diagnosis, management, prevention\n- **⚠️ Confirm with specific IgM:** **maternal IgM does not cross the placenta**, so its detection in the infant is diagnostic of intrauterine infection.\n- **No cure.** Multidisciplinary care — cardiac surgery, cataract removal, hearing aids or cochlear implants, developmental therapy.\n- **Isolation:** contact precautions until **at least one year old** or repeated negative cultures.\n- **Prevention:** pre-conception immunisation only — **herd immunity** and serological screening. **⚠️ Immune globulin after exposure does NOT reliably prevent fetal infection.**\n\nSrc: MPR pp.7–9; PPT (the specific-IgM rule) cited only",
+        "qs": []
+      },
+      {
+        "id": "inf-28",
+        "w": "must",
+        "h": "Scarlet fever",
+        "body": "**Scarlet fever (scarlatina):** a **bacterial** exanthem complicating **group A streptococcal** infection, mainly aged **5 to 15**.\n\n### Why the rash happens\n- **Organism:** ***Streptococcus pyogenes*** — the organism, its virulence factors and its sequelae are in inf-18.\n- **⚠️ Why the rash:** a **DELAYED-TYPE HYPERSENSITIVITY** reaction to **streptococcal pyrogenic exotoxins (SPE-A, B or C)** — **only strains carrying an erythrogenic toxin cause it**.\n- **Incubation:** short, **2–5 days**. **Infectivity:** high acutely; **not contagious after 24 hours of antibiotics**, but **weeks** without.\n\n### Prodrome — abrupt\n- **High fever and chills**, with **pharyngitis** — **beefy red tonsils**, often exudate.\n- **Headache, malaise, abdominal pain**; nausea and vomiting are common in children.\n- **Strawberry tongue:** first **white** (coating with red papillae), then, as it peels, **red strawberry tongue**.\n\n### The rash\n- **Timing:** **12–48 hours after the fever begins**.\n- **Texture:** **\"sandpaper\"**, finely papular; the older description is **goose-flesh**.\n- **Pattern:** trunk and neck → limbs; **blanches**.\n- **Pastia lines:** more intense in the folds — **axilla, groin, antecubital fossa** — as **linear streaks of petechiae**.\n- **Circumoral pallor:** the face is flushed but the skin **around the mouth stays pale**.\n- **Desquamation:** as it fades after **3–7 days**, peeling of **fingertips, toes and groin**.\n\n### Complications and treatment\n- **Suppurative:** peritonsillar abscess, otitis media, sinusitis, pneumonia.\n- **Non-suppurative:** **acute rheumatic fever** and **post-streptococcal glomerulonephritis**.\n- **⚠️ Why treat:** to prevent **rheumatic fever** — **penicillin V or penicillin G**, **amoxicillin** in children for palatability, cephalosporins or macrolides if allergic.\n- **No vaccine.** **Exclude from school until 24 hours of antibiotics and afebrile.**\n\n*Defect note: MPR p.9 gives the incubation as 2–5 days and the rash as appearing 12–48 hours after the fever, so the two cannot both be measured from exposure. Written as printed.*\n\nSrc: MPR pp.9–11; SBI pp.11–12; PPT (goose-flesh) cited only",
+        "qs": []
+      },
+      {
+        "id": "inf-29",
+        "w": "must",
+        "h": "Roseola infantum (exanthem subitum, sixth disease)",
+        "body": "**The \"surprise\" rash —** it appears just as the child seems to be getting better, and that fact answers the question.\n\n### Agent\n- **HHV-6** primarily, less often **HHV-7**; large **enveloped DNA** viruses. **By age 2 most children have been infected.**\n- **Incubation 5–15 days.** Shed in **saliva**, including by healthy people.\n- **⚠️ Contagious when:** during the **FEBRILE phase, before the rash**; once the rash appears the child is generally no longer contagious.\n\n### Febrile phase\n- **Abrupt very high fever** — often **> 40 °C** — for **3 to 5 days**.\n- **⚠️ The give-away:** despite the fever the child **looks surprisingly well and alert** — the septic screen is often negative with normal inflammatory markers.\n- **Nagayama spots:** erythematous papules on the **soft palate and base of the uvula**.\n- **The \"crisis\":** the fever ends **abruptly**, and the rash follows.\n\n### Rash phase\n- **Timing:** within **12–24 hours of the fever’s resolution**.\n- **Lesions:** small **2–5 mm**, pale pink, **almond-shaped** macules or papules, **non-pruritic**.\n- **Distribution:** **trunk**, sometimes neck and proximal limbs; **rarely the face**.\n- **Duration:** **hours to two days**, disappearing **without scaling or pigmentation**.\n\n### Complications and treatment\n- **⚠️ Febrile seizures in 10–15 %**, because the fever rises so fast — **the commonest complication**.\n- **Rare:** encephalitis, hepatitis, thrombocytopenia, mainly in the immunocompromised.\n- **Supportive only.** **Ganciclovir** for severe disease in the immunocompromised.\n- **⚠️ HHV-6:** a **MACULOPAPULAR** rash and **never vesicles** — the discrimination in inf-38.\n\n**⚠️ HHV-6:** a **MACULOPAPULAR** rash and **never vesicles** — that is the discrimination in inf-38.\n\nSrc: MPR pp.11–13",
+        "qs": [
+          "pedhd-inf-18",
+          "pedhd-inf-26"
+        ]
+      },
+      {
+        "id": "inf-30",
+        "w": "must",
+        "h": "Erythema infectiosum (fifth disease)",
+        "body": "### Agent\n- **Human parvovirus B19:** small, **non-enveloped, single-stranded DNA**.\n- **⚠️ Where it replicates:** in **ERYTHROID PROGENITOR CELLS** in the marrow — which explains both dangerous complications.\n- **Incubation 4–14 days**, up to 21.\n- **⚠️ Most contagious during the PRODROME.** Once the rash appears the child is **no longer infectious and may return to school**.\n\n### The three stages of the rash\n- **Prodrome (viraemic):** about a week after exposure — low-grade fever, headache, malaise, coryza; **viral shedding peaks here**.\n- **Stage 1, \"slapped cheek\":** bright red flushing of the cheeks with **circumoral pallor**.\n- **Stage 2, lacy/reticular:** 1–4 days later, a pink maculopapular rash on **trunk and extensor surfaces**, clearing centrally to a **lacy, marble-like** pattern.\n- **Stage 3, recurrence:** fluctuates for weeks with **heat, sunlight, exercise or stress**.\n\n### Complications and treatment\n- **Arthropathy:** commoner in adult women — symmetrical hands, wrists and knees.\n- **⚠️ Aplastic crisis:** in **sickle cell disease and thalassaemia**, the virus shuts down red cell production → **life-threatening anaemia**. Treat with **transfusion or IVIG**.\n- **⚠️ Fetal hydrops:** infection in pregnancy, especially the **second trimester** — severe fetal anaemia and heart failure, sometimes fatal.\n- **Supportive; no vaccine.** Exposed pregnant or immunocompromised contacts need **serological testing**.\n\nSrc: MPR pp.13–15",
+        "qs": [
+          "pedhd-inf-12"
+        ]
+      },
+      {
+        "id": "inf-31",
+        "w": "must",
+        "h": "Infectious mononucleosis",
+        "body": "**The triad:** **fever, pharyngitis and lymphadenopathy** — self-limiting, but with a long recovery and two complications that matter.\n\n### Agent\n- **EBV (HHV-4):** about **90 %** of cases.\n- **Mononucleosis-LIKE syndromes:** **CMV is the commonest non-EBV cause**, then *Toxoplasma*, **acute HIV**, adenovirus, HHV-6.\n- **⚠️ Incubation is long — 4 to 6 weeks** (30–50 days), shorter in young children.\n- **Spread:** **saliva** — the \"kissing disease\". Shed intermittently **for months to a year**, and **latent in B lymphocytes for life**.\n\n### Clinical picture\n- **Fever:** up to **40 °C**, peaking in the **afternoon**, after a 3–5 day prodrome of malaise and fatigue.\n- **Pharyngitis:** often severe, **enlarged tonsils with white/grey exudate**.\n- **⚠️ Lymphadenopathy is POSTERIOR CERVICAL**, classically **shotty**; axillary and inguinal nodes may also swell.\n- **Liver and spleen:** **hepatosplenomegaly**, tender hepatomegaly, **raised transaminases**, sometimes mild jaundice.\n- **Film:** **atypical lymphocytes**.\n\n### The rash\n- **Spontaneous:** faint, non-itchy maculopapular, in about **10 %**.\n- **⚠️ Antibiotic-induced:** a patient misdiagnosed as strep throat and given **amoxicillin or ampicillin** develops a **vivid itchy maculopapular rash in up to 90 %**. *It is not penicillin allergy and does not contraindicate penicillin later (not taken from the course material).*\n\n### Complications and treatment\n- **⚠️ Splenic rupture:** **0.1–0.5 %**, typically in the **2nd or 3rd week** — a **surgical emergency**.\n- **Also:** airway obstruction from tonsillar swelling; encephalitis, meningitis, Guillain–Barré; haemolytic anaemia and thrombocytopenia.\n- **No antiviral, no vaccine.** Rest and hydration; paracetamol or NSAIDs — **avoid aspirin (Reye syndrome)**. **Corticosteroids only** for impending airway obstruction.\n- **⚠️ Activity:** avoid **contact sports and heavy lifting for at least 3–4 weeks**, to prevent splenic rupture.\n- **⚠️ Hepatitis with nodes:** in an adolescent that is **EBV, not hepatitis A** — only EBV explains the nodes.\n\nSrc: MPR pp.15–17",
+        "qs": [
+          "pedhd-inf-10",
+          "pedhd-inf-23",
+          "pedhd-inf-31"
+        ]
+      }
+    ]
+  },
+  "infection-vesic": {
+    "intro": "The rashes that blister. Chickenpox and its dangerous edges — pregnancy, the neonate, the immunocompromised child — then shingles, herpetic gingivostomatitis, hand-foot-and-mouth and herpangina, and how to tell vesicular from not.",
+    "sections": [
+      {
+        "id": "inf-32",
+        "w": "must",
+        "h": "Chickenpox (varicella)",
+        "body": "### Agent\n- **Varicella-zoster virus (VZV, HHV-3):** a **DNA** herpesvirus.\n- **⚠️ After the primary infection:** it stays **LATENT IN SENSORY GANGLIA** for life and can reactivate as **herpes zoster** (inf-34).\n- **Incubation 10–21 days**, average **14–16**.\n- **⚠️ Infectious window:** from **1–2 days BEFORE the rash until ALL blisters have dried and scabbed** — about 5–7 days from onset.\n\n### Clinical picture\n- **Prodrome:** 1–2 days of fever, malaise, headache, anorexia, **more pronounced in adults**; **in children the rash is often the first sign**.\n- **Distribution:** **face, scalp or trunk** first, spreading **centripetally** to the limbs.\n- **Morphology:** macules → papules → **clear vesicles**, **\"dew drops on a rose petal\"**; **intensely itchy**.\n- **⚠️ \"Crops\":** lesions come in **waves over 3–5 days**, so **macules, vesicles and scabs coexist** — a **pleomorphic** rash, and the diagnostic feature.\n- **Enanthem:** painful ulcers in mouth, nose and genital area.\n\n### Complications\n- **Bacterial superinfection:** **the commonest in children**, *Staphylococcus* or *Streptococcus*, from scratching.\n- **Pneumonia:** **the commonest serious complication in adults and in pregnancy**.\n- **Neurological:** encephalitis, and **acute cerebellar ataxia**.\n- **⚠️ Reye syndrome:** rare and fatal, **linked to aspirin** — which must be avoided.\n\n### Treatment and prevention\n- **Supportive:** **calamine or antihistamines** for itch, paracetamol for fever, **never aspirin**.\n- **Aciclovir:** for **high-risk patients** — adults, pregnancy, immunocompromised — and only **within 24 hours of the rash**.\n- **Varicella vaccine:** **90–98 % effective**, two doses. *Available in Egypt but not compulsory — inf-52.*\n- **Isolation:** until all lesions have scabbed over. **Post-exposure:** **vaccination within 3–5 days**, or **VZIG** for high-risk contacts.\n\nSrc: VR pp.1–3; PPT (pleomorphic) cited only",
+        "qs": [
+          "pedhd-inf-11"
+        ]
+      },
+      {
+        "id": "inf-33",
+        "w": "must",
+        "h": "Varicella at the edges — pregnancy, the neonate, the immunocompromised",
+        "body": "The ordinary childhood illness of inf-32 becomes dangerous in three groups, and the exposed newborn is the one the exam asks about.\n\n### In pregnancy\n- **Before 20 weeks —** **fetal varicella syndrome**: **limb hypoplasia and scarring**.\n- **Around delivery —** maternal infection can cause **severe neonatal varicella**.\n- **Pneumonia** is the commonest serious maternal complication.\n\n### The exposed neonate — the algorithm\n- **⚠️ Ask about the mother:** the baby is protected by **MATERNAL IgG**, so **her** serostatus is the question, not the baby’s.\n- **Step 1 —** **check maternal antibodies**.\n- **Step 2 —** if the mother is **seronegative**, give the neonate **VZIG**.\n- **⚠️ Aciclovir:** **TREATS** established disease; it does not **PREVENT** it, so it is not the answer to an exposure.\n- **Observation alone is not enough**, and simply discharging with advice to avoid the index case ignores an exposure that has already happened.\n\n### In the immunocompromised\n- **Aciclovir and/or VZIG** in severe cases — the deck’s own pairing.\n- **⚠️ The other direction:** disseminated varicella, and complications of the **LIVE** varicella vaccine, are themselves **presentations of immunodeficiency** (inf-47).\n\nSrc: VR pp.2–3; PPT (aciclovir and/or VZIG in immunocompromised severe cases) cited only; L25 p.46",
+        "qs": [
+          "pedhd-inf-29"
+        ]
+      },
+      {
+        "id": "inf-34",
+        "w": "high",
+        "h": "Herpes zoster (shingles)",
+        "body": "**Not a primary infection —** the **reactivation** of latent VZV when immunity wanes.\n\n### Agent and infectivity\n- **VZV**, latent in the **dorsal root ganglia**; reactivation triggered by **ageing, stress or a weakened immune system**.\n- **⚠️ There is no incubation period**, because the virus is already present.\n- **Infectious:** from the rash until all blisters crust, usually **7–10 days**, by **contact with blister fluid**.\n- **⚠️ What a contact catches:** **CHICKENPOX** if non-immune — **never SHINGLES**.\n\n### Three stages\n- **Prodrome:** **1–5 days** of localised **burning, tingling or stabbing pain** — **the pain comes before the rash**.\n- **Eruptive:** **unilateral**, following a **dermatome**, usually torso or face; vesicles that burst, ulcerate and scab over **2–4 weeks**.\n- **Chronic:** pain persisting after the rash heals.\n\n### Complications and treatment\n- **Postherpetic neuralgia:** **the commonest** — nerve pain for months or years.\n- **Herpes zoster ophthalmicus:** eye involvement, **permanent vision loss**.\n- **Ramsay Hunt syndrome:** facial-nerve reactivation → **facial paralysis and hearing loss**.\n- **Antivirals:** **aciclovir, valaciclovir or famciclovir**, most effective **within 72 hours**; **gabapentin** for pain.\n- **Prevention:** two doses of **Shingrix** for adults **50 and over**.\n\nSrc: VR pp.3–5",
+        "qs": []
+      },
+      {
+        "id": "inf-35",
+        "w": "high",
+        "h": "Herpetic gingivostomatitis",
+        "body": "**Primary HSV:** its commonest presentation, typically **6 months to 5 years**, and it dehydrates children.\n\n### Agent\n- **HSV-1:** double-stranded DNA virus with tropism for **oral epithelium**; HSV-2 does the same in adults via oro-genital contact.\n- **Incubation 2–12 days**, average **4–8**.\n- **Infectivity:** highest with **active vesicles**; children shed for **at least a week, median 3 weeks**, and **asymptomatically throughout life**.\n\n### Clinical picture\n- **Prodrome:** **1–4 days** of **high-grade fever**, malaise, irritability, poor appetite.\n- **Vesicles and ulcers:** numerous **2–5 mm** vesicles on **gingiva, tongue, buccal mucosa and palate**, rupturing to painful irregular ulcers with a **yellowish-grey centre and red halo**.\n- **⚠️ Gingivitis names the disease:** gums **fiery red, swollen and friable**, bleeding on slight contact.\n- **Associated:** severe **halitosis**, **drooling**, tender cervical or submandibular nodes.\n\n### Complications and treatment\n- **⚠️ Dehydration is the commonest**, from refusal to drink.\n- **Autoinoculation:** **herpetic whitlow** on the fingers from thumb-sucking, and **herpetic keratitis** in the eye.\n- **HSV encephalitis or meningitis:** rare and life-threatening — *which is why suspected HSV encephalitis is treated with aciclovir until excluded (inf-12)*.\n- **Supportive, and the priority is hydration:** soft, **cold, non-acidic** food and fluid; paracetamol or ibuprofen.\n- **Oral aciclovir:** **15 mg/kg in children** (800 mg adults), effective **within 72 hours**. **Topical:** viscous **lidocaine** for older children.\n\nSrc: VR pp.6–8",
+        "qs": []
+      },
+      {
+        "id": "inf-36",
+        "w": "must",
+        "h": "Hand, foot and mouth disease",
+        "body": "### Agent\n- **Enteroviruses:** **Coxsackievirus A16 is the commonest cause of mild disease** — the deck also names **A5 and A10**.\n- **Enterovirus A71:** **more severe disease and neurological complications**. **Coxsackievirus A6:** **\"atypical\" HFMD** with extensive rash and **nail loss**.\n- **Incubation 3–6 days.** Most contagious in the **first week**; shed in **stool for weeks to months**.\n\n### Clinical picture\n- **Prodrome:** **24–48 hours** of low-grade fever, sore throat, malaise, anorexia.\n- **Enanthem:** red spots on **tongue, gums and inner cheeks** becoming painful blisters; **swallowing is difficult**.\n- **⚠️ Exanthem on the palms and soles:** flat or raised red spots, sometimes vesicles with a **\"greyish\" centre**; also buttocks, knees, elbows.\n- **⚠️ Usually NOT ITCHY but TENDER** — that pairing, in an otherwise well child, is the whole question.\n\n### Complications and treatment\n- **Dehydration:** the most frequent, from painful mouth sores.\n- **Onychomadesis:** temporary nail loss weeks later, particularly with **A6**.\n- **Viral meningitis or encephalitis:** rare, mainly **EV-A71**; **acute flaccid paralysis** very rare.\n- **Supportive only:** paracetamol or ibuprofen, **never aspirin**; cold fluids and ice lollies; topical anaesthetic gels.\n- **Exclusion:** **until the fever has gone and all blisters have dried**.\n\n**⚠️ Against the other blistering rashes:** **acral** distribution, **tender not itchy**, and a **well** child — against varicella’s **centripetal, itchy, crops-at-all-stages** rash and zoster’s **unilateral dermatomal** band.\n\nSrc: VR pp.8–10; PPT (Coxsackie A 16, 5, 10) cited only",
+        "qs": [
+          "pedhd-inf-5"
+        ]
+      },
+      {
+        "id": "inf-37",
+        "w": "know",
+        "h": "Herpangina",
+        "body": "**Same family as HFMD:** but the lesions stop at the **back of the mouth**.\n\n### Agent\n- **Group A Coxsackieviruses**, serotypes **1–10, 16 and 22**; less often group B, echoviruses and **enterovirus 71**. Family **Picornaviridae**.\n- **Season:** **summer and autumn**. **Incubation 3–5 days.**\n- **Spread:** **faeco-oral**, droplets, contaminated surfaces; **shed in faeces for weeks** after recovery.\n\n### Clinical picture\n- **Abrupt onset:** high fever **38.9–40 °C**, sore throat, headache; irritability and vomiting in toddlers.\n- **⚠️ No skin rash on hands or feet** — the line against HFMD.\n- **Lesions:** **1–2 mm** vesicles enlarging to **shallow grey-white ulcers with a red halo**.\n- **⚠️ Location is the diagnosis:** the **POSTERIOR** oral cavity — **soft palate, uvula, tonsils**. Herpetic gingivostomatitis takes the **FRONT** of the mouth and the gums.\n\n### Complications and treatment\n- **Dehydration:** the most frequent, from **odynophagia**. **Febrile seizures** from the rapid fever rise.\n- **Aseptic meningitis or encephalitis:** very rare, **EV-71**.\n- **Entirely supportive:** analgesia, small frequent sips of cold fluid, **avoid acidic and salty food**; \"magic mouthwash\" for older children.\n- **Exclusion:** home until **24 hours** without fever.\n\nSrc: VR pp.10–11",
+        "qs": []
+      },
+      {
+        "id": "inf-38",
+        "w": "must",
+        "h": "Vesicular or not — the discrimination",
+        "body": "### The vesicular list\n\n|Entity|Agent|Distribution|The tell|\n|---|---|---|---|\n|**Chickenpox**|**VZV**|**Centripetal** — face/scalp/trunk → limbs|**Crops: all stages at once**, intensely itchy|\n|**Herpes zoster**|**VZV reactivation**|**Unilateral, dermatomal**|**Pain 1–5 days before the rash**|\n|**Herpes simplex**|**HSV-1**|**Anterior mouth, gums**|**Fiery friable gingivitis**, halitosis, drooling|\n|**Hand, foot and mouth**|**Coxsackie A16**, EV-A71, A6|**Acral** — palms, soles, buttocks|**Tender, not itchy**; well child|\n|**Herpangina**|Group A Coxsackie|**Posterior** — soft palate, uvula, tonsils|**No skin rash at all**|\n|**Bullous impetigo / SSSS**|***S. aureus*** exfoliative toxin|Face, flexures|**Flaccid bullae, Nikolsky positive**, mucosa spared|\n\n### ⚠️ The one that never blisters\n**HHV-6:** it causes **ROSEOLA**, and roseola is **maculopapular**. Of the classic \"blistering\" list — herpes zoster, varicella zoster, herpes simplex, Coxsackie and *Staphylococcus aureus* (bullous impetigo) — **HHV-6 is the odd one out**: it is a herpesvirus by name and a maculopapular exanthem by behaviour.\n\n*Defect note: VR p.1 lists \"Human herpes infection\" among the causes of vesicular RASH and then teaches herpetic gingivostomatitis, whose lesions are an intra-oral enanthem rather than a skin rash. Recorded as printed.*\n\n### And the two bacterial blisters\n- **Bullous impetigo —** localised, **honey-coloured crusts** after the blister breaks.\n- **Staphylococcal scalded skin syndrome —** generalised, **mucosa spared**, **blister fluid sterile**. *Full account in inf-19.*\n\nSrc: VR pp.1–11; MPR pp.11–13; SBI pp.7, 12–14",
+        "qs": [
+          "pedhd-inf-5",
+          "pedhd-inf-26"
+        ]
+      }
+    ]
+  },
+  "infection-immunity": {
+    "intro": "How the immune system is built and how it fails. The cell types and the effector arms, why an infant is briefly unprotected, then the child with recurrent infections — the five primary defects, and reading the pattern to see which arm is broken.",
+    "sections": [
+      {
+        "id": "inf-39",
+        "w": "high",
+        "h": "Components of the immune system",
+        "body": "### Three headings\n- **Lymphoid organs:** **primary** — bone marrow and **thymus**; **secondary** — **spleen, lymph nodes, MALT**.\n- **Cells.** **Chemicals:** antibodies, **cytokines**, interleukins, complement.\n\n### When each organ starts working\nHaemopoiesis begins in the **chorion stalk and yolk sac at 3 weeks**; stem cells seed the **fetal liver at 5 weeks** and it starts there at **6**.\n\nThen **bone marrow (clavicles), thymus and spleen at 8 weeks**, **long bones at 10**, **lymph nodes at 11**, and T cells in **tonsils and appendix at 11–15**.\n\n### The myeloid cells\n\n|Cell|Location|Identification|Function|\n|---|---|---|---|\n|**Monocyte**|Blood, **0–900/µL**|Kidney-bean nucleus, **CD14+**|Phagocytic; becomes a tissue macrophage|\n|**Macrophage**|Tissues|Ruffled membrane, **CD14+**|**Phagocytosis, cytokine secretion**|\n|**Dendritic cell**|Epithelia|Long cytoplasmic arms|**Antigen capture and presentation**|\n|**Neutrophil**|Blood, **1,800–7,800/µL**|**Multilobed** nucleus, pale granules|Phagocytosis, **bactericidal mechanisms**|\n|**Eosinophil**|Blood, **0–450/µL**|**Bilobed**, large pink granules|**Killing of antibody-coated parasites**|\n\n### The lymphoid cells\n\n|Cell|Location|Identification|Function|\n|---|---|---|---|\n|**Lymphocyte**|Blood **1,000–4,000/µL**, nodes, spleen|**B = CD19, 20, 21** · **T = CD3** · **TH = CD4** · **CTL = CD8**|B make antibody; TH regulate; **CTLs kill infected cells**|\n|**NK lymphocyte**|Blood, **≤ 10 % of lymphocytes**|Large granules, **CD16 + CD56**|**Kill tumour and virus-infected targets**|\n|**Plasma cell**|Nodes, spleen, MALT, marrow|Dark nucleus, **prominent Golgi**|**End cell of B differentiation — makes antibody**|\n\n**The lineage:** a pluripotent stem cell divides into a **myeloid** stem cell (megakaryoblast, proerythroblast, myeloblast, monoblast) and a **lymphoid** one (lymphoblast → NK cell and small lymphocyte; **the small lymphocyte becomes a T cell only after passing through the thymus**).\n\nSrc: L25 pp.3–8 (pp.4, 6, 7, 8 image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "inf-40",
+        "w": "know",
+        "h": "T lymphocytes — development, MHC and thymic selection",
+        "body": "### Where they come from\n- **IL-7:** drives the lymphoid stem cell to a **T progenitor**, which enters the **thymus** as a **thymocyte** and leaves as a **helper** or **cytotoxic** T lymphocyte.\n- **The receptor:** a **TCR of α and β chains**, packaged with **CD3** as the **T-cell signal transduction complex**.\n\n### The four things that happen in the thymus\n- **1 Variability:** rag gene expression generates receptor diversity in the **thymic cortex**.\n- **2 Attain receptor complex:** CD3 and the TCR appear together.\n- **3 Double positive:** the cortical thymocyte carries **both CD4 and CD8**.\n- **4 Single positive:** in the **thymic medulla** it keeps one, and circulates as **CD4+ or CD8+**.\n\n### MHC\n- **Class I:** on **all nucleated cells**. **Class II:** on **APCs**.\n- **Why selection works:** stromal thymocytes express **BOTH**, loaded with self peptide — which is what makes selection possible.\n\n### Positive and negative selection\n\n|Affinity of the CD4+CD8+ thymocyte|Result|\n|---|---|\n|**HIGH for self-MHC class I**|**Negative selection — apoptosis**|\n|**LOW for self-MHC class I**|**Positive selection → CD8+**|\n|**No binding to self-MHC**|**No positive selection** (death by neglect)|\n|**LOW for self-MHC class II**|**Positive selection → CD4+**|\n|**HIGH for self-MHC class II**|**Negative selection — apoptosis**|\n\n**In one line:** **low affinity survives and is selected; high affinity is deleted; no binding is not rescued.** That is how self-tolerance is built.\n\n*The deck also grids seven maturation markers — TdT, rag, CD2, CD3, TCR, CD4, CD8 — across four compartments; the per-marker columns are not reproduced here.*\n\nSrc: L25 pp.10–17 (pp.11, 13, 14, 15, 17 image-only, recovered by render); L25 p.16",
+        "qs": []
+      },
+      {
+        "id": "inf-41",
+        "w": "know",
+        "h": "B lymphocytes and the antibody response",
+        "body": "### The mature B cell\n- **Surface immunoglobulin —** carries **both IgM and IgD** on its membrane as its antigen receptor.\n- **The co-receptor complex —** **Ig-α and Ig-β** flanking the surface Ig, with **CD19** and **CD21** alongside. *Those are the markers the cell grid names — CD19, 20, 21.*\n- **Origin —** lymphoid stem cell → **B progenitor** → B lymphocyte → **plasma cell**, the antibody-producing end cell.\n\n### Antibody in the child\nWhat matters clinically is not the structure but the **timing**, which is inf-46: maternal IgG carries the infant through the first months, and the child’s own IgG, IgM and IgA come up at different rates.\n\nSrc: L25 pp.18–20 (pp.19, 20 image-only, recovered by render); L25 p.8",
+        "qs": []
+      },
+      {
+        "id": "inf-42",
+        "w": "high",
+        "h": "Innate versus adaptive",
+        "body": "|  |Innate immune response|Adaptive immune response|\n|---|---|---|\n|**Barriers**|**Physical and anatomical barriers**|—|\n|**Soluble**|**Complement system**|**Antibodies**|\n|**Cells**|**Phagocytes** · **NK cells**|**Lymphocytes other than NK cells**, and **APCs**|\n|**Arms**|—|**Cellular** and **humoral**|\n\n**The two interlock** — the deck draws them as two meshing gears, not as two systems. The innate response is what buys the adaptive one the days it needs.\n\nSrc: L25 pp.22, 23 (p.23 image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "inf-43",
+        "w": "high",
+        "h": "The initial immune response, and how a neutrophil leaves the vessel",
+        "body": "### The sequence\n- **Entry —** antigen invades through **mucous membrane or skin**.\n- **Acute inflammation —** cytokines — **selectin-type adhesion molecules** — are released from **damaged endothelium**, causing **chemotaxis of phagocytes**.\n- **⚠️ First on scene:** **neutrophils**, within the first **6 HOURS**.\n- **Then —** macrophages, monocytes and eosinophils.\n\n### The four steps the deck names\n**The four steps:** extravasation · phagocytosis · opsonisation · intracellular killing.\n\n### Extravasation, step by step\n- **Rolling —** **E-selectin** on endothelium binds a **mucin-like CAM** on the neutrophil.\n- **Activation —** the chemokine **IL-8** signals through the chemoattractant receptor.\n- **Arrest and adhesion —** **integrin** on the neutrophil binds an **Ig-superfamily CAM**.\n- **Transendothelial migration —** the cell squeezes between endothelial cells into the tissue.\n\n*That adhesion cascade is why **leucocyte adhesion deficiency** — a defect of CD18/CD11b — leaves neutrophils unable to reach the site at all (inf-48).*\n\nSrc: L25 pp.24–27 (p.27 image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "inf-44",
+        "w": "high",
+        "h": "Phagocytosis, opsonisation and intracellular killing",
+        "body": "### Phagocytosis — five steps\n- **1 —** extension of **pseudopodia** to trap the antigen.\n- **2 —** fusion of the pseudopodia to form a **phagosome**.\n- **3 —** fusion of the phagosome with a **lysosome** → **phagolysosome**.\n- **4 —** **digestion**.\n- **5 —** **exocytosis** of the digested material.\n\n### Opsonisation\n- **What it is —** enhancement of phagocytosis by **coating the antigen with opsonins**.\n- **The two opsonins —** **IgG** and **C3b**.\n- **The receptors —** both have receptors on **neutrophils and macrophages** — the **Fc receptor (CD16)** for IgG and the **C3b receptor**.\n- **⚠️ The number:** opsonisation enhances phagocytosis about **4,000-FOLD**.\n\n*That single number explains the whole clinical pattern of inf-49: without antibody or complement, encapsulated bacteria are not opsonised, and a normal phagocyte cannot eat them.*\n\n### Intracellular killing\n- **Oxygen-dependent —** **NADPH oxidase** and **myeloperoxidase**. O₂ → **superoxide** → H₂O₂ and ·OH; myeloperoxidase then uses **Cl⁻** to make **toxic oxidants** inside the phagosome.\n- **Oxygen-independent —** lysosomal enzymes: **lactoferrin, lysozyme, hydrolytic enzymes, defensin**.\n\n*⚠️ **Chronic granulomatous disease** is a failure of the oxygen-dependent limb — the neutrophil phagocytoses normally and then cannot produce superoxide (inf-48).*\n\nSrc: L25 pp.28–37 (pp.29, 31, 34, 37 image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "inf-45",
+        "w": "high",
+        "h": "The effector arms — humoral, cell-mediated, complement",
+        "body": "### How the T helper cell chooses a path\nAn APC presents on **MHC class II** to **CD4/TCR**, and the cytokine present decides what Th0 becomes.\n\n- **IL-12 → Th1:** secretes **IFN-γ, IL-2, TNF-β**; **activates macrophages** and cell-mediated effectors.\n- **IL-4 → Th2:** secretes **IL-4, 5, 6, 13, TGF-β**; drives **B cells to plasma cells** and antibody.\n- **TGF-β → Treg:** secretes **IL-10**; **damps the response down**. **IL-6 + TGF-β → Th17:** secretes **IL-17**; **turns it up**.\n- **⚠️ Th1 and Th2 inhibit each other** — IFN-γ blocks Th2 proliferation, IL-10 and IL-4 block Th1.\n\n### Generating the humoral response\n- **MHC II + TCR alone is NOT enough** — the deck draws that signal blocked.\n- **Co-stimulation is required:** **B7/CD28** and **CD40/CD40L**.\n- **Then cytokines** (IL-4, 5, 6, 13, TGF-β) drive proliferation and **isotype switching**.\n\n*⚠️ **Hyper-IgM syndrome** is exactly this step failing: B cells make IgM and cannot switch to IgG and IgA (inf-48).*\n\n### Cell-mediated immunity\n- **Against:** **intracellular organisms**, by **CTLs, macrophages and NK cells**.\n- **How a CTL kills:** **perforin** holes the target membrane, **granzymes** enter and **activate caspases** → **apoptosis**.\n\n### Complement\n- **What:** proteins **produced in the liver**, activated by the **classical** or **alternative** pathway.\n- **Three actions:** **trigger of inflammation (chemoattractant)** · **opsonin** · **cell lysis**.\n\nSrc: L25 pp.38–44 (pp.40, 41, 43 image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "inf-46",
+        "w": "must",
+        "h": "Serum immunoglobulins in the fetus and infant",
+        "body": "One graph, and it explains the timing of every antibody deficiency.\n\n- **Maternal IgG —** crosses the placenta from about **30 weeks**, peaks at **100 % of adult values at birth**, then **falls away over the first months**.\n- **The infant’s own IgG —** starts near zero, crosses the falling maternal curve, and reaches adult values by about **10 years**. The overlap is why **total IgG** dips lowest at around **3–6 months** — the physiological nadir.\n- **IgM —** rises **fastest** after birth, reaching adult values earliest.\n- **IgA —** rises **slowest**, still below adult values at 10 years.\n\n### The two clinical consequences\n- **⚠️ B-cell defects:** present **AFTER** infancy — typically in the **first 2 years**, **beyond** the first months — because passively acquired maternal antibody protects the baby until it wears off.\n- **⚠️ T-cell defects:** present **EARLY**, in the first months of life, because nothing is passively transferred to cover them.\n\nSrc: L25 p.49 (image-only, recovered by render); L25 pp.50, 51",
+        "qs": []
+      },
+      {
+        "id": "inf-47",
+        "w": "must",
+        "h": "The child with recurrent infections",
+        "body": "Most children with repeated infections are normal children in a crowded environment. The job is to know which ones are not.\n\n### Ordinary reasons\n- **Risk factors:** **day-care attendance**, **school-aged siblings**, other group settings.\n- **Atopy:** atopic children get **more recurrent and persistent upper respiratory infections**, from **enhanced adherence of pathogens to inflamed respiratory epithelium**.\n\n### ⚠️ Box 15.3 — presentations that mean immunodeficiency\n- **Recurrent PROVEN bacterial infections.**\n- **Severe infections —** e.g. meningitis, **osteomyelitis**, pneumonia.\n- **Infections that present atypically**, are unusually severe or chronic, or **fail to respond to regular treatment**.\n- **An unexpected or opportunistic pathogen**, or **a pathogen the child has been immunised against**.\n- **Severe or long-lasting warts**, generalised **molluscum contagiosum**.\n- **Extensive candidiasis.**\n- **⚠️ Live vaccination:** complications following it — e.g. **disseminated BCG**.\n- **Abscesses of internal organs**; recurrent skin abscesses.\n- **Prolonged or recurrent diarrhoea**, often with **faltering growth**.\n\n### Primary or secondary?\n- **Two classes —** **primary** (inherited) and **secondary** (acquired).\n- **⚠️ Secondary is far commoner:** **HIV**, malnutrition, malignancy and its treatment, **immunosuppressive drugs and steroids**, protein loss in **nephrotic syndrome**, **asplenia** (inf-3) *(examples beyond the deck’s own list are not taken from the course material)*.\n\nSrc: L25 pp.45–47 (p.46 image-only, recovered by render — Box 15.3)",
+        "qs": []
+      },
+      {
+        "id": "inf-48",
+        "w": "must",
+        "h": "Primary immunodeficiency — the five defects and what each looks like",
+        "body": "Classified as defects of the **B-cell**, the **T-cell**, the **complement system** and the **phagocytic system**; the deck’s grid splits the phagocyte column into **neutrophil** and **leucocyte function**.\n\n|Defect|Presentation|Named examples|\n|---|---|---|\n|**T-cell**|**Severe or unusual VIRAL and FUNGAL infection and faltering growth in the FIRST MONTHS** — severe bronchiolitis, diarrhoea, **oral thrush**, ***Pneumocystis jirovecii* pneumonia (PCP)**, disseminated CMV|**SCID** — profoundly defective cellular *and* humoral immunity, **fatal without treatment** · **HIV** · **Wiskott–Aldrich** — **immunodeficiency, thrombocytopenia, eczema**, X-linked · **DiGeorge** — 5th branchial arch: **cardiac and palatal defects, absent thymus, hypocalcaemia**, **22q11** deletion · **Duncan (X-linked lymphoproliferative)** — no normal response to **EBV**; succumbs or develops lymphoma · **Ataxia telangiectasia** — DNA-repair defect, cerebellar ataxia, lymphoma risk|\n|**B-cell (antibody)**|**In the FIRST 2 YEARS, beyond infancy** (maternal antibody protects earlier) — **severe bacterial ear, sinus, pulmonary and skin infection**; diarrhoea, faltering growth. **Recurrent pneumonia → bronchiectasis; recurrent otitis → impaired hearing**|**X-linked (Bruton) agammaglobulinaemia** — abnormal **tyrosine kinase** gene essential for B maturation · **CVID** — **later onset**, **high autoimmune and malignancy risk** · **Hyper-IgM** — makes IgM, **cannot switch to IgG and IgA** · **Selective IgA deficiency** — **the commonest primary immune defect**, usually asymptomatic|\n|**Neutrophil**|**Recurrent bacterial abscesses** of skin, nodes, lung, liver, spleen, bone; **poor wound healing**, perianal and periodontal disease; **invasive fungal infection (aspergillosis)**; **granulomas**|**Chronic granulomatous disease** — mostly **X-linked recessive**; **neutrophils fail to produce superoxide after phagocytosis**|\n|**Leucocyte function**|**Delayed separation of the umbilical cord**, delayed wound healing, chronic skin ulcers, deep-seated infection|**Leucocyte adhesion deficiency (LAD)** — deficient neutrophil adhesion molecules **CD18 and CD11b**, so neutrophils **cannot migrate**|\n|**Complement**|Recurrent bacterial infection; **SLE-like illness**; **recurrent meningococcal, pneumococcal and *H. influenzae* infection**|**Early complement component deficiency** · **Terminal complement component deficiency** · **Mannose-binding lectin (MBL) deficiency**|\n\n**Three mechanisms already explained upstream:** LAD is the adhesion cascade of inf-43 failing at arrest; CGD is the **oxygen-dependent killing** limb of inf-44 failing; hyper-IgM is the **isotype switching** of inf-45 failing.\n\nSrc: L25 p.52 (image-only, recovered by render at 300 dpi); L25 p.48",
+        "qs": []
+      },
+      {
+        "id": "inf-49",
+        "w": "must",
+        "h": "Reading the pattern — which arm is broken",
+        "body": "The deck reduces the whole of inf-48 to two contrasting slides, and this is the version an exam asks for.\n\n|  |Antibody, phagocyte or complement deficiency|T-cell deficiency|\n|---|---|---|\n|**Organisms**|**Encapsulated bacteria**|**Opportunistic** organisms|\n|**Viral infections**|**NOT likely to have repeated viral infections**|Severe and unusual viral and fungal infection|\n|**Age at presentation**|**Usually present LATER** (antibody deficiency)|**EARLY in life**|\n|**Growth**|**May grow and develop normally**|**Fail to thrive**|\n\n### The two questions that separate them\n- **What is the child getting?** **Bacteria that carry a capsule** — pneumococcus, meningococcus, Hib — point to antibody, phagocyte or complement. **Thrush, PCP, disseminated CMV** point to T cells.\n- **When did it start, and is the child growing?** **Antibody defects start after the maternal IgG runs out** (inf-46) and the child often grows normally. **T-cell defects start in the first months and the child fails to thrive.**\n\n*Why encapsulated organisms specifically: the capsule resists phagocytosis (inf-13, inf-14, inf-15), so they can only be cleared once opsonised — and opsonisation needs **IgG and C3b** and a working phagocyte (inf-44). Remove any one of the three and the capsule wins.*\n\nSrc: L25 pp.50, 51",
+        "qs": []
+      }
+    ]
+  },
+  "infection-vaccine": {
+    "intro": "The three kinds of vaccine, the Egyptian compulsory schedule in full, what is available beyond it, and the counselling that goes with it — true contraindications, false ones, and the egg question. Ends on antibiotic resistance.",
+    "sections": [
+      {
+        "id": "inf-50",
+        "w": "must",
+        "h": "Vaccines — the three kinds",
+        "body": "|Type|What it contains|Examples|\n|---|---|---|\n|**Live attenuated**|**Modified organisms**|**MMR · varicella · OPV (Sabin) · rotavirus · BCG**|\n|**Inactivated**|**Whole organisms** killed by chemical or heat treatment|**Inactivated polio (IPV)** · pertussis|\n|**Subunit**|**Antigens of the organism** only|**Diphtheria · tetanus toxoid · pneumococcus · Hib · hepatitis B**|\n\n**⚠️ Know which are LIVE:** that list is the contraindication list (inf-53) and it is also why **disseminated BCG after vaccination is a presentation of immunodeficiency** (inf-47).\n\nSrc: L25 p.53",
+        "qs": [
+          "pedhd-inf-30"
+        ]
+      },
+      {
+        "id": "inf-51",
+        "w": "must",
+        "h": "The Egyptian compulsory vaccination schedule",
+        "body": "|Age|Dose|Vaccine|Disease|Dose|Route|\n|---|---|---|---|---|---|\n|**At birth (0–40 days)**|**Zero dose**|**Sabin**|Poliomyelitis (OPV)|**2 drops**|**On the tongue**|\n|**At birth (0–40 days)**|**TB**|**BCG**|Tuberculosis|**0.05 mL**|**Left shoulder, intradermal**|\n|**2 months**|**First dose**|**Sabin + pentavalent**|OPV · **diphtheria, pertussis, tetanus (DPT)** · **hepatitis B** · ***Haemophilus influenzae* type b (Hib)**|2 drops · **0.5 mL**|On the tongue · **right thigh IM**|\n|**4 months**|**Second dose**|**Sabin + pentavalent**|As above|2 drops · 0.5 mL|On the tongue · right thigh IM|\n|**6 months**|**Third dose**|**Sabin + pentavalent**|As above|2 drops · 0.5 mL|On the tongue · right thigh IM|\n|**9 months**|**Fourth dose**|**Sabin + vitamin A**|OPV · vitamin A|2 drops · **capsule**|On the tongue|\n|**12 months**|**Fifth dose**|**Sabin + MMR**|OPV · **measles, mumps, rubella**|2 drops · 0.5 mL|On the tongue · **right arm subcutaneous**|\n|**18 months**|**Sixth dose, booster**|**Sabin + DPT + MMR + vitamin A**|OPV · diphtheria, pertussis, tetanus · measles, mumps, rubella · vitamin A|2 drops · 0.5 mL · 0.5 mL · 2 capsules|On the tongue · **left thigh IM** · **right arm subcutaneous**|\n\n### What to notice\n- **The pentavalent:** five diseases in one 0.5 mL injection — DPT, hepatitis B, Hib — at **2, 4 and 6 months**.\n- **Polio at every single visit** from birth to 18 months, as oral Sabin.\n- **MMR at 12 months, boosted at 18** (inf-25, inf-26). **BCG is a birth dose**, intradermal into the **left** shoulder — hence the left-deltoid scar (inf-22).\n- **Vitamin A** at 9 and 18 months, and separately for **every** case of measles.\n\nSrc: L25 pp.54–56 (all three image-only, recovered by render)",
+        "qs": []
+      },
+      {
+        "id": "inf-52",
+        "w": "know",
+        "h": "Vaccines available in Egypt beyond the compulsory schedule",
+        "body": "- **Rotavirus vaccine.**\n- **Pneumococcal conjugate vaccine.**\n- **Varicella (chickenpox) vaccine.**\n- **Hepatitis A vaccine.**\n- **Meningococcal vaccine.**\n- **Human papillomavirus vaccine.**\n\n*Four of these are the specific prevention named under the diseases above: pneumococcal conjugate in inf-14, meningococcal (MenACWY / MenB) in inf-13, varicella in inf-32, and the typhoid conjugate vaccine in inf-21 — which is not on this list.*\n\nSrc: L25 p.57",
+        "qs": []
+      },
+      {
+        "id": "inf-53",
+        "w": "must",
+        "h": "Counselling, contraindications and the egg question",
+        "body": "### Why to vaccinate — give BOTH reasons\n- **Individual:** it **protects this child from serious infection**. **Community:** high population immunity **removes some of these infections from the community** — **herd immunity through the two-dose schedule**.\n- **⚠️ Two true options:** the more **COMPLETE** one is the answer. \"Most other children are immunised so yours need not be\" is free-riding; \"it is your choice, I have no opinion\" is not counselling.\n- **No siblings, no nursery:** the child is still exposed — the schedule is by chronological age, not perceived risk.\n\n### Contraindications to a LIVE vaccine\n- **Impaired cell-mediated immunity.**\n- **High-dose steroid therapy.**\n- **Acute febrile illness over 38 °C —** postpone.\n- **A previous severe reaction.**\n- **⚠️ Low birth weight:** **NOT a contraindication.** Infants are vaccinated **by chronological age**, whatever they weigh — a baby under 2.5 kg is vaccinated on time.\n*(the contraindication list is not taken from the course material; L25 p.46 anchors the first item from the other end, listing \"complications following live vaccinations (e.g. disseminated BCG)\" as a presentation of immunodeficiency.)*\n\n### MMR and egg allergy\n- **⚠️ MMR and egg:** grown in **CHICK FIBROBLAST** culture, not in egg, and **SAFE in egg allergy** — including after previous anaphylaxis; give it, preferably in hospital.\n- **The egg-grown ones:** **INFLUENZA** and **YELLOW FEVER**. **Prophylactic antihistamine is not the answer**, and \"avoid all live vaccines\" is wrong: the problem was never that MMR is live.\n*(not taken from the course material — `26)allergy_` names egg among the commonest food allergens but no cached deck pairs it with MMR.)*\n\nSrc: L25 pp.46, 53–57; MPR p.16 (herd immunity); `26)allergy_` cited only",
+        "qs": [
+          "pedhd-inf-7",
+          "pedhd-inf-27",
+          "pedhd-inf-30"
+        ]
+      },
+      {
+        "id": "inf-54",
+        "w": "high",
+        "h": "Antibiotic resistance and stewardship",
+        "body": "**Resistance:** a natural evolutionary phenomenon accelerated by human activity — one of the **top 10 global public health threats**, directly responsible for **over 1.2 million deaths a year**.\n\n### The organisms, by threat level\n- **Urgent — carbapenem-resistant Enterobacterales (CRE):** the **\"nightmare bacteria\"**, *E. coli* and *Klebsiella pneumoniae*, resistant to nearly everything.\n- **Urgent — *Acinetobacter baumannii*:** carbapenem-resistant; **hospital-acquired pneumonia** and bloodstream infection. **Urgent — *Neisseria gonorrhoeae*:** now resistant to **cephalosporins**, the last line.\n- **Serious — MRSA:** resistant to the penicillins (inf-16). **VRE:** healthcare-associated.\n- **Serious — drug-resistant *S. pneumoniae*:** leading cause of bacterial pneumonia and meningitis (inf-14). **MDR *M. tuberculosis*:** longer, more toxic, costlier treatment (inf-22).\n\n### What drives it\n- **Inappropriate prescribing:** antibiotics for **viral** infections, where they do nothing. *That is L18’s own take-home: **FEVER does not mean ANTIBIOTIC** (inf-1).*\n- **Non-compliance:** stopping a course early lets the **strongest bacteria survive and multiply**.\n- **Agriculture:** **up to 80 %** of antibiotics in some regions go to livestock **for growth promotion**.\n- **Poor sanitation and hygiene**, and **global travel**, which moves resistant strains across borders.\n\n### The stewardship programme\n- **What it is —** a systematic, **multidisciplinary** approach to optimising antimicrobial use.\n- **⚠️ The \"5 Rights\" —** the **right patient, right drug, right dose, right route, right duration**.\n- **Four objectives —** improve **patient outcomes**; improve **safety** by reducing adverse events such as ***C. difficile*** infection and allergy; **combat resistance** by lowering drug pressure; and **reduce cost**.\n- **⚠️ Measured impact —** stewardship programmes **reduce antibiotic use by 20–40 % without compromising safety**, and significantly reduce healthcare-associated infection.\n\nSrc: ASP pp.1–3; L18 p.18",
+        "qs": []
+      }
+    ]
+  },
+  "malignant": {
+    "intro": "Childhood leukaemia. How it presents once the marrow is crowded out, what the film and the marrow show, the emergencies it can arrive with, and how it is risk-stratified and treated — the last of which no deck in the syllabus covers.",
+    "sections": [
+      {
+        "id": "mal-1",
+        "w": "must",
+        "h": "What leukaemia is, the types, and acute against chronic",
+        "body": "**Definition:** a **clonal expansion and arrest at a specific stage** of normal **myeloid or lymphoid haematopoiesis**.\n\n### The types, by share of all childhood leukaemias\n- **Acute leukaemias — 97 %.** **ALL 75 %** · **AML 20 %**, also called **acute non-lymphocytic leukaemia (ANLL)** · **acute undifferentiated leukaemia (AUL) under 0.5 %** · **acute mixed-lineage leukaemia (AMLL)**, no figure given.\n- **Chronic myeloid leukaemias — 3 %.** **Philadelphia chromosome positive (Ph1-positive) CML** · **juvenile myelomonocytic leukaemia (JMML)**.\n\n*The named percentages sum to 95.5 % and the deck never states whether they are shares of all childhood leukaemias or of the acute ones alone. Written as printed.*\n\n### Acute against chronic\n\n|Characteristic|Acute leukaemia|Chronic leukaemia|\n|---|---|---|\n|**Onset**|**Abrupt**|**Subtle**|\n|**Morbidity**|**Months**|**Years**|\n|**Age**|**All**|**Adult**|\n|**WBCs**|**Variable**|**Elevated**|\n|**Predominant cells**|**Blasts and other immature white cells**|**Mature**|\n|**Anaemia, thrombocytopenia**|**Present**|**Variable**|\n|**Neutropenia**|**Present**|**Variable**|\n|**Organomegaly**|**Mild**|**MARKED**|\n\nSrc: L48 pp.4–7",
+        "qs": []
+      },
+      {
+        "id": "mal-2",
+        "w": "must",
+        "h": "Incidence and aetiology",
+        "body": "### The numbers\n- **ALL incidence:** **3–4 cases per 100,000 white children**; **2,500–3,000 children diagnosed in the USA per year**.\n- **AML incidence:** **500 new cases in the USA per year**.\n- **Peak age:** **between 2 and 5 years**.\n- **Share of childhood cancer:** **25–30 % of all childhood cancers**, and **ALL is the commonest cancer in paediatrics**.\n\n### Aetiology — the deck states it is UNKNOWN, and lists four contributors\n- **Ionising radiation.**\n- **Chemicals:** **benzene**, specifically in **AML**.\n- **Drugs:** **alkylating agents**, alone or **combined with radiotherapy**, increase the risk of **AML**.\n- **Genetic considerations:** below, and the syndromes in mal-3.\n\n### The two familial figures\n- **Identical twins:** if one twin develops leukaemia **during the first 5 years of life**, the second twin’s risk is **20 %**.\n- **Siblings:** incidence in the sibling of a leukaemic child is **four times** that of the general population.\n- **⚠️ But most cases are not inherited:** **most leukaemia arises from SOMATIC genetic alterations**, not from an inherited predisposition.\n\nSrc: L48 pp.9–11, 14, 59",
+        "qs": []
+      },
+      {
+        "id": "mal-3",
+        "w": "must",
+        "h": "The predisposing syndromes, and the three with a stated risk",
+        "body": "### Chromosomal abnormalities with a quantified risk\n\n|Group|Risk|Time interval|\n|---|---|---|\n|**Trisomy 21 (Down syndrome)**|**1 in 95**|**Under 10 years of age**|\n|**Bloom syndrome**|**1 in 8**|**Under 30 years of age**|\n|**Fanconi anaemia**|**1 in 12**|**Under 16 years of age**|\n\n*Bloom syndrome carries the highest stated risk of the three and Down syndrome the earliest window.*\n\n### The genetically determined conditions with increased incidence\n- **Congenital agammaglobulinaemia** · **Poland syndrome** · **Shwachman–Diamond syndrome** · **ataxia telangiectasia**.\n- **Neurofibromatosis** · **Diamond–Blackfan anaemia** · **Kostmann disease** · **Bloom syndrome**.\n\n*Fanconi anaemia, Shwachman–Diamond and Diamond–Blackfan are written as DISEASES in `haematology` — haem-24, haem-25 and haem-23, all three naming the MDS/AML termination from the other end. Down syndrome as a syndrome is `genetics`. Tuberous sclerosis, the other tumour-predisposing neurocutaneous disorder, is mal-18.*\n\nSrc: L48 pp.12–13",
+        "qs": []
+      },
+      {
+        "id": "mal-4",
+        "w": "high",
+        "h": "The two classification systems, and what a classification rests on",
+        "body": "\n|  |French–American–British (FAB)|World Health Organization (WHO)|\n|---|---|---|\n|**In use**|**1970s–2001**|**Published 2001, revised 2008**|\n|**Built on**|**Morphology and cytochemical stains**|**Immunophenotype · cytogenetics and molecular tests · clinical syndromes**|\n|**Categories**|**3 lymphoblastic · 8 myeloid**|Incorporates **all** types of information|\n|**Cytogenetics included**|**NO** — nor phenotype or molecular tests|**Yes**|\n|**⚠️ Prognostic value**|**LIMITED prognostic significance**|**DEFINITE prognostic AND treatment significance**|\n\n### The four bases any acute leukaemia is classified on\n- **Morphological characteristics** · **cytochemical features** · **immunological characteristics** · **cytogenetic and molecular characteristics (WHO)**.\n- **All four are necessary:** **light microscopy, cytochemistry, immunophenotyping and cytogenetics** are required to characterise the leukaemic subtype.\n\nSrc: L48 pp.15–17, 37",
+        "qs": []
+      },
+      {
+        "id": "mal-5",
+        "w": "must",
+        "h": "ALL — the general effects, and what marrow invasion does",
+        "body": "### General systemic effects\n- **Fever — 60 %** · **lassitude — 50 %** · **pallor — 40 %**.\n\n### Haematologic effects arising from bone marrow invasion\n- **Anaemia:** causes **pallor, fatigability, tachycardia and dyspnoea**.\n- **Neutropenia:** causes **fever, ulceration of the buccal mucosa and infection**.\n- **Thrombocytopenia:** causes **petechiae, purpura, easy bruisability, bleeding from mucous membranes**, and sometimes **internal bleeding such as intracranial haemorrhage**.\n\n### ⚠️ The presentation that is mistaken for marrow failure\n**The trap — 1–2 % present with PANCYTOPENIA:** wrongly diagnosed as **aplastic anaemia or bone marrow failure**, accounting for **5 % of acquired aplastic anaemia**, and only later declaring acute leukaemia.\n\n**Its four features:**\n- **Pancytopenia or a single cytopenia.**\n- **Hypocellular bone marrow.**\n- **NO hepatosplenomegaly** — the discriminator, since leukaemia usually enlarges both.\n- **Timing:** leukaemia declared **1–9 months after the onset of symptoms**.\n\n*Marrow failure, aplastic anaemia and the four mechanisms of pancytopenia are `haematology` — haem-21, haem-22 and haem-26, whose \"BM infiltration → malignancy\" row is this disease seen from the other side.*\n\nSrc: L48 pp.19, 22–23",
+        "qs": []
+      },
+      {
+        "id": "mal-6",
+        "w": "must",
+        "h": "How often each feature is actually present at diagnosis",
+        "body": "The deck prints one frequency table for ALL. **Hepatosplenomegaly and splenomegaly outrank every symptom**, and **over half of children present with a normal or low white count** — which is why a normal WBC never excludes leukaemia.\n\n|Presenting feature|Percentage of patients|\n|---|---|\n|**Fever**|**61 %**|\n|**Bleeding**|**48 %**|\n|**Bone pain**|**23 %**|\n|**Lymphadenopathy**|**50 %**|\n|**Splenomegaly**|**63 %**|\n|**Hepatosplenomegaly**|**68 %**|\n|**Leukocytes under 10,000/mm³**|**53 %**|\n|**Leukocytes 10,000–49,000**|**30 %**|\n|**Leukocytes over 50,000**|**17 %**|\n|**Haemoglobin under 7.0 g/dL**|**43 %**|\n|**Haemoglobin 7.0–11.0**|**45 %**|\n|**Haemoglobin over 11.0**|**12 %**|\n|**Platelets under 20,000/mm³**|**28 %**|\n|**Platelets 20,000–99,000**|**47 %**|\n|**Platelets over 100,000**|**25 %**|\n|**Lymphoblast morphology L1 / L2 / L3**|**84 % / 15 % / 1 %**|\n\nSrc: L48 pp.24–25",
+        "qs": []
+      },
+      {
+        "id": "mal-7",
+        "w": "must",
+        "h": "Lymphoid infiltration, and CNS involvement",
+        "body": "### Clinical manifestations of lymphoid system infiltration\n- **Lymphadenopathy:** may present as **bulky mediastinal lymphadenopathy causing SUPERIOR VENA CAVA SYNDROME** — **commoner in T-cell leukaemia in adolescents**.\n- **Splenomegaly** · **hepatomegaly.**\n\n### CNS involvement — under 5 % at initial diagnosis\n- **Raised intracranial pressure:** **headache · morning vomiting · papilloedema · BILATERAL sixth-nerve palsy**.\n- **Parenchymal involvement:** focal neurological signs — **hemiparesis, cranial nerve palsies, convulsions**, and cerebellar signs of **ataxia, dysmetria, hypotonia, hyperreflexia**.\n- **Hypothalamic syndrome:** **polyphagia with excessive weight gain, hirsutism and behavioural disturbance**.\n- **Diabetes insipidus:** from **posterior pituitary involvement**.\n\n### Chloromas and CNS haemorrhage\n- **Chloroma (myeloid sarcoma):** **multiple, malignant, localised GREEN masses of abnormal cells, usually myeloblasts**. **Very infrequent in ALL.**\n- **Spinal cord chloroma presents with:** **back pain, leg pain, numbness, weakness, Brown–Séquard syndrome, and bladder and bowel sphincter problems**.\n- **⚠️ CNS haemorrhage:** commoner in **AML than in ALL**. Two mechanisms — **leukostasis in cerebral vessels → leukothrombi, infarcts and haemorrhage**, and **thrombocytopenia with coagulopathy**.\n\n*Raised intracranial pressure from a mass rather than from leukaemic infiltration is mal-19.*\n\nSrc: L48 pp.26–28",
+        "qs": []
+      },
+      {
+        "id": "mal-8",
+        "w": "must",
+        "h": "Extramedullary invasion — the other seven organ systems",
+        "body": "### Testicular involvement\n- **Presentation:** **PAINLESS enlargement of the testis**.\n- **Frequency:** **10–23 % of boys during the course of the disease**, at a **median of 13 months from diagnosis**.\n- **Occult disease:** found in **10–33 % of boys** undergoing **bilateral wedge biopsies**.\n- **Five risk factors:** **T-cell ALL** · **leukocytosis over 20,000/mm³ at diagnosis** · **a mediastinal mass** · **moderate to severe hepatosplenomegaly and lymphadenopathy** · **thrombocytopenia under 30,000/mm³**.\n\n### Ovarian and renal\n- **Ovarian involvement:** **occurs very rarely**.\n- **Renal involvement:** occasionally presents with **haematuria, hypertension and renal failure**; assessed by **ultrasonography**; **commoner in T-cell ALL or mature B-cell ALL**.\n\n### Gastrointestinal\n- **Commonest manifestation:** **bleeding**.\n- **⚠️ Infiltrates are clinically SILENT** until terminal stages, when **necrotising enteropathy** may occur — **commonest site the caecum, giving TYPHLITIS**.\n\n### Bone and joint\n- **Bone pain is an initial symptom in 25 %.** Three mechanisms: **direct leukaemic infiltration of the periosteum**, **bone infarction**, or **expansion of the marrow cavity by leukaemic cells**.\n- **Four radiological changes:** **osteolytic lesions of medullary cavity and cortex** · **transverse metaphyseal radiolucent bands** · **transverse metaphyseal lines of increased density (growth arrest lines)** · **subperiosteal new bone formation**.\n\n### Skin, cardiac and lung\n- **Skin:** occasional, and only in **neonatal leukaemia or AML**.\n- **Cardiac:** **one-half to two-thirds have cardiac involvement at autopsy**, yet **symptomatic heart disease occurs in under 5 %**; the findings are **leukaemic infiltrates and haemorrhage of the myocardium or pericardium**.\n- **Lung:** **uncommon** — **leukaemic infiltrates or haemorrhage**.\n\nSrc: L48 pp.29–33",
+        "qs": []
+      },
+      {
+        "id": "mal-9",
+        "w": "must",
+        "h": "Diagnosis — the blood, the film and the marrow",
+        "body": "### Blood count\n- **Haemoglobin:** **moderate to marked reduction**, **normocytic and normochromic**.\n- **⚠️ Hb reads the tempo, not the severity:** a **LOW haemoglobin means a LONGER duration** of leukaemia, a **HIGHER one a MORE RAPIDLY PROLIFERATING** leukaemia.\n- **White cell count:** **low, normal or increased** — any of the three.\n\n### Blood smear\n- **Blasts are present**, but **very few to none** in a leukopenic patient.\n- **Above a WBC of 10,000/mm³:** blasts are **usually abundant**.\n- **Eosinophilia is UNCOMMON in childhood ALL**; **20 % of AML patients have increased basophils**.\n- **Thrombocytopenia:** **92 % have platelets below normal**, and **serious GI or intracranial haemorrhage occurs below 20,000/mm³**.\n\n### Bone marrow — the diagnostic test\n- **Replacement:** the marrow is **usually replaced by 80–100 % blasts**.\n- **Megakaryocytes:** **usually absent**.\n- **⚠️ The suspicion threshold:** **leukaemia must be suspected when the marrow contains MORE THAN 5 % blasts**.\n- **The hallmark is the BLAST CELL:** a relatively **undifferentiated cell** with **diffusely distributed nuclear chromatin**, **one or more nucleoli** and **basophilic cytoplasm**.\n- **Three special marrow studies** for detailed cell classification: **histochemistry · immunophenotyping · cytogenetics**.\n\n*Thrombocytopenia as a subject — the destruction-versus-production axis and the megakaryocyte rule — is haem-32.*\n\nSrc: L48 pp.34–36",
+        "qs": []
+      },
+      {
+        "id": "mal-10",
+        "w": "must",
+        "h": "Telling a lymphoblast from a myeloblast, and the immunophenotype tree",
+        "body": "### The morphological grid\n\n|Characteristic|Lymphoblast|Myeloblast|\n|---|---|---|\n|**Size**|**10–20 µm**|**14–20 µm**|\n|**Nuclear shape**|Round or oval|Round or oval|\n|**Chromatin**|**SMOOTH, homogeneous**|**SPONGY, loose**|\n|**Nucleoli**|**0–2 and indistinct**|**2–5 and distinct, \"punched-out\"**|\n|**Nuclear membrane**|**Smooth, round**|**IRREGULAR**|\n|**Nuclear–cytoplasmic ratio**|**HIGH**|**LOW**|\n|**Cytoplasm colour**|**Blue**|**Blue-grey**|\n|**Cytoplasm amount**|**THIN RIM**|**More abundant**|\n|**Granules**|**ABSENT**|**PRESENT**|\n|**Auer rods**|**ABSENT**|**PRESENT**|\n\n*The two that settle it at a glance: **Auer rods and granules are myeloid**, and the lymphoblast is the cell with almost no cytoplasm.*\n\n### Immunophenotype distribution of ALL\n- **Two lineages:** **B-cell** and **T-cell**.\n- **The B-cell arm divides:** **pre-B cell** and **mature B-cell**.\n\n*⚠️ **FLT3 mutations** are printed as a slide TITLE on L48 p41 with an empty body — the deck names the mutation and teaches nothing about it. Named here so the gap is visible rather than absent.*\n\nSrc: L48 pp.38–41",
+        "qs": []
+      },
+      {
+        "id": "mal-11",
+        "w": "must",
+        "h": "Down syndrome and AML — a leukaemia that is treated LESS hard",
+        "body": "**The paradox:** Down syndrome children with AML have an **increased frequency of M7 leukaemia** and yet a **markedly SUPERIOR outcome** compared with non-Down-syndrome AML.\n\n### How they present\n- **A LOWER initial WBC.**\n- **NO central nervous system involvement.**\n- **FEWER cytogenetic abnormalities.**\n\n### How they are treated\n- **Less-intensive chemotherapy:** **high-dose cytarabine**, **reduced anthracycline**, **reduced intrathecal therapy**.\n- **⚠️ Four things are NOT required:** **maintenance therapy**, **cranial radiation**, and **stem cell transplantation** — the deck lists these as unnecessary in this group.\n\n### Outcome, and why\n- **Remission rate about 90 %**, **event-free survival approximately 70–80 %**.\n- **The mechanism:** **increased sensitivity of Down syndrome blasts to cytarabine**, because of the **GATA1 mutation** — an **erythroid transcription factor essential for erythroid and megakaryocytic development**.\n\n*The leukaemia RISK in Down syndrome — 1 in 95 under 10 years — is mal-3. Down syndrome as a syndrome is `genetics`.*\n\nSrc: L48 pp.42–44",
+        "qs": []
+      },
+      {
+        "id": "mal-12",
+        "w": "must",
+        "h": "Treatment of ALL, and the risk groups that decide it",
+        "body": "*⚠️ Supplied from general knowledge and tagged throughout — no cached deck states any of it. L48 stops at diagnosis; its only therapy is the Down-AML paragraph in mal-11.*\n\n### Risk stratification *(not taken from the course material)*\n\n|Feature|Favourable|Adverse|\n|---|---|---|\n|**Age**|**1–10 years**|**Under 1 year, or 10 years and over**|\n|**Initial WBC**|**Under 50,000/mm³**|**50,000/mm³ and over**|\n|**Lineage**|**B-precursor**|**T-cell, mature B-cell**|\n|**Cytogenetics**|**Hyperdiploidy over 50 chromosomes · ETV6–RUNX1, t(12;21)**|**Hypodiploidy · BCR–ABL1, t(9;22) · KMT2A rearrangement in infants**|\n|**Extramedullary disease**|**Absent**|**CNS or testicular disease at diagnosis**|\n|**Early response**|**Rapid clearance of blasts**|**Persistent MINIMAL RESIDUAL DISEASE at the end of induction**|\n\n**⚠️ End-of-induction MRD:** the **single strongest predictor**, outranking every presenting feature above it *(not taken from the course material)*.\n\n### The four phases *(not taken from the course material)*\n- **Remission induction — 4 to 6 weeks:** **vincristine + a corticosteroid + asparaginase**, with an **anthracycline** added in higher-risk disease. Aim: **morphological remission, under 5 % marrow blasts**.\n- **Consolidation and intensification:** eradicates residual disease; includes **delayed intensification**, a repeat of the induction drugs.\n- **CNS-directed therapy — given to EVERY patient:** **intrathecal methotrexate**, alone or with cytarabine and hydrocortisone. **Cranial irradiation is now reserved for overt CNS disease**, because of its late endocrine and cognitive cost.\n- **Maintenance — 2 to 3 years in total:** **daily oral 6-mercaptopurine + weekly methotrexate**, with vincristine and steroid pulses.\n\n### Supportive care and outcome *(not taken from the course material)*\n- **Standing measures:** transfusion support, **co-trimoxazole prophylaxis against Pneumocystis**, and prompt treatment of febrile neutropenia.\n- **Outcome:** **over 85–90 % five-year survival in standard-risk childhood ALL**; **AML is far worse**, nearer 65–70 %.\n- **The three relapse sites:** **bone marrow · CNS · testis**.\n\nSrc: no deck; supplied and tagged in full per CLAUDE.md §4 — see the header, FINDING 5",
+        "qs": []
+      },
+      {
+        "id": "mal-13",
+        "w": "must",
+        "h": "The oncological emergencies",
+        "body": "*Two of these are named by L48 and are marked as sourced; the rest is supplied and tagged.*\n\n### Tumour lysis syndrome *(not taken from the course material)*\nMassive blast breakdown, **spontaneous or within hours of starting chemotherapy**. Highest risk: **high white count, T-cell ALL and mature B-cell disease**.\n\n|Disturbance|Direction|Consequence|\n|---|---|---|\n|**Potassium**|**HIGH**|**Arrhythmia, cardiac arrest**|\n|**Phosphate**|**HIGH**|Binds calcium|\n|**Calcium**|**LOW**|**Tetany, seizures**|\n|**Uric acid**|**HIGH**|**Urate nephropathy, acute kidney injury**|\n\n- **Prevention and treatment:** **hyperhydration without potassium**, **allopurinol** (xanthine oxidase inhibitor) or **rasburicase** (urate oxidase) for high-risk disease, **frequent electrolyte monitoring**, and **dialysis** if the kidney fails.\n\n### Febrile neutropenia *(not taken from the course material)*\n- **Definition:** **fever with an absolute neutrophil count under 500/mm³**, or under 1,000 and falling.\n- **⚠️ The rule:** **cultures, then broad-spectrum intravenous antibiotics WITHIN ONE HOUR**. Do not wait for the count, and do not wait for a focus — there may be none, because there are no neutrophils to make pus.\n\n### Mediastinal mass and hyperleukocytosis\n- **Superior vena cava syndrome:** from **bulky mediastinal lymphadenopathy**, **commoner in T-cell disease in adolescents** — L48 p26. **Anaesthesia and lying the child flat are dangerous** *(that caution not taken from the course material)*.\n- **Leukostasis:** L48 p28 names it as the mechanism of CNS haemorrhage — **leukothrombi, infarcts and haemorrhage in cerebral vessels**. It occurs above roughly **100,000/mm³**; **hydrate, avoid red cell transfusion**, which raises viscosity further *(both supplied)*.\n- **Spinal cord compression:** from a **chloroma** — back pain, weakness, Brown–Séquard syndrome, sphincter disturbance (L48 p28).\n\nSrc: L48 pp.26, 28 for SVC syndrome, leukostasis and chloroma; the remainder supplied and tagged",
+        "qs": []
+      },
+      {
+        "id": "mal-14",
+        "w": "must",
+        "h": "The new era of cancer treatment — five pillars",
+        "body": "- **The old foundations:** for decades cancer treatment was **chemotherapy and radiotherapy**, and these **remain the critical mainstay**.\n- **2000 — targeted therapy:** **imatinib** and **Herceptin** kill cancer cells by **homing on specific molecular changes** seen in those cells.\n- **The past decade — immunotherapy:** treatment that **strengthens the patient’s own immune system to attack tumours**, now called the **FIFTH PILLAR of cancer treatment**.\n- **Its first class:** the **immune checkpoint inhibitors**, which have **shrunk and even eradicated tumours** in some patients.\n\n### CAR-T approvals\n- **FDA approvals since 2017:** **six CAR-T cell products**, for **blood cancers**, **lymphoma** and **multiple myeloma**.\n\nSrc: L48 pp.46, 48–50",
+        "qs": []
+      },
+      {
+        "id": "mal-15",
+        "w": "must",
+        "h": "CAR-T cells — a living drug, and what it costs",
+        "body": "**The principle — a LIVING drug:** **T cells orchestrate the immune response and directly kill infected cells**, and are the backbone of the therapy.\n\n### How it is made\n- **Customised for each individual:** **T cells are collected from the patient**, **re-engineered in the laboratory** to express **CHIMERIC ANTIGEN RECEPTORS** on their surface.\n- **What a CAR recognises:** it **binds specific proteins or antigens on the surface of cancer cells**. **These receptors are synthetic molecules — they do not exist naturally.**\n- **The structure:** each CAR **bridges the cell membrane**. The **extracellular part** is composed of **fragments and domains that bind tumour antigen**; the **internal part carries signalling and co-stimulatory domains** that transmit the signal once the receptor engages.\n- **The last step:** the re-engineered cells are **expanded to millions** and **re-infused**, where they **multiply, recognise and kill** any cell carrying the target antigen.\n\n### Where it started, and its two drawbacks\n- **Development focused on ALL**, the commonest cancer in paediatrics; the **first FDA-approved CAR-T cell, in 2017, was for RELAPSED ALL**.\n- **Cytokine release syndrome (CRS).**\n- **Neurotoxicity (ICANS):** **confusion, seizure-like activity and impaired speech** from **immune-effector-cell-associated neurotoxicity**.\n\nSrc: L48 pp.51, 54, 56, 59, 61, 64",
+        "qs": []
+      }
+    ]
+  },
+  "malignant-solid": {
+    "intro": "The solid tumours the syllabus names. Cardiac rhabdomyoma and the tuberous sclerosis behind it, then paediatric brain tumours — where they sit, how raised pressure declares itself, and medulloblastoma — ending on Wilms against neuroblastoma.",
+    "sections": [
+      {
+        "id": "mal-16",
+        "w": "high",
+        "h": "Rhabdomyoma — what it is, and its three variants",
+        "body": "**Rhabdomyoma:** a **rare, BENIGN tumour made up of STRIATED MUSCLE CELLS**.\n\n### Where and in whom\n- **Primary location:** the **HEART** — cardiac rhabdomyoma.\n- **Other sites:** **skeletal muscle**.\n- **Age:** **most commonly diagnosed in children, particularly under 5 years of age**.\n- **⚠️ The association to know:** **TUBEROUS SCLEROSIS**.\n\n### The three variants\n- **Cardiac rhabdomyoma:** the **most prevalent type**, **linked to tuberous sclerosis** and **often found in children**.\n- **Extracardiac rhabdomyoma:** develops in the **head, neck and genitourinary tract**.\n- **Fetal rhabdomyoma:** **rare**, **detected in fetuses or newborns**, raising concerns for early medical intervention.\n\n### Clinical features\n- **Cardiac:** **arrhythmias and heart failure due to OBSTRUCTION** caused by the tumour.\n- **Extracardiac:** varies by location — **swelling or pain** in the affected area.\n- **From the associated tuberous sclerosis:** **skin lesions, seizures and developmental delay**.\n\nSrc: L49 pp.3–5",
+        "qs": []
+      },
+      {
+        "id": "mal-17",
+        "w": "high",
+        "h": "Rhabdomyoma — diagnosis, treatment and the name it is confused with",
+        "body": "### Diagnosis — three techniques\n- **Imaging:** **ECHOCARDIOGRAPHY for cardiac rhabdomyoma**; **MRI or CT preferred for extracardiac tumours**.\n- **Biopsy:** **histological examination confirms the diagnosis**.\n- **Genetic testing:** identifies **mutations associated with TUBEROUS SCLEROSIS COMPLEX**, which may co-occur.\n\n### Treatment — three positions\n- **Observation:** **small, asymptomatic tumours may not need immediate treatment**.\n- **Surgery:** **indicated for symptomatic or larger tumours, particularly cardiac ones**.\n- **Follow-up care:** **regular monitoring for recurrence is crucial, especially with tuberous sclerosis**.\n- **Prognosis:** **surgical intervention generally gives favourable outcomes with low recurrence rates**.\n\n### ⚠️ Rhabdomyoma is NOT rhabdomyosarcoma *(this distinction not taken from the course material)*\n**Rhabdomyoma** is the **benign** striated-muscle tumour above. **Rhabdomyosarcoma** is a **malignant** tumour of the same lineage and the **commonest soft-tissue sarcoma of childhood** — head and neck, genitourinary tract and limbs — treated with **chemotherapy plus surgery or radiotherapy**. The names differ by three letters and the diseases by everything.\n\nSrc: L49 pp.6, 12, 15; the rhabdomyosarcoma contrast supplied and tagged — no cached deck names it except one cell of `39)Hematuria`",
+        "qs": []
+      },
+      {
+        "id": "mal-18",
+        "w": "high",
+        "h": "Tuberous sclerosis complex",
+        "body": "*Deferred here by `neurological`. L49 prints the association and three consequences; the diagnostic features are supplied.*\n\n### What the deck gives\n- **The link:** rhabdomyomas are **linked with genetic conditions such as tuberous sclerosis**, and **cardiac rhabdomyoma is the type linked to it**.\n- **Its three named consequences:** **skin lesions, seizures and developmental delays**.\n- **Testing:** **genetic testing for TUBEROUS SCLEROSIS COMPLEX** is part of the rhabdomyoma work-up.\n\n### What it is *(not taken from the course material)*\n- **Nature:** an **autosomal dominant neurocutaneous disorder**, from mutation in **TSC1 (hamartin)** or **TSC2 (tuberin)**; about two-thirds are **new mutations**.\n- **Skin:** **ash-leaf hypopigmented macules** (seen under Wood’s light) · **shagreen patch** · **facial angiofibromas** · **periungual fibromas**.\n- **Brain:** **cortical tubers** · **subependymal nodules** · **subependymal giant cell astrocytoma**, which can obstruct CSF flow.\n- **Elsewhere:** **cardiac rhabdomyoma** · **renal angiomyolipoma** · **retinal hamartoma**.\n- **⚠️ The infant presentation:** **infantile spasms plus hypopigmented macules** is tuberous sclerosis until proved otherwise.\n\nSrc: L49 pp.3–6; the diagnostic features supplied and tagged — `shagreen`, `TSC1`, `TSC2` and `subependymal` return zero hits corpus-wide",
+        "qs": []
+      },
+      {
+        "id": "mal-19",
+        "w": "must",
+        "h": "Brain tumours — types, and how they announce themselves",
+        "body": "**Definition:** **abnormal growths of cells in the brain or nearby tissues**. They may be **benign (non-cancerous) or malignant (cancerous)**, and that distinction **affects the treatment options**.\n\n### The three groups\n- **Primary brain tumours:** **originate in the brain itself** — commonly **gliomas** and **meningiomas**.\n- **Metastatic brain tumours:** **cancer cells that have spread to the brain from elsewhere**, indicating **advanced disease**.\n- **Paediatric brain tumours:** commonly **MEDULLOBLASTOMA and EPENDYMOMA**, and they **require specialised treatment**.\n- **Impact varies widely** with **tumour type, size and location**.\n\n### Common symptoms\n- **Headache:** **frequent, and worse in the morning or with a change of position**.\n- **Seizures:** **new-onset seizures** are a significant warning sign.\n- **Neurological deficits:** problems with **vision, speech or motor function** from **pressure on the brain**.\n- **Cognitive change:** altered **memory, personality or confusion**.\n\n*⚠️ Two facts the deck omits — brain tumours are the commonest SOLID tumour of childhood, and in children most are INFRATENTORIAL, so the picture is cerebellar signs with obstructive hydrocephalus rather than a focal deficit (not taken from the course material).*\n\nSrc: L49 pp.7–9",
+        "qs": []
+      },
+      {
+        "id": "mal-20",
+        "w": "must",
+        "h": "Brain tumours — diagnosis, treatment, and medulloblastoma",
+        "body": "### Diagnosis — three methods\n- **Imaging:** **MRI and CT are essential** for accurately **locating and diagnosing** the tumour.\n- **Biopsy:** extracts tissue to assess **tumour TYPE and GRADE**, which guides treatment.\n- **Neurological evaluation:** assesses **cognitive and motor function** to understand the tumour’s impact.\n\n### Treatment — four modalities\n- **Surgery:** the **first line** for tumours that **can be accessed safely**.\n- **Radiotherapy:** used **post-operatively, or for inoperable tumours**, to eliminate remaining cancer cells.\n- **Chemotherapy:** particularly effective for **malignant or metastasised tumours**.\n- **Targeted therapy:** uses the **genetic makeup of the tumour** to tailor the intervention.\n- **Prognosis:** **varies greatly with tumour type, grade and treatment effectiveness**; **early detection significantly improves outcomes**.\n\n### Medulloblastoma *(the detail not taken from the course material)*\n- **Site:** the **POSTERIOR FOSSA — the cerebellar vermis**. It is the **commonest MALIGNANT brain tumour of childhood**.\n- **Presentation:** **truncal ataxia and unsteady gait**, with **morning headache and vomiting** from **obstructive hydrocephalus** at the fourth ventricle.\n- **⚠️ It seeds:** **DROP METASTASES down the CSF pathway**, so the **whole neuraxis must be imaged** and the CSF examined before treatment.\n- **Treatment:** **surgical resection + craniospinal radiotherapy + chemotherapy**; radiotherapy is **avoided or deferred under 3 years of age**.\n\nSrc: L49 pp.8, 10, 13–15; medulloblastoma supplied and tagged — `posterior fossa` returns no hit in L49",
+        "qs": []
+      },
+      {
+        "id": "mal-21",
+        "w": "high",
+        "h": "Rhabdomyoma against brain tumours — the deck’s own comparison",
+        "body": "\n|  |Rhabdomyoma|Brain tumours|\n|---|---|---|\n|**Nature**|**BENIGN**|**Benign OR malignant**|\n|**Common locations**|**Heart and skeletal muscle**|**Within brain tissue**|\n|**Patient age**|**Primarily children**|**Both children and adults**|\n|**Associated conditions**|**Tuberous sclerosis**|**Various systemic cancers**|\n|**Treatment approach**|**Surgical removal is primary**|**Surgery, radiation and chemotherapy**|\n\n*The one row that carries a decision is NATURE: a rhabdomyoma is watched if it is small and quiet, and a brain tumour is graded before anything else is decided.*\n\nSrc: L49 p.11",
+        "qs": []
+      },
+      {
+        "id": "mal-22",
+        "w": "high",
+        "h": "The abdominal mass in a child — Wilms tumour against neuroblastoma",
+        "body": "*⚠️ Supplied in full and tagged — no cached deck teaches either tumour. Written because this is the only home for a childhood solid tumour, and flagged in the header as deletable.*\n\n|  |Wilms tumour (nephroblastoma)|Neuroblastoma|\n|---|---|---|\n|**Origin**|**Metanephric blastema — the kidney**|**Neural crest — adrenal medulla or sympathetic chain**|\n|**Peak age**|**3–4 years**|**Under 2 years — the commonest tumour of infancy**|\n|**⚠️ The mass**|**Smooth, does NOT cross the midline**|**Irregular, hard, CROSSES the midline**|\n|**The child**|**Usually WELL**; haematuria, hypertension|**UNWELL** — bone pain, weight loss, limp|\n|**Signature signs**|—|**Periorbital bruising and proptosis** from orbital secondaries|\n|**Marker**|**None**|**Urinary catecholamines — VMA and HVA**|\n|**Associations**|**WAGR · Beckwith–Wiedemann · hemihypertrophy**|**MYCN amplification · opsoclonus–myoclonus**|\n\n- **Wilms:** **bilateral in 5–10 %**; treated with **nephrectomy plus chemotherapy**, and **prognosis is good**.\n- **Neuroblastoma:** **stage 4S in infants can regress spontaneously**, which no other childhood malignancy does.\n\nSrc: no deck; supplied and tagged in full per CLAUDE.md §4",
+        "qs": []
+      }
+    ]
   }
 };
