@@ -3720,5 +3720,129 @@ var T_PEDS = {
         "qs": []
       }
     ]
+  },
+  "normal-dev": {
+    "intro": "The lecturer prints his own eight questions and three are this chapter: name the domains, list the milestones, give the red flags. So expect ages recited cold, and expect the median-versus-limit distinction to decide whether a child is normal or referred.",
+    "sections": [
+      {
+        "id": "nd-1",
+        "w": "must",
+        "h": "Growth against development, and the age words",
+        "body": "**Growth:** increase in **physical size, height and weight** of the body.\n**Development:** **functional and physiological maturation** of systems and organs, giving new skills, adaptation ability and the assuming of responsibilities.\n\n- **It denotes maturation of the BRAIN** — mental, physical, social and emotional abilities all rise with it.\n- **The changes covered:** physical, speech and language, cognitive and social, behavioural and emotional, birth to adulthood.\n- **Where the gains are:** particularly rapid in **all** domains during the **first 5 years**.\n- **In the school years:** progression is predominantly **cognitive** and **abstract thinking**.\n- **⚠️ Not a separate consultation:** development is integral to paediatrics and is considered at **every** consultation.\n\n### The age-related terms\n- **Newborn:** the **first 4 weeks** after birth.\n- **Infant:** **1–12 months**.\n- **Toddler / early childhood / preschool:** **1–4 years**.\n- **School-aged child:** **5–12 years**.\n- **Adolescent:** **12–20 years**.\n\n### The timeline the terms sit on\n- **Conception → birth → 28 days → 1 year**, banded as **prenatal (antenatal) · perinatal · neonatal · infancy**.\n- **Perinatal:** **28 weeks’ gestation to 7 days** of life.\n\nSrc: L1 pp.3, 4, 7, 8 (p8 image-only); L1p p1",
+        "qs": []
+      },
+      {
+        "id": "nd-2",
+        "w": "must",
+        "h": "What drives development — nature, nurture, and the interaction model",
+        "body": "**The frame:** development is an **interplay between genetic (nature) and environmental (nurture) factors**.\n\n### Nature — inherited or intrinsic\n- **Examples:** genetic syndromes (**Down syndrome**), neuromuscular disorders (**Duchenne muscular dystrophy**), brain malformations, inborn errors of metabolism.\n- **Fields it dominates:** the **basic motor maturation sequence**, and **some aspects of intelligence**.\n- **Clinical clues to a nature problem:** **dysmorphism · abnormal tone · regression · family history**.\n\n### Nurture — external, after conception and birth\n- **Examples:** nutrition, parental bonding, language exposure, education, socioeconomic status, emotional security, trauma or neglect.\n- **Fields it dominates:** **language development · social skills · emotional regulation · cognitive stimulation**.\n- **Clinical clues to a nurture problem:** **psychosocial deprivation · lack of stimulation · malnutrition**.\n\n### The modern view — interaction, not either/or\n- **Gene–environment interaction:** development is the **interaction** of the two, not one or the other.\n- **The example:** **mild genetic learning vulnerability** may function **normally with early intervention**.\n\n*Which side dominates is the useful half: a motor-sequence problem points at nature, a language or social one at nurture.*\n\nSrc: L1p p2",
+        "qs": []
+      },
+      {
+        "id": "nd-3",
+        "w": "must",
+        "h": "The fields of development, and the rules the normal pattern obeys",
+        "body": "### Four fields — the handout’s division, and the one used clinically\n- **Gross motor.**\n- **Vision and fine motor.**\n- **Hearing, speech and language.**\n- **Social, emotional and behavioural.**\n\n### Five domains — the lecturer’s wheel\n- **The five:** cognitive · language/speech/hearing · gross motor · fine motor (vision) · social/emotion/behaviour.\n- **⚠️ The difference is cognition:** the handout folds it into the other four, the lecture counts it separately — and **the GDD criterion is written against FIVE**.\n\n### Directional pattern — three axes\n- **Cephalocaudal:** **head to tail**.\n- **Proximal to distal:** **midline to peripheral**.\n- **Mass to specific:** differentiation, gross movement before fine.\n\n### Sequential pattern\n- **The sequence is the same in all children:** only the **RATE differs** — slow in **Down syndrome**.\n- **Constant in order, variable in person:** there is a **wide range of normal**.\n- **⚠️ The fields are not independent:** deficiency in one skill area **impacts the others** — hearing impairment costs social and behavioural development as well as speech.\n\nSrc: L1 pp.10, 11 (p11 image-only), 35; L1p pp.2–3",
+        "qs": []
+      },
+      {
+        "id": "nd-4",
+        "w": "must",
+        "h": "Median age against limit age, and correcting for prematurity",
+        "body": "### Median age\n- **Definition:** the age at which **50 %** of children have achieved a particular milestone.\n- **What it is:** the **average timing**. Many normal children achieve the milestone **before or after** it.\n\n### Limit age — the upper limit of normal, also called the red-flag age\n- **Definition:** the age by which **~90–95 %** of children have achieved the milestone.\n- **Failure beyond it is DELAYED**, and is a prompt for **more detailed assessment** to decide whether investigation or intervention is required.\n- **⚠️ Limit ages beat median ages as a guide** to whether a child’s development is normal. This is stated outright.\n\n### The worked example\n- **Walking:** median age **12 months**, limit age **18 months** — **both are normal**.\n- **At 19 months:** not walking, so **assessment is needed**.\n\n### Corrected age in prematurity\n- **Correct the age to match term infants** before judging any milestone.\n- **The example:** a **9-month-old** born **3 months early at 28 weeks** has the skills of a **6-month-old** — the **corrected age**.\n- **Stop correcting:** not required **after 2 years of age**.\n\nSrc: L1 p57 (image-only); L1p p3",
+        "qs": []
+      },
+      {
+        "id": "nd-5",
+        "w": "must",
+        "h": "The limit ages, all four fields — the red-flag table",
+        "body": "**Use:** any milestone not achieved by the age in the right-hand column is **delayed** and triggers assessment.\n\n|Field|Milestone|Limit age|\n|---|---|---|\n|**Gross motor**|**Head control**|**4 months**|\n|**Gross motor**|**Sits unsupported**|**9 months**|\n|**Gross motor**|**Stands with support**|**12 months**|\n|**Gross motor**|**Walks independently**|**18 months**|\n|**Vision, fine motor**|**Fixes and follows visually**|**3 months**|\n|**Vision, fine motor**|**Reaches for objects**|**6 months**|\n|**Vision, fine motor**|**Transfers**|**9 months**|\n|**Vision, fine motor**|**Pincer grip**|**12 months**|\n|**Hearing, speech, language**|**Polysyllabic babble**|**7 months**|\n|**Hearing, speech, language**|**Consonant babble**|**10 months**|\n|**Hearing, speech, language**|**Saying 6 words with meaning**|**18 months**|\n|**Hearing, speech, language**|**Joins words**|**2 years**|\n|**Hearing, speech, language**|**3-word sentences**|**2.5 years**|\n|**Social behaviour**|**Smiles**|**8 weeks**|\n|**Social behaviour**|**Fear of strangers**|**10 months**|\n|**Social behaviour**|**Feeds self / spoon**|**18 months**|\n|**Social behaviour**|**Symbolic play**|**2–2.5 years**|\n|**Social behaviour**|**Interactive play**|**3–3.5 years**|\n\nSrc: L1p p6 — four embedded tables, image-only, transcribed from a 300 dpi render",
+        "qs": []
+      },
+      {
+        "id": "nd-6",
+        "w": "must",
+        "h": "The milestone spine, 6 weeks to 5 years",
+        "body": "|Age|Gross motor|Fine motor and vision|Language and hearing|Social|\n|---|---|---|---|---|\n|**6 weeks**|**Lifts head when prone**|**Fixes and follows**|**Social smile**|**Social smile**|\n|**3 months**|**Head control**|**Hands to midline**|**Coos**|—|\n|**6 months**|**Sits with support**|**Palmar grip; transfers hand to hand with mouthing**|**Babbling, monosyllabic**|**Recognises familiar person; STRANGER ANXIETY begins**|\n|**8 months**|**Sits unsupported**|—|—|—|\n|**9–10 months**|**Pulls to stand; crawling**|**Immature pincer grasp developing**|**Understands \"no\"; polysyllabic babbling**|**SEPARATION ANXIETY; plays peekaboo**|\n|**12 months**|**Walks with one hand held, may walk alone**|**Mature pincer grasp; drinks from a cup with two hands**|**1–2 meaningful words**|**Waves bye-bye**|\n|**18 months**|**Walks independently; runs stiffly**|**Scribbles; feeds with spoon**|**10–20 words**|**Feeds self; symbolic play**|\n|**2 years**|**Runs well; climbs stairs two feet per step**|**Tower of 6 cubes; makes circles**|**2-word sentences**|**Parallel play**|\n|**3 years**|**Rides tricycle; stairs alternating feet**|**Copies circle**|**3–4 word sentences**|**Cooperative play begins**|\n|**4 years**|**Hops on one foot**|**Copies cross**|**Full, understandable sentences**|**Group play**|\n|**5 years**|**Skips**|**Copies square**|**Fluent speech**|**Imaginary play**|\n\n**The two anxieties, which examiners pair:** **stranger anxiety begins at 6 months**, **separation anxiety at 9–10 months**. Both normal.\n\nSrc: L1p pp.5–6. The lecture’s own ladders differ at several ages — nd-7 to nd-10",
+        "qs": []
+      },
+      {
+        "id": "nd-7",
+        "w": "must",
+        "h": "Gross motor — the lecturer’s ladder",
+        "body": "### Month by month\n- **2 months:** raises head **prone**; neck support. Holds head in midline then falls; **45°** from prone.\n- **3 months:** **supports head when held erect**.\n- **4–5 months:** **complete rolling** — front to back, then back to front.\n- **6 months:** sits momentarily, supported — **C-shaped sitting**: back still curved, hands propping.\n- **7 months:** sits **without** support — **L-shaped sitting**: back straight, hands free.\n- **8–9 months:** **crawls (lion-like) or creeps (worm-like)**; pulls to stand.\n- **10 months:** **stands supported**.\n- **11 months:** **walks supported**.\n- **12 months:** **stands unsupported**.\n- **15 months:** **walks independently**.\n- **Under 18 months:** **walks unsupported**; walks up stairs with **one hand held**; seats himself in a small chair.\n- **24 months:** **runs · kicks a large ball · squats · walks up and down stairs two feet per step**.\n- **3 years:** **pedals a tricycle**.\n\n*⚠️ The lecture puts independent walking at 15 months and the handout at 18. Not a conflict — 15 is a median-type figure, 18 is the LIMIT age. Same for sitting unsupported: 7 months here, 8 in the handout, limit 9.*\n\nSrc: L1 pp.15–27, 31",
+        "qs": []
+      },
+      {
+        "id": "nd-8",
+        "w": "must",
+        "h": "Fine motor and vision",
+        "body": "### The lecture’s fine-motor table\n\n|Age|Skill|\n|---|---|\n|**3–4 months**|**Grasps a rattle; brings hands to mouth**|\n|**6–9 months**|**Transfers objects; pincer grasp**|\n|**12–15 months**|**Scribbles; stacks 2 blocks**|\n|**2 years**|**Stacks 6–7 blocks; turns pages**|\n|**3–4 years**|**Draws a circle / a person; uses scissors**|\n|**5 years**|**Draws a triangle; ties shoelaces (basic)**|\n\n### Filled in from the month-by-month slides\n- **1 month:** **tight palmar grasp**. **3 months:** **opens the hands spontaneously**.\n- **4–5 months:** supports on wrists; **grasps hands together**.\n- **6 months:** transfers hand to hand, **using four fingers** — not yet a pincer.\n- **9 months:** **PINCER GRASP** — thumb against index.\n- **12 months:** **releases an object when commanded**; mature pincer.\n- **18 months:** feeds from a **spoon**; **index pointer**.\n- **2 years:** turns picture-book pages **one at a time**.\n\n### Vision\n- **At birth:** **follows moving objects or light**.\n- **6 weeks:** **fixes and follows**. **2 months:** visual fixation on nearby objects.\n\n*Conflict at 5 years: the lecture’s table says draws a TRIANGLE, the handout says copies a SQUARE. Both are printed. The handout’s drawing ladder is circle 3 · cross 4 · square 5.*\n\nSrc: L1 pp.12–27, 32 (p32 image-only); L1p pp.5–6",
+        "qs": []
+      },
+      {
+        "id": "nd-9",
+        "w": "must",
+        "h": "Hearing, speech and language",
+        "body": "### The lecture’s language ladder\n- **2–6 months:** **cooing**.\n- **6–12 months:** **babbling**.\n- **1–2 years:** **words**, up to **30 words** gradually.\n- **2–3 years:** **simple two-word phrases**.\n- **3–5 years:** **3–4 word sentences**; **understands prepositions**.\n- **5 years and over:** **tells stories** — fluency.\n\n### The detail from the month-by-month slides\n- **At birth:** **crying is the only language**, and it indicates need.\n- **1 month:** **ALERT TO SOUND**.\n- **6 months:** babbles **monosyllabically** — \"ba, ba\".\n- **9 months:** **repetitive polysyllabic sounds** — mama, dada — not yet meaningful.\n- **12 months:** **1–2 MEANINGFUL words** (Papa, Mama); **responds to his name**.\n- **15 months:** **4–6 words**; **follows commands WITHOUT gesture**.\n- **18 months:** **at least 6 words**.\n- **2 years:** **joins 2–3 words into sentences**; **speaks >30 words** and accumulates new words very rapidly; talks to self continuously.\n\n*⚠️ \"Mama/dada\" at 9 months is babble; at 12 months it is a word. The distinction is MEANING. Divergence at 18 months: the lecture says at least 6 words, the handout 10–20.*\n\nSrc: L1 pp.12–30",
+        "qs": []
+      },
+      {
+        "id": "nd-10",
+        "w": "high",
+        "h": "Social, emotional and behavioural",
+        "body": "### The lecture’s social ladder\n- **2 months:** **SOCIAL SMILE**.\n- **5 months:** **knows the parent**; laughing.\n- **10 months:** **waves bye-bye**.\n- **15 months:** **sends kisses**; **imitates**.\n- **24 months:** **imaginary play**; plays in a group with other children.\n\n### Filled in from the month-by-month slides\n- **1 month:** **regards the face**.\n- **6 months:** shows **likes and dislikes**; **recognises a stranger**.\n- **9 months:** **plays peek-a-boo**; feeds self.\n- **12 months:** **comes when called**; plays a simple game.\n- **18 months:** **mimics the actions of others**.\n- **2 years:** plays **with** others; **tantrums**; spoon-fed and drinks from a cup; **aware of physical needs**.\n\n### The play ladder — the handout’s, examinable as a sequence\n- **The order:** symbolic **18 months** → parallel **2 years** → cooperative begins **3 years** → group **4 years** → imaginary **5 years**.\n\n*Two divergences: the social smile is 2 months in the lecture and 6 weeks in the handout (limit age 8 weeks); imaginary play is 24 months in the lecture and 5 years in the handout.*\n\nSrc: L1 pp.12–27, 33; L1p pp.5–6",
+        "qs": []
+      },
+      {
+        "id": "nd-11",
+        "w": "high",
+        "h": "Cognitive milestones — the fifth domain",
+        "body": "### The ladder\n- **Under 4 months:** oriented to sound · visual tracking · **sucking or rooting** · shaking a rattle.\n- **5 months:** **knows mother**.\n- **6–9 months:** **mimics actions such as peek-a-boo**; transfers objects hand to hand.\n- **9–12 months:** **responds to his name**; **searches for hidden objects**.\n- **12–18 months:** **points to indicate interest**; follows **simple** commands; uses objects correctly — cup, spoon.\n- **18–24 months:** **pretend play** · **identifies body parts** · **problem-solving by trial and error** · **follows 2-STEP commands**.\n\n### The detail the milestone slides add\n- **6 months:** knows what to expect of objects — **the bottle means feeding time**.\n- **12 months:** **knows what \"no\" means and reacts**; learns by trial and error.\n- **18 months:** enjoys picture books; explores; knows the names of **4 body parts**.\n- **2 years:** recognises **details** in pictures; uses **his own name** for himself; **matches two objects by colour, shape or size**.\n\n*Searching for a hidden object at 9–12 months is OBJECT PERMANENCE (name not taken from the course material) — which is also why separation anxiety appears at the same age.*\n\nSrc: L1 pp.18, 24, 26–29",
+        "qs": []
+      },
+      {
+        "id": "nd-12",
+        "w": "high",
+        "h": "Primitive reflexes and when they go",
+        "body": "**The principle, and it is the sourced part:** **primary motor patterns (primitive reflexes) are integrated into more complex motor patterns** to allow later, sequential **voluntary** motor development. Development runs **from generalised reflexive responses to specific, purposeful ones**.\n\n### The reflexes, with their ages\n*The ages and the individual reflexes below are not taken from the course material — no cached paediatrics deck tabulates them, and the Moro appears only as a row of the neonatal encephalopathy scores.*\n\n|Reflex|Present from|Gone by|\n|---|---|---|\n|**Moro (startle)**|**Birth**|**3–6 months**|\n|**Palmar grasp**|**Birth**|**4–6 months**|\n|**Plantar grasp**|**Birth**|**9–12 months**|\n|**Rooting and sucking**|**Birth**|**~4 months** (become voluntary)|\n|**Asymmetric tonic neck (fencing)**|**~1 month**|**4–6 months**|\n|**Stepping / placing**|**Birth**|**6 weeks – 2 months**|\n|**Galant (truncal incurvation)**|**Birth**|**4–6 months**|\n|**Landau**|**~3 months**|**12–24 months**|\n|**Parachute**|**6–9 months**|**Persists for life**|\n\n### The three rules that make the table usable\n- **⚠️ Parachute is the odd one out:** it **APPEARS** rather than departs; **absence or asymmetry** after 9 months is abnormal.\n- **The reflex must go first:** the **palmar grasp integrates before voluntary RELEASE** (12 months), the **ATNR before hands to midline and rolling**.\n- **⚠️ Persistence is a CP red flag:** that line is the course material’s. **Asymmetry at any age** and **absence at birth** (hypotonia or depression) are the other two abnormal patterns *(not taken from the course material)*.\n\nSrc: L2p (integration principle only); L1p p7 (persistence as a CP red flag). Reflex table supplied and tagged",
+        "qs": []
+      },
+      {
+        "id": "nd-13",
+        "w": "high",
+        "h": "Normal variation — three routes to walking",
+        "body": "**The pattern varies as well as the rate**, and the commonest place this is tested is locomotion.\n\n### Three routes from immobile infant to walking toddler\n- **Crawling on all fours** — the usual route.\n- **\"Commando crawl\"** — pulling forward on the forearms, abdomen on the floor.\n- **Bottom-shuffling** — sitting and shuffling on the buttocks.\n\n### What follows from it\n- **All three end at a walking toddler** and all three are normal.\n- **The late walkers:** bottom-shufflers and commando crawlers commonly walk **later**, and bottom-shuffling is often **familial** *(not taken from the course material)*.\n- **⚠️ Normal only if the LIMIT age holds:** walking independently by **18 months**. A bottom-shuffler not walking at 19 months is assessed like any other child.\n\nSrc: L1p p3 (locomotion plate is image-only); L1 p10",
+        "qs": []
+      },
+      {
+        "id": "nd-14",
+        "w": "must",
+        "h": "Assessing development in clinic",
+        "body": "### The six-step run\n- **Take each field separately**, and **think longitudinally** about the pattern.\n- **Ask about the SEQUENCE achieved** and the skills likely to develop next.\n- **Determine the level reached** in each field, then **relate the fields to each other**.\n- **Only then relate to age** — chronological **or corrected**.\n\n### Where to start, by age — because a full sweep is not practical\n- **Under 18 months:** start with **gross motor**, and acquisition of **vision and hearing**; then hand skills.\n- **18 months to 2.5 years:** start with **speech and language and fine motor** skills; only **brief** gross-motor questioning.\n- **2.5 to 4 years:** start with **speech and language** and **social, emotional and behavioural** development.\n\n### Doing it through play\n- **Offer suitable toys** and **observe** how the child uses them and interacts — do not only ask the parent.\n- **The equipment:** **cubes · a ball · a picture book · a doll · miniature toys such as a tea set · crayons and paper**.\n- **What that set screens:** **mobility, hand skills, play and imagination**.\n\nSrc: L1p pp.3–4",
+        "qs": []
+      },
+      {
+        "id": "nd-15",
+        "w": "must",
+        "h": "Red flags — where normal ends and referral begins",
+        "body": "### General red flags, at any age\n- **LOSS OF PREVIOUSLY ACQUIRED SKILLS — regression.** The most serious of the list.\n- **Persistent hypotonia or hypertonia.**\n- **Asymmetry of movement** — **early hand preference under 1.5 years**.\n- **Poor eye contact** · **no response to sound** · **persistent feeding difficulties**.\n- **PARENTAL CONCERN — always important.**\n\n### The age-specific red flag\n- **The rule:** a child who **exceeded the LIMIT AGE** and did not achieve the milestone. The whole of nd-5 is this flag.\n\n### Red flags pointing at a specific disorder\n- **Possible cerebral palsy:** early hand preference **under 18 months** · **scissoring posture** · **persistent primitive reflexes**.\n- **Possible autism spectrum disorder:** **no response to name by 12 months** · **no pointing by 18 months** · **no joint attention** · **no pretend play** · poor eye contact.\n- **Possible neuromuscular disorder:** **severe hypotonia** · **delayed motor milestones with PRESERVED social skills** · **Gowers’ sign after 3–4 years**.\n\n*Joint attention is sharing focus on an object by gaze or gesture (not taken from the course material). Hand preference is <1.5 years in the general list and <18 months in the CP list — one threshold, two numbers.*\n\n### The two worked cases the lecture ends on\n\n|9-month-old|Verdict|\n|---|---|\n|**Only coos, cannot sit, SCISSORING, increased deep tendon reflexes, social smile present**|**Early spastic cerebral palsy with global developmental delay**|\n|**Pincer grasp (thumb and index), says dada and papa, crawls; anxious parents**|**NORMAL — reassure the parents**|\n\nSrc: L1 pp.58–59; L1p p7",
+        "qs": []
+      },
+      {
+        "id": "nd-16",
+        "w": "must",
+        "h": "Screening and assessment — who, when, and with what",
+        "body": "### Who is screened, and why early\n- **Who:** **all young children**, especially those with a **risk factor**.\n- **Why early:** to **start intervention early** — best in the **first 2–3 years**, the **critical period**.\n- **Two further reasons:** to **explain it to the parents**, and to **look for associated findings** that change management.\n\n### Developmental SCREENING\n- **Definition:** checks of **whole populations or groups** at **set ages**, by **trained professionals**.\n- **Ages and Stages Questionnaire (ASQ):** **19 age-specific questions**, from **4 to 60 months**. **High specificity.**\n- **The lecture’s screening psychometrics:** **ASQ · Bayley Infant Neuro-development Screen · Vineland scale · Denver II**.\n\n### Developmental ASSESSMENT\n- **Definition:** a **more detailed analysis**, following **concern raised at screening**.\n- **What it is:** part of the **diagnostic** process — **investigation, therapy and advice** on optimising progress.\n- **Who does it:** a **specialist service**.\n- **The general scales:** **Griffiths** and **Bayley Infant Development Scales**.\n- **The specific tests:** **Reynell Language Scale** · **Gross Motor Function Measure** · **Autism Diagnostic Interview** · **Autism Diagnostic Observation Schedule**.\n- **Cognition:** assessed objectively with formal **IQ** tests — nd-17.\n\n*⚠️ The handout spells it \"Bailey\" and the lecture \"Bayley\" — one instrument, and a search on either spelling misses the other.*\n\nSrc: L1 pp.9, 34, 53 (p53 image-only); L1p p7",
+        "qs": []
+      },
+      {
+        "id": "nd-17",
+        "w": "high",
+        "h": "Cognition, IQ, and where the normal range ends",
+        "body": "### The measurement\n- **IQ = (mental age ÷ chronological age) × 100.**\n- **The instruments:** the **WISC** (Wechsler Intelligence Scale for Children) or **Stanford–Binet**, assessing cognitive development **against chronological age**.\n\n### The bands\n- **90–110: normal / average.**\n- **71 to under 90: borderline — the \"slow learner\", near average.** Still not intellectual disability.\n- **70 or less: the threshold of intellectual subnormality** — the edge of this chapter. The full definition, the adaptive-skill criterion and the severity grading are in `dev-problems`.\n\n### The two words that are not interchangeable\n- **DELAY:** used **only in the 0–5 age group**. Slow acquisition of skills **in the correct order**. **Global** = two or more skill areas; **specific** = one area.\n- **LEARNING / INTELLECTUAL DISABILITY:** describes **school-aged** children with significantly reduced ability to understand new or complex information, learn new skills and cope independently, **impacting most areas of life**.\n- **Global developmental delay (GDD):** significant delay in **two or more of the five** developmental skills, **up to age 5**.\n\nSrc: L1 pp.35, 40–43; L1p p7",
+        "qs": []
+      }
+    ]
   }
 };
