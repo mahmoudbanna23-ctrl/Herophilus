@@ -1,0 +1,705 @@
+SOURCE: Semester 8\Opthalmo\Theoritical\Books\ophthalmology.pdf
+================================================================================
+BOOK:    "OPHTHALMOLOGY WITH TUTORIALS" (inside title, PDF p.3) / cover reads
+         "OPHTHALMO-OLOGY", "5", "Fifth Year".
+AUTHOR:  BY HEALIX TEAM (as printed on the cover; no named editor, no author list,
+         no edition statement anywhere in the front matter).
+CHAPTER: 10 — contents page prints "Uveal Tract"; the chapter's own opener prints
+         "The Uveal Tract".
+RANGE:   PRINTED pp. 130–141  =  PDF pp. 132–143  (12 pages, all read).
+WEIGHT:  3 % — the contents page's own "Relative weight in %" column.
+OFFSET:  ⚠️ PDF page = printed page + 2. Every citation below is the PRINTED page,
+         which is the number the user sees at the bottom-left of the page. Where a
+         PDF page is also given it is labelled PDF.
+READ:    2026-08-18, rendered at 150 dpi to the session scratchpad and read page by
+         page (no contact sheets — this is A4 portrait book text). One 400 dpi crop
+         was taken for a small caption. Nothing under Semester 8\ was modified.
+CITE AS: ophthalmology.pdf p.<printed N>
+
+--------------------------------------------------------------------------------
+⚠️ STRUCTURAL NOTES — read before using this file
+--------------------------------------------------------------------------------
+
+⚠️ THE BOOK'S OWN TUTORIAL MARKER. The contents page states:
+   "In this book, anything we put (Tutorial) or (T) beside / before it , study in
+   round & skip in final"
+   So every "Tutorial" mark below is the BOOK'S OWN statement that the item is
+   lower priority for the final exam. In this chapter the marker appears in FIVE
+   places, transcribed in situ and listed again at the end of this file. One whole
+   page — printed 141 — is headed "This page is from Tutorial".
+
+⚠️ THIS CHAPTER DOES NOT PRINT A UVEITIS GRADING SCHEME. There is no SUN grading,
+   no "grading of cells", no 0.5+/1+/2+/3+/4+ scale, and no flare grade anywhere
+   in the twelve pages. Anterior-chamber cells and aqueous flare are taught as
+   SIGNS only (printed 134–135). Recorded as an absence, not an omission — see the
+   NOT-COVERED list.
+
+⚠️ THIS CHAPTER DOES NOT PRINT THE JIA SCREENING SCHEDULE. Juvenile idiopathic
+   arthritis appears exactly twice — as a non-HLA-B27 cause of anterior uveitis
+   (printed 134) and as the disease in which calcific band keratopathy especially
+   occurs (printed 135). No screening interval, no age band, no follow-up
+   frequency, no ANA stratification. The hole `L23` left open is NOT closed here.
+
+⚠️ THE CHAPTER'S TEACHING BACKBONE IS TWO COMPARISON TABLES, printed 139 and
+   printed 140 (top), covering all four anatomical types across Definition /
+   Aetiology / Symptoms / Signs / Complications / Treatment. They are transcribed
+   as tables below and must never be flattened into prose — they are the densest
+   thing in the chapter.
+
+⚠️ FIGURE NUMBERING. This chapter's figures carry PLAIN captions with no figure
+   numbers (e.g. "Keratic precipitates", "Posterior synechiae"). NOTE that the
+   Sclera chapter of the same book DOES number its figures "Fig 7-1 … Fig 7-4",
+   so the book's practice is inconsistent — `book-map.md` currently states the
+   book "uses no Figure X-Y numbering", and that statement is refuted by chapter 7.
+
+--------------------------------------------------------------------------------
+PAGE 130 (PDF 132) — chapter opener
+--------------------------------------------------------------------------------
+
+Title, blue underlined serif: **The Uveal Tract**
+
+(Decorative image: a cutaway of the globe, labelled — Sclera, Choroid, Retina on
+the left; Ciliary body, Iris on the right. Anatomical orientation figure only; no
+teaching beyond naming the three uveal parts and their neighbours.)
+
+OBJECTIVES  (drawn as a flowchart of blue rounded boxes)
+
+    Uveal Tract
+      ├── Anatomy
+      ├── Uveitis
+      │     ├── Anterior
+      │     ├── Intermediate
+      │     └── Posterior
+      └── Panuveitis
+
+(Note the flowchart's own hierarchy: Panuveitis is drawn as a SIBLING of Uveitis,
+not as a fourth child of it — although the prose on printed 133 lists it as
+item 4 of the anatomical classification.)
+
+--------------------------------------------------------------------------------
+PAGE 131 (PDF 133)
+--------------------------------------------------------------------------------
+
+Header band: **The Uveal Tract**
+
+• The uveal tract (the uvea) is the **vascular middle layer of the eye.**
+• It is divided into three parts:
+  the iris, the ciliary body and the choroid arranged from front to back:
+
+============================ 1. The Iris: ============================
+
+• It is the **anterior-most** part of the uvea that is responsible for the color
+  of the eye.
+• It hosts the pupil (the aperture responsible for regulating the amount of light
+  entering the eye).
+• The high pigment content of the iris blocks light from passing to the retina,
+  restricting it to the pupil
+
+• **The iris consists of two layers**:
+   1. **The iris stroma**: It is the front pigmented layer. It has no epithelium.
+      The stroma contains the muscles of the iris (sphincter pupillae and dilator
+      pupillae) which control the size of the pupil.
+   2. **The iris pigment epithelial cells** posterior to the stroma.
+
+• **The iris root:**
+   o It is the outer edge of the iris which is attached to the sclera and is
+     continuous with the ciliary body posteriorly.
+   o In front of the root of the iris lies the **trabecular meshwork**, through
+     which the aqueous humour drains out of the eye; the trabecular pathway
+     (diseases of the iris often have important effects on the IOP)
+
+     N.B:
+     The iris along with the anterior ciliary body provide a secondary pathway for
+     aqueous humour to drain from the eye (the uveo-scleral pathway)
+
+• **The iris is divided into two major regions:**
+   1. **The pupillary zone** is the inner region whose inner edge forms the
+      boundary of the pupil.
+   2. **The ciliary zone** is the rest of the iris that extends to the ciliary
+      body.
+   3. **The collarette** is the thickest region of the iris, separating the
+      pupillary portion from the ciliary portion.
+
+   [transcribed as printed — the heading says TWO major regions and the list runs
+   to THREE items, the third being the collarette. Not corrected here.]
+
+• **The iris crypts:**
+   – These are a group of depressions on the front surface of the iris midway
+     between the collarette and the origin of the iris.
+   – They represent spaces between the bundles of the **dilator pupillae muscle**.
+
+FIGURES (three, across the foot of the page, no numbers):
+  1. Colour slit photograph of a brown iris with radial furrows; four lettered
+     markers A, B, C, D and a measuring bar, unlabelled in the caption.
+  2. Monochrome iris photograph with a leader-line key, labels top to bottom:
+     "Pupil", "Collarette", "Contraction furrows", "Radial furrows", "Crypts",
+     "Ciliary zone", "Pupillary zone".
+  3. Colour iris photograph captioned **"Structure of the Iris"**, labels:
+     COLLARETTE, RADIAL FURROWS, PUPIL, CILIARY ZONE, CRYPTS.
+  ⚠️ Figures 2 and 3 carry a term the prose never defines — **contraction furrows
+     / radial furrows**. That teaching exists only in the figures.
+
+--------------------------------------------------------------------------------
+PAGE 132 (PDF 134)
+--------------------------------------------------------------------------------
+
+• **Iris color:**
+   o The iris is usually strongly pigmented.
+   o The iris color varies among individuals (brown, hazel, green, grey, and blue).
+   o **Albinism:**
+     Occasionally, the colour of the iris is due to a lack of pigmentation, as in
+     the pinkish-white color in cases of albinism.
+
+   o **Heterochromia:**
+     – It is an ocular condition in which one iris is a different colour from the
+       other iris **(complete heterochromia)**, or where the part of one iris is a
+       different colour from the remainder **(Partial heterochromia)**.
+     – It can be an indicator of an ocular disease, such as congenital Horner's
+       syndrome, chronic iritis, or diffuse iris melanoma, but may also occur as a
+       normal variant.
+
+     (Two photographs: a face with one brown and one blue iris — complete
+      heterochromia; a close-up blue iris with a brown sector — partial
+      heterochromia.)
+
+======================= 2. The Ciliary body: =======================
+
+• It is the **middle** part of the uvea attached anteriorly to the iris root and
+  posteriorly to the choroid. It is a ring-shaped thickening of tissues that lies
+  between the posterior chamber anteriorly and the vitreous body posteriorly.
+• It contains blood vessels, connective tissue, and the ciliary muscle.
+
+• **It is divided into 2 parts:**
+   1. The pars plicata anteriorly
+   2. The pars plana posteriorly
+
+• **The non-pigmented epithelium** of the pars plicata is responsible for aqueous
+  humour secretion.
+
+• **The ciliary muscle:**
+   o It controls the shape of the lens via the attachment of the zonular fibers to
+     the pars plicata of the ciliary body.
+   o When the ciliary muscle contracts, the zonules become relaxed and,
+     consequently, the lens becomes more convex, improving the focus for near
+     objects **(Accommodation).**
+   o When it relaxes, it puts tension on the zonular fibers resulting in
+     flattening of the lens and improving the focus for far objects.
+
+• **Functions:**
+  The ciliary body has three functions:
+   1. Accommodation
+   2. Aqueous humour production
+   3. It provides an attachment to the zonular fibers keeping the lens in place.
+
+FIGURE (right column, unnumbered): cross-section of the ciliary body, labels as
+printed —
+  CILIARIS MUSCLE IN STROMA [sic — printed as "CILIARIS MUSCLE IN STROMA"]
+  CIRCULAR MUSCLE · LONGITUDNAL MUSCLE [sic, misspelt for "LONGITUDINAL"] ·
+  RADIAL MUSCLE · SUPRACILIARY LAMINA · PIGMENTED EPITHELIUM ·
+  NON-PIGMENTED EPITHELIUM · INTERNAL LIMITING MEMBRANE
+  ⚠️ The three ciliary-muscle fibre orientations (circular, longitudinal, radial)
+  and the supraciliary lamina appear ONLY in this figure — the prose never lists
+  them.
+
+--------------------------------------------------------------------------------
+PAGE 133 (PDF 135)
+--------------------------------------------------------------------------------
+
+========================= 3. The Choroid: =========================
+
+• The most **posterior** part of the uvea. It lies between the retina and the
+  sclera.
+• The choroid provides oxygen and nourishment to the outer layers of the retina.
+
+• The choroid is divided into **four layers** arranged from outwards to inwards:
+   1) An **outermost layer** consisting of larger diameter blood vessels.
+   2) Layer of medium-diameter blood vessels
+   3) Layer of capillaries (choriocapillaris)
+   4) Bruch's membrane which is the **innermost layer** of the choroid.
+      The basement membrane of the retinal pigment epithelium is a part of Bruch's
+      membrane.
+
+• **Functions**:
+   1. **Nutrition and gas exchange**: uveal vessels directly perfuse the choroid,
+      ciliary body, and iris, to support their metabolic needs, and indirectly
+      supply nutrients to the outer retina, sclera, and lens, which lack blood
+      supply.
+   2. **Light absorption**: the uvea improves the contrast of the retinal image by
+      reducing the reflected light within the eye and absorbing the outside light
+      transmitted through the sclera.
+
+FIGURE, captioned **"Choroid layers"** (unnumbered): a 3-D block diagram, labels
+from inner to outer — RPE · Bruch's Memb. · Choriocapillaris · **Settler's Layer**
+[sic — the standard spelling is Sattler's] · **Haller's Layer** · Sclera. Inset
+magnifier of Bruch's membrane labelled: RPE bm · Inner col. zone · Elastic zone ·
+Outer col. zone · Choriocapillaris bm.
+⚠️ TEACHING PRESENT ONLY IN THE FIGURE: the eponymous names of the two vascular
+layers (Haller's = large vessels, Sattler's = medium vessels) and the five-part
+sub-structure of Bruch's membrane. The prose numbers the four layers but names
+neither eponym.
+
+================================ Uveitis ================================
+(section header band)
+
+⇨ Inflammation which can involve one, two, or all three parts of the uveal tract.
+⇨ Most commonly idiopathic but can be associated with autoimmune, infectious, or
+  malignant causes.
+⇨ It must be managed by an ophthalmologist
+
+**Anatomically, uveitis can be classified into:**
+   1. Anterior uveitis (iritis/ iridocyclitis)
+   2. Intermediate uveitis
+   3. Posterior uveitis
+   4. Panuveitis (simultaneous inflammation of all three parts of the uveal tract)
+
+FIGURES: three globe schematics side by side, each with a red rectangle marking
+the inflamed zone, captioned **"Anterior Uveitis"**, **"Intermediate Uveitis"**,
+**"Posterior Uveitis"**. They teach the anatomical extent of each type — the
+diagram is the definition.
+
+--------------------------------------------------------------------------------
+PAGE 134 (PDF 136)
+--------------------------------------------------------------------------------
+
+Header band: **Anterior Uveitis (Iritis – Iridocyclitis)**
+
+**Definition:**
+ – Inflammation involves the iris **(iritis)** and is usually accompanied by
+   **cyclitis** (inflammation of the ciliary body), hence the name
+   **iridocyclitis**.
+ – It is usually **unilateral**
+
+**Aetiology:**
+ 1. **Idiopathic (75% of cases)**
+ 2. **Connective tissue diseases** e.g.,
+      o HLA-B27 associated: Ankylosing spondylitis, psoriatic arthritis,
+        inflammatory bowel disease (ulcerative colitis and Crohn's disease)
+      o Non-HLA-B27: juvenile idiopathic arthritis.
+ 3. **Infectious causes**: Syphilis, TB, toxoplasmosis, HSV, HZV, etc.
+ 4. Other causes:
+      • Sarcoidosis
+      • **Trauma** (the most common cause of non-idiopathic iridocyclitis)
+      • Following ocular surgery
+
+**Clinical picture:**
+
+Symptoms:
+ 1. **Photophobia :**
+    (intolerance to the usual levels of illumination let alone higher levels) due
+    to reactive spasm of the muscles of the inflamed iris.
+ 2. Ocular pain with globe tenderness and brow ache (ciliary muscle spasm)
+ 3. Lacrimation
+ 4. Red eye
+ 5. Decreased vision
+
+Signs:
+ ▪ Decreased vision
+ ▪ **Perilimbal (ciliary) injection** with violaceous hue
+ ▪ **Miosis** (an early sign) with sluggish pupillary light reaction.
+ ▪ Anterior chamber (AC) cells (leukocytes in the aqueous humor) due to anterior
+   segment inflammation with increased vascular permeability
+ ▪ **Hypopyon (pus in the AC)**: it represents a collection of neutrophils and
+   exudates in the inferior part of the AC.
+   [signs continue on printed 135]
+
+⚠️ AC cells are defined here as a SIGN. No grade, no scale, no count-per-field.
+
+FIGURES: "ciliary injection" (slit photograph of perilimbal violaceous injection);
+"Hypopyon in anterior uveitis" (white fluid level in the inferior AC);
+"Cells & flare" (slit-beam photograph through a dark AC showing the beam made
+visible — the classic Tyndall demonstration; the caption carries no grade).
+
+--------------------------------------------------------------------------------
+PAGE 135 (PDF 137)
+--------------------------------------------------------------------------------
+
+[Signs of anterior uveitis, continued]
+
+ ▪ **Aqueous flare:** composed of **proteins** circulating in the aqueous
+   secondary to inflammation and increased vascular permeability.
+   This altered highly viscous aqueous humour is called **plasmoid aqueous.**
+
+ ▪ **Keratic precipitates (KPs)**:
+   formation of clumps of cells (WBCs) on the back surface of the cornea (corneal
+   endothelium)
+
+ ▪ **IOP :**
+   – Usually decreases due to ciliary body inflammation with decreased aqueous
+     production (ciliary body shutdown)
+   – Sometimes the IOP increases [Secondary inflammatory glaucoma] due to:
+       • Trabeculitis as in HSV or HZV iritis
+       • Plasmoid aqueous and circulating large-sized WBCs obstruct the trabecular
+         meshwork resulting in impaired aqueous drainage
+
+**Complications:**
+ • 2ry glaucoma
+ • Posterior synechiae → (leads to irregular shape of the iris .. **Tutorial**)
+ • Complicated cataract
+ • **Calcific band keratopathy** (if the iritis becomes chronic) especially in
+   juvenile idiopathic arthritis.
+ • Macular edema (if the iritis becomes chronic)
+
+**Treatment:**
+ 1. **Steroids (topical - periocular - Systemic)** to control the inflammation and
+    decrease the incidence of complications
+ 2. Cycloplegic-mydriatic topical medications: to decrease photophobia and pain
+    from iris and ciliary spasm +( to prevent and break recently formed posterior
+    synechiae → **Tutorial**)
+ 3. Antiglaucoma medications in case of 2ry glaucoma **(avoid prostaglandin
+    analogues)**
+ 4. Control of the causative condition (After doing systemic workup especially in
+    recurrent cases to reach definitive diagnosis of the cause of anterior uveitis
+
+ ┌────────────────────────────────────────────────────────────┐
+ │ + Treatment of secondary ocular complications (**tutorial**)│
+ └────────────────────────────────────────────────────────────┘
+
+FIGURES: "Keratic precipitates" ×2 (endothelial dusting on the corneal back
+surface, and a second pair showing coarse KPs with ciliary injection);
+"Complicated cataract"; "Band shaped keratopathy"; "Posterior synechiae" ×2
+(irregular festooned pupil after dilatation). The synechiae photographs carry the
+teaching the prose only alludes to — the pupil's irregular, petal-shaped outline.
+
+⚠️ NO GRADING OF FLARE IS PRINTED. Flare is defined and named (plasmoid aqueous)
+but never graded.
+
+--------------------------------------------------------------------------------
+PAGE 136 (PDF 138)
+--------------------------------------------------------------------------------
+
+Header band: **Intermediate Uveitis (Pars planitis -Cyclitis)**
+
+**Definition:**
+ ▪ Intraocular inflammation mainly focused on the vitreous and peripheral retina
+ ▪ It incorporates pars planitis, posterior cyclitis, and vitritis.
+
+**Epidemiology:**
+ ▪ Usually affects **younger** patients, aged **15 to 40 years**
+ ▪ Represents 20% of cases of paediatric uveitis
+ ▪ It is usually idiopathic in developed countries and due to infectious causes in
+   developing countries
+
+**Aetiology:**
+ 1. Infectious causes: TB, syphilis, toxoplasmosis, toxocariasis, etc.
+ 2. Non-infectious causes: Sarcoidosis, Multiple sclerosis, etc
+
+**Clinical pictures:**
+
+Symptoms:
+ o Presentation is typically **insidious**
+ o Initially unilateral later it becomes bilateral but asymmetrical in both eyes
+ o **Floaters**
+ o Blurred vision
+
+Signs:
+ o Associated with anterior uveitis in about 50% of cases
+ o Vitreous cells
+ o Vitreous condensations with hazy vitreous body
+ o **Snowballs:** aggregates of inflammatory cells in the inferior vitreous
+ o **Snow banking**: grey, white fibrovascular plaques on the inferior pars plana.
+
+**Complications:**
+ 1. Cataract
+ 2. Glaucoma
+ 3. Macular oedema in 30% of cases
+
+**Treatment:**
+ 1. Treatment of the cause
+ 2. Steroids (topical - periocular – intravitreal - systemic)
+ 3. Immunosuppressive agents in non-responding cases and as steroid-sparing agents
+ 4. Surgical intervention: vitrectomy, cryotherapy, laser photocoagulation
+
+FIGURE (top right, unnumbered), captioned "area affected by intermediate uveitis":
+line diagram of the globe with a rectangle over the pars plana / anterior vitreous;
+labels Pars plana, Vitreous, Retina, Iris, Uvea.
+
+--------------------------------------------------------------------------------
+PAGE 137 (PDF 139)
+--------------------------------------------------------------------------------
+
+Header band: **Posterior Uveitis (Choroiditis - Chorioretinitis)**
+
+**Definition:**
+Inflammation of the **choroid** with or without inflammation of the retina.
+
+**Aetiology:**
+ 1. Infectious causes:
+    • **Bacterial**: TB, syphilis, leprosy, etc.
+    • **Viral**: HSV, HZV, CMV especially with acquired immunedeficiency [sic]
+      syndrome
+    • **Fungal**: histoplasmosis, candidiasis,
+    • **Parasitic**: **toxoplasmosis (most common)**, toxocariasis.
+ 2. Non-infectious causes:
+    • Systemic immunosuppression may predispose to infections.
+    • Autoimmune e.g., **Behçet's disease** (oral ulcers, genital ulcers, and
+      posterior uveitis)
+    • Malignancies may present in disguise as posterior uveitis (**Masquerade
+      syndrome**) e.g., Some intraocular malignancies such as retinoblastoma,
+      choroidal melanoma, and systemic hematological malignancies such as leukemia,
+      and lymphoma
+
+**Clinical pictures:**
+
+Symptoms:
+ o **Painless** diminution of vision
+ o **Floaters**
+
+Signs:
+ o Vitreous haziness, cells, and opacities.
+ o ± hypopyon formation
+
+ ┌──────────────────────────────────────────┐
+ │ **+ Tutorial**                            │
+ │  o Vasculitis                             │
+ │  o Spill-over anterior uveitis is common  │
+ └──────────────────────────────────────────┘
+
+**Complications:**
+ 1. Macular oedema
+ 2. Vitritis
+ 3. **Visual field defects.**
+
+ ┌──────────────────────────────────────────┐
+ │ **+ complications from Tutorial**         │
+ │  • Epiretinal membrane formation          │
+ │  • Choroidal neovascularization           │
+ │  • Retinal detachment                     │
+ └──────────────────────────────────────────┘
+
+**Treatment:**
+ – Steroids (topical – periocular- intravitreal -systemic)
+ – Treatment of the cause
+
+ ┌────────────────────────────────────────────────────────────────────────────┐
+ │ **Tutorial**                                                                │
+ │  – **Immunosuppressive agents:** in non-responding cases and as steroid      │
+ │    sparing agents                                                           │
+ │  – **Surgical intervention:** Vitrectomy as in tractional retinal detachment │
+ └────────────────────────────────────────────────────────────────────────────┘
+
+FIGURE (top right, unnumbered), captioned "area affected by posterior uveitis":
+globe diagram with a rectangle over the posterior segment; labels choroid, retina,
+vitreous, uvea.
+
+--------------------------------------------------------------------------------
+PAGE 138 (PDF 140)
+--------------------------------------------------------------------------------
+
+Header band: **Panuveitis**
+
+**Definition:**
+Inflammation of all uveal components of the eye with localization to a specific
+part of the uvea
+[transcribed exactly as printed. The wording is internally odd — "all components …
+with localization to a specific part" — and it is repeated verbatim in the p.139
+table, so it is the book's settled wording, not a one-off typo.]
+
+**Aetiology**:
+ 1. Infectious causes:
+    • **Exogenous Infections**
+      due to introduction of organisms into the eye through a perforating wound or
+      ulcer.
+    • **Secondary infections:**
+      the inflammation of the uveal tract due to its spread from other ocular
+      tissues- cornea, sclera, or retina.
+    • **Endogenous infections**:
+      – organisms primarily lodged in another organ of the body reach the eye
+        through the bloodstream.
+      – These include:
+          ⇨ **bacterial infections** such as syphilis or tuberculosis
+          ⇨ **viral infections** such as mumps, smallpox, influenza
+          ⇨ **protozoal infections** such as toxoplasmosis.
+
+ 2. Non-infectious causes:
+    • Autoimmune e.g., Behçet's disease
+    • Neoplastic causes as in posterior Uveitis (Masquerade syndrome)
+    • Traumatic causes: Ocular trauma can produce features of panuveitis.
+
+**Clinical Pictures:**
+The clinical presentation of panuveitis involves the summation of symptoms and
+signs of anterior, intermediate, and posterior uveitis
+
+**Treatment:**
+ 1. Corticosteroids
+ 2. Cycloplegics
+ 3. Systemic immunosuppression
+ 4. Specific treatment based on the underlying disease
+
+ ┌──────────────────────────────────────────────────────────────────────────┐
+ │ **N.B. from tutorial about uveitis treatment**                            │
+ │ ⇨ **Corticosteroids** are the mainstay of therapy in treating noninfectious│
+ │   causes.                                                                 │
+ │ ⇨ Although infection is an uncommon cause of uveitis, it is important to   │
+ │   rule it out before instituting immunosuppressive therapy.               │
+ └──────────────────────────────────────────────────────────────────────────┘
+
+--------------------------------------------------------------------------------
+PAGE 139 (PDF 141) — COMPARISON TABLE 1 of 2 (no caption, no number)
+--------------------------------------------------------------------------------
+
+⚠️ Kept as a table. Column order is the book's own: Anterior, Posterior,
+Intermediate, Panuveitis — note that POSTERIOR precedes INTERMEDIATE here, which
+is NOT the order the chapter teaches them in. Two cells are merged across columns
+in the original and are marked [merged] below.
+
+|            | Anterior Uveitis (Iritis – Iridocyclitis) | Posterior Uveitis (Choroiditis – Chorioretinitis) | Intermediate Uveitis (Pars planitis – Cyclitis) | Panuveitis |
+|---|---|---|---|---|
+| **Definition** | • Inflammation involves the iris (iritis) and is usually accompanied by cyclitis (inflammation of the **ciliary body**) • It is usually **Unilateral** | Inflammation of the choroid with or without inflammation of the retina. | • **Intraocular inflammation** mainly focused on the vitreous and peripheral retina • It incorporates pars planitis, posterior cyclitis, and vitritis. | Inflammation of all uveal components of the eye with localization to a specific part of the uvea |
+| **Aetiology** | **1. idiopathic** (75% of cases) **2. Connective tissue diseases** e.g., HLA-B27 / Non-HLA-B27 **3. Infectious causes 4. Other causes:** Trauma (the most common cause of non-idiopathic iridocyclitis) | [merged across Posterior + Intermediate + Panuveitis] 1. Infectious causes  2. Non-infectious | ← [merged] | ← [merged] |
+| **C\P • Symptoms** | ▪ Photophobia ▪ Ocular pain+ globe tenderness + brow ache ▪ Lacrimation ▪ Red eye ▪ Decreased vision | ▪ **Painless** diminution of vision ▪ Floaters | ▪ insidious. ▪ Initially unilateral. Later, bilateral but **asymmetrical** in both eyes ▪ **Floaters** ▪ Blurred vision | summation of symptoms and signs of anterior, intermediate, and posterior uveitis |
+| **• Signs** | • Decreased vision • Perilimbal (ciliary) • Miosis • AC cells • Hypopyon • Aqueous flare • **Keratic precipitates(KPs)** • IOP ↓ or ↑ | • **Vitreous haziness, cells, and opacities**. • ± Hypopyon formation | • Associated with anterior uveitis in about 50% of cases • Vitreous cells • Vitreous condensations with hazy vitreous body • **Snowballs** • **Snow banking** | *(cell continues the merged Panuveitis summation cell above)* |
+| **Complications** | o 2ry glaucoma o Posterior synechiae o Complicated cataract o Calcific bandkeratopathy [sic, printed as one word] o Macular edema | o Macular oedema o Vitritis o **Visual field defects.** | o Cataract o Glaucoma o Macular oedema in 30% of cases | *(blank in the original)* |
+
+⚠️ The "IOP ↓ or ↑" cell is the whole of the printed-135 IOP teaching compressed
+into five characters — do not read the table alone for that point.
+
+--------------------------------------------------------------------------------
+PAGE 140 (PDF 142)
+--------------------------------------------------------------------------------
+
+COMPARISON TABLE 2 of 2 — Treatment (top of page; continuation of the p.139 table,
+same four columns, header repeated without the parenthetical subtitles)
+
+|            | Anterior Uveitis | Posterior Uveitis | Intermediate Uveitis | Panuveitis |
+|---|---|---|---|---|
+| **Treatment:** | 1. Steroids  2. Cycloplegic-mydriatic topical medications  3. Antiglaucoma medications (Avoid prostaglandin analogues)  4. Control of the causative condition | 1. Steroids  2. Rx of the cause. | 1. Rx of the cause  2. Steroids  3. Immunosuppressive agents  4. Surgical intervention | 1. Steroids  2. Cycloplegics  3. Systemic immunosuppressing [sic]  4. Rx of the cause |
+
+================= Vogt-Koyanagi-Harada (VKH) Syndrome =================
+
+VKH Syndrome is an **idiopathic multisystem autoimmune** disease featuring
+inflammation of melanocyte-containing tissues such as the uvea, skin, ear, and
+meninges.
+
+**The following criteria are required to make a diagnosis of VKH syndrome:**
+ 1. The absence of a history of penetrating ocular trauma
+ 2. Absence of other ocular disease entities
+ 3. Bilateral granulomatous panuveitis
+ 4. Neurological and auditory manifestations
+ 5. Affection of the skin and its adnexa e.g., vitiligo, alopecia and poliosis
+
+======================== Sympathetic Ophthalmia ========================
+
+⇨ It is a bilateral granulomatous panuveitis occurring **after penetrating trauma
+  to one eye.**
+⇨ It occurs due to immune sensitization to melanin or melanin-associated proteins
+  in uveal tissues.
+
+**The findings include:**
+ • Iris nodules
+ • Mutton fat KPs
+ • Disc oedema
+
+⚠️ NEITHER ENTITY IS GIVEN A TREATMENT, AN INTERVAL, OR AN INCIDENCE. Sympathetic
+ophthalmia is printed WITHOUT the classic latent-period figures and without the
+enucleation-timing rule; VKH is printed WITHOUT the sunset-glow fundus and without
+staging. Both are one short block each. No exciting/sympathising eye terminology
+is printed.
+
+--------------------------------------------------------------------------------
+PAGE 141 (PDF 143) — ⚠️ HEADED "This page is from Tutorial"
+--------------------------------------------------------------------------------
+
+Page title, centred and blue: **This page is from Tutorial**
+(i.e. the book's own marker: the WHOLE page is round material, skippable for the
+final.)
+
+ ┌────────────────────────────────┐
+ │ **Iris Diseases :**             │
+ │  • Colour (heterochromia)       │
+ │  • Synechiae                    │
+ │  • Tremulous iris (iridodonesis)│
+ │  • Iris defect:                 │
+ │      - Iridectomy               │
+ │      - Iridodialysis            │
+ │      - Coloboma                 │
+ │      - Aniridia                 │
+ │  • Rubeosis iridis              │
+ └────────────────────────────────┘
+
+**1. Iris Colour (heterochromia)**   [heading only — no text under it]
+
+**2. Iris Synechiae:**
+   FIGURES: "Anterior synechiae" (slit-beam photograph, iris adherent to the
+   cornea) and "Posterior synechiae" (dilated pupil with a festooned, irregular
+   outline).
+
+**3. Iris defects:**
+   FIGURES, four in a row, captions burned into the images:
+   "Colobom" [sic — printed without the final 'a'] · "Iridodialysis" ·
+   "Iridectomy" · "Aniridia".
+
+**4. Rubeosis iridis:**
+   FIGURES: three clinical photographs of new vessels on the iris surface / at the
+   pupillary margin (the third is a high-magnification view of the vessels).
+
+⚠️ THIS PAGE IS FIGURES AND HEADINGS ONLY. Six named iris conditions are LISTED
+and PICTURED but NOT DEFINED anywhere in the chapter: tremulous iris
+(iridodonesis), iridodialysis, coloboma, aniridia, rubeosis iridis, and anterior
+synechiae. Any teaching on them must come from elsewhere.
+
+================================================================================
+TUTORIAL MARKERS IN THIS CHAPTER — the complete list
+(the book: "anything we put (Tutorial) or (T) beside / before it , study in round
+& skip in final")
+================================================================================
+1. p.135 — Posterior synechiae → "(leads to irregular shape of the iris .. Tutorial)"
+2. p.135 — Cycloplegic-mydriatics → "(to prevent and break recently formed
+   posterior synechiae → Tutorial)"
+3. p.135 — boxed: "+ Treatment of secondary ocular complications (tutorial)"
+4. p.137 — boxed "+ Tutorial": Vasculitis · Spill-over anterior uveitis is common
+5. p.137 — boxed "+ complications from Tutorial": Epiretinal membrane formation ·
+   Choroidal neovascularization · Retinal detachment
+6. p.137 — boxed "Tutorial": Immunosuppressive agents · Surgical intervention
+   (vitrectomy as in tractional retinal detachment)
+7. p.138 — boxed "N.B. from tutorial about uveitis treatment" (2 statements)
+8. p.141 — THE ENTIRE PAGE: "This page is from Tutorial" (iris diseases)
+
+================================================================================
+EVERY NUMBER PRINTED IN THIS CHAPTER
+================================================================================
+p.130 — chapter weight 3 % (contents page, not the chapter itself)
+p.134 — Idiopathic anterior uveitis: **75 % of cases**
+p.136 — Intermediate uveitis age: **15 to 40 years**
+p.136 — Intermediate uveitis = **20 %** of cases of paediatric uveitis
+p.136 — Associated with anterior uveitis in about **50 %** of cases
+p.136 — Macular oedema in **30 %** of cases (intermediate uveitis)
+p.139 — 75 % (idiopathic), 50 %, 30 % — repeated in the table
+⚠️ NO DOSE, NO DROP FREQUENCY, NO FOLLOW-UP INTERVAL AND NO PRESSURE VALUE IS
+PRINTED ANYWHERE IN THE TWELVE PAGES. Steroids, cycloplegics, antiglaucoma drugs
+and immunosuppressives are all named without a single dose or concentration.
+
+================================================================================
+NOT COVERED BY THIS CHAPTER — verified absences, page by page
+================================================================================
+• **NO GRADING SCHEME OF ANY KIND.** No SUN (Standardization of Uveitis
+  Nomenclature) classification, no anterior-chamber cell grade (0.5+ … 4+), no
+  flare grade, no vitreous haze grade, no activity/duration/onset terminology
+  (acute / recurrent / chronic as SUN defines them). Cells and flare are signs
+  only.
+• **NO JIA SCREENING SCHEDULE.** No screening interval, no ANA/age/subtype
+  stratification, no follow-up frequency. JIA is named twice only (aetiology of
+  anterior uveitis; band keratopathy risk).
+• No mention of granulomatous vs non-granulomatous uveitis as a classification —
+  "granulomatous" appears only inside the VKH and sympathetic ophthalmia
+  definitions.
+• No mutton-fat KP teaching in the anterior uveitis section (the term appears once,
+  under sympathetic ophthalmia, p.140).
+• No Koeppe or Busacca iris nodules; no iris nodules described except the one line
+  in sympathetic ophthalmia.
+• No Fuchs heterochromic iridocyclitis / Fuchs uveitis syndrome.
+• No Posner-Schlossman (glaucomatocyclitic crisis).
+• No hypopyon-vs-pseudohypopyon distinction; no Behçet hypopyon description beyond
+  the aetiology line.
+• No investigation list for uveitis — no HLA-B27 testing protocol, no serology
+  panel, no chest imaging, no "systemic workup" content beyond the phrase itself
+  (p.135, item 4).
+• No uveal tumours (choroidal melanoma appears only as a masquerade cause and as a
+  cause of heterochromia); no choroidal naevus; no uveal effusion.
+• No choroidal blood supply detail — short/long posterior ciliary arteries,
+  vortex veins and the anterior ciliary arteries are never named.
+• No nerve supply of the iris or ciliary body; no innervation of sphincter/dilator
+  (parasympathetic/sympathetic) beyond naming the two muscles.
+• No definitions for the six iris conditions listed on p.141 (see the p.141 note).
+• No sympathetic-ophthalmia latency, incidence or prophylactic-enucleation rule.
+• No VKH treatment, staging, or sunset-glow fundus.
+• No paediatric-uveitis section beyond the single 20 % line on p.136.

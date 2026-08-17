@@ -1,0 +1,434 @@
+SOURCE: Semester 8\Opthalmo\Theoritical\Books\ophthalmology.pdf
+================================================================================
+BOOK:    "OPHTHALMOLOGY WITH TUTORIALS" (inside title, PDF p.3) / cover reads
+         "OPHTHALMO-OLOGY", "5", "Fifth Year".
+AUTHOR:  BY HEALIX TEAM (as printed on the cover; no named editor, no author list,
+         no edition statement anywhere in the front matter).
+CHAPTER: 7 — contents page prints "Sclera"; the chapter's own opener prints
+         "The Sclera".
+RANGE:   PRINTED pp. 96–102  =  PDF pp. 98–104  (7 pages, all read).
+WEIGHT:  3 % — the contents page's own "Relative weight in %" column.
+OFFSET:  ⚠️ PDF page = printed page + 2. Every citation below is the PRINTED page,
+         which is the number the user sees at the bottom-left of the page.
+READ:    2026-08-18, rendered at 150 dpi to the session scratchpad and read page by
+         page (A4 portrait book text — no contact sheets). One 400 dpi crop was
+         taken for the ultrasound caption on p.99. Nothing under Semester 8\ was
+         modified.
+CITE AS: ophthalmology.pdf p.<printed N>
+
+--------------------------------------------------------------------------------
+⚠️ STRUCTURAL NOTES — read before using this file
+--------------------------------------------------------------------------------
+
+⚠️ THE BOOK'S OWN TUTORIAL MARKER. The contents page states:
+   "In this book, anything we put (Tutorial) or (T) beside / before it , study in
+   round & skip in final"
+   Every "Tutorial" mark below is therefore the BOOK'S OWN statement that the item
+   is lower priority for the final. This chapter carries FIVE, four of them boxed.
+
+⚠️ THIS CHAPTER *DOES* NUMBER ITS FIGURES — "Fig 7-1", "Fig 7-2 A", "Fig 7-2 B",
+   "Fig 7-3", "Fig 7-4", i.e. chapter-number–figure-number. This CONTRADICTS
+   `content\ophtho\book-map.md`, which states the book "uses no Figure X-Y
+   numbering" and that "figures carry plain captions". That statement is refuted
+   here and must be corrected in the map: the practice is INCONSISTENT — chapter
+   10 (Uveal Tract) has no figure numbers at all, chapter 7 numbers five figures.
+   ⚠️ It follows that a `(Fig 9-x)` reference elsewhere in the course material can
+   no longer be excluded from this book on the "no figure numbering" argument
+   alone. The map's conclusion about `L23` should be re-examined on its other
+   evidence (page size, deck format), which is unaffected.
+
+⚠️ THE SCLERITIS CLASSIFICATION IS COMPLETE HERE (printed 99): anterior vs
+   posterior; anterior subdivided diffuse / nodular / necrotizing; necrotizing
+   with the named rare painless form **scleromalacia perforans**. Episcleritis has
+   its own two-type classification (nodular / simple, simple further sectoral vs
+   diffuse). This is the classification the module was missing.
+
+⚠️ STAPHYLOMA IS DEFINED IN THIS CHAPTER (printed 97), in the anatomy section
+   rather than under scleritis, and it has its own numbered figure (Fig 7-1).
+
+⚠️ PRINTED 101 IS A "NOTES:" PAGE THAT RESTATES THE PHENYLEPHRINE TEST and turns
+   it into a 3-row table. Printed 102 is a full-page Episcleritis-vs-Scleritis
+   comparison table. Both are kept as tables below.
+
+⚠️ ONE INTERNAL DISCREPANCY, transcribed and not resolved: printed 98 says the
+   episcleritis/conjunctivitis test uses **phenylephrine 2.5 %** and that blanching
+   is seen "in conjunctivitis … while not in episcleritis"; printed 102's table
+   says of episcleritis "**Blanching** occurs with **phenylephrine 10 %**". The
+   printed-101 table reconciles them (episcleritis: no blanch at 2.5 %, blanch at
+   10 %). All three are transcribed as printed.
+
+--------------------------------------------------------------------------------
+PAGE 96 (PDF 98) — chapter opener
+--------------------------------------------------------------------------------
+
+Title, blue underlined serif: **The Sclera**
+
+(Decorative image: a stylised line-drawn red eye with a tear drop. Decoration, no
+teaching.)
+
+OBJECTIVES  (flowchart of blue rounded boxes)
+
+    Sclera
+      ├── Anatomy
+      ├── Episcleritis
+      └── Scleritis
+
+--------------------------------------------------------------------------------
+PAGE 97 (PDF 99)
+--------------------------------------------------------------------------------
+
+Header band: **Anatomy of the sclera**
+
+• The sclera "the **white** part of the eye" constitutes **5/6** of the **outer**
+  fibrous protective coat of the globe.
+• Composed of **irregularly** distributed collagen bundles (therefore opaque)
+• Continuous with the **cornea anteriorly** and with the **dura mater covering the
+  optic nerve posteriorly**.
+• The episclera is a thin layer of vascularized connective tissue covering the
+  outer surface of the sclera.
+
+FIGURE (right, unnumbered line diagram): globe in section, annotated "Cornea forms
+1/6 th of the outer coat" and "Sclera forms 5/6 th of the outer coat".
+
+**Normal Scleral color**  (++ Additional)
+   [⚠️ "(++ Additional)" is the book's own tag on this sub-section — it is NOT the
+   Tutorial marker, and its meaning is not defined anywhere in the front matter.
+   Transcribed as printed.]
+ • In adults, the sclera is **white** in color. This white appearance is because of
+   the scattering of all wave lengths of light by dense irregular bundles of
+   collagen in sclera.
+ • In children, a **bluish** is observed [sic — verb missing] because of the
+   extremely thin sclera which allows the visibility of underlying choroid.
+ • In older age the sclera may appear slightly yellowish because of the deposition
+   of fat.
+
+**Blue sclera**
+ • Sclera is whitish in color but can attain a **bluish** discoloration due to
+   **thinning and subsequent transparency of scleral collagen**, which allows
+   increased visibility of underlying choroidal pigment.
+ • This can be seen in some conditions such as:
+    o Marfan syndrome
+    o Osteogenesis imperfecta
+
+ • A localized protrusion of the sclera lined by uveal tissue (i.e.: **bluish** in
+   color) is called **staphyloma.**
+
+FIGURES:
+ – (unnumbered) colour photograph of a face with markedly blue sclerae both eyes,
+   beside the "Blue sclera" text.
+ – **Fig 7-1: staphyloma** — clinical photograph of a globe with a large dark-blue
+   bulging protrusion at the limbus/anterior sclera. Teaches what the prose
+   defines: the uveal lining is what makes it blue.
+
+⚠️ No type of staphyloma is classified (no anterior/intercalary/ciliary/equatorial/
+posterior scheme), and no cause is given beyond "localized protrusion".
+
+--------------------------------------------------------------------------------
+PAGE 98 (PDF 100)
+--------------------------------------------------------------------------------
+
+Header band: **Episcleritis**
+
+ – Inflammation of the episcleral tissues.
+ – Relatively common, benign, self-limited cause of red eye.
+ – **(2/3)** of cases are **unilateral**
+ – More common in **females** than in males **(3:1)**
+ – Recurrent cases may signify the presence of an underlying systemic inflammatory
+   disease.
+
+**Clinical types:**
+
+ **Nodular:**
+  • A discrete elevated area of inflamed episcleral tissue is present (Less acute
+    onset and more prolonged course)
+ **Simple:** (More Common)
+  • Vascular congestion is present in the absence of an obvious nodule.
+  • **It can be either:**
+     o Sectoral (2/3 of cases)
+     o Diffuse (1/3 of cases)
+
+**Causes:**
+ • **Idiopathic (most cases)**
+ • Collagen vascular disease (rheumatoid arthritis, systemic lupus erythematosus,
+   seronegative spondyloarthropathies)
+ • Vasculitides (polyarteritis nodosa, temporal arteritis, Behçet's disease),
+ • Inflammatory bowel diseases (Crohn's disease, ulcerative colitis)
+ • Dermatologic disease (Rosacea)
+ • Metabolic disease (gout)
+ • Atopy
+ • Infections (Herpes zoster, Herpes simplex, Syphilis)
+
+**Clinical Picture:**
+
+Symptoms:
+ • Acute (simple episcleritis or gradual (nodular) onset of red eye
+   [sic — the parenthesis is unclosed as printed]
+ • Discomfort photophobia or tenderness.
+
+Signs:
+ • Sectoral or diffuse injection
+ • Chemosis
+ • Tender episcleral nodules that can be easily mobilized over the sclera
+ • **Differentiation** between episcleritis and conjunctivitis can be done by
+   instilling a drop of **phenylephrine 2.5%** in the affected eye. Blanching of
+   the conjunctival is seen in conjunctivitis with the disappearance of hyperaemia
+   while not in episcleritis.
+
+ ┌─────────────────────────────────────────────┐
+ │ **Tutorial**                                 │
+ │ No discharge (if present: minimal & watery)  │
+ └─────────────────────────────────────────────┘
+
+FIGURES:
+ – **Fig 7-2 A: Nodular episcleritis** — close-up of a discrete raised red nodule
+   with surrounding vessels.
+ – **Fig 7-2 B: Simple episcleritis** — diffuse bright-red superficial injection
+   across the temporal bulbar surface, no nodule.
+ ⚠️ The two figures carry the whole visual discrimination between the two clinical
+ types; the prose distinguishes them in one line each.
+
+--------------------------------------------------------------------------------
+PAGE 99 (PDF 101)
+--------------------------------------------------------------------------------
+
+**Management:**  [of episcleritis]
+ • Episcleritis is a **self-limited disease** that usually clears on its own
+   without treatment.
+ • In cases with pain or discomfort, supportive measures, such as cold compresses
+   and iced artificial tears, or medical therapy can be initiated.
+ • Patients who experience recurrent attacks may require systemic evaluation
+ • Treatment of the associated systemic disease can help control the condition
+ • Oral non-steroidal anti-inflammatory drugs (NSAIDs) are the main line of
+   treatment (**Ibuprofen 800 mg three times daily**)
+ • Topical steroids (prescribed and monitored by an ophthalmologist).
+
+ ┌──────────────────────────────────────────────────┐
+ │ **Tutorial**                                      │
+ │ + Topical anti-inflammatory agents and lubricants │
+ └──────────────────────────────────────────────────┘
+
+================================ Scleritis ================================
+(section header band)
+
+Inflammation of the sclera, can present as a **painful red eye** with or without
+vision loss
+
+**Clinical types :**
+
+**1. Anterior scleritis:**
+ – Inflammation anterior to the insertion of the rectus muscles
+ – More common (in middle aged females .. **Tutorial**)
+ – Diffuse, nodular, or necrotizing in appearance.
+
+ ┌────────────────────────────────────────────────────────────┐
+ │ **Tutorial**                                                │
+ │ • ± History of autoimmune disease (rheumatoid arthritis)     │
+ │ • Eye has a characteristic bluish-violet discoloration:      │
+ │     - Engorgement of the deep episcleral plexus              │
+ │     - Scleral thinning                                       │
+ └────────────────────────────────────────────────────────────┘
+
+ – **Necrotizing anterior scleritis** is the most severe form:
+    o Characterized by severe pain and extreme scleral tenderness.
+    o With or without necrosis and exposure of the choroid.
+    o **Scleromalacia perforans** is a rare form of necrotizing anterior scleritis
+      without pain.
+
+**2. Posterior scleritis:**
+ – Inflammation posterior to the insertion of the rectus muscles.
+ – Rare
+ – Can be associated with serous retinal detachment and loss of vision as well as
+   pain upon eye movement.
+ – **U/S:** Scleral thickening ± RD (**Tutorial**)
+
+FIGURES:
+ – **Fig 7-3: Scleritis** — a pair: a slit view of deep violaceous scleral
+   injection, and an external photograph of a diffusely red eye with a bluish hue.
+ – (unnumbered, captioned) **"Necrotizing anterior scleritis"** — an avascular
+   white necrotic scleral patch surrounded by intense injection.
+ – **Fig 7-4: Scleromalacia perforans** — a thinned, translucent grey-blue scleral
+   area with underlying uvea showing through and a quiet-looking eye (the painless
+   form).
+ – B-scan panel with a blue vertical tab reading **SCLERITIS**, captioned
+   **"T" sign**, two images labelled **2A** and **2B**, with the printed sub-caption
+   (read at 400 dpi): *"B-Scan ultrasonography reveals: severely thickened sclera
+   (a) and a classic T-sign; and anterior nasal choroidal detachments (b)."*
+   ⚠️ THE "T SIGN" IS TAUGHT ONLY IN THIS FIGURE — the prose on p.99 and p.100 says
+   only "scleral thickening ± RD" and never names the T sign.
+
+--------------------------------------------------------------------------------
+PAGE 100 (PDF 102)
+--------------------------------------------------------------------------------
+
+[Scleritis, continued]
+
+**Causes:**
+ • **Rheumatoid arthritis** is the most common association as well as other
+   collagen vascular diseases (systemic lupus erythematosus, seronegative
+   spondyloarthropathies)
+ • Metabolic disease (gout)
+ • Infections (TB, Syphilis, Herpes zoster, ...etc)
+ • Chemical or physical injuries
+ • idiopathic
+
+**Clinical Picture:**
+
+Symptoms:
+ o Gradual onset of ocular pain with globe tenderness
+   (**pain** is the most important indicator for disease progression)
+ o Red eye (localized or diffuse)
+ o Decreased vision may be present
+
+Signs:
+ • The redness has a characteristic **violet-bluish** hue with scleral oedema and
+   overlying chemosis.
+ • **No blanching** occurs with **phenylephrine 10%** (D.D. from episcleritis)
+ • Other signs vary depending on the location of the scleritis and the degree of
+   involvement
+ • In the anterior segment there may be associated keratitis with corneal thinning,
+   uveitis, and trabeculitis (elevated IOP).
+ • With posterior scleritis, there may be serous retinal detachment
+ • Non ocular signs are important in the evaluation of the many systemic
+   associations of Scleritis
+
+**Management:**
+
+ **Investigations:**
+  Ocular B-scan ultrasonography and orbital magnetic resonance imaging (MRI) may be
+  used for the detection of posterior scleritis.
+
+ **Treatment:**
+  • Scleritis is a **vision-threatening** condition that requires urgent referral
+    to an ophthalmologist.
+  • Oral non-steroidal anti-inflammatory drugs (NSAIDS)
+  • Systemic (oral or intravenous) corticosteroids & less commonly topical
+    corticosteroids.
+  • Immunomodulating drugs (methotrexate, cyclophosphamide, mycophenolate,
+    cyclosporin, **TNF-X inhibitors** [sic — printed "TNF-X", standard is TNF-α])
+    may be required to control the systemic as well as the ocular disease.
+  • Surgical intervention may be required in cases of scleral perforation or the
+    presence of excessive scleral thinning with a high risk of rupture.
+
+ **Prognosis:**
+  - Visual loss is related to the severity of the scleritis.
+  - Patients with mild or moderate scleritis usually maintain excellent vision
+  - Scleritis may be active for several months or years before going into
+    long-term remission.
+  - Patients with necrotizing scleritis have a high incidence of visual loss and an
+    increased mortality rate.
+
+--------------------------------------------------------------------------------
+PAGE 101 (PDF 103) — "NOTES:" page
+--------------------------------------------------------------------------------
+
+Page heading: **NOTES:**
+
+ • **Differentiation** between episcleritis and conjunctivitis can be done by
+   instilling a drop of phenylephrine **2.5 %** in the affected eye.
+
+   Blanching of the conjunctival is seen in conjunctivitis with the disappearance
+   of hyperaemia while **not in episcleritis**
+
+ • **Differentiation** between episcleritis and Scleritis can be done by instilling
+   a drop of phenylephrine **10%** in the affected eye.
+
+   Blanching is seen in episcleritis with the disappearance of hyperaemia while
+   **not in scleritis**
+
+THE PHENYLEPHRINE TABLE (kept as a table; ✓ = blanching occurs, ✗ = no blanching):
+
+|                       | Phenylephrine 2.5 % | Phenylephrine 10 % |
+|---|---|---|
+| **Conjunctivitis**    | ✓ | ✓ |
+| **Episcleritis**      | ✗ | ✓ |
+| **Anterior scleritis**| ✗ | ✗ |
+
+⚠️ This 3×2 table is the chapter's single most compressed piece of teaching and it
+exists nowhere else in the module. It resolves the apparent contradiction between
+p.98 and p.102: episcleritis does NOT blanch at 2.5 % but DOES at 10 %.
+
+(The rest of the page is blank.)
+
+--------------------------------------------------------------------------------
+PAGE 102 (PDF 104) — full-page comparison table (no caption, no figure number)
+--------------------------------------------------------------------------------
+
+|              | Episcleritis | Scleritis |
+|---|---|---|
+| **Definition** | Inflammation of the **episcleral tissues** | Inflammation of the **scleral stroma** or all layers of sclera; can present as a **painful red eye** with or without vision loss |
+| **Incidence** | **More common** | Less common |
+| **Sex** | More common in **females (3:1)** | *(blank in the original)* |
+| **Characters** | Self-limited, benign, and **2/3** of cases are **unilateral** | A vision-threatening condition that requires urgent referral to an ophthalmologist |
+| **Clinical Types** | 1. **Nodular type**: a discrete, elevated area of inflamed episcleral tissue is present.  2. **Simple type** (more common) | 1. **Anterior scleritis**: (more common)  2. **Posterior scleritis:** (rare) |
+| **Causes** | **Idiopathic** (most cases). | **Rheumatoid arthritis** is the most common association |
+| **Symptoms** | **Red eye**, acute onset (simple episcleritis) or gradual onset (nodular)  **Irritation**: discomfort, photophobia,  **Tenderness**,  **No visual affection** | **Red eye**, localized or diffuse,  **Pain**  **Decreased vision** may be present  May associate with **uveitis** |
+| *(unlabelled row)* | **Blanching** occurs with **phenylephrine 10%** | **No blanching** occurs with **phenylephrine 10%** (D.D. from episcleritis) |
+| **INVx** | Not needed | **Ocular B-scan ultrasonography** and **(MRI)** |
+| **Treatment** | o Episcleritis is a **self-limited** disease that usually clears on its own without treatment.  o Oral non-steroidal anti-inflammatory drugs (NSAIDs) are the main line of treatment (**Ibuprofen** 800 mg three times daily). | o Scleritis is a **vision-threatening** condition that requires **urgent** referral to an ophthalmologist.  o Surgical intervention may be required in cases of:  ➢ Scleral perforation  ➢ The presence of excessive scleral thinning with high risk of rupture |
+| **Prognosis** | **Self-limited** *(single merged cell, set large and centred)* | – Patients with mild or moderate scleritis usually maintain excellent vision.  – **Visual loss** is related to the **severity** of the scleritis.  – Patients with **necrotizing scleritis** have a high incidence of visual loss and an increased mortality rate |
+
+================================================================================
+TUTORIAL MARKERS IN THIS CHAPTER — the complete list
+================================================================================
+1. p.98  — boxed "Tutorial": No discharge (if present: minimal & watery)
+2. p.99  — boxed "Tutorial": + Topical anti-inflammatory agents and lubricants
+3. p.99  — inline: anterior scleritis "More common (in middle aged females ..
+   Tutorial)"
+4. p.99  — boxed "Tutorial": ± History of autoimmune disease (rheumatoid
+   arthritis) · bluish-violet discoloration = engorgement of the deep episcleral
+   plexus + scleral thinning
+5. p.99  — inline: "U/S: Scleral thickening ± RD (Tutorial)"
+
+Separately, p.97 tags a sub-section "(++ Additional)" — a DIFFERENT and undefined
+marker, not the Tutorial marker. Recorded, not interpreted.
+
+================================================================================
+EVERY NUMBER PRINTED IN THIS CHAPTER
+================================================================================
+p.96  — chapter weight 3 % (contents page, not the chapter itself)
+p.97  — sclera = **5/6** of the outer fibrous coat; cornea = **1/6** (figure)
+p.98  — episcleritis: **2/3** of cases unilateral
+p.98  — episcleritis: female:male **3:1**
+p.98  — simple episcleritis: sectoral **2/3** of cases, diffuse **1/3** of cases
+p.98  — phenylephrine **2.5 %** (episcleritis vs conjunctivitis)
+p.99  — **Ibuprofen 800 mg three times daily** — the only dose in the chapter
+p.100 — phenylephrine **10 %** (scleritis vs episcleritis)
+p.101 — 2.5 % and 10 % again, in the table
+p.102 — 3:1, 2/3, 800 mg, 10 % repeated in the table
+Nothing was illegible. The only text needing magnification was the B-scan
+sub-caption on p.99, resolved at 400 dpi and transcribed in full above.
+
+================================================================================
+NOT COVERED BY THIS CHAPTER — verified absences
+================================================================================
+• **No scleral anatomy beyond four bullet points** — no lamina cribrosa, no scleral
+  spur, no emissary channels, no episcleral vascular plexus anatomy (the deep
+  episcleral plexus is named only inside a Tutorial box on p.99), no blood or nerve
+  supply, no thickness measurements anywhere.
+• **No classification of staphyloma.** Defined in one line (p.97) with one figure;
+  no anterior / intercalary / ciliary / equatorial / posterior types, no causes.
+• No scleral congenital anomalies other than blue sclera; blue sclera is given only
+  two named associations (Marfan syndrome, osteogenesis imperfecta) and no others
+  (e.g. Ehlers-Danlos is not printed).
+• No scleral trauma, no scleral rupture presentation, no scleral laceration
+  management (surgery is mentioned only as a scleritis complication).
+• No scleral tumours, no episcleral/scleral pigmentation (no ochronosis, no
+  scleral icterus discussion beyond the "yellowish with age / fat deposition" line
+  on p.97).
+• No **diffuse anterior scleritis** described in its own right — it is named once in
+  the p.99 list ("Diffuse, nodular, or necrotizing in appearance") and never given
+  features, unlike the necrotizing form.
+• No **nodular anterior scleritis** description either — named in the same list only.
+• No necrotizing scleritis subdivision into with-inflammation vs without-
+  inflammation; scleromalacia perforans is presented as "a rare form of necrotizing
+  anterior scleritis without pain", which is the only such distinction printed.
+• No surgically-induced necrotizing scleritis (SINS).
+• No scleritis grading or activity score.
+• No dose for any scleritis drug — NSAIDs, corticosteroids and every
+  immunomodulator (methotrexate, cyclophosphamide, mycophenolate, cyclosporin,
+  TNF-X inhibitors) are named without a dose or route detail beyond "oral or
+  intravenous".
+• No follow-up interval or monitoring schedule for either disease.
+• No episcleritis/scleritis differential against other red-eye causes beyond
+  conjunctivitis (the phenylephrine table); no comparison with acute glaucoma,
+  keratitis or subconjunctival haemorrhage.

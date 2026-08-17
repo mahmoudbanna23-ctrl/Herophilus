@@ -1,0 +1,1307 @@
+SOURCE: Semester 8\Opthalmo\Theoritical\Books\ophthalmology.pdf
+================================================================================
+BOOK:      "OPHTHALMOLOGY WITH TUTORIALS" (inside title, PDF p.3) / cover reads
+           "OPHTHALMO-OLOGY", "5 / Fifth Year".
+AUTHOR:    BY HEALIX TEAM (no named editor, no edition, no copyright page).
+CHAPTER:   14 — Neuro-ophthalmology
+PRINTED:   pp. 178–195   (18 pages)
+PDF:       pp. 180–197
+OFFSET:    ⚠️ PDF page = printed page + 2. Verified at five points across the book
+           (see content\ophtho\book-map.md) and re-confirmed here: PDF 180 carries
+           footer "178", PDF 197 carries footer "195".
+CITE AS:   ophthalmology.pdf p.<PRINTED>  — the PRINTED number, i.e. what the user
+           sees on the page. Every citation below is a printed page number.
+WEIGHT:    10 % — the book's own "Relative weight in %" column on the contents
+           page. Joint-highest of the twenty chapters (with ch.19).
+READ:      2026-08-18, rendered at 150 dpi page-by-page (portrait A4 book text;
+           two small-print boxes re-cropped at 300 dpi and confirmed). No source
+           file was modified, renamed, moved or deleted.
+
+--------------------------------------------------------------------------------
+⚠️ STRUCTURAL FINDINGS — read before using this cache
+--------------------------------------------------------------------------------
+
+⚠️ 1. THE TUTORIAL MARKER IS EVERYWHERE IN THIS CHAPTER AND IT IS A STUDY-PRIORITY
+      SIGNAL. The contents page states: "In this book, anything we put (Tutorial)
+      or (T) beside / before it , study in round & skip in final". This chapter
+      uses the marker in FIVE distinct physical forms, not one:
+        (a) a whole framed box titled "Intro from Tutorial" / "Intro From Tutorial"
+            (printed 182, 187);
+        (b) a whole framed box titled "Collection From Tutorial" (printed 183);
+        (c) a whole framed box explicitly labelled "From tutorial (not in the book)"
+            (printed 185) and "…in more details (From Tutorial .. not in the book)"
+            (printed 191), and "…in more details (From Tutorial)" (printed 192);
+        (d) an inline blue parenthetical ending ".. T)" or "→ Tutorial" inside an
+            otherwise book-text bullet (printed 183, 184, 188, 190, 192, 194);
+        (e) a dashed-border side box with the word "Tutorial" printed in a tab
+            on its edge (printed 188).
+      Form (d) is the dangerous one: it marks a SINGLE CLAUSE inside a sentence
+      the rest of which is core. Every occurrence is recorded in place below, in
+      the book's own wording.
+
+⚠️ 2. THE CHAPTER IS FOUR NUMBERED PARTS, ROMAN-NUMERALLED, matching the opener's
+      objectives flowchart exactly: I. Pupillary disorders · II. Motility Disorders ·
+      III. The Optic Nerve · IV. Visual Pathways and their Related Field Defects.
+      Within part III the five topics are numbered (1)…(5) in the headings.
+
+⚠️ 3. THE CHAPTER DELEGATES THREE TOPICS TO OTHER CHAPTERS, in prose, with no page
+      number (this book has no figure or page cross-references at all):
+        - abnormal pupillary size → "(Please refer to the examination chapter)"
+          [ch.1], printed 179;
+        - Argyll-Robertson investigation → "(please refer to the pupillary
+          examination section in chapter 1)", printed 181;
+        - Arteritic AION → "(Please refer to the chapter on Ocular Manifestations
+          of Systemic Conditions and Diseases)" [ch.19], printed 192.
+      So a full neuro-ophthalmology app chapter needs ch.1 and ch.19 read too.
+
+⚠️ 4. THIRD NERVE PALSY IS SPLIT ACROSS TWO PARTS. It is listed under Pupillary
+      disorders on printed 180 with only "(Discussed later in this chapter)", and
+      is actually taught on printed 182–183 under Motility Disorders.
+
+⚠️ 5. NUMBERS THE BOOK PRINTS THAT LOOK LIKE TYPOS BUT ARE TRANSCRIBED AS PRINTED:
+      "function of SO4: Abduction / internal rotation / depression" (printed 183)
+      — the book prints ABduction and INTERNAL rotation for superior oblique.
+      "Esotropia (in 1ry position due to overaction of the Middle Rectus .. T)"
+      (printed 184) — "Middle Rectus" is the book's wording.
+      Recorded, not corrected. No fact here is supplied from outside the book.
+
+⚠️ 6. LEGIBILITY: nothing in this chapter was illegible at 150 dpi. Two small
+      boxes were re-rendered at 300 dpi to confirm wording and both resolved
+      cleanly. There is no "[illegible]" anywhere below.
+
+⚠️ 7. This is dense, exam-shaped teaching, not padded revision notes — comparison
+      tables, explicit aetiology lists, investigation lists and treatment doses.
+      Several facts here have no counterpart at all in L21+L22, whose caches hold
+      264 words between them. See the note at the end of the file.
+
+
+================================================================================
+PAGE 178 (PDF 180) — CHAPTER OPENER
+================================================================================
+
+Neuro-ophthalmology                              [blue underlined serif title]
+
+[FIGURE, uncaptioned: cross-section of the globe on the left with the optic nerve
+ leaving posteriorly, expanded on the right into a longitudinal section of the
+ optic nerve head showing nerve-fibre bundles, the central retinal artery (red)
+ and central retinal vein (blue) running in the nerve, and the pial vessels.
+ Teaches the anatomy the whole "Optic Nerve" part depends on — it is the only
+ place the intraneural course of the central retinal vessels is drawn.]
+
+Objectives:
+[FLOWCHART of blue boxes. Root box:]
+
+    Neuro-ophthalmology
+    ├── Pupillary disorders
+    ├── Motility Disorders
+    ├── optic nerve disorders
+    └── visual pathway & their related field defects
+
+Under "Pupillary disorders":
+  1. Dorsal midbrain syndrome
+  2. Horner syndrome
+  3. Aryll Robertson syndrome        [sic — "Aryll", one L short of "Argyll";
+                                      the body text on p.181 prints "Argyll-Robertson"]
+
+Under "Motility Disorders":
+  • 3rd nerve palsy
+  • 4th nerve palsy
+  • 6th nerve palsy
+  • Myasthenia Gravis
+  • Nystagmus
+
+Under "optic nerve disorders":
+  • optic disc swelling
+      - Papilledema
+      - Papillitis
+  • optic neuritis
+  • chronic retrobulbar neuritis
+  • Ischemic optic neuropathy
+      - Non – Arteritic
+      - Arteritic
+  • optic atrophy
+      - 1ry
+      - 2ry
+      - Consecutive
+      - Glaucomatous
+
+[The fourth box, "visual pathway & their related field defects", carries NO
+ sub-list — it is the only objectives box left unexpanded.]
+
+
+================================================================================
+PAGE 179 (PDF 181) — I. PUPILLARY DISORDERS — intro and pupil size
+================================================================================
+
+I. Pupillary disorders                                        [part heading]
+
+Intro:
+
+[FIGURE, captioned "Pupillary Light Reflex": four eye photographs, upper pair
+ labelled "Direct" and "Consensual", lower pair labelled "Constriction of
+ stimulated pupil" and "Constriction of contralateral pupil".]
+
+[FIGURE, uncaptioned, numbered 1–4 pathway diagram of the light reflex:
+  1  Light is shined only on the left eye.
+  2  Action potentials from the left eye reach both right and left pretectal nuclei
+  3  The pretectal nuclei stimulate both sides of the Edinger-Wetsphal nucleus.
+     [sic — "Wetsphal" in this label; "Edinger-Westphal" spelled correctly in label 4]
+  4  Edinger-Westphal nuclei generate action potentials through the right and left
+     oculomotor nerves, causing constriction of both pupils.
+ Other labels on the diagram: Ciliary ganglia · Oculomotor nerve (III) ·
+ Pretectal nucleus.
+ This figure carries the reflex arc, which the prose never states — the prose has
+ no anatomical description of the light-reflex pathway at all.]
+
+Abnormal pupillary size:
+(Please refer to the examination chapter)
+
+TABLE — Abnormal pupillary size
++---------------------------------------+---------------------------------------+
+| Dilated Fixed Pupil                   | Small Pupil                           |
++---------------------------------------+---------------------------------------+
+| • It indicates :                      | • Pin-point Pupil:                    |
+|   - loss of the parasympathetic       |     o Morphine use                    |
+|     supply or                         |     o Organophosphorus poisoning      |
+|   - injury to the sphincter pupillae  |     o Pontine haemorrhage             |
+|     muscle.                           |                                       |
+|                                       | • Miotics                             |
+| • It can be caused by:                | • Acute iritis / old iritis with      |
+|   o Trauma to the iris sphincter or   |   posterior synechiae                 |
+|     the orbital parasympathetic       | • Senile miosis due to decreased      |
+|     nerves (traumatic mydriasis)      |   sympathetic stimulation with age    |
+|   o Pharmacologic dilatation          | • Horner syndrome                     |
+|   o Ciliary ganglion disease / damage | • Argyll-Robertson pupil              |
+|   o Oculomotor (III) paralysis        | • Stage III anaesthesia               |
+|   o Brain stem affection (dorsal      |                                       |
+|     midbrain syndrome)                |                                       |
+|   o Stage II , IV anaesthesia.        |                                       |
+|   o Death (bilateral)                 |                                       |
++---------------------------------------+---------------------------------------+
+[Anaesthesia stages are printed as roman numerals in red: II and IV dilate,
+ III constricts.]
+
+[FIGURE inside the Small Pupil cell: a stylised eye labelled "pinpoint pupil".]
+
+[FIGURE, uncaptioned, bottom of page: three anterior views of the iris —
+  "Bright light" (pupil constricts as circular muscles of iris contract
+   (parasympathetic))
+  "Normal light"
+  "Dim light" (pupil dilates as radial muscles of iris contract (sympathetic))
+ with the printed legend:
+   Constrictor pupillae muscle (parasympathetic innervation)
+   Dilator pupillae muscle (Sympathetic innervation)
+ Labelled "Anterior views".]
+
+
+================================================================================
+PAGE 180 (PDF 182) — Third nerve palsy pointer · Dorsal midbrain syndrome ·
+                      Horner syndrome
+================================================================================
+
+Third nerve palsy:
+(Discussed later in this chapter)
+[⚠️ This is the whole entry here. The teaching is on printed 182–183.]
+
+Dorsal midbrain syndrome:
+  • Due to damage or compression of the upper brainstem (midbrain)
+  • Characterised by bilateral: (3 Ls)
+      – Light near dissociation ( ✗ light reflex + ✔ near reflex)
+      – Loss of upgaze
+      – Lid (eyelid) retraction (Collier sign).            [MNEMONIC: "3 Ls"]
+  • Causes:
+      o Hydrocephalus
+      o Compressive lesions of the midbrain
+      o Multiple sclerosis
+      o Stroke
+      o Midbrain haemorrhage.
+  • MRI is mandatory in any patient showing manifestations of dorsal midbrain
+    syndrome
+
+[FIGURE, captioned on the image "Collier's Sign (lid retraction)": photograph of
+ a face with marked bilateral upper-lid retraction, sclera visible above both
+ limbi.]
+[FIGURE, two-panel line drawing:
+   upper — "Pupils DO NOT constrict when exposed to bright light. ("light reflex")"
+   lower — "Pupils DO constrict on a near object. ("accommodation reflex")"
+ This is the only place light-near dissociation is drawn rather than named.]
+
+Horner syndrome:
+  • Caused by dysfunction of the sympathetic supply.
+  • Characterised by:
+      – Miosis (with anisocoria more in the dark)
+      – Ptosis and anhidrosis of the ipsilateral face and neck
+      – Enophthalmos
+      – Heterochromia of the iris in congenital cases.
+  • Aetiology:
+      o Apical lung tumours (pancoast's tumour)  [life-threatening]
+      o Thoracic aortic aneurysm                 [life-threatening]
+      o Carotid artery dissection                [life-threatening]
+      o Cavernous carotid aneurysm               [life-threatening]
+      o Neck, thoracic, or spinal trauma / surgery.
+      o Cervical rib
+      o Demyelinating diseases
+      o Brain stem infarction
+    [⚠️ the tag "[life-threatening]" is printed in red beside exactly the first
+     four causes and no others — a deliberate triage signal.]
+  • Investigations:
+      o MRI examination from the base of the brain to the mid-thoracic region
+      o Carotid angiography (in acute and / or painful cases)
+      o Many patients will show normal results of these investigations
+        (idiopathic Horner syndrome)
+
+[FIGURE, captioned "heterochromia": two pairs of eyes, upper labelled
+ "Iris colour difference", lower labelled "Sectoral heterochromia".]
+[FIGURE, captioned "Horner syndrome" (www.medinaz.com): cartoon face, affected
+ side vs unaffected side, labelled Anhidrosis · Ptosis · Miosis.]
+[FIGURE, captioned "ANISOCORIA (unequal pupils)": eye pair, "Abnormal pupil
+ dilation" arrowed.]
+[FIGURE, captioned "sympathetic supply": full sympathetic pathway diagram —
+ Posterior hypothalamus · Descending sympathetic pathways to upper thoracic cord ·
+ Superior (sympathetic) cervical ganglion · Carotid plexus · Nerve to dilator
+ muscle (✗ Miosis) · Nerve to tarsal muscle / Muller muscle: keeps eyelid
+ elevated (✗ ptosis) · Nerve to sweat gland (✗ Anhydrosis).
+ ⚠️ This figure teaches WHICH lesion produces WHICH sign — the prose lists the
+ signs but never links them to the branch.]
+
+
+================================================================================
+PAGE 181 (PDF 183) — Horner figures (continued) · Argyll-Robertson pupils
+================================================================================
+
+[FIGURE, uncaptioned: clinical photograph of Horner syndrome, labelled "Ptosis"
+ and "Miosis". Second photograph beside it, uncaptioned, showing anisocoria.]
+
+[FIGURE, uncaptioned, large: the three-neuron oculosympathetic pathway, drawn
+ from the hypothalamus to the eye. Labels as printed:
+   1. First order neurons — Hypothalamus, III, IV, Pons, V, VI, Medulla oblongata,
+      Foramen magnum, Cervical spinal cord
+   2. Second order neurons — Stellate ganglion, T1, T2, Pleura, Ascending aorta,
+      Subclavian artery, Common carotid artery, External carotid artery, Sweat gland
+   3. Third order neurons — Superior Cervical Ganglion, Internal carotid artery,
+      Carotid canal, Superior orbital fissure, Ophthalmic artery, Bony orbit,
+      Ciliary ganglion, Long ciliary nerve, Short ciliary nerves,
+      Superior tarsal muscle, Pupillary sphincter, Pupillary dilator
+   Credit on image: © K. Toverud, A. Langdalen
+ ⚠️ The three-order division of the sympathetic pathway appears ONLY in this
+ figure. The prose never mentions first/second/third-order neurons, so the
+ anatomical basis for "MRI from base of brain to mid-thorax" is figure-only.]
+
+Argyll-Robertson pupils:
+  • Tertiary syphilis with midbrain affection      [highlighted]
+  • Bilateral (may be asymmetric)
+  • Small irregular pupils with light-near dissociation
+  • Investigations: serologic testing for syphilis and MRI of the brainstem
+    (please refer to the pupillary examination section in chapter 1)
+
+[FIGURE / MNEMONIC BOX, cartoon captioned "HEY!! STOP IGNORING ME..", with the
+ printed mnemonic:
+     Argyll Robertson Pupil (ARP)
+     ARP → Accommodation Reflex Present (ARP)
+     ARP ← Pupillary Reflex Absent (PRA)
+ ⚠️ This is a mnemonic the prose does not state.]
+
+
+================================================================================
+PAGE 182 (PDF 184) — II. MOTILITY DISORDERS · Third Nerve (Oculomotor) Palsy
+================================================================================
+
+II. Motility Disorders                                        [part heading]
+
+Intro from Tutorial:                                   [⚠️ WHOLE BLOCK = TUTORIAL]
+Clinical presentation of cranial nerve palsy:
+  ⇨ Manifest strabismus
+  ⇨ Limitation of movement in the direction of action of the paralyzed / paretic
+    muscle.
+  ⇨ Variability of the angle of deviation
+  ⇨ Binocular diplopia that increases in the field of action of affected muscle.
+  ⇨ Abnormal head posture
+
+[BOX — Treatment, part of the same Tutorial intro; confirmed at 300 dpi:]
+  Treatment
+    Directed to eliminate the cause
+    Measures to eliminate diplopia
+      - Monocular occlusion ( temporary measurer)          [sic — "measurer"]
+      - Prism (prescribed in glasses)
+      - Eye Alignment Surgery:
+        For patients with long standing stable ocular misalignment
+
+Third Nerve (Oculomotor - III) Palsy:
+  • Characterised by:
+      o Ptosis (masks the diplopia)
+      o Mydriasis (in compressive lesions e.g., aneurysm or tumour )
+      o Loss of elevation and adduction
+      o The eye is turned outward and downward
+
+[BOX — CN III supplies:]
+      • Levator palpebrae superiosis → ↑ lid          [sic — "superiosis"]
+      • Sphincter pupillae → pupil constriction
+      • The below EOMs : ↓
+  [pointing to the muscle-map figure beneath it]
+
+[FIGURE, uncaptioned muscle map: eye with the six extraocular muscles labelled
+ with their nerve —
+   INFERIOR OBLIQUE (CN III) · SUPERIOR RECTUS (CN III)
+   MEDIAL RECTUS (CN III)     · LATERAL RECTUS (CN VI)
+   SUPERIOR OBLIQUE (CN IV)   · INFERIOR RECTUS (CN III)
+ Teaches the CN III muscle list, which the prose only gestures at with "the below
+ EOMs".]
+
+[FIGURE, captioned "Oculomotor Nerve (CN III) Palsy": normal eye vs abnormal eye
+ looking straight ahead, with three call-outs —
+   Ptosis — Inactivation of the levator palpebrae
+   Mydriasis — Decreased tone of the constrictor pupilae muscle   [sic]
+   Down and out — Unopposed left superior oblique and lateral rectus muscles
+ and beneath it a small algorithm:
+   Isolated cranial nerve III palsy
+     ├── Pupil involved → Trauma · Aneurysm · Tumor
+     └── Pupil spared  → Vasculopathy
+ ⚠️ This algorithm is the chapter's clearest statement of the pupil-rule and it
+ exists only inside the figure.]
+
+  • Aetiology:
+      o Intracranial aneurysm: especially of the posterior communicating artery
+        [total ophthalmoplegia] [i.e., external ophthalmoplegia (EOM paralysis) &
+        internal ophthalmoplegia (pupil affection)] that is usually painful
+      o Microvascular infarction within the nerve as in diabetes and hypertension
+        (the pupil is usually spared) [external ophthalmoplegia only]
+      o Trauma
+      o Cerebral herniation
+      o Brain tumour
+
+[BOX / FLOWCHART, uncaptioned:
+   Total ophthalmoplegia
+     ├── External → ✗ EOM
+     └── Internal → ✗ pupil constriction]
+
+[FIGURE, uncaptioned, bottom left: cross-section of the optic-… (third) nerve
+ showing —
+   "Blood vessels on pia mater supply surface of the nerve including pupillary
+    fibres (damaged by compressive lesions)"
+   "Vasa nervorum supply part of nerve but not pupillary fibres (damaged by
+    medical lesions)"
+   "Pupillary fibres lie dorsal and peripheral"
+ ⚠️ This figure carries the MECHANISM of pupil sparing. The prose states the rule
+ but never explains it — this is figure-only teaching and it is the single most
+ exam-shaped fact on the page.]
+
+[FIGURE, captioned "Oculomotor nerve palsy — Causes": posterior communicating
+ artery aneurysm compresses pupillary fibers → CN III → Pupillary dilation;
+ vascular disease of vasa nervorum leading to infarct of central nerve fibers →
+ Pupil sparing.]
+
+
+================================================================================
+PAGE 183 (PDF 185) — Third nerve palsy investigations + Tutorial table ·
+                      Fourth Nerve (Trochlear) Palsy
+================================================================================
+
+  • Investigations:
+      ⇨ MRI and cerebrovascular imaging to exclude compression from posterior
+        communicating artery aneurysms
+
+[TABLE — headed "Collection From Tutorial"]   ⚠️ WHOLE TABLE = TUTORIAL
++---------------------+-------------------------------------------------------+
+| Complete 3rd nerve  | • Ptosis (LPS)                                        |
+| palsy               | • Limited ocular motility except for abduction         |
+| (Pupil affected)    |   (lateral rectus) and slight depression               |
+|                     |   (Superior oblique)                                  |
+|                     |   ＋                                                   |
+|                     | • Dilated non-reactive pupil and accommodation is lost |
+|                     |   (Anisocoria more in light)                          |
++---------------------+-------------------------------------------------------+
+| Pupil-sparing       | • Ptosis (masks the diplopia)                         |
+| 3rd nerve palsy     | • Limited ocular motility except for abduction and    |
+|                     |   slight depression                                   |
+|                     | • Pupil: normal reaction                              |
+|                     |   Normal Pupil is due to sparing the parasympathetic  |
+|                     |   fibers going to intrinsic muscles or affection of   |
+|                     |   upper division of the third nerve                   |
++---------------------+-------------------------------------------------------+
+[FIGURES in the right column of the table, six panels (A)–(F), caption printed
+ beneath (confirmed at 300 dpi):
+   "Left 3rd nerve Palsy. (A) Left Ptosis. (B) Left exotropia (C) Limited
+    adduction of the left eye (D) Normal abduction of the left eye (E) Limited
+    elevation of the left eye (F) Normal depression of the left eye."]
+
+Fourth Nerve (Trochlear - IV) Palsy:
+  • Characterised by:
+      o Hypertropia   (in 1ry position & ↑ in adduction due to inferior oblique
+                       overaction .. T)                      [⚠️ INLINE TUTORIAL]
+      o Weak depression of the affected eye (especially in adduction)
+      o Vertical diplopia that increases in downgaze.
+      o Abnormal head position:
+          ▪ Chin depression
+          ▪ Face turn and head tilt to the opposite (normal) side to minimise
+            diplopia                                    ["opposite" highlighted]
+  • Aetiology:
+      o Microvascular infarction within the nerve as in diabetes and hypertension
+      o Trauma (can lead to bilateral IV palsy)
+      o Compressive lesions (e.g., intracranial tumour)
+      o Congenital (rare)
+
+[BOX — function of SO4:]
+      • Abduction
+      • internal rotation
+      • depression
+  [⚠️ Transcribed exactly as printed. See structural note 5.]
+
+[FIGURE, captioned "CN 4 Palsy": left eye diagram with superior oblique crossed
+ out, muscle vectors labelled Inferior oblique · Superior rectus · Medial rectus ·
+ Lateral rectus · Superior oblique · Inferior rectus; beneath it "HEAD TILTS TO
+ OPPOSITE SIDE", RIGHT EYE / LEFT EYE, "EYE ELEVATES".]
+[FIGURE, uncaptioned: photograph of a patient with head tilt.]
+[FIGURE STRIP, five panels with captions:
+   (A) Vertical diplopia
+   (B) Hypertropia
+   (C) Limited depression in adduction
+   (D) Normal abduction & adduction
+   (E) Excess elevation leading to hypertropia]
+
+
+================================================================================
+PAGE 184 (PDF 186) — Sixth Nerve (Abducent) Palsy
+================================================================================
+
+Sixth Nerve (Abducent - VI) Palsy:
+  • Characterised by:
+      o Esotropia   (in 1ry position due to overaction of the Middle Rectus .. T)
+                                                          [⚠️ INLINE TUTORIAL; sic]
+      o Loss of abduction of the affected muscle
+      o Horizontal diplopia that increases in ipsilateral gaze
+      o Abnormal head position with face turn to the same side of the lesion to
+        minimise diplopia                                   ["same" highlighted]
+
+[BOX — function of LR6: abduction]
+
+  • Aetiology:
+      o Compressive lesions (e.g., intracranial tumour) in 20% of cases
+        (especially in adults younger than 45 years of age)
+      o Microvascular infarction within the nerve as in diabetes and hypertension
+        (the most common cause in above 55 years of age individuals) - spontaneous
+        recovery usually occurs within 3-4 months
+      o Increased intracranial pressure as in idiopathic intracranial hypertension
+        (pseudotumor cerebri) or hydrocephalus. This can lead to bilateral VI palsy
+      o Trauma (most common cause in children)
+      o Other causes in children:
+          ▪ Inflammation of the petrous part of the temporal bone in severe
+            otitis media.
+          ▪ Post viral infections.
+  • Investigations:
+      o MRI or CT of the brain especially in children and young adults
+      o Systemic assessment: Blood sugar level, glycosylated haemoglobin, full
+        lipid profile, blood pressure measurement.
+
+[⚠️ NUMBERS ON THIS PAGE: 20 % · younger than 45 y · above 55 y · 3-4 months.
+ None of these appears anywhere in the L21/L22 caches.]
+
+[FIGURE STRIP, three panels, captioned:
+   "Left 6th nerve palsy
+    (A) Esotropia of the left eye
+    (B) Normal adduction of the left eye
+    (C) Limited abduction of the left eye"]
+[FIGURE STRIP, three panels a/b/c, captioned:
+   a) Esotropia   b) Defective abduction   c) Normal adduction]
+[FIGURE, captioned "abnormal head position to the same side of lesion":
+ photograph of a patient with face turn.]
+[FIGURE, captioned "Horizontal diplopia that increases in ipsilateral gaze".]
+
+
+================================================================================
+PAGE 185 (PDF 187) — Myasthenia Gravis (MG)
+================================================================================
+
+Myasthenia Gravis (MG):
+  • Definition:
+    A chronic autoimmune condition that interferes with the neuromuscular
+    transmission in skeletal muscles                  ["skeletal muscles" highlighted]
+  • Epidemiology: it can affect any age or gender.
+  • Clinical picture:
+      1. Ptosis and double vision are the presenting signs in half of the patients
+      2. May simulate any other ocular motor paresis/paralysis (3rd , 4th , or 6th
+         nerves)
+      3. THE PUPIL IS NEVER AFFECTED IN MG.               [highlighted, capitals]
+      4. Weakness of other skeletal muscles in the body leading to fatigue with
+         sustained effort.
+      5. For patients with unexplained ptosis or ocular movement problems,
+         myasthenia gravis should be suspected.
+
+[FIGURE, uncaptioned: photograph of a woman with bilateral ptosis.]
+
+[BOX — "From tutorial (not in the book)"]     ⚠️ WHOLE BOX = TUTORIAL, and the
+                                                 book itself says it is NOT book text
+  • MG is characterized by weakness & rapid fatigue of skeletal musculature, but
+    not of cardiac or involuntary muscles.
+  • Though this disease can affect people of any age, it's more common in
+    women < 40 and in men > 60.
+  • The most important feature is fatigability
+      o Muscle weakness worsens as the affected muscle is used and usually improve
+        with rest, so muscle weakness can come and go.
+      o However, the symptoms tend to progress over time, usually reaching their
+        worst within a few years after the onset of the disease
+      o In more than half of patient with myasthenia gravis, their first signs and
+        symptoms involve eye problems, such as: ptosis and diplopia
+
+  [Two dashed sub-boxes, side by side:]
+
+  Ptosis:                                | Diplopia:
+  ▪ Insidious, bilateral and frequently   | ▪ Double vision which may be horizontal
+    asymmetrical.                         |   or vertical
+  ▪ Worse at the end of the day and least | ▪ EOM examination:
+    on awakening.                         |   - Myasthenia gravis can mimic any
+  ▪ Worse on prolonged upgaze due to      |     pupil-sparing ocular motility
+    fatigue                               |     deficit.
+  ▪ Positive ice test: demonstrates an    |   - Bizarre defects of ocular motility
+    improvement in the severity of ptosis |     may also occur
+    - Improves after an ice pack is placed|   - Myasthenia should be considered in
+      on eyelid for 2 min as cold improves|     the differential diagnosis of any
+      neuromuscular transmission.         |     ocular motility disorder that does
+    - The test is negative in             |     not fit with a recognized pattern.
+      non-myasthenic ptosis .             |
+
+  Other manifestation may include:        | Investigation may include:
+    1. Lack of facial expression          |   ▪ Edrophonium test
+       ( + ptosis = myopathic facies)     |   ▪ Acetylcholine receptor antibody
+    2. Difficulty with swallowing         |     levels
+       (dysphagia)                        |   ▪ EMG (Electromyography)
+    3. Difficulty with speaking           | Treatment:
+       ( dysarthria)                      |   ▪ There's no cure for myasthenia
+    4. Difficulty with chewing.           |     gravis, but Rx can help relieve
+    5. Difficulty with breathing is rare  |     signs & symptoms
+       but serious. .                     |   ▪ May include anticholinesterase
+    6. Weakness, particularly of the arms |     drugs, steroids, &
+       & proximal leg muscles             |     immunosuppressive drugs
+
+[⚠️ NUMBERS: half of patients · women < 40 · men > 60 · ice pack 2 min.
+ ⚠️ The ENTIRE investigation and treatment of MG sits inside a Tutorial box, i.e.
+ the book marks it "study in round & skip in final".]
+
+
+================================================================================
+PAGE 186 (PDF 188) — Nystagmus
+================================================================================
+
+Nystagmus:
+  • Definition:
+      ⇨ involuntary, rhythmic, to-and-fro oscillations of one or both eyes
+        The direction may be horizontal, vertical, rotary, or a combination.
+
+[FIGURE, three panels captioned:
+   Horizontal Nystagmus (↔ ↔) · Vertical Nystagmus (↕ ↕) ·
+   Torsional (Rotary) Nystagmus (↻ ↻)]
+
+  • The three most common forms of nystagmus are benign and do not indicate
+    central nervous system dystunction. These are:            [sic — "dystunction"]
+
+TABLE — the three benign forms
++----------------------+----------------------+--------------------------------+
+| End-gaze nystagmus   | Drug-induced         | Congenital nystagmus           |
++----------------------+----------------------+--------------------------------+
+| occurs when the      | ▪ Antiepileptics,    | ▪ it appears in the form of a  |
+| patient is           |   barbiturates, and  |   pendular or jerk beating     |
+| attempting to        |   other sedatives.   |   nystagmus and may be found   |
+| maintain the eyes in | ▪ In this form,      |   at birth or in the first     |
+| extremes of lateral  |   nystagmus may be   |   6 months of life.            |
+| gaze.                |   present in all     | ▪ Patients with congenital     |
+|                      |   positions of gaze. |   forms of nystagmus generally |
+|                      |                      |   have a subnormal vision and  |
+|                      |                      |   do not complain of the       |
+|                      |                      |   environment shaking or       |
+|                      |                      |   moving (oscillopsia).        |
++----------------------+----------------------+--------------------------------+
+
+  • Acquired nystagmus typically causes oscillopsia and/or vertigo and may
+    indicate vestibular, cerebellar, or brainstem dysfunction.
+  • Diseases that cause nystagmus are vestibular disease, trauma, multiple
+    sclerosis, brain tumours, and degeneration of the central nervous system
+  • Investigations:
+      o Full neurologic evaluation, including MRI, is indicated for all patients
+        with acquired nystagmus.
+      o Pathologic forms of nystagmus are usually seen in the primary position of
+        gaze.
+
+[⚠️ NUMBER: first 6 months of life.
+ ⚠️ The congenital-vs-acquired oscillopsia contrast (congenital: no oscillopsia;
+ acquired: oscillopsia) is the page's discriminating fact.
+ ⚠️ NO Tutorial marker anywhere on this page — the whole of nystagmus is core.]
+
+
+================================================================================
+PAGE 187 (PDF 189) — III. THE OPTIC NERVE — intro · (1) Optic disc swelling
+================================================================================
+
+III. The Optic Nerve                                          [part heading]
+
+  ⇨ Diseases of the optic nerve can be slow and insidious or acute. They have a
+    wide variety of causes:
+      ▪ congenital, inflammatory, autoimmune (Demyelinating), neoplastic,
+        vascular, nutritional, toxic. or idiopathic.
+      ▪ Optic nerve atrophy is due to chronic optic nerve damage
+  ⇨ The optic nerve consists of the axons of the ganglion cells of the retina, as
+    they converge to create the nerve, they pass through the lamina cribrosa of
+    the sclera creating the optic nerve.
+  ⇨ The optic disc is the start of the optic nerve, which makes examining the
+    optic disc through the fundus examination unique and it can give an idea about
+    neurological diseases, sometimes, even before neuroimaging.
+
+[FIGURE, uncaptioned: sagittal section of the optic nerve head, labelled
+ Pigment epithelium and choroid · Sclera · Vitreous · Retinal vasculature ·
+ RGC Axons (×2) · Optic nerve · Optic disc · Lamina cribrosa · Retina ·
+ Myelin Sheath.]
+
+[BOX — "Intro From Tutorial"]                     ⚠️ WHOLE BOX = TUTORIAL
+Signs of optic nerve dysfunction:
+  1. Reduced visual acuity
+  2. Relative afferent pupillary defect
+  3. Impairment of colour vision
+  4. Visual field defects:
+       - Central scotoma
+       - Altitudinal visual field defect (AION)
+       - Centrocaecal scotoma (Tobacco-alcohol amblyopia)
+       - Arcuate scotoma (bundle nerve defect in glaucoma)
+[FIGURE inside the box: "Normal" vs "Right relative afferent pupillary defect",
+ three rows of eye pairs with a torch, labelled "Constricts" and "Dilates" —
+ the swinging-flashlight test drawn.]
+[FIGURE inside the box: field charts a) Central · b) Centrocaecal · d) Altitudinal,
+ with the 30 and 20 isopters marked.
+ ⚠️ The field-defect-to-disease mapping is drawn here and nowhere else.]
+
+(1) Optic disc swelling                                       [numbered heading]
+It is characterised, Ophthalmoscopically, by:
+  1. Indistinct disc margins
+  2. Elevation of the optic disc
+  3. Vascular tortuosity
+  4. Absence of a central cup (obliterated cup)
+  5. The presence of capillary hyperaemia and haemorrhages on or around the disc
+     are signs of active disc oedema
+
+[FIGURE, uncaptioned: colour fundus photograph of a swollen optic disc with
+ blurred margins.]
+
+
+================================================================================
+PAGE 188 (PDF 190) — Papilledema
+================================================================================
+
+Papilledema:
+  o Definition:
+      ▪ Swelling of the optic disc secondary to increased intracranial pressure,
+        It is typically bilateral.
+
+[BOX — Clinical picture of fully established papilledema:]
+  1. Hyperaemia of the disc
+  2. Tortuosity of the veins and capillaries  (venous congestion .. T)
+                                                          [⚠️ INLINE TUTORIAL]
+  3. Blurring and elevation of the margins of the disc
+  4. Obscuration of retinal vessels near the nerve
+  5. Haemorrhage on and surrounding the nerve head
+  6. Visual field examination shows → enlargement of the blind spot
+
+[DASHED BOX, labelled "(Tutorial)":]              ⚠️ TUTORIAL
+  7. Pupils: normal size & reflexes
+  8. ± 6th nerve palsy
+
+[BOX — N.B]
+  ▪ Early papilledema may not be obvious, with only mild elevation of the disc
+    margins, loss of previously (known to be present) spontaneous venous
+    pulsations, and mild disc hyperemia.
+  ▪ Vision is not affected early in the condition but transient visual obscuration
+    or transient attacks of burred vision may be present.        [sic — "burred"]
+  ▪ Patients may have symptoms of increased intracranial pressure, such as
+    headache, nausea and vomiting (projectile), and/or double vision.
+  ▪ Chronic papilledema can cause permanent optic nerve damage and blindness if
+    not treated.
+
+[DASHED BOX with a "Tutorial" tab on its edge:]   ⚠️ TUTORIAL
+  - Early:  no visual symptoms
+  - Later:  transient visual loss for few seconds
+  - Latest: significant visual loss (optic atrophy)
+  [⚠️ This is a three-stage visual-symptom timeline that exists nowhere else.]
+
+  o Aetiology:
+      ▪ Brain tumours / space-occupying lesions
+      ▪ Cerebral trauma or hemorrhage
+      ▪ Meningitis / encephalitis
+      ▪ Dural sinus thrombosis
+      ▪ Idiopathic intracranial hypertension (pseudotumor cerebri)
+        → mentioned in next page
+  o Investigations:
+      ▪ Any patient with suspected papilledema should have an immediate MRI or
+        computed tomography scan.
+      ▪ Lumbar puncture should evaluate the cerebrospinal fluid (CSF) and its
+        pressure.
+
+[FIGURE, four fundus panels, captions printed both on the image and beside it:
+   (A) Early papilledema of the right eye
+   (B) Early papilledema of the left eye
+   (C) Fully established papilledema of the right eye
+   (D) Fully established papilledema of the left eye
+ ⚠️ Early-vs-established is shown, not described — the prose never says how they
+ differ ophthalmoscopically beyond the N.B bullet.]
+[FIGURE, uncaptioned: schematic of both eyes showing "Center of vision" and
+ "Blind spot" projections, labelled Pupil · Retina · Optic nerve — the anatomical
+ basis of the enlarged blind spot.]
+
+
+================================================================================
+PAGE 189 (PDF 191) — pseudotumor cerebri · Papillitis · Papilledema vs Papillitis
+================================================================================
+
+TABLE — pseudotumor cerebri
++------------------+-----------------------------------------------------------+
+| Definition       | Increased fluid pressure around the brain in the absence   |
+|                  | of a brain tumour, thrombosis, or other CSF abnormality.   |
++------------------+-----------------------------------------------------------+
+| Most common      | in women between the ages of 20 and 40 who have a history  |
+|                  | of recent weight gain.                                     |
++------------------+-----------------------------------------------------------+
+| Clinical picture | Symptoms:                                                 |
+|                  |   Headache, transient blurring of vision, pulsatile        |
+|                  |   tinnitus, horizontal double vision, neck stiffness,      |
+|                  |   vision loss, and pain with eye movement.                |
+|                  | Signs: Papilledema with/without sixth nerve palsy          |
++------------------+-----------------------------------------------------------+
+| Treatment        | 1. Decreasing intracranial pressure by carbonic anhydrase  |
+|                  |    inhibitors or CSF shunting procedures (lumboperitoneal  |
+|                  |    or ventriculoperitoneal shunts)                        |
+|                  | 2. Weight loss                                            |
+|                  | 3. optic nerve sheath fenestration may help reduce         |
+|                  |    papilledema and the risk of blindness (the most feared  |
+|                  |    complication)                                          |
++------------------+-----------------------------------------------------------+
+[FIGURE inside the Treatment cell, captioned "SURGICAL PROCEDURE OF OPTIC NERVE
+ SHEATH FENESTRATION": "surgical incision of the optic sheath, a connective tissue
+ lining, surrounding the optic nerve to relieve pressure on the optic nerve",
+ drawn with a scalpel at the nerve sheath.]
+
+Papillitis:
+  o Definition: Inflammatory edema of the disc (optic neuritis)
+  o Clinically it can be differentiated from Papilledema by the following:
+      ⇨ Papilledema is more commonly bilateral, and vision is unaffected
+        initially.
+      ⇨ Papillitis has an acute onset, usually Unilateral and is associated with:
+          1. Decreased visual acuity
+          2. Impaired colour vision
+          3. Visual field defect (usually central)
+          4. Relative afferent pupillary defect (RAPD).
+          5. Disc oedema is milder than that of papilledema
+  o Being a part of the optic nerve, the aetiology of papillitis is the same as
+    that of optic neurtis.                                    [sic — "neurtis"]
+
+[FIGURE, uncaptioned: colour fundus photograph of papillitis.]
+
+TABLE — Papilledema vs Papillitis
++-----------------------+---------------------------------+--------------------+
+|                       | Papilledema                     | Papillitis         |
++-----------------------+---------------------------------+--------------------+
+| Laterality            | Bilateral                       | Unilateral         |
++-----------------------+---------------------------------+--------------------+
+| Symptoms              | • Visual acuity usually normal  | Marked visual      |
+|                       | • Transient attacks of blurred  | deterioration      |
+|                       |   vision                        |                    |
+|                       | • + symptoms of increased ICP   |                    |
+|                       |   (headache & vomiting)         |                    |
++-----------------------+---------------------------------+--------------------+
+| Pupils                | Normal                          | RAPD               |
++-----------------------+---------------------------------+--------------------+
+| Colour vision         | Normal                          | Defective          |
++-----------------------+---------------------------------+--------------------+
+| Fundus | Disc swelling| More                            | Less               |
+|        | & elevation  |                                 |                    |
+|        +--------------+---------------------------------+--------------------+
+|        | Disc         | Less                            | More               |
+|        | hyperemia    |                                 |                    |
++-----------------------+---------------------------------+--------------------+
+| Field                 | Enlarged blind spot             | Central scotoma    |
++-----------------------+---------------------------------+--------------------+
+[⚠️ COMPARISON TABLE — this is the highest-yield object in the chapter and it is
+ NOT Tutorial-marked.]
+
+
+================================================================================
+PAGE 190 (PDF 192) — (2) Optic Neuritis · (3) Chronic Retrobulbar Neuritis
+================================================================================
+
+(2) Optic Neuritis                                            [numbered heading]
+
+[The whole top of the page is a FLOWCHART of dashed boxes hanging from the
+ heading. Transcribed as printed:]
+
+  Definition:                 | Classification:              | All patients with
+  Inflammation and            | 1. Papillitis (discussed     | optic neuritis
+  demyelination of the        |    before)                   | should be evaluated
+  optic nerve                 | 2. Retrobulbar neuritis      | by an
+                              |    [normal optic disc]       | ophthalmologist.
+                              | 3. Neuroretinitis (Tutorial) |
+                              |                          ⚠️ TUTORIAL (item 3 only)
+
+  Epidemiology: Most common in women ages 15 - 45
+
+  [Arrow from "Retrobulbar neuritis" down to:]
+                    Clinical picture of retrobulbar neuritis
+        ┌──────────────────────────┴──────────────────────────┐
+     Symptoms                                               Signs
+  1. Acute or subacute vision loss        1. The optic disc may appear completely
+  2. Periocular pain (aggravated by eye      normal
+     movement due to traction of the      2. Afferent pupillary defect
+     extraocular muscles on inflamed      3. Decreased visual acuity
+     meninges covering the optic nerve)   4. Impaired colour vision
+                                          5. Visual field defects.
+
+[FIGURE ×2, uncaptioned: two colour fundus photographs — one normal-looking disc
+ (retrobulbar neuritis) and one with a swollen disc and a macular star.]
+
+  • Aetiology:
+      o Multiple sclerosis → [demyelinating] (the most common cause):
+          ▪ 50% of patients presenting with isolated optic neuritis will
+            ultimately develop multiple sclerosis
+          ▪ Characterized by remissions and relapses
+          ▪ All patients with optic neuritis should have an MRI with and without
+            contrast.
+      o Idiopathic
+      o Post viral infections.
+          [para infectious : following viral infection & immunization .. Tutorial]
+                                                          [⚠️ INLINE TUTORIAL]
+      o Systemic conditions (e.g., syphilis, sarcoidosis, collagen vascular
+        disease, human immunodeficiency virus ).
+          + [SLE / polyarteritis nodosa → Tutorial]       [⚠️ INLINE TUTORIAL]
+      o Infectious: sinus related / syphilis / Lyme / cryptococcal meningitis and
+        herpes zoster → Tutorial                   [⚠️ WHOLE BULLET = TUTORIAL]
+
+(3) Chronic Retrobulbar Neuritis                              [numbered heading]
+  • It is also referred to as nutritional or toxic optic neuropathy.
+  • It is usually bilateral
+  • Aetiology:
+      ⇨ Vitamin B12 deficiency [ poor diet, peripheral neuropathy, decreased
+        colour vision and a field defect that involves central vision and the
+        blind spot (centrocaecal) ]
+      ⇨ Tobacco – Alcohol amblyopia
+      ⇨ Drugs eg. ethambutol, chloramphenicol, etc.
+
+[⚠️ NUMBERS: women 15–45 · 50 % convert to MS.]
+
+
+================================================================================
+PAGE 191 (PDF 193) — Demyelinating optic neuritis (Tutorial) ·
+                      (4) Ischaemic Optic Neuropathy — A. NAION
+================================================================================
+
+[BOX — "Demyelinating optic neuritis .. in more details (From Tutorial .. not in
+ the book)"]                              ⚠️ WHOLE BOX = TUTORIAL, and the book
+                                             states it is NOT book text
+  • Mainly due to MS disease but may isolated       [sic]
+  • Present with retrobulbar neuritis
+  • Common in female
+  • Age 20-40 years old ( mean around 30 years)
+
+  Symptoms:                            | Signs:
+  - Subacute monocular visual          | - Decreased visual acuity
+    impairment                         | - Impaired color vision
+  - Visual field defect                | - RAPD
+  - Abnormal color vision              | - Optic disc is normal
+  - Pain with eye movement             |   (retrobulbar neuritis)
+  - Frontal headache & tenderness      | - Visual field defect:
+                                       |   usually central scotoma but may be
+                                       |   centrocecal , altitudinal or arcuate
+                                       |   scotoma
+
+  Investigations: MRI (plaques of demyelination)
+
+  Treatment :
+  IV methyl prednisolone 1 g daily for 3 days followed by oral prednisolone
+  (1 mg/kg) daily for 11 days, then tapered over 3 days
+  [⚠️⚠️ THE ONLY DRUG REGIMEN WITH DOSES IN THE WHOLE CHAPTER — 1 g × 3 d,
+   then 1 mg/kg × 11 d, taper over 3 d. It sits inside a Tutorial box.]
+
+[FIGURE inside the box: four visual-field charts A–D.]
+[FIGURE inside the box: two axial MRI brain images, the second arrowed
+ "Multiple Sclerosis Lesions or Plaques".]
+
+(4) Ischaemic Optic Neuropathy                                [numbered heading]
+
+A. Non-arteritic ischemic optic neuropathy (NAION):
+  • It is caused by transient hypoperfusion of the posterior ciliary arteries
+    supplying the optic nerve head.
+    (Usually vascular : embolic or thrombotic → Tutorial)   [⚠️ INLINE TUTORIAL]
+
+[FIGURE, uncaptioned: arterial supply diagram — Ophthalmic artery ·
+ Internal carotid artery · Optic nerve · Posterior ciliary arterioles (Outer
+ retinal and choroidal blood supply) · Central retinal artery (Inner retinal
+ blood supply).
+ ⚠️ This figure separates the two blood supplies, which is why NAION is a
+ posterior-ciliary disease — the prose names the vessel but never contrasts it
+ with the central retinal artery.]
+[FIGURE, uncaptioned: colour fundus photograph of a swollen pale disc.]
+
+  • Epidemiology:
+      ⇨ It is the most common form of ischemic optic neuropathy
+      ⇨ It can occur at any age but typically affects patients over 40 years of
+        age who have atherosclerotic risk factors (e.g., hypertension, diabetes,
+        hyperlipidaemia, smoking, sleep apnoea, obesity).
+      ⇨ Many occur during periods of nocturnal hypotension.
+
+
+================================================================================
+PAGE 192 (PDF 194) — NAION clinical picture / treatment / prognosis ·
+                      B. Arteritic Anterior Ischaemic Optic Neuropathy
+================================================================================
+
+  • Clinical picture:
+      - Unilateral vision loss, first noticed upon waking.
+      - Field loss of either the upper or the lower half of the field of vision in
+        the affected eye (altitudinal field loss).
+      - Decreased visual acuity
+      - Afferent pupillary defect
+      - Mild disc oedema and pallor.   [ ± splinter hemorrhages → Tutorial ]
+                                                          [⚠️ INLINE TUTORIAL]
+      - There are no other clinical manifestations or neurologic symptoms in cases
+        of NAION.
+  • Treatment:
+      o There are no proven treatments
+      o Treating atherosclerotic risk factors and avoiding excessive lowering of
+        blood pressure
+      o All patients more than 50 years of age with suspected NAION should have an
+        erythrocyte sedimentation rate (ESR) and a C-reactive protein (CRP) test to
+        exclude giant cell (temporal) arteritis.
+  • Prognosis: Little or no visual recovery is expected in cases of NAION.
+
+B. Arteritic Anterior Ischaemic Optic Neuropathy:
+It is less common than NAION. It is caused by Giant cell arteritis (GCA)
+(Please refer to the chapter on Ocular Manifestations of Systemic Conditions and
+Diseases)                                          [⚠️ delegated to ch.19]
+
+[BOX — "Arteritic Anterior Ischaemic Optic Neuropathy.. in more details
+ (From Tutorial)"]                                 ⚠️ WHOLE BOX = TUTORIAL
+
+  Symptoms: (elderly patients above 60 years)   | Signs:
+  1. Acute, profound unilateral visual loss     | - Pale ('chalky white') and
+     with pain in the ipsilateral temporal      |   swollen disc
+     region                                     | - Afferent pupillary defect
+  2. Amaurosis fugax may precede infarction of  | - Superficial temporal arteritis:
+     the optic nerve head.                      |     o Thickened, tender, inflamed
+  3. Scalp tenderness                           |       artery
+  4. Headache                                   |     o Non-pulsatile
+  5. Jaw claudication                           |     o Nodular, which cannot be
+  6. Proximal myalgia                           |       flattened against the skull
+  7. Non-specific symptoms such as weight loss, | - Other eye can become involved
+     fever, night sweats, malaise and           |   within days
+     depression are common.                     |
+
+  Management  URGENT !
+  • Investigations :                            | • Treatment : High dose of
+      - ESR is very high (level of > 60 mm/hr). |   systemic steroid
+      - CRP (highly elevated )                  |
+      - Temporal artery biopsy (confirm the     |
+        diagnosis)                              |
+
+[FIGURE inside the box: photograph of a prominent inflamed temporal artery.]
+[FIGURE inside the box, captioned "Inflamed Temporal Artery" / "Superficial
+ Temporal Artery": drawing of the temporal artery course on the head.]
+[FIGURE inside the box: colour fundus photograph of a pale swollen disc.]
+
+[⚠️ NUMBERS: over 40 y (NAION risk) · more than 50 y (ESR/CRP rule) ·
+ above 60 y (arteritic) · ESR > 60 mm/hr.]
+
+
+================================================================================
+PAGE 193 (PDF 195) — GCA histopathology · Non-arteritic vs Arteritic table
+================================================================================
+
+[FIGURE, captioned "Histopathology of giant cell arteritis": histology slide with
+ four labels — Internal elastic lamina · Remaining lumen · Giant cells ·
+ Lymphocytes.
+ ⚠️ The histology is figure-only; the prose never describes the pathology.]
+
+TABLE — Non arteritic vs Arteritic   [⚠️ the chapter's second key comparison table]
++---------------+----------+-------------------------------+-----------------------------------+
+|               |          | Non arteritic                 | Arteritic                         |
++---------------+----------+-------------------------------+-----------------------------------+
+| Age           |          | Majority > 50 years old       | Majority > 60 years old           |
++---------------+----------+-------------------------------+-----------------------------------+
+| Symptoms      | Local    | - Acute uniocular painless    | - Sudden severe unilateral visual |
+|               |          |   visual loss                 |   loss + periocular pain          |
+|               |          | - Other eye is not commonly   | - Other eye usually affected      |
+|               |          |   affected                    |   within few days                 |
+|               +----------+-------------------------------+-----------------------------------+
+|               | Systemic | No                            | 1. Severe headache                |
+|               |          |                               | 2. Superficial temporal arteritis |
+|               |          |                               | 3. Scalp tenderness               |
+|               |          |                               | 4. Jaw claudication               |
+|               |          |                               | 5. Proximal myalgia               |
++---------------+----------+-------------------------------+-----------------------------------+
+| Signs         | VA       | Moderate - severe reduced     | Severely reduced (HM , PL)        |
+|               +----------+-------------------------------+-----------------------------------+
+|               | fundus   | Swollen and pale optic disc   | Swollen and pale optic disc       |
+|               |          |                               | (chalky white)                    |
++---------------+----------+-------------------------------+-----------------------------------+
+| Investigations|          | [blank in the book]           | - Increased ESR, CRP              |
+|               |          |                               | - Temporal artery biopsy (giant   |
+|               |          |                               |   cell arteritis)                 |
++---------------+----------+-------------------------------+-----------------------------------+
+| Treatment     |          | No definitive treatment       | Systemic steroids                 |
++---------------+----------+-------------------------------+-----------------------------------+
+[⚠️ The Investigations cell for Non arteritic is PRINTED BLANK. Transcribed as
+ blank, not filled in. Note the contradiction with printed 192, which does order
+ ESR/CRP in NAION over 50 — the book itself does not reconcile the two.]
+[⚠️ Age thresholds here (> 50 / > 60) are the table's; printed 191 says NAION
+ "typically affects patients over 40". Both are recorded as printed.]
+[⚠️ VA in arteritic: HM , PL — hand movements, perception of light.]
+
+[FIGURE, two fundus panels inside the table, labelled on the images
+ "NAION" (left, marked "ppt") and "AION" (right).]
+
+
+================================================================================
+PAGE 194 (PDF 196) — (5) Optic Atrophy
+================================================================================
+
+(5) Optic Atrophy                                             [numbered heading]
+
+  • Degeneration of the optic nerve at any part starting from the retina to the
+    lateral geniculate body is called optic atrophy.
+  • The optic nerve appears pale in all types of optic atrophy due to decreased
+    vascularity.
+  • There is no treatment for optic atrophy
+  • It has four clinical types according to its aetiology and the clinical picture
+    of fundus examination:
+
+TABLE — the four types of optic atrophy
++-------------------------------------------+---------------------------------+
+| 1. Primary optic atrophy:                 | 2. Secondary optic atrophy:     |
++-------------------------------------------+---------------------------------+
+| o damage of the optic nerve occurring     | Due to long-standing            |
+|   outside of the eyeball                  | papilledema or papillitis       |
+| o Causes:                                 |                                 |
+|     – Congenital                          | ⇨ It is preceded by swelling of |
+|     – Demyelinating disease (MS) :        |   the optic nerve head          |
+|       recurrent attacks                   |   (Tutorial)   ⚠️ TUTORIAL      |
+|     – Syphilis                            |                                 |
+|     – compression by intracranial or      |                                 |
+|       orbital tumours                     |                                 |
+| ⇨ occurs without previous swelling of the |                                 |
+|   optic nerve head (T)   ⚠️ TUTORIAL       |                                 |
++-------------------------------------------+---------------------------------+
+| 3. Consecutive optic atrophy:                                               |
+| • Which occurs due to retinal diseases e.g., Retinitis pigmentosa /          |
+|   degenerative myopia (T)                              ⚠️ INLINE TUTORIAL   |
+| • Retinal examination shows the primary cause of the optic atrophy           |
++------------------------------------------------------------------------------+
+| 4. Glaucomatous optic atrophy:                                               |
+| Caused by end stage chronic glaucoma (advanced glaucomatous cupping)          |
++------------------------------------------------------------------------------+
+[⚠️ The single discriminating fact between primary and secondary — previous
+ swelling of the disc or not — is Tutorial-marked on BOTH sides of the table.]
+
+[FIGURES inside the table:
+   (A) Primary optic atrophy of the right eye
+   (B) Primary optic atrophy of the left eye
+   [one further fundus photograph in the Secondary cell, uncaptioned]]
+
+[FIGURE PLATE, captioned "Optic nerve atrophy (types)": five fundus photographs
+ labelled Primary · Glaucomatus [sic] · Secondary · Consecutive, the glaucomatous
+ one annotated "Note the loss of the neuro-retinal rim allowing the blood vessels
+ to 'disappear'". Two further photographs at the right labelled "primary" and
+ "Glaucomatus" [sic].
+ ⚠️ The fundus appearance of each of the four types is taught ONLY by these
+ photographs — the prose gives no ophthalmoscopic description at all.]
+
+
+================================================================================
+PAGE 195 (PDF 197) — IV. VISUAL PATHWAYS AND THEIR RELATED FIELD DEFECTS
+                     (last page of chapter 14)
+================================================================================
+
+IV. Visual Pathways and their Related Field Defects.          [part heading]
+
+  • Lesions anywhere in the visual system, from the retina to the occipital lobes,
+    can produce visual field defects.
+  • It is important to understand the following terms used to describe visual
+    field loss:
+
+TABLE — terminology
++------------------------------------+-----------------------------------------+
+| Scotoma                            | an area of reduced or lost retinal      |
+|                                    | sensitivity surrounded by areas of      |
+|                                    | normal retinal sensitivity              |
++------------------------------------+-----------------------------------------+
+| Hemianopia                         | Loss of half the visual field. Usually, |
+|                                    | this involves loss of either the right  |
+|                                    | or the left half of the visual field in |
+|                                    | both eyes                               |
++------------------------------------+-----------------------------------------+
+| Altitudinal hemianopia             | Loss of the superior or inferior half   |
+|                                    | of the visual field                     |
++------------------------------------+-----------------------------------------+
+| Homonymous hemianopia              | Loss of either the right or the left    |
+|                                    | half of the visual field in both eyes   |
++------------------------------------+-----------------------------------------+
+| Bitemporal (heteronymous)          | Loss of the temporal half of the visual |
+| hemianopia                         | field in both eyes                      |
++------------------------------------+-----------------------------------------+
+
+  • Optic nerve lesions:
+      – produce visual field defects in the ipsilateral eye.
+      – central scotoma or altitudinal hemianopia
+      – accompanying afferent pupillary defect.
+
+  • Optic chiasm lesions:
+      o Give rise to visual field defects that affect both eyes.
+      o Bitemporal hemianopia caused by pituitary adenoma, craniopharyngioma, or
+        parasellar meningioma
+
+  • Lesions affecting the visual pathways behind the optic chiasm:
+      o Damage to the optic tract, the lateral geniculate body, the optic
+        radiation, or the occipital cortex induces homonymous hemianopia.
+      o Stroke is the most common cause of homonymous hemianopia, followed by
+        trauma and mass lesions.
+  • In addition to the characteristic visual field defects seen according to the
+    site of the brain lesion, fundus exam could reveal papilledema due to
+    increased intracranial pressure and mass effect of the lesion.
+  • Nerve palsies and extraocular muscle paralysis could also be present if there
+    is involvement of the 3rd , 4th , and/or 6th cranial nerves or their nuclei.
+
+[HIGHLIGHTED BOX]
+  N.B: Sixth nerve affection can also occur due to increased intracranial pressure
+  (A false localizing sign)
+
+[FIGURE, captioned "Visual field deficit", eleven rows A–K:
+   A) Central scotoma
+   B) Monocular vision loss
+   C) Bitemporal hemianopia
+   D, G, & H) Contralateral homonymous hemianopia
+   E & J) Contralateral superior quadrantopia         [sic — "quadrantopia"]
+   F & I) Contralateral inferior quadrantopia         [sic]
+   K) Contralateral homonymous hemianopia with macular sparing]
+
+[FIGURE, captioned "Visual field defects" / "Visual fields", the classic numbered
+ pathway diagram. Numbered lesions 1–6 with their defects:
+   1  Monocular blindness                         — Optic nerve (1)
+   2  Bitemporal hemianopia                       — Optic chiasm (2)
+   3  Right homonymous hemianopia                 — Optic tract (3) /
+                                                    Lateral geniculate body (3)
+   4  Right superior homonymous quadrantanopia    — Lower fibres in temporal
+                                                    lobe (4)      ] Optic
+   5  Right inferior homonymous quadrantanopia    — Upper fibres in anterior
+                                                    parietal lobe (5)  ] radiation
+   6  Right homonymous hemianopia with macular    — Occipital cortex (6)
+      sparing
+ Other labels: Retina.
+ Printed legend beneath the figure:
+   "Objects in the right half of the visual field form images in the left half of
+    each retina and are transmitted to the left hemisphere. The numbers correspond
+    to lesions in the visual pathways and to the field defects that result from
+    these interruptions."
+ ⚠️⚠️ THE ENTIRE LESION-SITE → DEFECT MAPPING IS FIGURE-ONLY. The prose names
+ only three defects (central scotoma, bitemporal, homonymous). Quadrantanopia,
+ the temporal-vs-parietal split of the optic radiation, and macular sparing appear
+ NOWHERE in the prose of this chapter — they exist solely inside these two
+ figures. Any question on "which lesion gives superior quadrantanopia" is
+ answerable only from the picture.]
+
+[END OF CHAPTER 14 — printed 196 / PDF 198 opens chapter 15, Squint.]
+
+
+================================================================================
+NOT COVERED — what a reader would expect a neuro-ophthalmology chapter to teach
+and this chapter does not
+================================================================================
+
+Nothing below is supplied from outside the book. Each item is listed because it
+is a standard neuro-ophthalmology topic that this chapter does not contain; a
+few are explicitly delegated elsewhere and that is said.
+
+PUPIL
+  1. Adie's tonic pupil / Holmes-Adie syndrome — not mentioned anywhere.
+  2. Relative afferent pupillary defect as a topic: named repeatedly as a sign,
+     but the swinging-flashlight test is never described in prose — only drawn
+     in the Tutorial figure on printed 187. Grading of RAPD: absent.
+  3. Pharmacological pupil testing — cocaine, apraclonidine, hydroxyamphetamine
+     for Horner; pilocarpine dilute/full for Adie and pharmacological mydriasis:
+     entirely absent. Horner's investigation is imaging only.
+  4. Congenital Horner and the "first/second/third order" localisation logic: the
+     three orders appear in a figure label only; no localisation algorithm.
+  5. Physiological anisocoria: absent.
+  6. Near reflex triad (miosis, accommodation, convergence): never stated.
+
+MOTILITY
+  7. Internuclear ophthalmoplegia / MLF, one-and-a-half syndrome: absent.
+  8. Gaze palsies, saccades and pursuit, supranuclear vs nuclear vs infranuclear
+     lesions in general: absent (only dorsal midbrain "loss of upgaze").
+  9. Cavernous sinus syndrome, superior orbital fissure syndrome, orbital apex
+     syndrome: absent — the chapter never groups CN III/IV/VI lesions by site.
+ 10. Aberrant regeneration of CN III, pseudo-Graefe sign: absent.
+ 11. Duane retraction syndrome, Brown syndrome, congenital cranial dysinnervation:
+     absent (may belong to ch.15 Squint — not checked).
+ 12. Park's three-step test for CN IV palsy: absent. The chapter gives the head
+     tilt but never the diagnostic manoeuvre.
+ 13. Thyroid eye disease as a motility differential: absent from this chapter.
+ 14. Myasthenia: Cogan's lid twitch, fatigability testing at the bedside,
+     ocular vs generalised MG classification, thymoma/thymectomy: absent.
+     (Ice test IS present, in the Tutorial box.)
+ 15. Nystagmus: the full classification (jerk vs pendular defined, gaze-evoked,
+     downbeat/upbeat, see-saw, spasmus nutans, latent nystagmus, null point and
+     the head posture that goes with it) is absent. Only three benign forms are
+     tabulated plus a causes list.
+
+OPTIC NERVE
+ 16. Optic disc drusen / pseudopapilloedema and how to distinguish it from true
+     disc swelling: absent — a notable omission given the chapter's whole
+     "optic disc swelling" section.
+ 17. Foster Kennedy syndrome: absent.
+ 18. Leber hereditary optic neuropathy and the hereditary optic neuropathies:
+     absent (optic atrophy lists "Congenital" as a cause with no detail).
+ 19. Compressive optic neuropathy as its own entity, optic nerve glioma and
+     meningioma: absent here (tumours may sit in ch.17 — not checked).
+ 20. Traumatic optic neuropathy: absent here (likely ch.18 — not checked).
+ 21. Papilloedema grading (Frisén), Modified Dandy criteria for IIH, opening
+     pressure in cmH2O: absent. LP is ordered but no number is given.
+ 22. Optic neuritis treatment in the book's own text: the only regimen printed is
+     inside a Tutorial box (printed 191). The core text prescribes nothing.
+ 23. ONTT (Optic Neuritis Treatment Trial) and the evidence base, oral prednisone
+     alone being contraindicated: absent.
+ 24. Neuromyelitis optica / MOG antibody disease: absent.
+ 25. OCT of the retinal nerve fibre layer, visual evoked potentials: absent as
+     investigations anywhere in the chapter.
+ 26. GCA: the ACR criteria, steroid dosing figures, IL-6 inhibitors, biopsy skip
+     lesions / specimen length: absent. Treatment is "high dose of systemic
+     steroid" with no dose.
+
+VISUAL PATHWAY
+ 27. Visual field TESTING methods — confrontation, Goldmann, automated perimetry,
+     Amsler: absent from this chapter (delegated implicitly to ch.1).
+ 28. Why macular sparing occurs (dual blood supply of the occipital pole):
+     absent — macular sparing is only labelled in a figure.
+ 29. Cortical blindness, Anton syndrome, Riddoch phenomenon, blindsight: absent.
+ 30. Visual agnosias, higher cortical visual processing, dorsal/ventral streams:
+     absent.
+ 31. Chiasmal syndromes beyond bitemporal hemianopia — junctional scotoma /
+     Wilbrand's knee: absent.
+ 32. Migraine aura and transient visual phenomena, amaurosis fugax as an entity:
+     amaurosis fugax is named once inside the arteritic Tutorial box only.
+ 33. Functional / non-organic visual loss: absent.
+
+EXPLICITLY DELEGATED (present in the book, but NOT in this chapter)
+ 34. Abnormal pupillary size examination → "the examination chapter" (ch.1).
+ 35. Pupillary examination for Argyll-Robertson → "chapter 1".
+ 36. Giant cell arteritis proper → "the chapter on Ocular Manifestations of
+     Systemic Conditions and Diseases" (ch.19).
+
+================================================================================
+HOW THIS COMPARES WITH THE LECTURES (L21 + L22)
+================================================================================
+L21) Optic Nerve and L22) Pupil and Visual pathway are 45 pages between them and
+their cached text holds 264 words in total. This chapter's 18 printed pages
+cover all three of their subjects — pupil (printed 179–181), optic nerve
+(187–194), visual pathway (195) — plus a fourth part the lecture titles do not
+name at all (Motility Disorders, printed 182–186: CN III/IV/VI, myasthenia
+gravis, nystagmus).
+
+Facts here that 264 words of lecture cache cannot contain, listed so they are
+not re-derived: the 3 Ls of dorsal midbrain syndrome and Collier sign; the four
+life-threatening Horner causes flagged in red; the ARP mnemonic; the pupil-rule
+algorithm and the vasa-nervorum mechanism of pupil sparing; the CN VI figures
+(20 %, < 45 y, > 55 y, 3–4 months); the ice test at 2 minutes; the three benign
+nystagmus forms; the Papilledema-vs-Papillitis table; the pseudotumor cerebri
+table with fenestration; the 50 % MS conversion; the NAION-vs-arteritic table
+with ESR > 60 mm/hr; the four types of optic atrophy; the full field-defect
+terminology table and the numbered pathway figure.
