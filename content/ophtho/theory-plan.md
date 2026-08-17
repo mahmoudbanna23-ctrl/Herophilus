@@ -205,6 +205,62 @@ deck** — which is most of them. The `est pp` column uses the project's `pages 
 
 ⚠️ = draws on a deck owed a visual read, so the ceiling is not yet knowable.
 
+---
+
+## What writing the first twelve chapters taught — findings, 2026-08-17
+
+Kept here rather than in `MEMORY.md`, which is capped at 200 lines. **Read this section before
+briefing any ophthalmology chapter.**
+
+**Splitting. Forecast, then split, then write — never split after printing.** Three splits so far:
+`op-orbit` was split *after* it printed at 14 pp, which is the expensive way; `op-cornea` and
+`op-cat` were forecast and split *before* a word was written. `op-cat` was costed at ~4,370 w /
+**~18 pp** as one chapter and printed at **9 + 8** as two. Choose the seam from the content, state
+why *that* seam and not the two nearest alternatives, and prefer the seam **no question straddles**.
+⚠️ **A split is not finished when the chapter is split — refile the questions in the same pass**,
+driven by the theory `qs` links. Both earlier splits left theirs behind (12 wrong-chapter links,
+found and fixed 2026-08-17).
+
+**Measurement. The estimator misses in BOTH directions here, so print the chapter.** `op-glauc`
+estimated 10.8 and printed **12** (low, the direction that accepts an over-long chapter);
+`op-va` estimated 10.8 and printed **9**; `op-insid` estimated 10.9 and printed **9**. ⚠️ **Two
+body-word definitions are in circulation** — whether `Src:` lines count — differing by ~12 w per
+section. **CANONICAL = `W(s.body)` over every section, `Src:` INCLUDED**, which is what `vth.js`
+and every ENT/paediatrics figure used. A disagreement of roughly 12 × sections is a definition
+gap, not a stale header.
+
+**Headers. Do not let an agent write a measured number into its file.** The eleventh header fault
+landed here (`op-va` claimed 2,331 words and read 2,596 — the gap being the size of the one
+section it was writing when it died). `op-trauma` answered it by **stating no numbers at all** and
+leaving the re-measure command in the header instead; `op-systemic`, `op-insid` and `op-cat` copied
+it, and the last two reported counts that **reproduce from disk to the word**. That is the
+standard: the agent reports counts to the hub, the hub measures and writes the number in.
+
+**Register rows. Five ways a row has now been wrong** — over-specified · absent from the deck ·
+wrong deck · **wrong slide** (`op-pupil` put the cataract stages on slide 20; slide 20 names two
+lens states, they are on slide 21) · and **circular** (`op-orbit` deferred the thyrotoxic picture
+to `op-systemic` while `orb-6` already carried the slide whole). ⚠️ **Verify a row's SECOND clause
+too** — *"chapter X carries only Y"* is itself a claim, and that is the one nobody was checking.
+A row that cannot be delivered is **reported undeliverable with the evidence, never quietly filled
+and ticked** (`aniridia`/Sturge–Weber: one hit across 27 decks, and it is two photo captions).
+
+**⚠️ A DECK'S TITLE DOES NOT BOUND ITS CONTENT — grep the module, not the deck list.** Twice now:
+`L35,36) Chronic visual loss` carries **a whole third cataract lecture** (~450 w) giving the drug,
+metabolic and intrauterine causes that `L17` and `L18` never print — both cataract decks name
+congenital cataract repeatedly and neither says what causes it. And **lens-induced glaucoma had no
+home in the module at all** (`phacomorphic`/`phacolytic` return zero across the whole theory file;
+neither glaucoma deck prints them). The corollary is the standing rule, which has now paid fifteen
+times: **read the slide — and grep the misspelling — before declaring a gap.** `L25` prints
+*"Vossious"*, so `Vossius` returns zero; `L35,36` prints *"Amsilar"*.
+
+**⚠️ The dead-agent rule held twice more.** Two agents died on the shared session limit at the same
+step — the §14.3a layout pass — and **both files were complete on disk** (fifth and sixth
+recovery). Validate before rewriting, always. The hub finished the layout pass they died in;
+across 20 anchor fixes the body counts moved by **1 and 5 words**, which is the evidence that only
+emphasis changed.
+
+---
+
 ### ⚠️⚠️ CORRECTION TO THE TABLE ABOVE, FOUND BY WRITING `op-va` (2026-08-17)
 
 **The Decks column is an assignment, not a coverage guarantee, and for `op-va` it was wrong.**

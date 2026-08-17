@@ -5,81 +5,37 @@ Running record, organised around *resuming*. ISO dates; unverified marked as suc
 story, count and verbatim ruling) in `progress\memory-archive.md`** — read the relevant block
 there before resuming a paused stream. Where this file and the archive disagree, this file wins.
 
-## Resume here — ✅ Peds theory DONE (51/51). **OPHTHALMOLOGY IN PROGRESS: 8 of 28 chapters written** (2026-08-17). Then Neuropsychiatry (27). Banks stay PAUSED.
+## Resume here — ✅ Peds theory DONE (51/51). **OPHTHALMOLOGY IN PROGRESS: 12 of 28 chapters** (2026-08-17). Then Neuropsychiatry (27). Banks stay PAUSED.
 
-- **Ophtho is 28 chapters, not 26** — `op-orbit` split after printing 14 pp, `op-cornea` split
-  **before** writing (now the preferred order). ✅ Written and page-measured 2026-08-17, all on
-  US letter, the machine default: `op-pupil` **8 pp** · `op-orbit` **9** · `op-orbit-mass` **7** ·
-  `op-glauc` **12** · `op-cornea` **9** · `op-cornea-surg` **9** · `op-va` **9** · `op-trauma`
-  **9** · `op-systemic` **10** · `op-insid` **9** · `op-cat` **9** · `op-cat-surg` **8**. 108 pp
-  over 12 chapters, mean 9.0 (ENT 8.6, peds 8.3). Boot verified: **0 console errors**, 136
-  sections, 0 dead `qs` ids, 0 wrong-chapter links, 63/138 reachable.
-- **⚠️ `op-cat` SPLIT BEFORE WRITING — third ophtho split, and the method is now settled.** One
-  chapter forecast at ~4,370 w / **~18 pp**; written as two it printed **9 + 8**. Seam = medical
-  vs surgical (`op-cat` + **`op-cat-surg`**, registered in `modules.js`), chosen because both
-  lecturers draw it, **zero questions straddle**, and all three inbound register rows land
-  diagnosis-side. Split-by-deck and split-by-aetiology were both costed and rejected on the
-  record. **Forecast, then split, then write — never split after printing.**
-- **⚠️ `L35,36) Chronic visual loss` CARRIES A WHOLE THIRD CATARACT LECTURE** (~450 w, lines
-  129–249) that `L17` and `L18` never give — the cataractogenic **drug** list, the **metabolic**
-  list, the **intrauterine** causes, two Egypt figures, the 35 %-protein pathogenesis.
-  **Both cataract decks name congenital cataract repeatedly and never say what causes it.**
-  Counted by `op-insid`, used cited-only by `op-cat`. **A deck's title does not bound its
-  content — grep the module before believing a chapter's deck list.**
-- **⚠️ LENS-INDUCED GLAUCOMA HAD NO HOME IN THE MODULE** — `phacomorphic`/`phacolytic` return
-  **zero** across all of `theory.ophtho.js`, and `L11`/`L12` print neither. Now written in
-  `op-cat`; `op-glauc` is merged, so cross-referencing it is reconciliation work.
-- ✅ **Two agents running in one file, and two whose reported counts REPRODUCED FROM DISK
-  EXACTLY** (`op-insid` 2,619, `op-cat` 2,449 + 1,816) — the first since the header-fault run
-  began. Both used the `op-trauma` pattern: **no number written into the file**, the re-measure
-  command in the header instead, counts reported to the hub. **That pattern is now standard.**
-- **⚠️ A FIFTH WAY A REGISTER ROW CAN BE WRONG — IT IS CIRCULAR.** `op-orbit` deferred the
-  thyrotoxic picture and the IgG/TSH mechanism to `op-systemic` while **`orb-6` already carried
-  slide 15 whole**, and still pointed here for it. Resolved as a declared overlap (`orb-6` keeps
-  its copy — 24 questions sit there; `sys-7` writes the mechanism so the pointer lands). The four
-  earlier shapes: over-specified · absent from the deck · wrong deck · **wrong slide**. **Verify
-  the row's SECOND clause too — "chapter X carries only Y" is itself a claim.**
-- **⚠️ TWO BODY-WORD DEFINITIONS ARE NOW IN CIRCULATION and they differ by ~12 w per section**
-  (`Src:` lines in or out — 157 words on `op-systemic` alone). **CANONICAL = `W(s.body)` over
-  every section, `Src:` INCLUDED** — that is `vth.js` and every ENT/peds figure. Agents report
-  their number *and their definition*; the hub re-counts canonically. A disagreement of roughly
-  12 × sections is a definition gap, not a stale header.
-  **⚠️ `op-glauc` estimated 10.8 and printed 12 — the estimator missed LOW**, the direction that
-  matters. **⚠️ `op-va` estimated 10.8 and printed 9 — it missed HIGH by the same margin.** Both
-  in one module: ±3 per chapter is real in both directions. **Print the chapter.**
-- **⚠️⚠️ `op-va`'S SIXTEEN QUESTIONS ARE NOT ANSWERABLE FROM `L3,4` — NOT ONE**, and the plan's
-  chapter table says `L3,4` is its only deck. They test acuity, pinhole, the low-vision ladder,
-  fields and colour, which `L3,4`'s own transcriber says (line 418) are in **`L1,2`** — that deck
-  *begins after* visual acuity. **`L1,2` lines 438–613 (866 w) are now COUNTED to `op-va`**;
-  lines 390–437 cited only (they restate L3,4 sl.2–4). **`op-intro` and `op-vissym` must not
-  re-count them**; lines 1–389 and 614–659 stay theirs. **Check a chapter's questions against
-  its assigned deck BEFORE briefing it** — the plan's deck column is not a coverage guarantee.
-- **⚠️ ELEVENTH HEADER FAULT (`op-va`), and the cheapest tell yet**: header claimed 2,331 body
-  words "taken from disk after the final edit"; disk read **2,596**, and **the gap was the size
-  of the one section the agent was writing when it died** (`va-6`, 273 w — which landed complete).
-  **Its partner `op-trauma` wrote NO numbers into its header at all**, on the stated reasoning
-  that a number in a file must be re-verified after every later edit — and so could not produce
-  the fault. **That is now the preferred practice: the agent reports its counts to the hub, the
-  hub measures from disk and writes the number in.**
-- **⚠️ Both agents died on the session limit at the SAME step — the §14.3a layout pass — and both
-  files were complete** (5th and 6th recovery; validate before rewriting, always). The hub
-  finished the pass: 20 bold leads with no `mdLead()` anchor, all fixed by moving the bold
-  boundary or adding an early colon. **Body words moved by 1 and 5 across the two files — that
-  delta is the evidence no fact was touched.**
-- **⚠️ Both splits left their questions behind, fixed 2026-08-17**: 9 refiled to `op-orbit-mass`,
-  3 to `op-cornea-surg`, driven by the theory `qs` links (the sets were disjoint and summed
-  exactly to the parent counts). **A split is not done when the chapter is split — refile the
-  questions in the same pass**, per the peds rule that was skipped here.
-- **⚠️ Ophtho owes ~726 pages of visual reading before the owed-deck chapters can be budgeted** —
-  the §14 formula breaks there (5.3 q/chapter; the lecture term measures the text layer, not the
-  lecture; run naively it floors 11 of 26 chapters incl. `op-onc`, a 78-page deck). **Plan at
-  `content\ophtho\theory-plan.md` — READ IT FIRST.** A blank page there is usually a TEXT slide
-  (inverse of peds). Four deck patterns; three are worth the render. ✅ `L3,4`, `L10`, `L25`
-  already banked — do not re-read. `op-ant` has no deck. **12 §14.5 register rows are ophtho's**;
-  2 ticked, 1 a notice, 9 open — `op-va` and `op-systemic` are each owed two.
-- **Next, no render cost:** `op-va` + `op-trauma` (banked decks, in progress 2026-08-17), then the
-  text-sufficient seven — `op-cat`, `op-systemic`, `op-insid`, `op-white`, `op-red` (⚠️ a **book
-  chapter**, 5,104 w, the module's largest compression job) and `op-ret` (⚠️ `L20`, 33 pp, owed).
+- **⚠️⚠️ `content\ophtho\theory-plan.md` IS THE MODULE'S WORKING FILE — READ IT FIRST.** It now
+  carries **"What writing the first twelve chapters taught"** (splitting, measurement, headers,
+  the five ways a register row goes wrong, and *a deck's title does not bound its content*), kept
+  there rather than here because this file is capped at 200 lines. Do not re-derive any of it.
+- **Ophtho is 28 chapters, not 26** — three splits, all recorded in `modules.js` with their
+  reasoning: `op-orbit`/`op-orbit-mass`, `op-cornea`/`op-cornea-surg`, `op-cat`/`op-cat-surg`.
+  ✅ Twelve written and **individually printed** 2026-08-17 (US letter, the machine default):
+  `op-pupil` 8 · `op-orbit` 9 · `op-orbit-mass` 7 · `op-glauc` **12** · `op-cornea` 9 ·
+  `op-cornea-surg` 9 · `op-va` 9 · `op-trauma` 9 · `op-systemic` 10 · `op-insid` 9 · `op-cat` 9 ·
+  `op-cat-surg` 8. **108 pp, mean 9.0** (ENT 8.6, peds 8.3). Boot: **0 console errors**, 136
+  sections, 0 dead `qs` ids, 0 wrong-chapter links, 63/138 questions reachable.
+- **⚠️⚠️ CHECK A CHAPTER'S QUESTIONS AGAINST ITS ASSIGNED DECK BEFORE BRIEFING IT.** The plan's
+  Decks column is an assignment, **not a coverage guarantee**: **none of `op-va`'s 16 questions is
+  answerable from `L3,4`**, its only listed deck — they are `L1,2`'s, whose lines 438–613 (866 w)
+  are now counted to `op-va` (**`op-intro`/`op-vissym` must not re-count them**). `op-intro` and
+  `op-vissym` share a deck the same way and could hide the same mismatch.
+- **⚠️ Ophtho still owes ~726 pages of visual reading** before the owed-deck chapters can be
+  budgeted — the §14 formula breaks there (5.3 q/chapter; the lecture term measures the text
+  layer, not the lecture). A blank page here is usually a TEXT slide (inverse of peds); four deck
+  patterns, three worth the render. ✅ `L3,4`, `L10`, `L25` banked — do not re-read. `op-ant` has
+  no deck. **~30 §14.5 register rows are ophtho's**; 7 closed, 2 notices, 1 **undeliverable**
+  (aniridia/Sturge–Weber — absent from all 27 decks), the rest open.
+- **Next, no render cost:** `op-white` (L33,34, 597 w) · `op-red` (⚠️ a **book chapter**, 5,104 w,
+  the module's largest compression job) · `op-ret` (⚠️ `L20`, 33 pp, owed a read; owed **4**
+  register rows incl. one to merge from two chapters). Then the render debt, costed out loud.
+- **⚠️ Interview item, batched, not yet asked:** `L23` prints `(Fig 9-8)`/`(Fig 9-14)` in book
+  prose and `L37) Red Eye` is "CHAPTER 4" of an unnamed AAO-family primer — **`L23` is very
+  probably Chapter 9 of the same book.** Nothing is cited as a book chapter yet; settle both
+  together by **asking**, never guessing.
 - **⚠️ ENT is NOT closed**: 25 §14.5 register rows open (reconciliation vs merged chapters),
   **plus 33 bold-led paragraphs over the 55-word cap** found 2026-08-16 when the auditor's
   blind spot was fixed (it skipped `*`-opening lines — §14.3a's own bold leads were never
