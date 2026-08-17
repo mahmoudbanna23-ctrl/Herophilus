@@ -32,10 +32,23 @@ there before resuming a paused stream. Where this file and the archive disagree,
   patterns, three worth the render. ✅ `L3,4`, `L10`, `L25` banked — do not re-read. `op-ant` has
   no deck. **~30 §14.5 register rows are ophtho's**; 7 closed, 2 notices, 1 **undeliverable**
   (aniridia/Sturge–Weber — absent from all 27 decks), the rest open.
-- **In flight 2026-08-17:** the **`L20` visual read** (33 pp — the first bite of the render debt,
-  taken because `op-ret` needs it and it is the smallest owed deck) · a **two-job targeted render**
-  closing the module's two proven extraction losses (`L37`'s Tables 4-1/4-2/**4-3**, which are
-  images and extracted empty, and `L33,34`'s interleaved caption slide + misaligned chart).
+- ✅ **`L20` READ 2026-08-17, cache 473 → 2,376 w** — two rasterised tables, six labelled diagrams
+  and the nine-layer retinal stack recovered. **⚠️ AND IT IS THE FIRST DECK THAT DOES NOT DELIVER
+  ITS OWN TITLE:** pages 17–32 are sixteen byte-identical clip-art pages, content stops at p.16,
+  and **the "degenerations" half is never taught** (no lattice, snail-track, paving-stone,
+  retinoschisis or PVD anywhere in the file). Its NOT-COVERED block records that. ⚠️ Its garbled
+  label *"Choroid accuromatic macusis"* **has no plausible reading — never treat it as a term.**
+- **✅ REPEATED-FILLER PAGES: CLEAN NEGATIVE ACROSS ALL TEN OWED PDFs — DO NOT RE-RUN.** `L20`'s 16
+  wasted pages raised the hope that the debt was overstated, so every owed deck was rendered at
+  40 dpi and **hashed page by page** (hashes only — no image entered a context). Nine are 100 %
+  unique; only `L31,32` duplicates anything (2 pages, one run of 3). **`L20` was a one-off. The
+  estimate stands.** Limit of the instrument, stated: it finds **byte-identical** pages, so it is
+  evidence about *repeated* filler, never about *empty* pages.
+- **In flight 2026-08-17:** `op-ret` (⚠️ **TWELVE register rows — the module's most-owed chapter**,
+  incl. **one DR row opened twice** by `op-systemic` and `op-insid` against different decks:
+  **write it ONCE, against both** — plus two **notices** whose facts are already written, AMD in
+  `ins-7` and the leukocoria five in `wht-8`, to be cross-referenced not re-derived) · a **two-job
+  targeted render** closing the module's two proven extraction losses.
 - **⚠️ A TEXT-SUFFICIENT SOURCE CAN STILL LOSE CONTENT, AND TWICE IT HAS.** `L37`'s three tables
   are **images** inside an otherwise exact 5,104-word extraction — Table 4-3 (*"instructions for
   patients to follow"*) is restated nowhere and was recorded in `rdm-10` as a **genuine loss**
@@ -43,10 +56,13 @@ there before resuming a paused stream. Where this file and the archive disagree,
   **misaligns a chart's columns**, putting the corneal transparency requirements under the wrong
   headings. **Classing a deck text-sufficient is a claim about its PROSE, never about its tables
   or its columns.**
-- **Next to write:** `op-ret` (owed **5** register rows, incl. **one DR row opened twice** by
-  `op-systemic` and `op-insid` against different decks — **write it ONCE, against both**), then
-  `op-acute`. **⚠️ `op-refract` holds 38 questions — 28 % of the module — and is gated on `L7,8`
-  (88 pp, triage works).** That is the highest-value remaining render.
+- **Next to write:** `op-acute` (L31,32, 426 w cached / 31 pp owed) · then the render-gated ones.
+  **⚠️ `op-refract` holds 38 questions — 28 % of the whole module — and is gated on `L7,8`
+  (88 pp, and triage WORKS on it: real per-page titles). That is the highest-value render left.**
+  `L1,2` (136 pp, un-triageable — one running header across 80 blank pages) gates `op-intro` and
+  `op-vissym`. **`op-ant` last: no deck at all, so its scope is what the others leave** — the
+  `ent-sinuscomp` shape; grep ~50 terms across the module before writing, and `wht-4` is already
+  flagged for it to cross-reference.
 - **⚠️ `op-uvea` IS THE MODULE'S MOST BLOCKED CHAPTER** — four register rows owed to it and
   `L13,14` extracts **zero characters over 41 pp with no cache at all**. **Count a chapter's
   register rows before briefing it**; a question count does not predict what it has been handed.
