@@ -1,0 +1,1062 @@
+SOURCE: Semester 8\Opthalmo\Theoritical\Books\ophthalmology.pdf
+================================================================================
+BOOK:      "OPHTHALMOLOGY WITH TUTORIALS" (inside title, PDF p.3) / cover reads
+           "OPHTHALMO-OLOGY", "5 / Fifth Year".
+AUTHOR:    BY HEALIX TEAM (no named editor, no edition, no copyright page).
+CHAPTER:   5 — Eyelids
+PRINTED:   pp. 70–81   (12 pages)
+PDF:       pp. 72–83
+OFFSET:    ⚠️ PDF page = printed page + 2. Verified across the book
+           (content\ophtho\book-map.md) and re-confirmed here: PDF 72 carries
+           footer "70", PDF 83 carries footer "81".
+CITE AS:   ophthalmology.pdf p.<PRINTED>  — the PRINTED number. Every citation
+           below is a printed page number.
+WEIGHT:    6.5 % — the book's own "Relative weight in %" column, contents page.
+           Joint-third-heaviest chapter in the book.
+READ:      2026-08-18, rendered at 150 dpi page-by-page (portrait A4 book text);
+           two figure panels with engraved small print re-cropped at 300 dpi and
+           resolved. No source file was modified, renamed, moved or deleted.
+
+--------------------------------------------------------------------------------
+⚠️ STRUCTURAL FINDINGS — read before using this cache
+--------------------------------------------------------------------------------
+
+⚠️ 1. ⚠️ THE OBJECTIVES FLOWCHART PROMISES A TOPIC THE CHAPTER NEVER TEACHES.
+      The opener's flowchart lists, under "Others": Trichiasis · Epicanthus ·
+      Lagophthalmos · Lid swellings · **Malignancies** · Xanthelasma.
+      **There is NO malignancy section anywhere on printed 70–81.** Basal cell
+      carcinoma, sebaceous gland carcinoma, squamous cell carcinoma and
+      melanoma are never named. The only oncological sentence in the chapter is
+      inside the chalazion entry (printed 73): a recurrent chalazion should be
+      biopsied "to exclude an underlying malignancy (meibomian gland
+      carcinoma)". The book's malignancies live in chapter 17, "Malignancies of
+      the Eye and its Adnexa" (printed 214–217).
+      **If an app chapter needs eyelid BCC as a disease, this chapter is not
+      the source. Chapter 17 is unread.**
+
+⚠️ 2. THE CHAPTER IS THREE PARTS, matching the flowchart's three branches, but
+      the branch NAMES do not survive into the page headings:
+        Inflammatory      → taught as Hordeolum (externum/internum comparison
+                            table), Chalazion, Blepharitis (anterior +
+                            posterior). Printed 72–74.
+        Eyelid Malposition→ printed under the banner "Eyelid Malpositions" as
+                            numbered 1. Ptosis · 2. Upper Eyelid Retraction ·
+                            3. Entropion · 4. Ectropion. Printed 75–78.
+        Others            → Trichiasis · Epicanthus · Lid Swelling ·
+                            Xanthelasma · Lagophthalmos, each with its own
+                            banner and NO numbering. Printed 78–81.
+      ⚠️ The "Others" group is printed in a DIFFERENT ORDER from the flowchart
+      (flowchart: trichiasis, epicanthus, lagophthalmos, lid swellings,
+      malignancies, xanthelasma; text: trichiasis, epicanthus, lid swelling,
+      xanthelasma, lagophthalmos).
+
+⚠️ 3. THE TUTORIAL MARKER appears in this chapter ONLY in the inline form —
+      form (d) in the ch.14 taxonomy. The contents page rule is: "In this book,
+      anything we put (Tutorial) or (T) beside / before it , study in round &
+      skip in final". Every occurrence in this chapter is a blue clause ending
+      "→ Tutorial", "(Tutorial)" or "(T)" INSIDE an otherwise core bullet, plus
+      one whole framed box on the last page:
+        printed 78 — "+ chronic conjunctivitis (T)" (trichiasis complications)
+        printed 78 — "Repeated epilation … (Temporary → Tutorial )"
+        printed 78 — "surgery. (mm graft in gray line → Tutorial)"
+        printed 80 — "CO2 laser therapy → Tutorial" (xanthelasma treatment)
+        printed 81 — "5. Functional (GA, unconsciousness) → Tutorial"
+                     (a whole numbered aetiology of lagophthalmos)
+        printed 81 — a whole framed box "Treatment from Tutorial" (form (c))
+      ⚠️ THE MARKER WRAPS TWO OF THE CHAPTER'S FIVE TRICHIASIS TREATMENTS AND
+      ONE OF ITS FIVE LAGOPHTHALMOS AETIOLOGIES. Reading past the marker
+      deletes a numbered list item, not a footnote.
+      ⚠️ No "(++ Additional)" tag or any other undefined variant appears in this
+      chapter.
+
+⚠️ 4. FIGURE NUMBERING IS PRESENT BUT DEFECTIVE. Printed figures run
+      Fig (5-2) … Fig (5-13). **There is no Fig (5-1) anywhere on printed
+      70–81**, and **Fig (5-12) is printed OUT OF SEQUENCE on printed 81, two
+      pages after Fig (5-13) on printed 79.** Roughly half the chapter's
+      photographs carry a plain word caption with no number (e.g. "Stye",
+      "Madarosis", "Trichiasis", "Seborrheic blepharitis"), and several carry
+      none at all. Same defect shape as chapter 4, where Fig (4-1) is also
+      missing. Recorded as observed; no cause established.
+
+⚠️ 5. WHAT THIS CHAPTER TEACHES THAT AN INSPECTION LIST CANNOT — the chapter's
+      real value over a "spot the sign" list is that it prints, for almost every
+      entity, an AETIOLOGY/CLINICAL-TYPES CLASSIFICATION and a NAMED SURGICAL
+      OPERATION. Collected here because it is the reason the chapter was read:
+        Ptosis          — 7 aetiological types; levator resection vs frontalis
+                          sling, chosen by levator function (printed 76)
+        Entropion       — 4 clinical types (printed 77)
+        Ectropion       — 4 clinical types (printed 78)
+        Lagophthalmos   — 5 aetiologies; tarsorrhaphy, gold weight implantation,
+                          lateral tarsorrhaphy & medial canthoplasty (printed
+                          80–81)
+        Chalazion       — intralesional steroid, incision and curettage through
+                          the CONJUNCTIVAL side (printed 73)
+        Hordeolum ext.  — epilation of the affected lash or incision of skin;
+                          "IT MUST BE NEVER SQUEEZED" (printed 72)
+        Hordeolum int.  — never incised during active inflammation unless it
+                          forms an abscess (printed 72)
+        Trichiasis      — epilation, electrolysis, cryotherapy, mucous-membrane
+                          graft in the grey line (printed 78)
+        Xanthelasma     — surgical excision, CO2 laser (printed 80)
+        Epicanthus      — surgical, for cosmesis (printed 79)
+
+⚠️ 6. LEGIBILITY: nothing was illegible at 150 dpi. Two engraved-caption figure
+      panels (the ptosis surgery panel, printed 76; the trichiasis surgery
+      diagrams, printed 78) were re-rendered at 300 dpi and both resolved
+      cleanly. There is no "[illegible]" anywhere below.
+
+⚠️ 7. TRANSCRIBED-AS-PRINTED FAULTS (recorded, never corrected in place):
+      "gland of Zeiss" (printed 72; the anatomy figure on printed 71 spells it
+      "Gland of Zeis") · "causnig irritation" (printed 78) · "conreal
+      abrasions" (printed 78) · "medial Canti" and "cantal tendon" (printed 79)
+      · "Sotore" for "Suture" in a hand-lettered figure (printed 78) ·
+      "Tarsus" hand-lettered as "TAPSUS" (printed 78).
+
+
+================================================================================
+PAGE 70 (PDF 72) — CHAPTER OPENER
+================================================================================
+
+Eyelids                                          [blue underlined serif title]
+
+[FIGURE, uncaptioned, decorative: a cartoon eye with a dashed incision line
+ drawn along the upper lid crease and a surgical scalpel poised above it. The
+ dashed line and the blade signal the chapter's surgical emphasis.]
+
+OBJECTIVES
+
+[FLOWCHART of blue boxes. Root box "Eyelid Diseases" with three branches:]
+
+    Eyelid Diseases
+    ├── Inflammatory
+    │     ├── Acute Hordeolum (externum + internum)
+    │     ├── Chronic Chalazion
+    │     └── Blepharitis (Anterior + Posterior)
+    ├── Eyelid Malposition
+    │     ├── Ptosis
+    │     ├── Retraction
+    │     ├── Entropion
+    │     └── Ectropion
+    └── Others
+          ├── Trichiasis
+          ├── Epicanthus
+          ├── Lagophthalmos
+          ├── Lid swellings
+          ├── Malignancies
+          └── Xanthelasma
+
+⚠️ "Malignancies" is promised here and never delivered — see structural
+   finding 1.
+
+
+================================================================================
+PAGE 71 (PDF 73) — ANATOMY OF EYELIDS
+================================================================================
+
+Anatomy of Eyelids                                       [banner heading]
+
+  – These are the outer structures that protect the eyeball and help lubricate
+    the ocular surface.
+  – The upper and the lower lids in each eye join at the medial and lateral
+    canthi.
+  – The space between the upper and the lower lids when the eye is open is
+    called the "palpebral fissure".
+  – The lashes are present on the rounded anterior border of the lid margin and
+    are normally directed outwards and superiorly in the upper lid and outwards
+    and inferiorly in the lower lid.
+  – The posterior lid margin is right-angled and is in close coaptation with the
+    globe.
+  – Each eyelid is composed of 5 layers arranged from anterior to posterior into:
+      1. Skin
+      2. Subcutaneous tissue.
+      3. Muscular layer containing fibers of the orbicularis oculi, the muscle
+         responsible for blinking and forcible closure of the eyelids. It is
+         supplied by the facial (VII) nerve.
+      4. Tarsal plate: A rigid fibrous structure forming the skeleton of the
+         eyelid and containing the meibomian glands.
+         The meibomian glands empty their oily secretions through orifices
+         located on the lid margin. The virtual line connecting these orifices
+         is called the "white line".
+      5. The palpebral conjunctiva.
+
+N.B:
+Another line on the lid margin is the grey line which is an avascular line
+marking the separation of the lid surgically into two leaflets:
+
+  1. An anterior leaflet composed of the skin, subcutaneous tissue and the
+     orbicularis muscle.
+  2. A posterior leaflet composed of the tarsal plate and the palpebral
+     conjunctiva.
+
+⚠️ THE WHITE LINE AND THE GREY LINE ARE THE CHAPTER'S TWO NAMED LID-MARGIN
+   LANDMARKS and the grey line is explicitly the SURGICAL splitting plane. The
+   trichiasis operation on printed 78 ("mm graft in gray line") depends on it.
+
+[FIGURE, left, a colour sagittal drawing of the globe and both lids with a
+ lettered key. The key, printed exactly:
+   A  Skin
+   B  Lid margin
+   C  Orbicularis oculi
+   D  Tarsal plate
+   E  Palpebral conjunctiva
+   F  Conjunctival fornix
+   G  Bulbar conjunctiva
+   H  Surface of cornea
+ This is the figure that maps the five prose layers onto a picture.]
+
+[FIGURE, right, a detailed black-and-white sagittal section of the upper lid in
+ a bordered panel, uncaptioned but densely labelled. Every printed label:
+   Orbicularis oculi m. (orbital portion)
+   Orbital septum
+   Orbicularis oculi m. (preseptal portion)
+   Eyelid crease (non-Asian)
+   Levator aponeurosis
+   Orbicularis oculi m. (pretarsal portion)
+   Eyelid crease (Asian)
+   Gland of Zeis
+   Preaponeurotic orbital fat
+   Levator palpebrae m.
+   Peripheral arterial arcade
+   Müller muscle
+   Gland of Wolfring
+   Conjunctiva
+   Tarsus
+   Meibomian gland
+   Marginal arterial arcade
+   Gland of Moll
+   Cilium
+ ⚠️ FIGURE-ONLY TEACHING, AND IT IS THE LARGEST BLOCK OF FIGURE-ONLY CONTENT IN
+ THE CHAPTER. Nine things exist ONLY in this figure and appear nowhere in the
+ chapter's prose:
+   (a) MÜLLER MUSCLE — never named in the body text of this chapter, yet the
+       ptosis section on printed 76 says sympathetic ptosis is "affecting
+       Muller's muscle"; the muscle's position (under levator, above
+       conjunctiva, inserting on upper tarsus) is only ever drawn.
+   (b) LEVATOR APONEUROSIS and LEVATOR PALPEBRAE M. as separate labelled
+       structures — the aponeurotic ptosis entry on printed 76 turns on
+       "disinsertion or dehiscence of the levator aponeurosis" and this is the
+       only picture of it.
+   (c) GLAND OF WOLFRING — an accessory lacrimal gland eponym. It is the ONLY
+       accessory lacrimal gland eponym printed anywhere in chapters 4 or 5, and
+       it is a figure label. (Krause is never printed.)
+   (d) GLAND OF ZEIS — spelled "Zeis" here, "Zeiss" in the hordeolum table on
+       printed 72.
+   (e) GLAND OF MOLL — never mentioned in prose anywhere in the chapter.
+   (f) The ORBITAL SEPTUM.
+   (g) The three-part division of orbicularis oculi into ORBITAL, PRESEPTAL and
+       PRETARSAL portions — prose says only "fibers of the orbicularis oculi".
+   (h) The PREAPONEUROTIC ORBITAL FAT.
+   (i) The PERIPHERAL and MARGINAL ARTERIAL ARCADES, and the ASIAN vs NON-ASIAN
+       eyelid crease positions.
+ None of (a)–(i) is stated in words anywhere on printed 70–81.]
+
+
+================================================================================
+PAGE 72 (PDF 74) — Classification of eyelid disease · HORDEOLUM comparison
+================================================================================
+
+Diseases that affect the eyelids can be categorized into:
+  1. Infections (inflammations)
+  2. malposition
+  3. neoplasms
+The examination of the eyelid can usually be performed without special
+instrumentation.
+Good illumination in the office will often suffice, and magnification can be
+helpful but is not necessary.
+
+⚠️ Category 3, "neoplasms", is announced here and never taught — see structural
+   finding 1.
+
+[FIGURE, a second flowchart, greyed, sitting between the categories and the
+ table. Transcribed in full:
+
+    Inflammation
+    ├── Localized
+    │     ├── Acute  ── Hordeolum externum
+    │     │            Hordeolum internum
+    │     └── Chronic ── Chalazion Meibomian
+    └── Blepharitis
+          ├── Anterior ── Seborrheic
+          │               Ulcerative ( staphylococcus)
+          └── Posterior ── Meibomian Gland dysfunction (MGD)
+
+ ⚠️ FIGURE-ONLY TEACHING: this is the ONLY place the acute/chronic axis is drawn
+ against the localized/diffuse axis. The prose never states that hordeolum is
+ the acute localized lesion and chalazion the chronic one; the chart does.
+ It also prints "Ulcerative ( staphylococcus)" as the anterior-blepharitis
+ subtype name, where the body text on printed 74 heads it "Staphylococcal
+ (ulcerative)".]
+
+Comparison of Hordeolum Extrenum [sic] (stye) and Hordeolum Internum :
+
+TABLE — Hordeolum Externum vs Hordeolum Internum
++-------------+--------------------------------------+--------------------------------------+
+|             | Hordeolum Externum (stye)            | Hordeolum Internum                   |
++-------------+--------------------------------------+--------------------------------------+
+| Definition  | Acute suppurative inflammation of    | Acute inflammation of Meibomian      |
+|             | the follicle of the lash or the      | glands.                              |
+|             | associated gland of Zeiss.           | It is usually caused by              |
+|             | It is usually caused by              | Staphylococcus aureus.               |
+|             | Staphylococcus aureus.               |                                      |
++-------------+--------------------------------------+--------------------------------------+
+| Incidence   | It is common in children and young   | It is the second most common         |
+|             | adults.                              | infection of the eyelid.             |
++-------------+--------------------------------------+--------------------------------------+
+| Clinical    | - Painful, red, and tender swelling  | - Painful, red, and tender swelling  |
+| Picture     |   of the lid pointing anteriorly     |   of the lid.                        |
+|             |   through the skin on the lid margin | - It can be separated from the lid   |
+|             |   usually with a lash at its apex.   |   margin by normal non-inflamed      |
+|             | - Associated with dull, throbbing    |   tissues.                           |
+|             |   pain.                              | - Associated with dull, throbbing    |
+|             |                                      |   pain.                              |
++-------------+--------------------------------------+--------------------------------------+
+| Treatment   | • Topical antibiotic ointment on the | • Warm compresses with gentle        |
+|             |   lesion (Oral antibiotics are       |   massage.                           |
+|             |   rarely needed).                    | • Topical antibiotic eye drops, or   |
+|             | • Pus may be evacuated by epilation  |   ointments are prescribed only if   |
+|             |   of the affected lash or incision   |   the lesion is pointing at the      |
+|             |   of the overlying skin.             |   palpebral conjunctiva.             |
+|             | • IT MUST BE NEVER SQUEEZED.         | • Oral antigram positive antibiotics |
+|             | • Prevent recurrence by treating any |   and analgesics.                    |
+|             |   associated local disease (e.g.,    | • It should NEVER be incised during  |
+|             |   blepharitis).                      |   active inflammation UNLESS it      |
+|             |                                      |   forms an abscess.                  |
++-------------+--------------------------------------+--------------------------------------+
+
+⚠️ "IT MUST BE NEVER SQUEEZED" is printed in red capitals — the chapter's only
+   all-capital instruction. "NEVER" and "UNLESS" in the internum cell are
+   underlined in the original.
+⚠️ "second most common infection of the eyelid" is printed without ever saying
+   what is FIRST. The book does not supply the ranking.
+⚠️ "gland of Zeiss" here vs "Gland of Zeis" in the printed-71 figure — both
+   transcribed as printed.
+
+[FIGURES inside the Treatment cell of the externum column, captioned only
+ "Stye": two photographs — (1) a lower lid with a discrete red pointing nodule
+ at the lid margin with a lash emerging from its apex; (2) a closed upper lid,
+ heavily erythematous, with a pointing yellow head at the margin.
+ The lash-at-the-apex sign the prose names is visible in (1) and nowhere else.]
+
+
+================================================================================
+PAGE 73 (PDF 75) — CHALAZION · BLEPHARITIS (anterior, seborrhoeic)
+================================================================================
+
+Chalazion (Meibomian Cyst)                               [banner heading]
+
+Definition:
+  Sterile chronic granulomatous inflammatory lesion of the meibomian glands
+  caused by retained sebaceous secretions.
+
+Incidence:
+  • The most common benign non-neoplastic lesion of the eyelids
+  • Commonly associated with posterior or seborrheic blepharitis.
+
+Clinical picture:
+Symptoms:
+  Gradually enlarging painless rounded nodule.
+Signs:
+  • A firm nodule within the tarsal plate
+  • An associated conjunctival granuloma may be present
+
+Treatment:
+  1. Warm compresses with gentle massage several times daily may help
+     resolution, especially in early lesions
+  2. Surgical treatment:
+     • Intralesional steroid injection
+     • Incision and curettage through the conjunctival side
+     • A recurrent chalazion (especially in elderly individuals) should be
+       biopsied to exclude an underlying malignancy (meibomian gland
+       carcinoma).
+
+⚠️ "Incision and curettage through the conjunctival side" is the whole of the
+   operative detail — no vertical-vs-horizontal incision, no clamp, no
+   anaesthetic is named.
+⚠️ THIS IS THE CHAPTER'S ONLY MENTION OF AN EYELID MALIGNANCY, and it is a
+   one-clause exclusion rule, not a disease entry.
+
+[FIGURES, right column, three photographs; the third carries the caption
+ "Fig (5-2) Chalazion":
+  (1) an upper lid with a rounded, non-tender-looking swelling in its mid third,
+      the overlying skin only mildly pink;
+  (2) a lower lid with a discrete rounded fullness away from the lid margin;
+  (3) Fig (5-2): a lower lid with a well-defined nodule within the tarsus and
+      surrounding skin erythema.
+ ⚠️ FIGURE-ONLY TEACHING: the chalazion's position AWAY from the lid margin,
+ within the tarsus — the feature separating it from a stye — is shown in all
+ three and stated in the prose only as "within the tarsal plate".]
+
+Blepharitis                                              [banner heading]
+
+Definition:  Inflammation of the lid margin that involves the lashes and their
+associated glands.
+
+Clinical picture:
+There are two main clinical types of blepharitis:
+
+1. Anterior blepharitis
+  • It affects the area surrounding the bases of the eyelashes.
+  • It may be seborrheic or staphylococcal
+
+a. Seborrheic:
+  – Associated with generalised seborrheic dermatitis
+  – Characterized by:
+      • Hyperaemic lid margin
+      • The presence of greasy soft scales on the lashes. (no ulceration)
+  – Treatment:
+      1. Lid hygiene (warm compresses and lid scrubs with diluted baby shampoo)
+      2. treatment of associated scalp seborrhoea.
+
+[FIGURES, right, two slit-lamp photographs captioned together "Seborrheic
+ blepharitis": both show a hyperaemic lid margin with soft, greasy, pale scales
+ collected along the lash bases and clinging between lashes, without ulceration.
+ ⚠️ FIGURE-ONLY TEACHING: the contrast that matters — soft greasy scales here
+ vs hard dry collarettes on printed 74 — is only visible by comparing these two
+ photograph sets. Neither page states the comparison in words.]
+
+
+================================================================================
+PAGE 74 (PDF 76) — Staphylococcal blepharitis · POSTERIOR BLEPHARITIS (MGD)
+================================================================================
+
+b. Staphylococcal (ulcerative):
+  • Caused by. S aureus and. S epidermidis.
+  • May show ulceration of the lid margin.
+  • Hard dry scales around the bases of lashes (collarettes) are present
+  • Lashes fall with scarring and notching of the lid margin leading to
+    madarosis (permanent loss of the lashes), trichiasis and poliosis
+    (premature whitening of the lashes)
+  • Dry eye is a common finding
+
+  • Complications:
+      o Madarosis, trichiasis and poliosis.
+      o Recurrent styes.
+      o Chronic conjunctivitis, and phlyctens.
+
+  • Treatment:
+      – Lid hygiene (warm compresses and lid scrubs with diluted baby shampoo)
+      – Topical (fusidic acid &azithromycin)
+      – Systemic antibiotics (tetracyclines doxycycline, azithromycin)
+      – Managing complications.
+
+⚠️ THE THREE LASH TERMS ARE DEFINED IN PARENTHESES AND THE DEFINITIONS MATTER:
+   madarosis = permanent loss of the lashes · poliosis = premature whitening of
+   the lashes · trichiasis is named here but defined only on printed 78.
+
+[FIGURE, captioned "Fig (5-3) Staphylococcal blepharitis": slit-lamp view of a
+ lid margin with frank ulceration, crusting and irregular notching.]
+[FIGURE, captioned "ulcerative blepharitis" (word caption, no number): two
+ photographs — a close-up of lash bases encircled by hard dry cuffs
+ (collarettes), and a lid margin with erythema, crusting and lash loss.
+ ⚠️ FIGURE-ONLY TEACHING: COLLARETTES are named in the prose but only shown
+ here, and the picture is what distinguishes them from seborrhoeic scales.]
+
+[FIGURES, a row of four captioned photographs across the middle of the page —
+ this row is the chapter's complications atlas:
+   "Madarosis"                  — a lid margin, arrowed, with a bald segment
+                                  where lashes have been permanently lost.
+   "Trichiasis"                 — lashes turned back against the globe from a
+                                  normally positioned lid margin.
+   "Stye(recurrent )"           — an eye with a pointing marginal nodule.
+   "Conjunctivitis & marginal keratitis"
+                                — a red eye with a peripheral white corneal
+                                  infiltrate near the limbus.
+ ⚠️ FIGURE-ONLY TEACHING: MARGINAL KERATITIS appears in the whole chapter ONLY
+ in this caption. The prose complication list on this page says "Chronic
+ conjunctivitis, and phlyctens" and never names marginal keratitis.]
+
+2. Posterior Blepharitis (Meibomian Gland Dysfunction (MGD):
+
+Alteration and inspissation of meibomian gland secretions contributing to
+ocular surface irritation increased tear evaporation and an unstable tear film.
+It is a more chronic and persistent condition than anterior blepharitis.
+
+Clinical picture:
+  Symptoms:                        Signs:
+    • Dry eye manifestations         • Hyperaemia and telangiectasia of the
+    • Recurrent chalazia               posterior lid margin
+                                     • Foamy discharge on the lid margin may be
+                                       present            [highlighted yellow]
+                                     • Either excessive abnormal (turbid)
+                                       meibomian gland secretions or
+                                       inspissated secretions with plugged
+                                       meibomian gland orifices
+
+
+================================================================================
+PAGE 75 (PDF 77) — MGD treatment · EYELID MALPOSITIONS · 1. PTOSIS
+================================================================================
+
+[FIGURES, a row across the top of the page. The first is captioned
+ "Fig (5-4) Posterior Blepharitis with foamy discharge": a slit-lamp view of a
+ lower lid margin carrying a white foamy line of discharge along its length.
+ Three further uncaptioned photographs show: plugged, capped meibomian gland
+ orifices along the posterior lid margin; a lid margin with telangiectatic
+ vessels and inspissated white plugs; and a lower lid margin with turbid
+ expressed secretion.
+ ⚠️ FIGURE-ONLY TEACHING: PLUGGED/CAPPED ORIFICES and the telangiectatic
+ posterior margin are described in the prose in one clause each and are only
+ recognisable from these images.]
+
+Treatment:                                   [of posterior blepharitis / MGD]
+  • Eyelid hygiene (warm compresses and lid scrubs with diluted baby shampoo)
+  • Oral Tetracyclines or Doxycycline
+  • Tear substitutes
+  • Topical steroids may be needed to control ocular surface inflammation
+  • Other newer modalities:
+    Topical cyclosporine, pulsed light application, heating and expressing
+    meibomian glands via certain devices
+  • Management of complications
+
+⚠️ NO DOSE, STRENGTH OR DURATION is printed for any drug in the blepharitis
+   sections. "Oral Tetracyclines or Doxycycline" is as specific as it gets.
+
+Eyelid Malpositions                                      [BANNER heading]
+
+  ⇨ Eyelid malpositions can involve both upper and lower lids.
+  ⇨ Eyelid malpositions include: ptosis, entropion, ectropion, and retraction.
+
+1. Ptosis                                                [banner heading]
+
+Definition:
+  – Drooping of the upper eyelid below its normal position, so that it covers
+    more than 2 mm of the superior limbus in the primary position.
+    ["more than 2 mm" is highlighted yellow in the original.]
+
+  – It should be differentiated from pseudoptosis, which is apparent drooping
+    of the upper eyelid often seen in:
+      1. lack of lid support by the globe as in enophthalmos
+      2. redundancy of the lid skin (dermatochalasis)
+      3. hypotropia
+      4. contralateral lid retraction.
+
+⚠️ THE 2 mm THRESHOLD IS THE CHAPTER'S ONLY QUANTITATIVE DIAGNOSTIC CRITERION.
+   No margin-reflex distance, no palpebral fissure height, no levator-function
+   millimetre bands are printed anywhere in the chapter — levator function is
+   only ever "good" or "poor".
+
+[FIGURE, uncaptioned, right: a cartoon of the character Tom (Tom and Jerry)
+ with markedly drooping upper lids — decorative mnemonic, teaches nothing.]
+
+
+================================================================================
+PAGE 76 (PDF 78) — Ptosis aetiology and treatment · 2. UPPER EYELID RETRACTION
+================================================================================
+
+Aetiology (Clinical types):   (important)
+   ["important" is highlighted yellow in the original.]
+
+  1. Congenital
+     • Frequently sporadic, but may have a hereditary origin
+     • Due to lack of development of levator muscle, resulting in a smooth lid
+       with loss of tarsal fold [poor levator function]
+
+  2. Paralytic:
+     o Due to III nerve (oculomotor nerve) palsy
+
+  3. Myogenic:
+     • Due to a disease of the levator muscle e.g., muscle dystrophy, or
+       myasthenia gravis
+     • (Asymmetric bilateral ptosis that is more marked at the end of the day)
+
+  4. Sympathetic:
+     • As in Horner's syndrome  (affecting Muller's muscle)
+
+  5. Aponeurotic (Senile):
+     – Due to disinsertion or dehiscence of the levator aponeurosis.
+     – Associated with advancing age, trauma, or ocular surgery
+     – Typically shows a good levator function.
+
+  6. Mechanical:
+     • Increased lid weight from a lid mass, lid oedema or palpebral vernal
+       catarrh.
+
+  7. Traumatic
+
+⚠️ THE LEVATOR-FUNCTION AXIS RUNS THROUGH THE WHOLE LIST AND DECIDES THE
+   OPERATION: congenital = POOR levator function (printed in blue brackets);
+   aponeurotic/senile = GOOD levator function. The surgery figure below turns
+   exactly on that split.
+
+Treatment:
+  • Surgical (levator resection, frontalis sling, etc)
+  • Medical treatment of myasthenia gravis
+  • Treatment of the cause e.g., mechanical ptosis
+
+[FIGURE, a bordered two-panel surgical plate, no figure number. Re-rendered at
+ 300 dpi to read the engraved captions. Every printed word:
+   Panel 1 header:  "Levator resection"  /  "Good levator function"
+     sub-caption a: "Shortening of levator complex"
+     sub-caption b: "Amount determined by levator function and severity of
+                     ptosis"
+     Drawings: the levator complex clamped and shortened; the shortened
+     complex being re-attached to the tarsus.
+   Panel 2 header:  "Frontalis sling"  /  "Poor levator function"
+     sub-caption:   "Attachment of tarsus to frontalis muscle with sling"
+     Drawings: a sling material passed through a brow incision; the completed
+     dashed sling path from the tarsus up over the brow.
+ ⚠️⚠️ FIGURE-ONLY TEACHING, AND IT IS THE CHAPTER'S SINGLE MOST IMPORTANT
+ FIGURE-ONLY ITEM. The OPERATION-SELECTION RULE — levator resection when
+ levator function is GOOD, frontalis sling when it is POOR — is printed ONLY in
+ these figure headers. The prose says merely "Surgical (levator resection,
+ frontalis sling, etc)". So is the fact that the amount of levator resection is
+ determined by levator function and severity of ptosis, and that the frontalis
+ sling attaches TARSUS TO FRONTALIS MUSCLE. Nothing in the body text carries any
+ of it.]
+
+[FIGURES, two captioned clinical photographs completing the same plate:
+   "Aponeurotic ptosis / Good levator function" — an elderly patient with
+     bilateral high lid creases and drooping lids.
+   "Congenital ptosis / Poor levator function" — a child with a unilateral
+     smooth upper lid and absent lid crease.
+ ⚠️ These two captions repeat the selection rule and pair each aetiology with
+ its levator function; again, only in the figures.]
+
+[FIGURE, captioned "Fig (5-5) Congenital ptosis": a child's face, right upper
+ lid drooping with a smooth lid and no tarsal fold.]
+[FIGURE, captioned "Fig (5-6) Aponeurotic ptosis": an elderly patient, both
+ upper lids drooping with deep sulci and high creases.]
+
+2. Upper Eyelid Retraction                               [banner heading]
+
+  – The sclera above the limbus should not be visible in the resting position
+    of the upper eyelid .
+  – Lid retraction causes the sclera to be visible ("scleral show").
+  – The eye may become dry due to exposure of the cornea
+      – The most common condition causing upper position of the upper eyelid
+        retraction is thyroid eye disease.
+
+⚠️ THIS IS THE WHOLE OF THE RETRACTION SECTION — four lines, no classification,
+   no treatment, no eponymous sign (no Dalrymple, no von Graefe). It is the
+   thinnest of the four malpositions by a wide margin.
+
+[FIGURE, uncaptioned, right: a cartoon of Tom (Tom and Jerry) with wide,
+ staring eyes — decorative mnemonic for scleral show.]
+
+
+================================================================================
+PAGE 77 (PDF 79) — 3. ENTROPION · 4. ECTROPION (opening)
+================================================================================
+
+3. Entropion                                             [banner heading]
+
+  • The eyelid margin is rotated inwards toward the eye.
+  • This results in the lashes rubbing against the conjunctiva and cornea, with
+    reflex lacrimation, foreign body sensation and red eye
+  • May cause corneal abrasions with secondary corneal scarring.
+    (If infectious keratitis occurs, it may lead to loss of vision)
+  • Most commonly affects the lower lid.
+
+Clinical types:
+  1. Congenital
+  2. Spastic (orbicularis muscle spasm)
+  3. Involutional (senile) entropion:
+     due to laxity of the lower lid retractors and lateral canthal ligament.
+  4. Cicatricial entropion:
+     – due to a shortening of the conjunctival surface of the eyelid, causing
+       it to rotate inward.
+     – Unlike other causes of entropion that affect lower lids only, this type
+       may affect both upper and lower lids.
+     – Shortening of the conjunctiva can be caused by:
+         o Trauma
+         o Chronic inflammation (Autoimmune ocular surface diseases e.g.,
+           Stevens-Johnson syndrome)
+         o Infection (trachoma)
+
+Treatment:
+  • Surgical treatment.
+  • Topical medications to control ocular surface irritation and inflammation
+    (mainly lubricants)
+
+⚠️ "Surgical treatment." is the entire operative content for entropion — no
+   named procedure. Contrast with ptosis, trichiasis and lagophthalmos, all of
+   which name operations.
+⚠️ CICATRICIAL IS THE ONLY TYPE THAT TAKES THE UPPER LID — stated for entropion
+   here and again for ectropion on printed 78. It is the chapter's most
+   repeated discriminator.
+
+[FIGURE, captioned "Fig (5-7) Senile (involutional) entropion": a lower lid
+ rolled inward against the globe with lashes contacting the cornea.]
+[FIGURE, captioned "Fig (5-8) Cicatricial entropion": a scarred, contracted lid
+ turned sharply inward with distorted margin architecture.]
+[FIGURE, third, uncaptioned: a lower lid inturned with visible conjunctival
+ injection and lash-cornea contact.]
+
+4. Ectropion                                             [banner heading]
+
+  • The eyelid margin is rotated outward away from the eye.
+  • This results in exposure of the palpebral conjunctiva, which becomes dry
+    and irritated.
+  • The patient may, also, have some difficulty closing the eye completely,
+    resulting in dryness of the cornea.
+  • The eyelids cannot effectively push tears toward the tear drain, resulting
+    in epiphora.
+  • It mainly affects the lower lid.
+
+[FIGURE, uncaptioned, centred at the foot of the page: a lower lid everted away
+ from the globe with the palpebral conjunctiva exposed and reddened, and the
+ punctum turned outward — the mechanism of the epiphora the prose names.]
+
+
+================================================================================
+PAGE 78 (PDF 80) — Ectropion types and treatment · TRICHIASIS
+================================================================================
+
+Clinical types:                                          [of ectropion]
+  1. Mechanical
+  2. Senile (involutional):
+     due to a horizontal laxity of the lower eyelid
+  3. Paralytic:
+     VII (facial) nerve palsy
+  4. Cicatricial:
+     – The only type that can involve both upper and lower lids.
+     – It may result from:
+         o Extensive burns
+         o Contraction of the skin in eczema,
+         o Post- operative scars
+         o Lacerated wounds of the eyelids.
+
+Treatment:
+  Surgical treatment with medications to control ocular surface exposure,
+  irritation, and inflammation (mainly by lubricants)
+
+[FIGURE, captioned "Fig (5-9) Senile (involutional) ectropion": a lower lid
+ sagging away from the globe with the punctum visible and everted.]
+[FIGURE, captioned "Fig (5-10) Cicatricial ectropion": both lids of a burned/
+ scarred face pulled outward and downward by contracted skin, with the globes
+ exposed.]
+
+Trichiasis                                               [BANNER heading]
+
+  • The eyelid margin is in its normal anatomic condition, but the eyelashes
+    are misdirected toward the eye, causnig [sic] irritation.
+  • Associated with entropion or chronic inflammatory lid margin disease
+    (blepharitis)
+  • The patient complains of chronic red eye, foreign body sensation, excessive
+    tearing (reflex lacrimation)
+  • Complications:
+    May result in conreal [sic] abrasions, ulceration resulting in scarring or
+    vision loss + chronic conjunctivitis (T)
+    ⚠️ TUTORIAL MARKER, INLINE — covers only "chronic conjunctivitis"; the rest
+       of the complication sentence is core text.
+  • Treatment:
+      1. Repeated epilation of the offending lashes. (Temporary → Tutorial )
+         ⚠️ TUTORIAL MARKER, INLINE — the parenthetical "(Temporary → Tutorial)"
+            marks the temporariness, and the whole item reads as tutorial-tagged.
+      2. electrolysis of the lash follicles
+      3. cryotherapy.
+      4. surgery. (mm graft in gray line → Tutorial)
+         ⚠️ TUTORIAL MARKER, INLINE — the ONLY description of what the trichiasis
+            operation IS ("mm graft in gray line" = mucous-membrane graft in the
+            grey line) is inside the tutorial marker. Skip the marker and the
+            item reduces to the bare word "surgery."
+
+⚠️ THE DEFINING CONTRAST IS STATED HERE AND NOWHERE ELSE: in trichiasis the LID
+   MARGIN IS NORMAL and only the lashes are misdirected — which is what
+   separates it from entropion, where the margin itself is rotated.
+
+[FIGURE, top right, uncaptioned: a slit-lamp view of a lid margin whose lashes
+ curve backward onto the ocular surface while the margin itself sits normally.]
+
+[FIGURES, a four-item plate across the foot of the page:
+   "Electrolysis" (word caption): two drawings — an epilation forceps beside an
+     eye, and an electrolysis unit with its needle handpiece.
+   "cryotherapy" (label printed inside the photograph): a cryoprobe applied to
+     an everted lid margin, ice ball visible.
+   "Surgery" (word caption over two hand-drawn panels; re-rendered at 300 dpi to
+     read the hand lettering):
+       Fig 1 — a sagittal lid-margin drawing labelled "TARSUS" [hand-lettered
+               "TAPSUS"] with a dashed pointer to "Site of groove", showing a
+               groove cut along the grey line anterior to the tarsus, the lashes
+               swinging forward.
+       Fig 2 — the same section with a wedge labelled "Graft" set into the
+               groove and "Sotore" [sic — Suture] labelling the closure, with
+               the lashes now directed away from the globe.
+ ⚠️⚠️ FIGURE-ONLY TEACHING: THE TRICHIASIS OPERATION EXISTS ONLY IN THESE TWO
+ HAND-DRAWN PANELS. The body text gives the word "surgery." and a
+ tutorial-marked parenthesis. What the operation actually does — split the lid
+ margin at the grey line to make a groove, interpose a graft, suture it, and so
+ rotate the lash line forward — is drawn and never written.]
+
+
+================================================================================
+PAGE 79 (PDF 81) — EPICANTHUS · LID SWELLING · XANTHELASMA (opening)
+================================================================================
+
+Epicanthus                                               [BANNER heading]
+
+  – Epicanthal folds are bilateral vertical folds of skin that extend from the
+    upper or lower lids towards the medial Canti [sic] hiding the medial cantal
+    [sic] tendon behind them (hence the name epicanthus).
+  – They may result in giving the false appearance of having a convergent
+    squint (pseudoesotropia).
+  – The folds may involve the upper (epicanthus) or lower lids (epicanthus
+    inversus) or both.
+  – Treatment for cosmetic reasons is surgical.
+
+[FIGURE, captioned "Fig (5-11) Epicanthus": a child's face with prominent
+ bilateral vertical skin folds at both medial canthi covering the medial sclera,
+ producing the appearance of esotropia while the corneal reflexes stay central.
+ ⚠️ FIGURE-ONLY TEACHING: the CENTRAL CORNEAL LIGHT REFLEXES — the finding that
+ proves the squint is false — are visible in the photograph and never mentioned
+ in the prose.]
+
+Lid Swelling                                             [BANNER heading]
+
+TABLE — Causes of lid swelling (printed as a 2 × 2 block of numbered lists)
++-------------------------------------------+-------------------------------------------+
+| 1. Allergic:                              | 3. Orbital venous congestion:             |
+|   • Insect bites                          |   ▪ Orbital mass                          |
+|   • As a part of angioneurotic oedema     |   ▪ Intracranial mass compressing the     |
+|   • Skin eczema with scaling and erythema |     venous return from the orbit          |
+|     of the skin of the eyelids            |   ▪ Cavernous sinus thrombosis            |
++-------------------------------------------+-------------------------------------------+
+| 2. Dependent oedema on awakening:         | 4. Inflammation:                          |
+|   – Congestive heart failure              |   – Cellulitis of the skin of the lid or  |
+|   – Renal dysfunction                     |     other lid inflammations               |
+|   – Hepatic failure                       |     (stye/Hordeolum internum)             |
+|                                           |   – Inflammation &/or infections of the   |
+|                                           |     lacrimal sac or the lacrimal gland    |
+|                                           |   – Trauma                                |
+|                                           |   – Thyroid eye disease (Myxoedema)       |
++-------------------------------------------+-------------------------------------------+
+
+⚠️ THIS FOUR-WAY CAUSE LIST IS THE CHAPTER'S ONLY SYSTEMIC-DISEASE CONTENT and
+   the only place lid swelling is treated as a symptom to be worked up rather
+   than a sign to be spotted. It cross-links to ch.4 (lacrimal sac and gland).
+   The book prints "Thyroid eye disease (Myxoedema)" — recorded as printed.
+
+Xanthelasma                                              [BANNER heading]
+
+  • It is a benign condition characterized by the presence of cutaneous lesions
+    in the periocular region.
+  • It presents as a yellowish-white lesion found on the medial aspect of the
+    skin of the eyelids.
+  • It occurs more in middle-aged individuals (4th to 5th decades of life)
+  • Patients with xanthelasma usually have associated lipid disorders e.g.,
+    hyperlipidemia, high total cholesterol, high triglycerides, and low levels
+    of high-density lipoprotein.
+  • However, many patients are normolipidemic on presentation.
+
+Risk factors:
+  1. Diabetes Mellitus
+  2. Hypothyroidism
+  3. Cardiovascular disease
+  4. Obesity
+  5. heavy smoking
+
+[FIGURE, captioned "Fig (5-13) Xanthelasma": a frontal photograph of both eyes
+ with symmetric yellowish plaques at the medial aspects of all four lids.]
+[FIGURES, two further uncaptioned photographs: a face with bilateral upper-lid
+ medial plaques with eyes closed; and a close-up of a single lower-lid yellow
+ plaque ringed in red.
+ ⚠️ FIGURE-ONLY TEACHING: the SYMMETRY and the upper-lid predominance the prose
+ states on printed 80 are visible here first.]
+
+⚠️ Fig (5-12) is NOT on this page — it appears two pages later, on printed 81.
+   See structural finding 4.
+
+
+================================================================================
+PAGE 80 (PDF 82) — Xanthelasma clinical picture / investigations / treatment ·
+                    LAGOPHTHALMOS (opening and aetiology 1–3)
+================================================================================
+
+Clinical picture:                                        [of xanthelasma]
+  • Xanthelasma lesions present as soft, yellow plaques filled with cholesterol
+    at the medial canthus of the eyelids.
+  • They can appear as multiple, symmetric lesions that more commonly are found
+    on the upper eyelid than the lower one.
+  • Patients seek treatment for cosmetic concerns.
+  • Diagnosis is clinical.
+
+Investigations:                     Treatment:
+  • Total lipid profile.              ▪ Conservative therapy low-fat diet and
+  • HbA1C                               statins. - The therapeutic effect is
+  • Liver function tests                 questionable.
+  • Thyroid function tests.            ▪ Surgical excision.
+                                       ▪ CO2 laser therapy → Tutorial
+                                         ⚠️ TUTORIAL MARKER, INLINE — one of
+                                            three treatment options is
+                                            tutorial-tagged.
+
+Lagophthalmos                                            [BANNER heading]
+
+  – It is the inability to close the eyelids completely with the palpebral
+    fissure remaining partially open during a blink and sleep.
+  – The ocular surface become subject to damage from exposure.
+
+Aetiology:                                                    [section heading]
+
+  1. Facial nerve dysfunction (paralytic lagophthalmos):
+     o It leads to weakened eyelid closure.
+     o Facial nerve can be damaged by:
+         a) Trauma (fractures to the skull base or mandible, surgery as in
+            post-ptosis or blepharoplasty surgeries)
+         b) Cerebrovascular accident
+         c) Bell's palsy (a type of facial paralysis that results in a weakness
+            of facial muscles on one side of the face.
+            It can be idiopathic in most cases or may result from the
+            reactivation of herpes simplex/zoster. Other infectious causes of
+            Bell's palsy include Lyme disease, varicella, mumps, poliomyelitis,
+            Guillain-Barré syndrome, leprosy, diphtheria, and botulism)
+         d) Tumours in the cerebellopontine angle.
+
+  2. Excessive scar tissue or excessive eyelid removal during surgery
+     (cicatricial lagophthalmos)
+
+  3. Physiologic lagophthalmos (Nocturnal lagophthalmos):
+     • Incomplete eyelid closure during sleep is relatively common in the
+       general population.
+     • The presence of Bell's phenomenon, by which the eyeball (and thus the
+       cornea) rotates upward and inwards upon eyelid closure, particularly
+       during sleep, may serve to protect the cornea in cases of nocturnal
+       lagophthalmos.
+
+⚠️ BELL'S PALSY AND BELL'S PHENOMENON ARE BOTH DEFINED HERE, one page apart from
+   each other, and printed 81 then says sedatives "negatively affect Bell's
+   phenomenon". The two eponyms are the chapter's only named signs besides the
+   white line and the grey line.
+
+[FIGURE, top right, uncaptioned: a four-panel schematic — an upper pair of open
+ eyes, one normal and one with a wider fissure; a lower pair of closed eyes,
+ one fully closed and one with a residual open strip of exposed globe. Shows
+ what "partially open during a blink and sleep" means.]
+
+[FIGURE, foot of page, a hand-drawn marginal sketch in blue and red ink,
+ hand-lettered:
+   "Bells Phenomenon"  /  "(eye blinks)"
+ beside a profile of a head with the globe drawn rotating up-and-in behind a
+ closing lid.
+ ⚠️ FIGURE-ONLY TEACHING: the DIRECTION of the Bell's phenomenon rotation is
+ stated in the prose, but the sketch is the only place it is shown, and it is
+ the chapter's only hand-drawn annotation.]
+
+
+================================================================================
+PAGE 81 (PDF 83) — Lagophthalmos aetiology 4–5 and treatment (LAST PAGE)
+================================================================================
+
+  4. Medication effect (particularly sedatives or neuromuscular blockers):
+     • Patients in intensive care units (ICU) and critical care settings have
+       an increased risk of developing exposure keratopathy.
+     • The incidence of lagophthalmos in sedated patients in the ICU is high
+       (range is between 21-75% and has partly been attributed to the sedative
+       and neuromuscular blocking agents commonly used in this setting.
+       [The opening parenthesis is never closed in the original.]
+     • Sedatives and neuromuscular blockers interfere with the blink reflex
+       that is responsible for adequate distribution of the tear film over the
+       cornea.
+     • They also negatively affect Bell's phenomenon.
+     • All those factors in addition to positive pressure ventilation, high
+       flow oxygen rates through nebulizers or face masks, fluid imbalances and
+       increased vascular permeability can lead to conjunctival oedema and
+       subsequent lagophthalmos.
+
+  5. Functional (GA, unconsciousness) → Tutorial
+     ⚠️ TUTORIAL MARKER, INLINE — but it wraps a WHOLE NUMBERED AETIOLOGY. Skip
+        the marker and the aetiology list loses its fifth item entirely.
+
+⚠️ 21-75 % IS THE CHAPTER'S ONLY EPIDEMIOLOGICAL RANGE and the only percentage
+   printed anywhere on printed 70–81.
+
+Treatment:   (Aim is to protect the cornea)
+
+  • Prophylactic extensive lubrication with artificial tears (preferably with
+    preservative-free eye drops especially in cases that are expected to last
+    for a long time)
+  • Long-acting agents such as artificial tear gel and ointments at bedtime
+  • Treatment of associated corneal exposure or ulceration.
+  • Overnight tapping of the lids to close the eye.
+  • Tarsorrhaphy (surgical suturing of the upper and lower lids to narrow the
+    palpebral fissure and reduce exposure)
+  • Gold weight implantation in the upper lid.
+
+[FRAMED BOX, blue border, at the foot of the page:]
+    Treatment from Tutorial
+    A. Temporary measures:
+       • Artificial tears
+       • At bedtime: ointment and tapping of the lids by strips of adhesive
+         plaster
+    B. Permanent measures:
+       o Lateral tarsorrhaphy & medial canthoplasty
+    C. Treatment of the cause
+  ⚠️ TUTORIAL MARKER, form (c) — a whole framed box. It contributes two named
+     operations, LATERAL TARSORRHAPHY and MEDIAL CANTHOPLASTY, that the body
+     text does not print (the body text has plain "Tarsorrhaphy"), and it is
+     the chapter's ONLY temporary/permanent treatment split.
+
+[FIGURES, a three-photograph row above the box; the first is captioned
+ "Fig (5-12) Lagophthalmos":
+   Fig (5-12) — a patient attempting to close both eyes; the left eye remains
+     widely open with the globe exposed and rotated up, the right closes fully.
+   (uncaptioned) — an elderly patient on attempted closure, the right eye
+     showing an open strip with the globe rolled upward — Bell's phenomenon
+     visible.
+   (uncaptioned) — an elderly patient with both eyes forcibly closed, the left
+     showing a residual gap at the lid margin.
+ ⚠️ FIGURE-ONLY TEACHING: the SECOND photograph is the only image in the book's
+ eyelid chapter that actually shows Bell's phenomenon happening in a patient —
+ the upward-rolled globe seen through the incompletely closed fissure.]
+
+[END OF CHAPTER 5. Printed 82 is the opener of chapter 6, Conjunctiva.]
+
+
+================================================================================
+NOT COVERED BY THIS CHAPTER — verified absent, printed 70–81
+================================================================================
+
+Each line below was searched for across all twelve pages, including every figure
+caption and in-figure label. "Absent" means the term does not appear at all.
+
+  ⚠️ THE BIG ONE:
+  - EYELID MALIGNANCIES — ABSENT AS A TOPIC, despite being promised by the
+    chapter's own objectives flowchart and by its own "3. neoplasms" category
+    on printed 72. Basal cell carcinoma, BCC, rodent ulcer, squamous cell
+    carcinoma, sebaceous gland carcinoma, melanoma, Mohs surgery, and any
+    lid-reconstruction technique are ALL absent. The single oncological clause
+    in the chapter is "biopsied to exclude an underlying malignancy (meibomian
+    gland carcinoma)" inside the chalazion entry, printed 73.
+    → The book's own malignancy chapter is 17 (printed 214–217), UNREAD.
+
+  - Benign lid LUMPS other than chalazion and xanthelasma — ABSENT. No
+    papilloma, no cyst of Moll or Zeis (hidrocystoma), no molluscum
+    contagiosum, no naevus, no capillary or cavernous haemangioma, no
+    keratoacanthoma, no cutaneous horn.
+  - Blepharospasm, hemifacial spasm, botulinum toxin — ABSENT.
+  - Dermatochalasis as an entity — ABSENT as a section; the word appears once,
+    only as a cause of PSEUDOptosis (printed 75). Blepharoplasty appears once,
+    only as a cause of facial nerve damage (printed 80).
+  - Blepharophimosis / blepharophimosis-ptosis-epicanthus inversus syndrome,
+    telecanthus, ankyloblepharon, coloboma of the lid, distichiasis,
+    euryblepharon — ABSENT. (Epicanthus inversus is named, printed 79, but only
+    as a lower-lid variant of epicanthus.)
+  - Marcus Gunn jaw-winking phenomenon, synkinetic ptosis — ABSENT.
+  - Ptosis MEASUREMENTS beyond the 2 mm definition — ABSENT. No margin-reflex
+    distance (MRD1/MRD2), no palpebral fissure height in mm, no levator
+    function graded in millimetres, no phenylephrine test, no ice-pack test,
+    no Fasanella–Servat / Müller muscle conjunctival resection procedure.
+  - Lid retraction signs and management — ABSENT beyond four lines: no
+    Dalrymple sign, no von Graefe sign, no Kocher sign, no lid-lengthening
+    surgery, no Müllerectomy.
+  - NAMED entropion or ectropion OPERATIONS — ABSENT. Both sections say only
+    "Surgical treatment". No Wies procedure, no Quickert sutures, no lateral
+    tarsal strip, no medial spindle, no everting sutures, no skin graft.
+  - Preseptal vs orbital cellulitis as a taught comparison — ABSENT here.
+    "Cellulitis of the skin of the lid" appears once, in the lid-swelling cause
+    table (printed 79). (Preseptal cellulitis is named in ch.4, printed 67.)
+  - Herpes zoster ophthalmicus, Hutchinson's sign, eyelid herpes simplex —
+    ABSENT.
+  - Phthiriasis palpebrarum / lice, Demodex — ABSENT. (Demodex is not named as
+    a cause of blepharitis anywhere.)
+  - Eyelid TRAUMA and lid laceration repair — ABSENT as a section. "Lacerated
+    wounds of the eyelids" appears once, only as a cause of cicatricial
+    ectropion (printed 78). The book's trauma chapter is 18, UNREAD.
+  - Lid margin / lash terminology beyond the four defined: madarosis, poliosis,
+    trichiasis and collarettes are defined; distichiasis and tylosis are
+    ABSENT.
+  - DRUG DOSES, STRENGTHS, DURATIONS or FOLLOW-UP INTERVALS — ABSENT
+    THROUGHOUT. Not one concentration, dose, frequency, course length or review
+    period is printed anywhere in the twelve pages. The only numbers in the
+    whole chapter are "5 layers", "two leaflets", "more than 2 mm", "4th to 5th
+    decades of life" and "21-75%".

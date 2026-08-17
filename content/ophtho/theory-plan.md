@@ -718,3 +718,68 @@ carry one of these facts where it naturally belongs — a vitreous sign inside t
 drug inside glaucoma — it is written there, cited, as it always would have been. The ruling forbids
 **new chapters**, not facts that fall inside existing ones. Do not go hunting to smuggle the
 material in either; that would be reversing the decision by other means.
+
+---
+
+## Book chapters read — running log
+
+| Ch | Title | Printed | pp | Weight | Cache words | Feeds |
+|---|---|---|---|---|---|---|
+| 1 | Examination of the Eye | 2–44 | 43 | 3 % | *reading* | `op-intro`, `op-vissym`, `op-ant` |
+| 4 | Lacrimal System | 62–69 | 8 | 3 % | 4,709 | `op-lac` |
+| 5 | Eyelids | 70–81 | 12 | **6.5 %** | 7,244 | `op-lid` |
+| 6 | Conjunctiva | 82–95 | 14 | **6.5 %** | 6,871 | `op-conj` |
+| 7 | Sclera | 96–102 | 7 | 3 % | 3,030 | ✅ `op-sclera` (7 pp) |
+| 10 | Uveal Tract | 130–141 | 12 | 3 % | 4,672 | ✅ `op-uvea` (10 pp) |
+| 14 | Neuro-ophthalmology | 178–195 | 18 | **10 %** | 8,819 | ✅ `op-neuro` 7 · `op-neuro-motil` 8 · `op-neuro-optic` 11 |
+
+### ⚠️⚠️ CHAPTER 5 PROMISES MALIGNANCIES IN ITS OWN OBJECTIVES AND NEVER TEACHES THEM
+
+Its opening flowchart lists **Malignancies**; pages 70–81 contain **no BCC, no SCC, no sebaceous
+carcinoma, no melanoma and no lid reconstruction.** The single oncological clause in the chapter is
+*"exclude an underlying malignancy (meibomian gland carcinoma)"* inside the chalazion entry.
+
+**So the eyelid-tumour payload — including the register row that sends `op-red`'s lid tumours to
+`op-lid` — must come from ch.17 (printed 214–217, four pages), which is still unread.** This is the
+second source in this module to under-deliver its own stated scope, after `L20`'s "degenerations".
+**A chapter's own objectives list is a claim, not an inventory.**
+
+Entropion and ectropion likewise name **no operation** — four types each, and no procedure.
+
+### ⚠️ THE BOOK DOES NOT SUPERSEDE `L9` — the two teach DIFFERENT tests
+
+`op-lac` is owed four register rows promising **Jones I and Jones II**, the **tear-film layer
+thicknesses** and the **accessory-gland eponyms**. Checked against ch.4 by the reader:
+
+- **`Jones` appears nowhere in the chapter.** The book teaches **four different drainage tests** —
+  Regurge, fluorescein dye disappearance, lacrimal probing, lacrimal irrigation (p.66) — with a full
+  result→diagnosis map including the hard/soft stop and the three causes of a positive regurge.
+- **The three tear-film layers are there (p.63) with sources and functions, and NO thicknesses.**
+- **Krause is absent from both chapters.** **Wolfring** survives once, as a *figure label only*, in
+  the ch.5 eyelid cross-section beside the glands of Zeis and Moll.
+
+**Consequence:** those three payloads exist nowhere except the **dozen highlights of the 2026-08-16
+`L9` calibration read, preserved in this file's §"Calibration read"** (lines with the 0.1 / 8 /
+0.2 µm thicknesses, the Krause–Wolfring–Manz–Zeis–Moll labels and both Jones mappings). They are
+real, they were read from the deck, and the transcription was never written. **`op-lac` writes the
+book's four tests as the primary account and may cite the L9 highlights as the lecture's own
+version — but the L9 33-page re-read is NOT retired by the book.** It is simply no longer urgent,
+because the book covers the topic the exam is set from.
+
+### Other findings from ch.4 and ch.5
+
+- **⚠️ The single most valuable figure-only item so far:** ch.5 p.76 prints the **rule for choosing a
+  ptosis operation — levator resection where levator function is good, frontalis sling where it is
+  poor — ONLY in the figure headers.** The prose says merely *"Surgical (levator resection,
+  frontalis sling, etc)"*. Same shape on p.78, where the trichiasis operation exists only as two
+  hand-drawn panels over the word "surgery". **Three chapters in a row have now hidden a decision
+  rule in a figure.**
+- **Figure numbering is broken INSIDE a chapter, not just between chapters:** `Fig (4-1)` and
+  `Fig (5-1)` **do not exist**, and `Fig (5-12)` prints **two pages after** `Fig (5-13)`. The
+  book-map's correction stands and hardens: **never use a figure number as an index.**
+- **Ch.4 contradicts itself on where the nasolacrimal duct drains** — *"behind the inferior
+  turbinate"* (p.63), *"under the inferior turbinate"* (p.66), while DCR connects the sac to the
+  **middle meatus** (p.67). All three transcribed verbatim, none reconciled — the chapter owes the
+  reader a note, not a silent fix.
+- **Ch.5 prints five numbers in its entire twelve pages** and no drug dose, duration or follow-up
+  interval anywhere. Expect `op-lid` to need tagged gap-fills for anything quantitative.

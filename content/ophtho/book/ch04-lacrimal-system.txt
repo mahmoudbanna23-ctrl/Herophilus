@@ -1,0 +1,696 @@
+SOURCE: Semester 8\Opthalmo\Theoritical\Books\ophthalmology.pdf
+================================================================================
+BOOK:      "OPHTHALMOLOGY WITH TUTORIALS" (inside title, PDF p.3) / cover reads
+           "OPHTHALMO-OLOGY", "5 / Fifth Year".
+AUTHOR:    BY HEALIX TEAM (no named editor, no edition, no copyright page).
+CHAPTER:   4 — Lacrimal System
+PRINTED:   pp. 62–69   (8 pages)
+PDF:       pp. 64–71
+OFFSET:    ⚠️ PDF page = printed page + 2. Verified across the book
+           (content\ophtho\book-map.md) and re-confirmed here: PDF 64 carries
+           footer "62", PDF 71 carries footer "69".
+CITE AS:   ophthalmology.pdf p.<PRINTED>  — the PRINTED number. Every citation
+           below is a printed page number.
+WEIGHT:    3 % — the book's own "Relative weight in %" column, contents page.
+READ:      2026-08-18, rendered at 150 dpi page-by-page (portrait A4 book text).
+           One low-resolution in-photo annotation re-cropped at 300 dpi.
+           No source file was modified, renamed, moved or deleted.
+
+--------------------------------------------------------------------------------
+⚠️ STRUCTURAL FINDINGS — read before using this cache
+--------------------------------------------------------------------------------
+
+⚠️ 1. THE CHAPTER IS FIVE TOPICS, exactly matching its objectives flowchart:
+      Tear Film · Dry eye · Epiphora · Dacryocystitis · Dacryoadenitis.
+      There is NO separate anatomy section — anatomy is delegated (see 3).
+
+⚠️ 2. THE TUTORIAL MARKER appears in this chapter in FOUR physical forms.
+      The contents page rule is: "In this book, anything we put (Tutorial) or
+      (T) beside / before it , study in round & skip in final".
+        (a) a whole framed side-box whose last words are "→ Tutorial"
+            (printed 64: Meibomian gland dysfunction box);
+        (b) a whole framed box fed by an arrow labelled "Tutorial"
+            (printed 65: the Tear breakup time test box);
+        (c) a whole titled block explicitly labelled
+            "Tests for lacrimal drainage system:  (from tutorial. not in the book)"
+            (printed 66) and "+ from tutorial" (printed 69);
+        (d) an INLINE clause ending "→ Tutorial" or "(Tutorial)" inside an
+            otherwise core sentence (printed 64 ×2, printed 66, printed 67,
+            printed 69).
+      Form (d) is the dangerous one — it marks a single clause inside an
+      otherwise examinable bullet. Every occurrence is recorded in place below.
+      ⚠️ NOTE: the whole four-test diagnostic block on printed 66 — regurge test,
+      fluorescein dye disappearance test, lacrimal probing, lacrimal irrigation —
+      is marked "from tutorial. not in the book". It is the chapter's only
+      systematic account of lacrimal drainage testing and it is tutorial-flagged.
+
+⚠️ 3. THE CHAPTER DELEGATES THREE THINGS to other chapters, in prose, without
+      page numbers:
+        - lacrimal anatomy → "(Please refer to the anatomy section in chapter
+          one for more details)", printed 63;
+        - fluorescein dye evaluation → "(Refer to drugs chapter)" [ch.20],
+          printed 66.
+      So a full lacrimal app chapter needs ch.1 and ch.20 read too.
+
+⚠️ 4. FIGURE NUMBERING EXISTS IN THIS CHAPTER but is incomplete: Fig (4-2),
+      Fig (4-3), Fig (4-4) are printed. **No "Fig (4-1)" appears anywhere on
+      printed 62–69.** Many other figures in the chapter carry plain word
+      captions with no number, or no caption at all. This confirms the book-map
+      correction: figure numbering is inconsistent, and here it is inconsistent
+      WITHIN a chapter.
+
+⚠️ 5. ONE INTERNAL CONTRADICTION, TRANSCRIBED AS PRINTED, NOT RESOLVED:
+      printed 63 says tears flow "into the nasal cavity, behind the inferior
+      turbinate"; printed 67 defines DCR as connecting "the lacrimal sad [sic]
+      and the middle meatus of the nasal cavity". Both are recorded verbatim
+      below. No fact here is supplied from outside the book.
+
+⚠️ 6. LEGIBILITY: nothing was illegible at 150 dpi. One red annotation baked
+      into a low-resolution photograph (printed 66) was re-cropped at 300 dpi
+      and resolved; it is transcribed with a note. There is no "[illegible]"
+      anywhere below.
+
+⚠️ 7. THE FOUR THINGS THIS CHAPTER WAS SEARCHED FOR ON PURPOSE — result:
+      - Jones I / Jones II dye tests: **NOT IN THE CHAPTER.** The words "Jones"
+        and "primary/secondary dye test" do not appear. The chapter's drainage
+        tests are the four in the tutorial box on printed 66.
+      - Tear film three layers: PRESENT (printed 63) — but **NO THICKNESSES ARE
+        GIVEN.** Not one micrometre figure anywhere.
+      - Accessory lacrimal gland eponyms (Krause / Wolfring): **NOT NAMED HERE.**
+        Printed 63 says only "the accessory lacrimal glands in the conjunctiva".
+        "Gland of Wolfring" appears once in the whole book region read — as a
+        LABEL in the eyelid cross-section figure in ch.5, printed 71. "Krause"
+        appears nowhere in ch.4 or ch.5.
+      - Dacryocystitis: PRESENT AND FULL (acute + chronic, printed 67–68).
+      - Canaliculitis: **NOT IN THE CHAPTER.** The word does not appear.
+      - Regurgitation test: PRESENT — as "Regurge test" (printed 66, tutorial-
+        flagged) and "positive regurge test" (printed 68).
+      - Canalicular laceration repair with intubation: **NOT IN THE CHAPTER.**
+        Silastic intubation IS taught, but only as step (c) of CONGENITAL NLD
+        obstruction management (printed 67), never for a laceration.
+
+
+================================================================================
+PAGE 62 (PDF 64) — CHAPTER OPENER
+================================================================================
+
+Lacrimal System                                  [blue underlined serif title]
+
+[FIGURE, uncaptioned, decorative: a stylised eye. The lacrimal gland is drawn in
+ red above and lateral to the upper lid with several ducts entering the upper
+ fornix; the lacrimal sac and nasolacrimal duct are drawn in red at the medial
+ canthus running down into a separately drawn nose profile below. It is the only
+ place in this chapter the whole secretory-to-excretory route is drawn as one
+ continuous picture.]
+
+OBJECTIVES
+
+[FLOWCHART of blue boxes. Root box:]
+
+    Lacrimal system
+    ├── Tear Film
+    ├── Dry eye
+    ├── Epiphora
+    ├── Dacryocystitis
+    └── Dacryoadenitis
+
+[No box carries a sub-list. All five are leaf boxes.]
+
+
+================================================================================
+PAGE 63 (PDF 65) — Tear film · Composition of the lacrimal system
+================================================================================
+
+The tear film consists of three layers:                       [section heading]
+
+  1. Outer oily layer:
+      • Secreted by the Meibomian glands.
+      • Its main function is to prevent/decrease tear evaporation
+
+  2. Middle Aqueous (watery) layer:
+      • It forms the main bulk of the tear film
+      • Secreted from the main lacrimal gland as well as the accessory lacrimal
+        glands in the conjunctiva.
+      • There are two types of tear secretion:
+          – Basic secretion: constant to keep the ocular surface lubricated all
+            the time
+          – Reflex secretion: associated with ocular irritation or emotion
+
+  3. Inner mucous layer:
+      • Secreted by the conjunctival goblet cells
+      • Helps maintain the adherence and stability of the tear film on the
+        ocular surface, especially the cornea.
+
+⚠️ NO LAYER THICKNESS IS PRINTED. The three layers are named, sourced and given
+   functions; no micrometre value, no percentage, no relative-thickness
+   statement appears.
+
+[FIGURE, left, uncaptioned apart from internal labels: an eye in profile with a
+ wedge expanded out of the cornea showing the tear film as three coloured
+ bands. Labels printed on the figure: "Tear Film" (bracket over the whole
+ wedge) · "Cornea" · "Mucin Layer" · "Aqueous Layer" · "Lipid Layer".
+ ⚠️ FIGURE-ONLY TEACHING: the figure gives the layer ORDER outward from the
+ cornea (mucin → aqueous → lipid) and shows the aqueous band as much the
+ thickest of the three. The prose numbers them in the OPPOSITE order (oily
+ first) and says only "main bulk"; the picture is where the spatial
+ arrangement lives. The figure also prints "Mucin Layer", where the prose says
+ "mucous layer".]
+
+[FIGURE, right, in a bordered panel headed:  "Lacrimal Apparatus Notes ->"
+ A line drawing of the right eye and lacrimal apparatus. Every printed label,
+ in the order they appear around the drawing:
+   Orbital part of lacrimal gland
+   Palpebral part of lacrimal gland
+   Levator palpebrae superioris
+   Lacrimal punctum
+   Lacrimal canaliculus
+   Lacrimal sac
+   Lacrimal ducts
+   Conjunctival sac
+   Nasolacrimal duct
+   Lacrimal fold (valve of Hasner)
+   Inferior meatus of nose
+ ⚠️ FIGURE-ONLY TEACHING, AND IT IS SUBSTANTIAL. Four items exist ONLY in this
+ figure and nowhere in the chapter's prose:
+   (a) the lacrimal gland's division into an ORBITAL PART and a PALPEBRAL PART,
+       separated by the levator palpebrae superioris;
+   (b) the eponym VALVE OF HASNER for the lacrimal fold at the lower end of the
+       nasolacrimal duct — the only valve named anywhere in the chapter;
+   (c) the drainage endpoint labelled "Inferior meatus of nose";
+   (d) the multiple lacrimal ducts entering the conjunctival sac.
+ None of (a)–(d) is stated in words on this page or any later page of ch.4.]
+
+The lacrimal system is composed of two main parts:             [section heading]
+
+1. Secretory:
+   ▪ Composed of the main lacrimal gland, the accessory lacrimal glands,
+     conjunctival goblet cells and the Meibomian glands.
+
+2. Excretory:
+   ▪ Tears drain from the ocular surface through the upper and lower lacrimal
+     puncta via the superior and inferior canaliculi (the presence of a common
+     canaliculus is not uncommon) into the lacrimal sac.
+   ▪ From the lacrimal sac, tears flow through the nasolacrimal duct into the
+     nasal cavity, behind the inferior turbinate.
+     (Please refer to the anatomy section in chapter one for more details)
+
+
+================================================================================
+PAGE 64 (PDF 66) — DRY EYE DISEASE (DED) — definition and aetiology
+================================================================================
+
+Dry Eye Disease (DED)                                    [banner heading]
+
+  – Dry eye disease is one of the most common problems affecting the general
+    population.
+  – It can cause problems that range in severity from mildly irritating to
+    debilitating.
+  – DED is a general term that describes the state of the ocular surface in
+    response to a breakdown of its naturally coating tear film.
+  – DED is a major reason for visits to ophthalmologists.
+  – Its prevalence varies widely depending on the population studied, their
+    geographic location, urbanization of communities and the criteria upon
+    which DED is defined and assessed.
+  – The prevalence is estimated to range from 8%-40%.
+  – It is quite common (usually in a mild form) above the age of 40 (even in
+    otherwise healthy individuals)
+
+Aetiology:                                                    [section heading]
+
+1. Aqueous tear deficiency:
+
+   Sjögren Syndrome ( Keratoconjunctivitis Sicca [KCS] ):
+     • Has an autoimmune aetiology
+     • It is characterised by dry mucous membranes throughout the body.
+     • It can be either primary or secondary to a variety of rheumatological
+       conditions (e.g., Rheumatoid arthritis, systemic lupus erythematosus,
+       ... etc).
+     • Lacrimal gland infiltration in sarcoidosis can also result in reduced
+       tear production
+
+   Non- Sjögren Syndrome causes:      [printed as a two-column list; both
+                                       columns transcribed in printed order]
+     o Allergies (especially ocular and nasal allergies)
+     o Decreased hormones associated with aging
+     o Pregnancy and associated hormonal changes
+     o Thyroid eye conditions (can be due to evaporative element too)
+     o Some medications e.g. ( psychiatric medicines, over the counter (OTC)
+       cold medicines, antihistamines, beta-blockers, pain relievers, sleeping
+       pills, diuretics, hormonal replacement, and oral contraceptives)
+     o Chemical exposures / injuries to the eyes
+     o Eye surgery
+     o ↓ corneal sensation :
+         - Contact lens use
+         - Neurologic conditions e.g., trigeminal nerve dysfunction
+         - Post refractive surgery ( LASIK or Photorefractive Keratectomy
+           [PRK] ): typically, transient but can become chronic in some
+           individuals
+     o Diabetes
+     o Vitamin A deficiency (rare in developed countries except in certain
+       diseases such as Crohn's)
+
+2. Evaporative dry eye disease:
+     • Thyroid eye disease with lid retraction, proptosis, infrequent blinking
+       and/or lagophthalmos
+     • Eyelid inflammation (blepharitis)
+     • Infrequent blinking, associated with staring at computer or video
+       screens (nowadays these are the most frequent contributors to DED)
+       →(computer vision syndrome or digital eye syndrome .. T).
+       ⚠️ TUTORIAL MARKER, INLINE, form (d) — the marker covers only the two
+          syndrome NAMES; the rest of the bullet is core text.
+     • Environmental (dusty, windy, hot/dry)
+     • Neurologic conditions e.g., stroke, Bell's palsy, Parkinsonism
+     • Exposure keratitis (eg., lagophthalmos)
+     • Mask-associated dry eye (MADE) became more prevalent in the COVID-19 era.
+
+     [FRAMED SIDE-BOX, blue border, sitting beside the evaporative list:]
+       + Meibomian gland dysfunction (Posterior blepharitis) → Tutorial
+       ⚠️ TUTORIAL MARKER, form (a) — a whole framed box.
+
+3. Mixed aetiologies:  common
+
+
+================================================================================
+PAGE 65 (PDF 67) — DED clinical picture and treatment
+================================================================================
+
+Clinical picture:                                             [section heading]
+
+Symptoms:
+  • Foreign body sensation or grittiness of the eyes.
+  • Burning, stinging, and itching.
+  • Redness
+  • Tearing (the eyes become dry to an extent that reflex tearing is stimulated)
+  • Discharge (mucous discharge accumulates on the lids during sleep)
+  • Blurry or fluctuating vision (made worse when reading, using the computer,
+    watching television, driving, or playing video games)
+  • Light sensitivity
+  • Heaviness of the eyelids
+  • Eye fatigue
+
+Signs:
+  • Decreased tear film breakup time (TBUT)
+    normally more than 10 seconds
+    (if less, it is an indication of an unstable tear film)
+    ─── [arrow labelled "Tutorial"] ──▶ [FRAMED BOX, blue border:]
+        ⚠️ TUTORIAL MARKER, form (b) — an arrow labelled "Tutorial" pointing
+           from the TBUT bullet into a whole framed box:
+        Tear breakup time test
+          ▪ Fluorescein (yellow)
+          ▪ Cobalt blue light (yellow + blue = green)
+          ▪ Time from complete blink to appearance of the first dry spot
+            (black spot)
+          ▪ Normal  ≥ 10 sec
+  • Ocular surface staining with fluorescein sodium dye will show punctate
+    epithelial erosions (superficial punctate keratopathy [SPK]) in severe
+    cases.
+  • Complications may be seen like corneal erosions and/or scarring
+
+[FIGURES, three uncaptioned slit-lamp photographs in a row:
+  (1) green fluorescein staining over a cornea, diffuse punctate uptake —
+      superficial punctate keratopathy;
+  (2) cobalt-blue view with a broad green fluorescein-stained tear meniscus and
+      a broken tear film;
+  (3) cobalt-blue view of a quiet eye with a thin stained tear strip.
+ None carries a caption or a figure number. They illustrate the fluorescein
+ findings the prose has just named; they teach nothing the prose omits.]
+
+Treatment:                                                    [section heading]
+
+1. Medical:
+   a. Artificial tears (with preservatives or preservative-free in severe cases)
+      N.B: Long term use of artificial tears with preservatives should be
+      avoided .
+   b. Longer acting agents such as artificial tear gel and ointments at bedtime.
+   c. Cyclosporine A 0.05% eye drops (increase tear production)
+   d. Topical steroids for short durations help control the inflammatory aspect
+      of the disease.
+
+2. Interventional:
+   a. Punctal plugs insertion (to prevent tear drainage)
+   b. Lid tapping overnight or tarsorrhaphy (suturing upper and lower lids
+      together to make the palpebral fissure narrower and reduce the surface
+      area exposed to evaporation) in severe cases of lagophthalmos.
+
+3. Treatment of the cause:  e.g., blepharitis
+
+⚠️ THE ONLY DRUG STRENGTH IN THE WHOLE CHAPTER is Cyclosporine A 0.05%. No
+   other concentration, dose, frequency or duration is printed anywhere in
+   ch.4 — "short durations", "bedtime" and "long term … avoided" are as
+   specific as the book gets.
+
+
+================================================================================
+PAGE 66 (PDF 68) — EPIPHORA — definition, causes, diagnosis
+================================================================================
+
+Epiphora                                                 [banner heading]
+
+Definition:
+Excessive watering of the eye with the overflow of tears at the lid margin as a
+result of insufficient tear drainage.
+
+Causes:                                                       [section heading]
+
+1. Overproduction of tears:
+   Secondary to anterior segment diseases such as:
+     • Emotions and/or pain.
+     • Dry eye (reflex lacrimation)
+     • Ocular surface inflammation (conjunctivitis - keratitis - corneal
+       foreign body)
+     • Ocular surface irritation ( entropion - trichiasis)
+
+2. Decreased drainage of tears:
+   Due to a compromised lacrimal drainage system as in:
+     • Malposition of the lacrimal puncta (e.g. ectropion)
+     • Obstruction along any point of the lacrimal drainage system from the
+       puncta to the orifice of the nasolacrimal duct under the inferior
+       turbinate (eg., punctal stenosis, NLD obstruction→ Tutorial)
+       ⚠️ TUTORIAL MARKER, INLINE, form (d) — the marker covers only the
+          parenthetical examples "punctal stenosis, NLD obstruction"; the
+          obstruction bullet itself is core text.
+       ⚠️ NOTE: this line says the NLD orifice is UNDER THE INFERIOR TURBINATE,
+          consistent with printed 63 but not with the "middle meatus" of
+          printed 67. Recorded, not reconciled.
+     • lacrimal pump failure (functional obstruction) which may occur 2ry to :
+         o lower lid laxity (aging process) or
+         o weakness of the orbicularis muscle (e.g., facial palsy)
+
+Diagnosis:                                                    [section heading]
+  ⇨ Check for punctal occlusion, stenosis (using slit lamp), anterior segment
+    inflammation or irritation and for malposition of the puncta, lashes or
+    lids.
+  ⇨ Fluorescein dye evaluation of the patency of the lacrimal drainage system
+    (Refer to drugs chapter)
+
+Tests for lacrimal drainage system:    (from tutorial. not in the book)
+⚠️ TUTORIAL MARKER, form (c) — the heading itself declares the whole 2×2 boxed
+   block below to be tutorial material and NOT book material. The block is
+   nonetheless the chapter's only systematic account of lacrimal drainage
+   testing.
+
+TABLE — Tests for lacrimal drainage system (2 × 2 boxed grid, printed order)
++---------------------------------------+---------------------------------------+
+| 1. Regurge test                       | 2. Fluorescein dye disappearance test |
+|                                       |                                       |
+| • Pressure over lacrimal sac          | [no bulleted text — the cell carries  |
+| • +ve regurge :                       |  only a photograph, see figure note]  |
+|     o Patent upper lacrimal system    |                                       |
+|     o NLD obstruction                 |                                       |
+|     o Chronic Dacryocystitis          |                                       |
++---------------------------------------+---------------------------------------+
+| 3. Lacrimal probing                   | 4. Lacrimal Irrigation (Sac wash out) |
+|                                       |                                       |
+|   o Hard stop: no canalicular         |   o Canalicular obstruction: Reflux   |
+|     Obstruction                       |     of saline through the same        |
+|   o Soft stop: canalicular obstruction|     punctum.                          |
+|                                       |   o Nasolacrimal canal obstruction:   |
+|                                       |     Reflux through the other punctum  |
++---------------------------------------+---------------------------------------+
+
+⚠️ THIS TABLE IS THE CHAPTER'S ONLY RESULT-TO-DIAGNOSIS MAPPING. The three-way
+   +ve regurge interpretation, the hard-stop/soft-stop rule and the
+   same-punctum / other-punctum irrigation rule exist nowhere else in ch.4 —
+   and all of it is tutorial-flagged.
+
+[FIGURE inside cell 1, uncaptioned: close-up of a medial canthus during digital
+ pressure over the lacrimal sac, with mucopurulent material appearing at the
+ punctum — a positive regurge test.]
+
+[FIGURE inside cell 2, a frontal face photograph of a child with a red
+ annotation label baked into the image. Re-rendered at 300 dpi to read it; the
+ label is low-resolution but resolves as:
+   "After 5mins of dye instillation, the dye persists in the left conjunctival
+    sac indicating lacrimal drainage obstruction"
+ ⚠️ FIGURE-ONLY TEACHING: the 5-minute reading time and the interpretation rule
+ for the fluorescein dye disappearance test exist ONLY in this in-photo label.
+ Cell 2 has no body text at all. Transcribed at the limit of legibility —
+ "5mins" and "indicating" are the two words that were hardest to resolve.]
+
+[FIGURE inside cell 3, a reproduced two-panel line drawing from another book,
+ carrying its own foreign caption:
+   "Fig 2.12  (a) Hard stop; (b) soft stop"
+ Panel (a) shows a probe passed through the canaliculus striking the bony
+ medial wall of the sac; panel (b) shows the probe stopped soft within the
+ canaliculus, tenting the medial canthal tissue.
+ ⚠️ The caption "Fig 2.12" belongs to the SOURCE the picture was cut from, not
+ to this book — it is not this book's own figure numbering.]
+
+[FIGURE inside cell 4, uncaptioned: an elderly patient bent over a kidney dish
+ while a syringe with a lacrimal cannula irrigates the lower punctum.]
+
+[FIGURE, top right of page, uncaptioned: a cartoon of the character Tom (Tom
+ and Jerry) weeping copious tears — a decorative mnemonic for epiphora. It is
+ the only figure on the page that teaches nothing.]
+
+
+================================================================================
+PAGE 67 (PDF 69) — Epiphora treatment · DACRYOCYSTITIS — acute
+================================================================================
+
+Treatment:                                                    [section heading]
+
+  1. Treatment of causes of ocular surface irritation and lid malposition.
+  2. Infants with congenital nasolacrimal duct obstruction: (very Important)
+       a. Digital massage of the lacrimal sac with topical antibiotics before
+          the age of one year (85% resolve within the first year)
+       b. Nasolacrimal duct probing after the age of one year.  It can be
+          repeated only once if the first attempt was not curative.
+       c. If second probing fails, silastic intubation of the lacrimal passages
+          is done.
+       d. Dacryocystorhinostomy is indicated if intubation fails.
+  3. Dacryocystorhinostomy (DCR) (surgically connecting the lacrimal sad [sic]
+     and the middle meatus of the nasal cavity with placement of either
+     temporary or permanent tubes)
+
+N.B: Probing is not curative in adults.
+
+⚠️ THE NUMBERS ON THIS PAGE ARE THE CHAPTER'S MOST EXAM-SHAPED: 85 % resolve
+   within the first year · massage BEFORE age one · probing AFTER age one ·
+   probing repeatable ONLY ONCE · then intubation · then DCR. The escalation
+   ladder is four rungs and it is ordered.
+
+⚠️ "lacrimal sad" is printed; it is a typographical fault for "lacrimal sac".
+   Transcribed as printed with [sic], not corrected in place.
+⚠️ "middle meatus" is printed here; printed 63 and printed 66 both put the NLD
+   orifice at the INFERIOR meatus / under the inferior turbinate. Both recorded.
+
+[FIGURE, right of the treatment list, uncaptioned: a close-up of an infant's
+ medial canthus with a lacrimal probe held in forceps being introduced into
+ the lower punctum. Illustrates step (b).]
+
+Dacryocystitis                                           [banner heading]
+
+  • Acute or chronic infection of the lacrimal sac.
+  • It is usually secondary to Obstruction of the nasolacrimal duct.
+  • The most common organisms are staphylococci or streptococci.
+
+Clinical Features:                                            [section heading]
+
+A. Acute Dacryocystitis:
+   Symptoms:
+     • Pain, redness and swelling over the lacrimal sac below the medial
+       canthal area
+     • Epiphora
+     • Fever may be present
+
+   Signs:
+     – Very tender and tense swelling with overlying skin erythema.
+     – It can progress to abscess formation.
+     – Preseptal cellulitis may be present
+
+   Treatment:
+     ▪ Warm compresses and nasal decongestants.
+     ▪ Systemic and topical antibiotics.
+     ▪ Once the infection resolves, consider dacryocystorhinostomy DCR
+     ▪ For abscess : incision & drainage (Tutorial)
+       ⚠️ TUTORIAL MARKER, INLINE, form (d) — the abscess line is the ONLY
+          tutorial-flagged item inside an otherwise core treatment list, and it
+          is the chapter's only surgical drainage instruction.
+
+[FIGURE, captioned "Fig (4-2) Acute Dacryocystitis": a frontal photograph of
+ both eyes; the left medial canthal region carries a red, tense, well-defined
+ swelling extending below the medial canthal tendon onto the cheek, with skin
+ erythema. Shows the "below the medial canthal area" localisation the prose
+ states.]
+
+[FIGURE, second, captioned "Acute Dacryocystitis" (word caption, no number):
+ close-up of one eye with a large erythematous swelling at the inner canthus
+ and a small pointing/discharging area over its surface — an early abscess.
+ ⚠️ FIGURE-ONLY TEACHING: this is the only place the pointing abscess the
+ prose refers to is actually shown.]
+
+
+================================================================================
+PAGE 68 (PDF 70) — Chronic dacryocystitis · DACRYOADENITIS — aetiology
+================================================================================
+
+B. Chronic Dacryocystitis:
+   Symptoms:
+     • Chronic epiphora
+     • Chronic or recurrent unilateral conjunctivitis
+     • Painless lacrimal sac swelling (mucocele) at the inner canthus.
+   Signs:
+     – In the absence of mucocele, pressure on the lacrimal sac may result in
+       reflux of mucopurulent discharge from the lacrimal sac through the
+       punctum (positive regurge test)
+     – As in epiphora fluorescein dye evaluation of the patency of the lacrimal
+       drainage system can be implemented.
+   Treatment:
+       Dacryocystorhinostomy (DCR)
+
+⚠️ ACUTE-VS-CHRONIC IS TAUGHT BY CONTRAST, NOT BY TABLE. The discriminators the
+   book prints are: acute = painful/very tender/tense/fever/preseptal
+   cellulitis/abscess; chronic = PAINLESS mucocele + recurrent UNILATERAL
+   conjunctivitis + positive regurge. Treatment differs: acute = compresses +
+   decongestants + antibiotics, then DCR after resolution; chronic = DCR.
+
+[FIGURE, captioned "Fig (4-3) Chronic Dacryocystitis with mucocele formation":
+ close-up frontal photograph of an elderly patient's eyes; the right medial
+ canthal region carries a smooth, non-inflamed, rounded fullness below the
+ medial canthal tendon with normal overlying skin colour.
+ ⚠️ FIGURE-ONLY TEACHING: the ABSENCE of skin erythema — the visual difference
+ from Fig (4-2) — is shown here and never stated in words.]
+
+Dacryoadenitis                                           [banner heading]
+
+Acute or chronic inflammation of the lacrimal gland (Appears in the outer
+one-third of the upper lid).
+(It may be a sign of a more serious pathology underlying the inflammation)
+
+Aetiology:                                                    [section heading]
+
+  • Infections
+      – Most commonly viral Epstein-Barr virus.
+      – Less common viral causes include adenovirus,varicella zoster, herpes
+        simplex, rhinovirus, cytomegalovirus, or mumps.
+      – Less commonly bacterial and rarely fungal or parasitic
+
+  • Autoimmune disorders such as Thyroid Eye Disease, Sjogren's syndrome, etc.
+
+  • Other aetiologies include inflammatory causes such as non-specific orbital
+    inflammation (NSOI), sarcoidosis, or neoplastic.
+
+[No figure on the lower half of this page; the page ends with the aetiology
+ list and white space.]
+
+
+================================================================================
+PAGE 69 (PDF 71) — Dacryoadenitis: clinical features, investigations, treatment
+================================================================================
+
+Clinical Features:                                            [section heading]
+
+A. Acute dacryoadenitis:
+   Symptoms:
+     • Pain in the superolateral part of the orbit aggravated with eye
+       movements.
+     • Drooping of the upper lid with difficulty opening the affected eye.
+     • Red eye.
+     • Diplopia especially in up gaze or lateral gaze may be present.
+
+   Signs:
+     – Tenderness, oedema, erythema, and induration overlying the outer
+       one-third of the upper lid
+     – Ptosis with S-shaped deformity of the upper lid.
+       ─── [arrow] ──▶ [FRAMED BOX:]  pseudo ptosis in tutorial
+       ⚠️ TUTORIAL MARKER, form (b) — an arrow from the S-shaped-deformity sign
+          into a framed box. The box's whole content is the phrase
+          "pseudo ptosis in tutorial".
+     – Conjunctival injection
+     – Proptosis
+     – Fever and malaise may be present.
+
+B. Chronic dacryoadenitis:
+     • More common and may present as painless enlargement of the lacrimal
+       gland
+
+Investigations:                                               [section heading]
+
+  • Computed tomography (CT) scan or magnetic Resonance Imaging (MRI) of the
+    orbits with contrast.
+  • X-ray Chest if sarcoidosis is suspected.
+  • There are no specific laboratory tests (only done to diagnose an underlying
+    cause e.g.. autoimmune diseases)
+  • Biopsy for tissue diagnosis for atypical infections or refractory disease.
+
+Treatment:                                                    [section heading]
+
+  • Symptomatic treatment for viral dacryoadenitis.
+  • Bacterial dacryoadenitis will require systemic broad-spectrum antibiotics.
+  • Oral corticosteroids may be considered especially in idiopathic
+    dacryoadenitis.
+  • If chronic, treat the underlying disorder
+
+  [FRAMED BOX, blue border, centred below the treatment list:]
+    + from tutorial
+      o  Hot fomentation
+      o  Analgesics antipyretics
+  ⚠️ TUTORIAL MARKER, form (c) — a whole framed box headed "+ from tutorial".
+
+[FIGURE, top right, captioned "Acute Dacryoadenitis" (word caption, no number):
+ frontal photograph of both eyes; the left upper lid is swollen and erythematous
+ maximally over its OUTER third, with the lid margin drooping in an S-shape.
+ ⚠️ FIGURE-ONLY TEACHING: the S-shaped deformity is named in the prose but only
+ drawn here — the lateral-third-heavy swelling that produces the S is visible
+ in the photograph and described nowhere.]
+
+[FIGURE, lower right, captioned "Fig (4-4) Dacryoadenitis": frontal photograph
+ of both eyes in up-and-left gaze; the left upper lid is fuller laterally with
+ mild ptosis of its lateral half.]
+
+[END OF CHAPTER 4. Printed 70 is the opener of chapter 5, Eyelids.]
+
+
+================================================================================
+NOT COVERED BY THIS CHAPTER — verified absent, printed 62–69
+================================================================================
+
+Each line below was searched for across all eight pages, including every figure
+caption and in-figure label. "Absent" means the term does not appear at all.
+
+  - Jones I dye test / Jones II dye test / primary and secondary dye test —
+    ABSENT. The word "Jones" appears nowhere. The chapter's drainage tests are
+    regurge, fluorescein dye disappearance, probing, irrigation (printed 66),
+    and that whole block is tutorial-flagged.
+  - Tear film layer THICKNESSES (µm, or relative) — ABSENT. Layers named and
+    sourced; no measurement of any kind.
+  - Total tear volume, tear turnover rate, tear osmolarity, tear pH — ABSENT.
+  - Schirmer test (I or II), phenol red thread test, tear meniscus height,
+    tear osmolarity testing, matrix metalloproteinase-9 testing — ABSENT.
+    ⚠️ Notable: the chapter teaches TBUT as the dry-eye test and never mentions
+    Schirmer.
+  - Accessory lacrimal gland EPONYMS — Krause: ABSENT from ch.4 entirely.
+    Wolfring: ABSENT from ch.4; appears only as a figure label in ch.5
+    (printed 71). The chapter says only "the accessory lacrimal glands in the
+    conjunctiva".
+  - Canaliculitis — ABSENT. No mention of Actinomyces, canalicular concretions,
+    or canaliculotomy.
+  - Canalicular laceration and its repair / intubation for trauma — ABSENT.
+    Silastic intubation appears once, for congenital NLD obstruction only.
+  - Dacryocystocele / amniotocele / congenital lacrimal sac mucocele in the
+    newborn — ABSENT as a named entity (mucocele appears only as a feature of
+    chronic dacryocystitis in adults).
+  - Punctal agenesis / congenital punctal atresia, supernumerary puncta —
+    ABSENT.
+  - Lacrimal gland TUMOURS (pleomorphic adenoma, adenoid cystic carcinoma) —
+    ABSENT. "Neoplastic" is named once as an aetiology of dacryoadenitis with
+    no entity listed. Chapter 17 is the book's malignancy chapter.
+  - Lacrimal sac tumours — ABSENT.
+  - Dacryoscintigraphy, dacryocystography, nasal endoscopy — ABSENT.
+  - Endoscopic (endonasal) DCR vs external DCR, mitomycin C in DCR,
+    conjunctivodacryocystorhinostomy / Lester Jones tube — ABSENT. DCR is named
+    four times and never subclassified.
+  - Crocodile tears / gustatory lacrimation, lacrimal nerve or parasympathetic
+    secretomotor pathway, lacrimal reflex arc — ABSENT.
+  - Valve of Rosenmüller — ABSENT. Only the valve of HASNER is named, and only
+    as a figure label.
+  - The lacrimal pump MECHANISM (how the orbicularis moves tears) — ABSENT.
+    "Lacrimal pump failure" is named as a cause of epiphora with no explanation
+    of the pump itself.
+  - Antibiotic NAMES, doses or durations for dacryocystitis or dacryoadenitis —
+    ABSENT. "Systemic and topical antibiotics" / "systemic broad-spectrum
+    antibiotics" is as specific as the book gets. Cyclosporine A 0.05% is the
+    only strength printed in the chapter.
+  - Any follow-up interval — ABSENT. No review period is stated for any
+    condition in this chapter.
