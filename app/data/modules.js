@@ -83,7 +83,17 @@ const MODULES = [
       ['op-ret-dr','Diabetic retinopathy and the macula'],
       ['op-ret-vasc','Retinal vascular disorders'],
       ['op-ret','Retinal detachment'],
-      ['op-neuro','Neuro-ophthalmology'],
+      /* Split 2026-08-18, forecast BEFORE writing, on the BOOK's own four
+         Roman-numbered parts (ch.14, printed 178-195). Written as one chapter
+         it measured 28.5 estimated pages - the module's largest by far - and
+         it is the highest-weighted topic in the book at 10 % of the paper,
+         against 264 cached words in the two lectures that were meant to teach
+         it. Parts I and IV are joined because they are one axis, the afferent
+         pathway and what a lesion on it does to the field; L22's own title is
+         "Pupil and Visual pathway". */
+      ['op-neuro','Pupil, the visual pathway and field defects'],
+      ['op-neuro-motil','Ocular motility disorders'],
+      ['op-neuro-optic','The optic nerve'],
       ['op-systemic','Systemic Diseases'],['op-onc','Oncology'],['op-trauma','Trauma'],
       ['op-appear','Problems of Appearance'],['op-squint','Squint'],
       ['op-acute','Acute Visual Loss'],['op-white','The White Eye'],
