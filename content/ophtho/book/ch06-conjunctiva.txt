@@ -1,0 +1,1000 @@
+SOURCE: Semester 8\Opthalmo\Theoritical\Books\ophthalmology.pdf
+================================================================================
+BOOK:      "OPHTHALMOLOGY WITH TUTORIALS" (inside title, PDF p.3) / cover reads
+           "OPHTHALMO-OLOGY", "5 / Fifth Year".
+AUTHOR:    BY HEALIX TEAM (no named editor, no edition, no copyright page).
+CHAPTER:   6 — Conjunctiva
+PRINTED:   pp. 82–95   (14 pages)
+PDF:       pp. 84–97
+OFFSET:    ⚠️ PDF page = printed page + 2. Re-confirmed here: PDF 84 carries
+           footer "82", PDF 97 carries footer "95".
+CITE AS:   ophthalmology.pdf p.<PRINTED> — the PRINTED number. Every citation
+           below is a printed page number.
+WEIGHT:    6.5 % — the book's own "Relative weight in %" column on the contents
+           page. Joint 3rd-highest of the twenty chapters (with Eyelids, Cornea,
+           Glaucoma, Retina).
+READ:      2026-08-18, rendered at 150 dpi page by page (portrait A4 book text).
+           Three figure captions on printed 86 re-cropped at 300 dpi to check for
+           figure numbering; all three resolved and carry none. No source file was
+           modified, renamed, moved or deleted.
+
+--------------------------------------------------------------------------------
+⚠️ STRUCTURAL FINDINGS — read before using this cache
+--------------------------------------------------------------------------------
+
+⚠️ 1. OPHTHALMIA NEONATORUM IS **NOT TAUGHT** IN THIS CHAPTER. The phrase appears
+      exactly ONCE in the whole chapter, and only inside a FIGURE — the chlamydial
+      serotype flow-box on printed 91, whose right branch reads "Serotypes D → K →
+      Adult chlamydial (inclusion) Conjunctivitis / Ophthalmia neonatorum". There
+      is no heading, no organism list, no timing-by-organism table, no prophylaxis,
+      no treatment. If the module needs ophthalmia neonatorum, this chapter cannot
+      supply it — chapter 16 Paediatric Ophthalmology (printed 204–213) is the
+      obvious place to look and has NOT been read.
+
+⚠️ 2. THE TUTORIAL MARKER APPEARS IN FOUR PHYSICAL FORMS HERE, all recorded in
+      place below at clause granularity. The contents page states: "In this book,
+      anything we put (Tutorial) or (T) beside / before it , study in round & skip
+      in final".
+        (a) a whole framed box headed "Intro about allergic conjunctivitis From
+            Tutorial:" (printed 87) — the box is the entire allergic-conjunctivitis
+            overview including the classification tree and the clinical-picture
+            list;
+        (b) an inline arrow-clause "→ [T]" / "→ (T)" ending a bullet whose sentence
+            is otherwise ordinary book text (printed 85 ×2, 91 ×3, 95 ×1);
+        (c) a parenthetical "(tutorial)" / "(Tutorial)" inside a numbered list item
+            or a sentence (printed 86 item 4, 95 ×2);
+        (d) a dashed-border side box with the word "Tutorial" printed in a tab on
+            its top edge (printed 91 referral box, 95 anticoagulant box).
+      Form (b) is the dangerous one — on printed 91 it marks THREE separate
+      clauses inside the acute-bacterial symptom/sign lists.
+      ⚠️ NOTE: the printed-91 dashed "Tutorial" referral box is reproduced almost
+      verbatim as a CELL of the DD-of-conjunctivitis table on printed 94, where it
+      carries NO marker. The same content is tutorial in one place and core in
+      another. Do not propagate the marker to the table.
+
+⚠️ 3. NO "(++ Additional)" TAG ANYWHERE IN THIS CHAPTER. The variant chapter 7 used
+      does not recur here.
+
+⚠️ 4. THIS CHAPTER NUMBERS ITS FIGURES, BUT ONLY SOME OF THEM, AND THE SEQUENCE
+      HAS HOLES. Numbered: Fig 6-1 (printed 85), Fig 6-4 (88), Fig 6-5 (89),
+      Fig 6-6 (93), Fig 6-7 (94), Fig 6-8 (95). **Fig 6-2 and Fig 6-3 do not
+      appear anywhere in printed 82–95.** Roughly twenty other figures carry plain
+      unnumbered captions ("Cobblestone papillae", "Pinguecula (ppt)", "Trachoma
+      (ppt)"). This extends the book-map's 2026-08-18 correction: numbering is
+      inconsistent not only BETWEEN chapters but WITHIN one.
+
+⚠️ 5. SEVERAL CAPTIONS END IN "(ppt)" — "Trachoma (ppt)", "Bacterial conjunctivitis
+      (ppt)", "Viral conjunctivitis (ppt)", "Pinguecula (ppt)", "Pterygium (ppt)",
+      "Subconjunctival hemorrhage (ppt)", "Linear and stellate scars (ppt)",
+      "Arlt's line (ppt)". Recorded verbatim; the book does not define the tag. It
+      most plausibly means the image was taken from the lecture PowerPoint, but
+      that is an inference, not the book's statement.
+
+⚠️ 6. ONE ARABIC MARGINAL GLOSS: printed 95, beside the "2. Pterygium" heading —
+      "تيجي على الكورنيا" ("it comes onto the cornea"). Transcribed as printed.
+
+⚠️ 7. LEGIBILITY: nothing in this chapter was illegible at 150 dpi. There is no
+      "[illegible]" anywhere below.
+
+⚠️ 8. THE CHAPTER'S DRUG CONTENT IS CONCENTRATED IN TRACHOMA. Printed 93 is the
+      only page in the chapter carrying doses at all, and it carries four. Every
+      other treatment list names classes, or names drugs without doses.
+
+
+================================================================================
+PAGE 82 (PDF 84) — CHAPTER OPENER
+================================================================================
+
+Conjunctiva                                    [blue underlined serif title]
+
+[FIGURE, uncaptioned: a stylised open eye, the lower half of the sclera and lower
+ lid drawn solid red with red branching vessels crossing the white of the eye and
+ converging away from the limbus — a red eye with conjunctival injection. The
+ limbal ring and cornea are left pale/blue. Teaches, without saying so, the
+ injection pattern the chapter later calls "sparing the limbal area" on
+ printed 85.]
+
+OBJECTIVES:
+[FLOWCHART of blue rounded boxes. Root box:]
+
+    Conjunctiva
+    ├── Anatomy
+    ├── Conjunctivitis
+    │     ├── Allergic
+    │     │     • Seasonal
+    │     │     • Spring catarrh
+    │     │     • Atopic keratoconjunctivitis
+    │     ├── Viral
+    │     └── Bacterial
+    │           • Acute bacterial
+    │           • Adult chlamydial
+    │           • Trachoma
+    ├── conjunctival degeneration
+    │     ⇨ Pingueculum
+    │     ⇨ pterygium
+    └── Subconjunctival hemorrhage
+
+⚠️ The flowchart files TRACHOMA and ADULT CHLAMYDIAL under **Bacterial**, not under
+   a chlamydial branch of their own. The body text follows the same filing: printed
+   91–93 sit under the banner "Bacterial Conjunctivitis" as items 1, 2 and 3.
+
+
+================================================================================
+PAGE 83 (PDF 85) — CONJUNCTIVAL ANATOMY
+================================================================================
+
+[Banner:] Conjunctiva
+
+[FIGURE, large, top-left, uncaptioned: sagittal section through the upper and
+ lower lid and the anterior globe, colour-coded, with a key. Key labels, exactly:
+   Accessory lacrimal glands:
+     Glands of Krause
+     Glands of Wolfring
+   Bulbar conjunctiva            [pale orange rule]
+   Conjunctival fornix           [dark red rule]
+   Palpebral conjunctiva         [green rule]
+   Surface of the cornea (functions as a part of the conjunctival sac)  [blue rule]
+   Meibomian gland
+ ⚠️ FIGURE-ONLY TEACHING: the two accessory lacrimal glands (Krause, Wolfring) and
+ the statement that the corneal surface functions as part of the conjunctival sac
+ exist ONLY in this key. Neither is in the prose.]
+
+[FIGURE, inset right, captioned:] Structure of the Conjunctiva
+ [surface view of an eye with three leader labels: PALPEBRA CONJUNCTIVA,
+  BULBAR CONJUNCTIVA, CONJUNCTIVA FORNIX]
+
+[FIGURE, small, right of the bullets, uncaptioned: horizontal section of the orbit
+ and globe showing Tenon's capsule. Leader labels: Posterior Tenon's capsule ·
+ Anterior Tenon's capsule · Orbital septum · LM · SR · SO T · Conjunctiva · IR ·
+ IO. Teaches the Tenon's-capsule relationship the bulbar-conjunctiva bullet only
+ names in passing.]
+
+Conjunctival Anatomy:
+
+• The conjunctiva is a thin vascular mucous membrane that covers the surface of the
+  eye globe except for the cornea (**Bulbar conjunctiva**) and the back surface of
+  both upper and lower lids (**palpebral conjunctiva**).
+• The **palpebral conjunctiva** is firmly adherent to the tarsal plates in the lids.
+• The **bulbar conjunctiva** is loosely attached to the ocular surface (sclera and
+  its overlying connective tissue [**Tenon's capsule**]) except at the limbus
+  (corneoscleral junction) where it is firmly attached.
+• The palpebral and the bulbar conjunctiva meet superiorly and inferiorly in the
+  **superior fornix** and **inferior fornix** respectively.
+• The potential dead space (leading into nowhere) between the bulbar and the
+  palpebral conjunctiva when the lids are closed is called the **conjunctival sac**
+  (Conjunctival cul-de-sac)
+• The conjunctiva at the limbus hosts the **palisades of Vogt** which contain the
+  stem cells that provide regenerative cells to the corneal epithelium. Damage to
+  these structures results in corneal stem cell deficiency with corneal superficial
+  vascularization and conjunctivalization of the corneal epithelium.
+
+
+================================================================================
+PAGE 84 (PDF 86) — CONJUNCTIVAL HISTOLOGY · CONJUNCTIVITIS: DEFINITION, AETIOLOGY
+================================================================================
+
+Conjunctival Histology:
+
+• Transformation of the conjunctival non-keratinized epithelium (Composed of basal
+  cuboidal cells and overlying polyhedral cells and Goblet cells) → into the
+  non-Keratinized stratified squamous epithelium of the cornea takes place at the
+  limbus.
+• A similar transformation takes place at the lid margin for the palpebral
+  conjunctival epithelium into the keratinized stratified squamous epithelium of
+  the skin.
+
+[FIGURE A, uncaptioned: histological section, three labelled layers —
+  Epithelium · Adenoid layer · Fibrous layer.
+ ⚠️ FIGURE-ONLY TEACHING: the three-layer structure of the conjunctiva (epithelium,
+ adenoid layer, fibrous layer) is nowhere in the prose. It exists only here.]
+
+[FIGURE B, uncaptioned: sagittal outline of the conjunctival sac, labelled —
+  Superior fornix · Upper tarsal conjunctiva · Marginal conjunctiva · Lower tarsal
+  conjunctiva · Bulbar conjunctiva · Limbal conjunctiva · Corneal epithelium (not
+  drawn).
+ ⚠️ FIGURE-ONLY TEACHING: the regional subdivision naming MARGINAL, TARSAL and
+ LIMBAL conjunctiva. The prose names only bulbar, palpebral and fornix.]
+
+[FIGURE, third, uncaptioned: detailed conjunctival section labelled —
+  Gland of Krause · Fornical conjunctiva · Bulbar conjunctiva · Palpebral
+  conjunctiva · Goblet cells · Glands of Manz · Glands of Wolfring · Crypts of
+  Henle.
+ ⚠️ FIGURE-ONLY TEACHING AND TWO EPONYMS FOUND NOWHERE ELSE IN THE CHAPTER:
+ **Glands of Manz** and **Crypts of Henle**.]
+
+[Banner:] Conjunctivitis
+
+Definition:
+• Inflammation of the conjunctiva is known as conjunctivitis and is characterized by
+  dilation of the conjunctival vessels, resulting in hyperaemia and oedema of the
+  conjunctiva, typically associated with discharge.
+• The prevalence of conjunctivitis varies according to the underlying cause, which
+  may be influenced by the patient's age, as well as the season of the year.
+
+Aetiology:
+
+  Non-infectious causes:
+    a) Allergic:
+       The **most frequent cause** of conjunctivitis, affecting **15-40%** of the
+       population and is observed more frequently in the spring and summer.
+    b) Toxic (chemical):
+       - Some topical medications e.g., **Brimonidine**
+       - Exposure to smoke, irradiation, chemicals, or fumes from the surrounding
+         environment
+    c) Secondary to other disorders:
+       - Local: Dacryocystitis, dacryoadenitis, cellulitis.
+       - systemic causes: Immune-mediated diseases and neoplastic processes
+
+  Infectious causes:
+       Bacterial, viral, chlamydial, fungal, parasitic
+       (Viruses and bacteria are the most common infectious causes with viruses
+       being the leading cause of infectious conjunctivitis.)
+
+
+================================================================================
+PAGE 85 (PDF 87) — CLINICAL FEATURES 1–6
+================================================================================
+
+Clinical Features:
+
+1. **Foreign body sensation** with grittiness or feeling of sand in the eye
+
+2. **Discharge:**
+
+   [TABLE, four columns, kept as a table]
+
+   | Watery | Mucoid | Mucopurulent | Purulent |
+   |---|---|---|---|
+   | • Viral | • Allergic | (Mucopurulent conjunctivitis [MPC]) | Acute bacterial infection |
+   | • Allergic conjunctivitis | • Toxic (chemical) conjunctivitis & Dry eye | • Chlamydial conjunctivitis<br>• Acute bacterial infection | ⇨ **N.B:** Severe purulent discharge is suggestive of **gonococcal** conjunctivitis |
+
+   ⚠️ The "Mucopurulent" column header is printed in an amber-tinted cell and its
+      contents in blue; the abbreviation **MPC** is defined only here.
+   ⚠️ Acute bacterial infection is listed in BOTH the Mucopurulent and the Purulent
+      column. That is the book's own printing, not a transcription fault.
+   [A small cartoon of two red weeping eyes sits beside the table, uncaptioned.]
+
+3. **Red eye** (Conjunctival injection *sparing the limbal area*)
+4. **Conjunctival haemorrhages** (In some types of viral conjunctivitis and severe
+   bacterial conjunctivitis)
+5. **Chemosis** (conjunctival oedema)
+6. **Conjunctival membranes:**
+
+   [TABLE, two columns, kept as a table]
+
+   | True membrane | Pseudo-membrane |
+   |---|---|
+   | • Necrotic and granulation tissue infiltrates conjunctival epithelium (Firm adherence) **→ [T]** | • consists of coagulated exudates on the surface of the inflamed intact epithelium |
+   | • results in **bleeding** when peeling is attempted due to epithelial destruction and exposure of the underlying stroma | • **No bleeding** when peeled. |
+   | • **Causes:** Corynebacterium diphtheriae [membranous] conjunctivitis | • **Causes:** severe gonococcal infection **→ [T]** |
+
+   ⚠️ TUTORIAL MARKER, form (b), TWICE INSIDE THIS TABLE. The first cell of the
+      True-membrane column and the Causes cell of the Pseudo-membrane column each
+      end "→ [T]". The bleeding rows carry no marker. So: the DEFINITIONS by
+      adherence and the gonococcal cause are tutorial; the peel-bleeding
+      discriminator is core.
+
+   [FIGURES filling the bottom two rows of the same table. Left column: two clinical
+    photographs of an everted lower lid with a dense adherent grey-red membrane,
+    the upper one letter-marked "B", both uncaptioned. Right column: a photograph
+    of a lid being everted with a thick yellow-white sheet, captioned
+    **Fig 6-1: Pseudo membranous conjunctivitis**; below it two further
+    photographs, one letter-marked "A", showing a whitish membrane at the lid
+    margin and a lid being peeled with forceps, both uncaptioned.
+    ⚠️ The figures are the only place the chapter SHOWS what a membrane looks like;
+    the prose gives no colour or texture description.]
+
+
+================================================================================
+PAGE 86 (PDF 88) — CLINICAL FEATURES 7–9: FOLLICLES, PAPILLAE, LYMPHADENOPATHY
+================================================================================
+
+7. **Conjunctival follicles:**
+   o Multiple discrete slightly elevated lesions with blood vessels running around
+     them
+   o Consist of leucocytic infiltration (mainly **lymphocytes**)
+   o Lymphocytic infiltration may, also, take place deep to the corneal epithelium
+     (corneal subepithelial infiltrates as in epidemic keratoconjunctivitis caused
+     by **Adenovirus** infection)
+   o **Causes:**
+     1. Viral conjunctivitis
+     2. Chlamydia conjunctivitis (trachoma)
+     3. Hypersensitivity to topical medications (e.g., Brimonidine)
+     4. *Folliculosis in children* **(tutorial)**
+        ⚠️ TUTORIAL MARKER, form (c) — marks list item 4 only. Items 1–3 are core.
+
+   [FIGURES, right column, captioned:] Follicular conjunctivitis (A) viral
+   (B) trachomatous
+    [(A) everted upper lid with rows of small pale follicles; (B) everted lid with
+     larger, more confluent follicles on a beefy red tarsus.
+     ⚠️ FIGURE-ONLY TEACHING: the VISUAL DIFFERENCE between viral and trachomatous
+     follicles is taught only by this two-panel comparison; the prose never
+     contrasts them. Caption re-cropped at 300 dpi — it carries NO figure number.]
+   [FIGURES, centre, two further uncaptioned photographs of dense follicular
+    conjunctivitis on the everted lid.]
+
+8. **Conjunctival papillae:**
+   • They have a fibrovascular core (in contrast to follicles) surrounded by
+     hyperplastic conjunctival epithelium.
+   • They develop with *bacterial conjunctivitis* and *chronic blepharitis*.
+   • Giant papillae (**Cobble stone appearance** i.e., they are flat-topped) are
+     those **more than 1mm in diameter**. They develop with prolonged inflammation
+     and irritation as in:
+       1. Allergic conjunctivitis especially in vernal catarrh
+       2. Prolonged contact lens wear
+       3. Foreign body (as in artificial eye users)
+
+   [FIGURE, right, captioned:] Giant papillary conjunctivitis
+    [everted upper lid with large flat-topped cobblestone papillae.
+     Caption re-cropped at 300 dpi — NO figure number.]
+   [FIGURE, right, captioned:] papillary conjunctivitis
+    [everted lid with fine velvety papillae. Caption re-cropped at 300 dpi — NO
+     figure number.
+     ⚠️ FIGURE-ONLY TEACHING: the size/appearance contrast between ordinary
+     papillae and GIANT papillae is carried by this pair of photographs; the prose
+     gives only the 1 mm threshold.]
+
+9. **Preauricular lymphadenopathy (± submandibular lymphadenopathy):**
+   ▪ Viral conjunctivitis
+   ▪ Chlamydial conjunctivitis
+   ▪ Severe bacterial conjunctivitis (especially gonococcal)
+
+
+================================================================================
+PAGE 87 (PDF 89) — ALLERGIC CONJUNCTIVITIS · 1. SEASONAL AND PERENNIAL
+================================================================================
+
+[Banner:] Allergic conjunctivitis
+
+**Intro about allergic conjunctivitis From Tutorial:**   [blue block arrow pointing
+                                                          down into a framed box]
+⚠️ TUTORIAL MARKER, form (a). EVERYTHING between this heading and the "1. Seasonal
+   (hay fever)…" banner is inside the framed box and is therefore tutorial.
+
+  [BOX BEGINS]
+  Allergic conjunctivitis is usually **associated with** allergic rhinitis, eczema
+  or asthma.
+  Acute allergic Rhino-conjunctivitis **(hay fever)** is the most common form of
+  ocular and nasal allergy
+
+  [CLASSIFICATION DIAGRAM inside the box — a four-way arrow cross:]
+
+                        Allergic Conjunctivitis
+                                  |
+       Allergic Rhino-      ←     +     →      Atopic Kerato-
+       conjunctivitis             ↓            conjunctivitis
+       · Seasonal            Vernal            (+ Atopic dermatitis)
+         (Hay fever)         Keratoconjunctivitis
+         &                   (VKC)
+       · Perennial           (spring catarrh)
+
+  [CLINICAL-PICTURE PANEL inside the box, headed:] Clinical pictures:
+    • Bilateral eye involvement
+    • Intense itching
+    • Painless tearing
+    • Diffuse redness
+    • Mucoid / ropy discharge
+    • Conjunctival papillae
+    • Eyelid edema
+    • Coniunctival chemosis        [sic — "Coniunctival", as printed]
+
+  [FIGURES inside the box, uncaptioned: a child's face with bilateral red eyes and
+   lower-lid shadowing; a close-up of a diffusely injected eye.]
+  [BOX ENDS]
+
+[Banner:] 1. Seasonal (hay fever) and Perennial allergic conjunctivitis:
+
+Seasonal allergic conjunctivitis
+• is worse during spring and summer.
+• The allergen (usually pollen) varies with the geographic location.
+
+Perennial allergic conjunctivitis
+• causes symptoms throughout the year (usually milder than seasonal allergic
+  conjunctivitis).
+• House dust mites, animal dander and fungal allergens are the suspected allergens
+  in such cases.
+
+[TWO ROUNDED SIDE-BY-SIDE BOXES — these are NOT tutorial-marked:]
+
+  | Clinical picture | Treatment |
+  |---|---|
+  | **Symptoms:**<br>- Itching, lacrimation, and red eye ( ± sneezing and nasal discharge)<br>**Signs:**<br>- Conjunctival injection<br>- Mild papillary reaction. | o Cold compresses to relieve itching.<br>o Artificial tears (to dilute alergens) [sic — "alergens"]<br>o Topical mast cell stabilizers and antihistamines.<br>o Topical steroids (although effective but are rarely needed) |
+
+
+================================================================================
+PAGE 88 (PDF 90) — 2. VERNAL KERATOCONJUNCTIVITIS (VKC) / SPRING CATARRH
+================================================================================
+
+[Banner:] 2. Vernal Keratoconjunctivitis (VKC) (Spring Catarrh):
+
+Epidemiology:
+▪ VKC is a condition seen primarily in hot and dry climates most commonly in West
+  Africa, the Mediterranean basin, and the Middle East.
+▪ The increased incidence in **hot regions** is speculated to be secondary to a
+  higher level of pollution by pollens and various other allergens.
+▪ The majority of VKC occurs in patients between the **ages of 5-25 years old**
+  with an average age of onset between **10-12 years old**
+▪ Usually shows spontaneous resolution in the **late second decade of life**
+
+Clinical Picture:
+
+Symptoms: " The morning Misery (1988 by Buckley, R.J.) "
+  ⚠️ NAMED QUOTATION with author and year — the chapter's only literature citation.
+▪ Severe itching
+▪ Photophobia
+▪ Foreign body sensation
+▪ **Mucous "ropy"** discharge
+▪ It is typically **bilateral** and seasonally recurrent (hence the name **vernal**
+  meaning **springtime**).
+  However, **23%** of patients may have a perennial form of the disease and many may
+  have recurrences outside of springtime.
+
+[FIGURE, captioned:] ropy discharge
+  [a clinician drawing a long strand of ropy mucus out of the lower fornix with a
+   swab/forceps. ⚠️ FIGURE-ONLY: the prose says "ropy" but never shows or describes
+   the strand.]
+
+Signs:
+The signs of VKC can be divided into **conjunctival, limbal and corneal** signs:
+
+[TABLE with a row per signs-group, row labels printed vertically in the left column]
+
+| Conjunctival signs | - Diffuse conjunctival injection<br>- Tarsal **giant papillae** |
+| Limbal signs | o Limbal papillae with whitish dots (**Tranta spots**) that consist of degenerated eosinophils<br>o Limbal disease can result in a limbal stem cell deficiency which can lead to *corneal neovascularization* |
+| Corneal signs | *(continued on printed 89)* |
+
+  [FIGURES in the Conjunctival row, captioned:] Cobblestone papillae
+   [two photographs of everted upper lids packed with large flat-topped papillae.]
+  [FIGURES in the Limbal row, captioned:] **Fig 6-4: Tranta spots**
+   [left: an eye with a thickened gelatinous limbus bearing discrete white dots;
+    right: a close-up of the superior limbus with confluent white deposits.]
+
+
+================================================================================
+PAGE 89 (PDF 91) — VKC CORNEAL SIGNS AND TREATMENT · 3. ATOPIC KERATOCONJUNCTIVITIS
+================================================================================
+
+[TABLE CONTINUES from printed 88]
+
+| Corneal signs | Vary according to the severity of the disease process:<br>– **Punctate** epithelial **erosions**<br>– **Shield ulcer**: an oval ulcer typically in the **upper 1/3 of the cornea**. It is usually covered by a plaque made of fibrin and mucous.<br>– **Lipid deposition** in the peripheral superficial stroma can occur and is known as **pseudo-gerontoxon**<br>– **Keratoconus** is more common in VKC patients as well; possibly due to increased eye rubbing of chronically irritated patients. |
+
+  [FIGURES in the Corneal row: top right, a fluorescein-stained cornea under cobalt
+   blue showing a stained oval defect in the upper cornea (shield ulcer),
+   uncaptioned; below it, a slit-lamp view of a cornea with a dense white
+   superficial plaque, uncaptioned; centre, captioned **Fig 6-5: Pseudo-gerontoxon**
+   — an eye with an arcuate lipid band in the peripheral cornea.]
+
+Treatment:
+o Instruct the patient to **avoid eye rubbing** as much as possible (result in mast
+  cell degranulation and leads to a vicious circle of more itching and eye rubbing)
+o Dark glasses and cold compresses.
+o **Medications: → Topical:**
+  ▪ mast cell stabilizers
+  ▪ antihistamines.
+  ▪ vasoconstrictor and anti-histaminic drops (during the attack only)
+  ▪ steroid to control acute attacks but avoid long-term use
+  ▪ cyclosporine or topical tacrolimus may be considered for severe cases and as
+    steroid-sparing agents.
+
+[Banner:] 3. Atopic keratoconjunctivitis (AKC):
+
+- A rare bilateral condition that affects **adults (30-50 years)**.
+- Usually there is history of atopic dermatitis (eczema) or bronchial asthma.
+- Chronic and unremitting with a low possibility of resolution.
+- Perennial in nature and **worse in the winter**.
+
+  [DASHED-BORDER SIDE BOX, no Tutorial tab:]
+  **Symptoms:** Similar to VKC but *more severe*
+
+Signs:
+  o **Eyelids:**
+    - Eczema with redness, scaling, and dryness of the skin
+    - Associated with **Staph. blepharitis.**
+  o **Conjunctiva:**
+    - More watery than in VKC
+    - Conjunctival injection with/without chemosis
+    - Small papillae.
+  o **Cornea:**
+    - Superficial punctate erosions
+    - Persistent epithelial defects
+    - Keratoconus is common
+
+  [DASHED-BORDER SIDE BOX, no Tutorial tab:]
+  **Treatment:**
+  o Cold compresses
+  o Medications:
+    ▪ **topical antihistamines, topical mast cell stabilizers** (e.g., **Ketotifen,
+      olopatadine**)
+    ▪ The use of **topical corticosteroids** should be **restricted to controlling
+      the acute** symptoms to avoid the complications associated with prolonged use.
+
+⚠️ Ketotifen and olopatadine are the only named topical anti-allergy drugs in the
+   chapter, and they are named under AKC, not under VKC or seasonal disease.
+
+
+================================================================================
+PAGE 90 (PDF 92) — VIRAL CONJUNCTIVITIS
+================================================================================
+
+[Banner:] Viral conjunctivitis
+
+• The **most common external ocular infection**
+• **Adenovirus** is the most frequent causative agent (**90% of cases**)
+• It is highly contagious and may appear as epidemics.
+• Transmitted by contact with respiratory or ocular secretions
+
+[FIGURE, captioned:] Viral conjunctivitis (ppt)
+ [a face with bilateral diffusely red eyes.]
+
+Clinical presentations:
+
+[TABLE, two columns, kept as a table]
+
+| Non-specific acute follicular conjunctivitis | ▪ The **most common** form<br>▪ Initially unilateral, often progresses to the other eye with bilateral watering, red eye, irritation, mild itching and/or photophobia<br>▪ Sore throat or an accompanying common cold may be present |
+| Pharyngoconjunctival fever | Caused by adenovirus serovars **3 , 4 and 7** |
+| Epidemic keratoconjunctivitis | ▪ Caused by adenovirus serovars **8 , 19 and 37**<br>▪ The **most severe** ocular adenoviral infection.<br>▪ Keratitis and consequently photophobia are marked.<br>▪ Cornea may become chronically affected. |
+| Herpes simplex virus follicular conjunctivitis | (blepharoconjunctivitis) |
+| Systemic viral infections | e.g., varicella, measles, and mumps. |
+
+o Signs:
+  ▪ Conjunctival injection
+  ▪ Conjunctival **follicles** (mainly in the lower tarsal conjunctiva)
+  ▪ Conjunctival **pseudomembranes** may be present.
+  ▪ Preauricular lymphadenopathy
+  ▪ Eyelid oedema may be present
+  ▪ Keratitis: In the form of subepithelial infiltrates, punctate epithelial
+    keratitis
+
+  [FIGURES, uncaptioned: everted lower lid with fine follicles; a pair of red eyes
+   in a face; a close-up of a chemotic injected eye with lid oedema.]
+
+Treatment:
+– Spontaneous resolution of adenovirus infection occurs within **2-3 weeks** with no
+  specific treatment necessary.
+– Strict hygienic measures to restrict transmission
+– Topical steroids with gradual tapering may be required to control severe symptoms.
+– Topical antibiotics if 2ry bacterial infection is suspected.
+– Topical antihistamines and vasoconstrictors to control itching.
+
+
+================================================================================
+PAGE 91 (PDF 93) — BACTERIAL CONJUNCTIVITIS 1: ACUTE · 2: ADULT CHLAMYDIAL
+================================================================================
+
+[Banner:] Bacterial Conjunctivitis
+
+**1. Acute bacterial conjunctivitis:**
+
+- It is caused by direct contact with infected secretions
+- The most common organisms are **H. influenzae, S. pneumoniae, S. aureus and
+  Moraxella catarrhalis.**
+- Very few cases are caused by **N. gonorrhoea** while **N. meningitidis**
+  conjunctivitis is rare and usually affects children.
+
+Symptoms:
+- Acute onset of redness, grittiness, burning and discharge
+- **Matting of the eyelids** and lashes on awakening with difficulty in opening the
+  eye.
+- Associated systemic symptoms of the causative organism.
+- *Blurred vision that improves with blinking (suggests a discharge on the ocular
+  surface)* **→ (T)**
+- *Initially presents unilaterally. However, the second eye is often affected
+  shortly thereafter* **→ (T)**
+  ⚠️ TUTORIAL MARKER, form (b), on the last two symptoms only.
+
+Signs:
+- *Conjunctival papillae* **→ (T)**       ⚠️ TUTORIAL MARKER, form (b), first sign only
+- Oedema and erythema of the eyelids
+- Conjunctival injection and chemosis
+- Mucopurulent or purulent discharge
+- Corneal ulceration in **gonococcal** and **meningococcal** infections.
+- Pre-auricular and submandibular lymphadenopathy in gonococcal and meningococcal
+  infections.
+
+[FIGURES: everted lower lid with fine papillae, uncaptioned; a face with a red eye
+ and crusted yellow discharge on the lashes, captioned **Bacterial conjunctivitis
+ (ppt)**.]
+
+Investigations:
+1. Conjunctival swabs for urgent gram staining to exclude gonococcal and
+   meningococcal infections.
+2. Culture (if possible)
+
+  [DASHED-BORDER SIDE BOX with the word **Tutorial** printed in a tab on its top
+   edge — TUTORIAL MARKER, form (d):]
+  **Referral to ophthalmologist**
+  - Usually, elective
+  - Be aware that may cause marginal keratitis
+  ⚠️ This same content is reprinted, unmarked, as the Bacterial "Referral" cell of
+     the DD table on printed 94.
+
+Treatment:
+• Avoid eye patching and stop the use of contact lenses by the patient.
+• Strict hygienic measures
+• Topical antibiotics
+• **Systemic** antibiotics are needed in gonococcal and meningococcal and
+  H influenzae infections.
+⚠️ No antibiotic is named and no dose is given for acute bacterial conjunctivitis.
+
+**2. Adult chlamydial (inclusion) conjunctivitis:**
+
+- Caused by **chlamydia trachomatis (serovars D → K)**
+- It is sexually transmitted and can cause urethritis
+- It causes conjunctivitis which if untreated can become chronic.
+
+Ocular manifestations:
+  Symptoms: Subacute onset of red eye, tearing and discharge.
+  Signs:
+  - Mucopurulent discharge
+  - Tender preauricular lymph nodes
+  - Conjunctival **follicles** (upper and lower tarsal)
+  - Conjunctival **papillae** in chronic cases
+
+[FIGURE, uncaptioned: everted upper lid with discrete pale follicles on a red
+ tarsus, and a vascularised bulbar conjunctiva.]
+
+[FIGURE, framed two-column flow diagram, uncaptioned — transcribed in full:]
+
+  | Serotypes A, B, & C | Serotypes D → K |
+  |---|---|
+  | ↓ | ↓ |
+  | Trachoma | ⇨ Adult chlamydial (inclusion) Conjunctivitis<br>⇨ **Ophthalmia neonatorum** |
+
+  ⚠️⚠️ FIGURE-ONLY TEACHING, AND THE CHAPTER'S ONLY MENTION OF OPHTHALMIA
+     NEONATORUM ANYWHERE. The serovar-to-disease split, and the fact that
+     ophthalmia neonatorum is a D→K chlamydial disease, exist ONLY in this box.
+     The prose on printed 92 gives trachoma's serovars as "A, B, Ba and C" — the
+     figure prints "A, B, & C", WITHOUT Ba. The two disagree; both are recorded as
+     printed and neither is corrected.
+
+
+================================================================================
+PAGE 92 (PDF 94) — ADULT CHLAMYDIAL TREATMENT · 3. TRACHOMA
+================================================================================
+
+Treatment:   [of adult chlamydial (inclusion) conjunctivitis]
+• Referral to a **genitourinary** specialist
+• Systemic antibiotics (**Azithromycin, doxycycline, erythromycin**)
+• Topical **tetracycline** or **erythromycin** eye ointment
+• It is important to exclude other sexually transmitted infections
+⚠️ Drugs named, no doses given here. Doses for the same three drugs appear on
+   printed 93 under trachoma.
+
+**3. Trachoma:**
+
+- Trachoma is the world's **leading cause of preventable irreversible blindness** in
+  the world.
+- It is related to poverty, overcrowding and poor hygiene
+- Its visual morbidity is the consequence of re-infection cycles within communities
+
+Causative organism:
+  Trachoma is associated principally with infection by serovars **A, B, Ba and C**
+  of **Chlamydia trachomatis.**
+
+Diagnosis:
+  Features of trachoma are divided into an **'active' inflammatory stage** and a
+  **'cicatricial' chronic stage**, with considerable overlap. A World Health
+  Organization (WHO) grading system is in use.
+
+[TABLE, two labelled rows, kept as a table]
+
+| **Active trachoma** | It is most common in **preschool children** and is characterized by the following:<br>o Upper tarsal follicular conjunctivitis associated with mucopurulent discharge.<br>o Papillary reaction can also be present<br>o **Cornea:**<br>&nbsp;&nbsp;▪ Superior epithelial keratitis<br>&nbsp;&nbsp;▪ **pannus** formation (superficial corneal vascularization and cellular infiltration) |
+| **Cicatricial trachoma**<br>It is prevalent in **middle age**. | **Conjunctival scarring:**<br>- In mild cases → Linear or stellate conjunctival scars<br>- In severe disease → Broad confluent scars (**Arlt's line**)<br>- Scarring is most prominent on the upper tarsal plate.<br><br>**Herbert pits:** Superior limbal follicles may resolve to leave a row of shallow depressions<br>*(row continues on printed 93)* |
+
+  [FIGURES in the Active row: an eye with a vascular membrane advancing from the
+   superior limbus onto the cornea, arrow-labelled **Pannus**; an everted upper lid
+   thick with follicles, captioned **Trachoma (ppt)**.]
+  [FIGURES in the Cicatricial row: everted lid with fine white linear scars,
+   captioned **Linear and stellate scars (ppt)**; everted lid with a broad
+   horizontal white band, captioned **Arlt's line (ppt)**; a limbal close-up with
+   black arrows pointing at a row of shallow notches, labelled **Herber't Pit**
+   [sic — apostrophe misplaced in the in-figure label; the body text prints
+   "Herbert pits"].
+   ⚠️ FIGURE-ONLY TEACHING: the appearance of pannus advancing from the SUPERIOR
+   limbus, and the row-of-notches appearance of Herbert pits, are shown only in
+   these figures.]
+
+
+================================================================================
+PAGE 93 (PDF 95) — CICATRICIAL TRACHOMA (cont.) · WHO GRADING · MANAGEMENT
+================================================================================
+
+[TABLE CONTINUES, left column printed "continue… / Cicatricial trachoma"]
+
+| continue…<br>**Cicatricial trachoma** | - Trichiasis, corneal vascularization and **cicatricial entropion**<br>- Severe corneal opacification. | **Post-trachomatous concretions (PTCs):** cause chronic irritation and foreign body sensation |
+
+  [FIGURES: an eye with an in-turned lid margin and lashes against a scarred
+   opaque cornea, uncaptioned; a closed scarred lid, uncaptioned; an everted lid
+   studded with yellow-white concretions, captioned **Fig 6-6: PTCs**.]
+
+**WHO grading of trachoma:**
+
+  [ROUNDED BOX, transcribed in full — five grades:]
+
+  • **TF = trachomatous inflammation (follicular):**
+    (**5 or more follicles** [**more than 0.5 mm in diameter**] on the superior
+    tarsal plate)
+
+  • **TI = trachomatous inflammation (intense):**
+    Diffuse involvement of the tarsal conjunctiva, obscuring **50% or more** of the
+    deep tarsal vessels. Papillae are present.
+
+  • **TS = Trachomatous conjunctival scarring:** Easily visible fibrous white tarsal
+    bands
+
+  • **TT = Trachomatous Trichiasis:** **At least one lash** touching the globe
+
+  • **CO = Corneal Opacity:** Sufficient to blur details of at least part of the
+    pupillary margin
+
+**Management:**
+▪ The **SAFE strategy** for trachoma management supported by the WHO and other
+  agencies encompasses:
+  - **S**urgery for trichiasis and complications
+  - **A**ntibiotics for active disease
+  - **F**acial hygiene
+  - **E**nvironmental improvement.
+  ⚠️ The book prints the four words in plain type — the S/A/F/E initial-letter
+     mapping is implicit in the name "SAFE" and is not typographically marked.
+
+▪ **Treatment:**
+  o Antibiotics should be administered to those affected and to **all family
+    members**.
+  o A single antibiotic course is not always effective in eliminating infection in
+    an individual, and communities may need to receive **annual** treatment to
+    suppress infection.
+  o A single dose of **azithromycin (20 mg/kg up to 1 g)** is the **treatment of
+    choice.**
+  o **Erythromycin 500 mg twice daily for 14 days** **or** **doxycycline 100 mg
+    twice daily for 10 days**
+    (tetracyclines are relatively contraindicated in **pregnancy / breastfeeding**
+    and in **children under 12**)
+  o **Topical 1% tetracycline** ointment is less effective than oral treatment.
+
+
+================================================================================
+PAGE 94 (PDF 96) — DD OF CONJUNCTIVITIS · CONJUNCTIVAL DEGENERATIONS 1: PINGUECULUM
+================================================================================
+
+**DD OF CONJUNCTIVITIS**
+**Normal VA, Normal pupil, No photophobia, Clear cornea, Normal AC**
+⚠️ That subtitle line is the chapter's whole statement of how conjunctivitis is
+   separated from the other causes of a red eye. It is printed as a heading, not as
+   a bullet, and it is the only place these five negatives appear.
+
+[TABLE, the chapter's central discriminating grid — transcribed complete]
+
+| Clinical pictures | Viral conjunctivitis | Bacterial conjunctivitis | Allergic conjunctivitis |
+|---|---|---|---|
+| **Itching** | Mild | Mild | Intense |
+| **Discharge** | Watery | Mucopurulent / purulent | Mucoid (ropy) |
+| **Signs** | Follicles + preauricular lymphadenopathy | Papillae | Papillae (cobblestone) |
+| **Referral** | Elective | Usually, elective<br>Be aware that may cause marginal keratitis | Elective<br>refer if resistant to exclude VKC |
+| **Treatment** | • Cold compresses<br>• Artificial tears<br>• ± Short course of topical steroid provides symptomatic relief | Topical antibiotics<br>(Drops and ointment) | • Cold compresses<br>• Topical antihistamine drops<br>• Topical mast cell stabilizer<br>• Short course of topical steroid provides symptomatic relief |
+
+⚠️ THE TABLE HAS NO CHLAMYDIAL COLUMN. Three columns only — viral, bacterial,
+   allergic. Chlamydial disease is discriminated nowhere in a grid; the reader must
+   assemble it from printed 91–93 (mucopurulent discharge, follicles upper AND lower
+   tarsal, tender preauricular nodes, subacute onset).
+⚠️ The table carries NO tutorial marker anywhere, including the Bacterial "Referral"
+   cell that duplicates the printed-91 Tutorial box.
+
+[Banner:] Conjunctival Degenerations
+
+**1. Pingueculum**   [the book's spelling, throughout this heading and Fig 6-7]
+
+▪ **Yellow white subepithelial** deposit of hyaline and elastic tissue adjacent to
+  the nasal or temporal limbus, *sparing the cornea*
+▪ Associated with sun and wind exposure, aging
+▪ Benign, sometimes enlarges slowly
+▪ May be irritating due to abnormal tear film distribution
+▪ **Treatment:**
+  - Irritative symptoms may be treated with **lubricating drops**
+  - Surgical excision for **cosmesis only**
+
+[FIGURES: a slit-lamp view of a yellow-white nasal limbal mound not touching the
+ cornea, captioned **Pinguecula (ppt)** — note the caption uses the spelling
+ "Pinguecula" while the heading uses "Pingueculum"; and a close-up of the same,
+ captioned **Fig 6-7: Pingueculum**.]
+
+
+================================================================================
+PAGE 95 (PDF 97) — 2. PTERYGIUM · SUBCONJUNCTIVAL HAEMORRHAGE  (LAST PAGE)
+================================================================================
+
+**2. Pterygium**  تيجي على الكورنيا
+  ⚠️ Arabic marginal gloss printed beside the heading — "it comes onto the cornea".
+     Transcribed as printed; it is the mnemonic distinguishing pterygium (onto the
+     cornea) from pingueculum (sparing the cornea).
+
+• Fibrovascular, triangular, wing-like **encroachment** of epithelial tissue onto
+  **the cornea**
+• May **decrease vision** if it induces **astigmatism** or covers the **pupillary
+  area**.
+
+• **Management:**
+  - **Simple excision with bare sclera** for : *(indications for surgery)*
+    ⇨ chronic inflammation
+    ⇨ threat to the visual axis
+    ⇨ induced astigmatism
+    ⇨ cosmesis
+  - Irritative symptoms may be treated with lubricating drops
+  - **One-third recur after excision**, lower recurrence with conjunctival
+    *autograft* (**only 5% recurrence rate**), or *mitomycin-c* after simple
+    excision.
+
+[FIGURE, uncaptioned line diagram, LEFT: an eye labelled **Pterygium in medial
+ limbus** with a purple triangular lesion at the nasal limbus; an arrow to a second
+ eye labelled **Harvested area** (a shaded trapezoid at the superior bulbar
+ conjunctiva) and **Grafted area** (arrow to the bare nasal site).
+ ⚠️ FIGURE-ONLY TEACHING: WHERE the conjunctival autograft is harvested from
+ (superior bulbar conjunctiva) and where it is laid. The prose names the autograft
+ and its 5 % recurrence but never says where the graft comes from.]
+[FIGURES: a slit-lamp photograph of a fleshy vascular pterygium crossing the limbus,
+ captioned **Pterygium**; a wide view of a nasal pterygium, captioned
+ **Pterygium (ppt)**.]
+
+[Banner:] Subconjunctival haemorrhage
+
+• Presence of blood under the conjunctiva, otherwise asymptomatic
+• *It is not associated with any significant pain, does not affect vision and no
+  discharge.* **(Tutorial)**
+  ⚠️ TUTORIAL MARKER, form (c) — marks this whole bullet.
+• **Causes:**
+  - **Idiopathic** or associated with :
+    ⇨ trauma
+    ⇨ Valsalva maneuver *(coughing / sneezing / straining* **→ Tutorial** *)*
+      ⚠️ TUTORIAL MARKER, form (b), on the parenthetical EXAMPLES only. "Valsalva
+         maneuver" itself is core; the three examples of it are tutorial.
+    ⇨ bleeding disorders
+    ⇨ hypertension
+    ⇨ anticoagulation therapy
+• **Management:**
+  - Assurance of the patient if there are no other ocular findings
+  - Blood pressure measurement and systemic workup to detect the cause.
+  - It usually resolves spontaneously in **2-3 weeks**
+  - A large area of subconjunctival haemorrhage with a history of trauma should
+    arouse high suspicion for **eye globe rupture**. → *(that is obscured by
+    hemorrhage → refer to ophthalmologust* **[T]** *)*
+      [sic — "ophthalmologust"]
+    ⚠️ TUTORIAL MARKER, form (b), on the parenthetical clause only. The globe-rupture
+       suspicion itself is core.
+
+[FIGURE, captioned:] **Fig 6-8: Subconjunctival haemorrhage**
+ [an eye with a sharply demarcated flat bright-red sheet of blood covering the
+  temporal bulbar conjunctiva, sclera invisible beneath it, cornea and pupil clear.]
+[FIGURE, uncaptioned: an eye with a dense dark-red circumferential haemorrhage
+ obscuring the sclera nasally.]
+
+  [DASHED-BORDER SIDE BOX with the word **Tutorial** printed in a tab on its top
+   edge — TUTORIAL MARKER, form (d):]
+  - Use of artificial tears may relieve any discomfort
+  - **If they are taking anticoagulant**, it is recommended that their **INR** level
+    is checked
+  - **If recurrent**, investigate cause (e.g, bleeding disorder)
+
+*** END OF CHAPTER 6. Printed 96 begins chapter 7 (Sclera). ***
+
+
+================================================================================
+NOT COVERED BY THIS CHAPTER
+================================================================================
+Checked page by page across printed 82–95. Absent means absent from THIS chapter;
+it may appear elsewhere in the book.
+
+CONJUNCTIVITIS — GENERAL
+  1. Ophthalmia neonatorum as a topic: ABSENT. Named once, inside the serovar
+     figure on printed 91, and nowhere else. No organisms, no incubation periods,
+     no timing table (day 1 chemical / 2–5 gonococcal / 5–14 chlamydial or
+     anything like it), no prophylaxis (no Credé, no erythromycin ointment at
+     birth), no treatment, no notification.
+  2. Neonatal / paediatric dosing of any drug: absent.
+  3. Gonococcal conjunctivitis as its own section: absent. It is referenced five
+     times (purulent discharge, pseudomembrane, corneal ulceration, lymphadenopathy,
+     systemic antibiotics) but never given a heading, an organism description, an
+     incubation period, or a named drug or dose.
+  4. Any named systemic antibiotic or dose for acute bacterial conjunctivitis:
+     absent — "Systemic antibiotics are needed" with no drug and no dose.
+  5. Any named topical antibiotic anywhere in the chapter: absent. "Topical
+     antibiotics" is as specific as the book gets, including in the DD table.
+  6. Duration of treatment for bacterial conjunctivitis, and its natural history /
+     self-limiting course: absent.
+  7. Contact-lens-related and Pseudomonas conjunctivitis/keratitis: absent (contact
+     lenses appear only as a cause of giant papillae and as something to stop).
+  8. Conjunctival cytology / Giemsa staining / inclusion bodies / PCR and NAAT:
+     absent. Investigations for chlamydial disease are not listed at all.
+  9. Conjunctival swab technique, culture media: absent beyond "Culture (if
+     possible)".
+ 10. Molluscum contagiosum, Parinaud oculoglandular syndrome, phlyctenular
+     conjunctivitis, ligneous conjunctivitis: absent.
+ 11. Fungal and parasitic conjunctivitis: named once in the aetiology list on
+     printed 84 and never developed.
+ 12. Chronic conjunctivitis as an entity, and angular conjunctivitis
+     (Moraxella lacunata): absent.
+
+ALLERGIC DISEASE
+ 13. The hypersensitivity type (I / IV) underlying any of the allergic forms:
+     absent. No immunology at all — no IgE, no mast-cell mediator list beyond the
+     phrase "mast cell degranulation".
+ 14. Giant papillary conjunctivitis as a named diagnosis with its own section:
+     absent. GPC appears only as a figure caption on printed 86 and as a cause-list
+     entry; the objectives flowchart does not list it.
+ 15. Named drug or dose for any topical mast cell stabiliser (sodium cromoglicate,
+     nedocromil, lodoxamide): absent. Only Ketotifen and olopatadine are named, and
+     only under AKC.
+ 16. Steroid dose, potency, taper or duration anywhere: absent. Steroid
+     complications are alluded to ("complications associated with prolonged use")
+     but never named — no glaucoma, no cataract, no herpes reactivation.
+ 17. Systemic antihistamines, immunotherapy/desensitisation, allergen avoidance
+     beyond "avoid eye rubbing": absent.
+ 18. Shield-ulcer management (debridement, plaque removal, supratarsal steroid
+     injection): absent — the ulcer is described but never treated.
+ 19. Keratoconus itself: named twice as an association, never described or managed.
+
+TRACHOMA
+ 20. Trachoma epidemiology in numbers — global prevalence, endemic regions, WHO
+     elimination targets, GET2020: absent. "The world's leading cause of preventable
+     irreversible blindness" is the only epidemiological claim, and it carries no
+     figure.
+ 21. MacCallan classification: absent. Only the WHO five-grade simplified system is
+     printed.
+ 22. Trichiasis surgery — bilamellar tarsal rotation, epilation, cryotherapy:
+     absent. "Surgery for trichiasis" is named by the SAFE strategy and never
+     described.
+ 23. Azithromycin mass drug administration frequency beyond "annual", and the
+     age/weight thresholds for the paediatric suspension: absent.
+ 24. Complications of cicatricial trachoma beyond those listed (dry eye from
+     ductule destruction, corneal ulceration, superinfection): absent.
+
+DEGENERATIONS AND HAEMORRHAGE
+ 25. Pterygium histology/pathogenesis (elastotic degeneration, UV mechanism),
+     Stocker's line, Fuchs' flecks, and the head/neck/body/cap anatomy: absent.
+ 26. Pterygium grading, recurrence risk factors, amniotic-membrane grafting, and
+     the complications of mitomycin-C: absent.
+ 27. Concretions in general (non-trachomatous), conjunctivochalasis,
+     conjunctival cysts: absent (PTCs appear only as a trachoma sequela).
+ 28. Conjunctival tumours of any kind — naevus, melanoma, OSSN, papilloma,
+     lymphoma, Kaposi: ABSENT ENTIRELY. The objectives flowchart does not list
+     them. Chapter 17 "Malignancies of the Eye and its Adnexa" (printed 214–217) is
+     the place to look; NOT read.
+ 29. Cicatrising conjunctivitis of non-trachomatous cause — ocular mucous membrane
+     pemphigoid, Stevens–Johnson syndrome, chemical burn: absent. Symblepharon is
+     never mentioned in the chapter.
+ 30. Dry eye / keratoconjunctivitis sicca: named once in the discharge table
+     ("Toxic (chemical) conjunctivitis & Dry eye") and never developed.
+ 31. Any number for the natural history of subconjunctival haemorrhage other than
+     "2-3 weeks", and the colour-change sequence: absent.
+
+METHOD / EXAMINATION
+ 32. Lid eversion technique: absent, although a dozen figures show everted lids.
+ 33. Fluorescein staining and slit-lamp technique: absent (one unlabelled
+     fluorescein image on printed 89).
+ 34. Any explicit cross-reference to another chapter: NONE. Unlike chapters 14 and
+     15, chapter 6 delegates nothing in prose. It also gives no page numbers.
+
+
+================================================================================
+HOW THIS COMPARES WITH THE LECTURE DECK
+================================================================================
+`op-conj`'s only deck is a 66-slide .pptx carrying 73 media files for 343 words —
+5.2 words per slide. This chapter is 14 dense pages. Everything below is in the
+book and cannot be in 343 words; it is listed so it is not re-derived or looked for
+elsewhere:
+
+  the palisades of Vogt and stem-cell deficiency · the Krause/Wolfring/Manz/Henle
+  gland-and-crypt set · the three-layer histology · the four-column discharge table ·
+  the true-vs-pseudo-membrane table with the peel-bleeding discriminator · the
+  1 mm giant-papilla threshold · the follicle-vs-papilla structural contrast · VKC's
+  5–25 / 10–12 / 23 % figures and "The morning Misery (1988 by Buckley, R.J.)" ·
+  Tranta spots, shield ulcer in the upper 1/3, pseudo-gerontoxon · AKC's 30–50 years
+  and Ketotifen/olopatadine · adenovirus 90 % and the 3,4,7 vs 8,19,37 serovar split ·
+  the D→K vs A,B,Ba,C chlamydial split · the WHO TF/TI/TS/TT/CO grades with 5
+  follicles, 0.5 mm and 50 % · SAFE · azithromycin 20 mg/kg up to 1 g, erythromycin
+  500 mg bd ×14 d, doxycycline 100 mg bd ×10 d, topical 1 % tetracycline, under-12
+  contraindication · the three-column DD grid · Arlt's line, Herbert pits, PTCs ·
+  pterygium's one-third recurrence and the 5 % autograft figure · the INR advice.
+
+⚠️ The ONE thing the module asked for that this chapter does NOT supply is
+   ophthalmia neonatorum. It returns zero across the module and it returns almost
+   zero here — one name inside one figure. Chapter 16 (Paediatric Ophthalmology,
+   printed 204–213) is unread and is the next place to look.

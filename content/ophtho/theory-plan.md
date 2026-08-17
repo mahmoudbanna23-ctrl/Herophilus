@@ -783,3 +783,41 @@ because the book covers the topic the exam is set from.
   reader a note, not a silent fix.
 - **Ch.5 prints five numbers in its entire twelve pages** and no drug dose, duration or follow-up
   interval anywhere. Expect `op-lid` to need tagged gap-fills for anything quantitative.
+
+### ⚠️⚠️ THE BOOK SAYS "SKIP IN FINAL" AND THE QUESTION BANK ASKS IT FIVE TIMES
+
+Found 2026-08-18 reading ch.15 (Squint). The chapter ends its department material at printed p.201
+— *"This is the end of strabismus in the department book"* — and p.202 opens *"The next two pages
+are from tutorial .. Skip in Final"*. **The whole examination content of the chapter is inside those
+two pages**: the corneal light reflex, the cover test, the cover–uncover test, the alternate cover
+test. Patching, the only amblyopia treatment the chapter names, is tutorial-marked too.
+
+**Five of `op-squint`'s six questions test exactly that material** — `opqb-t1-43` (first assessment
+in a child whose eye turns in), `t1-44` (a nasal light reflex), `t1-45` (cover-test
+interpretation), `t1-54` (a phoria is best detected by…), `t2-94` (the light reflex estimates the
+angle). Only `t1-53` (concomitant strabismus) comes from the non-tutorial part.
+
+**The ruling for this module: write tutorial-marked material IN FULL and at full weight, record the
+book's tag on it, and tell the reader both facts.** The tag is data about what the book says — it
+is not permission to omit. Where the two authorities disagree, the reader sees the disagreement.
+
+**This also retires a tempting shortcut.** The `(Tutorial)`/`(T)` marker looked like a free way to
+cut length in a module that keeps overrunning its budget. It is not: the marker is the book's
+opinion about its own department's paper, and **the question bank is the better proxy for what gets
+asked.** Never use the marker as a compression rule.
+
+### A sixth Tutorial-marker form, and a seventh source defect
+
+- **Marker form six is a WHOLE-PAGE-RANGE announcement in running prose** (ch.15 p.202), not a box,
+  tab, arrow, parenthetical or inline clause. Six physical forms now, and only careful page-by-page
+  reading catches this one — a section-level scan would have marked those two pages "examination
+  content" and missed the instruction entirely.
+- **Ch.6 reprints its own p.91 Tutorial referral box, UNMARKED, as a cell of the p.94 DD table** —
+  so the identical content is skip-in-final in one place and core in the other. Recorded in both.
+- Ch.6's DD grid has **no chlamydial column** although the chapter teaches adult chlamydial
+  conjunctivitis; and p.91's figure prints the trachoma serovars **"A, B, & C"** where p.92's prose
+  prints **"A, B, Ba and C"**. Both held, neither corrected.
+- **Ophthalmia neonatorum is not taught in ch.6** — one mention inside a serovar figure, no
+  organisms, no timing, no prophylaxis, no treatment — and it returns **zero** across the module.
+  It is a conjunctivitis, so it is supplied and tagged inside `op-conj` rather than chased into
+  ch.16, which the user has ruled out of scope.

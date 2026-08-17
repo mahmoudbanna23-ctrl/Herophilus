@@ -1,0 +1,683 @@
+SOURCE: Semester 8\Opthalmo\Theoritical\Books\ophthalmology.pdf
+================================================================================
+BOOK:      "OPHTHALMOLOGY WITH TUTORIALS" (inside title, PDF p.3) / cover reads
+           "OPHTHALMO-OLOGY", "5 / Fifth Year".
+AUTHOR:    BY HEALIX TEAM (no named editor, no edition, no copyright page).
+CHAPTER:   15 — Squint
+           ⚠️ The contents page prints the title as "Squint". The chapter's own
+           opener prints **"Strabismus (Squint)"** and the running banner on the
+           first text page prints **"Strabismus (squint)"**. Grep both.
+PRINTED:   pp. 196–203   (8 pages)
+PDF:       pp. 198–205
+OFFSET:    ⚠️ PDF page = printed page + 2. Re-confirmed here: PDF 198 carries
+           footer "196", PDF 205 carries footer "203".
+CITE AS:   ophthalmology.pdf p.<PRINTED> — the PRINTED number. Every citation
+           below is a printed page number.
+WEIGHT:    3 % — the book's own "Relative weight in %" column on the contents page.
+           Joint-lowest band of the twenty chapters.
+READ:      2026-08-18, rendered at 150 dpi page by page (portrait A4 book text).
+           The Hirschberg deviation-estimate figure and the pseudostrabismus panel
+           on printed 202 were re-cropped at 300 dpi to read their small print; both
+           resolved. No source file was modified, renamed, moved or deleted.
+
+--------------------------------------------------------------------------------
+⚠️ STRUCTURAL FINDINGS — read before using this cache
+--------------------------------------------------------------------------------
+
+⚠️⚠️ 1. THE CHAPTER DECLARES ITS OWN END AND THEN CONTINUES. Printed 201 ends with
+      a centred green line: **"This is the end of strabismus in the department
+      book"**. Printed 202 opens with a centred green line: **"The next two pages
+      are from tutorial .. Skip in Final"**. So:
+        • printed 196–201 = the department book = examinable
+        • printed 202–203 = tutorial = "study in round & skip in final"
+      This is a FIFTH physical form of the tutorial marker, not seen in chapters 6,
+      7, 10 or 14: **a whole-page-range declaration covering two pages at once.**
+      ⚠️ IT MATTERS DISPROPORTIONATELY HERE: the ENTIRE examination content of the
+      chapter — history, inspection, corneal light reflex / Hirschberg, EOM testing,
+      cover test, cover–uncover test, alternate cover test — lives inside those two
+      tutorial pages. The examinable part of the chapter contains **no examination
+      section at all**. Any theory chapter built from this book must record that
+      split rather than silently merging it.
+
+⚠️ 2. TWO CROSS-REFERENCES CARRYING EXPLICIT PAGE NUMBERS, WHICH CONTRADICTS
+      `content\ophtho\book-map.md`. That file states cross-references are "by
+      chapter name in prose … never by figure or page number". This chapter prints:
+        • printed 197, italic subtitle under the banner: *"You will find nerve
+          supply & action of EOM in Examination chapter (page 15)"*
+        • printed 203, beside heading 3: *"Go to Examination chapter (Page 16)"*
+      Both give a PRINTED page number in chapter 1. Under the +2 rule those are
+      PDF 17 and PDF 18 — but the map records a documented one-page anomaly at
+      chapter 1 only, so **verify chapter 1's own footers before using either
+      number.** Neither target page has been read.
+      The map's own standing warning applies: treat its "the book always / never …"
+      lines as hypotheses. This is the second such line to fail (figure numbering
+      was the first).
+
+⚠️ 3. THE CHAPTER'S CONTENT IS CARRIED BY ITS FIGURES TO AN UNUSUAL DEGREE. Every
+      deviation type, the cover-test manoeuvres, the intermittent-vs-constant
+      contrast, pseudostrabismus and the Hirschberg angle scale are DRAWN. Each is
+      flagged "⚠️ FIGURE-ONLY" in place below where the prose does not carry it.
+
+⚠️ 4. NO "(++ Additional)" TAG ANYWHERE IN THIS CHAPTER.
+
+⚠️ 5. NO FIGURE IN THIS CHAPTER IS NUMBERED. There is no "Fig 15-x" anywhere; every
+      figure carries a plain caption or none at all. (Chapter 6, read the same day,
+      numbers six of its figures. The inconsistency is within the book, not just
+      between books.)
+
+⚠️ 6. THE CHAPTER IS FOUR CLASSIFICATIONS, LETTERED A–D, matching the opener's
+      objectives flowchart loosely but not exactly: the flowchart names
+      "classifications" as one box, the text splits it into A) direction of
+      deviation · B) commitance [sic] · C) intermittency · D) etiology.
+
+⚠️ 7. LEGIBILITY: nothing in this chapter was illegible. There is no "[illegible]"
+      anywhere below. The two figures with the smallest print (Hirschberg scale,
+      pseudostrabismus panel) were re-rendered at 300 dpi and both resolved fully.
+
+⚠️ 8. NUMBERS ARE SCARCE IN THIS CHAPTER AND ARE LISTED TOGETHER AT THE END OF THIS
+      FILE, because the module has almost none. There are NO prism dioptres
+      anywhere; the only angular measure is the Hirschberg scale, and it is in
+      DEGREES, inside a figure.
+
+
+================================================================================
+PAGE 196 (PDF 198) — CHAPTER OPENER
+================================================================================
+
+Strabismus (Squint)                            [blue underlined serif title]
+
+[FIGURE, uncaptioned: a pair of eyes with brows, drawn face-on. The RIGHT-of-image
+ eye looks straight ahead; the LEFT-of-image eye is deviated so its iris sits
+ toward the temporal side. It is the chapter's title illustration and the only
+ place misalignment is shown before the classification begins.]
+
+Objectives
+[FLOWCHART of blue rounded boxes. Root box:]
+
+    strabismus
+    ├── Definition and ddx. pseudostrabismus
+    ├── classifications
+    ├── examination
+    └── treatment
+
+⚠️ Note that "examination" is one of the four objectives, and the examination
+   material is entirely inside the two pages the book itself marks as tutorial and
+   tells the reader to skip in the final (printed 202–203).
+
+
+================================================================================
+PAGE 197 (PDF 199) — DEFINITION · PSEUDOSTRABISMUS · SEQUELAE · A) DIRECTION
+================================================================================
+
+[Banner:] Strabismus (squint)
+*You will find nerve supply & action of EOM in Examination chapter (page 15)*
+  ⚠️ Cross-reference with a page number — see structural finding 2.
+
+**Definition:**
+Strabismus is a disorder in which the eyes are misaligned so that both eyes cannot
+be directed toward the object of regard at the same time.
+
+**Pseudostrabismus:**
+- It describes the situation when the eyes falsely appear deviated but -unlike true
+  strabismus- the visual axes of both eyes are properly aligned.
+- Examples include *prominent epicanthal folds and hypertelorism* (increased
+  distance between both eyes/orbits).
+
+**Sequalae of Strabismus:**   [sic — "Sequalae"]
+  1. **Amblyopia** (before the age of **8-10 years**)
+  2. **Diplopia** and confusion (in older age groups)
+
+⚠️ That two-line block is the ENTIRE prose treatment of amblyopia in the chapter.
+   Amblyopia is named four more times (printed 198 "strabismic amblyopia",
+   printed 201 treatment ×2, printed 202 history "Visual acuity (amblyopia ??)")
+   and is never defined, classified or described.
+
+**Types of strabismus:**
+There are several ways in which strabismus can be classified.
+
+[Banner:] **A) Types of strabismus according to the direction of deviation:**
+
+  a) **Horizontal strabismus:**
+     – **Esotropia**: Eyes turned **inwards**. Can also be called convergent
+       strabismus
+     – **Exotropia**: Eyes turned **outwards**. Can also be called divergent
+       strabismus
+
+  b) **Vertical strabismus:**
+     – **Hypertropia**: Eye is shifted **upwards**
+     – **Hypotropia**: Eye is shifted **downwards**
+
+[FIGURE, uncaptioned, four-quadrant line diagram of eye pairs. In-figure labels
+ exactly:
+   Esotropia / Inward turning     |   Exotropia / Outward turning
+   ---------------------------------------------------------------
+   Hypotropia / Downward turning  |   Hypertropia / Unward turning
+ [sic — "Unward" for "Upward" in the hypertropia label].
+ Each quadrant draws one eye straight and the fellow eye displaced in the named
+ direction.]
+
+[FIGURES, four clinical photographs, each captioned:]
+  **Esotropia**    [child, one eye turned in]
+  **Exotropia**    [child, one eye turned out]
+  **Hypertropia**  [child, one eye sitting higher]
+  **Hypotropia**   [child, one eye sitting lower]
+⚠️ FIGURE-ONLY TEACHING: the prose defines the four deviations in one clause each
+   and never says which eye is the deviating one or how it looks clinically. The
+   diagram plus the four photographs are what carry recognition.
+
+
+================================================================================
+PAGE 198 (PDF 200) — B) COMMITANCE · C) INTERMITTENCY (a. INTERMITTENT)
+================================================================================
+
+[Banner:] **B) Types of strabismus according to commitance:**   [sic — "commitance"]
+
+**a. Comitant strabismus:**   [heading spells "Comitant"; the bullets spell
+                               "concomitant" — both as printed]
+• Strabismus is called concomitant when the **angle (or degree) of misalignment is
+  approximately equal in all directions of gaze.**
+  The individual **extraocular muscles are functioning normally,** but both eyes are
+  simply not directed toward the same target.
+• Most concomitant strabismus has its onset in **childhood**.
+• In children, it often causes the secondary development of **suppression** to
+  overcome double vision and thus leads to **strabismic amblyopia**.
+• Concomitant strabismus in patients **under age 6 is rarely caused by serious
+  neurologic disease**.
+• Strabismus arising **later** in life may have a **specific and serious neurologic
+  basis.**
+
+[FIGURE, uncaptioned: a two-panel clinical photograph of a child's eyes in two
+ different gaze positions, the deviation looking the same size in both.
+ ⚠️ FIGURE-ONLY: it demonstrates "equal in all directions of gaze"; the prose asserts
+ it without illustrating it.]
+
+**b. Incomitant strabismus:**
+  o Strabismus is called incomitant when the **degree of misalignment varies with
+    the direction of gaze.**
+  o Many aetiologies can cause incomitant strabismus: **One or more of the
+    extraocular muscles or nerves may not be functioning properly (paralytic
+    strabismus) or** normal movement may be **mechanically restricted (restrictive
+    strabismus).**
+  o This type of strabismus may well indicate either a serious neurologic disorder,
+    such as third cranial nerve palsy, or orbital disease or trauma, such as the
+    restrictive ophthalmopathy of thyroid disease or a blowout fracture.
+
+[FIGURE, three-row clinical photograph series with a labelled key column —
+ transcribed exactly:
+   row 1: Moderate Left Esotropia in primary position
+   row 2: Normal abduction of right eye, normal adduction of left eye
+   row 3: Normal adduction of right eye, severely restricted abduction of left eye
+ ⚠️⚠️ FIGURE-ONLY TEACHING, AND THE MOST IMPORTANT FIGURE IN THE CHAPTER: this is
+ the only place the book demonstrates HOW incomitance is detected — that the angle
+ grows in the field of action of the underacting muscle. The prose defines
+ incomitance and never shows the manoeuvre. It is also the only worked example of a
+ left sixth-nerve pattern anywhere in the chapter.]
+
+[Banner:] **C) types according to intermittency:**
+
+**a. Intermittent strabismus:**
+• Strabismus is not always manifest. The frequency and timing of the appearance of
+  strabismus vary from one patient to another. **Heterophoria** is a condition that
+  can be included in the intermittent strabismus spectrum.
+• **Heterophoria** is a latent tendency for misalignment of both eyes that
+  **becomes manifest only if binocular vision is interrupted**, such as by covering
+  1 eye.
+• During binocular viewing, both eyes of a patient with heterophoria are aligned
+  perfectly; both eyes are directed at the same object of regard. However, when 1
+  eye is covered, that eye will drift to its position of rest. Once the cover is
+  removed, the eye will realign itself with the other eye.
+• A minor degree of heterophoria is **normal for most individuals.**
+
+
+================================================================================
+PAGE 199 (PDF 201) — b. CONSTANT (MANIFEST) · D) ETIOLOGY a) REFRACTIVE, b) INFANTILE
+================================================================================
+
+**b. Constant (Manifest) strabismus:**
+• The patient cannot fuse and the strabismus is always manifest. **Heterotropia** is
+  another term for strabismus.
+• In general, **tropia** refers to a **manifest deviation present when both eyes are
+  open (no covers)**. Usually, binocular vision is reduced.
+  Some patients, however, can demonstrate an intermittent heterotropia and thus
+  achieve binocular vision part of the time.
+
+[FIGURE, captioned:] **Intermittent strabismus**
+ [a three-row line diagram, rows lettered A, B, C:
+   A — both eyes straight, no cover;
+   B — a grey occluder over the left-of-image eye, blue arrows showing the covered
+       eye drifting and the fellow eye holding fixation;
+   C — cover removed, blue arrows showing both eyes moving back.
+ ⚠️ FIGURE-ONLY: this is the drift-and-recovery of heterophoria drawn as a
+ sequence. It is the SAME diagram that reappears inside the cover–uncover cell on
+ printed 203, and it is the chapter's only depiction of what a cover does.]
+
+[FIGURE, captioned:] **constant strabismus**
+ [two black-and-white photographs of a child: uncovered, one eye clearly deviated;
+  and with an occluder held over the fixing eye, the deviation persisting.]
+
+[Banner:] **D) Types according to etiology:**
+
+**a) Refractive esotropia:**
+• This occurs in **children with high hypermetropic** refractive error and usually
+  manifests at **age 2-4 years**.
+• In uncorrected hypermetropia, the child has to accommodate constantly to see
+  better.
+• Accommodation is a part of the **triad of the near reflex (accommodation,
+  convergence and miosis).**
+• Excessive convergence leads to esotropia. This condition can be corrected by
+  prescribing **hypermetropic glasses.**
+
+[FIGURES, captioned:] **Refractive (Accommodative) Esotropia**
+ [two photographs, a child esotropic without glasses and straight with glasses; a
+  further two-panel pair letter-marked A and B showing the same before/after.
+ ⚠️ FIGURE-ONLY: the before-and-after-glasses demonstration. The prose says glasses
+ correct it; only the figure shows full correction.]
+⚠️ The book writes the heading "Refractive esotropia" and the figure caption
+   "Refractive (Accommodative) Esotropia" — the word ACCOMMODATIVE appears only in
+   the caption. It is the standard name for the entity and it is figure-only here.
+
+**b) Infantile esotropia:**
+This type of esotropia appears **in the first year of life**. It is characterized by
+**large angle strabismus** and usually **requires surgery** to be corrected.
+
+[FIGURES, captioned:] **Infantile Esotropia**
+ [a toddler with a large-angle esotropia; and a two-panel pair (a, b) of an infant's
+  face showing a marked convergent deviation.]
+
+
+================================================================================
+PAGE 200 (PDF 202) — c) INTERMITTENT EXOTROPIA · d) SENSORY · e) RESTRICTIVE ·
+                     f) PARALYTIC (6th, 3rd, 4th nerve palsies)
+================================================================================
+
+**c) Intermittent exotropia:**
+It is a common type of strabismus that presents usually in **children**.
+Exotropia is intermittent and the condition usually **deteriorates and requires
+surgery**.
+
+[FIGURES, captioned:] **Intermittent Exotropia**
+ [two photographs of a young adult, one eye divergent in one and straight in the
+  other; plus two photographs of a boy, straight in one and exotropic in the other.
+ ⚠️ FIGURE-ONLY: the same patient straight and deviated is what "intermittent"
+ means; the prose never illustrates it.]
+
+**d) Sensory strabismus:**
+When vision is poor in one eye for a long time this eye may deviate causing sensory
+exotropia or esotropia.
+
+**e) Restrictive strabismus:**
+– Due to a pathology causing **mechanical limitation** to the movement of the eye.
+– A common example is **orbital floor fracture** caused by trauma, leading to
+  entrapment of the **inferior rectus muscle**. This will restrict the movement of
+  the eye **upwards**.
+
+**f) Paralytic strabismus:**
+Caused by paralysis of one of the nerves (**3rd, 4th, 6th**) that move the
+extra-ocular muscles.
+
+  a. **Sixth nerve palsy:**
+     presents as *limitation of abduction* with *esotropia*
+     **(the most common cranial nerve to be affected with elevated intracranial
+     pressure)**
+
+  b. **Third nerve palsy:**
+     – presents as *exotropia and hypotropia* because only the lateral rectus and
+       superior oblique are functioning.
+     – The patient will also have *ptosis* (that will mask diplopia) because the
+       oculomotor nerve supplies the levator muscle of the lid.
+       (**External ophthalmoplegia**)
+
+       **N.B.** *Mydriasis* can be present (Total (external and internal)
+       ophthalmoplegia) as the oculomotor nerve supplies the parasympathetic fibres
+       to the sphincter pupillae.
+       (It may be a sign of the presence of an enlarging aneurysm in the **circle of
+       Willis**)
+
+  c. **Fourth nerve palsy:**
+     – presents as *hypertropia and head tilt*.
+     – **Congenital** fourth nerve palsy is the most common cause of head tilt in
+       children.
+     – A child with head tilt should be referred to the ophthalmologist to exclude
+       superior oblique palsy.
+
+⚠️ CROSS-CHAPTER OVERLAP: chapter 14 Neuro-ophthalmology (printed 182–186) also
+   teaches CN III/IV/VI palsy, in more detail and with its own figures. The two
+   accounts must be reconciled, not stacked. Chapter 15 adds the strabismus framing
+   (which deviation results); chapter 14 adds the pupil rule, the aetiology lists
+   and the recovery figures.
+
+
+================================================================================
+PAGE 201 (PDF 203) — CAUSES OF PARALYTIC STRABISMUS · TREATMENT · END OF BOOK TEXT
+================================================================================
+
+**Causes of paralytic strabismus:**
+The following causes can be the underlying cause of palsy for **any** of the nerves
+responsible for extra-ocular muscles movement:
+  1. **Diabetes mellitus (DM)**
+  2. **Head trauma**
+  3. **Space occupying lesion in the brain and other causes of raised intracranial
+     pressure**
+  4. **Rarely congenital or idiopathic**
+
+**N.B.:** Cases with **acute onset paralytic strabismus** should be investigated for
+**diabetes** and an **MRI of the brain** to exclude serious causes of raised
+intracranial pressure.
+
+[Banner:] **Treatment of Strabismus:**
+
+The most effective way to support fusion (binocular vision) is to treat the
+amblyopia **and** equalize the vision:
+
+o **Glasses** can treat some or all the esotropia in hyperopic patients and may
+  decrease the frequency of deviation in a myopic individual with exotropia.
+
+o **Surgical** correction of the misalignment may still be necessary, particularly
+  in those children who develop esotropia **before the age of 6 months** (congenital
+  esotropia). Even when binocular vision may not be achievable, the impact of
+  disfiguring strabismus on a patient's self-image is a valid indication for surgery.
+
+  [DASHED-BORDER BOX — TUTORIAL MARKER, inline-labelled form:]
+  **Tutorial → Surgical correction in cases of constant deviation and not corrected
+  by glasses.**
+
+o *patching (to correct amblyopia)* **→ Tutorial**
+  ⚠️ TUTORIAL MARKER on the whole bullet. **PATCHING — THE ONLY AMBLYOPIA TREATMENT
+     THE CHAPTER NAMES — IS MARKED TUTORIAL.** No regimen, no hours per day, no age
+     limit, no alternative (no atropine penalisation, no levodopa, no digital
+     therapy) is given anywhere.
+
+**N.B.:** In cases of **paralytic strabismus** caused by trauma or diabetes,
+**spontaneous resolution** may occur **within 6 months.** If resolution didn't occur
+surgery can correct the strabismus.
+
+                **This is the end of strabismus in the department book**
+                        [centred, green, bold — see structural finding 1]
+
+
+================================================================================
+PAGE 202 (PDF 204) — TUTORIAL: ASSESSMENT OF A CASE OF SQUINT (1) — HISTORY,
+                     INSPECTION, CORNEAL LIGHT REFLEX / HIRSCHBERG
+================================================================================
+
+          **The next two pages are from tutorial .. Skip in Final**
+                  [centred, green, bold — covers printed 202 AND 203]
+
+**Assessment of a case of squint**
+
+  [TWO-COLUMN HEADER BLOCK]
+
+  • **History:**                          | • **Visual acuity (amblyopia ??)**
+    - Age at onset                        | • **Refraction (cycloplegic)**
+    - Unilateral or alternating           | • **Examination anterior segment:**
+    - Diplopia??                          |   corneal opacity, cataract.
+    - Previous treatment: glasses,        | • **Fundus examination:** optic atrophy,
+      surgery.                            |   retinoblastoma.
+
+  ⚠️ "Fundus examination: optic atrophy, **retinoblastoma**" is the chapter's only
+     mention of a sight- and life-threatening cause of squint, and it sits inside
+     the tutorial pages.
+
+**1. Inspection**
+  - One eye may look straight ahead, while the other eye turns
+    ▪ Inward (esotropia)
+    ▪ Outward (exotropia)
+    ▪ Upward (hypertropia)
+    ▪ Downward (Hypotropia)
+  - Head tilting
+  - Epicanthal fold or wide nasal bridge (*pseudostabismus*)   [sic —
+    "pseudostabismus", missing an r]
+
+[FIGURES, right column, uncaptioned: three clinical photographs of children's eyes —
+ an esotropia, an exotropia and a vertical deviation.]
+
+**2. Corneal light reflex**
+  - Normally, the light is reflected on each cornea symmetrically, relative to the
+    pupil and visual axis of each eye.
+  - *In a deviating eye*, the light reflection will be **eccentric** and, in a
+    direction, **opposite to that of the deviation.**
+
+  - **Exclude pseudo-strabismus.**
+
+[FIGURE PANEL, bottom left — transcribed exactly, re-cropped at 300 dpi:]
+    **PSEUDO STRABISMUS**    [title in a gold rounded banner]
+    · Clinical **impression** of ocular deviation, when **no** squint is present
+    **HIRSCHBERG TEST**      [boxed label beside a drawn pen-torch]
+    | EPICANTHUS          | HYPERTELORISM        |
+    | PSEUDO ESOTROPIA    | PSEUDO EXOTROPIA     |
+    [left photograph: an infant with prominent epicanthal folds, eyes actually
+     straight, appearing esotropic. Right photograph: a young man with widely
+     spaced eyes, appearing exotropic.]
+  ⚠️⚠️ FIGURE-ONLY TEACHING: **the name "HIRSCHBERG TEST" appears ONLY inside this
+     figure.** The prose calls it "corneal light reflex" and never uses the eponym.
+     The figure also supplies the pairing epicanthus→pseudo-esotropia and
+     hypertelorism→pseudo-exotropia, which the printed-197 prose lists as causes
+     without saying which pseudo-deviation each produces.
+
+  - **The amount of deviation can be estimated:**
+
+[FIGURE, uncaptioned, two panels, re-cropped at 300 dpi — transcribed exactly:]
+    LEFT: a large close-up of one eye. Five white reflex dots are marked in a
+    horizontal row running from the pupil centre outward to the temporal limbus,
+    with a dashed leader from each down to a numeric scale printed beneath the
+    lower lid:
+        **0    15    30    45          70**
+    (the 0 sits at the pupil centre, 15 and 30 within the pupil/iris, 45 at the
+    mid-iris, 70 at the limbus). No unit is printed on this panel.
+    RIGHT: a four-row yellow chart, each row a pair of drawn eyes — the left eye of
+    each pair with a centred reflex, the right eye of each pair with the reflex
+    displaced progressively further nasally. Rows labelled down the right edge:
+        **0°**
+        **15°**
+        **30°**
+        **45°**
+    Four rows only; there is NO 70° row in the chart even though the left panel's
+    scale runs to 70.
+  ⚠️⚠️ FIGURE-ONLY TEACHING AND THE CHAPTER'S ONLY QUANTIFICATION OF ANGLE. The
+     entire Hirschberg estimate — the scale, the numbers, the degree unit — exists
+     only in this figure. The prose says "The amount of deviation can be estimated"
+     and stops. There is no mm-per-degree rule (no "1 mm = 7°"), no prism dioptre
+     anywhere in the chapter, and no conversion between the two.
+
+
+================================================================================
+PAGE 203 (PDF 205) — TUTORIAL: ASSESSMENT OF A CASE OF SQUINT (2) — EOM TESTING,
+                     COVER TESTS, ALTERNATE COVER TEST   (LAST PAGE)
+================================================================================
+
+**3. Extra-ocular muscle testing:**   *Go to Examination chapter (Page 16)*
+  ⚠️ Second page-numbered cross-reference — see structural finding 2. EOM testing is
+     NOT taught here; the chapter delegates it entirely.
+
+**4. Cover test (s)**
+
+[TABLE, two columns — the chapter's central examination grid, transcribed complete]
+
+| Comitant manifest strabismus | In case of heterophoria |
+|---|---|
+| **Cover test:**<br>• Cover the **fixating** eye and observe the other eye.<br>• The **uncovered eye** moves to pick up fixation<br><br>e.g., If the eye moves inward to fixate, then it was deviated outward and is exotropic. | **Cover test:**<br>(Observe the **uncovered** eye)<br>⇨ Uncovered eye shows **no movement** |
+| **Cover — uncover test**<br>(Observe the **covered eye** after removing the cover)<br><br>**If the eye that was covered:**<br>⇨ Move to fixate again: **Unilateral squint**<br>&nbsp;&nbsp;(it was deviating only under the cover)<br>⇨ Remains deviated: **Alternating squint** | **Cover — uncover test:**<br>(Observe the **covered** eye after removing the cover)<br>⇨ If the eye that was covered move rapidly to regain fixation then patient has **heterophoria**<br><br>(latent squint or tendency of the eye to deviate that is corrected by the brain to achieve fusion of the images seen by both eye) |
+
+  ⚠️ READ THE LEFT COLUMN CAREFULLY — the cover test and the cover–uncover test
+     watch DIFFERENT eyes. Cover test: cover the FIXATING eye, watch the OTHER
+     (uncovered) eye move to take up fixation, and the direction it moves reveals
+     the pre-existing deviation. Cover–uncover test: watch the COVERED eye AFTER the
+     cover comes off. Unilateral vs alternating squint is decided by the
+     cover–uncover, not by the cover test.
+
+  [FIGURES inside the table cells:
+   left column, under the cover test — two black-and-white photographs of a child,
+   uncovered and with an occluder in place, uncaptioned;
+   left column, under cover–uncover — the SAME lettered A/B/C line diagram that
+   appears on printed 199 captioned "Intermittent strabismus" (both eyes straight →
+   one eye occluded and drifting, arrows → cover removed, arrows back), here
+   uncaptioned;
+   right column — two drawn pairs of eyes with large red arrows: an occluded grey
+   eye with a red arrow pointing left (the covered eye drifting), and an uncovered
+   pair with a red arrow pointing right (the eye recovering fixation).
+   ⚠️ FIGURE-ONLY: the DIRECTION of the recovery movement, and that it is the
+   covered eye which moves, is shown by the red arrows and is not stated in words.]
+
+**5. Alternate cover test:**
+
+  - **Uses:**
+    • Reveals **total deviation (Latent + Manifest)**
+    • Detect heterophoria
+    • Detect Intermittent squint
+
+  - **Procedures:**
+    • Maintain cover over one eye for **2-3 seconds** before rapidly shifting to the
+      other eye (**break binocular fusion mechanism**)
+
+  - **Interpretation:** In case of **no manifest squint**
+    Note the movement of uncovered eye:
+      - If **no movement**: **Orthophoria**
+      - If **move rapidly to fixate**: **Heterophoria**
+      - If **remain deviated**: **Intermittent squint**
+
+⚠️ "2-3 seconds" is the only timing figure in the chapter and the only number in the
+   examination section outside the Hirschberg figure.
+
+*** END OF CHAPTER 15. Printed 204 begins chapter 16 (Paediatric Ophthalmology). ***
+
+
+================================================================================
+EVERY NUMBER THE CHAPTER PRINTS — collected, because the module has almost none
+================================================================================
+| Number | What it measures | Printed page | Where |
+|---|---|---|---|
+| **8-10 years** | age before which strabismus causes amblyopia | 197 | prose |
+| **under age 6** | below this, concomitant squint is *rarely* serious neurologic disease | 198 | prose |
+| **2-4 years** | usual age of manifestation of refractive (accommodative) esotropia | 199 | prose |
+| **first year of life** | onset of infantile esotropia | 199 | prose |
+| **before the age of 6 months** | congenital esotropia — the group for which surgery is particularly necessary | 201 | prose |
+| **within 6 months** | window for spontaneous resolution of traumatic/diabetic paralytic strabismus | 201 | prose |
+| **3rd, 4th, 6th** | the cranial nerves of paralytic strabismus | 200 | prose |
+| **0 / 15 / 30 / 45 / 70** | Hirschberg reflex positions on the eye | 202 | **FIGURE ONLY** |
+| **0° / 15° / 30° / 45°** | Hirschberg angle chart rows (four rows; no 70° row) | 202 | **FIGURE ONLY** |
+| **2-3 seconds** | cover duration in the alternate cover test | 203 | prose (tutorial page) |
+
+NOT PRINTED ANYWHERE IN THE CHAPTER: any prism dioptre value · any mm-to-degree
+conversion for Hirschberg · any occlusion regime (hours/day, days per year of age) ·
+any surgical dosage (mm of recession/resection) · any figure for prevalence of
+squint or amblyopia · any visual-acuity threshold for amblyopia.
+
+
+================================================================================
+NOT COVERED BY THIS CHAPTER
+================================================================================
+Checked page by page across printed 196–203. Absent means absent from THIS chapter;
+it may appear elsewhere in the book.
+
+BASIC SCIENCE / SENSORY
+  1. Extraocular muscle anatomy, actions, origins/insertions and nerve supply:
+     ABSENT, and explicitly delegated twice — "Examination chapter (page 15)" for
+     nerve supply and action, "Examination chapter (Page 16)" for EOM testing.
+     Chapter 1 has NOT been read.
+  2. Binocular single vision, the grades of BSV (simultaneous perception, fusion,
+     stereopsis), Worth's classification: absent. "Fusion" is used four times and
+     never defined beyond "(binocular vision)".
+  3. Retinal correspondence, abnormal retinal correspondence, the horopter, Panum's
+     area: absent.
+  4. Suppression as a mechanism: named once ("secondary development of suppression
+     to overcome double vision", printed 198) and never developed. No suppression
+     testing.
+  5. Confusion: named once alongside diplopia (printed 197) and never explained.
+  6. Diplopia characterisation (uncrossed vs crossed, image separation, red-glass /
+     Maddox rod / Hess chart / Lees screen): absent entirely.
+  7. Primary vs secondary deviation, and the nine diagnostic positions of gaze:
+     absent as named concepts.
+
+AMBLYOPIA
+  8. A definition of amblyopia: ABSENT. It is named five times and never defined.
+  9. Classification of amblyopia (strabismic / anisometropic / ametropic /
+     stimulus-deprivation): absent. Only "strabismic amblyopia" is named.
+ 10. The critical/sensitive period beyond the bare "8-10 years": absent.
+ 11. Amblyopia treatment beyond the tutorial-marked word "patching": ABSENT. No
+     occlusion regime, no atropine penalisation, no optical penalisation, no
+     follow-up interval, no reversal/occlusion-amblyopia warning.
+ 12. Amblyopia screening, vision screening ages, or who to refer and when: absent.
+
+CLASSIFICATION AND SPECIFIC ENTITIES
+ 13. Non-accommodative and partially accommodative esotropia, and the AC/A ratio:
+     absent — the whole accommodative-convergence quantification is missing.
+ 14. Convergence excess and divergence insufficiency esotropia; convergence
+     insufficiency; divergence excess exotropia: absent.
+ 15. Distinction of basic / distance / near exotropia: absent.
+ 16. Duane retraction syndrome, Brown syndrome, Möbius syndrome, congenital fibrosis
+     of the extraocular muscles, monocular elevation deficiency: ABSENT ENTIRELY —
+     the chapter names no strabismus syndrome at all.
+ 17. A- and V-patterns, oblique overaction, dissociated vertical deviation (DVD):
+     absent.
+ 18. Microtropia / monofixation syndrome: absent.
+ 19. Thyroid eye disease as a restrictive cause: named once in passing ("the
+     restrictive ophthalmopathy of thyroid disease", printed 198) and never
+     developed. Myasthenia gravis is NOT named in this chapter at all (it is in
+     chapter 14).
+ 20. Nystagmus: absent from this chapter (chapter 14 covers it).
+ 21. Abnormal head posture / ocular torticollis beyond "head tilt": absent.
+
+EXAMINATION
+ 22. Krimsky test and prism cover test: ABSENT. No prism-based measurement of any
+     kind, therefore no prism dioptre anywhere in the chapter.
+ 23. The 4-dioptre base-out test, the 20-dioptre test: absent.
+ 24. Synoptophore, Bagolini glasses, Worth 4-dot test, stereoacuity tests (Titmus,
+     TNO, Lang): absent.
+ 25. Forced duction test and force generation test: absent, despite restrictive
+     strabismus being a named category.
+ 26. Preferential looking / paediatric visual acuity methods: absent ("Visual acuity
+     (amblyopia ??)" is the whole of it).
+ 27. Which cycloplegic, at what age, at what concentration: absent — "Refraction
+     (cycloplegic)" names no drug.
+
+MANAGEMENT
+ 28. Named strabismus surgery of any kind — recession, resection, plication,
+     transposition, adjustable sutures, Faden: ABSENT. "Surgery" and "surgical
+     correction" are the whole vocabulary. No mm of surgery, no which-muscle
+     decision rule.
+ 29. Complications of strabismus surgery (slipped/lost muscle, anterior segment
+     ischaemia, perforation, over/undercorrection, reoperation rate): absent.
+ 30. Botulinum toxin: absent.
+ 31. Prisms as treatment, orthoptic exercises, convergence exercises: absent.
+ 32. Timing of surgery relative to visual development, and postoperative
+     follow-up intervals: absent beyond "before the age of 6 months" identifying the
+     congenital group.
+ 33. Management of diplopia in adults (occlusion, Fresnel prism): absent.
+
+DELEGATED (present in the book, but NOT in this chapter)
+ 34. Nerve supply and action of the extraocular muscles → "Examination chapter
+     (page 15)".
+ 35. Extra-ocular muscle testing → "Examination chapter (Page 16)".
+ 36. Third, fourth and sixth nerve palsy in neurological depth → chapter 14
+     Neuro-ophthalmology, printed 182–186 (already cached at
+     `content\ophtho\book\ch14-neuro-ophthalmology.txt`).
+
+
+================================================================================
+HOW THIS COMPARES WITH THE LECTURES (L29 + L30)
+================================================================================
+`L29` and `L30` are 58 pages holding **415 words** between them, which is why
+`op-squint` has been sitting on the 600-word floor. This chapter is 8 printed pages
+and its examinable half is only 6. Everything below is in the book and cannot be in
+415 words; listed so it is not re-derived:
+
+  the pseudostrabismus definition and its two named causes · amblyopia before 8–10
+  years vs diplopia later · the four-way direction classification with its four
+  photographs · comitant vs incomitant defined by whether the angle varies with gaze,
+  with the under-6 / later-in-life neurologic rule · the three-row incomitance
+  demonstration figure · heterophoria vs heterotropia vs tropia · refractive
+  esotropia at 2–4 years with the near-reflex triad · infantile esotropia in the
+  first year · intermittent exotropia · sensory strabismus · restrictive strabismus
+  with the orbital-floor/inferior-rectus example · the three nerve palsies with
+  their resulting deviations, ptosis masking diplopia, and the circle-of-Willis
+  aneurysm warning · the four causes of paralytic strabismus and the
+  diabetes-plus-MRI rule · glasses vs surgery vs patching · the 6-month spontaneous
+  resolution window · and the whole tutorial examination sequence — history,
+  inspection, corneal light reflex, the Hirschberg figure with its degree scale, the
+  cover / cover–uncover comparison table, and the alternate cover test with its
+  2–3 seconds and its three-way interpretation.
+
+⚠️ Everything in that last sentence — the entire examination sequence — is inside
+   the two pages the book marks "skip in final". `op-squint` holds 6 questions; if
+   any of them is an examination question, the answer is in tutorial-marked
+   material, and the theory chapter should say so rather than presenting it as core.
