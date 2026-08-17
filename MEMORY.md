@@ -13,11 +13,11 @@ there before resuming a paused stream. Where this file and the archive disagree,
   there rather than here because this file is capped at 200 lines. Do not re-derive any of it.
 - **Ophtho is 28 chapters, not 26** — three splits, all recorded in `modules.js` with their
   reasoning: `op-orbit`/`op-orbit-mass`, `op-cornea`/`op-cornea-surg`, `op-cat`/`op-cat-surg`.
-  ✅ Twelve written and **individually printed** 2026-08-17 (US letter, the machine default):
+  ✅ Thirteen written and **individually printed** 2026-08-17 (US letter, the machine default):
   `op-pupil` 8 · `op-orbit` 9 · `op-orbit-mass` 7 · `op-glauc` **12** · `op-cornea` 9 ·
   `op-cornea-surg` 9 · `op-va` 9 · `op-trauma` 9 · `op-systemic` 10 · `op-insid` 9 · `op-cat` 9 ·
-  `op-cat-surg` 8. **108 pp, mean 9.0** (ENT 8.6, peds 8.3). Boot: **0 console errors**, 136
-  sections, 0 dead `qs` ids, 0 wrong-chapter links, 63/138 questions reachable.
+  `op-cat-surg` 8 · `op-white` 8. **116 pp, mean 8.9** (ENT 8.6, peds 8.3). Boot: **0 console
+  errors**, 144 sections, 0 dead `qs` ids, 0 wrong-chapter links, 63/138 questions reachable.
 - **⚠️⚠️ CHECK A CHAPTER'S QUESTIONS AGAINST ITS ASSIGNED DECK BEFORE BRIEFING IT.** The plan's
   Decks column is an assignment, **not a coverage guarantee**: **none of `op-va`'s 16 questions is
   answerable from `L3,4`**, its only listed deck — they are `L1,2`'s, whose lines 438–613 (866 w)
@@ -29,9 +29,14 @@ there before resuming a paused stream. Where this file and the archive disagree,
   patterns, three worth the render. ✅ `L3,4`, `L10`, `L25` banked — do not re-read. `op-ant` has
   no deck. **~30 §14.5 register rows are ophtho's**; 7 closed, 2 notices, 1 **undeliverable**
   (aniridia/Sturge–Weber — absent from all 27 decks), the rest open.
-- **Next, no render cost:** `op-white` (L33,34, 597 w) · `op-red` (⚠️ a **book chapter**, 5,104 w,
-  the module's largest compression job) · `op-ret` (⚠️ `L20`, 33 pp, owed a read; owed **4**
-  register rows incl. one to merge from two chapters). Then the render debt, costed out loud.
+- **In flight 2026-08-17:** `op-red` (⚠️ a **book chapter**, 5,104 w — the module's largest
+  compression job, briefed split-decision-first) · **the `L20` visual read** (33 pp, the first
+  bite of the render debt, taken because `op-ret` needs it and it is the smallest owed deck).
+  `op-ret` is then owed **5** register rows, incl. **one DR row opened twice** by `op-systemic`
+  and `op-insid` against different decks — **write it ONCE, against both.**
+- **⚠️ `op-uvea` IS THE MODULE'S MOST BLOCKED CHAPTER** — four register rows owed to it and
+  `L13,14` extracts **zero characters over 41 pp with no cache at all**. **Count a chapter's
+  register rows before briefing it**; a question count does not predict what it has been handed.
 - **⚠️ Interview item, batched, not yet asked:** `L23` prints `(Fig 9-8)`/`(Fig 9-14)` in book
   prose and `L37) Red Eye` is "CHAPTER 4" of an unnamed AAO-family primer — **`L23` is very
   probably Chapter 9 of the same book.** Nothing is cited as a book chapter yet; settle both
