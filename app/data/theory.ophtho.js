@@ -634,5 +634,219 @@ var T_OPHTHO = {
         ]
       }
     ]
+  },
+  "op-va": {
+    "intro": "The first four of the five vital signs, plus the inspection run. Acuity is a fraction and a ladder; the pinhole splits optical blur from disease; the field test is chosen by the acuity; then nine structures are looked at in a fixed order.",
+    "sections": [
+      {
+        "id": "va-1",
+        "w": "know",
+        "h": "The examination — the order it is done in, and the tools",
+        "body": "### The six steps, in the deck’s own order\n1. **Inspection:** eyelids, lacrimal, orbit, conjunctiva, cornea, sclera, iris, lens.\n2. **Anterior chamber:** depth and contents.\n3. **Pupillary reactions.**\n4. **Intraocular pressure (IOP) evaluation.**\n5. **Extraocular muscle actions.**\n6. **Fundus examination.**\n\n**The five vital signs of the eye:** visual acuity · visual field · pupils · extraocular movements · fundus — **± IOP** as the sixth.\n\n### The five tools\n- **Penlight** · **mydriatic eyedrops** · **topical anaesthetic drops** · **direct ophthalmoscope** · **fluorescein strips**.\n- **Named on the slide photographs:** tropicamide, **BENOX 0.4 %** (benoxinate), **FUL-GLO** fluorescein strips.\n\n### The slit lamp\n- **Used by:** the ophthalmologist, for the **anterior segment**.\n- **Also used for:** the **red reflex** and **fundus examination (biomicroscopy)**.\n\n*Steps 3–6 are written in `op-pupil`; the IOP number and its meaning in `op-glauc`.*\n\nSrc: L3,4 sl.2–4; L1,2 lines 390–437 (cited only, not counted)",
+        "qs": []
+      },
+      {
+        "id": "va-2",
+        "w": "must",
+        "h": "Visual acuity — the definition, the fraction, and the charts",
+        "body": "**Visual acuity:** a measurement of the **smallest object a person can identify at a given distance**, compared with normal.\n\n**Recorded as a ratio** comparing the patient with a normal person.\n\n### The fraction, and what each number is\n\n- **The formula:** VA = **testing distance (6 m) ÷ the smallest line read**.\n- **Upper number:** the distance **the chart is from the patient** — always **6 m**.\n- **Lower number:** the distance **a normal eye reads that line from**.\n- **So 6/12 means:** sees at **6 m** what a normal eye sees at **12 m**.\n- **6 m (20 ft):** taken as **optical infinity** — accommodation at rest.\n\n### The three charts\n- **Snellen chart:** letters. Needs literacy.\n- **E-chart:** which way the strokes of the **E** point.\n- **Landolt C-chart:** where the **C’s opening** lies.\n\n### The conversion table\n\n|Metres|Feet|Decimal|\n|---|---|---|\n|**6/6**|20/20|**1.0**|\n|6/7.5|20/25|0.8|\n|6/9|20/30|0.67|\n|**6/12**|20/40|**0.5**|\n|**6/18**|20/60|0.33|\n|6/24|20/80|0.25|\n|6/30|20/100|0.2|\n|6/36|20/120|0.16|\n|**6/60**|20/200|**0.1**|\n|6/120|20/400|0.05|\n\nSrc: L1,2 lines 438–470",
+        "qs": [
+          "opqb-t1-38"
+        ]
+      },
+      {
+        "id": "va-3",
+        "w": "high",
+        "h": "Testing acuity at six metres — the method, and how it is recorded",
+        "body": "### The eight steps\n1. **Ensure good illumination** of the room and the chart.\n2. **Position the patient at 6 metres** from the chart, sitting or standing.\n3. **Test one eye at a time** — **first without, then with spectacles** if available.\n4. **Occlude the other eye** with a plain occluder, card or palm — **never pressing on the eye**.\n5. **Ask for the direction** of the E strokes or the C opening, or for the Snellen letters.\n6. **Start at the top of the chart** (the **6/60 optotype**) and work downwards.\n7. **Record the smallest line read as a fraction** — e.g. 6/18.\n8. **Repeat for the other eye.**\n\n### Recording\n- **Report each eye separately, right eye first**, and state **with or without correction**.\n- **The deck’s own example:** without correction Rt 6/18, Lt 6/24; with correction Rt 6/6, Lt 6/12.\n\n*Pressing on the occluded eye distorts its cornea and invalidates the next reading (not in course material).*\n\nSrc: L1,2 lines 471–508",
+        "qs": []
+      },
+      {
+        "id": "va-4",
+        "w": "must",
+        "h": "The pinhole test — the one step that splits optical blur from disease",
+        "body": "**The trigger, verbatim:** \"**If 6/6 is not achieved, repeat VA testing using a pinhole occluder** (with or without spectacles).\"\n\n**The principle, verbatim:** \"**The use of the pinhole reduces the need to focus light entering the eye.**\"\n\n### Reading the result\n\n|Pinhole result|The cause is|What follows|\n|---|---|---|\n|**VA IMPROVES**|**refractive error**|correctable with **spectacles or a new prescription**|\n|**VA WORSENS or does not improve**|**another ocular pathology**|the media, retina or optic nerve — dilate and examine|\n\n- **⚠️ The trap:** failing with the patient’s **own** glasses does **not** exclude refractive error — an out-of-date prescription is itself one.\n\n### Why worsening points at the MACULA\n- **The optics:** a pinhole **cuts retinal illumination** and restricts the image to the **central fovea alone** *(not in course material)*.\n- **The result:** a diseased fovea gets dimmer light and no optical help, so **macular oedema and AMD read worse** *(not in course material)*.\n- **Improve instead:** early cataract, myopic and hyperopic astigmatism, keratoconus.\n\n*The pinhole is also called a **stenopic aperture** — the same instrument, and the term the bank uses (not in course material).*\n\nSrc: L1,2 lines 509–517",
+        "qs": [
+          "opqb-t1-25",
+          "opqb-t1-26",
+          "opqb-t2-84",
+          "opqb-t2-92"
+        ]
+      },
+      {
+        "id": "va-5",
+        "w": "must",
+        "h": "When the top letter cannot be read — the low-vision ladder",
+        "body": "**The question the deck asks:** \"What if the patient cannot read the largest (top) letter at 6 metres?\" Taken strictly in order.\n\n### The ladder\n1. **Walk the patient in —** one metre at a time, until the top letter is seen. **Record as 5/60, 4/60, 3/60**; the numerator is the new distance.\n2. **Nothing at 1 metre — count fingers.** Extend **two or more fingers** at varying distances **under 1 metre**.\n3. **Record the distance** at which counting is accurate — e.g. **CF 50 cm**.\n4. **Cannot count fingers — wave your hand.** If seen, record **hand movements (HM)**.\n5. **Cannot detect hand motion — shine a torch.** Seen = **perception of light (PL)**; not seen = **no perception of light (NoPL / NPL)**.\n\n### The ladder as one line\n**6/60 → 5/60 → 4/60 → CF → HM → PL → NPL.** Each rung is only tried after the one above has failed, and **NPL is the floor** — an eye with no light perception at all.\n\nSrc: L1,2 lines 518–543",
+        "qs": [
+          "opqb-t1-27",
+          "opqb-t1-28"
+        ]
+      },
+      {
+        "id": "va-6",
+        "w": "must",
+        "h": "The pre-verbal child, referral, and the blindness figure",
+        "body": "**The problem:** every method above needs a patient who can name a letter or point a direction. **Under about three years none of them work** *(not in course material)*.\n\n### Testing a child who cannot read\n- **E-chart / Landolt C:** the deck’s literacy-free charts — but a direction must still be indicated.\n- **CSM:** the **fixation** test, and the bedside standard in infants *(not in course material)*.\n- **Preferential looking:** paired blank and striped cards; the finest stripe the infant looks at gives an acuity *(not in course material)*.\n\n### CSM, and objection to occlusion\n- **C — Central:** the corneal light reflex sits **centrally**.\n- **S — Steady:** fixation held, **no wandering or nystagmus**.\n- **M — Maintained:** fixation **held when the other eye is uncovered**.\n\n- **⚠️ The rule:** a child objects to having the **GOOD** eye covered — it forces vision through the bad one *(not in course material)*.\n- **Reading it:** resisting occlusion of the **RIGHT** eye means the right eye is better, so the **LEFT** is amblyopic.\n\n### The two thresholds\n- **Referral:** the deck’s trigger is that **6/6 was not achieved**. Below 6/6 uncorrected by pinhole, or with symptoms, is referred *(the rule is not in course material)*.\n- **Blindness (WHO):** **best-corrected VA ≤ 3/60** in the better eye *(not in course material)*.\n- **⚠️ A wording difference:** WHO writes the category **< 3/60**; the bank prints **≤ 3/60** and keys it — noted, key as printed.\n\nSrc: L1,2 lines 459, 509–512 (the 6/6 trigger); CSM, preferential looking, the referral rule and the 3/60 figure supplied and tagged — zero hits across all 27 cached decks",
+        "qs": [
+          "opqb-t1-29",
+          "opqb-t1-30",
+          "opqb-t2-78",
+          "opqb-t1-63",
+          "opqb-t1-39"
+        ]
+      },
+      {
+        "id": "va-7",
+        "w": "must",
+        "h": "Visual field testing — the acuity chooses the test",
+        "body": "### Which test, and when\n\n|Test|Requirement / scope|\n|---|---|\n|**Confrontation**|**VA = 1/60 or better**|\n|**Light projection**|**VA less than 1/60**|\n|**Amsler grid**|the **central 10°** of the field|\n|**Perimetry**|**manual** or **automated**|\n\n- **Confrontation first:** no equipment, and it gives **gross detection of significant field defects**.\n\n### Confrontation — the method\n1. **Sit ONE metre in front of the patient**, both your eyes level with theirs.\n2. **The patient covers the left eye** with the left palm.\n3. **You close your right eye** — preferably with your palm.\n4. **The patient fixates your left eye**, then **counts your fingers** held midway, in each of **the 4 quadrants**.\n5. **Repeat for the patient’s left eye**, then **record the result**.\n\n**The principle:** the **examiner’s left eye** field is the reference for the **patient’s right eye**, and vice versa.\n\n### The N.B. on the slide\n- **Alternative:** advance a finger **from the periphery** — superior, temporal, inferior, nasal — until **first seen**.\n- **⚠️ Limitation:** gives the field’s **outlines** but **not which quadrants are affected**.\n\n### Light projection\n- **For an eye below 1/60.** Penlight, other eye occluded.\n- **From each quadrant:** superior, inferior, temporal, nasal — the patient names the direction.\n- **Recorded as:** **good light projection (GLP)** or **bad light projection (BLP)**.\n\nSrc: L1,2 lines 544–613",
+        "qs": [
+          "opqb-t1-31",
+          "opqb-t1-40",
+          "opqb-t1-41"
+        ]
+      },
+      {
+        "id": "va-8",
+        "w": "know",
+        "h": "Colour vision — the complementary test",
+        "body": "- **On the slide:** one of the three **complementary tests** — with upper-eyelid eversion and fluorescein staining. Named, and no more.\n\n### The test itself\n- **Ishihara pseudo-isochromatic plates:** the standard screen for **red–green** defects *(not in course material)*.\n- **How they work:** dots differ from the background **in hue but not brightness**, so only a normal trichromat reads the numeral *(not in course material)*.\n- **Not tested by them:** blue–yellow (tritan) defects, and acuity *(not in course material)*.\n\n*L1,2 lists **colour blindness** among the presenting symptoms; the symptom is `op-vissym`’s.*\n\nSrc: L1,2 lines 424–428 (cited only, not counted); Ishihara supplied and tagged — the only \"Ishihara\" string in all 27 cached decks is L3,4’s own NOT-COVERED note",
+        "qs": [
+          "opqb-t1-52"
+        ]
+      },
+      {
+        "id": "va-9",
+        "w": "know",
+        "h": "Eyelid, lacrimal and orbit — the inspection checklist",
+        "body": "**These slides are labelled photographs.** The deck teaches *what to look for and name*; the diseases themselves belong to the chapters cited below.\n\n### Eyelid — \"you may find\"\n- **Stye** — acute lash-follicle abscess at the lid margin.\n- **Chalazion** — chronic painless meibomian granuloma in the tarsus.\n- **Entropion** — lid margin turned **in**; the lashes rub the cornea.\n- **Ectropion** — lid margin turned **out**; the punctum leaves the tear lake.\n- **Ptosis** — drooping upper lid.\n- **Lagophthalmos** — the lids **fail to close**, so the cornea dries.\n- **BCC** — basal cell carcinoma, the commonest lid malignancy.\n- **Xanthelasma** — yellow lipid plaques, typically medial.\n\n### Lacrimal — \"you may find\"\n- **Dacryoadenitis** — inflamed lacrimal **gland**; swelling is **upper outer** lid.\n- **Dacryocystitis** — inflamed lacrimal **sac**; swelling is **below the medial canthus**.\n- **+ve Regurge** — pressure over the sac returns fluid through the punctum, proving **nasolacrimal duct obstruction**.\n\n### Orbit\n- **Proptosis:** the only orbital sign this deck shows — a lateral view and a **\"worm’s-eye\" (submental) view** to compare globe projection between the two sides.\n\n*Lid disease is `op-lid`’s (`L5`), the lacrimal system `op-lac`’s (`L9`), and proptosis in full — mechanisms, causes by age, direction, the >20 mm and 2–3 mm numbers — is already written in `op-orbit`.*\n\n*Every gloss above beyond the printed label is not in course material.*\n\nSrc: L3,4 sl.5–8",
+        "qs": []
+      },
+      {
+        "id": "va-10",
+        "w": "high",
+        "h": "Conjunctiva — everting the upper lid, and what is then seen",
+        "body": "### Why evert\n- **To search for a conjunctival foreign body**, or other conjunctival signs.\n\n### The technique\n1. **Ask the patient to look DOWN** and keep looking down.\n2. **Grasp the upper lashes** between thumb and index finger.\n3. **Press gently downward with a cotton-tipped applicator** over the **superior border of the tarsal plate**.\n4. **Pull the lid margin upward by the lashes** as you press — the lid flips over the applicator.\n5. **Inspect the exposed conjunctival surface with the penlight** for a foreign body or other abnormality.\n6. **A foreign body can be removed** with a cotton-tipped applicator **soaked in topical anaesthetic**.\n\n- **To reverse it:** **release the lid margin** and ask the patient to **look up**, or simply **blink**.\n\n### What you may find\n- **Papillae · follicles · giant papillae** — the three surface reaction patterns.\n- **Pterygium · scarring T4** (trachomatous scarring grade) **· PTCs** (pale trachomatous / conjunctival concretions).\n\n### Redness — three appearances, three meanings\n- **Conjunctival injection:** superficial vessels, **maximal in the fornices**, mobile over the sclera.\n- **Ciliary injection:** deep vessels, **maximal around the limbus** — a **circumcorneal flush**, and the sign of keratitis, iritis or acute glaucoma.\n- **Subconjunctival haemorrhage:** a flat sheet of blood with **no vessels visible within it**.\n\n*The injection distinctions beyond the three printed labels are not in course material; the full discrimination is `op-red`’s and `op-conj`’s.*\n\nSrc: L3,4 sl.9–13",
+        "qs": []
+      },
+      {
+        "id": "va-11",
+        "w": "high",
+        "h": "Cornea — the signs, and staining with fluorescein",
+        "body": "### What you may find\n- **Foreign body** · corneal erosion · erosion stained with fluorescein.\n- **Opacity (scarring)** · infective keratitis · dendritic ulcer — the dendritic ulcer being herpes simplex.\n\n### Fluorescein staining — the method, in full\n- **What it is:** a **yellow dye** that gives a **green colour** when illuminated with the **cobalt blue filter** of the ophthalmoscope or slit lamp.\n- **What it is for:** **diagnosing defects of the corneal EPITHELIUM**.\n- **How it is applied:** a **sterile filter-paper strip**, **moistened with topical anaesthetic**, then **touched to the palpebral conjunctiva**.\n- **How it spreads:** **a few blinks** carry it over the cornea.\n- **How it reads:** **areas of bright-green staining denote absent or diseased epithelium**.\n\n*Corneal disease itself is `op-cornea`’s (`L15,16`), which is text-sufficient.*\n\nSrc: L3,4 sl.14–16",
+        "qs": []
+      },
+      {
+        "id": "va-12",
+        "w": "know",
+        "h": "Sclera and iris — what the deck shows",
+        "body": "### Sclera — \"you may find\"\n- **Episcleritis** — superficial, sectoral, **usually painless**, self-limiting.\n- **Scleritis** — deep, **boring pain**, a violaceous hue, and sight-threatening.\n\n### Iris — \"you may find\"\n- **Iridodialysis** — the iris root **torn from the ciliary body**, leaving a **D-shaped peripheral gap**. Blunt trauma.\n- **Posterior synechiae** — the iris **adherent to the anterior lens capsule**; the pupil dilates irregularly. Uveitis.\n- **Rubeosis iridis** — **new vessels on the iris surface**, from retinal ischaemia.\n\n*Episcleritis vs scleritis in full, and the uveal disease behind synechiae, are `op-sclera`’s and `op-uvea`’s (`L13,14`). The festooned pupil of synechiae is in `op-pupil`; rubeosis and its retinal cause are in `op-glauc` and `op-ret`.*\n\n*Every gloss above beyond the printed label is not in course material.*\n\nSrc: L3,4 sl.17–18",
+        "qs": []
+      },
+      {
+        "id": "va-13",
+        "w": "must",
+        "h": "Lens — how it is examined, and what the pupil colour means",
+        "body": "### How the lens is examined\n- **Focal illumination** · slit lamp · direct ophthalmoscope.\n\n### ⚠️ Pupil colour — the slide, in full\n\n|Pupil colour|What it is|Red reflex|\n|---|---|---|\n|**Black**|**newly born**, and **aphakia** — clear media, no lens|bright and full|\n|**Greyish, in old age**|**Nuclear sclerosis**|**BRIGHT RR**|\n|**Greyish, in old age**|**IMSC** (immature senile cataract)|**DIM RR**|\n|**Leukocoria (white)**|**Mature cataract**|absent|\n\n- **⚠️ The discriminator:** the reflex, not the colour. Both look grey through the pupil; **nuclear sclerosis keeps a bright red reflex** because the opacity is dense but small and central, while **an immature senile cataract dims it** because the cortex is diffusely cloudy.\n\n*`L18` describes the nuclear reflex as \"altered / central dark nucleus\" rather than \"bright\" — noted; L3,4 is this chapter’s deck and prints **bright RR**.*\n\n### The four cataract appearances\n- **IMSC** — immature senile cataract; **incomplete opacification of the cortex**.\n- **MSC** — mature senile cataract; **totally opaque white lens**.\n- **Hypermature, shrunken type** — **shrinkage of the capsule, liquefaction of the cortex**, wrinkled capsule.\n- **Morgagnian** — **liquefied cortex with the nucleus sinking** within the capsule.\n\n### Two more lens signs\n- **Opacities:** appear as DARK SHADOWS against the red reflex — silhouetted, so a small opacity is seen long before it whitens the pupil.\n- **The lens may be SUBLUXATED** — a displaced lens edge is seen crossing the pupil.\n\nSrc: L3,4 sl.19–23; L17 lines 139–147, L18 lines 168–197 (`op-cat`’s decks — cited only, not counted)",
+        "qs": []
+      },
+      {
+        "id": "va-14",
+        "w": "must",
+        "h": "The anterior chamber — depth, and contents",
+        "body": "### ⚠️ Assessing depth — the penlight (eclipse) test\n1. **Shine a light from the TEMPORAL side of the head**, across the front of the eye, **parallel to the plane of the iris**.\n2. **Look at the NASAL aspect of the iris.**\n\n- **⚠️ The rule, verbatim —** if **two-thirds or more of the nasal iris is in shadow**, the chamber is **probably shallow** and the **angle narrow**.\n- **Why it works:** a forward-bowed iris casts its own shadow nasally; a deep chamber lets the beam wash across evenly *(not in course material)*.\n- **Graded on the slit lamp as:** **shallow · normal · deep.**\n\n### Causes — the table\n\n|Shallow AC|Deep AC|\n|---|---|\n|**Hypermetropia**|**High myopia**|\n|**Angle closure glaucoma**|**Aphakia**|\n|**Intumescent cataract**|**Buphthalmos**|\n|**Perforated corneal ulcer**|—|\n|**Leakage from a surgical wound**|—|\n\n- **The pattern:** a **short eye or a swollen lens** crowds the chamber; a **long eye or no lens** empties it. The two trauma entries — perforation and wound leak — drain aqueous, so the chamber collapses.\n\n### Contents\n- **Blood — hyphaema.**\n- **Pus — hypopyon.**\n- **Cells & flare — uveitis.**\n\n*The clinical consequence — never dilate an occludable angle, and what to do instead — is written in `op-glauc`.*\n\nSrc: L3,4 sl.24–27",
+        "qs": []
+      }
+    ]
+  },
+  "op-trauma": {
+    "intro": "Trauma is taught as four questions asked in order: is the globe open, was it chemical, was it blunt or sharp, and what has happened behind the eye. Chemical injury is the one emergency treated before it is examined.",
+    "sections": [
+      {
+        "id": "trm-1",
+        "w": "must",
+        "h": "Chemical injury — the most urgent emergency, and why alkalis are worse",
+        "body": "- **The rule:** chemical injuries are the **MOST URGENT ophthalmic emergency**.\n- **Who treats it:** the **first person who sees the patient**, not the ophthalmologist.\n- **⚠️ Alkali vs acid:** **alkali burns are TWICE AS COMMON** — alkalis are more widely used.\n\n### The two chemistries\n\n|  |**ALKALIS**|**ACIDS**|\n|---|---|---|\n|Examples|**NaOH, KOH, Ca(OH)₂, NH₄**|**H₂SO₄, HCl, HNO₃, hypochlorite**|\n|Mechanism|**combine with cell membrane LIPID and stromal MUCOPOLYSACCHARIDES**|**COAGULATE surface proteins**|\n|Result|**DEEP penetration, continuing for WEEKS**|the coagulum is a **PROTECTIVE BARRIER** against further penetration|\n|Damage|**MORE**|less|\n\n- **Third category:** **tear gas compounds**.\n\n### What decides severity — three things\n- **The properties of the chemical.**\n- **The AREA of ocular surface affected.**\n- **The DURATION of exposure.**\n\nSrc: L25 slides 2–4; L26 (chemical names and the two mechanisms)",
+        "qs": []
+      },
+      {
+        "id": "trm-2",
+        "w": "must",
+        "h": "What the burn does to the eye — the surface, the stroma, and the three stages",
+        "body": "### The surface\n- **Epithelium:** conjunctival and corneal **epithelial damage**.\n- **⚠️ LIMBAL ISCHAEMIA:** occlusion of the limbal vessels and **loss of LIMBAL STEM CELLS**.\n- **Consequence:** **persistent corneal epithelial defects** with **sterile corneal ulceration and perforation**.\n\n### The stroma\n- **Deep penetration** gives **corneal stromal opacification**, by **denaturation of the collagen bundles**.\n\n### The sequelae\n- **Late:** dry eye · symblepharon · cicatricial entropion · corneal scarring and vascularization.\n\n### The three stages of a severe injury\n\n|Stage|When|Conjunctiva|Cornea|IOP|\n|---|---|---|---|---|\n|**Immediate acute**|**3 days**|**epithelial necrosis, chemosis, LIMBAL BLANCHING**|epithelial necrosis, oedema, opacification|**RAISED — collagen shrinkage**|\n|**Subacute**|**3–7 days**|active inflammatory destruction of tissues|**ULCERATION and PERFORATION**|—|\n|**Late / chronic**|**> 7 days — CICATRIZATION**|scarring → **dry eye, symblepharon, entropion**|scarring, vascularization, opacification|**RAISED — scarring of the EPISCLERAL VENOUS PLEXUS**|\n\n- **⚠️ The IOP rises TWICE:** early from **collagen shrinkage**, late from **episcleral venous scarring**.\n\nSrc: L25 slides 5–6; L26 (the three stages)",
+        "qs": []
+      },
+      {
+        "id": "trm-3",
+        "w": "must",
+        "h": "Grading a chemical injury — limbal ischaemia is the axis",
+        "body": "|Grade|Limbal ischaemia|Cornea|Prognosis|\n|---|---|---|---|\n|**I**|**NONE**|clear, **only epithelial damage**|**good** (`L26`: excellent)|\n|**II**|**< 1/3**|**HAZY but iris details VISIBLE**|**good**|\n|**III**|**1/3 – 1/2**|**total epithelial loss, stromal haze, iris details OBSCURED**|**guarded**|\n|**IV**|**> 1/2**|**OPAQUE — iris AND pupil obscured**|**poor** (`L26`: very poor)|\n\n- **⚠️ The axis:** LIMBAL ISCHAEMIA, not corneal haze. The corneal column follows it; the fractions are what separate the grades.\n- **The name:** this is the **ROPER-HALL** classification, graded I–IV on limbal ischaemia — named in `L15,16`, not in either trauma deck.\n\n*Defect note: both decks print the same four grades and the same fractions with different prognosis wording — `L25` good/good/guarded/poor, `L26` excellent/good/guarded/very poor. Neither is treated as the error.*\n\nSrc: L25 slides 7–8; L26 (grading); L15,16 (the Roper-Hall name), cited only",
+        "qs": []
+      },
+      {
+        "id": "trm-4",
+        "w": "must",
+        "h": "First aid — irrigation comes before examination",
+        "body": "- **⚠️ START IMMEDIATELY**, by the health care provider; **call an ophthalmologist** at the same time.\n- **COPIOUS IRRIGATION — saline 2 L over 15–30 min.**\n\n### Why irrigation, and why first\n- **To restore the pH of the conjunctival sac** towards normal **as rapidly as possible**.\n- **To decrease the duration of contact** with the chemical.\n\n### Eversion of the upper eyelid\n- **Retained PARTICULATE MATTER** trapped in the **conjunctival fornices** is identified and removed.\n- **With a sterile COTTON SWAB.**\n\n### The emergency-room sequence\n- **Surface anaesthetic**, then **sedation or analgesics**.\n- **Separate the lids** · evert the lids · remove particulate matter.\n- **Irrigation:** copious saline, 2 L over 1 hour.\n- **⚠️ MONITOR WITH LITMUS PAPER** — the end point is a normal pH, not a fixed volume.\n\n### Antidotes\n\n|Agent|Antidote|\n|---|---|\n|**Alkalis**|**boric acid 4 %**|\n|**Lime**|**EDTA**|\n|**Acids**|**sodium bicarbonate 3 %**|\n|**Iodine**|**starch**|\n|**Aniline dyes**|**glycerine**|\n\n*Defect note: the two decks give different irrigation timings for the same 2 L — `L25` 15–30 min, `L26` \"2 L over 1 hour\" in the emergency room. Written as two stages, which is how `L26` lays it out.*\n\nSrc: L25 slides 9–10; L26 (the ER sequence, litmus monitoring and the antidotes)",
+        "qs": []
+      },
+      {
+        "id": "trm-5",
+        "w": "must",
+        "h": "Medical and surgical treatment of a chemical burn",
+        "body": "### Topical\n- **Cycloplegic drops** · antibiotic drops · eye patching.\n- **STEROID drops** — to decrease inflammation.\n- **CITRIC ACID** — to inhibit **neutrophil activity**.\n- **Lubricants.**\n\n### Topical and systemic\n- **ASCORBIC ACID** — to **enhance collagen production**.\n- **TETRACYCLINES / systemic DOXYCYCLINE** — to inhibit **COLLAGENASE** and neutrophil activity.\n\n### Systemic\n- **Calcium chelators — EDTA, PENICILLAMINE** — to inhibit collagenase.\n- **Raised IOP:** **oral acetazolamide** or topical medications.\n- **Bandage soft contact lens.**\n- **⚠️ Prevention of SYMBLEPHARON:** **lysis of newly forming adhesions with a sterile GLASS ROD**.\n\n### Surgical\n- **Paracentesis · necrosectomy.**\n- **Conjunctival graft or flap.**\n- **LIMBAL STEM CELL TRANSPLANTATION** · AMNIOTIC MEMBRANE grafting.\n- **KERATOPLASTY** for opaque corneas.\n- **KERATOPROSTHESIS** — severe cases with **blindness and TOTAL limbal stem cell deficiency**.\n\n### Surgery for the sequelae\n- **Symblepharon management** · entropion surgery · glaucoma surgery.\n- **Correction of cicatrising lid deformities**, e.g. cicatricial entropion.\n\nSrc: L25 slides 11–13; L26 (citric acid, chelators, bandage lens, paracentesis, necrosectomy, complication surgery)",
+        "qs": []
+      },
+      {
+        "id": "trm-6",
+        "w": "know",
+        "h": "Physical injuries — three agents, and what each of them causes",
+        "body": "|Agent|Injury|\n|---|---|\n|**UV rays**|**PHOTOPHTHALMIA · SNOW BLINDNESS**|\n|**IR rays**|**ECLIPSE BLINDNESS · GLASS BLOWER’S CATARACT**|\n|**Irradiation and burns**|**CATARACT · RETINOPATHY · OPTIC NEUROPATHY**|\n\n- **⚠️ The split is by wavelength and by tissue:** **UV burns the SURFACE**, **infrared burns the LENS**, ionising radiation reaches **lens, retina and nerve**.\n- **Cross-check:** `L17` classifies glass blower’s cataract under traumatic → **physical → HEAT**, alongside mechanical trauma. *The full cataract account is `op-cat`’s.*\n\nSrc: L26 (physical injuries); L17 (heat cataract in the traumatic classification), cited only",
+        "qs": []
+      },
+      {
+        "id": "trm-7",
+        "w": "must",
+        "h": "Blunt trauma, front to back — the lesion list, and the two that give uniocular diplopia",
+        "body": "- **Ocular foreign body:** **subtarsal FB** found by **lid eversion**; **corneal FB** seen at the slit lamp. *Removal, rust ring and the burr are in `cor-10`.*\n- **Ecchymosis — the black eye:** periorbital bruising, the commonest visible sign of a blunt blow.\n\n*Surgical emphysema and the orbital floor BLOW-OUT FRACTURE are written in full in `orb-14` — the earliest sign, the entrapped inferior rectus or inferior oblique, infraorbital anaesthesia, the tear drop sign and the never-blow-the-nose rule. Not repeated here.*\n\n### The lesions, front to back\n\n|Lesion|What it is|\n|---|---|\n|**IRIDODIALYSIS**|iris root torn from the ciliary body *(the tear itself is supplied — the slide prints only the name)*. **UNIOCULAR DIPLOPIA**|\n|**VOSSIUS RING**|**pigment ring imprinted on the ANTERIOR LENS CAPSULE** by the pupil margin. **Blunt injury**|\n|**ROSETTE CATARACT**|**the BLUNT-trauma cataract**; **PENETRATING** trauma gives a **DIFFUSE** one|\n|**SUBLUXATION of the lens**|zonular rupture. **UNIOCULAR DIPLOPIA**|\n|**COMMOTIO RETINAE — BERLIN’S OEDEMA**|**retinal oedema with a CHERRY-RED SPOT**|\n|**RETINAL BREAK ± DETACHMENT**|the tear first, then the detachment|\n|**CHOROIDAL RUPTURE**|**concentric crescent TEMPORAL to the disc**|\n\n- **⚠️ UNIOCULAR diplopia:** the deck’s own label, used TWICE — iridodialysis and lens subluxation. **Double vision that persists with the fellow eye covered is a problem INSIDE the eye**, never a muscle or a nerve.\n- **Traumatic cataract management:** **phacoemulsification or ECCE**, timing by severity. *Full account in `op-cat`.*\n\n### ⚠️ What neither trauma deck prints\n*The five below are absent from `L25` by its own not-covered list and from all 27 cached decks; they are not taken from the course material.*\n- **WHITE-EYED blow-out fracture of childhood:** a **trapdoor** fracture with a quiet-looking eye, marked restriction and an oculocardiac reflex — **surgery within 24–48 h**.\n- **Repair window in adults:** **within about 2 weeks**, for persistent diplopia, large floor defects or significant enophthalmos.\n- **MEDIAL WALL fracture:** through the **lamina papyracea**, entrapping the **medial rectus** — the deck says only \"floor ± other orbital wall\".\n- **Orbital ROOF and APEX fractures**, and **traumatic optic neuropathy** — sudden visual loss with an RAPD after blunt head injury.\n\nSrc: L25 slides 15–17, 25, 29–39; L18 (rosette vs diffuse, Vossius ring, phaco/ECCE), cited only; the four fracture facts and the iridodialysis mechanism are supplied and tagged",
+        "qs": []
+      },
+      {
+        "id": "trm-8",
+        "w": "must",
+        "h": "Hyphaema — the grades, the two dangers, and who is admitted",
+        "body": "|Grade|Blood filling the anterior chamber|\n|---|---|\n|**I**|**< 1/3**|\n|**II**|**1/3 – 1/2**|\n|**III**|**> 1/2**|\n|**IV**|**TOTAL**|\n\n- **⚠️ Why an old hyphaema turns black:** **impaired aqueous circulation** means **decreased oxygen**, and the initially red blood **turns very dark**. *The name \"eight-ball hyphaema\" is supplied; the mechanism is the slide’s.*\n\n### Complications — two, and both have a time or a target\n- **⚠️ RE-BLEEDING:** common in the FIRST 5 DAYS.\n- **Uncontrolled high IOP**, which causes: **optic nerve damage** · **BLOOD STAINING OF THE CORNEA** · **CRAO**.\n\n### Treatment\n- **⚠️ HOSPITALISATION IS NOT EVERY CASE.** Admit: **children · SICKLE CELL DISEASE · uncontrolled high IOP · coagulation or bleeding disorders**.\n- **Bed rest at 45 degrees** — upright, so blood layers inferiorly and clears the axis.\n- **Cycloplegic — ATROPINE · topical steroid.**\n- **Antiglaucoma medication** if the IOP is raised.\n\n### Surgical evacuation — two indications\n- **Persistently elevated IOP.**\n- **TOTAL hyphaema lasting more than 5 DAYS.**\n\nSrc: L25 slides 25–28",
+        "qs": []
+      },
+      {
+        "id": "trm-9",
+        "w": "must",
+        "h": "Lacerations and the open globe — three lid levels, two mechanisms, one repair",
+        "body": "### Eyelid laceration — three levels, in rising order of consequence\n- **Skin wound only** — direct closure.\n- **⚠️ Involving the LID MARGIN:** repaired by direct closure — an **initial margin suture**, **partial-thickness lamellar sutures in the tarsus**, then the **margin sutures tied under the skin sutures**.\n- **⚠️ Involving the LACRIMAL CANALICULI** — the medial laceration that must be recognised before it is closed.\n\n### Cornea and sclera — the mechanism names the injury\n\n|Injury|Object|\n|---|---|\n|**RUPTURED GLOBE**|**BLUNT** object — the wall bursts from within|\n|**LACERATION, partial or full thickness**|**SHARP** object|\n\n- **⚠️ OPEN-GLOBE INJURY:** a ruptured globe OR a full-thickness laceration. A partial-thickness laceration is **not** an open globe.\n- **Treatment:** **repaired with sutures**, under general anaesthesia.\n\n### ⚠️ Sympathetic ophthalmia\n*Not taken from the course material — no cached deck defines it, and `L25` lists it as absent despite its own open-globe section.*\n- **What it is:** **bilateral granulomatous panuveitis** after a **penetrating injury** (or intraocular surgery) to one eye.\n- **The words:** the injured eye is the **exciting** eye, the fellow eye the **sympathising** one.\n- **When:** usually **2 weeks to 3 months** after injury; rare, but it is the reason a penetrating injury is repaired promptly and followed.\n\nSrc: L25 slides 40–45; sympathetic ophthalmia is supplied and tagged",
+        "qs": []
+      },
+      {
+        "id": "trm-10",
+        "w": "must",
+        "h": "Intraocular foreign body — three materials, and the scan you must not order",
+        "body": "- **⚠️ The presence of an IOFB:** SUGGESTS GLOBE PENETRATION — it is a marker of an open globe, not a separate problem.\n\n### The three materials\n\n|Material|What it does|\n|---|---|\n|**IRON**|**SIDEROSIS**|\n|**COPPER**|**CHALCOSIS**|\n|**INERT** — stone, glass, plastic, wood|no metallosis|\n\n### Investigation\n- **Plain film X-rays of the head.**\n- **CT SCAN — the workhorse.** It shows the **location and presence of a metallic IOFB**, and the **shape and integrity of the traumatized globe**.\n- **⚠️ DO NOT DO AN MRI** IF A METALLIC IOFB IS SUSPECTED — the single most examinable line in the trauma deck.\n- **Ultrasound may be useful**, including B-scan when the media are opaque.\n\nSrc: L25 slides 46–47, 52–54",
+        "qs": []
+      },
+      {
+        "id": "trm-11",
+        "w": "must",
+        "h": "Ruling out the open globe — the first step, and the five things not to do",
+        "body": "- **⚠️ THE OPEN GLOBE IS RULED OUT** BEFORE the detailed history and the focused examination. It is step 1 of the deck’s own three-step approach, and it comes before everything.\n- **Why:** it is the **MOST DEVASTATING of all eye injuries**.\n- **Suspicious history: HAMMERING**, and any high-velocity metal-on-metal work.\n\n### The four signs of a suspected open globe\n- **PEAKED PUPIL** — iris plugging the wound and pointing at it.\n- **Anterior chamber SHALLOW *or* DEEP** — either direction, depending on where the wall failed.\n- **BULLOUS SUBCONJUNCTIVAL HAEMORRHAGE.**\n- **A positive SEIDEL TEST**, detecting leaking aqueous.\n\n### ⚠️ If you suspect it — five instructions, three of them prohibitions\n- **PLACE AN EYE SHIELD** and CALL THE OPHTHALMOLOGIST immediately.\n- **DO NOT PATCH** — pressure can **extrude intraocular contents**.\n- **DO NOT CHECK THE EYE PRESSURE.**\n- **NO further eye examination**, eye drops or ointment on an open globe.\n- **NIL BY MOUTH**, preparing for general anaesthesia.\n\n- **Tetanus:** ascertain **tetanus immunisation status in cases of trauma** — printed in `L10`’s investigation list, not in either trauma deck.\n\nSrc: L25 slides 48–51; L10 slide 29 (tetanus status), cited only",
+        "qs": []
+      },
+      {
+        "id": "trm-12",
+        "w": "must",
+        "h": "The focused history and the four-step examination",
+        "body": "### History — three headings\n- **MECHANISM of injury:** **blunt · sharp · chemical**.\n- **TIMING:** \"exactly when did the trauma occur?\"\n- **ASSOCIATED SYMPTOMS:** **vision loss · diplopia · bleeding · flashes and floaters**.\n\n### Past ocular history — three questions\n- **Poor vision since birth** — is the acuity you are measuring new?\n- **Recent eye surgery** — cataract or refractive.\n- **Previous eye trauma.**\n\n### Examination — four steps, in order\n- **STEP 1 — INSPECTION** of lids and brows, conjunctiva, cornea, sclera, anterior chamber, iris and pupils: **periocular ecchymosis · eyelid lacerations · integrity of cornea, sclera and conjunctiva · blood in the anterior chamber · a PEAKED PUPIL**.\n- **STEP 2 — FUNCTION:** **visual acuity · visual fields · pupillary response · extraocular movements**, asking **\"entrapped muscles?\"**.\n- **STEP 3 — OPHTHALMOSCOPY:** looking for **retinal detachment** and **vitreous haemorrhage**.\n- **STEP 4 — SEIDEL TEST**, to assess for a corneal break.\n\n### The Seidel test\n- **Apply fluorescein** to the suspected area.\n- **Normally appears GREEN** under **cobalt blue** light.\n- **⚠️ The dye turns CLEAR** where a break is present, as **leaking aqueous dilutes the fluorescein**.\n\n*The FORCED DUCTION TEST is the named test that separates restrictive from neurological limitation, and it is what step 2’s \"entrapped muscles?\" is asking for — the name is not taken from the course material; `L10` slide 10 announces the list and the slide edge cuts it off.*\n\nSrc: L25 slides 48, 56–61; the forced duction test is supplied and tagged",
+        "qs": []
+      }
+    ]
   }
 };

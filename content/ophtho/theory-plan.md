@@ -205,6 +205,26 @@ deck** — which is most of them. The `est pp` column uses the project's `pages 
 
 ⚠️ = draws on a deck owed a visual read, so the ceiling is not yet knowable.
 
+### ⚠️⚠️ CORRECTION TO THE TABLE ABOVE, FOUND BY WRITING `op-va` (2026-08-17)
+
+**The Decks column is an assignment, not a coverage guarantee, and for `op-va` it was wrong.**
+`op-va` is listed against `L3,4` alone. **None of its sixteen questions is answerable from
+`L3,4` lines 1–171 — not one.** They test visual acuity, the pinhole, the low-vision ladder,
+visual fields and colour vision; `L3,4`'s own transcriber wrote the reason on line 418, that
+those are in **`L1,2`** and *"this deck begins AFTER visual acuity and deliberately does not
+repeat it."* Written from `L3,4` alone the chapter would have scored **0/16** on the §14.2 floor.
+
+- **`L1,2` lines 438–613 (866 w) are now COUNTED to `op-va`** — the VA and visual-field
+  examination block. Lines 390–437 are **cited only**: they restate `L3,4` sl.2–4, already inside
+  `op-va`'s 963. **`op-intro` and `op-vissym` must not re-count 438–613**; lines 1–389 and
+  614–659 are unspent and remain theirs.
+- **So `op-va`'s real budget was 963 + 866 = 1,829, not 963** — and it wrote 2,596 (+42 %),
+  printing at **9 pages**, inside the shape. The overrun was forecast entity-by-entity before
+  writing, per §14.1.
+- **The general lesson: read a chapter's questions against its assigned deck before briefing
+  it.** Two more chapters in this table share a deck with a neighbour (`op-intro`/`op-vissym` on
+  `L1,2`), and the same mismatch could sit in either.
+
 ### Things in that table that need a decision, not a guess
 
 - **`op-ant` "Anterior Segment" has no deck of its own.** Same shape as `ent-sinuscomp`, which was

@@ -5,14 +5,36 @@ Running record, organised around *resuming*. ISO dates; unverified marked as suc
 story, count and verbatim ruling) in `progress\memory-archive.md`** — read the relevant block
 there before resuming a paused stream. Where this file and the archive disagree, this file wins.
 
-## Resume here — ✅ Peds theory DONE (51/51). **OPHTHALMOLOGY IN PROGRESS: 6 of 28 chapters written** (2026-08-17). Then Neuropsychiatry (27). Banks stay PAUSED.
+## Resume here — ✅ Peds theory DONE (51/51). **OPHTHALMOLOGY IN PROGRESS: 8 of 28 chapters written** (2026-08-17). Then Neuropsychiatry (27). Banks stay PAUSED.
 
 - **Ophtho is 28 chapters, not 26** — `op-orbit` split after printing 14 pp, `op-cornea` split
   **before** writing (now the preferred order). ✅ Written and page-measured 2026-08-17, all on
   US letter, the machine default: `op-pupil` **8 pp** · `op-orbit` **9** · `op-orbit-mass` **7** ·
-  `op-glauc` **12** · `op-cornea` **9** · `op-cornea-surg` **9**. 54 pp, mean 9.0 (ENT 8.6, peds
-  8.3). **⚠️ `op-glauc` estimated 10.8 and printed 12 — the estimator missed LOW again**, which is
-  the direction that matters; it is the module's largest and sits 1 page under the 13-pp shape.
+  `op-glauc` **12** · `op-cornea` **9** · `op-cornea-surg` **9** · `op-va` **9** · `op-trauma`
+  **9**. 72 pp, mean 9.0 (ENT 8.6, peds 8.3). Boot verified: **0 console errors**, 8 chapters,
+  95 sections, 0 dead `qs` ids, 0 wrong-chapter links, 62 of 138 questions reachable.
+  **⚠️ `op-glauc` estimated 10.8 and printed 12 — the estimator missed LOW**, the direction that
+  matters. **⚠️ `op-va` estimated 10.8 and printed 9 — it missed HIGH by the same margin.** Both
+  in one module: ±3 per chapter is real in both directions. **Print the chapter.**
+- **⚠️⚠️ `op-va`'S SIXTEEN QUESTIONS ARE NOT ANSWERABLE FROM `L3,4` — NOT ONE**, and the plan's
+  chapter table says `L3,4` is its only deck. They test acuity, pinhole, the low-vision ladder,
+  fields and colour, which `L3,4`'s own transcriber says (line 418) are in **`L1,2`** — that deck
+  *begins after* visual acuity. **`L1,2` lines 438–613 (866 w) are now COUNTED to `op-va`**;
+  lines 390–437 cited only (they restate L3,4 sl.2–4). **`op-intro` and `op-vissym` must not
+  re-count them**; lines 1–389 and 614–659 stay theirs. **Check a chapter's questions against
+  its assigned deck BEFORE briefing it** — the plan's deck column is not a coverage guarantee.
+- **⚠️ ELEVENTH HEADER FAULT (`op-va`), and the cheapest tell yet**: header claimed 2,331 body
+  words "taken from disk after the final edit"; disk read **2,596**, and **the gap was the size
+  of the one section the agent was writing when it died** (`va-6`, 273 w — which landed complete).
+  **Its partner `op-trauma` wrote NO numbers into its header at all**, on the stated reasoning
+  that a number in a file must be re-verified after every later edit — and so could not produce
+  the fault. **That is now the preferred practice: the agent reports its counts to the hub, the
+  hub measures from disk and writes the number in.**
+- **⚠️ Both agents died on the session limit at the SAME step — the §14.3a layout pass — and both
+  files were complete** (5th and 6th recovery; validate before rewriting, always). The hub
+  finished the pass: 20 bold leads with no `mdLead()` anchor, all fixed by moving the bold
+  boundary or adding an early colon. **Body words moved by 1 and 5 across the two files — that
+  delta is the evidence no fact was touched.**
 - **⚠️ Both splits left their questions behind, fixed 2026-08-17**: 9 refiled to `op-orbit-mass`,
   3 to `op-cornea-surg`, driven by the theory `qs` links (the sets were disjoint and summed
   exactly to the parent counts). **A split is not done when the chapter is split — refile the
