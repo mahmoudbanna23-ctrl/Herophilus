@@ -19,8 +19,9 @@ there before resuming a paused stream. Where this file and the archive disagree,
   ✅ Fifteen written and **individually printed** 2026-08-17 (US letter, the machine default):
   `op-pupil` 8 · `op-orbit` 9 · `op-orbit-mass` 7 · `op-glauc` **12** · `op-cornea` 9 ·
   `op-cornea-surg` 9 · `op-va` 9 · `op-trauma` 9 · `op-systemic` 10 · `op-insid` 9 · `op-cat` 9 ·
-  `op-cat-surg` 8 · `op-white` 8 · `op-red` 9 · `op-red-mgmt` **11** (10 → 11 when the rendered tables replaced a reconstruction). **136 pp, mean 9.1** (ENT 8.6, peds 8.3). Boot: **0 console
-  errors**, 166 sections, 0 dead `qs` ids, 0 wrong-chapter links, 64/138 questions reachable.
+  `op-cat-surg` 8 · `op-white` 8 · `op-red` 9 · `op-red-mgmt` **11** (10→11 when the rendered
+  tables replaced a reconstruction). **136 pp, mean 9.1.** Boot: **0 console errors**, 166
+  sections, 0 dead `qs` ids, 0 wrong-chapter links, 64/138 reachable.
 - **⚠️⚠️ CHECK A CHAPTER'S QUESTIONS AGAINST ITS ASSIGNED DECK BEFORE BRIEFING IT.** The plan's
   Decks column is an assignment, **not a coverage guarantee**: **none of `op-va`'s 16 questions is
   answerable from `L3,4`**, its only listed deck — they are `L1,2`'s, whose lines 438–613 (866 w)
