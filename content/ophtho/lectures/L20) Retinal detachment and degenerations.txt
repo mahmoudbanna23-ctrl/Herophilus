@@ -1,153 +1,378 @@
 SOURCE: Semester 8\Opthalmo\Theoritical\PPT\L20) Retinal detachment and degenerations.pdf
+==========================================================================================
+"Retinal detachment and degenerations" — Dr. Ahmed metwaly [sic, lower-case m], lecturer,
+Alexandria University.
+33 pages. READ VISUALLY 2026-08-17 and cached here. Slide number = PDF page number
+(the deck prints its own number in the bottom-left corner and they agree: p2→"2",
+p9→"9", p13→"13", p33→"33").
 
-Retinal
-detachment and
-degenerations
-                 Dr. Ahmed metwaly, lecturer Alexandria
-                 University
-2
-                 GROWTH MARKETING PLAN
+⚠️ THIS DECK IS ONLY PARTLY IMAGE-ONLY. `pdftotext` recovers 473 words over 33 pages
+(14.1 w/page) — it gets the prose slides 6/7/8 and 13/14/15/16 almost in full, but it
+returns NOTHING for the two tables (p9, p11), nothing for six labelled diagrams
+(p4, p5, p10, p12, p14-figure, p16-figure), and nothing for pages 17–32.
 
+⚠️ TRIAGE ANSWER: THIS DECK CANNOT BE TRIAGED. Pages 17–32 return zero characters —
+not even a running header — so 16 consecutive pages (48 % of the deck) were unrankable
+and the whole deck went to contact sheets: pages 1–33 rendered at 110 dpi into nine
+four-up sheets.
 
+⚠️⚠️ THE BIGGEST FINDING: PAGES 17–32 ARE NOT RASTERISED TEXT. All sixteen render
+BYTE-IDENTICAL (sha1 9eb89306f554f3d0f2bc9367e1020c2ab4937ded, 99 KB each) and they are
+a decorative clip-art landscape — pale blue sky, one white cloud, two green hills — with
+NO text, NO figure and NO title. They are template filler. This is the OPPOSITE of the
+module's usual "a blank page is a text slide" pattern, and it means:
 
+⚠️⚠️ THE "DEGENERATIONS" HALF OF THE LECTURE TITLE IS NEVER DELIVERED. The deck's
+content ends at page 16 with exudative-detachment management; page 33 is "Thank YOU".
+There is no slide on lattice degeneration, snail-track, retinoschisis, PVD, or any other
+retinal degeneration anywhere in this file. See the NOT-COVERED list at the end.
 
-    Retinal
-    detachment
-Normal fundus
-4
-5
-                       1. Rhegmatogenous Retinal
-                       Detachment (RRD)
-    Types of retinal   This is the most common type. It occurs
-     detachment        when a physical tear or break develops in
-                       the retina.
-                          Mechanism: Vitreous fluid (the gel-like
-                          substance in the eye) seeps through the
-                          tear and collects in the subretinal space,
-                          physically pushing the retina away from its
-                          underlying blood supply.
-                          Common Causes: Aging (vitreous
-                          shrinkage), high myopia
-                          (nearsightedness), or eye trauma.
+⚠️ The deck is built on a re-used commercial PowerPoint template: page 2 carries a
+leftover vertical sidebar reading "GROWTH MARKETING PLAN", and pages 1 and 33 use
+interior-design stock renders as decoration. Not medical content.
 
-6
-                       2. Tractional Retinal Detachment
-    Types of retinal   (TRD)
-                       In this type, the retina is physically pulled
-     detachment        away from the back of the eye by scar tissue
-                       or membranes.
-                           Mechanism: Scar tissue contracts on the
-                           surface of the retina, creating "traction"
-                           that lifts it. Unlike RRD, there is typically
-                           no initial tear.
-                           Common Causes: Advanced diabetic
-                           retinopathy (the most common cause),
-                           sickle cell disease, or previous ocular
-                           trauma.
-
-7
-    Types of retinal   3. Exudative (Serous) Retinal
-                       Detachment (ERD)
-     detachment        This type occurs when fluid leaks and builds
-                       up behind the retina without any tears or
-                       traction.
-                           Mechanism: Inflammatory or vascular
-                           conditions cause fluid from the choroid
-                           (the layer of blood vessels behind the
-                           retina) to seep into the subretinal space.
-                           Common Causes: Inflammatory diseases
-                           (like uveitis), tumors (such as choroidal
-                           melanoma), or systemic conditions like
-                           severe hypertension.
+⚠️ Several figures are AI-generated or badly OCR'd and carry GARBLED LABELS. They are
+transcribed exactly as printed with [sic] — a non-standard spelling has hidden a real
+question hit twice in this project.
 
 
-
-8
-    Differentiation features
-
-
-
-
-9
-     Symptoms
+─────────────────────────────────────────────────────────────────────
+SLIDE 1 — Title
+─────────────────────────────────────────────────────────────────────
+Retinal detachment and degenerations
+Dr. Ahmed metwaly, lecturer Alexandria University
+(Right half: interior-design stock photograph. Template decoration.)
 
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 2 — Section title: Retinal detachment
+─────────────────────────────────────────────────────────────────────
+Retinal detachment
+(Vertical sidebar, left edge: "GROWTH MARKETING PLAN" — leftover template text, not
+content. Centre: a colour fundus photograph of a large BULLOUS RETINAL DETACHMENT,
+the detached retina lifted as a smooth dome over the vessels; credited on the image
+"Ricardo Leitão Guerra, M…" / "@retinography".)
 
 
-11
-12
-     Management and Surgical Options
-
-       Treatment is tailored to either repairing a
-       physical tear, removing pulling forces, or
-       addressing an underlying medical cause.
+─────────────────────────────────────────────────────────────────────
+SLIDE 3 — Normal fundus
+─────────────────────────────────────────────────────────────────────
+Normal fundus
+(Colour fundus photograph, no labels — disc, macula, vessel arcades.)
 
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 4 — Retinal layers (labelled diagram)   ⚠️ INVISIBLE TO pdftotext
+─────────────────────────────────────────────────────────────────────
+Histology panel (A) beside a schematic (B), a red "Light" arrow entering from the top,
+and a 25 µm scale bar. Layers labelled from inner to outer on the LEFT:
+
+ • Nerve fibre layer
+ • Ganglion cell layer
+ • Inner plexiform layer
+ • Inner nuclear layer
+ • Outer plexiform layer
+ • Outer nuclear layer
+ • Layer of rods and cones
+ • Retinal pigment epithelium
+ • Choroid
+
+Cell and membrane labels on the RIGHT:
+
+ • Internal limiting membrane
+ • Ganglion cell
+ • Amacrine cell
+ • Bipolar cell
+ • Horizontal cell
+ • Müller glial cell
+ • External limiting membrane
+ • Rod
+ • Cone
+
+(Note the light path: LIGHT ENTERS AT THE NERVE FIBRE LAYER SIDE and reaches the rods
+and cones last — the diagram makes the inverted retina explicit.)
 
 
-13
-     Management and Surgical Options
-     1. Rhegmatogenous Detachment (Repairing
-     Tears)
-     Surgical intervention is almost always required
-     to seal the retinal break:
-         Vitrectomy: The surgeon removes the
-         vitreous gel and replaces it with a gas or oil
-         bubble to push the retina back.
-         Scleral Buckling: A silicone band is placed
-         around the eye to push the eye wall inward,
-         helping the retina reattach.
-         Pneumatic Retinopexy: A gas bubble is
-         injected into the eye to seal the tear from the
-         inside, often followed by laser or
-         cryotherapy (freezing).
+─────────────────────────────────────────────────────────────────────
+SLIDE 5 — Retinal histology, four panels   ⚠️ INVISIBLE TO pdftotext
+─────────────────────────────────────────────────────────────────────
+Four histology panels labelled A, B, C, D. Panel B carries the abbreviation stack,
+transcribed exactly:
+
+ NFL · GCL · IPL · INL · OPL · ONL · ISRC · OSRC · RPE
+ with arrows to ILM (top) and OLM (mid-outer), and a bracket labelled "choroid".
+
+ (ISRC / OSRC = inner and outer segments of rods and cones; the deck prints only the
+ abbreviations, no expansion.)
+
+Panel D is a low-power section through the FOVEA — the retina thins to a pit with the
+inner layers absent and the photoreceptor layer thickened.
 
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 6 — Types of retinal detachment: 1. RRD   ⚠️ HIGH YIELD
+─────────────────────────────────────────────────────────────────────
+Types of retinal detachment
+1. Rhegmatogenous Retinal Detachment (RRD)
+This is the MOST COMMON type. It occurs when a physical TEAR OR BREAK develops in the
+retina.
+ • Mechanism: Vitreous fluid (the gel-like substance in the eye) seeps through the tear
+   and collects in the subretinal space, physically pushing the retina away from its
+   underlying blood supply.
+ • Common Causes: Aging (vitreous shrinkage), high myopia (nearsightedness), or eye
+   trauma.
 
 
-14
-     Management and Surgical Options
-     2. Tractional Detachment (Relieving
-     Pull)
-     Treatment focuses on removing the
-     mechanical force pulling the retina
-     away:
-         Vitrectomy & Membrane Peeling:
-         Surgeons remove the vitreous and
-         carefully peel away fibrovascular
-         membranes or scar tissue that is
-         pulling on the retina.
-         Underlying Disease Control:
-         Long-term management involves
-         strict control of the causative
-         condition, most commonly diabetic
-         retinopathy
+─────────────────────────────────────────────────────────────────────
+SLIDE 7 — Types of retinal detachment: 2. TRD   ⚠️ HIGH YIELD
+─────────────────────────────────────────────────────────────────────
+Types of retinal detachment
+2. Tractional Retinal Detachment (TRD)
+In this type, the retina is physically PULLED away from the back of the eye by scar
+tissue or membranes.
+ • Mechanism: Scar tissue contracts on the surface of the retina, creating "traction"
+   that lifts it. UNLIKE RRD, THERE IS TYPICALLY NO INITIAL TEAR.
+ • Common Causes: Advanced diabetic retinopathy (THE MOST COMMON CAUSE), sickle cell
+   disease, or previous ocular trauma.
 
 
-15
-     Management and Surgical Options
-     3. Exudative Detachment (Treating the
-     Cause)
-     Surgery is rarely the first step; the focus is
-     on stopping fluid leakage:
-        Medical Therapy: Use of
-        corticosteroids or immunosuppressants
-        for inflammatory conditions like uveitis
-        or VKH syndrome.
-        Injections: Anti-VEGF drugs to stop
-        leaking from abnormal blood vessels.
-        Specific Treatments: Targeted therapy
-        for infections, hypertension control, or
-        radiation/surgery for ocular tumors.
+─────────────────────────────────────────────────────────────────────
+SLIDE 8 — Types of retinal detachment: 3. ERD   ⚠️ HIGH YIELD
+─────────────────────────────────────────────────────────────────────
+Types of retinal detachment
+3. Exudative (Serous) Retinal Detachment (ERD)
+This type occurs when FLUID LEAKS and builds up behind the retina WITHOUT ANY TEARS OR
+TRACTION.
+ • Mechanism: Inflammatory or vascular conditions cause fluid from the choroid (the
+   layer of blood vessels behind the retina) to seep into the subretinal space.
+ • Common Causes: Inflammatory diseases (like uveitis), tumors (such as choroidal
+   melanoma), or systemic conditions like severe hypertension.
 
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 9 — Differentiation features   ⚠️ TABLE — INVISIBLE TO pdftotext
+─────────────────────────────────────────────────────────────────────
+(pdftotext returns only the two words "Differentiation features". The whole table is a
+raster. This is the deck's single most examinable slide.)
+
+| Feature         | Rhegmatogenous     | Tractional        | Exudative            |
+|-----------------|--------------------|-------------------|----------------------|
+| Main Cause      | Retinal tear/break | Scar tissue pulling | Fluid leakage       |
+| Retinal Surface | Corrugated/Wrinkled | Smooth/Taut      | Smooth/Bullous       |
+| Common Risk     | Myopia, Aging      | Diabetes          | Inflammation, Tumors |
+
+(The RETINAL SURFACE row is the discriminator the deck actually teaches: corrugated =
+rhegmatogenous, taut = tractional, bullous = exudative.)
 
 
-16
-     Thank YOU
+─────────────────────────────────────────────────────────────────────
+SLIDE 10 — The Three Primary Mechanisms of Retinal Detachment   ⚠️ INVISIBLE TO pdftotext
+─────────────────────────────────────────────────────────────────────
+(pdftotext returns ZERO characters for this page. Title and three boxed panels are all
+inside the raster.)
+
+Slide title, printed on the figure: "The Three Primary Mechanisms of Retinal Detachment"
+
+ ▸ Type 1: Rhegmatogenous Retinal Detachment (RRD)
+   "Commonly caused by vitreous traction leading to tears."
+   Cross-section labels: Vitreous Fluid Entry · Vitreous Humor · Retinal Break
+   (Tear/Hole) · Retina · Subretinal Space · Retinal Pigment Epithelium (RPE) ·
+   Sclera · Choroid · Optic Nerve.
+
+ ▸ Type 2: Tractional Retinal Detachment (TRD)
+   "Often secondary to proliferative diabetic retinopathy or other vascular
+   conditions."
+   Labels: Fibrovascular Membranes / Scar Tissue · Mechanical Pulling Force ·
+   Vitreous Humor · Sclera · Optic Nerve.
+
+ ▸ Type 3: Exudative (Serous) Detachment (ERD)
+   "Caused by inflammatory conditions, tumors, or severe hypertension."
+   Labels: Subretinal Fluid Accumulation · Vitreous Humor · Mechanical Pulling Force ·
+   "Caused by inflammatory conditions, tumors, or hypertension." · inset "Fluid Leaking
+   from Choroidal Vessels".
+
+ (NOTE — the figure names PROLIFERATIVE diabetic retinopathy explicitly, where slide 7's
+ prose says only "advanced diabetic retinopathy".)
 
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 11 — Symptoms   ⚠️ TABLE — INVISIBLE TO pdftotext
+─────────────────────────────────────────────────────────────────────
+(pdftotext returns only the word "Symptoms". The table is a raster. The header cell
+prints "Type" followed by a small grey chain/link glyph — a paste artifact, not content.)
+
+| Type                | Key Symptoms                                            | Progression                                              |
+|---------------------|---------------------------------------------------------|----------------------------------------------------------|
+| Rhegmatogenous (RRD)| **Floaters**, flashes of light, and a "curtain" or shadow in the peripheral vision. | Often sudden and rapid.                 |
+| Tractional (TRD)    | Gradual vision loss and **distorted** or wavy vision.   | Can be slow or progressive as scar tissue pulls.         |
+| Exudative (ERD)     | Decreased central vision and general blurriness.        | May vary based on the underlying disease (e.g., inflammation). |
+
+(Bold is the deck's own emphasis: "Floaters" and "distorted".)
 
 
-33
-
+─────────────────────────────────────────────────────────────────────
+SLIDE 12 — Fundus appearance of the three types + normal   ⚠️ INVISIBLE TO pdftotext
+─────────────────────────────────────────────────────────────────────
+(pdftotext returns ZERO characters. Four-panel labelled fundus figure. Several labels
+are garbled — transcribed exactly as printed.)
+
+ ▸ RHEGMATOGENOUS RETINAL DETACHMENT
+   Labels: Flashes of light · Dark floaters · Curtain · Retina ·
+   "Retina, and pale- temporal quadrant" [sic — the detached quadrant is drawn PALE
+   GREY against the orange attached retina]
+
+ ▸ TRACTIONAL RETINAL DETACHMENT
+   Labels: Diabetic retinopathy · "White fibroti scar tissue retinopathy" [sic —
+   "fibroti", presumably fibrotic] · Dot-blot hemorrhages · Neo-vascularization ·
+   Traction (printed in red, with dashed arrows toward the disc)
+
+ ▸ EXUDATIVE RETINAL DETACHMENT
+   Labels: "Subretinal subretinal fluid" [sic — word duplicated] · Drusen or
+   inflammatory deposits (×2) · "Choroid accuromatic macusis" [sic — garbled, no
+   plausible reading; do NOT treat as a real term] · Background choroid ·
+   inset labelled "Subretinal Fluid" (cross-section showing the dome of fluid between
+   retina and choroid)
+
+ ▸ NORMAL FUNDUS (for comparison)
+   Labels: Macula (darkening) · Fovea · Optic disc with clear margins · Retinal
+   arteries and veins
+
+ (Exam-usable mapping: DARK FLOATERS + FLASHES + CURTAIN + pale quadrant → RRD ·
+ dot-blot haemorrhages + white fibrotic bands + neovascularisation → TRD ·
+ drusen/deposits + smooth yellow dome of subretinal fluid → ERD.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 13 — Management and Surgical Options (section opener)
+─────────────────────────────────────────────────────────────────────
+Management and Surgical Options
+Treatment is tailored to either repairing a physical tear, removing pulling forces, or
+addressing an underlying medical cause.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 14 — Management: 1. Rhegmatogenous Detachment (Repairing Tears)   ⚠️ HIGH YIELD
+─────────────────────────────────────────────────────────────────────
+Management and Surgical Options
+1. Rhegmatogenous Detachment (Repairing Tears)
+SURGICAL INTERVENTION IS ALMOST ALWAYS REQUIRED to seal the retinal break:
+ • Vitrectomy: The surgeon removes the vitreous gel and replaces it with a GAS OR OIL
+   BUBBLE to push the retina back.
+ • Scleral Buckling: A SILICONE BAND is placed around the eye to push the eye wall
+   inward, helping the retina reattach.
+ • Pneumatic Retinopexy: A GAS BUBBLE is injected into the eye to seal the tear from the
+   inside, often followed by LASER OR CRYOTHERAPY (FREEZING).
+
+Figure (right, not in the text layer) — headed "VITRECTOMY", a cross-section with two
+instruments entering through the pars plana. Labels: Cornea · Lens · Light Source ·
+Surgical Instrument · Vitreous · Floaters · Retinal Detachment · Retinal Tear.
+(Watermark "vision center" — a stock medical illustration.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 15 — Management: 2. Tractional Detachment (Relieving Pull)   ⚠️ HIGH YIELD
+─────────────────────────────────────────────────────────────────────
+Management and Surgical Options
+2. Tractional Detachment (Relieving Pull)
+Treatment focuses on removing the mechanical force pulling the retina away:
+ • Vitrectomy & Membrane Peeling: Surgeons remove the vitreous and carefully peel away
+   FIBROVASCULAR MEMBRANES or scar tissue that is pulling on the retina.
+ • Underlying Disease Control: Long-term management involves strict control of the
+   causative condition, MOST COMMONLY DIABETIC RETINOPATHY
+
+Figure (right, not in the text layer) — four line-art cross-sections labelled A, B, C, D
+showing successive stages of a pars-plana vitrectomy with membrane delamination. No
+per-panel captions printed.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 16 — Management: 3. Exudative Detachment (Treating the Cause)   ⚠️ HIGH YIELD
+─────────────────────────────────────────────────────────────────────
+Management and Surgical Options
+3. Exudative Detachment (Treating the Cause)
+SURGERY IS RARELY THE FIRST STEP; the focus is on stopping fluid leakage:
+ • Medical Therapy: Use of CORTICOSTEROIDS or IMMUNOSUPPRESSANTS for inflammatory
+   conditions like UVEITIS or VKH SYNDROME.
+ • Injections: ANTI-VEGF drugs to stop leaking from abnormal blood vessels.
+ • Specific Treatments: Targeted therapy for infections, hypertension control, or
+   radiation/surgery for ocular tumors.
+
+⚠️ LAYOUT DEFECT ON THE LIVE SLIDE: a large six-panel figure (grey line drawings
+labelled A–F, showing what appears to be scleral buckling / encircling band placement
+with an inset of the buckle sutured to the sclera) is pasted OVER the right-hand third
+of the text block and OBSCURES the ends of three bullet lines as projected. The full
+wording above is recovered from the text layer, so nothing is lost — but the figure
+belongs to buckling surgery (slide 14's topic), not to exudative detachment.
+
+
+═════════════════════════════════════════════════════════════════════
+SLIDES 17–32 — SIXTEEN BLANK TEMPLATE SLIDES   ⚠️ NO CONTENT
+═════════════════════════════════════════════════════════════════════
+All sixteen pages render byte-identical: a decorative clip-art landscape (pale blue sky
+gradient, one white cloud, two layered green hills). No text, no title, no figure, no
+slide number. `pdftotext` returns 0 characters for every one.
+
+⚠️ THIS IS WHERE "DEGENERATIONS" SHOULD HAVE BEEN. The lecture is titled "Retinal
+detachment AND DEGENERATIONS" and the deck delivers only the detachment half. The
+sixteen filler slides are almost half the file. Nothing was missed by the text layer
+here — there is genuinely nothing on them.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 33 — Thank YOU
+─────────────────────────────────────────────────────────────────────
+Thank YOU
+(Right half: interior-design stock render. Template decoration.)
+
+
+═════════════════════════════════════════════════════════════════════
+NOT COVERED ANYWHERE IN THIS DECK
+═════════════════════════════════════════════════════════════════════
+Recorded so a gap can be settled by proving a negative rather than by memory.
+Verified over all 33 pages, visually plus a full-text grep of the text layer.
+
+RETINAL DEGENERATIONS — the entire half of the lecture title. NOT ONE SLIDE:
+ • LATTICE DEGENERATION — not named. No prevalence figure, no description, no
+   prophylactic-laser indication.
+ • SNAIL-TRACK degeneration, PAVING-STONE (cobblestone) degeneration, WHITE-WITH/
+   WITHOUT-PRESSURE, honeycomb/reticular degeneration — none named.
+ • RETINOSCHISIS (degenerative or juvenile X-linked) — not named, and therefore no
+   retinoschisis-versus-detachment differentiation.
+ • PERIPHERAL CYSTOID DEGENERATION, and the whole concept of a predisposing peripheral
+   retinal degeneration.
+ • MYOPIC degenerative changes beyond the bare words "high myopia" as an RRD risk.
+ • AGE-RELATED MACULAR DEGENERATION — not covered. "Drusen" appears ONLY as an
+   unexplained label on the slide-12 exudative fundus.
+
+RETINAL DETACHMENT topics the deck also does NOT cover:
+ • POSTERIOR VITREOUS DETACHMENT (PVD) as a named entity, and Weiss ring. The deck says
+   only "aging (vitreous shrinkage)".
+ • TYPES OF RETINAL BREAK — horseshoe/flap tear, operculated hole, atrophic round hole,
+   giant retinal tear, retinal dialysis. No break morphology anywhere.
+ • LINCOFF'S RULES / any rule for locating the primary break from the fluid contour.
+ • MACULA-ON versus MACULA-OFF, and the URGENCY/TIMING of surgery. No time window is
+   given anywhere in the deck.
+ • PROLIFERATIVE VITREORETINOPATHY (PVR) and its grading — not named. "Scar tissue" and
+   "fibrovascular membranes" appear only under TRD.
+ • SHIFTING SUBRETINAL FLUID as the classic sign of exudative detachment — the deck
+   gives "smooth/bullous" surface only.
+ • LEOPARD SPOTS, and the transillumination/ultrasound work-up that separates a
+   choroidal tumour from an exudative detachment.
+ • ANY INVESTIGATION: no B-scan ultrasound, no OCT, no fundus fluorescein angiography,
+   no indirect ophthalmoscopy/scleral indentation technique, no three-mirror lens.
+ • IOP in retinal detachment (the classically LOW IOP), and RVP/afferent findings.
+ • TOBACCO-DUST / SHAFER'S SIGN — not named.
+ • CENTRAL SEROUS CHORIORETINOPATHY, VKH beyond the bare abbreviation "VKH syndrome"
+   on slide 16, and CHOROIDAL DETACHMENT as a separate entity.
+ • RETINOPATHY OF PREMATURITY and SICKLE-CELL retinopathy as entities — sickle cell is
+   named once, only as a TRD cause.
+ • LASER RETINOPEXY / prophylactic barrage laser for a break WITHOUT detachment.
+ • TAMPONADE AGENTS by name (SF6, C3F8, silicone oil), gas-bubble positioning, and any
+   post-operative instruction (posturing, air-travel restriction).
+ • SUCCESS RATES, REDETACHMENT RATES, or ANY PROGNOSTIC FIGURE. The deck contains NO
+   percentage, NO incidence, NO time interval and NO drug dose of any kind — the only
+   numbers in the whole file are the "25 µm" scale bar on slide 4 and the slide numbers.
+ • ANY CLASSIFICATION OR GRADING SYSTEM other than the three-type causal split.
+ • ANY EPONYM. There is no named sign, no named rule and no named surgeon anywhere in
+   the deck.
+ • ANY CLINICAL CASE, MCQ or self-test question (unlike the trauma decks).

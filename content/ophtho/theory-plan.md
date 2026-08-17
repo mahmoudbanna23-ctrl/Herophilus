@@ -58,7 +58,27 @@ An earlier chat banked these; the cache is far richer than the text layer, which
 | `L3,4) Clinical- Ocular examination` | 59 | 0 | 2,730 |
 | `L10) orbit` | 48 | 48 | 3,671 |
 
-### ⚠️ Owed a visual read — 14 decks, **726 pages**, ~182 four-up contact sheets
+### ✅ `L20) Retinal detachment and degenerations` — READ 2026-08-17, cache 473 → 2,376 w
+
+**Not triageable** — pages 17–32 return **zero characters, not even a running header**, so the
+whole deck went to contact sheets (9 sheets at 110 dpi, 14 image reads instead of 33). It sits with
+`L1,2`, not `L7,8`.
+
+**⚠️ AND IT IS THE FIRST DECK THAT DOES NOT DELIVER ITS OWN TITLE.** Pages 17–32 are sixteen
+**byte-identical clip-art landscape** pages — content stops at page 16, and **the "degenerations"
+half of the lecture is never taught.** There is no slide on lattice, snail-track, paving-stone,
+retinoschisis, PVD or white-with-pressure anywhere in the file. The deck is also built on a re-used
+commercial template: page 2 carries a leftover sidebar reading *"GROWTH MARKETING PLAN"*.
+
+What the render recovered that no text tool could: **two whole rasterised tables** (sl.9's
+differentiation table — retinal surface **corrugated → RRD · smooth/taut → TRD · smooth/bullous →
+ERD**; sl.11's symptoms table), **six labelled diagrams**, the nine-layer retinal abbreviation stack
+(NFL·GCL·IPL·INL·OPL·ONL·ISRC·OSRC·RPE with ILM and OLM), and sl.10's own rasterised title naming
+**proliferative** DR where the prose says only "advanced". Nine garbled labels are transcribed
+`[sic]`; ⚠️ *"Choroid accuromatic macusis"* **has no plausible reading and must not be treated as a
+real term.** The deck contains **no percentage, no incidence, no interval, no dose, and no eponym.**
+
+### ⚠️ Owed a visual read — 12 decks remaining, **660 pages** (was 14 decks / 726; `L9` and `L20` are read)
 
 | Deck | pp | w/pp | blank | triage possible? |
 |---|---|---|---|---|
@@ -347,6 +367,18 @@ numbering — every real slide deck returns zero.
 
 ## Cross-checks owed before writing starts
 
+- **✅ REPEATED-FILLER PAGES — CLEAN NEGATIVE ACROSS ALL TEN OWED PDFs, done 2026-08-17.
+  DO NOT RE-RUN THIS.** `L20)` turned out to spend **16 of its 33 pages on ONE byte-identical
+  clip-art landscape** (sha1 `9eb89306…`, 99 KB each), which is why its "degenerations" half is
+  never delivered. If that pattern generalised, the 726-page debt would be materially overstated,
+  so every owed deck was rendered at **40 dpi and hashed page by page** — hashes only, so no page
+  entered any context. Result: **`L1,2` 136/136 unique · `L7,8` 88/88 · `L24` 78/78 ·
+  `L27,28` 70/70 · `L13,14` 41/41 · `L29` 35/35 · `L22` 25/25 · `L30` 23/23 · `L21` 20/20`**, and
+  only **`L31,32` carries any duplication at all — 2 pages, one run of 3.** **The 726-page
+  estimate STANDS; `L20` was a one-off, not a pattern.** ⚠️ Note the limit of the instrument: it
+  finds **byte-identical** pages only. A filler page bearing a slide number would not match, so
+  this is evidence about *repeated* filler, not about *empty* pages — the blank-share table above
+  remains the measure for those.
 - **✅ MediaBox clipping — CLEAN NEGATIVE, done 2026-08-16** (`<scratch>\clip-oph.js`).
   **1,192 pages across all 27 PDFs; one candidate, and it was not clipping.** `L37) Red Eye` p.10
   ends on *"…are common as well as"*, but the **rendered page ends there too** and the sentence

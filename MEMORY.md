@@ -26,7 +26,7 @@ there before resuming a paused stream. Where this file and the archive disagree,
   answerable from `L3,4`**, its only listed deck — they are `L1,2`'s, whose lines 438–613 (866 w)
   are now counted to `op-va` (**`op-intro`/`op-vissym` must not re-count them**). `op-intro` and
   `op-vissym` share a deck the same way and could hide the same mismatch.
-- **⚠️ Ophtho still owes ~726 pages of visual reading** before the owed-deck chapters can be
+- **⚠️ Ophtho owes ~660 more pages of visual reading** (was 726; `L9` and `L20` are read) before the owed-deck chapters can be
   budgeted — the §14 formula breaks there (5.3 q/chapter; the lecture term measures the text
   layer, not the lecture). A blank page here is usually a TEXT slide (inverse of peds); four deck
   patterns, three worth the render. ✅ `L3,4`, `L10`, `L25` banked — do not re-read. `op-ant` has
