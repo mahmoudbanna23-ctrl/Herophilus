@@ -44,7 +44,15 @@ const MODULES = [
          so the seam was chosen up front. Medical cornea / surgical cornea. */
       ['op-cornea','Cornea — infection, trauma and the red eye'],
       ['op-cornea-surg','Cornea — ectasia, grafts and refractive surgery'],
-      ['op-red','Red Eye'],['op-cat','Cataract'],
+      ['op-red','Red Eye'],
+      /* Split 2026-08-17, forecast BEFORE writing like the cornea pair: one
+         chapter costed out at ~4,370 words / ~18 printed pages. The seam is
+         medical vs surgical, because both lecturers already draw it and ZERO
+         questions straddle it — the chapter's single question sits in cat-4.
+         Split by deck was rejected (both decks teach both halves) and split by
+         aetiology was rejected (PSC is one slide cut in two). */
+      ['op-cat','Cataract — types, maturity and clinical picture'],
+      ['op-cat-surg','Cataract surgery, IOLs and the aphakic eye'],
       ['op-ret','Retina'],['op-neuro','Neuro-ophthalmology'],
       ['op-systemic','Systemic Diseases'],['op-onc','Oncology'],['op-trauma','Trauma'],
       ['op-appear','Problems of Appearance'],['op-squint','Squint'],

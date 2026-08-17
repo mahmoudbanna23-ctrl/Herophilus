@@ -11,8 +11,28 @@ there before resuming a paused stream. Where this file and the archive disagree,
   **before** writing (now the preferred order). ✅ Written and page-measured 2026-08-17, all on
   US letter, the machine default: `op-pupil` **8 pp** · `op-orbit` **9** · `op-orbit-mass` **7** ·
   `op-glauc` **12** · `op-cornea` **9** · `op-cornea-surg` **9** · `op-va` **9** · `op-trauma`
-  **9** · `op-systemic` **10**. 82 pp over 9 chapters, mean 9.1 (ENT 8.6, peds 8.3). Boot
-  verified: **0 console errors**, 0 dead `qs` ids, 0 wrong-chapter links, 62/138 reachable.
+  **9** · `op-systemic` **10** · `op-insid` **9** · `op-cat` **9** · `op-cat-surg` **8**. 108 pp
+  over 12 chapters, mean 9.0 (ENT 8.6, peds 8.3). Boot verified: **0 console errors**, 136
+  sections, 0 dead `qs` ids, 0 wrong-chapter links, 63/138 reachable.
+- **⚠️ `op-cat` SPLIT BEFORE WRITING — third ophtho split, and the method is now settled.** One
+  chapter forecast at ~4,370 w / **~18 pp**; written as two it printed **9 + 8**. Seam = medical
+  vs surgical (`op-cat` + **`op-cat-surg`**, registered in `modules.js`), chosen because both
+  lecturers draw it, **zero questions straddle**, and all three inbound register rows land
+  diagnosis-side. Split-by-deck and split-by-aetiology were both costed and rejected on the
+  record. **Forecast, then split, then write — never split after printing.**
+- **⚠️ `L35,36) Chronic visual loss` CARRIES A WHOLE THIRD CATARACT LECTURE** (~450 w, lines
+  129–249) that `L17` and `L18` never give — the cataractogenic **drug** list, the **metabolic**
+  list, the **intrauterine** causes, two Egypt figures, the 35 %-protein pathogenesis.
+  **Both cataract decks name congenital cataract repeatedly and never say what causes it.**
+  Counted by `op-insid`, used cited-only by `op-cat`. **A deck's title does not bound its
+  content — grep the module before believing a chapter's deck list.**
+- **⚠️ LENS-INDUCED GLAUCOMA HAD NO HOME IN THE MODULE** — `phacomorphic`/`phacolytic` return
+  **zero** across all of `theory.ophtho.js`, and `L11`/`L12` print neither. Now written in
+  `op-cat`; `op-glauc` is merged, so cross-referencing it is reconciliation work.
+- ✅ **Two agents running in one file, and two whose reported counts REPRODUCED FROM DISK
+  EXACTLY** (`op-insid` 2,619, `op-cat` 2,449 + 1,816) — the first since the header-fault run
+  began. Both used the `op-trauma` pattern: **no number written into the file**, the re-measure
+  command in the header instead, counts reported to the hub. **That pattern is now standard.**
 - **⚠️ A FIFTH WAY A REGISTER ROW CAN BE WRONG — IT IS CIRCULAR.** `op-orbit` deferred the
   thyrotoxic picture and the IgG/TSH mechanism to `op-systemic` while **`orb-6` already carried
   slide 15 whole**, and still pointed here for it. Resolved as a declared overlap (`orb-6` keeps
