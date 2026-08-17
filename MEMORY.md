@@ -33,12 +33,11 @@ there before resuming a paused stream. Where this file and the archive disagree,
   patterns, three worth the render. ✅ `L3,4`, `L10`, `L25` banked — do not re-read. `op-ant` has
   no deck. **~30 §14.5 register rows are ophtho's**; 7 closed, 2 notices, 1 **undeliverable**
   (aniridia/Sturge–Weber — absent from all 27 decks), the rest open.
-- ✅ **`L20` READ 2026-08-17, cache 473 → 2,376 w** — two rasterised tables, six labelled diagrams
-  and the nine-layer retinal stack recovered. **⚠️ AND IT IS THE FIRST DECK THAT DOES NOT DELIVER
-  ITS OWN TITLE:** pages 17–32 are sixteen byte-identical clip-art pages, content stops at p.16,
-  and **the "degenerations" half is never taught** (no lattice, snail-track, paving-stone,
-  retinoschisis or PVD anywhere in the file). Its NOT-COVERED block records that. ⚠️ Its garbled
-  label *"Choroid accuromatic macusis"* **has no plausible reading — never treat it as a term.**
+- ✅ **`L20` READ 2026-08-17, cache 473 → 2,376 w** (two rasterised tables, six labelled diagrams,
+  the nine-layer retinal stack). **⚠️ FIRST DECK THAT DOES NOT DELIVER ITS OWN TITLE:** pp.17–32 are
+  identical clip-art, content stops at p.16, and **the "degenerations" half is never taught** — no
+  lattice, snail-track, paving-stone, retinoschisis or PVD anywhere. Its NOT-COVERED block records
+  it. ⚠️ Its garbled *"Choroid accuromatic macusis"* has **no plausible reading** — not a term.
 - **✅ REPEATED-FILLER PAGES: CLEAN NEGATIVE ACROSS ALL TEN OWED PDFs — DO NOT RE-RUN.** Every owed
   deck rendered at 40 dpi and **hashed page by page** (hashes only, no image entering a context):
   nine are 100 % unique, only `L31,32` duplicates anything (2 pages). **`L20` was a one-off, the
@@ -59,10 +58,9 @@ there before resuming a paused stream. Where this file and the archive disagree,
   — recovered by **draw-order extraction** (`pdftotext -raw`), which is the tool for any slide whose
   text streams together. **Classing a source text-sufficient is a claim about its PROSE, never
   about its tables or its columns.**
-- **⚠️ NEVER `git add` A DIRECTORY WHILE A SUBAGENT IS WRITING INTO IT.** `git add
-  content/ophtho/lectures/` swept up an agent's half-finished `L37` append into an unrelated
-  commit (`eddd2ac`). **Stage explicit file paths**, and the existing "never `git add -A`" rule
-  extends to any directory an agent has open.
+- **⚠️ NEVER `git add` A DIRECTORY WHILE A SUBAGENT IS WRITING INTO IT** — it swept a half-finished
+  `L37` append into an unrelated commit. **Stage explicit paths**; "never `git add -A`" extends to
+  any directory an agent has open.
 - **Next to write:** `op-acute` (L31,32, 426 w cached / 31 pp owed) · then the render-gated ones.
   **⚠️ `op-refract` holds 38 questions — 28 % of the whole module — and is gated on `L7,8`
   (88 pp, and triage WORKS on it: real per-page titles). That is the highest-value render left.**
