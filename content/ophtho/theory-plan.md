@@ -643,3 +643,51 @@ missing terms were vignette English (*mother, brings, worried, complains*) and *
 vocabulary — Ishihara plates, cover–uncover, exophoria, radial keratotomy — none of which is the
 answer. **A low coverage score is a flag to LOOK, never a verdict**, and this is the counter-example
 to `op-va`, where the same instinct found a real mismatch. Keep the probe; keep the second step.
+
+---
+
+## ⚠️⚠️ USER RULING, 2026-08-18 — THE BOOK IS THE MAIN REFERENCE, AND THE LAST DECKS ARE COMPILATIONS
+
+Verbatim: *"the last few PPTs are just collections parts from the previous chapters so ignore them
+of you've ever found something like that again, your main refrence is the book"*.
+
+**This supersedes the "every deck, measured" table above as the module's planning basis.** Read
+this section before doing anything with an ophthalmology source.
+
+### What it means, and what it does not
+
+- **Forward-looking.** The user's own words are *"if you've ever found something like that again"*.
+  Nothing already written is unwound. The four compilation decks are `L31,32) Acute visual Loss`,
+  `L33,34) The White Eye`, `L35,36) Chronic visual loss` and `L37) Red Eye` — all symptom-based, all
+  recombining organ-based material taught earlier.
+- **Already built on them: five chapters, 48 sections, 12,901 body words, 46 printed pages** —
+  `op-red`, `op-red-mgmt`, `op-white`, `op-insid`, `op-acute`. They stay: they are chapters of the
+  syllabus in `modules.js`, symptom-led revision is exactly how the material is examined, and each
+  was written against the questions. **But they carry only 3 of the module's 138 questions between
+  them**, which in hindsight was the signal — a deck that recombines earlier teaching generates few
+  questions of its own.
+- **The evidence already agreed with the ruling before it was given.** `L37` is literally
+  **"CHAPTER 4"** of a book. `L31,32` poses four cases whose four diagnoses — CRAO, papillitis,
+  AION, RRD — all belong to earlier decks, and answers none of them: **all four of its "Management"
+  slides are blank.** That is what a revision compilation looks like from the inside.
+
+### The book
+
+`Semester 8\Opthalmo\Theoritical\Books\ophthalmology.pdf` — **274 pages, A4, 218 MB, image-only**
+(`pdftotext` returns 0 characters over the first 40 pages). Never opened before 2026-08-18.
+Being mapped now; the contents go to `content\ophtho\book-map.md`.
+
+**⚠️ It is bigger than the Read limit (100 MB), so it is rendered in page ranges to the scratchpad
+and read inside a subagent, exactly like the decks.**
+
+### What this changes about the remaining twelve chapters
+
+The render debt was **574 pages across nine decks and two `.pptx` files**, several of which return
+zero characters and have no cache at all (`L13,14` at 41 pp for `op-uvea` + `op-sclera`; `L24` at
+78 pp of `CamScanner` for `op-onc`). **The book is 274 pages and covers all of it in one coherent
+source.** Do not re-plan the reading order until `book-map.md` exists — but expect the answer to be
+*read the book's relevant chapter*, not *grind the deck*.
+
+**The deck is still the authority on what was TAUGHT and what is EXAMINABLE** — the chapter list in
+`modules.js` comes from the lecture series, and a question is answered from the course before the
+book. What changes is where the *content* comes from when a deck is blind.
