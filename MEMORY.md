@@ -49,13 +49,25 @@ there before resuming a paused stream. Where this file and the archive disagree,
   **write it ONCE, against both** — plus two **notices** whose facts are already written, AMD in
   `ins-7` and the leukocoria five in `wht-8`, to be cross-referenced not re-derived) · a **two-job
   targeted render** closing the module's two proven extraction losses.
-- **⚠️ A TEXT-SUFFICIENT SOURCE CAN STILL LOSE CONTENT, AND TWICE IT HAS.** `L37`'s three tables
-  are **images** inside an otherwise exact 5,104-word extraction — Table 4-3 (*"instructions for
-  patients to follow"*) is restated nowhere and was recorded in `rdm-10` as a **genuine loss**
-  before being chased. `L33,34` interleaves five figure captions into one unreadable block and
-  **misaligns a chart's columns**, putting the corneal transparency requirements under the wrong
-  headings. **Classing a deck text-sufficient is a claim about its PROSE, never about its tables
-  or its columns.**
+- **⚠️⚠️ A TEXT LAYER CAN BE WORD-COMPLETE AND STILL BE WRONG, AND "NO ORPHAN WORDS" IS NOT A
+  VALID CHECK.** Two text-sufficient sources lost **structure**, two chapters rebuilt it from the
+  prose, and a targeted render **contradicted both on points of fact** (2026-08-17; both merged
+  chapters corrected the same day, detail in `theory-plan.md`). `L37`'s Tables 4-1/4-2 are
+  **images**: `rdm-5` had graded **photophobia in acute glaucoma "marked"** where the book grades
+  it **1 of 3, the LOWEST of the three dangerous eyes**, and gave discharge as watery where the
+  book prints `−`; it also lost the **bacterial/viral/allergic** split, six rows and the whole
+  **referral** column. ✅ Table 4-3, recorded as a genuine loss, was **recovered**. `L33,34` p.19
+  is **a stack of five overlapping cards**, only the top one visible — recovered by **draw-order
+  extraction** (`pdftotext -raw`); `wht-8` had cross-contaminated three phrases and wrongly accused
+  the deck of misspelling *preretinal* (it prints **epiretinal**). **⚠️ THE HUB'S OWN CHECK WAS
+  WHAT FAILED: "the fragments reassemble with no orphan words" proves only that every word landed
+  SOMEWHERE, never that it landed in the right sentence. Never accept a reconstruction on a
+  word-conservation argument — render the page.** **Classing a source text-sufficient is a claim
+  about its PROSE, never about its tables or its columns.**
+- **⚠️ NEVER `git add` A DIRECTORY WHILE A SUBAGENT IS WRITING INTO IT.** `git add
+  content/ophtho/lectures/` swept up an agent's half-finished `L37` append into an unrelated
+  commit (`eddd2ac`). **Stage explicit file paths**, and the existing "never `git add -A`" rule
+  extends to any directory an agent has open.
 - **Next to write:** `op-acute` (L31,32, 426 w cached / 31 pp owed) · then the render-gated ones.
   **⚠️ `op-refract` holds 38 questions — 28 % of the whole module — and is gated on `L7,8`
   (88 pp, and triage WORKS on it: real per-page titles). That is the highest-value render left.**

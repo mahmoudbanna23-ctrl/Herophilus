@@ -273,18 +273,43 @@ neither glaucoma deck prints them). The corollary is the standing rule, which ha
 times: **read the slide — and grep the misspelling — before declaring a gap.** `L25` prints
 *"Vossious"*, so `Vossius` returns zero; `L35,36` prints *"Amsilar"*.
 
-**⚠️ ONE PASSAGE IN THE MODULE RESTS ON A RECONSTRUCTION, AND IT IS RECORDED HERE RATHER THAN
-HIDDEN.** `L33,34) The White Eye` lines 287–329 are a multi-column slide whose extraction
-**interleaves five figure captions into one unreadable block** — fragments of ROP, Coats, PFV,
-parasitic granuloma and retinal dysplasia shuffled together mid-word. `op-white` reconstructed it
-into five sentences and flagged it; the hub then read the raw block directly and confirmed the
-fragments reassemble **with no orphan words left over**, each into the standard definition of its
-entity. `wht-8` says in the body that it is a reading of a garbled extraction, not a supplied fact.
-**It is sound, and it is the one place a cheap render of a text-sufficient deck would still add
-certainty** — worth doing at the reconciliation pass, not before. The same slide also proves a
-smaller point: **the extracted clinical-picture chart on that deck has misaligned columns**, dropping
-the three corneal transparency requirements under the wrong sign headings (lines 71–85 prove they
-are the cornea's). **A text layer can be complete and still be wrong about STRUCTURE.**
+**⚠️⚠️ THE MOST IMPORTANT FINDING IN THE MODULE: A TEXT LAYER CAN BE WORD-COMPLETE AND STILL BE
+WRONG, AND "NO ORPHAN WORDS" IS NOT A VALID CHECK.** Two "text-sufficient" sources lost **structure**
+rather than words, two chapters reconstructed the lost structure from the surrounding prose, and a
+targeted render on 2026-08-17 **contradicted both reconstructions on points of fact.** Both merged
+chapters were corrected the same day. This is the reason the render happened, and the reason it must
+happen again wherever a reconstruction is standing in for a table.
+
+- **`L37) Red Eye` Tables 4-1 and 4-2 are IMAGES** inside a 5,104-word extraction that is otherwise
+  exact to the word. `rdm-5` rebuilt them from the prose and got **two cells and the whole column
+  set wrong**: it graded **photophobia in acute glaucoma "marked"** when the book grades it **1 of
+  3 — the LOWEST of the three dangerous eyes**, against 3 in both iridocyclitis and keratitis; it
+  gave **discharge as "watery" in acute glaucoma and iridocyclitis** where the book prints **`−`
+  for both**; it collapsed the book's **bacterial / viral / allergic** conjunctivitis columns into
+  one, losing the tables' main teaching; and it invented episcleritis and subconjunctival-haemorrhage
+  columns the tables do not have. It also dropped six whole rows — **itching** (2–3, allergic only,
+  the allergic discriminator), **preauricular node** (viral only), corneal epithelial disruption,
+  shallow anterior chamber, proptosis, the graded **exudation** scale (bacterial 3 > viral 2 >
+  allergic 1) — and the entire per-row **"referral advisable if present"** column. ✅ `rdm-5` now
+  carries both tables verbatim; the chapter went 10 pp → **11**, and the growth is the book's own
+  grid, not padding. **Table 4-3, recorded in `rdm-10` as a genuine loss, was RECOVERED — five rows
+  of patient instructions restated nowhere else in the chapter.**
+- **`L33,34) The White Eye` p.19 is not five figure captions at all** — it is **a stack of five
+  overlapping cards** over one leukocoria photo, of which **only the top card is visible in a
+  render**; the other four are physically covered and were recovered by **draw-order extraction**
+  (`pdftotext -raw`), which separates them cleanly. `wht-8`'s reconstruction had the five identities
+  and their order right but **cross-contaminated three phrases** — "extensive" belongs to Coats not
+  ROP, "variable extent" to PFV not Coats — and its defect note **wrongly accused the deck of
+  misspelling "preretinal"**: the deck prints **epiretinal**, and *"piretinal"* was the interleave
+  splitting `e|piretinal`. ✅ All corrected.
+- **⚠️ AND THE HUB'S OWN VERIFICATION WAS THE THING THAT FAILED.** The reconstruction was accepted
+  because the fragments reassembled **with no orphan words left over**. That test proves only that
+  **every word landed somewhere** — never that it landed in the right sentence. **Do not accept a
+  reconstruction on a word-conservation argument. Render the page.**
+- The same deck's clinical-picture chart also had **misaligned columns**; the render confirms the
+  three corneal transparency requirements are the cornea's, and adds two structural corrections —
+  the path is **Cornea → Transparent →** the three, and *Membrane / Lens / Retro-pupil* are the three
+  children of **Pupil**, not siblings of Transparent. `wht-3`'s content was right as written.
 
 **⚠️ The dead-agent rule held twice more.** Two agents died on the shared session limit at the same
 step — the §14.3a layout pass — and **both files were complete on disk** (fifth and sixth

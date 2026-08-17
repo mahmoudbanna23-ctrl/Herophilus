@@ -346,3 +346,98 @@ Pupil (aperture → lens → transparent)              Retinopathy of Prematurit
 01/06/2026
               nader.bayoumi@alexmed.edu.eg
 
+
+============================================================
+SUPPLEMENTARY VISUAL READ — PDF p.6 CHART, PDF p.19 CARD STACK
+Rendered 2026-08-17 because two slides in this deck defeat the
+text layer STRUCTURALLY: p.6 is a multi-level flowchart whose
+columns interleave, and p.19 is a stack of five overlapping
+cards whose text streams together. Every word of both is
+present above — only the STRUCTURE was lost. The original
+extraction is preserved unchanged; the corrected readings sit
+here beside it so the reason for the correction stays visible.
+============================================================
+
+
+------------------------------------------------------------
+PDF p.6 — "Clinical picture" flowchart, correctly aligned
+   (cache lines ~37-67; L33,34) The White Eye.pdf p.6)
+------------------------------------------------------------
+NOT a column chart — a four-level hierarchy. The extraction laid
+the three corneal transparency requirements out under the wrong
+headings. VERIFIED FROM THE RENDER: the three requirements hang
+off Cornea -> Transparent. They ARE the cornea's. "Membrane" has
+NO children on this slide.
+
+White (center)
+  Clinical picture
+    Symptoms
+      - Diminution of vision
+      - Disfigurement
+      - According to the cause
+    Signs
+      - Diminution of vision
+      - Location of opacity
+      - Cornea
+          Transparent
+            - Dehydrated state -> oedema
+            - Regular arrangement of collagen fibers -> scar
+            - No vessels, no Myelin
+      - Pupil (aperture -> lens -> transparent)
+          Membrane            [no child boxes]
+          Lens       -> Cataract
+          Retro-pupil -> Leukocoria
+                           -> Congenital cataract, RB, ROP, Coats,
+                              PFV, Toxoplasma, Toxocara,
+                              retinal dysplasia, etc
+
+As a table (Signs, by location of opacity):
+
+| Location | Sub-level | Requirement / lesion |
+|---|---|---|
+| Cornea | Transparent | Dehydrated state -> oedema |
+| Cornea | Transparent | Regular arrangement of collagen fibers -> scar |
+| Cornea | Transparent | No vessels, no Myelin |
+| Pupil (aperture -> lens -> transparent) | Membrane | (none printed) |
+| Pupil (aperture -> lens -> transparent) | Lens | Cataract |
+| Pupil (aperture -> lens -> transparent) | Retro-pupil | Leukocoria -> Congenital cataract, RB, ROP, Coats, PFV, Toxoplasma, Toxocara, retinal dysplasia, etc |
+
+
+------------------------------------------------------------
+PDF p.19 — the five leukocoria cards, de-interleaved
+   (cache lines ~288-330; L33,34) The White Eye.pdf p.19)
+------------------------------------------------------------
+The slide is a STACK OF FIVE OVERLAPPING CARDS (blue, yellow, red,
+green, orange) sitting on a photo of a child's leukocoric eye. Only
+the topmost card (orange, "Retinal Dysplasia") is visible in a
+static render — the other four are physically covered and CANNOT be
+read visually. They were instead recovered exactly by
+`pdftotext -raw`, which preserves content-stream (draw) order and
+so separates the cards cleanly. This is an extraction, not a
+reconstruction. Draw order below = back card to front card.
+
+1. Retinopathy of Prematurity
+   Proliferative retinopathy in preterm and low birth weight
+   infants with subsequent epiretinal fibrosis and tractional
+   retinal detachment
+
+2. Coats disease
+   Peripheral retinal telangiectasia with extensive subretinal
+   lipid exudation and exudative retinal detachment
+
+3. Persistent Fetal Vasculature
+   Persistence of the hyaloid system with variable extent
+   posteriorly, lenticularly, or anteriorly
+
+4. Toxoplasma, Toxocara
+   Parasitic granulomas in the retina / choroid
+
+5. Retinal Dysplasia
+   Congenital malformation of the retina
+   [the only card visible in the render — confirms the stack order]
+
+CAUTION for anyone re-reading the interleaved block above: it
+carries BOTH "piretinal" and "subretinal" fragments shuffled
+together. The correct split is ROP = "epiretinal fibrosis",
+Coats = "subretinal lipid exudation". A reconstruction from the
+interleaved text alone can easily mis-assign these two.
