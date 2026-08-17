@@ -5,79 +5,85 @@ Running record, organised around *resuming*. ISO dates; unverified marked as suc
 story, count and verbatim ruling) in `progress\memory-archive.md`** — read the relevant block
 there before resuming a paused stream. Where this file and the archive disagree, this file wins.
 
-## Resume here — ✅ Peds theory DONE (51/51). **OPHTHALMOLOGY IN PROGRESS: 18 of 32 chapters** (2026-08-17). Then Neuropsychiatry (27). Banks stay PAUSED.
+## Resume here — ✅ Peds theory DONE (51/51). **OPHTHALMOLOGY IN PROGRESS: 21 of 33 chapters** (2026-08-17). Then Neuropsychiatry (27). Banks stay PAUSED.
 
 - **⚠️⚠️ `content\ophtho\theory-plan.md` IS THE MODULE'S WORKING FILE — READ IT FIRST.** It now
   carries **"What writing the first twelve chapters taught"** (splitting, measurement, headers,
   the five ways a register row goes wrong, and *a deck's title does not bound its content*), kept
   there rather than here because this file is capped at 200 lines. Do not re-derive any of it.
-- **Ophtho is 32 chapters, not 26 — FIVE splits**, each recorded in `modules.js` with its own
+- **Ophtho is 33 chapters, not 26 — SIX splits**, each recorded in `modules.js` with its own
   reasoning: `op-orbit`/`op-orbit-mass` (split after printing 14 pp — the expensive way),
-  `op-cornea`/`op-cornea-surg`, `op-cat`/`op-cat-surg`, `op-red`/`op-red-mgmt`, and `op-ret` **three ways** into
-  `op-ret-dr`/`op-ret-vasc`/`op-ret` (all forecast BEFORE writing). **Project total 140.**
-  ⚠️ **Splits move questions:** 12 refiled at the first two, 1 each at the fourth and fifth.
-  ✅ **Eighteen written and individually printed** 2026-08-17: **164 pp, mean 9.1** (ENT 8.6, peds
-  8.3); per-chapter table in `theory-plan.md`. Boot: **0 console errors**, **202 sections**, 0 dead
-  ids, 0 wrong-chapter, **0 unanchored of 1,207**, **69/138 questions reachable**.
+  `op-cornea`/`op-cornea-surg`, `op-cat`/`op-cat-surg`, `op-red`/`op-red-mgmt`, `op-ret` **three ways**
+  into `op-ret-dr`/`op-ret-vasc`/`op-ret`, and `op-refract`/`op-refract-astig` (all but the first
+  forecast BEFORE writing). **Project total 141.**
+  ⚠️ **Splits move questions:** 12 refiled at the first two, 1 each at the fourth and fifth, **16 at
+  the sixth** — always driven by the theory `qs` links, never a keyword tie-break.
+  ✅ **Twenty-one written and individually printed** 2026-08-17: **191 pp, mean 9.1** (ENT 8.6, peds
+  8.3); per-chapter table in `theory-plan.md`. Boot: **0 console errors**, **239 sections**, 0 dead
+  ids, 0 wrong-chapter, **0 unanchored**, 0 bold-led paragraphs over the 55-w cap,
+  **109/138 questions reachable**.
 - **⚠️⚠️ CHECK A CHAPTER'S QUESTIONS AGAINST ITS ASSIGNED DECK BEFORE BRIEFING IT.** The plan's
   Decks column is an assignment, **not a coverage guarantee**: **none of `op-va`'s 16 questions is
   answerable from `L3,4`**, its only listed deck — they are `L1,2`'s, whose lines 438–613 (866 w)
   are now counted to `op-va` (**`op-intro`/`op-vissym` must not re-count them**). `op-intro` and
   `op-vissym` share a deck the same way and could hide the same mismatch.
-- **⚠️⚠️ `L9` IS READ BUT WAS NEVER CACHED — its 33 pages are effectively UNREAD.** The
-  2026-08-16 calibration read wrote its *findings* into `theory-plan.md` and left the cache at
-  **38 words of "CamScanner"×33**. Verified on disk 2026-08-17. The transcription does not exist,
-  so `op-lac` (1 q, **4 register rows**) is still render-gated and the re-read is owed. **Cache in
-  the same pass as the read — a read that writes findings only is a read that must be paid twice.**
-- **⚠️ Ophtho owes 660 pages of visual reading — 541 after the two IN FLIGHT** (`L31,32` 31 pp + `L7,8` 88 pp, launched 2026-08-17 at a stated cost) before the
-  owed-deck chapters can be budgeted — §14's formula breaks there (5.3 q/chapter; the lecture term
-  measures the text layer). A blank page here is usually a TEXT slide (inverse of peds); **FIVE deck
-  patterns now — the fifth is the CAPTION DECK**, which extracts fully and still understates itself
-  badly (`L19.1`/`L19.2`; detail in `theory-plan.md`). ✅ `L3,4`, `L10`, `L25` banked — do not
-  re-read. `op-ant` has no deck. **~50 register rows are ophtho's**; ~12 closed, 5 notices,
-  **3 undeliverable** (aniridia/Sturge–Weber, sickle management, the ROP stages), the rest open.
-- ✅ **`L20` read, cache 473 → 2,376 w**; ✅ **filler sweep CLEAN NEGATIVE on all ten owed PDFs — DO NOT RE-RUN** (`theory-plan.md`).
+- **⚠️⚠️ `L9` IS READ BUT WAS NEVER CACHED — its 33 pages are effectively UNREAD** (cache still
+  **38 words of "CamScanner"×33**, verified on disk 2026-08-17; the 08-16 read wrote findings to
+  `theory-plan.md` only). `op-lac` stays render-gated. **Cache in the same pass as the read — a
+  read that writes findings only is a read that must be paid twice.**
+- **⚠️ Ophtho owes 574 pages of visual reading** (461 PDF pp over 9 decks + 113 `.pptx` slides)
+  before the owed-deck chapters can be budgeted — §14's formula breaks there (5.3 q/chapter; the
+  lecture term measures the text layer). A blank page here is usually a TEXT slide (inverse of
+  peds); **SIX deck patterns — the caption deck** (extracts fully, understates itself badly) **and
+  the EMPTY-SLIDE deck** (`L31,32`: four blank "Management" slides), plus **three kinds of blank
+  page: text slide · byte-identical filler · broken graphic**. Detail in `theory-plan.md`.
+  ✅ `L3,4`, `L10`, `L25` banked. `op-ant` has no deck. **~50 register rows are ophtho's**;
+  ~17 closed, 5 notices, **4 undeliverable** (aniridia/Sturge–Weber, sickle management, the ROP
+  stages, the axis notation), the rest open.
+- ✅ **`L20` 473→2,376 w · `L31,32` 426→2,773 · `L7,8` 1,545→7,004**; ✅ **filler sweep CLEAN NEGATIVE on all ten owed PDFs — DO NOT RE-RUN** (`theory-plan.md`).
+- **⚠️⚠️ AFTER A READ, THE DECK'S WORD COUNT IS THE CACHE'S, NEVER `pdftotext`'s.** The `L7,8`
+  reader recommended *not* splitting `op-refract` because the deck holds "only 1,540 words" — the
+  very number the 88-page render existed to replace; its own transcription holds **4,439**. Split
+  anyway at p61; the halves printed **10 and 8 pp**. **A text layer can be word-complete and still
+  be wrong**: its p71 put PRK under lenticular surgery where the slide branches both LASIK and PRK
+  from corneal. **`pdffonts` per page is the detector for the newest failure — text drawn as VECTOR
+  OUTLINES** (`L31,32` p22 returned zero characters in every mode and carried the sign that made
+  its case diagnosable).
 - **⚠️⚠️ COUNT A CHAPTER'S REGISTER ROWS AND VERIFY EVERY ROW'S *SECOND CLAUSE* BEFORE BRIEFING IT.**
-  `op-ret` was named in **twelve rows from six donors** and **five were wrong** — wrong deck, wrong
-  receiving section, **circular ×3**, over-specified source, and **an over-stated absence** (which
-  matters, because it invites the receiver to skip the grep). Twelve rows and three decks made it
-  the module's largest chapter at a forecast **~29 pp against a question count of five**. Row-by-row
-  evidence: `START-HERE.md` §14.5.
-- **⚠️ TEST-PRINT THE JOIN BEFORE ACCEPTING A SPLIT.** A fourth `op-ret` chapter was proposed and
-  **dropped by measurement**: printed as one, detachment is **10 pp** against the estimator's
-  **15.2**. The ÷240 estimator has now over-predicted by **5, 2 and 2 pages** in this module, and
-  the extra chapter would have forced four needless question refiles.
-- **⚠️⚠️ A TEXT LAYER CAN BE WORD-COMPLETE AND STILL BE WRONG. "NO ORPHAN WORDS" IS NOT A VALID
-  CHECK — it proves every word landed SOMEWHERE, never that it landed in the right sentence.**
-  Two text-sufficient sources lost **structure**, two chapters rebuilt it from the prose, and a
-  targeted render **contradicted both on points of fact** (2026-08-17, both corrected the same day
-  — full detail, including the wrong cells, in `theory-plan.md`). **Never accept a reconstruction
-  on a word-conservation argument; render the page.** ✅ `L37`'s Table 4-3, recorded as a genuine
-  loss, was **recovered**. ✅ `L33,34` p.19 is **five overlapping cards**, only the top one visible
-  — recovered by **draw-order extraction** (`pdftotext -raw`), which is the tool for any slide whose
-  text streams together. **Classing a source text-sufficient is a claim about its PROSE, never
-  about its tables or its columns.**
-- **⚠️ NEVER `git add` A DIRECTORY WHILE A SUBAGENT IS WRITING INTO IT** — it swept a half-finished
-  `L37` append into an unrelated commit. **Stage explicit paths**; "never `git add -A`" extends to
-  any directory an agent has open.
-- **Next to write:** `op-acute` (L31,32, 426 w cached / 31 pp owed) · then the render-gated ones.
-  **⚠️ `op-refract` holds 38 questions — 28 % of the whole module — and is gated on `L7,8`
-  (88 pp, and triage WORKS on it: real per-page titles). That is the highest-value render left.**
-  `L1,2` (136 pp, un-triageable — one running header across 80 blank pages) gates `op-intro` and
-  `op-vissym`. **`op-ant` last: no deck at all, so its scope is what the others leave** — the
-  `ent-sinuscomp` shape; grep ~50 terms across the module before writing, and `wht-4` is already
-  flagged for it to cross-reference.
-- **⚠️ `op-uvea` IS THE MODULE'S MOST BLOCKED CHAPTER** — four register rows owed to it and
-  `L13,14` extracts **zero characters over 41 pp with no cache at all**. **Count a chapter's
-  register rows before briefing it**; a question count does not predict what it has been handed.
-- **⚠️ Interview item, batched, not yet asked:** `L23` prints `(Fig 9-8)`/`(Fig 9-14)` in book
-  prose and `L37) Red Eye` is "CHAPTER 4" of an unnamed AAO-family primer — **`L23` is very
-  probably Chapter 9 of the same book.** Nothing is cited as a book chapter yet; settle both
-  together by **asking**, never guessing.
-- **⚠️ ENT is NOT closed**: 25 §14.5 register rows open (reconciliation vs merged chapters),
-  **plus 33 bold-led paragraphs over the 55-word cap** found 2026-08-16 when the auditor's
-  blind spot was fixed (it skipped `*`-opening lines — §14.3a's own bold leads were never
-  checked; peds is clean at 2). That is located work for the ENT reconciliation pass.
+  `op-ret` was named in **twelve rows from six donors and five were wrong** (~29 pp forecast against
+  five questions — a question count predicts nothing). **NINE fault shapes now**: over-specified ·
+  absent from the deck · wrong deck · wrong slide · circular · wrong receiver · **wrong line** ·
+  **stale, because a third chapter delivered it** · **donor under-stating its own coverage** (the
+  mirror of the over-stated absence, and it makes the receiver write a duplicate). Row-by-row
+  evidence and the census of what each unwritten chapter is owed: `START-HERE.md` §14.5 and
+  `theory-plan.md`.
+- **⚠️ TEST-PRINT THE JOIN BEFORE ACCEPTING A SPLIT** (a fourth `op-ret` chapter was dropped by
+  measurement — 10 pp against the estimator's 15.2). **The ÷240 estimator has over-predicted by
+  5, 2, 2, 1.5, 2.3 and 2.1 pages here — plan with it, never clear a chapter with it.**
+- **⚠️⚠️ "NO ORPHAN WORDS" IS NOT A VALID CHECK** — it proves every word landed SOMEWHERE, never
+  that it landed in the right sentence. **Never accept a reconstruction on a word-conservation
+  argument; render the page.** `pdftotext -raw` (draw order) is the tool for any slide whose text
+  streams together — it recovered `L33,34` p.19's five overlapping cards. **Text-sufficient is a
+  claim about a source's PROSE, never about its tables or its columns** (`theory-plan.md`).
+- **⚠️ NEVER `git add` A DIRECTORY WHILE A SUBAGENT IS WRITING INTO IT** (it swept a half-finished
+  `L37` append into an unrelated commit). **Stage explicit paths.**
+- **Next: EVERY remaining chapter is render-gated except `op-ant`.** Twelve left, and the reading
+  order is the debt: **`L1,2` 136 pp** (un-triageable — one running header across 80 blank pages)
+  gates `op-intro`+`op-vissym` · `L24` 78 (`op-onc`) · `L27,28` 70 (`op-appear`) · `L29`+`L30` 58
+  (`op-squint`) · `L21`+`L22` 45 (`op-neuro`) · `L13,14` 41 (`op-uvea`+`op-sclera`) · `L9` 33
+  (`op-lac`) · `L6`+`L5` 113 slides (`op-conj`+`op-lid`). **`op-ant` last: no deck at all, so its
+  scope is what the others leave** — the `ent-sinuscomp` shape; grep ~50 terms across the module
+  before writing, and `wht-4` is already flagged for it to cross-reference.
+- **⚠️ `op-uvea` IS THE MODULE'S MOST BLOCKED CHAPTER** — **five** register rows owed to it and
+  `L13,14` extracts **zero characters over 41 pp with no cache at all**.
+- **⚠️ TWO interview items, batched, both ASKED 2026-08-17 and not yet answered:** (1) whether to
+  fetch the QR code standing where `L31,32` p18's management belongs — decoded offline, exact,
+  `https://scan.page/4t7P1B`, **not visited**; (2) `L23` prints `(Fig 9-8)`/`(Fig 9-14)` and `L37`
+  is "CHAPTER 4" of an unnamed AAO-family primer, so **`L23` is very probably Chapter 9 of the same
+  book** — nothing is cited as a book chapter yet. Settle by **asking**, never guessing.
+- **⚠️ ENT is NOT closed**: 25 §14.5 register rows open, **plus 33 bold-led paragraphs over the
+  55-word cap** (peds 2, ophtho 0). Located work for the ENT reconciliation pass. ⚠️ **A cap
+  auditor must separate BULLETS from PARAGRAPHS** — conflating them faked four failures here.
 - **Question banks, frozen mid-flight**: ✅ Endpoint closed · ✅ GG Ear+Nose closed · GG Throat
   t1–t9 + t11 written · **⚠️ only t10 left in GG** — staged complete (66/66 verbatim,
   10 boxes, 10 figures, 10 back-ref chains repaired) but **only 11 of 66 drafted**; 55 remain,
@@ -110,11 +116,10 @@ there before resuming a paused stream. Where this file and the archive disagree,
   date+title, progress by question id) but **reassign questions from the theory `qs` links** —
   automatic tie-breaks misfile most. Method: `content\peds\theory-plan.md`.
 - **Writing budget, banks (2026-08-13, supersedes "full depth everywhere"):** adaptive depth —
-  ~520 w for vignettes/defects/divergences/gap-fills, **~250 w for straight slide-recall**,
-  every distractor still explained; shared tables live in ONE entry, siblings point at an
-  **existing** id; `source` is a citation, never a second explanation. **Scope is never cut**
-  — the user corrected the first briefs for that, verbatim in the archive. If time runs short,
-  say so loudly; scaling down is the user's call.
+  ~520 w for vignettes/defects/divergences/gap-fills, **~250 w for straight slide-recall**, every
+  distractor still explained; shared tables live in ONE entry, siblings point at an **existing**
+  id; `source` is a citation, never a second explanation. **Scope is never cut** (the user
+  corrected the first briefs for that). If time runs short, say so loudly — scaling down is theirs.
 - **A defective key is noted, never disputed** (2026-08-11) — closes the disputed-key roster.
   Never take a key dispute to the user; interview only for things they can supply.
 - **A lecture-numbering gap = the professor withheld it** (2026-08-14, closes the interview) —
@@ -130,16 +135,14 @@ there before resuming a paused stream. Where this file and the archive disagree,
 - **Read every answered page; trust no count** — not printed numbering, not the contents page,
   not the map (ranges right 21/21, counts wrong 17/21, always upward). Render **one page past
   the last answer page** (both boundary defects are unpredictable in both directions).
-- **Run the full six-stage duplicate sweep (A–F) on every topic**; folds ran 0–20 per topic
-  with no trend. The rankings are the instrument, the strict stages a convenience (folds have
-  reached neither A nor B three times). Stage-blind spots, defect shapes 1–6, true/false and
-  bare-ordinal false positives: archive. **Say why a zero is a zero.** Grep drafted blocks for
-  a folded id **before** splicing; re-run the dead-id check after every fold.
-- **Compute the expected marker delta FIRST, then audit both ways** — five marker faults in
-  five shapes (block-missing, in-`source` ×3 incl. 14 pre-existing, sentence lost at writing,
-  spurious on boxed entries). A boxed entry takes NO marker. The audit asks *"does
-  `explanation` END with the sentence"*, over the whole file. Canonical validator + marker
-  definition: `<scratchpad>\wrT7\validate.js` (strip trailing `*`s — not optional).
+- **Run the full six-stage duplicate sweep (A–F) on every topic**; folds ran 0–20 per topic with
+  no trend. The rankings are the instrument, the strict stages a convenience. Stage-blind spots,
+  defect shapes 1–6 and the false positives: archive. **Say why a zero is a zero.** Grep drafted
+  blocks for a folded id **before** splicing; re-run the dead-id check after every fold.
+- **Compute the expected marker delta FIRST, then audit both ways** — five marker faults in five
+  shapes (block-missing, in-`source` ×3, lost at writing, spurious on boxed entries; a boxed entry
+  takes NO marker). The audit asks *"does `explanation` END with the sentence"*, over the whole
+  file. Validator: `<scratchpad>\wrT7\validate.js` (strip trailing `*`s — not optional).
 - **Every bank mis-keys itself — go looking.** Mechanism decides: options replaced → new
   entry; identical options, moved key → record in place; bank contradicting its own box →
   correct and record. Cross-bank divergence: hold both, notes in both — **but check the menu
@@ -152,26 +155,24 @@ there before resuming a paused stream. Where this file and the archive disagree,
   provenance (46 early Endpoint + all 21 House), not verified. Owed when ENT banks resume;
   roster: archive + `ledger.md` §11.
 - **GG structure**: PDF page = book page + 9; **three chapters (Ear/Nose/Throat), numbering
-  restarts per section** — ids carry a section+topic token (`entqb-thr1-1`). ~30% carry boxes
-  but box presence is a property of the PAGE. Back-references hit up to 28%; repair every
-  "previous case" reference — the deck is shuffled. Figures: GG crops by hand, **13 of 13
-  wrong first try — LOOK at every crop**; an answer-page figure is never cropped (it would
-  reveal the key).
+  restarts per section** — ids carry a section+topic token (`entqb-thr1-1`). ~30% carry boxes, but
+  box presence is a property of the PAGE. Back-references hit up to 28%; repair every "previous
+  case" reference — the deck is shuffled. Figures: **13 of 13 crops wrong first try — LOOK at every
+  crop**; an answer-page figure is never cropped (it would reveal the key).
 
 ## Validation state
 
 - **Corpus 2,097** (2026-08-14): ENT 1,720 · Neuro 158 · Ophtho 138 · Peds 81. Banks: GG
   1,180 · Endpoint 697 · House 78; 54 shared memberships. Module keys `ent`, `ophtho`,
   `pediatrics`, `neuropsych`. Option counts 2–9 coexist; nothing assumes four.
-- **Theory: 81 of 134 chapters** — all ENT (30), all Peds (51). ENT 259 pp / mean 8.6; Peds
-  340 pp / mean 8.3. Drafts: `content\ent\theory-drafts\` (⚠️ the bare
-  `ent-csom/tonsils/aom/stridor` files are the DEAD format; their `*.v2/v3` are current).
-  Best models to hand an agent: `ent-nasalobs`, `ent-sinuscomp`, `ent-otorrhea`.
+- **Theory: 102 of 141 chapters** — all ENT (30), all Peds (51), Ophtho 21. ENT 259 pp / mean
+  8.6; Peds 340 / 8.3; Ophtho 191 / 9.1. Drafts: `content\<mod>\theory-drafts\` (⚠️ ENT's bare
+  `ent-csom/tonsils/aom/stridor` files are the DEAD format; their `*.v2/v3` are current). Best
+  models to hand an agent: `ent-nasalobs`, `ent-sinuscomp`, `op-ret`, `op-refract`.
 - Last real `file://` boot: **0 console errors, 854 CSS rules, 3 `max-aspect-ratio:5/4`
-  blocks, 4 module cards, 2,097 questions, 81 theory chapters, 9/9 poses.**
+  blocks, 4 module cards, 2,097 questions, 9/9 poses.** Print harness: `<scratch>\print.sh`.
 - **⚠️ `pages ≈ words ÷ 240` is an exact AGGREGATE predictor and ±3 per chapter** — plan a
-  module with it, never clear a chapter; print the chapter. Words and pages move oppositely
-  with format; predict overruns entity-by-entity (seven rules: `START-HERE.md` §14.1).
+  module with it, never clear a chapter; print the chapter (seven rules: §14.1).
 - **⚠️ A draft header is a claim, not a measurement — re-count from disk after the final
   edit.** Wrong nine times; worst shape a *forecast wearing a measurement's label* whose
   breakdown summed exactly. The sum check alone no longer suffices.
