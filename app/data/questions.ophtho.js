@@ -651,7 +651,7 @@ var Q_OPHTHO = [
 },
 
 {
-  id:'opqb-t1-65', bank:'gradegain', module:'ophtho', chapter:'op-red',
+  id:'opqb-t1-65', bank:'gradegain', module:'ophtho', chapter:'op-red-mgmt',
   stem:'Photophobia is **least** likely in:',
   options:['Keratitis','Iritis','Acute glaucoma','Conjunctivitis'],
   answer:3,

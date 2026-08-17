@@ -44,7 +44,16 @@ const MODULES = [
          so the seam was chosen up front. Medical cornea / surgical cornea. */
       ['op-cornea','Cornea — infection, trauma and the red eye'],
       ['op-cornea-surg','Cornea — ectasia, grafts and refractive surgery'],
-      ['op-red','Red Eye'],
+      /* Split 2026-08-17. L37 is a BOOK CHAPTER, not a deck — 5,104 words, the
+         densest source in the module — and forecast at ~21 pages as one
+         chapter. The seam is the book's OWN first-order heading, "Further
+         Interpretation of the Findings", which balances the halves within 8 %
+         where no other candidate came within 30 %. A seam at "Management or
+         Referral" would have left part 1 at ~16 pp needing a second split, and
+         an acute-vs-chronic seam would have written the 1,001-word danger-signal
+         block twice and cut three entities in half. */
+      ['op-red','Red eye — the approach and the causes'],
+      ['op-red-mgmt','Red eye — danger signals, referral and treatment'],
       /* Split 2026-08-17, forecast BEFORE writing like the cornea pair: one
          chapter costed out at ~4,370 words / ~18 printed pages. The seam is
          medical vs surgical, because both lecturers already draw it and ZERO

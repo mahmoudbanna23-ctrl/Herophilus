@@ -5,19 +5,22 @@ Running record, organised around *resuming*. ISO dates; unverified marked as suc
 story, count and verbatim ruling) in `progress\memory-archive.md`** — read the relevant block
 there before resuming a paused stream. Where this file and the archive disagree, this file wins.
 
-## Resume here — ✅ Peds theory DONE (51/51). **OPHTHALMOLOGY IN PROGRESS: 13 of 28 chapters** (2026-08-17). Then Neuropsychiatry (27). Banks stay PAUSED.
+## Resume here — ✅ Peds theory DONE (51/51). **OPHTHALMOLOGY IN PROGRESS: 15 of 30 chapters** (2026-08-17). Then Neuropsychiatry (27). Banks stay PAUSED.
 
 - **⚠️⚠️ `content\ophtho\theory-plan.md` IS THE MODULE'S WORKING FILE — READ IT FIRST.** It now
   carries **"What writing the first twelve chapters taught"** (splitting, measurement, headers,
   the five ways a register row goes wrong, and *a deck's title does not bound its content*), kept
   there rather than here because this file is capped at 200 lines. Do not re-derive any of it.
-- **Ophtho is 28 chapters, not 26** — three splits, all recorded in `modules.js` with their
-  reasoning: `op-orbit`/`op-orbit-mass`, `op-cornea`/`op-cornea-surg`, `op-cat`/`op-cat-surg`.
-  ✅ Thirteen written and **individually printed** 2026-08-17 (US letter, the machine default):
+- **Ophtho is 30 chapters, not 26 — FOUR splits**, each recorded in `modules.js` with its own
+  reasoning: `op-orbit`/`op-orbit-mass` (split after printing 14 pp — the expensive way),
+  `op-cornea`/`op-cornea-surg`, `op-cat`/`op-cat-surg`, `op-red`/`op-red-mgmt` (all three
+  forecast BEFORE writing). **Project total 138 chapters.** ⚠️ **Splits also move questions:**
+  12 refiled at the first two, 1 (`opqb-t1-65` → `op-red-mgmt`) at the fourth.
+  ✅ Fifteen written and **individually printed** 2026-08-17 (US letter, the machine default):
   `op-pupil` 8 · `op-orbit` 9 · `op-orbit-mass` 7 · `op-glauc` **12** · `op-cornea` 9 ·
   `op-cornea-surg` 9 · `op-va` 9 · `op-trauma` 9 · `op-systemic` 10 · `op-insid` 9 · `op-cat` 9 ·
-  `op-cat-surg` 8 · `op-white` 8. **116 pp, mean 8.9** (ENT 8.6, peds 8.3). Boot: **0 console
-  errors**, 144 sections, 0 dead `qs` ids, 0 wrong-chapter links, 63/138 questions reachable.
+  `op-cat-surg` 8 · `op-white` 8 · `op-red` 9 · `op-red-mgmt` 10. **135 pp, mean 9.0** (ENT 8.6, peds 8.3). Boot: **0 console
+  errors**, 166 sections, 0 dead `qs` ids, 0 wrong-chapter links, 64/138 questions reachable.
 - **⚠️⚠️ CHECK A CHAPTER'S QUESTIONS AGAINST ITS ASSIGNED DECK BEFORE BRIEFING IT.** The plan's
   Decks column is an assignment, **not a coverage guarantee**: **none of `op-va`'s 16 questions is
   answerable from `L3,4`**, its only listed deck — they are `L1,2`'s, whose lines 438–613 (866 w)
@@ -29,11 +32,21 @@ there before resuming a paused stream. Where this file and the archive disagree,
   patterns, three worth the render. ✅ `L3,4`, `L10`, `L25` banked — do not re-read. `op-ant` has
   no deck. **~30 §14.5 register rows are ophtho's**; 7 closed, 2 notices, 1 **undeliverable**
   (aniridia/Sturge–Weber — absent from all 27 decks), the rest open.
-- **In flight 2026-08-17:** `op-red` (⚠️ a **book chapter**, 5,104 w — the module's largest
-  compression job, briefed split-decision-first) · **the `L20` visual read** (33 pp, the first
-  bite of the render debt, taken because `op-ret` needs it and it is the smallest owed deck).
-  `op-ret` is then owed **5** register rows, incl. **one DR row opened twice** by `op-systemic`
-  and `op-insid` against different decks — **write it ONCE, against both.**
+- **In flight 2026-08-17:** the **`L20` visual read** (33 pp — the first bite of the render debt,
+  taken because `op-ret` needs it and it is the smallest owed deck) · a **two-job targeted render**
+  closing the module's two proven extraction losses (`L37`'s Tables 4-1/4-2/**4-3**, which are
+  images and extracted empty, and `L33,34`'s interleaved caption slide + misaligned chart).
+- **⚠️ A TEXT-SUFFICIENT SOURCE CAN STILL LOSE CONTENT, AND TWICE IT HAS.** `L37`'s three tables
+  are **images** inside an otherwise exact 5,104-word extraction — Table 4-3 (*"instructions for
+  patients to follow"*) is restated nowhere and was recorded in `rdm-10` as a **genuine loss**
+  before being chased. `L33,34` interleaves five figure captions into one unreadable block and
+  **misaligns a chart's columns**, putting the corneal transparency requirements under the wrong
+  headings. **Classing a deck text-sufficient is a claim about its PROSE, never about its tables
+  or its columns.**
+- **Next to write:** `op-ret` (owed **5** register rows, incl. **one DR row opened twice** by
+  `op-systemic` and `op-insid` against different decks — **write it ONCE, against both**), then
+  `op-acute`. **⚠️ `op-refract` holds 38 questions — 28 % of the module — and is gated on `L7,8`
+  (88 pp, triage works).** That is the highest-value remaining render.
 - **⚠️ `op-uvea` IS THE MODULE'S MOST BLOCKED CHAPTER** — four register rows owed to it and
   `L13,14` extracts **zero characters over 41 pp with no cache at all**. **Count a chapter's
   register rows before briefing it**; a question count does not predict what it has been handed.
