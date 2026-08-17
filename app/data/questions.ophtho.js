@@ -937,7 +937,7 @@ var Q_OPHTHO = [
 },
 
 {
-  id:'opqb-t2-93', bank:'gradegain', module:'ophtho', chapter:'op-cornea',
+  id:'opqb-t2-93', bank:'gradegain', module:'ophtho', chapter:'op-cornea-surg',
   stem:'The **2 most important investigations before LASIK** are:',
   options:['Biometry & corneal topography','Biometry & keratometry','Corneal topography & pachymetry','Biometry & pachymetry'],
   answer:2,
@@ -1000,7 +1000,7 @@ var Q_OPHTHO = [
 },
 
 {
-  id:'opqb-t2-99', bank:'gradegain', module:'ophtho', chapter:'op-cornea',
+  id:'opqb-t2-99', bank:'gradegain', module:'ophtho', chapter:'op-cornea-surg',
   stem:'A 20-year-old male sustained a **corneal scar** after a fingernail injury. Vision is blurred and **does not improve with spherical lenses**. Which investigation is most useful?',
   options:['Keratometry','Corneal topography','Retinoscopy','Ishihara test'],
   answer:1,
@@ -1010,7 +1010,7 @@ var Q_OPHTHO = [
 },
 
 {
-  id:'opqb-t2-100', bank:'gradegain', module:'ophtho', chapter:'op-cornea',
+  id:'opqb-t2-100', bank:'gradegain', module:'ophtho', chapter:'op-cornea-surg',
   stem:'A 20-year-old with a **corneal scar** after a fingernail injury has blurred vision unimproved by spherical lenses, and corneal topography confirms irregular astigmatism. The **best optical correction** is:',
   options:['Soft toric lenses','LASIK','Rigid gas-permeable lenses','Cylindrical glasses'],
   answer:2,
@@ -1168,7 +1168,7 @@ var Q_OPHTHO = [
   id: 'opqb-t3-114',
   bank: 'gradegain',
   module: 'ophtho',
-  chapter: 'op-orbit',
+  chapter: 'op-orbit-mass',
   stem: '**Evisceration** is:',
   options: [
     'Excision of the entire eyeball',
@@ -1204,7 +1204,7 @@ var Q_OPHTHO = [
   id: 'opqb-t3-116',
   bank: 'gradegain',
   module: 'ophtho',
-  chapter: 'op-orbit',
+  chapter: 'op-orbit-mass',
   stem: 'The most important symptom of differentiating **orbital cellulitis** from **pan ophthalmitis** is:',
   options: ['Vision', 'Pain', 'Redness', 'Swelling'],
   answer: 0,
@@ -1253,7 +1253,7 @@ var Q_OPHTHO = [
   id: 'opqb-t3-119',
   bank: 'gradegain',
   module: 'ophtho',
-  chapter: 'op-orbit',
+  chapter: 'op-orbit-mass',
   stem: 'Proptosis is **NOT** a clinical presentation in:',
   options: ['Pan ophthalmitis', 'Orbital cellulitis', 'Endophthalmitis', 'Graves’ disease'],
   answer: 2,
@@ -1284,7 +1284,7 @@ var Q_OPHTHO = [
   id: 'opqb-t3-121',
   bank: 'gradegain',
   module: 'ophtho',
-  chapter: 'op-orbit',
+  chapter: 'op-orbit-mass',
   stem: 'The following are signs of **retrobulbar hemorrhage** **EXCEPT**:',
   options: ['Proptosis', 'Chemosis', 'Miosis', 'Restriction of extraocular movements'],
   answer: 2,
@@ -1377,7 +1377,7 @@ var Q_OPHTHO = [
   id: 'opqb-t3-127',
   bank: 'gradegain',
   module: 'ophtho',
-  chapter: 'op-orbit',
+  chapter: 'op-orbit-mass',
   stem: '**Enucleation** is:',
   options: [
     'Removal of the eye contents, even the uvea',
@@ -1395,7 +1395,7 @@ var Q_OPHTHO = [
   id: 'opqb-t3-128',
   bank: 'gradegain',
   module: 'ophtho',
-  chapter: 'op-orbit',
+  chapter: 'op-orbit-mass',
   stem: 'On the **3rd post-operative day** of uneventful cataract surgery, the patient experienced **severe headaches**. On examination, the **BCVA was HM**, there was **ciliary injection, corneal edema, +3 cells in the AC**. The **IOP was 27 mmHg** & the **red reflex was absent**. The **ocular motility was also limited**. The most probable diagnosis:',
   options: [
     'Usual post-operative uveitis',
@@ -1431,7 +1431,7 @@ var Q_OPHTHO = [
   id: 'opqb-t3-130',
   bank: 'gradegain',
   module: 'ophtho',
-  chapter: 'op-orbit',
+  chapter: 'op-orbit-mass',
   stem: 'A **22-year-old male was hit in the eye by a tennis ball**. He has **diplopia in upward gaze**. Diplopia in upgaze is most likely due to entrapment of:',
   options: ['Superior oblique', 'Inferior rectus', 'Medial rectus', 'Lateral rectus'],
   answer: 1,
@@ -1462,7 +1462,7 @@ var Q_OPHTHO = [
   id: 'opqb-t3-132',
   bank: 'gradegain',
   module: 'ophtho',
-  chapter: 'op-orbit',
+  chapter: 'op-orbit-mass',
   stem: 'A **30-year-old patient after eyelid trauma** presents with **severe pain, proptosis, tight eyelids, decreased vision, and elevated IOP**. Which sign is expected?',
   options: ['Miosis', 'Chemosis', 'Ophthalmoplegia', 'Hypopyon'],
   answer: 2,
@@ -1475,7 +1475,7 @@ var Q_OPHTHO = [
   id: 'opqb-t3-133',
   bank: 'gradegain',
   module: 'ophtho',
-  chapter: 'op-orbit',
+  chapter: 'op-orbit-mass',
   stem: 'Earliest orbital sign in **blow-out fracture** is often:',
   options: ['Enophthalmos', 'Periorbital emphysema', 'Ptosis', 'Retinal detachment'],
   answer: 1,

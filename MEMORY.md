@@ -5,15 +5,28 @@ Running record, organised around *resuming*. ISO dates; unverified marked as suc
 story, count and verbatim ruling) in `progress\memory-archive.md`** — read the relevant block
 there before resuming a paused stream. Where this file and the archive disagree, this file wins.
 
-## Resume here — ✅ Peds theory DONE (51/51, 2026-08-16). NEXT: Ophthalmology theory (26 ch), then Neuropsychiatry (27). Banks stay PAUSED.
+## Resume here — ✅ Peds theory DONE (51/51). **OPHTHALMOLOGY IN PROGRESS: 6 of 28 chapters written** (2026-08-17). Then Neuropsychiatry (27). Banks stay PAUSED.
 
-- **⚠️ Ophtho owes ~726 pages of visual reading before any chapter can be budgeted** — the §14
-  formula breaks there (5.3 q/chapter; the lecture term measures the text layer, not the
+- **Ophtho is 28 chapters, not 26** — `op-orbit` split after printing 14 pp, `op-cornea` split
+  **before** writing (now the preferred order). ✅ Written and page-measured 2026-08-17, all on
+  US letter, the machine default: `op-pupil` **8 pp** · `op-orbit` **9** · `op-orbit-mass` **7** ·
+  `op-glauc` **12** · `op-cornea` **9** · `op-cornea-surg` **9**. 54 pp, mean 9.0 (ENT 8.6, peds
+  8.3). **⚠️ `op-glauc` estimated 10.8 and printed 12 — the estimator missed LOW again**, which is
+  the direction that matters; it is the module's largest and sits 1 page under the 13-pp shape.
+- **⚠️ Both splits left their questions behind, fixed 2026-08-17**: 9 refiled to `op-orbit-mass`,
+  3 to `op-cornea-surg`, driven by the theory `qs` links (the sets were disjoint and summed
+  exactly to the parent counts). **A split is not done when the chapter is split — refile the
+  questions in the same pass**, per the peds rule that was skipped here.
+- **⚠️ Ophtho owes ~726 pages of visual reading before the owed-deck chapters can be budgeted** —
+  the §14 formula breaks there (5.3 q/chapter; the lecture term measures the text layer, not the
   lecture; run naively it floors 11 of 26 chapters incl. `op-onc`, a 78-page deck). **Plan at
   `content\ophtho\theory-plan.md` — READ IT FIRST.** A blank page there is usually a TEXT slide
   (inverse of peds). Four deck patterns; three are worth the render. ✅ `L3,4`, `L10`, `L25`
-  already banked — do not re-read. `op-ant` has no deck. Cheapest start:
-  `op-orbit`/`op-va`/`op-pupil` (banked decks, 52 of 138 questions).
+  already banked — do not re-read. `op-ant` has no deck. **12 §14.5 register rows are ophtho's**;
+  2 ticked, 1 a notice, 9 open — `op-va` and `op-systemic` are each owed two.
+- **Next, no render cost:** `op-va` + `op-trauma` (banked decks, in progress 2026-08-17), then the
+  text-sufficient seven — `op-cat`, `op-systemic`, `op-insid`, `op-white`, `op-red` (⚠️ a **book
+  chapter**, 5,104 w, the module's largest compression job) and `op-ret` (⚠️ `L20`, 33 pp, owed).
 - **⚠️ ENT is NOT closed**: 25 §14.5 register rows open (reconciliation vs merged chapters),
   **plus 33 bold-led paragraphs over the 55-word cap** found 2026-08-16 when the auditor's
   blind spot was fixed (it skipped `*`-opening lines — §14.3a's own bold leads were never
