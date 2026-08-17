@@ -499,3 +499,64 @@ the app's `@page` declares no `size:`, so every figure below is mutually compara
 
 **164 pages over 18 chapters, mean 9.1** — against ENT's 8.6 and paediatrics' 8.3, and inside the
 ~10-page operative ceiling. Nothing has reached the 13-page hard shape since `op-orbit` was split.
+
+---
+
+## ✅ `L31,32) Acute visual Loss` — READ 2026-08-17, cache 426 → 2,773 w
+
+All 31 pages rendered at 110 dpi and read as two-up sheets; p8 and p28 re-read at 170 dpi.
+**A sixth deck pattern, and the emptiest source in the module.**
+
+### ⚠️⚠️ THE EMPTY-SLIDE DECK — four "Management" slides that are literally blank
+
+Each is the single word **Management** in large type on a bare white slide: no bullet, no drug,
+no dose, no time window, no figure. **This is not an extraction failure** — `pdftotext` already
+had all four. Three render **byte-identical** (sha1 `536c5c81…`, 13,775 B); the fourth differs
+**only** by its own misspelling *"Managament"*. The `DFE` slide is the bare abbreviation, never
+expanded, over one unlabelled widefield fundus photograph.
+
+**So the deck poses four cases and answers none of them.** `op-acute` is therefore the module's
+purest §4 gap-fill: the managements exist nowhere in the file, and under the standing ruling they
+are **answered and tagged, never declared**.
+
+### ⚠️ A NEW EXTRACTION FAILURE MODE: TEXT DRAWN AS VECTOR OUTLINES
+
+**p22 returns zero characters in every `pdftotext` mode, and `pdffonts` reports NO FONT ON THE
+PAGE** — the visible white text is drawn as outlines, not set as type. The only image object is a
+355×239 fundus photo. It reads: *"On dilated retinal examination, the right optic disc is swollen,
+and there area [sic] flame-shaped hemorrhages around the disc."*
+
+**That is Case 3's diagnostic finding.** In the text layer the case jumps from confrontation fields
+straight to the AION diagnosis — **the one sign that makes it diagnosable was invisible, and no
+word-count or blank-page test would have flagged it**, because the page is not blank and its
+neighbours are dense. Add to the list of things a text layer can silently lose: **tables · columns ·
+draw order · and now glyph outlines.** `pdffonts` per page is the cheap detector.
+
+### The rest of the answers
+
+- **No filler.** All 31 pages hashed; the only identical set is the three Management titles, and
+  those are real slides, not padding. Every other page is text, a clinical photo, or the QR.
+- **There is no second lecture in the file.** Four cases (p3–10, p11–18, p19–24, p25–30), one
+  title, one *Thank you*, no divider, and identical font usage across all four runs. `L31`/`L32`
+  is one half-lecture. **The classification on p2 — "1. Painful / 2. Painless" — is never expanded
+  and never applied, and no painful case is presented.**
+- **Zero tables, zero labelled diagrams**, and not one photograph carries an arrow, caption, scale
+  bar or label. One eponym in the whole deck (Marcus Gunn pupil). No dose, percentage, incidence or
+  time-to-treatment figure anywhere.
+- **The deck prints no slide numbers at all** — the mapping to PDF pages is asserted from an
+  unbroken structure, and the cache says so rather than implying a printed agreement.
+- Source's own spellings, confirmed by render and marked `[sic]`: *red reex* (p27), *Managament*
+  (p24), *there area* (p22).
+
+### ⚠️ INTERVIEW ITEM, BATCHED — the QR code on p18
+
+**p18 is a full-slide QR code**, the only one in the deck, with no text and no printed URL, standing
+exactly where Case 2's papillitis management belongs. It was decoded offline from the native
+1024×1024 image — 25×25 modules, version 2, EC level M, mask 2, **all 16 Reed–Solomon syndromes
+zero, so the read is exact and not a guess**: `https://scan.page/4t7P1B`.
+
+**It has NOT been visited and nothing from it is in the cache.** `scan.page` is a redirect service,
+so the destination is unknown until it is resolved. **Ask the user before fetching it** — it is an
+external service reached from inside the course material, and the ruling belongs to them. Batch it
+with the other open interview item (whether `L23` is Chapter 9 of the same AAO-family primer that
+`L37` is Chapter 4 of).

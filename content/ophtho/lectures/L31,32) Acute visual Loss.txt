@@ -1,72 +1,443 @@
 SOURCE: Semester 8\Opthalmo\Theoritical\PPT\L31,32) Acute visual Loss.pdf
+==========================================================================================
+"Acute Loss of Vision" — Monsef I Kharboush, Lecturer of Ophthalmology – Alexandria
+University, MD, PhD, FRCS.
+31 pages, landscape (960 x 540 pt). READ VISUALLY 2026-08-17 and cached here.
 
- Acute Loss of Vision
-              Monsef I Kharboush
+SLIDE NUMBER = PDF PAGE NUMBER, but by POSITION ONLY — ⚠️ THIS DECK PRINTS NO SLIDE
+NUMBERS AT ALL. All 31 pages were rendered at 110 dpi and looked at; not one carries a
+page number, footer, running header or date stamp anywhere on the slide. The mapping is
+therefore asserted from an unbroken structure: one title (p1), one classification (p2),
+four contiguous case runs (Case 1 p3-p10, Case 2 p11-p18, Case 3 p19-p24, Case 4
+p25-p30), one closing slide (p31). No gap and no repeat exists to hide a lost slide.
+
+
+⚠️⚠️ FINDING 1 — THE FOUR "MANAGEMENT" SLIDES ARE EMPTY. NOT ONE MANAGEMENT FACT IS
+PRINTED IN THIS DECK.
+Each case ends on a slide whose ENTIRE content is the word "Management" in large type on
+a bare white slide. No bullet, no drug, no time window, no figure, no photograph, no
+footnote. Three of them (p10 CRAO, p17 papillitis, p30 RRD) render BYTE-IDENTICAL at
+110 dpi — sha1 536c5c816461304c33201d676f8dab277d7592b5, 13,775 bytes each. The fourth
+(p24, AION) differs from those three by its misspelling alone: it reads "Managament"
+[sic] — sha1 a491ed77446081faee9b0dec9a1f70da5df56c12, 13,728 bytes.
+This is not a text-layer failure that a render fixed. The render CONFIRMS the emptiness:
+`pdftotext` recovered the whole of every one of these four slides the first time.
+
+⚠️⚠️ FINDING 2 — WHERE THE PAPILLITIS MANAGEMENT WENT: A QR CODE.
+p18, the slide immediately after the papillitis "Management" title, is a QR CODE filling
+the centre of an otherwise blank slide. No caption, no URL in print, no text of any kind
+— `pdffonts` reports NO FONT on the page. It is the deck's only QR code and the only
+slide of its kind.
+DECODED HERE (embedded image extracted at its native 1024x1024, module grid recovered,
+25x25 = version 2, EC level M, mask 2; all 16 Reed-Solomon syndromes came out ZERO, so
+the read is exact, not a best guess; ECI 26 = UTF-8):
+
+    https://scan.page/4t7P1B
+
+⚠️ THAT URL WAS NOT VISITED — the fetch was refused by this environment's permission
+layer. `scan.page` is a QR redirect service, so the destination is UNKNOWN and is NOT
+recorded here as content. Treat it as a lead to settle with the user, not as a source.
+
+⚠️⚠️ FINDING 3 — p22 IS A SLIDE WHOSE CLINICAL TEXT NO TEXT TOOL CAN SEE, AND IT CARRIES
+A FINDING THE TEXT LAYER NEVER MENTIONS.
+`pdftotext` returns ZERO characters for p22 in every mode (-layout, -raw, -bbox: "no
+word list"); `pdffonts -f 22 -l 22` reports NO FONT; the page's only image object is the
+355x239 JPEG fundus photograph on the right. The visible white text on the left is
+therefore drawn as VECTOR OUTLINES — glyph shapes, not characters. It reads:
+
+    "On dilated retinal examination, the right optic disc is swollen, and there area
+     [sic] flame-shaped hemorrhages around the disc."
+
+⚠️ This matters beyond one sentence. In the text layer, Case 3 runs from the confrontation
+fields straight to "Diagnosis / Anterior ischemic optic neuropathy" with NO fundus finding
+at all — the one examination result that makes the case diagnosable was invisible. A text
+layer can be word-complete for the pages it sees and still be missing a whole slide.
+
+⚠️ FINDING 4 — NO TABLE AND NO LABELLED DIAGRAM EXISTS IN THIS DECK.
+Checked on every one of the 31 renders. There is no table, no flow chart, no schematic,
+no line art and no annotated figure anywhere. The five images are four unlabelled
+clinical photographs (p8, p15, p22, p28) and the QR code (p18). Not one photograph
+carries an arrow, a caption, a scale bar or a single label.
+
+⚠️ FINDING 5 — NO TEMPLATE FILLER, NO DECORATION, NO CLIP ART.
+Every page is either text, a clinical photograph or the QR code. All 31 renders were
+hashed: the ONLY byte-identical set is the three "Management" title slides named in
+Finding 1, and those are real slides carrying a real (if empty) heading, not padding.
+This deck does NOT repeat the L20 pattern of sixteen identical clip-art pages.
+
+⚠️ FINDING 6 — THE TITLE IS HALF DELIVERED, AND THERE IS NO SIGN OF A SECOND LECTURE.
+The deck delivers ACUTE VISUAL LOSS only as four worked case vignettes ending at the
+diagnosis. It never defines acute visual loss, never lists its causes, and its whole
+classification is p2: "1. Painful / 2. Painless" — two words, never expanded, never
+referred to again, and never mapped onto any of the four cases (all four of which are, in
+fact, presented without pain). Billed as two lectures (L31 AND L32) in 31 pages of
+~449 words, the file contains ONE title slide, ONE closing slide and no section break,
+no second title and no divider of any kind. Font usage does not mark a boundary either:
+Aptos headings with Arial-bodied case text recur in all four cases alike (p12-14, p20-21,
+p26-27), so there is no structural evidence that a second lecture is present at all.
+
+⚠️ OCR/SOURCE SPELLING NOTE. Two corruptions were already visible in the text layer and
+are confirmed on the render as the SLIDE'S OWN typing, not extraction damage: "red reex"
+for red reflex (p27, printed that way on the slide) and "Managament" (p24). A third,
+"there area" for "there are", is on p22. All three are transcribed below exactly, [sic].
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 1 — Title
+─────────────────────────────────────────────────────────────────────
+Acute Loss of Vision
+Monsef I Kharboush
 Lecturer of Ophthalmology – Alexandria University
-                MD, PhD, FRCS
-Classification
+MD, PhD, FRCS
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 2 — Classification
+─────────────────────────────────────────────────────────────────────
+Classification
 1. Painful
 2. Painless
-Case 1
-• A 70-year-old man notes sudden profound loss of vision in his
-  right eye, with onset 2 hours ago. The vision loss has not
-  changed since the onset. the patient has a past medical history
-  of hypertension.
-• On examination, the visual acuity is OD hand motion and OS
-  20/20.
-• The right pupil does not respond to light directly but does react
-  consensually.
+
+(That is the complete slide. Nothing is said about which conditions fall on either side,
+here or anywhere later in the deck.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 3 — Case 1
+─────────────────────────────────────────────────────────────────────
+Case 1
+(Section title only.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 4 — Case 1, history
+─────────────────────────────────────────────────────────────────────
+• A 70-year-old man notes sudden profound loss of vision in his right eye, with onset
+  2 hours ago. The vision loss has not changed since the onset. the patient has a past
+  medical history of hypertension.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 5 — Case 1, examination
+─────────────────────────────────────────────────────────────────────
+• On examination, the visual acuity is OD hand motion and OS 20/20.
+• The right pupil does not respond to light directly but does react consensually.
 • The left pupil reacts to light directly but not consensually.
-• The swinging –flashlight test confirms a right relative afferent
-  pupillary defect (Marcus Gunn pupil).
-• The direct ophthalmoscope shows that the red reflex is clear in
-  both eyes.
-• Retinal examination reveals a white, opacified retina with a
-  cherry-red macular spot. The left retina is normal.
-Diagnosis
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 6 — Case 1, pupils and red reflex
+─────────────────────────────────────────────────────────────────────
+• The swinging –flashlight test confirms a right relative afferent pupillary defect
+  (Marcus Gunn pupil).
+• The direct ophthalmoscope shows that the red reflex is clear in both eyes.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 7 — Case 1, fundus
+─────────────────────────────────────────────────────────────────────
+• Retinal examination reveals a white, opacified retina with a cherry-red macular spot.
+  The left retina is normal.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 8 — [no title] Two fundus photographs   ⚠️ IMAGE ONLY, NO FONT ON THE PAGE
+─────────────────────────────────────────────────────────────────────
+A single wide photograph (386x131 px source) holding TWO fundus views side by side, set
+inside a thin blue-line PowerPoint picture frame with a shadow tab. No title, no caption,
+no label, no arrow.
+
+ • LEFT view — the fundus is pale and washed-out yellow-white across the posterior pole,
+   with a small distinctly darker red spot at the centre of the macula. The disc sits at
+   the right of the frame; the vessels are fine and sparse.
+ • RIGHT view — an orange fundus of normal colour with a clearly defined disc, a normal
+   vascular arcade and a visible macular reflex.
+
+(The slide leaves the reader to match these to the p7 wording. It does not say which eye
+is which, and it prints no arrow to the cherry-red spot.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 9 — Diagnosis
+─────────────────────────────────────────────────────────────────────
+Diagnosis
 Central Retinal Artery Occlusion
-Management
-Case 2
-• A 24-year-old woman notes sudden vision loss in her left eye. She
-  is in otherwise good health with no past medical history
-• On examination, her visual acuity is OD 20/20, OS 20/100.
-• Examination of the pupillary light reflexes with the swinging
-  flashlight test reveals a relative afferent pupillary defect OS.
-• The anterior segment examination is normal. The red reflex is
-  clear in both eyes.
-• Retinal examination is normal in the right eye but reveals a swollen
-  optic disc in the left eye.
-Diagnosis
+(Diagnosis in large type, the entity beneath it in grey subtitle type.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 10 — Management   ⚠️ EMPTY
+─────────────────────────────────────────────────────────────────────
+Management
+
+That is the whole slide: one word, large, upper left, on white. NOTHING ELSE IS ON IT —
+no bullet, no figure, no photograph, no drug, no time window. The management of central
+retinal artery occlusion is not taught anywhere in this file.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 11 — Case 2
+─────────────────────────────────────────────────────────────────────
+Case 2
+(Section title only.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 12 — Case 2, history
+─────────────────────────────────────────────────────────────────────
+•  A 24-year-old woman notes sudden vision loss in her left eye. She is in otherwise good
+   health with no past medical history
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 13 — Case 2, examination
+─────────────────────────────────────────────────────────────────────
+• On examination, her visual acuity is OD 20/20, OS 20/100.
+• Examination of the pupillary light reflexes with the swinging flashlight test reveals a
+  relative afferent pupillary defect OS.
+•  The anterior segment examination is normal. The red reflex is clear in both eyes.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 14 — Case 2, fundus
+─────────────────────────────────────────────────────────────────────
+• Retinal examination is normal in the right eye but reveals a swollen optic disc in the
+  left eye.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 15 — [no title] Fundus photograph   ⚠️ IMAGE ONLY, NO FONT ON THE PAGE
+─────────────────────────────────────────────────────────────────────
+One disc-centred colour fundus photograph (324x330 px source), centred on a plain grey
+template frame. No title, no caption, no label.
+
+The optic disc is hyperaemic and elevated, its margins blurred and indistinct all round,
+with the vessels emerging over a raised swollen surface and the peripapillary retina
+crowded. The surrounding fundus is otherwise pink-orange.
+
+(No haemorrhage, exudate or arrow is marked. The deck prints no comparison view here.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 16 — Diagnosis
+─────────────────────────────────────────────────────────────────────
+Diagnosis
 Papillitis
-Management
-Case 3
-• 90-year-old woman has recently noticed vision loss OD, along
-  with a persistent right-sided headache, generalized fatigue, and a
-  10-pound weight loss. She has previously Cataract surgery 15
-  years ago. She is Hypertensive.
-• Your examination reveals a visual acuity of OD 20/80 and OS
-  20/30.
-• there is a right relative afferent pupillary defect.
-• Confrontation visual field assessment shows inferior visual field
-  loss in the right eye; the left eye is normal.
-Diagnosis
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 17 — Management   ⚠️ EMPTY
+─────────────────────────────────────────────────────────────────────
+Management
+
+One word on white, nothing else. Byte-identical to slides 10 and 30.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 18 — [no title] QR CODE   ⚠️ NO TEXT OF ANY KIND ON THE PAGE
+─────────────────────────────────────────────────────────────────────
+A single QR code, centred, filling most of the slide, drawn inside a thin black rule box.
+The whole page carries no heading, no caption, no printed URL and no font.
+
+Decoded from the embedded 1024x1024 image (see Finding 2 — exact read, zero RS
+syndromes):
+
+    https://scan.page/4t7P1B
+
+⚠️ Destination NOT retrieved; nothing from behind that link is recorded in this cache.
+This slide stands where the papillitis management content would be.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 19 — Case 3
+─────────────────────────────────────────────────────────────────────
+Case 3
+(Section title only.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 20 — Case 3, history
+─────────────────────────────────────────────────────────────────────
+• 90-year-old woman has recently noticed vision loss OD, along with a persistent
+  right-sided headache, generalized fatigue, and a 10-pound weight loss. She has
+  previously Cataract surgery 15 years ago. She is Hypertensive.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 21 — Case 3, examination
+─────────────────────────────────────────────────────────────────────
+• Your examination reveals a visual acuity of OD 20/80 and OS 20/30.
+•  there is a right relative afferent pupillary defect.
+•  Confrontation visual field assessment shows inferior visual field loss in the right
+   eye; the left eye is normal.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 22 — Case 3, dilated fundus examination   ⚠️⚠️ VECTORISED TEXT — INVISIBLE TO EVERY
+TEXT TOOL. THIS SLIDE IS ABSENT FROM THE TEXT LAYER ENTIRELY.
+─────────────────────────────────────────────────────────────────────
+(Dark slide: white text on a black background, left; fundus photograph, right. The text
+is drawn as vector outlines — no font is embedded for this page and `pdftotext` returns
+zero characters. Transcribed from the render.)
+
+• On dilated retinal examination, the right optic disc is swollen, and there area [sic]
+  flame-shaped hemorrhages around the disc.
+
+Figure (right, 355x239 px source, unlabelled): a disc-centred fundus photograph, deep red
+throughout. The optic disc is swollen and pale-centred with indistinct margins, and
+several dark radial flame-shaped haemorrhages lie in the nerve fibre layer around and
+above the disc, following the vessel arcades. No arrow, caption or label of any kind.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 23 — Diagnosis
+─────────────────────────────────────────────────────────────────────
+Diagnosis
 Anterior ischemic optic neuropathy
-Managament
-Case 4
-• healthy 48-year-old man complains of seeing “floating black dots”
-  in the field of vision of his right eye for 2 days, associated with the
-  sensation of flashing lights in the periphery of his field.
-• He states that he has a disturbance in the temporal field of vision
-  of his right eye, “like a curtain coming down.”
-• His visual acuity is OU 20/20. Pupils are normal.
-• Confrontation visual field examination shows mild temporal visual
-  field loss in the right eye only.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 24 — Managament [sic]   ⚠️ EMPTY
+─────────────────────────────────────────────────────────────────────
+Managament   [sic — the slide is spelled this way; it is the only thing that distinguishes
+this page from slides 10, 17 and 30]
+
+One word on white, nothing else. Nothing is printed about steroids, about the temporal
+artery, about biopsy, about ESR/CRP, or about the fellow eye.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 25 — Case 4
+─────────────────────────────────────────────────────────────────────
+Case 4
+(Section title only.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 26 — Case 4, history
+─────────────────────────────────────────────────────────────────────
+• healthy 48-year-old man complains of seeing "floating black dots" in the field of vision
+  of his right eye for 2 days, associated with the sensation of flashing lights in the
+  periphery of his field.
+• He states that he has a disturbance in the temporal field of vision of his right eye,
+  "like a curtain coming down."
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 27 — Case 4, examination
+─────────────────────────────────────────────────────────────────────
+• His visual acuity is OU 20/20. Pupils are normal.
+• Confrontation visual field examination shows mild temporal visual field loss in the
+  right eye only.
 • Anterior segment exam is normal.
-• red reex is clear in the left eye, but the red reflex in the right eye
-  reveals mobile opacities.
-DFE
-Diagnosis
+• red reex [sic — printed this way on the slide; read: red reflex] is clear in the left
+  eye, but the red reflex in the right eye reveals mobile opacities.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 28 — DFE
+─────────────────────────────────────────────────────────────────────
+DFE
+
+That single abbreviation, upper left, is the ONLY text on the slide — it is not expanded
+here or anywhere else in the deck.
+
+Figure (right, 850x678 px source, unlabelled): one ULTRA-WIDEFIELD PSEUDOCOLOUR fundus
+image (the green/red two-laser rendering), filling most of the slide. The small yellow
+disc sits right of centre. The half of the fundus to the RIGHT of the disc is pale
+grey-green, its surface raised and rippled, its vessels running dark over it, and it is
+separated from the rest by a curved demarcation line passing just temporal to the disc;
+an orange-red patch lies in the far periphery at the upper right. The half to the LEFT of
+the disc is orange and flat. Broad radial folds run across the lower field.
+
+(No arrow, no caption, no label, no marked break. Nothing on the slide names any of this.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 29 — Diagnosis
+─────────────────────────────────────────────────────────────────────
+Diagnosis
 RRD
-Management
-Thank you
-
+
+(The abbreviation is printed alone — the deck never expands "RRD", and never prints the
+words rhegmatogenous retinal detachment anywhere.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 30 — Management   ⚠️ EMPTY
+─────────────────────────────────────────────────────────────────────
+Management
+
+One word on white, nothing else. Byte-identical to slides 10 and 17.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 31 — Thank you
+─────────────────────────────────────────────────────────────────────
+Thank you
+
+
+═════════════════════════════════════════════════════════════════════
+NOT COVERED ANYWHERE IN THIS DECK
+═════════════════════════════════════════════════════════════════════
+Recorded so a gap can be settled by proving a negative rather than by memory. Verified
+over all 31 pages, visually at 110 dpi (plus 170 dpi on p8 and p28), plus a full-text
+grep of the text layer and a per-page font and image inventory.
+
+MANAGEMENT — THE ENTIRE TREATMENT HALF OF ALL FOUR CASES. Four slides are headed for it
+and all four are blank (Finding 1). Specifically absent:
+ • CRAO: ocular massage, anterior chamber paracentesis, IOP-lowering drops or
+   acetazolamide, rebreathing/carbogen, the "retina survives ~90 minutes" style time
+   window, thrombolysis, and the stroke/carotid/cardiac work-up and referral. No time
+   target of any kind is printed.
+ • PAPILLITIS / optic neuritis: intravenous methylprednisolone, the ONTT, the warning
+   against oral prednisone alone, MRI, and multiple sclerosis as the association to
+   pursue. The deck does not print the words optic neuritis, demyelination or multiple
+   sclerosis at all.
+ • AION: the arteritic-versus-non-arteritic split — NEITHER TERM APPEARS. No ESR, no CRP,
+   no platelet count, no temporal artery biopsy, no giant cell / temporal arteritis by
+   name, no emergency steroid, no fellow-eye risk. Case 3's headache, fatigue and weight
+   loss are presented and never explained.
+ • RRD: scleral buckling, pars plana vitrectomy, pneumatic retinopexy, laser or cryo
+   retinopexy, tamponade, posturing, and the macula-on/macula-off urgency question.
+
+WORK-UP AND INVESTIGATION — NONE ANYWHERE. No fundus fluorescein angiography, no OCT, no
+B-scan ultrasound, no visual field perimetry beyond bedside confrontation, no VEP, no
+imaging, no blood test. The word DFE (p28) is the only investigation named in the file,
+and it is never expanded.
+
+DEFINITIONS AND FRAMEWORK:
+ • No definition of acute/sudden visual loss, no time criterion, no incidence.
+ • The painful/painless classification (p2) is never populated, never applied to the four
+   cases, and painful causes are represented by NO case at all — acute angle-closure
+   glaucoma, keratitis, uveitis, endophthalmitis, scleritis and optic neuritis pain on
+   eye movement are none of them mentioned.
+ • Transient visual loss / amaurosis fugax — not named.
+ • Other causes of sudden painless loss that get no slide: central and branch retinal
+   VEIN occlusion, branch retinal ARTERY occlusion, vitreous haemorrhage, wet AMD /
+   choroidal neovascular membrane, macular haemorrhage, retrobulbar and posterior
+   ischaemic optic neuropathy, papilloedema, chiasmal and cortical causes, functional
+   visual loss.
+ • Non-arteritic AION risk factors (the "disc at risk", crowded disc, nocturnal
+   hypotension, sleep apnoea, PDE5 inhibitors) — none printed.
+ • Giant cell arteritis features beyond the raw case wording (jaw claudication, scalp
+   tenderness, polymyalgia) — not printed.
+
+MECHANISM AND PATHOLOGY: nothing. No account of why the retina whitens in CRAO or why the
+macula stays red, no retinal blood supply, no cilioretinal artery sparing, no explanation
+of the RAPD, no pathophysiology of disc swelling, no vitreoretinal traction mechanism for
+a retinal break.
+
+RRD SPECIFICS: the abbreviation is never expanded; retinal break, tear, hole, PVD,
+lattice degeneration, tobacco dust/Shafer's sign, myopia and pseudophakia as risk factors,
+and the distinction from tractional and exudative detachment are all absent.
+
+NUMBERS, NAMES AND TEACHING FURNITURE:
+ • The only numbers in the entire file are the case data themselves (ages, acuities,
+   2 hours, 2 days, 10 pounds, 15 years). NO dose, NO percentage, NO incidence, NO
+   prognosis and NO time-to-treatment figure appears anywhere.
+ • One eponym only — Marcus Gunn pupil (p6). No other named sign, rule or syndrome.
+ • No differential diagnosis list, no comparison table, no algorithm, no summary slide,
+   no take-home points, no references, no reading list.
+ • No MCQ, no self-test question and no answer key — the four "cases" are teaching
+   vignettes with the diagnosis supplied, not questions.
