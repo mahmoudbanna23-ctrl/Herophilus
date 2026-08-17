@@ -560,3 +560,86 @@ so the destination is unknown until it is resolved. **Ask the user before fetchi
 external service reached from inside the course material, and the ruling belongs to them. Batch it
 with the other open interview item (whether `L23` is Chapter 9 of the same AAO-family primer that
 `L37` is Chapter 4 of).
+
+---
+
+## ✅ `L7,8) Refractive errors` — READ 2026-08-17, cache 1,545 → 7,004 w
+
+All 88 pages read as 44 two-up sheets, plus six 150-dpi per-page renders and one 300-dpi crop.
+The module's highest-value render: it gates **38 questions, 28 % of ophthalmology**.
+
+### ⚠️⚠️ THE READING AGENT RECOMMENDED "DO NOT SPLIT", AND ITS OWN TRANSCRIPTION REFUTED IT
+
+It argued one chapter on the grounds the deck holds *"only 1,540 words"*. **That is the
+`pdftotext` count — the number the render was commissioned to replace.** Measured from the
+transcription it had just written, the slide blocks hold **4,439 words**, i.e. ~18 printed pages as
+one chapter, against a 10-page target and a 13-page hard shape.
+
+**Rule: when a read finishes, the deck's word count is the CACHE's, never `pdftotext`'s.** The
+seduction is that the old number is right there in the header, already measured, and it is exactly
+the quantity the whole job existed to discard. This is the second time in this module a correct
+measurement has been made and then not used — `op-va`'s header did the same with its own body count.
+
+**Split decided BEFORE writing, seam at p61 (Astigmatism):**
+
+| id | title | pages | deck words | est pp |
+|---|---|---|---|---|
+| `op-refract` | Errors of refraction — the optics, myopia and hyperopia | p1–p60 | 2,682 | ~11 |
+| `op-refract-astig` | Astigmatism, presbyopia and prescribing | p61–p88 | 1,757 | ~7 |
+
+p61 was chosen over the **more even** p53 seam (2,245/2,194) because it is the *entity* boundary:
+myopia and hyperopia share the deck's own Causes → Presentation → Treatment scaffold. **Project
+total 141.**
+
+### What the render actually bought
+
+- **The text layer was word-complete and STILL WRONG — for the third time in this module.** Four
+  structural repairs, all invisible to any word count: **p71 — LASIK and PRK both branch from
+  *corneal* surgery**, where the interleaved text put PRK under lenticular (a factual inversion);
+  p46 — Central/Peripheral belongs to the chorioretinal degenerations alone; p64 — Regular and
+  Irregular branch from *corneal* astigmatism; p75 — the presbyopia table's three groups recovered.
+- **`-raw` and `-layout` buy nothing here** — 1,540 / 1,541 / 1,541 words, all three modes agree.
+  Do not re-run them on this deck.
+- **The 57 %-blank figure from the title probe was WRONG.** Exactly **one** page returns zero
+  characters (p65). Every other page returns at least its title. The probe measured *low words*,
+  not *no words*.
+
+### ⚠️ A THIRD KIND OF BLANK PAGE — the broken graphic
+
+**p65 is neither a text slide nor filler: it is a solid green circle with two lines**, a graphic
+that failed to render, sitting exactly where a meridian/axis diagram belongs. **It is why the deck
+teaches no axis notation at all** — which matters, because a spectacle prescription is written with
+an axis and the deck prints a prescription form on p82. So the module's blank-page taxonomy is now:
+**text slide · byte-identical filler · broken graphic.**
+
+### Defects and inconsistencies in the deck itself, recorded not corrected
+
+- `ACCOMMDATION` [sic] ×5 · `Aniseikonia` (p83) vs `Anisiekonia` (p84) · **p36 and p37 both
+  numbered "I."** · p42 drops an "or" · p61 unclosed parenthesis.
+- **High myopia is 6 D on p45 and "4 to 5 D" on p75.** Both cited, neither disputed.
+- **Three astigmatism types on p31/p64; five on p66/p67.**
+- **p85–p87 are titled "Presbyopia / Treatment" and their content is ANISOMETROPIA.** Presbyopia
+  treatment is delivered once, on p81.
+- **`pdfinfo` disagrees with the slide**: metadata Author *"amr mohamed mahmoud elhady"*, Title
+  *"5th year Ophthalmology"*; the title slide credits **Tamer Massoud MD, PhD**. Recorded, unresolved.
+- Unreconciled by the deck: axial length **22–24.5 mm** in prose (p42/p53) against **23.5 mm** in
+  the p27 figure.
+- `[illegible]` and not guessed: the lower 2–3 lines of the p38 acuity chart, two labels on p34.
+
+### What the deck never teaches, and the questions that need it anyway
+
+**No retinoscopy or autorefraction procedure exists in 88 pages** — p36/p37/p38 are photographs
+with zero procedure text — yet `opqb-t2-85` and `opqb-t2-97` both test objective refraction.
+**No drug name, no percentage and no worked refraction anywhere.** PRK, LASIK, phakic IOL, clear
+lens extraction, ICR and keratoplasty are **named and none described** — and they must not be
+described here either, because `cor-21`…`cor-24` already own refractive surgery. `keratotomy`
+returns zero in the deck and appears in a question distractor.
+
+### ⚠️ Question coverage was PROBED, and the probe was a false alarm — which is the useful part
+
+A term-coverage probe (`<scratch>\qcover.js`) scored the 38 questions against the new cache at a
+mean of **71 %**, with five questions under 50 %. **Looked at, every one was correctly filed**: the
+missing terms were vignette English (*mother, brings, worried, complains*) and **distractor**
+vocabulary — Ishihara plates, cover–uncover, exophoria, radial keratotomy — none of which is the
+answer. **A low coverage score is a flag to LOOK, never a verdict**, and this is the counter-example
+to `op-va`, where the same instinct found a real mismatch. Keep the probe; keep the second step.

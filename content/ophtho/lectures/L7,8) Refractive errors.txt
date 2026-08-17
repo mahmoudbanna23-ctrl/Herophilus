@@ -1,561 +1,1289 @@
 SOURCE: Semester 8\Opthalmo\Theoritical\PPT\L7,8) Refractive errors.pdf
+==========================================================================================
+"Eye Optics and Errors of Refraction" — Tamer Massoud MD, PhD (as printed on the title slide).
+88 pages, landscape (960 x 540 pt). READ VISUALLY 2026-08-17 and cached here.
 
+⚠️ THE DECK PRINTS NO SLIDE NUMBERS AT ALL. Checked visually on all 88 renders and by text-layer
+grep for a bare 1–3 digit token on p1, p2, p20, p44, p45, p60, p87 and p88 — zero hits at both
+ends and the middle. There is no footer, no corner numeral, no "n of 88". SLIDE N = PDF PAGE N
+BY POSITION ONLY; the deck offers no internal evidence either way. Every citation below is a
+PDF page number, taken from the yellow contact-sheet stamp.
+
+⚠️ PDF metadata disagrees with the slide. `pdfinfo` gives Title "5th year Ophthalmology" and
+Author "amr mohamed mahmoud elhady"; the title slide credits "Tamer Massoud MD, PhD". Recorded,
+not resolved — the file was probably saved from a colleague's template.
+
+
+═════════════════════════════════════════════════════════════════════
+⚠️ FINDING 1 — THE TEXT LAYER IS NEARLY COMPLETE. IT IS THE *STRUCTURE* THAT WAS LOST.
+═════════════════════════════════════════════════════════════════════
+`pdftotext` recovers 1,540 words (layout), 1,541 (raw), 1,541 (plain) over 88 pages. All three
+modes agree to within one word, so `-raw` draw-order extraction buys nothing here and does not
+need re-running.
+
+**Only ONE page returns zero characters: p65.** Every other page returns at least its title.
+The previous cache was a straight text-layer dump and was word-complete. What it lost was
+structure — five branching diagrams and two tables whose columns interleaved into nonsense.
+Four of those are corrected below against the render (Findings 2 and 3). This is another
+instance of the module's standing rule: a text layer can be word-complete and still be wrong.
+
+Per-page word counts (layout mode), for triage of any future re-read:
+  p1 10 · p2–p17 1–3 each · p18 30 · p19 3 · p20 32 · p21 3 · p22 6 · p23 25 · p24 30 · p25 33 ·
+  p26 3 · p27 2 · p28 27 · p29 3 · p30 3 · p31 37 · p32 30 · p33 27 · p34 5 · p35 41 · p36 9 ·
+  p37 9 · p38 5 · p39 35 · p40 3 · p41 3 · p42 43 · p43 47 · p44 3 · p45 22 · p46 37 · p47 26 ·
+  p48 2 · p49 32 · p50 4 · p51 4 · p52 4 · p53 41 · p54 54 · p55 53 · p56 54 · p57 3 · p58 29 ·
+  p59 18 · p60 2 · p61 88 · p62 1 · p63 1 · p64 47 · **p65 0** · p66 1 · p67 1 · p68 36 · p69 3 ·
+  p70 3 · p71 35 · p72 96 · p73 44 · p74 17 · p75 89 · p76–p80 3 each · p81 19 · p82 3 · p83 77 ·
+  p84 19 · p85 25 · p86 2 · p87 2 · p88 2
+
+
+═════════════════════════════════════════════════════════════════════
+⚠️ FINDING 2 — THREE SLIDES CARRY THE WRONG TITLE. p85, p86 AND p87 ARE ANISOMETROPIA.
+═════════════════════════════════════════════════════════════════════
+p85, p86 and p87 are all headed "Presbyopia / Treatment". Their content is not presbyopia:
+
+ • p85 reads "Small amounts can be corrected with glasses" / "Larger amounts may require other
+   treatment modalities (contact lens or refractive surgery) **if glasses induce diplopia**."
+   Diplopia from spectacle correction is the anisometropia problem set out on p83 — it is not a
+   presbyopic phenomenon, and presbyopia is not measured in "amounts" that induce diplopia.
+ • p86 and p87 are photographs of spectacle-corrected eyes, both placed after the anisometropia
+   block, not after the presbyopia block.
+
+Presbyopia treatment proper is delivered ONCE, on p81. The header on p85–p87 is stale, carried
+over from p81 across the p82 prescription slide and the p83–p84 anisometropia slides. Read by
+content, the deck's last teaching block is **anisometropia/aniseikonia, p83–p87**.
+
+
+═════════════════════════════════════════════════════════════════════
+⚠️ FINDING 3 — WHAT THE RENDER CORRECTED IN THE TEXT LAYER
+═════════════════════════════════════════════════════════════════════
+Four structural repairs, each verified at 150 dpi, and one value recovered:
+
+ 1. **p71, astigmatism treatment.** The text layer prints "Corneal surgery / LASIK / Lenticular
+    surgery / PRK", which reads as PRK belonging to LENTICULAR surgery. THE RENDER SHOWS **LASIK
+    AND PRK BOTH BRANCH FROM CORNEAL SURGERY**; "Lenticular surgery" is a terminal box with no
+    children. This is a factual inversion, not a layout quibble.
+ 2. **p46, myopia complications.** The text layer interleaves four terminal complications with a
+    Central/Peripheral split. The render shows the Central/Peripheral split belongs to
+    **Chorioretinal degenerations ALONE**; posterior staphyloma, complicated cataract and the
+    glaucoma association are terminal siblings.
+ 3. **p64, astigmatism causes.** Regular/Irregular do NOT branch from "Causes" — they branch from
+    **Corneal Astigmatism**. Lenticular astigmatism is terminal.
+ 4. **p75, presbyopia clinical presentation.** The deck's densest table; the text layer reduced it
+    to an unreadable jumble ("Need to extend their hands … Difficulty in knitting and sewing …
+    See near objects … As emmetropes …"). Full three-group structure recovered below.
+ 5. **p27 prints "23.5 mm axial length" inside a figure** — invisible to `pdftotext`, and the only
+    single-value axial length in the deck (the prose gives the 22–24.5 mm range).
+
+
+═════════════════════════════════════════════════════════════════════
+⚠️ FINDING 4 — TEMPLATE FILLER: NONE. HASHED, NOT EYEBALLED.
+═════════════════════════════════════════════════════════════════════
+All 88 pages rendered at 110 dpi and hashed with `sha1sum`: **88 files, 88 distinct hashes, zero
+duplicate groups.** There is no byte-identical clip-art filler in this deck — it does NOT repeat
+the L20 pattern of 16 identical landscape slides.
+
+What it has instead is **decorative redundancy that is not byte-identical**:
+ • p13 and p17 carry the SAME Air/Water 50° refraction figure under two different titles
+   ("Refraction" and "Refractive Index"). The hashes differ only because the title differs.
+ • p2–p17, sixteen consecutive pages, carry **22 words between them** (1.4 words/page). Every one
+   is a stock photograph or a generic physics diagram under a one-word title.
+ • p76–p80, five consecutive pages, are all headed "Presbyopia / Clinical presentation" and are
+   photographs only, no text.
+So roughly 30 of 88 pages are illustration with no teachable text — real slides, not filler, but
+they carry no content a chapter can use.
+
+
+═════════════════════════════════════════════════════════════════════
+⚠️ FINDING 5 — WHERE THE OPTICS ENDS AND REFRACTION BEGINS
+═════════════════════════════════════════════════════════════════════
+ • **PHYSICS/OPTICS PREAMBLE: p2–p17 inclusive** (16 pages). Light, Scatter, Reflection,
+   Reflection vs Scatter, Diffraction, Refraction, Reflection vs Refraction, Refractive Index.
+   **22 words in total.** No ophthalmology, no clinical content, no formula except n = c/v on p16.
+ • **REFRACTION PROPER BEGINS AT p18** ("Refractive Errors / Emmetropia"), and never returns to
+   physics.
+Section word counts (layout mode), which is what a chapter budget must be built on:
+   title p1 10 · **optics p2–p17 22** · fundamentals p18–p31 237 · lenses+correction p32–p35 103 ·
+   measurement p36–p38 23 · myopia p39–p48 221 · hyperopia p49–p60 298 · astigmatism p61–p71 216 ·
+   presbyopia p72–p81 280 · Rx form p82 3 · anisometropia p83–p87 125 · thanks p88 2.
+
+
+═════════════════════════════════════════════════════════════════════
+⚠️ FINDING 6 — IS THIS TWO LECTURES, AND WHERE IS THE SEAM?
+═════════════════════════════════════════════════════════════════════
+**There is no printed seam.** One title slide (p1), one closing slide (p88), one continuous
+template, one running design. There is no second title page, no "Lecture 8" marker, no mid-deck
+"thank you", and no repeated agenda slide. The "L7,8" in the FILENAME records that the deck was
+delivered over two teaching sessions; nothing inside the file marks where.
+
+The strongest *content* seam, if one is ever needed, is **p39 — the start of MYOPIA**. Everything
+p18–p38 is general (definitions, the eye's optics, the dioptre, determinants of refraction, the
+four errors named, lens types, methods of correction, methods of measurement); from p39 the deck
+runs the four named errors one at a time on an identical scaffold (Causes → Clinical presentation
+→ Treatment). By words that seam splits 395 / 1,145 — badly unbalanced.
+A more even seam is **p61 (Astigmatism)**: 914 words before / 626 after.
+Neither is needed — see the split recommendation at the end of this file.
+
+
+═════════════════════════════════════════════════════════════════════
+⚠️ FINDING 7 — WHAT THE DECK PRINTS INCONSISTENTLY OR WRONG
+═════════════════════════════════════════════════════════════════════
+Recorded exactly as printed and flagged; none of it is silently corrected.
+
+ a. **"ACCOMMDATION" [sic]** — misspelled identically in the definition arrow on p18, p20, p28,
+    p39 and p49, five times. The deck spells it correctly ("accommodation", "accommodative")
+    everywhere in body prose.
+ b. **"Aniseikonia" (p83) vs "Anisiekonia" (p84)** — the deck spells the same term two different
+    ways on consecutive slides. p83 is the correct spelling.
+ c. **BOTH measurement methods are numbered "I."** — p36 "I. AUTOMATED: AUTO-REFRACTOMETER" and
+    p37 "I. MANUAL: RETINOSCOPE". The second should be II. Confirmed on the render, not a
+    text-layer artifact.
+ d. **p42 drops a conjunction**: "Increased curvature of the cornea (e.g., keratoconus)  the  lens
+    (e.g., lenticonus)" — the word "or" is genuinely absent from the slide.
+ e. **p65 is a broken graphic**, not a text slide and not filler: a single large solid GREEN
+    CIRCLE crossed by a vertical and an oblique line, with no title, no label and no caption.
+    It sits between p64 (the astigmatism causes tree) and p66 (the five astigmatism types), where
+    a meridian diagram plainly belongs. It is the deck's only 0-character page and the reason is
+    that it contains no text object at all. **This is a THIRD blank-page pattern for this module**
+    — not "a blank page is a text slide" (peds), not "a blank page is clip-art filler" (L20), but
+    a malformed shape.
+ f. **p84 breaks font size mid-sentence**: "Unequal size of the retinal" is set small and
+    "image of both eyes." is set large, within one sentence.
+ g. **p31 and p32 disagree with p64/p66 on how many astigmatism types there are.** p64's tree
+    gives three regular types (Simple, Compound, Mixed); p66 and p67's figures give five
+    (Simple myopic, Compound myopic, Mixed, Simple hyperopic, Compound hyperopic). Both are
+    printed; the figures expand Simple and Compound into myopic and hyperopic variants.
+ h. **Hyperopia is offered fewer surgical options than myopia**, with no reason given: myopia
+    (p47) lists PRK, LASIK, Phakic IOL <40 years, Clear lens extraction >40 years; hyperopia
+    (p59) lists LASIK and Clear lens extraction only — no PRK, and no age cut-offs.
+ i. The definition arrow on p18/p20/p28/p39/p49 is **repeated near-verbatim five times**, which is
+    why the deck's 1,540 words overstate its unique content.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 1 — Eye Optics and Errors of Refraction (title)
+─────────────────────────────────────────────────────────────────────
 Eye Optics and Errors of Refraction
+Tamer Massoud MD, PhD
+(Background: a stock composite of a blue iris overlaid with a digital/circuit motif.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 2 — Light
+─────────────────────────────────────────────────────────────────────
+Light
+(Photograph only: a white starburst flare on black. No text, no label.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 3 — Light
+─────────────────────────────────────────────────────────────────────
+Light
+(Photograph only: sunlight through window blinds falling across a bed. No text, no label.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 4 — Light
+─────────────────────────────────────────────────────────────────────
+Light
+(Photograph only: stage spotlights over a band. No text, no label.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 5 — Scatter
+─────────────────────────────────────────────────────────────────────
+Scatter
+(Cartoon diagram: sun at upper right, orange rays striking a white cloud, yellow rays leaving it
+in many directions. No printed label.)
 
 
-      Tamer Massoud MD, PhD
-Light
-Light
-Light
-Scatter
-Scatter
-Reflection
-Reflection
-Reflection vs Scatter
-Diffraction
-Diffraction
-Diffraction
-Refraction
-Refraction
-Reflection vs Refraction
-Refractive Index
-Refractive Index
-                     Refractive Errors
+─────────────────────────────────────────────────────────────────────
+SLIDE 6 — Scatter
+─────────────────────────────────────────────────────────────────────
+Scatter
+Figure labels, verbatim:
+ • Source of Light (Sun)
+ • Short Wavelengths
+ • Scattering of light
+(Straight white arrows from the sun to cyan particles; wavy blue arrows leaving the particles in
+all directions. Watermark "DewWool".)
 
-                          Emmetropia
 
-  A state of     PARALLEL rays of                                while
-                                           focused ON the
-REFRACTION in           light                               ACCOMMDATION
-                                               retina
-    which       entering the eye are                           is at rest
+─────────────────────────────────────────────────────────────────────
+SLIDE 7 — Reflection
+─────────────────────────────────────────────────────────────────────
+Reflection
+Figure labels, verbatim: Normal · Incident Ray · Reflected Ray · Incident Angle · Reflected Angle
+· Mirror
+(Ray diagram; the incident and reflected angles are drawn equal about the normal. NO numeric
+value and NO stated law — the deck never writes "angle of incidence = angle of reflection".)
 
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 8 — Reflection
+─────────────────────────────────────────────────────────────────────
+Reflection
+(Photograph only: a lone tree mirrored in still water at dusk. No text, no label.)
 
-                            Far point at infinity
-Refractive Errors
 
-  Emmetropia
-                 Refractive Errors
+─────────────────────────────────────────────────────────────────────
+SLIDE 9 — Reflection vs Scatter
+─────────────────────────────────────────────────────────────────────
+Reflection vs Scatter
+Figure labels, verbatim: Reflected beam · Scattered light · Fluctuating liquid surface
+(A solid red incident beam meets an irregular surface; one pale specular beam leaves, plus a fan
+of dashed scattered rays.)
 
-                            Ametropia
 
-  A state of     PARALLEL rays of                                 while
-                                        NOT focused ON the
-REFRACTION in           light                                ACCOMMDATION
-                                              retina
-    which       entering the eye are                            is at rest
+─────────────────────────────────────────────────────────────────────
+SLIDE 10 — Diffraction
+─────────────────────────────────────────────────────────────────────
+Diffraction
+(Diagram only, no labels: plane wavefronts approach a single narrow slit and spread as circular
+wavefronts beyond it, with three red arrows fanning out.)
 
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 11 — Diffraction
+─────────────────────────────────────────────────────────────────────
+Diffraction
+(Aerial photograph only: water waves bending around two small rocky islands. No text, no label.)
 
-                          Far point NOT at infinity
-Refractive Errors
 
-     Ametropia
-The Eye is a Camera-like Organ
-       The Eye is a Camera-like Organ
+─────────────────────────────────────────────────────────────────────
+SLIDE 12 — Diffraction
+─────────────────────────────────────────────────────────────────────
+Diffraction
+(The same aerial photograph as p11, overdrawn with white ray arrows and green wavefront lines
+showing the waves bending round each island. No printed label.)
 
-                                Cornea          42-44 Dioptres
-                  Optical
-                 Elements
-Optics of the                    Lens           18-20 Dioptres
-Human Eye
-                Total Optical
-                                Approximately 60 Dioptres
-                   Power
-         The Eye is a Camera-like Organ
 
-                     Dioptre
+─────────────────────────────────────────────────────────────────────
+SLIDE 13 — Refraction
+─────────────────────────────────────────────────────────────────────
+Refraction
+Figure labels, verbatim: Air · Water · **50°** · θ
+(A green ray crosses the air/water boundary and bends toward the normal. The incident angle is
+printed as 50°; the refracted angle is left as θ. NO value is given for θ and no worked example
+follows — the deck never uses Snell's law.)
 
-• It is the unit used for measuring lens power.
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 14 — Refraction
+─────────────────────────────────────────────────────────────────────
+Refraction
+(Illustration only: a pencil appearing bent at the water line in a beaker. No text, no label.)
 
-• The power of a lens (in dioptre) = 1 / focal
-length in meters
-           Refractive Errors
 
-  Any state of refraction of the eye is determined by
+─────────────────────────────────────────────────────────────────────
+SLIDE 15 — Reflection vs Refraction
+─────────────────────────────────────────────────────────────────────
+Reflection vs Refraction
+(Two photographs side by side: left, a hand and its mirror image in still water; right, a red
+straw appearing broken at the surface in a glass of water. No labels on either panel.)
 
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 16 — Refractive Index   ⚠️ THE DECK'S ONLY FORMULA
+─────────────────────────────────────────────────────────────────────
+Refractive Index
+Formula panel, verbatim:
 
+        n = c / v
 
-                                 Power of the cornea and
- Axial length of the
-                                    crystalline lens
-       eyeball
-                                (determined by curvature
-(Main Factor Usually)
-                                  and refractive index)
-Refractive Errors
+  n = index of refraction
+  c = velocity of light in vacuum
+  v = velocity of light in the medium
 
+(No refractive-index VALUE is printed anywhere in the deck — not for cornea, lens, aqueous,
+vitreous, air or water. See the NOT-COVERED list.)
 
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 17 — Refractive Index   ⚠️ FIGURE REPEATED FROM p13
+─────────────────────────────────────────────────────────────────────
+Refractive Index
+(The Air/Water 50°/θ refraction figure from slide 13, reused unchanged under a new title.
+Labels again: Air · Water · 50° · θ.)
 
-      AL
-Refractive Errors
-                 Refractive Errors
 
-                            Ametropia
+─────────────────────────────────────────────────────────────────────
+SLIDE 18 — Refractive Errors: Emmetropia   ⚠️ DEFINITION
+─────────────────────────────────────────────────────────────────────
+Refractive Errors
+**Emmetropia**
+Definition arrow, four boxes left to right, verbatim:
 
-  A state of     PARALLEL rays of                                while
-                                       NOT focused ON the
-REFRACTION in           light                               ACCOMMDATION
-                                             retina
-    which       entering the eye are                           is at rest
-Refractive Errors
+  A state of REFRACTION in which | PARALLEL rays of light entering the eye are |
+  focused ON the retina | while ACCOMMDATION [sic] is at rest
 
-     Ametropia
-Refractive Errors
+Footer box: **Far point at infinity**
 
-     Ametropia
-                   Refractive Errors
-           Errors of refraction encountered in the human eye include
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 19 — Refractive Errors: Emmetropia
+─────────────────────────────────────────────────────────────────────
+Refractive Errors
+Emmetropia
+(Schematic eye, unlabelled: parallel yellow rays converge exactly on the retina.)
 
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 20 — Refractive Errors: Ametropia   ⚠️ DEFINITION
+─────────────────────────────────────────────────────────────────────
+Refractive Errors
+**Ametropia**
+Definition arrow, four boxes, verbatim:
 
-   Myopia               Hyperopia           Astigmatism           Presbyopia
+  A state of REFRACTION in which | PARALLEL rays of light entering the eye are |
+  **NOT** focused ON the retina | while ACCOMMDATION [sic] is at rest
 
+Footer box: **Far point NOT at infinity**
 
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 21 — Refractive Errors: Ametropia
+─────────────────────────────────────────────────────────────────────
+Refractive Errors
+Ametropia
+(Two schematic eyes side by side, unlabelled: in one the rays cross before the retina, in the
+other they are still converging at the retinal plane. No captions distinguishing them.)
 
-                                           Formation of more
-                                            than one focus by   Poor near vision as
-Near-sightedness       Far-sightedness
-                                           the optical system    an aging process
-                                               of the eye
-Types of lenses
-        Lenses used to correct the errors of refraction of the human eye
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 22 — The Eye is a Camera-like Organ
+─────────────────────────────────────────────────────────────────────
+The Eye is a Camera-like Organ
+Figure labels, verbatim: Object · Light rays · Lens · Film (Retina)
+(Left: a film camera butted against a photograph of a human eye. Right: a camera and an eye in
+cross-section, drawn in parallel.)
 
-              Spherical lenses                  Cylindrical lenses
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 23 — Optics of the Human Eye   ⚠️ HIGH YIELD — THE DIOPTRE VALUES
+─────────────────────────────────────────────────────────────────────
+The Eye is a Camera-like Organ
+Branching diagram, verbatim:
 
+  Optics of the Human Eye
+   ├── Optical Elements
+   │     ├── Cornea ──────── **42-44 Dioptres**
+   │     └── Lens ────────── **18-20 Dioptres**
+   └── Total Optical Power ── **Approximately 60 Dioptres**
 
-        Concave                Convex
-     (Minus Lenses)         (Plus lenses)
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 24 — Dioptre   ⚠️ HIGH YIELD
+─────────────────────────────────────────────────────────────────────
+The Eye is a Camera-like Organ
+**Dioptre**
+ • It is the unit used for measuring lens power.
+ • The power of a lens (in dioptre) = **1 / focal length in meters**
 
-                            Hyperopia &
-        Myopia                                    Astigmatism
-                             Presbyopia
-Types of lenses
-  Concave lenses:
-     Minus lenses
-     Diverge light rays
-     Object : smaller & move with
+Figure (right), labels verbatim: lens · focal plane · one focal length
+(Parallel yellow rays through a convex lens converging at the focal plane.)
 
 
-
-  Convex lenses:
-     Plus lenses
-     Converge light
-     Object: larger & move against
-Types of lenses
-                  Cylindrical lenses
-  Refractive errors are corrected with
-
-• Glasses:
-  • Easiest and safest method of correction.
-
-• Contact lenses:
-  • Cosmetic & a wider field of vision however they are associated with risk of
-    infection
-
-• Refractive Surgery:
-  • Corneal surgery (change the shape of the cornea)
-  • Lenticular surgery
- How do we measure refractive errors?
-I. AUTOMATED: AUTO-REFRACTOMETER
- How do we measure refractive errors?
-I. MANUAL: RETINOSCOPE
-Trial of the measured refraction
-                 Refractive Errors
-                                MYOPIA
-
-
-
-  A state of     PARALLEL rays of                                while
-                                         focused IN FRONT
-REFRACTION in           light                               ACCOMMDATION
-                                           OF the retina
-    which       entering the eye are                           is at rest
-
-
-
-                      Far point in front of the patient
-Refractive Errors
-       MYOPIA
-Refractive Errors
-       MYOPIA
-   Myopia:
-                                         Causes
-
-1. Axial myopia:
-                   AL is longer than normal (22-24.5mm)
-2. Refractive myopia:
-      • Curvature myopia:
-       Increased curvature of the cornea (e.g., keratoconus) the lens (e.g., lenticonus)
-      • Index myopia:
-             Increase refractive index of cornea
-             Increase refractive index of the lens nucleus (nuclear cataract)
-   Myopia:
-                                     Clinical presentation
-
-❑ Usually presents and progresses in the 1st or 2nd decades of life
-
-
-
-❑ Often stops progression in the late 2nd decade or the early years of the 3rd decade
-
-
-
-❑ Symptoms:
-    Blurred distance vision
-
-    Near vision is usually not affected except in higher degrees of myopia
-Myopia:
-          Clinical presentation
-   Myopia:
-                                  Clinical presentation
-
-Clinical types:
-   ➢ Simple myopia:
-
-                        less than 6 dioptres
-
-
-   ➢ High myopia:
-
-                  (Progressive– Degenerative – Malignant)
-                        Can reach more than 20 dioptres
-    Myopia:
-                                 Clinical presentation                       Myopic Subfoveal CNV
-                                                          Central
-                                                (affecting the macula and
-                                                      central vision)
-                                                                            Macular hemorrhage and
-                                                                                    scarring
-
-                Chorioretinal degenerations
-                                                                                Night blindness
-
-
-                    Posterior staphyloma
-                                                       Peripheral                Retinal tears
-Complications
-                    Complicated Cataract
-                                                                                     RRD
-
-                High association with primary
-                    open angle Glaucoma
- Myopia:
-                           Treatment
-                            Glasses      Concave or minus lenses
-            Conservative
-                            Contact
-                             lenses
-
-
-Treatment                                         PRK
-                            Corneal
-                                                 LASIK
-              Surgical
-                                               Phakic IOL
-                                               <40 years
-                           Lenticular:
-                                          Clear lens extraction
-                                               > 40 years
-Myopia:
-          Treatment
-                     Refractive Errors
-                   Hyperopia (Hypermetropia)
-
-
-
-  A state of     PARALLEL rays of                                 while
-                                        focused BEHIND the
-REFRACTION in           light                                ACCOMMDATION
-                                              retina
-    which       entering the eye are                            is at rest
-
-
-
-                          Far point behind the eye
-Refractive Errors
- Hyperopia (Hypermetropia)
-Refractive Errors
- Hyperopia (Hypermetropia)
-Refractive Errors
- Hyperopia (Hypermetropia)
-   Hyperopia:
-                                         Causes
-
-1. Axial hypermetropia:
-                AL is shorter than normal (22-24.5mm)
-2. Refractive hypermetropia:
-      • Curvature hypermetropia:
-                    Decrease curvature of the cornea (Corneal flatening)
-       • Index hypermetropia:
-             Decrease refractive index of lens
-             Aphakia (Absence of the lens) or posterior dislocation of the lens
-Hyperopia:
-
-• Accommodation by the ciliary muscle can correct hypermetropia in younger
-  patients but this ability decreases with age as the lens elasticity becomes
-  less.
-
-
-• By changing its shape, the crystalline lens can focus on objects at various
-  distances, thus allowing a sharp image of the object of interest to be formed
-  on the retina.
-   Hyperopia:
-                                Clinical presentation
-
-❑ Young age (1st, 2nd and 3rd decades of life):
-
-   ➢ Usuallydo not require glasses for correction of far vision (as hyperopia is
-     compensated by accommodation)
-
-
-   ➢ May complain of asthenopia (eye exhaustion with eye strain, headache and blurring
-     of vision) especially with prolonged near work)
-
-
-   ➢ Uncommonly develop accommodative esotropia in childhood period
-   Hyperopia:
-                               Clinical presentation
-
-❑ Middle age (4th and 5th decades of life):
-  Usually complain of blurred near vision and may require near vision correction (reading
-  glasses) earlier than usual (early presbyopia)
-
-
-❑ Old age (Above the age of 50):
-  Blurring of both distance and near vision (more for near) due to markedly reduced
-  amplitude of accommodation.
-Hyperopia:
-             Clinical presentation
-   Hyperopia:
-                                  Clinical presentation
-
-❑ Complications:
-
-
-   ➢ Predisposition to narrow angle glaucoma due to shallow anterior chamber.
-
-          (especially later in life as the lens becomes thicker)
-
-
-   ➢ Squint
-
-      ➢ Apparent divergent squint
-
-      ➢ Accommodative esotropia
-  Hyperopia:                 Treatment
-
-
-
-                              Glasses       Convex or plus lenses
-            Conservative
-                           Contact lenses
-Treatment
-                              Corneal              LASIK
-              Surgical
-                            Lenticular:     Clear lens extraction
-Hyperopia:   Treatment
-                                 Astigmatism
-
-➢ It is a state of refraction in which parallel rays of light entering the eye will not
-  uniformly focus to a single point on the retina but instead into two focal lines (a
-  = no, stigma=point)
-
-
-
-➢ It is due non-spherical surface of the cornea (more common) or the lens with
-  the resultant difference in the refractive power at different meridians (i.e., the
-  cornea surface or the lens surface have different radii of curvatures instead of
-  being a part of the sphere with a single radius of curvature.
-Astigmatism
-Astigmatism
-                                  Astigmatism
-                                                                             One meridian is
-                                                                              emmetropic
-         Lenticular Astigmatism
-               (very rare)                                                   Other meridian
-                                                    Simple
-                                                                             either myopic or
-                                                                                 hyperopic
-
-                                      Regular                              Both meridians are
-Causes                                             Compound                 either myopic or
-                                   (more common)                                hyperopic
-         Corneal Astigmatism
-           (most common)                                                     One meridian is
-                                                                                myopic
-                                                    Mixed
-                                                                             Other meridian
-                                                                               hyperopic
-
-
-
-                                      Irregular
-                                                         Corneal scars and Keratoconus
-                                   (less common)
-Astigmatism
-Astigmatism
-                                  Astigmatism
-                               Clinical presentation
-
-➢ Mild degrees:
-
-              Asymptomatic and may pass unnoticed
-➢ Higher degrees:
-
-         1.   Blurred vision
-         2.   Narrowing of the palpebral fissure to overcome the defective vision
-         3.   Asthenopia (especially in hyperopic and mixed types)
-         4.   Headaches
-  Astigmatism
-Clinical presentation
-  Astigmatism
-Clinical presentation
-                              Astigmatism
-                                     Treatment
-                                            Glasses (Cylindrical lenses)
-                        Conservative
-                                           Soft toric (sphero-cylindrical)
-                                                         CLs
-            Regular                                                          LASIK
-                                                  Corneal surgery
-                          Surgical                                           PRK
-                                                 Lenticular surgery
-Treatment
-
-                                              Glasses (Mild degrees)
-                        Conservative
-                                           Rigid gas permeable (RGP) CLs
-            Irregular
-                                              Intracorneal ring (ICR)
-                                                    segments
-                          Surgical
-                                                   Keratoplasty
-                                    Presbyopia
-                            The near point of the eye
-
-➢ The nearest point at which an object can be placed in front of the eye and still form a
-  focused image on the retina.
-
-➢ A person with myopia has a near point that is closer to the eye than normal
-➢ A person with hyperopia has a near point that is farther from the eye than normal
-
-
-➢ The normal accommodative power (accommodative amplitude) is 14 dioptres at the age
-  of 10. It diminishes to 3 dioptres by the age of 40 and is completely lost after the age of
-  60
-                                     Presbyopia
-
-➢ Definition:
-           Recession of the near point (i.e., it becomes farther from the eye) with age.
-
-
-
-➢ Near images can no longer be appropriately focused on the retina using accommodation.
-
-
-
-➢ It is a normal aging process (usually in persons 40 years of age or older)
-                                    Presbyopia
-
-➢ Causes:
-
-
-      1.    Hardening (reduced deformability) of the lens with age
-
-
-      2.    Reduced accommodative amplitude with age
-                                               Presbyopia
-                                            Clinical presentation
-                      Emmetropes                                            Myopes                     Hyperopes
-
-
-                                                                                            High
-                                                            Low myopes (up to 4 to 5 D     myopes
-                                                                  of myopia)             (with their
-  Need to                                                                                glasses on)
-extend their                                                                                            Presbyopia
-  hands to                                     Increased                                                earlier than
- make near                      Distance     illumination                                                the age of
-               Difficulty in
-   objects                       vision        is needed                                                 40 due to
-               knitting and                                   See near    Take glasses
-   clearer                      remains            for                                                 accommoda
-                 sewing                                        objects       off for
-   (Holds                      unaffected     performing                                                    tive
-    books                                     near tasks.     better if    reading or       As         insufficiency
-   farther                                                  they remove    other tasks   emmetropes           .
-    away)                                                       their     that require
-                                                              glasses.    near vision.
-   Presbyopia
-Clinical presentation
-   Presbyopia
-Clinical presentation
-   Presbyopia
-Clinical presentation
-   Presbyopia
-Clinical presentation
-   Presbyopia
-Clinical presentation
-                       Presbyopia
-                        Treatment
-
-
-
-                  Correction with glasses
-(spherical plus lens addition to their far vision refraction)
-
-                         Reading glasses
-                             Bifocal
-                        Progressive lenses
-Spectacle (Glasses) Prescription
-                                  Anisometropia
-➢ A difference in the refractive status between both eyes
-
-
-
-➢ It is the most common cause of amblyopia in children.
-
-
-
-➢ If the difference is not high, the error can be corrected with glasses
-
-
-
-➢ If the difference is high (usually more than 4 D difference), correction with glasses might
-  lead to diplopia due to difference in the size of the image formed on the retina of both
-  eyes (Aniseikonia) which is an obstacle to fusion of both images.
-          Anisometropia
-
-
-             Anisometropia
+─────────────────────────────────────────────────────────────────────
+SLIDE 25 — Determinants of refraction   ⚠️ HIGH YIELD
+─────────────────────────────────────────────────────────────────────
+Refractive Errors
+Header box: **Any state of refraction of the eye is determined by**
+Two branches, verbatim:
+
+ • **Axial length of the eyeball**  (Main Factor Usually)
+ • **Power of the cornea and crystalline lens**  (determined by curvature and refractive index)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 26 — Refractive Errors (axial length)
+─────────────────────────────────────────────────────────────────────
+Refractive Errors
+(Anatomical eye illustration with a single black double-headed arrow across it labelled **AL**.
+No numeric value on this slide.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 27 — Refractive Errors (axial length)   ⚠️ FIGURE VALUE INVISIBLE TO pdftotext
+─────────────────────────────────────────────────────────────────────
+Refractive Errors
+(Whiteboard-style drawing of the globe between two dashed vertical lines.)
+Figure labels, verbatim:
+ • Anterior pole
+ • **23.5 mm axial length**
+
+⚠️ This is the only single-value axial length printed in the deck. The prose on p42 and p53 gives
+the normal range as 22-24.5 mm. Both are recorded; the deck does not reconcile them.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 28 — Refractive Errors: Ametropia (definition repeated)
+─────────────────────────────────────────────────────────────────────
+Refractive Errors
+**Ametropia**
+Definition arrow, four boxes, verbatim (identical to slide 20 except that the footer box is
+absent):
+
+  A state of REFRACTION in which | PARALLEL rays of light entering the eye are |
+  **NOT** focused ON the retina | while ACCOMMDATION [sic] is at rest
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 29 — Refractive Errors: Ametropia   ⚠️ COMPARATIVE FIGURE
+─────────────────────────────────────────────────────────────────────
+Refractive Errors
+Ametropia
+(Three anatomical eyes in a row, each with an "Axial Length" double-headed arrow. Boxed captions
+beneath, verbatim:)
+ • **Emmetropia** — arrow of intermediate length
+ • **Myopia** — arrow visibly LONGEST (globe elongated)
+ • **Hyperopia** — arrow visibly SHORTEST (globe short)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 30 — Refractive Errors
+─────────────────────────────────────────────────────────────────────
+Refractive Errors
+(Cartoon only: an anthropomorphic eyeball with arms and legs measuring itself with a tape
+measure. No text, no label. Decoration.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 31 — The four errors of refraction   ⚠️ HIGH YIELD — CLASSIFICATION
+─────────────────────────────────────────────────────────────────────
+Refractive Errors
+Header box: **Errors of refraction encountered in the human eye include**
+Four branches with their glosses, verbatim:
+
+ | Error        | Gloss as printed                                              |
+ |--------------|---------------------------------------------------------------|
+ | Myopia       | Near-sightedness                                              |
+ | Hyperopia    | Far-sightedness                                               |
+ | Astigmatism  | Formation of more than one focus by the optical system of the eye |
+ | Presbyopia   | Poor near vision as an aging process                          |
+
+(NOTE — the deck lists PRESBYOPIA as one of the four "errors of refraction", and separately calls
+it "a normal aging process" on p73. Anisometropia is NOT in this list, although the deck teaches
+it on p83–p87.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 32 — Types of lenses   ⚠️ HIGH YIELD — CLASSIFICATION
+─────────────────────────────────────────────────────────────────────
+Types of lenses
+Header box: **Lenses used to correct the errors of refraction of the human eye**
+Tree, verbatim:
+
+  Spherical lenses
+   ├── **Concave (Minus Lenses)** ──── **Myopia**
+   └── **Convex (Plus lenses)** ────── **Hyperopia & Presbyopia**
+  **Cylindrical lenses** ───────────── **Astigmatism**
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 33 — Types of lenses: concave and convex   ⚠️ HIGH YIELD
+─────────────────────────────────────────────────────────────────────
+Types of lenses
+ ▸ **Concave lenses:**
+    • Minus lenses
+    • **Diverge light rays**   (printed in red)
+    • Object : smaller & **move with**
+ ▸ **Convex lenses:**
+    • Plus lenses
+    • **Converge light**   (printed in red)
+    • Object: larger & **move against**
+
+Figure labels (right), verbatim: **CONCAVE DIVERGING** · **CONVEX CONVERGING**
+(Ray diagrams: parallel rays spreading after a biconcave lens; parallel rays converging to a
+point after a biconvex lens.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 34 — Types of lenses: cylindrical lenses
+─────────────────────────────────────────────────────────────────────
+Types of lenses
+**Cylindrical lenses**
+Figure labels, verbatim: A · Axis · Plus cylinder · B · Axis · Minus cylinder ·
+"AXIS OF REVOLUTION" · "GENERATING LINE" (the last two are low-resolution and partly illegible)
+(Left: a photograph of a clear cylindrical lens held between two fingers. Centre: line drawings
+of a plus and a minus cylinder, each with its axis marked. Right: a faint scanned figure of a
+cylinder of revolution. NO axis notation, NO degree values, NO transposition rule is printed.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 35 — Refractive errors are corrected with   ⚠️ HIGH YIELD
+─────────────────────────────────────────────────────────────────────
+**Refractive errors are corrected with**
+ • **Glasses:**
+   • Easiest and safest method of correction.
+ • **Contact lenses:**
+   • Cosmetic & a wider field of vision however they are associated with **risk of infection**
+ • **Refractive Surgery:**
+   • **Corneal surgery** (change the shape of the cornea)
+   • **Lenticular surgery**
+
+(This is the deck's ONLY contact-lens indication/risk statement. There is no CL fitting, no
+material, no wear schedule and no complication beyond "risk of infection".)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 36 — How do we measure refractive errors? Automated   ⚠️ NUMBERING DEFECT
+─────────────────────────────────────────────────────────────────────
+**How do we measure refractive errors?**
+**I. AUTOMATED: AUTO-REFRACTOMETER**
+(Two photographs: a bench autorefractor with its display inset; a patient seated at an
+autorefractor with the operator at the joystick. NO procedure text of any kind.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 37 — How do we measure refractive errors? Manual   ⚠️ NUMBERING DEFECT
+─────────────────────────────────────────────────────────────────────
+**How do we measure refractive errors?**
+**I. MANUAL: RETINOSCOPE**   [sic — printed "I.", should be "II."; p36 is also "I."]
+(Two photographs: three streak retinoscope heads on a handle, watermark "EyeRounds"; a student
+performing retinoscopy on a seated subject wearing a trial frame, with a trial lens set open.
+NO procedure text — no working distance, no with/against movement, no neutralisation, no
+cycloplegia, nothing. See the NOT-COVERED list.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 38 — Trial of the measured refraction
+─────────────────────────────────────────────────────────────────────
+**Trial of the measured refraction**
+(Four photographs, no captions: a trial frame; an open trial lens set; a patient behind a
+phoropter, watermark "alamy"; and a Landolt-C acuity chart.)
+Acuity-chart line values legible on the crop at 300 dpi, top to bottom: **60 · 36 · 24 · 18 · 12**;
+the remaining two or three lines are [illegible] at this resolution. The topmost mark above "60"
+is [illegible].
+(No text about the procedure is printed on this slide either.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 39 — MYOPIA   ⚠️ DEFINITION
+─────────────────────────────────────────────────────────────────────
+Refractive Errors
+**MYOPIA**
+Definition arrow, four boxes, verbatim:
+
+  A state of REFRACTION in which | PARALLEL rays of light entering the eye are |
+  focused **IN FRONT OF** the retina | while ACCOMMDATION [sic] is at rest
+
+Footer box: **Far point in front of the patient**
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 40 — MYOPIA (figure)
+─────────────────────────────────────────────────────────────────────
+Refractive Errors
+MYOPIA
+Figure labels, verbatim:
+ • **Object at infinity (20' or 6 M)**
+ • Retina
+ • "The image from infinity forms in front of the retina in a myopic eye."
+
+(⚠️ "20' or 6 M" is the deck's only statement of the testing distance, and it is inside a figure —
+invisible to `pdftotext`.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 41 — MYOPIA (far point figure)
+─────────────────────────────────────────────────────────────────────
+Refractive Errors
+MYOPIA
+Figure labels, verbatim:
+ • **Object Far Point Myopic Eye**
+ • F  (marked as a red dot in front of the eye)
+ • Retina · Image forms at retina
+ • "The Far Point for a Myopic eye is less than infinity"
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 42 — Myopia: Causes   ⚠️ HIGH YIELD — CLASSIFICATION
+─────────────────────────────────────────────────────────────────────
+**Myopia: Causes**
+
+ 1. **Axial myopia:**
+      AL is longer than normal **(22-24.5mm)**
+ 2. **Refractive myopia:**
+      • **Curvature myopia:**
+        Increased curvature of the cornea (e.g., **keratoconus**)  the  lens (e.g., **lenticonus**)
+        [sic — the conjunction "or" is genuinely missing on the slide]
+      • **Index myopia:**
+        Increase refractive index of cornea
+        Increase refractive index of the lens nucleus (**nuclear cataract**)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 43 — Myopia: Clinical presentation   ⚠️ HIGH YIELD — AGES
+─────────────────────────────────────────────────────────────────────
+**Myopia: Clinical presentation**
+
+ ❑ Usually presents and progresses in the **1st or 2nd decades of life**
+ ❑ Often stops progression in the **late 2nd decade or the early years of the 3rd decade**
+ ❑ **Symptoms:**
+    ▸ Blurred distance vision
+    ▸ Near vision is usually not affected **except in higher degrees of myopia**
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 44 — Myopia: Clinical presentation
+─────────────────────────────────────────────────────────────────────
+Myopia: Clinical presentation
+(Photograph only: schoolchildren with raised hands facing a blurred blackboard. Illustrates
+blurred distance vision. No text.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 45 — Myopia: clinical types   ⚠️ HIGH YIELD — DIOPTRE CUT-OFFS
+─────────────────────────────────────────────────────────────────────
+**Myopia: Clinical presentation**
+**Clinical types:**
+
+ ➢ **Simple myopia:**  **less than 6 dioptres**
+ ➢ **High myopia:**  (**Progressive– Degenerative – Malignant**)
+      **Can reach more than 20 dioptres**
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 46 — Myopia: Complications   ⚠️ HIGH YIELD — STRUCTURE CORRECTED AT 150 dpi
+─────────────────────────────────────────────────────────────────────
+**Myopia: Clinical presentation**
+Tree rooted on **Complications**, verbatim. The text layer interleaved these columns; the render
+gives the true topology — only the FIRST branch subdivides:
+
+  Complications
+   ├── **Chorioretinal degenerations**
+   │     ├── **Central** (affecting the macula and central vision)
+   │     │      ├── Myopic Subfoveal CNV
+   │     │      └── Macular hemorrhage and scarring
+   │     └── **Peripheral**
+   │            ├── Night blindness
+   │            ├── Retinal tears
+   │            └── RRD
+   ├── **Posterior staphyloma**
+   ├── **Complicated Cataract**
+   └── **High association with primary open angle Glaucoma**
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 47 — Myopia: Treatment   ⚠️ HIGH YIELD — AGE CUT-OFFS
+─────────────────────────────────────────────────────────────────────
+**Myopia: Treatment**
+Tree, verbatim:
+
+  Treatment
+   ├── **Conservative**
+   │     ├── Glasses ──── **Concave or minus lenses**
+   │     └── Contact lenses
+   └── **Surgical**
+         ├── **Corneal**
+         │     ├── **PRK**
+         │     └── **LASIK**
+         └── **Lenticular:**
+               ├── **Phakic IOL — <40 years**
+               └── **Clear lens extraction — > 40 years**
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 48 — Myopia: Treatment (figure)
+─────────────────────────────────────────────────────────────────────
+Myopia: Treatment
+Figure labels, verbatim:
+ • Object at infinity
+ • F (red dot, in front of the eye)
+ • Retina · Image forms at retina
+ • "**Concave (minus power) lens corrects Myopia**"
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 49 — Hyperopia (Hypermetropia)   ⚠️ DEFINITION
+─────────────────────────────────────────────────────────────────────
+Refractive Errors
+**Hyperopia (Hypermetropia)**
+Definition arrow, four boxes, verbatim:
+
+  A state of REFRACTION in which | PARALLEL rays of light entering the eye are |
+  focused **BEHIND** the retina | while ACCOMMDATION [sic] is at rest
+
+Footer box: **Far point behind the eye**
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 50 — Hyperopia (figure)
+─────────────────────────────────────────────────────────────────────
+Refractive Errors
+Hyperopia (Hypermetropia)
+Figure labels, verbatim:
+ • **Eye is too short**
+ • Visual axis · Light rays
+ • "Light is underfocused, causing a blurred image on the retina"
+(Credit mark on the image: "CCF ©2015".)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 51 — Hyperopia (figure)
+─────────────────────────────────────────────────────────────────────
+Refractive Errors
+Hyperopia (Hypermetropia)
+Figure labels, verbatim:
+ • **Object at infinity (20' or 6 M)**
+ • Retina
+ • "The image from infinity forms behind the retina in a hyperopic eye"
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 52 — Hyperopia: far point (figure)
+─────────────────────────────────────────────────────────────────────
+Refractive Errors
+Hyperopia (Hypermetropia)
+Figure labels, verbatim:
+ • Object at infinity
+ • Retina
+ • **B** and **A** (two circled points behind the eye, A the further)
+ • "**The Far Point for the Hyperopic Eye**"
+(The far point is drawn BEHIND the globe, i.e. virtual — consistent with slide 49's footer.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 53 — Hyperopia: Causes   ⚠️ HIGH YIELD — CLASSIFICATION
+─────────────────────────────────────────────────────────────────────
+**Hyperopia: Causes**
+
+ 1. **Axial hypermetropia:**
+      AL is shorter than normal **(22-24.5mm)**
+ 2. **Refractive hypermetropia:**
+      • **Curvature hypermetropia:**
+        Decrease curvature of the cornea (**Corneal flatening** [sic])
+      • **Index hypermetropia:**
+        Decrease refractive index of lens
+        **Aphakia** (Absence of the lens) or **posterior dislocation of the lens**
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 54 — Hyperopia and accommodation   ⚠️ HIGH YIELD — MECHANISM
+─────────────────────────────────────────────────────────────────────
+**Hyperopia:**
+
+ • **Accommodation by the ciliary muscle can correct hypermetropia in younger patients** but this
+   ability decreases with age as the lens elasticity becomes less.
+ • By changing its shape, the crystalline lens can focus on objects at various distances, thus
+   allowing a sharp image of the object of interest to be formed on the retina.
+
+(This is the deck's ONLY description of the mechanism of accommodation. There is no near reflex
+triad, no ciliary/zonular detail, no amplitude formula — only the age figures on p72.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 55 — Hyperopia: Clinical presentation, young age   ⚠️ HIGH YIELD
+─────────────────────────────────────────────────────────────────────
+**Hyperopia: Clinical presentation**
+
+ ❑ **Young age (1st, 2nd and 3rd decades of life):**
+   ➢ **Usually do not require glasses for correction of far vision** (as hyperopia is compensated
+     by accommodation)
+   ➢ May complain of **asthenopia** (eye exhaustion with eye strain, headache and blurring of
+     vision) especially with prolonged near work)
+   ➢ **Uncommonly develop accommodative esotropia in childhood period**
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 56 — Hyperopia: Clinical presentation, middle and old age   ⚠️ HIGH YIELD — AGES
+─────────────────────────────────────────────────────────────────────
+**Hyperopia: Clinical presentation**
+
+ ❑ **Middle age (4th and 5th decades of life):**
+   Usually complain of blurred near vision and may require near vision correction (reading
+   glasses) **earlier than usual (early presbyopia)**
+ ❑ **Old age (Above the age of 50):**
+   Blurring of **both distance and near vision (more for near)** due to markedly reduced amplitude
+   of accommodation.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 57 — Hyperopia: Clinical presentation
+─────────────────────────────────────────────────────────────────────
+Hyperopia: Clinical presentation
+(Photograph only: a hand holding a phone in front of a sharp mountain-lake landscape, the phone
+screen blurred — illustrating blurred NEAR vision against clear distance vision. No text.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 58 — Hyperopia: Complications   ⚠️ HIGH YIELD
+─────────────────────────────────────────────────────────────────────
+**Hyperopia: Clinical presentation**
+ ❑ **Complications:**
+   ➢ **Predisposition to narrow angle glaucoma due to shallow anterior chamber.**
+       (especially later in life as the lens becomes thicker)
+   ➢ **Squint**
+       ➢ **Apparent divergent squint**
+       ➢ **Accommodative esotropia**
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 59 — Hyperopia: Treatment   ⚠️ HIGH YIELD — NOTE WHAT IS ABSENT
+─────────────────────────────────────────────────────────────────────
+**Hyperopia: Treatment**
+Tree, verbatim:
+
+  Treatment
+   ├── **Conservative**
+   │     ├── Glasses ──── **Convex or plus lenses**
+   │     └── Contact lenses
+   └── **Surgical**
+         ├── **Corneal** ────── **LASIK**
+         └── **Lenticular:** ── **Clear lens extraction**
+
+⚠️ Compare slide 47: hyperopia is offered NO PRK, NO phakic IOL and NO age cut-off. The deck gives
+no reason. Recorded as printed.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 60 — Hyperopia: Treatment (figure)
+─────────────────────────────────────────────────────────────────────
+Hyperopia: Treatment
+Figure labels, verbatim:
+ • Object at infinity
+ • Retina · **Image forms on the retina**
+ • F (red dot, behind the eye)
+(A convex/plus lens is drawn in front of the eye, bringing the focus forward onto the retina.
+The lens is NOT captioned on this slide, unlike slide 48's "Concave (minus power) lens".)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 61 — Astigmatism: definition   ⚠️ HIGH YIELD — DEFINITION
+─────────────────────────────────────────────────────────────────────
+**Astigmatism**
+
+ ➢ It is a state of refraction in which parallel rays of light entering the eye **will not
+   uniformly focus to a single point on the retina but instead into two focal lines**
+   (**a = no, stigma = point**)
+ ➢ It is due non-spherical surface of the **cornea (more common)** or the **lens** with the
+   resultant difference in the refractive power at **different meridians** (i.e., the cornea
+   surface or the lens surface have different radii of curvatures instead of being a part of the
+   sphere with a single radius of curvature.
+   [sic — the closing parenthesis is missing on the slide]
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 62 — Astigmatism (figure)
+─────────────────────────────────────────────────────────────────────
+Astigmatism
+Figure labels, verbatim: **NORMAL** · **ASTIGMATISM**
+(A football/soccer ball beside an American football, each crossed by a red vertical and a blue
+horizontal meridian line — the spherical vs toric surface analogy.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 63 — Astigmatism (figure)
+─────────────────────────────────────────────────────────────────────
+Astigmatism
+Figure labels, verbatim: **flatter direction** · **steeper direction** · ASTIGMATISM
+(Left: an American football superimposed on a photograph of a human eye, with the flatter and
+steeper meridians labelled. Right: the football with red and blue meridians, repeated from p62.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 64 — Astigmatism: Causes   ⚠️ HIGH YIELD — STRUCTURE CORRECTED AT 150 dpi
+─────────────────────────────────────────────────────────────────────
+**Astigmatism**
+Tree rooted on **Causes**, verbatim. ⚠️ Regular/Irregular branch from **CORNEAL** astigmatism, not
+from Causes — the text layer's column order implied otherwise:
+
+  Causes
+   ├── **Lenticular Astigmatism (very rare)**   [terminal]
+   └── **Corneal Astigmatism (most common)**
+         ├── **Regular (more common)**
+         │     ├── **Simple** ──── One meridian is emmetropic
+         │     │                   Other meridian either myopic or hyperopic
+         │     ├── **Compound** ── Both meridians are either myopic or hyperopic
+         │     └── **Mixed** ───── One meridian is myopic
+         │                         Other meridian hyperopic
+         └── **Irregular (less common)** ── **Corneal scars and Keratoconus**
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 65 — [NO TITLE]   ⚠️ BROKEN GRAPHIC — THE DECK'S ONLY 0-CHARACTER PAGE
+─────────────────────────────────────────────────────────────────────
+(No title. No text of any kind — `pdftotext` returns 0 characters, the only such page in the deck.
+The slide contains a single large SOLID GREEN CIRCLE crossed by one vertical line and one oblique
+line running roughly lower-left to upper-right. No labels, no degree marks, no caption.)
+
+⚠️ Positioned between the causes tree (p64) and the five-types figure (p66), this is almost
+certainly a meridian/axis diagram whose content failed to render — the circle is filled with the
+template's accent green and obscures whatever was drawn on it. Recorded as a DEFECT, not as
+content, and not as filler. If any question in the bank turns on axis notation or meridian
+degrees, this slide is where it would have been taught and the deck does not deliver it.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 66 — Astigmatism: the five types (figure)   ⚠️ HIGH YIELD
+─────────────────────────────────────────────────────────────────────
+Astigmatism
+(Five schematic eyes, each with two focal lines drawn relative to the retina. Captions verbatim:)
+ • **Simple myopic**
+ • **Compound myopic**
+ • **Mixed**
+ • **Simple hyperopic**
+ • **Compound hyperopic**
+
+⚠️ Five named types here, against the three-way Simple/Compound/Mixed tree on p64. Both printed.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 67 — Astigmatism: the five types explained (figure)   ⚠️ HIGH YIELD
+─────────────────────────────────────────────────────────────────────
+Astigmatism
+(The same five types, each with a captioned explanation. Verbatim:)
+
+ • **SIMPLE MYOPIC ASTIGMATISM:** One point of focus is on the fovea, while the other is
+   **in front of** the fovea
+ • **SIMPLE HYPEROPIC ASTIGMATISM:** One point of focus is on the fovea, while the other is
+   **behind** the fovea
+ • **COMPOUND MYOPIC ASTIGMATISM:** **Both** focal points are located **in front of** the fovea
+ • **COMPOUND HYPEROPIC ASTIGMATISM:** **Both** focal points are located **behind** the fovea
+ • **MIXED ASTIGMATISM:** One point of focus is **behind** the fovea, while the other is
+   **in front of** the fovea
+
+(NOTE — this figure defines the types against the FOVEA; p64's tree defines them against
+meridians being myopic/hyperopic/emmetropic. The two are consistent but worded differently.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 68 — Astigmatism: Clinical presentation   ⚠️ HIGH YIELD
+─────────────────────────────────────────────────────────────────────
+**Astigmatism: Clinical presentation**
+
+ ➢ **Mild degrees:** Asymptomatic and may pass unnoticed
+ ➢ **Higher degrees:**
+     1. **Blurred vision**
+     2. **Narrowing of the palpebral fissure to overcome the defective vision**
+     3. **Asthenopia (especially in hyperopic and mixed types)**
+     4. **Headaches**
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 69 — Astigmatism: Clinical presentation
+─────────────────────────────────────────────────────────────────────
+Astigmatism: Clinical presentation
+(Photograph only, two panels: the Golden Gate Bridge sharp on the left, directionally blurred on
+the right. No captions on the panels. No text.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 70 — Astigmatism: Clinical presentation
+─────────────────────────────────────────────────────────────────────
+Astigmatism: Clinical presentation
+(Photograph, two panels. Captions verbatim: **Normal Vision** · **Astigmatism**. A night highway
+scene, sharp on the left; on the right the headlights and streetlights are smeared into streaks.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 71 — Astigmatism: Treatment   ⚠️ HIGH YIELD — STRUCTURE CORRECTED AT 150 dpi
+─────────────────────────────────────────────────────────────────────
+**Astigmatism: Treatment**
+Tree, verbatim. ⚠️ LASIK and PRK both hang off **Corneal surgery**; "Lenticular surgery" is
+terminal. The text layer's ordering implied PRK belonged to lenticular surgery — it does not:
+
+  Treatment
+   ├── **Regular**
+   │     ├── **Conservative**
+   │     │     ├── **Glasses (Cylindrical lenses)**
+   │     │     └── **Soft toric (sphero-cylindrical) CLs**
+   │     └── **Surgical**
+   │           ├── **Corneal surgery**
+   │           │     ├── **LASIK**
+   │           │     └── **PRK**
+   │           └── **Lenticular surgery**   [terminal]
+   └── **Irregular**
+         ├── **Conservative**
+         │     ├── **Glasses (Mild degrees)**
+         │     └── **Rigid gas permeable (RGP) CLs**
+         └── **Surgical**
+               ├── **Intracorneal ring (ICR) segments**
+               └── **Keratoplasty**
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 72 — Presbyopia: the near point   ⚠️ HIGH YIELD — THE ACCOMMODATION FIGURES
+─────────────────────────────────────────────────────────────────────
+**Presbyopia — The near point of the eye**
+
+ ➢ **The nearest point at which an object can be placed in front of the eye and still form a
+   focused image on the retina.**
+ ➢ A person with **myopia** has a near point that is **closer to the eye than normal**
+ ➢ A person with **hyperopia** has a near point that is **farther from the eye than normal**
+ ➢ The normal accommodative power (**accommodative amplitude**) is **14 dioptres at the age of 10**.
+   It diminishes to **3 dioptres by the age of 40** and is **completely lost after the age of 60**
+
+(⚠️ These three numbers — 14 D / age 10, 3 D / age 40, lost after 60 — are the deck's only
+accommodation figures. No near-point DISTANCE in cm is given at any age.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 73 — Presbyopia: definition   ⚠️ HIGH YIELD
+─────────────────────────────────────────────────────────────────────
+**Presbyopia**
+ ➢ **Definition:** **Recession of the near point** (i.e., it becomes farther from the eye) **with
+   age.**
+ ➢ Near images can no longer be appropriately focused on the retina using accommodation.
+ ➢ It is a **normal aging process (usually in persons 40 years of age or older)**
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 74 — Presbyopia: Causes   ⚠️ HIGH YIELD
+─────────────────────────────────────────────────────────────────────
+**Presbyopia — Causes:**
+ 1. **Hardening (reduced deformability) of the lens with age**
+ 2. **Reduced accommodative amplitude with age**
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 75 — Presbyopia: Clinical presentation   ⚠️⚠️ THE DECK'S DENSEST TABLE —
+                                                  STRUCTURE RECOVERED AT 150 dpi
+─────────────────────────────────────────────────────────────────────
+**Presbyopia — Clinical presentation**
+
+Three column groups. The text layer collapsed these into an unreadable run; the true structure is:
+
+**EMMETROPES** — four cells, verbatim:
+ 1. **Need to extend their hands to make near objects clearer (Holds books farther away)**
+ 2. **Difficulty in knitting and sewing**
+ 3. **Distance vision remains unaffected**
+ 4. **Increased illumination is needed for performing near tasks.**
+
+**MYOPES** — split into two sub-headed groups, verbatim:
+ ▸ **Low myopes (up to 4 to 5 D of myopia)** — two cells:
+     • **See near objects better if they remove their glasses.**
+     • **Take glasses off for reading or other tasks that require near vision.**
+ ▸ **High myopes (with their glasses on)** — one cell:
+     • **As emmetropes**
+
+**HYPEROPES** — one cell, verbatim:
+ • **Presbyopia earlier than the age of 40 due to accommodative insufficiency.**
+
+(⚠️ "up to 4 to 5 D" is the deck's only dioptric boundary for low myopia, and it exists ONLY in
+this table. Note it does not match the 6 D simple/high myopia cut-off on p45 — the deck uses two
+different myopia thresholds for two different purposes and does not reconcile them.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 76 — Presbyopia: Clinical presentation
+─────────────────────────────────────────────────────────────────────
+Presbyopia: Clinical presentation
+(Photograph only: hands holding an open book at arm's length in a sitting room. No text.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 77 — Presbyopia: Clinical presentation
+─────────────────────────────────────────────────────────────────────
+Presbyopia: Clinical presentation
+(Photograph only, a visual joke: an older man looking through binoculars at a book held in a
+comically elongated arm. No text.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 78 — Presbyopia: Clinical presentation
+─────────────────────────────────────────────────────────────────────
+Presbyopia: Clinical presentation
+(Photograph only: a man at a desk lifting his spectacles onto his forehead to read a slip of
+paper. No text.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 79 — Presbyopia: Clinical presentation
+─────────────────────────────────────────────────────────────────────
+Presbyopia: Clinical presentation
+(Photograph only: a woman leaning back on a sofa holding a magazine at arm's length. No text.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 80 — Presbyopia: Clinical presentation
+─────────────────────────────────────────────────────────────────────
+Presbyopia: Clinical presentation
+(Photograph only: close-up of a hand threading a needle, the eye blurred behind it — the
+"difficulty in knitting and sewing" cell of the p75 table. No text.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 81 — Presbyopia: Treatment   ⚠️ HIGH YIELD — THE ONLY PRESBYOPIA TREATMENT SLIDE
+─────────────────────────────────────────────────────────────────────
+**Presbyopia — Treatment**
+
+**Correction with glasses**
+**(spherical plus lens addition to their far vision refraction)**
+
+  **Reading glasses**
+  **Bifocal**
+  **Progressive lenses**
+
+(⚠️ NO ADD POWER is given, at any age. No near-add table, no working-distance rule, no
+"+1.00 at 45" style figure anywhere in the deck.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 82 — Spectacle (Glasses) Prescription   ⚠️ TABLE — INVISIBLE TO pdftotext
+─────────────────────────────────────────────────────────────────────
+**Spectacle (Glasses) Prescription**
+(`pdftotext` returns 3 words. The form is a raster image. Reproduced from the render:)
+
+ | **Rx**  | **Right eye**                  | **Left eye**                   |
+ |---------|--------------------------------|--------------------------------|
+ |         | Sphere | Cylinder | Axis      | Sphere | Cylinder | Axis      |
+ | **Far** |        |          |           |        |          |           |
+ | **Near**|        |          |           |        |          |           |
+ |         | **PD for far**                 | **PD for Near**                |
+
+**ALL DATA CELLS ARE BLANK.** This is an empty prescription form, not a worked example. The deck
+prints no sphere value, no cylinder value, no axis in degrees and no PD in mm — anywhere.
+"PD" is never expanded; the deck does not print "pupillary distance".
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 83 — Anisometropia   ⚠️ HIGH YIELD — THE 4 D LIMIT
+─────────────────────────────────────────────────────────────────────
+**Anisometropia**
+
+ ➢ **A difference in the refractive status between both eyes**
+ ➢ **It is the most common cause of amblyopia in children.**
+ ➢ If the difference is not high, the error can be corrected with glasses
+ ➢ If the difference is high (**usually more than 4 D difference**), correction with glasses might
+   lead to **diplopia** due to difference in the size of the image formed on the retina of both
+   eyes (**Aniseikonia**) which is **an obstacle to fusion** of both images.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 84 — Anisometropia vs Aniseikonia   ⚠️ SPELLING INCONSISTENCY
+─────────────────────────────────────────────────────────────────────
+**Anisometropia**
+
+ **Anisometropia**
  The two eyes have different refractive power
 
+ **Anisiekonia**   [sic — spelled "Aniseikonia" on slide 83; both printed]
+ Unequal size of the retinal image of both eyes.
+
+(⚠️ The last line breaks font size mid-sentence: "Unequal size of the retinal" is set small,
+"image of both eyes." is set large. Layout defect, no content lost.)
 
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 85 — [titled "Presbyopia / Treatment" — CONTENT IS ANISOMETROPIA]   ⚠️ SEE FINDING 2
+─────────────────────────────────────────────────────────────────────
+Header as printed: **Presbyopia — Treatment**   [⚠️ STALE HEADER]
 
-               Anisiekonia
-Unequal size of the retinal image of both eyes.
-                                Presbyopia
-                                  Treatment
+ ➢ **Small amounts can be corrected with glasses**
+ ➢ **Larger amounts may require other treatment modalities (contact lens or refractive surgery)
+   if glasses induce diplopia.**
 
-➢ Small amounts can be corrected with glasses
+⚠️ Read by content this is the TREATMENT OF ANISOMETROPIA: "diplopia induced by glasses" is the
+p83 aniseikonia problem, and presbyopia is not graded in amounts that induce diplopia. Presbyopia
+treatment is delivered once, on slide 81. Filed here as printed, flagged as mis-titled.
 
 
-➢ Larger amounts may require other treatment modalities (contact lens or
-  refractive surgery) if glasses induce diplopia.
-Presbyopia
- Treatment
-Presbyopia
- Treatment
-thank you
-
+─────────────────────────────────────────────────────────────────────
+SLIDE 86 — [titled "Presbyopia / Treatment" — CONTENT IS ANISOMETROPIA]   ⚠️ SEE FINDING 2
+─────────────────────────────────────────────────────────────────────
+Header as printed: **Presbyopia — Treatment**   [⚠️ STALE HEADER]
+(Photograph only: a close-up of a child's eyes behind spectacles, the two lenses visibly
+different in effect. No text, no caption.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 87 — [titled "Presbyopia / Treatment" — CONTENT IS ANISOMETROPIA]   ⚠️ SEE FINDING 2
+─────────────────────────────────────────────────────────────────────
+Header as printed: **Presbyopia — Treatment**   [⚠️ STALE HEADER]
+(Photograph only: a close-up of an adult's eyes behind spectacles. No text, no caption.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 88 — thank you
+─────────────────────────────────────────────────────────────────────
+thank you
+(A line-art open eye beside the words. Closing slide.)
+
+
+═════════════════════════════════════════════════════════════════════
+NOT COVERED ANYWHERE IN THIS DECK
+═════════════════════════════════════════════════════════════════════
+Recorded so a gap can be settled by proving a negative rather than by memory. Verified over all
+88 pages visually, plus a full-text grep of all three extraction modes.
+
+**MEASUREMENT — the largest hole. Three slides, all photographs, ZERO procedure text:**
+ • **RETINOSCOPY TECHNIQUE.** No working distance, no dioptric allowance for it, no "with"
+   movement vs "against" movement, no neutralisation, no streak orientation, no reflex
+   description. The deck shows a retinoscope and nothing else.
+ • **CYCLOPLEGIC REFRACTION.** Not mentioned. No cycloplegic agent is named anywhere in the
+   deck — no atropine, no cyclopentolate, no tropicamide. **THE DECK CONTAINS NO DRUG NAME AT
+   ALL.**
+ • **SUBJECTIVE REFRACTION.** No duochrome/red-green test, no Jackson cross-cylinder, no fogging,
+   no pinhole, no fan-and-block, no binocular balance.
+ • **KERATOMETRY / CORNEAL TOPOGRAPHY.** Not named. No K reading, no keratometric value.
+ • **BIOMETRY / A-SCAN** for axial length. Not named, although axial length is the deck's "main
+   factor usually".
+
+**NOTATION AND ARITHMETIC — absent entirely:**
+ • **AXIS NOTATION.** No degree value anywhere; no 0–180 convention, no "×90", no with-the-rule
+   vs against-the-rule vs oblique astigmatism. The one slide where this belongs (p65) is a broken
+   graphic.
+ • **TRANSPOSITION** of plus to minus cylinder. Not covered, although p34 draws both.
+ • **SPHERICAL EQUIVALENT.** Not named, no formula.
+ • **VERTEX DISTANCE** and the spectacle-vs-contact-lens power difference. Not covered.
+ • **ANY WORKED EXAMPLE.** The p82 prescription form is entirely blank; no sphere, cylinder, axis
+   or PD value is printed anywhere in 88 pages.
+ • **NEAR ADD POWER** at any age. p81 says "spherical plus lens addition" and stops.
+ • **SNELLEN NOTATION / VISUAL ACUITY RECORDING.** 6/6, 20/20 and LogMAR never appear. The only
+   acuity content is an unexplained Landolt-C chart photograph on p38 and the "20' or 6 M"
+   testing distance inside the figures on p40 and p51.
+ • **REFRACTIVE INDEX VALUES.** p16 gives n = c/v and the deck never prints a single value of n —
+   not for cornea, aqueous, lens, vitreous, air or water.
+
+**CLINICAL TOPICS a refraction lecture would be expected to teach and this deck does not:**
+ • **AMBLYOPIA** — named once on p83 as a consequence of anisometropia, then never defined,
+   classified, or treated. No occlusion therapy, no critical period, no age limit.
+ • **MYOPIA CONTROL** — atropine, orthokeratology, defocus spectacles, outdoor time. Nothing.
+   The deck says myopia "often stops progression in the late 2nd decade" and offers no
+   intervention to slow it.
+ • **PATHOLOGICAL/DEGENERATIVE MYOPIA** beyond the p46 complication list — no Fuchs spot, no
+   lacquer cracks, no tilted disc, no myopic crescent/conus.
+ • **LATENT / MANIFEST / TOTAL HYPERMETROPIA**, and facultative vs absolute hypermetropia. This
+   standard classification is absent; the deck classifies hyperopia only by cause (axial,
+   curvature, index).
+ • **ACCOMMODATIVE ESOTROPIA** beyond the bare name on p55 and p58 — no AC/A ratio, no
+   refractive vs non-refractive type, no full-correction rule.
+ • **CONTACT LENSES** as a subject — p35 gives one line ("Cosmetic & a wider field of vision …
+   risk of infection") and p71 names soft toric and RGP. No material, no wear schedule, no
+   fitting, no care, and **no named complication** (no microbial keratitis, no giant papillary
+   conjunctivitis, no hypoxia).
+ • **REFRACTIVE SURGERY** as a subject — PRK, LASIK, phakic IOL, clear lens extraction, ICR and
+   keratoplasty are named as options in the treatment trees and **never described**. No mechanism,
+   no flap, no ablation, no patient-selection criterion beyond the <40 / >40 age split on p47, no
+   contraindication (thin cornea, keratoconus, unstable refraction), and **no complication of any
+   refractive procedure** — no ectasia, no dry eye, no haze, no halos, no regression.
+ • **KERATOCONUS** — named twice, as a cause of curvature myopia (p42) and of irregular
+   astigmatism (p64). Never described, staged or worked up.
+ • **APHAKIA** — named once on p53 as a cause of index hypermetropia; its correction is never
+   discussed.
+ • **PSEUDOPHAKIA and IOL POWER CALCULATION** — not mentioned at all.
+ • **ANISEIKONIA MANAGEMENT** beyond "contact lens or refractive surgery" on p85. No iseikonic
+   lens, no percentage limit of image-size disparity.
+ • **PREVALENCE, INCIDENCE AND EPIDEMIOLOGY.** The deck contains **no percentage and no
+   prevalence figure of any kind**, for any refractive error, anywhere.
+ • **GENETICS / RISK FACTORS** for myopia (family history, near work, education, ethnicity) —
+   not covered.
+ • **SCREENING** — no age, no interval, no school-vision-screening protocol.
+ • **PAEDIATRIC REFRACTION** — no emmetropisation, no normal refraction at birth, no
+   age-appropriate norms, no retinoscopy in children.
+ • **ANY EPONYM.** There is no named test, no named sign, no named law (Snell's law is used
+   implicitly on p13/p17 and never named) and no named person anywhere in the deck.
+ • **ANY CLINICAL CASE, MCQ OR SELF-TEST QUESTION.**
+
+**COMPLETE INVENTORY OF NUMBERS IN THE DECK** (so nothing is lost — these are every numeric value
+printed on all 88 pages):
+ 50° (p13, p17) · 42-44 D cornea, 18-20 D lens, ~60 D total (p23) · power = 1/focal length in
+ metres (p24) · 23.5 mm axial length (p27, figure) · 22-24.5 mm normal AL (p42, p53) ·
+ 20' or 6 M testing distance (p40, p51, figures) · 1st/2nd decade onset, late 2nd–early 3rd decade
+ arrest (p43) · <6 D simple myopia, >20 D high myopia (p45) · Phakic IOL <40 years, clear lens
+ extraction >40 years (p47) · 1st/2nd/3rd decades, 4th/5th decades, above 50 (p55, p56) ·
+ 14 D at age 10, 3 D at age 40, lost after 60 (p72) · 40 years or older (p73) · up to 4 to 5 D low
+ myopia, earlier than age 40 (p75) · more than 4 D anisometropia (p83) · acuity chart lines
+ 60/36/24/18/12 and further [illegible] lines (p38, figure).
