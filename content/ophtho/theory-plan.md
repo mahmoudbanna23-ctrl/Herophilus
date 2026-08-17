@@ -479,3 +479,23 @@ numbering — every real slide deck returns zero.
   most image-dependent decks in that module.
 - **`examiner-patterns.md` does not exist for this module and must not be manufactured** from 138
   questions. ENT's was built from 1,720.
+
+---
+
+## Measured printed length of every written chapter — moved here from `MEMORY.md` 2026-08-17
+
+`MEMORY.md` is capped at 200 lines, so the per-chapter list lives here. All eighteen were printed
+**individually** in the headless-Chrome harness on 2026-08-17, US letter at the machine default —
+the app's `@page` declares no `size:`, so every figure below is mutually comparable.
+
+| pp | chapters |
+|---|---|
+| **12** | `op-glauc` ⚠️ *the only chapter the ÷240 estimator UNDER-predicted (est. 10.8)* |
+| **11** | `op-red-mgmt` (10 → 11 when the rendered Tables 4-1/4-2 replaced a reconstruction) · `op-ret-vasc` |
+| 10 | `op-systemic` · `op-ret` |
+| 9 | `op-orbit` · `op-cornea` · `op-cornea-surg` · `op-va` · `op-trauma` · `op-insid` · `op-cat` · `op-red` |
+| 8 | `op-pupil` · `op-cat-surg` · `op-white` |
+| 7 | `op-orbit-mass` · `op-ret-dr` |
+
+**164 pages over 18 chapters, mean 9.1** — against ENT's 8.6 and paediatrics' 8.3, and inside the
+~10-page operative ceiling. Nothing has reached the 13-page hard shape since `op-orbit` was split.

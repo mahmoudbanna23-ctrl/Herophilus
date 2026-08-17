@@ -16,27 +16,27 @@ there before resuming a paused stream. Where this file and the archive disagree,
   `op-cornea`/`op-cornea-surg`, `op-cat`/`op-cat-surg`, `op-red`/`op-red-mgmt`, and `op-ret` **three ways** into
   `op-ret-dr`/`op-ret-vasc`/`op-ret` (all forecast BEFORE writing). **Project total 140.**
   ⚠️ **Splits move questions:** 12 refiled at the first two, 1 each at the fourth and fifth.
-  ✅ **Eighteen** written and **individually printed** 2026-08-17 (US letter, machine default):
-  `op-pupil` 8 · `op-orbit` 9 · `op-orbit-mass` 7 · `op-glauc` **12** · `op-cornea` 9 ·
-  `op-cornea-surg` 9 · `op-va` 9 · `op-trauma` 9 · `op-systemic` 10 · `op-insid` 9 · `op-cat` 9 ·
-  `op-cat-surg` 8 · `op-white` 8 · `op-red` 9 · `op-red-mgmt` **11** (10→11 when the rendered
-  tables replaced a reconstruction) · `op-ret-dr` 7 · `op-ret-vasc` 11 · `op-ret` 10.
-  **164 pp, mean 9.1.** Boot: **0 console errors**, **202 sections**, 0 dead ids,
-  0 wrong-chapter, **0 unanchored of 1,207**, **69/138 questions reachable**.
+  ✅ **Eighteen written and individually printed** 2026-08-17: **164 pp, mean 9.1** (ENT 8.6, peds
+  8.3); per-chapter table in `theory-plan.md`. Boot: **0 console errors**, **202 sections**, 0 dead
+  ids, 0 wrong-chapter, **0 unanchored of 1,207**, **69/138 questions reachable**.
 - **⚠️⚠️ CHECK A CHAPTER'S QUESTIONS AGAINST ITS ASSIGNED DECK BEFORE BRIEFING IT.** The plan's
   Decks column is an assignment, **not a coverage guarantee**: **none of `op-va`'s 16 questions is
   answerable from `L3,4`**, its only listed deck — they are `L1,2`'s, whose lines 438–613 (866 w)
   are now counted to `op-va` (**`op-intro`/`op-vissym` must not re-count them**). `op-intro` and
   `op-vissym` share a deck the same way and could hide the same mismatch.
-- **⚠️ Ophtho owes ~660 more pages of visual reading** (was 726; `L9` and `L20` read) before the
+- **⚠️⚠️ `L9` IS READ BUT WAS NEVER CACHED — its 33 pages are effectively UNREAD.** The
+  2026-08-16 calibration read wrote its *findings* into `theory-plan.md` and left the cache at
+  **38 words of "CamScanner"×33**. Verified on disk 2026-08-17. The transcription does not exist,
+  so `op-lac` (1 q, **4 register rows**) is still render-gated and the re-read is owed. **Cache in
+  the same pass as the read — a read that writes findings only is a read that must be paid twice.**
+- **⚠️ Ophtho owes 660 pages of visual reading — 541 after the two IN FLIGHT** (`L31,32` 31 pp + `L7,8` 88 pp, launched 2026-08-17 at a stated cost) before the
   owed-deck chapters can be budgeted — §14's formula breaks there (5.3 q/chapter; the lecture term
   measures the text layer). A blank page here is usually a TEXT slide (inverse of peds); **FIVE deck
   patterns now — the fifth is the CAPTION DECK**, which extracts fully and still understates itself
   badly (`L19.1`/`L19.2`; detail in `theory-plan.md`). ✅ `L3,4`, `L10`, `L25` banked — do not
   re-read. `op-ant` has no deck. **~50 register rows are ophtho's**; ~12 closed, 5 notices,
   **3 undeliverable** (aniridia/Sturge–Weber, sickle management, the ROP stages), the rest open.
-- ✅ **`L20` read 2026-08-17, cache 473 → 2,376 w**; ✅ **repeated-filler sweep = CLEAN NEGATIVE
-  across all ten owed PDFs, DO NOT RE-RUN.** Both written up in `theory-plan.md`.
+- ✅ **`L20` read, cache 473 → 2,376 w**; ✅ **filler sweep CLEAN NEGATIVE on all ten owed PDFs — DO NOT RE-RUN** (`theory-plan.md`).
 - **⚠️⚠️ COUNT A CHAPTER'S REGISTER ROWS AND VERIFY EVERY ROW'S *SECOND CLAUSE* BEFORE BRIEFING IT.**
   `op-ret` was named in **twelve rows from six donors** and **five were wrong** — wrong deck, wrong
   receiving section, **circular ×3**, over-specified source, and **an over-stated absence** (which
