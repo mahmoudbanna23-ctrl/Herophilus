@@ -19,7 +19,7 @@ there before resuming a paused stream. Where this file and the archive disagree,
   ✅ Fifteen written and **individually printed** 2026-08-17 (US letter, the machine default):
   `op-pupil` 8 · `op-orbit` 9 · `op-orbit-mass` 7 · `op-glauc` **12** · `op-cornea` 9 ·
   `op-cornea-surg` 9 · `op-va` 9 · `op-trauma` 9 · `op-systemic` 10 · `op-insid` 9 · `op-cat` 9 ·
-  `op-cat-surg` 8 · `op-white` 8 · `op-red` 9 · `op-red-mgmt` 10. **135 pp, mean 9.0** (ENT 8.6, peds 8.3). Boot: **0 console
+  `op-cat-surg` 8 · `op-white` 8 · `op-red` 9 · `op-red-mgmt` **11** (10 → 11 when the rendered tables replaced a reconstruction). **136 pp, mean 9.1** (ENT 8.6, peds 8.3). Boot: **0 console
   errors**, 166 sections, 0 dead `qs` ids, 0 wrong-chapter links, 64/138 questions reachable.
 - **⚠️⚠️ CHECK A CHAPTER'S QUESTIONS AGAINST ITS ASSIGNED DECK BEFORE BRIEFING IT.** The plan's
   Decks column is an assignment, **not a coverage guarantee**: **none of `op-va`'s 16 questions is
@@ -49,21 +49,16 @@ there before resuming a paused stream. Where this file and the archive disagree,
   **write it ONCE, against both** — plus two **notices** whose facts are already written, AMD in
   `ins-7` and the leukocoria five in `wht-8`, to be cross-referenced not re-derived) · a **two-job
   targeted render** closing the module's two proven extraction losses.
-- **⚠️⚠️ A TEXT LAYER CAN BE WORD-COMPLETE AND STILL BE WRONG, AND "NO ORPHAN WORDS" IS NOT A
-  VALID CHECK.** Two text-sufficient sources lost **structure**, two chapters rebuilt it from the
-  prose, and a targeted render **contradicted both on points of fact** (2026-08-17; both merged
-  chapters corrected the same day, detail in `theory-plan.md`). `L37`'s Tables 4-1/4-2 are
-  **images**: `rdm-5` had graded **photophobia in acute glaucoma "marked"** where the book grades
-  it **1 of 3, the LOWEST of the three dangerous eyes**, and gave discharge as watery where the
-  book prints `−`; it also lost the **bacterial/viral/allergic** split, six rows and the whole
-  **referral** column. ✅ Table 4-3, recorded as a genuine loss, was **recovered**. `L33,34` p.19
-  is **a stack of five overlapping cards**, only the top one visible — recovered by **draw-order
-  extraction** (`pdftotext -raw`); `wht-8` had cross-contaminated three phrases and wrongly accused
-  the deck of misspelling *preretinal* (it prints **epiretinal**). **⚠️ THE HUB'S OWN CHECK WAS
-  WHAT FAILED: "the fragments reassemble with no orphan words" proves only that every word landed
-  SOMEWHERE, never that it landed in the right sentence. Never accept a reconstruction on a
-  word-conservation argument — render the page.** **Classing a source text-sufficient is a claim
-  about its PROSE, never about its tables or its columns.**
+- **⚠️⚠️ A TEXT LAYER CAN BE WORD-COMPLETE AND STILL BE WRONG. "NO ORPHAN WORDS" IS NOT A VALID
+  CHECK — it proves every word landed SOMEWHERE, never that it landed in the right sentence.**
+  Two text-sufficient sources lost **structure**, two chapters rebuilt it from the prose, and a
+  targeted render **contradicted both on points of fact** (2026-08-17, both corrected the same day
+  — full detail, including the wrong cells, in `theory-plan.md`). **Never accept a reconstruction
+  on a word-conservation argument; render the page.** ✅ `L37`'s Table 4-3, recorded as a genuine
+  loss, was **recovered**. ✅ `L33,34` p.19 is **five overlapping cards**, only the top one visible
+  — recovered by **draw-order extraction** (`pdftotext -raw`), which is the tool for any slide whose
+  text streams together. **Classing a source text-sufficient is a claim about its PROSE, never
+  about its tables or its columns.**
 - **⚠️ NEVER `git add` A DIRECTORY WHILE A SUBAGENT IS WRITING INTO IT.** `git add
   content/ophtho/lectures/` swept up an agent's half-finished `L37` append into an unrelated
   commit (`eddd2ac`). **Stage explicit file paths**, and the existing "never `git add -A`" rule
