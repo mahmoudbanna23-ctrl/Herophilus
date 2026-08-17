@@ -383,6 +383,54 @@ repeat it."* Written from `L3,4` alone the chapter would have scored **0/16** on
 **Do not start step 3 without saying out loud how many pages it is going to cost.** 613 pages is
 real time, and the user's Ophthalmology exam is **27 September**.
 
+✅ **Step 3 opened 2026-08-17 at a stated cost of 119 pages** — `L31,32` (31) and `L7,8` (88),
+read together. Debt after them: **541 pages over 10 decks.** `L7,8` was taken first among the
+large decks because it gates `op-refract` and its **38 questions, 28 % of the module**; `L1,2`
+(136 pp, un-triageable) still gates `op-intro` + `op-vissym`.
+
+---
+
+## ⚠️ `op-acute` OWNS ALMOST NONE OF ITS OWN CASES — pre-brief scope map, 2026-08-17
+
+Established by grep across `theory.ophtho.js` **before** briefing the chapter, which is the check
+that stopped `op-ret` writing itself in a circle. `L31,32` is a **case deck**: four vignettes, four
+`Diagnosis` lines, four `Management` slides. Three of the four diagnoses are already written in
+full elsewhere:
+
+| Case | Diagnosis | Already written? |
+|---|---|---|
+| 1 | Central retinal artery occlusion | ✅ **fully owned** by `op-ret-vasc/vsc-9` (303 w, all three artery occlusions compared); cherry-red spot also in `rd-1`, `rd-9`, `trm-7` |
+| 4 | Rhegmatogenous retinal detachment | ✅ **fully owned** by `op-ret/rd-1`…`rd-10`; the curtain, floaters, photopsia and RAPD are all there |
+| 3 | Anterior ischaemic optic neuropathy | ❌ **a name only** — `sys-5` and `vsc-11` list it as a hypertension association, nothing more. **`temporal arteritis` and `ESR` return ZERO module-wide**, so the GCA presentation and workup are unwritten |
+| 2 | Papillitis | ❌ **one mention**, inside `sys-11` (ocular syphilis). No entity account anywhere |
+
+**So `op-acute`'s real payload is:** the approach itself (painful/painless, and the deck's
+vignette → examination → diagnosis → management drill) · **AION + giant cell arteritis** ·
+**papillitis** · **the management of all four**, which is exactly what the text layer withholds and
+the render must recover · and the non-red entries of `L1,2`'s ocular-emergencies grid.
+**It must NOT re-write CRAO's or RRD's signs — it points at `vsc-9` and `rd-*`.** A chapter whose
+four cases are three-quarters written elsewhere is a duplication trap, not a small chapter.
+
+### Register-row census for the fourteen chapters still unwritten — counted 2026-08-17
+
+Counted from §14.5's receivers column, so no brief has to re-derive it. **A question count does not
+predict what a chapter has been handed** — `op-ret` proved that at twelve rows against five
+questions, and `op-lac` and `op-uvea` below have one question each.
+
+| rows owed | chapters |
+|---|---|
+| **5** | `op-uvea` ⚠️ *and its deck `L13,14` extracts **zero characters over 41 pp with no cache at all** — the module's most blocked chapter* |
+| **4** | `op-lac` |
+| **3** | `op-onc`, `op-squint` |
+| **2** | `op-intro`, `op-vissym`, `op-lid`, `op-conj`, `op-sclera`, `op-acute` |
+| **1** | `op-refract`, `op-neuro`, `op-appear` |
+| 1, already closed | `op-ant` |
+
+**Every row above is open except `op-ant`'s.** Verify each row against its named source *and* the
+receiving chapter — **including the row's second clause** — before briefing. Seven fault shapes are
+now documented in §14.5: over-specified · absent from the deck · wrong deck · wrong slide ·
+circular · correct row / wrong receiver · **and right payload, wrong line**.
+
 ---
 
 ## ⚠️ `L37) Red Eye.pdf` IS NOT A LECTURE — it is a BOOK CHAPTER
