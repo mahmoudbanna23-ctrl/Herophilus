@@ -1772,5 +1772,262 @@ var T_OPHTHO = {
         "qs": []
       }
     ]
+  },
+  "op-refract": {
+    "intro": "Refraction is set by two things only: the length of the eye, and the power of its cornea and lens. Myopia and hyperopia are taught on one identical scaffold — cause, presentation, complications, treatment — and almost every question turns on which of the two went wrong.",
+    "sections": [
+      {
+        "id": "ref-1",
+        "w": "know",
+        "h": "The optics preamble — and the deck’s only formula",
+        "body": "**The preamble:** sixteen slides of photographs and stock physics diagrams carrying **22 words between them** — vocabulary, not physics.\n\n|Term|What the slide shows|\n|---|---|\n|**Scatter**|**short wavelengths** striking particles, leaving **in all directions**|\n|**Reflection**|incident ray, **normal**, reflected ray, the two angles **drawn equal** — the law is never written|\n|**Diffraction**|plane wavefronts **spreading after a narrow slit**|\n|**Refraction**|a ray **bending at an air/water boundary**, incident **50°**, refracted angle left as **θ**|\n\n**Refractive index:** **n = c / v** — c the velocity of light in vacuum, v its velocity in the medium.\n- **⚠️ No value of n is printed** — not for cornea, aqueous, lens, vitreous, air or water; **Snell’s law is used on pp.13 and 17 and never named**.\n- **Where it returns:** refractive index is one of the two things that set corneal and lens **power** (`ref-3`).\n\nSrc: L7,8 pp.2–17",
+        "qs": []
+      },
+      {
+        "id": "ref-2",
+        "w": "must",
+        "h": "Emmetropia, ametropia, and the far point",
+        "body": "**The definition arrow:** one four-box sentence, one phrase changed per error.\n\n**Emmetropia:** **parallel rays entering the eye are focused ON the retina while accommodation is at rest**.\n**Ametropia:** the same sentence, **NOT focused on the retina**.\n**Far point:** the point **conjugate with the retina, accommodation at rest** *(the phrasing is supplied; the deck prints only the footer boxes below — not in course material)*.\n\n|State|Far point, as printed|\n|---|---|\n|**Emmetropia**|**at infinity**|\n|**Ametropia**|**NOT at infinity**|\n|**Myopia**|**in front of the patient** — real, nearer than infinity|\n|**Hyperopia**|**BEHIND the eye** — virtual|\n\n- **⚠️ The hyperopic far point:** behind the globe, so **no real object focuses** on an unaccommodating hyperopic retina — which is why hyperopia hides in youth.\n- **Testing distance:** stated only inside two figures, **“Object at infinity (20′ or 6 M)”** (pp.40, 51). *Acuity notation is `va-2`.*\n\n*Deck defect: the arrow prints **“ACCOMMDATION”** on pp.18, 20, 28, 39 and 49 — five times; the body prose spells it correctly.*\n\nSrc: L7,8 pp.18–21, 28–29, 39–41, 49, 52",
+        "qs": [
+          "opqb-t2-103"
+        ]
+      },
+      {
+        "id": "ref-3",
+        "w": "must",
+        "h": "The dioptre, the eye’s power, and the two determinants",
+        "body": "**The camera analogy:** object → light rays → **lens** → **film (retina)**.\n\n### The dioptre — the unit\n- **Definition:** the **unit of lens power**.\n- **The formula:** dioptres = **1 ÷ focal length in METRES**.\n\n### The eye’s own power\n\n|Element|Power|\n|---|---|\n|**Cornea**|**42–44 D**|\n|**Lens**|**18–20 D**|\n|**Total**|**approximately 60 D**|\n\n- **⚠️ The cornea carries about two-thirds** of the eye’s power.\n\n### The two determinants — the whole chapter is these\n- **Axial length of the eyeball:** the deck’s own gloss is **“Main Factor Usually”**.\n- **Power of cornea and crystalline lens:** set by **curvature** and **refractive index**.\n- **⚠️ Consequence:** every cause below is a change in **LENGTH**, **CURVATURE** or **INDEX**.\n\n### Axial length — two unreconciled numbers\n\n|Where|Value|\n|---|---|\n|Prose, pp.42 and 53|**22–24.5 mm**, the normal range|\n|Figure, p.27|**23.5 mm**, the only single value in the deck|\n\n*Both printed; the deck reconciles neither. Biometry / A-scan is never named here — it is `cts-3`’s.*\n\nSrc: L7,8 pp.22–27, 30, 42, 53",
+        "qs": []
+      },
+      {
+        "id": "ref-4",
+        "w": "must",
+        "h": "The four errors, and the lens that corrects each",
+        "body": "|Error|Gloss as printed|\n|---|---|\n|**Myopia**|**near-sightedness**|\n|**Hyperopia**|**far-sightedness**|\n|**Astigmatism**|**formation of MORE THAN ONE FOCUS** by the optical system|\n|**Presbyopia**|**poor near vision as an ageing process**|\n\n- **⚠️ Two oddities, both printed:** **presbyopia** is counted among the errors of refraction and elsewhere called *“a normal aging process”*; **anisometropia is not on the list**, though taught on pp.83–87.\n\n### The lens tree\n\n|Lens|Sign|Effect on light|Corrects|\n|---|---|---|---|\n|**Concave — spherical**|**minus**|**DIVERGES**|**MYOPIA**|\n|**Convex — spherical**|**plus**|**CONVERGES**|**HYPEROPIA and PRESBYOPIA**|\n|**Cylindrical**|—|power in **one meridian only**|**ASTIGMATISM**|\n\n- **⚠️ Read it correctly:** concave and convex are the two branches of **SPHERICAL** lenses; **cylindrical is a separate top-level branch**.\n\n### Identifying a lens by hand\n- **Concave:** the object looks **SMALLER**, the image **MOVES WITH** the lens.\n- **Convex:** the object looks **LARGER**, the image **MOVES AGAINST** the lens.\n\nSrc: L7,8 pp.31–33",
+        "qs": [
+          "opqb-t2-75",
+          "opqb-t2-111"
+        ]
+      },
+      {
+        "id": "ref-5",
+        "w": "must",
+        "h": "The three ways a refractive error is corrected",
+        "body": "|Method|The deck’s verdict, verbatim|\n|---|---|\n|**Glasses**|**the easiest and safest method of correction**|\n|**Contact lenses**|**cosmetic, a WIDER FIELD OF VISION** — but **risk of infection**|\n|**Refractive surgery**|**CORNEAL** (change the shape of the cornea) or **LENTICULAR**|\n\n- **⚠️ That is the entire contact-lens teaching:** no material, no wear schedule, no fitting, no care, **no named complication beyond “risk of infection”**.\n- **Procedures named:** **PRK · LASIK · phakic IOL · clear lens extraction**, plus **intracorneal ring segments** and **keratoplasty** for irregular astigmatism.\n- **⚠️ Named in the trees, never described** — no mechanism, no complication, no selection criterion beyond the age split.\n\n*Refractive surgery is written in full elsewhere and is not repeated: selection and the two mandatory investigations `cor-21` · the four laser procedures compared `cor-22` · post-LASIK ectasia `cor-23` · irregular astigmatism and the rigid-lens mechanism `cor-24`. Every treatment section below names its option and points here.*\n\nSrc: L7,8 p.35 and the treatment trees pp.47, 59, 71; L15,16 via `cor-21`–`cor-24`, cited only",
+        "qs": []
+      },
+      {
+        "id": "ref-6",
+        "w": "must",
+        "h": "Measuring the refraction — objective, cycloplegic, subjective",
+        "body": "**⚠️ What the deck prints:** three photograph slides and **not one word of procedure**. Everything below the headings is **supplied and tagged** *(not in course material)*; two questions test it.\n\n### I. Objective\n\n|Method|What it is|\n|---|---|\n|**Auto-refractometer**|**the AUTOMATED method** — the patient fixates a target and the instrument reads the refraction|\n|**RETINOSCOPY**|**the MANUAL method** — a **streak retinoscope** throws light in and the examiner watches the **fundus reflex** move|\n\n- **⚠️ What retinoscopy is:** **an objective method of determining the state of refraction of the eye**. The reflex is the tool, the refraction the result — it does not visualise the retina.\n- **Reading the reflex:** **WITH** movement = hyperopia · **AGAINST** = myopia · lenses added until the reflex **fills the pupil and stops moving — neutralisation**.\n- **Working distance:** commonly **⅔ metre**, and its **1.50 D is subtracted** from the neutralising lens.\n\n### II. Cycloplegia\n- **The problem:** an active ciliary muscle **hides hyperopia and over-minuses a myope**.\n- **The fix:** a cycloplegic **paralyses the ciliary muscle**, so the **full** error is measured. **Mandatory in children and young adults**, and the only way to reveal **latent hyperopia** (`ref-13`).\n\n|Agent|Role|\n|---|---|\n|**Cyclopentolate 1 %**|the routine cycloplegic for refracting children|\n|**Atropine 1 %**|strongest and longest — **accommodative esotropia**, dense hyperopia|\n|**Tropicamide 1 %**|weak and short — dilates, **does not refract a young child**|\n\n*⚠️ The deck contains **NO DRUG NAME AT ALL** in 88 pages; the three agents are supplied and tagged.*\n\n### III. Subjective refinement\n- **The trial:** the objective result goes into a **trial frame** or **phoropter** and is refined against an acuity chart — the deck photographs both and captions neither.\n- **Techniques, supplied:** **duochrome (red–green)** for the sphere · **Jackson cross-cylinder** for cylinder power and axis · **fogging** · **binocular balance**.\n- *The pinhole is `va-4`; acuity notation and the charts are `va-2`.*\n\n*Deck defect: **pp.36 and 37 are BOTH numbered “I.”** — the second should be II. Confirmed on the render, not an extraction artefact.*\n\nSrc: L7,8 pp.36–38, three photograph slides with no procedure text; the technique, the agents and the subjective tests are supplied and tagged",
+        "qs": [
+          "opqb-t2-85",
+          "opqb-t2-97"
+        ]
+      },
+      {
+        "id": "ref-7",
+        "w": "must",
+        "h": "Myopia — the definition, and the three causes",
+        "body": "**Myopia:** parallel rays focused **IN FRONT OF the retina**, accommodation at rest. **Far point in front of the patient.**\n\n- **⚠️ Optically:** the eye’s **power is MORE than it needs** for its length. Accommodation only **adds plus**, so it **cannot help a myope**.\n\n### Causes\n\n|Type|Sub-type|Mechanism as printed|\n|---|---|---|\n|**1. AXIAL**|—|**axial length LONGER than normal (22–24.5 mm)** — the common one|\n|**2. REFRACTIVE**|**Curvature**|**increased curvature of the CORNEA (keratoconus)** or **LENS (lenticonus)**|\n|**2. REFRACTIVE**|**INDEX**|**increased refractive index of the CORNEA**; of the **LENS NUCLEUS — nuclear cataract**|\n\n- **⚠️ Index myopia:** a sclerosing nucleus raises the lens’s refractive index, the eye becomes optically stronger, and the refraction shifts **myopic with NO change in axial length or corneal curvature** — the **myopic shift**, and the temporary reading-without-glasses it buys is **“second sight”**. *Morphology and the discrimination grid are `cat-4`.*\n- *Keratoconus (`cor-12`) and lenticonus are named here and described nowhere in this deck.*\n\n*Deck defect: p.42 prints “curvature of the cornea (e.g., keratoconus) **the** lens (e.g., lenticonus)” — the word **“or” is genuinely absent** from the slide.*\n\nSrc: L7,8 pp.39–42; `cat-4`, `cor-12`, cited only",
+        "qs": [
+          "opqb-t2-74",
+          "opqb-t2-86",
+          "opqb-t2-95",
+          "opqb-t2-96"
+        ]
+      },
+      {
+        "id": "ref-8",
+        "w": "must",
+        "h": "Myopia — presentation, and the two clinical types",
+        "body": "### Natural history\n- **Onset and progression:** the **1st or 2nd decades of life**.\n- **Arrest:** usually the **late 2nd decade or early 3rd**.\n\n### Symptoms\n- **Blurred DISTANCE vision:** the presenting complaint.\n- **Near vision usually NOT affected —** **except in higher degrees of myopia**.\n- **The schoolchild’s sign:** squeezing the lids to a slit — a **self-made pinhole**, so the cause is optical *(the sign is the bank’s; the deck photographs a blurred blackboard and does not name it — not in course material)*.\n\n### The two clinical types\n\n|Type|Dioptres|Other names|\n|---|---|---|\n|**Simple myopia**|**less than 6 D**|—|\n|**High myopia**|**can reach more than 20 D**|**progressive · degenerative · malignant**|\n\n- **⚠️ Two thresholds, unreconciled:** p.45 makes **6 D** the simple/high boundary; **p.75 calls “low myopes” those up to 4 to 5 D** for the presbyopia table. Both printed; the 4–5 D line exists only there.\n- *A pinhole restoring 6/6 proves the blur is optical — `va-4`.*\n\nSrc: L7,8 pp.43–45, 75",
+        "qs": [
+          "opqb-t2-107"
+        ]
+      },
+      {
+        "id": "ref-9",
+        "w": "must",
+        "h": "Myopia — complications, and the staphyloma",
+        "body": "|Complication|Detail as printed|\n|---|---|\n|**Chorioretinal degenerations — CENTRAL**|**myopic subfoveal CNV** · **macular haemorrhage and scarring**|\n|**Chorioretinal degenerations — PERIPHERAL**|**night blindness** · **retinal tears** · **RRD**|\n|**Posterior staphyloma**|—|\n|**Complicated cataract**|—|\n|**Glaucoma**|**high association with primary open-angle glaucoma**|\n\n- **⚠️ Read the tree correctly:** only the **first** branch subdivides — the central/peripheral split belongs to **chorioretinal degenerations alone**, and staphyloma, cataract and the glaucoma association are terminal siblings. (The text layer interleaved them; the render settles it.)\n\n### Staphyloma\n**Staphyloma:** a **localised bulge of thinned, ectatic sclera lined by uveal tissue** *(not in course material)*.\n\n|Site|Type|\n|---|---|\n|**Posterior pole**|**POSTERIOR — the one of pathological myopia**|\n|Limbus to ciliary body|**intercalary**|\n|Over the ciliary body|**ciliary**|\n|At the equator|**equatorial**|\n\n*The three non-posterior types are supplied — zero hits across the module (not in course material). Scleral stretching in myopia is maximal at the posterior pole.*\n\n- *Tears, RRD and their symptoms are `rd-1`–`rd-10`; open-angle glaucoma is `glc-6`.*\n\nSrc: L7,8 p.46; the staphyloma definition and the non-posterior sites are supplied and tagged",
+        "qs": [
+          "opqb-t2-112"
+        ]
+      },
+      {
+        "id": "ref-10",
+        "w": "must",
+        "h": "Myopia — treatment, and the age split",
+        "body": "|Branch|Options as printed|\n|---|---|\n|**Conservative**|**Glasses — CONCAVE (minus)** · **contact lenses**|\n|**Surgical — CORNEAL**|**PRK** · **LASIK**|\n|**Surgical — LENTICULAR**|**Phakic IOL — UNDER 40** · **CLEAR LENS EXTRACTION — OVER 40**|\n\n- **The optics:** the deck captions its figure *“Concave (minus power) lens corrects Myopia”*.\n- **⚠️ The age split:** **phakic IOL under 40, clear lens extraction over 40** — because under 40 the crystalline lens still accommodates and is worth keeping, so the implant goes in **front** of it *(the reason is supplied — not in course material)*.\n- **⚠️ Nothing here slows myopia.** The deck offers **no myopia control** and says only that myopia “often stops progression in the late 2nd decade”. *(Low-dose atropine, orthokeratology and defocus spectacles are the current options — not in course material.)*\n- *Procedure detail is `cor-21`–`cor-23`.*\n\nSrc: L7,8 pp.47–48",
+        "qs": []
+      },
+      {
+        "id": "ref-11",
+        "w": "must",
+        "h": "Hyperopia — the definition, and the three causes",
+        "body": "**Hyperopia (hypermetropia):** parallel rays focused **BEHIND the retina**, accommodation at rest. **Far point behind the eye** — virtual.\n\n- **⚠️ Optically:** the eye’s power is **LESS than it needs** for its length — so **accommodation can hide it**, and the whole clinical behaviour follows from that.\n\n### Causes — the mirror image of myopia’s\n\n|Type|Sub-type|Mechanism as printed|\n|---|---|---|\n|**1. AXIAL**|—|**axial length SHORTER than normal (22–24.5 mm)**|\n|**2. REFRACTIVE**|**Curvature**|**decreased corneal curvature — “Corneal flatening” [sic]**|\n|**2. REFRACTIVE**|**INDEX**|**decreased refractive index of the lens**; **APHAKIA**; **posterior dislocation of the lens**|\n\n- **⚠️ Aphakia is the extreme case:** an eye with no lens has lost about a third of its power and is **+10 to +12 D hypermetropic**. *That number, iridodonesis and the three corrections are `cts-7`; pseudophakia is `cts-8`.*\n- **The symmetry:** myopia is **long, steep, dense**; hyperopia is **short, flat, thin**.\n\nSrc: L7,8 pp.49–53; `cts-7`, cited only",
+        "qs": []
+      },
+      {
+        "id": "ref-12",
+        "w": "must",
+        "h": "Accommodation — the mechanism, and what it cannot do",
+        "body": "**Accommodation:** the eye **increasing its own power so that near objects focus on the retina**.\n\n- **The deck’s statement:** *“accommodation by the CILIARY MUSCLE can correct hypermetropia in younger patients, but this ability decreases with age as the lens elasticity becomes less”*, and the lens does it **by changing its shape**.\n- **The chain:** **ciliary muscle CONTRACTS → zonules SLACKEN → the elastic lens rounds up → power RISES** *(the zonular step is supplied — not in course material)*.\n- **⚠️ What does NOT change:** the **cornea**, the **axial length**, the **depth of the anterior chamber**. It is a **lens** event and nothing else.\n- **⚠️ It only adds PLUS power** — so it compensates hyperopia, is spent on presbyopia, and does **nothing** for myopia.\n- **⚠️ It fails with age** because **the lens stops deforming**, not because the muscle weakens (`ast-7`).\n\n*The near reflex — cortically driven, and what survives an afferent defect — is `pup-3` and `pup-4`; lens and zonular anatomy is `cat-1`.*\n\nSrc: L7,8 p.54; `cat-1`, `pup-3`, `pup-4`, cited only",
+        "qs": [
+          "opqb-t2-80"
+        ]
+      },
+      {
+        "id": "ref-13",
+        "w": "must",
+        "h": "Hyperopia — latent, facultative and absolute",
+        "body": "**⚠️ None of this is in the deck.** `L7,8` classifies hyperopia by **cause** only; all five terms return **zero across the module**, and the bank tests them twice. Supplied and tagged throughout *(not in course material)*.\n\n|Component|What it is|Revealed by|\n|---|---|---|\n|**LATENT**|the part **masked by resting CILIARY TONE**|**cycloplegia, and nothing else**|\n|**FACULTATIVE**|the part the patient **CAN overcome by accommodating**|subjective refraction|\n|**ABSOLUTE**|the part accommodation **CANNOT overcome** — distance blurred without a lens|it is simply manifest|\n|**MANIFEST**|**facultative + absolute** — what a non-cycloplegic refraction finds|subjective refraction|\n|**TOTAL**|**latent + manifest** — the eye’s real error|**cycloplegic refraction**|\n\n### What age does to each\n- **TOTAL: fixed** — a property of the globe.\n- **LATENT: falls**, as ciliary tone weakens.\n- **FACULTATIVE: falls**, as less accommodation is left to overcome anything with.\n- **ABSOLUTE: RISES**, taking up what the other two give away.\n- **⚠️ In one sentence:** the same total error becomes **steadily less hideable** — which is why a hyperope who needed nothing at 20 needs glasses at 40 and stronger ones at 55, with **no change in the eye**, and why he **must be refracted under cycloplegia** while young (`ref-6`).\n\nSrc: L7,8 prints no component classification in 88 pages; the whole section is supplied and tagged",
+        "qs": [
+          "opqb-t2-87",
+          "opqb-t2-90"
+        ]
+      },
+      {
+        "id": "ref-14",
+        "w": "must",
+        "h": "Hyperopia — the presentation changes every decade",
+        "body": "|Age band|The picture|\n|---|---|\n|**Young — 1st, 2nd, 3rd decades**|**usually NO glasses for far vision** (compensated by accommodation) · **ASTHENOPIA** with prolonged near work · **uncommonly, accommodative esotropia in childhood**|\n|**Middle — 4th and 5th decades**|**blurred NEAR vision**; reading glasses **EARLIER THAN USUAL — early presbyopia**|\n|**Old — above 50**|**BOTH distance and near blurred, more for near**, from **markedly reduced amplitude of accommodation**|\n\n**Asthenopia:** **eye exhaustion with eye strain, headache and blurring of vision**, especially with **prolonged near work**.\n\n- **Mechanism:** sustained ciliary contraction holding an uncorrected error clear.\n- **The identifying pattern:** **distance acuity NORMAL** · **frontal headache after near work** · **worse in the evening**, better on waking.\n- **⚠️ What lies behind it:** **latent hyperopia** (`ref-13`) or **uncorrected astigmatism**, found only on **cycloplegic refraction** *(the attribution is supplied — not in course material)*.\n- **⚠️ Why a hyperope is presbyopic first:** he spends accommodation on **distance as well as near**. **Hyperope before 40 · emmetrope at about 40 · myope last.**\n\nSrc: L7,8 pp.55–57",
+        "qs": [
+          "opqb-t2-98",
+          "opqb-t2-104",
+          "opqb-t2-109"
+        ]
+      },
+      {
+        "id": "ref-15",
+        "w": "must",
+        "h": "Hyperopia — complications, and a treatment list with holes in it",
+        "body": "### Complications\n- **NARROW-ANGLE GLAUCOMA:** from a **shallow anterior chamber** — **“especially later in life as the lens becomes thicker”**.\n- **SQUINT, two kinds:** **apparent divergent squint** and **ACCOMMODATIVE ESOTROPIA**.\n- **⚠️ Accommodative esotropia:** an uncorrected hyperope accommodates hard, **convergence is yoked to accommodation**, the eyes turn **IN**; treatment is the **full cycloplegic hyperopic correction**, not surgery *(mechanism and treatment supplied — not in course material)*.\n- *The crowded angle, the mid-dilated pupil and the drop never to be given are `glc-11` and `glc-12`; the chamber-depth causes grid is `va-14`.*\n\n### Treatment\n\n|Branch|Options as printed|\n|---|---|\n|**Conservative**|**Glasses — CONVEX (plus)** · **contact lenses**|\n|**Surgical — CORNEAL**|**LASIK**|\n|**Surgical — LENTICULAR**|**Clear lens extraction**|\n\n- **⚠️ Fewer options than myopia:** and no reason is given. Against p.47 it loses **PRK**, loses the **phakic IOL**, and carries **no age cut-off**. Recorded exactly as printed.\n- **What is standard, supplied:** **hyperopic PRK and LASIK both exist** — the ablation **steepens the centre by removing a peripheral annulus** · **plus-power phakic IOLs are available** · the **same under-40 / over-40 logic applies**. Hyperopic laser treats a **smaller dioptric range** and **regresses more** *(not in course material)*.\n- *Procedure detail is `cor-21`–`cor-23`.*\n\nSrc: L7,8 pp.58–60; the missing hyperopic options and the esotropia mechanism are supplied and tagged",
+        "qs": []
+      },
+      {
+        "id": "ref-16",
+        "w": "must",
+        "h": "Counselling — the five beliefs, and the answers",
+        "body": "**⚠️ The deck teaches none of this** — no counselling content, no advice, no myopia control in 88 pages. Supplied and tagged throughout *(not in course material)*; the bank asks it **five times**.\n\n|The belief|The answer|\n|---|---|\n|**“Glasses weaken the eyes.”**|**They do not.** A lens changes **where the image lands**; it does not act on the eye. **Leaving a child uncorrected is the real harm** — it causes **AMBLYOPIA**, which glasses later cannot undo|\n|**“Changing glasses often weakens them.”**|**No.** A wrong prescription in an adult causes **reversible asthenopia only** — headache and eye strain. It does not damage the retina and causes no permanent loss|\n|**“Sitting close to the TV harms the eyes.”**|**It does not.** Sitting close is a **SIGN of uncorrected refractive error, not a cause** — the child moves closer because he cannot see|\n|**“Resting the eyes improves the error.”**|**No.** The error is **structural** — axial length, curvature or index — and is **defined with accommodation already at rest**. Rest relieves **asthenopia** and changes **no refraction**|\n|**“Myopia grows yearly, so he will go blind.”**|**Yearly progression through the growth years is normal** and settles in the late 2nd decade. **Simple myopia does not blind**; high myopia is the one to follow|\n\n- **⚠️ Where the reassurance stops:** **HIGH MYOPIA**, which needs lifelong retinal surveillance (`ref-9`), and **any uncorrected error in a young child**, because the amblyopic window closes.\n- **What that child needs:** **cycloplegic refraction**, a **cover test**, and a **red reflex** check — not advice about seating.\n\nSrc: L7,8 prints none of this and the whole section is supplied and tagged; the amblyopia risk is grounded in p.83, the myopic natural history in p.43, and the definition of a refractive error in pp.18–20",
+        "qs": [
+          "opqb-t1-2",
+          "opqb-t1-67",
+          "opqb-t1-68",
+          "opqb-t1-69",
+          "opqb-t1-71"
+        ]
+      }
+    ]
+  },
+  "op-refract-astig": {
+    "intro": "Three errors the sphere cannot fix: astigmatism, where there are two focal lines instead of one point; presbyopia, where the near point retreats with age; and anisometropia, where the two eyes disagree. All three end at the prescription.",
+    "sections": [
+      {
+        "id": "ast-1",
+        "w": "must",
+        "h": "Astigmatism — the definition, and the two focal lines",
+        "body": "**Astigmatism:** parallel rays **will NOT uniformly focus to a single point on the retina, but instead into TWO FOCAL LINES**.\n\n- **The name:** **a = no, stigma = point**.\n- **The cause:** a **non-spherical surface** of the **cornea (more common)** or the **lens**, giving **different refractive power at different MERIDIANS** — **different radii of curvature** instead of the single radius of a sphere.\n- **The analogy the deck draws:** a **football is spherical**; an **American football** has a **flatter direction** and a **steeper direction** — the two principal meridians.\n- **⚠️ Two meridians, two lines, never one point** — which is why **a spherical lens can never correct astigmatism**: a sphere moves both focal lines together.\n- **⚠️ Irregular astigmatism differs:** the meridians of minimum and maximum power are **not perpendicular** and power changes irregularly between them, so light goes to **multiple** foci. *Full account `cor-24`.*\n\n*Deck defect: p.61’s definition has **no closing parenthesis** — the bracket opened at “i.e., the cornea surface…” is never shut.*\n\nSrc: L7,8 pp.61–63; `cor-24`, cited only",
+        "qs": [
+          "opqb-t2-79"
+        ]
+      },
+      {
+        "id": "ast-2",
+        "w": "must",
+        "h": "Astigmatism — the causes tree",
+        "body": "|Level 1|Level 2|Level 3|\n|---|---|---|\n|**LENTICULAR astigmatism**|**very rare** — terminal, it does not subdivide|—|\n|**CORNEAL astigmatism**|**REGULAR (more common)**|**Simple · Compound · Mixed**|\n|**CORNEAL astigmatism**|**IRREGULAR (less common)**|**CORNEAL SCARS · KERATOCONUS**|\n\n- **⚠️ Read the tree correctly:** regular and irregular branch from **CORNEAL astigmatism**, not from “Causes”; lenticular is terminal. (The text layer’s column order implied otherwise; the render settles it.)\n\n### The lenticular case, and how it is caught\n- **The set-up:** **keratometry** shows a corneal cylinder — **46 D vertical against 45 D horizontal** — while **retinoscopy finds the eye EMMETROPIC**.\n- **The reading:** the cornea is astigmatic and the whole eye is not, so **a lenticular astigmatism of equal size and opposite axis is cancelling it** *(the argument is supplied — not in course material)*.\n- **⚠️ Why it matters:** remove or replace that lens at cataract surgery and **the corneal cylinder is unmasked** — which is why keratometry sits in the biometry work-up (`cts-3`).\n- *Keratometry, what it assumes and why it fails on an irregular cornea are `cor-24`; keratoconus is `cor-12`.*\n\nSrc: L7,8 p.64; `cor-24`, `cor-12`, `cts-3`, cited only",
+        "qs": [
+          "opqb-t2-77"
+        ]
+      },
+      {
+        "id": "ast-3",
+        "w": "must",
+        "h": "Regular astigmatism — three types, or five",
+        "body": "**⚠️ Two counts, both printed:** p.64’s tree names **three** regular types; pp.66–67’s figures name **five**, splitting simple and compound into myopic and hyperopic variants. The five expand the three, and the bank asks from both.\n\n### The three, defined against the MERIDIANS\n\n|Type|Meridians|\n|---|---|\n|**SIMPLE**|**one meridian EMMETROPIC**; the other **myopic or hyperopic**|\n|**COMPOUND**|**BOTH meridians the SAME sign**|\n|**MIXED**|**one MYOPIC, the other HYPEROPIC**|\n\n### The five, defined against the FOVEA\n\n|Type|Where the two focal points sit|\n|---|---|\n|**Simple myopic**|one **ON the fovea**, one **IN FRONT**|\n|**Simple hyperopic**|one **ON the fovea**, one **BEHIND**|\n|**Compound myopic**|**BOTH in front of the fovea**|\n|**Compound hyperopic**|**BOTH behind the fovea**|\n|**Mixed**|**one behind, one in front** — the fovea straddled|\n\n- **⚠️ The one-line test:** count the focal lines **off** the retina and note **which side**. **One off = simple · two off the same side = compound · two off opposite sides = MIXED.**\n- **All five assume accommodation FULLY RELAXED** — let a young patient accommodate and every line moves forward together, which is why the **cycloplegic** result is the one classified (`ref-6`).\n\nSrc: L7,8 pp.64, 66–67",
+        "qs": [
+          "opqb-t2-73",
+          "opqb-t2-105"
+        ]
+      },
+      {
+        "id": "ast-4",
+        "w": "must",
+        "h": "Meridians and axis — the notation the deck never prints",
+        "body": "**⚠️ No axis notation, and there is a reason:** p.65 sits exactly where a meridian diagram belongs — between the causes tree and the five-types figure — and it is a **broken graphic**.\n- **What p.65 actually is:** one solid green circle crossed by a vertical and an oblique line, **no title, no label, no caption**, and **the only page of 88 returning zero characters**. No degree value appears anywhere in the deck. Everything below is supplied and tagged *(not in course material)*.\n\n### Axis notation\n- **The convention:** meridians run **0° to 180°**, **anticlockwise from the patient’s right**; **180° horizontal**, **90° vertical**.\n- **What the axis means:** the meridian **along which the cylinder has NO power** — so the cylinder **acts 90° away from its axis**.\n\n### With the rule, against the rule, oblique\n\n|Pattern|Steeper meridian|Minus-cylinder axis near|Typical|\n|---|---|---|---|\n|**WITH the rule**|**VERTICAL, about 90°**|**180°**|**the young eye** — lid pressure steepens the vertical|\n|**AGAINST the rule**|**HORIZONTAL, about 180°**|**90°**|**the ageing eye** — the lifetime drift|\n|**OBLIQUE**|around **45°** or **135°**|—|often **keratoconus**|\n\n- **⚠️ The reversal the bank tests:** a **more curved VERTICAL meridian is astigmatism WITH the rule**.\n- **Also absent, on the record:** **transposition** of plus to minus cylinder, **spherical equivalent**, and **vertex distance**. No question filed here needs one.\n\nSrc: L7,8 p.65 is a broken graphic and the deck prints no degree value in 88 pages; the whole section is supplied and tagged",
+        "qs": [
+          "opqb-t2-91"
+        ]
+      },
+      {
+        "id": "ast-5",
+        "w": "must",
+        "h": "Astigmatism — clinical presentation",
+        "body": "|Degree|Picture as printed|\n|---|---|\n|**Mild**|**ASYMPTOMATIC — may pass unnoticed**|\n|**Higher**|**1. Blurred vision** · **2. NARROWING OF THE PALPEBRAL FISSURE** to overcome the defective vision · **3. Asthenopia**, especially **hyperopic and mixed types** · **4. Headaches**|\n\n- **The narrowed fissure:** a **self-made slit aperture**, cutting the blur circles as a pinhole does *(the mechanism is supplied — not in course material)*. The pinhole proper is `va-4`.\n- **What the photographs teach:** a bridge sharp beside the same bridge **directionally blurred**, and night headlights **smeared into streaks** — **astigmatic blur is directional, not uniform**.\n\n*⚠️ A divergence, recorded not resolved: the deck puts asthenopia in the **HIGHER** degrees; the bank treats **LOW** degrees as the ones that strain most, the standard reconciliation being that a small error can almost be overcome by accommodating and a large one cannot (supplied — not in course material). Both held; the deck quoted as printed.*\n\nSrc: L7,8 pp.68–70",
+        "qs": []
+      },
+      {
+        "id": "ast-6",
+        "w": "must",
+        "h": "Astigmatism — treatment, regular and irregular",
+        "body": "|Type|Conservative|Surgical|\n|---|---|---|\n|**REGULAR**|**Glasses — CYLINDRICAL lenses** · **SOFT TORIC (sphero-cylindrical) CLs**|**Corneal surgery — LASIK and PRK** · **Lenticular surgery**|\n|**IRREGULAR**|**Glasses — MILD DEGREES ONLY** · **RIGID GAS-PERMEABLE (RGP) CLs**|**Intracorneal ring (ICR) segments** · **KERATOPLASTY**|\n\n- **⚠️ Read the tree correctly:** **LASIK and PRK BOTH branch from corneal surgery**; “lenticular surgery” is **terminal**. The text layer implied PRK belonged to lenticular surgery; the render shows it does not.\n- **The principle:** **regular astigmatism has two perpendicular meridians, so a cylinder neutralises it**; **irregular astigmatism has neither perpendicularity nor a regular power change, so no spectacle lens can**.\n- **⚠️ Why a RIGID lens and not a soft toric**, and why keratometry misleads there, are `cor-24`. LASIK is **contraindicated** on a keratoconic cornea (`cor-23`); the lens tree is `ref-4`.\n\n### Radial keratotomy — absent from the deck, a distractor in the bank\n- **What it was:** a **historical incisional operation for myopia** — deep **radial cuts in the peripheral cornea** letting intraocular pressure **flatten the centre** *(not in course material)*.\n- **Why it is abandoned:** unpredictable correction, **diurnal fluctuation of vision**, a weakened globe, and a **progressive hyperopic drift** *(not in course material)*.\n- **⚠️ Why it cannot help here:** it adds further incisions to a cornea whose problem is that it is **already irregular** *(not in course material)*.\n\n*A defect held: the bank keys **glasses** as the option that does NOT correct irregular astigmatism, while p.71 offers **“Glasses (Mild degrees)”** for exactly that. A spectacle cylinder cannot neutralise a non-perpendicular, irregularly varying surface; mild irregularity is still partly helped. Keyed as the bank prints it.*\n\nSrc: L7,8 p.71; `cor-23`, `cor-24`, cited only; radial keratotomy supplied and tagged",
+        "qs": [
+          "opqb-t2-81",
+          "opqb-t2-108"
+        ]
+      },
+      {
+        "id": "ast-7",
+        "w": "must",
+        "h": "The near point, the amplitude, and what presbyopia is",
+        "body": "**The near point:** the **nearest point at which an object can be placed in front of the eye and still form a focused image on the retina**.\n\n|Refraction|Near point|\n|---|---|\n|**Myopia**|**CLOSER to the eye than normal**|\n|Emmetropia|normal|\n|**Hyperopia**|**FARTHER from the eye than normal**|\n\n### Amplitude of accommodation\n\n|Age|Amplitude|\n|---|---|\n|**10 years**|**14 dioptres**|\n|**40 years**|**3 dioptres**|\n|**Over 60**|**completely lost**|\n\n- **⚠️ Accommodation is maximal in CHILDHOOD** and falls without recovering. **No near-point distance in centimetres is given at any age.**\n\n### Presbyopia\n**Presbyopia:** **RECESSION OF THE NEAR POINT WITH AGE** — **near images can no longer be appropriately focused using accommodation**.\n\n- **The status:** a **NORMAL AGEING PROCESS**, usually **40 years of age or older**. *(The deck also lists it among the four errors of refraction — `ref-4`.)*\n- **Causes — two:** **1. hardening (reduced deformability) of the lens with age** · **2. reduced accommodative amplitude with age**.\n- **⚠️ The distinction:** a failure of **the lens to change shape** — not of the ciliary muscle, not of axial length — so **it happens to everyone** (`ref-12`).\n\nSrc: L7,8 pp.72–74",
+        "qs": [
+          "opqb-t2-72",
+          "opqb-t2-110"
+        ]
+      },
+      {
+        "id": "ast-8",
+        "w": "must",
+        "h": "Presbyopia — the complaint depends on the refraction underneath",
+        "body": "**⚠️ The deck’s densest slide:** a three-group table. The presbyopic complaint depends on what the eye was to begin with.\n\n### Emmetropes — four cells, verbatim\n- **1. Extend the hands** to make near objects clearer — **holds books farther away**.\n- **2. Difficulty in knitting and sewing.**\n- **3. Distance vision remains unaffected.**\n- **4. Increased illumination** is needed for near tasks.\n\n### Myopes\n\n|Group|What they do|\n|---|---|\n|**Low myopes — up to 4 to 5 D**|**see near objects BETTER if they REMOVE their glasses**; **take the glasses off for reading**|\n|**High myopes, glasses on**|**as emmetropes**|\n\n- **⚠️ Why the low myope escapes:** his **far point is already close** — a **−2 D** eye focuses at **50 cm** with no accommodation — so with the glasses off he reads well past 50. **A delayed complaint, not a delayed presbyopia** *(the arithmetic is supplied — not in course material)*.\n\n### Hyperopes — one cell\n- **Presbyopia EARLIER than the age of 40**, from **accommodative insufficiency** (`ref-14`).\n- **⚠️ The order:** **hyperope first · emmetrope at about 40 · myope last.**\n\n*⚠️ The 4–5 D boundary exists ONLY in this table and does not match p.45’s 6 D simple/high cut-off. Two thresholds, two purposes, neither reconciled.*\n\nSrc: L7,8 pp.75–80",
+        "qs": [
+          "opqb-t2-82",
+          "opqb-t2-89"
+        ]
+      },
+      {
+        "id": "ast-9",
+        "w": "must",
+        "h": "Presbyopia — treatment",
+        "body": "**Correction with glasses:** a **SPHERICAL PLUS LENS ADDITION to the far-vision refraction** — the add is *added to* the distance prescription, so a myope’s reading lens may still be a minus lens overall.\n\n|Form|What it is|\n|---|---|\n|**Reading glasses**|a single plus power, **for near only**|\n|**Bifocal**|**two zones** — distance above, near below, with a visible line|\n|**Progressive lenses**|a **continuous power gradient**, no line, **intermediates included**|\n\n- **⚠️ No add power is printed at any age** — no near-add table, no working-distance rule, no worked figure in 88 pages.\n- **The usual ladder, supplied:** about **+1.00 D at 45 · +1.50 D at 50 · +2.00 D at 55 · +2.50 D at 60**, for a working distance of about **33 cm**; it stops rising once accommodation is gone *(not in course material)*.\n- **⚠️ The rule that prevents it:** **an add is for NEAR, never for distance** — an unnecessary plus worn for distance forces continuous accommodation and gives asthenopic headache (`ast-10`).\n- **Options named nowhere in the deck:** **monovision** and **multifocal contact lenses**, and **multifocal IOLs** *(not in course material)*. *Pseudophakia is `cts-8`.*\n\nSrc: L7,8 p.81, the deck’s only presbyopia treatment slide; the near-add ladder and the alternatives are supplied and tagged",
+        "qs": [
+          "opqb-t2-101"
+        ]
+      },
+      {
+        "id": "ast-10",
+        "w": "must",
+        "h": "The spectacle prescription, and what a wrong one does",
+        "body": "**⚠️ The form the deck prints is EMPTY** — **no sphere, no cylinder, no axis in degrees and no PD in millimetres anywhere in 88 pages**, and **no worked refraction at all**.\n\n|Rx|Right eye|Left eye|\n|---|---|---|\n|**Far**|Sphere · Cylinder · Axis|Sphere · Cylinder · Axis|\n|**Near**|Sphere · Cylinder · Axis|Sphere · Cylinder · Axis|\n|**PD**|**PD for far**|**PD for near**|\n\n- **What each field is,** supplied *(not in course material)*: **SPHERE** — spherical power in dioptres, plus or minus · **CYLINDER** — the extra power in one meridian, for astigmatism · **AXIS** — the meridian in degrees along which the cylinder has no power (`ast-4`).\n- **PD — the pupillary distance:** so the optical centres sit in front of the pupils. The near PD is a few millimetres less than the far, because the eyes converge.\n\n### Prescribing errors\n\n|Error|Result|\n|---|---|\n|**OVER-correction with PLUS** — an emmetrope given +2 D|**acuity is already 6/6 unaided and the lenses add nothing**, but the eye must **accommodate continuously to overcome them** → **asthenopic headache**|\n|**Under-correction**|**blurred vision** at the affected distance|\n|**Any wrong prescription, ADULT**|**reversible asthenopia only** — no structural damage|\n|**Any uncorrected error, YOUNG CHILD**|**AMBLYOPIA** — not reversible once the critical period closes|\n\n- **⚠️ The give-away:** **normal acuity WITHOUT glasses and no gain WITH them.** A lens that does not improve acuity is correcting nothing.\n- *The counselling that follows is `ref-16`.*\n\nSrc: L7,8 p.82 — a blank form reproduced from the render; the field definitions and the prescribing errors are supplied and tagged",
+        "qs": [
+          "opqb-t2-88"
+        ]
+      },
+      {
+        "id": "ast-11",
+        "w": "must",
+        "h": "Anisometropia, aniseikonia and amblyopia",
+        "body": "**Anisometropia:** **a difference in the refractive status between the two eyes** — **ANY difference, of any size**. It is **the most common cause of amblyopia in children**.\n**Aniseikonia:** **unequal SIZE of the retinal image of both eyes** — the consequence, not the definition.\n\n|Difference|What happens|\n|---|---|\n|**Not high**|**correctable with glasses** — the images still fuse|\n|**Usually more than 4 D**|glasses may induce **DIPLOPIA**, because **image sizes differ (aniseikonia)** and that is **AN OBSTACLE TO FUSION**|\n\n- **⚠️ The distinction tested twice:** anisometropia is **any** difference; **4 D is where spectacle correction becomes intolerable**, not part of the definition. The diplopia is **optical**, from unequal image size — **not the crossed or uncrossed diplopia of a squint**.\n\n### Treatment\n- **Small amounts:** **corrected with glasses**.\n- **Larger amounts:** **contact lens or refractive surgery, if glasses induce diplopia**.\n- **⚠️ Why a contact lens solves it:** it sits **at the corneal plane** rather than ~12 mm in front, so the magnification difference collapses. *The measured numbers are `cts-7` — spectacles ~30 %, contact lens 7–10 %, IOL 3 %.*\n\n### Amblyopia — the four lines the bank needs\n- **What it is:** **reduced best-corrected acuity in a structurally normal eye**, because a clear image never reached the cortex during development *(not in course material)*.\n- **The critical period:** roughly the **first 7–8 years**; after it the loss is **permanent** *(not in course material)*.\n- **Why the anisometropic case is missed:** one eye is **chronically defocused while the fellow eye is clear**, so the brain suppresses it — **no squint, no white pupil, no complaint** *(not in course material)*.\n- **⚠️ The order of treatment:** **CORRECT THE REFRACTION FIRST**, and **only then**, if acuity remains poor, **occlude the better eye**. Patching an uncorrected eye treats nothing *(not in course material)*. *`va-6` has the child who objects to covering the good eye.*\n\n*Deck defects: **p.83 spells “Aniseikonia”, p.84 “Anisiekonia”** — the same term on consecutive slides, p.83 correct (and `cts-7` spells it “anisokonia” after `L17`). And **pp.85–87 are headed “Presbyopia / Treatment” while their content is ANISOMETROPIA** — p.85 turns on glasses-induced diplopia, which is p.83’s problem. Presbyopia treatment is delivered once, on p.81; the header is stale, and these slides are filed here by content.*\n\nSrc: L7,8 pp.83–87; `cts-7`, `va-6`, cited only; the amblyopia account is supplied and tagged",
+        "qs": [
+          "opqb-t2-76",
+          "opqb-t2-102",
+          "opqb-t2-106"
+        ]
+      }
+    ]
   }
 };

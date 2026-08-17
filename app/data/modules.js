@@ -31,7 +31,17 @@ const MODULES = [
     {name:'All lectures', chapters:[
       ['op-intro','Introduction, History'],['op-va','VA, Field, Lid, Lac, Orbit'],['op-ant','Anterior Segment'],
       ['op-pupil','Pupil, EOM, Fundus'],['op-lid','Lid'],['op-conj','Conjunctiva'],
-      ['op-refract','Errors of Refraction'],['op-lac','Lacrimal System'],
+      /* Split 2026-08-17, forecast BEFORE writing. The deck is 88 pages and
+         was read visually the same day; its cache holds 4,439 words against
+         the 1,540 pdftotext ever saw, which is ~18 printed pages as one
+         chapter. The seam is p61, where astigmatism begins: it is the ENTITY
+         boundary, because myopia and hyperopia share the deck's own
+         Causes -> Presentation -> Treatment scaffold. The more even p53 seam
+         (2,245/2,194) was rejected for cutting that pair in half.
+         This chapter carries 38 questions, 28 % of the module. */
+      ['op-refract','Errors of refraction — the optics, myopia and hyperopia'],
+      ['op-refract-astig','Astigmatism, presbyopia and prescribing'],
+      ['op-lac','Lacrimal System'],
       /* Split 2026-08-16: the single Orbit chapter PRINTED at 14 pages, one past
          the project's 13-page shape. The seam was chosen by the questions —
          cutting after the carotid-cavernous fistula section leaves exactly one

@@ -727,7 +727,7 @@ var Q_OPHTHO = [
    ⚠️ The contents page says "Page As 14"; the keys for Q99–Q112 are on book p.15. */
 
 {
-  id:'opqb-t2-72', bank:'gradegain', module:'ophtho', chapter:'op-refract',
+  id:'opqb-t2-72', bank:'gradegain', module:'ophtho', chapter:'op-refract-astig',
   stem:'**Recession of the near point with ageing**, making near work uncomfortable, is termed:',
   options:['Presbyopia','Asthenopia','Hyperopia','None of the above'],
   answer:0,
@@ -737,7 +737,7 @@ var Q_OPHTHO = [
 },
 
 {
-  id:'opqb-t2-73', bank:'gradegain', module:'ophtho', chapter:'op-refract',
+  id:'opqb-t2-73', bank:'gradegain', module:'ophtho', chapter:'op-refract-astig',
   stem:'On cycloplegic refraction, **one meridian is hyperopic and the other is myopic**. This is:',
   options:['Simple astigmatism','Compound astigmatism','Mixed astigmatism','None of the above'],
   answer:2,
@@ -767,7 +767,7 @@ var Q_OPHTHO = [
 },
 
 {
-  id:'opqb-t2-76', bank:'gradegain', module:'ophtho', chapter:'op-refract',
+  id:'opqb-t2-76', bank:'gradegain', module:'ophtho', chapter:'op-refract-astig',
   stem:'If the refraction of the right eye is **−2 D** and the left eye is **−9 D**, all the following statements are correct **EXCEPT**:',
   options:['The patient may complain of diplopia if he wears full-correction glasses','This diplopia is uncrossed','His left eye might give the impression of a left convergent deviation','The visual acuity of his left eye might not exceed 6/24 even with full correction'],
   answer:1,
@@ -777,7 +777,7 @@ var Q_OPHTHO = [
 },
 
 {
-  id:'opqb-t2-77', bank:'gradegain', module:'ophtho', chapter:'op-refract',
+  id:'opqb-t2-77', bank:'gradegain', module:'ophtho', chapter:'op-refract-astig',
   stem:'Keratometry reveals a **vertical corneal power of 46 D and a horizontal corneal power of 45 D**, while retinoscopy shows the patient is **emmetropic**. The most probable diagnosis is:',
   options:['Irregular astigmatism','Diabetes mellitus','Lenticular astigmatism','Pseudophakia'],
   answer:2,
@@ -797,7 +797,7 @@ var Q_OPHTHO = [
 },
 
 {
-  id:'opqb-t2-79', bank:'gradegain', module:'ophtho', chapter:'op-refract',
+  id:'opqb-t2-79', bank:'gradegain', module:'ophtho', chapter:'op-refract-astig',
   stem:'In **regular astigmatism**, light rays focus on:',
   options:['Multiple points','A focal line in front of or behind the retina','Two focal lines','A focal line perpendicular to the retina'],
   answer:2,
@@ -817,7 +817,7 @@ var Q_OPHTHO = [
 },
 
 {
-  id:'opqb-t2-81', bank:'gradegain', module:'ophtho', chapter:'op-refract',
+  id:'opqb-t2-81', bank:'gradegain', module:'ophtho', chapter:'op-refract-astig',
   stem:'**Irregular astigmatism** is **NOT** corrected by:',
   options:['Glasses','Contact lenses','Radial keratotomy','LASIK'],
   answer:0,
@@ -827,7 +827,7 @@ var Q_OPHTHO = [
 },
 
 {
-  id:'opqb-t2-82', bank:'gradegain', module:'ophtho', chapter:'op-refract',
+  id:'opqb-t2-82', bank:'gradegain', module:'ophtho', chapter:'op-refract-astig',
   stem:'A **myopic person of −2 D** has the advantage of:',
   options:['Improvement of his distance visual acuity by the age of 40','Being protected from complicated cataract','Not needing reading glasses by the age of 50','Less incidence of chronic open angle glaucoma'],
   answer:2,
@@ -887,7 +887,7 @@ var Q_OPHTHO = [
 },
 
 {
-  id:'opqb-t2-88', bank:'gradegain', module:'ophtho', chapter:'op-refract',
+  id:'opqb-t2-88', bank:'gradegain', module:'ophtho', chapter:'op-refract-astig',
   stem:'A 20-year-old male has uncorrected VA of **6/6 in both eyes**. He wears glasses of **+2 D** in both eyes, and his **best-corrected VA is 6/6** in both eyes. He complains of **headache**. The most likely explanation is:',
   options:['He is overcorrected','He is undercorrected','He does not really need glasses','He has sinusitis'],
   answer:0,
@@ -897,7 +897,7 @@ var Q_OPHTHO = [
 },
 
 {
-  id:'opqb-t2-89', bank:'gradegain', module:'ophtho', chapter:'op-refract',
+  id:'opqb-t2-89', bank:'gradegain', module:'ophtho', chapter:'op-refract-astig',
   stem:'In a patient with **−8 D of myopia**:',
   options:['There is a delayed onset of presbyopia','There may be an apparent divergent squint','There may be a manifest convergent squint','The cause is always an increased corneal curvature'],
   answer:0,
@@ -917,7 +917,7 @@ var Q_OPHTHO = [
 },
 
 {
-  id:'opqb-t2-91', bank:'gradegain', module:'ophtho', chapter:'op-refract',
+  id:'opqb-t2-91', bank:'gradegain', module:'ophtho', chapter:'op-refract-astig',
   stem:'In **astigmatism**, all of the following are true **EXCEPT**:',
   options:['Accommodative asthenopia is more in lower degrees','Corneal astigmatism is more common than lenticular','If the vertical meridian is more curved than the horizontal, astigmatism against the rule is present','Toric lenses can correct regular astigmatism'],
   answer:2,
@@ -1020,7 +1020,7 @@ var Q_OPHTHO = [
 },
 
 {
-  id:'opqb-t2-101', bank:'gradegain', module:'ophtho', chapter:'op-refract',
+  id:'opqb-t2-101', bank:'gradegain', module:'ophtho', chapter:'op-refract-astig',
   stem:'A **41-year-old emmetropic** woman reports difficulty reading small print. **Distance vision is normal.** The best correction is:',
   options:['− lenses for reading','+ lenses for reading','Toric lenses','PRK'],
   answer:1,
@@ -1030,7 +1030,7 @@ var Q_OPHTHO = [
 },
 
 {
-  id:'opqb-t2-102', bank:'gradegain', module:'ophtho', chapter:'op-refract',
+  id:'opqb-t2-102', bank:'gradegain', module:'ophtho', chapter:'op-refract-astig',
   stem:'A 7-year-old child has **OD +1.0 D, OS +6.0 D**. He complains of **diplopia when using new glasses**. The best next step is:',
   options:['Increase the plus power','Discontinue glasses and use contact lenses','Patch the dominant eye immediately','Bilateral LASIK at age 7'],
   answer:1,
@@ -1060,7 +1060,7 @@ var Q_OPHTHO = [
 },
 
 {
-  id:'opqb-t2-105', bank:'gradegain', module:'ophtho', chapter:'op-refract',
+  id:'opqb-t2-105', bank:'gradegain', module:'ophtho', chapter:'op-refract-astig',
   stem:'In **compound myopic astigmatism**, parallel rays of light falling on the cornea with **accommodation fully relaxed** would form:',
   options:['One focal point in front of the retina','Two focal lines in front of the retina','Two focal lines behind the retina','Two focal lines, one behind and the other in front of the retina'],
   answer:1,
@@ -1070,7 +1070,7 @@ var Q_OPHTHO = [
 },
 
 {
-  id:'opqb-t2-106', bank:'gradegain', module:'ophtho', chapter:'op-refract',
+  id:'opqb-t2-106', bank:'gradegain', module:'ophtho', chapter:'op-refract-astig',
   stem:'**Anisometropia** refers to:',
   options:['Any difference in refraction between the two eyes','A difference in refraction between the two eyes of more than 6 D','A difference in refraction between the two eyes that would result in diplopia','A difference in the size of the retinal images between the two eyes'],
   answer:0,
@@ -1090,7 +1090,7 @@ var Q_OPHTHO = [
 },
 
 {
-  id:'opqb-t2-108', bank:'gradegain', module:'ophtho', chapter:'op-refract',
+  id:'opqb-t2-108', bank:'gradegain', module:'ophtho', chapter:'op-refract-astig',
   stem:'On doing refraction you notice that the lenses correcting the **two principal meridians are different**. Your management can be:',
   options:['Glasses with spherical concave lens','Glasses with spherical convex lens','Rigid gas permeable contact lens','Soft contact lens'],
   answer:2,
@@ -1110,7 +1110,7 @@ var Q_OPHTHO = [
 },
 
 {
-  id:'opqb-t2-110', bank:'gradegain', module:'ophtho', chapter:'op-refract',
+  id:'opqb-t2-110', bank:'gradegain', module:'ophtho', chapter:'op-refract-astig',
   stem:'**Accommodation is maximum in:**',
   options:['Adulthood','Childhood','Middle age','Old age'],
   answer:1,
