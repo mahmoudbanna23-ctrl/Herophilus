@@ -837,7 +837,7 @@ var Q_OPHTHO = [
 },
 
 {
-  id:'opqb-t2-83', bank:'gradegain', module:'ophtho', chapter:'op-ret',
+  id:'opqb-t2-83', bank:'gradegain', module:'ophtho', chapter:'op-ret-dr',
   stem:'**Ultrasonography** is valuable in the diagnosis of all of the following **EXCEPT**:',
   options:['Posterior scleritis','Determination of IOL power in a cataractous patient','Age related macular degeneration','Diabetic vitreous hemorrhage'],
   answer:2,

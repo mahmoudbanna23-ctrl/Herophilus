@@ -62,7 +62,18 @@ const MODULES = [
          aetiology was rejected (PSC is one slide cut in two). */
       ['op-cat','Cataract — types, maturity and clinical picture'],
       ['op-cat-surg','Cataract surgery, IOLs and the aphakic eye'],
-      ['op-ret','Retina'],['op-neuro','Neuro-ophthalmology'],
+      /* Split 2026-08-17 — three ways, along the SOURCE FILES' own seams, and
+         forecast at ~29 printed pages as one chapter (the module's largest).
+         Three drivers added up: three decks, TWELVE register rows from six
+         donors, and L20 never delivering the "degenerations" half of its own
+         title. The base key stays on DETACHMENT deliberately — four of the
+         five questions are detachment questions, so only one refiles.
+         ⚠️ A FOURTH chapter was proposed and DROPPED: printed, the detachment
+         half comes to 10 pages, not the 15.2 the estimator forecast. */
+      ['op-ret-dr','Diabetic retinopathy and the macula'],
+      ['op-ret-vasc','Retinal vascular disorders'],
+      ['op-ret','Retinal detachment'],
+      ['op-neuro','Neuro-ophthalmology'],
       ['op-systemic','Systemic Diseases'],['op-onc','Oncology'],['op-trauma','Trauma'],
       ['op-appear','Problems of Appearance'],['op-squint','Squint'],
       ['op-acute','Acute Visual Loss'],['op-white','The White Eye'],

@@ -5,49 +5,58 @@ Running record, organised around *resuming*. ISO dates; unverified marked as suc
 story, count and verbatim ruling) in `progress\memory-archive.md`** — read the relevant block
 there before resuming a paused stream. Where this file and the archive disagree, this file wins.
 
-## Resume here — ✅ Peds theory DONE (51/51). **OPHTHALMOLOGY IN PROGRESS: 15 of 30 chapters** (2026-08-17). Then Neuropsychiatry (27). Banks stay PAUSED.
+## Resume here — ✅ Peds theory DONE (51/51). **OPHTHALMOLOGY IN PROGRESS: 18 of 32 chapters** (2026-08-17). Then Neuropsychiatry (27). Banks stay PAUSED.
 
 - **⚠️⚠️ `content\ophtho\theory-plan.md` IS THE MODULE'S WORKING FILE — READ IT FIRST.** It now
   carries **"What writing the first twelve chapters taught"** (splitting, measurement, headers,
   the five ways a register row goes wrong, and *a deck's title does not bound its content*), kept
   there rather than here because this file is capped at 200 lines. Do not re-derive any of it.
-- **Ophtho is 30 chapters, not 26 — FOUR splits**, each recorded in `modules.js` with its own
+- **Ophtho is 32 chapters, not 26 — FIVE splits**, each recorded in `modules.js` with its own
   reasoning: `op-orbit`/`op-orbit-mass` (split after printing 14 pp — the expensive way),
-  `op-cornea`/`op-cornea-surg`, `op-cat`/`op-cat-surg`, `op-red`/`op-red-mgmt` (all three
-  forecast BEFORE writing). **Project total 138 chapters.** ⚠️ **Splits also move questions:**
-  12 refiled at the first two, 1 (`opqb-t1-65` → `op-red-mgmt`) at the fourth.
-  ✅ Fifteen written and **individually printed** 2026-08-17 (US letter, the machine default):
+  `op-cornea`/`op-cornea-surg`, `op-cat`/`op-cat-surg`, `op-red`/`op-red-mgmt`, and `op-ret` **three ways** into
+  `op-ret-dr`/`op-ret-vasc`/`op-ret` (all forecast BEFORE writing). **Project total 140.**
+  ⚠️ **Splits move questions:** 12 refiled at the first two, 1 each at the fourth and fifth.
+  ✅ **Eighteen** written and **individually printed** 2026-08-17 (US letter, machine default):
   `op-pupil` 8 · `op-orbit` 9 · `op-orbit-mass` 7 · `op-glauc` **12** · `op-cornea` 9 ·
   `op-cornea-surg` 9 · `op-va` 9 · `op-trauma` 9 · `op-systemic` 10 · `op-insid` 9 · `op-cat` 9 ·
   `op-cat-surg` 8 · `op-white` 8 · `op-red` 9 · `op-red-mgmt` **11** (10→11 when the rendered
-  tables replaced a reconstruction). **136 pp, mean 9.1.** Boot: **0 console errors**, 166
-  sections, 0 dead `qs` ids, 0 wrong-chapter links, 64/138 reachable.
+  tables replaced a reconstruction) · `op-ret-dr` 7 · `op-ret-vasc` 11 · `op-ret` 10.
+  **164 pp, mean 9.1.** Boot: **0 console errors**, **202 sections**, 0 dead ids,
+  0 wrong-chapter, **0 unanchored of 1,207**, **69/138 questions reachable**.
 - **⚠️⚠️ CHECK A CHAPTER'S QUESTIONS AGAINST ITS ASSIGNED DECK BEFORE BRIEFING IT.** The plan's
   Decks column is an assignment, **not a coverage guarantee**: **none of `op-va`'s 16 questions is
   answerable from `L3,4`**, its only listed deck — they are `L1,2`'s, whose lines 438–613 (866 w)
   are now counted to `op-va` (**`op-intro`/`op-vissym` must not re-count them**). `op-intro` and
   `op-vissym` share a deck the same way and could hide the same mismatch.
-- **⚠️ Ophtho owes ~660 more pages of visual reading** (was 726; `L9` and `L20` are read) before the owed-deck chapters can be
-  budgeted — the §14 formula breaks there (5.3 q/chapter; the lecture term measures the text
-  layer, not the lecture). A blank page here is usually a TEXT slide (inverse of peds); four deck
-  patterns, three worth the render. ✅ `L3,4`, `L10`, `L25` banked — do not re-read. `op-ant` has
-  no deck. **~30 §14.5 register rows are ophtho's**; 7 closed, 2 notices, 1 **undeliverable**
-  (aniridia/Sturge–Weber — absent from all 27 decks), the rest open.
-- ✅ **`L20` READ 2026-08-17, cache 473 → 2,376 w** (two rasterised tables, six labelled diagrams,
-  the nine-layer retinal stack). **⚠️ FIRST DECK THAT DOES NOT DELIVER ITS OWN TITLE:** pp.17–32 are
-  identical clip-art, content stops at p.16, and **the "degenerations" half is never taught** — no
-  lattice, snail-track, paving-stone, retinoschisis or PVD anywhere. Its NOT-COVERED block records
-  it. ⚠️ Its garbled *"Choroid accuromatic macusis"* has **no plausible reading** — not a term.
+- **⚠️ Ophtho owes ~660 more pages of visual reading** (was 726; `L9` and `L20` read) before the
+  owed-deck chapters can be budgeted — §14's formula breaks there (5.3 q/chapter; the lecture term
+  measures the text layer). A blank page here is usually a TEXT slide (inverse of peds); **FIVE deck
+  patterns now — the fifth is the CAPTION DECK**, which extracts fully and still understates itself
+  badly (`L19.1`/`L19.2`; detail in `theory-plan.md`). ✅ `L3,4`, `L10`, `L25` banked — do not
+  re-read. `op-ant` has no deck. **~50 register rows are ophtho's**; ~12 closed, 5 notices,
+  **3 undeliverable** (aniridia/Sturge–Weber, sickle management, the ROP stages), the rest open.
+- ✅ **`L20` READ 2026-08-17, cache 473 → 2,376 w.** ⚠️ **FIRST DECK THAT DOES NOT DELIVER ITS OWN
+  TITLE** — pp.17–32 are identical clip-art and **the "degenerations" half is never taught**; its
+  NOT-COVERED block records that, and its garbled *"Choroid accuromatic macusis"* is **not a term**.
 - **✅ REPEATED-FILLER PAGES: CLEAN NEGATIVE ACROSS ALL TEN OWED PDFs — DO NOT RE-RUN.** Every owed
   deck rendered at 40 dpi and **hashed page by page** (hashes only, no image entering a context):
   nine are 100 % unique, only `L31,32` duplicates anything (2 pages). **`L20` was a one-off, the
   estimate stands.** It finds **byte-identical** pages only — evidence about *repeated* filler,
   never *empty* pages.
-- **In flight 2026-08-17:** `op-ret` (⚠️ **TWELVE register rows — the module's most-owed chapter**,
-  incl. **one DR row opened twice** by `op-systemic` and `op-insid` against different decks:
-  **write it ONCE, against both** — plus two **notices** whose facts are already written, AMD in
-  `ins-7` and the leukocoria five in `wht-8`, to be cross-referenced not re-derived) · a **two-job
-  targeted render** closing the module's two proven extraction losses.
+- **⚠️⚠️ `op-ret` PROVED THE REGISTER'S VALUE: TWELVE ROWS FROM SIX DONORS, AND FIVE WERE WRONG** —
+  wrong deck (`rubeos` returns **zero** in `L12`; it is `L19.2`'s) · wrong receiving section
+  (`sys-9` for `sys-8`) · **circular ×3** · **an OVER-STATED ABSENCE** (CSCR filed as absent from
+  all 27 decks; its *name* is printed — and an over-stated absence invites the receiver to skip the
+  grep) · over-specified source. Two payloads **genuinely undeliverable, reported not ticked**:
+  sickle management (no deck prints any) and the ROP stages (`L19.2` line 377 is a bare title over
+  an image). Four exact. **⚠️ COUNT A CHAPTER'S ROWS AND VERIFY EVERY SECOND CLAUSE BEFORE BRIEFING
+  IT** — twelve rows and three decks made this the module's largest chapter at a forecast **~29 pp**,
+  and its question count is **five**. Detail: `START-HERE.md` §14.5.
+- **⚠️ A FOURTH `op-ret` CHAPTER WAS PROPOSED AND DROPPED BY MEASUREMENT.** The agent split
+  detachment in two; printed as one it comes to **10 pages**, against the **15.2** the ÷240
+  estimator forecast for 3,637 words. **Test-print the join in the harness before accepting a
+  split** — the estimator has now over-predicted by 5, 2 and 2 pages in this module, and the
+  dropped chapter would also have forced four needless question refiles.
 - **⚠️⚠️ A TEXT LAYER CAN BE WORD-COMPLETE AND STILL BE WRONG. "NO ORPHAN WORDS" IS NOT A VALID
   CHECK — it proves every word landed SOMEWHERE, never that it landed in the right sentence.**
   Two text-sufficient sources lost **structure**, two chapters rebuilt it from the prose, and a

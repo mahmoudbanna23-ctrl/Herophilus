@@ -163,6 +163,19 @@ their labels and their result tables. From two sheets alone:
 | Labelled diagram deck | `L9` | ~0 | **yes — eponyms, numbers, tables** |
 | Photo atlas | `L27,28` (part) | ~0 | triage first |
 | Text sufficient | `L37`, `L15,16` | full | no render needed |
+| **⚠️ THE CAPTION DECK — added 2026-08-17** | **`L19.1`, `L19.2`** | **full** | **no render, but DO NOT TRUST TERM 1** |
+
+**⚠️ THE FIFTH PATTERN, found writing `op-ret`, and it is the one that fools the numbers.**
+`L19.1` and `L19.2` extract **completely** — and what extracts is a **caption set**, not prose:
+photographs with two-to-five-word legends. Words per non-blank line measure **4.18** and **4.06**,
+against the ENT prose benchmark of 5.4 and the ~2.0 that trips §14.1's diagram-deck correction — so
+**neither triggers the correction, and both badly understate their own teaching.**
+*"Microaneurysms usually temporal to fovea"* is five extracted words carrying a sign, its location
+and a diagnostic criterion. **A caption deck needs no render and still needs the question term, or
+the entity floor, to set its budget.** ⚠️ And two slides inside these "text-sufficient" decks are
+image-only: `L19.2` line 325 *"Grading of arteriolosclerosis"* and line 377 *"Staging of active
+retinopathy of prematurity"* are **bare titles over rasters** — the ROP stages are simply not in
+the text layer, though the zones, clock hours and outcome figures around them are.
 
 **Three of the four are worth the render.** That is the opposite of the paediatrics finding, where
 most blank pages were uncaptioned radiographs and triage discarded ~90 % of them.
