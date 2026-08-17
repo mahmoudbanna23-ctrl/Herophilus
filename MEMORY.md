@@ -11,8 +11,19 @@ there before resuming a paused stream. Where this file and the archive disagree,
   **before** writing (now the preferred order). ✅ Written and page-measured 2026-08-17, all on
   US letter, the machine default: `op-pupil` **8 pp** · `op-orbit` **9** · `op-orbit-mass` **7** ·
   `op-glauc` **12** · `op-cornea` **9** · `op-cornea-surg` **9** · `op-va` **9** · `op-trauma`
-  **9**. 72 pp, mean 9.0 (ENT 8.6, peds 8.3). Boot verified: **0 console errors**, 8 chapters,
-  95 sections, 0 dead `qs` ids, 0 wrong-chapter links, 62 of 138 questions reachable.
+  **9** · `op-systemic` **10**. 82 pp over 9 chapters, mean 9.1 (ENT 8.6, peds 8.3). Boot
+  verified: **0 console errors**, 0 dead `qs` ids, 0 wrong-chapter links, 62/138 reachable.
+- **⚠️ A FIFTH WAY A REGISTER ROW CAN BE WRONG — IT IS CIRCULAR.** `op-orbit` deferred the
+  thyrotoxic picture and the IgG/TSH mechanism to `op-systemic` while **`orb-6` already carried
+  slide 15 whole**, and still pointed here for it. Resolved as a declared overlap (`orb-6` keeps
+  its copy — 24 questions sit there; `sys-7` writes the mechanism so the pointer lands). The four
+  earlier shapes: over-specified · absent from the deck · wrong deck · **wrong slide**. **Verify
+  the row's SECOND clause too — "chapter X carries only Y" is itself a claim.**
+- **⚠️ TWO BODY-WORD DEFINITIONS ARE NOW IN CIRCULATION and they differ by ~12 w per section**
+  (`Src:` lines in or out — 157 words on `op-systemic` alone). **CANONICAL = `W(s.body)` over
+  every section, `Src:` INCLUDED** — that is `vth.js` and every ENT/peds figure. Agents report
+  their number *and their definition*; the hub re-counts canonically. A disagreement of roughly
+  12 × sections is a definition gap, not a stale header.
   **⚠️ `op-glauc` estimated 10.8 and printed 12 — the estimator missed LOW**, the direction that
   matters. **⚠️ `op-va` estimated 10.8 and printed 9 — it missed HIGH by the same margin.** Both
   in one module: ±3 per chapter is real in both directions. **Print the chapter.**
