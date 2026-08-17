@@ -253,6 +253,19 @@ neither glaucoma deck prints them). The corollary is the standing rule, which ha
 times: **read the slide — and grep the misspelling — before declaring a gap.** `L25` prints
 *"Vossious"*, so `Vossius` returns zero; `L35,36` prints *"Amsilar"*.
 
+**⚠️ ONE PASSAGE IN THE MODULE RESTS ON A RECONSTRUCTION, AND IT IS RECORDED HERE RATHER THAN
+HIDDEN.** `L33,34) The White Eye` lines 287–329 are a multi-column slide whose extraction
+**interleaves five figure captions into one unreadable block** — fragments of ROP, Coats, PFV,
+parasitic granuloma and retinal dysplasia shuffled together mid-word. `op-white` reconstructed it
+into five sentences and flagged it; the hub then read the raw block directly and confirmed the
+fragments reassemble **with no orphan words left over**, each into the standard definition of its
+entity. `wht-8` says in the body that it is a reading of a garbled extraction, not a supplied fact.
+**It is sound, and it is the one place a cheap render of a text-sufficient deck would still add
+certainty** — worth doing at the reconciliation pass, not before. The same slide also proves a
+smaller point: **the extracted clinical-picture chart on that deck has misaligned columns**, dropping
+the three corneal transparency requirements under the wrong sign headings (lines 71–85 prove they
+are the cornea's). **A text layer can be complete and still be wrong about STRUCTURE.**
+
 **⚠️ The dead-agent rule held twice more.** Two agents died on the shared session limit at the same
 step — the §14.3a layout pass — and **both files were complete on disk** (fifth and sixth
 recovery). Validate before rewriting, always. The hub finished the layout pass they died in;
