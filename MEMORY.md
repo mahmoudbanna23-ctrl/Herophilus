@@ -38,12 +38,11 @@ there before resuming a paused stream. Where this file and the archive disagree,
   and **the "degenerations" half is never taught** (no lattice, snail-track, paving-stone,
   retinoschisis or PVD anywhere in the file). Its NOT-COVERED block records that. ⚠️ Its garbled
   label *"Choroid accuromatic macusis"* **has no plausible reading — never treat it as a term.**
-- **✅ REPEATED-FILLER PAGES: CLEAN NEGATIVE ACROSS ALL TEN OWED PDFs — DO NOT RE-RUN.** `L20`'s 16
-  wasted pages raised the hope that the debt was overstated, so every owed deck was rendered at
-  40 dpi and **hashed page by page** (hashes only — no image entered a context). Nine are 100 %
-  unique; only `L31,32` duplicates anything (2 pages, one run of 3). **`L20` was a one-off. The
-  estimate stands.** Limit of the instrument, stated: it finds **byte-identical** pages, so it is
-  evidence about *repeated* filler, never about *empty* pages.
+- **✅ REPEATED-FILLER PAGES: CLEAN NEGATIVE ACROSS ALL TEN OWED PDFs — DO NOT RE-RUN.** Every owed
+  deck rendered at 40 dpi and **hashed page by page** (hashes only, no image entering a context):
+  nine are 100 % unique, only `L31,32` duplicates anything (2 pages). **`L20` was a one-off, the
+  estimate stands.** It finds **byte-identical** pages only — evidence about *repeated* filler,
+  never *empty* pages.
 - **In flight 2026-08-17:** `op-ret` (⚠️ **TWELVE register rows — the module's most-owed chapter**,
   incl. **one DR row opened twice** by `op-systemic` and `op-insid` against different decks:
   **write it ONCE, against both** — plus two **notices** whose facts are already written, AMD in
