@@ -35,28 +35,18 @@ there before resuming a paused stream. Where this file and the archive disagree,
   badly (`L19.1`/`L19.2`; detail in `theory-plan.md`). ✅ `L3,4`, `L10`, `L25` banked — do not
   re-read. `op-ant` has no deck. **~50 register rows are ophtho's**; ~12 closed, 5 notices,
   **3 undeliverable** (aniridia/Sturge–Weber, sickle management, the ROP stages), the rest open.
-- ✅ **`L20` READ 2026-08-17, cache 473 → 2,376 w.** ⚠️ **FIRST DECK THAT DOES NOT DELIVER ITS OWN
-  TITLE** — pp.17–32 are identical clip-art and **the "degenerations" half is never taught**; its
-  NOT-COVERED block records that, and its garbled *"Choroid accuromatic macusis"* is **not a term**.
-- **✅ REPEATED-FILLER PAGES: CLEAN NEGATIVE ACROSS ALL TEN OWED PDFs — DO NOT RE-RUN.** Every owed
-  deck rendered at 40 dpi and **hashed page by page** (hashes only, no image entering a context):
-  nine are 100 % unique, only `L31,32` duplicates anything (2 pages). **`L20` was a one-off, the
-  estimate stands.** It finds **byte-identical** pages only — evidence about *repeated* filler,
-  never *empty* pages.
-- **⚠️⚠️ `op-ret` PROVED THE REGISTER'S VALUE: TWELVE ROWS FROM SIX DONORS, AND FIVE WERE WRONG** —
-  wrong deck (`rubeos` returns **zero** in `L12`; it is `L19.2`'s) · wrong receiving section
-  (`sys-9` for `sys-8`) · **circular ×3** · **an OVER-STATED ABSENCE** (CSCR filed as absent from
-  all 27 decks; its *name* is printed — and an over-stated absence invites the receiver to skip the
-  grep) · over-specified source. Two payloads **genuinely undeliverable, reported not ticked**:
-  sickle management (no deck prints any) and the ROP stages (`L19.2` line 377 is a bare title over
-  an image). Four exact. **⚠️ COUNT A CHAPTER'S ROWS AND VERIFY EVERY SECOND CLAUSE BEFORE BRIEFING
-  IT** — twelve rows and three decks made this the module's largest chapter at a forecast **~29 pp**,
-  and its question count is **five**. Detail: `START-HERE.md` §14.5.
-- **⚠️ A FOURTH `op-ret` CHAPTER WAS PROPOSED AND DROPPED BY MEASUREMENT.** The agent split
-  detachment in two; printed as one it comes to **10 pages**, against the **15.2** the ÷240
-  estimator forecast for 3,637 words. **Test-print the join in the harness before accepting a
-  split** — the estimator has now over-predicted by 5, 2 and 2 pages in this module, and the
-  dropped chapter would also have forced four needless question refiles.
+- ✅ **`L20` read 2026-08-17, cache 473 → 2,376 w**; ✅ **repeated-filler sweep = CLEAN NEGATIVE
+  across all ten owed PDFs, DO NOT RE-RUN.** Both written up in `theory-plan.md`.
+- **⚠️⚠️ COUNT A CHAPTER'S REGISTER ROWS AND VERIFY EVERY ROW'S *SECOND CLAUSE* BEFORE BRIEFING IT.**
+  `op-ret` was named in **twelve rows from six donors** and **five were wrong** — wrong deck, wrong
+  receiving section, **circular ×3**, over-specified source, and **an over-stated absence** (which
+  matters, because it invites the receiver to skip the grep). Twelve rows and three decks made it
+  the module's largest chapter at a forecast **~29 pp against a question count of five**. Row-by-row
+  evidence: `START-HERE.md` §14.5.
+- **⚠️ TEST-PRINT THE JOIN BEFORE ACCEPTING A SPLIT.** A fourth `op-ret` chapter was proposed and
+  **dropped by measurement**: printed as one, detachment is **10 pp** against the estimator's
+  **15.2**. The ÷240 estimator has now over-predicted by **5, 2 and 2 pages** in this module, and
+  the extra chapter would have forced four needless question refiles.
 - **⚠️⚠️ A TEXT LAYER CAN BE WORD-COMPLETE AND STILL BE WRONG. "NO ORPHAN WORDS" IS NOT A VALID
   CHECK — it proves every word landed SOMEWHERE, never that it landed in the right sentence.**
   Two text-sufficient sources lost **structure**, two chapters rebuilt it from the prose, and a
