@@ -691,3 +691,30 @@ source.** Do not re-plan the reading order until `book-map.md` exists — but ex
 **The deck is still the authority on what was TAUGHT and what is EXAMINABLE** — the chapter list in
 `modules.js` comes from the lecture series, and a question is answered from the course before the
 book. What changes is where the *content* comes from when a deck is blind.
+
+---
+
+## ⚠️ USER RULING, 2026-08-18 — DO NOT ADD CHAPTERS FOR THE THREE DECKLESS BOOK CHAPTERS
+
+Asked and answered: *"Don't add them."* **Settled. Do not re-propose it.**
+
+The three are **12 Vitreous (3 %)**, **16 Paediatric Ophthalmology (4.5 %)** and **20 Drugs and the
+Eye (3 %)** — the only book chapters with no lecture deck behind them. The case for adding them was
+put once, with the measured holes (`asteroid hyalosis`, `synchysis scintillans`, `ophthalmia
+neonatorum`, `timolol`, `latanoprost` all return zero module-wide) and the exam weight. The answer
+was no.
+
+**Why the ruling is coherent, so nobody re-litigates it:** the app's chapter list is the **lecture
+series**, and the lecture series is what the examiners taught. The book is the reference for
+*content*, not the authority on *scope*. A chapter the course never gave is not on the user's
+revision plan, and inventing one would put unexamined material in front of them at the cost of the
+27 September deadline.
+
+**What this settles:** ophthalmology stays at **33 chapters**, project total **141**. Twelve remain,
+and the book reading for them is **127 pages**, not 159.
+
+**What it does NOT mean:** if a book chapter being read for a legitimate app chapter happens to
+carry one of these facts where it naturally belongs — a vitreous sign inside the retina chapter, a
+drug inside glaucoma — it is written there, cited, as it always would have been. The ruling forbids
+**new chapters**, not facts that fall inside existing ones. Do not go hunting to smuggle the
+material in either; that would be reversing the decision by other means.
