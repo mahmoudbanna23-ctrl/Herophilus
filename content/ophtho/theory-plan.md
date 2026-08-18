@@ -490,15 +490,29 @@ the app's `@page` declares no `size:`, so every figure below is mutually compara
 
 | pp | chapters |
 |---|---|
-| **12** | `op-glauc` ⚠️ *the only chapter the ÷240 estimator UNDER-predicted (est. 10.8)* |
-| **11** | `op-red-mgmt` (10 → 11 when the rendered Tables 4-1/4-2 replaced a reconstruction) · `op-ret-vasc` |
-| 10 | `op-systemic` · `op-ret` |
-| 9 | `op-orbit` · `op-cornea` · `op-cornea-surg` · `op-va` · `op-trauma` · `op-insid` · `op-cat` · `op-red` |
-| 8 | `op-pupil` · `op-cat-surg` · `op-white` |
-| 7 | `op-orbit-mass` · `op-ret-dr` |
+| **12** | `op-glauc` ⚠️ *the only chapter the ÷240 estimator UNDER-predicted (est. 10.8)* · `op-conj` |
+| **11** | `op-red-mgmt` (10 → 11 when the rendered Tables 4-1/4-2 replaced a reconstruction) · `op-ret-vasc` · `op-neuro-optic` · `op-squint` · `op-lid` · `op-lac` |
+| 10 | `op-systemic` · `op-ret` · `op-refract` · `op-uvea` |
+| 9 | `op-orbit` · `op-cornea` · `op-cornea-surg` · `op-va` · `op-trauma` · `op-insid` · `op-cat` · `op-red` · `op-acute` |
+| 8 | `op-pupil` · `op-cat-surg` · `op-white` · `op-refract-astig` · `op-neuro-motil` |
+| 7 | `op-orbit-mass` · `op-ret-dr` · `op-sclera` · `op-neuro` |
 
-**164 pages over 18 chapters, mean 9.1** — against ENT's 8.6 and paediatrics' 8.3, and inside the
-~10-page operative ceiling. Nothing has reached the 13-page hard shape since `op-orbit` was split.
+**279 pages over 30 chapters, mean 9.3** — against ENT's 8.6 and paediatrics' 8.3, and just outside
+the ~10-page operative ceiling. Nothing has reached the 13-page hard shape since `op-orbit` was
+split.
+
+**⚠️ THE ESTIMATOR'S WORST TWO MISSES IN THE MODULE ARE THE BOOK-SOURCED CHAPTERS, AND BOTH LANDED
+ON 2026-08-18.** `op-lid` was forecast at **16.1 pp** by ÷240 and printed **11**; `op-lac` at
+**15.6** and printed **11** — over-predictions of **5.1 and 4.6 pages**, against the module's
+previous worst of 5. The running list of over-predictions is now **5 · 5.1 · 4.6 · 2 · 2 · 2.3 ·
+2.1 · 1.5 · 3**, with exactly one under-prediction (`op-glauc`).
+
+**The operational consequence, and it changed a decision today.** The agent that wrote both
+chapters had `op-lac` at 3,735 words and was on its last line — *"Now the `op-lac` compression"* —
+when it died on the session limit. **Printing the chapter showed there was nothing to compress.**
+Had the run survived, a chapter that measures 11 pages would have been cut to satisfy a forecast
+that was wrong by nearly five. **Print before you compress; the estimator is a planning tool and
+has never once been allowed to clear a chapter.**
 
 ---
 
