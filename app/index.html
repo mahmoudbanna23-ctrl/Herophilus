@@ -1037,6 +1037,25 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
   padding:var(--bk-pad-t,30px) var(--bk-pad-x,35px) var(--bk-pad-b,17px);
   overflow:hidden;
 }
+/* ⚠️ THE CHAPTER OPENS WITH ITS OWN TITLE, AND IT LIVES INSIDE THE FLOW (user,
+   2026-08-19: "with the lecture title at first like we agreed before" — the
+   agreement is 391c440, 2026-08-13: "the opening ... lives INSIDE the flow as
+   the first page", so it is turned to rather than scrolled past). Hiding
+   .doc-head for the screen removed the title that was printed twice and took
+   the opening with it; this puts the opening back and leaves the duplication
+   gone.
+   ⚠️ IT IS A HEAD, NOT A TITLE PAGE. The notes carry straight on underneath it
+   on the same sheet — a whole page spent on a title is exactly the "one point
+   in each page" the user asked not to have. break-after:avoid holds the first
+   block of the chapter with it so the opening cannot end up alone.
+   Screen only: on paper .doc-head is already a full-page cover, and printing
+   both would open the chapter with its title twice. */
+.bk-title{margin:0 0 15px;padding-bottom:11px;border-bottom:2px solid var(--line-2)}
+.bk-title .eyebrow{margin-bottom:8px}
+.bk-title h1{margin:0;font-size:22px;line-height:1.16;letter-spacing:-.012em;color:var(--tx)}
+.bk-title .doc-meta{margin-top:5px;font-size:11px}
+.bk-on .bk-title{break-after:avoid;page-break-after:avoid}
+
 /* The folio, at the foot of the page where a book puts it. */
 .bk-foot{
   padding-top:9px;text-align:center;
@@ -1087,7 +1106,31 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
    is clipped, and clipped means the learner silently loses content. */
 .bk-on .fbox,.bk-on .qfig,.bk-on .th-h{break-inside:avoid;page-break-inside:avoid}
 .bk-on .th-keep{break-inside:avoid;page-break-inside:avoid}
-.bk-on .th-h{break-after:avoid;page-break-after:avoid}
+/* ⚠️⚠️ overflow:hidden MAKES A TABLE MONOLITHIC, AND A MONOLITHIC TABLE IS
+   CLIPPED RATHER THAN BROKEN. The base .th-table rule sets it to clip the corner
+   cells against the border-radius; the cost was that a table taller than the
+   reader's page could not fragment, so its last rows were never drawn and
+   nothing on screen said so. MEASURED in op-lid: 782px and 741px tables in a
+   613px page, getClientRects().length === 1, and "7. TRAUMATIC" and "⚠️ The rule
+   — IT MUST BE NEVER SQUEEZED" both invisible. The corner cells carry the radius
+   themselves instead, which costs nothing and clips nothing.
+   ⚠️ SCREEN ONLY. The printed PDF was checked with pdftotext and holds both rows,
+   so paper fragments these tables as it stands and the base rule is left alone.
+   ⚠️ THE READER REPEATS A BROKEN TABLE'S COLUMN LABELS, exactly as the print
+   block has done since the tables were tightened, so a table that breaks across
+   a page turn keeps its headings. Rows still never split. */
+.bk-on .th-table{overflow:visible}
+.bk-on .th-table thead th:first-child{border-top-left-radius:9px}
+.bk-on .th-table thead th:last-child{border-top-right-radius:9px}
+.bk-on .th-table tbody tr:last-child td:first-child{border-bottom-left-radius:9px}
+.bk-on .th-table tbody tr:last-child td:last-child{border-bottom-right-radius:9px}
+.bk-on .th-table thead{display:table-header-group}
+.bk-on .th-table tr{break-inside:avoid;page-break-inside:avoid}
+/* A heading with nothing under it is the other half of the same fault — the
+   section head and the markdown sub-heads both keep the block that follows. */
+.bk-on .th-h,.bk-on .th-body .th-sub{break-after:avoid;page-break-after:avoid}
+/* One line of a paragraph alone at the top or foot of a page reads as a slip. */
+.bk-on .th-body p{orphans:2;widows:2}
 .bk-on .th-sec{margin-bottom:26px}
 
 /* Turning furniture */
@@ -1447,7 +1490,7 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
   .bk-on .bk-flow{
     columns:auto!important;column-gap:normal!important;
     height:auto!important;transform:none!important;transition:none!important}
-  .bk-bar,.bk-prog,.bk-run,.bk-tap,.bk-top,.bk-foot,
+  .bk-bar,.bk-prog,.bk-run,.bk-tap,.bk-top,.bk-foot,.bk-title,
   .bk-stage>.bk-btn{display:none!important}
   /* The cover is .doc-head, which the screen hides while the reader is on. */
   .bk-on .doc-head{display:block!important}
@@ -3242,6 +3285,12 @@ function vTheory(p){
           <div class="bk-tap r" onclick="bkTurn(1)" title="Next page"></div>
           <div class="bk-flow" id="bkFlow">`;
 
+  h+=`<div class="bk-title">
+    <div class="eyebrow" style="background:${m.hex}">${ico(m.icon,13)} ${m.name}</div>
+    <h1>${esc(chapterName(view.ch))}</h1>
+    <div class="doc-meta">${secs.length} sections \u00b7 ${secs.filter(s=>s.w==='must').length} must-know \u00b7 ${allQs.length} linked questions</div>
+  </div>`;
+
   if(t.intro)h+=`<div class="th-intro bk-first">${mdBlock(t.intro)}</div>`;
 
   secs.forEach((s,i)=>{
@@ -3369,12 +3418,29 @@ function bkMeasure(){
      split; one that is taller than the page must be allowed to break, because
      break-inside:avoid on an over-tall block clips it — and a clipped table is
      content the learner never sees, with nothing on screen to say so.
-     Measured with the class off, so a previous pass cannot bias the reading. */
-  [].slice.call(flow.querySelectorAll('.th-table,.flow,.th-body blockquote,.th-body ul'))
-    .forEach(el=>{
-      el.classList.remove('th-keep');
-      if(el.getBoundingClientRect().height<=h-24)el.classList.add('th-keep');
-    });
+     Measured with the class off, so a previous pass cannot bias the reading.
+     ⚠️⚠️ A LIST IS NOT A TABLE, AND TREATING THEM ALIKE IS WHAT EMPTIED THE
+     BOTTOM OF PAGES. A table broken across a page turn loses its column labels,
+     so it is worth a gap; a list broken across a turn loses nothing at all, and
+     keeping a twelve-item list whole strands the heading above it at the foot of
+     the page with a third of the sheet blank under it — measured on op-glauc
+     page 1, 140px of nothing. Lists and quotes are now held together only while
+     they are SHORT enough that doing so cannot cost much: 45 % of the page. Past
+     that they break, and the page fills.
+     ⚠️ The two limits are different numbers on purpose. Do not collapse them. */
+  const keepIf=(sel,limit)=>[].slice.call(flow.querySelectorAll(sel)).forEach(el=>{
+    el.classList.remove('th-keep');
+    if(el.getBoundingClientRect().height<=limit)el.classList.add('th-keep');
+  });
+  /* ⚠️ "IT FITS" IS THE WRONG TEST FOR A BIG BLOCK. A table 90 % of the page
+     tall fits, so it was kept whole, so it jumped — and left 90 % of a sheet
+     blank with only a heading on it. MEASURED before this line existed: op-lid
+     and op-ret each carried a page filled to 3 %. What a table loses by breaking
+     is its column labels, and .th-table thead is a table-header-group in the
+     reader now, so the continuation column repeats them and it loses nothing.
+     Past 60 % of the page a table or a flowchart therefore breaks. */
+  keepIf('.th-table,.flow',h*0.6);
+  keepIf('.th-body blockquote,.th-body ul',h*0.45);
   /* ⚠️ WHERE DOES THE CONTENT ACTUALLY STOP? Two obvious answers are both
      wrong and both give a BLANK FINAL PAGE, which only a screenshot reveals:
        - scrollWidth: the arithmetic is exact (N columns span N*w + (N-1)*gap)
