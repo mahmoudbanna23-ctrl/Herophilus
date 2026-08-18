@@ -5,39 +5,35 @@ Running record, organised around *resuming*. ISO dates; unverified marked as suc
 story, count and verbatim ruling) in `progress\memory-archive.md`** — read the relevant block
 there before resuming a paused stream. Where this file and the archive disagree, this file wins.
 
-## Resume here — ✅ Peds theory DONE (51/51). **OPHTHALMOLOGY: 30 of 35 chapters** (2026-08-18). Left: `op-intro`, `op-vissym`, `op-ant` (writing), `op-onc`, `op-appear`. Then Neuropsychiatry (27). Banks stay PAUSED.
+## Resume here — ✅ Peds theory DONE (51/51). ✅ **OPHTHALMOLOGY THEORY DONE (36/36)** 2026-08-18. **NEXT: Neuropsychiatry theory, 27 chapters — the last module.** Banks stay PAUSED.
 
 - **⚠️⚠️ `content\ophtho\theory-plan.md` IS THE MODULE'S WORKING FILE — READ IT FIRST**, together
   with `content\ophtho\book-map.md`. The plan carries the two 2026-08-18 user rulings, "What
   writing the first twelve chapters taught", and every measurement kept out of this 200-line file.
   Do not re-derive any of it.
-- **Ophtho is 35 chapters, not 26 — SEVEN splits**, each recorded in `modules.js` with its own
-  reasoning: `op-orbit`/`op-orbit-mass` (split after printing 14 pp — the expensive way),
-  `op-cornea`/`op-cornea-surg`, `op-cat`/`op-cat-surg`, `op-red`/`op-red-mgmt`, `op-ret` **three ways**
-  into `op-ret-dr`/`op-ret-vasc`/`op-ret`, `op-refract`/`op-refract-astig`, and `op-neuro` **three
-  ways** into `op-neuro`/`op-neuro-motil`/`op-neuro-optic` on the BOOK's own Roman-numbered parts
-  (all but the first forecast BEFORE writing). **Project total 143.**
-  ⚠️ **Splits move questions:** 12 refiled at the first two, 1 each at the fourth and fifth, **16 at
-  the sixth** — always driven by the theory `qs` links, never a keyword tie-break.
-  ✅ **Thirty written and individually printed**: **279 pp, mean 9.3** (ENT 8.6, peds 8.3);
-  per-chapter table in `theory-plan.md`. Checks: **337 sections**, 0 dead `qs` ids, 0 wrong-chapter,
-  0 dead section refs, **0 unanchored leads**, 0 bold-led paragraphs over the 55-w cap,
-  **122/138 questions reachable** (the 16 unreached are `op-intro`'s 13 and `op-vissym`'s 3).
+- ✅ **Ophtho finished at 36 chapters, not 26 — EIGHT splits**, each recorded in `modules.js` with its
+  own reasoning: `op-orbit`/`op-orbit-mass` · `op-cornea`/`op-cornea-surg` · `op-cat`/`op-cat-surg` ·
+  `op-red`/`op-red-mgmt` · `op-ret` **three ways** · `op-refract`/`op-refract-astig` · `op-neuro`
+  **three ways** · `op-intro`/`op-intro-exam`. **Only the first and last were split AFTER printing
+  14 pp — the expensive way; the rest were forecast before writing. Project total 144.**
+  ⚠️ **Splits move questions** — 12, 1, 1, 16, 2 refiled — **always driven by the theory `qs` links,
+  never a keyword tie-break.**
+  ✅ **36 written and individually printed: 331 pp, mean 9.2** (ENT 8.6, peds 8.3); per-chapter
+  table in `theory-plan.md`. **390 sections, 95,519 w**, 0 dead `qs` ids, 0 wrong-chapter, 0 dead
+  section refs, **0 unanchored leads**, 0 over-cap paragraphs, **138/138 questions reachable.**
 - **⚠️⚠️ CHECK A CHAPTER'S QUESTIONS AGAINST ITS SOURCE BEFORE BRIEFING IT.** The plan's Decks
   column is an assignment, **not a coverage guarantee**: **none of `op-va`'s 16 questions is
   answerable from `L3,4`**, its only listed deck — they are `L1,2`'s, lines 438–613 (866 w), now
   counted to `op-va` (**`op-intro`/`op-vissym` must not re-count them**). Same shape at `op-intro`:
   its 13 questions are **anatomy and physiology**, not the history-taking its title promises.
-- **⚠️⚠️ `L9` IS READ BUT WAS NEVER CACHED** — cache still **38 words of "CamScanner"×33**. Its
-  Hirschberg/Schirmer/Krause/Jones/tear-thickness highlights are the module's ONLY record of those
-  five, since ch.1 and ch.4 print none of them. **Cache in the same pass as the read.**
-- **⚠️ Deck reading is now the FALLBACK, not the plan** (the 574-page debt died with the ruling
-  above). A blank deck page here is usually a TEXT slide (inverse of peds); **six deck patterns,
-  incl. the caption deck and the EMPTY-SLIDE deck**, and **three kinds of blank page: text slide ·
-  byte-identical filler · broken graphic**. ✅ `L3,4`, `L10`, `L25`, `L20` (473→2,376 w), `L31,32`
-  (426→2,773), `L7,8` (1,545→7,004) banked; ✅ **filler sweep CLEAN NEGATIVE on all ten owed PDFs —
-  DO NOT RE-RUN**. `op-ant` has no deck. **~55 register rows are ophtho's**; ~18 closed, 8 notices,
-  **5 undeliverable**, the rest open.
+- **⚠️ `L9` IS READ BUT NEVER CACHED** (38 words of "CamScanner"×33). Its Hirschberg / Schirmer /
+  Krause / Jones / tear-thickness highlights are the module's ONLY record of those five — ch.1 and
+  ch.4 print none. **Cache in the same pass as the read.**
+- **Deck reading became the FALLBACK.** A blank deck page here is usually a TEXT slide (inverse of
+  peds); **six deck patterns** incl. the caption and EMPTY-SLIDE decks, and **three kinds of blank
+  page: text slide · byte-identical filler · broken graphic**. ✅ **Filler sweep CLEAN NEGATIVE on
+  all ten owed PDFs — DO NOT RE-RUN.** **~63 register rows are ophtho's**; ~20 closed, 13 notices,
+  **6 undeliverable**, the rest open — **located work for the ophtho reconciliation pass.**
 - **⚠️⚠️ AFTER A READ, A SOURCE'S WORD COUNT IS THE CACHE'S, NEVER `pdftotext`'s.** The `L7,8`
   reader advised *not* splitting `op-refract` on "only 1,540 words" — the number the 88-page render
   existed to replace; its own transcription held **4,439**. Split at p61; halves printed 10 and 8.
@@ -52,6 +48,10 @@ there before resuming a paused stream. Where this file and the archive disagree,
   EMPTY DESTINATION** — ch.17 → ch.16 for retinoblastoma resolves, and ch.16's section is **92 words,
   the only RB text in 274 pages**. **A resolved cross-reference is not evidence of coverage; measure
   the destination.** Evidence: `START-HERE.md` §14.5, `theory-plan.md`.
+- **⚠️⚠️ AUDIT "row filed" CLAIMS — FOUR WERE FALSE** (`uv-1`/`uv-8`/`uv-9`/`scl-1`; neither donor
+  appeared in §14.5 at all). Rebuilt, marked reconstructed. **And a row's evidence has a TIMESTAMP:**
+  `vis-11` shipped *"temporal arteritis and ESR return zero module-wide"* by quoting a row true when
+  written; they return 9 and 8. **Re-run the grep, never quote another row's finding.**
 - **⚠️⚠️ "NO ORPHAN WORDS" IS NOT A VALID CHECK** — it proves every word landed SOMEWHERE, never
   that it landed in the right sentence. **Never accept a reconstruction on a word-conservation
   argument; render the page.** `pdftotext -raw` (draw order) is the tool for any slide whose text
@@ -60,10 +60,7 @@ there before resuming a paused stream. Where this file and the archive disagree,
 - **⚠️ NEVER `git add` A DIRECTORY WHILE A SUBAGENT IS WRITING INTO IT** (it swept a half-finished
   `L37` append into an unrelated commit). **Stage explicit paths.**
 - ✅ **THE READING DEBT IS PAID — ELEVEN book chapters cached** in `content\ophtho\book\` (ch.1 · 3 ·
-  4 · 5 · 6 · 7 · 10 · 14 · 15 · 16 · 17, plus ch.19 §(11) malignancy only — **70,704 w**). **The
-  module owes no more renders.** Every remaining chapter writes from cache.
-  **`op-ant`: no deck and no chapter of its own, so its scope is what the others leave** — the
-  `ent-sinuscomp` shape; grep ~50 terms across the module first (`wht-4` cross-references it).
+  4 · 5 · 6 · 7 · 10 · 14 · 15 · 16 · 17, plus ch.19 §(11) malignancy only — **70,704 w**).
 - **⚠️⚠️ TEST-PRINT BEFORE ACCEPTING A SPLIT *OR* A COMPRESSION — the ÷240 estimator's two worst
   misses are the BOOK-SOURCED chapters**: `op-lid` forecast 16.1 pp printed **11**, `op-lac` 15.6 →
   **11**. Over-predicted by 5.1 · 5 · 4.6 · 3 · 2.3 · 2.1 · 2 · 2 · 1.5; under exactly once
@@ -77,17 +74,19 @@ there before resuming a paused stream. Where this file and the archive disagree,
   column and per-chapter ranges in `content\ophtho\book-map.md`, caches in `content\ophtho\book\`.
   **The book prints its own exam weights** (neuro 10 %, systemic 10, trauma 9.5, lids/conj/cornea/
   glaucoma/retina 6.5 each) — a real budget basis where §14's formula collapsed. **⚠️ `(Tutorial)`
-  / `(T)` = "study in round & skip in final"** — record every marker. **Reading debt for the last
-  twelve chapters: 127 pp, not 574** (`L1,2` 136 pp and `L27,28` 70 pp are no longer read at all).
+  / `(T)` = "study in round & skip in final"** — record every marker; **NINE physical forms now,
+  incl. a whole page governed by running text and the bare `(T)`, and it is NEVER a licence to
+  compress.** The ruling cut the reading debt from 574 pp to 127, and it is now fully paid.
 - **⚠️ USER RULING 2026-08-18 — DO NOT ADD chapters for the three deckless book chapters** (Vitreous,
   Paediatric Ophthalmology, Drugs and the Eye; 10.5 % of the paper). Asked with evidence, answered
   *"Don't add them"* — **settled, do not re-propose.** Scope comes from the lecture series; the book
-  is the authority on content, never on scope. Ophtho stays **33 chapters**, project **141**.
-- ✅ **Both old interview items CLOSED 2026-08-18.** The `L31,32` QR code is **dead**. `L23`/`L37`
-  are **NOT from this book** — ch.4 is Lacrimal and ch.9 is Lens, so `(Fig 9-8)` cannot resolve.
-  ⚠️ **I first argued that from "the book has no figure numbering at all". THAT WAS FALSE** — ch.7
-  prints `Fig 7-1`–`7-4`. The conclusion survives on the other evidence; **treat every "the book
-  always/never…" line as a hypothesis until a chapter has been read end to end.**
+  is the authority on content, never on scope. ⚠️ **Reading ch.16 for `op-onc`'s retinoblastoma was
+  NOT a breach** — the ruling bars adding chapters, not reading pages. Ophtho **finished at 36**.
+- ✅ **Both old interview items CLOSED 2026-08-18.** The `L31,32` QR code is **dead**; `L23`/`L37`
+  are **NOT from this book** (ch.4 is Lacrimal, ch.9 is Lens). ⚠️ **I first argued that from "the
+  book has no figure numbering at all" — FALSE**: ch.7 prints `Fig 7-1`, ch.3 `Fig (3-1)`, ch.19
+  `Figure (19-1)` and only twice in 18 pp; ch.10/16/17 none. **Treat every "the book always/never…"
+  line as a hypothesis until a chapter has been read end to end.**
 - **⚠️ ENT is NOT closed**: 25 §14.5 register rows open, **plus 33 bold-led paragraphs over the
   55-word cap** (peds 2, ophtho 0). Located work for the ENT reconciliation pass. ⚠️ **A cap
   auditor must separate BULLETS from PARAGRAPHS** — conflating them faked four failures here.
@@ -167,12 +166,15 @@ there before resuming a paused stream. Where this file and the archive disagree,
 - **Corpus 2,097** (2026-08-14): ENT 1,720 · Neuro 158 · Ophtho 138 · Peds 81. Banks: GG
   1,180 · Endpoint 697 · House 78; 54 shared memberships. Module keys `ent`, `ophtho`,
   `pediatrics`, `neuropsych`. Option counts 2–9 coexist; nothing assumes four.
-- **Theory: 111 of 143 chapters** — all ENT (30), all Peds (51), Ophtho 30. ENT 259 pp / mean
-  8.6; Peds 340 / 8.3; Ophtho 279 / 9.3. Drafts: `content\<mod>\theory-drafts\` (⚠️ ENT's bare
-  `ent-csom/tonsils/aom/stridor` files are the DEAD format; their `*.v2/v3` are current). Best
-  models to hand an agent: `ent-nasalobs`, `ent-sinuscomp`, `op-ret`, `op-refract`, `op-lid`.
-- Last real `file://` boot: **0 console errors, 854 CSS rules, 3 `max-aspect-ratio:5/4`
-  blocks, 4 module cards, 2,097 questions, 9/9 poses.** Print harness: `<scratch>\print.sh`.
+- **Theory: 117 of 144 chapters — THREE MODULES DONE, only Neuropsychiatry (27) left.** ENT 30
+  (259 pp / mean 8.6) · Peds 51 (340 / 8.3) · **Ophtho 36 (331 / 9.2)**. 1,270 sections.
+  Drafts: `content\<mod>\theory-drafts\` (⚠️ ENT's bare `ent-csom/tonsils/aom/stridor` files are the
+  DEAD format; their `*.v2/v3` are current). Best models to hand an agent: `ent-nasalobs`,
+  `ent-sinuscomp`, `op-ret`, `op-refract`, `op-lid`.
+- Last real `file://` boot **2026-08-18**: **0 console errors, 854 CSS rules, 3
+  `max-aspect-ratio:5/4` blocks, 4 modules, 144 chapters, 2,097 questions, 89 cases, 117 theory
+  chapters, 1,270 sections.** Harnesses in `<scratch>\`: `print.sh` · `boot.sh` · `modcheck.js`
+  (dead ids, wrong-chapter, dead section refs, unreached questions) · `vdraft.js` (per-draft).
 - **⚠️ `pages ≈ words ÷ 240` is an exact AGGREGATE predictor and ±3 per chapter** — plan a
   module with it, never clear a chapter; print the chapter (seven rules: §14.1).
 - **⚠️ A draft header is a claim, not a measurement — re-count from disk after the final
