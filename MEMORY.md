@@ -11,13 +11,11 @@ there before resuming a paused stream. Where this file and the archive disagree,
   with `content\ophtho\book-map.md`. The plan carries the two 2026-08-18 user rulings, "What
   writing the first twelve chapters taught", and every measurement kept out of this 200-line file.
   Do not re-derive any of it.
-- ✅ **Ophtho finished at 36 chapters, not 26 — EIGHT splits**, each recorded in `modules.js` with its
-  own reasoning: `op-orbit`/`op-orbit-mass` · `op-cornea`/`op-cornea-surg` · `op-cat`/`op-cat-surg` ·
-  `op-red`/`op-red-mgmt` · `op-ret` **three ways** · `op-refract`/`op-refract-astig` · `op-neuro`
-  **three ways** · `op-intro`/`op-intro-exam`. **Only the first and last were split AFTER printing
-  14 pp — the expensive way; the rest were forecast before writing. Project total 144.**
-  ⚠️ **Splits move questions** — 12, 1, 1, 16, 2 refiled — **always driven by the theory `qs` links,
-  never a keyword tie-break.**
+- ✅ **Ophtho finished at 36 chapters, not 26 — EIGHT splits**, each with its reasoning inline in
+  `modules.js`: `op-orbit` · `op-cornea` · `op-cat` · `op-red` · `op-ret` **three ways** ·
+  `op-refract` · `op-neuro` **three ways** · `op-intro`. **Only the first and last were split AFTER
+  printing 14 pp — the expensive way; the rest were forecast before writing. Project total 144.**
+  ⚠️ **Splits move questions** — 12, 1, 1, 16, 2 refiled — **always from the theory `qs` links.**
   ✅ **36 written and individually printed: 331 pp, mean 9.2** (ENT 8.6, peds 8.3); per-chapter
   table in `theory-plan.md`. **390 sections, 95,519 w**, 0 dead `qs` ids, 0 wrong-chapter, 0 dead
   section refs, **0 unanchored leads**, 0 over-cap paragraphs, **138/138 questions reachable.**
@@ -44,26 +42,23 @@ there before resuming a paused stream. Where this file and the archive disagree,
   from the deck · wrong deck · wrong slide · circular · wrong receiver · **wrong line** · **stale, a
   third chapter delivered it** · **donor under-stating its own coverage** · **⚠️ LIVE POINTER TO AN
   EMPTY DESTINATION** — ch.17 → ch.16 for retinoblastoma resolves, and ch.16's section is **92 words,
-  the only RB text in 274 pages**. **A resolved cross-reference is not evidence of coverage; measure
-  the destination.** Evidence: `START-HERE.md` §14.5, `theory-plan.md`.
+  the only RB text in 274 pp**. **A resolved cross-reference is not evidence of coverage; measure
+  the destination.** Evidence: §14.5, `theory-plan.md`.
 - **⚠️⚠️ AUDIT "row filed" CLAIMS — FOUR WERE FALSE** (`uv-1`/`uv-8`/`uv-9`/`scl-1`; neither donor
   appeared in §14.5 at all). Rebuilt, marked reconstructed. **And a row's evidence has a TIMESTAMP:**
   `vis-11` shipped *"temporal arteritis and ESR return zero module-wide"* by quoting a row true when
   written; they return 9 and 8. **Re-run the grep, never quote another row's finding.**
-- **⚠️⚠️ "NO ORPHAN WORDS" IS NOT A VALID CHECK** — it proves every word landed SOMEWHERE, never
-  that it landed in the right sentence. **Never accept a reconstruction on a word-conservation
-  argument; render the page.** `pdftotext -raw` (draw order) is the tool for any slide whose text
-  streams together — it recovered `L33,34` p.19's five overlapping cards. **Text-sufficient is a
-  claim about a source's PROSE, never about its tables or its columns** (`theory-plan.md`).
-- **⚠️ NEVER `git add` A DIRECTORY WHILE A SUBAGENT IS WRITING INTO IT** (it swept a half-finished
-  `L37` append into an unrelated commit). **Stage explicit paths.**
+- **⚠️⚠️ "NO ORPHAN WORDS" IS NOT A VALID CHECK** — it proves every word landed SOMEWHERE, never in
+  the right sentence. **Never accept a reconstruction on a word-conservation argument; render the
+  page.** `pdftotext -raw` (draw order) recovers slides whose text streams together (`L33,34` p.19).
+  **Text-sufficient is a claim about PROSE, never about tables or columns.**
+- **⚠️ NEVER `git add` A DIRECTORY WHILE A SUBAGENT IS WRITING INTO IT** — **stage explicit paths.**
 - ✅ **THEORY READING DEBT PAID — 11 book chapters cached** in `content\ophtho\book\` (ch.1 · 3 · 4 ·
   5 · 6 · 7 · 10 · 14 · 15 · 16 · 17, + ch.19 §(11) — **70,704 w**).
 - **⚠️⚠️ TEST-PRINT BEFORE ACCEPTING A SPLIT *OR* A COMPRESSION — the ÷240 estimator's two worst
   misses are the BOOK-SOURCED chapters**: `op-lid` forecast 16.1 pp printed **11**, `op-lac` 15.6 →
-  **11**. Over-predicted by 5.1 · 5 · 4.6 · 3 · 2.3 · 2.1 · 2 · 2 · 1.5; under exactly once
-  (`op-glauc`). A fourth `op-ret` chapter was dropped by measurement (10 pp vs 15.2), and **a dying
-  agent's last line was "Now the op-lac compression" — printing showed nothing to compress.**
+  **11**. Over-predicted by 5.1 · 5 · 4.6 · 3 · 2.3 · 2.1 · 2 · 2 · 1.5; under once (`op-glauc`).
+  **A dying agent's last line was "Now the op-lac compression" — printing showed nothing to cut.**
 - **⚠️⚠️ USER RULING 2026-08-18 — THE BOOK IS THE MODULE'S MAIN REFERENCE**, and the last decks
   (`L31,32`, `L33,34`, `L35,36`, `L37`) are **compilations of earlier chapters — ignore them, and
   any deck like them**. `ophthalmology.pdf` = **"OPHTHALMOLOGY WITH TUTORIALS", HEALIX TEAM**,
@@ -78,9 +73,9 @@ there before resuming a paused stream. Where this file and the archive disagree,
   NOT a breach** — the ruling bars adding chapters, not reading pages. Ophtho **finished at 36**.
 - ✅ **Both old interview items CLOSED 2026-08-18.** The `L31,32` QR code is **dead**; `L23`/`L37`
   are **NOT from this book** (ch.4 is Lacrimal, ch.9 is Lens). ⚠️ **I first argued that from "the
-  book has no figure numbering at all" — FALSE**: ch.7 prints `Fig 7-1`, ch.3 `Fig (3-1)`, ch.19
-  `Figure (19-1)` and only twice in 18 pp; ch.10/16/17 none. **Treat every "the book always/never…"
-  line as a hypothesis until a chapter has been read end to end.**
+  book has no figure numbering at all" — FALSE**: ch.7 `Fig 7-1`, ch.3 `Fig (3-1)`, ch.19
+  `Figure (19-1)` twice in 18 pp; ch.10/16/17 none. **Treat every "the book always/never…" line as
+  a hypothesis until a chapter has been read end to end.**
 - **⚠️ ENT is NOT closed**: 25 §14.5 rows open **+ 33 bold-led paragraphs over the 55-word cap**
   (peds 2, ophtho 0) — the ENT reconciliation pass. ⚠️ **A cap auditor must separate BULLETS from
   PARAGRAPHS** — conflating them faked four failures.
@@ -100,34 +95,34 @@ there before resuming a paused stream. Where this file and the archive disagree,
   **949 remain**. `ophthalmology MCQ.pdf` (House) ≈ **1,025 ±30**; 56 done = exactly ch.1, so **~969
   remain**. **TOTAL ~1,918 REMAINING against 27 Sep.** ⚠️ **~304 are IMAGE questions** (House OSCE
   Q1–269 are each a clinical photo; GG End Exam 6 is 35) and **every crop is individually looked at
-  — that is the dominant cost, larger than the transcription.** ⚠️ **56 House questions are STAGED
-  AND UNMERGED** — validated, 0 folds against GG, all net new. Detail: `ledger.md`.
+  — the dominant cost, larger than the transcription.** ⚠️ **56 House questions STAGED AND UNMERGED**
+  — validated, 0 folds vs GG, all net new. House's **132 model-exam items are SHORT-ANSWER → the
+  `type:'case'` route, not MCQ.** Both files' back halves are **past papers, recycled by design.**
+  Detail: `ledger.md`.
 
 ## Governing decisions (verbatim rulings in the archive)
 
-- **All theory is written from THIS hub chat for all four modules** (2026-08-14); the other
-  three chats stand down on theory and resume only their **banks**, Ophtho first. Hub plans,
-  validates, renders, commits; **Opus subagents write, cap 2 concurrent** (the usage pool is
-  shared — more chats multiply failures, not throughput). **A dead agent's file is usually
-  complete: validate it from disk before rewriting** (4 recoveries now). Protocol + prompt:
-  `START-HERE.md` §11; paste text `progress\briefs\PASTE-theory-format-changed.md`.
-- **Theory format = `START-HERE.md` §14** — the 2026-08-04 brief and first two §14s are DEAD
-  (user rejected 30–47 pp chapters; the distractor-essay rule was the cause and is REVOKED).
-  Budget `max(lecture words used, 25×q)`, floor 600, **operative ceiling ~2,400 w / ~10 pp**;
-  telegraphic; tables by default; §14.3a layout (bold leads need an early colon/em-dash for
-  `mdLead()`); §14.5 register — *an unrecorded promise is a deletion*.
+- **All theory is written from THIS hub chat for all four modules** (2026-08-14); the other three
+  chats stand down on theory and resume only their **banks**. Hub plans, validates, prints, commits;
+  **Opus subagents write, cap 2 concurrent** (shared usage pool — more chats multiply failures, not
+  throughput). **A dead agent's file is usually complete: validate it from disk before rewriting**
+  (**6 recoveries**, incl. both writers killed by the session limit, 2026-08-18). §11.
+- **Theory format = `START-HERE.md` §14** — the 2026-08-04 brief and first two §14s are DEAD (user
+  rejected 30–47 pp chapters; the distractor-essay rule was the cause and is REVOKED). Budget
+  `max(source words, 25×q)`, floor 600, **operative ceiling ~2,400 w / ~10 pp**; telegraphic;
+  tables by default; §14.3a layout (bold leads need a `:` or `—` within 44 chars for `mdLead()`);
+  §14.5 register — *an unrecorded promise is a deletion*.
 - **Chapters are SPLIT, not compressed** (user, 2026-08-15, peds 21 → 51): every chapter ≤13 pp
-  **measured by printing**. Splitting is safe (`SCHEDULE` is keyed by date+title, progress by
-  question id) but **reassign questions from the theory `qs` links** — automatic tie-breaks
-  misfile most. Method: `content\peds\theory-plan.md`.
+  **measured by printing**. Safe (`SCHEDULE` is keyed by date+title, progress by question id) but
+  **reassign questions from the theory `qs` links** — tie-breaks misfile most. ⚠️ **A seam that
+  needs the chapter REORDERED is not a seam** (rejected one at `op-intro`, 2026-08-18).
 - **Writing budget, banks (2026-08-13, supersedes "full depth everywhere"):** adaptive depth —
   ~520 w for vignettes/defects/divergences/gap-fills, **~250 w for straight slide-recall**, every
-  distractor still explained; shared tables live in ONE entry, siblings point at an **existing**
-  id; `source` is a citation, never a second explanation. **Scope is never cut** (the user
-  corrected the first briefs for that). If time runs short, say so loudly — scaling down is theirs.
-- **A defective key is noted, never disputed** (2026-08-11) — never take a key dispute to the user;
-  interview only for things they can supply. **A lecture-numbering gap = the professor withheld it**
-  (2026-08-14) — never chase one; fill and tag. ENT `L28`, Peds 21/28/29/57.
+  distractor still explained; shared tables in ONE entry, siblings point at an **existing** id;
+  `source` is a citation, never a second explanation. **Scope is never cut** (the user corrected the
+  first briefs for that). If time runs short, **say so loudly — scaling down is theirs.**
+- **A defective key is noted, never disputed** (2026-08-11) — never take a key dispute to the user.
+  **A lecture-numbering gap = the professor withheld it** (2026-08-14) — fill and tag, never chase.
 - **Publishing agreed, parked until ENT done.** Before first publish: cache-bust the data
   `<script>` tags (verified absent), fix the final domain first (localStorage is per-origin),
   finish folding. Publishing enables Google sign-in. Host undecided (Netlify unreachable);
@@ -135,17 +130,17 @@ there before resuming a paused stream. Where this file and the archive disagree,
 
 ## The method — what transcription work must never skip
 
-- **Read every answered page; trust no count** — not printed numbering, not the contents page,
-  not the map (ranges right 21/21, counts wrong 17/21, always upward). Render **one page past
-  the last answer page** (both boundary defects are unpredictable in both directions).
+- **Read every answered page; trust no count** — not printed numbering, not the contents page, not
+  the map (ranges right 21/21, counts wrong 17/21, always upward). Render **one page past the last
+  answer page** — both boundary defects are unpredictable in both directions.
 - **Run the full six-stage duplicate sweep (A–F) on every topic**; folds ran 0–20 per topic with no
   trend, and the rankings are the instrument. Blind spots, defect shapes 1–6 and the false
   positives: archive. **Say why a zero is a zero.** Grep drafted blocks for a folded id **before**
   splicing; re-run the dead-id check after every fold.
 - **Compute the expected marker delta FIRST, then audit both ways** — five marker faults in five
   shapes (block-missing, in-`source` ×3, lost at writing, spurious on boxed entries; a boxed entry
-  takes NO marker). The audit asks *"does `explanation` END with the sentence"*, over the whole
-  file. Validator: `<scratchpad>\wrT7\validate.js` (strip trailing `*`s — not optional).
+  takes NO marker). The audit asks *"does `explanation` END with the sentence"*, whole-file.
+  Validator: `<scratchpad>\wrT7\validate.js` (strip trailing `*`s — not optional).
 - **Every bank mis-keys itself — go looking.** Mechanism decides: options replaced → new entry;
   identical options, moved key → record in place; bank contradicting its own box → correct and
   record. Cross-bank divergence: hold both, note both — **but check the menu first: a key is the
@@ -159,11 +154,11 @@ there before resuming a paused stream. Where this file and the archive disagree,
 - **⚠️ The end-of-ENT "outside knowledge" list is about half wrong** — re-grep item by item before
   booking book time (8 of 13 checked were printed all along). 67 entries record no provenance
   (46 early Endpoint + all 21 House). Owed when ENT banks resume; roster: `ledger.md` §11.
-- **GG structure**: PDF page = book page + 9; **three chapters (Ear/Nose/Throat), numbering
-  restarts per section** — ids carry a section+topic token (`entqb-thr1-1`). ~30% carry boxes, but
-  box presence is a property of the PAGE. Back-references hit up to 28%; repair every "previous
-  case" reference — the deck is shuffled. Figures: **13 of 13 crops wrong first try — LOOK at every
-  crop**; an answer-page figure is never cropped (it would reveal the key).
+- **GG ENT structure**: PDF = book + 9; three sections (Ear/Nose/Throat), **numbering restarts per
+  section** — ids carry a section+topic token (`entqb-thr1-1`). ~30% carry boxes, but **box presence
+  is a property of the PAGE**. **Back-references hit 28%** — repair every "previous case", the deck
+  is shuffled (present in both ophtho banks too). Figures: **13 of 13 crops wrong first try — LOOK
+  at every crop**; an answer-page figure is never cropped (it would reveal the key).
 
 ## Validation state
 
@@ -179,27 +174,27 @@ there before resuming a paused stream. Where this file and the archive disagree,
   `max-aspect-ratio:5/4` blocks, 4 modules, 144 chapters, 2,097 questions, 89 cases, 117 theory
   chapters, 1,270 sections.** Harnesses in `<scratch>\`: `print.sh` · `boot.sh` · `modcheck.js`
   (dead ids, wrong-chapter, dead section refs, unreached questions) · `vdraft.js` (per-draft).
-- **⚠️ `pages ≈ words ÷ 240` is an exact AGGREGATE predictor and ±3 per chapter** — plan a
-  module with it, never clear a chapter; print the chapter (seven rules: §14.1).
-- **⚠️ A draft header is a claim, not a measurement — re-count from disk after the final
-  edit.** Wrong nine times; worst shape a *forecast wearing a measurement's label* whose
-  breakdown summed exactly. The sum check alone no longer suffices.
+- **⚠️ `pages ≈ words ÷ 240` is an AGGREGATE predictor, ±5 per chapter** — plan with it, never clear
+  a chapter; print it (seven rules: §14.1). **⚠️ A draft header is a claim, not a measurement —
+  re-count from disk after the final edit.** Wrong nine times; worst shape a *forecast wearing a
+  measurement's label* whose breakdown summed exactly. The sum check alone no longer suffices.
 
 ## Environment — what changes what you do first
 
-- Poppler installed (off PATH); `pdftotext` = 0 chars on every book/bank; `Read` rejects
-  >100 MB. **`.ps1` files are blocked by execution policy — pass PowerShell inline.**
-- **Node v26.7.0 installed** (2026-08-12). No Python, ImageMagick, Ghostscript or `gh` CLI.
-  Images via `System.Drawing` (⚠️ `Sort-Object` no-ops on hashtables — `[pscustomobject]`;
-  cast `Measure-Object` doubles to `[int]`). ffmpeg off PATH. Headless Chrome is the only
-  screenshot/probe route — **⚠️ never under a path containing `--`** (`CLAUDE.md` §7).
+- Poppler installed (off PATH); `pdftotext` = 0 chars on every book/bank; `Read` rejects >100 MB.
+  **`.ps1` files are blocked by execution policy — pass PowerShell inline.** **Node v26.7.0**; no
+  Python, ImageMagick, Ghostscript or `gh`. Images via `System.Drawing` (⚠️ `Sort-Object` no-ops on
+  hashtables — `[pscustomobject]`; cast `Measure-Object` doubles to `[int]`). Headless Chrome is
+  the only screenshot/probe route — **⚠️ never under a path containing `--`** (`CLAUDE.md` §7).
+  ⚠️ **Write node/bash scripts to a FILE, never inline** — `\n` in a double-quoted `node -e` becomes
+  a real newline and has silently broken a draft and a regex refile.
 - **GitHub, PRIVATE**: `mahmoudbanna23-ctrl/Herophilus`, branches `main` +
   `design/clepsydra-and-sessions` (only off-drive copy of the Clepsydra art). `Semester 8\`
   gitignored. Push method: `ledger.md` §13. **Stage only your own paths — never
   `git add -A`**; `index.lock` means another chat is mid-commit.
 - **Measure, then believe**: check the sum, check the auditor, reconcile written + folded =
   printed; a counter that does not move is a finding. **Never write a cross-referenced page number
-  or lecture filename from memory** (7/7 and 3/3 wrong) — read the `source`, list the directory.
+  or filename from memory** (7/7 and 3/3 wrong) — read the `source`, list the directory.
 - Cleanup awaiting approval (nothing without a yes): 173 MB ophtho zip, two Peds PPT stubs, `files.zip`.
 
 **⚠️ THE ONE THING THAT MUST SURVIVE ANY SUMMARY: the Clepsydra is the user's own artwork —
