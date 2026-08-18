@@ -25,8 +25,7 @@ there before resuming a paused stream. Where this file and the archive disagree,
   counted to `op-va` (**`op-intro`/`op-vissym` must not re-count them**). Same shape at `op-intro`:
   its 13 questions are **anatomy and physiology**, not the history-taking its title promises.
 - **⚠️ `L9` IS READ BUT NEVER CACHED** (38 w of "CamScanner"×33) — its Hirschberg / Schirmer /
-  Krause / Jones / tear-thickness highlights are the ONLY record of those five. **Cache in the
-  same pass as the read.**
+  Krause / Jones / tear-thickness highlights are the ONLY record of those five. **Cache as you read.**
 - **Deck patterns (six) and three kinds of blank page — text slide · byte-identical filler · broken
   graphic** — are in `theory-plan.md`. ✅ **Filler sweep CLEAN NEGATIVE on all ten owed PDFs — DO NOT
   RE-RUN.** **~63 register rows are ophtho's**; ~20 closed, 13 notices, **6 undeliverable**, the
