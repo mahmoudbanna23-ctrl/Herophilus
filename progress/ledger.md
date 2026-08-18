@@ -7330,3 +7330,58 @@ new entry* (`CLAUDE.md` §4).
 `opmcq-c1-6` keys the average IOP at **15 mmHg**, and book ch.1 p.33 prints **15 mm Hg**. `pup-5`
 prints **16 mmHg**. That is **two sources against one**, and it is recorded on the §14.5 row rather
 than acted on — the theory reconciliation pass owns it, not the bank stream.
+
+### ✅ THE COUNT, MEASURED 2026-08-18 — replaces the ±30 % extrapolation
+
+Sampled 16 pages across both files. **The decisive find was that File A prints a CONTENTS PAGE
+carrying a question count for every section** (PDF 3–7) — and rather than trust it, the reader
+verified it against the printed cumulative question numbers at four independent checkpoints.
+**All four hit the contents sum exactly**: book p.20 → 138 · p.53 → 348 · p.102 → 644 · p.132 → 830.
+
+| | File A `ophthalmology qb.pdf` | File B `ophthalmology MCQ.pdf` |
+|---|---|---|
+| Structure | **28 sections, not 20** — ch.1–20, then **End Exam 1–6, a Tutorial Exam and a Final Exam** | **Three formats**: Part A 20 chapters (book 4–134) · **Part B OSCE** (135–232) · **Model exams 1–4** (233–249) |
+| Numbering | **continuous across ch.1–20**, restarts inside each exam | restarts per chapter; OSCE runs continuously Q1–**303** |
+| Total | **1,087** (ch.1–20 = **830 measured**, exams = 257) | **≈1,025**, band 995–1,057 |
+| Uncertainty | **±0–5** | **±30**, all of it in Part A |
+| Done | 138 (= exactly ch.1–3) | 56 (= exactly ch.1) |
+| **Remaining** | **949** | **≈969** |
+
+Content runs PDF 8–183; **PDF 184 is blank and PDF 185 is a publisher advert** — the only blanks in
+the file, established by a 30 dpi size sweep of all 185 pages rather than by reading them.
+
+**REMAINING ACROSS BOTH FILES: ~1,918 questions**, band ~1,875–1,960.
+
+#### What is measured and what is inferred — stated, not blurred
+
+- **Measured:** File A's whole chapter block (830) and its structure · File B's OSCE run (**303**,
+  counted) and model exams (**132** — exams 3 and 4 each end at exactly Q33, so 4 × 33) · File B's
+  Part A density on **four complete chapters** (56/12, 28/6, 26/6, 43/10 — clustered 4.30–4.67).
+- **Inferred:** File A's six unverified exam-section counts, from a contents page that was right on
+  5 of 5 independent checks · File B's Part A total, extrapolated over 97 unsampled pages. **That
+  last one is the only genuinely soft number in the estimate.**
+- **Not established:** whether File A's **Tutorial Exam** carries photographs. At 3.9 q/page it is
+  anomalously sparse against the other exams' 9–10, which in this corpus usually means images.
+  **Rendering PDF 167–173 would settle it — the single highest-value follow-up.**
+
+#### ⚠️ FIVE STRUCTURAL FINDINGS THAT CHANGE HOW THE WORK IS DONE
+
+1. **~304 IMAGE CROPS, not a handful.** File B's OSCE **Q1–269 are each a clinical photograph with
+   an explanation**, plus File A's End Exam 6 (Photos) at 35. Against the standing rule that
+   **every crop is individually looked at** — 13 of 13 were wrong on the first try in ENT — this is
+   likely **the dominant cost of the remaining ophthalmology work, larger than the transcription.**
+2. **The back of both files is recycled BY DESIGN.** File A's eight exam sections and File B's model
+   exams are past papers; File B says so outright — *"derived from the department's E-exams of the
+   last year."* Topic overlap with the chapters is total, so **the six-stage duplicate sweep matters
+   more here than in any previous topic.** They are distinct printings, not literal reprints.
+3. **File B's model exams (132 q) are SHORT-ANSWER with no options.** They do not fit the MCQ schema
+   at all and map onto the free-text `type:'case'` route in `cases.ophtho.js`.
+4. **Those model exams REFERENCE images rather than reprinting them** (*"see the OSCE section"*), so
+   they need **links to existing OSCE crops, not new crops.**
+5. **Back-references are present in both files** (*"In the previous Q/case"*) — the known
+   shuffle-repair problem applies, as it did at 28 % in Grade Gain ENT.
+
+⚠️ **Minor discrepancy, recorded not resolved:** File B's running head prints **"Ophthalmology MCQs
+2026"**, while `house-c1.array.js` recorded the edition as **"December 2025"**. Both were read from
+the page; the staging note may have taken the edition from a cover and the running head from a body
+page. Check before citing an edition anywhere.
