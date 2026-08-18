@@ -997,16 +997,73 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
 .bk-on .doc-head{display:none}
 .bk-top{
   display:flex;align-items:center;gap:12px;flex-wrap:wrap;
-  max-width:var(--bk-max,820px);margin:0 auto 9px;
+  margin:0 auto 9px;
 }
 .bk-top .tb-btn{padding-left:0;margin:0;flex:0 0 auto}
 .bk-acts{display:flex;gap:8px;margin-left:auto;flex-wrap:wrap}
 .bk-acts .btn{padding:7px 13px;font-size:12.5px}
-/* The measure is capped. At full width the line ran 971px, far past a readable
-   length for prose — a wide sheet is not the same thing as a whole page. */
-.bk-on .bk-view,.bk-on .bk-run,.bk-on .bk-prog,.bk-on .bk-bar{
-  max-width:var(--bk-max,820px);margin-left:auto;margin-right:auto;
+/* ⚠️ THE SHEET IS AN A4 PAGE (user, 2026-08-19: "I need it to appear like an
+   A4 page"). The pass before this one gave the reader the window's HEIGHT and
+   capped the measure at 820px, and that was still not a page: it was a wide
+   landscape panel, which is what a browser window is shaped like, not what
+   paper is shaped like. The box below is 210:297 exactly — set as an
+   aspect-ratio so the two dimensions cannot drift apart — sized to whatever
+   height the window can give it, with paper margins, a running head, a foot
+   folio and a drop shadow, and the turn arrows out in the gutters where the
+   edges of a page are.
+   ⚠️ THE PAGE IS NOT WHITE, AND MUST NOT BE MADE WHITE. In dark mode --tx is
+   near-white; a white sheet would set white type on white paper and lose the
+   chapter. The A4-ness is carried by the PROPORTION, the margins, the folio and
+   the shadow — never by the colour. The surface is --card, the same raised fill
+   every other panel in the app uses, so both themes stay measured (CLAUDE.md
+   §6) and the light theme inherits this rule unchanged.
+   ⚠️ THE MARGINS ARE SET IN JS, AND PERCENTAGES ARE THE TRAP. Percentage
+   padding resolves against the CONTAINING BLOCK's width — the stage, 1124px on
+   a 1440 window — not against the sheet's own 510px. `padding:6.6%` therefore
+   put 74px margins on a 510px page and left a 360px type block: margins wider
+   than a real A4's, and they GREW when the window widened while the page did
+   not. bkMeasure() sets these three from the sheet's own width instead, at
+   6.8 % / 5.8 % / 3.4 % of it — 14.3mm and 12.2mm on a 210mm page, close to the
+   15mm and 18mm the @page block uses on paper. */
+.bk-stage{display:flex;align-items:center;justify-content:center;gap:16px}
+.bk-on .bk-sheet{
+  position:relative;display:flex;flex-direction:column;
+  aspect-ratio:210/297;
+  height:var(--bk-sheet-h,660px);
+  flex:0 0 auto;
+  background:var(--card);
+  border:1px solid var(--line-2);
+  border-radius:3px;
+  padding:var(--bk-pad-t,30px) var(--bk-pad-x,35px) var(--bk-pad-b,17px);
+  overflow:hidden;
 }
+/* The folio, at the foot of the page where a book puts it. */
+.bk-foot{
+  padding-top:9px;text-align:center;
+  font-family:'EB Garamond',Georgia,serif;
+  font-size:11.5px;font-weight:700;letter-spacing:.06em;
+  color:var(--ink-4);font-variant-numeric:tabular-nums;
+}
+/* A narrower measure needs its indents back — the section rule was set for an
+   820px column and costs 25mm of a 210mm page. */
+.bk-on .th-sec{padding-left:13px;border-left-width:3px;margin-bottom:22px}
+/* ⚠️ A PAGE IS SET TIGHTER THAN A SCROLLING COLUMN. 1.78 leading was chosen for
+   a column you scroll, where air costs nothing; on a fixed page it costs pages,
+   and the printed chapter — the thing this is meant to look like — is set at
+   1.5. Meeting nearer the print figure buys about a tenth of the chapter back
+   without touching the type size, which stays at 14.6px because the sheet is
+   already only 510px wide and shrinking the face is the one thing that would
+   make a page-shaped reader worse than the panel it replaced. */
+.bk-on .th-body{line-height:1.62}
+.bk-on .th-body p{margin:0 0 11px}
+.bk-on .th-body ul{margin:0 0 11px}
+/* The running head has a page's width, not a window's, so the section name is
+   allowed to end in an ellipsis rather than wrap the head onto two lines. */
+.bk-on .bk-run{font-size:9.5px;padding-bottom:6px;margin-bottom:11px;gap:10px}
+.bk-on .bk-run>span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bk-on .bk-run>span:first-child{flex:0 0 auto}
+.bk-on .bk-run .r{flex:1 1 auto;text-align:right}
+.bk-on .bk-prog{max-width:var(--bk-sheet-w,520px);margin-left:auto;margin-right:auto}
 .bk-on .th-intro{margin-top:0}
 /* The intro opens the chapter, so it is a first page, not a tinted callout. */
 .bk-on .th-intro.bk-first{
@@ -1015,6 +1072,7 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
 .bk-on .bk-view{
   overflow:hidden;                    /* the window the pages slide behind */
   position:relative;
+  flex:1 1 auto;min-height:0;         /* the type block of the page */
 }
 .bk-on .bk-flow{
   column-gap:var(--bk-gap,54px);
@@ -1068,6 +1126,17 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
 @media (max-width:700px){
   .bk-on .bk-tap{width:16%}
   .bk-num{min-width:104px;font-size:11.5px}
+  /* Arrows beside a page are a luxury of a wide window. On a phone they would
+     take a third of the sheet's width, so they go under it and the page keeps
+     the whole measure; the tap zones on the sheet itself are unchanged. */
+  /* ⚠️ NO flex-basis ON THE SHEET. `flex:0 0 100%` is a definite width, and a
+     definite width beats aspect-ratio — the page came out 347x346, square. The
+     sheet keeps flex:0 0 auto and the width clamp in bkMeasure() is what stops
+     it overflowing; at 375px wide it lands on exactly the row width, so the
+     arrows wrap under it on their own line, which is what order:-1 is for. */
+  .bk-stage{flex-wrap:wrap;gap:10px}
+  .bk-on .bk-sheet{order:-1}
+  .bk-stage>.bk-btn{width:40px;height:40px}
 }
 @media (prefers-reduced-motion:reduce){
   .bk-on .bk-flow,.bk-prog i{transition:none}
@@ -1378,10 +1447,21 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
   .bk-on .bk-flow{
     columns:auto!important;column-gap:normal!important;
     height:auto!important;transform:none!important;transition:none!important}
-  .bk-bar,.bk-prog,.bk-run,.bk-tap,.bk-top{display:none!important}
+  .bk-bar,.bk-prog,.bk-run,.bk-tap,.bk-top,.bk-foot,
+  .bk-stage>.bk-btn{display:none!important}
   /* The cover is .doc-head, which the screen hides while the reader is on. */
   .bk-on .doc-head{display:block!important}
-  .bk-on .bk-view,.bk-on .bk-flow{max-width:none!important}
+  /* ⚠️ AND THE A4 BOX ITSELF COMES OFF. Paper does its own pagination; a fixed
+     aspect-ratio, overflow-hidden sheet prints as one page and loses the rest of
+     the chapter, exactly as the columned flow does. Every property the screen
+     rule sets is unset here — height and aspect-ratio together, or the box keeps
+     its shape from whichever survives. */
+  .bk-on .bk-stage{display:block!important}
+  .bk-on .bk-sheet{
+    display:block!important;aspect-ratio:auto!important;height:auto!important;
+    width:auto!important;padding:0!important;border:none!important;
+    border-radius:0!important;box-shadow:none!important;background:none!important;
+    overflow:visible!important}
   /* ── THE COVER ─────────────────────────────────────────────────────────────
      Typographic, not illustrated: Canva was considered and set aside because a
      cover image cannot be generated per chapter for 104 chapters, and the module
@@ -1670,7 +1750,7 @@ body[data-view="theory"] .orb{animation-play-state:paused}
 /* ---- surfaces get an inner highlight so edges read on dark -------------- */
 /* Shadow ink and the sheen wash come from tokens so the light theme inherits
    these rules unchanged instead of restating all of them. */
-.card,.stat,.ch-row,.qcard,.th-ch,.day,.modelans,.explain,.fbox,.conf{
+.card,.stat,.ch-row,.qcard,.th-ch,.day,.modelans,.explain,.fbox,.conf,.bk-sheet{
   box-shadow:var(--pop) var(--sh),var(--glow);
 }
 .card,.stat,.qcard,.ch-row,.th-ch,.day{
@@ -3153,11 +3233,14 @@ function vTheory(p){
         <button class="btn sec" onclick="window.print()">&#128424;&#65039; Save as PDF</button>
       </div>
     </div>
-    <div class="bk-run"><span>${esc(chapterName(view.ch))}</span><span class="r" id="bkRun"></span></div>
-    <div class="bk-view">
-      <div class="bk-tap l" onclick="bkTurn(-1)" title="Previous page"></div>
-      <div class="bk-tap r" onclick="bkTurn(1)" title="Next page"></div>
-      <div class="bk-flow" id="bkFlow">`;
+    <div class="bk-stage" id="bkStage">
+      <button class="bk-btn" id="bkPrev" onclick="bkTurn(-1)" aria-label="Previous page">${ico('chev-l',18)}</button>
+      <div class="bk-sheet" id="bkSheet">
+        <div class="bk-run"><span>${esc(chapterName(view.ch))}</span><span class="r" id="bkRun"></span></div>
+        <div class="bk-view">
+          <div class="bk-tap l" onclick="bkTurn(-1)" title="Previous page"></div>
+          <div class="bk-tap r" onclick="bkTurn(1)" title="Next page"></div>
+          <div class="bk-flow" id="bkFlow">`;
 
   if(t.intro)h+=`<div class="th-intro bk-first">${mdBlock(t.intro)}</div>`;
 
@@ -3180,12 +3263,11 @@ function vTheory(p){
   });
 
   h+=`</div></div>
-    <div class="bk-prog"><i id="bkProg"></i></div>
-    <div class="bk-bar">
-      <button class="bk-btn" id="bkPrev" onclick="bkTurn(-1)" aria-label="Previous page">${ico('chev-l',18)}</button>
-      <span class="bk-num" id="bkNum"></span>
+        <div class="bk-foot" id="bkNum"></div>
+      </div>
       <button class="bk-btn" id="bkNext" onclick="bkTurn(1)" aria-label="Next page">${ico('chev-r',18)}</button>
     </div>
+    <div class="bk-prog"><i id="bkProg"></i></div>
   </div>`;
 
   p.innerHTML=h;
@@ -3224,30 +3306,61 @@ function bkInit(jumpTo){
 function bkMeasure(){
   const flow=document.getElementById('bkFlow'),view=flow&&flow.parentElement;
   if(!flow)return;
-  /* Height: fill the window under the furniture, with a floor so a short
-     window still shows a usable page rather than three lines.
+  /* ⚠️ THE PAGE IS SIZED FIRST, AND EVERYTHING ELSE IS MEASURED OUT OF IT. The
+     sheet is A4 by aspect-ratio, so only its HEIGHT is chosen here; the width
+     follows, and the type block is then whatever the flex column leaves between
+     the running head and the folio. Reading the type block back out of the DOM
+     rather than computing it is what keeps the two in step when a font or a
+     hairline changes.
      ⚠️ RESERVE WHAT THE FURNITURE ACTUALLY MEASURES, never a constant. The old
-     reserve of 118px was measured once, against a layout that has since changed
-     twice; reading the progress rule and the turn bar out of the DOM cannot go
-     stale, and getting this number too small is what put the turn buttons below
+     reserve was the constant 118, measured once against a layout that has since
+     changed three times; too small a reserve is what put the turn controls below
      the fold. */
-  const top=view.getBoundingClientRect().top;
   const wrap=document.getElementById('bkWrap');
-  const below=['.bk-prog','.bk-bar'].reduce((acc,sel)=>{
-    const el=wrap&&wrap.querySelector(sel);
-    if(!el)return acc;
-    const cs=getComputedStyle(el);
-    return acc+el.offsetHeight+(parseFloat(cs.marginTop)||0)+(parseFloat(cs.marginBottom)||0);
-  },20);
-  const h=Math.max(360,Math.round(window.innerHeight-top-below));
-  flow.style.setProperty('--bk-h',h+'px');
-  /* ⚠️ DO NOT TRY TO CANCEL THE LAST ~10px OF PAGE OVERFLOW FROM HERE — it was
-     tried and it only costs reading space. MEASURED: --bk-h at 572, 562, 552 and
-     542 all leave document scrollHeight at 870 in an 860px window, because
-     `main.page` is a stretched flex child pinned at 793px whatever it holds. The
-     empty Flagged view overflows by the same 10px, so it is the shell's, it
-     predates the reader, and the sheet cannot buy it back. */
+  const stage=document.getElementById('bkStage'),sheet=document.getElementById('bkSheet');
+  if(stage&&sheet){
+    const host=wrap.parentElement;
+    let tail=parseFloat(getComputedStyle(host).paddingBottom)||0;
+    const pr=wrap.querySelector('.bk-prog');
+    if(pr){const cs=getComputedStyle(pr);
+      tail+=pr.offsetHeight+(parseFloat(cs.marginTop)||0)+(parseFloat(cs.marginBottom)||0);}
+    let sh=Math.round(window.innerHeight-stage.getBoundingClientRect().top-tail-6);
+    /* ⚠️ AND THE WIDTH CAN BE THE BINDING CONSTRAINT, not the height — a short
+       wide window, or a phone where the arrows sit beside the page. A4 is taller
+       than it is wide, so a sheet sized only by height silently overflows the
+       stage and the arrows fall off the side. */
+    const btns=[].slice.call(stage.querySelectorAll(':scope > .bk-btn'));
+    const arrows=btns.reduce((acc,b)=>acc+b.offsetWidth,0);
+    const sgap=parseFloat(getComputedStyle(stage).columnGap)||16;
+    /* ⚠️ ASK THE LAYOUT WHERE THE ARROWS ARE — do not assume. Below 700px they
+       wrap onto their own line under the page, where they cost HEIGHT and no
+       width at all; charging the row for them there squeezed the sheet to a
+       square. flex-wrap is the media query's own signal, so the two cannot drift
+       apart the way a duplicated breakpoint in JS would. */
+    const wrapped=getComputedStyle(stage).flexWrap==='wrap';
+    const availW=stage.clientWidth-(wrapped?0:arrows+sgap*2)-2;
+    if(wrapped&&btns.length)sh-=btns[0].offsetHeight+sgap;
+    /* ⚠️ THE ORDER MATTERS. Math.max(floor, Math.min(sh, byWidth)) lets the
+       floor beat the width clamp, and the page then overflows the stage and
+       pushes an arrow off the side — seen at 435x311, where a 420px floor asked
+       for a 297px width the row could not give. The floor is applied FIRST and
+       the width clamp last, so the narrow case degrades by shrinking rather
+       than by breaking. */
+    sh=Math.min(Math.max(340,sh),Math.floor(availW*297/210));
+    sheet.style.setProperty('--bk-sheet-h',sh+'px');
+    /* The paper margins are a fraction of the PAGE's width — see the note on
+       .bk-sheet for why they cannot be percentages in CSS. */
+    const sw=sh*210/297;
+    sheet.style.setProperty('--bk-pad-x',Math.round(sw*0.068)+'px');
+    sheet.style.setProperty('--bk-pad-t',Math.round(sw*0.058)+'px');
+    sheet.style.setProperty('--bk-pad-b',Math.round(sw*0.034)+'px');
+    /* The progress rule under the page is set to the page's width, not the
+       stage's, so it reads as part of the sheet rather than of the window. */
+    wrap.style.setProperty('--bk-sheet-w',Math.round(sw)+'px');
+  }
   const gap=parseFloat(getComputedStyle(flow).columnGap)||54;
+  const h=Math.max(180,view.clientHeight);
+  flow.style.setProperty('--bk-h',h+'px');
   const w=view.clientWidth;
   flow.style.columnWidth=w+'px';
   BK.step=w+gap;
