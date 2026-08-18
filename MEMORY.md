@@ -194,8 +194,7 @@ there before resuming a paused stream. Where this file and the archive disagree,
 - **Measure, then believe**: check the sum, check the auditor, reconcile written + folded =
   printed; a counter that does not move is a finding. **Never write a cross-referenced page number
   or lecture filename from memory** (7/7 and 3/3 wrong) — read the `source`, list the directory.
-- Cleanup awaiting approval (nothing without a yes): 173 MB ophtho zip, two Peds PPT stubs,
-  `files.zip`.
+- Cleanup awaiting approval (nothing without a yes): 173 MB ophtho zip, two Peds PPT stubs, `files.zip`.
 
 **⚠️ THE ONE THING THAT MUST SURVIVE ANY SUMMARY: the Clepsydra is the user's own artwork —
 do not redraw her, do not draw anything onto her.**
