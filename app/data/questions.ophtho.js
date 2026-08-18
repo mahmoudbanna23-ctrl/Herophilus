@@ -561,7 +561,7 @@ var Q_OPHTHO = [
 },
 
 {
-  id:'opqb-t1-56', bank:'gradegain', module:'ophtho', chapter:'op-intro',
+  id:'opqb-t1-56', bank:'gradegain', module:'ophtho', chapter:'op-intro-exam',
   stem:'The **macula appears darker** than the surrounding fundus because of:',
   options:['Extra blood vessels','Thick cornea','Pigmented RPE','Vitreous shadow'],
   answer:2,
@@ -571,7 +571,7 @@ var Q_OPHTHO = [
 },
 
 {
-  id:'opqb-t1-57', bank:'gradegain', module:'ophtho', chapter:'op-intro',
+  id:'opqb-t1-57', bank:'gradegain', module:'ophtho', chapter:'op-intro-exam',
   stem:'The **foveal reflex** is due to:',
   options:['Xanthophyll pigment','Concave depression acting as mirror','Optic cup reflection','Lens curvature'],
   answer:1,

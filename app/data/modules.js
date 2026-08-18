@@ -29,7 +29,21 @@ const MODULES = [
   ]},
   {id:'ophtho', name:'Ophthalmology', icon:'eye', color:'var(--ophtho)', hex:'#5c7a52', groups:[
     {name:'All lectures', chapters:[
-      ['op-intro','Introduction, History'],['op-va','VA, Field, Lid, Lac, Orbit'],['op-ant','Anterior Segment'],
+      /* Split 2026-08-18, AFTER printing 14 pp — past the 13-page hard shape,
+         so the split is a measurement, not a forecast. Book ch.1 is 20,920
+         words, the largest chapter by a factor of two, and op-intro rests on
+         ~8,780 of them across four unrelated subjects.
+         The seam is CONTIGUOUS at int-7/int-8 and almost exactly even:
+         2,436 words of why-examine + history + anatomy + ageing, against
+         2,498 of the book's own ten-step examination sequence, what it adds
+         over op-va/op-pupil, and the referral thresholds. No question
+         straddles it — 11 of the 13 sit in int-1..int-4, two in int-11.
+         The writer proposed an anatomy-vs-clinical seam instead; it was
+         rejected because it was non-contiguous (int-1, int-2 + int-8..int-13)
+         and would have reordered the chapter to achieve it. */
+      ['op-intro','Introduction, history and the anatomy the module assumes'],
+      ['op-intro-exam','The book’s examination sequence, and what it adds'],
+      ['op-va','VA, Field, Lid, Lac, Orbit'],['op-ant','Anterior Segment'],
       ['op-pupil','Pupil, EOM, Fundus'],['op-lid','Lid'],['op-conj','Conjunctiva'],
       /* Split 2026-08-17, forecast BEFORE writing. The deck is 88 pages and
          was read visually the same day; its cache holds 4,439 words against
