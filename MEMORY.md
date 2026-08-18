@@ -57,8 +57,8 @@ there before resuming a paused stream. Where this file and the archive disagree,
   claim about a source's PROSE, never about its tables or its columns** (`theory-plan.md`).
 - **⚠️ NEVER `git add` A DIRECTORY WHILE A SUBAGENT IS WRITING INTO IT** (it swept a half-finished
   `L37` append into an unrelated commit). **Stage explicit paths.**
-- ✅ **THE READING DEBT IS PAID — ELEVEN book chapters cached** in `content\ophtho\book\` (ch.1 · 3 ·
-  4 · 5 · 6 · 7 · 10 · 14 · 15 · 16 · 17, plus ch.19 §(11) malignancy only — **70,704 w**).
+- ✅ **THEORY READING DEBT PAID — 11 book chapters cached** in `content\ophtho\book\` (ch.1 · 3 · 4 ·
+  5 · 6 · 7 · 10 · 14 · 15 · 16 · 17, + ch.19 §(11) — **70,704 w**).
 - **⚠️⚠️ TEST-PRINT BEFORE ACCEPTING A SPLIT *OR* A COMPRESSION — the ÷240 estimator's two worst
   misses are the BOOK-SOURCED chapters**: `op-lid` forecast 16.1 pp printed **11**, `op-lac` 15.6 →
   **11**. Over-predicted by 5.1 · 5 · 4.6 · 3 · 2.3 · 2.1 · 2 · 2 · 1.5; under exactly once
@@ -81,9 +81,9 @@ there before resuming a paused stream. Where this file and the archive disagree,
   book has no figure numbering at all" — FALSE**: ch.7 prints `Fig 7-1`, ch.3 `Fig (3-1)`, ch.19
   `Figure (19-1)` and only twice in 18 pp; ch.10/16/17 none. **Treat every "the book always/never…"
   line as a hypothesis until a chapter has been read end to end.**
-- **⚠️ ENT is NOT closed**: 25 §14.5 register rows open, **plus 33 bold-led paragraphs over the
-  55-word cap** (peds 2, ophtho 0). Located work for the ENT reconciliation pass. ⚠️ **A cap
-  auditor must separate BULLETS from PARAGRAPHS** — conflating them faked four failures here.
+- **⚠️ ENT is NOT closed**: 25 §14.5 rows open **+ 33 bold-led paragraphs over the 55-word cap**
+  (peds 2, ophtho 0) — the ENT reconciliation pass. ⚠️ **A cap auditor must separate BULLETS from
+  PARAGRAPHS** — conflating them faked four failures.
 - **Question banks, frozen mid-flight**: ✅ Endpoint closed · ✅ GG Ear+Nose closed · GG Throat
   t1–t9 + t11 written · **⚠️ only t10 left in GG** — staged complete (66/66 verbatim,
   10 boxes, 10 figures, 10 back-ref chains repaired) but **only 11 of 66 drafted**; 55 remain,
@@ -152,6 +152,10 @@ there before resuming a paused stream. Where this file and the archive disagree,
   best option OFFERED.**
 - **Read the slide before declaring a gap — paid 13 times**; grep the shortest stem AND the
   misspelling (*ostio-*, *Uvelopalato…*). Re-check staged interview items before raising.
+- **⚠️ A BANK'S CONTENTS PAGE MAY PRINT PER-SECTION QUESTION COUNTS — LOOK BEFORE SAMPLING.** GG
+  ophtho's does, and verifying it against the printed cumulative numbers at four checkpoints turned
+  a ±30 % guess into ±5. **Verify it, never trust it**; and a *"highest question number"* alone
+  misleads whenever numbering restarts per section, which it does in three of the four bank files.
 - **⚠️ The end-of-ENT "outside knowledge" list is about half wrong** — re-grep item by item before
   booking book time (8 of 13 checked were printed all along). 67 entries record no provenance
   (46 early Endpoint + all 21 House). Owed when ENT banks resume; roster: `ledger.md` §11.
