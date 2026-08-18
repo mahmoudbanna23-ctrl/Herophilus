@@ -48,42 +48,78 @@ its assigned deck.** Check before briefing, per §14.5.
 
 ---
 
-## 2. The decks — all 25 cached, and the extractions are sound
+## 2. The decks — all 25 cached, extractions sound, **re-measured 2026-08-18**
 
 25 PDFs in `Semester 8\Neuro\Theoritical\PPT\`, 25 caches in `content\neuro\lectures\`.
-**1,116 slide-pages, 43,665 cached words.**
+**1,116 slide-pages, 49,859 words.**
 
-✅ **Every cache was checked against `pdftotext -layout` on 2026-08-18 and matches within a few
-words.** Unlike ophthalmology, there is **no hidden extraction failure here** — with one exception,
-below. This is a real finding and it saves the module a 1,116-page render.
+### ⚠️⚠️ THIS TABLE WAS WRONG ONCE — `wc -w` IS NOT THE INSTRUMENT
 
-| deck | pp | words | w/pp | chapter |
-|---|---|---|---|---|
-| L1) INTRODUCTION AND LOCALISATION | 57 | 1,336 | 23 | `nr-intro` |
-| L2) Multiple sclerosis | 68 | 2,225 | 32 | `nr-ms` |
-| L3) MOVEMENT DISORDERS | 51 | 2,494 | 48 | `nr-movement` |
-| L4) Seizures_Epilepsy | 32 | 2,215 | 69 | `nr-movement` |
-| L5) Muscle Disease | 55 | 1,839 | 33 | `nr-lmn` |
-| L6) Peripheral neuropathy | 44 | 1,469 | 33 | `nr-lmn` |
-| L8) Cranial nerves | 92 | 3,456 | 37 | `nr-cranial` |
-| L9) CNS infection | 40 | 1,904 | 47 | `nr-cns` |
-| L10) Stroke | 53 | 2,051 | 38 | `nr-stroke` |
-| L11) Cervical pain | 41 | 1,610 | 39 | `nr-backpain` |
-| L12) hemi,parap&ataxia | 86 | 2,792 | 32 | `nr-hemi` |
-| L13) Dementia and Delirium | 41 | 1,543 | 37 | **`ps-geri` + `nr-delirium` — SHARED** |
-| L1,2) Psychiatric sheet | 17 | 409 | 24 | `ps-interview` (+ `ps-osce`?) |
-| L3) Somatization | 40 | 1,389 | 34 | `ps-somato` |
-| L4,5) Psychiatric symptomatology | 63 | 1,838 | 29 | `ps-symptom` |
-| L6) Myths about psychiatry | 14 | 1,440 | **102** | `ps-psychoed` |
-| L8) OCD & PTSD | 33 | 2,212 | 67 | `ps-ocd` |
-| L9,10) Mood disorders | 25 | 1,288 | 51 | `ps-mood` |
-| L11,12) Schizophrenia | 57 | 2,194 | 38 | `ps-psychosis` |
-| L14) Child Psychiatry | 29 | 1,226 | 42 | `ps-child` |
-| L15) substance related + psych emergency | 49 | 1,777 | 36 | `ps-sud` |
-| L16) Emergency Psychiatry | 46 | 1,593 | 34 | `ps-emerg` |
-| **L17) Psychopharmacology** | **31** | **239 → ✅ 3,358** | 7 → 108 | `ps-pharm` — ⚠️ **PICTURE DECK, read visually 2026-08-18; see the read write-up at the end** |
-| L18) Devices in Psychiatry | 23 | 1,822 | 79 | `ps-devices` |
-| L19) Psychotherapy | 29 | 1,304 | 44 | `ps-therapy` |
+The first version was measured with `wc -w` and **under-counted the module by 14 %** (43,665
+against 49,859), worst case **6.8 % on a single deck**. The two disagree because these caches carry
+**4,042 lone-punctuation tokens — 8.1 % of the count, and 175 standalone `•` bullets in `L12`
+alone** — which the two tools treat differently.
+
+**Every project validator — `vdraft.js`, `modcheck.js`, `val.js` — uses the JS split
+`s.split(/\s+/).filter(Boolean)`.** That is therefore the standard, and it is what §14's budget and
+the page estimator are calibrated against. **Measure sources with node, never with `wc -w`.**
+
+The consequence was not academic: the low numbers made the first split forecasts too small, and
+`nr-hemi` was briefed at "11.6 pp" when it measured 19.5 by the estimator and printed 14.
+
+The `content` column below counts only tokens containing an alphanumeric. It is the better
+*reading* measure, but **the JS column is the one to budget with**, because every earlier module was
+measured that way and comparability matters more than purity.
+
+| deck | pp | **JS words** | content | w/pp | chapter |
+|---|---|---|---|---|---|
+| L8) Cranial nerves | 92 | **3,700** | 3,446 | 40 | `nr-cranial` |
+| L17) Psychopharmacology | 31 | **3,456** | 3,055 | 111 | `ps-pharm` ✅ *picture deck, read* |
+| L12) hemi,parap&ataxia | 86 | **2,983** | 2,714 | 35 | `nr-hemi` + `nr-para` ✅ *written* |
+| L3) MOVEMENT DISORDERS | 51 | **2,699** | 2,485 | 53 | `nr-movement` |
+| L4,5) Psychiatric symptomatology | 63 | **2,441** | 1,707 | 39 | `ps-symptom` ⚠️ *30 % markup — the most bulleted deck in the module* |
+| L2) Multiple sclerosis | 68 | **2,387** | 2,212 | 35 | `nr-ms` |
+| L8) OCD & PTSD | 33 | **2,322** | 2,141 | 70 | `ps-ocd` |
+| L4) Seizures_Epilepsy | 32 | **2,321** | 2,171 | 73 | `nr-movement` |
+| L11,12) Schizophrenia | 57 | **2,251** | 2,180 | 39 | `ps-psychosis` |
+| L10) Stroke | 53 | **2,090** | 2,047 | 39 | `nr-stroke` ✅ *written* |
+| L5) Muscle Disease | 55 | **2,048** | 1,807 | 37 | `nr-lmn` |
+| L9) CNS infection | 40 | **1,924** | 1,818 | 48 | `nr-cns` |
+| L18) Devices in Psychiatry | 23 | **1,909** | 1,806 | 83 | `ps-devices` |
+| L15) substance related + psych emergency | 49 | **1,854** | 1,771 | 38 | `ps-sud` |
+| L11) Cervical pain | 41 | **1,742** | 1,589 | 42 | `nr-backpain` |
+| L13) Dementia and Delirium | 41 | **1,672** | 1,532 | 41 | **`ps-geri` + `nr-delirium` — SHARED** |
+| L16) Emergency Psychiatry | 46 | **1,597** | 1,564 | 35 | `ps-emerg` |
+| L6) Peripheral neuropathy | 44 | **1,525** | 1,465 | 35 | `nr-lmn` |
+| L6) Myths about psychiatry | 14 | **1,522** | 1,411 | 109 | `ps-psychoed` |
+| L1) INTRODUCTION AND LOCALISATION | 57 | **1,469** | 1,326 | 26 | `nr-intro` |
+| L3) Somatization | 40 | **1,464** | 1,381 | 37 | `ps-somato` |
+| L19) Psychotherapy | 29 | **1,382** | 1,303 | 48 | `ps-therapy` |
+| L9,10) Mood disorders | 25 | **1,371** | 1,284 | 55 | `ps-mood` |
+| L14) Child Psychiatry | 29 | **1,257** | 1,218 | 43 | `ps-child` |
+| L1,2) Psychiatric sheet | 17 | **473** | 384 | 28 | `ps-interview` (+ `ps-osce`?) |
+
+✅ **Every cache matches `pdftotext -layout` within a few words** — unlike ophthalmology, there is
+no hidden *extraction* failure here, and that saves a 1,116-page render.
+
+### ⚠️⚠️ BUT EXTRACTION-SOUND IS NOT CONTENT-COMPLETE — AND ONLY ONE OF THE TWO HAS BEEN CHECKED
+
+`L12` extracts perfectly **and carries nine bare-title slides** — *The pyramidal system* ·
+*Localisation of the pyramidal tract lesions* · *Cerebral lesion* · **`Brainstem lesion`** ·
+**`Brainstem lesions`** · *A spinal section* · *What impact has the lecvel [sic] of the lesion?* ·
+*What is the lesion?* ×2 · *Ataxia symptoms:*. **Three questions depend on the two brainstem
+slides, which carry no text at all.**
+
+**The deck-level ratio check that caught `L17` passes `L12` cleanly** — 35 w/slide against
+`L17`'s 7. **A PER-SLIDE ratio would have caught it.** Run that on every remaining deck before
+briefing it; the failure here is local, nine slides of 86, and a deck average cannot see it.
+
+⚠️ **And `L12` carries a skip marker that is UNRECOVERABLE FROM TEXT.** Slide 2 reads: *"All
+slides in italic are not for undergraduates, or just read it for extra infromations [sic]."*
+**A text cache carries no italics.** This is the ophthalmology `(Tutorial)` problem with **nothing
+to grep for** — everything is written at full weight, which is the safe direction, but only a render
+can say what was meant to be skipped. `L12` also prints *"Failed to load the image."* four times on
+one slide: **broken graphics in the PDF itself, which no render will recover.**
 
 ### ✅ `L17) Psychopharmacology` — the one deck that failed the ratio, now READ
 
@@ -135,24 +171,48 @@ without a lecture. Ask only if the evidence is strong, and record the answer as 
 
 ---
 
-## 4. Budgets and split forecast — before writing, the cheap way
+## 4. Budgets and split forecast — **recalibrated on this module's own printed pages**
 
 Budget = `max(source words, 25 × q)`, floor 600, **operative ceiling ~2,400 words / ~10 printed
 pages, hard shape ≤13 pp measured by printing.**
 
-### Split candidates, forecast now
+### ⚠️ USE ÷335 HERE, NOT ÷240
 
-| Chapter | source w | ÷240 | verdict |
+The first three chapters are printed, so the module has its own rate:
+
+| chapter | body words | printed | w/pp |
 |---|---|---|---|
-| **`nr-movement`** | **4,709** (L3 2,494 + L4 2,215) | **19.6 pp** | ⚠️ **SPLIT, and the title already admits it — *"Movement disorders / Epilepsy"* are two topics, not one taught over two lectures.** The §4 rule joins a topic split across lectures; it does not join two topics. Seam is the deck boundary, and it is clean |
-| **`nr-cranial`** | 3,456 | 14.4 pp | ⚠️ **likely split** — and it carries **34 questions**, the module's most. Candidate seam: the ocular nerves (III/IV/VI) against the rest, but **drive it from the `qs` links, not the anatomy** |
-| **`nr-lmn`** | 3,308 (L5 1,839 + L6 1,469) | 13.8 pp | ⚠️ **watch** — muscle vs peripheral nerve is a clean two-deck seam if it prints long |
-| `nr-hemi` | 2,792 | 11.6 pp | watch; 29 questions |
-| `nr-ms` · `L3` movement · `ps-ocd` · `ps-psychosis` | 2,194–2,494 | 9–10 pp | expected to land inside the ceiling |
-| everything else | 1,226–2,051 | 5–8.5 pp | single chapters |
+| `nr-stroke` | 3,365 | **10 pp** | 337 |
+| `nr-hemi` + `nr-para` *(as one, before the split)* | 4,687 | **14 pp** | 335 |
 
-⚠️ **`ps-interview` + `ps-osce` are the inverse problem** — 409 words for two chapters. They will run
-to the 600 floor from the book, or be told plainly that the lecture gives nothing.
+**≈335 words per printed page.** The generic ÷240 estimator forecast these at 14.0 and 19.5 and they
+printed 10 and 14 — **over-predictions of 4.0 and 5.5 pages, the latter the worst in the project.**
+A ÷240 forecast here is roughly **40 % too high**, and it has already caused one bad instinct:
+the writer proposed splitting `nr-stroke`, which never needed it.
+
+**Plan with ÷335. Clear a chapter only by printing it.**
+
+### Split candidates, re-forecast on corrected word counts
+
+| Chapter | source w | ÷335 | verdict |
+|---|---|---|---|
+| **`nr-movement`** | **5,020** (L3 2,699 + L4 2,321) | **15.0 pp** | ⚠️ **SPLIT — the only forecast split left, and the title already admits it.** *"Movement disorders / Epilepsy"* are **two topics**, not one topic taught over two lectures: the §4 rule joins the latter and does not join the former. The seam is the deck boundary and it is clean. Note both halves then sit near 7–8 pp |
+| `nr-cranial` | 3,700 | **11.0 pp** | **probably whole** — was forecast to split on the old numbers and the old divisor. It carries **34 questions, the module's most**, so if it does print over 13, drive the seam from the `qs` links, not the anatomy |
+| `ps-pharm` | 3,456 + book | 10.3 pp | whole, but ⚠️ **the book adds 4 pages and Psych ch.7 adds the antipsychotics** — watch it |
+| `nr-lmn` | 3,573 (L5 2,048 + L6 1,525) | 10.7 pp | **whole** — muscle vs peripheral nerve remains a clean two-deck seam *if* it prints long |
+| `nr-headache` | 3,647 (book ch.9) | 10.9 pp | whole; **22 questions** |
+| `ps-anxiety` + `ps-ocd` | 3,376 (book ch.3, **shared**) | — | ⚠️ **the inverse problem: ONE source for TWO chapters.** Whichever is written first must declare in its §14.5 row what it leaves to the sibling |
+| `nr-ms` · `ps-ocd` · `ps-psychosis` · `ps-symptom` | 2,251–2,441 | 6.7–7.3 pp | inside the ceiling |
+| everything else | 1,257–1,924 | 3.8–5.7 pp | single chapters |
+
+⚠️ **`ps-interview` + `ps-osce` are the sharpest inverse problem** — **473 words** for two
+chapters, and **the book has no OSCE chapter at all** (its two OSCE-shaped contents rows are QR
+video links with no page number). One or both will run at the 600 floor, and `ps-osce` may have to
+be told plainly that neither source covers it. **That is a decision to surface, not to paper over.**
+
+⚠️ **`nr-intro` is the module's other structural question**: 21 questions, a 1,469-word deck, and
+**39 printed book pages across three chapters including a 25-page `Neurology Sheet`**. Flagged by
+the book mapper as a split candidate on precedent. **Not decided — read before forecasting.**
 
 ---
 
