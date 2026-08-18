@@ -128,7 +128,23 @@ const MODULES = [
       ['nr-lmn','LMN: peripheral nerve, muscle and neuromuscular disorders'],['nr-cns','CNS infections'],
       ['nr-cranial','Cranial nerves disorders'],['nr-delirium','Delirium and Coma'],
       ['nr-headache','Headache'],['nr-stroke','Cerebrovascular stroke'],
-      ['nr-backpain','Cervical and low back pain'],['nr-hemi','Hemiparesis, paraparesis, ataxia']]}
+      ['nr-backpain','Cervical and low back pain'],
+      /* Split 2026-08-18, AFTER printing 14 pp — past the 13-page hard shape.
+         The chapter's own title named three topics, and the seam falls exactly
+         between the first and the other two, at hem-6/hem-7: 1,635 words of
+         hemiplegia against 3,052 of paraplegia and ataxia. At the measured
+         rate (4,687 w printed 14 pp = 335 w/pp) that is ~4.9 and ~9.1 pages.
+         Only ONE question sat on both sides — npqb-nr-107, Brown-Sequard —
+         and it stays with nr-hemi, where hem-6 teaches it directly; hem-11's
+         link to it is replaced by a prose cross-reference so the module-wide
+         wrong-chapter check stays clean.
+         ⚠️ The writer proposed this seam and a second at hem-13/hem-14. The
+         second was rejected: it leaves 589 words, below the §14 floor of 600.
+         It also warned half B would still be over, on a ÷240 forecast of 12.6
+         — the estimator over-predicted this chapter by 5.5 pages, its worst
+         miss in the project, so the forecast was not allowed to decide. */
+      ['nr-hemi','Hemiplegia and hemiparesis'],
+      ['nr-para','Paraparesis and ataxia']]}
   ]},
   {id:'pediatrics', name:'Pediatrics', icon:'teddy', color:'var(--peds)', hex:'#2e5f8a', groups:[
     {name:'Non-systems', chapters:[
