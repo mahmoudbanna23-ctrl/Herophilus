@@ -330,3 +330,106 @@ can be assigned to its half on sight.
 **Not established** and honestly flagged by the mapper: year, edition and ISBN (not printed);
 whether tutorial markers or star ratings exist deeper than the 26 pages read; whether any chapter
 numbers its figures; whether the QR videos duplicate printed material.
+
+---
+
+## ✅ Book ch.9 Headache · Psych ch.3 Anxiety · Psych ch.11 Treatment — READ 2026-08-18, 9,441 w
+
+Caches in `content\neuro\book\`: `neuro-ch09-headache.txt` (3,647 w) · `psych-ch03-anxiety.txt`
+(3,376) · `psych-ch11-treatment.txt` (2,418). **Both offsets re-verified from printed footers, and
+all three boundaries held exactly.**
+
+### ✅ `nr-headache` is unblocked — the chapter carries 21 of its 22 questions
+
+Ten pages: classification flowchart, a **12-item red-flag box**, migraine in full (four phases,
+abortive and preventive ladders), tension-type, cluster with **100 % O₂ at 6 L/min**, and the
+**three-column comparison table**.
+
+⚠️ **One question the chapter cannot answer: `npqb-nr-125`** — *"Migraine is best classified as
+which of the following?"*, printed key **`Nociceptive`**, distractors *neuropathy* and *VC cause
+psychiatric manifestations*. **Chapter 9 contains no pain taxonomy at all** — no
+nociceptive/neuropathic/psychogenic framework in ten pages; its only mechanistic statement is that
+*"the most accepted theory of migraine is the Neurovascular theory."* **Neuro ch.16 is being read
+for it** (its contents QRs are labelled *"Pain and pain management"*), and that chapter is
+`nr-backpain`'s source anyway — so one render serves two chapters and one orphan question.
+
+⚠️ **Six more are answerable but THINNER THAN THE KEY IMPLIES, and the writer must know which:**
+
+| q | The problem |
+|---|---|
+| `nr-133` + `nr-138` | Both hinge on an **acute-vs-long-term split for tension headache the book does not print** — it gives one undifferentiated triad of *analgesics, antidepressants and muscle relaxants*, so the chapter cannot rank them |
+| `nr-136` | Temporal arteritis: elderly + throbbing + raised ESR + steroids are printed, so the **treatment** answer is solid — but **jaw claudication and scalp tenderness, the stem's whole clinical hook, are printed nowhere** |
+| `nr-132` | Visual aura is listed first and is the only type elaborated — the chapter **never says it is the most common** |
+| `nr-122` | Thunderclap is red flag #2, so "verify the headache" holds; **the psychiatric-consultation half is not in this chapter** |
+| `nr-134` | Key is ergotamine, but the chapter **also endorses paracetamol** as an OTC migraine treatment, so it weakly discriminates its own distractor |
+
+`nr-135` is the best-served: the key is almost verbatim the printed-84 sentence.
+
+### ⚠️⚠️ A SECOND HEADING WITHOUT A BODY — and it blocks `ps-pharm`
+
+Psych ch.11 printed 263 heads **`Antipsychotics`**, teaches **indications only, as a picture**, then
+defers everything else in one red line: ***"Classes, mechanism of action & adverse effect: (See
+'schizophrenia' lecture)."*** No class, no mechanism, no adverse effect, no drug name on the page.
+
+**`ps-pharm` cannot cover antipsychotic pharmacology from ch.11.** The payload is **Psych ch.7
+Schizophrenia, printed 228–238** — being read now, and it is `ps-psychosis`'s source anyway.
+The map's `ps-pharm` cell has been **downgraded from "Full" to "partial"**. There is also **no MAOI
+adverse-effect block**: the numbered list runs 1–5 and stops.
+
+**That is the second dead heading found in two books in two days.** The rule is now
+double-confirmed: **a heading is not evidence that the chapter teaches the topic.**
+
+### The book names antidepressants where the lecture named none — and still prints no dose
+
+**25 agents across 8 classes are named, and for not one is a dose, unit, route or frequency
+printed.** The complete quantitative content of the chapter is **five items**:
+
+1. **Lithium `RANGE: 0.6-1.2 mEq/L`** — the only value with a unit, confirmed at 300 dpi
+2. Benzodiazepines **max 1 month**
+3. Serotonin syndrome — intervene **within 24 hours**
+4. Antidepressant suicide risk — **under 25 years**, first **6 months**, **4-7/1000**
+5. Discontinuation syndrome — on the drug **at least four weeks**
+
+**Monitoring parameters for four drugs**: lithium (serum range) · sodium valproate (**LFTs + CBC**) ·
+lamotrigine (**Stevens-Johnson**) · carbamazepine (**CBC / low WBC**). Cautions: paroxetine
+**pregnancy class D**, phenelzine **tyramine cheese reaction**, lithium and valproate
+**contraindicated in pregnancy and lactation**.
+
+**So `ps-pharm` gains 15 named antidepressants the lecture never named — and gains no doses.** The
+§4 fill-and-tag rule still carries the dosing, and the chapter must not present a supplied dose as
+the book's.
+
+### ⚠️ `ps-anxiety` and `ps-ocd` share one chapter — and share its whole treatment section
+
+`ps-ocd`'s **exclusive** pages: printed **194 upper half** · **197 from `C. OCD` down** · **198
+entire** (an all-figure OCD page) · **199 upper part** (PTSD/ASD). Everything else is `ps-anxiety`'s
+or jointly owned — critically, **the differential diagnosis, investigations, prognosis and the
+entire treatment section (199-201) are written ONCE for both app chapters**, including the
+OCD-specific 4-12 week onset and the clomipramine line.
+
+**⚠️ Whichever of the two is written first MUST declare in its §14.5 row what it leaves to the
+sibling.** Full page-split table at the foot of the anxiety cache.
+
+### ⚠️ A LIST IS NOT COVERAGE — a softer failure, worth naming
+
+The anxiety chapter's DSM-5 lists name **sixteen disorders** and expand **seven** (+ASD in a Note).
+**Listed and never taught:** hoarding · trichotillomania · excoriation · body dysmorphic ·
+adjustment · reactive attachment · disinhibited social engagement · separation anxiety · selective
+mutism. Do not let a list in the source become a claim of coverage in the chapter.
+
+### Three self-contradictions in the headache chapter — recorded, NOT reconciled
+
+- **TTH prevalence 40 %** (printed 85) vs **45 %** (printed 88)
+- **TTH sex ratio `M:F 2:3`** (printed 85) vs **`F:M = 2:1`** (printed 88) — *not the same number*
+- **Aura duration 5-20 min** (printed 82 prose) vs **5-80 min** (printed 83 poster)
+
+Also: the cluster-headache **`Histamine`** aetiology appears **only** in the printed-88 table cell —
+the cluster prose on 86-87 gives no pathogenesis at all. And the anxiety chapter's section lettering
+runs **A, B, —, —, —, C, D**.
+
+### Housekeeping confirmed
+
+**No `(Tutorial)`/`(T)` marker on any of these 23 pages** — the count now stands at **none found in
+49 of 292**, still recorded as *not found*, never *proved absent*. **No star ratings. No figure
+numbering anywhere** across 20+ graphics. **Nothing illegible** — everything resolved at 150 dpi,
+and re-cropping two posters and a table at 300 changed no character.

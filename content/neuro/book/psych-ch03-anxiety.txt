@@ -1,0 +1,470 @@
+# NEUROPSYCHIATRY (ASM MINDS) — PSYCHIATRY, CHAPTER 3: ANXIETY AND RELATED DISORDERS
+# Source: Semester 8\Neuro\Theoritical\Book\neuropsychiatry.pdf
+# Printed pp. 193-201  =  PDF pp. 205-213.  Offset verified on this chapter's own footers:
+#   PDF 205 prints footer "3 ... 193"  ->  PDF = printed + 12  (PSYCHIATRY half).
+# Boundary verified: PDF 214 prints footer "4 ... 202" and is the CHAPTER 4 opener
+#   ("Mood Disorders"). Chapter 3 really does end at printed 201.
+# Transcribed 2026-08-18 from 150 dpi renders. Nothing completed from outside knowledge.
+# No (Tutorial)/(T) marker, no star-glyph rating, no figure numbering anywhere in this chapter.
+#
+# ⚠️ WHICH APP CHAPTER EACH PAGE SERVES — see the split table at the foot of this file.
+#   In one line: printed 193-196 + 200-201 are SHARED spine (`ps-anxiety` owns them, `ps-ocd`
+#   needs 193-194 and 200-201 too); printed 197-198 are `ps-ocd` (OCD); printed 199 is `ps-ocd`
+#   (PTSD/ASD) plus the shared differential diagnosis.
+
+---
+
+## printed p.193  (PDF p.205)  [psychiatry half]
+
+[Chapter opener. Light-blue banner with a circle-cut left end carrying a large white `3`; title in
+a white rounded handwriting face; dark grey strip beneath reading `PSYCHIATRY`.]
+
+# Anxiety And Related Disorders
+
+### Background
+
+- **Fear** is "physiological" from a **known** thing; **Anxiety** is fearing from the **unknown**.
+- The main difference between physiological fear & anxiety and related **disorders** is the
+  presence of **significant distress & impairment** in activities & relations.
+- **Prevalence:** Common conditions (2% to 13%). Female to male ratio is about 1.5:1
+- **Features:** Psychotic features are **absent**. Insight is **intact**.
+- Mostly caused by an interaction between genetic predisposition & external stressors or traumas,
+  leading to appearance of different disorders → They are **illnesses** NOT weakness of personality
+  nor weakness of religious beliefs. They are underdiagnosed & undertreated.
+- **Classification (DSM-5 Categories):**
+  - I. Anxiety disorders.
+  - II. Obsessive compulsive & other related disorders.
+  - III. Trauma- & stressor- related disorders.
+
+[NOTE BOX — pale-blue full-width box, lightbulb glyph top left, centred word `Note`.]
+
+> - Comorbidities between **different types** of anxiety disorders are common.
+> - Also, Comorbidities between **depressive symptoms (or disorder)** and different types of
+>   anxiety disorders are common.
+> - Finally, Comorbidities with **substance use disorders** are common.
+
+### I. Anxiety disorders:
+
+- **Generalized Anxiety Disorder (GAD).**
+- **Specific phobia.**
+- **Social anxiety disorder (social phobia).**
+- **Panic disorder.**
+- **Agoraphobia.**
+- Separation anxiety disorder.
+- Selective mutism.
+- Substance/ medication induced anxiety disorder.
+- Anxiety disorder due to another medical condition (Hyperthyroidism / Pheochromocytoma)
+
+[Note the typography: the first five are printed BOLD, the last four are not. The five bold ones
+are exactly the five that get a `CLINICAL FEATURES` sub-section later; the four non-bold ones are
+never expanded anywhere in the chapter.]
+
+[Running footer, bottom left, blue script face: `3  Anxiety and Related Disorders`. Page number
+bottom right over a grey bar. Same on every page of this chapter — not repeated below.]
+
+---
+
+## printed p.194  (PDF p.206)  [psychiatry half]
+
+### II. Obsessive-compulsive & other related disorders:
+
+- **Obsessive compulsive disorder (OCD).**
+- Body dysmorphic disorder.
+- Hoarding disorder.
+- Trichotillomania (hair pulling disorder).
+- Excoriation disorder (skin picking disorder).
+- Substance/ medication induced obsessive-compulsive & other related disorders.
+- Obsessive-compulsive & other related disorders due to another medical condition
+
+### III. Trauma- & stressor- related disorders:
+
+- **Posttraumatic stress disorder (PTSD).**
+- **Acute stress disorder (ASD).**
+- Adjustment disorder.
+- Reactive attachment disorder.
+- Disinhibited social engagement disorder.
+
+[Again: only the bolded entries (OCD, PTSD, ASD) are expanded later. Body dysmorphic disorder,
+hoarding, trichotillomania, excoriation, adjustment disorder, reactive attachment disorder and
+disinhibited social engagement disorder are LISTED AND NEVER TAUGHT anywhere in this chapter.]
+
+## CLINICAL FEATURES: (according to DSM-5 criteria)
+
+### A. Generalized anxiety disorder
+
+- This disorder is characterized by **excessive anxiety and worry** occurring for **6 months or
+  more**. The worrying is **difficult to control**.
+- **Anxiety & Worry** are accompanied by at least **3 of the following symptoms**:
+  - Restlessness or feeling keyed-up/ on edge.
+  - Being easily fatigued.
+  - Difficulty concentrating or the mind going blank.
+  - Irritability.
+  - Muscle tension.
+  - Sleep disturbance (such as difficulty falling or staying asleep or unsatisfying sleep).
+- The disorder causes significant distress & impairment in activities & relations.
+
+[NOTE BOX]
+> Although not a diagnostic feature, **suicidal ideation** and **completed suicide** have been
+> associated with generalized anxiety disorder.
+
+Differential diagnostics have to be excluded.
+
+---
+
+## printed p.195  (PDF p.207)  [psychiatry half]
+
+[MNEMONIC POSTER, full width, navy title bar, no figure number:]
+
+> **Mnemonic: WATCHERS - Generalized Anxiety Disorder (GAD) Symptoms**
+>
+> - **W** — Worry: Excessive, uncontrollable concern
+> - **A** — Anxiety: Feeling on edge, difficult to manage
+> - **T** — Tension: Muscle soreness or aches
+> - **C** — Concentration: Mind goes blank
+> - **H** — Hyperarousal: Irritability, easily startled
+> - **E** — Energy loss: Easily fatigued
+> - **R** — Restlessness: Unable to sit still
+> - **S** — Sleep disturbance: Insomnia or restless sleep
+
+### B. Specific phobia:
+
+- **Exposure to certain objects** (e.g., **animals** like cats, **environmental** factors like
+  heights, or **blood-injuries** like needles) provokes **immediate & marked fear** that is **out
+  of proportion** to the actual danger.
+- This condition lasts for **6 months or more**, causing the patient to always try to **avoid**
+  these objects.
+- The disorder results in significant distress & impairment in activities & relations.
+- Differential diagnoses have to be excluded.
+
+### Social anxiety disorder (social phobia):
+
+[Heading printed in the blue underlined display face, WITHOUT a letter — the chapter's lettering
+runs A, B, then drops out for social phobia, panic disorder and agoraphobia, and resumes at C for
+OCD and D for PTSD. Recorded as printed.]
+
+- **Exposure to social situations** (such as **talking or eating** in front of others) provokes
+  **immediate & marked fear** that is **out of proportion** to the actual danger.
+- This condition lasts for **6 months or more**, causing the patient to always try to **avoid**
+  these situations.
+- The disorder results in significant distress & impairment in activities & relations.
+- Differential diagnoses have to be excluded.
+
+[Lower half of printed 195 is blank.]
+
+---
+
+## printed p.196  (PDF p.208)  [psychiatry half]
+
+### Panic disorder:
+
+- This disorder involves **recurrent episodes** of **panic attacks**, which are defined as a
+  **sudden onset** of **intense fear or discomfort**, usually reaching a **peak within 10
+  minutes**.
+- Attacks are associated with a group of systemic symptoms, including at least **4 of the
+  following**:
+  - Palpitations, pounding heart, or accelerated heart rate
+  - Sweating
+  - Trembling or shaking
+  - Shortness of breath or feeling of smothering
+  - Choking sensation
+  - Chest pain or discomfort
+  - Nausea or abdominal distress
+  - Feeling dizzy, unsteady, lightheaded, or faint
+  - Derealization (feeling of unreality) or depersonalization (being detached from oneself)
+  - Fear of losing control or going crazy
+  - Fear of dying
+  - Paresthesia (numbness or tingling sensations)
+  - Chills or hot flashes
+- Patients experience **fear of recurrent attack** and worry about the **implications** or
+  consequences (e.g., losing control, going crazy, dying), resulting in **significant behavioral
+  changes** (e.g., avoiding situations or locations).
+- The disorder results in significant distress & impairment in activities & relations.
+- Differential diagnoses have to be excluded.
+
+[FIGURE, right of the bullet list, no number, no caption. A circular "panic cycle" diagram: a
+central distressed figure with four labelled symptom nodes — PALPITATIONS, SWEATING, SHORTNESS OF
+BREATH, DIZZINESS — enclosed by two arcs labelled **ANTICIPATORY ANXIETY** ("Fear of future
+attacks.") at the top and **BEHAVIORAL AVOIDANCE** ("Avoiding triggers/situations.") at the
+bottom.]
+
+[MNEMONIC POSTER, full width, navy title bar, no figure number:]
+
+> **Mnemonic: STUDENTS FEAR the 3Cs - Panic Attack Symptoms**
+>
+> Sweating · Trembling · Unsteadiness · Depersonalization · Elevated rate · Nausea · Tingling ·
+> Shortness of breath · Fear of dying/ losing control · Chest pain · Choking · Chills/hot flashes
+
+---
+
+## printed p.197  (PDF p.209)  [psychiatry half]
+
+### Agoraphobia:
+
+- Exposure to **2 or more** of the following situations provokes **immediate & marked fear**:
+  - Using public transportation
+  - Being in open spaces
+  - Being in closed places
+  - Standing in line or in a crowd
+  - Being outside the home alone
+- The patient always tries to **avoid** these situations because of thoughts that **escape might be
+  difficult**.
+- This fear is **out of proportion** to the actual danger and persists for **6 months or more**.
+- The disorder results in significant distress & impairment in activities & relations.
+- Differential diagnoses have to be excluded.
+
+[NOTE BOX]
+> Again, GAD, phobias & panic disorder are illnesses not weakness of personalities nor religious
+> beliefs
+
+### C. Obsessive-compulsive disorder (OCD):
+
+- **Obsessions** are defined as **recurrent, persistent & usually unwanted thoughts, urges or
+  images.**
+  - The patient knows that they are a **product of his/her mind.**
+  - Their presence causes **marked distress.**
+  - The patient tries to **ignore or stop them**, but it is **not easy** to reach this goal
+    (**stoppage of obsessions**).
+- **Compulsions** consist of **repetitive behaviors** (e.g., **handwashing**) or **mental acts**
+  (e.g., **counting**) performed as a response & as a **trial to stop obsessions**.
+- **Obsessions & compulsions** are **time consuming** (taking **more than one hour per day**).
+- The **duration** of symptoms is **6 months or more**.
+- The disorder causes significant distress & impairment in activities & relations.
+- Differential diagnoses have to be excluded.
+
+[Lower half of printed 197 is blank.]
+
+---
+
+## printed p.198  (PDF p.210)  [psychiatry half]
+
+[THIS PAGE IS ENTIRELY FIGURES — no body text of the book's own at all. Three separate graphics:]
+
+**1. Poster, "OCD: THE CYCLE & IMPACT"** (no figure number):
+- **OBSESSIONS:** Intrusive Thoughts — UNWANTED · DISTRESSING · PERSISTENT
+- **COMPULSIONS:** Repetitive Actions — RITUALS · TEMPORARY RELIEF · TIME-CONSUMING
+- **TIME & DURATION:** > 1 Hour/Day · 6+ Months
+- **IMPACT:** Significant Distress · **EXCLUDE:** Other Diagnoses
+- Beside it, a four-panel **"OCD CYCLE"** loop with a cartoon figure: OBSESSIONS → ANXIETY →
+  COMPULSIONS → RELIEF → (back to obsessions).
+
+**2. Two clinical illustrations** (a woman washing her hands at a sink; the same woman scrubbing a
+floor with cleaning bottles), with a patient quotation printed between them:
+> "I am embarrassed that my hands are so chapped. I never told you before about my fear of germs
+> and constant washing because I was afraid you would think I was crazy."
+
+**3. A MEDCOMIC cartoon panel**, credited `WWW.MEDCOMIC.COM  © 2017 JORGE MUNIZ`, titled
+**OBSESSIVE-COMPULSIVE DISORDER**:
+- "RECURRENT, INTRUSIVE, UNDESIRED THOUGHTS (OBSESSIONS) AND/OR UNCONTROLLABLE REPETITIVE ACTS
+  (COMPULSIONS)"
+- "OBSESSIONS CAUSE ANXIETY OR GRIEF"
+- "OBSESSIONS AND COMPULSIONS ARE TIME CONSUMING AND CAUSE SIGNIFICANT DISTRESS IN A PATIENT'S
+  DAILY LIFE"
+- "COMPULSIONS CAN CONSIST OF PHYSICAL BEHAVIORS OR MENTAL ACTS, AND MAY TEMPORARILY RELIEVE
+  ANXIETY"
+- speech bubble: "WASH YOUR HANDS 10 TIMES, OR ELSE."
+- ** "TREATMENT OPTIONS: SSRIs (TITRATED UP), CLOMIPRAMINE, BEHAVIORAL THERAPY" **
+  ⚠️ This is the ONLY place in the chapter where OCD-specific drug treatment is stated as a
+  treatment plan, and it is inside a third-party cartoon, not the book's own prose. The word
+  "TITRATED UP" is the only titration instruction in the chapter. No dose is printed.
+
+---
+
+## printed p.199  (PDF p.211)  [psychiatry half]
+
+### D. Posttraumatic stress disorder (PTSD):
+
+- **Exposure to a severe stressor** is required (e.g., combat violence, sexual assault, physical
+  assault, near death experience, or witnessed death of a loved one).
+  - The stressor can be experienced **directly** (witnessed directly) or **indirectly** (hearing of
+    exposure of a close relative to severe trauma).
+- Diagnosis requires symptoms in **4 symptom domains** for **more than one month**:
+  - **Intrusion:** Intrusive memories, flashbacks (acting as if traumatic events were recurring),
+    nightmares.
+  - **Avoidance:** Avoidance of trauma-related cues, thoughts, or feelings.
+  - **Negative cognition and mood:** Memory impairment regarding the trauma, self-blame, negative
+    evaluation of self.
+  - **Alteration of arousal and reactivity:** Insomnia, hypervigilance, irritable or aggressive
+    behavior.
+- The disorder causes significant distress & impairment in activities & relations.
+
+[FIGURE, top right, no number, no caption: a painting of a soldier asleep in bed with a wife beside
+him, a thought-cloud above showing a battlefield explosion and troops.]
+
+[TWO NOTE BOXES SIDE BY SIDE, each with the lightbulb glyph.]
+
+> **Note**
+> **Acute Stress Disorder (ASD) vs. PTSD:**
+> - If the condition starts **immediately after trauma** and persists for **at least 3 days up to a
+>   month**, it is called **Acute Stress Disorder (ASD).**
+> - If the condition starts or persists **after one month**, it is named **Posttraumatic Stress
+>   Disorder (PTSD).**
+
+> **Mnemonic "TRAUMA"**
+> - **T**raumatic event (exposure)
+> - **R**e-experiencing (flashbacks, nightmares)
+> - **A**voidance (of stimuli associated with trauma)
+> - **U**nable to function (social/occupational impairment)
+> - **M**onth (Duration > 1 month)
+> - **A**rousal (hypervigilance, startle response)
+
+### Differential diagnosis:
+
+In all types of anxiety and related disorders, the following must be excluded:
+- **Other types of anxiety disorders.**
+- **Other types of mental disorders** (e.g., if a patient fears insects because they believe they
+  are "advanced tools," this suggests **psychosis**, not phobia).
+- **Substance/medication induced** anxiety & related disorders (e.g., cannabis).
+- Anxiety & related disorders due to **another medical condition** (e.g., hyperthyroidism,
+  myocardial infarction).
+
+---
+
+## printed p.200  (PDF p.212)  [psychiatry half]
+
+### Investigations:
+
+- Investigations to exclude differential diagnosis (e.g., **TSH** or **urine screening for illicit
+  drugs**).
+- Investigations for **psychopharmacological treatment initiation or follow up** (e.g., **serum Na
+  level** for patients starting treatment, due to fear of **hyponatremia** as a side effect).
+
+[NOTE BOX]
+> Choice of investigations (if needed) depends on the Clinical assessment
+
+### Prognosis:
+
+- Generally, most cases show **significant improvement** with treatment.
+- **Better prognosis** is associated with:
+  - Absence of comorbid **substance use disorder**.
+  - Absence of comorbid **depression**.
+  - Presence of **good social support**.
+
+### Treatment:
+
+#### Psychotherapy:
+- This is the **main line of treatment** for **mild cases**.
+- In **moderate & severe cases**, a **combination** of psychopharmacological & psychotherapeutic
+  intervention yields better results than pharmacotherapy alone.
+- **Common methods:**
+  - Relaxation techniques
+  - Systematic desensitization
+  - Thought stopping technique
+  - Exposure & response prevention
+
+#### Psychopharmacology:
+- Needed for **moderate & severe cases**.
+- **Clinical improvement** typically starts in **2-8 weeks** (note: **4-12 weeks for OCD**).
+- **Duration:** The **least duration** of treatment is **12 months** while the patient is **free of
+  symptoms**.
+  - **Stoppage** before 12 months increases the likelihood of **relapse**.
+- **Important Notes:**
+  - Intervention is **NOT harmful**.
+  - They **WON'T cause addiction** (except for **benzodiazepines** if used for a prolonged period).
+  - Usage **DOESN'T mean weakness** of personality (anxiety disorders are **Illnesses**, NOT
+    weakness).
+
+---
+
+## printed p.201  (PDF p.213)  [psychiatry half]
+
+#### 1. Antidepressants:
+
+[NOTE BOX]
+> The term "Antidepressants" is a **misnomer** because these drugs can be used for treating
+> **different conditions other than depression**. **Anxiety disorders** are an example of this
+> misnomer.
+
+**a. Selective Serotonin Reuptake Inhibitors (SSRIs):**
+- Includes: **fluoxetine, paroxetine, sertraline, fluvoxamine, citalopram & escitalopram**.
+- Used for **all types** of anxiety.
+- **Side effects: nausea, headache,** initial **irritability, insomnia** or somnolence, & **sexual
+  side effects**.
+
+**b. Other Antidepressants:**
+- **Tricyclic Antidepressants (TCAs):** e.g., **clomipramine** (for **OCD**).
+- **Serotonin Noradrenaline Reuptake Inhibitors (SNRIs):** e.g., **venlafaxine**.
+- **Trazodone:** Used for treatment of **insomnia & initial irritability** at the start of SSRIs.
+
+#### 2. Other medications:
+- **Benzodiazepines** (minor tranquilizers): Used for **NOT more than 1 month**.
+- **Propranolol:**
+  - Used for **social anxiety** occurring only in **definite situations** (e.g., exams).
+  - Given **one hour before** the situation.
+  - **Contraindicated** in conditions like **bronchial asthma**.
+
+** ⚠️ NO DOSE, NO UNIT, NO ROUTE and NO mg-per-day figure is printed for ANY drug on this page.
+The only quantitative prescribing instructions in the whole chapter are TIMING ones:
+benzodiazepines "NOT more than 1 month"; propranolol "one hour before the situation"; treatment
+duration "12 months"; onset "2-8 weeks (4-12 weeks for OCD)". **
+
+### Hospitalization: Usually **not needed** except in situations such as:
+1. **Suicidal trials**.
+2. Severe **panic attacks**.
+3. **Observation & investigations** of differential diagnosis (e.g., **substance use disorder**).
+4. Presence of **comorbid conditions** (e.g., severe **comorbid depression**).
+
+### ECT (Electroconvulsive therapy):
+- Generally, the response of anxiety & related disorders is **poor** for ECT.
+- However, ECT can be used for treating **suicidal trials** or **severe comorbid depression**.
+
+### Sources for further readings:
+
+| | |
+|---|---|
+| DSM-5 | Current diagnosis & treatment Psychiatry |
+| Medscape | Kumar & Clark's Clinical Medicine: Chapter: Psychology medicine |
+
+[The table has no header row and no corner label; it is printed exactly as two rows of two cells.
+This is the ONLY "Sources for further readings" block seen in either of the two psychiatry
+chapters transcribed in this pass — it does NOT appear in Psychiatry ch.11.]
+
+---
+
+# END OF CHAPTER 3. PDF 214 = printed 202 = CHAPTER 4 opener, "Mood Disorders". Boundary held.
+
+## WHICH APP CHAPTER EACH PAGE SERVES (reader's analysis, not book text)
+
+`ps-anxiety` and `ps-ocd` share this one book chapter. The book's own DSM-5 three-way split on
+printed 193 is the seam, and the chapter is built so that the shared material sits at BOTH ends:
+
+| Printed | PDF | Content | Serves |
+|---|---|---|---|
+| 193 | 205 | Background, fear-vs-anxiety, prevalence 2-13% & F:M 1.5:1, DSM-5 three-way split, comorbidity Note, list I (anxiety disorders) | **Shared spine.** `ps-anxiety` primary; `ps-ocd` needs the split and the comorbidity Note |
+| 194 | 206 | Lists II (OCD & related) and III (trauma & stressor), then **GAD** criteria + suicide Note | **Split page.** Top half (lists II & III) is `ps-ocd`; bottom half (GAD) is `ps-anxiety` |
+| 195 | 207 | WATCHERS mnemonic, **specific phobia**, **social phobia** | `ps-anxiety` |
+| 196 | 208 | **Panic disorder** criteria, panic-cycle figure, STUDENTS FEAR the 3Cs mnemonic | `ps-anxiety` |
+| 197 | 209 | **Agoraphobia** criteria + Note; then **OCD** criteria | **Split page.** Top ~half `ps-anxiety`; from `C. Obsessive-compulsive disorder` down is `ps-ocd` |
+| 198 | 210 | **All-figure page: OCD cycle poster, hand-washing illustrations, MEDCOMIC OCD panel** | `ps-ocd`, entirely |
+| 199 | 211 | **PTSD** criteria, soldier figure, **ASD vs PTSD** Note, **TRAUMA** mnemonic, then shared **Differential diagnosis** | **Split page.** PTSD/ASD block is `ps-ocd`; the DD block is shared |
+| 200 | 212 | Investigations, Prognosis, Treatment — psychotherapy & psychopharmacology principles | **Shared.** Written for "all types of anxiety and related disorders" — covers both app chapters, incl. the OCD-specific 4-12 week onset |
+| 201 | 213 | Drug list, hospitalization, ECT, further reading | **Shared.** Includes the OCD-specific clomipramine line |
+
+**Clean summary for the §14.5 register:** `ps-ocd`'s exclusive pages are **printed 197 (lower
+half), 198, 199 (upper part)** plus the lists on **194 (upper half)**. Everything else is
+`ps-anxiety`'s or is jointly owned. **The general sections — Differential diagnosis (199),
+Investigations, Prognosis and the whole of Treatment (200-201) — are written once for both, so
+whichever app chapter is written first must state in its register row that it is leaving (or
+sharing) them.**
+
+## Reader's notes on this chapter (not book text)
+
+1. **No (Tutorial) / (T) marker on any of the 9 pages.**
+2. **No star-glyph importance rating.**
+3. **No figure numbering.** Eight graphics on these pages; not one carries a number or the word
+   "Figure". The MEDCOMIC panel is the only one carrying any attribution.
+4. **Heading-with-no-body check — ONE REAL FINDING.** Every heading has a body, BUT the two DSM-5
+   lists on printed 193-194 promise **sixteen named disorders** and the chapter's
+   `CLINICAL FEATURES` section expands only **seven** (GAD, specific phobia, social phobia, panic
+   disorder, agoraphobia, OCD, PTSD) plus ASD in a Note. **Nine disorders are named and never
+   taught**: separation anxiety disorder, selective mutism, substance/medication induced anxiety
+   disorder, anxiety disorder due to another medical condition, body dysmorphic disorder, hoarding
+   disorder, trichotillomania, excoriation disorder, adjustment disorder, reactive attachment
+   disorder, disinhibited social engagement disorder (eleven, counting the substance/medical
+   variants in list II). **A list is not coverage** — a writer promising `ps-ocd` will cover
+   hoarding or trichotillomania cannot pay it from this book chapter.
+5. **The lettering sequence is broken in the book**: A. GAD → B. Specific phobia → (unlettered)
+   Social anxiety disorder → (unlettered) Panic disorder → (unlettered) Agoraphobia →
+   C. OCD → D. PTSD. Recorded as printed, not corrected.
+6. **Nothing illegible.** All nine pages read cleanly at 150 dpi.
+7. The chapter prints **no dose, unit or route for any drug**, only timing. See the flagged block
+   on printed 201.

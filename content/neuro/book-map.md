@@ -192,7 +192,8 @@ language but nothing else, and a page can be assigned to its half on sight.
 - **`Note` boxes**: a pale-blue full-width box with a **lightbulb glyph** at the top left and the
   centred word `Note`. Seen twice (psych printed 184, 193). This is the book's one recurring boxed
   device in the sample.
-- **Colour-coded highlighter is used as a comparison instrument** — printed 89's tension/migraine/
+- ⚠️ **CORRECTED 2026-08-18, after ch.9 was read in full: the tension/migraine/cluster comparison table SPANS printed 88–89**, not 89 alone — it starts immediately below the three captioned faces on 88. **Anyone rendering only 89 would have got half a table.** The general rule this earns: **a table can span a page break; check both sides of every page boundary.**
+- **Colour-coded highlighter is used as a comparison instrument** — printed 88–89's tension/migraine/
   cluster table highlights each column's discriminators in a different colour (green / pink / yellow).
   A transcription that drops the highlighting loses the comparison.
 - Tables are ruled with a pale-blue header row and blue row labels.
@@ -278,7 +279,7 @@ Book ranges are **printed** pages; add 11 for a neurology PDF page, 12 for a psy
 | Child Psychiatry | `ps-child` | Psych 6 Child Psychiatry | 222–227 | Full (opens on neurodevelopmental disorders / intellectual disability) |
 | Substance use disorder | `ps-sud` | Psych 9 Substance-related disorders | 249–255 | Full |
 | Emergency Psychiatry | `ps-emerg` | Psych 10 Emergency — psychiatry medicine | 256–260 | Full (suicide risk and management is its spine) |
-| **Psychopharmacology** | **`ps-pharm`** | **Psych 11 Treatment in psychiatry [Psychopharmacology]** | **261–264** | **Full, and titled with the app chapter's own word.** See below. |
+| **Psychopharmacology** | **`ps-pharm`** | **Psych 11 Treatment in psychiatry [Psychopharmacology]** | **261–264** | ⚠️ **PARTIAL — downgraded 2026-08-18 after the chapter was read.** Antidepressants and mood stabilisers are covered; **ANTIPSYCHOTICS ARE DEFERRED WHOLESALE** — printed 263 teaches indications as a picture and then prints one red line, *"Classes, mechanism of action & adverse effect: (See 'schizophrenia' lecture)"*. **A heading without a body.** The payload is **Psych ch.7 Schizophrenia, printed 228–238**. There is also no MAOI adverse-effect block: the numbered list runs 1–5 and stops. |
 | Devices in Psychiatry | `ps-devices` | Psych 12 Devices in psychiatry | 265–270 | Full |
 | Psychotherapy | `ps-therapy` | Psych 13 Clinical approach to Psychotherapy | 271–277 | Full |
 

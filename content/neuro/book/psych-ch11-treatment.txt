@@ -1,0 +1,293 @@
+# NEUROPSYCHIATRY (ASM MINDS) — PSYCHIATRY, CH.11: TREATMENT IN PSYCHIATRY [PSYCHOPHARMACOLOGY]
+# Source: Semester 8\Neuro\Theoritical\Book\neuropsychiatry.pdf
+# Printed pp. 261-264  =  PDF pp. 273-276.  Offset verified on this chapter's own footers:
+#   PDF 273 prints footer "11 ... 261"  ->  PDF = printed + 12  (PSYCHIATRY half).
+# Boundary verified: PDF 277 prints footer "12 ... 265" and is the CHAPTER 12 opener
+#   ("Devices in Psychiatry"). Chapter 11 really does end at printed 264. Four pages, as mapped.
+# Transcribed 2026-08-18. 150 dpi for prose; the printed-261 ANTIDEPRESSANTS poster and the
+# printed-264 MOOD STABILIZERS poster were re-rendered and cropped at 300 dpi.
+# Nothing completed from outside knowledge. No drug value is inferred.
+# No (Tutorial)/(T) marker, no star-glyph rating, no figure numbering anywhere in this chapter.
+#
+# ⚠️ THE HEADLINE RESULT FOR `ps-pharm`, stated plainly:
+#   ** THIS CHAPTER PRINTS EXACTLY ONE NUMERIC DRUG VALUE WITH A UNIT — lithium serum range
+#      0.6-1.2 mEq/L (printed 264). **
+#   ** NO mg dose, NO route, NO frequency and NO mg/kg is printed for ANY of the 25 named agents. **
+#   Everything else quantitative is a TIME limit or a RISK figure, listed at the foot of this file.
+#   The chapter's real payload is: 25 named drugs in 8 classes, class-by-class adverse effects,
+#   4 monitoring parameters, and 5 special-consideration blocks.
+
+---
+
+## printed p.261  (PDF p.273)  [psychiatry half]
+
+[Chapter opener. Light-blue banner, circle-cut left end with a large white `11`; title in the white
+rounded handwriting face across two lines; dark grey `PSYCHIATRY` strip beneath.]
+
+# Treatment in psychiatry [Psychopharmacology]
+
+[The bracketed word `[Psychopharmacology]` is on the page but NOT in the table of contents, which
+lists this chapter as `Treatment in psychiatry`.]
+
+[FULL-WIDTH INFOGRAPHIC POSTER — the page's dominant object, roughly the top half. No figure
+number, no caption. Hand-drawn/AI illustration style. Read at 300 dpi.]
+
+> ## ANTIDEPRESSANTS
+>
+> **Centre node: `TREATMENT HUB` (a brain), with ten indication branches:**
+> - MAJOR DEPRESSIVE DISORDER
+> - DYSTHYMIA
+> - ANXIETY DISORDERS, OCD
+> - EATING DISORDERS
+> - CHRONIC PAIN, NEUROPATHIC PAIN
+> - MIGRAINE
+> - ADHD
+> - ADDICTION
+> - SLEEP DISORDERS
+>
+> **Six class boxes across the foot of the poster — the chapter's drug inventory:**
+>
+> | # | Class box, as printed | Expansion, as printed | Mechanism glyph | Named drugs, as printed |
+> |---|---|---|---|---|
+> | 1) | **TCAs** | (Tricyclic) | [tricyclic ring structure] | **Amitriptyline · Imipramine · Clomipramine** |
+> | 2) | **SSRIs** | (Selective Serotonin) | 5-HT, `REUPTAKE INHIBITION` | **Fluoxetine · Paroxetine · Sertraline · Fluvoxamine · Citalopram · Escitalopram** |
+> | 3) | **SNRIs** | (Serotonin-Norepinephrine) | 5-HT + NE, `DUAL REUPTAKE INHIBITION` | **Venlafaxine · Duloxetine** |
+> | 4) | **NDRI** | (Noradrenaline Dopamine) | NE → DA, `REUPTAKE INHIBITION` | **Bupropion** |
+> | 5) | **NaSSAs** | (Noradrenergic & Specific Serotonergic) | `SPECIFIC ANTAGONIST` | **Mirtazapine** |
+> | 6) | **MAOIs** | (Monoamine Oxidase Inhibitors) | skull-and-crossbones, cheese, wine glass, `CAUTION` | **Phenelzine** — `NOT USED A LOT (TYRAMINE CHEESE REACTION)` |
+>
+> **Banner across the bottom of the poster:**
+> **ADVERSE EFFECTS: A MAJOR CHALLENGE** — "DIFFICULTY TOLERATING ADVERSE EFFECTS IS THE MOST
+> COMMON REASON FOR ANTIDEPRESSANT DISCONTINUATION."
+>
+> ⚠️ **Verified at 300 dpi: the poster prints NO dose, NO unit, NO route and NO frequency for any
+> of the fifteen drugs it names.** It is a class-and-example map, nothing more.
+
+### Adverse Effects:
+
+#### 1) TCAs:
+- **Anticholinergic:** peripheral (dry mouth, constipation, blurring of vision, urine retention) &
+  central (confusion, memory loss especially in elderly)
+- **Antihistaminic:** weight gain, sedation.
+- **Antiadrenergic:** postural hypotension, syncope, sexual dysfunction.
+- **Quinidine like action:** prolongation of QTc interval, arrhythmias.
+
+#### 2) SSRIs:
+Nausea, GIT upset, headache, insomnia, anxiety (at initiation), and sexual dysfunctions. Most of
+these side effects **stop with continuation of treatment.**
+
+#### 3) SNRIs:
+GIT upset, elevation of blood pressure, insomnia, headache and sexual dysfunctions.
+
+[Running footer, bottom left: `11  Treatment in psychiatry [Psychopharmacology]`. Page number
+bottom right. Same on all four pages — not repeated below.]
+
+---
+
+## printed p.262  (PDF p.274)  [psychiatry half]
+
+#### 4) NDRI:
+Insomnia, decrease appetite, risk of seizures. *Usually NO sexual dysfunctions*
+
+#### 5) NaSSAs:
+Sedation & increase appetite and weight. Usually NO sexual dysfunctions.
+
+[⚠️ There is NO `6) MAOIs` adverse-effect entry. The numbered adverse-effect list runs 1-5 and
+stops; MAOIs are named in the poster and never given an adverse-effect block, beyond the poster's
+own `TYRAMINE CHEESE REACTION` label.]
+
+### Other adverse effects & special considerations:
+
+**1) Serotonin syndrome: (uncommon)**
+- Almost any medication involved with serotonin has the potential to cause it.
+- *Manifestations:* restlessness, fever, myoclonus, insomnia and confusion
+- It is serious, uncommon & appears at *high doses or with combinations*
+- Proper medical intervention (**within 24 hours**) decreases mortality a lot.
+
+**2) Pregnancy:** Avoidance of prescription is better unless they are highly needed. *Paroxetine is
+class D*.
+
+**3) Antidepressant-induced mania:** More with TCAs, SSRIs, SNRIs & NaSSAs.
+
+[NOTE BOX — pale-blue, lightbulb glyph, centred word `Note`]
+> NDRI (Bupropion) usually does not induce mania
+
+**4) Suicide:**
+- All antidepressants have this risk.
+- Those aged *under 25 years* have the highest risk.
+- The highest risk occurs within **1st (6) months** of medication use.
+- The ratio is **4-7/1000**.
+
+**5) Sexual side-effects:** usually reversible
+
+**6) Discontinuation syndrome**
+
+People with discontinuation syndrome have been on an antidepressant for at **least four weeks and**
+have recently stopped taking the medication, either **abruptly or after a fast taper.**
+
+### Common symptoms include:
+- **Flu-like symptoms** (nausea, vomiting, diarrhea, headaches, sweating)
+- **Sleep disturbances** (insomnia, nightmares, constant sleepiness [sic — the opening bracket is
+  never closed on this bullet]
+- **Sensory/movement disturbances** (imbalance, tremors, vertigo, dizziness, electric-shock-like
+  experiences)
+- **Mood disturbances** (dysphoria, anxiety, agitation)**.**
+- **Cognitive disturbances** (confusion and hyper arousal).
+
+---
+
+## printed p.263  (PDF p.275)  [psychiatry half]
+
+## Antipsychotics (Also known as neuroleptics or major tranquilizers)
+
+### Indications:
+
+[FIGURE ONLY — no prose whatsoever under this heading. Hand-drawn poster, no figure number, no
+caption. Central node `ANTIPSYCHOTICS (NEUROLEPTICS, MAJOR TRANQUILIZERS)` over an illustrated
+head, with six numbered indication tabs:]
+
+> 1) SCHIZOPHRENIA
+> 2) SCHIZOAFFECTIVE DISORDER
+> 3) BIPOLAR DISORDER
+> 4) PSYCHOTIC DEPRESSION
+> 5) TREATMENT-RESISTANT MAJOR DEPRESSION (ADJUNCT)
+> 6) TICS & CHOREA
+
+[Then, centred, in the red display face — the whole remaining content of the antipsychotics
+section:]
+
+**Classes, mechanism of action & adverse effect: (See "schizophrenia" lecture)**
+
+> ⚠️⚠️ **THIS IS A HEADING WITH NO BODY — the exact failure mode the brief asks about, and it is
+> real here.** The `Antipsychotics` section of this chapter teaches **indications only**, as a
+> picture. **No antipsychotic class, no mechanism, no adverse effect and no drug name appears
+> anywhere on this page.** The four antipsychotics this chapter names (Aripiprazole, Risperidone,
+> Olanzapine, Quetiapine) appear ONLY on the next page, inside the mood-stabilizer poster, as
+> mood stabilizers.
+> **Where the deferred content lives:** the chapter points at the *"schizophrenia" lecture* — i.e.
+> **Psychiatry ch.7 Schizophrenia, printed 228-238 (PDF 240-250)**, which was NOT read in this
+> pass. **`ps-pharm` cannot cover antipsychotic classes, MOA or side effects without reading
+> Psych ch.7.** Record this as a reading debt, not as a gap in the material.
+
+[The bottom two-thirds of printed 263 is blank.]
+
+---
+
+## printed p.264  (PDF p.276)  [psychiatry half]
+
+[⚠️ **THIS PAGE IS PRINTED IN LANDSCAPE** — rotated 90° relative to the rest of the book. It is
+the only rotated page in the chapter. Read at 300 dpi in crops.]
+
+[FULL-PAGE INFOGRAPHIC POSTER, no figure number, no caption:]
+
+> ## MOOD STABILIZERS
+> *Balancing Emotional Extremes*
+>
+> ### INDICATIONS
+> - BIPOLAR DISORDER
+> - RECURRENT MAJOR DEPRESSIVE DISORDER
+> - BORDERLINE PERSONALITY DISORDER
+> - SCHIZOAFFECTIVE DISORDER
+>
+> ### CLASSES & SIDE EFFECTS
+>
+> **1) LITHIUM — `RANGE: 0.6-1.2 mEq/L`**
+> - **TOXICITY** (Polyuria, Polydipsia, Nausea, Diarrhea, Ataxia)
+> - **COMMON** (Lethargy, Weight Gain)
+> - **LESS COMMON** (Blurred Vision, Tremors, Mildly Ill)
+> - **CONTRAINDICATED IN PREGNANCY & LACTATION**
+>
+> **2) ANTICONVULSANTS**
+> - **a. SODIUM VALPROATE** — glyphs for stomach, tremor, liver; `POLYCYSTIC OVARY`; `CBC`
+> - **b. LAMOTRIGINE** — `BIPOLAR DEPRESSION`; warning triangle `STEVENS-JOHNSON SYNDROME`
+> - **c. CARBAMAZEPINE** — `CBC` → `LOWER WHITE BLOOD CELL COUNT`
+>
+> **3) ANTIPSYCHOTICS** — **Aripiprazole, Risperidone, Olanzapine, Quetiapine**
+> - `MOOD STABILIZING EFFECT (Even without Psychosis)`
+>
+> **4) BENZODIAZEPINES** — **Diazepam, Midazolam, Clonazepam, Lorazepam, Alprazolam**
+> - `MAX 1 MONTH` [clock glyph]
+> - **GABA** → ↓ **EXCITABILITY**
+> - **INDICATIONS:** PANIC, GAD, INSOMNIA, SEIZURES, ALCOHOL WITHDRAWAL
+> - **ADVERSE EFFECTS:** AMNESIA, RESPIRATORY DEPRESSION, DROWSINESS, HYPOTENSION,
+>   DISINHIBITION, PARADOXICAL EFFECT, TOLERANCE & DEPENDENCE
+
+[Beside the poster, a ruled two-column table, printed in the book's own body face and explicitly
+headed as an addition to the picture:]
+
+### Notes not included in the illustration
+
+| Anticonvulsants | | Benzodiazepines |
+|---|---|---|
+| **Sodium valproate:** - Stomach irritation, weight gain, tremors, menstrual irregularities and polycystic ovary. - **Liver function and CBC should be monitored.** - Contraindicated in pregnancy & lactation. | **Lamotrigine:** - Bipolar depression (maintenance phase). - **Monitoring Stevens–Johnson syndrome** (very rare but potentially fatal skin condition) is highly important. | - **Must NOT be used more than ONE month** - Disinhibition especially in elderly - Paradoxical effect: increased anxiety, aggression, impulsivity and irritability |
+
+[The table's header row spans `Anticonvulsants` over the first two columns and `Benzodiazepines`
+over the third. There is no corner cell.]
+
+---
+
+# END OF CHAPTER 11. PDF 277 = printed 265 = CHAPTER 12 opener, "Devices in Psychiatry".
+# Boundary held. The chapter is four printed pages exactly, as the book-map predicted.
+
+## COMPLETE DRUG INVENTORY OF THIS CHAPTER (reader's index, built from the pages above)
+
+25 agents, 8 classes. Columns: is a **Dose/unit** printed? a **Route**? a **Frequency**?
+a **Monitoring parameter**? an **Interaction**? — answered strictly from what is on the page.
+
+| Agent | Class, as printed | Dose/unit | Route | Freq. | Monitoring | Interaction / caution |
+|---|---|---|---|---|---|---|
+| Amitriptyline | TCAs (Tricyclic) | **no** | no | no | no | class-level: QTc prolongation, anticholinergic |
+| Imipramine | TCAs | **no** | no | no | no | as above |
+| Clomipramine | TCAs | **no** | no | no | no | as above |
+| Fluoxetine | SSRIs | **no** | no | no | no | serotonin syndrome at high dose/combination |
+| Paroxetine | SSRIs | **no** | no | no | no | **pregnancy class D** (printed 262) |
+| Sertraline | SSRIs | **no** | no | no | no | as class |
+| Fluvoxamine | SSRIs | **no** | no | no | no | as class |
+| Citalopram | SSRIs | **no** | no | no | no | as class |
+| Escitalopram | SSRIs | **no** | no | no | no | as class |
+| Venlafaxine | SNRIs | **no** | no | no | no | class: ↑ blood pressure |
+| Duloxetine | SNRIs | **no** | no | no | no | as class |
+| Bupropion | NDRI | **no** | no | no | no | risk of seizures; does NOT usually induce mania |
+| Mirtazapine | NaSSAs | **no** | no | no | no | sedation, ↑ appetite/weight |
+| Phenelzine | MAOIs | **no** | no | no | no | **tyramine cheese reaction**; "NOT USED A LOT" |
+| **Lithium** | Mood stabilizer | **YES — `RANGE: 0.6-1.2 mEq/L`** (serum level, not a dose) | no | no | **YES — implied by the range** | contraindicated in pregnancy & lactation |
+| Sodium valproate | Anticonvulsant / mood stabilizer | **no** | no | no | **YES — liver function and CBC** | contraindicated in pregnancy & lactation; polycystic ovary |
+| Lamotrigine | Anticonvulsant / mood stabilizer | **no** | no | no | **YES — monitor for Stevens-Johnson syndrome** | — |
+| Carbamazepine | Anticonvulsant / mood stabilizer | **no** | no | no | **YES — CBC (lower WBC)** | — |
+| Aripiprazole | Antipsychotic (as mood stabilizer) | **no** | no | no | no | — |
+| Risperidone | Antipsychotic (as mood stabilizer) | **no** | no | no | no | — |
+| Olanzapine | Antipsychotic (as mood stabilizer) | **no** | no | no | no | — |
+| Quetiapine | Antipsychotic (as mood stabilizer) | **no** | no | no | no | — |
+| Diazepam | Benzodiazepine | **no** | no | no | no | **max 1 month**; tolerance & dependence |
+| Midazolam | Benzodiazepine | **no** | no | no | no | as class |
+| Clonazepam | Benzodiazepine | **no** | no | no | no | as class |
+| Lorazepam | Benzodiazepine | **no** | no | no | no | as class |
+| Alprazolam | Benzodiazepine | **no** | no | no | no | as class |
+
+**Every quantitative statement in the chapter, exhaustively:**
+1. Lithium **0.6-1.2 mEq/L** (printed 264) — the only value with a unit.
+2. Benzodiazepines **MAX 1 MONTH** / "Must NOT be used more than ONE month" (printed 264).
+3. Serotonin syndrome — intervention **within 24 hours** decreases mortality (printed 262).
+4. Antidepressant suicide risk — highest **under 25 years**, within the **1st (6) months**,
+   ratio **4-7/1000** (printed 262).
+5. Discontinuation syndrome — on the drug **at least four weeks** (printed 262).
+
+**Classes named but never given a dose, and not given adverse effects either:** MAOIs (no
+adverse-effect block) and antipsychotics as antipsychotics (deferred to the schizophrenia chapter).
+
+## Reader's notes on this chapter (not book text)
+
+1. **No (Tutorial) / (T) marker on any of the four pages.**
+2. **No star-glyph importance rating.**
+3. **No figure numbering.** Three posters, none numbered or captioned.
+4. **HEADING WITH NO BODY — CONFIRMED, printed 263.** `Antipsychotics` → `Indications:` carries a
+   picture and then defers classes, mechanism and adverse effects to the schizophrenia lecture.
+   This is the single biggest structural fact about the chapter. See the flagged block above.
+5. **Nothing illegible.** Both dense posters were re-rendered at 300 dpi and every string resolved.
+6. **`ps-pharm` cannot be written from these four pages alone.** The chapter has no
+   antipsychotic pharmacology, no MAOI adverse effects, and no dosing of any kind. The material
+   that would fill those holes sits in **Psych ch.7 Schizophrenia (printed 228-238)** for
+   antipsychotics and **Psych ch.3 Anxiety, printed 200-201** for the anxiolytic-prescribing
+   principles (onset 2-8 weeks, 12-month minimum duration, benzodiazepine 1-month rule,
+   propranolol one hour before the situation) — the latter is already cached at
+   `content\neuro\book\psych-ch03-anxiety.txt`.

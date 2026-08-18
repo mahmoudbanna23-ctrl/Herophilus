@@ -1,0 +1,535 @@
+# NEUROPSYCHIATRY (ASM MINDS) — NEUROLOGY, CHAPTER 9: HEADACHE
+# Source: Semester 8\Neuro\Theoritical\Book\neuropsychiatry.pdf
+# Printed pp. 80-89  =  PDF pp. 91-100.  Offset verified on this chapter's own footers:
+#   PDF 91 prints footer "80"  ->  PDF = printed + 11  (NEUROLOGY half).
+# Boundary verified: PDF 101 prints footer "90" and is the CHAPTER 10 opener
+#   ("CLINICAL APPROACH TO MULTIPLE SCLEROSIS"). Chapter 9 really does end at printed 89.
+# Transcribed 2026-08-18 from 150 dpi renders (300 dpi crop used on the printed-88 table).
+# Nothing here is completed from outside knowledge. [illegible] marks anything unreadable.
+# No (Tutorial)/(T) marker, no star-glyph rating and NO figure numbering anywhere in this chapter.
+
+---
+
+## printed p.80  (PDF p.91)  [neurology half]
+
+[Chapter opener. Dark-navy `CHAPTER` band with a large numeral `9` in a navy block at the right
+edge; title in a pale-blue band, serif small-caps.]
+
+# HEADACHE
+
+### Definition
+
+- Headache is pain that occurs in one or more areas of the head.
+- **Headache disorders** are characterized by **recurrent** headache attacks.
+
+### Epidemiology
+
+- Half of the adult population have had a headache at least once within the last year.
+- Headache disorders are the most common disorders of the nervous system.
+
+### Classification of headache
+
+It is mainly classified into:
+
+- **Primary type**: in which there is NO structural or metabolic abnormality underlined.
+- **Secondary type:** either structural abnormality (extracranial or intracranial) or metabolic
+  disorder.
+
+[FLOWCHART, full width, no figure number, no caption. Root node `Headache` (navy pill with a
+cartoon of a woman holding her head). Two branches:]
+
+**Primary**
+- Tension type headache
+- Migraine
+- Cluster headache
+[each of the three carries a cartoon face beneath it; no further text on the primary side]
+
+**Secondary**
+- **Intracranial source** -> Temporal arteritis | Subarachnoid hemorrhage | Metabolic disorders |
+  Tumors | Meningitis
+- **Extracranial source** -> [bulleted directly in the node:]
+  - Acute sinusitis
+  - Eyes/orbit (e.g., error of refraction and acute glaucoma)
+  - Ears (e.g., otitis media)
+  - Teeth
+
+[The intracranial leaves carry their own bullets, printed as three text blocks beneath the row:]
+
+**Temporal arteritis**
+- A systemic, inflammatory, vascular syndrome that predominantly affects the temporal arteries.
+- Occurs in elderly.
+- Throbbing headache
+- Elevated ESR
+- Treated with steroids.
+
+**Subarachnoid hemorrhage / Metabolic disorders** [one block spanning both nodes]
+- Associated with hypoxia, hypercapnia, and anemia, possibly related to the cerebral vasodilation
+  that may accompany these conditions.
+
+**Tumors / Meningitis** [one block spanning both nodes; a small brain glyph sits under `Tumors`]
+- 50% of patients with brain tumors have headache.
+- It is also associated with features of raised ICP (blurred vision and projectile vomiting).
+- The headache worsens on awakening, cough, sneeze and strain.
+
+---
+
+## printed p.81  (PDF p.92)  [neurology half]
+
+[Running header top right in the rounded blue display face: `Headache`. Blue bracket-corner motif
+top left. Same on every interior page of this chapter — not repeated below.]
+
+### Diagnosis of headache
+
+- Because no biologic markers or diagnostic tests exist to determine headache type, **history is
+  the single most important element** in the evaluation of the headache patient.
+- Imaging is used to exclude structural causes for secondary headaches (CT is a simple rapid
+  screening method to exclude hemorrhage as a cause of headache. If we suspect other etiologies
+  MRI brain with contrast should be considered).
+
+[BOXED — a pale-red/pink ruled box; the title is printed in a red rounded display face, centred.
+This is not the book's blue lightbulb `Note` box; it is a plain ruled box.]
+
+> **Red flags in a case of headache**
+>
+> 1) Subacute and progressive cause of headache
+> 2) Severe headache "Thunderclap"
+> 3) New onset in adult life (>40years)
+> 4) Change in headache pattern (increase in pain, increase in frequency, associatednew [sic —
+>    printed as one word, no space] features and low response to treatment)
+> 5) Associated with unexplained nausea and vomiting.
+> 6) Nocturnal headache and Awakening headache
+> 7) Precipitation or worsening with Valsalva.
+> 8) Confusion
+> 9) Seizures
+> 10) Abnormal neurological examination
+> 11) Presence of fever or signs of meningeal irritation.
+> 12) Association with diminution of vision in one or both eyes
+
+[INFOGRAPHIC POSTER, full width, AI-generated style, no figure number.
+Title: **"Headache Red Flags: When to Seek Urgent Care"**. Two columns.
+
+LEFT COLUMN — "Critical Onset & Changing Patterns":
+- *Sudden "Thunderclap" Onset* — "Extremely severe pain that reaches maximum intensity almost
+  instantly"
+- *New Onset After Age 40* — "Any first-time or severe headache appearing in adults over 40 years
+  old"
+- *Progressive Pattern Changes* — "Significant increases in pain frequency, intensity, or a lack of
+  response to treatment"
+
+RIGHT COLUMN — "Concerning Physical & Neurological Signs":
+- *Neurological & Cognitive Impairment* — "Presence of confusion, seizures, or abnormal results
+  during a neurological examination"
+- *Systemic Symptoms* — "Headaches associated with fever, signs of meningeal irritation, or
+  unexplained nausea and vomiting"
+- *Visual & Physical Triggers* — "Diminished vision or pain precipitated/worsened by Valsalva
+  maneuvers (straining)"
+
+The poster adds no fact that the red-flag box does not already carry.]
+
+---
+
+## printed p.82  (PDF p.93)  [neurology half]
+
+[Section banner, pale-blue full width, serif small-caps:]
+
+# MIGRAINE
+
+### Definition
+
+- A paroxysmal primary headache disorder, characterized by recurrent intense throbbing headache
+  that affects the head unilaterally or bilaterally usually associated with nausea, vomiting,
+  photophobia or phonophobia.
+- It may be preceded by visual, sensory and/or motor manifestations.
+
+### Epidemiology:
+
+- Migraine affects 1 in 10 people worldwide.
+- More seen in **females**. F:M 3:1
+- Migraines commonly begin between the ages of 15 and 25 and have an increased incidence in adults
+  aged 35 to 45.
+
+### Pathophysiology
+
+The mechanisms of migraine remain incompletely understood.
+
+*[centred, red italic:]* **The most accepted theory of migraine is the Neurovascular theory.**
+
+### Clinical picture
+
+**Clinical types of migraine**
+- Migraine WITHOUT aura [**Common** migraine]; **most common type** of migraine
+- Migraine WITH aura [**Classic** migraine]
+
+**Phases of migraine's attack**
+- **Prodromal phase**
+- **Aura**
+- **Pain phase**
+- **Postdrome phase**
+
+**1) The prodrome phase**
+
+Hours or days before the headache (altered mood, irritability, depression or euphoria, fatigue,
+yawning, excessive sleepiness, craving for certain food (e.g., chocolate), stiff muscles especially
+in the neck), increase urination, diarrhea and constipation.
+
+**2) The aura**
+- Immediately precedes the headache.
+- Aura comprises focal neurological phenomena that precede or accompany the attack.
+- They appear gradually over 5 to 20 minutes.
+- Last less than 60 minutes
+
+---
+
+## printed p.83  (PDF p.94)  [neurology half]
+
+- **Types of aura:**
+  - Visual (Flashing of lights, scotomas, Zig-zag lines or Difficulty in focusing).
+  - Somatosensory
+
+**3) The pain phase:**
+- The headache is initially unilateral and localized in the frontotemporal and ocular area, but
+  pain can be felt anywhere around the head or neck.
+- Pain intensity is moderate to severe.
+- Throbbing in character.
+- Intensifies with movement or physical activity. Many patients prefer to lie quietly in a dark
+  room.
+- The headache typically lasts from 4-72 hours.
+- *Associated symptoms.*
+  - Nausea and/or vomiting [1/3 of patients]
+  - Photophobia and/or phonophobia
+
+**4) The postdrome phase:**
+- The effects of migraine may persist for some days after the main headache has ended.
+- Impaired thinking for a few days after the headache has passed.
+- Tired or "hungover".
+- Head pain.
+- Cognitive difficulties.
+- Gastrointestinal symptoms.
+- Mood changes.
+- Weakness.
+
+[INFOGRAPHIC POSTER, full width, no figure number. Two titled halves:
+
+**"CLINICAL PROFILE & DEMOGRAPHICS"**
+- *3:1 Female-to-Male Ratio* — "Significantly more prevalent in women, typically peaking between
+  ages 35 and 45."
+- *Paroxysmal Throbbing Pain* — "Characterized by recurrent, intense headaches often accompanied by
+  nausea and light sensitivity."
+- *Migraine Without Aura is Most Common* — "Also known as 'Common Migraine,' this is the most
+  frequent clinical type diagnosed."
+
+**"THE 4-PHASE LIFECYCLE OF AN ATTACK"**
+- *PHASE 1 & 2: WARNING SIGNS (PRODROME & AURA)* — "Involves early mood changes and neurological
+  phenomena like flashing lights lasting under 60 minutes."
+  - sub-table PRODROME | AURA:
+    - "Hours or days before headache" | "immediately precedes or accompanies headache"
+    - "Cravings, neck stiffness, mood shifts" | "Visual flashes, zig-zag lines, focal numbness"
+    - "Long-term (days)" | "Short-term (5 to 80 minutes)"
+      ** !! The poster prints "5 to 80 minutes" here. The chapter body on printed 82 prints
+      "gradually over 5 to 20 minutes". The poster disagrees with the prose; recorded as printed,
+      not reconciled. **
+- *PHASE 3: THE PAIN PHASE (4-72 HOURS)* — "Intense frontotemporal throbbing that worsens with
+  physical activity or movement."
+- *PHASE 4: POSTDROME RECOVERY* — "A 'hangover' period period [sic — the word 'period' is printed
+  twice] lasting days, marked by cognitive difficulties, fatigue, and weakness."]
+
+---
+
+## printed p.84  (PDF p.95)  [neurology half]
+
+### Treatment
+
+#### A. Abortive therapy (During the attack)
+
+*[centred, red italic:]* **Pain relievers are most effective when administered EARLY in the attack
+i.e., before the pain phase (a golden rule)**
+
+- Resting or sleeping in a dark room may help ease the symptoms faster.
+- Over the counter migraine treatments: aspirin and paracetamol are often used.
+- Non-steroidal anti-inflammatory drugs (**NSAIDs**) such as ibuprofen.
+- Anti-sickness treatments: used along with pain killers at the onset of symptoms and in the case
+  of troublesome nausea e.g., metoclopramide.
+
+- **Triptans (first choice):**
+  - It relieves pain by constricting blood vessels.
+  - It is a reasonable first choice for patients with moderate to severe disability from migraine.
+  - It can be given orally or subcutaneously.
+  - *Mechanism of action:* 5HT receptor agonist
+  - *Examples*: **Sumatriptans**
+  - *Precautions of use:* ischemic heart or cerebrovascular diseases.
+  - *NOT to be given with **ergots**.*
+
+- **Ergots: (less commonly used):** Dihydroergotamine, an ergot derivative, is considered to be
+  more effective with fewer side effects than ergotamine.
+
+#### B. Preventive Migraine Treatments
+
+These are groups of drugs that can be given to a patient to decrease the frequency of migraine's
+attacks.
+
+**Types of preventive therapy:**
+
+**A. Medical treatment**
+- **Antihypertensives:** Beta blockers "propranolol" - Calcium channel blocker "verapamil"
+- **Antidepressants**: tricyclics "*Amitriptyline*"
+- **Anti-epileptics:** sodium valproate and **Topiramate (drug of choice)**
+- **Cyproheptadine:** This drug may be used in children.
+- **Monoclonal antibodies.**
+
+**B. Lifestyle modifications:**
+- Maintain regular sleep patterns.
+- Eat regular meals.
+- Reduce/Limit Stress
+- Avoid "known" triggers (i.e., certain foods).
+
+** NOTE ON DOSES: this chapter names migraine drugs but prints NO dose, unit or frequency for any
+of them. The only numeric drug instruction in the whole chapter is the cluster-headache oxygen
+line on printed 87 (100% oxygen, facial mask, 6 L/min). **
+
+---
+
+## printed p.85  (PDF p.96)  [neurology half]
+
+[INFOGRAPHIC POSTER at the top of the page, full width, no figure number. Migraine treatment.
+Panels:
+
+- *THE GOLDEN RULE: ACT EARLY* — "Pain relievers are most effective when taken early, before the
+  pain phase begins."
+- *ABORTIVE THERAPY (STOPPING THE ATTACK)*
+- *TRIPTANS: THE FIRST CHOICE* — "These medications constrict blood vessels to relieve moderate to
+  severe migraine disability."
+- *OPTIMIZE YOUR ENVIRONMENT* — "Resting or sleeping in a dark room can help ease symptoms faster."
+- *PREVENTIVE THERAPY (REDUCING FREQUENCY)*
+- *TOPIRAMATE: DRUG OF CHOICE* — "This anti-epileptic is a primary medical option for decreasing
+  migraine frequency."
+- *ESTABLISH REGULAR ROUTINES* — "Maintain regular sleep patterns and eat meals at consistent
+  times."
+- *IDENTIFY AND LIMIT TRIGGERS* — "Reduce stress and avoid known food triggers to minimize the risk
+  of attacks."
+
+Plus a small ruled sub-table headed **MEDICATION COMPARISON**:
+
+| | COMMON EXAMPLES | KEY NOTE |
+|---|---|---|
+| OVER-THE-COUNTER | Aspirin, Paracetamol, Ibuprofen | Often used for general relief. |
+| TRIPTANS | Sumatriptan | Avoid if you have heart or cerebro-vascular disease. |
+| ANTI-SICKNESS | Metoclopramide | Used alongside painkillers to treat nausea. |
+
+No dose, unit, route or frequency appears anywhere in this poster.]
+
+[Section banner, pale-blue full width, serif small-caps:]
+
+# TENSION-TYPE HEADACHE
+
+### Epidemiology
+
+- Tension-type headaches (TTH) is **the most common type of primary headache**, with a prevalence
+  in the general population about 40%.
+  ** !! The comparison table on printed 88 gives TTH incidence as **45%**. The book contradicts
+  itself between printed 85 (40%) and printed 88 (45%). Both recorded as printed. **
+- More common in **female** [M: F 2:3].
+  ** !! Printed exactly as `[M: F 2:3]` here — i.e. male:female = 2:3. The printed-88 table gives
+  the same ratio the other way round as `F:M = 2:1`. These are NOT the same number
+  (2:3 -> F:M = 3:2 = 1.5:1, versus 2:1). Both recorded as printed; not reconciled. **
+
+### Etiology
+
+**Contraction of neck and scalp muscles 2ry to:**
+- Stress and/or anxiety
+- Poor posture
+- Depression
+
+### Clinical Picture:
+
+**Pain is:**
+- Pressing or tightening (non-pulsatile quality), described as "fullness, tightness/squeezing,
+  pressure," or "bandlike"
+- Bilateral and occipitonuchal or bifrontal pain
+- Duration of 30 minutes to 7 days
+- No nausea or vomiting. No Photophobia or phonophobia
+- May occur acutely under emotional distress or intense worry
+- Insomnia and difficulty concentrating
+- Often present upon rising or shortly thereafter
+- Muscular tightness or stiffness in neck, occipital, and frontal regions
+
+---
+
+## printed p.86  (PDF p.97)  [neurology half]
+
+### Treatment
+
+#### A. Lifestyle modification
+- Regular exercise, balanced meals, and adequate sleep.
+- Manage stress.
+- Avoid caffeinated drinks.
+
+#### B. Medications
+
+A triad of **analgesics**, **antidepressants** and **muscle relaxants**.
+
+** No agent is NAMED for tension-type headache anywhere in the chapter — only the three classes.
+No dose, unit, route or frequency. **
+
+[INFOGRAPHIC POSTER, full width, no figure number. Tension-type headache. Panels:
+
+**"Clinical Profile & Symptoms"**
+- *Non-Pulsatile "Band-like" Pain* — "Described as bilateral pressure or tightness, lasting from 30
+  minutes to 7 days."
+- *40%* — "Affects roughly 40% of the general population. The Most Common Primary Headache, with a
+  higher prevalence in females."
+- *Absence of Migraine Features* — "Characterized specifically by the lack of nausea, vomiting,
+  photophobia, or phonophobia."
+- *Triggered by Muscle Contraction* — "Stress, Anxiety, Depression, or Poor Physical posture"
+
+**"Causes & Management"**
+- *Lifestyle & Stress Modification* — Regular exercise | Adequate sleep | Avoiding caffeinated
+  drinks
+- *The Medication Triad* — "Management typically involves analgesics, antidepressants, and muscle
+  relaxants." (capsule labelled Analgesics / Antidepressants / Muscle Relaxants)]
+
+[Section banner, pale-blue full width, serif small-caps:]
+
+# CLUSTER HEADACHE
+
+### Epidemiology
+
+- The least common of the 3 types of primary headache.
+- CH usually begins in middle adult life (30s - 40s).
+- CH is more common in **males** than in females; M: F=4:1.
+
+### Clinical picture
+
+- Attacks of cluster headache (CH) are typically short and occur with a **clear periodicity**,
+  typically, a patient experiences **1-2 cluster periods per year, each lasting 2 weeks to 3
+  months.**
+
+[Remainder of printed 86 is blank below this line.]
+
+---
+
+## printed p.87  (PDF p.98)  [neurology half]
+
+- **The pain of CH is manifested as follows:**
+  - **Character:** Excruciating, stabbing, sharp, and lancinating (as if the eye is being pushed
+    out), rather than throbbing
+  - **Location:** Unilateral, in the periorbital, retro-orbital. The pain tends to remain on the
+    same side during the cluster period.
+  - **Onset:** Sudden, peaking in 10-15 minute is [sic — "minute is", no plural, no comma]
+    accompanied by various cranial parasympathetic symptoms, including the following: ipsilateral
+    lacrimation or conjunctival injection
+  - **Pain is accompanied by various cranial parasympathetic symptoms, including the following:**
+    - Nasal stuffiness or rhinorrhea
+    - Ipsilateral eyelid edema
+    - Ipsilateral miosis or ptosis
+    - Ipsilateral forehead and facial perspiration
+
+### Treatment
+
+**a. Abortive treatment**
+- Inhalation 100% oxygen via facial mask at 6 L/min
+- Corticosteroids: They are intended for intermittent use during acute flareups.
+
+**b. Preventive treatment:** Lithium, **Verapamil**, Topiramate, Corticosteroids.
+
+[INFOGRAPHIC POSTER, full width, no figure number. Cluster headache. Panels:
+
+**"Clinical Presentation & Symptoms"**
+- *Predominantly Affects Males (4:1 Ratio)* — "Typically begins in middle adult life, most commonly
+  between the 30s and 40s."
+- *Excruciating Unilateral Pain* — "Severe stabbing or lancinating pain centered around the
+  periorbital or retro-orbital area."
+- *Cranial Parasympathetic Symptoms* — labelled around a face: Ipsilateral tearing | Nasal
+  stuffiness | Eyelid edema, miosis/ptosis
+
+**"Therapeutic Management"**
+- *Immediate Abortive Therapy* — "Inhalation of 100% oxygen via facial mask at 6 L/min during acute
+  attacks."
+- *Core Preventive Medications* — "Primary options to reduce the frequency of attacks." (bottles
+  labelled Verapamil, Lithium)
+- *Targeted Corticosteroid Use* — "Intended for intermittent use specifically during acute
+  flareups."
+
+plus a sub-table **"Pharmacological Management Quick Reference"**:
+
+| Strategy | Treatment Options |
+|---|---|
+| Abortive | 100% Oxygen, Corticosteroids |
+| Preventive | Verapamil, Lithium, Topiramate |
+
+The poster's preventive list DROPS Corticosteroids, which the prose includes.]
+
+---
+
+## printed p.88  (PDF p.99)  [neurology half]
+
+[Top of page: three captioned face illustrations in a pink-headed strip, no figure number:
+`Migraine Headache` / `Tension Headache` / `Cluster Headache`, each with a small sub-label
+`Migraine` / `Tension` / `Cluster` + superscript `a` — the superscript is unexplained and there is
+no footnote `a` anywhere on the page or the next. The migraine face is shaded over one hemiface
+(fronto-orbital), the tension face over a horizontal band across the forehead, the cluster face
+over one eye.]
+
+### THE THREE-COLUMN COMPARISON TABLE
+
+[Full-width ruled table, header cells colour-tinted: **Migraine = green**, **Tension = pink/rose**,
+**Cluster = yellow**. Discriminators inside the cells are highlighted in the matching colour — the
+highlighting IS the comparison instrument and is preserved below with `==` marks.
+The table STARTS on printed 88 and CONTINUES onto printed 89.
+NOTE: the book-map says this table sits on printed 89. It in fact spans printed 88-89.
+Blank cells below are blank IN THE BOOK — recorded as blank, never filled in.]
+
+| | **Migraine** | **Tension** | **Cluster** |
+|---|---|---|---|
+| **Incidence** | 10% (2nd M/C) | 45% (M/C of 1ry headache) | Least common 1ry headache ‏قِلَّة [Arabic marginal gloss, printed inside the cell] |
+| **Gender** | F:M = 3:1 | F:M = 2:1 | ==M==:F = 4:1 |
+| **Age** | M/C: 15-25Y. Have an increased incidence in 35-45Y. | *(blank)* | Middle adult life (30s-40s) |
+| **Etiology (Pathogenesis)** | ==Neurovascular== theory is the most accepted | ==Contraction on neck== & scalp muscles 2ry to: · ==Stress== and/or ==anxiety== · Poor posture · Depression | ==Histamine== |
+| **Onset** | *(blank)* | · May occur acutely under emotional distress or intense worry · Upon rising or shortly thereafter | ==Sudden==, peaking in 10-15 min. |
+| **Course** | Intermittent (paroxysmal) | *(blank)* | Short and occur with a clear periodicity. Typically, a patient experiences 1-2 cluster periods per year, each lasting 2 weeks to 3 months |
+| **Duration** | 4-72 H. | 30min. – 7 Days | Min. – 2 H. |
+| **Frequency / day** | Once | *(blank)* | 1-5 times |
+| **Association** | 1. ==Nausea ± vomiting== (1/3 of pt.) 2. ==Photophobia ± phonophobia== 3. May be preceded by visual, sensory and/or motor manifestations (==Aura==) | 1. ==Insomnia== and difficulty concentrating (signs & symptoms of depression and anxiety) 2. ==Muscular tightness== or ==stiffness in neck==, occipital, and ==frontal== regions. | Various cranial ==**parasympathetic**== symptoms, including the following: · Ipsilateral ==lacrimation== or conjunctival injection · Nasal stuffiness or ==rhinorrhea== · Ipsilateral ==eyelid edema== · Ipsilateral ==miosis== or ==ptosis== · Ipsilateral ==forehead and facial perspiration== |
+| **Increase** | Movement Or physical activity | *(blank)* | *(blank)* |
+| **Decrease** | 1. Resting 2. Lie quietly in a ==dark room== 3. ==Aspirin== / ==Ibuprofen== / ==Paracetamol== | Treatment | Treatment |
+| **Character** | ==Throbbing== | Fullness / Tightness / ==Squeezing== / Pressure / ==Band-like== | ==Excruciating==, ==stabbing==, ==sharp==, and lancinating (as ==if the eye is being pushed out==), rather than throbbing |
+| **Intensity** | Moderate: Severe | *(blank)* | Very severe (==awaken the pt. from sleep== & go to hospital) ‏قاتل [Arabic marginal gloss, printed inside the cell, in red] |
+| **Site** | Initially **unilateral** and localized in the frontotemporal and ocular area, but pain can be felt anywhere around the head or neck and may be **bilaterally** [sic — "bilaterally", adverb] | **Bilateral** and occipitonuchal or bifrontal pain | ==**Unilateral**==, in the periorbital, retro orbital. The pain tends to remain on the same side during the cluster period. |
+
+** !! The `Etiology` cell is the only place in the entire chapter where **Histamine** is named as
+the cluster-headache mechanism. The cluster-headache prose on printed 86-87 gives no pathogenesis
+at all. **
+
+[The row split across the page break: `Incidence` through the first lines of `Association` are on
+printed 88; the rest of `Association` and the rows `Increase`, `Decrease`, `Character`,
+`Intensity`, `Site` are on printed 89.]
+
+---
+
+## printed p.89  (PDF p.100)  [neurology half]
+
+[Continuation of the comparison table only — transcribed in full above so the table reads as one
+object. `Site` is the last row; the lower half of printed 89 is blank. This is the last page of
+Chapter 9.]
+
+---
+
+# END OF CHAPTER 9. PDF 101 = printed 90 = CHAPTER 10 opener, "CLINICAL APPROACH TO MULTIPLE
+# SCLEROSIS". Boundary held exactly as the book-map predicted.
+
+## Reader's notes on this chapter (not book text)
+
+1. **No (Tutorial) / (T) marker of any kind on any of the 10 pages.**
+2. **No star-glyph importance rating.**
+3. **No figure numbering.** Not one illustration, poster or table in this chapter carries a number
+   or the word "Figure". The three faces on printed 88 carry a superscript `a` with no footnote.
+4. **Every heading has a body.** No banner heading whose content is a cross-reference elsewhere.
+   Checked on all 16 headings across the 10 pages.
+5. **Nothing was illegible at 150 dpi.** The printed-88 table was re-cropped at 300 dpi to confirm
+   the Association row; no character changed.
+6. **Three internal contradictions recorded above, none resolved:** TTH prevalence 40% (p.85) vs
+   45% (p.88); TTH sex ratio `M:F 2:3` (p.85) vs `F:M = 2:1` (p.88); aura duration `5 to 20 minutes`
+   (p.82 prose) vs `5 to 80 minutes` (p.83 poster).
+7. **Secondary headache is taught ONLY inside the printed-80 flowchart.** There is no secondary-
+   headache prose section anywhere in the chapter — temporal arteritis, SAH, tumour, meningitis,
+   sinusitis, glaucoma and otitis media get exactly the bullets reproduced on printed 80 and
+   nothing more.
