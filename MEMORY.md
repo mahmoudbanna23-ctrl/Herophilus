@@ -26,20 +26,18 @@ there before resuming a paused stream. Where this file and the archive disagree,
   answerable from `L3,4`**, its only listed deck — they are `L1,2`'s, lines 438–613 (866 w), now
   counted to `op-va` (**`op-intro`/`op-vissym` must not re-count them**). Same shape at `op-intro`:
   its 13 questions are **anatomy and physiology**, not the history-taking its title promises.
-- **⚠️ `L9` IS READ BUT NEVER CACHED** (38 words of "CamScanner"×33). Its Hirschberg / Schirmer /
-  Krause / Jones / tear-thickness highlights are the module's ONLY record of those five — ch.1 and
-  ch.4 print none. **Cache in the same pass as the read.**
-- **Deck reading became the FALLBACK.** A blank deck page here is usually a TEXT slide (inverse of
-  peds); **six deck patterns** incl. the caption and EMPTY-SLIDE decks, and **three kinds of blank
-  page: text slide · byte-identical filler · broken graphic**. ✅ **Filler sweep CLEAN NEGATIVE on
-  all ten owed PDFs — DO NOT RE-RUN.** **~63 register rows are ophtho's**; ~20 closed, 13 notices,
-  **6 undeliverable**, the rest open — **located work for the ophtho reconciliation pass.**
-- **⚠️⚠️ AFTER A READ, A SOURCE'S WORD COUNT IS THE CACHE'S, NEVER `pdftotext`'s.** The `L7,8`
-  reader advised *not* splitting `op-refract` on "only 1,540 words" — the number the 88-page render
-  existed to replace; its own transcription held **4,439**. Split at p61; halves printed 10 and 8.
-  **A text layer can be word-complete and still be wrong** (its p71 put PRK under lenticular
-  surgery where the slide branches both LASIK and PRK from corneal). **`pdffonts` per page detects
-  text drawn as VECTOR OUTLINES** (`L31,32` p22: zero characters in every mode).
+- **⚠️ `L9` IS READ BUT NEVER CACHED** (38 w of "CamScanner"×33) — its Hirschberg / Schirmer /
+  Krause / Jones / tear-thickness highlights are the ONLY record of those five. **Cache in the
+  same pass as the read.**
+- **Deck patterns (six) and three kinds of blank page — text slide · byte-identical filler · broken
+  graphic** — are in `theory-plan.md`. ✅ **Filler sweep CLEAN NEGATIVE on all ten owed PDFs — DO NOT
+  RE-RUN.** **~63 register rows are ophtho's**; ~20 closed, 13 notices, **6 undeliverable**, the
+  rest open — **located work for the ophtho reconciliation pass.**
+- **⚠️⚠️ AFTER A READ, A SOURCE'S WORD COUNT IS THE CACHE'S, NEVER `pdftotext`'s** — the `L7,8`
+  reader advised against splitting `op-refract` on "1,540 words"; its own transcription held
+  **4,439**, and the halves printed 10 and 8. **A text layer can be word-complete and still be
+  wrong** (p71 filed PRK under lenticular surgery). **`pdffonts` per page detects text drawn as
+  VECTOR OUTLINES** (`L31,32` p22: zero characters in every mode).
 - **⚠️⚠️ COUNT A CHAPTER'S REGISTER ROWS AND VERIFY EVERY ROW'S *SECOND CLAUSE* BEFORE BRIEFING IT.**
   `op-ret` was named in **twelve rows from six donors and five were wrong** (~29 pp forecast against
   five questions — a question count predicts nothing). **TEN fault shapes**: over-specified · absent
@@ -68,15 +66,11 @@ there before resuming a paused stream. Where this file and the archive disagree,
   agent's last line was "Now the op-lac compression" — printing showed nothing to compress.**
 - **⚠️⚠️ USER RULING 2026-08-18 — THE BOOK IS THE MODULE'S MAIN REFERENCE**, and the last decks
   (`L31,32`, `L33,34`, `L35,36`, `L37`) are **compilations of earlier chapters — ignore them, and
-  any deck like them**. Forward-looking: the five chapters already built on them stay (they carry
-  3 of 138 questions, which was the unread signal). `ophthalmology.pdf` = **"OPHTHALMOLOGY WITH
-  TUTORIALS", HEALIX TEAM**, 274 A4 pp, image-only, **PDF = printed + 2**; contents, exam-weight
-  column and per-chapter ranges in `content\ophtho\book-map.md`, caches in `content\ophtho\book\`.
-  **The book prints its own exam weights** (neuro 10 %, systemic 10, trauma 9.5, lids/conj/cornea/
-  glaucoma/retina 6.5 each) — a real budget basis where §14's formula collapsed. **⚠️ `(Tutorial)`
-  / `(T)` = "study in round & skip in final"** — record every marker; **NINE physical forms now,
-  incl. a whole page governed by running text and the bare `(T)`, and it is NEVER a licence to
-  compress.** The ruling cut the reading debt from 574 pp to 127, and it is now fully paid.
+  any deck like them**. `ophthalmology.pdf` = **"OPHTHALMOLOGY WITH TUTORIALS", HEALIX TEAM**,
+  274 A4 pp, image-only, **PDF = printed + 2**; contents, its own **exam-weight column** (a real
+  budget basis where §14's formula collapsed) and per-chapter ranges in `book-map.md`, caches in
+  `content\ophtho\book\`. **⚠️ `(Tutorial)` / `(T)` = "study in round & skip in final"** — record
+  every marker; **NINE physical forms, and it is NEVER a licence to compress.**
 - **⚠️ USER RULING 2026-08-18 — DO NOT ADD chapters for the three deckless book chapters** (Vitreous,
   Paediatric Ophthalmology, Drugs and the Eye; 10.5 % of the paper). Asked with evidence, answered
   *"Don't add them"* — **settled, do not re-propose.** Scope comes from the lecture series; the book
@@ -98,10 +92,16 @@ there before resuming a paused stream. Where this file and the archive disagree,
   65 folded. Detail per topic: archive + `ledger.md` §14.
 - **⚠️⚠️ REAL EXAM DATES (user, 2026-08-13):** Peds OSCE **14 Sep** · Peds papers **17 Sep** ·
   ENT **22 Sep** · Ophtho **27 Sep** · Neuro **3 Oct** · Peds papers **18–19 Oct**.
-  `schedule.js` rebuilt on them (user must press **Reset to the original plan**). Projection:
-  banks Neuro ~7 Sep, ENT ~11 Sep, Peds ~12 Sep, **Ophtho ~25 Sep — the only tight one**;
-  counts **extrapolated ±30%**, so report the first real page count per bank. **Nothing is
+  `schedule.js` rebuilt on them (user must press **Reset to the original plan**). **Nothing is
   dropped — banks are deferred, not cut**; stop only at clean topic boundaries.
+- ✅ **OPHTHO BANKS COUNTED FOR REAL 2026-08-18 — the ±30 % projection is dead.** `ophthalmology
+  qb.pdf` (GG) = **1,087 total, ±0–5** (its contents page prints per-section counts and **matched
+  the printed cumulative numbers at 4/4 independent checkpoints**); 138 done = exactly ch.1–3, so
+  **949 remain**. `ophthalmology MCQ.pdf` (House) ≈ **1,025 ±30**; 56 done = exactly ch.1, so **~969
+  remain**. **TOTAL ~1,918 REMAINING against 27 Sep.** ⚠️ **~304 are IMAGE questions** (House OSCE
+  Q1–269 are each a clinical photo; GG End Exam 6 is 35) and **every crop is individually looked at
+  — that is the dominant cost, larger than the transcription.** ⚠️ **56 House questions are STAGED
+  AND UNMERGED** — validated, 0 folds against GG, all net new. Detail: `ledger.md`.
 
 ## Governing decisions (verbatim rulings in the archive)
 
