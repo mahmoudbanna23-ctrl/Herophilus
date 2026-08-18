@@ -821,3 +821,65 @@ asked.** Never use the marker as a compression rule.
   organisms, no timing, no prophylaxis, no treatment — and it returns **zero** across the module.
   It is a conjunctivitis, so it is supplied and tagged inside `op-conj` rather than chased into
   ch.16, which the user has ruled out of scope.
+
+### ✅ `ch.1 Examination of the Eye` read — and it is the book's largest by a factor of two
+
+**Printed 2–44 = PDF 4–46, 43 pages** (the contents page says 1–44; printed 1 is the contents leaf
+itself, and the opener carries footer `2`). **19,888 words of teaching — ~460 a page**, against
+6,847 for neuro-ophthalmology. Weight only 3 %, and it is the sole book source for **three** app
+chapters.
+
+| Part | Printed | Words |
+|---|---|---|
+| 1 History / patient complaint | 3–6 | 1,540 |
+| **2 Eye anatomy** | 7–16 | **4,066** |
+| 3 Age-related changes | 17 | 430 |
+| **4 Ocular examination** | 18–38 | **9,876** |
+| 5 DDx of common presentations | 39–42 | 1,220 |
+| 6 When to refer an apparently normal patient | 43 | 416 |
+| **7 Ocular emergencies** | 44 | **2,074 — one page** |
+
+**p.18 is the chapter's spine:** a master **ten-step ordered sequence** — VA → field → inspection →
+AC depth → pupils → EOM → IOP → lens clarity → fundus → additional tests — and pp.19–38 are those
+steps in order.
+
+### ⚠️ 19,888 WORDS INTO THREE CHAPTERS, AND NOTHING CUT — because part 4 is already written
+
+At this module's measured **~300 words per printed page**, writing it 1:1 would be **66 printed
+pages**. The resolution is not compression and it is not scope-cutting: **`op-va` (14 sections) and
+`op-pupil` (10 sections) already carry almost the whole of part 4**, written from `L3,4`. Between
+them: the examination order and tools · acuity, the fraction, the charts, the six-metre method ·
+the pinhole · the low-vision ladder and the 3/60 blindness figure · the pre-verbal child · fields
+and Amsler · colour vision and Ishihara · the lid/lacrimal/orbit checklist · lid eversion · cornea
+and fluorescein · sclera and iris · lens and pupil colour · AC depth and contents · pupil
+assessment, anisocoria, light reactions, the swinging flashlight test and RAPD · IOP and digital
+estimation · applanation vs indentation · the six EOMs and their nerves · alignment testing · the
+red reflex · direct ophthalmoscopy.
+
+**So the three chapters write what the BOOK ADDS and cross-reference the rest.** Genuinely absent
+module-wide and therefore new: **`tumbling` E and the `optokinetic` drum** (both zero), the p.18
+master sequence, Schiötz's own numbers, paediatric acuity by age, near vision at 30–40 cm.
+
+**The rule this makes explicit, and it applies to every remaining chapter: measure the source
+against what is ALREADY WRITTEN before declaring a budget problem.** A 66-page forecast became a
+three-chapter job the moment the overlap was counted, and no fact is lost either way.
+
+### The split as briefed
+
+| id | owns | pages | source w | target w |
+|---|---|---|---|---|
+| `op-intro` | history · **anatomy** · age changes · the p.18 sequence · the book's additions over `op-va`/`op-pupil` · referral thresholds | 2–6, 7–18, 31–37, 43 | ~6,700 | ~3,200 |
+| `op-vissym` | **the 12 visual and 7 non-visual symptoms** · the complaint template · **Tables (1-1)–(1-4)** · **ocular emergencies** | 3–6, 39–42, 44 | ~4,500 | ~3,200 |
+| `op-ant` | the eight anterior-segment structures · slit lamp · lid eversion · AC-depth shadow test · fluorescein · **and whatever the module leaves** | 9–10, 19, 23–24, 38 | ~2,500 | ~2,400 |
+
+### What ch.1 does NOT print, checked because five sources promised it
+**`Hirschberg`** (the test is there, the eponym is not) · **`Schirmer`** · **`Krause`** ·
+**`Jones I/II`** · **tear-film layers or thicknesses**. Those five belong to ch.4 if anywhere, and
+ch.4 prints none of them either — so the `L9` calibration highlights remain their only record.
+**Indirect ophthalmoscopy is explicitly excluded by the book**, and the slit lamp gets **three
+bullets in 43 pages** with no illumination techniques at all — a real gap in the chapter that owns
+it, to be supplied and tagged.
+
+### Two more self-contradictions, held not fixed
+**Tropicamide is 1 % on p.33 and 0.5 % on p.34.** **The cardinal positions are 6 in one place and 9
+in another** (`pup-8` writes six). Both recorded in place, cited to their pages.

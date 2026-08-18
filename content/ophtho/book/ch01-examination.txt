@@ -1,0 +1,2869 @@
+SOURCE: Semester 8\Opthalmo\Theoritical\Books\ophthalmology.pdf
+================================================================================
+BOOK:      "OPHTHALMOLOGY WITH TUTORIALS" (inside title, PDF p.3) / cover reads
+           "OPHTHALMO-OLOGY", "5 / Fifth Year".
+AUTHOR:    BY HEALIX TEAM (no named editor, no edition, no copyright page).
+CHAPTER:   1 — Examination of the Eye
+PRINTED:   pp. 2–44   (43 pages)
+PDF:       pp. 4–46
+WEIGHT:    3 % — the book's own "Relative weight in %" column on the contents
+           page. Joint-lowest band, yet the longest chapter in the book.
+CITE AS:   ophthalmology.pdf p.<PRINTED>  — the PRINTED number. Every citation
+           below is a printed page number.
+READ:      2026-08-18, rendered at 150 dpi page by page (portrait A4 book text).
+           No source file was modified, renamed, moved or deleted.
+
+--------------------------------------------------------------------------------
+⚠️ BOUNDARY — RESOLVED, READ THIS FIRST
+--------------------------------------------------------------------------------
+The contents page lists chapter 1 as "1–44". **Printed page 1 is the contents
+leaf itself (PDF p.3).** The chapter opener is **PDF p.4 and it carries the
+footer "2"**. Verified by reading the page: PDF 4 prints the blue underlined
+serif title "Examination of the Eye", the decorative image and the OBJECTIVES
+flowchart. So the chapter in fact runs **printed 2–44 = PDF 4–46, 43 pages**,
+not 44.
+
+**OFFSET: PDF page = printed page + 2.** Re-confirmed at both ends of this
+chapter: PDF 4 carries footer "2"; PDF 46 carries footer "44".
+
+--------------------------------------------------------------------------------
+⚠️ STRUCTURAL FINDINGS — read before using this cache
+--------------------------------------------------------------------------------
+
+⚠️ 1. THE CHAPTER IS ITS OWN TABLE OF CONTENTS. The OBJECTIVES flowchart on
+      printed 2 lists seven parts, and the body follows them exactly:
+        1 History / Patient Complaint (pp.3–6)
+        2 Eye Anatomy (pp.7–16)
+        3 Age related changes in the eye & its adnexa (p.17)
+        4 Ocular Examination (pp.18–38) — the ten numbered steps
+        5 DDx of common presentations (pp.39–42) — eight presentations
+        6 When to refer an apparently normal patient? (p.43)
+        7 Ocular Emergencies (p.44)
+      Within part 4, the master ten-step sequence is printed on **p.18** and is
+      the chapter's spine. Sections 1–9 on pp.19–38 are those steps in order.
+
+⚠️ 2. THE TUTORIAL MARKER APPEARS IN FIVE PHYSICAL FORMS IN THIS CHAPTER, and
+      one of them covers a whole page:
+        (a) an inline "(tutorial)" tag on a SINGLE numbered item or bullet whose
+            siblings are core — printed 6 (family history item 7), 14 (secretory
+            part, third bullet), 18 (tools, item 6), 20 (pinhole, third bullet),
+            25 (festooned pupil clause), 32 (the applanation figure caption
+            "tutorial photo");
+        (b) a whole framed box headed "**From Tutorial**" — printed 24;
+        (c) a whole figure block headed "**Pupil colour (From tutorial)**" —
+            printed 26;
+        (d) a dashed side box with the word "**Tutorial**" in a tab on its edge —
+            printed 3 (general look / personal history), 16 (the ductions-vs-
+            versions table), 19 (VA equipment list), 22 (the advancing-finger
+            confrontation variant);
+        (e) ⚠️⚠️ AN ENTIRE PAGE — printed 34 opens with the centred blue line
+            "**This whole page is from Tutorial**". Everything on it (the
+            autonomic-nervous-system table, the tropicamide/phenylephrine table
+            and the fully labelled direct ophthalmoscope) is Tutorial-marked.
+      NO variant tag such as "(++ Additional)" appears anywhere in this chapter.
+
+⚠️ 3. FIGURE NUMBERING IS BROKEN AND CANNOT BE USED AS AN INDEX. The chapter uses
+      THREE incompatible schemes at once:
+        - "**Figure (1-9)**" (printed 27) — the ONLY chapter-numbered figure in
+          43 pages, and it is roughly the twentieth figure in the chapter;
+        - "**Figure (A)**" / "**Figure (B)**" (printed 30);
+        - "**Table (1-1)**" … "**Table (1-4)**" (printed 39, 40, 42, 44) — these
+          four ARE consistently and correctly numbered.
+      Everything else is either plain-captioned or uncaptioned. So: the TABLES
+      are numbered reliably; the FIGURES are not.
+
+⚠️ 4. FIGURES CARRY TEACHING THE PROSE NEVER STATES — repeatedly and on
+      load-bearing points. The full list is in the FIGURE-ONLY register at the
+      end of this file. The four that matter most:
+        - the **normal visual field extents** (50° up, 90° temporal, 60° nasal,
+          70° down) exist only inside a photograph's annotation, printed 22;
+        - the **entire field-defect vocabulary** (bitemporal vs homonymous
+          hemianopia) exists only in the recording figure, printed 23;
+        - the **corneal-light-reflex quantitative scale** (15° / 30° / 45° =
+          pupil margin / mid-iris / limbus) exists only in a figure caption,
+          printed 29;
+        - the **palpebral fissure measurements** (10 mm vertical, 30 mm
+          horizontal) exist only in a figure, printed 14.
+
+⚠️ 5. THE BOOK CONTRADICTS ITSELF TWICE, AND BOTH ARE TRANSCRIBED AS PRINTED:
+        - **Tropicamide 1 %** (printed 33, prose) vs **Tropicamide 0.5 %**
+          (printed 34, Tutorial table).
+        - **"the six cardinal positions of gaze"** (printed 15, prose) vs the
+          figure caption **"looking in 9 cardinal positions of gaze"**
+          (printed 16). Printed 28 then says "6 cardinal positions" again.
+      Neither is reconciled by the book.
+
+⚠️ 6. THE BOOK EXPLICITLY REFUSES ONE TOPIC. Printed 33: "(The indirect
+      ophthalmoscope is another instrument that is **beyond the scope of this
+      text for undergraduates**)." There is therefore NO direct-vs-indirect
+      comparison anywhere in this chapter — that is a stated exclusion, not an
+      oversight.
+
+⚠️ 7. LEGIBILITY: nothing was illegible. Three regions were re-rendered at
+      300–400 dpi to confirm small print and in-photo annotations — the p.14
+      palpebral-fissure measurements, the p.19 Snellen ladder, and the p.22
+      field-extent annotation — and all three resolved cleanly. The p.19 Snellen
+      chart's acuity column genuinely STOPS at 20/20 (rows 9–11 carry no value);
+      that is the chart, not a rendering failure. There is no "[illegible]"
+      anywhere below.
+
+⚠️ 8. SPELLING. The book misspells frequently. Every misspelling below is
+      transcribed with [sic]: "Cons" for Cones (p.11), "Amsler gird" (p.22),
+      "dose" for close (p.24), "Apahkia" (p.26), "Accomodation" (p.26),
+      "Aapplanation" (p.32), "Parasympathatic"/"Sympathatic" (p.34), "Amaurosis
+      Eugax", "Vitreous hacmanhage" (p.39), "acing" for aching, "flore" for
+      flare (p.40), "Subenivactival", "Eriscleritis" (p.41), "Migrane" (p.41),
+      "haemorrhoge" (p.42), "Temporal arteritist" (p.44), "superiors" for
+      superioris (p.17).
+
+================================================================================
+PAGE 2 (PDF 4) — CHAPTER OPENER
+================================================================================
+
+Examination of the Eye                          [blue underlined serif title]
+
+[FIGURE, uncaptioned: illustration of a young woman in profile, head turned to
+ the viewer's left, being examined by a gloved hand holding a hand-held
+ instrument to her right eye. The instrument drawn is a **hand-held slit
+ lamp / tonometer-style device** — a grey barrel with a black eyepiece at the
+ back and a small light emitter at the front placed on the eye. It teaches
+ nothing textual; it is the decorative chapter opener.]
+
+OBJECTIVES:
+[FLOWCHART of blue rounded boxes. Solid boxes are numbered top-level items;
+ dashed boxes are their expansions.]
+
+  1. History / Patient Complaint
+
+  2. Eye Anatomy
+       ├── Anatomy of Eyeball        →  [dashed box]  • Ant. Segment
+       │                                              • Post. Segment
+       └── Anatomy of Ocular Adnexa  →  [dashed box]  • Orbit
+                                                      • Eyelids
+                                                      • Lacrimal System
+                                                      • EOM
+
+  3. Age related changes in the eye & its adnexa
+
+  4. Ocular Examination
+       [dashed box]
+       1. Visual acuity
+       2. Visual field
+       3. Inspection
+       4. Assessment of Ant. chamber
+       5. Assessment of pupillary reactions
+       6. Testing EOM actions
+       7. IOP evaluation
+       8. Direct ophthalmoscope
+       9. Additional tests
+
+  5. DDx of common presentations
+       [two dashed boxes side by side]
+       1. Loss of vision              5. Photopsia
+       2. Red eye                     6. Floaters
+       3. Acute painless loss of      7. Photophobia
+          vision                      8. Diplopia
+       4. Ocular pain
+
+  6. When to refer apparently normal patient?
+
+  7. Ocular Emergencies
+
+⚠️ NOTE: the objectives flowchart is the chapter's own table of contents and it
+   is followed EXACTLY by the body text. Items 1–7 are the seven parts of the
+   chapter. Use it as the chapter's skeleton.
+
+
+================================================================================
+PAGE 3 (PDF 5)
+================================================================================
+
+History / Patient complaint            [grey-banded section header]
+
+  • A standardized eye examination will allow the physician to properly evaluate
+    ocular complaints helping to provide either treatment or a perfectly timed
+    referral to an ophthalmologist
+  • Many serious ocular diseases and/or systemic conditions that manifest with
+    ocular involvement are asymptomatic (causing harm in silence).
+  • Proper history taking and performing good eye examination can help detection
+    of those silent assassins ensuring that patients will be given the care they
+    need; undelayed.
+
+[BOX 1, rounded frame, blue heading]
+Examples of irreversible blinding diseases that can be treatable if early
+discovered:
+  o Glaucoma
+  o Diabetic retinopathy
+  o Macular degeneration
+  o Retinal detachment
+  o Amblyopia (in youngsters)
+
+[BOX 2, rounded frame, blue heading]
+Vision and/or life-threatening disorders that may involve the eye include:
+  o Diabetes Mellitus
+  o Hypertension
+  o Temporal arteritis
+  o Embolic phenomena from the left side of the circulation (Heart and
+    coronaries)
+  o Cerebrovascular accidents (hemorrhagic or ischemic)
+  o Aneurysms in the cerebral circulation.
+  o Multiple sclerosis.
+  o Brain tumors such as meningioma
+  o intraocular malignancies such as melanoma and retinoblastoma.
+
+The first step in ocular examination, is proper history taking.
+In addition to the name and other basic data (age, gender, occupation, and
+residence) that will help give clues to the patient's risk factors for many
+conditions, the type of the patient's complaint will help direct the remainder
+of the history taking, the examination procedures and determining emergency
+interventions that will be needed afterwards.
+
+Complaint:
+  • Write the complaint in the patient's own words (In Arabic) and do not try to
+    translate it.
+  • Complaints encountered in ophthalmology can be classified into <u>visual and
+    non-visual complaints</u>.
+
+⚠️ [TUTORIAL — dashed-border side box with the word **Tutorial** printed in a tab
+    on its top edge. Marker form (e): whole box is Tutorial.]
+  1. <u>General look of the patient:</u>
+       - Get idea about vision: e.g. Helped by another person → poor vision
+       - Looking at the glasses (myopia, hypermetropia)
+       - Abnormal head posture: paralytic squint
+       - Chin elevation & wrinkled forehead: ptosis
+       - One eyed person (overestimation & special handling)
+  2. <u>Personal history:</u>
+       - Name: communication
+       - Age
+       - Sex
+       - Occupation:
+            • Visual needs
+            • E.g., Welders: FB & photophobia
+       - Address / Tel
+[end Tutorial box]
+
+
+================================================================================
+PAGE 4 (PDF 6)
+================================================================================
+
+A. Visual complaints                     [blue heading, ruled]
+
+  1. **Diminution (loss - decrease) of vision**
+
+  2. **Night blindness**
+     [FIGURE, two photographs side by side of the same night street scene,
+      captioned inside the image "Regular Vision" and "Night Blindness"; the
+      second is far darker. Illustrative only.]
+
+  3. **Colour blindness**
+     [FIGURE, two-row panel. Top row labelled "NORMAL VISION": three apples
+      labelled GREEN, YELLOW, RED, each the named colour. Bottom row labelled
+      "COLORBLIND EXAMPLE": the same three apples labelled GREEN, YELLOW, RED
+      but all rendered a similar dull khaki/olive. Teaches that in colour
+      blindness green and red converge on the same muddy hue.]
+
+  4. **Photophobia:** intolerance to the usual levels of illumination
+  5. **Glare:** difficulty of seeing in the presence of bright light.
+  6. **Diplopia:** double vision - seeing 2 images or seeing an additional
+     shadow of any visualized object
+  7. **Polyopia:** seeing more than two images or shadows of the same object.
+  8. **Photopsia:** seeing flashes of light in the absence of a light source.
+  9. **Floaters:** seeing floating black shadows in bright illumination
+ 10. **Duskiness:** sensation of poor illumination of the surrounding
+     environment regardless of the actual level of illumination
+ 11. **Central Scotoma:** Seeing dark spots within the visual field of one or
+     both eyes (affecting central vision or fixation)
+
+ 12. Other visual complaints related to <u>**macular diseases**</u>:
+       • **Macropsia** (sensation of objects being larger than their actual size)
+       • **Micropsia** (sensation of objects being smaller than their actual
+         size)
+       • **Metamorphopsia** (perception of distorted images of presumably regular
+         objects)
+
+[FIGURES on this page, right margin and bottom, each a photograph with a blue
+ caption. They are the symptom vocabulary drawn — the only place these symptoms
+ are given a visual definition:]
+  - "Diplopia" — a photograph of a hand with fingers, doubled/ghosted.
+  - "Photopsia" — a dark field with a single bright starburst of light.
+  - "Floaters" — a landscape photograph (tree, savannah) with black dots and
+    squiggles floating over it, and a dark shadow at upper right.
+  - two photographs of two boys hugging, captioned inside the image "Normal
+    Vision" and "Vision with AMD"; the second has a dense blurred grey blot over
+    the centre. This illustrates item 11, **Central Scotoma**.
+  - "Metamorphopsia" — three photographs: a forest scene normal, the same forest
+    with the tree trunks wavy/bent, and a child's face distorted.
+  - two further photographs illustrating macropsia/micropsia: a giant figure
+    leaning over a miniature town, and a giant shoe/leg beside a tiny house.
+
+⚠️ FIGURE-ONLY CONTENT: macropsia and micropsia are *defined* in the prose but
+   only *shown* here; the AMD central-scotoma photograph pair is the only place
+   AMD is named on this page.
+
+
+================================================================================
+PAGE 5 (PDF 7)
+================================================================================
+
+B. Non-visual complaints:                [blue heading, ruled]
+  1. Red eye
+  2. Discharge (watery, mucoid, mucopurulent, purulent or sanguineous
+     [blood-tinged])
+  3. Pain (burning, throbbing, bursting, neuralgic, etc.)
+  4. Itching
+  5. Foreign body sensation
+  6. Swelling
+  7. Disfigurement (cosmetic)
+
+<u>N.B:</u> Complaints must be documented chronologically (in order of
+occurrence) with emphasis on the chief complaint.
+
+[FIGURES, right margin, uncaptioned: (a) photograph of a markedly injected red
+ eye with diffuse conjunctival hyperaemia; (b) photograph of a lower lid with a
+ small yellow-white pustular lesion at the lid margin (a stye/hordeolum
+ appearance). Neither is captioned or named in the text.]
+
+History of the present illness:          [grey-banded section header]
+
+Analysis of the chief complaint is important to help direct the examination and
+form an appropriate proper differential diagnosis of the presenting case.
+
+<u>**Analysis of any complaint should fulfil the following items:**</u>
+  • Monocular or binocular
+  • **Mode of onset:** sudden, acute, accidentally discovered, gradual or
+    insidious.
+  • **Course:** progressive, stationary, regressive, intermittent, or remittent.
+  • Duration
+  • fluctuating during the day or persistent
+  • **Associated symptoms** e.g, headache, discharge, tearing, double vision,
+    central vision affection, visual field defect, etc.
+
+<u>**It is essential to record what has been done to the chief complaint e.g.,**</u>
+  • Seeking medical advice
+  • Medications prescribed and, if possible, their doses
+  • Compliance to medications
+  • Response to those medications
+  • Interventions performed and whether the condition improved or worsened after
+    such interventions.
+
+  o Some patients interpret a visual field defect on one side (**homonymous
+    hemianopia**) as a diminution of vision related to the eye on the same side,
+    so it is of extreme importance to have patience and ask questions to clarify
+    the complaints while analyzing symptoms.
+
+<u>N.B:</u>
+  • It is important not to jump to a diagnosis after hearing or analyzing the
+    chief complaint e.g., diminution of vision can have many causes.
+  • <u>By the end of the history taking process, you should've had a differential
+    diagnosis list</u> in your mind that will provide you with additional
+    questions that might facilitate evaluating the case and that will guide
+    performing the examination (by searching for something you are already
+    expecting).
+
+
+================================================================================
+PAGE 6 (PDF 8)
+================================================================================
+
+  • It is <u>not uncommon to have two or more coexisting conditions</u> (e.g.,
+    cataract and diabetic retinopathy) so it is more intelligent to Wait after
+    completing examination before deciding the diagnosis or a brief differential
+    diagnosis list for such a complaint.
+  • All other complaints should be similarly analyzed individually and in
+    relation to the chief complaint.
+  • Treatment begins by taking proper history.
+  • Sometimes, the patient's main goal is only to deliver the history (being told
+    before that there is no treatment for his condition).
+  • Many ocular diseases have no definitive treatment, and their management
+    requires assurance through a good patient-doctor rapport (relationship).
+    Ideally, the ultimate relationship is characterized as warm, therapeutic, and
+    conducive to good care.
+  • Maintaining proper communication with patients will facilitate educating them
+    about their conditions, discussing and explaining treatment plans and
+    surgical procedures, ensuring compliance, and building confidence.
+
+<u>**Medical history of systemic illnesses that can affect the eye:**</u>
+  o Diabetes mellitus
+  o Hypertension
+  o Thyroid disease
+  o Autoimmune diseases
+  o Malignancy
+
+<u>**Past ocular history (Medical and surgical):**</u>
+  o History of similar conditions in the same eye or the other eye.
+  o History of previous surgical interventions in the same eye or the other eye.
+  o History of using spectacles or of being told to need spectacles.
+
+  [BOX, rounded frame]
+  N.B:
+    – Many patients, especially females, do not use spectacles or refrain from
+      using spectacles due to community or cultural reasons.
+    – Sometimes parent prevent their children from using their prescribed
+      spectacles due to a common misconception that wearing glasses will make
+      their vision weaker
+
+  o History of previous significant eye trauma.
+  o History of contact lens use (for visual and/or cosmetic purposes)
+  o History of using medications, especially those being used for long durations
+    e.g., anti-glaucoma medications.
+  o History of allergy or toxic reactions to certain topical medications e.g.,
+    neomycin eye drops.
+
+<u>**Family history of conditions that might be related to the current patient
+status:**</u>
+  1. Glaucoma
+  2. Ocular tumours e.g., retinoblastoma.
+  3. Retinal detachment
+  4. Anisometropia
+  5. Strabismus
+  6. Macular degeneration
+  7. ⚠️ Retinitis pigmentosa / congenital cataract **(tutorial)**
+     [marker form (d): the whole numbered item 7 is printed in blue and tagged
+      "(tutorial)" inline. Items 1–6 are core, item 7 alone is Tutorial.]
+
+
+================================================================================
+PAGE 7 (PDF 9)
+================================================================================
+
+Anatomical Considerations & Age-Related Changes in the Eye
+                                         [grey-banded section header]
+
+Adequate knowledge of ocular anatomy, anatomic and physiologic aging changes and
+optics (refer to chapter 2) is of great value when evaluating ocular complaints.
+
+Ocular anatomy                           [blue underlined heading, centred]
+
+[FIGURE 1, large, uncaptioned: sagittal section of the globe with the extraocular
+ muscle and orbital fat drawn above and below. Labels, as printed:
+   left side  — ciliary body, iris, anterior chamber, pupil, cornea, lens,
+                ora serrata
+   right side — sclera, retina, macula, vitreous, artery, optic nerve, vein,
+                rectus medialis
+ Teaches the named parts the chapter will use; "ora serrata" and "rectus
+ medialis" appear nowhere in the prose of this page.]
+
+[FIGURE 2, bottom left, captioned "**Figure: Anatomy of the human eye**":
+ a second sagittal section, labels as printed —
+   Sclera · Ciliary body · Suspensory ligament · Cornea · Iris · Pupil ·
+   Aqueous humor · Lens · Vitreous humor · Choroid · Retina · Fovea (center of
+   visual field) · Optic nerve · Central artery and vein of the retina ·
+   Optic disc (blind spot)
+ ⚠️ FIGURE-ONLY: **suspensory ligament**, **aqueous humor**, **fovea (center of
+ visual field)** and **optic disc (blind spot)** are named only here.]
+
+[FIGURE 3, bottom right, a dark-blue panel headed "**Eye Anatomy**": a third
+ sagittal section. Labels: conjunctiva (twice, upper and lower) · iris ·
+ ciliary body · lens · pupil · cornea · anterior chamber · vitreous body ·
+ choroid · retina · macula · optic nerve · optic disc · sclera.
+ ⚠️ FIGURE-ONLY: **conjunctiva** and **vitreous body** as named structures.]
+
+
+================================================================================
+PAGE 8 (PDF 10)
+================================================================================
+
+**The wall of the eyeball is composed of <u>three layers</u>:**
+
+[TABLE — three columns, transcribed complete]
+
+| The outer protective layer | The middle vascular layer (the uveal tract) | The inner neural layer (the retina) |
+|---|---|---|
+| It is composed of: 1. The **cornea** (the anterior **1/6 or 15%** of the outer layer)  2. The **sclera** (the posterior **5/6 or 85%** of the outer layer)  3. The junction between the cornea and the sclera is called the **limbus**. | • It carries the main **blood supply** (nutrients and oxygen) to most of the internal ocular structures. • It includes: 1. The iris  2. The ciliary body  3. The choroid | Its cells are responsible for receiving light stimuli and conveying them to the occipital lobe of the brain via the optic nerve and the other visual pathways |
+
+[FIGURE, left, uncaptioned sagittal section with grouped labels:
+   **Outer Layer:** Sclera, Cornea
+   **Middle Layer:** Iris, Ciliary body, Choroid
+   **Inner Layer:** Retina
+   plus Pupil, Lens, Optic Nerve, Vitreous humor.]
+
+[FIGURE, right, hand-drawn/annotated style, uncaptioned. Text inside the figure:
+   "3 LAYERS: * FIBROUS LAYER  * VASCULAR LAYER  * NEURAL LAYER"
+   "LIGHT →"
+   Labels: PUPIL · IRIS · CORNEA · CORNEAL LIMBUS · SCLERA · OPTIC NERVE
+   Under SCLERA, three bracketed sub-labels: "TOUGH & FIBROUS",
+   "PROTECTS STRUCTURES", "ANCHORING POINT".
+ ⚠️ FIGURE-ONLY: the alternative naming **FIBROUS / VASCULAR / NEURAL layer**
+ (the table calls them protective / vascular / neural) and the sclera's three
+ functions appear only in this hand-drawn figure.]
+
+**The eyeball also has three <u>fluid-filled chambers</u>:**
+
+[TABLE — three columns, transcribed complete]
+
+| The Anterior Chamber (AC) | The Posterior Chamber (PC) | The Vitreous Cavity |
+|---|---|---|
+| ▪ It lies between the back surface of the cornea anteriorly and the iris posteriorly.  ▪ It contains the **aqueous humour**; a watery fluid secreted by the ciliary body processes in the posterior chamber and reaches the AC through the pupil. **It provides nourishment** to the interior avascular eye structures e.g., the cornea and the lens.  ▪ The angle of the anterior Chamber contains structures (**the trabecular meshwork and the canal of Schlemm**) through which the aqueous humour is drained into the venous circulation via the episcleral venous plexus. Damage to such structures results in elevation of the intraocular pressure (IOP) | ▪ It lies between the back surface of the iris anteriorly and the crystalline lens posteriorly.  ▪ The periphery of the posterior chamber is called the **ciliary sulcus** which lies between the posterior surface of the iris and the ciliary processes,  It represents an **alternative site for the fixation of PC intraocular lenses** (IOLs) other than the remains of the lens capsule. (Refer to the lens chapter) | ▪ It is filled with a gel-like avascular structure called the vitreous humour.  ▪ It comprises about **two-thirds of the eye's volume** and helps preserve the shape of the globe.  ▪ **Water comprises 98%** of its content in addition to collagen, mucopolysaccharides and hyaluronic acid. |
+
+NUMBERS ON THIS PAGE: cornea = anterior 1/6 or 15 %; sclera = posterior 5/6 or
+85 %; vitreous = two-thirds of the eye's volume; vitreous water content = 98 %.
+
+
+================================================================================
+PAGE 9 (PDF 11)
+================================================================================
+
+[FIGURE, top left, uncaptioned: sagittal section labelling **Anterior chamber**,
+ **Posterior chamber**, **Vitreous chamber** — the three chambers of the p.8
+ table drawn.]
+
+[FIGURE, top right, a two-panel framed figure lettered **A** and **B**,
+ uncaptioned in the body text. Panel A is a normal anterior-segment section with
+ arrows for aqueous flow; its labels read: **Drainage through trabecular
+ meshwork**, **Schlemm canal**, **Episcleral vein**, **Uveoscleral drainage
+ route**, **Ciliary body**. Panel B shows the same anatomy with the iris pushed
+ forward and red arrows blocked; its single label reads **Obstruction of drainage
+ pathways by the iris**.
+ ⚠️ FIGURE-ONLY AND IMPORTANT: the **uveoscleral drainage route** and the whole
+ mechanism of **angle closure by the iris** are taught nowhere in this chapter's
+ prose — only in this figure.]
+
+**Clinically, the eyeball is divided into two main parts:**
+
+[TABLE — two columns]
+
+| The Anterior Segment | The Posterior Segment |
+|---|---|
+| 1. Conjunctiva  2. Cornea  3. Sclera  4. Anterior Chamber  5. Iris  6. Pupil  7. Lens  8. Ciliary body | 1. Vitreous Humour  2. Choroid  3. Retina (CRA, CRV, macula, fovea)  4. Optic disc  5. Optic nerve |
+
+A. The Anterior Segment:                 [grey-banded section header]
+
+It consists of all structures lying <u>anterior to the vitreous humour</u>,
+including the ocular surface.
+It is composed in order <u>from anterior to posterior</u>, of <u>eight
+structures</u>:
+
+**1. Conjunctiva:**
+  – It is the thin, vascular; clear mucous membrane that covers the white opaque
+    part of the eyeball; the sclera (**bulbar conjunctiva**) and lines the back
+    surface of the eyelids (**Palpebral conjunctiva**).
+  – It protects and lubricates the lids' movement over the eyeball.
+  [FIGURE, right: sagittal section with two coloured callout pills reading
+   "Bulbar Conjunctiva" and "Palpebral Conjunctiva".]
+
+**2. Cornea:**
+  – It is the **transparent part of the outer coat** of the globe.
+  – Its primary function is to refract (bend) light entering the eye onto the
+    lens, which then focuses it onto the retina.
+  – Its optical power comprises about **2/3** of the total optical power of the
+    eye.
+  – It is avascular and extremely sensitive to pain.
+
+NUMBER: cornea = about **2/3** of total optical power of the eye.
+
+
+================================================================================
+PAGE 10 (PDF 12)
+================================================================================
+
+**3. Sclera:**
+  – It is the tough, fibrous, **white opaque part of the outer coat** of the
+    globe.
+  – The function of the sclera is to provide protection for intraocular contents,
+    protect the retina from overexposure to light, and <u>serve as the attachment
+    for the extraocular muscles</u> which are responsible for moving the eye.
+
+**4. Anterior Chamber:** discussed before
+
+**5. Iris:**
+  – The iris is the **coloured portion** of the eye. It lies behind the cornea
+    (separated from it by the AC), and in front of the lens.
+  – It separates the anterior and posterior chambers of the eye.
+  – Contractions of the iris smooth muscles (**sphincter pupillae and dilator
+    pupillae**) help <u>regulate the amount of light that enters your eye</u> by
+    controlling the size of the central aperture of the iris, the pupil.
+  [FIGURE, right: colour photograph of an eye with a cut-away wedge of the iris
+   drawn in red. Labels: **Dilator muscle**, **Sphincter muscle**, Iris, Pupil.
+   ⚠️ FIGURE-ONLY: it is the only place the *radial* dilator vs *circular*
+   sphincter arrangement is shown.]
+
+**6. Pupil:**
+  – Its reactions to both light and near stimuli help the evaluation and
+    diagnosis of many ocular and central nervous system diseases.
+  – The colour of the pupil is <u>jet black in the newly born and starts to
+    acquire a greyish tinge as the person gets older</u> due to the continuous
+    addition of new lens fibres throughout life causing light scattering; a
+    process known as **senile sclerosis**.
+  – **In the absence of the lens** (surgically removed or posteriorly dislocated)
+    the pupil regains its **jet-black colour**
+
+**7. Lens:**
+  – It is the elastic, transparent, biconvex structure located directly behind
+    the iris.
+  – It is suspended in place by a series of fine fibres (**zonules**) that
+    connect it to the ciliary body.
+  – The function of the lens is to focus light rays onto the retina for both near
+    and far objects (via changing its shape in response to contraction and
+    relaxation of the muscles in the ciliary body respectively).
+  [FIGURE, right, two-panel accommodation diagram, uncaptioned. Panel 1 labels:
+   Iris · Pupil · "**Lens allowed to bulge**" · "**Muscle contracts like a
+   sphincter on a bottom**" · "**Suspensory ligaments are slack**" ·
+   Ciliary muscle. Panel 2 labels: "**Lens pulled thin**" · "**Suspensory
+   ligaments are pulled tight**".
+   ⚠️ FIGURE-ONLY: the mechanics of accommodation — contraction slackens the
+   zonules and lets the lens bulge — is stated only here.]
+
+**8. Ciliary body:**
+  – It is the <u>middle part of the uveal tract</u> that connects the iris
+    anteriorly to the choroid posteriorly.
+  – It has two functions:
+      1. Secretion of the aqueous humour.
+      2. Accommodation to near and far vision through the effect of contraction
+         and relaxation of the ciliary muscle transmitted to the lens via the
+         zonules.
+
+
+================================================================================
+PAGE 11 (PDF 13)
+================================================================================
+
+[FIGURE, top, uncaptioned: sagittal section with a large left brace labelled
+ **Anterior segment** and a right label **Posterior segment**. Labels:
+ Conjunctiva · Ciliary body · Iris · Pupil · Anterior chamber · Cornea · Lens ·
+ Sclera · Choroid · Retina · Macula · vitreous body · Optic nerve.]
+
+B. The Posterior Segment:                [grey-banded section header]
+
+It is composed of the <u>5 structures</u> lying posterior to the lens, including
+the optic disc and the optic nerve.
+
+<u>**The parts of the posterior segment are:**</u>
+
+**1. Vitreous Humour:** Discussed before.
+
+**2. Choroid:** The vascular pigmented tissue layer between the sclera and the
+   retina. It <u>provides blood supply to the outer layers of the retina</u>.
+
+**3. Retina:**
+  – It is the **light-sensitive** neural tissue lining the vitreous cavity
+    posteriorly.
+  – It is transparent except for the blood vessels on its surface (central
+    retinal artery and its branches, and central retinal vein and its
+    tributaries).
+  – It is responsible for receiving light stimuli and sending them to the visual
+    cortex in the occipital lobe via the optic nerve and the visual pathways.
+
+  The **photoreceptor cells in the retina are of two types:**
+
+  [TABLE — two columns. ⚠️ The book heads the second column "**Cons**" [sic],
+   not "Cones".]
+
+  | Rods | Cons [sic] |
+  |---|---|
+  | Distributed all over the retina and are present in large numbers (about **125 million cells**). | The human retina contains **6-7 million cones**, concentrated mainly in the **macula**. |
+  | – Necessary for seeing in **dim light.**  – SO, diseases affecting the rods result in <u>night blindness</u> | They function best in **bright light** and are responsible for <u>sharp vision, day vision, and colour vision.</u> |
+
+  [FIGURE, bottom, with the blue side-caption "**Explanation: histological
+   section of the eye.**": a stained histological section through the macula.
+   In-figure labels: **Macula** (a long double arrow spanning the wide area),
+   **Fovea** (a shorter arrow at the central pit), **Retina**, **Choroid**,
+   **Sclera (white of eye)**, **Rods & cones** (arrow to the peripheral
+   photoreceptor layer), **Cones only** (arrow to the foveal photoreceptors),
+   **Blood vessels**.
+   ⚠️ FIGURE-ONLY: "**Cones only**" at the fovea vs "**Rods & cones**"
+   elsewhere — the prose never says the fovea is cone-exclusive.]
+
+NUMBERS ON THIS PAGE: rods ≈ **125 million**; cones **6–7 million**.
+
+
+================================================================================
+PAGE 12 (PDF 14)
+================================================================================
+
+  – The **macula** is the area of the retina at the posterior pole of the eye
+    responsible for detailed, fine, high-resolution central vision (required for
+    sensitive visual tasks such as reading and car driving).
+  – The **fovea** is a <u>small oval depression</u> in the centre of the macula.
+    It is the area with the greatest concentration of cone cells. When the eye is
+    directed at an object, the part of the image that is focused on the fovea is
+    the image most accurately registered by the brain.
+
+**4. Optic disc:**
+  – It is the part of the optic nerve that is visible within the eye.
+  – It is composed of axons whose cell bodies lie in the ganglion cell layer of
+    the retina.
+  – In the visual field, and because it **has no photoreceptors**, the area of
+    the optic disc is called the "**blind spot.**"
+  – It has a central depression, the **optic cup**, which represents a port for
+    entry and exit of the central retinal vessels into and from the eye.
+
+  [FIGURE, left, uncaptioned: schematic fundus. Labels: FOVEA · MACULA ·
+   OPTIC DISC · CENTRAL RETINAL VEIN · CENTRAL RETINAL ARTERY · RETINAL VENULES ·
+   RETINAL ARTERIOLES.]
+
+  [FIGURE, right, captioned "**Fundus picture**": a real colour fundus
+   photograph. Labels: **Optic disk** [sic, "disk"] · **Optic cup** · **Macula**
+   (a dashed circle) · **Fovea** (a smaller dashed circle) · **Retinal artery** ·
+   **Retinal vein**.
+   ⚠️ FIGURE-ONLY: this is the only place in the chapter where the *normal
+   fundus appearance* is shown, and it is what the ophthalmoscopy section later
+   assumes the reader knows.]
+
+**5. Optic nerve:**
+  – It is the continuation of the optic disc that lies behind the eyeball.
+  – It is the structure responsible for transmitting the images seen from the
+    retina to the brain
+
+<u>N.B:</u>
+The <u>retina, macula, choroid, and optic disc</u> are referred to as: "the
+retinal fundus" or, simply, "the **fundus**".
+
+Anatomy of Ocular Adnexa                 [grey-banded section header]
+
+Adnexa are structures responsible for supporting and protecting the functions of
+an organ.
+The conjunctiva can be considered a part of the ocular adnexa.
+
+  [BOX, rounded frame]
+  The ocular adnexa include the following:
+  **Orbit + Eyelids + Lacrimal system + Extraocular muscles**
+
+
+================================================================================
+PAGE 13 (PDF 15)
+================================================================================
+
+**1. Orbit:**                            [blue heading, ruled]
+  o The orbit is the **bony cavity or the socket in the skull** in which the eye
+    and its appendages are situated.
+  o In the adult human, the <u>volume of the orbit is about **30 ml**</u>, of
+    which the <u>eye occupies approximately **6.5 ml**</u>.
+  o The orbit provides protection and helps in the smooth rotation of the
+    eyeball.
+
+  [FIGURES, three side by side, all uncaptioned: (a) an anatomical illustration
+   of the orbit in cut-away with labels Optic nerve · Ophthalmic nerve ·
+   Extraocular muscles · Ophthalmic vein · Ophthalmic artery · Temporal bone ·
+   Eye ball · Lacrimal gland · Fat · Maxilla · Zygomatic bone; (b) a photograph
+   of an anatomical model of a dissected orbit; (c) an illustration of a skull
+   from the front with the two orbits colour-shaded.]
+
+**2. Eyelids:**                          [blue heading, ruled]
+  o These are the outer structures that protect the eyeball and help lubricate
+    the ocular surface.
+  o The upper and the lower lids in each eye join at the **medial and lateral
+    canthi**.
+  o The space between the upper and the lower lids when the eye is open is called
+    the **"palpebral fissure"**.
+  o The lashes are present on the rounded anterior border of the lid margin and
+    are normally directed outwards and superiorly in the upper lid and outwards
+    and inferiorly in the lower lid.
+  o The posterior lid margin is right-angled and is in close coaptation with the
+    globe.
+
+  o **Each eyelid is composed of <u>5 layers</u> arranged from anterior to
+    posterior into:**
+      1. **Skin**
+      2. **Subcutaneous tissue.**
+      3. **Muscular layer** containing fibres of the **orbicularis oculi**, the
+         muscle responsible for blinking and forcible closure of the eyelids. It
+         is **supplied by the facial (VII) nerve.**
+      4. **Tarsal plate**: A rigid fibrous structure forming the skeleton of the
+         eyelid and containing the **meibomian glands**.
+           – The meibomian glands empty their oily secretions through orifices
+             located on the lid margin.
+           – The virtual line connecting these orifices is called the
+             "**white line**".
+      5. **The palpebral conjunctiva.**
+
+  [FIGURE, right, captioned "**Figure: Anatomy of the eyelid**": a black-and-
+   white sagittal section of the lid margin. In-figure labels: **Gray line** ·
+   **Meibomian gland orifices** · **Mucocutaneous junction** · **Conjunctiva** ·
+   **Meibomian gland** · **Lash follicle** · **Orbicularis oculi muscle**.
+   ⚠️ FIGURE CONTRADICTS THE PROSE: the prose calls the line joining the
+   meibomian orifices the "**white line**"; the figure labels a line at the lid
+   margin "**Gray line**". Both are transcribed as printed; the book does not
+   reconcile them.]
+
+NUMBERS ON THIS PAGE: orbital volume ≈ **30 ml**; the eye occupies ≈ **6.5 ml**.
+
+
+================================================================================
+PAGE 14 (PDF 16)
+================================================================================
+
+<u>N.B:</u> Another line on the lid margin is the **grey line** which is an
+avascular line marking the separation of the lid surgically into two leaflets:
+  - **anterior leaflet** composed of the skin, subcutaneous tissue and the
+    orbicularis muscle
+  - **posterior leaflet** composed of the tarsal plate and the palpebral
+    conjunctiva.
+
+[⚠️ This N.B resolves the p.13 figure: the book prints BOTH a "white line"
+ (joining the meibomian orifices) and a "grey line" (the surgical splitting
+ plane). They are two different lines, not a contradiction. The p.13 figure
+ labels the grey line.]
+
+[FIGURE, left, framed, uncaptioned — external eye with measurements.
+ ⚠️⚠️ FIGURE-ONLY NUMBERS, confirmed by a 300 dpi re-crop:
+   **1-2 mm**   — marked at the upper lid margin (upper dashed line to lid margin)
+   **10 mm**    — labelled **Vertical palpebral fissure**
+   **30 mm**    — labelled **Horizontal palpebral fissure**
+ Other labels: Lateral canthus · Superior orbital rim · Eyebrow · Upper eyelid ·
+ Medial canthus · Lower eyelid.
+ THESE THREE MEASUREMENTS APPEAR NOWHERE IN THE PROSE OF THIS CHAPTER.]
+
+[FIGURE, right, framed, uncaptioned — sagittal section of the upper lid.
+ Labels as printed: Orbital fat · Arcus marginalis · Orbital septum · Fibres of
+ orbicularis · **Fibres of levator aponeurosis projecting into skin giving rise
+ to skin crease** · **Insertion of aponeurosis into anterior tarsus** ·
+ **Marginal arterial arcade** · Cilia · **Whitnall's ligament** · **Levator
+ palpebrae superioris** · **Superior conjunctival fornix** · **Muller's muscle**
+ [printed with the umlaut: Müller's muscle] · **Peripheral arterial arcade** ·
+ Tarsus · Meibomian gland.
+ ⚠️ FIGURE-ONLY EPONYMS: **Whitnall's ligament**, **Müller's muscle**, **arcus
+ marginalis**, and the **marginal / peripheral arterial arcades** are named only
+ here — the prose never mentions any of them.]
+
+**3. Lacrimal system:**                  [blue heading, ruled]
+  - It is the physiological system composed of the structures responsible for
+    tear production and drainage.
+  - <u>It consists of</u>
+
+  i. <u>**The secretory part:**</u>
+       • **The main lacrimal gland** which secretes tears, and its excretory
+         ducts, which convey the fluid to the ocular surface.
+         It is located in the lacrimal fossa which lies anteriorly in the upper
+         temporal part of the orbit.
+       • **The accessory lacrimal glands** in the conjunctiva.
+       • ⚠️ Meibomian glands & Goblet cells in the conjunctiva **(tutorial)**
+         [marker form (d): whole bullet printed in blue and tagged.]
+
+  ii. <u>**The excretory part:**</u>
+       • The lacrimal puncta
+       • lacrimal canaliculi
+       • lacrimal sac → is located in the lacrimal sac fossa in the
+         anteroinferior nasal side of the orbit.
+       • nasolacrimal duct (by which the tears are conveyed into the nasal cavity
+         under the inferior turbinate).
+
+  [FIGURE pair, bottom, jointly captioned "**Anatomy of the lacrimal system**".
+   Left panel lettered **(B)**: face illustration with a tear running down the
+   cheek. Labels: Eyelashes · Superior rectus muscle · Eyebrow · Eyelid ·
+   Lacrimal puncta · Lacrimal gland · Medial canthus · Lateral canthus ·
+   Lacrimal sac · Meibomian glands · Nasolacrimal duct · Inferior rectus muscle.
+   Right panel: close-up of an eye with the lacrimal apparatus overlaid.
+   Labels: Lacrimal gland · Lacrimal gland ducts · Pupil · Sclera · Iris ·
+   Lacrimal puncta · Eyelid · **Superior lacrimal canal** · Lacrimal sac ·
+   **Lacrimal duct** · **Inferior lacrimal canal**.
+   ⚠️ FIGURE-ONLY: "superior / inferior lacrimal canal" as the naming of the
+   canaliculi.]
+
+⚠️ NOT PRINTED ANYWHERE ON THIS PAGE: **Krause** and **Wolfring** glands (the
+   accessory lacrimal glands are named only as "the accessory lacrimal glands");
+   **tear film layers or their thicknesses**; **Schirmer test**; **Jones I /
+   Jones II**. See the NOT-COVERED list.
+
+
+================================================================================
+PAGE 15 (PDF 17)
+================================================================================
+
+**4. Extraocular muscles:**              [blue heading, ruled]
+
+  o **These are <u>seven extraocular muscles</u> of the eye:**
+      • the four recti: (superior, inferior, medial, and lateral) muscles  |
+      • The two obliques: (superior and inferior)                          |
+        [a brace joins these two bullets to the label **"control ocular
+         movements"**]
+      • levator palpebrae superioris → is responsible for elevation of the upper
+        eyelid.
+
+  [FIGURE, left, framed, captioned "**Anterior view of the right eye**": the six
+   muscles drawn around a front-facing globe with red arrows showing each pull.
+   Labels: Superior rectus · Trochlea · Superior oblique · Lateral rectus ·
+   Medial rectus · Inferior oblique · Inferior rectus.]
+
+  [FIGURE, right, captioned "**Anatomy of the extraocular muscles**": lateral
+   cut-away of the orbit. Labels: Levator palpebrae superioris · Superior oblique
+   · Trochlea · Superior rectus · Medial rectus · **Annulus of Zinn** ·
+   Optic nerve · Inferior rectus · Lateral rectus · Inferior oblique.
+   ⚠️ FIGURE-ONLY EPONYM: **Annulus of Zinn**.]
+
+<u>**Nerve supply of EOM:**</u>
+  o All seven extraocular muscles are supplied by the oculomotor (III) nerve
+    except the lateral rectus by the abducent (VI) nerve and the superior oblique
+    by the trochlear (IV) nerve.
+    **" LR6 - SO4 - rest 3 "**   [mnemonic, printed in red]
+
+<u>**Action of EOM:**</u>
+  o The actions of the six muscles responsible for eye movement depend on the
+    position of the eye at the time of muscle contraction. However, each one of
+    the six muscles has a unique action by which it pulls the eye to a specific
+    position (the six cardinal positions of gaze):
+
+  [TABLE — three columns, transcribed complete]
+
+  | EOM | Nerve Supply | Action |
+  |---|---|---|
+  | Lateral rectus | VI | **Ab**duction |
+  | Medial rectus | III | **Ad**duction |
+  | Superior rectus | III | Elevation (Mainly in abduction) |
+  | Inferior rectus | III | Depression (Mainly in abduction) |
+  | Superior **oblique** | IV | **Depression** (Mainly in adduction) |
+  | Inferior **oblique** | III | **elevation** (Mainly in adduction) |
+
+
+================================================================================
+PAGE 16 (PDF 18)
+================================================================================
+
+[FIGURE, top, captioned "**Figure: Field of action of the EOM and cardinal
+ positions of gaze**": two eyes, "Right eye" and "Left eye", each with six red
+ arrows radiating out, each arrow labelled with the muscle that moves the eye in
+ that direction.
+   Right eye — up-and-out: Superior rectus · up-and-in: Inferior oblique ·
+     out: Lateral rectus · in: Medial rectus · down-and-out: Inferior rectus ·
+     down-and-in: Superior oblique
+   Left eye — mirror image: up-and-in Inferior oblique · up-and-out Superior
+     rectus · in Medial rectus · out Lateral rectus · down-and-in Superior
+     oblique · down-and-out Inferior rectus
+ ⚠️ FIGURE-ONLY: the *directional* mapping (which muscle to test in which gaze
+ position) exists only in this figure; the p.15 table gives only the abstract
+ action.]
+
+  o The superior rectus and the inferior oblique elevate the globe while the
+    inferior rectus and the superior oblique depress the globe.
+  o **Monocular** eye movements are termed "**Ductions**"
+  o Simultaneous **binocular** movements in the same direction are called
+    "**Versions**" e.g.,
+      - dextroversion (looking to the right with both eyes)
+      - levoversion (looking to the left with both eyes)
+      - dextro-elevation, dextro-depression, levo-elevation, and levo-depression.
+
+  [FIGURE, left, captioned "**looking in 9 cardinal positions of gaze (version
+   movements)**": a 3 x 3 grid of photographs of a man's eyes in the nine gaze
+   positions.
+   ⚠️ NUMBER CONFLICT, BOTH PRINTED: this caption says **9** cardinal positions;
+   the prose on p.15 says the **six** cardinal positions of gaze. Recorded, not
+   reconciled.]
+
+  [FIGURE, right, captioned "**Duction movements**": a single eye with four
+   double-headed arrows and boxed labels.
+   In-figure boxes: **UP & OUT** (Superior Rectus) · **UP & IN** (Inferior
+   Oblique) · **OUT** (Lateral Rectus) · **IN** (Medial Rectus) ·
+   **DOWN & OUT** (Inferior Rectus) · **DOWN & IN** (Superior Oblique).]
+
+  o Simultaneous **binocular** movements in opposite directions are called
+    "**Vergences**" e.g., convergence and divergence.
+
+⚠️ [TUTORIAL — the table below carries a dashed **Tutorial** tab on its top edge.
+    Marker form (e): the whole table is Tutorial.]
+
+  | Duction movements | Version movements |
+  |---|---|
+  | • Test each eye **separately** (Uniocular eye movement)  • Test each muscle in its primary field of action.  • Detect if any limitation in the direction of action of certain muscle | • Testing **binocular** eye movement  • Detect: conjugate gaze palsy  • Detect: Overaction or Underaction of the muscles |
+
+
+================================================================================
+PAGE 17 (PDF 19)
+================================================================================
+
+Age-Related Changes in the Eye and its Adnexa
+                                         [grey-banded section header]
+
+  – In the ophthalmologist's office, involutional conditions are responsible for
+    most of the clinic visits.
+  – Involutional (age related changes) can be categorized into three major
+    categories:
+
+**1. <u>Extraocular changes</u>:**
+  • The levator aponeurosis, the tendinous insertion of the levator palpebrae
+    superiors [sic] muscle, may partially <u>detach from the superior tarsal
+    plate</u>, causing the upper eyelid to move downwards closer to the visual
+    axis and restrict the superior field of vision (A condition called
+    involutional, senile, or aponeurotic **ptosis**)
+  • The lower eyelid suspensory ligaments lose their firmness causing the eyelid
+    margin to rotate either towards (**entropion**) or away from (**ectropion**)
+    the eyeball.
+  • The previous disorganization of the normal anatomical relationships between
+    the eyelids and the globe may predispose to chronic tearing (**epiphora**)
+    due to dysfunction of the lacrimal pump drainage mechanism (eyelid movement
+    that normally propels tears toward the puncta).
+  • The conjunctiva loses both accessory lacrimal glands and goblet cells over
+    time, increasing the incidence of **dry eye.**
+
+**2. <u>Intraocular changes</u>:**
+  • The crystalline lens continues to grow throughout lifetime.
+    In old age, it may result in crowding of the anterior chamber angle which may
+    predispose the patient to **angle-closure glaucoma**, especially in the
+    hyperopic patient with an originally shallow anterior chamber.
+  • Other changes in the lens include also yellowing and opacification of the lens
+    nucleus (**Nuclear sclerosis**)
+  • Filtration of aqueous fluid through the trabecular meshwork slows, allowing
+    for a progressive increase in IOP and, finally, an increase in the incidence
+    of **open-angle glaucoma**.
+  • The vitreous humour degenerates and condenses (**vitreous syneresis**) which
+    predisposes to the separation of the vitreous from its attachments to the
+    retina and optic disc, called a posterior vitreous detachment (**PVD**).
+    This can predispose the patient to retinal traction, retinal tears, and, in
+    the worst-case scenario, retinal detachment.
+  • Decrease of the corneal <u>endothelial</u> cell density (cells that are
+    important to maintain corneal clarity) may cause some predisposed patients to
+    **chronic corneal oedema**.
+  • The eye **pupil becomes smaller and less reactive.**
+
+**3. <u>Vascular and neurologic changes</u>:**
+  • Arteriosclerotic changes may predispose the patient to:
+      ✓ cranial third, fourth, and sixth nerve palsies
+      ✓ retinal artery and vein occlusions
+      ✓ anterior ischemic optic neuropathy
+  • Aging causes a delay in visual pigment regeneration in the retina which can
+    affect dark adaptation and may lead to **difficulty with night vision**.
+  • Age-related changes in the retinal vasculature and fewer neural cells in the
+    retina and visual cortex may predispose to decreased visual acuity, contrast
+    sensitivity, and/or visual fields.
+
+
+================================================================================
+PAGE 18 (PDF 20)  ⚠️ THE MASTER SEQUENCE — THE MOST LOAD-BEARING PAGE IN THE
+                    CHAPTER
+================================================================================
+
+Ocular Examination                       [grey-banded section header]
+
+  • Ocular examination should be an integral part of any general physical
+    examination carried out by the primary care provider.
+
+  • <u>**As minimal requirements, the following items must be assessed:**</u>
+      o Visual acuity
+      o Pupillary reactions
+      o Extra ocular muscles actions.
+      o Fundus examination (through a dilated pupil or preferably an undilated
+        pupil in conditions where follow-up and evaluation require testing of the
+        pupillary reactions)
+
+  • <u>**Additional tests that may be indicated according to history and the
+    results of the initial examination steps e.g.,**</u>
+      o Visual field testing
+      o Inspection of the eyelids, conjunctiva, cornea, sclera, iris, and lens.
+      o Upper eyelid eversion (When an ocular surface foreign body is suspected)
+      o Anterior chamber depth and contents assessment.
+      o Intraocular pressure evaluation.
+      o Fluorescein staining of the cornea (see the chapter on ocular drugs)
+
+  • <u>**After taking an accurate and comprehensive history the following must be
+    performed in order:**</u>   [printed in blue]
+      1. Measuring the **visual acuity**.
+      2. **Visual field** assessment.
+      3. **Inspection** of the eyelids, conjunctiva, cornea, sclera, and iris
+         with/without eversion of the upper eyelid.
+      4. Assessment of the **anterior chamber** depth and contents.
+      5. Assessment of **pupillary reactions**.
+      6. Testing **extraocular muscles actions**.
+      7. **Intraocular pressure** (tension) evaluation.
+      8. Assessment of the **lens clarity** via the direct ophthalmoscope,
+      9. **Fundus examination**.
+     10. Additional tests (when required and available) e.g., upper eyelid
+         eversion, fluorescein staining of the cornea and colour vision testing.
+
+  ⚠️ THIS TEN-STEP ORDER IS THE CHAPTER'S SPINE. Sections "1." through "9." that
+     follow on pp.19–41 are exactly these ten steps, in this order.
+
+  • <u>**Tools required for ocular examination:**</u>   [printed in blue]
+      1. Penlight
+      2. Mydriatic eyedrops
+      3. Topical anaesthetic eye drops.
+      4. Direct ophthalmoscope.
+      5. Near vision card
+      6. ⚠️ Fluorescein strips **(tutorial)**
+         [marker form (d): item 6 alone printed in blue and tagged.]
+
+  [FIGURE, captioned "**tools required for ocular examination**": a photograph
+   of, left to right, a bottle of **TROPICAMIDE** mydriatic drops (red cap), a
+   white bottle labelled **BENOX 0.4%** [topical anaesthetic], a packet of
+   **FLU-GLO** fluorescein strips, a black penlight, and a direct ophthalmoscope
+   head on a handle.
+   ⚠️⚠️ FIGURE-ONLY DRUG NAMES AND A CONCENTRATION: **Tropicamide**,
+   **Benox 0.4 %** and **Flu-Glo** appear ONLY on the bottles in this
+   photograph. The prose names none of them. The 0.4 % is the only anaesthetic
+   concentration printed in the chapter.]
+
+
+================================================================================
+PAGE 19 (PDF 21)
+================================================================================
+
+<u>N.B:</u>
+  • The **slit lamp** is a fixed standard ophthalmology office instrument that
+    helps the examination of the anterior segment of the eye by providing an
+    illuminated and a magnified view.
+  • With the aid of some lenses, the posterior segment can also be examined using
+    the slit lamp.
+  • Portable types of slit lamps are available but not common; used mainly for
+    bedridden patients and for children under general anaesthesia.
+
+  [FIGURES, top right, two photographs, uncaptioned: (a) a patient seated at a
+   table-mounted slit lamp with chin and forehead on the rest, examiner at the
+   oculars; (b) a closer view of the same from the examiner's side.]
+
+**1. Visual acuity (VA):**               [grey-banded numbered section header]
+
+<u>**Definition:**</u> It is a measurement of the smallest object a person can
+identify at a given distance from the eye compared to a standard.
+
+<u>**Distance visual acuity:**</u>
+  • It is usually recorded as a ratio comparing patient performance with the VA
+    of a normal person.
+
+⚠️ [TUTORIAL — dashed side box with a **Tutorial** tab on its top edge.
+    Marker form (e).]
+  **How to measure distance visual acuity?**
+  -  <u>Equipment:</u>
+       ➢ Visual acuity chart: e.g., Snellen or E chart
+       ➢ Plain occluder or card
+       ➢ Pinhole occluder
+       ➢ Torch or flashlight
+[end Tutorial box]
+
+  [FORMULA, printed as a display fraction in blue italic:]
+
+                              Testing distance (6 meters)
+      **Visual Acuity = ─────────────────────────────────────────────────**
+                    The smallest line the patient can see on the visual acuity chart
+
+  e.g., **Visual acuity of 6/12** indicates that the patient can recognize at
+  **6 meters** a symbol that a person with normal acuity can recognize at
+  **12 meters**.
+
+  • Alternative methods for recording distance visual acuity are:
+      1. **Decimal notation** (e.g., **6/6 = 1.0, 6/12 = 0.5, 6/60 = 0.1**, etc.)
+      2. **Feet notation** (e.g., **6/6 = 20/20, 6/9 = 20/30, 6/36 = 20/120**,
+         etc.)
+
+  • Practically, a **6 meters** distance may be considered equal to optical
+    infinity.
+
+  [FIGURES, bottom, three charts side by side with blue italic captions:
+   "**Landolt C chart**" — rows of broken rings (C shapes) in different
+     orientations, 11 rows, each row numbered 1–11 at the right with a small
+     metric label at the left.
+   "**Tumbling E-chart**" — rows of the letter E in four rotations, rows
+     numbered 1–9.
+   "**Snellen's chart**" — the classic letter chart. Rows numbered 1–11 at the
+     right, each with a printed feet-notation acuity:
+        row 1 = **20/200**, row 2 = **20/100**, row 3 = **20/70**,
+        row 4 = **20/50**, row 5 = **20/40**, row 6 = **20/30**,
+        row 7 = **20/25**, row 8 = **20/20**. Rows 9, 10 and 11 carry NO acuity
+        value at all — verified by a 400 dpi re-crop; the column stops at 20/20.
+        A green rule is printed under row 6 and a red rule under row 8.
+   Top rows of the Snellen chart as printed: E / F P / T O Z / L P E D /
+   P E C F D / E D F C Z P / F E L O P Z D / D E F P O T E C.
+   ⚠️ FIGURE-ONLY NUMBERS: the feet-notation ladder 20/200 → 20/20 exists only in
+   this chart image; the prose gives only three feet equivalents.]
+
+
+================================================================================
+PAGE 20 (PDF 22)
+================================================================================
+
+<u>**Technique:**</u>
+To test distance visual acuity with the Snellen visual acuity chart, tumbling E
+chart or the Landolt C chart, the <u>following must be done</u>:
+
+  1. Make sure the patient is at **6 meters** from a well-illuminated chart.
+     <u>N.B:</u> If glasses are worn for distance vision, visual acuity must be
+     tested **without** glasses **and with** the patient wearing them.
+
+  2. **The right eye is tested and recorded first.**
+     <u>N.B:</u>
+       • Completely occlude the left eye using an <u>opaque occluder</u> or the
+         <u>palm</u> of the patient's hand.
+       • With children, make sure the eye is completely covered all the time to
+         prevent "peeking."
+
+  3. Ask the patient to designate the direction in which the strokes of the E
+     point or the C letter's opening (or to read the letters on the Snellen
+     chart) starting with the **6/6** line.
+
+  4. If the patient could not see the **6/6** symbols, go to the larger size
+     **6/9**. If, also, not seen → keep going through the **6/12, 6/18, 6/24,
+     6/36** till reaching the **6/60** line.
+
+  5. Record the acuity measurement as a ratio in which the **numerator**
+     represents the distance at which the test is performed, and the
+     **denominator** represents the number written beside the line the patient
+     could read.
+
+  6. Repeat the procedure for the other eye,
+
+**Pinhole test:**                        [blue heading]
+  o If the recorded visual acuity is **6/12 or less** in one or both eyes, repeat
+    the test with the patient viewing the test chart through a pinhole occluder.
+    The pinhole occluder may be used over the patient's glasses.
+  o If VA **improves** the pinhole than that recorded before then the patient has
+    a **refractive error** that requires correction with glasses or may require a
+    new glass prescription if he/she is already using them.
+  o ⚠️ If vision get worse, it indicates **macular lesion** **(tutorial)**
+    [marker form (d): this whole third bullet is printed in blue and tagged.]
+
+  [FIGURES, right, jointly captioned "**Pinhole**": (a) a photograph of a beige
+   plastic occluder disc marked "**PH**" on its handle, its aperture dark;
+   (b) a photograph of a black double-lobed occluder paddle with one tiny white
+   pinhole in each lobe.]
+
+**If a patient cannot see the largest Snellen letters:**   [blue heading, ruled]
+
+  1. <u>Reduce the distance</u> between the patient and the chart, [ **1 meter at
+     a time** ] .
+     → record the new distance as the numerator of the acuity designation (e.g.,
+     **5/60** if the patient is 5 meters from the chart, **4/60, 3/60, 2/60 or
+     1/60**).
+  2. If the patient is unable to see the largest Snellen letter at one meter,
+     hold up 1 hand, extend 2 or more fingers, and ask the patient to **count the
+     number of fingers**.
+     → record the distance at which counting fingers is done accurately (e.g.,
+     **CF 50 cm**).
+  3. If the patient cannot count fingers, determine whether he/she can **detect
+     the movement of your hand**.
+     → record a positive response as **hand motion (HM)**.
+  4. If the patient cannot detect hand motion, use a penlight to determine
+     whether he or she can **detect light**. → record the patient's response as
+     **PL (perception of light)**, or **NPL (no perception of light)**.
+
+⚠️ THIS IS THE FULL LOW-VISION LADDER, COMPLETE AND IN ORDER:
+   6/60 → 5/60 → 4/60 → 3/60 → 2/60 → 1/60 → CF (with distance) → HM → PL → NPL.
+
+
+================================================================================
+PAGE 21 (PDF 23)
+================================================================================
+
+<u>**Legal blindness:**</u> The **WHO** defines blindness as a best corrected
+visual acuity of **3/60** in the better-seeing eye.
+
+**<u>Near visual acuity testing:</u>**   [blue heading]
+  o May be performed if the patient has a complaint about near vision or if
+    distance testing is difficult or impossible (e.g., bed-ridden patients).
+    In such conditions, testing near vision may be the only feasible way to the
+    visual acuity.
+  o If the patient wears glasses for reading, he/she should wear them during
+    testing.
+  o The patient holds the test card <u>at a distance of **30-40 cm**</u>. While
+    the examiner occludes 1 of the patient's eyes, the patient reads the smallest
+    characters legible on the card. The test is then repeated for the other eye.
+  o If a standard near vision card is not available, a printed matter such as a
+    newspaper may be substituted.
+
+**<u>For the non-cooperative patient</u>**   [blue heading]
+  A. Visual acuity estimation is difficult in such patients.
+  B. A change in the facial expression in response to light or sudden movement
+     indicates the presence of vision.
+  C. A brisk pupillary response to light also suggests the presence of some
+     degree of vision. The exception to this is the patient with **cortical
+     blindness** (check pupillary examination).
+  D. In almost all cases, referral to an ophthalmologist is recommended.
+
+**<u>Visual acuity evaluation in newborns. infants. and children:</u>**
+                                         [blue heading, ruled; the full stops in
+                                          the heading are the book's own]
+
+**A. <u>Newborns</u>:**
+  – Visual acuity cannot be measured in newborns.
+  – The general ocular status should be assessed through **corneal light reflex
+    testing**, evaluation of the **red reflex**, **pupillary testing**, and, if
+    possible, **fundus examination**.
+
+**B. <u>Infants to 2-year-olds</u>:**
+  • **To test for amblyopia** in infants (from a few months to about age of 2),
+    <u>cover each eye in turn</u> with the hand or, preferably, an adhesive patch
+    and note how the child reacts. The <u>infant should be able to maintain
+    central fixation with each eye</u>.
+    If amblyopia is present, the child will likely resist covering the "good"
+    eye.
+  • **Visual function**, including ocular motility, may be further assessed by
+    <u>passing an interesting object</u>, such as a ring of keys, before the baby
+    and noting how the infant watches and follows the moving object. Normal
+    visual function is noted as **CSM** (**C**entral, **S**teady, and
+    **M**aintained fixation)
+  • **The rotating optokinetic drum** (a drum with vertical alternating black and
+    white stripes) can provide an estimation of the visual function in such ages
+    by inducing **optokinetic nystagmus** where the child follows a stripe in
+    slow motion and when it disappears moves the eye quickly back to pick a new
+    stripe.
+  • **A picture card** may be used to test visual acuity in children <u>between 2
+    and 3 years</u> of age. A card with distinct figures is given to the child.
+    One figure is highlighted on the chart, and the child points to the
+    corresponding figure on the card.
+
+
+================================================================================
+PAGE 22 (PDF 24)
+================================================================================
+
+**C. <u>Above the age of 3</u>:**
+  • If the child can follow directions and communicate adequately, visual acuity
+    can be tested with the **tumbling E** or **Landolt C** charts where the child
+    is asked to point with his/her fingers to indicate the direction of the
+    "arms" of the E or the opening of the C.
+  • Use of an **adhesive patch** is the best way to ensure full monocular
+    occlusion and accurate acuity measurement in children at these ages.
+
+<u>N.B:</u>
+  • Vision should be <u>rechecked annually</u> once visual acuity has been
+    determined to be normal in each eye.
+  • Electrophysiologic testing (visually evoked cortical potential **[VEP]** and
+    electroretinogram **[ERG]**) is also helpful in determining the visual
+    function in uncooperative patients, malingering patients, and children
+    difficult to examine.
+
+<u>**According to the WHO leading causes of vision impairment are:**</u>
+  1. Uncorrected refractive errors
+  2. Cataract
+  3. Age-related macular degeneration
+  4. Glaucoma
+  5. Diabetic retinopathy
+  6. Corneal opacity
+  7. Trachoma
+
+**2. Visual field testing**              [grey-banded numbered section header]
+
+  [BOX, rounded frame — the four methods]
+    ✓ Confrontation visual field testing
+    ✓ Light projection
+    ✓ Automated perimetry
+    ✓ **Amsler gird** [sic — "gird", for grid] (central field)
+
+**1. <u>Confrontation visual field testing:</u>**   [blue heading]
+
+  o It grossly examines for any significant visual field defects.
+  o It requires a **minimum visual acuity of 1/60 or better** in the eye tested.
+  o <u>**Technique:**</u>
+      1) The examiner takes a position about **1 meter** in front of the patient.
+      2) The patient is asked to cover the **left** eye with the palm of the left
+         hand; the examiner closes the **right** eye. Thus, the field of the
+         examiner's left eye is used as a reference in assessing the field of the
+         patient's right eye.
+      3) The patient is asked to fixate on the examiner's left eye and then count
+         the fingers of the examiner placed midway between the examiner and the
+         patient in each of the **4 quadrants** of the visual field.
+      [continues on p.23]
+
+⚠️ [TUTORIAL — framed box with a **Tutorial** tab on its top edge. Form (e).]
+  Instead of counting finger,
+  You can advance your finger stating [sic] from periphery
+  (superior, temporal, inferior and nasal)
+  & ask the patient to say **"now"** when the finger is first visible
+[end Tutorial box]
+
+  [FIGURE, right, captioned "**confrontation test**": photograph of an examiner
+   facing a seated patient, one hand raised showing fingers.]
+
+  [FIGURES, bottom right, three photographs lettered **A** and **B** (the third
+   unlettered), uncaptioned in the text: a patient occluding one eye with a white
+   card while the examiner brings a finger in from the periphery.
+   ⚠️⚠️ FIGURE-ONLY NUMBERS — THE NORMAL FIELD EXTENTS. Confirmed by a 400 dpi
+   re-crop of the in-photo annotation. The third photograph is annotated:
+        **50 degrees superiorly**
+        **90 degrees temporally**
+        **60 degrees nasally**
+        **70 degrees inferiorly**
+        **Anteroposterior axis of eye**  (the dashed reference line)
+   THE NORMAL EXTENT OF THE VISUAL FIELD IS PRINTED NOWHERE IN THE PROSE OF THIS
+   CHAPTER. It exists only inside this photograph.]
+
+
+================================================================================
+PAGE 23 (PDF 25)
+================================================================================
+
+      4) After the patient's right eye is tested, the procedure is repeated for
+         the left eye, with the patient covering the right eye with the palm of
+         the right hand, and the examiner closing the left eye.
+      5) Results are recorded as shown in the figure.
+
+  [FIGURE, right, three rows of paired ovals, captioned:
+   "**Recording of confrontation visual field testing**
+    **(A)** Normal
+    **(B)** Bitemporal hemianopia
+    **(C)** Homonymous hemianopia"
+   Row A: two ovals (Left, Right), each divided into 4 quadrants, every quadrant
+     marked **CF**.
+   Row B: Left oval — the temporal (left-hand) half shaded grey, the nasal half's
+     two quadrants marked CF; Right oval — the temporal (right-hand) half shaded,
+     nasal quadrants CF. i.e. both temporal halves lost.
+   Row C: Left oval — left half shaded, right half CF; Right oval — left half
+     shaded, right half CF. i.e. the SAME side lost in both eyes.
+   ⚠️⚠️ FIGURE-ONLY AND IMPORTANT: **this is the entire visual-field-defect
+   vocabulary of the chapter.** The terms *bitemporal hemianopia* and *homonymous
+   hemianopia* are defined ONLY by this figure — the prose never defines either,
+   and no other field defect (quadrantanopia, altitudinal, arcuate, scotoma,
+   tunnel vision) is named anywhere in the chapter.
+   "CF" here means *counting fingers seen* in that quadrant, i.e. the recording
+   notation.]
+
+**2. <u>Light projection:</u>**          [blue heading]
+  o It is performed when the visual acuity of the eye tested is **less than
+    1/60**.
+  o Using the penlight, with the patient properly occluding the other eye, light
+    is directed at the eye tested from different quadrants and the patient is
+    asked to determine the direction of illumination.
+  o Testing can be done for the previously shown quadrants in the confrontation
+    method or the **4 cardinal quadrants** (superior, inferior, temporal, and
+    nasal)
+  o Results are recorded as either **good light projection (GLP)** or **bad light
+    projection (BLP)**.
+
+**3. <u>Other methods of assessment of the visual field:</u>**   [blue heading]
+  o <u>Automated perimetry</u>: an accurate quantitative test that can be used
+    for assessment and follow-up.
+  o <u>Amsler grid</u>: it is used to check for field defects in the **central 10
+    degrees** (central field) for each eye at a time.
+
+**3. Inspection:**                       [grey-banded numbered section header]
+
+  • With adequate room light, the examiner can inspect the eyelids, surrounding
+    tissues, and palpebral fissure.
+  • Palpation of the orbital rim and eyelids may be indicated, depending on the
+    history (e.g., trauma, mass lesion) and symptoms.
+  • Inspection of the conjunctiva and sclera is facilitated by using a penlight
+    and having the patient look up while the examiner retracts the lower eyelid
+    or look down while the examiner raises the upper eyelid. The penlight also
+    aids in the inspection of the cornea and the iris.
+
+**<u>Eversion of the upper eyelid (Conjunctiva):</u>**   [blue heading]
+  o It is sometimes required to search for conjunctival foreign bodies or other
+    conjunctival signs.
+  o Topical anaesthetic facilitates this procedure, but it can be done without
+    anaesthesia.
+  o The patient is asked to look down, and the examiner grasps the eyelashes of
+    the upper eyelid between the thumb and the index finger.
+  o A cotton tipped applicator is used to press gently downward over the superior
+    border of the tarsal plate as the eyelid margin is pulled upward by pulling
+    the lashes.
+  o With the penlight the examiner inspects the exposed conjunctival surface of
+    the upper eyelid for a foreign body or other abnormality.
+  o A cotton-tipped applicator soaked in topical anaesthetic can be used to
+    remove a foreign body.
+  o To return the eyelid to its normal position, the examiner releases the eyelid
+    margin, and the patient is instructed to look up or, simply, blink.
+
+
+================================================================================
+PAGE 24 (PDF 26)
+================================================================================
+
+  [FIGURES, top, three images. The first two share the red caption "**Eversion
+   of the upper eyelid**" and carry their own black sub-captions: "**Twist
+   cotton-tipped swab upward**" and "**Look downward**". They show the two-hand
+   technique described on p.23. The third is an uncaptioned colour photograph of
+   an everted upper lid on a real patient, the tarsal conjunctiva exposed.]
+
+**4. Assessment of the depth of the anterior chamber:**
+                                         [grey-banded numbered section header]
+
+  • Usually, the iris has a flat contour. When the anterior chamber is shallow,
+    the iris becomes convex as it is bowed forwards. In such a case, the nasal
+    iris is seen in shadow when a light is directed from the temporal side. As
+    the shallowness of the anterior chamber increases, so does the shaded area of
+    the nasal iris.
+  • A shallow anterior chamber may indicate **narrow angle glaucoma** (also
+    called **angle-closure glaucoma**) or a narrow angle that could dose [sic,
+    for "close"] with pupillary dilation, thus inducing an attack of
+    angle-closure glaucoma.
+  • If a patient is <u>suspected of having a narrow angle</u>, he/she should
+    <u>not be dilated</u> and should be <u>referred to an ophthalmologist</u> for
+    evaluation.
+
+**<u>Technique for assessment of the depth of the AC:</u>**   [blue heading]
+  1. Shine a light from the **temporal** side of the head across the front of the
+     eye **parallel to the plane of the iris**.
+  2. Look at the **nasal** aspect of the iris. → If **two-thirds or more** of the
+     nasal iris is in shadow, the chamber is probably **shallow** and the angle
+     narrow.
+  3. Repeat the test for the other eye.
+
+⚠️ [TUTORIAL — framed box headed **"From Tutorial"** in blue. Marker form (c):
+    a whole box declared to come from the tutorial.]
+  **Shallow AC :**
+    - Hypermetropia
+    - Angle closure glaucoma
+    - Intumescent cataract
+    - Perforated corneal ulcer
+    - Leakage from surgical wound
+  **Deep AC :**
+    - High myopia
+    - Aphakia
+    - Buphthalmos
+[end Tutorial box]
+
+  [FIGURE, right, captioned "**Assessment of the depth of the anterior chamber**"
+   — a four-panel figure. Top row: two en-face iris photographs labelled
+   "**Deep**" (evenly illuminated, no shadow) and "**Shallow**" (the far/nasal
+   half in dark shadow), with an arrow at the left labelled "**Light source**".
+   Bottom row: two line drawings in cross-section showing the flat iris (deep)
+   and the forward-bowed iris (shallow) with the light beam entering.
+   ⚠️ FIGURE TEACHES THE SIGN: the shadow test is described in the prose but only
+   the figure shows what "nasal iris in shadow" actually looks like.]
+
+
+================================================================================
+PAGE 25 (PDF 27)
+================================================================================
+
+  [FIGURES, top, three slit-lamp photographs of the anterior chamber in optical
+   section, captioned "**Shallow**", "**Normal**", "**Deep**". The first carries
+   a small lower-case "**b**" in its corner. Each shows the corneal beam and the
+   iris beam and the gap between them.
+   ⚠️ FIGURE-ONLY: this is the only place the chapter shows the **slit-lamp
+   optical section**, which is how AC depth is actually graded at the slit lamp.
+   The prose describes only the penlight shadow test.]
+
+**5. Pupils:**                           [grey-banded numbered section header]
+
+  – Pupillary testing is an integral part of any neuro-ophthalmic examination.
+    Pupillary size is a function of resting autonomic tone, the light reflex, the
+    near reflex, and local mechanical factors.
+  – Proper pupil examination requires a **dim room**; a small bright light source
+    such as a bright penlight or an ophthalmoscope and a **distant object** on
+    which the patient will be asked to fix.
+
+  [BOX, rounded frame]
+  <u>**Assessment of pupils:**</u>
+    A. Size and shape of the pupil.
+    B. The Direct Light Reflex and the Near Reflex.
+    C. The Consensual Reflex (**Swinging-flash Light Test**)
+
+**A. Size and shape of the pupil:**      [blue heading, ruled]
+  • The first step in pupillary examination is to observe the resting state of
+    the pupils in room light.
+  • Normally, both pupils are round and equal in diameter (sometimes **a
+    difference in pupil size** between both eyes [**anisocoria**] of less than
+    **1 mm** is a **normal** variation in up to **20%** of the population).
+  • For differences of **greater than 1 mm**, the difference in pupil size
+    **should be recorded** both in very bright and very dim lighting.
+
+  [TABLE — two columns]
+
+  | Anisocoria that is more in **dim** lighting | Anisocoria that is more pronounced in **bright** lighting |
+  |---|---|
+  | may indicate dysfunction of the dilating **sympathetic** nervous system (Horner syndrome). | signifies abnormal constriction and may indicate **parasympathetic** dysfunction (third nerve palsy) or **pupillary trauma**. |
+
+  • Pupillary inspection may reveal an active or a previous ocular disease with
+    unusual pupillary shape or size that are the result of local intraocular
+    processes [e.g., damage to the pupillary sphincter or adhesion of the iris to
+    the lens (**festooned pupil**)] → ⚠️ **(tutorial: festooned pupil due to
+    posterior synechiae in uveitis)**
+    [marker form (d): an inline blue parenthetical tagging a single clause; the
+     rest of the sentence is core.]
+
+  [FIGURE, bottom left, uncaptioned, with an arrow from the "festooned pupil"
+   text: a colour photograph of a brown iris whose pupil is irregular and
+   star-shaped/scalloped — the festooned pupil.]
+
+  [FIGURE, bottom right, framed, captioned "**(A) isocoria and (B) Anisocoria**":
+   two rows of paired schematic eyes. Row (A) labelled "**Isocoria**" — both
+   pupils the same small size. Row (B) labelled "**Anisocoria**" — the left eye's
+   pupil small, the right eye's pupil large.]
+
+NUMBERS ON THIS PAGE: physiological anisocoria **< 1 mm**, in up to **20 %** of
+the population; **> 1 mm** must be recorded in bright and dim light.
+
+
+================================================================================
+PAGE 26 (PDF 28)
+================================================================================
+
+**B. The Direct Light Reflex and the Near Reflex:**   [blue heading, ruled]
+  o In dim room light
+  o The patient is told to fix at a distant object
+  o Then a bright light is shone directly into each pupil **slightly temporal to
+    the visual axis**.
+
+  [BOX, rounded frame]
+  <u>N.B:</u> Placing yourself or the light directly in front of the patient will
+  cause the pupils to constrict due to accommodation.
+
+  o There should be a **brisk, simultaneous, and equal** response from both
+    Pupils.
+
+**The near reflex:**                     [dark-red heading]
+  • Normally, when a person focuses on a near target, the pupils constrict due to
+    a fixed neural relationship known as the **near reflex (triad): convergence,
+    accommodation, and pupillary constriction**.
+  • For pupils that react poorly to light, it is important to test the pupil for
+    constriction with accommodation.
+  • This is performed by having the patient focus with both eyes on a small,
+    easily seen target (such as the patient's own finger or a pen) as it is
+    slowly moved toward the patient's face.
+  • The pupil that reacts weakly to light but strongly to accommodation is termed
+    **light-near dissociation**. This **can signify an abnormality of the
+    midbrain or ciliary ganglion.** (**MRI** is, then, mandatory to exclude a
+    compressive lesion)
+
+  [FIGURE, left, uncaptioned: photograph of an elderly patient's face with a
+   white target held on the midline close to the nose — the near-reflex test
+   being performed.]
+
+  [FIGURE, right, a hand-lettered colour graphic headed "**The Near Reflex**".
+   Its three numbered items: ① **Convergence** ② **Miosis** ③ **Accomodation**
+   [sic]. Drawn: two eyes converging on a book, and a lens changing shape.
+   ⚠️ NOTE: the figure names the triad's second element **Miosis** where the
+   prose says "pupillary constriction". Both printed.]
+
+⚠️ [TUTORIAL — a whole three-panel figure block headed in blue:
+    "**Pupil colour (From tutorial)**". Marker form (c).]
+  Three framed photographs, each with its own caption:
+    1. photograph of a brown iris with a jet-black pupil (small letters a/b/c
+       drawn on the iris) — caption "**Black**  (Newly born & Apahkia)" [sic —
+       "Apahkia", for Aphakia]
+    2. photograph of an eye with a blue-grey pupil — caption "**Grayish in old
+       age**  /  **Nuclear sclerosis (bright RR)**  /  **IMSC (Dim RR)**"
+       [RR = red reflex; IMSC = immature senile cataract — the book does not
+        expand either abbreviation here]
+    3. photograph of an elderly face with both pupils white — caption
+       "**Leukocoria**  (Mature cataract)"
+[end Tutorial block]
+
+⚠️ FIGURE-ONLY TEACHING: the whole **pupil-colour differential** (black / greyish
+   / leukocoria and what each means, with bright vs dim red reflex) exists only
+   in these three captioned photographs, and it is Tutorial-marked.
+
+
+================================================================================
+PAGE 27 (PDF 29)
+================================================================================
+
+**C. The Consensual Reflex (Swinging-flash Light Test):**   [blue heading, ruled]
+
+  • The swinging-flashlight test is an objective and sensitive method of
+    detecting **asymmetric optic nerve disease**.
+  • The abnormality detected with this test is called **relative afferent
+    pupillary defect (RAPD)**, or **Marcus Gunn pupil**.
+  • A RAPD is present when **one pupil does not react or poorly reacts to direct
+    light stimulation but reacts well consensually** i.e., when light is shone on
+    the other (contralateral) pupil.
+
+  [FIGURE, left, a two-column schematic headed "**Normal**" and "**Right relative
+   afferent pupillary defect**". Each column shows three rows of a pair of eyes
+   (R and L) with a torch drawn at successive positions; the Normal column's
+   bottom row is labelled "**Constricts**", the RAPD column's bottom row
+   "**Dilates**".
+   ⚠️ FIGURE-ONLY: the *swing sequence itself* — what happens at each step of the
+   test — is drawn only here.]
+
+  [FIGURE, right, two photographs captioned jointly "**Left Direct and
+   Consensual-light reflex**"; the photographs carry their own in-image labels
+   "**Direct pupillary reflex**" and "**Consensual reflex - observe contralateral
+   pupil**", and a watermark "GEEKYMEDICS.com".]
+
+  [FIGURE, bottom left, framed schematic of the pupillary pathway, captioned at
+   the right: "**Figure (1-9). Pathway of the pupillary light reflex.**"
+   ⚠️⚠️ THIS BOOK'S CHAPTER 1 DOES NUMBER FIGURES: "Figure (1-9)". It is the only
+   numbered figure encountered so far in this chapter, and it is numbered 9 while
+   being roughly the twentieth figure in the chapter — SO THE FIGURE NUMBERS ARE
+   NOT AN INDEX AND CANNOT BE COUNTED ON.
+   Figure labels as printed: Posterior commissure · Lateral geniculate nucleus ·
+   III nerve with parasympathetic fibers · Afferent pathway · Efferent pathway ·
+   Right · Optic nerve · Left · Light source · Pretectal nucleus ·
+   Edinger-Westphal nucleus (part of III nerve nucleus) · Red nucleus ·
+   Optic tract · Ciliary ganglion.]
+
+  [ADJOINING PROSE, printed beside the figure as its explanation — transcribed
+   in full because it is teaching, not a caption:]
+  <u>First decussation</u> takes place at the <u>optic chiasma</u> where the
+  temporal retinal fibres pass along the ipsilateral optic tract and the nasal
+  fibers pass along the contralateral optic tract. Before reaching the lateral
+  geniculate body, pupillary fibres reach the pretectal nucleus in the midbrain,
+  at level of superior colliculus.
+
+  From the pretectal nucleus, Fibers <u>pass to Edinger-Westphal nucleus of both
+  sides (second decussation).</u> Efferent Preganglionic fibers from the
+  Edinger-Westphal nucleus relay in the ciliary ganglion and reach the sphincter
+  pupillae muscle via the oculomotor (III) nerve.
+
+
+================================================================================
+PAGE 28 (PDF 30)
+================================================================================
+
+<u>**Technique:**</u>
+  o Perform the test in the same way as for the light reflex; except that the
+    light is swung between the 2 eyes to compare the intensity of the light
+    reflex.
+  o It is essential that the light is shone onto each eye for **equal amounts of
+    time and from the same angle**
+  o To perform the test, the light is shone into 1 eye for about **3 Seconds**,
+    moved rapidly across to the other eye, shone for **3 seconds**, and then
+    shifted back to the first eye.
+  o This procedure is repeated several times until the examiner is certain of the
+    responses.
+  o Normally, the pupils should remain the same size or constrict slightly as the
+    light is swung between the 2 eyes.
+  o A RAPD is present when there is **repeatable dilation of both pupils without
+    initial constriction** as the light is swung from the normal eye to the
+    abnormal eye.
+
+  • A RAPD almost always indicates a lesion in the **optic nerve** on the
+    affected side, although diffuse retinal abnormalities or central retinal
+    disorders may produce an RAPD.
+  • **Cataract and vitreous hemorrhages do not affect the pupillary reaction**.
+
+  [BOX, rounded frame]
+  <u>N.B:</u>
+    o An eye with an RAPD **never** presents with **anisocoria**. (Since
+      stimulation of the normal eye will lead to a similar pupillary constriction
+      in the affected eye)
+    o A **RAPD cannot be bilateral** (since the test is essentially dependent on
+      the comparison between both eyes).
+
+**6. Extraocular muscle testing (ocular alignment and ocular movements):**
+                                         [grey-banded numbered section header]
+
+  o The patient is asked to follow an object to the **6 cardinal positions of
+    gaze**. This allows testing of each muscle in its primary field of action.
+  o For a case of **squint** (strabismus), testing a patient (children & adults)
+    consists of (**general inspection, the corneal light reflex test,** and
+    **the cover test**).
+
+<u>N.B:</u>
+  o Children up to age **3 or 4 months** (till the development of the **fixation
+    reflex**) usually have uncoordinated eye movements and temporary intermittent
+    strabismus.
+    However, **Constant deviations at any age should be referred to an
+    ophthalmologist.**
+  o Children with **epicanthus** (skinfold covering the medial canthus and
+    extending towards the upper eyelid and brow) in whom the nasal bridge is
+    broad and flat, may give the **false appearance of having convergent squint**
+    (apparent squint - pseudostrabismus – pseudoesotropia), especially if the
+    head or eyes are turned slightly to the right or left.
+    As the child's head grows and the nose bridge develops, the epicanthus
+    becomes less obvious, and the eyes appear normal.
+
+  [FIGURE, right, captioned "**Epicanthus (pseudo esotropia)**": photograph of an
+   infant's face with prominent medial epicanthal folds and a broad flat nasal
+   bridge.]
+
+
+================================================================================
+PAGE 29 (PDF 31)
+================================================================================
+
+The cover test and evaluation of the corneal light reflex will distinguish
+between pseudostrabismus (epicanthus) and true strabismus. However, it is
+important to keep in mind that strabismus can also occur in the presence of
+epicanthus.
+
+**A. Inspection**                        [blue heading, ruled]
+  o For infants and older children, a general inspection may reveal an obvious
+    deviation.
+  o The strabismic patient is asked to <u>**look in the 6 cardinal positions**</u>
+    of gaze:
+      – It will show whether the deviation is:
+          • **concomitant** (angle of deviation equal in all positions of gaze),
+            **OR**
+          • **incomitant** (angle of deviation varies in different positions of
+            gaze)
+      – The muscle with weakness (paresis) or paralysis will be easily detected.
+  o Involuntary eye jerks known as **nystagmus** may be detected. (All infants or
+    children with nystagmus should be examined and followed up by an
+    ophthalmologist)
+  o The patient may assume an **abnormal head posture** (i.e., a tilt or turn to
+    one side)
+      – To reduce the nystagmus and improve the visual acuity, **OR**
+      – To obtain binocular vision (avoid diplopia) in cases of cranial-nerve
+        palsy.
+
+**B. Corneal Light Reflex**              [blue heading, ruled]
+  o It checks for ocular alignment.
+  o It may be the only possible means for testing for strabismus in **newborns
+    and young children**.
+  o With the patient's eyes in the primary position of gaze (looking straight
+    forward to a fixed point on the horizon with the head erect), a penlight is
+    held directly and shone on the eyes by the examiner at a distance of
+    approximately <u>**2/3 of a meter**</u>.
+  o The examiner aligns his or her eye with the light source and compares the
+    position of the light as reflected by the cornea of each eye.
+  o Normally, the light is reflected on each cornea symmetrically and in the same
+    position relative to the pupil and visual axis of each eye.
+  o In a deviating eye, the light reflection will be eccentric and, in a
+    direction, opposite to that of the deviation.
+  o The amount of deviation can be estimated by the amount of displacement of the
+    light reflex.
+
+  [FIGURE, right, four rows of paired eyes lettered **A**, **B**, **C**, **D**,
+   captioned:
+   "**Corneal light reflexes showing (a) normal, (b) deviation of 15 degrees,
+     (c) deviation of 30 degrees, (d) deviation of 45 degrees.**"
+   Row A: both corneal reflexes central. Row B: the right-hand eye's reflex
+   displaced to the pupil margin. Row C: displaced to mid-iris. Row D: displaced
+   to the limbus.
+   ⚠️⚠️ FIGURE-ONLY NUMBERS AND THE ENTIRE QUANTITATIVE SCALE: **15° = pupil
+   margin, 30° = mid-iris, 45° = limbus**. The prose says only "the amount of
+   deviation can be estimated by the amount of displacement" — the actual
+   estimating scale is printed ONLY in this caption.
+   ⚠️ THE EPONYM **HIRSCHBERG** IS NOT PRINTED. The book calls this the "Corneal
+   Light Reflex" test throughout.]
+
+
+================================================================================
+PAGE 30 (PDF 32)
+================================================================================
+
+**C. The Cover Test(s):**                [blue heading, ruled]
+  • They are easy to perform, require no special equipment, and detect almost
+    every case of **true squint** (tropia).
+  • They can be used on any patient <u>over the age of **6 or 7 months**.</u>
+
+<u>**Technique:**</u>
+  o The patient is asked to <u>look at a fixation point</u>, such as a detailed or
+    interesting target (e.g., a toy) or the Snellen chart.
+  o <u>Cover the fixating</u> eye and observe the other eye.
+  o If the uncovered eye moves to pick up the fixation, then it can be deduced
+    that this eye was not directed toward the object of regard originally when
+    both eyes were uncovered.
+  o If the eye moves **inward** to fixate, then it must have been deviated
+    outward (**exotropic**).
+  o If the eye moves **outward** to fixate, then it was deviated inward
+    (**esotropic**).
+  o If the eye moves **up or down**, then it is **hypotropic or hypertropic**,
+    respectively.
+  o **No shift** on cover testing means there is **no tropia**
+  o If there is no tropia, **phoria** (latent squint or tendency of the eye to
+    deviate that is corrected by the brain to achieve fusion of the images seen
+    by both eyes) could still be present.
+  o A **phoria** is detected by the **cover-uncover test**.
+    When removing the cover, the examiner will find that the <u>eye that was
+    covered will move to regain fixation</u>. The patient has an **esophoria** if
+    the uncovered eye moves outward to fixate and **exophoria** if the eye moves
+    inward to fixate.
+
+**<u>Alternate cover test:</u>**         [blue heading]
+  – Alternating the cover between both eyes reveals the **total deviation, both
+    latent and manifest**
+  – Maintain cover over one eye for **2-3 s** before rapidly shifting to the
+    other eye.
+
+  [FIGURE, left, framed, captioned in blue italic:
+   "**Figure (A) Cover test:** on covering the sound eye the deviated eye moves
+    to gain fixation."]
+
+  [FIGURE, right, captioned "**Cover test**": four rows of paired-eye drawings,
+   each row an occluder disc over one eye and a coloured arrow marked "Eye
+   Moves". Row labels as printed: **Esotropia** · **Exotropia** · **Left
+   hypertropia** · **Left hypotropia**.
+   ⚠️ FIGURE-ONLY: **hypertropia and hypotropia are only illustrated here**, and
+   the direction of movement for each of the four tropias is figure-only.]
+
+  [FIGURE, bottom left, framed, captioned in blue italic:
+   "**Figure (B) Cover-Uncover test:** on covering one eye it becomes deviated
+    under the cover. On removing the cover, the eye with phoria can be seen
+    moving to regain fixation."
+   Its two rows are labelled inside the frame **Esophoria** and **Exophoria**,
+   each with an "Eye moves" arrow.]
+
+⚠️ NOTE ON FIGURE NUMBERING: these two are labelled "Figure (A)" and
+   "Figure (B)" — letters, not the "Figure (1-9)" style used on p.27. The
+   chapter uses at least two incompatible figure-labelling schemes.
+
+
+================================================================================
+PAGE 31 (PDF 33)
+================================================================================
+
+**7. Intraocular pressure (IOP) measurement:**
+                                         [grey-banded numbered section header]
+
+  o Intraocular pressure (IOP) is determined largely by the outflow of aqueous
+    humour from the eye: the greater the resistance to outflow, the higher the
+    IOP.
+  o IOP varies among individuals. An IOP of **15 mm Hg** represents **the mean**
+    in a "normal" population. However, an IOP in the range from **10 to 21 mm
+    Hg** is considered the **normal average**.
+  o Measurement of IOP is part of a glaucoma screening examination, along with the
+    ophthalmoscopic assessment of the optic cup.
+  o Diagnosing open-angle glaucoma requires additional testing not available to
+    primary care providers.
+  o However, IOP determination can be useful when the diagnosis of acute
+    angle-closure glaucoma is being considered.
+
+**<u>IOP assessment methods include:</u>**   [blue heading]
+
+**1. The Digital Method:**               [blue heading, ruled]
+  • It is a rough estimation of the IOP.
+  • It is useful when IOP is markedly high or significantly low (mild elevations
+    cannot be accurately tested by this method)
+  • It is also useful when comparing the patient's eyes.
+  • It needs experience, so take time to practice it: first on yourself and then
+    on your colleagues (with their permission).
+
+  **N.B:** If you do not detect anything abnormal, the eye pressure may still be
+  dangerously high. If the history or symptoms suggest glaucoma, or if the
+  patient is using steroid medication or has recently undergone eye surgery, you
+  must refer them to an ophthalmologist where the patient's IOP can be accurately
+  assessed.
+
+<u>**Technique:**</u>
+  1. Ask the patient to close her or his eyes and look **down**.
+  2. Place the tips of **both index fingers** on either side of the closed upper
+     eyelid **above the upper border of the tarsal plate**.
+  3. The middle, ring and little fingers must be resting on the patient's
+     forehead (for one hand) and temple (for the other hand).
+  4. Keeping both fingertips in contact with the upper eyelid, apply gentle
+     pressure through the closed eyelid, first gently pressing on the eye with
+     the right index finger, then with the left, and then with the right again
+     (similar to testing for fluctuation in other parts of the body)
+  5. Repeat the same steps on the other eye.
+  6. A <u>normal</u> eye should give a feeling of <u>moderate firmness</u>; not
+     hard and not very soft.
+  7. It is important to compare the two eyes with one other. An eye with a very
+     high IOP will feel abnormally hard and solid.
+
+  [FIGURE, left, captioned "**Digital palpation of the eye for assessment of
+   IOP**": a line drawing of two hands with the index fingertips on a closed
+   upper lid and the remaining fingers on the brow and temple.]
+
+  [FIGURE, middle, uncaptioned schematic: a globe in cross-section with two large
+   arrows labelled "**Applied force F1**" and "**F2**" pressing on it, two small
+   double arrows labelled "**Disp. X1**" and "**Disp. X2**", and a box labelled
+   "**Pressure adjustment**". Teaches the physical principle of digital
+   tonometry — displacement under applied force. This principle is not in the
+   prose.]
+
+  [FIGURE, right, uncaptioned photograph of the digital palpation being performed
+   on a real patient.]
+
+NUMBERS ON THIS PAGE: mean normal IOP **15 mm Hg**; normal average range
+**10–21 mm Hg**.
+
+
+================================================================================
+PAGE 32 (PDF 34)
+================================================================================
+
+**2. Indentation (Schiötz) Tonometry:**  [blue heading, ruled]
+
+Although the Schiötz tonometer does not give as precise measurements as other
+types of tonometers, it has advantages that make it well suited for screening and
+remote or mobile clinics.
+
+<u>**These include being:**</u>
+  o Inexpensive and Simple to use
+  o Durable and requires little maintenance
+  o It does not have electronics and does not require batteries
+  o It can be stored for years between uses.
+
+<u>**The Schiötz tonometer consists of:**</u>
+  o A hollow barrel with a concave footplate and a holder.
+  o A free-floating, rod-like plunger with a **5.5 gm weight** attached fits
+    inside the barrel.
+  o When held vertically on top of the eye, the plunger will move downwards by
+    gravity and indent the cornea.
+  o This very small up-and down movement is magnified by a lever arm to move a
+    needle that gives a reading on a horizontal scale numbered from **0-20**.
+  o A <u>firmer eye, due to higher IOP, will result in a lower indentation and a
+    lower reading on the scale.</u>
+  o Since the Schiötz tonometer does not measure pressure directly, a **conversion
+    table**, supplied with the instrument, is used to translate scale readings
+    into estimates of IOP in mmHg. To confirm the measured pressure, other
+    weights (typically **7.5 g and 10 g**) are supplied that can be added to the
+    plunger.
+
+  [FIGURE, top right, captioned "**Figure: Technique of IOP measurement by
+   Schiötz tonometer.**": illustration of a supine patient with the tonometer
+   held vertically on the cornea, the examiner's fingers holding the lids.]
+
+  [FIGURE, right, captioned "**Schiötz tonometer**": labelled drawing of the
+   instrument. Labels as printed: **Scale · Needle · Weights · Lever arm ·
+   Plunger · Holder · Barrel · Foot plate · Test block**.
+   ⚠️ FIGURE-ONLY PART NAMES: **Test block** is named only here.]
+
+  [FIGURES, middle, three images, uncaptioned: (a) a cross-section drawing of the
+   footplate on a cornea with arrows "**F**" (downward, applied force) and
+   "**IOP**" (upward), lettered "b" in the corner; (b) a photograph of the
+   tonometer in use on a supine patient; (c) a photograph of the tonometer held
+   in the hand.]
+
+**3. Applanation tonometer:**            [blue heading, ruled]
+  The **Goldmann applanation tonometer** (a slit-lamp-mounted or handheld
+  instrument used by ophthalmologists) is considered the **gold standard** for
+  IOP measurement.
+  Normal IOP measurements range from **10-21 mmHg** by applanation tonometry
+
+  [FIGURE, left, uncaptioned: photograph of a hand-held applanation tonometer
+   body marked "**AT 900**".]
+
+  [FIGURE, centre, headed "**Goldmann Applanation**", captioned
+   "**Aapplanation tonometer**" [sic — double A]: two panels, a photograph of the
+   prism head against a fluorescein-stained eye, and the examiner's view of the
+   two green semicircular **mires** meeting.
+   ⚠️ FIGURE-ONLY: the *endpoint* of applanation tonometry — the two fluorescein
+   semicircles just touching — is shown only here and never described in prose.]
+
+  [FIGURE, right, captioned "**tutorial photo**": a labelled photograph of the
+   slit-lamp-mounted tonometer. Labels: **Bi-prism · Mobile feeder arm ·
+   Control weight and housing · Adjustment knob**.
+   ⚠️ MARKER: the caption itself is the Tutorial tag — marker form (d) applied to
+   a figure. The part names are therefore Tutorial-marked.]
+
+NUMBERS ON THIS PAGE: Schiötz plunger weight **5.5 gm**; scale **0–20**;
+additional weights **7.5 g and 10 g**; applanation normal **10–21 mmHg**.
+
+
+================================================================================
+PAGE 33 (PDF 35)
+================================================================================
+
+**4. Other types of tonometers:**        [blue heading, ruled]
+  o <u>Handheld electronic tonometers</u> are becoming increasingly available in
+    hospital emergency departments to measure IOP.
+  o These battery-operated devices <u>can be used with the patient in any
+    position</u>, as opposed to other devices that require the patient to be
+    either seated or supine.
+  o The IOP results are obtained rapidly with the electronic tonometer and
+    correlate highly with those obtained by the Goldmann applanation tonometer.
+  o Electronic tonometers are <u>expensive</u> and <u>require daily
+    calibration</u>.
+  o To perform electronic tonometry, the practitioner instils topical anaesthetic
+    in the patient's eyes, separates the eyelids, and gently applies the
+    calibrated tonometer to the patient's cornea. The pressure reading is noted
+    in the patient's record.
+
+<u>N.B:</u>
+  o <u>Topical anaesthetics</u> applied for tonometry have little effect on the
+    margins of the eyelids. If the tonometer touches the eyelids, the patient
+    will feel it and squeeze the eyelids together, impeding IOP measurement. This
+    can be avoided by holding the patient's eyelids wide apart with the free hand
+    while applying the tonometer tip with the other hand.
+  o Take care not to apply pressure to the eyeball while holding the eyelids
+    apart, as it may produce a **falsely high** pressure reading.
+  o If the patient is wearing contact lenses, they must be removed before IOP is
+    measured.
+  o Tonometry should **never** be attempted in a patient suspected of having a
+    **ruptured globe**.
+
+**8. Direct Ophthalmoscopy (Fundoscopy):**
+                                         [grey-banded numbered section header]
+
+  o It is a test that allows a health professional to see inside the eye using a
+    direct ophthalmoscope. (**The indirect ophthalmoscope is another instrument
+    that is beyond the scope of this text for undergraduates**).
+  o It is done as part of an eye examination and may be done as part of a routine
+    examination.
+  o It is crucial in determining the health of the retina, optic disc, and
+    vitreous humour.
+
+  ⚠️ THE BOOK EXPLICITLY EXCLUDES INDIRECT OPHTHALMOSCOPY. Nothing on the
+     direct-vs-indirect comparison exists in this chapter — see NOT-COVERED.
+
+**Pupillary dilatation:**                [bold heading]
+  o Pharmacologic dilation of the patient's pupils greatly facilitates
+    ophthalmoscopy.
+  o Recommended agents include <u>**tropicamide 1%** and **phenylephrine
+    hydrochloride 2.5%**</u>
+
+  ⚠️ CONCENTRATION CONFLICT, BOTH PRINTED: this page says **tropicamide 1 %**;
+     the Tutorial table on p.34 says **Tropicamide 0.5 %**. Recorded, not
+     reconciled.
+
+<u>**Dilation of the pupil is contraindicated under the following
+circumstances:**</u>
+  1. If assessment of anterior chamber depth suggests a shallow chamber and a
+     narrow angle (an attack of angle-closure glaucoma might be precipitated by
+     dilatation).
+  2. If a patient is undergoing neurologic observation and pupillary signs are
+     being monitored (e.g., a head-injured patient), it is better until the
+     neurologist or neurosurgeon determines it is safe to do so.
+  3. Dilation can cause blurred vision and light sensitivity for **several
+     hours**, so patients must be informed of the potential impact on their
+     activities such as reading and driving.
+
+  [FIGURE, bottom, captioned "**Figure: The Direct Ophthalmoscope**": photograph
+   of a black direct ophthalmoscope on its handle.]
+
+
+================================================================================
+PAGE 34 (PDF 36)   ⚠️ WHOLE PAGE IS TUTORIAL
+================================================================================
+
+⚠️⚠️ The page opens with a blue underlined line, centred, standing alone:
+     **"This whole page is from Tutorial"**
+     — marker form (b/c) applied to an ENTIRE PAGE. Everything on printed 34 is
+     Tutorial-marked: study in round, skip in final.
+
+  [FIGURE, top, a two-panel figure headed "**UNDILATED PUPIL**" and "**DILATED
+   PUPIL**". Each panel: an external eye above, a sagittal globe below with a
+   cone of light. Labels in both: **RETINA · RAY OF LIGHT · OPTIC NERVE ·
+   PUPIL**, and the block text "**Portion of retina that can be seen through
+   undilated pupil.**" / "**Portion of retina that can be seen through dilated
+   pupil.**" The dilated cone is visibly wider.
+   ⚠️ FIGURE-ONLY: the *reason* dilation helps — the widened cone of view — is
+   drawn here only.]
+
+  [TABLE 1 — headed **"Autonomic Nervous System of Eye"**, two columns]
+
+  | Parasympathatic [sic] | Sympathatic [sic] |
+  |---|---|
+  | Acetylcholine released from parasympathetic nerve endings will bind to **muscarinic (M3) receptors**  ➢ Sphincter pupillae: **Miosis**  ➢ Ciliary muscles: **accommodation**  ➢ Conjunctival blood vessels: **vasodilatation (redness)** | Noradrenaline is released from sympathetic nerve endings and binds to **α-adrenoceptors**.  ➢ Dilator pupillae muscles: **Mydriasis**  ➢ Muller muscle: **upper eyelid elevation**  ➢ Conjunctival blood vessels: **vasoconstriction (blanching effect)** |
+
+  [TABLE 2 — headed **"Pupillary Dilatation"**, two columns]
+
+  | Tropicamide 0.5% | Phenylephrine 2.5% |
+  |---|---|
+  | - **Parasympathetic antagonist**  - Pupillary dilatation (Mydriasis)  - **Cycloplegia**: blurring of near vision. | - **Sympathomimetic**  - Pupillary dilatation (Mydriasis)  - Elevation of the upper lid  - Vasoconstriction of conjunctival blood vessels (blanching effect) |
+
+  [FIGURE, bottom left, captioned "**Direct Ophthalmoscope**": two photographs of
+   the instrument, front and back, fully labelled.
+   Left-hand labels: **Viewing window · Lens wheel · Lens power scale · Light
+   adjustment collar · Power base and handle**.
+   Right-hand labels: **Mirror · Color adjustment button · Aperture adjustment
+   wheel · Light adjustment collar · Power base and handle**.
+   ⚠️ FIGURE-ONLY: every named control of the direct ophthalmoscope — lens wheel,
+   lens power scale, aperture adjustment wheel, colour adjustment button — is
+   named ONLY here, and it is inside the Tutorial page.]
+
+  [FIGURE, bottom right, uncaptioned fundus photograph with three callout boxes:
+   **Fovea**, **Macula**, **Optic disc**; watermark GEEKYMEDICS.COM.]
+
+NUMBERS ON THIS PAGE: **Tropicamide 0.5 %**, **Phenylephrine 2.5 %**,
+muscarinic **M3** receptors, **α-adrenoceptors**.
+
+
+================================================================================
+PAGE 35 (PDF 37)
+================================================================================
+
+**<u>Technique of ophthalmoscopy:</u>**  [blue heading]
+
+  1. Have the patient comfortably seated. With the room lights dimmed, instruct
+     the patient to look at a point on the wall straight ahead, trying not to
+     move the eyes.
+  2. Set the **aperture wheel** to select the **large, round, white light** and
+     set the **focusing wheel to zero**.
+  3. Begin to look at the **right** eye about <u>**1 foot**</u> from the patient.
+     <u>Use your **right** eye with the ophthalmoscope in your **right** hand</u>.
+     When you look straight down the patient's visual axis at the pupil, you will
+     see the **red reflex**.
+  4. Place your free hand on the patient's forehead or shoulder to aid you to
+     keep yourself steady.
+  5. Slowly come close to the patient at an angle of about **15° temporal** to the
+     patient's visual axis. Try to keep the pupil in view.
+  6. When a retinal vessel comes into view, follow it as its calibre becomes
+     larger to the **optic disc** which lies **nasal** to the center of the
+     retina. (Consider the joining of blood vessels as arrows that point to the
+     optic disc)
+  7. Examine the <u>optic disc, retinal blood vessels, retinal background, and
+     macula</u>.
+  8. Repeat for the patient's **left** eye, holding the ophthalmoscope in your
+     **left** hand and viewing with your **left** eye.
+
+<u>N.B:</u>
+  o The patient's eyeglasses must be removed before ophthalmoscopy
+  o Most examiners prefer to remove their own glasses as well (optional).
+  o Contact lenses worn by either patient or examiner <u>may be left in place.</u>
+
+  [FIGURES, right margin, four images, all uncaptioned: (a) line drawing, plan
+   view, of the examiner sighting along the ophthalmoscope toward the patient's
+   eye with a dashed axis line; (b) colour illustration of the examiner steadying
+   a hand on the patient's forehead; (c) line drawing of the examiner close to
+   the patient with the free hand on the brow; (d) a composite of three fundus
+   photographs showing the disc coming into focus.]
+
+**The Red Reflex:**                      [grey-banded sub-header]
+  • Light reflected off the fundus of the patient produces a **red reflex** when
+    viewed through the ophthalmoscope.
+  • A normal red reflex is **evenly coloured, is not interrupted by shadows**,
+    and is evidence that the **cornea, anterior chamber, lens, and vitreous are
+    clear** and are not a significant source for decreased vision.
+  • **Red reflex evaluation is a mandatory part of the examination of the
+    newborn.**
+
+  [FIGURES, bottom, two photographs jointly captioned "**Normal Red Reflex**":
+   a close-up of a single eye with an even orange-red pupillary glow, and a pair
+   of infant eyes both showing a symmetrical red glow.]
+
+NUMBERS ON THIS PAGE: working distance **1 foot**; approach angle **15° temporal**
+to the visual axis; focusing wheel set to **zero**.
+
+
+================================================================================
+PAGE 36 (PDF 38)
+================================================================================
+
+  [TABLE — headed **"Abnormal forms of the reflex"**, five columns, each column
+   with a photograph beneath it. Transcribed complete.]
+
+  | black shadows | Absent reflex | grey reflex | yellow reflex | white reflex |
+  |---|---|---|---|---|
+  | **Opacities in the media** (e.g., corneal scar, cataract, vitreous haemorrhage) appear as **black shadows** and can be best seen when the pupil has been dilated | with a **totally cataractous lens**, no reflex is seen. | Most retinal pathologies will **not** affect the red reflex. However, the presence of a **retinal detachment** will elicit a **grey reflex**. | **Pus in the vitreous cavity** (in **endophthalmitis**) will give a yellow reflex. | is seen in cases of **retinoblastoma** |
+
+  [PHOTOGRAPH ROW under the table, one or two per column:
+   col 1 — a brown iris with radiating dark spokes over an orange reflex, and a
+     second photo of a red reflex crossed by dark bands (media opacities);
+   col 2 — two infant-eye photographs, the upper marked with a green ✓ (normal
+     red reflex both eyes) and the lower marked with a red ✗ and a small "2"
+     (absent reflex on one side);
+   col 3 — an eye with a dull grey-green pupillary glow;
+   col 4 — a child's face, one pupil yellow-white;
+   col 5 — a child's face, one pupil bright white (leukocoria).
+   ⚠️ FIGURE-ONLY: the *appearance* of each abnormal reflex; and the ✓/✗ pair in
+   column 2 teaches the asymmetry comparison that the text does not state.]
+
+**The Optic Disc:**                      [grey-banded sub-header]
+
+**<u>The normal optic disc :</u>**       [green heading]
+  o It is slightly **oval in the vertical meridian** and has a **pink** colour
+    that is due to extremely small capillaries on the surface.
+  o The disc edge or margin is **sharp** (easily identified from the surrounding
+    retina).
+  o A central whitish <u>depression</u> in the surface of the disc is called the
+    <u>physiologic cup</u>.
+  o The ratio of the optic cup to the overall diameter of the optic disc (**C/D
+    ratio**) is important for the diagnosis and follow up of glaucoma patients.
+    (An average ratio range is **0.2-0.4**).
+  o **C/D ratios more than 0.5** or <u>dissimilarity of C/D ratios of more than
+    **0.2** between both eyes (e.g., **0.2 and 0.5**)</u> require referral to an
+    ophthalmologist for better evaluation
+  o Lesions seen with the ophthalmoscope can be measured in **disc diameters**
+    (<u>**1 disc diameter** equals approximately **1.5 mm**</u>).
+
+  [FIGURE, right, captioned "**Appearance of the normal optic disc**": a close-up
+   fundus photograph of a pink disc with a pale central cup and emerging
+   vessels.]
+
+NUMBERS ON THIS PAGE: normal C/D **0.2–0.4**; refer if C/D **> 0.5** or
+inter-eye difference **> 0.2**; **1 disc diameter ≈ 1.5 mm**.
+
+
+================================================================================
+PAGE 37 (PDF 39)
+================================================================================
+
+**<u>Normal variations in the appearance of the optic disc:</u>**  [green heading]
+  o The size of the physiologic cup varies among individuals.
+  o The pigmented coats of the eye —the retinal pigment epithelium and the
+    choroid— frequently do not reach the margin of the optic disc, producing a
+    **hypopigmented crescent** Such crescents are especially common in **myopic
+    eyes on the temporal side** of the optic disc.
+  o On the other hand, an excess of pigment may be seen in some eyes, producing a
+    **heavily pigmented margin** along the optic disc.
+  o The retinal nerve fibres (i.e., ganglion cell axons) ordinarily are
+    nonmyelinated at the optic disc and in the retina, but occasionally
+    **myelination** may extend on the surface of the optic disc and retina,
+    producing a **dense, white superficial opacification with feathery edges**.
+
+**Retinal Circulation:**                 [grey-banded sub-header]
+  • The retinal circulation is composed of the **central retinal arteries and
+    veins**, visible with the ophthalmoscope
+  • The central retinal artery branches at or on the optic disc into divisions
+    that supply the **4 quadrants** of the inner retina.
+  • A similarly arranged system of retinal veins collects at the optic disc, where
+    **spontaneous pulsation** (with collapse during systole) may be observed in
+    **80% of normal eyes**.
+  • The ratio of normal **vein-to-artery diameter is 3:2**.
+  • Arteries are usually **lighter in colour** and typically have a **more
+    prominent light reflex** than veins.
+  • The examiner should follow arteries from the disc and veins back to the disc
+    in each quadrant, giving special attention to the **arteriovenous (A/V)
+    crossing patterns**, which may uncover a diagnosis of **hypertension**.
+
+**Fundus Background:**                   [grey-banded sub-header]
+  o The normal fundus background is a **uniform red-orange** colour primarily due
+    to the pigmentation of the retinal pigment epithelium.
+  o The blood and pigment of the choroid also contribute to the appearance of the
+    fundus background. For example, in heavily pigmented eyes, the fundus may
+    have a darker colour due to increased choroidal pigment content.
+
+**Macula and Fovea:**                    [grey-banded sub-header]
+  • The normal fovea, at the centre of the macula is located directly <u>temporal
+    and</u> slightly <u>**inferior to the optic disc**</u> and usually appears
+    darker than the surrounding retina because the retinal pigment epithelial
+    cells of the fovea are taller and more heavily pigmented.
+  • In some eyes, the fovea may appear slightly **yellow** due to the
+    **xanthophyll** pigment in the retina
+  • The central depression of the fovea may act as a **concave mirror** during
+    ophthalmoscopy and produce a light reflection known as the <u>**foveal
+    reflex.**</u>
+
+  [FIGURE, bottom, captioned "**Figure: Appearance of the normal ocular fundus**":
+   a colour fundus photograph, disc at the left, vessels arcading, darker macula
+   to the right.]
+
+NUMBERS ON THIS PAGE: venous pulsation in **80 %** of normal eyes; normal
+**vein : artery = 3 : 2**.
+
+
+================================================================================
+PAGE 38 (PDF 40)
+================================================================================
+
+**9. Additional tests:**                 [grey-banded numbered section header]
+
+**a. Fluorescein staining of the cornea:**   [blue heading]
+  o Corneal staining with fluorescein (a **yellow dye** that **gives a green
+    colour when illuminated with the cobalt blue filter** emitted light in the
+    ophthalmoscope or the slit lamp) is useful in diagnosing defects of the
+    corneal epithelium.
+  o Fluorescein is applied in the form of a **sterile filter-paper strip**, which
+    is moistened with a drop of sterile water, saline, or topical anaesthetic and
+    then touched to the **palpebral conjunctiva**.
+  o A few blinks will spread the fluorescein over the cornea.
+  o Areas of **bright green** staining denote <u>absent or diseased epithelium</u>
+
+  o <u>**Keep the following precautions in mind when using fluorescein:**</u>
+      1. Using fluorescein-impregnated **strips** is much better than **stock
+         solutions** of fluorescein because such solutions are susceptible to
+         contamination with **Pseudomonas**.
+      2. Have the patient remove **soft contact lenses** before application to
+         avoid discolouration of the lenses.
+
+  [FIGURES, right: (a) photograph of three orange-tipped fluorescein strips;
+   (b) photograph of a cornea under cobalt blue light showing a large bright
+   green staining area (an epithelial defect), lettered "B" in the corner.]
+
+**b. Colour vision testing:**            [blue heading]
+  o The normal retina contains **3 colour-sensitive pigments: red, green, and
+    blue**.
+  o A developmental deficiency in the concentration or the function of 1 or more
+    of these pigments causes various combinations and degrees of congenital
+    colour vision defects.
+  o Most of these defects occur in males through an **X-linked** inheritance
+    pattern, and **8% of males** and **0.5% of females** have a **red or green**
+    color deficiency.
+  o Colour vision abnormalities also may be **acquired** in individuals with
+    retinal or optic nerve disorders.
+  o Colour vision testing is performed with the use of **pseudoisochromatic
+    plates** (e.g., **Ishihara plates**), which present numbers or figures
+    against a background of coloured dots. The person with abnormal colour
+    discrimination will be confused by the pseudoisochromatic plates.
+  o The patient should wear his/her glasses during colour vision testing if they
+    are normally worn for near vision.
+  o The colour plates are presented consecutively (**to each eye separately**)
+    under good illumination, **preferably natural light**.
+  o The type of colour defect can be determined by recording the specific errors
+    and using the instructions provided with the plates.
+
+  [FIGURE, bottom, captioned "**Ishihara test**": a pseudoisochromatic plate,
+   green dots with the numeral **12** picked out in orange dots.]
+
+NUMBERS ON THIS PAGE: **3** colour pigments; **8 %** of males, **0.5 %** of
+females with red/green deficiency.
+
+
+================================================================================
+PAGE 39 (PDF 41)   ⚠️ PRINTED IN LANDSCAPE (the page is rotated 90°)
+================================================================================
+
+**Differential Diagnosis of Common Presentations**   [grey-banded header]
+
+**1. <u>Loss of Vision:</u>**
+
+**Table (1-1) differential diagnosis of loss of vision.**
+[⚠️ A SECOND FIGURE/TABLE NUMBERING SCHEME: "Table (1-1)". So chapter 1 uses
+ "Figure (1-9)", "Figure (A)/(B)" AND "Table (1-1)/(1-2)".]
+
+[TABLE — the table is drawn in two tiers. Tier 1 has three columns; tier 2 has
+ three columns. Transcribed complete.]
+
+TIER 1
+| Sudden (seconds to minutes) | **Acute (hours to days)** — Anterior segment | **Acute (hours to days)** — Posterior Segment | **Acute (hours to days)** — CNS / Other |
+|---|---|---|---|
+| • Central retinal artery Occlusion (CRAO)  • Amaurosis Eugax [sic — for Amaurosis Fugax] (Transient ischaemic attacks)  • Traumatic avulsion of the optic nerve  • Hysterical (Functional) or Malingering  • Migraine with aura | o Keratitis  o Corneal oedema  o Hyphema  o Uveitis  o Acute angle closure glaucoma | o Retinal detachment  o Vitreous hacmanhage [sic — for haemorrhage]  o Central or branch retinal vein occlusion  o Optic neuritis  o Temporal arteritis  o Anterior ischaemic optic neuropathy | o Occipital lobe infarction or haemorrhage  o Cortical blindness  o Functional (non-organic, a diagnosis of exclusion) |
+
+⚠️ NOTE ON LAYOUT: the "Sudden (seconds to minutes)" cell is a single column that
+   spans both tiers on the left; "Acute (hours to days)" heads the three columns
+   of tier 1 and "Chronic (weeks to months)" heads the three columns of tier 2.
+
+TIER 2 — **Chronic (weeks to months)**
+| Anterior segment | Posterior Segment | CNS / Other |
+|---|---|---|
+| ▪ Refractive Error  ▪ Cataract  ▪ Chronic (1ry) open angle Glaucoma  ▪ Amblyopia | ▪ Age-related macular degeneration (AMD)  ▪ Diabetic retinopathy  ▪ Compressive optic neuropathy (intracranial or orbital mass)  ▪ Intraocular tumour  ▪ Retinitis pigmentosa | ▪ Pituitary adenoma  ▪ Medications (see the drugs chapter)  ▪ Nutritional deficiency  ▪ Papilledema |
+
+  [FIGURE, bottom left, uncaptioned: a cartoon of a child wearing spiral-lens
+   spectacles with stars orbiting the head — decorative.]
+
+
+================================================================================
+PAGE 40 (PDF 42)
+================================================================================
+
+**2. <u>Red Eye</u>**                    [dark-red heading, centred]
+
+**Table (1-2) Differential diagnosis of important causes of red eye.**
+
+⚠️⚠️ THIS IS THE CHAPTER'S RED-EYE GRID. Transcribed complete, cell by cell.
+
+| | **Conjunctivitis** | **Keratitis (Corneal Ulcer / abrasion)** | **Acute Glaucoma** | **Acute Iritis** |
+|---|---|---|---|---|
+| **Symptoms:** | | | | |
+| • **Pain** | ± burning | **++** stinging sharp FB sensation | **+++** with/without Nausea & vomiting | **++** Dull acing [sic — for aching] pain |
+| • **Discharge** | Watery, mucoid, mucopurulent, purulent (according to the cause) | Profuse tearing | No | No |
+| • **Photophobia** | **NO** | **+++** | **+** | **++** |
+| • **Vision** | **Normal** | Decreased | Decreased | Decreased |
+| **Signs:** | | | | |
+| • **Visual acuity** | Not affected | Decreased | Markedly decreased | Decreased |
+| • **Pupil** | Normal | Normal | Mid-dilated, Non-reactive, Vertically oval | Miotic with sluggish reactivity |
+| • **Injection** | Conjunctival | Ciliary | Ciliary | Ciliary |
+| • **Cornea** | Normal | Ulcer, oedema and/or infiltration | Cloudy (oedematous) | **Keratic precipitates** |
+| • **IOP** | Normal | Normal | Markedly increased | Decreased, normal or increased |
+| • **AC** | Normal | Normal or Cells & flore [sic — for flare] | Shallow | **+++** Cells and flare |
+| • **Other** | ± Preauricular lymphadenopathy | *(cell empty)* | Coloured halos around light | ± posterior synechiae |
+
+  [FIGURE, bottom left, uncaptioned: a cartoon frog character (a meme image) with
+   visibly red, bloodshot eyes — decorative.]
+
+  [FIGURE, bottom right, captioned "**Cells & Flare (Uveitis)**": a slit-lamp
+   photograph, the beam crossing the anterior chamber and lighting up the
+   aqueous.
+   ⚠️ FIGURE-ONLY: this is the only place the chapter shows what "cells and
+   flare" looks like at the slit lamp.]
+
+
+================================================================================
+PAGE 41 (PDF 43)
+================================================================================
+
+**<u>Other causes of red eye:</u>**
+
+[TABLE — four labelled panels inside one frame]
+
+| **Lids / orbit / lacrimal system** | **Conjunctiva / sclera** |
+|---|---|
+| 1. Hordeolum  2. Blepharitis  3. Entropion / ectropion  4. Foreign body / Laceration  5. Dacryocystitis  6. Preseptal cellulitis / Orbital cellulitis | 1. Conjunctivitis  2. Subenivactival [sic — for Subconjunctival] haemorrhage  3. Dry eye  4. Pterygium  5. Eriscleritis [sic — for Episcleritis] / Scleritis |
+
+| **Anterior chamber** |
+|---|
+| • Anterior uveitis (iritis / iridocyclitis)  • Acute glaucoma  • Hyphaema  • Hypopyon |
+
+  [FIGURES inside the Anterior chamber panel, two photographs captioned
+   "**Blood (Hyphema)**" — an eye with a dark blood level in the lower anterior
+   chamber — and "**Pus (Hypopyon)**" — an eye with a white-yellow fluid level
+   below a hazy cornea.]
+
+| **Cornea** | **Others** |
+|---|---|
+| - Foreign body (including contact lenses)  - Abrasions  - Laceration  - Ulcer | - Trauma  - Post eye surgery  - Topical drugs (e.g., **prostaglandin analogues**)  - Endophthalmitis |
+
+[BOX, rounded green frame]
+**3. <u>Acute painless loss of vision</u>**
+  1. Vitreous haemorrhage
+  2. Central retinal artery occlusion (Sudden)
+  3. Central retinal vein occlusion (acute)
+  4. Retinal detachment
+  5. Anterior ischaemic optic neuropathy (AION)
+  6. Optic neuritis
+  [FIGURE: cartoon of a person with dark glasses and a white cane, and a small
+   eye icon — decorative.]
+
+[BOX, rounded green frame]
+**4. <u>Ocular Pain</u>**
+  1. Herpes zoster ophthalmicus (HZO)
+  2. Trauma / Foreign body
+  3. Stye / Hordeolum internum
+  4. Keratitis / corneal abrasion / corneal ulcer
+  5. Acute Glaucoma
+  6. Acute Uveitis
+  7. Scleritis / Episcleritis
+  8. Optic neuritis (with ocular movements)
+  [FIGURE: cartoon of two eyeballs with legs, one crying — decorative.]
+
+[BOX, rounded green frame]
+**5. <u>Flashes of Light (Photopsia)</u>**
+  • PVD
+  • Retinal tear / detachment
+  • Migrane [sic] with aura
+  [FIGURE: a dark photograph with a single bright starburst.]
+
+
+================================================================================
+PAGE 42 (PDF 44)
+================================================================================
+
+[BOX, rounded green frame]
+**6. <u>Floaters</u>**
+  1. Posterior vitreous detachment (PVD)
+  2. Vitreous haemorrhage
+  3. Retinal tear / detachment
+  4. intermediate uveitis
+  5. Posterior uveitis
+  [FIGURE: the savannah photograph with black floaters over it.]
+
+[BOX, rounded green frame]
+**7. <u>Photophobia (severe intolerance to light)</u>**
+  1. Keratitis / Corneal abrasion / Corneal ulcer
+  2. Acute angle closure glaucoma
+  3. Iritis
+  4. Migraine
+  5. Subarachnoid haemorrhoge [sic]
+  6. Meningitis / encephalitis.
+  [FIGURE: cartoon of a person shielding the eyes from a light bulb.]
+
+**8. <u>Diplopia (Double vision)</u>**  [centred heading]
+
+**Table (1-3) Differentiation between Monocular and binocular Diplopia**
+
+| | **Binocular diplopia** | **Monocular Diplopia** |
+|---|---|---|
+| **Definition:** | - Double vision when **both eyes are open**.  - It **disappears** when any of the eyes are occluded. | - Double vision **in one eye**  - **remains even after occlusion** of the other eye. |
+| **Causes:** | • **Incomitant strabismus:**  o III, IV, VI nerve palsy  o Myasthenia gravis.  o Muscle restriction or entrapment  o Thyroid ophthalmopathy  • Anisometropia when corrected by glasses | • Lens subluxation  • Iridodialysis  • Incipient cataract  • Astigmatism  • Mucous strands in the tear film |
+
+**• <u>It is important to fulfil the following questions when examining a case of
+diplopia:</u>**
+  1. Is it binocular or monocular ?
+  2. Is it of a sudden or gradual onset ?
+  3. Is it present all the time or transient ?
+  4. Direction of the displaced images: horizontal, vertical, or diagonal ?
+  5. Is there associated pain ?
+  6. Is it of the same degree in all positions of gaze or does it vary ?
+
+
+================================================================================
+PAGE 43 (PDF 45)
+================================================================================
+
+**When to Refer an Apparently Normal Patient?**   [grey-banded header, centred]
+
+  1. It is recommended that **patients ages 40-65** be examined by an
+     ophthalmologist **every 2-4 years** (after receiving a baseline exam at
+     **age 40** if not previously done), and **every 1 or 2 years for patients
+     over age 65**.
+  2. Children should undergo an evaluation in the **first few months of life,
+     then again at 6 months, 3 years, and 5 years of age** by their primary care
+     physician. Any abnormalities should be evaluated by an ophthalmologist.
+  3. <u>**Decreased visual acuity:**</u>
+       a) Unless the patient has been seen by an ophthalmologist and the
+          condition has been confirmed as stable, the following must be done:
+       b) **Visual acuity less than 6/6:**
+          Any patient with visual acuity less than **6/6** <u>with a visual
+          complaint(s)</u> in one or both eyes should be referred to an
+          ophthalmologist
+       c) **Visual acuity less than 6/12:**
+          • Any patient with visual acuity less than **6/12 in both eyes** should
+            be also referred to an ophthalmologist <u>even in the absence of
+            complaints.</u>
+          • Although many of those patients suffer only from uncorrected
+            refractive errors, undetected painless but progressive loss of vision
+            occurs in many disorders of the eye.
+       d) **Asymmetrical visual acuity:**
+          Patients with a difference in visual acuity between the eyes of **2
+          lines or more** on the Snellen chart should be referred, <u>even if the
+          visual acuity in 1 or both eyes is better than **20/40**.</u>
+          Generally, visual function is nearly identical between the eyes; thus,
+          in the absence of known causes of reduced vision, <u>asymmetry of
+          visual acuity may be a sign of occult disease</u>. Patients may be
+          unaware of even severe vision loss in 1 eye if the other eye sees
+          normally.
+       e) **Presbyopia:**
+          • Presbyopia is manifested by reduced near vision with no change in
+            distance visual acuity.
+          • Middle-age or elderly patients complaining of this need referral for
+            the prescription of appropriate correcting lenses.
+  4. <u>**Abnormal appearance of the fundus:**</u>
+     Fundus abnormalities can indicate significant ocular or systemic diseases.
+  5. <u>**Shallow AC Depth or Elevated IOP:**</u>
+     A patient suspected of having shallow anterior chamber depth (at risk for
+     angle-closure glaucoma) should be referred to an ophthalmologist for further
+     evaluation.
+
+NUMBERS ON THIS PAGE: screening **40–65 y every 2–4 y**, baseline at **40**,
+**>65 y every 1–2 y**; children at **first few months, 6 months, 3 y, 5 y**;
+refer <**6/6** with complaint, <**6/12** both eyes without complaint,
+**≥2 Snellen lines** difference even if better than **20/40**.
+
+
+================================================================================
+PAGE 44 (PDF 46) — LAST PAGE OF THE CHAPTER
+================================================================================
+[⚠️ PDF 46 carries the footer "44" — the offset PDF = printed + 2 holds at the
+ chapter's end. PDF 47 is the chapter-2 opener, footer "45".]
+
+**Ocular Emergencies**                   [grey-banded header, centred]
+
+  • They require **urgent ophthalmology consultation** for proper management.
+
+**Table (1-4) Causes of Sight-threatening and Life-threatening ocular
+emergencies.**
+
+| **Vision-threatening** | **Life-threatening** |
+|---|---|
+| 1. Chemical burns  2. Central retinal artery occlusion  3. Acute angle closure glaucoma  4. Acute iritis  5. Endophthalmitis  6. Gonococcal conjunctivitis  7. Lid or globe lacerations  8. Corneal ulcer  9. Retinal detachment  10. Intraocular foreign body  11. Orbital haemorrhage  12. Giant cell arteritis (Temporal arteritist) [sic] | 1. **Acute proptosis** [cavernous sinus thrombosis or carotid-cavernous fistula must be excluded]  2. **Oculomotor (III) palsy with internal ophthalmoplegia** (dilated fixed pupil) [intracranial aneurysm or a compressive lesion must be excluded]  3. **Papilledema** [increased intracranial pressure]  4. **Orbital cellulitis**  5. **Leukocoria** (white reflex) [must exclude retinoblastoma] |
+
+**Some Popular Misconceptions About the Eye**   [grey-banded header, centred]
+[⚠️ The book prints these as a bare list with NO correction alongside any of
+ them. They are presented as misconceptions; the book does not say what the
+ truth is in any single case. Transcribed exactly.]
+
+  o Reading for prolonged periods can be harmful to the eyes.
+  o Wearing glasses that are of the incorrect prescription can damage the eyes.
+  o Getting used to wearing glasses is harmful to the eyes.
+  o Wearing glasses will correct the refractive error so that eventually the
+    patient will not need glasses anymore.
+  o If children sit too close to the television set, they may damage their eyes.
+  o Older people who have trouble seeing should not use their eyes too much
+    because they can exhaust their vision reserve.
+  o People with weak eyes should rest their eyes frequently to make them
+    stronger.
+  o Crossing of the eyes will disappear when the child grows up.
+  o Annual change of refraction in teenagers is a bad sign.
+  o A cataract can grow back after cataract surgery.
+  o A cataract must be "ripe" before surgery can be done.
+  o Near-sighted people become farsighted as they get older, and farsighted
+    people become near-sighted.
+  o In older people, a sign of healthy eyes is the ability to read the newspaper
+    without glasses.
+  o A contact lens can be lost behind the eye and even can reach the brain.
+  o Headaches are always due to a problem in the eye.
+
+[END OF CHAPTER 1]
+
+
+================================================================================
+THE EIGHT HUNTED ITEMS — FOUND / NOT FOUND
+================================================================================
+
+1. VISUAL ACUITY — **FOUND, IN FULL, AND IT IS THE BEST SOURCE THE MODULE HAS.**
+   pp.19–22. Definition; the ratio formula with 6 m as numerator; the worked
+   example 6/12; decimal notation (6/6 = 1.0, 6/12 = 0.5, 6/60 = 0.1); feet
+   notation (6/6 = 20/20, 6/9 = 20/30, 6/36 = 20/120); 6 m ≈ optical infinity;
+   the six-step technique (right eye first, opaque occluder, start at 6/6, step
+   down 6/9→6/12→6/18→6/24→6/36→6/60); the pinhole (do it at 6/12 or less;
+   improves = refractive error; worsens = macular lesion, Tutorial-marked);
+   the full low-vision ladder 5/60 → 1/60 by walking in 1 m at a time → CF with
+   recorded distance (e.g. CF 50 cm) → HM → PL → NPL; WHO legal blindness
+   = best corrected **3/60** in the better-seeing eye; near vision at
+   **30–40 cm** with reading glasses on, newspaper as substitute; the
+   non-cooperative patient (A–D); paediatric acuity by age (newborn / infants to
+   2 / 2–3 picture card / above 3 tumbling E or Landolt C), CSM, optokinetic
+   drum, VEP and ERG; the WHO seven leading causes of vision impairment.
+   The Snellen chart figure adds the feet ladder 20/200 → 20/20.
+
+2. VISUAL FIELD — **FOUND (technique), PARTLY FOUND (vocabulary).** pp.22–23.
+   Four methods boxed: confrontation, light projection, automated perimetry,
+   Amsler grid. Confrontation: needs VA **1/60 or better**, examiner at **1 m**,
+   the eye-pairing rule, counting fingers in **4 quadrants**, plus a
+   Tutorial-marked advancing-finger variant. Light projection for VA **< 1/60**,
+   recorded **GLP / BLP**. Amsler grid = central **10 degrees**.
+   ⚠️ THE FIELD-DEFECT VOCABULARY IS FIGURE-ONLY AND VERY THIN: only
+   **bitemporal hemianopia** and **homonymous hemianopia**, and only as pictures
+   in the recording figure on p.23. No quadrantanopia, no scotoma types, no
+   arcuate/altitudinal, no tunnel vision, nothing defined in prose.
+   ⚠️ The normal field extents (50/90/60/70 degrees) are in a photograph only.
+
+3. THE SLIT LAMP — **BARELY FOUND. This chapter is NOT a slit-lamp source.**
+   Three bullets in an N.B on p.19: it is a fixed standard office instrument
+   giving an illuminated and magnified view of the anterior segment; with added
+   lenses the posterior segment too; portable types exist, used for bedridden
+   patients and children under GA. **NO illumination techniques whatsoever** —
+   no diffuse, direct, sclerotic scatter, retro-illumination, specular
+   reflection, optical section, or what each shows. Slit-lamp photographs appear
+   on pp.25 (AC depth optical sections), 32 (applanation mires) and 40 (cells
+   and flare) without any accompanying technique text.
+
+4. TONOMETRY — **FOUND, AND IT ADDS A GREAT DEAL.** pp.31–33. Four methods, not
+   two: **(1) Digital**, with a full seven-step palpation technique and an N.B
+   on false reassurance; **(2) Indentation (Schiötz)** — the only detailed
+   treatment, with the 5.5 gm plunger, the 0–20 scale, the inverse relationship
+   (firmer eye = lower reading), the conversion table, the extra 7.5 g and 10 g
+   weights, the labelled instrument, and four reasons it suits screening and
+   mobile clinics; **(3) Goldmann applanation**, named the gold standard,
+   slit-lamp-mounted or handheld, normal 10–21 mmHg; **(4) Handheld electronic**
+   tonometers — usable in any position, rapid, correlate highly with Goldmann,
+   expensive, need daily calibration. Plus IOP physiology (outflow resistance),
+   mean **15 mm Hg**, normal **10–21 mm Hg**, and four N.B safety rules
+   including **never in a suspected ruptured globe** and the falsely-high
+   reading from lid pressure.
+
+5. OPHTHALMOSCOPY — **DIRECT FOUND IN FULL; INDIRECT EXPLICITLY EXCLUDED.**
+   pp.33–37. Dilatation agents and the three contraindications; the eight-step
+   technique (dim room, aperture wheel to large round white, focusing wheel to
+   zero, 1 foot away, same-hand/same-eye rule, free hand on brow, approach at
+   **15° temporal**, follow a vessel to the disc which lies nasal, examine disc /
+   vessels / background / macula, repeat with the other hand and eye); glasses
+   off, contact lenses may stay. Then the red reflex and its five abnormal forms
+   as a table; the normal optic disc with C/D ratios; disc variations; retinal
+   circulation with the 3:2 vein-to-artery ratio and 80 % venous pulsation;
+   fundus background; macula and fovea with the foveal reflex.
+   ⚠️ **The direct-vs-indirect comparison is NOT here and the book says so** —
+   "beyond the scope of this text for undergraduates" (p.33). The module must
+   get it elsewhere.
+
+6. ANTERIOR SEGMENT EXAMINATION AS A SYSTEM — **FOUND, AND THIS IS THE ANSWER TO
+   `op-ant` HAVING NO DECK.** The chapter supplies a complete ordered system:
+   the master ten-step sequence (p.18), the minimal-requirements list and the
+   additional-tests list on the same page, the tools list; then step 3
+   Inspection with upper-lid eversion in six steps (p.23), step 4 AC depth with
+   the three-step shadow technique and the shallow/deep aetiology box (p.24),
+   step 5 Pupils in three parts A/B/C (pp.25–28), step 6 EOM with inspection,
+   corneal light reflex and the cover tests (pp.28–30), step 7 IOP (pp.31–33),
+   step 9 additional tests — fluorescein staining with its two precautions and
+   colour vision with Ishihara (p.38). The anatomy part (pp.9–10) separately
+   enumerates the anterior segment as eight structures in order.
+
+7. RED-EYE / SYMPTOM-BASED GRID — **FOUND, AND IT IS THE RICHEST PART FOR
+   `op-vissym`.** pp.39–42 are an eight-presentation differential block:
+   (1) Loss of vision as **Table (1-1)**, a 2 × 3 grid of sudden / acute /
+   chronic against anterior segment / posterior segment / CNS-other;
+   (2) Red eye as **Table (1-2)**, a full 11-row × 4-column grid
+   (Conjunctivitis / Keratitis / Acute Glaucoma / Acute Iritis against pain,
+   discharge, photophobia, vision, VA, pupil, injection, cornea, IOP, AC,
+   other), plus a second "Other causes of red eye" table by anatomical site;
+   (3) Acute painless loss of vision; (4) Ocular pain; (5) Photopsia;
+   (6) Floaters; (7) Photophobia; (8) Diplopia as **Table (1-3)** monocular vs
+   binocular with causes, plus six questions to ask.
+   Also p.4–5, the symptom vocabulary itself: 12 visual complaints defined
+   (photophobia, glare, diplopia, polyopia, photopsia, floaters, duskiness,
+   central scotoma, macropsia, micropsia, metamorphopsia) and 7 non-visual.
+
+8. THE SIX NAMED ITEMS — one line each:
+   • **Hirschberg** — **NOT PRINTED.** The test is here in full (p.29) but the
+     book calls it only "Corneal Light Reflex"; the eponym appears nowhere.
+   • **Alternate cover test** — **PRINTED, BY NAME**, p.30: its own heading,
+     "reveals the total deviation, both latent and manifest", cover held
+     **2-3 s** before shifting. Cover test and cover-uncover test are there too.
+   • **Schirmer** — **NOT PRINTED.** No tear-secretion test of any kind appears
+     in this chapter.
+   • **Krause** — **NOT PRINTED.** p.14 names only "the accessory lacrimal
+     glands in the conjunctiva"; neither Krause nor Wolfring is named.
+   • **Jones I / Jones II** — **NOT PRINTED.** No lacrimal patency or dye test.
+   • **Tear film layer thicknesses** — **NOT PRINTED.** The tear film is
+     mentioned twice in passing (p.42, "mucous strands in the tear film"; p.17,
+     goblet-cell loss and dry eye) and is never layered or measured.
+   ⚠️ All six of these belong to the Lacrimal System chapter (ch.4, printed
+   62–69) if they are anywhere in this book. This chapter does not have them.
+
+
+================================================================================
+FIGURE-ONLY REGISTER — teaching that exists ONLY in a figure
+================================================================================
+Listed so it is never re-derived from prose that does not contain it.
+
+ p.4  the symptom photographs — the only visual definition of diplopia,
+      photopsia, floaters, central scotoma (as AMD), metamorphopsia, macropsia,
+      micropsia.
+ p.7  suspensory ligament · aqueous humor · fovea "(center of visual field)" ·
+      optic disc "(blind spot)" · conjunctiva · vitreous body · ora serrata ·
+      rectus medialis — named in figures only.
+ p.8  the alternative naming FIBROUS / VASCULAR / NEURAL layer, and the sclera's
+      three functions (tough & fibrous, protects structures, anchoring point).
+ p.9  ⚠️ **the uveoscleral drainage route**, and the mechanism of angle closure
+      by the iris — neither appears in any prose in the chapter.
+ p.10 the radial dilator vs circular sphincter arrangement; the mechanics of
+      accommodation (ciliary contraction slackens the zonules, lens bulges).
+ p.11 "Cones only" at the fovea vs "Rods & cones" elsewhere.
+ p.12 the normal fundus photograph — the reference the ophthalmoscopy section
+      later assumes.
+ p.13 the lid-margin figure labels the **Gray line** while the prose calls the
+      meibomian-orifice line the **white line**; p.14's N.B resolves it.
+ p.14 ⚠️ **1-2 mm · vertical palpebral fissure 10 mm · horizontal palpebral
+      fissure 30 mm**; and the eponyms **Whitnall's ligament**, **Müller's
+      muscle**, **arcus marginalis**, marginal and peripheral arterial arcades.
+ p.15 **Annulus of Zinn**.
+ p.16 ⚠️ the directional muscle map — which muscle to test in which gaze
+      position. The p.15 table gives only abstract actions.
+ p.18 ⚠️ **Tropicamide**, **Benox 0.4 %** (the only anaesthetic concentration in
+      the chapter) and **Flu-Glo** — drug names legible only on the bottles in
+      the tools photograph.
+ p.19 the Snellen feet ladder 20/200 → 20/20.
+ p.22 ⚠️⚠️ **the normal visual field extents: 50° superiorly, 90° temporally,
+      60° nasally, 70° inferiorly** — in-photo annotation only.
+ p.23 ⚠️⚠️ **the entire field-defect vocabulary** — bitemporal and homonymous
+      hemianopia are defined by picture and by nothing else.
+ p.24 what "nasal iris in shadow" actually looks like.
+ p.25 the slit-lamp optical section of the anterior chamber (shallow / normal /
+      deep) — the method actually used clinically, never described in prose.
+ p.26 ⚠️ the whole **pupil-colour differential** (black / greyish with bright vs
+      dim red reflex / leukocoria) — figure-only AND Tutorial-marked.
+ p.27 the step-by-step swing sequence of the swinging-flashlight test.
+ p.29 ⚠️⚠️ **the corneal-light-reflex quantitative scale: 15° / 30° / 45°** —
+      caption only.
+ p.30 hypertropia and hypotropia; the direction of movement for each tropia.
+ p.31 the applied-force / displacement principle of digital tonometry.
+ p.32 the Schiötz "test block"; the applanation endpoint (the two fluorescein
+      mires just meeting); the labelled slit-lamp tonometer parts (Tutorial).
+ p.34 ⚠️ every named control of the direct ophthalmoscope — viewing window, lens
+      wheel, lens power scale, aperture adjustment wheel, colour adjustment
+      button, light adjustment collar — figure-only AND on the Tutorial page,
+      yet the p.35 technique instructs the reader to use two of them by name.
+ p.36 the appearance of each of the five red-reflex abnormalities, and the ✓/✗
+      infant pair that teaches the asymmetry comparison.
+ p.40 what "cells and flare" looks like at the slit lamp.
+ p.41 hyphaema and hypopyon photographs.
+
+
+================================================================================
+NOT COVERED BY THIS CHAPTER
+================================================================================
+Checked page by page. "Not covered" means the term does not appear anywhere in
+printed 2–44.
+
+EXAMINATION METHOD
+  1. **Slit-lamp illumination techniques** — diffuse, direct focal, optical
+     section, retro-illumination, sclerotic scatter, specular reflection — and
+     what each demonstrates. Completely absent; the slit lamp gets three
+     bullets.
+  2. **Indirect ophthalmoscopy**, and any direct-vs-indirect comparison
+     (field of view, magnification, stereopsis, image inversion, ability to see
+     through media opacities). **Explicitly excluded by the book**, p.33.
+  3. **Gonioscopy** and any angle grading (Shaffer, Van Herick). The chapter
+     assesses AC depth by penlight shadow only.
+  4. **Amsler grid** technique and appearance beyond one line naming it.
+  5. **Automated perimetry** — anything beyond one line calling it accurate and
+     quantitative. No Humphrey/Goldmann, no reliability indices, no printout.
+  6. **Refraction** — retinoscopy, subjective refraction, autorefraction, the
+     trial frame, cycloplegic refraction. The pinhole is the only refractive
+     tool here. (Ch.2 is Optics and Errors of Refraction.)
+  7. **Keratometry, corneal topography, pachymetry**, and central corneal
+     thickness as an IOP correction factor.
+  8. **Exophthalmometry / Hertel**, and any proptosis measurement. Acute
+     proptosis is listed as a life-threatening emergency (p.44) with no method
+     of measuring it.
+  9. **Ocular imaging** — OCT, fundus fluorescein angiography, B-scan
+     ultrasound, CT, MRI. (MRI is named once, p.26, as mandatory in light-near
+     dissociation — not as an examination technique.)
+ 10. **Stereopsis / binocular single vision testing** — Titmus, Lang, Worth
+     four-dot, Bagolini, synoptophore.
+ 11. **Prism cover test** and any measurement of deviation in **prism dioptres**.
+     Deviation is estimated only in degrees, and only in a figure caption.
+ 12. **Park's three-step test**, forced duction test, saccades and pursuit
+     testing as named manoeuvres.
+ 13. **Contrast sensitivity testing** as a method (contrast sensitivity is named
+     once, p.17, as an age-related decline).
+ 14. **ETDRS / logMAR** notation. Only Snellen, decimal and feet are given.
+
+LACRIMAL AND OCULAR SURFACE
+ 15. **Schirmer test**, tear break-up time, Rose Bengal or lissamine green
+     staining. Fluorescein is present but only for epithelial defects.
+ 16. **Jones I and Jones II**, syringing, probing, dacryocystography.
+ 17. **Krause and Wolfring** glands by name; the **tear film's three layers**
+     and any thickness figure.
+ 18. **Lid eversion, double** (double eversion with a Desmarres retractor).
+
+PUPIL
+ 19. **Horner syndrome** workup, cocaine / apraclonidine / hydroxyamphetamine
+     testing. Horner is named once, in the anisocoria table (p.25).
+ 20. **Adie's tonic pupil**, **Argyll Robertson pupil**, pharmacologic pupil —
+     none named. Light-near dissociation is described without naming any entity
+     that causes it.
+ 21. **Pupil size in millimetres** as a normal range. Only the 1 mm anisocoria
+     threshold is given.
+
+ANTERIOR SEGMENT DETAIL
+ 22. **Corneal sensation testing** (cotton wisp, aesthesiometer).
+ 23. **Van Herick** peripheral AC depth grading at the slit lamp.
+ 24. **Grading of cells and flare** (SUN or any scale). "+++" is used in the
+     red-eye table without a defined scale.
+ 25. **Seidel test**.
+
+POSTERIOR SEGMENT DETAIL
+ 26. **Fundus drawing conventions**, retinal quadrant nomenclature, clock hours.
+ 27. **Vitreous examination** as a step of its own.
+ 28. **Disc-swelling assessment** beyond C/D ratio — no papilloedema grading.
+
+GENERAL
+ 29. **Any consent, hygiene, hand-washing or infection-control step** in the
+     examination sequence.
+ 30. **Documentation conventions** — OD/OS/OU, the abbreviations used in an eye
+     record. The chapter records VA as ratios and CF/HM/PL/NPL and stops there.
+ 31. **The corrections to the fifteen "popular misconceptions"** on p.44. The
+     book lists them and says nothing about which are true or why.
+
+
+================================================================================
+HOW THIS CHAPTER RELATES TO THE LECTURES
+================================================================================
+The book-map assigns `L1,2` and `L3,4` to this chapter. `L3,4` is already
+cached. `L1,2` is 136 pages carrying one running header across ~80 blank pages
+and has never been read — **this chapter is its replacement.** No claim is made
+here about what `L1,2` contains; only that the topics `op-intro`, `op-vissym`
+and `op-ant` need are all present in these 43 pages, sourced and citable.
