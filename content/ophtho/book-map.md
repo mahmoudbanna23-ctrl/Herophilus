@@ -101,8 +101,24 @@ Relevant to any later render/transcription work:
   to branch retinal vein occlusion in the retina chapter)` — never by page number, and that part
   has held on every chapter read so far.
 - **⚠️ STAR-GLYPH IMPORTANCE RATINGS, found 2026-08-18 on printed 58**: `"Blow-out" fracture : ☆☆☆`.
-  A sub-chapter-level exam-weight signal, finer than the contents page's per-chapter percentages and
-  **not previously known to exist**. Grep every new cache for `☆` and record what it marks.
+  A sub-chapter-level exam-weight signal, finer than the contents page's per-chapter percentages.
+  ⚠️ **It does NOT recur** — ch.16 and ch.19, read the same day, contain none. **A local device, not
+  a book-wide system**: record it where it appears, do not plan around it. Ch.19 uses a different
+  device again — the word `"important"` in quotes appended to a heading (printed 239, 245).
+- **⚠️⚠️ THE `(T)` ABBREVIATION IS REAL — first confirmed sighting 2026-08-18, ch.16 printed 212**,
+  used inline three times as a bold blue `T:` after an arrow. The contents page has warned about
+  *"(Tutorial) or (T)"* since day one, but **every marker found before this used the full word.**
+  Grep new caches for both forms.
+- **NINE physical forms of the tutorial marker are now known**, and they are not interchangeable:
+  a heading suffix · an inline blue parenthetical inside a bullet (`History of trauma (or surgery ..
+  Tutorial)`) · a thin rectangular box beside a heading · a shaded or blue-outlined panel whose first
+  line is the centred blue word **Tutorial** · a blue **dashed** box with a separate dashed
+  `Tutorial` tab · **a whole paragraph in blue introduced by "from tutorial →", with no box at all**
+  · **a running-text declaration governing a whole page** (ch.16 p.213: *"The Rest of the page is
+  from glaucoma tutorial 'skip in final'"*) · **a full-page black-ruled box with the instruction
+  inside its heading** (ch.19 p.248: *"Additions from Tutorial (skip in final)"*) · and the bare
+  `(T)`. **⚠️ The marker is never a licence to compress** — it means *study in round, skip in final*,
+  and the material is written at full weight with the marker recorded.
 - **Cross-reference banners can be DEAD ENDS.** Chapter 17 spends two of its five top-level headings
   on banner headings whose entire content is an italic pointer elsewhere (`Retinoblastoma` → ch.16,
   `Metastases from Extraocular Malignancies` → ch.19). A heading in this book is not evidence that
@@ -139,10 +155,14 @@ Relevant to any later render/transcription work:
   through `Fig 7-4`** — five numbered figures. Chapter 10, read the same day, numbers **none**.
   **The book's figure-numbering is INCONSISTENT between chapters**, so *"this book never numbers
   figures"* can no longer be used to exclude anything.
-  **Two more data points, 2026-08-18:** chapter 3 numbers **`Fig (3-1)`–`Fig (3-5)`, the number in
-  PARENTHESES** — a second bracket style, and it mixes numbered and unnumbered captions **on the
-  same page** (printed 57, 59, 60). Chapter 17 numbers nothing. Running tally: **numbering — 3, 7 ·
-  not numbering — 10, 17**, in two different styles. The inconsistency is now the finding.
+  **Three more data points, 2026-08-18:** chapter 3 numbers **`Fig (3-1)`–`Fig (3-5)`, the number in
+  PARENTHESES** — a second style — and mixes numbered with unnumbered captions **on the same page**
+  (printed 57, 59, 60). Chapter 19 prints **`Figure (19-1)` and `Figure (19-4)`**, the word spelled
+  out — a **third** style — and numbers **only two figures across 18 pages, non-contiguously**.
+  Chapters 17 and 16 number nothing. Running tally: **numbering — 3, 7, 19 · not numbering — 10, 16,
+  17**, in three styles. ⚠️ **The variation is wider than "some chapters number and some don't": a
+  single chapter can number PARTIALLY**, so the absence of a number beside one figure proves nothing
+  about the chapter, let alone the book.
 - **The conclusion survives, on the evidence that was always load-bearing:** chapter 9 of this book
   is **`Lens`**, its systemic-disease chapter is **19**, and `L23` is a **960 × 540 PowerPoint deck
   authored `By Faten Hussein`** — not a page of an A4 scan. A `(Fig 9-x)` reference cannot point at

@@ -1,0 +1,742 @@
+OPHTHALMOLOGY WITH TUTORIALS — HEALIX TEAM
+Chapter 16 — Paediatric Ophthalmology
+Printed pp. 204–213  (PDF pp. 206–215)
+Source: Semester 8\Opthalmo\Theoritical\Books\ophthalmology.pdf  (image-only scan; PDF page = printed page + 2)
+Transcribed 2026-08-18 from 150 dpi renders, one page at a time. Every page of the chapter was read.
+Two 300 dpi zoom crops were taken on printed 207 (the Tutorial side-box and the glyph beside
+"Treatment:") to resolve small print.
+
+BOUNDARY CHECK: PDF p.216 (printed 214) was rendered as the one-page-past check. It is the
+chapter 17 "Malignancies of the Eye and its Adnexa" opener — blue underlined serif title, the
+illustration of a lid pulled down over a white mulberry mass, and the OBJECTIVES flowchart
+(Ocular malignancy → most common / eyelid malignancies → basal cell, squamous cell, sebaceous
+carcinoma / Metastases / choroidal melanoma). So chapter 16 really does end at printed 213 /
+PDF 215 — the boundary did NOT move in either direction. Ten pages, exactly as the contents
+page states.
+
+FIGURE NUMBERING: this chapter numbers NOTHING. No "Fig 16-x", no "Fig (16-x)". Every image
+either carries a plain caption in bold blue or italic ("Normal Red Reflex", "Right eye shows
+leukocoria and the left eye shows a normal red reflex", "spectacles + eyepatching", "Blue Dot
+cataract", "Lamellar cataract", "congenital cataract", "Nasolacrimal duct probing",
+"Retinopathy of Prematurity - ROP", "Blocked Tear Ducts - Nasolacrimal Duct Obstruction") or no
+caption at all. This matches chapter 17 and chapter 10 (unnumbered) and contrasts with
+chapters 3 and 7 (numbered).
+
+STAR-GLYPH IMPORTANCE RATINGS: NONE. No "☆", no "★", no asterisk rating appears anywhere on
+printed 204–213. The rating device found on printed 58 does not occur in this chapter.
+
+TUTORIAL MARKERS in this chapter: SEVEN occurrences, in FOUR physical forms.
+  1. printed 207 — blue DASHED-outline rounded box in the left margin whose first line is the
+     centred bold word "Tutorial" in its own small dashed tab, then a bold heading
+     ("Visual rehabilitation after surgery:") and a paragraph. (Same shape as the ch.3/ch.17
+     "shaded/boxed panel headed Tutorial" form, but drawn with a DASHED blue rule and a
+     separate header tab rather than a solid shaded band.)
+  2. printed 207 — inline parenthetical in blue at the end of a bullet: "/ squint (tutorial)".
+  3. printed 211 — blue DASHED box with a separate "Tutorial" tab, containing three bullets
+     (the signs of infectious conjunctivitis), with a hand-drawn arrow pointing INTO it from
+     the body text "Clinical picture of infectious conjunctivitis".
+  4. printed 211 — a second blue DASHED box with a "Tutorial" tab, headed "Complication:".
+  5. printed 212 — a whole PARAGRAPH set in blue prose and introduced by the words
+     "from tutorial →" (under Definition). A form not previously catalogued: no box at all.
+  6. printed 212 — THREE inline blue markers inside the differential-diagnosis list, written as
+     a bold "T:" after an arrow — "Birth trauma→ T: (…)", "Keratitis –→ T: (…)" — and once as
+     "→ from T (tutorial)". These are the "(T)" abbreviation the contents page warns about,
+     used as an inline label rather than a parenthetical.
+  7. printed 213 — a blue DASHED box at the top of the page containing only the words
+     "From Glaucoma Tutorial", followed lower down by a horizontal rule and a CENTRED DARK-RED
+     SENTENCE: "The Rest of the page is from glaucoma tutorial "skip in final"". That sentence
+     places the ENTIRE remainder of printed 213 under the tutorial rule. This is a NEW form —
+     a bare running-text declaration governing a whole page — and it is the only place in the
+     material read so far where the book spells out the "skip in final" instruction inside a
+     chapter rather than on the contents page.
+
+OBJECTIVES-BOX AUDIT: the flowchart on printed 204 promises seven branches — Amblyopia
+(+ red reflex test / leukocoria), paediatric cataract, Retinoblastoma, retinopathy of
+prematurity, congenital nasolacrimal system, ophthalmia neonatorum, primary congenital
+glaucoma. ALL SEVEN are taught. Nothing is promised and then dropped. But note the reverse
+imbalance: Retinoblastoma is one of the seven boxes and receives roughly HALF A PAGE, less
+than any other branch.
+
+⚠️ NOTE FOR THE ONCOLOGY WRITER: this chapter's retinoblastoma section (printed 208, upper
+half) is 92 words long. It is the whole of what the book prints on retinoblastoma anywhere —
+chapter 17 prints only a banner heading and an italic cross-reference to here. See the
+"WHAT IS ABSENT" block at the end of this file.
+
+
+================================================================================
+## printed p.204  (PDF p.206)
+================================================================================
+
+[Chapter opener. Thin double blue rule across the top, eye glyph top-right.]
+
+# Paediatric Ophthalmology
+[blue, underlined, serif — matches the contents-page wording exactly]
+
+[Decorative image: a cartoon of a young boy's head and shoulders in a blue T-shirt, wearing
+dark round spectacles. The LEFT lens (viewer's left, the child's right eye) is drawn white/
+opaque so no eye shows through it; the other lens shows a normal dark pupil. The image is a
+visual pun on occlusion therapy / a white pupil.]
+
+OBJECTIVES:
+
+[Flowchart of blue rounded boxes, one parent with seven children in a single row:]
+
+                                Paediatric Ophthalmology
+   ┌──────────┬───────────┬────────────┬────────────┬────────────┬───────────┬──────────┐
+Amblyopia  paediatric  Retinoblastoma  retinopathy   congenital   ophthalmia   primary
+           cataract                    of            nasolacrimal neonatorum   congenital
+    │                                  prematurity   system                    glaucoma
+    │
+    └── +red reflex test
+        leukocoria
+
+[As a list:]
+- Paediatric Ophthalmology
+  - Amblyopia
+    - +red reflex test / leukocoria      [one box carrying both lines]
+  - paediatric cataract                  [label underlined in the original]
+  - Retinoblastoma
+  - retinopathy of prematurity           [label underlined in the original]
+  - congenital nasolacrimal system
+  - ophthalmia neonatorum
+  - primary congenital glaucoma
+
+[Rest of the page is blank. Page number bottom-left: 204.]
+
+
+================================================================================
+## printed p.205  (PDF p.207)
+================================================================================
+
+[Banner heading, pale grey band, centred:]
+
+# Amblyopia ( Lazy eye)
+[spacing as printed — a space after the opening parenthesis]
+
+Definition:
+
+- It is **a neurodevelopmental** visual disorder with **unilateral** (or less commonly,
+  bilateral) **reduction of best-corrected visual acuity** that cannot be corrected by glasses
+  in an otherwise healthy eye.
+- It is caused by an abnormal visual experience early in life and cannot be remedied
+  immediately by spectacle glasses alone
+
+Predisposing factors:
+
+1. **Strabismus** (Approximately half of the cases mainly esotropia).
+   [「esotropia」 printed in dark red]
+2. **Anisometropia** (asymmetric refractive errors).
+3. **Form deprivation and occlusion amblyopia** (Opacities in ocular media such as cataract,
+   corneal scarring, or upper eyelid ptosis.
+   [sic — the opening parenthesis is never closed]
+4. **Bilateral uncorrected refractive errors:**
+   (Amblyopia is more with high hypermetropia)
+   [「high hypermetropia」 printed in dark red]
+
+[Figure, right of the Predisposing factors list, uncaptioned apart from its two column
+labels: two brow-and-eye pairs headed "Non-Amblyopic eye" and "Amblyopic eye". Beneath each,
+a cone of light descends onto a drawing of a tree — the tree under the non-amblyopic eye is
+rendered sharp and full, the tree under the amblyopic eye is rendered blurred and thin. A
+schematic of degraded image quality, not a clinical photograph.]
+
+Detection:
+
+Amblyopia is diagnosed when the visual acuity is less than normal with **no** pathology seen
+in the eye.
+[「no」 printed in dark red]
+
+- In older children:  Visual acuity is measured using charts
+- In preverbal children: vision can be estimated by other methods that include:
+  [「preverbal」 highlighted in yellow]
+  - Observing fixation: Eyes with good acuity have central, steady and maintained fixation.
+  - Resistance to occlusion of one eye.
+
+Prognosis:
+
+- Good prognosis if treated early in life.
+- The older the child is, the less the response to treatment.
+
+Treatment:
+
+Amblyopia treatment is less successful after age 8-10 years.
+[「less successful after age 8-10 years」 printed in dark red]
+
+1. **Treatment of the cause:**
+   - spectacles for anisometropia
+   - treat media opacity or ptosis… etc.
+2. **Occlusion Therapy**:
+   Patching the **good** eye to force the brain to use the non-dominant eye and redevelop its
+   vision
+   [「good」 printed in dark red]
+3. **Atropine cycloplegic drops** to impair accommodation and blur vision of the better-seeing
+   eye
+
+[Photograph, bottom right: a young girl wearing spectacles, the right lens covered by a
+decorative fabric patch. Caption in bold blue: "spectacles + eyepatching"]
+
+
+================================================================================
+## printed p.206  (PDF p.208)
+================================================================================
+
+[Banner heading, pale grey band, centred:]
+
+# The Red Reflex Test
+
+[Two photographs at the top, side by side. Left: a close-up of one eye with a bright orange-red
+pupillary glow and a white corneal light reflex. Right: a child's two eyes, both pupils glowing
+symmetrically dark red. Caption in bold blue, centred beneath: "Normal Red Reflex"]
+
+- Red reflex testing is an essential component of the neonatal, infant, and child physical
+  examination
+- It should be done by paediatricians in all well-child visits
+- **Importance :**
+  It is vital for the early detection of vision- and potentially life-threatening abnormalities
+  such as:
+  [「such as:」 underlined]
+  1. Cataracts
+  2. Glaucoma
+  3. Retinoblastoma
+  4. retinal abnormalities
+  5. systemic diseases with ocular manifestations
+  6. high refractive errors.
+
+- It uses the transmission of light from an ophthalmoscope through all the media of the eye and
+  the examiner sees the reflection off the fundus.
+- The red reflex will be dim in an eye with any media opacity, high refractive error, or
+  retinoblastoma
+- The red reflex test should be used by all paediatricians and primary care physicians for
+  **screening** all children and referring cases with dim or asymmetric red reflex to an
+  ophthalmologist.
+
+Leukocoria:
+[blue, underlined]
+
+**Definition :** White reflex instead of the red reflex.
+
+**Differential Diagnosis :**
+
+1. **Cataract** (most common)          [「Cataract」 highlighted in yellow]
+2. **Retinoblastoma** (most serious)   [「Retinoblastoma」 highlighted in yellow]
+3. Retinopathy of prematurity
+4. Persistent hyperplastic primary vitreous or persistent foetal vasculature
+5. Toxocariasis
+6. Retinal detachment
+7. Coat's disease (exudative retinal telangiectasis)
+   [sic — "Coat's", not "Coats'"; and "telangiectasis", not "telangiectasia"]
+
+[Photograph, right of the differential list: a child's face, the LEFT eye (viewer's right)
+showing a dense white pupillary reflex, the other eye showing a normal dark red reflex.]
+
+[Photograph, bottom centre: a pair of eyes, the right showing a bright white pupil, the left a
+normal dark pupil. Caption in bold blue, centred: "Right eye shows leukocoria and the left eye
+shows a normal red reflex"]
+
+
+================================================================================
+## printed p.207  (PDF p.209)
+================================================================================
+
+[Banner heading, pale grey band, centred:]
+
+# Paediatric cataract
+
+**Definition**: Crystalline lens opacification in the paediatric age group.
+
+**Types**:
+
+## A. Congenital Cataract:
+[blue bold, with a blue rule beneath running the width of the text block]
+
+- Cataract is present at birth
+- In general, about **one-third** of congenital cataracts are associated with systemic (genetic
+  or metabolic) disease
+- **Presentation**:
+  - Unilateral or bilateral.
+  - Effect on vision: Some types of congenital cataract are:
+    [「Effect on vision:」 underlined]
+
+┌─────────────────────────── TUTORIAL SIDE-BOX (left margin) ───────────────────────────┐
+│ [Blue DASHED-outline rounded box. Its first line sits in a small separate dashed tab   │
+│  and reads, centred and bold: "Tutorial"]                                              │
+│                                                                                        │
+│ **Visual rehabilitation after surgery:**                                               │
+│                                                                                        │
+│ Patients require treatment with eyeglasses, bifocals, or contact lenses, & eye-patching.│
+│ Often, pediatric cataracts result in some degree of amblyopia                          │
+│ [sic — "pediatric" here, "paediatric" in the banner heading; both spellings on one page]│
+└────────────────────────────────────────────────────────────────────────────────────────┘
+
+[Two-column table, ruled, with a pale blue header row:]
+
+| not visually significant | visually significant |
+|---|---|
+| do not require treatment (**e.g.,**  blue dot cataract, sutural cataract). | dense and large enough to cause visual impairment **e.g.,** lamellar cataract |
+| [Photograph: slit-lamp view of a lens with a broad greenish-grey opacity across it.] [Second photograph: a hand-lettered slide reading "BLUE-DOT CATARACT" beside a blue-speckled lens.] Caption in italic blue: *Blue Dot cataract* | [Photograph: retro-illuminated lens showing a dense round white central opacity with a clear surrounding zone.] Caption in italic blue: *Lamellar cataract* |
+
+  - A common presentation for total congenital cataract is **leukocoria** (white colour of the
+    pupil) or altered red reflex. **/ squint (tutorial)**
+    [「leukocoria」 bold and underlined; 「/ squint (tutorial)」 printed in blue — TUTORIAL MARKER]
+    [A small icon is printed to the right of this line, between it and the "Treatment:"
+    heading: a hand-drawn/emoji-style alarm siren or beacon — a small dome on a base with
+    radiating rays. No text accompanies it. It appears to be an "attention / important" mark.]
+
+- **Treatment**:
+  - Visually significant cataract requires immediate treatment once diagnosed to avoid
+    **amblyopia**.
+    [「immediate treatment」 printed in dark red]
+  - If treated late or left untreated:
+    - **unilateral** congenital cataract can lead to **sensory squint**.
+    - **bilateral** congenital cataract can lead to **nystagmus** with poor visual prognosis for
+      both conditions.
+  - **Treatment** is **surgical removal of the cataractous lens.**
+    [「surgical removal of the cataractous lens.」 printed in dark red, bold]
+    Intraocular lens (IOL) implantation is done at the primary surgery or at a later stage (2ry
+    implantation) depending on the age at which the initial surgery is performed.
+  - Postoperative spectacles (glasses) are usually required for visual rehabilitation if no IOL
+    is implanted.
+  - The child should be referred to a paediatrician to assess the possible association of
+    systemic diseases or metabolic defects.
+
+## B. Developmental Cataract:
+[blue bold, with a blue rule beneath]
+
+- A lens opacity that develops in the paediatric age group that was **not present at birth.**
+
+[That single bullet is the whole of section B. The chapter moves to Retinoblastoma on the next
+page. Nothing further on developmental cataract is printed.]
+
+[Photographs, top right of the page: (1) a pair of eyes, both pupils showing a dense white/grey
+opacity; (2) a slit-lamp close-up of a white cataractous lens; (3) a child's two eyes, the
+right pupil dense white, captioned in small white lettering "congenital cataract".]
+
+
+================================================================================
+## printed p.208  (PDF p.210)
+================================================================================
+
+[Banner heading, pale grey band, centred:]
+
+# Retinoblastoma
+
+**Most common primary intraocular malignancy in children.**
+[whole line printed bold in dark red]
+
+Types:
+
+a) Hereditable retinoblastoma: usually bilateral, multifocal.
+   [sic — "Hereditable", not "Heritable". 「bilateral, multifocal」 underlined]
+b) Non-hereditable retinoblastoma (sporadic): usually unilateral and unifocal
+   [「unilateral and unifocal」 underlined]
+
+**Spread:**  Direct spread intraocularly and extraocularly or hematogenous spread.
+
+Clinical features:
+
+- Presents with leukocoria or strabismus
+- **U/S or CT** scan may demonstrate calcified mass (present in most cases)
+  [「U/S or CT」 printed bold in dark red]
+
+Treatment:
+
+- Radiotherapy, chemotherapy combined with laser, cryopexy, and/or enucleation
+- **Screening** of siblings / offspring essential.
+
+[END OF THE RETINOBLASTOMA SECTION. It occupies the upper third of printed 208 and nothing
+more. 92 words of body text.]
+
+[Photographs beside the retinoblastoma text: (1) top row, a gross specimen of a bisected globe
+showing a white fleshy mass filling the vitreous cavity, beside a fundus photograph of a
+creamy-white elevated retinal mass with surrounding vessels; (2) a child's face with a
+striking white pupillary reflex in the right eye and a normal dark left pupil; (3) below it, a
+B-scan ultrasound showing an intraocular mass with dense high-reflectivity foci, beside an
+axial CT of the orbits showing a hyperdense calcified intraocular mass in one globe. None of
+these images is captioned.]
+
+
+[Banner heading, pale grey band, centred:]
+
+# Retinopathy of prematurity
+
+Definition:
+
+- It is a **vasoproliferative retinopathy** that is a major cause of blindness in the
+  developing world.
+- Its incidence is **increasing** because of the improved survival of preterm infants.
+
+Pathology:
+
+- ROP occurs in **preterm** infants due to incomplete vascularization of the retina.
+- ROP is a **two-phase disease:**
+  1. beginning with delayed retinal vascular growth after premature birth
+  2. followed by the growth of pathological new vessels that end up in fibrosis and retinal
+     detachment.
+     The growth of new vessels is stimulated by the secretion of vascular endothelial growth
+     factors (VEGF)
+
+**Risk Factors:**
+[blue bold, centred over its list]
+
+- Low birth weight of less than **1500 gm.**
+- Gestational age less than **33 weeks.**
+  [both figures printed bold in dark red]
+
+[Diagram, right: a labelled cross-section of a globe split down the midline, headed
+"Retinopathy of Prematurity - ROP". The left half is labelled "Normal" and shows an orderly
+branching retinal vasculature; the right half is labelled "ROP Disease" and shows a cluster of
+dark red beaded vessels at the periphery with an arrow labelled "Abnormal blood vessel growth".]
+
+
+================================================================================
+## printed p.209  (PDF p.211)
+================================================================================
+
+Screening:
+
+ROP is currently the world's second leading cause of **preventable childhood blindness.**
+
+[Ruled table, two columns, row labels in bold blue:]
+
+| | |
+|---|---|
+| **Importance** | – Timely and accurate screening of this condition is of most importance because of the short window of opportunity during which treatment is effective.<br>– Early treatment can prevent blindness. |
+| **Screening criteria:** | All infants at risk of ROP should be screened |
+| **Screening protocol:** | • The ideal timing to examine the baby to screen for ROP depends on the age of the baby and the gestational age (GA).<br>  ○ Gestational age is measured in weeks, from the first day of the mother's last menstrual cycle to the current date.<br>  ○ A normal pregnancy can range from 38 to 42 weeks.<br><br>• <u>For babies born at GA 28 weeks or more:</u> screening should be done **4 weeks after they are born** i.e., when the baby is 1 month old.<br><br>• <u>For babies born earlier, GA 27 weeks or less:</u> screening should be done at **31 weeks GA,** that is the week 31 from the first day of the woman's last menstrual cycle. |
+| *(no label — the last row runs the full width)* | For example,<br>if the baby is born at **25 weeks** GA, screening should be done **6 weeks** after the child is born. |
+
+[「28 weeks or more」 and 「27 weeks or less」 are printed in dark red inside their underlined
+lead-ins.]
+
+⇨ Screening can be done in the Neonatal Intensive Care Unit (NICU) if the child is still there.
+
+Treatment:
+
+1. **Laser therapy** to the avascular retina to prevent neovascularization.
+2. **Anti-VEGF** intravitreal injections
+3. **Vitrectomy** surgery for late cases of retinal detachment.
+
+Prognosis
+
+- Higher incidence of **myopia** among ROP infants, even if treated successfully
+  [「myopia」 printed bold in dark red]
+- If treated early, the prognosis is good.
+- Late stages with retinal detachment are associated with poor prognosis.
+
+[No figures on this page. The lower third of the page is blank — a genuine text page that ran
+short, not a filler or a broken graphic: the page carries its footer number and a full header
+rule.]
+
+
+================================================================================
+## printed p.210  (PDF p.212)
+================================================================================
+
+[Banner heading, pale grey band, centred:]
+
+# Nasolacrimal system abnormalities
+
+**Definition**:
+
+Congenital obstruction of the nasolacrimal duct **(failure of canalization)** since birth, with
+symptoms appearing in the first month of age.
+[「since birth」 highlighted in yellow]
+
+**Clinical picture:**
+
+- Epiphora, crusting, discharge, recurrent conjunctivitis.
+  [「Epiphora,」 highlighted in yellow]
+- Reflux of mucopurulent material from lacrimal punctum when pressure is applied over lacrimal
+  sac (positive regurge test).
+  [「positive regurge test」 printed in dark red — sic, "regurge", not "regurgitation"]
+- Lacrimal sac can be distended with mucus (mucocele) or become infected (lacrimal abscess).
+
+**Treatment:**
+
+- About 85% of cases resolve without surgical intervention before the first year. Therefore,
+  surgery is not indicated **before the first year** of life.
+- Massage over the lacrimal sac at the medial corner of the eyelid to increase pressure in the
+  canal.
+- Surgery: **Nasolacrimal duct probing** can be curative if persistent epiphora after the first
+  year of life.
+  [「Nasolacrimal duct probing」 printed bold in dark red]
+- **Mucocele** needs probing upon diagnosis
+- **Lacrimal abscess** needs incision and drainage.
+
+[Flowchart of blue rounded boxes:]
+
+                    Congenital obstruction of the NLD treatment
+        ┌─────────────────────┬──────────────────────────┬──────────────────┐
+  before first year   persistent after                 special
+  of life             first year of life                  │
+        │                     │                 ┌─────────┴─────────┐
+   No surgery            Surgery            Mucocele needs   Lacrimal abscess
+   Massage over the      Nasolacrimal        probing         needs incision
+   lacrimal sac          duct probing                        and drainage
+
+[As a list:]
+- Congenital obstruction of the NLD treatment
+  - before first year of life → No surgery / Massage over the lacrimal sac
+  - persistent after first year of life → Surgery / Nasolacrimal duct probing
+  - special
+    - Mucocele needs probing
+    - Lacrimal abscess needs incision and drainage
+
+[Photographs, right: (1) an infant's eye with a tear meniscus and lash crusting; (2) an infant's
+medial canthus with a tense erythematous swelling below the medial canthal tendon — a lacrimal
+abscess; (3) a surgical close-up of a probe being passed through the punctum, captioned in
+italic blue: *Nasolacrimal duct probing*]
+
+[Diagram, bottom of page, headed "Blocked Tear Ducts - Nasolacrimal Duct Obstruction": a
+frontal illustration of both eyes and the nasal cavity with the lacrimal drainage apparatus
+drawn in. Labels: "Lacrimal sac", "Lacrimal gland", "Lacrimal puncta", "Lacrimal canals",
+"Nasolacrimal duct", "Nasal cavity", and a boxed label with an arrow reading "Blocked Tear Duct
+/ Nasolacrimal Duct Obstruction". A small side note on the left of the diagram reads
+"Watery eyes / Eye mucus discharge / Crusty eyelashes".]
+
+
+================================================================================
+## printed p.211  (PDF p.213)
+================================================================================
+
+[Banner heading, pale grey band, centred:]
+
+# Ophthalmia Neonatorum
+
+Definition:
+
+It is a type of **conjunctivitis** that takes place in the neonatal period [1st month of life] ,
+and it can have severe complications such as corneal ulcer and perforation.
+[「conjunctivitis」 printed bold in dark red; the square brackets and the stray space before the
+comma are as printed]
+
+Causes:
+
+- It is caused by **infection from the birth canal.**
+- Infectious organisms causing it can be divided into:
+
+  - **Sexually transmitted:**
+    1. Neisseria gonorrhoea: cause purulent conjunctivitis
+       [sic — "gonorrhoea" as the species epithet, and "cause" not "causes"]
+    2. **Chlamydia trachomatis** (serotypes: **D→K**, also known as Inclusion blennorrhoea or
+       chlamydia oculogenitalis)
+       [「Chlamydia trachomatis」 printed in dark red; 「D→K」 bold dark red]
+    3. Herpes simplex type 2 (genital herpes)
+
+  - **Non-sexually transmitted**:
+    Staphylococci, streptococci and Hemophilus.
+    [sic — "Hemophilus", not "Haemophilus"]
+
+Diagnosis:
+
+- Clinical picture of infectious conjunctivitis
+- Confirmed with **culturing** of the discharge
+
+┌──────────────────── TUTORIAL BOX (right of "Diagnosis") ────────────────────┐
+│ [Blue DASHED-outline box with a small separate dashed tab whose single line  │
+│  reads, bold: "Tutorial". A hand-drawn arrow runs from the body-text bullet  │
+│  "Clinical picture of infectious conjunctivitis" INTO this box.]             │
+│                                                                              │
+│ - Eyelid swelling                                                            │
+│ - Conjunctival injection & chemosis                                          │
+│ - Discharge: according to the organism (Mucopurulent or non -purulent)       │
+│   [「Discharge:」 underlined; the space in "non -purulent" is as printed]      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+**Treatment and prevention:**
+
+[Ruled table, two columns, no header row:]
+
+| | |
+|---|---|
+| Gonococcal ophthalmia neonatorum | treated early with systemic (**Ceftriaxone**) and topical antibiotics |
+| Chlamydial infection | treated by oral **Erythromycin** |
+| Mothers with suspected STDs | ▪ should be treated before childbirth.<br>▪ Topical **erythromycin** eye ointment may be used in suspected cases. |
+
+┌──────────────────── TUTORIAL BOX (bottom right) ────────────────────┐
+│ [Blue DASHED-outline box with a separate dashed tab reading "Tutorial"] │
+│                                                                        │
+│ **Complication:**   [blue, bold, underlined]                           │
+│ - Conjunctival scarring                                                │
+│ - Corneal opacification, ulceration, perforation, endophthalmitis,     │
+│   loss of eye, and blindness                                           │
+└────────────────────────────────────────────────────────────────────────┘
+
+[Photographs, top right: (1) a neonate's face with both lids grossly swollen and heavy yellow
+crusting along the lid margins; (2) a close-up of an everted lower fornix showing intense
+injection and thick creamy purulent discharge. Neither is captioned.]
+
+
+================================================================================
+## printed p.212  (PDF p.214)
+================================================================================
+
+[Banner heading, pale grey band, centred:]
+
+# Primary Congenital Glaucoma
+
+Definition:
+
+Primary congenital glaucoma (PCG) is a rare disease due to:
+[「due to:」 underlined]
+
+abnormalities in the trabecular meshwork and anterior chamber angle resulting in elevated
+intraocular pressure (IOP), without other ocular or systemic developmental anomalies.
+
+**from tutorial → PCG is caused by maldevelopment of the angle of the anterior chamber
+(isolated trabeculodysgenesis)**
+[whole paragraph printed in blue sans-serif — TUTORIAL MARKER, form 5: no box, the marker is
+the phrase "from tutorial →" running in the text]
+
+Epidemiology:
+
+- It has been blamed for 5% of childhood blindness worldwide.
+- **Vision loss** is secondary to corneal scarring or optic nerve damage, and often amblyopia in
+  asymmetric or unilateral cases.
+- With timely proper control of the IOP, vision can be salvaged.
+
+Clinical features:
+
+Symptoms:
+
+Elevated IOP with the subsequent corneal oedema cause irritation and are associated with the
+classic "triad" of symptoms:
+[「triad」 highlighted in yellow]
+
+[A small three-cell ruled box, side by side:]
+
+| Photophobia | Tearing | Blepharospasm |
+|---|---|---|
+
+Signs:
+
+1. Increased IOP
+2. Enlarged cloudy cornea
+3. **Buphthalmos** (large cornea, **"ox eye"**, secondary to increased IOP)
+   [「Buphthalmos」 printed bold in dark red]
+
+Differential diagnosis:
+
+***For corneal clouding or opacification, the differential diagnosis includes:***
+[bold italic, underlined]
+
+- Birth trauma→ **T:** (Generally involving forceps causing Descemet tears that are vertical or
+  oblique)
+  [the "T:" and everything after it printed in blue — TUTORIAL MARKER, inline "(T)" form]
+- Congenital or developmental abnormalities (Sclerocornea)
+- Keratitis –→ **T:** (intrauterine infection, TORCH)
+  [again blue — TUTORIAL MARKER]
+- Inborn errors of metabolism (such as mucopolysaccharidoses)
+- **Corneal dystrophies** (such as congenital hereditary endothelial dystrophy) → **from T
+  (tutorial)**
+  [the arrow and "from T (tutorial)" printed in blue — TUTORIAL MARKER]
+
+***For epiphora, the differential diagnosis includes:***     ***For corneal enlargement, the differential diagnosis includes:***
+[two side-by-side lists, both headed in bold italic underlined:]
+
+| For epiphora, the differential diagnosis includes: | For corneal enlargement, the differential diagnosis includes: |
+|---|---|
+| • **Nasolacrimal duct obstruction**<br>• Conjunctivitis<br>• Corneal abrasion<br>• Keratitis<br>• Uveitis | • High axial myopia<br>• Megalocornea |
+
+[Illustrations, right column: (1) a cartoon face with both eyes open and a jagged red flash
+beside the right eye, labelled in blue capitals "BLEPHAROSPASM"; (2) a second cartoon face
+with normal open eyes; (3) a circular cartoon of a woman shielding her eyes from a lit bulb,
+captioned "Photophobia".]
+
+
+================================================================================
+## printed p.213  (PDF p.215)
+================================================================================
+
+┌────────────────────────────────────────────────┐
+│ [Blue DASHED box, top of page, containing only:]│
+│ **From Glaucoma Tutorial**   [bold blue]        │
+└────────────────────────────────────────────────┘
+
+Treatment:
+
+**Surgical treatment** as soon as the diagnosis is made to prevent blindness (Goniotomy/
+Trabeculotomy/ Trabeculectomy "from tutorial")
+[the parenthesis and everything in it printed in blue — TUTORIAL MARKER]
+
+────────────────────────────────────────────────────────────────────────────────
+[a full-width horizontal rule]
+
+### The Rest of the page is from glaucoma tutorial "skip in final"
+[centred, bold, dark red serif — TUTORIAL MARKER, a new form: a running-text declaration
+placing the remainder of the page under the tutorial rule]
+
+[Banner heading, pale grey band:]
+
+# Primary Congenital Glaucoma)
+[sic — a stray closing parenthesis after the title, in black, outside the heading's font]
+
+Clinical pictures
+[blue, underlined — sic, plural "pictures"]
+
+1. **Corneal haze:**
+   - Due to epithelial and stromal oedema secondary to raised IOP
+   - Associated with lacrimation, photophobia and blepharospasm
+
+2. **Buphthalmos:**
+   - Large eye as a result of stretching due to elevated IOP
+   - **Blue eye appearance**:
+     As the sclera stretches it becomes thinner and translucent; results  in enhanced
+     visualization of the underlying uvea
+     [the double space in "results  in" is as printed]
+   - **Axial myopia** due to increased axial length
+   - **Subluxated lens** (rare) due to stretch of the zonular fibers
+
+3. **Breaks in Descemet membrane:**
+   Secondary to corneal stretching
+   **Haab striae:**   [highlighted in yellow, underlined]
+   Represent healed breaks in Descemet membrane and appear as horizontal curvilinear lines
+
+4. **Optic disc cupping**
+   In infants may regress once the IOP is normalized
+
+[Photographs on this page, none captioned: (1) an infant's face with both corneas hazy blue-
+grey; (2) an infant squeezing both eyes shut — blepharospasm; (3) two infants with grossly
+enlarged blue-grey globes — buphthalmos with the blue eye appearance; (4) a close-up of an
+enlarged hazy cornea crossed by curvilinear lines — Haab striae; (5) a fundus photograph of a
+pale, deeply cupped optic disc.]
+
+[End of chapter 16. Page number bottom-left: 213.]
+
+
+================================================================================
+WHAT THIS CHAPTER DOES **NOT** PRINT — verified absences, retinoblastoma
+================================================================================
+
+The whole retinoblastoma section is printed on the upper third of printed 208 and is
+transcribed above in full. Checked item by item against the brief:
+
+| Item | Printed? | Depth |
+|---|---|---|
+| RB1 gene | **NO** — the gene is never named anywhere in the chapter | — |
+| Chromosome 13 / 13q14 | **NO** | — |
+| Two-hit hypothesis / Knudson | **NO** | — |
+| Hereditary vs sporadic | **YES**, but only as laterality/focality: "Hereditable … usually bilateral, multifocal" vs "Non-hereditable (sporadic) … usually unilateral and unifocal". No inheritance pattern, no penetrance, no germline-vs-somatic mechanism | one line each |
+| Sibling / offspring screening | **YES** — one bullet: "**Screening** of siblings / offspring essential." No protocol, no age, no interval, no modality | one line |
+| Trilateral retinoblastoma / pinealoblastoma | **NO** | — |
+| Second primary malignancy (osteosarcoma etc.) | **NO** | — |
+| Age at presentation / incidence figures | **NO** — no age, no incidence, no "1 in N live births" | — |
+| Presentation | **YES** — "leukocoria or strabismus", nothing else. No proptosis, no red painful eye, no pseudohypopyon, no buphthalmos, no orbital/metastatic presentation | one line |
+| Leukocoria and its differential | **YES**, but on printed 206 under the Red Reflex Test, NOT inside the retinoblastoma section: a 7-item differential naming cataract "most common" and retinoblastoma "most serious" | a full boxed list, the best-developed piece of oncology content in the chapter |
+| International Classification of Retinoblastoma (Groups A–E) | **NO** | — |
+| Reese–Ellsworth classification | **NO** | — |
+| TNM staging | **NO** | — |
+| COMS | **NO** (COMS is a choroidal-melanoma trial; it appears nowhere in this chapter either) | — |
+| Any staging or grouping system **of any kind** | **NO — the chapter stages retinoblastoma not at all** | — |
+| Work-up / imaging | **PARTIAL** — one bullet: "U/S or CT scan may demonstrate calcified mass (present in most cases)". No MRI, no EUA, no lumbar puncture, no bone marrow, no genetic testing. Calcification is the only imaging sign given | one line |
+| Histopathology | **NO** — no Flexner–Wintersteiner rosettes, no Homer Wright rosettes, no fleurettes, no spindle/epithelioid typing (that typing belongs to melanoma anyway), no differentiation grading, no necrosis/calcification histology | **entirely absent** |
+| Spread | **YES** — one line: "Direct spread intraocularly and extraocularly or hematogenous spread." No optic-nerve invasion, no choroidal invasion, no CSF seeding, no named metastatic sites | one line |
+| Treatment modalities | **LISTED, NOT EXPLAINED** — "Radiotherapy, chemotherapy combined with laser, cryopexy, and/or enucleation". No indications, no eye-salvage vs enucleation criteria, no chemoreduction, no intra-arterial or intravitreal chemotherapy, no plaque brachytherapy, no thermotherapy, no exenteration | one line, no indications |
+| Prognosis | **NO** — no survival figures, no prognostic factors, no statement of outcome at all | **entirely absent** |
+| Follow-up | **NO** | — |
+
+**Verdict in one line:** chapter 16 pays the retinoblastoma register row only at the level of
+*most common paediatric intraocular malignancy · hereditable-bilateral-multifocal vs sporadic-
+unilateral-unifocal · leukocoria/strabismus · calcified mass on U/S or CT · a list of five
+treatment modalities · screen the siblings*, plus a strong seven-item leukocoria differential
+two pages earlier. Genetics, staging, histopathology and prognosis are not in this book.
+Anything beyond the table above must come from another source and be tagged as such.

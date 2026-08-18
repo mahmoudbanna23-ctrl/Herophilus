@@ -427,9 +427,13 @@ questions, and `op-lac` and `op-uvea` below have one question each.
 | 1, already closed | `op-ant` |
 
 **Every row above is open except `op-ant`'s.** Verify each row against its named source *and* the
-receiving chapter — **including the row's second clause** — before briefing. Seven fault shapes are
+receiving chapter — **including the row's second clause** — before briefing. **TEN fault shapes** are
 now documented in §14.5: over-specified · absent from the deck · wrong deck · wrong slide ·
-circular · correct row / wrong receiver · **and right payload, wrong line**.
+circular · correct row / wrong receiver · right payload, wrong line · **stale, because a third
+chapter delivered it** · **donor under-stating its own coverage** (the mirror of the over-stated
+absence, and it makes the receiver write a duplicate) · **and, 2026-08-18, the LIVE POINTER TO AN
+EMPTY DESTINATION** — the reference resolves, the destination chapter exists, and the payload is
+still absent. **The hardest to detect, because following the pointer succeeds.**
 
 ---
 
@@ -746,6 +750,8 @@ material in either; that would be reversing the decision by other means.
 | 6 | Conjunctiva | 82–95 | 14 | **6.5 %** | 6,871 | ✅ `op-conj` (12 pp) |
 | 15 | Squint | 196–203 | 8 | 3 % | 4,906 | ✅ `op-squint` (11 pp) |
 | 17 | Malignancies of the Eye and its Adnexa | 214–217 | 4 | 1.5 % | 1,937 | `op-onc` |
+| 16 | Paediatric Ophthalmology | 204–213 | 10 | 4.5 % | 5,001 | `op-onc` (RB) — ⚠️ ruled NOT to become a chapter |
+| 19 | Ocular Manifestations — **§(11) malignancy only** | 236–253 | 18 read / 2 transcribed | **10 %** | 2,079 | `op-onc` (metastases, lymphoma, leukaemia, Kaposi) |
 | 7 | Sclera | 96–102 | 7 | 3 % | 3,030 | ✅ `op-sclera` (7 pp) |
 | 10 | Uveal Tract | 130–141 | 12 | 3 % | 4,672 | ✅ `op-uvea` (10 pp) |
 | 14 | Neuro-ophthalmology | 178–195 | 18 | **10 %** | 8,819 | ✅ `op-neuro` 7 · `op-neuro-motil` 8 · `op-neuro-optic` 11 |
@@ -992,3 +998,113 @@ the RB comparison table. **Retinoblastoma proper lives in ch.16 (Paediatric Opht
 content only. ⚠️ Note that **ch.16 is one of the three chapters the user ruled must not become app
 chapters** — reading it for content that feeds the existing `op-onc` is consistent with both
 rulings: *scope comes from the lecture series, the book is the authority on content.*
+
+---
+
+## ✅ Book ch.16 (Paediatric) and ch.19's malignancy section — READ 2026-08-18
+
+Caches: `content\ophtho\book\ch16-paediatric.txt` (5,001 w, whole chapter) ·
+`ch19-systemic-tumours.txt` (2,079 w, **malignancy sections only, by design**). Ch.16's boundary
+confirmed by the one-page-past check (PDF 216 is the ch.17 opener) and **did not move**. All 18
+pages of ch.19 were read far enough to identify each page's subject; only the malignancy pages were
+transcribed in full. **This closes ophthalmology's reading debt.**
+
+### ⚠️⚠️ A TENTH FAULT SHAPE — THE LIVE POINTER TO AN EMPTY DESTINATION
+
+Ch.17's *"Retinoblastoma"* banner points at ch.16, and **the pointer is live: ch.16 really does have
+a retinoblastoma section. It is 92 WORDS**, the upper third of printed 208, and it is **the only
+retinoblastoma text in all 274 pages of the book.**
+
+That is a different failure from ch.17's *dead* pointers, and worse to detect: following the
+reference succeeds, the destination exists, and the payload is still absent. **A resolved
+cross-reference is not evidence of coverage. Measure the destination, not the pointer.**
+
+Verified absent from the entire book, having now read both chapters that could hold them:
+
+| Retinoblastoma — what the row asked for | Printed? |
+|---|---|
+| **Genetics** | **NONE.** No RB1, no chromosome 13q, no two-hit. Hereditary vs sporadic appears **only as laterality** — *"Hereditable [sic] … bilateral, multifocal"* vs *"Non-hereditable (sporadic) … unilateral and unifocal"*. No inheritance pattern, no penetrance. Screening of siblings and offspring is one bullet with no protocol |
+| **Staging** | **NONE of any kind** — no Reese–Ellsworth, no International Classification, no TNM, no COMS |
+| **Work-up** | One line: *"U/S or CT scan may demonstrate calcified mass (present in most cases)"*. No MRI, EUA, LP, marrow or genetic testing |
+| **Histopathology** | **NONE** — no Flexner–Wintersteiner, no Homer Wright, no fleurettes, no spindle/epithelioid typing |
+| **Treatment** | Listed, never explained — *"radiotherapy, chemotherapy combined with laser, cryopexy, and/or enucleation"*. No indications, no salvage criteria |
+| **Prognosis, incidence, age, trilateral RB, second primaries, optic-nerve or CSF spread** | **NONE** |
+
+**So the retinoblastoma row is answered under `CLAUDE.md` §4 — filled from general knowledge and
+tagged, never declared.** The book's genuine contribution here is two pages away: **the SEVEN-ITEM
+RANKED LEUKOCORIA DIFFERENTIAL on printed 206** — cataract most common, RB most serious, ROP,
+**PHPV/PFV**, toxocariasis, retinal detachment, Coat's. ⚠️ **`PHPV` returns ZERO across the whole
+module**, so that list is a real addition to `wht-8`.
+
+### ✅ Ch.19 §(11) pays the metastases row in full — and carries no tutorial marker
+
+Printed 253, ~260 words, **fully examinable**:
+
+- **Metastases** — **5 % of cancer patients at autopsy**; **choroid** the commonest site, occasionally
+  optic nerve or extraocular muscle; primaries **breast and lung in adults, neuroblastoma in
+  children**. No presentation, no management printed.
+- **Lymphoma** — the eye is affected in **3 %**; orbital infiltration gives proptosis and limited eye
+  movement; conjunctival infiltration is common; **CNS lymphoma in the elderly presenting as chronic
+  steroid-dependent posterior or panuveitis = MASQUERADE SYNDROME.**
+- **Leukaemia** — **over 75 %** have ocular adnexal metastases at autopsy; presents with intraretinal
+  or subconjunctival haemorrhage **attributed to thrombocytopenia or anaemia, not to direct
+  infiltration**.
+- **Kaposi sarcoma of the eyelids**, printed 252 under AIDS — vascular skin malignancy, may involve
+  palpebral or bulbar conjunctiva, **can be misdiagnosed as subconjunctival haemorrhage**.
+  ⚠️ **`Kaposi` returns ZERO across the module.**
+- Retinoblastoma and choroidal melanoma appear **nowhere** in ch.19.
+
+### Found without being asked, and nothing else in the module covers it
+
+**A third of §(11) is the ocular toxicity of cancer TREATMENT** — radiation retinopathy, cytosine-
+arabinoside keratitis, vincristine optic neuropathy, and bone-marrow-transplant GVHD with
+symblepharon. No register row asked for it and no other chapter carries it. It belongs in `op-onc`.
+
+### ⚠️ THE `(T)` ABBREVIATION EXISTS — first confirmed sighting, and three new marker forms
+
+The contents page has warned since day one that *"(Tutorial) or (T)"* means study in round and skip
+in final. **Every marker found in this module until today used the full word.** Ch.16 printed 212
+uses the bare **`(T)`** form inline, three times, as a bold blue `T:` after an arrow. **Grep for it.**
+
+Three further forms, taking the known total to nine:
+- **A whole paragraph in blue introduced by *"from tutorial →"*, with no box at all** (ch.16 p.212).
+- **A running-text declaration governing a whole page** — ch.16 p.213 prints a dashed box reading
+  *"From Glaucoma Tutorial"*, a rule, then a centred dark-red sentence: *"The Rest of the page is
+  from glaucoma tutorial 'skip in final'"*.
+- **A full-page black-ruled box with the instruction inside its heading** — ch.19 p.248,
+  *"Additions from Tutorial (skip in final)"*.
+
+Ch.19 also uses a **different emphasis device entirely**: the word `"important"` in quotes appended
+to a heading (printed 239 and 245).
+
+### Star glyphs: ZERO in both chapters
+
+The `☆☆☆` rating found on printed 58 **does not recur**. It is a local device, not a book-wide
+system — record it where it appears, do not plan around it.
+
+### Figure numbering: a THIRD style, and it is partial within a chapter
+
+Ch.19 prints **`Figure (19-1)` and `Figure (19-4)`** — the word spelled out, parenthesised — which is
+neither ch.7's `Fig 7-1` nor ch.3's `Fig (3-1)`. And **only two figures are numbered across 18
+pages**; everything else is plain-captioned, and the numbering is non-contiguous. Ch.16 numbers
+nothing. **The variation is wider than "some chapters number and some don't": a single chapter can
+number partially.**
+
+### Two more things located, not transcribed
+
+- **Ch.19's thyroid-eye-disease pages (printed 247–248, including a full-page tutorial box) are
+  substantial**, and may be a better source for proptosis and lid retraction than the retired
+  `L27,28`. `op-orbit` is already written from `L10`; this is reconciliation-pass material.
+- **Ch.19 carries three large hand-drawn Arabic-annotated `"mnemonic"` panels** (GCA p.249, MS p.250,
+  sarcoidosis p.251) plus an Arabic-glossed globe diagram p.243 — the "Mnemonics" the back cover
+  advertises. Pictorial and untranscribable as prose; noted in place in the page map.
+
+### Ch.16's own scope, recorded because the user ruled it must NOT become a chapter
+
+All seven objectives branches are taught — **nothing promised and dropped**, unlike ch.5 and ch.17.
+Amblyopia · the red reflex test and leukocoria · paediatric cataract · retinoblastoma ·
+retinopathy of prematurity with its screening table · nasolacrimal abnormalities · ophthalmia
+neonatorum · primary congenital glaucoma. **Module coverage of these is already good** —
+`ophthalmia neonatorum` in `cnj-10`, `congenital glaucoma` and `buphthalmos` in `wht-4` and
+`glc-16`, ROP in `wht-8` and `vsc-13`, amblyopia across fifteen sections. The chapter stays a
+content source only, per the ruling.

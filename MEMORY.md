@@ -46,10 +46,12 @@ there before resuming a paused stream. Where this file and the archive disagree,
   text drawn as VECTOR OUTLINES** (`L31,32` p22: zero characters in every mode).
 - **⚠️⚠️ COUNT A CHAPTER'S REGISTER ROWS AND VERIFY EVERY ROW'S *SECOND CLAUSE* BEFORE BRIEFING IT.**
   `op-ret` was named in **twelve rows from six donors and five were wrong** (~29 pp forecast against
-  five questions — a question count predicts nothing). **NINE fault shapes**: over-specified ·
-  absent from the deck · wrong deck · wrong slide · circular · wrong receiver · **wrong line** ·
-  **stale, a third chapter delivered it** · **donor under-stating its own coverage** (makes the
-  receiver duplicate). Evidence and the per-chapter census: `START-HERE.md` §14.5, `theory-plan.md`.
+  five questions — a question count predicts nothing). **TEN fault shapes**: over-specified · absent
+  from the deck · wrong deck · wrong slide · circular · wrong receiver · **wrong line** · **stale, a
+  third chapter delivered it** · **donor under-stating its own coverage** · **⚠️ LIVE POINTER TO AN
+  EMPTY DESTINATION** — ch.17 → ch.16 for retinoblastoma resolves, and ch.16's section is **92 words,
+  the only RB text in 274 pages**. **A resolved cross-reference is not evidence of coverage; measure
+  the destination.** Evidence: `START-HERE.md` §14.5, `theory-plan.md`.
 - **⚠️⚠️ "NO ORPHAN WORDS" IS NOT A VALID CHECK** — it proves every word landed SOMEWHERE, never
   that it landed in the right sentence. **Never accept a reconstruction on a word-conservation
   argument; render the page.** `pdftotext -raw` (draw order) is the tool for any slide whose text
@@ -57,12 +59,11 @@ there before resuming a paused stream. Where this file and the archive disagree,
   claim about a source's PROSE, never about its tables or its columns** (`theory-plan.md`).
 - **⚠️ NEVER `git add` A DIRECTORY WHILE A SUBAGENT IS WRITING INTO IT** (it swept a half-finished
   `L37` append into an unrelated commit). **Stage explicit paths.**
-- **Reading debt is nearly paid: EIGHT book chapters cached** in `content\ophtho\book\` (ch.1 ·
-  4 · 5 · 6 · 7 · 10 · 14 · 15, 59,285 w). **Only ch.3 Orbit (PDF 58–63) and ch.17 Malignancies
-  (PDF 216–219) remain — TEN pages**, being read now. Then the module owes no more renders.
-  **`op-appear` needs NO new pages** — ch.5 + ch.3 + ch.15 cover it. **`op-ant` last: no deck and
-  no chapter of its own, so its scope is what the others leave** — the `ent-sinuscomp` shape; grep
-  ~50 terms across the module first, and `wht-4` is flagged to cross-reference it.
+- ✅ **THE READING DEBT IS PAID — ELEVEN book chapters cached** in `content\ophtho\book\` (ch.1 · 3 ·
+  4 · 5 · 6 · 7 · 10 · 14 · 15 · 16 · 17, plus ch.19 §(11) malignancy only — **70,704 w**). **The
+  module owes no more renders.** Every remaining chapter writes from cache.
+  **`op-ant`: no deck and no chapter of its own, so its scope is what the others leave** — the
+  `ent-sinuscomp` shape; grep ~50 terms across the module first (`wht-4` cross-references it).
 - **⚠️⚠️ TEST-PRINT BEFORE ACCEPTING A SPLIT *OR* A COMPRESSION — the ÷240 estimator's two worst
   misses are the BOOK-SOURCED chapters**: `op-lid` forecast 16.1 pp printed **11**, `op-lac` 15.6 →
   **11**. Over-predicted by 5.1 · 5 · 4.6 · 3 · 2.3 · 2.1 · 2 · 2 · 1.5; under exactly once

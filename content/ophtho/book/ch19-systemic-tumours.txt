@@ -1,0 +1,217 @@
+OPHTHALMOLOGY WITH TUTORIALS — HEALIX TEAM
+Chapter 19 — Ocular Manifestations of Systemic Conditions and Diseases
+Printed pp. 236–253  (PDF pp. 238–255)
+Source: Semester 8\Opthalmo\Theoritical\Books\ophthalmology.pdf  (image-only scan; PDF page = printed page + 2)
+
+⚠️ THIS IS A **PARTIAL** CACHE — MALIGNANCY CONTENT ONLY.
+All 18 pages of chapter 19 were rendered at 150 dpi and read far enough to identify each page's
+subject (the page map is below). Only the parts concerning malignancy are transcribed in full,
+per the brief. The diabetic-retinopathy, hypertensive-retinopathy, pregnancy, thyroid-eye-
+disease, GCA, MS, sarcoidosis, autoimmune, sickle-cell and infection sections are **NOT**
+transcribed here — the page map says where each lives, and the pages must be re-rendered if
+that content is ever needed. Two 300 dpi zoom crops were taken (printed 252 lower half,
+printed 253 upper two-thirds) to confirm small print.
+
+Transcribed 2026-08-18.
+
+────────────────────────────────────────────────────────────────────────────────
+PAGE MAP — one line per page, the whole chapter, in order
+────────────────────────────────────────────────────────────────────────────────
+
+| Printed | PDF | Subject of the page |
+|---|---|---|
+| 236 | 238 | Chapter opener: title, four-circle decorative montage (pills / anti-VEGF injection / vascular tree / DNA helix around a red eye), OBJECTIVES flowchart |
+| 237 | 239 | **(1) Diabetes Mellitus (DM)** → Diabetic Retinopathy: epidemiology, causes of visual loss, incidence by DM type (two rounded panels), large-clinical-trial findings 1–2 |
+| 238 | 240 | DR continued: trial findings 3–5, **Pathogenesis** (end-artery circulation, increased permeability, microvascular occlusion), two boxed mechanism panels, three diagrams |
+| 239 | 241 | Tutorial box "Risk factors of DR"; **Classification "important"** — NPDR (5 features), **Severe NPDR / pre-proliferative (4-2-1 rule)**; `Figure (19-1)` |
+| 240 | 242 | N.B. scroll box (IRMA, 40 % → PDR in 1 yr, very severe NPDR); **Proliferative DR** — NVD/NVE/NVI, TrRD; six fundus photos |
+| 241 | 243 | **Diabetic macular oedema (DME/CSME)**; two ruled image tables — Fluoresceine [sic] angiography (PDR / macular edema / macular ischemia) and OCT (normal / DME) |
+| 242 | 244 | **Treatment of DR** (DME/CSME focal laser + anti-VEGF; PDR PRP, anti-VEGF, vitrectomy); **Screening for DR** by DM type, post-laser, and in pregnancy; `Figure (19-4)` |
+| 243 | 245 | **Other effects of DM on the eye** (refractive changes, styes, xanthelasma, cataract ×2, ocular motor nerve palsies, optic neuropathy, ↓ corneal sensation) + a large hand-annotated globe diagram with Arabic marginal glosses |
+| 244 | 246 | **(2) Hypertension** — arteriolar sclerosis (copper/silver wire), AV crossing changes and venous nicking, elevated BP / malignant hypertension, macular star |
+| 245 | 247 | Hypertensive retinopathy diagram; **Grades 1–4 classification "important"**; four-stage photo strip; **Management** |
+| 246 | 248 | **(3) Pregnancy** — physiologic ocular changes; **A. Pregnancy-induced hypertension**; **B. Diabetes Mellitus in pregnancy** |
+| 247 | 249 | **(4) Thyroid eye disease** — pathology, clinical manifestations, ocular complications, treatment; three clinical photos |
+| 248 | 250 | TED photos + orbital CT; a full-page ruled box headed **"Additions from Tutorial (skip in final)"** — symptoms, lid retraction, proptosis, EOM, exposure keratopathy, compressive optic neuropathy, investigation, treatment |
+| 249 | 251 | **(5) Giant Cell Arteritis (Temporal Arteritis)** — clinical picture, investigations, treatment; a large hand-drawn Arabic "mnemonic" panel |
+| 250 | 252 | **(6) Multiple Sclerosis (MS)** — symptoms, signs; a large hand-drawn Arabic "mnemonic" panel ("You can't see the Match") |
+| 251 | 253 | **(7) Sarcoidosis** — investigations, ocular clinical picture, neurosarcoidosis, complications, treatment; hand-drawn "mnemonic" panel |
+| 252 | 254 | **(8) Other Autoimmune Disorders** (SLE, RA, JIA, ankylosing spondylitis, Reiter, Behçet) · **(9) Sickle Cell Anaemia** · **(10) AIDS** — incl. **Kaposi sarcoma of the eyelids** (MALIGNANCY, transcribed below) · **Other systemic infections** (syphilis, candidiasis, HZO) |
+| 253 | 255 | **(11) Extraocular Malignancies** — ⚠️ **THE PAYLOAD. Transcribed in full below.** Ocular metastases, systemic lymphoma, childhood leukaemia, radiation effects, chemotherapy effects, bone-marrow-transplant GVHD |
+
+No page in chapter 19 is blank or near-blank. Every page carries a header rule, a footer number
+and full body content.
+
+**Chapter boundary:** the last page of chapter 19 is printed 253 / PDF 255, and PDF 256
+(printed 254) is the chapter 20 "Drugs and the Eye" opener — that page was rendered and read
+during the book-mapping pass on 2026-08-18 and is recorded in `content\ophtho\book-map.md`, so
+it was not re-rendered here. The contents page's range 236–253 is correct.
+
+**FIGURE NUMBERING:** chapter 19 **DOES** number some figures, in the parenthesised style —
+`Figure (19-1)` on printed 239 and `Figure (19-4)` on printed 242, both captioned
+"(Courtesy of Prof. Dr. Ahmed Magdy Bedda)". The numbering is **sparse and non-contiguous**:
+only 19-1 and 19-4 were seen across 18 pages, and every other image on the chapter carries a
+plain caption or none. This matches chapter 3's `Fig (3-1)` parenthesised style, not
+chapter 7's bare `Fig 7-1`. **The "Extraocular Malignancies" page numbers nothing.**
+
+**STAR-GLYPH IMPORTANCE RATINGS:** NONE anywhere in chapter 19. What this chapter uses instead
+is the word `"important"` in quotation marks appended to a heading — twice:
+`Classification: " important "` (printed 239, diabetic retinopathy) and
+`Classification of hypertensive retinopathy: "important"` (printed 245). Neither falls on the
+malignancy page.
+
+**TUTORIAL MARKERS in chapter 19:** THREE, none of them on the malignancy content.
+  1. printed 239 — blue DASHED box with a separate dashed tab reading "Tutorial", headed
+     "Risk factors of DR:" (the ch.16 form).
+  2. printed 248 — a **full-page black-ruled box** whose first line is the bold heading
+     **"Additions from Tutorial (skip in final)"**. This is a further form: a plain rectangular
+     rule, black not blue, no tab, and the heading itself carries the "skip in final"
+     instruction. Closest relative is the printed-213 running-text declaration in ch.16, but
+     this one is a box.
+  3. printed 245 — none; the "important" tags are the opposite marker (emphasis, not skip).
+  **The Extraocular Malignancies section (printed 253) carries NO tutorial marker at all — it
+  is fully examinable material.**
+
+
+================================================================================
+## printed p.253  (PDF p.255)  —  TRANSCRIBED IN FULL
+================================================================================
+
+[Banner heading, pale grey band, centred. The section number is set in a rounded display face,
+the title in bold sans:]
+
+# (11) Extraocular Malignancies
+
+- Malignancies arising primarily from the eye;or its adnexa are rare.
+  [sic — the semicolon and missing space, "eye;or", are as printed]
+- Generally, the eye is more affected by metastases from cancers of other body organs or by the
+  different forms of cancer therapy.
+- In the United States, ocular and orbital metastases are found in 5% of cancer patients at
+  autopsy.
+
+**Ocular metastases from other primaries:**
+[bold, underlined]
+
+- ⇨ Most Commonly affect the choroid but occasionally can affect the optic nerve or the
+  extraocular muscles.
+  [「choroid」 underlined; "Most Commonly" capitalised as printed]
+- ⇨ The original sites of the primaries are usually the **breast and the lung** in adults and
+  **neuroblastoma** in children
+  [「breast and the lung」 and 「neuroblastoma」 printed bold in dark red; 「in adults」 and
+   「in children」 underlined]
+
+**Systemic lymphoma:**
+[bold, underlined]
+
+- Affects the eye in 3% of patients
+- infiltration of the orbit (causing proptosis or limitation of extraocular movement) or the
+  conjunctiva is not uncommon in lymphomas.
+- CNS lymphoma in the elderly can present as chronic, steroid-dependent,posierior/panuveitis
+  **(Masquerade Syndrome).**
+  [sic — "posierior" for "posterior", and the missing space after "steroid-dependent,".
+   「(Masquerade Syndrome)」 printed bold in dark red]
+
+**Childhood leukaemia:**
+[bold, underlined]
+
+- More than 75% of leukaemia patients are found to have ocular adnexal metastases at autopsy.
+- Commonly leukemic patients present with intraretinal, or subconjunctival haemorrhages due to
+  thrombocytopenia or anaemia.
+  [sic — "leukaemia" in the heading and first bullet, "leukemic" in the second]
+
+**Radiation of tumours near the eye may result in:**
+[bold, underlined]
+
+1. Cataract formation
+2. Radiation retinopathy (similar to DR in appearance)
+3. Optic neuropathy
+4. Dry eye
+
+**Chemotherapeutic agents can have ocular side effects:**
+[bold, underlined]
+
+- ⇨ Superficial keratitis (cytosine arabinoside)
+- ⇨ Optic neuropathy (vincristine injections)
+
+**Bone marrow transplantation to leukemic Patients can lead to:**
+[bold, underlined; "Patients" capitalised as printed]
+
+**Conjunctival mucosal damage and symblepharon** (partial or complete adhesion of the palpebral
+conjunctiva to the bulbar conjunctiva) as the new bone marrow recognizes body tissues to be
+foreign (Graft versus host disease).
+[「Conjunctival mucosal damage and symblepharon」 printed bold in dark red]
+
+[Photograph, bottom centre: an eye with the lower lid pulled down, showing a broad pale fibrous
+band running from the palpebral conjunctiva to the bulbar conjunctiva across the inferior
+fornix, obliterating it. Caption in bold: "symblepharon". A faint watermark reads
+"eyerounds.org".]
+
+[Second image, bottom right: a decorative graphic, not clinical — the words "Graft VS Host"
+set on a split wood-and-red background with a lightning-bolt "VS". No caption.]
+
+[That is the whole of printed 253 and the whole of chapter 19. Page number bottom-left: 253.]
+
+
+================================================================================
+## printed p.252  (PDF p.254)  —  MALIGNANCY EXTRACT ONLY
+================================================================================
+
+[The rest of this page — sections (8) Other Autoimmune Disorders and (9) Sickle Cell Anaemia,
+and the syphilis/candidiasis/HZO block — is NOT malignancy content and is not transcribed. Only
+the malignant item inside section (10) is reproduced, with just enough of its parent heading to
+place it.]
+
+[Banner heading, pale grey band, centred:]
+
+# (10) Acquired immunodeficiency syndrome (AIDS)
+
+**Can manifest in the eye as:**
+[blue, bold, underlined — the parent list. Its other items are AIDS retinopathy, CMV retinitis,
+HZO and HSV keratitis; the third item is the malignancy:]
+
+- Kaposi sarcoma in the eyelids:
+  [item label underlined]
+  - Multiple vascular skin malignancies.
+    May involve the conjunctiva (palpebral or bulbar)
+  - Can be misdiagnosed as subconjunctival haemorrhage.
+
+[No figure accompanies the Kaposi sarcoma item. No treatment is printed for it.]
+
+
+================================================================================
+VERDICT — does chapter 19 pay the "Metastases from Extraocular Malignancies" row?
+================================================================================
+
+**YES. Chapter 17's cross-reference is a LIVE pointer, not a dead one.** Chapter 19's section
+(11) is titled "Extraocular Malignancies" and is exactly what chapter 17 defers to. It is one
+printed page, roughly 260 words, and it is the only place in the book that treats ocular
+metastasis, ocular lymphoma or leukaemic ocular involvement.
+
+What it delivers, item by item:
+
+| Item asked for | Printed? | What the book says |
+|---|---|---|
+| Metastases to the eye — frequency | YES | 5 % of cancer patients at autopsy (US figure); and the general statement that the eye is more often affected by metastasis than by primary malignancy |
+| Metastases — usual ocular site | YES | **Choroid** most commonly; occasionally optic nerve or extraocular muscles |
+| Metastases — primary sites | YES | **Breast and lung in adults; neuroblastoma in children** |
+| Metastases — presentation | **NO** — no symptoms, signs, fundus appearance or laterality are printed | — |
+| Metastases — management | **NO** — nothing at all | — |
+| Lymphoma | YES | Eye affected in 3 % of systemic lymphoma; orbital infiltration → proptosis or limited EOM; conjunctival infiltration "not uncommon"; **CNS lymphoma in the elderly as chronic steroid-dependent posterior/panuveitis = Masquerade Syndrome** |
+| Lymphoma — management | **NO** | — |
+| Leukaemia / leukaemic infiltrates | YES | **>75 % of leukaemia patients have ocular adnexal metastases at autopsy**; commonest presentation is intraretinal or subconjunctival haemorrhage **due to thrombocytopenia or anaemia** (i.e. the book attributes the ocular picture to the blood picture, not to direct infiltration) |
+| Leukaemia — management | **NO** | — |
+| Other tumours | YES, one — **Kaposi sarcoma of the eyelids** under AIDS on printed 252: multiple vascular skin malignancies, may involve palpebral or bulbar conjunctiva, **can be misdiagnosed as subconjunctival haemorrhage**. No management |
+| Effects of cancer *therapy* on the eye | YES, and this is a third of the section — radiation (cataract, radiation retinopathy "similar to DR in appearance", optic neuropathy, dry eye), chemotherapy (superficial keratitis from cytosine arabinoside, optic neuropathy from vincristine), bone-marrow transplant (conjunctival mucosal damage and **symblepharon** as GVHD) |
+| Retinoblastoma | **NO** — not mentioned in chapter 19 at all |
+| Choroidal melanoma | **NO** — not mentioned in chapter 19 at all; it lives in chapter 17 |
+
+**Absences worth naming:** the section prints **no management for any malignancy** — not for
+metastasis, not for lymphoma, not for leukaemia, not for Kaposi sarcoma. It prints **no
+work-up or imaging** for any of them. And it prints **no clinical presentation for ocular
+metastasis** — only site and primary. A writer needing "how does a choroidal metastasis look
+and what do you do about it" will not find it in this book.
+
+**One structural surprise:** the section's own weight is inverted relative to its title. Three
+of its six sub-headings are about the ocular toxicity of cancer *treatment* (radiation,
+chemotherapy, bone marrow transplant) rather than about tumours. That third of the section is
+material the register row did not ask for and nothing else in the book covers.
