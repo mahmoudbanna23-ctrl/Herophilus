@@ -949,18 +949,13 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
   border-radius:14px;padding:16px 20px;font-size:14px;line-height:1.68;margin-bottom:22px;
   box-shadow:var(--pop) rgba(109,76,125,.22);
 }
-.th-toc{
-  background:var(--card);border:2.5px solid var(--line-2);border-radius:14px;padding:15px 19px;
-  margin-bottom:26px;box-shadow:var(--pop) rgba(0,0,0,.14);
-}
-.th-toc .tl{font-size:10.5px;font-weight:900;letter-spacing:.11em;text-transform:uppercase;
-  color:var(--ink-3);margin-bottom:11px}
-.th-toc ol{margin:0;padding-left:19px}
-.th-toc li{margin-bottom:6px;font-size:13.4px;font-weight:700}
-.th-toc a{color:var(--ink-2);text-decoration:none;border-bottom:2px solid transparent}
-.th-toc a:hover{color:var(--neuro);border-bottom-color:var(--neuro)}
-.th-toc .wb{font-size:8.5px;margin-left:7px;padding:2px 6px;border-radius:5px;font-weight:900;
-  letter-spacing:.06em;text-transform:uppercase;vertical-align:1.5px}
+/* ⚠️ "In this lecture" IS GONE FROM THE SCREEN TOO (user, 2026-08-19: "I don't
+   need the in this lecture part I thought we changed this formula long ago").
+   It was removed from PRINT on 2026-08-13 and the screen kept it — which is
+   exactly why the user remembered the decision and still saw the block. The
+   renderer no longer emits .th-toc, so its rules, its print rules and jumpSec()
+   went with it. A section is still reachable by id: openTheoryFor() passes its
+   section through go(), and bkInit() turns straight to that page. */
 
 /* a section is now a chapter of a document, always open */
 .th-sec{
@@ -982,13 +977,36 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
    ⚠️ EVERY RULE HERE IS GATED ON .bk-on, and @media print unsets the lot — a
    columned, translated, overflow-hidden container prints as ONE page and loses
    the whole chapter. The print block below is not optional. */
-.bk-wrap{position:relative}
-/* With the book on, the chapter title shrinks to a spine label — the big
-   display setting belongs on the printed title page, not above a live reader
-   that needs the window height. */
-.bk-on .doc-head{margin-bottom:6px;padding-bottom:8px}
-.bk-on .doc-head h1{font-size:26px;letter-spacing:.06em}
-.bk-on .doc-head .doc-meta{font-size:11.5px}
+.bk-wrap{position:relative;--bk-max:820px}
+/* ⚠️ THE PAGE GETS THE WINDOW (user, 2026-08-19: "I need when I press on the
+   lecture's tab the whole pages appears and I surfe through pages not just
+   separate points"). MEASURED before the change, op-glauc at 1280x860:
+   461px of sheet against 399px of furniture — the page got 54 % of the window —
+   and scrollHeight was 909 against an 860 window, so the turn buttons sat BELOW
+   THE FOLD and a page had to be scrolled to before it could be turned. That is
+   what made a chapter read as fragments: each "page" was a half-height sliver,
+   and op-glauc needed 31 of them.
+   Nothing below removes a word. It removes repetition and stacking:
+     - the chapter title was printed TWICE, in .doc-head and again 20px lower in
+       the running head, which is the one that stays;
+     - the back link and the two action buttons moved into one strip beside each
+       other instead of one band above the sheet and one below it.
+   ⚠️ .doc-head STAYS IN THE DOM. On paper it is the cover — a full-page panel
+   in the module's colour — so it is hidden for the screen only and the print
+   block restores it. */
+.bk-on .doc-head{display:none}
+.bk-top{
+  display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+  max-width:var(--bk-max,820px);margin:0 auto 9px;
+}
+.bk-top .tb-btn{padding-left:0;margin:0;flex:0 0 auto}
+.bk-acts{display:flex;gap:8px;margin-left:auto;flex-wrap:wrap}
+.bk-acts .btn{padding:7px 13px;font-size:12.5px}
+/* The measure is capped. At full width the line ran 971px, far past a readable
+   length for prose — a wide sheet is not the same thing as a whole page. */
+.bk-on .bk-view,.bk-on .bk-run,.bk-on .bk-prog,.bk-on .bk-bar{
+  max-width:var(--bk-max,820px);margin-left:auto;margin-right:auto;
+}
 .bk-on .th-intro{margin-top:0}
 /* The intro opens the chapter, so it is a first page, not a tinted callout. */
 .bk-on .th-intro.bk-first{
@@ -1158,7 +1176,7 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
      "Save as PDF" and the "← ENT notes" back link all printed onto paper —
      three controls that do nothing on a sheet of paper. Reported by the user
      from a real saved PDF. */
-  .rail,.topbar,.th-test,.th-toc .wb,.readtheory,.toast,.modal-bg,.splash,.gate,.qzoom,
+  .rail,.topbar,.th-test,.readtheory,.toast,.modal-bg,.splash,.gate,.qzoom,
   .filterbar,.tb-btn,.clep,
   /* The schedule's own controls: the ✓/✗ marks and the Edit/Reset bar. Same
      reason as the buttons above — a printed plan is read, not clicked. */
@@ -1246,17 +1264,12 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
   .flow,.fbox,.th-body blockquote{break-inside:avoid;page-break-inside:avoid}
   .th-table thead{display:table-header-group}
   .th-table tr{break-inside:avoid;page-break-inside:avoid}
-  .fbox,.th-table,.th-toc{box-shadow:none!important}
+  .fbox,.th-table{box-shadow:none!important}
   /* ⚠️ THE PDF IS A BOOK, NOT THE SCREEN (user's instruction, 2026-08-13):
      title page, contents, then straight into the notes. The exam-patterns
      intro is screen-only — on paper the user asked to start with the
      explanation directly. */
   .th-intro{display:none!important}
-  /* ⚠️ THE CONTENTS PAGES ARE GONE (user, 2026-08-13: "the 'In this lecture'
-     pages are unnecessary"). This REVERSES the title-page + contents choice made
-     earlier the same day — they read the printed result and changed their mind,
-     which is the only evidence that counts. */
-  .th-toc{display:none!important}
   /* ⚠️ PAGE COUNT. 47 pages for one chapter was too many. Nothing here removes a
      word — it is leading, section gaps and cell padding, all of which were set
      for a 15px screen and are wasteful at 11pt on A4. */
@@ -1365,7 +1378,10 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
   .bk-on .bk-flow{
     columns:auto!important;column-gap:normal!important;
     height:auto!important;transform:none!important;transition:none!important}
-  .bk-bar,.bk-prog,.bk-run,.bk-tap{display:none!important}
+  .bk-bar,.bk-prog,.bk-run,.bk-tap,.bk-top{display:none!important}
+  /* The cover is .doc-head, which the screen hides while the reader is on. */
+  .bk-on .doc-head{display:block!important}
+  .bk-on .bk-view,.bk-on .bk-flow{max-width:none!important}
   /* ── THE COVER ─────────────────────────────────────────────────────────────
      Typographic, not illustrated: Canva was considered and set aside because a
      cover image cannot be generated per chapter for 104 chapters, and the module
@@ -1414,9 +1430,6 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
     }
   }
   @page:first{ @bottom-center{content:''} }
-  .th-toc .tl{font-size:13pt;letter-spacing:.14em;margin-bottom:6mm}
-  .th-toc li{margin-bottom:3.4mm;font-size:11.5pt}
-  .th-toc a{color:#14181f!important;border-bottom:none}
   h1{font-size:22pt}
   .th-h h2{font-size:14pt}
   .th-body{font-size:10.5pt;line-height:1.55}
@@ -1657,7 +1670,7 @@ body[data-view="theory"] .orb{animation-play-state:paused}
 /* ---- surfaces get an inner highlight so edges read on dark -------------- */
 /* Shadow ink and the sheen wash come from tokens so the light theme inherits
    these rules unchanged instead of restating all of them. */
-.card,.stat,.ch-row,.qcard,.th-ch,.day,.modelans,.explain,.th-toc,.fbox,.conf{
+.card,.stat,.ch-row,.qcard,.th-ch,.day,.modelans,.explain,.fbox,.conf{
   box-shadow:var(--pop) var(--sh),var(--glow);
 }
 .card,.stat,.qcard,.ch-row,.th-ch,.day{
@@ -3117,18 +3130,29 @@ function vTheory(p){
   })();
   const HEX={must:'var(--ent)',high:'var(--gold)',know:'var(--ink-4)'};
 
-  let h=`<button class="tb-btn" style="padding-left:0;margin-bottom:8px" onclick="go({name:'theory',mod:'${view.mod}'})">&larr; ${esc(m.name)} notes</button>
-  <div class="doc-head">
+  /* .doc-head is the PRINTED COVER and nothing else now — the screen hides it
+     while the reader is on, because the running head already names the chapter
+     and the title was being set twice. */
+  let h=`<div class="doc-head">
     <div class="eyebrow" style="background:${m.hex}">${ico(m.icon,13)} ${m.name}</div>
     <h1>${esc(chapterName(view.ch))}</h1>
     <div class="doc-meta">${secs.length} sections \u00b7 ${secs.filter(s=>s.w==='must').length} must-know \u00b7 ${allQs.length} linked questions</div>
   </div>`;
 
-  /* ⚠️ THE OPENING AND THE CONTENTS GO *INSIDE* THE BOOK, as its first two
-     pages. Left above it they had to be scrolled past before the reader was
-     even visible, which is the long-scroll the user asked to be rid of. In a
-     book you turn to the contents; you do not scroll past it. */
+  /* ⚠️ ONE STRIP OF FURNITURE, ABOVE THE SHEET. The back link and the two
+     actions used to sit in two separate bands, one above the reader and one
+     below it, and between them they pushed the turn bar off the bottom of the
+     window. Side by side they cost one line.
+     The opening still goes INSIDE the book as its first page — left above it,
+     it had to be scrolled past before the reader was even visible. */
   h+=`<div class="bk-wrap" id="bkWrap">
+    <div class="bk-top">
+      <button class="tb-btn" onclick="go({name:'theory',mod:'${view.mod}'})">&larr; ${esc(m.name)} notes</button>
+      <div class="bk-acts">
+        ${allQs.length?`<button class="btn go" onclick="startQuiz(${JSON.stringify(allQs).replace(/"/g,'&quot;')},'${esc(chapterName(view.ch)).replace(/'/g,"\\'")}')">\u25b6 Test the lecture (${allQs.length})</button>`:''}
+        <button class="btn sec" onclick="window.print()">&#128424;&#65039; Save as PDF</button>
+      </div>
+    </div>
     <div class="bk-run"><span>${esc(chapterName(view.ch))}</span><span class="r" id="bkRun"></span></div>
     <div class="bk-view">
       <div class="bk-tap l" onclick="bkTurn(-1)" title="Previous page"></div>
@@ -3136,13 +3160,6 @@ function vTheory(p){
       <div class="bk-flow" id="bkFlow">`;
 
   if(t.intro)h+=`<div class="th-intro bk-first">${mdBlock(t.intro)}</div>`;
-
-  h+=`<div class="th-toc"><div class="tl">In this lecture</div><ol>`;
-  secs.forEach(s=>{
-    h+=`<li><a href="#sec-${s.id}" onclick="jumpSec(event,'${s.id}')">${esc(s.h)}</a>
-      <span class="wb" style="background:${HEX[s.w||'know']};color:${s.w==='must'?'#fff':s.w==='high'?'var(--ink)':'#fff'}">${LBL[s.w||'know']}</span></li>`;
-  });
-  h+=`</ol></div>`;
 
   secs.forEach((s,i)=>{
     const c=HEX[s.w||'know'];
@@ -3168,10 +3185,6 @@ function vTheory(p){
       <button class="bk-btn" id="bkPrev" onclick="bkTurn(-1)" aria-label="Previous page">${ico('chev-l',18)}</button>
       <span class="bk-num" id="bkNum"></span>
       <button class="bk-btn" id="bkNext" onclick="bkTurn(1)" aria-label="Next page">${ico('chev-r',18)}</button>
-    </div>
-    <div class="filterbar" style="justify-content:center;margin-top:14px">
-      ${allQs.length?`<button class="btn go" onclick="startQuiz(${JSON.stringify(allQs).replace(/"/g,'&quot;')},'${esc(chapterName(view.ch)).replace(/'/g,"\\'")}')">\u25b6 Test the whole lecture (${allQs.length})</button>`:''}
-      <button class="btn sec" onclick="window.print()">&#128424;&#65039; Save as PDF</button>
     </div>
   </div>`;
 
@@ -3212,10 +3225,28 @@ function bkMeasure(){
   const flow=document.getElementById('bkFlow'),view=flow&&flow.parentElement;
   if(!flow)return;
   /* Height: fill the window under the furniture, with a floor so a short
-     window still shows a usable page rather than three lines. */
+     window still shows a usable page rather than three lines.
+     ⚠️ RESERVE WHAT THE FURNITURE ACTUALLY MEASURES, never a constant. The old
+     reserve of 118px was measured once, against a layout that has since changed
+     twice; reading the progress rule and the turn bar out of the DOM cannot go
+     stale, and getting this number too small is what put the turn buttons below
+     the fold. */
   const top=view.getBoundingClientRect().top;
-  const h=Math.max(360,Math.round(window.innerHeight-top-118));
+  const wrap=document.getElementById('bkWrap');
+  const below=['.bk-prog','.bk-bar'].reduce((acc,sel)=>{
+    const el=wrap&&wrap.querySelector(sel);
+    if(!el)return acc;
+    const cs=getComputedStyle(el);
+    return acc+el.offsetHeight+(parseFloat(cs.marginTop)||0)+(parseFloat(cs.marginBottom)||0);
+  },20);
+  const h=Math.max(360,Math.round(window.innerHeight-top-below));
   flow.style.setProperty('--bk-h',h+'px');
+  /* ⚠️ DO NOT TRY TO CANCEL THE LAST ~10px OF PAGE OVERFLOW FROM HERE — it was
+     tried and it only costs reading space. MEASURED: --bk-h at 572, 562, 552 and
+     542 all leave document scrollHeight at 870 in an 860px window, because
+     `main.page` is a stretched flex child pinned at 793px whatever it holds. The
+     empty Flagged view overflows by the same 10px, so it is the shell's, it
+     predates the reader, and the sheet cannot buy it back. */
   const gap=parseFloat(getComputedStyle(flow).columnGap)||54;
   const w=view.clientWidth;
   flow.style.columnWidth=w+'px';
@@ -3300,12 +3331,6 @@ function bkToSec(id){
   const s=BK.secs.filter(x=>x.id===id)[0];
   BK.page=s?s.page:0;
   bkPaint();
-}
-function jumpSec(e,id){
-  if(e&&e.preventDefault)e.preventDefault();
-  if(bkOn()){bkToSec(id);return}
-  const el=document.getElementById('sec-'+id);
-  if(el&&el.scrollIntoView)el.scrollIntoView({block:'start',behavior:'smooth'});
 }
 function openTheoryFor(qid){
   const t=qTheory(qid);
