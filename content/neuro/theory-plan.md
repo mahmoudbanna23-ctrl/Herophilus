@@ -267,3 +267,66 @@ tagged, but must not present the fill as the deck's.
 Slide 20's title ends in an unfilled `()`. Slides 15 and 16 are headed *"special considerations"*
 and state no consideration — **slide 16 is two loaded images with no title and no text, and its
 intent is unrecoverable.** Say so in the register rather than guessing at it.
+
+---
+
+## ✅ The book, mapped 2026-08-18 — `content\neuro\book-map.md` (4,774 w)
+
+Built from a 30-dpi thumbnail sweep of all 292 pages plus 26 pages read at 150 dpi.
+
+### ⚠️⚠️ IT IS NOT A HEALIX BOOK — three of four carried-over assumptions were REFUTED
+
+The shared `Haru Free PDF Library 2.0.8c` producer string means **a shared scanning pipeline and
+nothing more.** The book is **`NEUROPSYCHIATRY` by `ASM MINDS`** — a different publisher.
+
+| Assumption carried from the ophthalmology book | Result |
+|---|---|
+| A contents `Relative weight in %` column | ❌ **REFUTED.** Columns are `Lecture · Page No. · Barcode`. **There are no exam weights anywhere in this book** — the budgeting basis that rescued ophthalmology has no counterpart here, so §14's word-based budget is all we have |
+| `(Tutorial)` / `(T)` markers | **NOT FOUND** in 26 pages, and absent from the contents page — which is exactly where the sister book declares it. ⚠️ Recorded as *"not found"*, **not** *"proved absent"* |
+| Blue rule + `OBJECTIVES:` flowchart openers | **Partly** — coloured banners yes, **no objectives block on any of 8 openers read** |
+| `PDF = printed + 2` | ❌ **REFUTED** — see below |
+
+**This is exactly why the hypotheses were briefed as hypotheses.** Carrying them over unverified
+would have produced a wrong page offset on every citation in the module.
+
+### ⚠️⚠️ THE PAGE OFFSET CHANGES HALFWAY THROUGH THE BOOK
+
+**Neurology: `PDF = printed + 11`. Psychiatry: `PDF = printed + 12`.** The break is the unnumbered
+`PSYCHIATRY` divider leaf at PDF 188. **Verified at eight points** by footer + heading.
+
+**And chapter numbering RESTARTS in the psychiatry half** — the book is **30 chapters in two
+independently-numbered halves**: **Neurology 17 (printed 1–176), Psychiatry 13 (printed 177–277).**
+⚠️ **A bare "chapter 6" is ambiguous. Always cite the half.** Lengths sum to exactly 176 and 277,
+and 277 printed + 15 unnumbered leaves = 292 — the arithmetic closes.
+
+**Two complete design systems, one per half**: neurology uses serif small-caps openers with a
+top-right running header; psychiatry uses rounded handwriting banners and a running *footer*. A page
+can be assigned to its half on sight.
+
+### What the book pays for the five unsourced chapters
+
+| Chapter | Book source | Verdict |
+|---|---|---|
+| **`nr-headache`** (22 q) | **Neurology ch.9 `Headache`, printed 80–89 / PDF 91–100** | ✅ **Ten self-contained pages** — definition, epidemiology, the full primary/secondary classification flowchart, and a colour-highlighted **three-column tension / migraine / cluster table**. **This alone can carry the chapter and its questions.** |
+| **`ps-anxiety`** | **Psychiatry ch.3, printed 193–201 / PDF 205–213** | ✅ Nine pages — **and it also covers `ps-ocd`**: the opener prints the DSM-5 three-way split (anxiety / OCD & related / trauma & stressor-related) |
+| **`ps-pharm`** | **Psychiatry ch.11 `Treatment in psychiatry [Psychopharmacology]`, printed 261–264 / PDF 273–276** | ⚠️ **Only four pages**, much of it inside a full-width `ANTIDEPRESSANTS` infographic in small type. **Expect to supplement** |
+| **`ps-geri`** | Psychiatry ch.8 `Dementia and delirium` | ⚠️ **Partly served — there is no geriatric chapter** |
+| **`ps-osce`** | ⚠️ **NONE** | **The one app chapter the book cannot cover.** The two OSCE-shaped contents rows (`Psychiatric Sheet`, `Clinical Case`) are **QR video links with no page number**. Nearest printed material is Psychiatry ch.1 p.184 — genuine MSE technique, but that is `ps-interview`/`ps-symptom`'s chapter read a third time |
+
+**No book chapter is unclaimed**, and `nr-delirium` straddles both halves.
+
+### Three findings to carry into the writing
+
+- ⚠️ **`nr-intro` owns 39 printed pages across THREE book chapters**, including a 25-page
+  *"Neurology Sheet"*. **Split candidate on precedent** — flagged, not decided. It also has 21 q.
+- **Figure numbering: none found in 12 chapters sampled.** The closest is lettered sub-panels
+  `(a)/(b)/(c)` with no figure number. ⚠️ **Recorded as a 12-chapter observation, explicitly NOT a
+  rule** — the ophthalmology equivalent of this claim was false within hours.
+- **Dead-pointer check clean** across 16 sampled pages: every heading had a body.
+- **A title mismatch, recorded not corrected:** the book prints **`Cranial and Low Back pain`** where
+  the app says **Cervical**, and the chapter's own contents QRs read `Neck and Back Pain`. The app is
+  probably right and the book probably has a typo. **Do not silently "fix" either.**
+
+**Not established** and honestly flagged by the mapper: year, edition and ISBN (not printed);
+whether tutorial markers or star ratings exist deeper than the 26 pages read; whether any chapter
+numbers its figures; whether the QR videos duplicate printed material.
