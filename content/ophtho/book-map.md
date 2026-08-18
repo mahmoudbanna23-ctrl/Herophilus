@@ -58,7 +58,7 @@ wording, that variant is given in the last column — it matters for grepping.
 |---|---|---|---|---|---|---|
 | 1 | Examination of the Eye | 1–44 | 3–46 | 44 | 3 | *(same)* — but opener is PDF 4 / printed 2, see above |
 | 2 | Optics and Errors of Refraction | 45–55 | 47–57 | 11 | 3 | `Eye optics & Errors of refraction` |
-| 3 | Orbit | 56–61 | 58–63 | 6 | 3 | not checked |
+| 3 | Orbit | 56–61 | 58–63 | 6 | 3 | `The Orbit` |
 | 4 | Lacrimal System | 62–69 | 64–71 | 8 | 3 | not checked |
 | 5 | Eyelids | 70–81 | 72–83 | 12 | 6.5 | not checked |
 | 6 | Conjunctiva | 82–95 | 84–97 | 14 | 6.5 | not checked |
@@ -72,7 +72,7 @@ wording, that variant is given in the last column — it matters for grepping.
 | 14 | Neuro-ophthalmology | 178–195 | 180–197 | 18 | 10 | not checked |
 | 15 | Squint | 196–203 | 198–205 | 8 | 3 | not checked |
 | 16 | Paediatric Ophthalmology | 204–213 | 206–215 | 10 | 4.5 | not checked |
-| 17 | Malignancies of the Eye and its Adnexa | 214–217 | 216–219 | 4 | 1.5 | not checked |
+| 17 | Malignancies of the Eye and its Adnexa | 214–217 | 216–219 | 4 | 1.5 | *(same)* |
 | 18 | Ocular Trauma | 218–235 | 220–237 | 18 | 9.5 | not checked |
 | 19 | Ocular Manifestations of Systemic Conditions and Diseases | 236–253 | 238–255 | 18 | 10 | *(same)* |
 | 20 | Drugs and the Eye | 254–270 | 256–272 | 17 | 3 | *(same)* |
@@ -93,9 +93,20 @@ Relevant to any later render/transcription work:
   title, a decorative image, then an **`OBJECTIVES:`** block drawn as a flowchart of blue rounded
   boxes. The objectives flowchart is a reliable chapter-boundary marker.
 - Page number is bottom-left, blue, preceded by a short vertical bar.
-- **The book uses no `Figure X-Y` numbering.** Figures carry plain captions (e.g. `Macular Star`).
-  Cross-references are by chapter name in prose — `(Refer to branch retinal vein occlusion in the
-  retina chapter)` — never by figure or page number. This is load-bearing; see below.
+- ⚠️ **CORRECTED — figure numbering is INCONSISTENT, not absent.** This line originally read *"the
+  book uses no `Figure X-Y` numbering"*, extrapolated from five pages. Chapters **7** (`Fig 7-1`)
+  and **3** (`Fig (3-1)`, parenthesised) number their figures; chapters **10** and **17** number
+  none, and chapter 3 mixes numbered and unnumbered captions on one page. Many figures do carry a
+  plain caption (e.g. `Macular Star`). **Cross-references are by chapter name in prose** — `(Refer
+  to branch retinal vein occlusion in the retina chapter)` — never by page number, and that part
+  has held on every chapter read so far.
+- **⚠️ STAR-GLYPH IMPORTANCE RATINGS, found 2026-08-18 on printed 58**: `"Blow-out" fracture : ☆☆☆`.
+  A sub-chapter-level exam-weight signal, finer than the contents page's per-chapter percentages and
+  **not previously known to exist**. Grep every new cache for `☆` and record what it marks.
+- **Cross-reference banners can be DEAD ENDS.** Chapter 17 spends two of its five top-level headings
+  on banner headings whose entire content is an italic pointer elsewhere (`Retinoblastoma` → ch.16,
+  `Metastases from Extraocular Malignancies` → ch.19). A heading in this book is not evidence that
+  the chapter teaches the topic — check the body before promising a chapter can pay a register row.
 - Body text is dense, colour-coded (red/blue emphasis), with hand-annotated diagrams, some carrying
   Arabic marginal glosses.
 
@@ -128,6 +139,10 @@ Relevant to any later render/transcription work:
   through `Fig 7-4`** — five numbered figures. Chapter 10, read the same day, numbers **none**.
   **The book's figure-numbering is INCONSISTENT between chapters**, so *"this book never numbers
   figures"* can no longer be used to exclude anything.
+  **Two more data points, 2026-08-18:** chapter 3 numbers **`Fig (3-1)`–`Fig (3-5)`, the number in
+  PARENTHESES** — a second bracket style, and it mixes numbered and unnumbered captions **on the
+  same page** (printed 57, 59, 60). Chapter 17 numbers nothing. Running tally: **numbering — 3, 7 ·
+  not numbering — 10, 17**, in two different styles. The inconsistency is now the finding.
 - **The conclusion survives, on the evidence that was always load-bearing:** chapter 9 of this book
   is **`Lens`**, its systemic-disease chapter is **19**, and `L23` is a **960 × 540 PowerPoint deck
   authored `By Faten Hussein`** — not a page of an A4 scan. A `(Fig 9-x)` reference cannot point at

@@ -1,0 +1,316 @@
+OPHTHALMOLOGY WITH TUTORIALS — HEALIX TEAM
+Chapter 17 — Malignancies of the Eye and its Adnexa
+Printed pp. 214–217  (PDF pp. 216–219)
+Source: Semester 8\Opthalmo\Theoritical\Books\ophthalmology.pdf  (image-only scan; PDF page = printed page + 2)
+Transcribed 2026-08-18 from 150 dpi renders, one page at a time. Every page of the chapter was read.
+
+BOUNDARY CHECK: PDF p.220 (printed 218) was rendered as the one-page-past check. It is the
+chapter 18 "Ocular Trauma" opener (blue title, cartoon of a branch striking an eye, OBJECTIVES
+flowchart). So chapter 17 really does end at printed 217 / PDF 219 — the boundary did NOT move
+in either direction. Four pages, exactly as the contents page states, and the shortest chapter
+in the book (weight 1.5 %).
+
+FIGURE NUMBERING: this chapter numbers NOTHING. Every image carries a plain italic caption
+("Basal cell carcinoma", "Squamous Cell Carcinoma", "Sebaceous Carcinoma") or no caption at all.
+No "Fig (17-x)" anywhere. (Contrast chapter 3, which does number — the book is inconsistent.)
+
+TUTORIAL MARKERS in this chapter: ONE.
+  printed 217 — a blue-outlined rounded box whose first line is the centred blue word "Tutorial",
+  then a bold heading and three bullets ("Ultrasonography of choroidal melanoma:").
+No inline "(T)" or "(tutorial)" parentheticals occur anywhere in this chapter.
+
+
+================================================================================
+## printed p.214  (PDF p.216)
+================================================================================
+
+[Chapter opener. Thin double blue rule across the top, eye glyph top-right.]
+
+# Malignancies of the Eye and its Adnexa
+[blue, underlined, serif — matches the contents-page wording exactly]
+
+[Decorative image: a stylised illustration of an eye with the lower lid pulled down by a
+fingertip, revealing an injected inferior fornix and a large white cauliflower-like /
+mulberry-like mass sitting on the inferotemporal globe surface.]
+
+OBJECTIVES
+
+[Flowchart of blue rounded boxes:]
+
+                          Ocular malignancy
+        ┌──────────────┬──────────┴──────────┬─────────────────┐
+   most common   eyelid malignancies     Metastases     choroidal melanoma
+                        │
+                        ├── basal cell carcinoma
+                        ├── squamous cell carcinoma
+                        └── sebaceous carcinoma
+
+[As a list:]
+- Ocular malignancy
+  - most common
+  - eyelid malignancies
+    - basal cell carcinoma
+    - squamous cell carcinoma
+    - sebaceous carcinoma
+  - Metastases          [this box's label is underlined in the original]
+  - choroidal melanoma
+
+[Note: "Retinoblastoma" is NOT a box in the objectives flowchart, even though the chapter body
+prints a Retinoblastoma banner heading on printed 216.]
+
+[Rest of the page is blank. Page number bottom-left: 214.]
+
+
+================================================================================
+## printed p.215  (PDF p.217)
+================================================================================
+
+[Banner heading, grey band, left-aligned:]
+
+# Intro to Ocular Malignancies
+
+- The eye is an **uncommon** site for **primary** malignancies
+- The **most common** intraocular malignancies are **secondaries** from other sites (see the eye
+  and systemic diseases chapter).
+- The most common primary intraocular malignancy in children is **retinoblastoma** (see the
+  pediatric ophthalmology chapter).
+- The most common primary intraocular malignancy in adults is **choroidal melanoma**.
+  [「retinoblastoma」 and 「choroidal melanoma」 printed in dark red]
+
+
+[Banner heading, grey band, centred:]
+
+# Eyelid Malignancies
+
+- The most common eyelid malignancies are basal cell carcinoma, squamous cell carcinoma, and
+  sebaceous cell carcinoma.
+- **Eyelid malignancies are characterized by:**
+  - Ulceration and bleeding
+  - Destruction of the normal anatomy of the eyelid (e.g., loss of lashes)
+
+
+## 1. Basal cell carcinoma (BCC):
+[blue heading, underlined by a full-width blue rule]
+
+- It is the **most common** eyelid malignancy.
+- It is a locally malignant tumour that rarely metastasises
+- Its classical site is the nasal part of the lower lid close to the medial canthus.
+  [「lower lid」 and 「medial canthus」 highlighted yellow]
+
+- Characteristics of the BCC ulcer:
+  - Beaded (**rolled**) edges.
+  - Dilated tortuous vessels on the ulcer margin (telangiectasia)
+
+- It spreads by local invasion of the adjacent tissues
+- **Treatment** is by complete excision with a safety margin followed by reconstruction of the
+  resultant defect.
+
+[Figure, upper right: close-up photograph of a lower lid with an ulcerated nodular lesion at the
+medial end, rolled everted edge, surface vessels, and loss of lashes over the lesion.]
+*Basal cell carcinoma*
+
+[Figure, below it: photograph of both eyes of an elderly patient, an ulcerated crusted lesion at
+the medial canthal region of one lower lid.]
+[no caption]
+
+
+## 2. Squamous Cell Carcinoma (SCC):
+[blue heading, underlined by a full-width blue rule]
+
+- Occurs more often on the upper lid and the lateral canthus.
+  [「upper lid」 and 「lateral canthus」 highlighted yellow]
+- Lesions are characterized by the overproduction of **keratin** (keratosis) giving them a flaky
+  appearance.
+- Ulcers characteristically have **everted** edges.
+- **Modes of spread:**
+  - Locally via perineural infiltration into the orbit or even the cranial cavity.
+  - Lymphatic spread to locally draining lymph nodes.
+  - Hematogenous to distant organs.
+
+[Figure, lower right: close-up photograph of an upper lid carrying a raised keratotic irregular
+lesion with a flaky surface, distorting the lid margin.]
+*Squamous Cell Carcinoma*
+
+[Page number bottom-left: 215.]
+
+
+================================================================================
+## printed p.216  (PDF p.218)
+================================================================================
+
+[The SCC section continues from the previous page:]
+
+- Immunocompromised patients (**leukaemia** patients and patients who've had organ transplants and
+  are using systemic immunosuppressants) are liable to more aggressive SCC.
+
+- **Treatment** by complete excision with a safety margin.
+- Metastatic lesions may require radiotherapy, chemotherapy, or immunotherapy.
+
+[Figure, top right: photograph of a large fungating ulcerated crusted mass destroying the upper
+lid and periorbital skin, the palpebral fissure barely visible beneath it.]
+[no caption]
+
+
+## 3. Sebaceous Carcinoma:
+[blue heading, underlined by a full-width blue rule]
+
+- Common in the elderly (7th and 8th decades).
+- More common in the **upper lid**.
+- It arises from the sebum-secreting glands of the eyelid (e.g., sebaceous glands and glands of
+  Zeiss located at the roots of the lashes)
+
+- It can present as:
+  - Chronic blepharitis
+  - Recurrent chalazion
+  - Chronic conjunctivitis
+- It is highly invasive and metastasises easily.
+
+[Figure, right: close-up photograph of a closed eye of an elderly patient with a firm rounded
+nodule in the upper lid, overlying skin intact and slightly reddened.]
+*Sebaceous Carcinoma*
+
+⟦SHADED BOX, centred header⟧
+                                   **N.B:**
+⇨ Any old patient with **recurrent chalazion** must have a **biopsy** to rule out the presence of
+  sebaceous carcinoma.
+⇨ Old patients with chronic unilateral **blepharitis** or **conjunctivitis** need to be properly
+  evaluated for the presence of sebaceous carcinoma.
+⟦/BOX⟧
+[「recurrent chalazion」 printed in dark red]
+
+
+## 4. Other less common malignancies:
+[blue heading, underlined by a full-width blue rule]
+
+- Kaposi sarcoma (see the HIV section in the eye and systemic diseases chapter)
+- Malignant melanoma.
+
+[That is the whole of section 4 — two bullets, no further text on either.]
+
+
+[Banner heading, grey band, centred:]
+
+# Retinoblastoma
+*(Please refer to paediatric ophthalmology chapter)*
+
+[That is the ENTIRE Retinoblastoma section — a banner heading and one italic cross-reference line.
+No content whatsoever is taught here.]
+
+
+[Banner heading, grey band, centred:]
+
+# Metastases from Extraocular Malignancies
+*(Please refer to the chapter on ocular manifestations of systemic diseases)*
+
+[That is the ENTIRE Metastases section — a banner heading and one italic cross-reference line.
+No content whatsoever is taught here.]
+
+[Page number bottom-left: 216.]
+
+
+================================================================================
+## printed p.217  (PDF p.219)
+================================================================================
+
+[Banner heading, grey band, centred:]
+
+# Choroidal melanoma
+
+- The **most common primary intraocular malignancy in adults**.   [printed in dark red]
+- It is more prevalent in fair-skinned individuals.
+- Choroidal melanoma represents more than **80%** of uveal tract tumours.
+- It can be symptomless and only detected by chance or it can induce visual symptoms if it lies
+  beneath the macula.
+- **Ophthalmoscopically**, it appears as a solitary elevated subretinal **grey-brown** dome-shaped
+  mass mostly located within 3 mm of the optic disc.
+
+- **Other signs include:**
+  - Exudative RD
+  - Rubeosis iridis
+  - Secondary glaucoma
+  - Cataract.
+
+- Distant metastasis (especially to the **liver**) is common.   [「liver」 printed in dark red]
+- Evaluation of the presence or absence of spread is mandatory before deciding on treatment.
+- **Treatment modalities include:**
+  - Radiotherapy
+  - Surgical excision of either the whole eyeball (enucleation) or only the tumour depending on
+    its size
+
+[Figure, right: two colour fundus photographs side by side. Left one shows a large pale
+grey-brown elevated mass occupying the posterior pole with the optic disc visible at its edge;
+right one shows a similar dome-shaped subretinal mass obscuring the disc.]
+[no caption]
+
+
+[Comparison table. ⚠️ The corner cell of the header row is BLANK in the original, and the first
+body row has no row label either — the two definition sentences sit opposite an empty label cell.]
+
+| | Retinoblastoma | Choroidal melanoma |
+|---|---|---|
+| | The most common primary intraocular malignancy in **children** | The most common primary intraocular malignancy in **adult** |
+| **Spread** | Direct spread intraocularly and extraocularly or hematogenous spread | Distant metastasis especially to **liver** is common |
+| **Treatment** | • Radiotherapy, chemotherapy combined with laser, cryopexy, and/or enucleation <br> • Screening of siblings/ offspring essential | • Radiotherapy <br> • Surgical excision of either the whole eyeball (enucleation) or only the tumor depending on its |
+
+⚠️ DEFECT IN THE SOURCE, verified at 300 dpi: the last cell ends mid-phrase — "…only the tumor
+depending on its". The word that completes it has overflowed out of the cell and is not printed.
+The prose above the table gives the full sentence: "…depending on its size". Transcribed as
+printed; the completion is noted here, not silently inserted.
+[「children」 and 「adult」 printed in dark red. "adult" is singular — the book's own wording.
+"tumor" here vs "tumour" in the prose above — the book's own inconsistency.]
+
+⟦BLUE-OUTLINED ROUNDED BOX, bottom left — THE CHAPTER'S ONLY TUTORIAL MARKER.
+First line is the centred blue word "Tutorial".⟧
+                              **Tutorial**
+    **Ultrasonography of choroidal melanoma:**
+
+    - Dome shaped
+    - High initial spike then low internal reflectivity
+    - Collar-stud or mushroom shaped appearance
+⟦/BOX⟧
+
+[Figures, right of the tutorial box: two stacked B-scan ultrasound images of the globe. The
+upper one is a combined B-scan with an A-scan trace beneath it, showing a high initial spike
+followed by low internal reflectivity, watermarked "©ECN". The lower one is a B-scan showing a
+mushroom / collar-stud shaped intraocular mass.]
+[no caption]
+
+[Page number bottom-left: 217.]
+
+================================================================================
+END OF CHAPTER 17. Chapter 18 (Ocular Trauma) opens on printed 218 / PDF 220.
+================================================================================
+
+
+--------------------------------------------------------------------------------
+WHAT THE OBJECTIVES PROMISED vs WHAT THE PAGES TEACH
+--------------------------------------------------------------------------------
+The objectives flowchart names five things. Two of them are promised and then NOT taught:
+
+- "most common"        → TAUGHT (the four-bullet "Intro to Ocular Malignancies" block).
+- "eyelid malignancies" → TAUGHT in full: BCC, SCC, sebaceous carcinoma, plus a two-bullet
+                          "other less common" (Kaposi sarcoma, malignant melanoma).
+- "Metastases"          → ⚠️ NOT TAUGHT. A banner heading and a one-line cross-reference to
+                          chapter 19. Zero content.
+- "choroidal melanoma"  → TAUGHT in full (one page).
+- Retinoblastoma        → ⚠️ NOT TAUGHT, and not in the objectives either, yet it gets a banner
+                          heading on printed 216 with a one-line cross-reference to chapter 16
+                          (Paediatric Ophthalmology). The ONLY retinoblastoma content in this
+                          chapter is the three-row comparison table on printed 217, which gives
+                          its epidemiology (commonest primary intraocular malignancy in
+                          children), spread and treatment — nothing else.
+
+DEPTH, stated plainly: this chapter is clinical-recognition level only.
+- NO genetics anywhere — no RB1, no chromosome 13, no hereditary/sporadic split, no
+  two-hit model, no "13q deletion". The only genetic-adjacent line in the chapter is
+  "Screening of siblings/ offspring essential" in the retinoblastoma treatment cell.
+- NO staging of anything — no TNM, no Reese-Ellsworth, no International Classification, no
+  COMS tumour-size categories.
+- NO work-up protocols — no EUA, no biopsy technique (except "must have a biopsy" for recurrent
+  chalazion), no systemic metastatic screen, no imaging protocol. Choroidal melanoma gets one
+  line: "Evaluation of the presence or absence of spread is mandatory before deciding on
+  treatment", plus the tutorial box's ultrasound signs.
+- NO histopathology — no Flexner-Wintersteiner rosettes, no spindle/epithelioid cell types,
+  no morphoeic/nodular BCC subtypes, no Mohs surgery, no pagetoid spread.
+- Treatment is named at modality level only ("complete excision with a safety margin",
+  "radiotherapy", "enucleation") with no indications, doses, or decision rules.

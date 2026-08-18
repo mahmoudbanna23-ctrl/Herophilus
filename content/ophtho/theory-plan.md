@@ -739,10 +739,13 @@ material in either; that would be reversing the decision by other means.
 
 | Ch | Title | Printed | pp | Weight | Cache words | Feeds |
 |---|---|---|---|---|---|---|
-| 1 | Examination of the Eye | 2–44 | 43 | 3 % | *reading* | `op-intro`, `op-vissym`, `op-ant` |
-| 4 | Lacrimal System | 62–69 | 8 | 3 % | 4,709 | `op-lac` |
-| 5 | Eyelids | 70–81 | 12 | **6.5 %** | 7,244 | `op-lid` |
-| 6 | Conjunctiva | 82–95 | 14 | **6.5 %** | 6,871 | `op-conj` |
+| 1 | Examination of the Eye | 2–44 | 43 | 3 % | 20,920 | `op-intro`, `op-vissym`, `op-ant` |
+| 3 | Orbit | 56–61 | 6 | 3 % | 2,401 | `op-appear` · overlaps `op-orbit` |
+| 4 | Lacrimal System | 62–69 | 8 | 3 % | 4,709 | ✅ `op-lac` (11 pp) |
+| 5 | Eyelids | 70–81 | 12 | **6.5 %** | 7,244 | ✅ `op-lid` (11 pp) |
+| 6 | Conjunctiva | 82–95 | 14 | **6.5 %** | 6,871 | ✅ `op-conj` (12 pp) |
+| 15 | Squint | 196–203 | 8 | 3 % | 4,906 | ✅ `op-squint` (11 pp) |
+| 17 | Malignancies of the Eye and its Adnexa | 214–217 | 4 | 1.5 % | 1,937 | `op-onc` |
 | 7 | Sclera | 96–102 | 7 | 3 % | 3,030 | ✅ `op-sclera` (7 pp) |
 | 10 | Uveal Tract | 130–141 | 12 | 3 % | 4,672 | ✅ `op-uvea` (10 pp) |
 | 14 | Neuro-ophthalmology | 178–195 | 18 | **10 %** | 8,819 | ✅ `op-neuro` 7 · `op-neuro-motil` 8 · `op-neuro-optic` 11 |
@@ -897,3 +900,95 @@ it, to be supplied and tagged.
 ### Two more self-contradictions, held not fixed
 **Tropicamide is 1 % on p.33 and 0.5 % on p.34.** **The cardinal positions are 6 in one place and 9
 in another** (`pup-8` writes six). Both recorded in place, cited to their pages.
+
+---
+
+## ✅ Book ch.3 (Orbit) and ch.17 (Malignancies) — READ 2026-08-18, ten pages, 4,338 cached words
+
+Caches: `content\ophtho\book\ch03-orbit.txt` (2,401 w) · `ch17-malignancies.txt` (1,937 w).
+Both boundaries confirmed by the one-page-past check and **neither moved** — PDF 64 is the ch.4
+opener, PDF 220 the ch.18 opener. No blank, filler or broken page in either chapter.
+
+### ⚠️⚠️ CH.17 PAYS ONE OF THE FOUR REGISTER ROWS WAITING ON IT — AND THE OTHER THREE FAIL FOR A REASON WORTH KNOWING
+
+Four §14.5 rows pointed at ch.17. It is four pages long, and **two of its five top-level headings
+are banner headings whose entire content is an italic pointer to another chapter.**
+
+| Row owed to `op-onc` | Verdict |
+|---|---|
+| **Lid malignancies** (from `op-lid`) | ✅ **PAYS IN FULL** — BCC, SCC and sebaceous carcinoma each with site, morphology, spread and treatment, plus the N.B. box on biopsying a recurrent chalazion. The chapter's substantial content. |
+| **Orbital tumours** (from `op-orbit-mass`) | ❌ **CANNOT PAY.** No orbital tumour section exists. The only orbit-facing lines are SCC spreading *"via perineural infiltration into the orbit"* and Kaposi by cross-reference. **Ch.3 is no better** — three bullets, no named tumour. |
+| **Metastases / lymphoma / leukaemia** (from `op-systemic`) | ❌ **CANNOT PAY.** The Metastases section is a banner and one italic line pointing at ch.19. Leukaemia appears once, as an SCC risk factor; lymphoma once, in ch.3. |
+| **Retinoblastoma** (from `op-cat` + `op-white`) | ⚠️ **PAYS ONLY THINLY** — a bare banner pointing at ch.16, plus a three-row RB-vs-choroidal-melanoma comparison table. Enough for the comparison, nowhere near a section. |
+
+**Bonus, unasked and unblocked: choroidal melanoma is paid in full** — one page plus an ultrasound
+tutorial box. Commonest adult primary intraocular tumour, fair-skinned, >80 % of uveal tumours,
+grey-brown dome-shaped subretinal mass within 3 mm of the disc, liver metastases.
+
+**Depth throughout ch.17 is clinical-recognition only.** Verified absent: **all genetics** (no RB1,
+no 13q, no two-hit, no hereditary/sporadic split — only *"screening of siblings/offspring
+essential"*), **all staging** (no TNM, no Reese–Ellsworth, no International Classification, no
+COMS), all work-up protocols, all histopathology (no Flexner–Wintersteiner rosettes, no
+spindle/epithelioid typing, no BCC subtypes, no Mohs). Treatment is named at modality level with no
+indications and no decision rules.
+
+### The rule this produced
+
+**A HEADING IN THIS BOOK IS NOT EVIDENCE THAT THE CHAPTER TEACHES THE TOPIC.** Two of ch.17's five
+headings are dead pointers. Before promising that a chapter can pay a register row, read its body —
+the objectives box and the heading list will both lie to you. This is the third source in the module
+to under-deliver its own stated scope, after `L20`'s "degenerations" and ch.5's "Malignancies".
+
+### Ch.3 — heavy overlap with `op-orbit`, and a real payload for `op-appear`
+
+The chapter is globe displacements, blow-out fracture, preseptal and orbital cellulitis and a 13-row
+comparison table — **exactly the `L10` territory `op-orbit` and `op-orbit-mass` were built on.**
+Its contribution is **numbers and specificity**, not new topics: Hertel normal **12–22 mm**,
+ceftriaxone + vancomycin + oral metronidazole for one week, **7–11 %** significant visual loss,
+**17–20 %** mortality untreated, the **tear-drop sign**, amoxicillin-clavulanate for preseptal, and
+the *"treat as orbital cellulitis if ≤1 year old"* rule. `op-orbit-mass` gains almost nothing —
+orbital tumours are three bullets, and **the chapter prints no orbital anatomy at all**: no walls,
+no foramina, no apex.
+
+**What `op-appear` actually gets, and it is the right shape for that chapter** — clustered on p.57:
+
+- **Pseudo-exophthalmos must be excluded**: lid retraction · contralateral ptosis · large globe in
+  high myopia, each photographed. An appearance-differential, not an orbit fact.
+- **The exophthalmos-vs-proptosis terminology split** — endocrine vs other aetiologies. An
+  appearance term that means two different things.
+- **Measuring appearance**: ruler or Hertel exophthalmometer, cornea tip to lateral orbital margin
+  plane, normal **12–22 mm**.
+- **Enophthalmos** and its three causes (fat atrophy — post-traumatic or senile · cicatrising tumour
+  metastasis · blow-out fracture), plus the trap that **a blow-out gives early proptosis and later
+  enophthalmos**.
+- **Pulsating exophthalmos = carotid-cavernous fistula.**
+- ⚠️ **Cosmesis is absent from the chapter**: no decompression, no oculoplastic or orbital surgery,
+  no management of appearance anywhere.
+
+### Six Tutorial markers, three physical forms — and a NEW house-style device
+
+Ch.3 carries five, ch.17 one. Forms: a thin rectangular box beside a heading · an inline blue
+parenthetical inside a bullet (`History of trauma (or surgery .. Tutorial)`) · a shaded or
+blue-outlined panel whose first line is the centred blue word **Tutorial**. **No `(T)` abbreviation
+appeared in either chapter** — only the full word.
+
+**⚠️ STAR-GLYPH IMPORTANCE RATINGS — a device this project did not know existed.** Printed 58 prints
+`"Blow-out" fracture : ☆☆☆`. That is a **sub-chapter-level exam-weight signal**, finer-grained than
+the contents page's per-chapter percentages, and it is a planning input. **Grep every cache for `☆`.**
+
+### Two source defects, recorded not fixed
+
+- **Printed 217, verified at 300 dpi:** the comparison table's last cell ends mid-phrase — *"only
+  the tumor depending on its"* — the completing word has overflowed the cell and is not printed. The
+  prose above supplies *"size"*. Transcribed as printed, with the completion noted separately.
+- **Ch.17's objectives flowchart and its body disagree**: "Metastases" is promised and delivers
+  nothing; "Retinoblastoma" is not promised yet gets a heading. Both are dead pointers.
+
+### What this means for `op-onc`
+
+`op-onc` can now be written on **lid malignancies + choroidal melanoma**, both paid in full, with
+the RB comparison table. **Retinoblastoma proper lives in ch.16 (Paediatric Ophthalmology, printed
+204–213) and metastases in ch.19 (printed 236–253)** — both being read now, targeted at the tumour
+content only. ⚠️ Note that **ch.16 is one of the three chapters the user ruled must not become app
+chapters** — reading it for content that feeds the existing `op-onc` is consistent with both
+rulings: *scope comes from the lecture series, the book is the authority on content.*

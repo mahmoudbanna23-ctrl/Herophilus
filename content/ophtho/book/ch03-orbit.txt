@@ -1,0 +1,386 @@
+OPHTHALMOLOGY WITH TUTORIALS — HEALIX TEAM
+Chapter 3 — The Orbit
+Printed pp. 56–61  (PDF pp. 58–63)
+Source: Semester 8\Opthalmo\Theoritical\Books\ophthalmology.pdf  (image-only scan; PDF page = printed page + 2)
+Transcribed 2026-08-18 from 150 dpi renders, one page at a time. Every page of the chapter was read.
+
+BOUNDARY CHECK: PDF p.64 (printed 62) was rendered as the one-page-past check. It is the
+chapter 4 "Lacrimal System" opener (blue title, decorative image, OBJECTIVES flowchart:
+Tear Film / Dry eye / Epiphora / Dacryocystitis / Dacryoadenitis). So chapter 3 really does
+end at printed 61 / PDF 63 — the boundary did NOT move in either direction.
+
+FIGURE NUMBERING: this chapter DOES number its figures — Fig (3-1) through Fig (3-5), written
+with the number in parentheses. Some images carry a plain unnumbered caption instead
+("Exophthalmos", "High myopia", "ipsilateral Lid retraction"). Both styles coexist on the same page.
+
+TUTORIAL MARKERS in this chapter (four, in three different physical forms) — see each in place below:
+  1. printed 58 — a boxed note at the top of the page, right of the "Aetiology:" heading:
+     "Idiopathic orbital inflammatory disease (another cause from tutorial)"
+  2. printed 58 — an inline parenthetical inside a bullet: "History of trauma (or surgery .. Tutorial)"
+  3. printed 59 — a shaded panel whose first line is the centred word "Tutorial", then a heading
+     and bullets ("CT scan of the orbit (coronal section)")
+  4. printed 59 — an inline parenthetical inside a numbered item: "Prophylactic antibiotics (systemic Abs.. tutorial)"
+  5. printed 61 — a rounded box whose first line is the centred word "Tutorial", then one line
+     ("Ix for orbital cellulitis: CT scan of orbits & sinuses")
+(That is five occurrences in total across three forms: boxed panel headed "Tutorial", inline
+parenthetical, and a boxed note ending "(another cause from tutorial)".)
+
+
+================================================================================
+## printed p.56  (PDF p.58)
+================================================================================
+
+[Chapter opener. Thin double blue rule across the top, eye glyph top-right.]
+
+# The Orbit
+[blue, underlined, serif — the opener's wording matches the contents page's "Orbit" apart from the article]
+
+[Decorative image: an anatomical illustration of a globe sitting in the bony orbit, the orbital
+rim and part of the maxilla in bone colour, two extraocular muscle bellies (pink) crossing the
+globe superiorly and inferiorly, against a blue background.]
+
+OBJECTIVES
+
+[Flowchart of blue rounded boxes:]
+
+                              Orbit
+        ┌───────────────────────┼───────────────────────┐
+  Globe displacements    Preseptal cellulitis     Orbital cellulitis
+        │
+        ├── Exophthalmos
+        └── Enophthalmos
+
+[As a list:]
+- Orbit
+  - Globe displacements
+    - Exophthalmos
+    - Enophthalmos
+  - Preseptal cellulitis
+  - Orbital cellulitis
+
+[Rest of the page is blank. Page number bottom-left: 56.]
+
+
+================================================================================
+## printed p.57  (PDF p.59)
+================================================================================
+
+[Banner heading, grey band, centred:]
+
+# Globe Displacements
+
+Diseases of the orbit can lead to changes in the volume of orbital soft tissues or integrity of
+the orbital walls resulting in globe displacement.
+
+**These include:**
+
+1. Exophthalmos / Proptosis
+2. Enophthalmos
+
+
+[Banner heading, grey band, centred:]
+
+# 1. Exophthalmos (Proptosis)
+
+**Definition:**
+
+**Anterior displacement** (forward protrusion) of the globe (measured by a **ruler or by Hertel
+exophthalmometer**).
+
+- The measurement represents the distance between the tip of the cornea and the plane of the
+  lateral orbital margin.
+- Normal values range from **12 mm to 22 mm**.
+- **Exophthalmos** generally refers to an **endocrine aetiology** (Thyroid eye disease)
+- **Proptosis** generally refers to **other aetiologies** (e.g., orbital mass, orbital , inflammation ,etc)
+  [the comma placement is the book's own — "orbital , inflammation ,etc"]
+
+[Figure, left: a young woman's face, front view, both eyes proptosed, with three printed labels
+drawn onto the picture — "Bulging eyes" (arrow to the globes), "Eyelids retract" (arrow to the
+upper lids), "Redness" (arrow to the conjunctiva).]
+Fig (3-1) Exophthalmos
+
+[Figure, right: close-up photograph of both eyes of an adult, marked unilateral forward
+protrusion of one globe with widened palpebral fissure.]
+Fig (3-2) Proptosis
+
+**Note: Pseudo-exophthalmos :** (must be ruled out)
+It is due to:
+- Lid retraction
+- Contralateral ptosis
+- The large globe in high myopia
+
+[Figure, left of pair: two head photographs of the same woman side by side, one without and one
+with spectacles (thick lenses).]
+High myopia
+
+[Figure, right of pair: close-up of both eyes, one showing an obviously widened palpebral fissure
+with sclera visible above the limbus.]
+ipsilateral Lid retraction
+
+**General Investigations:**
+1. CT/MRI of the head and/or orbits.
+2. Ultrasound of the orbits.
+3. Thyroid function tests.
+
+[Page number bottom-left: 57.]
+[Note: a faint mirrored ghost of the next page's boxed tutorial note shows through the paper
+inside the grey heading band. It is show-through, not printed content.]
+
+
+================================================================================
+## printed p.58  (PDF p.60)
+================================================================================
+
+**Aetiology:**
+
+⟦BOXED NOTE, top of page, to the right of the "Aetiology:" heading, blue text in a thin rectangle⟧
+    Idiopathic orbital inflammatory disease **(another cause from tutorial)**
+⟦/BOX — TUTORIAL MARKER 1⟧
+
+1) **Graves' disease:** (refer to eye and systemic diseases chapter)
+   - Unilateral or bilateral
+   - Most common cause in adults          [「adults」 highlighted yellow]
+2) **Orbital cellulitis**
+   - Unilateral
+   - Most Common  Cause in children       [「children」 highlighted yellow]
+3) **Orbital tumours**
+   - Gradual onset
+   - Usually, unilateral (but can be bilateral in lymphoma)
+   - With or without associated systemic disease e.g., neurofibromatosis
+4) **Orbital/ Retrobulbar haemorrhage:** (refer to ocular trauma chapter)
+   - Acute onset
+   - History of trauma (or surgery .. Tutorial)      ⟵ TUTORIAL MARKER 2 (inline, blue text)
+   - Ophthalmic emergency due to markedly raised IOP with risk of CRAO
+5) **Cavernous sinus thrombosis**
+   - Life-threatening ophthalmic and neurological emergency   [「emergency」 highlighted pink]
+   - Results as a complication of orbital cellulitis leading to bilateral orbital symptoms
+6) **Carotid-Cavernous fistula:** (Pulsating exophthalmos)
+
+[Figure, right of the aetiology list: close-up photograph of both eyes of a dark-skinned adult
+with marked bilateral proptosis, sclera visible all round the limbus.]
+Exophthalmos          [unnumbered caption]
+
+
+[Banner heading, grey band, centred:]
+
+# 2. Enophthalmos
+
+**Definition**: **Posterior** [Backward] displacement of the globe
+**Investigations**: CT/MRI of the orbits
+
+**Aetiology:**
+1. Orbital fat atrophy ( post- traumatic or in old age)
+2. Cicatrising tumour metastasis
+3. **"Blow-out" fracture :**   ☆☆☆   [three star glyphs printed after the heading]
+
+| | |
+|---|---|
+| Caused by: | a sudden increase in the orbital pressure from an impacting object that is greater in diameter than the orbital aperture (fist , tennis ball) causing the eye ball to be displaced |
+| Fractured bone: | • The fracture most frequently involves **the floor of the orbit** along the thin bone covering the infraorbital canal. Sometimes, **the medial orbital wall** may also be fractured. <br> • Those thin walls of the orbit separate the orbital cavity from the surrounding nasal sinuses. |
+| Clinical picture | 1. **Infection** can spread from the nasal sinuses to the orbit with nose blowing <br> 2. Patients suffer from **early proptosis** due to oedema, emphysema, and haematoma but later can develop **enophthalmos**. <br> 3. **Large** fractures resulting in globe displacement <br> 4. **Small** fractures causing : muscle entrapment and limitation of ocular motility with double vision require surgical intervention. |
+| Can be associated with: | Severe eye injury e.g., globe lacerations, corneal abrasion, lens dislocation, retinal tear, or traumatic optic neuropathy. (Refer to trauma chapter) |
+
+[「the floor of the orbit」 is highlighted yellow in the second row.]
+[The table has no header row — the left column carries the row labels and the corner cell is absent.]
+
+[Page number bottom-left: 58.]
+
+
+================================================================================
+## printed p.59  (PDF p.61)
+================================================================================
+
+**Diagnosis of blow-out fracture :**
+
+- Visual acuity and pupillary size and reaction should be recorded and monitored.
+- **Periocular signs:**
+  Ecchymosis, oedema, and subcutaneous emphysema.
+- **Infraorbital nerve anaesthesia:**
+  Involving the lower lid, cheek, side of the nose, upper lip, upper teeth and gums if the
+  fracture involves the infraorbital canal.
+- **Diplopia due to:**
+  1. Haemorrhage and oedema in the orbit with restriction to movement of the globe.
+     Ocular motility usually improves as the haemorrhage and oedema resolve.
+  2. Mechanical entrapment within the fracture of the **inferior oblique or inferior rectus muscles**,
+     or adjacent connective tissue and fat.
+     Diplopia occurs in **both upgaze and downgaze.**
+     [「inferior oblique or inferior rectus muscles」 highlighted yellow]
+  3. Direct injury to an extraocular muscle
+- Enophthalmos (severe cases)
+- Ocular damage
+
+⟦SHADED PANEL⟧
+**CT scan** of the orbit (coronal section) is important to diagnose floor fractures and tissue
+(inferior oblique muscle) entrapment.
+⟦/PANEL⟧
+
+⟦SHADED PANEL — TUTORIAL MARKER 3. First line is the centred blue word "Tutorial".⟧
+                              **Tutorial**
+
+    **CT scan of the orbit (coronal section)**
+
+    - Fracture of the orbital floor ± other orbital wall
+    - Tissue entrapment within the fracture (Tear drop sign)     [「Tear drop sign」 highlighted yellow]
+    - ± Surgical emphysema
+⟦/PANEL⟧
+
+**Management:**
+1. Patients should be advised to avoid blowing the nose.
+2. Prophylactic antibiotics (systemic Abs.. **tutorial**)     ⟵ TUTORIAL MARKER 4 (inline, blue text)
+3. **Surgical repair** will be required in case of:
+   - muscle entrapment causing diplopia
+   - or large fractures causing marked enophthalmos
+
+[Figure, upper right: close-up photograph of both eyes of an adult; the affected side shows
+periorbital ecchymosis and a limited upward excursion.]
+[no caption]
+
+[Figures, middle right: three clinical photographs of the same patient in different gaze
+positions — up-gaze (showing failure of elevation of the affected eye), primary position, and
+another up-gaze view — demonstrating restricted motility with lid swelling and bruising.]
+[no caption]
+
+[Figure, lower right: coronal CT of the orbits, bone window, showing a defect in one orbital
+floor with soft tissue herniating into the maxillary sinus.]
+Fig (3-3)
+CT scan showing Blow out fracture of orbital floor
+
+[Figure, bottom right: a second coronal CT of the orbits, bone window, wider view including
+both orbits and the nasal cavity/sinuses.]
+[no caption]
+
+[Page number bottom-left: 59.]
+
+
+================================================================================
+## printed p.60  (PDF p.62)
+================================================================================
+
+[Banner heading, grey band, centred:]
+
+# Preseptal Cellulitis
+
+**Definition:**
+Infection of soft tissue **anterior** to the orbital septum     [「anterior」 highlighted yellow]
+
+**Aetiology:**
+1. Usually  follows **periorbital trauma** or **dermal infection.**
+2. Suspect H. Influenzae in children; S. Aureus or Streptococcus in adults.
+   [capitalisation is the book's own — "H. Influenzae", "S. Aureus"]
+
+**Treatment**:
+1. Systemic antibiotics e.g., **(amoxicillin-clavulanic acid.)**
+2. If severe or in a child aged one year or less, treat as orbital cellulitis
+
+[Figure, upper right: two clinical photographs — a child with marked unilateral lid swelling and
+closure of the palpebral fissure; below it, the same or a similar child with the lid everted /
+lifted showing a quiet white globe underneath.]
+Fig (3-4) preseptal cellulitis
+
+
+[Banner heading, grey band, centred:]
+
+# Orbital Cellulitis
+
+It is an OCULAR as well as a **MEDICAL EMERGENCY.**  [followed by a red flashing-siren glyph with "!"]
+
+**Definition**:
+Inflammation of orbital contents **posterior** to the orbital septum.   [「posterior」 highlighted yellow]
+
+[Figure, right: close-up photograph of a face with severe unilateral lid oedema, erythema and
+proptosis of the affected side.]
+Fig (3-5) Orbital cellulitis
+
+**Incidence**:
+Common in children, the elderly, and immunocompromised.
+
+**Aetiology:**
+- **Usually** secondary to sinus/ facial/ tooth infections or trauma.
+- Can also arise from preseptal cellulitis.
+
+**Treatment:**
+1. Hospital admission
+2. Blood cultures
+3. Orbital CT
+4. IV antibiotics **(ceftriaxone + vancomycin) + oral metronidazole** for 1 week
+5. Surgically drainage of abscess with close follow up especially in children.
+   [「Surgically drainage」 — the book's own wording, [sic]]
+
+[Figure, right of the treatment list: three stacked clinical photographs of patients with
+unilateral severe lid swelling, erythema and proptosis; in two the lid has been retracted to
+show a chemotic, injected globe.]
+[no caption]
+
+**Complications**:                                    | **Death:**  [with a skull-and-crossbones glyph]
+- 7-11% will suffer significant loss of vision.       |   o Orbital cellulitis is life-threatening if untreated.
+- Optic nerve inflammation (possible loss of vision)  |   o Mortality of 17-20% without antibiotic use.
+- Cavernous sinus thrombosis                          |   o Prompt diagnosis and treatment are essential
+- Meningitis                                          |
+- Brain abscess                                       |
+
+[The two blocks above are printed side by side as two columns at the foot of the page — the
+"Complications" bullet list on the left, the "Death" sub-list on the right.]
+
+[Page number bottom-left: 60.]
+
+
+================================================================================
+## printed p.61  (PDF p.63)
+================================================================================
+
+⟦ROUNDED BOX, top of page, centred — TUTORIAL MARKER 5. First line is the centred blue word "Tutorial".⟧
+                                  **Tutorial**
+    **Ix for orbital cellulitis:** CT scan of orbits & sinuses
+⟦/BOX⟧
+
+[Comparison table, filling the upper half of the page. The corner cell of the header row is NOT
+blank here — it reads "Clinical Features".]
+
+| Clinical Features | Preseptal Cellulitis | Orbital Cellulitis |
+|---|---|---|
+| 1. **Fever** | May be present | Present |
+| 2. **Lid oedema** | Moderate to severe | Severe |
+| 3. **Conjunctival injection** | Absent | Present |
+| 4. **Chemosis** | Absent | Marked |
+| 5. **Proptosis** | Absent | Present |
+| 6. **Pain on eye movement** | Absent | Present |
+| 7. **Ocular mobility** | Normal | Decreased |
+| 8. **Vision** | Normal | Diminished ± Diplopia |
+| 9. **RAPD** | Absent | In severe cases <br> (**Poor prognostic sign**) |
+| 10. **Leucocytosis** | Moderate | Marked |
+| 11. **ESR** | Elevated or normal | Elevated |
+| 12. **Additional findings** | Skin infection | Sinusitis, dental abscess |
+| **Site of involvement** | **Anterior** to orbital septum | **Posterior** to orbital septum |
+
+[The final row, "Site of involvement", is set apart — its label cell is shaded blue-grey and the
+row is not numbered. "(Poor prognostic sign)" is printed in dark red.]
+
+[The lower half of the page is blank — no figure, no text. This is a genuine end-of-chapter
+white space on an otherwise normal typeset page, NOT a filler leaf and NOT a broken graphic.]
+
+[Page number bottom-left: 61.]
+
+================================================================================
+END OF CHAPTER 3. Chapter 4 (Lacrimal System) opens on printed 62 / PDF 64.
+================================================================================
+
+
+--------------------------------------------------------------------------------
+WHAT THE OBJECTIVES PROMISED vs WHAT THE PAGES TEACH
+--------------------------------------------------------------------------------
+The objectives flowchart names exactly four things — globe displacements (exophthalmos,
+enophthalmos), preseptal cellulitis, orbital cellulitis. All four are taught. Nothing promised
+is missing.
+
+But note what the chapter does NOT contain, because a reader expecting an orbit chapter will
+look for it:
+- No orbital anatomy at all — no walls, no foramina, no apex, no septum anatomy beyond the
+  bare phrase "anterior/posterior to the orbital septum".
+- No orbital tumours section. "Orbital tumours" appears only as aetiology item 3 of
+  exophthalmos, three bullets long (gradual onset, usually unilateral, ± systemic disease).
+  No named tumour, no imaging appearance, no management.
+- No thyroid eye disease detail — deferred: "(refer to eye and systemic diseases chapter)".
+- No retrobulbar haemorrhage detail — deferred: "(refer to ocular trauma chapter)".
+- No cavernous sinus thrombosis detail beyond two bullets.
+- No carotid-cavernous fistula detail beyond the parenthesis "(Pulsating exophthalmos)".
+- No orbital surgery, no decompression, no cosmetic/appearance management of proptosis.
