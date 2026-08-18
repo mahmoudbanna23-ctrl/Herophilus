@@ -191,9 +191,8 @@ there before resuming a paused stream. Where this file and the archive disagree,
   gitignored. Push method: `ledger.md` §13. **Stage only your own paths — never
   `git add -A`**; `index.lock` means another chat is mid-commit.
 - **Measure, then believe**: check the sum, check the auditor, reconcile written + folded =
-  printed; a counter that does not move is a finding. **Never write a cross-referenced page
-  number or lecture filename from memory** (7/7 and 3/3 wrong) — read the entry's own
-  `source`, list the directory.
+  printed; a counter that does not move is a finding. **Never write a cross-referenced page number
+  or lecture filename from memory** (7/7 and 3/3 wrong) — read the `source`, list the directory.
 - Cleanup awaiting approval (nothing without a yes): 173 MB ophtho zip, two Peds PPT stubs,
   `files.zip`.
 
