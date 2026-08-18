@@ -1,17 +1,80 @@
 SOURCE: Semester 8\Neuro\Theoritical\PPT\L17) Psychopharmacology.pdf
+PAGES: 31 (31 slides, landscape, 720 x 540 pts)
+TRANSCRIBED: 2026-08-18, by visual read of all 31 pages rendered at 150 dpi (300-600 dpi
+  zooms on slides 14, 18, 21). Replaces the previous 239-word text-layer stub.
 
-          By
-  Sara ahmed harby
+EXTRACTION DIAGNOSIS
+  This is a PICTURE DECK, not a scan and not vector-outlined text. Fonts are embedded and
+  real (Calibri, Calibri-Bold, Calibri-BoldItalic, ArialMT) and every character they carry
+  extracts cleanly. The deck yields only 239 words because 19 of 31 pages carry NO font at
+  all — their entire content is a pasted raster screenshot — and 6 more carry only a short
+  title. Real, extractable PowerPoint text exists on just 6 slides (5, 12, 17, 22, 26, 30).
+  Everything else below was read off the images.
+  Pages with zero embedded fonts (pure raster): 2, 6, 7, 8, 9, 10, 16, 18, 19, 21, 23, 24,
+  25, 28, 29, 31.
+  Pages with fonts but <=25 extractable characters (title only): 1, 3, 11, 13, 14, 15, 20.
+  Pages 4, 5, 12, 17, 22, 26, 27, 30 carry real body text.
+
+DECK-WIDE NOTE ON DOSES
+  ** THE DECK PRINTS NO DOSE, NO UNIT, NO ROUTE AND NO FREQUENCY FOR ANY DRUG. ** Not one
+  mg figure, serum level, titration schedule or dosing interval appears anywhere in the 31
+  slides. The only quantitative statement in the whole lecture is the benzodiazepine
+  duration limit on slide 27 ("must NOT be used more than ONE month").
+
+---
+
+## slide 1
+
+[Image: a paper file on a desk with a stethoscope and paperclip, the paper printed
+"PSYCHIATRIC TREATMENT".]
+
+By
+Sara ahmed harby
 Lecturer of psychiatry
 Alexandria university
-        2026
-Psychopharmacology
-• Antidepressants
-• Antipsychotics
-• Mood stabilizers
-• Benzodiazepines
-• Indications: can be used alone or in combination
-  with other medications for treating:
+2026
+
+## slide 2
+
+PICTURE-ONLY SLIDE — no slide text of any kind, four pasted images, no captions written by
+the lecturer. The four images (reading order top-left, top-right, bottom-left,
+bottom-right):
+
+1. [Vector illustration of two people in armchairs facing each other with thought bubbles —
+   one bubble tidy, one a tangle. Lettering inside the image: "PSYCHO THERAPY". Watermark
+   "VectorStock" / "VectorStock.com/22915818".]
+2. [Photograph: a hand holding capsules beside an anatomical brain model, loose pills and a
+   pill bottle on the table, a glass of water at left.]
+3. [Two-panel diagram, captions inside the image: "Transcranial Magnetic Stimulation
+   (TMS)" — a head wearing a coil apparatus; and "Electroconvulsive Therapy (ECT)" — a head
+   with bilateral electrodes wired to a machine.]
+4. [Photograph: gloved clinician's hands holding a patient's wrist/hand, theatre scrubs.]
+
+[Read in context this is the "modalities of psychiatric treatment" slide — psychotherapy,
+pharmacotherapy, neurostimulation, and a fourth modality the lecturer did not label.]
+
+## slide 3
+
+# Psychopharmacology
+
+[Image: same photograph as slide 2 panel 2 — hand holding capsules beside an anatomical
+brain model with loose pills and a pill bottle.]
+
+## slide 4
+
+The lecture's contents list. No heading printed above it.
+
+- Antidepressants
+- Antipsychotics
+- Mood stabilizers
+- Benzodiazepines
+
+## slide 5 — ANTIDEPRESSANTS: indications
+
+[Image: a blue-and-red capsule lettered "ANTIDEPRESSANT".]
+
+- Indications: can be used alone or in combination with other medications for treating:
+
   1) Major depressive disorder
   2) Dysthymia
   3) Anxiety disorders, obsessive compulsive disorder
@@ -21,56 +84,489 @@ Alexandria university
   7) Attention-deficit hyperactivity disorder (ADHD).
   8) Addiction
   9) Sleep disorders.
-SNRI side effects
-NDRI: insomnia, decrease appetite, risk of
-seizures. Usually NO sexual dysfunctions
 
-NaSSAs: sedation & increase appetite and
-weight. Usually NO sexual dysfunctions
-special considerations
-special considerations
-special considerations
-Indications:
-1)Schizophrenia
-2)Schizoaffective disorder
-3)Bipolar disorder
-4)Psychotic depression
-5)Treatment-resistant (and not necessarily
-psychotic) major depression as an adjunct to
-standard antidepressant therapy.
-6)Others: as treatment of tics and chorea.
-Atypical antipsychotics()
-• Indications:
-1) Bipolar disorder
-2) Recurrent major depressive disorder
-3) Borderline personality disorder
-4) Schizoaffective disorder
-• Sodium valproate:
-Stomach irritation, weight gain, tremors, menstrual irregularities and
-polycystic ovary.
-Liver function and CBC should be monitored.
-It is Contraindicated in pregnancy & lactation
+## slide 6 — types of antidepressants
 
-• Lamotrigine:
-Monitoring for Stevens–Johnson syndrome “a very rare but potentially
-fatal skin condition” is highly important.
+Full-slide pasted infographic, no lecturer text. Text printed inside the image:
 
-• Carbamazepine:
-CBC should be monitored, as it can lower white blood cell count.
-Indications: (must NOT be used more than ONE
-month)
-1.Panic disorder
-2.Generalized anxiety disorder.
-3.Insomnia.
-4.Seizures
-5.Alcohol withdrawal.
-• Adverse Effects:
-1.Amnesia
-2.Respiratory depression
-3.Drowsiness
-4.Hypotension
-5.Disinhibition especially in elderly
-6.Paradoxical effect: increased anxiety, aggressio
-  n, impulsivity and irritability
-7.Tolerance and dependence.
-
+**Types of Antidepressants**
+
+| # | Class |
+|---|---|
+| 1 | Tricyclic Antidepressants (TCAs) |
+| 2 | Selective Serotonin Reuptake Inhibitors (SSRIs) |
+| 3 | Serotonin-Norepinephrine Reuptake Inhibitors (SNRIs) |
+| 4 | Monoamine Oxidase Inhibitors (MAOIs) |
+| 5 | Atypical Antidepressants |
+
+[Source watermark inside the image: "Clarity Clinic". Decorative pill bottle marked "Rx".]
+
+## slide 7 — SSRI mechanism
+
+Full-slide pasted diagram, no lecturer text. A serotonergic neuron with SSRI capsules
+blocking SERT at the somatodendritic end (each marked with a red "no entry" symbol), 5HT
+molecules accumulating around the dendrites, and a red ellipse highlighting increased 5HT
+release at the axon terminal onto postsynaptic receptors.
+
+Legend printed inside the image:
+- 5HT1A autoreceptor
+- 5HT postsynaptic receptor
+- SERT
+- SSRI
+
+Caption printed inside the image:
+"The downregulation of the autoreceptors causes the neuron to release more 5HT at the axon"
+
+## slide 8 — TCA mechanism (1 of 2)
+
+Full-slide pasted diagram, no lecturer text.
+
+Title inside the image: **MECHANISM OF ACTION OF TRICYCLIC ANTIDEPRESSANTS**
+
+Boxed text inside the image:
+"TCAs inhibit the reuptake of serotonin and noradrenaline by binding to the SERT and NAT
+transporters, increasing the levels of these neurotransmitters in the synaptic cleft."
+
+Labels inside the image: "5HT Neuron", "SERT", "NA neuron", "NAT".
+[Watermark inside the image: "psych scene — EXCELLENCE IN PSYCHIATRY".]
+
+## slide 9 — TCA mechanism (2 of 2)
+
+Full-slide pasted diagram, no lecturer text.
+
+Title inside the image: **MECHANISM OF ACTION OF TRICYCLIC ANTIDEPRESSANTS**
+
+Left half — a synapse. Labels: "Presynaptic neuron", "TCA", "SERT", "Serotonin (5-HT)",
+"SERT", "NET", "Synaptic cleft", "NE", "P", "Serotonin", "Postsynaptic neuron",
+"Synaptic cleft".
+
+Right half — the receptor consequences, printed as a bracketed list:
+- "Blockade of serotonin and norepinephrine reuptake"
+- "Muscarinic receptor"
+- "H1 receptor" [printed with subscript 1]
+- "Blockade of other receptors"
+- "Alpha receptor"
+- "Orthostatic hypotension"
+
+[Watermark inside the image: "PHARMACY FREAK".]
+
+## slide 10 — SSRI side effects
+
+Full-slide pasted image, no lecturer text. Text printed inside the image:
+
+**SSRI SIDE EFFECTS:** (the four S's)
+- **S**erotonin syndrome
+- **S**uicidal thoughts
+- **S**exual dysfunction
+- **S**tomach upset
+
+[Watermark inside the image: "OSMOSIS.org".]
+
+## slide 11 — SNRI side effects
+
+# SNRI side effects
+
+TITLE-ONLY SLIDE for text purposes — the four side effects are conveyed as unlabelled
+photographs, none of them captioned. The four images (reading order):
+
+1. [Photograph: a woman pressing both temples, a red glow over the forehead.]
+2. [Photograph: a blood-pressure cuff and aneroid sphygmomanometer being used on an arm.]
+3. [Vector illustration: a man and a woman sitting back to back in front of a cracked
+   heart. Watermark "TALK TO ANGEL".]
+4. [Cartoon of an unhappy stomach with a downturned mouth. Watermark
+   "shutterstock.com - 2480946465".]
+
+[The deck names no SNRI side effect in words on this slide.]
+
+## slide 12 — NDRI and NaSSA side effects
+
+NDRI: insomnia, decrease appetite, risk of seizures. *Usually NO sexual dysfunctions*
+
+NaSSAs: sedation & increase appetite and weight. *Usually NO sexual dysfunctions*
+
+[Both "Usually NO sexual dysfunctions" clauses are printed in red on the slide; the rest is
+black. Only the class abbreviations are given — the deck names no NDRI or NaSSA agent.]
+
+## slide 13 — special considerations: serotonin syndrome
+
+# special considerations
+
+Full-width pasted image below the title. Text printed inside the image:
+
+**Serotonin Syndrome Symptoms**
+- Headaches
+- Nausea and diarrhea
+- Tremors or muscle spasms
+- Rapid heart rate
+- High blood pressure
+- Disorientation or Hallucinations
+- Intense anxiety
+- High fever
+- Seizures
+- Coma
+- Death
+
+[The image also shows scattered pink-and-white capsules and the serotonin structural
+formula, drawn with an "HO-" phenol and an "-NH2" side chain.]
+
+## slide 14 — special considerations: SSRI discontinuation syndrome
+
+# special considerations
+
+Full-width pasted image below the title — a hub-and-spoke figure. Hub:
+
+**Primary SSRI discontinuation syndrome**
+
+Six spokes, reproduced as printed:
+
+| Group | Symptoms printed |
+|---|---|
+| **Sensory symptoms** | Paraesthesia · Numbness · Electric-shock-like sensations · Rushing noise 'in head' · Palinopsia (visual trails) |
+| **Disequilibrium** | Light-headedness · Dizziness · Vertigo |
+| **General somatic symptoms** | Lethargy · Headache · Tremor · Sweating · Anorexia |
+| **Affective symptoms** | Irritability · Anxiety/agitation · Low mood · [illegible — see note] |
+| **Gastrointestinal symptoms** | Nausea · Vomiting · Diarrhoea |
+| **Sleep disturbance** | Insomnia · Nightmares · Excessive dreaming |
+
+⚠ ILLEGIBLE: the FOURTH entry of the Affective symptoms box is obscured. The screenshot the
+lecturer pasted was taken with a Google Translate floating button on screen; the white
+button (Arabic "ترجمة" = "translate") sits over the last line. Only the final three letters
+"...ess" survive, and the tail of "Low mood" above it is clipped. Re-rendered at 600 dpi to
+confirm — the obstruction is baked into the raster, so the word cannot be recovered from
+this file. NOT INFERRED.
+
+## slide 15 — special considerations: pregnancy
+
+# special considerations
+
+[Photograph: a woman holding out a positive pregnancy test.]
+
+No other text on the slide. The deck states no drug, no trimester rule and no
+recommendation here — the point was made verbally.
+
+## slide 16
+
+PICTURE-ONLY SLIDE — no text of any kind, two pasted images side by side:
+
+1. [Black-and-white image of a hangman's noose, its lower coil dissolving into a flock of
+   birds flying away.]
+2. [Photograph on a magenta background: a young woman with her hands over her ears,
+   eyes shut, mouth open in a scream.]
+
+[Follows the pregnancy slide in the "special considerations" run. The deck does not caption
+either image. Its intended point (suicidality? switch to mania? agitation?) is not
+recoverable from the file.]
+
+## slide 17 — ANTIPSYCHOTICS: indications
+
+[Image banner: a mass of coloured tablets and capsules, lettered "PSYCHIATRY /
+ANTIPSYCHOTIC DRUGS".]
+
+Indications:
+
+1) Schizophrenia
+2) Schizoaffective disorder
+3) Bipolar disorder
+4) Psychotic depression
+5) Treatment-resistant (and not necessarily psychotic) major depression as an adjunct to
+   standard antidepressant therapy.
+6) Others: as treatment of tics and chorea.
+
+## slide 18 — antipsychotic classification table
+
+Full-slide pasted photocopy of a printed table, no lecturer text. Reproduced as printed:
+
+| Category | | Mechanism of Action | Common Drug (Generic) | Generation |
+|---|---|---|---|---|
+| **Typical Antipsychotic – Dopamine Antagonist** | | Block dopamine receptors in all parts of the brain. | Chlorpromazine, Haloperidol, Pimozide Fluphenazine, Trifluoperazine. | Old |
+| **Atypical Antipsychotic** | Dopamine and Serotonin Antagonist | Blocks dopamine and serotonin receptors in the brain. | Amisulpiride, Clozapine, Olanzapine, Sertindole, Zotepine, Quetiapine | New |
+| **Atypical Antipsychotic** | Partial Dopamine Antagonist | Only blocks a portion of dopamine receptors and also blocks serotonin receptors. | Aripiprazole | New |
+
+(In the original, "Atypical Antipsychotic" is a single vertically-set cell spanning the
+last two rows.)
+
+⚠ ILLEGIBLE / TRUNCATED: a FURTHER TABLE ROW exists below "Aripiprazole / New" and is cut
+off by the crop of the pasted screenshot. At 600 dpi only the topmost pixel-tips of its
+letters survive — enough to prove a row of text is there, in all four columns, and not
+enough to read a single word of it. The deck therefore delivers an INCOMPLETE table. NOT
+INFERRED.
+
+## slide 19 — dopamine pathways
+
+Full-slide pasted image, no lecturer text. Text printed inside the image:
+
+**Dopamine Pathways Relevant to Schizophrenia Symptoms**
+
+| Left panel (blue) | Right panel (red) |
+|---|---|
+| Overactivity of the mesolimbic pathway | Mesocortical pathway dysfunction |
+| → Positive symptoms | → Negative and cognitive symptoms |
+
+[Anatomical labels inside the image: left panel "NA" and "VTA"; right panel "Cortex" and
+"VTA". Watermark: "PSYCHOPHARMACOLOGY INSTITUTE".]
+
+## slide 20 — atypical antipsychotics
+
+# Atypical antipsychotics()
+
+[Printed exactly so, with an EMPTY pair of parentheses after the title — the lecturer left
+the bracket unfilled. [sic]]
+
+Two pasted panels below, numbered inside the images (panel "2" on the left of the slide,
+panel "1" on the right).
+
+Panel 1 (right of slide): labels "5HT neurons", "inactive glutamatergic pyramidal neuron",
+"5HT", "5HT1A receptor". A red circle highlights a 5HT terminal acting on a receptor.
+
+Panel 2 (left of slide): labels "5HT neurons", "activated DA neuron", "substantia nigra",
+"inactive GABA neuron", "raphe", "inactive glutamate neuron".
+
+[No explanatory caption is printed on either panel.]
+
+## slide 21 — first-generation antipsychotics and the four dopamine pathways
+
+Full-slide pasted whiteboard-style image, no lecturer text. Text printed inside the image:
+
+Heading: **1st generation (Typicals)** with a crosshair/target symbol labelled **D2**.
+
+Four boxed consequences, each linked by a dashed line to a pathway on a mid-sagittal head
+diagram:
+
+| Pathway (dashed label) | Box contents | Arrow |
+|---|---|---|
+| nigrostriatal | [cartoon of a trembling hand] | red arrow UP |
+| mesocortical | [cartoon of a slumped, withdrawn child sitting on a dark shape] | red arrow UP |
+| mesolimbic | [cartoon of a girl with spiral/hallucinating eyes] | green arrow DOWN |
+| tuberoinfundibular | [cartoon of a head and torso, labelled inside "Pituitary gland" and "Prolactin", with an arrow tracking prolactin down to the breast] | red arrow UP |
+
+[The arrows are the image's only statement of direction; the deck writes no words for these
+four effects. A hand with a pen is drawn at the right of the image (whiteboard-animation
+still).]
+
+## slide 22 — MOOD STABILIZERS: indications
+
+[Image banner: a yellow-red capsule, a cream tablet and a blue tablet, lettered
+"MOOD STABILIZERS".]
+
+- Indications:
+
+  1) Bipolar disorder
+  2) Recurrent major depressive disorder
+  3) Borderline personality disorder
+  4) Schizoaffective disorder
+
+⚠ The bullet line "• Indications:" is present in the slide's text layer but is COVERED ON
+SCREEN by the MOOD STABILIZERS banner image, which is stacked on top of it. It does not
+appear when the slide is viewed or printed. Recovered here from the text layer.
+
+## slide 23 — mood stabilizer agents
+
+Full-slide pasted image, no lecturer text. Text printed inside the image:
+
+**Mood Stabilizers For Bipolar Disorder**
+
+| Group | Agents printed |
+|---|---|
+| (ungrouped, top) | Lithium |
+| **Anticonvulsants** | Carbamazepine · Lamotrigine · Valproic acid / divalproex |
+| **Atypical Antipsychotics** | Quetiapine · Olanzapine · Lurasidone · Aripiprazole · Risperidone · Paliperidone |
+
+[Watermark inside the image: "mentalhealthathome.org".]
+
+## slide 24 — lithium side effects
+
+Full-slide pasted image, no lecturer text. Text printed inside the image:
+
+**SIDE EFFECTS** — Mnemonic: **LITHIUM**
+
+- **L**eukocytosis
+- **I** increased urine output (polyuria)
+- **T**remors/**T**hirst (polydipsia)
+- **H**ypothyroidism
+- **I** ncreased weight gain
+- **U**pset stomach (n/v, diarrhea)
+- **M**uscle weakness/**M**ental issues
+
+[Speech bubble in the image: "Getting LIT!". Watermark: "@MEMORYPHARMSTUDY". The mnemonic
+letters run L-I-T-H-I-U-M against seven items; the image gives no eighth item for the
+second "I" beyond the two printed above.]
+
+## slide 25 — acute lithium toxicity
+
+Full-slide pasted image, no lecturer text. Text printed inside the image:
+
+**Acute Lithium Toxicity Signs** — mnemonic **CAN HAM SUCS**
+
+- **C**onfusion
+- **A**n increase in urine and thirst
+- **N**ausea
+
+- **H**and tremors
+- **A**taxia
+- **M**uscle twitches
+
+- **S**eizures
+- **U**ncontrollable eye movements
+- **C**oma
+- **S**lurred speech
+
+[Watermark inside the image: "My Mastery".]
+[No serum lithium concentration is printed — the deck gives no toxic threshold.]
+
+## slide 26 — anticonvulsant mood stabilizers: monitoring and cautions
+
+- **Sodium valproate:**
+
+  Stomach irritation, weight gain, tremors, menstrual irregularities and polycystic ovary.
+  Liver function and CBC should be monitored.
+  It is Contraindicated in pregnancy & lactation
+
+- **Lamotrigine:**
+
+  Monitoring for Stevens–Johnson syndrome "a very rare but potentially fatal skin
+  condition" is highly important.
+
+- **Carbamazepine:**
+
+  CBC should be monitored, as it can lower white blood cell count.
+
+[On the slide the drug names are printed in teal bold; the adverse-effect clauses
+("Stomach irritation … polycystic ovary", "for Stevens–Johnson syndrome … is highly
+important", "lower white blood cell count") are printed in red; the monitoring and
+contraindication lines under valproate are black bold.]
+
+## slide 27 — BENZODIAZEPINES: indications
+
+[Image banner: a spill of white tablets, lettered "BENZODIAZEPINES / Useful and
+Dangerous".]
+
+Indications: (must **NOT** be **used more than ONE month**)
+
+1. Panic disorder
+2. Generalized anxiety disorder.
+3. Insomnia.
+4. Seizures
+5. Alcohol withdrawal.
+
+["NOT" is printed bold and underlined; "used more than ONE month" is printed bold red. This
+one-month ceiling is the only duration, dose or quantity stated anywhere in the deck.]
+
+## slide 28 — benzodiazepine mechanism
+
+Full-slide pasted diagram, no lecturer text. Text printed inside the image:
+
+**Mechanism of action of Benzodiazepines**
+
+Labels: "GABA A receptor", "synaptic cleft", "benzodiazapine (BDZ) binding site" [sic —
+spelt "benzodiazapine" in the image, twice], "benzodiazapine" [sic], "gamma sub-unit",
+"GABA", "Cl-", "alpha" (on each of the two alpha subunits of all three receptor panels).
+
+[Three-panel sequence: BDZ binding the gamma subunit; GABA then binding; chloride flowing
+through the open channel.]
+
+## slide 29 — commonly prescribed benzodiazepines
+
+Full-slide pasted image, no lecturer text. Text printed inside the image:
+
+**The most commonly prescribed Benzos are the most commonly abused.**
+
+| Generic | Trade name printed |
+|---|---|
+| Alprazolam | (Xanax) |
+| Clonazepam | (Klonopin) |
+| Diazepam | (Valium) |
+| Lorazepam | (Ativan) |
+| Triazolam | (Halcion) |
+| Temazepam | (Restoril) |
+| Chlordiazepoxide | (Librium) |
+
+[Each name sits under a photograph of the tablet or capsule. Watermark: "Maryland".]
+
+## slide 30 — benzodiazepine adverse effects
+
+- ***Adverse Effects:***
+
+1. Amnesia
+2. Respiratory depression
+3. Drowsiness
+4. Hypotension
+5. Disinhibition especially in elderly
+6. Paradoxical effect: increased anxiety, aggression, impulsivity and irritability
+7. Tolerance and dependence.
+
+[Heading printed bold, italic and underlined. Item 6 wraps mid-word in the source
+("aggressio / n,"); joined here.]
+
+## slide 31
+
+[Photograph: a brown paper tag reading "Thank you!" beside daisies on weathered wood.]
+
+Picture-only closing slide, no lecturer text.
+
+---
+
+WHAT THE DECK PROMISES AND NEVER DELIVERS
+
+- Slide 4 lists four classes. All four are covered. No class is orphaned.
+- The deck covers ANTIDEPRESSANT INDICATIONS (slide 5) but never lists the individual
+  antidepressant agents in words: no SSRI, SNRI, TCA, MAOI or atypical agent is named
+  anywhere in the deck. Slide 6's infographic names the five CLASSES only. Contrast the
+  antipsychotics (slide 18 names 11 agents), mood stabilizers (slide 23 names 10) and
+  benzodiazepines (slide 29 names 7).
+- MAOIs appear once, as item 4 of slide 6's class list, and are never returned to: no MAOI
+  agent, no side effect, no tyramine/dietary interaction, no washout period.
+- TCA side effects are given only as receptor-blockade consequences inside the slide 9
+  image (muscarinic, H1, alpha → orthostatic hypotension). No overdose, cardiotoxicity or
+  contraindication text is printed.
+- SNRI side effects (slide 11) are pictures only — the deck names none of them in words.
+- Slide 15 (pregnancy) and slide 16 (untitled, two images) are "special considerations"
+  slides that state no consideration in text.
+- NO DRUG INTERACTION is printed anywhere in the deck for any agent. Serotonin syndrome
+  (slide 13) is presented as a symptom list with no precipitant or interacting-drug list.
+- No monitoring parameter is printed for lithium (no serum level, no renal or thyroid
+  monitoring interval) — monitoring text appears only for valproate, lamotrigine and
+  carbamazepine on slide 26.
+- Slide 18's classification table is cut off mid-row; at least one further row of the
+  antipsychotic classification is lost.
+- Slide 20's title ends in an empty "()", so an intended parenthetical (probably a
+  synonym or generation label) was never filled in.
+
+BLANK / TITLE-ONLY / PICTURE-ONLY SLIDES
+
+| Slide | Status |
+|---|---|
+| 2 | Picture-only — four images, no text at all |
+| 6, 7, 8, 9, 10 | Picture-only — full-slide pasted image carries all the content |
+| 11 | Title-only text ("SNRI side effects") + four uncaptioned photographs |
+| 13, 14 | Title-only text ("special considerations") + one pasted image |
+| 15 | Title-only text ("special considerations") + one photograph, no content |
+| 16 | Picture-only — two images, NO TITLE, no text at all |
+| 18, 19, 21 | Picture-only — full-slide pasted image |
+| 20 | Title-only text ("Atypical antipsychotics()") + two pasted panels |
+| 23, 24, 25 | Picture-only — full-slide pasted image |
+| 28, 29 | Picture-only — full-slide pasted image |
+| 31 | Picture-only — "Thank you!" photograph |
+
+Truly blank slides: NONE. Every page carries something.
+
+ILLEGIBLE ITEMS (exhaustive)
+
+1. **Slide 14** — the fourth Affective symptom under "Low mood" in the SSRI discontinuation
+   figure. Obscured by a Google Translate floating button baked into the pasted screenshot.
+   Only "...ess" is visible. Confirmed unrecoverable at 600 dpi.
+2. **Slide 18** — at least one further row of the antipsychotic classification table,
+   below the Aripiprazole row. The pasted screenshot is cropped through the line of text;
+   only letter-tops survive across all four columns. Confirmed unrecoverable at 600 dpi.
+
+No other item in the deck was unreadable at 150 dpi.
+
+MISSPELLINGS AND ODDITIES PRINTED IN THE SOURCE
+
+- Slide 20 title: "Atypical antipsychotics()" — empty parentheses [sic].
+- Slide 28 image: "benzodiazapine" and "benzodiazapine (BDZ) binding site" [sic] — should
+  be benzodiazepine.
+- Slide 18 image: "Amisulpiride" [sic] — the more usual spelling is amisulpride.
+- Slide 24 image: "I increased urine output" and "I ncreased weight gain" — the mnemonic
+  letter is printed detached from its word, and the two "I" items both use "increased".
+- Slide 30: "aggressio / n," — the word aggression breaks across a line mid-word.
+- Slide 12 uses "NaSSAs" and "NDRI" without ever expanding either abbreviation.

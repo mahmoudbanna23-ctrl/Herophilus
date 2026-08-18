@@ -180,3 +180,87 @@ to the 600 floor from the book, or be told plainly that the lecture gives nothin
 - **Gaps are ANSWERED AND TAGGED, never declared** (`CLAUDE.md` §4) — and with six unsourced
   chapters, this module will lean on that rule harder than any before it. **Prefer the book to
   outside knowledge wherever it prints the fact.**
+
+---
+
+## ✅ `L17) Psychopharmacology` — READ 2026-08-18, cache **239 → 3,358 words**
+
+`ps-pharm` is unblocked. Verified from disk: 3,358 w / 572 lines, drug names present, both
+illegible items marked in place.
+
+### ⚠️⚠️ A FOURTH TEXT-LAYER FAILURE MODE: **THE PICTURE DECK**
+
+The `pdffonts` diagnosis came back as **none of the three known causes**. Fonts are embedded, real,
+and **every character they carry extracts perfectly** — which is exactly why `-layout` returned the
+same 239 and why the stub looked like a genuine text-light deck.
+
+**The content is not text at all. It is pasted raster screenshots of text.**
+
+- **19 of 31 pages carry ZERO embedded fonts** (2, 6–10, 16, 18, 19, 21, 23–25, 28, 29, 31);
+  `pdfimages -list` shows each holds a full-slide bitmap.
+- **7 more carry fonts but ≤25 extractable characters** — a title and nothing else (1, 3, 11, 13,
+  14, 15, 20).
+- **Only 6 slides carry real body text** (5, 12, 17, 22, 26, 27, 30).
+
+Not a scan — fonts exist and the file is a 1.8 MB tagged PowerPoint LTSC export. Not vector outlines
+— that mode lists fonts that yield nothing, and here every listed font yields its characters.
+**The transcription can claim full coverage, because the bitmaps are screenshots of TEXT, not
+diagrams standing in for text.**
+
+**The diagnostic that separates it from the other three:** `pdffonts` per page **plus**
+`pdfimages -list`. Fonts present + characters extract + word count still absurd = **picture deck**.
+
+⚠️ **A second trap on the same deck: slide 22's `• Indications:` line EXISTS in the text layer but
+is INVISIBLE on screen**, covered by a banner image stacked on top of it. It was recovered from
+`pdftotext` and would have been lost by a purely visual read. **On a picture deck, read the text
+layer AND the pixels — neither alone is complete.**
+
+### ⚠️⚠️ THE DECK PRINTS NO DOSE, NO UNIT, NO ROUTE AND NO FREQUENCY FOR ANY DRUG
+
+**Independently verified at the hub**: a regex for `mg` / `mmol` / `mEq` / `ng/ml` / `mcg` over the
+whole cache returns **nothing**. In 31 slides of psychopharmacology the only quantity printed
+anywhere is that benzodiazepines **"must NOT be used more than ONE month"**.
+
+**So `ps-pharm` is this module's purest `CLAUDE.md` §4 chapter.** Doses are answered from general
+medical knowledge and tagged, never declared missing. Shape to copy: `entep-throat-103`, and
+`lid-11` / `lac-10` for the register sections.
+
+### What the deck does and does not name
+
+| Class | Agents printed | Doses | Indications | Side effects |
+|---|---|---|---|---|
+| **Antidepressants — all five classes** | ⚠️ **NONE. Not one antidepressant is named anywhere in 31 slides** | ❌ | ✅ 9, class-wide (sl.5) | partial |
+| TCA · SSRI · NDRI · NaSSA | — | ❌ | ❌ | ✅ receptor blockade · the four S's · sl.12 |
+| SNRI | — | ❌ | ❌ | ⚠️ **pictures only — sl.11 words none of them** |
+| MAOI | — | ❌ | ❌ | ⚠️ **named once (sl.6) and never returned to — no agent, no tyramine rule, no washout** |
+| Typical antipsychotics | Chlorpromazine · Haloperidol · Pimozide · Fluphenazine · Trifluoperazine | ❌ | ✅ 6 | ✅ pathway-based, arrows only |
+| Atypical (D+5HT) | Amisulpiride *[sic]* · Clozapine · Olanzapine · Sertindole · Zotepine · Quetiapine | ❌ | ✅ | ❌ **no metabolic syndrome, no agranulocytosis** |
+| Atypical (partial D agonist) | Aripiprazole | ❌ | ✅ | ❌ |
+| Lithium | Lithium | ❌ | ✅ 4 | ✅ LITHIUM mnemonic + CAN HAM SUCS toxicity — but ⚠️ **no serum level and no monitoring** |
+| Anticonvulsants | Carbamazepine · Lamotrigine · Sodium valproate | ❌ | ✅ | ✅ with monitoring; valproate CI in pregnancy |
+| Mood-stabilising atypicals | Quetiapine · Olanzapine · Lurasidone · Aripiprazole · Risperidone · Paliperidone | ❌ | ✅ | ❌ |
+| Benzodiazepines | Alprazolam (Xanax) · Clonazepam (Klonopin) · Diazepam (Valium) · Lorazepam (Ativan) · Triazolam (Halcion) · Temazepam (Restoril) · Chlordiazepoxide (Librium) | ⚠️ only the **one-month ceiling** | ✅ 5 | ✅ 7 |
+
+**Zero drug interactions anywhere in the deck.** Serotonin syndrome is given as an 11-item symptom
+list **with no precipitant named**. Lurasidone, Risperidone and Paliperidone appear **only** in the
+mood-stabiliser list, never in the antipsychotic table.
+
+### Two things genuinely illegible — recorded, NOT inferred
+
+1. **Slide 14** — the fourth Affective symptom in the SSRI discontinuation figure. The lecturer's
+   screenshot was taken with a **Google Translate floating button on screen**, and the white button
+   (Arabic *"ترجمة"*) is baked into the raster over the line. Only `…ess` survives at 600 dpi.
+2. **Slide 18** — **at least one further row of the antipsychotic classification table**, below the
+   Aripiprazole row. The pasted screenshot is cropped *through* the line; letter-tops survive across
+   all four columns, proving a row is there and not permitting a single word of it to be read.
+   **The deck therefore delivers an incomplete classification.**
+
+Both are marked `[illegible]` in the cache with the reason. **Neither was completed from knowledge
+inside the cache file** — that is the cache's contract. `ps-pharm` may fill them in the chapter,
+tagged, but must not present the fill as the deck's.
+
+### Also promised and never delivered
+
+Slide 20's title ends in an unfilled `()`. Slides 15 and 16 are headed *"special considerations"*
+and state no consideration — **slide 16 is two loaded images with no title and no text, and its
+intent is unrecoverable.** Say so in the register rather than guessing at it.
