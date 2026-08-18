@@ -81,18 +81,21 @@ below. This is a real finding and it saves the module a 1,116-page render.
 | L14) Child Psychiatry | 29 | 1,226 | 42 | `ps-child` |
 | L15) substance related + psych emergency | 49 | 1,777 | 36 | `ps-sud` |
 | L16) Emergency Psychiatry | 46 | 1,593 | 34 | `ps-emerg` |
-| **L17) Psychopharmacology** | **31** | **239** | **7** | ⚠️ **`ps-pharm` — see below** |
+| **L17) Psychopharmacology** | **31** | **239 → ✅ 3,358** | 7 → 108 | `ps-pharm` — ⚠️ **PICTURE DECK, read visually 2026-08-18; see the read write-up at the end** |
 | L18) Devices in Psychiatry | 23 | 1,822 | 79 | `ps-devices` |
 | L19) Psychotherapy | 29 | 1,304 | 44 | `ps-therapy` |
 
-### ⚠️ `L17) Psychopharmacology` — 31 pages, 239 words, SEVEN words per page
+### ✅ `L17) Psychopharmacology` — the one deck that failed the ratio, now READ
 
-The only deck in the module that fails the ratio, by a factor of four. `pdftotext -layout` returns
-the same 239, so it is **not an extraction-mode problem**. Being read visually 2026-08-18, with a
-`pdffonts`-per-page diagnosis first — the three causes (scanned images · text drawn as **vector
-outlines** · a genuinely text-light diagram deck) look identical from a word count and need
-different handling. **Psychopharmacology is a major exam topic; treat `ps-pharm` as unsourced until
-that cache is replaced.**
+31 pages, 239 words, **seven words per page** — the only deck in the module to fail, by a factor of
+four, and `pdftotext -layout` returned the same 239, so it was never an extraction-mode problem.
+**Read visually 2026-08-18: cache is now 3,358 words.** The diagnosis turned out to be a **fourth
+failure mode this project had not seen — the PICTURE DECK.** Full write-up, the drug inventory, the
+missing-dose finding and the two illegible items are at the end of this file.
+
+**⚠️ The ratio check that found it is worth running on every module's decks from now on**, and it is
+one command: pages against cached words. It cost nothing and recovered 3,119 words in a major exam
+topic that every previous pass had read as "a text-light deck".
 
 ### ⚠️ The lecture series skips L7 in BOTH halves
 
@@ -101,7 +104,7 @@ There is no `L7` in the psychiatry series and none in the neurology series. Per 
 
 ---
 
-## 3. ⚠️⚠️ SIX CHAPTERS ARE MATERIALLY UNSOURCED — verified by grep, not assumed
+## 3. ⚠️⚠️ SIX CHAPTERS WERE MATERIALLY UNSOURCED — FIVE STILL ARE (verified by grep, not assumed)
 
 Each of these was checked **against all 25 caches** on 2026-08-18. The standing rule is *read the
 slide before declaring a gap — paid 13 times* — so each line below names the search that was run.
@@ -113,7 +116,7 @@ slide before declaring a gap — paid 13 times* — so each line below names the
 | **`ps-geri`** | 0 | **`geriatric` returns ZERO across all 25 decks.** L13 is *Dementia and Delirium* and supplies dementia only; `elderly` appears in four decks as passing mentions |
 | **`ps-anxiety`** | 0 | No deck. `generalized anxiety` appears **only in the 239-word broken `L17` stub**; `panic` and `phobia` appear as symptom lists inside symptomatology and myths |
 | **`ps-osce`** | 0 | **`OSCE` returns ZERO across all 25 decks.** Shares `L1,2) Psychiatric sheet` (17 pp, 409 w) with `ps-interview` at best |
-| **`ps-pharm`** | 0 | Deck exists but yields 7 w/pp — see §2 |
+| ~~**`ps-pharm`**~~ | 0 | ✅ **CLOSED 2026-08-18** — the deck was a picture deck, not a thin one; cache 239 → **3,358 w**. ⚠️ **But it prints NO DOSE for any drug and names NO antidepressant**, so the chapter still leans hard on the §4 fill-and-tag rule |
 
 **`ps-interview` and `ps-osce` share a 409-word deck between them**, which is below the §14 floor of
 600 for one chapter, let alone two.
