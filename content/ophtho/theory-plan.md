@@ -1108,3 +1108,75 @@ neonatorum · primary congenital glaucoma. **Module coverage of these is already
 `ophthalmia neonatorum` in `cnj-10`, `congenital glaucoma` and `buphthalmos` in `wht-4` and
 `glc-16`, ROP in `wht-8` and `vsc-13`, amblyopia across fifteen sections. The chapter stays a
 content source only, per the ruling.
+
+---
+
+## ✅✅ OPHTHALMOLOGY THEORY COMPLETE — 2026-08-18
+
+**36 chapters · 390 sections · 95,519 body words · 331 printed pages, mean 9.2**
+(ENT 8.6, paediatrics 8.3). Every chapter printed individually in the headless harness.
+**138 of 138 questions reachable from theory** — 0 dead `qs` ids, 0 wrong-chapter links, 0 dead
+section refs, 0 unanchored bold leads, 0 bold-led paragraphs over the 55-word cap.
+`file://` boot: **0 console errors**, 854 CSS rules, 3 `max-aspect-ratio:5/4` blocks.
+
+### The last six chapters
+
+| Chapter | Sections | Words | Printed |
+|---|---|---|---|
+| `op-lid` | 11 | 3,867 | **11** |
+| `op-lac` | 10 | 3,735 | **11** |
+| `op-intro` *(after split)* | 7 | 2,436 | **8** |
+| `op-intro-exam` *(new)* | 6 | 2,498 | **7** |
+| `op-vissym` | 11 | 3,672 | **11** |
+| `op-ant` | 9 | 3,006 | **8** |
+| `op-onc` | 10 | 2,875 | **9** |
+| `op-appear` | 10 | 2,801 | **9** |
+
+### The eighth split, and why it was the expensive kind
+
+`op-intro` printed **14 pp** as merged — past the 13-page hard shape — so it was split **after**
+measurement, like `op-orbit` and unlike the six between them. The seam at `int-7`/`int-8` is
+contiguous and near-even (2,436 / 2,498) and **no question straddles it**; halves print 8 and 7.
+**The writer's proposed seam was rejected**: it cut anatomy from clinical, which meant
+`int-1`, `int-2` + `int-8`–`int-13` against `int-3`–`int-7` — non-contiguous, and it would have
+required reordering the chapter to achieve. **A seam that needs the chapter reordered is not a seam.**
+
+### ⚠️⚠️ TWO REGISTER FAULTS FOUND AT THE END, AND BOTH ARE PROCESS FAULTS, NOT CONTENT FAULTS
+
+**1. Four promises claimed a row that was never filed.** `uv-1`, `uv-8`, `uv-9` and `scl-1` each
+close by telling the reader *"row filed"* / *"a row is filed to …"*. **Neither `op-uvea` nor
+`op-sclera` appears as a DONOR anywhere in §14.5.** This is §14.5's own rule failing in the purest
+possible way — *an unrecorded promise is a deletion* — with the chapter text asserting the record
+exists. All four rebuilt from the promise wording and **marked reconstructed**, because the original
+intent is unrecoverable. One (`uv-9`, masquerade malignancies) turned out **delivered anyway** by
+`op-onc` — kept by luck, not by the register.
+
+**The check that found it, and it costs seconds:** extract every chapter that opens a `|` row in
+§14.5 into a donor set, then grep the theory file for `row filed` and test the claiming chapter
+against that set.
+
+**2. A row's evidence carries a timestamp.** `op-systemic`'s 2026-08-17 row recorded that
+`temporal arteritis` and `ESR` return zero module-wide. **True when written** — `op-acute` and
+`op-neuro-optic` did not exist yet. Both were written the next day and deliver GCA in full. Today's
+`op-vissym` writer **quoted that row instead of re-running the grep**, and shipped the same
+falsehood into `vis-11`, where it was caught at merge. The terms return **9 and 8 sections**.
+**Re-run the check; never quote another row's finding as your own.**
+
+### What ophthalmology still owes — all of it reconciliation, none of it writing
+
+- **~63 §14.5 rows are ophtho's**; ~20 closed, 13 notices, **6 undeliverable**, the rest open.
+- **Provenance defects, the most corrosive kind**: `va-6` tags the **WHO 3/60 definition** and the
+  **CSM fixation test** as supplied when the book prints both verbatim (p.21); `pup-10`'s
+  **cup-to-disc figures** are tagged supplied where the book prints different ones, sourced. The
+  facts are right and the labels are wrong, which devalues every honest tag in the module.
+- **Divergences held, not fixed** (each recorded in place with both citations): mean IOP **15 vs
+  16 mm Hg** · C/D **0.2–0.4 refer >0.5 vs 0.3–0.5 refer >0.6** · the examination order **ten steps
+  acuity-first vs six steps inspection-first** · tropicamide **1 % vs 0.5 %** on facing pages ·
+  **6 vs 9 cardinal positions**.
+- **`wht-8` owes the leukocoria RANKING and PHPV** from ch.16 p.206; it was deliberately not
+  rewritten.
+- **`L9` is read but never cached** — Hirschberg, Schirmer, Krause, Jones I/II and the tear-film
+  thicknesses have no other record, and ch.1 and ch.4 print none of them.
+- **Undeliverable from the book, recorded not invented**: iris melanoma as a tumour · orbital and
+  lacrimal tumour biology and staging (`orb-16` stays the account) · cosmetic oculoplastic
+  technique.
