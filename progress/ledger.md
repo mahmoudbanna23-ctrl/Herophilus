@@ -67,8 +67,8 @@ header-derived estimates.
 | 2 | `ENT QB.pdf` | ENT | 185 | `entqb-` | separate pages | 0 | 0 |
 | 3 | `ENT endpoint.pdf` | ENT | **2,642** | `entep-` | **yellow highlight** | 143–370 | 77 |
 | 4 | `pediatric .pdf` | Pediatrics | 104 | `peds-` | unseen | 0 | 0 |
-| 5 | `ophthalmology MCQ.pdf` | Ophthalmology | 126 | `opmcq-` | unseen | 0 | 0 |
-| 6 | `ophthalmology qb.pdf` | Ophthalmology | 185 | `opqb-` | unseen | 0 | 0 |
+| 5 | `ophthalmology MCQ.pdf` | Ophthalmology | 126 | `opmcq-` | **inline, beneath each Q** | 4–9 | **56 staged, 0 merged** |
+| 6 | `ophthalmology qb.pdf` | Ophthalmology | 185 | `opqb-` | pooled key pages | 8–26 | **138 merged** |
 | 7 | `neuropsychiatry & neurosurgery qb.pdf` | Neuropsychiatry | 142 | `npqb-` | unseen | 0 | 0 |
 | | | | **3,488** | | | **~118 read** | **98** |
 
@@ -7282,3 +7282,51 @@ backticked references (1,543 distinct), 0 markers misplaced into `source`, 0 dup
 `answer` in range.** Pre-splice dead-id grep returned clean — all eight external references
 (`entep-throat-103`, `entqb-thr6-327`, six `entqb-thr9-*`) verified live before splicing. **Ninth
 run of that check, second consecutive topic with nothing to repair.**
+
+---
+
+## Ophthalmology banks — the real state, measured 2026-08-18
+
+The bank table's rows 5 and 6 said **"unseen, 0 pages, 0 questions"** for both ophthalmology files.
+Both were wrong, in opposite directions, and are corrected above.
+
+| | `ophthalmology qb.pdf` (Grade Gain) | `ophthalmology MCQ.pdf` (House) |
+|---|---|---|
+| Verified by `pdfinfo` | **185 pp, A4 portrait**, 120.9 MB | **126 pp, A4 LANDSCAPE**, 100.3 MB |
+| Page arithmetic | **PDF = book + 7** | ⚠️ **TWO BOOK PAGES PER PDF PAGE** — `book = 2N-4` (left) and `2N-3` (right); `PDF = floor(b/2)+2` |
+| Answers | pooled **key pages** interleaved (book p.8, p.15) | **inline beneath each question** — no key anywhere in ch.1 |
+| Numbering | continuous so far (Q1–Q138) | **restarts at 1 every chapter** — ids carry a chapter token, `opmcq-c1-<n>` |
+| Read | book pp.1–19 = PDF 8–26 | ch.1, book pp.4–15 = PDF 4–9 |
+| Questions | **138, merged**, 8.6 per question-page | **56 staged (Q1–Q56 complete), NOT merged** |
+
+### ⚠️ 56 FINISHED HOUSE QUESTIONS WERE STRANDED IN `content\ophtho\qb-pages\`
+
+`house-c1.draft.js` (22) + `house-c1b.draft.js` (34) = **56, and validated from disk 2026-08-18:
+Q1–Q56 with no gaps · 0 schema faults · every one carries an `explanation` and a `source` · every
+`chapter` resolves against the current 36.** They have never been spliced into
+`app\data\questions.ophtho.js`, so the app has shown 138 ophthalmology questions when 194 exist.
+
+**Chapter assignments survive today's `op-intro`/`op-intro-exam` split unchanged** — the three
+`op-intro` questions (`opmcq-c1-12`, `-13`, `-26`) are vitreous composition, age-related change and
+posterior-segment anatomy, all in `op-intro`'s half. **No refiling needed.**
+
+### The cross-bank duplicate sweep: ZERO folds, and here is why the zero is a zero
+
+56 House against 138 Grade Gain, ranked on stem + option overlap. **Nothing scored above 0.60**;
+median 0.143; four pairs above 0.35, each read by hand:
+
+| Pair | Verdict |
+|---|---|
+| `opmcq-c1-27` / `opqb-t1-39` — WHO legal blindness | **Both kept.** Same fact, **different option sets** (House turns on *corrected vs uncorrected*, GG on the number) — options replaced means a new entry. ⚠️ **AND A KEY DIVERGENCE: House keys `= 3/60`, Grade Gain keys `≤ 3/60`.** Hold both, note both |
+| `opmcq-c1-18` / `opqb-t1-21` — depression in adduction | **Both kept.** Same key (superior oblique); option sets differ by one item |
+| `opmcq-c1-15` / `opqb-t1-40` — confrontation minimum VA | **Both kept.** Same key (1/60); House's distractors are all *3/60 vs 1/60, of vs >*, GG's are a plain ladder |
+| `opmcq-c1-6` / `opqb-t1-55` — intraocular pressure | **Not a duplicate at all.** House asks the **average** (keys **15 mmHg**), GG asks the **range** (keys 10–21). Different questions |
+
+**So all 56 are net new.** The rule that decided every one of them is the same: *options replaced →
+new entry* (`CLAUDE.md` §4).
+
+### ⚠️ A bank question settles a theory divergence
+
+`opmcq-c1-6` keys the average IOP at **15 mmHg**, and book ch.1 p.33 prints **15 mm Hg**. `pup-5`
+prints **16 mmHg**. That is **two sources against one**, and it is recorded on the §14.5 row rather
+than acted on — the theory reconciliation pass owns it, not the bank stream.
