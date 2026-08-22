@@ -117,10 +117,9 @@ there before resuming a paused stream. Where this file and the archive disagree,
   first briefs for that). If time runs short, **say so loudly — scaling down is theirs.**
 - **A defective key is noted, never disputed** (2026-08-11) — never take a key dispute to the user.
   **A lecture-numbering gap = the professor withheld it** (2026-08-14) — fill and tag, never chase.
-- **Publishing agreed, parked until ENT done.** Before first publish: **fix the final domain**
-  (localStorage is per-origin), **cache-bust the data `<script>` tags** (verified absent), finish
-  folding, run the content+design review. Publishing enables Google sign-in. Host and
-  public-vs-private both undecided.
+- **Publishing agreed, parked until ENT done.** First: **fix the final domain** (localStorage is
+  per-origin), **cache-bust the data `<script>` tags**, finish folding, run the content+design
+  review. It enables Google sign-in. Host and public-vs-private both undecided.
 
 ## The method — what transcription work must never skip
 
@@ -185,13 +184,15 @@ there before resuming a paused stream. Where this file and the archive disagree,
 
 ## Environment — what changes what you do first
 
-- Poppler installed (off PATH); `pdftotext` = 0 chars on every book/bank; `Read` rejects >100 MB.
-  **`.ps1` files are blocked by execution policy — pass PowerShell inline.** **Node v26.7.0**; no
-  Python, ImageMagick, Ghostscript or `gh`. Images via `System.Drawing` (⚠️ `Sort-Object` no-ops on
-  hashtables — `[pscustomobject]`; cast `Measure-Object` doubles to `[int]`). Headless Chrome is
-  the only screenshot/probe route — **⚠️ never under a path containing `--`** (`CLAUDE.md` §7).
-  ⚠️ **Write node/bash scripts to a FILE, never inline** — `\n` in a double-quoted `node -e` becomes
-  a real newline and has silently broken a draft and a regex refile.
+- Poppler (off PATH); `pdftotext` = 0 chars on every book/bank; `Read` rejects >100 MB. **`.ps1`
+  blocked by policy — pass PowerShell inline.** **Node v26.7.0**; no Python, ImageMagick,
+  Ghostscript or `gh`. Images via `System.Drawing` (⚠️ `Sort-Object` no-ops on hashtables; cast
+  `Measure-Object` doubles to `[int]`). Headless Chrome is the only screenshot/probe route —
+  **⚠️ never under a path containing `--`** (`CLAUDE.md` §7).
+- **⚠️⚠️ A `\n` ESCAPE IS A REAL NEWLINE, AND A REAL NEWLINE INSIDE A JSON BODY ENDS THE STRING.**
+  It has now broken a draft, a regex refile and `nr-cranial`. **Writing the script to a FILE does
+  not save you** — the JS parser resolves it either way. Going into JSON, escape it twice, and let
+  `vdraft.js` catch it: that is why the parse check runs BEFORE the splice.
 - **GitHub, PRIVATE**: `mahmoudbanna23-ctrl/Herophilus`, branches `main` +
   `design/clepsydra-and-sessions` (only off-drive copy of the Clepsydra art). `Semester 8\`
   gitignored. Push method: `ledger.md` §13. **Stage only your own paths — never
