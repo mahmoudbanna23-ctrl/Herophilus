@@ -139,7 +139,18 @@ const MODULES = [
       ['ps-devices','Devices in Psychiatry'],['ps-therapy','Psychotherapy']]},
     {name:'Neurology', chapters:[
       ['nr-intro','Introduction to neurology and localization'],['nr-ms','MS and demyelinating disorders'],
-      ['nr-movement','Movement disorders / Epilepsy'],
+      /* Split 2026-08-22, FORECAST rather than found: theory-plan.md §4 called it
+         the module's only forecast split, and the old title admitted it —
+         "Movement disorders / Epilepsy" are TWO TOPICS, not one topic taught
+         over two lectures, so §4's merge rule never applied. The seam is the
+         deck boundary: L3) MOVEMENT DISORDERS 2,699 w against L4)
+         Seizures_Epilepsy 2,321 w, forecast 15.0 pp together at ÷335 and past
+         the 13-page hard shape on every divisor tried. Split BEFORE writing,
+         which is what §4 asks for where the evidence is already in hand.
+         nr-movement keeps its id, so npqb-nr-113 (festinant gait) does not
+         move. SCHEDULE untouched — it carries no chapter ids. */
+      ['nr-movement','Movement disorders'],
+      ['nr-epilepsy','Seizures and epilepsy'],
       /* Split 2026-08-22, AFTER printing 17 pp — four past the 13-page hard
          shape. The seam is the DECK BOUNDARY and it is contiguous: L5) Muscle
          Disease against L6) Peripheral neuropathy, 3,481 words against 2,134 at

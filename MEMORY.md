@@ -5,48 +5,50 @@ Running record, organised around *resuming*. ISO dates; unverified marked as suc
 story, count and verbatim ruling) in `progress\memory-archive.md`** — read the relevant block
 there before resuming a paused stream. Where this file and the archive disagree, this file wins.
 
-## Resume here — **NEUROPSYCHIATRY THEORY, the last module: 13 of 30 written, 17 left holding 22 questions.** ENT · Peds · Ophtho theory all DONE. Banks stay PAUSED.
+## Resume here — **NEUROPSYCHIATRY THEORY, the last module: 15 of 31 written. ⚠️ `nr-intro` NOW HOLDS ALL 21 REMAINING QUESTIONS; the other 15 chapters carry ZERO.** ENT · Peds · Ophtho theory DONE. Banks PAUSED.
 
 - **⚠️⚠️ `content\neuro\theory-plan.md` IS THE MODULE'S WORKING FILE — READ IT FIRST**, with
-  `content\neuro\book-map.md`. It carries the deck audit, the six unsourced chapters, the two page
-  rates, the order of work and every measurement kept out of this 200-line file.
+  `content\neuro\book-map.md`. Deck audit, unsourced chapters, page rates, order of work, every
+  split's arithmetic — everything kept out of this 200-line file.
 - ✅ **Written: `nr-stroke` 10 pp · `nr-hemi` 10 · `nr-para` 10 · `nr-headache` 10 · `nr-cranial` 12
   (whole; seam in the plan) · `ps-symptom` 8 · `ps-psychoed` · `nr-ms` · `ps-mood` · `nr-lmn` 12 ·
-  `nr-nerve` 8 · `ps-ocd` 10 · `ps-ptsd` 6.**
-- **⚠️⚠️ TWO SPLITS ON 2026-08-22, BOTH AFTER PRINTING — the module is now 30 chapters.**
-  **`nr-lmn` 17 pp** → deck boundary: `nr-lmn` (L5, 12 pp, keeps `npqb-nr-118`) + **`nr-nerve`**
-  (L6, 8 pp, 0 q); **REVERSES the `nr-lmn1`+`nr-lmn2` merge**. **`ps-ocd` 14 pp** → the deck's own
-  **PART ONE / PART TWO** seam: `ps-ocd` (10 pp, keeps `npqb-ps-7`) + **`ps-ptsd`** (6 pp, 0 q).
-  ⚠️ **The second splits a SINGLE deck** — §4 joins one TOPIC over two lectures and says nothing
-  about two disorders in one. Retitled in `modules.js`; **`SCHEDULE` untouched**.
-- **⚠️⚠️ TRIM FIRST, BUT KNOW WHEN TO STOP.** `ps-ocd` had **132 words on page 14**; two genuine
-  second copies recovered **82 words of paper**, leaving **50** and **nothing left that was
-  duplication** — so it split. **290–306 w/pp measured.** ⚠️ **A prose block costs less paper than
-  the same facts as a table** — that is where most of the 82 came from.
-- **⚠️⚠️ `nr-intro` OWES TWO SLIDES TO `nr-lmn`** — L1's `Upper`/`Lower Motor Neuron Manifestations`
-  are **counted to `lm-1`**, **never again**. Three chapters (`str-4`, `hem-7`, `cn-9`) filed the
-  UMN/LMN framework to `nr-lmn`, whose **own decks never print it** (`UMN` returns in L1, L2, L8,
-  L10, L12, L17 — not L5 or L6). The `op-va`/`L1,2` shape, inside neurology.
-- **⚠️⚠️ `nr-intro` (21 q — 21 of the 23 LEFT) IS BLOCKED AND NEEDS A USER DECISION.**
+  `nr-nerve` 8 · `ps-ocd` 10 · `ps-ptsd` 6 · `nr-movement` 13 · `nr-epilepsy` 12.**
+- **⚠️⚠️ THREE SPLITS ON 2026-08-22/23 — the module went 29 → 31 chapters.** Arithmetic and seams
+  in the plan §4. **`nr-lmn`/`nr-nerve`** (deck boundary; **reverses the `nr-lmn1`+`nr-lmn2`
+  merge**) · **`ps-ocd`/`ps-ptsd`** (⚠️ **a SINGLE deck**, which §4 permits — it joins one TOPIC
+  over two lectures, not two disorders in one) · **`nr-movement`/`nr-epilepsy`** (⚠️ **forecast and
+  split BEFORE writing**). **`SCHEDULE` untouched every time**; each pair's question stays put.
+- **⚠️⚠️ TRIM FIRST, BUT KNOW WHEN TO STOP.** `ps-ocd` had **132 words on page 14**; two second
+  copies recovered **82 words of paper**, leaving **50** and nothing left that was duplication — so
+  it split. ⚠️ **A prose block costs less paper than the same facts as a table.**
+- **⚠️⚠️ A SOURCE WORD COUNT UNDER-PREDICTS THIS STYLE BADLY** — `nr-movement`'s 2,699-word deck
+  became **4,405 written (163 %)**; the plan forecast its halves at "7–8 pp" and they printed
+  **13 and 12**. ⚠️ **My own connective prose is the inflation, it sits ABOVE §14.2's floor, and it
+  is the legitimate thing to cut** (9 bullets, 322 w, no sourced fact lost). **296 · 306 · 313 w/pp.**
+- **⚠️⚠️ `nr-intro` IS BLOCKED, NEEDS A USER DECISION, AND HOLDS *EVERY* REMAINING QUESTION — 21.**
   **12 of 23 probes return ZERO against its deck** (gracile/cuneate, triceps, abdominal reflex,
   hemianopia, optic radiation, power grading, biceps, brachioradialis, clonus, somatosensory,
   rigidity, lateral column). The book HAS it — **39 printed pages over three chapters, incl. a
-  25-page `Neurology Sheet`** — but they are image-only, so it is **a subagent render or a chapter
-  written half from tagged outside knowledge.** After it **only `nr-movement` (1) carries a question
-  at all, and fifteen carry ZERO.**
-- **⚠️⚠️ `ps-anxiety` — READ `oc-10` AND `sy-10` BEFORE BRIEFING IT.** Its **book spine is
-  half-spent**: `ps-ocd` went first and `oc-10` declares what is left — Psych ch.3 printed
-  **193-196 and 200-201** entire, **minus three named lines**. **And it HAS A DECK**, the back half
-  of `L4,5` (DSM list, differential, *"NO DIAGNOSTIC TEST"*, treatment), which the plan assigns to
-  `ps-symptom` alone. **Check every deck's BACK HALF before trusting an assignment.**
-- **⚠️ `nr-headache` HAS NO LECTURE — verified, not assumed** (`"tension type"` returns zero across
-  all 25 decks). Written wholly from book Neurology ch.9. Same shape may recur; grep before briefing.
-- **⚠️⚠️ PAGE RATE SPREAD IS 267–337 w/pp — PLAN AT ÷280, CLEAR BY PRINTING.** Any trim must be
-  **duplication, never a fact** — look for a second copy before looking for something to cut.
-- **⚠️ The ophtho reconciliation work is NOT done** — ~63 register rows, the `va-6`/`pup-10`
-  provenance defects, five held divergences, `wht-8`. In its `theory-plan.md`; never re-derive it.
-- **⚠️ A SPLIT MOVES QUESTIONS, and they are reassigned from the theory `qs` links, never from
-  the titles** — ophtho refiled 12, 1, 1, 16 and 2 that way across its eight splits.
+  25-page `Neurology Sheet`** — but image-only, so it is **a subagent render or a chapter written
+  half from tagged outside knowledge.** **After it the module is deck-and-book work only.**
+  ⚠️ **AND IT OWES TWO SLIDES TO `nr-lmn`:** L1's `Upper`/`Lower Motor Neuron Manifestations` are
+  **counted to `lm-1`** and **must not be counted again** — `str-4`, `hem-7` and `cn-9` all filed
+  the UMN/LMN framework to `nr-lmn`, whose own decks never print it. The `op-va`/`L1,2` shape.
+- **⚠️ THREE SOURCES UNREAD AND RECORDED, NOT GUESSED** — no subagent this session: **`L3` p17**
+  (zero words, **zero fonts**, sitting before the deck's unanswered *NON MOTOR SYMPTOMS ??????*
+  slide), **book Neuro ch.12** (119-127) and **ch.6** (57-66). **Check `mv-5`'s supplied non-motor
+  table against any of them if read.**
+- **⚠️⚠️ `ps-anxiety` — READ `oc-10` AND `sy-10` FIRST.** Its **book spine is half-spent**: `oc-10`
+  declares what `ps-ocd` left — Psych ch.3 printed **193-196 and 200-201**, **minus three named
+  lines**. **And it HAS A DECK**, `L4,5`'s back half. **Check every deck's BACK HALF.**
+- **⚠️ `nr-headache` HAD NO LECTURE — verified, not assumed** (`"tension type"` returns zero across
+  all 25 decks); written wholly from book Neurology ch.9. **Grep before briefing.**
+  **⚠️ PAGE RATE SPREAD IS 267–337 w/pp — PLAN AT ÷280, CLEAR BY PRINTING**, and any trim must be
+  **duplication, never a fact**.
+- **⚠️ Ophtho reconciliation is NOT done** — ~63 register rows, the `va-6`/`pup-10` provenance
+  defects, five held divergences, `wht-8`. In its `theory-plan.md`; never re-derive it.
+- **⚠️ A SPLIT MOVES QUESTIONS, reassigned from the theory `qs` links, never from the titles** —
+  ophtho refiled 12, 1, 1, 16 and 2 that way across its eight splits.
 - **⚠️⚠️ CHECK A CHAPTER'S QUESTIONS AGAINST ITS SOURCE BEFORE BRIEFING IT.** A plan's Decks column
   is an assignment, **not a coverage guarantee** — **none of `op-va`'s 16 questions was answerable
   from its only listed deck**, and `op-intro`'s 13 test anatomy, not its title's history-taking.
@@ -93,9 +95,8 @@ there before resuming a paused stream. Where this file and the archive disagree,
 
 - **All theory is written from THIS hub chat for all four modules** (2026-08-14); the other three
   chats stand down on theory and resume only their **banks**. Hub plans, validates, prints, commits;
-  **Opus subagents write, cap 2 concurrent** (shared pool — more chats multiply failures, not
-  throughput). **A dead agent's file is usually complete: validate from disk before rewriting** (6
-  recoveries). §11.
+  **Opus subagents write, cap 2 concurrent** (shared pool). **A dead agent's file is usually
+  complete: validate from disk before rewriting** (6 recoveries). §11.
 - **Theory format = `START-HERE.md` §14** — the 2026-08-04 brief and first two §14s are DEAD (user
   rejected 30–47 pp chapters; the distractor-essay rule was the cause and is REVOKED). Budget
   `max(source words, 25×q)`, floor 600, **operative ceiling ~2,400 w / ~10 pp**; telegraphic;
@@ -120,45 +121,43 @@ there before resuming a paused stream. Where this file and the archive disagree,
 
 - **Read every answered page; trust no count** — not printed numbering, not the contents page, not
   the map (ranges right 21/21, counts wrong 17/21, always upward). Render **one page past the last
-  answer page** — both boundary defects are unpredictable in both directions.
+  answer page** — the boundary defects go both ways.
 - **Run the full six-stage duplicate sweep (A–F) on every topic**; folds ran 0–20 per topic with no
-  trend, and the rankings are the instrument. Blind spots, defect shapes 1–6 and the false
-  positives: archive. **Say why a zero is a zero.** Grep drafted blocks for a folded id **before**
-  splicing; re-run the dead-id check after every fold.
+  trend, and the rankings are the instrument. Blind spots and defect shapes 1–6: archive. **Say why
+  a zero is a zero.** Grep drafted blocks for a folded id **before** splicing; re-run the dead-id
+  check after every fold.
 - **Compute the expected marker delta FIRST, then audit both ways** — five marker faults in five
   shapes (block-missing, in-`source` ×3, lost at writing, spurious on boxed entries; a boxed entry
   takes NO marker). The audit asks *"does `explanation` END with the sentence"*, whole-file.
   Validator: `<scratchpad>\wrT7\validate.js` (strip trailing `*`s — not optional).
-- **Every bank mis-keys itself — go looking.** Mechanism decides: options replaced → new entry;
-  identical options, moved key → record in place; bank contradicting its own box → correct and
-  record. Cross-bank divergence: hold both — **but check the menu: a key is the best option OFFERED.**
+- **Every bank mis-keys itself — go looking.** Options replaced → new entry; identical options with
+  a moved key → record in place; bank contradicting its own box → correct and record. Cross-bank
+  divergence: hold both — **but check the menu: a key is the best option OFFERED.**
 - **Read the slide before declaring a gap — paid 13 times**; grep the shortest stem AND the
   misspelling (*ostio-*, *Uvelopalato…*). Re-check staged interview items before raising.
 - **⚠️ A BANK'S CONTENTS PAGE MAY PRINT PER-SECTION COUNTS — LOOK BEFORE SAMPLING** (GG ophtho's
-  did, turning ±30 % into ±5). **Verify it, never trust it**; and a *"highest question number"*
-  misleads wherever numbering restarts per section — three of the four files.
+  did, turning ±30 % into ±5). **Verify it, never trust it**; a *"highest question number"* misleads
+  wherever numbering restarts per section — three of the four files.
 - **⚠️ The end-of-ENT "outside knowledge" list is about half wrong** — re-grep item by item before
-  booking book time (8 of 13 were printed all along). 67 entries record no provenance; roster in
-  `ledger.md` §11. **Bank structure** (GG ENT, `ledger.md` §14): **numbering restarts per section**,
-  so ids carry a section+topic token; **box presence is a property of the PAGE**; **back-references
-  hit 28 %** — repair every "previous case", the deck is shuffled (both ophtho banks too);
-  **13 of 13 figure crops were wrong first try — LOOK at every crop**; an answer-page figure is
-  never cropped.
+  booking book time (8 of 13 were printed all along); 67 entries record no provenance, roster in
+  `ledger.md` §11. **Bank structure** (§14): **numbering restarts per section**, so ids carry a
+  section+topic token; **box presence is a property of the PAGE**; **back-references hit 28 %** —
+  repair every "previous case", the deck is shuffled; **13 of 13 figure crops were wrong first try
+  — LOOK at every crop**; an answer-page figure is never cropped.
 
 ## Validation state
 
-- **Corpus 2,097** (2026-08-14): ENT 1,720 · Neuro 158 · Ophtho 138 · Peds 81. Banks: GG
-  1,180 · Endpoint 697 · House 78; 54 shared memberships. Module keys `ent`, `ophtho`,
-  `pediatrics`, `neuropsych`. Option counts 2–9 coexist; nothing assumes four.
-- **Theory: 130 of 147 chapters, 1,385 sections.** ENT 30 (259 pp / 8.6) · Peds 51 (340 / 8.3) ·
-  Ophtho 36 (331 / 9.2) · **Neuro 13 of 30**. Drafts in `content\<mod>\theory-drafts\`
-  (⚠️ ENT's bare `ent-csom/tonsils/aom/stridor` are the DEAD format; their `*.v2/v3` are current).
-  Best models: `ent-nasalobs`, `op-ret`, `nr-cranial`, `ps-symptom`, `ps-ocd`.
-- Last real `file://` boot **2026-08-22**: **0 console errors, 876 CSS rules, 3
-  `max-aspect-ratio:5/4` blocks, 4 modules, 147 chapters, 2,097 questions, 89 cases, 130 theory
-  chapters, 1,385 sections.** Harnesses in `<scratch>\`: `MOD=<mod> print.sh` · `boot.sh` ·
-  `modcheck-neuro.js` · `vdraft.js` · `splice-neuro.js`/`resplice-neuro.js` · `qdump.js <mod> <ch>`
-  (a chapter's questions, key marked) · `shot.sh`.
+- **Corpus 2,097** (2026-08-14): ENT 1,720 · Neuro 158 · Ophtho 138 · Peds 81. Banks: GG 1,180 ·
+  Endpoint 697 · House 78; 54 shared. Module keys `ent`, `ophtho`, `pediatrics`, `neuropsych`.
+  Option counts 2–9 coexist; nothing assumes four.
+- **Theory: 132 of 148 chapters, 1,408 sections.** ENT 30 (259 pp / 8.6) · Peds 51 (340 / 8.3) ·
+  Ophtho 36 (331 / 9.2) · **Neuro 15 of 31**. Drafts in `content\<mod>\theory-drafts\` (⚠️ ENT's
+  bare `ent-csom/tonsils/aom/stridor` are the DEAD format; their `*.v2/v3` are current). Best
+  models: `ent-nasalobs`, `op-ret`, `nr-cranial`, `ps-symptom`, `ps-ocd`.
+- Last real `file://` boot **2026-08-23**: **0 console errors, 876 CSS rules, 3
+  `max-aspect-ratio:5/4` blocks, 4 modules, 148 chapters, 2,097 questions, 89 cases, 132 theory
+  chapters, 1,408 sections.** Harnesses in `<scratch>\`: `MOD=<mod> print.sh` · `boot.sh` ·
+  `modcheck-neuro.js` · `vdraft.js` · `splice-neuro.js`/`resplice-neuro.js` · `qdump.js` · `shot.sh`.
 - **⚠️ THE THEORY READER IS AN A4 PAGE (2026-08-19, three user complaints).** 210:297 by
   `aspect-ratio`, sized from the window, margins set in JS from the PAGE's width (**percentages
   resolve against the CONTAINING BLOCK** — that gave 74px margins on a 510px page), running head,
@@ -168,9 +167,8 @@ there before resuming a paused stream. Where this file and the archive disagree,
   `.th-table` carried it for its corners, so over-tall tables silently lost their last rows in the
   reader. Fixed screen-side — **print was checked with `pdftotext` first and was never affected.**
 - **⚠️ `pages ≈ words ÷ 240` is an AGGREGATE predictor, ±5 per chapter** — plan with it, print to
-  clear (seven rules: §14.1). **⚠️ A draft header is a claim, not a measurement — re-count from disk
-  after the final edit.** Wrong nine times; worst a *forecast wearing a measurement's label* whose
-  breakdown summed exactly, so **the sum check alone no longer suffices.**
+  clear (§14.1). **⚠️ A draft header is a claim, not a measurement — re-count from disk after the
+  final edit.** Wrong nine times; **the sum check alone no longer suffices.**
 
 ## Environment — what changes what you do first
 
@@ -179,18 +177,20 @@ there before resuming a paused stream. Where this file and the archive disagree,
   Ghostscript or `gh`. Images via `System.Drawing` (⚠️ `Sort-Object` no-ops on hashtables; cast
   `Measure-Object` doubles to `[int]`). Headless Chrome is the only screenshot/probe route —
   **⚠️ never under a path containing `--`** (`CLAUDE.md` §7).
-- **⚠️⚠️ BACKSLASHES ARE THE PROJECT'S MOST EXPENSIVE CHARACTER — THREE COMPOUNDING TRAPS.**
+- **⚠️⚠️ ESCAPING IS THE PROJECT'S MOST EXPENSIVE PROBLEM — FOUR TRAPS, ALL MEASURED.**
   **(1)** `\n` **is** a real newline and a real newline **ends a JSON string** — it broke a draft, a
   regex refile and `nr-cranial`; **writing the script to a FILE does not save you.** **(2)** ⚠️ **the
-  Bash tool's quoted heredoc collapses `\\` to `\`** (measured 2026-08-22), so `app\\data\\x.js`
-  lands as `app\data\x.js` and the parser eats it — **`\d`→`d`, `\t`→TAB, `\b`→backspace** — which
-  corrupted `Src:` citations in **two** chapters. **(3)** a heredoc over **~9 KB** fails to parse.
-  **Fix: `String.fromCharCode(92)` for separators, edit drafts on the PARSED object and rewrite via
-  `JSON.stringify`, one section per call, and let `vdraft.js` parse-check BEFORE the splice.**
-- **GitHub, PRIVATE**: `mahmoudbanna23-ctrl/Herophilus`, branches `main` +
-  `design/clepsydra-and-sessions` (only off-drive copy of the Clepsydra art). `Semester 8\`
-  gitignored. Push: `ledger.md` §13. **Stage only your own paths — never `git add -A`**;
-  `index.lock` means another chat is mid-commit.
+  Bash tool's quoted heredoc collapses `\\` to `\`**, so `app\\data\\x.js` lands as `app\data\x.js`
+  and the parser eats it — **`\d`→`d`, `\t`→TAB, `\b`→backspace** — corrupting `Src:` citations in
+  **two** chapters. **(3)** a heredoc over **~9 KB** fails to parse. **(4)** ⚠️ **a backtick inside a
+  DOUBLE-QUOTED bash string is COMMAND SUBSTITUTION** — `` `nr-intro` `` silently vanished from a
+  plan edit and left a blank. **Every chapter id we write is in backticks, so this fires often.**
+  **Fix: `String.fromCharCode(92)` for separators; edit files on the PARSED object and rewrite via
+  `JSON.stringify`; one section per call; quoted heredocs or `Edit` for anything with backticks;
+  and let `vdraft.js` parse-check BEFORE the splice.**
+- **GitHub, PRIVATE**: `mahmoudbanna23-ctrl/Herophilus`, `main` + `design/clepsydra-and-sessions`
+  (only off-drive copy of the Clepsydra art). `Semester 8\` gitignored. Push: `ledger.md` §13.
+  **Stage only your own paths — never `git add -A`**; `index.lock` = another chat is mid-commit.
 - **Measure, then believe**: check the sum, check the auditor, reconcile written + folded = printed;
   a counter that does not move is a finding. **Never write a page number or filename from memory**
   (7/7 and 3/3 wrong) — read the `source`, list the directory.
