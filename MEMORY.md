@@ -5,15 +5,24 @@ Running record, organised around *resuming*. ISO dates; unverified marked as suc
 story, count and verbatim ruling) in `progress\memory-archive.md`** — read the relevant block
 there before resuming a paused stream. Where this file and the archive disagree, this file wins.
 
-## Resume here — **NEUROPSYCHIATRY THEORY, the last module: 5 of 28 written, 23 left holding 42 questions.** ENT · Peds · Ophtho theory all DONE. Banks stay PAUSED.
+## Resume here — **NEUROPSYCHIATRY THEORY, the last module: 6 of 28 written, 22 left holding 31 questions.** ENT · Peds · Ophtho theory all DONE. Banks stay PAUSED.
 
 - **⚠️⚠️ `content\neuro\theory-plan.md` IS THE MODULE'S WORKING FILE — READ IT FIRST**, with
   `content\neuro\book-map.md`. It carries the deck audit, the six unsourced chapters, the two page
   rates, the order of work and every measurement kept out of this 200-line file.
-- ✅ **Written 2026-08-18/19: `nr-stroke` (10 pp) · `nr-hemi` (10) · `nr-para` (10) ·
-  `nr-headache` (10) · `nr-cranial` (12, whole, contiguous seam recorded in the plan).**
-  **NEXT: `nr-intro` (21 q) — HALF of everything left.** After it the largest is `ps-symptom` at 11,
-  then `ps-psychoed` at 5, and **fourteen chapters carry ZERO questions.**
+- ✅ **Written 2026-08-18/19: `nr-stroke` 10 pp · `nr-hemi` 10 · `nr-para` 10 · `nr-headache` 10 ·
+  `nr-cranial` 12 (whole; contiguous seam recorded in the plan) · `ps-symptom` 8.**
+- **⚠️⚠️ `nr-intro` (21 q — TWO-THIRDS of everything left) IS BLOCKED AND NEEDS A USER DECISION.**
+  **12 of 23 probes return ZERO against its deck** (gracile/cuneate, triceps, abdominal reflex,
+  hemianopia, optic radiation, power grading, biceps, brachioradialis, clonus, somatosensory,
+  rigidity, lateral column). The book HAS it — **39 printed pages over three chapters, incl. a
+  25-page `Neurology Sheet`** — but they are image-only, so it is **a subagent render or a chapter
+  written half from tagged outside knowledge.** After it, the largest chapter left is 5 questions
+  and **fourteen carry ZERO.**
+- **⚠️ `ps-anxiety` HAS A DECK — the back half of `L4,5`**, from the *"Anxiety and related
+  disorders"* slide on: the DSM list, the differential, *"NO DIAGNOSTIC TEST"* and a full treatment
+  block. **The plan says its source is book Psych ch.3 and assigns L4,5 to `ps-symptom` alone.**
+  Deferred in `sy-10`. **Check every deck's BACK HALF before trusting the plan's assignment.**
 - **⚠️ `nr-headache` HAS NO LECTURE — verified, not assumed** (`"tension type"` returns zero across
   all 25 decks). Written wholly from book Neurology ch.9. Same shape may recur; grep before briefing.
 - **⚠️⚠️ PAGE RATE SPREAD IS 281–337 w/pp — PLAN AT ÷280, CLEAR BY PRINTING.** ÷335 under-forecast
@@ -72,12 +81,9 @@ there before resuming a paused stream. Where this file and the archive disagree,
 - **⚠️ ENT is NOT closed**: 25 §14.5 rows open **+ 33 bold-led paragraphs over the 55-word cap**
   (peds 2, ophtho 0) — the ENT reconciliation pass. ⚠️ **A cap auditor must separate BULLETS from
   PARAGRAPHS** — conflating them faked four failures.
-- **Question banks, frozen mid-flight**: ✅ Endpoint closed · ✅ GG Ear+Nose closed · GG Throat
-  t1–t9 + t11 written · **⚠️ only t10 left in GG** — staged complete (66/66 verbatim,
-  10 boxes, 10 figures, 10 back-ref chains repaired) but **only 11 of 66 drafted**; 55 remain,
-  belongs to the question resume, not theory. Then **House from PDF p.15** (`enthd-`, 41 done,
-  next ch.3 Q45, book pp.33–38, render through p.39). GG totals: 1,047 printed / 982 written /
-  65 folded. Detail per topic: archive + `ledger.md` §14.
+- **ENT banks, frozen mid-flight**: ✅ Endpoint · ✅ GG Ear+Nose closed. **⚠️ Only GG Throat t10 is
+  left** — staged complete, **55 of 66 undrafted**. Then **House from PDF p.15** (`enthd-`, 41 done,
+  next ch.3 Q45). Every count, range and next step: `ledger.md` §14 + the archive.
 - **⚠️⚠️ REAL EXAM DATES (user, 2026-08-13):** Peds OSCE **14 Sep** · Peds papers **17 Sep** ·
   ENT **22 Sep** · Ophtho **27 Sep** · Neuro **3 Oct** · Peds papers **18–19 Oct**.
   `schedule.js` rebuilt on them (user must press **Reset to the original plan**). **Nothing is
@@ -135,18 +141,17 @@ there before resuming a paused stream. Where this file and the archive disagree,
   best option OFFERED.**
 - **Read the slide before declaring a gap — paid 13 times**; grep the shortest stem AND the
   misspelling (*ostio-*, *Uvelopalato…*). Re-check staged interview items before raising.
-- **⚠️ A BANK'S CONTENTS PAGE MAY PRINT PER-SECTION QUESTION COUNTS — LOOK BEFORE SAMPLING.** GG
-  ophtho's does, and verifying it against the printed cumulative numbers at four checkpoints turned
-  a ±30 % guess into ±5. **Verify it, never trust it**; and a *"highest question number"* alone
-  misleads whenever numbering restarts per section, which it does in three of the four bank files.
+- **⚠️ A BANK'S CONTENTS PAGE MAY PRINT PER-SECTION COUNTS — LOOK BEFORE SAMPLING** (GG ophtho's
+  did, and checking it turned ±30 % into ±5). **Verify it, never trust it**; and a *"highest
+  question number"* misleads wherever numbering restarts per section — three of the four files.
 - **⚠️ The end-of-ENT "outside knowledge" list is about half wrong** — re-grep item by item before
-  booking book time (8 of 13 checked were printed all along). 67 entries record no provenance
-  (46 early Endpoint + all 21 House). Owed when ENT banks resume; roster: `ledger.md` §11.
-- **GG ENT structure**: PDF = book + 9; three sections (Ear/Nose/Throat), **numbering restarts per
-  section** — ids carry a section+topic token (`entqb-thr1-1`). ~30% carry boxes, but **box presence
-  is a property of the PAGE**. **Back-references hit 28%** — repair every "previous case", the deck
-  is shuffled (present in both ophtho banks too). Figures: **13 of 13 crops wrong first try — LOOK
-  at every crop**; an answer-page figure is never cropped (it would reveal the key).
+  booking book time (8 of 13 were printed all along). 67 entries record no provenance; owed when
+  ENT banks resume, roster in `ledger.md` §11.
+- **Bank structure rules (evidence: GG ENT, `ledger.md` §14)**: **numbering restarts per section**,
+  so ids carry a section+topic token; **box presence is a property of the PAGE**;
+  **back-references hit 28 %** — repair every "previous case", the deck is shuffled (true of both
+  ophtho banks too); **13 of 13 figure crops were wrong first try — LOOK at every crop**, and an
+  answer-page figure is never cropped.
 
 ## Validation state
 

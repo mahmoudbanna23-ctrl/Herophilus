@@ -217,3 +217,18 @@ bullets carried was kept in MEMORY.md, compressed — only the module-specific e
   — validated, 0 folds vs GG, all net new. House's **132 model-exam items are SHORT-ANSWER → the
   `type:'case'` route, not MCQ.** Both files' back halves are **past papers, recycled by design.**
   Detail: `ledger.md`.
+
+### Bank blocks compressed out of MEMORY.md 2026-08-19 (rules kept there, arithmetic moved here)
+
+- **Question banks, frozen mid-flight**: ✅ Endpoint closed · ✅ GG Ear+Nose closed · GG Throat
+  t1–t9 + t11 written · **⚠️ only t10 left in GG** — staged complete (66/66 verbatim,
+  10 boxes, 10 figures, 10 back-ref chains repaired) but **only 11 of 66 drafted**; 55 remain,
+  belongs to the question resume, not theory. Then **House from PDF p.15** (`enthd-`, 41 done,
+  next ch.3 Q45, book pp.33–38, render through p.39). GG totals: 1,047 printed / 982 written /
+  65 folded. Detail per topic: archive + `ledger.md` §14.
+
+- **GG ENT structure**: PDF = book + 9; three sections (Ear/Nose/Throat), **numbering restarts per
+  section** — ids carry a section+topic token (`entqb-thr1-1`). ~30% carry boxes, but **box presence
+  is a property of the PAGE**. **Back-references hit 28%** — repair every "previous case", the deck
+  is shuffled (present in both ophtho banks too). Figures: **13 of 13 crops wrong first try — LOOK
+  at every crop**; an answer-page figure is never cropped (it would reveal the key).
