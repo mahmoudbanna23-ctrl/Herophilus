@@ -176,21 +176,31 @@ without a lecture. Ask only if the evidence is strong, and record the answer as 
 Budget = `max(source words, 25 × q)`, floor 600, **operative ceiling ~2,400 words / ~10 printed
 pages, hard shape ≤13 pp measured by printing.**
 
-### ⚠️ USE ÷335 HERE, NOT ÷240
+### ⚠️⚠️ THE MODULE HAS **TWO** PAGE RATES, AND TABLES DECIDE WHICH
 
-The first three chapters are printed, so the module has its own rate:
+Four chapters are printed now, and they do **not** share one rate:
 
-| chapter | body words | printed | w/pp |
-|---|---|---|---|
-| `nr-stroke` | 3,365 | **10 pp** | 337 |
-| `nr-hemi` + `nr-para` *(as one, before the split)* | 4,687 | **14 pp** | 335 |
+| chapter | body words | printed | w/pp | shape |
+|---|---|---|---|---|
+| `nr-stroke` | 3,365 | **10 pp** | **337** | prose-leaning |
+| `nr-hemi` + `nr-para` *(as one, before the split)* | 4,687 | **14 pp** | **335** | prose-leaning |
+| **`nr-headache`** | **2,811** | **10 pp** | **281** | ⚠️ **table-heavy — six tables, one of them 14 rows × 4 columns** |
 
-**≈335 words per printed page.** The generic ÷240 estimator forecast these at 14.0 and 19.5 and they
-printed 10 and 14 — **over-predictions of 4.0 and 5.5 pages, the latter the worst in the project.**
-A ÷240 forecast here is roughly **40 % too high**, and it has already caused one bad instinct:
-the writer proposed splitting `nr-stroke`, which never needed it.
+**Plan a prose chapter at ÷335 and a table-heavy one at ÷280.** `nr-headache` printed at **11 pp on
+the first pass** — over the operative ceiling that ÷335 said it would clear by two pages — and needed
+a trim. **A table costs more paper per word than a paragraph**, which is the same finding §14.1
+records from ENT (238–259 w/pp for table-dense chapters against 278–319 for prose-leaning ones), and
+it is now confirmed inside this module.
 
-**Plan with ÷335. Clear a chapter only by printing it.**
+**Count the tables before choosing a divisor**, and **clear a chapter only by printing it.** The
+generic ÷240 estimator remains wrong here in the other direction: it forecast the first two at 14.0
+and 19.5 against printed 10 and 14 — **over-predictions of 4.0 and 5.5 pages**, and it once made a
+writer propose splitting `nr-stroke`, which never needed it.
+
+**⚠️ The trim that recovered the page must be duplication, never a fact.** `nr-headache`'s came from
+two blocks written twice — the book's three self-contradictions, listed inline where they are used
+*and* again in a consolidated block, and a cross-module pointer stated in two sections. 56 words, one
+page. Look for a second copy before looking for something to cut.
 
 ### Split candidates, re-forecast on corrected word counts
 
@@ -200,7 +210,7 @@ the writer proposed splitting `nr-stroke`, which never needed it.
 | `nr-cranial` | 3,700 | **11.0 pp** | **probably whole** — was forecast to split on the old numbers and the old divisor. It carries **34 questions, the module's most**, so if it does print over 13, drive the seam from the `qs` links, not the anatomy |
 | `ps-pharm` | 3,456 + book | 10.3 pp | whole, but ⚠️ **the book adds 4 pages and Psych ch.7 adds the antipsychotics** — watch it |
 | `nr-lmn` | 3,573 (L5 2,048 + L6 1,525) | 10.7 pp | **whole** — muscle vs peripheral nerve remains a clean two-deck seam *if* it prints long |
-| `nr-headache` | 3,647 (book ch.9) | 10.9 pp | whole; **22 questions** |
+| ✅ `nr-headache` | 3,647 (book ch.9) | **printed 10 pp** | ✅ **WRITTEN 2026-08-19** — whole, 11 sections, 2,811 w, all 22 questions linked |
 | `ps-anxiety` + `ps-ocd` | 3,376 (book ch.3, **shared**) | — | ⚠️ **the inverse problem: ONE source for TWO chapters.** Whichever is written first must declare in its §14.5 row what it leaves to the sibling |
 | `nr-ms` · `ps-ocd` · `ps-psychosis` · `ps-symptom` | 2,251–2,441 | 6.7–7.3 pp | inside the ceiling |
 | everything else | 1,257–1,924 | 3.8–5.7 pp | single chapters |
@@ -219,14 +229,21 @@ the book mapper as a split candidate on precedent. **Not decided — read before
 ## 5. Order of work
 
 1. ✅ Deck inventory, extraction check and gap grep — **done 2026-08-18**.
-2. **Book map** — in flight. Nothing depending on the book is briefed until it lands.
-3. **`L17` visual read** — in flight. `ps-pharm` is blocked on it.
-4. **Write the well-sourced chapters first**, in pairs, cap 2 concurrent Opus writers: the neurology
-   chapters carrying questions (`nr-cranial`, `nr-hemi`, `nr-stroke`, `nr-intro`) and the psychiatry
-   chapters with full decks (`ps-ocd`, `ps-psychosis`, `ps-mood`, `ps-somato`, `ps-symptom`).
-5. **Then the six unsourced chapters**, once the book has said what it can pay.
-6. Validate → splice → refile → **print** → audit → commit, per chapter pair. Harnesses:
-   `<scratch>\vdraft.js` · `splice.js` · `modcheck.js` · `print.sh` · `boot.sh`.
+2. ✅ **Book map** — `content\neuro\book-map.md`, done 2026-08-18.
+3. ✅ **`L17` visual read** — cache 239 → 3,358 w, done 2026-08-18. `ps-pharm` is unblocked on the
+   deck but still **partial** on antipsychotics — see the dead-heading finding below.
+4. ✅ **Written: `nr-stroke` · `nr-hemi` · `nr-para` · `nr-headache`** — 4 of 28, 75 of the module's
+   151 questions reachable. **24 chapters holding 76 questions remain.**
+5. **Next, by question weight:** `nr-cranial` (**34 q**, the module's largest single block) and
+   `nr-intro` (**21 q**) — between them **55 of the 76 remaining questions**. Everything after those
+   two is single figures or zero.
+6. **Then the psychiatry chapters with full decks**, then the six materially unsourced ones once the
+   book has said what it can pay.
+7. Validate → splice → refile → **print** → audit → commit, per chapter. Harnesses:
+   `<scratch>\vdraft.js` · `splice-neuro.js` · `resplice-neuro.js` (re-print cycles;
+   `splice-neuro.js` refuses to overwrite, by design) · `modcheck-neuro.js` ·
+   `MOD=neuropsych print.sh` · `boot.sh` · `qdump.js <mod> <chapter>` (a chapter's questions with
+   the key marked, for the §14.2 coverage floor).
 
 ## 6. Standing checks earned elsewhere — apply from chapter one
 
