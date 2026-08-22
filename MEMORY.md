@@ -157,16 +157,15 @@ there before resuming a paused stream. Where this file and the archive disagree,
 - **Corpus 2,097** (2026-08-14): ENT 1,720 · Neuro 158 · Ophtho 138 · Peds 81. Banks: GG
   1,180 · Endpoint 697 · House 78; 54 shared memberships. Module keys `ent`, `ophtho`,
   `pediatrics`, `neuropsych`. Option counts 2–9 coexist; nothing assumes four.
-- **Theory: 121 of 145 chapters.** ENT 30 (259 pp / mean 8.6) · Peds 51 (340 / 8.3) · Ophtho 36
-  (331 / 9.2) · **Neuro 4 of 28 (40 pp)**. 1,309 sections.
-  Drafts: `content\<mod>\theory-drafts\` (⚠️ ENT's bare `ent-csom/tonsils/aom/stridor` files are the
-  DEAD format; their `*.v2/v3` are current). Best models to hand an agent: `ent-nasalobs`,
-  `ent-sinuscomp`, `op-ret`, `op-refract`, `op-lid`.
+- **Theory: 123 of 145 chapters, 1,331 sections.** ENT 30 (259 pp / 8.6) · Peds 51 (340 / 8.3) ·
+  Ophtho 36 (331 / 9.2) · **Neuro 6 of 28 (58 pp)**. Drafts in `content\<mod>\theory-drafts\`
+  (⚠️ ENT's bare `ent-csom/tonsils/aom/stridor` are the DEAD format; their `*.v2/v3` are current).
+  Best models: `ent-nasalobs`, `op-ret`, `op-refract`, `nr-cranial`, `ps-symptom`.
 - Last real `file://` boot **2026-08-19**: **0 console errors, 876 CSS rules, 3
-  `max-aspect-ratio:5/4` blocks, 4 modules, 145 chapters, 2,097 questions, 89 cases, 121 theory
-  chapters, 1,309 sections.** Harnesses in `<scratch>\`: `MOD=<mod> print.sh` · `boot.sh` ·
-  `modcheck-neuro.js` · `vdraft.js` · `splice-neuro.js` / `resplice-neuro.js` (the first refuses to
-  overwrite, by design) · `qdump.js <mod> <ch>` (a chapter's questions, key marked) · `shot.sh`.
+  `max-aspect-ratio:5/4` blocks, 4 modules, 145 chapters, 2,097 questions, 89 cases, 123 theory
+  chapters, 1,331 sections.** Harnesses in `<scratch>\`: `MOD=<mod> print.sh` · `boot.sh` ·
+  `modcheck-neuro.js` · `vdraft.js` · `splice-neuro.js` / `resplice-neuro.js` · `qdump.js <mod>
+  <ch>` (a chapter's questions, key marked) · `shot.sh`.
 - **⚠️ THE THEORY READER IS AN A4 PAGE now (2026-08-19, three user complaints).** The sheet is
   210:297 by `aspect-ratio`, sized from the window, paper margins set in JS from the PAGE's width
   (**percentages resolve against the CONTAINING BLOCK — that fault gave 74px margins on a 510px
