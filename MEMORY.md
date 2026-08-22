@@ -5,19 +5,19 @@ Running record, organised around *resuming*. ISO dates; unverified marked as suc
 story, count and verbatim ruling) in `progress\memory-archive.md`** — read the relevant block
 there before resuming a paused stream. Where this file and the archive disagree, this file wins.
 
-## Resume here — **NEUROPSYCHIATRY THEORY, the last module: 4 of 28 written, 24 left holding 76 questions.** ENT · Peds · Ophtho theory all DONE. Banks stay PAUSED.
+## Resume here — **NEUROPSYCHIATRY THEORY, the last module: 5 of 28 written, 23 left holding 42 questions.** ENT · Peds · Ophtho theory all DONE. Banks stay PAUSED.
 
 - **⚠️⚠️ `content\neuro\theory-plan.md` IS THE MODULE'S WORKING FILE — READ IT FIRST**, with
   `content\neuro\book-map.md`. It carries the deck audit, the six unsourced chapters, the two page
   rates, the order of work and every measurement kept out of this 200-line file.
 - ✅ **Written 2026-08-18/19: `nr-stroke` (10 pp) · `nr-hemi` (10) · `nr-para` (10) ·
-  `nr-headache` (10).** **NEXT BY QUESTION WEIGHT: `nr-cranial` (34 q) then `nr-intro` (21 q)** —
-  55 of the 76 remaining questions between them; everything after is single figures or zero.
+  `nr-headache` (10) · `nr-cranial` (12, whole, contiguous seam recorded in the plan).**
+  **NEXT: `nr-intro` (21 q) — HALF of everything left.** After it the largest is `ps-symptom` at 11,
+  then `ps-psychoed` at 5, and **fourteen chapters carry ZERO questions.**
 - **⚠️ `nr-headache` HAS NO LECTURE — verified, not assumed** (`"tension type"` returns zero across
   all 25 decks). Written wholly from book Neurology ch.9. Same shape may recur; grep before briefing.
-- **⚠️⚠️ THE MODULE HAS TWO PAGE RATES: ÷335 prose, ÷280 TABLE-HEAVY.** `nr-headache` printed 11 pp
-  where ÷335 forecast 8.4, and the trim that recovered the page was **duplication, never a fact** —
-  look for a second copy before looking for something to cut.
+- **⚠️⚠️ PAGE RATE SPREAD IS 281–337 w/pp — PLAN AT ÷280, CLEAR BY PRINTING.** ÷335 under-forecast
+  `nr-headache` by 2.6 pp. Any trim must be **duplication, never a fact** — look for a second copy.
 - **⚠️ `content\ophtho\theory-plan.md` + `book-map.md` still hold the ophtho reconciliation work**
   (~63 register rows, the `va-6`/`pup-10` provenance defects, five held divergences, `wht-8`).
   Do not re-derive any of it.
