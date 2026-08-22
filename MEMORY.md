@@ -166,16 +166,14 @@ there before resuming a paused stream. Where this file and the archive disagree,
   chapters, 1,331 sections.** Harnesses in `<scratch>\`: `MOD=<mod> print.sh` · `boot.sh` ·
   `modcheck-neuro.js` · `vdraft.js` · `splice-neuro.js` / `resplice-neuro.js` · `qdump.js <mod>
   <ch>` (a chapter's questions, key marked) · `shot.sh`.
-- **⚠️ THE THEORY READER IS AN A4 PAGE now (2026-08-19, three user complaints).** The sheet is
-  210:297 by `aspect-ratio`, sized from the window, paper margins set in JS from the PAGE's width
-  (**percentages resolve against the CONTAINING BLOCK — that fault gave 74px margins on a 510px
-  page**), a running head, a foot folio, arrows in the gutters. **THE PAGE MUST NOT BE MADE WHITE**
-  — dark mode's `--tx` is near-white. "In this lecture" is gone; the **lecture title opens the flow**
-  (agreed 2026-08-13, restored after being removed with the duplicate title).
+- **⚠️ THE THEORY READER IS AN A4 PAGE (2026-08-19, three user complaints).** 210:297 by
+  `aspect-ratio`, sized from the window, margins set in JS from the PAGE's width (**percentages
+  resolve against the CONTAINING BLOCK** — that gave 74px margins on a 510px page), running head,
+  foot folio, arrows in the gutters. **THE PAGE MUST NOT BE MADE WHITE** — dark mode's `--tx` is
+  near-white. "In this lecture" is gone; the **lecture title opens the flow** (agreed 2026-08-13).
 - **⚠️⚠️ `overflow:hidden` MAKES A BLOCK MONOLITHIC, AND MONOLITHIC MEANS CLIPPED, NOT BROKEN.**
-  `.th-table` carried it for its rounded corners, so over-tall tables lost their last rows in the
-  reader with nothing on screen to say so (op-lid: 782px and 741px tables in a 613px page). Fixed
-  screen-side only — **print was checked with `pdftotext` first and was never affected.**
+  `.th-table` carried it for its corners, so over-tall tables silently lost their last rows in the
+  reader. Fixed screen-side — **print was checked with `pdftotext` first and was never affected.**
 - **⚠️ `pages ≈ words ÷ 240` is an AGGREGATE predictor, ±5 per chapter** — plan with it, never clear
   a chapter; print it (seven rules: §14.1). **⚠️ A draft header is a claim, not a measurement —
   re-count from disk after the final edit.** Wrong nine times; worst shape a *forecast wearing a
