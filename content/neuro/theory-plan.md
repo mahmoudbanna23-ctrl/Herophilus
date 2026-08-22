@@ -185,8 +185,12 @@ Four chapters are printed now, and they do **not** share one rate:
 | `nr-stroke` | 3,365 | **10 pp** | **337** | prose-leaning |
 | `nr-hemi` + `nr-para` *(as one, before the split)* | 4,687 | **14 pp** | **335** | prose-leaning |
 | **`nr-headache`** | **2,811** | **10 pp** | **281** | ⚠️ **table-heavy — six tables, one of them 14 rows × 4 columns** |
+| **`nr-cranial`** | **3,823** | **12 pp** | **319** | table-heavy, but long prose blocks between the tables |
 
-**Plan a prose chapter at ÷335 and a table-heavy one at ÷280.** `nr-headache` printed at **11 pp on
+**The observed spread is 281–337 w/pp. Plan everything at ÷280 and clear it by printing.** ÷280
+forecast `nr-cranial` at 13.6 pp against a printed **12** — an OVER-prediction, which is the safe
+direction and the whole reason that divisor was chosen. Under-predicting is the failure that
+matters, because it accepts a chapter that prints too long. `nr-headache` printed at **11 pp on
 the first pass** — over the operative ceiling that ÷335 said it would clear by two pages — and needed
 a trim. **A table costs more paper per word than a paragraph**, which is the same finding §14.1
 records from ENT (238–259 w/pp for table-dense chapters against 278–319 for prose-leaning ones), and
@@ -207,7 +211,7 @@ page. Look for a second copy before looking for something to cut.
 | Chapter | source w | ÷335 | verdict |
 |---|---|---|---|
 | **`nr-movement`** | **5,020** (L3 2,699 + L4 2,321) | **15.0 pp** | ⚠️ **SPLIT — the only forecast split left, and the title already admits it.** *"Movement disorders / Epilepsy"* are **two topics**, not one topic taught over two lectures: the §4 rule joins the latter and does not join the former. The seam is the deck boundary and it is clean. Note both halves then sit near 7–8 pp |
-| `nr-cranial` | 3,700 | **11.0 pp** | **probably whole** — was forecast to split on the old numbers and the old divisor. It carries **34 questions, the module's most**, so if it does print over 13, drive the seam from the `qs` links, not the anatomy |
+| ✅ `nr-cranial` | 3,700 | **printed 12 pp** | ✅ **WRITTEN 2026-08-19 — WHOLE**, 12 sections, 3,823 w, all 34 questions linked. Over the ~10 pp operative ceiling and inside the ≤13 hard shape, which is where ophthalmology shipped `op-glauc` and `op-conj`. ⚠️ **A CONTIGUOUS SEAM EXISTS IF IT IS EVER WANTED** and is recorded so nobody re-derives it: `cn-1`–`cn-7` (**I–VI and trigeminal neuralgia**, 1,779 w, **21 questions**) against `cn-8`–`cn-12` (**VII–XII and the facial palsies**, 2,044 w, **13 questions**) — two ~6 pp halves. The examination-vs-disease seam the draft header first proposed is **NOT contiguous** and would reorder the chapter |
 | `ps-pharm` | 3,456 + book | 10.3 pp | whole, but ⚠️ **the book adds 4 pages and Psych ch.7 adds the antipsychotics** — watch it |
 | `nr-lmn` | 3,573 (L5 2,048 + L6 1,525) | 10.7 pp | **whole** — muscle vs peripheral nerve remains a clean two-deck seam *if* it prints long |
 | ✅ `nr-headache` | 3,647 (book ch.9) | **printed 10 pp** | ✅ **WRITTEN 2026-08-19** — whole, 11 sections, 2,811 w, all 22 questions linked |
@@ -232,11 +236,13 @@ the book mapper as a split candidate on precedent. **Not decided — read before
 2. ✅ **Book map** — `content\neuro\book-map.md`, done 2026-08-18.
 3. ✅ **`L17` visual read** — cache 239 → 3,358 w, done 2026-08-18. `ps-pharm` is unblocked on the
    deck but still **partial** on antipsychotics — see the dead-heading finding below.
-4. ✅ **Written: `nr-stroke` · `nr-hemi` · `nr-para` · `nr-headache`** — 4 of 28, 75 of the module's
-   151 questions reachable. **24 chapters holding 76 questions remain.**
-5. **Next, by question weight:** `nr-cranial` (**34 q**, the module's largest single block) and
-   `nr-intro` (**21 q**) — between them **55 of the 76 remaining questions**. Everything after those
-   two is single figures or zero.
+4. ✅ **Written: `nr-stroke` · `nr-hemi` · `nr-para` · `nr-headache` · `nr-cranial`** — 5 of 28,
+   **109 of the module's 151 questions reachable**. **23 chapters holding 42 questions remain.**
+5. **Next, and it is the last big one: `nr-intro` (21 q)** — half of everything left. After it the
+   largest single chapter is `ps-symptom` at 11, then `ps-psychoed` at 5, and **fourteen chapters
+   carry ZERO questions**. ⚠️ `nr-intro` is flagged in §4 as a possible split: 21 questions, a
+   1,469-word deck, and **39 printed book pages across three chapters including a 25-page Neurology
+   Sheet**. Read before forecasting.
 6. **Then the psychiatry chapters with full decks**, then the six materially unsourced ones once the
    book has said what it can pay.
 7. Validate → splice → refile → **print** → audit → commit, per chapter. Harnesses:
