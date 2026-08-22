@@ -121,7 +121,19 @@ const MODULES = [
       ['ps-interview','Interview Assessment'],['ps-osce','OSCE demonstration'],
       ['ps-somato','Somatoform disorders'],['ps-symptom','Symptomatology'],
       ['ps-psychoed','Psychoeducation and Myths'],['ps-anxiety','Anxiety Disorders'],
-      ['ps-ocd','OCD and PTSD'],['ps-mood','Mood Disorders'],['ps-psychosis','Approach to Psychosis'],
+      /* Split 2026-08-22, AFTER printing 14 pp — one past the 13-page hard
+         shape, with 132 words stranded on page 14. Two genuine second copies
+         were trimmed FIRST and recovered only 82 words of paper; 50 words still
+         sat on page 14 and nothing left was duplication, so the chapter split.
+         The seam is the DECK'S OWN `PART ONE` / `PART TWO` boundary: 3,139 words
+         of OCD against 1,850 of PTSD, at the chapter's measured 306 w/pp.
+         ⚠ Unlike nr-lmn/nr-nerve this splits a SINGLE deck. §4's merge rule
+         joins one TOPIC taught over two lectures and says nothing about two
+         disorders taught in one; ≤13 pp measured by printing is a user ruling.
+         ps-ocd keeps its id, so npqb-ps-7 does not move. SCHEDULE untouched. */
+      ['ps-ocd','Obsessive-compulsive disorder'],
+      ['ps-ptsd','PTSD and acute stress disorder'],
+      ['ps-mood','Mood Disorders'],['ps-psychosis','Approach to Psychosis'],
       ['ps-geri','Geriatric Psychiatry'],['ps-child','Child Psychiatry'],['ps-sud','Substance use disorder'],
       ['ps-emerg','Emergency Psychiatry'],['ps-pharm','Psychopharmacology'],
       ['ps-devices','Devices in Psychiatry'],['ps-therapy','Psychotherapy']]},

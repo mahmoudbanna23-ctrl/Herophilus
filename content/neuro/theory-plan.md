@@ -18,9 +18,10 @@ expensive lessons first:
 
 ## 1. Shape
 
-**29 chapters in two groups: Psychiatry 16, Neurology 13.**
-⚠️ **Was 27. Two SPLITS added one each** — `nr-hemi`/`nr-para` on 2026-08-18 and
-`nr-lmn`/`nr-nerve` on 2026-08-22, both after printing over the 13-page hard shape. Ids and titles in `app\data\modules.js`
+**30 chapters in two groups: Psychiatry 17, Neurology 13.**
+⚠️ **Was 27. THREE SPLITS added one each**, every one of them **after printing** over the
+13-page hard shape: `nr-hemi`/`nr-para` 2026-08-18 · `nr-lmn`/`nr-nerve` and `ps-ocd`/`ps-ptsd`
+both 2026-08-22. ⚠️ **The third split a SINGLE deck** — see §4. Ids and titles in `app\data\modules.js`
 under module id `neuropsych`. **151 questions**, all `gradegain`, all MCQ, ids `npqb-`.
 
 ### ⚠️⚠️ THE QUESTION DISTRIBUTION IS THE MOST LOPSIDED IN THE PROJECT
@@ -81,7 +82,7 @@ measured that way and comparability matters more than purity.
 | L3) MOVEMENT DISORDERS | 51 | **2,699** | 2,485 | 53 | `nr-movement` |
 | L4,5) Psychiatric symptomatology | 63 | **2,441** | 1,707 | 39 | `ps-symptom` ⚠️ *30 % markup — the most bulleted deck in the module* |
 | L2) Multiple sclerosis | 68 | **2,387** | 2,212 | 35 | `nr-ms` |
-| L8) OCD & PTSD | 33 | **2,322** | 2,141 | 70 | `ps-ocd` |
+| L8) OCD & PTSD | 33 | **2,322** | 2,141 | 70 | `ps-ocd` + **`ps-ptsd`** ✅ *(split 2026-08-22 on the deck's own PART ONE / PART TWO seam)* |
 | L4) Seizures_Epilepsy | 32 | **2,321** | 2,171 | 73 | `nr-movement` |
 | L11,12) Schizophrenia | 57 | **2,251** | 2,180 | 39 | `ps-psychosis` |
 | L10) Stroke | 53 | **2,090** | 2,047 | 39 | `nr-stroke` ✅ *written* |
@@ -217,8 +218,9 @@ page. Look for a second copy before looking for something to cut.
 | `ps-pharm` | 3,456 + book | 10.3 pp | whole, but ⚠️ **the book adds 4 pages and Psych ch.7 adds the antipsychotics** — watch it |
 | ✅ `nr-lmn` | 3,573 (L5 2,048 + L6 1,525) | **printed 17 pp WHOLE** | ✅✅ **WRITTEN AND SPLIT 2026-08-22.** Written whole against both decks, spliced, printed — **17 pp, four past the hard shape** — then split on the **deck boundary**, which was contiguous and needed no reordering. **`nr-lmn` (L5, muscle + NMJ): 10 sections, 3,481 w, printed 12 pp**, keeps `npqb-nr-118`. **`nr-nerve` (L6, peripheral nerve): 5 sections, 2,134 w, printed 8 pp**, zero questions. ⚠️ **This REVERSED the original `nr-lmn1`+`nr-lmn2` merge** — the merge rule joins one topic taught over two lectures, and these are two topics. ⚠️ **The ÷335 row above forecast 10.7 pp against a printed 17** — its worst miss in this module, and the reason ÷280 is the planning divisor |
 | ✅ `nr-headache` | 3,647 (book ch.9) | **printed 10 pp** | ✅ **WRITTEN 2026-08-19** — whole, 11 sections, 2,811 w, all 22 questions linked |
-| `ps-anxiety` + `ps-ocd` | 3,376 (book ch.3, **shared**) | — | ⚠️ **the inverse problem: ONE source for TWO chapters.** Whichever is written first must declare in its §14.5 row what it leaves to the sibling |
-| `nr-ms` · `ps-ocd` · `ps-psychosis` · `ps-symptom` | 2,251–2,441 | 6.7–7.3 pp | inside the ceiling |
+| ✅ `ps-ocd` | deck 2,322 + book pp. 197-199 | **printed 14 pp WHOLE** | ✅✅ **WRITTEN AND SPLIT 2026-08-22.** ⚠️ **Two second copies were trimmed FIRST and it was not enough** — a consolidated *which-source-has-what* table and a restatement of PTSD prevalence recovered **82 words of paper**, leaving **50 words on page 14** with **nothing left that was duplication**. Split on the deck's own **`PART ONE` / `PART TWO`** seam: **`ps-ocd`** (OCD, 10 sections, 3,139 w, **printed 10 pp**, keeps `npqb-ps-7`) and new **`ps-ptsd`** (PTSD + ASD, 4 sections, 1,850 w, **printed 6 pp**, 0 q). ⚠️ **The first split of a SINGLE deck** — §4 joins one TOPIC over two lectures and says nothing about two disorders in one lecture. **Measured rate 306 w/pp** |
+| `ps-anxiety` | 3,376 (book ch.3, **shared**) | — | ⚠️ **The inverse problem is now HALF-RESOLVED.** `ps-ocd` was written first and **declares in `oc-10` exactly what it leaves here**: printed **193-196 and 200-201** entire, minus **three named lines** (4-12 weeks for OCD, the 12-month minimum, clomipramine-for-OCD). `ps-ptsd`'s `pt-4` **lifts nothing** from the spine. ⚠️ **AND IT HAS A DECK** — the back half of `L4,5`, per `sy-10` |
+| `nr-ms` · `ps-psychosis` · `ps-symptom` | 2,251–2,441 | 6.7–7.3 pp | inside the ceiling. ⚠️ **`ps-ocd` was in this row and printed 14 pp** — a deck word count is not a page count when a second source is added |
 | everything else | 1,257–1,924 | 3.8–5.7 pp | single chapters |
 
 ⚠️ **`ps-interview` + `ps-osce` are the sharpest inverse problem** — **473 words** for two
@@ -238,10 +240,10 @@ the book mapper as a split candidate on precedent. **Not decided — read before
 2. ✅ **Book map** — `content\neuro\book-map.md`, done 2026-08-18.
 3. ✅ **`L17` visual read** — cache 239 → 3,358 w, done 2026-08-18. `ps-pharm` is unblocked on the
    deck but still **partial** on antipsychotics — see the dead-heading finding below.
-4. ✅ **Written — 11 of 29** *(measured from disk 2026-08-22)*: `nr-stroke` · `nr-hemi` ·
+4. ✅ **Written — 13 of 30** *(measured from disk 2026-08-22)*: `nr-stroke` · `nr-hemi` ·
    `nr-para` · `nr-headache` · `nr-cranial` · `ps-symptom` · `ps-psychoed` · `nr-ms` · `ps-mood` ·
-   **`nr-lmn`** · **`nr-nerve`**. **101 sections, 27,632 body words.**
-   **128 of the module's 151 questions reachable. 18 chapters holding 23 questions remain.**
+   **`nr-lmn`** · **`nr-nerve`** · **`ps-ocd`** · **`ps-ptsd`**. **115 sections, 32,621 body words.**
+   **129 of the module's 151 questions reachable. 17 chapters holding 22 questions remain.**
 5. ⚠⚠ **`nr-intro` (21 q) IS THE NEXT ONE AND IT IS BLOCKED — IT NEEDS A USER DECISION.**
    It holds **21 of the 23 questions left — all but two.** **12 of 23 fact probes return ZERO
    against its deck** (gracile/cuneate, triceps, abdominal reflex, hemianopia, optic radiation,
@@ -252,8 +254,8 @@ the book mapper as a split candidate on precedent. **Not decided — read before
    ⚠️ **`nr-intro` OWES two slides to `nr-lmn`:** L1's `Upper Motor Neuron Manifestations` and
    `Lower Motor Neuron Manifestations` are **counted to `nr-lmn`'s `lm-1`** and **must not be
    counted again** when `nr-intro` is written. Same shape as `op-va`/`L1,2` in ophthalmology.
-   After `nr-intro`, **only `nr-movement` (1) and `ps-ocd` (1) carry questions at all**, and
-   **fifteen carry ZERO** — counted, not carried over.
+   After `nr-intro`, **only `nr-movement` (1) carries a question at all**, and **fifteen carry
+   ZERO** — counted, not carried over. ✅ `ps-ocd` is written.
 6. **Then the psychiatry chapters with full decks**, then the six materially unsourced ones once the
    book has said what it can pay.
 7. Validate → splice → refile → **print** → audit → commit, per chapter. Harnesses:
