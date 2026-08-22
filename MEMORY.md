@@ -117,10 +117,10 @@ there before resuming a paused stream. Where this file and the archive disagree,
   first briefs for that). If time runs short, **say so loudly — scaling down is theirs.**
 - **A defective key is noted, never disputed** (2026-08-11) — never take a key dispute to the user.
   **A lecture-numbering gap = the professor withheld it** (2026-08-14) — fill and tag, never chase.
-- **Publishing agreed, parked until ENT done.** Before first publish: cache-bust the data
-  `<script>` tags (verified absent), fix the final domain first (localStorage is per-origin),
-  finish folding. Publishing enables Google sign-in. Host undecided (Netlify unreachable);
-  public-vs-private undecided (commercial bank content). Full content+design review folds in.
+- **Publishing agreed, parked until ENT done.** Before first publish: **fix the final domain**
+  (localStorage is per-origin), **cache-bust the data `<script>` tags** (verified absent), finish
+  folding, run the content+design review. Publishing enables Google sign-in. Host and
+  public-vs-private both undecided.
 
 ## The method — what transcription work must never skip
 
