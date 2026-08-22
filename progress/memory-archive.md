@@ -232,3 +232,61 @@ bullets carried was kept in MEMORY.md, compressed — only the module-specific e
   is a property of the PAGE**. **Back-references hit 28%** — repair every "previous case", the deck
   is shuffled (present in both ophtho banks too). Figures: **13 of 13 crops wrong first try — LOOK
   at every crop**; an answer-page figure is never cropped (it would reveal the key).
+
+
+## Pruned out of MEMORY.md on 2026-08-22, verbatim
+
+Removed when MEMORY.md hit 223 lines against its 200-line cap, after the nr-lmn split.
+Each block survives in MEMORY.md as a shorter entry pointing here.
+
+- **⚠️ `content\ophtho\theory-plan.md` + `book-map.md` still hold the ophtho reconciliation work**
+  (~63 register rows, the `va-6`/`pup-10` provenance defects, five held divergences, `wht-8`).
+  Do not re-derive any of it.
+
+- **⚠️⚠️ CHECK A CHAPTER'S QUESTIONS AGAINST ITS SOURCE BEFORE BRIEFING IT.** The plan's Decks
+  column is an assignment, **not a coverage guarantee**: **none of `op-va`'s 16 questions is
+  answerable from `L3,4`**, its only listed deck — they are `L1,2`'s, lines 438–613 (866 w), now
+  counted to `op-va` (**`op-intro`/`op-vissym` must not re-count them**). Same shape at `op-intro`:
+  its 13 questions are **anatomy and physiology**, not the history-taking its title promises.
+- **⚠️⚠️ AFTER A READ, A SOURCE'S WORD COUNT IS THE CACHE'S, NEVER `pdftotext`'s** — the `L7,8`
+  reader advised against splitting `op-refract` on "1,540 words"; its own transcription held
+  **4,439**, and the halves printed 10 and 8. **A text layer can be word-complete and still be
+  wrong** (p71 filed PRK under lenticular surgery). **`pdffonts` per page detects text drawn as
+  VECTOR OUTLINES** (`L31,32` p22: zero characters in every mode).
+- **⚠️⚠️ COUNT A CHAPTER'S REGISTER ROWS AND VERIFY EVERY ROW'S *SECOND CLAUSE* BEFORE BRIEFING IT.**
+  `op-ret` was named in **twelve rows from six donors and five were wrong** (~29 pp forecast against
+  five questions — a question count predicts nothing). **TEN fault shapes**: over-specified · absent
+  from the deck · wrong deck · wrong slide · circular · wrong receiver · **wrong line** · **stale, a
+  third chapter delivered it** · **donor under-stating its own coverage** · **⚠️ LIVE POINTER TO AN
+  EMPTY DESTINATION** — ch.17 → ch.16 for retinoblastoma resolves, and ch.16's section is **92 words,
+  the only RB text in 274 pp**. **A resolved cross-reference is not evidence of coverage; measure
+  the destination.** Evidence: §14.5, `theory-plan.md`.
+- **⚠️⚠️ AUDIT "row filed" CLAIMS — FOUR WERE FALSE** (`uv-1`/`uv-8`/`uv-9`/`scl-1`; neither donor
+  appeared in §14.5 at all). Rebuilt, marked reconstructed. **And a row's evidence has a TIMESTAMP:**
+  `vis-11` shipped *"temporal arteritis and ESR return zero module-wide"* by quoting a row true when
+  written; they return 9 and 8. **Re-run the grep, never quote another row's finding.**
+
+- **⚠️⚠️ TEST-PRINT BEFORE ACCEPTING A SPLIT *OR* A COMPRESSION — the ÷240 estimator's two worst
+  misses are the BOOK-SOURCED chapters**: `op-lid` forecast 16.1 pp printed **11**, `op-lac` 15.6 →
+  **11**. Over-predicted by 5.1 · 5 · 4.6 · 3 · 2.3 · 2.1 · 2 · 2 · 1.5; under once (`op-glauc`).
+  **A dying agent's last line was "Now the op-lac compression" — printing showed nothing to cut.**
+- **⚠️⚠️ USER RULING 2026-08-18 — THE BOOK IS THE MODULE'S MAIN REFERENCE**, and the last decks
+  (`L31,32`, `L33,34`, `L35,36`, `L37`) are **compilations of earlier chapters — ignore them, and
+  any deck like them**. `ophthalmology.pdf` = **"OPHTHALMOLOGY WITH TUTORIALS", HEALIX TEAM**,
+  274 A4 pp, image-only, **PDF = printed + 2**; contents, its own **exam-weight column** (a real
+  budget basis where §14's formula collapsed) and per-chapter ranges in `book-map.md`, caches in
+  `content\ophtho\book\`. **⚠️ `(Tutorial)` / `(T)` = "study in round & skip in final"** — record
+  every marker; **NINE physical forms, and it is NEVER a licence to compress.**
+- **⚠️ USER RULING 2026-08-18 — DO NOT ADD chapters for the three deckless book chapters** (Vitreous,
+  Paediatric Ophthalmology, Drugs and the Eye; 10.5 % of the paper). Asked with evidence, answered
+  *"Don't add them"* — **settled, do not re-propose.** Scope comes from the lecture series; the book
+  is the authority on content, never on scope. ⚠️ **Reading ch.16 for `op-onc`'s retinoblastoma was
+  NOT a breach** — the ruling bars adding chapters, not reading pages. Ophtho **finished at 36**.
+- **⚠️ Treat every "the book always/never…" line as a HYPOTHESIS** until a chapter has been read
+  end to end. Ophtho's figure numbering was called absent and is merely inconsistent.
+
+- ✅ **OPHTHO BANKS COUNTED FOR REAL 2026-08-18 — the ±30 % projection is dead: ~1,918 REMAIN**
+  (GG 949 of 1,087 ±0–5, House ~969 of ~1,025 ±30) against 27 Sep. ⚠️ **~304 are IMAGE questions and
+  every crop is individually looked at — the dominant cost, larger than the transcription.**
+  ⚠️ **56 House questions are STAGED AND UNMERGED** (validated, 0 folds, all net new); House's **132
+  model-exam items are SHORT-ANSWER → the `type:'case'` route.** Arithmetic and method: `ledger.md`.

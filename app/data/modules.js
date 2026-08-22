@@ -3,6 +3,9 @@
    (2026-07-26, user's instruction). Merged: ent-audio1+2, ent-rhin1+2,
    op-glauc1+2, op-cornea1+2, op-cat1+2, op-ret1+2, op-neuro1+2, op-trauma1+2,
    op-squint1+2, nr-lmn1+2. 114 chapters -> 104.
+   ⚠️ nr-lmn1+2 was REVERSED on 2026-08-22: the merged chapter printed 17 pp,
+   four past the 13-page hard shape, and its two decks are two TOPICS rather than
+   one topic taught over two lectures. See the note at nr-lmn/nr-nerve below.
    SCHEDULE is deliberately untouched: it carries no chapter ids. */
 
 const MODULES = [
@@ -125,7 +128,18 @@ const MODULES = [
     {name:'Neurology', chapters:[
       ['nr-intro','Introduction to neurology and localization'],['nr-ms','MS and demyelinating disorders'],
       ['nr-movement','Movement disorders / Epilepsy'],
-      ['nr-lmn','LMN: peripheral nerve, muscle and neuromuscular disorders'],['nr-cns','CNS infections'],
+      /* Split 2026-08-22, AFTER printing 17 pp — four past the 13-page hard
+         shape. The seam is the DECK BOUNDARY and it is contiguous: L5) Muscle
+         Disease against L6) Peripheral neuropathy, 3,481 words against 2,134 at
+         the chapter's own measured rate of 296 w/pp. This REVERSES the original
+         nr-lmn1+2 merge noted at the head of this file: the merge rule joins one
+         topic taught over two lectures, and these are two topics. nr-lmn keeps
+         its id, so the module's only LMN question, npqb-nr-118 (waddling gait),
+         does not move. SCHEDULE is untouched — it carries no chapter ids, and the
+         nr-hemi/nr-para split of 2026-08-18 left its wording alone too. */
+      ['nr-lmn','Muscle disease and the neuromuscular junction'],
+      ['nr-nerve','Peripheral neuropathy and Guillain-Barré'],
+      ['nr-cns','CNS infections'],
       ['nr-cranial','Cranial nerves disorders'],['nr-delirium','Delirium and Coma'],
       ['nr-headache','Headache'],['nr-stroke','Cerebrovascular stroke'],
       ['nr-backpain','Cervical and low back pain'],

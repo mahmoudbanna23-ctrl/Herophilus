@@ -5,82 +5,74 @@ Running record, organised around *resuming*. ISO dates; unverified marked as suc
 story, count and verbatim ruling) in `progress\memory-archive.md`** — read the relevant block
 there before resuming a paused stream. Where this file and the archive disagree, this file wins.
 
-## Resume here — **NEUROPSYCHIATRY THEORY, the last module: 6 of 28 written, 22 left holding 31 questions.** ENT · Peds · Ophtho theory all DONE. Banks stay PAUSED.
+## Resume here — **NEUROPSYCHIATRY THEORY, the last module: 11 of 29 written, 18 left holding 23 questions.** ENT · Peds · Ophtho theory all DONE. Banks stay PAUSED.
 
 - **⚠️⚠️ `content\neuro\theory-plan.md` IS THE MODULE'S WORKING FILE — READ IT FIRST**, with
   `content\neuro\book-map.md`. It carries the deck audit, the six unsourced chapters, the two page
   rates, the order of work and every measurement kept out of this 200-line file.
-- ✅ **Written 2026-08-18/19: `nr-stroke` 10 pp · `nr-hemi` 10 · `nr-para` 10 · `nr-headache` 10 ·
-  `nr-cranial` 12 (whole; contiguous seam recorded in the plan) · `ps-symptom` 8.**
-- **⚠️⚠️ `nr-intro` (21 q — TWO-THIRDS of everything left) IS BLOCKED AND NEEDS A USER DECISION.**
+- ✅ **Written: `nr-stroke` 10 pp · `nr-hemi` 10 · `nr-para` 10 · `nr-headache` 10 · `nr-cranial` 12
+  (whole; seam in the plan) · `ps-symptom` 8 · `ps-psychoed` · `nr-ms` · `ps-mood` · `nr-lmn` 12 ·
+  `nr-nerve` 8.**
+- **⚠️⚠️ `nr-lmn` PRINTED 17 pp WHOLE AND WAS SPLIT 2026-08-22 — the module is now 29 chapters.**
+  Seam = the **deck boundary**: **`nr-lmn`** (L5 muscle + NMJ, 3,481 w, **12 pp**, keeps
+  `npqb-nr-118`) against new **`nr-nerve`** (L6 nerve, 2,134 w, **8 pp**, 0 q). It **REVERSES the
+  `nr-lmn1`+`nr-lmn2` merge** — that rule joins one topic over two lectures, and these are two.
+  Retitled in `modules.js`; **`SCHEDULE` untouched**, per `nr-hemi`/`nr-para`. **290–296 w/pp.**
+- **⚠️⚠️ `nr-intro` OWES TWO SLIDES TO `nr-lmn`** — L1's `Upper`/`Lower Motor Neuron Manifestations`
+  are **counted to `lm-1`**, **never again**. Three chapters (`str-4`, `hem-7`, `cn-9`) filed the
+  UMN/LMN framework to `nr-lmn`, whose **own decks never print it** (`UMN` returns in L1, L2, L8,
+  L10, L12, L17 — not L5 or L6). The `op-va`/`L1,2` shape, inside neurology.
+- **⚠️⚠️ `nr-intro` (21 q — 21 of the 23 LEFT) IS BLOCKED AND NEEDS A USER DECISION.**
   **12 of 23 probes return ZERO against its deck** (gracile/cuneate, triceps, abdominal reflex,
   hemianopia, optic radiation, power grading, biceps, brachioradialis, clonus, somatosensory,
   rigidity, lateral column). The book HAS it — **39 printed pages over three chapters, incl. a
   25-page `Neurology Sheet`** — but they are image-only, so it is **a subagent render or a chapter
-  written half from tagged outside knowledge.** After it, the largest chapter left is 5 questions
-  and **fourteen carry ZERO.**
+  written half from tagged outside knowledge.** After it **only `nr-movement` (1) and `ps-ocd` (1)
+  carry a question at all, and fifteen carry ZERO.**
 - **⚠️ `ps-anxiety` HAS A DECK — the back half of `L4,5`**, from the *"Anxiety and related
-  disorders"* slide on: the DSM list, the differential, *"NO DIAGNOSTIC TEST"* and a full treatment
-  block. **The plan says its source is book Psych ch.3 and assigns L4,5 to `ps-symptom` alone.**
-  Deferred in `sy-10`. **Check every deck's BACK HALF before trusting the plan's assignment.**
+  disorders"* slide on: the DSM list, the differential, *"NO DIAGNOSTIC TEST"*, treatment. **The
+  plan assigns L4,5 to `ps-symptom` alone.** Deferred in `sy-10`. **Check every deck's BACK HALF.**
 - **⚠️ `nr-headache` HAS NO LECTURE — verified, not assumed** (`"tension type"` returns zero across
   all 25 decks). Written wholly from book Neurology ch.9. Same shape may recur; grep before briefing.
-- **⚠️⚠️ PAGE RATE SPREAD IS 281–337 w/pp — PLAN AT ÷280, CLEAR BY PRINTING.** ÷335 under-forecast
-  `nr-headache` by 2.6 pp. Any trim must be **duplication, never a fact** — look for a second copy.
-- **⚠️ `content\ophtho\theory-plan.md` + `book-map.md` still hold the ophtho reconciliation work**
-  (~63 register rows, the `va-6`/`pup-10` provenance defects, five held divergences, `wht-8`).
-  Do not re-derive any of it.
+- **⚠️⚠️ PAGE RATE SPREAD IS 267–337 w/pp — PLAN AT ÷280, CLEAR BY PRINTING.** Any trim must be
+  **duplication, never a fact** — look for a second copy before looking for something to cut.
+- **⚠️ The ophtho reconciliation work is NOT done** — ~63 register rows, the `va-6`/`pup-10`
+  provenance defects, five held divergences, `wht-8`. In its `theory-plan.md`; never re-derive it.
 - **⚠️ A SPLIT MOVES QUESTIONS, and they are reassigned from the theory `qs` links, never from
   the titles** — ophtho refiled 12, 1, 1, 16 and 2 that way across its eight splits.
-- **⚠️⚠️ CHECK A CHAPTER'S QUESTIONS AGAINST ITS SOURCE BEFORE BRIEFING IT.** The plan's Decks
-  column is an assignment, **not a coverage guarantee**: **none of `op-va`'s 16 questions is
-  answerable from `L3,4`**, its only listed deck — they are `L1,2`'s, lines 438–613 (866 w), now
-  counted to `op-va` (**`op-intro`/`op-vissym` must not re-count them**). Same shape at `op-intro`:
-  its 13 questions are **anatomy and physiology**, not the history-taking its title promises.
-- **⚠️⚠️ AFTER A READ, A SOURCE'S WORD COUNT IS THE CACHE'S, NEVER `pdftotext`'s** — the `L7,8`
-  reader advised against splitting `op-refract` on "1,540 words"; its own transcription held
-  **4,439**, and the halves printed 10 and 8. **A text layer can be word-complete and still be
-  wrong** (p71 filed PRK under lenticular surgery). **`pdffonts` per page detects text drawn as
-  VECTOR OUTLINES** (`L31,32` p22: zero characters in every mode).
+- **⚠️⚠️ CHECK A CHAPTER'S QUESTIONS AGAINST ITS SOURCE BEFORE BRIEFING IT.** A plan's Decks column
+  is an assignment, **not a coverage guarantee** — **none of `op-va`'s 16 questions was answerable
+  from its only listed deck**, and `op-intro`'s 13 test anatomy, not its title's history-taking.
+- **⚠️⚠️ AFTER A READ, A SOURCE'S WORD COUNT IS THE CACHE'S, NEVER `pdftotext`'s** — a reader argued
+  against splitting `op-refract` on "1,540 words"; its transcription held **4,439**. **A text layer
+  can be word-complete and still be wrong.** **`pdffonts` per page detects VECTOR-OUTLINE text** —
+  fonts listed with zero characters; a page with **zero fonts is hiding nothing**.
 - **⚠️⚠️ COUNT A CHAPTER'S REGISTER ROWS AND VERIFY EVERY ROW'S *SECOND CLAUSE* BEFORE BRIEFING IT.**
-  `op-ret` was named in **twelve rows from six donors and five were wrong** (~29 pp forecast against
-  five questions — a question count predicts nothing). **TEN fault shapes**: over-specified · absent
-  from the deck · wrong deck · wrong slide · circular · wrong receiver · **wrong line** · **stale, a
-  third chapter delivered it** · **donor under-stating its own coverage** · **⚠️ LIVE POINTER TO AN
-  EMPTY DESTINATION** — ch.17 → ch.16 for retinoblastoma resolves, and ch.16's section is **92 words,
-  the only RB text in 274 pp**. **A resolved cross-reference is not evidence of coverage; measure
-  the destination.** Evidence: §14.5, `theory-plan.md`.
-- **⚠️⚠️ AUDIT "row filed" CLAIMS — FOUR WERE FALSE** (`uv-1`/`uv-8`/`uv-9`/`scl-1`; neither donor
-  appeared in §14.5 at all). Rebuilt, marked reconstructed. **And a row's evidence has a TIMESTAMP:**
-  `vis-11` shipped *"temporal arteritis and ESR return zero module-wide"* by quoting a row true when
-  written; they return 9 and 8. **Re-run the grep, never quote another row's finding.**
+  `op-ret` was named in **twelve rows from six donors and five were wrong** — a question count
+  predicts nothing. **TEN fault shapes, in `progress\memory-archive.md`.** The two that recur:
+  **⚠️ A RESOLVED CROSS-REFERENCE PROVES NOTHING — measure the destination** (ch.17 → ch.16 for
+  retinoblastoma resolves into **92 words**), and **⚠️ it may resolve to the WRONG section** (two in
+  `nr-lmn`, after a mid-write renumber). **Check the target, not that the id exists.**
+- **⚠️⚠️ AUDIT "row filed" CLAIMS — FOUR WERE FALSE** (`uv-1`/`uv-8`/`uv-9`/`scl-1`). **And a row's
+  evidence has a TIMESTAMP:** `vis-11` shipped a zero-returns claim by quoting a row true when it
+  was written; it returns 9 now. **Re-run the grep, never quote another row's finding.**
 - **⚠️⚠️ "NO ORPHAN WORDS" IS NOT A VALID CHECK** — it proves every word landed SOMEWHERE, never in
   the right sentence. **Never accept a reconstruction on a word-conservation argument; render the
-  page.** `pdftotext -raw` (draw order) recovers slides whose text streams together (`L33,34` p.19).
-  **Text-sufficient is a claim about PROSE, never about tables or columns.**
+  page.** `pdftotext -raw` (draw order) recovers slides whose text streams together. **Text-sufficient
+  is a claim about PROSE, never about tables or columns.**
 - **⚠️ NEVER `git add` A DIRECTORY WHILE A SUBAGENT IS WRITING INTO IT** — **stage explicit paths.**
 - ✅ **Ophtho book caches exist — 11 chapters, 70,704 w** in `content\ophtho\book\`. Do not re-read.
-- **⚠️⚠️ TEST-PRINT BEFORE ACCEPTING A SPLIT *OR* A COMPRESSION — the ÷240 estimator's two worst
-  misses are the BOOK-SOURCED chapters**: `op-lid` forecast 16.1 pp printed **11**, `op-lac` 15.6 →
-  **11**. Over-predicted by 5.1 · 5 · 4.6 · 3 · 2.3 · 2.1 · 2 · 2 · 1.5; under once (`op-glauc`).
-  **A dying agent's last line was "Now the op-lac compression" — printing showed nothing to cut.**
-- **⚠️⚠️ USER RULING 2026-08-18 — THE BOOK IS THE MODULE'S MAIN REFERENCE**, and the last decks
-  (`L31,32`, `L33,34`, `L35,36`, `L37`) are **compilations of earlier chapters — ignore them, and
-  any deck like them**. `ophthalmology.pdf` = **"OPHTHALMOLOGY WITH TUTORIALS", HEALIX TEAM**,
-  274 A4 pp, image-only, **PDF = printed + 2**; contents, its own **exam-weight column** (a real
-  budget basis where §14's formula collapsed) and per-chapter ranges in `book-map.md`, caches in
-  `content\ophtho\book\`. **⚠️ `(Tutorial)` / `(T)` = "study in round & skip in final"** — record
-  every marker; **NINE physical forms, and it is NEVER a licence to compress.**
-- **⚠️ USER RULING 2026-08-18 — DO NOT ADD chapters for the three deckless book chapters** (Vitreous,
-  Paediatric Ophthalmology, Drugs and the Eye; 10.5 % of the paper). Asked with evidence, answered
-  *"Don't add them"* — **settled, do not re-propose.** Scope comes from the lecture series; the book
-  is the authority on content, never on scope. ⚠️ **Reading ch.16 for `op-onc`'s retinoblastoma was
-  NOT a breach** — the ruling bars adding chapters, not reading pages. Ophtho **finished at 36**.
-- **⚠️ Treat every "the book always/never…" line as a HYPOTHESIS** until a chapter has been read
-  end to end. Ophtho's figure numbering was called absent and is merely inconsistent.
+- **⚠️⚠️ TEST-PRINT BEFORE ACCEPTING A SPLIT *OR* A COMPRESSION.** An estimator decides nothing:
+  ÷240 **over**-predicted ophtho by up to **5.1 pp**, and ÷335 **under**-predicted `nr-lmn` by
+  **6.3** (10.7 forecast, **17 printed**). Full miss table: `progress\memory-archive.md`.
+- ✅ **OPHTHALMOLOGY FINISHED at 36 chapters.** Its two **USER RULINGS of 2026-08-18** — *the book is
+  that module's main reference* and *do not add chapters for the three deckless book chapters* — are
+  **settled, do not re-propose**; archived in full with the book's identity, its exam-weight column
+  and the `(Tutorial)`/`(T)` rule (**never a licence to compress**). ⚠️ **The half that carries over:
+  scope comes from the LECTURE SERIES; the book is the authority on content, never on scope.**
+- **⚠️ Treat every "the book always/never…" line as a HYPOTHESIS** until a chapter is read end to end.
 - **⚠️ ENT is NOT closed**: 25 §14.5 rows open **+ 33 bold-led paragraphs over the 55-word cap**
-  (peds 2, ophtho 0) — the ENT reconciliation pass. ⚠️ **A cap auditor must separate BULLETS from
-  PARAGRAPHS** — conflating them faked four failures.
+  (peds 2, ophtho 0). ⚠️ **A cap auditor must separate BULLETS from PARAGRAPHS** — four fake fails.
 - **ENT banks, frozen mid-flight**: ✅ Endpoint · ✅ GG Ear+Nose closed. **⚠️ Only GG Throat t10 is
   left** — staged complete, **55 of 66 undrafted**. Then **House from PDF p.15** (`enthd-`, 41 done,
   next ch.3 Q45). Every count, range and next step: `ledger.md` §14 + the archive.
@@ -88,11 +80,10 @@ there before resuming a paused stream. Where this file and the archive disagree,
   ENT **22 Sep** · Ophtho **27 Sep** · Neuro **3 Oct** · Peds papers **18–19 Oct**.
   `schedule.js` rebuilt on them (user must press **Reset to the original plan**). **Nothing is
   dropped — banks are deferred, not cut**; stop only at clean topic boundaries.
-- ✅ **OPHTHO BANKS COUNTED FOR REAL 2026-08-18 — the ±30 % projection is dead: ~1,918 REMAIN**
-  (GG 949 of 1,087 ±0–5, House ~969 of ~1,025 ±30) against 27 Sep. ⚠️ **~304 are IMAGE questions and
-  every crop is individually looked at — the dominant cost, larger than the transcription.**
-  ⚠️ **56 House questions are STAGED AND UNMERGED** (validated, 0 folds, all net new); House's **132
-  model-exam items are SHORT-ANSWER → the `type:'case'` route.** Arithmetic and method: `ledger.md`.
+- ✅ **OPHTHO BANKS COUNTED FOR REAL 2026-08-18: ~1,918 REMAIN** (GG 949 of 1,087, House ~969 of
+  ~1,025) against 27 Sep. ⚠️ **~304 are IMAGE questions and every crop is looked at — the dominant
+  cost.** ⚠️ **56 House questions are STAGED AND UNMERGED**; its **132 model-exam items are
+  SHORT-ANSWER → the `type:'case'` route.** Arithmetic and method: `ledger.md`.
 
 ## Governing decisions (verbatim rulings in the archive)
 
@@ -157,15 +148,15 @@ there before resuming a paused stream. Where this file and the archive disagree,
 - **Corpus 2,097** (2026-08-14): ENT 1,720 · Neuro 158 · Ophtho 138 · Peds 81. Banks: GG
   1,180 · Endpoint 697 · House 78; 54 shared memberships. Module keys `ent`, `ophtho`,
   `pediatrics`, `neuropsych`. Option counts 2–9 coexist; nothing assumes four.
-- **Theory: 123 of 145 chapters, 1,331 sections.** ENT 30 (259 pp / 8.6) · Peds 51 (340 / 8.3) ·
-  Ophtho 36 (331 / 9.2) · **Neuro 6 of 28 (58 pp)**. Drafts in `content\<mod>\theory-drafts\`
+- **Theory: 128 of 146 chapters, 1,371 sections.** ENT 30 (259 pp / 8.6) · Peds 51 (340 / 8.3) ·
+  Ophtho 36 (331 / 9.2) · **Neuro 11 of 29**. Drafts in `content\<mod>\theory-drafts\`
   (⚠️ ENT's bare `ent-csom/tonsils/aom/stridor` are the DEAD format; their `*.v2/v3` are current).
   Best models: `ent-nasalobs`, `op-ret`, `op-refract`, `nr-cranial`, `ps-symptom`.
-- Last real `file://` boot **2026-08-19**: **0 console errors, 876 CSS rules, 3
-  `max-aspect-ratio:5/4` blocks, 4 modules, 145 chapters, 2,097 questions, 89 cases, 123 theory
-  chapters, 1,331 sections.** Harnesses in `<scratch>\`: `MOD=<mod> print.sh` · `boot.sh` ·
-  `modcheck-neuro.js` · `vdraft.js` · `splice-neuro.js` / `resplice-neuro.js` · `qdump.js <mod>
-  <ch>` (a chapter's questions, key marked) · `shot.sh`.
+- Last real `file://` boot **2026-08-22**: **0 console errors, 876 CSS rules, 3
+  `max-aspect-ratio:5/4` blocks, 4 modules, 146 chapters, 2,097 questions, 89 cases, 128 theory
+  chapters, 1,371 sections.** Harnesses in `<scratch>\`: `MOD=<mod> print.sh` · `boot.sh` ·
+  `modcheck-neuro.js` · `vdraft.js` · `splice-neuro.js`/`resplice-neuro.js` · `qdump.js <mod> <ch>`
+  (a chapter's questions, key marked) · `shot.sh`.
 - **⚠️ THE THEORY READER IS AN A4 PAGE (2026-08-19, three user complaints).** 210:297 by
   `aspect-ratio`, sized from the window, margins set in JS from the PAGE's width (**percentages
   resolve against the CONTAINING BLOCK** — that gave 74px margins on a 510px page), running head,
@@ -190,13 +181,19 @@ there before resuming a paused stream. Where this file and the archive disagree,
   It has now broken a draft, a regex refile and `nr-cranial`. **Writing the script to a FILE does
   not save you** — the JS parser resolves it either way. Going into JSON, escape it twice, and let
   `vdraft.js` catch it: that is why the parse check runs BEFORE the splice.
+- **⚠️⚠️ THE BASH TOOL'S QUOTED HEREDOC COLLAPSES `\\` TO `\` — measured 2026-08-22.** `<<'EOF'` is
+  supposed to be literal and is not: `app\\data\\x.js` lands as `app\data\x.js`, and the JS parser
+  then eats it — **`\d` became `d`, `\t` became a TAB**, silently corrupting two `Src:` citations.
+  **Never write a literal backslash in a heredoc-authored script** — use `String.fromCharCode(92)`
+  — and **edit drafts on the PARSED object, rewriting via `JSON.stringify`**, which round-trips.
+  ⚠️ **A heredoc over ~9 KB also fails to parse** — append one section per call, or use `Edit`.
 - **GitHub, PRIVATE**: `mahmoudbanna23-ctrl/Herophilus`, branches `main` +
   `design/clepsydra-and-sessions` (only off-drive copy of the Clepsydra art). `Semester 8\`
   gitignored. Push method: `ledger.md` §13. **Stage only your own paths — never
   `git add -A`**; `index.lock` means another chat is mid-commit.
-- **Measure, then believe**: check the sum, check the auditor, reconcile written + folded =
-  printed; a counter that does not move is a finding. **Never write a cross-referenced page number
-  or filename from memory** (7/7 and 3/3 wrong) — read the `source`, list the directory.
+- **Measure, then believe**: check the sum, check the auditor, reconcile written + folded = printed;
+  a counter that does not move is a finding. **Never write a page number or filename from
+  memory** (7/7 and 3/3 wrong) — read the `source`, list the directory.
 - Cleanup awaiting approval (nothing without a yes): 173 MB ophtho zip, two Peds PPT stubs, `files.zip`.
 
 **⚠️ THE ONE THING THAT MUST SURVIVE ANY SUMMARY: the Clepsydra is the user's own artwork —

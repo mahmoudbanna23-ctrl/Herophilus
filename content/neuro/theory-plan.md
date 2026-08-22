@@ -18,7 +18,9 @@ expensive lessons first:
 
 ## 1. Shape
 
-**27 chapters in two groups: Psychiatry 16, Neurology 11.** Ids and titles in `app\data\modules.js`
+**29 chapters in two groups: Psychiatry 16, Neurology 13.**
+⚠️ **Was 27. Two SPLITS added one each** — `nr-hemi`/`nr-para` on 2026-08-18 and
+`nr-lmn`/`nr-nerve` on 2026-08-22, both after printing over the 13-page hard shape. Ids and titles in `app\data\modules.js`
 under module id `neuropsych`. **151 questions**, all `gradegain`, all MCQ, ids `npqb-`.
 
 ### ⚠️⚠️ THE QUESTION DISTRIBUTION IS THE MOST LOPSIDED IN THE PROJECT
@@ -35,7 +37,7 @@ under module id `neuropsych`. **151 questions**, all `gradegain`, all MCQ, ids `
 | 11 | `ps-symptom` |
 | 5 | `ps-psychoed` |
 | 1 each | `nr-ms` · `nr-movement` · `nr-lmn` · `ps-ocd` · `ps-mood` |
-| **0** | `ps-interview` · `ps-osce` · `ps-somato` · `ps-anxiety` · `ps-psychosis` · `ps-geri` · `ps-child` · `ps-sud` · `ps-emerg` · `ps-pharm` · `ps-devices` · `ps-therapy` · `nr-cns` · `nr-delirium` · `nr-backpain` |
+| **0** | `ps-interview` · `ps-osce` · `ps-somato` · `ps-anxiety` · `ps-psychosis` · `ps-geri` · `ps-child` · `ps-sud` · `ps-emerg` · `ps-pharm` · `ps-devices` · `ps-therapy` · `nr-cns` · `nr-delirium` · `nr-backpain` · **`nr-nerve`** *(added by the split; its half of the pair holds the question)* |
 
 **What this means for budgeting.** §14's budget is `max(source words, 25 × questions)`, floor 600.
 With 15 chapters at zero questions, **the deck word count governs almost the whole psychiatry half**
@@ -83,14 +85,14 @@ measured that way and comparability matters more than purity.
 | L4) Seizures_Epilepsy | 32 | **2,321** | 2,171 | 73 | `nr-movement` |
 | L11,12) Schizophrenia | 57 | **2,251** | 2,180 | 39 | `ps-psychosis` |
 | L10) Stroke | 53 | **2,090** | 2,047 | 39 | `nr-stroke` ✅ *written* |
-| L5) Muscle Disease | 55 | **2,048** | 1,807 | 37 | `nr-lmn` |
+| L5) Muscle Disease | 55 | **2,048** | 1,807 | 37 | `nr-lmn` ✅ |
 | L9) CNS infection | 40 | **1,924** | 1,818 | 48 | `nr-cns` |
 | L18) Devices in Psychiatry | 23 | **1,909** | 1,806 | 83 | `ps-devices` |
 | L15) substance related + psych emergency | 49 | **1,854** | 1,771 | 38 | `ps-sud` |
 | L11) Cervical pain | 41 | **1,742** | 1,589 | 42 | `nr-backpain` |
 | L13) Dementia and Delirium | 41 | **1,672** | 1,532 | 41 | **`ps-geri` + `nr-delirium` — SHARED** |
 | L16) Emergency Psychiatry | 46 | **1,597** | 1,564 | 35 | `ps-emerg` |
-| L6) Peripheral neuropathy | 44 | **1,525** | 1,465 | 35 | `nr-lmn` |
+| L6) Peripheral neuropathy | 44 | **1,525** | 1,465 | 35 | **`nr-nerve`** ✅ *(re-assigned by the 2026-08-22 split)* |
 | L6) Myths about psychiatry | 14 | **1,522** | 1,411 | 109 | `ps-psychoed` |
 | L1) INTRODUCTION AND LOCALISATION | 57 | **1,469** | 1,326 | 26 | `nr-intro` |
 | L3) Somatization | 40 | **1,464** | 1,381 | 37 | `ps-somato` |
@@ -213,7 +215,7 @@ page. Look for a second copy before looking for something to cut.
 | **`nr-movement`** | **5,020** (L3 2,699 + L4 2,321) | **15.0 pp** | ⚠️ **SPLIT — the only forecast split left, and the title already admits it.** *"Movement disorders / Epilepsy"* are **two topics**, not one topic taught over two lectures: the §4 rule joins the latter and does not join the former. The seam is the deck boundary and it is clean. Note both halves then sit near 7–8 pp |
 | ✅ `nr-cranial` | 3,700 | **printed 12 pp** | ✅ **WRITTEN 2026-08-19 — WHOLE**, 12 sections, 3,823 w, all 34 questions linked. Over the ~10 pp operative ceiling and inside the ≤13 hard shape, which is where ophthalmology shipped `op-glauc` and `op-conj`. ⚠️ **A CONTIGUOUS SEAM EXISTS IF IT IS EVER WANTED** and is recorded so nobody re-derives it: `cn-1`–`cn-7` (**I–VI and trigeminal neuralgia**, 1,779 w, **21 questions**) against `cn-8`–`cn-12` (**VII–XII and the facial palsies**, 2,044 w, **13 questions**) — two ~6 pp halves. The examination-vs-disease seam the draft header first proposed is **NOT contiguous** and would reorder the chapter |
 | `ps-pharm` | 3,456 + book | 10.3 pp | whole, but ⚠️ **the book adds 4 pages and Psych ch.7 adds the antipsychotics** — watch it |
-| `nr-lmn` | 3,573 (L5 2,048 + L6 1,525) | 10.7 pp | **whole** — muscle vs peripheral nerve remains a clean two-deck seam *if* it prints long |
+| ✅ `nr-lmn` | 3,573 (L5 2,048 + L6 1,525) | **printed 17 pp WHOLE** | ✅✅ **WRITTEN AND SPLIT 2026-08-22.** Written whole against both decks, spliced, printed — **17 pp, four past the hard shape** — then split on the **deck boundary**, which was contiguous and needed no reordering. **`nr-lmn` (L5, muscle + NMJ): 10 sections, 3,481 w, printed 12 pp**, keeps `npqb-nr-118`. **`nr-nerve` (L6, peripheral nerve): 5 sections, 2,134 w, printed 8 pp**, zero questions. ⚠️ **This REVERSED the original `nr-lmn1`+`nr-lmn2` merge** — the merge rule joins one topic taught over two lectures, and these are two topics. ⚠️ **The ÷335 row above forecast 10.7 pp against a printed 17** — its worst miss in this module, and the reason ÷280 is the planning divisor |
 | ✅ `nr-headache` | 3,647 (book ch.9) | **printed 10 pp** | ✅ **WRITTEN 2026-08-19** — whole, 11 sections, 2,811 w, all 22 questions linked |
 | `ps-anxiety` + `ps-ocd` | 3,376 (book ch.3, **shared**) | — | ⚠️ **the inverse problem: ONE source for TWO chapters.** Whichever is written first must declare in its §14.5 row what it leaves to the sibling |
 | `nr-ms` · `ps-ocd` · `ps-psychosis` · `ps-symptom` | 2,251–2,441 | 6.7–7.3 pp | inside the ceiling |
@@ -236,13 +238,22 @@ the book mapper as a split candidate on precedent. **Not decided — read before
 2. ✅ **Book map** — `content\neuro\book-map.md`, done 2026-08-18.
 3. ✅ **`L17` visual read** — cache 239 → 3,358 w, done 2026-08-18. `ps-pharm` is unblocked on the
    deck but still **partial** on antipsychotics — see the dead-heading finding below.
-4. ✅ **Written: `nr-stroke` · `nr-hemi` · `nr-para` · `nr-headache` · `nr-cranial`** — 5 of 28,
-   **109 of the module's 151 questions reachable**. **23 chapters holding 42 questions remain.**
-5. **Next, and it is the last big one: `nr-intro` (21 q)** — half of everything left. After it the
-   largest single chapter is `ps-symptom` at 11, then `ps-psychoed` at 5, and **fourteen chapters
-   carry ZERO questions**. ⚠️ `nr-intro` is flagged in §4 as a possible split: 21 questions, a
-   1,469-word deck, and **39 printed book pages across three chapters including a 25-page Neurology
-   Sheet**. Read before forecasting.
+4. ✅ **Written — 11 of 29** *(measured from disk 2026-08-22)*: `nr-stroke` · `nr-hemi` ·
+   `nr-para` · `nr-headache` · `nr-cranial` · `ps-symptom` · `ps-psychoed` · `nr-ms` · `ps-mood` ·
+   **`nr-lmn`** · **`nr-nerve`**. **101 sections, 27,632 body words.**
+   **128 of the module's 151 questions reachable. 18 chapters holding 23 questions remain.**
+5. ⚠⚠ **`nr-intro` (21 q) IS THE NEXT ONE AND IT IS BLOCKED — IT NEEDS A USER DECISION.**
+   It holds **21 of the 23 questions left — all but two.** **12 of 23 fact probes return ZERO
+   against its deck** (gracile/cuneate, triceps, abdominal reflex, hemianopia, optic radiation,
+   power grading, biceps, brachioradialis, clonus, somatosensory, rigidity, lateral column). The
+   book HAS the material — **39 printed pages across three chapters, including a 25-page
+   `Neurology Sheet`** — but those pages are **image-only**. So it is **a subagent render, or a
+   chapter written half from tagged outside knowledge**. Not chosen; surfaced.
+   ⚠️ **`nr-intro` OWES two slides to `nr-lmn`:** L1's `Upper Motor Neuron Manifestations` and
+   `Lower Motor Neuron Manifestations` are **counted to `nr-lmn`'s `lm-1`** and **must not be
+   counted again** when `nr-intro` is written. Same shape as `op-va`/`L1,2` in ophthalmology.
+   After `nr-intro`, **only `nr-movement` (1) and `ps-ocd` (1) carry questions at all**, and
+   **fifteen carry ZERO** — counted, not carried over.
 6. **Then the psychiatry chapters with full decks**, then the six materially unsourced ones once the
    book has said what it can pay.
 7. Validate → splice → refile → **print** → audit → commit, per chapter. Harnesses:
