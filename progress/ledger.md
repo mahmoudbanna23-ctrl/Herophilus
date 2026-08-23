@@ -7213,8 +7213,9 @@ map's count has run short while its page range was right. `Q_ENT` 1,617 → **1,
 predicted **+21** and measured **+21** — every entry authored, **zero boxes in 21**, so the
 prediction was trivially checkable and still worth computing first.
 
-**This closes the Grade Gain THROAT section except topic 10**, which subagent A is drafting.
-Throat now stands at **500 printed / 494 written / 27 folded** across t1–t9 and t11.
+**This closed the Grade Gain THROAT section except topic 10**, which was left mid-draft at 11 of 66
+and finished on 2026-08-23 (§14dd). Throat stood here at **500 printed / 494 written / 27 folded**
+across t1–t9 and t11; with t10 it closes at **587 / 555 / 32**.
 
 ### ⚠️ THE ch.5 DOUBLE DEFECT FIRED ON ITS OTHER HALF — FIRST TIME IN FOUR TOPICS
 
@@ -7284,6 +7285,181 @@ backticked references (1,543 distinct), 0 markers misplaced into `source`, 0 dup
 run of that check, second consecutive topic with nothing to repair.**
 
 ---
+
+## §14dd — Grade Gain, Throat topic 10 "Hoarseness Of Voice" — CLOSED 2026-08-23. **AND THIS CLOSES THE GRADE GAIN THROAT SECTION.**
+
+**Book pp.161–169 (PDF 170–178); answers pp.170–171 (PDF 179–180). 66 printed, 61 written, 5 folded** —
+Q501…Q566 against 66 promised, **EXACT**, only the sixth exact count in twenty-four topics.
+`Q_ENT` 1,638 → **1,699**. Marker delta predicted **+51** and measured **+51**.
+
+**Real `file://` boot 2026-08-23: `PROBE{"errs":[],"sheets":2,"rules":876,"media54":3,"q":2158,"mods":4,"chaps":153,"th":153,"sec":1603,"cases":89}`** — 0 console errors, 3 `max-aspect-ratio:5/4` blocks, 2,158 questions (2,097 + 61), 0 dead backticked ids over the whole ENT corpus, 0 markers in `source`, 0 duplicate ids, every `answer` in range, 0 bad chapter refs, 0 missing image files.
+
+**Chapters:** `ent-hoarse` 51, `ent-paedlar` 4, `ent-vocal` 4, `ent-neck` 2, `ent-phon` 2.
+**Throat now stands at 587 printed / 555 written / 32 folded across all eleven topics** (t1 40, t2 47, t3 61, t4 99, t5 53, t6 32, t7 45, t8 66, t9 57, **t10 66**, t11 21). **GG whole-book total: 1,113 printed / 1,043 written / 70 folded** — Ear 261/241/20, Nose 265/247/18, Throat 587/555/32.
+
+### ⚠️⚠️ THE AGENT THAT DIED AT t10 HAD DRAFTED 11 OF 66 — AND THE ELEVEN WERE SOUND
+
+The 2026-08-13 file held `entqb-thr10-501`…`-511`, complete, parsing, correctly marked and already
+cross-referencing `entep-throat-16`. **Seventh time validating a dead agent's file beat rewriting
+it** — nothing in the eleven needed repair, and the remaining 55 were written on top. The staging
+(`gg-throat-ch10.array.js`) was likewise complete: all 66 transcribed, ten figure crops cut and
+looked at, ten back-reference chains recorded. **Only the drafting had stopped.**
+
+### The five folds — all cross-bank, all into endpoint
+
+| GG | folds into | reached by | mechanism |
+|---|---|---|---|
+| Q564 | `entep-throat-100` | **A** | stem and all four options **word for word identical**, same key |
+| Q565 | `entep-throat-108` | **B**, E 1.00, F 1.00 | identical stem and options; endpoint writes "the vocal cords" for "vocal cords" |
+| Q559 | `entep-throat-28` | **B**, E 1.00, F 1.00 | identical options and key; stem differs by a trailing clause. **SIXTH printing of this item across the two banks** |
+| Q550 | `entep-throat-82` | **C**, E 1.00, F 1.00 | same stem word for word, **same four options REORDERED**, same key |
+| Q541 | `entep-throat-65` | **F 0.80 ALONE** | same options in the same order, same key; stem adds "which of the following" |
+
+### ⚠️⚠️ Q541 IS A NEW DEFEAT SHAPE: A BRITISH-VERSUS-AMERICAN SPELLING DEFEATS STAGES A, B **AND** D
+
+Endpoint prints *"Subglottic **tumour**"*, Grade Gain *"Subglottic **tumor**"*. That single letter
+changes the sorted option-set string, so **stage B and stage D both miss**; stage A was already
+defeated by the trailing "which of the following". **Only stage F named it**, at 0.80 — and the
+tokens it lost were the very ones that differ.
+
+**⚠️ AND STAGE E POINTED AT THE WRONG SIBLING.** E scored Q541 at **1.00 against `entep-throat-15`**,
+which shares the stem exactly and keys **tracheal stenosis** — a *variant*, not the fold. The fold
+was `entep-throat-65`, whose stem E ranked no higher. **The ranking that names the sibling is not
+necessarily the one that names the fold target; read both lists.**
+
+### ⚠️⚠️ FIFTH "A FOLD CONVERTS AUTHORED TEXT INTO SOURCED TEXT" — AND IT WAS SPOTTED AT SWEEP TIME
+
+**Q550 prints an explanation box where `entep-throat-82` printed none.** The box — *"Explanation:
+Plummer Vinson's syndrome causes cancer esophagus not larynx one"* — was transcribed into the entry
+and **its authored-text marker removed**, which is the whole of the −1 in the +52/−1 = +51 delta.
+Computing the delta **before** counting is what makes that arithmetic checkable; the habit paid again.
+
+### ⚠️⚠️⚠️ THE BIGGEST FINDING IS A CROSS-BANK **KEY** DIVERGENCE ON AN IDENTICAL ITEM — Q566
+
+The staging had already flagged Q566 as a defect on internal evidence: the photograph shows a
+**glottic** lesion, and the bank's own Q501 plus `L2) Hoarsness of Voice.pdf` both make a glottic
+lesion a cause of **hoarseness**, while *muffled / hot-potato voice* is the **supraglottic** sign
+(`L12` gives muffled voice to acute epiglottitis). The key is **b, Muffled voice**.
+
+**The sweep found that `entep-enr-33` (endpoint, Exam Night Review p.3036) prints the SAME stem with
+the SAME FOUR OPTIONS IN THE SAME ORDER and keys c, HOARSE VOICE.**
+
+> **That converts *outside reasoning disagrees with the key* into *the course's own second bank
+> disagrees, in print, on the identical question*. It is citable, and it is the strongest key
+> defect recorded in the Grade Gain Throat section.** Per the 2026-08-11 ruling **neither `answer`
+> moves**: both are held, and the divergence is written into both entries' `source`.
+
+Endpoint also *names* the lesion at `entep-throat-100` — a **vocal cord polyp** — which is what
+settles the reading of the photograph, and `entep-throat-100` is itself one of this topic's folds.
+
+### Defects recorded, keys held as printed (the 2026-08-11 ruling)
+
+1. **⚠️⚠️ Q566** — the cross-bank key divergence above.
+2. **⚠️ Q534 vs `entep-throat-82`** — *"Potentially malignant laryngeal lesions are all of the
+   following except"* printed twice with different menus and different keys. Q534 offers **Reinke's
+   oedema** and keys it; `entep-throat-82` offers **TB of larynx** instead and keys **Plummer-Vinson**.
+   **Two options are defensible exceptions by different routes** — Reinke's is not premalignant at
+   all, Plummer-Vinson is premalignant for **post-cricoid**, not laryngeal, carcinoma (`L10`).
+   Both keys are right on their own menu. **And `entqb-thr10-518` leaves TB of larynx standing as
+   premalignant for a third time** — an unsourced claim the bank repeats and never resolves.
+3. **⚠️ Q557 "Smoking is associated with which of the following?"** — the stem is unqualified and at
+   least **two options are true**: `L2` says of polyps that *"most patients are smokers"* and of
+   Reinke's that its causes *"include smoking"*. The key (Reinke's) is the lesion smoking **causes**
+   rather than merely accompanies.
+4. **⚠️ Q555 — options a and d are the same fact split in two.** The left RLN is long **because** it
+   loops under the aortic arch; the key is the proximate reason, option d its anatomical cause.
+5. **⚠️ Q524 — three of the four options are true of RRP in general.** Only *"more potentially
+   malignant than in children"* is true **of adults**; the stem's two words carry the whole question.
+6. **⚠️ Q542 — the printed box quotes a finding the stem never gives**, listing *"neck swelling"*
+   among the features. An **internal** laryngocele by definition does **not** present as a neck mass;
+   the box appears written against the external variety. Recorded, key unaffected.
+7. **⚠️ Q553 uses "lumpectomy", a breast term**, for cordectomy; and `L2` gives glottic-tumour
+   management only as *"radiotherapy, surgical excision according to the stage"*, so the choice
+   between **LASER + radiotherapy** and **radiotherapy alone** is **not decidable from the slides**.
+8. **⚠️ Q516 — no cached lecture names a commonest cause of *unilateral* cord paralysis.** `L2` ranks
+   only the malignant causes (bronchogenic carcinoma first) and `L11` lists idiopathic first without
+   ranking. The key (thyroidectomy) stands **on the option list**, not on a ranking.
+9. **⚠️ Q535 keys the RIGHT nerve for thyroidectomy while Q555 keys the LEFT for palsy overall** —
+   **not** a self-contradiction: two different questions, and no cached lecture gives the
+   thyroidectomy-side figure either way.
+10. **Q515** — the key turns on syphilis **not** being posterior, which no slide states; `L2` gives
+    the posterior larynx to **TB**, so the key is defensible because the site is already taken.
+11. **Three spellings of one eponym inside one topic** — *Reinke's* (Q511, Q536), *Reineke's* (Q534),
+    *Reineck's* (Q561). Also *"Chocking"* for choking (Q566) and a stray bracket in Q532's stem.
+
+### Gaps answered from general knowledge and tagged (the 2026-08-04 rule)
+
+- **`bryce` returns ZERO across all 34 cached ENT lectures** (Q513) — the sign is supplied and tagged.
+- **`leukoplakia` and `erythroplakia` return ZERO across all 34** (Q514, Q518, Q534) — the whole
+  premalignant-larynx group rests on outside knowledge, tagged in each.
+- **`MDVP` and "more than 20 parameters" appear in no lecture** (Q525); `L8` covers acoustic analysis
+  and its pitch parameters but never names the software.
+- **No lecture lists any SITE for RRP** (Q544) — the squamociliary-junction list is tagged. **⚠️ But
+  the underlying principle is printed by the bank itself**: Q554's own box gives the two epithelia of
+  the subglottic transition, and `entep-nose-64` applies the identical argument to scleroma.
+  **Prefer the other bank to outside knowledge — it paid here.**
+- **PROPRANOLOL appears in NEITHER `L6` NOR `L12`** (Q548). It is the modern first-line agent for
+  infantile haemangioma, it is a **correct** option and it is **not the key**, so the question stays
+  answerable from the slides; tagged where used.
+- **No lecture states the subglottic site of laryngoscleroma** (Q515, Q517) — supplied from
+  `entep-nose-64` and the epithelial-transition argument rather than from general knowledge.
+- **No lecture states the membranous/cartilaginous division of the cord** (Q556) — inferred from
+  `L2`'s body-cover theory and from where `L2` places each MAP lesion, and tagged.
+
+### Ten back-reference chains repaired at drafting — 15 % of the topic
+
+Q528→527, Q530→529, Q533→532, **Q537 and Q538 both→536**, Q540→539, **Q544, Q545 and Q546 all→543**,
+Q548→547. Every one restated its antecedent in brackets, per the `entqb-thr6-329` precedent.
+
+**⚠️ Q537/Q538 ARE THE t7 TRAP AGAIN AND MERGING THEM WOULD INVERT AN ANSWER**: Q537 asks the
+first-line treatment of the **STRIDOR** (key **tracheostomy**) and Q538 the treatment of the
+**CONDITION** (key **smoking cessation**). `L2` supplies the precedent for the airway answer —
+*"at least one patient was reported to require a tracheotomy"* for Reinke's oedema.
+
+**⚠️ AND A SECOND NON-MERGEABLE PAIR WITH AN IDENTICAL OPTION LIST: Q551 vs Q552.** Same four
+options — MLS / external approach / wait and see / medical treatment — keying **different answers**.
+Q551 is an external-or-mixed laryngocele (neck swelling) → **external approach**; Q552 is a
+post-intubation intralaryngeal lesion → **MLS**. **Reading only one of them teaches the wrong rule.**
+
+### Held as new rather than folded, and why
+
+- **Q558 vs `entep-throat-49`** (nodule aetiology) — **two of four options replaced**; the
+  `entep-mfe5-13` precedent holds that as a new question.
+- **Q526 vs `entep-throat-4`** (bilateral RLN injury) — two options replaced and reordered, though
+  endpoint's p.1571 printing does use GG's exact *"Severe stridor"* wording.
+- **Q506 vs `entep-throat-16`** (nodule site) — **three of four options identical in identical
+  order**, one distractor replaced (*posterior half* for *posterior 1/3*); §14c–d holds a single
+  replaced distractor as a new question. Already cross-referenced by the dead agent's draft.
+- **Q561 vs `entqb-thr9-491`** (MAP list) — **within-bank**, same stem, one option swapped
+  (**laryngocele** for **cancer larynx**) and therefore a different key. Each is the only non-MAP
+  entry on its own menu; both right.
+- **Q522 vs `entqb-thr11-579`** (videostroboscopy) — within-bank, same answer, different stems and
+  different menus.
+- **Q547 vs `entqb-thr8-395`** — the paediatric-airway menu shared with a different key. The
+  identical-menu-different-key shape; not a fold.
+
+### Process notes
+
+- **⚠️ FIVE REFERENCES TO IDS THAT WERE ABOUT TO BE FOLDED were caught PRE-SPLICE** — one to
+  `entqb-thr10-564` and four to `entqb-thr10-565`, rewritten to `entep-throat-100` and
+  `entep-throat-108`. **Tenth occurrence of the fault, third consecutive topic with no repair work
+  afterwards.** The check was cheap because the fold list existed before the drafting did.
+- **⚠️⚠️ A MARKER COUNT IS MEANINGLESS ACROSS TWO DIFFERENT REGEXES.** The first baseline used
+  `endpoint file prints no explanation` and read 1,156; the post-splice count used
+  `…no explanation here` and read 1,201, an apparent delta of +45 against a predicted +51. **The fix
+  is to measure the BEFORE file with the SAME expression** — `git show HEAD:app/data/questions.ent.js`
+  read **1,150**, and 1,201 − 1,150 = **+51, exactly as predicted.** The 2026-08-12 rule stands:
+  **trust the delta, fix the definition in a file.**
+- **⚠️ THE ~9 KB HEREDOC LIMIT FIRED AGAIN** on a two-entry append (~8.5 KB), and the `\`→`\`
+  collapse fired once inside a `node -e` repair script. Both are recorded traps; **one entry per
+  heredoc** and `String.fromCharCode(92)` for separators are the working fixes.
+- Ten figure crops (`q-gg-163` … `q-gg-169`) were cut and looked at **at staging**; all ten verified
+  present on disk before the splice. Three entries are `imgEssential` — **Q539, Q563, Q566**.
+
+**Next: House from `d house ENT mcq.pdf` PDF p.15 (`enthd-`, 41 done, next ch.3 Q45).**
+
+---
+
 
 ## Ophthalmology banks — the real state, measured 2026-08-18
 
