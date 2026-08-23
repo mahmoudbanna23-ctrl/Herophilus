@@ -187,7 +187,9 @@ const MODULES = [
       ['nr-lmn','Muscle disease and the neuromuscular junction'],
       ['nr-nerve','Peripheral neuropathy and Guillain-Barré'],
       ['nr-cns','CNS infections'],
-      ['nr-cranial','Cranial nerves disorders'],['nr-delirium','Delirium and Coma'],
+      ['nr-cranial','Cranial nerves disorders'],['nr-delirium','Delirium'],
+      ['nr-coma','Coma'],
+      ['nr-comapproach','Approach to the comatose patient'],
       ['nr-headache','Headache'],['nr-stroke','Cerebrovascular stroke'],
       /* Split 2026-08-23, FORECAST BEFORE WRITING — the third in the module.
          Book Neurology ch.16 is 6,322 body words over SIXTEEN printed pages

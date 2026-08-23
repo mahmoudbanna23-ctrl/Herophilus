@@ -1,0 +1,432 @@
+SOURCE: Semester 8\Neuro\Theoritical\Book\neuropsychiatry.pdf
+CHAPTER: Neurology ch.11 coma
+RANGE: printed 109-118 = PDF 120-129
+READ: 2026-08-23 by subagent from 150 dpi renders
+
+NOTE ON HEADERS: every one of the ten pages carries the same running header, printed in
+lower-case bold blue at the top right: "coma". No other running header appears. The footer page
+number is printed bottom-right in blue on every page; all ten were read and all ten satisfy
+printed = PDF - 11.
+
+
+=== printed p.109 (PDF 120) ===
+
+[running header: coma]
+
+C. Other important information to obtain immediately:
+- Current medications, especially any diabetic, anticonvulsant, cardiac drugs, or warfarin Any
+  history of adverse or allergic medicinal reactions.
+- Any history of recent head trauma, febrile or other illness, or previous neurological symptoms
+- Any use of recreational drugs.
+
+PHYSICAL EXAMINATION
+
+1. Vital signs
+- Hypertension to an extreme degree
+  - Acute cerebral hemorrhage or infarction
+  - Hypertensive encephalopathy
+  - Cocaine abuse
+  - Eclampsia
+- Hypotension
+  - Hypovolemia
+  - Cardiogenic shock
+  - Septic shock
+- Temperature
+  - Fever: consider infection, heat stroke.
+  - Hypothermia: cold exposure (especially with alcoholism), hypothyroidism, hypoglycemia,
+    sepsis, or, infrequently, primary brain lesion.
+- Pulses: Asymmetry: dissecting aneurysm.
+
+2. General look
+- Head: Inspect and palpate scalp for signs of trauma. Blood in external ear canal (Battle sign)
+  or around eyes (raccoon sign) suggests skull fracture. Inspect ears and nose for blood and CSF.
+- Cutaneous Bleeding
+  - Around the eyes or mastoid area -> skull fractures
+  - Diffuse hematomas -> systemic bleeding
+  - Splinter nail bed or palmar/plantar hemorrhages -> Infective endocarditis
+- Jaundice and ascites -> Hepatic coma Hepatosplenomegaly
+
+
+=== printed p.110 (PDF 121) ===
+
+[running header: coma]
+
+LEVEL OF CONSCIOUSNESS
+
+- It is more useful to describe the patient's spontaneous behavior and responses to stimuli than
+  to use terms such as stupor or obtunded. Even a coma has a spectrum of possible responses.
+- The Glasgow coma scale (GCS) demonstrates a hierarchy of responses in each of these areas
+  which reflect the severity of the coma.
+
+| Response | Scale | Score |
+| --- | --- | --- |
+| Eye Opening Response | Eyes open spontaneously | 4 Points |
+| Eye Opening Response | Eyes open to verbal command, speech, or shout | 3 Points |
+| Eye Opening Response | Eyes open to pain (not applied to face) | 2 Points |
+| Eye Opening Response | No eye opening | 1 Point |
+| Verbal Response | Oriented | 5 Points |
+| Verbal Response | Confused conversation, but able to answer questions | 4 Points |
+| Verbal Response | Inappropriate responses, words discernible | 3 Points |
+| Verbal Response | Incomprehensible sounds or speech | 2 Points |
+| Verbal Response | No verbal response | 1 Point |
+| Motor Response | Obeys commands for movement | 6 Points |
+| Motor Response | Purposeful movement to painful stimulus | 5 Points |
+| Motor Response | Withdraws from pain | 4 Points |
+| Motor Response | Abnormal (spastic) flexion, decorticate posture | 3 Points |
+| Motor Response | Extensor (rigid) response, decerebrate posture | 2 Points |
+| Motor Response | No motor response | 1 Point |
+
+Footer row of the table (printed across the bottom of the same box):
+Minor Brain Injury = 13-15 points;  Moderate Brain Injury = 9-12 points;  Severe Brain Injury =
+3-8 points
+
+[Caption, italic blue] Glasgow coma scale (GCS)
+
+[FIGURE: a second, illustrated GCS table with three rows, each row showing a coloured drawing on
+the left (a pair of eyes, an open mouth, a bent arm) and a numbered response list on the right.
+Two columns headed "Behaviour" and "Response". All text labels transcribed below.]
+
+| Behaviour | Response |
+| --- | --- |
+| Eye Opening Response | 4. Spontaneously<br>3. To speech<br>2. To pain<br>1. No response |
+| Verbal Response | 5. Oriented to time, person and place<br>4. Confused<br>3. Inappropriate words<br>2. Incomprehensible sounds<br>1. No response |
+| Motor Response | 6. Obeys command<br>5. Moves to localised pain<br>4. Flex to withdraw from pain<br>3. Abnormal flexion<br>2. Abnormal extension<br>1. No response |
+
+[Caption, italic blue] Glasgow coma scale (GCS), Coma <8
+
+
+=== printed p.111 (PDF 122) ===
+
+[running header: coma]
+
+CRANIAL NERVES
+
+The pupils
+- Parasympathetic lesions: e.g., oculomotor nerve compression in uncal herniation or aneurysm;
+  pupil enlarges; ultimately, full dilation, no reaction to light.
+- Sympathetic lesions: Horner syndrome (miosis, ptosis, anhydrosis).
+  - Pinpoint but reactive pupils: pontine hemorrhage, opiate intoxication.
+  - Bilateral Fixed, dilated pupils: confirm with bright light.
+    Consider:
+    a) Anticholinergic drugs (atropine, glutethimide, amitriptyline, antiparkinsonian agents)
+    b) Hypothermia
+    c) Severe barbiturate intoxication
+       [italic red, centred] (b and c can cause reversible picture simulating brain death)
+    d) Ongoing or recent seizure (pupil abnormality may be unilateral)
+    e) Anoxic-ischemic event (fixed pupils imply poor prognosis).
+
+[FIGURE: a mid-sagittal MRI of the brain with red leader lines running out to five pairs of
+drawn eyes, each pair showing a different pupil size. Text labels, in the order printed:]
+- Metabolic: Small pupils, reactive to light
+- Diencephalon: Small pupils, reactive to light (bilateral Horner syndrome)
+- Midbrain/Tectum: midsize pupils, not reactive to light
+- Third nerve (uncal herniation): Large pupil, not reactive to light
+- Pons: Pinpoint pupils, reactive to light
+[No printed caption line under this figure.]
+
+Eye movements:
+- Ocular reflexes (Oculocephalic reflex, oculovestibular reflex), when present in a comatose
+  patient -> Preserved brainstem function.
+
+[FIGURE: a two-row cartoon strip of a patient's head being turned by an examiner's hands,
+illustrating the doll's-eye manoeuvre. Text labels, in the order printed:]
+- Patient focused on examiners nose
+- After sharp turn to patient's right, patient remains focused on examiners nose
+- Patient focused on examiners nose
+- Corrective saccades
+[Caption, bold] Oculocephalic reflex
+
+
+=== printed p.112 (PDF 123) ===
+
+[running header: coma]
+
+- Eyes dysconjugate at rest: paresis of individual muscles, internuclear ophthalmoplegia.
+- Conjugate lateral deviation of the eyes toward one side indicate a lesion in:
+  - The contralateral brainstem.
+  - Ipsilateral cerebral hemisphere.
+- Persistent, rhythmical nystagmus -> a subtle finding of non-convulsive status epilepticus
+
+[Rounded blue box occupying the lower two-thirds of the page]
+
+Voluntary conjugate eye movement pathway
+
+If you want to look toward the RIGHT direction:
+1. The LEFT frontal eye field (FEF) (area 8) fires. The signal travels down and crosses the
+   midline (decussates) as it descends toward the brainstem.
+2. The signal arrives at the paramedian pontine reticular formation (PPRF), often called the
+   "Horizontal Gaze Center," located in the pons.
+3. The PPRF stimulates the Abducens Nucleus (CN VI) on the same side (in this case, the right
+   side).
+   - The Abducens nucleus is unique because it houses two distinct types of neurons:
+     a) Lower Motor Neurons: These travel via the Abducens nerve directly to the Lateral Rectus
+        muscle of the right eye. This pulls the right eye outward (abduction).
+     b) Internuclear Neurons: These are the "secretaries" that keep the other eye in the loop.
+4. To get the left eye to move right, the signal from the Abducens interneurons must travel to
+   the Oculomotor Nucleus (CN III) on the opposite side. These neurons cross back over the
+   midline and travel upward through a specialized white matter tract called the Medial
+   Longitudinal Fasciculus (MLF).
+5. The MLF delivers the signal to the Oculomotor Nucleus in the midbrain. From here, CN III
+   activates the Medial Rectus muscle of the left eye. This pulls the left eye inward
+   (adduction).
+6. The Result: Both eyes move smoothly to the right in perfect synchrony.
+
+[The lower third of the page is blank.]
+
+
+=== printed p.113 (PDF 124) ===
+
+[running header: coma]
+
+[FIGURE, top half of the page: a line drawing of a face with both eyes deviated to the left,
+joined to a schematic brainstem in coronal section showing the gaze pathway. Text labels, in the
+order printed:]
+- FRONTAL CORTEX
+- MEDIAL RECTUS M.
+- OCULOMOTOR NERVE (III)
+- LATERAL RECTUS M.
+- ABDUCENS NERVE (VI)
+- OCULOMOTOR NUCLEUS
+- MIDBRAIN
+- MEDIAL LONGITUDINAL FASCICULUS
+- PONS
+- ABDUCENS NUCLEUS
+- PARAMEDIAN PONTINE RETICULAR FORMATION
+- MEDULLA
+[No printed caption line under this figure.]
+
+Blinking
+- Spontaneous blinking -> intact ARAS
+- "Locked-in syndrome" -> only blinking and vertical eye movements.
+
+RESPIRATORY PATTERN
+
+- An observation of hypo or hyperventilation can be helpful in the diagnosis of a patient with
+  coma, especially when combined with blood gas results.
+- There are different respiratory patterns that might be helpful in localizing levels of
+  involvement.
+  1. Cheyne-Stokes respiration (CSR): periods of hyperventilation and apnea alternating in
+     crescendo-decrescendo fashion. Bilateral cerebral disease, including impending
+     trans-tentorial herniation, upper brainstem lesions, metabolic encephalopathy.
+  2. Sustained hyperventilation: usually metabolic acidosis, pulmonary congestion, hepatic
+     encephalopathy.
+  3. Apneustic breathing: inspiratory pauses; pontine lesions (especially infarct); infrequently,
+     metabolic coma or transtentorial herniation.
+  4. Ataxic breathing (Biot breathing): variably irregular rate and amplitude; medullary damage.
+  5. Stertorous breathing (i.e., inspiratory noise): airway obstruction.
+  6. Acetone, alcohol, fetor hepaticus.
+
+
+=== printed p.114 (PDF 125) ===
+
+[running header: coma]
+
+[TABLE with an inset waveform tracing drawn in the left-hand cell of each row. Headed:
+Pattern | Location of Lesion | Description]
+
+| Pattern | Location of Lesion | Description |
+| --- | --- | --- |
+| 1. Cheyne-Stokes [tracing: waxing-and-waning bursts separated by flat pauses] | Bilateral hemispheric disease or metabolic brain dysfunction | Cycles of hyperventilation and apnea |
+| 2. Central neurogenic hyperventilation [tracing: continuous uniform rapid oscillation] | Brainstem between lower midbrain and upper pons | Sustained, regular rapid and deep breathing |
+| 3. Apneustic breathing [tracing: long plateaus with pauses] | Mid or lower pons | Prolonged inspiratory phase or pauses alternating with expiratory pauses |
+| 4. Cluster breathing [tracing: groups of breaths separated by flat gaps] | Medulla or lower pons | Clusters of breaths follow each other with irregular pauses between |
+| 5. Ataxic breathing [tracing: completely irregular deflections of varying size] | Reticular formation of the medulla | Completely irregular with some breaths deep and some shallow. Random, irregular pauses, slow rate |
+
+MOTOR EXAMINATION
+
+- It is important to assess muscle tone, as well as spontaneous and elicited movements and
+  reflexes.
+- Asymmetrical limb movements or tone occur with structural brain lesions.
+- Abnormal postures:
+  o Decorticate posturing (FLEXED upper limb) -> Supratentorial lesions.
+    [blue rounded box]
+    - deCORticate = arms flexed toward CORE
+    - loss of CORtical inhibition of rubrospinal tract (still intact)
+  o Decerebrate posturing (EXTENDED upper limb) -> Infratentorial lesions.
+    [blue rounded box]
+    - decerebrate has more E & R
+    - Extended upper limbs & transected Rubrospinal tract
+- Bilateral myoclonic jerks suggest toxic-metabolic causes of coma.
+- Stiff neck: (on passive flexion, not lateral rotation or tilting): meningitis, subarachnoid
+  hemorrhage, foramen magnum herniation.
+- Resistance in all directions: bone or joint disease, including fractures (exclude cervical
+  fracture before checking for stiff neck).
+
+[FIGURE, right of the "Abnormal postures" block: two coloured drawings of a supine patient.
+Text labels, in the order printed:]
+Decorticate posturing
+- Rigid, extended legs
+- Pointed and turned in toes
+- Arms bent toward center of body
+- Curled wrists and balled hands against chest
+Decerebrate posturing
+- Rigid, extended legs
+- Pointed and turned in toes
+- Flexed wrists
+- Curled fingers
+- Straight, tense arms parallel to body
+
+
+=== printed p.115 (PDF 126) ===
+
+[running header: coma]
+
+COMA AND BRAIN HERNIATION
+
+- Transtentorial herniation can occur with expanding supratentorial mass lesions.
+- Traditional signs of herniation:
+  o Uncal pattern which starts with unilateral dilated unreactive pupil.
+  o Central pattern which starts with impairment of consciousness.
+
+[italic red, centred] A unilateral dilated pupil unresponsive to light indicates uncal herniation
+until proven otherwise.
+
+[FIGURE: coronal drawing of the brain inside the skull with a pink mass lesion in the left
+hemisphere and blue arrows showing displacement. Text labels, in the order printed:]
+- Midline shift
+- Tentorium
+- Uncal herniation
+- Central herniation
+- Brainstem
+[Caption, small grey type] Clinical Signs of Central Transtentorial Herniation with
+Rostral-Caudal Deterioration
+[An artist's signature is drawn into the lower right of the illustration; it is [ILLEGIBLE].]
+
+[Blue outlined box, heading in blue script]
+Signs of increased ICP/Herniation
+
+1. Pupils
+   - Unilateral dilated pupil
+   - Bilateral small poorly reactive pupils
+2. Eye movements
+   - Third nerve palsy
+   - Sixth nerve palsy
+   - Can be assessed by cold caloric.
+3. Fundoscopy
+   - Signs of papilledema
+   - Respiratory pattern
+
+[The numbered list ends here; "Respiratory pattern" is printed as the second tick under
+"3. Fundoscopy" exactly as shown. The lower third of the page is blank.]
+
+
+=== printed p.116 (PDF 127) ===
+
+[running header: coma]
+
+INVESTIGATION
+
+- CT or MRI: Perform promptly if coma unexplained; before lumbar puncture if examination
+  suggests focal lesion.
+- Lumber Puncture: [sic] Perform promptly if coma not explained by imaging. If imaging is not
+  readily available and mass lesion not suspected on examination, perform spinal tap cautiously.
+- EEG Can distinguish coma from psychic unresponsiveness and locked-in state. Always abnormal in
+  true coma. May also reveal asymmetry or clinically unsuspected seizure activity.
+- Emergency laboratory studies
+  Blood levels of glucose, sodium, calcium, blood urea nitrogen, creatinine; arterial pH, PCO2,
+  PO2; other electrolytes and liver function tests; blood and CSF cultures; blood or urine
+  toxicology screening. Coagulation studies, other metabolic tests, depending on suspicion.
+
+| Immediate tests | Referred tests |
+| --- | --- |
+| Glucose | Toxic Screen |
+| Electrolytes | Liver Function Tests |
+| CBC, BUN, Cr | Ammonia |
+| Osmolality | Coagulation tests |
+| ABG | TSH, cortisol |
+| LP (if no mass lesion) | AED levels |
+
+MANAGEMENT OF COMA IN SPECIFIC SITUATIONS
+
+1) Comatose patient with fever or septic syndrome
+   - Initial approach.
+   - Urgent LP to exclude CNS infection (unless contraindicated).
+   - Once LP is done, or if there will be a delay in LP for any reason, immediately start empiric
+     treatment.
+
+2) Comatose patient with focal findings on neurological examination (Structural lesions)
+   - Initial approach.
+   - Urgent brain CT without contrast to exclude hemorrhage.
+     o Investigate and treat intracranial hemorrhage or other cause of brain edema or shift.
+
+
+=== printed p.117 (PDF 128) ===
+
+[running header: coma]
+
+   - If brain CT scan is normal, we have 2 options:
+     o With clinical suspicion of acute ischemic stroke -> proceed to stroke management protocol.
+     o With no clinical suspicion of ischemic stroke, -> order mri brain (special techniques).
+   - If brain CT and MRI are normal, perform EEG to exclude nonconvulsive status epilepticus or
+     postictal state.
+
+3) Comatose patient without focal findings on neurological examination (Metabolic or toxic
+   causes)
+   - Initial approach
+   - Consider administration of IV naloxone or flumazenil, respectively, for possible narcotic or
+     benzodiazepine overdose.
+   - If no toximetabolic causes become obvious after full laboratory investigations, obtain a
+     brain CT scan or brain MRI scan.
+   - If brain CT and MRI scans are normal, perform an EEG to exclude nonconvulsive status
+     epilepticus or postictal state.
+   - If the EEG is normal, investigate the possibility of psychiatric etiologies.
+   - Patients do better than nontraumatic coma patients.
+
+[FIGURE: a three-branch clinical flowchart, illustrated with small clip-art icons (a patient in
+a hospital bed, a blood tube, a chest X-ray, a lumbar-puncture needle, a CT gantry, a CT brain
+showing haemorrhage, an EEG monitor). Text labels, in the order printed:]
+- Comatosed patient [sic]
+- Initial approach
+Branch 1: Fever?
+  - Blood and panculture urine Examine for septic focus
+  - CXR
+  - Lumbar Puncture
+  - Contraindicated?
+  - CT/MRI
+Branch 2: With focal findings?
+  - Brain CT
+  - Intracerebral hemorrhage
+  - Normal
+  - Yes
+Branch 3: Without focal findings?
+  - Toximetabolic causes?
+  - No
+  - IV naloxone or flumazenil (possible narcotic or benzodiazepine overdose)
+  - Brain MRI
+  - Normal / Abnormal
+  - EEG
+  - Nonconvulsive status or postictal
+  - Normal
+  - Psychogenic?
+[No printed caption line under this figure. The arrow connections between the labelled boxes are
+faint in the render; the labels above are transcribed but their exact branch-to-branch wiring is
+partly [ILLEGIBLE].]
+
+
+=== printed p.118 (PDF 129) ===
+
+[running header: coma]
+
+PROGNOSIS
+
+- Non-traumatic
+  Only about 15% of patients in nontraumatic coma make a satisfactory recovery.
+  - Best ultimate outcome: Metabolic causes like hepatic encephalopathy
+  - Intermediate prognosis: Hypoxia-ischemia (cardiac arrest if treated before 5 minutes)
+    TIME IS CRITICAL [printed in red]
+  - The worst prognosis: Diseases causing structural damage (cerebro-vascular disease including
+    subarachnoid hemorrhage) or cardiac arrest for more than 5 minutes
+- Drug-induced coma usually reversible
+- Traumatic coma
+  In relationship to their initial degree of neurological abnormality, traumatic coma patients do
+  better than non-traumatic coma patients.
+
+The last question
+Pinpoint pupil always indicates a structural pontine lesion:
+  o True
+  o False
+
+[The chapter ends here. No answer to "The last question" is printed. The lower two-thirds of the
+page is blank. A faint mirror-image show-through of the next leaf's heading is visible behind the
+"PROGNOSIS" banner, reading in reverse "CLINICAL APPROACH ... MOVEMENT" — this is bleed-through
+from the reverse of the sheet, not content printed on p.118, and it is only partly legible.]

@@ -1,0 +1,479 @@
+SOURCE: Semester 8\Neuro\Theoritical\Book\neuropsychiatry.pdf
+CHAPTER: Neurology ch.11 Clinical Approach to "Coma" Case
+RANGE: printed 99-108 = PDF 110-119
+READ: 2026-08-23 by subagent from 150 dpi renders
+
+FOOTER CHECK: all ten pages carry a printed footer exactly equal to PDF number minus 11
+(99, 100, 101, 102, 103, 104, 105, 106, 107, 108). Offset holds on every page.
+RUNNING HEADER: the word "coma" in blue lower-case display type, top right, on every page
+from printed p.100 onward. Printed p.99 carries the chapter banner instead.
+
+
+=== printed p.99 (PDF 110) ===
+
+CHAPTER 11
+
+CLINICAL APPROACH TO "COMA" CASE
+
+[Banner heading:] COMA
+
+Consciousness
+
+Awareness of self and environment; requires both arousal and mental content; requires
+integrity of reticular activating system and cerebral cortex.
+
+> Two components of conscious behavior:
+  - Content: The sum of cognitive and affective function (cognitive and affective mental
+    function) (function of both cerebral cortices).
+  - Arousal: Appearance of wakefulness (function of ascending reticular activating system)
+
+> The Content depends on arousal, but normal arousal does not guarantee normal content.
+  - Arousal damage -> coma, semi coma, delirium.
+  - Content damage -> dementia, delusions, confusion, inattention.
+
+Spectrum of consciousness
+
+- Alert, conscious: perfectly normal state of arousal.
+- Lethargy: lies between alertness and stupor. difficulty maintaining alertness.
+- Stupor: is a state of baseline unresponsiveness that requires repeated application of
+  vigorous stimuli (verbal or motor) to achieve arousal.
+- Semi-coma: a state of response to motor stimulus only (not verbal).
+- Coma: is a state of complete unresponsiveness to arousal.
+
+[Boxed panel:] You should differentiate between...!
+- Sleep: It is the only normal form of altered consciousness.
+- Delirium: acute disturbance of attention associated with disturbance in cognition with
+  clouding of consciousness, perception, and orientation -> reduced ability to sustain
+  attention to environmental stimuli.
+- Encephalopathy is a term for any diffuse disease of the brain that alters brain function
+  or structure.
+
+
+=== printed p.100 (PDF 111) ===
+
+[Running header: coma]
+
+Neuroanatomy of Arousal
+
+- Ascending Reticular Activating System (ARAS) 'core of the brainstem' receives input from
+  somatic afferents (acts as a gate).
+- ARAS projects to thalamus and the limbic system -> both cerebral cortices.
+
+ASCENDING RETICULAR ACTIVATING SYSTEM (ARAS)
+
+[FIGURE: mid-sagittal drawing of the brain and brainstem with blue arrows sweeping from the
+brainstem core up through the thalamus to the cortex. Text labels read:]
+  Cerebral cortex
+  Thalamus
+  RAS projections to cerebral cortex
+  Arousal Center
+  Cerebellum
+  Pons
+  Reticular formation
+  Medulla oblongata
+  Spinal cord
+  Visual impulses from eyes
+  Auditory and vestibular impulses from ears and vestibular apparatus
+  Reticulospinal tracts (to skeletal muscles)
+  Somatic sensory impulses (from nociceptors, proprioceptors, and touch receptors)
+
+Coma pathogenesis
+
+- Coma implies dysfunction of: ARAS OR Both hemi-cortices.
+- Anatomically:
+  - Central brainstem structures (bilaterally) from caudal medulla to rostral midbrain.
+  - Both hemispheres.
+
+Classifications of Coma
+
+A. Toxic metabolic coma (2/3 of cases)
+
+  Metabolic Coma Differentiating Features:
+  - Confusion and stupor commonly precede motor signs.
+    (A confusional state or delirium occurs initially).
+  - Motor signs are usually symmetrical.
+  - Pupillary reactions are usually preserved.
+  - Asterixis, myoclonus, tremor, and seizures are common.
+  - Acid-base imbalance with hyper- or hypoventilation is frequent.
+  - Tremulousness, myoclonic jerks, and asterixis are typical.
+
+
+=== printed p.101 (PDF 112) ===
+
+[Running header: coma]
+
+> Causes:
+
+1. Deprivation of oxygen, substrate, or metabolic cofactor (shock)
+   - Hypoxia, diffuse ischemia (cardiac disease, decreased peripheral circulatory
+     resistance, increased cerebrovascular resistance, widespread small-vessel occlusion)
+     or any cause of hypotension.
+   - Hypoglycemia
+   - Thiamine deficiency (Wernicke-Korsakoff syndrome)
+
+2. Disease of organs other than brain
+   - Liver (hepatic coma, sedative hypersensitivity)
+   - Kidney (uremia)
+   - Lung (CO2 narcosis)
+   - Pancreas (diabetes, hypoglycemia, exocrine pancreatic encephalopathy)
+   - Thyroid (myxedema, thyrotoxicosis)
+   - Adrenal (Addison or Cushing disease, pheochromocytoma)
+   - Other systemic disease (e.g., sepsis)
+
+3. Exogenous poisons (drugs or toxins): e.g., sedatives and narcotics, Psychotropic drugs,
+   Acid poisons (e.g., methyl alcohol, ethylene glycol), Others (e.g., anticonvulsants,
+   heavy metals, cyanide)
+
+4. Abnormalities of electrolytes: e.g., water and sodium (hypo- and hypernatremia),
+   acidosis, alkalosis, magnesium (hyper- and hypomagnesemia), calcium (hyper- and
+   hypocalcemia), phosphorus (hypophosphatemia).
+
+B. Structural coma (1/3 of cases)
+
+  > Supratentorial lesions cause coma by either widespread bilateral disease, increased
+    intracranial pressure, or herniation.
+  > Infratentorial lesions involve the RAS, usually with associated brainstem signs.
+
+[FIGURE: small coloured drawing of the brain in sagittal view with the tentorium marked in
+red. Title and labels read:]
+  The Tentorium Cerebelli
+  Supratentorial (cerebrum)
+  Tentorium
+  Infratentorial (cerebellum)
+
+- Asymmetric motor or ocular reflex findings occur early.
+- A unilateral dilated pupil unresponsive to light indicates uncal herniation until proven
+  otherwise.
+
+
+=== printed p.102 (PDF 113) ===
+
+[Running header: coma]
+
+1. Supratentorial Mass Lesions Differential Characteristics
+   - Initiating signs usually of focal cerebral dysfunction (point to one anatomic area).
+   - Motor signs are often asymmetrical.
+   - Causes (Hematoma, Neoplasm, abscess, contusion, vascular accidents, diffuse axonal
+     damage)
+
+2. Infratentorial Mass Lesions Differential Characteristics
+   - History of preceding brainstem dysfunction or sudden onset of coma.
+   - Localizing brainstem signs precede or accompany onset of coma and always include
+     oculovestibular abnormality.
+   - Cranial nerve palsies are usually present.
+   - "Bizarre" respiratory patterns are common, usually present at onset of coma.
+   - Causes (Neoplasm, vascular accidents, trauma, cerebellar hemorrhage, central pontine
+     myelinolysis).
+
+3. Infection induced Coma Differentiating Features
+   - History of infection
+   - Fever
+   - Nuchal rigidity (meningeal signs)
+   - Kernigs, Brudzinski signs [sic — printed without apostrophe]
+   - Skin Rash
+
+C. Psychiatric causes: Catatonia (Mute, with marked decrease in motor activity)
+
+Coma Differential Diagnosis
+
+- Brain death.
+- Persistent vegetative state.
+- Locked-in syndrome.
+- Thalamic lesions.
+- Nonconvulsive status epilepticus.
+- Psychiatric unresponsiveness.
+
+
+=== printed p.103 (PDF 114) ===
+
+[Running header: coma]
+
+[FIGURE: full-width two-column infographic contrasting toxic-metabolic and structural coma,
+with pictograms of a body, eyes, a head, organs and brains. All readable text:]
+
+  Toxic-Metabolic Coma (2/3 of Cases)
+    Symmetrical Motor Signs — Tremors, asterixis, and myoclonus typically affect both sides
+      of the body equally.
+    Preserved Pupillary Reactions — Unlike structural damage, the pupils usually remain
+      reactive to light in metabolic states.
+    Preceding Confusional State — Stupor or delirium commonly occurs before the onset of
+      motor signs.
+    [pictogram labels:] Confusional State / Stupor    Comatose
+    Common Causes (Toxic-Metabolic) — Organ failure (Liver/Kidney), drug toxins, and
+      electrolyte imbalances.
+
+  Structural Coma (1/3 of Cases)
+    Asymmetrical Clinical Findings — Motor signs and ocular reflexes are often focal,
+      pointing to one anatomic area.
+    Unilateral Dilated Pupil — A single dilated, unresponsive pupil indicates uncal
+      herniation until proven otherwise.
+    Brainstem & Respiratory Signs — Infratentorial lesions often present with bizarre
+      respiratory patterns and cranial nerve palsies.
+    Common Causes (Structural)
+      Supratentorial Structural: Hematoma, neoplasm, abscess, and vascular accidents.
+      Infratentorial Structural: Brainstem vascular accidents, cerebellar hemorrhage, and
+        central pontine myelinolysis.
+
+[Banner heading:] BRAIN DEATH
+
+- Irreversible loss of brain and brainstem function.
+- The cause of coma is known and sufficient to cause brain death, such as cardiopulmonary
+  arrest.
+- No improvement occurs during observation and treatment.
+
+  "Observation is at least 6 hours for adults, 12 hours to 2 days for children."
+
+- Comatose patient with absence of all brainstem reflexes ->
+  - Corneal reflex
+  - Pupillary light reflex
+  - Gag reflex
+  - Oculocephalic reflex (Doll's sign)
+  - Vestibulo-ocular reflex (Caloric test) -> Injection of water into the ear to see
+    nystagmus sign.
+  - No evidence of spontaneous respiration (Abnormal bedside apnea test: no observed
+    breaths despite pCO2 > 60 mm, while on 100% oxygen)
+
+
+=== printed p.104 (PDF 115) ===
+
+[Running header: coma]
+
+- Absence of any potentially reversible causes of marked CNS depression ->
+  - Hypothermia (temperature 32°C [89.6°F] or less)
+  - Hypotensive shock
+  - Drug intoxication (particularly barbiturate overdose)
+  - Severe metabolic disturbance
+
+- Ancillary testing may help to confirm the clinical diagnosis ->
+  - Flat-line EEG
+  - Absent cerebral blood flow by Trans-cranial doppler or Radioisotope scan
+
+[FIGURE: six pen-and-ink clinical drawings of brain-death bedside testing. Text labels read:]
+  Supraorbital pressure — "Open your eyes." — Coma; no response to voice, pain, or other
+    stimuli
+  Feels for breath on cheek — No spontaneous respiration
+  Pupils dilated, unresponsive to light
+  Ice water in ear: eyes do not move
+  "Doll's eyes": head turned sharply to side, eyes remain centered
+  Corneal reflex lost
+
+[Banner heading:] PERSISTENT VEGETATIVE STATE
+
+  "Defect in the content not in the awareness"
+
+- Appears intermittently awake.
+- Breathes spontaneously, intact cardiac and gastric motility.
+- Exhibits primitive reflexes or eye-roving behavior.
+- Severe cerebral damage persists.
+- NO meaningful communication or cortical responsiveness occurs.
+- A chronic not acute event with impaired content of consciousness (cortex)
+
+  "It may be due persistent hypoxia chronic not treated perfectly and it will make the
+  patient pass through a chronic state of PVS." [sic — printed as written]
+
+> Criteria for Diagnosis of Persistent Vegetative State
+  - No awareness of self or environment.
+  - No interaction with others.
+  - No evidence of sustained, reproducible, purposeful, or voluntary behavioral responses
+    to visual, auditory, tactile, or noxious stimuli.
+  - No evidence of language comprehension or expression
+  - Intermittent wakefulness manifested by the presence of sleep/wake cycles.
+  - Bowel and bladder incontinence.
+  - Preserved autonomic functions.
+  - Variably preserved cranial nerve (pupillary, oculocephalic, corneal, vestibulo-ocular,
+    and gag) and spinal reflexes.
+
+
+=== printed p.105 (PDF 116) ===
+
+[Running header: coma]
+
+[Banner heading:] LOCKED-IN SYNDROME
+
+- The patient may appear in a persistent vegetative state
+- Unable to move the limbs and face, or gaze laterally "de-efferented".
+- Vertical gaze and eye blinking are PRESERVED.
+- Communication and cortical functions are preserved only by blink and vertical gaze.
+- The patient accurately blinks once of "yes" or twice for "no" into the examiner. [sic]
+
+> Cause -> Extensive pontine infarction.
+
+[FIGURE: sagittal MRI of the head, annotated with red arrows. Text labels read:]
+  Locked-in syndrome
+  pontine inearction [sic — printed misspelling of "infarction"]
+  preserved reticular activating system behind the pons
+
+[Banner heading:] NON-CONVULSIVE STATUS EPILEPTICUS
+
+- Continued or persistent generalized seizures may occur in the absence of obvious clinical
+  convulsive activity.
+- Subtle clinical manifestations include:
+  - Rhythmical nystagmus
+  - Twitching of an eyelid or part of the face or limb.
+  - Obtain an emergent EEG recording and assess the response to IV benzodiazepine bolus.
+
+[Banner heading:] PSYCHIATRIC UNRESPONSIVENESS
+
+  Rare [not diagnosed except after exclusion of all organic causes]
+
+> Diagnosis of exclusion->
+  - No history of drug overdose.
+  - Intact brainstem reflexes.
+  - Spontaneous breathing.
+  - No focal neurological deficit.
+  - Normal metabolic profile.
+  - Normal brain MRI with DW sequence.
+  - Normal EEG, similar to the awake state.
+
+
+=== printed p.106 (PDF 117) ===
+
+[Running header: coma]
+
+[FIGURE: full-width infographic, three panels. All readable text:]
+
+  BRAIN DEATH VS. PERSISTENT VEGETATIVE STATE (PVS)
+    Brain Death: Irreversible Total Loss — Permanent loss of brain and brainstem function
+      with no spontaneous respiration or reflexes.
+    PVS: Wakefulness Without Awareness — Preserved sleep/wake cycles and autonomic
+      functions but no interaction with the environment.
+    Observation Timelines for Brain Death
+      Minimum observation of 6 hours for adults
+      Minimum observation of 12-48 hours for children
+
+  CLINICAL FEATURE COMPARISON
+
+  | Feature | Brain Death | Persistent Vegetative State | Locked-In Syndrome |
+  |---|---|---|---|
+  | Brainstem Reflexes | Absent | Variably Preserved | Preserved |
+  | Awareness/Content | None | Absent | Fully Preserved |
+  | Motor Function | None | Primitive Reflexes | Vertical Gaze/Blink Only |
+
+  IDENTIFYING THE MIMICS
+    Locked-In: The Eye Gaze Key — Patients can only communicate via vertical gaze and
+      blinking due to pontine infarction.
+    Ruling out Non-Convulsive Seizures — Look for rhythmic nystagmus or eyelid twitching
+      and confirm with an emergent EEG.
+    Psychiatric Unresponsiveness — A diagnosis of exclusion requiring normal MRI, EEG, and
+      metabolic profiles.
+
+Break....
+
+A 37 year old lady had severe brain trauma in a car accident. CT brain showed sizable
+pontine hemorrhagic mass. The patient is quadriplegic with inability to communicate except
+for vertical gaze and blinking. What do you think?
+
+  1. Persistent vegetative state
+  2. Locked in syndrome.
+  3. Non convulsive status epilepticus
+
+[No answer is printed for this question on this page.]
+
+[Banner heading:] APPROACH TO THE PATIENT IN COMA
+
+[FIGURE: flow chart with a drawing of an intubated patient. Boxes read:]
+  Comatosed patient [sic]
+    Initial approach
+      Fever?    With focal findings?    Without focal findings?
+
+[The flow chart's three branches are not expanded on this page.]
+
+
+=== printed p.107 (PDF 118) ===
+
+[Running header: coma]
+
+Golden rules
+
+- All alterations in arousal constitute acute life-threatening emergencies. There is always
+  an urgency about such medical problems need to determine the underlying disease process
+  and the direction in which it is evolving and to protect the brain against more serious
+  or irreversible damage. [sic]
+- NO management of coma at home.
+- ABC's are 1st Priority (Airway, Breathing, Circulation (ABC) - identify and address life
+  threatening inadequacies).
+- Must ensure oxygen reaches CNS and vital organs.
+- Must address immediately life-threatening conditions (cardiac, metabolic, ... etc) before
+  addressing CNS.
+
+  Try to go in a more generalized rather than a neurological approach.
+
+- Treat rapidly progressive metabolic disorders - hypoglycemia.
+- Evaluate for intracranial hypertension and imminent herniation and treat Signs of
+  increased ICP/Herniation
+
+Initial approach for a comatose patient
+
+- ABC; maintain airway, breathing and circulation.
+- Urgently correct any hypothermia
+- Establish stability of the cervical spine if trauma has occurred or strongly suspected.
+- Rule out hypoglycemia with an immediate fingerstick glucose reading or empirical infusion
+  of 50% dextrose with IV thiamine (at least 100 mg)
+- Check basic blood work and urine drug screening; CBC, electrolytes, glucose, renal and
+  liver functions, PT, PTT, INR, ABG, possible carbon monoxide (CO) level if CO poisoning
+  suspected.
+
+[FIGURE: three-column pictogram panel — an airway, a pair of lungs, a heart. Text labels:]
+
+  Airway
+    - Talking = good
+    - Look: edema, blood, vomitus, foreign body
+    - Listen: noisy = obstructed
+
+  Breathing
+    - Look: work of breathing, respiratory rate
+    - Listen: breath sounds
+    - Check: pulse oximetry
+
+  Circulation
+    - Look: mental status, color
+    - Feel: peripheral pulses
+    - Check: heart rate, cardiac rhythm, blood pressure
+
+
+=== printed p.108 (PDF 119) ===
+
+[Running header: coma]
+
+> Management of the Comatose Patient Airway
+
+  Evaluate ->
+  - Is the airway patent.
+  - Is there trauma or foreign body obstructing airway
+  - Try chin lift to help open airway -- protect cervical spine
+  - Place airway if indicated - nasal or oral airway
+  - Intubation
+
+> Management of the Comatose Patient Circulation
+
+  - Is the patient in shock?
+    - Check pulses, heart rate, blood pressure, perfusion.
+    - Remember hypotension is a late sign of shock.
+  - Start treatment for shock.
+    - Do not restrict fluids in comatose patients with inadequate intravascular volume.
+    - Cardiac output and cerebral perfusion are much more important than fluid restriction.
+    - Use isotonic solutions and blood, as indicated.
+    - Do not use hypotonic solutions to treat shock, particularly patients with coma or
+      possible cerebral edema.
+    - Identify life threatening hemorrhage anywhere and control it. (especially if trauma
+      is the cause)
+
+[Banner heading:] HISTORY
+
+A. Sudden Onset
+   - Intracranial hemorrhage (prodromal severe headache may accompany subarachnoid
+     hemorrhage [SAH] from a ruptured intracranial aneurysm, or occur with cerebral
+     hemorrhage)
+   - Cardiopulmonary arrest (significant cerebral hypoperfusion)
+   - Embolic: multiple cerebral infarcts.
+   - Trauma: observed or unwitnessed head trauma
+
+B. Acute Onset (confusion or delirium preceding coma)
+   - Toxo-metabolic etiology
+     - Organ dysfunction or infection
+     - Electrolyte disorders
+     - Medicinal or drug toxicity
+   - Critical brainstem infarction
+
+[The B. list ends here; the lower third of the page is blank. The chapter is still running
+at printed p.108 — the History section continues beyond this range.]

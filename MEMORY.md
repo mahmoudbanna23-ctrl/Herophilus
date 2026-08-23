@@ -5,7 +5,7 @@ Running record, organised around *resuming*. ISO dates; unverified marked as suc
 story, count and verbatim ruling) in `progress\memory-archive.md`** — read the relevant block
 there before resuming a paused stream. Where this file and the archive disagree, this file wins.
 
-## Resume here — **NEUROPSYCHIATRY THEORY, the last module: 33 of 34 written. ✅ ALL 151 QUESTIONS NOW REACHABLE FROM THEORY; the ONE chapter left carries ZERO.** ENT · Peds · Ophtho theory DONE. Banks PAUSED.
+## Resume here — ✅✅✅ **THEORY IS FINISHED. ALL FOUR MODULES, 153 of 153 CHAPTERS.** The boot probe reads `chaps 153` against `th 153`. **BANKS ARE THE ONLY WORK LEFT** — and they are PAUSED; the resume points are further down.
 
 - **⚠️⚠️ `content\neuro\theory-plan.md` IS THE MODULE'S WORKING FILE — READ IT FIRST**, with
   `content\neuro\book-map.md`. Deck audit, unsourced chapters, page rates, order of work, every
@@ -14,15 +14,15 @@ there before resuming a paused stream. Where this file and the archive disagree,
   (whole; seam in the plan) · `ps-symptom` 8 · `ps-psychoed` · `nr-ms` · `ps-mood` · `nr-lmn` 12 ·
   `nr-nerve` 8 · `ps-ocd` 10 · `ps-ptsd` 6 · `nr-movement` 13 · `nr-epilepsy` 12 · `ps-anxiety` 11 ·
   `ps-psychosis` 9 · `ps-schizmgmt` 10 · `ps-pharm` 11 · `nr-backpain` 10 · `nr-neckpain` 9 ·
-  `ps-sud` 7 · `ps-emerg` 13 · `ps-devices` 12 · `ps-therapy` 11 · `nr-intro` 10 · `nr-exam` 7 · **`nr-cns` 13 · `ps-somato` 13 — BOTH EXACTLY AT THE SHAPE, NEITHER SPLIT · `ps-child` 12 · `ps-geri` 12 · `ps-interview` 8 · `ps-osce` 7.**
-- **⚠️⚠️ SIX SPLITS ON 2026-08-22/23 took the module 29 → 34. Every seam and its arithmetic is in the plan §4; the first five are listed verbatim in the archive. `SCHEDULE` untouched every time.**
+  `ps-sud` 7 · `ps-emerg` 13 · `ps-devices` 12 · `ps-therapy` 11 · `nr-intro` 10 · `nr-exam` 7 · `nr-cns` 13 · `ps-somato` 13 · `ps-child` 12 · `ps-geri` 12 · `ps-interview` 8 · `ps-osce` 7 · `nr-delirium` 11 · `nr-coma` 10 · `nr-comapproach` 12. **NEURO = 36 of 36, 333 sections, 113,586 w.**
+- **⚠️⚠️ EIGHT SPLITS took the module 29 → 36 — the last two on 2026-08-23: delirium-vs-coma (two topics, two sources), and coma into two. Every seam and its arithmetic is in the plan §4; the first five are listed verbatim in the archive. `SCHEDULE` untouched every time.**
   ⚠️ **A SINGLE deck may split** (`ps-ocd`), and **a book seam may cut across an INTERLEAVING deck** (`nr-backpain`) — **nothing is reordered *within* a chapter.**
 - **⚠️⚠️ FORECAST A SPLIT ONLY AT ÷280 ≥ 16; BETWEEN 13 AND 15, TEST-PRINT — NEVER ACCEPT A SPLIT
   *OR* A COMPRESSION ON AN ESTIMATOR.** The three forecast splits printed **13/12, 9/10 and 10/9 pp**, inside the shape first time; each of the three *found* splits cost a full extra cycle — **but
   `ps-pharm` forecast 14.9 and PRINTED 11.** ⚠️⚠️ **÷280 ERRS BADLY IN BOTH DIRECTIONS: it
   OVER-predicted `ps-pharm` by 4.0 and UNDER-predicted `ps-emerg` by 4.7** (said 8.3, printed 13).
   ⚠️ **÷240 over-predicted ophtho by 5.1; ÷335 under-predicted `nr-lmn` by 6.3; both OVER-predicted
-  `ps-therapy` (13.7 and 16.0 against 11 printed). ONLY PRINTING SETTLES IT.** ⚠️ **`nr-cns` WAS OVER-PREDICTED BY BOTH FROM THE WRITTEN COUNT — ÷240 said 17.0, ÷280 said 14.5, IT PRINTED 13.**
+  `ps-therapy` (13.7 and 16.0 against 11 printed). ONLY PRINTING SETTLES IT.** ⚠️ **`nr-cns` WAS OVER-PREDICTED BY BOTH FROM THE WRITTEN COUNT — ÷240 said 17.0, ÷280 said 14.5, IT PRINTED 13.** ✅✅ **AND THE ONE SPLIT NOT TAKEN ON AN ESTIMATOR AT ALL: `nr-coma` WAS WRITTEN WHOLE, MEASURED 6,543 w, AND AT EVERY RATE THIS MODULE HAS RECORDED (296–391) THAT IS 17–22 pp — NO RATE FITS THE SHAPE.** It split at the book’s own banner and printed **10 + 12 = 22.** **MEASURE, THEN SPLIT.**
 - **⚠️⚠️ TRIM FIRST, BUT KNOW WHEN TO STOP. A trim is duplication or my own prose, never a fact.**
   `ps-ocd` had **132 words on page 14**; two second copies recovered **82 words of paper**, leaving
   **50** and nothing that was duplication — so it split. ⚠️⚠️ **"A table costs more paper per word" IS REFUTED** — `ps-anxiety` is the **most** table-dense chapter and printed **highest** w/pp.
@@ -33,7 +33,7 @@ there before resuming a paused stream. Where this file and the archive disagree,
   legitimate thing to cut** — 322 w and 240 w cut, **no sourced fact lost**. ⚠️ **Cut an UNTAGGED outside claim and a CONSOLIDATED second copy first.** **Rates 296-391 w/pp.**
 - ✅ **`nr-intro` IS WRITTEN AND SPLIT — AND ITS 39 BOOK PAGES WERE READ 2026-08-23** on the user's
   explicit authorisation, by three subagents: printed **1–39** cached to `content\neuro\book\` as
-  `neuro-ch01-ch02a.txt` · `neuro-ch02b.txt` · `neuro-ch03-localization.txt`, **~16,700 w, nothing
+  `neuro-ch01-ch02a.txt` · `neuro-ch02b.txt` · `neuro-ch03-localization.txt`, **~16,700 w, ✅✅ **AND A SECOND RENDER 2026-08-23, ALSO AUTHORISED: book Neurology ch.11 `CLINICAL APPROACH TO “COMA” CASE`, printed 99-118, TWENTY pages, by two subagents → `neuro-ch11-coma-a.txt` + `neuro-ch11-coma-b.txt`, 5,374 w, `+11` verified footer by footer on ALL TWENTY, nothing illegible. IT BECAME `nr-coma` + `nr-comapproach`. DO NOT RE-RENDER.** nothing
   illegible. DO NOT RE-RENDER.** ⚠️ **`+11` re-verified on all 39 footers.** ⚠️⚠️ **WRITTEN WHOLE,
   PRINTED 14 pp, SPLIT AFTER PRINTING into `nr-intro` 10 pp (7 q) + `nr-exam` 7 pp (14 q), a NEW
   id.** **The 14 moved BY THE `qs` LINKS**; `SCHEDULE` untouched. ⚠️⚠️ **THE 54-WORD TRIM CAME BACK
@@ -47,10 +47,10 @@ there before resuming a paused stream. Where this file and the archive disagree,
   book p.12 panel D shows its printed key names the WRONG HALF of the optic radiation** (inferior
   quadrantanopia = **upper/parietal**). **It stops being *outside knowledge disagrees* and becomes
   *the course's own book disagrees*, citable. The `answer` still does not move.** **Banks are PAUSED — do NOT sweep this into a theory session.**
-- **⚠️ SEVEN SOURCES STILL UNREAD, RECORDED NOT GUESSED** — the 2026-08-23 render authorisation
+- **⚠️ SOURCES STILL UNREAD, RECORDED NOT GUESSED** — the 2026-08-23 render authorisation
   covered `nr-intro`'s 39 pages ONLY: **`L3` p17** (zero words/fonts, before the deck's unanswered
   *NON MOTOR SYMPTOMS ??????* slide) · **Neuro ch.12** (119-127) · **ch.6** (57-66) · **Psych ch.9**
-  (249-255), **ch.10** (256-260), **ch.12** (265-270), **ch.13** (271-277, the book's LAST content page) · **three picture-only `L19` slides** (p.7, p.14, p.19). **Check `mv-5` if read.**
+  (249-255), **ch.10** (256-260), **ch.12** (265-270), **ch.13** (271-277, the book's LAST content page) · **three picture-only `L19` slides** (p.7, p.14, p.19) · ⚠️ **NEW: Psych ch.8 `Dementia and delirium` (239-248, 10 pp), SHARED by `ps-geri` and `nr-delirium`** · **five `L13` delirium slides** (32, 34, 36, 39 and one reading only `FEVER`). **Check `mv-5` if read.**
 - **⚠️⚠️ TWO ENTRIES OF THAT LIST WERE FALSE AND ARE STRUCK (2026-08-23): Psych ch.10 (NMS) and
   ch.12 (ECT) ARE NOT NEEDED** — `L15`'s back half and `L16` teach NMS in full, `L18` teaches ECT at
   length; fixed in `sm-5`/`sm-7`/`sm-10` and plan §5, **the evidence verbatim in the archive.**
@@ -152,13 +152,13 @@ there before resuming a paused stream. Where this file and the archive disagree,
 - **Corpus 2,097** (2026-08-14): ENT 1,720 · Neuro 158 · Ophtho 138 · Peds 81. Banks: GG 1,180 ·
   Endpoint 697 · House 78; 54 shared. Module keys `ent`, `ophtho`, `pediatrics`, `neuropsych`.
   Option counts 2–9 coexist; nothing assumes four.
-- **Theory: 150 of 151 chapters, 1,577 sections.** ENT 30 (259 pp / 8.6) · Peds 51 (340 / 8.3) ·
-  Ophtho 36 (331 / 9.2) · **Neuro 33 of 34**. Drafts in `content\<mod>\theory-drafts\` (⚠️ ENT's
+- **Theory: ✅ **153 of 153 chapters — COMPLETE** — 1,603 sections.** ENT 30 (259 pp / 8.6) · Peds 51 (340 / 8.3) ·
+  Ophtho 36 (331 / 9.2) · **Neuro 36 of 36**. Drafts in `content\<mod>\theory-drafts\` (⚠️ ENT's
   bare `ent-csom/tonsils/aom/stridor` are the DEAD format; their `*.v2/v3` are current). Best
   models: `ent-nasalobs`, `op-ret`, `nr-cranial`, `ps-symptom`, `ps-ocd`, `ps-anxiety`, `ps-schizmgmt`.
 - Last real `file://` boot **2026-08-23**: **0 console errors, 876 CSS rules, 3
-  `max-aspect-ratio:5/4` blocks, 4 modules, 151 chapters, 2,097 questions, 89 cases, 150 theory
-  chapters, 1,577 sections.** ⚠️⚠️ **THE SESSION SCRATCHPAD STARTS EMPTY AND THE HARNESSES DO NOT LIVE IN THE CURRENT ONE** — all ten survive under the 2026-08-17 session dir `3528b857-dbcf-4152-a3c7-f4fa6e501f21\scratchpad`; **`find` the temp root for them before rebuilding anything.** They are: `MOD=<mod> print.sh` · `boot.sh` ·
+  `max-aspect-ratio:5/4` blocks, 4 modules, **153 chapters**, 2,097 questions, 89 cases, **153 theory**
+  chapters, 1,603 sections.** ⚠️⚠️ **THE SESSION SCRATCHPAD STARTS EMPTY AND THE HARNESSES DO NOT LIVE IN THE CURRENT ONE** — all ten survive under the 2026-08-17 session dir `3528b857-dbcf-4152-a3c7-f4fa6e501f21\scratchpad`; **`find` the temp root for them before rebuilding anything.** They are: `MOD=<mod> print.sh` · `boot.sh` ·
   `modcheck-neuro.js` · `vdraft.js` · `splice-neuro.js`/`resplice-neuro.js` · `qdump.js` · `shot.sh`.
 - **⚠️ THE THEORY READER IS AN A4 PAGE (2026-08-19, three user complaints) AND MUST NOT BE MADE
   WHITE.** 210:297 by `aspect-ratio`; **margins set in JS from the PAGE's width** (percentages
