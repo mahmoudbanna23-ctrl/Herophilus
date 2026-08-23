@@ -160,7 +160,9 @@ const MODULES = [
       ['ps-emerg','Emergency Psychiatry'],['ps-pharm','Psychopharmacology'],
       ['ps-devices','Devices in Psychiatry'],['ps-therapy','Psychotherapy']]},
     {name:'Neurology', chapters:[
-      ['nr-intro','Introduction to neurology and localization'],['nr-ms','MS and demyelinating disorders'],
+      ['nr-intro','Introduction to neurology and localization'],
+      ['nr-exam','The neurological examination'],
+      ['nr-ms','MS and demyelinating disorders'],
       /* Split 2026-08-22, FORECAST rather than found: theory-plan.md §4 called it
          the module's only forecast split, and the old title admitted it —
          "Movement disorders / Epilepsy" are TWO TOPICS, not one topic taught

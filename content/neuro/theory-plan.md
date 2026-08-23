@@ -313,6 +313,7 @@ counts did not move after the repair**, in any of the seven.
 | ✅ **`ps-devices`** | **1,909** (L18, single source) | ÷280 said **6.8 pp** | ✅ **WRITTEN WHOLE 2026-08-23 — printed 12 pp, NO SPLIT.** 10 sections, **4,191 w**, 0 q. ⚠️⚠️ **INFLATION 220 % — the module's worst alongside `ps-sud`**, and ÷280 **under-predicted by 5.2 pages, a new worst in that direction.** ⚠️ **TRIMMED 122 w first** — two absence bullets duplicating `dv-10`'s own audit table, one commentary bullet, two shortened forward-references — **and the page count did not move.** ✅ **It PAYS the ECT row `ps-emerg`'s `em-11` and `ps-schizmgmt`'s `sm-8`/`sm-10` both filed, and `dv-10` AUDITS IT ITEM BY ITEM**: `sm-8` listed six things missing — **technique ✅, anaesthesia ✅, adverse effect ✅ PAID; electrode placement ⚠️ PARTIAL** (*unilateral or bilateral* and no more); **course length ❌ and contraindication ❌ STILL ABSENT.** ⚠️⚠️ **AND BOTH CHAPTERS' POINTER WAS WRONG** — they sent ECT to **book ch.12, image-only, unread**, when **`L18` was cached the whole time.** ⚠️⚠️ **NOT ONE CONTRAINDICATION FOR ANY DEVICE** — `contraindicat` returns **zero over all 23 slides**; **deliberately NOT supplied**, six device-specific lists from memory being exactly what `CLAUDE.md` §5 forbids. ⚠️⚠️ **A SYLLABUS-LEVEL ABSENCE FOUND HERE: PSYCHOSURGERY is named as one of the four arms of psychiatric treatment and taught NOWHERE** — `psychosurgery`/`cingulotomy`/`lobotomy` return **zero across ALL 25 CACHED DECKS**. ⚠️ **Book Psych ch.12 (265–270, 6 pp) UNREAD**, image-only |
 | `nr-ms` · `ps-symptom` | 2,251–2,441 | 6.7–7.3 pp | inside the ceiling. ⚠️ **`ps-ocd` was in this row and printed 14 pp** — a deck word count is not a page count when a second source is added |
 | everything else | 1,257–1,924 | 3.8–5.7 pp | single chapters |
+| ✅ **`nr-intro` + `nr-exam`** | **756** deck (L1 lines 1-180 less the 59-word UMN/LMN block) **+ 39 book pages** | ÷280 on the WRITTEN 5,128 w said **18.3 pp** | ✅ **WRITTEN WHOLE 2026-08-23, PRINTED 14 pp — ONE OVER THE SHAPE — AND SPLIT AFTER PRINTING.** `nr-intro` **8 sections, 3,221 w, 10 pp, 322 w/pp, 7 q** · **`nr-exam` NEW ID, 4 sections, 2,340 w, 7 pp, 334 w/pp, 14 q.** ⚠️⚠️ **A 54-WORD TRIM WAS TAKEN FIRST AND RECOVERED ALMOST NOTHING — which is exactly what settled the split.** `in-11` held a **consolidated second copy** of the source-fault list; cutting it to pointers freed 54 words and **left nothing but facts.** **The `ps-ocd` shape precisely: trim first, and when the trim comes back empty, split.** ⚠️⚠️ **AND THE SPLIT COST PAGES RATHER THAN SAVING THEM — 10 + 7 = 17 pp against 14 unsplit.** Headers and section breaks are not free; **that is expected and is NOT a reason to compress instead.** ✅ **THE SEAM: `nr-intro` ends where the anatomy does; `nr-exam` is the bedside.** **Nothing was reordered** — the sections stand in written order, `in-8`-`in-11` renumbered `nx-1`-`nx-4`. ✅ **The 14 questions moved BY THE THEORY `qs` LINKS, never by title** — the ophthalmology rule, where a title-based refile misfiled twelve. ✅ **`SCHEDULE` UNTOUCHED.** ✅⚠️ **ALL 151 QUESTIONS IN THE MODULE ARE NOW REACHABLE FROM THEORY — was 130.** ⚠️ **`nr-exam` is BOOK-ONLY: L1 carries no examination technique at all**, and `brachioradialis` / `abdominal reflex` / reflex grading return **zero across all 25 decks** |
 | ✅ **`ps-therapy`** | **1,382** (L19, single deck) | ÷280 said **4.9 pp** | ✅ **WRITTEN WHOLE 2026-08-23 — printed 11 pp, NO SPLIT.** 11 sections, **3,829 w**, 0 q, **348 w/pp**. ⚠️⚠️ **INFLATION 277 % — A NEW WORST BY A WIDE MARGIN** (previous high 220 %), and it is **structural, not stylistic**: the deck **NAMES far more than it TEACHES**, so **12 counselling skills, 6 ethics headings, 3 unexpanded acronyms (MBT/MBCT/CAT) and 4 orphaned modalities** are all supplied here, **every one tagged**. ⚠️ **The estimators over-predicted the PRINT: from the written 3,829 w, ÷280 said 13.7 pp and ÷240 said 16.0, against 11 — over by 2.7 and 5.0.** Same shape as `ps-anxiety`: **a table-dense chapter prints at a high w/pp.** ✅ **IT PAYS ROWS FIVE CHAPTERS FILED — the most-owed chapter in the module**: `ps-sud` `sd-6` (four rehabilitation modalities) **PARTIAL**, `ps-emerg` `em-11` (counselling/coping/ventilation) **PARTIAL**, `ps-devices` `dv-10` (CBT/exposure/operant conditioning) **PARTIAL**, `ps-pharm` **PAID**, `ps-psychoed` **PAID**. ⚠️⚠️ **A DECK-vs-BOOK CONTRADICTION, BOTH RECORDED, NEITHER CORRECTED: L19's NICE slide recommends CBT for psychosis/schizophrenia; book Psych ch.7 printed p.238 says the evidence for CBT in reducing symptoms or preventing relapse is MINIMAL.** The second such pair in the module, after `ps-pharm`'s dopamine pathways. ⚠️ **Four verified absences across all 25 decks — `motivational interviewing`, the `12-steps model`, `operant conditioning`, `ventilation` — each returns ONE hit, the deck that names it; all four SUPPLIED AND TAGGED in `th-10`.** ⚠️ **Three L19 slides are unreadable (p.7 chart, p.14 portrait figure, p.19 the additional-therapies list) — measured with `pdffonts` and `pdfimages`, and `pdffonts` finds fonts on all 29 pages, so nothing is vector-outlined.** ⚠️ **Book Psych ch.13 (271–277, 7 pp, the book's LAST content page) UNREAD**, image-only |
 
 ⚠️ **`ps-interview` + `ps-osce` are the sharpest inverse problem** — **473 words** for two
@@ -332,18 +333,20 @@ the book mapper as a split candidate on precedent. **Not decided — read before
 2. ✅ **Book map** — `content\neuro\book-map.md`, done 2026-08-18.
 3. ✅ **`L17` visual read** — cache 239 → 3,358 w, done 2026-08-18. `ps-pharm` is unblocked on the
    deck but still **partial** on antipsychotics — see the dead-heading finding below.
-4. ✅ **Written — 25 of 33** *(measured from disk 2026-08-23)*: `nr-stroke` · `nr-hemi` ·
+4. ✅ **Written — 27 of 34** *(measured from disk 2026-08-23; the module went 33 → 34 when
+   `nr-intro` printed at 14 pp and split into `nr-intro` + **`nr-exam`**)*: `nr-stroke` · `nr-hemi` ·
    `nr-para` · `nr-headache` · `nr-cranial` · `ps-symptom` · `ps-psychoed` · `nr-ms` · `ps-mood` ·
    `nr-lmn` · `nr-nerve` · `ps-ocd` · `ps-ptsd` · `nr-movement` · `nr-epilepsy` · `ps-anxiety` ·
    `ps-psychosis` · `ps-schizmgmt` · `ps-pharm` · **`nr-backpain`** · **`nr-neckpain`** ·
-   **`ps-sud`** · **`ps-emerg`** · **`ps-devices`** · **`ps-therapy`**.
-   **234 sections, 77,096 body words. 130 of the module's 151 questions reachable** — none of
-   `ps-sud`, `ps-emerg`, `ps-devices` or `ps-therapy` adds one, because **no bank in the corpus
-   prints a substance, an emergency, a device or a psychotherapy question.**
-   **8 chapters remain and `nr-intro` holds ALL 21 of the outstanding questions**; the other seven
-   — `ps-interview` · `ps-osce` · `ps-somato` · `ps-geri` · `ps-child` · `nr-cns` · `nr-delirium` —
-   carry none. ⚠️ *An earlier version of this line said "12 chapters holding 21 questions"; the
-   count was stale, `modcheck-neuro.js` is the measurement.*
+   **`ps-sud`** · **`ps-emerg`** · **`ps-devices`** · **`ps-therapy`** · **`nr-intro`** ·
+   **`nr-exam`**.
+   **246 sections, 82,657 body words.** ✅⚠️ **ALL 151 OF THE MODULE'S QUESTIONS ARE NOW REACHABLE
+   FROM THEORY — it was 130 before `nr-intro`/`nr-exam` landed, and the remaining 21 were all in
+   that one chapter.**
+   **SEVEN chapters remain and NOT ONE CARRIES A QUESTION** — `ps-interview` · `ps-osce` ·
+   `ps-somato` · `ps-geri` · `ps-child` · `nr-cns` · `nr-delirium`. ⚠️ *An earlier version of this
+   line said "12 chapters holding 21 questions"; the count was stale, `modcheck-neuro.js` is the
+   measurement.*
    ✅ **Book Neurology ch.16 is FULLY SPENT** across `nr-backpain` and `nr-neckpain` — all 16 pp.
    ⚠️⚠️ **AND THE PAIN TAXONOMY IS A VERIFIED ABSENCE, NOT AN UNREAD GAP.** `npqb-nr-125` (*migraine
    is best classified as…*, key `Nociceptive`) was orphaned by ch.9; **ch.16 was read for it and does
@@ -424,6 +427,31 @@ the book mapper as a split candidate on precedent. **Not decided — read before
    which is the chapter's real spine. ⚠️ **Much of ch.3's teaching is FIGURE-ONLY** (anterior
    corticospinal tract, Babinski by name, fasciculations, atrophy, Broca/Wernicke, arterial
    territories) — the caches flag each one in place.
+
+   ### ⚠️ A SCOPED FOLLOW-ON JOB THE 39 PAGES CREATED — recorded so it is not lost, NOT yet done
+
+   **Twelve of `nr-intro`'s 21 questions carry an outside-knowledge tag**, written when no source
+   covered them: `npqb-nr-10` · `-13` · `-14` · `-17` · `-18` · `-19` · `-20` · `-21` · `-22` ·
+   `-26` · `-32` · `-33`. ✅ **Those tags were CORRECT when written and are not errors** — they say
+   *no cached **deck*** covers the fact, and a deck sweep re-run 2026-08-23 confirms it: `optic
+   radiation`, `Broca`, `abdominal reflex`, `brachioradialis` and reflex grading return **zero
+   across all 25 decks.** **The BOOK now supplies every one of them**, so each explanation can be
+   re-grounded on a printed page instead of on general knowledge. **This is an upgrade, not a
+   correction.**
+
+   ⚠️⚠️ **`npqb-nr-14` IS THE PRIORITY, AND IT CHANGES IN KIND.** Its explanation already records
+   that the printed key — *right **lower** optic radiation* for an **inferior** quadrantanopia —
+   names the wrong bundle, and argues it from PITS as general knowledge. **The book independently
+   settles it on printed p.12**: panel **D** gives inferior quadrantanopia as *Right **upper**
+   optic radiation lesion in the **parietal** lobe*, panel **E** superior quadrantanopia as *Right
+   **lower** optic radiation lesion in the **temporal** lobe*. **The note stops being *outside
+   knowledge disagrees with the bank* and becomes *the course's own book disagrees with the bank*,
+   citable.** ⚠️ **The `answer` still does not move** — a defective key is noted, never disputed
+   (user ruling 2026-08-11).
+
+   **Banks are PAUSED, so this is NOT to be swept up silently into a theory session.** It is one
+   bounded pass over twelve explanations in `questions.neuro.js`, and it should be taken as its own
+   piece of work.
    ⚠️ **`nr-intro` OWES two slides to `nr-lmn`:** L1's `Upper Motor Neuron Manifestations` and
    `Lower Motor Neuron Manifestations` are **counted to `nr-lmn`'s `lm-1`** and **must not be
    counted again** when `nr-intro` is written. Same shape as `op-va`/`L1,2` in ophthalmology.

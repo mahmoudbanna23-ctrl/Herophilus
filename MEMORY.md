@@ -5,7 +5,7 @@ Running record, organised around *resuming*. ISO dates; unverified marked as suc
 story, count and verbatim ruling) in `progress\memory-archive.md`** — read the relevant block
 there before resuming a paused stream. Where this file and the archive disagree, this file wins.
 
-## Resume here — **NEUROPSYCHIATRY THEORY, the last module: 25 of 33 written. ⚠️ `nr-intro` HOLDS ALL 21 REMAINING QUESTIONS; the other 7 chapters carry ZERO.** ENT · Peds · Ophtho theory DONE. Banks PAUSED.
+## Resume here — **NEUROPSYCHIATRY THEORY, the last module: 27 of 34 written. ✅ ALL 151 QUESTIONS NOW REACHABLE FROM THEORY; the SEVEN chapters left carry ZERO.** ENT · Peds · Ophtho theory DONE. Banks PAUSED.
 
 - **⚠️⚠️ `content\neuro\theory-plan.md` IS THE MODULE'S WORKING FILE — READ IT FIRST**, with
   `content\neuro\book-map.md`. Deck audit, unsourced chapters, page rates, order of work, every
@@ -14,13 +14,11 @@ there before resuming a paused stream. Where this file and the archive disagree,
   (whole; seam in the plan) · `ps-symptom` 8 · `ps-psychoed` · `nr-ms` · `ps-mood` · `nr-lmn` 12 ·
   `nr-nerve` 8 · `ps-ocd` 10 · `ps-ptsd` 6 · `nr-movement` 13 · `nr-epilepsy` 12 · `ps-anxiety` 11 ·
   `ps-psychosis` 9 · `ps-schizmgmt` 10 · `ps-pharm` 11 · `nr-backpain` 10 · `nr-neckpain` 9 ·
-  `ps-sud` 7 · `ps-emerg` 13 · `ps-devices` 12 · `ps-therapy` 11.**
-- **⚠️⚠️ FIVE SPLITS ON 2026-08-22/23 took the module 29 → 33. Every seam and its arithmetic is in
-  the plan §4; the five are listed verbatim in the archive. `SCHEDULE` untouched every time.**
+  `ps-sud` 7 · `ps-emerg` 13 · `ps-devices` 12 · `ps-therapy` 11 · `nr-intro` 10 · `nr-exam` 7.**
+- **⚠️⚠️ SIX SPLITS ON 2026-08-22/23 took the module 29 → 34. Every seam and its arithmetic is in the plan §4; the first five are listed verbatim in the archive. `SCHEDULE` untouched every time.**
   ⚠️ **A SINGLE deck may split** (`ps-ocd`), and **a book seam may cut across an INTERLEAVING deck** (`nr-backpain`) — **nothing is reordered *within* a chapter.**
 - **⚠️⚠️ FORECAST A SPLIT ONLY AT ÷280 ≥ 16; BETWEEN 13 AND 15, TEST-PRINT — NEVER ACCEPT A SPLIT
-  *OR* A COMPRESSION ON AN ESTIMATOR.** The three forecast splits printed **13/12, 9/10 and 10/9 pp**,
-  inside the shape first time; each of the three *found* splits cost a full extra cycle — **but
+  *OR* A COMPRESSION ON AN ESTIMATOR.** The three forecast splits printed **13/12, 9/10 and 10/9 pp**, inside the shape first time; each of the three *found* splits cost a full extra cycle — **but
   `ps-pharm` forecast 14.9 and PRINTED 11.** ⚠️⚠️ **÷280 ERRS BADLY IN BOTH DIRECTIONS: it
   OVER-predicted `ps-pharm` by 4.0 and UNDER-predicted `ps-emerg` by 4.7** (said 8.3, printed 13).
   ⚠️ **÷240 over-predicted ophtho by 5.1; ÷335 under-predicted `nr-lmn` by 6.3; both OVER-predicted
@@ -32,23 +30,27 @@ there before resuming a paused stream. Where this file and the archive disagree,
   source, **`ps-anxiety` 202 %**, ⚠️⚠️ **`ps-therapy` 277 % — the worst, and STRUCTURAL: A DECK THAT
   NAMES RATHER THAN TEACHES COSTS THE MOST TO WRITE**; writing tight brought `ps-psychosis` to 128 %.
   ⚠️ **My own connective prose is the inflation, it sits ABOVE §14.2's floor, and it is the
-  legitimate thing to cut** — 322 w and 240 w cut, **no sourced fact lost**. ⚠️ **Cut an UNTAGGED
-  outside claim and a CONSOLIDATED second copy first.** **Rates 296-391 w/pp.**
-- ✅ **`nr-intro` IS UNBLOCKED — ITS 39 BOOK PAGES WERE READ 2026-08-23** on the user's explicit
-  authorisation, by three subagents: printed **1–39** cached to `content\neuro\book\` as
+  legitimate thing to cut** — 322 w and 240 w cut, **no sourced fact lost**. ⚠️ **Cut an UNTAGGED outside claim and a CONSOLIDATED second copy first.** **Rates 296-391 w/pp.**
+- ✅ **`nr-intro` IS WRITTEN AND SPLIT — AND ITS 39 BOOK PAGES WERE READ 2026-08-23** on the user's
+  explicit authorisation, by three subagents: printed **1–39** cached to `content\neuro\book\` as
   `neuro-ch01-ch02a.txt` · `neuro-ch02b.txt` · `neuro-ch03-localization.txt`, **~16,700 w, nothing
-  illegible. DO NOT RE-RENDER.** ⚠️ **`+11` re-verified on all 39 footers.** ✅ **11 of the 12
-  zero-probes are now sourced**, incl. the **A–F visual field panel** (p.12) and **gracile/cuneate**
-  (p.36, figure labels only). ⚠️⚠️ **THE 12TH WAS A VOCABULARY ARTEFACT, NOT A GAP: the book never
-  writes `lateral column`** — it writes *lateral corticospinal tract* and *dorsal (posterior)
-  column*. **The `ps-anxiety` lesson paid twice: PROBE WITH THE SOURCE'S WORDS.** ⚠️ **Two book
-  contradictions, the unkeyed ten-question quiz, ch.1's four unsolved vignettes: plan §5.**
-  ⚠️ **IT OWES TWO SLIDES TO `nr-lmn`:** L1's `Upper`/`Lower Motor Neuron Manifestations` are **counted to `lm-1`, never again** (`str-4`/`hem-7`/`cn-9` filed UMN/LMN there). `op-va` shape.
+  illegible. DO NOT RE-RENDER.** ⚠️ **`+11` re-verified on all 39 footers.** ⚠️⚠️ **WRITTEN WHOLE,
+  PRINTED 14 pp, SPLIT AFTER PRINTING into `nr-intro` 10 pp (7 q) + `nr-exam` 7 pp (14 q), a NEW
+  id.** **The 14 moved BY THE `qs` LINKS**; `SCHEDULE` untouched. ⚠️⚠️ **THE 54-WORD TRIM CAME BACK
+  EMPTY AND THAT IS WHAT SETTLED IT** — the `ps-ocd` shape. ⚠️ **The split COST pages: 10 + 7 = 17
+  against 14. Expected; NOT a reason to compress.** ⚠️ **It paid `nr-lmn` and `nr-hemi` BY POINTING**
+  — L1's UMN/LMN slides stay counted to `lm-1` (59 w removed), and **L1's 521-w hemiplegia half went
+  to `nr-hemi`, CHECKED against `hem-1`–`hem-6` first** because `nr-hemi` was written from L10/L12 and had never seen L1. **Seams, arithmetic, contradictions: plan §4-§5.**
+- **⚠️ SCOPED FOLLOW-ON, RECORDED AND NOT DONE (plan §5): TWELVE `nr-intro`/`nr-exam` QUESTIONS
+  CARRY AN OUTSIDE-KNOWLEDGE TAG THE BOOK CAN NOW REPLACE.** ✅ **The tags were CORRECT when
+  written** — no *deck* covers them, re-verified 2026-08-23. ⚠️⚠️ **`npqb-nr-14` is the priority:
+  book p.12 panel D shows its printed key names the WRONG HALF of the optic radiation** (inferior
+  quadrantanopia = **upper/parietal**). **It stops being *outside knowledge disagrees* and becomes
+  *the course's own book disagrees*, citable. The `answer` still does not move.** **Banks are PAUSED — do NOT sweep this into a theory session.**
 - **⚠️ SEVEN SOURCES STILL UNREAD, RECORDED NOT GUESSED** — the 2026-08-23 render authorisation
   covered `nr-intro`'s 39 pages ONLY: **`L3` p17** (zero words/fonts, before the deck's unanswered
   *NON MOTOR SYMPTOMS ??????* slide) · **Neuro ch.12** (119-127) · **ch.6** (57-66) · **Psych ch.9**
-  (249-255), **ch.10** (256-260), **ch.12** (265-270), **ch.13** (271-277, the book's LAST content
-  page) · **three picture-only `L19` slides** (p.7, p.14, p.19). **Check `mv-5` if read.**
+  (249-255), **ch.10** (256-260), **ch.12** (265-270), **ch.13** (271-277, the book's LAST content page) · **three picture-only `L19` slides** (p.7, p.14, p.19). **Check `mv-5` if read.**
 - **⚠️⚠️ TWO ENTRIES OF THAT LIST WERE FALSE AND ARE STRUCK (2026-08-23): Psych ch.10 (NMS) and
   ch.12 (ECT) ARE NOT NEEDED** — `L15`'s back half and `L16` teach NMS in full, `L18` teaches ECT at
   length; fixed in `sm-5`/`sm-7`/`sm-10` and plan §5, **the evidence verbatim in the archive.**
@@ -64,9 +66,8 @@ there before resuming a paused stream. Where this file and the archive disagree,
   `and`/`or` — **both split compound subjects and broke enumerations, and one corrupted a QUOTED
   CONTENTS-PAGE TITLE, i.e. a citation.** ⚠️⚠️ **ALL 23 PASSED `vdraft.js` — the validator checks an
   anchor EXISTS, never that the sentence still parses.** ⚠️⚠️ **THE GENERAL RULE: A TOOL THAT EDITS
-  SILENTLY WILL EVENTUALLY EDIT WRONGLY AND NOBODY WILL SEE IT** — it printed only a COUNT.
-  **Rewritten: PRINTS EVERY EDIT, refuses risky commas, conjunction rule DELETED; detail plan §4.**
-  ✅ **On `ps-therapy` it made ZERO edits — nine leads reported, all nine repaired by hand.**
+  SILENTLY WILL EVENTUALLY EDIT WRONGLY AND NOBODY WILL SEE IT** — it printed only a COUNT. **Rewritten: PRINTS EVERY EDIT, refuses risky commas, conjunction rule DELETED; detail plan §4.**
+  ✅ **Behaving since: ZERO edits on `ps-therapy` (9 leads reported, 9 fixed by hand); FOUR on `nr-intro`, EACH ONE READ BEFORE ACCEPTING — none altered meaning. ⚠️ READ ITS PRINTED EDITS EVERY TIME; that is the whole point of the rewrite.**
 - ✅ **THE PSYCHIATRY TAIL IS DONE: `ps-sud` 7 pp · `ps-emerg` 13 · `ps-devices` 12 · `ps-therapy` 11.**
   Full arithmetic in plan §4; the four blocks verbatim in the archive. **THREE ARMS OF TREATMENT ARE
   NOW CLOSED** — drugs, psychotherapy, devices; their four unread book chapters are in the row above.
@@ -87,7 +88,7 @@ there before resuming a paused stream. Where this file and the archive disagree,
 - **⚠️⚠️ A GREP HIT THAT GETS EXPLAINED AWAY IS WORSE THAN A MISS — it looks like evidence.**
   `ps-anxiety` was "no deck" for five days: the probe **hit `L4,5`**, the row dismissed the hits
   unopened, and it searched `generalized anxiety`, which the deck never writes (**it writes GAD**).
-  ⚠️ **Probe with the SOURCE's vocabulary and OPEN THE SLIDE.**
+  ⚠️ **Probe with the SOURCE's vocabulary and OPEN THE SLIDE.** ⚠️⚠️ **PAID A SECOND TIME 2026-08-23:** `nr-intro`'s twelfth zero-probe was **`lateral column`, a phrase the book NEVER uses** — it writes *lateral corticospinal tract* and *dorsal (posterior) column*; `gracile`/`cuneate` are **figure labels only.** **The anatomy was there the whole time under the source's own names.**
 - **⚠️ Ophtho reconciliation is NOT done** — ~63 register rows, `va-6`/`pup-10`, five held divergences, `wht-8`. In its `theory-plan.md`; never re-derive.
 - **⚠️ A SPLIT MOVES QUESTIONS by the theory `qs` links, never by title** — ophtho refiled 12/1/1/16/2.
 - **⚠️⚠️ CHECK A CHAPTER'S QUESTIONS AGAINST ITS SOURCE BEFORE BRIEFING.** A Decks column is an assignment, **not coverage** — **none of `op-va`'s 16 was answerable from its only listed deck.**
@@ -151,13 +152,13 @@ there before resuming a paused stream. Where this file and the archive disagree,
 - **Corpus 2,097** (2026-08-14): ENT 1,720 · Neuro 158 · Ophtho 138 · Peds 81. Banks: GG 1,180 ·
   Endpoint 697 · House 78; 54 shared. Module keys `ent`, `ophtho`, `pediatrics`, `neuropsych`.
   Option counts 2–9 coexist; nothing assumes four.
-- **Theory: 142 of 150 chapters, 1,504 sections.** ENT 30 (259 pp / 8.6) · Peds 51 (340 / 8.3) ·
-  Ophtho 36 (331 / 9.2) · **Neuro 25 of 33**. Drafts in `content\<mod>\theory-drafts\` (⚠️ ENT's
+- **Theory: 144 of 151 chapters, 1,516 sections.** ENT 30 (259 pp / 8.6) · Peds 51 (340 / 8.3) ·
+  Ophtho 36 (331 / 9.2) · **Neuro 27 of 34**. Drafts in `content\<mod>\theory-drafts\` (⚠️ ENT's
   bare `ent-csom/tonsils/aom/stridor` are the DEAD format; their `*.v2/v3` are current). Best
   models: `ent-nasalobs`, `op-ret`, `nr-cranial`, `ps-symptom`, `ps-ocd`, `ps-anxiety`, `ps-schizmgmt`.
 - Last real `file://` boot **2026-08-23**: **0 console errors, 876 CSS rules, 3
-  `max-aspect-ratio:5/4` blocks, 4 modules, 150 chapters, 2,097 questions, 89 cases, 142 theory
-  chapters, 1,504 sections.** Harnesses in `<scratch>\`: `MOD=<mod> print.sh` · `boot.sh` ·
+  `max-aspect-ratio:5/4` blocks, 4 modules, 151 chapters, 2,097 questions, 89 cases, 144 theory
+  chapters, 1,516 sections.** Harnesses in `<scratch>\`: `MOD=<mod> print.sh` · `boot.sh` ·
   `modcheck-neuro.js` · `vdraft.js` · `splice-neuro.js`/`resplice-neuro.js` · `qdump.js` · `shot.sh`.
 - **⚠️ THE THEORY READER IS AN A4 PAGE (2026-08-19, three user complaints) AND MUST NOT BE MADE
   WHITE.** 210:297 by `aspect-ratio`; **margins set in JS from the PAGE's width** (percentages
