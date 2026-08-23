@@ -338,3 +338,30 @@ Each block survives in MEMORY.md as a shorter entry pointing here.
   retinoblastoma is **92 words**), and **⚠️ it may resolve to the WRONG section. Check the target.**
 - **⚠️⚠️ AUDIT "row filed" CLAIMS — FOUR WERE FALSE** (`uv-1`/`uv-8`/`uv-9`/`scl-1`). **And a row's
   evidence has a TIMESTAMP** — `vis-11` quoted a zero-returns claim that now returns 9. **Re-grep.**
+
+## Moved out of MEMORY.md 2026-08-23 (ps-sud) — four chapter-completion blocks, verbatim
+
+The four `✅ … done` blocks below were compressed in MEMORY.md to a single **book chapters spent**
+line plus the rules they earned. Everything here is the record of what each chapter cost and found.
+
+- ✅ **`ps-anxiety` done, 11 pp — BOTH read-first pointers paid**: `oc-10` gave the spine accounting,
+  `sy-10` a deck the plan denied. ✅ **Book Psych ch.3 FULLY SPENT**, accounted in **`ax-10`**.
+  **Check every deck's BACK HALF**, and **declare in your register what you leave a sibling.**
+- ✅ **`ps-psychosis` + `ps-schizmgmt` done, 9 + 10 pp, split BEFORE writing.** ✅ **Book Psych ch.7
+  FULLY SPENT.** ⚠️ **`ps-pharm` was paid its antipsychotics by `sm-6`/`sm-7` and POINTS, not repeats.**
+  ⚠️ **The MAOI gap stays OPEN** (MAOI/phenelzine/tyramine on none of ch.7's 11 pp). ⚠️⚠️ **Its two
+  "reading debts" (NMS, ECT) WERE FALSE** — both are in cached decks (`L15`/`L16` and `L18`). They
+  stay deferred to `ps-emerg`/`ps-devices` as **ordinary unwritten chapters, not blocked ones.**
+- ✅ **`ps-pharm` done, 11 pp whole — the ch.11 DEAD HEADING IS RESOLVED.** `ph-7` adds the deck's own
+  **12-agent table, ELEVEN of whose agents book ch.7 never names.** ⚠️⚠️ **THE TWO SOURCES CONTRADICT
+  EACH OTHER ON THE DOPAMINE PATHWAYS** — deck: mesolimbic→positive, mesocortical→negative; book ch.7:
+  associative nigrostriatal→positive, mesolimbic→negative. **Recorded both, corrected neither.**
+  ⚠️ **The purest fill-and-tag chapter yet** — **lithium 0.6-1.2 mEq/L is the ONLY value with a unit
+  in 15 pages of this book's pharmacology**, and **the whole MAOI block is supplied** (the book's
+  list runs 1-5 and stops; ch.7 does not fill it).
+- ✅ **`nr-backpain` + `nr-neckpain` done, 10 + 9 pp, split BEFORE writing** on the book's own REGIONAL
+  seam. ✅ **Book Neuro ch.16 FULLY SPENT** — 16 pp, the longest this module has drawn on.
+  ⚠️⚠️ **THE PAIN TAXONOMY IS A VERIFIED ABSENCE, NOT AN UNREAD GAP** — `npqb-nr-125` (key
+  `Nociceptive`) was orphaned by ch.9, and **ch.16 does not contain it either** (`nociceptive`/
+  `neuropathic`/`psychogenic` on **none** of 16 pp; its *Pain and pain management* QRs are a **VIDEO**).
+  **TWO chapters read for ONE question — stop looking.**

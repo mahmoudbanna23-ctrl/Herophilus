@@ -100,7 +100,7 @@ measured that way and comparability matters more than purity.
 | L5) Muscle Disease | 55 | **2,048** | 1,807 | 37 | `nr-lmn` ✅ |
 | L9) CNS infection | 40 | **1,924** | 1,818 | 48 | `nr-cns` |
 | L18) Devices in Psychiatry | 23 | **1,909** | 1,806 | 83 | `ps-devices` |
-| L15) substance related + psych emergency | 49 | **1,854** | 1,771 | 38 | `ps-sud` |
+| L15) substance related + psych emergency | 49 | **1,854** | 1,771 | 38 | `ps-sud` ✅ **+ `ps-emerg`** ⚠️⚠️ *TWO LECTURES IN ONE DECK — lines 1–204 substance (**1,121 w**) → `ps-sud`; lines 205–354 emergency (**733 w**: NMS 240, catatonia 108, suicide 385) → `ps-emerg`. **`L15` teaches NMS IN FULL** — it pays the debt `ps-schizmgmt` wrongly filed to book ch.10* |
 | L11) Cervical pain | 41 | **1,742** | 1,589 | 42 | `nr-backpain` + **`nr-neckpain`** ✅ ⚠️ *the deck INTERLEAVES: back → neck → low back* |
 | L13) Dementia and Delirium | 41 | **1,672** | 1,532 | 41 | **`ps-geri` + `nr-delirium` — SHARED** |
 | L16) Emergency Psychiatry | 46 | **1,597** | 1,564 | 35 | `ps-emerg` |
@@ -274,6 +274,7 @@ page. Look for a second copy before looking for something to cut.
 | ✅ `ps-anxiety` | **1,986** (book share 1,753 + deck 233) | **printed 11 pp** | ✅ **WRITTEN 2026-08-23 — whole, no split.** 10 sections, **3,799 w**, 0 q. ⚠️ **THE WORST INFLATION YET MEASURED: 4,012 words FIRST DRAFT = 202 % of source** (`nr-movement` was 163 %). **240 words of my own connective prose were cut before printing** — including one **untagged outside-knowledge claim** (dating the three-way split to DSM-5 2013, which the book never says) and one **consolidated second copy** (a divergence block restating four findings already stated where they are used — the `nr-headache` shape). **No sourced fact was cut.** ⚠️ **Measured 343 w/pp — a NEW MODULE HIGH**, and ÷280 forecast 13.5 pp against a printed **11**, an over-prediction of **2.5**. ⚠️ **The two read-first pointers both paid**: `oc-10` gave the spine accounting, `sy-10` gave a deck the plan denied |
 | ✅ **`ps-psychosis`** | **6,326** (book ch.7 **4,075** + deck 2,251) | forecast **20–30 pp** | ✅✅ **SPLIT BEFORE WRITING 2026-08-23**, on **`Course & Prognosis`, printed 233** — contiguous, no reordering. **`ps-psychosis`** *(retitled from "Approach to Psychosis")* 9 sections, 3,002 w, **printed 9 pp** · new **`ps-schizmgmt`** 10 sections, 3,854 w, **printed 10 pp**. Neither half has a question, so nothing moved. ⚠️⚠️ **THE DECK IS 86 % CASE VIGNETTES** — 1,933 of 2,251 words are five cases with full MSEs, and its **teaching content is ~320 words**. **The widest deck-words-vs-teaching-words gap yet measured**, and the reason `sm-9` is a section. ⚠️ **The deck asks NINE QUESTIONS across the cases and answers NONE** — worked from the book's own criteria in `sm-9`. ⚠️ **Measured 334 and 385 w/pp — 385 is a NEW MODULE HIGH** |
 | ✅ **`nr-backpain`** | **8,064** (book ch.16 **6,322** + deck 1,742) | forecast **past 20 pp** | ✅✅ **SPLIT BEFORE WRITING 2026-08-23** on the book's own **regional** boundary at printed 166. **`nr-backpain`** *(retitled from "Cervical and low back pain")* 9 sections, 3,914 w, **printed 10 pp** · new **`nr-neckpain`** 8 sections, 3,354 w, **printed 9 pp**. ⚠️ **Book ch.16 is the LONGEST this module has drawn on — 16 printed pages.** ⚠️ **The cervical END-MATTER is cervical throughout**, so nothing general had to be divided — that is what made the seam cheap. ⚠️ **THE DECK INTERLEAVES AND THE BOOK DOES NOT**: `L11` runs back → neck → low back, so each half draws **two non-contiguous deck blocks**. Allowed because **nothing is reordered WITHIN a chapter** — the ophthalmology rule forbids reordering an *already-written* chapter, and both were written fresh. ⚠️ **Measured 391 and 373 w/pp; 391 is a new module high** |
+| ✅ **`ps-sud`** | **1,121** — ⚠️ **NOT the deck's 1,854** | ÷280 said **4.0 pp** | ✅ **WRITTEN WHOLE 2026-08-23 — printed 7 pp, no split.** 8 sections, **2,466 w**, 0 q. ⚠️⚠️ **`L15` IS TWO LECTURES IN ONE DECK AND THE COUNT HAD TO BE SPLIT BEFORE IT COULD BE BUDGETED FROM** — lines 1–204 are substance (**1,121 w**, this chapter); lines 205–354 are **psychiatry emergency** (**733 w** — NMS 240, catatonia 108, suicide 385), **filed out whole to `ps-emerg` in `sd-8`** and **not one word of it used here**. The plan's §2 row had budgeted the full 1,854. ⚠️ **Inflation 220 % — the module's worst**, and unavoidable: **zero questions**, so there was no backwards calibration at all, and the source is a bullet deck. **Measured 352 w/pp.** ⚠️ **Book Psychiatry ch.9 (printed 249–255, 7 pp) IS UNREAD** — image-only, no subagent available; **recorded, not guessed**. It is the likeliest home for the three verified absences in `sd-8`: **no pharmacotherapy for stimulants or hallucinogens**, **no intoxication or withdrawal syndrome anywhere** (`tolerance`, `delirium tremens`, `naloxone` return **zero across all 25 decks**), and **no substance attached to any of the nine induced disorders** |
 | `nr-ms` · `ps-symptom` | 2,251–2,441 | 6.7–7.3 pp | inside the ceiling. ⚠️ **`ps-ocd` was in this row and printed 14 pp** — a deck word count is not a page count when a second source is added |
 | everything else | 1,257–1,924 | 3.8–5.7 pp | single chapters |
 
@@ -294,11 +295,13 @@ the book mapper as a split candidate on precedent. **Not decided — read before
 2. ✅ **Book map** — `content\neuro\book-map.md`, done 2026-08-18.
 3. ✅ **`L17` visual read** — cache 239 → 3,358 w, done 2026-08-18. `ps-pharm` is unblocked on the
    deck but still **partial** on antipsychotics — see the dead-heading finding below.
-4. ✅ **Written — 21 of 33** *(measured from disk 2026-08-23)*: `nr-stroke` · `nr-hemi` ·
+4. ✅ **Written — 22 of 33** *(measured from disk 2026-08-23)*: `nr-stroke` · `nr-hemi` ·
    `nr-para` · `nr-headache` · `nr-cranial` · `ps-symptom` · `ps-psychoed` · `nr-ms` · `ps-mood` ·
    `nr-lmn` · `nr-nerve` · `ps-ocd` · `ps-ptsd` · `nr-movement` · `nr-epilepsy` · `ps-anxiety` ·
-   `ps-psychosis` · `ps-schizmgmt` · `ps-pharm` · **`nr-backpain`** · **`nr-neckpain`**.
-   **194 sections, 62,437 body words. 130 of the module's 151 questions reachable.**
+   `ps-psychosis` · `ps-schizmgmt` · `ps-pharm` · **`nr-backpain`** · **`nr-neckpain`** ·
+   **`ps-sud`**.
+   **202 sections, 64,903 body words. 130 of the module's 151 questions reachable** — `ps-sud`
+   adds none, because **no bank in the corpus prints a substance question.**
    **12 chapters holding 21 questions remain — and `nr-intro` holds ALL 21.**
    ✅ **Book Neurology ch.16 is FULLY SPENT** across `nr-backpain` and `nr-neckpain` — all 16 pp.
    ⚠️⚠️ **AND THE PAIN TAXONOMY IS A VERIFIED ABSENCE, NOT AN UNREAD GAP.** `npqb-nr-125` (*migraine
@@ -316,11 +319,22 @@ the book mapper as a split candidate on precedent. **Not decided — read before
    still owns is **`L17`'s own agent list** — five typicals and six atypicals ch.7 never names —
    and everything non-antipsychotic. ⚠️ **The MAOI adverse-effect gap stays OPEN**: *MAOI*,
    *monoamine oxidase*, *phenelzine* and *tyramine* appear on none of ch.7's eleven pages.
-   ⚠️⚠️ **TWO READING DEBTS OPENED, recorded not guessed** — both are another chapter's core
-   content, so reading is cheaper than supplying twice: **NEUROLEPTIC MALIGNANT SYNDROME**, named
-   twice in ch.7 and described nowhere, deferred in place to **Psychiatry ch.10, printed 256-260**
-   (`ps-emerg`); and **ECT beyond its indications**, for which ch.7 prints **no pointer at all** —
-   **Psychiatry ch.12 `Devices in psychiatry`, printed 265-270** (`ps-devices`) is the obvious home.
+   ⚠️⚠️ **TWO READING DEBTS WERE OPENED HERE — AND BOTH WERE FALSE. CORRECTED 2026-08-23.**
+   I recorded **NEUROLEPTIC MALIGNANT SYNDROME** (named twice in ch.7, described nowhere, deferred
+   in place to **Psychiatry ch.10, printed 256-260**) and **ECT beyond its indications** as
+   **unread, image-only book chapters** — on the strength of **the book's own cross-reference**,
+   without probing the twenty-five cached decks. **A grep closed both in a minute:**
+   **`L15`'s back half teaches NMS IN FULL** — tetrad, mortality **10–20 %**, incidence
+   **0.02–3 %**, **2:1** male, age not a risk factor, D2 antagonism at hypothalamus and
+   nigrostriatum, associated medications, seven labs, a nine-step treatment — **and `L16` teaches
+   it again**; **`L18) Devices in Psychiatry` teaches ECT at length** (procedure, mechanism,
+   stigma, cognitive effects, rTMS/VNS/tDCS contrast). **Neither needs a render.** They stay
+   deferred to `ps-emerg` and `ps-devices` because each is that chapter's core content — **but as
+   ordinary unwritten chapters, not as blocked ones.** Fixed in `sm-5`, `sm-7`, `sm-10`, the draft
+   header and `MEMORY.md`.
+   ⚠️⚠️ **THE RULE THIS COST: a book's own cross-reference is a POINTER, NOT A VERDICT.** *Read the
+   slide before declaring a gap* has been paid 13 times; this is the 14th, and the first where the
+   false confidence came from **the source pointing elsewhere** rather than from a failed probe.
 5. ⚠⚠ **`nr-intro` (21 q) IS THE NEXT ONE AND IT IS BLOCKED — IT NEEDS A USER DECISION.**
    It holds **21 of the 23 questions left — all but two.** **12 of 23 fact probes return ZERO
    against its deck** (gracile/cuneate, triceps, abdominal reflex, hemianopia, optic radiation,

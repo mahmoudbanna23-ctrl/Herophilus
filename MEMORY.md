@@ -5,7 +5,7 @@ Running record, organised around *resuming*. ISO dates; unverified marked as suc
 story, count and verbatim ruling) in `progress\memory-archive.md`** — read the relevant block
 there before resuming a paused stream. Where this file and the archive disagree, this file wins.
 
-## Resume here — **NEUROPSYCHIATRY THEORY, the last module: 21 of 33 written. ⚠️ `nr-intro` HOLDS ALL 21 REMAINING QUESTIONS; the other 11 chapters carry ZERO.** ENT · Peds · Ophtho theory DONE. Banks PAUSED.
+## Resume here — **NEUROPSYCHIATRY THEORY, the last module: 22 of 33 written. ⚠️ `nr-intro` HOLDS ALL 21 REMAINING QUESTIONS; the other 10 chapters carry ZERO.** ENT · Peds · Ophtho theory DONE. Banks PAUSED.
 
 - **⚠️⚠️ `content\neuro\theory-plan.md` IS THE MODULE'S WORKING FILE — READ IT FIRST**, with
   `content\neuro\book-map.md`. Deck audit, unsourced chapters, page rates, order of work, every
@@ -13,24 +13,23 @@ there before resuming a paused stream. Where this file and the archive disagree,
 - ✅ **Written: `nr-stroke` 10 pp · `nr-hemi` 10 · `nr-para` 10 · `nr-headache` 10 · `nr-cranial` 12
   (whole; seam in the plan) · `ps-symptom` 8 · `ps-psychoed` · `nr-ms` · `ps-mood` · `nr-lmn` 12 ·
   `nr-nerve` 8 · `ps-ocd` 10 · `ps-ptsd` 6 · `nr-movement` 13 · `nr-epilepsy` 12 · `ps-anxiety` 11 ·
-  `ps-psychosis` 9 · `ps-schizmgmt` 10 · `ps-pharm` 11 · `nr-backpain` 10 · `nr-neckpain` 9.**
-- **⚠️⚠️ FIVE SPLITS ON 2026-08-22/23 — the module went 29 → 33 chapters.** Seams in the plan §4.
-  **`nr-lmn`/`nr-nerve`** (deck boundary; **reverses the `nr-lmn1`+`nr-lmn2` merge**) ·
-  **`ps-ocd`/`ps-ptsd`** (⚠️ **a SINGLE deck**, which §4 permits — one TOPIC over two lectures, not
-  two disorders in one) · **`nr-movement`/`nr-epilepsy`**, **`ps-psychosis`/`ps-schizmgmt`** and
-  **`nr-backpain`/`nr-neckpain`** (⚠️ **all three FORECAST BEFORE writing**). ⚠️ **The last one splits
-  on a REGIONAL book seam while the DECK INTERLEAVES** — allowed, because nothing is reordered
-  *within* a chapter. **`SCHEDULE` untouched every time.**
+  `ps-psychosis` 9 · `ps-schizmgmt` 10 · `ps-pharm` 11 · `nr-backpain` 10 · `nr-neckpain` 9 ·
+  `ps-sud` 7.**
+- **⚠️⚠️ FIVE SPLITS ON 2026-08-22/23 — the module went 29 → 33 chapters. Seams and arithmetic in
+  the plan §4; `SCHEDULE` untouched every time.** `nr-lmn`/`nr-nerve` (**reverses the `nr-lmn1`+
+  `nr-lmn2` merge**) · `ps-ocd`/`ps-ptsd` (⚠️ **a SINGLE deck**, which §4 permits) ·
+  `nr-movement`/`nr-epilepsy`, `ps-psychosis`/`ps-schizmgmt`, `nr-backpain`/`nr-neckpain` (⚠️ **all
+  three FORECAST BEFORE writing**; the last on a **REGIONAL book seam while the DECK INTERLEAVES** —
+  allowed, because nothing is reordered *within* a chapter).
 - **⚠️⚠️ FORECAST A SPLIT ONLY AT ÷280 ≥ 16; BETWEEN 13 AND 15, TEST-PRINT — NEVER ACCEPT A SPLIT
   *OR* A COMPRESSION ON AN ESTIMATOR.** The three forecast splits printed **13/12, 9/10 and 10/9 pp**,
   inside the shape first time; each of the three *found* splits cost a full extra cycle — **but
   `ps-pharm` forecast 14.9 and PRINTED 11.** ⚠️ **÷280 over-predicts by up to 4.0; ÷240 over-predicted
   ophtho by 5.1; ÷335 under-predicted `nr-lmn` by 6.3.**
-- **⚠️⚠️ TRIM FIRST, BUT KNOW WHEN TO STOP.** `ps-ocd` had **132 words on page 14**; two second copies
-  recovered **82 words of paper**, leaving **50** and nothing that was duplication — so it split.
-  ⚠️⚠️ **"A table costs more paper per word" IS REFUTED** — `ps-anxiety` is the **most** table-dense
-  chapter and printed **highest** w/pp; plan §4 suspects **cell WIDTH**. ⚠️ **A trim is duplication
-  or my own prose, never a fact.**
+- **⚠️⚠️ TRIM FIRST, BUT KNOW WHEN TO STOP. A trim is duplication or my own prose, never a fact.**
+  `ps-ocd` had **132 words on page 14**; two second copies recovered **82 words of paper**, leaving
+  **50** and nothing that was duplication — so it split. ⚠️⚠️ **"A table costs more paper per word"
+  IS REFUTED** — `ps-anxiety` is the **most** table-dense chapter and printed **highest** w/pp.
 - **⚠️⚠️ A SOURCE WORD COUNT UNDER-PREDICTS THIS STYLE BADLY** — `nr-movement` wrote **163 %** of its
   source, **`ps-anxiety` 202 %** (4,012 w from 1,986); writing tight brought `ps-psychosis` to 128 %.
   ⚠️ **My own connective prose is the inflation, it sits ABOVE §14.2's floor, and it is the
@@ -42,46 +41,47 @@ there before resuming a paused stream. Where this file and the archive disagree,
   chapter written half from tagged outside knowledge.**
   ⚠️ **IT OWES TWO SLIDES TO `nr-lmn`:** L1's `Upper`/`Lower Motor Neuron Manifestations` are
   **counted to `lm-1`, never again** (`str-4`/`hem-7`/`cn-9` filed UMN/LMN there). `op-va` shape.
-- **⚠️ FIVE SOURCES UNREAD AND RECORDED, NOT GUESSED** — no subagent available: **`L3` p17** (zero
+- **⚠️ FOUR SOURCES UNREAD AND RECORDED, NOT GUESSED** — no subagent available: **`L3` p17** (zero
   words, zero fonts, before the deck's unanswered *NON MOTOR SYMPTOMS ??????* slide) · **book Neuro
-  ch.12** (119-127) · **ch.6** (57-66) · **Psych ch.10** (256-260, NMS, `ps-emerg`) · **Psych ch.12**
-  (265-270, ECT/devices, `ps-devices`). **Check `mv-5`'s supplied non-motor table if read.**
-- ✅ **`ps-anxiety` done, 11 pp — BOTH read-first pointers paid**: `oc-10` gave the spine accounting,
-  `sy-10` a deck the plan denied. ✅ **Book Psych ch.3 FULLY SPENT**, accounted in **`ax-10`**.
-  **Check every deck's BACK HALF**, and **declare in your register what you leave a sibling.**
-- ✅ **`ps-psychosis` + `ps-schizmgmt` done, 9 + 10 pp, split BEFORE writing.** ✅ **Book Psych ch.7
-  FULLY SPENT.** ⚠️ **`ps-pharm` was paid its antipsychotics by `sm-6`/`sm-7` and POINTS, not repeats.**
-  ⚠️ **The MAOI gap stays OPEN** (MAOI/phenelzine/tyramine on none of ch.7's 11 pp). ⚠️⚠️ **It opened
-  TWO READING DEBTS — NMS and ECT, in the unread list below. READ, DO NOT SUPPLY**: each is another
-  chapter's core content, so a supply would be written twice.
-- ✅ **`ps-pharm` done, 11 pp whole — the ch.11 DEAD HEADING IS RESOLVED.** `ph-7` adds the deck's own
-  **12-agent table, ELEVEN of whose agents book ch.7 never names.** ⚠️⚠️ **THE TWO SOURCES CONTRADICT
-  EACH OTHER ON THE DOPAMINE PATHWAYS** — deck: mesolimbic→positive, mesocortical→negative; book ch.7:
-  associative nigrostriatal→positive, mesolimbic→negative. **Recorded both, corrected neither.**
-  ⚠️ **The purest fill-and-tag chapter yet** — **lithium 0.6-1.2 mEq/L is the ONLY value with a unit
-  in 15 pages of this book's pharmacology**, and **the whole MAOI block is supplied** (the book's
-  list runs 1-5 and stops; ch.7 does not fill it).
-- ✅ **`nr-backpain` + `nr-neckpain` done, 10 + 9 pp, split BEFORE writing** on the book's own REGIONAL
-  seam. ✅ **Book Neuro ch.16 FULLY SPENT** — 16 pp, the longest this module has drawn on.
-  ⚠️⚠️ **THE PAIN TAXONOMY IS A VERIFIED ABSENCE, NOT AN UNREAD GAP** — `npqb-nr-125` (key
-  `Nociceptive`) was orphaned by ch.9, and **ch.16 does not contain it either** (`nociceptive`/
-  `neuropathic`/`psychogenic` on **none** of 16 pp; its *Pain and pain management* QRs are a **VIDEO**).
-  **TWO chapters read for ONE question — stop looking.**
-- **⚠️⚠️ A DECK'S WORD COUNT IS NOT ITS TEACHING COUNT.** `L11,12` is **2,251 w of which 1,933 (86 %)
-  are FIVE CASE VIGNETTES**; teaching content **~320 w**, and the plan had budgeted the full 2,251.
-  ⚠️ **It asks NINE questions across the cases and ANSWERS NONE** — worked in `sm-9` from the book's
-  own criteria. **Split the count before budgeting from it.**
+  ch.12** (119-127) · **ch.6** (57-66) · **Psych ch.9** (249-255, substance, `ps-sud`'s absences).
+  **Check `mv-5`'s supplied non-motor table if read.**
+- **⚠️⚠️ TWO ENTRIES OF THAT LIST WERE FALSE AND ARE STRUCK (2026-08-23): Psych ch.10 (NMS) and
+  ch.12 (ECT) ARE NOT NEEDED.** `ps-schizmgmt` filed both out as unread book chapters **on the
+  book's own cross-reference, without probing the 25 cached decks.** **`L15`'s back half teaches NMS
+  IN FULL** (tetrad, 10-20 % mortality, 0.02-3 % incidence, 2:1 male, age not a risk factor,
+  mechanism, seven labs, nine-step treatment), **`L16` again**, **`L18` ECT at length.** Fixed in
+  `sm-5`/`sm-7`/`sm-10`, the draft header and plan §5. ⚠️⚠️ **THE RULE: A BOOK'S OWN CROSS-REFERENCE
+  IS A POINTER, NOT A VERDICT** — the 14th payment of *read the slide before declaring a gap*, and
+  the first caused by **the source pointing elsewhere** rather than a failed probe.
+- ✅ **BOOK CHAPTERS FULLY SPENT: Psych ch.3, Psych ch.7, Neuro ch.16, Neuro ch.9. ⚠️ Do not
+  re-open them.** Four completion blocks (`ps-anxiety`, the schizophrenia pair, `ps-pharm`, the pain
+  pair) moved **verbatim to `progress\memory-archive.md`** 2026-08-23. Rules kept here: **check
+  every deck's BACK HALF** · **declare in your register what you leave a sibling** · **⚠️ THE PAIN
+  TAXONOMY IS A VERIFIED ABSENCE** (`npqb-nr-125`; two book chapters for one question — **stop
+  looking**) · ⚠️ **the MAOI gap stays OPEN** · ⚠️⚠️ **deck and book CONTRADICT EACH OTHER ON THE
+  DOPAMINE PATHWAYS — both recorded, neither corrected** · **`ps-pharm` POINTS, never repeats.**
+- ✅ **`ps-sud` done, 7 pp whole — the module's shortest. 352 w/pp; inflation 220 %, its worst, and
+  unavoidable (ZERO questions = no backwards calibration).** ⚠️⚠️ **`L15` IS TWO LECTURES IN ONE
+  DECK**: lines 1-204 substance **1,121 w** (this chapter); lines 205-354 **psychiatry emergency
+  733 w** (NMS 240, catatonia 108, suicide 385) — **filed OUT whole to `ps-emerg` in `sd-8`.**
+  ⚠️ **Three VERIFIED ABSENCES recorded, not filled**: no pharmacotherapy for stimulants or
+  hallucinogens; **no intoxication or withdrawal syndrome anywhere** (`tolerance`/`delirium
+  tremens`/`naloxone` = **zero across all 25 decks**); no substance named against any of the nine
+  induced disorders. **Book Psych ch.9 (249-255) is where they'd live — unread.**
+- **⚠️⚠️ A DECK'S WORD COUNT IS NOT ITS TEACHING COUNT — TWICE NOW. SPLIT THE COUNT BEFORE BUDGETING
+  FROM IT.** `L11,12` is **2,251 w of which 1,933 (86 %) are FIVE CASE VIGNETTES** (teaching ~320 w;
+  it **asks NINE questions and ANSWERS NONE** — worked in `sm-9`); `L15` is **two lectures in one
+  deck**, above. **The plan had budgeted the full figure both times.**
 - **⚠️⚠️ A GREP HIT THAT GETS EXPLAINED AWAY IS WORSE THAN A MISS — it looks like evidence.**
-  `ps-anxiety` was "no deck" for five days: the probe **hit `L4,5`, the row dismissed the hits as
-  "symptom lists"** unopened, and it searched `generalized anxiety`, which the deck never writes
-  (**it writes GAD**). ⚠️ **Probe with the SOURCE's vocabulary and OPEN THE SLIDE.**
+  `ps-anxiety` was "no deck" for five days: the probe **hit `L4,5`**, the row dismissed the hits as
+  "symptom lists" unopened, and it searched `generalized anxiety`, which the deck never writes (**it
+  writes GAD**). ⚠️ **Probe with the SOURCE's vocabulary and OPEN THE SLIDE.**
 - **⚠️ Ophtho reconciliation is NOT done** — ~63 register rows, `va-6`/`pup-10`, five held divergences, `wht-8`. In its `theory-plan.md`; never re-derive.
 - **⚠️ A SPLIT MOVES QUESTIONS by the theory `qs` links, never by title** — ophtho refiled 12/1/1/16/2.
-- **⚠️⚠️ CHECK A CHAPTER'S QUESTIONS AGAINST ITS SOURCE BEFORE BRIEFING.** A Decks column is an
-  assignment, **not coverage** — **none of `op-va`'s 16 was answerable from its only listed deck.**
+- **⚠️⚠️ CHECK A CHAPTER'S QUESTIONS AGAINST ITS SOURCE BEFORE BRIEFING.** A Decks column is an assignment, **not coverage** — **none of `op-va`'s 16 was answerable from its only listed deck.**
 - **⚠️⚠️ A SOURCE'S WORD COUNT IS THE CACHE'S, NEVER `pdftotext`'s** — `op-refract` was argued against
   splitting on "1,540 words"; its cache held **4,439**. **`pdffonts` per page detects VECTOR-OUTLINE
-  text**; **zero fonts hides nothing.**
+  text; zero fonts hides nothing.**
 - **⚠️⚠️ VERIFY EVERY REGISTER ROW'S *SECOND CLAUSE*, AND AUDIT "row filed" CLAIMS — `op-ret` was
   named in twelve rows and FIVE WERE WRONG; four "filed" rows did not exist.** **A resolved
   cross-reference proves nothing — measure the destination, and check it is the right section.**
@@ -149,13 +149,13 @@ there before resuming a paused stream. Where this file and the archive disagree,
 - **Corpus 2,097** (2026-08-14): ENT 1,720 · Neuro 158 · Ophtho 138 · Peds 81. Banks: GG 1,180 ·
   Endpoint 697 · House 78; 54 shared. Module keys `ent`, `ophtho`, `pediatrics`, `neuropsych`.
   Option counts 2–9 coexist; nothing assumes four.
-- **Theory: 138 of 150 chapters, 1,464 sections.** ENT 30 (259 pp / 8.6) · Peds 51 (340 / 8.3) ·
-  Ophtho 36 (331 / 9.2) · **Neuro 21 of 33**. Drafts in `content\<mod>\theory-drafts\` (⚠️ ENT's
+- **Theory: 139 of 150 chapters, 1,472 sections.** ENT 30 (259 pp / 8.6) · Peds 51 (340 / 8.3) ·
+  Ophtho 36 (331 / 9.2) · **Neuro 22 of 33**. Drafts in `content\<mod>\theory-drafts\` (⚠️ ENT's
   bare `ent-csom/tonsils/aom/stridor` are the DEAD format; their `*.v2/v3` are current). Best
   models: `ent-nasalobs`, `op-ret`, `nr-cranial`, `ps-symptom`, `ps-ocd`, `ps-anxiety`, `ps-schizmgmt`.
 - Last real `file://` boot **2026-08-23**: **0 console errors, 876 CSS rules, 3
-  `max-aspect-ratio:5/4` blocks, 4 modules, 149 chapters, 2,097 questions, 89 cases, 138 theory
-  chapters, 1,464 sections.** Harnesses in `<scratch>\`: `MOD=<mod> print.sh` · `boot.sh` ·
+  `max-aspect-ratio:5/4` blocks, 4 modules, 150 chapters, 2,097 questions, 89 cases, 139 theory
+  chapters, 1,472 sections.** Harnesses in `<scratch>\`: `MOD=<mod> print.sh` · `boot.sh` ·
   `modcheck-neuro.js` · `vdraft.js` · `splice-neuro.js`/`resplice-neuro.js` · `qdump.js` · `shot.sh`.
 - **⚠️ THE THEORY READER IS AN A4 PAGE (2026-08-19, three user complaints).** 210:297 by
   `aspect-ratio`, sized from the window; margins set in JS from the PAGE's width (**percentages
