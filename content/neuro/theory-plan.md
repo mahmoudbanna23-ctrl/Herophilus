@@ -18,11 +18,11 @@ expensive lessons first:
 
 ## 1. Shape
 
-**32 chapters in two groups: Psychiatry 18, Neurology 14.**
-⚠️ **Was 27. FIVE SPLITS added one each.** Three were made **after printing** over the 13-page
+**33 chapters in two groups: Psychiatry 18, Neurology 15.**
+⚠️ **Was 27. SIX SPLITS added one each.** Three were made **after printing** over the 13-page
 hard shape — `nr-hemi`/`nr-para` 2026-08-18 · `nr-lmn`/`nr-nerve` and `ps-ocd`/`ps-ptsd` both
 2026-08-22 — and **two were FORECAST and taken BEFORE writing**: `nr-movement`/`nr-epilepsy`
-(2026-08-22/23) and **`ps-psychosis`/`ps-schizmgmt`** (2026-08-23). ⚠️ **`ps-ocd` split a SINGLE
+(2026-08-22/23), **`ps-psychosis`/`ps-schizmgmt`** and **`nr-backpain`/`nr-neckpain`** (both 2026-08-23). ⚠️ **`ps-ocd` split a SINGLE
 deck** — see §4. Ids and titles in `app\data\modules.js`
 under module id `neuropsych`. **151 questions**, all `gradegain`, all MCQ, ids `npqb-`.
 
@@ -35,7 +35,7 @@ that survives both results: split before writing when ÷280 says 16 or more, as 
 
 ### ⚠️⚠️ THE QUESTION DISTRIBUTION IS THE MOST LOPSIDED IN THE PROJECT
 
-**Neurology holds 133 of 151 questions. Psychiatry holds 18. NINETEEN of the 32 chapters have NONE**
+**Neurology holds 133 of 151 questions. Psychiatry holds 18. TWENTY of the 33 chapters have NONE**
 *(counted from `questions.neuro.js` against `modules.js` on 2026-08-23, not carried over; the five
 splits each added a zero-question half).*
 
@@ -49,10 +49,10 @@ splits each added a zero-question half).*
 | 11 | `ps-symptom` |
 | 5 | `ps-psychoed` |
 | 1 each | `nr-ms` · `nr-movement` · `nr-lmn` · `ps-ocd` · `ps-mood` |
-| **0** | **NINETEEN**: `ps-interview` · `ps-osce` · `ps-somato` · `ps-anxiety` · **`ps-ptsd`** · `ps-psychosis` · **`ps-schizmgmt`** · `ps-geri` · `ps-child` · `ps-sud` · `ps-emerg` · `ps-pharm` · `ps-devices` · `ps-therapy` · **`nr-epilepsy`** · **`nr-nerve`** · `nr-cns` · `nr-delirium` · `nr-backpain`. *The five bolded were added by the splits; in each pair the other half keeps the question* |
+| **0** | **TWENTY**: `ps-interview` · `ps-osce` · `ps-somato` · `ps-anxiety` · **`ps-ptsd`** · `ps-psychosis` · **`ps-schizmgmt`** · `ps-geri` · `ps-child` · `ps-sud` · `ps-emerg` · `ps-pharm` · `ps-devices` · `ps-therapy` · **`nr-epilepsy`** · **`nr-nerve`** · **`nr-neckpain`** · `nr-cns` · `nr-delirium` · `nr-backpain`. *The six bolded were added by the splits; in each pair the other half keeps the question — except `nr-backpain`/`nr-neckpain`, where NEITHER half has one* |
 
 **What this means for budgeting.** §14's budget is `max(source words, 25 × questions)`, floor 600.
-With **19** chapters at zero questions, **the deck word count governs almost the whole psychiatry half**
+With **20** chapters at zero questions, **the deck word count governs almost the whole psychiatry half**
 — the `25×q` term never binds there. The bank is frozen mid-flight (`npqb-` transcription is another
 chat's stream), so **these zeros are "not yet transcribed", NOT "not examined"**. Do not treat a
 zero-question chapter as low-value; the neurology bias is an artefact of transcription order.
@@ -101,7 +101,7 @@ measured that way and comparability matters more than purity.
 | L9) CNS infection | 40 | **1,924** | 1,818 | 48 | `nr-cns` |
 | L18) Devices in Psychiatry | 23 | **1,909** | 1,806 | 83 | `ps-devices` |
 | L15) substance related + psych emergency | 49 | **1,854** | 1,771 | 38 | `ps-sud` |
-| L11) Cervical pain | 41 | **1,742** | 1,589 | 42 | `nr-backpain` |
+| L11) Cervical pain | 41 | **1,742** | 1,589 | 42 | `nr-backpain` + **`nr-neckpain`** ✅ ⚠️ *the deck INTERLEAVES: back → neck → low back* |
 | L13) Dementia and Delirium | 41 | **1,672** | 1,532 | 41 | **`ps-geri` + `nr-delirium` — SHARED** |
 | L16) Emergency Psychiatry | 46 | **1,597** | 1,564 | 35 | `ps-emerg` |
 | L6) Peripheral neuropathy | 44 | **1,525** | 1,465 | 35 | **`nr-nerve`** ✅ *(re-assigned by the 2026-08-22 split)* |
@@ -221,8 +221,10 @@ Four chapters are printed now, and they do **not** share one rate:
 | `ps-psychosis` | 3,002 | 10.7 | **9** | 334 |
 | **`ps-schizmgmt`** | 3,854 | 13.7 | **10** | **385** |
 | **`ps-pharm`** | 4,181 | **14.9** | **11** | **380** |
+| **`nr-backpain`** | 3,914 | 14.0 | **10** | **391** |
+| **`nr-neckpain`** | 3,354 | 12.0 | **9** | **373** |
 
-**All four over-predicted, which is the safe direction — but 3.9 pages of slack is enough to force
+**All six over-predicted, which is the safe direction — but 4.0 pages of slack is enough to force
 an unnecessary split.** ✅ **`ps-pharm` is the rule's first live test: forecast 14.9, printed 11.** ⚠️ **Do not split on ÷280 alone once a forecast lands between 13 and 15;
 print first.** Split before writing only where the forecast is **far** past the shape, as
 `ps-psychosis`'s 20–30 pp was. **The three most recent chapters are the densest in the module**, and
@@ -271,6 +273,7 @@ page. Look for a second copy before looking for something to cut.
 | ✅ `ps-ocd` | deck 2,322 + book pp. 197-199 | **printed 14 pp WHOLE** | ✅✅ **WRITTEN AND SPLIT 2026-08-22.** ⚠️ **Two second copies were trimmed FIRST and it was not enough** — a consolidated *which-source-has-what* table and a restatement of PTSD prevalence recovered **82 words of paper**, leaving **50 words on page 14** with **nothing left that was duplication**. Split on the deck's own **`PART ONE` / `PART TWO`** seam: **`ps-ocd`** (OCD, 10 sections, 3,139 w, **printed 10 pp**, keeps `npqb-ps-7`) and new **`ps-ptsd`** (PTSD + ASD, 4 sections, 1,850 w, **printed 6 pp**, 0 q). ⚠️ **The first split of a SINGLE deck** — §4 joins one TOPIC over two lectures and says nothing about two disorders in one lecture. **Measured rate 306 w/pp** |
 | ✅ `ps-anxiety` | **1,986** (book share 1,753 + deck 233) | **printed 11 pp** | ✅ **WRITTEN 2026-08-23 — whole, no split.** 10 sections, **3,799 w**, 0 q. ⚠️ **THE WORST INFLATION YET MEASURED: 4,012 words FIRST DRAFT = 202 % of source** (`nr-movement` was 163 %). **240 words of my own connective prose were cut before printing** — including one **untagged outside-knowledge claim** (dating the three-way split to DSM-5 2013, which the book never says) and one **consolidated second copy** (a divergence block restating four findings already stated where they are used — the `nr-headache` shape). **No sourced fact was cut.** ⚠️ **Measured 343 w/pp — a NEW MODULE HIGH**, and ÷280 forecast 13.5 pp against a printed **11**, an over-prediction of **2.5**. ⚠️ **The two read-first pointers both paid**: `oc-10` gave the spine accounting, `sy-10` gave a deck the plan denied |
 | ✅ **`ps-psychosis`** | **6,326** (book ch.7 **4,075** + deck 2,251) | forecast **20–30 pp** | ✅✅ **SPLIT BEFORE WRITING 2026-08-23**, on **`Course & Prognosis`, printed 233** — contiguous, no reordering. **`ps-psychosis`** *(retitled from "Approach to Psychosis")* 9 sections, 3,002 w, **printed 9 pp** · new **`ps-schizmgmt`** 10 sections, 3,854 w, **printed 10 pp**. Neither half has a question, so nothing moved. ⚠️⚠️ **THE DECK IS 86 % CASE VIGNETTES** — 1,933 of 2,251 words are five cases with full MSEs, and its **teaching content is ~320 words**. **The widest deck-words-vs-teaching-words gap yet measured**, and the reason `sm-9` is a section. ⚠️ **The deck asks NINE QUESTIONS across the cases and answers NONE** — worked from the book's own criteria in `sm-9`. ⚠️ **Measured 334 and 385 w/pp — 385 is a NEW MODULE HIGH** |
+| ✅ **`nr-backpain`** | **8,064** (book ch.16 **6,322** + deck 1,742) | forecast **past 20 pp** | ✅✅ **SPLIT BEFORE WRITING 2026-08-23** on the book's own **regional** boundary at printed 166. **`nr-backpain`** *(retitled from "Cervical and low back pain")* 9 sections, 3,914 w, **printed 10 pp** · new **`nr-neckpain`** 8 sections, 3,354 w, **printed 9 pp**. ⚠️ **Book ch.16 is the LONGEST this module has drawn on — 16 printed pages.** ⚠️ **The cervical END-MATTER is cervical throughout**, so nothing general had to be divided — that is what made the seam cheap. ⚠️ **THE DECK INTERLEAVES AND THE BOOK DOES NOT**: `L11` runs back → neck → low back, so each half draws **two non-contiguous deck blocks**. Allowed because **nothing is reordered WITHIN a chapter** — the ophthalmology rule forbids reordering an *already-written* chapter, and both were written fresh. ⚠️ **Measured 391 and 373 w/pp; 391 is a new module high** |
 | `nr-ms` · `ps-symptom` | 2,251–2,441 | 6.7–7.3 pp | inside the ceiling. ⚠️ **`ps-ocd` was in this row and printed 14 pp** — a deck word count is not a page count when a second source is added |
 | everything else | 1,257–1,924 | 3.8–5.7 pp | single chapters |
 
@@ -291,12 +294,18 @@ the book mapper as a split candidate on precedent. **Not decided — read before
 2. ✅ **Book map** — `content\neuro\book-map.md`, done 2026-08-18.
 3. ✅ **`L17` visual read** — cache 239 → 3,358 w, done 2026-08-18. `ps-pharm` is unblocked on the
    deck but still **partial** on antipsychotics — see the dead-heading finding below.
-4. ✅ **Written — 19 of 32** *(measured from disk 2026-08-23)*: `nr-stroke` · `nr-hemi` ·
+4. ✅ **Written — 21 of 33** *(measured from disk 2026-08-23)*: `nr-stroke` · `nr-hemi` ·
    `nr-para` · `nr-headache` · `nr-cranial` · `ps-symptom` · `ps-psychoed` · `nr-ms` · `ps-mood` ·
    `nr-lmn` · `nr-nerve` · `ps-ocd` · `ps-ptsd` · `nr-movement` · `nr-epilepsy` · `ps-anxiety` ·
-   `ps-psychosis` · `ps-schizmgmt` · **`ps-pharm`**.
-   **177 sections, 55,169 body words. 130 of the module's 151 questions reachable.**
-   **13 chapters holding 21 questions remain — and `nr-intro` holds ALL 21.**
+   `ps-psychosis` · `ps-schizmgmt` · `ps-pharm` · **`nr-backpain`** · **`nr-neckpain`**.
+   **194 sections, 62,437 body words. 130 of the module's 151 questions reachable.**
+   **12 chapters holding 21 questions remain — and `nr-intro` holds ALL 21.**
+   ✅ **Book Neurology ch.16 is FULLY SPENT** across `nr-backpain` and `nr-neckpain` — all 16 pp.
+   ⚠️⚠️ **AND THE PAIN TAXONOMY IS A VERIFIED ABSENCE, NOT AN UNREAD GAP.** `npqb-nr-125` (*migraine
+   is best classified as…*, key `Nociceptive`) was orphaned by ch.9; **ch.16 was read for it and does
+   NOT contain it** — `nociceptive`, `neuropathic`, `psychogenic`, `somatic`, `visceral` and
+   `referred pain` appear on **none of its sixteen pages**, and its contents QRs labelled *Pain and
+   pain management* **describe a VIDEO**. **Two chapters read for one question. Stop looking.**
    ✅ **Book Psychiatry ch.3 is now FULLY SPENT** across `ps-ocd`, `ps-ptsd` and `ps-anxiety`;
    the page-by-page accounting is in `ps-anxiety`'s **`ax-10`**.
    ✅ **Book Psychiatry ch.7 is FULLY SPENT** across `ps-psychosis` and `ps-schizmgmt`.
@@ -514,9 +523,14 @@ abortive and preventive ladders), tension-type, cluster with **100 % O₂ at 6 L
 which of the following?"*, printed key **`Nociceptive`**, distractors *neuropathy* and *VC cause
 psychiatric manifestations*. **Chapter 9 contains no pain taxonomy at all** — no
 nociceptive/neuropathic/psychogenic framework in ten pages; its only mechanistic statement is that
-*"the most accepted theory of migraine is the Neurovascular theory."* **Neuro ch.16 is being read
-for it** (its contents QRs are labelled *"Pain and pain management"*), and that chapter is
-`nr-backpain`'s source anyway — so one render serves two chapters and one orphan question.
+*"the most accepted theory of migraine is the Neurovascular theory."*
+
+⚠️⚠️ **RESOLVED 2026-08-23, AND THE ANSWER IS NO: ch.16 DOES NOT CONTAIN IT EITHER.** It was read
+in full for this question — **`nociceptive`, `neuropathic`, `psychogenic`, `somatic`, `visceral` and
+`referred pain` appear on NONE of its sixteen pages**, there is no types-of-pain heading and no pain
+section, and **its contents QRs labelled *"Pain and pain management"* describe a VIDEO, not printed
+matter**. ⚠️ **This is a VERIFIED ABSENCE, not an unread gap** — **two book chapters were read for
+one question. Stop looking.** The full record is in `nr-backpain`'s `bp-9`.
 
 ⚠️ **Six more are answerable but THINNER THAN THE KEY IMPLIES, and the writer must know which:**
 

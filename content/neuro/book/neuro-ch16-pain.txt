@@ -1,0 +1,886 @@
+# NEUROPSYCHIATRY (ASM MINDS) — NEUROLOGY, CH.16: CLINICAL APPROACH TO "CERVICAL AND LOW BACK PAIN"
+# Source: Semester 8\Neuro\Theoritical\Book\neuropsychiatry.pdf
+# Printed pp. 157-172  =  PDF pp. 168-183.  Offset verified on this chapter's own footers:
+#   PDF 168 prints footer "157"  ->  PDF = printed + 11  (NEUROLOGY half). Held on all 16 pages.
+# Boundary verified: PDF 184 prints footer "173" and is the CHAPTER 17 opener
+#   ("CLINICAL APPROACH TO 'ATAXIA'"). Chapter 16 really does end at printed 172. Sixteen pages,
+#   exactly as the book-map predicted.
+# Transcribed 2026-08-18. 150 dpi for prose; the printed-164 root table and the printed-168
+#   Neurological/Systemic poster were re-rendered and cropped at 300 dpi.
+# Nothing completed from outside knowledge. No value is inferred.
+# No (Tutorial)/(T) marker, no star-glyph rating, no figure numbering anywhere in this chapter.
+#
+# ⚠️⚠️ THE HEADLINE RESULT — TITLE:
+#   ** THE CHAPTER OPENER PRINTS `CLINICAL APPROACH TO "CERVICAL AND LOW BACK PAIN"`. **
+#   ** THE RUNNING HEADER ON ALL 15 INTERIOR PAGES PRINTS `cervical and low back pain`. **
+#   The contents page's `Cranial and Low Back pain` is therefore a CONTENTS-PAGE TYPO, contradicted
+#   by the chapter itself on all sixteen pages. The app's `Cervical and low back pain` is CORRECT.
+#   Recorded, not corrected in either place.
+#
+# ⚠️⚠️ THE HEADLINE RESULT — PAIN TAXONOMY (for `npqb-nr-125`):
+#   ** THERE IS NO PAIN CLASSIFICATION SCHEME IN THIS CHAPTER. NONE. **
+#   The words `nociceptive`, `neuropathic`, `psychogenic`, `somatic`, `visceral` and `referred pain`
+#   (as a taxonomy term) do NOT appear on any of the sixteen pages. There is no "types of pain"
+#   heading, no pain-mechanism table, no pain-pathway figure and no pain-management section.
+#   The chapter is a REGIONAL CLINICAL APPROACH end to end: acute LBP -> chronic LBP -> lumbar disc
+#   prolapse -> sciatica -> cauda equina -> neck pain / brachialgia -> cervical spondylosis ->
+#   cervical disc prolapse -> ulnar entrapment -> non-neurological systemic causes -> tests ->
+#   investigations -> treatment. The contents page's QR labels `Pain and pain management` describe
+#   a VIDEO, not printed matter; nothing on these pages corresponds to them.
+#   ** `npqb-nr-125` ("Migraine is best classified as which of the following?" key `Nociceptive`)
+#      CANNOT BE ANSWERED FROM THIS CHAPTER. This is a verified absence, not an unread gap. **
+#   The closest the chapter comes to a mechanism word is `radicular pain` (printed 160, of sciatica)
+#   and `Neuralgic pain` (printed 161, of myalgic sciatica) — both used descriptively, neither as
+#   part of a classification.
+
+---
+
+## printed p.157  (PDF p.168)  [neurology half]
+
+[CHAPTER OPENER. Dark-navy band across the top reading `CHAPTER` right-aligned, with a large white
+`16` in a navy block at the right edge. Title in a pale-blue band beneath, serif small-caps, over
+two lines, with a small colour illustration of a man clutching the back of his neck between the
+title and the numeral.]
+
+# CHAPTER 16 — CLINICAL APPROACH TO "CERVICAL AND LOW BACK PAIN"
+
+Cervical and Lower back pain is one of the most common reasons for neurological and neurosurgical
+consultation. Exacerbated as a result of occupational activity. Lower limb pain (sciatica) is a
+common accompaniment to lower back pain but can occur independently. The same is applied for
+brachialgia and cervical pain.
+
+## Approach to Back Pain
+[Heading in the rounded blue display face, underlined, with a small illustration of a woman holding
+her lower back.]
+
+***Lower Back Pain*** is a broad clinical term, not a specific disease. There are a variety of
+causes - the **most common cause** is **mechanical** back pain due to muscle, tendon, or ligamentous
+strain. In up to **85%** of individuals, no specific cause can be isolated.
+
+### Acute Low Back Pain (LBP)
+[Centred heading on a pale grey full-width band.]
+
+- Acute low back pain is a common presenting illness in the primary care setting.
+- It is defined as pain below the costal margins and above the inferior gluteal folds with no
+  serious underlying pathology.
+- As such, acute back pain is often referred to as mechanical low back pain. Acute back pain
+  frequently recurs and resolves on its own, regardless of treatment.
+- Work-up for a complaint of acute low back pain should focus on ruling out more serious pathology
+  by screening for **red flags**.
+- The presence of red flags suggests it is not simple mechanical back pain
+
+[BOXED TEXT — rounded box with a dashed dusty-red border; heading centred, underlined, in the same
+dusty red.]
+> ### Red Flags - Screen with Acute LBP
+> - Less than 20 or older than 50, with back pain for the first time.
+> - Trauma.
+> - The pain is constant and getting worse.
+> - Pain is worse at night or when supine.
+> - Previous cancer history.
+> - Steroid use, IV drug use, risk of UTI and/or immuno-suppressed.
+> - Fever and/or weight loss.
+> - Neurological signs such as weakness, numbness, saddle-anesthesia or bowel/bladder incontinence
+
+[Page number bottom right, blue, over a short grey underscore bar. Running header `cervical and low
+back pain` in the rounded blue display face top right on every interior page, with the blue
+bracket-corner motif top left — not repeated below.]
+
+---
+
+## printed p.158  (PDF p.169)  [neurology half]
+
+[FULL-WIDTH INFOGRAPHIC POSTER at the top of the page — no figure number, no caption. Two dark-navy
+titled panels side by side, each with three icon+text blocks. This poster RESTATES the printed-157
+red-flag box in picture form; it adds no new item.]
+
+> | Panel | Item | Text as printed |
+> |---|---|---|
+> | **Acute Neurological & Structural Emergencies** | **Cauda Equina & Nerve Damage** | Watch for urinary retention, bowel/bladder incontinence, saddle anesthesia, or progressive leg weakness. |
+> | | **Traumatic Vertebral Fracture** | Screen for high-risk trauma or accidents, especially in patients with suspected bone density issues. |
+> | | **Night Pain & Supine Disturbance** | Pain that is worse at night or when lying flat is a significant indicator. |
+> | **Systemic Indicators & High-Risk History** | **Constitutional Symptoms** | Fever, night sweats, and unexplained weight loss may signal spinal infection or malignancy. |
+> | | **High-Risk Medical History** | Screen for previous cancer, long-term steroid use, IV drug use, or immunosuppression. |
+> | | **Demographic Risk Factors** | Be alert for patients younger than 20 or older than 50 presenting with new pain. [icons print `<20` and `>50`] |
+
+**Management of acute LBP** In the absence of Red Flags, treatment is **conservative.**
+
+[⚠️ `Management of acute LBP` is a RUN-IN HEADING, not a section: the whole of its content is the
+single clause above. One sentence. No modality, no drug, no duration is given for acute LBP here —
+the detail lives under `Treatment` on printed 165 and printed 163, which are the disc-prolapse and
+sciatica treatments, not an acute-LBP treatment.]
+
+### Chronic back pain
+[Centred heading on a pale grey full-width band.]
+
+- Chronic back pain is low back pain of unspecified pathology that **persists longer than 3 months.**
+- The evolution of chronic LBP is complex, with physiological, psychological, and psychosocial
+  influences.
+- Depression is often associated with chronic back pain – **malingering is uncommon**.
+- Work-up for chronic back pain (and acute LBP) should include a screen for **yellow flags**
+  [the words `yellow flags` are printed in yellow highlighter-coloured type] (special scales and
+  scores to assess social, psychological and occupational disabilities) that indicate risk for
+  chronic disability.
+
+## Management of Chronic Pain
+- ✓ In the absence of red flags, chronic back pain should be treated in a multi-modal but
+  conservative fashion.
+- ✓ Early return to work is a priority. The patient's ideas about pain and other yellow flags need
+  to be addressed with appropriate sensitivity.
+
+*[Centred, in dusty-red italic:]* **An important treatment goal for both acute and chronic back pain
+is for the patient to be active as soon as possible.**
+
+[⚠️ `yellow flags` are NAMED and DEFINED parenthetically but NEVER LISTED. No individual yellow flag
+is printed anywhere in the chapter — contrast the red flags, which get a box and a poster.]
+
+[The bottom third of printed 158 is blank.]
+
+---
+
+## printed p.159  (PDF p.170)  [neurology half]
+
+## Lower back and/or lower limb (SCIATICA) pain
+[Section heading, rounded blue display face, underlined, centred.]
+
+## Neurological Causes Of Low Back Pain And Sciatica
+[Underlined blue heading, left.]
+
+### 1. Lumbar disc prolapse
+[Numbered topic heading on a pale grey full-width band.]
+
+#### Definition:
+Lumbar disc prolapse occurs when the soft **nucleus pulposus** herniates through tear in the
+**annulus fibrosus**.
+
+[FIGURE — no number, no caption. Two axial vertebral cross-sections side by side. Left labelled
+`NORMAL DISC` with call-outs `Spinal cord`, `Nucleus pulposus`, `Disc annulus`. Right labelled
+`HERNIATED DISC` with call-outs `Compressed nerve root`, `Vertebral body`, showing the nucleus
+displaced posterolaterally onto the root.]
+
+#### Etiology
+[Printed with a Greek epsilon for the initial E: `Ɛtiology`. The book uses this glyph for E-initial
+headings throughout the chapter — `Ɛtiology`, `Ɛxamination`, `Ɛnt.` etc.]
+- Lumbar spine degeneration.
+- Multiple repetitive micro-traumata such as lifting heavy weights.
+- Single major trauma such as falling or lifting heavy weight preceding the onset of symptoms.
+
+#### Clinical presentations:
+1) **Back syndrome:** This includes back manifestations only.
+2) **Leg syndrome:** This includes neurological & mechanical manifestations in one or both legs
+   along one or more nerve roots (Monoradiculopathy or Polyradiculopathy).
+3) **Classic back & leg syndrome.**
+4) **Neurogenic claudication:** This includes unilateral or bilateral monoradicular or
+   polyradicular manifestations along the lower limbs on movement and relieved by rest.
+5) **Cauda equina syndrome.**
+
+#### Clinical picture:
+
+##### ➤ Symptoms
+- **Low back pain**, which is usually dull aching pain in the lower back that is aggravated by
+  movement and partially relieved by rest.
+- **Sciatica**: Pain in the leg in the distribution of the affected root which is aggravated by
+  coughing and sneezing and **relieved by flexion of knee and thigh**.
+- **Numbness** or **tingling** along the distribution of the affected nerve root i.e., dermatomal
+  distribution.
+- **Motor weakness** according to the affected nerve root.
+
+[Symptom list continues onto printed 160.]
+
+---
+
+## printed p.160  (PDF p.171)  [neurology half]
+
+[⚠️ CONTINUATION — the `Symptoms` bullet list that began on printed 159 runs across the page break.
+Anyone rendering printed 160 alone gets a headless list.]
+
+- **Bladder symptoms**: flaccid bladder (retention with overflow incontinence) in cases of cauda
+  equina syndrome.
+- **Sexual dysfunction** as impotence in males.
+
+##### ➤ Signs
+1. **Back signs**: Loss of lumbar lordosis, Local tenderness, Limitation of spinal movement,
+   Scoliosis, Spasm of paravertebral muscle.
+2. **Leg signs (Signs of radiculopathy):**
+   - Motor weakness in the group of muscles supplied by the compressed nerve root.
+   - Sensory changes along dermatomal affection of the compressed nerve root.
+   - Decreased reflexes according to the root affected.
+   - **Positive** Straight leg raising test (SLRT)
+
+### 2. Sciatica
+[Numbered topic heading on a pale grey full-width band.]
+
+#### Definition:
+- The most frequent **radicular pain** syndrome of spinal origin.
+- Sciatica describes the pain referred down the course of the **sciatic nerve** from the back to the
+  buttock, down the back of the leg to the foot.
+- Occurs due to irritation of a spinal nerve root associated with disc herniation at **L4-L5 OR
+  L5-S1**.
+- Pain usually begins in the lower back radiating to the sacroiliac regions, buttocks, thighs, calf
+  & foot. Sciatica is a **symptom, NOT A DIAGNOSIS.**
+
+[FIGURE, right margin — no number, no caption. Faint anatomical drawing of the sciatic nerve running
+from the sacrum down the posterior thigh and leg.]
+
+#### Causes:
+- The **most common cause** of sciatica arises from compromise of the **L5** and **S1** roots, this
+  commonly occurs due to:
+  - **Inflammatory**: Sciatic neuritis, arachnoiditis.
+  - **Nerve Root Compression:**
+    - Compression in the vertebral canal by Lumbar disc prolapse, tumor, TB.
+    - Compression in the intervertebral foramen due to **root canal stenosis** because of
+      osteoarthritis, spondylolisthesis, facet arthropathy, tumors.
+    - Compression in the buttock or pelvis by abscess, tumors, hematoma.
+  - **Piriformis Syndrome (Wallet sciatica/fat wallet syndrome):**
+    - Neuromuscular syndrome that occurs when the sciatic nerve is compressed/irritated by the
+      **piriformis muscle** causing pain, tingling & numbness in the buttocks & along the path of
+      sciatic nerve.
+    - Caused/aggravated by sitting with a large wallet in the affected side's rear pocket.
+  - **Diabetic ischemia** of the nerve and roots.
+  - **Neoplastic** involvement.
+
+---
+
+## printed p.161  (PDF p.172)  [neurology half]
+
+[TWO FIGURES across the top — neither numbered nor captioned.]
+[Left: two pelvis-and-spine skeletal drawings. Top label `Pelvis and spine deviated from their
+positior` [sic — the label is cut and prints `positior`, not `position`]. Call-outs `Spine`,
+`Pelvis`, `Wallet`. The two panels are labelled `Normal sitting` and `Sitting with wallet`.]
+[Right: a pelvis with a magnified inset. Call-outs `Inflamed piriformis muscle` and `Compressed
+sciatic nerve`.]
+
+#### Clinical Picture
+- **Onset** is often **traumatic**.
+- Exertion or a forced movement results in acute low back pain, followed by referral to the leg.
+  Exacerbated by standing, sitting, exertion, coughing and sneezing. Relieved by lying down.
+- **Topography:** It's referral pattern follows that of **L5** or **S1** territory:
+  - **L5:** buttock, anterior aspect of thigh, lateral malleolus, dorsum of foot, great toe or the
+    medial 3 toes.
+  - **S1:** buttock, posterior aspect of thigh, knee, leg & heel, to the sole or lateral side of the
+    foot up to the fifth toe.
+- In the distal limb, pain may be replaced by tingling or numbness.
+
+[⚠️ SELF-CONTRADICTION WITHIN THE CHAPTER — L5 pain topography.
+ printed 161 (here): **`L5: buttock, ANTERIOR aspect of thigh, lateral malleolus, dorsum of foot…`**
+ printed 164 (root table): **`L5 | Pain: BACK OF LEG, lateral lower leg, dorsum foot to great toe`**
+ and the same table gives the ANTERIOR thigh to **L3** and the anteromedial shin to **L4**.
+ Both figures recorded, neither reconciled.]
+
+#### Clinical Ɛxamination:
+
+[FIGURE — no number. A titled illustration panel:]
+> ### The Straight Leg Raise Test (SLR / Lasègue's Sign)
+> **Standardized Supine Procedure**
+> Passively lift the symptomatic leg with the knee extended until familiar radicular pain is
+> reproduced.
+> [Drawing: a clinician raising the extended leg of a supine patient on a couch.]
+
+[⚠️ `Clinical Ɛxamination:` is a HEADING WHOSE ENTIRE BODY IS A PICTURE. No prose follows it — the
+SLR angle, the sensitised/crossed variants and any other manoeuvre are not printed. The only
+examination text for the lumbar region is the `Leg signs` list on printed 160.]
+
+#### Clinical Forms of Sciatica:
+- **Hyperalgic Sciatica:** Characterized by **severe pain**. Patient prefers to remain in bed & is
+  hesitant even to move slightly. Specific form **myalgic sciatica**.
+  - **Myalgic sciatica:** Seen most commonly in disc herniations affecting **S1 nerve root**.
+    Neuralgic pain is associated with intense & often continuous muscular pains and cramps affecting
+    the biceps femoris, triceps surae & occasionally the gluteal muscles. Mild motor deficit.
+- **Paralytic Sciatic:** [sic — `Sciatic`, not `Sciatica`] Slight motor deficit can be detected.
+  More frequent in **L5 sciatica**. Most often paralytic L5 sciatica leads to **foot drop**, which
+  forces the patient to modify the gait pattern.
+
+---
+
+## printed p.162  (PDF p.173)  [neurology half]
+
+#### Differential Diagnosis
+- **Spondyloarthropathy:**
+  - Usually seen in the young.
+  - Pain does not refer distal to the knee.
+  - Bilateral or alternating occurring episodically.
+  - Not modified by activity.
+  - **Nocturnal pain** is common.
+  - Diagnosis: PA Views of pelvis or specialized hip views of the sacroiliac joints.
+  - **ESR is elevated**.
+  - Rapid response to medication.
+- **Intramedullary Tumors (Gliomas):**
+  - **Nocturnal pain** is common.
+  - Patient will stand or walk to bring relief.
+  - Physical activity has no influence on the pain.
+  - Spine is sometimes very stiff.
+  - Radiographic studies are normal.
+  - Diagnosis: **MRI/CT/myelography**.
+  - Surgery relieves the patient.
+- **Metastatic** lesions or a **multiple myeloma** can result in intense refractory sciatic pain.
+- **Infectious discitis.**
+- **Infectious sacroiliitis.**
+- **Psuedosciatic syndromes:** [sic — `Psuedosciatic`, transposed] some disorders can simulate
+  sciatic pain as **periarthritis of the hip.**
+
+#### IMAGING & Diagnosis:
+- ✓ **Radiography:** Most occasions radiographs is normal, loss of lumbar lordosis, scoliosis &
+  reduced intervertebral disc space may be seen.
+- ✓ **CT:** Morphologic abnormalities in relation to a herniated disc. Relative impact on adjacent
+  soft tissues. Any neuroforaminal or extra foraminal encroachment.
+- ✓ **Myelography:** Excellent for assessing the entire subarachnoid space. Assessment of spinal
+  stenosis. Disadvantages: headache, nausea.
+- ✓ **Discography:** Often neglected modality. Excellent means of assessing disc pathology.
+- ✓ **MRI: STUDY OF CHOICE** for recurrence following discectomy, to differentiate recurrent
+  herniation from perineural fibrosis.
+- ✓ **Sciatic neuropathy** is a **clinical diagnosis.**
+
+[⚠️ Three of the five DD entries — `Infectious discitis`, `Infectious sacroiliitis`,
+`Psuedosciatic syndromes` — are NAMED AND NEVER EXPANDED. The first two get no clause at all.
+The lower half of printed 162 is blank.]
+
+---
+
+## printed p.163  (PDF p.174)  [neurology half]
+
+#### Treatment
+- **Conservative Management:**
+  - **Intermittent bed rest** with movement for short periods in between.
+  - Patient should lie on a firm mattress, in the position that feels most comfortable.
+  - **Rigid lumbar orthosis** can shorten the duration or obviate the need for bed rest.
+  - **Heat/cold application.**
+- **Analgesics & Anti-Inflammatory Drugs:**
+  - In hyperalgic forms, intrathecal injection of steroids by **LUCHERINI'S technique** can produce
+    a remarkable reduction in pain.
+  - Epidural analgesia in severe cases.
+- **Surgery:**
+  - Indications
+    - Failure of conservative management.
+    - When neurological deficit is present.
+  - Chemonucleolysis.
+  - Percutaneous discectomy.
+
+#### Rehabilitation
+Therapeutic Exercises.
+
+[⚠️ The heading `Analgesics & Anti-Inflammatory Drugs:` names NO drug and NO dose. `LUCHERINI'S
+technique` is named with no description beyond "intrathecal injection of steroids". `Rehabilitation`
+is a heading whose entire body is the two words `Therapeutic Exercises.`]
+
+### 3. Cauda equina syndrome.
+[Numbered topic heading on a pale grey full-width band. The trailing full stop is printed.]
+
+It occurs due to large **central** lumbar disc herniation compressing the cauda equina and needs
+early surgical intervention as any delay leads to permanent neurological deficit.
+
+[TWO FIGURES side by side — no numbers, no captions.]
+[Left: sagittal lumbosacral spine, vertebrae labelled `T12, L1, L2, L3, L4, L5, S1`, with two
+labelled bubbles `Conus Medullaris` and `Cauda Equina` and arrows to the cord and the root fan.]
+[Right: axial view of a lumbar vertebra with a central disc prolapse. Call-outs: `Intervertebral
+disc with Annulus fibrosus and Nucleus pulposus`, `Spinal nerve root`, `Central prolapse of lumbar
+disc`, `Nerve roots compressed within crushed spinal canal`, `Inflammation`, `Lumbar vertebra`.]
+
+#### Clinical picture:
+- **Motor:** Bilateral LMN weakness of dorsal and plantar flexion of the foot (**flail foot**) due
+  to weakness of ankle dorsiflexors and ankle planter [sic] flexors. Weakness of hip flexors and/or
+  extensors and weakness of knee flexors and/or extensors may also occur.
+- **Sensory:** Hypoesthesia bilaterally according to the spinal roots affected. **Saddle shaped
+  hypoesthesia** due to affection of sacral roots.
+- **Reflexes: Absent ankle and knee reflexes** bilaterally.
+
+[FIGURE, right margin — no number, no caption. Line drawing of the back of both lower limbs with the
+saddle area and posterior thighs shaded.]
+
+[Clinical picture list continues onto printed 164.]
+
+---
+
+## printed p.164  (PDF p.175)  [neurology half]
+
+[⚠️ CONTINUATION — the cauda equina `Clinical picture` list runs across the page break from printed
+163.]
+
+- **Sphincteric disturbance of LMNL: urine retention** with overflow incontinence, chronic
+  constipation.
+- Autonomic **sexual dysfunction** (impotence in males).
+- **Positive** Straight leg raising test **(SLRT) bilaterally.**
+- The most common nerve root affected is **S1** nerve root in **L5-S1** disc herniation. **L5 root**
+  in **L4-L5** disc herniation. To a lesser extent is **L4 root** in **L3-L4** disc herniation.
+
+### Localizing features of lumbar and sacral root lesions
+[Centred serif heading in blue. Ruled table, pale-blue header row and pale-blue row-label column,
+handwriting-style face. Re-read at 300 dpi to confirm the empty Reflex cells.]
+
+| Root | Pain | Dermatome | Muscle | Reflex |
+|---|---|---|---|---|
+| L3 | Front of the thigh | Anterior thigh | Quadriceps, adductors | *(cell empty)* |
+| L4 | Front of thigh, knee, and medial shin | Anteromedial shin | Quadriceps, tib. Ant., hamstrings | Knee Jerk |
+| L5 | Back of leg, lateral lower leg, dorsum foot to great toe | Dorsum of foot to great toe | Ɛxt. hall. Longus, evertors, hamstring | *(cell empty)* |
+| S1 | Sole of foot, lateral side of foot, back of thigh and leg | Sole | Plantar flexors, toe, flexors, hamstrings | Ankle jerk |
+| Lower sacral | Buttocks, saddle area | Saddle area, perineal | Anal muscles | Anal |
+
+[⚠️ The `Reflex` cells for L3 and for L5 are BLANK on the page — verified at 300 dpi, they are not
+merged cells and not illegible. The book prints no reflex for those two roots.]
+[⚠️ `Ɛxt. hall. Longus` is printed with the Greek epsilon glyph, as elsewhere in the chapter.]
+
+[FIGURE — no number. Caption in blue serif italic beneath: ***Lower limb dermatomes***. Two lower
+limbs, anterior and posterior, colour-banded and labelled `L1, L2, L3, L4, L5, S1, S2, S3, S4, S5`.]
+
+---
+
+## printed p.165  (PDF p.176)  [neurology half]
+
+#### Investigations:
+
+##### ➤ Laboratory Investigations
+- ✓ It is recommended that no laboratory investigations be ordered for patients with uncomplicated
+  mechanical low back pain.
+- ✓ If there is suspicion about a systemic cause of low back pain such as inflammatory arthritis,
+  connective tissue disease, or infection, then CBC, ESR, and other markers may be appropriate.
+
+##### ➤ Imaging
+- ✓ No imaging is recommended for acute mechanical low back pain in the absence of red flags.
+- ✓ Keep in mind that imaging can be used to help confirm a clinical diagnosis, but cannot confirm
+  that a particular structure is the cause of a patient's pain.
+- ✓ In chronic low back pain, it may be appropriate to take AP and lateral lumbosacral x-rays.
+- ✓ If the pain radiates below the knees, an MRI may be indicated.
+
+#### Treatment
+
+##### ➤ Conservative treatment:
+- It is done for patients who present with low back pain and sciatica without any neurological
+  deficit.
+- It is usually applied for **4-6 weeks**.
+- It includes: Bed rest for **2-4 days** on hard board mattress, activity modification and avoid
+  lifting heavy weights, analgesics and NSAIDs, muscle relaxants, reduction of body weight, external
+  lumbar support, physical therapy.
+
+##### ➤ Surgical treatment:
+###### Indications:
+a) Relative indication in cases of failure of conservative measures.
+b) Absolute indication for surgery:
+   - Cauda equina syndrome.
+   - Progressive or persistent neurological motor deficit.
+   - Severe, unremitting, leg pain which is not relieved by conservative measures.
+   - The presence of visceral complaint.
+   - Pain not responding to medical therapy.
+
+[⚠️ SELF-CONTRADICTION WITHIN THE CHAPTER — bed rest.
+ printed 163: `Intermittent bed rest with movement for short periods in between` (no duration), and
+ `Rigid lumbar orthosis can shorten the duration or obviate the need for bed rest`.
+ printed 165 (here): `Bed rest for 2-4 days on hard board mattress`.
+ printed 158: `An important treatment goal … is for the patient to be active as soon as possible.`
+ Three statements on rest, one prescribing 2-4 days and one urging activity as soon as possible.
+ All three recorded; not reconciled.]
+
+[⚠️ The surgical-treatment section names NO procedure — the procedures for the lumbar spine are on
+printed 163 (`Chemonucleolysis`, `Percutaneous discectomy`). The lower quarter of printed 165 is
+blank.]
+
+---
+
+## printed p.166  (PDF p.177)  [neurology half]
+
+## Neck Pain And / Or Arm Pain (Brachialgia)
+[Section heading, rounded blue display face, underlined, centred. This is the chapter's SECOND HALF
+— everything from here to printed 172 is cervical.]
+
+They are very common clinical problems; **2 out of 3 people** experience neck pain at some point in
+life
+
+## Neurological Causes Of Neck Pain And Brachialgia
+[Underlined blue heading, left.]
+
+### 1. Cervical spondylosis
+[Numbered topic heading on a pale grey full-width band.]
+
+- It is **the most common cause**.
+- This is a degenerative disorder of the cervical spine which can compress the cord or nerve roots.
+- Patients often wake up in the morning with a painful stiff neck and diffuse non pulsatile headache
+  that resolves in a few hours.
+- The lesion is most commonly at **C5/6** and **C6/7**, and focal signs are likely to be at these
+  levels.
+- Wasting and weakness of the small muscles of the hands, particularly weakness of abduction of the
+  little finger, is also frequently seen.
+- Restricted neck movement is always present with significant cervical spondylosis.
+- Bladder dysfunction, or the finding of long-tract signs or symptoms, indicates spinal cord
+  compression.
+
+[FIGURE, right — no number, no caption. Two cervical spines side by side, headed `HEALTHY CERVICAL
+SPINE` and `CERVICAL SPINE WITH SPONDYLOSIS`, with call-outs `BULGING DISK`, `BONE SPURS`,
+`NARROWED DISK SPACE`.]
+
+[⚠️ `Cervical spondylosis` gets NO Definition/Investigation/Treatment sub-structure — it is a flat
+bullet list, unlike every other numbered topic in the chapter.]
+
+### 2. Cervical disc prolapse
+[Numbered topic heading on a pale grey full-width band.]
+
+#### Definition:
+Cervical disc prolapse occurs when the soft nucleus pulposus herniates through tear in the annulus
+fibrosus.
+
+#### Ɛpidemiology:
+The most commonly affected levels are **C5-C6** and **C6-C7** levels.
+Usually occurs in the middle age group from **30-50 Years**.
+
+#### Clinical picture:
+- If prolapse is posterolateral, it will cause nerve root compression i.e. **radiculopathy**.
+- If the prolapse is central it will cause cord compression i.e. **myelopathy**.
+- In case of both nerve root and cord compression, the result will be **radiculomyelopathy**.
+
+[Clinical picture continues onto printed 167.]
+
+---
+
+## printed p.167  (PDF p.178)  [neurology half]
+
+[⚠️ CONTINUATION — the cervical disc prolapse `Clinical picture` runs across the page break.]
+
+##### ➤ Symptoms:
+- Neck pain and stiffness.
+- Pain radiating down to the arm and hand is called **brachialgia** which is exacerbated by neck
+  motion (**extension**) and relieved by **arm abduction** (arm abduction test).
+- Paresthesia and numbness along the affected dermatome.
+- Motor weakness in long standing compression.
+- Sphincteric dysfunction in cases of myelopathy.
+
+##### ➤ Signs:
+###### a. Neck signs:
+- Loss of cervical lordosis.
+- Local tenderness.
+- Limitation of spinal movement.
+- Spasm of paravertebral muscle.
+
+###### b. Signs of radiculopathy:
+- Motor weakness in the group of muscles supplied by the compressed nerve root.
+- Sensory changes or dermatomal affection along the compressed nerve root.
+- Decreased reflexes according to the root affected.
+- The distribution of pain in the upper limb varies according to the nerve root affected.
+
+###### c. Signs of myelopathy:
+- Spastic quadriparesis.
+- Hyperreflexia below the level of compression.
+- Clumsiness and ataxic Gait disturbance.
+- Sphincteric disturbance.
+
+*[Centred, bold, over three lines:]* **The most common nerve root affected is C6 nerve root in
+C5-C6 disc herniation and C7 nerve root in C6-C7 disc herniation and to a lesser extent is C5 root
+in C4-C5 disc herniation.**
+
+### 3. Ulnar Ɛntrapment
+[Numbered topic heading on a pale grey full-width band; the Greek epsilon glyph is used for the E.]
+
+- Entrapment of the **ulnar** nerve in the **cubital tunnel** at the **elbow**.
+- Numbness and tingling and pain are referred to the **hypothenar eminence** and the **little and
+  ring fingers**.
+- Symptoms are often worse at **night** when the patient sleeps with a **flexed elbow**, and they
+  may interrupt sleep.
+- There is **decreased sensation** over the palmar aspect of the ring and little finger, and there
+  may be decreased sensation on the medial dorsal aspect of the hand and ulnar two fingers.
+- In severe cases, there is **wasting and weakness** of the small muscles of the hand which can lead
+  to **clawing** of the fourth and fifth digits.
+- **Diagnosis:** Nerve conduction studies and EMG.
+- **Treatment:** Avoiding prolonged elbow flexion. Surgical decompression.
+
+---
+
+## printed p.168  (PDF p.179)  [neurology half]
+
+[TWO FIGURES across the top — no numbers, no captions.]
+[Left: a hand and forearm with the ulnar territory shaded, labelled `Area innervated by Ulnar
+nerve`.]
+[Right: an arm with an inset magnifier at the elbow. Call-outs `Ulnar nerve`, `Cubital tunnel`,
+`Medial epicondyle`, `Osborne's ligament`, `Impingement of the ulnar nerve`.]
+
+## Non-Neurological Systemic Causes:
+[Underlined blue heading, left.]
+
+- **Fibromyalgia:**
+  - It is the most common cause of **generalized musculoskeletal pain** in women between the ages of
+    **20 and 55 years**.
+  - The pain may be initially localized to the neck and shoulders but can spread diffusely over the
+    body.
+  - Associated with **depression** and **fatigue** (**90%** of cases) and **sleep disorders**.
+  - The diagnostic criteria are widespread musculoskeletal pain and excess tenderness in at least
+    **11 of 18** predefined anatomic sites.
+- **Polymyalgia Rheumatica:** Patients over the age of **50**. Severe aching, pain, and tenderness
+  in the neck and shoulder girdle muscles. **Markedly elevated ESR**. Responds dramatically to small
+  doses of oral **steroid**.
+- **Tendonitis, Bursitis, and Arthritis:** Pain triggered by joint movement (Shoulder, elbow, wrist
+  or hand) suggests tendonitis, capsulitis, or an internal derangement of the joint.
+
+[FULL-WIDTH INFOGRAPHIC POSTER at the foot of the page — no figure number, no caption. Two titled
+halves flanking a central figure showing the cervical spine, brachial plexus and a body with tender
+points marked. Re-read at 300 dpi.]
+
+> | Half | Item | Text as printed |
+> |---|---|---|
+> | **Neurological & Structural Causes** | **Cervical Spondylosis** | The most common cause; a degenerative disorder compressing the spinal cord or nerve roots. |
+> | | **Cervical Disc Prolapse** | Herniation of the nucleus pulposus through the annulus fibrosus, typically at C5-C7. [vertebra labelled `C5`, `C6`, `C7`] |
+> | | **Ulnar Nerve Entrapment** | Compression at the cubital tunnel causing referred pain/numbness to the hypothenar eminence. |
+> | **Systemic & Musculoskeletal Causes** | **Fibromyalgia** | Most common generalized musculoskeletal pain in **wornen** [sic — verified at 300 dpi; the poster misprints "women"], diagnosed via 11 of 18 tender points. [clipboard glyph reads `☑ ——— / ☑ of / ☑ 18`, the "11" rendered as an illegible squiggle] |
+> | | **Polymyalgia Rheumatica** | Found in patients over 50; presents with severe neck aching and elevated ESR. [`Elevated ESR` on a blood-tube glyph] |
+> | | **Inflammatory Joint Disorders** | Includes tendonitis, bursitis, and arthritis, where pain is triggered specifically by joint movement. [banner beneath: `PAIN TRIGGERED BY MOVEMENT`] |
+
+[⚠️ The poster's `Cervical Disc Prolapse` says `typically at C5-C7`; the prose on printed 166 says
+`C5-C6 and C6-C7`. Compatible, but the poster's is the looser statement.]
+[⚠️ The poster renames `Tendonitis, Bursitis, and Arthritis` as `Inflammatory Joint Disorders` — a
+label that appears nowhere in the prose.]
+
+---
+
+## printed p.169  (PDF p.180)  [neurology half]
+
+### Localizing features of cervical root lesion
+[Centred serif heading in blue. Ruled table, pale-blue header row and pale-blue row-label column,
+handwriting-style face. NOTE the transposed orientation relative to the lumbar table on printed 164
+— here the roots are the COLUMNS and the modalities are the ROWS. The corner cell is empty.]
+
+| | C5 | C6 | C7 | C8 |
+|---|---|---|---|---|
+| **Sensory** | Lateral arm | Thumb | Middle Finger | Little Finger |
+| **Motor** | Deltoid | Wrist extensors | Triceps | Finger flexion |
+| **Disc** | C4-C5 | C5-C6 | C6-C7 | C7-T1 |
+| **Reflex** | Biceps | Brachioradialis | Triceps | Hand Muscles |
+
+[⚠️ The cervical table has NO `T1` column, although the figure directly beneath it teaches T1.]
+
+[FIGURE — no number. Two panels captioned above the drawings: **Upper Extremity Dermatome Posterior
+View** and **Upper Extremity Dermatome Anterior View**. Colour-banded arm and chest, labelled
+`C3, C4, C5, C6, C7, C8, T1`.]
+
+[FIGURE — no number, no caption. A boxed five-row panel, each row a root with `Sensation` and
+`Motor` columns and a one-line caption beneath. Transcribed row by row:]
+
+> | Root | Sensation panel | Motor panel labels | Caption as printed |
+> |---|---|---|---|
+> | **C5** | forearm/arm band shaded | `Deltoid`, `Biceps` | C5 innervates the deltoid and biceps and gives sensation to the dermatome over the deltoid. |
+> | **C6** | lateral forearm and hand shaded | `Biceps`, `Wrist extensors: extensor carpi radialis longus and brevis` | C6 innervates the dermatome over the lateral forearm and hand and innervates the wrist extensors. |
+> | **C7** | middle-finger strip shaded | `Triceps`, `Wrist flexors`, `Finger extensors` | C7 innervates the small dermatome over the middle finger plus the triceps, wrist flexors and finger extensors. |
+> | **C8** | medial hand and forearm shaded | `Finger flexors` | C8 supplies the dermatome of the medial hand and forearm plus the finger flexors. |
+> | **T1** | medial upper arm shaded | `Interossei muscles` | T1 supplies the intrinsic muscles of the hand, the interossei, and the dermatome on the medial upper arm. |
+
+---
+
+## printed p.170  (PDF p.181)  [neurology half]
+
+#### Specific Tests:
+
+[⚠️ TABLE SPANNING A PAGE BREAK — this two-column test table BEGINS on printed 170 and CONTINUES to
+printed 171. Twelve tests in all: eight here, four on the next page. Rendering either page alone
+gives two-thirds or one-third of the table. The header cells are pale-blue bands with blue bold
+titles; each cell is a bullet list, several with a photograph or line drawing.]
+
+| Test | Content as printed |
+|---|---|
+| **Adsons test-patient** | • For **Cervical rib** <br> • Patient takes a deep breath and turns his head toward the side of the lesion; watch **for radial pulse obliteration** or decrease <br> [Photograph: a clinician standing behind a seated man, one hand on the wrist, the patient's head turned and chin up.] |
+| **Lateral stretch test** | • For **Radiculopathy** <br> • Stretching of the neck in the opposite direction will elicit pain along the nerve root distribution |
+| **Lhermitte's test** | • For **Myelopathy** (spinal canal stenosis, multiple sclerosis, cervical disk impingement, or tumor). <br> • **Electric shock sensation** which occurs with **neck flexion** and often radiates down the spine. |
+| **Rust's sign** | • **For a severe sprain or subluxation.** <br> • Patient holding the weight of his or her head in the hands or lifting the head manually when arising from lying down are positive signs. <br> [Photograph: a woman supporting her own head with both hands.] |
+| **Ankle clonus** | • May indicate **UMN lesion.** <br> • Quickly dorsiflex the foot while cradling the heel in your palm to relieve the load. |
+| **Bakody sign** | • Indicates **cervical radiculopathy (typically C4 – C6).** <br> • Patient **raises his or her hand** on top of the head. <br> • A positive result, indicated by a reduction or elimination of radicular pain, suggests nerve root compression. <br> [Line drawing: a man with one hand resting on the crown of his head.] |
+| **Compression** | • Indicates nerve root tension/ radiculopathy. <br> • With the patient seated, press downward on top of the skull. |
+| **Distraction** | • Indicates nerve root tension/ radiculopathy. <br> • Pull upward on skull. |
+
+[⚠️ `Ankle clonus` is a LOWER-limb / long-tract sign and sits inside a cervical `Specific Tests`
+table with no explanation of why. Recorded as printed.]
+
+---
+
+## printed p.171  (PDF p.182)  [neurology half]
+
+[⚠️ CONTINUATION of the `Specific Tests` table begun on printed 170 — same two-column ruled layout,
+no repeated section heading.]
+
+| Test | Content as printed |
+|---|---|
+| **Doorbell sign** | • Indicates nerve root tension/ radiculopathy. <br> • Deep palpation of **C5**. |
+| **Halstead maneuver** | • For **Neurovascular compression.** <br> • In a seated patient, palpate a radial pulse, and then pull traction on the patient's arm downward while the patient extends the head backward. <br> [Photograph: a clinician in a suit applying downward arm traction to a seated bare-chested patient whose head is extended.] |
+| **Hoffmann's sign** | • **Myelopathic sign.** <br> • Flick the patient's DIP joint of the long finger. <br> [Two line drawings, captioned inside the image: `Flip the terminal phalanx of the middle finger` and `Observe for reflex flexion of IPJ of index finger and thumb`.] |
+| **Jackson's compression** | • **Nerve compression.** <br> • Patient is seated and bends the head obliquely backward; then apply downward pressure on patient's head. <br> [Line drawing: a clinician pressing down on the head of a seated patient whose neck is extended obliquely.] |
+
+[⚠️ The Hoffmann's caption prints `Flip` in the drawing and `Flick` in the bullet — both recorded.]
+
+#### Investigations for neck pain:
+- ✓ **Laboratory test:** CBC, ESR, Hb, CRP, RA & MT.
+- ✓ **Radiological & Imaginary test:** [sic — `Imaginary`, evidently for `Imaging`]
+  - **Plain x-ray of C/S** (cervical spine): Loss of normal cervical lordosis, Narrowing of the disc
+    space, Osteophytes, Cervical subluxation.
+  - **AP view:** Evaluate the lateral masses, equal separation of spinous processes, best view for
+    vertical compression fractures, equal disk spaces.
+  - **Lateral view:** Each cervical vertebra, cartilaginous disk space, cervical lordotic curve, C2
+    neural arch, lamina, spinous process, lateral mass and articular facet.
+  - **Swimmer's view:** If the body of C7 not well visualized on lateral view.
+  - **Odontoid view:** Visualize dens.
+- ✓ **MRI of Cervical spine: The best diagnostic technique.**
+- ✓ **CT cervical spine:** CAT scan. More useful for **bony details**, to detect osteophytes, to
+  detect congenital cervical stenosis and to diagnose **OPLL** (ossified posterior longitudinal
+  ligament).
+
+[⚠️ `RA & MT` are abbreviations the chapter never expands. Recorded as printed; not decoded here.]
+[⚠️ SELF-CONTRADICTION ACROSS THE TWO HALVES OF THE CHAPTER — best imaging modality.
+ printed 162 (lumbar): `MRI: STUDY OF CHOICE for recurrence following discectomy…` — MRI's primacy
+ is scoped to post-discectomy recurrence, and `Radiography` is listed first.
+ printed 171 (cervical, here): `MRI of Cervical spine: The best diagnostic technique.` — unscoped.
+ Both recorded.]
+
+---
+
+## printed p.172  (PDF p.183)  [neurology half]
+
+#### Treatment of Neck Pain According to Onset:
+
+Treatment of neck pain mainly depend on etiology & onset of condition. Main treatment is to treat
+underlying causative factors. Sometime emergency first aid is necessary for traumatic neck pain.
+
+- **Acute neck pain**
+  - Acute pain occurs suddenly from an injury or stress.
+  - Most of the time neck pain will resolve itself within **7-10 days** with rest, ice, and over the
+    counter pain relievers.
+  - For symptoms that persist longer than a few weeks. **Conservative therapy** can include
+    anti-inflammatory pain medication, injections, physical therapy, acupuncture, and chiropractic
+    care.
+- **Chronic neck pain**
+  - Chronic pain is defined as neck pain lasting longer than **3 months**.
+  - People who have not found relief through conservative treatments and suffer from chronic pain
+    may benefit from pain management by Physical therapy or surgical intervention.
+
+#### Management Modalities:
+- **Conservative treatment**
+  - **Rest** is important for all acute neck pain with others remedy. Duration of rest depend on
+    patient prognosis & causative factors. Rest with proper positioning of neck that is seen by
+    therapist or physician. Avoidance of heavy lifting.
+  - Analgesic, Anti-inflammatory, Injections.
+  - **Physical therapy:**
+    - Ice in acute stage or cryotherapy followed by moist heat, contrast therapy & hot compression.
+    - Exercise therapy: Neck muscle strengthening exercise. Neck mobilizing exercise. Neck
+      Manipulation technique. Cervical traction approach.
+    - Orthotics device: Cervical collar, Halter collar, Hallo [sic — for `Halo`] cervical traction,
+      Contour types of pillows.
+- **Activities for daily living for correction of life (ADL):** Regular exercise. Proper lying,
+  sitting & working. Maintain proper body alignment. Maintain appropriate **Ergonomics**.
+- **Surgery Indications:**
+  - **Brachialgia** not responding to medical treatment.
+  - Progressive **neurological deficit** due to root compression.
+  - Manifestations of **cord compression** i.e., myelopathy.
+  - ➤ **Procedures:**
+    - **Discectomy** (with or without fusion): The surgeon removes herniated disc material that is
+      pressing on a nerve root or the spinal cord.
+    - **Cervical spinal fusion:** Selected bones in the neck are joined (fused) together.
+    - **Spinal Decompression:** Pressure is reduced on the spinal cord or spinal nerve roots by
+      removing part of a bone or disc.
+    - Artificial disc replacement.
+    - Percutaneous radiofrequency neurotomy.
+  - ➤ **Post-Operative Physiotherapy**
+
+[⚠️ `Post-Operative Physiotherapy` is a HEADING WITH NO BODY — the last line of the chapter. Nothing
+follows it; the page ends there.]
+[⚠️ `pain management` is named twice (printed 172, `Chronic neck pain`) and never taught.]
+
+---
+
+# END OF CHAPTER 16. PDF 184 = printed 173 = CHAPTER 17 opener,
+# "CLINICAL APPROACH TO 'ATAXIA'". Boundary held. Sixteen printed pages exactly, as mapped.
+
+## Reader's notes on this chapter (not book text)
+
+### 1. ⚠️ PAIN TAXONOMY — VERIFIED ABSENT
+
+All sixteen pages were read. **The chapter contains no classification of pain of any kind.** Terms
+searched for and NOT found: nociceptive, neuropathic (as a class; `radiculopathy`/`neuropathy` occur
+only as diagnoses), psychogenic, somatic, visceral, inflammatory pain, central sensitisation,
+acute-vs-chronic *as a mechanism* (acute/chronic are used only as durations), WHO analgesic ladder,
+pain pathway, nociceptor, gate control.
+
+**Consequence for `npqb-nr-125`** ("Migraine is best classified as which of the following?", printed
+key `Nociceptive`): **the answer is not in this chapter, and it is not in the headache chapter
+either** (Neuro ch.9, cached at `content\neuro\book\neuro-ch09-headache.txt`, read in full and
+likewise carrying no taxonomy). Two chapters, twenty-six printed pages, and the book teaches no pain
+taxonomy in either. On present evidence the fact must be **supplied from outside the material and
+tagged**, per the standing Herophilus gap rule. What the contents page's QR labels call
+`Pain and pain management` is a video; nothing printed corresponds to it.
+
+### 2. ⚠️ TITLE — the contents page is wrong, the chapter is right
+
+| Where | What it prints |
+|---|---|
+| Contents page (PDF p.9) | `Cranial and Low Back pain` |
+| **Chapter opener, printed 157** | **`CLINICAL APPROACH TO "CERVICAL AND LOW BACK PAIN"`** |
+| **Running header, printed 158-172 (15 pages)** | **`cervical and low back pain`** |
+| Contents QR labels | `Neck and Back Pain`, `Pain and pain management` |
+
+The chapter's own two independent instruments (opener and running head) agree on **Cervical**, and
+the chapter's content is exactly half cervical (printed 166-172) and half lumbar (157-165). The
+app's `Cervical and low back pain` matches the book. **`book-map.md` needs correcting on this point
+— see §8 below.**
+
+### 3. Headings with no body, or with a picture for a body
+
+| Printed | Heading | What is actually under it |
+|---|---|---|
+| 158 | `Management of acute LBP` | one clause — "In the absence of Red Flags, treatment is conservative." |
+| 161 | `Clinical Ɛxamination:` | a picture only (the SLR illustration). No prose. |
+| 163 | `Rehabilitation` | two words — "Therapeutic Exercises." |
+| 172 | `Post-Operative Physiotherapy` | **nothing.** Last line of the chapter. |
+
+None of these defers to another chapter the way psych ch.11's `Antipsychotics` does — they are thin,
+not redirected.
+
+### 4. Named and never taught
+
+- **Yellow flags** (printed 158) — defined by category, never listed. The red flags get a box AND a
+  poster; the yellow flags get one parenthesis.
+- **Infectious discitis** and **Infectious sacroiliitis** (printed 162) — DD bullets with no text.
+- **`Psuedosciatic syndromes`** (printed 162) — one example (`periarthritis of the hip`), no list.
+- **`RA & MT`** (printed 171) — abbreviations never expanded.
+- **`LUCHERINI'S technique`** (printed 163) — named, not described beyond "intrathecal injection of
+  steroids".
+- **`Chemonucleolysis`**, **`Percutaneous discectomy`** (printed 163) — named, not described.
+- **`pain management`** (printed 172) — named twice as a referral destination, never taught.
+
+### 5. Self-contradictions inside the chapter — recorded, not reconciled
+
+| Topic | Statement A | Statement B |
+|---|---|---|
+| **L5 pain topography** | printed 161: `L5: buttock, ANTERIOR aspect of thigh, lateral malleolus, dorsum of foot, great toe or the medial 3 toes` | printed 164 table: `L5 | Pain: BACK OF LEG, lateral lower leg, dorsum foot to great toe` — and the table assigns the anterior thigh to L3 |
+| **Bed rest** | printed 163: `Intermittent bed rest`, duration unstated; orthosis "can … obviate the need for bed rest" | printed 165: `Bed rest for 2-4 days on hard board mattress` — while printed 158 urges "active as soon as possible" |
+| **Best imaging** | printed 162 (lumbar): MRI is `STUDY OF CHOICE` **for recurrence following discectomy** | printed 171 (cervical): `MRI of Cervical spine: The best diagnostic technique` — unscoped |
+| **Cervical disc level** | printed 166 prose: `C5-C6 and C6-C7` | printed 168 poster: `typically at C5-C7` |
+
+### 6. Misspellings and oddities, flagged `[sic]` in place
+
+`positior` (printed 161 figure label) · `Paralytic Sciatic` for *Sciatica* (161) · `Psuedosciatic`
+(162) · `planter flexors` for *plantar* (163) · `Imaginary test` for *Imaging* (171) · `Hallo
+cervical traction` for *Halo* (172) · `wornen` for *women* (168 poster, verified at 300 dpi) ·
+`Flip`/`Flick` inconsistency in Hoffmann's sign (171). The Greek epsilon glyph `Ɛ` is used
+systematically for word-initial E in the blue display headings (`Ɛtiology`, `Ɛpidemiology`,
+`Ɛxamination`, `Ɛntrapment`, `Ɛxt. hall. Longus`) — a font quirk, not an error, but it defeats a
+naive grep for `Etiology`.
+
+### 7. Markers, ratings, figure numbers
+
+- **No `(Tutorial)` / `(T)` marker on any of the sixteen pages.** (Running total for this book:
+  none found in 65 of 292 pages.)
+- **No star-glyph importance rating.**
+- **No figure numbering.** Sixteen figures/posters, not one numbered or given a `Figure N` caption.
+  Three carry italic blue captions *below* the image (`Lower limb dermatomes`), a few carry titles
+  *inside* the image; the rest are bare.
+- **No Arabic marginal gloss on any page of this chapter.**
+- **No `Note` box** (the pale-blue lightbulb device) anywhere in this chapter. The one boxed device
+  is the dusty-red dashed `Red Flags` box on printed 157 — a form not previously recorded for this
+  book.
+- **Nothing illegible.** Two objects were re-rendered at 300 dpi (the printed-164 root table, to
+  confirm the two empty Reflex cells are genuinely empty, and the printed-168 poster, to confirm
+  `wornen`); everything else resolved at 150 dpi.
+
+### 8. ⚠️ Contradictions with `content\neuro\book-map.md`
+
+1. **The chapter title.** The map's neurology table row 16 prints `Cranial and Low Back pain` and
+   its mapping section says "the book says **Cranial** and Low Back pain; the app says **Cervical**
+   … the book's title may be a typo. **Recorded, not corrected.**" — **Now settled by evidence: the
+   book's CHAPTER says Cervical, on the opener and on all fifteen running heads. Only the CONTENTS
+   PAGE says Cranial.** The map's `Opener prints instead` cell for this row reads `not checked`; it
+   should read `CLINICAL APPROACH TO "CERVICAL AND LOW BACK PAIN"`.
+2. **Boxed devices.** The map states the `Note` box (pale-blue, lightbulb) is "the book's one
+   recurring boxed device in the sample". This chapter uses a **different** box — rounded, dashed
+   dusty-red border, coloured heading — and uses no `Note` box at all. The map's line is a 26-page
+   observation and is not wrong, but the inventory is now larger.
+3. Everything else in the map held: the +11 offset, the 157-172 range, the 16-page length, the
+   ch.17 boundary, the navy/pale-blue opener style, the rounded-blue running header top right, the
+   page number bottom right over a grey bar, no OBJECTIVES block, no figure numbering, no tutorial
+   marker, no star rating, no QR in the body.

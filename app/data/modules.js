@@ -187,7 +187,31 @@ const MODULES = [
       ['nr-cns','CNS infections'],
       ['nr-cranial','Cranial nerves disorders'],['nr-delirium','Delirium and Coma'],
       ['nr-headache','Headache'],['nr-stroke','Cerebrovascular stroke'],
-      ['nr-backpain','Cervical and low back pain'],
+      /* Split 2026-08-23, FORECAST BEFORE WRITING — the third in the module.
+         Book Neurology ch.16 is 6,322 body words over SIXTEEN printed pages
+         (157-172), the longest book chapter this module has drawn on, and the
+         deck adds 1,742. 8,064 source words forecast well past 20 pp against a
+         <=13 hard shape; no trim reaches that.
+         The seam is REGIONAL and it is the book's own: printed 157-165 is low
+         back and sciatica, printed 166-172 is neck and brachialgia — and the
+         cervical end-matter (specific tests, `Investigations for neck pain`,
+         `Treatment of Neck Pain`) is cervical throughout, so nothing general
+         has to be divided.
+           nr-backpain  book 157-165 (3,489 w) + the deck's back-pain blocks
+           nr-neckpain  book 166-172 (2,833 w) + the deck's neck block
+         ⚠ THE DECK INTERLEAVES AND THE BOOK DOES NOT: L11 runs back pain ->
+         neck -> low back, so each new chapter draws two non-contiguous deck
+         blocks. That is allowed here because nothing is REORDERED WITHIN a
+         chapter — the ophthalmology rule rejects a seam that would reorder an
+         already-written chapter, and these are written fresh. Recorded so the
+         choice is visible rather than silent.
+         ⚠ The app's title was right and the book's contents page is wrong: the
+         ch.16 opener and all 15 interior running heads print `cervical and low
+         back pain`, and the contents page's `Cranial and Low Back pain` is a
+         typo. Neither is corrected; the titles below follow the chapter.
+         Neither half has a question, so nothing moves. SCHEDULE untouched. */
+      ['nr-backpain','Low back pain and sciatica'],
+      ['nr-neckpain','Neck pain and brachialgia'],
       /* Split 2026-08-18, AFTER printing 14 pp — past the 13-page hard shape.
          The chapter's own title named three topics, and the seam falls exactly
          between the first and the other two, at hem-6/hem-7: 1,635 words of

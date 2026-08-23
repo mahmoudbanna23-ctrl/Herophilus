@@ -329,3 +329,12 @@ Each block survives in MEMORY.md as a shorter entry pointing here.
 - **⚠️ The end-of-ENT "outside knowledge" list is about half wrong** — re-grep item by item (8 of 13
   were printed all along); 67 entries record no provenance, roster in `ledger.md` §11. **Bank
   structure and the crop rule: `progress\memory-archive.md`.**
+
+### Register-row auditing, moved out of MEMORY.md 2026-08-23, verbatim
+
+- **⚠️⚠️ VERIFY EVERY REGISTER ROW'S *SECOND CLAUSE* BEFORE BRIEFING** — `op-ret` was named in twelve
+  rows from six donors and **five were wrong**. **TEN fault shapes: `progress\memory-archive.md`.**
+  **⚠️ A RESOLVED CROSS-REFERENCE PROVES NOTHING — measure the destination** (ch.17 → ch.16 for
+  retinoblastoma is **92 words**), and **⚠️ it may resolve to the WRONG section. Check the target.**
+- **⚠️⚠️ AUDIT "row filed" CLAIMS — FOUR WERE FALSE** (`uv-1`/`uv-8`/`uv-9`/`scl-1`). **And a row's
+  evidence has a TIMESTAMP** — `vis-11` quoted a zero-returns claim that now returns 9. **Re-grep.**
