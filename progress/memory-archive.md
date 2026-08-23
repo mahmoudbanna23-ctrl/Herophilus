@@ -290,3 +290,12 @@ Each block survives in MEMORY.md as a shorter entry pointing here.
   every crop is individually looked at — the dominant cost, larger than the transcription.**
   ⚠️ **56 House questions are STAGED AND UNMERGED** (validated, 0 folds, all net new); House's **132
   model-exam items are SHORT-ANSWER → the `type:'case'` route.** Arithmetic and method: `ledger.md`.
+
+## Moved out of MEMORY.md 2026-08-23 (ps-anxiety), verbatim
+
+### Reconstruction checks — the orphan-word fallacy
+
+- **⚠️⚠️ "NO ORPHAN WORDS" IS NOT A VALID CHECK** — it proves every word landed SOMEWHERE, never in
+  the right sentence. **Never accept a reconstruction on word conservation; render the page.**
+  `pdftotext -raw` recovers slides whose text streams together. **Text-sufficient is a claim about
+  PROSE, never about tables or columns.**

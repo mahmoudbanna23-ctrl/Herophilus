@@ -144,7 +144,19 @@ There is no `L7` in the psychiatry series and none in the neurology series. Per 
 
 ---
 
-## 3. ⚠️⚠️ SIX CHAPTERS WERE MATERIALLY UNSOURCED — FIVE STILL ARE (verified by grep, not assumed)
+## 3. ⚠️⚠️ SIX CHAPTERS WERE MATERIALLY UNSOURCED — **THREE STILL ARE** (verified by grep, not assumed)
+
+⚠️ **Three have closed, and each closed a different way — the pattern is worth carrying.**
+`ps-pharm` (2026-08-18) — **the source was misread**, a picture deck taken for a thin one.
+`nr-headache` (2026-08-19) — **the book paid in full**, ten self-contained pages, and the chapter
+printed at 10 pp. `ps-anxiety` (2026-08-23) — ⚠️⚠️ **the grep HIT and the hits were DISMISSED.**
+The row below reads *`panic` and `phobia` appear as symptom lists inside symptomatology* — those
+hits were `L4,5`'s anxiety block, misread from the match line without opening the slides. The
+phrase the row searched for, `generalized anxiety`, is one the deck never writes: it writes **GAD**.
+⚠️ **Two of the three were reading failures, not material failures** — and the second is the
+standing *read the slide before declaring a gap* rule failing in its subtlest form: **a hit
+explained away is more dangerous than a miss, because it looks like evidence.** Still open:
+`nr-delirium` (coma), `ps-geri`, `ps-osce`.
 
 Each of these was checked **against all 25 caches** on 2026-08-18. The standing rule is *read the
 slide before declaring a gap — paid 13 times* — so each line below names the search that was run.
@@ -154,7 +166,7 @@ slide before declaring a gap — paid 13 times* — so each line below names the
 | **`nr-headache`** | **22** | **`"tension type"` returns ZERO across all 25 decks.** `headache` appears only as a *symptom mention* inside Stroke, Cervical pain, symptomatology, Cranial nerves and CNS infection; `migraine` likewise scattered. **There is no headache lecture.** This is the module's worst mismatch: **22 questions, no source** — the `op-va` shape, and worse |
 | **`nr-delirium`** | 0 | Titled *"Delirium and Coma"*. **`Glasgow` and `GCS` both return ZERO module-wide**, and `brain death` returns zero. `coma` appears as a passing mention in four decks. L13 supplies delirium; **coma has no source at all** |
 | **`ps-geri`** | 0 | **`geriatric` returns ZERO across all 25 decks.** L13 is *Dementia and Delirium* and supplies dementia only; `elderly` appears in four decks as passing mentions |
-| **`ps-anxiety`** | 0 | No deck. `generalized anxiety` appears **only in the 239-word broken `L17` stub**; `panic` and `phobia` appear as symptom lists inside symptomatology and myths |
+| ~~**`ps-anxiety`**~~ | 0 | ✅ **CLOSED 2026-08-23 — and the "no deck" verdict was WRONG.** The **back half of `L4,5`** is an anxiety block, deferred here by `ps-symptom`'s `sy-10`; the grep above missed it because it searched for `generalized anxiety`, which the deck never writes. ⚠️ **But the deck half measures only 233 words** — book Psych ch.3 carries the chapter. **A deck existing and a deck being a source are different claims** |
 | **`ps-osce`** | 0 | **`OSCE` returns ZERO across all 25 decks.** Shares `L1,2) Psychiatric sheet` (17 pp, 409 w) with `ps-interview` at best |
 | ~~**`ps-pharm`**~~ | 0 | ✅ **CLOSED 2026-08-18** — the deck was a picture deck, not a thin one; cache 239 → **3,358 w**. ⚠️ **But it prints NO DOSE for any drug and names NO antidepressant**, so the chapter still leans hard on the §4 fill-and-tag rule |
 
@@ -191,7 +203,18 @@ Four chapters are printed now, and they do **not** share one rate:
 | **`nr-headache`** | **2,811** | **10 pp** | **281** | ⚠️ **table-heavy — six tables, one of them 14 rows × 4 columns** |
 | **`nr-cranial`** | **3,823** | **12 pp** | **319** | table-heavy, but long prose blocks between the tables |
 
-**The observed spread is 281–337 w/pp. Plan everything at ÷280 and clear it by printing.** ÷280
+⚠️ **The spread has since WIDENED at both ends — 281 to 343 w/pp**, the top set by `ps-anxiety`
+(3,772 w / **11 pp**) on 2026-08-23. Its ÷280 forecast was **13.5 pp against a printed 11**. The
+rate does **not** track table count the way the four rows below suggested. ⚠️⚠️ **`ps-anxiety`
+carries THIRTEEN TABLES over 91 table lines — the most table-dense chapter in the module — and
+printed at the HIGHEST w/pp in it.** That is a direct counterexample to *a table costs more paper
+per word*, which predicted the opposite. **Hypothesis, not a rule** *(mine, unproven)*: the paper
+cost tracks **cell WIDTH**, not table count — `nr-headache`'s slow table was **14 rows × 4 narrow
+columns**, where most of `ps-anxiety`'s are **2 columns with long wrapping cells**, which pack more
+words per printed line than prose does. **Until that is tested, treat the divisor as a planning
+figure with a ±3-page error bar and clear every chapter by printing it.**
+
+**The original observed spread was 281–337 w/pp. Plan everything at ÷280 and clear it by printing.** ÷280
 forecast `nr-cranial` at 13.6 pp against a printed **12** — an OVER-prediction, which is the safe
 direction and the whole reason that divisor was chosen. Under-predicting is the failure that
 matters, because it accepts a chapter that prints too long. `nr-headache` printed at **11 pp on
@@ -220,7 +243,7 @@ page. Look for a second copy before looking for something to cut.
 | ✅ `nr-lmn` | 3,573 (L5 2,048 + L6 1,525) | **printed 17 pp WHOLE** | ✅✅ **WRITTEN AND SPLIT 2026-08-22.** Written whole against both decks, spliced, printed — **17 pp, four past the hard shape** — then split on the **deck boundary**, which was contiguous and needed no reordering. **`nr-lmn` (L5, muscle + NMJ): 10 sections, 3,481 w, printed 12 pp**, keeps `npqb-nr-118`. **`nr-nerve` (L6, peripheral nerve): 5 sections, 2,134 w, printed 8 pp**, zero questions. ⚠️ **This REVERSED the original `nr-lmn1`+`nr-lmn2` merge** — the merge rule joins one topic taught over two lectures, and these are two topics. ⚠️ **The ÷335 row above forecast 10.7 pp against a printed 17** — its worst miss in this module, and the reason ÷280 is the planning divisor |
 | ✅ `nr-headache` | 3,647 (book ch.9) | **printed 10 pp** | ✅ **WRITTEN 2026-08-19** — whole, 11 sections, 2,811 w, all 22 questions linked |
 | ✅ `ps-ocd` | deck 2,322 + book pp. 197-199 | **printed 14 pp WHOLE** | ✅✅ **WRITTEN AND SPLIT 2026-08-22.** ⚠️ **Two second copies were trimmed FIRST and it was not enough** — a consolidated *which-source-has-what* table and a restatement of PTSD prevalence recovered **82 words of paper**, leaving **50 words on page 14** with **nothing left that was duplication**. Split on the deck's own **`PART ONE` / `PART TWO`** seam: **`ps-ocd`** (OCD, 10 sections, 3,139 w, **printed 10 pp**, keeps `npqb-ps-7`) and new **`ps-ptsd`** (PTSD + ASD, 4 sections, 1,850 w, **printed 6 pp**, 0 q). ⚠️ **The first split of a SINGLE deck** — §4 joins one TOPIC over two lectures and says nothing about two disorders in one lecture. **Measured rate 306 w/pp** |
-| `ps-anxiety` | 3,376 (book ch.3, **shared**) | — | ⚠️ **The inverse problem is now HALF-RESOLVED.** `ps-ocd` was written first and **declares in `oc-10` exactly what it leaves here**: printed **193-196 and 200-201** entire, minus **three named lines** (4-12 weeks for OCD, the 12-month minimum, clomipramine-for-OCD). `ps-ptsd`'s `pt-4` **lifts nothing** from the spine. ⚠️ **AND IT HAS A DECK** — the back half of `L4,5`, per `sy-10` |
+| ✅ `ps-anxiety` | **1,986** (book share 1,753 + deck 233) | **printed 11 pp** | ✅ **WRITTEN 2026-08-23 — whole, no split.** 10 sections, **3,799 w**, 0 q. ⚠️ **THE WORST INFLATION YET MEASURED: 4,012 words FIRST DRAFT = 202 % of source** (`nr-movement` was 163 %). **240 words of my own connective prose were cut before printing** — including one **untagged outside-knowledge claim** (dating the three-way split to DSM-5 2013, which the book never says) and one **consolidated second copy** (a divergence block restating four findings already stated where they are used — the `nr-headache` shape). **No sourced fact was cut.** ⚠️ **Measured 343 w/pp — a NEW MODULE HIGH**, and ÷280 forecast 13.5 pp against a printed **11**, an over-prediction of **2.5**. ⚠️ **The two read-first pointers both paid**: `oc-10` gave the spine accounting, `sy-10` gave a deck the plan denied |
 | `nr-ms` · `ps-psychosis` · `ps-symptom` | 2,251–2,441 | 6.7–7.3 pp | inside the ceiling. ⚠️ **`ps-ocd` was in this row and printed 14 pp** — a deck word count is not a page count when a second source is added |
 | everything else | 1,257–1,924 | 3.8–5.7 pp | single chapters |
 
@@ -241,11 +264,13 @@ the book mapper as a split candidate on precedent. **Not decided — read before
 2. ✅ **Book map** — `content\neuro\book-map.md`, done 2026-08-18.
 3. ✅ **`L17` visual read** — cache 239 → 3,358 w, done 2026-08-18. `ps-pharm` is unblocked on the
    deck but still **partial** on antipsychotics — see the dead-heading finding below.
-4. ✅ **Written — 15 of 31** *(measured from disk 2026-08-23)*: `nr-stroke` · `nr-hemi` ·
+4. ✅ **Written — 16 of 31** *(measured from disk 2026-08-23)*: `nr-stroke` · `nr-hemi` ·
    `nr-para` · `nr-headache` · `nr-cranial` · `ps-symptom` · `ps-psychoed` · `nr-ms` · `ps-mood` ·
-   `nr-lmn` · `nr-nerve` · `ps-ocd` · `ps-ptsd` · **`nr-movement`** · **`nr-epilepsy`**.
-   **138 sections, 40,333 body words. 130 of the module's 151 questions reachable.**
-   **16 chapters holding 21 questions remain — and `nr-intro` holds ALL 21.**
+   `nr-lmn` · `nr-nerve` · `ps-ocd` · `ps-ptsd` · `nr-movement` · `nr-epilepsy` · **`ps-anxiety`**.
+   **148 sections, 44,105 body words. 130 of the module's 151 questions reachable.**
+   **15 chapters holding 21 questions remain — and `nr-intro` holds ALL 21.**
+   ✅ **Book Psychiatry ch.3 is now FULLY SPENT** across `ps-ocd`, `ps-ptsd` and `ps-anxiety`;
+   the page-by-page accounting is in `ps-anxiety`'s **`ax-10`**.
 5. ⚠⚠ **`nr-intro` (21 q) IS THE NEXT ONE AND IT IS BLOCKED — IT NEEDS A USER DECISION.**
    It holds **21 of the 23 questions left — all but two.** **12 of 23 fact probes return ZERO
    against its deck** (gracile/cuneate, triceps, abdominal reflex, hemianopia, optic radiation,

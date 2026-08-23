@@ -5,14 +5,14 @@ Running record, organised around *resuming*. ISO dates; unverified marked as suc
 story, count and verbatim ruling) in `progress\memory-archive.md`** — read the relevant block
 there before resuming a paused stream. Where this file and the archive disagree, this file wins.
 
-## Resume here — **NEUROPSYCHIATRY THEORY, the last module: 15 of 31 written. ⚠️ `nr-intro` NOW HOLDS ALL 21 REMAINING QUESTIONS; the other 15 chapters carry ZERO.** ENT · Peds · Ophtho theory DONE. Banks PAUSED.
+## Resume here — **NEUROPSYCHIATRY THEORY, the last module: 16 of 31 written. ⚠️ `nr-intro` HOLDS ALL 21 REMAINING QUESTIONS; the other 14 chapters carry ZERO.** ENT · Peds · Ophtho theory DONE. Banks PAUSED.
 
 - **⚠️⚠️ `content\neuro\theory-plan.md` IS THE MODULE'S WORKING FILE — READ IT FIRST**, with
   `content\neuro\book-map.md`. Deck audit, unsourced chapters, page rates, order of work, every
   split's arithmetic — everything kept out of this 200-line file.
 - ✅ **Written: `nr-stroke` 10 pp · `nr-hemi` 10 · `nr-para` 10 · `nr-headache` 10 · `nr-cranial` 12
   (whole; seam in the plan) · `ps-symptom` 8 · `ps-psychoed` · `nr-ms` · `ps-mood` · `nr-lmn` 12 ·
-  `nr-nerve` 8 · `ps-ocd` 10 · `ps-ptsd` 6 · `nr-movement` 13 · `nr-epilepsy` 12.**
+  `nr-nerve` 8 · `ps-ocd` 10 · `ps-ptsd` 6 · `nr-movement` 13 · `nr-epilepsy` 12 · `ps-anxiety` 11.**
 - **⚠️⚠️ THREE SPLITS ON 2026-08-22/23 — the module went 29 → 31 chapters.** Arithmetic and seams
   in the plan §4. **`nr-lmn`/`nr-nerve`** (deck boundary; **reverses the `nr-lmn1`+`nr-lmn2`
   merge**) · **`ps-ocd`/`ps-ptsd`** (⚠️ **a SINGLE deck**, which §4 permits — it joins one TOPIC
@@ -20,31 +20,38 @@ there before resuming a paused stream. Where this file and the archive disagree,
   split BEFORE writing**). **`SCHEDULE` untouched every time**; each pair's question stays put.
 - **⚠️⚠️ TRIM FIRST, BUT KNOW WHEN TO STOP.** `ps-ocd` had **132 words on page 14**; two second
   copies recovered **82 words of paper**, leaving **50** and nothing left that was duplication — so
-  it split. ⚠️ **A prose block costs less paper than the same facts as a table.**
-- **⚠️⚠️ A SOURCE WORD COUNT UNDER-PREDICTS THIS STYLE BADLY** — `nr-movement`'s 2,699-word deck
-  became **4,405 written (163 %)**; the plan forecast its halves at "7–8 pp" and they printed
-  **13 and 12**. ⚠️ **My own connective prose is the inflation, it sits ABOVE §14.2's floor, and it
-  is the legitimate thing to cut** (9 bullets, 322 w, no sourced fact lost). **296 · 306 · 313 w/pp.**
+  it split. ⚠️⚠️ **"A table costs more paper per word" IS REFUTED, NOT REFINED** — `ps-anxiety` is
+  the module's **most** table-dense chapter (**13 tables, 91 table lines**) and printed at its
+  **highest** w/pp. Untested hypothesis in the plan §4: cost tracks **cell WIDTH**, not table count.
+- **⚠️⚠️ A SOURCE WORD COUNT UNDER-PREDICTS THIS STYLE BADLY** — `nr-movement` wrote **163 %** of
+  its source, **`ps-anxiety` 202 %** (4,012 w from 1,986). ⚠️ **My own connective prose is the
+  inflation, it sits ABOVE §14.2's floor, and it is the legitimate thing to cut** — 322 w and 240 w
+  cut from those two, **no sourced fact lost**. ⚠️ **Cut an UNTAGGED outside claim and a CONSOLIDATED
+  second copy first**; both were in `ps-anxiety`. **296 · 306 · 313 · 343 w/pp; ÷280 missed by 2.5.**
 - **⚠️⚠️ `nr-intro` IS BLOCKED, NEEDS A USER DECISION, AND HOLDS *EVERY* REMAINING QUESTION — 21.**
   **12 of 23 probes return ZERO against its deck** (gracile/cuneate, triceps, abdominal reflex,
   hemianopia, optic radiation, power grading, biceps, brachioradialis, clonus, somatosensory,
   rigidity, lateral column). The book HAS it — **39 printed pages over three chapters, incl. a
   25-page `Neurology Sheet`** — but image-only, so it is **a subagent render or a chapter written
   half from tagged outside knowledge.** **After it the module is deck-and-book work only.**
-  ⚠️ **AND IT OWES TWO SLIDES TO `nr-lmn`:** L1's `Upper`/`Lower Motor Neuron Manifestations` are
-  **counted to `lm-1`** and **must not be counted again** — `str-4`, `hem-7` and `cn-9` all filed
-  the UMN/LMN framework to `nr-lmn`, whose own decks never print it. The `op-va`/`L1,2` shape.
-- **⚠️ THREE SOURCES UNREAD AND RECORDED, NOT GUESSED** — no subagent this session: **`L3` p17**
-  (zero words, **zero fonts**, sitting before the deck's unanswered *NON MOTOR SYMPTOMS ??????*
-  slide), **book Neuro ch.12** (119-127) and **ch.6** (57-66). **Check `mv-5`'s supplied non-motor
-  table against any of them if read.**
-- **⚠️⚠️ `ps-anxiety` — READ `oc-10` AND `sy-10` FIRST.** Its **book spine is half-spent**: `oc-10`
-  declares what `ps-ocd` left — Psych ch.3 printed **193-196 and 200-201**, **minus three named
-  lines**. **And it HAS A DECK**, `L4,5`'s back half. **Check every deck's BACK HALF.**
+  ⚠️ **IT OWES TWO SLIDES TO `nr-lmn`:** L1's `Upper`/`Lower Motor Neuron Manifestations` are
+  **counted to `lm-1`, never again** (`str-4`/`hem-7`/`cn-9` filed UMN/LMN there). `op-va` shape.
+- **⚠️ THREE SOURCES UNREAD AND RECORDED, NOT GUESSED** — no subagent available: **`L3` p17** (zero
+  words, **zero fonts**, before the deck's unanswered *NON MOTOR SYMPTOMS ??????* slide), **book
+  Neuro ch.12** (119-127), **ch.6** (57-66). **Check `mv-5`'s supplied non-motor table if read.**
+- ✅ **`ps-anxiety` done 2026-08-23, 11 pp — and BOTH read-first pointers paid.** `oc-10` gave the
+  spine accounting, `sy-10` gave it a deck the plan denied. ✅ **Book Psych ch.3 is now FULLY SPENT**
+  over `ps-ocd`/`ps-ptsd`/`ps-anxiety`; page-by-page accounting in **`ax-10`**. **Check every deck's
+  BACK HALF**, and **declare in your register what you leave a sibling** — it worked three times.
+- **⚠️⚠️ A GREP HIT THAT GETS EXPLAINED AWAY IS WORSE THAN A MISS — it looks like evidence.**
+  `ps-anxiety` was booked "no deck" for five days: the probe **hit `L4,5` and the row dismissed the
+  hits as "symptom lists"** without opening the slides, and searched `generalized anxiety`, which
+  the deck never writes (**it writes GAD**). ⚠️ **Probe with the SOURCE's vocabulary, and open the
+  slide.** Of the module's six "materially unsourced" chapters, **two of the three now closed were
+  READING failures, not material ones** (`ps-pharm` was a picture deck misread as a thin one).
 - **⚠️ `nr-headache` HAD NO LECTURE — verified, not assumed** (`"tension type"` returns zero across
-  all 25 decks); written wholly from book Neurology ch.9. **Grep before briefing.**
-  **⚠️ PAGE RATE SPREAD IS 267–337 w/pp — PLAN AT ÷280, CLEAR BY PRINTING**, and any trim must be
-  **duplication, never a fact**.
+  all 25 decks); written wholly from book Neurology ch.9. **Grep before briefing** — but see the
+  explained-away-hit rule above. **Any trim must be duplication or my own prose, never a fact.**
 - **⚠️ Ophtho reconciliation is NOT done** — ~63 register rows, the `va-6`/`pup-10` provenance
   defects, five held divergences, `wht-8`. In its `theory-plan.md`; never re-derive it.
 - **⚠️ A SPLIT MOVES QUESTIONS, reassigned from the theory `qs` links, never from the titles** —
@@ -52,31 +59,26 @@ there before resuming a paused stream. Where this file and the archive disagree,
 - **⚠️⚠️ CHECK A CHAPTER'S QUESTIONS AGAINST ITS SOURCE BEFORE BRIEFING IT.** A plan's Decks column
   is an assignment, **not a coverage guarantee** — **none of `op-va`'s 16 questions was answerable
   from its only listed deck**, and `op-intro`'s 13 test anatomy, not its title's history-taking.
-- **⚠️⚠️ AFTER A READ, A SOURCE'S WORD COUNT IS THE CACHE'S, NEVER `pdftotext`'s** — a reader argued
-  against splitting `op-refract` on "1,540 words"; its transcription held **4,439**. **A text layer
-  can be word-complete and still be wrong.** **`pdffonts` per page detects VECTOR-OUTLINE text** —
-  fonts listed with zero characters; a page with **zero fonts is hiding nothing**.
+- **⚠️⚠️ AFTER A READ, A SOURCE'S WORD COUNT IS THE CACHE'S, NEVER `pdftotext`'s** — `op-refract`
+  was argued against splitting on "1,540 words"; its cache held **4,439**. **`pdffonts` per page
+  detects VECTOR-OUTLINE text** — fonts listed with zero characters; **zero fonts hides nothing**.
 - **⚠️⚠️ COUNT A CHAPTER'S REGISTER ROWS AND VERIFY EVERY ROW'S *SECOND CLAUSE* BEFORE BRIEFING IT.**
-  `op-ret` was named in **twelve rows from six donors and five were wrong** — a question count
-  predicts nothing. **TEN fault shapes, in `progress\memory-archive.md`.** The two that recur:
+  `op-ret` was named in **twelve rows from six donors and five were wrong**. **TEN fault shapes, in
+  `progress\memory-archive.md`.** The two that recur:
   **⚠️ A RESOLVED CROSS-REFERENCE PROVES NOTHING — measure the destination** (ch.17 → ch.16 for
   retinoblastoma resolves into **92 words**), and **⚠️ it may resolve to the WRONG section** (two in
   `nr-lmn`, after a mid-write renumber). **Check the target, not that the id exists.**
 - **⚠️⚠️ AUDIT "row filed" CLAIMS — FOUR WERE FALSE** (`uv-1`/`uv-8`/`uv-9`/`scl-1`). **And a row's
   evidence has a TIMESTAMP** — `vis-11` quoted a zero-returns claim that now returns 9. **Re-grep.**
-- **⚠️⚠️ "NO ORPHAN WORDS" IS NOT A VALID CHECK** — it proves every word landed SOMEWHERE, never in
-  the right sentence. **Never accept a reconstruction on word conservation; render the page.**
-  `pdftotext -raw` recovers slides whose text streams together. **Text-sufficient is a claim about
-  PROSE, never about tables or columns.**
 - **⚠️ NEVER `git add` A DIRECTORY WHILE A SUBAGENT IS WRITING INTO IT** — **stage explicit paths.**
 - ✅ **Ophtho book caches exist — 11 chapters, 70,704 w** in `content\ophtho\book\`. Do not re-read.
 - **⚠️⚠️ TEST-PRINT BEFORE ACCEPTING A SPLIT *OR* A COMPRESSION.** An estimator decides nothing: ÷240
   **over**-predicted ophtho by **5.1 pp**, ÷335 **under**-predicted `nr-lmn` by **6.3**. Misses: archive.
 - ✅ **OPHTHALMOLOGY FINISHED at 36 chapters.** Its two **USER RULINGS of 2026-08-18** — *the book is
-  that module's main reference* and *do not add chapters for the three deckless book chapters* — are
-  **settled, do not re-propose**; archived in full with the `(Tutorial)`/`(T)` rule (**never a licence
-  to compress**). ⚠️ **Carries over: scope comes from the LECTURE SERIES; the book is the authority
-  on content, never on scope.** ⚠️ **Treat every "the book always/never…" line as a HYPOTHESIS.**
+  that module's main reference* and *no chapters for the three deckless book chapters* — are
+  **settled, do not re-propose**; archived with the `(Tutorial)`/`(T)` rule (**never a licence to
+  compress**). ⚠️ **Scope comes from the LECTURE SERIES; the book rules content, never scope.**
+  ⚠️ **Treat every "the book always/never…" line as a HYPOTHESIS** — three were refuted here.
 - **⚠️ ENT is NOT closed**: 25 §14.5 rows open **+ 33 bold-led paragraphs over the 55-word cap**
   (peds 2, ophtho 0). ⚠️ **A cap auditor must separate BULLETS from PARAGRAPHS** — four fake fails.
 - **ENT banks, frozen mid-flight**: ✅ Endpoint · ✅ GG Ear+Nose closed. **⚠️ Only GG Throat t10 is
@@ -87,9 +89,8 @@ there before resuming a paused stream. Where this file and the archive disagree,
   rebuilt on them (user must press **Reset to the original plan**). **Nothing is dropped — banks are
   deferred, not cut**; stop only at clean topic boundaries.
 - ✅ **OPHTHO BANKS COUNTED FOR REAL 2026-08-18: ~1,918 REMAIN** (GG 949 of 1,087, House ~969 of
-  ~1,025) against 27 Sep. ⚠️ **~304 are IMAGE questions and every crop is looked at — the dominant
-  cost.** ⚠️ **56 House questions are STAGED AND UNMERGED**; its **132 model-exam items are
-  SHORT-ANSWER → the `type:'case'` route.** Arithmetic and method: `ledger.md`.
+  ~1,025) against 27 Sep. ⚠️ **~304 are IMAGE questions, every crop looked at — the dominant cost.**
+  ⚠️ **56 House are STAGED, UNMERGED**; its **132 model-exam items are SHORT-ANSWER → `type:'case'`.**
 
 ## Governing decisions (verbatim rulings in the archive)
 
@@ -114,8 +115,7 @@ there before resuming a paused stream. Where this file and the archive disagree,
 - **A defective key is noted, never disputed** (2026-08-11) — never take a key dispute to the user.
   **A lecture-numbering gap = the professor withheld it** (2026-08-14) — fill and tag, never chase.
 - **Publishing agreed, parked until ENT done.** First: **fix the final domain** (localStorage is
-  per-origin), **cache-bust the data `<script>` tags**, finish folding, run the content+design
-  review. Host and public-vs-private both undecided.
+  per-origin), **cache-bust the data `<script>` tags**, fold, review. Host/visibility undecided.
 
 ## The method — what transcription work must never skip
 
@@ -150,13 +150,13 @@ there before resuming a paused stream. Where this file and the archive disagree,
 - **Corpus 2,097** (2026-08-14): ENT 1,720 · Neuro 158 · Ophtho 138 · Peds 81. Banks: GG 1,180 ·
   Endpoint 697 · House 78; 54 shared. Module keys `ent`, `ophtho`, `pediatrics`, `neuropsych`.
   Option counts 2–9 coexist; nothing assumes four.
-- **Theory: 132 of 148 chapters, 1,408 sections.** ENT 30 (259 pp / 8.6) · Peds 51 (340 / 8.3) ·
-  Ophtho 36 (331 / 9.2) · **Neuro 15 of 31**. Drafts in `content\<mod>\theory-drafts\` (⚠️ ENT's
+- **Theory: 133 of 148 chapters, 1,418 sections.** ENT 30 (259 pp / 8.6) · Peds 51 (340 / 8.3) ·
+  Ophtho 36 (331 / 9.2) · **Neuro 16 of 31**. Drafts in `content\<mod>\theory-drafts\` (⚠️ ENT's
   bare `ent-csom/tonsils/aom/stridor` are the DEAD format; their `*.v2/v3` are current). Best
-  models: `ent-nasalobs`, `op-ret`, `nr-cranial`, `ps-symptom`, `ps-ocd`.
+  models: `ent-nasalobs`, `op-ret`, `nr-cranial`, `ps-symptom`, `ps-ocd`, `ps-anxiety`.
 - Last real `file://` boot **2026-08-23**: **0 console errors, 876 CSS rules, 3
-  `max-aspect-ratio:5/4` blocks, 4 modules, 148 chapters, 2,097 questions, 89 cases, 132 theory
-  chapters, 1,408 sections.** Harnesses in `<scratch>\`: `MOD=<mod> print.sh` · `boot.sh` ·
+  `max-aspect-ratio:5/4` blocks, 4 modules, 148 chapters, 2,097 questions, 89 cases, 133 theory
+  chapters, 1,418 sections.** Harnesses in `<scratch>\`: `MOD=<mod> print.sh` · `boot.sh` ·
   `modcheck-neuro.js` · `vdraft.js` · `splice-neuro.js`/`resplice-neuro.js` · `qdump.js` · `shot.sh`.
 - **⚠️ THE THEORY READER IS AN A4 PAGE (2026-08-19, three user complaints).** 210:297 by
   `aspect-ratio`, sized from the window, margins set in JS from the PAGE's width (**percentages
