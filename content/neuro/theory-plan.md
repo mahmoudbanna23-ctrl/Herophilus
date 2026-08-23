@@ -397,13 +397,33 @@ the book mapper as a split candidate on precedent. **Not decided — read before
    fonts on all 29 pages, so nothing is vector-outlined and nothing is hiding from the extractor**
    — the missing content is genuinely pictorial. **Measured before the claim, the `op-refract`
    check.**
-5. ⚠⚠ **`nr-intro` (21 q) IS THE NEXT ONE AND IT IS BLOCKED — IT NEEDS A USER DECISION.**
-   It holds **21 of the 23 questions left — all but two.** **12 of 23 fact probes return ZERO
-   against its deck** (gracile/cuneate, triceps, abdominal reflex, hemianopia, optic radiation,
-   power grading, biceps, brachioradialis, clonus, somatosensory, rigidity, lateral column). The
-   book HAS the material — **39 printed pages across three chapters, including a 25-page
-   `Neurology Sheet`** — but those pages are **image-only**. So it is **a subagent render, or a
-   chapter written half from tagged outside knowledge**. Not chosen; surfaced.
+5. ✅ **`nr-intro` (21 q) IS UNBLOCKED — THE 39 BOOK PAGES WERE READ 2026-08-23.** The user
+   authorised the subagent render; three agents transcribed **printed 1–39 in full** to
+   `content\neuro\book\neuro-ch01-ch02a.txt` (1–14), `neuro-ch02b.txt` (15–27) and
+   `neuro-ch03-localization.txt` (28–39) — **~16,700 words, 39 page blocks, nothing illegible.**
+   ⚠️ **The `+11` neurology offset was re-verified footer by footer on ALL 39 pages and held**;
+   each chapter's end was confirmed by rendering one page past it (ch.2 ends at printed 27, ch.3
+   at printed 39, and PDF 51 is the ch.4 stroke opener). **Do not re-render any of it.**
+   ✅ **ELEVEN OF THE TWELVE ZERO-PROBE FACTS ARE NOW SOURCED**: power grading (p.19, grades 0–5)
+   · biceps/triceps/brachioradialis **with root values** + abdominal + plantar (p.21) · clonus
+   (p.21) · rigidity vs spasticity (p.18) · somatosensory in full incl. cortical modalities
+   (pp.23–26) · **hemianopia and the optic radiation** (p.12, a lettered **A–F visual field
+   defects panel**, each with its lesion site) · **gracile and cuneate** (p.36).
+   ⚠️⚠️ **AND THE TWELFTH IS A VOCABULARY ARTEFACT, NOT A GAP: `lateral column` is never written
+   by this book** — it writes **lateral corticospinal tract** and **dorsal (posterior) column**.
+   ⚠️ **`gracile`/`cuneate` are FIGURE LABELS ONLY** (p.36) and appear in no running text; the
+   Sheet likewise says *posterior column affection*, never the fasciculi. **The anatomy was there
+   the whole time under the book's own names — the probes used the questions' vocabulary, not the
+   source's.** The `ps-anxiety` GAD lesson, paid a second time.
+   ⚠️ **Two source contradictions to carry into the chapter, both recorded and NEITHER corrected:**
+   the **dorsal-column decussation** is placed *in the upper part of the pons* by p.35's text and
+   **in the medulla** by p.36's figure; and **quadriplegia** (p.38 text) vs **tetraplegia** (p.39
+   figure). ⚠️ **Ch.3 ends on TEN self-test questions with NO KEY anywhere in the book** — the
+   `L11,12` shape again. ⚠️ **Ch.1 is 1½ pages: it poses FOUR right-hemiparesis vignettes and
+   never solves them individually** — the answer is p.6's **onset-and-course → pathology mapping**,
+   which is the chapter's real spine. ⚠️ **Much of ch.3's teaching is FIGURE-ONLY** (anterior
+   corticospinal tract, Babinski by name, fasciculations, atrophy, Broca/Wernicke, arterial
+   territories) — the caches flag each one in place.
    ⚠️ **`nr-intro` OWES two slides to `nr-lmn`:** L1's `Upper Motor Neuron Manifestations` and
    `Lower Motor Neuron Manifestations` are **counted to `nr-lmn`'s `lm-1`** and **must not be
    counted again** when `nr-intro` is written. Same shape as `op-va`/`L1,2` in ophthalmology.

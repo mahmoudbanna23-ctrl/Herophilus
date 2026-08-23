@@ -1,0 +1,576 @@
+# NEUROPSYCHIATRY (ASM MINDS) — NEUROLOGY, CH.3: LOCALIZATION IN NEUROLOGY
+# Source: Semester 8\Neuro\Theoritical\Book\neuropsychiatry.pdf
+# Printed pp. 28-39  =  PDF pp. 39-50.  Offset verified on this chapter's own footers:
+#   PDF 39 prints footer "28"  ->  PDF = printed + 11  (NEUROLOGY half).
+#   Every page checked: PDF 40="29", 41="30", 42="31", 43="32", 44="33", 45="34", 46="35",
+#   47="36", 48="37", 49="38", 50="39". The +11 offset held on all twelve pages.
+# Boundary verified: PDF 51 prints footer "40" and is the CHAPTER 4 opener — dark-navy CHAPTER
+#   band with numeral 4, "CEREBROVASCULAR DISEASES / 'ISCHEMIC CEREBROVASCULAR STROKE'".
+#   Chapter 3 really does end at printed 39. PDF 51 is NOT transcribed here.
+# Transcribed 2026-08-23 from 150 dpi renders; 300 dpi re-renders used on the printed p.32
+#   "Long tracts" cord cross-section, the printed p.36 dorsal-column/spinothalamic figure, and
+#   the printed p.28 homunculus caption.
+# Nothing here is completed from outside knowledge. [illegible] marks anything unreadable.
+# NO (Tutorial)/(T) marker, NO star-glyph rating and NO figure numbering anywhere in this
+#   chapter. Figures carry either bold black in-figure titles, italic blue captions, or nothing.
+# Every page after the opener runs a decorative blue "LOCALIZATION" wordmark top-right and a
+#   blue bracket ornament top-left. Not repeated below.
+# Section banners are pale-blue full-width bars with centred dark-blue titles.
+
+---
+
+## printed p.28  (PDF p.39)  [neurology half]
+
+[CHAPTER OPENER. Dark-navy band across the top carrying the word `CHAPTER` in spaced small
+caps at the right and a large white numeral `3` in a navy square at the far right. A pale-blue
+band below it carries the chapter title in large dark-navy caps.]
+
+# CHAPTER 3 — LOCALIZATION IN NEUROLOGY
+
+### What is meant by localization?
+
+It is our ability to figure out the exact site in the nervous system affected in each
+neurological disorder according to specific neurological signs
+
+### Basic anatomical background
+
+The central nervous system is divided into central and peripheral parts. The central part
+consists of the brain and spinal cord. The brain is divided into two cerebral hemispheres, two
+cerebellar hemispheres and centrally located brain stem (bulb) that is divided into three parts:
+midbrain, pons and medulla oblongata.
+
+[Flag: the sentence says "The central nervous system is divided into central and peripheral
+parts" — the book writes "central nervous system" where the division into central and
+peripheral parts belongs to the nervous system as a whole. Transcribed as printed.]
+
+## The Cerebral Cortex
+
+[FIGURE, banner-width, no number, no caption title. Two coronal half-sections of the cerebral
+hemisphere side by side, each shaded in teal/green with the body map written along the cortical
+surface. Left half is headed **Motor homunculus**, right half **Sensory homunculus**. A
+three-swatch key at the far left of the figure reads: `Anterior cerebral artery` · `Middle
+cerebral artery` · `Posterior cerebral artery`.
+  Motor homunculus labels, read from the midline down over the convexity: Hip, Knee, Trunk,
+  Ankle, Toes, Shoulder, Elbow, Wrist, Hand, Little, Ring, Middle, Index, Thumb, Fingers, Neck,
+  Brow, `Eyelid & eyeball`, Lips, Jaw, Tongue, Swallowing.
+  Sensory homunculus labels: Hip, Leg, Trunk, Neck, Head, Foot, Toes, Genitals, Shoulder, Arm,
+  Elbow, Forearm, Hand, Wrist, Little, Ring, Middle, Index, Thumb, Fingers, Eye, Nose, Face,
+  Upper lip, Lower lip, `Teeth, gums`, Tongue, Pharynx, Intra-abdominal.
+  This figure is the only place in the chapter where the arterial territories of the cortex
+  appear at all, and the only place the cortical body map is given in detail.]
+
+*Topographic representation of motor and sensory areas in the cerebral cortex. Distorted
+appearance is due to certain body regions being more richly innervated and thus having q
+cortical representation*
+
+[Flag: the caption really does print "thus having q cortical representation" — a stray `q`
+where a word is missing. Verified at 300 dpi. Not corrected.]
+
+**The Cerebral Cortex is the grey matter of the brain. It is divided into 4 lobes:**
+
+### 1. Frontal lobe:
+
+- **Prefrontal cortex:** The expanse of cortex anterior to the motor and pre-motor areas
+  subserves executive functions. Patients with frontal lobe damage may have difficulty using
+  information not immediately at hand to direct behavior. They therefore exhibit poor planning
+  and judgement (see below).
+- **The motor cortex** (pre-central gyrus, area 4): It contains the pyramidal cells that are the
+  first part of the motor descending tract (corticospinal or pyramidal). Each motor cortex
+  supplies the contralateral side of the body in an inverted pattern (i.e. the head area is
+  present caudally and the lower limb area is present cranially)
+
+[Flag: "(see below)" is a forward cross-reference; no expanded account of frontal executive
+dysfunction appears anywhere later in this chapter.]
+
+---
+
+## printed p.29  (PDF p.40)  [neurology half]
+
+### 2. Parietal lobe
+
+**The somatosensory cortex** (post-central gyrus, areas 3, 1 and 2).
+
+### 3. Occipital lobe
+
+**The visual cortex** (calcarine cortex, occipital lobes, area 17), The visual pathways: retina
+optic nerve optic chiasm optic tract lateral geniculate body optic radiations visual cortex).
+
+[Flag: the visual pathway is printed as a bare run of nouns with no arrows, commas or
+connectives between them, and the sentence closes with an unmatched `)`. Transcribed exactly.
+This one line is the ONLY mention of the optic radiation in the chapter; no visual field defect
+is named or described anywhere.]
+
+### 4. Temporal lobe
+
+**The auditory cortex** (Superior temporal gyrus).
+
+[FIGURE, no number, no caption. A left lateral view of the cerebral hemisphere, colour-coded by
+lobe with functional areas labelled. Outer labels in grey boxes: `Frontal lobe`, `Parietal
+lobe`, `Temporal lobe`, `Occipital lobe`. Internal labels: `Motor cortex`, `Somatosensory
+cortex`, `Frontal association area`, `Somatosensory association area`, `Speech (Wernicke's
+area)` [printed in red], `Taste`, `Reading`, `Speech (Broca's area)` [printed in red],
+`Hearing`, `Smell`, `Auditory association area`, `Visual association area`, `Vision`.
+  The red `Broca's area` / `Wernicke's area` sub-labels are small and partly washed out in the
+  scan; the two words are legible but the surrounding red text is degraded. This figure is the
+  only place Broca's and Wernicke's areas are named in the chapter.]
+
+### 5. Limbic cortex: Emotion and memory, it is concerned with memory and emotions.
+
+[FIGURE, no number. A mid-sagittal drawing of the limbic system. Labels, clockwise from the top
+left: `Septum pellucidum`, `Cingulate gyrus`, `Indusium griseum`, `Corpus callosum`, `Fornix`,
+`Subcallosal area`, `Paraterminal gyrus`, `Mammillary body`, `Anterior commissure`, `Fimbria`,
+`Amygdala`, `Hippocampus`, `Parahippocampal gyrus`. A three-swatch key underneath reads:
+`Limbic gyrus` (blue) · `Intralimbic gyrus` (white) · `Fornix and inner arc` (red).]
+
+*Limbic areas*
+
+---
+
+## printed p.30  (PDF p.41)  [neurology half]
+
+## Cerebral dominance
+
+The two cerebral hemispheres are not functionally equivalent. The following functional
+asymmetries have been well-documented:
+
+### 1. Language
+
+In right-handers, the left hemisphere is dominant for language. In left handers, either left
+hemisphere dominance or bilateral language capabilities are the commonest findings.
+
+### 2. Handedness/praxis
+
+Handedness reflects a functional hemispheric asymmetry for fine motor ability. Limb apraxia
+results from damage to the hemisphere opposite the dominant hand (e.g., the left hemisphere, in
+right-handers).
+
+## The Basal Ganglia
+
+The basal ganglia are a group of anatomically closely related subcortical gray matter nuclei.
+Damage to these nuclei does not cause weakness but can cause dramatic motor abnormalities
+**(e.g., rigidity and involuntary movements)**
+
+[FIGURE, right margin. An axial T2-weighted MRI of the brain at the level of the basal ganglia,
+marked `A` in the top-left corner. Three small letter annotations sit over the deep grey matter:
+`C`, `L` and `T` — presumably caudate, lentiform and thalamus, but the figure prints NO key and
+the letters are not expanded anywhere on the page, so this is not stated. Caption in italic
+blue:]
+
+*Basal Ganglia*
+
+[FIGURE, no number, no caption. A two-panel anatomical drawing.
+  Panel **A** — a lateral view of the brain with a cut plane through it. Labels: `Fornix`,
+  `Lentiform nucleus` and `Caudate nucleus` (both bracketed together as `Basal ganglia`),
+  `Thalamus`, `Hypothalamus`, `Amygdala`, `Substantia nigra (in midbrain)` — these four
+  bracketed together as `Limbic system` — plus `Hippocampus`.
+  Panel **B** — a three-quarter cut view of the hemisphere. Labels: `Corpus striatum` bracketing
+  `Body of caudate nucleus` and `Lentiform nucleus`, which in turn brackets `Putamen` and
+  `Globus pallidus`; then `Internal capsule`, `Thalamus`, `Hippocampus`, `Subthalamic nucleus`,
+  `Substantia nigra`, `Hypothalamus`, `Head of caudate nucleus`, `Putamen`, and
+  `Longitudinal fissure`.
+  ⚠️ Note the drawing's own bracketing puts the substantia nigra under `Limbic system` in panel
+  A. Transcribed as drawn; the running text on this page does not repeat or contradict it.
+  This figure is the only place the components of the corpus striatum are itemised.]
+
+## The Diencephalon
+
+Diencephalon consists of the thalamus, hypothalamus, subthalamus, and epithalamus. The
+subthalamus is considered with the basal ganglia.
+
+---
+
+## printed p.31  (PDF p.42)  [neurology half]
+
+## The Thalamus
+
+- This complex structure serves to process all sensory input (except olfactory) coming from the
+  contralateral side of the body to the cortex, Somatosensory input from both the posterior
+  column/medial lemniscus system for position and vibration and the spinothalamic system for
+  pain and temperature relay in the thalamus.
+- Lesions affecting this part of the thalamus can therefore cause loss of all sensation on one
+  side of the body.it also has some influence on motor (via input from basal ganglia and
+  cerebellum) and cognitive function.
+
+[Flag: "body.it" — the book prints no space after the full stop. Transcribed as printed.]
+
+[FIGURE, right margin, no number, no caption. A mid-sagittal drawing of the brain with three
+italic labels: `thalamus`, `hypothalamus`, `pituitary gland`.]
+
+## The Hypothalamus
+
+The hypothalamus exerts control over the pituitary gland and thus over endocrine function in
+general, and it has extensive connections with brainstem autonomic nuclei. Lesions of the
+hypothalamus affect appetite, emotional behavior, temperature control, and numerous other
+autonomic and endocrine-influenced behaviors.
+
+## The Brain Stem cerebellum
+
+[Flag: the banner really is printed "The Brain Stem cerebellum" — no conjunction, no
+punctuation, mixed capitalisation. Transcribed exactly.]
+
+- **Brain stem** contains three central structures that contain all the ascending and descending
+  tracts.it contains also the cranial nerve nuclei as follows:
+  - **Midbrain:** Oculomotor and trochlear nerves
+  - **Pons:** Trigeminal, abducent, facial and vestibulocochlear nerves
+  - **Medulla:** Glossopharyngeal, vagus, accessory and hypoglossal nerves.
+- **The cerebellum** consists of two hemispheres on each side of the brain stem. Lesions of one
+  cerebellar cortex result in ataxia on the same side as the lesion. The main functions of the
+  cerebellum are **coordination of motor movement, balance and sharing in tone regulation.**
+
+[Flag: "tracts.it" — again no space after the full stop. Transcribed as printed.]
+[Flag: "three central structures" is the book's phrasing for the midbrain/pons/medulla; the
+olfactory and optic nerves are not mentioned, and the trochlear/abducent spellings are the
+book's own.]
+
+---
+
+## printed p.32  (PDF p.43)  [neurology half]
+
+[FIGURE, top of page, no number, no caption. A mid-sagittal drawing of the brain, colour-coded.
+Labels: `Cerebral hemisphere`, `Diencephalon`, `Cerebellum`, and `Brain stem` bulleted out to
+`Midbrain`, `Pons`, `Medulla oblongata`.]
+
+## The Spinal Cord
+
+- The spinal cord is the simplest portion of the central nervous system, with the same general
+  structure at every segmental level.
+- The spinal cord is divided into 8 cervical, 12 thoracic (dorsal), 5 lumbar and 5 sacral
+  segments. Each segment of the spinal cord is divided into central H shaped grey matter parts
+  including both motor and sensory nuclei and a peripheral white matter containing both
+  ascending and descending tracts.
+- Each segment has two roots (a dorsal sensory and a ventral motor) that unite at each segment
+  giving a pair of spinal nerve roots (one on each side) that are considered the first part of
+  the peripheral nervous system that involves nerve roots, plexuses, peripheral nerves,
+  neuromuscular junction or muscle.
+- The plexuses are responsible for supplying both upper and lower limbs. They consist of the
+  union of some spinal nerves for each limb. The brachial plexus consists of the roots of
+  cervical nerves (C5, C6, C, C8) and first thoracic segment and is responsible for the nerve
+  supply of the upper limb, while the lumbosacral plexus consists of the roots of lumbar
+  segments (L2, L3, L4, L5) and sacral segments (S1, S2).
+- The thoracic roots do not unite to male plexuses. They come directly from the spinal cord to
+  supply the corresponding parts of the trunk.
+
+[Flag: "(C5, C6, C, C8)" — the book prints a bare `C` where `C7` belongs. Not corrected.]
+[Flag: "do not unite to male plexuses" — obvious typo for "make". Transcribed as printed.]
+[Flag: the cord is given as 5 sacral segments and no coccygeal segment is mentioned.]
+
+[FIGURE, foot of page, no number. A transverse section of the spinal cord, grey matter in grey,
+descending tracts in red on the left half, ascending tracts in blue on the right half. Two
+headings inside the figure: **Descending Tracts (Motor)** (dark red) and **Ascending Tracts
+(Sensory)** (dark blue). Labels, verbatim including the figure's own misspellings:
+  - **Lateral Corticospinal Tract** (Motor)
+  - **Doral Columns** [sic — for "Dorsal"] (Deep touch, Propioception [sic], Vibration)
+  - **Lateral Spinothalamic Tract** (Pain, Temperture [sic])
+  - **Ventral Spinothalamic Tract** (Light touch)
+  Small white letters inside the coloured tract areas mark the somatotopic lamination — `S`,
+  `L`, `Th`, `C` in the dorsal columns and again in the lateral spinothalamic tract, plus small
+  numeral-letter codes (`2a`, `2b`, `2c`, `2d`, `4a`, `4b`, `5a`, `5b`, and similar) in the
+  motor tracts. NO key to those codes is printed anywhere, so they cannot be expanded.
+  Verified at 300 dpi. Caption in italic blue:]
+
+*"Long tracts"*
+
+[This figure is the only place in the chapter where the modalities are matched to named cord
+tracts in one view, and the only place the somatotopic lamination of the columns is shown.]
+
+---
+
+## printed p.33  (PDF p.44)  [neurology half]
+
+[FIGURE, top of page, no number, no caption. A transverse section of the spinal cord in situ
+within a vertebra, with a reflex arc drawn in. Labels: `Vertebra`, `Central canal`,
+`White matter`, `Grey matter`, `Dorsal root ganglion`, `Dorsal root swelling`, `Dorsal root`,
+`Interneuron`, `Spinal nerve`, `Ventral root`, `Sensory neuron`, `Motor neuron`, `Meninges`.]
+
+### A. Motor (descending) pathway
+
+- It is divided into upper and lower motor neuron tracts.
+- **The upper motor neuron** is responsible for the motor function of the contralateral side of
+  the body. It consists of:
+
+[FIGURE / DIAGRAM, no number. A dark-navy rounded banner reading **UPPER MOTOR NEURON**, with
+two pale-blue rounded boxes beneath it: **The Corticospinal (Pyramidal) Tract** and
+**The Corticobulbar (Cortico-nuclear) Tract**.]
+
+1. **The corticospinal (pyramidal) tract** that starts from the pyramidal cells of the motor
+   cortex and descends in a white matter bundle (corona radiata) that collects in a small white
+   matter structure deeply seated in the hemisphere ( internal capsule) then descends on the
+   same side of the brain stem till the lower part of the medulla where it decussate (cross) to
+   the opposite side to descend in the spinal cord where each segment receives its corresponding
+   fibers that ends just at the anterior horn cell where <span style="color:red">The lower motor
+   neuron</span> starts by the motor roots → plexuses → peripheral nerves → neuromuscular
+   junction → muscles.
+
+[Flag: "The lower motor neuron" is printed in red within the sentence — the book's own emphasis
+colour, not bold. Recorded here rather than converted to `**`.]
+[Flag: "( internal capsule)" — stray space after the opening bracket, as printed.]
+[Flag: "where it decussate (cross)" — as printed, no `-s`.]
+
+---
+
+## printed p.34  (PDF p.45)  [neurology half]
+
+[FIGURE, top of page, no number, no caption. A full-length drawing of the corticospinal tract
+from cortex to muscle. Labels top to bottom: `Pre-central gyrus`, `Cerebral peduncle`,
+`Midbrain`, `Medulla`, `Pyramids`, `Decussation of pyramids`, `Lateral corticospinal tract`,
+`Anterior corticospinal tract`, `Upper motor neuron`, `To skeletal muscles`, `Lower motor
+neuron`, `Spinal cord`. A two-entry `Key` at the foot: a pale arrow for `Upper motor neuron` and
+a dark arrow for `Lower motor neuron`.
+  ⚠️ This figure is the ONLY place in the chapter where the ANTERIOR corticospinal tract is
+  named; the running text describes only the crossing fibres, and the "Long tracts" figure on
+  printed p.32 shows only the LATERAL corticospinal tract. It is also the only place the
+  decussation of the pyramids is named as such.]
+
+2. The motor functions of the head and neck are performed **by the corticobulbar
+   (corticonuclear) tracts** that start from the head area of the motor cortex of the
+   contralateral hemisphere and descends in the same pathway of the corona radiate and internal
+   capsule till they reach the corresponding part of the brain stem in which the cranial nucleus
+   lies.
+
+3. Thereby, the upper motor neuron crosses the midline to the opposite side where it ends in the
+   corresponding cranial nucleus. Thereby, the lower motor neuron tract of the cranial nerve
+   starts to supply the specific part of each cranial nerve.
+
+[Flag: "corona radiate" — printed thus here, where printed p.33 writes "corona radiata".
+Both transcribed as printed.]
+[Flag: the chapter nowhere states which cranial nerve nuclei receive BILATERAL corticobulbar
+supply, i.e. the fact that separates an upper from a lower facial palsy. It is absent from
+this chapter.]
+
+---
+
+## printed p.35  (PDF p.46)  [neurology half]
+
+### B. Sensory (ascending) pathway
+
+Sensory input from the body can be divided according to the location of its receptors into:
+
+- ***Superficial sensation (receptors are in the skin):*** includes pain, touch and temperature.
+  It is carried through spinothalamic tracts.
+- ***Deep sensation (receptors are in the deep structures):*** includes vibration and joint
+  sensation. It is carried through the dorsal column.
+
+- All types of sensations are carried from the body through the sensory nerves. Once they enter
+  the spinal cord through the dorsal root ganglion, they are divided into two different tracts.
+  **Deep sensation** from one side of the body is carried on the **dorsal (posterior) column**
+  that ascends on the <span style="color:red">SAME</span> side of the spinal cord till it
+  reaches the upper part of the pons where it decussates to the contralateral thalamus where it
+  relays.
+
+- Thereby, **the third order neuron** starts from the thalamus through the sensory radiation to
+  end in the sensory cortex in the parietal lobe in which the body is represented anatomically
+  in an upside-down pattern.
+
+- **Superficial sensation** takes the same peripheral way till the dorsal root ganglion of each
+  corresponding segments where it decussates and ascends in the <span style="color:red">OPPOSITE
+  </span> side of the spinal cord in the spinothalamic tracts till the contralateral thalamus
+  where it takes the same pathway of deep sensation.
+
+[Flag: `SAME` and `OPPOSITE` are printed in red capitals — the book's own emphasis colour.]
+[⚠️ Flag — CONTRADICTION WITH THE FIGURE ON PRINTED p.36. The text here places the decussation
+of the dorsal column at "the upper part of the pons". The figure on the next page draws the
+second-order neuron crossing in the MEDULLA, at the nucleus gracilis / nucleus cuneatus, and
+labels the crossed fibres `Medial leminiscus`. Both are recorded; neither is corrected.]
+
+[FIGURE, foot of page, no number, no caption. A hand-drawn-style colour diagram of the sensory
+pathway, headed `SENSORY info → 3 NEURONS`. Labels, in the drawing's own hand lettering:
+`AXON`, `1ST ORDER NEURON (PSEUDOUNIPOLAR)`, `MEDIAL BRANCH`, `CELL BODY`, `LATERAL BRANCH`,
+`PAIN & TEMP`, `DORSAL ROOT GANGLION`, `SYNAPSE`, `DORSAL HORN`, `1 - 2 SPINAL SEGMENTS`,
+`2ND ORDER NEURON`, `3RD ORDER NEURON`, `THALAMUS`, `(VENTRAL POSTERIOR NUCLEUS)`,
+`SENSORY CORTEX`. A hand holding over a steaming bowl is drawn at the lower left as the stimulus.
+  This figure is the only place the ventral posterior nucleus of the thalamus is named, and the
+  only place the "1-2 spinal segments" of ascent before decussation is stated.]
+
+---
+
+## printed p.36  (PDF p.47)  [neurology half]
+
+[FIGURE, top of page, no number. Two side-by-side full-length pathway drawings, each running
+from the spinal cord up to the postcentral gyrus, with an inset brain at the top left showing
+the plane of section. The two are titled in bold at the foot of the figure:
+**Dorsal column system** (left) and **Spinothalamic tract** (right).
+  Shared labels down the centre: `Postcentral gyrus`, `Third-order neuron`, `Second-order
+  neuron`, `Midbrain`, `Medulla`, `Spinal cord`, `First-order neuron`.
+  Left (dorsal column) labels: `Thalamus`, `Medial leminiscus` [sic — the book prints
+  "leminiscus", verified at 300 dpi], `Nucleus gracilis`, `Nucleus cuneatus`,
+  `Fasciculus gracilis`, `Fasciculus cuneatus`, `Dorsal root ganglion`, and at the foot
+  `Fine touch and proprioception sensations from right side of body`.
+  Right (spinothalamic) labels: `Lateral spinothalamic tract`, `Dorsal root ganglion`, and at
+  the foot `Pain and temperature sensations from right side of body`.
+  ⚠️ This figure is the ONLY place in the whole chapter where the gracile and cuneate
+  fasciculi and their nuclei are named, and the only place the medial lemniscus is named. None
+  of the four appears in any running text. It is also the only place that draws the dorsal
+  column decussating in the medulla — see the contradiction flagged on printed p.35.]
+
+### By the end of this section, we will try to answer our question where is the lesion i.e., how can you localize the lesion?
+
+The answer will be given when you examine your patient and figure out the sum of the
+neurological signs found and put them under the perfect anatomical site, either sensory or motor
+and if motor is it an upper or a lower motor neuron lesion. This can be achieved by checking the
+different parts of sensory and motor examination.
+
+### Upper motor neuron lesions UMNL versus lower motor neuron lesions LMNL:
+
+1. **Upper motor neuron lesions** include any lesion that may affect either any part of the
+   corticospinal or corticobulbar tracts (starting from the cerebral cortex down to the spinal
+   cord just before the anterior horn cell or the brain stem just before the cranial nerve
+   nucleus, respectively).
+
+2. **Lower motor neuron lesions** of the cranial nerves include any lesion affecting either the
+   cranial nerve nucleus, cranial nerve itself or the muscles supplied, while those of spinal
+   nerves include any lesion in the anterior horn cell, anterior root, plexus, peripheral nerve,
+   neuromuscular junction or muscles supplied.
+
+---
+
+## printed p.37  (PDF p.48)  [neurology half]
+
+3. Both UMNL & LMNL present with weakness, but the pattern of weakness differs, and the
+   associated signs also help to differentiate:
+   - Weakness in some lower motor neuron lesions has certain anatomical distribution that is
+     usually bilateral and symmetrical (i.e., **proximal in myopathies** and **distal in
+     neuropathies**)
+   - While in upper motor neuron lesion it is usually unilateral in the opposite side of the
+     lesion and it may take a certain distribution in specific muscle groups rather than others:
+     - In the upper limbs elbow extensors are weaker than flexors
+     - In the lower limbs the knee flexors are weaker than extensors).
+
+[Flag: the sub-bullet closes with an unmatched `)`. As printed.]
+
+4. **Associated signs may help also like:**
+
+   ✓ Deep tendon reflexes: decreased or even absent in LMNL – increased in UMNL.
+   ✓ Plantar reflex: flexor in LMNL – extensor in UMNL.
+   ✓ Abdominal reflexes: preserved in LMNL – absent in UMNL.
+   ✓ Muscle tone: decreased in LMNL – increased in UMNL (except in shock stage).
+
+[The four items are printed as a tick-marked list, one per line, each an LMNL – UMNL pair.
+"except in shock stage" is the chapter's only mention of spinal/neural shock; it is not
+explained further anywhere.]
+
+[FIGURE, lower half of page, no number, no caption. A large two-column infographic split down
+the midline by a vertical rule, brain and full spinal cord drawn down the centre-left, an
+anterior horn cell with its nerve and two muscle bellies at the centre-right.
+  LEFT column, pale-blue header: **UMN: The Central Command** — "Damage occurs in the brain or
+  spinal cord tracts before the anterior horn cell". Tract label at centre: `Corticospinal/
+  Corticobulbar Tracts`. Sub-header: `CLINICAL PRESENTATION (UMN)` over the large words
+  **UP & MORE**. Three icon rows: `Increased (Spastic) Muscle Tone` · `Hyperreflexia` ·
+  `Positive Babinski Sign (Toes Up)`. Footer line: `Fasciculations: ABSENT`.
+  RIGHT column, pale-orange header: **LMN: The Peripheral Pathway** — "Damage occurs from the
+  anterior horn cell, nerve roots, or peripheral nerves down to the muscle". Anatomy labels:
+  `Anterior Horn Cell`, `Nerve Roots`, `Peripheral Nerves`. Sub-header:
+  `CLINICAL PRESENTATION (LMN)` over the large words **LESS & DOWN**. Three icon rows:
+  `Decreased (Flaccid) Muscle Tone` · `Hyporeflexia/Areflexia` · `Negative Babinski Sign (Toes
+  Down)`, plus `Severe Neurogenic Muscle Atrophy` labelled on the wasted muscle belly. Footer
+  line: `Fasciculations (Involuntary Twitches): PRESENT`.
+  ⚠️ This figure is the only place in the chapter that names FASCICULATIONS, MUSCLE ATROPHY and
+  the Babinski sign BY NAME — the tick-list above it says only "plantar reflex: flexor/extensor"
+  and does not mention wasting or fasciculation at all.]
+
+---
+
+## printed p.38  (PDF p.49)  [neurology half]
+
+## Clinical quizzes
+
+### In each of the following examples we should localize:
+
+- The type of the lesion (UMNL or LMNL)
+- **The pattern of weakness either →**
+  a) Monoparesis or monoplegia (partial or total weakness of one limb only, respectively)
+  b) Hemiparesis or hemiplegia (weakness of both upper and lower limbs on one side of the body
+     due to affection of corticospinal tract on the contralateral hemisphere or ipsilateral
+     spinal cord above C5).
+  c) Paraparesis or paraplegia (weakness of both lower limbs due to affection of the spinal cord
+     below T1 or both lower limb areas of the cerebral cortex.
+
+  [Flag: item c) opens a bracket and never closes it. As printed.]
+
+- The anatomical site of the lesion (right or left) depends on the side affected (i.e., if we
+  say right hemiparesis, we mean the weakness of the right side of the body that is caused by a
+  lesion in the left cerebral hemisphere, so we refer to the side of the weakness itself).
+- The extent of the lesion depends on the area affected (i.e., a very small lesion in the
+  internal capsule may lead to an extensive area of weakness as the fibers are densely arranged
+  while the same lesion in another part; cortex or corona radiate may cause a less extensive
+  damage because the fibers are widely distributed).
+- **Spinal cord lesions usually include a mix between motor and sensory manifestations
+  particularly if the cord is trans-sected completely or partially →**
+
+  a) Complete trans-section of the cord above C5 will lead to loss of all ascending sensations
+     from both sides of the body and loss of motor functions of the four limbs (i.e.,
+     quadriplegia).
+
+  b) Hemi-section of the spinal cord above C5 will lead to loss of motor function on the same
+     side of the lesion (i.e., spinal hemiplegia), loss of deep sensation from the same side of
+     the lesion and loss of superficial sensation from the opposite side. (Brown-Sequard
+     syndrome)
+
+  c) Complete trans-section of the cord below T1 and above L2 will lead to loss of all
+     sensations ascending from both sides of the body till the level of trans-section (i.e.,
+     sensory level) and loss of motor functions of both lower limbs (i.e., paraplegia).
+
+  d) Hemi-section of the spinal cord below T1 and above L2 will lead to loss of motor function
+     of the lower limb on the same side of the lesion (i.e. monoplegia), loss of deep sensation
+     from the same side of the lesion and loss of superficial sensation from the opposite side
+     up to the level of hemi-section.
+
+[FIGURE, right margin beside item b), no number. Title printed above it in bold:
+**Brown-Séquard Syndrome**. A transverse section of the spinal cord with the right half shaded
+solid red (the lesioned half) and the left half pale. Two labels: `Corticospinal tract` (upper
+left) and `Spinothalamic tract` (lower right).
+  ⚠️ Note the SPELLING SPLIT: the figure title prints **Brown-Séquard** with the accent, while
+  the running text in item b) prints **Brown-Sequard** without it. Both transcribed as printed.]
+
+[Flag: item b) says hemi-section causes loss of superficial sensation "from the opposite side"
+but does not state the segmental level at which that loss begins, nor mention the ipsilateral
+band of anaesthesia at the level of the lesion. Not covered by the chapter.]
+
+---
+
+## printed p.39  (PDF p.50)  [neurology half]
+
+[FIGURE, top of page, no number. A schematic of the brain and full spinal cord with red `X`
+marks at successive levels indicating lesion sites, and the resulting motor deficit named beside
+each. Two column headings: `Central lesion` (left) and `Peripheral lesion` (right).
+  Left side, bracketed as `Upper motor neuron lesion`: `Contralateral hemiplegia` (X at the
+  internal capsule / corona radiata region), `Tetraplegia` (X at the high cervical cord),
+  `Paraplegia` (X at the lower cord).
+  Right side, bracketed as `Lower motor neuron lesion`: `Anterior horn, motor root, plexus and
+  peripheral nerve`, with X marks on the roots at cervical (`Upper limbs`) and lumbosacral
+  (`Lower limbs`) levels. `Spinal cord` is labelled on the cord itself.
+  ⚠️ This figure is the only place the word TETRAPLEGIA is used; the text on printed p.38 calls
+  the same picture "quadriplegia". Both recorded. Caption in italic blue:]
+
+*Patterns of motor loss according to the anatomical site of the lesion*
+
+### Test yourself in the following quizzes and figure out the clinical finding if the brain is affected in the following sites:
+
+1. Left cerebral frontal cortex (the upper part)
+2. Left cerebral frontal cortex (the lower most part)
+3. Central lesion affecting the uppermost part of both cerebral cortices.
+4. Left internal capsule (including all the corticospinal fibers and the corticobulbar fibers to
+   the facial nerve)
+5. Left midbrain (including the corticospinal fibers and the oculomotor nerve nucleus).
+6. Left pons (including the corticospinal fibers and the facial nerve nucleus).
+7. Complete trans-section of the spinal cord at C3 level.
+8. Hemi section of the right side of the spinal cord at C4 level.
+9. Complete trans-section of the spinal cord at T12 level.
+10. Hemi section of the right side of the spinal cord at L1 level.
+
+[⚠️ Flag: TEN QUESTIONS ARE ASKED AND NONE IS ANSWERED. No answer key follows on this page and
+PDF p.51 is the chapter 4 opener, so the answers appear nowhere. Items 5 and 6 are the chapter's
+ONLY approach to brainstem crossed syndromes, and they are set as unanswered exercises — no
+named brainstem syndrome (Weber, Millard-Gubler, Wallenberg or any other) appears anywhere in
+the chapter.]
+
+*"Once you perfectly answer these quizzes, keep calm and be sure that you got the clinical
+pearls of localization, and you are ready to start your neurology course!"*
+
+[The closing quotation is printed in italic dark red, centred, and ends the chapter. Nothing
+follows it on the page.]
+
+---
+
+# END OF CHAPTER 3 (printed p.39 = PDF p.50).
+# PDF p.51 (printed p.40) = CHAPTER 4, "CEREBROVASCULAR DISEASES / 'ISCHEMIC CEREBROVASCULAR
+#   STROKE'" — verified by looking at it, not by a contents page.

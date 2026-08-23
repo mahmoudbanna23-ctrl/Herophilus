@@ -1,0 +1,714 @@
+# NEUROPSYCHIATRY (ASM MINDS) — NEUROLOGY, CH.2 NEUROLOGY SHEET (second half)
+# Source: Semester 8\Neuro\Theoritical\Book\neuropsychiatry.pdf
+# Printed pp. 15-27  =  PDF pp. 26-38.  Offset verified on these pages' own footers:
+#   PDF 26 prints footer "15"  ->  PDF = printed + 11  (NEUROLOGY half).
+#   Every page in the range was checked: PDF 27="16", 28="17", 29="18", 30="19", 31="20",
+#   32="21", 33="22", 34="23", 35="24", 36="25", 37="26", 38="27". The offset holds throughout.
+# Boundary verified: PDF 39 prints footer "28" and is the CHAPTER 3 opener
+#   ("LOCALIZATION IN NEUROLOGY", dark-navy CHAPTER band with numeral 3). Chapter 2 really
+#   does end at printed 27. PDF 39 is NOT transcribed here — a third agent owns chapter 3.
+# Transcribed 2026-08-23 from 150 dpi renders (300 dpi re-render used on printed p.25's
+#   dermatome/peripheral-nerve figure).
+# Nothing here is completed from outside knowledge. [illegible] marks anything unreadable.
+# NO (Tutorial)/(T) marker, NO star-glyph rating and NO figure numbering anywhere in this half.
+#   Figures carry italic blue captions or none at all; none is numbered.
+# Every page in this half runs a decorative blue "Neurology Sheet" wordmark top-right and a
+#   blue bracket ornament top-left. Not repeated below.
+# ⚠️ Ch.2 starts at printed 3 — the first half (printed 3-14) is another agent's file.
+
+---
+
+## printed p.15  (PDF p.26)  [neurology half]
+
+### VII. Facial
+
+- It supplies the muscles of the face, which are used for both voluntary movements and
+  emotional expression.
+- Observe any asymmetry of the face (especially nasolabial folds and forehead corrugations)
+  and any involuntary movements.
+
+#### Movements = Motor
+
+- **Test** the upper face (closure of the eyes, elevation of the eyebrows, frowning)
+- **Test** the lower face (showing the teeth, pursing the lips blowing and whistling)
+- **Test emotional movements** by telling the patient a joke & see the degree of the deviation
+  on laughing.
+- **Test** for the **autonomic function** (lacrimation & salivation)
+- **Test** for the **taste sensation** in the anterior 2/3 of the tongue: Dry the tongue & put
+  solutions on each tongue half & see if he will identify the taste.
+
+[FIGURE, right margin, no number. A coloured anatomical drawing of the gustatory pathway: a
+coronal brain section above, a tongue and pharynx below, with arrows running upward. Labels
+read: `Gustatory cortex (in insula)`, `Thalamus`, `in medulla oblongata`, `Facial nerve (VII)`,
+`Glossopharyngeal nerve (IX)`. Italic blue caption: `Gustatory Pathway "Taste"`.]
+
+### VIII. Vestibulocochlear
+
+If there is impairment or loss of hearing, it might be of the conducting type (middle ear
+disease), or of the perceptive type (nerve lesion ie sensory neural hearing loss). The tuning
+fork (512 Hz) tests are used to distinguish one from the other. These tests are based on the
+fact:
+
+1. **In a normal individual,** air conduction for sounds is better than bone conduction.
+2. **In middle ear deafness,** air conduction is diminished or lost, while bone conduction is
+   relatively increased.
+3. **In nerve deafness,** both air and bone conduction are diminished or lost.
+
+#### a) Two tests are used: (both are not very reliable, particularly the second)
+
+- **a) Rinne's test:** A vibrating tuning fork base is placed on the mastoid process (the ear
+  being closed by the examiner's finger), and when the patient cannot hear any more in this
+  position, it is held with the branches close to the auditory meatus. In a normal individual,
+  and in a patient with partial nerve deafness, the sound can be heard by air conduction after
+  bone conduction has stopped. In middle ear deafness this does not occur.
+- **b) Weber test:** A vibrating tuning fork base is placed on the forehead in the middle line.
+  The sound is heard in a normal individual at the middle line, in nerve deafness at the normal
+  ear, and in middle ear deafness at the affected ear.
+
+[Note: the numbering is odd in the source — an outer `a)` heading ("Two tests are used")
+contains an inner `a)` and `b)`. There is no `b)` at the outer level anywhere on this page or
+the next; the list simply moves on to cranial nerve IX. Transcribed as printed.]
+
+---
+
+## printed p.16  (PDF p.27)  [neurology half]
+
+### IX. Glossopharyngeal
+
+The glossopharyngeal nerve: usually not affected alone, but **with vagus nerve**.
+
+- **A) Sensory functions:** examine the taste in the posterior third of the tongue (rather
+  difficult)
+- **B) Reflex functions:** do *the pharyngeal (gag) reflex* (by tickling the back of the
+  pharynx, the posterior pharyngeal wall; after depressing the tongue by a spatula.
+
+[The bracket after "spatula" is never closed in the source — a typo. Transcribed as printed.]
+
+[FIGURE, top right, no number. Sagittal drawing of head, neck, brainstem and stomach with the
+IX and X nerve pathways traced in red and green. Labels read: `Nucleus solitarius`,
+`Nucleus ambiguus`, `Brain stem`, `IX`, `X` (twice), `Upper thoracic ganglia`. Italic blue
+caption: `Gag Reflex`.]
+
+### X. Vagus
+
+- **The vagus**: is concerned with the motor functions of **palate**, **pharynx** & **larynx.**
+- **The palate**: In unilateral paralysis, on saying <<Ah>>, watch the uvula, it will deviate
+  to the healthy side. In bilateral paralysis the uvula will be central, yet not elevated.
+- There will be nasal speech and regurgitation of fluids through the nose when the patient
+  tries to swallow.
+
+### XI. Accessory
+
+The spinal accessory nerve supplies the upper part of the **trapezius** and **sternomastoid**.
+
+1. **Trapezius** is tested by asking the patient to shrug his shoulder, the physician should
+   examine it from the back.
+2. **Sternomastoid** is tested by asking him to rotate his chin towards the opposite side, and
+   push against resistance > The other method to examine both sternomastoid together by pushing
+   with the chin down on the examiner's hand.
+
+### XII. Hypoglossal
+
+The hypoglossal nerve: is the motor nerve of the tongue. It is tested by asking the patient:
+
+a) To protrude his tongue and observe any deviation (which will be to the paralyzed side),
+   wasting (by wrinkling of the mucosa), or involuntary movements (tremors, fasciculations)
+b) To press with the tongue against the inside of either cheek and its power is tested with
+   your finger on the outside of the patient's cheek.
+
+[Bottom third of the page is blank. The cranial-nerve section ends here; the motor examination
+starts on the next page.]
+
+---
+
+## printed p.17  (PDF p.28)  [neurology half]
+
+## E. Motor examination
+
+[Section banner in a pale-grey band; the letter is printed as a Greek epsilon "Ɛ." rather than
+a Latin E — the book's own glyph. Read as section E, following D on an earlier page.]
+
+### 1. Posture
+
+- Fixed attitude due to the illness
+  flexed attitude → parkinsonism.
+- Hemiplegic attitude.
+- Skeletal deformities e.g., High arched foot, Scoliosis, Kyphosis
+- ***Examine for wrist or foot drop***:
+  By telling the patient to extend his hand / foot and move it against gravity
+  - **Causes of wrist drop:**
+    1. Peripheral neuropathy
+    2. Radial nerve injury
+  - **Causes of foot drop:**
+    1. Peripheral neuropathy
+    2. Peroneal nerve injury
+
+[PHOTOGRAPH, top right, no caption. A pair of bare feet on a dark-green cloth; the near foot is
+plantar-flexed / dropped. Illustrates foot drop.]
+
+[LINE DRAWING, right margin, boxed, no caption. A hand hanging limply at the wrist — wrist drop.]
+
+### 2. Involuntary movements
+
+- Tremor – Chorea – Athetosis – Dystonia – Myoclonus – Tic *[refer to involuntary movements
+  lecture]*
+
+  [Cross-reference: the book names the six involuntary movements but describes none of them
+  here, deferring to a lecture.]
+
+- **Fasciculations:**
+  - Inspection
+  - Inspections after tapping with a hammer.
+  - Inspection after hyperventilation.
+
+[PHOTOGRAPH, right margin, no caption. Dorsum of a hand against a dark background, showing
+wasting of the interossei. Sits beside the Fasciculations block.]
+
+### 3. Muscle status
+
+- Watching the muscle bulk for any asymmetry.
+- If in doubt measure the circumference by a meter. First choose a near fixed bony prominence,
+  measure a distance then measure the circumference. In the other limb do the same and compare
+  both sides.
+- If decreased it is called atrophy, if increased it is hypertrophy.
+  - **Causes of atrophy:**
+    - Muscle dystrophy
+    - Peripheral neuropathy
+    - Root lesion
+    - AHC disease
+  - **Cause of hypertrophy:**
+    - Exercise
+    - Anabolic steroids
+  - **Pseudohypertrophy** like hypertrophy but with muscle weakness (seen in Duchenne muscle
+    dystrophy)
+
+[PHOTOGRAPH, bottom right, no caption. Two lower legs from the front on a blue dotted drape;
+the calves look bulky. Illustrates pseudohypertrophy.]
+
+---
+
+## printed p.18  (PDF p.29)  [neurology half]
+
+### 4. Muscle tone
+
+- The basal muscle tone is tested by a passive movement of the limb, where the examiner moves
+  the limb across the full range of mobility of each joint **(the elbow, hand & knee are the
+  best sited to evaluate the muscle tone)**
+
+  [Typo in the source: "sited" for "sites". Transcribed as printed.]
+
+[BOXED CALLOUT, dashed border, centred:]
+> **The comment is:** Normal, Hypotonia or Hypertonia.
+
+- **Causes of hypertonia:**
+  1. ***Rigidity*** **(Extrapyramidal)** e.g., Parkinson's disease.
+     - Cog wheel (if tremors are present)
+     - Lead pipe
+  2. ***Spasticity***: Clasp-knife in upper motor neuron lesion e.g., stroke, MS
+
+- **Causes of hypotonia:**
+  - Lower motor neuron lesion: e.g., Peripheral neuropathy
+  - Chorea
+  - cerebellar lesion
+  - UMNL in shock stage
+
+[FIGURE, centred, no number. Four line-drawn panels of a hand/forearm being passively moved,
+labelled a-d. Column headings above: `Relax` · `Lead-pipe rigidity` · `Cog-wheel rigidity` ·
+`Spasticity`. Sub-captions below: `a Little resistance` · `b Uniform resistance` ·
+`c On-and-off resistance` · `d High to low resistance`. Panel c carries a cog-wheel/gear
+graphic; panel d a jagged arrow.]
+
+### 5. Muscle power
+
+- We examine groups of muscles around each joint on both sides.
+- First ask the patient to move a limb freely then perform the action against resistance.
+- The patient is asked to do a certain action e.g., if we are examining the flexors of the
+  elbow, we ask the patient to flex and then try to extend the elbow.
+- We mention if there is weakness, determine its degree and if there is a certain pattern of
+  weakness.
+
+[Bottom half of the page is blank; the power grading table runs over to printed 19.]
+
+---
+
+## printed p.19  (PDF p.30)  [neurology half]
+
+#### Degree of weakness
+
+[Header in a pale-blue band.]
+
+- **0** = No movement at all
+- **1** = Flickers (movement too fine to move a joint)
+- **2** = Can move with elimination of gravity (parallel to the floor) 3 = can move against
+  gravity, but not against resistance
+- **4** = Can overcome mild resistance
+- **5** = Normal power (can oppose any resistance)
+
+[⚠️ LAYOUT FAULT IN THE SOURCE: grade **3** has NO bullet of its own — its text is run on to the
+end of the grade-2 bullet, as reproduced above. The six grades 0-5 are all present; only the
+typesetting is broken. Verified at 150 dpi; nothing is missing.]
+
+#### Patterns of weakness:
+
+[Header in a pale-blue band. Two columns divided by a vertical rule.]
+
+| Left column | Right column |
+|---|---|
+| **Hemiparesis:** weakness of one side of the body | Proximal vs distal weakness |
+| **Paraparesis:** weakness of both lower limbs | Weakness of pyramidal distribution: |
+| **Quadriparesis:** cervical cord lesion, bilateral pyramidal lesions | — Upper limb; extensor more than flexors |
+| **Monoparesis:** weakness of one limb | — Lower limb; flexors more than extensors |
+
+[The two columns are parallel lists, not a row-by-row correspondence; rendered as a table only
+to preserve the layout.]
+
+## F. Coordination
+
+*Testing the cerebellar function*
+
+### A. In the Upper limb
+
+- **Finger to finger test**: ask the patient to touch the tip of the index finger of both
+  sides, [once with the eyes opened, then with the eyes closed]
+- **Finger to nose test**: ask the patient to touch the tip of his nose with the index finger;
+  [once with the eyes opened, then with the eyes closed]
+- **Finger to the examiner finger:** touch with the tip of the index the doctor's fingertip.
+- **Rapid alternating movements:** Ask the patient to rapidly supinate and pronate the hand.
+  ***Dysdiadokokinesia*** = *having difficulty in rapid alternating movement*
+
+  [The book spells it *Dysdiadokokinesia*. Preserved exactly.]
+
+- **Rebound phenomena:**
+  - Tap on outstretched patient's upper limbs.
+  - Sudden release of the examiner's resistance of the patient's firmly flexed forearm (while
+    protecting the patient's face)
+
+[FIGURE, right margin, no number. Line drawing of a seated man with one arm outstretched, index
+finger raised, touching the other index — the finger-to-finger test.]
+
+[FIGURE, right margin, no number. Line drawing of two hands, palms up and palms down, with
+curved arrows — rapid alternating movements.]
+
+[FIGURE, bottom right, no number. Line drawing of a man with a flexed elbow near his face.
+Italic caption above: `Rebound phenomenon`. Text block beside it: `Ask the patient to flex elbow
+against resistance. Sudden release may cause the hand to strike the face due to delay in triceps
+contraction.`]
+
+---
+
+## printed p.20  (PDF p.31)  [neurology half]
+
+### B. In the Lower limb
+
+- **Heel Knee Chin test:**
+  Three steps; ask the patient to do the followings:
+  - Elevate the lower limb of the examined side in extension.
+  - Point with the heel of the examined side to the knee of the opposite one
+  - Pass the heel on the chin of the tibia in a straight line.
+
+  ["chin of the tibia" — the book's own wording (for the shin/anterior border of the tibia).
+  Preserved exactly.]
+
+- **Tandum walk:** Ask the patient to walk in a straight line with one foot immediately in
+  front of the other (heel to toe) *Stay close enough to patient to catch them if he falls.*
+
+  [The book spells it *Tandum walk*, not "tandem". Preserved exactly; the caution sentence is
+  printed in red italic.]
+
+- **Romberg Test**
+  - The patient stands barefoot with his feet close to each other First, eyes open then close
+    the eye
+  - If okay with eyes open, but sways or falls with his eyes closed = + ve Romberg's
+    *[Mainly tests deep sensation]*
+
+[FIGURE GROUP, centred, no numbers. Three line drawings of a supine patient performing the three
+steps of the heel-knee-shin manoeuvre, under the bold italic caption `Heel Knee Chin test`. To
+their right, a fourth drawing of a leg/foot stepping heel-to-toe along a line, captioned
+`Tandum walk`.]
+
+### ATAXIA
+
+[Large centred heading in a pale band.]
+
+- Ataxia is defined as lack of coordination when a voluntary movement attempted.
+- If affects any motion that requires muscles to work together to perform a function, e.g.,
+  Walking, Speaking, Swallowing, Writing, Eye movements.
+- Ataxia is 3 types: Cerebellar – Sensory – Vestibular
+
+| | **Cerebellar** | **Sensory** | **Vestibular** |
+|---|---|---|---|
+| **Speech** | Staccto "scanning" dysarthria | Normal | Normal |
+| **Nystagmus** | Present | Absent | Present |
+| **Muscle tone** | Hypotonia | Hypotonia | Normal |
+| **Incoordination** | Present with eye opened & closed | Present with eyes closed only | Absent |
+| **Gait** | Ataxic wide based | Stamping / high steppage | Ataxic |
+| **Reflexes** | Average | Diminished | Normal |
+| **Romberg's test** | Negative | Positive | Negative |
+| **Auditory Symptoms** | Absent | Absent | Present |
+| **Defect in** | Cerebellum | Deep sensation | Vestibular system |
+
+[The book prints "Staccto" for "staccato". Preserved exactly.]
+
+---
+
+## printed p.21  (PDF p.32)  [neurology half]
+
+## G. Gait
+
+*Ask the patient to walk and watch his gait.*
+
+### Abnormal neurological gait patterns:
+
+- **Stamping**: in deep sensory loss
+- **Waddling:** in proximal muscle weakness, hip dislocation
+- **Circumduction /Hemi paretic:** in pyramidal tract lesions
+- **Shuffling:** in parkinsonism
+- **High steppage:** in foot drop
+- **Spastic (if advanced scissoring):** bilateral Pyramidal lesions
+- **Ataxic:** in cerebellar lesions
+
+## H. Reflexes
+
+### 1) Deep tendon reflexes
+
+- Generally, expose and relax the limb, tab on the tendon, and observe the muscle contraction.
+
+  ["tab on the tendon" — typo for "tap". Preserved as printed.]
+
+- A good reflex = good limb positioning + localizing the tendon + good hammer tapping +/-
+  asking for reinforcement when needed.
+
+[TABLE, five columns, each cell carrying a colour drawing of the manoeuvre beneath the root
+value. The drawings are labelled in red: `BICEPS R.`, `BRACIORADIALIS R.` (the book's own
+misspelling of brachioradialis), `TRICEPS R.`; the knee and ankle panels are unlabelled.]
+
+| **Biceps** | **Brachioradialis** | **Triceps** | **Knee** | **Ankle** |
+|---|---|---|---|---|
+| **C5, 6** | **C5, 6** | **C6, 7** | **L3, 4** | **S1, 2** |
+
+- **Reinforcement technique**
+  - Upper extremities: clench teeth
+  - Lower extremities: clench the teeth or lock fingers and pull one against the other
+
+- **Clonus**
+  A repetitive contraction in response to sudden sustained contraction.
+  - **Patellar clonus:** suddenly push the patella downwards in an extended limb.
+    If positive the patella will move upwards and downward
+  - **Ankle clonus:** flex the knee and ankle, then suddenly contract the foot; If positive the
+    foot will repeatedly flex and extends.
+
+[FIGURE, bottom right, no number. Line drawing of a hand dorsiflexing a patient's foot, with
+arrows. Small bold caption above: `Clonus test`.]
+
+---
+
+## printed p.22  (PDF p.33)  [neurology half]
+
+| **Causes of hyperreflexia:** | **Causes of hyporeflexia / areflexia:** |
+|---|---|
+| Anxiety | Congenital areflexia |
+| Pyramidal lesion above the center of the reflex | Upper motor neuron lesion in shock stage |
+| thyrotoxicosis | Lower motor neuron lesions: AHC, root lesions, polyneuropathy, Hypothyroidism |
+
+[The right cell's last entry is printed as a single bulleted item running over two lines:
+"Lower motor neuron lesions: AHC, root lesions, polyneuropathy, Hypothyroidism".]
+
+- **Grades of reflexes**
+  - **Grade zero:** absent after reinforcement
+  - **Grade 0+:** present after reinforcement
+  - **Grade 1:** just elicited.
+  - **Grade 2:** brisk
+  - **Grade 3:** exaggerated
+  - **Grade 4:** exaggerated with clonus.
+
+### 2) Superficial reflexes
+
+- ***Abdominal reflex***:
+  - Upper abdomen T7- T10
+  - Lower abdomen T 10 - T12
+  - Strike the relaxed abdomen (with the knees slightly flexed) from outside inwards, quickly
+    and compare both sides.
+  - *Normal response* » present
+  - **If absent** this means an upper motor neuron lesion on this side
+
+[FIGURE, right margin, no number, no caption. Greyscale photograph of an abdomen with four
+arrows drawn pointing inwards towards the umbilicus, from the four quadrants.]
+
+- ***Plantar reflex S1***
+  - With a key strike the outer side of the foot from the heel upward towards the toes.
+  - Normally the big toe will flex.
+  - If it extends = dorsiflex +/- fanning of other toes, this is positive **Babinski's sign.**
+  - ***Causes of an extensor plantar (Babinski sign):***
+    1. Pyramidal tract lesion
+    2. Normal in babies < 12 months
+    3. In deep coma
+    4. During seizures and postictal.
+
+[FIGURE, right margin, no number. Two soles of feet with red curved arrows tracing the lateral
+plantar stroke. Bold italic caption: `Plantar reflex`.]
+
+[FIGURE, bottom right, no number. Two line drawings of a foot being stroked. Left panel labelled
+`Normal`, annotated `Toes down (flexion)`. Right panel labelled `Babinski's sign`, annotated
+`Up` and `Fanning of toes`.]
+
+---
+
+## printed p.23  (PDF p.34)  [neurology half]
+
+### 3) Visceral reflexes:
+
+- Vesical reflex: Controlling the urinary flow & bladder.
+- Genital reflex: Ask about potency.
+- Anal reflex: Controlling defecation and anal sphincters.
+
+### 4) Pathological reflexes
+
+- Glabellar reflex
+- Wattenberg reflex
+- Finger jerk reflex
+- Hoffman reflex
+
+[⚠️ The four pathological reflexes are NAMED ONLY — the book gives no method, no normal response
+and no interpretation for any of them. Nothing is missing from the transcription; the list is
+bare in the source. "Wattenberg" is the book's spelling.]
+
+## I. Sensory system examination
+
+### A. Superficial sensation
+
+Sensory examination starts from distal to proximal and check the three sensory modalities.
+Start also from the pathological side to the normal side.
+
+### 1) Pain
+
+- ***It's a must to use a disposable pin in pain sensation (toothpick can do the job)***.
+- prick the patient skin in an area with normal sensation (check the face as you know from the
+  previous examination if it is normal or not)
+- If the patients say that the pain sensation is less than the other point proceed till you
+  reach the area with normal sensation.
+- Based on history and examination done till now, will direct the sensory examination pattern.
+  e.g. looking for sensory level, glove and stoking hypothesia radicular sensory loss. etc.
+
+  [The book writes "stoking" here and "stalking" on printed 26 — both for "stocking". Both
+  preserved as printed.]
+
+- Pain is carried by the lateral spinothalamic tract.
+
+[FIGURE GROUP, bottom of page, no number. Eight small body outlines in two rows of four, each
+shaded to show a distribution of sensory loss, under the bold italic caption
+`Patterns of sensory loss`. Labelled:]
+- `A | Generalised peripheral neuropathy` — shading over both hands and both feet/lower legs.
+- `B | Sensory roots` — bands marked `C5`, `C7`, `L5` on the limbs.
+- `C | Single dorsal column lesion` — one leg and lower trunk shaded.
+- `D | Transverse thoracic spinal cord lesion` — everything below a mid-trunk level shaded.
+- `E | Unilateral cord lesion (Brown–Séquard)` — two different shades on opposite lower limbs
+  (one pink, one blue), showing the dissociated loss.
+- `F | Central cord lesion` — a cape/shawl distribution over both shoulders, upper trunk and
+  arms.
+- `G | Mid-brainstem lesion` — one half of the face plus the opposite half of the body.
+- `H | Hemisphere (thalamic) lesion` — one whole half of the body including the face.
+
+[FIGURE, bottom right, no number. Coloured diagram headed `PAIN PATHWAYS`, showing a coronal
+brain, brainstem and cord section with the tract traced upward. Labels: `Cerebral cortex`,
+`Thalamus`, `Midbrain`, `Medulla`, `Dorsal root ganglion`, `Primary afferent`, `Spinal cord`,
+`Lateral spinal thalamic tract`.]
+
+---
+
+## printed p.24  (PDF p.35)  [neurology half]
+
+### 2) Touch
+
+- The same procedure but using a brush or cotton piece
+- The pathway carrying this sensation is mainly the spinothalamic tract
+
+### 3) Temperature:
+
+- Use 2 different objects, with different temperature, follow the same pattern of examination
+  as in pain sensation
+- Temperature is carried by the spinothalamic tract
+
+### B. Deep sensation
+
+- We start usually in the lower limb before the upper limb
+- we need to discriminate between deep sensory loss secondary to peripheral neuropathy or due
+  to posterior column affection.
+
+### 1) Vibration sense
+
+- The main goal of this type of examination is to differentiate between polyneuropathy and
+  sensory affection due to cord lesion.
+  - Use a 128 Hz tuning fork,
+  - tap it till it vibrates,
+  - Then put it on the medial malleolus till the patients says that he cannot feel the
+    vibration.
+  - Then move it to the anterior superior iliac spine and ask the patient if he still feels it
+    or not, if not proceed to the clavicle
+- It can be tested in the back over the spine to detect a level.
+- Compare both sides
+- The vibration sense is usually the first deep sensation to be lost.
+
+### 2) Joint position & movement
+
+- fix a proximal phalanx and move the inter-phalangeal joint move it to make the patient feel
+  the movement and show him the directions to be examined (upwards/ downwards) then tell the
+  patient to close his eyes.
+- Ask him if his distal phalanx / big toe is moving or not (joint movement); and then ask him
+  where the tip is (joint position).
+
+[FIGURE, centred, no number, no caption. Two colour photographs side by side of an examiner's
+hands holding a patient's great toe between finger and thumb, moving it up and down.]
+
+### 3) Pressure sense
+
+- press a muscle gently and ask the patient if he can feel the pressure and check for
+  tenderness on pressure.
+
+[Note: the deep-sensation list stops at 3) Pressure sense; there is no 4). The bottom quarter of
+the page is blank apart from bleed-through from the reverse side.]
+
+---
+
+## printed p.25  (PDF p.36)  [neurology half]
+
+[FIGURE, occupies the top half of the page, no number and NO caption. A full-length anterior
+figure of a man split down the midline: the LEFT half of the picture is a coloured dermatome
+map, the RIGHT half a line drawing of the cutaneous peripheral nerve fields. Re-rendered at
+300 dpi to read the labels.
+
+Dermatome labels down the coloured half, top to bottom:
+`C2,3` (scalp/upper face), `C2,3` (neck), `C3,4` (shoulder/upper chest), `C5,6` (upper arm),
+`T1`, `C5,6` and `C8, T1` running down the arm, `C6,7,8` and `C8, T1` at the hand,
+trunk bands `T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12` in sequence, then `L1`, `S2,3` (perineal,
+partly obscured by a lead line), `L1,2` (upper thigh), `L2,3` (thigh), `L3,4` (knee/lower leg),
+`L5, S1,2` (lateral leg — partly obscured), `L4,5` (partly obscured), `L5, S1,2` (foot).
+
+Peripheral nerve labels down the line-drawn half, top to bottom, each on a lead line:
+`Trigeminal`, `Supraclavicular`, `Superior lateral`, `Medial brachial`, `Intercostobrachial`,
+`Medial antebrachial`, `Lateral antebrachial`, `Iliohypogastric`, `Genitofemoral`,
+`Ilioinguinal`, `Ulnar`, `Median`, `Lateral cutaneous`, `Posterior cutaneous`,
+`Intermediate cutaneous`, `Medial cutaneous`, `Obturator`, `Patellar plexus`,
+`Superficial fibular`, `Sural`.]
+
+### C. Cortical sensation
+
+#### 1) Point localization
+
+Ask the patient to close his eyes, and apply a pin prick or touch him, and ask the patient
+where the stimulus was.
+
+#### 2) Two Point Discrimination
+
+- Touch the patient's body in two places simultaneously. Check if he can identify that these
+  are 2 stimuli.
+- Alternate irregularly with one-point touch. And ask the patient to identify "one" or
+  "two stimuli"
+
+#### 3) Graphesthesia
+
+With the blunt end of a pen or pencil, draw a large number or letter on the patient's palm or
+sole, ask the patient to identify the number. If the patient is illiterate, ask him if you are
+drawing a line or circle on his skin.
+
+#### 4) Stereognosis
+
+Place a familiar object in the patient's hand (coin, paper clip, pencil, etc.) and ask the
+patient to tell you what it is, and check on both sides
+
+---
+
+## printed p.26  (PDF p.37)  [neurology half]
+
+- **Patterns of sensory loss:**
+  - Glove and stalking hypothesia:  peripheral neuropathy
+  - Radicular sensory loss denoting: root lesion
+  - Sensory or motor loss in a confined area in: Individual nerve lesions
+  - Multiple sensory loss in different anatomically distant sited: Mononeuritis multiplex
+  - If one limb is involved: Plexus lesions
+  - Sensory level: Spinal cord lesions
+  - Hemihypothesia without involvement of the face: Cervical hemisection of the cord.
+  - Hemihypothesia with involvement of the face; internal capsule.
+
+  ["stalking" for "stocking" and "sited" for "sites" are the book's own spellings — preserved.
+  "hypothesia" is the book's consistent spelling throughout this chapter.]
+
+## J. Skull & spine examination
+
+- Micro/macrocephaly, Hydrocephalus
+- Examination of the spines for: Tenderness - Deformity (scoliosis /kyphosis)
+
+## K. Trophic Changes:
+
+- Like loss of skin appendages, like hair & nails
+- Ulcers or loss of the tips of fingers; polyneuropathy
+
+## L. Other systems:
+
+- **Chest examination:** for sarcoidosis, TB, malignancy.
+- **Cardiac examination:** for rheumatic or ischemic heart. disease, arrhythmia.
+- **Abdominal examination:** for liver diseases, organomegaly.
+
+[BOXED CALLOUT, dashed blue border, centred:]
+> **When you finish the examination, you should know where is the lesion?**
+>
+> **Where is the lesion → Localization**
+
+[The word "Localization" is printed in red; it forward-references chapter 3, which is titled
+"Localization in Neurology".]
+
+- **Patterns of affection:**
+  - ***Focal lesion***: (one lesion can explain all signs) e.g., vascular, traumatic, tumors.
+  - ***Multifocal lesion***: disseminated in several sites, not anatomically related e.g.,
+    Multiple sclerosis, vasculitis, metastases, syphilis.
+  - ***Diffuse systemic lesions***: in anatomically related system, e.g. Hereditary ataxia,
+    motor neuron disease, B12 deficiency.
+
+---
+
+## printed p.27  (PDF p.38)  [neurology half]
+
+- **Site of the lesion**
+  - ***UMNL***
+    - Cortical
+    - Subcortical; white matter
+    - Internal capsule
+    - Brain stem
+    - Spinal
+  - ***LMNL***
+    - Anterior horn cell
+    - Root: motor or sensory
+    - Peripheral nerve
+    - Neuromuscular junction and muscle
+
+[FIGURE, top right, no number, no caption. Hand-drawn style diagram in blue and pink of the
+corticospinal pathway: a coronal brain section, a midbrain section, a cord cross-section and an
+arm with a muscle. Labels: `MOTOR SIGNAL`, `UPPER MOTOR NEURONS`, `MIDBRAIN`,
+`CORTICOSPINAL TRACT`, `LOWER MOTOR NEURON (INNERVATES the ARM & FOREARM)`, `MEDULLA`,
+`VENTRAL HORN`.]
+
+| **Upper Motor Neuron Lesion** | **Lower Motor Neuron Lesion** |
+|---|---|
+| Spastic paresis | Flaccid paralysis |
+| Hyperreflexia | Areflexia |
+| Babinski sign present | No Babinski sign |
+| Increased muscle tone | Decreased muscle tone / atonia |
+| Disuse muscle atrophy | Atrophy of muscles |
+| Clasp knife reflex | Fasciculations |
+| Decreased speed of voluntary movement | Loss of voluntary movement |
+| Large area of body involved | Small area of body affected |
+| Spastic bladder | Flaccid bladder |
+
+[FIGURE, bottom of page, no number, no caption. Two hand-drawn panels.
+
+Left panel: a vertical run of vertebrae with the sympathetic chain beside it. Labels:
+`HEMISECTION (RARE)`, `SYMPATHETIC CHAIN`, `T₁ SPINAL LEVEL`, with an X marking the lesion.
+
+Right panel: a man's face with glasses, one eye drooping. Labels: `FACIAL REGION`,
+`ANHIDROSIS (FAILURE to SWEAT)`, `MIOSIS (CONSTRICTED PUPIL)`, `PTOSIS (DROOPY EYELID)`.
+Bold caption beneath: `HORNER'S SYNDROME – SAME SIDE as LESION`.
+
+⚠️ Horner's syndrome appears ONLY as this figure — there is no body text about it on this page
+or anywhere else in this half of the chapter. The figure IS the teaching.]
+
+[End of chapter 2. The next page, PDF 39 / printed 28, is the CHAPTER 3 opener
+"LOCALIZATION IN NEUROLOGY" — verified, not transcribed here.]

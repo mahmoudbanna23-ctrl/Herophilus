@@ -27,38 +27,38 @@ there before resuming a paused stream. Where this file and the archive disagree,
   `ps-therapy` (13.7 and 16.0 against 11 printed). ONLY PRINTING SETTLES IT.**
 - **⚠️⚠️ TRIM FIRST, BUT KNOW WHEN TO STOP. A trim is duplication or my own prose, never a fact.**
   `ps-ocd` had **132 words on page 14**; two second copies recovered **82 words of paper**, leaving
-  **50** and nothing that was duplication — so it split. ⚠️⚠️ **"A table costs more paper per word"
-  IS REFUTED** — `ps-anxiety` is the **most** table-dense chapter and printed **highest** w/pp.
+  **50** and nothing that was duplication — so it split. ⚠️⚠️ **"A table costs more paper per word" IS REFUTED** — `ps-anxiety` is the **most** table-dense chapter and printed **highest** w/pp.
 - **⚠️⚠️ A SOURCE WORD COUNT UNDER-PREDICTS THIS STYLE BADLY** — `nr-movement` wrote **163 %** of its
   source, **`ps-anxiety` 202 %**, ⚠️⚠️ **`ps-therapy` 277 % — the worst, and STRUCTURAL: A DECK THAT
   NAMES RATHER THAN TEACHES COSTS THE MOST TO WRITE**; writing tight brought `ps-psychosis` to 128 %.
   ⚠️ **My own connective prose is the inflation, it sits ABOVE §14.2's floor, and it is the
   legitimate thing to cut** — 322 w and 240 w cut, **no sourced fact lost**. ⚠️ **Cut an UNTAGGED
   outside claim and a CONSOLIDATED second copy first.** **Rates 296-391 w/pp.**
-- **⚠️⚠️ `nr-intro` IS BLOCKED, NEEDS A USER DECISION, AND HOLDS *EVERY* REMAINING QUESTION — 21.**
-  **12 of 23 probes return ZERO against its deck** (listed in the plan §5). The book HAS it — **39
-  printed pages, incl. a 25-page `Neurology Sheet`** — but image-only: **a subagent render, or a
-  chapter written half from tagged outside knowledge.**
-  ⚠️ **IT OWES TWO SLIDES TO `nr-lmn`:** L1's `Upper`/`Lower Motor Neuron Manifestations` are
-  **counted to `lm-1`, never again** (`str-4`/`hem-7`/`cn-9` filed UMN/LMN there). `op-va` shape.
-- **⚠️ SEVEN SOURCES UNREAD AND RECORDED, NOT GUESSED** — no subagent available: **`L3` p17** (zero
-  words, zero fonts, before the deck's unanswered *NON MOTOR SYMPTOMS ??????* slide) · **book Neuro
-  ch.12** (119-127) · **Neuro ch.6** (57-66) · **Psych ch.9** (249-255 substance), **ch.10** (256-260
-  emergency), **ch.12** (265-270 devices), **ch.13** (271-277 psychotherapy, the book's LAST content
-  page) · **three picture-only slides of `L19`** (p.7, p.14, p.19 — `pdffonts` proves nothing is
-  vector-outlined). **Check `mv-5`'s supplied non-motor table if read.**
+- ✅ **`nr-intro` IS UNBLOCKED — ITS 39 BOOK PAGES WERE READ 2026-08-23** on the user's explicit
+  authorisation, by three subagents: printed **1–39** cached to `content\neuro\book\` as
+  `neuro-ch01-ch02a.txt` · `neuro-ch02b.txt` · `neuro-ch03-localization.txt`, **~16,700 w, nothing
+  illegible. DO NOT RE-RENDER.** ⚠️ **`+11` re-verified on all 39 footers.** ✅ **11 of the 12
+  zero-probes are now sourced**, incl. the **A–F visual field panel** (p.12) and **gracile/cuneate**
+  (p.36, figure labels only). ⚠️⚠️ **THE 12TH WAS A VOCABULARY ARTEFACT, NOT A GAP: the book never
+  writes `lateral column`** — it writes *lateral corticospinal tract* and *dorsal (posterior)
+  column*. **The `ps-anxiety` lesson paid twice: PROBE WITH THE SOURCE'S WORDS.** ⚠️ **Two book
+  contradictions, the unkeyed ten-question quiz, ch.1's four unsolved vignettes: plan §5.**
+  ⚠️ **IT OWES TWO SLIDES TO `nr-lmn`:** L1's `Upper`/`Lower Motor Neuron Manifestations` are **counted to `lm-1`, never again** (`str-4`/`hem-7`/`cn-9` filed UMN/LMN there). `op-va` shape.
+- **⚠️ SEVEN SOURCES STILL UNREAD, RECORDED NOT GUESSED** — the 2026-08-23 render authorisation
+  covered `nr-intro`'s 39 pages ONLY: **`L3` p17** (zero words/fonts, before the deck's unanswered
+  *NON MOTOR SYMPTOMS ??????* slide) · **Neuro ch.12** (119-127) · **ch.6** (57-66) · **Psych ch.9**
+  (249-255), **ch.10** (256-260), **ch.12** (265-270), **ch.13** (271-277, the book's LAST content
+  page) · **three picture-only `L19` slides** (p.7, p.14, p.19). **Check `mv-5` if read.**
 - **⚠️⚠️ TWO ENTRIES OF THAT LIST WERE FALSE AND ARE STRUCK (2026-08-23): Psych ch.10 (NMS) and
   ch.12 (ECT) ARE NOT NEEDED** — `L15`'s back half and `L16` teach NMS in full, `L18` teaches ECT at
   length; fixed in `sm-5`/`sm-7`/`sm-10` and plan §5, **the evidence verbatim in the archive.**
   ⚠️⚠️ **THE RULE: A BOOK'S OWN CROSS-REFERENCE IS A POINTER, NOT A VERDICT** — the 14th payment of
-  *read the slide before declaring a gap*, and the first caused by **the source pointing
-  elsewhere** rather than a failed probe.
+  *read the slide before declaring a gap*, and the first caused by **the source pointing elsewhere** rather than a failed probe.
 - ✅ **BOOK CHAPTERS FULLY SPENT: Psych ch.3, Psych ch.7, Neuro ch.16, Neuro ch.9. ⚠️ Do not
   re-open them.** Their completion blocks are **verbatim in `progress\memory-archive.md`.** Rules
   kept here: **check every deck's BACK HALF** · **declare in your register what you leave a
   sibling** · **⚠️ THE PAIN TAXONOMY IS A VERIFIED ABSENCE** (`npqb-nr-125` — **stop looking**) ·
-  ⚠️ **the MAOI gap stays OPEN** · ⚠️⚠️ **deck and book CONTRADICT EACH OTHER ON THE DOPAMINE
-  PATHWAYS — both recorded, neither corrected** · **`ps-pharm` POINTS, never repeats.**
+  ⚠️ **the MAOI gap stays OPEN** · ⚠️⚠️ **deck and book CONTRADICT EACH OTHER ON THE DOPAMINE PATHWAYS — both recorded, neither corrected** · **`ps-pharm` POINTS, never repeats.**
 - **⚠️⚠️⚠️ `anchorauto.js` SILENTLY DAMAGED 23 BOLD LEADS ACROSS SEVEN SHIPPED CHAPTERS — found and
   repaired 2026-08-23.** It promoted a comma to an em-dash, else inserted one before the first
   `and`/`or` — **both split compound subjects and broke enumerations, and one corrupted a QUOTED
@@ -98,8 +98,7 @@ there before resuming a paused stream. Where this file and the archive disagree,
   **Ten fault shapes, and the timestamp rule: `progress\memory-archive.md`.**
 - ✅ **OPHTHALMOLOGY FINISHED at 36 chapters; its book caches exist** (11 chapters, 70,704 w in
   `content\ophtho\book\` — **do not re-read**). **Its two USER RULINGS of 2026-08-18 and the scope
-  rule are in the archive — settled, do not re-propose.** ⚠️ **Scope comes from the LECTURE SERIES;
-  the book rules content, never scope.**
+  rule are in the archive — settled, do not re-propose.** ⚠️ **Scope comes from the LECTURE SERIES; the book rules content, never scope.**
 - **⚠️ ENT is NOT closed**: 25 §14.5 rows open **+ 33 bold-led paragraphs over the 55-word cap**
   (peds 2, ophtho 0). ⚠️ **A cap auditor must separate BULLETS from PARAGRAPHS** — four fake fails. - **ENT banks, frozen mid-flight**: ✅ Endpoint · ✅ GG Ear+Nose closed. **⚠️ Only GG Throat t10 is
   left** — staged complete, **55 of 66 undrafted**. Then **House from PDF p.15** (`enthd-`, 41 done,

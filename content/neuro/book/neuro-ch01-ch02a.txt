@@ -1,0 +1,884 @@
+# NEUROPSYCHIATRY (ASM MINDS) — NEUROLOGY, CH.1 INTRODUCTION + CH.2 NEUROLOGY SHEET (first half)
+# Source: Semester 8\Neuro\Theoritical\Book\neuropsychiatry.pdf
+# Printed pp. 1-14  =  PDF pp. 12-25.  Offset verified on these pages' own footers:
+#   PDF 12 prints footer "1"  ->  PDF = printed + 11  (NEUROLOGY half).  Held on every page 12-25.
+# Transcribed 2026-08-23 from 150 dpi renders.
+# Nothing here is completed from outside knowledge. [illegible] marks anything unreadable.
+# No (Tutorial)/(T) marker and NO star-glyph rating anywhere in this range.
+# ⚠️ FIGURE NUMBERING: the book numbers NONE of its own figures here. The single exception is on
+#   printed p.13, which carries `Fig. 25.20` — an IMPORTED figure that kept its ORIGINAL book's
+#   number. This book has no chapter 25. Do not cite it as this book's own numbering.
+#   Three figures carry a printed caption/title but no number (`Snellen Chart`, `Trigeminal Nerve`,
+#   `Areas of the cerebral cortex involved in the generation of spoken language`); the rest are
+#   untitled as well as unnumbered.
+# ⚠️ Printed p.8 and p.11 contain ARABIC text — the only non-English in the range. It is
+#   transliterated + glossed in place; the gloss is the transcriber's, never the book's.
+# Ch.1 = printed 1-2 (two pages, the second half of it a blank NOTE ruled page).
+# Ch.2 `NEUROLOGY SHEET` starts at printed 3.
+# ⚠️ Ch.2 continues to printed 27 — printed 15-27 is another agent's file.
+
+---
+
+## printed p.1  (PDF p.12)  [neurology half]
+
+[Chapter opener. Dark-navy `CHAPTER` band across the top with a large serif numeral `1` in a navy
+block at the right edge; the title sits in a pale-blue band below, serif small-caps.]
+
+# INTRODUCTION
+
+- Clinical interview is a type of problem solving. We will try in our guide to help you analyze the
+  commonly seen neurological cases that you may face in your practice and how to solve them in a
+  simple way to make neurological interview interesting mission.
+- First, we should know that to be a good neurologist, you must be a good listener. You should by
+  the end of the interview answer these two questions:
+
+**1. What is the lesion? (A matter of history)**
+
+This can be reached by perfect history taking. Analyzing the onset, course and associated symptoms
+of each complaint will help you decide the nature of the problem (e.g., vascular, inflammatory,
+neoplastic, etc.)
+
+**2. Where is the lesion? (A matter of examination)**
+
+This is the role of neurological examination to catch the localizing signs that help you define the
+exact site of the problem (e.g., pyramidal tract, cerebellum, spinal cord, etc.)
+
+If you could not reach the proper diagnosis by the clinical steps, you should know the art of
+choosing the proper investigation that may help you solve the case.
+
+### How can we approach a neurological case?
+
+[Heading printed centred in a rose/salmon handwriting-style display face — the book's second heading
+style. Not a figure.]
+
+To answer this question, let us have 4 examples to start with:
+
+**Case A** → A 64-year-old man developed all of a sudden right sided weakness and mouth deviation to
+the left side. His past medical history is positive for diabetes and hypertension. He is known to be
+a smoker.
+
+**Case B** → A 55-year-old lady presented to you with a 4-month history of gradually developing
+right sided weakness that progressed to complete paralysis.
+
+**Case C** → A young adult man was completely normal till he received a hit to his head and lost his
+consciousness. After emergency measures, he regained his consciousness with evident right sided
+weakness.
+
+**Case D** → a 32-year-old lady was completely normal till 2 days ago when she started to be
+feverish with headache and blurred vision. Her consciousness became clouded on the next day and by
+examination there was a right sided lag.
+
+[⚠️ The four cases are POSED HERE AND NEVER SOLVED on this page. The next page comments on them
+collectively but assigns no diagnosis to any individual case — see printed p.2. The book never
+prints "Case A = ..." anywhere in ch.1.]
+
+---
+
+## printed p.2  (PDF p.13)  [neurology half]
+
+[Running head, right: `Introduction`, in the book's blue rounded display face. A blue bracket/corner
+ornament runs down the left margin of the text block.]
+
+- These four cases were presented with the same clinical picture (i.e., right hemiparesis) and
+  proper history taking guided us to differentiate between 4 different causes of hemiparesis and
+  this is the answer to the first question **"what is the lesion?"**
+- The art of localization is the way of collecting the clinical signs to answer the second question
+  **"where is the lesion?"**. It will be discussed in a specific section.
+- Finally, remember that neurological interview is not a problem as long as we approach it in a
+  simple and systematic way to reach the diagnosis.
+
+### NOTE
+
+[Heading centred, blue display face, with the final E printed reversed (`NOTƐ`) as a style
+affectation. Under it, the rest of the page — roughly 33 lines — is BLANK DOTTED RULING for the
+reader's own notes. No content. This is the end of chapter 1: chapter 1 is two pages, of which one
+and a half carry text.]
+
+---
+
+## printed p.3  (PDF p.14)  [neurology half]
+
+[Chapter opener, same design as ch.1: navy `CHAPTER` band, large serif numeral `2` in a navy block
+at the right, title in a pale-blue band.]
+
+# NEUROLOGY SHEET
+
+## HISTORY
+
+[Section banner: centred serif capitals in a pale-blue full-width band.]
+
+### 1. Personal data
+
+- **Name**: for identification, communication, registration.
+- **Sex**: some diseases affect particularly one sex more than the other, or x-linked (e.g.,
+  Duchenne muscle dystrophy).
+- **Age**: certain disorders are seen in certain ages e.g.; cerebral atherosclerosis usually doesn't
+  occur before middle age.
+- **Occupation**: this might expose the patient to trauma or intoxication, as when a porter suffers
+  from sciatica due to lumbar disc protrusion
+- **Residency:** A disease may be endemic in certain localities, as leprosy in certain areas of
+  upper Egypt
+- **Marital status**
+- **Date of admission**
+
+[The last two carry no explanatory text — bold lead only, nothing under them.]
+
+### 2. Complaint
+
+- The patient is asked to mention his present complaints and the duration of each.
+- One must write down the words used by the patient and not their scientific (technical terms),
+  e.g., when he says fainting attacks, you must not use syncope instead of fainting.
+- They are arranged chronologically.
+
+**A. Motor symptoms (+ involuntary movement)**
+
+- Wasting: loss of muscle bulk
+- Weakness
+- Cramps: painful muscle contraction
+- Involuntary movement: myoclonus, chorea, convulsions
+
+[`Weakness` is listed with no definition, unlike the three items around it.]
+
+**B. Sensory symptoms**
+
+- Paresthesia: Abnormal sensory perception
+- Allodynia: perceiving non-painful stimuli as painful
+- Hyperalgesia: exaggerated pain sensation
+- Hypothesia: diminished pain sensation
+- Anesthesia: loss of pain sensation
+
+[Book spells it `Hypothesia`. Kept as printed.]
+
+---
+
+## printed p.4  (PDF p.15)  [neurology half]
+
+[Running head, right: `Neurology sheet`.]
+
+**C. Cranial and bulbar symptoms (+ special senses)**
+
+- OCULAR: Diplopia, Ptosis
+- Visual: e.g., Loss of vision - Dimness of vision
+- Facial asymmetry
+- Difficulty in deglutition (dysphagia) – chocking attacks – difficulty in speech (dysarthria) –
+  abnormal voice (dysphonia)
+
+[Book prints `chocking attacks`. Kept as printed.]
+
+**D. Visceral symptoms**
+
+**1. Urinary**
+
+*A. Commonly neurologic:*
+
+- **Urge incontinence** (UMN bladder-release stage): involuntary urinary voiding due to detrusor
+  overactivity (usually before reaching the bathroom to perform voluntary voiding). Occurs in
+  release from spinal shock or UMN lesion. Also called overactive bladder.
+
+  **N.B:** Urgency is the intense desire for urinary voiding without incontinence. It shares the
+  same causes of urge incontinence + it can occur in urinary tract irritation (non-neurologic).
+
+- **Overflow incontinence** (LMN bladder or UMN bladder-shock stage): involuntary urinary voiding
+  due to increased intravesical pressure secondary to urinary retention. Occurs in shock stage of
+  UMN lesion. Also called underactive bladder.
+
+*B. Commonly non-neurologic: -*
+
+- **Stress incontinence:** involuntary urinary voiding due to increased intraabdominal pressure.
+  Occurs mainly due to gynecologic causes (vaginal/uterine prolapse).
+- **Hesitancy:** difficulty in initiating micturition (it can be caused by either neurological or
+  non-neurological causes)
+
+**2. Fecal:** constipation – incontinence
+
+**3. Impotence**
+
+[`Impotence` is a bare heading — nothing under it.]
+
+**E. Manifestations of increased intracranial pressure manifestation**
+
+headache, vomiting and blurring of vision.
+
+[Typo in the heading as printed — `manifestations ... manifestation`, the word twice. Kept as
+printed. The heading letter is printed as the display face's `Ɛ`.]
+
+**F. Ataxia (imbalance)**
+
+[Bare heading — nothing under it.]
+
+**G. High cortical function** Loss of skilled movements (apraxia) – Aphasia - Alternation of
+consciousness
+
+[Book prints `Alternation of consciousness`. Kept as printed.]
+
+---
+
+## printed p.5  (PDF p.16)  [neurology half]
+
+[Running head, right: `Neurology sheet`.]
+
+### 3. Present history
+
+*"The story of each complain should make sense."*
+
+[Printed centred in rose italic. Book writes `complain`, not `complaint`.]
+
+**➢ Each complaint should be analyzed.**
+
+- Onset
+- Course
+- Extent
+- Associated symptom.
+- Treatment received, response to therapy.
+- Negative data
+
+***"After that the examiner might find it necessary to ask certain questions to make the onset and
+course of the disease very clear (natural history)."***
+
+**a) Onset:**
+
+- Sudden (within seconds to minutes)
+- Acute (within minutes to hours)
+- Subacute (days)
+- Gradual or chronic (weeks to months)
+
+**N.B:** It is also important to ask about symptoms such as fever, loss of weight, alteration of
+consciousness, convulsions, headache, vomiting, giddiness, disturbance of vision.
+
+**b) Course:**
+
+- Progressive
+- Regressive
+- Remission & relapse
+
+**c) Important negative data must be mentioned.**
+
+**d) Therapies and response to treatment**
+
+[Both c) and d) are bare headings — nothing under either.]
+
+### 4. Past history
+
+- Similar condition
+- Chronic medical illness: DM, HTN+ treatment (controlled or not)
+- Any previous illness or trauma (particularly to the head and spine), however mild, has to be
+  mentioned.
+- Drugs
+- Allergy
+- If the patient had any specific infection (as syphilis, tuberculosis, bilharzias), he should be
+  asked whether he received the proper treatment or not
+
+[Book prints `bilharzias`. Kept as printed.]
+
+---
+
+## printed p.6  (PDF p.17)  [neurology half]
+
+[Running head, right: `Neurology sheet`.]
+
+### 5. Family history
+
+- Similar condition in the family with detailed relation of relative and age at onset +/- natural
+  history
+- Relevant neurological condition
+- Consanguinity
+
+It is important since some nervous diseases are hereditary (as hereditary ataxia), some run in
+families (as hypertension and diabetes) and some infections are present in family members (as TB
+and leprosy).
+
+### 6. Personal(social) history:
+
+- Lifestyle, work, stress
+- Inquiry into the habits of the patient, alcohol intake or substance abuse e.g. hashish,
+  benzodiazepines, heroin, etc.
+- The diet of the patient should be asked about, particularly if there is possibility of nutritional
+  deficiency.
+- Sleep habits.
+
+[CALL-OUT BOX, dashed pale-blue rounded border, centred text, no figure number:]
+
+> **When you finish the history, you should know what is the lesion?**
+>
+> **What is the lesion → Pathology**
+
+To answer the question of the pathology of the lesion, a good history is able to do so in most of
+the cases even before carrying out the clinical examination.
+
+**1. *Psychogenic*** (e.g., Hysterical hemiplegia), the diagnosis has to be arrived at from two
+angles; the positive angle (psychological stress), and the negative angle (no signs of organic
+disease).
+
+**2. *Organic lesion:***
+
+- **➢ Congenital** (hereditary- error of development -intrauterine infection)
+- **➢ Acquired:** we lay stress on the onset and course of the disease
+  - **Sudden onset (within seconds to minutes) and regressive course:** hemorrhagic, embolic,
+    traumatic
+  - **Acute onset (within minutes to hours) and regressive course:** thrombotic stroke, acute
+    inflammation.
+  - **Subacute onset (days) and regressive course:** immune mediated, metabolic
+  - **Gradual onset or chronic (weeks to months) and progressive course:** malignancy,
+    neurodegenerative disease, chronic inflammation.
+  - **Remission & relapse:** demyelination – vasculitis
+  - **Stair-case curve** -cumulative effect of multiple minor vascular events ex. cerebral
+    atherosclerosis
+
+[This onset/course → pathology mapping is the chapter's core teaching block, and it is the direct
+answer to the four unsolved cases of ch.1 printed p.1.]
+
+---
+
+## printed p.7  (PDF p.18)  [neurology half]
+
+[Running head, right: `Neurology sheet`.]
+
+[FIGURE, top of page, black box border, THREE LINE GRAPHS each with a red/maroon caption box under
+it. No figure number, no title. It is the graphical restatement of printed p.6's onset/course
+teaching. Axes are unlabelled.]
+
+- [Top-left graph: a curve rising steeply, peaking, then declining. Caption box:]
+  `Acute onset + regressive course = Inflammatory or Vascular`
+- [Top-right graph: a straight line rising steadily from the origin. Caption box:]
+  `Gradual onset + progressive course = Degenerative or Neoplastic`
+- [Bottom-centre graph: two separate humps returning to baseline between them. Caption box:]
+  `Remission and relapses = Demyelinating D.`
+
+[⚠️ The figure's captions do NOT match printed p.6's prose exactly. p.6 assigns "acute onset +
+regressive course" to *thrombotic stroke, acute inflammation*; the figure generalises it to
+*Inflammatory or Vascular*. p.6 assigns gradual/progressive to *malignancy, neurodegenerative
+disease, chronic inflammation*; the figure says *Degenerative or Neoplastic*. Both recorded as
+printed; neither corrected. Note also the figure draws only THREE of p.6's SIX course patterns —
+sudden, subacute and stair-case are not drawn.]
+
+## EXAMINATION
+
+[Section banner: centred serif capitals in a pale-blue full-width band.]
+
+[MIND-MAP DIAGRAM, unnumbered, filling the rest of the page. Dark-navy pill root nodes with pale
+pill child nodes; small colour clip-art beside several items.]
+
+**SENSORY** [navy root pill] branches to three:
+
+| Superifical | Deep | Cortical |
+|---|---|---|
+| Pain | Pressure | Point localization |
+| Touch | Vibration | 2 point discrimination |
+| Temperature | Joint | Graphesthesia |
+
+[Book prints `Superifical` — a typo for Superficial. Kept as printed. Clip-art: a hand with a
+pin/pinwheel beside Pain; a hand with cotton beside Touch; a thermometer beside Temperature; a
+tuning fork beside Vibration; a hand with a question mark beside Joint; a hand holding a pinwheel
+beside Point localization; a hand with an S being traced on the palm beside Graphesthesia.]
+
+**MENTAL STATE EXAMINATION** [navy root pill, with a line-drawing of a head in profile containing a
+brain and a circular-arrow symbol] branches to three:
+
+| Glasgow coma scale | Intellectual Functions (TOPMAGII) | Mood & Emotions |
+|---|---|---|
+| Motor | Orientation | Expression |
+| Verbal | Attention | Experience |
+| Eye movement | Memory | — |
+| — | Intelligence | — |
+
+[⚠️ The mnemonic is printed `TOPMAGII` but only FOUR intellectual functions are listed under it
+(Orientation, Attention, Memory, Intelligence). The book does not expand the mnemonic here and does
+not say what its other letters stand for. Recorded as a gap, not filled.]
+
+[A small four-panel cartoon of faces with different expressions sits between the second and third
+columns — decorative, no labels.]
+
+---
+
+## printed p.8  (PDF p.19)  [neurology half]
+
+[Running head, right: `Neurology sheet`. The WHOLE page is one unnumbered mind-map — no prose at
+all.]
+
+**MOTOR EXAMINATION** [navy root pill] branches to three:
+
+- **Posture** [clip-art: two standing figures]
+  - Skeletal deformity
+  - Foot / Wrist drop
+- **Involuntary movements** [clip-art: a hand] — [bare node, NOTHING listed under it]
+- **Muscles** [clip-art: a flexed arm] — branches to three sub-columns:
+
+| Status | Tone | Power |
+|---|---|---|
+| Atrophy | Passive movement | [Arabic — see below] |
+| Hypertrophy | [Arabic — see below] | |
+| Pseudohypertrophy | | |
+
+[⚠️ ARABIC ANNOTATIONS ON THIS PAGE — the only non-English text anywhere in this range. Verified on
+a 400 dpi crop. Transcribed verbatim below; the English gloss after each is supplied by the
+transcriber and is NOT printed by the book.]
+
+- Under **Tone**, second bullet, Arabic reads (right-to-left):
+  bi-fahs al-janib al-saleem al-awwal
+  [gloss: "by examining the sound / unaffected side first"]
+- Under **Power**, the only content, Arabic reads:
+  akhalleeh yuharrikuh li-wahduh al-awwal 3ashan atakkad in mafeesh shalal
+  [gloss: "I let him move it by himself first, so I can be sure there is no paralysis"]
+  [Bullet structure is ambiguous in the render — this may be one bullet wrapping over three lines
+  rather than two bullets. The wording itself is clear.]
+
+[Transliteration is the transcriber's; the page prints the Arabic script. Nothing else on the page
+is in Arabic except the two cranial-nerve instructions noted below.]
+
+**Cranial nerve examination** [navy circular root node at the centre of a radial map] — labelled
+leaves around it:
+
+| Nerve (number as printed) | Clip-art | What to examine |
+|---|---|---|
+| Optic (2) | an eye | Acuity · Field · Confrontation · Fundus examination |
+| Oculomotor (3), Trochlear (4), Abducent (6) [one grouped label] | extraocular muscles | Eyelid ptosis · Near response · Movement of the eye · Nystagmus |
+| Trigeminal (5) | a face with nerve branches | Sensation of face · Muscles of mastication · Reflexes: (o) Jaw jerk (o) Corneal reflex |
+| Facial (7) | facial nerve anatomy | Eyelid ptosis · Taste (anterior 2/3 of tongue) · Lacrimation & Salivation · Corneal reflex |
+| Glossopharyngeal (9) | an open mouth | Gag reflex · Taste (posterior 1/3) · Palate "Uvula": (o) Pharynx [Arabic: ibla3 = "swallow"] (o) Larynx [Arabic: itkallim = "speak"] |
+| Vagus (10) | [shares the open-mouth art] | Palate "Uvula": (o) Pharynx [Arabic: ibla3 = "swallow"] (o) Larynx [Arabic: itkallim = "speak"] |
+| Accessory (11) | — | Trapezius · Sternomastoid |
+| Hypoglossal (12) | a tongue | Bulk · Involuntary movement · Deviation · Mobility · Power |
+
+[The book prints the two bedside instructions in Arabic script inside the Glossopharyngeal and Vagus
+cells; the transliteration and gloss are the transcriber's.]
+
+[⚠️ OMISSIONS ON THIS MAP, recorded as printed: cranial nerve **1 (olfactory)** and cranial nerve
+**8 (vestibulocochlear)** are BOTH ABSENT — the map runs 2 → 3/4/6 → 5 → 7 → 9 → 10 → 11 → 12.
+⚠️ `Eyelid ptosis` is listed under BOTH Oculomotor and Facial. `Corneal reflex` is listed under BOTH
+Trigeminal and Facial. Neither corrected.]
+
+[The `Involuntary movements` node carries a heading and clip-art but no content — one of several
+bare headings in this chapter.]
+
+---
+
+## printed p.9  (PDF p.20)  [neurology half]
+
+[Running head, right: `Neurology sheet`.]
+
+[MIND-MAP, top of page, unnumbered:]
+
+**REFLEXES** [navy root pill] branches to two:
+
+| Deep tendon reflexes | Superficial Reflexes |
+|---|---|
+| Achilles tendon | Abdominal |
+| Patellar tendon | Plantar |
+| Biceps | Visceral: (o) Control "urination & defecation" (o) Potency |
+| Triceps | |
+| Brachioradialis | |
+
+[Clip-art: a reflex hammer beside the `Deep tendon reflexes` node; small hand/limb drawings beside
+Achilles, Patellar, Biceps, Triceps and Plantar.]
+
+**Instruments used**
+
+- Hammer
+- Tuning fork 128
+- Pen light
+- Cotton piece
+- Coffee smell
+- Disposable pins or toothpicks
+
+[`Tuning fork 128` is printed with NO unit — the book does not write Hz here. Kept as printed.]
+
+**Items to be fulfilled**
+
+1. Physical development& general appearance
+2. Mental status
+3. Speech & articulation
+4. Cranial nerves motor exam
+5. Gait & coordination
+6. Reflexes
+7. Sensory system
+8. Trophic & vasomotor changes
+9. Skull & spine examination
+10. Special tests
+11. General examination
+
+[⚠️ This eleven-item list is the running order for the REST of the chapter — the lettered sections
+A, B, C… that follow are these items in sequence. Section A begins immediately below it, so most of
+the eleven fall in printed 10-27, i.e. partly beyond this file.]
+
+### A. General appearance and behavior
+
+[Section heading centred in a pale-blue band, blue display face.]
+
+- Physical development will indicate any gross endocrinal or nutritional disturbance. e.g., height,
+  weight
+- General appearance may be very helpful for early diagnosis, as the expressionless face of
+  parkinsonism syndrome which may be evident before the appearance of the disease
+- Pallor, jaundice etc.
+
+---
+
+## printed p.10  (PDF p.21)  [neurology half]
+
+[Running head, right: `Neurology sheet`.]
+
+### B. Mental state examination
+
+**1. State of consciousness**
+
+Glasgow coma scale is the standard and should be assessed in every patient. [*See coma lecture*]
+
+[⚠️ CROSS-REFERENCE POINTING OUT OF THE BOOK: the chapter refers to a "coma lecture", not to another
+chapter of this book. The GCS scoring itself is NOT printed on this page.]
+
+[BOXED SIDEBAR, black-ruled box, red/maroon underlined heading, top-right of the page:]
+
+> **Video illustrative neurological examination sites**
+> - http://library.med.utah.edu/neurologicexam/html/home_exam.html
+> - http://neuroexam.med.utoronto.ca/
+> - http://www.neuroexam.com/neuroexam/
+>
+> [The first URL breaks across two lines in the print (`.../neurologicexam/ht` then
+> `ml/home_exam.html`) and is joined here. External web links, transcribed as printed and NOT
+> visited.]
+
+**2. Intellectual functions**
+
+**I. Orientation**
+
+- Person
+- Place
+- Time
+
+**II. Attention & concentration**
+
+- Ask the patient to subtract serial 7s from 100.
+- Ask the patient to name five things that start with a particular letter.
+- Ask the patient to rename days of week backward.
+
+**III. Memory**
+
+- *Remote memory:* ask about childhood data, important events known to have occurred when the
+  patient was younger or free of illness.
+- *Recent memory:* the past few days what the patient had for breakfast, lunch, dinner.
+- *Immediate retention or recall:* digit span measures; ability to repeat six figures after
+  examiner; ability to repeat three words immediately.
+
+**IV. Intelligence:** mathematical problem
+
+**3. Affect & emotion**
+
+a. Experience
+b. Expression
+
+**Neurological disorders with emotional lability:**
+
+- Pseudobulbar palsy
+- Multiple sclerosis
+- Chorea
+
+### C. Speech & articulation
+
+- ***Disturbance of speech* is called** according to its severity, dysphasia, or aphasia
+- ***Disturbance of articulation* is called** dysarthria, or anarthria.
+
+[Section C is TWO LINES ONLY on this page. The lower third of the page is blank. Any aphasia detail
+is not here — it arrives on printed p.11.]
+
+---
+
+## printed p.11  (PDF p.22)  [neurology half]
+
+[Running head, right: `Neurology sheet`.]
+
+[⚠️ LETTERING RESTARTS HERE. This page opens `A. Speech` and `B. Articulation`, i.e. a NEW A/B
+series nested under printed p.10's section C — it is not a continuation of the page-9 eleven-item
+A/B/C/D sequence. The chapter uses A/B/C at two levels without distinguishing them. Recorded as
+printed.]
+
+### A. Speech
+
+1. Spontaneous speech
+   a. ***Informal interview:*** Attention should paid to the fluency of speech, presence of
+      initiation difficulty, the presence of word-finding pauses.
+   b. ***Structured task***
+2. Naming objects
+3. Repetition
+4. Reading
+5. Writing
+
+[`Attention should paid` — the book omits "be". Kept as printed. `Structured task` is a bare
+sub-heading with nothing under it.]
+
+[FIGURE, top right, unnumbered, no caption. A lateral view of the left cerebral hemisphere with
+coloured functional areas, leader-lined labels:
+`primary motor area` · `primary sensory area` · `secondary motor and sensory area` ·
+`anterior speech area (Broca's area)` · `posterior speech area (Wernicke's area)` ·
+`secondary visual area` · `primary visual area` · `primary auditory area` ·
+`secondary auditory area`.]
+
+**Simplified examination:**
+
+- ***Receptive:***
+  - **Auditory**: Give the patient orders to do: start with one order then 2 orders then 3 orders
+  - **Visual**: Give the patients the same orders written on the paper and tell him to do it.
+- ***Expressive*** (Naming objects)
+  - Spoken.
+  - Written.
+
+[FIGURE, right margin, unnumbered but WITH a printed caption in blue italic:
+`Areas of the cerebral cortex involved in the generation of spoken language`.
+A schematic brain with a boxed row of labels across the top —
+`Broca's area` | `Arcuate fasciculus` | `Posterior language comprehension area (Wernicke's)` —
+and leader-lined labels at the right and lower left:
+`Verbal memory` · `Auditory cortex` · `Corticobulbar tract` · `Bulbar muscles`.
+Red and blue pathway arrows run between them.]
+
+**Types of aphasia or dysphasia:**
+
+- Expressive aphasia (= motor =Boca's aphasia)
+- Receptive aphasia (= sensory = Wernicke's aphasia)
+- Global aphasia: no reception & no expression
+- Nominal aphasia: cannot name objects
+- Alexia: cannot read
+- Agraphia: cannot write.
+
+[⚠️ The book prints `Boca's aphasia` — a typo for Broca's. Kept as printed. Note the SAME page
+spells it correctly (`Broca's area`) in both figures.]
+
+### B. Articulation: "Note the Fluency - Tone of voice"
+
+- Read (al-Fatiha) [printed in Arabic script inside the parentheses: the opening surah of the Qur'an,
+  used here as a standard reading passage. Transliteration and gloss are the transcriber's.]
+- Repeating a long word with multiple syllables: Iskandariya [printed in Arabic script — the Arabic
+  name of Alexandria. Transliteration and gloss are the transcriber's.]
+- Count from1-100
+
+**Dysarthria** means only faulty articulation of speech sounds. It may result from central lesions
+of the brain or cerebellum, intoxications (such as alcohol), or neuromuscular disorders. Examiner
+should pay attention to different form of dysarthria for example **slurred speech** which occurs
+with lesions along the course of the **pyramidal tract, staccato or scanning speech** which occurs
+in cerebellar lesion, **low monotonous tone which occur in Parkinson or nasal tone of voice** which
+occur in **myasthenia gravis.**
+
+[The bolding in this paragraph is erratic in the print — it runs across the boundary between the
+finding and its lesion. Reproduced as it falls on the page.]
+
+---
+
+## printed p.12  (PDF p.23)  [neurology half]
+
+[Running head, right: `Neurology sheet`.]
+
+### D. Cranial nerves examination
+
+[Section heading in a pale-blue band. This resumes the page-9 eleven-item series — item 4, `Cranial
+nerves motor exam`.]
+
+**I. Olfactory nerve**
+
+- Ask the patient to close his eyes.
+- Test each nostril separately. Hold a non-irritant odour in front of the open nostril and ask the
+  patient to sniff. Wait a moment for the patient to perceive the odor and then identify it.
+
+  ***"N.B:** Avoid the use of irritating substances like ammonia which will stimulate the trigeminal
+  nerve."*
+
+- **The most frequent causes of anosmia** are the common cold, COVID, allergic rhinitis, smoking,
+  and head trauma.
+- **Hyposmia** also occurs in, Wernicke-Korsakoff syndrome, Kallman syndrome, Alzheimer's disease,
+  Parkinson's disease and lesions of the olfactory bulbs and tracts like meningeal neoplasms-
+  classically, olfactory groove meningiomas- that compress the olfactory bulbs and tracts.
+
+[Book spells it `Kallman syndrome` (one N). Kept as printed. `COVID` is printed without a year or
+hyphen.]
+
+[⚠️ CONTRADICTION WITH printed p.8: the page-8 cranial nerve mind-map omits the olfactory nerve
+entirely, yet the written examination sequence starts with it here. Both recorded, neither
+corrected.]
+
+**II. Optic**
+
+- **Visual acuity**: counting finger-Snellen chart.
+- **Visual fields:** by the confrontation method
+  - Take 1 meter between the doctor & patients.
+  - Then check the field from the periphery, from the 4 directions.
+- **Fundoscopic exam:** optic disc - Optic cup – Retinal vessels
+
+[FIGURE, right margin: a photograph of a **Snellen Chart**, rows numbered 1-11 down the right side,
+top letter `E`, second row `F P`, third `T O Z`, fourth `L P E D`, fifth `P E C F D`, sixth
+`E D F C Z P`; lower rows too small to read at 150 dpi. Caption in bold italic: `Snellen Chart`.
+This is the only titled figure on the page.]
+
+[LARGE BOXED PANEL, blue rounded border, occupying the lower half of the page. Panel title, centred,
+large blue display face: **Visual Field Defects**. Left half is a lettered list A-F; right half is a
+diagram of the visual pathway seen from above (an axial brain outline with the optic nerves, chiasm,
+tracts, radiations and occipital cortex drawn in red and blue) with lesion sites marked A-F by small
+crosses, plus a column of paired field-circle icons labelled `L` and `R`, one row per letter, with
+the blind sectors filled in dark blue/red. The letters on the diagram correspond to the list. No
+figure number.]
+
+- **A »** **Unilateral anopia** - complete loss of vision in one eye, due to Unilateral optic nerve
+  lesion or ocular pathology
+- **B »** **Bitemporal hemianopia** - loss of lateral vision in both eyes due to Optic chiasmal
+  compression
+- **C »** **Homonymous hemianopia** - loss of left field in both eyes due to Right optic tract
+  lesion
+- **D »** **Homonymous inferior quadrantanopia** - loss of the left lower quarters of vision in both
+  eyes due to Right upper optic radiation lesion in the parietal lobe
+- **E »** **Homonymous superior quadrantanopia**- loss of the left upper quarters of vision in both
+  eyes due to Right lower optic radiation lesion in the temporal lobe
+- **F »** **Homonymous hemianopia with macular sparing** "Contralateral occipital lobe lesion"
+
+[The field-circle icons for each row: A — right eye wholly filled, left clear. B — outer (temporal)
+half of each filled. C — left half of both filled. D — lower-left quarter of both filled. E —
+upper-left quarter of both filled. F — left half of both filled but with a clear notch at the
+central (macular) edge. Read from the render; the icons match the text.]
+
+---
+
+## printed p.13  (PDF p.24)  [neurology half]
+
+[Running head, right: `Neurology sheet`.]
+
+### III. Oculomotor, IV Trochlear, VI Abducens
+
+[⚠️ Heading numbering: the book jumps from II (Optic) to a combined `III … IV … VI` heading, and CN
+V (Trigeminal) is deferred to printed p.14. The book spells it `Abducens` here but `Abducent` on the
+page-8 map.]
+
+**1. Palpebral fissures**: detect any dropping of the upper eye lid (ptosis), or retraction of it.
+Also, observe the position of the eyes for any exophthalmos (proptosis) or enophthalmos. Detect any
+nystagmus in the position of rest. Looking to the examiner's handheld at the level of the palpebral
+fissure (straight ahead gaze), normally the upper eye lid covers 1/5th of the cornea.
+
+**2. Pupils:** observe the size, equality of the two pupils, shape or regularity, and mobility or
+reaction both to light (direct and consensual) and to accommodation.
+
+**3. Ocular movements:** these are tested both for horizontal and vertical movements, and for
+convergence. Observe any limitation of movement in any direction and any squint and diplopia. Also
+observe any nystagmus, which may be apparent only on conjugate ocular (gaze) deviation.
+
+[FIGURE BLOCK, mid-page, labelled `Ocular motility` in blue bold at its top-left. Three panels side
+by side, no figure number:]
+
+- [Left panel: an anterior view of the right eye with the extraocular muscles, leader-lined:
+  `Superior rectus muscle` · `Superior oblique muscle` · `Trochlea` · `Lateral rectus muscle` ·
+  `Medial rectus muscle` · `Inferior oblique muscle` · `Inferior rectus muscle`.]
+- [Middle panel: a superior/lateral view of the same muscles, leader-lined: `Superior rectus muscle`
+  · `Superior oblique muscle` · `Medial rectus muscle` · `Lateral rectus muscle` ·
+  `Inferior rectus muscle` · `Inferior oblique muscle`.]
+- [Right panel: a text-plus-diagram mnemonic block, printed in maroon/red serif. Verified on a
+  400 dpi crop:]
+
+  CN **VI** innervates the **L**ateral **R**ectus.
+  CN **IV** innervates the **S**uperior **O**blique.
+  CN **III** innervates the **R**est.
+  The "chemical formula" **LR₆SO₄R₃**.
+
+  [Under it, the standard six-position gaze diagram: two eyeballs, the right one labelled `R` and
+  the left `L`, with eight arrows from each. Labels, each carrying a subscript cranial-nerve number:
+  `SR₃` `IO₃` `SR₃` on the top row; `LR₆` ← R → `MR₃` ← L → `LR₆` on the middle row;
+  `IR₃` `SO₄` `IR₃` on the bottom row.]
+
+  **O**bliques go **O**pposite (left SO and IO tested with patient looking right).
+  **IOU**: **IO** tested looking **U**p.
+
+[FIGURE, lower half, a 3×3 grid of eye photographs/illustrations. This is the ONLY numbered figure
+in the whole range, and it carries a number from a DIFFERENT book — the ASM compilers imported it
+without renumbering.]
+
+Column headers: `Cranial nerve palsy` | `Direction of gaze` | `Primary position` | `Direction of gaze`
+
+| Cranial nerve palsy | Direction of gaze (left column) | Primary position | Direction of gaze (right column) |
+|---|---|---|---|
+| Right 3rd nerve palsy | N.B. Pupil dilated; ptosis | Right eye turns down and out | Unable to adduct right eye. Squint worse |
+| Right 4th nerve palsy (more evident on downgaze) | No obvious squint | Right eye turns slightly up | Right eye elevates more as it moves medially |
+| Right 6th nerve palsy | Unable to abduct right eye. Squint worse | Right eye turns medially | Able to adduct right eye. No obvious squint |
+
+Caption, printed in blue bold then grey: **Fig. 25.20 Examination findings in 3rd, 4th and 6th nerve
+palsy.** Diplopia tends to be more obvious on lateral gaze compared to primary position.
+
+[⚠️ `Fig. 25.20` is an imported figure number — this book has no chapter 25 and numbers no other
+figure anywhere in printed 1-14. Do not cite it as this book's own figure numbering.]
+
+---
+
+## printed p.14  (PDF p.25)  [neurology half]
+
+[Running head, right: `Neurology sheet`. Last page of this file — printed 15 onward is the other
+agent's.]
+
+### V. Trigeminal
+
+**A. Motor**
+
+- It supplies the muscles of mastication (pterygoids, masseter, and temporalis).
+- The patient should clench his teeth and palpate these muscles. On opening the mouth there is
+  deviation of the jaw to the same side of the lesion
+
+[FIGURE, top right, unnumbered, captioned in bold: `Trigeminal Nerve`. A lateral head illustration
+with the three sensory territories shaded in different colours and labelled `Ophthalmic zone`
+(green, upper), `Maxillary zone` (red/pink, middle), `Mandibular zone` (blue/purple, lower), plus a
+leader line to the nerve itself labelled `Trigeminal nerve`.]
+
+**B. Sensory** "All 3 divisions"
+
+- Ophthalmic
+- Maxillary
+- Mandibular
+
+*"Compare both sides pain sensation by a disposable pin."*
+
+[Printed centred in rose italic; the print runs `by adisposable pin` with the space lost.]
+
+**C. Reflexes:**
+
+**1) Jaw jerk**
+
+- Afferent & efferent are the trigeminal nerve.
+- Response: normal absent or just elicited.
+- If exaggerated → pseudobulbar palsy
+
+[`Response: normal absent or just elicited` is printed without punctuation between `normal` and
+`absent`. Kept as printed.]
+
+[FIGURE, right of the jaw-jerk list, unnumbered, no caption. A lateral skull/brainstem schematic
+with a reflex hammer striking the chin; red and blue arrows trace the afferent and efferent limbs.
+Labels: `Mesencephalic nucleus of trigeminal nerve` · `Trigeminal Motor Nucleus` · a `V` marking the
+nerve.]
+
+[CALL-OUT BOX, blue rounded border:]
+
+> ***Pseudobulbar palsy:*** *Bilateral pyramidal lesion above the level of the pons + Emotional
+> lability*
+
+[Cross-reference: printed p.10 lists pseudobulbar palsy first among the neurological disorders with
+emotional lability. Consistent.]
+
+**2) Corneal reflex**
+
+- Afferent trigeminal
+- Efferent is the facial nerve.
+- Response: eye closure, if absent → abnormal
+
+[FIGURE, bottom of page, full width, unnumbered, no overall caption. It carries an internal title
+`The Five Layers of the Cornea` at its top left. Three linked panels showing the corneal reflex arc,
+with labels:]
+
+- [Left panel — a sagittal eye section. Layer labels down the left: `Epithelium` · `Bowman's layer`
+  · `Stroma` · `Descemet's membrane` · `Endothelium`. Boxed text at the top left:
+  `Sensory Trigger: Mechanical touch or foreign stimuli contact the corneal surface`.]
+- [Middle panel — a brainstem cross-section. Boxed text at the left:
+  `Afferent Limb (CN V) The Ophthalmic division (Nasociliary branch) of the Trigeminal nerve carries
+  the signal.` Boxed text at the right:
+  `Brainstem Integration: Signal travels through the Spinal Trigeminal nucleus to the Facial motor
+  nucleus.`]
+- [Right panel — the orbicularis oculi muscle, labelled `Orbicularis oculi muscle`. Boxed text
+  below: `Efferent Limb (CN VII) The Facial nerve triggers the Orbicularis oculi muscle and Lacrimal
+  gland to close the eye.`]
+
+[⚠️ This figure supplies the corneal-reflex arc in more anatomical detail than the three bullets
+above it — specifically the **nasociliary branch of V1** as the afferent and the **spinal trigeminal
+nucleus** as the relay, neither of which is in the prose. It also supplies the five corneal layers,
+which the prose never mentions at all.]
+
+[END OF THIS FILE at printed p.14. Chapter 2 CONTINUES to printed 27 — printed 15-27 is another
+agent's file. The chapter is mid-sequence here: cranial nerve V is complete, VII onward is not, and
+items 5-11 of the printed-p.9 `Items to be fulfilled` list (Gait & coordination, Reflexes, Sensory
+system, Trophic & vasomotor changes, Skull & spine examination, Special tests, General examination)
+all still lie ahead.]

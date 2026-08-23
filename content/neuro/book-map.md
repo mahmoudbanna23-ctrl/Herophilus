@@ -7,6 +7,26 @@ reconstructed from chapter openers.** Built to the pattern of `content\ophtho\bo
 discipline is applied here: every "the book always / never …" line is marked as an observation with
 its sample size, never as a rule.
 
+## ⚠️ WHAT IS ALREADY TRANSCRIBED — check here before rendering anything
+
+Eight chapters are cached as text in `content\neuro\book\`. **A cached chapter is never re-rendered.**
+
+| Chapter | Printed pp. | Cache file | Read |
+|---|---|---|---|
+| Neuro ch.1 `Introduction` + ch.2 `Neurology Sheet` first half | 1–14 | `neuro-ch01-ch02a.txt` | 2026-08-23 |
+| Neuro ch.2 `Neurology Sheet` second half | 15–27 | `neuro-ch02b.txt` | 2026-08-23 |
+| Neuro ch.3 `Localization in Neurology` | 28–39 | `neuro-ch03-localization.txt` | 2026-08-23 |
+| Neuro ch.9 `Headache` | 80–89 | `neuro-ch09-headache.txt` | 2026-08-18 |
+| Neuro ch.16 `Pain` | 157–172 | `neuro-ch16-pain.txt` | 2026-08-18 |
+| Psych ch.3 `Anxiety and related disorders` | 193–201 | `psych-ch03-anxiety.txt` | 2026-08-18 |
+| Psych ch.7 `Schizophrenia` | 228–238 | `psych-ch07-schizophrenia.txt` | 2026-08-18 |
+| Psych ch.11 `Treatment` | 261–264 | `psych-ch11-treatment.txt` | 2026-08-18 |
+
+**The 2026-08-23 three were read by subagents on the user's explicit authorisation**, 39 pages in
+total, and they close `nr-intro`'s source gap. ⚠️ **The `+11` offset was re-verified footer by
+footer on all 39 pages — it held everywhere** — and each chapter's end was confirmed by rendering
+one page past it.
+
 ## Identity, as printed
 
 | Field | As printed | Where |
