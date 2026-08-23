@@ -365,3 +365,39 @@ line plus the rules they earned. Everything here is the record of what each chap
   `Nociceptive`) was orphaned by ch.9, and **ch.16 does not contain it either** (`nociceptive`/
   `neuropathic`/`psychogenic` on **none** of 16 pp; its *Pain and pain management* QRs are a **VIDEO**).
   **TWO chapters read for ONE question — stop looking.**
+
+### The five neuro splits, moved out of MEMORY.md 2026-08-23, verbatim
+
+Compressed there to a pointer at `content\neuro\theory-plan.md` §4, which holds every seam and its
+arithmetic. The rules the splits earned stay in MEMORY.md.
+
+- **⚠️⚠️ FIVE SPLITS ON 2026-08-22/23 — the module went 29 → 33 chapters. Seams and arithmetic in
+  the plan §4; `SCHEDULE` untouched every time.** `nr-lmn`/`nr-nerve` (**reverses the `nr-lmn1`+
+  `nr-lmn2` merge**) · `ps-ocd`/`ps-ptsd` (⚠️ **a SINGLE deck**, which §4 permits) ·
+  `nr-movement`/`nr-epilepsy`, `ps-psychosis`/`ps-schizmgmt`, `nr-backpain`/`nr-neckpain` (⚠️ **all
+  three FORECAST BEFORE writing**; the last on a **REGIONAL book seam while the DECK INTERLEAVES** —
+  allowed, because nothing is reordered *within* a chapter).
+
+### Ophthalmology closing facts, moved out of MEMORY.md 2026-08-23, verbatim
+
+- **⚠️⚠️ A SOURCE'S WORD COUNT IS THE CACHE'S, NEVER `pdftotext`'s** — `op-refract` was argued against
+  splitting on "1,540 words"; its cache held **4,439**. **`pdffonts` per page detects VECTOR-OUTLINE
+  text; zero fonts hides nothing.**
+- ✅ **Ophtho book caches exist — 11 chapters, 70,704 w** in `content\ophtho\book\`. Do not re-read.
+- ✅ **OPHTHALMOLOGY FINISHED at 36 chapters.** Its two **USER RULINGS of 2026-08-18** — *the book is
+  that module's main reference* and *no chapters for the three deckless book chapters* — are
+  **settled, do not re-propose**. ⚠️ **Scope comes from the LECTURE SERIES; the book rules
+  content, never scope**, and **every "the book always/never…" line is a HYPOTHESIS.**
+
+### The A4 theory reader and the overflow:hidden bug, moved out of MEMORY.md 2026-08-23, verbatim
+
+Compressed there to two short lines. `CLAUDE.md` §6 carries the standing rules; this is the detail.
+
+- **⚠️ THE THEORY READER IS AN A4 PAGE (2026-08-19, three user complaints).** 210:297 by
+  `aspect-ratio`, sized from the window; margins set in JS from the PAGE's width (**percentages
+  resolve against the CONTAINING BLOCK** — 74px margins on a 510px page); running head, foot folio,
+  gutter arrows. **THE PAGE MUST NOT BE MADE WHITE** — dark `--tx` is near-white. **The lecture
+  title opens the flow**; "In this lecture" is gone (2026-08-13).
+- **⚠️⚠️ `overflow:hidden` MAKES A BLOCK MONOLITHIC, AND MONOLITHIC MEANS CLIPPED, NOT BROKEN** —
+  `.th-table` carried it for its corners and over-tall tables silently lost their last rows in the
+  reader. Fixed screen-side; **print was checked with `pdftotext` first and was never affected.**

@@ -5,7 +5,7 @@ Running record, organised around *resuming*. ISO dates; unverified marked as suc
 story, count and verbatim ruling) in `progress\memory-archive.md`** — read the relevant block
 there before resuming a paused stream. Where this file and the archive disagree, this file wins.
 
-## Resume here — **NEUROPSYCHIATRY THEORY, the last module: 22 of 33 written. ⚠️ `nr-intro` HOLDS ALL 21 REMAINING QUESTIONS; the other 10 chapters carry ZERO.** ENT · Peds · Ophtho theory DONE. Banks PAUSED.
+## Resume here — **NEUROPSYCHIATRY THEORY, the last module: 23 of 33 written. ⚠️ `nr-intro` HOLDS ALL 21 REMAINING QUESTIONS; the other 9 chapters carry ZERO.** ENT · Peds · Ophtho theory DONE. Banks PAUSED.
 
 - **⚠️⚠️ `content\neuro\theory-plan.md` IS THE MODULE'S WORKING FILE — READ IT FIRST**, with
   `content\neuro\book-map.md`. Deck audit, unsourced chapters, page rates, order of work, every
@@ -14,18 +14,17 @@ there before resuming a paused stream. Where this file and the archive disagree,
   (whole; seam in the plan) · `ps-symptom` 8 · `ps-psychoed` · `nr-ms` · `ps-mood` · `nr-lmn` 12 ·
   `nr-nerve` 8 · `ps-ocd` 10 · `ps-ptsd` 6 · `nr-movement` 13 · `nr-epilepsy` 12 · `ps-anxiety` 11 ·
   `ps-psychosis` 9 · `ps-schizmgmt` 10 · `ps-pharm` 11 · `nr-backpain` 10 · `nr-neckpain` 9 ·
-  `ps-sud` 7.**
-- **⚠️⚠️ FIVE SPLITS ON 2026-08-22/23 — the module went 29 → 33 chapters. Seams and arithmetic in
-  the plan §4; `SCHEDULE` untouched every time.** `nr-lmn`/`nr-nerve` (**reverses the `nr-lmn1`+
-  `nr-lmn2` merge**) · `ps-ocd`/`ps-ptsd` (⚠️ **a SINGLE deck**, which §4 permits) ·
-  `nr-movement`/`nr-epilepsy`, `ps-psychosis`/`ps-schizmgmt`, `nr-backpain`/`nr-neckpain` (⚠️ **all
-  three FORECAST BEFORE writing**; the last on a **REGIONAL book seam while the DECK INTERLEAVES** —
-  allowed, because nothing is reordered *within* a chapter).
+  `ps-sud` 7 · `ps-emerg` 13.**
+- **⚠️⚠️ FIVE SPLITS ON 2026-08-22/23 took the module 29 → 33. Every seam and its arithmetic is in
+  the plan §4; the five are listed verbatim in the archive. `SCHEDULE` untouched every time.**
+  ⚠️ **A SINGLE deck may split** (`ps-ocd`), and **a book seam may cut across an INTERLEAVING deck**
+  (`nr-backpain`) — **because nothing is reordered *within* a chapter.**
 - **⚠️⚠️ FORECAST A SPLIT ONLY AT ÷280 ≥ 16; BETWEEN 13 AND 15, TEST-PRINT — NEVER ACCEPT A SPLIT
   *OR* A COMPRESSION ON AN ESTIMATOR.** The three forecast splits printed **13/12, 9/10 and 10/9 pp**,
   inside the shape first time; each of the three *found* splits cost a full extra cycle — **but
-  `ps-pharm` forecast 14.9 and PRINTED 11.** ⚠️ **÷280 over-predicts by up to 4.0; ÷240 over-predicted
-  ophtho by 5.1; ÷335 under-predicted `nr-lmn` by 6.3.**
+  `ps-pharm` forecast 14.9 and PRINTED 11.** ⚠️⚠️ **÷280 ERRS BADLY IN BOTH DIRECTIONS: it
+  OVER-predicted `ps-pharm` by 4.0 and UNDER-predicted `ps-emerg` by 4.7** (said 8.3, printed 13).
+  ⚠️ **÷240 over-predicted ophtho by 5.1; ÷335 under-predicted `nr-lmn` by 6.3. ONLY PRINTING SETTLES IT.**
 - **⚠️⚠️ TRIM FIRST, BUT KNOW WHEN TO STOP. A trim is duplication or my own prose, never a fact.**
   `ps-ocd` had **132 words on page 14**; two second copies recovered **82 words of paper**, leaving
   **50** and nothing that was duplication — so it split. ⚠️⚠️ **"A table costs more paper per word"
@@ -60,6 +59,16 @@ there before resuming a paused stream. Where this file and the archive disagree,
   TAXONOMY IS A VERIFIED ABSENCE** (`npqb-nr-125`; two book chapters for one question — **stop
   looking**) · ⚠️ **the MAOI gap stays OPEN** · ⚠️⚠️ **deck and book CONTRADICT EACH OTHER ON THE
   DOPAMINE PATHWAYS — both recorded, neither corrected** · **`ps-pharm` POINTS, never repeats.**
+- ✅ **`ps-emerg` done, 13 pp whole — AT the hard shape, not past it, so no split.** 11 sections,
+  3,989 w from 2,330 (**180 %**). ⚠️ **TRIMMED FIRST AND IT DID NOT RECOVER A PAGE** — 207 w cut
+  (two verified second copies of its own register, one shortened cross-reference, two blocks of my
+  commentary) and **it still printed 13.** ⚠️⚠️ **THE TWO DECKS OVERLAP ALMOST COMPLETELY AND
+  DISAGREE NOWHERE**; every table is their **UNION**, marked where only one prints an item.
+  ✅ **Pays TWO register rows IN** (`ps-sud`'s whole 733-w half; `ps-schizmgmt`'s NMS) **and ONE OUT**
+  — `ps-pharm`'s `ph-5` had **no serotonin-syndrome precipitant, antidote or mechanism**; `em-10`
+  supplies all three (**`cyproheptadine` = ONE hit across all 25 decks**). ⚠️⚠️ **NOT ONE DOSE IS
+  SUPPLIED — `mg` returns ZERO over all 46 slides of `L16`**, and an emergency dose from memory is
+  what `CLAUDE.md` §5 forbids outright. ⚠️ **Book Psych ch.10 (256-260) UNREAD**, image-only.
 - ✅ **`ps-sud` done, 7 pp whole — the module's shortest. 352 w/pp; inflation 220 %, its worst, and
   unavoidable (ZERO questions = no backwards calibration).** ⚠️⚠️ **`L15` IS TWO LECTURES IN ONE
   DECK**: lines 1-204 substance **1,121 w** (this chapter); lines 205-354 **psychiatry emergency
@@ -79,18 +88,15 @@ there before resuming a paused stream. Where this file and the archive disagree,
 - **⚠️ Ophtho reconciliation is NOT done** — ~63 register rows, `va-6`/`pup-10`, five held divergences, `wht-8`. In its `theory-plan.md`; never re-derive.
 - **⚠️ A SPLIT MOVES QUESTIONS by the theory `qs` links, never by title** — ophtho refiled 12/1/1/16/2.
 - **⚠️⚠️ CHECK A CHAPTER'S QUESTIONS AGAINST ITS SOURCE BEFORE BRIEFING.** A Decks column is an assignment, **not coverage** — **none of `op-va`'s 16 was answerable from its only listed deck.**
-- **⚠️⚠️ A SOURCE'S WORD COUNT IS THE CACHE'S, NEVER `pdftotext`'s** — `op-refract` was argued against
-  splitting on "1,540 words"; its cache held **4,439**. **`pdffonts` per page detects VECTOR-OUTLINE
-  text; zero fonts hides nothing.**
+- **⚠️⚠️ A SOURCE'S WORD COUNT IS THE CACHE'S, NEVER `pdftotext`'s** (`op-refract`: 1,540 vs 4,439). **`pdffonts` per page detects VECTOR-OUTLINE text; zero fonts hides nothing.**
 - **⚠️⚠️ VERIFY EVERY REGISTER ROW'S *SECOND CLAUSE*, AND AUDIT "row filed" CLAIMS — `op-ret` was
   named in twelve rows and FIVE WERE WRONG; four "filed" rows did not exist.** **A resolved
   cross-reference proves nothing — measure the destination, and check it is the right section.**
   **Ten fault shapes, and the timestamp rule: `progress\memory-archive.md`.**
-- ✅ **Ophtho book caches exist — 11 chapters, 70,704 w** in `content\ophtho\book\`. Do not re-read.
-- ✅ **OPHTHALMOLOGY FINISHED at 36 chapters.** Its two **USER RULINGS of 2026-08-18** — *the book is
-  that module's main reference* and *no chapters for the three deckless book chapters* — are
-  **settled, do not re-propose** (archived). ⚠️ **Scope comes from the LECTURE SERIES; the book rules
-  content, never scope**, and **every "the book always/never…" line is a HYPOTHESIS.**
+- ✅ **OPHTHALMOLOGY FINISHED at 36 chapters; its book caches exist** (11 chapters, 70,704 w in
+  `content\ophtho\book\` — **do not re-read**). **Its two USER RULINGS of 2026-08-18 are settled, do
+  not re-propose**; both, and the scope rule, are in the archive. ⚠️ **Scope comes from the LECTURE
+  SERIES; the book rules content, never scope.**
 - **⚠️ ENT is NOT closed**: 25 §14.5 rows open **+ 33 bold-led paragraphs over the 55-word cap**
   (peds 2, ophtho 0). ⚠️ **A cap auditor must separate BULLETS from PARAGRAPHS** — four fake fails.
 - **ENT banks, frozen mid-flight**: ✅ Endpoint · ✅ GG Ear+Nose closed. **⚠️ Only GG Throat t10 is
@@ -115,14 +121,10 @@ there before resuming a paused stream. Where this file and the archive disagree,
   `max(source words, 25×q)`, floor 600, **operative ceiling ~2,400 w / ~10 pp**; telegraphic;
   tables by default; §14.3a layout (bold leads need a `:` or `—` within 44 chars for `mdLead()`);
   §14.5 register — *an unrecorded promise is a deletion*.
-- **Chapters are SPLIT, not compressed** (user, 2026-08-15, peds 21 → 51): every chapter ≤13 pp
-  **measured by printing**. Safe (`SCHEDULE` is keyed by date+title, progress by question id) but
-  **reassign questions from the theory `qs` links** — tie-breaks misfile most. ⚠️ **A seam that
+- **Chapters are SPLIT, not compressed** (user, 2026-08-15, peds 21 → 51): every chapter ≤13 pp **measured by printing**. Safe (`SCHEDULE` is keyed by date+title, progress by question id) but **reassign questions from the theory `qs` links** — tie-breaks misfile most. ⚠️ **A seam that
   needs the chapter REORDERED is not a seam** (rejected one at `op-intro`, 2026-08-18).
 - **Writing budget, banks (2026-08-13, supersedes "full depth everywhere"):** adaptive depth —
-  ~520 w for vignettes/defects/divergences/gap-fills, **~250 w for straight slide-recall**, every
-  distractor still explained; shared tables in ONE entry, siblings point at an **existing** id;
-  `source` is a citation, never a second explanation. **Scope is never cut** (the user corrected the
+  ~520 w for vignettes/defects/divergences/gap-fills, **~250 w for straight slide-recall**, every distractor still explained; shared tables in ONE entry, siblings point at an **existing** id; `source` is a citation, never a second explanation. **Scope is never cut** (the user corrected the
   first briefs for that). If time runs short, **say so loudly — scaling down is theirs.**
 - **A defective key is noted, never disputed** (2026-08-11) — never take a key dispute to the user.
   **A lecture-numbering gap = the professor withheld it** (2026-08-14) — fill and tag, never chase.
@@ -133,12 +135,11 @@ there before resuming a paused stream. Where this file and the archive disagree,
 
 - **Read every answered page; trust no count** — not printed numbering, not the contents page, not
   the map (ranges 21/21 right, counts 17/21 wrong, always upward). **Render one page past the last.**
-- **Run the full six-stage duplicate sweep (A–F) on every topic**; folds ran 0–20 with no trend, and
-  the rankings are the instrument. Shapes 1–6: archive. **Say why a zero is a zero.** Grep drafted
+- **Run the full six-stage duplicate sweep (A–F) on every topic**; folds ran 0–20 with no trend, and the rankings are the instrument. Shapes 1–6: archive. **Say why a zero is a zero.** Grep drafted
   blocks for a folded id **before** splicing; re-run the dead-id check after every fold.
 - **⚠️ Marker deltas, mis-keyed banks and the six-stage sweep's defect shapes:
   `progress\memory-archive.md`.** Validator `<scratchpad>\wrT7\validate.js` — strip trailing `*`s.
-- **Read the slide before declaring a gap — paid 13 times**; grep the shortest stem AND the
+- **Read the slide before declaring a gap — paid 14 times, and a BOOK CROSS-REFERENCE IS NOT A VERDICT**; grep the shortest stem AND the
   misspelling (*ostio-*, *Uvelopalato…*). Re-check staged interview items before raising.
 - **⚠️ Bank sampling and provenance: `progress\memory-archive.md`** — a contents page may print
   per-section counts (**verify, never trust**); the end-of-ENT "outside knowledge" list is **half
@@ -149,22 +150,19 @@ there before resuming a paused stream. Where this file and the archive disagree,
 - **Corpus 2,097** (2026-08-14): ENT 1,720 · Neuro 158 · Ophtho 138 · Peds 81. Banks: GG 1,180 ·
   Endpoint 697 · House 78; 54 shared. Module keys `ent`, `ophtho`, `pediatrics`, `neuropsych`.
   Option counts 2–9 coexist; nothing assumes four.
-- **Theory: 139 of 150 chapters, 1,472 sections.** ENT 30 (259 pp / 8.6) · Peds 51 (340 / 8.3) ·
-  Ophtho 36 (331 / 9.2) · **Neuro 22 of 33**. Drafts in `content\<mod>\theory-drafts\` (⚠️ ENT's
+- **Theory: 140 of 150 chapters, 1,483 sections.** ENT 30 (259 pp / 8.6) · Peds 51 (340 / 8.3) ·
+  Ophtho 36 (331 / 9.2) · **Neuro 23 of 33**. Drafts in `content\<mod>\theory-drafts\` (⚠️ ENT's
   bare `ent-csom/tonsils/aom/stridor` are the DEAD format; their `*.v2/v3` are current). Best
   models: `ent-nasalobs`, `op-ret`, `nr-cranial`, `ps-symptom`, `ps-ocd`, `ps-anxiety`, `ps-schizmgmt`.
 - Last real `file://` boot **2026-08-23**: **0 console errors, 876 CSS rules, 3
-  `max-aspect-ratio:5/4` blocks, 4 modules, 150 chapters, 2,097 questions, 89 cases, 139 theory
-  chapters, 1,472 sections.** Harnesses in `<scratch>\`: `MOD=<mod> print.sh` · `boot.sh` ·
+  `max-aspect-ratio:5/4` blocks, 4 modules, 150 chapters, 2,097 questions, 89 cases, 140 theory
+  chapters, 1,483 sections.** Harnesses in `<scratch>\`: `MOD=<mod> print.sh` · `boot.sh` ·
   `modcheck-neuro.js` · `vdraft.js` · `splice-neuro.js`/`resplice-neuro.js` · `qdump.js` · `shot.sh`.
-- **⚠️ THE THEORY READER IS AN A4 PAGE (2026-08-19, three user complaints).** 210:297 by
-  `aspect-ratio`, sized from the window; margins set in JS from the PAGE's width (**percentages
-  resolve against the CONTAINING BLOCK** — 74px margins on a 510px page); running head, foot folio,
-  gutter arrows. **THE PAGE MUST NOT BE MADE WHITE** — dark `--tx` is near-white. **The lecture
-  title opens the flow**; "In this lecture" is gone (2026-08-13).
+- **⚠️ THE THEORY READER IS AN A4 PAGE (2026-08-19, three user complaints) AND MUST NOT BE MADE
+  WHITE.** 210:297 by `aspect-ratio`; **margins set in JS from the PAGE's width** (percentages
+  resolve against the containing block). Mechanics in the archive.
 - **⚠️⚠️ `overflow:hidden` MAKES A BLOCK MONOLITHIC, AND MONOLITHIC MEANS CLIPPED, NOT BROKEN** —
-  `.th-table` carried it for its corners and over-tall tables silently lost their last rows in the
-  reader. Fixed screen-side; **print was checked with `pdftotext` first and was never affected.**
+  `.th-table` silently lost over-tall tables' last rows. Fixed screen-side; print never affected.
 - **⚠️ A draft header is a claim, not a measurement — re-count from disk after the final edit.**
   Wrong nine times; **the sum check alone no longer suffices.** Page divisors: resume block + plan §4.
 
