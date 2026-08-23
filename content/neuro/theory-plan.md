@@ -99,7 +99,7 @@ measured that way and comparability matters more than purity.
 | L10) Stroke | 53 | **2,090** | 2,047 | 39 | `nr-stroke` ✅ *written* |
 | L5) Muscle Disease | 55 | **2,048** | 1,807 | 37 | `nr-lmn` ✅ |
 | L9) CNS infection | 40 | **1,924** | 1,818 | 48 | `nr-cns` |
-| L18) Devices in Psychiatry | 23 | **1,909** | 1,806 | 83 | `ps-devices` |
+| L18) Devices in Psychiatry | 23 | **1,909** | 1,806 | 83 | `ps-devices` ✅ *single-source chapter; it pays the ECT row `ps-emerg` and `ps-schizmgmt` both filed* |
 | L15) substance related + psych emergency | 49 | **1,854** | 1,771 | 38 | `ps-sud` ✅ **+ `ps-emerg`** ⚠️⚠️ *TWO LECTURES IN ONE DECK — lines 1–204 substance (**1,121 w**) → `ps-sud`; lines 205–354 emergency (**733 w**: NMS 240, catatonia 108, suicide 385) → `ps-emerg`. **`L15` teaches NMS IN FULL** — it pays the debt `ps-schizmgmt` wrongly filed to book ch.10* |
 | L11) Cervical pain | 41 | **1,742** | 1,589 | 42 | `nr-backpain` + **`nr-neckpain`** ✅ ⚠️ *the deck INTERLEAVES: back → neck → low back* |
 | L13) Dementia and Delirium | 41 | **1,672** | 1,532 | 41 | **`ps-geri` + `nr-delirium` — SHARED** |
@@ -261,6 +261,40 @@ two blocks written twice — the book's three self-contradictions, listed inline
 *and* again in a consolidated block, and a cross-module pointer stated in two sections. 56 words, one
 page. Look for a second copy before looking for something to cut.
 
+### ⚠️⚠️ THE ANCHOR TOOL SILENTLY DAMAGED 23 LEADS ACROSS SEVEN CHAPTERS (found and repaired 2026-08-23)
+
+`anchorauto.js` fixes §14.3a anchors by **promoting the first clause break below 44 characters**. Its
+two rules were **a comma becomes an em-dash**, and failing that **an em-dash is inserted before the
+first `and`/`or`**. Both are wrong whenever the comma joins list items or the conjunction joins a
+compound subject. The damage it produced, all of it in **shipped, printed chapters**:
+
+| Written | Became |
+|---|---|
+| `No mg, no mg/kg, no frequency and no serum level` | `No mg — no mg/kg, no frequency and no serum level` |
+| `The deck and the book print the same four indications` | `The deck — and the book print…` |
+| `Lithium and sodium valproate are contraindicated` | `Lithium — and sodium valproate are contraindicated` |
+| `Stages 1 and 2 are separated by AWARENESS` | `Stages 1 — and 2 are separated by AWARENESS` |
+| ⚠️ `` `Cranial and Low Back pain` `` *(a quoted contents-page title)* | ⚠️ `` `Cranial — and Low Back pain` `` |
+
+**The last one corrupted a CITATION** — a verbatim contents-page title quoted as evidence of a
+typo in the book, which the tool then made unquotable.
+
+**Three lessons, and the third is the general one.**
+1. **A meaning-preserving edit rule that operates on punctuation alone is not meaning-preserving.**
+   Punctuation is where the grammar lives.
+2. **Every one of the 23 passed `vdraft.js`.** The validator checks that an anchor EXISTS, never
+   that the sentence still parses. **A green validator is not a read chapter.**
+3. **⚠️⚠️ A TOOL THAT EDITS SILENTLY WILL EVENTUALLY EDIT WRONGLY, AND NOBODY WILL SEE IT.** The old
+   version printed only a COUNT of what it changed. **It now prints every edit it makes**, refuses
+   any comma followed by a coordinator or negator, refuses a comma with fewer than three words
+   before it, and **the conjunction-insertion rule is deleted outright.** Backup at
+   `<scratch>\anchorauto.js.bak`.
+
+**The sweep that found them** is worth keeping: match every bold lead against
+`/\*\*[^*]{0,60}?\s—\s(no |not |or |and |nor )/i` and **read each hit**. It returned 51 hits, of
+which **23 were damaged and 28 were correct** — so the regex is a *finder*, never a verdict. **Page
+counts did not move after the repair**, in any of the seven.
+
 ### Split candidates, re-forecast on corrected word counts
 
 | Chapter | source w | ÷335 | verdict |
@@ -276,6 +310,7 @@ page. Look for a second copy before looking for something to cut.
 | ✅ **`nr-backpain`** | **8,064** (book ch.16 **6,322** + deck 1,742) | forecast **past 20 pp** | ✅✅ **SPLIT BEFORE WRITING 2026-08-23** on the book's own **regional** boundary at printed 166. **`nr-backpain`** *(retitled from "Cervical and low back pain")* 9 sections, 3,914 w, **printed 10 pp** · new **`nr-neckpain`** 8 sections, 3,354 w, **printed 9 pp**. ⚠️ **Book ch.16 is the LONGEST this module has drawn on — 16 printed pages.** ⚠️ **The cervical END-MATTER is cervical throughout**, so nothing general had to be divided — that is what made the seam cheap. ⚠️ **THE DECK INTERLEAVES AND THE BOOK DOES NOT**: `L11` runs back → neck → low back, so each half draws **two non-contiguous deck blocks**. Allowed because **nothing is reordered WITHIN a chapter** — the ophthalmology rule forbids reordering an *already-written* chapter, and both were written fresh. ⚠️ **Measured 391 and 373 w/pp; 391 is a new module high** |
 | ✅ **`ps-sud`** | **1,121** — ⚠️ **NOT the deck's 1,854** | ÷280 said **4.0 pp** | ✅ **WRITTEN WHOLE 2026-08-23 — printed 7 pp, no split.** 8 sections, **2,466 w**, 0 q. ⚠️⚠️ **`L15` IS TWO LECTURES IN ONE DECK AND THE COUNT HAD TO BE SPLIT BEFORE IT COULD BE BUDGETED FROM** — lines 1–204 are substance (**1,121 w**, this chapter); lines 205–354 are **psychiatry emergency** (**733 w** — NMS 240, catatonia 108, suicide 385), **filed out whole to `ps-emerg` in `sd-8`** and **not one word of it used here**. The plan's §2 row had budgeted the full 1,854. ⚠️ **Inflation 220 % — the module's worst**, and unavoidable: **zero questions**, so there was no backwards calibration at all, and the source is a bullet deck. **Measured 352 w/pp.** ⚠️ **Book Psychiatry ch.9 (printed 249–255, 7 pp) IS UNREAD** — image-only, no subagent available; **recorded, not guessed**. It is the likeliest home for the three verified absences in `sd-8`: **no pharmacotherapy for stimulants or hallucinogens**, **no intoxication or withdrawal syndrome anywhere** (`tolerance`, `delirium tremens`, `naloxone` return **zero across all 25 decks**), and **no substance attached to any of the nine induced disorders** |
 | ✅ **`ps-emerg`** | **2,330** (L16 **1,597** + L15 back half **733**) | ÷280 said **8.3 pp** | ✅ **WRITTEN WHOLE 2026-08-23 — printed 13 pp, NO SPLIT.** 11 sections, **3,989 w**, 0 q. ⚠️⚠️ **÷280 UNDER-PREDICTED BY 4.7 PAGES — its worst miss in the wrong direction**, and the mirror of `ps-pharm`'s 3.9-page over-prediction. **The estimator is now shown to err badly BOTH ways; only printing settles it.** ⚠️ **Inflation 180 %** on a source that is two dense bullet decks. ⚠️ **TRIMMED FIRST AND IT DID NOT RECOVER A PAGE**: **207 words** cut — two verified second copies (`em-9`'s deck-union note, `em-10`'s Wilson/Wernicke row, both duplicating `em-11`), one shortened cross-reference, and two blocks of my own commentary — **and it still printed 13.** Sitting **at** the hard shape, not past it, so **`ps-ocd`'s split trigger was never reached.** ⚠️⚠️ **THE TWO DECKS OVERLAP ALMOST COMPLETELY AND DISAGREE NOWHERE** — every shared figure identical (1–2 %, 1 in 6,000, 64:36, 10–20 %, 0.02–3 %, 2:1); **`L16` adds** lead-pipe rigidity and high-potency typicals by name, urinary alkalinisation, the catatonia sign mosaic and complications, the four myths, the diagnostic risk variations, serotonin syndrome and seven organic mimics; **`L15` adds** circulatory/ventilatory support and the numbered nine-step NMS treatment. **Every table is the union, marked where only one prints an item.** ✅ **It pays TWO register rows IN** (`ps-sud`'s whole 733-word half; `ps-schizmgmt`'s NMS) **and ONE OUT** — `ps-pharm`'s `ph-5` records no serotonin-syndrome precipitant, antidote or mechanism, and **`em-10` supplies all three**; **`cyproheptadine` returns exactly ONE hit across all 25 decks.** ⚠️⚠️ **NOT ONE DOSE IS SUPPLIED** — `mg` returns **zero over all 46 slides of `L16`**, and an emergency dose from memory is what `CLAUDE.md` §5 forbids outright. ⚠️ **Book Psych ch.10 (256–260, 5 pp) UNREAD**, image-only |
+| ✅ **`ps-devices`** | **1,909** (L18, single source) | ÷280 said **6.8 pp** | ✅ **WRITTEN WHOLE 2026-08-23 — printed 12 pp, NO SPLIT.** 10 sections, **4,191 w**, 0 q. ⚠️⚠️ **INFLATION 220 % — the module's worst alongside `ps-sud`**, and ÷280 **under-predicted by 5.2 pages, a new worst in that direction.** ⚠️ **TRIMMED 122 w first** — two absence bullets duplicating `dv-10`'s own audit table, one commentary bullet, two shortened forward-references — **and the page count did not move.** ✅ **It PAYS the ECT row `ps-emerg`'s `em-11` and `ps-schizmgmt`'s `sm-8`/`sm-10` both filed, and `dv-10` AUDITS IT ITEM BY ITEM**: `sm-8` listed six things missing — **technique ✅, anaesthesia ✅, adverse effect ✅ PAID; electrode placement ⚠️ PARTIAL** (*unilateral or bilateral* and no more); **course length ❌ and contraindication ❌ STILL ABSENT.** ⚠️⚠️ **AND BOTH CHAPTERS' POINTER WAS WRONG** — they sent ECT to **book ch.12, image-only, unread**, when **`L18` was cached the whole time.** ⚠️⚠️ **NOT ONE CONTRAINDICATION FOR ANY DEVICE** — `contraindicat` returns **zero over all 23 slides**; **deliberately NOT supplied**, six device-specific lists from memory being exactly what `CLAUDE.md` §5 forbids. ⚠️⚠️ **A SYLLABUS-LEVEL ABSENCE FOUND HERE: PSYCHOSURGERY is named as one of the four arms of psychiatric treatment and taught NOWHERE** — `psychosurgery`/`cingulotomy`/`lobotomy` return **zero across ALL 25 CACHED DECKS**. ⚠️ **Book Psych ch.12 (265–270, 6 pp) UNREAD**, image-only |
 | `nr-ms` · `ps-symptom` | 2,251–2,441 | 6.7–7.3 pp | inside the ceiling. ⚠️ **`ps-ocd` was in this row and printed 14 pp** — a deck word count is not a page count when a second source is added |
 | everything else | 1,257–1,924 | 3.8–5.7 pp | single chapters |
 
@@ -296,12 +331,12 @@ the book mapper as a split candidate on precedent. **Not decided — read before
 2. ✅ **Book map** — `content\neuro\book-map.md`, done 2026-08-18.
 3. ✅ **`L17` visual read** — cache 239 → 3,358 w, done 2026-08-18. `ps-pharm` is unblocked on the
    deck but still **partial** on antipsychotics — see the dead-heading finding below.
-4. ✅ **Written — 23 of 33** *(measured from disk 2026-08-23)*: `nr-stroke` · `nr-hemi` ·
+4. ✅ **Written — 24 of 33** *(measured from disk 2026-08-23)*: `nr-stroke` · `nr-hemi` ·
    `nr-para` · `nr-headache` · `nr-cranial` · `ps-symptom` · `ps-psychoed` · `nr-ms` · `ps-mood` ·
    `nr-lmn` · `nr-nerve` · `ps-ocd` · `ps-ptsd` · `nr-movement` · `nr-epilepsy` · `ps-anxiety` ·
    `ps-psychosis` · `ps-schizmgmt` · `ps-pharm` · **`nr-backpain`** · **`nr-neckpain`** ·
-   **`ps-sud`** · **`ps-emerg`**.
-   **213 sections, 69,083 body words. 130 of the module's 151 questions reachable** — neither
+   **`ps-sud`** · **`ps-emerg`** · **`ps-devices`**.
+   **223 sections, 73,274 body words. 130 of the module's 151 questions reachable** — neither
    `ps-sud` nor `ps-emerg` adds one, because **no bank in the corpus prints a substance or an
    emergency question.**
    **12 chapters holding 21 questions remain — and `nr-intro` holds ALL 21.**

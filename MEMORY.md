@@ -5,7 +5,7 @@ Running record, organised around *resuming*. ISO dates; unverified marked as suc
 story, count and verbatim ruling) in `progress\memory-archive.md`** — read the relevant block
 there before resuming a paused stream. Where this file and the archive disagree, this file wins.
 
-## Resume here — **NEUROPSYCHIATRY THEORY, the last module: 23 of 33 written. ⚠️ `nr-intro` HOLDS ALL 21 REMAINING QUESTIONS; the other 9 chapters carry ZERO.** ENT · Peds · Ophtho theory DONE. Banks PAUSED.
+## Resume here — **NEUROPSYCHIATRY THEORY, the last module: 24 of 33 written. ⚠️ `nr-intro` HOLDS ALL 21 REMAINING QUESTIONS; the other 8 chapters carry ZERO.** ENT · Peds · Ophtho theory DONE. Banks PAUSED.
 
 - **⚠️⚠️ `content\neuro\theory-plan.md` IS THE MODULE'S WORKING FILE — READ IT FIRST**, with
   `content\neuro\book-map.md`. Deck audit, unsourced chapters, page rates, order of work, every
@@ -14,7 +14,7 @@ there before resuming a paused stream. Where this file and the archive disagree,
   (whole; seam in the plan) · `ps-symptom` 8 · `ps-psychoed` · `nr-ms` · `ps-mood` · `nr-lmn` 12 ·
   `nr-nerve` 8 · `ps-ocd` 10 · `ps-ptsd` 6 · `nr-movement` 13 · `nr-epilepsy` 12 · `ps-anxiety` 11 ·
   `ps-psychosis` 9 · `ps-schizmgmt` 10 · `ps-pharm` 11 · `nr-backpain` 10 · `nr-neckpain` 9 ·
-  `ps-sud` 7 · `ps-emerg` 13.**
+  `ps-sud` 7 · `ps-emerg` 13 · `ps-devices` 12.**
 - **⚠️⚠️ FIVE SPLITS ON 2026-08-22/23 took the module 29 → 33. Every seam and its arithmetic is in
   the plan §4; the five are listed verbatim in the archive. `SCHEDULE` untouched every time.**
   ⚠️ **A SINGLE deck may split** (`ps-ocd`), and **a book seam may cut across an INTERLEAVING deck**
@@ -59,24 +59,25 @@ there before resuming a paused stream. Where this file and the archive disagree,
   TAXONOMY IS A VERIFIED ABSENCE** (`npqb-nr-125`; two book chapters for one question — **stop
   looking**) · ⚠️ **the MAOI gap stays OPEN** · ⚠️⚠️ **deck and book CONTRADICT EACH OTHER ON THE
   DOPAMINE PATHWAYS — both recorded, neither corrected** · **`ps-pharm` POINTS, never repeats.**
-- ✅ **`ps-emerg` done, 13 pp whole — AT the hard shape, not past it, so no split.** 11 sections,
-  3,989 w from 2,330 (**180 %**). ⚠️ **TRIMMED FIRST AND IT DID NOT RECOVER A PAGE** — 207 w cut
-  (two verified second copies of its own register, one shortened cross-reference, two blocks of my
-  commentary) and **it still printed 13.** ⚠️⚠️ **THE TWO DECKS OVERLAP ALMOST COMPLETELY AND
-  DISAGREE NOWHERE**; every table is their **UNION**, marked where only one prints an item.
-  ✅ **Pays TWO register rows IN** (`ps-sud`'s whole 733-w half; `ps-schizmgmt`'s NMS) **and ONE OUT**
-  — `ps-pharm`'s `ph-5` had **no serotonin-syndrome precipitant, antidote or mechanism**; `em-10`
-  supplies all three (**`cyproheptadine` = ONE hit across all 25 decks**). ⚠️⚠️ **NOT ONE DOSE IS
-  SUPPLIED — `mg` returns ZERO over all 46 slides of `L16`**, and an emergency dose from memory is
-  what `CLAUDE.md` §5 forbids outright. ⚠️ **Book Psych ch.10 (256-260) UNREAD**, image-only.
-- ✅ **`ps-sud` done, 7 pp whole — the module's shortest. 352 w/pp; inflation 220 %, its worst, and
-  unavoidable (ZERO questions = no backwards calibration).** ⚠️⚠️ **`L15` IS TWO LECTURES IN ONE
-  DECK**: lines 1-204 substance **1,121 w** (this chapter); lines 205-354 **psychiatry emergency
-  733 w** (NMS 240, catatonia 108, suicide 385) — **filed OUT whole to `ps-emerg` in `sd-8`.**
-  ⚠️ **Three VERIFIED ABSENCES recorded, not filled**: no pharmacotherapy for stimulants or
-  hallucinogens; **no intoxication or withdrawal syndrome anywhere** (`tolerance`/`delirium
-  tremens`/`naloxone` = **zero across all 25 decks**); no substance named against any of the nine
-  induced disorders. **Book Psych ch.9 (249-255) is where they'd live — unread.**
+- **⚠️⚠️⚠️ `anchorauto.js` SILENTLY DAMAGED 23 BOLD LEADS ACROSS SEVEN SHIPPED CHAPTERS — found and
+  repaired 2026-08-23.** It promoted a comma to an em-dash, and failing that inserted one before the
+  first `and`/`or`. **Both split compound subjects and broke enumerations**: *No mg, no mg/kg…* →
+  *No mg — no mg/kg…*; *The deck and the book print…* → *The deck — and the book print…*; and
+  **⚠️ it corrupted a QUOTED CONTENTS-PAGE TITLE, i.e. a citation.** ⚠️⚠️ **ALL 23 PASSED `vdraft.js`
+  — the validator checks an anchor EXISTS, never that the sentence still parses.** ⚠️⚠️ **THE
+  GENERAL RULE: A TOOL THAT EDITS SILENTLY WILL EVENTUALLY EDIT WRONGLY AND NOBODY WILL SEE IT** —
+  it printed only a COUNT. **Rewritten: it now PRINTS EVERY EDIT, refuses a comma followed by a
+  coordinator/negator or with <3 words before it, and the conjunction rule is DELETED.** Detector
+  regex, the full table and the three lessons: plan §4. **Page counts did not move.**
+- ✅ **THE PSYCHIATRY TAIL IS DONE: `ps-sud` 7 pp · `ps-emerg` 13 · `ps-devices` 12.** Full arithmetic in
+  plan §4; the three blocks verbatim in the archive. **What is still OPEN, and must not be re-derived:**
+  ⚠️ **THREE BOOK CHAPTERS UNREAD** — **Psych ch.9** (249-255, substance), **ch.10** (256-260, emergency),
+  **ch.12** (265-270, devices). ⚠️⚠️ **FOUR VERIFIED ABSENCES, RECORDED AND DELIBERATELY NOT FILLED:**
+  **no intoxication/withdrawal syndrome anywhere** (`tolerance`/`delirium tremens`/`naloxone` = zero
+  over all 25 decks) · **no pharmacotherapy for stimulants or hallucinogens** · **NOT ONE DOSE in
+  `ps-emerg`** (`mg` = zero over 46 slides) · **NOT ONE CONTRAINDICATION for any device.**
+  ⚠️⚠️ **AND A SYLLABUS-LEVEL ABSENCE: PSYCHOSURGERY is one of the four arms of psychiatric
+  treatment and is TAUGHT NOWHERE** — `psychosurgery`/`cingulotomy`/`lobotomy` = **zero across ALL 25 DECKS.**
 - **⚠️⚠️ A DECK'S WORD COUNT IS NOT ITS TEACHING COUNT — TWICE NOW. SPLIT THE COUNT BEFORE BUDGETING
   FROM IT.** `L11,12` is **2,251 w of which 1,933 (86 %) are FIVE CASE VIGNETTES** (teaching ~320 w;
   it **asks NINE questions and ANSWERS NONE** — worked in `sm-9`); `L15` is **two lectures in one
@@ -150,13 +151,13 @@ there before resuming a paused stream. Where this file and the archive disagree,
 - **Corpus 2,097** (2026-08-14): ENT 1,720 · Neuro 158 · Ophtho 138 · Peds 81. Banks: GG 1,180 ·
   Endpoint 697 · House 78; 54 shared. Module keys `ent`, `ophtho`, `pediatrics`, `neuropsych`.
   Option counts 2–9 coexist; nothing assumes four.
-- **Theory: 140 of 150 chapters, 1,483 sections.** ENT 30 (259 pp / 8.6) · Peds 51 (340 / 8.3) ·
-  Ophtho 36 (331 / 9.2) · **Neuro 23 of 33**. Drafts in `content\<mod>\theory-drafts\` (⚠️ ENT's
+- **Theory: 141 of 150 chapters, 1,493 sections.** ENT 30 (259 pp / 8.6) · Peds 51 (340 / 8.3) ·
+  Ophtho 36 (331 / 9.2) · **Neuro 24 of 33**. Drafts in `content\<mod>\theory-drafts\` (⚠️ ENT's
   bare `ent-csom/tonsils/aom/stridor` are the DEAD format; their `*.v2/v3` are current). Best
   models: `ent-nasalobs`, `op-ret`, `nr-cranial`, `ps-symptom`, `ps-ocd`, `ps-anxiety`, `ps-schizmgmt`.
 - Last real `file://` boot **2026-08-23**: **0 console errors, 876 CSS rules, 3
-  `max-aspect-ratio:5/4` blocks, 4 modules, 150 chapters, 2,097 questions, 89 cases, 140 theory
-  chapters, 1,483 sections.** Harnesses in `<scratch>\`: `MOD=<mod> print.sh` · `boot.sh` ·
+  `max-aspect-ratio:5/4` blocks, 4 modules, 150 chapters, 2,097 questions, 89 cases, 141 theory
+  chapters, 1,493 sections.** Harnesses in `<scratch>\`: `MOD=<mod> print.sh` · `boot.sh` ·
   `modcheck-neuro.js` · `vdraft.js` · `splice-neuro.js`/`resplice-neuro.js` · `qdump.js` · `shot.sh`.
 - **⚠️ THE THEORY READER IS AN A4 PAGE (2026-08-19, three user complaints) AND MUST NOT BE MADE
   WHITE.** 210:297 by `aspect-ratio`; **margins set in JS from the PAGE's width** (percentages

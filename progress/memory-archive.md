@@ -401,3 +401,27 @@ Compressed there to two short lines. `CLAUDE.md` §6 carries the standing rules;
 - **⚠️⚠️ `overflow:hidden` MAKES A BLOCK MONOLITHIC, AND MONOLITHIC MEANS CLIPPED, NOT BROKEN** —
   `.th-table` carried it for its corners and over-tall tables silently lost their last rows in the
   reader. Fixed screen-side; **print was checked with `pdftotext` first and was never affected.**
+
+### The three psychiatry-tail chapters, moved out of MEMORY.md 2026-08-23, verbatim
+
+`ps-sud`, `ps-emerg` and `ps-devices`, written 2026-08-23. Compressed in MEMORY.md to one block
+carrying only the rules and the still-open absences; `content\neuro\theory-plan.md` §4 holds the
+full arithmetic for each.
+
+- ✅ **`ps-devices` done, 12 pp whole.** 10 sections, 4,191 w from **1,909** — **inflation 220 %**,
+  and **÷280 under-predicted by 5.2 pp, a new worst that way.** ✅ **It PAYS the ECT row `ps-emerg`
+  and `ps-schizmgmt` both filed, and `dv-10` AUDITS IT ITEM BY ITEM** — of `sm-8`'s six missing
+  items: **technique, anaesthesia, adverse effect PAID; electrode placement PARTIAL; course length
+  and CONTRAINDICATION still absent.** ⚠️⚠️ **Both chapters' pointer was WRONG again — book ch.12,
+  unread — while `L18` was cached.**
+- ✅ **`ps-emerg` done, 13 pp whole — AT the hard shape, not past it, so no split.** 11 sections,
+  3,989 w from 2,330 (**180 %**). ⚠️ **TRIMMED FIRST AND IT DID NOT RECOVER A PAGE** — 207 w cut
+  (two verified second copies of its own register, one shortened cross-reference, two blocks of my
+  commentary) and **it still printed 13.** ⚠️⚠️ **THE TWO DECKS OVERLAP ALMOST COMPLETELY AND
+  DISAGREE NOWHERE**; every table is their **UNION**, marked where only one prints an item.
+  ✅ **Pays TWO register rows IN** (`ps-sud`'s whole 733-w half; `ps-schizmgmt`'s NMS) **and ONE OUT**
+  — `ps-pharm`'s `ph-5` had **no serotonin-syndrome precipitant, antidote or mechanism**; `em-10`
+  supplies all three (**`cyproheptadine` = ONE hit across all 25 decks**).
+- ✅ **`ps-sud` done, 7 pp whole — the module's shortest. 352 w/pp; inflation 220 %.** ⚠️⚠️ **`L15`
+  IS TWO LECTURES IN ONE DECK**: lines 1-204 substance **1,121 w**; lines 205-354 **psychiatry
+  emergency 733 w** (NMS 240, catatonia 108, suicide 385) — **filed OUT whole to `ps-emerg`.**
