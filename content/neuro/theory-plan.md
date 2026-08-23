@@ -26,10 +26,12 @@ hard shape — `nr-hemi`/`nr-para` 2026-08-18 · `nr-lmn`/`nr-nerve` and `ps-ocd
 deck** — see §4. Ids and titles in `app\data\modules.js`
 under module id `neuropsych`. **151 questions**, all `gradegain`, all MCQ, ids `npqb-`.
 
-⚠️⚠️ **FORECASTING NOW WORKS AND PRINTING AFTER THE FACT DOES NOT PAY.** The two forecast splits
-printed **13/12** and **9/10 pp** — every half inside the shape on the first print. The three found
-ones each cost a whole extra write-print-split cycle. **Forecast from the SOURCE word count before
-briefing**, using the ÷280 divisor and the inflation multiplier in §4.
+⚠️⚠️ **FORECAST ONLY WHEN THE FORECAST IS FAR PAST THE SHAPE — OTHERWISE PRINT FIRST.** The two
+forecast splits printed **13/12** and **9/10 pp**, every half inside the shape first time, and each
+of the three *found* splits cost a whole extra write-print-split cycle. **But `ps-pharm` forecast at
+14.9 pp and printed 11** — pre-splitting it would have made two unnecessary chapters. **The rule
+that survives both results: split before writing when ÷280 says 16 or more, as `ps-psychosis`'s
+20-30 did; PRINT FIRST anywhere between 13 and 15.** Divisor and inflation figures in §4.
 
 ### ⚠️⚠️ THE QUESTION DISTRIBUTION IS THE MOST LOPSIDED IN THE PROJECT
 
@@ -47,10 +49,10 @@ splits each added a zero-question half).*
 | 11 | `ps-symptom` |
 | 5 | `ps-psychoed` |
 | 1 each | `nr-ms` · `nr-movement` · `nr-lmn` · `ps-ocd` · `ps-mood` |
-| **0** | `ps-interview` · `ps-osce` · `ps-somato` · `ps-anxiety` · `ps-psychosis` · `ps-geri` · `ps-child` · `ps-sud` · `ps-emerg` · `ps-pharm` · `ps-devices` · `ps-therapy` · `nr-cns` · `nr-delirium` · `nr-backpain` · **`nr-nerve`** *(added by the split; its half of the pair holds the question)* |
+| **0** | **NINETEEN**: `ps-interview` · `ps-osce` · `ps-somato` · `ps-anxiety` · **`ps-ptsd`** · `ps-psychosis` · **`ps-schizmgmt`** · `ps-geri` · `ps-child` · `ps-sud` · `ps-emerg` · `ps-pharm` · `ps-devices` · `ps-therapy` · **`nr-epilepsy`** · **`nr-nerve`** · `nr-cns` · `nr-delirium` · `nr-backpain`. *The five bolded were added by the splits; in each pair the other half keeps the question* |
 
 **What this means for budgeting.** §14's budget is `max(source words, 25 × questions)`, floor 600.
-With 15 chapters at zero questions, **the deck word count governs almost the whole psychiatry half**
+With **19** chapters at zero questions, **the deck word count governs almost the whole psychiatry half**
 — the `25×q` term never binds there. The bank is frozen mid-flight (`npqb-` transcription is another
 chat's stream), so **these zeros are "not yet transcribed", NOT "not examined"**. Do not treat a
 zero-question chapter as low-value; the neurology bias is an artefact of transcription order.
@@ -218,9 +220,10 @@ Four chapters are printed now, and they do **not** share one rate:
 | `ps-anxiety` | 3,772 | 13.5 | **11** | 343 |
 | `ps-psychosis` | 3,002 | 10.7 | **9** | 334 |
 | **`ps-schizmgmt`** | 3,854 | 13.7 | **10** | **385** |
+| **`ps-pharm`** | 4,181 | **14.9** | **11** | **380** |
 
-**All three over-predicted, which is the safe direction — but 3.7 pages of slack is enough to force
-an unnecessary split.** ⚠️ **Do not split on ÷280 alone once a forecast lands between 13 and 15;
+**All four over-predicted, which is the safe direction — but 3.9 pages of slack is enough to force
+an unnecessary split.** ✅ **`ps-pharm` is the rule's first live test: forecast 14.9, printed 11.** ⚠️ **Do not split on ÷280 alone once a forecast lands between 13 and 15;
 print first.** Split before writing only where the forecast is **far** past the shape, as
 `ps-psychosis`'s 20–30 pp was. **The three most recent chapters are the densest in the module**, and
 the likeliest reason is **long two-column table cells**, which pack more words per printed line than
@@ -262,7 +265,7 @@ page. Look for a second copy before looking for something to cut.
 |---|---|---|---|
 | ✅ **`nr-movement`** | **5,020** (L3 2,699 + L4 2,321) | forecast **15.0 pp** | ✅✅ **WRITTEN AND SPLIT 2026-08-22/23 — and this one was SPLIT BEFORE WRITING**, the only chapter in the module where the evidence was in hand first. **`nr-movement`** (L3, 11 sections, 4,075 w, **printed 13 pp**, keeps `npqb-nr-113`) and new **`nr-epilepsy`** (L4, 12 sections, 3,637 w, **printed 12 pp**, 0 q). ⚠️ **The "both halves sit near 7–8 pp" note in the old row was WRONG — they printed 13 and 12.** A source word count under-predicts this style badly: 2,699 source words became 4,075 written. **Measured 313 w/pp** |
 | ✅ `nr-cranial` | 3,700 | **printed 12 pp** | ✅ **WRITTEN 2026-08-19 — WHOLE**, 12 sections, 3,823 w, all 34 questions linked. Over the ~10 pp operative ceiling and inside the ≤13 hard shape, which is where ophthalmology shipped `op-glauc` and `op-conj`. ⚠️ **A CONTIGUOUS SEAM EXISTS IF IT IS EVER WANTED** and is recorded so nobody re-derives it: `cn-1`–`cn-7` (**I–VI and trigeminal neuralgia**, 1,779 w, **21 questions**) against `cn-8`–`cn-12` (**VII–XII and the facial palsies**, 2,044 w, **13 questions**) — two ~6 pp halves. The examination-vs-disease seam the draft header first proposed is **NOT contiguous** and would reorder the chapter |
-| `ps-pharm` | 3,456 + book | 10.3 pp | whole, but ⚠️ **the book adds 4 pages and Psych ch.7 adds the antipsychotics** — watch it |
+| ✅ `ps-pharm` | **3,968** (deck 2,566 + book ch.11 1,402) | ÷280 said **14.9 pp** | ✅ **WRITTEN WHOLE 2026-08-23 — printed 11 pp, NO SPLIT.** 10 sections, 4,181 w, 0 q. ⚠️⚠️ **THE FIRST TEST OF THE PRINT-FIRST RULE, AND IT PAID: ÷280 OVER-PREDICTED BY 3.9 PAGES** — a new worst, and pre-splitting on the forecast would have made two unnecessary chapters. **Measured 380 w/pp.** ✅ **The ch.11 dead heading is fully resolved** — `ph-7` points at `ps-schizmgmt`'s `sm-6`/`sm-7` and repeats none of it, while adding **the deck's own 12-agent classification table, eleven of whose agents appear nowhere in book ch.7**. ⚠️⚠️ **THE TWO SOURCES CONTRADICT EACH OTHER ON THE DOPAMINE PATHWAYS** — deck sl.19 puts positive symptoms on the **mesolimbic** and negative on the **mesocortical**; book ch.7 puts positive on the **associative nigrostriatal** and negative on the **mesolimbic**. **Recorded in both chapters, corrected in neither.** ⚠️ **The module's purest fill-and-tag chapter** — neither source prints a dose, and **the whole MAOI adverse-effect block is supplied** because the book's numbered list runs 1-5 and stops and ch.7 does not fill it either |
 | ✅ `nr-lmn` | 3,573 (L5 2,048 + L6 1,525) | **printed 17 pp WHOLE** | ✅✅ **WRITTEN AND SPLIT 2026-08-22.** Written whole against both decks, spliced, printed — **17 pp, four past the hard shape** — then split on the **deck boundary**, which was contiguous and needed no reordering. **`nr-lmn` (L5, muscle + NMJ): 10 sections, 3,481 w, printed 12 pp**, keeps `npqb-nr-118`. **`nr-nerve` (L6, peripheral nerve): 5 sections, 2,134 w, printed 8 pp**, zero questions. ⚠️ **This REVERSED the original `nr-lmn1`+`nr-lmn2` merge** — the merge rule joins one topic taught over two lectures, and these are two topics. ⚠️ **The ÷335 row above forecast 10.7 pp against a printed 17** — its worst miss in this module, and the reason ÷280 is the planning divisor |
 | ✅ `nr-headache` | 3,647 (book ch.9) | **printed 10 pp** | ✅ **WRITTEN 2026-08-19** — whole, 11 sections, 2,811 w, all 22 questions linked |
 | ✅ `ps-ocd` | deck 2,322 + book pp. 197-199 | **printed 14 pp WHOLE** | ✅✅ **WRITTEN AND SPLIT 2026-08-22.** ⚠️ **Two second copies were trimmed FIRST and it was not enough** — a consolidated *which-source-has-what* table and a restatement of PTSD prevalence recovered **82 words of paper**, leaving **50 words on page 14** with **nothing left that was duplication**. Split on the deck's own **`PART ONE` / `PART TWO`** seam: **`ps-ocd`** (OCD, 10 sections, 3,139 w, **printed 10 pp**, keeps `npqb-ps-7`) and new **`ps-ptsd`** (PTSD + ASD, 4 sections, 1,850 w, **printed 6 pp**, 0 q). ⚠️ **The first split of a SINGLE deck** — §4 joins one TOPIC over two lectures and says nothing about two disorders in one lecture. **Measured rate 306 w/pp** |
@@ -288,16 +291,17 @@ the book mapper as a split candidate on precedent. **Not decided — read before
 2. ✅ **Book map** — `content\neuro\book-map.md`, done 2026-08-18.
 3. ✅ **`L17` visual read** — cache 239 → 3,358 w, done 2026-08-18. `ps-pharm` is unblocked on the
    deck but still **partial** on antipsychotics — see the dead-heading finding below.
-4. ✅ **Written — 18 of 32** *(measured from disk 2026-08-23)*: `nr-stroke` · `nr-hemi` ·
+4. ✅ **Written — 19 of 32** *(measured from disk 2026-08-23)*: `nr-stroke` · `nr-hemi` ·
    `nr-para` · `nr-headache` · `nr-cranial` · `ps-symptom` · `ps-psychoed` · `nr-ms` · `ps-mood` ·
    `nr-lmn` · `nr-nerve` · `ps-ocd` · `ps-ptsd` · `nr-movement` · `nr-epilepsy` · `ps-anxiety` ·
-   **`ps-psychosis`** · **`ps-schizmgmt`**.
-   **167 sections, 50,988 body words. 130 of the module's 151 questions reachable.**
-   **14 chapters holding 21 questions remain — and `nr-intro` holds ALL 21.**
+   `ps-psychosis` · `ps-schizmgmt` · **`ps-pharm`**.
+   **177 sections, 55,169 body words. 130 of the module's 151 questions reachable.**
+   **13 chapters holding 21 questions remain — and `nr-intro` holds ALL 21.**
    ✅ **Book Psychiatry ch.3 is now FULLY SPENT** across `ps-ocd`, `ps-ptsd` and `ps-anxiety`;
    the page-by-page accounting is in `ps-anxiety`'s **`ax-10`**.
    ✅ **Book Psychiatry ch.7 is FULLY SPENT** across `ps-psychosis` and `ps-schizmgmt`.
-   ⚠️⚠️ **`ps-pharm` IS NOW PAID ITS ANTIPSYCHOTICS — AND MUST POINT, NOT REPEAT.** Book ch.11's
+   ✅ **`ps-pharm` IS WRITTEN AND IT POINTS RATHER THAN REPEATS** — the rule below was followed.
+   ⚠️⚠️ **`ps-pharm` WAS PAID ITS ANTIPSYCHOTICS — AND HAD TO POINT, NOT REPEAT.** Book ch.11's
    dead heading defers *classes, mechanism of action & adverse effect* to *the schizophrenia
    lecture*; that content is written in **`ps-schizmgmt`'s `sm-6` and `sm-7`**. What `ps-pharm`
    still owns is **`L17`'s own agent list** — five typicals and six atypicals ch.7 never names —

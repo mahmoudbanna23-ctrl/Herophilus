@@ -320,3 +320,12 @@ Each block survives in MEMORY.md as a shorter entry pointing here.
 - **Every bank mis-keys itself — go looking.** Options replaced → new entry; identical options with
   a moved key → record in place; bank contradicting its own box → correct and record. Cross-bank
   divergence: hold both — **but check the menu: a key is the best option OFFERED.**
+
+### Bank sampling and provenance, moved out of MEMORY.md 2026-08-23, verbatim
+
+- **⚠️ A BANK'S CONTENTS PAGE MAY PRINT PER-SECTION COUNTS — LOOK BEFORE SAMPLING** (GG ophtho's did,
+  turning ±30 % into ±5). **Verify, never trust**; *"highest question number"* misleads wherever
+  numbering restarts per section — three of the four files.
+- **⚠️ The end-of-ENT "outside knowledge" list is about half wrong** — re-grep item by item (8 of 13
+  were printed all along); 67 entries record no provenance, roster in `ledger.md` §11. **Bank
+  structure and the crop rule: `progress\memory-archive.md`.**
