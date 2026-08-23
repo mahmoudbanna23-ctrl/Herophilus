@@ -5,7 +5,7 @@ Running record, organised around *resuming*. ISO dates; unverified marked as suc
 story, count and verbatim ruling) in `progress\memory-archive.md`** — read the relevant block
 there before resuming a paused stream. Where this file and the archive disagree, this file wins.
 
-## Resume here — **NEUROPSYCHIATRY THEORY, the last module: 27 of 34 written. ✅ ALL 151 QUESTIONS NOW REACHABLE FROM THEORY; the SEVEN chapters left carry ZERO.** ENT · Peds · Ophtho theory DONE. Banks PAUSED.
+## Resume here — **NEUROPSYCHIATRY THEORY, the last module: 28 of 34 written. ✅ ALL 151 QUESTIONS NOW REACHABLE FROM THEORY; the SIX chapters left carry ZERO.** ENT · Peds · Ophtho theory DONE. Banks PAUSED.
 
 - **⚠️⚠️ `content\neuro\theory-plan.md` IS THE MODULE'S WORKING FILE — READ IT FIRST**, with
   `content\neuro\book-map.md`. Deck audit, unsourced chapters, page rates, order of work, every
@@ -14,7 +14,7 @@ there before resuming a paused stream. Where this file and the archive disagree,
   (whole; seam in the plan) · `ps-symptom` 8 · `ps-psychoed` · `nr-ms` · `ps-mood` · `nr-lmn` 12 ·
   `nr-nerve` 8 · `ps-ocd` 10 · `ps-ptsd` 6 · `nr-movement` 13 · `nr-epilepsy` 12 · `ps-anxiety` 11 ·
   `ps-psychosis` 9 · `ps-schizmgmt` 10 · `ps-pharm` 11 · `nr-backpain` 10 · `nr-neckpain` 9 ·
-  `ps-sud` 7 · `ps-emerg` 13 · `ps-devices` 12 · `ps-therapy` 11 · `nr-intro` 10 · `nr-exam` 7.**
+  `ps-sud` 7 · `ps-emerg` 13 · `ps-devices` 12 · `ps-therapy` 11 · `nr-intro` 10 · `nr-exam` 7 · **`nr-cns` 13, EXACTLY AT THE SHAPE, NO SPLIT.**
 - **⚠️⚠️ SIX SPLITS ON 2026-08-22/23 took the module 29 → 34. Every seam and its arithmetic is in the plan §4; the first five are listed verbatim in the archive. `SCHEDULE` untouched every time.**
   ⚠️ **A SINGLE deck may split** (`ps-ocd`), and **a book seam may cut across an INTERLEAVING deck** (`nr-backpain`) — **nothing is reordered *within* a chapter.**
 - **⚠️⚠️ FORECAST A SPLIT ONLY AT ÷280 ≥ 16; BETWEEN 13 AND 15, TEST-PRINT — NEVER ACCEPT A SPLIT
@@ -22,7 +22,7 @@ there before resuming a paused stream. Where this file and the archive disagree,
   `ps-pharm` forecast 14.9 and PRINTED 11.** ⚠️⚠️ **÷280 ERRS BADLY IN BOTH DIRECTIONS: it
   OVER-predicted `ps-pharm` by 4.0 and UNDER-predicted `ps-emerg` by 4.7** (said 8.3, printed 13).
   ⚠️ **÷240 over-predicted ophtho by 5.1; ÷335 under-predicted `nr-lmn` by 6.3; both OVER-predicted
-  `ps-therapy` (13.7 and 16.0 against 11 printed). ONLY PRINTING SETTLES IT.**
+  `ps-therapy` (13.7 and 16.0 against 11 printed). ONLY PRINTING SETTLES IT.** ⚠️ **`nr-cns` WAS OVER-PREDICTED BY BOTH FROM THE WRITTEN COUNT — ÷240 said 17.0, ÷280 said 14.5, IT PRINTED 13.**
 - **⚠️⚠️ TRIM FIRST, BUT KNOW WHEN TO STOP. A trim is duplication or my own prose, never a fact.**
   `ps-ocd` had **132 words on page 14**; two second copies recovered **82 words of paper**, leaving
   **50** and nothing that was duplication — so it split. ⚠️⚠️ **"A table costs more paper per word" IS REFUTED** — `ps-anxiety` is the **most** table-dense chapter and printed **highest** w/pp.
@@ -67,7 +67,7 @@ there before resuming a paused stream. Where this file and the archive disagree,
   CONTENTS-PAGE TITLE, i.e. a citation.** ⚠️⚠️ **ALL 23 PASSED `vdraft.js` — the validator checks an
   anchor EXISTS, never that the sentence still parses.** ⚠️⚠️ **THE GENERAL RULE: A TOOL THAT EDITS
   SILENTLY WILL EVENTUALLY EDIT WRONGLY AND NOBODY WILL SEE IT** — it printed only a COUNT. **Rewritten: PRINTS EVERY EDIT, refuses risky commas, conjunction rule DELETED; detail plan §4.**
-  ✅ **Behaving since: ZERO edits on `ps-therapy` (9 leads reported, 9 fixed by hand); FOUR on `nr-intro`, EACH ONE READ BEFORE ACCEPTING — none altered meaning. ⚠️ READ ITS PRINTED EDITS EVERY TIME; that is the whole point of the rewrite.**
+  ⚠️⚠️ **AND ON 2026-08-23 IT MADE ITS FIRST WRONG EDIT SINCE THE REWRITE, ON `nr-cns`** — its ONE auto-fix SPLIT AN ENUMERATION (*ACUTE ONSET of HEADACHE, FEVER, CONFUSION…* → *HEADACHE — FEVER, CONFUSION…*). **CAUGHT BY READING THE PRINTED EDIT**, reverted, and all 23 leads fixed BY HAND. ⚠️ **THE COMMA RULE STILL BREAKS A LIST WHOSE NEXT WORD IS NOT A COORDINATOR.** **Before that: ZERO edits on `ps-therapy` (9 leads reported, 9 fixed by hand); FOUR on `nr-intro`, EACH ONE READ BEFORE ACCEPTING — none altered meaning. ⚠️ READ ITS PRINTED EDITS EVERY TIME; that is the whole point of the rewrite.**
 - ✅ **THE PSYCHIATRY TAIL IS DONE: `ps-sud` 7 pp · `ps-emerg` 13 · `ps-devices` 12 · `ps-therapy` 11.**
   Full arithmetic in plan §4; the four blocks verbatim in the archive. **THREE ARMS OF TREATMENT ARE
   NOW CLOSED** — drugs, psychotherapy, devices; their four unread book chapters are in the row above.
@@ -152,13 +152,13 @@ there before resuming a paused stream. Where this file and the archive disagree,
 - **Corpus 2,097** (2026-08-14): ENT 1,720 · Neuro 158 · Ophtho 138 · Peds 81. Banks: GG 1,180 ·
   Endpoint 697 · House 78; 54 shared. Module keys `ent`, `ophtho`, `pediatrics`, `neuropsych`.
   Option counts 2–9 coexist; nothing assumes four.
-- **Theory: 144 of 151 chapters, 1,516 sections.** ENT 30 (259 pp / 8.6) · Peds 51 (340 / 8.3) ·
-  Ophtho 36 (331 / 9.2) · **Neuro 27 of 34**. Drafts in `content\<mod>\theory-drafts\` (⚠️ ENT's
+- **Theory: 145 of 151 chapters, 1,527 sections.** ENT 30 (259 pp / 8.6) · Peds 51 (340 / 8.3) ·
+  Ophtho 36 (331 / 9.2) · **Neuro 28 of 34**. Drafts in `content\<mod>\theory-drafts\` (⚠️ ENT's
   bare `ent-csom/tonsils/aom/stridor` are the DEAD format; their `*.v2/v3` are current). Best
   models: `ent-nasalobs`, `op-ret`, `nr-cranial`, `ps-symptom`, `ps-ocd`, `ps-anxiety`, `ps-schizmgmt`.
 - Last real `file://` boot **2026-08-23**: **0 console errors, 876 CSS rules, 3
-  `max-aspect-ratio:5/4` blocks, 4 modules, 151 chapters, 2,097 questions, 89 cases, 144 theory
-  chapters, 1,516 sections.** Harnesses in `<scratch>\`: `MOD=<mod> print.sh` · `boot.sh` ·
+  `max-aspect-ratio:5/4` blocks, 4 modules, 151 chapters, 2,097 questions, 89 cases, 145 theory
+  chapters, 1,527 sections.** ⚠️⚠️ **THE SESSION SCRATCHPAD STARTS EMPTY AND THE HARNESSES DO NOT LIVE IN THE CURRENT ONE** — all ten survive under the 2026-08-17 session dir `3528b857-dbcf-4152-a3c7-f4fa6e501f21\scratchpad`; **`find` the temp root for them before rebuilding anything.** They are: `MOD=<mod> print.sh` · `boot.sh` ·
   `modcheck-neuro.js` · `vdraft.js` · `splice-neuro.js`/`resplice-neuro.js` · `qdump.js` · `shot.sh`.
 - **⚠️ THE THEORY READER IS AN A4 PAGE (2026-08-19, three user complaints) AND MUST NOT BE MADE
   WHITE.** 210:297 by `aspect-ratio`; **margins set in JS from the PAGE's width** (percentages
