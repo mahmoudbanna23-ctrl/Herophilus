@@ -5,7 +5,7 @@ Running record, organised around *resuming*. ISO dates; unverified marked as suc
 story, count and verbatim ruling) in `progress\memory-archive.md`** — read the relevant block
 there before resuming a paused stream. Where this file and the archive disagree, this file wins.
 
-## Resume here — **NEUROPSYCHIATRY THEORY, the last module: 28 of 34 written. ✅ ALL 151 QUESTIONS NOW REACHABLE FROM THEORY; the SIX chapters left carry ZERO.** ENT · Peds · Ophtho theory DONE. Banks PAUSED.
+## Resume here — **NEUROPSYCHIATRY THEORY, the last module: 29 of 34 written. ✅ ALL 151 QUESTIONS NOW REACHABLE FROM THEORY; the FIVE chapters left carry ZERO.** ENT · Peds · Ophtho theory DONE. Banks PAUSED.
 
 - **⚠️⚠️ `content\neuro\theory-plan.md` IS THE MODULE'S WORKING FILE — READ IT FIRST**, with
   `content\neuro\book-map.md`. Deck audit, unsourced chapters, page rates, order of work, every
@@ -14,7 +14,7 @@ there before resuming a paused stream. Where this file and the archive disagree,
   (whole; seam in the plan) · `ps-symptom` 8 · `ps-psychoed` · `nr-ms` · `ps-mood` · `nr-lmn` 12 ·
   `nr-nerve` 8 · `ps-ocd` 10 · `ps-ptsd` 6 · `nr-movement` 13 · `nr-epilepsy` 12 · `ps-anxiety` 11 ·
   `ps-psychosis` 9 · `ps-schizmgmt` 10 · `ps-pharm` 11 · `nr-backpain` 10 · `nr-neckpain` 9 ·
-  `ps-sud` 7 · `ps-emerg` 13 · `ps-devices` 12 · `ps-therapy` 11 · `nr-intro` 10 · `nr-exam` 7 · **`nr-cns` 13, EXACTLY AT THE SHAPE, NO SPLIT.**
+  `ps-sud` 7 · `ps-emerg` 13 · `ps-devices` 12 · `ps-therapy` 11 · `nr-intro` 10 · `nr-exam` 7 · **`nr-cns` 13 · `ps-somato` 13 — BOTH EXACTLY AT THE SHAPE, NEITHER SPLIT.**
 - **⚠️⚠️ SIX SPLITS ON 2026-08-22/23 took the module 29 → 34. Every seam and its arithmetic is in the plan §4; the first five are listed verbatim in the archive. `SCHEDULE` untouched every time.**
   ⚠️ **A SINGLE deck may split** (`ps-ocd`), and **a book seam may cut across an INTERLEAVING deck** (`nr-backpain`) — **nothing is reordered *within* a chapter.**
 - **⚠️⚠️ FORECAST A SPLIT ONLY AT ÷280 ≥ 16; BETWEEN 13 AND 15, TEST-PRINT — NEVER ACCEPT A SPLIT
@@ -27,7 +27,7 @@ there before resuming a paused stream. Where this file and the archive disagree,
   `ps-ocd` had **132 words on page 14**; two second copies recovered **82 words of paper**, leaving
   **50** and nothing that was duplication — so it split. ⚠️⚠️ **"A table costs more paper per word" IS REFUTED** — `ps-anxiety` is the **most** table-dense chapter and printed **highest** w/pp.
 - **⚠️⚠️ A SOURCE WORD COUNT UNDER-PREDICTS THIS STYLE BADLY** — `nr-movement` wrote **163 %** of its
-  source, **`ps-anxiety` 202 %**, ⚠️⚠️ **`ps-therapy` 277 % — the worst, and STRUCTURAL: A DECK THAT
+  source, **`ps-anxiety` 202 %**, ⚠️⚠️ **`ps-somato` 303 % — THE WORST, `ps-therapy` 277 %; BOTH STRUCTURAL: A DECK THAT
   NAMES RATHER THAN TEACHES COSTS THE MOST TO WRITE**; writing tight brought `ps-psychosis` to 128 %.
   ⚠️ **My own connective prose is the inflation, it sits ABOVE §14.2's floor, and it is the
   legitimate thing to cut** — 322 w and 240 w cut, **no sourced fact lost**. ⚠️ **Cut an UNTAGGED outside claim and a CONSOLIDATED second copy first.** **Rates 296-391 w/pp.**
@@ -82,13 +82,13 @@ there before resuming a paused stream. Where this file and the archive disagree,
   ⚠️⚠️ **AND A SECOND DECK-vs-BOOK CONTRADICTION, BOTH RECORDED, NEITHER CORRECTED: L19's NICE slide
   recommends CBT for psychosis/schizophrenia; book Psych ch.7 p.238 calls that evidence MINIMAL.**
 - **⚠️⚠️ A DECK'S WORD COUNT IS NOT ITS TEACHING COUNT — TWICE NOW. SPLIT THE COUNT BEFORE BUDGETING
-  FROM IT.** `L11,12` is **2,251 w of which 1,933 (86 %) are FIVE CASE VIGNETTES** (teaching ~320 w;
+  FROM IT.** ⚠️⚠️ **AND MEASURE THE DECK'S PICTURE SLIDES THE SAME WAY — `L3` HAS ELEVEN OF FORTY WITH NO TEXT AT ALL:** p.10–12 sit inside somatic symptom disorder, and **p.22–26 ARE THE WHOLE OF HYPOCHONDRIASIS, a STARRED disorder** (supplied, TAGGED). `pdffonts` + `pdftotext` per page; **zero fonts = an image, nothing hidden.** `L11,12` is **2,251 w of which 1,933 (86 %) are FIVE CASE VIGNETTES** (teaching ~320 w;
   it **asks NINE questions and ANSWERS NONE** — worked in `sm-9`); `L15` is **two lectures in one
   deck**, above. **The plan had budgeted the full figure both times.**
 - **⚠️⚠️ A GREP HIT THAT GETS EXPLAINED AWAY IS WORSE THAN A MISS — it looks like evidence.**
   `ps-anxiety` was "no deck" for five days: the probe **hit `L4,5`**, the row dismissed the hits
   unopened, and it searched `generalized anxiety`, which the deck never writes (**it writes GAD**).
-  ⚠️ **Probe with the SOURCE's vocabulary and OPEN THE SLIDE.** ⚠️⚠️ **PAID A SECOND TIME 2026-08-23:** `nr-intro`'s twelfth zero-probe was **`lateral column`, a phrase the book NEVER uses** — it writes *lateral corticospinal tract* and *dorsal (posterior) column*; `gracile`/`cuneate` are **figure labels only.** **The anatomy was there the whole time under the source's own names.**
+  ⚠️ **Probe with the SOURCE's vocabulary and OPEN THE SLIDE.** ⚠️⚠️ **PAID A SECOND TIME 2026-08-23:** `nr-intro`'s twelfth zero-probe was **`lateral column`, a phrase the book NEVER uses** — it writes *lateral corticospinal tract* and *dorsal (posterior) column*; `gracile`/`cuneate` are **figure labels only.** **The anatomy was there the whole time under the source's own names.** ⚠️⚠️ **PAID A THIRD TIME, AND BIGGEST, ON `ps-somato`: ONE probe recovered THREE fills at once — `Hoover's sign`, `la belle indifference` and conversion-vs-malingering are all NAMED-BUT-NOT-DEFINED by L3 and ALL THREE were already written, in `nr-hemi` `hem-2` and `ps-symptom` `sy-3`.** ⚠️ **And `histrion` returns ZERO only because the deck prints `Hysterionic` — the `ostio-` trap again.**
 - **⚠️ Ophtho reconciliation is NOT done** — ~63 register rows, `va-6`/`pup-10`, five held divergences, `wht-8`. In its `theory-plan.md`; never re-derive.
 - **⚠️ A SPLIT MOVES QUESTIONS by the theory `qs` links, never by title** — ophtho refiled 12/1/1/16/2.
 - **⚠️⚠️ CHECK A CHAPTER'S QUESTIONS AGAINST ITS SOURCE BEFORE BRIEFING.** A Decks column is an assignment, **not coverage** — **none of `op-va`'s 16 was answerable from its only listed deck.**
@@ -152,13 +152,13 @@ there before resuming a paused stream. Where this file and the archive disagree,
 - **Corpus 2,097** (2026-08-14): ENT 1,720 · Neuro 158 · Ophtho 138 · Peds 81. Banks: GG 1,180 ·
   Endpoint 697 · House 78; 54 shared. Module keys `ent`, `ophtho`, `pediatrics`, `neuropsych`.
   Option counts 2–9 coexist; nothing assumes four.
-- **Theory: 145 of 151 chapters, 1,527 sections.** ENT 30 (259 pp / 8.6) · Peds 51 (340 / 8.3) ·
-  Ophtho 36 (331 / 9.2) · **Neuro 28 of 34**. Drafts in `content\<mod>\theory-drafts\` (⚠️ ENT's
+- **Theory: 146 of 151 chapters, 1,540 sections.** ENT 30 (259 pp / 8.6) · Peds 51 (340 / 8.3) ·
+  Ophtho 36 (331 / 9.2) · **Neuro 29 of 34**. Drafts in `content\<mod>\theory-drafts\` (⚠️ ENT's
   bare `ent-csom/tonsils/aom/stridor` are the DEAD format; their `*.v2/v3` are current). Best
   models: `ent-nasalobs`, `op-ret`, `nr-cranial`, `ps-symptom`, `ps-ocd`, `ps-anxiety`, `ps-schizmgmt`.
 - Last real `file://` boot **2026-08-23**: **0 console errors, 876 CSS rules, 3
-  `max-aspect-ratio:5/4` blocks, 4 modules, 151 chapters, 2,097 questions, 89 cases, 145 theory
-  chapters, 1,527 sections.** ⚠️⚠️ **THE SESSION SCRATCHPAD STARTS EMPTY AND THE HARNESSES DO NOT LIVE IN THE CURRENT ONE** — all ten survive under the 2026-08-17 session dir `3528b857-dbcf-4152-a3c7-f4fa6e501f21\scratchpad`; **`find` the temp root for them before rebuilding anything.** They are: `MOD=<mod> print.sh` · `boot.sh` ·
+  `max-aspect-ratio:5/4` blocks, 4 modules, 151 chapters, 2,097 questions, 89 cases, 146 theory
+  chapters, 1,540 sections.** ⚠️⚠️ **THE SESSION SCRATCHPAD STARTS EMPTY AND THE HARNESSES DO NOT LIVE IN THE CURRENT ONE** — all ten survive under the 2026-08-17 session dir `3528b857-dbcf-4152-a3c7-f4fa6e501f21\scratchpad`; **`find` the temp root for them before rebuilding anything.** They are: `MOD=<mod> print.sh` · `boot.sh` ·
   `modcheck-neuro.js` · `vdraft.js` · `splice-neuro.js`/`resplice-neuro.js` · `qdump.js` · `shot.sh`.
 - **⚠️ THE THEORY READER IS AN A4 PAGE (2026-08-19, three user complaints) AND MUST NOT BE MADE
   WHITE.** 210:297 by `aspect-ratio`; **margins set in JS from the PAGE's width** (percentages
