@@ -108,7 +108,7 @@ measured that way and comparability matters more than purity.
 | L6) Myths about psychiatry | 14 | **1,522** | 1,411 | 109 | `ps-psychoed` |
 | L1) INTRODUCTION AND LOCALISATION | 57 | **1,469** | 1,326 | 26 | `nr-intro` |
 | L3) Somatization | 40 | **1,464** | 1,381 | 37 | `ps-somato` |
-| L19) Psychotherapy | 29 | **1,382** | 1,303 | 48 | `ps-therapy` |
+| L19) Psychotherapy | 29 | **1,382** | 1,303 | 48 | `ps-therapy` ✅ *single-deck chapter; **the most-owed in the module — five chapters filed rows to it***. ⚠️ *three of its 29 slides are picture-only and one of them, `Additional therapies…`, **promises a list and prints a picture of one*** |
 | L9,10) Mood disorders | 25 | **1,371** | 1,284 | 55 | `ps-mood` |
 | L14) Child Psychiatry | 29 | **1,257** | 1,218 | 43 | `ps-child` |
 | L1,2) Psychiatric sheet | 17 | **473** | 384 | 28 | `ps-interview` (+ `ps-osce`?) |
@@ -313,6 +313,7 @@ counts did not move after the repair**, in any of the seven.
 | ✅ **`ps-devices`** | **1,909** (L18, single source) | ÷280 said **6.8 pp** | ✅ **WRITTEN WHOLE 2026-08-23 — printed 12 pp, NO SPLIT.** 10 sections, **4,191 w**, 0 q. ⚠️⚠️ **INFLATION 220 % — the module's worst alongside `ps-sud`**, and ÷280 **under-predicted by 5.2 pages, a new worst in that direction.** ⚠️ **TRIMMED 122 w first** — two absence bullets duplicating `dv-10`'s own audit table, one commentary bullet, two shortened forward-references — **and the page count did not move.** ✅ **It PAYS the ECT row `ps-emerg`'s `em-11` and `ps-schizmgmt`'s `sm-8`/`sm-10` both filed, and `dv-10` AUDITS IT ITEM BY ITEM**: `sm-8` listed six things missing — **technique ✅, anaesthesia ✅, adverse effect ✅ PAID; electrode placement ⚠️ PARTIAL** (*unilateral or bilateral* and no more); **course length ❌ and contraindication ❌ STILL ABSENT.** ⚠️⚠️ **AND BOTH CHAPTERS' POINTER WAS WRONG** — they sent ECT to **book ch.12, image-only, unread**, when **`L18` was cached the whole time.** ⚠️⚠️ **NOT ONE CONTRAINDICATION FOR ANY DEVICE** — `contraindicat` returns **zero over all 23 slides**; **deliberately NOT supplied**, six device-specific lists from memory being exactly what `CLAUDE.md` §5 forbids. ⚠️⚠️ **A SYLLABUS-LEVEL ABSENCE FOUND HERE: PSYCHOSURGERY is named as one of the four arms of psychiatric treatment and taught NOWHERE** — `psychosurgery`/`cingulotomy`/`lobotomy` return **zero across ALL 25 CACHED DECKS**. ⚠️ **Book Psych ch.12 (265–270, 6 pp) UNREAD**, image-only |
 | `nr-ms` · `ps-symptom` | 2,251–2,441 | 6.7–7.3 pp | inside the ceiling. ⚠️ **`ps-ocd` was in this row and printed 14 pp** — a deck word count is not a page count when a second source is added |
 | everything else | 1,257–1,924 | 3.8–5.7 pp | single chapters |
+| ✅ **`ps-therapy`** | **1,382** (L19, single deck) | ÷280 said **4.9 pp** | ✅ **WRITTEN WHOLE 2026-08-23 — printed 11 pp, NO SPLIT.** 11 sections, **3,829 w**, 0 q, **348 w/pp**. ⚠️⚠️ **INFLATION 277 % — A NEW WORST BY A WIDE MARGIN** (previous high 220 %), and it is **structural, not stylistic**: the deck **NAMES far more than it TEACHES**, so **12 counselling skills, 6 ethics headings, 3 unexpanded acronyms (MBT/MBCT/CAT) and 4 orphaned modalities** are all supplied here, **every one tagged**. ⚠️ **The estimators over-predicted the PRINT: from the written 3,829 w, ÷280 said 13.7 pp and ÷240 said 16.0, against 11 — over by 2.7 and 5.0.** Same shape as `ps-anxiety`: **a table-dense chapter prints at a high w/pp.** ✅ **IT PAYS ROWS FIVE CHAPTERS FILED — the most-owed chapter in the module**: `ps-sud` `sd-6` (four rehabilitation modalities) **PARTIAL**, `ps-emerg` `em-11` (counselling/coping/ventilation) **PARTIAL**, `ps-devices` `dv-10` (CBT/exposure/operant conditioning) **PARTIAL**, `ps-pharm` **PAID**, `ps-psychoed` **PAID**. ⚠️⚠️ **A DECK-vs-BOOK CONTRADICTION, BOTH RECORDED, NEITHER CORRECTED: L19's NICE slide recommends CBT for psychosis/schizophrenia; book Psych ch.7 printed p.238 says the evidence for CBT in reducing symptoms or preventing relapse is MINIMAL.** The second such pair in the module, after `ps-pharm`'s dopamine pathways. ⚠️ **Four verified absences across all 25 decks — `motivational interviewing`, the `12-steps model`, `operant conditioning`, `ventilation` — each returns ONE hit, the deck that names it; all four SUPPLIED AND TAGGED in `th-10`.** ⚠️ **Three L19 slides are unreadable (p.7 chart, p.14 portrait figure, p.19 the additional-therapies list) — measured with `pdffonts` and `pdfimages`, and `pdffonts` finds fonts on all 29 pages, so nothing is vector-outlined.** ⚠️ **Book Psych ch.13 (271–277, 7 pp, the book's LAST content page) UNREAD**, image-only |
 
 ⚠️ **`ps-interview` + `ps-osce` are the sharpest inverse problem** — **473 words** for two
 chapters, and **the book has no OSCE chapter at all** (its two OSCE-shaped contents rows are QR
@@ -331,15 +332,18 @@ the book mapper as a split candidate on precedent. **Not decided — read before
 2. ✅ **Book map** — `content\neuro\book-map.md`, done 2026-08-18.
 3. ✅ **`L17` visual read** — cache 239 → 3,358 w, done 2026-08-18. `ps-pharm` is unblocked on the
    deck but still **partial** on antipsychotics — see the dead-heading finding below.
-4. ✅ **Written — 24 of 33** *(measured from disk 2026-08-23)*: `nr-stroke` · `nr-hemi` ·
+4. ✅ **Written — 25 of 33** *(measured from disk 2026-08-23)*: `nr-stroke` · `nr-hemi` ·
    `nr-para` · `nr-headache` · `nr-cranial` · `ps-symptom` · `ps-psychoed` · `nr-ms` · `ps-mood` ·
    `nr-lmn` · `nr-nerve` · `ps-ocd` · `ps-ptsd` · `nr-movement` · `nr-epilepsy` · `ps-anxiety` ·
    `ps-psychosis` · `ps-schizmgmt` · `ps-pharm` · **`nr-backpain`** · **`nr-neckpain`** ·
-   **`ps-sud`** · **`ps-emerg`** · **`ps-devices`**.
-   **223 sections, 73,274 body words. 130 of the module's 151 questions reachable** — neither
-   `ps-sud` nor `ps-emerg` adds one, because **no bank in the corpus prints a substance or an
-   emergency question.**
-   **12 chapters holding 21 questions remain — and `nr-intro` holds ALL 21.**
+   **`ps-sud`** · **`ps-emerg`** · **`ps-devices`** · **`ps-therapy`**.
+   **234 sections, 77,096 body words. 130 of the module's 151 questions reachable** — none of
+   `ps-sud`, `ps-emerg`, `ps-devices` or `ps-therapy` adds one, because **no bank in the corpus
+   prints a substance, an emergency, a device or a psychotherapy question.**
+   **8 chapters remain and `nr-intro` holds ALL 21 of the outstanding questions**; the other seven
+   — `ps-interview` · `ps-osce` · `ps-somato` · `ps-geri` · `ps-child` · `nr-cns` · `nr-delirium` —
+   carry none. ⚠️ *An earlier version of this line said "12 chapters holding 21 questions"; the
+   count was stale, `modcheck-neuro.js` is the measurement.*
    ✅ **Book Neurology ch.16 is FULLY SPENT** across `nr-backpain` and `nr-neckpain` — all 16 pp.
    ⚠️⚠️ **AND THE PAIN TAXONOMY IS A VERIFIED ABSENCE, NOT AN UNREAD GAP.** `npqb-nr-125` (*migraine
    is best classified as…*, key `Nociceptive`) was orphaned by ch.9; **ch.16 was read for it and does
@@ -372,6 +376,27 @@ the book mapper as a split candidate on precedent. **Not decided — read before
    ⚠️⚠️ **THE RULE THIS COST: a book's own cross-reference is a POINTER, NOT A VERDICT.** *Read the
    slide before declaring a gap* has been paid 13 times; this is the 14th, and the first where the
    false confidence came from **the source pointing elsewhere** rather than from a failed probe.
+   ✅ **`ps-therapy` IS WRITTEN, AND IT IS THE CHAPTER FIVE OTHERS WERE POINTING AT.** Rows from
+   `ps-sud`, `ps-emerg`, `ps-devices`, `ps-pharm` and `ps-psychoed` all land on it — **the
+   most-owed chapter in the module.** Three are **PARTIAL and `th-10` says so item by item**,
+   because **the deck names four modalities the whole module never teaches**: `motivational`,
+   `12-step`, `operant` and `ventilation` each return **exactly one hit across all 25 cached decks
+   — the deck that names it.** All four are **supplied and tagged**, none of them numeric.
+   ⚠️⚠️ **A SECOND DECK-vs-BOOK CONTRADICTION, BOTH RECORDED AND NEITHER CORRECTED.** L19's NICE
+   slide recommends **CBT for people with psychosis/schizophrenia**; **book Psych ch.7 printed
+   p.238 calls the evidence for CBT in reducing symptoms or preventing relapse MINIMAL** (and
+   art/drama therapy *not well-researched*). **They agree on family/systemic therapy.** Same
+   handling as `ps-pharm`'s dopamine pathways — two sources of equal standing, not a fault.
+   ⚠️ **Book Psychiatry ch.13, `Clinical approach to Psychotherapy` (printed 271–277, 7 pp, the
+   book's LAST content page), IS UNREAD** — image-only, no subagent available. **Recorded in
+   `th-11`, not guessed.** ⚠️ **And three of L19's own 29 slides are picture-only**: p.7 (the
+   outcome chart), p.14 (a 1275×1651 figure sitting between CBT and DBT — **probably the CBT
+   diagram, and that guess is deliberately NOT written into `th-5`**) and **p.19, which prints the
+   title `Additional therapies sometimes used in combination with psychotherapy include` over
+   THREE IMAGES — a deck promising a list and printing a picture of one.** ⚠️ **`pdffonts` finds
+   fonts on all 29 pages, so nothing is vector-outlined and nothing is hiding from the extractor**
+   — the missing content is genuinely pictorial. **Measured before the claim, the `op-refract`
+   check.**
 5. ⚠⚠ **`nr-intro` (21 q) IS THE NEXT ONE AND IT IS BLOCKED — IT NEEDS A USER DECISION.**
    It holds **21 of the 23 questions left — all but two.** **12 of 23 fact probes return ZERO
    against its deck** (gracile/cuneate, triceps, abdominal reflex, hemianopia, optic radiation,

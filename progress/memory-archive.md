@@ -425,3 +425,58 @@ full arithmetic for each.
 - ✅ **`ps-sud` done, 7 pp whole — the module's shortest. 352 w/pp; inflation 220 %.** ⚠️⚠️ **`L15`
   IS TWO LECTURES IN ONE DECK**: lines 1-204 substance **1,121 w**; lines 205-354 **psychiatry
   emergency 733 w** (NMS 240, catatonia 108, suicide 385) — **filed OUT whole to `ps-emerg`.**
+
+## The two false reading debts, in full (displaced from MEMORY.md 2026-08-23)
+
+Kept verbatim because the detail is the evidence, and the evidence is what stops the debts being
+re-opened a third time:
+
+> **⚠️⚠️ TWO ENTRIES OF THAT LIST WERE FALSE AND ARE STRUCK (2026-08-23): Psych ch.10 (NMS) and
+> ch.12 (ECT) ARE NOT NEEDED.** `ps-schizmgmt` filed both out as unread book chapters **on the
+> book's own cross-reference, without probing the 25 cached decks.** **`L15`'s back half teaches NMS
+> IN FULL** (tetrad, 10-20 % mortality, 0.02-3 % incidence, 2:1 male, age not a risk factor,
+> mechanism, seven labs, nine-step treatment), **`L16` again**, **`L18` ECT at length.** Fixed in
+> `sm-5`/`sm-7`/`sm-10`, the draft header and plan §5. ⚠️⚠️ **THE RULE: A BOOK'S OWN CROSS-REFERENCE
+> IS A POINTER, NOT A VERDICT** — the 14th payment of *read the slide before declaring a gap*, and
+> the first caused by **the source pointing elsewhere** rather than a failed probe.
+
+## `ps-therapy` — the completion block, verbatim (2026-08-23)
+
+**Written whole from `L19) Psychotherapy` (1,382 w, 29 slides, single deck). 11 sections, 3,829
+body words, PRINTED 11 pp, no split, 348 w/pp, 0 questions.**
+
+- **⚠️⚠️ INFLATION 277 % — a new worst by a wide margin** (previous high 220 %, `ps-devices` and
+  `ps-sud`). **Structural, not stylistic:** the deck **names far more than it teaches**, so twelve
+  counselling skills, six ethics headings, three unexpanded acronyms (**MBT** mentalization-based
+  therapy · **MBCT** mindfulness-based cognitive therapy · **CAT** cognitive analytic therapy) and
+  four orphaned modalities are all **supplied and tagged** here.
+- **⚠️ The estimators over-predicted the PRINT badly**: from the written 3,829 w, ÷280 said 13.7 pp
+  and ÷240 said 16.0 — against **11 printed**. Over by 2.7 and 5.0. Same shape as `ps-anxiety`: a
+  **table-dense chapter prints at a high w/pp** and the divisors do not know it.
+- **✅ IT PAYS ROWS FIVE CHAPTERS FILED — the most-owed chapter in the module.** `ps-sud`'s `sd-6`
+  (four rehabilitation modalities) **PARTIAL** · `ps-emerg`'s `em-11` (counselling, coping skills,
+  ventilation) **PARTIAL** · `ps-devices`' `dv-10` (CBT, exposure therapy, operant conditioning)
+  **PARTIAL** · `ps-pharm` (the unlabelled fourth panel of its modalities slide) **PAID** ·
+  `ps-psychoed` (myth #5) **PAID**. `th-10` audits all five item by item.
+- **⚠️ Exposure IS taught in the module** — L8's five-step **CBT-ERP** figure in `ps-ocd`, and the
+  book's four common methods — so `th-10` **points and does not repeat**, the `ps-pharm` handling.
+- **⚠️⚠️ FOUR VERIFIED ABSENCES, each supplied and tagged, none numeric:** `motivational`,
+  `12-step`, `operant` and `ventilation` **each return exactly ONE hit across all 25 cached
+  decks — the deck that names the thing without teaching it.**
+- **⚠️⚠️ A SECOND DECK-vs-BOOK CONTRADICTION, both recorded, neither corrected:** L19's NICE slide
+  recommends **CBT for people with psychosis/schizophrenia**; **book Psych ch.7 printed p.238 calls
+  the evidence for CBT in reducing symptoms or preventing relapse MINIMAL**, and art/drama therapy
+  *not well-researched*. **They agree on family/systemic therapy.**
+- **⚠️ Three of L19's 29 slides are picture-only** — p.7 (the outcome chart), p.14 (a 1275×1651
+  figure between CBT and DBT, **probably the CBT diagram, and that guess is deliberately not
+  written**) and **p.19**, which prints the title *Additional therapies sometimes used in
+  combination with psychotherapy include* **over THREE IMAGES** — a deck promising a list and
+  printing a picture of one. **`pdffonts` finds fonts on all 29 pages**, so nothing is
+  vector-outlined and nothing hides from the extractor: measured before the claim.
+- **⚠️ Book Psychiatry ch.13, `Clinical approach to Psychotherapy` (printed 271-277, 7 pp, the
+  book's LAST content page), is UNREAD** — image-only, no subagent available. Recorded in `th-11`.
+- **Unique to L19 across the 25 decks:** `psychoanaly`, `therapeutic alliance`, `rapport`,
+  `consent`, `couple`. **No consent procedure is taught anywhere in the module** — not for ECT,
+  not for admission, not for restraint.
+- **Three treatment arms are now closed** — `ps-pharm` drugs, `ps-therapy` psychotherapy,
+  `ps-devices` devices. **The fourth, PSYCHOSURGERY, has no chapter because it has no teaching.**
