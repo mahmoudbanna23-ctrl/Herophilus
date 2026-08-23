@@ -299,3 +299,24 @@ Each block survives in MEMORY.md as a shorter entry pointing here.
   the right sentence. **Never accept a reconstruction on word conservation; render the page.**
   `pdftotext -raw` recovers slides whose text streams together. **Text-sufficient is a claim about
   PROSE, never about tables or columns.**
+
+## Moved out of MEMORY.md 2026-08-23 (schizophrenia pair), verbatim
+
+### End-of-ENT provenance list, and question-bank structure
+
+- **⚠️ The end-of-ENT "outside knowledge" list is about half wrong** — re-grep item by item before
+  booking book time (8 of 13 were printed all along); 67 entries record no provenance, roster in
+  `ledger.md` §11. **Bank structure** (§14): **numbering restarts per section**, so ids carry a
+  section+topic token; **box presence is a property of the PAGE**; **back-references hit 28 %** —
+  repair every "previous case", the deck is shuffled; **13 of 13 figure crops were wrong first try
+  — LOOK at every crop**; an answer-page figure is never cropped.
+
+### Bank method, moved out of MEMORY.md 2026-08-23 (banks paused), verbatim
+
+- **Compute the expected marker delta FIRST, then audit both ways** — five marker faults in five
+  shapes (block-missing, in-`source` ×3, lost at writing, spurious on boxed entries; a boxed entry
+  takes NO marker). The audit asks *"does `explanation` END with the sentence"*, whole-file.
+  Validator: `<scratchpad>\wrT7\validate.js` (strip trailing `*`s — not optional).
+- **Every bank mis-keys itself — go looking.** Options replaced → new entry; identical options with
+  a moved key → record in place; bank contradicting its own box → correct and record. Cross-bank
+  divergence: hold both — **but check the menu: a key is the best option OFFERED.**

@@ -1,0 +1,744 @@
+# NEUROPSYCHIATRY (ASM MINDS) — PSYCHIATRY, CH.7: SCHIZOPHRENIA
+# Source: Semester 8\Neuro\Theoritical\Book\neuropsychiatry.pdf
+# Printed pp. 228-238  =  PDF pp. 240-250.  Offset verified on this chapter's own footers:
+#   PDF 240 prints footer "7  Schizophrenia … 228"  ->  PDF = printed + 12  (PSYCHIATRY half).
+#   Held on all eleven pages.
+# Boundary verified: PDF 251 prints footer "8  Dementia and Delirium … 239" and is the CHAPTER 8
+#   opener ("Dementia and Delirium"). Chapter 7 really does end at printed 238. Eleven pages,
+#   exactly as the book-map predicted.
+# Transcribed 2026-08-18. 150 dpi for prose; the printed-230 dopamine-pathway slide and the
+#   printed-237 ADVERSE EFFECTS poster were re-rendered and cropped at 300 dpi.
+# Nothing completed from outside knowledge. No drug value is inferred.
+# No (Tutorial)/(T) marker, no star-glyph rating, no figure numbering anywhere in this chapter.
+#
+# ⚠️⚠️ HEADLINE RESULT 1 — THE DEBT FROM PSYCH CH.11 IS PAID IN FULL, EXCEPT FOR DOSING.
+#   Psych ch.11 (`ps-pharm`) prints `Classes, mechanism of action & adverse effect: (See
+#   "schizophrenia" lecture)` under a heading with no body. **That deferred content IS HERE**, on
+#   printed 236-238, and it is substantial:
+#     - THREE classes named with agents (typical / atypical / 3rd generation)
+#     - Mechanism for each, receptor-level
+#     - A full adverse-effect taxonomy: common (>=1%) EPS / tardive dyskinesia / hyperprolactinaemia
+#       / anticholinergic, and rare-severe (<1%) neuroleptic malignant syndrome
+#     - Treatment of EPS, treatment-resistance (clozapine + agranulocytosis), depot preparations
+#   ** `ps-pharm` CAN NOW BE WRITTEN for antipsychotics. **
+#
+# ⚠️⚠️ HEADLINE RESULT 2 — DOSING: THE CHAPTER PRINTS NONE. ZERO.
+#   ** NO mg dose, NO mg/kg, NO frequency and NO serum level is printed for ANY of the SEVEN named
+#      antipsychotics. Not one number with a mass or concentration unit appears in the chapter. **
+#   ROUTE is the one prescribing dimension that IS printed, and only as a formulation contrast:
+#   `long-acting depot preparations` versus `oral medications` (printed 238). No route is attached
+#   to any individual agent.
+#   The chapter's only quantities are TIME, PERCENT and RECEPTOR-OCCUPANCY figures — listed
+#   exhaustively at the foot of this file. This matches the ch.11 finding: across 15 pages of this
+#   book's pharmacology, **lithium `0.6-1.2 mEq/L` (printed 264) remains the ONLY value with a
+#   unit anywhere.**
+#
+# ⚠️⚠️ HEADLINE RESULT 3 — MAOI ADVERSE EFFECTS: STILL NOT PRINTED.
+#   Ch.11's numbered antidepressant adverse-effect list runs 1-5 and stops, omitting MAOIs.
+#   ** Chapter 7 does not fill that gap. The words MAOI, monoamine oxidase, phenelzine and tyramine
+#      do not appear on any of these eleven pages** — this chapter is about antipsychotics only.
+#   The MAOI adverse-effect gap in `ps-pharm` remains OPEN and must be filled from outside the
+#   material and tagged, or from another chapter not yet read.
+
+---
+
+## printed p.228  (PDF p.240)  [psychiatry half]
+
+[CHAPTER OPENER. Light-blue banner with a circle-cut left end carrying a large white `7`; title in
+the white rounded handwriting face; dark grey strip beneath reading `PSYCHIATRY`.]
+
+# 7 — Schizophrenia
+
+### Terminology:
+[Section heading in the rounded blue face on a pale-blue full-width band — the chapter's standard
+top-level heading form.]
+
+Despite the origin of the term (Greek **skhizein** meaning "to split", and **phrēn** meaning
+"mind"), schizophrenia **does not imply** a "**split personality**" or "**multiple personality
+disorder**" — a condition that is often confused in public perception. Rather, the term means a
+"**splitting of mental functions,**" reflecting the presentation of the illness.
+
+In 2002, the term for schizophrenia in Japan was changed from schizophrenia to (**integration
+disorder**) to reduce stigma.
+
+### Prevalence & epidemiology:
+- Occurs in **adulthood** at **similar rates worldwide**.
+- About **1%** of people are affected during their lifetime.
+- Symptoms typically begin in **late adolescence** and **young adulthood**.
+- Slightly more common in **males** with an **earlier age of onset**.
+- **Comorbidity:**
+  - Patients are likely to have additional conditions, including major depression and anxiety
+    disorders.
+  - The lifetime occurrence of **substance use disorder** is almost **50%**.
+- **Social Impact: Long-term unemployment**, **poverty**, and **homelessness**.
+- **Life Expectancy:** Reduced by **10 to 25 years than the average life expectancy** due to
+  increased **physical health problems** and a **higher suicide rate**.
+
+### Etiology
+
+*[Centred, in the rounded blue display face, above the poster:]*
+**Disease = Genetic susceptibility + Ɛnvironmental stress**
+[The initial E of `Ɛnvironmental` is the Greek epsilon glyph, as in the neurology half.]
+
+[FULL-WIDTH INFOGRAPHIC POSTER — no figure number, no caption. Title in outlined multicolour
+lettering: `SCHIZOPHRENIA: Etiology & Pathophysiology`. Two panels.]
+
+> | Panel | Box | Text as printed |
+> |---|---|---|
+> | **ETIOLOGY (Causes)** | **GENETIC FACTORS** | Heritability & Gene Variants [DNA helix and family-tree glyphs] |
+> | | **ENVIRONMENTAL FACTORS** | Prenatal stress, substance use, urban upbringing |
+> | | **NEURODEVELOPMENTAL** | Early brain development disruptions |
+> | **PATHOPHYSIOLOGY (Mechanisms)** | **DOPAMINE DYSREGULATION** | [brain with `DA` synapse glyphs; no text beyond the label] |
+> | | **GLUTAMATE & OTHER NEUROTRANSMITTERS** | NMDA receptor hypofunction, GABAergic deficits [synapse glyph labelled `Glu`, `GABA`, `NMDA`] |
+> | | **BRAIN STRUCTURE & CONNECTIVITY** | Enlarged ventricles, reduced grey matter, altered connectivity |
+
+[⚠️ The poster is the ONLY place in the chapter that teaches **enlarged ventricles / reduced grey
+matter / altered connectivity** and **NMDA receptor hypofunction**. None of it is restated in
+prose. A reader who skips posters loses the entire structural-pathology content of the chapter.]
+
+[Running FOOTER, bottom left: a large blue `7` followed by `Schizophrenia` in the blue script face.
+Page number bottom right over a short grey bar. Same on all eleven pages — not repeated below.]
+
+---
+
+## printed p.229  (PDF p.241)  [psychiatry half]
+
+### Genetics:
+- **First degree relative:** Risk is **6.5%**.
+- **Monozygotic twins:** Risk is **more than 40%**.
+- **One parent affected:** Risk is about **13%**.
+- **Both parents affected:** Risk is nearly **50%**.
+
+### Environment:
+- **Risk Factors:**
+  - Living environment, poor housing, unemployment.
+  - Drug use.
+  - Prenatal stressors.
+  - Social isolation, immigration, racial discrimination.
+  - Family dysfunction.
+  - Childhood trauma, death of a parent, being bullied or abused.
+- **Parenting Style:** Seems to have **no major effect** on cause, although **supportive parents**
+  lead to better outcomes than **critical or hostile parents**.
+
+### Biological Theories: The Dopamine Hypothesis
+Based on **Dopamine dysregulation**, which is likely secondary to:
+- Abnormal GABA-glutamate interaction.
+- Serotonin effect on the GABA-Glutamate system.
+
+[⚠️ `Biological Theories` is PLURAL and only ONE theory is given — the dopamine hypothesis. No
+glutamate hypothesis, no neurodevelopmental hypothesis and no serotonin hypothesis is developed as
+a theory in its own right, although all three are named in the printed-228 poster.]
+
+[The bottom half of printed 229 is blank — roughly 55% of the page.]
+
+---
+
+## printed p.230  (PDF p.242)  [psychiatry half]
+
+### Dopamine pathways:
+
+[FIGURE — a captured LECTURE SLIDE, not a book-drawn figure: dark-navy background, and it carries a
+watermark credit **`©CNSforum.com`** in the bottom right of the image. No figure number, no caption.
+Re-read at 300 dpi. Left half: a mid-sagittal brain with four numbered projections and the labels
+`to basal ganglia`, `to striatum`, `pre-frontal cortex`, `to frontal cortex`, `nigrostriatal
+system`, `mesolimbic system`, `tubero-infundibular system`, `posterior hypothalamus`, `ventral
+tegmental area`, `substantia nigra`. Right half, transcribed in full at 300 dpi:]
+
+> **1. Nigrostriatal pathway**
+> - Substantia nigra (SNc; A9) → caudate and putamen (i.e. *striatum*).
+>   1. SNc → Sensorimotor (dorsal) striatum
+>      - *motor (involuntary) control. Parkinson's Disease*
+>   2. SNc → Associative (mid) striatum
+>      - *cognition, emotion, volition. Parkinson's Disease*
+>
+> **2. Mesolimbic pathway**
+> - Ventral Tegmental Area (VTA; A10) in midbrain to limbic regions associated with reward,
+>   motivation, affect and memory
+>   - *Include ventral striatum (nucleus accumbens), amygdala, hippocampus & medial prefrontal
+>     cortex*
+>
+> **3. Mesocortical pathway**
+> - VTA to frontal cortex, including dorsolateral prefrontal cortex (DLPFC)
+>   - *cognitive function, motivation & emotional response*
+>
+> **4. Tuberoinfundibular pathway**
+> - Tuberal region to median eminence (infundibular region at top of pituitary stalk)
+>   - *DA acts to inhibit prolactin release from pituitary*
+
+### Dopamine dysregulation in schizophrenia:
+- **Positive Symptoms:** Associated with **Excessive dopamine (DA)** in the **associative part of
+  the nigrostriatal pathway**.
+- **Cognitive Function (e.g., working memory):** Associated with **Inadequate DA** in the **frontal
+  cortex**.
+- **Negative Symptoms:** Associated with a **deficit in dopamine** in the **mesolimbic pathway
+  (ventral striatum)**.
+- **At-Risk Subjects:** A **hyperdopaminergic state** in the **striatum** is recorded in subjects
+  pre-morbidly vulnerable (the **transition group**, where **30%** will become schizophrenic).
+- **Primary Cause:** Dopamine dysregulation is **not** a primary abnormality but **secondary** to a
+  more proximal abnormality (probably **GABA-glutamate interaction**).
+
+[⚠️ RECORD EXACTLY AS PRINTED — this chapter assigns POSITIVE symptoms to the **nigrostriatal**
+(associative) pathway and NEGATIVE symptoms to the **mesolimbic** pathway. It does not use the
+mesocortical pathway for negative symptoms at all, even though it defines that pathway one
+paragraph earlier as serving `cognitive function, motivation & emotional response`. This is the
+book's own scheme, restated identically in the poster below. Transcribed, not corrected.]
+
+[FULL-WIDTH INFOGRAPHIC POSTER at the foot of the page — no number, no caption. Title in outlined
+lettering: `DOPAMINE DYSREGULATION IN SCHIZOPHRENIA`. It restates the five bullets above in picture
+form and adds no new fact. Labels as printed:]
+
+> - `POSITIVE SYMPTOMS` — HALLUCINATIONS, DELUSIONS, DISORGANIZED THINKING
+> - `EXCESSIVE DA (ASSOCIATIVE PART)` → `NIGROSTRIATAL PATHWAY`
+> - `COGNITIVE DEFICITS` — WORKING MEMORY, EXECUTIVE FUNCTION, ATTENTION
+> - `INADEQUATE DA (COGNITIVE FUNCTION)` → `FRONTAL CORTEX`
+> - `NEGATIVE SYMPTOMS` — AVOLITION, ANHEDONIA, EMOTIONAL WITHDRAWAL
+> - `DEFICIT IN DA (NEGATIVE SYMPTOMS)` → `MESOLIMBIC PATHWAY (VENTRAL STRIATUM)`
+> - `AT-RISK SUBJECTS` → `HYPERDOPAMINERGIC STATE (STRIATUM)` / `PRE-MORBID VULNERABILITY
+>   (TRANSITION GROUP: 30% BECOME SCHIZOPHRENIC)`
+> - `PRIMARY CAUSE: GABA-GLUTAMATE INTERACTION (PROXIMAL ABNORMALITY)` — flanked by `GABA` and
+>   `GLUTAMATE` neurons — `DOPAMINE DYSREGULATION IS SECONDARY`
+
+---
+
+## printed p.231  (PDF p.243)  [psychiatry half]
+
+### Clinical picture
+
+[FULL-WIDTH INFOGRAPHIC POSTER — no number, no caption. Title `PHASES OF SCHIZOPHRENIA: A
+Progression Timeline`. Four chevron panels left to right:]
+
+> | # | Panel title | Caption as printed |
+> |---|---|---|
+> | 1 | **PREMORBID PHASE** (At-Risk State) | Odd behavior, social avoidance, schizotypal/paranoid traits. ***Only 30% progress.*** |
+> | 2 | **PRODROMAL PHASE** (Early Signs) | Transient psychotic symptoms, withdrawal, irritability, dysphoria, anxiety. |
+> | 3 | **ACTIVE PHASE** (Diagnosis Criteria) | Diagnosis based on DSM-5 or ICD-10 criteria. (Prevailing in research). |
+> | 4 | **RESIDUAL PHASE** (Negative Symptoms) | Only negative symptoms remain (e.g., flat affect, lack of motivation). |
+>
+> [Arrow banner beneath all four:] **INTEGRATION & TREATMENT: Understanding the progression for
+> early intervention and management.**
+
+### Phases:
+
+#### ✓ Premorbid phase:
+- Refers to the state of functionality **prior to the onset** of a disease or illness.
+- Includes **at risk mental state (ARMS)** subjects.
+- Patients act **odd or eccentric** and **avoid relationships** (e.g., **paranoid & schizotypal**
+  personalities).
+- **Note:** Only **30%** of them go on to be schizophrenics.
+
+#### ✓ Prodromal phase:
+- Those who go on to develop schizophrenia may experience **transient or self-limiting psychotic
+  symptoms**.
+- Includes non-specific symptoms such as social withdrawal, irritability, dysphoria, anxiety,
+  hypochondriasis, and clumsiness.
+
+#### ✓ Active phase:
+The period where **diagnosis** is made based on criteria (DSM-5 or ICD-10).
+- The **ICD-10** (World Health Organization's International Statistical Classification of Diseases
+  and Related Health Problems) criteria are typically used in **European** countries, while the
+  **DSM-5** (American Psychiatric Association's fifth edition of the Diagnostic and Statistical
+  Manual of Mental Disorders) criteria are used in the **United States** and to varying degrees
+  around the world and are prevailing in research studies.
+
+#### ✓ Residual phase: Only negative symptoms remain.
+
+[⚠️ `Residual phase` is a run-in heading with a five-word body — the thinnest of the four phases.
+No duration, no proportion, no management is given for it.]
+[⚠️ **ICD-10 is named twice as a diagnostic standard and its criteria are NEVER PRINTED.** Only the
+DSM-5 criteria are given (printed 232). This is a list-without-coverage.]
+
+---
+
+## printed p.232  (PDF p.244)  [psychiatry half]
+
+### Diagnostic Criteria for Schizophrenia (DSM-5)
+
+**A. Characteristic Symptoms: Two (or more)** of the following, each present for a significant
+portion of time during a **1-month period** (or less if successfully treated):
+1. **Delusions**
+2. **Hallucinations**
+3. **Disorganized speech** (e.g., frequent derailment or incoherence)
+4. **Grossly disorganized or catatonic behavior**
+5. **Negative symptoms** (i.e., **affective flattening**, **alogia**, or **avolition**)
+
+[NOTE BOX — pale-blue full-width box, lightbulb glyph top left, centred word `Note`. The box uses
+blue type for the emphasised phrases.]
+> Only **one Criterion A symptom** is required if **delusions are bizarre** or **hallucinations**
+> consist of a voice keeping up a **running commentary** on the person's behavior or thoughts, or
+> **two or more voices conversing** with each other.
+
+**A.** *Onset of the disturbance*, one or more major **areas of functioning** such as work,
+interpersonal relations or self-care are **markedly below the level achieved prior to the onset**
+(or when the onset is in childhood or adolescence, failure to achieve expected level of
+interpersonal, academic, or occupational achievement).
+
+**B.** *Duration:* Continuous signs of the disturbance persist for ***at least 6 months.*** This
+6-month period must include ***at least 1 month*** of symptoms *(or less if successfully treated)*
+that meet Criterion A (**active-phase symptoms**) and may include periods of prodromal or residual
+symptoms. During these **prodromal or residual** periods, the signs of the disturbance may be
+manifested by **only negative symptoms** or two or more symptoms listed in Criterion A present in
+an **attenuated form** (e.g., odd beliefs, unusual perceptual experiences).
+
+**C.** *Schizoaffective and Mood Disorder exclusion:* Schizoaffective Disorder and Mood Disorder
+with Psychotic Features have been ruled out because either
+1. No major depressive or manic episodes have occurred concurrently with the active-phase symptoms;
+   or
+2. If mood episodes have occurred during active phase symptoms, their total duration was **brief
+   relative** to the duration of the active / residual periods.
+
+**D.** *Substance/general medical condition exclusion:* Disturbance is not due to the direct
+physiological effects of a **substance** (drug of abuse, medication) or a **medical condition**.
+
+[⚠️ **LETTERING DEFECT — THERE ARE TWO CRITERIA LETTERED `A`.** The first is `Characteristic
+Symptoms`; after the Note box the list restarts at `A. Onset of the disturbance` and then runs
+B, C, D. The second criterion (social/occupational dysfunction) should be `B` and everything after
+it shifts by one. The book prints A, A, B, C, D. Recorded, not corrected.]
+[⚠️ The `Duration` criterion is also numbered oddly relative to standard DSM-5, but that is a
+consequence of the same off-by-one and is not separately transcribed.]
+
+[The bottom quarter of printed 232 is blank.]
+
+---
+
+## printed p.233  (PDF p.245)  [psychiatry half]
+
+### Positive and Negative (deficit) symptoms:
+
+#### Positive symptoms
+- Those that most individuals **do not normally experience** but are **present** in people with
+  schizophrenia (manifestations of **psychosis**).
+- **Include:** (manifestations of **Psychosis**)
+  - Delusions
+  - Disordered thoughts and speech
+  - Hallucinations (tactile, auditory, visual, olfactory, and gustatory). Also typically related to
+    the content of the delusional theme.
+- Generally, **respond well to medication**.
+
+#### Negative symptoms
+- **Deficits** of normal emotional responses or thought processes.
+- **Include:**
+  - Flat expressions (little emotion)
+  - Poverty of speech (Alogia)
+  - Inability to experience pleasure (Anhedonia)
+  - Lack of desire to form relationships
+  - Lack of motivation (Avolition)
+- Contribute **more to poor quality of life**, functional ability, and burden on others.
+- **Response:** Response to medication is often **limited**.
+- **Association:** Often linked to a history of **poor adjustment before the onset**.
+
+### Course & Prognosis:
+- **Schizophrenia** is a major cause of **disability**, with **active psychosis** ranked as the
+  **third-most-disabling condition** (after quadriplegia and dementia).
+- Patients have a **lower life expectancy** than the general population due to **poor general
+  health** and **high comorbidities**.
+- The course of illness is **graded** in first-admission patients with schizophrenia, indicated by
+  episodes of illness, symptomatology, and social impairment over **5 years**.
+
+[FIGURE — a four-row ruled panel, no number, no caption. Each row: a percentage, a description, and
+a small line-graph of episode spikes against a baseline. Transcribed cell by cell:]
+
+| % | Course pattern as printed | Graph |
+|---|---|---|
+| **22%** | One episode only — no impairment | one spike, flat baseline |
+| **35%** | Several episodes with no or minimal impairment | three spikes, flat baseline |
+| **8%** | Impairment after the first episode with subsequent exacerbation and no return to normality | three spikes on a raised baseline |
+| **38%** | Impairment increasing with each of several episodes and no return to normality | three spikes on a stepwise rising baseline |
+
+[⚠️ **THE FOUR PERCENTAGES SUM TO 103%** (22 + 35 + 8 + 38). Recorded as printed; not reconciled and
+not adjusted.]
+
+---
+
+## printed p.234  (PDF p.246)  [psychiatry half]
+
+[FULL-PAGE-WIDTH COMPARISON POSTER occupying roughly the top three-quarters of the page — no figure
+number, no caption. Two colour-coded columns, thirteen paired rows, each with an icon.]
+
+| **✓ GOOD PROGNOSIS (Favorable Outcomes)** | **✗ POOR PROGNOSIS (Unfavorable Outcomes)** |
+|---|---|
+| Old age of onset | Young age of onset |
+| Female | Male |
+| Married | Unmarried |
+| No family history | Family history |
+| Good premorbid personality | Personality problems |
+| High IQ | Low IQ |
+| **Precipitation** | No obvious precipitants |
+| Positive symptoms | Negative symptoms |
+| Treatment compliance | Poor treatment compliance |
+| Good support | Low support |
+| Acute onset | Insidious onset |
+| Presence of mood component | No mood component |
+
+[⚠️ The good-prognosis cell prints **`Precipitation`** where the poor-prognosis cell prints
+`No obvious precipitants` — i.e. `Precipitation` is used for *precipitating factors*. Recorded as
+printed.]
+[⚠️ **The entire prognostic-factor content of the chapter is inside this picture.** There is no
+prose list of prognostic factors anywhere. A reader who skips posters gets nothing on prognosis.]
+
+### Investigations:
+- **No specific investigations** for schizophrenia.
+- Important to:
+  - Exclude organicity.
+  - Monitor the general health state.
+  - Choose of medication & monitor side effects. [printed as `Choice of medication & monitor side
+    effects.`]
+
+[⚠️ **`Investigations:` NAMES NO INVESTIGATION.** It gives three purposes and not one test — no CBC,
+no imaging, no drug screen, no metabolic panel, no prolactin. This is the chapter's clearest
+heading-without-a-body. It matters directly for `ps-pharm`: **the chapter prescribes clozapine and
+warns of agranulocytosis (printed 238) but never says to monitor a white cell count.** No monitoring
+parameter of any kind is printed in this chapter.]
+
+---
+
+## printed p.235  (PDF p.247)  [psychiatry half]
+
+### Differential diagnosis:
+
+#### Other Psychiatric illness:
+- **Psychotic symptoms** may appear in several other mental disorders, **Bipolar disorder** and
+  **Borderline personality disorder**.
+- **Delusions ("non-bizarre")** are present in **Delusional disorder**.
+- **Social withdrawal** is found in **Social anxiety disorder**, **Avoidant personality disorder**,
+  and **Schizotypal personality disorder**.
+- *Note:* **Schizotypal** symptoms are similar but **less severe**.
+- **OCD:** Occurs with schizophrenia more often than chance; distinguishing **obsessions** from
+  **delusions** can be difficult.
+
+#### Other medical & neurological illness:
+- Metabolic disturbance, Systemic infection, Syphilis, HIV infection, Epilepsy, and Brain lesions,
+  Stroke, Multiple Sclerosis (MS), Hyperthyroidism, Hypothyroidism, and Dementias (e.g.,
+  Alzheimer's).
+- **Delirium:** Must be ruled out; distinguished by **visual hallucinations**, **acute onset**, and
+  **fluctuating level of consciousness**, and indicates an underlying medical illness.
+
+#### Substance abuse:
+**Drug intoxication** and **drug-induced psychosis** (e.g., **amphetamines**).
+
+[⚠️ The medical/neurological DD is a bare eleven-item list. **Not one of the eleven is expanded**;
+only `Delirium`, which sits outside the list, gets discriminating features.]
+
+### Treatment
+#### Hospitalization:
+Hospitalization may occur for severe episodes either **voluntarily** or (if mental health
+legislation allows it) **involuntarily**. **Long-term** hospitalization is **uncommon** since
+deinstitutionalization beginning in the 1950s.
+
+##### Indications:
+- Initial assessment.
+- Potential hazard of **danger to self** (suicide & excitement) or **to others** (aggression or
+  homicide)
+- Possible **deterioration of health**: dehydration, total refusal of food, no insight & refusal of
+  medications.
+- **Emergency** side effect (e.g., **Neuroleptic Malignant Syndrome**).
+
+[FIGURE, right of the text — a tall poster panel, no number, no caption. Restates the prose:]
+> `HOSPITALIZATION` · `VOLUNTARY/INVOLUNTARY (SEVERE EPISODES, DANGER TO SELF/OTHERS,
+> DETERIORATION)` · `LONG-TERM UNCOMMON (SINCE 1950s)` · `INDICATIONS: INITIAL ASSESSMENT ·
+> DANGER · HEALTH DETERIORATION · EMERGENCY SIDE EFFECTS`
+
+[⚠️ `Neuroleptic Malignant Syndrome` is named here as a hospitalisation indication and again on
+printed 237 as the rare/severe adverse effect — and **it is never described anywhere in this
+chapter.** No features, no triggers, no management. The chapter defers it in place:
+`(refer to psychiatric emergency)` on printed 237, i.e. to Psych ch.10 `Emergency — psychiatry
+medicine`, printed 256-260, which is NOT read in this pass. **Record as a reading debt for
+`ps-emerg` / `ps-psychosis`.**]
+
+---
+
+## printed p.236  (PDF p.248)  [psychiatry half]
+
+### Medication (Antipsychotics):
+- **First-line treatment** which reduces **positive symptoms** in **7 to 14 days**.
+- **Continued use** decreases the risk of **relapse**.
+- **Efficacy:** Requires **D2 receptor occupancy** in the associative striatum of optimally **65%**
+  for an adequate portion of time.
+- The choice of which antipsychotic to use is based on **benefits**, **risks**, and **costs**.
+
+[FIGURE, centred — no number, no caption. A brain with a pill bottle labelled `MEDICATION
+(ANTIPSYCHOTICS)` and scattered capsules. Decorative; carries no text content.]
+
+#### Classification:
+- **Typical antipsychotics:** **Haloperidol, Chlorpromazine** (Dopamine antagonist)
+- **Atypical antipsychotics:** **Risperidone, Olanzapine, Clozapine** (Dopamine and Serotonin
+  antagonist)
+- **3rd generation:** **Aripiprazole** (Partial Dopamine agonist antagonist) or dopamine
+  stabilizers.
+
+#### Mechanism of action:
+- **Typical antipsychotics** are not particularly selective and also block dopamine receptors.
+  **Blocking D2 receptors** is thought to produce some unwanted side effects that typical
+  antipsychotics can produce.
+- Atypical antipsychotics have a similar blocking effect on D2 receptors, however, most also act on
+  serotonin receptors, especially **5-HT2A** and **5-HT2C** receptors.
+
+[THREE FIGURE PANELS down the right margin — no numbers, no captions. Each shows a chemical
+structure, an arrow and a brain. Labels as printed:]
+> - `TYPICAL ANTIPSYCHOTICS (e.g., HALOPERIDOL)` → `DOPAMINE D₂ ANTAGONIST`
+> - `ATYPICAL ANTIPSYCHOTICS (e.g., RISPERIDONE, CLOZAPINE)` → `D₂ & 5-HT₂A/C ANTAGONIST`
+> - `3RD GENERATION (e.g., ARIPIPRAZOLE)` → `PARTIAL DOPAMINE AGONIST/ANTAGONIST`
+> - [tag pointing at the third panel:] `EFFICACY: 65% D₂ OCCUPANCY (ASSOCIATIVE STRIATUM)`
+
+[⚠️ The `Mechanism of action` prose gives NO mechanism for the 3rd generation — only the picture
+does (`PARTIAL DOPAMINE AGONIST/ANTAGONIST`), and the classification line calls it `Partial Dopamine
+agonist antagonist`. The prose bullet list has two entries for three classes.]
+[⚠️ `Quetiapine` is NOT classified here. It appears in the chapter only on printed 237, inside the
+hyperprolactinaemia and weight-gain clauses, without ever being assigned to a class. In ch.11 it
+appears as a mood stabilizer. **Seven agents are named in this chapter in total; six are
+classified.**]
+
+---
+
+## printed p.237  (PDF p.249)  [psychiatry half]
+
+#### Adverse effects:
+
+**1. Common (≥ 1% and up to 50% incidence for most antipsychotic drugs):**
+- Extrapyramidal side effects (by blocking **D2 receptors at nigrostriatal pathway**, particularly
+  common in patients on **first generation** antipsychotics), which includes:
+  - **Akathisia** — an often-distressing sense of inner restlessness.
+  - Dystonia.
+  - Parkinsonism.
+  - Tremor
+
+##### Treatment by Anticholinergic medications and Propranolol
+[Heading in the rounded blue underlined face, over three lines. **This is the chapter's only
+statement of EPS treatment**, and it names two drug classes with no agent, no dose, no route and no
+frequency.]
+
+##### Tardive dyskinesia:
+- **Slow, repetitive, involuntary and purposeless movements** (face & lips).
+- Appears after **chronic use**; frequently **irreversible**.
+- More frequent with **Typical** antipsychotics (haloperidol). However, it can occur with other
+  antipsychotics.
+- It tends to **resist treatment**.
+
+##### Hyperprolactinemia:
+Due to **blocking D2 receptors at tuberoinfundibular** pathway (rare with clozapine, quetiapine and
+aripiprazole), which can cause:
+- Galactorrhea — unusual secretion of breast milk.
+- Gynecomastia
+- Sexual dysfunction (in both sexes)
+- Osteoporosis.
+- Hypotension
+- Weight gain (prominent in clozapine, olanzapine, quetiapine).
+
+The proposed mechanism is antagonizing the Histamine H1 and Serotonin 5HT2C receptors.
+
+[⚠️ **STRUCTURAL DEFECT / INTERNAL CONTRADICTION, printed 237.** The last two bullets —
+`Hypotension` and `Weight gain` — sit inside a list explicitly introduced as caused by
+hyperprolactinaemia, and the closing sentence then attributes the mechanism to **H1 and 5HT2C
+antagonism**, which is not a prolactin mechanism at all. Either the two bullets and the closing
+sentence belong to a separate adverse-effect block that lost its heading, or the list is
+mis-scoped. **Transcribed exactly as printed; not reconciled.** Note also that the printed-237
+poster lists `WEIGHT GAIN` under HYPERPROLACTINEMIA too, so the error, if it is one, is consistent
+across text and picture.]
+
+##### Anticholinergic side-effects
+(common with **olanzapine, clozapine**; less likely on **risperidone**) such as:
+- Blurred vision
+- Constipation
+- Dry mouth (although **hypersalivation** may also occur with **clozapine**)
+- Reduced perspiration (reduced sweating)
+
+**2. Rare/Uncommon but severe side effects (<1% incidence for most antipsychotic drugs):**
+Neuroleptic malignant syndrome (**refer to psychiatric emergency**)
+
+[FIGURE, top right — poster panel, no number, no caption. Re-read at 300 dpi:]
+> ## ADVERSE EFFECTS
+> ### COMMON (≥1%)
+> - **EXTRAPYRAMIDAL** (AKATHISIA, DYSTONIA, PARKINSONISM, TREMOR)
+> - **TARDIVE DYSKINESIA** (REPETITIVE MOVEMENTS)
+> - **HYPERPROLACTINEMIA** (GALACTORRHEA, SEXUAL DYSFUNCTION, WEIGHT GAIN)
+> - **ANTICHOLINERGIC** (BLURRED VISION, DRY MOUTH, CONSTIPATION)
+> ### RARE/SEVERE (<1%)
+> - **NEUROLEPTIC MALIGNANT SYNDROME** (EMERGENCY)
+
+---
+
+## printed p.238  (PDF p.250)  [psychiatry half]
+
+### Treatment of resistant cases & non-compliant patients:
+- *Clozapine* is an effective treatment for those who respond poorly to other drugs
+  ("**treatment-resistant**" or "**refractory**" schizophrenia), but it has the potentially serious,
+  uncommon side effect of **agranulocytosis** (lowered white blood cell count).
+- For people who are **unwilling or unable** to take medication regularly, **long-acting** depot
+  preparations of antipsychotics may be used to achieve control. They **reduce the risk of relapse**
+  to a greater degree than oral medications. When used in combination with psychosocial
+  interventions they may **improve long-term adherence to** treatment.
+
+### Psychotherapy:
+- **Psychosocial Interventions** may be useful in the treatment of schizophrenia: Family therapy,
+  milieu therapy, supported employment, skills training, token economic interventions, substance use
+  and weight management.
+- *Note:* Evidence for **CBT** (cognitive behavioral therapy) in either reducing symptoms or
+  preventing relapse is minimal. **Art/Drama therapy** are not well-researched.
+
+### ECT
+- Indicated for suicidal/homicidal attempts, catatonic stupor, excitement and resistant cases.
+
+[FULL-WIDTH VERTICAL FLOW POSTER at the foot of the page — no number, no caption. Three stacked
+stages joined by arrows:]
+> **RESISTANT CASES** — `CLOZAPINE (AGRANULOCYTOSIS RISK)` · `LONG-ACTING DEPOT (IMPROVED
+> ADHERENCE)`
+> ↓
+> **PSYCHOTHERAPY (PSYCHOSOCIAL INTERVENTIONS)** — `FAMILY THERAPY, SKILLS TRAINING, SUPPORTED
+> EMPLOYMENT (MINIMAL EVIDENCE FOR CBT)`
+> ↓
+> **ECT (ELECTROCONVULSIVE THERAPY)** — `SUICIDAL, CATATONIC, RESISTANT CASES`
+
+[⚠️ **`ECT` is a one-line section — indications only.** No technique, no course length, no electrode
+placement, no anaesthesia, no contraindication, no adverse effect. The chapter does not say where
+the rest lives; **Psych ch.12 `Devices in psychiatry` (printed 265-270)** is the obvious home but
+this chapter prints no pointer to it.]
+[⚠️ Seven psychosocial modalities are NAMED (family therapy, milieu therapy, supported employment,
+skills training, token economic interventions, substance use, weight management) and **NONE is
+described.** A list without coverage.]
+
+[The chapter ends here. No summary, no key-points box, no question set.]
+
+---
+
+# END OF CHAPTER 7. PDF 251 = printed 239 = CHAPTER 8 opener, "Dementia and Delirium".
+# Boundary held. Eleven printed pages exactly, as mapped.
+
+## COMPLETE ANTIPSYCHOTIC INVENTORY OF THIS CHAPTER (reader's index, built from the pages above)
+
+**Seven agents, three classes.** Columns answer strictly from what is on the page: is a **Dose**
+printed? a **Route**? a **Frequency**? a **Monitoring parameter**? an **Interaction**?
+
+| Agent | Class as printed | Mechanism as printed | Dose | Route | Freq. | Monitoring | Interaction | Adverse effects attached BY NAME |
+|---|---|---|---|---|---|---|---|---|
+| **Haloperidol** | Typical (1st gen) | Dopamine antagonist; `DOPAMINE D₂ ANTAGONIST` (poster) | **no** | no | no | **no** | no | **tardive dyskinesia** — named as the more frequent agent (printed 237); EPS as a first-generation class effect |
+| **Chlorpromazine** | Typical (1st gen) | Dopamine antagonist | **no** | no | no | **no** | no | none individually; class EPS only |
+| **Risperidone** | Atypical | Dopamine and Serotonin antagonist; `D₂ & 5-HT₂A/C ANTAGONIST` | **no** | no | no | **no** | no | **anticholinergic effects LESS likely** (printed 237) |
+| **Olanzapine** | Atypical | as above | **no** | no | no | **no** | no | **anticholinergic (common)**; **weight gain (prominent)** |
+| **Clozapine** | Atypical | as above | **no** | no | no | **no** — ⚠️ agranulocytosis is named with NO WBC monitoring instruction | no | **agranulocytosis** (printed 238); **anticholinergic (common)**; **hypersalivation**; **weight gain (prominent)**; hyperprolactinaemia **rare** |
+| **Aripiprazole** | 3rd generation | Partial Dopamine agonist antagonist / dopamine stabilizer | **no** | no | no | **no** | no | hyperprolactinaemia **rare** |
+| **Quetiapine** | ⚠️ **never classified in this chapter** | not given | **no** | no | no | **no** | no | **weight gain (prominent)**; hyperprolactinaemia **rare** |
+
+**Non-antipsychotic drugs named in the chapter:** **anticholinergic medications** (class only, no
+agent) and **propranolol** — both as treatment of extrapyramidal side effects (printed 237). No
+dose, route or frequency for either.
+
+**Formulations named:** `long-acting depot preparations` vs `oral medications` (printed 238). This
+is the chapter's ONLY route-level statement, and it is attached to no specific agent.
+
+**Non-drug treatments:** hospitalisation (4 indications), psychosocial interventions (7 modalities
+named, none described), CBT (evidence called minimal), art/drama therapy (called not
+well-researched), ECT (4 indications, nothing else).
+
+### Every quantitative statement in the chapter, exhaustively
+
+1. Lifetime prevalence **~1%** (printed 228).
+2. Life expectancy reduced by **10 to 25 years** (printed 228).
+3. Lifetime substance use disorder **almost 50%** (printed 228).
+4. Genetic risk: first-degree relative **6.5%**; monozygotic twin **>40%**; one parent **~13%**;
+   both parents **~50%** (printed 229).
+5. At-risk / transition group: **30%** become schizophrenic (printed 230, repeated printed 231).
+6. DSM-5 Criterion A: **1-month period**; duration criterion **at least 6 months** including **at
+   least 1 month** of active symptoms (printed 232).
+7. Course grading over **5 years**: **22% / 35% / 8% / 38%** — ⚠️ **sums to 103%** (printed 233).
+8. Active psychosis is the **third-most-disabling** condition (printed 233).
+9. Antipsychotics reduce positive symptoms in **7 to 14 days** (printed 236).
+10. Efficacy requires **65%** D2 receptor occupancy in the associative striatum (printed 236).
+11. Common adverse effects **≥1% and up to 50%** incidence; rare/severe **<1%** (printed 237).
+12. Deinstitutionalization **since the 1950s** (printed 235).
+13. Japan renamed the illness in **2002** (printed 228).
+
+**No item on this list carries a mass, volume or concentration unit. There is no dose in this
+chapter.**
+
+## Reader's notes on this chapter (not book text)
+
+### 1. What this chapter unblocks, and what it does not
+
+**Unblocks for `ps-pharm`** (the ch.11 red-line deferral): antipsychotic **classes** (3), **agents**
+(7), **mechanisms** (D2 antagonism / D2 + 5-HT2A/2C antagonism / D2 partial agonism), **adverse
+effects** (full common-vs-rare taxonomy with pathway attribution), **EPS treatment** (anticholinergics
++ propranolol), **treatment resistance** (clozapine, agranulocytosis), **non-compliance** (depot).
+
+**Still missing after reading it:**
+- **MAOI adverse effects** — absent. Not this chapter's subject; the ch.11 gap stays open.
+- **Any dosing at all** — absent, and now confirmed absent across both pharmacology chapters.
+- **Monitoring parameters** — absent. ⚠️ The chapter names agranulocytosis without naming a blood
+  count; ch.11 by contrast DOES print monitoring (CBC, LFT, Stevens-Johnson) for mood stabilizers.
+  So the book is capable of printing monitoring and chose not to here.
+- **Neuroleptic malignant syndrome, described** — deferred in place to `psychiatric emergency`
+  (Psych ch.10, printed 256-260, unread).
+- **ECT technique** — one line of indications only; presumably Psych ch.12, but no pointer printed.
+
+### 2. Headings with no body, or with a picture for a body
+
+| Printed | Heading | What is actually under it |
+|---|---|---|
+| 234 | `Investigations:` | **Names no investigation.** Three purposes, zero tests. |
+| 231 | `Residual phase:` | five words |
+| 238 | `ECT` | one bullet — indications only |
+| 236 | `Mechanism of action:` | two bullets for three classes; the 3rd generation's mechanism exists only in the margin picture |
+| 234 | *(prognosis)* | **no heading at all** — the whole prognosis content is a poster with no text section |
+
+**None of these defers to another chapter the way ch.11's `Antipsychotics` did**, except
+`Neuroleptic malignant syndrome`, which says `(refer to psychiatric emergency)` — a genuine
+in-place deferral, and the second instance of that failure mode found in this book.
+
+### 3. Lists that are not coverage
+
+- **ICD-10** named twice as a diagnostic standard (printed 231); **its criteria are never printed.**
+  Only DSM-5 is given.
+- **Eleven medical/neurological differentials** (printed 235); **none expanded.**
+- **Seven psychosocial modalities** (printed 238); **none described.**
+- **Three pathophysiological mechanisms** in the printed-228 poster (dopamine, glutamate/NMDA,
+  structure/connectivity); **only dopamine is developed.** `Biological Theories` is plural and
+  contains one theory.
+- **Five hallucination modalities** listed (tactile, auditory, visual, olfactory, gustatory,
+  printed 233) with no phenomenology — that lives in Psych ch.1.
+
+### 4. Self-contradictions and internal defects — recorded, not reconciled
+
+| Printed | What |
+|---|---|
+| **233** | Course percentages **22 + 35 + 8 + 38 = 103%** |
+| **232** | **Two criteria both lettered `A`** — the DSM-5 list runs A, A, B, C, D |
+| **237** | `Hypotension` and `Weight gain` listed as effects of **hyperprolactinaemia**, then the mechanism given as **H1 / 5HT2C antagonism** — not a prolactin mechanism. The poster repeats `WEIGHT GAIN` under hyperprolactinaemia |
+| **230** | Positive symptoms attributed to the **nigrostriatal** pathway and negative symptoms to the **mesolimbic** pathway, while the pathway table one paragraph above assigns motivation/emotion to the **mesocortical** pathway, which is then never used |
+| **236** | Seven agents named, **six classified** — `Quetiapine` is used on printed 237 without ever being placed in a class |
+| **228 vs 233** | Life expectancy: printed 228 gives a figure (**10 to 25 years** reduced); printed 233 restates it qualitatively (`lower life expectancy … due to poor general health and high comorbidities`) with no figure. Not a contradiction, but the number appears once only |
+
+### 5. Markers, ratings, figure numbers, glosses
+
+- **No `(Tutorial)` / `(T)` marker on any of the eleven pages.** (Running total for this book across
+  everything read so far: none found in 76 of 292 pages.)
+- **No star-glyph importance rating.**
+- **No figure numbering.** Eleven figures/posters, none numbered, none given a `Figure N` caption.
+- **One `Note` box** (pale-blue, lightbulb glyph, centred word `Note`, printed 232) — the book's
+  recurring boxed device, as the book-map describes. Two further inline `*Note:*` run-ins (printed
+  231, 235, 238) are ordinary italic text, not boxes.
+- **No Arabic marginal gloss on any page of this chapter.**
+- ⚠️ **One figure carries an external credit: `©CNSforum.com` on the printed-230 dopamine-pathway
+  slide.** It is a captured lecture slide, visibly different in style from the book's own artwork.
+  This is the first attributed third-party figure recorded in this book.
+- **Nothing illegible.** Two objects were re-rendered at 300 dpi (the printed-230 pathway slide and
+  the printed-237 adverse-effects poster); every string resolved.
+
+### 6. Note on the poster-heavy design
+
+**Eleven pages carry eleven full-colour posters**, and in three places the poster is the ONLY
+carrier of content: the pathophysiology triad (printed 228), the entire prognostic-factor table
+(printed 234), and the 3rd-generation mechanism (printed 236). This is a higher poster-dependence
+than ch.11 and it means **a theory writer working from prose alone would silently lose the
+prognosis section entirely.**
+
+### 7. ⚠️ Contradictions with `content\neuro\book-map.md`
+
+Nothing in this chapter contradicts the map. Everything held: the **+12** psychiatry offset, the
+228-238 range, the 11-page length, the ch.8 boundary, the light-blue circle-cut opener with the
+`PSYCHIATRY` strip, the running FOOTER (numeral + title, blue script, bottom left), the page number
+bottom right over a grey bar, no OBJECTIVES block, no figure numbering, no tutorial marker, no star
+rating, no QR in the body, the `Note` box with its lightbulb, the AI-infographic-poster house style,
+and the Greek epsilon glyph for word-initial E (`Ɛnvironmental`, printed 228).
+
+**One addition the map should carry:** the map's coverage cell for `ps-psychosis` reads "Full for
+schizophrenia; the book titles it by the disease, not by the approach." That is accurate. It should
+also record that **this chapter is the payer of psych ch.11's antipsychotic deferral** — a
+cross-chapter dependency the map does not currently show.

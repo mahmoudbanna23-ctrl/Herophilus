@@ -18,16 +18,24 @@ expensive lessons first:
 
 ## 1. Shape
 
-**31 chapters in two groups: Psychiatry 17, Neurology 14.**
-⚠️ **Was 27. FOUR SPLITS added one each.** Three were made **after printing** over the 13-page
+**32 chapters in two groups: Psychiatry 18, Neurology 14.**
+⚠️ **Was 27. FIVE SPLITS added one each.** Three were made **after printing** over the 13-page
 hard shape — `nr-hemi`/`nr-para` 2026-08-18 · `nr-lmn`/`nr-nerve` and `ps-ocd`/`ps-ptsd` both
-2026-08-22 — and the fourth, **`nr-movement`/`nr-epilepsy`**, was **FORECAST and taken BEFORE
-writing** on 2026-08-22/23. ⚠️ **`ps-ocd` split a SINGLE deck** — see §4. Ids and titles in `app\data\modules.js`
+2026-08-22 — and **two were FORECAST and taken BEFORE writing**: `nr-movement`/`nr-epilepsy`
+(2026-08-22/23) and **`ps-psychosis`/`ps-schizmgmt`** (2026-08-23). ⚠️ **`ps-ocd` split a SINGLE
+deck** — see §4. Ids and titles in `app\data\modules.js`
 under module id `neuropsych`. **151 questions**, all `gradegain`, all MCQ, ids `npqb-`.
+
+⚠️⚠️ **FORECASTING NOW WORKS AND PRINTING AFTER THE FACT DOES NOT PAY.** The two forecast splits
+printed **13/12** and **9/10 pp** — every half inside the shape on the first print. The three found
+ones each cost a whole extra write-print-split cycle. **Forecast from the SOURCE word count before
+briefing**, using the ÷280 divisor and the inflation multiplier in §4.
 
 ### ⚠️⚠️ THE QUESTION DISTRIBUTION IS THE MOST LOPSIDED IN THE PROJECT
 
-**Neurology holds 133 of 151 questions. Psychiatry holds 18. Fifteen of the 27 chapters have NONE.**
+**Neurology holds 133 of 151 questions. Psychiatry holds 18. NINETEEN of the 32 chapters have NONE**
+*(counted from `questions.neuro.js` against `modules.js` on 2026-08-23, not carried over; the five
+splits each added a zero-question half).*
 
 | q | chapters |
 |---|---|
@@ -85,7 +93,7 @@ measured that way and comparability matters more than purity.
 | L2) Multiple sclerosis | 68 | **2,387** | 2,212 | 35 | `nr-ms` |
 | L8) OCD & PTSD | 33 | **2,322** | 2,141 | 70 | `ps-ocd` + **`ps-ptsd`** ✅ *(split 2026-08-22 on the deck's own PART ONE / PART TWO seam)* |
 | L4) Seizures_Epilepsy | 32 | **2,321** | 2,171 | 73 | **`nr-epilepsy`** ✅ *(re-assigned by the forecast split)* |
-| L11,12) Schizophrenia | 57 | **2,251** | 2,180 | 39 | `ps-psychosis` |
+| L11,12) Schizophrenia | 57 | **2,251** | 2,180 | 39 | `ps-psychosis` + **`ps-schizmgmt`** ✅ ⚠️ *86 % of it is FIVE CASE VIGNETTES — see §4* |
 | L10) Stroke | 53 | **2,090** | 2,047 | 39 | `nr-stroke` ✅ *written* |
 | L5) Muscle Disease | 55 | **2,048** | 1,807 | 37 | `nr-lmn` ✅ |
 | L9) CNS infection | 40 | **1,924** | 1,818 | 48 | `nr-cns` |
@@ -203,7 +211,22 @@ Four chapters are printed now, and they do **not** share one rate:
 | **`nr-headache`** | **2,811** | **10 pp** | **281** | ⚠️ **table-heavy — six tables, one of them 14 rows × 4 columns** |
 | **`nr-cranial`** | **3,823** | **12 pp** | **319** | table-heavy, but long prose blocks between the tables |
 
-⚠️ **The spread has since WIDENED at both ends — 281 to 343 w/pp**, the top set by `ps-anxiety`
+⚠️⚠️ **THE SPREAD IS NOW 281 to 385 w/pp AND ÷280 IS OVER-PREDICTING BY UP TO 3.7 PAGES.**
+
+| chapter | words | ÷280 said | **printed** | **w/pp** |
+|---|---|---|---|---|
+| `ps-anxiety` | 3,772 | 13.5 | **11** | 343 |
+| `ps-psychosis` | 3,002 | 10.7 | **9** | 334 |
+| **`ps-schizmgmt`** | 3,854 | 13.7 | **10** | **385** |
+
+**All three over-predicted, which is the safe direction — but 3.7 pages of slack is enough to force
+an unnecessary split.** ⚠️ **Do not split on ÷280 alone once a forecast lands between 13 and 15;
+print first.** Split before writing only where the forecast is **far** past the shape, as
+`ps-psychosis`'s 20–30 pp was. **The three most recent chapters are the densest in the module**, and
+the likeliest reason is **long two-column table cells**, which pack more words per printed line than
+prose — the hypothesis below.
+
+⚠️ **The spread had earlier WIDENED at both ends — 281 to 343 w/pp**, the top set by `ps-anxiety`
 (3,772 w / **11 pp**) on 2026-08-23. Its ÷280 forecast was **13.5 pp against a printed 11**. The
 rate does **not** track table count the way the four rows below suggested. ⚠️⚠️ **`ps-anxiety`
 carries THIRTEEN TABLES over 91 table lines — the most table-dense chapter in the module — and
@@ -244,7 +267,8 @@ page. Look for a second copy before looking for something to cut.
 | ✅ `nr-headache` | 3,647 (book ch.9) | **printed 10 pp** | ✅ **WRITTEN 2026-08-19** — whole, 11 sections, 2,811 w, all 22 questions linked |
 | ✅ `ps-ocd` | deck 2,322 + book pp. 197-199 | **printed 14 pp WHOLE** | ✅✅ **WRITTEN AND SPLIT 2026-08-22.** ⚠️ **Two second copies were trimmed FIRST and it was not enough** — a consolidated *which-source-has-what* table and a restatement of PTSD prevalence recovered **82 words of paper**, leaving **50 words on page 14** with **nothing left that was duplication**. Split on the deck's own **`PART ONE` / `PART TWO`** seam: **`ps-ocd`** (OCD, 10 sections, 3,139 w, **printed 10 pp**, keeps `npqb-ps-7`) and new **`ps-ptsd`** (PTSD + ASD, 4 sections, 1,850 w, **printed 6 pp**, 0 q). ⚠️ **The first split of a SINGLE deck** — §4 joins one TOPIC over two lectures and says nothing about two disorders in one lecture. **Measured rate 306 w/pp** |
 | ✅ `ps-anxiety` | **1,986** (book share 1,753 + deck 233) | **printed 11 pp** | ✅ **WRITTEN 2026-08-23 — whole, no split.** 10 sections, **3,799 w**, 0 q. ⚠️ **THE WORST INFLATION YET MEASURED: 4,012 words FIRST DRAFT = 202 % of source** (`nr-movement` was 163 %). **240 words of my own connective prose were cut before printing** — including one **untagged outside-knowledge claim** (dating the three-way split to DSM-5 2013, which the book never says) and one **consolidated second copy** (a divergence block restating four findings already stated where they are used — the `nr-headache` shape). **No sourced fact was cut.** ⚠️ **Measured 343 w/pp — a NEW MODULE HIGH**, and ÷280 forecast 13.5 pp against a printed **11**, an over-prediction of **2.5**. ⚠️ **The two read-first pointers both paid**: `oc-10` gave the spine accounting, `sy-10` gave a deck the plan denied |
-| `nr-ms` · `ps-psychosis` · `ps-symptom` | 2,251–2,441 | 6.7–7.3 pp | inside the ceiling. ⚠️ **`ps-ocd` was in this row and printed 14 pp** — a deck word count is not a page count when a second source is added |
+| ✅ **`ps-psychosis`** | **6,326** (book ch.7 **4,075** + deck 2,251) | forecast **20–30 pp** | ✅✅ **SPLIT BEFORE WRITING 2026-08-23**, on **`Course & Prognosis`, printed 233** — contiguous, no reordering. **`ps-psychosis`** *(retitled from "Approach to Psychosis")* 9 sections, 3,002 w, **printed 9 pp** · new **`ps-schizmgmt`** 10 sections, 3,854 w, **printed 10 pp**. Neither half has a question, so nothing moved. ⚠️⚠️ **THE DECK IS 86 % CASE VIGNETTES** — 1,933 of 2,251 words are five cases with full MSEs, and its **teaching content is ~320 words**. **The widest deck-words-vs-teaching-words gap yet measured**, and the reason `sm-9` is a section. ⚠️ **The deck asks NINE QUESTIONS across the cases and answers NONE** — worked from the book's own criteria in `sm-9`. ⚠️ **Measured 334 and 385 w/pp — 385 is a NEW MODULE HIGH** |
+| `nr-ms` · `ps-symptom` | 2,251–2,441 | 6.7–7.3 pp | inside the ceiling. ⚠️ **`ps-ocd` was in this row and printed 14 pp** — a deck word count is not a page count when a second source is added |
 | everything else | 1,257–1,924 | 3.8–5.7 pp | single chapters |
 
 ⚠️ **`ps-interview` + `ps-osce` are the sharpest inverse problem** — **473 words** for two
@@ -264,13 +288,26 @@ the book mapper as a split candidate on precedent. **Not decided — read before
 2. ✅ **Book map** — `content\neuro\book-map.md`, done 2026-08-18.
 3. ✅ **`L17` visual read** — cache 239 → 3,358 w, done 2026-08-18. `ps-pharm` is unblocked on the
    deck but still **partial** on antipsychotics — see the dead-heading finding below.
-4. ✅ **Written — 16 of 31** *(measured from disk 2026-08-23)*: `nr-stroke` · `nr-hemi` ·
+4. ✅ **Written — 18 of 32** *(measured from disk 2026-08-23)*: `nr-stroke` · `nr-hemi` ·
    `nr-para` · `nr-headache` · `nr-cranial` · `ps-symptom` · `ps-psychoed` · `nr-ms` · `ps-mood` ·
-   `nr-lmn` · `nr-nerve` · `ps-ocd` · `ps-ptsd` · `nr-movement` · `nr-epilepsy` · **`ps-anxiety`**.
-   **148 sections, 44,105 body words. 130 of the module's 151 questions reachable.**
-   **15 chapters holding 21 questions remain — and `nr-intro` holds ALL 21.**
+   `nr-lmn` · `nr-nerve` · `ps-ocd` · `ps-ptsd` · `nr-movement` · `nr-epilepsy` · `ps-anxiety` ·
+   **`ps-psychosis`** · **`ps-schizmgmt`**.
+   **167 sections, 50,988 body words. 130 of the module's 151 questions reachable.**
+   **14 chapters holding 21 questions remain — and `nr-intro` holds ALL 21.**
    ✅ **Book Psychiatry ch.3 is now FULLY SPENT** across `ps-ocd`, `ps-ptsd` and `ps-anxiety`;
    the page-by-page accounting is in `ps-anxiety`'s **`ax-10`**.
+   ✅ **Book Psychiatry ch.7 is FULLY SPENT** across `ps-psychosis` and `ps-schizmgmt`.
+   ⚠️⚠️ **`ps-pharm` IS NOW PAID ITS ANTIPSYCHOTICS — AND MUST POINT, NOT REPEAT.** Book ch.11's
+   dead heading defers *classes, mechanism of action & adverse effect* to *the schizophrenia
+   lecture*; that content is written in **`ps-schizmgmt`'s `sm-6` and `sm-7`**. What `ps-pharm`
+   still owns is **`L17`'s own agent list** — five typicals and six atypicals ch.7 never names —
+   and everything non-antipsychotic. ⚠️ **The MAOI adverse-effect gap stays OPEN**: *MAOI*,
+   *monoamine oxidase*, *phenelzine* and *tyramine* appear on none of ch.7's eleven pages.
+   ⚠️⚠️ **TWO READING DEBTS OPENED, recorded not guessed** — both are another chapter's core
+   content, so reading is cheaper than supplying twice: **NEUROLEPTIC MALIGNANT SYNDROME**, named
+   twice in ch.7 and described nowhere, deferred in place to **Psychiatry ch.10, printed 256-260**
+   (`ps-emerg`); and **ECT beyond its indications**, for which ch.7 prints **no pointer at all** —
+   **Psychiatry ch.12 `Devices in psychiatry`, printed 265-270** (`ps-devices`) is the obvious home.
 5. ⚠⚠ **`nr-intro` (21 q) IS THE NEXT ONE AND IT IS BLOCKED — IT NEEDS A USER DECISION.**
    It holds **21 of the 23 questions left — all but two.** **12 of 23 fact probes return ZERO
    against its deck** (gracile/cuneate, triceps, abdominal reflex, hemianopia, optic radiation,

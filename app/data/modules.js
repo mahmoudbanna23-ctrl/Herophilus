@@ -133,7 +133,29 @@ const MODULES = [
          ps-ocd keeps its id, so npqb-ps-7 does not move. SCHEDULE untouched. */
       ['ps-ocd','Obsessive-compulsive disorder'],
       ['ps-ptsd','PTSD and acute stress disorder'],
-      ['ps-mood','Mood Disorders'],['ps-psychosis','Approach to Psychosis'],
+      ['ps-mood','Mood Disorders'],
+      /* Split 2026-08-23, FORECAST BEFORE WRITING — the second such split in the
+         module, after nr-movement/nr-epilepsy. The evidence was in hand first:
+         book Psychiatry ch.7 runs to 4,075 body words over eleven printed pages
+         (228-238), which is more source than any single chapter in this module
+         has ever been written from. At the module's measured 281-343 w/pp and
+         its measured 150-200 % inflation, one chapter forecasts at 20-30 pp —
+         two to three times the ≤13 hard shape. No trim reaches that.
+         ⚠ The deck does NOT rescue it: L11,12 is 2,251 words of which 1,933 —
+         86 % — are FIVE case vignettes. Its teaching content is ~320 words.
+         The seam is `Course & Prognosis` on printed 233, contiguous in the book
+         and needing no reordering, and it splits the sources almost evenly:
+           ps-psychosis  book 228 - 233 upper (2,131 w) + the deck's symptom
+                         teaching — what schizophrenia is and how it presents
+           ps-schizmgmt  book 233 lower - 238 (1,944 w) + the deck's management
+                         slides and all five cases — how it runs and what to do
+         ⚠ ps-schizmgmt also inherits the ANTIPSYCHOTIC block on printed 236-238,
+         which is the content book ch.11 defers to with "(See 'schizophrenia'
+         lecture)". ps-pharm points at it rather than repeating it — declared in
+         both registers. ps-psychosis keeps its id; neither half has a question,
+         so nothing moves. SCHEDULE untouched. */
+      ['ps-psychosis','Psychosis and schizophrenia: cause and presentation'],
+      ['ps-schizmgmt','Schizophrenia: course, differential and management'],
       ['ps-geri','Geriatric Psychiatry'],['ps-child','Child Psychiatry'],['ps-sud','Substance use disorder'],
       ['ps-emerg','Emergency Psychiatry'],['ps-pharm','Psychopharmacology'],
       ['ps-devices','Devices in Psychiatry'],['ps-therapy','Psychotherapy']]},
