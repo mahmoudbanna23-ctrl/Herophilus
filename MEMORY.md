@@ -5,7 +5,7 @@ Running record, organised around *resuming*. ISO dates; unverified marked as suc
 story, count and verbatim ruling) in `progress\memory-archive.md`** — read the relevant block
 there before resuming a paused stream. Where this file and the archive disagree, this file wins.
 
-## Resume here — **NEUROPSYCHIATRY THEORY, the last module: 31 of 34 written. ✅ ALL 151 QUESTIONS NOW REACHABLE FROM THEORY; the THREE chapters left carry ZERO.** ENT · Peds · Ophtho theory DONE. Banks PAUSED.
+## Resume here — **NEUROPSYCHIATRY THEORY, the last module: 33 of 34 written. ✅ ALL 151 QUESTIONS NOW REACHABLE FROM THEORY; the ONE chapter left carries ZERO.** ENT · Peds · Ophtho theory DONE. Banks PAUSED.
 
 - **⚠️⚠️ `content\neuro\theory-plan.md` IS THE MODULE'S WORKING FILE — READ IT FIRST**, with
   `content\neuro\book-map.md`. Deck audit, unsourced chapters, page rates, order of work, every
@@ -14,7 +14,7 @@ there before resuming a paused stream. Where this file and the archive disagree,
   (whole; seam in the plan) · `ps-symptom` 8 · `ps-psychoed` · `nr-ms` · `ps-mood` · `nr-lmn` 12 ·
   `nr-nerve` 8 · `ps-ocd` 10 · `ps-ptsd` 6 · `nr-movement` 13 · `nr-epilepsy` 12 · `ps-anxiety` 11 ·
   `ps-psychosis` 9 · `ps-schizmgmt` 10 · `ps-pharm` 11 · `nr-backpain` 10 · `nr-neckpain` 9 ·
-  `ps-sud` 7 · `ps-emerg` 13 · `ps-devices` 12 · `ps-therapy` 11 · `nr-intro` 10 · `nr-exam` 7 · **`nr-cns` 13 · `ps-somato` 13 — BOTH EXACTLY AT THE SHAPE, NEITHER SPLIT · `ps-child` 12 · `ps-geri` 12.**
+  `ps-sud` 7 · `ps-emerg` 13 · `ps-devices` 12 · `ps-therapy` 11 · `nr-intro` 10 · `nr-exam` 7 · **`nr-cns` 13 · `ps-somato` 13 — BOTH EXACTLY AT THE SHAPE, NEITHER SPLIT · `ps-child` 12 · `ps-geri` 12 · `ps-interview` 8 · `ps-osce` 7.**
 - **⚠️⚠️ SIX SPLITS ON 2026-08-22/23 took the module 29 → 34. Every seam and its arithmetic is in the plan §4; the first five are listed verbatim in the archive. `SCHEDULE` untouched every time.**
   ⚠️ **A SINGLE deck may split** (`ps-ocd`), and **a book seam may cut across an INTERLEAVING deck** (`nr-backpain`) — **nothing is reordered *within* a chapter.**
 - **⚠️⚠️ FORECAST A SPLIT ONLY AT ÷280 ≥ 16; BETWEEN 13 AND 15, TEST-PRINT — NEVER ACCEPT A SPLIT
@@ -88,7 +88,7 @@ there before resuming a paused stream. Where this file and the archive disagree,
 - **⚠️⚠️ A GREP HIT THAT GETS EXPLAINED AWAY IS WORSE THAN A MISS — it looks like evidence.**
   `ps-anxiety` was "no deck" for five days: the probe **hit `L4,5`**, the row dismissed the hits
   unopened, and it searched `generalized anxiety`, which the deck never writes (**it writes GAD**).
-  ⚠️ **Probe with the SOURCE's vocabulary and OPEN THE SLIDE.** ⚠️⚠️ **PAID A SECOND TIME 2026-08-23:** `nr-intro`'s twelfth zero-probe was **`lateral column`, a phrase the book NEVER uses** — it writes *lateral corticospinal tract* and *dorsal (posterior) column*; `gracile`/`cuneate` are **figure labels only.** **The anatomy was there the whole time under the source's own names.** ⚠️⚠️ **PAID A THIRD TIME, AND BIGGEST, ON `ps-somato`: ONE probe recovered THREE fills at once — `Hoover's sign`, `la belle indifference` and conversion-vs-malingering are all NAMED-BUT-NOT-DEFINED by L3 and ALL THREE were already written, in `nr-hemi` `hem-2` and `ps-symptom` `sy-3`.** ⚠️ **And `histrion` returns ZERO only because the deck prints `Hysterionic` — the `ostio-` trap again.** ⚠️⚠️ **AND THE MIRROR OF IT ONE CHAPTER LATER: `Rett` APPEARED TO HIT THREE DECKS AND ALL THREE ARE THE STRING INSIDE *Tourette*.** **Rett syndrome is absent module-wide. CHECK WHAT A SUBSTRING ACTUALLY MATCHED, not just that it matched.**
+  ⚠️ **Probe with the SOURCE's vocabulary and OPEN THE SLIDE.** ⚠️⚠️ **PAID A SECOND TIME 2026-08-23:** `nr-intro`'s twelfth zero-probe was **`lateral column`, a phrase the book NEVER uses** — it writes *lateral corticospinal tract* and *dorsal (posterior) column*; `gracile`/`cuneate` are **figure labels only.** **The anatomy was there the whole time under the source's own names.** ⚠️⚠️ **PAID A THIRD TIME, AND BIGGEST, ON `ps-somato`: ONE probe recovered THREE fills at once — `Hoover's sign`, `la belle indifference` and conversion-vs-malingering are all NAMED-BUT-NOT-DEFINED by L3 and ALL THREE were already written, in `nr-hemi` `hem-2` and `ps-symptom` `sy-3`.** ⚠️ **And `histrion` returns ZERO only because the deck prints `Hysterionic` — the `ostio-` trap again.** ⚠️⚠️ **AND THE MIRROR OF IT ONE CHAPTER LATER: `Rett` APPEARED TO HIT THREE DECKS AND ALL THREE ARE THE STRING INSIDE *Tourette*.** **Rett syndrome is absent module-wide. CHECK WHAT A SUBSTRING ACTUALLY MATCHED.** ⚠️⚠️⚠️ **THIRD PAYMENT, AND IT OVERTURNED A PLAN FINDING: `ps-osce` WAS RECORDED AS POSSIBLY HAVING NO SOURCE AT ALL** because `OSCE` returns zero — **the EXAMINER’S word, not the SOURCE’S. `L1,2) Psychiatric sheet` IS the OSCE task**, 16 text slides, split cleanly into `ps-interview` + `ps-osce`. ✅ **The demonstration itself is a QR VIDEO in the book’s contents — printed nowhere, recorded, NOT called a gap.**
 - **⚠️ Ophtho reconciliation is NOT done** — ~63 register rows, `va-6`/`pup-10`, five held divergences, `wht-8`. In its `theory-plan.md`; never re-derive.
 - **⚠️ A SPLIT MOVES QUESTIONS by the theory `qs` links, never by title** — ophtho refiled 12/1/1/16/2.
 - **⚠️⚠️ CHECK A CHAPTER'S QUESTIONS AGAINST ITS SOURCE BEFORE BRIEFING.** A Decks column is an assignment, **not coverage** — **none of `op-va`'s 16 was answerable from its only listed deck.**
@@ -141,7 +141,7 @@ there before resuming a paused stream. Where this file and the archive disagree,
   blocks for a folded id **before** splicing; re-run the dead-id check after every fold.
 - **⚠️ Marker deltas, mis-keyed banks and the six-stage sweep's defect shapes:
   `progress\memory-archive.md`.** Validator `<scratchpad>\wrT7\validate.js` — strip trailing `*`s.
-- **Read the slide before declaring a gap — paid 14 times, and a BOOK CROSS-REFERENCE IS NOT A VERDICT**; grep the shortest stem AND the
+- **Read the slide before declaring a gap — paid 16 times, and a BOOK CROSS-REFERENCE IS NOT A VERDICT.** ⚠️⚠️ **THE 16th CAUGHT A CLAIM OF MINE BEFORE IT SHIPPED** — a `ps-osce` draft called **HOSPITALIZATION** *taught nowhere*; `hospitali[sz]` hits EIGHT decks and **FOUR are real teaching** (`ps-mood` `mo-8`’s four indications, `ps-schizmgmt` `sm-5`, `ps-anxiety` `ax-9`, `ps-emerg` `em-7`). **OPEN THE HIT BEFORE WRITING THE ABSENCE**; grep the shortest stem AND the
   misspelling (*ostio-*, *Uvelopalato…*). Re-check staged interview items before raising.
 - **⚠️ Bank sampling and provenance: `progress\memory-archive.md`** — a contents page may print
   per-section counts (**verify, never trust**); the end-of-ENT "outside knowledge" list is **half
@@ -152,13 +152,13 @@ there before resuming a paused stream. Where this file and the archive disagree,
 - **Corpus 2,097** (2026-08-14): ENT 1,720 · Neuro 158 · Ophtho 138 · Peds 81. Banks: GG 1,180 ·
   Endpoint 697 · House 78; 54 shared. Module keys `ent`, `ophtho`, `pediatrics`, `neuropsych`.
   Option counts 2–9 coexist; nothing assumes four.
-- **Theory: 148 of 151 chapters, 1,563 sections.** ENT 30 (259 pp / 8.6) · Peds 51 (340 / 8.3) ·
-  Ophtho 36 (331 / 9.2) · **Neuro 31 of 34**. Drafts in `content\<mod>\theory-drafts\` (⚠️ ENT's
+- **Theory: 150 of 151 chapters, 1,577 sections.** ENT 30 (259 pp / 8.6) · Peds 51 (340 / 8.3) ·
+  Ophtho 36 (331 / 9.2) · **Neuro 33 of 34**. Drafts in `content\<mod>\theory-drafts\` (⚠️ ENT's
   bare `ent-csom/tonsils/aom/stridor` are the DEAD format; their `*.v2/v3` are current). Best
   models: `ent-nasalobs`, `op-ret`, `nr-cranial`, `ps-symptom`, `ps-ocd`, `ps-anxiety`, `ps-schizmgmt`.
 - Last real `file://` boot **2026-08-23**: **0 console errors, 876 CSS rules, 3
-  `max-aspect-ratio:5/4` blocks, 4 modules, 151 chapters, 2,097 questions, 89 cases, 148 theory
-  chapters, 1,563 sections.** ⚠️⚠️ **THE SESSION SCRATCHPAD STARTS EMPTY AND THE HARNESSES DO NOT LIVE IN THE CURRENT ONE** — all ten survive under the 2026-08-17 session dir `3528b857-dbcf-4152-a3c7-f4fa6e501f21\scratchpad`; **`find` the temp root for them before rebuilding anything.** They are: `MOD=<mod> print.sh` · `boot.sh` ·
+  `max-aspect-ratio:5/4` blocks, 4 modules, 151 chapters, 2,097 questions, 89 cases, 150 theory
+  chapters, 1,577 sections.** ⚠️⚠️ **THE SESSION SCRATCHPAD STARTS EMPTY AND THE HARNESSES DO NOT LIVE IN THE CURRENT ONE** — all ten survive under the 2026-08-17 session dir `3528b857-dbcf-4152-a3c7-f4fa6e501f21\scratchpad`; **`find` the temp root for them before rebuilding anything.** They are: `MOD=<mod> print.sh` · `boot.sh` ·
   `modcheck-neuro.js` · `vdraft.js` · `splice-neuro.js`/`resplice-neuro.js` · `qdump.js` · `shot.sh`.
 - **⚠️ THE THEORY READER IS AN A4 PAGE (2026-08-19, three user complaints) AND MUST NOT BE MADE
   WHITE.** 210:297 by `aspect-ratio`; **margins set in JS from the PAGE's width** (percentages
