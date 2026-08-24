@@ -480,3 +480,106 @@ body words, PRINTED 11 pp, no split, 348 w/pp, 0 questions.**
   not for admission, not for restraint.
 - **Three treatment arms are now closed** — `ps-pharm` drugs, `ps-therapy` psychotherapy,
   `ps-devices` devices. **The fourth, PSYCHOSURGERY, has no chapter because it has no teaching.**
+
+
+---
+
+## Theory craft rules and source registers, moved out of MEMORY.md on 2026-08-23
+
+Theory finished at 153/153, so these stopped being resume state and became reference. They are
+reproduced here **verbatim, unedited**, and MEMORY.md now carries a pointer to this block.
+
+- **⚠️⚠️ THEORY IS DONE, SO THESE ARE CRAFT RULES FOR ANY LATER REVISION — full detail in
+  `START-HERE.md` §14 and each module plan. **NO PAGE ESTIMATOR IS TRUSTWORTHY: ÷280 over-predicted
+  `ps-pharm` by 4.0 and under-predicted `ps-emerg` by 4.7; ÷240 over-predicted ophtho by 5.1; ÷335
+  under-predicted `nr-lmn` by 6.3; both over-predicted `nr-cns` and `ps-therapy`. ONLY PRINTING
+  SETTLES IT — forecast a split at ÷280 ≥ 16, TEST-PRINT between 13 and 15, and never accept a split
+  *or* a compression on an estimator.** ✅✅ **`nr-coma` was written whole, measured 6,543 w, and NO
+  recorded rate (296–391 w/pp) fitted the shape — it split at the book’s own banner: 10 + 12 = 22.**
+- **⚠️⚠️ TRIM FIRST, BUT KNOW WHEN TO STOP — a trim is duplication or my own connective prose, NEVER
+  a fact** (`ps-ocd`: 82 w of paper recovered, 50 short, so it split). ⚠️⚠️ **"A table costs more paper
+  per word" IS REFUTED** — `ps-anxiety` is the most table-dense chapter and printed the highest w/pp.
+  ⚠️⚠️ **A SOURCE WORD COUNT UNDER-PREDICTS THIS STYLE BADLY — `ps-geri` wrote 380 % of its source,
+  `ps-somato` 303 %, `ps-therapy` 277 %: A DECK THAT NAMES RATHER THAN TEACHES COSTS THE MOST TO
+  WRITE.** Cut an UNTAGGED outside claim and a CONSOLIDATED second copy first.
+- ✅ **TWO AUTHORISED BOOK RENDERS, 2026-08-23 — CACHED, VERIFIED, DO NOT RE-RENDER.** Neuro printed
+  **1–39** → `content\neuro\book\neuro-ch01-ch02a.txt` · `neuro-ch02b.txt` · `neuro-ch03-localization.txt`
+  (~16,700 w); Neuro ch.11 *CLINICAL APPROACH TO "COMA" CASE* printed **99–118** →
+  `neuro-ch11-coma-a.txt` + `neuro-ch11-coma-b.txt` (5,374 w). **`+11` verified footer by footer on all
+  59 pages, nothing illegible.** They became `nr-intro`+`nr-exam` and `nr-coma`+`nr-comapproach`.
+  ⚠️⚠️ **`nr-intro` WAS WRITTEN WHOLE, PRINTED 14 pp AND SPLIT AFTER PRINTING (10 + 7 = 17 pp — a split
+  COSTS pages; not a reason to compress). The 14 questions moved BY THE `qs` LINKS; `SCHEDULE` untouched.**
+  ⚠️ **THE 54-WORD TRIM CAME BACK EMPTY AND THAT IS WHAT SETTLED IT** — the `ps-ocd` shape. ⚠️ **It paid
+  `nr-lmn` and `nr-hemi` BY POINTING.** **Seams, arithmetic, contradictions: plan §4-§5.**
+- **⚠️ SCOPED FOLLOW-ON, RECORDED AND NOT DONE (plan §5): TWELVE `nr-intro`/`nr-exam` QUESTIONS
+  CARRY AN OUTSIDE-KNOWLEDGE TAG THE BOOK CAN NOW REPLACE.** ✅ **The tags were CORRECT when
+  written** — no *deck* covers them, re-verified 2026-08-23. ⚠️⚠️ **`npqb-nr-14` is the priority:
+  book p.12 panel D shows its printed key names the WRONG HALF of the optic radiation** (inferior
+  quadrantanopia = **upper/parietal**). **It stops being *outside knowledge disagrees* and becomes
+  *the course's own book disagrees*, citable. The `answer` still does not move.** **Banks are PAUSED — do NOT sweep this into a theory session.**
+- **⚠️ SOURCES STILL UNREAD, RECORDED NOT GUESSED** — the 2026-08-23 render authorisation
+  covered `nr-intro`'s 39 pages ONLY: **`L3` p17** (zero words/fonts, before the deck's unanswered
+  *NON MOTOR SYMPTOMS ??????* slide) · **Neuro ch.12** (119-127) · **ch.6** (57-66) · **Psych ch.9**
+  (249-255), **ch.10** (256-260), **ch.12** (265-270), **ch.13** (271-277, the book's LAST content page) · **three picture-only `L19` slides** (p.7, p.14, p.19) · ⚠️ **NEW: Psych ch.8 `Dementia and delirium` (239-248, 10 pp), SHARED by `ps-geri` and `nr-delirium`** · **five `L13` delirium slides** (32, 34, 36, 39 and one reading only `FEVER`). **Check `mv-5` if read.**
+- **⚠️⚠️ TWO ENTRIES OF THAT LIST WERE FALSE AND ARE STRUCK (2026-08-23): Psych ch.10 (NMS) and
+  ch.12 (ECT) ARE NOT NEEDED** — `L15`'s back half and `L16` teach NMS in full, `L18` teaches ECT at
+  length; fixed in `sm-5`/`sm-7`/`sm-10` and plan §5, **the evidence verbatim in the archive.**
+  ⚠️⚠️ **THE RULE: A BOOK'S OWN CROSS-REFERENCE IS A POINTER, NOT A VERDICT** — the 14th payment of
+  *read the slide before declaring a gap*, and the first caused by **the source pointing elsewhere** rather than a failed probe.
+- ✅ **BOOK CHAPTERS FULLY SPENT: Psych ch.3, Psych ch.7, Neuro ch.16, Neuro ch.9. ⚠️ Do not
+  re-open them.** Their completion blocks are **verbatim in `progress\memory-archive.md`.** Rules
+  kept here: **check every deck's BACK HALF** · **declare in your register what you leave a
+  sibling** · **⚠️ THE PAIN TAXONOMY IS A VERIFIED ABSENCE** (`npqb-nr-125` — **stop looking**) ·
+  ⚠️ **the MAOI gap stays OPEN** · ⚠️⚠️ **deck and book CONTRADICT EACH OTHER ON THE DOPAMINE PATHWAYS — both recorded, neither corrected** · **`ps-pharm` POINTS, never repeats.**
+
+## Theory war stories, moved verbatim from MEMORY.md on 2026-08-24
+
+Theory closed at 153/153 on 2026-08-23, so these four are craft lessons for any future theory
+REVISION rather than resume state. They were carried in the 200-line file until the House splice
+needed the room. **Nothing was rewritten — the four bullets below are the MEMORY.md text as it
+stood.**
+
+- **⚠️⚠️⚠️ A TOOL THAT EDITS SILENTLY WILL EVENTUALLY EDIT WRONGLY AND NOBODY WILL SEE IT.**
+  `anchorauto.js` damaged **23 bold leads across seven SHIPPED chapters** (repaired 2026-08-23) —
+  splitting compound subjects, breaking enumerations, corrupting a QUOTED CONTENTS-PAGE TITLE, i.e. a
+  citation — and **ALL 23 PASSED `vdraft.js`, which checks an anchor EXISTS, never that the sentence
+  still parses.** Rewritten to PRINT EVERY EDIT; its first wrong edit since was caught **only by
+  READING THE PRINTED EDIT.** ⚠️ **READ ITS PRINTED EDITS EVERY TIME.** Detail: plan §4.
+- ✅ **THE PSYCHIATRY TAIL IS DONE** (`ps-sud` 7 pp · `ps-emerg` 13 · `ps-devices` 12 · `ps-therapy` 11;
+  arithmetic in plan §4, the four blocks verbatim in the archive). **THREE ARMS OF TREATMENT CLOSED**
+  — drugs, psychotherapy, devices. ⚠️⚠️ **VERIFIED ABSENCES, DELIBERATELY NOT FILLED: no
+  intoxication/withdrawal syndrome anywhere** (`tolerance`/`delirium tremens`/`naloxone` = zero over
+  all 25 decks) · **no pharmacotherapy for stimulants or hallucinogens** · **NOT ONE DOSE in
+  `ps-emerg`** · **NOT ONE CONTRAINDICATION for any device** · **no CONSENT procedure anywhere**.
+  ⚠️ **Four NAMED-BUT-UNTAUGHT modalities (`motivational`, `12-step`, `operant`, `ventilation`) are
+  supplied and TAGGED in `th-10`.** ⚠️⚠️ **AND A SYLLABUS-LEVEL ABSENCE: PSYCHOSURGERY — one of the
+  four arms of psychiatric treatment — is TAUGHT NOWHERE, zero across ALL 25 DECKS.** ⚠️⚠️ **SECOND
+  DECK-vs-BOOK CONTRADICTION, BOTH RECORDED, NEITHER CORRECTED: L19 recommends CBT for psychosis;
+  book Psych ch.7 p.238 calls that evidence MINIMAL.**
+- **⚠️⚠️ A DECK'S WORD COUNT IS NOT ITS TEACHING COUNT — TWICE NOW. SPLIT THE COUNT BEFORE BUDGETING
+  FROM IT.** ⚠️⚠️ **AND MEASURE THE DECK'S PICTURE SLIDES THE SAME WAY — `L3` HAS ELEVEN OF FORTY WITH NO TEXT AT ALL:** p.10–12 sit inside somatic symptom disorder, and **p.22–26 ARE THE WHOLE OF HYPOCHONDRIASIS, a STARRED disorder** (supplied, TAGGED). `pdffonts` + `pdftotext` per page; **zero fonts = an image, nothing hidden.** ✅ **RUN FIRST ON `ps-child` AND IT CAME BACK CLEAN — 1 of 29. The check is cheap; run it before budgeting, every time.** ✅ **`ps-geri` TOO: the DEMENTIA half is clean, and ALL FOUR of `L13`’s picture slides fall in the DELIRIUM half.** ✅✅ **THE L13 SHARED-DECK PAIR IS RESOLVED ON THE SOURCE’S OWN BOUNDARY — slides 1-24 dementia (`ps-geri`, 1,009 w), 25-41 delirium (`nr-delirium`, 657 w), CONTIGUOUS, nothing reordered.** `L11,12` is **2,251 w of which 1,933 (86 %) are FIVE CASE VIGNETTES** (teaching ~320 w;
+  it **asks NINE questions and ANSWERS NONE** — worked in `sm-9`); `L15` is **two lectures in one
+  deck**, above. **The plan had budgeted the full figure both times.**
+- **⚠️⚠️ A GREP HIT THAT GETS EXPLAINED AWAY IS WORSE THAN A MISS — it looks like evidence.**
+  `ps-anxiety` was "no deck" for five days: the probe **hit `L4,5`**, the row dismissed the hits
+  unopened, and it searched `generalized anxiety`, which the deck never writes (**it writes GAD**).
+  ⚠️ **Probe with the SOURCE's vocabulary and OPEN THE SLIDE.** ⚠️⚠️ **PAID A SECOND TIME 2026-08-23:** `nr-intro`'s twelfth zero-probe was **`lateral column`, a phrase the book NEVER uses** — it writes *lateral corticospinal tract* and *dorsal (posterior) column*; `gracile`/`cuneate` are **figure labels only.** **The anatomy was there the whole time under the source's own names.** ⚠️⚠️ **PAID A THIRD TIME, AND BIGGEST, ON `ps-somato`: ONE probe recovered THREE fills at once — `Hoover's sign`, `la belle indifference` and conversion-vs-malingering are all NAMED-BUT-NOT-DEFINED by L3 and ALL THREE were already written, in `nr-hemi` `hem-2` and `ps-symptom` `sy-3`.** ⚠️ **And `histrion` returns ZERO only because the deck prints `Hysterionic` — the `ostio-` trap again.** ⚠️⚠️ **AND THE MIRROR OF IT ONE CHAPTER LATER: `Rett` APPEARED TO HIT THREE DECKS AND ALL THREE ARE THE STRING INSIDE *Tourette*.** **Rett syndrome is absent module-wide. CHECK WHAT A SUBSTRING ACTUALLY MATCHED.** ⚠️⚠️⚠️ **THIRD PAYMENT, AND IT OVERTURNED A PLAN FINDING: `ps-osce` WAS RECORDED AS POSSIBLY HAVING NO SOURCE AT ALL** because `OSCE` returns zero — **the EXAMINER’S word, not the SOURCE’S. `L1,2) Psychiatric sheet` IS the OSCE task**, 16 text slides, split cleanly into `ps-interview` + `ps-osce`. ✅ **The demonstration itself is a QR VIDEO in the book’s contents — printed nowhere, recorded, NOT called a gap.**
+
+## Ophthalmology theory craft, moved verbatim from MEMORY.md on 2026-08-24
+
+Ophtho theory finished at 36 chapters and ENT theory is closed except for its two named debts, so
+these are craft lessons for a REVISION, not resume state. **Nothing rewritten — the MEMORY.md text
+as it stood.**
+
+- **⚠️ Ophtho reconciliation is NOT done** — ~63 register rows, `va-6`/`pup-10`, five held divergences, `wht-8`. In its `theory-plan.md`; never re-derive.
+- **⚠️ A SPLIT MOVES QUESTIONS by the theory `qs` links, never by title** — ophtho refiled 12/1/1/16/2.
+- **⚠️⚠️ CHECK A CHAPTER'S QUESTIONS AGAINST ITS SOURCE BEFORE BRIEFING.** A Decks column is an assignment, **not coverage** — **none of `op-va`'s 16 was answerable from its only listed deck.**
+- **⚠️⚠️ A SOURCE'S WORD COUNT IS THE CACHE'S, NEVER `pdftotext`'s** (`op-refract`: 1,540 vs 4,439). **`pdffonts` per page detects VECTOR-OUTLINE text; zero fonts hides nothing.**
+- **⚠️⚠️ VERIFY EVERY REGISTER ROW'S *SECOND CLAUSE*, AND AUDIT "row filed" CLAIMS — `op-ret` was
+  named in twelve rows and FIVE WERE WRONG; four "filed" rows did not exist. A resolved
+  cross-reference proves nothing — measure the destination, and check it is the right section.**
+  Ten fault shapes + the timestamp rule: `progress\memory-archive.md`.
+- ✅ **OPHTHALMOLOGY FINISHED at 36 chapters; its book caches exist** (11 chapters, 70,704 w in
+  `content\ophtho\book\` — **do not re-read**). **Its two USER RULINGS of 2026-08-18 and the scope
+  rule are in the archive — settled, do not re-propose.** ⚠️ **Scope comes from the LECTURE SERIES;
+  the book rules content, never scope.**

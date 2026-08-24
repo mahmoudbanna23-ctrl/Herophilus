@@ -7561,3 +7561,2628 @@ the file, established by a 30 dpi size sweep of all 185 pages rather than by rea
 2026"**, while `house-c1.array.js` recorded the edition as **"December 2025"**. Both were read from
 the page; the staging note may have taken the edition from a cover and the running head from a body
 page. Check before citing an edition anywhere.
+
+---
+
+## §15 — Dr. HOUSE in ENT: EAR section swept and drafting, NOSE section swept — 2026-08-23
+
+**The bank.** `d house ENT mcq.pdf`, 104 PDF pages, image-only. **Each PDF page is a two-page
+spread: left half = book page 2P−2, right half = 2P−1**, so book B sits on PDF `floor(B/2)+1`.
+≈208 book pages. **The answer is printed inline as `Answer: X` and there are NO explanation boxes
+anywhere** (verified across book pp.23–107). **Every House entry therefore takes the authored
+marker** — `Written for this bank — d house ENT mcq prints no explanation here.`
+
+### Transcription — book pp.23–107 complete
+
+Ten transcripts in `content/ent/qb-pages/`, `d-house-ENT-mcq-pdf<range>.md`, covering PDF pp.15–54.
+**Q1–Q390, every printed number present exactly once, zero unparsed.** Sections:
+
+| section | questions | book pp. | chapters |
+|---|---|---|---|
+| **Ear MCQs** | Q1–Q236 | 23–74 | 10 |
+| **Nose MCQs** | Q237–Q390 | 75–107 | opens *1. Nose anatomy & congenital anomalies* on p.75 |
+
+⚠️ **The Nose section does NOT restart numbering** — its first question is 237, running straight on
+from the Ear section's 236. Recorded as printed, never renumbered. `enthd-nose-<n>` is therefore
+unambiguous without an offset.
+
+### ⚠️ Four page-straddling questions, all repaired from both halves
+
+A question whose options or key fall past the foot of a page continue at the head of the next, and
+**neither fragment parses alone**. Q57, Q130, **Q94** and **Q239** were each rebuilt from the two
+transcribed halves; the trailing fragment is kept as the page record and renumbered `<n>-tail` so
+the question is counted once. **Nothing was inferred — every recovered option and key was read.**
+
+⚠️⚠️ **Q94 IS THE ONE THAT MATTERED, AND A COUNT CHECK WOULD NEVER HAVE CAUGHT IT.** Its staging row
+held only the p.44 fragment and **read that fragment's options C and D as A and B**, so `key:1`
+pointed at *"An offensive ear discharge"*. **The printed key is B — the X-ray option, on p.43.** The
+row was internally consistent, parsed cleanly, and was wrong. It was caught by a validator that
+compares the **drafted option count against the staging row**, and it was the *staging* that turned
+out to be defective while the drafted entry was already correct. **THE RULE: WHEN A DRAFT AND ITS
+STAGING DISAGREE, READ THE PAGE — DO NOT ASSUME THE STAGING WINS.**
+
+### Ear sweep — 30 folds, 162 to draft
+
+Adjudication in `content/ent/qb-pages/house-sweep-ear.md`. The July staging (Q22–44) was
+re-transcribed by accident and the overlap used as a control: **23 of 23 identical** on stem,
+options and key. Three findings a score alone would have got wrong: **Q188/Q189 and Q49/Q50 are
+deliberate pairs with identical menus and opposite keys** (merging either inverts an answer);
+**Q56/Q57/Q58 are a three-rung ladder on one vignette**; **Q212 is printed twice on one page as two
+different questions**, the second folding and the first new.
+
+### Nose sweep — 7 folds, 147 to draft
+
+Adjudication in `content/ent/qb-pages/house-sweep-nose.md`. Swept against the whole held corpus
+**plus two comparisons the corpus sweep is blind to**, and both earned their place:
+
+| Q | folds into | why the corpus sweep could not see it |
+|---|---|---|
+| **263** | `enthd-ear-162` | ⚠️ **source defect** — a Nose page prints an **Ear** question under a corrupted stem (a nose-anatomy opening spliced onto Q162's stem). The Ear side is **staged, not held**. |
+| **382** | **Q381** | ⚠️ **internal verbatim reprint** on consecutive pages. Both copies are staged; **a section never sees its own reprints**. |
+| 267 | `entqb-nose1-21` | see below |
+| 271 | `entep-nose-22` | "Vomerine bone" = "Vomer" |
+| 311 | `entep-mfe5-17` | corpus printing is fuller (parenthetical glosses) — kept |
+| 353 | `entep-enr-23` | "Watchful waiting" = "Observation" |
+| 378 | `entqb-nose3-108` | stage A exact |
+
+⚠️⚠️ **A NEW FOLD-DEFEAT SHAPE, AND IT IS THE *tumour/tumor* SHAPE AGAIN: Q267 DEFEATED STAGES A, B
+AND D ON THE WORD "artery".** House writes *"Sphenopalatine artery"*, Grade Gain writes
+*"Sphenopalatine"* — **a suffix on every option** breaks an exact sorted-set comparison completely.
+Only the **stage F token ranking** named it. ⚠️ **And Q263 defeated the staged-vs-staged option-set
+check on a typo** (*"hear loss"* for *"hearing loss"*, three times): **it was found by reading the
+transcriber's recorded defect note, not by any stage.** **RECORD THE DEFECT YOU SEE — IT IS THE
+ONLY INSTRUMENT THAT CATCHES WHAT NORMALISATION DESTROYS.**
+
+**Seven deliberate contrast pairs must never be folded** — Q238/Q279, Q240/Q242, Q243/Q244,
+Q286/Q287, Q302/Q303/Q304, **Q331/Q348** (same vignette at 4 days vs 10 days, identical menus,
+keyed viral vs bacterial), Q388/Q389. Each matched at `optset+key` or `stem 1.00`.
+
+**Six chained questions** carry a back-reference and cannot stand alone in a shuffled deck:
+Q261, Q262 → Q260 · Q318 → Q317 · Q320 → Q319 · Q339 → Q338 · Q386 → Q385. **Each staging row now
+carries a `ctx` field with the antecedent case and its printed key.**
+
+⚠️ **Q339 keys *trigeminal* and it is right** — its case is **maxillary sinusitis**, so otalgia
+refers along V. `entep-throat-109` keys **glossopharyngeal** for **post-tonsillectomy** otalgia.
+**Different pathway, not a divergence** — a teaching contrast, and the two now cross-reference.
+
+### ⚠️ A PRE-EXISTING MARKER FAULT, FOUND AND FIXED
+
+Only **21 of the 41** House entries already held in `app/data/questions.ent.js` carried the authored
+marker; the 20 missing were Q1–21 from the July batch. **Because this bank prints no explanation box
+anywhere, all 41 need it.** Appended and verified — **41 of 41 carry the marker, 0 in `source`.**
+**A marker rule written after the first batch does not retro-apply itself.**
+
+### Corpus reconciliation
+
+`Q_ENT` = **1,699** MCQs (house 41 · endpoint 615 · gradegain 1,043), **zero duplicate ids, zero
+option-less rows**, plus `C_ENT` = 82 cases → **1,781, exactly the recorded ENT figure.** An earlier
+reading of 1,638 in this session was simply wrong and is struck.
+
+### Drafting state
+
+| batch | range | staged | drafted | file |
+|---|---|---|---|---|
+| ear 1 | Q46–Q90 | 28 | 8 | `house-ear-batch1.draft.js` + `house-ear-b1.rest.js` |
+| ear 2 | Q91–Q121 | 28 | 5 | `house-ear-batch2.draft.js` + `house-ear-b2.rest.js` |
+| ear 3 | Q122–Q151 | 28 | — | `house-ear-b3.rest.js` |
+| ear 4 | Q152–Q181 | 28 | — | `house-ear-b4.rest.js` |
+| **ear 5** | Q182–Q212 | 28 | **28 ✅** | `house-ear-batch5.draft.js` — **the quality model** |
+| ear 6 | Q214–Q236 | 22 | 5 | `house-ear-batch6.draft.js` + `house-ear-b6.rest.js` |
+| nose 1–6 | Q237–Q390 | 147 | — | `house-nose-batch<1-6>.array.js` |
+
+⚠️⚠️ **SIX DRAFTING AGENTS RAN CONCURRENTLY AND ALL SIX DIED** — five on *"session limit"*, one on
+*"401 OAuth token expired"* — **every one of them at the point of writing its output file**, after
+doing all the reading and reasoning. **46 entries survived on disk and validated clean**; the rest
+was lost. ⚠️ **THE PROJECT CAP IS TWO CONCURRENT OPUS SUBAGENTS AND SIX IS WHY THEY DIED.**
+⚠️⚠️ **THE FIX THAT WORKS: INSTRUCT THE AGENT TO WRITE ITS FIRST 3–4 ENTRIES IMMEDIATELY AND APPEND
+3–4 AT A TIME, NEVER HOLDING MORE THAN 4 FINISHED ENTRIES UNWRITTEN.** Re-run under that rule
+produced steadily growing files instead of an all-or-nothing gamble. **A long agent task must
+externalise its work as it goes, or a death costs everything.**
+
+### Validator
+
+`<scratchpad>/t10/vhouse.js` — checks what a parse check cannot: **`answer` against the staging
+key**, option count against staging, chapter id against the valid list, the marker present **exactly
+once and as the final paragraph**, the marker **absent from `source`**, a page citation in `source`,
+and **every backticked id resolving** to the corpus or to a sibling. Run it as
+`node vhouse.js <draft>=<staging> ...`. It is what caught Q94.
+
+**Next:** finish ear 1/2/3/4/6 (116 entries), then the six Nose batches (147), then splice, validate,
+boot and commit. Transcription resumes at **PDF p.55 / book p.108 / Q391** — ~50 spreads to PDF 104.
+
+### §15a — findings from the Ear batch 3 drafting (Q122–Q151, facial nerve + hearing), 2026-08-23
+
+**28 of 28 written, 0 faults** under `vhouse.js`. Chapters: `ent-facial` 19 · `ent-hearing` 5 ·
+`ent-audio` 3 · `ent-aom` 1. Explanations 342–531 words (mean 435).
+
+⚠️ **A NEW CACHE DEFECT — `L17,18) Otorrhea and otalgia.txt` PROMISES A GLOMUS SECTION AND DELIVERS
+NOTHING.** Its slide headings read *Pathology · Main types · Clinical presentation · Investigations ·
+Treatment*, and **the cached text carries the headings with no content beneath them** — they are
+picture slides. **A HEADING IN A CACHE IS NOT COVERAGE**, and a grep that hits one of these headings
+looks exactly like evidence of teaching. This is the `L3` eleven-picture-slides shape again, in a
+**cached `.txt`** rather than a PDF. Q145 was grounded on `L19.2) Tinnitus.pdf` instead, which does
+print prose. **Render `L17,18` if glomus is ever needed in depth.**
+
+⚠️ **Q150 is the batch's strongest arguable key, and it is HELD as printed.** It keys
+*antiarrhythmics* as the drug group NOT used for tinnitus — but the only drug `L19.2) Tinnitus.pdf`
+names is **lidocaine** (*"IV lidocain, Transtympanic lidocain"*), **a class Ib antiarrhythmic**. The
+excepted class is arguably on the list already, under the *anaesthetics* option. **Defensible only
+on the deck's own labelling of lidocaine as an anaesthetic. Recorded in `explanation`, never
+disputed.**
+
+**Other keys held with the discrepancy recorded:** Q126 (stem prints *inability of opening eye*;
+facial palsy abolishes eye **closure** — the same defect shape as batch 5's Q204) · Q135 (**the deck
+contradicts itself**: its prose puts axonotmesis at Sunderland II, its table at Sunderland III; the
+bank keys from the table) · Q122 · Q129 · Q130 · Q143/Q144 (both decided by **printed audiograms
+that cannot be re-read** — no crop exists, **no `image` field set**).
+
+**Cross-bank confirmations worth keeping:** Q137's key is confirmed by `entqb-ear5-144` — **two
+banks, two different option lists, one key**. Q145 agrees across **three** banks (`entqb-ear7-180`,
+`entep-ear-3`, `entep-ear-231`). ⚠️ **Q148 restates a divergence already on record:**
+`entep-ear-185` prints a conductive ear with a **normal** Schwabach where this item, `entqb-ear8-223`
+and `L13,14` all say **prolonged**. **Both held, neither corrected.**
+
+⚠️ **VERIFIED INDEPENDENTLY, NOT TAKEN ON REPORT (2026-08-23):** the cache prints
+*Glomus tumors → Pathology · Main types · Clinical presentation · Investigations · Treatment* and
+then **jumps straight to `Otalgia`** — nothing beneath any of the five. **And the whole two-lecture
+deck caches to just 684 words**, which is itself the signal: a deck that small for two lectures is
+mostly pictures. ⚠️ **MEASURE A CACHE'S WORD COUNT BEFORE TRUSTING IT AS COVERAGE** — the
+`pdffonts`-per-page check exists for exactly this, and a suspiciously small cache should trigger it.
+
+### §15b — findings from the Ear batch 4 drafting (Q152–Q181, audiology + otalgia), 2026-08-23
+
+**28 of 28 written, 0 faults** under `vhouse.js`. Chapters: `ent-audio` 10 · `ent-hearing` 7 ·
+`ent-otalgia` 6 · `ent-otorrhea` 5. Explanations 297–509 words (mean 378).
+
+⚠️ **Q163 IS THE BATCH'S SHARPEST DIVERGENCE FROM THE COURSE'S OWN SLIDE, AND THE KEY IS HELD.**
+*Cochlear implant useful in* keys **"Sensory HL"**, not **"Sensorineural HL"** — yet
+`L19.1) hearing loss.pdf` literally prints *"SNHL: … 3- Surgical: e.g. Cochlear implant"*. The key is
+defensible on precision (an implant needs a live nerve, and the menu prints the neural half
+separately) **but it contradicts the slide's own wording.** Recorded in `explanation`, not disputed.
+
+**Q152/Q153 are a deliberate pair and the key only makes sense as one.** Q152 keys *impacted wax* as
+the commonest cause of hearing loss **in adults**; read alone that is wrong, because "adults"
+includes the elderly and the answer would be presbyacusis. **Q153 immediately carves the elderly out
+with the identical menu.** ⚠️ **A KEY THAT LOOKS WRONG ALONE MAY BE CARRIED BY ITS SIBLING — CHECK
+THE NEXT QUESTION BEFORE CALLING A KEY DEFECTIVE.**
+
+**Source defects recorded, none corrected silently:** Q167 prints option letters **A, B, C, B** ·
+**Q173 prints "Necrotizing otitis *media*"** where the deck teaches *necrotizing external otitis* —
+and **Grade Gain `entqb-ear4-107` repeats the same slip, so the error is shared across banks, not a
+transcription fault** · Q168 is a bare back-reference, with Q167's vignette restated so it stands
+alone · **Q179/Q180/Q181 turn on printed audiograms that cannot be re-read** — no crop exists, no
+`image` field set, and each `source` carries an explicit warning that the elimination is
+reconstructed from the key.
+
+⚠️ **A THIRD DECK-vs-DECK CONTRADICTION, BOTH RECORDED, NEITHER CORRECTED (Q156):** `L13,14` gives a
+**three-way** SDS split calling a sensory loss *"good"*; `L19.1` gives a **two-way** split calling
+cochlear lesions *"excellent"*.
+
+✅ **THE "PREFER THE OTHER BANK TO OUTSIDE KNOWLEDGE" RULE PAID FOUR TIMES HERE** — the 4 kHz notch
+from `entqb-ear8-208`, the vibratory/non-vibratory split from `entqb-ear7-182`/`entqb-ear7-179`, the
+anterior two-thirds sensory supply from `entqb-nose1-30`, and **the biopsy contraindication in
+glomus from `entep-ear-91` — which mattered precisely because the glomus slides cache to nothing.**
+
+⚠️ **BOTH HEADLINE CLAIMS VERIFIED INDEPENDENTLY, NOT TAKEN ON REPORT (2026-08-23):**
+`entqb-ear4-107` really does key **"Necrotizing otitis media"** — **the slip is shared across banks,
+so it is the source's, not a transcription fault.** And `L19.1) hearing loss.txt` line 162 prints
+*"3- Surgical: e.g. Cochlear implant."* under the heading **`• SNHL:`** — so Q163's *"Sensory HL"*
+key does contradict the deck's own wording, exactly as reported. **A subagent's finding is a lead
+until the line is read; both of these survived the read.**
+
+### §15c — Ear batches 1 and 2 (Q57–Q90, Q96–Q121), 2026-08-23 — **THE EAR SECTION IS 145 OF 162 DRAFTED**
+
+**b1: 20 of 20** (chapters `ent-aom` 11 · `ent-csom` 9; 409–578 words each).
+**b2: 23 of 23** (`ent-csom` 14 · `ent-facial` 5 · `ent-otorrhea` 2 · `ent-aom` 2; mean 414 words).
+**All 145 Ear entries validated together under `vhouse.js` — 0 faults**, the only unresolved
+cross-references being `enthd-ear-220` and `enthd-ear-235`, both inside the 17 still to write.
+
+⚠️⚠️ **Q121 IS THE EAR SECTION'S ONE GENUINELY DEFECTIVE KEY, AND IT IS HELD AS PRINTED.**
+It asks for a branch of the **tympanic** part of the facial nerve and keys **Posterior auricular**.
+**Verified against the deck line by line (2026-08-23):** `L15) Facial nerve disorders.txt` prints
+*"A- Intra-temporal branches: 1- Greater superficial petrosal · 2- Nerve to stapedius muscle ·
+3- Chorda tympani"* and then *"**B- Extra-temporal branches: 1- Post auricular nerve**"* — the keyed
+option is the **only one of the four the deck places outside the temporal bone**, arising after the
+stylomastoid foramen, two segments later. **The other three banks agree with the deck**
+(`entqb-ear5-122` keys postauricular as *the exception* to the intra-temporal branches;
+`entep-ear-174` treats it as extratemporal). **`answer:3` left exactly as printed; the discrepancy
+lives in `explanation`. A defective key is noted, never disputed.**
+
+**Other keys held with the discrepancy recorded:** Q80 (*most serious* keys petrositis, but `L16`'s
+"more serious" compares it with **acute mastoiditis**, not with the meningitis on the menu — the key
+is coherent only because Q80/Q81 both draw from the deck's **cranial complications** slide) · Q58 ·
+Q60 · Q63 (the textbook first move, **nasopharyngeal endoscopy**, is simply not on the menu) · Q98 ·
+Q109 · Q113 · Q100.
+
+✅ **A VERIFIED ABSENCE, PROBED PROPERLY BEFORE BEING FILLED (Q111):** CSF and lumbar-puncture
+findings in suppurative meningitis. `lumbar` / `CSF` / `neutrophil` / `chloride` / `rigidity` across
+**all 34 cached ENT decks** return only traumatic CSF otorrhoea in `L17,18` and nuchal rigidity in
+`L4`, **and no bank prints a CSF-analysis item either** — so the pyogenic/viral/TB table was supplied
+and tagged. **That is the rule working: probe the decks, then probe the other banks, then fill.**
+
+✅ **"PREFER THE OTHER BANK TO OUTSIDE KNOWLEDGE" PAID AGAIN** — the three-month observation interval
+came from `entep-ear-41`/`entep-ear-212`/`entep-ear-8`, and the meningitis clinical picture from
+`entep-ear-56`, rather than from general knowledge.
+
+⚠️ **AN OPERATIONAL HAZARD, NEWLY MEASURED: THE SESSION SCRATCHPAD IS SHARED, AND CONCURRENT AGENTS
+OVERWRITE EACH OTHER'S TEMP FILES.** A sibling's `chunk2.js`/`chunk3.js` were clobbered mid-run.
+**No content was lost — but only because the agent noticed.** ⚠️ **EVERY AGENT MUST NAMESPACE ITS
+TEMP FILES.** Also recorded: **a straight apostrophe in *Siegle's speculum* broke a parse
+mid-append** — the curly `’` is not a style preference, it is the fix.
+
+### §15d — ✅ **THE HOUSE EAR SECTION IS COMPLETE: 162 of 162 DRAFTED, 0 FAULTS** (2026-08-23)
+
+All nine Ear draft files validated **together** under `vhouse.js` — 162 entries, every `answer`
+equal to its staged key, every chapter valid, the marker present exactly once as the final
+paragraph of every explanation and absent from every `source`, and **every backticked
+cross-reference resolving.** Batch 6 (Q219–Q236, 17 entries): `ent-vertigo` 16 · `ent-hearing` 1.
+
+⚠️⚠️ **A NEW FOLD-DEFEAT SHAPE — AND THE FOLD WAS REFUSED ANYWAY. BOTH HALVES MATTER.**
+
+**The shape:** House Q221 matches **no held corpus entry**, yet it is a reprint. `entep-ear-20` is
+held in its **p.182** form (*Dix-Hallpike · Epley's · Cawthorne · Semont*), and **its `source` note
+records in PROSE that the same endpoint file re-asks it at Model Final Exam 2, p.1972 (Q47)** with
+House Q221's exact stem and the distractors *Friedrich* and *All of the above*. **That second menu
+exists only as English inside a `source` string — no normaliser, no option-set comparison and no
+token ranking can see it.** ⚠️ **A QUESTION THAT WAS FOLDED ONCE HIDES ITS ALTERNATE MENU IN PROSE,
+AND EVERY SWEEP STAGE IS BLIND TO IT.** It surfaced only because a drafter **read the `source` note
+of a question it was cross-referencing.**
+
+**The refusal:** it is still **NOT folded, and must not be.** ⚠️ **Q221 and Q222 are a deliberate
+pair on one identical five-option menu** — *useful in the **diagnosis*** keys **Dix-Hallpike**,
+*useful in the **treatment*** keys **Epley's**. **Folding Q221 would orphan Q222 and destroy the
+contrast that is the entire teaching point.** And the held `entep-ear-20` menu is not House's menu
+anyway, so a fold would show the student options this bank never printed. **Recorded in `source`,
+held as a variant. THE DELIBERATE-PAIR RULE OUTRANKS THE REPRINT RULE.**
+
+⚠️ **A THIRD PICTURE-SLIDE CACHE, SAME SHAPE AS `L17,18`: `L20) vertigo.pdf`'s BPPV slide prints the
+words *"Diagnosis"* and *"Treatment"* with NOTHING beneath them.** The manoeuvre names had to come
+from the deck's ILO line and `L13,14`'s provocative-test list; **the techniques of both manoeuvres
+are on no cached deck at all.** ⚠️ **And `L13,14` ASKS all three *"most common cause"* questions on
+one slide and ANSWERS ONLY THE THIRD** (*"Most common cause of Dizziness — Lack of Sleep"*), leaving
+the two vertigo answers to the other banks. **A deck that poses a question is not a deck that
+teaches the answer.**
+
+**Verified absences, probed across all 34 cached ENT decks before filling:** the **caloric test**
+(answered from `entqb-ear9-257` and `entep-ear-128`, not outside knowledge) · **vestibulo-ocular and
+vestibulo-spinal reflexes** (*VOR*, *vestibulo-ocular*, *vestibulo-spinal* return **zero**
+module-wide, and both balance-physiology slides are heading-plus-picture) · **MRI** (the word is on
+no cached ENT slide; `L20` prints only *"Imaging — Petrous bone & posterior fossa"*).
+
+### §15e — Nose batches 1 and 2 (Q237–Q289), 2026-08-23 — **50 of 147, 0 faults**
+
+`ent-noseanat` 39 · `ent-epistaxis` 10 · `ent-sinusitis` 1. Explanations 285–542 words (mean ~415).
+
+✅ **MY OWN Q268 FLAG RESOLVED — AND IT RESOLVED AS A VERIFIED ABSENCE, NOT A CONTRADICTION.** The
+brief warned that Q268 keys **ethmoid** as the most commonly infected sinus where the commonly taught
+answer is maxillary. **Verified independently 2026-08-23: `L27.1) ACUTE rhinosinusitis.txt` returns
+ZERO hits for *maxillary*, `L27.2` returns none, and NO cached deck anywhere ranks sinus infection
+frequency at all.** No corpus item in either other bank asks it either. **There is nothing in the
+course to contradict the key** — so both the ethmoid case and the maxillary case were written out and
+tagged, and the key stands. ⚠️ **A FLAG RAISED FROM OUTSIDE KNOWLEDGE IS A HYPOTHESIS, NOT A DEFECT —
+PROBE THE DECK BEFORE CALLING A KEY WRONG.** This one was mine, and the material settled it.
+
+⚠️ **AN INTERNAL CONTRADICTION INSIDE ONE DECK, RECORDED (Q286):** `L25.1) epistaxis` heads its
+etiology slide with *Idiopathic*, but its own **Etiology and Age** table reads *"Children — foreign
+body, nose picking"* and reserves *idiopathic* for adults. **The deck disagrees with itself.**
+Resolved in favour of the printed key because `entep-nose-61` keys the same — **the course's second
+bank broke the tie, not reasoning.**
+
+**Verified absences, each grepped across all 34 caches before filling:** **nasal lymphatic drainage**
+(*lymph* nowhere in any nose deck) · **sensory and secretomotor supply of the nose** (V1/V2 and the
+greater petrosal pathway printed by no nose deck) · **relations of the sphenoid sinus**
+(*pituitar* / *sella* / *hypophys* return **zero** module-wide).
+
+**Deliberate pairs written as contrasts, none merged:** Q240/Q242 · Q243/Q244 · Q286/Q287 (ranking
+table in 286, 287 points at it) · Q238/Q279 (respiratory *pseudostratified ciliated columnar with
+goblet cells* vs olfactory *columnar non ciliated* — **one word in the stem moves the key**).
+
+**Printed slips kept and noted once each, never silently repeated:** Q281 *"sphenopalantine"* ·
+Q285 *"hospital administration"* and *"less common that anterior"* · Q265 *"caesarian section"*.
+**Q265's VSD is explained as the H of CHARGE, not as a competing diagnosis** — the murmur is the
+distractor and the airway is the question.
+
+### §15f — Nose batch 3 (Q290–Q315, epistaxis management + smell), 2026-08-23 — **75 of 147, 0 faults**
+
+`ent-epistaxis` 23 · `ent-nasalobs` 2 (the two foreign-body items, filed by content to match the
+corpus's own filing of `entep-nose-18` and `entqb-nose2-84`).
+
+⚠️⚠️ **THE ANOSMIA TRIO IS DECIDED BY A DECK TABLE THAT PRINTS A TIE — VERIFIED LINE BY LINE
+2026-08-23.** `L25.2) smell.txt` lines 186–189 print:
+
+```
+Head injury               19%*
+Post URI                  17%*
+Nasal/sinus disease       16%*
+Idiopathic-nasal          17
+```
+
+**Q302** *most common cause of anosmia* keys **traumatic** — the table's top at 19 %. ✅
+**Q303** *2nd most common* keys **post-viral** at 17 % — **tied with Idiopathic-nasal 17.** Held
+because idiopathic is **not offered** and is a residual, not a cause. **Recorded, so a reader who
+counts the table is not left thinking the key is loose.**
+**Q304** *most common **sensorineural** cause* keys **post-viral** even though head injury outranks
+it on the raw table. Held on three **grounded** arguments: part of trauma's share is conductive by
+the deck's own *"deviated nasal septum, crooked nose"* slide; the table is **pre-COVID**, while the
+same deck prints *"Sudden loss of smell (LOS) 50 %"* for Covid-19 (line 240); and
+`entqb-nose2-78` keys postviral for the same class. **No key called defective.**
+
+⚠️ **THE RULE THIS PAYS FOR: A PERCENTAGE TABLE IS EVIDENCE, NOT AN ANSWER KEY. READ WHICH OPTIONS
+ARE ACTUALLY OFFERED, AND CHECK WHETHER THE TABLE PREDATES THE DECK'S OWN LATER SLIDES.**
+
+✅ **THE Q305 CROSS-BANK POINT IS A TEACHING POINT, NOT A DIVERGENCE, AND THE MENUS PROVE IT.**
+`entqb-nose2-78` asks the same question and keys *"Postviral infection"*; House keys *"Covid 19"*.
+**Grade Gain's menu offers one viral option among three obstructive ones, so its key must be
+*which class*; House offers three named viruses and one allergy, so its key must be *which virus*.**
+Both are right within their own option lists. **A shared stem with different menus is two different
+questions — check the menu before calling two banks contradictory.**
+
+**Q301 held with the tension written in** — it transfuses *before* packing; defensible because the
+pack goes in while blood is cross-matched, and the deck groups cross-match with the initial work-up.
+**Source typo kept as printed and flagged once:** Q310 option C prints *"szhizophrenia"*.
+
+### §15g — ⚠️⚠️ **THE SWEEP'S OWN CUTOFFS WERE HIDING FOLDS. RE-SWEPT DEEPER: NOSE IS 10 FOLDS, NOT 7** (2026-08-23)
+
+**Three more folds — Q296 → `entep-nose-14`, Q347 → `entqb-nose4-164`, Q363 → `entqb-nose3-91`.**
+Full adjudication in `house-sweep-nose.md`. **Nose: 154 printed, 10 folded, 144 to draft.**
+
+⚠️⚠️ **NONE OF THE THREE WAS FOUND BY A SWEEP STAGE. A DRAFTING AGENT FOUND THEM BY READING A CORPUS
+ENTRY IT WAS CITING**, then flagged them for adjudication rather than folding on its own. That is the
+second time this session the **drafting** pass caught what the **sweeping** pass could not (the
+first was Q221's alternate menu hidden in a `source` note).
+
+**The two cutoffs, both now measured:**
+
+1. ⚠️⚠️ **A TOP-N RANKING IS A SILENT COVERAGE LIMIT AND IT COST THREE FOLDS.** The E/F rankings
+   printed **top-20**. Q363's stem Jaccard is **0.57** and Q347's is **0.50**; the twentieth entry
+   sat at **0.57**. **They ranked correctly and fell off the end of the printed list.** The project
+   rule *"no silent caps — log what was dropped"* applies to a **ranking**, not just to a workflow.
+2. ⚠️ **STAGE C's 0.34 OPTION-OVERLAP FLOOR IS TOO HIGH FOR A SYNONYM MENU.** Q363 overlaps its twin
+   at ≈**0.2**, because *congestion* and *obstruction* **share no token at all**.
+
+**The fix, now in `<scratchpad>/t10/deepsweep.js`: STRIP FILLER BEFORE COMPARING OPTIONS.** House
+writes *"It's dull aching in nature"*, Grade Gain writes *"Dull aching"* — **the same option, and
+neither the sorted-set match nor the key-text match fires.** Removing `it`/`its`/`the`/`in nature`/
+`type`/`form`/`more than`/`less than` before comparison is what caught Q347. **This is the third
+distinct fold-defeat shape in one bank: a SUFFIX on every option (Q267, *artery*), a TYPO (Q263,
+*hear loss*), and now VERBOSE PHRASING plus SYNONYM SUBSTITUTION.**
+
+⚠️ **A FOLD THAT LEAVES A DANGLING BACKTICK IS A BROKEN FOLD.** Two of the three were already
+drafted **and cited by siblings**; their citations were repointed at the surviving corpus ids
+(`enthd-nose-296`→`entep-nose-14` ×2, `enthd-nose-363`→`entqb-nose3-91` ×1) **before** the entries
+were removed. Re-validated after: **122 Nose entries, 0 faults.**
+
+### ⚠️⚠️ AND A CORRECTION TO THIS PROJECT'S OWN BRIEF — THE ERROR WAS MINE
+
+`HOUSE-NOSE-BRIEF.md` told drafters that sinus complications are taught in `L30) Rhinitis 2` and
+`L32) nasal symptoms 2`. **That was written from a file-level `grep -l` whose hits were never
+opened, and it is wrong.** A drafting agent read both decks in full, contradicted the brief, and was
+right. **Verified line by line:** `L30`:163 puts cavernous sinus thrombosis under **Acute Invasive
+Fungal Sinusitis**; `L32`:108 is **Cluster Headache**; `L32`:136 is **Tolosa-Hunt syndrome**.
+**Complications of rhinosinusitis are taught NOWHERE in the cached decks** — the set runs straight
+from `L27.2` to `L29`. Q321/Q325/Q336 were adjudicated from the other banks' printed boxes instead
+(`entqb-nose4-162` prints *"sinusitis is the commonest cause of frontal lobe abscess"*). **The brief
+on disk is corrected.**
+
+⚠️⚠️ **THE RULE, PAID FOR BY THE PERSON WHO WROTE THE RULE: `grep -l` GIVES A FILENAME, NOT
+EVIDENCE OF TEACHING. OPEN THE LINE.** This is the same failure as *a grep hit explained away
+unopened*, in the mirror — **a grep hit ASSERTED unopened.**
+
+### §15h — ✅✅ **SPLICED AND BOOTED. THE HOUSE EAR AND NOSE SECTIONS ARE IN THE APP** (2026-08-23)
+
+**306 new entries spliced** — Ear 162 (Q1–Q236 less 30 folds, plus the 41 already held) and Nose 144
+(Q237–Q390 less 10 folds). **`Q_ENT` 1,699 → 2,005; House 41 → 347.** ENT corpus **2,087**
+(2,005 MCQ + 82 cases).
+
+**Boot from `file://`, 2026-08-23, clean:**
+`{"errs":[],"sheets":2,"rules":876,"media54":3,"q":2464,"mods":4,"chaps":153,"th":153,"sec":1603,"cases":89}`
+**0 console errors · 876 CSS rules · 3 `max-aspect-ratio:5/4` blocks · 4 modules · 153 chapters =
+153 theory · 1,603 sections · 89 cases · questions 2,158 → 2,464, exactly +306.**
+
+**Pre-write checks that all passed:** 0 duplicate ids · 0 holes · 0 answers out of range ·
+**347 of 347 House entries carry the marker, 0 leaked into `source`** · ⚠️ **0 unresolved backticked
+ids across the whole 2,005-question corpus** — every cross-reference written this session resolves.
+
+### ⚠️⚠️ THE SPLICE FAILED FIRST, AND BOTH THE BUG AND MY DETECTOR WERE WRONG
+
+The first run reported **2,006 where 2,005 was expected and REFUSED TO WRITE.** Cause:
+`house-ear-batch6.draft.js` ended `},` followed by a leftover **`/*CHUNK*/`** marker — residue from
+an agent's incremental appends. The trailing-comma strip could not match past the comment, so the
+join emitted `}, /*CHUNK*/ ,{` — **a SPARSE-ARRAY HOLE**, which counts in `.length` but is not an
+element.
+
+⚠️⚠️ **AND MY HOLE DETECTOR REPORTED ZERO, BECAUSE `Array.prototype.filter` SKIPS HOLES.**
+`Q.filter(q => !q)` **can never see a sparse slot** — it is structurally blind to exactly the fault
+it was written to catch. **A hole must be found by indexing: `for (i…) if (!(i in Q) …)`.** Both the
+strip (now loops over trailing comments *and* commas until neither remains) and the check are fixed
+in `<scratchpad>/t10/splice.js`.
+
+⚠️ **THE RULE: THE INCREMENTAL-APPEND PATTERN THAT SAVES AGENTS FROM DYING LEAVES CHUNK MARKERS
+BEHIND. GREP THE DRAFTS FOR SEPARATOR ARTIFACTS BEFORE SPLICING** — one file in fifteen carried one,
+and it was invisible to `node --check`, to the per-file parse, and to the entry count.
+✅ **What caught it was the splice refusing to write on a count mismatch.** **VERIFY THE COUNT
+BEFORE THE WRITE, NOT AFTER.**
+
+### §15i — ⚠️⚠️ **CORRECTION: THE NOSE SECTION DOES NOT END AT BOOK p.107** (2026-08-23)
+
+**§15h and the resume block called House "Ear + Nose done". That was wrong, and it was wrong because
+a boundary was ASSUMED instead of read.** The Ear→Nose boundary *was* verified from the page (the
+section opener and running header on book p.75). **The Nose→Throat boundary never was.** Nose was
+declared finished at p.107 only because that is where the transcription happened to stop.
+
+**Read from the page, 2026-08-23:** at book **p.123** the running header still prints
+**"Nose MCQs 2025"**, and the Nose section carries two further chapters —
+**7. Nasal fractures** (opens book p.119) and **8. Nasal obstruction, rhinorrhea & headache**
+(opens book p.122). **The Throat section has NOT been located. Do not assume a page for it.**
+
+⚠️ **THE RULE: A SECTION BOUNDARY IS A READING, NOT AN INFERENCE. THE END OF A TRANSCRIBED RANGE IS
+NOT THE END OF A SECTION.** The 306 spliced entries are unaffected — every one is correctly
+transcribed, swept and chaptered by **content**, not by section — but the *scope* claim was false.
+
+**Transcribed since:** book pp.116–123 (PDF 59–62) → `d-house-ENT-mcq-pdf059-062.md`, **Q427–Q464,
+38 questions, continuous, zero unparsed**, folios read individually and the `2P−2 / 2P−1` formula
+confirmed on all four spreads.
+
+⚠️ **A NEW SOURCE DEFECT SHAPE: Q447 PRINTS ITS OPTION LETTERS `A, B, C, E` — NO D AT ALL.** Verified
+at `-r 300`; not a render artefact and not a page-break loss. The key is C, so no answer moves, and
+the parser resolves it correctly to index 2. **Recorded, not corrected.**
+
+**Deliberate near-twins in the range, flagged for the sweep and NOT to be folded:** Q436/Q440 (one
+identical four-option block, JNA vs NPC, keys C vs A) · Q443/Q444 (same opening and options, findings
+clause flipped, keys D vs A) · **Q455/456/457, a graded triplet on one option block keyed A/B/D by
+time since trauma** — the third such ladder in this bank after Q56/57/58 and Q302/303/304.
+**Back-reference chain: Q428 AND Q429 both say "In the previous case" and BOTH resolve to Q427** —
+Q428 introduces no new case, so the chain points back *past* it.
+
+### §15j — House transcription, book pp.108–115 (PDF 55–58), 2026-08-23
+
+**Q391–Q426, 36 questions, continuous.** Folios read individually; formula holds. Still **Nose** —
+running header *Nose MCQs 2025* on all eight halves. Chapter **6. Nasal masses** opens book **p.112**
+(first question 410); Q391–409 continue *5. Nasal septal diseases* from p.106.
+
+⚠️ **FOUR STRADDLING QUESTIONS IN EIGHT PAGES — THE DENSEST RUN YET** (Q395, Q400, Q405, Q413).
+Q400 and Q405 each had **option D plus the key** on the following page; Q413 had **only its key**
+there. All four were transcribed on both halves and **joined into the stem's page**, with the
+following page keeping a note as its record. **Nothing inferred.** After repair the whole stretch
+**Q391–Q464 parses 74 of 74, zero unparsed, none missing.**
+
+⚠️ **Running total of straddles in this bank: SEVEN** (Q57, Q94, Q130, Q239, Q395, Q400, Q405, Q413 —
+eight counting Q395). **THE FIX IS NOW IN THE TRANSCRIBER'S BRIEF: put the COMPLETE printing on the
+page where the STEM starts, and leave a note on the continuation page.** Discovering these
+after the fact has cost a repair pass every single time.
+
+⚠️ **THE NOSE SECTION'S FIRST FIGURES APPEAR HERE — THREE IMAGE QUESTIONS NEEDING CROPS:**
+**Q409** (p.111) coronal CT nose/PNS, bone window, unlabelled · **Q410** (p.112) coronal CT, one
+maxillary antrum and adjacent nasal cavity opacified · **Q417** (p.113) coronal CT with a **black
+arrow** into one maxillary antrum and a lobulated density opposite; **its stem says "the film is
+attached ahead"**. ⚠️ **These are the first House ENT questions that genuinely require a crop** —
+House currently carries **1** image against Grade Gain's 52 and Endpoint's 18. Added to the
+figure-debt list alongside the 11 already-drafted entries that flag a missing crop.
+
+⚠️ **SIX BACK-REFERENCES, THE DENSEST RUN SO FAR** — Q412→Q411 · **Q413→(through Q412)→Q411** ·
+Q415→Q414 · **Q416→(through Q415)→Q414** · Q418→Q417. **Two of the six chain back PAST an
+intervening question that introduces no new case.** Every drafted entry must restate its antecedent.
+
+**Typos kept verbatim, all checked at `-r 300`:** *"useually"* · *"maybe congenital"* · *"is....?"*
+(four dots) · *"appeared a **weak** after"* · *"Antrochoanal **poly**"* · *"A 55 year old male"* ·
+*"It **occur** mostly"* · singular *"type of nasal fractures"* · and *"osseocartilaginous"* again.
+
+### §15k — ✅ **THE THROAT SECTION IS LOCATED: BOOK p.126** (2026-08-23) — read, not inferred
+
+Book pp.124–131 (PDF 63–66) → `d-house-ENT-mcq-pdf063-066.md`, **Q465–Q497 complete + Q498 partial.**
+Running headers read half by half: p.124 and p.125 *Nose MCQs 2025*; **p.126 carries NO running
+header — it is the Throat section title page** (full-width photograph, banner *Throat MCQs*, then the
+chapter pill); pp.127–131 *Throat MCQs 2025*.
+
+**THE BANK'S FULL STRUCTURE, EVERY BOUNDARY NOW READ FROM A RUNNING HEADER:**
+
+| section | book pages | questions | count |
+|---|---|---|---|
+| **Ear** | 23–74 | Q1–Q236 | 236 |
+| **Nose** | 75–**125** | Q237–**Q471** | 235 |
+| **Throat** | **126**– | **Q472**– | open |
+
+⚠️⚠️ **QUESTION NUMBERING DOES NOT RESTART AT A SECTION BREAK, BUT CHAPTER NUMBERING DOES**
+(Nose ch.9 → Throat ch.1). **Two counters, opposite behaviour, in the same book. Do not confuse
+them.** Nose's last chapter is *9. Minor nasal procedures* (p.124); Throat opens *1. Anatomy of
+pharynx & larynx* (p.126) and *2. Pharyngeal suppurations* (p.130).
+
+✅ **Ear and Nose are near-identical in size — 236 questions over 52 pages and 235 over 51.** The
+earlier guess that Nose ended at p.107 would have lost **81 questions**, a third of the section.
+
+⚠️ **THREE MORE STRADDLES (Q474, Q493, Q498) — ten in the bank now.** ✅ **The new brief rule WORKED:
+Q474 and Q493 arrived already joined onto their stem's page and parsed first time, with no repair
+pass.** ⚠️ **Q498 is genuinely incomplete — p.131 prints its stem and option A only**; the rest
+continues on book p.132, in the next batch's range. **Recorded as pending, nothing inferred.**
+
+**Contrast pairs flagged, not duplicates:** Q470/Q471 (identical block, keys B vs D) · Q483/Q484
+(identical block, keys A vs B) · Q479/Q489 (*paired…except* vs *single…except*) · Q465/Q467
+(unilateral vs bilateral obstruction). **Back-reference chain again: Q496 → through Q495 → Q494.**
+
+**Image questions: none.** The p.126 title-page photograph is decoration attached to no question and
+needs no crop.
+
+### §15l — House transcription, book pp.132–139 (PDF 67–70) — **TRANSCRIPTION NOW CONTINUOUS Q1–Q536**
+
+**Q499–Q536, 38 questions**, all eight halves headed *Throat MCQs 2025*. Chapter
+**3. Pediatric laryngeal lesions** opens book **p.135** (first question 513); Q499–512 run in from the
+pharyngeal-suppurations chapter that opened on p.130.
+
+✅ **WHOLE-BANK CONTINUITY CHECK, ALL FIFTEEN TRANSCRIPTS PARSED TOGETHER: 535 unique questions,
+Q1–Q536, ZERO unparsed. The ONLY absent number is 233 — the skip the bank itself makes, already on
+record.** Nothing is missing and nothing is duplicated *as a number*.
+
+⚠️⚠️ **A SECOND TRUE INTERNAL DUPLICATE — Q523 AND Q535 ARE THE SAME QUESTION PRINTED TWICE**
+(book p.137 and p.139, two pages apart): identical stem (peanut inhalation, right-sided
+hyperinflation, tracheal deviation), identical four options in identical order, identical key
+(*rigid bronchoscopy under general anaesthesia*). **Verified programmatically — byte-identical after
+normalisation.** This is the Q381/Q382 shape again, **now twice in one bank**, and it is invisible to
+a corpus sweep because both copies are staged, never held. **The Nose→Throat internal sweep must run
+`selfsweep.js`, not just the corpus sweep.**
+
+⚠️ **Q498 REPAIRED ACROSS A BATCH BOUNDARY.** Its stem and option A print on p.131 (one agent's
+range); **options B, C, D and the key print at the head of p.132 (another agent's range).** Both
+halves were read from rendered pages, joined onto p.131, and the p.132 file keeps the fragment as
+that page's record. **Nothing inferred.** ⚠️ **THE LESSON: A STRADDLE THAT FALLS ON A BATCH BOUNDARY
+NEEDS BOTH AGENTS TO REPORT IT** — the brief now tells every transcriber that its first page may open
+with an inbound tail, and to record it as a fragment note, never as a numbered question.
+
+**Q536's key prints on p.140, outside the range; the agent peeked at a top strip and read `B`.**
+⚠️ **Held for independent confirmation from the p.140 batch rather than accepted on one read.**
+
+**Near-twins built deliberately, not duplicates:** Q505/Q506 · Q501/Q512 (option A swaps
+*Peritonsillar abscess* ↔ *Quinsy*) · Q500/Q502 · Q521/Q536 · **Q514/Q516/Q518, where the character of
+the cry is the discriminator** · Q522/Q528 (steeple vs thumbprint sign).
+**Back-reference chain again: Q529 → through Q528 → Q527.**
+
+### §15m — ✅✅ **WHERE THE BOOK ENDS, READ NOT EXTRAPOLATED — AND A FOURTH SECTION NOBODY KNEW ABOUT** (2026-08-23)
+
+**PDF 103 is a spread whose LEFT half is printed folio 204 — the last page with content. Its right
+half (book 205) is blank, and PDF 104 is entirely blank, no folio. There is no index, no answer key,
+no appendix.** So the book's content runs **book pp.23–204**.
+
+⚠️⚠️⚠️ **THE LAST PAGE IS NOT THROAT. Book p.204 is headed `Selected department MCQs`, and that
+section has ITS OWN NUMBERING RESTARTING AT 1, printed with LOWERCASE `a. b. c. d.` option letters.**
+Its last item is **its own question 110** (*"Early presentation of glottis carcinoma is"*, keyed **b**),
+followed by the Arabic colophon تم بحمد الله. One extra page was spent to place it: book pp.202–203
+carry the same header with **questions 99–108**, same lowercase lettering.
+
+**So the bank is FOUR bodies, not three, and the fourth is at least 110 questions with a numbering
+scheme that collides with the main series.** ⚠️ **Its start page has NOT been read and must not be
+guessed** — the transcriber brief now tells every agent to stop and report if the header **or the
+option lettering** changes. ⚠️ **THE RULE, PAID TWICE IN ONE DAY: A SECTION BOUNDARY IS A READING.
+The first payment cost 81 Nose questions; this one would have silently merged two different numbering
+schemes into one series.**
+
+✅ **THIS IS WHY THE PROJECT RULE SAYS RENDER ONE PAGE PAST THE LAST.** Extrapolating from
+`2×104−1 = 207` would have put the end three pages late **and missed the fourth section entirely.**
+
+### §15n — book pp.140–147 (PDF 71–74): Q537–Q573
+
+**36 questions across 37 numbers.** ⚠️ **Q572 IS NOT PRINTED** — p.147 runs 571 → divider → 573,
+verified at 300 dpi, no orphan fragment and no layout gap. **Second genuine skip in the bank after
+Q233.** Chapter **4. Adenoids & tonsils** opens book **p.143**; chapter 3 therefore runs Q513–Q549.
+
+✅ **Q536's KEY CONFIRMED BY TWO INDEPENDENT READS** — the p.139 batch peeked a top strip and read
+`B`; the p.140 batch transcribed the orphan line properly and read `B`. **Held only after the second
+read, not on the peek.** ⚠️ **Q573 is INCOMPLETE** — stem and options A–C only; option D and the key
+are on p.148, next batch. Nothing inferred.
+
+⚠️⚠️ **THREE IMAGE QUESTIONS WHOSE PHOTOGRAPH IS THE ANSWER — `imgAlt` MUST NOT NAME THE FINDING:**
+**Q561** (colour photo, anterior chest/neck, blotchy erythematous rash) · **Q563** (intraoral photo,
+soft palate and uvula with aphthous-like ulcers) · **Q565** (lateral neck of a child, head extended).
+**Q562 and Q564 are back-references TO those images, and the rash, the ulcers and the head position
+ARE the keys.** This is exactly the trap that once gave away six answers — modality and view only.
+
+⚠️ **A BLEED-THROUGH GHOST WAS NEARLY LOGGED AS A HEADING** — a mirrored image of p.143's chapter pill
+shows through at the top of p.140. Caught at 300 dpi. **Check a heading's orientation before recording
+it.** (The same effect made "Throat MCQs" legible in reverse one page before the section opened.)
+
+**Graded sets and near-twins, none duplicates:** ⚠️ **Q555/556/557 — the cleanest graded triplet in
+the bank**, one option block, the vignette restated three times with a single clause changed, keys
+**C/A/D** · **Q554/Q566 — identical stem word for word, different option blocks, BOTH keyed B**, three
+pages apart in one chapter · Q544/Q545 · Q546/Q547 · **Q540/Q542, which puts adductor and abductor
+cord paralysis in the same block — a deliberate trap.**
+**Back-reference chain: Q570 → through Q569 → Q568.** Seven back-references in eight pages.
+
+### §15o — ⚠️⚠️ **"THIS BANK PRINTS NO EXPLANATION ANYWHERE" IS NOT QUITE TRUE — Q607 EXPLAINS ITSELF** (2026-08-23)
+
+Book pp.148–155 (PDF 75–78) → **Q574–Q610, 37 questions, continuous.** Chapter **5. Neck masses**
+opens book **p.153**. **Zero straddles outbound and zero back-references** in the range — both a
+change from the preceding pages.
+
+⚠️⚠️ **Q607's PRINTED KEY LINE CARRIES AN EDITORIAL PARENTHESIS, VERBATIM:**
+`Answer: A (some references say dermoid but the professor in the lecture said it's thyroglossal cyst)`
+Verified at `-r 300`. **A grep of all seventeen transcripts for answer-line parentheses returns
+exactly ONE genuine hit — this one.** So the standing claim holds for **boxes**, but not absolutely:
+**the bank breaks silence exactly once, and it does so to pre-empt a key dispute and name the lecture
+as the authority.**
+
+⚠️ **CONSEQUENCE FOR DRAFTING, RECORDED NOW SO IT IS NOT MISSED: `enthd-thr-607` MUST NOT CARRY THE
+STANDARD MARKER UNCHANGED.** *"d house ENT mcq prints no explanation here"* would be **false** for
+this one entry. **Capture the parenthesis VERBATIM in `explanation` (printed text is captured
+unmarked, per §4), then mark only the authored remainder.** ⚠️ **And this is the source's OWN
+divergence notice** — *some references say dermoid* — so it is citable evidence, not outside
+reasoning, exactly like the GG Q566 / `entep-enr-33` key divergence.
+
+✅ **Q573 REPAIRED ACROSS A BATCH BOUNDARY** (stem + options A–C on p.147, option D *"X ray neck"* and
+key **C** at the head of p.148, both read from rendered pages, joined onto p.147).
+✅ **WHOLE-BANK RE-CHECK, SEVENTEEN TRANSCRIPTS: 608 unique questions, Q1–Q610, ZERO unparsed. The only
+absent numbers are 233 and 572 — both the bank's own verified skips.**
+
+⚠️ **A SINGLE QUESTION PRINTS BOTH SPELLINGS OF ONE WORD: Q589 option C reads *Viral tonsillitis*
+(double l) beside option D *Non-infective tonsilitis* (single l)**, both verified at 300 dpi.
+*tonsilitis* appears single-l **ten times** in eight pages while *tonsillectomy* is always correct —
+**the error is confined to one word, and the bank is inconsistent within a single option block.**
+
+**Graded sets, none duplicates:** ⚠️ **Q583/584/585 — one identical FIVE-option block printed three
+times, keys B/A/E** (primary, reactionary and secondary post-tonsillectomy haemorrhage) · **a
+"most common neck swelling" QUARTET Q606–609** — congenital→B, midline cystic→A, unqualified→C,
+lateral cystic→B, **with Q607/Q608 sharing a near-identical block and differing keys.** ⚠️ **A quartet
+is a new shape; the bank has used pairs, triplets and now four rungs on one ladder.**
+
+---
+
+## §15p — House ENT, the Q391–Q685 duplicate sweep (2026-08-23)
+
+**Full adjudication, every verdict and every option comparison:
+`content\ent\qb-pages\house-sweep-throat.md`. Machine-readable fold map: `folds2.json` in the
+session scratchpad `t10\`. This section is the summary; that file is the record.**
+
+**Staged 294** (Nose tail Q391–Q471 = 81 · Throat Q472–Q685 = 213) from the 19 transcripts covering
+book pp.108–171. **Zero unparsed.** Swept against the whole held corpus of 2,005.
+**573 pair-hits → 213 distinct questions implicated → 82 FOLD, 212 NEW.**
+Fold targets by bank: **endpoint 31 · gradegain 50 · house 1.**
+
+### ⚠️⚠️ THE SWEEP'S OWN GUARD WAS SILENTLY DISABLING TWO STAGES
+
+`sameKey` was gated on `keycore.length > 3`. A key whose text reduces to three characters or fewer —
+**`Rt RLN` → `rln`**, and equally `US`, `CT`, `IgD`, `Mid` — **turned stages B and C off for that
+question with no output of any kind.** 31 of 294 were affected. Re-running B and C for those 31 with
+the guard at `>= 2` recovered **two real folds**, and both had already been adjudicated **NEW against
+the wrong sibling** on reasoning that was correct given what the report showed:
+
+- **Q634 → `entqb-thr10-552`** — the report had only ever shown it against `entqb-thr10-551`, where
+  it reads as a deliberate contrast pair.
+- **Q660 → `entqb-thr8-418`** — and this fold **corroborates a key** (below).
+
+**⚠️ THE RULE: A GUARD THAT SILENTLY DISABLES A STAGE IS WORSE THAN A MISSING STAGE, BECAUSE THE
+TIER REPORT STILL LOOKS COMPLETE.** Alongside `Array.filter` skipping sparse holes and the E/F top-N
+cutoff that hid three Nose folds, this is the **third** time an instrument on this project has been
+structurally blind to the exact fault it was built to catch. **Check what the auditor cannot see.**
+
+### ⚠️ A second silent-drop shape, caught in the same pass
+
+**The bank prints the number 212 twice, on two different questions** (book p.44, transcribed and
+noted at the time). Keying the staging map by question number alone **drops one of them without a
+word.** `stage2.js` now keys by number + stem and reports the reuse. Both Q212 printings are present
+in the shipped data — this cost nothing, but only because the drafting stage had used a different
+staging build.
+
+### ⚠️ Cross-bank findings
+
+1. **A key divergence on an identical option set — Q448 vs `entqb-nose6-195`.** Same *except* stem,
+   same four options; House keys **Nasal obstruction**, Grade Gain keys **Purulent rhinorrhea**.
+   Noted, never disputed: House's `answer` stays as printed and the divergence goes in both
+   explanations. **Second such divergence found** (after GG Q566 vs `entep-enr-33`).
+2. **Q685 vs `entqb-thr7-373` LOOKS like a third and is not — it is a deliberate pair split across
+   two banks.** Same vignette, same four options in the same order, opposite keys; **House's stem
+   carries a mandibular-fracture clause** that rules out the transoral mirror. The keys differ
+   because the stems differ in the clause that decides it. This is also the near-twin the pp.83–86
+   transcriber warned must not be folded — **the warning was right, and the reason is now known.**
+3. **Q648 vs `entep-throat-15` — the same question with one correct answer swapped for another.**
+   Three options identical; the fourth is *Subglottic tumor* (House, keyed) vs *Tracheal stenosis*
+   (endpoint, keyed). Both are right. NEW, cross-referenced.
+4. **Q660's fold corroborates a key that had been flagged as anomalous.** Q659 (*safest*) and Q660
+   (*most difficult*) print the same three options and **both key Mid**. `entqb-thr8-418` prints
+   *most difficult* and **also keys Mid** — so Q660 is confirmed by the second bank and **the anomaly
+   narrows to Q659 alone**, where no cross-bank check exists.
+
+### ⚠️ Four reconstructed stems in the shipped data can now be replaced by printed text
+
+`entep-nose-40`, `entep-nose-41`, `entep-nose-42` and `entep-mfe5-22` each carry a note saying the
+endpoint file prints **no vignette** and the stem was **reconstructed from the bank's own answer
+key**. House prints all four vignettes in full — Q613 (p.156), Q614 (p.156), Q615 (p.157), Q645
+(p.163). **On folding, the reconstruction is replaced by the printed House stem, cited to the House
+page.** A reconstructed stem is a recorded weakness in the corpus and this removes four of them.
+
+**More generally: several of these folds run House → held, so the held entry is UPDATED, not merely
+tagged.** Q497 prints **five** options where `entqb-thr2-83` prints four (House adds *CT neck*);
+Q614/Q674/Q675/Q591/Q473/Q475 each add *None of the above*; Q632's stem is fuller than
+`entqb-thr10-531`'s. **Keep the fuller printing — the rule is not "the held entry wins".**
+
+### Self-sweep — 63 pairs, one true internal duplicate
+
+The instrument is dominated by **back-reference stems**: *"In the previous case, what is the best
+line of management?"* is printed verbatim at Q412, Q429, Q496, Q562, Q570 and Q633, each pointing at
+a different preceding vignette. **A ranking cannot see that; only reading the preceding question
+can.** Every exact-stem pair was read:
+
+| pair | verdict |
+|---|---|
+| Q412 ↔ Q429 · Q450 ↔ Q454 · Q544 ↔ Q545 · Q554 ↔ Q566 | same stem, **different option sets** — all NEW |
+| Q622 ↔ Q623 | fourth option differs (*TB of larynx* vs *Reinke's edema*) **and so does the key** — both NEW, and they fold to **different** held entries |
+| **Q523 ↔ Q535** | **the only true internal duplicate** — resolved by the corpus sweep, **both fold into `entep-throat-98`**, one entry, two House citations |
+
+⚠️ **A same-stem pair is usually NOT a duplicate in this bank**: the author reuses a stem
+deliberately and swaps the whole option block. That is the graded-set habit, not an error.
+
+### Deliberate sets preserved, not folded
+
+**Q443/Q444** (severe edema vs none — Q443 folds, **Q444 stays**) · **Q455/Q456/Q457** (30 min / 2
+days / 3 weeks — only **Q456** matches `entep-nose-50`) · **Q627/Q636** (laryngeal SCC *with mobile
+cords* vs without — the clause is the discriminator) · **Q649/Q650** · **Q657/Q658** ·
+**Q639–Q642** (four VC-paralysis permutations on one block) · **Q583/Q584/Q585** (primary /
+reactionary / secondary haemorrhage) · **Q661/Q662** (*operative* vs *postoperative*) · **Q621**,
+which prints RRP *in a child, except* against `entqb-thr10-524`'s *in adults, which of the
+following* — **same options, same keyed text, correct in both directions**: a deliberate child/adult
+pair, not a reprint.
+
+### ⚠️ Two of the 82 folds carry printed rationale the held entry lacks
+
+**Q607 → `entep-mfe5-28`** and **Q623 → `entqb-thr10-534`** are two of the eleven House questions
+whose answer line prints an editorial parenthesis (§15o). On folding, the parenthesis is captured
+**verbatim and unmarked**, and the entry must **not** carry the *"prints no explanation here"*
+marker — it would be a false statement about the source. **Q607's is the strongest single line the
+bank prints:** *some references say dermoid but the professor in the lecture said it's thyroglossal
+cyst* — the source pre-empting a key dispute and naming the lecture as its authority.
+
+### Next
+
+**212 NEW entries to draft** from Q391–Q685, plus the folds to apply. Drafting brief still to be
+written; it must carry the eleven printed-rationale questions, the fuller-printing folds, the
+deliberate sets above, and the figure-dependent questions (Q616/Q617/Q618 are laryngoscopy
+photographs whose alt text must be modality and view only — the three differ **exactly** by what
+the photograph shows).
+
+---
+
+## §15q — House ENT transcription, book pp.172–179 (PDF 87–90), 2026-08-23
+
+**33 questions, Q686–Q718, continuous** — no skip, no duplicate, no restart. Folio verified on all
+eight halves (172/173 · 174/175 · 176/177 · 178/179); the `2P−2 / 2P−1` geometry holds.
+File: `content\ent\qb-pages\d-house-ENT-mcq-pdf087-090.md`.
+
+### ⚠️⚠️ THE SECTION BOUNDARY — WHAT IS NOW KNOWN, AND WHAT IS STILL A GHOST
+
+**The fourth section is NOT in pp.172–179.** Header reads `Throat MCQs 2025` on all eight halves,
+every option letter is **uppercase**, numbering runs 686→718 unbroken. That much is **read**.
+
+Two out-of-range peeks and a **mirrored bleed-through ghost** then suggest — and the reading agent
+correctly flagged all of this as **unconfirmed**:
+
+- Throat ends at **book p.181**, last question **Q724**.
+- The fourth section begins at **book p.182**, with **lowercase `a. b. c. d.`** and numbering
+  **restarting at 1** (Q1 Kiesselbach plexus · Q2 artery of epistaxis · Q3 nasal discharge in
+  dental sinusitis).
+- ⚠️⚠️ **ITS TITLE READS `Selected questions published by the department` — NOT
+  `Selected department MCQs`, which is what this project's own earlier record calls it. THE TWO
+  DISAGREE AND NEITHER HAS BEEN READ DIRECTLY OFF ITS OWN PAGE.** Both are recorded here; **neither
+  is to be written into an entry until a running header is read the right way round.**
+
+**⚠️ THE RULE: A GHOST IS A LEAD, NOT A READING.** The ghost direction was calibrated twice in this
+range and the agent was right to use it — and equally right to refuse to call it settled. **This is
+the same discipline that caught the Nose boundary being assumed rather than read.**
+
+### ⚠️ THE CHAPTER NUMBER 9 IS PRINTED TWICE, ON TWO DIFFERENT CHAPTERS
+
+Both pills re-read at `-r 300`. **Recorded, not disputed** — the book's own numbering is defective:
+
+| pill as printed | book p. | first q |
+|---|---|---|
+| **9. Dysphagia** | 174 (top) | 694 |
+| **9. Clinical assessment of voice & swallowing** | 177 (top) | 705 |
+| **10. Simplified phoniatrics principle** | 179 (mid) | 715 |
+
+**Consequence: chapter numbers in this book are not a usable index.** Nothing downstream may key off
+them. Bleed-through check done — the p.179 chapter-10 pill ghosts onto p.176 and was ignored.
+
+### Findings for the sweep and the drafting stage
+
+- **No parenthesised answer line in 686–718.** All 33 checked individually. **The Q607–Q647 habit
+  does not continue** — it is confined to eleven questions in a 41-question stretch.
+- **Q685/Q686/Q687 is a TRIPLET, not the pair the pp.83–86 batch flagged** — one option block, three
+  airway states, keys B/A/C. ⚠️ **Check how far a set runs before calling it a pair.** Other sets:
+  Q691/692/693 (one A–E grading block, keys C/B/D), Q688/689, Q698/699, Q716/717, and a
+  seven-question Plummer-Vinson cluster in which **Q700 and Q704 are near-twin vignettes asking
+  different questions.**
+- **⚠️ THE FIRST THREE-LINK BACK-REFERENCE CHAIN IN THIS BANK: Q701→Q702→Q703.** Q702 and Q703 are
+  unanswerable in isolation, and Q702 also needs its crop. (Q689→Q688 is an ordinary single link.)
+- **⚠️ A FOLD-DEFEAT SHAPE, SAME FAMILY AS *tumour/tumor*: the eponym prints FOUR WAYS IN TWO
+  PAGES** — `Plummer vinson syndrome`, `Plummer vinson’s`, `Plummer vinson`, `Plummer Vinson’s`,
+  plus `Plummer-Vinson syndrome.` at Q704. All verified at `-r 300`. **Normalise the eponym before
+  sweeping this range or stages A–D will miss every match.**
+- **Seven figure-dependent questions:** Q694–Q699 (barium swallows) and Q702 (four-panel, two
+  endoscopic + two axial CT). ⚠️ **Q697 is 100 % figure-dependent — its stem carries no clinical
+  information at all**, so it cannot be drafted without the crop.
+- **Four straddles, all joined on the stem's page:** Q689, Q709, Q714, and **Q718, whose
+  `Answer: E` prints on book p.180 and was read by a top-strip peek — the p.180+ batch owes Q718 a
+  fragment note only.**
+- **One bounded illegible item:** a burned-in caption block in the lower-left of Q699's radiograph,
+  unreadable at 220 and 300 dpi. **It is image metadata, not question content.** Nothing else.
+
+---
+
+## §15r — House ENT, book pp.180–187 (PDF 91–94): ✅ THE FOURTH SECTION BOUNDARY IS READ
+
+**34 questions.** Throat **719–724** (6, continuous) + fourth section **printed 1–28** (28,
+continuous, transcribed `S1`–`S28`). ⚠️ **The `S` numbers ARE the printed numbers — no offset**,
+because this range contains the section's own title page and its question 1.
+File: `content\ent\qb-pages\d-house-ENT-mcq-pdf091-094.md`.
+
+### ✅ The boundary, off the pages themselves — no longer a ghost
+
+| book p. | what is printed |
+|---|---|
+| **181** | header `Throat MCQs 2025`; **last Throat question = 724**; page blank below its answer rule |
+| **182** | **no running header at all** — a full display title page reading, on two lines, **`Selected questions`** / **`published by the department`**, under an arc-cropped photograph of a pencil on an OMR bubble sheet. **Question 1 starts on this same page.** |
+| **183 →** | header `Dr. HOUSE in ENT` / **`Selected department MCQs`** |
+
+⚠️⚠️ **BOTH NAMES ARE REAL AND THEY DIFFER — the display title and the running header are not the
+same string.** This project's earlier record (`Selected department MCQs`) was the **running-header**
+form and was correct; the pp.172–179 agent's ghost reading (`Selected questions published by the
+department`) was the **display-title** form and was also correct. **Neither was a mistake; they are
+two different lines on two different pages.** Record whichever a given page prints.
+
+**So the four sections are, finally, all read rather than inferred:**
+**Ear pp.23–74 Q1–Q236 · Nose pp.75–125 Q237–Q471 · Throat pp.126–181 Q472–Q724 · Selected pp.182–?
+restarting at 1.**
+
+- Option case: uppercase `A. B. C. D.` on pp.180–181; **lowercase `a. b. c. d.` on pp.182–187
+  without exception**, keys in the same case.
+- The fourth section prints **inline answers exactly like the first three** — no key table, no
+  end-of-section block, no unanswered question. It prints **no chapter pills at all.**
+- Its topics run **nose (1–9) then ear (10–28)** — no throat in this stretch.
+
+### ⚠️⚠️ THE BLEED-THROUGH MODEL WAS WRONG AND IT NEARLY PRODUCED A FALSE FINDING
+
+**Ghosts on these sheets pair CROSSED: p.180 ghosts p.183, p.181 ghosts p.182** — the left half
+ghosts the *next* spread's right half, not its own facing page. Reading p.180's ghost naively made
+it look as though lowercase questions 4–8 sat on **p.179**, i.e. that the section had already
+started. It had not. **And two of three ghost readings were wrong in detail** — the ghost said
+"28 years old" where the page prints 25, and "50 year old female" where it prints 30.
+⚠️ **A GHOST GIVES CONTENT, NEVER A PAGE NUMBER, AND ITS CONTENT IS UNRELIABLE.**
+
+### ⚠️ THE FOURTH SECTION IS A DUPLICATE HAZARD BY DESIGN
+
+It **re-publishes departmental items** and will overlap heavily with the Q1–Q724 run.
+**Fold decisions there must compare printed stems, not topics** — and the sweep must normalise the
+spelling variants below first, or stages A–D will miss every match.
+
+### Carried forward
+
+- **Q718's key is `E`** — its stem is on p.179 (previous batch), the bare `Answer: E` prints on
+  p.180. **Two independent reads agree** (a top-strip peek from the p.172–179 side and the direct
+  reading here).
+- **Straddles, three, all joined on the stem's page:** Q723 (key on p.181), S8 (rest on p.184),
+  S13 (option d + key on p.185). **No outbound fragment — S28 closes cleanly on p.187.**
+- **No chapter headings anywhere in pp.180–187.** No parenthesised answer line — all 34 checked.
+  (S21's `Acoustic neuroma (vestibular Schwannoma)` is a parenthesis inside an *option*.)
+- **No figure-dependent question.** One decorative image only: the p.182 section-opener photograph.
+- **Keys noted, not disputed:** **S12** (`Malignant otitis externa is`, key **b** with
+  `All of the above.` on offer) and **S25** (`All of he following… except`, key **c**). Both
+  re-read at `-r 300`.
+- **Graded sets, do not fold:** Q719/Q720 (identical block, keys C and A) with Q722 sharing three
+  terms · S1/S2 (both keyed b, different questions) · S10/S26 · S20/S21 (share `Presbyacusis` —
+  key in one, trap in the other) · S19/S22 · S14/S15.
+- **⚠️ PRINTING DEFECTS, TRANSCRIBED VERBATIM — DO NOT NORMALISE:** `5. 5.Cacosmia is:` (number
+  printed twice) · `diseasesEXCEPT:` · `hearing losscan` · `All of he following` · `Ultrasongraphy` ·
+  `Seborrhic` · **S23 runs option `a. IV nerve` onto the end of its stem line**, so only b, c and d
+  get their own lines · **`Menière’s` (S10) against `Meniere’s` (S13)** · `tumour`/`odour`/`foetid`
+  beside `odorless`/`Necrotizing`. All verified at `-r 300`.
+- **⚠️ An agent caught itself writing an option from expectation** before reading the continuation
+  page — S13's option d. The page prints **`d. cholesteatoma`**; fixed before the file was finished.
+  **Nothing was illegible in this range**; the `-r 300` crops were confirmation, not rescue.
+
+---
+
+## §15s — House ENT, book pp.196–205 (PDF 99–103): ✅ THE BOOK IS TRANSCRIBED TO ITS LAST PAGE
+
+**42 questions, printed 69–110, continuous** — no skip, no duplicate, no restart, **no fifth
+section, no lettering change.** Per page: 196 = 69–73 · 197 = 74–78 · 198 = 79–83 · 199 = 84–88 ·
+200 = 89–93 · 201 = 94–98 · 202 = 99–103 · 203 = 104–108 · **204 = 109–110.**
+File: `content\ent\qb-pages\d-house-ENT-mcq-pdf099-103.md`.
+
+### ✅ WHERE THE BOOK ENDS — READ, NOT ASSUMED
+
+- **Book p.204 is the last printed page**: Q109, Q110, the closing rule, a wide gap, then a single
+  centred line of **red Arabic type reading `تم بحمد الله`**, then blank to the folio.
+- **Book p.205 is completely blank** — no folio, no header, no rule.
+- **PDF p.104 exists and is blank on both halves**, carrying only a ghost of p.204 and a scan smudge.
+- **No index, no answer key, no back matter.**
+- ⚠️ **PDF p.103 is therefore NOT a spread — it is a single-sided sheet.** The 2P−2 / 2P−1 geometry
+  held everywhere a folio was printed, but it stops being a *spread* rule at the very last sheet.
+
+**This closes the transcription of `d house ENT mcq.pdf`.** Header `Selected department MCQs`
+unchanged to the last page, lowercase `a. b. c. d.` throughout, inline keys, **no chapter pills**.
+
+### ⚠️ THE BRIEF WAS WRONG ABOUT THE FOURTH SECTION'S TOPICS
+
+pp.182–187 ran **nose (1–9) then ear (10–28)** and I told the agent to expect that pattern to
+continue. **It does not.** pp.196–204 is **fully interleaved and throat-heavy**: ear 12
+(S69–71, S91–99) · nose/sinus/nasopharynx 17 · **throat/pharynx/larynx 13** (S81–85, S88–90,
+S106–110). ⚠️ **A pattern observed over six pages is not a structure — the fourth section has no
+topic order.** Chaptering there must be per question, by content, with no expectations carried in.
+
+### Findings
+
+- **Straddles: none** in the whole range; every question prints stem, options and key on one page.
+  **No inbound fragment** — p.196 opens with a clean `69.`, so **p.195 closed on Q68** (hand this to
+  the pp.188–195 batch as its expected closing number).
+- **No parenthesised answer line.** All 42 keys bare. Three parentheses exist but all sit inside
+  options or stems. **The Q607–Q647 habit is confined to those eleven.**
+- ⚠️ **A key-case defect: S93 prints `Answer: D` in UPPERCASE**, the only uppercase key anywhere in
+  the fourth section, over lowercase-lettered options. Re-read twice at `-r 300`. **Recorded, not
+  disputed**; the intended option is `d`.
+- ⚠️ **S83 prints THREE options only (a, b, c) — no option d.** Verified at `-r 300`, nothing
+  clipped. (The corpus already holds option counts 2–9; nothing assumes four.)
+- ⚠️ **Three linked case pairs that are unanswerable alone: S86→S87, S91→S92, S107→S108.** Each
+  second member says *"the previous case/condition"*. **A real hazard given the hashed deck order —
+  the referenced case must be restated into the stem at drafting.**
+- **No figure of any kind is printed in this range.** Nothing illegible. **No transcription was
+  taken from a bleed-through ghost.**
+
+### ⚠️ SPELLING TRAPS FOR THE FOURTH SECTION'S SWEEP — normalise before comparing
+
+- **A THIRD Ménière form: S99 prints a bare `Meniere`** — no accent, no apostrophe-s — against
+  p.184's `Menière’s` and `Meniere’s`. **Three spellings of one eponym in one section.**
+- `oesophageal`/`anaemia` (S89) against `esophageal` (S109); `tumour` ×3.
+- ⚠️⚠️ **S70 restates S21 WITH THE TWO PRINTINGS' DEFECTS SWAPPED** — S21 prints `hearing losscan`
+  and `neuroma (space)`, S70 prints `hearing loss can` and `neuroma(no space)`. **A whitespace
+  defect is not stable across reprints, so whitespace normalisation must precede any comparison.**
+- Re-printings flagged for the sweep, **not resolved**: S95/S19 · S101/S8 · S104/S9 · and **S86/S4,
+  which differ in the patient** (50 y cardiac vs 60 y diabetic) — that difference may be the whole
+  question, so it is not a fold on its face.
+- Printing defects transcribed verbatim, **do not normalise**: `feve,` · `Brudzniski` ·
+  `Nasal dipheteria` · `kiesselbach’s`/`little area` · `shenopalatine` · `Rosenmullar` ·
+  `Inspiratory strider` · `A adult patient` · `Grandular fever` · `gentamycin` · `sever epistaxis` ·
+  `in an child` · `painfull` · `aneurism` · `glottis carcinoma` · `lymphdenopathy`.
+
+---
+
+## §15t — House ENT, book pp.188–195 (PDF 95–98): ✅ TRANSCRIPTION OF THE BANK IS COMPLETE
+
+**40 questions, printed 29–68, continuous** — no skip, no gap. Folios verified individually
+(188/189 · 190/191 · 192/193 · 194/195). File: `content\ent\qb-pages\d-house-ENT-mcq-pdf095-098.md`.
+
+**With this range the whole of `d house ENT mcq.pdf` is transcribed: Q1–Q724 (722 questions; 233 and
+572 are the bank's own skips) + S1–S110 = 832.** Every file parses with **zero unparsed**.
+
+### ✅ THE SECTION-NAME QUESTION IS CLOSED — BOTH STRINGS ARE REAL
+
+The running header, read the right way round at `-r 400`, prints **`Selected department MCQs`** on
+**all eight halves**. The agent flagged, correctly, that a *title page* need not match a *running
+header* and that book p.182 was outside its range. **p.182 had already been read directly by the
+pp.180–187 agent**, which found the display title `Selected questions` / `published by the
+department`. **So both strings are printed, on different pages, and neither record was ever wrong.**
+
+### The fourth section's shape, now fully described
+
+- **No chapter pill anywhere** in pp.188–195 — an undivided run, unlike Ear/Nose/Throat.
+- **Inline answers**, `Answer: <letter>` under each option block, closed by a blue double rule.
+  **40 of 40 keys printed, none inferred.** No key table.
+- **Every question prints exactly four options** in this range — no five-option question.
+- **Straddles: NONE — the first range in the bank with zero.** No inbound fragment (p.188 opens with
+  a complete S29), no outbound (S68 completes on p.195). **Neither neighbour is owed anything.**
+- **No figures. No back-references — all 40 are self-contained. Nothing illegible.**
+- ⚠️ **Mixed-topic**: ear questions (S57, S60–S65, S68) and a facial-nerve question (S67) sit in a
+  section that opened in the throat. **Confirms §15s: the fourth section has no topic order.**
+
+### ⚠️ THE PARSER HAD TO BE WIDENED FOUR TIMES, AND THREE OF THE FOUR FAILED SILENTLY
+
+`hparse.js` was written for `**719.**` and returned **0 questions AND 0 unparsed** on the S-numbered
+files — **which reads as a clean empty file, not as a failure.** Four widenings, all now in the file
+with the reason beside them:
+
+1. **`S` prefix** (`**S29.**`) — the fourth section restarts at 1.
+2. **`**S[printed 29]**`** — two briefs of mine offered different S conventions and each agent
+   followed the one it was given. **Widen the parser; never rewrite a transcript to suit a tool.**
+3. **Delimiters `.` `)` and `-`** — ⚠️ **the fourth section does not keep one**: S63 prints
+   `a- b- c- d-`, S66 prints `a) b) c) d)`. A parser keyed to letter-plus-full-stop drops 8 options.
+4. **`\s*` not `\s+` after the delimiter** — the source prints **`b.Hemolytic`** with no space, so
+   requiring one dropped that option and left 3 options under a key of `d`. ⚠️ **It was reported as
+   a bad key when the transcript was faithful — a parser defect masquerading as a source defect.**
+
+⚠️ **And the first fix over-corrected**: making the delimiter optional made a Notes line reading
+`**9** — the same number as **9. Dysphagia**` parse **as question 9**. The delimiter is required.
+
+**Regression check written and passed** (`regress.js`): the 19 original transcripts still parse to
+**684 raw / 683 unique, Q1–Q685, zero unparsed, 233 and 572 absent, Q212 repeated once.**
+⚠️ **The check FAILED on its first run and the parser was innocent** — I had asserted against 683,
+the count *after* de-duplicating Q212, when the raw count has always been 684. **Check the auditor
+before believing the audit**, for the sixth time on this project.
+
+### ⚠️ Spelling and key findings for the fourth section's sweep
+
+- **FIVE keys point at a MISSPELT option**: `Peumothorax` (S41) · `Herptic pharyngitis` (S45) ·
+  `Aeuroginosa` (S62) · `rapture` for *rupture* (S64).
+- **Three fold-defeating spelling splits inside this one range**: `Peumothorax`/`Pneumothorax`
+  (S41/S56) · `jugulodiagastric`/`jugulodigastric` (S47/S64) · `retro-pharyngeal`/`retropharyngeal`
+  (S44/S49) — plus `tumour`/`tumor` both present.
+- ⚠️ **Two more Plummer-Vinson spellings** (`Plummer Vinson Syndrome` S40, `Plummer-Vinson's
+  syndrome` S53) — **SEVEN distinct printings of one eponym in this bank.**
+- ⚠️ **S55's question number is printed twice**: `55. 55. The most common lateral solid neck swelling
+  is:` — one stem, one option block, one key. **A source printing defect, not a duplicate.**
+- Seven missing-inter-word-space stems (`comesfrom`, `thefollowing`, `acutetonsillitis`, `afterone`,
+  `thepalatine`, `allof`, `Prelaryngeal(Delphian)`), plus `Bell , s palsy`, `Escherichia .coli`,
+  `All of he following`, `Stidor`, `otits media`, `Morhexella`, `haemophylus influenza`, `Waldyer's`,
+  `Epstein Bar`. **This section is far more typo-dense than the first three.**
+- **Keys noted, not disputed** (each re-read twice): **S38** `c` · **S57** `d` (*Impacted wax* for
+  commonest bilateral conductive loss in an adult, against *Otosclerosis*) · **S62** `d`.
+- **Graded sets, do not fold:** S44/S49 · S41/S56 · **S51/S52/S55 (a triplet where S52's key turns on
+  S51's premise)** · S57/S68 · S40/S53 · S48.
+
+### The tail sweep's normaliser — built and tested, 2026-08-23
+
+`norm.js` + `normtest.js` in the session scratchpad `t10\`. **The fourth section re-publishes
+departmental items, so it overlaps the main run BY DESIGN** — but three recorded defect families
+defeat a naive comparison, and the earlier sweeps had no defence against any of them:
+
+1. **Whitespace is not stable across reprints.** S70 restates S21 with the two printings' defects
+   **swapped** — S21 prints `hearing losscan` + `neuroma (space)`, S70 prints `hearing loss can` +
+   `neuroma(no space)`. → strip whitespace entirely.
+2. **One eponym prints SEVEN ways** and Ménière three (`Menière’s` / `Meniere’s` / `Meniere`).
+   → strip punctuation and accents, deaccent via NFD.
+3. **Real typos, INCLUDING IN FIVE KEYS** — `Peumothorax`, `Herptic`, `Aeuroginosa`, `rapture` for
+   *rupture*. These survive 1 and 2, so option matching also carries a **length-scaled edit-distance
+   tolerance** (12 %, floor 1). Plus British/American, which defeated three stages once already.
+
+**15-case test, all passing.** It collapses every recorded defect **and refuses to collapse
+`Right bronchus`/`Left bronchus`, `High`/`Low`, `Inspiratory only`/`Expiratory only` and
+`Vocal cord polyp`/`Vocal cord nodule`** — the one-word differences that ARE the answer, which a
+careless edit-distance threshold would destroy.
+
+⚠️ **The test's first run reported two failures and the CODE WAS RIGHT — my oracle was wrong**, I had
+marked the Plummer-Vinson and Ménière pairs as expected-different when collapsing them is the whole
+purpose. **Check the auditor before believing the audit**, seventh time on this project.
+
+**Order of work: the tail sweep runs AFTER Q391–Q685 is drafted and spliced**, so it sweeps against
+a settled corpus rather than a moving target.
+
+---
+
+## §15u — House drafting, batch 1 (Q391–Q421, book pp.108–114), 2026-08-23
+
+**29 of 29 written**, `content\ent\qb-pages\house-thr-batch1.draft.js`, ids `enthd-nose-391` …
+`enthd-nose-421`. **Validated 0 faults** by `vhouse.js`: every `answer` equals the staged printed
+key, option counts match, chapters all resolve, all 29 carry the marker exactly once as the final
+paragraph, none in `source`, every entry has a page citation, and **all 48 backticked corpus ids
+resolve.** Chapters: `ent-septum` 19 · `ent-nasalmass` 6 · `ent-nasalobs` 3 · `ent-sinusitis` 1.
+
+### ⚠️⚠️ A DECK CONTRADICTS A PRINTED KEY — AND I VERIFIED IT MYSELF
+
+**Q397.** House keys *"Nasal septal deviation maybe congenital"* as the **false** statement. But
+`L24) diseases of the nasal septum.txt`:105–110 prints, among the **causes** of DNS:
+`2 – Developmental;` / `a-Birth mouldin theory` / `b-Abnormal intrauterine postures with compression`
+and `3-Racial (Hereditary).` **Checked directly in the cache, not taken on the agent's word.**
+
+⚠️ **This is a THIRD contradiction shape, and the most citable one yet.** The project already holds
+two **deck-vs-book** contradictions (both recorded, neither corrected). This is
+**deck-vs-BANK-KEY** — the course's own teaching against the course's own answer. It stops being
+*outside knowledge disagrees* and becomes *the syllabus disagrees with itself*, which is exactly the
+shape that may be raised in an exam. **The `answer` still does not move**; the contradiction lives in
+`explanation`, quoting the slide. The other three options are independently corroborated by
+`entqb-nose8-242` (the Caucasian-vs-African 92 %/40 % figures) and `entqb-nose8-243` (C-shape
+commonest).
+
+### ⚠️ MY PROMPT WAS WRONG ABOUT THE BACK-REFERENCES, IN BOTH DIRECTIONS
+
+I named **two** (Q412, Q416) and attributed them to Q411 and Q415. There are **five**, and neither
+attribution was right: **Q412 and Q413 → Q411** · **Q415 and Q416 → Q414** (Q416 chains *through*
+Q415, it does not reference it) · **Q418 → Q417**. The transcript states all five.
+⚠️ **Q414 is not in the staging at all — it folded into `entep-nose-82`**, so Q415 and Q416
+back-reference a question the drafter was never given; the vignette was reconstructed **from the
+transcript, not from its answers**, and said so in both `source` fields.
+**This is the third brief of mine an agent has corrected. The instruction to trust the staging over
+the prompt is doing real work — keep it in every brief.**
+
+### Other key anomalies, recorded in `explanation`, never disputed
+
+- **Q411** prints *one week*, and `entqb-nose8-247`'s own box says *">3 days = infection"* with its
+  one-week vignette keying **abscess** — yet House keys **haematoma**, because no fever or tenderness
+  is printed. **Within this bank the discriminator is consistently tenderness, not elapsed time**
+  (cf. Q391 at four days → abscess). Recorded so the two are not read as contradictory.
+- **Q420** keys *genetic analysis* over embolisation + excision **purely because the patient is
+  female** — two questions after the same bank keys embolisation + excision at Q416.
+- **Q404** keys *None of the above*, i.e. treats *"Diagnosis requires an imaging facility"* as
+  correct, when a perforation is seen on plain rhinoscopy.
+- **Q406** says *"vestibular component of nasal valve"* where `entqb-nose8-245` keys *"nasal valve
+  collapse"* — wording noted. **Q405** keys cross-fluctuation as *not the best answer* here while
+  `enthd-nose-384` keys it **true**; both recorded so they are not read as a contradiction.
+
+### Gaps and figures
+
+- ⚠️ **`L24` IS A VERY THIN DECK — verified, not assumed**: it prints **no fracture-type
+  classification, no septal-haematoma or abscess features, no perforation causes or treatment, and
+  no SMR detail beyond the name.** 48 cross-references were used before any outside fill.
+- **The largest fill is Q418**: **no cached deck prints any MRI appearance for inverted papilloma** —
+  `L26`'s only MRI signal set belongs to angiofibroma, and a corpus-wide search for *striated*
+  returns no nasal hit. The convoluted-cerebriform pattern was supplied and tagged, anchored on
+  `L26`'s own *"Ribbons of Hyperplastic respiratory epithelium… ( inverted pattern )"*, and
+  *"Lamellated smooth pattern"* was recorded as naming **no recognised pattern in any source here**
+  rather than being explained away. Also a corpus-wide zero: **the silastic septal button** (Q404).
+- **Figure-dependent, no crop: `enthd-nose-409`** (coronal CT, bone window) and **`enthd-nose-417`**
+  (coronal CT with a black arrow; the stem itself says *"the film is attached ahead"*). Both drafted
+  from printed stem, options and key only; **nothing claimed about what either film shows.**
+  ⚠️ **A third figure question sits in these pages — Q410, a coronal CT — but it FOLDED into
+  `entep-enr-30`, so whoever applies that fold must know the House printing carries a film.**
+
+---
+
+## §15v — House drafting, batch 2 (Q422–Q450, book pp.115–120), 2026-08-23
+
+**26 of 26 written**, `content\ent\qb-pages\house-thr-batch2.draft.js`, ~110 KB, mean 437
+explanation words. **Validated 0 faults** by `vhouse.js` alongside batch 1 — **55 entries checked,
+zero faults**: keys equal the staged printed keys, option counts match, chapters resolve, markers
+present exactly once as the final paragraph and never in `source`, page citations present, every
+backticked id resolves. Chapters: `ent-nasalmass` ×18 · `ent-septum` ×8.
+
+### ⚠️ A PRECISION MY SWEEP RECORD BLURRED, AND THE DRAFTER CAUGHT IT
+
+I wrote that Q448 and `entqb-nose6-195` print *"the same four options"*. **They print the same option
+SET in a DIFFERENT ORDER**: House *Bloody / Hyposmia / Purulent / Nasal obstruction*, key index **3**;
+Grade Gain *Bloody / Purulent / Hyposmia / Nasal obstruction*, key index **1**. The divergence itself
+stands exactly as recorded — House keys *Nasal obstruction*, Grade Gain keys *Purulent rhinorrhea* —
+and both keys are kept as printed.
+
+⚠️ **THE RULE: SAY "THE SAME OPTION SET" UNLESS THE ORDER HAS BEEN CHECKED.** These two banks reorder
+constantly (the ledger already holds a dozen "same four options **reordered**" rows), so **an entry
+that quotes a sibling's option LETTER rather than its TEXT will eventually be wrong.**
+`house-sweep-throat.md` corrected in place.
+
+### Sourcing
+
+**The other bank was preferred over outside knowledge wherever it printed the fact** — 40+
+cross-references, all verified to resolve: NPC's nodal-first presentation and cranial-nerve pattern
+(`entep-nose-70`, `entep-throat-43/67/119/120/126/136`), fossa of Rosenmüller and Gerlach tonsil
+(`entep-nose-67`, `entep-throat-11`), Furstenberg sign (`entqb-nose7-207`), open-book grading
+(`entqb-nose6-192/193/194`), medicolegal X-ray (`entqb-nose6-198`), no-anaesthesia digital reduction
+(`entqb-nose6-202`), Moure's and Schwartze's signs (`entqb-thr3-121`, `entep-ear-176`).
+
+**Genuine outside fills, each tagged at the claim:** the *operation* for a meningoencephalocele
+(Q429 — **no bank and no deck prints it**; excise rather than reduce, plus the CSF-leak consequence);
+**the gross appearance of a nasal polyp** (Q438 — pale, glassy, mobile, insensitive, non-bleeding —
+**no cached deck describes it and neither other bank prints it**); sinonasal carcinoma sex
+distribution (Q433, though the wood-dust link came from `entep-nose-2`'s printed box); the coronal
+plane for the ostiomeatal complex (Q430); 3D reconstruction and plain-film insensitivity (Q447);
+and the safeguarding duty in intimate-partner assault (Q449).
+
+### Corrections to my prompt
+
+- **Q417 is not in batch 2** — I carried it over from batch 1's range. **No question in batch 2 is
+  figure-dependent**; every one is answerable from its printed stem and options.
+- **Q431, Q442 and Q443 are absent from the staging**, consistent with the fold map. **Q444 stands as
+  Q443's contrast partner and points at `entep-nose-74` explicitly**, as intended.
+- The brief's Throat deck list was not what this range needed; the drafter reached correctly for
+  `L1.2) Anatomy of the pharynx`, `L2) Hoarsness of Voice`, `L5) NECK MASS` and
+  `L21.1) acute otitis media`. ⚠️ **Use whatever deck actually teaches the point — a nominal deck
+  list is an assignment, not a boundary.** This is the same lesson as *a Decks column is an
+  assignment, not coverage*, now paid on the bank side.
+
+---
+
+## §15w — House drafting, batches 3 and 4, 2026-08-23
+
+**Batch 3** (Q451–Q484, book pp.121–128): **27 written** — 16 `enthd-nose-*`, 11 `enthd-thr-*`,
+the batch that crosses the Nose→Throat boundary. **Batch 4** (Q485–Q517, book pp.129–135):
+**27 written**, `enthd-thr-485` … `enthd-thr-517`, ~480 explanation words each.
+**All four batches validated together: 109 entries, 0 faults.**
+
+### ⚠️⚠️ "L24 IS A THIN DECK" WAS TOO BROAD — AND I CHECKED IT MYSELF RATHER THAN PICK A SIDE
+
+§15u recorded from batch 1 that `L24` prints *"no fracture-type classification, no septal-haematoma
+or abscess features"*. Batch 3 contradicted it. **Read directly in the cache, both are right about
+different things:**
+
+- `L24`:73–76 **does** print a `Classification` heading with three **axes** — *Nature of injury ·
+  Extent of deformity · Pattern of fracture* — but **grep for a numbered Type 1–4 scheme returns
+  ZERO**, and House Q392–Q394, Q450 and Q454 all ask about *Type 1/2/3/4*. **The numbered scheme is
+  genuinely absent; the concept of classification is not.**
+- `L24`:85 prints **`Look for septal hematoma, abscess`** — an instruction to look, with **no
+  features, no cross-fluctuation, no treatment.** Batch 1's claim holds as to *features*.
+- ⚠️ And batch 3 found `L24`:71–72 **answers Q451 outright**: *"Fracture of septal cartilage or its
+  dislocation can occur without nasal bones fracture in cases of trauma to lower nose."* **Q451
+  needed neither outside knowledge nor another bank.**
+
+⚠️⚠️ **THE RULE: AN ABSENCE CLAIM MUST NAME THE SPECIFIC THING ABSENT, NOT THE TOPIC.** "No fracture
+classification" is ambiguous between *no classification section* (false) and *no numbered type
+scheme* (true), and the ambiguity is what propagated. **Now in every drafting brief.**
+
+### Corrections to my prompts, batches 3 and 4
+
+1. **Q480 is NOT folded** — I listed it among folded referents; it is not in the fold map. The folds
+   inside 451–484 are exactly seven: 452, 456, 458, 462, 466, 473, 475. **34 − 7 = 27.**
+2. **Q455 is in batch 3, not batch 2** — batch 3 holds two-thirds of the graded trio and linked both.
+3. **There is not one back-reference in Q451–Q484.** In book pp.116–131 the transcripts show only
+   four *"In the previous case…"* questions — Q428/Q429 and Q495/Q496 — **all outside that range.**
+4. **My named sibling for Q502 was the wrong sibling.** `entep-throat-63` shares only the diagnosis
+   (it asks about Horner's syndrome); the real close sibling is **`entqb-thr2-81`** — same trismus,
+   tonsils pushed medially, third-molar extraction. Both cited, neither folded.
+   ⚠️ **A sweep hit names A sibling, not THE nearest one.**
+5. **"At least two questions print five options" — there are five** (Q491, Q492, Q493, Q507, Q508).
+6. **Figure-dependent questions in batches 3 and 4: NONE.** The only image on book pp.121–128 is the
+   **Throat section title-page photograph on p.126** — section furniture belonging to no question.
+7. **Printed-rationale re-scan of book pp.116–139: clean.** Every answer line reads `**Answer: X**`
+   with nothing appended. **The Q607–Q647 habit is confirmed confined.**
+8. ⚠️ **The entry-closing layout in my brief was wrong**: `questions.ent.js` puts `},` at the **end of
+   the `source` line** (1,856 of 2,005 entries), not on its own line. **All three drafters copied the
+   file rather than the brief and were right to.** Brief corrected for the remaining batches.
+
+### Key anomalies worth keeping
+
+- **Q508 is the strongest of the batch.** `L4` attributes quinsy trismus to *"spasm of masseter and
+  pterygoid muscles"*; **temporalis is named nowhere in the deck**, yet the key is *All of the above*.
+  One limb therefore rests on general anatomy and is **tagged as such**. Grade Gain's
+  `entqb-thr2-47` keys the **pterygoids alone**, but on a single-best stem whose options include
+  neither masseter nor temporalis — **so it is not a contradiction**, and the drafter said so.
+- **`enthd-nose-453`: an arguable key, correctly labelled.** *"A must"* makes antibiotics and
+  anti-tetanus obligatory for every nasal fracture, which overstates practice for a closed injury.
+  ⚠️ **The drafter recorded this as ITS OWN objection, not a course contradiction, because no slide
+  contradicts the key** — exactly the distinction §15u's Q397 finding depends on. **Keep the two
+  apart in every report.**
+- **`enthd-thr-482` printing fault**: option d reads *"Post-cricoid cartilage"*; `L1.2` prints
+  *"Post-cricoid region"* and no such cartilage exists. **The key is option b, so the fault does not
+  touch the answer.** Transcribed as printed.
+- **Q513 option D** (*short aryepiglottic folds*) is **not** on `L12`'s infantile-larynx slide, which
+  says *"Big arytenoids, Short VC"*; grounded instead on the same deck's laryngomalacia slide and
+  `entqb-thr5-255`. **Q517**'s exception pairs a **true** adjective with a **false** one — the deck
+  says the stridor *"increase[s] in severity over 6–9 months"*, so *progressive* is right and
+  **biphasic** is the falsehood.
+- **Cross-bank corroborations, no key contradicted in Q485–Q517:** Q492 ≡ `entqb-thr2-59`,
+  Q499 ≡ `entqb-thr2-65`, Q494/495 ≡ `entqb-thr2-62`/`63`, Q509 ≡ `entqb-thr2-68` (an exact
+  left/right mirror), Q513 (both banks reject *cylindrical*).
+
+### ⚠️ THE HEREDOC LIMIT IS LOWER THAN RECORDED
+
+A quoted heredoc append **failed at ~7 KB**, bash reporting an unterminated quote although the
+delimiter was quoted. **The recorded ~9 KB threshold is optimistic.** ✅ **The drafter verified the
+file was unchanged before retrying, lost nothing, and switched to Write-to-scratchpad + `cat`
+concatenation** — that is the response to copy. Now in every brief.
+
+---
+
+## §15x — House drafting, batches 5 and 6, 2026-08-23
+
+**Batch 5** (Q519–Q554, book pp.136–143): **27 written**, `enthd-thr-519` … `enthd-thr-554`, mean
+413 explanation words. **Batch 6** (Q558–Q596, book pp.144–152): **30 written**,
+`enthd-thr-558` … `enthd-thr-596`, mean 462 words, 29 × `ent-tonsils`.
+**Six batches validated together: 166 entries, 0 faults.**
+
+### ⚠️⚠️ A DRAFTER REPORTED A DEFECT IN ITS SIBLINGS THAT DOES NOT EXIST — AND I CHECKED
+
+Batch 5 reported an *"id prefix conflict"*: that `house-thr-batch1/2/3.draft.js` use `enth-nose-` /
+`enth-thr-` against the corpus's `enthd-`. **It is false.** Direct grep of every draft:
+batch 1 = 29 `enthd-nose-` · batch 2 = 26 `enthd-nose-` · batch 3 = 16 `enthd-nose-` + 11
+`enthd-thr-` · batches 4–6 = `enthd-thr-`. Corpus = 203 `enthd-ear-` + 144 `enthd-nose-` = **347**,
+exactly the House count. **`vhouse.js` was right and would have caught a real prefix error anyway**
+(a bad prefix fails the id-to-staging match and reports *no staging row*).
+
+⚠️ **The cost was real even though the claim was false: batch 5 cross-referenced ONLY batch 4's ids,
+withholding links to batches 1–3 on the strength of its own wrong finding.** ⚠️⚠️ **THE RULE CUTS
+BOTH WAYS — "the agent that read the source is usually right" is a prior, not a verdict. Verify a
+report about ANOTHER agent's output the same way you verify one about the source.** Six agent
+corrections have been right; this is the first wrong one.
+
+### Corrections to my prompts
+
+- **Q554 / Q566 are BOTH KEYED B.** I briefed *"different option set and a different key"*. The
+  transcript records an identical stem, **different option text, same key letter.** Both real, not
+  merged — but my characterisation was wrong and would have propagated into an explanation.
+- **Q592 vs Q477** — same subject and mirrored form but **zero content overlap**: Q477 tests pillar
+  relations, Q592 tests supply, innervation and drainage. Cross-linked as a deliberate pair.
+- **Q539 sharpened:** `entqb-thr5-270` prints Q539's **exact four options reordered** and asks about
+  laryngitis, keying croup. Neither folded.
+- **Batch 5 holds no figure question at all** — Q548 *describes* an X-ray in words and prints none.
+  **Batch 6's only figure is Q563**, an unlabelled colour intraoral photograph whose stem states the
+  finding in words, so it is answerable from text. No `image` field written; `source` records that
+  any future `imgAlt` must give **modality and view only**.
+- **The brief's back-reference list is materially short.** Batch 5's range prints three more
+  verbatim: **Q528 and Q529 (both → Q527)** and **Q531 (→ Q530)**, with **Q529 a two-step chain**.
+  The transcripts also record Q538, Q560, Q564 and Q569 outside that range. All restated in-stem.
+
+### Verified absences, named precisely — the new standard
+
+- **`gold standard` returns ZERO across all 34 lecture files** (Q519) — the ranking is the decks',
+  the vocabulary is not.
+- **Vincent's angina is taught nowhere**: `Vincent`, `fusiform`, `spiroch` all zero for the pharynx;
+  ⚠️ **the single `spirochetes` hit is LYME DISEASE in `L15) Facial nerve disorders`** — opened, not
+  explained away. Answered from `entqb-thr4-242` + `entep-throat-76`.
+- **`Rathke` zero across 35 decks** · **`Tornwaldt`/`Thornwaldt` zero, re-verified by me** ·
+  **scarlet fever zero in the throat decks** · **the 5th branchial arch is never mentioned by `L12`**,
+  which names only the 4th and 6th · **`compensatory emphysema` and the check/stop-valve mechanics
+  appear on no ENT slide** · **no corpus question previously covered laryngeal embryology.**
+- ⚠️ **`ADHD` returns exactly ONE hit and the drafter opened it** — `L8) Introduction to
+  phoniatrics`:84 lists ADHD among conditions a *language disorder* may belong to. **No deck names it
+  as an adenoid sequel**, but the phenomenon is taught three times under other names (`L3`'s
+  CO2-retention *"lassitude, dullness"*, `L9`'s *"Poor memory and loss of concentration"*, and
+  `entqb-thr4-210`'s decreased school achievement). **Opened, not explained away.**
+- **`L3` prints NO tonsillectomy contraindication list, NO management sequence for any haemorrhage
+  type, NO anaesthetic for adenoidectomy, and names the four clinical types of tonsillitis as photo
+  captions while describing none of them.** ⚠️ Its adenoid-facies list contains **neither
+  "apathetic" nor "expressionless"**. ⚠️ **`L12`'s comparison slide `Supraglottitis OR Croup ??` is a
+  bare title in the cached text — no table extracted**; the contrast was assembled from the two
+  disease slides.
+- **Grisel's/atlantoaxial: zero — but `L3` prints the injury without the name**
+  (*"Injury to cervical vertebrae: dt. prominent atlas"*).
+
+### Key anomalies, separated as the briefs now require
+
+**(a) Source diverges from the bank — citable:** **Q580** option A prints `> 7 episodes/year` where
+`L3` prints **`7 or more`**; read strictly the option excludes exactly seven. Key (*all of the
+above*) unaffected and kept.
+
+**(b) The drafter's own objection, no slide contradicting:** **Q587**'s *"always bacterial in
+origin"* (EBV and adenovirus also give exudative tonsillitis) — and **Grade Gain's `entqb-thr4-177`
+keys the same way**, so it stands, labelled as the drafter's objection. **Q568** keys *acute*
+adenoiditis on a vignette reading chronic, but the key is still the only nasopharyngeal lymphoid
+option.
+
+**(c) Cross-bank divergences, House's key kept, both recorded:** **Q569** House *X ray* (*most
+clinically important*) vs `entep-enr-11` *flexible nasopharyngoscopy* (*optimum*) — **the adjective
+resolves it** · **Q588** endpoint keeps acute follicular tonsillitis among causes of *a membrane*
+where House excludes it from *TRUE* membranes — **again the adjective** · **Q596** and **Q573**
+(House *CBC*, GG `entqb-thr4-206` *Paul-Bunnell* — **two rungs of one ladder, not a conflict**).
+⚠️ **Four apparent divergences and NOT ONE is a defect** — each resolves on a word in the stem.
+
+---
+
+## §15y — House drafting, batch 8 (Q651–Q685, book pp.165–171), 2026-08-23
+
+**19 written**, `enthd-thr-651` … `enthd-thr-685`. Chapters after reconciliation: `ent-stridor` 16,
+`ent-paedlar` 2, `ent-hoarse` 1. **This batch corrected me three times and two of the three are
+corrections to my own analysis, not to a prompt slip.**
+
+### ⚠️⚠️⚠️ Q685 — MY SWEEP RECORD WAS WRONG. THE TWO BANKS AGREE.
+
+§15p recorded Q685 and `entqb-thr7-373` as a deliberate pair split across banks with **opposite
+keys**. **Verified directly in the corpus and it is wrong:**
+
+| | stem | key |
+|---|---|---|
+| House **Q685** | bullied, severe neck **and face** trauma, **mandibular fracture** | flexible fibreoptic (transnasal) |
+| **`entqb-thr7-372`** | assaulted, **multiple mandibular fractures**, difficulty opening the mouth | **flexible fibreoptic — THE SAME** |
+| `entqb-thr7-373` | bullied, severe neck trauma **without facial affection** | indirect mirror (transoral) |
+
+**`entqb-thr7-372` is Q685's true twin and the banks key it identically.** `entqb-thr7-373` is the
+twin of House **Q686**. **Two stems, two twins, one clause apart — there was never a divergence.**
+
+⚠️⚠️ **THIRD INSTANCE OF ONE INSTRUMENT FAULT: A SWEEP HIT NAMES *A* SIBLING, NOT *THE NEAREST* ONE.**
+`tiers.js` keeps only the best-scoring hit per staged question, so `entqb-thr7-372` was never put in
+front of me. The same fault gave a wrong sibling for **Q502** (`entep-throat-63` instead of
+`entqb-thr2-81`) and hid a fold for **Q634** (shown against `entqb-thr10-551`, not `-552`).
+**⚠️ BEFORE WRITING A CROSS-BANK CLAIM, LIST EVERY CANDIDATE ABOVE THRESHOLD, NOT THE TOP ONE.**
+`house-sweep-throat.md` corrected in place.
+
+### ⚠️⚠️ MY NECK-TRAUMA ABSENCE CLAIM WAS TOO BROAD — AND I MADE IT THE RECORDED WAY
+
+I wrote that neck trauma is *"taught NOWHERE in the cached ENT decks"*, having opened every hit for
+`neck trauma`, `strangulation`, `penetrating` and `zone`. **`L6) Stridor  and tracheostomy`:413–416
+teaches it**: `Open Trauma: Gun shot, Cut throat / Stab wound & Surgical` · `Closed Trauma: Blunt
+trauma / Hanging`. **I never grepped `blunt`, `hanging`, `cut throat` or `stab` — I probed with MY
+vocabulary, not the source's**, which is precisely the trap that cost five days on `generalized
+anxiety` against the deck's own `GAD`. ⚠️ **Opening every hit does not save you if you searched the
+wrong words.**
+
+**What IS absent, named precisely:** the word **strangulation** · the **three-zone classification**
+(zero across all 34 decks) · the **high/low-velocity taxonomy** · **hyoid-fracture detail** · **any
+ranking of imaging modalities in laryngeal trauma**. Brief corrected in place.
+
+### ⚠️ A CHAPTER CONFLICT THE DRAFTER FLAGGED AND DID NOT SILENTLY RESOLVE
+
+My brief said `ent-neck` covers *"neck masses and neck trauma"*. **The corpus says otherwise:**
+`ent-neck` holds **49 questions of which ONE mentions trauma** — it is the neck-**masses** chapter —
+while `ent-stridor` holds **111 of which 25 are trauma**, including `entqb-thr7-335/337/338/369`,
+the exact Grade Gain siblings these House questions pair with. **Seven entries refiled `ent-neck` →
+`ent-stridor`** (676, 677, 679, 680, 681, 683, 685) by `chapfix.js`, which verified zero collateral
+changes and **printed every edit for reading**. Brief corrected. ✅ **The drafter raised it rather
+than picking one — exactly right; identical content in two chapters is invisible to every validator.**
+
+### Also corrected in my prompt
+
+- **Q661 did NOT fold** into `entqb-thr8-406` — both Q661 and Q662 are staged and drafted; the Grade
+  Gain twin stands separately. **Q652 did NOT fold** either; its back-reference to Q651 is restated.
+- **Q649 is not in this staging** (transcript places it on book p.164) — my prompt hedged correctly.
+- **Opening-`(` scan: NONE in pp.164–171.** ⚠️ The drafter noted that the parentheses in the staging
+  file (`KEY = B (Barium and chest X ray)`) are **my staging tool restating the option text**, not
+  printed source — a trap worth knowing before the tail sweep.
+- **Figure-dependent questions: none.**
+
+### Findings kept
+
+- **Q659** — key kept, `entqb-thr8-418` cited as corroborating Q660's identical *Mid* key, and the
+  oddity reconciled as *difficult ≠ dangerous*. **Recorded, not re-investigated**, as instructed.
+- **Q676 — the drafter's own objection, correctly labelled**: the bank excludes penetrating trauma
+  from "higher risk" where penetrating neck trauma carries high vascular mortality. **No cached slide
+  contradicts the key**, so it is labelled as the drafter's objection, not a course contradiction.
+- **Q653 — cross-bank tension, not a defect**: `entqb-thr8-400` keys *acute nonspecific laryngitis*
+  for "in children"; House keys *acute retropharyngeal abscess* for a **3-month** child with
+  congenital causes excluded. `L6` brackets croup at 6 m–3 y and `L4` puts the glands of Henle in
+  infancy. **Both keys held.**
+- **`aerophagia` is a precise absence** (Q670): on neither of `L6`'s complication lists, and the only
+  cached ENT slide printing the word is `L9) Snoring & OSA` as a **CPAP limitation**. Its
+  classification as *early* came from `entqb-thr8-407`, not from outside knowledge.
+- **`L1.1` states in its own not-covered list that referred otalgia and its pathways are absent from
+  that deck** (Q654) — **a deck declaring its own gap is the cheapest possible absence check.**
+
+---
+
+## §15z — House drafting, batch 7 and the close of the run (2026-08-23)
+
+✅✅ **ALL EIGHT BATCHES DRAFTED AND VALIDATED TOGETHER: 211 entries, 0 faults.**
+29 · 26 · 27 · 27 · 27 · 30 · 26 · 19. **Not 212 — see the Q635 correction below.**
+
+### ⚠️⚠️⚠️ A FOLD I ADJUDICATED AND NEVER RECORDED — Q635
+
+`shortkey.js` surfaced **Q635 vs `entqb-thr10-535` at stage B, stem 1.00, options 1.00** — same
+stem, **same four options in the same order**, same key. I read it, called it a fold in my working
+notes, then wrote *"the fix recovered TWO real folds"* (Q634, Q660) and **left Q635 out of
+`folds2.json` entirely.** It went to the drafter as a to-write item. **The drafter wrote it, spotted
+the duplicate itself, and flagged it loudly in its `source`.**
+
+⚠️ **THE FAILURE WAS NOT IN THE INSTRUMENT — IT WAS BETWEEN READING AND RECORDING.** The sweep was
+right, the adjudication was right, and the map was wrong. **An adjudication that is not in the map
+did not happen.** Fold map **82 → 83**, NEW **212 → 211**. Fixed by `fixq635.js`, which added the
+fold, removed `enthd-thr-635` from the draft, verified the count and holes, and printed the removal.
+Then `repoint635.js` **repointed six sibling references** from the folded id to `entqb-thr10-535`
+(project rule: a folded id loses its backticks everywhere) — every edit printed and read.
+
+### ⚠️⚠️ MY VALIDATOR REPORTED SIX CORRECT ENTRIES AS FAULTS
+
+`vhouse.js` requires the marker *"…prints no explanation here"* on every entry. **The six
+printed-rationale entries deliberately do not carry it** — the bank DOES print a reason there, so
+the marker would be a false statement about the source. The validator did not know the exception
+existed and flagged all six. **Now taught it**: for those six ids it instead requires the
+alternative closing paragraph, **requires the printed parenthesis to appear verbatim**, and **fails
+if the standard marker is present.** ⚠️ **A rule that acquires an exception acquires a validator
+bug on the same day.**
+
+### ✅ The six printed-rationale entries are confirmed correct
+
+The drafter re-read every answer line in `pdf079-082` and `pdf083-086` and confirms **my table is
+right in all six, character for character** — including the lower-case `because` in Q642 and `VCs`
+throughout. A machine check confirms each parenthesis appears verbatim, none carries the standard
+marker, and each ends with the alternative paragraph. **21 + 6 = 27.**
+⚠️ **The brief's table TRUNCATED Q642's parenthesis** (it stopped at *"interferes with inhalation"*,
+dropping *"causing dyspnea that is most prominent upon exertion"*). **Corrected in the brief.**
+
+### ⚠️⚠️ A NEW CONTRADICTION SHAPE: THE COURSE CONTRADICTS THE BANK'S OWN PRINTED RATIONALE
+
+**Q639 and Q641.** Both stems say *(RLN injury)* and both printed parentheses say **cadaveric
+position**. `L11) Vocal cord paralysis.txt`:72 and :78 print, verbatim:
+`• Paralyzed VC fixed in the Paramedian position.` (RLN) and
+`• Paralyzed VC fixed in the Cadaveric position.` (**vagus**). **Verified in the cache myself.**
+**Both KEYS still match `L11`'s own presentation rows, so the keys stand** — it is the bank's
+*explanation*, not its answer, that the deck contradicts. Recorded in full in `enthd-thr-639`.
+
+⚠️ **This is a fourth shape, and it only exists because the bank turned out to print explanations at
+all.** The project now holds: deck-vs-book · deck-vs-bank-KEY (Q397) · bank-vs-bank key divergence
+(Q448) · **and deck-vs-bank-RATIONALE.**
+
+**Q642 is the plainer kind — the course contradicts the KEY.** `L11`:106–108 gives
+**Abductor Paralysis · Unilateral = "Pass unnoticed · Mild aspiration"**; the bank keys *exertional
+dyspnea*. Key held as printed, slide quoted.
+
+### Also from batch 7
+
+- **Corrections to my prompt: Q616, Q617 and Q618 ARE staged** (I said they were not) and **Q606 is
+  staged** (only Q607 and Q608 folded). All three image questions drafted from printed text only,
+  no `image` field, **nothing claimed about what the photograph shows** — and all three are
+  answerable from the stem, which each entry notes.
+- **Q636's key prints *"Total lumpectomy + Chemotherapy"*** — a breast word in a laryngeal question.
+  **Transcribed as printed**, noted.
+- ⚠️ **A deck-versus-deck contradiction, recorded not corrected:** `L8` makes MAP a third category
+  **beside** Organic; `L2` files it **inside** the organic group, and their membership lists differ
+  (`L2` adds fibrosis and sulcus, `L8` adds Reinke's oedema and contact granuloma). `L2`'s reflux
+  slide also says GERD *"Causes most of MAP lesions"* while Q646 keys **voice abuse**. Both recorded
+  in `enthd-thr-646`; key held.
+- **Precise absences:** `plakia`/`precancer`/`premalignant` = **zero across all 35 decks** · the
+  **side** of RLN injury at thyroidectomy · a **timing** rule for paediatric microlaryngeal surgery ·
+  the **left posterior lateral quadrant** of the subglottis · the juvenile-vs-adult malignant-
+  potential comparison for RRP · the **site** of a dermoid cyst in `L5`. ⚠️ **`Interferon` on `L2`'s
+  RRP list: the grep hit was OPENED and it is `L6`'s HAEMANGIOMA treatment list — a different
+  disease.**
+- ✅ **Batch 7 independently confirms batches 1–6 all use the `enthd-` prefix**, closing out batch 5's
+  incorrect report.
+
+## §15aa — the 211 Throat entries are SPLICED and the app BOOTS (2026-08-24)
+
+**`Q_ENT` 2,005 → 2,216. Corpus 2,464 → 2,675 questions.** Text-level insert before the closing
+`];`, so all 2,005 held entries keep their exact hand-written formatting and escaping — the file is
+never re-serialised on this project.
+
+**Pre-splice dead-id check, run against the fold map rather than a memory of it:** every
+`enthd-(ear|nose|thr)-<n>` reference inside the eight draft files was matched against the 83 folded
+House numbers. **Zero hits** — no drafted block cites an id that a fold is about to retire. Q635 was
+already repointed to `entqb-thr10-535` when the missed fold was caught, and this re-run confirms it
+from disk rather than from the note that said so.
+
+**The splice harness refuses to write on any of four conditions**, each one a bug this project has
+actually shipped: the merged file failing to parse · the entry count not landing on
+before + drafted · a sparse hole or an id-less entry (indexed explicitly — `Array.filter` skips
+holes and can never see one) · a duplicate id. All four passed.
+
+**Post-splice corpus check, on the file that shipped rather than on the drafts:**
+
+- every `answer` indexes a real option, over all 2,216;
+- **zero dead backticked ids** across every `explanation` and `source` in the file;
+- bank tallies through `banksOf`, never `bankOf` — ENT alone: **house 561 · endpoint 615 ·
+  gradegain 1,101**. House was 350; 350 + 211 = 561. ✅
+- 30 chapters in use, unchanged.
+
+**Boot, headless Chrome, `file://`, the real thing:**
+
+`errs 0 · sheets 2 · rules 876 · media54 3 · modules 4 · chapters 153 · questions 2,675 · cases 89 ·
+theory 153 · sections 1,603`
+
+**0 console errors, 876 CSS rules, three `max-aspect-ratio:5/4` blocks — the correct count.** Only
+the question total moved; everything else is byte-for-byte the 2026-08-23 figure, which is what a
+pure content splice should look like.
+
+### The tail is staged, and the parser is faithful where it counts
+
+`Q686–Q724` and `S1–S110` parsed from the four tail transcripts: **149 questions, ZERO unparsed,
+both ranges complete with no absences, no repeated label, and every key in range.**
+
+⚠️ **The two sections' numbering overlaps in principle** — the fourth section restarts at 1 — so the
+staging tags `sec` explicitly (`main` / `S`) instead of leaning on the fact that the ranges happen
+not to collide. The bank printing the number 212 twice already cost this project one silently
+dropped question; keying by a bare number is the same mistake in a different coat.
+
+⚠️ **One question has THREE options and it is not a parse loss.** `S83` (p.198) prints a, b and c
+and no d — the transcriber verified it at `-r 300`, recording that a blank line follows option c
+before the answer. The parser was widened four times for exactly this failure shape, so a short
+option list is now guilty until checked; this one was checked and is innocent. **The bank is what it
+prints.**
+
+**70 of the 149 stems opened with a `*(printed N.)*` transcription annotation** — provenance, not
+stem text. Moved to a `printedLabel` field rather than deleted, and the options were checked
+separately and carry no markup at all.
+
+## §15bb — the tail sweep: the fourth section is 100 % duplicated, and it is not a surprise
+
+`sweep3.js`, the 149 staged tail questions against all 2,216 held ENT entries, plus a self-sweep.
+**394 candidates. By stage: A 79 · B 30 · C 110 · D 6 · E 123 · F 46.**
+
+| | any hit | A/B/D | none |
+|---|---|---|---|
+| **Fourth section S1–S110** | **110 of 110** | **100** | 0 |
+| **Main run Q686–Q724** | 26 of 39 | 9 | 13 |
+
+**Every single question in the fourth section matches something already held, and ninety-one per cent
+match at stage A, B or D — the three stages that do not need a human to guess.** The section is
+titled *Selected questions published by the department* and it re-publishes departmental items; the
+sweep now says so with a number instead of a warning. **The nine main-run A/B/D hits are
+Q686/687/704/705/706/707/712/713/722.**
+
+### Three instrument changes, each one paid for earlier in this run
+
+1. ⚠️ **The `keycore.length > 3` guard is GONE.** In `sweep2.js` it silently switched stages B and C
+   off for any key reducing to ≤3 characters — 31 of 294 questions, and the report still looked
+   complete. **A guard that silently disables a stage is worse than a missing one.**
+2. **`norm.js` does the comparing**, so a reprint's defects cannot defeat a match: it strips
+   whitespace and punctuation entirely, de-accents, maps British→American, and allows a
+   length-scaled edit distance on option strings. It earned that in the self-sweep — see below.
+3. **No top-N cutoff anywhere.** The E/F cutoff hid three Nose folds once.
+
+### The self-sweep is the part that vindicates the normaliser
+
+**16 internal pairs among the 149**, and the ones worth naming are the ones a naive comparison
+would have missed outright:
+
+- `S21` ↔ `S70` — **the two printings' defects are SWAPPED**: `hearing losscan` + `neuroma (space)`
+  against `hearing loss can` + `neuroma(no space)`. Whitespace is not stable across reprints.
+- `S19` ↔ `S95` — `diseasesEXCEPT` against `diseases EXCEPT`. ⚠️ **CORRECTED in §15ff: the STEMS
+  match to the character, but option d is *Post-tonsillectomy* in one and *Perichondritis* in the
+  other. TWO QUESTIONS, not a reprint** — and the endpoint bank already keeps both variants
+  deliberately.
+- `S18` ↔ `S67` — `Bell’s palsy` against **`Bell , s palsy`**.
+- `S8` ↔ `S101`, `S9` ↔ `S104`, `S24` ↔ `S61`, `S25` ↔ `S65`, `S26` ↔ `S68`, `S59` ↔ `S106` —
+  straight reprints inside one section. ⚠️ **`S1` ↔ `S78` WAS LISTED HERE AND IS NOT ONE** — S1
+  offers *Greater palatine artery* where S78 offers *Labial branch of the facial artery*, a replaced
+  distractor, and they fold onto two different held entries. It scored 0.60, which is a summons to
+  read; I filed it as a reprint instead. **A stem match is not a question match — the options are
+  half of the question.**
+
+⚠️ **Three of the sixteen are DELIBERATE PAIRS, not duplicates.** `S44` *Chronic retro-pharyngeal
+abscess* against `S81` *Acute* (0.60) · `Q691`/`Q692`/`Q693`, a graded neck-trauma series where each
+stem negates the last · `Q718`/`Q723`, *caused by* against *most common cause of*. **The
+deliberate-pair rule outranks the reprint rule; a score never decides a fold.**
+
+**⚠️ CORRECTED — the sentence that stood here said the ranking scored those three low, and for one
+of them that was FALSE.** `Q692` ↔ `Q693` came out at the TOP as `option-set + key`, because
+`sameOpt` collapsed the keys `II` and `IV`. The verdict was right and the instrument was wrong, which
+is the worse of the two ways to be right. **After the §15dd guard the count is 15, not 16**: the
+false pair is gone and `Q691` ↔ `Q692` sits where it belongs, at stem 0.73. The corpus figures below
+are the pre-guard run; the post-guard totals are `A=79 B=29 C=111 D=6 E=123 F=46`, same 394.
+
+### ⚠️ A probe of mine reported the main run as having ZERO hits, and it was the probe
+
+The first tally regex accepted only the `S<n>` label form and silently dropped every `Q<n>` line, so
+it printed **`MAIN RUN Q686-Q724: any hit 0/39`** — a clean-looking result that was pure instrument
+failure. It was caught only because the parsed-line count did not reconcile with the sweep's own
+`136 of 149`. **The fix prints how many of the 394 lines it actually parsed**, so the next silent
+drop shows up as arithmetic rather than as good news. Same family as `hparse.js` returning
+0 questions and 0 unparsed: **a report that looks complete is not evidence that it is.**
+
+### All six stage-D hits are DELIBERATE PAIRS — the tail has no key divergence at D
+
+Stage D is *identical option set, different key*, the shape that has produced every bank-vs-bank key
+clash so far. In the tail it produced **six hits and not one of them is a divergence** — every one
+is two different questions sharing one answer menu, which is exactly what a well-built bank does:
+
+- **A THREE-MEMBER neck-trauma series**, one menu, three vignettes, three different right answers:
+  no facial affection → *Indirect mirror laryngoscopy (transoral)* · cannot open the mouth →
+  *Flexible fiberoptic laryngoscopy (transnasal)* (`enthd-thr-685`, already spliced) · Q687, which
+  adds the same obstruction and keys **Tracheostomy**. `entqb-thr7-373` is the Grade Gain printing of
+  the first. ⚠️ **This is the series my earlier record mis-paired** — I had put `entqb-thr7-373`
+  against Q685; the corrected reading puts it here, and the sweep now shows the whole family at once.
+- **`S8`/`S101` against `entep-nose-19`** — one rhinorrhoea menu, two vignettes: seasonal with
+  sneezing keys *Allergic rhinitis*, unilateral and worse on bending forward keys *CSF rhinorrhea*.
+- **`S107` against `entep-throat-63`** — an abscess menu shared by a vignette and a
+  complication question; not the same item in any sense.
+
+**The deliberate-pair rule outranks the reprint rule, and here it decides all six.** A stage-D hit is
+a summons to read, never a verdict.
+
+## §15cc — the 83 folds are APPLIED, and the harness had to be widened twice first
+
+**82 distinct held entries now carry `house`** (83 folds; Q523/Q535 share a target, and Q466 folds
+into a House entry so it was `source`-only). Verified by reading every target back out of the file
+after writing: **82 of 82 carry the bank, 0 missing.** ENT `house` 561 → **642**; the arithmetic is
+81 newly-tagged plus `enthd-nose-337`, which already carried it. Boot after: **0 console errors,
+2,675 questions, 876 rules, 3 `5/4` blocks** — only the bank tallies moved, which is what a fold is.
+
+### ⚠️ `foldpatch.js` would have refused half the run, and the reason is 78 entries deep
+
+`appendToField` matched `\n  <field>:'` — the SINGLE-quoted form only. **78 entries in
+`questions.ent.js` quote `source`/`explanation` with DOUBLE quotes** because they carry unescaped
+apostrophes: every `entqb-thr1-*`, every `entqb-nose8-*` and `entqb-nose9-*`, and eleven endpoint
+entries. Two of them — `entqb-thr1-31` and `entqb-thr1-33` — are fold targets, so the harness
+aborted with `could not locate the end of source` and wrote nothing. **It failed safe, but it
+stopped the whole half.** Fixed by capturing whichever quote opens the field and scanning for that
+one; both halves then dry-ran clean, and the previously-clean half was re-run to prove the widening
+broke nothing.
+
+### ⚠️⚠️ THE HEREDOC BACKSLASH TRAP FIRED A FOURTH TIME — INSIDE A PLAIN `cat > file <<'EOF'`
+
+`handedit.js`, the harness for the content-bearing half of a fold, was written with
+`'([\s\S]*?)'`. The quoted heredoc collapsed every `\` to `\`, so the JS string literal `'\s'`
+became plain `s` and the character class **shipped as `[sS]`**. The regex matched nothing and the
+harness aborted on its first edit. **A QUOTED HEREDOC IS NOT PROTECTION WHEN ITS BODY IS
+JAVASCRIPT** — the collapse happens before node ever sees the source. Fix: build every backslash
+from `String.fromCharCode(92)` and every newline from a real newline character, so no source string
+contains a backslash for the heredoc to eat.
+
+**And underneath it a second fault the first one was hiding: the data file is CRLF.** The field
+terminator was `,` + newline, but the bytes are `,` + CR + LF, so the alternation never fired.
+⚠️ **The opening side of the same pattern matched perfectly, because the CR sits BEFORE the newline
+and not after it** — one pattern, right at one end and wrong at the other, and the only symptom was
+`could not locate field options` on an entry whose `options:` line is plainly there.
+
+### The eleven content-bearing edits, each read before and after
+
+`entqb-thr2-83` +`CT neck` (five options; `answer` 3 → 4, **the keyed TEXT does not move**) ·
+`entqb-thr4-237`, `entqb-thr1-33`, `entqb-thr1-31`, `entep-nose-41`, `entep-throat-38`,
+`entep-ear-52` each +`None of the above` · `entqb-thr10-531` stem replaced with House's fuller
+printing (dysphonia, stridor, lateral neck swelling) · `entep-nose-40` **reconstruction replaced
+with House's printed vignette** · `entep-nose-41` bracket rewritten.
+
+⚠️⚠️ **THE RECONSTRUCTION WAS NOT JUST THIN, IT WAS AN ANSWER LEAK.** `entep-nose-40`'s
+reconstructed stem invented *a nasopharyngeal mass* and *bleeding actively* — **neither is in any
+bank** — and `entep-nose-41`, the next question in the chain, keys **Juvenile nasopharyngeal
+angiofibroma**. The invented finding handed over the answer to the following question. House's
+printed vignette gives the history and withholds the examination finding, which is what the item is
+for. **This is the `imgAlt` rule in a stem: a restatement must not answer the question.**
+
+### ⚠️ Three of my briefs were wrong again, and the agents that read the source caught all three
+
+1. **Only ONE of the four "reconstructed stems" is replaceable, not four.** The brief and the sweep
+   file both say House prints the vignette for `entep-nose-40/41/42` and `entep-mfe5-22`. **It does
+   not.** House prints a real vignette for Q613 only; **Q614, Q615 and Q645 are back-references** —
+   *In the previous case…* — so three of the four bracketed restatements remain necessary. The fold
+   removes **one** recorded weakness, not four.
+2. **Content-bearing list C was short by two.** `entqb-thr1-33` (Q473) and `entqb-thr1-31` (Q475)
+   both add *None of the above*; the sweep file lists them, my brief did not.
+3. **"House is the fuller printing" is not a rule and it goes both ways.** `entqb-thr8-412` (Q657)
+   and `entqb-thr8-418` (Q660): **House prints THREE options and DROPS the held fourth** (*Any type
+   of the above*, *None of the above*). Grade Gain is fuller there, so nothing changed. Likewise
+   `entqb-thr10-553` and `entqb-thr10-551`, where House prints the shorter stem, and **`entep-ear-52`,
+   which is fuller in DIFFERENT PLACES** — endpoint prints *on the left side* and *the tube was clear
+   and well-positioned*, the two facts that exclude options a and b, and House omits both. **Keep the
+   fuller printing means field by field, not entry by entry.**
+
+Also corrected from the transcript, not from the map: **Q466's earlier printing is book p.96, not
+p.101** — the sweep prose had it wrong and the held citation was right all along.
+
+### ⚠️⚠️ THE SHORT-KEY FIX HAD ITS OWN BLIND SPOT, AND IT WAS THE SAME SHAPE AGAIN
+
+`sweep2.js` disabled stages B and C for any key whose core was ≤3 characters. `shortkey.js` was
+written to re-run exactly those — **but `core()` also drops every word of two letters or fewer, so a
+key of `CT` or `US` reduces to the EMPTY STRING, and `shortkey.js` skips empty keys explicitly**
+(`if (h.kc !== skc || !skc) continue`). **The questions with the shortest keys of all were never
+re-run, by the very tool built to re-run them, and both reports looked complete.**
+
+**18 of the 302 staged had an empty key core**: Q392, Q393, Q394, Q422, Q428, Q447, Q463, Q491,
+Q493, Q494, Q544, Q585, Q603, Q624, Q676, Q681, Q692, Q693 — keys like *CT*, *US*, *3D CT*,
+*Type 3*, *A & C*, *B and C*, *II*. `emptykey.js` re-ran all of them through `norm.js`, which
+compares option TEXT and has no length filter anywhere.
+
+✅ **Result: no fold was missed.** Every strong hit is either the question's own spliced entry
+(Q392 ↔ `enthd-nose-392` and so on — expected, the corpus now contains the staged run) or an
+already-adjudicated fold (Q603 → `entqb-thr6-319`, which is in the map). The rest are questions
+sharing an enumerated menu — *Type 1/2/3*, *CT* — which is a menu collision, not a duplicate.
+**This is now a measured zero instead of a skipped one, and that is the whole difference.**
+
+## §15dd — ⚠️⚠️ THE TOLERANCE THAT CATCHES A TYPO ALSO COLLAPSES AN ENUMERATION
+
+The empty-key re-run put `norm.sameOpt` under a magnifying glass and it failed the plainest test
+there is. Measured, before the fix:
+
+| Pair | `sameOpt` said |
+|---|---|
+| `Type 1` / `Type 3` | **SAME** |
+| `Type 3` / `Type B` | **SAME** |
+| `Grade II` / `Grade IV` | **SAME** |
+| `A & C` / `A & B` | **SAME** |
+| `B and C` / `B and D` | **SAME** |
+
+**Every one of those is a pair where the single differing character IS the answer.** The
+length-scaled edit distance was built to survive `Peumothorax`, `Stidor` and `Plummer-Vinson`; on a
+short enumerated key it does the opposite of its job. **And it had already produced a false verdict:
+the tail self-sweep labelled `Q692` ↔ `Q693` an `option-set + key` match, and their keys are `II`
+and `IV`.** The conclusion I drew from it — a deliberate graded series — was right, but it was right
+by reading, not because the instrument said so. **A label that is wrong for the right answer is
+still a wrong label.**
+
+Three guards, each aimed at one shape, applied before the edit distance ever runs: **the digit
+strings must match** (`type1`/`type3`, `ct`/`3dct`) · **a trailing roman numeral must match**
+(`gradeii`/`gradeiv`) · **a difference confined to the FINAL character, where that character is a
+digit or a letter a–e, is an option label, not a typo** (`bandc`/`bandd`). Plus an exact-match floor
+under five characters (`ac`/`ab`, `ct`/`us`, `high`/`low`). **40 test cases now pass** — the
+original 15 plus 25 written for this defect — and every recorded typo still collapses.
+
+### The re-run proves the guard COST NOTHING and BOUGHT a real divergence
+
+Tail sweep before: `A=79 B=30 C=110 D=6 E=123 F=46`. After: `A=79 B=29 C=111 D=6 E=123 F=46`.
+**Total unchanged at 394 — nothing was lost. One hit moved from B to C**, and it is the point:
+
+**`Q706` (p.177) vs `entqb-thr11-580`, the Talbot-plateau law.** Same stem, same key
+(*Retina can only perceive 5 images / second*) — but House prints two distractors as
+**1 image** each 0.5 / 0.4 seconds where Grade Gain prints **2 images**. The old comparison declared
+those options identical and reported a clean stage B; the new one keeps the fold and **shows the
+divergence**. Self-sweep 16 → 15, the one removed being the false `Q692`/`Q693` key match, and
+`Q691` ↔ `Q692` correctly demoted from `option-set + key` to a stem-similarity hit.
+
+**A guard that hides a difference is the same defect as a guard that disables a stage — the report
+still looks complete.**
+
+### Open, recorded, not acted on
+
+- **Q414 → `entep-nose-82`**: House prints the fuller vignette — *an attack of severe epistaxis*,
+  *his 4th nosebleed attack this year*, a mass *with dilated vessels on its surface* — against
+  endpoint's bare wording. Recorded in `source`; no stem written.
+- **Q561 → `entqb-thr4-243`**: House prints *skin rash as obvious in the attached photo*. **A
+  clinical photograph exists in the source and no crop is held.** Flagged, not acted on.
+- **Q655 → `entqb-thr8-405`**: the held entry records that Grade Gain prints **no question
+  sentence** and that one was borrowed from `entqb-thr8-415`. **House prints one — *How to manage
+  this patient?*** — so the borrowed sentence could be replaced by a printed one. Not done.
+- **`entep-nose-42` and `entep-mfe5-22`** still carry bracketed restatements; both banks
+  back-reference, so nothing printed can replace them.
+
+## §15ee — the fourth section is the ENDPOINT BANK, printed again
+
+The tail adjudication opened with a measurement rather than a guess. Of the 149 staged questions,
+**60 have a best hit at stage A with an identical option set and an identical key — and 56 of those
+60 target an `entep-*` entry.** Widening from best-hit to any A/B hit: **100 of the 110
+fourth-section questions match an ENDPOINT entry.**
+
+**That is the explanation of the 100 % duplication rate.** The section's display title is *Selected
+questions published by the department* and the endpoint file **is** the department's own question
+set, so `Selected department MCQs` is very largely the endpoint bank reprinted inside a commercial
+revision book. **It adds almost no new content — what it adds is a second printing with its own
+defects**, which is precisely the material `norm.js` was built to see through.
+
+⚠️ **Four held entries are each targeted by TWO different S questions** — `entep-nose-14`,
+`entep-nose-16`, `entep-ear-80`, `entep-ear-81` — so the fourth section also duplicates *itself* on
+top of reprinting the endpoint file.
+
+### The 24 raw-text differences among the 60 stage-A folds, all read
+
+Every one was punctuation, capitalisation, an apostrophe style, or a missing space. **Eight differ by
+a trailing colon and nothing else.** The rest: `acutetonsillitis` · `thefollowing` · `afterone week`
+· `except?` against `EXCEPT:` · a space before a comma (`over cheek ,`, `tonsillectomy ,`) · and
+**`Bell’s palsy` (S18) against `Bell , s palsy` (S67)** — the same question spelled two ways inside
+one section, folding into two different endpoint entries. **Not one changed meaning. A printing
+defect is not a difference.**
+
+### ⚠️⚠️ S62 — IDENTICAL QUESTION, IDENTICAL MENU, OPPOSITE KEYS, AND THE COURSE EXPLAINS THE SPLIT
+
+*The causative organism in acute necrotizing otitis media is:* — House (book p.194) keys
+**Pseudomonas**; `entep-ear-86` keys **Haemolytic streptococci group A**. Stage A: word-for-word
+stems, identical option sets. **HOLD BOTH; neither key moves and neither is disputed.**
+
+Read in the caches, not asserted:
+
+- `L17,18) Otorrhea and otalgia`:182 — **`Malignant external otitis (necrotizing external otitis,
+  skull base osteomyelitits)`** — and :190, **`Causative organism usually Pseudomonas aeroginosa`**,
+  on the same bullet block.
+- `L21.1) acute otitis media`:36 — the bacterial causes of acute suppurative otitis media, with
+  **`B hemolytic strept` FIRST**, ahead of *Strept pneumoni* and *H- influenza*; **`Measels`** is a
+  viral cause on the same slide.
+- ⚠️ **The phrase *acute necrotizing otitis media* appears in NO cached deck.** `necrotiz|necrotis`
+  returns exactly two hits across all 34 ENT decks — the external-otitis line above, and
+  `necrotizing vasculitis` in `L30) Rhinitis 2`. **The disease is not taught under this name.**
+
+**The two banks split along a naming collision: in this course the word *necrotizing* belongs to the
+EXTERNAL disease, and Pseudomonas belongs with it.** The third candidate makes it visible —
+`entqb-ear2-39` asks for the organism of *malignant otitis externa* and keys **Pseudomonas
+aeruginosa**, the same option text House keys on the media question. **Recorded, not resolved.**
+
+### ⚠️⚠️ And the held entry had already NAMED this exact trap, before House was ever read
+
+`entep-ear-86`'s explanation, written in an earlier session from the slides alone, reads:
+
+> The critical discrimination is with **necrotizing (malignant) otitis externa**, which sounds almost
+> identical but is a different disease entirely: **Pseudomonas aeruginosa**, in the **external**
+> canal, in elderly diabetics. Reading "media" versus "externa" is the whole question.
+
+**That is a description of House's key, written before House existed in this corpus.** The entry
+identified the trap, named the organism the trap produces, and said the whole question turns on one
+word — and the second bank then keyed the trap. **This is the strongest cross-bank evidence the
+project holds, precisely because it is not an argument built after the fact: the prediction was
+already in the file.**
+
+The divergence is therefore noted from **three independent directions**: the two decks (`L17,18`:182
+and :190 against `L21.1`:36), the sibling question `entqb-ear2-39` keying Pseudomonas for the
+*externa* item, and `entep-ear-86`'s own standing warning. **And the `answer` still does not move on
+either side.**
+
+### The tail carries FIVE image questions, and the probe that found them found seven
+
+`photo|picture|figure|image|attached|opposite fig|radiograph` over all 149 staged questions returned
+**seven hits, and two are the substring trap**: `Q706` matches on *"Retina can only perceive 5
+**images** / second"* and `Q707` on *"Poor **image** quality"* — the word is in the options, about
+image perception, not about a printed figure. **CHECK WHAT A SUBSTRING ACTUALLY MATCHED**, the same
+lesson `Rett` inside *Tourette* paid for once.
+
+**The five real ones are all in the main run, all barium swallow or endoscopy, book pp.174–176:**
+
+| | Book p. | What is attached |
+|---|---|---|
+| `Q694` | 174 | barium swallow, IDA vignette |
+| `Q695` | 174 | barium swallow, cervical dysphagia with globus |
+| `Q696` | 174 | barium swallow, *"attached in the photo ahead"* |
+| `Q697` | 175 | **barium swallow AND endoscopic pictures**, no vignette at all — the figures ARE the question |
+| `Q702` | 176 | *"given the opposite figures"*, a back-reference to Q700's vignette |
+
+⚠️ **`Q697` cannot be written without its crops** — its stem is only *"The attached barium swallow and
+endoscopic pictures refer to which condition of the following?"*. **The S section has none**, which
+fits the reprint finding: a reprint of a text question set carries no new figures.
+
+⚠️ Standing rules for these five: `image` stores the **basename** and `qImgSrc()` builds the path ·
+`imgAlt` is required and **must not answer the question** — modality and view only, the detailed read
+belongs in `explanation` (this gave away six answers once) · **every crop is LOOKED at; no numeric
+check has ever caught a bad crop.**
+
+⚠️ **`Q697` also keys `Laryngeal web (Plummer vinson’s)`** — the bank's own parenthesis, on a laryngeal
+rather than a postcricoid web. **Noted, never disputed**; it goes in `explanation`.
+
+### Two citation forms for one book, both correct, and the split is clean
+
+**All 558 House-origin entries cite the book by its printed title — `Dr. HOUSE in ENT, End-of-round
+MCQs 2025, p.N` — with no exceptions.** The 84 entries that carry House as a *fold* cite it by
+filename, `d house ENT mcq.pdf` book p.N, **83 of 84**; the one exception (`entep-throat-103`) uses
+the title and reads better for it.
+
+That is a consistent rule, not a drift: **an entry leads with its own bank's citation, and a fold's
+appended note names the other bank's printing.** ⚠️ **Recorded so that nobody "fixes" one to match
+the other and churns 558 entries.** The tail's new entries take the **title** form, matching the 558.
+
+### The crop naming convention, read off the one House image entry that exists
+
+`enthd-ear-29` carries `image:'q-hd-29b'` and cites p.29 — so the pattern is
+**`q-hd-<book page><letter>`**, the letter distinguishing multiple crops on one page, and the
+filename is its own citation independently of which entry ends up holding it. (Peds House uses
+`q-pd-hd-*`; endpoint uses a bare `q-<page>`.) So the tail's five crops land as `q-hd-174*`,
+`q-hd-175*` and `q-hd-176*`.
+
+⚠️ **`Design\scripts\q-images.ps1` exists and does the detection, but `.ps1` execution is blocked by
+policy on this machine — it has to be passed inline.** ⚠️ **And it has only ever been shown a
+single-page template; this PDF is a TWO-PAGE SPREAD per rendered page**, so its detector will see two
+book pages at once and the `-Box` override is likely to be needed. **Every crop is LOOKED at anyway
+— no numeric check has ever caught a bad crop on this project.**
+
+### ⚠️⚠️ The fourth section reprints the book's OWN earlier sections too
+
+Two of the 60 stage-A fold targets **already carry `house`**, folded from the main run earlier the
+same day: **`entep-nose-58`** (main-run Q431, book p.116 — now also S33) and **`entep-throat-82`**
+(main-run Q622, book p.158 — now also S53). **`Dr. HOUSE in ENT` prints the same question in two of
+its own sections.** So those folds add a second House page to an entry that already cites one, and
+`addBank` is a no-op on both — the same shape as Q466 → `enthd-nose-337` in the main run.
+
+⚠️ **A count depends on its definition, so state the definition.** "Held entries targeted by two
+different S questions" is **four** counting best hits at stage A *or* B (`entep-nose-14` ← S4/S86 ·
+`entep-nose-16` ← S9/S104 · `entep-ear-80` ← S24/S61 · `entep-ear-81` ← S25/S65) and **two** counting
+stage A with the same key alone. Both numbers are right; a number without its definition is not.
+
+## §15ff — the tail is adjudicated: 149 verdicts, and the fourth section adds NOTHING
+
+**FOLD 124 · NEW 23 · HOLD BOTH 2.** No gaps, no overlaps, and every FOLD target verified to have
+been a real candidate on its own worksheet row.
+
+| | FOLD | NEW | HOLD BOTH |
+|---|---|---|---|
+| **Fourth section, S1–S110** | **108** | **0** | **2** |
+| **Main run, Q686–Q724** | 16 | **23** | 0 |
+
+**Not one new question in the whole fourth section.** The reprint finding of §15ee was a measurement
+of overlap; this is the verdict after every one of the 110 was read. `Selected department MCQs`
+contributes **two divergent keys and nothing else** — the rest is the endpoint bank, printed again.
+
+The 124 folds land on **115 distinct entries**; **nine entries take two tail questions each**
+(`entep-nose-5` ← S8/S101 · `entep-nose-14` ← S4/S86 · `entep-nose-16` ← S9/S104 · `entep-ear-57` ←
+S21/S70 · `entep-ear-80` ← S24/S61 · `entep-ear-81` ← S25/S65 · `entep-mfe4-3` ← S26/S68 ·
+`entep-throat-16` ← S59/S106 · `entep-throat-84` ← S58/S90), and **three already carry `house`**
+from the main run — the book reprinting itself.
+
+### The second HOLD BOTH: S63, and a key that was already on record as disputed
+
+`entep-mfe6-1`, *all of the following may be seen in the TUBOTYMPANIC type of CSOM EXCEPT* — four
+identical options in identical order. **House keys `High incidence of complications`; the endpoint
+printing keys `Profuse odourless otorrhoea`.** The agent verified House's letter on the printed page
+at `-r 500`, and noted that S63 is one of only two questions in its range marking options
+`a- b- c- d-`, so the letter was **read, not inferred**.
+
+⚠️ **The held entry already carries a `DISPUTED KEY` note from the end-of-ENT review, with four
+sources against it. House is a fifth printing keying the other option.** **And the `answer` still
+does not move** — a defective key is noted, never disputed. Both printings are kept.
+
+### ⚠️ An agent overturned me twice, and both times it was right
+
+1. **`S1` ↔ `S78` is NOT a reprint.** I had listed it among the "straight reprints inside one
+   section". Read: S1 offers *Greater palatine artery*, S78 offers *Labial branch of the facial
+   artery* — **a replaced distractor**, so two different questions, folding onto two different held
+   entries. The self-sweep had scored it 0.60 on stem similarity, which is a summons to read, and I
+   filed it as a reprint instead of reading it.
+2. **`S19` ↔ `S95` likewise.** Same stem to the character (`diseasesEXCEPT` / `diseases EXCEPT`) —
+   but option d is *Post-tonsillectomy* in one and *Perichondritis* in the other. **The endpoint bank
+   already keeps both variants deliberately** (`entep-ear-76` / `entep-ear-96`, "confirmed
+   2026-07-27"). Folding them would have destroyed a distinction the corpus had already ruled on.
+
+**Both were in my ledger as normaliser successes. The normaliser WAS successful — it correctly
+matched the stems. What I got wrong was reading a stem match as a question match.** A stem is not a
+question; the options are half of it.
+
+## §15gg — the comparator, rebuilt from measurement instead of a tolerance
+
+`norm.sameOpt` began as *strip everything, then allow 12 % edit distance*. That is a reasonable
+first guess and it was wrong in three separate ways, each found by a different pair of real
+questions, each fixed, and each fix wrong in turn until the last one.
+
+| Version | What it collapsed that it must not | Found by |
+|---|---|---|
+| whole-string 12 % tolerance | `Type 1`/`Type 3`, `Grade II`/`Grade IV`, `A & C`/`A & B` | the empty-key re-run |
+| + digit / roman / final-char guards | **`…with HIGH basic volume`** / **`…with LOW basic volume`** | the corpus self-sweep |
+| + "a short word present on one side only" | — but it SPLIT `from nose` / `from **the** nose` (S9, S104) | the fold-set diff |
+| + function-word exemption | **`Lies ANTERIOR to…`** / **`Lies POSTERIOR to…`**, options a and d of ONE question | the extra-risk suite |
+| **per-word tolerance, final** | nothing found | — |
+
+**The last change is the one that matters and it is a change of principle, not of threshold: stop
+measuring the tolerance over the whole string.** A typo lives in one word, so the tolerance belongs
+on the word. Content words are paired up in order and each pair must be identical, or a typo.
+
+### What counts as a typo, decided by measuring twenty real pairs rather than picking a number
+
+|  | lev | sorted-letter distance | first letter |
+|---|---|---|---|
+| **typos** — `morhexella`/`moraxella`, `moure`/`maure`, `haemophylus`/`haemophilus`, `aeuroginosa`/`aeruginosa`, `peumothorax`/`pneumothorax`, `herptic`/`herpetic`, `stidor`/`stridor`, `jugulodiagastric`/`jugulodigastric` | 1–2 | **1–2** | same |
+| **distinctions** — `upper`/`lower`, `major`/`minor`, `hypernasality`/`hyponasality`, `unilateral`/`bilateral`, `supraglottic`/`subglottic`, `anterior`/`posterior`, `inspiratory`/`expiratory`, `inner`/`outer`, `medial`/`lateral`, `benign`/`malign`, `before`/`after`, `polyp`/`nodule`, `acute`/`chronic` | 2–7 | **3–6** | often differs |
+
+**Edit distance alone cannot separate them** — `aeuroginosa`/`aeruginosa` is 2 and so is
+`hypernasality`/`hyponasality`. **Sorted-letter distance can:** a transposition or a doubled letter
+keeps the letter multiset, a swapped morpheme does not. **Nothing in the corpus lands between 2 and
+3, so the threshold sits in a measured gap rather than on a guess.** The first-letter test catches
+the one pair the gap would not — `nasal`/`basal`, one edit and two sorted.
+
+### The suite is now the project's fold history, runnable
+
+`normtest.js` holds **39 cases and every one actually occurred**: 16 defects that must collapse
+(including `Subglottic tumour`/`tumor`, the pair that SHIPPED unfolded) and 23 distinctions that
+must not (including `II`/`IV`, which produced a false `option-set + key` label, and `Post-tonsillectomy`/
+`Perichondritis`, the replaced distractor that makes S19 and S95 two questions). A twelve-case
+extra-risk set passes alongside it.
+
+### What the rebuild cost and bought, measured on the same data
+
+Tail sweep: `A=79 B=30 C=109 D=6 E=123 F=46`, **393 candidates against the original 394**. The
+stage-A fold set went **60 → 61: none lost, one gained.** The gain is `S72`, and it is the
+interesting one — **its fold target MOVED from `entep-nose-103` to `entep-nose-59`**, because
+`entep-nose-103` adds *"reducing Fehling's solution"* to the stem and is a different question. That
+is the recorded *"a hit names a sibling, not the NEAREST one"* fault, fixed at the source.
+
+⚠️ **And the agent had already caught S72 by hand**, naming `entep-nose-59` at stage A while the
+pre-repair worksheet ranked `entep-nose-103` above it at C/1.31. **Instrument and reader converged
+independently** — which is the only kind of agreement worth anything.
+
+## §15hh — the 25 tail entries to draft, chaptered from where the corpus already files the topic
+
+**23 NEW + the 2 HOLD BOTH = 25 entries.** Every chapter was taken from a measurement of the held
+corpus, never chosen by feel:
+
+| Topic | Chapter | Why |
+|---|---|---|
+| neck / laryngeal trauma (Q688, Q689, Q690, Q693, Q687) | `ent-stridor` | **14 of the 15 existing trauma questions are already there**; only one sits in `ent-vocal` |
+| dysphagia, barium swallow, Zenker, pyriform (Q694, Q696, Q697, Q699, Q700, Q702, +2) | `ent-dysph` | 34 existing against 7 in the next-largest chapter |
+| FEES, videofluoroscopy, swallowing assessment (Q708, Q710, Q711) | `ent-swallow` | every existing `FEES` and `videofluoroscop` question is there |
+| nasality and resonance (Q717 and four more) | `ent-phon` | `entqb-thr9-476`, *"all of the following are true about nasality"*, sits in `ent-phon`; the scattered `hypernasal` hits elsewhere are questions where it is a SYMPTOM of something else |
+| `S62`, `S63` | `ent-aom`, `ent-csom` | the chapter of the entry each one is held beside |
+
+⚠️ **`ent-swallow` and `ent-phon` split the same Grade Gain chapter** — `entqb-thr11-*` is
+`ent-phon` 15 · `ent-swallow` 5 · `ent-neck` 1 — so a swallowing-assessment question and a resonance
+question from adjacent pages belong in different chapters. **Chapter by content, never by the
+source's own chapter number.**
+
+### FOUR crops, not five
+
+`Q694` (book p.174) · `Q696` (p.174) · `Q697` (p.175) · `Q702` (p.176). **`Q695` needs none** —
+it folds into `entep-enr-37`, which **already carries `q-3044`**, a barium swallow for the same
+case. Checked rather than assumed.
+
+⚠️ **`Q697` cannot be drafted without its crops**: its entire stem is *"The attached barium swallow
+and endoscopic pictures refer to which condition of the following?"* — two figures, no vignette.
+The crops come from PDF pages 88–89 (book 174 is the left half of PDF 88, 175 the right half, 176
+the left half of 89), and the naming convention read off the one existing House image entry
+(`enthd-ear-29` → `q-hd-29b`) is **`q-hd-<book page><letter>`**.
+
+## §15ii — a standing rule was OVERRIDDEN once, deliberately, and here is the argument
+
+**The rule:** *a replaced distractor means the item asks something different, so it is NEW, not a
+fold.* It has decided dozens of verdicts on this project and it is not being weakened.
+
+**The exception: `Q721` → `entqb-thr9-473`, the most accepted theory of stuttering.** House prints
+**`Tissue chemistry`** where Grade Gain prints **`Organic theory`** — a genuine option replacement,
+not a spelling variant. Verified in the main session, not taken on the agent's word:
+
+- the stems ask the same thing (*"Which of the following is the most accepted theory of
+  stuttering?"* against *"What is the most accepted theory of stuttering?"*);
+- **the keyed text is the same** — `Genetic` / `Genetic theory` — though the option ORDER differs
+  (House puts it at b, Grade Gain at d);
+- **`tissue chem`, `organic theor` and `genetic theor` return ZERO hits across all 34 cached ENT
+  decks.** Neither the replaced option nor the one replacing it is taught anywhere in the course.
+
+**The rule's rationale is that a swapped distractor changes what the item asks. Here it cannot: the
+swap is between two options the course never mentions, on either side of a key that does not move.**
+So the item is folded and **the variant is recorded in `source`, not discarded** — a student meeting
+either printing sees both.
+
+⚠️ **Recorded as an override, not as a precedent.** A rule bent silently is a rule lost; the next
+replaced distractor is NEW unless someone makes this argument again and it holds.
+
+### The other two non-keyed divergences in the same batch, both folded and both named
+
+- **`Q706` → `entqb-thr11-580`** — *1 image* against *2 images* in two distractors. The keyed text is
+  identical, and the held entry's own source already records that its option (b) is arithmetically a
+  second correct answer (2 ÷ 0.4 = the key's own 5/second). **House's singular form makes the flaw
+  Grade Gain's alone**, and `L8` writes *"1 image per 0.2 seconds or 5 images per second"* — the
+  lecture's own phrasing.
+- **`S21`/`S70` → `entep-ear-57`** — option c replaced (*Bilateral wax* against *Unilateral secretory
+  otitis media*). ⚠️ **Both were drafted NEW and then overturned by the held entry's OWN `source`**,
+  which records endpoint printing that variant at p.366 and folding it already. **The corpus knew
+  before the sweep did.**
+
+## §15jj — the 124 tail folds are APPLIED
+
+**115 patches written, 115 applied, and all 115 distinct targets verified carrying `house` by reading
+them back out of the file.** ENT `house` 642 → **755** (+113: 115 targets less the two that already
+carried it). Boot after: **0 console errors, 2,675 questions, 876 rules, 3 `5/4` blocks** — only the
+bank tallies moved, which is what a fold is. `Q_ENT` unchanged at 2,216 throughout; `foldpatch.js`
+reported zero collateral changes and zero holes on both halves.
+
+### ⚠️ I split the halves by target order and told each agent the wrong thing about its own half
+
+The prompt told half 2 it would hold *"most of the main-run folds"*. **It holds none** — all 16 Q
+folds are in half 1, and half 2 is 59 S-rows. So the three specific warnings I attached to half 2
+(the `Q706` 1-vs-2 images divergence, `Q691`'s `III`/`Grade III`, `Q723`'s `SNHL`) **were aimed at an
+agent that could not act on any of them**, and half 1 handled all three without being told. Both
+agents said so plainly. **Splitting a work-list by an index is not splitting it by content, and the
+prompt should describe what the file HOLDS, not what I expect it to hold.**
+
+### ⚠️ And the `printedLabel` claim in my brief was wrong — checked three times, by three parties
+
+The brief said *"where `printedLabel` is present, the page prints a different number from the
+label"*. **Both agents checked their own rows programmatically and both reported it false**, and I
+then checked all 149: **70 rows carry a `printedLabel` and 69 are exactly the label's own number with
+a trailing dot.** The annotation exists only because the fourth section restarts its numbering at 1.
+
+**The one exception is not a different number — it is the same number printed twice.** `S5`
+(book p.183) prints **`5. 5.Cacosmia is:`**, verified by the transcriber at `-r 300`. ⚠️ **And
+finding it exposed a staging fault: `S5`'s stem still carried the transcriber's inline warning**,
+because the annotation stripper only removed a LEADING `*(printed N.)*` and S5 has a second note
+after it. One row in 149, **found by a digit check on a metadata field rather than by looking at
+stems** — repaired, and the note moved to its own field.
+
+### What the second bank settled, corroborated or failed to settle
+
+- ✅ **`entep-throat-87` / S83 — a SECOND bank prints only THREE options**, a/b/c with no d, verified
+  at `-r 300`. **That settles it: the missing fourth option is the source's, not a transcription
+  loss.**
+- ✅ **`entep-throat-86` / S82 — a third independently corrupted copy of one line.** Endpoint prints
+  *Maure's*, Grade Gain prints *Moure's* but misprints *Strider*, **and House alone gets both words
+  right.** Three printings, three different defects, one correct.
+- ⚠️ **`entep-throat-77` / S47 — House reproduces the ambiguity instead of settling it**: it prints
+  the disputed key endpoint's way *and* omits Grade Gain's qualifier *regular*. Noted, not disputed,
+  not moved.
+- ⚠️ **`entep-throat-17` contradicts itself** — its `source` says the fuller wording *"Drainage is
+  Peroral without general anaesthesia"* "is the one kept above", but option D carries only *"Drainage
+  is Peroral"*. S49 reprints the fuller form. **Recorded; nothing changed on the strength of a fold.**
+- **Five of half 2's ten key-text differences are the ENDPOINT FILE'S OWN second printing**, already
+  documented in the held entry's `source`. **House is reprinting endpoint's variant, not diverging
+  from it** — which is the reprint finding showing up one entry at a time.
+
+### ⚠️ A marker now names one of two banks — left alone, deliberately
+
+**46 of half 2's 57 targets carry *"Written for this bank — the endpoint file prints no explanation
+here."*** Those entries now belong to two banks, and **House prints no box either** (confirmed across
+all three fourth-section transcripts: not one boxed explanation). **The marker stays literally true,
+so it stays** — rewording 46+ entries is churn, and each `sourceAppend` already records that House
+reprints the item. **Recorded as a decision so the next reader does not "fix" it.**
+
+---
+
+## §15kk — the shipped duplicate is merged, and the four tail crops are cut (2026-08-24)
+
+Two jobs ran in parallel and both are done and verified. This section records what changed in the
+data file, what the crops contain, and four corrections that came back with them.
+
+### The merge: `enthd-thr-648` → `entep-throat-65`
+
+The only stage-A cross-bank duplicate in 2,216 entries, and the second fold on this project defeated
+by **British-versus-American spelling** (*Subglottic tumour* / *tumor*). Applied by a purpose-built
+harness, `mergeapply.js`, because **`handedit.js` could not be used: it holds the entry count, and a
+delete moves it.**
+
+Three operations, every one guarded:
+
+1. **`entep-throat-65` rewritten** — `explanation` 2,861 → 5,423 chars, `source` 2,097 → 4,244,
+   `objective` 187 → 310. Nothing else moved: `bank:'endpoint'`, `alsoIn:['gradegain','house']`,
+   `module`, `chapter:'ent-stridor'`, `stem`, `options` and `answer:1` are byte-identical, checked
+   **after parsing**, field by field, against the pre-edit object.
+2. **`enthd-thr-648` deleted whole** — 4,437 chars of block plus its `,` and blank line. Entry count
+   **2,216 → 2,215**, holes 0, and the harness refused to proceed until the bytes after the deleted
+   block were proved to be the next entry's opening brace.
+3. **`enthd-thr-649` repointed** — 2 occurrences, one in `explanation` and one in `source`, both in
+   closing `Cross-reference:` lists. `entep-throat-65` was verified absent from both first, so no
+   duplicate reference was created.
+
+**Measured after:** collateral changes to untouched entries **0** · dead backticked ids **14 before,
+14 after** · entries still backticking the folded id **none** · ENT bank tallies
+**house 754 · endpoint 615 · gradegain 1,101**. Boot from `file://`: **0 console errors, 876 rules,
+3 `max-aspect-ratio:5/4` blocks, 4 modules, 153 chapters, 153 theory chapters, 1,603 sections,
+89 cases, corpus 2,674** — one fewer than before, exactly as intended.
+
+**What the survivor now holds.** From the deleted House entry: the four-option table **with its
+per-option deck grounding** (the `L6` wheezing quote, `L6`'s early-versus-late tumour rule, `L11`'s
+bilateral abductor palsy, the `L2` glottic-tumour panel), the `L12` croup corroboration with the
+steeple sign, and the ⚠️ early/late-versus-inspiratory/biphasic warning. From the survivor: the
+**voice** discriminator (`entep-throat-34`, p.1430 — hoarse above the cords, normal voice with a
+brassy cough below), which the House entry lacked entirely, the ⚠️ self-contradiction with the
+p.1519 box (`entep-throat-62`), and the *Variant of `entep-throat-15`* note. **Nothing substantive
+was dropped** — the two pressure paragraphs and the two distractor tables were fused, not kept twice.
+
+**⚠️ THERE ARE FOUR PRINTINGS, NOT THREE.** House prints this question **twice itself** — main run
+**Q648, book p.164**, options lettered A–D, spelt *tumor*; and fourth-section **S29, book p.188**,
+options lettered a–d, spelt *tumour*. Grade Gain adds *"which of the following"* to the stem, and the
+House main run prints a five-dot *…..?*. **Stem sense, option set, option order and key are identical
+in all four.** The merged `source` records every one of those differences by name.
+
+### ⚠️ A "correction" in the shipped text was a MISQUOTATION of the slide
+
+The survivor's old explanation quoted `L6` as *"asthma, COPD, foreign body in trachea"*. **The slide
+prints `COD`** — `L6) Stridor  and tracheostomy.txt`:29, and **`COPD` returns zero hits across all 34
+cached ENT decks.** The deleted House entry had it right. The merged text quotes `COD` as printed and
+flags it in parentheses. **A verbatim quote that has been silently tidied into correct English is no
+longer a verbatim quote**, and the tidier is invisible — this one survived a splice, a boot and a
+sweep.
+
+### ⚠️ My own count of the folded id's mentions was wrong
+
+I recorded four file-wide hits for `enthd-thr-648`. **There are five** — the survivor's own `source`
+mentioned it **twice**, not once, and both were inside the block that gets replaced wholesale, so the
+error was harmless. It is recorded because the pattern is not: **a grep count taken from a report
+rather than from the file is a claim.** Post-merge the id appears on exactly one line, three times,
+**never in backticks** — per the rule that a folded id loses its backticks everywhere it is still
+mentioned.
+
+### The four crops, cut from PDF pp.88–89 at 300 dpi
+
+The spread geometry held: each PDF page renders 3508×2481 as a two-page landscape spread, left half
+x 0–1753 (even book page), right half x 1754–3507 (odd). Book p.174 = left of PDF 88, p.175 = right
+of 88, p.176 = left of 89.
+
+**`q-images.ps1`'s own detector was useless here** — it is built for the endpoint bank's
+cream-card-on-teal template. House frames every figure in a rounded **blue** border, so the detector
+was rewritten to threshold on blue (`B>110`, `B−R>45`, `R<190`), label 8-px cells into connected
+components, and keep components ≥200×150 px. That returned the figure frames and ignored the blue
+section rules and the page header. Cut with an 8-px pad, scaled to 560 px max edge, JPEG q80 —
+matching `q-hd-29b.jpg` and the `q-gg-*` files, including their convention of **keeping the blue
+frame inside the crop.**
+
+| file | px | what it shows, read off the image |
+|---|---|---|
+| `q-hd-174a.jpg` | 560×488 | two lateral contrast radiographs; the barium column narrows abruptly to a thin thread just below the cricoid, with a shelf-like anterior filling defect — **Q694**, Plummer-Vinson |
+| `q-hd-174b.jpg` | 560×358 | three panels; a rounded barium-filled outpouching projecting posteriorly off the cervical oesophagus — **Q696**, Zenker |
+| `q-hd-175a.jpg` | 560×480 | **one** frame, three sub-panels: two endoscopic views of an eccentric narrowed opening plus a lateral contrast study with a white arrow at a thin shelf — **Q697** |
+| `q-hd-176a.jpg` | 560×486 | 2×2: two endoscopic views of an exophytic ulcerated mass beside the glottis, an axial CT and an axial MRI — **Q702** |
+
+**How the two p.174 figures were assigned, and why it is a reading rather than a count.** The
+detector found three frames, at y = 368, 928 and 1552 on a 2481-px page. The page's three questions
+are separated by full-width blue rules, and each figure sits vertically **inside its own question's
+block** — y=368 level with Q694's first line and above the rule under its answer, y=928 inside
+Q695's block, y=1552 level with Q696's stem. Q695's is the middle one and was left alone, because
+Q695 folds into `entep-enr-37`, which already carries `q-3044`. **Three frames for three questions
+would have been a coincidence to lean on; the vertical layout is evidence.**
+
+**A second, independent check the crops passed.** Each figure's content matches its question's keyed
+answer without anyone having matched them on purpose: postcricoid web → Plummer-Vinson (Q694),
+posterior outpouching → Zenker (Q696), composite barium-plus-endoscopy → Q697's stem naming exactly
+those two modalities, exophytic laryngeal mass on CT and MRI → Q702's hypopharyngeal cancer. **The
+layout reading and the clinical reading agree.**
+
+### ⚠️ `q-hd-176a` IS NOT A BARIUM SWALLOW, and my brief said it was
+
+My crop brief described all four as barium swallow or endoscopy. **The Q702 figure is two endoscopic
+views plus two axial cross-sections — a CT and an MRI.** An `imgAlt` calling it a contrast study
+would be wrong on the face of it. Recorded because the drafting brief now carries the correction and
+the row carries a `shows` field read off the image.
+
+### ⚠️⚠️ THE Q702 BACK-REFERENCE POINTS AT THE WRONG QUESTION IN MY STAGING
+
+`Q702` reads *"In the previous case, what's your diagnosis given the opposite figures?"* I had it
+back-referencing **Q700** (the 45-year-old with angular stomatitis and nail spooning, book p.175,
+keyed CBC). **Its antecedent is Q701** — the 50-year-old diagnosed with Plummer-Vinson two years
+earlier who neglected follow-up and returned with **earache, neck swelling and rapidly progressive
+dysphagia**, book p.176, keyed CT. It is the question immediately above Q702 on the same page, and it
+fits the key: Q702 keys *Hypopharyngeal cancer: Pyriform fossa*, the malignant transformation of the
+Q701 case. `Q703` then continues the chain — *"In the previous case, what is the pathological type"*
+→ SCC.
+
+**Q701 FOLDED**, so it is not in the drafting work-list and the drafter cannot see it. Its vignette
+is therefore supplied in the row's own `antecedent` field, with a note saying which question it is
+and that it folded. ⚠️ **A back-referencing stem must be reconstructed because the app hashes
+question order — and a reconstruction must not answer the question** (`entep-nose-40` invented *a
+nasopharyngeal mass* and the next entry keyed juvenile nasopharyngeal angiofibroma).
+
+### Two harness lessons, both from false alarms
+
+- **A text-level "nothing else moved" guard fired falsely on `answer`.** The bytes after `answer:`
+  run straight into `explanation:` — one of the three fields being deliberately rewritten. The guard
+  that works compares the **parsed** objects and exempts exactly the named fields. **A guard that
+  cries wolf gets switched off, which is how a silent guard gets born.**
+- **The dead-id check must be a DELTA, never an absolute.** Its absolute count is 14 and always was:
+  the same backtick pattern matches **case ids** (they live in `cases.ent.js`, a different file) and
+  **image basenames** (`q-3026`, `q-gg-30`), neither of which is a question id. What must be zero is
+  the number an edit **adds**. Before: 14. After: 14.
+
+### The work-list split, done by content this time
+
+25 rows in two halves, and **the halves are described to their agents by topic, not by index** —
+the correction from earlier today, where half 2 was told it held most of the main-run folds and held
+none. **Half A: 14 rows, book pp.172–176, `ent-stridor` ×6 and `ent-dysph` ×8 — all four image rows
+and both back-referencing stems.** **Half B: 11 rows, pp.177–194, `ent-swallow` ×3, `ent-hoarse` ×1,
+`ent-phon` ×5, and both HOLD BOTH rows.** Every warning in each prompt is actionable by the agent
+receiving it.
+
+**A new id prefix, `enthd-sel-`,** for the two fourth-section entries (`enthd-sel-62`,
+`enthd-sel-63`). It exists because **that section restarts its numbering at 1**, so `S62` written as
+`enthd-thr-62` or `enthd-ear-62` would collide with a real main-run entry. The three existing
+prefixes are unchanged: `enthd-ear-` 1–236, `enthd-nose-` 237–471, `enthd-thr-` 472–685.
+
+---
+
+## §15ll — the image field takes no extension, and the harness that checked it had the test backwards
+
+Caught **before** the drafting agents wrote anything, by reading `qImgSrc()` rather than assuming
+what it does.
+
+`app\index.html`:2681 —
+
+```js
+function qImgSrc(name){ return `assets/q/${name}.jpg`; }
+```
+
+**It appends the extension itself.** Measured across `app\data\questions.ent.js`: **84 image fields,
+every one a bare basename, zero carrying `.jpg`.** My crop assignment stored `q-hd-174a.jpg`, which
+would have built `assets/q/q-hd-174a.jpg.jpg`.
+
+⚠️ **A broken `<img>` renders as nothing. It does not throw, it does not log, and the boot probe
+counts zero console errors either way.** So this would have shipped four blank figures on four
+questions that cannot be answered without them — including `Q697`, whose entire stem is *"The
+attached barium swallow and endoscopic pictures refer to which condition?"* **The class of fault
+matters more than the fault: a silent renderer failure is invisible to every check this project
+runs.**
+
+Fixed in three places, in the same pass: `draft-A.json` and `draft-tail.json` rewritten (4 fields),
+`HOUSE-TAIL-DRAFT-BRIEF.md` corrected in place, and the running drafting agent messaged with the
+correction and told to re-read those four rows.
+
+### ⚠️ And my own guard had the test inverted
+
+`splice-tail.js` checked `imgFiles.has(q.image)` against a `readdirSync` of `app\assets\q\`, whose
+entries **do** carry `.jpg`. So the guard would have **passed the broken value and rejected the
+correct one** — precisely backwards. It now rejects any extension on the field and adds `.jpg` back
+before testing the directory.
+
+**This is the sixth instrument on this project to be blind to, or wrong about, the exact fault it was
+built to catch** — after `Array.filter` on sparse holes, the E/F top-N cutoff, the
+`keycore.length > 3` guard, that guard's own fix, and `sameOpt`'s tolerance on enumerated keys. The
+pattern is now stable enough to state as a rule: **a guard written from what the code is assumed to
+do inherits the assumption. Read the function before writing the check on it.**
+
+### The splice harness is staged and refuses correctly
+
+`splice-tail.js` is written and dry-runs to `✗ MISSING DRAFT: house-tail-A.array.js` — the right
+answer while the drafts are still being written. Beyond `splice-thr.js`'s guards (parse before write,
+count match, sparse-hole scan by index, duplicate ids) it adds: **the drafted id set must equal the
+25 the adjudication asked for, exactly** (derived from `draft-tail.json`, not typed) · `answer` in
+range of its own `options` · `image`/`imgAlt` paired, extension-free, and present on disk · **no
+`alsoIn`**, since these are the questions no other bank prints · **dead backticked ids as a DELTA**
+· every `chapter` resolvable in `modules.js` · bank tallies through `banksOf`.
+
+Expected ids, and the only ones that will be accepted: `enthd-thr-` **687 688 689 690 692 693 694
+696 697 698 699 700 702 703 708 710 711 715 716 717 718 719 720** and `enthd-sel-` **62 63**.
+
+### Two agent runs died on a transient 529 before writing a byte
+
+Three launches of half A and two of half B were killed by server-side overload. **Nothing was
+recoverable, because nothing had been written** — which is the inverse of this project's usual
+finding that *a dead agent's file is usually complete*. The relaunch of half B therefore carries an
+explicit instruction to **write its output file early and append to it**, so a kill leaves finished
+work on disk. Recorded because the standing rule assumes a file exists to validate.
+
+---
+
+## §15mm — the 25 tail entries are written and spliced: HOUSE ENT IS CLOSED (2026-08-24)
+
+The last drafting job in `d house ENT mcq.pdf`. **25 entries — 23 NEW plus the 2 HOLD BOTH — written,
+spliced and boot-verified.** `Q_ENT` **2,215 → 2,240**, corpus **2,674 → 2,699**, ENT `house`
+**754 → 779**. Boot from `file://`: **0 console errors, 876 rules, 3 `max-aspect-ratio:5/4` blocks,
+4 modules, 153 chapters, 153 theory chapters, 1,603 sections, 89 cases.**
+
+### ⚠️⚠️ THEY WERE WRITTEN IN THE MAIN SESSION, BECAUSE FIVE SUBAGENTS DIED ON A TRANSIENT 529
+
+Three launches of half A and two of half B were killed by server-side overload, **every one of them
+before writing a single byte.** That inverts the project's standing finding — *a dead agent's file is
+usually complete, validate from disk before rewriting* — because there was never a file. The last
+relaunch carried an explicit instruction to write early and append; it died too.
+
+**So the governing decision "Opus subagents write, cap 2 concurrent" has a failure mode it did not
+account for: the agent pool can be unavailable.** The work was done inline instead. Cost: the source
+reading lands in the main context rather than being discarded with a subagent. **Worth knowing that
+this is possible and roughly what it costs, because the alternative was to stop.**
+
+### The two files
+
+`content\ent\qb-pages\house-tail-A.array.js` — **14 entries**, book pp.172–176, `ent-stridor` ×6 and
+`ent-dysph` ×8, all four image entries and both back-referencing stems.
+`content\ent\qb-pages\house-tail-B.array.js` — **11 entries**, pp.177–194, `ent-swallow` ×3,
+`ent-hoarse` ×1, `ent-phon` ×5, and both HOLD BOTH.
+
+Explanation lengths **338–583 words**, inside the 2026-08-13 adaptive budget (~520 for vignettes,
+divergences and gap-fills; ~250 for straight slide-recall). Every one closes with
+`*Written for this bank — d house ENT mcq prints no explanation here.*`, **which is true and was
+checked, not assumed**: the transcript header for pp.172–179 states *"No boxed explanations are
+printed"* and records that **every answer line in the range was checked for an opening parenthesis.**
+
+### ⚠️ A NEW ID PREFIX, AND THE COLLISION IS NOT HYPOTHETICAL
+
+`enthd-sel-62` and `enthd-sel-63` are the first entries from the book's fourth section, which
+**restarts its numbering at 1**. Writing `S63` as `enthd-ear-63` would have collided with a **real
+and entirely different** main-run question. ⚠️ **And at S62 it would have been SILENT** — 62 is one of
+the **33 gaps** in the `enthd-ear-` sequence (203 entries over the range 1–236), so the id would have
+been free and wrong. **A numbering scheme that only breaks on some numbers is worse than one that
+breaks on all of them.** The three main-run prefixes are unchanged: `enthd-ear-` 1–236,
+`enthd-nose-` 237–471, `enthd-thr-` 472–685.
+
+### What the decks actually gave, and where they did not
+
+**Direct, quotable hits — most of the batch is fully sourced:**
+
+| Entry | The slide that answers it |
+|---|---|
+| `enthd-thr-688` / `689` | `L11) Vocal cord paralysis`:149–158 prints the answer as **numbered steps 1–3 of its own management list, including the six months** — airway, follow-up 6/12, then lateralization |
+| `enthd-thr-694` | `L10) Dysphagia From ENT Perspective`:197–210 — the three-component definition, and a figure captioned **"A barium swallow showing an ANTERIOR web"**, which is what the crop shows |
+| `enthd-thr-696` | `L10`:150–193 — Killian's triangle, **"more commonly on the LEFT"** (the stem says a lump in the *left* neck), dysphagia 98 %, undigested regurgitation, halitosis, aspiration, and the **C5–C6 posterior sac with contrast retention** |
+| `enthd-thr-698` | `L6`:422 files **"Chemical : Chemical fumes & POTASH"** — the stem's own agent, named on the slide |
+| `enthd-thr-700` | `L10`:213 lists **"A full blood count and iron studies"** first among the investigations |
+| `enthd-thr-708` | `L8`:404–409 — three options are the **advantage** list verbatim and the fourth is the first line of the **disadvantage** list, negated |
+| `enthd-thr-710` / `711` | `L7`:167–174 — same structure, and the white-out sentence is quotable word for word |
+| `enthd-thr-718` | `L8`:66–71 — **the four options ARE the four prerequisites of normal language development, one failure each** |
+| `enthd-sel-63` | `L16`:30–44 puts **three of the four options inside the tubotympanic panel** and `L16`:247–248 excludes the fourth |
+
+**Tagged as outside the material, each on the specific claim:** the Schaefer-Fuhrman grading (`L6`
+names blunt laryngeal trauma only as a cause of stridor and grades nothing) · the rigid-bronchoscope
+sequence in blunt paediatric airway trauma · alkali liquefactive necrosis · reflux → metaplasia →
+adenocarcinoma · the *rhinolalia aperta/clausa* nomenclature and the /m/ → /b/ mechanism · the
+squamous histology of hypopharyngeal carcinoma · the androgen account of mutational voice disorder ·
+the cholesteatoma-erosion reason the tubotympanic type is called *safe*.
+
+### ⚠️⚠️ A DECK-VERSUS-BANK KEY DIVERGENCE, AND THE FIGURE IS WHAT RESOLVES IT
+
+`enthd-thr-702` keys **Hypopharyngeal cancer: Pyriform fossa** over a menu that also offers
+**Postcricoid area** — in a patient who began as Plummer-Vinson. `L10`:92–106 points the other way,
+**twice**: *"Iron-deficiency dysphagia (associated with Plummer-Vinson syndrome) **for PC tumours**"*
+and *"**PC lesions are predominant in FEMALES**"*. The patient is a 50-year-old woman.
+
+**The `answer` does not move**, and the resolution is in the stem: it says **"given the attached
+figures"**, and the figures show an exophytic mass **beside the glottis** — the pyriform gutter, not
+behind the cricoid. The pyriform sinus is also the **commonest** subsite in the deck's own ranked
+list. **So the question is telling you to answer from the picture where the picture and the
+epidemiology disagree** — and both halves are recorded in `explanation`, per the standing rule.
+
+### ⚠️⚠️ BOTH HOLD BOTH ENTRIES SHARE ONE SHAPE: THE HELD ENDPOINT ENTRY HAD ALREADY WRITTEN DOWN THE ANSWER HOUSE WOULD LATER KEY
+
+This was known for `S62` and is now confirmed for `S63` as well, which makes it a pattern rather than
+an anecdote.
+
+- **`enthd-sel-62` / `entep-ear-86`.** The held entry's explanation, written from the slides in an
+  earlier session, says the discrimination is with *"necrotizing (malignant) otitis **externa**…
+  **Pseudomonas aeruginosa**, in the **external** canal… Reading 'media' versus 'externa' is the whole
+  question."* **That is a description of House's key, written before House was read here.** ✅ Verified
+  myself, not on the brief's word: `necrotiz|necrotis` returns **exactly two hits across all 34 cached
+  ENT decks** — `L17,18`:182 (*malignant external otitis*) and `necrotizing vasculitis` in `L30` — so
+  **the phrase *acute necrotizing otitis media* is in no cached deck.** `L17,18`:190 gives Pseudomonas
+  to the external disease; `L21.1`:36 puts *B hemolytic strept* first for otitis media.
+- **`enthd-sel-63` / `entep-mfe6-1`.** The held entry's explanation reasons: *"the one that is not is
+  **option c, 'High incidence of complications'**"* — **and then records the bank's printed key d
+  anyway**, which is exactly what the rule requires. **House keys c.** `L16` prints *profuse* and
+  *odourless* **in the same line** of the tubotympanic panel, which is why the endpoint key is the one
+  under pressure; the held entry already carried a disputed-key note with four sources against it,
+  and this is a fifth — **the first from another question bank.**
+
+**Neither key moved. Each entry names the other.** A defective key is noted, never disputed.
+
+### ⚠️ Three spellings of one organism across three sources
+
+House prints **Pseudomonas Aeuroginosa**, the endpoint file prints **Pseudomonas Aeruginosa**, and
+`L17,18`:190 itself prints **Pseudomonas aeroginosa**. **None of the three is the standard spelling**
+and all three are transcribed as printed. Recorded because this is the class of difference that
+defeated a fold twice on this project — and because `norm.js` now collapses exactly this shape
+(same first letter, edit distance ≤2, sorted-letter distance ≤2).
+
+### Where my own staging was wrong, caught while writing
+
+- **`enthd-thr-700` is NOT the antecedent of `enthd-thr-702`.** The back-reference points at the
+  bank's **Q701 on book p.176** — the 50-year-old who neglected follow-up — not at Q700 on p.175.
+  **Q701 folded**, so it is invisible to the drafter and its vignette had to be supplied.
+- **`enthd-thr-689` is a third back-referencing stem, and my annotation had missed it.** *"In the
+  previous case, if the first line of management wasn't successful…"* — its antecedent is
+  `enthd-thr-688`, which is at least in the same batch. **Two back-references were annotated; there
+  were three.**
+- **`enthd-ear-62` does not exist**, so a sentence asserting it as a live collision was wrong. The
+  real collision is at `enthd-ear-63`. **Caught by the dead-id delta guard, which is the second time
+  today that guard has earned its keep.**
+
+### The splice harness
+
+`splice-tail.js`, built on `splice-thr.js`'s guards (parse before write, count match, sparse-hole scan
+**by index**, duplicate ids) plus five specific to this batch: **the drafted id set must equal the 25
+the adjudication asked for**, derived from `draft-tail.json` rather than typed · `answer` in range of
+its own `options` · `image`/`imgAlt` paired, **extension-free**, and present on disk · **no `alsoIn`**
+· every `chapter` resolvable in `modules.js` · dead backticked ids as a delta.
+
+⚠️ **Refining the dead-id guard to resolve image basenames against `app\assets\q\` dropped its
+pre-existing count from 14 to 6** — the other 8 were never ids at all. **A guard that is merely
+tolerant of noise reports noise; one that classifies it reports faults.**
+
+**The four crops were then validated as files, not just as names:** all four are valid JPEGs
+(`FFD8`…`FFD9`) at 560×488, 560×358, 560×480 and 560×486, and `qImgSrc('q-hd-174a')` composes
+`assets/q/q-hd-174a.jpg`. **This matters because a broken `<img>` renders as nothing and raises no
+console error** — the boot probe would have said 0 errors either way.
+
+---
+
+## §16 — ENT THEORY'S TWO STANDING DEBTS ARE CLOSED, AND ONE OF THEM WAS ALMOST ENTIRELY ALREADY PAID (2026-08-24)
+
+The two debts `MEMORY.md` carried against ENT theory — **26 open §14.5 deferral rows** and
+**34 bold-led paragraphs over the word cap across 14 chapters** — are both at zero. Boot from
+`file://` after all of it: **0 console errors, 876 rules, 3 `max-aspect-ratio:5/4` blocks,
+4 modules, 153 chapters, 153 theory chapters, 1,603 sections, 2,699 questions, 89 cases.**
+All 30 ENT chapters re-printed: **261 pp**, up from 259.
+
+### ⚠️⚠️ 25 OF THE 27 OPEN RECEIVERS WERE ALREADY DELIVERED — THE DEBT WAS A BOOKKEEPING DEBT
+
+26 register rows, but 27 receiver-obligations: one row (`ent-csom` → `ent-otalgia` / `ent-earanat`
+/ `ent-facial`) carries three. **Every one was settled by READING THE RECEIVING CHAPTER in the
+shipped `app\data\theory.ent.js`** — 11 chapters, ~28,000 words — not by grepping for the row's
+own words. **Twenty-five were found already written, in full, most of them at the time the
+receiving chapter was merged; the register was simply never ticked.**
+
+**Only two were genuinely short, and both are now written:**
+
+| Row | What was missing | Fixed in |
+|---|---|---|
+| `ent-hoarse` (L2) → `ent-paedlar`, *"congenital laryngeal web in full"* | `paed-5` had the recanalisation aetiology, the four sites with the 1 : 3 subglottic association, and three operations. **L2's own treatment slide also prints "Mild cases: no Treatment" and "Tracheostomy in severe cases"**, and its clinical slide prints **stridor is RARE except with a posterior interarytenoid web** | two bullets in `paed-5`; `Src` now `L6; L12; L2` |
+| `ent-nasalmass` (L26) → `ent-tonsils`, *the adenoid slides* | Adenoid facies and both obstructions were already whole in `tons-13`, adenoidectomy in `tons-14`. **The caption pair itself was named nowhere** | two bullets in `tons-13`; `Src` now adds L26 |
+
+⚠️ **L26 PRINTS THOSE TWO CAPTIONS OVER PHOTOGRAPHS AND NO PROSE AT ALL** — `Non – obstructive
+adenoid` / `Obstructive adenoid`, then `Adenoids …` twice, and nothing else. So the captions are
+named as the deck's own and the reading behind them is supplied and tagged, per the standing gap
+rule. **And the L29 row is worth recording for what the donor actually held:** `adenoid` occurs in
+`L29` **exactly once**, as *"Adenoiditis"* in the complications list of acute rhinitis — one word.
+
+### ⚠️⚠️ MY OWN PROBE WAS WRONG TWICE, IN TWO DIFFERENT WAYS, BEFORE IT WAS RIGHT ONCE
+
+The first pass built a term list per row and grepped the receiving chapter. It failed as an
+instrument twice:
+
+- **⚠️ IT WAS CASE-SENSITIVE, AND THESE CHAPTERS SHOUT.** `Santorini` reported **ABSENT** while
+  `earan-2` prints **`**FISSURES OF SANTORINI**`** — and the proof was already on my screen, inside
+  *another term's* context dump, two lines below the false absence. **A case-blind check on a corpus
+  that uses ALL-CAPS for emphasis manufactures absences.**
+- **⚠️ THREE OF ITS "MISSES" WERE WORDS I INVENTED, NOT WORDS THE ROW PROMISED.** `Romberg` for the
+  L20 row — `romberg|unterberger|past.point|finger.nose|dysdiadoch` returns **zero hits across
+  `L20` and `L13,14` together**, so it is in no deck and was never owed. `functional|non-organic`
+  for the seven hearing-loss types — the deck's seventh type is **PSYCHOGENIC**, which `hear-1`
+  prints. `up and back` — `earan-3` prints **UP · OUT (laterally) · BACK**.
+
+**A term list is a search aid. The row's own text is the specification, and the chapter is the
+evidence.** The three surviving misses after the case fix were all false; the two real shortfalls
+were found by *reading*, and neither would have shown up as a missing term.
+
+### The 34 over-cap paragraphs, and the 40 nobody had counted
+
+§14.3a: *"Hard cap ~45 words per paragraph. A bullet is ≤ ~15 words."* The recorded debt was framed
+at **55** words and the audit reproduced it exactly: **34 bold-led paragraphs over 55, across 14
+chapters.** All 34 reshaped into a lead + bullets. Then, because the rule's own number is 45, the
+audit was re-run at 45 and found **40 more**, between 46 and 55 words, across 16 chapters. Those
+were reshaped too, plus **one non-bold-led paragraph (`otor-8`, 51 w)** that a bold-led audit can
+never see. **Final: 0 paragraphs of any kind over 45 words in all 30 ENT chapters.**
+
+- **This was a LAYOUT edit and the applier enforced that**, not the author: every patch had to
+  match its target **exactly once** in the file, and the reshaped block had to carry **every token**
+  of the original. A dropped word aborted the run before a byte moved.
+- ⚠️ **THE CONTENT GUARD'S FIRST VERSION FAILED 25 OF 34 PATCHES, AND EVERY ONE WAS A FALSE
+  ALARM** — it counted `·` and trailing full stops as content, so `adults` against `adults.` read
+  as a loss, and a vanishing `·` read as a loss when **breaking the `·`-chained mega-paragraph is
+  the whole point of §14.3a**. Normalised to lowercase alphanumerics, all 74 passed with zero
+  losses. **A guard tuned so tight that its failures are all false teaches you to ignore it.**
+- **No new long bullets were created**: bullets over 55 words stand at **43**, exactly the count
+  measured before any edit, out of 1,315 (was 1,106).
+- Rendered and **LOOKED AT**, not just counted: `ent-tonsils` p.6 prints SCARLET FEVER as a
+  coloured lead over six bullets where it was a 104-word slab.
+
+### ⚠️ `Src: L6; L12` OCCURS SIX TIMES IN THE FILE — A CITATION LINE CANNOT ANCHOR AN EDIT
+
+Round three had to extend two `Src:` lines. Both aborted on the uniqueness guard: `Src: L6; L12`
+appears **6×** and `Src: L3; L1.2; L9` **2×**. Each edit was rebuilt to span **the last bullet
+through its `Src` line**, which is unique — and the two edits per section had to become **one
+patch**, because two overlapping patches break the second once the first has been applied.
+
+### ⚠️⚠️ `ent-tonsils` PRINTS AT 16 pp AND THE SPLIT CEILING IS 13 — AND IT IS **NOT** BEING SPLIT
+
+Measured, not estimated. It was **15 pp before** this session's reshape and is **16 pp after**, so
+it has been over the 2026-08-15 *"every chapter ≤13 pp measured by printing"* ruling since it was
+written. **It is deliberately left alone, and the reason is a measurement:**
+
+> **`ent-tonsils` is the 8th largest of all 153 theory chapters by body words (3,923).** Seven
+> chapters shipped **above** it — `ps-somato` 4,433 · `ps-devices` 4,195 · `ps-pharm` 4,181 ·
+> `nr-movement` 4,075 · `nr-cns` 4,070 · `ps-schizmgmt` 4,045 · `ps-emerg` 3,981 — and every one
+> of those was written **after** the ≤13 pp ruling, in modules that were measured by printing.
+
+So this is **a corpus-wide question about the ceiling, not an ENT defect**, and splitting one ENT
+chapter to a standard the other three modules are not held to would make the corpus less
+consistent, not more. The seam exists and is clean if it is ever wanted — **`tons-1`…`tons-12` (the
+tonsil) and `tons-13`/`tons-14` (the adenoid), no section reordered**, `SCHEDULE` untouched because
+its text is free display text never matched to a chapter id (verified in `defaultSchedule()`), and
+**24 of the 146 questions link only to the adenoid pair** and would move, 13 straddle and would
+stay. **User's call, not mine.**
+
+### Measured and recorded, not acted on
+
+- **113 bold leads across the 30 chapters have no `mdLead()` anchor** — no `:` or `—` inside the
+  first 44 characters and the whole bold longer than 44, so the block renders without its coloured
+  marker. **This is not a tracked debt and §14.3a's own text concedes it** ("the median bold-opening
+  line carries 71 characters"). Fixing it means rewriting 113 lead sentences; recorded here so the
+  number is visible.
+- **43 bullets exceed 55 words**, the longest 87 (`tons-14`). Pre-existing and unchanged.
+- **39 §14.5 rows remain open across the register — all of them ophthalmology.** ENT is at zero.
