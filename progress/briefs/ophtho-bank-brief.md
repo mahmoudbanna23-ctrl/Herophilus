@@ -178,7 +178,71 @@ page count.
 2. Decide every fold by hand. **On a cross-bank match ADD THE BANK via `alsoIn` — never a second
    entry.** Options replaced means a new entry. Grep the drafted block for any folded id **before**
    splicing.
-3. `node <scratch>\oph\splice.js "<banner>" «slug».draft.js` — five guards, rolls back on any fault.
-4. `node <scratch>\oph\validate.js` — 0 BAD, 0 dead ids, 0 holes, and the **marker delta must equal
+3. **`node <scratch>\oph\stagecheck.js «slug»` — run this BEFORE the splice.** It compares the draft
+   against its own verbatim staging record on **option order, option text, the printed key letter
+   against the zero-based index, and coverage both ways.** `answer` is an INDEX into `options`, so a
+   reordered option list silently re-keys the question to a different answer, and nothing downstream
+   would ever notice. Its only expected complaints are the folded entries.
+4. `node <scratch>\oph\splice.js "<banner>" «slug».draft.js` — five guards, rolls back on any fault.
+5. `node <scratch>\oph\validate.js` — 0 BAD, 0 dead ids, 0 holes, and the **marker delta must equal
    `new entries − boxed`**.
-5. Boot from `file://` and record the probe. Then the ledger, then `MEMORY.md`.
+6. Boot from `file://` and record the probe. Then the ledger, then `MEMORY.md`.
+
+---
+
+## What the first five batches taught — fold these into the next brief
+
+**⚠️ THE CONTENTS COUNT IS RELIABLE ON THIS BANK AND THE "Page As" FIGURE IS NOT.** Seven exact
+counts running (71, 41, 26, 26, 65, 52, 8) against ENT's Grade Gain being wrong 17 times in 21.
+The "Page As" figure has failed **three different ways**: answers starting on a later page (t2, t3),
+answers **spilling across three pages** while starting exactly where stated (t6 — *correct as a
+start, silent as a span*), and being simply correct (t4, t7, t8). **Render past the LAST answer page,
+not just past the first — and give the agent that range, because on t6 my range was one page short
+and it cost eleven keys and four boxes until the agent rendered p.43 itself.**
+
+**⚠️ DEFECT 2 HAS NOW FIRED THREE TIMES: a question tail in the LEFT column of the first answer
+page** (t3's Q138, t8's Q348, t6's Q286–288). On t6 that was three of the sixty-five. **Say "read
+both columns of every page including the first answer page" in every brief.**
+
+**⚠️ NUMBERING: READ IT, NEVER COMPUTE IT.** I briefed topic 7 as opening at Q165 by reasoning from
+topic 4's last number and forgot that topics 5 and 6 intervene. Give the agent the *previous topic's
+last printed number* if you know it, and tell it to confirm from the banner.
+
+**⚠️ QUOTE `modules.js` CHAPTER TITLES, DO NOT PARAPHRASE THEM.** I described `op-cornea-surg` as
+"transplantation, refractive surgery, CXL"; it is titled *"Cornea — **ectasia**, grafts and
+refractive surgery"*, so keratoconus belongs there and eight questions nearly went to the wrong
+chapter.
+
+**⚠️ A DECK'S `NOT COVERED` LIST IS SCOPED TO THAT DECK, AND IT ALSO MATCHES ITSELF.** Two separate
+faults: a brief quoted `L9`'s list as module-wide and manufactured an absence (the Schirmer test is
+in `L15,16) Cornea`), and an agent's grep appeared to demolish a negatives list when every hit was
+inside the file's own NOT COVERED block. **Grep every deck AND every book chapter, case-insensitively,
+and open the hit before writing the absence.**
+
+### Figures — the agent describes, the hub cuts
+
+**Tell the agent NOT to cut crops.** It records, in the staging header: the column, the page, pixel
+bounds at 400 dpi, what the photograph shows, and whether the stem is answerable without it. Then:
+
+- **Measure the photograph's true ink bounds and pad by 3 px.** The one crop that has shipped was
+  cut at the transcriber's stated coordinates and **included the printed option line "A. Viral"**
+  where the app renders a caption — asserting an answer, and not the keyed one. **Fifteen of fifteen
+  first attempts have been wrong in this project. LOOK at every finished crop.**
+- **⚠️ `image` STORES THE BASENAME WITH NO EXTENSION** — `qImgSrc()` appends `.jpg`.
+- **⚠️ `imgAlt` IS MODALITY AND VIEW ONLY.** Where the stem asks *what causes the sign shown*, the
+  sign itself must not be named — calling the cornea hazy hands over half the inference. The
+  shipped register: *"Clinical photograph, close-up frontal view of a single eye with the lids held
+  apart."*
+- **⚠️ POWERSHELL VARIABLE NAMES ARE CASE-INSENSITIVE.** `$W = 560` overwrote `$w = 904` and squashed
+  a crop's aspect ratio. Use `$outW`/`$srcW`.
+
+### Folds — a fold is never just a deletion
+
+Three consequences can follow, and ENT recorded faults from missing each:
+**the held entry may be ENRICHED** by the folded printing's box · **an authored entry may become
+SOURCED, so its marker must come off** · **`source` must name both printings.** All three fired on
+`opqb-t8-327` → `opqb-t2-77`.
+**⚠️ The marker string occurs 151× in the file**, so it cannot anchor an edit alone — span the
+entry's own closing sentence through it. **⚠️ And grep the drafted block for the folded id first:**
+one t8 entry and four t6 entries cited theirs mid-sentence as evidence, and the claim had to survive
+the id's removal, not just lose it.
