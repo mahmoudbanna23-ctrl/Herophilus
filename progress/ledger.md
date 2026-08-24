@@ -10607,3 +10607,80 @@ wrong, correct it and record what the bank printed, cited."* Both halves were do
 
 **A check that flags a correct repair is not a false positive; it is the check asking you to show
 the receipt.** Both showed it.
+
+### ⚠️⚠️ 41 ENTRIES SHIPPED WITHOUT A MANDATORY MARKER, AND ONLY A SECOND AGENT'S EYE CAUGHT IT
+
+Grade Gain topic 9 was drafted in two halves by two agents, a usage limit between them. The second
+one opened its report with this:
+
+> *"⚠️ The 50 existing entries carry ZERO no-explanation markers. `gg-t9.draft.js` had 0 occurrences
+> while `gg-t4.draft.js` has 20, `gg-t7` 5, `gg-t8` 40. So ~41 unboxed entries in Q349–Q398 are
+> missing a marker the brief calls not optional. I added it to my eight unboxed entries only and did
+> not touch the 50. This is a debt for the hub."*
+
+**It was handed a file with a convention in it and did not adopt that convention — it compared the
+file against the standard and reported the difference.** Measured: 12 boxed of 61, so 49 entries owed
+a marker and 8 had one. **Forty-one missing.**
+
+⚠️ **The marker count is an audited invariant** (`marker delta = new entries − boxed`), so this would
+have surfaced after the splice as a delta that did not reconcile — but it would have surfaced as a
+number, at the end, with 60 entries to search. **It surfaced instead as a sentence, before the
+splice, with the exact count attached.**
+
+**The box list was confirmed TWO INDEPENDENT WAYS before anything was written**, because an error in
+either direction is a fault — a marker on a boxed entry is a false claim that the bank prints
+nothing, and a missing one is the fault being fixed. The staging header's list of twelve and a
+structural scan for entries that had actually captured a printed box **agreed exactly**. `addmarker.js`
+aborts if they do not.
+
+### ⚠️ A FOURTH FOLD SHAPE: THE REORDERED REPRINT, WHICH MOVES THE PRINTED KEY LETTER
+
+`opqb-t9-392` (book p.60) is `opqb-t9-355` (p.54) with **the same four options in a different order**.
+Same stem word for word bar *"oedema"/"edema"*, same answer — and therefore **the printed key letter
+moves from C on p.54 to B on p.60.**
+
+> **REORDERED IS NOT REPLACED.** A replaced distractor makes a new question; a reordered option list
+> is the same question wearing a different letter. Held once, no `alsoIn`.
+
+**And it is the cleanest demonstration in the corpus of why a key LETTER is never the thing to
+memorise** — the bank itself keys the same question two ways six pages apart. That observation is
+kept in the held entry rather than lost with the folded one.
+
+⚠️ **Its marker consequence is the MIRROR of the topic-8 fold, which is why both are worth having.**
+On topic 8 the SECOND printing carried the box, so the held entry's authored marker had to come off.
+Here the FIRST printing is the boxed one, so the held entry was already correctly unmarked and it was
+the folded printing that carried the marker. **Check which printing is boxed before assuming a fold
+has no marker consequence.**
+
+### The crops — three more frames carried an answer caption
+
+Six topic-6 figures were cut, verified and shipped, taking the corpus to **97 images**. The working
+crops the drafting agent had cut for reading were **not** shippable:
+
+| | What the working crop carried |
+|---|---|
+| **Q256** | `A. Chlamydia trachomatous` — **the keyed answer**, printed under the photograph |
+| **Q288** | **TWO** full option lines — `A. Herbet pits in trachoma`, `B. Trantas dots in trachoma` |
+| **Q254** | `A. Bilaterality` |
+
+**That is the `opqb-t8-330` fault three more times**, and the app renders the figure **between stem
+and options**, so each would have read as a caption naming an answer. **Four of the seven crops
+attempted on this module have carried option text. Cut to the photograph's measured ink bounds with a
+3 px pad, then LOOK at the result at shipping size** — an ink scan over the padded rows is the
+confirmation, not the method.
+
+✅ **Q254 and Q257 are the same photograph reprinted on facing pages**, proved numerically: mean
+absolute channel difference **5.4/255** on 64×64 thumbnails, where unrelated pictures score 40+.
+**Both keep their own crop, cut from their own printing** — they are separate scans with slightly
+different framing, and an entry's figure should be what its own page prints.
+
+⚠️ **My crop brief put Q258 on book p.38. It is on p.37, and p.38 carries no image at all.** The
+drafting agent had it right in the staging record the whole time; I had introduced the error by
+paraphrasing rather than reading. **Third brief error of the day from restating something the
+staging already said correctly.**
+
+**All six alts are modality and view only.** Five of the six stems ask what the sign IS or what
+CAUSES it, so naming the finding would destroy the question — and the verifying agent argued the
+register down further than the brief allowed on `opqb-t8-330`, refusing even to call the cornea hazy
+because *"the sign here IS a corneal appearance"*. That is the right reading and it is now the
+standard.
