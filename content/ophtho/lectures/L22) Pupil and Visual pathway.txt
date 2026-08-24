@@ -1,124 +1,816 @@
-SOURCE: Semester 8\Opthalmo\Theoritical\PPT\L22) Pupil and Visual pathway.pdf
+L22) Pupil and Visual pathway.pdf — "Pupil & Visual Pathway",
+Ashraf Saad Galal, Professor of Ophthalmology, Alexandria University
+==========================================
+25 slides. READ VISUALLY 2026-08-24 and cached here.
 
+⚠️ THIS DECK IS EFFECTIVELY IMAGE-ONLY AND MUST NOT BE RE-READ FROM ITS TEXT
+LAYER. The previously cached text for this deck ran to 2,426 characters with
+roughly two thirds of the slides blank; the slides that mattered most — the
+whole visual pathway, every field-defect figure, every clinical photograph —
+extracted as nothing. It was rendered at 110 dpi into 7 four-up contact sheets
+and read as images. A `pdftotext` pass will look like a thin file and is not.
+
+⚠️ THE PICTURES ARE THE LECTURE. Only five of the 25 slides (3, 4, 8, 9, 11)
+carry a real bullet list. Everything else is a diagram, an anatomical
+photograph, a clinical photograph or a visual-field figure, and the teaching
+point lives in the picture. Every picture is described below and every label
+printed on it is transcribed.
+
+SECTION MAP (slide numbers read off the burned-in numbering, not computed):
+  • Slide 1      — Title
+  • Slides 2–4   — PUPIL: autonomic nerve supply, then miosis and mydriasis
+  • Slide 5      — Light reaction (pathway diagram)
+  • Slide 6      — Relative Afferent Pupillary Defect / Marcus Gunn pupil
+  • Slide 7      — Near reaction
+  • Slides 8–9   — Light-near dissociation: Argyll Robertson pupil, then
+                   Dorsal Mid Brain Syndrome
+  • Slides 10–12 — SYMPATHETIC side: sympathetic pathway, Horner syndrome,
+                   anisocoria
+  • Slides 13–24 — THE VISUAL PATHWAY, taught station by station with the field
+                   defect drawn beside each lesion: overview (13), optic nerve
+                   (14), chiasma (15–16), optic tract (17), lateral geniculate
+                   body (18–19), optic radiation (20–21), occipital cortex
+                   (22–23), and a summary lesion-map A–E (24)
+  • Slide 25     — Thank You
+
+⚠️ CONVENTIONS ADOPTED HERE.
+  • Field-defect figures in this deck use ONE convention throughout: the BLACK
+    part of the circle is the part of the field that is LOST, the grey (or
+    white) part is the part still seen. Slide 24 makes this explicit by
+    labelling its two columns "Left monocular visual field" / "Right monocular
+    visual field". Every field figure below is reported as which half or
+    quadrant of which eye is black, i.e. lost.
+  • For clinical photographs the deck never says "right eye" or "left eye", so
+    laterality below is given as "the eye on the left/right of the
+    photograph". That is what the slide actually shows; inferring the
+    patient's side from a picture would be a guess.
+  • Slides 6, 11, 14 and 24 were additionally re-read from their single-slide
+    renders, enlarged, because the four-up cell was too small to settle which
+    pupil was which and which quadrant was black. Nothing else needed it —
+    headings, bullets and small print all read cleanly at four-up.
+  • Slides 17, 18 and 19 carry anatomical photographs annotated with the
+    NUMBERS 1–12 in yellow. NO KEY TO THOSE NUMBERS IS PRINTED ANYWHERE IN THE
+    DECK. That is recorded in each block and again in the NOT COVERED list.
+
+Transcribed close to verbatim. Slide text is kept as printed, including the
+lecturer's own spelling and capitalisation ("Dorsal Mid Brain Syndrome" as
+three words, "Anhydrosis", "Apparent enophthalmos", "Sqint"-style informality
+elsewhere in this series). Colour is noted only where it carries meaning —
+this deck prints its headings in yellow, its bullet leads in red and its
+field-defect captions in red.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 1 — Title
+─────────────────────────────────────────────────────────────────────
 Pupil & Visual Pathway
 
-      Ashraf Saad Galal
-   Professor of Ophthalmology
-      Alexandria University
-Autonomic Nerve Supply
-                      Miosis
+Ashraf Saad Galal
+Professor of Ophthalmology
+Alexandria University
 
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 2 — Autonomic Nerve Supply
+─────────────────────────────────────────────────────────────────────
+Heading only. The whole slide under it is one labelled DIAGRAM.
+
+DIAGRAM — a face-on drawing of the iris and pupil, the iris drawn in blue with
+the radially arranged dilator fibres shown as pale spokes and the circular
+sphincter drawn as a pale ring immediately around the black pupil. Two nerves
+run up to the iris from below, each ending in a labelled neurotransmitter box.
+
+Labels printed on the diagram, clockwise from the top right:
+  • sphincter pupillae   (points to the pale circular ring at the pupil margin)
+  • iris                 (points to the blue body of the iris)
+  • pupil                (points to the black centre)
+  • dilator iridis       (points to the radial spokes)
+  • short ciliary nerve  (the nerve on the right, running up to the sphincter)
+  • ACh                  (boxed, on the short ciliary nerve)
+  • long ciliary nerve   (the nerve on the left, running up to the dilator)
+  • NE                   (boxed, on the long ciliary nerve)
+  • 'postganglionic neuron'  (bottom left, on the long ciliary nerve)
+  • 'postganglionic neuron'  (bottom right, on the short ciliary nerve)
+
+So the diagram teaches, without a word of prose: parasympathetic → short
+ciliary nerves → ACh → sphincter pupillae; sympathetic → long ciliary nerves →
+NE → dilator iridis.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 3 — Miosis
+─────────────────────────────────────────────────────────────────────
 Age: Extremes of age
 Physiologic: Bright light, Near reaction, Sleep
 Pharmacologic: Local: Parasympathomimetics
                Systemic: Morphine, Pesticides
 Anaesthesia: 3rd stage
-Neurologic: Sympathetic paralysis (Horner’s syndrome)
+Neurologic: Sympathetic paralysis (Horner's syndrome)
             Pontine hemorrhage
 Ocular conditions: Acute iridocyclitis
                    Trauma
-                      Mydriasis
+
+(No picture on this slide. The bullet leads — Age, Physiologic, Pharmacologic,
+Anaesthesia, Neurologic, Ocular conditions — are printed in red, the content in
+white.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 4 — Mydriasis
+─────────────────────────────────────────────────────────────────────
 Age: Adolescents
 Physiologic: In the dark, Excitement, Death
 Pharmacologic: Parasympatholytics, Sympathomimetics
 Anaesthesia: 2nd, 4th stages
 Neurologic: Sympathetic irritation
-           Parasympathetic paralysis: 3rd nerve paralysis
+            Parasympathetic paralysis: 3rd nerve paralysis
 Ocular conditions: Acute congestive glaucoma
                    Trauma
                    Optic atrophy, Optic neuritis
                    Retinal detachment (total)
-Light Reaction
-Relative Afferent Pupillary Defect
 
-               Marcus Gunn
-                  Pupil
-Near Reaction
-       Argyll Robertson Pupil
+(No picture. Same red-lead / white-content layout as slide 3. Note the deck
+splits the neurologic line into irritation vs paralysis, and that
+Pharmacologic here has no Local/Systemic split, unlike slide 3.)
 
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 5 — Light Reaction
+─────────────────────────────────────────────────────────────────────
+Heading only. One large DIAGRAM fills the slide.
+
+DIAGRAM — a schematic of the brainstem and midbrain seen from above/behind,
+with both eyes drawn at the bottom and one hand holding a torch shining into
+the eye on the right of the picture. The afferent limb is drawn in blue and the
+efferent limb in red, and both are drawn as crossing pairs so that the reflex
+reaches BOTH eyes from one illuminated eye.
+
+Labels printed on the diagram, top to bottom:
+  • Superior colliculus
+  • Pretectal nucleus
+  • Lateral geniculate body
+  • Edinger-Westphal nucleus
+  • 3rd Nerve
+  • Ciliary ganglion
+  • Sphincter pupillae   (labelling the iris of the two eyes at the bottom)
+
+The two nuclei at the top (pretectal and Edinger-Westphal) are drawn as paired
+yellow circles left and right of the midline with the connecting fibres shown
+decussating between them — that decussation is the whole point of the figure
+and is drawn rather than written.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 6 — Relative Afferent Pupillary Defect
+─────────────────────────────────────────────────────────────────────
+Heading. The only other printed text is a red caption:
+
+Marcus Gunn Pupil
+
+PHOTOGRAPH SERIES (left of the slide) — four stacked clinical photographs of
+the SAME patient's two eyes, a swinging-flashlight test read from top to
+bottom. A black arrow is drawn under the eye being illuminated in each frame:
+
+  Frame 1 — no arrow. Both pupils small and equal (baseline).
+  Frame 2 — arrow beneath the eye on the LEFT of the photograph. BOTH pupils
+            are dilated.
+  Frame 3 — arrow beneath the eye on the RIGHT of the photograph. BOTH pupils
+            are constricted.
+  Frame 4 — arrow beneath the eye on the LEFT of the photograph again. BOTH
+            pupils are dilated again.
+
+So the eye on the LEFT of the photograph is the defective one: light on it
+produces less constriction — the pupils actually dilate as the torch swings
+across to it — while light on the fellow eye constricts both.
+
+DIAGRAM (right of the slide) — a simple line drawing of two eyes as two large
+circles. The eye on the LEFT has a SMALL black pupil; the eye on the RIGHT has
+a LARGER black pupil. A small square light source is drawn below and between
+them with rays directed at the left circle. Same teaching as the photographs,
+reduced to a line drawing: light directed into one eye, unequal constriction.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 7 — Near Reaction
+─────────────────────────────────────────────────────────────────────
+Heading only. Two side-by-side pictures, no bullets at all.
+
+PICTURE 1 (left) — a composite headed "From Front of the Eye to Back of the
+Brain": a cutaway of a head in profile with the eye at the front and the
+occipital lobe at the back, and an inset at the top left showing the retinal
+cell layers. White arrows run backwards from the eye to the occipital pole and
+a red arrow runs forward again.
+Labels printed on it: Retina · Light (twice, once on the inset and once at the
+eye) · Axons · Bipolar Cell · Rod Cell · Cone Cell · Ganglion Cell · Fovea ·
+Optic Nerve · Lateral Geniculate Nucleus (LGN) · Primary Visual Cortex (V1).
+
+PICTURE 2 (right) — a purple-backed figure headed "Visual Pathways", an
+inferior view of the brain with both globes at the top and the pathway drawn
+back to the occipital lobes.
+Labels printed on it, top to bottom in purple boxes: Eye · Optic nerve ·
+Optic chiasm · Optic tract · Lateral geniculate nucleus · Optic radiation ·
+Primary visual cortex.
+
+⚠️ NOTE. The heading is "Near Reaction" but NEITHER picture shows accommodation,
+convergence or pupillary constriction to a near target — both are afferent
+visual-pathway figures. The near reflex arc (accommodation, convergence,
+miosis) is NOT drawn anywhere on this slide.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 8 — Argyll Robertson Pupil
+─────────────────────────────────────────────────────────────────────
 Affection of pretectal area
 Small pupils
 Light Near dissociation
 Neurosyphilis
 DM, Alcoholism, Encephalitis
-    Dorsal Mid Brain Syndrome
 
+PICTURE 1 (top right, small) — the same midbrain schematic used on slide 5,
+reduced: the paired yellow pretectal and Edinger-Westphal nuclei with the blue
+afferent and red efferent limbs. It is placed beside "Affection of pretectal
+area" to localise the lesion. No new labels are legible on it at this size.
+
+PICTURE 2 (below it) — a clinical photograph of an adult face showing both
+eyes. Both pupils are SMALL. The irides are dark and the pupils are markedly
+miotic and irregular in outline.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 9 — Dorsal Mid Brain Syndrome
+─────────────────────────────────────────────────────────────────────
 Pineal body tumors, Stroke, MS
-
 Light Near dissociation
-
 Upward gaze paralysis
-
 Convergence-retraction nystagmus
-
 Lid retraction
-Sympathetic Pathway
-Horner Syndrome
 
+(No picture on this slide — bullets only. Note that light-near dissociation is
+listed here AND on slide 8; those are the deck's only two causes of it.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 10 — Sympathetic Pathway
+─────────────────────────────────────────────────────────────────────
+Heading only. One large numbered DIAGRAM fills the slide, drawn in blue on
+cream: a sagittal brain and brainstem on the left, the spinal cord and the
+carotid running up on the right, and the globe with its nerve supply top right.
+
+The six numbered stations printed on the diagram:
+  ① hypothalamus
+  ② T1
+  ③ superior cervical ganglion
+  ④ carotid artery
+  ⑤ cavernous sinus to nasociliary nerve and ophthalmic artery
+  ⑥ dilator pupillae
+     lacrimal glands
+     Müller's muscles
+     orbital vessels
+
+The blue line is drawn continuously from ① down the cord to ②, out to ③ on the
+sympathetic chain, up along ④, through ⑤ into the orbit, and finally to the
+structures at ⑥ — i.e. the three-neurone sympathetic chain is taught entirely
+as a numbered route rather than in prose.
+
+⚠️ Faint text from an underlying slide layer shows through the cream diagram in
+the upper middle of the picture and is not readable — [obscured by the image].
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 11 — Horner Syndrome
+─────────────────────────────────────────────────────────────────────
 Miosis
 Dilation Lag
 Ptosis
 Apparent enophthalmos
 Anhydrosis
 Heterochromia (Congenital)
-          Anisocoria
+
+PHOTOGRAPH (right of the bullets) — a clinical photograph of a young adult's
+two eyes and brows. The eye on the LEFT of the photograph has a PALE
+BLUE-GREY iris and a SMALL pupil; the eye on the RIGHT of the photograph has a
+DARK BROWN iris and a distinctly LARGER pupil. The palpebral fissure of the
+left-of-photograph eye is slightly narrower than its fellow.
+
+So the photograph shows all three of the printed signs it can show at once —
+miosis, mild ptosis and congenital heterochromia — on the same eye.
 
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 12 — Anisocoria
+─────────────────────────────────────────────────────────────────────
+Heading, then two large close-up clinical photographs side by side with a
+caption under each. Those two captions are the only body text on the slide:
+
+  In the Light   (printed in white, under the left photograph)
+  In the Dark    (printed in blue, under the right photograph)
+
+PHOTOGRAPH 1 (In the Light) — a close-up of a single hazel/brown iris in bright
+illumination, with a bright corneal light reflex on the lower nasal cornea. The
+pupil is SMALL.
+
+PHOTOGRAPH 2 (In the Dark) — a close-up of the same style of hazel/brown iris
+in dim illumination, the conjunctiva more injected and the corneal reflex
+smaller. The pupil is LARGER than in photograph 1, but not hugely so.
+
+The pair is printed to make one point that is never written down: an
+anisocoria must be measured in both light and dark, because which of the two
+pupils is the abnormal one depends on which condition exaggerates the
+difference.
 
 
-In the Light           In the Dark
-The Visual Pathway
-Optic Nerve
-Optic Chiasma
+─────────────────────────────────────────────────────────────────────
+SLIDE 13 — The Visual Pathway
+─────────────────────────────────────────────────────────────────────
+Heading only. One large three-dimensional DIAGRAM of the whole pathway on a
+black ground, the pathway rendered in translucent blue with the two globes at
+the top drawn in cyan. This is the deck's overview slide; slides 14–23 then
+take it station by station.
+
+Every label printed on the diagram, in the order the pathway runs (each label
+is drawn in a different colour with a leader line to its structure):
+  • Retina                    (magenta, to the back of each globe)
+  • Optic Nerve               (red, to the nerve leaving the right globe)
+  • Optic Chiasm              (red, to the midline crossing)
+  • Optic Tract               (blue, to the tract sweeping round the midbrain)
+  • Lateral Geniculate Nucleus (yellow, to the bulge at the end of the tract)
+  • Optic Radiation           (purple, to the fan spreading backwards)
+  • Primary Visual Cortex     (cyan, to the occipital pole at the bottom)
+
+No field defects are drawn on this slide — it is the anatomy alone.
 
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 14 — Optic Nerve
+─────────────────────────────────────────────────────────────────────
+Heading only, then a picture and a field figure. No bullets.
+
+PICTURE — an inferior (ventral) view of the brain, drawn in colour, with both
+globes at the top in orange and the optic nerves and chiasm drawn in pale
+blue-violet running back to the tracts. A thick RED BAR is drawn across ONE
+optic nerve — the nerve on the LEFT of the picture — marking the lesion site.
+Labels printed on the picture, in purple boxes at the right edge:
+  • Eye
+  • Op[tic] ner[ve]        ← [text cut off in the original: the picture runs
+                             off the right-hand edge of the slide and this
+                             label is sliced through vertically]
+  • [a third purple label sits lower on the right edge and is cut off
+     completely by the slide edge — only its purple block is visible;
+     from the identical figure on slide 7 it is the optic chiasm label]
+
+FIELD FIGURE (below the picture, on a white panel) — two circles side by side:
+  • LEFT circle  — outline only, entirely unfilled = the field is INTACT.
+  • RIGHT circle — entirely SOLID BLACK = the WHOLE field of that eye is LOST.
+
+So the defect taught here is TOTAL BLINDNESS OF ONE EYE — a complete monocular
+field loss — from a lesion of one optic nerve, with the fellow eye untouched.
+(Compare slide 24 row 1, which prints the same defect with its columns
+labelled.) The slide does not say which anatomical side the black circle
+belongs to; it prints only the pair.
 
 
-                Bitemporal
-                Hemianopia
-Optic Chiasma
+─────────────────────────────────────────────────────────────────────
+SLIDE 15 — Optic Chiasma
+─────────────────────────────────────────────────────────────────────
+Heading, three pictures, and one red caption. No bullets.
+
+Red caption (bottom right):
+  Bitemporal Hemianopia
+
+PICTURE 1 (top left) — a stippled anatomical drawing looking down on the
+sella: the chiasm drawn in pale blue as an X, the internal carotid arteries in
+RED on either side, and the pituitary in the dotted circle beneath the middle
+of the X. No text labels.
+
+PICTURE 2 (bottom left) — a CORONAL SECTION through the pituitary fossa and
+both cavernous sinuses, the pituitary in orange, the chiasm in yellow above it,
+the cavernous sinus contents in red and yellow either side.
+Labels printed on it:
+  • Pituitary   (top left)
+  • Chiasm      (top, over the yellow band)
+  and, as a leader-line list down the right-hand side, the cranial nerves in
+  the cavernous sinus:
+  • 2nd
+  • 3rd
+  • 4th
+  • 5th(1)
+  • 5th(2)
+  • 6th
+
+PICTURE 3 (middle) — the deck's recurring colour schematic of the whole
+pathway, with COLOURED BARS marking the classic lesion sites. The two retinas
+are drawn at the top with the nasal fibres in one colour and the temporal in
+another so the decussation is visible; a CYAN bar is drawn across the middle of
+the CHIASM. Other bars (green, magenta, yellow) mark the nerve, the tract and
+the radiations; a red ellipse rings the visual cortex at the bottom.
+Labels printed on it, top to bottom:
+  • Optic Nerve
+  • Optic Chiasm
+  • Optic Tract
+  • lateral geniculate
+  • Optic Radiations
+  • Visual Cortex
+
+FIELD FIGURE (right, on a white panel) — two circles:
+  • LEFT circle  — the LEFT half is solid BLACK, the right half clear.
+  • RIGHT circle — the RIGHT half is solid BLACK, the left half clear.
+i.e. the OUTER (temporal) half of each eye's field is lost and the inner
+(nasal) halves are spared — BITEMPORAL HEMIANOPIA, as the caption says.
 
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 16 — Optic Chiasma
+─────────────────────────────────────────────────────────────────────
+Same heading as slide 15, a different lesion. One picture, one field figure,
+one red caption. No bullets.
+
+Red caption (right):
+  Binasal Hemianopia
+
+FIELD FIGURE (top of the white panel) — two circles, and this pair IS labelled,
+which makes it the deck's clearest statement of the field convention:
+  • Circle labelled "LE" — the RIGHT half of the circle is SOLID BLACK; the
+    left half is clear.
+  • Circle labelled "RE" — the LEFT half of the circle is SHADED (stippled
+    grey-green); the right half is clear. A small semicircular notch is drawn
+    at the centre of the shaded half.
+i.e. the INNER (nasal) half of each eye's field is lost — BINASAL HEMIANOPIA.
+The LE loss is drawn solid and the RE loss stippled; the deck does not say
+whether the difference in shading means a difference in density.
+
+PICTURE (below) — a stylised drawing of the chiasm in YELLOW seen from above,
+with the two optic nerves running forward and the tracts back, and RED masses
+drawn pressing on the chiasm from BOTH SIDES (the lateral aspects), one on each
+side. Dotted outlines show the uncompressed course. A black arrow points at the
+centre of the chiasm and a blue arrow at the right-hand tract. No text labels
+are printed on this picture.
+
+The teaching point drawn but not written: bitemporal loss comes from CENTRAL
+(midline) chiasmal compression, binasal loss from BILATERAL LATERAL
+compression of the chiasm.
 
 
-                 Binasal
-                Hemianopia
-              Optic Tract
+─────────────────────────────────────────────────────────────────────
+SLIDE 17 — Optic Tract
+─────────────────────────────────────────────────────────────────────
+Heading, two pictures, one red caption. No bullets.
+
+Red caption (under the field figure):
+  Contralateral homonymous hemianopia (incongruous)
+
+PICTURE 1 (top left) — a colour ANATOMICAL PHOTOGRAPH of a dissected brain
+seen from below, showing the chiasm, the optic tracts and the midbrain. It is
+annotated with YELLOW NUMBERS placed on individual structures: 1, 2, 3, 4, 7,
+8, 9, 10 and 12 are visible; 12 is partly cut where the picture ends.
+⚠️ NO KEY TO THESE NUMBERS IS PRINTED ON THE SLIDE OR ANYWHERE ELSE IN THE
+DECK — the numbers name nothing that a reader of this file can recover.
+
+PICTURE 2 (right) — the same colour pathway schematic used on slide 15, with
+the same labels: Optic Nerve · Optic Chiasm · Optic Tract · lateral geniculate ·
+Optic Radiations · Visual Cortex. Here the bar of interest sits on the TRACT.
+
+FIELD FIGURE (below picture 1, white panel) — two circles:
+  • LEFT circle  — LEFT half solid BLACK.
+  • RIGHT circle — LEFT half solid BLACK.
+i.e. the SAME side (the left half) is lost in BOTH eyes — a LEFT HOMONYMOUS
+HEMIANOPIA, which for a right-sided tract lesion is "contralateral". The two
+black halves are drawn slightly UNEQUAL, which is the figure's way of saying
+"incongruous".
+
+A miniature duplicate of the same field pair is printed again to the right of
+the caption.
 
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 18 — Lateral Geniculate Body
+─────────────────────────────────────────────────────────────────────
+Heading, three pictures, no bullets, no field figure on this slide.
+
+PICTURE 1 (left) — a colour ANATOMICAL PHOTOGRAPH of a dissected brain from
+below, wider than the one on slide 17 and showing the optic radiations sweeping
+back to the occipital lobes. Annotated with the same YELLOW NUMBERS: 1, 2, 3,
+4, 5, 6, 7, 8, 9, 10, 11, 12. Printed along its lower border:
+  Copyright 1997 The Anatomy Project
+⚠️ Again NO KEY to the numbers is printed anywhere in the deck.
+
+PICTURE 2 (top right) — a cream-backed DIAGRAM of the LGN in cross-section,
+drawn as the folded knee-shaped body with its SIX LAYERS numbered ① to ⑥ from
+the ventral (magnocellular) end outward, and two layers additionally marked K.
+No other text.
+
+PICTURE 3 (bottom right) — a pink-backed DIAGRAM of the same six layers drawn
+as stacked leaves, coloured alternately pink and blue, with a leader-line list
+on the right giving which eye each layer receives:
+  • contralateral (6)
+  • ipsilateral (5)
+  • contralateral (4)
+  • ipsilateral (3)
+  • ipsilateral (2)
+  • contralateral (1)
+  and, at the left, the label:
+  • lateral geniculate nucleus
+  A further label runs along the very top of this picture and is sliced by the
+  picture's own upper border — [text cut off in the original].
 
 
-Contralateral homonymous
-hemianopia (incongruous)
-Lateral Geniculate Body
-Lateral Geniculate Body
+─────────────────────────────────────────────────────────────────────
+SLIDE 19 — Lateral Geniculate Body
+─────────────────────────────────────────────────────────────────────
+Same heading as slide 18. One picture, one field figure, one red caption.
+
+Red caption (bottom right):
+  Contralateral homonymous hemianopia (incongruous)
+
+PICTURE — the SAME dissected-brain photograph as slide 18 (numbers 1–12,
+"Copyright 1997 The Anatomy Project"), but now with a thick RED BAR drawn
+across the pathway on the LEFT of the picture, just behind the chiasm, marking
+the lesion site.
+
+FIELD FIGURE (right, white panel) — two circles, both with the LEFT half solid
+BLACK and the right half clear, the two black halves drawn slightly unequal.
+i.e. a LEFT HOMONYMOUS HEMIANOPIA, incongruous. A miniature duplicate of the
+pair is printed again beneath the caption.
+
+⚠️ NOTE, because it is the kind of thing a question turns on: the caption on
+this LATERAL GENICULATE BODY slide is word-for-word the caption used on the
+OPTIC TRACT slide (17), incongruity included. The deck draws no distinction
+between the two, and prints no congruous-vs-incongruous rule as text.
 
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 20 — Optic Radiation
+─────────────────────────────────────────────────────────────────────
+Heading, two pictures, no bullets, no field figure on this slide.
+
+PICTURE 1 (left) — a colour ANATOMICAL PHOTOGRAPH of a brain dissected from
+below on a black ground, the brainstem removed and the optic radiations
+displayed as two great white fans sweeping backwards and laterally from the
+geniculate bodies to the occipital lobes. No text labels.
+
+PICTURE 2 (right) — a two-panel line DIAGRAM explaining Meyer's loop.
+  • Left panel, captioned "As diagrammed...": the LGN drawn as a small hook
+    with a RED fibre bundle leaving it and looping FORWARD before turning back.
+    Labels: LGN · Meyer's loop.
+  • Right panel, captioned "...as seen from the side": a head in profile with
+    the same red bundle looping forward into the temporal lobe and back to the
+    occipital pole, and a wedge-shaped visual field drawn in front of the face
+    — the UPPER wedge coloured RED and the LOWER wedge coloured dark
+    PURPLE/BLACK.
+    Label: Meyer's loop.
+
+The colour coding is the teaching point and is not written down: the fibres
+that loop forward through the temporal lobe (Meyer's loop, red) carry the
+SUPERIOR field.
 
 
-            Contralateral homonymous
-            hemianopia (incongruous)
-Optic Radiation
-   Optic Radiation
+─────────────────────────────────────────────────────────────────────
+SLIDE 21 — Optic Radiation
+─────────────────────────────────────────────────────────────────────
+Heading, one picture, two labelled field boxes, one red caption.
 
-                              Pie in the sky
+Red caption (bottom, spanning the slide):
+  Contralateral homonymous quadrantanopia
+
+PICTURE (left) — a colour LATERAL VIEW of a whole brain with the lobes named.
+TWO short RED BARS are drawn on it, one above the other, marking two lesion
+sites: the upper bar sits in the PARIETAL lobe just behind the central sulcus,
+the lower bar in the TEMPORAL lobe.
+Labels printed on the picture:
+  • Central sulcus
+  • Precentral gyrus
+  • Postcentral gyrus
+  • Lateral sulcus
+  • Parietal lobe   (in bold)
+  • Frontal lobe    (in bold)
+  • Occipital lobe  (in bold)
+  • Temporal lobe   (in bold)
+  • Cerebellum
+  • Pons
+  • Medulla oblongata
+
+FIELD BOX 1 (top right), captioned in blue:  Pie in the sky
+  Two circles. In BOTH circles the UPPER-LEFT QUADRANT is solid BLACK; the
+  other three quadrants are clear. i.e. a LEFT SUPERIOR homonymous
+  quadrantanopia — the defect of the TEMPORAL lesion (Meyer's loop).
+
+FIELD BOX 2 (below it), captioned in blue:  Pie in the floor
+  Two circles. In BOTH circles the LOWER-LEFT QUADRANT is solid BLACK; the
+  other three quadrants are clear. i.e. a LEFT INFERIOR homonymous
+  quadrantanopia — the defect of the PARIETAL lesion.
+
+⚠️ The slide prints the two names and the two red bars but does NOT draw a
+line joining each bar to its box; the pairing above is read off the anatomy
+(temporal loop = superior field), which the deck taught on slide 20.
 
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 22 — Occipital Cortex
+─────────────────────────────────────────────────────────────────────
+Heading only, then one large colour DIAGRAM. No bullets and no field figure.
+
+DIAGRAM — three linked panels. Top left, a small sagittal brain with a box
+drawn round the occipital lobe; a thick purple arrow leads from that box to a
+magnified cut-away of the LEFT occipital lobe filling the lower right of the
+figure. To the right of the brain, the RIGHT VISUAL FIELD is drawn as a
+half-ellipse coloured in bands — a dark orange band at its centre and paler
+yellow bands peripherally — with leader lines running from each band into the
+corresponding part of the calcarine cortex.
+Labels printed on it:
+  • Right visual field   (heading the half-ellipse, top right)
+  • Macula               (pointing at the dark central band of that field)
+  • Parieto-occipital sulcus
+  • Calcarine sulcus
+  • Left occipital lobe  (in bold, beneath the magnified panel)
+
+The point drawn rather than written: the macula projects to the OCCIPITAL POLE
+and occupies a disproportionately large area of cortex, while the peripheral
+field projects forward along the calcarine sulcus.
 
 
-                              Pie in the floor
+─────────────────────────────────────────────────────────────────────
+SLIDE 23 — Occipital Cortex
+─────────────────────────────────────────────────────────────────────
+Heading, one picture, one field figure, one red caption (two lines).
+
+Red caption (bottom):
+  Contralateral homonymous hemianopia
+  (congruous with macular sparing)
+
+PICTURE (left) — a colour three-dimensional DIAGRAM of the pathway seen from
+above and behind, the thalamus and midbrain in pink and the occipital cortex in
+green. At the very top, the visual field is drawn as a curved band split in
+two: the left half labelled "Left visual field" on a RED ground, the right half
+labelled "Right visual field" on a GREEN ground. Both globes are drawn below
+it with their retinal halves marked. A large RED CIRCLE is drawn over the
+occipital pole on one side, marking the lesion.
+Labels printed on it:
+  • Left visual field   (red band, top left)
+  • Right visual field  (green band, top right)
+  • Temporal            (outer side of the left globe)
+  • Nasal               (inner side)
+  • Temporal            (outer side of the right globe)
+  • Optic chiasm
+  • Pulvinar nucleus
+  • Lateral geniculate nucleus
+  • Superior colliculus
+  • Optic radiation
+  • Primary visual cortex
+
+FIELD FIGURE (right, white panel) — two circles. In BOTH circles the LEFT half
+is solid BLACK, and in BOTH a small ROUNDED NOTCH is cut out of the black at
+the very centre of the circle, leaving the central few degrees white.
+i.e. a LEFT HOMONYMOUS HEMIANOPIA WITH MACULAR SPARING. The two black halves
+are drawn IDENTICAL to each other — that identity is the figure's way of
+saying "congruous", in contrast to the deliberately unequal halves on slides
+17 and 19.
 
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 24 — [no heading printed; one full-slide summary figure]
+─────────────────────────────────────────────────────────────────────
+⚠️ THIS SLIDE HAS NO TITLE AND NO TEXT OF ITS OWN. It is a single borrowed
+figure filling the slide, and it is the summary the whole second half of the
+deck has been building to: five lesion sites lettered A–E on one pathway
+diagram, each joined by an arrow to the pair of visual fields it produces.
+
+LEFT HALF — an inferior view of the brain in pink, with both globes at the top
+labelled "Left" (left of the picture) and "Right" (right of the picture), the
+pathway drawn from retina to striate cortex. Labels down the left side:
+  • Optic nerve
+  • Optic chiasm
+  • Optic tract
+  • Lateral geniculate nucleus
+  • Optic radiation
+  • Striate cortex
+
+Five BLACK BARS mark the lesions, each lettered:
+  A — across the optic nerve on the RIGHT of the picture, in front of the
+      chiasm
+  B — vertically across the MIDLINE of the chiasm
+  C — across the optic tract on the RIGHT of the picture
+  D — across the optic radiation on the RIGHT of the picture, at its upper
+      (anterior) part
+  E — across the optic radiation on the RIGHT of the picture, far back, close
+      to the striate cortex
+
+RIGHT HALF — ten field circles in two labelled columns and five rows, one row
+per lesion. The column headings are printed at the top:
+  "Left monocular visual field"   |   "Right monocular visual field"
+    (the right heading is sliced by the slide edge and reads
+     "Right monocular visual fielc" — [text cut off in the original])
+BLACK = the part of the field LOST, GREY = the part still SEEN.
+
+  ROW 1 ← lesion A (right optic nerve)
+     Left field  : entirely GREY — completely normal.
+     Right field : entirely BLACK — TOTAL BLINDNESS of the right eye.
+
+  ROW 2 ← lesion B (midline chiasm)
+     Left field  : LEFT half black, right half grey.
+     Right field : RIGHT half black, left half grey.
+     = BITEMPORAL HEMIANOPIA (the outer half of each eye's field lost).
+
+  ROW 3 ← lesion C (right optic tract)
+     Left field  : LEFT half black, right half grey.
+     Right field : LEFT half black, right half grey.
+     = LEFT HOMONYMOUS HEMIANOPIA (same side lost in both eyes,
+       contralateral to the right-sided lesion). Complete, no sparing.
+
+  ROW 4 ← lesion D (right optic radiation, upper/anterior)
+     Left field  : UPPER-LEFT quadrant black, other three quadrants grey.
+     Right field : UPPER-LEFT quadrant black, other three quadrants grey.
+     = LEFT SUPERIOR HOMONYMOUS QUADRANTANOPIA ("pie in the sky").
+
+  ROW 5 ← lesion E (right optic radiation, posterior / striate cortex)
+     Left field  : LEFT half black, EXCEPT a small grey notch at the very
+                   centre; right half grey.
+     Right field : LEFT half black, EXCEPT the same small grey central notch;
+                   right half grey.
+     = LEFT HOMONYMOUS HEMIANOPIA WITH MACULAR SPARING.
+
+Reading rows 3, 4 and 5 together is what the figure exists for: the further
+back along the pathway the lesion sits, the more the two eyes' defects match
+each other, and the more likely the macula is spared.
 
 
-Contralateral homonymous quadrantanopia
-Occipital Cortex
-   Occipital Cortex
+─────────────────────────────────────────────────────────────────────
+SLIDE 25 — Thank You
+─────────────────────────────────────────────────────────────────────
+Thank You
+
+(Closing slide. Nothing else printed.)
 
 
+─────────────────────────────────────────────────────────────────────
+NOT COVERED ANYWHERE IN THIS DECK
+─────────────────────────────────────────────────────────────────────
+Measured by reading all 25 slides at four-up, plus enlarged single-slide
+re-reads of slides 6, 11, 14, 16, 21 and 24. Each item below names a SPECIFIC
+thing looked for and not found — not a topic dismissed in general.
 
+PUPIL
+ 1. ADIE'S / HOLMES-ADIE / TONIC PUPIL is never mentioned. The deck names
+    exactly three pupil syndromes: Marcus Gunn (slide 6), Argyll Robertson
+    (slide 8) and Horner (slide 11), plus Dorsal Mid Brain Syndrome (slide 9).
+    Adie appears on none of the 25 slides.
+ 2. PHARMACOLOGICAL PUPIL TESTING is absent entirely. No cocaine, no
+    apraclonidine, no hydroxyamphetamine, no pilocarpine (weak or full
+    strength), no atropine. The ONLY drug names printed anywhere in the whole
+    deck are "Morphine" and "Pesticides" on slide 3, and the drug CLASSES
+    parasympathomimetics / parasympatholytics / sympathomimetics on slides 3
+    and 4. There is therefore nothing here on localising a Horner to first-,
+    second- or third-order neurone, and no slide distinguishes preganglionic
+    from postganglionic lesions.
+ 3. RAPD IS SHOWN BUT NEVER GRADED. Slide 6 gives four photographs and the
+    name "Marcus Gunn Pupil" and nothing else — no 1+ to 4+ scale, no
+    neutral-density-filter quantification, and the phrase "swinging flashlight
+    test" is not printed on the slide even though the test is what the four
+    frames show.
+ 4. The words DIRECT and CONSENSUAL do not appear. Slide 5 draws the
+    decussation that produces the consensual response but never names it, and
+    no slide contrasts direct with consensual loss.
+ 5. AMAUROTIC PUPIL / absolute afferent pupillary defect is not named. Slide
+    14 draws the total monocular field loss of an optic nerve lesion but says
+    nothing about the pupil in that eye.
+ 6. NO ANISOCORIA ALGORITHM. Slide 12 prints only the two words "In the Light"
+    and "In the Dark" over two photographs; there is no rule for deciding
+    which pupil is abnormal, no mention of physiological anisocoria, and no
+    figure for how much inequality is normal.
+ 7. THIRD NERVE PALSY is a single line on slide 4 ("Parasympathetic paralysis:
+    3rd nerve paralysis") and nowhere else. No ptosis, no ocular deviation, no
+    pupil-sparing-versus-pupil-involving distinction, no aneurysm.
 
-Contralateral homonymous hemianopia
-(congruous with macular sparing)
-Thank You
-
+VISUAL PATHWAY
+ 8. NO REAL VISUAL-FIELD PRINTOUT APPEARS ANYWHERE. Every one of the deck's
+    field figures — slides 14, 15, 16, 17, 19, 21, 23 and 24 — is a schematic
+    circle shaded black and grey. There is no Humphrey or Goldmann printout,
+    no greyscale plot, no decibel numbers, and no isopter.
+ 9. NO METHOD OF FIELD TESTING is described. Confrontation, perimetry,
+    kinetic versus static, the Amsler grid and the blind spot are all absent
+    as words and as pictures.
+10. NO CHIASMAL LESION IS NAMED. Slides 15 and 16 draw the causative
+    compression — central for bitemporal, bilateral for binasal — but the
+    words pituitary adenoma, craniopharyngioma, meningioma and aneurysm are
+    printed nowhere. The only intracranial pathology named in the entire deck
+    is on slide 9: "Pineal body tumors, Stroke, MS".
+11. THE YELLOW NUMBERS 1–12 ON SLIDES 17, 18 AND 19 HAVE NO KEY. They are
+    printed on three separate slides and defined on none of the 25.
+12. CORTICAL BLINDNESS, ANTON'S SYNDROME and the RIDDOCH PHENOMENON are not
+    mentioned. Slides 22 and 23 stop at the unilateral occipital lesion; the
+    consequence of BILATERAL occipital damage is never drawn or stated.
+13. THE NEAR REFLEX ARC IS NOT ACTUALLY TAUGHT. Slide 7 is headed "Near
+    Reaction" but both of its pictures are afferent visual-pathway figures —
+    accommodation, convergence and the near-reflex pathway itself appear
+    nowhere in the deck, even though light-near DISSOCIATION is listed twice
+    (slides 8 and 9).
+14. CONGRUITY IS DRAWN, NEVER DEFINED. The words "incongruous" (slides 17, 19)
+    and "congruous" (slide 23) appear only inside the red captions; no slide
+    states the rule that congruity increases as the lesion moves posteriorly.
+
+WHOLE-DECK NEGATIVES
+15. NOTHING THERAPEUTIC APPEARS ANYWHERE. There is no management slide, no
+    treatment, no surgery, no drug dose and no follow-up interval in any of
+    the 25 slides. This is a purely descriptive anatomy-and-signs deck.
+16. NO INVESTIGATION IS MENTIONED — no CT, no MRI, no OCT, no VEP, no
+    serology (including none for the neurosyphilis named on slide 8).
+17. NO EPIDEMIOLOGY, NO PROGNOSIS, NO REFERENCES AND NO READING LIST. The
+    deck carries no bibliography slide and cites no textbook.
