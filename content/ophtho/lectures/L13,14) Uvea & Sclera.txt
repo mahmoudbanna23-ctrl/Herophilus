@@ -1,0 +1,738 @@
+L13,14) Uvea & Sclera.pdf — "5TH YEAR OPHTHALMOLOGY / CLINICAL ROUND",
+Department of Ophthalmology, Alexandria University
+==========================================
+41 slides. READ VISUALLY 2026-08-24 and cached here.
+
+⚠️ THIS DECK IS IMAGE-ONLY. `pdftotext` returns 41 characters from the whole
+deck — effectively nothing. It was rendered at 110 dpi into 11 four-up contact
+sheets and read as images. Do not try to re-extract it with pdftotext; it will
+look like an empty file and is not.
+
+⚠️ NO LECTURER IS NAMED. The title slide prints only "5TH YEAR OPHTHALMOLOGY /
+CLINICAL ROUND / Department of Ophthalmology / Alexandria University". There is
+no author, no date and no reference list anywhere in the 41 slides.
+
+THE SEAM. This is a double lecture and the two halves are cleanly divided by
+their own title slides:
+  • Slide 2  — "Uvea"   → UVEA material runs slides 2–27
+  • Slide 28 — "SCLERA" → SCLERA material runs slides 28–40
+  • Slide 41 — "Thank you"
+Within the uvea half the internal seam is slide 10 ("UVEITIS" title slide):
+slides 3–9 are IRIS morphology/defects, slides 10–27 are uveitis.
+
+⚠️ CONVENTIONS ADOPTED HERE. This deck is heavily photographic — roughly half the
+slides carry clinical photographs, slit-lamp views or B-scans. A picture-only
+slide still gets a full block below, describing what the picture shows and
+transcribing every label printed on it; the appearance IS the teaching point in
+uveitis and scleritis, so "picture only" is information, not a blank.
+
+No slide in this deck overflows its text box — nothing is cut off by a slide
+edge, so no `[text cut off in the original]` marks appear below. Two slides
+(9 and 5) print HEADINGS WITH NO CONTENT UNDER THEM; that is recorded where it
+happens and again in the NOT COVERED list, because it is a real gap rather than
+a transcription failure.
+
+Transcribed close to verbatim. Slide text kept as printed, including the
+lecturer's own spelling ("Bechet's disease", "Osteogenesis Ipmerfecta"), the
+stray apostrophe in "Spill-over' anterior uveitis", and the inconsistent
+capitalisation of headings.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 1 — Title
+─────────────────────────────────────────────────────────────────────
+5TH YEAR OPHTHALMOLOGY
+
+CLINICAL ROUND
+
+Department of Ophthalmology
+Alexandria University
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 2 — Uvea (section title slide)
+─────────────────────────────────────────────────────────────────────
+Uvea
+
+(Title slide only, no other text.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 3 — Uveal Tract
+─────────────────────────────────────────────────────────────────────
+Uveal Tract
+ ▪ Iris
+ ▪ Ciliary body
+    ➤ Pars plicata
+    ➤ Pars plana
+ ▪ Choroid
+
+(Alongside: a labelled line diagram of the globe in cross-section, with the
+uveal tract picked out in RED. Labels printed on the figure: Cornea · Iris ·
+Ciliary body · Lens · Vitreous · Retina · Choroid · Sclera.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 4 — IRIS PATTERN
+─────────────────────────────────────────────────────────────────────
+IRIS PATTERN
+
+(Two photographs side by side — a colour close-up of a brown iris lettered
+A–D, and a greyscale iris diagram with leader lines.)
+
+Key printed beneath the photographs:
+ A : Pupillary zone      B: Ciliary zone
+ C: Collarette           D: Contraction furrows
+
+Labels printed on the greyscale figure:
+ Pupil · Collarette · Contraction furrows · Radial furrows · Crypts ·
+ Ciliary zone · Pupillary zone
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 5 — IRIS (SmartArt overview diagram — the iris syllabus)
+─────────────────────────────────────────────────────────────────────
+IRIS
+
+(A branching SmartArt chart. Left column of boxes, top to bottom:)
+ • Colour (heterochromia)
+ • Synechiae
+ • Tremulous iris (iridodonesis)
+ • Iris defect
+ • Rubeosis iridis
+
+(The "Iris defect" box branches to a second column of four boxes:)
+    ➤ Iridectomy
+    ➤ Iridodialysis
+    ➤ Coloboma
+    ➤ Aniridia
+
+⚠️ These are headings only. Nothing on this slide is defined or explained;
+"Tremulous iris (iridodonesis)" in particular is never mentioned again anywhere
+in the deck.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 6 — Iris Colour (heterochromia)
+─────────────────────────────────────────────────────────────────────
+Iris Colour (heterochromia)
+
+It is an ocular condition in which one iris is a different colour from the
+other iris, or where the part of one iris is a different colour from the
+remainder
+
+(Two clinical photographs: a face showing one brown and one blue iris — complete
+heterochromia; and a close-up of a single iris that is orange-brown in one
+sector and blue-grey in the remainder — sectoral heterochromia. No causes are
+listed on the slide.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 7 — Iris Synechiae
+─────────────────────────────────────────────────────────────────────
+Iris Synechiae
+ • Posterior synechiae
+ • Anterior synechiae
+
+(Two photographs. Upper: a diffuse-light photograph of a brown iris with a
+markedly irregular, festooned pupil bound down by posterior synechiae. Lower: a
+slit-lamp optical-section view in the dark, the slit beam crossing cornea, an
+anterior chamber and the iris, demonstrating an anterior synechia at the
+angle.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 8 — Iris defects: Coloboma, Iridodialysis, Iridectomy & Aniridia
+─────────────────────────────────────────────────────────────────────
+Iris defects:
+Coloboma, Iridodialysis, Iridectomy & Aniridia
+
+(Four clinical photographs in a 2×2 block, each captioned on the image:)
+ • "Coloboma"      — an inferiorly extending keyhole-shaped pupil defect
+ • "Iridodialysis" — a crescentic gap at the iris root peripherally, the pupil
+                     itself displaced
+ • "Iridectomy"    — a peripheral sector defect in the superior iris with the
+                     pupil round and central
+ • "Aniridia"      — an eye with essentially no visible iris, the whole lens/red
+                     reflex exposed to the limbus
+
+⚠️ Picture slide only. No text describes, distinguishes or gives the causes of
+these four; the captions above are the whole content.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 9 — Rubeosis iridis
+─────────────────────────────────────────────────────────────────────
+Rubeosis iridis
+ ▪ Causes
+ ▪ Impact
+ ▪ Treatment
+
+⚠️ HEADINGS ONLY — nothing is printed under any of the three. No cause, no
+consequence and no treatment for rubeosis iridis appears anywhere on this slide
+or anywhere else in the deck.
+
+(Three photographs across the foot of the slide: a slit-lamp view of an eye with
+a white/grey pupil and vessels on the iris surface; a close-up of an injected eye
+with fine new vessels running over the iris to the pupil margin; and a fundus /
+retinal-vessel view showing dilated abnormal vessels.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 10 — UVEITIS (section title slide)
+─────────────────────────────────────────────────────────────────────
+UVEITIS
+
+(Title slide only, no other text.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 11 — Etiology of uveitis
+─────────────────────────────────────────────────────────────────────
+Etiology of uveitis
+ • Idiopathic
+ • Infectious
+    • Bacterial: e.g.; TB, syphilis, leprosy, ….
+    • Viral: e.g.; HSV, HZV, CMV,….
+    • Fungal: e.g.; candidiasis,…
+    • Parasitic: e.g.; toxoplasmosis,…
+ • Non-infectious
+    • Immune mediated: e.g.; Bechet's disease, Sarcoidosis, Multiple sclerosis,
+      ankylosing spondylitis,…. etc.
+    • Masquerade syndrome: malignancies such as leukemia, and lymphoma
+    • Trauma
+    • Ocular surgery
+    • Drug induced
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 12 — Uveitis: anatomical classification
+─────────────────────────────────────────────────────────────────────
+Uveitis
+Anatomically, uveitis can be classified into:
+
+1. Anterior uveitis (iritis / iridocyclitis)
+
+2. Intermediate uveitis:
+   Inflammation predominantly involving the pars plana, vitreous, and the
+   peripheral retina.
+
+3. Posterior uveitis: (Choroiditis – Chorioretinitis)
+   Inflammation of the choroid with or without inflammation of the retina.
+
+4. Panuveitis
+   Simultaneous inflammation of all three parts of the uveal tract
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 13 — Anterior uveitis: Clinical pictures — Symptoms
+─────────────────────────────────────────────────────────────────────
+Anterior uveitis
+Clinical pictures:
+❑ Symptoms:
+ ▪ Usually, unilateral
+ ▪ Ocular pain
+ ▪ Red eye
+ ▪ Photophobia
+ ▪ Blurred vision
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 14 — Anterior uveitis: Signs — ciliary injection
+─────────────────────────────────────────────────────────────────────
+Anterior uveitis
+Clinical pictures:
+❑ Signs:
+ ▪ Decreased vision
+ ▪ Ciliary injection
+
+(Clinical photograph: an eye with intense deep injection maximal at and
+immediately around the limbus — circumcorneal / ciliary injection — the redness
+fading towards the fornix.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 15 — Anterior uveitis: Signs — keratic precipitates
+─────────────────────────────────────────────────────────────────────
+Anterior uveitis
+Clinical pictures:
+❑ Signs:
+ ▪ Keratic precipitates (KPs) on the back surface of cornea
+
+(Clinical/slit-lamp photograph: numerous discrete white-yellow deposits
+scattered over the corneal endothelium, densest inferiorly.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 16 — Anterior uveitis: Signs — cells, flare and hypopyon
+─────────────────────────────────────────────────────────────────────
+Anterior uveitis
+Clinical pictures:
+❑ Signs:
+ ▪ Anterior chamber: Cells & flare ± hypopyon
+
+(Slit-lamp photograph in the dark: a bright slit beam sectioning the cornea and
+the anterior chamber, with a layered pale hypopyon visible inferiorly.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 17 — Anterior uveitis: Signs — pupil and IOP
+─────────────────────────────────────────────────────────────────────
+Anterior uveitis
+Clinical pictures:
+❑ Signs:
+ ▪ Pupil
+    • Miosis with sluggish pupillary light reaction.
+    • Irregular shape due to synechiae
+ ▪ IOP: usually decreased but may be normal or increased
+
+(Clinical photograph: a brown iris with a small, slightly irregular pupil and
+diffuse circumcorneal injection.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 18 — Anterior uveitis: Sequelae and complications (1)
+─────────────────────────────────────────────────────────────────────
+Anterior uveitis
+Sequelae and complications
+ ▪ Posterior synechiae
+ ▪ Secondary glaucoma
+
+(Two clinical photographs of pupils grossly distorted into festooned/irregular
+shapes by posterior synechiae — one under slit-lamp illumination, one a colour
+close-up.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 19 — Anterior uveitis: Sequelae and complications (2)
+─────────────────────────────────────────────────────────────────────
+Anterior uveitis
+Sequelae and complications
+ ▪ Complicated Cataract          ▪ Band Shaped Keratopathy
+
+(Two photographs, one under each caption. Left: an eye with a dark iris and a
+dense whitish opacity in the pupillary area — complicated cataract. Right: an
+eye with a horizontal band of grey-white opacity across the interpalpebral
+cornea — band shaped keratopathy.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 20 — Anterior uveitis: Treatment
+─────────────────────────────────────────────────────────────────────
+Anterior uveitis
+Treatment include:
+ ▪ Steroids (Topical ± periocular ± systemic)
+ ▪ Cycloplegic-mydriatic topical medications:
+    ➤ to decrease photophobia and pain from iritis and ciliary spasm
+    ➤ To prevent and break recently formed posterior synechiae
+ ▪ Antiglaucoma medications in case of increased IOP
+ ▪ Control of the causative condition (after doing a systemic work up
+   especially in recurrent cases to reach a definitive diagnosis of the cause of
+   anterior uveitis)
+ ▪ Treatment of secondary ocular complications
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 21 — Intermediate Uveitis: Clinical pictures
+─────────────────────────────────────────────────────────────────────
+Intermediate Uveitis
+Clinical pictures:
+ • Floaters
+ • Diminution of vision
+ • Vitreous cells & vitreous condensations
+ • Snowballs: aggregates of inflammatory cells in the inferior vitreous
+ • Snow-banking: grey white fibrovascular plaques on the inferior pars plana
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 22 — Intermediate Uveitis: Complications
+─────────────────────────────────────────────────────────────────────
+Intermediate Uveitis
+❑ Complications:
+ ➤ Cystoid Macular oedema
+ ➤ Complicated Cataract
+ ➤ Secondary Glaucoma
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 23 — Intermediate Uveitis: Treatment
+─────────────────────────────────────────────────────────────────────
+Intermediate Uveitis
+❑ Treatment
+ ▪ Treatment of the cause
+ ▪ Steroids (periocular - systemic)
+ ▪ Immunosuppressive agents: in non-responding cases and as steroid sparing
+   agents
+ ▪ Surgical intervention: vitrectomy, cryotherapy, laser photocoagulation.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 24 — Posterior Uveitis: Clinical pictures
+─────────────────────────────────────────────────────────────────────
+Posterior Uveitis
+Clinical pictures:
+ • Floaters
+ • Diminution of vision
+ • Vitreous cells, flare and opacities
+ • Choroiditis
+ • Retinitis
+ • Vasculitis
+ • Spill-over' anterior uveitis is common
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 25 — Posterior Uveitis: Complications
+─────────────────────────────────────────────────────────────────────
+Posterior Uveitis
+❑ Complications:
+ ➤ Cystoid Macular oedema
+ ➤ Epiretinal membrane formation
+ ➤ Choroidal neovascularization
+ ➤ Retinal detachment
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 26 — Posterior Uveitis: Treatment
+─────────────────────────────────────────────────────────────────────
+Posterior Uveitis
+❑ Treatment
+ ▪ Treatment of the cause
+ ▪ Systemic Steroids
+ ▪ Immunosuppressive agents: in non-responding cases and as steroid sparing
+   agents
+ ▪ Surgical intervention: Vitrectomy as in tractional retinal detachment
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 27 — Treatment of uveitis (N.B. box)
+─────────────────────────────────────────────────────────────────────
+Treatment of uveitis
+
+N.B.
+ ▪ Corticosteroids are the mainstay of therapy in treating noninfectious
+   causes.
+ ▪ Although infection is an uncommon cause of uveitis, it is important to rule
+   it out before instituting immunosuppressive therapy.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 28 — SCLERA (section title slide — the L13/L14 seam)
+─────────────────────────────────────────────────────────────────────
+SCLERA
+
+(Title slide only, no other text. Everything from here to slide 40 is the
+sclera half of the double lecture.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 29 — Blue sclera / Staphyloma
+─────────────────────────────────────────────────────────────────────
+Blue sclera
+❑ Due to thinning and subsequent transparency of scleral collagen, which allows
+  increased visibility of underlying choroidal pigment
+   E.g., Osteogenesis Ipmerfecta [sic], Buphthalmos
+
+❑ Staphyloma
+   localized protrusion of the sclera lined by uveal tissue (i.e.: bluish in
+   colour)
+
+(Two clinical photographs. Upper: a child's face, both scleras a striking deep
+blue. Lower: an eye with a large dark bluish protrusion of the globe wall
+adjacent to the cornea — a staphyloma.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 30 — Episcleritis
+─────────────────────────────────────────────────────────────────────
+Episcleritis
+ • Inflammation of the episcleral tissues
+ • Relatively common, benign and self-limited cause of red eye
+ • Usually unilateral
+ • Common in female than male (3:1)
+ • Presented with:
+    ➤ Red eye
+    ➤ Mild pain and/or discomfort
+    ➤ Mild localised ocular tenderness
+    ➤ No discharge (if present: minimal & watery)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 31 — Episcleritis: Clinical types
+─────────────────────────────────────────────────────────────────────
+Episcleritis
+❑ Clinical types
+ ▪ Simple (Sectoral or diffuse injection)
+ ▪ Nodular
+
+(Two clinical photographs beside the two types. Upper: an eye with a broad
+sector of bright pink-red superficial injection lateral to the limbus, the
+remaining conjunctiva white — simple/sectoral. Lower: a close-up of a raised
+localised salmon-pink nodule on the globe surface with vessels running over it,
+dated 12 8 2007 on the image — nodular.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 32 — Episcleritis: Causes
+─────────────────────────────────────────────────────────────────────
+Episcleritis
+❑ Causes
+ ▪ Idiopathic (most cases)
+ ▪ Collagen vascular disease ( e.g., rheumatoid arthritis, SLE,..)
+ ▪ Vasculitis ( e.g., polyarteritis nodosa, temporal arteritis, ..)
+ ▪ Inflammatory bowel diseases (Crohn's disease, ulcerative colitis)
+ ▪ Dermatologic disease (Rosacea)
+ ▪ Metabolic disease (gout)
+ ▪ Infections ( e.g., Herpes zoster,…)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 33 — Episcleritis: Management
+─────────────────────────────────────────────────────────────────────
+Episcleritis
+❑ Management:
+ ▪ Oral NSAIDs such as ibuprofen is the main line of treatment
+ ▪ Topical anti-inflammatory agents and lubricants
+ ▪ Topical Steroids
+ ▪ Patients who experience recurrent attacks may require systemic evaluation
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 34 — Scleritis: Anterior scleritis (definition and presentation)
+─────────────────────────────────────────────────────────────────────
+Scleritis
+❑ Anterior scleritis:
+ • Inflammation anterior to the insertion of the rectus muscles.
+ • More common in middle aged female
+ • ± History of autoimmune disease (rheumatoid arthritis,….)
+ • Moderate to severe pain with globe tenderness
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 35 — Scleritis: Anterior scleritis (signs)
+─────────────────────────────────────────────────────────────────────
+Scleritis
+❑ Anterior scleritis:
+ ▪ Localised or diffuse redness
+ ▪ Eye has a characteristic bluish-violet discoloration
+    ➤ Engorgement of the deep episcleral plexus
+    ➤ ± Scleral thinning
+ ▪ Scleral edema
+
+(Two photographs. Upper: an elderly patient's eye, the lower lid retracted by a
+cotton bud, showing intense dusky red-violet inflammation of the globe. Lower: a
+high-magnification view of the deep, large-calibre, straight radial episcleral
+vessels engorged against a violaceous background.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 36 — Scleritis: Necrotizing anterior scleritis / scleromalacia perforans
+─────────────────────────────────────────────────────────────────────
+Scleritis
+❑ Anterior scleritis:
+ • Necrotizing anterior scleritis is the most severe form, with necrosis and
+   exposure of the choroid.
+ • Scleromalacia perforans:
+   Is a rare form of necrotizing anterior scleritis without pain
+
+(Two clinical photographs. Upper: an intensely inflamed red globe with a large
+avascular white necrotic patch of sclera. Lower: a quiet white eye in which the
+sclera has thinned to translucency over a wide area, the dark underlying uvea
+showing through — scleromalacia perforans.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 37 — Scleritis: Posterior scleritis
+─────────────────────────────────────────────────────────────────────
+Scleritis
+❑ Posterior scleritis:
+ • Inflammation posterior to the insertion of the rectus muscles.
+ • Rare
+ • Can be associated with
+    ○ Serous retinal detachment and loss of vision
+    ○ Pain upon eye movement
+ • U/S : Scleral thickening ± RD
+
+(Two B-scan ultrasound images. Upper: an axial B-scan with two arrows marking
+markedly thickened posterior globe wall. Lower: a two-panel figure labelled
+"SCLERITIS" and captioned on the image — "T" sign, panels 2A and 2B, with the
+printed legend: "B-Scan ultrasonography reveals severely thickened sclera (a)
+and a classic T-sign; and anterior nasal choroidal detachments (b).")
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 38 — Scleritis: Causes
+─────────────────────────────────────────────────────────────────────
+Scleritis
+❑ Causes:
+ • Rheumatoid arthritis is the most common association
+ • Other collagen vascular disease (SLE, …….)
+ • Metabolic disease (gout)
+ • Infections (TB, Syphilis, Herpes zoster, …etc)
+ • Chemical or physical injuries
+ • Idiopathic
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 39 — Scleritis: Treatment
+─────────────────────────────────────────────────────────────────────
+Scleritis
+❑ Treatment
+ • Oral non-steroidal anti-inflammatory drugs (NSAIDs)
+ • Systemic corticosteroids
+ • Immunomodulating drugs
+ • Surgical intervention may be required in cases of scleral perforation
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 40 — Blanching effect of Phenylephrine (differentiating table)
+─────────────────────────────────────────────────────────────────────
+Blanching effect of Phenylephrine eye drops to differentiate conjunctivitis,
+episcleritis and anterior scleritis
+
+                   | Phenylephrine 2.5 % | Phenylephrine 10%
+ Conjunctivitis    |         √           |        √
+ Episcleritis      |         X           |        √
+ Anterior scleritis|         X           |        X
+
+(√ = blanches; X = does not blanch. The X marks are printed in red in the
+original. No further explanatory text is printed on the slide.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 41 — Thank you
+─────────────────────────────────────────────────────────────────────
+Thank you
+
+(A blue smiley-face icon beside the words. No content.)
+
+
+═════════════════════════════════════════════════════════════════════
+NOT COVERED ANYWHERE IN THIS DECK
+═════════════════════════════════════════════════════════════════════
+Recorded so a gap can be settled by proving a negative rather than by memory.
+Every item below was looked for across all eleven sheets before being listed.
+
+UVEA — ANATOMY AND PHYSIOLOGY
+ • The BLOOD SUPPLY of the uveal tract. The long and short posterior ciliary
+   arteries, the anterior ciliary arteries, the major arterial circle of the
+   iris and the VORTEX VEINS are named nowhere in the deck.
+ • The NERVE SUPPLY of the uvea, and the sphincter/dilator pupillae as named
+   muscles with their innervation.
+ • AQUEOUS HUMOUR production by the ciliary epithelium. The ciliary body appears
+   only as "Pars plicata / Pars plana" on slide 3; its secretory function is
+   never stated.
+ • The LAYERS of the iris or of the choroid (stroma, pigment epithelium,
+   choriocapillaris, Bruch membrane). Bruch membrane is not mentioned.
+
+IRIS — THE SLIDE 5 HEADINGS THAT ARE NEVER FILLED IN
+ • TREMULOUS IRIS / IRIDODONESIS. Printed once, as a box on slide 5, and never
+   defined, never given a cause (subluxated lens, aphakia) and never pictured.
+ • RUBEOSIS IRIDIS — CAUSES, IMPACT and TREATMENT. Slide 9 prints those three
+   words as bullets with NOTHING under them. Diabetic retinopathy and central
+   retinal vein occlusion are never named as causes; neovascular glaucoma is
+   never named as the consequence; no treatment (PRP, anti-VEGF) appears.
+ • The CAUSES of heterochromia. Slide 6 defines it and shows two photographs but
+   lists no cause: FUCHS HETEROCHROMIC IRIDOCYCLITIS, HORNER SYNDROME, siderosis
+   and Waardenburg are all absent from the deck.
+ • ANIRIDIA's associations — PAX6, WAGR, Wilms tumour — absent. Aniridia appears
+   only as a SmartArt box (slide 5) and a captioned photograph (slide 8).
+ • IRIS COLOBOMA's typical INFERONASAL location and its embryology (failure of
+   closure of the embryonic/optic fissure). Not printed; slide 8 is a photograph
+   with a one-word caption.
+ • The distinction between posterior and anterior synechiae in words. Slide 7
+   lists both terms and shows both pictures, but neither is defined and neither
+   is given a consequence — SECLUSIO PUPILLAE, IRIS BOMBÉ and PUPILLARY BLOCK
+   are not printed anywhere in the deck, even though "Secondary glaucoma" is
+   listed as a complication on slide 18.
+
+UVEITIS — CLASSIFICATION AND TERMINOLOGY
+ • The SUN (Standardization of Uveitis Nomenclature) working group by name, and
+   its GRADING of anterior chamber cells and flare (0.5+, 1+, 2+…). Slide 16
+   prints "Cells & flare ± hypopyon" with no grading scheme at all.
+ • GRANULOMATOUS vs NON-GRANULOMATOUS uveitis. The distinction is absent, and so
+   is MUTTON-FAT KP; slide 15 says only "Keratic precipitates (KPs) on the back
+   surface of cornea", with no morphology, no distribution (Arlt triangle) and
+   no pigmented-vs-fresh comparison.
+ • KOEPPE and BUSACCA iris nodules. Absent.
+ • Classification of uveitis by ONSET/DURATION/COURSE (acute, recurrent,
+   chronic). Only the anatomical classification (slide 12) is given.
+ • HLA-B27 by name, and HLA typing as an investigation. Ankylosing spondylitis
+   appears on slide 11 as an immune-mediated cause, but the HLA association is
+   never printed.
+
+UVEITIS — NAMED ENTITIES THE DECK DOES NOT TEACH
+ • SYMPATHETIC OPHTHALMIA. Entirely absent — the phrase does not occur.
+ • VOGT–KOYANAGI–HARADA (VKH) syndrome. Entirely absent.
+ • FUCHS HETEROCHROMIC IRIDOCYCLITIS. Entirely absent.
+ • JIA-ASSOCIATED / juvenile chronic arthritis uveitis, and paediatric uveitis
+   as a topic. Absent.
+ • ENDOPHTHALMITIS. Absent, despite "Ocular surgery" being listed as an
+   aetiology on slide 11.
+ • BEHÇET is present but only as a listed word — printed "Bechet's disease" on
+   slide 11 among immune-mediated causes. Its features (hypopyon uveitis, oral
+   and genital ulceration, retinal vasculitis) are never described.
+ • TOXOPLASMOSIS, TUBERCULOSIS, SYPHILIS, HSV/HZV/CMV and SARCOIDOSIS are
+   likewise names on the slide 11 list only. No clinical picture, no fundus
+   appearance and no specific treatment is given for any of them.
+ • PHTHISIS BULBI and CYCLITIC MEMBRANE as sequelae of uveitis. Absent.
+
+UVEITIS — INVESTIGATION AND DRUGS
+ • NO INVESTIGATION IS NAMED ANYWHERE for uveitis. Slide 20 says "after doing a
+   systemic work up" without naming one test: no FFA, no OCT, no B-scan for
+   uveitis, no chest X-ray, no Mantoux/tuberculin, no serum ACE, no VDRL/FTA-ABS,
+   no anterior chamber tap or PCR.
+ • NO DRUG DOSE, strength, frequency or duration appears anywhere in the deck.
+   Steroids, cycloplegics and immunosuppressives are named only as classes; not
+   one agent is named for uveitis (no prednisolone acetate, no atropine, no
+   cyclopentolate, no methotrexate, no anti-TNF/biologic).
+ • Steroid COMPLICATIONS (steroid-induced glaucoma, steroid cataract) as a
+   caution. Absent.
+
+UVEAL TUMOURS
+ • CHOROIDAL MELANOMA, iris melanoma, iris naevus, choroidal metastasis and
+   choroidal haemangioma. NO uveal tumour of any kind appears in this deck. The
+   only malignancies mentioned are leukemia and lymphoma, and only as
+   "Masquerade syndrome" on slide 11.
+
+SCLERA — ANATOMY
+ • The sclera's own ANATOMY has no slide. Its THICKNESS, the fact that it is
+   thinnest behind the rectus insertions, the LAMINA FUSCA, the scleral spur,
+   the emissary channels and the lamina cribrosa are all absent.
+ • The distinction between the SUPERFICIAL and DEEP EPISCLERAL VASCULAR PLEXUS
+   as an anatomical pair. Only "deep episcleral plexus" is named, in passing, on
+   slide 35; the superficial plexus is never named.
+ • Episcleritis vs scleritis distinguished by MOBILITY OF THE VESSELS on a
+   cotton bud, or by the pattern of pain (boring pain waking the patient at
+   night). The deck's only stated discriminator is the phenylephrine table on
+   slide 40.
+
+SCLERA — CLASSIFICATION AND NAMED CONDITIONS
+ • The WATSON AND HAYREH classification of scleritis by name. Absent.
+ • NODULAR ANTERIOR SCLERITIS and DIFFUSE ANTERIOR SCLERITIS as named subtypes.
+   Slide 35 says only "Localised or diffuse redness"; the word "nodular" appears
+   in this deck for EPISCLERITIS only (slide 31). "Necrotizing anterior
+   scleritis WITH inflammation" is likewise never named as a subtype — slide 36
+   names only necrotizing anterior scleritis and, as the painless form,
+   scleromalacia perforans.
+ • GRANULOMATOSIS WITH POLYANGIITIS / Wegener granulomatosis and relapsing
+   polychondritis as causes of scleritis. Not in the slide 38 causes list.
+   (Polyarteritis nodosa and temporal arteritis appear, but on slide 32, as
+   causes of EPISCLERITIS only.)
+ • The TYPES of staphyloma — anterior, intercalary, ciliary, equatorial,
+   posterior. Slide 29 gives the one-line definition and nothing more.
+ • Other causes of BLUE SCLERA beyond osteogenesis imperfecta and buphthalmos:
+   EHLERS–DANLOS, Marfan and alkaptonuria/ochronosis are absent.
+ • SCLERAL PATCH GRAFT, donor sclera or any named surgical technique. Slide 39
+   says only "Surgical intervention may be required in cases of scleral
+   perforation".
+ • HYALINE PLAQUES / senile scleral plaques, scleral icterus, and blue sclera
+   from long-term topical medication. Absent.
+ • Any named INVESTIGATION for scleritis other than ultrasound. Slide 37 gives
+   "U/S : Scleral thickening ± RD" and the B-scan T-sign; no CT, no MRI, and no
+   serology (no RF, ANA or ANCA) is printed anywhere.
+
+GENERAL
+ • No slide numbers, no references, no textbook figure numbers and no lecturer
+   name are printed anywhere in this deck — unlike L10, which carries "Fig. 4.x"
+   captions throughout. The only in-image caption text is the B-scan legend on
+   slide 37 and the four-photo captions on slide 8.

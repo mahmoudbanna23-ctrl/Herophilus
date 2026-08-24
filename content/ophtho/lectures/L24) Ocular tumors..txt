@@ -1,81 +1,1114 @@
-SOURCE: Semester 8\Opthalmo\Theoritical\PPT\L24) Ocular tumors..pdf
+L24) Ocular tumors..pdf — "Ocular oncology", Presented by Ahmed Metwally
+==========================================================================
+78 slides. READ VISUALLY 2026-08-24 and cached here.
 
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-
+⚠️ THIS DECK IS IMAGE-ONLY. It is a phone (CamScanner) scan with no text
+layer — the .txt this file replaced contained the word "CamScanner" 77 times
+and nothing else, which is all `pdftotext` can get out of it. The deck was
+rendered to PNG (20 four-up contact sheets, plus 78 single-slide renders)
+and read as images. Do NOT try to re-extract it with pdftotext; it will look
+like an empty file and is not.
+
+⚠️ TITLE NOTE: the FILE is called "Ocular tumors" but the deck's own title
+slide reads "Ocular oncology", presented by Ahmed Metwally. Both are recorded
+here.
+
+⚠️ THIS IS A COMPOSITE DECK, visibly assembled from at least three different
+source decks, and the change of typeface tells you where the seams are:
+  • Slides 1–8   — a modern sans "Sample Footer Text" template (eyelid,
+                   cornea, conjunctiva), footer date 5/18/2026.
+  • Slides 9–17  — a Comic-Sans-like handwritten face (uvea: iris, ciliary
+                   body, choroid, choroidal melanoma).
+  • Slides 18–78 — a mixed set (retinoblastoma, then back to lids/orbit).
+The slide-number footers printed by PowerPoint RESTART and REPEAT across the
+seams (e.g. slides 3 and 4 both print footer "3"; slides 5, 6 and 7 all print
+footer "4"). THE ONLY RELIABLE NUMBERING IS THE PDF PAGE ORDER, which is what
+the SLIDE numbers below use. Do not trust a footer number.
+
+Transcribed close to verbatim, including the lecturer's own spelling
+("Diktyoma", "Excentration", "Extarocular", "Symtoms", "retionblastoma",
+"Coates disease", "Sturg Weber", "Grade"), capitalisation and punctuation.
+
+CONTENTS — where each section starts (by SLIDE number, all read off the
+contact sheets, none inferred)
+------------------------------------------------------------------------
+  Slide  1        Title — Ocular oncology
+  Slide  2        EYELID — malignant lid tumours (BCC / SCC). ONE slide, two
+                  photographs and two captions. That is the entire eyelid
+                  teaching in this deck.
+  Slides  3–4     CORNEAL TUMORS — surface epithelial tumours
+  Slides  5–7     CORNEAL TUMORS — melanocytic (pigmented) tumours
+  Slide   8       Congenital tumours & choristomas (corneal dermoid)
+  Slide   9       IRIS TUMORS
+  Slide  10       CILIARY BODY TUMORS
+  Slide  11       CHOROIDAL TUMORS — benign
+  Slide  12       CHOROIDAL TUMORS — malignant
+  Slides 13–17    CHOROIDAL MALIGNANT MELANOMA in full (epidemiology,
+                  presentation, diagnosis, stages, treatment)
+  Slides 18–27    RETINOBLASTOMA — the only prose-bearing RB section
+                  (18 title, 19 incidence, 20 clinical features,
+                   21 signs plate, 22–26 management, 27 goals of treatment)
+  Slides 28–32    Case 1 — "leucocoria and refractive error, female, 3yrs,
+                  MRI coats"
+  Slides 33–36    Case 2 — "leucocoria"
+  Slides 37–42    Case 3 (no caption)
+  Slides 43–45    Case 4 (no caption)
+  Slides 46–63    ⚠️ EIGHTEEN CONSECUTIVE PHOTOGRAPH-ONLY SLIDES WITH NO
+                  CAPTION AND NO CASE NUMBER AT ALL. Fundus / anterior
+                  segment pairs. Verified on the full-size single-slide
+                  render of slide 58: the space under the images is blank.
+                  Nothing names these diagnoses on the slide.
+  Slides 64–72    COATS' DISEASE — captioned "Coats' disease", nine slides,
+                  caption and photographs only
+  Slides 73–75    ASTROCYTOMA (73 captioned "Astrocytoma associated with
+                  tuberous sclerosis"; 74 and 75 "Astrocytoma")
+  Slide  76       COLOBOMA OF THE OPTIC NERVE (caption + photographs)
+  Slide  77       ORBITAL TUMORS — benign
+  Slide  78       ORBITAL TUMORS — malignant
+
+⚠️ NOTE ON THE SHAPE OF THIS DECK: slides 28–76 (49 of the 78 slides, 63 %)
+are PHOTOGRAPHS with at most a one-line caption. The prose content of the
+whole lecture sits in slides 2–27 and 77–78. A reader looking for taught
+sentences will find them nowhere else.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 1 — Title
+─────────────────────────────────────────────────────────────────────
+Ocular oncology
+Presented by Ahmed Metwally
+
+(Title slide over a wide landscape photograph of open grassland under a pale
+sky, with a right-pointing arrow at the lower right. CamScanner watermark.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 2 — Eyelid: Malignant Lid Tumors (two clinical photographs)
+─────────────────────────────────────────────────────────────────────
+Eyelid            [printed in red]
+ ❑ Malignant Lid Tumors   [underlined]
+
+Two clinical photographs, captioned beneath:
+  BCC   — left photograph: an elderly face; a raised nodular lesion with a
+          rolled pearly margin at the medial/lower lid margin of the right
+          eye, with loss of lashes.
+  SCC   — right photograph: a large fungating, crusted, ulcerated mass
+          occupying and destroying the whole lower lid and cheek region,
+          with the eye buried in it.
+
+No prose on the slide beyond the two captions.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 3 — Corneal tumors: Surface Epithelial Tumors
+─────────────────────────────────────────────────────────────────────
+Surface Epithelial Tumors
+Surface epithelial growths comprise the most common category of tumors
+affecting the corneal surface.
+
+ • Ocular Surface Squamous Neoplasia (OSSN): A spectrum of non-melanocytic
+   abnormal growths ranging from mild dysplasia to carcinoma in situ.
+ • Squamous Cell Carcinoma (SCC): The most common primary malignant tumor of
+   the cornea. It appears as a white or reddish elevated plaque and can
+   impair vision.
+ • Squamous Papilloma: A benign epithelial growth that can present as an
+   exophytic (outward-growing) mass.
+ • Epithelial Inclusion Cysts: Benign, fluid-filled pockets that form from
+   trapped surface cells.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 4 — Corneal tumors: Surface Epithelial Tumors (same text + photo)
+─────────────────────────────────────────────────────────────────────
+Identical text to slide 3; a large clinical photograph is animated in over
+the right half of the text, obscuring the ends of the bullet lines.
+
+The photograph: an anterior segment close-up of a light-brown iris eye with
+a fleshy, vascularised, gelatinous pink-white nasal limbal mass encroaching
+onto the cornea, with prominent feeder vessels running to it (OSSN / limbal
+squamous lesion).
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 5 — Corneal tumors: Melanocytic (Pigmented) Tumors
+─────────────────────────────────────────────────────────────────────
+Melanocytic (Pigmented) Tumors
+These lesions develop from pigment-producing melanocytes and often extend
+across the limbus.
+
+ • Nevus: A common, benign, congenital or early-onset freckle or mole on the
+   ocular surface.
+ • Primary Acquired Melanosis (PAM): A flat, brown precancerous pigmentation
+   area that requires close monitoring.
+ • Malignant Melanoma: A rare but aggressive cancer that can arise directly
+   on the cornea or extend from a conjunctival melanoma.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 6 — Corneal tumors: Melanocytic (Pigmented) Tumors (same text + photo)
+─────────────────────────────────────────────────────────────────────
+Identical text to slide 5, with a clinical photograph animated in over the
+right half.
+
+The photograph: an intensely injected red eye with a raised, dark, almost
+black pigmented nodule sitting on the bulbar conjunctiva/limbus, surrounded
+by dilated vessels — conjunctival malignant melanoma.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 7 — Corneal tumors: Melanocytic (Pigmented) Tumors (same text + photo)
+─────────────────────────────────────────────────────────────────────
+Identical text to slide 5, with a different clinical photograph animated in
+over the middle of the slide.
+
+The photograph: a close-up of an eye with a small, flat, discrete brown
+pigmented spot on the bulbar conjunctiva just temporal to the limbus, on an
+otherwise quiet white eye — a conjunctival nevus.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 8 — Congenital Tumors & Choristomas
+─────────────────────────────────────────────────────────────────────
+Congenital Tumors & Choristomas
+These are benign overgrowths of normal tissue elements presenting in abnormal
+anatomical locations.
+
+ • Corneal Dermoid: A benign congenital choristoma made of trapped ectodermal
+   tissues (such as hair or fat) on the cornea.
+
+Clinical photograph: a child's eye with a rounded, pale, dome-shaped, solid
+white-yellow mass straddling the inferotemporal limbus and encroaching onto
+the cornea — a limbal dermoid.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 9 — Iris Tumors
+─────────────────────────────────────────────────────────────────────
+Iris Tumors
+ 1. Iris Nevi (Freckles)
+ 2. Malignant Melanoma
+
+Three clinical photographs down the right side:
+  (top)    a hazel iris with several small discrete brown freckles on its
+           surface — iris nevi;
+  (middle) a blue iris eye with a dark pigmented mass at the inferior iris
+           distorting the pupil, with dilated episcleral vessels;
+  (bottom) an eye with a large dark mass occupying the lower half of the
+           iris, the pupil pulled and irregular — iris malignant melanoma.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 10 — Ciliary Body Tumors
+─────────────────────────────────────────────────────────────────────
+Ciliary Body Tumors
+ 1. Diktyoma      [sic — the lecturer's spelling; medulloepithelioma]
+ 2. Malignant Melanoma
+
+Three photographs:
+  (top right) a dilated-pupil view showing a pale/white lesion behind the
+           iris in the ciliary region against a yellow fundus reflex;
+  (bottom left) an anterior segment photo with a dark greyish mass visible
+           through the dilated pupil, sectoral, with dilated ("sentinel")
+           episcleral vessels running to that quadrant;
+  (bottom right) a gross pathology specimen of an opened globe showing a
+           dark pigmented dome-shaped ciliary body mass.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 11 — Choroidal Tumors: Benign
+─────────────────────────────────────────────────────────────────────
+Choroidal Tumors
+Benign
+ • Nevus
+ • Hemangioma
+
+Three pictures:
+  (top)    fundus photograph showing a flat, slate-grey/darker pigmented
+           patch at the posterior pole temporal to the disc — choroidal
+           nevus;
+  (bottom left) fundus photograph showing a diffuse orange-red thickening of
+           the choroid ("tomato-ketchup" fundus) — choroidal haemangioma;
+  (bottom right) clinical photograph of an infant with an extensive red
+           port-wine facial naevus over one side of the face involving the
+           eyelids.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 12 — Choroidal Tumors: Malignant
+─────────────────────────────────────────────────────────────────────
+Choroidal Tumors
+Malignant
+ 1ry: Malignant Melanoma
+ 2ry: Choroidal metastasis   (Breast-Bronchi)
+
+Pictures:
+  (top right) fundus photograph of a large, pale-orange elevated dome-shaped
+           subretinal mass at the posterior pole — choroidal melanoma;
+  (bottom) a pair of fundus photographs side by side showing pale, flat,
+           creamy multifocal subretinal lesions — choroidal metastases.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 13 — Malignant Melanoma (choroidal) — epidemiology
+─────────────────────────────────────────────────────────────────────
+Malignant Melanoma
+
+ Most common adult 1ry malignant IO tumor
+ Age: 50 - 70  years
+ Laterality:  Unilateral
+ Number: Single
+ Race: Caucasians (rare in blacks)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 14 — Malignant Melanoma: Presentation
+─────────────────────────────────────────────────────────────────────
+Presentation:
+ • Accidental discovery
+ • Subretinal Mass
+ • Decrease in vision
+ • Retinal detachment
+ • 2ry glaucoma
+ • Proptosis
+ • Metastasis
+
+Pictures:
+  (top right) fundus photograph, a dark raised mass in the periphery of an
+           orange fundus;
+  (bottom) two gross pathology photographs of sectioned globes, each showing
+           a large dome/collar-stud shaped intraocular mass with overlying
+           retinal detachment.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 15 — Malignant Melanoma: Diagnosis
+─────────────────────────────────────────────────────────────────────
+Diagnosis:
+ 1. Fundus examination & photography
+ 2. Transillumination
+ 3. Ultrosonography          [sic]
+ 4. Fluorescein angiography
+ 5. 32P uptake               [printed as superscript 32 before P]
+ 6. Systemic evaluation
+ 7. Histopathologic examination
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 16 — Malignant Melanoma: Stages
+─────────────────────────────────────────────────────────────────────
+Stages:
+ I.   Quiescent stage.
+ II.  Glaucomatous stage.
+ III. Extraocular extension.
+ IV.  Distant metastasis.
+
+Pictures (right, one per stage):
+  (I)   fundus photograph with a raised pigmented choroidal mass;
+  (III) an intra-operative / gross photograph of a fleshy extraocular
+        extension being lifted with forceps;
+  (IV)  a gross pathology photograph of a cut liver studded with multiple
+        black metastatic nodules.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 17 — Malignant Melanoma: Treatment
+─────────────────────────────────────────────────────────────────────
+Treatment:
+ 1. Intraocular tumor:
+        Photocoagulation
+        Radioactive plaques
+        External beam irradiation
+        Enucleation
+
+ 2. Extarocular extension:  Excentration     [sic — Extraocular; Exenteration]
+
+ 3. Distant metastasis: Palliation
+ Chemotherapy, Immunotherapy
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 18 — Retinoblastoma (title slide, three clinical photographs)
+─────────────────────────────────────────────────────────────────────
+Retinoblastoma
+
+Three clinical photographs, no prose:
+  (top)    an infant's face — the right pupil shows a dense yellow-white
+           reflex (leukocoria), the left pupil is normally black;
+  (bottom left) a child with a huge fungating, haemorrhagic, dark-red
+           extraocular mass protruding from the orbit and replacing the eye
+           — neglected/advanced retinoblastoma;
+  (bottom right) an examiner holding both lids of a child open, both pupils
+           showing a white-yellow reflex — bilateral leukocoria.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 19 — Retinoblastoma: definition and incidence (no heading printed)
+─────────────────────────────────────────────────────────────────────
+It is the most common primary intraocular malignancy of childhood
+which arises from primitive retinal cells
+ • Incidence:
+   - 1 in 17000 live births
+   - About 3% of all childhood cancers
+ • No sexual or racial predisposition
+ • Mean age of diagnosis:
+   - known history: 4 months
+   - bilateral disease 40% : 12 months
+   - unilateral disease 60% : 24 months
+   - 90% of cases : under 3 years of age
+ • Trilateral RB : bilateral RB with ectopic intracranial RB (usually pineal
+   gland or parasellar region)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 20 — Retinoblastoma: Clinical features
+─────────────────────────────────────────────────────────────────────
+Clinical features
+
+ • Symtoms:        [sic — Symptoms]
+ 1. Child is brought to ophthalmologist with history of yellow /white reflex
+    in pupillary area sometimes called cat's eye
+ 2. Squint, usually convergent, at times divergent
+ 3. Cataract/ Bulging eye/ large eye
+ • Signs:
+ 1. Leukocoria (60%)
+ 2. Strabismus (20%)
+ 3. Secondary glaucoma
+ 4. Buphthalmos (large eye, corneal edema, blue sclera)
+ 5. Pseudohypopyon /ocular inflammation /Proptosis
+ 6. Mydriasis/ hyphema /dysmorphic appearance
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 21 — Retinoblastoma: six-panel figure of presenting signs
+─────────────────────────────────────────────────────────────────────
+A six-panel clinical photograph plate (lettered A–F), captions printed under
+each panel. No other prose on the slide.
+
+ (A) Unilateral leukocoria — infant, right pupil a dense white-yellow reflex.
+ (B) Bilateral leukocoria — examiner holding the lids, both pupils white.
+ (C) Secondary glaucoma and buphthalmos — a large, hazy, dark blue-grey
+     enlarged globe.
+ (D) Iris nodules and pseudohypopyon — anterior segment photo with a white
+     level in the inferior anterior chamber.
+ (E) Orbital inflammation — child with a swollen, red, proptosed eye
+     mimicking cellulitis.
+ (F) Orbital invasion — child with gross proptosis and a distorted
+     ulcerated periocular mass.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 22 — Retinoblastoma: management (examination)
+─────────────────────────────────────────────────────────────────────
+management
+
+ • Red reflex testing
+ • Examination under anesthesia
+    - General examination
+    - Tonometry
+    - Measurement of corneal diameter, axial length of the eye
+    - Examination with hand-held slit-lamp
+    - Ophthalmoscopy, documenting findings with color drawing or photography
+ • Ocular U/S (B-Scan)
+    - size of tumor, detects calcification
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 23 — Retinoblastoma: management (MRI and systemic assessment)
+─────────────────────────────────────────────────────────────────────
+management
+
+ • Magnetic resonance imaging (MRI):
+    - optic nerve involvement
+    - the presence of an associated intracranial lesion→ Tri-lateral RB
+    - cannot detect calcification
+ • Systemic assessment
+    - High-risk cases bone scans, bone marrow aspiration,  lumber puncture
+      for CSF study        [sic — "lumber" for lumbar]
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 24 — Retinoblastoma: management (same text + axial CT)
+─────────────────────────────────────────────────────────────────────
+Identical text to slide 23; an image is animated in over the right side,
+covering the ends of the lines.
+
+The image: an axial CT of the orbits and brain showing BOTH globes containing
+bright, dense, irregular calcified intraocular masses — bilateral calcified
+retinoblastoma.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 25 — Retinoblastoma: management (same text + second axial CT)
+─────────────────────────────────────────────────────────────────────
+Identical text to slide 23, with the slide-24 CT still present and a second
+axial CT animated in over the middle of the slide.
+
+The second image: axial CT of the orbits showing a dense mass with a black
+arrow pointing to it in the posterior segment of the LEFT globe; the right
+globe looks normal — unilateral retinoblastoma.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 26 — Retinoblastoma: management (same text + MRI images)
+─────────────────────────────────────────────────────────────────────
+Identical text to slide 23, with the two CTs still present and two further
+images animated in, together covering nearly all the text.
+
+The added images: a sagittal/parasagittal MRI of the globe with a WHITE ARROW
+pointing to an intraocular mass filling the posterior globe, and a second
+grey-scale MRI section through the orbit and skull base.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 27 — Retinoblastoma: Goals of treatment
+─────────────────────────────────────────────────────────────────────
+ • Goals of treatment:
+    - Save life (diagnose RB)
+    - Preserve vision or salvage eye (i.e. avoid enucleation)(early diagnosis)
+    - Minimize any complications or side effects of therapy e.g. enucleation
+      unilateral gp D RB.
+
+(⚠️ "gp D" is the only appearance of a retinoblastoma GROUP letter anywhere
+in the deck; the classification the letter belongs to is never named or
+tabulated — see NOT COVERED below.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 28 — Case 1 (title slide)
+─────────────────────────────────────────────────────────────────────
+Case  1  leucocoria and refractive error, female, 3yrs, MRI coats
+         [printed small, running on after the words "Case 1"]
+
+No other text. (The caption's "coats" is the lecturer's own lower-case for
+Coats disease.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 29 — Case 1: fundus photograph
+─────────────────────────────────────────────────────────────────────
+Same caption line as slide 28: "Case  1  leucocoria and refractive error,
+female, 3yrs, MRI coats".
+
+Fundus photograph only: an orange-red fundus with several confluent, creamy
+yellow-white subretinal exudative patches and gently tortuous vessels running
+over them. No labels, no arrows.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 30 — Case 1: fundus photograph (second view)
+─────────────────────────────────────────────────────────────────────
+Same caption line. Fundus photograph only: a large pale-yellow elevated
+subretinal exudative mound occupying the posterior pole with vessels draped
+over its surface.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 31 — Case 1: fundus photograph (third view)
+─────────────────────────────────────────────────────────────────────
+Same caption line. Fundus photograph only: a wide-field view of the same eye
+showing multiple bright yellow-white exudative patches inferiorly with a
+tortuous vessel arcade above.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 32 — Case 1: both fundi
+─────────────────────────────────────────────────────────────────────
+Same caption line. Two fundus photographs side by side: on the left the
+diseased eye with its yellow-white exudates; on the right the FELLOW EYE, a
+normal-looking fundus with a healthy disc and normal vessels.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 33 — Case 2 (title slide)
+─────────────────────────────────────────────────────────────────────
+Case 2  leucocoria
+
+No other text on the slide.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 34 — Case 2: anterior segment photograph
+─────────────────────────────────────────────────────────────────────
+Clinical photograph only, no prose. A child's eye photographed with the lids
+held apart: behind the pupil sits a rounded, pale, creamy-pink mass filling
+the pupillary area — leukocoria seen directly.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 35 — Case 2: dilated-pupil photograph
+─────────────────────────────────────────────────────────────────────
+Photograph only, no prose. A widely dilated pupil showing a pale pink-white
+retrolental mass with fine vessels running over its surface, filling the
+posterior segment.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 36 — Case 2: dilated pupil and fellow fundus
+─────────────────────────────────────────────────────────────────────
+Two photographs side by side, no prose. Left: the same dilated pupil with the
+vascularised retrolental white mass. Right: a fundus photograph of the FELLOW
+eye — a normal disc and a pale sweep of retina, no mass.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 37 — Case 3 (title slide)
+─────────────────────────────────────────────────────────────────────
+Case 3
+
+No other text on the slide, and — unlike Case 1 — NO descriptive caption.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 38 — Case 3: fundus photograph
+─────────────────────────────────────────────────────────────────────
+Photograph only, no prose. Fundus photograph of a pale yellow-orange fundus
+with a large, lobulated, chalky-white mass occupying the upper left of the
+field and further creamy nodules below it, retinal vessels running over the
+surface — the classic look of an endophytic retinoblastoma.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 39 — Case 3: fundus photograph (second view)
+─────────────────────────────────────────────────────────────────────
+Photograph only, no prose. A large, dome-shaped, brilliantly white mass
+filling most of the fundus view with a smooth surface and a rolled edge.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 40 — Case 3: fundus photograph (third view)
+─────────────────────────────────────────────────────────────────────
+Photograph only, no prose. A pale, multilobulated creamy mass covering the
+posterior pole with dilated tortuous retinal vessels arching over it.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 41 — Case 3: both fundi
+─────────────────────────────────────────────────────────────────────
+Two fundus photographs side by side, no prose. Left: the eye with the large
+white lobulated intraocular mass. Right: the FELLOW eye — a dull grey-brown
+fundus with an attached retina, disc and vessels visible, no mass.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 42 — Case 3: both fundi (second pairing)
+─────────────────────────────────────────────────────────────────────
+Two fundus photographs side by side, no prose. Left: the same tumour-filled
+eye. Right: a different view of the fellow fundus showing the disc inferiorly
+and a pale streak of retina.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 43 — Case 4 (title slide)
+─────────────────────────────────────────────────────────────────────
+Case 4
+
+No other text, no caption.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 44 — Case 4: fundus photograph
+─────────────────────────────────────────────────────────────────────
+Photograph only, no prose. Fundus photograph with a large, brilliant white
+lobulated mass filling the right half of the field, and scattered small
+white nodules ("seeds") in front of it.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 45 — Case 4: both fundi
+─────────────────────────────────────────────────────────────────────
+Two fundus photographs side by side, no prose. Left: the same white mass with
+its satellite seeds. Right: the FELLOW eye, a pink-orange fundus with a
+normal disc and macula.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 46 — Unlabelled case: fundus + anterior segment
+─────────────────────────────────────────────────────────────────────
+Two photographs, no prose and no case caption printed.
+ Left: a dark red-brown fundus with the disc and vessels visible and a pale
+   patch inferiorly.
+ Right: a child's eye held open, showing a YELLOW-WHITE reflex filling the
+   pupil — leukocoria.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 47 — Unlabelled case: fundus + anterior segment
+─────────────────────────────────────────────────────────────────────
+Two photographs, no prose.
+ Left: a dusky fundus with a well-circumscribed, round, pigmented atrophic
+   scar with a dark border in the inferior fundus — a punched-out
+   chorioretinal lesion.
+ Right: the same child's eye with a yellow pupillary reflex.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 48 — Unlabelled case: fundus + anterior segment
+─────────────────────────────────────────────────────────────────────
+Two photographs, no prose.
+ Left: a pale grey-brown fundus with fine fibrous/glial strands looping in
+   front of the retina and around the disc.
+ Right: an eye with a widely dilated pupil showing a pale reflex and small
+   white opacities in the pupillary area.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 49 — Unlabelled case: two fundus photographs
+─────────────────────────────────────────────────────────────────────
+Two photographs, no prose.
+ Left: a uniformly deep orange fundus with diffuse pale yellow mottling and
+   no visible disc — a hazy/very abnormal fundus view.
+ Right: a grey-brown fundus with disc, macula and a pale horizontal fold.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 50 — Unlabelled case: anterior segment + fundus
+─────────────────────────────────────────────────────────────────────
+Two photographs, no prose.
+ Left: an eye with a dilated pupil showing a bright ORANGE-RED reflex with
+   pale membranous opacities in the pupillary plane.
+ Right: a grey-brown fundus with the disc and macula visible.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 51 — Unlabelled case: fundus + anterior segment
+─────────────────────────────────────────────────────────────────────
+Two photographs, no prose.
+ Left: a fundus with a ring of pale fibrous tissue encircling the disc and a
+   dark macular area.
+ Right: a widely dilated pupil, held open with a lid speculum, showing a
+   dark pupil with a pale crescent — the anterior segment of the same eye.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 52 — Unlabelled case: fundus + anterior segment
+─────────────────────────────────────────────────────────────────────
+Two photographs, no prose.
+ Left: a pink-brown fundus with a normal-looking disc and macula.
+ Right: an eye on a speculum with a dilated pupil showing a pale reflex and
+   a cluster of small round white cystic/nodular opacities at the temporal
+   pupillary margin.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 53 — Unlabelled case: fundus + anterior segment
+─────────────────────────────────────────────────────────────────────
+Two photographs, no prose.
+ Left: a red-pink fundus with a small disc and a faint pale patch just
+   temporal to it.
+ Right: an eye on a lid speculum, dilated pupil, showing a pale
+   yellow-white reflex through the pupil.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 54 — Unlabelled case: fundus + anterior segment
+─────────────────────────────────────────────────────────────────────
+Two photographs, no prose.
+ Left: a red fundus with a pale exudative/atrophic macular lesion beside
+   the disc.
+ Right: the same speculum view with a yellow-white pupillary reflex.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 55 — Unlabelled case: "6 mns later"
+─────────────────────────────────────────────────────────────────────
+Two photographs. The ONLY text on the slide is printed inside the left
+fundus photograph itself:
+   6 mns later          [sic — the lecturer's abbreviation]
+ Left: a dull grey-pink fundus with a faint pale patch inferiorly.
+ Right: the speculum view with a pale pupillary reflex.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 56 — Unlabelled case: "6 mns later"
+─────────────────────────────────────────────────────────────────────
+Text on the slide: "6 mns later" (printed inside the left photograph).
+ Left: a pink-grey fundus with a discrete, round, chalky creamy-white
+   lesion in the inferonasal fundus.
+ Right: the same speculum view with a pale pupillary reflex.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 57 — Unlabelled case: "6 mns later"
+─────────────────────────────────────────────────────────────────────
+Text on the slide: "6 mns later" (printed inside the left photograph).
+ Left: a fundus with a well-demarcated, dark, pigmented, punched-out
+   atrophic scar inferiorly — the same lesion after treatment/regression.
+ Right: a speculum view of the eye with a dilated pupil and a pale reflex.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 58 — Unlabelled case: two fundus photographs
+─────────────────────────────────────────────────────────────────────
+Two photographs, no prose. (Verified on the full-size single-slide render:
+the area below the images is blank — there is no caption.)
+ Left: a bright yellow-white intraocular mass filling the view, with LARGE
+   DILATED TORTUOUS VESSELS running across its surface.
+ Right: a dull grey fundus with the disc and fine greyish membranous
+   strands over the retina.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 59 — Unlabelled case: two fundus photographs
+─────────────────────────────────────────────────────────────────────
+Two photographs, no prose.
+ Left: a heavily vascularised yellow-white mass filling the fundus, with a
+   dense network of dilated red vessels over it.
+ Right: the grey fundus with disc and faint membranes.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 60 — Unlabelled case: two fundus photographs
+─────────────────────────────────────────────────────────────────────
+Two photographs, no prose.
+ Left: a large, lobulated, creamy-white mass occupying most of the fundus,
+   with a DARK GREY-BROWN AREA within its upper part.
+ Right: the same grey fundus with disc and membranes.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 61 — Unlabelled case: two fundus photographs
+─────────────────────────────────────────────────────────────────────
+Two photographs, no prose.
+ Left: a white, mulberry-like lobulated mass with coarse dilated vessels
+   running to and over it.
+ Right: the same grey fundus.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 62 — Unlabelled case: two fundus photographs
+─────────────────────────────────────────────────────────────────────
+Two photographs, no prose.
+ Left: an orange-red fundus with a large, soft, pale-yellow subretinal mass
+   in its upper half.
+ Right: the same grey fundus.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 63 — Unlabelled case: two fundus photographs
+─────────────────────────────────────────────────────────────────────
+Two photographs, no prose.
+ Left: a pale-yellow, ill-defined mass filling the centre of the fundus
+   with a few vessels crossing it.
+ Right: the same grey fundus.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 64 — Coats' disease
+─────────────────────────────────────────────────────────────────────
+Caption printed under the photographs:
+   Coats' disease
+
+Two fundus photographs.
+ Left: a pale, hazy fundus with heaped-up creamy-yellow subretinal EXUDATE
+   at the inferior periphery and vessels sweeping across an elevated
+   detached retina.
+ Right: a normal-looking purple-pink fundus with a bright disc and normal
+   vessels — the fellow eye.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 65 — Coats' disease
+─────────────────────────────────────────────────────────────────────
+Caption: Coats' disease
+
+ Left: a fundus almost entirely covered by confluent, granular, yellow-white
+   subretinal exudate with sparse vessels over it.
+ Right: the normal fellow fundus.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 66 — Coats' disease
+─────────────────────────────────────────────────────────────────────
+Caption: Coats' disease
+
+ Left: a fundus with a broad sheet of yellow exudate occupying the lower
+   two-thirds and dilated retinal vessels running over the exudate.
+ Right: the normal fellow fundus.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 67 — Coats' disease
+─────────────────────────────────────────────────────────────────────
+Caption: Coats' disease
+
+ Left: an elevated, pale, exudative detachment ballooning towards the
+   observer with vessels stretched over it and granular yellow exudate at
+   the edge of the field.
+ Right: the normal fellow fundus.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 68 — Coats' disease
+─────────────────────────────────────────────────────────────────────
+Caption: Coats' disease
+
+ Left: a total, pale-yellow exudative retinal detachment with the vessels
+   drawn into radiating folds towards the disc, and dense yellow exudate
+   inferonasally.
+ Right: the normal fellow fundus.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 69 — Coats' disease
+─────────────────────────────────────────────────────────────────────
+Caption: Coats' disease
+
+ Left: a fundus filled with lumpy, glistening, cholesterol-coloured
+   subretinal exudate and telangiectatic vessels.
+ Right: the normal fellow fundus.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 70 — Coats' disease
+─────────────────────────────────────────────────────────────────────
+Caption: Coats' disease
+
+ Left: an orange fundus with a large, bright yellow, sharply demarcated
+   plaque of exudate at the posterior pole.
+ Right: a pale yellow-white fundus showing rounded, bullous, exudative
+   elevations with vessels running between them.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 71 — Coats' disease
+─────────────────────────────────────────────────────────────────────
+Caption: Coats' disease
+
+ Left: the same bright yellow posterior-pole exudative plaque.
+ Right: a wide view of a pale, exudative, detached retina with scattered
+   red haemorrhagic patches and fine strands.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 72 — Coats' disease
+─────────────────────────────────────────────────────────────────────
+Caption: Coats' disease
+
+ Left: the same yellow exudative plaque.
+ Right: a pale creamy mass-like exudative elevation with dilated vessels
+   arching over it — the appearance that mimics retinoblastoma.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 73 — Astrocytoma associated with tuberous sclerosis
+─────────────────────────────────────────────────────────────────────
+Caption printed under the photographs:
+   Astrocytoma associated with tuberous sclerosis
+
+Two fundus photographs.
+ Left: a pink fundus with a pale yellow-white, lobulated, "mulberry"
+   nodular lesion sitting on the retina below and nasal to the disc.
+ Right: another fundus with two pale, slightly raised yellowish nodules
+   above the disc.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 74 — Astrocytoma
+─────────────────────────────────────────────────────────────────────
+Caption: Astrocytoma
+
+Two fundus photographs, both showing pale, glistening, slightly elevated
+yellow-white retinal nodules near the disc on a hazy grey-green fundus,
+with fine glial strands.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 75 — Astrocytoma
+─────────────────────────────────────────────────────────────────────
+Caption: Astrocytoma
+
+Two fundus photographs.
+ Left: a grey-green fundus with a pale round nodule below the disc and
+   fibrous strands looping around it.
+ Right: a pale fundus with a glistening white, crystalline-looking lesion
+   along a vessel.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 76 — Coloboma of the optic nerve
+─────────────────────────────────────────────────────────────────────
+Caption printed under the photographs:
+   Coloboma of the optic nerve
+
+Two fundus photographs.
+ Left: an orange-red fundus with an abnormal, excavated, pale disc with
+   irregular pigmented margins.
+ Right: a large, deeply excavated, bowl-shaped white defect with a
+   pigmented rim occupying the inferior fundus, plus a separate pigmented
+   patch superiorly.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 77 — Orbital tumors: Benign Orbital Tumors
+─────────────────────────────────────────────────────────────────────
+Orbital tumors
+
+Benign Orbital Tumors
+Benign growths are non-cancerous but can still threaten vision by
+compressing internal structures or displacing the eyeball.
+
+ • Cavernous Hemangioma: The most common benign orbital tumor found in
+   adults. They are slow-growing, encapsulated vascular masses that
+   typically cause a gradual protrusion of the eye (proptosis).
+ • Orbital Dermoid Cyst: A congenital choristoma containing trapped
+   developmental tissue elements (like hair follicles or sweat glands).
+   They frequently present in childhood as a firm, smooth, painless mass
+   along the upper-outer edge of the orbit.
+ • Meningioma: Slow-growing tumors arising from the protective sheaths
+   surrounding the brain or optic nerve. Optic nerve sheath meningiomas
+   directly compress the nerve, causing painless, slowly progressive
+   vision loss.
+ • Schwannoma (Neurilemmoma): A benign, well-encapsulated tumor that
+   originates from the Schwann cells covering peripheral nerves within the
+   socket.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 78 — Orbital tumors: Malignant Orbital Tumors  (LAST SLIDE)
+─────────────────────────────────────────────────────────────────────
+Orbital tumors
+
+Malignant Orbital Tumors
+Malignant tumors are cancerous, grow rapidly, can destroy nearby orbital
+structures, and pose a risk of spreading to other parts of the body.
+
+ • Lymphoma: The most common malignant orbital tumor in older adults. It
+   frequently affects the tear-producing lacrimal gland or the orbital fat.
+   It often presents as a painless, firm mass with a characteristic
+   "molded" shape around the eyeball.
+ • Rhabdomyosarcoma: The most common primary malignant orbital tumor found
+   in children. This highly aggressive cancer of the soft tissues causes a
+   sudden, rapidly worsening protrusion of the eye, often accompanied by
+   swelling and redness.
+ • Adenoid Cystic Carcinoma: A highly malignant and aggressive tumor
+   originating inside the lacrimal gland. It is characterized by severe
+   pain due to its tendency to invade local nerve fibers.
+
+(The deck ends here. There is no summary slide, no reference list and no
+"thank you" slide.)
+
+
+═════════════════════════════════════════════════════════════════════
+NOT COVERED ANYWHERE IN THIS DECK
+═════════════════════════════════════════════════════════════════════
+Recorded so a later gap can be settled by proving a negative rather than by
+memory. Every item below was looked for across all twenty contact sheets.
+
+RETINOBLASTOMA — the biggest section, and the biggest holes
+ • The RB1 GENE is never named. Neither is chromosome 13, 13q14, the
+   two-hit hypothesis, nor Knudson.
+ • HEREDITARY vs SPORADIC retinoblastoma is never distinguished, and no
+   inheritance pattern, penetrance figure or recurrence risk is printed.
+   Slide 19 says only "No sexual or racial predisposition".
+ • GENETIC COUNSELLING and family screening are absent.
+ • The INTERNATIONAL CLASSIFICATION OF RETINOBLASTOMA (Groups A–E) is
+   never named or tabulated. Slide 27 uses the letter "gp D" once, in
+   passing, with no key anywhere in the deck. The REESE–ELLSWORTH
+   classification is not mentioned at all.
+ • FLEXNER–WINTERSTEINER ROSETTES, Homer Wright rosettes, fleurettes and
+   the word "rosette" itself do not appear. There is NO histopathology
+   slide in the deck.
+ • ENDOPHYTIC vs EXOPHYTIC growth patterns, and DIFFUSE INFILTRATING
+   retinoblastoma, are not named — though slides 38–44 photograph them.
+ • VITREOUS SEEDING and subretinal seeding are never named as terms.
+ • Actual TREATMENT MODALITIES for RB are never listed. Slide 27 gives
+   only "goals of treatment". CHEMOREDUCTION, systemic chemotherapy,
+   INTRA-ARTERIAL chemotherapy, INTRAVITREAL chemotherapy, cryotherapy,
+   laser/transpupillary thermotherapy, plaque brachytherapy, external beam
+   radiotherapy and enucleation technique are ALL absent as RB treatments.
+   (Those modalities are printed on slide 17 — but for choroidal MELANOMA,
+   not for retinoblastoma.)
+ • No CHEMOTHERAPY REGIMEN, agent name or dose anywhere in the deck —
+   carboplatin, vincristine, etoposide and melphalan do not appear.
+ • PROGNOSIS and SURVIVAL figures for RB are absent, as is the risk of
+   SECOND PRIMARY MALIGNANCY (osteosarcoma) in survivors.
+ • HIGH-RISK HISTOLOGICAL FEATURES (choroidal invasion, optic nerve
+   resection-margin involvement) are not described; slide 23 refers to
+   "High-risk cases" without ever defining what makes a case high risk.
+ • SPONTANEOUS REGRESSION and retinoma/retinocytoma are absent.
+ • Calcification is stated as detectable by U/S (slide 22) and not by MRI
+   (slide 23), but CT is never explicitly recommended for calcium — the CT
+   images on slides 24–26 sit under an "MRI" heading.
+
+CHOROIDAL MELANOMA
+ • No CELL TYPE classification — spindle A, spindle B, epithelioid and
+   mixed are not printed, and neither is Callender.
+ • MONOSOMY 3, GNAQ/GNA11, BAP1 and gene-expression profiling: absent.
+ • The COLLABORATIVE OCULAR MELANOMA STUDY (COMS) is never named, and no
+   tumour-size thresholds in millimetres are given.
+ • No "COLLAR-STUD" or mushroom shape by name, no orange lipofuscin
+   pigment, no drusen/nevus risk factors, no "TFSOM" mnemonic.
+ • The liver as the dominant metastatic site is shown in a photograph
+   (slide 16) but never stated in words.
+ • Plaque radiotherapy is listed as "Radioactive plaques" with no isotope
+   named (no ruthenium, no iodine-125).
+
+THE UNCAPTIONED PHOTOGRAPH RUN (slides 46–63)
+ • ⚠️ THESE EIGHTEEN SLIDES CARRY NO DIAGNOSIS AT ALL. Whatever they
+   illustrate is unrecoverable from the deck; only slides 64–76 name their
+   diagnoses. Any claim about what slides 46–63 show is inference, not
+   source.
+
+LEUKOCORIA / DIFFERENTIAL DIAGNOSIS
+ • There is NO list of the differential diagnosis of leukocoria anywhere in
+   the deck — no slide enumerates the causes. Coats' disease, astrocytoma
+   and optic nerve coloboma appear ONLY as photograph captions.
+ • PERSISTENT FETAL VASCULATURE / PHPV, RETINOPATHY OF PREMATURITY,
+   TOXOCARIASIS, congenital cataract, retinal dysplasia, myelinated nerve
+   fibres and NORRIE DISEASE are not named anywhere.
+ • COATS' DISEASE gets nine captioned photograph slides (64–72) and NOT ONE
+   SENTENCE — no definition, no telangiectasia, no sex or laterality, no
+   staging, no treatment. Its only prose is the words "MRI coats" in the
+   Case 1 caption.
+ • ASTROCYTOMA likewise has no prose; TUBEROUS SCLEROSIS is named only
+   inside the slide-73 caption, with no features of the syndrome given.
+ • Slide 76's COLOBOMA OF THE OPTIC NERVE has no prose either — no
+   embryology, no fissure closure, no morning glory disc.
+
+EYELID AND CONJUNCTIVAL TUMOURS
+ • The eyelid section is ONE SLIDE (slide 2) with two photographs. BCC and
+   SCC are given as caption abbreviations ONLY — neither is spelled out,
+   and there is no text on their features, sites, behaviour or treatment.
+ • SEBACEOUS GLAND CARCINOMA / meibomian gland carcinoma is NOT in the
+   deck at all, and neither is eyelid malignant melanoma.
+ • MOHS micrographic surgery, lid reconstruction and cryotherapy for lid
+   tumours: absent.
+ • BENIGN eyelid lesions (papilloma, xanthelasma, naevus, molluscum,
+   capillary haemangioma of the lid) are absent.
+ • There is no conjunctival-tumour section as such: pterygium is never
+   mentioned, and OSSN/PAM/conjunctival melanoma are covered only within
+   the "Corneal tumors" slides 3–7.
+ • The XERODERMA PIGMENTOSUM and ultraviolet/sunlight risk factors for
+   ocular surface malignancy are absent.
+ • MITOMYCIN C, interferon and topical chemotherapy for OSSN: absent.
+
+IRIS AND CILIARY BODY
+ • Slides 9 and 10 are LISTS OF NAMES ONLY — four lines in total. No
+   features, no diagnosis, no management for iris naevus, iris melanoma,
+   diktyoma/medulloepithelioma or ciliary body melanoma.
+ • "Sentinel vessels" are photographed on slide 10 but never named.
+ • MEDULLOEPITHELIOMA is written only as "Diktyoma"; the modern term does
+   not appear.
+
+ORBIT
+ • The orbital section is TWO SLIDES (77–78) and lists seven tumours with
+   one sentence each. No investigation, no imaging findings and NO
+   TREATMENT for any of them.
+ • OPTIC NERVE GLIOMA is absent from the orbital slides; NEUROFIBROMATOSIS
+   type 1 or 2 is never named anywhere in the deck.
+ • Orbital METASTASES and neuroblastoma are absent.
+ • Exenteration appears once, as "Excentration" on slide 17 for choroidal
+   melanoma; orbital exenteration for orbital malignancy is not discussed.
+
+GENERAL
+ • NO STAGING SYSTEM of any kind is named in the whole deck — no TNM, no
+   AJCC, no Reese–Ellsworth, no International Classification, no COMS. The
+   only "Stages" printed are the four clinical stages of choroidal melanoma
+   on slide 16 (Quiescent / Glaucomatous / Extraocular extension / Distant
+   metastasis), which belong to no named system.
+ • NO DRUG NAME AND NO DOSE appears anywhere in the 78 slides.
+ • No histopathology image and no immunohistochemistry.
+ • No follow-up schedule or screening interval for any tumour.
+ • Ocular surface / intraocular LYMPHOMA is named once (slide 78, orbital
+   lymphoma) with no primary vitreoretinal lymphoma anywhere.
+ • KAPOSI SARCOMA and HIV-related ocular tumours: absent.

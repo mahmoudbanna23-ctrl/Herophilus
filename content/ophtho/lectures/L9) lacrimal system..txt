@@ -1,36 +1,639 @@
-SOURCE: Semester 8\Opthalmo\Theoritical\PPT\L9) lacrimal system..pdf
+L9) lacrimal system..pdf — "Lacrimal System", Ihab M. Osman
+==========================================================
+33 slides. READ VISUALLY 2026-08-24 and cached here.
 
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-CamScanner
-
+⚠️ THIS DECK IS IMAGE-ONLY. `pdftotext` returns the CamScanner watermark 33 times
+and nothing else — no lecture text at all. It was rendered to PNG and read as
+images (four-up contact sheets at ~760 px per slide, with 15 dense or obscured
+slides re-rendered singly at 1100 px). Do not try to re-extract it with
+pdftotext; it will look like an empty deck and it is not.
+
+⚠️ Two distinct kinds of loss are marked separately below, because they are not
+the same fault:
+  [text cut off in the original] — the text box OVERFLOWS the slide and the last
+  line or two is chopped by the slide edge. The words are genuinely not on the
+  slide.
+  [obscured by the image] — the text IS on the slide but a photograph or figure
+  is stacked on top of it in the original PowerPoint, hiding the middle of the
+  sentence. Slides 13 and 26 are damaged this way, and two headings (4, 6, 18,
+  20) are half-covered by their own figures.
+
+Transcribed close to verbatim. Slide spelling kept as printed, including the
+lecturer's own errors ("Amniontocoele", "Fluoresceine", "Canalicualr stenosis",
+"silastic", "Nasolacrimal" with the single 'l').
+
+Many slides are figure-only. Those get a block describing what is drawn and
+transcribing every label printed on the figure — the teaching in this deck is
+heavily pictorial and a blank block would misrepresent it.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 1 — Title
+─────────────────────────────────────────────────────────────────────
+Lacrimal System
+Ihab M. Osman
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 2 — Photograph, no prose and no caption
+─────────────────────────────────────────────────────────────────────
+A stock photograph of a shallow orange basin under a running tap; the basin is
+full and water is spilling over its rim and falling past the edge of the table.
+Getty Images watermark ("gettyimages / Credit: Maica", stock ref 172216462).
+No text of any kind is printed on this slide.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 3 — Structure of the tear film
+─────────────────────────────────────────────────────────────────────
+Heading only; the rest of the slide is a labelled diagram.
+
+Labels printed on the figure:
+  TEAR FILM
+  LIPID LAYER   0.1 µm
+  WATER LAYER   8 µm
+  MUCIN LAYER   0.2 µm
+  Epithelial cell · Mucin · Microvillus
+  "With kind permission from Allergan"
+
+(The diagram shows the three layers in section over an epithelial surface, with
+the mucin layer interdigitating with the microvilli.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 4 — The Secretory Part / Aqueous part
+─────────────────────────────────────────────────────────────────────
+Heading: "The Secretory Part / Aqueous part" — the second line is half hidden
+behind the two images stacked on top of it.
+
+Left: clinical photograph of an elderly patient's upper lid everted over a spoon
+handle, exposing the superior fornix and palpebral conjunctiva.
+
+Right: sagittal diagram of the eyelids and conjunctival sac. Labels printed on
+the figure:
+  Lacrimal gland
+  Glands of Krause   [CIRCLED IN RED by the lecturer]
+  Glands of Wolfring
+  Meibomian gland
+  Glands of Zeis
+  Glands of Moll
+  Superior fornix · Bulbar conjunctiva · Glands of Manz
+  Tarsal conjunctiva · Inferior fornix · Glands of Krause (again, inferiorly)
+
+No prose whatever on this slide — the gland list exists only as figure labels.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 5 — The Secretory Part / Mucin and Lipid part
+─────────────────────────────────────────────────────────────────────
+Heading only; two figures, no prose.
+
+Left (lettered A): clinical photograph of an everted lid margin showing the row
+of meibomian glands through the tarsal conjunctiva.
+
+Right: line diagram captioned "Distribution of goblet cells on the conjunctiva
+with eyelids everted", with the eye and everted lids drawn from the front and
+goblet cells shown as stippling. Labels: "Lateral" (left) and "Medial" (right);
+the stippling is visibly denser medially.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 6 — Anatomy of the lacrimal system
+─────────────────────────────────────────────────────────────────────
+Heading: "Anatomy of the lacrimal system" — the word "system" is half hidden
+behind the figure sitting on top of it.
+
+Labelled diagram of the drainage system in the face and nose. Labels printed on
+the figure, WITH the dimensions the deck gives:
+  Common canaliculus
+  Punctum
+  Lacrimal sac        12–15 mm
+  Ampulla
+  Canaliculus         8–10 mm
+  Anterior lacrimal crest
+  Nasolacrimal duct   12–18 mm
+  Middle turbinate
+  Inferior turbinate
+  Hiatus semilunaris with sinus ostia
+  "Valve" [the rest of this label runs off the right edge of the figure and is
+  not readable — presumably the valve at the lower end of the duct]
+
+These three measurements are the only numerical anatomy in the deck.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 7 — Two anatomical figures, no heading and no prose
+─────────────────────────────────────────────────────────────────────
+Left figure — the medial canthal tendon and lacrimal sac in three-quarter view.
+Labels: Superior Crus · Posterior Horn · Inferior Crus · Lacrimal Sac ·
+Anterior Horn.
+
+Right figure — line drawing of the drainage passage from canaliculus to nose.
+Labels: Canaliculus · Lacrimal sac · Valve of Krause · Nasolacrimal duct ·
+Hasner's valve. A further label at the left edge is cropped by the figure and
+reads only "…um" (punctum).
+
+These are the only two named valves in the deck.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 8 — Tear out flow
+─────────────────────────────────────────────────────────────────────
+Heading only; three small line diagrams of the eye and lacrimal passages with
+red arrows showing the direction of flow. The panels are lettered B, A and C
+(printed in that left-to-right order on the slide, i.e. out of alphabetical
+order).
+  Panel B — arrows running downward through the sac and duct.
+  Panel A — arrows running medially across the eye toward the puncta.
+  Panel C — the sac drawn filled, no arrows.
+No prose is printed. The lacrimal pump is taught here as a picture only.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 9 — Epiphora
+─────────────────────────────────────────────────────────────────────
+ • Epiphora is the overflow of tears at the eyelid margin.
+
+There are two mechanisms:
+1) Hypersecretion secondary to anterior segment disease such as dry eye
+   ('paradoxical watering') or inflammation
+2) Defective drainage
+   ➤ Lid Malposition (e.g. ectropion) of the lacrimal puncta.
+   ➤ Obstruction at any point along the drainage system
+   ➤ Lacrimal pump failure, which may occur secondarily to lower lid laxity or
+     weakness of the orbicularis [text cut off in the original — one further
+     line begins below "orbicularis" and is chopped by the slide edge]
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 10 — Evaluation of Epiphora
+─────────────────────────────────────────────────────────────────────
+ • History Enquiry should be made about ocular discomfort and redness to aid in
+   excluding hypersecretion.
+ • Drainage failure tends to be exacerbated by a cold and windy environment and
+   to be least evident in a warm dry room.
+ • A complaint of the tears overflowing onto the cheek is likely to indicate
+   drainage failure rather than hypersecretion.
+ • External examination Punctal abnormality is the most common cause of lacrimal
+   drainage failure.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 11 — Fig. 3.3, six clinical photographs (figure only)
+─────────────────────────────────────────────────────────────────────
+Six lettered clinical photographs of the punctum and medial lid margin.
+
+Caption printed under the figure:
+"Fig. 3.3 (A) Marked punctal stenosis; (B) mild medial ectropion;
+(C) conjunctivochalasis (arrow heads); (D) punctal obstruction by an eyelash
+(arrow); (E) large caruncle; (F) pouting [punctum — text cut off in the
+original; the caption's last line is chopped by the slide edge]"
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 12 — Evaluation of Epiphora (cont.)
+─────────────────────────────────────────────────────────────────────
+ • The lacrimal sac should be palpated.
+ • Regurge Test ( positive or negative)
+ (Mucopurulent discharge on compression is indicative of a patent canalicular
+ system, but with an obstruction distal to the lower end of the lacrimal sac.
+ • In acute dacryocystitis, palpation is painful and should be avoided.
+
+Photograph at the right: a child's medial canthus being compressed by a
+gloved finger, with white mucopurulent material expressed from the punctum onto
+the lid margin.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 13 — Evaluation of Epiphora (cont.) / Fluorescein disappearance test
+─────────────────────────────────────────────────────────────────────
+⚠️ A large slit-lamp photograph is stacked ON TOP of this slide's text box and
+hides the middle of three sentences. What is readable:
+
+ • The marginal tear strip is examined on the slit lamp prior to any
+   manipulation of the eyelids or instillation of topical medication.
+   (0.2–0.4 mm normally)
+ • The fluoresce[in disappearance test — obscured by the image] is performed by
+   instilling fl[uorescein dro]ps into both conjunctival [sacs — obscured by the
+   image]
+ • Normally, li[ttle or no dye remain]s after 5–10 minutes. Prol[onged retention
+   is in]dicative of inadequate la[crimal drainage — obscured by the image]
+ • [an empty fourth bullet is printed, with no text after it]
+
+The photograph itself: slit-lamp view of the lower lid margin and the marginal
+tear strip, with the slit beam's concentric reflection on the cornea.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 14 — Fluorescein disappearance test (figures only)
+─────────────────────────────────────────────────────────────────────
+Left: slit-lamp photograph in blue light of a high, bright green marginal tear
+strip. Caption: "Fig. 3.4 High marginal tear strip stained with fluorescein".
+
+Right: photograph of a child's face under blue/ultraviolet illumination, with a
+white arrow pointing at the nostril region.
+
+No prose on the slide.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 15 — Evaluation of Epiphora (cont.) / Lacrimal Probing
+─────────────────────────────────────────────────────────────────────
+ • It is contraindicated in acute infection
+ • Lacrimal irrigation should be performed only after ascertaining punctal
+   patency.
+
+Three figures along the bottom, lettered B, C and A (printed in that order):
+  (B) line drawing — probe entering the punctum vertically
+  (C) line drawing — probe turned horizontally along the canaliculus, arrow
+      showing the direction, with the lid pulled laterally
+  (A) clinical photograph — a cannula/probe in the lower punctum of a patient
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 16 — Possible results of probing (figure only)
+─────────────────────────────────────────────────────────────────────
+Two line diagrams in section, lettered A and B, showing a probe passed to the
+lacrimal sac and the bone beyond it.
+
+Caption printed under the figure:
+"Fig. 3.6 Possible results of probing. (A) Hard stop; (B) soft stop"
+
+No further prose. The deck defines hard and soft stop by picture only.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 17 — Photograph only, no heading and no caption
+─────────────────────────────────────────────────────────────────────
+Clinical photograph of an examiner's gloved hand steadying the lower lid of an
+elderly patient with fine forceps/cannula at the medial lower lid margin, the
+eye looking up. No text of any kind is printed on this slide.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 18 — Jones I test / Fluoresceine drops in the conjunctival sac
+─────────────────────────────────────────────────────────────────────
+Heading as printed: "Jones I test / Fluoresceine drops in the conjunctival sac"
+(the words "conjunctival sac" are half covered by the figure box on top of them;
+"Fluoresceine" is the lecturer's spelling).
+
+Three diagrams of the drainage system with dye shown as stippling; the small
+labels printed inside the panels read "Positive", "Nega[tive]" and "[Nega]tive".
+
+Three green captions beneath, one per panel, transcribed verbatim:
+  1) "Positive recovery in the nose = patent lacrimal system"
+  2) "Negative recovery in the nose = lower duct obstruction or Atony of the sac"
+  3) "Negative recovery in the nose = upper canalicular stenosis"
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 19 — Jones II Test
+─────────────────────────────────────────────────────────────────────
+Heading, then two diagrams of irrigation with a syringe, each with green caption
+boxes and red arrows. Transcribed verbatim:
+
+Left panel (lettered B), diagram label "Positiv[e]":
+  Top caption:    "Lacrimal duct obstruction"
+  Bottom caption: "Atony of the sac"
+
+Right panel, diagram label "Negative":
+  Top caption:    "Common canalicular obstruction"
+  Bottom caption: "Canalicualr stenosis"   [sic — canalicular]
+
+No prose. The interpretation of Jones II exists only in these four caption boxes.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 20 — Evaluation of Epiphora (cont.) / Contrast Dacryocystography
+─────────────────────────────────────────────────────────────────────
+(The heading's third line, "Contrast Dacryocystography", is half covered by the
+image column on the right.)
+
+ • Injection of radio-opaque contrast medium  into the canaliculi followed by
+   the capture of magnified images.
+ • Indications include confirmation of the precise site of lacrimal drainage
+   obstruction to guide surgery and the diagnosis of diverticuli, fistulae and
+   filling defects (e.g. stones, [text cut off in the original]
+
+Right: three stacked dacryocystogram images lettered A, B and C.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 21 — CONGENITAL OBSTRUCTION / Nasolacrimal duct obstruction
+─────────────────────────────────────────────────────────────────────
+ • The lower end of the nasolacrimal duct, in the region of the valve of Hasner,
+   is the last portion of the lacrimal drainage system to canalize, with
+   complete patency most commonly occurring soon after birth.
+ • Epiphora affects at least 20% of neonates, but spontaneous resolution occurs
+   in approximately 85% within the first year.
+ • Epiphora and matting of eyelashes may be constant or intermittent and may be
+   particularly noticeable when the child has an upper respiratory tract
+   infection.
+ • Superimposed bacterial conjunctivitis.
+ • Gentle pressure over the lacrimal sac may cause mucopurulent reflux.
+ • Acute dacryocystitis is very rare.
+ • Differential diagnosis includes other congenital causes of a watering eye,
+   such as punctal atresia, congenital glaucoma, chronic conjunctivitis (e.g.
+   chlamydial) [this last line is clipped by the slide edge but is still legible;
+   anything after "chlamydial)" is cut off in the original]
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 22 — Treatment of congenital NLDO
+─────────────────────────────────────────────────────────────────────
+ • Massage of the lacrimal sac has been suggested as a means of rupturing a
+   membranous obstruction by hydrostatic pressure.
+ • Probing. Passage of a fine wire via the canalicular system and nasolacrimal
+   duct to disrupt the obstructive membrane at the valve of Hasner followed by
+   irrigation to confirm the patency.
+ • Options after probing failure include intubation with silastic tubing with or
+   without balloon dilatation of the nasolacrimal duct, endoscopic procedures and
+   [text cut off in the original — the sentence ends mid-list at the slide edge;
+   DCR is never named on this slide]
+
+Figure: "Fig. 3.18 Probing of the nasolacrimal duct (Courtesy of K Nischal)" —
+photograph of a probe entering the punctum of an infant.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 23 — Congenital dacryocoele (Amniontocoele)
+─────────────────────────────────────────────────────────────────────
+(Heading spelling as printed: "Amniontocoele".)
+
+ • A collection of amniotic fluid or mucus in the lacrimal sac caused by an
+   imperforate Hasner valve. Presentation is perinatal with a bluish cystic
+   swelling at or below the medial canthus, accompanied by epiphora.
+ • If an intranasal component is large it can cause respiratory distress.
+ • Resolution is common with only conservative treatment, but if this fails,
+   probing is usually adequate
+
+Figure: "Fig. 3.19 Congenital dacryocoele (Courtesy of A Pearson)" — photograph
+of a smooth bluish-pink swelling at the medial canthus of an infant.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 24 — ACQUIRED OBSTRUCTION / Conjunctivochalasis
+─────────────────────────────────────────────────────────────────────
+ • Characterized by one or more folds of redundant conjunctiva prolapsing over
+   the lower eyelid margin
+ • Symptoms of dry eye and commonly contributes to epiphora
+ • Involutional process
+ • Observation or lubricants alone
+ • Topical steroids or other anti-inflammatories.
+ • Surgical options include securing the bulbar conjunctiva to the sclera with
+   three absorbable sutures  or excision of a crescent shaped area of excess
+   [text cut off in the original — the final line is chopped by the slide edge]
+
+Photograph at the right: a fold of redundant conjunctiva draped over the lower
+lid margin.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 25 — ACQUIRED OBSTRUCTION / Primary Punctal stenosis
+─────────────────────────────────────────────────────────────────────
+ • The most common causes are chronic blepharitis and idiopathic stenosis.
+ • Other causes include herpes simplex and herpes zoster lid infection, local
+   radiotherapy, cicatrizing conjunctivitis, chronic topical glaucoma treatment,
+   systemic cytotoxic drugs such as 5-fluorouracil
+ • Dilatation of the punctum alone can be tried but rarely gives sustained
+   benefit.
+ • Punctoplasty is usually required.
+ • one-, two or three-snip enlargement with removal of the posterior ampulla wall
+ • [one further bullet begins below and is cut off in the original — only the
+   tops of its letters appear above the slide edge]
+
+Figures: a translucent flanged tube-shaped device on a white ground (unlabelled),
+and below it a clinical photograph of a dilated/enlarged punctum on an inflamed
+lid margin.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 26 — ACQUIRED OBSTRUCTION / Secondary Punctal stenosis
+─────────────────────────────────────────────────────────────────────
+⚠️ Two images are stacked ON TOP of the lower half of this slide's text and hide
+the middle of the last two bullets. What is readable:
+
+Secondary stenosis occurs after punctal eversion
+ ➤ Retropunctal (Ziegler) cautery can be used for pure punctal eversion.
+   Subsequent tissue shrinkage should invert the punctum.
+ ➤ Medial conjunctivoplasty can be used in medial ectr[opion — obscured by the
+   image] …s no subs[tantial — obscured by the image]
+ ➤ Low[er — obscured by the image] … strip to c[orrect — obscured by the image]
+
+(A vertical caption strip reading "Thermal" is just visible at the left edge of
+the first image.)
+
+Figures: (A) clinical photograph of an everted, inflamed lower lid margin;
+(B) line drawing of a diamond/lozenge of tissue being excised from the medial
+conjunctiva with forceps and sutures placed.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 27 — ACQUIRED OBSTRUCTION / Canalicular obstruction
+─────────────────────────────────────────────────────────────────────
+Causes include :
+ • Congenital, trauma, herpes simplex infection, drugs and irradiation. Chronic
+   dacryocystitis can cause a membrane to form in the common canaliculus.
+
+Treatment include :
+ ➤ Simple intubation of one or both canaliculi with silicone stents for 6 weeks
+   to 6 months
+ ➤ Canalicular trephination followed by intubation.
+ ➤ Balloon canaliculoplasty and endoscopic laser techniques are available.
+ ➤ Conjunctivodacryocystorhinostomy and the insertion of a toughened glass
+   (Lester Jones) tube
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 28 — Four figures, no heading and no caption
+─────────────────────────────────────────────────────────────────────
+Left: colour illustration of a face with a fine wire/probe threaded from the
+medial canthus down through the nose and retrieved at the nostril.
+Centre: intranasal endoscopic photograph showing a pale membrane/flap in a
+red mucosal cavity.
+Right (A): a short translucent glass tube with a flanged end, photographed on a
+teal background.
+Right (B): a grey endoscopic or radiographic view of a cavity.
+No text of any kind is printed on this slide.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 29 — ACQUIRED OBSTRUCTION / Nasolacrimal Duct Obstruction
+─────────────────────────────────────────────────────────────────────
+Causes
+ ➤ Idiopathic stenosis – by far the most common.
+ ➤ Naso-orbital trauma, including nasal and sinus surgery.
+ ➤ Granulomatous disease such as sarcoidosis.
+ ➤ Infiltration by nasopharyngeal tumours.
+
+Treatment
+ ➤ External DCR
+ ➤ Endoscopic DCR
+
+(No technique, no comparison of the two routes, no adjunct is printed.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 30 — Surgical sequence, six panels (figure only)
+─────────────────────────────────────────────────────────────────────
+Six line drawings lettered A to F, in two rows of three, showing a surgical
+procedure at the medial canthal / lower lid region step by step: an incision
+made along the lid (A), the wound opened with retractors (B), a dark cavity
+exposed and progressively enlarged (C–E), and sutures placed to close (F). Each
+panel carries the artist's signature in the corner.
+
+No caption, no step labels and no prose are printed. The deck does not name
+which operation this is.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 31 — CHRONIC CANALICULITIS
+─────────────────────────────────────────────────────────────────────
+ • Chronic canaliculitis is an uncommon condition, frequently caused by
+   Actinomyces israelii, anaerobic Gram-positive bacteria.
+ • Occasionally scarring and canalicular obstruction may result.
+ • Unilateral epiphora associated with chronic mucopurulent conjunctivitis
+   refractory to conventional treatment.
+ • There is pericanalicular redness and oedema and mucopurulent discharge on
+   pressure over the canaliculus ). A 'pouting' punctum may be a diagnostic clue
+   in mild cases.
+ • Concretions (sulfur granules) (metabolic products of Actinomyces)  are
+   expressed on canalicular compression or following canaliculotomy.
+ • [a final bullet begins here and is cut off in the original — only the tops of
+   the letters are visible above the slide edge; it appears to begin with a word
+   ending "-ic antibiotic and", but it is not legible and is NOT transcribed]
+
+Three photographs at the right, lettered A, B and C: (A) purple-stained
+microscopy of branching filamentous organisms; (B) an inflamed medial lower lid
+with a pouting punctum; (C) yellow-white concretions expressed from an opened
+canaliculus.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 32 — DACRYOCYSTITIS
+─────────────────────────────────────────────────────────────────────
+ • Infection of the lacrimal sac is usually secondary to obstruction of the
+   nasolacrimal duct.
+ • It  is most commonly staphylococcal or streptococcal.
+
+Acute dacryocystitis
+Presentation is with the subacute onset of pain in the medial canthal area,
+associated with epiphora. A very tender, tense red swelling develops at the
+medial canthus, commonly progressing to abscess formation. There may be
+associated preseptal cellulitis.
+
+Treatment
+ • Initial treatment involves the application of warm compresses and oral
+   antibiotics .
+ • Irrigation and probing should not be performed.
+ • Incision and drainage may be considered if pus points and an abscess is about
+   to drain spontaneously.
+ • Dacryocystorhinostomy is commonly required after the acute infection has been
+   controlled
+
+Chronic dacryocystitis
+Presentation is with chronic epiphora, which may be associated with a chronic or
+recurrent unilateral conjunctivitis.
+A mucocele is usually evident as a painless swelling at the inner canthus  but
+if an obvious swelling is absent pressure over the sac commonly still results in
+[text cut off in the original — the sentence is chopped by the slide edge, and
+NO treatment of chronic dacryocystitis is printed anywhere on the slide]
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 33 — Fig. 3.21 and Fig. 3.22 (figures only, final slide)
+─────────────────────────────────────────────────────────────────────
+Upper block, four photographs lettered A–D, caption printed beneath:
+"Fig. 3.21 (A) Acute dacryocystitis; (B) lacrimal abscess and preseptal
+cellulitis; (C) lacrimal fistula with fluorescein; (D) healed lacrimal fistula
+(arrow)"
+
+Lower block, two photographs lettered A and B, caption printed beneath:
+"Fig. 3.22 (A) Mucocoele; (B) expression of mucopurulent material by applying
+pressure to the sac (arrow)"
+
+No prose. The lecture ends here; there is no summary or closing slide.
+
+
+═════════════════════════════════════════════════════════════════════
+NOT COVERED ANYWHERE IN THIS DECK
+═════════════════════════════════════════════════════════════════════
+Recorded so a gap can be settled by proving a negative rather than by memory.
+Each item below was looked for across all 33 slides, including figure labels and
+captions.
+
+TESTS AND INVESTIGATIONS
+ • The SCHIRMER TEST. It appears on no slide, in no figure and in no caption.
+   The deck's tear-film assessment is the fluorescein disappearance test
+   (slide 13) and nothing else.
+ • TEAR BREAK-UP TIME (BUT/TBUT). Absent — the tear film is taught as three
+   layers with thicknesses (slide 3) and never as a stability measurement.
+ • ROSE BENGAL and LISSAMINE GREEN staining. Absent; fluorescein is the only dye
+   named.
+ • TEAR OSMOLARITY, tear volume, tear turnover rate, tear pH. None printed. The
+   only tear-film numbers in the deck are the three layer thicknesses on slide 3
+   and the marginal tear strip height "0.2–0.4 mm normally" on slide 13.
+ • DACRYOSCINTIGRAPHY (nuclear lacrimal scintigraphy). Absent — slide 20 gives
+   contrast dacryocystography only.
+ • CT or MRI of the lacrimal system. Neither is mentioned anywhere.
+ • The TAYLOR / dye retention test, and the PRIMARY vs SECONDARY dye test named
+   as such. The deck names Jones I (slide 18) and Jones II (slide 19) only.
+
+ANATOMY
+ • The VALVE OF ROSENMÜLLER. Slide 7 labels exactly two valves — "Valve of
+   Krause" and "Hasner's valve" — and Rosenmüller is printed nowhere in the deck.
+ • The INFERIOR MEATUS as the site where the nasolacrimal duct opens. The word
+   "meatus" appears on no slide; slide 6 labels the middle and inferior
+   TURBINATES and the hiatus semilunaris, and leaves the opening unnamed.
+ • The dimensions of the PUNCTUM (its diameter), and the vertical/horizontal
+   segment lengths of the canaliculus. Slide 6 gives only three measurements:
+   sac 12–15 mm, canaliculus 8–10 mm, nasolacrimal duct 12–18 mm.
+ • The ORBITAL and PALPEBRAL LOBES of the lacrimal gland by name, its
+   INNERVATION (greater superficial petrosal nerve, pterygopalatine ganglion,
+   lacrimal nerve) and its blood supply. Slide 4 labels "Lacrimal gland" on a
+   diagram and stops there.
+ • The LACRIMAL PUMP mechanism explained in words. Slide 8 shows it as three
+   arrowed diagrams with no prose at all; slide 9 mentions "Lacrimal pump
+   failure" as a cause without describing the pump.
+ • The BONY lacrimal fossa, the posterior lacrimal crest, and which bones form
+   the fossa. Slide 6 labels the ANTERIOR lacrimal crest only.
+
+DISEASE NOT IN THIS DECK
+ • DRY EYE / keratoconjunctivitis sicca as a topic — its classification,
+   aqueous-deficient vs evaporative, SJÖGREN SYNDROME, and its treatment. Dry
+   eye appears only as two passing phrases (slide 9, "dry eye ('paradoxical
+   watering')"; slide 24, "Symptoms of dry eye").
+ • DACRYOADENITIS, acute or chronic, and LACRIMAL GLAND TUMOURS (pleomorphic
+   adenoma, adenoid cystic carcinoma). None are in this deck — they are taught
+   in L9's sibling deck L10) orbit, not here.
+ • LACRIMAL SAC TUMOURS and lacrimal sac lymphoma.
+ • TRACHOMA as a cause of punctal or canalicular stenosis — slide 25's causes
+   list does not include it, and the word does not appear in the deck.
+ • STEVENS–JOHNSON SYNDROME and OCULAR CICATRICIAL PEMPHIGOID by name. Slide 25
+   says "cicatrizing conjunctivitis" without naming either.
+ • CROCODILE TEARS / gustatory lacrimation, and reflex vs basic secretion.
+ • CONGENITAL LACRIMAL FISTULA as a described entity. A "lacrimal fistula" is
+   photographed in the Fig. 3.21 caption on slide 33 and never discussed.
+
+MANAGEMENT DETAIL
+ • Any DRUG DOSE, drug concentration or duration of antibiotic anywhere in the
+   deck. There is not one.
+ • The AGE at which probing should be performed for congenital NLDO. Slide 22
+   describes massage, probing and intubation without giving any age threshold,
+   and slide 21's "85% within the first year" is the only timing figure.
+ • The CRIGLER massage technique by name — slide 22 says only "Massage of the
+   lacrimal sac".
+ • DCR TECHNIQUE. Slide 29 lists "External DCR" and "Endoscopic DCR" as two
+   bullets; there is no description of the osteotomy, the flaps, the
+   anastomosis, or of MITOMYCIN C. Slide 30 is a six-panel surgical sequence
+   with NO caption, so even that figure does not name the operation.
+ • Success rates for DCR, for probing, or for intubation. No percentage of any
+   kind is printed for any operation.
+ • Complications of DCR (haemorrhage, cutaneous scar, sump syndrome).
+ • The treatment of CHRONIC DACRYOCYSTITIS. Slide 32 gives a Treatment heading
+   under the ACUTE section only, and the chronic paragraph is cut off by the
+   slide edge before any management is stated.
+ • The treatment of CHRONIC CANALICULITIS. Slide 31's final bullet — the only
+   one that would have carried it — is cut off by the slide edge.
+ • PUNCTAL PLUGS / punctal occlusion as a treatment. A plug-like device is
+   photographed on slide 25 but it is never named or discussed in text.
