@@ -10430,3 +10430,112 @@ what it measured; it was wrong about what it was taken to mean.
 backslash goes through the `Write` or `Edit` tool, never through a heredoc. The generator scripts in
 `<scratch>\oph\` were written with `Write` for exactly this reason; the one that corrupted the file
 was the one I typed into a heredoc because it felt small enough not to matter.
+
+### The bank stream, 2026-08-24 — 138 → 279 questions
+
+| Batch | Printed | Written | Folded | Boxed | Marker Δ | Notes |
+|---|---|---|---|---|---|---|
+| House ch.1 "Examination of the eye" | 56 | 56 | 0 | 0 | **+56** | staged 2026-08-12, adjudicated, **never spliced** |
+| GG t4 "Lacrimal System" | 26 | 26 | 0 | 6 | **+20** | contents exact; "Page As" **correct** |
+| GG t7 "Sclera" | 8 | 8 | 0 | 3 | **+5** | contents exact; "Page As" **correct** |
+| GG t8 "Cornea" | 52 | **51** | **1** | 11 | **+40** | first fold in the module |
+
+**Every marker delta was predicted before the splice and observed after it.** Corpus **2,699 → 2,840**;
+ophtho **138 → 279**; **26 of 36 ophtho chapters** now hold questions, up from 23.
+
+#### ⚠️ THE CONTENTS COUNT HAS NOW BEEN EXACT SEVEN TIMES RUNNING, AND THE "Page As" FIGURE IS THE ONE THAT LIES
+
+Printed counts: **71, 41, 26, 26, 65, 52, 8** — every one exactly as promised. ENT's Grade Gain was
+wrong **17 times in 21**, always upward, so this bank is behaving differently and the habit of
+counting what is printed still stands.
+
+**The "Page As" figure is the unreliable one, and it is unreliable in BOTH directions:** it lied on
+t2 (14 of 41 keys on the page after the one stated) and t3 (11 of 26), and was **correct on t4, t7
+and t8**. **Render one page past, every time, and record which way it went** — three correct
+readings in a row are not a pattern to trust.
+
+⚠️ **DEFECT 2 RECURRED ON t8: a question tail sharing the first answer page.** Book p.52 carries
+**Q348 in its left column** with the *Cornea / Answers* banner in the right. Reading only the right
+column of the first answer page loses a question, exactly as it nearly did on t3.
+
+⚠️ **SHOW-THROUGH IS NOT CONTENT.** On t4 and again on t7 the reverse of the sheet is faintly visible
+behind the Answers banner — t7's is p.44's Q293 stem with its options A and B. Both staging headers
+name it so a later reader does not transcribe the back of the page.
+
+#### ⚠️⚠️ THE MODULE'S FIRST FOLD IS THE "CONVERT AUTHORED TO SOURCED" SHAPE
+
+`opqb-t8-327` (book p.49) is a **within-bank reprint** of `opqb-t2-77` (book p.9): the same 46 D
+vertical against 45 D horizontal keratometry, the same emmetropic retinoscopy, **the same four
+options in the same order**, the same key, the same chapter. **A within-bank reprint takes NO
+`alsoIn`** — it is held once; ENT recorded six of these.
+
+**But a fold is never just a deletion, and two consequences followed from this one:**
+
+1. **p.49/p.53 PRINTS AN EXPLANATION BOX AND p.14 DOES NOT.** The box was folded into `opqb-t2-77`
+   verbatim, at the top where a printed box belongs, with the standing separator beneath it. The
+   held entry got **richer**, not merely deduplicated — 614 → 643 words.
+2. **THE AUTHORED MARKER CAME OFF.** `opqb-t2-77` had correctly ended with *"prints no explanation
+   here"*, because its own page prints a bare key letter. **The bank does print an explanation for
+   this question after all.** A marker left on a now-sourced entry is a false claim about the source,
+   and the marker count is audited both ways.
+
+Its `source` now names both printings, because a question the bank prints twice is a fact about the
+bank.
+
+#### ✅ Two guards earned their keep on that single fold
+
+- **⚠️ THE MARKER STRING OCCURS 151 TIMES IN `questions.ophtho.js`** — once per authored Grade Gain
+  entry. The first strip attempt **aborted on the uniqueness guard**, which is precisely what it is
+  for: stripping the first of 151 matches would have silently un-marked an unrelated question. The
+  edit was re-anchored on this entry's own closing sentence *through* the marker.
+- **⚠️ `opqb-t8-317` CITED THE FOLDED ID** mid-sentence — *"`opqb-t8-327` is that arithmetic made
+  into a question"*. Caught by grepping the drafted block **before** splicing and re-aimed at the
+  fold target. **Second time in the project this has been caught pre-splice rather than repaired
+  afterwards.** One command; always run it.
+
+#### ⚠️ Two of my own briefs were wrong, and both were caught by the agent reading the source
+
+- **THE NUMBERING.** I briefed topic 7 as opening at **Q165**, reasoning that topic 4 ended at Q164 —
+  and forgot that topics 5 (59 q) and 6 (65 q) intervene. It runs **Q289–Q296**, and topic 8
+  **Q297–Q348**. **Read the number printed under the topic banner; never compute it.** The correction
+  also fixed topic 6's range in flight: it must end at **Q288**.
+- **THE CHAPTER SPLIT.** I described `op-cornea-surg` as "transplantation, refractive surgery, CXL".
+  `modules.js` titles it **"Cornea — ectasia, grafts and refractive surgery"**, so the eight
+  **keratoconus** questions belong there too. **Read the chapter titles in `modules.js`; do not
+  paraphrase them from memory.**
+
+#### Divergences recorded, keys never disputed
+
+- **t8 Q300** keys *Pseudomonas*; `L15,16` attaches *"can penetrate intact epithelium"* to
+  **N. gonorrhoeae alone**. Measured: *intact epithelium* returns **one hit across all 29 decks and
+  12 book chapters**, and it is about a pseudomembrane in ch.6.
+- **t8 Q324** keys *"typical corneal dendrites may occur"*; the deck calls the HZO lesion a
+  **pseudo**dendrite — *"smaller, stellate, lacks terminal buds"*. Key stands; the other three
+  options are each contradicted outright.
+- **t8 Q315 vs Q328** — a bandage lens endorsed in one, patching contraindicated in the other;
+  reconciled in-entry as **bandage lens vs occlusive pad**, and the tension recorded rather than
+  smoothed away.
+- **t4 Q152/Q153** — the same 67-year-old keyed **NLD obstruction** at one and **functional
+  epiphora** at the next, with Q153's option B restating Q152's key verbatim. Both keyed as printed;
+  each entry names the other.
+- **t4 Q141** — the bank's box sets the conservative window for congenital NLD obstruction at
+  **6 months**; **book p.67 sets one year**. `L9` gives no age threshold at all.
+
+⚠️ **Measured and worth keeping: `Fleischer`/`Fleisher` returns ZERO across all 29 cached decks and
+12 book chapters** — neither the corneal iron ring nor the Kayser–Fleischer ring is taught anywhere
+in this module, though the bank prints *"Kayser Fleisher ring"* as an option.
+
+#### ⚠️ Why each zero-fold is a zero, measured rather than shrugged at
+
+- **t4:** **18 of 19 lacrimal terms return ZERO** across the 194 held questions — `dacryocyst`,
+  `nasolacrimal`, `canalicul`, `schirmer`, `epiphora`, `punctum`, `jones`, `DCR`, `regurg`,
+  `hasner`, `krause`, `sac` and more. `lacrimal` itself returns 4, all from the orbit topic's
+  lacrimal-gland-tumour menu. **The lacrimal system had simply never been asked before.**
+- **t7:** `phenylephrine`, `scleromalacia`, `blue sclera` and `necrotiz`/`necrotis` all **ZERO**
+  across 220 held; `sclera`, `scleritis` and `episcleritis` together return 5, all from red-eye
+  differentials.
+
+The sweep's false positives behaved exactly as documented: t4's single candidate was the
+**positional-vocabulary** shape at F 0.57 (*superior/inferior/medial/lateral* shared between lacrimal
+ducts and thyroid EOM involvement), and its one self-sweep hit at stem 0.75 was a **correctly
+repaired back-reference** — one vignette, two different questions, different options, different keys.

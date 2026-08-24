@@ -1,86 +1,810 @@
-SOURCE: Semester 8\Opthalmo\Theoritical\PPT\L30) Squint II.pdf
+L30) Squint II.pdf — "EOM Dysfunction (Paralytic Squint)",
+Ashraf Saad Galal, M.D, Professor of Ophthalmology, Alexandria University
+==========================================
+23 slides. READ VISUALLY 2026-08-24 and cached here.
 
+⚠️ THIS DECK IS ALMOST ENTIRELY IMAGE-ONLY AND MUST NOT BE RE-READ FROM ITS
+TEXT LAYER. The previously cached text ran to 1,540 characters with about
+three fifths of the slides blank — it caught the headings and lost every
+photograph, which is where the whole lecture is. It was rendered at 110 dpi
+into 6 four-up contact sheets and read as images.
+
+⚠️ THE PICTURES ARE THE LECTURE. Eleven of the 23 slides carry NOTHING BUT A
+HEADING AND PHOTOGRAPHS. The limitation of movement, the primary-versus-
+secondary angle, the abnormal head postures, all three cranial nerve palsies
+and every myasthenia sign are shown and never written. Every photograph is
+described below, including which eye deviates and in which direction.
+
+⚠️ THE DECK IS WIDER THAN ITS TITLE. It is not only paralytic squint: slides
+17–21 are MYASTHENIA GRAVIS (five slides, including its investigations) and
+slide 22 is NYSTAGMUS. Anyone searching this module for either will find them
+here and nowhere else.
+
+SECTION MAP (slide numbers read off the burned-in numbering, not computed):
+  • Slide 1      — Title: "EOM Dysfunction (Paralytic Squint)"
+  • Slide 2      — Orbital anatomy (the same borrowed figure as L29 slide 2,
+                   here printed once and NOT mirrored)
+  • Slide 3      — Ocular Motility: the nine positions of gaze (the same
+                   montage and direction diagram as L29 slide 4)
+  • Slides 4–10  — THE SIGNS OF A PARALYTIC SQUINT, one per slide:
+                   limitation of ocular motility (4) · ocular deviation with
+                   2ry angle > 1ry angle (5) · diplopia, crossed and uncrossed
+                   (6) · abnormal head posture — face turn (7), chin (8),
+                   head tilt (9) · false orientation (10)
+  • Slides 11–13 — 3RD NERVE PARALYSIS: the gaze montage (11), the ptosis and
+                   the eye beneath it (12), pupil involved vs pupil spared (13)
+  • Slide 14     — 4TH NERVE PARALYSIS
+  • Slide 15     — 6TH NERVE PARALYSIS
+  • Slide 16     — Treatment (surgery)
+  • Slides 17–21 — MYASTHENIA GRAVIS: the neuromuscular junction (17), ptosis
+                   (18, 19), EOM weakness (20), investigations (21)
+  • Slide 22     — Nystagmus
+  • Slide 23     — Thank You
+
+⚠️ CONVENTIONS ADOPTED HERE.
+  • The deck never states which eye is right and which is left in any
+    photograph, so laterality is NEVER asserted below. Every deviation is
+    given as "the eye on the LEFT/RIGHT of the photograph", and the direction
+    as IN (nasal), OUT (temporal), UP or DOWN. Head postures are likewise
+    described as turned or tilted toward the LEFT/RIGHT OF THE PHOTOGRAPH.
+  • The evidence for a deviation is stated where it is read from the width of
+    the white scleral crescent: a crescent on the TEMPORAL side means the eye
+    is turned IN, on the NASAL side means turned OUT.
+  • ⚠️ NO MUSCLE IS EVER NAMED IN A PHOTOGRAPH, on any slide of this deck. The
+    palsied muscle is never captioned, so no muscle is named below unless the
+    slide prints it — which it never does. What IS recoverable, and is given
+    for every montage, is which eye fails to move and in which direction.
+  • Slides 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15 and 19 were re-read from their
+    enlarged single-slide renders because a four-up cell could not settle
+    which pupil sat where. Headings and bullets all read cleanly at four-up.
+  • The template is BLACK background, yellow headings, cyan sub-headings, red
+    numerals and white body text — different again from L29's maroon.
+
+Transcribed close to verbatim, including the lecturer's own spelling
+("Aquired" on slide 22), his abbreviations ("2ry", "1ry", "Rt or Lt", "Ach"),
+and "TensilonTest" run together as one word on slide 19.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 1 — Title
+─────────────────────────────────────────────────────────────────────
 EOM Dysfunction
-    (Paralytic Squint)
+(Paralytic Squint)
 
 Ashraf Saad Galal, M.D
 Professor of Ophthalmology
-  Alexandria University
-Ocular Motility
-Limitation of ocular motility:
-Ocular deviation (2ry angle > 1ry angle):
-Diplopia:
-    Uncrossed   Crossed
-Abnormal Head posture:
-(direction of action of paralysed muscle)
+Alexandria University
 
 
-1. Face turn (Rt or Lt)
-Abnormal Head posture:
-(direction of action of paralysed muscle)
+─────────────────────────────────────────────────────────────────────
+SLIDE 2 — [no heading printed; orbital anatomy]
+─────────────────────────────────────────────────────────────────────
+No heading and no body text — a single borrowed anatomical ILLUSTRATION,
+credited along its lower edge "Patrick Lynch ©1996, Yale University".
+
+It is the SAME figure L29 uses on its slide 2, but here it is printed ONCE and
+the right way round (L29 printed two copies, one of them mirror-imaged).
+
+ILLUSTRATION — a superior cut-away of one orbit with the roof removed: the
+globe at the front with a blue iris, the recti in red running back to the
+apex, arteries in red, nerves in yellow, the annulus at the apex, orbital fat
+between them.
+
+Labels printed, top to bottom:
+  • Cornea
+  • Iris
+  • Superior ciliary artery
+  • Superior oblique muscle
+  • Lacrimal artery
+  • Frontal nerve
+  • Supratrochlear nerve
+  • Posterior ciliary arteries
+  • Ophthalmic artery
+  • Superior rectus muscle
+  • Lateral rectus muscle
+  • Orbital fat pad
+  • Ophthalmic nerve
+  • Levator palpebrae sup. muscle
+  • Trochlear nerve
+  • Annular tendon
+  • Maxillary nerve
+  • Optic nerve
+  • Mandibular nerve
+
+⚠️ The medial rectus, inferior rectus and inferior oblique are NOT labelled,
+here or anywhere else in either squint deck.
 
 
-2. Chin (elevation or depression)
-Abnormal Head posture:
-(direction of action of paralysed muscle)
+─────────────────────────────────────────────────────────────────────
+SLIDE 3 — Ocular Motility
+─────────────────────────────────────────────────────────────────────
+Heading, the direction DIAGRAM at the top right, and the nine-photograph gaze
+MONTAGE below. This slide is IDENTICAL to L29 slide 4 — same diagram, same
+boy, same nine frames — reprinted here as the baseline for the abnormal
+motility that follows.
+
+DIAGRAM (top right, white panel) — a schematic face, two green irides either
+side of an outlined nose, eight arrows: four RED diagonals, four BLUE
+cardinals, labelled
+
+     dextro-version      direct elevation      laevo-elevation      (top)
+     ← dextro-version                    laevo-version →            (sides)
+     dextro-depression   direct depression     laevo-depression     (bottom)
+
+⚠️ THE SAME DEFECT AS IN L29 IS REPRINTED HERE UNCHANGED: the top-left red
+label reads "dextro-version", duplicating the horizontal blue label below it,
+where its mirror on the right reads "laevo-elevation". "dextro-elevation" is
+printed nowhere. Transcribed as printed, not corrected.
+
+MONTAGE — nine photographs of one boy in a 3 × 3 grid, his full face in the
+centre in the primary position, both eyes straight, reflexes symmetrical.
+  • LEFT COLUMN, all three frames: both pupils displaced toward the LEFT of
+    the photograph — gaze to the patient's RIGHT (dextro): up-right, right,
+    down-right.
+  • RIGHT COLUMN, all three frames: both pupils displaced toward the RIGHT of
+    the photograph — gaze to the patient's LEFT (laevo): up-left, left,
+    down-left.
+  • TOP CENTRE: a single-eye crop looking straight UP, white sclera exposed
+    below the iris.
+  • BOTTOM CENTRE: a single-eye crop looking straight DOWN, white sclera
+    exposed above.
+
+No muscle is named on this slide either.
 
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 4 — Limitation of ocular motility:
+─────────────────────────────────────────────────────────────────────
+Heading only — the first of the seven signs. SIX photographs in a block of
+3 rows × 2 columns, of DIFFERENT patients, none captioned and none matched to
+a muscle or a nerve.
 
-3. Head tilt (Rt or Lt)
-False orientation
-(direction of action of paralysed muscle)
+ROW 1, LEFT — a fair child, eyes only. Both eyes are directed toward the RIGHT
+  of the photograph. The eye on the RIGHT of the photograph reaches the outer
+  canthus fully (a wide white crescent on its nasal side); the eye on the LEFT
+  of the photograph lags — its iris sits only just past the midline instead of
+  moving fully toward the nose. = limited ADDUCTION of the left-of-photograph
+  eye.
 
+ROW 1, RIGHT — a darker child, eyes only. Both eyes are directed toward the
+  LEFT of the photograph and both reach well over; the eye on the LEFT of the
+  photograph is fully abducted with a wide white crescent nasally, the eye on
+  the right adducted. The two eyes are grossly dissociated in level: the eye
+  on the RIGHT of the photograph sits noticeably higher in its fissure.
 
+ROW 2, LEFT — an adult male in warm light, eyes only. Gaze is toward the RIGHT
+  of the photograph: the eye on the LEFT of the photograph is fully adducted,
+  its iris hard against the inner canthus with a broad white crescent on its
+  temporal side, while the eye on the RIGHT of the photograph HAS NOT MOVED —
+  its iris is still near the middle of the fissure. = limited ABDUCTION of the
+  right-of-photograph eye, the clearest single frame on the slide.
 
+ROW 2, RIGHT — a child, eyes only, with a bruised, swollen, purplish upper lid
+  on the LEFT of the photograph. That eye's iris sits high and central; the eye
+  on the RIGHT of the photograph is partly covered by its own lid and its iris
+  is displaced downward and outward.
 
-Vertigo, nausea, uncertain gait
-3rd Nerve Paralysis
-3rd Nerve Paralysis
-              3rd Nerve Paralysis
-Pupil involved (Compression)   Pupil spared (Vascular)
-4th Nerve Paralysis
-6th Nerve Paralysis
-              Treatment
-
-                Surgery
-
-* After 6 months
-
-* Incomplete paralysis: Resection–Recession
-
-* Complete paralysis: muscle transposition
-Myasthenia Gravis
-Myasthenia Gravis: Ptosis
-   Myasthenia Gravis: Ptosis
-
-
-
-
-                        TensilonTest
-
-
-Ice Pack Test
- Myasthenia Gravis: EOM weakness
-
-
-
-Any pattern
-    Myasthenia Gravis: Investigations
-
-* Chest CT, X ray: enlarged Thymus
-* Acetyl Choline Receptor Antibodies
-* EMG
-                 Nystagmus
+ROW 3, LEFT and ROW 3, RIGHT — two frames of the same patient with the
+  EXAMINER'S FINGERS holding BOTH upper lids up out of the way, so that eyes
+  which could not otherwise be seen can be photographed.
+  • Row 3 left: the eye on the LEFT of the photograph is turned OUT and sits
+    low; the eye on the RIGHT of the photograph is turned OUT and sits HIGH,
+    with white sclera exposed below it.
+  • Row 3 right: the eye on the LEFT of the photograph is turned IN and low;
+    the eye on the RIGHT of the photograph is high and out, a wide band of
+    white sclera below the iris.
+  = a gross vertical as well as horizontal dissociation, the two eyes pointing
+  in quite different directions in both frames.
 
 
-* End Gaze
+─────────────────────────────────────────────────────────────────────
+SLIDE 5 — Ocular deviation (2ry angle > 1ry angle):
+─────────────────────────────────────────────────────────────────────
+The heading states the rule; THREE photographs demonstrate it, uncaptioned.
 
-* Congenital
+PHOTOGRAPH 1 (left) — a woman's face, eyes and nose. The eye on the LEFT of
+the photograph is normally open, iris central. The eye on the RIGHT of the
+photograph has a DROOPING upper lid covering part of the cornea, and its iris
+is displaced OUT, toward the outer canthus, with white sclera exposed on the
+nasal side. = ptosis with an outward deviation on the same side.
 
-* Drug induced
+PHOTOGRAPHS 2 and 3 (right, stacked) — THE SAME young man twice, and this pair
+is the whole point of the slide:
+  • UPPER frame — the eye on the LEFT of the photograph is fixing, iris
+    central; the eye on the RIGHT of the photograph is deviated by a SMALL
+    amount, its iris just off centre toward the nose.
+        = the PRIMARY angle: the sound eye fixes, the paretic eye deviates a
+          little.
+  • LOWER frame — the fixation has been swapped. Now the eye on the RIGHT of
+    the photograph is fixing, iris central; and the eye on the LEFT of the
+    photograph is deviated by a MUCH LARGER amount, its iris pulled well
+    toward the nose with a broad white crescent on its temporal side.
+        = the SECONDARY angle: the paretic eye fixes, and the sound eye
+          overshoots.
 
-* Aquired: Vestibular, Cerebellar,
+The secondary deviation is visibly greater than the primary — which is exactly
+what the heading claims and what separates a paralytic from a comitant squint.
+Neither frame is labelled, and the words "primary" and "secondary" appear only
+in the abbreviated heading.
 
- Brain stem
-Thank You
-
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 6 — Diplopia:
+─────────────────────────────────────────────────────────────────────
+Heading, then TWO side-by-side panels, each with a one-word caption in white:
+
+  Uncrossed          |          Crossed
+
+EACH PANEL contains the identical figure: a red HEART drawn at the top (the
+fixated object); below it TWO WHITE GLOBES side by side, each drawn in profile
+with its optic nerve stub projecting from the lower, nasal side; and TWO CYAN
+RAYS running from the heart down into the globes, each ending in an ARROWHEAD
+on a small RED DOT on the retina. In both panels the red dot lies at the
+lower, TEMPORAL side of each globe, and in both panels the two rays run
+straight from the heart to their own globe WITHOUT crossing each other.
+
+⚠️⚠️ THE TWO PANELS ARE DRAWN IDENTICALLY. Compared side by side at full
+resolution, the globes are in the same positions, the rays have the same
+geometry, and the red retinal dots are in the same places; the ONLY difference
+between "Uncrossed" and "Crossed" is the word printed above the panel.
+Whatever the figure was meant to contrast, as printed it does not contrast it,
+and the deck therefore never actually shows what distinguishes crossed from
+uncrossed diplopia.
+
+⚠️ AND NEITHER TYPE IS ASSIGNED TO A DEVIATION. No text anywhere in the deck
+says that uncrossed (homonymous) diplopia goes with a convergent deviation and
+crossed (heteronymous) with a divergent one. The two words appear here and
+nowhere else.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 7 — Abnormal Head posture: (direction of action of paralysed muscle)
+─────────────────────────────────────────────────────────────────────
+Heading in yellow with the cyan sub-heading beneath it, then the first of the
+three postures in red-numbered white text:
+
+  Abnormal Head posture:
+  (direction of action of paralysed muscle)
+
+  1. Face turn (Rt or Lt)
+
+⚠️ The cyan sub-heading is the ONLY statement of the RULE in the deck: the
+head moves in the DIRECTION OF ACTION OF THE PARALYSED MUSCLE. It is repeated
+verbatim on slides 8, 9 and 10 and never expanded, and no muscle is ever named
+against a posture.
+
+PHOTOGRAPH 1 (left) — an adult's eyes and brows in warm light. The eye on the
+LEFT of the photograph is turned IN toward the nose: its iris sits nasally
+with a broad white crescent of sclera on its TEMPORAL side. The eye on the
+RIGHT of the photograph is straight, iris central. = a convergent deviation of
+the left-of-photograph eye.
+
+PHOTOGRAPH 2 (right) — a young man in a pale skull cap, whole face. His FACE
+IS TURNED toward the RIGHT of the photograph: the picture-left ear and cheek
+are fully in view, the nose and chin point to the picture-right — while BOTH
+EYES ARE DIRECTED BACK AT THE CAMERA, i.e. deviated toward the picture-left
+within their fissures. That combination, a turned face with the eyes swung the
+opposite way, is the compensatory posture the slide is naming.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 8 — Abnormal Head posture: (direction of action of paralysed muscle)
+─────────────────────────────────────────────────────────────────────
+Same heading and same cyan sub-heading, second posture:
+
+  2. Chin (elevation or depression)
+
+PHOTOGRAPH 1 (left) — a face with the EXAMINER'S TWO THUMBS holding BOTH upper
+lids up out of the way. The eye on the LEFT of the photograph is fixing, iris
+central and level. The eye on the RIGHT of the photograph is displaced DOWN
+and slightly OUT — its iris sits at the bottom of the fissure with a WIDE band
+of white sclera above it. = limited ELEVATION of the right-of-photograph eye.
+
+PHOTOGRAPH 2 (right) — a young woman in a dark headscarf, whole face, and the
+head is CLEARLY TIPPED BACK: the face is seen from below, the forehead
+foreshortened, the underside of the nose and both nostrils prominent, the chin
+carried forward and up. Her eyes are directed at the camera, i.e. DOWNWARD
+relative to her head. = CHIN ELEVATION.
+
+Only chin elevation is photographed; chin depression is named in the line and
+never illustrated.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 9 — Abnormal Head posture: (direction of action of paralysed muscle)
+─────────────────────────────────────────────────────────────────────
+Same heading and same cyan sub-heading, third posture:
+
+  3. Head tilt (Rt or Lt)
+
+PHOTOGRAPH 1 (left) — a boy's eyes and brows. The head is already slightly
+tilted, so the line joining the two eyes is not horizontal, and the eye on the
+LEFT of the photograph sits HIGHER than its fellow, with white sclera visible
+below its iris. The eye on the RIGHT of the photograph is at the lower level,
+iris central.
+
+PHOTOGRAPH 2 (right) — the same boy, whole face, and the HEAD IS TILTED toward
+the LEFT of the photograph: the vertical axis of the face leans that way, the
+hairline and both eyebrows slope, and the eye on the LEFT of the photograph is
+carried lower on the page than the eye on the right. The eyes remain directed
+at the camera. = a compensatory HEAD TILT.
+
+⚠️ Which shoulder the head tilts toward, and for which muscle, is not stated
+here or anywhere else in the deck.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 10 — False orientation (direction of action of paralysed muscle)
+─────────────────────────────────────────────────────────────────────
+Heading in yellow with the same cyan sub-heading beneath it, then a single
+line in large yellow text and NO PICTURE AT ALL:
+
+  False orientation
+  (direction of action of paralysed muscle)
+
+  Vertigo, nausea, uncertain gait
+
+(The last of the seven signs, and the only one with no photograph. "False
+orientation" is not defined; the three symptoms are simply listed. This is
+also the only slide in the deck whose body text is set in yellow rather than
+white.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 11 — 3rd Nerve Paralysis
+─────────────────────────────────────────────────────────────────────
+Heading only, then a montage of SIX photographs in 2 rows × 3 columns of one
+elderly patient in different gaze positions. No captions, no arrows, no
+muscle names.
+
+The finding that fixes the side is in the BOTTOM-CENTRE frame:
+  • BOTTOM CENTRE — the eye on the LEFT of the photograph is open with its
+    iris central; the eye on the RIGHT of the photograph is COMPLETELY CLOSED
+    by a drooping upper lid. = COMPLETE PTOSIS on the right of the photograph.
+
+The other five frames, read against that:
+  • TOP LEFT — gaze toward the LEFT of the photograph. The eye on the left is
+    fully ABDUCTED, its iris hard against the outer canthus with a wide white
+    crescent nasally. The eye on the RIGHT of the photograph has NOT followed:
+    its iris sits near the middle with white sclera on its NASAL side, i.e. it
+    is still turned out. = FAILURE OF ADDUCTION of the right-of-photograph eye.
+  • TOP CENTRE — gaze toward the RIGHT of the photograph. The eye on the LEFT
+    adducts, the eye on the RIGHT abducts fully, its iris hard against the
+    outer canthus. = ABDUCTION IS INTACT on the affected side (the lateral
+    rectus is not supplied by the third nerve — the deck draws this and never
+    says it).
+  • TOP RIGHT — both eyes up and to the right; the eye on the LEFT is elevated
+    with white sclera below its iris, the eye on the RIGHT elevates far less.
+  • BOTTOM LEFT — both eyes depressed and to the left; white sclera exposed
+    above both irides.
+  • BOTTOM RIGHT — the EXAMINER'S FINGER (visible at the top of the frame)
+    lifts the ptotic upper lid. The eye beneath is revealed sitting DOWN AND
+    OUT: its iris is displaced toward the outer canthus and low in the
+    fissure, with a large area of white sclera above and nasal to it.
+
+= the three classic components of a complete third nerve palsy — ptosis, an
+eye "down and out", and failure of adduction and elevation — all present in
+one montage and none of them captioned.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 12 — 3rd Nerve Paralysis
+─────────────────────────────────────────────────────────────────────
+Heading only, then TWO photographs of the same elderly woman in a white
+headscarf, stacked. This is the deck's cleanest before/after pair.
+
+PHOTOGRAPH 1 (upper) — the eye on the LEFT of the photograph is open, its
+brown iris central and its pupil normal. The eye on the RIGHT of the
+photograph is COMPLETELY CLOSED: the upper lid has dropped to meet the lower
+and only the lashes are visible. = COMPLETE PTOSIS.
+
+PHOTOGRAPH 2 (lower) — an examiner's FINGER, entering from the upper right,
+lifts that drooping lid. The eye beneath is now seen:
+  • it is deviated OUT, its iris carried toward the outer canthus with a wide
+    white crescent of sclera on the NASAL side, and it sits slightly LOW;
+  • its PUPIL is pale grey-green and looks LARGER than the pupil of the
+    fellow eye.
+= ptosis + "down and out" + a dilated pupil: a complete third nerve palsy with
+pupil involvement, shown entirely in two pictures.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 13 — 3rd Nerve Paralysis
+─────────────────────────────────────────────────────────────────────
+Heading, then TWO column captions, TWO clinical photographs and one borrowed
+teaching DIAGRAM. The captions are two-coloured — the sign in dark red, the
+cause in green:
+
+  Pupil involved (Compression)      |      Pupil spared (Vascular)
+
+PHOTOGRAPH 1 (left, under "Pupil involved") — an elderly man's eyes. The eye
+on the LEFT of the photograph has a heavily DROOPING upper lid covering the
+upper half of the cornea, and the pupil visible beneath it is LARGE and black.
+The eye on the RIGHT of the photograph is wide open and deviated OUT, its iris
+carried toward the outer canthus with white sclera exposed nasally.
+
+PHOTOGRAPH 2 (right, under "Pupil spared") — a face in strong red light, the
+lids held apart by fingers at the upper edge of the frame. Both eyes are wide
+open; the eye on the RIGHT of the photograph is deviated, with a broad band of
+white sclera exposed on its outer side, and BOTH PUPILS ARE OF SIMILAR,
+MODERATE SIZE — neither is dilated. That equality is the whole point of the
+right-hand column.
+
+DIAGRAM (centre bottom, cream panel) — a two-halved schematic, printed labels:
+  LEFT HALF
+   • posterior communicating artery   (to a solid RED circle)
+   • aneurysm compresses pupillary fibres   (the red circle pressing on a grey
+     stippled circle from outside)
+   • III nerve   (to the grey stippled circle — the STIPPLING, i.e. the
+     pupillary fibres, is drawn all round its OUTER rim)
+   • pupillary dilation   (to a drawn eye with a blue iris and a WIDE black
+     pupil)
+  RIGHT HALF
+   • vascular disease of vasa vasorum leading to infarct of central nerve
+     fibres   (with an arrow to a nerve cross-section whose CENTRE is solid
+     BLACK — the infarct — while the stippled outer rim is intact, and small
+     red vessels are drawn around it)
+   • pupil normal   (to a drawn eye with a blue iris and a SMALL pupil)
+
+= the anatomical reason for the rule: the pupillary fibres run on the OUTSIDE
+of the nerve, so external compression takes them first while an internal
+infarct spares them. The diagram states it in labels; the slide adds no prose.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 14 — 4th Nerve Paralysis
+─────────────────────────────────────────────────────────────────────
+Heading only, then a small inset photograph at the top right and a NINE-frame
+gaze montage (3 × 3) of the same child below. No captions and no arrows.
+
+INSET (top right) — the child's face. TWO findings, both visible:
+  • the HEAD IS TILTED: the hairline, both eyebrows and the line joining the
+    two eyes all slope down toward the LEFT of the picture;
+  • the eye on the RIGHT of the picture sits HIGHER than its fellow and is
+    carried slightly OUT, with white sclera showing on its nasal side.
+  = a hyperdeviation with a compensatory head tilt — the two signs of a
+  superior oblique palsy, printed together and never captioned.
+
+MONTAGE — nine frames, the child's eyes only, arranged as the nine positions:
+  • ROW 1 (up-gaze row): both eyes elevated in all three frames, white sclera
+    below each iris; the two eyes stay close to the same level here.
+  • ROW 2, LEFT (gaze to the LEFT of the photograph) — the eye on the LEFT is
+    fully abducted; the eye on the RIGHT of the photograph is ADDUCTED and
+    RIDES UP, sitting clearly HIGHER than its fellow with white sclera below
+    its iris. = the hyperdeviation is WORST IN ADDUCTION, which is the frame
+    the whole montage exists for.
+  • ROW 2, CENTRE (primary position) — the eye on the RIGHT of the photograph
+    is still slightly the higher of the two.
+  • ROW 2, RIGHT (gaze to the RIGHT of the photograph) — the eye on the RIGHT
+    is now abducted and the two eyes sit much closer to the same level. = the
+    deviation LESSENS IN ABDUCTION.
+  • ROW 3 (down-gaze row): the EXAMINER'S FINGERS hold the upper lids up so
+    the depressed eyes can be seen; the irides are carried to the bottom of
+    the fissures with wide white sclera above them.
+
+⚠️ NO MUSCLE IS NAMED AGAINST THIS PALSY, and the words "hypertropia",
+"torsion" and "excyclotorsion" appear nowhere in the deck. ("Superior oblique
+muscle" does appear once in the whole deck — as an anatomical label on the
+borrowed orbital figure of slide 2 — but it is never connected to the fourth
+nerve or to this montage.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 15 — 6th Nerve Paralysis
+─────────────────────────────────────────────────────────────────────
+Heading, one small line DIAGRAM, and a NINE-frame gaze montage (3 × 3) of an
+adult man with pale blue irides. No captions and no arrows.
+
+DIAGRAM (top centre, small white panel) — two drawn almond-shaped eyes with
+black pupils. The pupil of the eye on the LEFT of the drawing sits near the
+centre of its almond; the pupil of the eye on the RIGHT of the drawing is
+carried toward the INNER (nasal) end. = a convergent deviation of the
+right-of-drawing eye — the resting appearance of a sixth nerve palsy, given as
+a two-eye cartoon and nothing more.
+
+MONTAGE — nine frames of the man's eyes:
+  • ROW 2, CENTRE (primary position) — the eye on the LEFT of the photograph
+    is straight; the eye on the RIGHT of the photograph is turned IN, its iris
+    displaced nasally with a white crescent on its TEMPORAL side. = ESOTROPIA
+    in the primary position.
+  • ROW 2, LEFT (gaze toward the LEFT of the photograph) — the eye on the LEFT
+    abducts fully, its iris hard against the outer canthus; the eye on the
+    RIGHT adducts fully, carried well over toward the nose. BOTH MOVE
+    COMPLETELY in this direction.
+  • ROW 2, RIGHT (gaze toward the RIGHT of the photograph) — the eye on the
+    LEFT adducts fully; the eye on the RIGHT of the photograph FAILS TO REACH
+    THE OUTER CANTHUS, its iris held back near the middle of the fissure with
+    white sclera still lying temporal to it. = LIMITED ABDUCTION on that side.
+  • ROW 1 (up-gaze) — both eyes elevate; the convergent position of the
+    right-of-photograph eye persists.
+  • ROW 3 (down-gaze) — the EXAMINER'S FINGER holds the upper lids up in all
+    three frames so that the depressed eyes can be photographed; both eyes
+    depress.
+
+= the whole sixth nerve picture — esotropia in the primary position, full
+adduction, deficient abduction — carried by the montage alone. "Lateral
+rectus" is not printed.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 16 — Treatment
+─────────────────────────────────────────────────────────────────────
+Treatment
+
+Surgery
+
+  * After 6 months
+  * Incomplete paralysis: Resection–Recession
+  * Complete paralysis: muscle transposition
+
+(No picture. The word "Surgery" is printed on its own line under the heading,
+centred, before the three asterisked items. Note the ORDER of the pair here —
+"Resection–Recession" — which is the reverse of L29 slide 34's
+"Recession - Resection"; both are transcribed as their own slide prints them.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 17 — Myasthenia Gravis
+─────────────────────────────────────────────────────────────────────
+Heading only, then one borrowed two-panel DIAGRAM of the neuromuscular
+junction, on a white ground with a purple border and the watermark
+"www.wecaregolp.com" along its lower edge.
+
+Panel headings printed across the top:
+  • Normal neuromuscular junction
+  • Impaired neuromuscular junction in myasthenia gravis
+
+LEFT PANEL (normal) — a yellow nerve terminal above, red dots inside it and
+scattered in the cleft, blue chevron receptors on the muscle surface, and the
+orange muscle below with olive arrows running INTO it.
+Labels: Neuron · Acetylcholine (Ach) · Ach receptor · Muscle ·
+"Normal transmission" (printed across the bottom of the panel).
+
+RIGHT PANEL (myasthenic) — the same terminal and the same red dots, but the
+blue receptors are now capped by pale Y-SHAPED ANTIBODIES, and the olive
+arrows into the muscle are FEWER and SHORTER.
+Labels: "Receptors blocked by antibody" (with a bracket to the Y shapes) ·
+"Reduced transmission" (across the bottom).
+
+= the mechanism, entirely in one picture. No text of the lecturer's own
+appears on the slide.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 18 — Myasthenia Gravis: Ptosis
+─────────────────────────────────────────────────────────────────────
+Heading only, then FOUR photographs — one large above, three in a row below.
+
+PHOTOGRAPH 1 (large, top) — an elderly man's whole face against a dark ground.
+BOTH upper lids droop heavily, each covering most of the cornea so that only a
+slit of each eye shows; the brows are lifted and the forehead deeply furrowed
+from over-action of the frontalis. = BILATERAL PTOSIS.
+
+PHOTOGRAPHS 2–4 (the row below) — the same younger man's eyes three times,
+read left to right as a sequence in sustained UPGAZE:
+  • Frame 1 — both eyes open, irides fully visible, lids in a normal position.
+  • Frame 2 — both eyes are now directed UP; the irides have risen behind the
+    upper lids, white sclera is exposed below them, and the lids have begun to
+    come down.
+  • Frame 3 — the lids have dropped further still, covering most of both
+    corneas, with the eyes still turned up.
+= the ptosis WORSENS as the position is held. Fatiguability is demonstrated by
+the three frames and the word "fatigue" is never printed.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 19 — Myasthenia Gravis: Ptosis
+─────────────────────────────────────────────────────────────────────
+Heading, then a composite of SIX photographs in three groups, with TWO blue
+captions printed onto the pictures:
+
+  Ice Pack Test        (blue, over the lower-left group)
+  TensilonTest         (blue, over the right-hand group — printed as ONE WORD,
+                        with no space, exactly so)
+
+TOP ROW — two photographs of the same elderly man's eyes:
+  • LEFT frame  — both upper lids droop, and ASYMMETRICALLY: the eye on the
+    RIGHT of the photograph is the more ptotic, its lid covering nearly the
+    whole cornea, while the eye on the left shows a narrow open slit.
+  • RIGHT frame — the SAME man with BOTH lids now ELEVATED and both blue-grey
+    irides fully exposed. The ptosis has resolved.
+
+ICE PACK TEST group (four photographs, lower left):
+  • Upper pair — a clear plastic BAG OF ICE is held against the closed lids,
+    first over the eye on the LEFT of the picture, then over the eye on the
+    RIGHT; the patient, an older woman, keeps her eyes shut under it.
+  • Lower pair — the same woman afterwards: in the first frame her lids are
+    still low over upturned eyes; in the second BOTH LIDS ARE RAISED and both
+    eyes are widely open, looking up.
+
+TENSILON TEST group (two photographs, right):
+  • Upper frame — an elderly man with BOTH lids almost completely closed,
+    only lashes and a sliver of lid margin visible.
+  • Lower frame — the SAME man with both lids RAISED and both pale irides
+    plainly visible.
+
+= three separate before/after pairs, all making the one point that the ptosis
+is reversible. ⚠️ Neither test is explained: no cooling time for the ice, no
+drug name (edrophonium), no dose and no route for the Tensilon.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 20 — Myasthenia Gravis: EOM weakness
+─────────────────────────────────────────────────────────────────────
+Heading, then two words in red on the left and two photographic blocks:
+
+  Any pattern      (in red, large, at the left of the slide)
+
+BLOCK 1 (upper right) — FOUR photographs of one elderly man's eyes, in two
+rows of two, each carrying a WHITE ARROW drawn onto the picture to mark the
+direction the eyes are being asked to move:
+  • top-left frame  — arrow pointing LEFT (horizontal), under the eye on the
+    left of the frame;
+  • top-right frame — arrow pointing DOWN;
+  • bottom-left     — arrow pointing RIGHT (horizontal);
+  • bottom-right    — arrow pointing UP.
+In each frame the two eyes fail to reach the demanded position together — in
+the horizontal frames one iris lags well behind its fellow, and in the
+vertical frames the lids obscure the movement. The arrows are the deck's only
+use of a direction marker anywhere in either squint deck.
+
+BLOCK 2 (lower right) — a NINE-frame gaze montage (3 × 3) of the same elderly
+man, both lids ptotic throughout. In every frame the two eyes point in
+different directions from each other, and the pattern of limitation changes
+from frame to frame rather than following one muscle.
+
+= the point of the red words: myasthenia can imitate ANY nerve or muscle
+palsy. That is stated in two words and shown in thirteen photographs.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 21 — Myasthenia Gravis: Investigations
+─────────────────────────────────────────────────────────────────────
+  * Chest CT, X ray: enlarged Thymus       ("enlarged Thymus" in red)
+  * Acetyl Choline Receptor Antibodies
+  * EMG
+
+TWO RADIOGRAPHS below the list, side by side, both black-and-white:
+  • LEFT — a PA chest film. A WHITE ARROW points from the left of the image at
+    the RIGHT UPPER MEDIASTINAL BORDER, where a soft-tissue shadow widens the
+    mediastinum beside the trachea.
+  • RIGHT — a LATERAL chest film of the same patient. A BLACK ARROW points at
+    an opacity filling the RETROSTERNAL SPACE — the anterior mediastinal mass,
+    seen from the side.
+
+= the enlarged thymus in two views. Neither film is captioned; the arrows are
+the only annotation.
+
+⚠️ "Acetyl Choline" is printed as TWO words with both initial capitals. No
+antibody titre, no EMG finding (decrement, single-fibre) and no CT technique
+is given.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 22 — Nystagmus
+─────────────────────────────────────────────────────────────────────
+  * End Gaze
+  * Congenital
+  * Drug induced
+  * Aquired: Vestibular, Cerebellar, Brain stem
+
+(No picture. ⚠️ "Aquired" is the lecturer's spelling of "Acquired" and is kept
+as printed. The fourth item runs onto a second line, with "Brain stem" set
+below and indented.
+
+This is the ENTIRE nystagmus content of both squint lectures: four bullets, a
+bare classification, with no definition, no waveform, no direction, no null
+point, no drug named and no treatment.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 23 — Thank You
+─────────────────────────────────────────────────────────────────────
+Thank You
+
+(Closing slide, printed in large yellow letters low on an otherwise empty
+black slide. Nothing else.)
+
+
+─────────────────────────────────────────────────────────────────────
+NOT COVERED ANYWHERE IN THIS DECK
+─────────────────────────────────────────────────────────────────────
+Measured by reading all 23 slides at four-up, plus enlarged single-slide
+re-reads of slides 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15 and 19. Only six
+slides in the deck carry more than a heading and a caption (10, 16, 21, 22 and
+the two bullet lines of 13), so a negative here is cheap to prove: if a thing
+is not in those, not in a heading and not burned into a photograph, it is not
+in the deck.
+
+⚠️ FIRST, THREE THINGS THAT ARE PRESENT AND MIGHT WRONGLY BE FILED AS GAPS:
+SURGERY IS COVERED (slide 16: after 6 months, resection–recession for
+incomplete, muscle transposition for complete). MYASTHENIA GRAVIS IS COVERED
+IN FIVE SLIDES (17–21), including the ice-pack and Tensilon tests and the
+thymus on chest films. NYSTAGMUS IS COVERED, in four bullets (slide 22). What
+is missing from each is below.
+
+TESTS AND MEASUREMENT
+ 1. THE HESS CHART IS NOT MENTIONED AND NOT SHOWN. No chart, screen, plot or
+    grid of any kind appears in the deck; the only printed graphic besides
+    photographs is the chest radiograph of slide 21.
+ 2. THE BIELSCHOWSKY HEAD-TILT TEST IS NOT NAMED. Slide 9 photographs a
+    spontaneous compensatory head tilt and slide 14's inset shows another,
+    but nowhere is the head tilted BY THE EXAMINER as a test, and the name
+    appears on no slide.
+ 3. DIPLOPIA IS NEVER CHARTED OR TESTED. There is no red glass, no Maddox
+    rod, no Lees screen and no instruction to ask which image is which. The
+    two words "Uncrossed" and "Crossed" on slide 6 sit over two panels drawn
+    identically (see that block), so the deck does not even illustrate the
+    distinction, let alone assign it to a deviation.
+ 4. THE FORCED DUCTION TEST IS NOT MENTIONED, so paralytic weakness is never
+    distinguished from mechanical restriction anywhere in the deck.
+ 5. NO DEVIATION IS MEASURED. No prism, no prism dioptre, no degree and no
+    angle figure appears; slide 5 states "2ry angle > 1ry angle" as an
+    inequality and gives no numbers.
+ 6. THE COVER TEST IS NOT PERFORMED OR MENTIONED HERE. It belongs to L29;
+    this deck shows deviations directly and never covers an eye.
+
+CAUSES, AND CONDITIONS NOT NAMED
+ 7. NO CAUSE IS GIVEN FOR ANY OF THE THREE NERVE PALSIES except the two on
+    slide 13's diagram — a posterior communicating artery aneurysm compressing
+    the third nerve, and vasa vasorum infarction of its centre. DIABETES,
+    HYPERTENSION, TRAUMA, TUMOUR, RAISED INTRACRANIAL PRESSURE, CAVERNOUS
+    SINUS DISEASE and MULTIPLE SCLEROSIS are named on no slide. The sixth
+    nerve's classic false-localising role in raised ICP is absent.
+ 8. NO INVESTIGATION IS OFFERED FOR A NERVE PALSY. Slide 13's diagram names an
+    aneurysm and the deck never mentions CT, MRI or angiography; the only
+    imaging anywhere is the chest film for the thymus.
+ 9. ABERRANT REGENERATION of the third nerve is not mentioned.
+10. DUANE'S RETRACTION SYNDROME and BROWN'S SYNDROME are absent entirely, as
+    are congenital fibrosis, THYROID EYE DISEASE / restrictive myopathy,
+    ORBITAL BLOW-OUT FRACTURE and INTERNUCLEAR OPHTHALMOPLEGIA. That last is
+    worth naming explicitly: a deck that covers third, fourth and sixth nerve
+    palsies plus myasthenia contains no supranuclear or internuclear lesion at
+    all, and the word "gaze palsy" is printed nowhere.
+11. THE FOURTH AND SIXTH NERVE SLIDES NAME NO MUSCLE. "Superior oblique
+    muscle" and "Lateral rectus muscle" occur exactly once each in the deck —
+    as anatomical labels on the borrowed orbital figure of slide 2 — and are
+    never connected to slide 14 or slide 15. The medial rectus, inferior
+    rectus and inferior oblique are not labelled even there.
+
+RULES STATED BUT NOT EXPLAINED
+12. THE HEAD-POSTURE RULE IS NEVER WORKED THROUGH. The cyan sub-heading
+    "(direction of action of paralysed muscle)" is repeated on slides 7, 8, 9
+    and 10 and is the deck's only statement of it; no worked example pairs a
+    posture with a muscle or a side, and "Rt or Lt" is left open on both the
+    face-turn and the head-tilt slides.
+13. "FALSE ORIENTATION" (slide 10) IS NOT DEFINED — three symptoms are listed
+    under the phrase and that is all.
+14. PAST POINTING is not mentioned, although it is the classical partner of
+    false orientation.
+15. HERING'S AND SHERRINGTON'S LAWS are not named, so the mechanism behind the
+    secondary angle of slide 5 is shown and never explained.
+16. COMITANT VERSUS INCOMITANT is never contrasted in words in this deck. The
+    reader must carry the contrast over from L29 slide 14.
+
+MANAGEMENT DETAIL
+17. THE SURGERY IS THREE LINES. No muscle is named, no millimetres are given,
+    and no transposition procedure is named (Hummelsheim, Jensen and Knapp
+    appear nowhere). BOTULINUM TOXIN, ADJUSTABLE SUTURES and post-operative
+    care are absent.
+18. NO NON-SURGICAL MANAGEMENT OF DIPLOPIA IS OFFERED — no prisms, no Fresnel
+    prism, no occlusion of one eye, no frosted lens, despite diplopia being
+    one of the seven signs.
+19. THE "AFTER 6 MONTHS" OF SLIDE 16 IS NOT EXPLAINED — the deck never says
+    that a palsy may recover spontaneously, and gives no observation regimen
+    or review interval for the waiting period.
+20. MYASTHENIA GRAVIS HAS NO TREATMENT SLIDE. Pyridostigmine, steroids,
+    immunosuppression, plasma exchange, IVIG and THYMECTOMY are named nowhere
+    — the deck reaches the enlarged thymus on the chest film and stops. Nor is
+    generalised myasthenia distinguished from the purely ocular form, nor
+    myasthenic crisis mentioned.
+21. NO DRUG NAME OR DOSE APPEARS IN THE WHOLE DECK. "TensilonTest" is a trade
+    name printed as a caption; edrophonium is never named, no dose, no route,
+    no duration, and the ice-pack test is given no cooling time.
+22. NYSTAGMUS IS FOUR BULLETS AND NOTHING ELSE. No definition, no jerk-versus-
+    pendular waveform, no direction convention, no null point, no head posture
+    for nystagmus, no drug named under "Drug induced", and no treatment. No
+    nystagmus is photographed anywhere in the deck.
+23. NO EPIDEMIOLOGY, NO PROGNOSIS, NO REFERENCE LIST. The only credit line in
+    the deck is "Patrick Lynch ©1996, Yale University" on slide 2, and the
+    watermark "www.wecaregolp.com" on the junction diagram of slide 17.
