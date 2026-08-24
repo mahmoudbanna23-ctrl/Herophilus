@@ -65,8 +65,29 @@ arithmetic and **always renders one page past**, which is not optional on this b
 | 06 Conjunctiva | 65 | **65** (Q224–288) | **63** | **2** | 9 | ✅ 2026-08-24 |
 | 07 Sclera | 8 | **8** (Q289–296) | 8 | 0 | 3 | ✅ 2026-08-24 |
 | 08 Cornea | 52 | **52** (Q297–348) | **51** | **1** | 12 | ✅ 2026-08-24 |
-| 09 Lens | 61 | **61** (Q349–409) | 50 so far | — | — | drafting |
-| 10–28 | 739 | — | — | — | — | t10–t16 rendered and queued |
+| 09 Lens | 61 | **61** (Q349–409) | **60** | **1** | 12 | ✅ 2026-08-24 |
+| 10 Uveal Tract | 38 | — | — | — | — | rendered |
+| 11 Glaucoma | 50 | — | — | — | — | rendered |
+| 12 Vitreous | 15 | — | — | — | — | rendered |
+| 13 Retina | 69 | **69** (Q513–581) | 69 drafted | — | 19 | sweeping |
+| 14–28 | 567 | — | — | — | — | t14–t20 rendered and queued |
+
+### Topic-by-topic status, House (Part A)
+
+| Ch | Title | Printed | Written | Folded | Boxed | State |
+|---|---|---|---|---|---|---|
+| 1 | Examination of the eye | **56** | 56 | 0 | 0 | ✅ merged 2026-08-24 |
+| 2 | Optics & errors of refraction | **32** | 32 | 0 | **0** | ✅ 2026-08-24 |
+| 3 | The Orbit | **28** | **27** | **1** | **0** | ✅ 2026-08-24 |
+| 4 | Lacrimal system | ? | — | — | — | drafting |
+| 5–20 | — | ~750 | — | — | — | not started |
+
+**⚠️ House prints NO explanation box and NO figure in chapters 1, 2 or 3** — but that is a property of
+the PAGE, counted each time, never carried forward.
+
+**⚠️⚠️ THE ORPHANED-ANSWER DEFECT IS GROWING CHAPTER BY CHAPTER: ch.2 had TWO, ch.3 had FOUR** — and
+three of ch.3’s orphaned **option text** as well as the key. Answers are printed inline, so a missing
+key cannot be caught by a page count. **Check every question has an answer line, one at a time.**
 
 **⚠️ THE PROMISED COUNT HAS NOW BEEN EXACT SIX TIMES RUNNING** (71, 41, 26, 26, 65, 52, 8). That is a
 pattern and still not a guarantee — ENT’s Grade Gain was wrong 17 times in 21. **Count what is printed.**
