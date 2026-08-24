@@ -12,6 +12,11 @@ pictures per slide. THE PICTURES ARE THE LECTURE. The previous cached .txt was
 that thin XML extraction and was a partial, not ground truth. This file replaces
 it, read image by image from PowerPoint→PDF renders at 4 slides per contact
 sheet.
+⚠️ THE TWO FIGURES IN THE PARAGRAPH ABOVE ARE WRONG AND ARE LEFT STANDING ONLY
+SO THE CORRECTION IS VISIBLE BESIDE THEM. Counted from the unzipped .pptx once
+all 47 slides were read: 86 PICTURES (not 127) and 170 WORDS (not ~365) — so
+3.6 words and 1.8 pictures a slide. The arithmetic is at the FOOT of this file,
+under "CORRECTED MEASUREMENTS". The conclusion is unchanged and stronger.
 
 ⚠️ THE DECK'S OWN TITLE IS "Lid", not "Eyelid disease" — the filename says
 "Eyelid disease", the title slide says only "Lid". No date and no reference list
