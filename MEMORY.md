@@ -5,51 +5,55 @@ Running record, organised around *resuming*. ISO dates; unverified marked as suc
 story, count and verbatim ruling) in `progress\memory-archive.md`** — read the relevant block
 there before resuming a paused stream. Where this file and the archive disagree, this file wins.
 
-## Resume here — ✅✅✅✅✅ **ENT IS FINISHED. ALL THREE BANKS CLOSED, ALL 30 THEORY CHAPTERS WRITTEN, AND BOTH STANDING THEORY DEBTS DISCHARGED.** House closed 2026-08-24 (724 questions adjudicated, 207 folds applied, 236 new entries spliced; the `enthd-thr-648` duplicate merged away), then the 26 §14.5 rows and every over-cap paragraph closed the same day (§16). Boot from `file://` after all of it: **0 console errors, 876 rules, 3 `5/4` blocks, 4 modules, 153 chapters, 1,603 sections, 89 cases**, `Q_ENT` **2,240**, corpus **2,699**, ENT banks **house 779 · endpoint 615 · gradegain 1,101**; 30 ENT chapters re-printed **261 pp**. ⚠️⚠️⚠️ **THE HOUSE FOURTH SECTION ADDED NOTHING: `S1`–`S110` = 108 FOLD, 2 HOLD BOTH, ZERO NEW** — `Selected department MCQs` is the **endpoint bank reprinted**. The main run `Q686`–`Q724` was the opposite: 16 FOLD, **23 NEW**. **NEXT: ophtho, ~1,918 against 27 Sep.** All of it in `ledger.md` §15–§15mm and **§16**; **READ IT FIRST.**
-
-- **⚠️⚠️ A DUPLICATE SHIPPED, AND BRITISH-vs-AMERICAN SPELLING IS WHY — FOR THE SECOND TIME**
-  (*Biphasic stridor may be due to*, same options, same key, `Subglottic tumour`/`tumor`; `sweep2.js`
-  strips plainly, the spelling map lives in the later `norm.js`). ✅ **The corpus was re-asked with the
-  better comparator: the ONLY stage-A cross-bank duplicate in 2,216 entries, and it is MERGED** — with
-  **FOUR printings**, House twice itself. ⚠️ **A “correction” in the shipped text was a MISQUOTATION**:
-  it quoted `L6` as *COPD*; the slide prints **`COD`** (`L6`:29, and `COPD` is in none of the 34 decks).
-  **A verbatim quote tidied into correct English is no longer verbatim, and the tidier is invisible.**
-  ⚠️ One organism now prints **three ways in three sources** (*Aeuroginosa*/*Aeruginosa*/*aeroginosa*).
-- **⚠️ A DEAD-ID CHECK MUST BE A DELTA, NEVER AN ABSOLUTE:** the backtick pattern also matches **case
-  ids** (`cases.ent.js`, another file) and **image basenames**. What must be zero is what an edit
-  *adds*. ✅ **Resolving image basenames against `app\assets\q\` cut the standing count 14 → 6** — a
-  guard that merely tolerates noise reports noise; one that classifies it reports faults. ⚠️ A
-  text-level “nothing else moved” guard **fires falsely** where the bytes after `answer:` run into
-  `explanation:` — compare **parsed** objects. ⚠️ `handedit.js` cannot delete: it holds the count.
-- **⚠️⚠️⚠️ BOTH HOLD BOTH ENTRIES SHARE ONE SHAPE — A PATTERN, NOT AN ANECDOTE: THE HELD ENDPOINT ENTRY
-  HAD ALREADY WRITTEN DOWN, IN ITS OWN EXPLANATION, THE ANSWER HOUSE WOULD LATER KEY.**
-  `enthd-sel-62`/`entep-ear-86` — *acute necrotizing otitis media*: House keys **Pseudomonas**, endpoint
-  **haemolytic strept A**, and the held text already said *"reading media versus externa is the whole
-  question"*. ✅ Verified myself: `necrotiz|necrotis` = **exactly 2 hits in all 34 decks**, so **the
-  phrase is in NO deck**; `L17,18`:190 gives Pseudomonas to the EXTERNAL disease, `L21.1`:36 puts *B
-  hemolytic strept* first for otitis media. `enthd-sel-63`/`entep-mfe6-1` — tubotympanic CSOM: House
-  keys **c**, endpoint **d**, and the held text reasons *"the one that is not is option c"* **then
-  records d anyway**, which is what the rule requires (`L16`:33 prints *profuse* and *odourless* in ONE
-  line; `L16`:247 gives complications to the UNSAFE type). **Four sources already stood against that
-  key; House is a fifth and the first from another bank. Neither key moved; each entry names the other.**
-- **⚠️⚠️ THE SUBAGENT POOL CAN BE UNAVAILABLE, AND THE STANDING RECOVERY RULE ASSUMES IT ISN'T.** Five
-  drafting agents died on transient **529 Overloaded**, every one **before writing a byte** — so *a dead
-  agent's file is usually complete, validate from disk* had nothing to validate. **The 25 entries were
-  written in the MAIN session instead** (cost: source reading lands in main context, not discarded).
-- **⚠️⚠️ COMPARATOR RULE — A TYPO LIVES IN ONE WORD, SO THE TOLERANCE BELONGS ON THE WORD, NEVER ON THE
-  WHOLE STRING** (12 % whole-string collapsed `Lies ANTERIOR`/`POSTERIOR`, options a and d of ONE
-  question). Content words pair in order; **typo = same first letter, lev ≤2 AND sorted-letter lev ≤2**
-  — measured: every typo ≤2, every real distinction ≥3. `norm.js`/`normtest.js`, 39 real cases. §15gg.
-- **⚠️⚠️ A STEM MATCH IS NOT A QUESTION MATCH — THE OPTIONS ARE HALF THE QUESTION** (`S1`↔`S78`,
-  `S19`↔`S95`: filed both as reprints, both have a **replaced distractor**). ⚠️ And **a fix can inherit
-  the blind spot it was written to cure** — `shortkey.js` re-ran what `sweep2.js` skipped but `core()`
-  drops words ≤2 letters, so `CT`/`US` went EMPTY: **18 of 302 never re-run by the tool built for it.**
-- **⚠️⚠️ A RECONSTRUCTED STEM CAN LEAK THE NEXT QUESTION'S ANSWER** — `entep-nose-40` invented *a
-  nasopharyngeal mass*, in no bank, and `entep-nose-41` keys **juvenile nasopharyngeal angiofibroma**.
-  **The `imgAlt` rule applies to stems: a restatement must not answer the question.** ⚠️ **A
-  back-reference's antecedent must be READ, not assumed** (Q702's is Q701, not Q700; **THREE tail stems
-  back-referenced where I annotated two**). ⚠️ **"House is the fuller printing" is NOT a rule** —
-  **FULLER MEANS FIELD BY FIELD.**
+## Resume here — ⏳ **OPHTHALMOLOGY IS THE LIVE MODULE, ~1,884 BANK QUESTIONS AGAINST 27 SEP.** ✅ **ENT IS CLOSED** (three banks, 30 chapters, both theory debts — `ledger.md` §15–§16, war stories in the archive). Ophtho stands at **228 questions** (GG **172** = topics 1,2,3,4,7 · House **56** = ch.1), corpus **2,789**. Last boot 2026-08-24: **0 console errors, 876 rules, 3 `5/4` blocks, 4 modules, 153 chapters, 1,604 sections, 89 cases.** ✅✅ **THE §14.5 REGISTER IS AT ZERO OPEN ROWS, ALL FOUR MODULES** — ophtho went 39 → 0 today, and like ENT most of it was **bookkeeping, not content**. ✅ **NINE of the module's ELEVEN blind decks are cached** (see below). **Everything is in `ledger.md` §17 — READ IT FIRST**, with `progress\resume-ophtho.md` and `content\ophtho\theory-plan.md`.
+- **⚠️⚠️ A FAILURE LIST BUILT FROM FAILURE SIGNALS IS NOT A COVERAGE MEASUREMENT.** *"Eight decks need a
+  visual read"* came from *never cached* + *cache is a watermark*. Sweeping **characters per slide** found
+  **eleven decks, 574 slides** — **five on no owed list anywhere, because their extractions SUCCEEDED and
+  were merely near-empty**: `L1,2` the foundational deck (146 c/s, 136 slides), `L22` 97, `L30` 66, `L29` 63,
+  `L21` 30. **The instrument is a RATIO AGAINST SLIDE COUNT, never file size.** ✅ **DONE: `L9` `L13,14`
+  `L24` `L1,2` `L22` `L6` `L21` `L29`. LEFT: `L5` (20/47), `L27,28` (53/70), `L30`.** ⚠️ **The two `.pptx`
+  decks were as blind as the worst PDFs and nothing flagged them** — clean XML text, 127 and 73 media files
+  for ~350 words. **PowerPoint is installed: `$p.SaveCopyAs($dest,32)` — never `SaveAs`, which rebinds.**
+  ⚠️ It reported `slides=0` then died *"RPC server unavailable"* **after** writing a correct PDF — **check
+  the artifact on disk, not the COM return value.**
+- **⚠️⚠️ TWO STALE-VERDICT SHAPES, TWINS. (1) AN "UNDELIVERABLE" IS A STATEMENT ABOUT THE SOURCES THAT
+  WERE READABLE WHEN IT WAS WRITTEN, NEVER ABOUT THE MATERIAL** — `onc-10` called four rows undeliverable,
+  every verdict reached against the BOOK while `L24` was 78 pages of `CamScanner`; the deck now pays the
+  orbital-tumour row in full (`onc-11`, 429 w). **(2) A DECLARED LOSS IS A CLAIM WITH A DATE ON IT** —
+  `L37`’s Table 4-3 was recorded lost and **the render had already been done.** **Re-test both kinds.**
+- **⚠️⚠️ A DECK'S `NOT COVERED` LIST IS SCOPED TO THAT DECK.** I quoted `L9`'s as module-wide and claimed
+  the Schirmer test *"appears nowhere"* — `L15,16) Cornea` names it; same for the inferior meatus, which
+  the book names three times. **Grep every deck AND every book chapter, case-insensitively, before
+  writing "nowhere"** — these sources SHOUT, and a case-sensitive probe manufactures absences.
+- **⚠️⚠️ TWO "ABSENCES" WERE SPELLING ARTEFACTS AND I NEARLY WROTE DUPLICATES OFF BOTH** — `T-sign` returns
+  zero because `scl-4` prints **"T SIGN"** with a space; `PHPV` returns zero because `wht-8` writes **PFV**.
+  **READ THE CHAPTER BEFORE DECLARING A HOLE IN IT, and grep the variant.** ⚠️ **A section-id PREFIX does
+  not identify a chapter**: `cor-` is BOTH `op-cornea` and `op-cornea-surg`, and **`cts-` is `op-cat-surg`**
+  — `probe.js` now prints every hit as chapter/section.
+- **⚠️⚠️ WRITE-INCREMENTALLY IS WHAT SURVIVES A USAGE LIMIT.** Seven agents died mid-run at 3:50 pm; the four
+  writing as they went left **resumable partials totalling 160 finished slides**, the three holding work in
+  memory left nothing. Resume by `Edit`-appending from slide *N*+1 — **never `Write`.** ⚠️ **A contact sheet
+  is an INDEX, not always the reading surface** — crop and upscale the single-slide `raw/` renders;
+  *"ignore `raw/`" was wrong advice in every brief.* ⚠️ **A slide can be an exact repeat** (`L6` 52 = 50,
+  pixel diff only) · **a third gap type is IMAGE overflow** · **a negatives list poisons its own grep.**
+- **⚠️ FIFTH DIVERGENCE SHAPE: DECK-vs-DECK, ON A NUMBER.** Tear-film mucin is **0.2 µm** on `L9` sl.3 and
+  **0.02–0.05 µm** on `L1,2` sl.56 while lipid and aqueous agree exactly; the book prints none. Recorded
+  in `lac-1`, not resolved. **Two invisible sources cannot contradict each other** — every deck-vs-deck
+  check in this module was worthless before today and is worth re-running now.
+- **⚠️ OPHTHO BANK ARITHMETIC — full version in `progressriefsophtho-bank-brief.md`, the reusable
+  subagent brief.** GG `ophthalmology qb.pdf`: **PDF = book + 7**, 28 sections, continuous numbering.
+  House `ophthalmology MCQ.pdf`: **A4 LANDSCAPE, TWO book pages per PDF page**, `PDF = floor(book/2)+2`,
+  answers **inline**, numbering **restarts each chapter** so ids need a `-c<n>-` token. ⚠️ **The "Page As"
+  figure lied on t2 and t3 and was CORRECT on t4 and t7 — unpredictable both ways, render one page past
+  every time.** Counts exact **six** times running (71,41,26,26,65,52,8). **Tools: `<scratch>oph`.**
+- **⚠️⚠️ THE ENT BANK WAR STORIES MOVED TO `progress\memory-archive.md` ON 2026-08-24** — 43 lines,
+  verbatim, under *"The ENT bank war stories"*. **ENT is closed, so they are reference, not resume
+  state.** ⚠️ **But four of them are GENERAL and apply to the ophthalmology stream now running:** the
+  **British-vs-American spelling** trap that shipped a duplicate twice · the **comparator rule** (a typo
+  lives in one word, so the tolerance belongs on the word — `norm.js` passes its 39-case self-test
+  unchanged on ophtho) · **a stem match is not a question match, the options are half the question** ·
+  and **a reconstructed stem can leak the next question's answer**. **Read them there before sweeping
+  or reconstructing anything.**
 - **⚠️⚠️ `content\neuro\theory-plan.md` IS THE MODULE'S WORKING FILE — READ IT FIRST**, with
   `content\neuro\book-map.md`: deck audit, unsourced chapters, page rates, the per-chapter roster
   (§5) and every split's arithmetic (§4). ✅ **NEURO = 36 of 36 chapters, 333 sections, 113,586 body
@@ -73,14 +77,10 @@ there before resuming a paused stream. Where this file and the archive disagree,
   are PAUSED, do NOT sweep this in.** ⚠️ **Ophtho reconciliation is still NOT done** (~63 register rows,
   `va-6`/`pup-10`, five held divergences, `wht-8` — in its `theory-plan.md`); **its book caches exist
   (`content\ophtho\book\`) — do NOT re-read them.**
-- ✅✅ **ENT THEORY IS CLOSED TOO (2026-08-24, §16): 26 §14.5 rows discharged, 34 + 40 + 1 over-cap paragraphs reshaped — 0 paragraphs of ANY kind over 45 w in all 30 chapters, 261 pp.** ⚠️⚠️ **25 OF THE 27 OPEN RECEIVERS WERE ALREADY WRITTEN IN FULL — THE DEBT WAS BOOKKEEPING, NOT CONTENT.** Only two were short: `ent-hoarse`→`paed-5` (L2 also prints *mild cases: no treatment*, *tracheostomy in severe cases*, *stridor RARE except posterior interarytenoid web*) and `ent-nasalmass`→`tons-13` (L26's obstructive/non-obstructive caption pair — printed over PHOTOGRAPHS with no prose at all). ⚠️ **MY PROBE WAS WRONG TWICE BEFORE IT WAS RIGHT: case-sensitive on a corpus that SHOUTS (`SANTORINI` read ABSENT with the proof two lines below it), and three "misses" were words I INVENTED, not the row's** — `Romberg` is in **no cached deck**. ⚠️ **A GUARD SO TIGHT ITS FAILURES ARE ALL FALSE TEACHES YOU TO IGNORE IT** — 25 of 34 false, every one punctuation (`·`, a full stop). ⚠️ **A CITATION LINE CANNOT ANCHOR AN EDIT**: `Src: L6; L12` occurs **6×**. ⚠️ **`ent-tonsils` prints 16 pp against the 13 pp ceiling — NOT SPLIT, because it is the 8th largest of all 153 chapters and seven bigger ones shipped in modules measured AFTER that ruling; it is a corpus-wide question, user's call.** Clean seam if ever wanted: `tons-1`–`12` / `tons-13`–`14`, no reorder, 24 of 146 questions move. Still measured, not acted on: **113 bold leads with no `mdLead()` anchor · 43 bullets over 55 w** (both pre-existing).
-- ✅✅✅ **ALL THREE ENT BANKS ARE CLOSED** — endpoint (all 3,074 pp read, §11d) · Grade Gain (1,113 printed / 1,043 written / 70 folded, §14dd) · House (§15–§15mm). **ENT theory 30/30 chapters written.**
-- ✅ **THE HOUSE "MARKER DEBT" IS NOT A FAULT — CLOSED 2026-08-24 BY MEASUREMENT.** House prints 11
-  explanations; all 11 are captured (6 House-origin, 5 folded into endpoint/GG), and **no House entry
-  whose own page prints a box carries the no-explanation marker**: the 5 that co-occur say *"**ENT QB**
-  prints no explanation here"* (correct — that is Grade Gain), and `enthd-thr-476` (p.127) only
-  **quotes** Q647's box. ⚠️ **My first check said "0 wrong" because it keyed on `r.id` where the file
-  keys on `r.q`, so `if(!id) continue` SKIPPED ALL ELEVEN — a silent skip reports a clean result.** §15o.
+- ✅✅✅ **ENT IS CLOSED AND ITS COMPLETION DETAIL MOVED TO `progressmemory-archive.md` ON 2026-08-24** —
+  three banks (endpoint 3,074 pp · Grade Gain 1,113 printed · House), 30 theory chapters at **261 pp**, the
+  26 §14.5 rows, and the House **marker-debt measurement whose first check silently skipped all eleven
+  entries by keying on the wrong field**. Write-ups: `ledger.md` §16, §14dd, §15–§15mm, §15o.
 - **⚠️⚠️ FOUR CONTRADICTION SHAPES, ALL RECORDED, NONE CORRECTED — the `answer` NEVER moves; it goes in
   `explanation`, quoting the slide.** deck-vs-BOOK · **deck-vs-bank KEY** (House Q397 keys *septal
   deviation maybe congenital* FALSE while `L24`:105–110 lists developmental and racial among the
@@ -103,7 +103,7 @@ there before resuming a paused stream. Where this file and the archive disagree,
   function before writing the check on it.** §15, §15dd, §15ll.
 - **⚠️ A BOOK'S OWN CHAPTER NUMBERS CAN BE DEFECTIVE** (House printed 9 twice) — **chapter by content.**
   ⚠️ One eponym printed **four ways in two pages**; one organism **three ways in three sources**.
-- **⚠️ A CROP DETECTOR IS TEMPLATE-SPECIFIC** — `q-images.ps1` reads the endpoint bank's cream-card-on-teal cards and **never fires on House** (blue frames, kept in the crop; 560 px, q80). ⚠️⚠️ **`image` STORES THE BASENAME WITH NO EXTENSION** — `qImgSrc()` appends `.jpg`; a stored `.jpg` builds `…jpg.jpg`, and **a broken `<img>` renders as nothing and logs no console error.**
+- **⚠️ A CROP DETECTOR IS TEMPLATE-SPECIFIC** — ENT’s `q-images.ps1` never fired on House; ophtho’s ~304 crops need their own. ⚠️⚠️ **`image` STORES THE BASENAME WITH NO EXTENSION** — `qImgSrc()` appends `.jpg`, so a stored `.jpg` builds `…jpg.jpg`, and **a broken `<img>` renders as nothing and logs no console error.**
 - **⚠️⚠️ REAL EXAM DATES (user, 2026-08-13):** Peds OSCE **14 Sep** · Peds papers **17 Sep** ·
   ENT **22 Sep** · Ophtho **27 Sep** · Neuro **3 Oct** · Peds papers **18–19 Oct**. `schedule.js`
   rebuilt on them (user presses **Reset to the original plan**). **Nothing is dropped — banks are

@@ -583,3 +583,77 @@ as it stood.**
   `content\ophtho\book\` — **do not re-read**). **Its two USER RULINGS of 2026-08-18 and the scope
   rule are in the archive — settled, do not re-propose.** ⚠️ **Scope comes from the LECTURE SERIES;
   the book rules content, never scope.**
+
+---
+
+## The ENT bank war stories, moved out of MEMORY.md 2026-08-24
+
+ENT closed the same day these were written — three banks, 30 theory chapters, both standing
+theory debts, and its §14.5 rows. **They are reference now, not resume state**, and they were
+taking 43 of MEMORY.md's 200 lines. Moved verbatim, nothing rewritten. The same treatment theory
+received on 2026-08-23.
+
+**Read this block before reopening anything in ENT**, and before running a duplicate sweep on any
+module — the comparator rules, the six-instrument blindness list and the four contradiction shapes
+are all general, not ENT-specific.
+
+- **⚠️⚠️ A DUPLICATE SHIPPED, AND BRITISH-vs-AMERICAN SPELLING IS WHY — FOR THE SECOND TIME**
+  (*Biphasic stridor may be due to*, same options, same key, `Subglottic tumour`/`tumor`; `sweep2.js`
+  strips plainly, the spelling map lives in the later `norm.js`). ✅ **The corpus was re-asked with the
+  better comparator: the ONLY stage-A cross-bank duplicate in 2,216 entries, and it is MERGED** — with
+  **FOUR printings**, House twice itself. ⚠️ **A “correction” in the shipped text was a MISQUOTATION**:
+  it quoted `L6` as *COPD*; the slide prints **`COD`** (`L6`:29, and `COPD` is in none of the 34 decks).
+  **A verbatim quote tidied into correct English is no longer verbatim, and the tidier is invisible.**
+  ⚠️ One organism now prints **three ways in three sources** (*Aeuroginosa*/*Aeruginosa*/*aeroginosa*).
+- **⚠️ A DEAD-ID CHECK MUST BE A DELTA, NEVER AN ABSOLUTE:** the backtick pattern also matches **case
+  ids** (`cases.ent.js`, another file) and **image basenames**. What must be zero is what an edit
+  *adds*. ✅ **Resolving image basenames against `app\assets\q\` cut the standing count 14 → 6** — a
+  guard that merely tolerates noise reports noise; one that classifies it reports faults. ⚠️ A
+  text-level “nothing else moved” guard **fires falsely** where the bytes after `answer:` run into
+  `explanation:` — compare **parsed** objects. ⚠️ `handedit.js` cannot delete: it holds the count.
+- **⚠️⚠️⚠️ BOTH HOLD BOTH ENTRIES SHARE ONE SHAPE — A PATTERN, NOT AN ANECDOTE: THE HELD ENDPOINT ENTRY
+  HAD ALREADY WRITTEN DOWN, IN ITS OWN EXPLANATION, THE ANSWER HOUSE WOULD LATER KEY.**
+  `enthd-sel-62`/`entep-ear-86` — *acute necrotizing otitis media*: House keys **Pseudomonas**, endpoint
+  **haemolytic strept A**, and the held text already said *"reading media versus externa is the whole
+  question"*. ✅ Verified myself: `necrotiz|necrotis` = **exactly 2 hits in all 34 decks**, so **the
+  phrase is in NO deck**; `L17,18`:190 gives Pseudomonas to the EXTERNAL disease, `L21.1`:36 puts *B
+  hemolytic strept* first for otitis media. `enthd-sel-63`/`entep-mfe6-1` — tubotympanic CSOM: House
+  keys **c**, endpoint **d**, and the held text reasons *"the one that is not is option c"* **then
+  records d anyway**, which is what the rule requires (`L16`:33 prints *profuse* and *odourless* in ONE
+  line; `L16`:247 gives complications to the UNSAFE type). **Four sources already stood against that
+  key; House is a fifth and the first from another bank. Neither key moved; each entry names the other.**
+- **⚠️⚠️ THE SUBAGENT POOL CAN BE UNAVAILABLE, AND THE STANDING RECOVERY RULE ASSUMES IT ISN'T.** Five
+  drafting agents died on transient **529 Overloaded**, every one **before writing a byte** — so *a dead
+  agent's file is usually complete, validate from disk* had nothing to validate. **The 25 entries were
+  written in the MAIN session instead** (cost: source reading lands in main context, not discarded).
+- **⚠️⚠️ COMPARATOR RULE — A TYPO LIVES IN ONE WORD, SO THE TOLERANCE BELONGS ON THE WORD, NEVER ON THE
+  WHOLE STRING** (12 % whole-string collapsed `Lies ANTERIOR`/`POSTERIOR`, options a and d of ONE
+  question). Content words pair in order; **typo = same first letter, lev ≤2 AND sorted-letter lev ≤2**
+  — measured: every typo ≤2, every real distinction ≥3. `norm.js`/`normtest.js`, 39 real cases. §15gg.
+- **⚠️⚠️ A STEM MATCH IS NOT A QUESTION MATCH — THE OPTIONS ARE HALF THE QUESTION** (`S1`↔`S78`,
+  `S19`↔`S95`: filed both as reprints, both have a **replaced distractor**). ⚠️ And **a fix can inherit
+  the blind spot it was written to cure** — `shortkey.js` re-ran what `sweep2.js` skipped but `core()`
+  drops words ≤2 letters, so `CT`/`US` went EMPTY: **18 of 302 never re-run by the tool built for it.**
+- **⚠️⚠️ A RECONSTRUCTED STEM CAN LEAK THE NEXT QUESTION'S ANSWER** — `entep-nose-40` invented *a
+  nasopharyngeal mass*, in no bank, and `entep-nose-41` keys **juvenile nasopharyngeal angiofibroma**.
+  **The `imgAlt` rule applies to stems: a restatement must not answer the question.** ⚠️ **A
+  back-reference's antecedent must be READ, not assumed** (Q702's is Q701, not Q700; **THREE tail stems
+  back-referenced where I annotated two**). ⚠️ **"House is the fuller printing" is NOT a rule** —
+  **FULLER MEANS FIELD BY FIELD.**
+
+---
+
+## ENT, closed — the three completion bullets, moved out of MEMORY.md 2026-08-24
+
+Full write-ups: `ledger.md` §16 (theory), §14dd and §15–§15mm (the three banks), §15o (the marker
+debt measurement). Moved verbatim to keep MEMORY.md under its 200-line cap while ophthalmology is
+the live module.
+
+- ✅✅ **ENT THEORY IS CLOSED TOO (2026-08-24, §16): 26 §14.5 rows discharged, 34 + 40 + 1 over-cap paragraphs reshaped — 0 paragraphs of ANY kind over 45 w in all 30 chapters, 261 pp.** ⚠️⚠️ **25 OF THE 27 OPEN RECEIVERS WERE ALREADY WRITTEN IN FULL — THE DEBT WAS BOOKKEEPING, NOT CONTENT.** Only two were short: `ent-hoarse`→`paed-5` (L2 also prints *mild cases: no treatment*, *tracheostomy in severe cases*, *stridor RARE except posterior interarytenoid web*) and `ent-nasalmass`→`tons-13` (L26's obstructive/non-obstructive caption pair — printed over PHOTOGRAPHS with no prose at all). ⚠️ **MY PROBE WAS WRONG TWICE BEFORE IT WAS RIGHT: case-sensitive on a corpus that SHOUTS (`SANTORINI` read ABSENT with the proof two lines below it), and three "misses" were words I INVENTED, not the row's** — `Romberg` is in **no cached deck**. ⚠️ **A GUARD SO TIGHT ITS FAILURES ARE ALL FALSE TEACHES YOU TO IGNORE IT** — 25 of 34 false, every one punctuation (`·`, a full stop). ⚠️ **A CITATION LINE CANNOT ANCHOR AN EDIT**: `Src: L6; L12` occurs **6×**. ⚠️ **`ent-tonsils` prints 16 pp against the 13 pp ceiling — NOT SPLIT, because it is the 8th largest of all 153 chapters and seven bigger ones shipped in modules measured AFTER that ruling; it is a corpus-wide question, user's call.** Clean seam if ever wanted: `tons-1`–`12` / `tons-13`–`14`, no reorder, 24 of 146 questions move. Still measured, not acted on: **113 bold leads with no `mdLead()` anchor · 43 bullets over 55 w** (both pre-existing).
+- ✅✅✅ **ALL THREE ENT BANKS ARE CLOSED** — endpoint (all 3,074 pp read, §11d) · Grade Gain (1,113 printed / 1,043 written / 70 folded, §14dd) · House (§15–§15mm). **ENT theory 30/30 chapters written.**
+- ✅ **THE HOUSE "MARKER DEBT" IS NOT A FAULT — CLOSED 2026-08-24 BY MEASUREMENT.** House prints 11
+  explanations; all 11 are captured (6 House-origin, 5 folded into endpoint/GG), and **no House entry
+  whose own page prints a box carries the no-explanation marker**: the 5 that co-occur say *"**ENT QB**
+  prints no explanation here"* (correct — that is Grade Gain), and `enthd-thr-476` (p.127) only
+  **quotes** Q647's box. ⚠️ **My first check said "0 wrong" because it keyed on `r.id` where the file
+  keys on `r.q`, so `if(!id) continue` SKIPPED ALL ELEVEN — a silent skip reports a clean result.** §15o.
