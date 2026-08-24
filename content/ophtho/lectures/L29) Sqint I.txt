@@ -1,136 +1,928 @@
-SOURCE: Semester 8\Opthalmo\Theoritical\PPT\L29) Sqint I.pdf
+L29) Sqint I.pdf — "EOM / Squint",
+Ashraf Saad Galal, M.D, Professor of Ophthalmology, Alexandria University
+==========================================
+35 slides. READ VISUALLY 2026-08-24 and cached here.
 
-         EOM
-        Squint
+⚠️ THE FILENAME IS SPELLED "Sqint", NOT "Squint". That is the source file's own
+spelling and it is how everything downstream finds the deck. Do not correct it.
+The deck's own TITLE SLIDE, by contrast, spells it correctly: "EOM / Squint".
+
+⚠️ THIS DECK IS ALMOST ENTIRELY IMAGE-ONLY AND MUST NOT BE RE-READ FROM ITS
+TEXT LAYER. The previously cached text ran to 2,236 characters with about two
+thirds of the slides blank — it caught the bullet slides and lost every
+photograph, which is where the examination technique is taught. It was
+rendered at 110 dpi into 9 four-up contact sheets and read as images.
+
+⚠️ THE PICTURES ARE THE LECTURE. The cover test, the cover–uncover test, the
+prism cover test, the corneal reflections, the nine positions of gaze, the
+epicanthus demonstration and the before/after spectacle pair are ALL SHOWN AND
+NEVER WRITTEN. Thirteen slides carry NO TEXT AT ALL beyond a heading, and five
+(5, 8, 9, 10, 12, 13, 16, 30) carry no heading either — a picture and nothing
+else. Every one is described below, including which eye deviates and in which
+direction.
+
+SECTION MAP (slide numbers read off the burned-in numbering, not computed):
+  • Slide 1      — Title: "EOM / Squint"
+  • Slide 2      — Orbital anatomy: the extraocular muscles, mirrored pair
+  • Slide 3      — Movements: ductions, versions, vergences
+  • Slide 4      — Ocular Motility: the nine positions of gaze
+  • Slides 5–7   — What a deviation looks like: two clinical photographs and
+                   the esotropia / exotropia / hypertropia diagram
+  • Slides 8–10  — PRISMS AND INSTRUMENTS: the prism bar, a prism held before
+                   the eye, and the prism-and-occluder combination
+  • Slides 11–13 — COVER TEST (heading on 11; 12 and 13 continue it)
+  • Slide 14     — SQUINT — the classification: Apparent / Latent / Manifest
+                   (Paralytic, Comitant). The deck's spine.
+  • Slides 15–16 — APPARENT SQUINT: nasal bridge and epicanthus
+  • Slides 17–19 — LATENT SQUINT (heterophoria): causes and symptoms,
+                   cover–uncover test, treatment
+  • Slides 20–23 — COMITANT SQUINT: causes, then the sensory adaptations
+                   (suppression, amblyopia)
+  • Slides 24–26 — EXOTROPIA: the five types, intermittent exotropia,
+                   treatment
+  • Slides 27–31 — ESOTROPIA: the four types, congenital, accommodative,
+                   spectacles, drugs
+  • Slides 32–34 — TREATMENT: occlusion, orthoptic treatment, surgery
+                   (34 also carries "Thank you")
+  • Slide 35     — a Basmala slide in Arabic, printed AFTER the closing slide
+
+⚠️ CONVENTIONS ADOPTED HERE.
+  • The deck never states which eye is right and which is left in any
+    photograph, so laterality is NEVER asserted below. Every deviation is
+    reported as "the eye on the LEFT/RIGHT of the photograph", and the
+    direction is given as IN (nasal, toward the nose) or OUT (temporal, away
+    from the nose), which is recoverable from the picture and does not need
+    the patient's side.
+  • Where the deviation is read from the width of the white scleral crescent,
+    that is said — a crescent of sclera on the TEMPORAL side means the eye is
+    turned IN; on the NASAL side, turned OUT. That is this file's way of
+    stating the evidence, not a caption from the slide.
+  • Slides 4, 5, 6, 10, 11, 12, 13, 16, 18, 22, 23, 25, 27 and 30 were re-read
+    from their enlarged single-slide renders because a four-up cell could not
+    settle which iris sat where. Headings and bullets all read cleanly at
+    four-up.
+
+Transcribed close to verbatim. Slide text is kept as printed, including the
+lecturer's own wording — "Uniocular" (not monocular) on slide 3,
+"Accommodative exotropia" as item 3 of the EXOTROPIA list on slide 24, and the
+figure on slide 4 that labels its top-left arrow "dextro-version" where the
+symmetry of the figure demands "dextro-elevation". Both are flagged where they
+occur and neither is corrected.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 1 — Title
+─────────────────────────────────────────────────────────────────────
+EOM
+Squint
 
 Ashraf Saad Galal, M.D
 Professor of Ophthalmology
-  Alexandria University
-Movements
+Alexandria University
+
+(The whole deck is set on a deep maroon-red background with yellow headings,
+cyan numbering and white body text — a different template from L21 and L22.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 2 — [no heading printed; orbital anatomy]
+─────────────────────────────────────────────────────────────────────
+No heading and no body text. TWO copies of the SAME anatomical illustration
+are placed side by side, and the LEFT COPY IS MIRROR-IMAGED — its labels run
+backwards. The right-hand copy is the readable one; both carry the credit line
+"Patrick Lynch ©1996, Yale University".
+
+ILLUSTRATION — a superior (top-down) cut-away view of one orbit with the roof
+removed: the globe at the front with a blue iris, the rectus muscles in red
+running back to the orbital apex, the arteries in red and the nerves in
+yellow, the annulus of Zinn at the apex, and orbital fat between them.
+
+Labels printed on the right-hand copy, top to bottom:
+  • Cornea
+  • Iris
+  • Superior ciliary artery
+  • Superior oblique muscle
+  • Lacrimal artery
+  • Frontal nerve
+  • Supratrochlear nerve
+  • Posterior ciliary arteries
+  • Ophthalmic artery
+  • Superior rectus muscle
+  • Lateral rectus muscle
+  • Orbital fat pad
+  • Ophthalmic nerve
+  • Levator palpebrae sup. muscle
+  • Trochlear nerve
+  • Annular tendon
+  • Maxillary nerve
+  • Optic nerve
+  • Mandibular nerve
+
+⚠️ The mirrored left-hand copy prints exactly the same labels reversed and
+adds nothing. The medial rectus and the inferior muscles are NOT labelled on
+either copy.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 3 — Movements
+─────────────────────────────────────────────────────────────────────
 1. Uniocular: Ductions
 2. Binocular: Versions
              Vergences
-Ocular Motility
-Cover test
-Squint
- 1. Apparent
- 2. Latent
- 3. Manifest: Paralytic
-               Comitant
-Apparent Squint
-(Nasal bridge and epicanthus)
-Latent Squint (Heterophoria)
-                         Errors of refraction
-Symptoms:                Muscular imbalance
-1. No symptoms
-2. Muscular asthenopia
-3. Intermittent diplopia
-4. Distress in watching moving objects
-Cover Uncover test
- Esophoria
-Treatment:
 
-* No treatment
-
-* Glasses: Esophoria - Exophoria
-
-* Orthoptic treatment
-
-* Prisms: Relieving - Exercising
-
-* Surgery
-Comitant Squint
-Causes:
-1.Mechanical and anatomic factors:
-  Muscles, orbit
-2. Motor Factors:
-     Accommodation and refraction
-     Convergence mechanism
-3. Sensory Factors:
-     Disturbances of fusion
-     Sensory obstacles
-Comitant Squint
-
-                  Diplopia
-                  Confusion
+(No picture. "Uniocular" is the lecturer's own word — kept. The third line,
+"Vergences", is indented under "Versions" and belongs to item 2, not to a
+third numbered item. No individual duction, version or vergence is named on
+this slide.)
 
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 4 — Ocular Motility
+─────────────────────────────────────────────────────────────────────
+Heading, then a labelled direction DIAGRAM at the top right and a MONTAGE of
+nine clinical photographs filling the rest of the slide. No body text.
+
+DIAGRAM (top right, on a white panel) — a schematic face: two eyes with green
+irides drawn either side of an outlined nose, and EIGHT ARROWS radiating from
+between them. The four diagonal arrows are RED, the four cardinal arrows are
+BLUE, and each carries a label:
+
+     dextro-          direct elevation          laevo-
+     version                                    elevation      (red, top row)
+     ← dextro-version                laevo-version →           (blue, sides)
+     dextro-          direct depression         laevo-
+     depression                                 depression     (red, bottom)
+
+⚠️ THE TOP-LEFT LABEL IS A DEFECT IN THE FIGURE AND IS TRANSCRIBED AS PRINTED.
+It reads "dextro-version", the identical word already used for the horizontal
+blue arrow immediately below it, where its mirror on the right reads
+"laevo-elevation". The figure therefore prints "dextro-version" TWICE and
+never prints "dextro-elevation" at all. Not corrected.
+
+Because the diagram is drawn as a face seen from the front, DEXTRO is on the
+OBSERVER'S LEFT — i.e. the patient's right. That is what fixes the reading of
+the photographs below.
+
+MONTAGE — nine photographs of one boy, arranged as a 3 × 3 grid with his full
+face in the centre:
+
+  CENTRE — full face, primary position: both eyes straight ahead, corneal
+    reflections central and symmetrical.
+
+  LEFT COLUMN (three wide eye crops). In ALL THREE, both pupils are displaced
+  toward the LEFT of the photograph and the white sclera is exposed on the
+  temporal side of the right-of-photograph eye — i.e. both eyes are turned to
+  the patient's RIGHT: DEXTRO.
+    • top    — both eyes right and UP      (dextro-elevation)
+    • middle — both eyes right, level      (dextroversion)
+    • bottom — both eyes right and DOWN    (dextro-depression); the lids are
+      partly lowered over the down-turned eyes.
+
+  RIGHT COLUMN (three wide eye crops). In ALL THREE, both pupils are displaced
+  toward the RIGHT of the photograph — both eyes turned to the patient's LEFT:
+  LAEVO.
+    • top    — both eyes left and UP       (laevo-elevation)
+    • middle — both eyes left, level       (laevoversion)
+    • bottom — both eyes left and DOWN     (laevo-depression)
+
+  TOP CENTRE — a single-eye crop, the eye looking straight UP: the iris is
+    displaced upward under the upper lid and a wide band of white sclera is
+    exposed BELOW it (direct elevation).
+
+  BOTTOM CENTRE — a single-eye crop, the eye looking straight DOWN: the iris is
+    displaced downward, the upper lid follows it, and white sclera is exposed
+    ABOVE (direct depression).
+
+⚠️ NO MUSCLE IS NAMED ANYWHERE ON THIS SLIDE. The nine positions are given as
+directions of gaze only; which muscle acts in which position is not printed.
 
 
-              Sensory adaptations
-Sensory adaptations
-Suppression
-Sensory adaptations
-Amblyopia
-Exotropia
+─────────────────────────────────────────────────────────────────────
+SLIDE 5 — [no heading printed; clinical photograph]
+─────────────────────────────────────────────────────────────────────
+A single wide clinical PHOTOGRAPH of a child's two eyes and brows, filling the
+slide. No heading, no caption, no text of any kind.
 
+  • Both eyes are open, dark brown irides, and BOTH ARE VERY NEARLY STRAIGHT.
+  • A small white CORNEAL LIGHT REFLEX is visible in each eye, near the centre
+    of each pupil.
+  • The eye on the RIGHT of the photograph shows slightly MORE white sclera on
+    its nasal side than its fellow, so its iris sits a little further out —
+    a small outward deviation at most.
+  • There is no obvious epicanthal fold and the nasal bridge is normal.
+
+Placed where it is — immediately before the esotropia/exotropia/hypertropia
+diagram — this is the near-normal baseline against which the next slide's
+frank deviations are meant to be read. The slide itself says nothing.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 6 — [no heading printed; the three tropias]
+─────────────────────────────────────────────────────────────────────
+One white-panelled DIAGRAM filling the slide: three drawn pairs of eyes,
+stacked, each with its name printed to its left. These three words are the
+only text on the slide.
+
+  Esotropia
+    → the eye on the LEFT of the picture is turned IN, toward the nose: its
+      iris sits against the inner (nasal) corner and a wide white crescent of
+      sclera is exposed on the TEMPORAL side. The eye on the right is
+      straight, iris central.
+
+  Exotropia
+    → the eye on the LEFT of the picture is turned OUT, away from the nose:
+      its iris sits against the outer (temporal) corner and the wide white
+      crescent is on the NASAL side. The eye on the right is straight.
+
+  Hypertropia
+    → the eye on the LEFT of the picture is turned UP: its iris rides high
+      under the upper lid and white sclera is exposed BELOW it. The eye on the
+      right is straight, at the normal level.
+
+So all three are drawn as a deviation of the SAME eye, changing only its
+direction — in, out, up. Hypotropia is not drawn and not named.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 7 — [no heading printed; clinical photograph]
+─────────────────────────────────────────────────────────────────────
+One wide clinical PHOTOGRAPH of a fair child's two eyes, filling the slide. No
+heading, no caption.
+
+  • The eye on the LEFT of the photograph is STRAIGHT: grey-blue iris central
+    in the fissure, white sclera roughly equal on both sides.
+  • The eye on the RIGHT of the photograph is TURNED OUT: its iris is pulled
+    toward the outer (temporal) corner and a broad white crescent of sclera is
+    exposed on the NASAL side, between the iris and the inner canthus.
+  = a manifest divergent deviation — an EXOTROPIA of the right-of-photograph
+  eye — printed with no caption at all. This is the picture that slide 6 has
+  just drawn.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 8 — [no heading printed; the prisms]
+─────────────────────────────────────────────────────────────────────
+A single PHOTOGRAPH of equipment, no text. The deck's introduction of the
+prism, given entirely as an object.
+
+  • BACKGROUND — a PRISM BAR: a long metal rail carrying a row of clear glass
+    prisms of steadily increasing size, mounted side by side with their bases
+    alternating, each prism engraved with its power. The engraved numbers are
+    visible but too small to read individually at this resolution.
+  • FOREGROUND — a single LOOSE PRISM standing upright on a wooden bench: a
+    triangular block of clear glass, its apex at the top and its base at the
+    bottom, with the number "50" engraved on its face.
+
+⚠️ THE UNIT IS NOT PRINTED. The prism is marked "50" and the deck never writes
+"prism dioptre", "Δ" or any unit anywhere.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 9 — [no heading printed; a prism held before the eye]
+─────────────────────────────────────────────────────────────────────
+A single clinical PHOTOGRAPH, no text.
+
+  • An elderly fair-haired patient's face, seen from the front.
+  • An examiner's hand, entering from the top right, holds a SQUARE GLASS PRISM
+    directly in front of the eye on the RIGHT of the photograph, gripped
+    between thumb and finger at its upper edge. A small marking is engraved on
+    the prism near its top.
+  • The eye BEHIND the prism is seen through the glass and its image is
+    DISPLACED — the iris appears shifted relative to where the lid opening
+    puts it, and the lower lid margin is visibly stepped where the prism edge
+    crosses it.
+  • The other eye, on the LEFT of the photograph, is uncovered and looking
+    straight ahead.
+  This is the prism in use, shown and not explained: the slide carries no
+  instruction, no name for the test and no direction for the base.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 10 — [no heading printed; prism and occluder together]
+─────────────────────────────────────────────────────────────────────
+A single clinical PHOTOGRAPH, no text — and the most informative picture in
+the examination sequence, because it shows the two instruments used together.
+
+  • A young girl seated, facing the camera.
+  • The examiner's hand holds a SQUARE GLASS PRISM in front of the eye on the
+    LEFT of the photograph. That eye is clearly visible through the glass and
+    its image is displaced and slightly magnified within the block.
+  • At the same moment a round BLACK OCCLUDER on a metal handle is held over
+    the eye on the RIGHT of the photograph, completely covering it.
+  = the PRISM COVER TEST as performed: prism before one eye, occluder over the
+  other. The slide names neither instrument and does not name the test.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 11 — Cover test
+─────────────────────────────────────────────────────────────────────
+Heading, then one wide clinical PHOTOGRAPH of a child's two eyes. No body
+text and no caption on the photograph.
+
+  • The eye on the LEFT of the photograph is FIXING: brown iris central, and
+    the small white CORNEAL LIGHT REFLEX sits at the CENTRE of its pupil.
+  • The eye on the RIGHT of the photograph is TURNED IN toward the nose: its
+    iris is displaced nasally, a wide white crescent of sclera is exposed on
+    its TEMPORAL side, and its corneal light reflex is displaced OUTWARD,
+    sitting toward the temporal edge of the pupil rather than centrally.
+  = a manifest convergent deviation — ESOTROPIA of the right-of-photograph
+  eye, with the displaced corneal reflex as the second, independent sign.
+
+⚠️ THE COVER TEST ITSELF IS NOT PERFORMED IN THIS PICTURE. No cover, no
+occluder and no hand appears; the heading names the test and the photograph
+shows only the deviation the test is used to find. The steps of the test are
+written nowhere in the deck.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 12 — [no heading printed; continues Cover test]
+─────────────────────────────────────────────────────────────────────
+One wide clinical PHOTOGRAPH of an infant's two eyes, no text.
+
+  • BOTH eyes are turned IN toward the nose. In each eye the iris sits nasally
+    and the white crescent of sclera is exposed on the TEMPORAL side.
+  • The deviation is GREATER in the eye on the RIGHT of the photograph, whose
+    temporal crescent is much the wider of the two.
+  • The irides are very dark and the pupils large; bright specular reflexes
+    are scattered over both corneas.
+  = a bilateral convergent deviation, worse on the right of the photograph.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 13 — [no heading printed; continues Cover test]
+─────────────────────────────────────────────────────────────────────
+One wide clinical PHOTOGRAPH of an infant's two eyes, no text.
+
+  • BOTH eyes are again turned IN toward the nose, and here the two sides are
+    roughly SYMMETRICAL: each iris is displaced nasally and each shows a
+    crescent of white sclera on its TEMPORAL side, of about equal width.
+  • The nasal sclera is almost entirely hidden on both sides.
+  = a symmetrical bilateral convergent deviation — the appearance that slide
+  28 will later call cross fixation. Nothing is written on the slide.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 14 — Squint
+─────────────────────────────────────────────────────────────────────
+1. Apparent
+2. Latent
+3. Manifest: Paralytic
+            Comitant
+
+(No picture. This is the deck's spine: everything from slide 15 to the end
+works down this list. "Comitant" is the lecturer's spelling — kept — and
+"Concomitant" is never used. The fourth line, "Comitant", is indented under
+"Paralytic" and belongs to item 3.
+
+⚠️ PARALYTIC SQUINT IS NAMED HERE AND THEN NEVER RETURNED TO IN THIS DECK.
+Slides 20–23 take up "Comitant Squint" and the deck runs to its end without
+another paralytic slide. That is what the "I" in the lecture pair means:
+L30 is the paralytic half.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 15 — Apparent Squint (Nasal bridge and epicanthus)
+─────────────────────────────────────────────────────────────────────
+Heading in yellow with the sub-heading in cyan beneath it:
+
+  Apparent Squint
+  (Nasal bridge and epicanthus)
+
+Then TWO clinical PHOTOGRAPHS side by side, no captions.
+
+PHOTOGRAPH 1 (left) — a girl with a BROAD, FLAT, LOW NASAL BRIDGE. In BOTH
+eyes a crescent of white sclera is exposed on the NASAL side, between the iris
+and the inner canthus, so the eyes give the impression of being turned
+outward. Her corneal light reflexes are, however, symmetrical.
+  = the broad-bridge / wide-set appearance: an apparent DIVERGENT squint.
+
+PHOTOGRAPH 2 (right) — a toddler with a broad flat bridge and full EPICANTHAL
+FOLDS. Here the folds cover the nasal sclera of BOTH eyes almost completely,
+so that white sclera is visible only on the TEMPORAL side of each eye and the
+eyes give the impression of being turned inward.
+  = the epicanthus appearance: an apparent CONVERGENT squint.
+
+The two photographs therefore print the two opposite illusions the sub-heading
+names, and the slide leaves that unsaid.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 16 — [no heading printed; the epicanthus demonstration]
+─────────────────────────────────────────────────────────────────────
+Two clinical PHOTOGRAPHS of THE SAME CHILD side by side, no text at all. This
+is the deck's proof that an apparent squint is apparent, and it is delivered
+entirely by a pair of pictures.
+
+PHOTOGRAPH 1 (left) — the child at rest. Prominent EPICANTHAL FOLDS run down
+from the upper lids across the inner canthi, hiding the nasal sclera of both
+eyes. White sclera is visible only on the TEMPORAL side of each eye, and the
+two eyes look CONVERGENT.
+
+PHOTOGRAPH 2 (right) — an adult's thumb and forefinger PINCH the skin of the
+nasal bridge and lift it, drawing the epicanthal folds up and away from the
+inner canthi. With the folds lifted, the nasal sclera of both eyes is exposed
+and BOTH EYES ARE NOW SEEN TO BE STRAIGHT, with white sclera on both sides of
+each iris.
+
+= the convergence was an illusion produced by the folds. The manoeuvre is
+shown and never named; the words "pseudo-esotropia" and "pseudostrabismus"
+appear nowhere in the deck.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 17 — Latent Squint (Heterophoria)
+─────────────────────────────────────────────────────────────────────
+Heading, then two CAUSES printed in blue at the top right and a red-headed
+symptom list on the left. No picture.
+
+  (blue, top right — the causes, printed without a lead word:)
+  Errors of refraction
+  Muscular imbalance
+
+  Symptoms:            (printed in red)
+  1. No symptoms
+  2. Muscular asthenopia
+  3. Intermittent diplopia
+  4. Distress in watching moving objects
+
+⚠️ "No symptoms" is printed as item 1 OF the symptom list — the lecturer's own
+layout, kept as printed. The two blue lines are not numbered and carry no
+heading of their own; they float above the symptom list.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 18 — Cover Uncover test
+─────────────────────────────────────────────────────────────────────
+Heading in yellow, one word beneath it in cyan, and one photograph:
+
+  Cover Uncover test
+  Esophoria
+
+CLINICAL PHOTOGRAPH — a wide crop of an adult woman's two eyes.
+  • BOTH EYES ARE STRAIGHT. Each dark brown iris sits centrally in its
+    fissure, and the small white CORNEAL LIGHT REFLEX is at the centre of both
+    pupils, symmetrically placed.
+  • There is no scleral crescent on either side of either eye that is not
+    matched on the other eye.
+
+⚠️ THAT IS THE POINT, AND THE SLIDE NEVER SAYS IT. A phoria is by definition
+latent, so the photograph of an esophoria shows two straight eyes; the
+deviation only appears when one eye is covered. No cover, no occluder and no
+hand appears in this picture either, and the manoeuvre of the cover–uncover
+test — cover, watch the uncovered eye, uncover, watch the recovery — is
+written nowhere in the deck. Exophoria and hyperphoria are not named on this
+slide.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 19 — Treatment:
+─────────────────────────────────────────────────────────────────────
+The heading IS the word "Treatment:", printed in yellow with its colon. It
+belongs to the latent squint of slides 17–18; the slide carries no other
+title, so a reader who lands on it alone cannot tell what is being treated.
+
+  * No treatment
+  * Glasses:  Esophoria - Exophoria
+  * Orthoptic treatment
+  * Prisms: Relieving - Exercising
+  * Surgery
+
+(No picture. Each item is marked with a cyan asterisk rather than a number.
+The two paired terms are printed exactly as shown — "Esophoria - Exophoria"
+and "Relieving - Exercising" — with no explanation of which glass or which
+prism goes with which. Note that "Relieving" and "Exercising" prisms are named
+ONLY here.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 20 — Comitant Squint
+─────────────────────────────────────────────────────────────────────
+Heading, then a blue sub-heading and a three-part list. No picture.
+
+  Causes:            (printed in blue)
+  1. Mechanical and anatomic factors:
+     Muscles, orbit
+  2. Motor Factors:
+        Accommodation and refraction
+        Convergence mechanism
+  3. Sensory Factors:
+        Disturbances of fusion
+        Sensory obstacles
+
+(The sub-items under 2 and 3 are indented a further step and are not numbered.
+"Sensory obstacles" is not expanded anywhere.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 21 — Comitant Squint
+─────────────────────────────────────────────────────────────────────
+Same heading as slide 20. One clinical photograph on the left, and on the
+right a two-word list, a long white DOWN ARROW, and a blue conclusion:
+
+  Diplopia
+  Confusion
+        ↓            (a long vertical white arrow drawn between them)
+  Sensory adaptations   (printed in blue)
+
+CLINICAL PHOTOGRAPH (left) — a boy's face, head slightly turned.
+  • The eye on the LEFT of the photograph is turned OUT: its iris is pulled
+    hard toward the outer canthus and a WIDE white crescent of sclera is
+    exposed on its NASAL side.
+  • The eye on the RIGHT of the photograph is straight and fixing, iris
+    central.
+  = a large manifest EXOTROPIA of the left-of-photograph eye.
+
+The arrow is the argument of the slide, drawn rather than written: the squint
+produces diplopia and confusion, and the child escapes them by adapting. What
+"confusion" means is never defined.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 22 — Sensory adaptations
+─────────────────────────────────────────────────────────────────────
+Heading in yellow, one word beneath it in cyan:
+
+  Sensory adaptations
+  Suppression
+
+CLINICAL PHOTOGRAPH — a boy's face, chin slightly down.
+  • The eye on the LEFT of the photograph is straight, iris central, and is
+    the fixing eye.
+  • The eye on the RIGHT of the photograph is turned OUT: its iris sits
+    against the outer canthus and a wide white crescent of sclera is exposed
+    on its NASAL side.
+  = a manifest EXOTROPIA of the right-of-photograph eye.
+
+⚠️ SUPPRESSION IS NOT DEFINED, NOT TESTED AND NOT DEMONSTRATED. The word is
+printed and a photograph of a squinting child is placed under it; nothing on
+the slide shows or explains what is being suppressed.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 23 — Sensory adaptations
+─────────────────────────────────────────────────────────────────────
+Same heading, second adaptation:
+
+  Sensory adaptations
+  Amblyopia
+
+CLINICAL PHOTOGRAPH — a smiling girl, head tilted slightly.
+  • The eye on the LEFT of the photograph is turned OUT: its iris lies toward
+    the outer canthus with a wide white crescent of sclera on its NASAL side.
+  • The eye on the RIGHT of the photograph sits much closer to the midline of
+    its fissure.
+  = a manifest divergent deviation of the left-of-photograph eye.
+
+⚠️ AMBLYOPIA IS NOT DEFINED HERE EITHER, and nothing in the photograph can
+show it — amblyopia is a visual acuity, not an appearance. No acuity, no
+degree and no age limit is printed on this slide. Its treatment does appear
+later, on slide 32.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 24 — Exotropia
+─────────────────────────────────────────────────────────────────────
 1. Intermittent exotropia
-
 2. Congenital exotropia
-
 3. Accommodative exotropia
-
 4. Sensory exotropia
-
 5. Consecutive exotropia
-Intermittent exotropia
-Treatment:
 
-* Glasses: correction of refractive
-errors
+⚠️ ITEM 3 IS PRINTED AS "Accommodative exotropia" AND IS TRANSCRIBED AS
+PRINTED. The matching list on slide 27 gives "Accommodative esotropia" as its
+item 2, and slide 29 devotes a whole slide to "Accommodative esotropia" with
+hypermetropia and a high AC/A. The deck therefore prints an accommodative form
+of BOTH deviations and only ever explains the esotropic one. Not corrected —
+this is what the slide says.
 
-* Orthoptic treatment, convergence
-exercises
+CLINICAL PHOTOGRAPH (right of the list) — a boy's face.
+  • The eye on the LEFT of the photograph is turned OUT: iris against the
+    outer canthus, wide white scleral crescent on the NASAL side.
+  • The eye on the RIGHT of the photograph is straight.
+  = a manifest EXOTROPIA of the left-of-photograph eye. The photograph's left
+  edge sits immediately against the end of the third line of text but does not
+  cover any letter.
 
-* Prisms: base in prisms
 
-* Surgery: 4 years
-Esotropia
+─────────────────────────────────────────────────────────────────────
+SLIDE 25 — Intermittent exotropia
+─────────────────────────────────────────────────────────────────────
+Heading only, then FIVE clinical photographs in two rows — two of a toddler
+and three of a young woman. No captions. The five photographs together make
+the one point the heading names, and none of it is written down.
 
+TOP ROW — the same toddler, twice:
+  • Photograph A (left)  — BOTH EYES STRAIGHT. Each iris central, white sclera
+    equal on both sides, corneal reflexes symmetrical.
+  • Photograph B (right) — the eye on the LEFT of the photograph is now TURNED
+    OUT: iris toward the outer canthus, wide white crescent on the NASAL side.
+    The other eye is straight.
+  = the same child, straight in one moment and exotropic in the next.
+
+BOTTOM ROW — the same young woman in a pale blue headscarf, three times:
+  • Photograph C (left)   — the eye on the LEFT of the photograph is turned
+    OUT, wide white crescent on its NASAL side; the other eye straight.
+  • Photograph D (middle) — BOTH EYES STRAIGHT, irides central, reflexes
+    symmetrical.
+  • Photograph E (right)  — the eye on the RIGHT of the photograph is turned
+    OUT, wide white crescent on its NASAL side; the other eye straight.
+
+= the deviation is not only INTERMITTENT (present in C and E, absent in D) but
+also ALTERNATES between the two eyes (left in C, right in E). Both of those
+are the whole teaching of the slide and neither is stated in text.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 26 — Treatment:
+─────────────────────────────────────────────────────────────────────
+Again the heading is just "Treatment:" in yellow — this one belongs to the
+intermittent exotropia of slide 25. No picture.
+
+  * Glasses: correction of refractive errors
+  * Orthoptic treatment, convergence exercises
+  * Prisms: base in prisms
+  * Surgery: 4 years
+
+(Cyan asterisks again. "Surgery: 4 years" is the only age given for surgery
+anywhere in the deck. "base in prisms" is printed exactly so, with the lower
+case and the doubled word.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 27 — Esotropia
+─────────────────────────────────────────────────────────────────────
 1. Congenital esotropia
-
 2. Accommodative esotropia
-
 3. Sensory esotropia
-
 4. Consecutive esotropia
-Congenital esotropia
 
-• < 6 months
-• Large angle
-• Constant
-• Cross fixation
-• Treatment: Surgery
-Accommodative esotropia
+(Four types, against the five of the exotropia list on slide 24 — the
+esotropia list has NO "intermittent" entry.)
 
- Hypermetropia
-
-
- High AC/A
+CLINICAL PHOTOGRAPH (bottom right) — a wide crop of an adult man's two eyes.
+  • BOTH eyes are turned IN toward the nose: in each, the iris sits nasally
+    and a white crescent of sclera is exposed on the TEMPORAL side.
+  • The eye on the LEFT of the photograph is also visibly RED — the
+    conjunctiva and the lower lid margin are injected.
+  = a bilateral convergent deviation in an adult. The redness is not
+  mentioned, captioned or explained anywhere.
 
 
- Age: 2.5 – 5 years
-Glasses
-Drugs
+─────────────────────────────────────────────────────────────────────
+SLIDE 28 — Congenital esotropia
+─────────────────────────────────────────────────────────────────────
+  • < 6 months
+  • Large angle
+  • Constant
+  • Cross fixation
+  • Treatment: Surgery
 
-   Atropine
+CLINICAL PHOTOGRAPH (right of the bullets) — an infant's face.
+  • BOTH eyes are turned IN toward the nose, and markedly so: each iris lies
+    against the inner canthus and a WIDE white crescent of sclera is exposed
+    on the TEMPORAL side of each eye. The two sides are about equal.
+  = the large-angle, constant, symmetrical convergent deviation the bullets
+  describe, and the appearance that "cross fixation" refers to.
+
+⚠️ "Cross fixation" is named and never explained; the deck does not say that
+the child uses the adducted right eye to look left and vice versa, and no
+figure shows it.
 
 
-   Miotics
-Occlusion
-    Treatment of amblyopia
-Orthoptic treatment
+─────────────────────────────────────────────────────────────────────
+SLIDE 29 — Accommodative esotropia
+─────────────────────────────────────────────────────────────────────
+Hypermetropia
 
+High AC/A
+
+Age: 2.5 - 5 years
+
+CLINICAL PHOTOGRAPH (right) — a young girl's face.
+  • The eye on the LEFT of the photograph is STRAIGHT, iris central.
+  • The eye on the RIGHT of the photograph is TURNED IN: its iris is displaced
+    nasally and a wide white crescent of sclera is exposed on its TEMPORAL
+    side.
+  = a manifest ESOTROPIA of the right-of-photograph eye.
+
+⚠️ "AC/A" is printed as an abbreviation and is NEVER expanded, never defined
+and never measured anywhere in the deck. No dioptric figure for the
+hypermetropia is given either.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 30 — [no heading printed; the spectacle before-and-after pair]
+─────────────────────────────────────────────────────────────────────
+Two clinical PHOTOGRAPHS of THE SAME INFANT side by side, no text at all — the
+answer to slide 29, given entirely as a picture pair.
+
+PHOTOGRAPH 1 (left) — WITHOUT SPECTACLES. Both eyes are turned IN toward the
+nose: each iris sits nasally with a white crescent of sclera exposed on the
+TEMPORAL side, the deviation rather larger in the eye on the LEFT of the
+photograph. The child is sucking a finger.
+
+PHOTOGRAPH 2 (right) — WITH SPECTACLES: thick round plus-lens spectacles in a
+pale pink plastic frame. The lenses magnify the eyes noticeably, which is
+itself the sign of a strong hypermetropic correction. BOTH EYES ARE NOW
+STRAIGHT — each iris central in its fissure with white sclera on both sides,
+and the two corneal reflexes symmetrical. The child is laughing.
+
+= the esotropia is fully corrected by the glasses alone. Nothing is written;
+the pair is the demonstration.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 31 — Drugs
+─────────────────────────────────────────────────────────────────────
+Atropine
+
+Miotics
+
+(No picture, no indication, no dose, no strength and no route. Two words under
+a one-word heading. It follows the accommodative esotropia slides, so those
+are presumably its context, but the slide does not say so.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 32 — Occlusion
+─────────────────────────────────────────────────────────────────────
+Heading in yellow, then one line of white text and two photographs:
+
+  Occlusion
+  Treatment of amblyopia
+
+PHOTOGRAPH 1 (left) — a boy seen in profile wearing dark-framed spectacles. A
+BLACK FABRIC OCCLUDER is fitted over the whole of the near lens, covering that
+eye completely and held in place by the spectacle frame itself. The occluder
+wraps round the temple side so that the child cannot look past it.
+
+PHOTOGRAPH 2 (right) — a young child facing the camera in round pink
+spectacles. The lens on the RIGHT of the photograph is covered by a pale,
+translucent, frosted OCCLUDER stuck to the glass; the eye behind it is a blur.
+The other lens is clear and that eye is seen sharply through it.
+
+= two forms of occlusion, opaque and translucent, over spectacles.
+
+⚠️ NO REGIMEN IS GIVEN. There are no hours per day, no ratio of occluded to
+free days, no age limit, no follow-up interval and no mention of occluding the
+GOOD eye rather than the amblyopic one. The word "penalisation" does not
+appear, and the Atropine of slide 31 is never connected to amblyopia.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 33 — Orthoptic treatment
+─────────────────────────────────────────────────────────────────────
 For binocular vision
 1. Simultaneous perception
 2. Fusion
 3. Depth perception
-Surgery
-    Recession - Resection
+
+PHOTOGRAPH (right of the list) — a large table-mounted INSTRUMENT on a wooden
+bench: a cream-and-chrome body on a heavy base, carrying TWO angled arms that
+converge on a pair of eyepieces, each arm with its own knurled adjusting
+knobs, slide holders and a graduated scale, and a cable running off to the
+right.
+  = a synoptophore. ⚠️ THE INSTRUMENT IS NEVER NAMED. The word "synoptophore"
+  is printed nowhere on this slide or anywhere else in the deck.
+
+The three numbered items are the three grades of binocular single vision, but
+the deck neither calls them grades nor uses the word "stereopsis" — it writes
+"Depth perception".
 
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 34 — Surgery
+─────────────────────────────────────────────────────────────────────
+Heading in yellow, one line of white text, two pictures, and the deck's
+closing line:
+
+  Surgery
+  Recession - Resection
+  ...
+  Thank you        (in large yellow letters, bottom right)
+
+PICTURES — TWO copies of Leonardo's Mona Lisa, side by side, and they are NOT
+identical:
+  • LEFT copy — digitally altered so that the corners of the mouth are turned
+    DOWN into a frown. Everything else in the picture is unchanged.
+  • RIGHT copy — the painting as it is, with the familiar faint smile.
+
+= a visual joke standing in for a before-and-after surgical result: the same
+face, changed only by moving the ends of a muscle. The slide makes no comment
+on it.
+
+⚠️ THAT IS THE ENTIRE SURGERY CONTENT OF THE DECK: two words, "Recession -
+Resection", with no muscle named, no amount, no indication, no complication
+and no age other than the "4 years" of slide 26.
 
 
-                Thank you
-‫بسم هللا الرحمن الرحيم‬
-
+─────────────────────────────────────────────────────────────────────
+SLIDE 35 — [Arabic, no heading]
+─────────────────────────────────────────────────────────────────────
+بسم الله الرحمن الرحيم
+
+(The Basmala, printed in yellow Arabic script in the middle of an otherwise
+empty maroon slide. Nothing else appears on it.
+
+⚠️ IT IS THE LAST SLIDE IN THE FILE, PLACED AFTER THE "Thank you" OF SLIDE 34.
+An opening invocation sitting at the end is almost certainly a slide that was
+never moved back to the front; the deck's content ends at slide 34. This is
+the only non-English text in the deck.)
+
+
+─────────────────────────────────────────────────────────────────────
+NOT COVERED ANYWHERE IN THIS DECK
+─────────────────────────────────────────────────────────────────────
+Measured by reading all 35 slides at four-up, plus enlarged single-slide
+re-reads of slides 4, 5, 6, 10, 11, 12, 13, 15, 16, 18, 21, 22, 23, 24, 25,
+27, 28, 29 and 30.
+
+⚠️ FIRST, TWO THINGS THAT ARE PRESENT AND MIGHT BE EXPECTED TO BE ABSENT, so
+that they are not later listed as gaps: PRISMS ARE COVERED — a prism bar and a
+loose prism engraved "50" on slide 8, a prism held before the eye on slide 9,
+and a prism used together with an occluder on slide 10, plus "Prisms:
+Relieving - Exercising" (19) and "Prisms: base in prisms" (26). And AMBLYOPIA
+TREATMENT IS COVERED — slide 32 is headed "Occlusion / Treatment of amblyopia"
+and shows two occluders. What is missing from each is set out below.
+
+TESTS THAT ARE NAMED NOWHERE
+ 1. HIRSCHBERG IS NOT NAMED. The corneal light reflex is visible and
+    diagnostic in the photographs on slides 5, 11 and 18, and the displaced
+    reflex of the squinting eye on slide 11 is the clearest single sign in the
+    deck — but the word "Hirschberg", the term "corneal reflection test" and
+    the millimetre-to-degree conversion appear on no slide.
+ 2. KRIMSKY IS NOT NAMED, anywhere.
+ 3. "PRISM COVER TEST" IS NOT NAMED, although slide 10 photographs it being
+    performed. Nor is "alternate cover test": the deck's three cover-test
+    slides (11–13) show only deviations, and slide 18's "Cover Uncover test"
+    shows two straight eyes. THE STEPS OF NO COVER TEST ARE WRITTEN ANYWHERE —
+    not what to cover, not what to watch, not what a movement means.
+ 4. THE MADDOX ROD IS NOT MENTIONED, and neither is the Maddox wing.
+ 5. WORTH'S FOUR-DOT TEST IS NOT MENTIONED. Nor is the Bagolini striated
+    glass, the red glass test, or any stereopsis test (Titmus, TNO, Lang).
+ 6. THE SYNOPTOPHORE IS PHOTOGRAPHED (slide 33) AND NEVER NAMED. No knob, no
+    scale and no slide of the instrument is labelled.
+ 7. NO UNIT OF DEVIATION IS EVER PRINTED. The prism on slide 8 is engraved
+    "50" and that is the only number; "prism dioptre", the symbol Δ, and
+    degrees of deviation appear nowhere. "Large angle" (slide 28) is the
+    deck's only description of size.
+ 8. COVER TESTING AT NEAR VERSUS DISTANCE is not mentioned — no fixation
+    distance is given for any test.
+
+ANATOMY AND MECHANICS
+ 9. THE "EOM" OF THE TITLE IS ONE SLIDE. Slide 2 is an anatomical
+    illustration and there is NO table of the six muscles, no origin, no
+    insertion, no action, no innervation list and no field of action. The
+    medial rectus, inferior rectus and inferior oblique are not labelled even
+    on that illustration.
+10. NO INDIVIDUAL DUCTION IS NAMED. Slide 3 prints "Ductions", "Versions" and
+    "Vergences" and stops; adduction, abduction, elevation, depression,
+    intorsion and extorsion appear on no slide, and convergence and divergence
+    are never given as the two vergences.
+11. NO MUSCLE IS LINKED TO ANY POSITION OF GAZE. Slide 4's nine positions are
+    labelled by DIRECTION only; which muscle is tested in which position is
+    not printed, so the diagnostic purpose of the nine positions is absent.
+12. YOKE MUSCLES, HERING'S LAW AND SHERRINGTON'S LAW are not mentioned.
+
+CLASSIFICATION AND CONDITIONS
+13. PARALYTIC SQUINT IS LISTED ON SLIDE 14 AND NEVER RETURNED TO. Nothing in
+    this deck describes an incomitant deviation, a nerve palsy, an abnormal
+    head posture, diplopia charting or the Hess chart. (That is the deck's
+    design — L30 is the paralytic lecture — but a reader searching this file
+    for a third nerve palsy will not find one.)
+14. NO CAUSE OF A SENSORY DEVIATION IS NAMED. "Sensory exotropia" and
+    "Sensory esotropia" are listed (24, 27) and the deck never names cataract,
+    corneal opacity, retinoblastoma, optic atrophy or any other cause, and
+    never mentions leukocoria.
+15. DUANE'S RETRACTION SYNDROME, BROWN'S SYNDROME, A AND V PATTERNS,
+    DISSOCIATED VERTICAL DEVIATION and CONVERGENCE INSUFFICIENCY are absent
+    entirely, as are NYSTAGMUS and any mention of the null point.
+16. ABNORMAL RETINAL CORRESPONDENCE AND ECCENTRIC FIXATION are not mentioned,
+    even though slides 22 and 23 are given over to sensory adaptations —
+    suppression and amblyopia are the only two the deck lists.
+17. HYPOTROPIA IS NEVER NAMED. Slide 6 draws esotropia, exotropia and
+    hypertropia and stops; no vertical deviation appears anywhere else.
+18. "ALTERNATING" versus "UNILATERAL" squint is never used as a term, although
+    slide 25's photographs show an alternating deviation.
+
+QUANTITIES, DEFINITIONS AND MANAGEMENT DETAIL
+19. NO DEFINITION IS GIVEN FOR ANY OF THE DECK'S KEY WORDS. Comitant,
+    apparent, latent, manifest, suppression, amblyopia, cross fixation and
+    AC/A are all printed as labels and none is defined in a sentence.
+20. "AC/A" IS NEVER EXPANDED and no method of measuring it is given.
+21. NO REFRACTIVE FIGURE APPEARS ANYWHERE. "Hypermetropia" (29) and "Errors of
+    refraction" (17) are named with no dioptric value, and the word
+    "cycloplegic" is printed nowhere — the Atropine of slide 31 is listed
+    under "Drugs" with no indication, no strength and no schedule.
+22. THE OCCLUSION REGIMEN IS ABSENT — no hours per day, no ratio, no age
+    limit, no follow-up, and no statement that it is the SOUND eye that is
+    covered. "Penalisation" is not used.
+23. THE SURGERY IS TWO WORDS. "Recession - Resection" with no muscle, no
+    millimetres, no indication, no complication and no post-operative care.
+    Botulinum toxin, adjustable sutures and forced duction testing are absent.
+24. NO VISUAL ACUITY TESTING IN CHILDREN is described — no picture chart, no
+    preferential looking, no fixation behaviour, nothing.
+25. NO EPIDEMIOLOGY, NO PROGNOSIS, NO REFERENCE LIST. The deck cites no
+    textbook and carries no bibliography slide; the only credit line anywhere
+    is "Patrick Lynch ©1996, Yale University" on the borrowed anatomy figure
+    of slide 2.
