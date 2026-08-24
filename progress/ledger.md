@@ -10387,3 +10387,46 @@ likewise zero. **Bitôt Spot is the deck's only printed eponym.** Grade Gain dev
 **65 questions** to this organ, so the book chapter — ch.6, printed 82–95, which does
 carry the WHO TF/TI/TS/TT/CO grades and the SAFE strategy — is the working source, per
 the user's 2026-08-18 ruling that the book is the module's main reference.
+
+### ⚠️⚠️ THE HEREDOC BACKSLASH COLLAPSE FIRED FOR THE FOURTH TIME — AND THIS TIME THE CHECK SAID CLEAN
+
+`MEMORY.md` carries this trap as one of the project's four measured escaping problems: *"the Bash
+tool's quoted heredoc collapses `\\` to `\`, corrupting paths, citations and MEMORY.md itself —
+fired FOUR times… GREP EVERY PATH AND REGEX IN THE FILE AFTER WRITING IT."* I knew it, I wrote the
+generator through a heredoc anyway, and then I ran a verification that could not see the damage.
+
+**What it did to `resume-ophtho.md`, in a block of four paths:**
+
+| Intended | Written |
+|---|---|
+| `content\ophtho\qb-pages\*.array.js` | `contentophthoqb-pages*.array.js` |
+| `<scratch>\oph\bank\` | `<scratch>oph` + **0x08** + `ank` |
+| `<scratch>\oph\qpages.js` | `<scratch>ophqpages.js` |
+| `progress\briefs\ophtho-bank-brief.md` | `progress` + **0x08** + `riefsophtho-bank-brief.md` |
+
+⚠️ **THE WORST FORM YET: WHERE THE NEXT CHARACTER WAS `b`, `\b` BECAME A REAL BACKSPACE (0x08) AND
+WAS WRITTEN INTO THE FILE AS A CONTROL CHARACTER.** The earlier three firings only dropped the
+backslash. A control character in a markdown file is invisible in most viewers, survives copy-paste,
+and makes the path unusable in a way no reader can diagnose by looking.
+
+**⚠️⚠️ AND HERE IS THE REAL LESSON. THE POST-WRITE CHECK REPORTED CLEAN.** It was
+`grep -c 'u2705\|u26a0\|ufe0f'` — a scan for leaked `\uXXXX` escapes, which is the failure mode the
+*previous* generated write had shown. It found none, printed `escape leaks: 0`, and I believed it.
+
+> **A VERIFICATION THAT CHECKS ONE FAILURE MODE REPORTS SUCCESS FOR EVERY OTHER ONE.**
+
+That is the same shape as the six instruments already recorded in `MEMORY.md` as having been blind
+to the exact fault they were built to catch — and it is the seventh. The check was not wrong about
+what it measured; it was wrong about what it was taken to mean.
+
+**The two checks that would have caught it, and are now the standing pair after any generated write:**
+
+1. **Grep the PATHS themselves** — `content\`, `progress\`, `<scratch>\` — not a proxy for them.
+2. **Assert that no control character below 0x20 other than tab, LF and CR survives anywhere in the
+   file.** Five lines of JavaScript, catches every variant of this trap at once, and is now in
+   `<scratch>\oph\unbs.js`.
+
+**And the standing preference stands, restated because I did not follow it:** anything containing a
+backslash goes through the `Write` or `Edit` tool, never through a heredoc. The generator scripts in
+`<scratch>\oph\` were written with `Write` for exactly this reason; the one that corrupted the file
+was the one I typed into a heredoc because it felt small enough not to matter.

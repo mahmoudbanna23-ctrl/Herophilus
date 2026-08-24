@@ -40,7 +40,7 @@ there before resuming a paused stream. Where this file and the archive disagree,
   **0.02–0.05 µm** on `L1,2` sl.56 while lipid and aqueous agree exactly; the book prints none. Recorded
   in `lac-1`, not resolved. **Two invisible sources cannot contradict each other** — every deck-vs-deck
   check in this module was worthless before today and is worth re-running now.
-- **⚠️ OPHTHO BANK ARITHMETIC — full version in `progressriefsophtho-bank-brief.md`, the reusable
+- **⚠️ OPHTHO BANK ARITHMETIC — full version in `progress\briefs\ophtho-bank-brief.md`, the reusable
   subagent brief.** GG `ophthalmology qb.pdf`: **PDF = book + 7**, 28 sections, continuous numbering.
   House `ophthalmology MCQ.pdf`: **A4 LANDSCAPE, TWO book pages per PDF page**, `PDF = floor(book/2)+2`,
   answers **inline**, numbering **restarts each chapter** so ids need a `-c<n>-` token. ⚠️ **The "Page As"

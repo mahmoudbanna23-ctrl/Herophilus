@@ -5,32 +5,80 @@
 
 ---
 
-## Resume here
+## Resume here — state at 2026-08-24
 
-**✅ TOPICS 1 AND 2 CLOSED — 112 printed, 112 written, 0 folded, validated in a full run.**
+**⏳ OPHTHALMOLOGY IS THE LIVE MODULE.** ENT closed the same day (`ledger.md` §15–§16). Everything this
+session did is written up in **`ledger.md` §17 — read it before resuming.**
 
-**⚠️⚠️ THIS CHAT IS NOW A HUB, 2026-08-12 at the user's decision.** Protocol: `START-HERE.md` §11.
-**I am the SOLE WRITER** of `questions.ophtho.js`, `cases.ophtho.js`, `theory.ophtho.js`, this file
-and every git commit. Background Opus subagents draft ONE topic each into
-`content\ophtho\qb-pages\*.array.js` + `*.draft.js` and **never touch a data file, a resume file or
-git.** I run the six-stage sweep, every fold decision, the splice, the §7 validation, the marker
-delta and the commit — **one batch at a time**, because batch B's sweep must run against a corpus
-that already contains batch A or cross-bank folds are missed.
+### Where the numbers stand
 
-**Cap 2 live subagents** (all four module chats share one usage pool). **Scale to 3 only after a
-full day with no rate-limit stalls; drop to 1 after any stall.** Slot C, when it opens, is
-**Endpoint — `Opthalmology endpoint.pdf`, 2,442 pages — and its FIRST invocation is structure
-reconnaissance, not a topic**: ENT's Endpoint printed every question twice at a rate that ran
-42–100 % with no trend, and nothing about that is guessable from the outside.
+| | |
+|---|---|
+| Questions merged | **228** — Grade Gain **172** (topics 1, 2, 3, 4, 7) · House **56** (ch.1) |
+| Corpus | **2,789** (2,700 MCQ + 89 cases) |
+| Remaining | **~1,884** — GG **915** of 1,087 · House **~969** of ~1,025, against **27 Sep** |
+| Last `file://` boot | **0 console errors, 876 rules, 3 `5/4` blocks, 4 modules, 153 chapters, 1,604 sections, 89 cases** |
+| §14.5 register | ✅✅ **ZERO open rows, all four modules** (ophtho went 39 → 0 today) |
+| Lecture cache | ✅ **nine of eleven blind decks read** — see the deck table below |
 
-### Subagent board
+**⚠️⚠️ THE PROTOCOL BELOW STILL HOLDS AND IS NOT NEGOTIABLE.** The hub is the SOLE WRITER of
+`questions.ophtho.js`, `cases.ophtho.js`, `theory.ophtho.js`, this file and every git commit.
+Subagents draft into `content\ophtho\qb-pages\*.array.js` + `*.draft.js` and **never touch a data
+file, a resume file or git.** The hub runs the six-stage sweep, every fold decision, the splice, the
+§7 validation, the marker delta and the commit — **one batch at a time**, because batch B’s sweep must
+run against a corpus that already contains batch A or cross-bank folds are missed.
 
-| Slot | Bank | Topic | State | Counts |
-|---|---|---|---|---|
-| A | Grade Gain | t3 "Orbit" | **✅ MERGED 2026-08-12** | 26 printed / 26 written / 0 folded / 4 boxed |
-| A | Grade Gain | t4 "Lacrimal System", book pp.21–24 (+1 past), 26 promised | ready to launch | — |
-| B | House | ch.1 "Examination of the eye" — **Q23–Q56 relaunched**, Q1–Q22 already drafted | running | 56 staged / 22+34 drafting |
-| C | Endpoint | — | not opened; **stay at 1 slot until a clean run** | — |
+**⚠️ THE 2-SUBAGENT CAP WAS RAISED TO 4–5 ON 2026-08-24 AND THAT DECISION COST A USAGE LIMIT.** Seven
+agents were live when it hit at 3:50 pm Africa/Cairo. **Nothing was lost that had been written**, because
+every brief carried *"write incrementally"* — four agents left resumable partials totalling **160 finished
+slides**; the three holding work in memory left nothing. **Keep the write-incrementally paragraph in every
+brief.** Four concurrent is workable; watch for stalls and drop back after one.
+
+### What is queued and ready
+
+**Nine Grade Gain topics and House ch.2 are already RENDERED** at 200 dpi in `<scratch>\oph\bank\`:
+`gg-t4` `gg-t5` `gg-t6` `gg-t7` `gg-t8` `gg-t9` `gg-t10` `gg-t11` `gg-t12` `house-c2`. Render more with
+`node <scratch>\oph\qpages.js gradegain <firstBook> <lastBook> <outDir>` — it does each file’s own offset
+arithmetic and **always renders one page past**, which is not optional on this bank.
+
+**The reusable subagent brief is `progress\briefs\ophtho-bank-brief.md`** — copy it, fill the slots, launch.
+
+### ⚠️ The three things that will dominate the remaining cost
+
+1. **~304 IMAGE questions** — House OSCE Q1–269 are each a clinical photograph, plus GG’s End Exam 6
+   (Photos) at 35. **Every crop is LOOKED at**; 13 of 13 were wrong first try in ENT, and ENT’s crop
+   detector is template-specific and **will not fire on these banks.**
+2. **132 short-answer model-exam items → `type:'case'`** in `cases.ophtho.js`, which is currently empty.
+   They **reference the OSCE images rather than reprinting them**, so they need links to existing crops.
+3. **The back of both files is recycled BY DESIGN** — GG’s eight exam sections and House’s model exams are
+   past papers. **The six-stage sweep matters more there than anywhere else in this project.**
+
+### Topic-by-topic status, Grade Gain
+
+| Topic | Promised | Printed | Written | Folded | Boxed | State |
+|---|---|---|---|---|---|---|
+| 01 Examination of the Eye | 71 | **71** | 71 | 0 | 0 | ✅ |
+| 02 Optics & Errors of Refraction | 41 | **41** | 41 | 0 | 8 | ✅ |
+| 03 Orbit | 26 | **26** | 26 | 0 | 4 | ✅ |
+| 04 Lacrimal System | 26 | **26** | 26 | 0 | 6 | ✅ 2026-08-24 |
+| 05 Eyelids | 59 | — | — | — | — | rendered, not started |
+| 06 Conjunctiva | 65 | **65** (Q224–288) | in flight | — | — | drafting |
+| 07 Sclera | 8 | **8** (Q289–296) | 8 | 0 | 3 | ✅ 2026-08-24 |
+| 08 Cornea | 52 | **52** (Q297–348) | in flight | — | — | drafting |
+| 09–28 | 800 | — | — | — | — | t9, t10, t11, t12 rendered |
+
+**⚠️ THE PROMISED COUNT HAS NOW BEEN EXACT SIX TIMES RUNNING** (71, 41, 26, 26, 65, 52, 8). That is a
+pattern and still not a guarantee — ENT’s Grade Gain was wrong 17 times in 21. **Count what is printed.**
+
+**⚠️⚠️ AND THE "Page As" FIGURE IS UNPREDICTABLE IN BOTH DIRECTIONS:** it lied on t2 (14 keys on the
+next page) and t3 (11 keys), and was **CORRECT on t4 and t7**. **Render one page past, every time, and
+record which way it went.**
+
+### ⚠️ Numbering — a brief of mine got this wrong
+
+GG numbering runs **continuously across topics 1–20**. I briefed topic 7 as opening at Q165 by reasoning
+*"topic 4 ended at Q164"* and forgot that topics 5 and 6 intervene; it actually runs **Q289–Q296**. The
+agent caught it from the printed numbers. **Read the number under the topic banner; never compute it.**
 
 ### ✅ THE HOUSE BANK — identity and structure, settled 2026-08-12
 
