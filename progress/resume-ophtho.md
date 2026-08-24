@@ -80,14 +80,15 @@ arithmetic and **always renders one page past**, which is not optional on this b
 | 2 | Optics & errors of refraction | **32** | 32 | 0 | **0** | ✅ 2026-08-24 |
 | 3 | The Orbit | **28** | **27** | **1** | **0** | ✅ 2026-08-24 |
 | 4 | Lacrimal system | **30** | **29** | **1** | **0** | ✅ 2026-08-24 |
-| 5 | Eyelids | ? | — | — | — | rendered, not started |
-| 6–20 | — | ~720 | — | — | — | not started |
+| 5 | Eyelids | **32** | **31** | **1** | **0** | ✅ 2026-08-24 |
+| 6 | Conjunctival diseases | ? | — | — | — | drafting |
+| 7–20 | — | ~690 | — | — | — | not started |
 
 **⚠️ House prints NO explanation box and NO figure in chapters 1, 2 or 3** — but that is a property of
 the PAGE, counted each time, never carried forward.
 
-**⚠️⚠️ THE ORPHANED-ANSWER DEFECT IS GROWING CHAPTER BY CHAPTER: ch.2 had TWO, ch.3 had FOUR** — and
-three of ch.3’s orphaned **option text** as well as the key. Answers are printed inline, so a missing
+**⚠️⚠️ THE ORPHANED-ANSWER DEFECT IS THE THING THIS BANK IS DEFINED BY: ch.2 had TWO, ch.3 FOUR, ch.4 FOUR, ch.5 FIVE.** I recorded it as plateauing after ch.4 and ch.5 disproved that. Most orphan **option text** as well as the key, and
+⚠️⚠️ **ch.5’s Q19 IS A FIVE-OPTION QUESTION SHOWING ONLY THREE OPTIONS ON ITS OWN PAGE** — the break distorts the question’s SHAPE, not just its key. Answers are printed inline, so a missing
 key cannot be caught by a page count. **Check every question has an answer line, one at a time.**
 
 **⚠️ THE PROMISED COUNT HAS NOW BEEN EXACT SIX TIMES RUNNING** (71, 41, 26, 26, 65, 52, 8). That is a
