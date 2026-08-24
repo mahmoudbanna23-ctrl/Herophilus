@@ -228,6 +228,21 @@ bounds at 400 dpi, what the photograph shows, and whether the stem is answerable
   cut at the transcriber's stated coordinates and **included the printed option line "A. Viral"**
   where the app renders a caption — asserting an answer, and not the keyed one. **Fifteen of fifteen
   first attempts have been wrong in this project. LOOK at every finished crop.**
+- **⚠️⚠️ THE INK TEST IS `max(r,g,b) < 225  OR  (max − min) > 30`, AND THE FIRST HALF IS THE ONE THAT
+  MATTERS.** A **saturated-pixel scan** — *"is this pixel colourful?"* — is **structurally blind to
+  dark desaturated content, and that is what the edge of a clinical photograph is made of**:
+  shadowed skin, black pupils, dark hair, grey drapes. Measured on this module: a saturation scan
+  put a photograph's left edge at **x 1889** when the true edge is **x 1802**; the strip between
+  samples `(130,130,130)` and `(93,94,88)` — max minus min of **6** — and reads as blank paper.
+  **Seven per cent of the picture was being discarded, and the same blindness clips whichever edge
+  happens to be shadowed.** Tool: `<scratch>\oph\bounds.js <page.png> x1 y1 x2 y2`.
+- **⚠️ THE ASPECT RATIO IS THE CHEAP CHECK.** A shipped crop is 560 px wide, so its ratio must match
+  the photograph's true ratio on the page. A clip on any edge changes it, and comparing the two
+  numbers catches a bad bound without looking at a single pixel. On the crop that failed, the ship
+  ratio was **2.90:1** against a true **3.04:1** — the ratio itself was the evidence.
+- **⚠️ ZERO WHITE MARGIN ON ALL FOUR SIDES IS A WARNING, NOT A COMPLIMENT.** It is the signature of a
+  crop sitting *inside* the photograph on every edge. A correct cut with a 3 px pad still shows a
+  hairline of paper after downscaling.
 - **⚠️ `image` STORES THE BASENAME WITH NO EXTENSION** — `qImgSrc()` appends `.jpg`.
 - **⚠️ `imgAlt` IS MODALITY AND VIEW ONLY.** Where the stem asks *what causes the sign shown*, the
   sign itself must not be named — calling the cornea hazy hands over half the inference. The
