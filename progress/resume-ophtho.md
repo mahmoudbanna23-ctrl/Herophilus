@@ -66,11 +66,12 @@ arithmetic and **always renders one page past**, which is not optional on this b
 | 07 Sclera | 8 | **8** (Q289–296) | 8 | 0 | 3 | ✅ 2026-08-24 |
 | 08 Cornea | 52 | **52** (Q297–348) | **51** | **1** | 12 | ✅ 2026-08-24 |
 | 09 Lens | 61 | **61** (Q349–409) | **60** | **1** | 12 | ✅ 2026-08-24 |
-| 10 Uveal Tract | 38 | — | — | — | — | drafting |
-| 11 Glaucoma | 50 | — | — | — | — | drafting |
+| 10 Uveal Tract | 38 | **38** (Q410–447) | 38 | 0 | 12 | ✅ 2026-08-24 |
+| 11 Glaucoma | 50 | **50** (Q448–497) | **49** | **1** | 18 | ✅ 2026-08-24 |
 | 12 Vitreous | 15 | — | — | — | — | rendered |
 | 13 Retina | 69 | **69** (Q513–581) | **69** | 0 | 19 | ✅ 2026-08-24 |
-| 14–28 | 567 | — | — | — | — | t14–t20 rendered and queued |
+| 14 Neuro-Ophthalmology | 63 | — | — | — | — | drafting |
+| 15–28 | 504 | — | — | — | — | t15–t20 rendered and queued |
 
 ### Topic-by-topic status, House (Part A)
 
