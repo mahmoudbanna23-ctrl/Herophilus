@@ -5,55 +5,56 @@ Running record, organised around *resuming*. ISO dates; unverified marked as suc
 story, count and verbatim ruling) in `progress\memory-archive.md`** — read the relevant block
 there before resuming a paused stream. Where this file and the archive disagree, this file wins.
 
-## Resume here — ⏳ **OPHTHALMOLOGY IS THE LIVE MODULE, ~1,884 BANK QUESTIONS AGAINST 27 SEP.** ✅ **ENT IS CLOSED** (three banks, 30 chapters, both theory debts — `ledger.md` §15–§16, war stories in the archive). Ophtho stands at **228 questions** (GG **172** = topics 1,2,3,4,7 · House **56** = ch.1), corpus **2,789**. Last boot 2026-08-24: **0 console errors, 876 rules, 3 `5/4` blocks, 4 modules, 153 chapters, 1,604 sections, 89 cases.** ✅✅ **THE §14.5 REGISTER IS AT ZERO OPEN ROWS, ALL FOUR MODULES** — ophtho went 39 → 0 today, and like ENT most of it was **bookkeeping, not content**. ✅ **NINE of the module's ELEVEN blind decks are cached** (see below). **Everything is in `ledger.md` §17 — READ IT FIRST**, with `progress\resume-ophtho.md` and `content\ophtho\theory-plan.md`.
+## Resume here — ⏳ **OPHTHALMOLOGY IS THE LIVE MODULE, ~1,710 BANK QUESTIONS AGAINST 27 SEP.** ✅ **ENT IS CLOSED** (three banks, 30 chapters, both theory debts — `ledger.md` §15–§16, war stories in the archive). Ophtho stands at **434 questions** (GG **346** = topics 1,2,3,4,6,7,8,9 · House **88** = ch.1,2), corpus **2,995**, **97 images**. Last boot 2026-08-24: **0 console errors, 876 rules, 3 `5/4` blocks, 4 modules, 153 chapters, 1,604 sections, 89 cases.** **28 of 36 ophtho chapters seeded.** ⚠️ **FOUR FOLD SHAPES SO FAR, all within-bank, none taking an `alsoIn`:** exact reprint · **respelled** (mucoid/mucous — not a replaced distractor) · **REORDERED, which MOVES THE PRINTED KEY LETTER** (t9 Q392 keys B where Q355 keys C — *a key letter is never the thing to memorise*) · and one where **the second printing was BOXED and the held entry's authored marker had to come OFF**. **Check which printing is boxed before assuming a fold has no marker consequence.** ✅✅ **THE §14.5 REGISTER IS AT ZERO OPEN ROWS, ALL FOUR MODULES** — ophtho went 39 → 0 today, and like ENT most of it was **bookkeeping, not content**. ✅✅ **ALL ELEVEN BLIND DECKS ARE CACHED — the module has no unread deck left.** **Everything is in `ledger.md` §17 — READ IT FIRST**, with `progress\resume-ophtho.md` and `content\ophtho\theory-plan.md`.
 - **⚠️⚠️ A FAILURE LIST BUILT FROM FAILURE SIGNALS IS NOT A COVERAGE MEASUREMENT.** *"Eight decks need a
   visual read"* came from *never cached* + *cache is a watermark*. Sweeping **characters per slide** found
   **eleven decks, 574 slides** — **five on no owed list anywhere, because their extractions SUCCEEDED and
   were merely near-empty**: `L1,2` the foundational deck (146 c/s, 136 slides), `L22` 97, `L30` 66, `L29` 63,
-  `L21` 30. **The instrument is a RATIO AGAINST SLIDE COUNT, never file size.** ✅ **DONE: `L9` `L13,14`
-  `L24` `L1,2` `L22` `L6` `L21` `L29`. LEFT: `L5` (20/47), `L27,28` (53/70), `L30`.** ⚠️ **The two `.pptx`
+  `L21` 30. **The instrument is a RATIO AGAINST SLIDE COUNT, never file size.** ✅✅ **ALL ELEVEN ARE NOW
+  CACHED (2026-08-24) — the module has no unread deck left.** ⚠️ **The two `.pptx`
   decks were as blind as the worst PDFs and nothing flagged them** — clean XML text, 127 and 73 media files
   for ~350 words. **PowerPoint is installed: `$p.SaveCopyAs($dest,32)` — never `SaveAs`, which rebinds.**
   ⚠️ It reported `slides=0` then died *"RPC server unavailable"* **after** writing a correct PDF — **check
   the artifact on disk, not the COM return value.**
-- **⚠️⚠️ TWO STALE-VERDICT SHAPES, TWINS. (1) AN "UNDELIVERABLE" IS A STATEMENT ABOUT THE SOURCES THAT
-  WERE READABLE WHEN IT WAS WRITTEN, NEVER ABOUT THE MATERIAL** — `onc-10` called four rows undeliverable,
-  every verdict reached against the BOOK while `L24` was 78 pages of `CamScanner`; the deck now pays the
-  orbital-tumour row in full (`onc-11`, 429 w). **(2) A DECLARED LOSS IS A CLAIM WITH A DATE ON IT** —
-  `L37`’s Table 4-3 was recorded lost and **the render had already been done.** **Re-test both kinds.**
-- **⚠️⚠️ A DECK'S `NOT COVERED` LIST IS SCOPED TO THAT DECK.** I quoted `L9`'s as module-wide and claimed
-  the Schirmer test *"appears nowhere"* — `L15,16) Cornea` names it; same for the inferior meatus, which
-  the book names three times. **Grep every deck AND every book chapter, case-insensitively, before
-  writing "nowhere"** — these sources SHOUT, and a case-sensitive probe manufactures absences.
-- **⚠️⚠️ TWO "ABSENCES" WERE SPELLING ARTEFACTS AND I NEARLY WROTE DUPLICATES OFF BOTH** — `T-sign` returns
-  zero because `scl-4` prints **"T SIGN"** with a space; `PHPV` returns zero because `wht-8` writes **PFV**.
-  **READ THE CHAPTER BEFORE DECLARING A HOLE IN IT, and grep the variant.** ⚠️ **A section-id PREFIX does
-  not identify a chapter**: `cor-` is BOTH `op-cornea` and `op-cornea-surg`, and **`cts-` is `op-cat-surg`**
-  — `probe.js` now prints every hit as chapter/section.
-- **⚠️⚠️ WRITE-INCREMENTALLY IS WHAT SURVIVES A USAGE LIMIT.** Seven agents died mid-run at 3:50 pm; the four
-  writing as they went left **resumable partials totalling 160 finished slides**, the three holding work in
-  memory left nothing. Resume by `Edit`-appending from slide *N*+1 — **never `Write`.** ⚠️ **A contact sheet
-  is an INDEX, not always the reading surface** — crop and upscale the single-slide `raw/` renders;
-  *"ignore `raw/`" was wrong advice in every brief.* ⚠️ **A slide can be an exact repeat** (`L6` 52 = 50,
-  pixel diff only) · **a third gap type is IMAGE overflow** · **a negatives list poisons its own grep.**
+- **⚠️⚠️ TWO STALE-VERDICT SHAPES, TWINS. (1) AN "UNDELIVERABLE" IS A STATEMENT ABOUT THE SOURCES READABLE
+  WHEN IT WAS WRITTEN, NEVER ABOUT THE MATERIAL** — `onc-10` called four rows undeliverable, every verdict
+  reached against the BOOK while `L24` was 78 pages of `CamScanner`; the deck now pays the orbital-tumour
+  row in full (`onc-11`). **(2) A DECLARED LOSS IS A CLAIM WITH A DATE ON IT** — `L37`’s Table 4-3 was
+  recorded lost and **the render had already been done. Re-test both kinds after any read or render.**
+- **⚠️⚠️ FOUR WAYS THIS MODULE MANUFACTURED AN ABSENCE, ALL IN ONE DAY. (1) A DECK'S `NOT COVERED` LIST IS
+  SCOPED TO THAT DECK** — I quoted `L9`'s as module-wide and claimed the Schirmer test *"appears nowhere"*;
+  `L15,16) Cornea` names it, and the book names the inferior meatus three times. **(2) SPELLING** — `T-sign`
+  returns zero because `scl-4` prints **"T SIGN"** with a space, `PHPV` because `wht-8` writes **PFV**; I
+  nearly wrote duplicates off both. **(3) A SECTION-ID PREFIX DOES NOT IDENTIFY A CHAPTER** — `cor-` is BOTH
+  `op-cornea` and `op-cornea-surg`, **`cts-` is `op-cat-surg`**; `probe.js` now prints chapter/section.
+  **(4) A GREP OVER A FILE THAT RECORDS THE FAULT MATCHES ITS OWN RECORD** — a negatives list and a
+  damaged-path audit both flagged themselves. **Grep every deck AND book chapter case-insensitively, grep
+  the variant spelling, exclude the record, and OPEN THE HIT before writing the absence.**
+- **⚠️⚠️ WRITE-INCREMENTALLY IS WHAT SURVIVES A USAGE LIMIT** (two hit today). The agents writing as they went
+  left **resumable partials totalling 160 finished slides**; those holding work in memory left nothing. Resume
+  by `Edit`-appending from slide *N*+1 — **never `Write`.** ⚠️ **A DEAD AGENT WHOSE LAST WORDS NAME A FAULT IT
+  WAS FIXING LEAVES A KNOWN-BAD FILE** — the inverse of the usual rule; check that spot first. ⚠️ **A contact
+  sheet is an INDEX, not always the reading surface** — crop the single-slide `raw/` renders; *"ignore `raw/`"
+  was wrong advice in every brief.* ⚠️ **A slide can be an exact repeat** · **a 3rd gap type is IMAGE overflow.**
 - **⚠️ FIFTH DIVERGENCE SHAPE: DECK-vs-DECK, ON A NUMBER.** Tear-film mucin is **0.2 µm** on `L9` sl.3 and
-  **0.02–0.05 µm** on `L1,2` sl.56 while lipid and aqueous agree exactly; the book prints none. Recorded
-  in `lac-1`, not resolved. **Two invisible sources cannot contradict each other** — every deck-vs-deck
-  check in this module was worthless before today and is worth re-running now.
+  **0.02–0.05 µm** on `L1,2` sl.56 while lipid and aqueous agree exactly; the book prints none. Recorded in
+  `lac-1`, not resolved. ⚠️ **Two invisible sources cannot contradict each other — every deck-vs-deck check
+  in this module was worthless before today.**
 - **⚠️ OPHTHO BANK ARITHMETIC — full version in `progress\briefs\ophtho-bank-brief.md`, the reusable
-  subagent brief.** GG `ophthalmology qb.pdf`: **PDF = book + 7**, 28 sections, continuous numbering.
-  House `ophthalmology MCQ.pdf`: **A4 LANDSCAPE, TWO book pages per PDF page**, `PDF = floor(book/2)+2`,
-  answers **inline**, numbering **restarts each chapter** so ids need a `-c<n>-` token. ⚠️ **The "Page As"
-  figure lied on t2 and t3 and was CORRECT on t4 and t7 — unpredictable both ways, render one page past
-  every time.** Counts exact **six** times running (71,41,26,26,65,52,8). **Tools: `<scratch>oph`.**
+  subagent brief.** GG: **PDF = book + 7**, continuous numbering. House: **A4 LANDSCAPE, TWO book pages
+  per PDF page**, `PDF = floor(book/2)+2`, answers **inline**, numbering **restarts each chapter** so ids need
+  a `-c<n>-` token. ⚠️ **The "Page As" figure has failed THREE ways** — starting later than stated (t2, t3),
+  starting where stated then **spanning three pages** (t6), and being correct (t4, t7, t8): **render past the
+  LAST answer page.** Counts exact **eight** times (71,41,26,26,65,52,8,61). ⚠️ **41 t9 entries shipped with
+  NO marker and a second agent caught it, not the audit — confirm the box list two ways, then check
+  markers = entries − boxes BEFORE splicing.** **Tools `<scratch>\oph\`.**
 - **⚠️⚠️ THE ENT BANK WAR STORIES MOVED TO `progress\memory-archive.md` ON 2026-08-24** — 43 lines,
-  verbatim, under *"The ENT bank war stories"*. **ENT is closed, so they are reference, not resume
-  state.** ⚠️ **But four of them are GENERAL and apply to the ophthalmology stream now running:** the
-  **British-vs-American spelling** trap that shipped a duplicate twice · the **comparator rule** (a typo
-  lives in one word, so the tolerance belongs on the word — `norm.js` passes its 39-case self-test
-  unchanged on ophtho) · **a stem match is not a question match, the options are half the question** ·
-  and **a reconstructed stem can leak the next question's answer**. **Read them there before sweeping
-  or reconstructing anything.**
+  verbatim, under *"The ENT bank war stories"*. **ENT is closed, so they are reference, not resume state.**
+  ⚠️ **But four are GENERAL and apply to the ophthalmology stream now running:** the **British-vs-American
+  spelling** trap that shipped a duplicate twice · the **comparator rule** (a typo lives in one word, so the
+  tolerance belongs on the word — `norm.js` passes its 39-case self-test unchanged here) · **a stem match is
+  not a question match, the options are half the question** · and **a reconstructed stem can leak the next
+  question's answer**. **Read them there before sweeping or reconstructing anything.**
 - **⚠️⚠️ `content\neuro\theory-plan.md` IS THE MODULE'S WORKING FILE — READ IT FIRST**, with
   `content\neuro\book-map.md`: deck audit, unsourced chapters, page rates, the per-chapter roster
   (§5) and every split's arithmetic (§4). ✅ **NEURO = 36 of 36 chapters, 333 sections, 113,586 body
@@ -77,7 +78,7 @@ there before resuming a paused stream. Where this file and the archive disagree,
   are PAUSED, do NOT sweep this in.** ⚠️ **Ophtho reconciliation is still NOT done** (~63 register rows,
   `va-6`/`pup-10`, five held divergences, `wht-8` — in its `theory-plan.md`); **its book caches exist
   (`content\ophtho\book\`) — do NOT re-read them.**
-- ✅✅✅ **ENT IS CLOSED AND ITS COMPLETION DETAIL MOVED TO `progressmemory-archive.md` ON 2026-08-24** —
+- ✅✅✅ **ENT IS CLOSED AND ITS COMPLETION DETAIL MOVED TO `progress\memory-archive.md` ON 2026-08-24** —
   three banks (endpoint 3,074 pp · Grade Gain 1,113 printed · House), 30 theory chapters at **261 pp**, the
   26 §14.5 rows, and the House **marker-debt measurement whose first check silently skipped all eleven
   entries by keying on the wrong field**. Write-ups: `ledger.md` §16, §14dd, §15–§15mm, §15o.
@@ -188,8 +189,7 @@ there before resuming a paused stream. Where this file and the archive disagree,
   **nothing may anchor on a bare newline**; scan structurally.
 - **GitHub, PRIVATE**: `mahmoudbanna23-ctrl/Herophilus`, `main` + `design/clepsydra-and-sessions`
   (only off-drive copy of the Clepsydra art). `Semester 8\` gitignored. Push: `ledger.md` §13.
-  **⚠️ Stage EXPLICIT PATHS — never `git add -A`, never a directory a subagent writes into**;
-  `index.lock` = another chat is mid-commit.
+  **⚠️ Stage EXPLICIT PATHS — never `git add -A`, never a directory a subagent writes into**; `index.lock` = another chat is mid-commit.
 - **Measure, then believe:** check the sum, check the auditor, reconcile written + folded = printed; a
   counter that does not move is a finding. **Never write a page number, filename or id from memory**
   (7/7 and 3/3 wrong) — read the `source`, list the directory, grep the id. **An adjudication that is

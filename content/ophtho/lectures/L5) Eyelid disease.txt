@@ -1,208 +1,1348 @@
-SOURCE: Semester 8\Opthalmo\Theoritical\PPT\L5) Eyelid disease.pptx
-SLIDES: 47
+L5) Eyelid disease.pptx — "Lid", Ashraf Saad Galal,
+Professor of Ophthalmology, Former Dean, Faculty of Medicine, Alexandria
+University; Former President, Alexandria Medical Syndicate
+==========================================
+47 slides. READ VISUALLY 2026-08-24 and cached here.
 
---- slide 1 ---
+⚠️ DO NOT RE-EXTRACT THIS DECK FROM ITS TEXT LAYER. Being a .pptx, its text pulls
+straight out of the slide XML, so it never appeared on any extraction-failure
+list — and that is exactly the trap. The whole deck carries about 365 words of
+text against 127 media files: ~7.8 words a slide and roughly two and a half
+pictures per slide. THE PICTURES ARE THE LECTURE. The previous cached .txt was
+that thin XML extraction and was a partial, not ground truth. This file replaces
+it, read image by image from PowerPoint→PDF renders at 4 slides per contact
+sheet.
+
+⚠️ THE DECK'S OWN TITLE IS "Lid", not "Eyelid disease" — the filename says
+"Eyelid disease", the title slide says only "Lid". No date and no reference list
+anywhere in the 47 slides.
+
+SECTION MAP (slide number where each part starts) — REWRITTEN 2026-08-24 once
+all 47 slides had been read. ⚠️ The first version of this map, written from the
+first twenty slides, was WRONG FOR SLIDES 21 ONWARDS: it predicted a
+blepharitis run of 21–24, malposition at 25–29 and named tumours at 30–39. The
+real deck runs blepharitis to 26, malposition to 32, and NAMES NO TUMOUR AT
+ALL. The map below is what the slides actually show.
+   1        Title ("Lid")
+   2        Lid anatomy — sagittal diagram, fully labelled
+   3        Lid margin
+   4        Epicanthus (two pictures lettered A and B)
+   5        Lid retraction
+   6–14     PTOSIS  (6 congenital · 7 an unheaded ptosis slide ·
+            8 levator resection · 9 frontalis brow suspension ·
+            10 oculomotor paralysis · 11 Horner · 12 senile/aponeurotic ·
+            13 myogenic/myasthenia, Ice Pack and Tensilon tests ·
+            14 mechanical)
+  15–16     LAGOPHTHALMOS (15 paralytic · 16 structural)
+  17–20     LID GLAND INFLAMMATION (17 stye / hordeolum externum ·
+            18 chalazion · 19 chalazion excision · 20 infected chalazion /
+            hordeolum internum)
+  21        THE "?" QUIZ SLIDE — heading is a single question mark; the answer
+            prompt is the black-on-black text on slide 22, and the deck never
+            prints the answer
+  22–26     BLEPHARITIS AND ITS CONSEQUENCES (22 anterior/ulcerative ·
+            23 anterior/seborrheic · 24 madarosis · 25 poliosis ·
+            26 posterior / meibomian gland dysfunction)
+  27–32     LASH AND LID-MARGIN MALPOSITION (27 trichiasis ·
+            28 entropion/cicatricial · 29 entropion/senile ·
+            30 ectropion/cicatricial · 31 ectropion/paralytic ·
+            32 ectropion/senile)
+  33–36     NAMED LID LESIONS (33 lid swelling (edema) · 34 xanthelasma ·
+            35 echymosis/black eye · 36 herpes zoster ophthalmicus and herpes
+            simplex, side by side)
+  37–46     ⚠️ THE SILENT RUN — TEN CONSECUTIVE SLIDES WITH NO TEXT AT ALL,
+            17 photographs, every lid tumour in the deck:
+            37 infant blue upper-lid mass · 38 two lid-margin growths ·
+            39 infant vascular lesion, mild and close-up · 40 SLIDE 14's
+            photograph again, heading removed · 41 facial eruption over both
+            cheeks and lids · 42 four lower-lid lesions · 43 two canthal
+            ulcerating masses · 44 upper-lid margin destroyed by an ulcerated
+            mass · 45 two pigmented lid-margin lesions · 46 pigmented
+            margin-destroying canthal lesion
+  47        Closing slide ("Thank You")
+(The deck prints no contents slide and no section-divider slides of its own; the
+groupings above are read off the slides. The full list of what the deck does NOT
+cover is at the END of this file.)
+
+⚠️ CONVENTIONS ADOPTED HERE.
+  • Every slide gets a block, in order, all 47. Nothing is skipped or summarised.
+  • Every picture is described — what kind of picture it is (clinical
+    photograph, operative photo, line diagram, before-and-after pair,
+    histology), what it shows, which lid, which side, and every label or caption
+    printed on it is transcribed. At ~2.5 images a slide, a block that recorded
+    only the heading would have recorded almost nothing.
+  • TWO DISTINCT DAMAGE TYPES ARE KEPT SEPARATE, because a later question about
+    a gap turns on which one it was:
+        [text cut off in the original]  = text running past the slide edge, so
+                                          the words themselves are lost.
+        [obscured by the image]         = text still present in the slide but
+                                          hidden underneath an overlaid picture
+                                          or shape.
+    Neither mark is used speculatively; each appears only where it was seen.
+  • A HEADING WITH NOTHING UNDER IT is a third kind of gap and is said so
+    explicitly in the block where it happens.
+  • Spelling, capitalisation and spacing are the lecturer's own and are NOT
+    tidied ("TensilonTest" set solid, "Hordeolum Externum", "Seborrheic",
+    "Echymosis", "Lid Swelling (Edema))" with its doubled bracket, etc.).
+  • READING SURFACE. The four-up contact sheets are an INDEX, not a reading
+    surface: at ~760 px a cell cannot resolve which margin a lesion sits on,
+    whether the lashes are gone over it, or the texture of a crust. Every slide
+    was navigated on its sheet and then READ from the full-size single-slide
+    render in `raw\s-NN.png`. Four slides needed more than that and were
+    re-rendered as 300 dpi crops before being described: SLIDE 37 (the eye),
+    SLIDE 43 (left panel), SLIDE 45 (left panel) and SLIDE 46. Where a crop
+    still could not settle a question — which lid, which canthus — the block
+    SAYS SO instead of guessing; that happens on slides 38, 43 and 45–46.
+  • A HEADING IS NEVER A DIAGNOSIS THE SLIDE DOES NOT PRINT. Slides 37–46 have
+    no heading at all, so their blocks are headed "[no heading printed]" and
+    describe what is visible. None of those ten pictures is given a name here.
+
+Transcribed close to verbatim.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 1 — Title
+─────────────────────────────────────────────────────────────────────
 Lid
-Ashraf 
-Saad
- 
-Galal
+
+Ashraf Saad Galal
 Professor of Ophthalmology
 Former Dean, Faculty of Medicine,
 Alexandria University
 Former President, Alexandria Medical Syndicate
 
---- slide 2 ---
+(Black background; "Lid" in large yellow, the lecturer's name in cyan, his
+titles in white. No pictures on this slide.)
 
 
---- slide 3 ---
-Lid Margin
+─────────────────────────────────────────────────────────────────────
+SLIDE 2 — [no heading printed]
+─────────────────────────────────────────────────────────────────────
+NO TITLE TEXT AT ALL. The slide is one full-width labelled line diagram and
+nothing else — the anatomy is taught entirely by the figure.
 
---- slide 4 ---
-Epicanthus
+PICTURE — colour anatomical line diagram, sagittal section through the UPPER
+eyelid and anterior orbit, cornea/iris visible at bottom left. Leader lines run
+to both margins. Labels transcribed exactly as printed:
+  Left-hand column (top to bottom):
+    Arcus marginale
+    Orbital septum
+    Retro-orbicular fascia
+    Orbicularis muscle
+    Levator aponeurosis
+    Postaponeurotic space
+    Levator aponeurotic insertion into orbicularis
+    Levator aponeurotic insertion into tarsus
+    Muscle of Riolan
+  Right-hand column (top to bottom):
+    Preaponeurotic fat pad
+    Whitnall's ligament
+    Levator muscle
+    Superior rectus muscle
+    Accessory lacrimal gland
+    Muller's muscle
+The tarsal plate is drawn with the meibomian glands as vertical blue columns
+running through it; the orbital fat is the yellow lobulated mass behind the
+septum. ("Muller's muscle" is printed without the umlaut and without an
+apostrophe-s variant; "Whitnall's ligament" carries its apostrophe.)
 
---- slide 5 ---
-Lid Retraction
 
---- slide 6 ---
-Ptosis 
-Congenital
+─────────────────────────────────────────────────────────────────────
+SLIDE 3 — Lid Margin
+─────────────────────────────────────────────────────────────────────
+Heading only; no body text. Three photographs.
 
---- slide 7 ---
+PICTURE 1 (large, left) — high-magnification clinical photograph of a normal
+LOWER lid margin, the eye looking up so the inferior cornea and limbus fill the
+top of the frame. Shows the full thickness of the margin: the lashes emerging
+in two or three irregular rows from the anterior lamella, the grey line, and the
+row of meibomian gland orifices along the posterior margin. No label text.
+
+PICTURE 2 (upper right) — closer view of a lid margin with the lashes seen
+edge-on and the meibomian orifices as a regular row of pale dots just behind
+them.
+
+PICTURE 3 (lower right) — everted/oblique view showing the meibomian gland
+orifices as a line of white dots along the posterior lid margin, with the lashes
+sweeping in from the left. Together the three pictures teach the anterior/
+posterior lamella distinction of the margin, but the deck prints no words for it.
 
 
---- slide 8 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 4 — Epicanthus
+─────────────────────────────────────────────────────────────────────
+Heading only; no body text. Three photographs, two of them lettered.
+
+PICTURE 1 (left) — clinical photograph, face-on, of an INFANT with a broad flat
+nasal bridge and bilateral vertical skin folds running from the upper lid down
+over the medial canthi, covering the medial sclera and giving the appearance of
+esotropia (pseudostrabismus). Both corneal light reflexes are central.
+
+PICTURE 2, labelled "A" (upper right) — clinical photograph of a child's eyes
+with prominent bilateral epicanthal folds hiding the caruncle and medial canthus.
+
+PICTURE 3, labelled "B" (lower right) — clinical photograph of a second child's
+eyes, wider palpebral fissures, medial canthi more exposed, for comparison.
+Only the bare letters "A" and "B" are printed; the deck gives NO key saying what
+A and B are, and no classification of epicanthus types.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 5 — Lid Retraction
+─────────────────────────────────────────────────────────────────────
+Heading only; no body text.
+
+PICTURE — single large clinical photograph, face-on, of a middle-aged patient
+with marked ASYMMETRICAL lid retraction, worse on the patient's LEFT: the upper
+lid margin sits above the superior limbus so a band of white sclera shows all
+the way round the top of the cornea (scleral show), the palpebral fissure is
+widened, and the eye looks proptosed and staring. The right eye shows the same
+change to a lesser degree. No cause, no sign name and no measurement is printed
+on the slide.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 6 — Ptosis / Congenital
+─────────────────────────────────────────────────────────────────────
+Heading only ("Ptosis" on the first line, "Congenital" on the second); no body
+text. Four photographs.
+
+PICTURE 1 (upper left) — clinical photograph, head-and-shoulders, of a young
+girl with unilateral ptosis of the RIGHT upper lid; the lid margin crosses the
+upper pupil while the fellow lid sits normally.
+
+PICTURE 2 (upper right) — close photograph of a fair-haired child's eyes with
+unilateral ptosis on the patient's RIGHT, the affected upper lid low and the
+lid crease absent/poorly formed.
+
+PICTURE 3 (lower left) — close photograph of an infant, one eye with the pupil
+dilated/light-reflex prominent, showing a drooping upper lid on the patient's
+right covering the upper cornea.
+
+PICTURE 4 (lower right) — close photograph of a child's eyes in a pink-cast
+image, bilateral droop with the brows elevated by frontalis overaction.
+
+No definition, no severity grading and no amblyopia note is printed here.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 7 — [no heading printed]
+─────────────────────────────────────────────────────────────────────
+NO TITLE TEXT. The slide is a two-photograph pair only — this is the
+LEVATOR FUNCTION MEASUREMENT slide, taught entirely by picture.
+
+PICTURE (before-and-after pair, one image split in two halves) — clinical
+photographs of the same patient's eye with an examiner's thumb pressed firmly on
+the brow to block frontalis, and a transparent MILLIMETRE RULER (the word
+"METRIC" printed down its face) held vertically against the upper lid:
+  • LEFT half — the eye in DOWNGAZE / lid closed, the ruler zeroed against the
+    upper lid margin.
+  • RIGHT half — the same eye in UPGAZE, lid elevated, the excursion of the lid
+    margin read off the same ruler.
+A large white numeral "5" is printed in the lower-left corner of the picture
+(the reading being demonstrated). The slide prints NO text explaining the
+manoeuvre, no normal value, and no grading of levator function — the numbers
+only appear on the next two slides as surgical thresholds.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 8 — Levator resection
+─────────────────────────────────────────────────────────────────────
 Levator resection
-Shortening of levator complex
- 
-Indicated for any ptosis provided 
-levator
- function is at least
- 5 mm
- Amount determined by levator 
- function and severity of ptosis
 
---- slide 9 ---
+Indicated for any ptosis provided levator function is at least 5 mm
+
+PICTURE — pair of pencil/line surgical drawings inside a yellow frame, showing
+the levator resection through a skin approach: the lid everted over a Desmarres
+retractor, the levator complex grasped with a clamp and the dashed resection
+line marked, then the shortened complex re-sutured to the tarsus with three
+mattress sutures. Captions printed beneath each half of the frame:
+  "Shortening of levator complex"
+  "Amount determined by levator function and severity of ptosis"
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 9 — Frontalis brow suspension
+─────────────────────────────────────────────────────────────────────
 Frontalis brow suspension
-Attachment of tarsus to 
-frontalis
- muscle with sling
-Main indications
-  Severe ptosis with poor levator function ( 4 mm or less )
-  Marcus Gunn jaw-winking syndrome
+Main indications                                    [printed in blue]
+  · Severe ptosis with poor levator function ( 4 mm or less )
+  · Marcus Gunn jaw-winking syndrome
 
---- slide 10 ---
-Ptosis: 
-Oculomotor
- paralysis
-
---- slide 11 ---
-Ptosis
-Sympathetic paralysis (Horner Syndrome)
-
---- slide 12 ---
-Ptosis 
-Senile (
-Aponeurotic
-)
-
---- slide 13 ---
-Ptosis 
-Myogenic (Myasthenia)
-Ice Pack Test
-TensilonTest
-
---- slide 14 ---
-Ptosis 
-Mechanical
-
---- slide 15 ---
-Lagophthalmos
-Paralytic
-
---- slide 16 ---
-Lagophthalmos
-Structural
-
---- slide 17 ---
-Stye
- (
-Hordeolum
- 
-Externum
-) 
-
---- slide 18 ---
-Chalazion
-
---- slide 19 ---
-Chalazion
-Excision
-
---- slide 20 ---
-Infected 
-Chalazion
-Hordeolum
- 
-Internum
-
---- slide 21 ---
-?
-
---- slide 22 ---
-Comment on the upper lid.
-Anterior 
-Blepharitis
-Ulcerative
-
---- slide 23 ---
-Anterior 
-Blepharitis
-Seborrheic
-
---- slide 24 ---
-Madarosis
-
---- slide 25 ---
-Poliosis
-
---- slide 26 ---
-Posterior 
-Blepharitis
-Meibomian
- Gland Dysfunction
-
---- slide 27 ---
-Trichiasis
-
---- slide 28 ---
-Entropion
-Cicatricial
-
---- slide 29 ---
-Entropion
-Senile (
-Involutional
-)
-
---- slide 30 ---
-Ectropion
-Cicatricial
-
---- slide 31 ---
-Ectropion
-Paralytic
-
---- slide 32 ---
-Ectropion
-Senile (
-Involutional
-)
-
---- slide 33 ---
-Lid Swelling (Edema))
-
---- slide 34 ---
-Xanthelasma
-
---- slide 35 ---
-Echymosis
- (Black Eye)
-
---- slide 36 ---
-Herpes Zoster 
-Ophthalmicus
-Herpes Simplex
-
---- slide 37 ---
+PICTURE — pair of pencil/line surgical drawings inside a yellow frame: on the
+left, the sling material passed through stab incisions and looped through the
+tarsus with the knot being tied; on the right, the completed pentagonal /
+double-triangle sling pattern drawn in dashed lines from the lid margin up to
+the brow, with the suture bites marked. Caption printed beneath the frame:
+  "Attachment of tarsus to frontalis muscle with sling"
+The sling MATERIAL is not named anywhere on the slide.
 
 
---- slide 38 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 10 — Ptosis: Oculomotor paralysis
+─────────────────────────────────────────────────────────────────────
+Heading only; no body text. Two photographs stacked.
+
+PICTURE 1 (upper) — clinical photograph of an elderly patient in primary gaze
+with COMPLETE ptosis of the LEFT upper lid, the lid shut over the eye, while the
+right eye is open with a normal lid position.
+
+PICTURE 2 (lower) — the same patient with the ptotic LEFT lid lifted mechanically
+by the examiner's fingers, revealing the eye to be deviated OUT and DOWN with a
+visibly dilated pupil — the classic third-nerve palsy posture. No text names the
+signs; the two photographs are the teaching.
 
 
---- slide 39 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 11 — Ptosis / Sympathetic paralysis (Horner Syndrome)
+─────────────────────────────────────────────────────────────────────
+Heading only ("Ptosis" on the first line, "Sympathetic paralysis (Horner
+Syndrome)" on the second); no body text.
+
+PICTURE — single large clinical photograph, face-on, of a child: the patient's
+RIGHT upper lid is slightly lower than the left (a mild, partial ptosis, not
+covering the pupil) and the RIGHT palpebral fissure is narrowed, with the lower
+lid slightly elevated. The RIGHT iris is paler/greyer than the left — heterochromia
+— and the right pupil is the smaller of the two (miosis). None of these signs is
+named in text on the slide; the picture carries the whole teaching, including the
+heterochromia of congenital Horner.
 
 
---- slide 40 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 12 — Ptosis / Senile (Aponeurotic)
+─────────────────────────────────────────────────────────────────────
+Heading only; no body text.
+
+PICTURE — single large clinical photograph of an elderly patient's eyes showing
+BILATERAL ptosis with the features of aponeurotic dehiscence: high, deepened
+upper lid creases, very thin upper lids with the sulcus hollowed, redundant skin,
+and both lid margins low across the pupils. No mechanism, no age note and no
+surgical option is printed.
 
 
---- slide 41 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 13 — Ptosis / Myogenic (Myasthenia)
+─────────────────────────────────────────────────────────────────────
+Heading only; no body text. SIX photographs in a montage, two of which carry
+labels printed in blue directly on the image.
+
+PICTURE 1 (top left) — clinical photograph of an elderly patient with ptosis of
+the LEFT upper lid.
+PICTURE 2 (top right) — the same patient after rest / after treatment, both lids
+now symmetrical and open. The pair demonstrates VARIABILITY of the ptosis.
+
+PICTURE 3 (middle row, labelled "Ice Pack Test" in blue) — two-frame sequence:
+first a patient with the eyes closed and an ice pack in a plastic bag laid over
+the lid; then the same lid after the pack is removed, elevated.
+
+PICTURE 4 (middle/right, labelled "TensilonTest" in blue — printed solid, with no
+space between the two words) — photograph of an elderly man with severe bilateral
+ptosis, the lids almost shut.
+PICTURE 5 (bottom right, same blue-bordered block) — the same man after
+Tensilon, both lids open and the eyes visible. Before-and-after pair.
+
+PICTURE 6 (bottom left, two frames) — a woman photographed in upgaze twice,
+demonstrating FATIGABILITY: the second frame shows the lid drooping after
+sustained upgaze.
+
+Only the two test names ("Ice Pack Test", "TensilonTest") appear as text. No
+drug, no dose, no antibody test and no systemic association is printed.
 
 
---- slide 42 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 14 — Ptosis / Mechanical
+─────────────────────────────────────────────────────────────────────
+Heading only; no body text.
+
+PICTURE — single large clinical photograph of an INFANT face-on. The LEFT upper
+lid and the whole upper-outer lid/orbital region is occupied by a large, raised,
+lobulated red-purple vascular mass (capillary haemangioma appearance) with
+surface telangiectasia; the mass drags the lid down so the eye is completely
+occluded, while the right eye is normal with the lid closed in sleep. The lesion
+is NOT named on the slide, and neither amblyopia nor treatment is mentioned.
 
 
---- slide 43 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 15 — Lagophthalmos / Paralytic
+─────────────────────────────────────────────────────────────────────
+Heading only; no body text.
+
+PICTURE — single clinical photograph of an elderly woman ATTEMPTING TO CLOSE
+BOTH EYES. The right eye closes fully; on the LEFT the lids remain apart with
+the globe rolled up so only white sclera and the lower cornea show — Bell's
+phenomenon demonstrated through the open fissure. The LEFT side of the face is
+paralysed: the nasolabial fold is flattened and the mouth is pulled to the right.
+The picture is a facial (VIIth nerve) palsy; the deck does not print the nerve,
+the eponym for the up-rolling of the globe, or any exposure-keratopathy warning.
 
 
---- slide 44 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 16 — Lagophthalmos / Structural
+─────────────────────────────────────────────────────────────────────
+Heading only; no body text. Two photographs.
+
+PICTURE 1 (left) — close clinical photograph of an eye with the lids held apart
+by scarring: the lower lid margin is pulled away and downwards from the globe
+with the palpebral conjunctiva exposed and inflamed red along its whole length,
+and the lashes point away from the eye. The cornea is exposed.
+
+PICTURE 2 (right) — the same or a comparable eye photographed in ATTEMPTED
+CLOSURE: the lids will not meet, a gap remains between them along the whole
+fissure, and the lid skin is scarred/contracted. Together the pair teaches
+lagophthalmos from cicatricial shortening of the lids rather than from paralysis.
 
 
---- slide 45 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 17 — Stye (Hordeolum Externum)
+─────────────────────────────────────────────────────────────────────
+Heading only; no body text. Two photographs.
+
+PICTURE 1 (left) — clinical photograph of a young man's LEFT eye with a
+localised, red, tender swelling at the OUTER part of the UPPER lid margin,
+centred on the lash line, with a yellow pointing head at the lid margin and
+surrounding lid oedema. The lesion sits at the base of a lash — the anterior
+lamella origin is what the picture shows.
+
+PICTURE 2 (right) — closer clinical photograph of another lid with a
+pointing pustule on the margin among the lashes and a diffusely red, oedematous
+lid; the conjunctiva is injected.
+
+The deck prints NO organism, NO treatment and NO distinction in words between
+external and internal hordeolum — the distinction is carried only by the
+headings of slides 17 and 20.
 
 
---- slide 46 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 18 — Chalazion
+─────────────────────────────────────────────────────────────────────
+Heading only; no body text. FIVE photographs.
+
+PICTURE 1 (left, large) — clinical photograph of a child's LOWER lid with a
+smooth, rounded, painless-looking swelling in the middle of the lid, skin over
+it normal-coloured and not inflamed.
+
+PICTURE 2 (top middle) — UPPER lid of an adult with a firm rounded nodule in the
+upper lid, elevating the lid contour.
+
+PICTURE 3 (top right) — the lid EVERTED, showing the chalazion pointing on the
+CONJUNCTIVAL surface as a raised yellow-red lesion with a granulomatous head
+against the tarsal conjunctiva.
+
+PICTURE 4 (bottom middle) — a smaller, subtler chalazion in the upper lid of a
+child, seen only as a slight fullness of the lid contour.
+
+PICTURE 5 (bottom right) — the lower lid EVERTED with an instrument, showing the
+lesion on the tarsal conjunctival surface with fleshy granulation tissue.
+
+Both the skin-surface and the everted conjunctival appearance are shown; nothing
+about meibomian obstruction, chronicity or recurrence is printed in words.
 
 
---- slide 47 ---
-Thank You
+─────────────────────────────────────────────────────────────────────
+SLIDE 19 — Chalazion / Excision
+─────────────────────────────────────────────────────────────────────
+Heading only ("Chalazion" / "Excision"); no body text and no operative steps in
+words.
+
+PICTURE 1 (left) — operative photograph: a CHALAZION CLAMP has been applied to
+the everted lower lid, its ring encircling the lesion and its flat plate behind
+the lid; the surgeon's gloved hand holds the clamp and the lesion bulges pale
+inside the ring.
+
+PICTURE 2 (right) — operative photograph of the everted lid inside the clamp
+ring after incision, showing the yellow-white gelatinous chalazion contents
+being expressed/curetted from within the tarsus; the surrounding tarsal
+conjunctiva is red.
+
+No incision direction (vertical vs horizontal), no curettage instruction, no
+anaesthesia and no histology indication is printed.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 20 — Infected Chalazion / Hordeolum Internum
+─────────────────────────────────────────────────────────────────────
+Heading only ("Infected Chalazion" / "Hordeolum Internum"); no body text.
+
+PICTURE 1 (left) — clinical photograph of a closed UPPER lid with a large,
+tense, red-and-yellow swelling within the substance of the lid, well BEHIND the
+lash line, with a pale pointing centre; the surrounding lid skin is red and
+oedematous.
+
+PICTURE 2 (right) — clinical photograph of a LOWER lid with a yellow pointing
+abscess in the middle of the lid, surrounding lid and conjunctival injection,
+and the cornea/iris visible above. The lesion again lies deep to the margin
+rather than at the lash root.
+
+The pairing with slide 17 is what teaches the external/internal distinction; no
+words state it.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 21 — ?
+─────────────────────────────────────────────────────────────────────
+THE ENTIRE HEADING IS A SINGLE YELLOW QUESTION MARK — "?" — centred at the top
+of the black slide. There is no other typed word anywhere on it: no diagnosis,
+no options, no answer, and no answer on the slide that follows.
+
+PICTURE 1 (one large photograph, centre) — clinical photograph, warm orange
+cast, of a CLOSED eye seen slightly from the side. The UPPER lid is diffusely
+swollen, tense and shiny with a smooth red-pink flush spreading from the lid
+margin up over the whole lid and onto the brow skin; the swelling is greatest
+over the outer half. The LASHES ARE INTACT, long, clean and regular, with NO
+crusting, NO scaling and NO ulceration at their bases, and the lid margin
+itself is smooth. The lower lid and cheek are normal in colour.
+
+Coming immediately after slide 20 (Infected Chalazion / Hordeolum Internum),
+this is a quiz slide put to the class. THE DECK NEVER PRINTS THE ANSWER.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 22 — Anterior Blepharitis / Ulcerative
+─────────────────────────────────────────────────────────────────────
+Heading ("Anterior Blepharitis" / "Ulcerative") plus ONE LINE OF INVISIBLE
+TEXT. Four photographs in two rows.
+
+⚠️⚠️ INVISIBLE TEXT ON THIS SLIDE — A FOURTH KIND OF GAP, and it is neither of
+this file's two markers. The slide carries a fifth text run reading, verbatim:
+
+    "Comment on the upper lid."
+
+It is NOT cut off by the slide edge and it is NOT hidden under a picture. It is
+a text box sitting in clear space at the TOP LEFT of the slide (offset x =
+900113, y = 338138 EMU — well inside the canvas, clear of every image), whose
+font colour is set to `bg1`, the BACKGROUND COLOUR ITSELF. On this deck's black
+background that makes it black on black: it is physically present and
+completely unreadable when the slide is shown or printed. Measured two ways —
+it does not appear in the PDF render at 170 dpi, and it is the only text run in
+the whole 47-slide deck whose fill is `schemeClr val="bg1"`.
+This matters twice over: it is the ANSWER PROMPT to the bare "?" of slide 21,
+and it means a reader of the rendered slides alone would never know the
+lecturer asked a question here.
+
+PICTURE 1 (top left) — very high magnification of an UPPER lid margin. The
+margin skin is red and finely roughened, and hard, brittle, YELLOW-WHITE
+COLLARETTES encircle the bases of the lashes; several lashes are stuck together
+in clumps and a few are broken short.
+
+PICTURE 2 (top right) — clinical photograph of a whole eye in a dark-skinned
+patient, lids open. A continuous ridge of YELLOW-BROWN CRUST runs the length of
+the UPPER lid margin with the lashes emerging through it; the upper lid skin
+above is red and thickened, the lower lid skin dusky and wrinkled, and the globe
+is white with a brown iris and a clear cornea.
+
+PICTURE 3 (bottom left) — very high magnification of a deeply RED, raw lid
+margin. White flakes and scale lie among sparse, short, broken and distorted
+lashes, and the margin surface between the lash roots is irregular and
+excavated rather than smooth.
+
+PICTURE 4 (bottom right) — clinical photograph of BOTH eyes of one patient.
+Heaped yellow-white crust and scale sit on the UPPER lid margins on both sides
+and along the LEFT lower lid margin (image right); the left lashes are matted
+and reduced. The RIGHT eye (image left) is open with a brown iris and a clear
+cornea; the LEFT eye (image right) shows a dull grey-green cornea behind the
+crusted margins. The skin below both eyes is dry and scaly.
+
+Nothing about organism, chronicity or treatment is printed in words.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 23 — Anterior Blepharitis / Seborrheic
+─────────────────────────────────────────────────────────────────────
+Heading only ("Anterior Blepharitis" / "Seborrheic" — the lecturer's spelling,
+kept); no body text. Four photographs in two rows.
+
+PICTURE 1 (top left) — very high magnification of a pink, smooth lid margin.
+Soft, greasy WHITE SCALES are wrapped round the lash SHAFTS a short way up from
+their bases, sleeving them; the margin skin between the lashes is intact, NOT
+ulcerated, and the lashes themselves are long and unbroken.
+
+PICTURE 2 (top right) — very high magnification of an UPPER lid margin. The
+lash bases carry soft yellow-white greasy material and small clear droplets;
+the margin is pink and slightly thickened and the lashes are regular.
+
+PICTURE 3 (bottom left) — clinical photograph of a CLOSED eye. The upper lid is
+pink and shiny with a mauve tinge, and a line of soft YELLOW-GREEN GREASY SCALE
+lies along the lash roots the whole length of the margin. The lashes are long,
+dark and intact.
+
+PICTURE 4 (bottom right) — clinical photograph of a partly open eye. The UPPER
+lid margin is heaped with soft yellow-brown greasy crust and scale with the
+lashes stuck through it; a blue-grey cornea shows in the narrow aperture below,
+and the lower lid margin is red.
+
+⚠️ A stray white square-bracket glyph — "]" — sits at the far RIGHT EDGE of the
+slide, clear of every picture: an empty leftover text box. It carries no words
+and is NOT a caption.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 24 — Madarosis
+─────────────────────────────────────────────────────────────────────
+Heading only ("Madarosis"); no body text, no definition, no causes.
+
+PICTURE 1 (one large photograph, centre) — clinical photograph of a
+fair-skinned eye, wide open, with a large dark blue-grey iris and a clear
+cornea. BOTH LID MARGINS ARE COMPLETELY BALD: not a single lash remains on the
+upper or the lower lid. The margins themselves are pink, smooth and a little
+thickened, the surrounding lid skin is pink and unremarkable, and there is no
+crust, no scale and no ulceration. The lower lid sits normally against the
+globe.
+
+The word and the picture are the whole of the teaching; the deck names no cause
+of lash loss anywhere.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 25 — Poliosis
+─────────────────────────────────────────────────────────────────────
+Heading only ("Poliosis"); no body text.
+
+PICTURE 1 (one large photograph, centre) — clinical photograph of a
+fair-skinned eye, open, with a dark brown iris and a white sclera. The EYEBROW
+above has turned largely WHITE — a broad band of white hairs with only a few
+dark ones left at its outer end — and the UPPER LID LASHES are white-grey along
+most of the margin, with a few dark lashes remaining laterally. The lower lid
+lashes are pale as well. The lid skin and margins are pink and quiet, with no
+crusting and no swelling.
+
+Slides 24 and 25 sit side by side as the two lash abnormalities — loss and
+whitening. No cause is named for either.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 26 — Posterior Blepharitis / Meibomian Gland Dysfunction
+─────────────────────────────────────────────────────────────────────
+Heading only ("Posterior Blepharitis" / "Meibomian Gland Dysfunction"); no body
+text. SIX photographs in two rows of three — the most picture-dense slide in
+the deck so far.
+
+PICTURE 1 (top left) — high magnification of a LOWER lid margin. A row of
+small, rounded, PALE YELLOW-WHITE PLUGS caps the meibomian orifices along the
+posterior lid margin, behind the lash line; the margin is pink and the tear
+film glares white below.
+
+PICTURE 2 (top centre) — very high magnification, brown-toned, of a lid margin
+with a REGULAR ROW OF RAISED YELLOW-WHITE DOMES of inspissated secretion
+standing at the gland orifices; the lashes below are coated with yellow
+granular material, and the bulbar conjunctiva above is white with fine vessels
+crossing it.
+
+PICTURE 3 (top right) — a deeply RED, thickened lid margin with a row of pale
+creamy plugs at the orifices; the lashes stand above and the white sclera lies
+below.
+
+PICTURE 4 (bottom left) — a lid margin carrying a band of FROTHY WHITE FOAM
+lying along the tear meniscus for the whole visible length of the margin; the
+dark iris and cornea are to the right.
+
+PICTURE 5 (bottom centre) — an intensely red everted lid showing several
+rounded, creamy-white raised nodules along the margin and a paler thickened
+patch of conjunctiva between them.
+
+PICTURE 6 (bottom right) — an EXPRESSION photograph: a fine metal instrument is
+pressed against the lid margin and thick, YELLOW, TOOTHPASTE-LIKE meibomian
+secretion is emerging in worm-like strands from several orifices at once. A
+pale globe surface and a conjunctival vessel network fill the rest of the
+frame.
+
+The whole sequence — plugging, capping, foam, and expression of inspissated
+secretion — is taught by the six pictures. No treatment, no expression
+technique and no lid-hygiene instruction is written anywhere on the slide.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 27 — Trichiasis
+─────────────────────────────────────────────────────────────────────
+Heading only ("Trichiasis"); no body text, no definition, no treatment. Three
+photographs — two side by side above, one below and centred.
+
+PICTURE 1 (top left) — clinical photograph of an eye with a full, normal,
+outward-growing set of UPPER lashes, among which ONE fine dark lash has turned
+BACKWARDS and lies flat across the ocular surface, running over the white
+sclera towards the brown cornea. A small brown patch of conjunctival
+pigmentation sits nearby.
+
+PICTURE 2 (top right) — clinical photograph of a red, inflamed eye with several
+misdirected lashes turning IN towards the globe, and BRIGHT GREEN FLUORESCEIN
+pooled in the lower tear meniscus and staining the inferior cornea in a
+distinct green band. This is the only picture on the slide that shows the
+CONSEQUENCE rather than the lashes themselves.
+
+PICTURE 3 (bottom centre) — very close photograph of a green-blue iris and a
+clear cornea, with several fine, pale, misdirected LOWER-lid lashes lying up
+against the corneal surface; the lower lid margin and its skin fill the bottom
+of the frame.
+
+Nothing is printed about which lid, what causes the misdirection, or the
+distinction from entropion — although slide 28 follows immediately.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 28 — Entropion / Cicatricial
+─────────────────────────────────────────────────────────────────────
+Heading only ("Entropion" / "Cicatricial"); no body text and no other type of
+entropion named on this slide.
+
+PICTURE 1 (left) — clinical photograph of an elderly, pale-skinned eye with
+heavy redundant skin folds hanging over the lid. The UPPER LID MARGIN IS ROLLED
+INWARD: the whole lash line has been carried back against the globe so that the
+lashes point downwards and inwards and several of them lie directly on the
+blue-grey cornea. The margin itself cannot be seen because it is turned in.
+
+PICTURE 2 (right) — clinical photograph of an eye with a green-grey iris. The
+LOWER LID MARGIN IS TURNED INWARD, its lashes sweeping upwards and backwards
+against the cornea; the lower conjunctiva is red and injected and the inferior
+cornea is faintly hazy where the lashes touch it. The lid skin below is pink
+and stretched.
+
+The two panels show the SAME malposition in the upper and the lower lid. Both
+are labelled "Cicatricial" by the heading only — no scar, no conjunctival
+shortening and no cause is shown or named.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 29 — Entropion / Senile (Involutional)
+─────────────────────────────────────────────────────────────────────
+Heading only ("Entropion" / "Senile (Involutional)"); no body text, no
+mechanism, no treatment.
+
+PICTURE 1 (one large photograph, centre) — clinical photograph of a pale,
+elderly eye, wide open, with a large blue-grey iris and a clear cornea. The
+LOWER LID MARGIN IS ROLLED INWARD along its whole length: the lash line has
+disappeared from view and the lashes turn back and up against the globe. The
+lower lid skin below is loose, pink and crinkled into a horizontal fold, and
+the exposed margin is red. The UPPER lid is normal with intact outward-growing
+lashes. A bright red reflection sits at the inner canthus.
+
+Read against slide 28, the pair is cicatricial entropion then involutional
+entropion — the same lid position from two causes. The deck states the two
+names in headings and says nothing else about either.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 30 — Ectropion / Cicatricial
+─────────────────────────────────────────────────────────────────────
+Heading only ("Ectropion" / "Cicatricial"); no body text.
+
+PICTURE 1 (one large photograph, centre) — clinical photograph of an elderly
+eye with sparse dark brow hairs. The LOWER LID IS TURNED OUT AND DRAGGED DOWN
+away from the globe, so that a broad band of BRIGHT RED PALPEBRAL CONJUNCTIVA
+is exposed along the entire length of the lid; the lid is pulled downwards by
+tight, shiny, scarred skin on the cheek below it. Yellow crusts sit on that
+cheek skin, at the outer canthus and on the upper lid margin, whose lashes are
+sparse and matted. The globe is white with a blue-grey iris and a clear cornea;
+the inner end of the lower lid, where the punctum lies, is turned away from the
+globe with the rest.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 31 — Ectropion / Paralytic
+─────────────────────────────────────────────────────────────────────
+Heading only ("Ectropion" / "Paralytic"); no body text, no cause named, no
+nerve named.
+
+PICTURE 1 (one large photograph, centre) — clinical photograph of a woman's
+upper face DURING ATTEMPTED LID CLOSURE. On the LEFT (image right) the lids
+have closed completely, the lashes meeting in a neat line and the lid skin
+crumpled. On the RIGHT (image left) THE LIDS HAVE NOT CLOSED: a wide gap
+remains between them, the LOWER lid sags away from the globe with a red rim of
+exposed palpebral conjunctiva running its whole length, and THE GLOBE HAS
+ROLLED UP so that only white sclera and the lowest edge of the cornea show in
+the gap. The RIGHT brow sits lower than the left and the right forehead is
+smoother, with fewer wrinkles than the left.
+
+Three separate things are photographed here — failure of lid closure, the
+everted lower lid, and the upward rolling of the globe on attempted closure —
+and the heading names only the second. NO NAME IS PRINTED for the upward roll,
+for the lid-closure failure, or for the facial weakness that causes both.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 32 — Ectropion / Senile (Involutional)
+─────────────────────────────────────────────────────────────────────
+Heading only ("Ectropion" / "Senile (Involutional)"); no body text. Two
+photographs side by side.
+
+PICTURE 1 (left) — clinical photograph of an elderly eye with sparse white brow
+hairs and heavily wrinkled skin. The LOWER LID IS TURNED OUTWARD along its
+whole length, showing a red strip of palpebral conjunctiva below the globe; the
+lid skin is lax and folded, yellow crust sits at the outer canthus, and the
+iris is blue-grey behind a clear cornea.
+
+PICTURE 2 (right) — clinical photograph of another elderly eye with a
+hazel-blue iris. The LOWER LID IS EVERTED further: the exposed tarsal
+conjunctiva is red and, along the part that has been exposed longest, THICKENED
+AND WHITISH — a keratinised band. The lashes point down and away from the globe
+and the lid margin no longer touches it; the eye above is white and quiet.
+
+The pair shows early and long-standing eversion. The thickened white band is
+shown but not named, and nothing is printed about lid laxity, epiphora or
+surgery.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 33 — Lid Swelling (Edema))
+─────────────────────────────────────────────────────────────────────
+Heading only, and the lecturer's own typing is kept exactly: "Lid Swelling
+(Edema))" — with a DOUBLE closing bracket. No body text and no list of causes.
+
+PICTURE 1 (one large photograph, centre) — clinical photograph of both eyes of
+a fair-skinned patient. ALL FOUR LIDS ARE GROSSLY SWOLLEN: both upper lids
+balloon smoothly down over the globes and both lower lids bulge as rounded,
+tense pink cushions onto the cheeks, so that each palpebral aperture is reduced
+to a narrow slit through which a hazel iris and a little sclera show. The
+swelling is BILATERAL, SYMMETRICAL and uniform; the skin over it is smooth,
+shiny and pink-red, WITHOUT vesicles, crusting, ulceration or bruising. The
+brows and forehead are normal.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 34 — Xanthelasma
+─────────────────────────────────────────────────────────────────────
+Heading only ("Xanthelasma"); no body text, no association named, no treatment.
+
+PICTURE 1 (one large photograph, centre) — clinical photograph of an elderly
+man with heavy grey-black brows and deeply wrinkled skin, both eyes open, both
+irides dark. Flat-topped, soft, well-demarcated YELLOW-CREAM PLAQUES sit in the
+lid skin at the MEDIAL ends of the lids on BOTH SIDES — most obvious on the
+upper lid of the RIGHT eye (image left) running from the inner canthus
+outwards, with further yellow plaque in the right lower lid and matching, less
+raised, yellowish patches medially on the left upper and lower lids. The
+plaques lie IN THE SKIN, well away from the lash line, and the lid margins
+themselves are normal.
+
+The bilateral, symmetrical, medial-end distribution is the whole teaching. The
+deck prints no cause, no blood test and no operation.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 35 — Echymosis (Black Eye)
+─────────────────────────────────────────────────────────────────────
+Heading only, the lecturer's spelling kept: "Echymosis (Black Eye)". No body
+text.
+
+PICTURE 1 (one large photograph, centre) — clinical photograph of one eye of a
+fair-skinned patient with the brow above in frame. A deep PURPLE-MAROON BRUISE
+covers the lower lid and the whole area beneath the eye, spreading down onto
+the cheek and up over the upper lid to the brow; the swelling narrows the
+palpebral aperture. A short LINEAR SCAB / skin laceration lies at the outer
+canthus. Between the lids the eye is open: the bulbar conjunctiva NASALLY shows
+a flat, bright RED SUBCONJUNCTIVAL HAEMORRHAGE, and the iris is brown behind a
+clear cornea.
+
+Both the skin bruising and the subconjunctival blood are in the one picture.
+Nothing is printed about the mechanism, about examining the globe, or about
+excluding an orbital fracture.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 36 — Herpes Zoster Ophthalmicus | Herpes Simplex
+─────────────────────────────────────────────────────────────────────
+TWO HEADINGS SIDE BY SIDE on one slide, each over its own picture: "Herpes
+Zoster Ophthalmicus" on the left, "Herpes Simplex" on the right. No body text
+under either.
+
+PICTURE 1 (left, under "Herpes Zoster Ophthalmicus") — clinical photograph,
+full face, of an elderly balding man with a grey moustache. A dense crop of
+crusted lesions — black haemorrhagic scabs, dark red papules and honey-coloured
+crust — covers the RIGHT forehead (image left) from the eyebrow up into the
+hairline and scalp, AND STOPS ABRUPTLY AT THE MIDLINE: the left forehead is
+completely clear. The eruption runs down onto the RIGHT upper lid, which is
+swollen, red and crusted with the lashes matted and the aperture narrowed, and
+there are further crusted lesions at the inner canthus and on the SIDE OF THE
+NOSE on that side. The right eye is red; the left eye and left side of the face
+are entirely normal.
+
+PICTURE 2 (right, under "Herpes Simplex") — close clinical photograph of the
+lid skin of one eye. A tight cluster of small, dome-shaped, clear-to-yellow
+VESICLES on a red base sits on the lid skin, some of them grouped right at the
+lash line among the lashes and the rest spreading in a crop onto the adjacent
+skin; several have turned yellow and are beginning to crust. The eye between
+the lids is open, showing a grey-blue iris and a white sclera; the lid margin
+itself is red and a little swollen.
+
+The dermatomal distribution stopping at the midline and the nose involvement
+are both photographed on the left; neither is named, and no eponymous sign, no
+antiviral and no dose is printed anywhere on the slide.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 37 — [no heading printed]
+─────────────────────────────────────────────────────────────────────
+⚠️ FROM SLIDE 37 THE DECK STOPS TYPING. Slides 37 to 46 carry NOT ONE TYPED
+WORD between them — no heading, no caption, no label, no arrow. Measured on the
+deck's own XML: `slide37.xml` through `slide46.xml` contain ZERO `<a:t>` runs
+each (the whole 47-slide deck holds 170 words of text, and slides 1–36 plus the
+closing slide account for every one of them). The last ten teaching slides are
+photographs alone, so every diagnosis in this final run is by picture only and
+NO NAME FOR ANY OF THEM COMES FROM THIS DECK.
+
+One photograph, centred on the black slide.
+
+PICTURE 1 — clinical photograph, close up, of ONE EYE of an INFANT (soft
+unlined skin, fine downy brow, plump cheek). Read from the enlarged
+single-slide render and again from a 300 dpi crop of the eye. The UPPER LID is
+bulky and full and carries a deep, dusky BLUE-PURPLE discolouration that
+spreads from the inner end of the lid outwards across the whole upper lid and
+up towards the brow, deepest just above the lash line; the lid skin over it is
+smooth and stretched, not scaly and not crusted. The lid hangs low and the
+palpebral aperture is reduced to a narrow slit. The LASHES ARE INTACT, regular
+and normally directed, and the lid margin itself is smooth — the lesion is in
+the lid, not on the margin. Between the lids the globe shows pale blue-white
+sclera nasally, a large dark iris and a clear cornea with a bright light
+reflex. The LOWER lid and the cheek are normal in colour and not swollen.
+
+A deep bluish lid mass in an infant dropping the lid over the pupil is the
+whole of it. Nothing is named, no age is given, no treatment appears, and the
+word amblyopia is nowhere on the slide.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 38 — [no heading printed]
+─────────────────────────────────────────────────────────────────────
+No typed word (zero text runs). TWO photographs butted edge to edge into one
+horizontal strip across the middle of the slide, with a THIN YELLOW RULE drawn
+along the TOP EDGE of the strip — the only non-photographic mark on the slide.
+(The same yellow rule reappears on slide 43.)
+
+PICTURE 1 (left half) — very high magnification of a LID MARGIN in a pale
+patient. A pale pink, LOBULATED, CAULIFLOWER-SURFACED growth sits ON THE MARGIN
+among the lash roots, with lashes emerging from around and through it; a
+second, smaller, PEDUNCULATED nodule with the same mulberry surface hangs from
+the skin just below it on a narrow stalk. The surrounding lid skin is studded
+with fine white-yellow dots. The lashes are present and not lost. Beyond the
+margin lies a dark shadowed slit of palpebral aperture; the crop is too tight
+to say which lid with certainty, and it is not recorded here.
+
+PICTURE 2 (right half) — very high magnification of a LID MARGIN with dark,
+dense lashes sweeping up and out of frame. A raised, pale grey-pink, WARTY mass
+with a granular, papillomatous, glistening surface occupies the margin and the
+lash roots along its whole visible length; fine black specks (retained plugs or
+debris) sit at its near edge and several lashes emerge distorted through it.
+The margin beside it is pink and thickened; below the margin a smooth,
+out-of-focus white surface fills the lower corner.
+
+Both panels show a growth ARISING FROM THE LID MARGIN among the lashes rather
+than a lesion in the lid skin. Nothing is named and no treatment is printed.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 39 — [no heading printed]
+─────────────────────────────────────────────────────────────────────
+No typed word (zero text runs). TWO photographs butted edge to edge into one
+horizontal strip; no yellow rule on this one.
+
+PICTURE 1 (left half) — clinical photograph of the FACE of an INFANT, both eyes
+OPEN, both irides blue-grey, nose and philtrum in frame, pale cream background.
+The LEFT UPPER LID (image right) carries a smooth, raised, PINK-RED swelling
+over its OUTER HALF which lifts the lid contour and slightly narrows that
+palpebral aperture; the skin over it is stretched and shiny. The RIGHT eye
+(image left) is entirely normal — normal lid contour, full aperture, normal
+lashes. Both LOWER lids are normal. The lesion is small, and the point of the
+picture is how mild one of these can look.
+
+PICTURE 2 (right half) — very close clinical photograph of a raised, bright
+RED, LOBULATED mass with a moist, glistening, STRAWBERRY-LIKE surface sitting
+on pale infant skin. Smaller satellite red papules and short red streaks
+surround it, and a white cloth or drape lies across the top-right corner. The
+frame is too tight to include the eye at all, so this panel teaches the SURFACE
+of the lesion, not its position.
+
+Mild-on-a-face beside close-up-of-the-surface is the pairing. No name, no
+natural history, no treatment.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 40 — [no heading printed]
+─────────────────────────────────────────────────────────────────────
+⚠️⚠️ THIS SLIDE IS SLIDE 14 WITH THE TITLE TAKEN OFF. Slide 14 is headed
+"Ptosis / Mechanical" and carries this same photograph, smaller, below the
+heading; slide 40 shows THE SAME PHOTOGRAPH enlarged to fill the slide, with
+no heading at all. The teaching is not repeated here — see the SLIDE 14 block
+for the picture as it was first read.
+
+Measured, because two instruments disagree: the two slides reference DIFFERENT
+media files (`image34.png` on slide 14, `image115.jpeg` on slide 40) and their
+md5 sums differ, so a byte- or hash-level sweep reports no duplication at all.
+A 16×16 grey average-hash over all 86 pictures in the deck puts the pair at a
+Hamming distance of 2 out of 256, and it is THE ONLY PAIR in the whole deck
+under a distance of 25 — i.e. no other slide in these 47 repeats a picture.
+THE SAME PHOTOGRAPH RE-ENCODED DEFEATS A HASH CHECK; only looking caught it.
+
+PICTURE 1 — as slide 14: infant face-on, lying down, white clothing at the
+bottom-left corner, both eyes closed; the LEFT upper lid (image right) replaced
+by a large, smooth, tense, dome-shaped violet-blue swelling with bright red
+branching telangiectatic streaks over its outer surface, bulging forwards and
+downwards, completely occluding that palpebral aperture and reaching out to the
+temple and up to the brow; the RIGHT eye (image left) closed normally with
+normal lid and lashes. Nothing is added, moved or relabelled. Enlarging it is
+the only change.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 41 — [no heading printed]
+─────────────────────────────────────────────────────────────────────
+No typed word (zero text runs). ONE photograph, portrait format, centred.
+
+PICTURE 1 — clinical photograph, FULL FACE, of a young adult woman with dark
+curly hair, dark brows, looking straight at the camera, both eyes open, both
+irides dark brown, wearing a blue collar. A confluent, sharply demarcated,
+RAISED RED-PINK ERUPTION covers BOTH CHEEKS and the sides of the nose and joins
+across the bridge of the nose. It is much heavier on HER LEFT side (image
+right), where a brawny, swollen, deep-red plaque runs from the mid-cheek UP
+OVER THE LOWER LID and the outer canthus onto the lower part of the upper lid,
+narrowing that palpebral aperture and lifting the lid margin; its outer border
+is abruptly raised against normal skin at the temple and along the jaw. On HER
+RIGHT (image left) the patch is flatter and paler pink, covering the cheek and
+reaching the lower lid. A few small papules sit within the redness on the left
+cheek and beside the mouth. The FOREHEAD, CHIN and UPPER LIP ARE SPARED. Both
+globes are white and the eyes themselves look uninflamed.
+
+Both cheeks joined across the nose, forehead and chin spared, spreading onto
+the lids — that distribution is the whole picture. The slide does not name the
+eruption, does not say whether it is infective or inflammatory, gives no
+organism and prints no treatment.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 42 — [no heading printed]
+─────────────────────────────────────────────────────────────────────
+No typed word (zero text runs). FOUR photographs in a 2×2 arrangement on the
+black slide, none of them captioned, numbered, lettered or arrowed.
+
+PICTURE 1 (top left) — clinical photograph of one eye of an ELDERLY, fair,
+sun-damaged patient, lids open, blue-grey iris, a ring-shaped photographic
+light reflex on the cornea. On the LOWER LID, in the skin JUST BELOW the lash
+line and lateral to the mid-point, is a shallow ULCER with a RAISED, ROLLED,
+PEARLY-PINK EDGE and a crusted, granular, blood-stained floor. A second,
+smaller, pink, pearly nodule sits at the inner end of the same lower lid near
+the canthus. The lashes over the ulcer are thinned but still present, and the
+lid margin itself still looks intact — the lesion is in the skin, not on the
+margin.
+
+PICTURE 2 (top right) — very high magnification of a LOWER LID MARGIN with the
+globe above: the lower limbus, the edge of a dark iris and white bulbar
+conjunctiva carrying fine red vessels fill the top of the frame. The margin is
+red, thickened and irregular, and a raised, pale, glistening, ROLLED-EDGED
+NODULE with a shallow crusted centre sits ON THE MARGIN towards the image
+right. THE LASHES ARE ABSENT over the lesion; only a few remain to its left.
+The lid skin below is dry and finely wrinkled. The lid is NOT everted — this is
+the margin seen face-on with the eye looking up.
+
+PICTURE 3 (bottom left) — clinical photograph of one eye of an elderly man with
+a grey-white brow, eye open, blue iris. A raised, pale-yellow, WAXY,
+TRANSLUCENT-LOOKING NODULE about the size of a large pea sits in the skin of
+the LOWER LID well below the lash line, with a crusted, slightly depressed
+centre and fine vessels crossing its surface. The surrounding lower-lid skin is
+pale and deeply wrinkled. The lid margin and the lashes above the lesion are
+intact.
+
+PICTURE 4 (bottom right) — very high magnification, globe again above: lower
+limbus, dark cornea and white sclera with red vessels. The LOWER LID MARGIN is
+raw, red and ULCERATED along its whole visible length, its surface fleshy, wet
+and studded with small vascular nodules; the grey line and the row of meibomian
+orifices cannot be made out, and the lashes are gone from this whole stretch of
+margin.
+
+All four are LOWER-LID lesions in old, sun-damaged skin, and the set contrasts
+lesions sitting IN THE SKIN (pictures 1 and 3) with lesions that have taken the
+MARGIN AND THE LASHES (pictures 2 and 4). Not one carries a caption, an arrow,
+an age or a diagnosis; the deck prints no name, no biopsy rule and no treatment
+here.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 43 — [no heading printed]
+─────────────────────────────────────────────────────────────────────
+No typed word (zero text runs). TWO photographs butted edge to edge into one
+horizontal strip, with the SAME THIN YELLOW RULE along the top edge of the
+strip that slide 38 has.
+
+PICTURE 1 (left half) — read from a 300 dpi crop, because the contact-sheet
+cell could not resolve the lesion's edge. Clinical photograph of one eye of an
+elderly patient with heavy grey-black brow hair and thin, flushed, wrinkled
+skin. A large, rounded, FLESHY NODULE with a RAISED ROLLED EDGE and a central
+crusted, blood-stained, ULCERATED CRATER stands well proud of the skin at the
+canthal end of the lids on the IMAGE-RIGHT side, arising from the lid margins
+and obliterating that end of the palpebral fissure. A second, smaller, smooth
+pink nodule lies further out on the skin beyond it. What remains of the fissure
+shows a dark brown iris with a large, irregular pupil. The lashes are GONE over
+the tumour; sparse lashes remain along the other half of both lids. ⚠️ The crop
+is too tight to fix the side of the face, so WHICH CANTHUS THIS IS, IS NOT
+RECORDED — the frame shows neither nose nor the opposite eye.
+
+PICTURE 2 (right half) — clinical photograph of one eye of an elderly, fair,
+freckled patient with a bright BLUE iris and a clear cornea, the eye wide open,
+a sparse grey brow above. An ULCERATED, CRUSTED lesion with a raised, thickened
+PALE ROLLED MARGIN and a wet, yellow-crusted floor occupies the canthus at the
+IMAGE-LEFT together with the inner ends of both lids; yellow crust and
+discharge run from it a short way along the lower lid margin. The opposite
+corner of the fissure is in frame at the image right with the skin creases
+radiating outwards from it, which makes THE LESION'S CORNER THE MEDIAL CANTHUS.
+The lid margins away from the lesion are intact with lashes present. A small
+brown mole sits on the cheek below and to the right.
+
+A destructive, rolled-edged, ulcerating growth taking a canthus is what both
+panels show. No name, no side, no duration, no management.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 44 — [no heading printed]
+─────────────────────────────────────────────────────────────────────
+No typed word (zero text runs). ONE photograph filling almost the whole slide —
+the largest single picture in the deck.
+
+PICTURE 1 — very close clinical photograph of one eye of an elderly patient;
+the skin all round is thin, red and deeply wrinkled and the brow hairs are
+sparse and grey-black. A large, ULCERATED, BLEEDING MASS arises from the UPPER
+LID MARGIN and hangs DOWN over the globe. Its surface is heaped and pale
+yellow-white, pitted with dark red haemorrhagic craters and topped with
+yellow-brown crust. Its base has DESTROYED the outer part of the upper lid
+margin, where THE LASHES ARE COMPLETELY GONE; a few matted lashes with yellow
+crust survive at the inner end. Fresh blood is smeared over the lower lid
+lashes and down onto the skin below. Of the palpebral aperture only a crescent
+of dark cornea and iris survives at the inner end — the mass covers the rest.
+The LOWER lid margin is red and notched but its lashes are present.
+
+Destruction of the lid margin with total loss of lashes over the tumour is what
+this picture teaches, and it teaches it in silence: no caption, no name, no
+staging, and no word about biopsy, excision or reconstruction.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 45 — [no heading printed]
+─────────────────────────────────────────────────────────────────────
+No typed word (zero text runs). TWO photographs butted edge to edge into one
+horizontal strip; no yellow rule on this one.
+
+PICTURE 1 (left half) — read from a 300 dpi crop. Very high magnification of a
+LID MARGIN in a patient whose lashes are WHITE-BLONDE and glassy. A
+well-demarcated, roughly WEDGE-SHAPED, flat-to-slightly-raised
+SLATE-BLUE / BLUE-BLACK PIGMENTED PATCH sits ON THE MARGIN at the lash roots,
+its pigment finely speckled and its border sharply cut; it reaches the very
+edge of the margin and abuts the conjunctiva, which is flushed pink for a short
+way beside it. THE LASHES OVER AND AROUND IT ARE INTACT and normally directed —
+no lash is lost and none is distorted. Beyond the margin lies pale bulbar
+conjunctiva carrying fine branching RED VESSELS. ⚠️ The photograph is rotated
+and cropped so tightly that WHICH LID THIS IS CANNOT BE FIXED, and it is not
+recorded here.
+
+PICTURE 2 (right half) — high magnification of a LOWER LID MARGIN: the inferior
+limbus, a dark cornea and white sclera with red vessels occupy the top of the
+frame, and dark lashes run downwards below, which is what fixes it as the lower
+lid. A raised, DOME-SHAPED, DARK BROWN-BLACK PIGMENTED NODULE sits ON THE
+MARGIN at the lash line, glistening, with a bright specular highlight on its
+crest and a scatter of coarser black pigment specks over its upper surface. The
+lashes emerge around it and are still present. The lid margin immediately
+beside the nodule is red and slightly thickened, and the conjunctiva above is
+injected.
+
+Flat and pigmented beside raised and pigmented, both ON the margin, both with
+the lashes preserved. Neither is named. Nothing is printed about pigment,
+growth, ulceration, or when a pigmented lid lesion should be biopsied.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 46 — [no heading printed]
+─────────────────────────────────────────────────────────────────────
+No typed word (zero text runs). ONE photograph filling most of the slide — the
+LAST PICTURE IN THE DECK.
+
+PICTURE 1 — read from a 300 dpi crop. High-magnification clinical photograph of
+one eye of an ELDERLY patient, taken obliquely. The skin all round is thin,
+red, deeply wrinkled and scattered with small white-yellow flecks; the brow
+above is dark and coarse. THE EYE IS CLOSED — the two lid margins are apposed
+and the long dark lashes of the lower lid run as a dense fringe across the
+middle of the frame. At ONE END of the closed margins, where the upper and
+lower lids converge, sits a raised, NODULAR, BLUE-BLACK / SLATE PIGMENTED
+LESION with an irregular, notched outline; its upper part carries a grey-white
+KERATOTIC, CRUSTED plaque and glistening white flecks, and its lower part is
+smooth, dark and glossy. It has taken the lid margin at that corner — THE
+LASHES ARE ABSENT over it, while the lashes along the rest of the lower lid are
+intact right up to its edge. A small yellow crust sits on the margin at the
+opposite end. ⚠️ The frame contains neither nose nor the second eye, so WHICH
+CANTHUS THIS IS, IS NOT RECORDED.
+
+A pigmented, irregular, crusted, margin-destroying lesion with lash loss in old
+skin, and no word anywhere on the slide: no name, no rule for reading pigment,
+no management. This is where the teaching stops.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 47 — Thank You
+─────────────────────────────────────────────────────────────────────
+Closing slide. The only text on it is:
+
+    Thank You
+
+set in the deck's yellow display face, low and right of centre on the black
+slide. NO PICTURE: `slide47.xml` holds no `<p:pic>` element and its
+relationship file lists no media at all — the only slide besides the title
+slide with no image on it.
+
+No summary, no take-home points, no reading list, no references, no
+acknowledgements, no contact details and no date.
+
+
+═════════════════════════════════════════════════════════════════════
+NOT COVERED ANYWHERE IN THIS DECK
+═════════════════════════════════════════════════════════════════════
+⚠️ SCOPE: every line below is about THIS DECK ONLY — `L5) Eyelid disease.pptx`,
+47 slides. It is NOT a claim about the ophthalmology module. Another deck, the
+textbook or a question bank may well teach any of it. Quote this list as "not
+in L5", never as "not taught".
+
+⚠️ HOW IT WAS MEASURED, and why the method matters: a negatives list MATCHES
+ITSELF, so grepping the finished file for "term X is absent" returns a hit
+against this very list. Two measurements were used, neither of which can do
+that:
+  (1) THE DECK'S OWN TYPED TEXT, pulled from `ppt/slides/slide1..47.xml` — the
+      union of every `<a:t>` run in all 47 slides, 170 words in total. This is
+      the whole of what the lecturer typed, including the black-on-black run on
+      slide 22, and it is independent of this file.
+  (2) THE SLIDE BLOCKS OF THIS FILE ONLY — SLIDE 1 down to the end of SLIDE 47,
+      excluding the header and excluding this closing list. That second pass is
+      what catches wording printed INSIDE a picture, which never reaches the
+      XML (the slide-2 anatomy diagram's labels, for instance, are real deck
+      content and are recorded in that block; "Whitnall's ligament" is there).
+Nothing is listed below that was not looked for both ways.
+
+⚠️ THE SINGLE FACT THAT EXPLAINS MOST OF THIS LIST: SLIDES 37–46 CONTAIN NO
+TEXT AT ALL — ten consecutive slides, zero `<a:t>` runs each, 17 photographs
+between them. Every lid tumour in this deck is in those ten slides. So the
+tumour teaching is entirely pictorial and carries no names, no captions, no
+arrows and no letters.
+
+NOT IN THIS DECK — measurements and drills
+  • MRD / margin–reflex distance: absent. "MRD", "margin reflex" and even
+    "reflex" return ZERO in the deck's typed text. Ptosis is never quantified
+    by lid position anywhere in the 47 slides.
+  • The ONLY numbers in the entire deck are "5" and "4" — measured directly:
+    the digits in all 170 typed words are exactly ["5","4"], both on slides 8
+    and 9, and both are LEVATOR FUNCTION ("at least 5 mm"; "4 mm or less").
+  • HOW levator function is measured: absent. "levator" occurs 5 times, ALL of
+    them on slides 8–9, and always as the criterion for an operation — never as
+    a technique. No ruler, no brow fixation, no "excursion", no normal value.
+  • A ptosis severity grading: absent. "Severe" appears once (slide 9,
+    "Severe ptosis"); "mild", "moderate", "grade" and "classification" return
+    zero. Slide 4 shows two epicanthus pictures lettered A and B with no
+    classification of epicanthus types printed.
+
+NOT IN THIS DECK — named operations and their indications
+  • The deck names exactly THREE operations in 47 slides: "Levator resection"
+    (slide 8), "Frontalis brow suspension" (slide 9) and "Chalazion / Excision"
+    (slide 19). Slides 8 and 9 are also the ONLY two slides in the deck with
+    body text under the heading.
+  • Absent: Fasanella–Servat, Müller's muscle resection, Everbusch, Whitnall
+    sling. (Note the distinction — "Whitnall's ligament" IS printed, as a label
+    on the slide-2 anatomy diagram; the operation is not.)
+  • Absent for ENTROPION and ECTROPION, both of which get three slides each of
+    named types (28–29, 30–32): no operation whatever. Wies, Quickert, Hotz,
+    Jones, lateral tarsal strip, medial conjunctivoplasty, retractor repair —
+    all zero in the typed text and zero in the slide blocks.
+  • Absent for TRICHIASIS (slide 27, headed): "epilation", "electrolysis",
+    "cryo" and "radiofrequency" all return zero.
+  • Absent for LAGOPHTHALMOS (slides 15–16): "tarsorrhaph" returns zero.
+  • Absent for lid RECONSTRUCTION: "graft", "flap", "reconstruc", "Hughes",
+    "Cutler", "Tenzel" and "Mustard(é)" all return zero IN THE DECK'S TYPED
+    TEXT — although slide 44 photographs a tumour that has destroyed most of an
+    upper lid margin. (In the slide blocks "reconstruc" returns 1: the SLIDE 44
+    block's own sentence recording the absence. Counted, not overlooked.)
+
+NOT IN THIS DECK — lid malignancy
+  • NOT ONE TUMOUR IS NAMED. "basal", "squamous", "sebaceous", "melanoma",
+    "carcinoma", "rodent", "papillom", "mollusc", "angioma", "naev"/"nev",
+    "tumour", "tumor", "malign" and "benign" ALL return zero across the deck's
+    170 typed words. XANTHELASMA (slide 34) is the only lid lesion named in the
+    whole back half of the deck.
+  • No biopsy rule of any kind: "biops" returns zero IN THE DECK'S TYPED TEXT.
+    No incisional-versus-excisional guidance, no margin clearance, no frozen
+    section, no Mohs. (In the slide blocks "biops" returns 3 — all three are
+    this file's own sentences recording the absence, in the SLIDE 42, 44 and 45
+    blocks. Counted, not overlooked.)
+  • No staging or grading: "TNM", "stage", "grade" return zero. No lymph node,
+    no metastasis, no recurrence rate ("node", "lymph", "metasta" = zero).
+  • No malignancy warning signs are written out: "pearl", "indurat", "fixed",
+    "telangiect" and "Hutchinson" return zero in the typed text. Several of
+    those features are PHOTOGRAPHED (rolled pearly edges on slides 42 and 43,
+    lash loss on slides 42, 43, 44 and 46, the nose-tip involvement of herpes
+    zoster on slide 36) — photographed, never named.
+
+NOT IN THIS DECK — drugs
+  • NO DRUG IS NAMED ANYWHERE IN THE 47 SLIDES, and no dose, strength, route or
+    duration is printed. Zero hits for antibiotic, steroid, tetracycline,
+    doxycycline, azithromycin, aciclovir/acyclovir, propranolol, ointment,
+    drop, "mg" and "%".
+  • Consequences worth quoting: the herpes zoster / herpes simplex slide (36)
+    prints no antiviral; the three blepharitis slides (22, 23, 26) print no
+    antibiotic and NO LID-HYGIENE INSTRUCTION ("hygiene" appears once in the
+    slide blocks, and only as the SLIDE 26 block recording its absence); the
+    vascular-lesion slides (14, 37, 39, 40) print no propranolol and no
+    steroid.
+
+NOT IN THIS DECK — eponyms, tests and signs
+  • Named IN the deck, for contrast: Marcus Gunn jaw-winking syndrome (slide
+    9), Horner Syndrome (slide 11), the Ice Pack Test and "TensilonTest"
+    (slide 13, set solid).
+  • ABSENT: "Bell" — zero hits in the whole typed text. That is worth stating
+    precisely because slide 15 is headed "Lagophthalmos / Paralytic": neither
+    Bell's phenomenon nor Bell's palsy is named on it.
+  • ABSENT: Hutchinson's sign, Herbert's pits, Arlt's line — zero each.
+  • ABSENT: the glands of ZEIS and MOLL — zero hits in the deck's typed text
+    AND zero in every slide block, including the slide-2 diagram's label list
+    and the slide-3 lid-margin picture. The deck heads slide 17 "Stye
+    (Hordeolum Externum)" and slide 20 "Infected Chalazion / Hordeolum
+    Internum" without ever naming the gland behind either. MEIBOMIAN is named
+    (slide 26 heading, and the meibomian orifices are visible on slide 3).
+
+NOT IN THIS DECK — conditions absent altogether
+  • Distichiasis, epiblepharon, blepharophimosis, blepharochalasis,
+    dermatochalasis, lid coloboma, ankyloblepharon, cryptophthalmos: zero hits
+    each, in the typed text and in the slide blocks.
+  • Preseptal and orbital cellulitis: "cellulit", "preseptal" and "orbital" all
+    zero IN THE DECK'S TYPED TEXT — the deck has a "Lid Swelling (Edema))" slide
+    (33, the doubled
+    bracket is the lecturer's) and never mentions either.
+  • THYROID EYE DISEASE: "thyroid", "Graves" and "dysthyroid" are zero — and
+    slide 5 IS HEADED "Lid Retraction", so the deck shows lid retraction and
+    names no cause for it at all.
+  • Demodex, Staphylococcus, trachoma: zero each, across three blepharitis
+    slides and a cicatricial-entropion slide.
+
+NOT IN THIS DECK — clinical framing
+  • No visual consequence is ever stated: "vision", "acuity" and "field" all
+    return zero. AMBLYOPIA is named nowhere — the THREE hits for "amblyop" in
+    the slide blocks are all this file's own notes recording its absence, in
+    the SLIDE 6, SLIDE 14 and SLIDE 37 blocks. This matters because three
+    separate slides (14, 37 and 40) photograph an infant lid mass occluding the
+    pupil.
+  • No lacrimal consequence: "punctum", "lacrimal", "epiphora" and "watering"
+    return zero IN THE DECK'S TYPED TEXT — across three ectropion slides. (The
+    single block hit for each of the first three is the SLIDE 32 block's own
+    sentence recording the absence.)
+  • No history-taking, no differential, no investigation: "history", "symptom",
+    "complain", "differential", "investig", "duration", "month", "year",
+    "week" and "day" all zero in the deck's typed text. THE DECK CAPTIONS NO
+    PATIENT: not one of the 86 photographs is given an age, a sex, a side (R/L)
+    or a duration by the slide. (Where a block below says "elderly" or "an
+    infant", that is this file reading the photograph, not the deck saying so.)
+  • No management line of ANY kind for: epicanthus, lid retraction, madarosis,
+    poliosis, lid swelling, xanthelasma, ecchymosis, herpes zoster, herpes
+    simplex, or any of the ten silent tumour slides.
+
+⚠️ ONE PICTURE IS PRINTED TWICE. Slide 40 is the photograph from slide 14
+("Ptosis / Mechanical") with the heading removed and the image enlarged. It is
+the ONLY repeat in the deck: a 16×16 grey average-hash over all 86 pictures
+puts that pair at a Hamming distance of 2/256 and finds NO OTHER PAIR under a
+distance of 25. The two slides reference different media files (`image34.png`
+and `image115.jpeg`) with different md5 sums, so a byte- or hash-level sweep
+reports zero duplication — THE SAME PHOTOGRAPH RE-ENCODED DEFEATS A HASH CHECK.
+
+⚠️ CORRECTED MEASUREMENTS, for the header's opening paragraph. Counted from the
+unzipped `.pptx` on 2026-08-24: the deck holds 86 PICTURES, not 127. `ppt/media`
+contains 126 files, but 40 of them are `.wdp` sidecars PowerPoint writes beside
+images that carry a picture effect, not pictures in their own right; 126 − 40 =
+86, which matches the `<p:pic>` count of 86 exactly and matches the 86 media
+references across the 47 slides. The typed text is 170 WORDS, not ~365. So the
+real ratio is 3.6 words and 1.8 pictures a slide — the header's conclusion
+("THE PICTURES ARE THE LECTURE") holds, and holds harder than its numbers said.
