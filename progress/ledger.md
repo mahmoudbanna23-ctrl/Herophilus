@@ -10337,3 +10337,53 @@ hard kill.** Against the 2026-08-24 ENT experience, where five agents died on tr
 VALIDATING BEFORE IT IS REWRITTEN.** Three of the seven were **complete** and their status messages
 never said so — one had reported *"Now appending slides 12 onward"* and had in fact written 20.
 **The status message is a stale snapshot; the file is the truth.**
+
+### ⚠️⚠️ FOUR CORRECTIONS TO THE CONTACT-SHEET METHOD, ALL FROM ONE DECK (`L6) Conjunctiva`, 66 slides)
+
+The four-up contact sheet at 110 dpi was carried over from ENT and treated as *the* way
+to read a blind deck. It is the right **index** and it is not always the right **reading
+surface**, and three other faults sat underneath that.
+
+1. **⚠️⚠️ "IGNORE `raw/`" WAS WRONG ADVICE, AND IT WAS IN EVERY BRIEF.** At ~760 px a
+   2×2 cell cannot resolve the distinctions a picture deck turns on — Trantas dots
+   against ordinary limbal thickening, the margin of a corneal plaque, the foam texture
+   of a Bitôt spot. The agent used the sheets as an index and then **cropped and
+   upscaled specific regions of the individual `raw/s-NN.png` renders**, and said
+   plainly that obeying the instruction would have cost real content. **The sheet finds
+   the slide; the single-slide render reads it.** Two other agents did the same thing
+   unprompted (`L9` re-rendered 15 slides at 1100 px, `L1,2` cropped five).
+
+2. **⚠️ A SLIDE CAN BE AN EXACT REPEAT OF AN EARLIER ONE, AND ONLY PIXELS CATCH IT.**
+   `L6` slide **52** is slide 50's photograph with the title removed — mean absolute
+   difference **69**, non-zero only because it is rescaled and shifted — and slide
+   **61** is byte-for-byte identical to slide 59. Both were recorded as repeats rather
+   than described again as new teaching. **A transcription that re-describes a repeat
+   invents a second teaching point that the lecturer never made.**
+
+3. **⚠️ A THIRD GAP TYPE: IMAGE OVERFLOW.** The two recorded kinds are
+   `[text cut off in the original]` (text past the slide edge) and
+   `[obscured by the image]` (text under an overlaid picture). `L6` slides 55 and 56
+   have an **image** running off the slide edge — panel B of 55 is almost entirely
+   outside the slide. That is neither, and forcing it into either would have been
+   false. Recorded as image overflow in its own words.
+
+4. **⚠️⚠️ A NEGATIVES LIST POISONS ITS OWN VERIFICATION.** Grepping the finished file
+   to check a "term X is absent" claim returns a hit **against the negatives list
+   itself**. Every count must be taken over the SLIDE BLOCKS ONLY, with the closing
+   list excluded — and the file must say that is what was done, or the next reader
+   re-runs the grep and reaches the opposite conclusion. **This is the same shape as
+   the ENT dead-id check that had to become a delta rather than an absolute: an
+   instrument that measures a file it is written into must exclude itself.**
+
+**And the finding that makes `op-conj` expensive:** apart from the author's credentials
+on slide 1, **no slide in `L6` carries a sentence — 29 titles, 37 untitled slides, 64
+pictures, zero bullets.** Not one organism is named anywhere in the deck (Staph,
+Strept, Neisseria, Haemophilus, Koch-Weeks, Moraxella, adenovirus, Herpes: all zero),
+no grading system, no investigation, no drug, no dose, and no cause for pterygium, the
+allergic slides, symblepharon or subconjunctival haemorrhage. **The eponymous signs are
+photographed and never named:** `Trantas` returns zero while the chalky limbal dots
+occupy four slides, one with an arrow pointing at them; `Herbert`, `Arlt` and `shield`
+likewise zero. **Bitôt Spot is the deck's only printed eponym.** Grade Gain devotes
+**65 questions** to this organ, so the book chapter — ch.6, printed 82–95, which does
+carry the WHO TF/TI/TS/TT/CO grades and the SAFE strategy — is the working source, per
+the user's 2026-08-18 ruling that the book is the module's main reference.

@@ -1,46 +1,701 @@
-SOURCE: Semester 8\Opthalmo\Theoritical\PPT\L21) Optic Nerve.pdf
+L21) Optic Nerve.pdf — "Optic Nerve",
+Ashraf Saad Galal, Professor of Ophthalmology, Alexandria University
+==========================================
+20 slides. READ VISUALLY 2026-08-24 and cached here.
 
- Optic Nerve
+⚠️ THIS DECK IS ALMOST ENTIRELY IMAGE-ONLY AND MUST NOT BE RE-READ FROM ITS
+TEXT LAYER. The previously cached text ran to 615 characters — headings and
+almost nothing else, with 90 % of the slides blank. It was rendered at 110 dpi
+into 5 four-up contact sheets and read as images. A `pdftotext` pass will
+return the six headings and lose the entire lecture.
 
-   Ashraf Saad Galal
+⚠️ THE PICTURES ARE THE LECTURE, AND THE DIFFERENTIAL IS TAUGHT AS FUNDUS
+PHOTOGRAPHS. Of 20 slides, exactly ONE (slide 3) is a typed bullet list and TWO
+(slides 4 and 8) are PHOTOGRAPHS OF THE LECTURER'S OWN HANDWRITTEN NOTEBOOK
+PAGES — those three carry every word of prose in the deck. The other 17 are
+fundus photographs, clinical photographs, one visual-field printout and one
+line diagram. Every one is described below: disc colour, margins, cup, vessels
+and haemorrhages, and which heading it sits under.
+
+⚠️ SIX SLIDES CARRY NO HEADING AT ALL — 4, 8, 11, 12, 13, 15, 16, 17, 18 and 19
+print a picture and nothing else. Where a picture-only slide continues the
+previous slide's heading that is stated in its block; where it does not, the
+block says so rather than inventing one.
+
+SECTION MAP (slide numbers read off the burned-in numbering, not computed):
+  • Slide 1      — Title
+  • Slide 2      — Normal Optic Disc (the baseline photograph)
+  • Slide 3      — "Manifestatins of Optic Nerve Dysfunction" (the only typed
+                   list in the deck)
+  • Slide 4      — HANDWRITTEN page: the five field-defect patterns and which
+                   disease makes each
+  • Slides 5–7   — OPTIC DISC EDEMA: the composite (5), papilledema (6),
+                   papillitis (7)
+  • Slide 8      — HANDWRITTEN page: the papilledema-vs-papillitis table, the
+                   single densest slide in the deck
+  • Slide 9      — AION
+  • Slides 10–13 — GLAUCOMA: the cupped disc, its line diagram, and four more
+                   glaucomatous discs
+  • Slides 14–19 — OPTIC ATROPHY: the four named types on one slide (14), then
+                   six further unlabelled discs (15–19)
+  • Slide 20     — Thank You
+
+⚠️ CONVENTIONS ADOPTED HERE.
+  • Slides 4 and 8 are handwriting; they are transcribed letter for letter,
+    including the lecturer's abbreviations (RB, VA, ICP, NMO, N for normal) and
+    his arrows (↑ ↓). Where the notebook page is sliced by the edge of the
+    photograph the loss is marked [text cut off in the original].
+  • Fundus photographs are described in a fixed order — disc COLOUR, MARGINS,
+    CUP, VESSELS, HAEMORRHAGES/EXUDATES, surrounding retina — so that two
+    blocks can be compared line for line. That order is this file's convention,
+    not the lecturer's.
+  • The deck never states which eye a photograph belongs to and never marks
+    right or left. Laterality is therefore never asserted below; where two
+    photographs are printed side by side and evidently come from one patient
+    that is said, and nothing more.
+  • Slides 4, 8, 9 and 19 were re-read from their enlarged single-slide
+    renders because the four-up cell could not settle the handwriting, the
+    field printout or the arrows. Everything else read cleanly at four-up.
+
+Transcribed close to verbatim. Slide text is kept as printed, INCLUDING THE
+LECTURER'S OWN MISSPELLING in the slide-3 heading — "Manifestatins" — and his
+mixed spellings of the same word across slides ("Papilloedema" on slide 5,
+"Papilledema" on slide 6 and again in the slide-8 table).
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 1 — Title
+─────────────────────────────────────────────────────────────────────
+Optic Nerve
+
+Ashraf Saad Galal
 Professor of Ophthalmology
-   Alexandria University
-Normal Optic Disc
-Manifestatins of Optic Nerve Dysfunction
+Alexandria University
 
 
-       Visual acuity
+─────────────────────────────────────────────────────────────────────
+SLIDE 2 — Normal Optic Disc
+─────────────────────────────────────────────────────────────────────
+Heading only. One large FUNDUS PHOTOGRAPH fills the slide — the baseline
+against which every later photograph is meant to be read.
 
-       Colour vision
-
-       Contrast sensitivity
-
-       Field defect
-
-       RAPD
- Optic Disc Edema
-
-
-
-             Papilloedema   AION
-
-
-
-Papillitis
-Papilledema
-Papillitis
-AION
-Glaucoma
-              Optic Atrophy
+FUNDUS PHOTOGRAPH — a close, tall crop centred on the disc.
+  • Colour  — the disc is a warm orange-yellow with a distinctly PALER, almost
+    cream-white central area: the physiological cup.
+  • Margins — CRISP AND SHARP on all sides; the disc edge is a clean line
+    against the orange-red retina, with no blurring of the surrounding nerve
+    fibre layer.
+  • Cup     — small-to-moderate, central, occupying well under half the disc,
+    with a healthy pink-orange neuroretinal rim all the way round.
+  • Vessels — the central retinal artery and vein emerge together from the cup
+    and branch immediately into superior and inferior arcades; the arteries are
+    narrower and brighter red than the veins, and the vessels are seen to DIP
+    into the cup and climb out at its edge.
+  • No haemorrhages, no exudates, no peripapillary pigment change.
+  • Surrounding retina — uniform orange-red with the choroidal pattern faintly
+    visible.
 
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 3 — Manifestatins of Optic Nerve Dysfunction
+─────────────────────────────────────────────────────────────────────
+⚠️ The heading is printed exactly as "Manifestatins of Optic Nerve
+Dysfunction" — the lecturer's own misspelling of "Manifestations". Kept.
+
+The five items are printed each with its own icon rather than a bullet, and
+the icons carry meaning:
+
+  ↓ (large red DOWN ARROW)   Visual acuity
+  ↓ (large red DOWN ARROW)   Colour vision
+  ↓ (large red DOWN ARROW)   Contrast sensitivity
+  ★ (red STAR)               Field defect
+  ★ (red STAR)               RAPD
+
+So the first three are marked as things that are REDUCED, and the last two are
+starred — the deck's way of flagging the two signs that localise the lesion to
+the optic nerve. No text explains the icons.
+
+(This is the only typed bullet list in the entire deck.)
 
 
-Primary                       Secondary
+─────────────────────────────────────────────────────────────────────
+SLIDE 4 — [no heading printed; one photographed handwritten page]
+─────────────────────────────────────────────────────────────────────
+⚠️ THIS SLIDE IS A PHOTOGRAPH OF A HANDWRITTEN SHEET OF PAPER, in blue ink on
+white, filling the whole slide. It maps FIVE DISEASES to FIVE FIELD-DEFECT
+PATTERNS, each name written above a small hand-drawn sketch of the defect. It
+is the deck's entire teaching on optic nerve field defects.
+
+Transcribed exactly as written, with the drawing under each described:
+
+  Papilledema
+  (enlarged blind spot)
+    → sketch: a single small hatched CIRCLE, drawn to one side of centre —
+      the blind spot, enlarged. A tiny dash is drawn to its left.
+
+  Acute optic neuritis
+  (central scotoma)
+    → sketch: a hatched OVAL sitting at the centre, with a second, smaller
+      hatched circle beside it to the right (the blind spot, normal size, for
+      comparison).
+
+  Chronic RB neuritis
+  (centrocecal scotoma)
+    → sketch: a long hatched OVAL running horizontally and JOINING a smaller
+      hatched circle at its right end — i.e. the central scotoma and the blind
+      spot fused into one continuous defect.
+      ("RB" = retrobulbar; the deck never expands the abbreviation.)
+
+  AION
+  (ALtitudinal defect)
+    → sketch: a broad hatched HALF-DISC occupying the LOWER half of the field,
+      its upper border a straight horizontal line — an inferior altitudinal
+      defect, the horizontal cut-off drawn deliberately flat.
+      (The capital L in "ALtitudinal" is the lecturer's own.)
+
+  Compression
+  (Sector, wedge defects)
+    → sketch: a small hatched circle (the blind spot) with a hatched WEDGE
+      widening outwards from it, drawn as a triangle running up and to the
+      right.
+
+⚠️ Nothing else is written on the page. There is no key, no field-testing
+method, and no indication of which eye.
 
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 5 — Optic Disc Edema
+─────────────────────────────────────────────────────────────────────
+Heading, then THREE fundus photographs. Two carry a caption burned into the
+photograph in black; the third has none.
+
+PHOTOGRAPH 1 (top left), captioned:  Papilloedema
+  • Colour  — the disc is HYPERAEMIC, a hot red-orange, and its surface is
+    strewn with fluffy WHITE-YELLOW material (cotton-wool patches and
+    exudate along the swollen nerve fibres).
+  • Margins — COMPLETELY OBLITERATED; there is no line where the disc ends and
+    the retina begins.
+  • Cup     — not visible at all; filled in by the swelling.
+  • Vessels — engorged and tortuous, disappearing as they climb over the
+    swollen disc edge.
+  • Surrounding retina — deep red, the peripapillary nerve fibre layer hazy.
+
+PHOTOGRAPH 2 (top right), captioned:  AION
+  • Colour  — the disc is SWOLLEN BUT PALE, a chalky whitish-pink rather than
+    hyperaemic — the contrast with photograph 1 is the point of the slide.
+  • Margins — blurred, but less angrily so than in photograph 1.
+  • Cup     — obliterated.
+  • Vessels — normal calibre, not engorged.
+  • Surrounding retina — pale pink, washed out; no haemorrhages visible in
+    this crop.
+
+PHOTOGRAPH 3 (bottom left), NO CAPTION PRINTED
+  • Colour  — a hyperaemic red-pink swollen disc.
+  • Margins — blurred all round.
+  • Cup     — obliterated.
+  • Vessels — radiating from the centre, moderately engorged.
+  • Surrounding retina — dark, dusky brown-red; the photograph is dimmer and
+    lower contrast than the other two.
+  ⚠️ The slide does not say what this third disc is. It sits under the
+  "Optic Disc Edema" heading and is left unnamed.
 
 
-Consecutive               Glaucomatous
-Thank You
-
+─────────────────────────────────────────────────────────────────────
+SLIDE 6 — Papilledema
+─────────────────────────────────────────────────────────────────────
+Heading only, then TWO fundus photographs side by side, evidently the two eyes
+of ONE patient — the deck's way of showing that papilledema is BILATERAL
+(which slide 8 then states in words).
+
+PHOTOGRAPH 1 (left)
+  • Colour  — brilliant orange fundus; the disc is hyperaemic and heaped up,
+    its surface covered in white-yellow feathery exudate radiating outwards.
+  • Margins — entirely lost.
+  • Cup     — obliterated.
+  • Vessels — grossly engorged and tortuous, the veins dark and dilated.
+  • Haemorrhages — several dark red FLAME-SHAPED HAEMORRHAGES lie at and just
+    below the disc margin, following the nerve fibre layer.
+  • The macula is visible as a darker area to the left of the disc.
+
+PHOTOGRAPH 2 (right)
+  • The mirror image of photograph 1: same hyperaemic heaped disc, same lost
+    margins, same white radiating exudate, same engorged veins, with the
+    macula this time to the RIGHT of the disc — i.e. the fellow eye.
+  • Haemorrhages — fewer and smaller than in photograph 1, but present at the
+    disc margin.
+
+No text other than the heading.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 7 — Papillitis
+─────────────────────────────────────────────────────────────────────
+Heading only, then ONE fundus photograph.
+
+FUNDUS PHOTOGRAPH — a high-magnification view centred on the disc, and
+noticeably HAZY AND OUT OF FOCUS compared with every other photograph in the
+deck.
+  • Colour  — the disc is pink-red and hyperaemic, only slightly paler than
+    the surrounding retina.
+  • Margins — blurred and indistinct.
+  • Cup     — not visible.
+  • Vessels — emerge from the centre and radiate outwards; normal calibre, not
+    engorged.
+  • No haemorrhages and no exudate are visible.
+  • The whole image is veiled, as though photographed through a haze.
+
+⚠️ That haze is not a bad photograph — it is the vitreous. Slide 8's table
+gives "Vitreous: inflammatory cells" to papillitis and "clear" to papilledema,
+and this picture is what that row looks like. The slide itself never says so.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 8 — [no heading printed; one photographed handwritten page]
+─────────────────────────────────────────────────────────────────────
+⚠️ THE DENSEST SLIDE IN THE DECK. A photograph of a lined notebook page, blue
+ink, ruled into two columns. This single table is the deck's whole
+differential between papilledema and papillitis.
+
+⚠️ THE PHOTOGRAPH IS CROPPED ON BOTH SIDES. The left-hand row labels are
+sliced at their first letter (the page reads "aterality", "ymptoms", "/A" for
+Laterality, Symptoms, VA) and the right-hand column runs off the edge in the
+Etiology row. Both losses are marked below.
+
+Column headings:                Papilledema          |  Papillitis
+
+  Etiology        ↑ ICP                              |  MS, viral, toxic,
+                                                     |  nubition[al]
+                                                     |  [text cut off in the
+                                                     |  original — the word is
+                                                     |  sliced by the right
+                                                     |  edge of the page after
+                                                     |  "nubitio"; the
+                                                     |  lecturer's spelling of
+                                                     |  the visible part is
+                                                     |  "nubition", not
+                                                     |  "nutrition"]
+  Laterality      Bilateral                          |  Unilateral
+                  (Except Foster Kennedy)            |  (Except NMO)
+  Symptoms        Transient obscuration (sec)        |  ↓ VA
+  VA              N                                  |  ↓
+  Colour V        N                                  |  ↓
+  Contrast        N                                  |  ↓
+  Field           enlarged Blindspot                 |  central scotoma
+  RAPD            No                                 |  ✓✓✓  (three ticks)
+  Vitreous        clear                              |  Inflammatory cells
+  Disc elevatn    + + +                              |  +
+
+Notes on the transcription:
+  • "Disc elevatn" is written exactly so — the lecturer's contraction of
+    "Disc elevation". The papilledema cell holds THREE plus signs and the
+    papillitis cell ONE; that quantitative contrast is the last row of the
+    table and the only place the deck grades anything.
+  • "N" in the papilledema column means normal, throughout.
+  • The RAPD row uses three tick marks, not a word — the deck's way of saying
+    strongly present.
+  • "Foster Kennedy" and "NMO" are named ONLY here, only as exceptions, and
+    are never explained anywhere in the deck.
+  • The two column headings are the only place the two diseases are set
+    against each other; every other slide shows one or the other alone.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 9 — AION
+─────────────────────────────────────────────────────────────────────
+Heading, then FIVE pictures and no text at all.
+
+PICTURE 1 (top left) — a CLINICAL PHOTOGRAPH, not a fundus: the temple and
+brow of an ELDERLY person with grey hair. A vessel runs across the temple
+above the eyebrow, standing PROMINENTLY OUT FROM THE SKIN as a raised,
+thickened, TORTUOUS, BEADED cord, clearly visible in relief against deeply
+wrinkled skin.
+⚠️ The slide never labels this picture and the words "temporal arteritis" and
+"giant cell arteritis" are printed NOWHERE in the deck. The picture is the
+only place the association appears.
+
+PICTURE 2 (top right) — a wide FUNDUS PHOTOGRAPH showing the macula and the
+disc together.
+  • Colour  — the disc, at the right of the frame, is SWOLLEN and PALE, with a
+    chalky white-yellow segment.
+  • Margins — blurred, especially at the upper and lower poles.
+  • Cup     — obliterated.
+  • Vessels — normal calibre; the arcades sweep round the macula normally.
+  • Haemorrhages — a small dark red FLAME HAEMORRHAGE lies at the lower nasal
+    disc margin.
+  • The macula sits at the centre-left of the frame as a slightly darker spot;
+    the fundus is a pale orange-tan.
+
+PICTURE 3 (bottom left) — a VISUAL FIELD PRINTOUT, greyscale, one eye, with
+the horizontal and vertical meridians drawn through the centre.
+  • The ENTIRE SUPERIOR HALF of the field is SOLID BLACK — dense loss above
+    the horizontal meridian, in both the upper-nasal and the upper-temporal
+    quadrants, the black stepping down to a straight edge along the horizontal
+    midline.
+  • Immediately below that edge, on one side, is a band of mid-GREY — a
+    shallower area of loss.
+  • The INFERIOR HALF is normal stippled printout.
+  • A small dark blob sits in the lower field at the blind spot.
+  • Small characters at the bottom right of the printout are sliced by the
+    picture edge — [text cut off in the original].
+  = A SUPERIOR ALTITUDINAL DEFECT respecting the horizontal meridian. This is
+  the deck's only real perimetry printout; slide 4 drew the same defect by
+  hand and drew it inferior.
+
+PICTURE 4 (bottom middle) — a high-magnification FUNDUS PHOTOGRAPH.
+  • Colour  — a markedly SWOLLEN disc, bright yellow-white and oedematous,
+    the swelling heaped over the whole disc surface.
+  • Margins — completely lost, feathering out into the retina.
+  • Cup     — obliterated.
+  • Vessels — bent over the shoulder of the swollen disc and partly buried.
+  • Haemorrhages — a dark red haemorrhage at the upper disc margin.
+
+PICTURE 5 (bottom right) — a high-magnification FUNDUS PHOTOGRAPH.
+  • Colour  — a PALE, WHITE-PINK disc, no longer swollen.
+  • Margins — indistinct and washed out rather than blurred by oedema.
+  • Cup     — not identifiable.
+  • Vessels — normal calibre, radiating outwards; no haemorrhage.
+  • Surrounding retina — pale.
+  Read with picture 4, this is the sequence the slide is drawing without
+  saying it: the swollen disc of acute AION becomes a pale disc.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 10 — Glaucoma
+─────────────────────────────────────────────────────────────────────
+Heading only, then ONE large FUNDUS PHOTOGRAPH.
+
+FUNDUS PHOTOGRAPH
+  • Colour  — the disc is dominated by a huge, brilliantly WHITE, deeply
+    excavated CUP occupying most of its area.
+  • Cup     — very large; the cup-to-disc ratio is grossly increased, the cup
+    reaching almost to the disc margin on the temporal side.
+  • Rim     — only a thin crescent of orange-pink neuroretinal rim survives,
+    and it is thinnest inferiorly and temporally.
+  • Vessels — the trunk emerges NASALLY, at the edge of the cup, and the
+    vessels BEND SHARPLY over the steep cup wall and disappear behind its
+    shoulder before reappearing on the floor — the classic bayoneting.
+  • Margins — the disc outline itself is sharp; it is the CUP, not the margin,
+    that is abnormal. This is the difference from every swollen disc above.
+  • Surrounding retina — brown-orange, with a pale peripapillary halo.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 11 — [no heading printed; one line diagram]
+─────────────────────────────────────────────────────────────────────
+A single white panel carrying FOUR line drawings in black, orange, yellow and
+red, and NO TEXT WHATSOEVER — not one label. It continues slide 10's glaucoma
+theme by contrasting a normal with a cupped disc, in cross-section and face-on.
+
+  DRAWING 1 (far left) — a CROSS-SECTION of a normal disc: two vertical black
+  walls with a shallow saucer between them, the red central vessels running
+  down the middle and out along the retinal surface. The excavation is
+  shallow and its walls slope gently.
+
+  DRAWING 2 — the same disc FACE-ON: an oval with a broad ORANGE ring (the
+  neuroretinal rim) and a small YELLOW centre (the cup), the yellow occupying
+  well under half the width.
+
+  DRAWING 3 — a CROSS-SECTION of a cupped disc: the same two walls, but the
+  excavation between them is now DEEP AND U-SHAPED, undermined, its floor far
+  below the retinal surface, and the red vessel is drawn bending sharply over
+  the rim, running down the wall and out along the floor.
+
+  DRAWING 4 (right) — the cupped disc FACE-ON: the orange rim is now a THIN
+  crescent squeezed to the edge and the YELLOW cup fills nearly the whole
+  disc; a row of small BLACK DOTS is drawn across the cup floor (the pores of
+  the lamina cribrosa), and the red vessels are drawn breaking at the cup
+  margin.
+  Beneath it, two SMALL discs are drawn side by side for comparison: one with a
+  thick orange rim and small yellow cup, one nearly all yellow.
+
+The whole cup-to-disc idea is delivered by these four drawings and no words.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 12 — [no heading printed; continues Glaucoma]
+─────────────────────────────────────────────────────────────────────
+Two FUNDUS PHOTOGRAPHS side by side, no caption.
+
+PHOTOGRAPH 1 (left)
+  • A disc with a pale yellow-white cup occupying much of its area.
+  • Rim     — thinned, and NOTCHED at the inferior pole, where the rim tissue
+    is lost and the cup reaches the margin.
+  • Vessels — large arcade vessels arch over the disc; the trunk is displaced
+    towards the nasal edge.
+  • Peripapillary retina — a pale, mottled crescent of atrophy lies below and
+    temporal to the disc.
+
+PHOTOGRAPH 2 (right)
+  • A small round disc almost entirely occupied by a BRIGHT WHITE cup, with a
+    thin residual rim.
+  • Vessels — run across the white cup floor as dark cords, sharply
+    silhouetted, and bend at the cup edge.
+  • Surrounding retina — deep red-orange, darker than photograph 1.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 13 — [no heading printed; continues Glaucoma]
+─────────────────────────────────────────────────────────────────────
+Two more FUNDUS PHOTOGRAPHS side by side, no caption, both showing advanced
+cupping.
+
+PHOTOGRAPH 1 (left)
+  • A large disc with a LARGE PALE YELLOW-WHITE CUP filling most of it.
+  • Rim     — a thin orange crescent remains on the nasal side only.
+  • Vessels — enter at the upper nasal edge, cross the cup floor and bend at
+    the cup margin (bayoneting clearly visible).
+  • Margins — sharply outlined, with a dark pigmented ring on the temporal
+    side.
+
+PHOTOGRAPH 2 (right)
+  • A rounder disc, again mostly pale cup, the cup slightly less white and
+    more yellow than its neighbour.
+  • Rim     — a narrow rim all round, thinnest inferiorly.
+  • Vessels — a dense sheaf of vessels emerges nasally and fans across the cup.
+  • Surrounding retina — the peripapillary area shows a paler halo.
+
+The pair is printed for comparison; the slide draws no conclusion in words.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 14 — Optic Atrophy
+─────────────────────────────────────────────────────────────────────
+Heading, then FOUR fundus photographs in a 2 × 2 block, each with its TYPE
+captioned in black inside the photograph. This one slide is the whole
+classification, and the four captions are the only words on it:
+
+PHOTOGRAPH 1 (top left) — caption:  Primary
+  • Colour  — a CHALKY WHITE disc, dead white against a red fundus.
+  • Margins — CLEARLY DEFINED AND SHARP, a clean edge all round; this is what
+    separates primary from secondary.
+  • Cup     — the pale disc is flat, with the cup not distinguishable from the
+    surrounding pallor.
+  • Vessels — normal in calibre, emerging from the centre.
+  • Surrounding retina — normal red-orange, no peripapillary change.
+
+PHOTOGRAPH 2 (top right) — caption:  Secondary
+  • Colour  — a DIRTY GREY-WHITE disc, not chalky; the whole picture has a
+    blue-grey cast.
+  • Margins — INDISTINCT AND BLURRED, the disc edge fading into a fuzzy halo
+    of surrounding tissue rather than ending in a line.
+  • Cup     — filled in and not identifiable.
+  • Vessels — pale pink-violet, drawn over and around the disc, appearing
+    sheathed.
+  • Surrounding retina — mottled and hazy immediately around the disc — the
+    residue of the swelling that preceded the atrophy.
+
+PHOTOGRAPH 3 (bottom left) — caption:  Consecutive
+  • Colour  — a WAXY YELLOW disc, distinctly yellow rather than white.
+  • Margins — reasonably defined.
+  • Vessels — MARKEDLY ATTENUATED: the arterioles are thin, thread-like and
+    fewer than normal, which is the striking feature of this photograph.
+  • Surrounding retina — a pale, washed-out yellow-orange, quite unlike the
+    healthy red of photograph 1 — the retinal disease that caused the atrophy
+    is visible in the background.
+
+PHOTOGRAPH 4 (bottom right) — caption:  Glaucomatous
+  • Colour  — a bright white CUP with an orange-red rim around it.
+  • Cup     — deep and large, occupying most of the disc, reaching the margin
+    inferiorly.
+  • Vessels — bend sharply at the cup edge.
+  • Margins — sharp; the pallor is CONFINED TO THE CUP, not spread across the
+    whole disc, which is what distinguishes glaucomatous atrophy from the
+    other three in this block.
+
+⚠️ The four type names are captions on photographs. NO DEFINITION, no cause
+list and no distinguishing rule is written anywhere on this slide or in the
+deck; the differences above are what the four pictures show.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 15 — [no heading printed; continues Optic Atrophy]
+─────────────────────────────────────────────────────────────────────
+One FUNDUS PHOTOGRAPH, no caption.
+
+  • Colour  — a strikingly WHITE disc, the whitest in the deck, sitting on a
+    uniform SALMON-PINK fundus.
+  • Margins — well defined, the white disc ending in a clean edge; the
+    temporal half is whiter than the nasal.
+  • Cup     — flat, indistinct within the pallor.
+  • Vessels — normal calibre and normal number, radiating from the disc
+    centre; they are NOT attenuated.
+  • No haemorrhage, no exudate, no pigment change.
+  Read against slide 14, this is the PRIMARY pattern: pale disc, sharp
+  margins, normal vessels, normal retina.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 16 — [no heading printed; continues Optic Atrophy]
+─────────────────────────────────────────────────────────────────────
+One wide FUNDUS PHOTOGRAPH, no caption, and the only slide in the deck showing
+the PERIPHERAL retina rather than just the disc.
+
+  • Colour  — the disc, at the left of the frame, is a WAXY PALE YELLOW.
+  • Margins — defined.
+  • Vessels — GROSSLY ATTENUATED: the retinal vessels are reduced to fine
+    threads and are hard to follow beyond the arcades.
+  • Surrounding retina — the macula lies at the centre of the frame with a
+    dull reflex; the mid-periphery and the whole circumference of the frame
+    carry COARSE BLACK PIGMENT CLUMPS in a branching, spiky pattern, densest
+    at the top, bottom and edges and sparing the posterior pole.
+  This is the CONSECUTIVE pattern of slide 14 shown with its cause visible:
+  waxy pale disc + attenuated vessels + peripheral bone-spicule pigmentation.
+  The slide names neither the pattern nor the retinal disease.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 17 — [no heading printed; continues Optic Atrophy]
+─────────────────────────────────────────────────────────────────────
+Two FUNDUS PHOTOGRAPHS side by side, no caption.
+
+PHOTOGRAPH 1 (left)
+  • Colour  — a GREY-WHITE disc with a yellowish core, on a dull brown-red
+    fundus.
+  • Margins — INDISTINCT: the pallor fades outwards without a defined edge,
+    and a hazy grey halo surrounds it.
+  • Vessels — pale and thin, some appearing sheathed as they leave the disc.
+  • A few small white specks lie to the right of the disc.
+
+PHOTOGRAPH 2 (right)
+  • Colour  — a WHITE disc with a grey-violet cast to the whole photograph.
+  • Margins — RAGGED AND FEATHERED, the disc edge broken into radiating
+    streaks that fan into the surrounding retina.
+  • Vessels — thin and pale, arising from the middle of the pallor.
+  • Small white specks lie below and to the left of the disc.
+
+Both show the SECONDARY pattern of slide 14 — pallor with an ill-defined,
+untidy margin and a disturbed peripapillary retina.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 18 — [no heading printed; continues Optic Atrophy]
+─────────────────────────────────────────────────────────────────────
+One very high-magnification FUNDUS PHOTOGRAPH filling the slide, no caption.
+
+  • Colour  — a large, uniformly PALE CREAM-YELLOW disc, flat and featureless
+    across its whole surface, standing out against a saturated deep
+    ORANGE-RED fundus. The contrast between disc and retina is the most
+    extreme in the deck.
+  • Margins — well defined and rounded, though slightly irregular at the
+    upper and lower edges where the disc tissue steps into the retina.
+  • Cup     — NOT IDENTIFIABLE; the pallor is uniform, with no separate cup.
+  • Vessels — a small number of dark red vessels emerge from the NASAL side of
+    the disc and immediately fan out over the retina; on the disc itself the
+    vessels are few and thin.
+  • No haemorrhage, no exudate, no swelling; the disc is flat, not heaped.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 19 — [no heading printed; continues Optic Atrophy]
+─────────────────────────────────────────────────────────────────────
+Two FUNDUS PHOTOGRAPHS side by side on a BLUE background (the only slide in
+the deck with a coloured backdrop), no caption. The left photograph carries
+two black ARROWS drawn onto it.
+
+PHOTOGRAPH 1 (left) — WITH TWO ARROWS
+  • Two solid black arrows are drawn from the left, one pointing down and
+    right at the upper part of the disc, the second pointing horizontally
+    right at the disc itself, lower down.
+  • Colour  — the disc is barely distinguishable: a pale, dull yellow-grey
+    area that MERGES INTO the surrounding retina, with a single small bright
+    white glint at its centre where the arrows converge.
+  • Margins — effaced; the reader cannot see where the disc ends, which is why
+    the arrows are there.
+  • Vessels — a dense tangle of tortuous vessels crosses the area, and the
+    vessels are what actually locate the disc.
+  • Surrounding retina — mottled, pale and atrophic-looking, with a coarse
+    granular texture.
+
+PHOTOGRAPH 2 (right) — NO ARROWS
+  • Colour  — a bright, sharply outlined WHITE-YELLOW disc, unmistakable
+    against a red-orange fundus. The opposite of its neighbour: the disc is
+    the most conspicuous thing in the frame.
+  • Margins — sharp and round.
+  • Cup     — the pallor fills the disc; dark vessels cross its face.
+  • Vessels — a heavy vascular trunk enters from the temporal side and the
+    arcades sweep away normally; calibre is normal.
+
+The pair is printed as a contrast — a disc you must be shown, beside a disc
+you cannot miss — and the slide says nothing at all about either.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 20 — Thank You
+─────────────────────────────────────────────────────────────────────
+Thank You
+
+(Closing slide. Nothing else printed.)
+
+
+─────────────────────────────────────────────────────────────────────
+NOT COVERED ANYWHERE IN THIS DECK
+─────────────────────────────────────────────────────────────────────
+Measured by reading all 20 slides at four-up, plus enlarged single-slide
+re-reads of slides 4, 8, 9 and 19. Slides 3, 4 and 8 hold every word of prose
+in the deck, so a negative here is easy to prove: if a thing is not in those
+three slides, in one of the six typed headings, or burned into a photograph as
+a caption, it is not in the deck at all.
+
+TREATMENT AND INVESTIGATION
+ 1. NO TREATMENT OF ANY KIND IS MENTIONED. Not one slide names a drug, a dose,
+    a route or a duration. There is no steroid, no intravenous
+    methylprednisolone, no acetazolamide, no anti-glaucoma medication and no
+    surgery. The deck is entirely diagnostic.
+ 2. THE ONTT (Optic Neuritis Treatment Trial) IS NOT MENTIONED, and no trial,
+    guideline, textbook or reference of any kind is cited anywhere. There is
+    no reading list and no bibliography slide.
+ 3. NO INVESTIGATION IS NAMED — no MRI, no CT, no OCT, no VEP, no fluorescein
+    angiography, no lumbar puncture, no ESR or CRP. This matters most for
+    slide 9: the temporal artery photograph is printed with no ESR, no
+    biopsy and no steroid beside it.
+
+NAMED DISEASES THAT ARE SHOWN BUT NEVER NAMED, OR NAMED BUT NEVER EXPLAINED
+ 4. "TEMPORAL ARTERITIS" AND "GIANT CELL ARTERITIS" ARE PRINTED NOWHERE. Slide
+    9 shows the thickened tortuous temporal artery of an elderly patient as a
+    photograph with no caption; the association has to be recognised, because
+    the words do not exist in the deck.
+ 5. FOSTER KENNEDY SYNDROME appears exactly once — as the parenthesis
+    "(Except Foster Kennedy)" in one cell of the slide-8 table. Its mechanism,
+    its two discs and its cause are not described.
+ 6. NMO (neuromyelitis optica) appears exactly once, likewise as "(Except
+    NMO)" in the facing cell of the same row. The abbreviation is never
+    expanded and the disease never described.
+ 7. THE CAUSES OF RAISED ICP ARE NOT LISTED. Slide 8 gives papilledema the
+    single etiology "↑ ICP" and stops; no tumour, no idiopathic intracranial
+    hypertension, no venous sinus thrombosis, no hydrocephalus.
+ 8. LEBER'S HEREDITARY OPTIC NEUROPATHY, OPTIC NERVE GLIOMA, OPTIC NERVE SHEATH
+    MENINGIOMA and TRAUMATIC OPTIC NEUROPATHY are absent entirely — no slide,
+    no caption, no line in the handwritten pages.
+ 9. "Toxic" and "nubition[al]" appear only as two words in one etiology cell on
+    slide 8. There is no tobacco-alcohol amblyopia, no ethambutol, no
+    methanol, no B12.
+10. NO CONGENITAL OR STRUCTURAL DISC ANOMALY IS SHOWN OR NAMED — no optic disc
+    drusen, no pseudopapilloedema, no myelinated nerve fibres, no optic disc
+    coloboma, no morning glory disc, no tilted disc, no optic nerve
+    hypoplasia. Given that slides 5–7 are all about a swollen disc, the
+    absence of pseudopapilloedema is the sharpest gap in the deck.
+
+GRADING, DEFINITIONS AND ANATOMY
+11. PAPILLOEDEMA IS NEVER GRADED. There is no Frisén scale and no early /
+    established / chronic / atrophic sequence. The only grading anywhere is
+    the slide-8 "Disc elevatn" row: "+ + +" against "+".
+12. THE FOUR TYPES OF OPTIC ATROPHY ARE NEVER DEFINED. Primary, Secondary,
+    Consecutive and Glaucomatous exist only as four captions burned into the
+    four photographs on slide 14. No slide says what causes each, and the
+    word "ascending" or "descending" appears nowhere.
+13. THE OPTIC NERVE'S OWN ANATOMY IS NOT TAUGHT. There is no slide on its
+    course or segments (intraocular, intraorbital, intracanalicular,
+    intracranial), no axon count, no blood supply, no circle of Zinn-Haller,
+    and no cross-section of the nerve or its sheaths.
+14. NO FIELD-TESTING METHOD IS DESCRIBED. Slide 4 draws five defects by hand
+    and slide 9 shows one greyscale printout, but confrontation, perimetry,
+    the Amsler grid and the technique behind the printout are never mentioned.
+15. RAPD IS LISTED TWICE (slide 3, slide 8) AND NEVER EXPLAINED. The
+    abbreviation is not expanded, the swinging-flashlight test is not named,
+    and no photograph in this deck shows a pupil — the RAPD pictures are in
+    L22, not here.
+16. NO SYMPTOM HISTORY IS TAUGHT beyond two cells of the slide-8 table
+    ("Transient obscuration (sec)" and "↓ VA"). Pain on eye movement — the
+    classic discriminator for optic neuritis — is printed nowhere in the deck.
+17. NO EPIDEMIOLOGY, NO PROGNOSIS, NO NATURAL HISTORY and no follow-up
+    interval appears on any slide.

@@ -1,211 +1,1213 @@
-SOURCE: Semester 8\Opthalmo\Theoritical\PPT\L6) Conjunctiva.pptx
-SLIDES: 66
+L6) Conjunctiva.pptx — "Conjunctiva"
+Ashraf Saad Galal, Professor of Ophthalmology,
+Former Dean, Faculty of Medicine, Alexandria University,
+Former President, Alexandria Medical Syndicate
+==========================================
+66 slides. READ VISUALLY 2026-08-24 and cached here.
 
---- slide 1 ---
+COMPLETE — all 66 slides transcribed, in order, none skipped.
+
+⚠️ DO NOT RE-EXTRACT THIS DECK FROM ITS TEXT LAYER. It is a .pptx, so pdftotext
+and the slide XML both return text cleanly — and that is exactly the trap. The
+whole deck contains about 343 words of typed text across 66 slides (~5.2 words a
+slide) against 73 media files. The typed text is almost entirely SLIDE TITLES.
+The teaching is in the photographs. Any extraction that reads only the text layer
+will produce a list of headings and lose the entire lecture. That is why the
+pictures are described in full below.
+
+⚠️ CONVENTIONS ADOPTED HERE.
+  • Every slide gets a block, in order, even when it carries no typed text at all.
+  • Where a slide has NO typed title, that is recorded as "(no typed title on this
+    slide)" — it is a real property of the deck, not a reading failure.
+  • Picture descriptions state the kind of image (slit-lamp photograph,
+    everted-lid photograph, diagram, clinical photograph, before/after pair), what
+    it shows, and every label or caption printed on it.
+  • Where a picture is repeated later in the deck the repeat is named, because the
+    lecturer re-shows images when he moves from one disease to the next and the
+    repeat is where the second diagnosis is being taught.
+  • Two distinct damage types would be marked if present, and they are NOT the
+    same thing: `[text cut off in the original]` = text running past the slide
+    edge, so the words exist but are unreadable; `[obscured by the image]` = text
+    lying underneath an overlaid picture or shape, so the words are present in the
+    file but hidden on the rendered slide. NEITHER occurs in this deck — no slide
+    overflows and no picture covers typed text.
+  • A heading with nothing under it is a third, different kind of gap. In this
+    deck almost every slide IS a heading with a picture under it, which is not
+    the same as an empty heading; genuinely empty slides are called out where they
+    occur.
+  • Spelling and capitalisation are the lecturer's own, kept verbatim
+    ("Vernal KeratoConjunctivitis", "Nebula ex Pannus", "PTCs").
+
+SECTION MAP (slide number where each part starts)
+   1        Title
+   2– 7     Anatomy and normal appearance / lid eversion
+   8–16     Signs of conjunctival disease (discharge, injection, chemosis,
+            follicles, papillae, PTCs, scarring)
+  17–24     Bacterial conjunctivitis (mucopurulent, purulent, membranous,
+            pseudomembranous, angular)
+  25–33     Chlamydial conjunctivitis / Trachoma (follicles, pannus, nebula,
+            PTCs, scarring)
+  34–36     Viral conjunctivitis
+  37–45     Allergic conjunctivitis and Vernal KeratoConjunctivitis — chemosis,
+            giant tarsal papillae, the limbal form with its chalky white limbal
+            dots (39–42), an unnamed conjunctival wedge (43), the corneal plaque
+            arrowed against giant papillae (44), and the blinding end-result
+            corneal opacity (45)
+  46–49     Phlyctenular KeratoConjunctivitis — three photographs and, on 49,
+            the lecturer's OWN HAND-DRAWN diagram, captioned in his handwriting
+  50–57     Pterygium — the fleshy vascular form (50, repeated bare on 52, close
+            up on 53), an unnamed yellow-white limbal thickening (51), the thin
+            atrophic form (54), an unnamed gelatinous limbal mass with feeder
+            vessels in a two-panel figure that runs off the slide edge (55), a
+            four-panel crossing-the-limbus versus stopping-at-it comparison (56),
+            and an operative photograph of excision with a sutured graft (57)
+  58–61     Pingueculum (the lecturer's spelling) — titled on 58; 59 and 61 are
+            THE SAME SLIDE repeated, an unnamed brown conjunctival patch; 60 an
+            unnamed yellow limbal thickening
+  62        Bitôt Spot
+  63        Symblepharon
+  64        FB — a foreign body on the everted upper tarsus
+  65        Subconjunctival hemorrhage (four photographs)
+  66        Thank You — closing slide
+
+⚠️ REPEATED SLIDES, verified by pixel comparison of the rendered slides:
+  • 52 repeats the photograph of 50 without its title (same image, rescaled).
+  • 61 is byte-for-byte IDENTICAL to 59 — the same slide twice.
+  • 30 repeats the "PTCs" photograph of 15 (recorded at slide 30).
+The deck also RE-SHOWS the sign photographs of 13/14/12 inside the disease
+sections; those repeats are named in their own blocks.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 1 — Title
+─────────────────────────────────────────────────────────────────────
 Conjunctiva
-Ashraf 
-Saad
- 
-Galal
+
+Ashraf Saad Galal
 Professor of Ophthalmology
 Former Dean, Faculty of Medicine,
 Alexandria University
 Former President, Alexandria Medical Syndicate
 
---- slide 2 ---
+(Title in large yellow script on black; the name in cyan, the rest in white.
+No date, no course code and no reference list anywhere on the slide.)
 
 
---- slide 3 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 2 — (no typed title on this slide) — anatomy diagram
+─────────────────────────────────────────────────────────────────────
+PICTURE: a coloured line diagram, sagittal section through the upper lid and the
+front of the globe, printed on a white background. It is a German-labelled
+textbook figure; the labels are printed in Latin with the German in brackets and
+are transcribed exactly as they appear:
+
+  • Tunica conjunctiva palpebrarum   (leader to the conjunctiva lining the
+    inner surface of the lid)
+  • Cornea (Hornhaut)
+  • Camera anterior (Vorderkammer)
+  • Lens (Linse)
+  • Limbus
+  • Corpus ciliare
+  • Sclera (Lederhaut)
+  • Saccus conjuctivae (Bindehautsack)      [printed "conjuctivae", missing the
+    n — kept as the diagram prints it]
+  • Tunica conjunctiva bulbi
+  • Fornix conjunctivae inferior (unteres Bindehautgewölbe)
+
+The diagram shows the continuous sheet running from the lid margin, up the tarsal
+surface, into the fornix and forward over the globe to end at the limbus, with the
+tarsal plate, meibomian glands and the anterior chamber angle drawn in. No typed
+text of the lecturer's own appears on the slide — the labels are part of the
+image.
 
 
---- slide 4 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 3 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: a clinical close-up photograph of a white elderly patient's right eye,
+open, viewed from the front. The bulbar conjunctiva is diffusely pink/injected,
+most obviously nasally and inferiorly; the lid margins are reddened. No labels, no
+arrows, no caption. The slide carries no typed text of any kind.
 
 
---- slide 5 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 4 — (no typed title on this slide) — LID EVERSION TECHNIQUE
+─────────────────────────────────────────────────────────────────────
+PICTURE: a four-panel composite clinical photograph (2×2) of the same young woman
+at a slit lamp, demonstrating upper-lid eversion step by step:
+  • top left  — examiner's hand at the lower lid, a cotton bud / applicator held
+    in the other hand; the patient looks UP.
+  • top right — the applicator laid across the upper lid above the tarsal plate,
+    patient still looking up.
+  • bottom left — the patient told to look DOWN, the examiner grasping the lashes
+    of the upper lid between finger and thumb.
+  • bottom right — the upper lid rolled over the applicator, everted, the tarsal
+    conjunctiva now exposed.
+No captions, no numbers and no arrows are printed on the composite. The technique
+is taught entirely by the sequence of pictures.
 
 
---- slide 6 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 5 — (no typed title on this slide) — NUMBERED ANATOMY PHOTOGRAPH
+─────────────────────────────────────────────────────────────────────
+PICTURE: a clinical photograph of a lower lid pulled down, showing the inferior
+fornix and the lower tarsal conjunctiva of a brown-skinned patient. Six black
+numerals are printed ON the photograph, with one arrow:
+  1 — on the white bulbar conjunctiva above and lateral to the limbus
+  2 — on a visible conjunctival vessel crossing the bulbar surface
+  3 — on the reflected conjunctiva at the depth of the inferior fornix
+  4 — on the pink palpebral (tarsal) conjunctiva of the everted lower lid
+  5 — with a black arrow pointing to the fornix/plica region at the medial end
+  6 — at the lid margin, on the mucocutaneous junction
+
+⚠️ NO KEY IS PRINTED. The slide gives the numerals and nothing else — no legend
+naming 1–6 appears anywhere on this slide or the next. The identifications above
+are the positions the numerals sit on, not the lecturer's words.
 
 
---- slide 7 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 6 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: a clinical close-up of a partly closed left eye with the lower lid
+retracted, showing a WHITE, quiet bulbar conjunctiva with normal fine branching
+vessels, a clear cornea and a dark iris. A small dark brown/black pigmented spot
+sits on the bulbar conjunctiva just above the lower lid margin, temporally, and
+there is a little crust at the medial canthus. No labels, no arrows, no caption.
+No typed text on the slide.
 
 
---- slide 8 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 7 — Normal Tarsal Conjunctiva
+─────────────────────────────────────────────────────────────────────
+Normal Tarsal Conjunctiva
+
+(The title is printed as part of the image, white on a dark banner, with a green
+rule under it.)
+
+PICTURE: an everted-upper-lid photograph. The exposed tarsal conjunctiva is
+uniformly pale pink and SMOOTH — no follicles, no papillae — and the straight,
+radially running tarsal vessels are seen through it. A black DASHED OVAL is drawn
+on the photograph, outlining the area of the tarsal plate that is to be inspected.
+The lashes and lid margin are at the lower edge of the frame.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 8 — Discharge
+─────────────────────────────────────────────────────────────────────
 Discharge
 
---- slide 9 ---
+PICTURE: a clinical photograph of an eye held open with the lids widely separated,
+the conjunctiva intensely RED and swollen, and thick creamy-yellow/white
+PURULENT discharge lying in the lower fornix, pooled on the lid margin and
+matting the lashes. The cornea is visible centrally and the eye is bathed in pus.
+No labels or arrows. (This same photograph is shown again at slide 20.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 9 — Conjunctival Injection
+─────────────────────────────────────────────────────────────────────
 Conjunctival Injection
 
---- slide 10 ---
+PICTURE: a slit-lamp / clinical photograph of a blue-irided eye. The redness is
+BRIGHT RED, made of individually visible, tortuous, superficial conjunctival
+vessels, and it is heaviest PERIPHERALLY and in the fornices, FADING as it
+approaches the limbus. The cornea is clear, the pupil round and mid-size. Yellow
+crusting on the lashes. No labels or arrows.
 
 
---- slide 11 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 10 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: a clinical photograph of an eye with the lower lid retracted. Diffuse
+bright red superficial injection of the bulbar conjunctiva and of the everted
+lower lid, again heavier away from the limbus, with a pale ring of relatively
+spared conjunctiva immediately around the clear cornea. The pupil is dark and
+round. No labels, no arrows, no typed text — the slide continues the injection
+sequence begun on slide 9 by picture alone.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 11 — Ciliary Injection
+─────────────────────────────────────────────────────────────────────
 Ciliary Injection
 
---- slide 12 ---
+PICTURE: a clinical photograph of an eye in which the redness is CIRCUM-CORNEAL —
+a deep, dusky pink/violaceous flush forming a ring in the sclera immediately
+around the limbus, densest at the limbus and fading peripherally, in contrast to
+slides 9–10. The individual vessels are not resolvable. The cornea is hazy and
+carries a central greenish-yellow lesion (fluorescein-stained ulcer with adjacent
+white infiltrate) and there is white exudate inferiorly. The iris detail is
+blurred by the corneal haze. No labels or arrows.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 12 — Chemosis
+─────────────────────────────────────────────────────────────────────
 Chemosis
 
---- slide 13 ---
+PICTURE: a slit-lamp photograph of the inferior bulbar conjunctiva. The
+conjunctiva is lifted off the sclera as a translucent, gelatinous, fluid-filled
+SWELLING that balloons forward and overhangs the lower lid margin, its free edge
+casting a shadow. Fine conjunctival vessels are stretched over the surface of the
+swelling. The slit beam illuminates the raised sheet from the side. No labels or
+arrows.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 13 — Follicles
+─────────────────────────────────────────────────────────────────────
 Follicles
 
---- slide 14 ---
+PICTURE: an everted-lid photograph of the tarsal conjunctiva. Scattered over the
+pink-red tarsal surface are multiple discrete, ROUNDED, PALE GREY-WHITE elevations
+of fairly even size, each smooth-domed, with normal-looking conjunctival vessels
+running OVER and AROUND them rather than into their centres. They are most
+numerous towards the fornix end of the plate. No labels or arrows. (Compare
+slide 14 — the deck teaches follicles versus papillae as a pair of photographs
+with no text at all.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 14 — Papillae
+─────────────────────────────────────────────────────────────────────
 Papillae
 
---- slide 15 ---
+PICTURE: a close-up everted-lid photograph of a deeply RED tarsal conjunctiva
+covered by raised POLYGONAL / flat-topped elevations packed together in a
+mosaic-like ("cobblestone") pattern, separated by pale grooves. Each elevation is
+red at its centre — a central vessel core — unlike the pale follicles of slide 13.
+Bright specular highlights sit on the surface. No labels or arrows.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 15 — PTCs
+─────────────────────────────────────────────────────────────────────
 PTCs
 
---- slide 16 ---
+(The abbreviation is printed as "PTCs" and is NOT expanded anywhere on the slide.)
+
+PICTURE: an everted-upper-lid photograph, the examiner's thumb holding the lid
+back. On the reddened tarsal conjunctiva there is a dense row of small, discrete,
+CREAMY-YELLOW/WHITE rounded nodules, clustered mainly along the upper part of the
+plate near the fornix, against a background of visible tarsal vessels. The
+patient's skin is dark; the lower lashes and a dark pupil are seen below.
+(This same photograph is shown again at slide 30, within the trachoma sequence.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 16 — Scarring
+─────────────────────────────────────────────────────────────────────
 Scarring
 
---- slide 17 ---
+PICTURE: an everted-upper-lid photograph, warm orange-brown in colour balance. The
+tarsal conjunctiva has lost its normal vascular pattern and is replaced by a
+smooth, PALE, avascular sheet with fine whitish linear/stellate streaks running
+across it. The surface looks flattened and glazed rather than velvety. The image
+carries a printed watermark in its lower right corner: "ByeByeDoctor.com".
+(This same photograph is shown again at slide 32.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 17 — Bacterial Conjunctivitis (Mucopurulent)
+─────────────────────────────────────────────────────────────────────
 Bacterial Conjunctivitis (Mucopurulent)
 
---- slide 18 ---
+PICTURE: a clinical photograph of a blue-irided eye with intense bright red
+superficial conjunctival injection of both the bulbar conjunctiva and the lid
+margins, heaviest peripherally. Yellow-white crusting and stringy mucopurulent
+material cling to the lashes and the medial canthus. The cornea is clear and the
+pupil is round. No labels or arrows.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 18 — Bacterial Conjunctivitis (Purulent)
+─────────────────────────────────────────────────────────────────────
 Bacterial Conjunctivitis (Purulent)
 
---- slide 19 ---
+PICTURE: a clinical photograph of a NEWBORN infant's face, lying on a white sheet,
+both eyes closed and both lids grossly swollen, tense and shiny. Thick
+yellow-cream purulent discharge is escaping between the lid margins of both eyes
+and has dried on the lashes; the right lid is the more swollen. No labels, no
+arrows — the age of the patient is the whole point and it is carried only by the
+photograph.
 
 
---- slide 20 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 19 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: a clinical photograph of a crying newborn, the examiner's GLOVED fingers
+separating the grossly swollen, tense, red lids of the right eye. Copious
+yellow-cream pus wells out of the palpebral fissure and lies crusted over the
+lids and cheek. No typed text of any kind on the slide; it continues the neonatal
+purulent sequence begun at slide 18.
 
 
---- slide 21 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 20 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: the SAME photograph as slide 8 — lids widely held apart, intensely red
+swollen conjunctiva, thick creamy-white pus filling the lower fornix and matting
+the lashes, cornea visible centrally. Here it is re-shown as purulent bacterial
+conjunctivitis rather than as the sign "discharge". No typed text on the slide.
 
 
---- slide 22 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 21 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: a clinical photograph of a pale-skinned young child, the lids of the
+right eye held apart by a WIRE LID SPECULUM. The exposed globe shows a grossly
+abnormal cornea — a large, dense, white-grey opaque area occupying most of the
+cornea with a raised, irregular central bulge and surrounding scarring — the
+end-result of the untreated purulent infection of the preceding slides. Dried
+yellow discharge sits at the lower lid margin and the conjunctiva is dull pink.
+No labels, no arrows, no typed text.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 22 — Bacterial Conjunctivitis (Membranous)
+─────────────────────────────────────────────────────────────────────
 Bacterial Conjunctivitis (Membranous)
 
---- slide 23 ---
+PICTURE: a clinical photograph of an eye with the lower lid pulled down by a
+white cotton-tipped applicator (visible at the lower right of the frame). Lying on
+the inferior bulbar conjunctiva and lower fornix is a thick, CREAMY-YELLOW,
+adherent MEMBRANE with a raised, rolled edge; the surrounding conjunctiva is
+intensely red and the lid margin is swollen and hyperaemic. Fine red vessels run
+over the surface of the membrane where it is attached, and there is bright red
+haemorrhagic staining at its lower edge — the membrane is incorporated into the
+epithelium and its removal bleeds. The cornea and a dark pupil are visible at the
+top of the frame.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 23 — Bacterial Conjunctivitis (Pseudomembranous)
+─────────────────────────────────────────────────────────────────────
 Bacterial Conjunctivitis (Pseudomembranous)
 
---- slide 24 ---
+PICTURE: a clinical photograph of the inferior fornix, the lower lid drawn down by
+a white swab held at the bottom of the frame. The conjunctiva is intensely red and
+velvety, and a thin, WHITISH-GREY, loosely lying sheet is draped over the
+inferior tarsal conjunctiva and fornix — flat, dull, without a rolled edge, and
+without the bleeding seen on slide 22. The lid margin and the bulbar conjunctiva
+above are diffusely injected. The two membrane slides are placed back to back and
+the difference is taught entirely by the two photographs.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 24 — Bacterial Conjunctivitis (Angular)
+─────────────────────────────────────────────────────────────────────
 Bacterial Conjunctivitis (Angular)
 
---- slide 25 ---
+PICTURE: a clinical photograph centred on the MEDIAL CANTHUS (the angle) of an
+eye. The skin at the inner canthus is red, macerated, excoriated and fissured,
+with a crust of yellow discharge at the angle itself; the adjacent bulbar
+conjunctiva is only moderately injected and the redness is concentrated AT THE
+ANGLE rather than diffusely over the eye. The cornea and blue-grey iris are seen
+at the right edge of the frame. The image carries a printed watermark at the lower
+left: "EyeRounds.org".
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 25 — Chlamydial Conjunctivitis (Trachoma)
+─────────────────────────────────────────────────────────────────────
 Chlamydial Conjunctivitis (Trachoma)
 
---- slide 26 ---
+PICTURE: an everted-UPPER-lid photograph. The tarsal conjunctiva is red and
+thickened and studded with numerous discrete, PALE GREY-WHITE, rounded FOLLICLES
+of even size, spread over the whole tarsal plate and continuing towards the
+fornix; conjunctival vessels run over and between them. (Visually this is the same
+follicular appearance shown on slide 13, now attributed to trachoma.) No labels or
+arrows.
 
 
---- slide 27 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 26 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: an everted-upper-lid photograph of a dark-skinned patient, warm brown
+colour balance. The tarsal conjunctiva is thickened and shows BOTH a coarse
+papillary/velvety background with prominent vessels AND scattered small pale
+follicles, most numerous at the upper (fornix) end of the plate. The lashes of
+the everted lid are at the top and the dark cornea and lower lid at the bottom of
+the frame. No labels, no arrows, no typed text.
 
 
---- slide 28 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 27 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: an everted-upper-lid photograph, the tarsal conjunctiva pink and covered
+with numerous small, pale, glistening follicles arranged in rows across the plate;
+the everted lid is held up and the dark pupil and lower lashes fill the lower part
+of the frame. The image carries a printed watermark at the top left:
+"ONJOPH.com" (with a smaller line of text beneath the logo that is too small to
+read at this resolution). No typed text of the lecturer's own on the slide.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 28 — Trachomatous Pannus
+─────────────────────────────────────────────────────────────────────
 Trachomatous Pannus
 
---- slide 29 ---
+PICTURE: a clinical photograph of the upper half of an eye, upper lid retracted.
+A sheet of fine, straight, RADIAL blood vessels is seen crossing the limbus from
+the SUPERIOR conjunctiva and invading the upper cornea, with a hazy grey
+infiltration of the cornea at their advancing edge; the lower cornea is clear and
+the pupil is round and black. Small pale dots sit at the upper limbus. The lid
+margin and lashes are at the top of the frame. No labels or arrows — the fact that
+the vessels come from ABOVE is carried by the picture alone.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 29 — Trachomatous Nebula ex Pannus
+─────────────────────────────────────────────────────────────────────
 Trachomatous Nebula ex Pannus
 
---- slide 30 ---
+PICTURE: a close-up clinical photograph of the upper cornea and limbus. A band of
+faint, GREY, veil-like corneal haze (nebula) lies across the UPPER cornea,
+sharply demarcated below and fading into the clear cornea; a few residual empty
+vessels are visible in the conjunctiva above it, but the dense vascular sheet of
+slide 28 has regressed. The pupil is seen below as a dark circle. No labels or
+arrows.
 
 
---- slide 31 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 30 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: the SAME everted-upper-lid photograph shown on slide 15 as "PTCs" — the
+examiner's thumb holding the lid, a dense row of discrete creamy-yellow/white
+rounded nodules along the upper tarsal plate near the fornix on a red background.
+Re-shown here inside the trachoma sequence. No typed text on the slide.
 
 
---- slide 32 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 31 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: an everted-upper-lid photograph filling the whole slide, strongly
+red/orange in colour balance. The tarsal conjunctiva shows a coarse, thickened,
+network-like surface with a dense fine white FIBROUS reticulum running through it —
+early scarring laid down among residual papillae — and the lid margin with its
+lashes runs along the right edge. No labels, no arrows, no typed text.
 
 
---- slide 33 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 32 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: the SAME photograph shown on slide 16 as "Scarring" — everted upper lid,
+pale avascular glazed tarsal conjunctiva with fine whitish linear streaks, warm
+orange colour balance, watermark "ByeByeDoctor.com" at the lower right. Re-shown
+here as the scarring stage of trachoma. No typed text on the slide.
 
 
---- slide 34 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 33 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: an everted-upper-lid photograph in which the tarsal conjunctiva is almost
+entirely replaced by DENSE WHITE SCAR — a broad, confluent, chalky-white sheet
+occupying the centre of the tarsal plate, with the residual pink conjunctiva
+pushed to the edges and a few small pits within the white area. The lid margin,
+lashes and a dark palpebral fissure run across the lower part of the frame. This
+is the most advanced scarring picture in the deck. No labels, no arrows, no typed
+text.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 34 — Viral Conjunctivitis
+─────────────────────────────────────────────────────────────────────
 Viral Conjunctivitis
 
---- slide 35 ---
+PICTURE: an everted-lower-lid photograph. The tarsal conjunctiva is intensely
+BRIGHT RED and carries numerous small, pale, glistening FOLLICLES scattered across
+the plate, most densely centrally. The lid margin and lashes are below, the
+palpebral fissure dark. No labels or arrows.
 
 
---- slide 36 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 35 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: a clinical photograph of the inferior bulbar conjunctiva and fornix, lid
+pulled down. Two features are shown together: several flat, bright-red,
+sharply-edged patches of SUBCONJUNCTIVAL HAEMORRHAGE lying on the otherwise
+whitish bulbar conjunctiva just below the limbus (the dark cornea is at the top
+right), and, in the inferior fornix below, a row of pale rounded FOLLICLES on a
+red velvety tarsal surface. No labels, no arrows, no typed text — the haemorrhagic
+element of the viral picture is taught only by this photograph.
 
 
---- slide 37 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 36 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: a slit-lamp photograph of the cornea under a broad diffuse beam, the
+cornea appearing blue-grey. Scattered across it are multiple small, round,
+discrete, WHITE-GREY subepithelial corneal OPACITIES / infiltrates of even size,
+lying beneath the surface; the limbus and the iris are seen at the right of the
+frame and a bright specular reflex at the left. No labels, no arrows, no typed
+text — the corneal complication of the viral picture is taught only by this
+photograph.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 37 — Allergic Conjunctivitis
+─────────────────────────────────────────────────────────────────────
 Allergic Conjunctivitis
 
---- slide 38 ---
+PICTURE: a slit-lamp photograph of the inferior bulbar conjunctiva and lower lid.
+The conjunctiva is MILDLY pink with fine dilated vessels and is lifted into a
+translucent, gelatinous, oedematous swelling (chemosis) that overhangs the lower
+lid margin — the same ballooning appearance as slide 12, here in an allergic eye.
+The redness is far less intense than the bacterial and viral pictures. No labels
+or arrows.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 38 — Vernal KeratoConjunctivitis
+─────────────────────────────────────────────────────────────────────
 Vernal KeratoConjunctivitis
 
---- slide 39 ---
+(Capitalisation as printed — one word, with a capital C in the middle.)
+
+PICTURE: a close-up everted-upper-lid photograph. The tarsal conjunctiva is
+covered by LARGE, FLAT-TOPPED, POLYGONAL GIANT PAPILLAE packed edge to edge in a
+cobblestone mosaic, each several times the size of an ordinary papilla, separated
+by pale clefts, on a deep red background with bright specular highlights on the
+mucus film. (Visually the same image family as slide 14, now shown as the giant
+papillary form.) No labels or arrows.
 
 
---- slide 40 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 39 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: a clinical photograph of BOTH EYES of a dark-skinned patient, taken from
+the front with the lids open. At the LIMBUS of each eye, at the upper and lower
+limbal margins, there are raised, gelatinous, greyish-pink thickened swellings
+carrying small discrete WHITE DOTS on their surface. A single black ARROW is
+printed on the photograph, pointing to the white dots at the upper limbus of the
+patient's left eye. No caption or label accompanies the arrow, and the sign is
+not named in typed text anywhere on the slide.
 
 
---- slide 41 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 40 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: a slit-lamp close-up of the superior limbus. A row of discrete, chalky
+WHITE DOTS sits on the crest of a raised, thickened, gelatinous limbal band that
+runs along the limbus, with the brown iris and a bright corneal reflex below and
+the upper lid margin and lashes above. This is the close-up of the sign arrowed on
+slide 39. No labels, no arrows, no typed text.
 
 
---- slide 42 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 41 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: a slit-lamp photograph of the SUPERIOR limbus and upper cornea, taken
+close up. The limbal conjunctiva is heaped into a thick, opaque, creamy
+yellow-white GELATINOUS BAND that runs along the whole superior limbus and
+overhangs the corneal edge; discrete chalky WHITE DOTS sit on and just inside its
+crest. From that band a hazy grey-white opacity spreads DOWNWARD onto the upper
+cornea. The bulbar conjunctiva to the left of the band is bright red and
+injected; the brown iris with its radial crypts and the dark pupil fill the lower
+right of the frame, and there are bright specular flecks of the slit beam on the
+tear film. A stock-library watermark "ONJOPH.com" is printed white on the top
+left corner of the photograph — it is the image source, not a caption.
+No labels, no arrows, no typed text on the slide.
 
 
---- slide 43 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 42 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: a full-face clinical photograph of ONE eye of a dark-skinned patient,
+lids held open. A broad, raised, creamy tan-yellow GELATINOUS COLLAR of thickened
+conjunctiva encircles the cornea COMPLETELY — 360° at the limbus — widest at the
+nasal and temporal sides, forming a smooth ring that stands proud of the globe
+and hides the normal sharp limbal edge. A few small chalky WHITE DOTS lie along
+the inner rim of the collar at the lower limbus and above the temporal limbus.
+The cornea itself is clear and dark, the pupil round; the eye is otherwise white,
+without the fiery red of the bacterial pictures earlier in the deck. Watermark
+"EYE ROUNDS.ORG" printed white across the top right of the photograph — image
+source, not a caption. No labels, no arrows, no typed text on the slide.
 
 
---- slide 44 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 43 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: a close-up clinical photograph of one eye, lashes and lid margin running
+across the top, the CANTHAL angle at the right of the frame. The cornea fills the
+left half — clear, with a brown iris and round dark pupil. Lying on the BULBAR
+conjunctiva in the interpalpebral zone, between the limbus and the canthus, is a
+flat, greyish-white, TRANSLUCENT WEDGE-SHAPED THICKENING: broad base against the
+limbus, tapering toward the canthus, its surface avascular and slightly
+glistening, with the normal fine conjunctival vessels visible on the pink
+conjunctiva above and below it but not running over it. It does not clearly
+encroach onto the cornea in this view. The lesion is NOT named anywhere on the
+slide — no title, no label, no arrow, no caption.
 
 
---- slide 45 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 44 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: TWO photographs stacked one above the other, both carrying white ARROWS.
+
+  • UPPER photograph — an EVERTED UPPER LID (lashes running along the bottom
+    edge, the tarsal surface turned up to the camera). The tarsal conjunctiva is
+    intensely red and is covered by LARGE, FLAT-TOPPED, POLYGONAL RAISED
+    PAPILLAE packed side by side in a cobblestone mosaic, some of them
+    pale-topped, the largest sitting at the lid margin. THREE white arrows are
+    printed on it, pointing to individual giant papillae — one high on the
+    tarsus, one in mid-tarsus, one at the lid-margin row. No captions.
+  • LOWER photograph — a slit-lamp view of the cornea of a brown-eyed patient
+    with a wide dark pupil. Just ABOVE and slightly nasal to the pupil margin
+    there is an oval, superficial, greyish-white CORNEAL OPACITY / PLAQUE with a
+    slightly raised, better-defined lower edge, sitting on an otherwise clear
+    cornea. FOUR white arrows are printed around it — from above, from the left,
+    from below-left and from the right — bracketing the lesion. No captions.
+
+The pairing (giant tarsal papillae above, the corneal lesion below) is the whole
+teaching of the slide; neither photograph is labelled in words.
 
 
---- slide 46 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 45 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: a clinical photograph of one eye with the UPPER LID EVERTED and held up,
+so the tarsal surface faces the camera above and the globe is seen below it. The
+tarsal conjunctiva is deep, velvety red, thickened and irregular, its surface
+studded with countless fine pale points and pale flat-topped elevations. Below
+it the bulbar conjunctiva is WHITE and quiet. The cornea, seen at the lower
+right, carries a LARGE DENSE CENTRAL OPACITY filling the pupillary area —
+olive-green to grey-white, with a bright specular reflex on its surface — with
+the brown iris visible as a ring around it. This is the blinding end-result
+picture of the series; no typed text, no labels and no arrows appear on the
+slide.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 46 — Phlyctenular KeratoConjunctivitis
+─────────────────────────────────────────────────────────────────────
 Phlyctenular KeratoConjunctivitis
 
---- slide 47 ---
+(Capitalisation as printed — one word, with a capital C in the middle, the same
+style the lecturer used for "Vernal KeratoConjunctivitis" on slide 38. Title in
+yellow across the top of a black slide.)
+
+PICTURE: a close-up photograph of an eye rotated so that the cornea (dark, with a
+grey-brown limbal edge) lies in the LOWER LEFT of the frame and the bulbar
+conjunctiva and sclera fill the rest. On the white sclera sit TWO small, round,
+DISCRETE, PINKISH-WHITE RAISED NODULES, each a few millimetres across, one near
+the limbus and one further back; each nodule has a LEASH OF DILATED, BRIGHT RED
+CONJUNCTIVAL VESSELS running to it and converging on it, while the sclera between
+and beyond the nodules is white. The upper lid margin with lashes crosses the top
+of the frame. The injection is localised to the sectors carrying the nodules —
+it is not the diffuse redness of the earlier conjunctivitis pictures. No labels
+or arrows on the photograph.
 
 
---- slide 48 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 47 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: a second, closer photograph of the same disease. The cornea occupies the
+left of the frame (dark, with a grey superior limbal edge); lashes of both lids
+frame the picture above and below. On the BULBAR conjunctiva a short distance
+from the limbus there is a single pale, creamy-white to pale-pink, slightly
+raised, ROUNDED NODULE with an ill-defined margin, and a WEDGE of dilated pink
+vessels runs from the canthal side of the eye toward it and stops at it. The
+remaining conjunctiva is white with fine normal vessels. No labels, no arrows,
+no typed text on the slide.
 
 
---- slide 49 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 48 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: a third photograph of the same disease, this one with a strong MAGENTA /
+VIOLET colour cast over the whole frame (the original slide's colour balance,
+not a rendering fault — the sclera prints pink and the cornea prints blue-purple).
+The eye is rotated upward and away, so the cornea appears as a dark blue-violet
+mass across the upper right and the inferior bulbar conjunctiva fills the lower
+half, criss-crossed by a network of fine tortuous vessels. At the LIMBUS on the
+left of the cornea there is a pale, whitish, slightly RAISED NODULE at the
+corneo-scleral junction, with a bright specular highlight beside it and dilated
+vessels running up to it. Lid margins with lashes cross the top left and bottom
+left. No labels, no arrows, no typed text on the slide.
 
 
---- slide 50 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 49 — (no typed title on this slide) — the lecturer's own hand drawing
+─────────────────────────────────────────────────────────────────────
+PICTURE: a photograph of a HAND-DRAWN diagram on plain white paper, drawn in blue
+ballpoint with red and green pens. It is the only drawn-by-hand figure in the
+deck. Handwritten caption underneath, in the same blue pen, reading:
+
+    Phlyctenular K.C.
+
+(That is the whole of the text on the slide, and it is handwriting inside the
+photograph, not typed slide text. "K.C." is written as an abbreviation.)
+
+The drawing itself — a single large blue circle representing the CORNEA with its
+limbal rim, and FIVE lesions drawn on and around it:
+
+  • upper-left rim of the circle — a segment of the LIMBUS coloured in dense red
+    hatching, i.e. a band of engorged limbal vessels;
+  • upper-right — an elongated lesion straddling the limbal rim, outlined in
+    blue, filled with GREEN hatching, with a RED VESSEL drawn running along its
+    length from the limbus outward onto it;
+  • lower-right, sitting ON the limbal rim — a second elongated, blue-outlined,
+    GREEN-hatched lesion, with a fan of short red strokes (dilated vessels)
+    radiating to it from below and from the right;
+  • bottom-centre of the rim — a small blue circle drawn on the limbus itself,
+    with short red strokes fanning out from it;
+  • bottom-left, well AWAY from the circle on the conjunctiva — a small blue
+    ring with short red strokes radiating all round it in a sunburst.
+
+The drawing therefore contrasts a nodule on the bulbar conjunctiva, a nodule at
+the limbus, and elongated green-marked (i.e. stained / ulcerated) lesions
+straddling and creeping over the limbus, each led by its own vessel leash.
+No typed labels name the individual lesions.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 50 — Pterygium
+─────────────────────────────────────────────────────────────────────
 Pterygium
 
---- slide 51 ---
+(Title in yellow on a black bar across the top of the slide.)
+
+PICTURE: a close clinical photograph of one eye. Growing from the NASAL side of
+the frame is a triangular, FLESHY, VASCULAR FOLD of conjunctiva with a wide base
+at the canthus and an APEX that has crossed the limbus and advanced well onto the
+cornea, reaching almost to the pupil margin. Straight, prominent RED VESSELS run
+within its body in a fan, all pointing toward the apex. The apex itself is
+raised, greyish-white and slightly opaque; the cornea in front of it is clear,
+the iris brown with visible crypts, and there is a wide peripheral corneal haze.
+The interpalpebral conjunctiva to either side of the fold is pink and injected.
+No labels or arrows on the photograph.
 
 
---- slide 52 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 51 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: a very close, slightly soft-focus photograph of the bulbar conjunctiva
+and sclera beside the limbus, with the dark cornea entering at the right edge of
+the frame and the upper lid margin and lashes at the top left. Most of the frame
+is taken up by a broad, YELLOWISH-WHITE, slightly RAISED, ill-defined patch of
+thickened conjunctiva lying in the interpalpebral zone; its surface is faintly
+lobulated and greasy-looking, and only a few fine tortuous vessels run over and
+around it. It reaches up to the limbus but does NOT extend onto the cornea in
+this view. No labels, no arrows, no typed text, and the lesion is not named on
+the slide.
 
 
---- slide 53 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 52 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: THE SAME PHOTOGRAPH AS SLIDE 50, re-shown without the "Pterygium" title
+and enlarged slightly so that the picture fills the whole slide. Verified by
+pixel comparison of the two rendered slides: identical image, shifted and
+rescaled, the only difference being the removed title bar. The fleshy triangular
+nasal fold, its fan of straight red vessels, and the grey-white apex sitting on
+the cornea near the pupil margin are as described for slide 50. No labels, no
+arrows, no typed text on this slide.
 
 
---- slide 54 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 53 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: a high-magnification clinical photograph of the SAME lesion in a
+different eye, framed on the limbus. The left two-thirds is the body of the
+fleshy fold: pink-red, thickened, with many straight vessels running
+horizontally toward the limbus and beyond, and a redder, more injected zone
+below. At the right the fold's HEAD is a raised, glistening, WHITE-GREY mass
+that has climbed over the limbus onto the cornea, with small vessels looping
+over it onto the corneal surface; the cornea beyond it is blue-grey and hazy.
+Lashes of the upper lid at the top left. No labels, no arrows, no typed text.
 
 
---- slide 55 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 54 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: a clinical photograph of an elderly, pale eye, lids held apart. From the
+NASAL side a THIN, PALE, TRANSLUCENT, almost AVASCULAR fold of conjunctiva
+extends across the limbus onto the cornea, its apex reaching close to the pupil
+margin; only a few faint vessels are visible within it and the surrounding
+conjunctiva is white and quiet — the opposite appearance to the fleshy, angry,
+heavily vascular fold of slides 50/52/53. The cornea carries a broad white
+peripheral ring (arcus), the iris is grey-blue with prominent crypts and a few
+pigment spots, and the pupil is small and round. The lower lid margin is pink.
+No labels, no arrows, no typed text on the slide.
 
 
---- slide 56 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 55 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: a two-panel published figure, its panels lettered "A" and "B" in white
+at their top-left corners. The figure is placed to the RIGHT of centre with the
+left half of the slide left blank black, and it RUNS OFF THE RIGHT EDGE OF
+THE SLIDE — only a narrow vertical sliver of panel B is on the slide at all,
+the rest of B lying outside the visible slide area. (This is an image overflowing the
+slide edge, not text running past it and not text hidden under an image.)
+
+  • Panel A (the panel that is actually visible) — a clinical photograph of an
+    eye held open by a speculum (a dark instrument bar crosses the top of the
+    picture, lashes and lid margin at the left). On the bulbar conjunctiva
+    beside the limbus sits a RAISED, PINK-RED, GELATINOUS PLAQUE whose surface
+    is speckled with small YELLOW-ORANGE FLECKS, fed by intensely red, dilated
+    FEEDER VESSELS running to it from the fornix. The plaque abuts the limbus.
+    To its right the cornea is brown and hazy, with a cluster of glistening
+    silvery-white granular specks lying over its surface.
+  • Panel B — visible only as a sliver at the extreme right of the slide:
+    brownish tissue carrying similar glistening white flecks. Its content
+    cannot be read from the slide.
+
+No typed caption; the lesion is not named anywhere on the slide, and there is no
+key to what A and B are meant to contrast.
 
 
---- slide 57 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 56 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: FOUR clinical photographs, arranged as TWO published pairs stacked one
+above the other with a black empty band between the rows. Each photograph carries
+its own source-figure letter in white on a black tab at its lower-left corner —
+the top row is lettered "a" and "b", and the BOTTOM ROW IS ALSO lettered "a" and
+"b" (they are two separate two-panel figures, not one four-panel figure). Both
+pairs are enlarged so that they bleed off the top, bottom and side edges of the
+slide.
+
+  • TOP row, a — eye of a dark-skinned patient. A pale, fleshy, slightly raised
+    FIBROVASCULAR FOLD advances from the NASAL conjunctiva to the limbus and
+    just over it onto the cornea; the conjunctiva around it is pink with visible
+    vessels. Cornea brown, pupil dark with a bright flash reflex.
+  • TOP row, b — a broader, thicker, WHITER fleshy fold advancing onto the
+    cornea from the nasal side, set in an intensely RED, injected conjunctiva
+    with pinpoint red spots — the inflamed version of the same lesion.
+  • BOTTOM row, a — eye of a dark-skinned patient with a WHITE quiet sclera. A
+    small, YELLOWISH-TAN, slightly raised nodule sits on the nasal bulbar
+    conjunctiva close to the limbus but clearly NOT crossing onto the cornea.
+  • BOTTOM row, b — a small PINK-RED raised lesion with a fine red vascular tuft
+    on the nasal bulbar conjunctiva near the limbus, again not crossing it, the
+    rest of the sclera white.
+
+The teaching is the contrast — lesions that cross the limbus in the top row
+against lesions that stop at it in the bottom row — but the slide prints NO
+caption, no title and no label naming either.
 
 
---- slide 58 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 57 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: an INTRA-OPERATIVE photograph taken down the operating microscope. Metal
+instruments are in the field — a lid-speculum blade across the top left, a fine
+hook at the left edge, and the serrated jaws of a forceps entering from the right.
+The cornea (dark, with a bright specular highlight) fills the lower left. Beside
+it the conjunctiva has been opened over bare, bleeding sclera, and a pink-red
+flap of conjunctival tissue has been laid into the defect and secured by a row of
+fine BLACK INTERRUPTED SUTURES, whose short dark knot-ends are visible along two
+edges of the flap. Fresh blood and small subconjunctival haemorrhages lie around
+the graft bed. No labels, no arrows, no typed text — the operation is not named
+on the slide.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 58 — Pingueculum
+─────────────────────────────────────────────────────────────────────
 Pingueculum
 
---- slide 59 ---
+(Spelling exactly as printed — the lecturer writes "Pingueculum", not the usual
+"pinguecula". Title in yellow across the top of a black slide.)
+
+PICTURE: a clinical photograph of one eye of a fair-skinned patient, lids open,
+lashes above and below. On the bulbar conjunctiva in the INTERPALPEBRAL zone,
+NASAL to the cornea, lies a small, YELLOWISH-CREAM, slightly RAISED, ill-defined
+patch of thickened conjunctiva with a faintly lobulated surface; a network of
+fine, normal-calibre conjunctival vessels arches over and around it, and the eye
+is otherwise white and quiet. The patch reaches toward the limbus but STOPS AT IT
+and does not encroach on the cornea. The iris is hazel-green with dense brown
+pigment spots, the pupil round with a bright flash reflex, and the cornea shows a
+grey peripheral ring. Watermark "EyeRounds.org" printed faintly in white at the
+top left of the photograph. No labels or arrows.
 
 
---- slide 60 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 59 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: a clinical photograph filling the whole slide, with a pronounced
+MAGENTA/PINK colour cast. The EXAMINER'S FINGER, entering from the top left, is
+holding the lid back to expose the eye; the upper lid skin and lashes cross the
+top right. The cornea is dark with a bright round flash reflex, the brown iris
+visible at its lower edge. On the exposed BULBAR conjunctiva, in the
+interpalpebral zone a few millimetres from the limbus, lies a slightly RAISED,
+BROWNISH-TAN, irregular, coarsely textured patch of thickened conjunctiva; the
+conjunctiva around it is pale pink with a few fine vessels. Watermark
+"EyeRounds.org" printed white at the lower left of the photograph. No labels, no
+arrows, no typed text, and the lesion is not named on the slide.
 
 
---- slide 61 ---
+─────────────────────────────────────────────────────────────────────
+SLIDE 60 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: a close photograph of the interpalpebral fissure of one eye, the lashes
+of both lids crossing the top and bottom of the frame. At the right are the
+limbus, a hazy grey cornea and a blue-grey iris with a brown sector, carrying
+FOUR BRIGHT SQUARE REFLECTIONS in a square pattern (a four-point instrument
+illuminator reflected off the cornea). The centre and left of the frame are
+bulbar conjunctiva and sclera: mostly white, with a fine arching network of
+conjunctival vessels, and — lying in the interpalpebral zone immediately beside
+the limbus — a slightly RAISED, YELLOWISH-CREAM, ill-defined THICKENING of the
+conjunctiva with a soft yellow blush at its centre. It abuts the limbus but does
+NOT cross onto the cornea. No labels, no arrows, no typed text.
 
 
---- slide 62 ---
-Bit
-Ô
-t Spot
+─────────────────────────────────────────────────────────────────────
+SLIDE 61 — (no typed title on this slide)
+─────────────────────────────────────────────────────────────────────
+PICTURE: THE SAME SLIDE AS SLIDE 59, REPEATED. Verified by pixel comparison of
+the two rendered slides: the two renders are byte-for-byte IDENTICAL — same
+photograph, same size, same position, same "EyeRounds.org" watermark. Nothing has
+been added or removed, and there is no title on either. See slide 59 for the
+description of the picture.
 
---- slide 63 ---
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 62 — Bitôt Spot
+─────────────────────────────────────────────────────────────────────
+Bitôt Spot
+
+(As printed — a CIRCUMFLEX over the o, and no possessive: "Bitôt Spot", not
+"Bitot's spot". Title in yellow across the top of a black slide.)
+
+PICTURE: a close clinical photograph of one eye with the lids held apart, the
+lower lid margin red and rolled at the bottom of the frame. The whole bulbar
+conjunctiva is DRY, DULL AND LUSTRELESS, yellowish-grey rather than white, and
+its surface is WRINKLED into fine folds and cracks like dried mud, with the
+conjunctival vessels standing out over it. Sitting on this dry conjunctiva in the
+INTERPALPEBRAL zone, immediately adjacent to the limbus and just below the
+horizontal meridian, is a raised, TRIANGULAR / IRREGULAR PATCH of CHALKY
+GREYISH-WHITE material with a dry, FOAMY, BUBBLY, CHEESY surface, clearly heaped
+ON the conjunctival surface rather than within it, with a yellow blush at its
+upper edge. The cornea is dark and hazy with a bright rectangular flash reflex.
+No labels or arrows on the photograph.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 63 — Symblepharon
+─────────────────────────────────────────────────────────────────────
 Symblepharon
 
---- slide 64 ---
+(Title in yellow across the top of a black slide.)
+
+PICTURE: a close photograph of the LOWER fornix with the lower lid pulled DOWN.
+Several pale, glistening, taut VERTICAL BANDS of conjunctiva stretch from the
+palpebral conjunctiva of the lower lid across to the bulbar conjunctiva of the
+globe, bridging and OBLITERATING the inferior fornix, which is shallow and
+scarred; between the bands the conjunctiva is pale pink with distorted, drawn-out
+vessels, and to the left the fornix retains a pouch of loose folded conjunctiva
+for comparison. At the top of the frame the inferior cornea is visible and is
+HAZY GREY-WHITE (opacified) rather than clear. No labels or arrows on the
+photograph.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 64 — FB
+─────────────────────────────────────────────────────────────────────
 FB
 
---- slide 65 ---
-Subconjunctival
- hemorrhage
+(As printed — the abbreviation only; the slide does not spell out "foreign body"
+anywhere. Title in yellow across the top of a black slide.)
 
---- slide 66 ---
+PICTURE: an EVERTED UPPER LID photograph. The upper lid has been fully turned
+over — the lashes point down and to the left and the everted tarsal plate faces
+the camera as a smooth, oval, salmon-pink surface, with the patient's globe and
+lower lid behind it at the top of the frame. The TARSAL CONJUNCTIVA is smooth
+and only mildly hyperaemic, with its regular vertical tarsal vessels running from
+the fornix to the lid margin. Sitting on that tarsal surface, a little above its
+centre, is a single small, ROUND, DARK GREY-GREEN FOREIGN BODY with a highlight
+on its upper surface. No follicles, no papillae and no membrane are present. No
+labels or arrows mark the foreign body — the slide relies on the reader finding
+it.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 65 — Subconjunctival hemorrhage
+─────────────────────────────────────────────────────────────────────
+Subconjunctival hemorrhage
+
+(Spelling and capitalisation exactly as printed — the AMERICAN "hemorrhage", and
+a lower-case h on the second word. Title in yellow across the top of a black
+slide.)
+
+PICTURE: FOUR clinical photographs arranged in a 2 × 2 grid on the black slide,
+none of them labelled or captioned:
+
+  • TOP LEFT — a fair-skinned eye with a hazel-green iris. A flat, sharply
+    demarcated, HOMOGENEOUS BRIGHT RED sheet of blood covers the whole TEMPORAL
+    half of the bulbar conjunctiva, running right up to the LIMBUS and out to the
+    lateral canthus; NO individual vessels can be seen through it and there is no
+    discharge. The nasal half of the sclera is perfectly WHITE, giving a knife-
+    sharp border between red and white. The lids and lashes are normal.
+  • TOP RIGHT — a pale-skinned eye with a hazel iris, lower lid slightly
+    everted. A dense flat RED patch of blood lies on the TEMPORAL bulbar
+    conjunctiva and abuts the limbus, again with a sharp edge and clear white
+    sclera elsewhere.
+  • BOTTOM LEFT — an eye with a BLUE iris in which the blood is far more
+    extensive: a uniform bright red sheet covers BOTH the nasal and the temporal
+    bulbar conjunctiva and surrounds the cornea, hiding the sclera almost
+    entirely, and it reaches the lower lid margin. The cornea is clear and the
+    pupil normal.
+  • BOTTOM RIGHT — a young man's eye photographed with the eyebrow in frame.
+    There is dusky PURPLE-BROWN BRUISING of the upper lid and periorbital skin
+    (a black eye) together with a red patch of subconjunctival blood beside the
+    cornea — the traumatic version, and the only panel in which the SKIN is
+    abnormal.
+
+The teaching carried by the set is the appearance itself: flat, sheet-like,
+uniform bright red, sharply bounded, no visible vessels within it, no discharge,
+and the eye otherwise quiet. Nothing is written on any of the four photographs.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 66 — Thank You
+─────────────────────────────────────────────────────────────────────
 Thank You
+
+Closing slide. A plain black slide carrying the words "Thank You" in large yellow
+type, set to the RIGHT of centre and vertically about the middle of the slide.
+There is NO picture on this slide — the only slide in the deck other than the
+title slide with no photograph on it — and no summary, no reference list, no
+contact details and no further text of any kind.
+
+
+═════════════════════════════════════════════════════════════════════
+NOT COVERED ANYWHERE IN THIS DECK
+═════════════════════════════════════════════════════════════════════
+How this was measured. Twenty-nine of the 66 slides carry a typed title; the
+other 37 carry none. The deck's ENTIRE typed content is those 29 titles plus the
+author block on slide 1, the German anatomy labels on slide 2, the six bare
+numerals on slide 5, the figure letters A/B on slide 55 and a/b on slide 56, the
+source watermarks (ONJOPH.com, EyeRounds.org, EYE ROUNDS.ORG), and the
+lecturer's handwritten "Phlyctenular K.C." inside the drawing on slide 49. Every
+one of those strings is reproduced verbatim above, so a term that returns ZERO
+hits on the TRANSCRIPTION BODY of this file appears nowhere in the deck.
+⚠️ The counts below were taken over the 66 slide blocks ONLY, with this closing
+list excluded — grepping the whole file would make the list match itself and
+report every negative as a hit. Where a term does occur in the body but only
+inside a describer's prose, that is stated — the deck itself still never
+prints it.
+
+The 29 typed titles, in full, are the deck's whole vocabulary:
+Conjunctiva · Normal Tarsal Conjunctiva · Discharge · Conjunctival Injection ·
+Ciliary Injection · Chemosis · Follicles · Papillae · PTCs · Scarring ·
+Bacterial Conjunctivitis (Mucopurulent) · (Purulent) · (Membranous) ·
+(Pseudomembranous) · (Angular) · Chlamydial Conjunctivitis (Trachoma) ·
+Trachomatous Pannus · Trachomatous Nebula ex Pannus · Viral Conjunctivitis ·
+Allergic Conjunctivitis · Vernal KeratoConjunctivitis ·
+Phlyctenular KeratoConjunctivitis · Pterygium · Pingueculum · Bitôt Spot ·
+Symblepharon · FB · Subconjunctival hemorrhage · Thank You.
+Everything not on that list is taught by photograph or not at all.
+
+NAMED GRADING AND STAGING SYSTEMS — none, anywhere.
+  • MacCallan = 0 hits (also spelt McCallan = 0). The four-stage trachoma
+    classification is not named, numbered or drawn.
+  • The WHO simplified trachoma grading is absent as a system AND as codes:
+    \bWHO\b = 0, "grading" = 0, "Grade" = 0, \bTF\b = \bTI\b = \bTS\b = \bTT\b =
+    \bCO\b = 0. ("stage" occurs once, at slide 33, and it is a describer's word,
+    not the deck's.)
+  • No severity scale of any kind for any other disease in the deck.
+
+NAMED ORGANISMS — the deck names NOT ONE, not even where its own titles are
+bacterial or chlamydial.
+  • Staphyl = 0 · Streptoc = 0 · Pseudomon = 0 · Neisseria = 0 · gonorrhoea /
+    gonorrhea = 0 · Haemophil = 0 · Koch-Weeks = 0 · Morax / Moraxella = 0 ·
+    Corynebact = 0 · diphther = 0 · "Chlamydia trachomatis" = 0 · adenovirus = 0
+    · enterovirus = 0 · picornav = 0 · Herpes = 0 · molluscum = 0 · tuberc = 0.
+  • The five bacterial-conjunctivitis slides (17–24) are titled by DISCHARGE and
+    MEMBRANE type only. "Angular" conjunctivitis is titled without its organism.
+    The trachoma title says "Chlamydial", which is the closest the deck comes.
+
+NAMED EPONYMOUS SIGNS — the signs are PHOTOGRAPHED but never named.
+  • Trantas (Horner–Trantas dots) = 0 hits, yet the chalky white limbal dots are
+    the entire content of slides 39, 40, 41 and 42 — four slides, one of them
+    carrying a black arrow pointing straight at them, and none of them captioned.
+  • Herbert (Herbert's pits) = 0 · Arlt (Arlt's line) = 0, although trachomatous
+    scarring is titled on slide 16 and re-shown at 32–33.
+  • gerontoxon (pseudogerontoxon) = 0 · Parinaud = 0 · Thygeson = 0 · Axenfeld =
+    0 · Beal = 0 · Maxwell = 0.
+  • "shield" = 0 and "giant papillary" = 0 — the corneal plaque of slide 44 is
+    arrowed from four sides and never named; "shield ulcer" is not written.
+  • "Bitôt Spot" (slide 62) is the ONLY eponym the deck prints, and it prints it
+    with a circumflex and without the possessive.
+
+NAMED INVESTIGATIONS — none. Not one test is ordered or named anywhere.
+  • "conjunctival scraping" = 0 · "scraping" = 0 · "Gram stain" = 0 (\bGram\b =
+    0; the six "gram" substrings are all inside "diagram") · Giemsa = 0 ·
+    "inclusion" bodies = 0 · culture = 0 · serolog = 0 · PCR = 0 · "impression"
+    cytology = 0 · cytolog = 0 · biopsy = 0 · smear = 0.
+  • "swab" occurs ONCE, at slide 21, and it is a cotton swab visible IN a
+    photograph wiping discharge — not a specimen being taken and not a named
+    test. "fluorescein" occurs once, at slide 13, as a describer's reading of a
+    green-stained ulcer; the deck prints no dye and no staining test.
+  • Rose bengal = 0 · Schirmer = 0.
+
+DRUGS, DOSES AND DURATIONS — the deck contains NO pharmacology at all.
+  • tetracycl = 0 · azithro = 0 · erythromy = 0 · sulfa = 0 · chloramph = 0 ·
+    acyclovir / aciclovir = 0 · steroid = 0 · cortico = 0 · cromoglyc = 0 ·
+    olopatadine = 0 · antihistamin = 0 · cyclosporin = 0 · tacrolimus = 0 ·
+    "supratarsal" injection = 0 · mitomycin = 0 · "beta irradiation" = 0 ·
+    "silver nitrate" = 0 / Credé = 0 · lubricant = 0 · "artificial tear" = 0 ·
+    "cold compress" = 0 · irrigat = 0 · "vitamin A" = 0 · retinol = 0.
+  • No number expressing a dose, a strength, a frequency or a course length
+    appears on any slide: "mg" = 0, "dose" = 0, "week" = 0, "day" = 0.
+  • Slide 62 is titled Bitôt Spot and does NOT mention vitamin A, measles or
+    malnutrition (measles = 0, malnutrition = 0, xero* = 0, keratomalacia = 0).
+
+MANAGEMENT AND SURGERY — shown once, named never.
+  • Slide 57 is an operative photograph of an excision with a sutured graft, and
+    the words excision, graft, suture, autograft, "bare sclera", "limbal stem",
+    amniotic, anaesth*, topical, systemic — all = 0 as the deck's own text
+    ("excis", "graft", "suture", "operation" occur only in this file's describing
+    prose for that slide, never on the slide).
+  • treatment = 0 · management = 0 · indication = 0 · "recurrence rate" = 0 ·
+    prognosis = 0. Nothing in the deck says WHEN to operate or WHAT the
+    recurrence risk is.
+
+PUBLIC-HEALTH AND NOTIFIABLE-DISEASE DETAIL — entirely absent, including for
+trachoma, which is the deck's largest disease block (slides 25–33).
+  • notifi* = 0 · "public health" = 0 · "SAFE strategy" = 0 · "face washing" = 0
+    · latrine = 0 · "mass treatment" = 0 · fly / flies = 0 · hygiene = 0 ·
+    epidemic = 0 · contagio* = 0 · isolation = 0 · school = 0 · vaccin* = 0 ·
+    prevent* = 0 · incubation = 0.
+  • Nothing on transmission, on who is at risk, or on the endemic setting.
+
+DISEASE FRAMEWORK — the deck has no prose of any kind, so it also has none of:
+  • definition = 0 · classif* = 0 · aetiolog* / etiolog* = 0 · "differential" = 0
+    · complication = 0 as a heading (the word occurs once, in describing prose)
+    · "risk factor" = 0 · UV / ultraviolet / sunlight / dust / wind = 0 (so the
+    pterygium slides 50–57 give NO cause) · hypersensitiv* / "type I" / "type IV"
+    / IgE / eosinophil = 0 (so the allergic slides 37–45 give NO mechanism).
+  • No patient age, sex or history is stated anywhere: children = 0, adult = 0,
+    male = 0, female = 0.
+  • ophthalmia neonatorum = 0 ("neonatorum" = 0) — not a slide, not a mention.
+  • Dry-eye disease is not in the deck: sicca = 0, Sjögren = 0, "dry eye" = 0.
+  • Conjunctival TUMOURS are not named: naevus / nevus = 0, melanoma = 0,
+    melanosis = 0, squamous = 0, neoplas* = 0, OSSN = 0, lymphoma = 0, Kaposi =
+    0, dermoid = 0, cyst = 0, concretion = 0, lithiasis = 0. Slide 55 shows a
+    gelatinous limbal mass with feeder vessels and slide 59/61 a brown
+    conjunctival patch — both unnamed, and there is no tumour vocabulary
+    anywhere in the deck to attach to them.
+  • Chemical injury is absent: "chemical burn" = 0, alkali = 0, "acid burn" = 0 —
+    so Symblepharon (slide 63) is titled with NO cause given, and pemphig* = 0
+    and "Stevens"-Johnson = 0 as well. trichiasis = 0 and entropion = 0, so the
+    scarring consequences are not listed either.
+  • Causes of subconjunctival haemorrhage are not given: Valsalva = 0,
+    hypertens* = 0, anticoagul* = 0, leuk* = 0. The traumatic panel (65, bottom
+    right) shows periorbital bruising and says nothing.
+
+TWO THINGS THE DECK DOES CARRY THAT ARE EASY TO MISS, so do not record them as
+absent:
+  • The lid-eversion TECHNIQUE is taught in full on slide 4 — four panels, step
+    by step — with no caption, no numbering and no text.
+  • Slide 5 numbers six conjunctival anatomical positions 1–6 on a photograph and
+    prints NO KEY. The numerals exist; the names do not, on that slide or any
+    other.
+
+⚠️ Finally, and it is the single most useful negative in this file: APART FROM
+THE AUTHOR'S OWN CREDENTIALS ON SLIDE 1, NO SLIDE IN THIS DECK CARRIES A
+SENTENCE. There is not one bullet, not one definition, not one list of causes,
+and not one management line in all 66 slides. Anything a question needs beyond a
+title word and a clinical appearance is NOT IN THIS DECK and must come from
+another source.
