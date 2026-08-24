@@ -236,13 +236,30 @@ bounds at 400 dpi, what the photograph shows, and whether the stem is answerable
   samples `(130,130,130)` and `(93,94,88)` — max minus min of **6** — and reads as blank paper.
   **Seven per cent of the picture was being discarded, and the same blindness clips whichever edge
   happens to be shadowed.** Tool: `<scratch>\oph\bounds.js <page.png> x1 y1 x2 y2`.
-- **⚠️ THE ASPECT RATIO IS THE CHEAP CHECK.** A shipped crop is 560 px wide, so its ratio must match
-  the photograph's true ratio on the page. A clip on any edge changes it, and comparing the two
-  numbers catches a bad bound without looking at a single pixel. On the crop that failed, the ship
-  ratio was **2.90:1** against a true **3.04:1** — the ratio itself was the evidence.
+- **⚠️ THE ASPECT RATIO IS THE CHEAP CHECK — WITH A MEASURED NOISE FLOOR AND A KNOWN BLIND SPOT.**
+  A shipped crop is 560 px wide, so its ratio should match the photograph's true ratio on the page.
+  On the crop that failed, the ship ratio was **2.90:1** against a true **3.04:1** — a **3.5 %**
+  delta, and the ratio alone was the evidence.
+  · **The noise floor is ~1 %, and it was measured, not guessed:** `q-op-gg-254` and `q-op-gg-257`
+    are the SAME photograph reprinted on facing pages and scanned separately, and their true ratios
+    differ by **1.07 %** from each other. **Under ~1 % is not a clip on this book.**
+  · **⚠️ A SYMMETRIC CLIP PRESERVES THE RATIO EXACTLY**, so the ratio can never be the only test.
+    Back it with a pixel diff: cut the true bounds, scale to the shipped size, and compare. Seven
+    clean crops scored **5.7–8.2** mean absolute difference per channel; deliberately clipping 60 px
+    off one edge took the same metric to **15.49**.
 - **⚠️ ZERO WHITE MARGIN ON ALL FOUR SIDES IS A WARNING, NOT A COMPLIMENT.** It is the signature of a
   crop sitting *inside* the photograph on every edge. A correct cut with a 3 px pad still shows a
   hairline of paper after downscaling.
+- **⚠️ DO NOT BOUND FROM A DOWNSCALED PAGE.** Reading a page at 4× reduction placed one photograph's
+  right edge at x ~2992 when it is **x 3104** — dark content washes out when downscaled, which is
+  the *same* failure mode as the saturation scan. **Bound at full resolution, always.**
+- **⚠️ A STRICTER FILL THRESHOLD IS ITSELF A FALSE-FAILURE GENERATOR.** Using 90 %-solid row and
+  column runs instead of tight ink bounds reported a correct crop as 1.7 % clipped, because
+  strict-fill trims soft photo edges asymmetrically. **Tight ink bounds is the contract.**
+- ✅ **All seven crops shipped before this rule existed were audited and are CLEAN** — proved by
+  re-running the broken test and showing the shipped ratios track the CORRECTED bounds, not the
+  broken ones. On `q-op-gg-288` the saturation test would have discarded **67 %** of the picture,
+  including the lesion the question asks about, and the shipped crop has it.
 - **⚠️ `image` STORES THE BASENAME WITH NO EXTENSION** — `qImgSrc()` appends `.jpg`.
 - **⚠️ `imgAlt` IS MODALITY AND VIEW ONLY.** Where the stem asks *what causes the sign shown*, the
   sign itself must not be named — calling the cornea hazy hands over half the inference. The

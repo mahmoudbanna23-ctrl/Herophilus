@@ -10684,3 +10684,58 @@ CAUSES it, so naming the finding would destroy the question — and the verifyin
 register down further than the brief allowed on `opqb-t8-330`, refusing even to call the cornea hazy
 because *"the sign here IS a corneal appearance"*. That is the right reading and it is now the
 standard.
+
+### ⚠️⚠️ THE CROP INK TEST WAS STRUCTURALLY WRONG — AND THE AUDIT FOUND THE SHIPPED CROPS CLEAN ANYWAY
+
+A saturated-pixel scan — *"is this pixel colourful?"* — was used to bound the topic-5 figure. It is
+**blind to dark desaturated content, and that is what the edge of a clinical photograph is made
+of**: shadowed skin, black pupils, dark hair, grey drapes.
+
+It put the photograph's left edge at **x 1889**; the true edge is **x 1802**. The 86 px strip
+between them samples `(130,130,130)` and `(93,94,88)` — **max minus min of six** — which reads as
+blank paper. **Seven per cent of the picture was discarded**, and the same blindness would clip
+whichever edge of any crop happens to be shadowed.
+
+> **The ink test is `max(r,g,b) < 225  OR  (max − min) > 30`, and the first half is the one that
+> matters.** Tool: `<scratch>\oph\bounds.js`.
+
+#### ✅ The audit of the seven already-shipped crops: ALL CLEAN, and proved rather than assumed
+
+The auditing agent did not compare the shipped crops against the corrected bounds and call it a day.
+**It re-ran the BROKEN test on the same windows and showed what it WOULD have produced**, then asked
+which set the shipped files actually match:
+
+| crop | corrected bound | saturation-only would give | shipped tracks |
+|---|---|---|---|
+| `q-op-gg-255` | right x 2695 | x **2613** — 10.6 % lost | **corrected** |
+| `q-op-gg-288` | x 487–1539, y 2835–3519 | x 489–**1183**, y **3185**–3518 — **67 % of the picture gone** | **corrected** |
+| `q-op-gg-330` | top y 2911 | y **2928** | **corrected** |
+
+**On `q-op-gg-288` the broken test would have thrown away the dark blue-black lesion the question
+asks about, and the shipped crop has it.** So those crops were never cut with the broken scan; only
+the topic-5 transcriber's reported coordinates were. All seven measure **0.02–0.49 %** from true.
+
+#### ⚠️ Three corrections to my own crop rule, every one from the audit
+
+1. **⚠️ A SYMMETRIC CLIP PRESERVES THE ASPECT RATIO EXACTLY**, so the ratio can never be the only
+   test. Backed now with a pixel diff: seven clean crops scored **5.7–8.2** mean absolute difference
+   per channel, and deliberately clipping 60 px off one edge took the same metric to **15.49**.
+2. **⚠️ THE NOISE FLOOR IS ~1 %, AND IT WAS MEASURED.** `q-op-gg-254` and `q-op-gg-257` are the same
+   photograph reprinted on facing pages and scanned separately; their true ratios differ by
+   **1.07 %** from each other — more than either differs from its own shipped crop. **Under ~1 % is
+   not a clip on this book.** The failed crop was **3.5 %** off.
+3. **⚠️ A STRICTER FILL THRESHOLD IS ITSELF A FALSE-FAILURE GENERATOR.** A first pass using
+   90 %-solid row and column runs reported a correct crop as 1.7 % clipped, because strict-fill
+   trims soft photo edges asymmetrically. **Tight ink bounds is the contract; the solid-run
+   heuristic is not.**
+
+⚠️ **AND A RELATED BLINDNESS, WORTH MORE THAN THE ORIGINAL BUG WITH ~304 CROPS STILL TO CUT:**
+reading the page at 4× reduction placed one photograph's right edge at x ~2992 when it is **x 3104**.
+**Dark content washes out when downscaled, which is the SAME failure mode as the saturation scan.**
+Eyeballing a shrunken page and running a saturation test are the same mistake wearing different
+clothes. **Bound at full resolution, always.**
+
+`opqb-t5-198` was re-cut at the corrected bounds — ratio now **0.11 %** from true, against **3.52 %**
+before — and wired with an alt the verifying agent argued down to modality and view alone, because
+the stem asks *"what is the name of the following condition?"* and describing the lid margins would
+answer it.
