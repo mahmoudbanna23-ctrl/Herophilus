@@ -616,11 +616,20 @@ the interval between the two stages.
 
 
 ─────────────────────────────────────────────────────────────────────
-SLIDE 27 — [picture only] Four-panel book figure — squamous cell
-carcinoma (A)–(D)
+SLIDE 27 — [picture only] Four-panel book figure — histology and three
+lid-margin lesions (A)–(D)
 ─────────────────────────────────────────────────────────────────────
 Four panels labelled (A) to (D) with a printed book caption line under
 the bottom row.
+⚠️ HEADING CORRECTED 2026-08-24. It previously read "three DESTRUCTIVE
+lid-margin TUMOURS". Both words are diagnoses, and this slide's whole
+point is that its caption cannot be read — so the heading was asserting
+exactly what the body below it declines to assert. "Lesions" is what is
+visible. (Panel C's lid margin genuinely IS destroyed, and that is said
+below as an observation of the picture, not as a class for all three.)
+A heading is a claim like any other, and it is the line a later reader
+quotes.
+
 PRINTED CAPTION: [caption present but illegible]. Re-rendered at 300,
 400 and 600 dpi: the caption row is blurred IN THE PASTED SCREENSHOT
 and does not sharpen. The bold figure number and the first words are
@@ -728,8 +737,8 @@ ulcerated crusted lesion sits on the side of the nose, and further
 small pearly papules stud both cheeks.
 [my reading, not printed] multiple synchronous skin tumours of the face
 and lid margins in a young patient — the picture of an inherited
-tumour-predisposition state rather than a single sporadic lesion. THE
-SLIDE NAMES NO SYNDROME and the book caption cannot be read, so no
+tumour-predisposition state rather than a single sporadic lesion.
+THE SLIDE NAMES NO SYNDROME and the book caption cannot be read, so no
 syndrome name may be sourced from this deck.
 
 
@@ -1744,3 +1753,149 @@ normal cornea can be seen. The lower lid is pushed down, a dark shadow
 lies at the medial canthus, and the lashes are long and dark.
 This is the last slide in the deck. It carries no summary, no
 conclusion, no reference list and no "thank you" slide.
+
+
+═════════════════════════════════════════════════════════════════════
+NOT COVERED ANYWHERE IN THIS DECK
+═════════════════════════════════════════════════════════════════════
+Every item below was checked by grepping this transcription, which
+records EVERY typed word on all 70 slides. Where a thing is SHOWN as a
+picture but never named in words, that is said explicitly — a
+photographed sign is still taught, and this list must not be read as
+"the deck does not teach it", only as "the deck does not WRITE it".
+
+⚠️ Read the whole list against one fact: OF 70 SLIDES, ONLY SIX PLACES
+CARRY READABLE TYPED WORDS — the title (1), the buphthalmos banner
+(60), the two yellow "Differential diagnosis" banners (63, 64), and the
+printed BOOK captions/labels on 36, 39, 48, 52, 62 and 69. Everything
+else is bare photography. Almost any wording question therefore has the
+same answer, and the value of this list is that it says so item by item.
+
+NAMED MEASUREMENTS
+• "MRD" is printed ONCE, as a three-letter label inside panel (A) of
+  the left figure on slide 39, with a bracket from the corneal light
+  reflex to the upper lid margin. The words "margin reflex distance"
+  are NOT legible anywhere — that caption is blurred in the paste
+  (measured: re-rendered at 300, 400 and 500 dpi, the blur is in the
+  pasted screenshot and does not resolve). NO NUMERIC MRD VALUE, no
+  normal range and no millimetre cut-off appears anywhere in the deck.
+• LEVATOR FUNCTION: the word "levator" occurs ZERO times in all 70
+  slides. The measurement is DRAWN — slide 39's right-hand figure shows
+  the brow held with the thumb and a millimetre ruler in front of the
+  eye in downgaze and upgaze — but the figure has no caption at all,
+  and NO GRADE, NO NUMBER and NO NAME is printed for it. The only
+  digits printed on the ruler are "10" and "20".
+• PALPEBRAL FISSURE DIMENSIONS: no height, no width, no interpalpebral
+  distance, no inner-canthal distance, in any unit, anywhere.
+• CORNEAL DIAMETER: never given, including on the buphthalmos slide
+  (60) and the large-opaque-cornea figure (69).
+• INTRAOCULAR PRESSURE, exophthalmometry and PROPTOSIS IN MILLIMETRES:
+  "IOP", "intraocular pressure", "tonometr", "Hertel" and
+  "exophthalmomet" all return ZERO. Slides 59, 60 and 61 show marked
+  proptosis and never measure it.
+• VISUAL ACUITY: zero occurrences. Not one of the 70 slides records
+  vision, in any notation, for any of these eyes.
+• The ONLY numerals printed anywhere in the deck are: the ruler's "10"
+  and "20" (39), the syringe graduations "0.5 1 1.5 2 2.5 3ml" (53),
+  the book figure numbers (2.47, 2.48, 3.19, 3.21, 3.22, 4.11) and a CT
+  date stamp (56).
+
+NAMED OPERATIONS AND THEIR INDICATIONS
+• NOT ONE OPERATION IS NAMED IN THE WHOLE DECK. All of these return
+  ZERO: "frontalis", "sling", "Fasanella", "Hughes", "Cutler",
+  "Mustardé"/"Mustard", "tarsorrhaph", "enucleat", "eviscerat",
+  "exenterat", "dacryocystorhinostom", "DCR", "Mohs".
+• The operations are nevertheless PHOTOGRAPHED, several of them in
+  full sequence, and a reader who wants them must read the pictures:
+  full-thickness pentagonal lid excision with direct closure (24); a
+  transposition skin flap (25); a two-stage flap taken from the upper
+  lid to rebuild the lower and divided at a second sitting (26); a free
+  graft under a tie-over bolster (32) and under a rubber-tube bolster
+  (33); lid-crease ptosis surgery (40, 41, 44); BROW-stitch ptosis
+  surgery (42, 43); delivery of an orbital mass through an outer-brow
+  incision (53); and the globe opened under a lid speculum (66).
+• NO INDICATION is stated for any of them — nothing says how much lid
+  may be closed directly, when a flap is needed instead, when the brow
+  route is chosen over the lid crease, or what interval separates the
+  two stages of the sharing flap on slide 26.
+• "probing", "syringing" and the "Jones" dye tests return ZERO. Slides
+  28, 49, 50 and 51 all photograph pressure on the lacrimal sac; the
+  manoeuvre is never named and no test is described.
+
+NAMED CLASSIFICATIONS
+• NO CLASSIFICATION IS PRINTED as a list anywhere. The single nearest
+  thing is the BOOK caption of Fig. 2.47 on slide 36, which names four
+  causes of ptosis — "Neurogenic (III nerve palsy)", "myogenic",
+  "aponeurotic", "mechanical (neurofibroma)" — and Fig. 2.48's four
+  causes of pseudoptosis. Those eight phrases are the ONLY aetiological
+  classification in the deck, and they are the book's, not the
+  lecturer's.
+• No grading of ptosis severity, no types of ectropion or entropion, no
+  classification of proptosis, of lid tumours or of lacrimal disease.
+• The two slides actually headed "Differential diagnosis" (63, 64) list
+  NOTHING — the banner is the entire text.
+
+NAMED SYNDROMES
+• "Crouzon", "Apert" (as a word — the 52 raw hits are all "aperture"),
+  "Marcus" (Gunn), "Horner", "Graves", "myasthen", "sarcoid",
+  "blepharophimosis", "blepharochalasis", "dermatochalasis" and
+  "telecanth" ALL RETURN ZERO.
+• Slide 37 shows the full picture of short fissures with bilateral
+  droop, wide-set inner canthi and folds running up from the lower lid,
+  and names none of it. Slide 59's craniofacial child is unnamed. Slide
+  30's face studded with tumours is unnamed. Slide 60's woman with
+  hemifacial expansion is unnamed.
+• "thyroid eye disease" appears ONCE, inside the book caption of Fig.
+  4.11 on slide 62 — the lecturer never writes it.
+
+EPONYMOUS SIGNS
+• THREE eponyms are printed, ALL of them on slide 62 and ALL inside the
+  BOOK'S caption of Fig. 4.11: "Dalrymple sign", "Kocher sign" and "von
+  Graefe sign". They are the only eponyms in the deck.
+• ⚠️ HERING'S LAW / the fellow-lid drop is PHOTOGRAPHED IN FULL on
+  slide 38 — the ptotic lid lifted with a finger and the opposite lid
+  visibly falling — and the word "Hering" occurs ZERO times. This is
+  the deck's clearest example of a named sign taught entirely by
+  picture.
+• "Bell" as a word occurs ZERO times (the 27 raw hits are all
+  "labelled"). Bell's phenomenon is neither named nor demonstrated.
+• Slide 62 panel (A), which the caption calls "Mild left lid
+  retraction", IS NOT ON THE SLIDE — only panels (B), (C) and (D) were
+  pasted. The caption promises four pictures and three are present.
+
+DRUG DOSES AND MEDICAL TREATMENT
+• ZERO occurrences of "dose", "mg", "antibiotic", "steroid",
+  "radiotherap", "chemotherap" or "cryo" as a treatment (the 8 raw
+  "cryo" hits are all inside "dacryocoele"/"dacryocystitis").
+• NO DRUG IS NAMED ANYWHERE IN THE DECK, and no medical treatment of
+  any kind is written down.
+
+SPECIFIC MANAGEMENT STEPS
+• No follow-up interval, no suture-removal time, no bolster-removal
+  time, no timing between the two stages on slide 26, no indication for
+  imaging, no referral criterion.
+• "biopsy" returns ZERO. Histology is SHOWN once (slide 27, panel A,
+  an H&E section) and the word is never printed; no report, no margin
+  and no grade accompanies it.
+• "amblyop" returns ZERO — including on the paediatric ptosis slides
+  (37, 40, 42, 43), where occlusion of the visual axis is plainly
+  photographed.
+
+WHAT THE PICTURES SHOW BUT THE WORDS NEVER SAY — a diagnosis taken from
+this deck alone can only be "the lecturer showed a picture of X". The
+following are photographed and NEVER NAMED: anterior blepharitis;
+chalazion surgery; trichiasis; ectropion and entropion repair; infantile
+periocular vascular lesions; every lid tumour in slides 23, 27, 30, 31,
+32 and 33; failure of lid closure (34); enlarged hazy infant corneas
+(35); blepharophimosis-type facies (37); Hering's fellow-lid drop (38);
+levator excursion (39); every ptosis operation (40–44); lid laceration
+and canalicular-zone repair (46, 47); the regurgitation test (28, 49,
+50, 51); the anophthalmic socket (58); orbital masses (53, 56, 59, 61);
+and every one of the eight "differential diagnosis" pictures (63–70).
+
+⚠️ FINAL WARNING, carried over from the header and confirmed across all
+70 slides: THIS DECK CANNOT GROUND A FACTUAL CLAIM ON ITS OWN. It can
+prove that a subject was SHOWN, and it can supply verbatim book
+captions from six slides. Everything else in this file that reads as
+prose is either a `[my reading, not printed]` or a `PICTURE:`
+description, and neither may be quoted as if the lecturer said it.

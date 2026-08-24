@@ -10539,3 +10539,71 @@ The sweep's false positives behaved exactly as documented: t4's single candidate
 **positional-vocabulary** shape at F 0.57 (*superior/inferior/medial/lateral* shared between lacrimal
 ducts and thyroid EOM involvement), and its one self-sweep hit at stem 0.75 was a **correctly
 repaired back-reference** — one vignette, two different questions, different options, different keys.
+
+### ⚠️⚠️ A SECOND USAGE LIMIT, AND AN EXCEPTION TO "A DEAD AGENT'S FILE IS USUALLY COMPLETE"
+
+The standing rule, paid for six times in ENT, is *"a dead agent's file is usually complete — validate
+from disk before rewriting."* It held again this morning, when four agents left 160 finished slides
+between them. **But the second usage limit of the day, at 8:50 pm, killed two agents whose LAST WORDS
+NAMED A FAULT THEY WERE MID-WAY THROUGH FIXING:**
+
+> *"I reordered Q374's options — that was wrong. Fixing it back to printed order."*
+> *"Now let me fix the slide 27 heading, which asserted a diagnosis I could not actually read."*
+
+**That is the opposite case, and it inverts the rule.** The file is not *probably fine*; it is
+**known bad at a named location**, and the fix is owed. Both were checked immediately rather than
+assumed either way:
+
+- ✅ **Q374 was already correct.** The revert had completed before the kill. Verified not by reading
+  the agent's words but by comparing all 50 drafted entries against the verbatim staging record.
+- ❌ **The slide-27 heading was NOT fixed.** It still read *"histology and three **destructive
+  lid-margin tumours** (A)–(D)"* while the body beneath it said, carefully and at length, that the
+  printed caption is illegible at 300, 400 and 600 dpi and that it would not guess the words.
+  **The heading was asserting exactly what the body declined to assert.** Corrected to *"three
+  lid-margin lesions"*, with a note in place explaining why.
+
+> **⚠️ A HEADING IS A CLAIM LIKE ANY OTHER, AND IT IS THE LINE A LATER READER QUOTES.** Panel C's lid
+> margin genuinely is destroyed and the body says so as an observation of that picture — but
+> promoting one panel's finding into a class for all three, in a heading, over a caption nobody can
+> read, is how an invention enters a cache and is then cited as source.
+
+**The rule, restated: read the agent's last words. If they name a defect, the file contains it until
+proved otherwise; if they do not, the file is probably complete. Either way, check the disk.**
+
+### ✅ `stagecheck.js` — the instrument the Q374 scare produced, and what it found in already-merged work
+
+Written to answer *"did the reorder survive?"* and generalised: it compares a **draft** against its
+own **verbatim staging record**, on three things that have each bitten this project.
+
+1. **OPTION ORDER AND TEXT.** `answer` is an INDEX into `options`, so **reordering the options
+   silently re-keys the question to a different answer.** The staging record is the printed truth.
+2. **THE KEY.** Staging stores the printed LETTER, the draft a zero-based index. A mismatch ships the
+   wrong answer.
+3. **COVERAGE.** Every staged number drafted; nothing drafted that was never staged.
+
+Option text is compared after stripping markdown emphasis and trailing punctuation only — the draft
+legitimately bolds what the staging record, being verbatim, does not.
+
+**Run retroactively over every merged topic**, which is the point of building it late:
+
+| Topic | Verdict |
+|---|---|
+| gg-t9 (unmerged) | 50 of 50 drafted entries match exactly — **the Q374 revert had completed** |
+| gg-t7 | ✅ clean |
+| gg-t6 | ✅ clean — the only "not drafted" are **Q269 and Q277, the two folded** |
+| gg-t8 | ✅ clean — the only "not drafted" is **Q327, the folded one** |
+| gg-t4 | **two option-text differences, both deliberate and both correctly recorded** |
+
+**⚠️ AND THE TWO gg-t4 DIFFERENCES ARE THE RULE WORKING, NOT BREAKING IT.** *"Fix errors, never
+silently overwrite the source: transcription faults are repaired in place; where the source itself is
+wrong, correct it and record what the bank printed, cited."* Both halves were done:
+
+- `opqb-t4-148` ships *"There is probably no common canalicular obstruction"*; the bank prints
+  **"there is no probably a common canalicular obstruction"**, and the entry quotes that, adding
+  that read as intended the option is TRUE and **only the misprint stops it being a second correct
+  answer.**
+- `opqb-t4-161` ships *"superior fornix"*; the bank prints **"superior formix"** — **on the keyed
+  option**, while B, C and D all print it correctly — and the entry says so.
+
+**A check that flags a correct repair is not a false positive; it is the check asking you to show
+the receipt.** Both showed it.
