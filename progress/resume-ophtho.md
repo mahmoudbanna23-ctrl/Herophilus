@@ -61,15 +61,15 @@ arithmetic and **always renders one page past**, which is not optional on this b
 | 02 Optics & Errors of Refraction | 41 | **41** | 41 | 0 | 8 | ✅ |
 | 03 Orbit | 26 | **26** | 26 | 0 | 4 | ✅ |
 | 04 Lacrimal System | 26 | **26** | 26 | 0 | 6 | ✅ 2026-08-24 |
-| 05 Eyelids | 59 | — | — | — | — | rendered, not started |
+| 05 Eyelid | 59 | **59** (Q165–223) | 59 | 0 | 4 | ✅ 2026-08-24 |
 | 06 Conjunctiva | 65 | **65** (Q224–288) | **63** | **2** | 9 | ✅ 2026-08-24 |
 | 07 Sclera | 8 | **8** (Q289–296) | 8 | 0 | 3 | ✅ 2026-08-24 |
 | 08 Cornea | 52 | **52** (Q297–348) | **51** | **1** | 12 | ✅ 2026-08-24 |
 | 09 Lens | 61 | **61** (Q349–409) | **60** | **1** | 12 | ✅ 2026-08-24 |
-| 10 Uveal Tract | 38 | — | — | — | — | rendered |
-| 11 Glaucoma | 50 | — | — | — | — | rendered |
+| 10 Uveal Tract | 38 | — | — | — | — | drafting |
+| 11 Glaucoma | 50 | — | — | — | — | drafting |
 | 12 Vitreous | 15 | — | — | — | — | rendered |
-| 13 Retina | 69 | **69** (Q513–581) | 69 drafted | — | 19 | sweeping |
+| 13 Retina | 69 | **69** (Q513–581) | **69** | 0 | 19 | ✅ 2026-08-24 |
 | 14–28 | 567 | — | — | — | — | t14–t20 rendered and queued |
 
 ### Topic-by-topic status, House (Part A)
@@ -79,8 +79,9 @@ arithmetic and **always renders one page past**, which is not optional on this b
 | 1 | Examination of the eye | **56** | 56 | 0 | 0 | ✅ merged 2026-08-24 |
 | 2 | Optics & errors of refraction | **32** | 32 | 0 | **0** | ✅ 2026-08-24 |
 | 3 | The Orbit | **28** | **27** | **1** | **0** | ✅ 2026-08-24 |
-| 4 | Lacrimal system | ? | — | — | — | drafting |
-| 5–20 | — | ~750 | — | — | — | not started |
+| 4 | Lacrimal system | **30** | **29** | **1** | **0** | ✅ 2026-08-24 |
+| 5 | Eyelids | ? | — | — | — | rendered, not started |
+| 6–20 | — | ~720 | — | — | — | not started |
 
 **⚠️ House prints NO explanation box and NO figure in chapters 1, 2 or 3** — but that is a property of
 the PAGE, counted each time, never carried forward.
