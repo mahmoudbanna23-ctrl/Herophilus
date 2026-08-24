@@ -1,660 +1,2547 @@
-SOURCE: Semester 8\Opthalmo\Theoritical\PPT\L1,2) Ocular Anatomy, Symptomatology & Basic Eye Examination.pdf
+L1,2) Ocular Anatomy, Symptomatology & Basic Eye Examination.pdf —
+"Anatomy, Physiology & Symptomatology of the EYE", Tamer Massoud MD, PhD
+==========================================
+136 slides. READ VISUALLY 2026-08-24 and cached here.
 
+⚠️ DO NOT RE-EXTRACT THIS DECK WITH pdftotext. It returns ~19,983 characters,
+which looks like a real text layer, but 83 of the 136 slides extract as BLANK —
+every one of them carrying only the identical running header "Anatomy &
+Physiology". The extraction is a partial and must not be treated as ground
+truth. This file was produced by rendering the deck at 150 dpi into 34 four-up
+contact sheets and reading them as images.
+
+SECTION MAP — FINAL, all 136 slides. The deck runs three subjects back to back,
+each opened by its own green-scroll title slide.
+
+  1            Title slide — "Anatomy, Physiology & Symptomatology of the EYE"
+
+  PART 1 — ANATOMY & PHYSIOLOGY .............................. slides 2–70
+  2            section title "Anatomy & Physiology of the Eye and Periocular
+               Tissues"; from here every slide carries the running header
+               "Anatomy & Physiology"
+  3–11         the globe as a whole; dimensions; coats; sclera; cornea;
+               conjunctiva
+  12–25        uvea, iris, ciliary body, lens and accommodation; the anterior
+               chamber angle, gonioscopy and aqueous outflow
+  26–38        choroid, retina, fovea, blood supply, vitreous
+  39           anterior vs posterior segment
+  40–43        the visual pathway; III, IV and VI
+  44–56        the lids, the palpebral fissure, the lacrimal apparatus and the
+               tear film
+  57–63        the bony orbit, its openings, the annulus of Zinn, the cavernous
+               sinus
+  64–70        the extraocular muscles, their axes, actions and cardinal
+               directions of gaze
+
+  PART 2 — HISTORY TAKING / SYMPTOMATOLOGY ................. slides 71–98
+  71           section title "History Taking"
+  72           Why?
+  73–74        Patient's Personal Data
+  75–86        Patient's Complaint — 78–84 Visual Complaints, 85–86 Non-visual
+               complaints
+  87–90        the Present Complaint and the analysis of the chief complaint
+  91–92        Past ocular history (Medical and surgical)
+  93–94        Systemic Illnesses Affecting the Eye
+  95–96        Family History
+  97–98        General Look of the Ophthalmic Patient
+               (this pair sits before the examination title slide and belongs to
+               the history run, though it is already inspection)
+
+  PART 3 — BASIC EYE EXAMINATION ........................... slides 99–136
+  99           section title "Basic Eye Examination"
+  100–105      why, the five vital signs, additional examination items, tools
+  106–121      Visual Acuity — title 106, principle 107–112, charts 113,
+               conversion table 114, method 115–117, pinhole 118–119, the
+               low-vision ladder CF / HM / PL / NoPL 120–121
+  122–131      Visual Field Testing — title 122, methods 123, confrontation
+               124–129, light projection 130, "1. Digital Method:" 131
+  132–136      Common Presentations — title 132, Loss of Vision 133, Red Eye
+               134, Ocular Emergencies 135, thank-you slide 136
+
+⚠️ The deck's own title promises "Symptomatology", but no slide is headed with
+that word; Part 2 is headed "History Taking" throughout.
+
+⚠️ CONVENTIONS ADOPTED HERE. This deck teaches through LABELLED DIAGRAMS more
+than through prose: a great many slides carry the running header "Anatomy &
+Physiology" (or a later section header) and nothing else in the way of text,
+with the whole teaching content inside a labelled figure. Every such slide gets
+a full block below, in which the labels are transcribed in the spatial order
+they appear on the figure. Where a figure carries no legible label at all, the
+block says so and describes the picture.
+
+Transcribed close to verbatim. Slide text kept as printed, including the
+lecturer's own spelling, punctuation and capitalisation.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 1 — Title
+─────────────────────────────────────────────────────────────────────
 Anatomy, Physiology & Symptomatology
-                 of the
-                 EYE
-         Tamer Massoud MD, PhD
-Anatomy & Physiology
-    of the Eye and
-  Periocular Tissues
-Anatomy & Physiology
-                      Anatomy & Physiology
+of the
+EYE
+
+Tamer Massoud MD, PhD
+
+(Background image: a stylised close-up photograph of a blue iris.)
 
 
- Anteroposterior diameter 24 mm
+─────────────────────────────────────────────────────────────────────
+SLIDE 2 — Anatomy & Physiology of the Eye and Periocular Tissues (section title)
+─────────────────────────────────────────────────────────────────────
+Anatomy & Physiology
+of the Eye and
+Periocular Tissues
 
- Horizontal (lateral) diameter 23.5 mm
+(Two labelled colour diagrams sit alongside the title.)
 
- Vertical diameter 23 mm
+FIGURE A — sagittal section through the orbit and lids, labels reading down the
+left side then down the right side:
+  Left: Roof of orbit · Superior rectus · Tenon's capsule · Optic nerve ·
+        Orbital fat · Inferior rectus · Floor of orbit
+  Right: Frontal sinus · Eyebrow · Levator palpebrae superioris · Upper lid ·
+        Eyeball · Lower lid · Inferior oblique
 
- Circumference 75 mm
-
- Volume 6.5 ml
-
- Weight 7 gm
-                       Anatomy & Physiology
-                                                              Cornea
-                                 1. Fibrous coat
-                                                              Sclera
+FIGURE B — cut-away three-dimensional view of the globe, labels clockwise:
+  Cornea · Pupil · Anterior chamber · Iris · Zonules · Schlemm's canal ·
+  Posterior chamber · Lens · Ciliary body · Retina · Conjunctiva · Ora serrata ·
+  Medial rectus · Optic nerve · Fovea · Retinal vessels · Choroid · Sclera ·
+  Lateral rectus
 
 
-                                                                Iris
+─────────────────────────────────────────────────────────────────────
+SLIDE 3 — Anatomy & Physiology (labelled sagittal section of globe, lids and conjunctiva)
+─────────────────────────────────────────────────────────────────────
+(No prose. One large labelled line diagram — a horizontal section through the
+globe with the lids and conjunctival sac drawn on the right.)
+
+Labels down the LEFT side:
+  Fornix
+  Ciliary body
+  Angle of anterior chamber
+  Posterior chamber (P.C.)
+  Vitreous in vitreous chamber (V.C.)
+  Physiological cup
+  Optic nerve
+  Dura of optic nerve
+  Fovea
+
+Labels down the RIGHT side (top to bottom):
+  Palpebral or tarsal conjunctiva
+  Iris
+  Cornea
+  Anterior chamber (A.C.)
+  Lens
+  Eyelid
+  Tarsus
+  Bulbar conjunctiva
+  Levator palpebrae superioris (L.P.S.)
+  Fornix
+  Ciliary processes
+  Zonule
+  Tenon's capsule
+  Retina
+  Choroid
+  Sclera
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 4 — Anatomy & Physiology (dimensions of the eyeball)
+─────────────────────────────────────────────────────────────────────
+ ▶ Anteroposterior diameter 24 mm
+ ▶ Horizontal (lateral) diameter 23.5 mm
+ ▶ Vertical diameter 23 mm
+ ▶ Circumference 75 mm
+ ▶ Volume 6.5 ml
+ ▶ Weight 7 gm
+
+(Alongside: a cross-section of the globe with three dimension arrows printed on
+it — 24.0 mm vertical, 23.5 mm horizontal across the bottom, and 11.5 mm from
+the centre to the nasal wall.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 5 — Anatomy & Physiology (Coats of the Eyeball — flow chart)
+─────────────────────────────────────────────────────────────────────
+(A three-branch flow chart. Root box on the left, three coats in the middle
+column, their components in the right column.)
 
 Coats of the Eyeball
-                          2. Vascular coat (Uveal tissue)   Ciliary body
+  1. Fibrous coat            → Cornea
+                             → Sclera
+  2. Vascular coat (Uveal tissue) → Iris
+                             → Ciliary body
+                             → Choroid.
+  3. Nervous coat            → Retina
 
 
-                                                             Choroid.
+─────────────────────────────────────────────────────────────────────
+SLIDE 6 — Anatomy & Physiology (labelled diagram of the sclera and its openings)
+─────────────────────────────────────────────────────────────────────
+(No prose. A horizontal section of the outer coat alone, cornea to the right,
+with the Equator marked by a red dashed line running obliquely across it.)
+
+Labels on the LEFT:
+  Superior vortex veins (2)   [with a 4 mm arrow drawn at the top]
+  Thick sclera (on back)
+  Lamina cribrosa
+  Posterior scleral foramen
+  Short posterior ciliary vessels
+  Inferior vortex veins (2)   [with a second 4 mm arrow at the bottom]
+
+Labels in the MIDDLE:
+  Equator
+  Long posterior ciliary artery
+
+Labels on the RIGHT:
+  Limbus
+  Cornea
+  Cornea forms front 1/6 of outer wall of eyeball
+  Common site of traumatic rupture globe
+  Thin sclera on front
+  Tenon's capsule
 
 
-                                 3. Nervous coat              Retina
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-         Anatomy & Physiology
+─────────────────────────────────────────────────────────────────────
+SLIDE 7 — Anatomy & Physiology (layers of the cornea, histological cross-section)
+─────────────────────────────────────────────────────────────────────
+(No prose. A histological cross-section of the cornea, drawn full height, with
+the layers labelled down the left-hand edge from front to back.)
+
+  Tear film
+  Epithelium
+  Bowman's membrane
+  Stroma
+  Descemet's membrane
+  Endothelium
+
+(No thickness figures are printed on this slide.)
 
 
-              Episclera
+─────────────────────────────────────────────────────────────────────
+SLIDE 8 — Anatomy & Physiology (extraocular muscles and vessels, anterior three-quarter view)
+─────────────────────────────────────────────────────────────────────
+(No prose. A three-dimensional drawing of the globe seen from behind/lateral,
+with the recti and obliques attached.)
+
+Labels on the LEFT:
+  Medial rectus
+  Short posterior ciliary artery
+  Long posterior ciliary artery
+  Inferior rectus
+
+Labels on the RIGHT:
+  Superior rectus
+  Superior oblique
+  Vena verticosae
+  Optic nerve
+  Lateral rectus
+  Vena verticosae
+  Inferior oblique
 
 
-Sclera      Sclera proper
+─────────────────────────────────────────────────────────────────────
+SLIDE 9 — Anatomy & Physiology (posterior view of the globe, meridians and posterior ciliary vessels)
+─────────────────────────────────────────────────────────────────────
+(No prose. The globe seen from behind, optic nerve head in the centre, with the
+Horizontal meridian and Vertical meridian marked across it.)
+
+Labels on the LEFT:
+  Superior rectus
+  Long posterior ciliary artery
+  Lateral rectus muscle
+  Inferior oblique muscle
+
+Printed on the globe itself:
+  Horizontal meridian
+  Vertical meridian
+
+Labels on the RIGHT:
+  Superior oblique muscle
+  Vortex veins (superior)
+  Optic nerve
+  Medial rectus
+  Long posterior ciliary artery
+  Short posterior ciliary nerves and vessels
+  Vortex veins inferior
+  Inferior rectus
 
 
-            Lamina fusca
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-                  Anatomy & Physiology
+─────────────────────────────────────────────────────────────────────
+SLIDE 10 — Anatomy & Physiology (Sclera — layers)
+─────────────────────────────────────────────────────────────────────
+(A flow chart with a histological photomicrograph of sclera alongside.)
+
+Sclera
+  → Episclera
+  → Sclera proper
+  → Lamina fusca
 
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 11 — Anatomy & Physiology (conjunctiva and the accessory glands)
+─────────────────────────────────────────────────────────────────────
+(No prose. Two labelled figures side by side.)
 
+FIGURE A — sagittal section through the lids showing the glands.
+Labels on the LEFT (top to bottom):
+  Lacrimal gland
+  Glands of Krause
+  Glands of Wolfring
+  Meibomian gland
+  Glands of Zeis
+  Glands of Moll
+Labels on the RIGHT (top to bottom):
+  Superior fornix
+  Bulbar conjunctiva
+  Glands of Manz
+  Tarsal conjunctiva
+  Inferior fornix
+  Glands of Krause
+
+FIGURE B — two panels. Upper panel (A): a histological section of conjunctiva
+labelled, top to bottom:
+  Epithelium
+  Adenoid layer
+  Fibrous layer
+Lower panel (B): a sagittal outline of the conjunctival sac labelled —
+  Left side: Superior fornix · Upper tarsal conjunctiva · Marginal conjunctiva ·
+             Lower tarsal conjunctiva · Inferior fornix
+  Right side: Bulbar conjunctiva · Limbal conjunctiva · Corneal epithelium
+             (not drawn)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 12 — Anatomy & Physiology (the uveal tract in section)
+─────────────────────────────────────────────────────────────────────
+(No prose. A horizontal section of the globe showing the uveal coat picked out
+in colour.)
+
+Labels across the TOP:
+  Iris · Pupil · Iris · Root of iris
+
+Label on the LEFT:
+  Apex of triangle of ciliary body
+
+Labels on the RIGHT:
+  Triangular ciliary body (in middle)
+  Bruch's membrane
+  Choroid (on back)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 13 — Anatomy & Physiology (the iris muscles, en face)
+─────────────────────────────────────────────────────────────────────
+(No prose. A front-on drawing of the iris.)
+
+Labels:
+  Pupil
+  Sphincter pupillae (3rd cranial)
+  Dilator pupillae
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 14 — Anatomy & Physiology (magnified drawing of the anterior chamber angle and ciliary body)
+─────────────────────────────────────────────────────────────────────
+(No prose and NO PRINTED LABELS. A large magnified colour drawing of the
+anterior segment in section: the cornea and limbus at upper left, the ciliary
+body with its pars plicata processes in the centre, the zonular fibres in
+yellow and blue running to the lens equator at the right, and the iris root and
+angle recess. The teaching content is the picture alone; nothing on it is
+lettered.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 15 — Anatomy & Physiology (Accommodation)
+─────────────────────────────────────────────────────────────────────
+(Two paired figures — the ciliary ring and lens at rest and during
+accommodation, each with parallel rays drawn to a lens on the right. Caption
+printed in gold beneath them:)
 
 Accommodation is the ability to increase the refractive power of optical system of
-                eye by changing the shape of crystalline lens
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-             Anatomy & Physiology
-
-
-
-
-Open Angle          Narrow Angle    Closed Angle
-Anatomy & Physiology
-                            Anatomy & Physiology
-                                        Aqueous Outflow
-
-                                       Posterior chamber
-
-               Anteriorchamber                                     Ciliary body
-
-
-             Trabecular meshwork
-                                                              Suprachoroidal space
-               Schlemm’s Canal
-                                                                Venous circulation
-                Episcleral Veins
-
-
-Trabecular pathway (conventional) outflow = 90%     Uveoscleral (unconventional) outflow = 10%
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-         Anatomy & Physiology
-
-
-Fovea
-
-
-                                Optic Nerve head
-
-
-
-
-Macula
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-                   Anatomy & Physiology
-                                                Cornea
-
-                                                  Iris
-
-             1. Anterior segment                 Pupil
-
-                                            Crystalline lens
-                                                                      Anterior chamber
-                                    Two aqueous humor-filled spaces
-                                                                      Posterior chamber
-                                              Pars Plicata
-Clinically       Ciliary Body
-                                              Pars Plana
-
-                                            Vitreous humor
-
-                                                Retina
-             2. Posterior Segment
-                                               Choroid
-
-                                              Optic disc
-Anatomy & Physiology
-Anatomy & Physiology
-      Anatomy & Physiology
-
-
-
-
-III
-     Anatomy & Physiology
-
-
-
-
-IV                          VI
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-Anatomy & Physiology
-History Taking
-                               Why?
-
-▪   Diagnosis & treatment begin by taking proper history.
-
-
-▪   Sometimes, the patient’s main goal is only to deliver the history.
-
-
-▪   Communication
-
-
-▪   Education (condition, treatment plan, assurance)
-Patient’s Personal Data
-1.   Name : communication
-2.   Age
-3.   Sex
-4.   Occupation:
-           ▪ Visual needs
-           ▪ E.g., Welders: FB & photophobia
-5.   Address / Tel
-Patient’s Complaint
-Write the complaint in the patient own words (In Arabic).
-Do not try to translate it.
-
-
-
-Complaints must be documented chronologically
-(in order of occurrence).
-         COMPLAINTS
-
-
-
-
-Visual                Non-Visual
-                   Visual Complaints
-
-                                           Duskiness
-Diminution (loss – decrease) of   Sensation of poor illumination
-            vision                of the surroundings regardless
-                                       of the actual levels of
-                                            illumination
-                  Visual Complaints
-
-
-
-Photophobia
-Intolerance to the usual levels of illumination
-
-
-
-
-Glare
-Difficulty of seeing in the presence of bright light
-                  Visual Complaints
-
-
-
-Night Blindness
-
-
-
-
-Colour blindness
-                Visual Complaints
-
-
-Diplopia:
-
-Double vision – seeing 2 images or an additional shadow
-of a single object
-
-
-
-
-Polyopia:
-
-Seeing multiple images or shadows of the same object
-                  Visual Complaints
-
-
-Photopsia
-Seeing flashes of light in the absence of a light source
-
-
-
-
-Floaters
-Seeing floating black shadows in bright illumination
-                Visual Complaints
-
-
-Central Visual field Defects
-Seeing fixed dark spots within the central visual field of
-one or both eyes [Central (+ve) scotoma]
-
-
-
-
-Visual complaints related to macular diseases
-• Macropsia
-• Micropsia
-• Metamorphopsia
-            Visual Complaints
-
-
-
-
-Macropsia       Micropsia       Metamorphopsia
-                                                     watery
-                                Red eye
-                                                     mucoid
-                               Discharge
-                                                   mucopurulent
-                                 Pain
-                                                     purulent
-Non-visual complaints           Itching
-
-                        Foreign body sensation
-
-                               Swelling
-
-                        Disfigurement (cosmetic)
-the Present Complaint
-          Analysis of the chief Complaint
-
-
-
-
-Differential Diagnosis
-                                Guided Examination
-         (DD)
-       Side:          • Monocular / Binocular
-
-   Mode of onset:     • Sudden / Acute / Accidentally Discovered / Gradual
-
-
-      Course:         • Progressive / Regressive / Stationary / Intermittent / Remittent.
-
-
-     Duration
-
-      Pattern:        • Fluctuating / Persistent
-
-                      • Headache, discharge, tearing, double vision, central vision
-Associated symptoms     affection, visual field defect, etc..
-   Seeking medical advice
-
-   Medications prescribed
-
- Compliance to medications
-
-Response to those medications
-
-   Interventions performed
-
- Improvement or worsening
-  Past ocular history
+eye by changing the shape of crystalline lens
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 16 — Anatomy & Physiology (the crystalline lens — structure and sutures)
+─────────────────────────────────────────────────────────────────────
+(No prose. Two labelled figures.)
+
+FIGURE A — meridional section of the lens.
+  Labels on the LEFT: Formation of new fibres · Capsule · Degenerating cell
+  nucleus · Anterior epithelium · Nucleus · Anterior pole
+  Label on the RIGHT: Posterior pole
+
+FIGURE B — a three-dimensional drawing of the lens fibres, with a key:
+  Anterior Y suture
+  Posterior Y suture
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 17 — Anatomy & Physiology (zones of the lens; angle drawing repeated)
+─────────────────────────────────────────────────────────────────────
+(No prose. Two figures.)
+
+FIGURE A — the lens in section with its zones bracketed, labels down the left:
+  Anterior capsule
+  Anterior epithelium
+  Cortex
+  Nucleus — bracketed into four zones, listed top to bottom:
+      Adult
+      Infantile
+      Fetal
+      Embryonic
+
+FIGURE B — the same unlabelled magnified drawing of the angle, ciliary body,
+zonules and lens equator that appeared on slide 14.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 18 — Anatomy & Physiology (three-dimensional cut-away of the anterior segment)
+─────────────────────────────────────────────────────────────────────
+(No prose. A rendered cut-away of the front of the eye.)
+
+Labels on the LEFT:
+  Cornea
+  Iris
+  Conjunctiva
+Label at the TOP centre:
+  Anterior eye chamber
+Labels on the RIGHT:
+  Lens
+  Posterior eye chamber
+  Zonular fibres
+  Ciliary muscle
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 19 — Anatomy & Physiology (aqueous drainage — venous channels)
+─────────────────────────────────────────────────────────────────────
+(No prose. A sectional drawing of the limbal region with the outflow veins
+drawn in blue and arrows showing aqueous flow from the posterior chamber round
+the pupil into the anterior chamber.)
+
+Labels down the LEFT:
+  Trabecular meshwork
+  Schlemm's canal
+  Aqueous vein
+  Intrascleral plexus
+  Episcleral vein
+  Anterior ciliary vein
+  Ciliary efferent vein
+  Sclera
+
+Labels on the RIGHT:
+  Cornea
+  Iris
+  Lens
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 20 — Anatomy & Physiology (the angle of the anterior chamber, magnified)
+─────────────────────────────────────────────────────────────────────
+(No prose. The magnified angle drawing again, this time lettered.)
+
+Labels on the LEFT:
+  Cornea
+  Trabeculum
+  Schlemm's canal
+  Angle of anterior chamber   [the words sit on the very bottom edge of the
+                               figure and the last line is clipped by the slide
+                               edge — text cut off in the original]
+Labels on the RIGHT / bottom:
+  Anterior chamber   [the final letters run off the right edge of the figure —
+                      text cut off in the original]
+  Iris
+  Lens
+  Posterior chamber   [bottom edge, clipped — text cut off in the original]
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 21 — Anatomy & Physiology (line diagram of the angle structures)
+─────────────────────────────────────────────────────────────────────
+(No prose. A simplified line diagram of the angle, cornea to the upper right,
+iris in pink.)
+
+Labels:
+  Trabecular meshwork
+  Scleral spur
+  Sclera
+  Cornea
+  Ciliary band
+  Iris
+  Lens
+  Ciliary body
+  Ciliary process
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 22 — Anatomy & Physiology (gonioscopy mnemonic for the angle structures)
+─────────────────────────────────────────────────────────────────────
+(No body prose. A gonioscopic view of the angle with leader lines to each
+structure. Above each structure name a mnemonic word is printed in RED,
+UNDERLINED CAPITALS; read across from the iris outwards the mnemonic reads
+"I CAN'T SEE THE STUPID LINE".)
+
+  I            → Iris
+  CAN'T        → Ciliary body
+  SEE          → Scleral spur
+  THE          → Trabecular Meshwork
+  STUPID LINE  → Schwalbe's Line
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 23 — Anatomy & Physiology (gonioscopy — open, narrow and closed angle)
+─────────────────────────────────────────────────────────────────────
+(A gonioscopic photograph of the angle with callout labels, and a row of three
+boxed captions along the bottom joined by dashed arrows.)
+
+Callout labels on the photograph, left to right:
+  ciliary body
+  scleral spur
+  trabecular meshwork
+  trabecular meshwork
+  Schwalbe's line
+  Closed
+
+Boxed captions along the bottom, joined left to right by dashed arrows:
+  Open Angle  ⇢  Narrow Angle  ⇢  Closed Angle
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 24 — Anatomy & Physiology (gonioscopic photograph — peripheral anterior synechiae)
+─────────────────────────────────────────────────────────────────────
+(No prose. A clinical gonioscopic photograph of the angle with gold arrows and
+abbreviations.)
+
+  Peripheral anterior synechiae   ← arrow to the tissue bridging the angle on
+                                    the left of the picture
+  SL    (Schwalbe's line)
+  TM    (trabecular meshwork)
+  SS    (scleral spur)
+  CB    (ciliary band)
+  Iris
+
+(The expansions in brackets above are NOT printed on this slide; they are the
+abbreviations as taught on slides 21–23. The slide itself prints only the
+letters SL, TM, SS, CB and the word Iris.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 25 — Anatomy & Physiology (Aqueous Outflow — flow chart)
+─────────────────────────────────────────────────────────────────────
+Aqueous Outflow
+  ↓
+Posterior chamber
+  ↓ splits into two pathways
+
+LEFT PATHWAY:
+  Anteriorchamber
+  Trabecular meshwork
+  Schlemm's Canal
+  Episcleral Veins
+  → Trabecular pathway (conventional) outflow = 90%
+
+RIGHT PATHWAY:
+  Ciliary body
+  Suprachoroidal space
+  Venous circulation
+  → Uveoscleral (unconventional) outflow = 10%
+
+(The two end boxes are highlighted in yellow. "Anteriorchamber" is printed as
+one word on the slide.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 26 — Anatomy & Physiology (layers of the choroid, histological section)
+─────────────────────────────────────────────────────────────────────
+(No prose. A histological cross-section of the choroid, retina above, sclera
+below.)
+
+Labels on the LEFT, outer to inner:
+  Bruch's membrane
+  Choriocapillaris
+  Layer of medium vessels
+  Layer of large vessels
+  Suprachoroidal lamina
+
+Labels on the RIGHT, with brackets:
+  Retinal pigment epithelium
+  Choroid   [bracket spanning the whole vascular thickness]
+  Sclera
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 27 — Anatomy & Physiology (the retina — disc, ora serrata and foveola)
+─────────────────────────────────────────────────────────────────────
+(No prose outside the figure. A line drawing marked "(a)" of the retina in
+section with three annotation blocks.)
+
+  Physiological cup on the disc
+  Central retinal vessels (end arteries)
+  Optic nerve (medullated)
+
+  Ora serrata (very thin)
+  Common site of traumatic holes in retinal detachment
+
+  Foveola (0.1 mm) in fovea thinnest, most sensitive part of retina (20/20),
+  has no blood vessels, supplied by diffusion from choriocapillaries
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 28 — Anatomy & Physiology (retinal topography — section and fundus view)
+─────────────────────────────────────────────────────────────────────
+(No prose. Two figures.)
+
+FIGURE A — a horizontal section of the globe.
+  Labels on the LEFT: Ora serrata · Sclera
+  Labels on the RIGHT: Choroid · Optic disc · Optic nerve · Fovea · Retina
+
+FIGURE B — a flat (en face) drawing of the retina.
+  Labels along the TOP and LEFT: Ora serrata · Macula · Parafoveal region ·
+  Fovea · Foveola · Peripheral retina
+  Labels on the RIGHT: Optic disc · Retinal vessels
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 29 — Anatomy & Physiology (normal fundus photograph, labelled)
+─────────────────────────────────────────────────────────────────────
+(No prose. A colour fundus photograph of a right eye with three boxed labels
+and leader lines.)
+
+  Fovea            → the small ringed spot at the centre of the macula
+  Macula           → the larger dark ring around it
+  Optic Nerve head → the bright disc temporal to it in the picture
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 30 — Anatomy & Physiology (locating the fovea — 2 DD rule, both fundi)
+─────────────────────────────────────────────────────────────────────
+(No prose. Two fundus drawings side by side, right and left eye, each with a
+horizontal and a vertical reference line drawn through the disc and the
+distance to the fovea marked "2DD" on both.)
+
+Labels between the two drawings:
+  Optic disc
+  Physiological cup
+  Fovea — Below the center at 2DD temporally
+
+(The measurement "2DD" is printed on each of the two fundus drawings.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 31 — Anatomy & Physiology (the layers of the retina, histological diagram)
+─────────────────────────────────────────────────────────────────────
+(No prose. A full-height histological/schematic section of the retina. "Vitreal
+side" is printed at the top and "Scleral side" at the bottom; the layers are
+labelled down the right-hand side, inner to outer.)
+
+  Internal limiting membrane
+  Nerve fiber layer
+  Ganglion cell layer
+  Inner plexiform layer
+  Inner nuclear layer
+  Outer plexiform layer
+  Outer nuclear layer
+  External limiting membrane
+  Photoreceptor layer
+  Photoreceptor outer segment
+  Retinal pigment epithelium
+  Bruch's membrane
+  Choroid
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 32 — Anatomy & Physiology (retinal cell types and the optic disc, 3-D block diagram)
+─────────────────────────────────────────────────────────────────────
+(No prose. A three-dimensional block diagram of the retina cut at the optic
+disc, with green and red arrows drawn through the nerve fibre layer.)
+
+Labels on the LEFT:
+  Vitreous chamber
+  Muller cell
+  Inner plexiform layer
+  Amacrine cell
+  Bipolar cell
+  Outer plexiform layer
+  Choroid
+  Site of retinal detachment
+
+Labels at the TOP centre:
+  Optic disc
+  Optic cup
+
+Labels on the RIGHT:
+  Optic nerve
+  Ganglion cell
+  Horizontal cell
+  Photoreceptor cell
+  Outer segment of photoreceptor
+  Pigment epithelium
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 33 — Anatomy & Physiology (section through the fovea — Foveal pit)
+─────────────────────────────────────────────────────────────────────
+(No prose. A histological/schematic section through the fovea; the depression
+in the inner layers is captioned Foveal pit.)
+
+Printed on the figure at the top:
+  Foveal pit
+
+Labels on the LEFT:
+  Ganglion cell
+  Bipiolar cell            [printed thus on the slide]
+  Cone photoreceptor cell
+  Rod photoreceptor cell
+  Outer segment of photoreceptor
+  Choroid
+
+Labels on the RIGHT:
+  Internal limiting membrane
+  Nerve fibre layer
+  Ganglion cell layer
+  Inner plexiform layer
+  Inner nuclear layer
+  Outer plexiform layer
+  Outer nuclear layer
+  External limiting membrane
+  Retinal pigment epithelium
+  Bruch's membrane
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 34 — Anatomy & Physiology (the foveola in section)
+─────────────────────────────────────────────────────────────────────
+(No prose. A wide, flat histological section centred on the foveola, with the
+region bracketed and captioned at the top.)
+
+Bracketed caption at the top:
+  Foveola
+
+Labels on the LEFT:
+  Nerve fibre layer
+  Ganglion cell layer
+  Inner plexiform layer
+  Inner nuclear layer
+  Retinal capillaries
+  Henle (outer plexiform) layer
+  Outer nuclear layer
+  Choriocapillaris
+
+Labels on the RIGHT:
+  Internal limiting membrane
+  Elongated cones
+  Pigmented epithelium
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 35 — Anatomy & Physiology (the ophthalmic artery and its branches)
+─────────────────────────────────────────────────────────────────────
+(No prose. A drawing of the orbital arterial supply, optic nerve in yellow.)
+
+Labels on the LEFT, top to bottom:
+  Supratrochlear artery
+  Dorsal nasal artery
+  Short posterior ciliary arteries
+  Long posterior ciliary artery
+  Anterior ethmoidal artery
+  Ophthalmic artery
+  Posterior ethmoidal artery
+  Canalicular part of ophthalmic artery (crosses under surface of optic nerve
+  within optic canal)
+
+Labels on the RIGHT, top to bottom:
+  Supraorbital artery
+  Central retinal artery (CRA)
+  CRA (within optic nerve)
+  Lacrimal artery
+  Long posterior ciliary artery
+  Optic nerve
+  CRA (inferior to optic nerve)
+  Orbital part of ophthalmic artery (crosses optic nerve superiorly)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 36 — Anatomy & Physiology (retinal capillary networks by layer)
+─────────────────────────────────────────────────────────────────────
+(No prose. A section of the retina with an arteriole drawn in red and a venule
+in blue, showing the two capillary plexuses.)
+
+Labels at the TOP:
+  Arteriole
+  Venule
+
+Labels on the LEFT:
+  Superficial capillary network
+  Deep capillary network
+
+Labels on the RIGHT, inner to outer:
+  Inner limiting membrane
+  Retinal nerve fibre layer
+  Ganglion cell layer
+  Inner plexiform layer
+  Inner nuclear layer
+  Outer plexiform layer
+  Outer nuclear layer
+  Outer limiting membrane
+  Rod and cone layer
+  Pigment epithelium
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 37 — Anatomy & Physiology (the vitreous and its attachments)
+─────────────────────────────────────────────────────────────────────
+(No prose. A sagittal section of the globe with Cloquet's canal drawn as a
+wavy channel through the vitreous.)
+
+Labels on the LEFT:
+  Ora serrata
+  Wieger's ligament
+  Space of Berger
+  Anterior hyaloid membrane
+
+Labels on the RIGHT:
+  Cloquet's canal
+  Posterior hyaloid membrane
+
+Printed at the bottom with a dimension arrow:
+  4 mm
+  Vitreous base
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 38 — Anatomy & Physiology (vitreoretinal adhesion)
+─────────────────────────────────────────────────────────────────────
+(No prose. A sagittal section of the globe with a dashed white line marking the
+vitreous face and blue arrows pointing to three zones, each captioned.)
+
+  Most adherent        — the anterior zone at the vitreous base / behind the lens
+  Least adherent       — the mid-peripheral zone
+  Moderately adherent  — the posterior zone
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 39 — Anatomy & Physiology (Clinically — anterior and posterior segment)
+─────────────────────────────────────────────────────────────────────
+(A flow chart. Root box "Clinically" on the left.)
+
+Clinically
+  1. Anterior segment
+       Cornea
+       Iris
+       Pupil
+       Crystalline lens
+       Two aqueous humor-filled spaces → Anterior chamber
+                                       → Posterior chamber
+  Ciliary Body
+       Pars Plicata
+       Pars Plana
+  2. Posterior Segment
+       Vitreous humor
+       Retina
+       Choroid
+       Optic disc
+
+(The Ciliary Body branch is drawn between the two segments; "Pars Plicata" is
+lettered in black with the anterior-segment group, and "Pars Plana", "Vitreous
+humor", "Retina", "Choroid" and "Optic disc" are lettered in RED with the
+posterior-segment group — the colouring is how the slide assigns pars plana to
+the posterior segment.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 40 — Anatomy & Physiology (the visual pathway)
+─────────────────────────────────────────────────────────────────────
+(No prose. A schematic axial view of the brain with the visual pathway drawn,
+one side in blue and the other in green.)
+
+Labels down the RIGHT:
+  Retina
+  Optic nerve
+  Optic chiasma
+  Optic tract
+  Lateral geniculate body
+  Optic radiations
+  Visual cortex
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 41 — Anatomy & Physiology (visual pathway repeated, with the circle of Willis)
+─────────────────────────────────────────────────────────────────────
+(No prose. Two figures.)
+
+FIGURE A — the same visual pathway diagram as slide 40, same labels:
+  Retina · Optic nerve · Optic chiasma · Optic tract · Lateral geniculate body ·
+  Optic radiations · Visual cortex
+
+FIGURE B — the circle of Willis, labels down the right:
+  Anterior cerebral artery
+  Internal carotid artery
+  Middle cerebral artery
+  Posterior communicating artery
+  Posterior cerebral artery
+  Basilar artery
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 42 — Anatomy & Physiology (the oculomotor nucleus and III in the midbrain)
+─────────────────────────────────────────────────────────────────────
+(No prose. A cross-section of the midbrain and its vascular relations. A
+cloud-shaped callout at the left of the slide contains the Roman numeral:)
+
+  III
+
+Labels on the LEFT:
+  Superior colliculus
+  Main motor nucleus of oculomotor
+  Basilar artery
+  Superior cerebellar artery
+  Posterior cerebral artery
+  Posterior communicating artery
+  Optic nerve
+
+Labels on the RIGHT:
+  Cerebral cortex
+  Pretectal nucleus
+  Edinger-Westphal nucleus (parasympathetic nucleus)
+  Medial longitudinal fasciculus
+  Red nucleus
+  4th nerve
+  6th nerve
+  3rd nerve
+  Cavernous sinus
+  Internal carotid artery
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 43 — Anatomy & Physiology (the courses of the IVth and VIth nerves)
+─────────────────────────────────────────────────────────────────────
+(No prose. Two drawings of the intracranial and orbital course of a cranial
+nerve, each with a cloud-shaped callout beneath it carrying a Roman numeral.)
+
+FIGURE A — callout: IV
+  Labels: Midbrain · Circle of Willis · Superior oblique muscle ·
+  Trochlear nerve · Cavernous sinus · Pons · Internal carotid artery
+
+FIGURE B — callout: VI
+  Labels: Circle of Willis · Pituitary gland · Cavernous sinus ·
+  Abducent nerve · Pons · Internal carotid artery · Lateral rectus
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 44 — Anatomy & Physiology (the normal palpebral fissure)
+─────────────────────────────────────────────────────────────────────
+(No prose. A photograph/illustration of a normal eye with a vertical
+double-headed arrow across the palpebral aperture.)
+
+  Normal palpebral fissure
+  Normal left eye
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 45 — Anatomy & Physiology (dimensions of the palpebral fissure and lids)
+─────────────────────────────────────────────────────────────────────
+(No prose. An illustration of the eye and brow with four red dimension boxes.)
+
+  2 mm      — from the upper lid margin to the upper limbus (the upper lid
+              covering the top of the cornea)
+  3 mm      — the corresponding measure marked on the right of the figure
+  9 mm      — the vertical height of the palpebral fissure
+  28–30 mm  — the horizontal length of the palpebral fissure
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 46 — Anatomy & Physiology (surface anatomy of the lids and canthi)
+─────────────────────────────────────────────────────────────────────
+(No prose. A clinical photograph of a normal eye, labelled.)
+
+Labels on the LEFT:
+  Lateral canthus
+  Meibomian glands
+
+Labels on the RIGHT:
+  Superior lacrimal punctum
+  Caruncle
+  Medial canthus
+  Plica semilunaris
+
+Label at the BOTTOM:
+  Inferior lacrimal punctum
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 47 — Anatomy & Physiology (sagittal section of the upper lid)
+─────────────────────────────────────────────────────────────────────
+(No prose. A sagittal section through the upper lid and superior orbit.)
+
+Labels on the LEFT:
+  Periosteum of frontal bone
+  Orbicularis oculi
+  Orbital septum
+  Müller's muscle
+  Aponeurosis of levator palpebrae superioris
+  Skin
+  Meibomian gland (in tarsal plate)
+
+Labels on the RIGHT:
+  Orbital fat
+  Levator palpebrae superioris
+  Superior rectus
+  Conjunctival fornix
+  Bulbar conjunctiva
+  Palpebral conjunctiva
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 48 — Anatomy & Physiology (the lid margin and grey line)
+─────────────────────────────────────────────────────────────────────
+(No prose. A magnified sagittal drawing of the lid margin.)
+
+Labels on the LEFT:
+  Orbicularis oculi - palpebral part
+  Front skin / muscle layer
+  Round anterior border / lid margin
+
+Label at the BOTTOM:
+  Grey line
+
+Labels on the RIGHT:
+  L.P.S. tendon
+  Tarsoconjunctival layer
+  Meibomian gland
+  Sharp posterior border / lid margin
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 49 — Anatomy & Physiology (the orbital septum and palpebral ligaments, front view)
+─────────────────────────────────────────────────────────────────────
+(No prose. A front view of the orbit with the septum orbitale drawn as a blue
+sheet and the tarsi within it.)
+
+Label on the LEFT:
+  Lateral palpebral ligament (L.P.L.)
+
+Labels on the RIGHT:
+  Orbital margin
+  Septum orbitale
+  Upper tarsus
+  Medial palpebral ligament (M.P.L.)
+  Lacrimal sac
+  Lower tarsus
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 50 — Anatomy & Physiology (lacrimal gland, tarsal plates and ligaments)
+─────────────────────────────────────────────────────────────────────
+(No prose. A front view with the lids opened out.)
+
+Labels on the LEFT:
+  Orbital portion of lacrimal gland
+  Palpebral portion of lacrimal gland
+  Lateral palpebral ligament
+  Septum orbitale
+
+Labels on the RIGHT:
+  Levator palpebrae superioris
+  Muller's muscle
+  Superior tarsal plate
+  Medial palpebral ligament
+  Inferior tarsus
+
+(The slide prints "Muller's muscle" without the umlaut here; slide 47 printed
+"Müller's muscle" with it. Both are kept as printed.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 51 — Anatomy & Physiology (levator, superior rectus and the superior transverse ligament)
+─────────────────────────────────────────────────────────────────────
+(No prose. A three-quarter drawing of the superior orbit with the muscles.)
+
+Labels on the LEFT:
+  Levator muscle
+  Superior rectus muscle
+  Lateral rectus muscle
+  Superior transverse ligament
+
+Labels on the RIGHT:
+  Medial rectus muscle
+  Superior oblique muscle
+  Trochlea
+  Levator aponeurosis
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 52 — Anatomy & Physiology (check ligaments and the suspensory ligament)
+─────────────────────────────────────────────────────────────────────
+(No prose. A front view of the globe in the orbit with the check ligaments in
+green and orbital fat in yellow.)
+
+Labels on the LEFT:
+  Lacrimal gland (orbital part)
+  Lacrimal gland (palpebral part)
+  Lateral check ligament
+  Lateral rectus
+  Inferior rectus
+
+Labels on the RIGHT:
+  Levator palpebrae superioris
+  Superior rectus
+  Medial rectus
+  Medial check ligament
+  Suspensory ligament
+  Inferior oblique
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 53 — Anatomy & Physiology (dimensions of the lacrimal drainage system)
+─────────────────────────────────────────────────────────────────────
+(No prose. A front view of the lacrimal passages with every segment bracketed
+and measured. This slide is a measurement table drawn as a picture.)
+
+  Canaliculus
+      Vertical part (2 mm)
+      Horizontal part (8 mm)
+
+  Lacrimal sac
+      Fundus 3-5 mm
+      Body 10 mm
+
+  Nasolacrimal duct
+      Intraosseous part 12.5 mm
+      Medial part 5.5 mm
+
+  Inferior meatus
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 54 — Anatomy & Physiology (the lacrimal apparatus and the flow of tears)
+─────────────────────────────────────────────────────────────────────
+(No prose. A face-on drawing with a cut-away of the nose; blue arrows mark the
+direction of tear flow, with a key at the bottom.)
+
+Labels on the LEFT:
+  Lacrimal gland
+  Inferior punctum
+  Inferior canaliculus
+  Nasolacrimal duct
+
+Label at the TOP:
+  Superior punctum
+
+Labels on the RIGHT:
+  Superior canaliculus
+  Lacrimal sac
+  Nasal cavity
+  Inferior meatus
+
+Key printed at the bottom:
+  ⇒ = Flow of tears
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 55 — Anatomy & Physiology (Horner's muscle and the lacrimal pump)
+─────────────────────────────────────────────────────────────────────
+(No prose. A three-quarter view of the medial orbit and nose.)
+
+Labels on the LEFT:
+  Horner's muscle
+  Lacrimal sac
+  Inferior oblique
+
+Label on the RIGHT:
+  Medial palpebral ligament
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 56 — Anatomy & Physiology (the layers of the tear film, with thicknesses)
+─────────────────────────────────────────────────────────────────────
+(No prose. A histological section of the precorneal tear film sitting on the
+corneal epithelium, marked "A" at the bottom left. Every layer carries a
+thickness.)
+
+Labels on the RIGHT, outer to inner:
+  Lipid layer (0.1 µm)
+  Acqueous layer (8 µm) containing dissolved substance   [spelled thus]
+  Mucin layer (0.02–0.05 µm)
+  Corneal epithelium (60 µm)
+
+Labels on the LEFT:
+  Free mucus strands in aqueous layer
+  Anchored glycoprotein
+  Microvilli
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 57 — Anatomy & Physiology (bones and openings of the orbit, front view)
+─────────────────────────────────────────────────────────────────────
+(No prose. A front view of the bony orbit.)
+
+Labels on the LEFT:
+  Orbital plate of frontal bone
+  Orbital plate of greater wing of sphenoid
+  Lateral orbital tubercle
+  Superior orbital fissure
+  Orbital plate of zygomatic bone
+  Inferior orbital fissure
+
+Labels on the RIGHT:
+  Supraorbital notch
+  Optic canal
+  Ethmoid bone
+  Lacrimal bone
+  Orbital plate of maxilla
+  Inferior orbital foramen
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 58 — Anatomy & Physiology (coronal section — orbits, sinuses and nasal cavity)
+─────────────────────────────────────────────────────────────────────
+(No prose. A coronal section through both orbits and the nose.)
+
+Labels on the LEFT:
+  Zygomatic bone
+  Ethmoidal sinus
+  Maxillary sinus
+  Vomer bone
+
+Labels on the RIGHT:
+  Orbital cavity
+  Superior nasal concha
+  Middle nasal concha
+  Perpendicular plate
+  Inferior nasal concha
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 59 — Anatomy & Physiology (the orbital apex and the contents of the superior orbital fissure)
+─────────────────────────────────────────────────────────────────────
+(No prose. Two figures.)
+
+FIGURE A — the bony orbit again, from the front.
+  Labels on the LEFT: Frontal bone · Lesser wing of sphenoid · Superior orbital
+  fissure · Greater wing of sphenoid · Zygoma · Inferior orbital fissure ·
+  Maxilla
+  Labels on the RIGHT: Supraorbital notch · Trochlear fossa · Optic foramen ·
+  Ethmoid bone · Lacrimal bone · Infraorbital foramen
+
+FIGURE B — a schematic of the orbital apex, the annulus and the superior
+orbital fissure with the structures passing through it. "I.O.F." is printed
+across the lower part of the fissure.
+  Labels on the LEFT: Frontal nerve · Lacrimal nerve · Dura mater · Superior
+  ophthalmic vein · Lateral rectus muscle
+  Labels on the RIGHT: Trochlear nerve · Medial rectus · Optic nerve · Central
+  tendon · Optic foramen · Ophthalmic artery · Nasociliary nerve · 6th cranial
+  nerve · Inferior ophthalmic vein · Two heads of lateral rectus
+  Muscle abbreviations printed on the figure: L.P.S. · S.O. · S.R. · I.R. ·
+  III (twice, for the superior and inferior divisions)
+
+  KEY BOX printed at the bottom right of the figure:
+    Origin of
+    S.R.   - Superior rectus muscle
+    I.R.   - Inferior rectus muscle
+    S.O.   - Superior oblique muscle
+    L.P.S. - Levator palpebrae superioris
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 60 — Anatomy & Physiology (sagittal section of the orbit and lids)
+─────────────────────────────────────────────────────────────────────
+(No prose. A sagittal section of the orbit with the globe labelled "Eye".)
+
+Labels on the LEFT, top to bottom:
+  Roof of orbit
+  Upper septum orbitale
+  Deep division of tendon of L.P.S.
+  Superficial division of L.P.S. tendon
+  Upper tarsus
+  Lower tarsus
+  Septum orbitale lower
+  Extension from inferior rectus muscle
+  Floor of orbit
+
+Labels on the RIGHT:
+  Tendon of levator palpebrae superioris (L.P.S.)
+  Optic nerve
+  Inferior rectus muscle
+
+Printed on the globe:
+  Eye
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 61 — Anatomy & Physiology (relations of the orbit to the paranasal sinuses)
+─────────────────────────────────────────────────────────────────────
+(No prose. A cut-away showing the globe, the ethmoid air cells and the sphenoid
+sinus.)
+
+Labels on the LEFT:
+  Anterior ethmoid sinus
+  Middle ethmoid sinus
+  Posterior ethmoid sinus
+  Sphenoid sinus
+
+Labels at the TOP and RIGHT:
+  Lacrimal fossa
+  Infraorbital foramen, infraorbital canal and infraorbital nerve in
+  infraorbital groove
+  Zygomatic bone
+  Infraorbital fissure
+  Greater wing of sphenoid
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 62 — Anatomy & Physiology (the annulus of Zinn and the superior orbital fissure)
+─────────────────────────────────────────────────────────────────────
+(No prose. A schematic of the orbital apex viewed from in front, the annulus of
+Zinn drawn as a ring.)
+
+Labels on the LEFT:
+  Lacrimal nerve
+  Frontal nerve
+  Superior ophthalmic vein
+  Trochlear nerve
+  Lateral rectus
+  Oculomotor nerve (superior division)
+  Nasociliary nerve
+  Abducent nerve
+  Oculomotor nerve (inferior division)
+
+Labels on the RIGHT:
+  Levator palpebrae superioris
+  Superior oblique
+  Superior rectus
+  Medial rectus
+  Optic nerve
+  Ophthalmic artery
+  Annulus of Zinn
+  Inferior rectus
+
+Labels along the BOTTOM:
+  Inferior ophthalmic vein
+  Superior orbital fissure
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 63 — Anatomy & Physiology (coronal section of the cavernous sinus)
+─────────────────────────────────────────────────────────────────────
+(No prose. A coronal section through the cavernous sinus and pituitary fossa.)
+
+Labels on the LEFT:
+  Cavernous sinus
+  Sphenoid sinus
+  Internal carotid artery
+  Abducent nerve
+
+Labels on the RIGHT:
+  Pituitary gland
+  Oculomotor nerve
+  Trochlear nerve
+  Ophthalmic nerve
+  Maxillary nerve
+  Mandibular nerve
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 64 — Anatomy & Physiology (the extraocular muscles, colour-coded)
+─────────────────────────────────────────────────────────────────────
+(No prose. A line drawing of the orbit from the side with the seven muscles
+picked out in colour, and a colour key box on the right.)
+
+KEY:
+  ■ Levator palpebrae superioris   (red)
+  ■ Superior oblique               (yellow)
+  ■ Inferior oblique               (orange)
+  ■ Superior rectus                (purple)
+  ■ Medial rectus                  (pink)
+  ■ Lateral rectus                 (green)
+  ■ Inferior rectus                (blue)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 65 — Anatomy & Physiology (orbital axis vs visual axis; the muscles from above)
+─────────────────────────────────────────────────────────────────────
+(No prose. Two figures.)
+
+FIGURE A — a schematic of the axes of the orbit and the eye, with two angles
+printed on it:
+  Sagittal plane · Visual axis · Orbital axis
+  23°   — the angle between the visual axis and the orbital axis
+  45°   — the angle marked at the bottom of the figure
+  Medial orbital wall · Lateral orbital wall
+
+FIGURE B — the orbit from above with the muscles, the Equator of the globe
+marked by a dashed line.
+  Labels on the LEFT: Roof of orbit · Trochlea · Bend of superior oblique by
+  51° · Insertion of superior oblique · Lateral rectus · Inferior oblique ·
+  Floor
+  Labels on the RIGHT: Medial rectus · Superior rectus · Apex of orbit ·
+  Annulus of Zinn · Inferior rectus
+  Printed at the top: Equator
+
+(THE NUMBERS ON THIS SLIDE: 23°, 45° and "Bend of superior oblique by 51°".)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 66 — Anatomy & Physiology (the muscle plane and the optical axis, 23°)
+─────────────────────────────────────────────────────────────────────
+(No prose. A drawing of the orbit from above, muscles in place, with the angle
+between the optical axis and the muscle plane marked.)
+
+Labels printed on the figure:
+  medial rectus
+  inferior rectus
+  optical axis
+  23        [the angle between the optical axis and the muscle plane]
+  muscle plane
+  superior oblique
+  inferior oblique
+  superior rectus
+  lateral rectus
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 67 — Anatomy & Physiology (photograph of an anatomical model of the orbit)
+─────────────────────────────────────────────────────────────────────
+(No prose and NO LABELS. A photograph of a dissection model of the orbit seen
+from the front: the globe in situ with the four recti cut, the ciliary nerves
+drawn in yellow radiating around the optic nerve, and the bony orbital rim.
+Nothing on this slide is lettered.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 68 — Anatomy & Physiology (directions of pull of the extraocular muscles)
+─────────────────────────────────────────────────────────────────────
+(No prose. A front view of the globe with red arrows showing each muscle's
+direction of action — straight arrows for the recti, curved arrows for the
+obliques. A drawing of a nose sits to the right to orient the picture.)
+
+Labels on the LEFT:
+  Superior rectus
+  Lateral rectus
+  Inferior oblique
+
+Labels on the RIGHT:
+  Trochlea
+  Superior oblique
+  Medial rectus
+  Inferior rectus
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 69 — Anatomy & Physiology (TABLE: actions of the extraocular muscles)
+─────────────────────────────────────────────────────────────────────
+A four-column table. Transcribed exactly as printed:
+
+  Extraocular Muscles | Primary Action | Secondary Action | Tertiary Action
+  --------------------|----------------|------------------|----------------
+  Lateral rectus      | Abduction      |                  |
+  Medial rectus       | Adduction      |                  |
+  Superior rectus     | Elevation      | Intorsion        | Adduction
+  Inferior rectus     | Depression     | Extorsion        | Adduction
+  Superior Oblique    | Intorsion      | Depression       | Abduction
+  Inferior oblique    | Extorsion      | Elevation        | Abduction
+
+(The lateral and medial rectus rows are BLANK in the Secondary and Tertiary
+columns — that is how the slide prints them.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 70 — Anatomy & Physiology (the cardinal directions of gaze — abbreviations)
+─────────────────────────────────────────────────────────────────────
+(No prose. A line drawing of an eye with four double-headed arrows crossing it,
+each end labelled with a muscle abbreviation. A drawing of a nose to the right
+shows the side.)
+
+  SR  — up and to the left of the picture (temporal elevation)
+  IO  — up and to the right of the picture (nasal elevation)
+  LR  — straight lateral (left of the picture)
+  MR  — straight medial (right of the picture, toward the nose)
+  IR  — down and to the left of the picture
+  SO  — down and to the right of the picture
+
+(The slide prints only the six abbreviations SR, IO, LR, MR, IR, SO. It does
+not expand them.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 71 — History Taking (SECTION TITLE SLIDE)
+─────────────────────────────────────────────────────────────────────
+History Taking
+
+(A green scroll graphic on a photographic background of a signature line. No
+other text. This slide begins the SYMPTOMATOLOGY / HISTORY half of the deck.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 72 — Why?
+─────────────────────────────────────────────────────────────────────
+Why?
+
+ ▪ Diagnosis & treatment begin by taking proper history.
+ ▪ Sometimes, the patient's main goal is only to deliver the history.
+ ▪ Communication
+ ▪ Education (condition, treatment plan, assurance)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 73 — Patient's Personal Data (section title slide)
+─────────────────────────────────────────────────────────────────────
+Patient's Personal Data
+
+(Scroll graphic only, no other text.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 74 — (no heading — the personal-data list)
+─────────────────────────────────────────────────────────────────────
+(This slide prints NO title of its own; it is the content list belonging to the
+"Patient's Personal Data" title slide before it. A faint exclamation mark is
+watermarked on the background.)
+
+ 1. Name : communication
+ 2. Age
+ 3. Sex
+ 4. Occupation:
+      ▪ Visual needs
+      ▪ E.g., Welders: FB & photophobia
+ 5. Address / Tel
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 75 — Patient's Complaint (section title slide)
+─────────────────────────────────────────────────────────────────────
+Patient's Complaint
+
+(Scroll graphic only, no other text.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 76 — (no heading — two rules for recording the complaint)
+─────────────────────────────────────────────────────────────────────
+(No title printed. Two coloured callout bars, each with a small icon.)
+
+ ▪ Write the complaint in the patient own words (In Arabic).
+   Do not try to translate it.
+
+ ▪ Complaints must be documented chronologically
+   (in order of occurrence).
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 77 — (no heading — COMPLAINTS split into Visual and Non-Visual)
+─────────────────────────────────────────────────────────────────────
+(No slide title. A two-branch diagram on the signature-page background.)
+
+COMPLAINTS
+  → Visual
+  → Non-Visual
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 78 — Visual Complaints (diminution of vision; duskiness)
+─────────────────────────────────────────────────────────────────────
+Visual Complaints
+
+ ▪ Diminution (loss – decrease) of vision
+   (illustrated by a blurred photograph of a crowded street)
+
+ ▪ Duskiness
+   Sensation of poor illumination of the surroundings regardless of the actual
+   levels of illumination
+   (illustrated by a photograph of a dark corridor)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 79 — Visual Complaints (photophobia; glare)
+─────────────────────────────────────────────────────────────────────
+Visual Complaints
+
+ ▪ Photophobia
+   Intolerance to the usual levels of illumination
+   (photograph: a patient shielding her eyes from light)
+
+ ▪ Glare
+   Difficulty of seeing in the presence of bright light
+   (photograph: a bright light source flaring)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 80 — Visual Complaints (night blindness; colour blindness)
+─────────────────────────────────────────────────────────────────────
+Visual Complaints
+
+ ▪ Night Blindness
+   (photograph pair: a night street scene shown normally and almost black)
+
+ ▪ Colour blindness
+   (illustration pair: a traffic light in normal colour and as seen with
+   defective colour vision)
+
+⚠️ NOTE: NEITHER of these two headings carries a definition on the slide —
+"Photophobia", "Glare" and "Duskiness" on slides 78–79 each get one line of
+definition, but "Night Blindness" and "Colour blindness" are printed as bare
+labels beside a picture with no defining text at all.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 81 — Visual Complaints (diplopia; polyopia)
+─────────────────────────────────────────────────────────────────────
+Visual Complaints
+
+ ▪ Diplopia:
+   Double vision – seeing 2 images or an additional shadow of a single object
+   (icon: two arrows converging; photograph: a yellow bird on a pine branch,
+   doubled)
+
+ ▪ Polyopia:
+   Seeing multiple images or shadows of the same object
+   (icon: a fanned stack of shuttlecock-like shapes; illustration: a hand drawn
+   with several overlapping copies of itself)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 82 — Visual Complaints (photopsia; floaters)
+─────────────────────────────────────────────────────────────────────
+Visual Complaints
+
+ ▪ Photopsia
+   Seeing flashes of light in the absence of a light source
+   (icon: a lightning bolt; photograph: lightning over a dark sky)
+
+ ▪ Floaters
+   Seeing floating black shadows in bright illumination
+   (icon: an eye; photograph: a bright blue sky with wispy shapes across it)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 83 — Visual Complaints (central field defects; macular complaints)
+─────────────────────────────────────────────────────────────────────
+Visual Complaints
+
+ ▪ Central Visual field Defects
+   Seeing fixed dark spots within the central visual field of one or both eyes
+   [Central (+ve) scotoma]
+   (icon: a sad face; photograph: a child's face with the centre blurred out)
+
+ ▪ Visual complaints related to macular diseases
+    • Macropsia
+    • Micropsia
+    • Metamorphopsia
+   (icon: three wavy lines; photograph: a child's face with distorted features)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 84 — Visual Complaints (macropsia, micropsia, metamorphopsia — pictures)
+─────────────────────────────────────────────────────────────────────
+Visual Complaints
+
+(Three picture panels side by side. No defining prose — each panel carries only
+its one-word label above a photograph illustrating it.)
+
+  Macropsia      — silhouette of a large fish beside a small one; photograph of
+                   a boy sitting on the floor of an oversized room
+  Micropsia      — silhouette of an ant; photograph of a tiny book held between
+                   finger and thumb
+  Metamorphopsia — a grid of dots with the middle rows bowed out of line;
+                   photograph of a wooden staircase that bends and warps
+
+⚠️ NOTE: none of these three terms is defined anywhere in this deck. They are
+named on slide 83 as a bulleted list and illustrated here by picture only.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 85 — (no heading — Non-visual complaints, branching diagram)
+─────────────────────────────────────────────────────────────────────
+(No slide title. One branching diagram, root box at the left.)
+
+Non-visual complaints
+  ├ Red eye
+  ├ Discharge ──┬ watery
+  │             ├ mucoid
+  │             ├ mucopurulent
+  │             └ purulent
+  ├ Pain
+  ├ Itching
+  ├ Foreign body sensation
+  ├ Swelling
+  └ Disfigurement (cosmetic)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 86 — (no heading — six photographs of non-visual complaints)
+─────────────────────────────────────────────────────────────────────
+(No text of any kind on this slide. Six photographs in two rows of three,
+illustrating the previous slide's list; none of them is captioned.)
+
+  Top row:    a diffusely red eye · an eye with yellow crusted discharge on the
+              lashes · a woman pressing her fingers to her brow in pain
+  Bottom row: a boy rubbing both eyes with his fists · a cartoon child rubbing
+              one eye · an eye with a red swollen upper lid
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 87 — the Present Complaint (section title slide)
+─────────────────────────────────────────────────────────────────────
+the Present Complaint
+
+(Scroll graphic on the signature-page background, no other text.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 88 — (no heading — Analysis of the chief Complaint)
+─────────────────────────────────────────────────────────────────────
+(No slide title. One box with two arrows leading down to two ovals.)
+
+Analysis of the chief Complaint
+  ↓                              ↓
+Differential Diagnosis (DD)    Guided Examination
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 89 — (no heading — the analysis grid of the present complaint)
+─────────────────────────────────────────────────────────────────────
+(No slide title. Six coloured label bars down the left, each with its content
+bar to the right.)
+
+  Side:                • Monocular / Binocular
+  Mode of onset:       • Sudden / Acute / Accidentally Discovered / Gradual
+  Course:              • Progressive / Regressive / Stationary / Intermittent /
+                         Remittent.
+  Duration             [no content bar and no text of any kind beside this
+                         label — the heading is printed with nothing under it]
+  Pattern:             • Fluctuating / Persistent
+  Associated symptoms  • Headache, discharge, tearing, double vision, central
+                         vision affection, visual field defect, etc..
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 90 — (no heading — what was done about the complaint)
+─────────────────────────────────────────────────────────────────────
+(No slide title. Six coloured bars stacked, a light-bulb graphic either side.)
+
+  Seeking medical advice
+  Medications prescribed
+  Compliance to medications
+  Response to those medications
+  Interventions performed
+  Improvement or worsening
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 91 — Past ocular history (Medical and surgical) (section title slide)
+─────────────────────────────────────────────────────────────────────
+Past ocular history
 (Medical and surgical)
-Previous similar complaints/conditions in the same eye or the other eye.
 
-Previous surgical interventions in the same eye or the other eye.
+(Scroll graphic on the signature-page background, no other text.)
 
-Using spectacles or of being told to need spectacles.
 
-Contact lens use.
+─────────────────────────────────────────────────────────────────────
+SLIDE 92 — (no heading — the past ocular history list)
+─────────────────────────────────────────────────────────────────────
+(No slide title. Seven ruled lines of text.)
 
-Previous significant eye trauma.
+  Previous similar complaints/conditions in the same eye or the other eye.
+  Previous surgical interventions in the same eye or the other eye.
+  Using spectacles or of being told to need spectacles.
+  Contact lens use.
+  Previous significant eye trauma.
+  Medications (long term use) e.g., Antiglaucoma, Hydroxyqluoroquin.
+  Allergy or toxic reactions to certain topical and/or systemic medications.
 
-Medications (long term use) e.g., Antiglaucoma, Hydroxyqluoroquin.
+⚠️ "Hydroxyqluoroquin" is printed exactly so on the slide — verified on a
+magnified crop of the rendered page. It is the lecturer's spelling of
+hydroxychloroquine and is kept unaltered here.
 
-Allergy or toxic reactions to certain topical and/or systemic medications.
-Systemic Illnesses Affecting the Eye
- Diabetes mellitus
-   Hypertension
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 93 — Systemic Illnesses Affecting the Eye (section title slide)
+─────────────────────────────────────────────────────────────────────
+Systemic Illnesses Affecting the Eye
+
+(Scroll graphic on the signature-page background, no other text.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 94 — (no heading — the systemic illnesses list)
+─────────────────────────────────────────────────────────────────────
+(No slide title. Five coloured bars stacked.)
+
+  Diabetes mellitus
+  Hypertension
   Thyroid disease
-Autoimmune disease
+  Autoimmune disease
+  Malignancy
 
-   Malignancy
-Family History
-     Glaucoma
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 95 — Family History (section title slide)
+─────────────────────────────────────────────────────────────────────
+Family History
+
+(Scroll graphic on the signature-page background, no other text.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 96 — (no heading — the family history list)
+─────────────────────────────────────────────────────────────────────
+(No slide title. Seven coloured bars stacked.)
+
+  Glaucoma
   Ocular tumours
-Retinal detachment
+  Retinal detachment
   Anisometropia
-    Strabismus
-Retinitis pigmentosa
-Macular degeneration
-General Look of the
+  Strabismus
+  Retinitis pigmentosa
+  Macular degeneration
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 97 — General Look of the Ophthalmic Patient (section title slide)
+─────────────────────────────────────────────────────────────────────
+General Look of the
 Ophthalmic Patient
-                Get idea about vision   Helped by another person → Poor vision
+
+(Scroll graphic over a faded Snellen-chart background, no other text. The chart
+behind carries visible fractions 20/100, 20/70, 20/50, 20/40 and the letters
+E, F P, T O Z, L P E D, P E C F D, E D F C Z P, F E L O P Z D.)
 
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 98 — (no heading — General Look, branching diagram)
+─────────────────────────────────────────────────────────────────────
+(No slide title. Root box at the left, four branches, each leading to a
+conclusion box on the right. The conclusions are printed in red.)
 
-               Looking at the glasses     High myopia / High hypermetropia
-
-
-
-General Look                            Face turn / Head tilt → Paralytic squint
-
-               Abnormal head posture
-                                        Chin elevation & wrinkled forehead →
-                                                        Ptosis
-
-
-                 Overestimation &
-                                                   One eyed person
-                 special handling
-Basic Eye Examination
- Eye Examination is a fundamental part of any
-general examination performed by the primary
-            health care physician
-                    Minimal Requirements
+General Look
+  ├ Get idea about vision      → Helped by another person → Poor vision
+  ├ Looking at the glasses     → High myopia / High hypermetropia
+  ├ Abnormal head posture      → Face turn / Head tilt → Paralytic squint
+  │                            → Chin elevation & wrinkled forehead → Ptosis
+  └ Overestimation & special handling → One eyed person
 
 
-Visual Acuity        Pupillary    Extraocular        Fundus
-   Testing         Examination   Muscles Actions   Examination
+─────────────────────────────────────────────────────────────────────
+SLIDE 99 — Basic Eye Examination (SECTION TITLE SLIDE)
+─────────────────────────────────────────────────────────────────────
+Basic Eye Examination
+
+(Full-bleed stylised photograph of an eye rendered as blue circuitry. No other
+text. This slide opens the third and last part of the deck.)
 
 
-    Visual Field
-    Assessment
-These are the Five Vital Signs for eye examination ±
-     Intraocular pressure (tension) evaluation
-                                                                           Eyelids
+─────────────────────────────────────────────────────────────────────
+SLIDE 100 — (no heading — one statement)
+─────────────────────────────────────────────────────────────────────
+Eye Examination is a fundamental part of any general examination performed by
+the primary health care physician
 
-                                                                        Conjunctiva
 
-                                                                           Cornea
-                        Inspection
-                                                                           Sclera
+─────────────────────────────────────────────────────────────────────
+SLIDE 101 — (no heading — Minimal Requirements)
+─────────────────────────────────────────────────────────────────────
+(No slide title beyond the box. One box at the top with four boxes hanging
+under it, and a fifth box hanging off the first of those four.)
 
-                                                                             Iris
+Minimal Requirements
+  ├ Visual Acuity Testing
+  │    └ Visual Field Assessment
+  ├ Pupillary Examination
+  ├ Extraocular Muscles Actions
+  └ Fundus Examination
 
-                                                                            Lens
-   Additional
-examination items                         Intraocular pressure (Tension)
 
-                                                                           Depth
-                     Anterior chamber
-                                                                         Contents
+─────────────────────────────────────────────────────────────────────
+SLIDE 102 — (no heading — the Five Vital Signs)
+─────────────────────────────────────────────────────────────────────
+These are the Five Vital Signs for eye examination ± Intraocular pressure
+(tension) evaluation
 
-                                                                  Upper eyelid eversion
+("Five Vital Signs" is highlighted in yellow and underlined; "± Intraocular
+pressure (tension) evaluation" is underlined. The five are the five boxes of
+slide 101 — visual acuity, visual field, pupils, extraocular muscle actions and
+fundus.)
 
-                    Complementary tests           Fluorescein staining of the cornea and the ocular surface
 
-                                                                   Colour vision testing
-                  Tools required
-                        Topical
-           Mydriatic                    Direct       Fluorescein
-Penlight               Anesthetic
-           Eyedrops                 Ophthalmoscope      Strips
-                       Eye Drops
-             Tools required
-                        Slit Lamp
-       Used for examination the anterior segment
+─────────────────────────────────────────────────────────────────────
+SLIDE 103 — (no heading — Additional examination items)
+─────────────────────────────────────────────────────────────────────
+(No slide title. Root box at the left with three branches; the third-level
+items are printed on coloured bars.)
+
+Additional examination items
+  ├ Inspection
+  │    ├ Eyelids
+  │    ├ Conjunctiva
+  │    ├ Cornea
+  │    ├ Sclera
+  │    ├ Iris
+  │    └ Lens
+  ├ Intraocular pressure (Tension)          [a bar of its own, underlined,
+  │                                          hanging directly off the root]
+  ├ Anterior chamber
+  │    ├ Depth        (printed in red)
+  │    └ Contents     (printed in red)
+  └ Complementary tests
+       ├ Upper eyelid eversion
+       ├ Fluorescein staining of the cornea  and the ocular surface
+       └ Colour vision testing
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 104 — Tools required
+─────────────────────────────────────────────────────────────────────
+Tools required
+
+(Five captioned boxes in a row, each above a photograph of the instrument.)
+
+  Penlight                  — a slim black pen torch
+  Mydriatic Eyedrops        — a bottle labelled TROPICAMIDE 5 mg/mL (0.5 %),
+                              MYDRIACYL, Sterile Ophthalmic Solution 5 mL,
+                              "FOR EXTERNAL USE ONLY", Mydriatic / Cycloplegic
+  Topical Anesthetic
+   Eye Drops                — a bottle labelled BENOX 0.4 %, Sterile Ophthalmic
+                              Solution, benoxinate hydrochloride, Sterile 10 mL,
+                              E.I.P.I.C.O
+  Direct Ophthalmoscope     — a handheld direct ophthalmoscope
+  Fluorescein Strips        — a foil sachet labelled FUL-GLO, Fluorescein Sodium
+                              Ophthalmic Strips 1.0 mg, ONE STERILE STRIP
+
+⚠️ The drug bottles are photographs, not slide text; the trade names above are
+read off the labels in the pictures and are legible only in part. Where a line
+of small print could not be resolved it is not reproduced.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 105 — Tools required (the slit lamp)
+─────────────────────────────────────────────────────────────────────
+Tools required
+
+Slit Lamp
+Used for examination the anterior segment
 Can also be used for fundus examination (biomicroscopy)
-Visual Acuity
-It is a measurement of the smallest object a person can identify at a
-          given distance from the eye compared to normal.
+
+(Three photographs below the text: a table-mounted slit lamp · a close-up of a
+slit beam falling across the iris, cornea and lens · a hand-held slit lamp.)
 
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 106 — Visual Acuity (section title slide)
+─────────────────────────────────────────────────────────────────────
+Visual Acuity
 
-   Recorded as a ratio comparing patient’s performance with the VA of a normal person
-
-               [6 meters (20 feet) considered equivalent to optical infinity]
-                          𝑻𝒆𝒔𝒕𝒊𝒏𝒈 𝒅𝒊𝒔𝒕𝒂𝒏𝒄𝒆 (𝟔 𝒎𝒆𝒕𝒓𝒆𝒔 𝒐𝒓 𝟐𝟎 𝒇𝒆𝒆𝒕)
-Visual acuity=
-               𝑻𝒉𝒆 𝒔𝒎𝒂𝒍𝒍𝒆𝒔𝒕 𝒍𝒊𝒏𝒆 𝒕𝒉𝒆 𝒑𝒂𝒕𝒊𝒆𝒏𝒕 𝒄𝒂𝒏 𝒔𝒆𝒆𝒐𝒏 𝒕𝒉𝒆 𝒗𝒊𝒔𝒖𝒂𝒍 𝒂𝒄𝒖𝒊𝒕𝒚 𝒄𝒉𝒂𝒓𝒕
-                   60 m
-            10 m
-       1m
-5 cm
-                   60 m
-            36 m
-
-     18 m
-6m
-E-Chart   Landolt C-Chart   Snellen’s Chart
-         Visual acuity conversion table
-Meters                Feet                Decimal
- 6/6                 20/20                  1.0
-6/7.5                20/25                  0.8
- 6/9                 20/30                 0.67
- 6/12                20/40                  0.5
- 6/18                20/60                 0.33
- 6/24                20/80                 0.25
- 6/30                20/100                 0.2
- 6/36                20/120                0.16
- 6/60                20/200                 0.1
-6/120                20/400                0.05
-1.   Ensure good illumination of the room and the chart.
+(Scroll graphic over a faded Snellen-chart background — visible fractions
+20/100, 20/70, 20/50, 20/40, 20/30, 20/25, 20/20 and the row numbers 2, 3, 4,
+5, 6, 7, 8, 9. A cartoon doctor points at a chart reading, letter by letter,
+G / E T / Y O U R / E Y E S C / H E C K E D.)
 
 
-2.   Position the patient (sitting or standing) at a distance of 6 meters from the chart.
+─────────────────────────────────────────────────────────────────────
+SLIDE 107 — (no heading — definition of visual acuity)
+─────────────────────────────────────────────────────────────────────
+It is a measurement of the smallest object a person can identify at a given
+distance from the eye compared to normal.
+
+Recorded as a ratio comparing patient's performance with the VA of a normal
+person
+
+[6 meters (20 feet) considered equivalent to optical infinity]
 
 
-3.   Test one eye one at a time
-     (first without then with spectacles, if available)
-     VA is reported for each eye (right eye first) with and without correction by spectaacles
+─────────────────────────────────────────────────────────────────────
+SLIDE 108 — (no heading — the visual acuity formula)
+─────────────────────────────────────────────────────────────────────
+(No slide title. One boxed formula, nothing else on the slide.)
+
+                    Testing distance (6 metres or 20 feet)
+  Visual acuity = ─────────────────────────────────────────────────────
+                  The smallest line the patient can seeon the visual acuity
+                  chart
+
+⚠️ "can seeon" is printed as one word on the slide — verified on a magnified
+crop of the rendered page. Kept unaltered.
 
 
-4.   Ask the patient to cover one eye (left eye) with a plain occluder, card or palm of patient’s hand
-     (They should not press on the eye)
-5.   Ask the patient to designate the direction to which the strokes of the E point or the C letter’s
-     opening or to read the letters on the Snellen chart
+─────────────────────────────────────────────────────────────────────
+SLIDE 109 — (no heading — the principle of size and distance, everyday objects)
+─────────────────────────────────────────────────────────────────────
+(No text other than the four distance labels. A cartoon eye at the left with
+two red rays opening out to the right at a constant angle; four objects of
+increasing size sit inside the widening cone, each with a labelled
+double-headed arrow above it giving its distance from the eye.)
+
+Distance labels, longest arrow at the top down to shortest at the bottom:
+  60 m   — the tree (largest object, furthest right)
+  10 m   — the muscular adult man
+  1 m    — the seated baby
+  5 cm   — the bee (smallest object, nearest the eye)
+
+(The teaching: objects of very different size subtend the same angle at the eye
+when their distance is scaled to match.)
 
 
-6.   Starting from the top of the chart (the 6/60 optotype) then shift downwards to the next line upon
-     testing.
+─────────────────────────────────────────────────────────────────────
+SLIDE 110 — (no heading — the same principle with the letter E)
+─────────────────────────────────────────────────────────────────────
+(No text other than the four distance labels. The same cartoon eye and red
+angular cone, now with four black letter E's of increasing size.)
+
+Distance labels, longest arrow at the top down to shortest at the bottom:
+  60 m   — the largest E
+  36 m
+  18 m
+  6 m    — the smallest E, nearest the eye
+
+⚠️ Note the series here is 60 / 36 / 18 / 6 metres — these are the Snellen
+denominators, not the same numbers as slide 109.
 
 
-7.   The smallest line read is expressed as a fraction.
-      e.g, 6/18.
-     The upper number refers to the distance the chart is from the patient (6 meters)
-     The lower number is the distance in meters at which a ‘normal’ eye is able to read that line of the
-     chart.
+─────────────────────────────────────────────────────────────────────
+SLIDE 111 — (no heading — the 5-minute / 1-minute angle diagram)
+─────────────────────────────────────────────────────────────────────
+(No prose. One black-and-white line diagram on a white panel: a silhouetted
+head at the left, four Landolt C rings of increasing size to the right, all
+subtending the same angle, with a distance scale ruled underneath.)
+
+Labels on the figure:
+  5'   — at the head, the total angle subtended by the whole letter
+  1'   — at the largest ring, the angle subtended by the gap in the C
+  Scale beneath: 0 · 20 · 40 · 60 · 80 · 100 · 200
+  Axis caption: Distance (feet)
 
 
-8.   Repeat the procedure for the other eye.
-✓   Record the VA for each eye in the patient‘s notes, stating whether it is with or without correction
+─────────────────────────────────────────────────────────────────────
+SLIDE 112 — (no heading — the letters drawn on their construction grid)
+─────────────────────────────────────────────────────────────────────
+(No text at all. Two figures side by side, each an optotype drawn over a 5 × 5
+squared grid to show the construction.)
+
+  Left  — a white letter E on black, reversed (facing left), the grid marked
+          across its bars and gaps
+  Right — a black Landolt C on white on its 5 × 5 grid
+
+(The teaching, carried entirely by the grid: the whole letter is five units
+across and each stroke and gap is one unit — the 5-minute / 1-minute rule of
+slide 111.)
 
 
-✓   Example:
-    ✓   V/A Without correction:
-                                    Rt: 6/18    / Lt: 6/24
-    ✓   V/A With correction:
-                                    Rt: 6/6    / Lt: 6/12
-                               Pinhole Test
-If 6/6 is not achieved, repeat VA testing using a pinhole occluder
-(with or without spectacles).
-The use of the pinhole reduces the need to focus light entering the eye.
-                     Pinhole Test
-If VA improves, then the visual impairment is due to refractive error
-(should be correctable with spectacles or a new prescription).
+─────────────────────────────────────────────────────────────────────
+SLIDE 113 — (no heading — the three distance charts)
+─────────────────────────────────────────────────────────────────────
+(No slide title. Three chart photographs side by side, each captioned in
+yellow beneath.)
+
+  E-Chart          — tumbling-E chart, rows of E's in four orientations,
+                     Snellen fractions ruled down the left margin
+                     (footer on the chart itself: ContactLensKing.com)
+  Landolt C-Chart  — rows of Landolt C rings, line numbers 1–11 down the right,
+                     with a GREEN rule under line 7 and a RED rule under line 8
+  Snellen's Chart  — letter chart reading E / F P / T O Z / L P E D / P E C F D /
+                     E D F C Z P / F E L O P Z D / …, line numbers 1–11 down the
+                     right with their fractions:
+                        1 = 20/200 · 2 = 20/100 · 3 = 20/70 · 4 = 20/50 ·
+                        5 = 20/40 · 6 = 20/30 · 7 = 20/25 · 8 = 20/20
+                     (a GREEN rule runs under line 6 and a RED rule under line 8)
+
+⚠️ The three charts are not otherwise annotated: the slide names them and shows
+them, and prints no text explaining when one is chosen over another.
 
 
-If VA worsens, another ocular pathology is causing the visual impairment
-What If the patient cannot read the largest (top) letter at 6 meters?
+─────────────────────────────────────────────────────────────────────
+SLIDE 114 — Visual acuity conversion table
+─────────────────────────────────────────────────────────────────────
+Visual acuity conversion table
 
-1.   Reduce the distance between the patient and the chart, 1 meter at a time, until the top letter can be seen
-     the VA will then be recorded as 5/60 or 4/60, etc.
+  Meters   |  Feet    |  Decimal
+  ---------|----------|---------
+  6/6      |  20/20   |  1.0
+  6/7.5    |  20/25   |  0.8
+  6/9      |  20/30   |  0.67
+  6/12     |  20/40   |  0.5
+  6/18     |  20/60   |  0.33
+  6/24     |  20/80   |  0.25
+  6/30     |  20/100  |  0.2
+  6/36     |  20/120  |  0.16
+  6/60     |  20/200  |  0.1
+  6/120    |  20/400  |  0.05
 
-
-2.   If the patient cannot read the largest (top) letter at one meter,
-     Hold up 1 hand, extend 2 or more fingers, at varying distances of less than 1 meter and ask the patient to
-     count the number of fingers.
-     Record the distance at which counting fingers is done accurately (e.g., CF 50 cm).
-What If the patient cannot read the largest (top) letter at 6 meters?
-
-3.   If the patient cannot count fingers:
-     Wave your hand and check if he/she can see this.
-     This is recorded as hand movements (HM): VA = HM
-
-
-
-
-4.   If the patient cannot detect hand motion:
-     Shine a torch toward the eye and ask if they can see the light.
-     If they can, record ‘perception of light’ (VA = PL).
-     If they cannot, record ‘no perception of light’ (VA = NoPL).
-
-                                                                       PL
-Visual Field Testing
-                                      Confrontation Method              VA = 1/60 or better
-                        Clinically
-                                          Light Projection               VA less than 1/60
+(Verified on a magnified crop. Ten rows, no others.)
 
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 115 — (no heading — how to test visual acuity, steps 1–4)
+─────────────────────────────────────────────────────────────────────
+(No slide title. A numbered list, continued on slide 116.)
 
-Visual Field Testing   Amsler Grid   For the central 10° of the visual field
+ 1. Ensure good illumination of the room and the chart.
 
+ 2. Position the patient (sitting or standing) at a distance of 6 meters from
+    the chart.
 
+ 3. Test one eye one at a time
+    (first without then with spectacles, if available)
+    VA is reported for each eye (right eye first) with and without correction
+    by spectaacles
 
-                                              Manual
-                       Perimetry
-                                            Automated
-Confrontation Visual Field Testing
+ 4. Ask the patient to cover one eye (left eye) with a plain occluder, card or
+    palm of patient's hand
+    (They should not press on the eye)
 
-                  Gross Detection of Significant visual field defects
-
-
-
-The field of the examiner’s left eye is used as a reference in assessing the field of the
-                          patient’s right eye and vice versa
-     Confrontation Visual Field Testing
-1.    Sit ONE meter in front of the patient with both eyes at same level.
-
-
-
-
-2.    Ask the patient to cover the left eye with the palm of the left hand
+⚠️ "spectaacles" in step 3 is printed exactly so — verified on a magnified crop.
+The same slide spells it "spectacles" correctly two lines above.
 
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 116 — (no heading — how to test visual acuity, steps 5–8)
+─────────────────────────────────────────────────────────────────────
+(No slide title. The numbered list continues from slide 115.)
+
+ 5. Ask the patient to designate the direction to which the strokes of the E
+    point or the C letter's opening or to read the letters on the Snellen chart
+
+ 6. Starting from the top of the chart (the 6/60 optotype) then shift downwards
+    to the next line upon testing.
+
+ 7. The smallest line read is expressed as a fraction.
+    e.g, 6/18.
+    The upper number refers to the distance the chart is from the patient
+    (6 meters)
+    The lower number is the distance in meters at which a 'normal' eye is able
+    to read that line of the chart.
+
+ 8. Repeat the procedure for the other eye.
 
 
-3.    Close your right eye (preferably with the palm of the hand)
-     Confrontation Visual Field Testing
-4.    Ask the patient to:
-      a)   Fixate on your left eye
-      b)   Count your fingers placed midway
-           between you and the patient in each of
-           the 4 quadrants of the visual field.
+─────────────────────────────────────────────────────────────────────
+SLIDE 117 — (no heading — recording the VA, with a worked example)
+─────────────────────────────────────────────────────────────────────
+(No slide title. Tick-marked list.)
+
+ ✓ Record the VA for each eye in the patient's notes, stating whether it is with
+   or without correction
+
+ ✓ Example:
+     ✓ V/A Without correction:
+              Rt: 6/18   /   Lt: 6/24
+     ✓ V/A With correction:
+              Rt: 6/6    /   Lt: 6/12
 
 
-5.    Repeat the test for the patient’s left eye
+─────────────────────────────────────────────────────────────────────
+SLIDE 118 — Pinhole Test (what it is)
+─────────────────────────────────────────────────────────────────────
+Pinhole Test
+
+ ○ If 6/6 is not achieved, repeat VA testing using a pinhole occluder
+   (with or without spectacles).
+   The use of the pinhole reduces the need to focus light entering the eye.
+
+(Photographs: a red disc-shaped pinhole occluder marked PH · a black
+paddle-type multiple-pinhole occluder · a two-panel line diagram of the eye,
+the upper panel showing a wide pencil of light crossing before the retina and
+the lower panel the same eye with a pinhole in front of it narrowing the pencil
+to a single ray reaching the retina.)
 
 
+─────────────────────────────────────────────────────────────────────
+SLIDE 119 — Pinhole Test (how to read the result)
+─────────────────────────────────────────────────────────────────────
+Pinhole Test
 
-                          4.
-Confrontation Visual Field Testing
-     Confrontation Visual Field Testing
-4.    Record the results of the test
- Confrontation Visual Field Testing
+ ○ If VA improves, then the visual impairment is due to refractive error
+   (should be correctable with spectacles or a new prescription).
+
+ ○ If VA worsens, another ocular pathology is causing the visual impairment
+
+(Two photographs of a girl wearing a black occluder frame — in the first the
+pinhole disc is over the right eye, in the second the plain occluder is.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 120 — What If the patient cannot read the largest (top) letter at 6 meters?
+─────────────────────────────────────────────────────────────────────
+What If the patient cannot read the largest (top) letter at 6 meters?
+
+ 1. Reduce the distance between the patient and the chart, 1 meter at a time,
+    until the top letter can be seen
+    the VA will then be recorded as 5/60 or 4/60, etc.
+
+ 2. If the patient cannot read the largest (top) letter at one meter,
+    Hold up 1 hand,  extend 2 or more fingers, at varying distances of less than
+    1 meter and ask the patient to count the number of fingers.
+    Record  the distance at which counting fingers is done accurately
+    (e.g., CF 50 cm).
+
+(Three pictures beneath: a hand showing one finger · a hand showing two
+fingers · an open palm.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 121 — What If the patient cannot read the largest (top) letter at 6 meters? (cont.)
+─────────────────────────────────────────────────────────────────────
+What If the patient cannot read the largest (top) letter at 6 meters?
+
+ 3. If the patient cannot count fingers:
+    Wave your hand and check if he/she can see this.
+    This is recorded as hand movements (HM): VA = HM
+
+ 4. If the patient cannot detect hand motion:
+    Shine a torch toward the eye and ask if they can see the light.
+    If they can, record 'perception of light' (VA = PL).
+    If they cannot, record 'no perception of light' (VA = NoPL).
+
+(Pictures: a cartoon yellow hand · a red ring badge reading PL · the same badge
+struck through, reading NO PL.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 122 — Visual Field Testing (section title slide)
+─────────────────────────────────────────────────────────────────────
+Visual Field Testing
+
+(Scroll graphic on a faded perimetry-chart background; the figures 2° and 170
+are visible in the background image, together with a faint drawing of an eye
+and of an open book.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 123 — (no heading — Visual Field Testing, branching diagram)
+─────────────────────────────────────────────────────────────────────
+(No slide title. Root box at the left with three branches.)
+
+Visual Field Testing
+  ├ Clinically
+  │    ├ Confrontation Method  → VA = 1/60 or better
+  │    └ Light Projection      → VA less than 1/60
+  ├ Amsler Grid                → For the central 10° of the visual field
+  └ Perimetry
+       ├ Manual
+       └ Automated
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 124 — Confrontation Visual Field Testing (principle)
+─────────────────────────────────────────────────────────────────────
+Confrontation Visual Field Testing
+
+Gross Detection of Significant visual field defects
+
+The field of the examiner's left eye is used as a reference in assessing the
+field of the patient's right eye and vice versa
+
+("examiner's left eye" and "patient's right eye" are printed in yellow.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 125 — Confrontation Visual Field Testing (steps 1–3)
+─────────────────────────────────────────────────────────────────────
+Confrontation Visual Field Testing
+
+ 1. Sit ONE meter in front of the patient with both eyes at same level.
+
+ 2. Ask the patient to cover the left eye with the palm of the left hand
+
+ 3. Close your right eye (preferably with the palm of the hand)
+
+(Two photographs of an examiner facing a patient. The upper one carries the
+on-picture captions "EYES AT SAME LEVEL" and "TARGET EQUIDISTANT" with a dashed
+line drawn between the two pairs of eyes.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 126 — Confrontation Visual Field Testing (steps 4–5)
+─────────────────────────────────────────────────────────────────────
+Confrontation Visual Field Testing
+
+ 4. Ask the patient to:
+     a) Fixate on your left eye
+     b) Count your fingers placed midway between you and the patient in each of
+        the 4 quadrants of the visual field.
+
+ 5. Repeat the test for the patient's left eye
+
+⚠️ A stray list number "4." is printed low in the middle of this slide with
+nothing after it — a numbered item with no text under it.
+
+(Photograph: an examiner in a red jumper holding up two fingers beside a seated
+patient's head.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 127 — Confrontation Visual Field Testing (the fixation photograph)
+─────────────────────────────────────────────────────────────────────
+Confrontation Visual Field Testing
+
+(No prose. One photograph of a nurse-examiner facing the camera with a yellow
+cross drawn over her face marking the fixation point and the horizontal and
+vertical meridians; a hand holding up one finger enters from the lower left.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 128 — Confrontation Visual Field Testing (recording the result)
+─────────────────────────────────────────────────────────────────────
+Confrontation Visual Field Testing
+
+ 4. Record the results of the test
+
+(One figure: three rows of paired visual-field circles, each circle divided into
+four quadrants by dashed lines, each pair captioned Left and Right. Quadrants
+where fingers are counted are marked CF; blind quadrants are shaded grey.)
+
+  Row 1 — Left: CF in all four quadrants · Right: CF in all four quadrants
+  Row 2 — Left: the LEFT half shaded, CF in both right quadrants ·
+          Right: the RIGHT half shaded, CF in both left quadrants
+  Row 3 — Left: the LEFT half shaded, CF in both right quadrants ·
+          Right: the LEFT half shaded, CF in both right quadrants
+
+⚠️ The three rows are NOT captioned with a diagnosis on the slide. It prints the
+patterns and nothing else — no "bitemporal", no "homonymous", no lesion site.
+The step is numbered "4." although slide 126 already used 4 and 5.
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 129 — Confrontation Visual Field Testing (N.B. — the kinetic variant)
+─────────────────────────────────────────────────────────────────────
+Confrontation Visual Field Testing
+
 N.B.:
-   •    Instead of counting fingers, you can advance your finger
-        starting from periphery (superior, temporal , inferior and nasal)
-        and ask the patient to say when the finger is first visible
+ • Instead of counting fingers, you can advance your finger starting from
+   periphery (superior, temporal , inferior and nasal) and ask the patient to
+   say when the finger is first visible
+
+ • This method gives an idea about the outlines of the field but not its
+   affected parts (quadrants)
+
+(Two photographs of an examiner and patient facing each other, each with one
+eye occluded, the examiner's finger brought in from above and from the side.)
 
 
-   •    This method gives an idea about the outlines of the field but not
-        its affected parts (quadrants)
-    Light Projection
-o   Using the penlight, with the patient properly occluding the other eye.
+─────────────────────────────────────────────────────────────────────
+SLIDE 130 — Light Projection
+─────────────────────────────────────────────────────────────────────
+Light Projection
+
+ ○ Using the penlight, with the patient properly occluding the other eye.
+
+ ○ Light is directed at the eye tested from different quadrants (superior,
+   inferior, temporal, and nasal) and the patient is asked to determine the
+   direction of illumination.
+
+ ○ Results are recorded as:
+     ○ Good light projection (GLP)
+     ○ Bad light projection (BLP)
 
 
-o   Light is directed at the eye tested from different quadrants (superior, inferior, temporal, and nasal)
-    and the patient is asked to determine the direction of illumination.
+─────────────────────────────────────────────────────────────────────
+SLIDE 131 — 1. Digital Method:
+─────────────────────────────────────────────────────────────────────
+1. Digital Method:
+
+⚠️ The heading is printed with NOTHING under it — no prose, no bullets. The
+whole slide below the heading is one photograph: a doctor standing beside a
+seated patient in a clinic, with two illuminated Landolt-C distance charts on
+the wall behind and a slit lamp at the right edge.
+
+⚠️ The numbering is orphaned: there is no "2." method anywhere in the deck, and
+the heading names no test. Digital tonometry is nowhere described in words.
 
 
-o   Results are recorded as:
-     o   Good light projection (GLP)
-     o   Bad light projection (BLP)
-1. Digital Method:
-Common Presentations
-1. Loss of Vision:
-    Sudden            Acute          Chronic
-         CRAO           Keratitis   Refractive error
+─────────────────────────────────────────────────────────────────────
+SLIDE 132 — Common Presentations (section title slide)
+─────────────────────────────────────────────────────────────────────
+Common Presentations
 
-    Amaurosis Fugax     Uveitis         Cataract
+(Scroll graphic on the faded eye-and-book background, no other text.)
 
-        Trauma         Acute NAG         AMD
 
-      Functional           RD             DR
-                        Vitreous
-                                    Optic neuropathy
-                      Haemorrhage
-                        ……… etc         ……… etc
-2. Red Eye:
-         Most Important        Other Causes
-              Conjunctivitis    Subconjunctival Hge
+─────────────────────────────────────────────────────────────────────
+SLIDE 133 — 1. Loss of Vision:
+─────────────────────────────────────────────────────────────────────
+1. Loss of Vision:
 
-                Keratitis           Episcleritis
+(Three columns, each headed by a coloured bar with its list hanging beneath.)
 
-               Acute Iritis          Scleritis
+  Sudden              Acute                Chronic
+  ------------------  -------------------  -----------------
+  CRAO                Keratitis            Refractive error
+  Amaurosis Fugax     Uveitis              Cataract
+  Trauma              Acute NAG            AMD
+  Functional          RD                   DR
+                      Vitreous Haemorrhage Optic neuropathy
+                      ……… etc              ……… etc
 
-               Acute NAG            Corneal FB
+⚠️ The abbreviations CRAO, NAG, RD, AMD and DR are printed unexpanded here.
 
-                                 Corneal Abrasion
 
-                                      ……. etc
-3. Ocular Emergencies:
-        Vision-threatening                                  Life-threatening
-               Chemical burns
-      Central retinal artery occlusion                           Acute proptosis
+─────────────────────────────────────────────────────────────────────
+SLIDE 134 — 2. Red Eye:
+─────────────────────────────────────────────────────────────────────
+2. Red Eye:
 
-       Acute angle closure glaucoma
-                                               Oculomotor (III) palsy with internal ophthalmoplegia
-                 Acute iritis
-              Endophthalmitis                                     Papilledema
-         Gonococcal conjunctivitis
-                                                                 Orbital cellulitis
-          Lid or globe lacerations
-                Corneal ulcer                               Leukocoria (white reflex)
-            Retinal detachment
-          Intraocular foreign body
-            Orbital haemorrhage
-   Giant cell arteritis (Temporal arteritis)
-thank you
-
+(Two columns, each headed by a coloured bar with its list hanging beneath.)
+
+  Most Important      Other Causes
+  ------------------  ---------------------
+  Conjunctivitis      Subconjunctival Hge
+  Keratitis           Episcleritis
+  Acute Iritis        Scleritis
+  Acute NAG           Corneal FB
+                      Corneal Abrasion
+                      ……. etc
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 135 — 3. Ocular Emergencies:
+─────────────────────────────────────────────────────────────────────
+3. Ocular Emergencies:
+
+  Vision-threatening                        | Life-threatening
+  ------------------------------------------|------------------------------------
+  Chemical burns                            | Acute proptosis
+  Central retinal artery occlusion          | Oculomotor (III) palsy with
+  Acute angle closure glaucoma              |   internal ophthalmoplegia
+  Acute iritis                              | Papilledema
+  Endophthalmitis                           | Orbital cellulitis
+  Gonococcal conjunctivitis                 | Leukocoria (white reflex)
+  Lid or globe lacerations                  |
+  Corneal ulcer                             |
+  Retinal detachment                        |
+  Intraocular foreign body                  |
+  Orbital haemorrhage                       |
+  Giant cell arteritis (Temporal arteritis) |
+
+(Twelve vision-threatening entries, five life-threatening. Verified on a
+magnified crop.)
+
+
+─────────────────────────────────────────────────────────────────────
+SLIDE 136 — thank you (closing slide)
+─────────────────────────────────────────────────────────────────────
+thank you
+
+(A line-drawn eye beside the words. Last slide of the deck.)
+
+
+═════════════════════════════════════════════════════════════════════
+END OF DECK — 136 slides, all transcribed.
+═════════════════════════════════════════════════════════════════════
+
+
+NOT COVERED ANYWHERE IN THIS DECK
+─────────────────────────────────────────────────────────────────────
+Everything below was looked for by grepping this finished transcript, which
+covers all 136 slides. Each entry names a specific thing that is absent, and
+says what the deck DOES print in its place — so a question can be settled
+against this list instead of guessed at. Counts are of hits in this file.
+
+NAMED BUT NEVER TAUGHT — the deck lists these as examination items and then
+prints not one word of method:
+
+ ▪ TONOMETRY. The word "tonometr" occurs ZERO times in the deck (the single
+   hit in this file is my own annotation on slide 131). "Goldmann",
+   "applanation", "Schiotz" and "indentation" are each 0 hits. Intraocular
+   pressure is listed as a vital sign on slide 102 and as an examination item
+   on slide 103, and slide 131's heading "1. Digital Method:" is printed with
+   nothing under it but a photograph. No normal IOP range, no mmHg figure, and
+   no digital-palpation technique appears anywhere.
+
+ ▪ PUPILLARY EXAMINATION. Named once, as a box on slide 101, and never
+   described. "RAPD" = 0 hits · "Marcus" (Gunn) = 0 · "afferent" = 0 ·
+   "consensual" = 0 · "light reflex" = 0 · "swinging" (flashlight test) = 0.
+   All the pupil content in the deck is anatomical labelling: "Sphincter
+   pupillae (3rd cranial)" and "Dilator pupillae" on slide 13, and "Pretectal
+   nucleus" and "Edinger-Westphal nucleus (parasympathetic nucleus)" as two
+   labels on the midbrain diagram of slide 42. The reflex arc those labels
+   belong to is never drawn as a pathway and never described.
+
+ ▪ FUNDUS EXAMINATION / OPHTHALMOSCOPY. "ophthalmoscop" occurs exactly ONCE in
+   the whole deck, as the caption "Direct Ophthalmoscope" on the tools slide
+   104. No technique, no working distance, no dilation protocol, no red-reflex
+   test ("red reflex" = 0 hits), and no indirect ophthalmoscopy.
+
+ ▪ EXTRAOCULAR MUSCLE EXAMINATION. "Extraocular Muscles Actions" is one of the
+   five vital signs on slide 101, but no method of testing motility is given.
+   "cover test" = 0 hits · "Hirschberg" = 0 · "Hess" = 0 · "diplopia chart" =
+   0. Slides 64–70 are anatomy of the muscles and their actions, not an
+   examination.
+
+ ▪ AMSLER GRID. One line only — slide 123, "For the central 10° of the visual
+   field". The grid itself is never shown, and no instructions or
+   interpretation are printed. "Amsler" = 1 hit in the deck.
+
+ ▪ PERIMETRY. Slide 123 splits it into "Manual" and "Automated" and stops
+   there. No perimetry printout is shown, no named instrument, "Bjerrum" = 0,
+   "tangent" (screen) = 0, "Goldmann" = 0.
+
+ ▪ COLOUR VISION TESTING. Listed as a complementary test on slide 103;
+   "Ishihara" = 0 hits and no plate is shown. "Colour blindness" is a bare
+   label beside a picture on slide 80 with no defining sentence.
+
+ ▪ UPPER EYELID EVERSION. Listed on slide 103; no technique and no picture.
+
+ ▪ FLUORESCEIN STAINING. Listed on slide 103 and the strips are photographed
+   on slide 104 — two hits, both of them lists. No method, no "cobalt" blue
+   (0 hits), no interpretation of a stained defect.
+
+ ▪ ANTERIOR CHAMBER DEPTH. Slide 103 lists "Depth" and "Contents" in red and
+   gives no grading method. "van Herick" = 0 hits.
+
+NOT PRESENT AT ALL:
+
+ ▪ NEAR VISION TESTING. "near vision" = 0 hits · "Jaeger" = 0 · no N-notation.
+   The entire visual acuity run, slides 106–121, is distance acuity only.
+
+ ▪ LogMAR. 0 hits. Slide 114's conversion table gives Meters / Feet / Decimal
+   and no logMAR column.
+
+ ▪ REFRACTION AND ITS INSTRUMENTS. "retinoscop" = 0 hits · "keratometr" = 0 ·
+   "optometr" = 0 · "astigmat" = 0 · "presbyop" = 0. Refractive error is named
+   only as an outcome — as a pinhole result on slide 119 and as a cause of
+   chronic loss of vision on slide 133. "High myopia / High hypermetropia"
+   appears once, on slide 98, as something inferred from looking at a
+   patient's glasses.
+
+ ▪ PAEDIATRIC OR PREVERBAL ACUITY TESTING. "children" = 0 hits · "infant" = 0 ·
+   "illiterate" = 0 · "Teller" = 0. The tumbling-E and Landolt C charts are
+   shown on slide 113 but no slide says who they are for.
+
+ ▪ SCHIRMER TEST / DRY EYE ASSESSMENT. "Schirmer" = 0 hits. The tear film is
+   taught anatomically on slide 56 and never tested.
+
+ ▪ IMAGING. "OCT" = 0 hits · "ultrasound" = 0 · "B-scan" = 0 · no CT, no MRI.
+
+TAUGHT BY PICTURE ONLY — named and illustrated, but never defined in words:
+
+ ▪ MACROPSIA, MICROPSIA and METAMORPHOPSIA. Bulleted on slide 83 and given a
+   picture each on slide 84. No slide defines any of the three.
+
+ ▪ NIGHT BLINDNESS and COLOUR BLINDNESS on slide 80 — bare labels beside
+   pictures, where "Duskiness", "Photophobia" and "Glare" on slides 78–79 each
+   get a one-line definition.
+
+ ▪ THE THREE VISUAL FIELD PATTERNS on slide 128 — normal, one temporal-half
+   pair and one left-half pair — are drawn without any diagnostic caption.
+   Neither "bitemporal" nor "homonymous" nor "hemianopia" appears anywhere in
+   the deck.
+
+ ▪ THE THREE CHARTS on slide 113 (E-Chart, Landolt C-Chart, Snellen's Chart)
+   are named and photographed with no text on when to choose which.
+
+ABBREVIATIONS LEFT UNEXPANDED. Slides 133–134 print AMD, DR, RD, NAG, Corneal
+FB and Subconjunctival Hge and the deck never spells any of them out —
+"narrow angle" = 0 hits, "age-related" = 0, "Diabetic" = 0. CRAO is the one
+exception: it is written out as "Central retinal artery occlusion" on slide 135.
+
+FURTHER GAPS INSIDE COVERED TOPICS:
+
+ ▪ Slide 89's analysis grid prints the label "Duration" with no content bar and
+   no text beside it — the only row of the six left empty.
+
+ ▪ Slide 126 carries a stray list number "4." low on the slide with nothing
+   after it, and slide 128 restarts its numbering at "4." after 126 had already
+   used 4 and 5.
+
+ ▪ Slide 131's "1. Digital Method:" has no matching "2." anywhere in the deck.
+
+ ▪ Slides 133–134 end their columns with "……… etc" rather than completing the
+   lists.

@@ -10186,3 +10186,154 @@ stay. **User's call, not mine.**
   number is visible.
 - **43 bullets exceed 55 words**, the longest 87 (`tons-14`). Pre-existing and unchanged.
 - **39 §14.5 rows remain open across the register — all of them ophthalmology.** ENT is at zero.
+
+---
+
+## §17 — OPHTHALMOLOGY REOPENS: HOUSE CH.1 MERGED, AND THE MODULE'S BLIND DECKS FINALLY MEASURED (2026-08-24)
+
+ENT closed the same day (§16) and the module turned to ophthalmology, ~1,918 bank questions against
+the **27 September** exam. Two things happened before a single new question was transcribed, and both
+were corrections to what the project believed about its own state.
+
+### ✅ 56 House entries were finished, adjudicated, and had simply never been spliced
+
+`house-c1.draft.js` (22) and `house-c1b.draft.js` (34) held **56 complete, validated entries** for
+House Part A chapter 1, *"Examination of the eye"* — drafted 2026-08-12, swept against the 138 Grade
+Gain entries the same week (nothing above 0.60, four pairs read by hand, all four held), and then
+left on disk when that session ended. **The adjudication was done; the merge was not.**
+
+Spliced now. **ophtho 138 → 194**, corpus **2,699 → 2,755**, per-bank `gradegain 138 · house 56`.
+**Marker delta +56, predicted and observed** — this chapter prints no explanation box and no figure
+anywhere across its six PDF pages, so all 56 are authored and every one carries the marker.
+Validation after the splice: **0 BAD, 0 dead backticked ids, 0 sparse holes, every `answer` in
+range.** Boot from `file://`: **0 console errors, 876 CSS rules, 3 `max-aspect-ratio:5/4` blocks,
+4 modules, 153 chapters, 1,603 sections, 89 cases.**
+
+⚠️ **A FINISHED BATCH THAT IS NOT MERGED IS INDISTINGUISHABLE FROM AN UNFINISHED ONE, AND THE RESUME
+FILE SAID "STAGED, UNMERGED" FOR TWELVE DAYS.** The only way to tell was to parse both files and
+count: 56 entries, ids 1–56 contiguous with no gaps, every one carrying `source`, `explanation` and
+the marker, mean explanation 532 words. **Parse the draft before believing the note about it.**
+
+### ⚠️⚠️ A FAILURE LIST BUILT FROM FAILURE SIGNALS IS NOT A COVERAGE MEASUREMENT — EIGHT DECKS WAS ELEVEN
+
+`resume-ophtho.md` carried a list of *"eight decks needing a visual read, one done, seven left"*,
+assembled from two signals: **never cached**, and **the cache is a CamScanner watermark**. Sweeping
+every deck for **characters per slide** instead — healthy prose here runs 500–3,000, and anything
+under ~200 was opened and looked at — found **eleven decks and 574 slides.**
+
+**Five of the eleven were on no owed list anywhere, because their extractions had SUCCEEDED.** They
+are simply near-empty:
+
+| Deck | Slides | chars/slide | Why it was invisible |
+|---|---|---|---|
+| `L1,2) Ocular Anatomy…` | **136** | 146 | the module's **foundational deck**; 83 of 136 slides extract blank under the identical running header *"Anatomy & Physiology"*, so page-title triage cannot rank it |
+| `L29) Sqint I` | 35 | 63 | Galal picture deck |
+| `L22) Pupil and Visual pathway` | 25 | 97 | the visual pathway is a diagram |
+| `L30) Squint II` | 23 | 66 | Galal picture deck |
+| `L21) Optic Nerve` | 20 | 30 | listed as a watermark — **it is not**, see below |
+
+**The instrument that finds these is a RATIO AGAINST SLIDE COUNT, never a look at file size.**
+`L21) Optic Nerve.txt` is 615 bytes — big enough to look real in a directory listing, and 30
+characters a slide.
+
+⚠️ **AND ONE ROW OF THE OLD LIST WAS SIMPLY WRONG.** It described `L21) Optic Nerve.txt` as *"22
+blank lines, a title and one stray line"*. **Read: all 615 bytes are content** — *Normal Optic Disc*,
+the five manifestations of optic nerve dysfunction (VA, colour vision, contrast sensitivity, field
+defect, RAPD), *Optic Disc Edema — Papilloedema / AION / Papillitis*, and *Optic Atrophy — Primary /
+Secondary / Consecutive / Glaucomatous*. It is a **complete extraction of a sparse picture deck**,
+which needs the same fix as a failed extraction and is a different fault. Corrected in
+`resume-ophtho.md`.
+
+### ✅ THE TWO `.pptx` DECKS ARE AS BLIND AS THE WORST PDFs, AND POWERPOINT SOLVES THEM
+
+`L5) Eyelid disease` (47 slides, **127 media files for 365 words**) and `L6) Conjunctiva` (66 slides,
+**73 media files for 343 words**) extract cleanly from `ppt/slides/slide*.xml`, so **they never
+appeared in any failure list** — while carrying more than one picture per slide against five to eight
+words of text.
+
+**PowerPoint is installed on this machine**, so they are exported to PDF and then rendered like any
+other deck:
+
+> `$p = $app.Presentations.Open($src, $true, $false, $false)` — the `$true` is **ReadOnly**
+> `$p.SaveCopyAs("$dest.pdf", 32)` — **`SaveCopyAs`, never `SaveAs`**, because `SaveAs` rebinds the
+> open presentation to the new path
+
+Verified: **47 and 66 pages out, matching the slide counts exactly, and both source `.pptx` mtimes
+unchanged** (May 1 and May 3). ⚠️ PowerPoint reported `slides=0` for the second deck and then died
+with *"The RPC server is unavailable"* — **after** writing a complete, correct PDF. **A COM object
+tearing down reports nonsense; check the artifact on disk, not the return value.**
+
+### The instruments — `<scratch>\oph\`
+
+| Tool | What it does |
+|---|---|
+| `lib.js` | loaders. Reads each data file's `var` binding by name; walks the corpus **by index, never `Array.filter`** |
+| `sheet.js` | renders a deck and tiles it into four-up contact sheets, **burning the slide number into each cell** |
+| `qpages.js` | renders a **book**-page range of a bank, doing each file's own offset arithmetic and always rendering one page past |
+| `sweep.js` | the six-stage duplicate sweep, ported from the ENT House harness |
+| `splice.js` | appends a drafted block to `questions.ophtho.js` behind five guards, rolling back on any fault |
+| `validate.js` | §7 plus the marker count, misplaced markers, dead ids and per-bank counts |
+| `norm.js` / `normtest.js` | the typo-, accent-, punctuation- and British/American-tolerant comparator. **39-case self-test passes unchanged on this module** |
+
+⚠️ **`sheet.js` BURNS THE SLIDE NUMBER INTO EVERY CELL, AND THAT IS NOT DECORATION.** A four-up sheet
+carries no other way to tell slide 83 from slide 87, and every agent is told to *read the number off
+the image rather than compute it* — a transcription that silently slips by one is unfalsifiable
+afterwards.
+
+### ⚠️ Five faults in my own instruments, found by running them
+
+1. **`splice.js` produced a file that would not parse**, because the last live entry ends `}` with no
+   comma — the comma that separated it from its neighbours is the one the closing `];` follows.
+   Appending without a leading comma yields `} { id:` . Now detected structurally; the run rolled
+   itself back rather than shipping the damage.
+2. **The dead-id check reported two dead ids that are not ids.** The pattern allowed a trailing
+   hyphen, so it matched backticked **prefixes** the prose deliberately quotes — `` `enthd-sel-` ``,
+   `` `enthd-ear-` ``. Last character must be alphanumeric.
+3. **The theory binding is `T_<MOD>`, not `TH_<MOD>`, and it is an OBJECT KEYED BY CHAPTER ID, not an
+   array.** The first version guessed the name, got `null`, and **silently added no theory section id
+   to the known set.** A dead-id check resolving against a set that quietly lost a whole file is
+   exactly the shape this project has been bitten by six times: *the report still looks complete.*
+4. **"Ask ChatGPT" is not automatically residue in this corpus.** The naive sweep flagged four ENT
+   endpoint entries — and all four are correct: **those printed boxes were themselves pasted out of a
+   chatbot and literally end with those words**, and the entries record it, in quotation marks, as a
+   source defect. The check now flags only an occurrence with no annotation around it.
+5. **The staging shape keys by LETTER (`'C'`) and the draft shape keys by INDEX (`2`).** Reading one
+   as the other keys every question to option A, and stage B then matches on a key nobody printed.
+
+✅ **The sweep was self-tested against a known-merged batch** — `gg-t3.array.js`, whose 26 questions
+are already live — and returned **23 stage-A exact self-matches**, plus the recorded false-positive
+pair `opqb-t3-117`/`opqb-t3-138` at **C = 0.91**, which is the documented menu-recycling shape
+behaving exactly as `resume-ophtho.md` describes it. The three that did *not* exact-match are the
+three whose stems were repaired at drafting time — which is the intended outcome, and is itself a
+check that the repairs are still in the live file.
+
+### ⚠️⚠️ SEVEN AGENTS DIED ON THE SESSION USAGE LIMIT AT ONCE — AND THE "WRITE INCREMENTALLY" RULE TURNED FOUR TOTAL LOSSES INTO FOUR RESUMABLE PARTIALS
+
+Every brief carried this paragraph:
+
+> **⚠️ WRITE INCREMENTALLY.** Whatever is on disk when you stop must be a usable partial that says
+> how far it got. A complete transcription held in memory and never written is worth nothing.
+
+The limit hit with seven agents live. What was on disk afterwards:
+
+| Deck | Written | Outcome |
+|---|---|---|
+| `L9) lacrimal system.` | 33 of 33 | ✅ complete |
+| `L13,14) Uvea & Sclera` | 41 of 41 | ✅ complete |
+| `L24) Ocular tumors.` | 78 of 78 | ✅ complete |
+| `L1,2) Ocular Anatomy…` | **80 of 136** | resumable |
+| `L6) Conjunctiva` | **40 of 66** | resumable |
+| `L5) Eyelid disease` | **20 of 47** | resumable |
+| `L27,28) Problems of External Appearance` | **20 of 70** | resumable |
+| `L21`, `L22`, `L29`, `L30`, GG t4 | 0 | nothing written, relaunch from scratch |
+
+**All four partials ended at a complete slide block**, so each was resumed by an agent told to read
+the existing header, match its conventions exactly, and `Edit`-append from slide *N*+1 — never
+`Write`, which would have replaced what was there. **160 slides of finished transcription survived a
+hard kill.** Against the 2026-08-24 ENT experience, where five agents died on transient 529s
+*before writing a byte*, the difference is entirely the instruction to write as you go.
+
+⚠️ **The corollary is the older rule, and it held again: A DEAD AGENT'S FILE IS USUALLY WORTH
+VALIDATING BEFORE IT IS REWRITTEN.** Three of the seven were **complete** and their status messages
+never said so — one had reported *"Now appending slides 12 onward"* and had in fact written 20.
+**The status message is a stale snapshot; the file is the truth.**

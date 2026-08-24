@@ -338,7 +338,7 @@ but the **"CamScanner"** watermark stamped on every slide of a phone-scanned dec
 | `L10) orbit.txt` | **48** | the word *CamScanner*, 48 times. Nothing else |
 | `L9) lacrimal system..txt` | **33** | *CamScanner* × 33 |
 | `L24) Ocular tumors..txt` | **78** | *CamScanner* × 77 |
-| `L21) Optic Nerve.txt` | **20** | 22 blank lines, a title and one stray line |
+| ~~`L21) Optic Nerve.txt`~~ | **20** | ⚠️ **THIS ROW IS WRONG — CORRECTED 2026-08-24 BY READING THE FILE.** It is **not** a watermark and not blank lines: it is a real, complete extraction of a genuinely sparse 20-slide **picture** deck. All 615 bytes are content — *Normal Optic Disc* · the five manifestations of optic nerve dysfunction (VA, colour vision, contrast sensitivity, field defect, RAPD) · *Optic Disc Edema — Papilloedema / AION / Papillitis* · *Optic Atrophy — Primary / Secondary / Consecutive / Glaucomatous*. **The teaching is in the fundus photographs under those headings**, which is a different problem from a failed extraction and needs the same fix (a visual read), so the deck stays on the owed list below — but *"22 blank lines and one stray line"* is not what is in the file |
 
 **⚠️ A NON-ZERO FILE SIZE IS NOT EVIDENCE OF A CACHE.** `L10) orbit.txt` is 686 bytes — big enough to
 look real in a directory listing, and 100 % worthless. **Check chars-per-slide, and open anything
@@ -359,10 +359,51 @@ Four that were never cached (image-only, listed below) **plus** these four whose
 | **`L21) Optic Nerve`** | 20 | `op-neuro` |
 | **`L24) Ocular tumors.`** | 78 | `op-onc` |
 
-**Read each one as FOUR-UP CONTACT SHEETS at 110 dpi** — the ENT trick: 12 reads instead of 48, with
-headings and bullets still legible at ~760 px per slide. **Read a deck when its topic comes up, cache
-the transcription into `content\ophtho\lectures\`, and overwrite the watermark file** so the next
-reader is not misled the way I was.
+### ⚠️⚠️ THE TABLE ABOVE UNDERCOUNTS. THE REAL FIGURE IS ELEVEN DECKS AND 574 SLIDES — MEASURED 2026-08-24
+
+The list above was assembled from two failure signals — *"never cached"* and *"the cache is a
+CamScanner watermark"* — and **both signals miss the same thing: a deck that extracts a little and
+teaches in pictures.** Sweeping every deck for **characters per slide** instead found eleven, not
+eight. Healthy prose decks here run 500–3,000 chars a slide; anything under ~200 was opened and
+looked at.
+
+| Deck | Slides | chars/slide | What it actually is |
+|---|---|---|---|
+| `L13,14) Uvea & Sclera` | 41 | **0** | never cached — rasterised prose |
+| `L27,28) Problems of External Appearance` | 70 | **0** | never cached — photo atlas |
+| `L24) Ocular tumors.` | 78 | 13 | `CamScanner` × 77 |
+| `L9) lacrimal system.` | 33 | 15 | `CamScanner` × 33 |
+| `L21) Optic Nerve` | 20 | 30 | ⚠️ **NOT a watermark — a real, complete extraction of a sparse picture deck** |
+| `L29) Sqint I` | 35 | 63 | ⚠️ **never on any owed list** — Galal picture deck |
+| `L30) Squint II` | 23 | 66 | ⚠️ **never on any owed list** — Galal picture deck |
+| `L22) Pupil and Visual pathway` | 25 | 97 | ⚠️ **never on any owed list** — the visual pathway is a diagram |
+| `L1,2) Ocular Anatomy…` | 136 | 146 | ⚠️ **never on any owed list, and it is the module's foundational deck** — 83 of 136 slides extract blank under the identical running header *"Anatomy & Physiology"*, so page-title triage is useless and the whole deck goes to sheets |
+| `L5) Eyelid disease` (`.pptx`) | 47 | — | 127 media files for 365 words |
+| `L6) Conjunctiva` (`.pptx`) | 66 | — | 73 media files for 343 words |
+
+**⚠️ A FAILURE LIST BUILT FROM FAILURE SIGNALS IS NOT A COVERAGE MEASUREMENT.** Five of these eleven
+appeared on no owed list anywhere, because their extractions *succeeded* — they are just nearly
+empty. The instrument that finds them is a **ratio measured against slide count**, not a look at file
+size: `L21) Optic Nerve.txt` is 615 bytes, which looks plausible in a directory listing and is 30
+characters a slide.
+
+**⚠️ AND THE TWO `.pptx` DECKS ARE AS BLIND AS THE WORST PDFs.** They extract cleanly from slide XML,
+so they never appeared in any failure list at all — while carrying more than one picture per slide
+against five to eight words of text. **PowerPoint is installed**, so they are exported to PDF with
+`Presentation.SaveCopyAs(path, 32)` — `SaveCopyAs`, never `SaveAs`, because `SaveAs` rebinds the open
+presentation — and then rendered like any other deck. Verified: 47 and 66 pages out, both source
+`.pptx` mtimes unchanged.
+
+**Read each one as FOUR-UP CONTACT SHEETS at 110 dpi** — `<scratch>\oph\sheet.js` renders and tiles a
+whole deck in one command and **burns the slide number into each cell**, which is what lets a
+transcription be checked against the deck. 12 reads instead of 48, headings and bullets still legible
+at ~760 px per slide; four independent agents confirmed legibility on their first sheet. **Read the
+deck, cache the transcription into `content\ophtho\lectures\`, and overwrite the watermark file** so
+the next reader is not misled the way I was.
+
+**✅ Done 2026-08-24: `L9)` (41,013 B), `L13,14)` (42,819 B), `L24)` (71,943 B).** All three carry a
+closing `NOT COVERED ANYWHERE IN THIS DECK` list, which is what lets a later gap be settled by
+proving a negative instead of guessing.
 
 **This does NOT mean a lecture is missing.** All 29 decks exist in `Semester 8\Opthalmo\Theoritical\
 PPT\`. There is nothing to interview the user about — the ENT precedent of a genuinely absent deck

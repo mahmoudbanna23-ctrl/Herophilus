@@ -78,7 +78,47 @@ ERD**; sl.11's symptoms table), **six labelled diagrams**, the nine-layer retina
 `[sic]`; ⚠️ *"Choroid accuromatic macusis"* **has no plausible reading and must not be treated as a
 real term.** The deck contains **no percentage, no incidence, no interval, no dose, and no eponym.**
 
-### ⚠️ Owed a visual read — 12 decks remaining, **660 pages** (was 14 decks / 726; `L9` and `L20` are read)
+### ✅⚠️ SUPERSEDED 2026-08-24 — THE VISUAL-READ DEBT IS BEING CLEARED, AND THE TABLE BELOW IS THE OLD ESTIMATE
+
+**Read the block immediately below before the table.** The table that follows it is preserved as the
+2026-08-17 estimate; the live status is here.
+
+Every deck was swept for **characters per slide** (healthy prose here runs 500–3,000; anything under
+~200 was opened and looked at). That found **eleven decks and 574 slides**, not twelve decks and 660
+pages — and, more usefully, it found **five decks that were on no owed list anywhere because their
+extractions had SUCCEEDED and were simply near-empty**: `L1,2` (146 c/s), `L22` (97), `L30` (66),
+`L29` (63), `L21` (30). **A failure list built from failure signals is not a coverage measurement.**
+
+| Deck | Slides | Status 2026-08-24 |
+|---|---|---|
+| `L9) lacrimal system.` | 33 | ✅ **DONE — 41,013 B.** Tear-film thicknesses, drainage measurements, valves of Krause and Hasner, gland eponyms, **Jones I and Jones II with their result-to-diagnosis mappings** |
+| `L13,14) Uvea & Sclera` | 41 | ✅ **DONE — 42,819 B.** Uvea slides 2–27, sclera 28–40; the four-way anatomical classification, episcleritis/scleritis in full, the phenylephrine blanching table |
+| `L24) Ocular tumors.` | 78 | ✅ **DONE — 71,943 B.** ⚠️ **a composite of at least three decks**, PowerPoint's own footer numbers restart and repeat across the seams; **49 of 78 slides are photographs with at most a one-line caption**, and **slides 46–63 carry no caption and no case number at all** |
+| `L1,2) Ocular Anatomy…` | 136 | in progress — 80 of 136 written, resuming |
+| `L6) Conjunctiva` (`.pptx`) | 66 | in progress — 40 of 66 written, resuming |
+| `L27,28) Problems of External Appearance` | 70 | in progress — 20 of 70 written, resuming |
+| `L5) Eyelid disease` (`.pptx`) | 47 | in progress — 20 of 47 written, resuming |
+| `L29) Sqint I` | 35 | owed |
+| `L22) Pupil and Visual pathway` | 25 | owed |
+| `L30) Squint II` | 23 | owed |
+| `L21) Optic Nerve` | 20 | owed. ⚠️ **NOT a watermark** — `resume-ophtho.md` said *"22 blank lines, a title and one stray line"* and that is wrong; all 615 bytes are real content, and it is a **complete extraction of a sparse picture deck** whose teaching is in the fundus photographs |
+
+**✅ The two `.pptx` decks are solved.** PowerPoint is installed, so they export to PDF with
+`$p.SaveCopyAs("$dest.pdf", 32)` — **`SaveCopyAs`, never `SaveAs`**, which rebinds the open
+presentation — and then render like any other deck. 47 and 66 pages out, matching the slide counts,
+both source mtimes unchanged. ⚠️ PowerPoint reported `slides=0` for the second and then died with
+*"The RPC server is unavailable"* **after** writing a complete, correct PDF: **check the artifact on
+disk, not the COM return value.**
+
+**The tool is `<scratch>\oph\sheet.js`** — renders a whole deck and tiles it four-up at 110 dpi in one
+command, **burning the slide number into each cell**, which is what lets a transcription be checked
+against the deck. Four independent agents confirmed legibility on their first sheet.
+
+---
+
+#### The 2026-08-17 estimate, preserved
+
+> ⚠️ Owed a visual read — 12 decks remaining, **660 pages** (was 14 decks / 726; `L9` and `L20` are read)
 
 | Deck | pp | w/pp | blank | triage possible? |
 |---|---|---|---|---|
