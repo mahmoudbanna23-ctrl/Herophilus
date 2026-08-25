@@ -347,3 +347,32 @@ that the lists lie — it is that they answer a narrower question than the one b
 
 Not `Ophthalmology`. I typed it wrong in three consecutive briefs and every agent had to discover it
 by a failed `ls`. **The paths in THIS file are correct — trust them over any path in a task prompt.**
+
+### ⚠️⚠️ THE ANSWERS BANNER IS NOT ALWAYS AT THE TOP OF COLUMN ONE
+
+On Grade Gain topic 17 the Answers banner sits at the top of the **RIGHT** column of the only
+answer page, level with the fifth of eleven keys — **and four keys sit in the LEFT column, above
+and beside it.** A scan that starts at the banner loses them: **36 % of the topic, silently.**
+Every earlier topic put the banner at a column-one top, which is exactly why nobody looked.
+
+**Read the WHOLE answer page, both columns, top to bottom, before locating the banner.** The banner
+marks where the answers *are titled*, not where they *begin*.
+
+### ✅ THE CONTENTS COUNT HAS NOW BEEN EXACT NINE TIMES RUNNING
+
+71 · 41 · 26 · 26 · 65 · 52 · 8 · 61 · 15 · 11. The standing warning that the contents page
+over-promises is **now wrong more often than the bank is** — it came from a small early sample.
+Keep rendering one page past the last answer page (that has paid three times and costs nothing),
+but **do not treat a matching count as suspicious**, and do not spend a pass hunting for questions
+the contents page never promised.
+
+The **"Page As" figure** is the part that still fails: three failures (starting later than stated;
+starting where stated but spanning three pages) against four clean. **Render past the LAST answer
+page**, not past the stated one.
+
+### ⚠️ A SUBAGENT'S COPY OF `MEMORY.md` IS A SNAPSHOT, NOT THE LIVE FILE
+
+An agent reported `MEMORY.md` stale at "434 questions" when the file on disk said 764 — it was
+reading the copy injected into its context when the session began. **If a number matters, read
+`MEMORY.md` and `questions.ophtho.js` FROM DISK.** Corpus size moves several times a day on this
+module.
