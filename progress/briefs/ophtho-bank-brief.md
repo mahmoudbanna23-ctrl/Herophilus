@@ -278,3 +278,45 @@ SOURCED, so its marker must come off** · **`source` must name both printings.**
 entry's own closing sentence through it. **⚠️ And grep the drafted block for the folded id first:**
 one t8 entry and four t6 entries cited theirs mid-sentence as evidence, and the claim had to survive
 the id's removal, not just lose it.
+
+### ⚠️⚠️ A SHARED OPTION MENU IS HOW THIS BANK PAIRS QUESTIONS, NOT EVIDENCE THEY ARE ONE
+
+House ch.6 printed two questions asking what the WHO trachoma grades **TT** and **TS** mean —
+**same five options in the same order, different keys** (D, the lash touching the globe, against
+C, the fibrous tarsal bands). The sweep scored the stems **1.00, a verbatim duplicate**, because
+`sweep.js` filtered tokens on `w.length > 3` and the two-letter grade was the ONLY discriminating
+word in either stem. Folding on that score would have deleted the trichiasis question and left the
+survivor keyed for the wrong grade.
+
+This is the third appearance of the short-token blindness (`CT`/`US` twice before), and the worst:
+the earlier two made a tool skip work, this one made it return a confident wrong verdict.
+**`sweep.js` is patched** — short tokens survive when they were capitalised in the original, since
+an acronym is a content word however short. Verified both directions: the false 1.00 fell to 0.71
+and all 28 genuine identity matches held.
+
+**The rule for a drafting agent: when you flag a suspected duplicate, say what the DISCRIMINATING
+token is. If you cannot name one, you have not checked — you have matched a template.**
+
+### ⚠️⚠️ WRITE INCREMENTALLY, APPEND WITH `Edit`, NEVER `Write`
+
+Four agents on this module died in the same second when the session hit its usage limit. **Three
+left nothing.** The one appending as it went left **63 questions fully staged and 18 of 63 drafted**
+— the expensive half already paid for, resumable without re-rendering a single page.
+
+⚠️ **A partial's LAST entry is truncated and the file will not parse.** That is expected, not
+damage. Truncate back to the last complete entry, verify by parsing, and resume from the next
+question number. ⚠️ **But a dead agent whose last words name a fault it was fixing leaves a
+KNOWN-BAD file** — check that spot first.
+
+### ⚠️ THE CROP CONTRACT, AMENDED: THE 3 px PAD IS A MAXIMUM, NOT A REQUIREMENT
+
+"True ink bounds + 3 px" assumes a photograph floating in white paper. **Two figures print a black
+horizontal RULE 1–2 px under the picture** (`opqb-t10-425`, `opqb-t11-479`), and a rule is ink: the
+padded bound swallows it and lays a black bar across the frame. It did, on the first pass at 425.
+**Cut at the photograph's own edge.** When staging a figure, report the picture's own bottom edge
+**separately** from the ink bound, and give the nearest printed text above and below with distances.
+
+⚠️ **And a stem written to stand in for a missing figure cannot survive the figure arriving.** All
+three topic-10 photo stems opened with a prose reading of the picture, and every one stated its own
+answer — the `imgAlt` rule applies to stems. **Transcribe the printed stem as printed; put your
+reading of the photograph in a header note.**

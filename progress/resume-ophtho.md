@@ -14,12 +14,12 @@ session did is written up in **`ledger.md` §17 — read it before resuming.**
 
 | | |
 |---|---|
-| Questions merged | **228** — Grade Gain **172** (topics 1, 2, 3, 4, 7) · House **56** (ch.1) |
-| Corpus | **2,789** (2,700 MCQ + 89 cases) |
-| Remaining | **~1,884** — GG **915** of 1,087 · House **~969** of ~1,025, against **27 Sep** |
+| Questions merged | **764** — Grade Gain **561** (topics 1–11, 13) · House **203** (ch.1–6) |
+| Corpus | **3,325** (3,236 MCQ + 89 cases) · **103 images** |
+| Remaining | **~1,348** — GG **526** of 1,087 · House **~822** of ~1,025, against **27 Sep** |
 | Last `file://` boot | **0 console errors, 876 rules, 3 `5/4` blocks, 4 modules, 153 chapters, 1,604 sections, 89 cases** |
 | §14.5 register | ✅✅ **ZERO open rows, all four modules** (ophtho went 39 → 0 today) |
-| Lecture cache | ✅ **nine of eleven blind decks read** — see the deck table below |
+| Lecture cache | ✅✅ **all eleven blind decks read** — the module has no unread deck left |
 
 **⚠️⚠️ THE PROTOCOL BELOW STILL HOLDS AND IS NOT NEGOTIABLE.** The hub is the SOLE WRITER of
 `questions.ophtho.js`, `cases.ophtho.js`, `theory.ophtho.js`, this file and every git commit.
@@ -82,8 +82,9 @@ arithmetic and **always renders one page past**, which is not optional on this b
 | 3 | The Orbit | **28** | **27** | **1** | **0** | ✅ 2026-08-24 |
 | 4 | Lacrimal system | **30** | **29** | **1** | **0** | ✅ 2026-08-24 |
 | 5 | Eyelids | **32** | **31** | **1** | **0** | ✅ 2026-08-24 |
-| 6 | Conjunctival diseases | ? | — | — | — | drafting |
-| 7–20 | — | ~690 | — | — | — | not started |
+| 6 | Conjunctival diseases | **28** | 28 | **0** | **0** | ✅ 2026-08-25 |
+| 7 | The sclera | ? | — | — | — | drafting |
+| 8–20 | — | ~660 | — | — | — | not started |
 
 **⚠️ House prints NO explanation box and NO figure in chapters 1, 2 or 3** — but that is a property of
 the PAGE, counted each time, never carried forward.

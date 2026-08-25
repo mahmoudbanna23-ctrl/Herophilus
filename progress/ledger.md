@@ -10739,3 +10739,85 @@ clothes. **Bound at full resolution, always.**
 before — and wired with an alt the verifying agent argued down to modality and view alone, because
 the stem asks *"what is the name of the following condition?"* and describing the lid margins would
 answer it.
+
+### §17k — House chapter 6, the five owed crops, and a comparator that scored 1.00 on a non-duplicate (2026-08-25)
+
+**House ch.6 "Conjunctival diseases", book p.43–48, 28 questions.** Ophtho **736 → 764**.
+Marker delta exactly **28 = 28 entries − 0 boxes**. Chapter end proved by opening ch.7's banner on
+the facing page. Zero boxes and zero figures, **counted on all six pages rather than assumed** — in
+the one chapter where cobblestone papillae, Tranta spots, Arlt's line and a pterygium are all asked
+in words and all photographed elsewhere in the sources.
+
+**Zero folds, and here is how the zero was measured.** Six-stage sweep over all 28 against the
+736-entry corpus; top E and F rankings read for every entry; three self-sweep hits opened by hand;
+nine cross-bank candidates the drafting agent flagged opened against their live Grade Gain entries.
+**Every one is the same TOPIC asked in the opposite DIRECTION** — House gives the vignette and asks
+for the sign, Grade Gain gives the sign and asks for the disease. That is two questions.
+The strongest evidence is negative: **the chapter carries six misprints, two repeating within House,
+so the shared-typo test had six chances to fire against Grade Gain. It fired zero times.**
+
+**⚠️⚠️ THE SWEEP SCORED TWO QUESTIONS 1.00 AND THEY ARE NOT THE SAME QUESTION.** `opmcq-c6-8` asks
+what the WHO trachoma grade **TT** means; `opmcq-c6-23` asks what **TS** means. Same five options in
+the same order, **different keys** — D (at least one lash touching the globe) against C (easily
+visible fibrous white tarsal bands). `sweep.js` filtered tokens on `w.length > 3`, so the two-letter
+grade, **the only discriminating word in either stem**, was dropped before comparison.
+**Folding on that score would have deleted the trichiasis question and left the survivor keyed for
+the wrong grade.** Opening every hit by hand is the only reason it did not happen.
+
+Third appearance of the short-token blindness (`CT`/`US` twice) and the worst of the three: the
+earlier two made a tool skip work it should have done, this one made it **return a confident wrong
+verdict**. `sweep.js` patched — short tokens survive when capitalised in the original, an acronym
+being a content word however short. **Verified both directions: the false 1.00 fell to 0.71, and all
+28 genuine identity matches held (stage A = 28 of 28).** The change can only add tokens, so it
+sharpens distinctions and cannot hide a fold. Pre-patch behaviour kept at `sweep.js.bak`.
+
+**Q16 keys chlamydia as NOT causing papillae** while `ophthalmology.pdf` p.91 prints papillae for
+chronic chlamydial disease and p.92 gives active trachoma a papillary reaction — **which this same
+bank keys in Q9.** Recorded in `explanation`, key untouched. Q19/Q25 look contradictory and are not;
+the reconciling sentence is on p.84.
+
+**Orphaned answer lines: ONE**, at the 45/46 break, key only. **The run was 2, 4, 4, 5 and I had
+recorded it as growing. It broke.** A trend over four chapters is not a law.
+
+**`L37) Red Eye.txt` is a BOOK CHAPTER carrying real prose, not a deck**, and it paid for four
+entries. It had gone unmentioned in six briefs — a second live source hiding in the lecture folder.
+
+**The five owed crops shipped** — `opqb-t10-424/425/426`, `opqb-t11-479/480`. Corpus images **98 →
+103**; topics 10 and 11 are figure-complete.
+
+**⚠️ THE CROP CONTRACT IS AMENDED: THE 3 px PAD IS A MAXIMUM, NOT A REQUIREMENT.** `opqb-t10-425`
+and `opqb-t11-479` each print a **black horizontal rule 1–2 px under the photograph**, and a rule is
+ink — the padded bound swallows it and lays a black bar across the frame. It did, on the cutter's
+first pass at 425, and **looking is what caught it.** Four of the five reported bounds were also
+wrong: Q479 clipped on all four sides (worst 18 px, ~4.6 % of the picture's height), Q480's left
+edge sat 18 px inside the true one, Q424 clipped 4 rows top and 6 bottom while overshooting 15 px
+right, Q426 was merely loose. **And a 2-pixel speck of scanner noise dragged Q425's left bound
+119 px out** — only a column-run profile caught that; `bounds.js` alone is not safe on a window.
+
+**⚠️ A STEM WRITTEN TO STAND IN FOR A MISSING FIGURE CANNOT SURVIVE THE FIGURE ARRIVING.** All three
+topic-10 photo stems opened with a bolded prose reading of the picture, and **every one stated its
+own answer**: 424's *"free of any fine branching red vessels"* ruled out both Rubeosis options and
+its *"whitish material and radial strands"* named the key; 425's *"complete grey-white ring …
+separated from the limbus by a narrow clear interval"* IS the arcus that makes the key *No
+treatment*; 426's *"iris tissue drawn up into the opacity"* IS anterior synechiae. The bank's own
+printed stem — a bare one-liner in all three, verified against `gg-t10.array.js` — was restored and
+the reading moved to `explanation`. **This is the `imgAlt` rule applied to stems.**
+
+**The alt guard earned its place**: it rejected *"anterior segment of one eye"* on Q426, whose
+options are **anterior** against **posterior** synechiae.
+
+**Q426 is marginal and its entry says so.** The poor exposure is in the printed source, not the
+crop — the full-resolution cut reads no better than the shipped 560 px file, so no re-cut recovers
+anything. Answerable on gross form; a student may reasonably not see it.
+
+**⚠️ `questions.ophtho.js` MIXES QUOTE CHARACTERS FIELD BY FIELD** — `stem:'…'` beside
+`explanation:"…"`. A wiring script assuming single quotes matched three explanations **zero times**;
+the uniqueness guard caught it, and a blind `replace` would have skipped them in silence.
+
+**Boot after each merge: 0 console errors, 876 rules, 3 `max-aspect-ratio:5/4` blocks, 4 modules,
+153 chapters, 1,604 sections, 89 cases, dead ids 0.** Corpus **3,325**.
+
+**⚠️ FOUR AGENTS DIED IN THE SAME SECOND** on the session limit — House ch.7, House ch.8, GG t12,
+GG t14. **Three left nothing. The one appending as it went left topic 14 fully staged (63 questions)
+and 18 of 63 drafted**, resumable without re-rendering a page. Write-incrementally is the whole
+difference, for the second time on this project.
