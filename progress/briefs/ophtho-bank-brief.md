@@ -320,3 +320,30 @@ padded bound swallows it and lays a black bar across the frame. It did, on the f
 three topic-10 photo stems opened with a prose reading of the picture, and every one stated its own
 answer — the `imgAlt` rule applies to stems. **Transcribe the printed stem as printed; put your
 reading of the photograph in a header note.**
+
+### ⚠️ THE DENOMINATOR: 29 CACHED LECTURE FILES, NOT 34
+
+`content\ophtho\lectures\` holds **29 `.txt` files**, because nine of them merge two lectures each
+— `L1,2` · `L3,4` · `L7,8` · `L13,14` · `L15,16` · `L27,28` · `L31,32` · `L33,34` · `L35,36`.
+Plus **12 book chapter caches** in `content\ophtho\book\`. "34 decks" appeared in every brief written
+before 2026-08-25 and in `MEMORY.md`; the measurements behind it were run over the real files and
+stand, but **the stated denominator was wrong.** Count the directory, never the lecture numbers.
+
+### ⚠️⚠️ TWO DECKS AGREEING IS NOT CORROBORATION WHEN BOTH LISTS ARE SCOPED TO THEMSELVES
+
+`L20` and `L31,32` each record **posterior vitreous detachment and the Weiss ring as not covered**,
+and a reader who found both would reasonably call the absence confirmed. **Both are true of their own
+deck and false of the module.** `ophthalmology.pdf` **p.17** names, defines and explains PVD under
+*Age-Related Changes*; **p.41** lists it first among the causes of photopsia; **p.42** first among the
+causes of floaters. Measured: `posterior vitreous` returns **exactly 3 hits across all caches — 1
+inside `L20`'s own negatives list, 2 in book chapter 1.**
+
+**A NOT-COVERED LIST IS EVIDENCE ABOUT ONE DECK AND NOTHING ELSE.** Two of them are still two
+statements about two decks. **Grep the BOOK caches separately before writing any absence.**
+(The Weiss ring genuinely is absent: exactly 1 hit, inside that same negatives list. The rule is not
+that the lists lie — it is that they answer a narrower question than the one being asked.)
+
+### ⚠️ THE SOURCE FOLDER IS `Semester 8\Opthalmo\`, ONE `h`
+
+Not `Ophthalmology`. I typed it wrong in three consecutive briefs and every agent had to discover it
+by a failed `ls`. **The paths in THIS file are correct — trust them over any path in a task prompt.**

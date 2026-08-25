@@ -140,7 +140,7 @@ there before resuming a paused stream. Where this file and the archive disagree,
   The 16th: a draft called **HOSPITALIZATION** *taught nowhere* when `hospitali[sz]` hits eight decks,
   four of them real teaching. ⚠️ **OPEN THE HIT BEFORE WRITING THE ABSENCE**; grep the shortest stem AND
   the misspelling; **an absence claim must name the specific thing absent, not the topic** — and say how
-  it was measured (*"exactly 2 hits across all 34 decks"* beats *"not taught"*).
+  it was measured (*"exactly 2 hits across all 29 decks"* beats *"not taught"*). ⚠️ **OPHTHO HAS 29 CACHED LECTURE FILES, NOT 34** — nine merge two lectures each (`L1,2`, `L13,14`, `L15,16`, `L27,28`, `L31,32`, `L33,34`, `L35,36`, `L3,4`, `L7,8`), which is where the inflated count came from; **count the directory, never the lecture numbers.** ⚠️⚠️ **AND TWO DECKS AGREEING IS NOT CORROBORATION WHEN BOTH NOT-COVERED LISTS ARE SCOPED TO THEMSELVES** — `L20` and `L31,32` both record PVD absent; the BOOK names and explains it at p.17, p.41 and p.42.
 - **⚠️ Bank sampling and provenance: `progress\memory-archive.md`** — a contents page may print per-section counts (**verify, never trust**); the end-of-ENT "outside knowledge" list is **half wrong**, re-grep item by item; 67 entries record no provenance, roster in `ledger.md` §11.
 
 ## Validation state
