@@ -24,7 +24,7 @@ rather than from memory. The write-up is part of the batch, not a thing that fol
 | Chapters seeded | **35 of 36** — `op-appear` "Problems of Appearance" is the last empty one |
 | Fold notes in file | **10** |
 | Last `file://` boot | **0 console errors, 876 rules, 3 `5/4` blocks, 4 modules, 153 chapters, 1,604 sections, 89 cases** |
-| Git | **58 commits, UNPUSHED** — push needs the user's device-code flow; a plain `git push` hangs forever |
+| Git | **260 commits ahead of `origin/design/clepsydra-and-sessions`, UNPUSHED** — measured 2026-08-29 with `git rev-list --count origin/…..HEAD`; the "58" this row carried was stale by a factor of four. Push needs the user's device-code flow; a plain `git push` hangs forever |
 | §14.5 register | ✅✅ **ZERO open rows, all four modules** |
 | Lecture cache | ✅✅ **all 29 decks read** — the module has no unread deck left |
 
