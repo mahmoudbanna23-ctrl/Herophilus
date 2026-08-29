@@ -19,8 +19,8 @@ rather than from memory. The write-up is part of the batch, not a thing that fol
 
 | | |
 |---|---|
-| Questions merged | **1,119** — Grade Gain **724** (topics 1–15, 17, 18, 19) · House **395** (ch.1–12) |
-| Corpus | **3,680** (3,591 MCQ + 89 cases) · **104 images** |
+| Questions merged | **1,142** — Grade Gain **784** (topics 1–19) · House **358** (ch.1–12), **counted by id prefix, not carried forward** |
+| Corpus | **3,703** (3,614 MCQ + 89 cases) · **105 images** |
 | Chapters seeded | **35 of 36** — `op-appear` "Problems of Appearance" is the last empty one |
 | Fold notes in file | **10** |
 | Last `file://` boot | **0 console errors, 876 rules, 3 `5/4` blocks, 4 modules, 153 chapters, 1,604 sections, 89 cases** |
@@ -42,24 +42,41 @@ and every agent holding work in memory lost everything.
 
 ### What is in flight right now (2026-08-29)
 
-| Batch | Pages | Rendered | State |
-|---|---|---|---|
-| **GG topic 16 "Pediatric Ophthalmology"** | book pp.109–112 (+113 proof) | `bank\gg-t16\p-116…120` | **drafting** |
-| **House ch.12 "12. Vitreous"** | book pp.80–84 (sheets 42–44) | `bank\house-c12\p-042…044` | ✅ **MERGED 2026-08-29** — 20/20, 0 folded, 0 boxes, 0 figures (`ledger.md` §17m) |
+**Nothing. Both batches merged, validated and booted.**
 
-**⚠️ These two are the same subject from two banks that reprint each other** — Grade Gain topic 12 is
-also "Vitreous", 15 live entries `opqb-t12-498…512`. **Sweep House ch.12 against them, and expect the
-hardest fold adjudication of the module.**
+| Batch | Pages | State |
+|---|---|---|
+| **House ch.12 "12. Vitreous"** | book pp.80–84 (sheets 42–44) | ✅ **MERGED 2026-08-29** — 20/20, 0 folded, 0 boxes, 0 figures (`ledger.md` §17m) |
+| **GG topic 16 "Pediatric Ophthalmology"** | book pp.109–112 (+113 proof) | ✅ **MERGED 2026-08-29** — 23/23, 0 folded, 6 boxes, **1 figure** (`ledger.md` §17n) |
 
-**⚠️ Topic 16's count is doubly measured.** Topic 15 ends at **Q681**, topic 17 opens at **Q705**, so
-the gap is **exactly Q682–Q704 = 23** — and the contents page independently promises 23. Two
-independent measurements agreeing is the strongest number this stream has had. **Still count what is
-printed.**
+**⚠️⚠️ THE ONE RULE BOTH BATCHES ADDED, AND IT HAS NO INSTRUMENT BEHIND IT: A REPAIRED
+BACK-REFERENCE IS A RECONSTRUCTED STEM, AND A RECONSTRUCTED STEM MUST NOT ANSWER ITS OWN QUESTION.**
+Seven stems and one `imgAlt` were rewritten across the two batches because the drafting agents had
+named the **diagnosis** where the source printed only **findings** — and `opmcq-c12-9` and
+`opqb-t16-699` each handed over their own key. Two banks, two agents, neither seeing the other's work,
+same day. `stagecheck.js` compares options and keys; `sweep.js` compares stems to *other* stems;
+**nothing compares a stem to its own key.** Read every repaired back-reference against its antecedent,
+by hand, before the splice.
+
+**⚠️ And the crop lesson: `bounds.js` cannot measure a figure that sits in a column of text**, because
+the stem above and the options below are ink too. It returns its own window's edges, which reads
+exactly like the clipping signature and is not. **Use a column/row density profile** — one clean dense
+run with sparse on all four sides is the answer (`ledger.md` §17n).
 
 ### What is queued after that
 
-**Grade Gain — ~357 remaining:** topic 20 (40, rendered at `bank\gg-t20\`), End Exams 1–5 (126),
-End Exam 6 Photos (35), Tutorial Exam (27), Final Exam (69).
+**⚠️ THE PER-BANK SPLIT IN THIS FILE WAS WRONG BY EXACTLY 37, IN BOTH DIRECTIONS, AND THE TOTAL HID
+IT.** It read "Grade Gain 724 · House 375" against a correct total of 1,099; measured by id prefix the
+split was **761 · 338**. Thirty-seven Grade Gain questions were being counted as House, and because
+the error was offsetting, **every sum check this file has ever passed would still have passed.**
+Corrected 2026-08-29 from a direct count and reconciled against the topic tables below: Grade Gain
+784 written = 790 printed − 6 folded; House 358 written = 362 printed − 4 folded. **Count the split,
+never just the total.**
+
+**Grade Gain — 297 remaining, and the itemisation now sums exactly:** topic 20 (40, rendered at
+`bank\gg-t20\`), End Exams 1–5 (126), End Exam 6 Photos (35), Tutorial Exam (27), Final Exam (69).
+Topics 1–20 promise 830 and the eight exam sections 257, for **1,087 printed** — which is the figure
+counted on 2026-08-18, reconciled here for the first time against the per-topic table.
 
 **House — ~687 remaining.** ⚠️ **THE BANNER CENSUS GIVES EVERY REMAINING CHAPTER BOUNDARY BEFORE A
 PAGE IS OPENED**, and it has now held three times running (ch.10, ch.11, ch.12). It lives in the
@@ -115,7 +132,7 @@ launch.
 | 13 Retina | 69 | **69** (Q513–581) | 69 | 0 | 19 | ✅ |
 | 14 Neuro-Ophthalmology | 63 | **63** (Q582–644) | 63 | 0 | 9 | ✅ 2026-08-25 |
 | 15 Squint | 37 | **37** (Q645–681) | 37 | 0 | 4 | ✅ 2026-08-25 |
-| **16 Pediatric Ophthalmology** | **23** | — | — | — | — | **drafting (Q682–704)** |
+| 16 Pediatric Ophthalmology | 23 | **23** (Q682–704) | 23 | 0 | 6 | ✅ 2026-08-29 |
 | 17 Malignancies | 11 | **11** (Q705–715) | 11 | 0 | 3 | ✅ 2026-08-25 |
 | 18 Ocular Trauma | 39 | **39** (Q716–754) | 39 | 0 | 3 | ✅ 2026-08-25 |
 | 19 Systemic Diseases | 36 | **36** (Q755–790) | **35** | **1** | 11 | ✅ 2026-08-25 |

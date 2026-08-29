@@ -11071,3 +11071,158 @@ A quick regex over the draft reported **one answer index out of range**. It was 
 before believing the audit** — and the same session's earlier `grep -c` over `resume-ophtho.md`
 returned 0 for four path strings that were all present, because a trailing backslash inside an
 alternation ends the pattern. **Two false alarms in one day, both from probes written in haste.**
+
+### §17n — Grade Gain topic 16 "Pediatric Ophthalmology", 23 questions, and the same leaking back-reference fault arriving from the other bank on the same day (2026-08-29)
+
+**Merged 2026-08-29. 23 printed, 23 written, 0 folded, 6 boxes, 1 figure.** Ophtho **1,119 → 1,142**;
+corpus **3,703** (3,614 MCQ + 89 cases); images **104 → 105**. Marker delta asserted at the splice:
+**2,957 − 2,940 = 17**, and required = 23 entries − 6 boxes = **17**. Boot from `file://` after the
+splice: **0 console errors, 876 rules, 3 `max-aspect-ratio:5/4` blocks, 4 modules, 153 chapters,
+1,604 sections, 89 cases.** `validate.js`: 0 BAD, 0 dead backticked refs, 0 markers in `source`,
+0 sparse holes.
+
+Chapters: `op-glauc` 6 · `op-onc` 4 · `op-cat` 4 · `op-squint` 3 · `op-conj` 2 · `op-lac` 2 ·
+`op-white` 1 · `op-ret-vasc` 1 — eight chapters for 23 questions, because "Pediatric Ophthalmology"
+is an age band, not an anatomical site. Grade Gain topic 12 scattered across four the same way.
+
+**The count was measured three ways and all three agreed**: the printed numbers walked on the page
+(Q682–Q704, continuous, no repeat and no anomaly), the contents page's promise of 23, and the live
+corpus gap — topic 15 ends at Q681 and topic 17 opens at Q705, so the hole was exactly 23 wide before
+a page was rendered.
+
+#### ⚠️⚠️ THE HEADLINE — THE BACK-REFERENCE LEAK FIRED AGAIN, IN THE OTHER BANK, THE SAME DAY
+
+§17m recorded four repaired back-references in House ch.12 that named the *diagnosis* where the source
+printed only *findings*, one of them handing over its own key. **Topic 16 has three back-references and
+the same fault is in all three.** Neither batch's agent saw the other's work; the fault is in the
+repair *shape*, not in one agent.
+
+| Entry | Drafted stem said | The source antecedent prints | Consequence |
+|---|---|---|---|
+| `opqb-t16-693` | "the 3-year-old with **intermittently esotropic** left eye" | "left eye wanders intermittently **inward**" | **esotropic** is Q692's own key, "Strabismus" |
+| `opqb-t16-695` | "with a dense central **congenital** lens opacity" | "white pupillary reflex **since birth**, lens opacity dense and central" | **congenital** is Q694's key, "Congenital cataract" |
+| `opqb-t16-699` | "with **congenital nasolacrimal duct obstruction** and a positive regurge test" | "persistent tearing and mild mucous discharge since 2 weeks of age, reflux of mucopurulent material on pressure over the sac" | **answers itself** — the key is "Probing of NLD" |
+
+All three rewritten to the antecedent's printed findings in the source's own words. `opqb-t16-699` is
+the serious one and is the exact twin of `opmcq-c12-9`: a stem that names the diagnosis when the key
+*is* the treatment of that diagnosis reduces the question to reading comprehension.
+
+**And the same fault came through the figure side in the same batch.** `opqb-t16-691`'s drafted
+`imgAlt` read *"a young child wearing **plus-lensed** spectacles"* — and the key is **accommodative
+esotropia**, whose whole mechanism is uncorrected hypermetropia in plus lenses. Cut back to modality
+and view: *"Colour clinical photograph of a young child, photographed from the front, both eyes
+visible."* The detailed read of the lenses stays in `explanation`, where it belongs.
+
+**Seven stems and one alt across the two batches. The rule now has two independent confirmations and
+still no instrument behind it** — `stagecheck.js` compares options and keys, `sweep.js` compares stems
+to *other* stems, and nothing in the chain compares a stem to its own key. **Read every repaired
+back-reference against its antecedent, by hand, before the splice.**
+
+#### The figure — and a new fact about what `bounds.js` can and cannot measure
+
+`opqb-t16-691` is the topic's only figure, book p.110, left column, under the stem. Crop cut at
+**x 379–1347, y 662–1092** on a 400 dpi render (3307 × 4677), scaled to the module's 560 px convention
+→ `q-op-gg-691.jpg`, 560 × 249. **Looked at**: the whole photograph, both lenses, no stem text above
+and no option text below, all four edges at the picture's own boundary. No pad — option A's ink starts
+~32 px under the picture.
+
+**⚠️ `bounds.js` COULD NOT MEASURE THIS FIGURE, AND ITS FAILURE MODE LOOKS EXACTLY LIKE THE CLIPPING
+SIGNATURE.** Two windows were offered and each came back filling itself to within 1 px on the right
+and bottom — the standing read of which is *"the window is at or inside the true edge, widen it"*.
+Widening produced the same result, because **the stem line above and the option lines below are ink
+too**: in a printed question the photograph is not an island of ink on paper, it is one dense block in
+a column that is ink from top to bottom. A tight-bounds instrument has nothing to bite on.
+
+**What settled it was a column/row density profile** — per-column ink fraction over a band inside the
+picture, per-row ink fraction over a band inside it — which returned **one clean dense run, sparse on
+all four sides**: columns dense from x 379 to x 1347, rows dense from y 662 to y 1092, and the first
+`bounds.js` reading (380/662/1346/1092) was right all along. **A `bounds.js` window that returns its
+own edges is not evidence of clipping when the window sits in a text column; it is evidence that
+`bounds.js` is the wrong instrument for that page.** This is the second entry on the
+*"`bounds.js` alone is not safe on a window"* rule, and the first where the profile confirmed the
+bounds rather than correcting them.
+
+#### The sweep — run against the POST-ch.12 corpus, 2 candidates, 0 folds
+
+Topic 16 was drafted against a corpus of 1,099 and House ch.12 merged first, so **the sweep was
+re-run against 1,119 held**, which is what the protocol requires: batch B's sweep must see batch A or
+a cross-bank fold is missed. **A=0 B=0 C=1 D=0 E=1 F=0 G=0**, 2 of 23 staged entries drawing a
+candidate. Both rejected, each with its discriminating token named:
+
+- **`opqb-t16-694` vs `opqb-t9-395`, C 0.27** — same key *text*, "Congenital cataract", and nothing
+  else. The staged entry asks the **diagnosis** of a 2-month-old with a dense central lens opacity;
+  the held one asks in which condition **phacoemulsification is NOT indicated**. Discriminating
+  token: **"Phacoemulsification"**, in the held stem and absent from the staged one. The same key
+  string in two questions is not a fold; it is one fact used as an answer and as an exception.
+- **`opqb-t16-690` vs `opqb-t6-265`, E 0.50** — both on the organisms of ophthalmia neonatorum.
+  Staged asks for the **set** (key "All of the above"); held asks for the *"most common **dangerous**"*
+  single organism (key "Gonococci"). Discriminating tokens: **"dangerous"** and **"most common"**, and
+  the option lists are **replaced**, not reordered — **E. coli** and **Xerosis bacilli** appear only in
+  the held entry.
+
+**A targeted second pass, topic 16 × House ch.12** — the 20 entries the first sweep predated — gave
+4 candidates, **max stem 0.44, zero identical option sets**, all four the shared
+*"All of the following … EXCEPT"* frame: `opqb-t16-687`/`-689` (**buphthalmos**) against
+`opmcq-c12-14` (**posterior vitreous detachment**, key **"Vossious ring"**) and `opmcq-c12-18`
+(causes of vitreous haemorrhage, options **PDR / PVD / RVO / Trauma**). No fold.
+
+**Self sweep: 1 exact-stem pair, rejected.** `opqb-t16-687` and `opqb-t16-689` print the identical
+stem *"All of the following are in buphthalmos EXCEPT:"* and both key **"Dilated pupil"** — a
+stem-only comparison scores them 1.00. **Two of four options differ, and the difference is a
+replacement, not a respelling:** Q687 offers **Tearing** and **Blepharospasm**, Q689 offers
+**Epiphora** and **Optic neuropathy**. Tearing/epiphora alone would be a synonym swap and would fold;
+**Blepharospasm → Optic neuropathy is a different clinical claim**, and the harder one — the disc *is*
+cupped in buphthalmos, it is the **field** that cannot be measured, which is Q688's own printed box.
+Half of each question is different, so both ship.
+
+#### Defects, and one page that fired two of them at once
+
+- **⚠️ Q693 PRINTS THE SAME OPTION TWICE, LETTER FOR LETTER.** B and C both read *"Patching the right
+  eye"*, verified on a 2× upscale — two separate lettered lines, not a wrap and not a scanner
+  doubling. The key is **B**, so the question is answerable and is kept as printed, but **C is equally
+  correct and a student choosing it is marked wrong on nothing.** The catalogued shape was "two
+  options describing the same thing"; this is that shape at its limit — the same **string**. Q693 is
+  also the topic's only 5-option question; every other prints four.
+- **Q704's key is clinically questionable and is recorded, not disputed.** *"The most common line of
+  treatment a seeing eye with retinoblastoma is:"* keys **"Enucication."** Enucleation removes the
+  globe and so cannot preserve a **seeing** eye, and the bank's own Q683 box lists radiotherapy,
+  chemotherapy, laser and cryopexy ahead of it. `answer` stays on the printed letter.
+- **Three misspellings in one option list** — Q704 prints **"Eviseration."**, **"Enucication."** and
+  **"Excentration."**, while Q683 spells all three correctly two pages earlier. Q703 prints
+  **"Electoretinogram."**
+- **Q691's stem asks for a "refractive error" and offers four strabismus terms.** No refractive error
+  is among the options. Read as *"what is the condition in the photograph"* it is answerable, and the
+  underlying refractive error — hypermetropia — is what makes the key right. Kept as printed, fault
+  recorded in the entry.
+- **⚠️⚠️ DEFECTS 2 AND 3 FIRED ON THE SAME PAGE, a combination not previously recorded.** Book p.111
+  carries **Q700–Q704 in its left column — five questions, 22 % of the topic** — while its right
+  column carries the *"Answers"* banner and the first ten keys. A scan that had stopped at the banner
+  would have lost a fifth of the topic. Fourth firing of defect 2 on this bank (t3 Q138, t8 Q348,
+  t6 Q286–288, now t16 Q700–704) and the largest tail yet.
+- **No global off-by-one**: six of the 23 keys are independently confirmed by their own printed boxes
+  (Q682, Q683, Q688, Q696, Q697, Q700); a one-place shift would break all six.
+- **A stray "6." in the answer column** of book p.111, in the numbered-key position between Q682's box
+  and Q683's key. It is the orphaned list-numbering of Q682's own seven-item differential, not a lost
+  entry. Recorded so a later reader does not chase it.
+
+#### ⚠️ And the fourth probe fault of this stream, mine
+
+The targeted topic-16 × ch.12 pass was written in haste and its first run returned **460 candidates
+with a maximum score of 1.00**, pairing *"a 2-month-old with a white pupillary reflex"* against
+*"a 22-year-old seeing bugs or cobwebs"*. The cause: `norm.js`'s `words()` returns a **string**, not
+an array, so `new Set(N.words(s))` built a set of **characters** and every English sentence overlapped
+every other almost completely. Split on spaces and the same comparison gives **4 candidates, max
+0.44**. **Check the auditor before believing the audit** — that is now four bad probes in two days
+(`grep -c` with a trailing backslash, the apostrophe-splitting option counter, the header strip that
+ate an entry, and this), and **every one of them was a probe written in a hurry to check something
+else.** None was ever a fault in the data.
+
+**⚠️ ONE MORE THING THIS BATCH FOUND, AND IT IS NOT ABOUT TOPIC 16.** Updating the resume block's
+summary table meant re-deriving the per-bank split, and the split was **wrong by exactly 37 in both
+directions**: it read "Grade Gain 724 · House 375" where a direct count by id prefix gives **761 ·
+338**. Thirty-seven Grade Gain questions were being reported as House. **The total was right the whole
+time** — 724 + 375 = 1,099, exactly the corpus — so the sum check this project runs at every splice
+could never have caught it, and never did. Reconciled now against the per-topic tables in both
+directions: Grade Gain **784 written = 790 printed − 6 folded**, House **358 written = 362 printed −
+4 folded**, and topics 1–20 (830) + the eight exam sections (257) = the **1,087** counted on
+2026-08-18. **An offsetting error is invisible to a sum. Count the parts.**
