@@ -10821,3 +10821,253 @@ the uniqueness guard caught it, and a blind `replace` would have skipped them in
 GG t14. **Three left nothing. The one appending as it went left topic 14 fully staged (63 questions)
 and 18 of 63 drafted**, resumable without re-rendering a page. Write-incrementally is the whole
 difference, for the second time on this project.
+
+### §17l — Eleven batches that shipped without a ledger entry, reconciled after the fact (2026-08-29)
+
+**⚠️ THIS SECTION IS A RECOVERY RECORD, NOT A CONTEMPORANEOUS ONE, AND THAT IS THE FINDING.**
+§17k closed at **764 questions**. Eleven batches merged and committed after it and **not one of them
+was written up here.** The ledger and `resume-ophtho.md` both still described the 764-era module while
+the data file held 1,099. Nothing was lost — every batch was validated and booted at merge time, and
+the commits carry the headline findings — but for four days the two files this project resumes from
+were describing a state that no longer existed. **The write-up is part of the batch, not a thing that
+follows it.**
+
+What is below is reconstructed from what can still be measured: the commit subjects, the entry counts
+in `app\data\questions.ophtho.js`, the fold notes spliced into that file, and the `BOXES PRINTED` /
+`MARKER ARITHMETIC` lines in each staging header. **No detail here is written from memory.** Where a
+batch's reasoning was not recorded anywhere on disk, this section says so rather than inventing it.
+
+#### The reconciliation
+
+| Batch | Commit | Printed | Written | Folded | Boxes |
+|---|---|---|---|---|---|
+| GG t14 Neuro-Ophthalmology | `db1988a` | 63 | 63 | 0 | 9 |
+| House ch.7 The sclera | `fff0cdd` | 26 | 26 | 0 | **0** |
+| GG t12 Vitreous | `ad3c9ff` | 15 | 15 | 0 | 4 |
+| House ch.8 The cornea | `482c0e7` | **30 under 28 numbers** | 30 | 0 | **0** |
+| GG t17 Malignancies | `040d796` | 11 | 11 | 0 | 3 |
+| House ch.9 The crystalline lens | `6bb7b8f` | 28 | 28 | 0 | **0** |
+| GG t19 Systemic Diseases | `235b25a` | 36 | **35** | **1** | 11 |
+| House ch.10 The uveal tract | `1c3ce46` | 26 | 26 | 0 | **0** |
+| House ch.11 Glaucoma | `f85d5f6` | 26 | **25** | **1** | **0** |
+| GG t18 Ocular Trauma | `aba07c7` | 39 | 39 | 0 | 3 |
+| GG t15 Squint | `ae57aa5` | 37 | 37 | 0 | 4 |
+| | | | **335** | **2** | |
+
+**764 + 335 = 1,099, and the file holds exactly 1,099.** Per bank: Grade Gain **724**, House **375**.
+Two figure commits (`5a4cfae`, and the crop work in `7e90f13` before it) and two brief-only commits
+(`033385a`, `5aa374e`) carry no entries and are recorded below by their finding instead.
+
+#### What each batch actually found — the parts that are still on disk
+
+**GG topic 14 "Neuro-Ophthalmology" (63).** Its page range was one page short in my brief and the
+agent rendered past it: stopping where I said **would have lost six keys (Q639–Q644) and one of the
+nine boxes.** *"A reprint that cannot be folded"* — the batch found a second printing whose options
+were **replaced** rather than reordered or respelled, which makes a new question, not a fold.
+Its one figure shipped separately (`5a4cfae`) after **two agents independently described the same
+photograph and agreed**, which is the only reason it was cut at all.
+
+**GG topic 12 "Vitreous" (15).** Filed across **four** chapters — `op-ret` 8, `op-pupil` 3,
+`op-cat-surg` 3, `op-ret-dr` 1 — because the module has no vitreous chapter. That scatter is the
+precedent House ch.12 is now being drafted against.
+
+**GG topic 17 "Malignancies" (11).** `op-onc` went **0 → 11**, the module's second-to-last empty
+chapter. **⚠️ THE ANSWERS BANNER SAT AT THE TOP OF THE RIGHT COLUMN** — every earlier topic put it at
+a column-one top, and questions here continued **above and beside it**. A scan starting at the banner
+would have lost **36 % of the topic, silently.** Written into the brief as `5aa374e`.
+
+**GG topic 19 "Systemic Diseases" (36 printed, 35 written).** `op-systemic` went **0 → 13**.
+**My page range was a page short and the unnamed page held 23 of the 36 keys and 7 of the 11 boxes.**
+The fold — `opqb-t19-762` into `opqb-t13-549` — is the **British/American spelling trap firing for
+real**: the only textual difference in the option list is `hemorrhage` against `haemorrhage`, and
+**a respelling is not a replaced distractor.** That trap shipped a duplicate twice in ENT.
+**The second printing was the BOXED one**, so the box folded in verbatim and the held entry's
+authored marker came **off** — the fourth convert-authored-to-sourced fold on this module.
+
+**GG topic 18 "Ocular Trauma" (39).** **Zero figures** — I had predicted in the brief that trauma
+would be the module's most figure-heavy topic and it prints none. And the batch exposed a comparator
+defect: `worthlessF`, which flags an option list carrying no information, **was wired to stage F
+alone while stages B and D compare option sets directly.** A chemical-burn grading matched two
+hypertensive-retinopathy gradings on a bare `Grade 1|2|3|4` ladder and **stage B — the stage whose
+whole claim is near-certainty — called it a near-certain duplicate.** Patched to demote such hits to
+a new stage G with the reason printed. **Demoted, never suppressed: an E/F top-N cutoff once hid
+three real folds here.**
+
+**GG topic 15 "Squint" (37).** **Four defective keys**, all keyed as printed. The agent did the
+thing that makes that safe: it **checked the neighbouring keys to exclude a global off-by-one**
+before calling any single key defective. It also found an anatomy table **no squint deck contains**
+and had to source it elsewhere.
+
+**House ch.7 "The sclera" (26).** *"The stem stops carrying information"* — the point at which this
+bank's stems became bare one-liners that cannot stand in for a missing figure.
+
+**House ch.8 "The cornea" (30 questions under 28 printed numbers).** The bank prints two questions
+sharing a number; the extra carries the id `opmcq-c8-26b`. **⚠️ AND `stagecheck.js` SKIPPED BOTH
+MIS-NUMBERED ENTRIES** — it coerced ids to numbers at **four separate call sites**, one of which was
+the repair-recording stage, so the two worst entries in the chapter were invisible to the checker
+built to catch exactly that. Fixing the first site revealed a second and third (its own uniqueness
+guard caught them) and a fourth sat in the reverse-coverage check. **Seventh instrument on this
+project to be blind to the fault it was built for.**
+
+**House ch.9 "The crystalline lens" (28).** Produced the **BANNER CENSUS**, the most reusable artifact
+of the whole House stream: all 124 sheets scanned at 25 dpi for the red band, giving every chapter
+boundary in the file before a page is opened. It has since predicted ch.10, ch.11 and ch.12 correctly.
+The census lives in the header of `house-c9.array.js`. The same batch **stopped the comparator
+discarding polarity words** — `except`, `true`, `false`, `not` were in the stopword list, so a
+question and its own negation compared as identical.
+
+**House ch.10 "The uveal tract" (26).** **A key that selects the only FALSE option in a list of true
+ones.** Keyed as printed, discrepancy in `explanation`. Never disputed.
+
+**House ch.11 "Glaucoma" (26 printed, 25 written).** **A fold decided on the ASK alone** — the first
+on this module with **no textual difference anywhere in the option list.** `opmcq-c11-20` and
+`opmcq-c11-9` print the same four options in the same order with the same key; one wraps it in a
+vignette that names iris bombé, a shallow chamber and an IOP of 65, and so **hands the diagnosis over
+rather than testing it.** Every earlier fold here turned on a shared typo, a respelling or a
+reordering. **Three entries cited the folded id and each needed different handling — one of them a
+COUNTING claim, where removing an id does not remove an occurrence. A claim has to survive the id,
+not merely lose it.**
+
+#### Two corrections that cost nothing only because they were caught
+
+**⚠️ THE DECK DENOMINATOR WAS WRONG IN SIX BRIEFS** (`033385a`). I had been quoting **34 cached
+ophthalmology lecture files**; there are **29**, because nine of them merge two lectures each
+(`L1,2`, `L3,4`, `L7,8`, `L13,14`, `L15,16`, `L27,28`, `L31,32`, `L33,34`, `L35,36`). Every
+*"searched all 34 decks"* claim made before that was arithmetic about a directory nobody had listed.
+**Count the directory, never the lecture numbers.**
+
+**⚠️ AND A `NOT COVERED` LIST PROVES LESS THAN IT LOOKS.** It is scoped to its own deck, and a grep
+over a file that records a fault matches its own record. `L20` and `L31,32` **both** record PVD
+absent; the book names and explains it at p.17, p.41 and p.42. Two invisible sources cannot
+corroborate each other.
+
+#### State at the close of this reconciliation
+
+**Ophtho 1,099** — Grade Gain **724** (topics 1–15, 17, 18, 19) · House **375** (ch.1–11).
+Corpus **3,660** (3,571 MCQ + 89 cases), **104 images**, **35 of 36 chapters seeded** — `op-appear`
+is the last empty one. Ten fold notes stand in the file, two of them from these batches.
+Last recorded boot: **0 console errors, 876 rules, 3 `max-aspect-ratio:5/4` blocks, 4 modules,
+153 chapters, 1,604 sections, 89 cases, 3,660 questions.**
+
+**Grade Gain's remaining gap is exact and doubly measured:** topic 15 ends at **Q681** and topic 17
+opens at **Q705**, so **topic 16 "Pediatric Ophthalmology" is Q682–Q704, 23 questions** — and the
+contents page independently promises 23. Then topic 20, and the eight exam sections.
+**House ch.12 "12. Vitreous" is book pp.80–84**, banner read by the ch.11 agent and span predicted by
+the census. Both are drafting now.
+
+### §17m — House Part A ch.12 "12. Vitreous", 20 questions, and four reconstructed stems that were answering their own questions (2026-08-29)
+
+**Merged 2026-08-29. 20 printed, 20 written, 0 folded, 0 boxes, 0 figures.** Ophtho **1,099 → 1,119**;
+corpus **3,680** (3,591 MCQ + 89 cases). Marker delta asserted at the splice: **977 − 957 = 20**, and
+required = 20 entries − 0 boxes = **20**. Boot from `file://` after the splice: **0 console errors,
+876 rules, 3 `max-aspect-ratio:5/4` blocks, 4 modules, 153 chapters, 1,604 sections, 89 cases.**
+`validate.js`: 0 BAD, 0 dead backticked refs, 0 markers in `source`, 0 sparse holes.
+
+Chapters: `op-cat-surg` 6 · `op-ret` 7 · `op-ret-dr` 3 · `op-trauma` 2 · `op-intro` 1 · `op-acute` 1 —
+scattered across six, because **the module still has no vitreous chapter**, the same shape GG topic 12
+took across four.
+
+#### ✅ THE BANNER CENSUS HELD A FOURTH TIME, AND IT IS NOW THE CHEAPEST INSTRUMENT ON THIS BANK
+
+Predicted from `house-c9.array.js`'s census alone, before a page was opened: banner at sheet **42L =
+book p.80**, next banner at **44R = book p.85**, five book pages. **Every particular held.** No page
+was rendered outside the predicted span. Book p.85's banner reads literally **`13. The retina`**, with
+numbering restarted at 1 — which fixes the next chapter's opening as well. Four chapters running
+(ch.10, 11, 12, and now 13's boundary) predicted correctly from a 25 dpi scan done once.
+
+**And twelve chapters in, House has printed ZERO explanation boxes and ZERO figures.** Counted per page
+again here rather than carried forward, as the rule requires — but the pattern is now strong enough
+that the *absence* of a box is no longer the surprise; a box appearing would be.
+
+#### ⚠️⚠️ THE REAL FINDING — A BACK-REFERENCE REPAIR THAT LEAKED THE ANSWER, IN THREE OF FOUR CHAINS
+
+The chapter prints **6 bare `"In the previous case…"` stems in 3 chains** (Q2→Q1, Q3→Q2→Q1, Q5→Q4,
+Q6→Q5→Q4, Q8→Q7, Q9→Q8→Q7), and three of them point *past* a question that contains no case. Every
+one has to be repaired in-stem, because the app hashes question order and **"the previous case" is
+never the previous question on a student's screen.**
+
+The drafting agent repaired all six and `stagecheck.js` passed them — it compares options and keys
+against the staging record and **has nothing to say about a stem.** Reading them by hand found that
+**three named the DIAGNOSIS where the source had printed only FINDINGS**, and one of those handed over
+its own key:
+
+| Entry | Repaired stem said | The source antecedent prints | Consequence |
+|---|---|---|---|
+| `opmcq-c12-5` | "a **vitreous haemorrhage** obscuring the fundus" | "black shadows obvious against the red reflex and hence **obscuring the retina**" | names Q4's key |
+| `opmcq-c12-6` | "with a **vitreous haemorrhage**" | as above | names Q4's key |
+| `opmcq-c12-8` | "a Weiss ring — **a posterior vitreous detachment**" | "an evident **Weiss ring**" | glosses the diagnosis |
+| `opmcq-c12-9` | "with an **uncomplicated** posterior vitreous detachment" | nothing of the kind anywhere in the chain | **answers itself** — the key IS "No specific treatment" |
+
+`opmcq-c12-9` is the serious one. **"Uncomplicated" is not printed anywhere in the Q7–Q9 chain**; it is
+an inference from Q8's key, and stating it in the stem reduces the question to reading comprehension.
+All four were rewritten to the antecedent's **printed findings**, in the source's own words — the book
+writes *"obscuring the retina"*, so the entry does too, not "fundus". The reasoning that had migrated
+into the stem was already in the explanation where it belongs: `opmcq-c12-9` reads *"which
+`opmcq-c12-8` has just excluded by dilated examination."*
+
+**⚠️ THE RULE THIS ESTABLISHES: `imgAlt` MUST NOT ANSWER THE QUESTION, AND NEITHER MUST A RECONSTRUCTED
+STEM — AND A REPAIRED BACK-REFERENCE IS A RECONSTRUCTED STEM.** The topic-10 photo stems taught this
+once from the figure side; this is the same fault arriving from the citation side, and **no instrument
+in the chain can see it.** `stagecheck.js` compares options and keys. `sweep.js` compares stems to
+*other* stems. Nothing compares a stem to its own key. **Read every repaired back-reference against its
+antecedent, by hand, before the splice.**
+
+#### The sweep — 12 corpus candidates, 3 self-hits, 0 folds
+
+`sweep.js` against 1,099 held: **A=0 B=0 C=7 D=0 E=2 F=3**, 6 of 20 staged entries drawing at least
+one candidate. Every one rejected, and each with its discriminating token named:
+
+- **`opmcq-c12-1` and `-4` vs `opmcq-c1-33`, F 0.67 each — the shared-option-menu shape again**, third
+  time on this module. `c1-33` lists *Vitreous hemorrhage | Retinal detachment | AION | All of the
+  above | None of the above* and asks which causes **painless** loss. Q1 is a vignette 1 day after
+  cataract surgery with **pain, redness and discharge**; Q4 is a **diabetic**. Discriminating tokens:
+  **"discharge"** and **"diabetic"** against **"painless"**. A menu is how these banks pair questions.
+- **`opmcq-c12-4` vs `opqb-t13-549` and `opqb-t19-763`, C 0.33** — the closest real risk in the batch:
+  three printings of the stock diabetic-sudden-loss stem, all keying vitreous haemorrhage, across two
+  banks. **The option lists are replaced, not reordered or respelled** — Q4 alone offers **CRVO**,
+  **posterior vitreous detachment** and **"None of the above"** — so all three are separate questions
+  under the standing fold rule.
+- **`opmcq-c12-14`/`-16` vs `opqb-t12-500`, E 0.50** — three different asks about PVD. Tokens:
+  **"Vossious ring"** (Q14's key, absent from t12-500) and **"complications"** (Q16's stem alone).
+- Q18's three stage-C hits (`c9-23`, `c1-24`, `c11-22`) share only the key **"All of the above"** and
+  a couple of abbreviations, across ectopia lentis, photopsia and secondary angle-closure.
+
+**Self-sweep: 3 internal hits, all rejected, and the rejection depends entirely on the repair above.**
+Q5 ↔ Q8 and Q6 ↔ Q9 print **exact-identical stems** in the source; Q5 and Q8 additionally print **the
+same five options in the same order and key different letters (A vs D)**. What separates them is the
+antecedent and nothing else — Q5's chain begins at an obscured retina, so the answer is **Ultrasound**;
+Q8's at a clear one, so it is **Dilated fundus examination**. **Had the back-references shipped bare,
+two of these four would have been indistinguishable from each other on screen.** After repair, all 20
+full stems are distinct.
+
+#### Defects, spellings and the measured absences
+
+- **No defective key**, and no monotone drift, so no global off-by-one.
+- **4 orphaned answers** — Q4 (options D/E and the answer on the next page), Q8 (`Answer: D` alone at a
+  page head), Q13 (stem alone at a page foot, options and answer overleaf), Q17.
+- **Q6 prints a double space**: `"the best line of  management"`, verified at 2×. Normalised, recorded.
+- **Q11's key is correct against the options printed** and is recorded, not disputed: with the red
+  reflex *absent*, the module's own instrument is B-scan ultrasound — **which is not on Q11's list.**
+- **⚠️ THE MODULE SPELLS ONE EPONYM TWO WAYS.** Q14 prints **"Vossious ring"**, matching `L25) Trauma I`
+  sl.30/31 exactly; `L18) Cataract II` prints **"Vossius ring"** for the same sign. **A grep on either
+  form finds only half the module** — the second time an eponym's spelling has hidden source material
+  here.
+- **⚠️ "Weiss" returns exactly ONE case-insensitive hit** across all 29 cached decks and 12 book caches,
+  **and that hit is inside `L20`'s own not-covered list** — a grep matching its own record, the fault
+  §17l had just finished warning about, firing again the same day. Tagged as outside knowledge. PVD
+  itself *is* taught (`ophthalmology.pdf` pp.17, 41, 42).
+- **Three measured zero-hit absences, each tagged in place, none declared:** `Bacillus` (0),
+  `child abuse`/`non-accidental` (0 — the only "abuse" hit in the module is *topical anaesthetic abuse*
+  in `L15,16) Cornea`), and the endophthalmitis vitrectomy trial (0). Q19's plant-matter option, by
+  contrast, **is** grounded inside the module: `L15,16) Cornea`, *"Filamentous fungi (Aspergillus,
+  Fusarium): trauma with plant matter."*
+
+#### ⚠️ And one tool check that was itself the fault
+
+A quick regex over the draft reported **one answer index out of range**. It was the probe: a crude
+`options:[…]` split that breaks on apostrophes inside option text. Parsing the fragment properly gave
+**0 out of range**, with option counts `5 4 5 5 5 5 4 5 5 5 4 4 5 5 5 5 5 5 5 4` and keys
+`D C C D A D C D D C D B C A E B B E D C` matching the staging record exactly. **Check the auditor
+before believing the audit** — and the same session's earlier `grep -c` over `resume-ophtho.md`
+returned 0 for four path strings that were all present, because a trailing backslash inside an
+alternation ends the pattern. **Two false alarms in one day, both from probes written in haste.**

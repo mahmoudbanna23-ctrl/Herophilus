@@ -5,53 +5,96 @@
 
 ---
 
-## Resume here — state at 2026-08-24
+## Resume here — state at 2026-08-29
 
-**⏳ OPHTHALMOLOGY IS THE LIVE MODULE.** ENT closed the same day (`ledger.md` §15–§16). Everything this
-session did is written up in **`ledger.md` §17 — read it before resuming.**
+**⏳ OPHTHALMOLOGY IS THE LIVE MODULE**, against **27 September**. ENT is closed (`ledger.md` §15–§16).
 
-### Where the numbers stand
+**⚠️⚠️ THIS FILE WAS FOUR DAYS AND ELEVEN BATCHES STALE WHEN IT WAS NEXT READ.** It described the
+module at 764 questions while the data file held 1,099. Nothing was lost — every batch validated and
+booted at merge time — but the two files this project resumes from were both describing a state that
+no longer existed. **`ledger.md` §17l is the reconciliation, written from commits and measured files
+rather than from memory. The write-up is part of the batch, not a thing that follows it.**
+
+### Where the numbers stand — measured 2026-08-29, not derived
 
 | | |
 |---|---|
-| Questions merged | **764** — Grade Gain **561** (topics 1–11, 13) · House **203** (ch.1–6) |
-| Corpus | **3,325** (3,236 MCQ + 89 cases) · **103 images** |
-| Remaining | **~1,348** — GG **526** of 1,087 · House **~822** of ~1,025, against **27 Sep** |
+| Questions merged | **1,119** — Grade Gain **724** (topics 1–15, 17, 18, 19) · House **395** (ch.1–12) |
+| Corpus | **3,680** (3,591 MCQ + 89 cases) · **104 images** |
+| Chapters seeded | **35 of 36** — `op-appear` "Problems of Appearance" is the last empty one |
+| Fold notes in file | **10** |
 | Last `file://` boot | **0 console errors, 876 rules, 3 `5/4` blocks, 4 modules, 153 chapters, 1,604 sections, 89 cases** |
-| §14.5 register | ✅✅ **ZERO open rows, all four modules** (ophtho went 39 → 0 today) |
-| Lecture cache | ✅✅ **all eleven blind decks read** — the module has no unread deck left |
+| Git | **58 commits, UNPUSHED** — push needs the user's device-code flow; a plain `git push` hangs forever |
+| §14.5 register | ✅✅ **ZERO open rows, all four modules** |
+| Lecture cache | ✅✅ **all 29 decks read** — the module has no unread deck left |
 
 **⚠️⚠️ THE PROTOCOL BELOW STILL HOLDS AND IS NOT NEGOTIABLE.** The hub is the SOLE WRITER of
 `questions.ophtho.js`, `cases.ophtho.js`, `theory.ophtho.js`, this file and every git commit.
 Subagents draft into `content\ophtho\qb-pages\*.array.js` + `*.draft.js` and **never touch a data
-file, a resume file or git.** The hub runs the six-stage sweep, every fold decision, the splice, the
-§7 validation, the marker delta and the commit — **one batch at a time**, because batch B’s sweep must
+file, a resume file or git.** The hub runs the sweep, every fold decision, the splice, the §7
+validation, the marker delta and the commit — **one batch at a time**, because batch B's sweep must
 run against a corpus that already contains batch A or cross-bank folds are missed.
 
-**⚠️ THE 2-SUBAGENT CAP WAS RAISED TO 4–5 ON 2026-08-24 AND THAT DECISION COST A USAGE LIMIT.** Seven
-agents were live when it hit at 3:50 pm Africa/Cairo. **Nothing was lost that had been written**, because
-every brief carried *"write incrementally"* — four agents left resumable partials totalling **160 finished
-slides**; the three holding work in memory left nothing. **Keep the write-incrementally paragraph in every
-brief.** Four concurrent is workable; watch for stalls and drop back after one.
+**⚠️ TWO CONCURRENT SUBAGENTS, NOT FOUR.** The cap was raised to 4–5 on 2026-08-24 and that decision
+cost a usage limit with seven agents live; two more limits were hit on 2026-08-25. **Keep the
+write-incrementally paragraph in every brief** — every agent that appended as it went lost nothing,
+and every agent holding work in memory lost everything.
 
-### What is queued and ready
+### What is in flight right now (2026-08-29)
 
-**Nine Grade Gain topics and House ch.2 are already RENDERED** at 200 dpi in `<scratch>\oph\bank\`:
-`gg-t4` `gg-t5` `gg-t6` `gg-t7` `gg-t8` `gg-t9` `gg-t10` `gg-t11` `gg-t12` `house-c2`. Render more with
-`node <scratch>\oph\qpages.js gradegain <firstBook> <lastBook> <outDir>` — it does each file’s own offset
-arithmetic and **always renders one page past**, which is not optional on this bank.
+| Batch | Pages | Rendered | State |
+|---|---|---|---|
+| **GG topic 16 "Pediatric Ophthalmology"** | book pp.109–112 (+113 proof) | `bank\gg-t16\p-116…120` | **drafting** |
+| **House ch.12 "12. Vitreous"** | book pp.80–84 (sheets 42–44) | `bank\house-c12\p-042…044` | ✅ **MERGED 2026-08-29** — 20/20, 0 folded, 0 boxes, 0 figures (`ledger.md` §17m) |
 
-**The reusable subagent brief is `progress\briefs\ophtho-bank-brief.md`** — copy it, fill the slots, launch.
+**⚠️ These two are the same subject from two banks that reprint each other** — Grade Gain topic 12 is
+also "Vitreous", 15 live entries `opqb-t12-498…512`. **Sweep House ch.12 against them, and expect the
+hardest fold adjudication of the module.**
 
-### ⚠️ The three things that will dominate the remaining cost
+**⚠️ Topic 16's count is doubly measured.** Topic 15 ends at **Q681**, topic 17 opens at **Q705**, so
+the gap is **exactly Q682–Q704 = 23** — and the contents page independently promises 23. Two
+independent measurements agreeing is the strongest number this stream has had. **Still count what is
+printed.**
 
-1. **~304 IMAGE questions** — House OSCE Q1–269 are each a clinical photograph, plus GG’s End Exam 6
-   (Photos) at 35. **Every crop is LOOKED at**; 13 of 13 were wrong first try in ENT, and ENT’s crop
-   detector is template-specific and **will not fire on these banks.**
-2. **132 short-answer model-exam items → `type:'case'`** in `cases.ophtho.js`, which is currently empty.
-   They **reference the OSCE images rather than reprinting them**, so they need links to existing crops.
-3. **The back of both files is recycled BY DESIGN** — GG’s eight exam sections and House’s model exams are
-   past papers. **The six-stage sweep matters more there than anywhere else in this project.**
+### What is queued after that
+
+**Grade Gain — ~357 remaining:** topic 20 (40, rendered at `bank\gg-t20\`), End Exams 1–5 (126),
+End Exam 6 Photos (35), Tutorial Exam (27), Final Exam (69).
+
+**House — ~687 remaining.** ⚠️ **THE BANNER CENSUS GIVES EVERY REMAINING CHAPTER BOUNDARY BEFORE A
+PAGE IS OPENED**, and it has now held three times running (ch.10, ch.11, ch.12). It lives in the
+header of `house-c9.array.js`: banners on half-pages
+`3L 4L 10L 13R 16R 20L 23R 26R 29R 33L 36L 39L 42L 44R 47R 51L 53L 56L 58L 61L 66L 72L 78R 80L 82R 112L 118R`,
+which convert to book pages by `2N−4` (left) / `2N−3` (right). Chapters after 12 therefore open at
+book pp. **85, 91, 98, 102, 108, 112, 118, 128, 140, 153, 156, 161, 220, 233**.
+**⚠️ THE 59-PAGE GAP FROM p.161 TO p.220 IS THE OSCE BLOCK — 269 PHOTOGRAPH QUESTIONS**, and it is
+the single largest cost left in the module.
+
+**Endpoint — never opened.** `Opthalmology endpoint.pdf`, **293 MB, 2,442 pages**, uncounted. It was
+excluded from every remaining-count reported before 2026-08-25 because nobody had looked at the file.
+The recon agent died on a session limit and wrote nothing. **The scope question — all three banks, or
+two banks well — is the user's, and it is still open.**
+
+**132 short-answer model-exam items → `type:'case'`** in `cases.ophtho.js`, which is still empty.
+They **reference the OSCE images rather than reprinting them**, so they need links to existing crops.
+
+### ⚠️ The three things that dominate the remaining cost
+
+1. **~304 IMAGE questions** — House OSCE Q1–269, plus Grade Gain's End Exam 6 (Photos) at 35.
+   **Every crop is LOOKED at**; fifteen of fifteen first attempts have been wrong in this project, and
+   ENT's crop detector is template-specific and **will not fire on these banks.**
+2. **The back of both files is recycled BY DESIGN** — Grade Gain's eight exam sections and House's
+   model exams are past papers. **The duplicate sweep matters more there than anywhere else.**
+3. **The endpoint bank, if it is in scope at all.**
+
+### Rendering
+
+`node <scratch>\oph\qpages.js <gradegain|house|endpoint> <firstBook> <lastBook> <outDir>` — it does
+each file's own offset arithmetic (`gradegain` PDF = book + 7; `house` PDF sheet = `floor(book/2)+2`,
+two book pages per sheet) and **always renders one page past**, which is not optional on this bank.
+
+**The reusable subagent brief is `progress\briefs\ophtho-bank-brief.md`** — copy it, fill the slots,
+launch.
 
 ### Topic-by-topic status, Grade Gain
 
@@ -60,31 +103,49 @@ arithmetic and **always renders one page past**, which is not optional on this b
 | 01 Examination of the Eye | 71 | **71** | 71 | 0 | 0 | ✅ |
 | 02 Optics & Errors of Refraction | 41 | **41** | 41 | 0 | 8 | ✅ |
 | 03 Orbit | 26 | **26** | 26 | 0 | 4 | ✅ |
-| 04 Lacrimal System | 26 | **26** | 26 | 0 | 6 | ✅ 2026-08-24 |
-| 05 Eyelid | 59 | **59** (Q165–223) | 59 | 0 | 4 | ✅ 2026-08-24 |
-| 06 Conjunctiva | 65 | **65** (Q224–288) | **63** | **2** | 9 | ✅ 2026-08-24 |
-| 07 Sclera | 8 | **8** (Q289–296) | 8 | 0 | 3 | ✅ 2026-08-24 |
-| 08 Cornea | 52 | **52** (Q297–348) | **51** | **1** | 12 | ✅ 2026-08-24 |
-| 09 Lens | 61 | **61** (Q349–409) | **60** | **1** | 12 | ✅ 2026-08-24 |
-| 10 Uveal Tract | 38 | **38** (Q410–447) | 38 | 0 | 12 | ✅ 2026-08-24 |
-| 11 Glaucoma | 50 | **50** (Q448–497) | **49** | **1** | 18 | ✅ 2026-08-24 |
-| 12 Vitreous | 15 | — | — | — | — | rendered |
-| 13 Retina | 69 | **69** (Q513–581) | **69** | 0 | 19 | ✅ 2026-08-24 |
-| 14 Neuro-Ophthalmology | 63 | — | — | — | — | drafting |
-| 15–28 | 504 | — | — | — | — | t15–t20 rendered and queued |
+| 04 Lacrimal System | 26 | **26** | 26 | 0 | 6 | ✅ |
+| 05 Eyelid | 59 | **59** (Q165–223) | 59 | 0 | 4 | ✅ |
+| 06 Conjunctiva | 65 | **65** (Q224–288) | **63** | **2** | 9 | ✅ |
+| 07 Sclera | 8 | **8** (Q289–296) | 8 | 0 | 3 | ✅ |
+| 08 Cornea | 52 | **52** (Q297–348) | **51** | **1** | 12 | ✅ |
+| 09 Lens | 61 | **61** (Q349–409) | **60** | **1** | 12 | ✅ |
+| 10 Uveal Tract | 38 | **38** (Q410–447) | 38 | 0 | 12 | ✅ |
+| 11 Glaucoma | 50 | **50** (Q448–497) | **49** | **1** | 18 | ✅ |
+| 12 Vitreous | 15 | **15** (Q498–512) | 15 | 0 | 4 | ✅ 2026-08-25 |
+| 13 Retina | 69 | **69** (Q513–581) | 69 | 0 | 19 | ✅ |
+| 14 Neuro-Ophthalmology | 63 | **63** (Q582–644) | 63 | 0 | 9 | ✅ 2026-08-25 |
+| 15 Squint | 37 | **37** (Q645–681) | 37 | 0 | 4 | ✅ 2026-08-25 |
+| **16 Pediatric Ophthalmology** | **23** | — | — | — | — | **drafting (Q682–704)** |
+| 17 Malignancies | 11 | **11** (Q705–715) | 11 | 0 | 3 | ✅ 2026-08-25 |
+| 18 Ocular Trauma | 39 | **39** (Q716–754) | 39 | 0 | 3 | ✅ 2026-08-25 |
+| 19 Systemic Diseases | 36 | **36** (Q755–790) | **35** | **1** | 11 | ✅ 2026-08-25 |
+| 20 | 40 | — | — | — | — | rendered |
+| Exam sections ×8 | 257 | — | — | — | — | not started |
 
 ### Topic-by-topic status, House (Part A)
 
 | Ch | Title | Printed | Written | Folded | Boxed | State |
 |---|---|---|---|---|---|---|
-| 1 | Examination of the eye | **56** | 56 | 0 | 0 | ✅ merged 2026-08-24 |
-| 2 | Optics & errors of refraction | **32** | 32 | 0 | **0** | ✅ 2026-08-24 |
-| 3 | The Orbit | **28** | **27** | **1** | **0** | ✅ 2026-08-24 |
-| 4 | Lacrimal system | **30** | **29** | **1** | **0** | ✅ 2026-08-24 |
-| 5 | Eyelids | **32** | **31** | **1** | **0** | ✅ 2026-08-24 |
-| 6 | Conjunctival diseases | **28** | 28 | **0** | **0** | ✅ 2026-08-25 |
-| 7 | The sclera | ? | — | — | — | drafting |
-| 8–20 | — | ~660 | — | — | — | not started |
+| 1 | Examination of the eye | **56** | 56 | 0 | 0 | ✅ |
+| 2 | Optics & errors of refraction | **32** | 32 | 0 | 0 | ✅ |
+| 3 | The Orbit | **28** | **27** | **1** | 0 | ✅ |
+| 4 | Lacrimal system | **30** | **29** | **1** | 0 | ✅ |
+| 5 | Eyelids | **32** | **31** | **1** | 0 | ✅ |
+| 6 | Conjunctival diseases | **28** | 28 | 0 | 0 | ✅ |
+| 7 | The sclera | **26** | 26 | 0 | 0 | ✅ 2026-08-25 |
+| 8 | The cornea | **30 under 28 numbers** | 30 | 0 | 0 | ✅ 2026-08-25 |
+| 9 | The crystalline lens | **28** | 28 | 0 | 0 | ✅ 2026-08-25 |
+| 10 | The uveal tract | **26** | 26 | 0 | 0 | ✅ 2026-08-25 |
+| 11 | Glaucoma | **26** | **25** | **1** | 0 | ✅ 2026-08-25 |
+| **12** | **Vitreous** | **20** | 20 | 0 | **0** | ✅ 2026-08-29 |
+| **13** | **The retina** | — | — | — | — | opens **book p.85**, banner read literally, numbering restarts |
+| 14–20+ | — | ~640 | — | — | — | not started |
+
+**⚠️ ELEVEN CHAPTERS IN, HOUSE HAS PRINTED ZERO EXPLANATION BOXES AND ZERO FIGURES.** That is now a
+strong pattern and still **a property of the PAGE, counted each time, never carried forward** — every
+staging header records the count for its own pages. Grade Gain, by contrast, printed 0, 8, 4, 6, 4,
+9, 3, 12, 12, 12, 18, 4, 19, 9, 4, 3, 3, 11 across its topics.
+
 
 **⚠️ House prints NO explanation box and NO figure in chapters 1, 2 or 3** — but that is a property of
 the PAGE, counted each time, never carried forward.
