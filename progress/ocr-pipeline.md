@@ -49,11 +49,15 @@ if something looks wrong — say so when you reach for it."
       load-bearing for key blocks.** Candidate gate: per-block mean conf ≥ 88 AND structural
       parse passes. minConf is useless (zero-edit blocks carry minConf 1–20 from stray marks).
       Untested classes: decimals/units (none in range), word-box figure detection.
-- [~] Gate + block parser: brief written (`progress\briefs\ocr-gate-tooling-brief.md`,
-      content-free), **OpenCode build launched 2026-08-30 by the hub itself** (the free-lane
-      CLIs run from Bash; no user hand-off needed). Hub reviews the diff, runs `--selftest`,
-      and tests against the calibration TSVs before landing in `tools\`. ⚠️ The brief predates
-      the verdict below — the verdict's changes must be applied on top before the gate runs.
+- [x] Gate + block parser: **built by OpenCode 2026-08-30, landed as `tools\ocr-gate.js`**
+      (launched from Bash by the hub — the free-lane CLIs run headless, no user hand-off).
+      `--selftest` passes (n=27); ambiguity resolutions documented loudly in its header.
+      ⚠️ **On the REAL calibration TSVs it HALTs (exit 1) on every page** — the running
+      headers (`QUESTION BANK: …`, `Chapterwise MCQs`) sit at ~7–16% page height, below the
+      brief's 4% strip, so they land as unconsumed words. Halting loudly is the contracted
+      behaviour, but the strip depth needs tuning per bank — fold that into the verdict
+      amendment round. **Not wired into any batch; the brief it was built from predates the
+      verdict below, whose changes must be applied on top before the gate ever runs.**
 - [x] **Sama debate round DONE 2026-08-30 — run headless via the grok CLI** (brief permits any
       strong outside model; user delegated the lane choice). Full verdict:
       `progress\briefs\ocr-gate-debate-verdict.md`. **ADOPT-WITH-CHANGES.**
