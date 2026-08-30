@@ -49,9 +49,49 @@ if something looks wrong — say so when you reach for it."
       load-bearing for key blocks.** Candidate gate: per-block mean conf ≥ 88 AND structural
       parse passes. minConf is useless (zero-edit blocks carry minConf 1–20 from stray marks).
       Untested classes: decimals/units (none in range), word-box figure detection.
-- [ ] Gate + block parser → free-lane brief written (`progress\briefs\ocr-gate-tooling-brief.md`,
-      content-free); user hands it to OpenCode; hub reviews the diff and tests against the
-      calibration TSVs before landing in `tools\`
-- [ ] Sama debate round: attack brief `progress\briefs\ocr-gate-debate-brief.md` → user pastes
-      to ChatGPT; **the gate reads no NEW page before the verdict returns**
-- [ ] Update `progress\briefs\ophtho-bank-brief.md` with the text-first flow (after the verdict)
+- [~] Gate + block parser: brief written (`progress\briefs\ocr-gate-tooling-brief.md`,
+      content-free), **OpenCode build launched 2026-08-30 by the hub itself** (the free-lane
+      CLIs run from Bash; no user hand-off needed). Hub reviews the diff, runs `--selftest`,
+      and tests against the calibration TSVs before landing in `tools\`. ⚠️ The brief predates
+      the verdict below — the verdict's changes must be applied on top before the gate runs.
+- [x] **Sama debate round DONE 2026-08-30 — run headless via the grok CLI** (brief permits any
+      strong outside model; user delegated the lane choice). Full verdict:
+      `progress\briefs\ocr-gate-debate-verdict.md`. **ADOPT-WITH-CHANGES.**
+- [ ] Update `progress\briefs\ophtho-bank-brief.md` with the text-first flow — **deferred until
+      the amended gate exists and is re-calibrated per verdict change (4)**
+
+## Debate verdict (2026-08-30) — ADOPT-WITH-CHANGES, six required changes
+
+The verdict's core findings, all of which stand up: **the confidence half of the gate never
+fired in calibration** (threshold 88 fit on the same 43 blocks, 6–7 points below the observed
+mass — it rejected nothing); **a mean over all words cannot see a dropped `not`/`except` or a
+`hyper`/`hypo` substitution** (one load-bearing word doesn't move a 40-word mean); and **the
+calibration was an agreement study against our own previous vision transcript, not against
+print** — a shared miss scores as a match. Single most dangerous failure mode: a fluent
+high-confidence stem with a silent clinical inversion that parses clean, ships as text, and
+the LLM never opens the image.
+
+Required changes before the gate reads any new page:
+
+1. **Keys visual-always** — never text-only for the answer letter (the five absent GG letters
+   may be a grayscale-render casualty: recheck in colour).
+2. **No text-only success path** — gated blocks send OCR text **plus** a tight 300 DPI crop;
+   the transcribing agent must copy-or-escalate, never paraphrase. Optional image is a prompt,
+   not a control.
+3. **Any digit / unit / Greek / superscript → cannot take the cheap path** until a
+   print-checked numeric sample exists.
+4. **Re-calibrate end-to-end against print** on a frozen holdout with numbers, tables, a
+   figure-heavy chapter and an answer-key page; score the agent's output, not the Tesseract
+   stream; pre-register the threshold.
+5. **Dangerous-token weighting + box-density deletion check** instead of bare mean ≥ 88
+   (negations, numbers, OOV tokens, single-letter keys dominate; a negation-lexicon tripwire
+   on `all of the following…` stems missing `except`).
+6. **Fallback at 300 DPI, colour at least for key crops** — the current 150 DPI fallback is a
+   worse image than the OCR input, which is incoherent.
+
+**Cost-case consequence, stated honestly:** change (2) means the image never fully leaves the
+request — the saving shrinks from "no image on ~85–90% of pages" to "a tight per-question crop
+instead of full pages", plus OCR text making the read faster/safer. Still a real reduction,
+much smaller than designed. **Until changes 1–5 are built and change 4's re-calibration
+passes, all batches run the classic visual flow** — which is what GG EE1 and House ch.15 will
+use.
