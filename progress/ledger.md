@@ -11702,3 +11702,53 @@ transcriber's annotation as if it were slide text, and repaired it before return
 exact, corpus 3,827 incl. cases. Boot PROBE: 0 console errors, 876 rules, 3 5/4 blocks,
 4 modules, 153 chapters, 1,604 sections, 89 cases. GG remaining: **228** (EE2–5 97 ·
 EE6 Photos 35 · Tutorial 27 · Final 69).
+
+### §17t — House ch.15 "Squint" merged (2026-08-30): 15 shipped + 2 FOLDED, and the sixth fold shape
+
+**Source**: `ophthalmology MCQ.pdf`, Ch.15 "Squint", book pp.98–101 (PDF sheets p-051..053,
+rendered one sheet past the last answer). 17 printed, numbering restarted at Q1 per chapter.
+Chapter split: `op-squint` 13 · `op-neuro-motil` 2 shipped (Q1, Q17). Classic visual flow
+(OCR gate frozen per the debate verdict). 0 figures, 0 boxes → marker delta 15 = 17 − 2
+folds − 0 boxed, exact.
+
+**Two folds — the SIXTH fold shape: within-bank cross-chapter reprint with REWORDED stem and
+a DROPPED fifth option.** The pre-flagged pair from §17r confirmed in substance, refuted as
+verbatim:
+- `opmcq-c15-2` → **folded into `opmcq-c14-5`** (E 0.73 / C 0.71): same 22-year-old, esotropia,
+  absent left abduction, face turn left, key "Left abducent palsy"; stem reworded
+  ("complains of"/"presented with"), fifth option "None of the above" dropped, the bank's
+  duplicated A/D menu misprint reproduced intact. Ch.14 printing fuller → survivor; p.98
+  citation folded into its `source`; the survivor's "(reprinted verbatim)" note corrected —
+  it was NOT verbatim.
+- `opmcq-c15-3` → **folded into `opmcq-c14-7`** (E 0.83 / C 0.71): same 34-year-old trochlear
+  vignette, key "Left trochlear palsy", same rewording + dropped-option shape.
+The shape matters: neither prior instrument category fits (not exact, not respelled, not
+reordered — the MENU shrank while the question stayed itself). A dropped filler option does
+not change the question; a dropped SUBSTANTIVE option would have. Check which options
+dropped before folding on this shape.
+
+**Six rejects, each with its named token**: c15-16 vs c14-20 (**paralytic strabismus** vs
+**papilledema**) · c15-9 vs c1-49 (**incomitant strabismus** vs **binocular diplopia**) ·
+c15-16 vs c14-8 (menu **Space occupying lesion in the brain** vs **A & B**) · c15-16 vs
+t3-120 (**Ptosis**) · and the two F 0.71 cross-pairs (c15-2/c14-7, c15-3/c14-5) are the
+shared-option-menu pairing with DIFFERENT keys — the exact `opmcq-c6-8`/`c6-23` trap, not
+folds. Self-sweep 0. Full output `sweep-c15.txt`, read whole.
+
+**Stagecheck caught three unrecorded typo repairs** — the agent fixed the bank's printed
+"strabisumus" (c15-4, also "strabisums" in the stem), "misalgnment" (c15-7) and
+"heterotrpia" (c15-14) and recorded them in `source` but not `explanation`, which is where
+the instrument (and the standing pattern) wants the printed word quoted. Notes added to all
+three explanations; re-run green. The agent's transcript note: its first pass at Q4–Q9
+drafted from working memory and was rewritten from staging before returning — the
+write-incrementally + trust-the-staging brief lines keep paying.
+
+**Also this batch, from §17s's sweep**: the ch.15 agent's claim that `opqb-t3-116`/`-127`
+"do not exist in the corpus (verified by search)" was false — both grep at 3 hits; its
+search was a broken probe. Second firing of "the agent that read the source is a prior,
+not a verdict."
+
+**Post-splice**: validate 0 BAD, 0 dead refs, 0 holes · ophtho **1,281** (opqb 853 ·
+opmcq **428** by prefix, parts counted) · markers **3,090** = 3,075 + 15 exact · corpus
+3,842 incl. cases. Boot PROBE: 0 console errors, 876 rules, 3 5/4 blocks, 4 modules,
+153 chapters, 1,604 sections, 89 cases. House remaining: **~597** (~1,025 printed − 428
+written); ch.16 "Pediatric ophthalmology" opens at book p.102.
