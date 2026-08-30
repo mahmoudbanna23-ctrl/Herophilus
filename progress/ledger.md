@@ -11226,3 +11226,335 @@ could never have caught it, and never did. Reconciled now against the per-topic 
 directions: Grade Gain **784 written = 790 printed − 6 folded**, House **358 written = 362 printed −
 4 folded**, and topics 1–20 (830) + the eight exam sections (257) = the **1,087** counted on
 2026-08-18. **An offsetting error is invisible to a sum. Count the parts.**
+
+### §17o — House Part A ch.13 "13. The retina", 27 questions, and the first back-reference batch since the rule that leaked nothing (2026-08-29)
+
+**Merged 2026-08-29. 27 printed, 27 written, 0 folded, 0 boxes, 0 figures.** Ophtho **1,142 → 1,169**;
+House **358 → 385**; corpus **3,730** (3,641 MCQ + 89 cases). Marker delta asserted at the splice:
+**2,984 − 2,957 = 27**, and required = 27 entries − 0 boxes = **27**. Boot from `file://` after the
+splice: **0 console errors, 876 rules, 3 `max-aspect-ratio:5/4` blocks, 4 modules, 153 chapters,
+1,604 sections, 89 cases.** `validate.js`: 0 BAD, 0 dead backticked refs, 0 markers in `source`,
+0 sparse holes.
+
+Chapters: `op-insid` 9 · `op-ret-vasc` 8 · `op-ret` 5 · `op-acute` 3 · `op-intro` 1 · `op-cat` 1.
+`op-insid` goes **9 → 18** on this batch alone — the chapter is where the module files a named
+retinal disease that has no chapter of its own, and retinitis pigmentosa accounts for four of them.
+
+**The count was measured two ways and both agreed**: the printed numbers walked forwards from book
+p.85 and backwards from p.90, giving 1–27 continuous with no gap, no repeat and no unnumbered item.
+**This bank prints no contents page and no per-chapter count, so 27 is a READ count and nothing
+corroborates it from outside** — the opposite of Grade Gain, where the contents page and the corpus
+gap each give an independent number.
+
+#### ✅ THE BANNER CENSUS HELD A FIFTH TIME, AND IT PREDICTED BOTH ENDS
+
+Predicted from `house-c9.array.js`'s census before a page was opened: banner at sheet **44R = book
+p.85**, next banner at **47R = book p.91**, six book pages. **Both ends held.** Book p.91 prints
+`14. Neuro-ophthalmology` with Q1 restarting, which is the proof page — and it fixes ch.14's opening
+as well. Five chapters running (ch.10, 11, 12, 13, and now 14's boundary) predicted correctly from a
+25 dpi scan done once. **No page was rendered outside the predicted span.**
+
+**And thirteen chapters in, House has printed ZERO explanation boxes and ZERO figures.** Counted page
+by page again here, six pages for six zeroes, rather than carried forward.
+
+#### ✅✅ THE FIVE REPAIRED BACK-REFERENCES ARE THE FIRST SINCE THE RULE THAT NEEDED NO CUTTING BACK
+
+§17m and §17n each found repaired stems naming the *diagnosis* where the source printed only
+*findings*, seven stems and one `imgAlt` across two banks in one day. Chapter 13 prints **five bare
+"In the previous case…" stems across four antecedents** — Q6→Q5, Q11→Q10, Q13→Q12, Q14→Q12
+*through Q13*, Q16→Q15 — and **every one was read against its antecedent by hand, word for word,
+before the splice. Not one word was added.**
+
+| Entry | Antecedent | What the repair carries | Its own key |
+|---|---|---|---|
+| `opmcq-c13-6` | Q5 | 61-year-old woman · heavy smoker · straight objects wavy · drusen | All of the above |
+| `opmcq-c13-11` | Q10 | 65-year-old man · sudden painless severe monocular loss · cherry red spots with venous stasis | IV mannitol 20% |
+| `opmcq-c13-13` | Q12 | 57-year-old diabetic and hypertensive male · acute painless loss · blood-and-thunder, cotton wool spots, diffuse haemorrhages | A & B |
+| `opmcq-c13-14` | Q12 *via Q13* | the same | All of the above |
+| `opmcq-c13-16` | Q15 | 26-year-old man · diminished vision · triad of bone spicules, attenuated vessels, waxy disc | No available treatment |
+
+**None names a diagnosis. `-11` does not print CRAO, `-16` does not print retinitis pigmentosa,
+`-13`/`-14` do not print CRVO** — even though each is the antecedent's own key. The rule was
+followed as written, and the check that confirms it is a human reading, because
+**`stagecheck.js` passed all five without comment: it compares options and keys and has nothing to
+say about a stem.**
+
+**⚠️ AND THE ONE THAT LEAKS IS THE SOURCE'S OWN FAULT, REPORTED RATHER THAN SMOOTHED OVER.**
+`opmcq-c13-13` asks which factor predisposes and keys **D, "A & B"** = DM and HTN — and Q12's very
+first printed clause is *"A 57-year-old diabetic and hypertensive male patient"*. The antecedent
+hands over two of the three named options. **It is reproduced anyway**, because the book prints it,
+because cutting the comorbidities makes the item unanswerable, and because the discrimination that
+survives is real: the examinee must still reject **"Male gender"** — also printed, also in the
+history, and *not* in the key — and reject **"All of the above"**. The leak is in the question the
+bank wrote, not in the repair.
+
+#### The sweep — 15 corpus candidates, 1 self-hit, 0 folds
+
+`sweep.js` against **1,169 held** (ch.13 was drafted against 1,142 and topic 20 had not yet merged,
+so the corpus figure is the post-t16 one): **A=0 B=0 C=9 D=0 E=2 F=4**, 6 of 27 staged entries
+drawing a candidate. Every one rejected, each with its discriminating token named:
+
+- **`opmcq-c13-27` drew FIVE candidates and is the shape to recognise** — every one of them shares
+  only the string **"Posterior subcapsular cataract"**, as key or as distractor, across steroid
+  abuse (`opqb-t9-387`), blunt trauma (`opqb-t18-744`), lens-induced glaucoma (`opqb-t9-352`),
+  spring catarrh (`opqb-t6-225`) and three cataract-morphology questions. **A cataract type is a
+  menu item in this module, not a question.** Q27 alone asks which type accompanies *retinitis
+  pigmentosa*; the discriminating token is **"retinitis pigmentosa"**, absent from all five.
+- **`opmcq-c13-26` vs `opqb-t13-562` and `opqb-t13-566`, C 0.42** — the cherry-red-spot cluster.
+  `t13-562` asks where macular oedema is *absent*; `t13-566` is a 67-year-old at three hours with
+  hand-movements vision. Discriminating token: **"relative afferent pupillary defect"**, printed
+  only in Q26, and the option menus overlap in two entries of four.
+- **`opmcq-c13-14` vs `opmcq-c1-33`, C 0.40** — shared key *"All of the above"* and a shared
+  four-of-five menu. Tokens: **"complication"** against **"causes acute painless vision loss"**.
+  The menus differ at **"Glaucoma"/"Macular edema"** versus **"Retinal detachment"/"AION"**.
+- **`opmcq-c13-9` vs `opqb-t13-531`, E 0.57** — both *"rhegmatogenous retinal detachment … EXCEPT"*.
+  Q9 asks the **causes** and keys diabetic retinopathy; `t13-531` asks the **symptoms** and keys
+  sudden pain. Discriminating token: **"Symptoms"**. Nothing in the two option lists is shared.
+
+**Self sweep: 1 hit, and it is the ch.12 shape exactly.** Q6 and Q13 print *"In the previous case,
+which of the following is a predisposing factor…"* and score **0.80 on stem alone** — because a bare
+back-reference has almost no stem to compare. **After repair they share nothing**: a 61-year-old
+woman with drusen against a 57-year-old diabetic with a blood-and-thunder fundus, keyed E against D
+over different menus. **Had they shipped bare, two questions would have been indistinguishable on
+screen.** Second chapter running where the repair is what makes the self-sweep verdict safe.
+
+**⚠️ And the four internal fold candidates were rejected by reading, not by score** — the one worth
+recording is **Q19 vs Q20**, which print the **same four options in the same order** (Embolism /
+Thrombosis / Arteritis / None of the above) under the same stem template and key **B against A**.
+The discriminating token is one letter: **"CRVO / BRVO"** against **"CRAO / BRAO"**, vein against
+artery. **This is the `opmcq-c6-8` / `opmcq-c6-23` trap in its purest form** — folding would have
+deleted one occlusion and left the survivor keyed for the wrong vessel.
+
+#### Defects, spellings and the divergences
+
+- **⚠️ Q12's KEYED option is misprinted.** Option B prints **"CVRO"** — a letter transposition for
+  CRVO, verified at 2.5× — **and B is the printed key.** Repaired in the draft, misprint quoted;
+  `answer` is index 1 either way. A typo inside the answer itself is a first for this bank.
+- **Q22 option A prints "Flourescine angiography", and it is the DECK'S spelling, not the bank's
+  slip** — `L35,36) Chronic visual loss` prints it identically in its *"Test for macular function"*
+  list. Corrected in the draft with the misprint recorded. Option C prints **"C.OCT"** — a missing
+  space after the option letter, so the option text is *OCT*. Q24 option C prints
+  **"Niemann-pick disease"**, lower-case *p*.
+- **⚠️ Q20 is a deck-vs-bank-key divergence, recorded and not disputed.** The bank keys **Embolism**
+  as the most common cause of CRAO/BRAO; `L19.2`'s vaso-obliteration slide prints, under
+  atherosclerosis, *"Most common cause of central artery occlusion"*. The key is defensible — branch
+  occlusions are embolic, the stem lumps CRAO with BRAO, and **atherosclerosis is not on the menu**
+  — and it stands as printed.
+- **Q23 is a second deck-vs-bank divergence.** The bank keys **AMD** as *"the leading cause of
+  irreversible blindness in the western world"*; `L35,36`'s **glaucoma** slide says *"Leading cause
+  of irreversible blindness"* unqualified, while its AMD slide qualifies with *central*, *20/200*,
+  *52 or older* and *United States*. **Glaucoma is not an option**, so AMD stands. The bank's stem
+  drops both qualifiers.
+- **Q27 is a bank-vs-bank divergence already recorded in the corpus.** House keys **posterior
+  subcapsular**, agreeing with `opqb-t13-527`'s printed box and diverging from `opqb-t13-542`'s
+  *"posterior **cortical**"*. Grade Gain contradicts itself here; House does not.
+- **Q10's stem is defective, its key is not.** *"Cherry red spots together with **venous stasis**"*
+  keys **CRAO** — venous stasis is a CRVO word. The key is confirmed from the other side by Q11,
+  whose key (IV mannitol 20%) is an IOP-lowering manoeuvre used in CRAO. Recorded as a stem defect.
+  **Partly rehabilitated on re-reading**: `L19.2`'s own CRAO list prints *"arteriolar and venular
+  narrowing"* and *"sludging and segmentation of blood column (cattle-trucking)"*, so the stem is
+  loosely worded rather than wrong.
+- **Three orphaned answers** — Q9 (option D **and** the key open book p.87; a reader stopping at the
+  foot of p.86 would have transcribed a three-option question whose missing option *is* the key),
+  Q18 and Q23 (bare `Answer:` lines at page heads). All recovered by reading the following page
+  before closing the entry.
+- **Q11 and Q17 end at D ("All of the above") with no E**, in a chapter where nine questions do print
+  five. A drafter pattern-matching *"All of the above = E"* would invent an option.
+
+#### ⚠️ The agent corrected itself once, and the correction went the useful way
+
+It had tagged **"sea fan"** as outside the course material. It is not: `L19.2` gives *"Staging of
+proliferative sickle-cell retinopathy"* a full slide, five stages ending in *"Fibrovascular
+proliferation and traction."* Q7 was rewritten to quote the slide, and **the entry is stronger for
+it than the tagged version was**. Sixteen times the brief has been corrected by the agent that read
+the source; this is the first time an agent corrected **its own** finished tag before returning.
+
+### §17p — Grade Gain topic 20 "Drugs and The Eye", 40 questions, a staging record with no array in it, and four live entries that had declared a disease untaught (2026-08-29)
+
+**Merged 2026-08-29. 40 printed, 40 written, 0 folded, 6 boxes, 0 figures.** Ophtho **1,169 →
+1,209**; Grade Gain **784 → 824**; corpus **3,770** (3,681 MCQ + 89 cases). Marker delta asserted at
+the splice: **3,018 − 2,984 = 34**, and required = 40 entries − 6 boxes = **34**. Boot from `file://`
+after the splice: **0 console errors, 876 rules, 3 `max-aspect-ratio:5/4` blocks, 4 modules, 153
+chapters, 1,604 sections, 89 cases.** `validate.js`: 0 BAD, 0 dead backticked refs, 0 markers in
+`source`, 0 sparse holes.
+
+**Counted by id prefix after the splice, both parts, never derived: `opqb-` 824 · `opmcq-` 385 ·
+sum 1,209 · no id outside those two prefixes.** §17n's offsetting 37 is why the parts are counted.
+
+**The title was only obtainable from the banner** — no project file recorded it. It reads
+**"Drugs and The Eye"** (blue band, book p.127; running head *"QUESTION BANK: Drugs and The Eye"*;
+the book's own chapter title on p.254 is *"Drugs and the Eye"*, lower-case *the*).
+
+Chapters: `op-glauc` 10 · `op-cornea` 6 · `op-insid` 5 · `op-conj` 4 · `op-pupil` 4 ·
+`op-neuro-optic` 3 · `op-intro` 2 · `op-lac` 2 · `op-refract` 2 · `op-ret-dr` 1 · `op-vissym` 1.
+**Eleven chapters for 40 questions, because the module has no pharmacology chapter at all** — the
+same scatter GG topic 12 and House ch.12 took, and the third topic in this bank to be organised by
+something other than anatomy.
+
+**The count was measured three ways and all three agreed**: the per-page tally (p.127 = 10,
+p.128 = 11, p.129 = 11, p.130 = 8 → 40), the arithmetic 830 − 791 + 1 = 40, and the contents page's
+promise of 40. Corroborated downward by the corpus — the highest existing `opqb-t*` number was 790,
+so 791 opens with no gap and no overlap. Offset re-verified on all six printed footers, PDF = book + 7.
+
+**The answer block ends mid-page and that is the proof it ends.** Keys run p.131 left column
+(791–810), p.131 right column (811–825), p.132 **left column only** (826–830); the right column and
+the lower two thirds of p.132 are blank. Neither Grade Gain page defect fired: no question tail
+shared the first answer page, and the Answers banner was not pushed into the right column.
+
+#### ⚠️⚠️ THE STAGING RECORD IS PROSE, NOT AN ARRAY — AND `stagecheck.js` ABORTS ON IT
+
+`gg-t20.array.js` is a 600-line verbatim record in **plain numbered text**, not the
+`var X = [ { n, p, key, stem, opts } ]` shape every other staging file uses. `stagecheck.js` printed
+**`ABORT: no array declaration found`** and did nothing — a clean, loud failure rather than a silent
+pass, which is the only reason it was noticed.
+
+**The three comparisons stagecheck exists to make were recovered by parsing the prose instead**
+(`t20check.js`): the numbered question block gives stem and options in printed order, the
+**FULL KEY LIST** at the foot gives all 40 printed letters. Result: **40 staged · 40 drafted ·
+40 keys · 40 compared · zero key mismatches · zero option-order differences.** The five text
+differences it did report are all staging *notation*, not content — `Muller [printed with the
+umlaut: Mueller]` against `Müller`, and Q825's four `(up-arrow)`/`(down-arrow)` against `↑`/`↓`.
+
+**⚠️ AND THE PARSER WAS WRONG TWICE BEFORE IT WAS RIGHT — THE FIFTH BAD PROBE OF THIS STREAM.**
+Its first run reported **15 questions with "staged 0 options"**, which reads exactly like a
+transcription loss. Cause: the answer pages re-print every number (`791. A`, `804. B [BOXED]`), so
+the second occurrence overwrote the question entry with an empty one. Taking only the first
+occurrence of each number fixed it. **Five bad probes in three days** — `grep -c` with a trailing
+backslash, the apostrophe-splitting option counter, the header strip that ate an entry, the
+character-set jaccard, and now this. **Not one has ever been a fault in the data.**
+
+**⚠️ THE KEY DISTRIBUTION IS EXTRAORDINARY AND IS NOT AN ERROR: A 4 · B 26 · C 8 · D 2.**
+Sixty-five per cent of a 40-question topic keys **B**. That is the signature of a misread answer
+column, so it was tested rather than accepted: **the six printed explanation boxes independently
+confirm their own keys and they span three letters** — Q804 B (Jones II), Q809 B (cyclopentolate),
+Q816 C (phenylephrine + tropicamide), Q824 B (brimonidine, the box names alpha-2 agonists),
+Q828 **A** (amiodarone), Q830 B (sildenafil). **A global column shift would break all six.** Spot
+clinical checks agree independently: Q791 keys A (ophthalmoplegia is not vitamin A), Q796 keys B
+(beta blockers cut production, not drainage), Q797 keys C (centrocaecal scotoma in tobacco
+amblyopia). The skew is the source's.
+
+#### The seven back-references, and the one the agent was told to watch
+
+Q801→800, Q808→807, Q810→809, Q814→813, Q819→818, Q820→818, Q826→825. Every antecedent read, every
+repair hand-checked against **both** its own key and the antecedent's, and **no repaired stem
+contains the word "previous"** — verified mechanically over the fragment. **Nothing had to be cut
+back.** Three needed real care and all three held:
+
+- **`opqb-t20-808`** — Q807's key is **Tropicamide**. The repair says *"A mydriatic is chosen for
+  routine fundus examination because of its rapid onset and short duration"*, which is Q807's own
+  printed stem, and **never names the drug**. Its own key is *"Blocking sphincter pupillae"*, and
+  option A is *"Stimulating dilator pupillae"* — also a mydriatic mechanism, so the ask survives.
+- **`opqb-t20-810`** — Q809's key is **Cyclopentolate**. The repair says *"A cycloplegic is given to
+  a 7-year-old child for cycloplegic refraction"*. Naming the drug would have made
+  *"Hallucinations and flushing"* nearly free.
+- **`opqb-t20-820`** — the hardest, because it sits **two links** from its case and one link from a
+  key. Q818 keys **Ranibizumab**; Q819 keys **Intravitreal injection**. The repair names neither,
+  carrying only *"the same 72-year-old diabetic being treated for wet age-related macular
+  degeneration"* and *"the selected drug"*.
+
+**`opqb-t20-826` is the interesting one: the repair is SAFER than the source.** Q825's printed stem
+says the woman *"reports brown darkening of her hazel eyes and long eyelashes"* — which is
+**iris hyperpigmentation described in lay terms, and iris hyperpigmentation is Q826's key.** The
+repair carries only *"the same 50-year-old woman on latanoprost"* and drops the clause. Naming
+latanoprost is required and is safe: it is printed in Q825's **stem**, not its key.
+
+#### The sweep — 7 candidates, 0 self-hits, 0 folds, and one 0.88 that is not a fold
+
+`sweep.js` against **1,209 held** — the post-ch.13 corpus, because ch.13 merged first and batch B's
+sweep must see batch A. **A=0 B=0 C=5 D=0 E=1 F=1**, 4 of 40 staged entries drawing a candidate.
+**Self sweep: 0.**
+
+**⚠️ `opqb-t20-796` vs `opqb-t11-469` scored C 0.88 — the highest cross-entry score this module has
+produced — and it is NOT a fold.** Same bank, near-identical stem (*"All of the following drugs"*
+against *"All of these drugs"*), identical key **text**, two of four options verbatim identical:
+
+| | `opqb-t11-469` (p.73) | `opqb-t20-796` (p.127) |
+|---|---|---|
+| A | Prostaglandins. | Prostaglandins. |
+| B | **Alpha adrenergic blockers.** | Beta blockers. ← key |
+| C | Cholinergic agonists. | **Cholinergic drugs.** |
+| D | Beta blockers. ← key | **Alpha adrenergic agonists.** |
+
+The reorder alone would not save it — §17 already records a fold where reordering **moved the
+printed key letter**. What saves it is one word. **"Cholinergic agonists" → "Cholinergic drugs" is a
+respelling; "Alpha adrenergic BLOCKERS" → "Alpha adrenergic AGONISTS" is a REPLACEMENT, and the two
+are pharmacological opposites.** In topic 20 the option is a **true** statement — alpha-2 agonists
+genuinely increase uveoscleral outflow, which the bank's own Q824 box says in as many words — so it
+is correctly not the exception. In topic 11 it is a different claim entirely. **The discriminating
+token is "agonists" against "blockers".** This is the `opqb-t16-687`/`-689` shape exactly: one
+synonym swap that would fold, one replacement that does not.
+
+**The same fact prints a third time, in the other bank, with a third menu** — `opmcq-c11-23`, five
+options, every one prefixed *"Topical"*, plus *"None of the above"*. Three printings, three menus,
+three entries. That is the documented pattern, not a miss.
+
+The other five candidates: `opqb-t20-812` against `opmcq-c11-7` (token **"Decongestants"** against a
+full acute-angle-closure vignette) and against `opqb-t12-508` (**endophthalmitis**);
+`opqb-t20-793` against `opmcq-c10-3` and `opmcq-c13-14`, sharing only the string *"All of the
+above"*; `opqb-t20-823` against `opqb-t1-4` (token **"Pilocarpine"**; and 823 is the topic's
+three-option question).
+
+#### Defects — and one key suspicion raised, then cleared by reading
+
+- **Q823 prints THREE options only, A–C, with no D.** That is the source's layout, not a
+  transcription loss. Its key **B** is inside the three-option menu.
+- **Q793 prints "Retinoapthy"** · **Q794 option C prints "Cause glaucoma inversus"**, which is not a
+  real entity · **Q797 prints "Centero-cecal scotoma"** for *centrocaecal* · **Q828's box numbers
+  two items "2." with no "3."** and prints **"cornea verticillate"** for *cornea verticillata* ·
+  **Q830's box has a doubled comma** after *Sildenafil*.
+- **No key is defective.** One suspicion was raised and then **cleared by reading book p.269**:
+  Q828 keys **amiodarone** for corneal deposits, and hydroxychloroquine also deposits in the cornea
+  — but the book reserves *"cornea verticillate or vortex keratopathy"* for amiodarone and calls the
+  antimalarial finding only *"Corneal deposits"*. **Recorded as a near-miss; not opened as a
+  dispute.**
+
+#### ⚠️⚠️ THE REAL FIND OF THE BATCH IS IN THE SHIPPED DATA, NOT IN TOPIC 20
+
+The ch.13 agent returned one line outside its scope: `opqb-t13-542`'s explanation calls
+`L35,36` line 167 a **congenital**-cataract cause list. It is not. Opening the deck settles it —
+line 167 sits under **"Complicated cataract"**, between *Uveitis* and *High myopia*; the congenital
+block (*Intrauterine causes / Rubella,toxo,cmv*) starts two lines later. **And the mis-filing is
+what made the absence look real**, because a retinitis-pigmentosa hit inside a *congenital cataract*
+list reads as incidental, while the same hit inside a *complicated cataract* list **is the grounding
+for the very option the entry was explaining** — Q542's option C, *"In late cases we may find
+posterior cortical cataract."*
+
+Re-measuring from scratch found the claim wrong three ways, in **five** live entries:
+
+1. **The count.** Five entries said *"thirty cached decks"*. `ls content/ophtho/lectures/*.txt`
+   returns **29**. Thirteen other entries already said 29. Corrected to 29 in all five.
+2. **The verdict.** Four entries said the two deck hits were *"neither teaching"*. `L35,36`:167
+   **is** teaching — it names retinitis pigmentosa as a cause of complicated cataract. Only
+   `L1,2` slide 96, a seven-bar chart of causes of blindness, teaches nothing.
+3. **⚠️⚠️ AND A NAME-GREP IS NOT A COVERAGE MEASUREMENT — THE MATERIAL TEACHES THIS DISEASE THREE
+   MORE TIMES WITHOUT PRINTING ITS NAME OR WITHOUT BEING A DECK AT ALL.**
+   - **`L21) Optic Nerve` slide 14** teaches the entire fundus — *"waxy pale disc + attenuated
+     vessels + peripheral bone-spicule pigmentation"* — as the consecutive pattern, and the cache's
+     own note says the slide **"names neither the pattern nor the retinal disease."** A grep for
+     *pigmentosa* cannot find it. A grep for **`spicul`** finds it immediately.
+   - **`ophthalmology.pdf` ch.14** (`content\ophtho\book\ch14-neuro-ophthalmology.txt`:1085) prints
+     *"Consecutive optic atrophy: Which occurs due to retinal diseases e.g., Retinitis pigmentosa /
+     degenerative myopia"*.
+   - **`ophthalmology.pdf` ch.1** (`ch01-examination.txt`:421) lists *"Retinitis pigmentosa /
+     congenital cataract **(tutorial)**"* as a named topic in the chronic-visual-loss differential.
+
+   **Every one of the four entries measured the DECKS and then wrote a verdict about THE MATERIAL.**
+   The book caches sat unread in `content\ophtho\book\` the whole time.
+
+All five entries repaired in place. The narrow outside-knowledge tags that remain are the ones that
+survive the re-measurement — **the inheritance table, the a-wave/b-wave origins, the ERG rationale
+and the age of onset are still not in the material**; the fundus picture, the complicated cataract
+and the optic atrophy now carry citations. **This is the seventeenth time an absence claim in this
+project has been overturned by opening the hit, and the first overturned by a grep for a DIFFERENT
+WORD than the thing being looked for.** ⚠️ **A disease can be taught in full and never named. Grep
+the sign, not just the name.**
+
+#### ⚠️ One debt is left unpaid and is recorded rather than hidden
+
+**Topic 20 has no lecture deck** — it is grounded on **book chapter 20, pp.254–270, read in full**,
+and **chapter 20 was not in `content\ophtho\book\` and still is not.** The agent read it as rendered
+images; the verbatim text did not survive a context break, so writing a cache now would be a cache
+built from partial memory, which is worse than none. `gg-t20.array.js` carries a page-by-page
+grounding map (which book page pays for which question) as a partial substitute.
+**`content\ophtho\book\ch20-drugs.txt` is an open caching debt** — the first in this module, and it
+breaks the standing rule that a page is rendered and read once, ever.

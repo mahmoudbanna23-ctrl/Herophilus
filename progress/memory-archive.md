@@ -657,3 +657,51 @@ the live module.
   prints no explanation here"* (correct — that is Grade Gain), and `enthd-thr-476` (p.127) only
   **quotes** Q647's box. ⚠️ **My first check said "0 wrong" because it keyed on `r.id` where the file
   keys on `r.q`, so `if(!id) continue` SKIPPED ALL ELEVEN — a silent skip reports a clean result.** §15o.
+
+
+---
+
+# Moved 2026-08-24 (token diet round 2) — live MEMORY.md wins on conflict
+
+## Deck-coverage war story (ophtho blind decks)
+
+- **⚠️⚠️ A FAILURE LIST BUILT FROM FAILURE SIGNALS IS NOT A COVERAGE MEASUREMENT.** *"Eight decks need a
+  visual read"* came from *never cached* + *cache is a watermark*. Sweeping **characters per slide** found
+  **eleven decks, 574 slides** — **five on no owed list anywhere, because their extractions SUCCEEDED and
+  were merely near-empty**: `L1,2` the foundational deck (146 c/s, 136 slides), `L22` 97, `L30` 66, `L29` 63,
+  `L21` 30. **The instrument is a RATIO AGAINST SLIDE COUNT, never file size.** ✅✅ **ALL ELEVEN ARE NOW
+  CACHED (2026-08-24) — the module has no unread deck left.** ⚠️ **The two `.pptx`
+  decks were as blind as the worst PDFs and nothing flagged them** — clean XML text, 127 and 73 media files
+  for ~350 words. **PowerPoint is installed: `$p.SaveCopyAs($dest,32)` — never `SaveAs`, which rebinds.**
+  ⚠️ It reported `slides=0` then died *"RPC server unavailable"* **after** writing a correct PDF — **check
+  the artifact on disk, not the COM return value.**
+
+## Neuro theory reference
+
+- **⚠️⚠️ `content\neuro\theory-plan.md` IS THE MODULE'S WORKING FILE — READ IT FIRST**, with
+  `content\neuro\book-map.md`: deck audit, unsourced chapters, page rates, the per-chapter roster
+  (§5) and every split's arithmetic (§4). ✅ **NEURO = 36 of 36 chapters, 333 sections, 113,586 body
+  words.** **⚠️⚠️ EIGHT SPLITS took it 29 → 36, `SCHEDULE` untouched every time**; **a SINGLE deck may
+  split** (`ps-ocd`) and **a book seam may cut across an INTERLEAVING deck** (`nr-backpain`) —
+  **nothing is reordered *within* a chapter.** Do not re-derive any of it here.
+
+## ENT contradiction shapes
+
+- **⚠️⚠️ FOUR CONTRADICTION SHAPES, ALL RECORDED, NONE CORRECTED — the `answer` NEVER moves; it goes in
+  `explanation`, quoting the slide.** deck-vs-BOOK · **deck-vs-bank KEY** (House Q397 keys *septal
+  deviation maybe congenital* FALSE while `L24`:105–110 lists developmental and racial among the
+  **causes**; `enthd-thr-702` keys **pyriform fossa** where `L10`:105 gives Plummer-Vinson tumours to
+  the **POSTCRICOID** area — resolved by the stem's *"given the figures"*) · **bank-vs-bank KEY** (GG
+  Q566 *muffled* vs `entep-enr-33` *hoarse*, plus `enthd-sel-62`/`63`) · **deck-vs-bank RATIONALE**
+  (Q639/Q641 say cadaveric; `L11`:72/78 gives cadaveric to VAGUS). §15u.
+
+## Six blind instruments roster
+
+- **⚠⚠ SIX INSTRUMENTS HAVE NOW BEEN BLIND TO, OR WRONG ABOUT, THE EXACT FAULT THEY WERE BUILT TO
+  CATCH:** `Array.filter` skipping sparse holes · the E/F top-N cutoff hiding three Nose folds · the
+  `keycore.length > 3` guard switching stages B and C OFF for 31 of 294 · **its FIX, which skipped the
+  empty keys it existed to re-run** · `sameOpt` collapsing enumerated keys · **an image-on-disk check
+  that would have PASSED the broken value and REJECTED the correct one.** ⚠️ **A GUARD THAT SILENTLY
+  DISABLES A STAGE, OR HIDES A DIFFERENCE, IS WORSE THAN A MISSING ONE: THE REPORT STILL LOOKS
+  COMPLETE — and a guard written from what the code is ASSUMED to do inherits the assumption. Read the
+  function before writing the check on it.** §15, §15dd, §15ll.

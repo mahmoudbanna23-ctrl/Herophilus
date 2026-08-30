@@ -1,21 +1,21 @@
 # Herophilus — Memory
 
+**⚠️ NEW 2026-08-30: OCR-gated transcription pipeline designed — READ `progress\ocr-pipeline.md`
+BEFORE the next bank batch.** It removes the page image from ~85–90% of remaining reads
+(Tesseract text + confidence gate; vision only for flagged/figure pages). Validation-first:
+calibrate against already-shipped questions before trusting it. Content rules unchanged.
+
 Running record, organised around *resuming*. ISO dates; unverified marked as such. Method in
 `CLAUDE.md`, per-topic history in `progress\ledger.md`, **full pre-2026-08-17 memory (every war
 story, count and verbatim ruling) in `progress\memory-archive.md`** — read the relevant block
 there before resuming a paused stream. Where this file and the archive disagree, this file wins.
 
-## Resume here — ⏳ **OPHTHALMOLOGY IS THE LIVE MODULE, ~1,348 BANK QUESTIONS AGAINST 27 SEP** (GG 526 · House ~822).** ✅ **ENT IS CLOSED** (three banks, 30 chapters, both theory debts — `ledger.md` §15–§16, war stories in the archive). Ophtho stands at **764 questions** (GG **561** = topics 1–11, 13 · House **203** = ch.1–6), corpus **3,325**, **103 images**. Last boot 2026-08-25: **0 console errors, 876 rules, 3 `5/4` blocks, 4 modules, 153 chapters, 1,604 sections, 89 cases.** **33 of 36 ophtho chapters seeded** (`op-systemic`, `op-onc`, `op-appear` still empty). ⚠️ **FOUR FOLD SHAPES SO FAR, all within-bank, none taking an `alsoIn`:** exact reprint · **respelled** (mucoid/mucous — not a replaced distractor) · **REORDERED, which MOVES THE PRINTED KEY LETTER** (t9 Q392 keys B where Q355 keys C — *a key letter is never the thing to memorise*) · and one where **the second printing was BOXED and the held entry's authored marker had to come OFF**. **Check which printing is boxed before assuming a fold has no marker consequence.** ⚠️⚠️ **AND A SHARED OPTION MENU IS HOW THESE BANKS PAIR QUESTIONS, NOT EVIDENCE THEY ARE ONE:** `opmcq-c6-8` (WHO grade **TT**) and `opmcq-c6-23` (**TS**) print the same five options in the same order with **different keys**, and `sweep.js` scored the stems **1.00** because it filtered tokens on `w.length > 3` and dropped the only discriminating word in either stem. **Folding on it would have deleted the trichiasis question and left the survivor keyed for the wrong grade.** Third appearance of the short-token blindness and the worst — the earlier two made a tool skip work, this one made it return a confident wrong verdict. **Patched (capitalised short tokens survive); verified both ways — false 1.00 → 0.71, all 28 real identity matches held.** **When flagging a duplicate, NAME THE DISCRIMINATING TOKEN; if you cannot, you matched a template.** ✅✅ **THE §14.5 REGISTER IS AT ZERO OPEN ROWS, ALL FOUR MODULES** — ophtho went 39 → 0 today, and like ENT most of it was **bookkeeping, not content**. ✅✅ **ALL ELEVEN BLIND DECKS ARE CACHED — the module has no unread deck left.** **Everything is in `ledger.md` §17 — READ IT FIRST**, with `progress\resume-ophtho.md` and `content\ophtho\theory-plan.md`.
-- **⚠️⚠️ A FAILURE LIST BUILT FROM FAILURE SIGNALS IS NOT A COVERAGE MEASUREMENT.** *"Eight decks need a
-  visual read"* came from *never cached* + *cache is a watermark*. Sweeping **characters per slide** found
-  **eleven decks, 574 slides** — **five on no owed list anywhere, because their extractions SUCCEEDED and
-  were merely near-empty**: `L1,2` the foundational deck (146 c/s, 136 slides), `L22` 97, `L30` 66, `L29` 63,
-  `L21` 30. **The instrument is a RATIO AGAINST SLIDE COUNT, never file size.** ✅✅ **ALL ELEVEN ARE NOW
-  CACHED (2026-08-24) — the module has no unread deck left.** ⚠️ **The two `.pptx`
-  decks were as blind as the worst PDFs and nothing flagged them** — clean XML text, 127 and 73 media files
-  for ~350 words. **PowerPoint is installed: `$p.SaveCopyAs($dest,32)` — never `SaveAs`, which rebinds.**
-  ⚠️ It reported `slides=0` then died *"RPC server unavailable"* **after** writing a correct PDF — **check
-  the artifact on disk, not the COM return value.**
+## Resume here — ⏳ **OPHTHALMOLOGY IS THE LIVE MODULE, ~917 BANK QUESTIONS LEFT AGAINST 27 SEP** (GG **257**, all exam sections, itemised exactly · House **~660**, estimated as ~1,025 printed − 385 written · endpoint scope still the user's open call). ✅ **ENT IS CLOSED** (three banks, 30 chapters, both theory debts — `ledger.md` §15–§16, war stories in the archive). Ophtho stands at **1,209 questions** (GG **824** = topics 1–20 ✅ ALL TOPICS, only exam sections left · House **385** = ch.1–13), corpus **3,770**, **105 images** — **measured 2026-08-30 by id prefix, never carried forward**; `validate.js` re-run 2026-08-30: 0 BAD, 0 dead refs, 0 holes, 3,018 markers. Last boot 2026-08-29 post-§17p: **0 console errors, 876 rules, 3 `5/4` blocks, 4 modules, 153 chapters, 1,604 sections, 89 cases.** ⚠️ **THE 2026-08-29 SESSION DIED AFTER MERGING §17o (House ch.13, 27q) AND §17p (GG t20, 40q) BUT BEFORE COMMITTING THEM** — recovered and committed 2026-08-30; the interruption cost bookkeeping only, zero content. ⚠️ **`content\ophtho\book\ch20-drugs.txt` IS AN OPEN CACHING DEBT** (§17p — ch.20 read in full, the verbatim text died with the agent; a cache from memory is worse than none). ⚠️⚠️ **A DISEASE CAN BE TAUGHT IN FULL AND NEVER NAMED — GREP THE SIGN, NOT JUST THE NAME** (§17p: retinitis pigmentosa taught as "bone spicules" in `L21`, as complicated-cataract cause in `L35,36`:167, and in two book chapters, while a name-grep over the decks returned a confident absence; seventeenth absence claim overturned by opening the hit). **35 of 36 ophtho chapters seeded** (`op-appear` is the last empty one). ⚠️⚠️ **A REPAIRED BACK-REFERENCE IS A RECONSTRUCTED STEM AND MUST NOT ANSWER ITS OWN QUESTION** — seven stems and one `imgAlt` in two banks on one day named the *diagnosis* where the source printed only *findings*, two of them handing over their own key (`opmcq-c12-9`, `opqb-t16-699`). **No instrument in the chain can see it**: `stagecheck.js` compares options and keys, `sweep.js` compares stems to *other* stems, nothing compares a stem to its own key. **Read every repaired back-reference against its antecedent by hand.** ⚠️ **AN OFFSETTING ERROR IS INVISIBLE TO A SUM** — the per-bank split in `resume-ophtho.md` was wrong by exactly 37 in both directions while the total stayed right, so every sum check ever run passed. **Count the parts.** ⚠️ **`bounds.js` CANNOT MEASURE A FIGURE THAT SITS IN A COLUMN OF TEXT** (the stem above and options below are ink too, so it returns its own window's edges — which reads exactly like the clipping signature): **use a column/row density profile.** ⚠️ **FOUR FOLD SHAPES SO FAR, all within-bank, none taking an `alsoIn`:** exact reprint · **respelled** (mucoid/mucous — not a replaced distractor) · **REORDERED, which MOVES THE PRINTED KEY LETTER** (t9 Q392 keys B where Q355 keys C — *a key letter is never the thing to memorise*) · and one where **the second printing was BOXED and the held entry's authored marker had to come OFF**. **Check which printing is boxed before assuming a fold has no marker consequence.** ⚠️⚠️ **AND A SHARED OPTION MENU IS HOW THESE BANKS PAIR QUESTIONS, NOT EVIDENCE THEY ARE ONE:** `opmcq-c6-8` (WHO grade **TT**) and `opmcq-c6-23` (**TS**) print the same five options in the same order with **different keys**, and `sweep.js` scored the stems **1.00** because it filtered tokens on `w.length > 3` and dropped the only discriminating word in either stem. **Folding on it would have deleted the trichiasis question and left the survivor keyed for the wrong grade.** Third appearance of the short-token blindness and the worst — the earlier two made a tool skip work, this one made it return a confident wrong verdict. **Patched (capitalised short tokens survive); verified both ways — false 1.00 → 0.71, all 28 real identity matches held.** **When flagging a duplicate, NAME THE DISCRIMINATING TOKEN; if you cannot, you matched a template.** ✅✅ **THE §14.5 REGISTER IS AT ZERO OPEN ROWS, ALL FOUR MODULES** — ophtho went 39 → 0 today, and like ENT most of it was **bookkeeping, not content**. ✅✅ **ALL ELEVEN BLIND DECKS ARE CACHED — the module has no unread deck left.** **Everything is in `ledger.md` §17 — READ IT FIRST**, with `progress\resume-ophtho.md` and `content\ophtho\theory-plan.md`.
+- Deck-coverage war story (eleven near-empty extractions; five on no owed list) moved verbatim
+  to `progress\memory-archive.md` (2026-08-24, "Deck-coverage war story"). Standing rules: **the
+  blind-deck instrument is chars-per-slide RATIO, never file size** · ✅ all eleven cached
+  2026-08-24, no unread deck left · PowerPoint COM: `SaveCopyAs($dest,32)` never `SaveAs`, and
+  **check the artifact on disk, not the COM return value.**
 - **⚠️⚠️ TWO STALE-VERDICT SHAPES, TWINS. (1) AN "UNDELIVERABLE" IS A STATEMENT ABOUT THE SOURCES READABLE
   WHEN IT WAS WRITTEN, NEVER ABOUT THE MATERIAL** — `onc-10` called four rows undeliverable, every verdict
   reached against the BOOK while `L24` was 78 pages of `CamScanner`; the deck now pays the orbital-tumour
@@ -55,12 +55,10 @@ there before resuming a paused stream. Where this file and the archive disagree,
   tolerance belongs on the word — `norm.js` passes its 39-case self-test unchanged here) · **a stem match is
   not a question match, the options are half the question** · and **a reconstructed stem can leak the next
   question's answer**. **Read them there before sweeping or reconstructing anything.**
-- **⚠️⚠️ `content\neuro\theory-plan.md` IS THE MODULE'S WORKING FILE — READ IT FIRST**, with
-  `content\neuro\book-map.md`: deck audit, unsourced chapters, page rates, the per-chapter roster
-  (§5) and every split's arithmetic (§4). ✅ **NEURO = 36 of 36 chapters, 333 sections, 113,586 body
-  words.** **⚠️⚠️ EIGHT SPLITS took it 29 → 36, `SCHEDULE` untouched every time**; **a SINGLE deck may
-  split** (`ps-ocd`) and **a book seam may cut across an INTERLEAVING deck** (`nr-backpain`) —
-  **nothing is reordered *within* a chapter.** Do not re-derive any of it here.
+- **Neuro theory: 36/36 chapters COMPLETE.** The working-file map, split arithmetic and roster
+  moved verbatim to `progress\memory-archive.md` (2026-08-24, "Neuro theory reference") — for
+  any neuro work read `content\neuro\theory-plan.md` + `book-map.md` first; **nothing is
+  reordered within a chapter; do not re-derive splits here.**
 - **⚠️⚠️ THEORY IS DONE (153/153), SO ITS CRAFT RULES, REGISTERS AND BOOK CACHES ARE REFERENCE, NOT
   RESUME STATE — THREE BLOCKS MOVED VERBATIM to `progress\memory-archive.md` (2026-08-23 “Theory craft
   rules and source registers”; 2026-08-24 “Theory war stories” and “Ophthalmology theory craft”).
@@ -82,26 +80,20 @@ there before resuming a paused stream. Where this file and the archive disagree,
   three banks (endpoint 3,074 pp · Grade Gain 1,113 printed · House), 30 theory chapters at **261 pp**, the
   26 §14.5 rows, and the House **marker-debt measurement whose first check silently skipped all eleven
   entries by keying on the wrong field**. Write-ups: `ledger.md` §16, §14dd, §15–§15mm, §15o.
-- **⚠️⚠️ FOUR CONTRADICTION SHAPES, ALL RECORDED, NONE CORRECTED — the `answer` NEVER moves; it goes in
-  `explanation`, quoting the slide.** deck-vs-BOOK · **deck-vs-bank KEY** (House Q397 keys *septal
-  deviation maybe congenital* FALSE while `L24`:105–110 lists developmental and racial among the
-  **causes**; `enthd-thr-702` keys **pyriform fossa** where `L10`:105 gives Plummer-Vinson tumours to
-  the **POSTCRICOID** area — resolved by the stem's *"given the figures"*) · **bank-vs-bank KEY** (GG
-  Q566 *muffled* vs `entep-enr-33` *hoarse*, plus `enthd-sel-62`/`63`) · **deck-vs-bank RATIONALE**
-  (Q639/Q641 say cadaveric; `L11`:72/78 gives cadaveric to VAGUS). §15u.
+- **⚠️⚠️ Contradictions are RECORDED, never corrected — the `answer` NEVER moves; it goes in
+  `explanation`, quoting the slide.** The four shapes (deck-vs-book · deck-vs-bank key ·
+  bank-vs-bank key · deck-vs-bank rationale) with their ENT examples moved verbatim to
+  `progress\memory-archive.md` (2026-08-24, "ENT contradiction shapes"); §15u.
 - **⚠️⚠️ MY BRIEFS HAVE BEEN CORRECTED BY THE AGENT THAT READ THE SOURCE SIXTEEN TIMES**, plus five by
   machine checks of my own. **“TRUST THE STAGING AND THE TRANSCRIPT OVER THIS PROMPT, AND TELL ME WHERE
   I WAS WRONG” GOES IN EVERY BRIEF** — it caught a crop brief calling a CT/MRI composite a barium
   swallow, and a back-reference aimed at the wrong question. ⚠️ The reverse fired once — *the agent that
   read the source is usually right* is a **prior, not a verdict.**
-- **⚠⚠ SIX INSTRUMENTS HAVE NOW BEEN BLIND TO, OR WRONG ABOUT, THE EXACT FAULT THEY WERE BUILT TO
-  CATCH:** `Array.filter` skipping sparse holes · the E/F top-N cutoff hiding three Nose folds · the
-  `keycore.length > 3` guard switching stages B and C OFF for 31 of 294 · **its FIX, which skipped the
-  empty keys it existed to re-run** · `sameOpt` collapsing enumerated keys · **an image-on-disk check
-  that would have PASSED the broken value and REJECTED the correct one.** ⚠️ **A GUARD THAT SILENTLY
-  DISABLES A STAGE, OR HIDES A DIFFERENCE, IS WORSE THAN A MISSING ONE: THE REPORT STILL LOOKS
-  COMPLETE — and a guard written from what the code is ASSUMED to do inherits the assumption. Read the
-  function before writing the check on it.** §15, §15dd, §15ll.
+- **⚠⚠ SIX INSTRUMENTS HAVE BEEN BLIND TO, OR WRONG ABOUT, THE EXACT FAULT THEY WERE BUILT TO
+  CATCH** (roster verbatim in `progress\memory-archive.md`, 2026-08-24, "Six blind instruments").
+  **A guard that silently disables a stage, or hides a difference, is worse than a missing one —
+  the report still looks complete; read the function before writing the check on it.** §15,
+  §15dd, §15ll.
 - **⚠️ A BOOK'S OWN CHAPTER NUMBERS CAN BE DEFECTIVE** (House printed 9 twice) — **chapter by content.**
   ⚠️ One eponym printed **four ways in two pages**; one organism **three ways in three sources**.
 - **⚠️⚠️ CROPS — THE INK TEST IS `max(r,g,b) < 225 OR (max−min) > 30`, AND THE FIRST HALF IS THE ONE THAT MATTERS.** A **saturation-only** scan is **blind to dark desaturated content, which is what a clinical photograph's edge is made of** — it put one left edge 86 px inside the true one (the strip samples `(93,94,88)`, max−min of 6) and would have discarded **67 %** of `q-op-gg-288`, lesion included. ⚠️ **Reading a page at 4× reduction has the SAME blindness** (right edge read as x 2992, truly 3104) — **bound at full resolution.** ⚠️ **A symmetric clip preserves the aspect ratio**, so ratio alone never suffices; back it with a pixel diff (clean 5.7–8.2 mean abs, a 60 px clip 15.49). **Noise floor ~1 %, MEASURED** from the same photo scanned twice (`254`/`257` differ 1.07 %). ⚠️ **Strict-fill row/column runs generate FALSE failures** — tight ink bounds is the contract (`<scratch>\oph\bounds.js`). ✅ All 8 shipped crops audited clean. ⚠️ **Four of nine cut so far carried printed OPTION TEXT** where the app renders a caption. **LOOK at every crop.** ⚠️⚠️ **THE 3 px PAD IS A MAXIMUM, NOT A REQUIREMENT — TWO FIGURES PRINT A BLACK RULE 1–2 px UNDER THE PHOTOGRAPH** (`opqb-t10-425`, `opqb-t11-479`) and a rule is ink, so the padded bound lays a black bar across the frame; **cut at the picture’s own edge.** ⚠️ **A 2-pixel speck of scanner noise dragged one left bound 119 px out — `bounds.js` alone is not safe on a window, use a column-run profile.** ⚠️⚠️ **AND A STEM WRITTEN TO STAND IN FOR A MISSING FIGURE CANNOT SURVIVE THE FIGURE ARRIVING** — all three topic-10 photo stems stated their own answer and had to be cut back to the bank’s printed one-liner. **The `imgAlt` rule applies to stems.** ⚠️⚠️ **`image` STORES THE BASENAME WITH NO EXTENSION** — `qImgSrc()` appends `.jpg`; a stored `.jpg` builds `…jpg.jpg`, and **a broken `<img>` renders as nothing and logs no console error.** ENT's `q-images.ps1` is template-specific and never fires here.
@@ -145,10 +137,11 @@ there before resuming a paused stream. Where this file and the archive disagree,
 
 ## Validation state
 
-- **Corpus 3,325** (2026-08-25 — measured per module, not derived): ENT **2,322** (2,240 q + 82
-  cases) · **Ophtho 764** (GG 561 · House 203) · Neuro 158 (151 + 7) · Peds 81; **89 cases**,
-  **103 images**. Module keys `ent`, `ophtho`, `pediatrics`, `neuropsych`.
-  Option counts 2–9 coexist.
+- **Corpus 3,703** (2026-08-29 — measured per module, not derived): ENT **2,322** (2,240 q + 82
+  cases) · **Ophtho 1,142** (GG 784 · House 358) · Neuro 158 (151 + 7) · Peds 81; **89 cases**,
+  **105 images**. Module keys `ent`, `ophtho`, `pediatrics`, `neuropsych`.
+  Option counts 2–9 coexist. ⚠️ **`grep -c "^  { id:"` UNDERCOUNTS `questions.ophtho.js`** (935 for
+  1,142) — the file is mixed CRLF/LF with mixed indentation; **count by id prefix.**
 - **Theory: ✅ 153 of 153 chapters, 1,603 sections — COMPLETE.** ENT 30 (259 pp / 8.6) · Peds 51
   (340 / 8.3) · Ophtho 36 (331 / 9.2) · Neuro 36. ENT re-printed **261 pp** after the §16 reshape
   (bullets cost pages: +2). Drafts in `content\<mod>\theory-drafts\` (⚠️ ENT's

@@ -5,9 +5,16 @@
 
 ---
 
-## Resume here — state at 2026-08-29
+## Resume here — state at 2026-08-30
 
 **⏳ OPHTHALMOLOGY IS THE LIVE MODULE**, against **27 September**. ENT is closed (`ledger.md` §15–§16).
+
+**⚠️ NEW 2026-08-30: THE OCR-GATED READING FLOW IS LIVE FOR CALIBRATION — READ
+`progress\ocr-pipeline.md` BEFORE ANY BANK RENDER.** Tesseract v5.4.0 verified at
+`C:\Program Files\Tesseract-OCR\tesseract.exe`. Validation-first: the gate is calibrated against
+already-shipped questions (GG t16 / House c12 as ground truth) and **touches no NEW page until the
+user's sama debate round returns a verdict.** Content standards, fold discipline and citations are
+unchanged — only the reading mechanism.
 
 **⚠️⚠️ THIS FILE WAS FOUR DAYS AND ELEVEN BATCHES STALE WHEN IT WAS NEXT READ.** It described the
 module at 764 questions while the data file held 1,099. Nothing was lost — every batch validated and
@@ -15,18 +22,18 @@ booted at merge time — but the two files this project resumes from were both d
 no longer existed. **`ledger.md` §17l is the reconciliation, written from commits and measured files
 rather than from memory. The write-up is part of the batch, not a thing that follows it.**
 
-### Where the numbers stand — measured 2026-08-29, not derived
+### Where the numbers stand — measured 2026-08-30, not derived
 
 | | |
 |---|---|
-| Questions merged | **1,142** — Grade Gain **784** (topics 1–19) · House **358** (ch.1–12), **counted by id prefix, not carried forward** |
-| Corpus | **3,703** (3,614 MCQ + 89 cases) · **105 images** |
+| Questions merged | **1,209** — Grade Gain **824** (topics 1–20) · House **385** (ch.1–13), **counted by id prefix, not carried forward** (`validate.js` re-run 2026-08-30: 0 BAD, 0 dead refs, 0 holes, 3,018 markers) |
+| Corpus | **3,770** (3,681 MCQ + 89 cases) · **105 images** |
 | Chapters seeded | **35 of 36** — `op-appear` "Problems of Appearance" is the last empty one |
-| Fold notes in file | **10** |
-| Last `file://` boot | **0 console errors, 876 rules, 3 `5/4` blocks, 4 modules, 153 chapters, 1,604 sections, 89 cases** |
-| Git | **260 commits ahead of `origin/design/clepsydra-and-sessions`, UNPUSHED** — measured 2026-08-29 with `git rev-list --count origin/…..HEAD`; the "58" this row carried was stale by a factor of four. Push needs the user's device-code flow; a plain `git push` hangs forever |
+| Last `file://` boot | 2026-08-29 post-§17p splice: **0 console errors, 876 rules, 3 `5/4` blocks, 4 modules, 153 chapters, 1,604 sections, 89 cases** |
+| Git | **262 commits ahead of `origin/design/clepsydra-and-sessions`, UNPUSHED** — 261 measured 2026-08-30 + the §17o/§17p recovery commit. Push needs the user's device-code flow; a plain `git push` hangs forever |
 | §14.5 register | ✅✅ **ZERO open rows, all four modules** |
 | Lecture cache | ✅✅ **all 29 decks read** — the module has no unread deck left |
+| Open caching debt | ⚠️ **`content\ophtho\book\ch20-drugs.txt` does not exist** though book ch.20 pp.254–270 was read in full for topic 20 (§17p) — the verbatim text died with the agent's context; a cache from memory is worse than none. `gg-t20.array.js` carries the page-by-page grounding map as partial substitute |
 
 **⚠️⚠️ THE PROTOCOL BELOW STILL HOLDS AND IS NOT NEGOTIABLE.** The hub is the SOLE WRITER of
 `questions.ophtho.js`, `cases.ophtho.js`, `theory.ophtho.js`, this file and every git commit.
@@ -40,14 +47,17 @@ cost a usage limit with seven agents live; two more limits were hit on 2026-08-2
 write-incrementally paragraph in every brief** — every agent that appended as it went lost nothing,
 and every agent holding work in memory lost everything.
 
-### What is in flight right now (2026-08-29)
+### What is in flight right now (2026-08-30)
 
-**Nothing. Both batches merged, validated and booted.**
+**Nothing. All four 2026-08-29 batches merged, validated and booted** — the session died AFTER the
+§17o/§17p merges but BEFORE their commit and this file's update; recovered and committed 2026-08-30.
 
 | Batch | Pages | State |
 |---|---|---|
 | **House ch.12 "12. Vitreous"** | book pp.80–84 (sheets 42–44) | ✅ **MERGED 2026-08-29** — 20/20, 0 folded, 0 boxes, 0 figures (`ledger.md` §17m) |
 | **GG topic 16 "Pediatric Ophthalmology"** | book pp.109–112 (+113 proof) | ✅ **MERGED 2026-08-29** — 23/23, 0 folded, 6 boxes, **1 figure** (`ledger.md` §17n) |
+| **House ch.13 "13. The retina"** | book pp.85–90 (+91 proof) | ✅ **MERGED 2026-08-29** — 27/27, 0 folded, 0 boxes, 0 figures (`ledger.md` §17o) |
+| **GG topic 20 "Drugs and The Eye"** | book pp.127–132 | ✅ **MERGED 2026-08-29** — 40/40, 0 folded, 6 boxes, 0 figures (`ledger.md` §17p) |
 
 **⚠️⚠️ THE ONE RULE BOTH BATCHES ADDED, AND IT HAS NO INSTRUMENT BEHIND IT: A REPAIRED
 BACK-REFERENCE IS A RECONSTRUCTED STEM, AND A RECONSTRUCTED STEM MUST NOT ANSWER ITS OWN QUESTION.**
@@ -73,12 +83,15 @@ Corrected 2026-08-29 from a direct count and reconciled against the topic tables
 784 written = 790 printed − 6 folded; House 358 written = 362 printed − 4 folded. **Count the split,
 never just the total.**
 
-**Grade Gain — 297 remaining, and the itemisation now sums exactly:** topic 20 (40, rendered at
-`bank\gg-t20\`), End Exams 1–5 (126), End Exam 6 Photos (35), Tutorial Exam (27), Final Exam (69).
-Topics 1–20 promise 830 and the eight exam sections 257, for **1,087 printed** — which is the figure
-counted on 2026-08-18, reconciled here for the first time against the per-topic table.
+**Grade Gain — 257 remaining, all of it exam sections:** End Exams 1–5 (126), End Exam 6 Photos
+(35), Tutorial Exam (27), Final Exam (69). Topics 1–20 are ✅ COMPLETE at 824 written = 830 printed
+− 6 folded. The eight exam sections promise 257 for **1,087 printed** total — the 2026-08-18 count,
+reconciled against the per-topic table. **Next: End Exam 1, book pp.133–136 (+1 past), 29 promised,
+contents topic #21 — numbering continuity UNCONFIRMED for the End Exams; read the number under the
+banner, never compute it.** Past-paper sections: expect real folds, sweep matters most here.
 
-**House — ~687 remaining.** ⚠️ **THE BANNER CENSUS GIVES EVERY REMAINING CHAPTER BOUNDARY BEFORE A
+**House — ~660 remaining. Next: ch.14 "Neuro-ophthalmology", opens book p.91 (banner census, proof
+page read at §17o), runs to p.97 (ch.15 banner at p.98).** ⚠️ **THE BANNER CENSUS GIVES EVERY REMAINING CHAPTER BOUNDARY BEFORE A
 PAGE IS OPENED**, and it has now held three times running (ch.10, ch.11, ch.12). It lives in the
 header of `house-c9.array.js`: banners on half-pages
 `3L 4L 10L 13R 16R 20L 23R 26R 29R 33L 36L 39L 42L 44R 47R 51L 53L 56L 58L 61L 66L 72L 78R 80L 82R 112L 118R`,
@@ -136,7 +149,7 @@ launch.
 | 17 Malignancies | 11 | **11** (Q705–715) | 11 | 0 | 3 | ✅ 2026-08-25 |
 | 18 Ocular Trauma | 39 | **39** (Q716–754) | 39 | 0 | 3 | ✅ 2026-08-25 |
 | 19 Systemic Diseases | 36 | **36** (Q755–790) | **35** | **1** | 11 | ✅ 2026-08-25 |
-| 20 | 40 | — | — | — | — | rendered |
+| 20 Drugs and The Eye | 40 | **40** (Q791–830) | 40 | 0 | 6 | ✅ 2026-08-29 |
 | Exam sections ×8 | 257 | — | — | — | — | not started |
 
 ### Topic-by-topic status, House (Part A)
@@ -155,13 +168,14 @@ launch.
 | 10 | The uveal tract | **26** | 26 | 0 | 0 | ✅ 2026-08-25 |
 | 11 | Glaucoma | **26** | **25** | **1** | 0 | ✅ 2026-08-25 |
 | **12** | **Vitreous** | **20** | 20 | 0 | **0** | ✅ 2026-08-29 |
-| **13** | **The retina** | — | — | — | — | opens **book p.85**, banner read literally, numbering restarts |
-| 14–20+ | — | ~640 | — | — | — | not started |
+| **13** | **The retina** | **27** | 27 | 0 | 0 | ✅ 2026-08-29 — count is a READ count, nothing outside corroborates it (`ledger.md` §17o) |
+| **14** | **Neuro-ophthalmology** | — | — | — | — | opens **book p.91** (proof page read at §17o), ch.15 banner at p.98 |
+| 15–20+ | — | ~633 | — | — | — | not started |
 
-**⚠️ ELEVEN CHAPTERS IN, HOUSE HAS PRINTED ZERO EXPLANATION BOXES AND ZERO FIGURES.** That is now a
+**⚠️ THIRTEEN CHAPTERS IN, HOUSE HAS PRINTED ZERO EXPLANATION BOXES AND ZERO FIGURES.** That is now a
 strong pattern and still **a property of the PAGE, counted each time, never carried forward** — every
 staging header records the count for its own pages. Grade Gain, by contrast, printed 0, 8, 4, 6, 4,
-9, 3, 12, 12, 12, 18, 4, 19, 9, 4, 3, 3, 11 across its topics.
+9, 3, 12, 12, 12, 18, 4, 19, 9, 4, 6, 3, 3, 11, 6 across its topics (t1–t20, from the table above).
 
 
 **⚠️ House prints NO explanation box and NO figure in chapters 1, 2 or 3** — but that is a property of
