@@ -11788,3 +11788,66 @@ written); ch.16 "Pediatric ophthalmology" opens at book p.102.
   wrong nowhere; the "Page As" figure was correct this time.
 - GG now **880** = topics 1–20 + EE1 + EE2; **201 remain** (EE3 30 · EE4 20 · EE5 20 · EE6 Photos 35 ·
   Tutorial 27 · Final 69). Next: EE3 book pp.141–144 (+1 past), renders READY `ee3\` p-148..153.
+
+## §17v — House ch.16 "Pediatric ophthalmology" merged: 22 shipped + 3 folded = 25 printed, 2026-08-30
+
+- **Source**: `ophthalmology MCQ.pdf` book pp.102–107 (sheets 53–55, A4 landscape 2-up), renders
+  `h16\` p-053..056; p-056 rendered PAST the last question and confirms the ch.17 banner
+  "17. Ocular malignancies" at book p.108 — the banner census holds. Numbering restarts at 1
+  under the ch.16 band; ids `opmcq-c16-*`.
+- **Count**: 25 printed, counted forwards from the banner and backwards from Q25, both passes
+  agree. **0 boxes, 0 figures** — counted page by page, not carried forward. 22 shipped + 3
+  folded = 25, reconciled. Chapter split of the 22: op-ret-vasc 6 · op-onc 3 · op-glauc 3 ·
+  op-conj 3 · op-white 2 · op-squint 2 · op-cat 2 · op-lac 1.
+- **Folds — three, all the FIFTH shape (within-bank cross-chapter EXACT reprint), verified at
+  full resolution against the survivor's staging record**: Q12 → `opmcq-c2-13` (amblyopia
+  most-common-cause, stem + all four options including the misprinted "ambylopia" + key
+  identical) · Q14 → `opmcq-c15-8` (esotropia+amblyopia management, one chapter apart) ·
+  Q22 → `opmcq-c4-4` (6-month-old NLDO with mucus reflux, keys immediate probing). Survivors
+  carry the reprint note + extended `source`; Q12's fold also carried the **bank-vs-book
+  divergence into `opmcq-c2-13`** (book: strabismus ≈ half of amblyopia cases,
+  `ophthalmology.pdf p.205`, vs the key "Anisometropia") and Q22's carried the mucocele
+  fast-track quote (p.210) plus the pointer to the `opmcq-c16-25` tension. Three dangling
+  sibling refs in the draft re-aimed at survivors; folded-id grep over the draft = 0 hits.
+- **Sweep** (`sweep-c16.txt`, 222 lines, read whole): 13 candidates (A=3 C=6 D=1 E=2 F=1),
+  the 3 A-stage = the folds. **The [D] hit is the shared-menu pairing trap again**: Q22 vs
+  `opmcq-c4-3` print near-identical menus with DIFFERENT keys — "mucus" reflux keys immediate
+  probing where c4-3's "purulent" keys massage-then-probing; a pair, never a fold. Rejections
+  with named tokens: Q4 vs `opqb-t16-697` ("optimal time … after delivery" menu vs GG's
+  already-5-weeks-old framing) · Q16 vs `opqb-t16-696` (combo key "A & B" vs single-answer
+  menu) · Q23 vs `opqb-t16-701` ("despite medical therapy") · Q25 vs `opqb-t16-698`/`699`
+  ("no signs of acute infection", "Crigler massage") · Q20 vs `opqb-t16-682` (House's
+  five-option all-of-the-above menu). Self-sweep pairs kept: Q3/Q4 ("29 vs 26 weeks"),
+  Q15/Q16 ("insignifcant").
+- **Back-references — four, every antecedent read off the page and every repaired stem
+  hand-read at the hub against its own key**: Q6→Q5 (findings: leukocoria, strabismus,
+  calcified mass — not "retinoblastoma") · Q8→Q7 (purulent conjunctivitis in a newly-born) ·
+  Q9→Q7/Q8 chain (restates the established organism, Q8's key, without which the treatment
+  question cannot be asked; states nothing of its own key) · Q11→Q10 (ox eye + enlarged
+  cloudy cornea — not "congenital glaucoma"). None answers its own question.
+- **Defective keys, recorded never disputed**: Q13 keys C over a printed, unchosen "All of the
+  above" (book's Prognosis names ONLY treatment timing, p.205) · Q17 keys B "Myopia" the same
+  way (p.209 prints exactly the key) · Q12 bank-vs-book divergence above · Q22-vs-Q25
+  probing-vs-massage tension (mucocele reading, p.210) recorded in both survivor and Q25.
+- **Preserved typos, all quoted in explanations**: Q8 "gonorrhea" (book prints "gonorrhoea" —
+  two misspellings of *gonorrhoeae*) · Q10 "Retionopathy" (repaired, quoted) · Q12 "ambylopia"
+  (in the folded survivor) · Q15 "signifcant" · Q16 "insignifcant" · Q18 "retinoapthy" ·
+  Q17 "successfully-treated".
+- **Agent note**: the transcription agent died on a usage limit and, resumed, drafted Q7–Q12
+  from compressed memory — five entries with invented vignettes/menus. **It caught this
+  itself** by re-reading `house-c16.array.js` and repaired before its audit; the staging
+  record, not recollection, is what shipped. The staging-first discipline is what made the
+  fault catchable.
+- **Gauntlet**: stagecheck 25 staged · 22 drafted · 22 compared, every repair quoted (one
+  parse-killer first — a straight apostrophe from a hub re-aim edit ended a single-quoted
+  string; the file convention is curly '’'). **Splice**: 22 → file holds 1,330. **validate.js**:
+  0 BAD, 0 dead refs, 0 holes, markers 3,139 = 3,117 + 22 exact. **Boot**: 0 console errors,
+  876 rules, 3 media54, q 3,891, 4 modules, 153 chapters, 1,604 sections, 89 cases. Id-prefix
+  parts: opqb 880 · opmcq 450 = 1,330 unique (a first count read 26 short — the regex missed
+  `id: '` with a space; the parts were recounted, not the sum).
+- House now **450** = ch.1–16; **~572 remain** (est. ~1,025 printed − 450 written − 3 c16
+  folds already netted). **Forward fold flags for ch.17, read during the boundary check**:
+  ch.17 Q5/Q6 reprint ch.16 Q5/Q6 VERBATIM (both key C) · ch.17 Q2 reprints Q19 with a fifth
+  option added ("E. Choroidal melanoma" — menu-LENGTHENED reprint, the inverse of the
+  ch.14→ch.15 shape). Next: ch.17 "Ocular malignancies" opens book p.108, renders READY
+  `h17\` p-056..059.

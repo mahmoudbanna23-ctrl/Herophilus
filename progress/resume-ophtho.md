@@ -35,7 +35,7 @@ rather than from memory. The write-up is part of the batch, not a thing that fol
 
 | | |
 |---|---|
-| Questions merged | **1,308** — Grade Gain **880** (topics 1–20 + End Exams 1–2) · House **428** (ch.1–15), **counted by id prefix, not carried forward** (`validate.js` re-run 2026-08-30 post-§17u: 0 BAD, 0 dead refs, 0 holes, 3,117 markers) |
+| Questions merged | **1,330** — Grade Gain **880** (topics 1–20 + End Exams 1–2) · House **450** (ch.1–16), **counted by id prefix, not carried forward** (`validate.js` re-run 2026-08-30 post-§17v: 0 BAD, 0 dead refs, 0 holes, 3,139 markers) |
 | Corpus | **3,770** (3,681 MCQ + 89 cases) · **105 images** |
 | Chapters seeded | **35 of 36** — `op-appear` "Problems of Appearance" is the last empty one |
 | Last `file://` boot | 2026-08-29 post-§17p splice: **0 console errors, 876 rules, 3 `5/4` blocks, 4 modules, 153 chapters, 1,604 sections, 89 cases** |
@@ -68,6 +68,7 @@ and every agent holding work in memory lost everything.
 | **House ch.13 "13. The retina"** | book pp.85–90 (+91 proof) | ✅ **MERGED 2026-08-29** — 27/27, 0 folded, 0 boxes, 0 figures (`ledger.md` §17o) |
 | **GG topic 20 "Drugs and The Eye"** | book pp.127–132 | ✅ **MERGED 2026-08-29** — 40/40, 0 folded, 6 boxes, 0 figures (`ledger.md` §17p) |
 | **House ch.14 "14. Neuro-ophthalmology"** | book pp.91–97 (sheets 47–51) | ✅ **MERGED 2026-08-30** — 28 shipped + **1 folded into `opmcq-c1-4`**, 0 boxes, 0 figures (`ledger.md` §17r) |
+| **House ch.16 "16. Pediatric ophthalmology"** | book pp.102–107 (sheets 53–55) | ✅ **MERGED 2026-08-30** — 22 shipped + **3 folded into `opmcq-c2-13`/`opmcq-c15-8`/`opmcq-c4-4`**, 0 boxes, 0 figures (`ledger.md` §17v) |
 
 **⚠️⚠️ THE ONE RULE BOTH BATCHES ADDED, AND IT HAS NO INSTRUMENT BEHIND IT: A REPAIRED
 BACK-REFERENCE IS A RECONSTRUCTED STEM, AND A RECONSTRUCTED STEM MUST NOT ANSWER ITS OWN QUESTION.**
@@ -103,12 +104,15 @@ under each banner, never compute it.** **Next: End Exam 3, book pp.141–144 (+1
 promised — renders READY in scratchpad `ee3\` (p-148..153 = book 141–146).** Later sections may
 still fold — EE1/EE2's zeros are measured per section, never assumed forward.
 
-**House — ~597 remaining (~1,025 printed − 428 written). ch.15 "Squint" ✅ MERGED 2026-08-30 —
-15 shipped + 2 folded into `opmcq-c14-5`/`opmcq-c14-7` (`ledger.md` §17t — the SIXTH fold shape:
-within-bank cross-chapter reprint with REWORDED stem and a DROPPED fifth option; the §17r flag
-said "verbatim" and was right in substance, wrong in letter), 0 boxes, 0 figures. Ch.14 ✅ §17r
-(28 + 1 folded into `opmcq-c1-4`). Next: ch.16 "Pediatric ophthalmology", opens book p.102, runs
-to p.107 (ch.17 banner at p.108).** ⚠️ **THE BANNER CENSUS GIVES EVERY REMAINING CHAPTER BOUNDARY BEFORE A
+**House — ~572 remaining (~1,025 printed − 450 written − 3 c16 folds netted). ch.16 "Pediatric
+ophthalmology" ✅ MERGED 2026-08-30 — 22 shipped + 3 folded into `opmcq-c2-13`/`opmcq-c15-8`/
+`opmcq-c4-4` (`ledger.md` §17v — all three the FIFTH shape, within-bank cross-chapter EXACT
+reprint; the [D] shared-menu-different-key trap fired again, Q22 "mucus" vs c4-3 "purulent" —
+a pair, never a fold), 0 boxes, 0 figures. Ch.15 ✅ §17t (15 + 2 folded, SIXTH shape). Ch.14 ✅
+§17r (28 + 1 folded). Next: ch.17 "Ocular malignancies", opens book p.108, renders READY in
+scratchpad `h17\` p-056..059. ⚠️ **CH.17 CARRIES THREE KNOWN FOLD CANDIDATES read during the
+boundary check**: its Q5/Q6 reprint ch.16 Q5/Q6 verbatim; its Q2 reprints ch.16 Q19 with a
+fifth option ADDED ("E. Choroidal melanoma" — menu-LENGTHENED reprint).** ⚠️ **THE BANNER CENSUS GIVES EVERY REMAINING CHAPTER BOUNDARY BEFORE A
 PAGE IS OPENED**, and it has now held three times running (ch.10, ch.11, ch.12). It lives in the
 header of `house-c9.array.js`: banners on half-pages
 `3L 4L 10L 13R 16R 20L 23R 26R 29R 33L 36L 39L 42L 44R 47R 51L 53L 56L 58L 61L 66L 72L 78R 80L 82R 112L 118R`,
@@ -190,7 +194,8 @@ launch.
 | **13** | **The retina** | **27** | 27 | 0 | 0 | ✅ 2026-08-29 — count is a READ count, nothing outside corroborates it (`ledger.md` §17o) |
 | **14** | **Neuro-ophthalmology** | **29** | 28 | **1** | 0 | ✅ 2026-08-30 — fold into `opmcq-c1-4` (`ledger.md` §17r) |
 | **15** | **Squint** | **17** | 15 | **2** | 0 | ✅ 2026-08-30 — folds into `opmcq-c14-5`/`c14-7`, sixth fold shape (`ledger.md` §17t) |
-| 16–20+ | — | ~587 | — | — | — | not started — ch.16 opens book p.102 |
+| **16** | **Pediatric ophthalmology** | **25** | 22 | **3** | 0 | ✅ 2026-08-30 — folds into `opmcq-c2-13`/`c15-8`/`c4-4`, all fifth shape (`ledger.md` §17v) |
+| 17–20+ | — | ~572 | — | — | — | not started — ch.17 opens book p.108, renders READY `h17\` |
 
 **⚠️ THIRTEEN CHAPTERS IN, HOUSE HAS PRINTED ZERO EXPLANATION BOXES AND ZERO FIGURES.** That is now a
 strong pattern and still **a property of the PAGE, counted each time, never carried forward** — every
