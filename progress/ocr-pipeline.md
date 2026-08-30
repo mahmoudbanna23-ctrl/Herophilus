@@ -40,10 +40,18 @@ figure pages stay visual. The subagent brief changes from "read the rendered pag
 "here is the OCR text of Q<n>–Q<m>; transcribe from it; the image is available at <path> ONLY
 if something looks wrong — say so when you reach for it."
 
-## Not done yet (first Herophilus session to touch banks does this)
-- [ ] User runs `7-install-ocr.bat` (Desktop) — verify `tesseract --version` prints 5.x
-- [ ] 300 DPI render + TSV for one already-transcribed range; measure OCR accuracy against
-      the shipped questions (ground truth exists!) before trusting the gate on new pages
-- [ ] Write the gate + block parser (~200 lines, plain Node/Python, lives in `tools\` or
-      scratchpad per project convention)
-- [ ] Update `progress\briefs\` bank brief template with the text-first flow
+## Status (2026-08-30)
+- [x] Tesseract verified: v5.4.0 at `C:\Program Files\Tesseract-OCR\tesseract.exe`
+- [x] **Calibration done — `progress\ledger.md` §17q.** 43 shipped questions (GG t16 portrait +
+      House c12 landscape 2-up): **0 clinically-material stem/option errors, House keys 20/20.**
+      ⚠️ **But five GG key letters were ABSENT from the TSV at ~96 surrounding confidence** —
+      confidence cannot see a dropped key letter; **the §5 halt-loudly block grammar is
+      load-bearing for key blocks.** Candidate gate: per-block mean conf ≥ 88 AND structural
+      parse passes. minConf is useless (zero-edit blocks carry minConf 1–20 from stray marks).
+      Untested classes: decimals/units (none in range), word-box figure detection.
+- [ ] Gate + block parser → free-lane brief written (`progress\briefs\ocr-gate-tooling-brief.md`,
+      content-free); user hands it to OpenCode; hub reviews the diff and tests against the
+      calibration TSVs before landing in `tools\`
+- [ ] Sama debate round: attack brief `progress\briefs\ocr-gate-debate-brief.md` → user pastes
+      to ChatGPT; **the gate reads no NEW page before the verdict returns**
+- [ ] Update `progress\briefs\ophtho-bank-brief.md` with the text-first flow (after the verdict)

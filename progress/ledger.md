@@ -11558,3 +11558,61 @@ built from partial memory, which is worse than none. `gg-t20.array.js` carries a
 grounding map (which book page pays for which question) as a partial substitute.
 **`content\ophtho\book\ch20-drugs.txt` is an open caching debt** — the first in this module, and it
 breaks the standing rule that a page is rendered and read once, ever.
+
+---
+
+## §17q — OCR gate calibration against shipped ground truth (2026-08-30)
+
+Per `progress\ocr-pipeline.md` TODO item 2: 300 DPI grayscale renders + Tesseract 5.4.0 TSV over
+two already-shipped ranges, compared to the shipped questions. GG t16 = PDF pp.116–120 (book
+109–113, 23 q, 1 figure) · House c12 = sheets 42–44 (book 80–84, 20 q, the A4-landscape-2-up
+named failure class). Harness: `<scratchpad>\oph\ocr-cal.js` — token-level approximate substring
+alignment of each shipped stem+options against the bank's TSV word stream; per-question WER,
+matched-window mean/min confidence, mismatch list read by hand. Full output:
+`<scratchpad>\ocr-cal\report.txt`.
+
+**Stems and options: 0 clinically-material OCR errors in 43/43 questions.** Every non-zero WER
+was classified by hand and none was the engine misreading print:
+
+- The nine worst WERs (0.71 → 0.31) are **exactly the repaired back-references** —
+  `opqb-t16-691/693/695/696/698/699`, `opmcq-c12-2/3/5/6/8/9` — whose shipped stems were
+  deliberately reconstructed past the printed "In the previous case". The harness measures
+  OCR-vs-SHIPPED, not OCR-vs-PRINT, and these stems differ from print on purpose.
+- Everything else: shipped `**bold**` markers riding inside tokens · shared-option-menu window
+  boundaries (options printed once for several questions) · unicode apostrophe variants
+  (`'` vs `’`) · page furniture inside the aligned window (`25 OPHTHALMOLOGY MCQS 2026` header,
+  `CC.`) · print's `&` expanded to `and` in transcription · one hyphenation
+  (`acutely-diminished`).
+- Both suspects that could have been real OCR errors resolved AGAINST the shipped text and FOR
+  the OCR: the print says **"edematous &"** (t16-685 shipped anglicised it to "oedematous and")
+  and c12-11's shipped stem condensed the printed clause. **In both, Tesseract read the print
+  faithfully.**
+
+**House inline answer letters: 20/20 exact** against shipped keys (D C C D A D C D D C D B C A
+E B B E D C).
+
+**⚠️ THE ONE REAL LEAK, AND CONFIDENCE CANNOT SEE IT: five GG key letters on p-118 are ABSENT
+from the TSV entirely.** Five consecutive `Correct Answer:` items (TSV rows 349–362) have no
+letter word after them at all — not low-confidence, *missing* — while every surrounding word
+sits at ~96. A mean-confidence gate scores that block clean. **The catch is structural, not
+statistical**: `Answer:` followed by anything but a single letter A–E is a malformed block, which
+is precisely what ocr-pipeline.md §5's halt-loudly parser exists for. **The parser's block
+grammar is load-bearing for keys; confidence alone must never gate a key block.**
+
+**Confidence numbers**: avg per-block mean confidence GG 93.8 · House 95.0. Every block with
+mean ≥ 85 had zero true OCR content errors; the low-mean blocks (85.7, 87.3, 87.8, 89.1) were
+all zero-edit or back-reference cases — the depressed mean came from figure/furniture words
+inside the window, not misread content. **minConf is useless as a gate** (three zero-edit
+questions carry minConf 1.0, 11.3, 20.1 from stray marks). Candidate gate: **per-block mean
+confidence ≥ 88 AND the structural parse passes** (label sequence complete, key letter present,
+question number read not computed); figures still go visual; crops still LOOKED at.
+
+**Untested classes, said plainly**: decimals/units (this range prints none — the class the
+pipeline is paranoid about has no calibration data yet) and TSV word-box figure detection
+(t16-691's figure was already cropped; inversion untested). Both go to the debate brief as open
+holes, not as cleared.
+
+**Surprise worth recording**: House's landscape 2-up — the layout ocr-pipeline.md flagged as
+the named Tesseract failure class — OCR'd *better* than GG portrait (95.0 vs 93.8 mean, 20/20
+keys). The expected-worst layout is not the risk; the styled key letters in GG's answer blocks
+are.

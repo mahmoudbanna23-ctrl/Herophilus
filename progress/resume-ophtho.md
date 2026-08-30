@@ -16,6 +16,15 @@ already-shipped questions (GG t16 / House c12 as ground truth) and **touches no 
 user's sama debate round returns a verdict.** Content standards, fold discipline and citations are
 unchanged — only the reading mechanism.
 
+**✅ CALIBRATION DONE 2026-08-30 — `ledger.md` §17q.** 43/43 shipped questions: **0
+clinically-material stem/option OCR errors; House keys 20/20 exact.** ⚠️ **The one real leak: five
+GG key letters ABSENT from the TSV at ~96 surrounding confidence — confidence cannot see a dropped
+word; the halt-loudly block grammar is what guards key blocks.** Candidate gate: mean conf ≥ 88 AND
+structural parse. Untested: decimals/units, word-box figure detection. **Two briefs written and
+waiting on the user**: `briefs\ocr-gate-tooling-brief.md` (→ OpenCode, content-free) and
+`briefs\ocr-gate-debate-brief.md` (→ paste to ChatGPT). **House ch.14 may run on the classic visual
+flow meanwhile — its landscape layout was going to be part-visual anyway.**
+
 **⚠️⚠️ THIS FILE WAS FOUR DAYS AND ELEVEN BATCHES STALE WHEN IT WAS NEXT READ.** It described the
 module at 764 questions while the data file held 1,099. Nothing was lost — every batch validated and
 booted at merge time — but the two files this project resumes from were both describing a state that
