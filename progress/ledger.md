@@ -11616,3 +11616,49 @@ holes, not as cleared.
 the named Tesseract failure class — OCR'd *better* than GG portrait (95.0 vs 93.8 mean, 20/20
 keys). The expected-worst layout is not the risk; the styled key letters in GG's answer blocks
 are.
+
+## §17r — House ch.14 "Neuro-ophthalmology" — 28 shipped, 1 folded (2026-08-30)
+
+**Book pp.91–97 (sheets 47–51 rendered, one past the last answered page), printed count 29**,
+banner "14. Neuro-ophthalmology" confirmed at book p.91; ch.15 "Squint" opens p.98. Classic
+150 DPI visual flow (the OCR gate reads no NEW page before the debate verdict — §17q). Zero
+printed explanation boxes, zero figures. Written 29 + folded 1 = printed 29 reconciled.
+
+**The fold: opmcq-c14-1 → opmcq-c1-4** — House reprints Ch.1 Q4 verbatim-in-substance as
+Ch.14 Q1 (same four options, same order, same key B "Left neck"; stem lightly reworded:
+"smaller than the right" vs "smaller than the right pupil"). Sweep scored it [B] option-set
++ key identical, E 1.00 / F 1.00 — the highest-confidence fold this module has produced.
+Fifth fold shape variant: **cross-CHAPTER within-bank** (all prior folds were within-topic).
+Citation folded into opmcq-c1-4 source; no other entry referenced the folded id (boundary
+grep, zero hits); draft header re-counted from disk. No marker consequence — House prints no
+boxes anywhere, both printings carry authored markers.
+
+**Sweep**: 16 candidates (B=1 C=7 E=1 F=7) + per-entry E/F for all 29 read in full (the
+first run was read only from tail -60 — the head with c14-1..16 was truncated, and the one
+real fold sat in it; full output re-captured to a file before deciding anything). Every
+rejection carries its token: c14-28 vs t14-619 (option 4 "Pharmacologic miosis" vs "Pontine
+hemorrhage"), c14-3 vs t14-612 ("jaw claudication" arteritic vs painless NAION), c14-15 vs
+c1-17 (disc "swelling" vs "normal"), c14-16 vs t14-582 ("secondary" vs "primary"), c14-19
+vs t14-625 ("bilateral"), c14-25 vs c1-51 ("seen in" vs "meant by"), c14-5/7 vs t15-667 and
+c14-14/22 vs t14-629 and c14-23/c14-11/c14-27 (keys differ — shared menus pair, never merge).
+Self-sweep: c14-9↔10 is the back-reference pair; c14-14↔22 differ on superior/inferior vs
+right/left; c14-24 restates the c14-9 vignette but asks "investigation" not "cause" (disjoint
+options) — the self-sweep did NOT flag 9↔24, found only by eye scanning the stems.
+
+**Back-references hand-read against antecedents** (Q6→Q5, Q8→Q7, Q10→Q9): each restates
+FINDINGS only, none names its antecedent key or its own. Q24 restates the Q9 vignette in
+full itself — not a back-reference, no repair.
+
+**Stagecheck**: 29/29 compared, 3 option diffs — all three are recorded deliberate typo
+corrections ("trotuosity"→tortuosity, "ouside"→outside, "Cerebra"→Cerebral), each printed
+form quoted in source (two also in the explanation). Zero transcription drift.
+
+**Defects recorded, keys never disputed**: Q5/Q7 print options A and D identically ("Left
+abducent palsy" twice); Q18 key contradicts both sources (kept as printed, L22 sl.3–4 +
+ophthalmology.pdf p.179 quoted in the entry). **Future fold flagged: ch.15 Q2 = ch.14 Q5 and
+ch.15 Q3 = ch.14 Q7, verbatim, same keys — fold when ch.15 is transcribed.**
+
+**Post-splice**: validate 0 BAD, 0 dead refs, ophtho 1,237 (opqb 824 · opmcq 413 by id
+prefix, parts counted), markers 3,046 = 3,018 + 28 exact, corpus 3,709 q + 89 cases. Boot
+PROBE: 0 console errors, 876 rules, 3 5/4 blocks, 4 modules, 153 chapters, 1,604 sections.
+House remaining: ~632 (~1,025 printed − 413 written, estimate).
