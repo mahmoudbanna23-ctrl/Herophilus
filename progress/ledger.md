@@ -11662,3 +11662,43 @@ ch.15 Q3 = ch.14 Q7, verbatim, same keys — fold when ch.15 is transcribed.**
 prefix, parts counted), markers 3,046 = 3,018 + 28 exact, corpus 3,709 q + 89 cases. Boot
 PROBE: 0 console errors, 876 rules, 3 5/4 blocks, 4 modules, 153 chapters, 1,604 sections.
 House remaining: ~632 (~1,025 printed − 413 written, estimate).
+
+## §17s — GG topic 21 "End Exam 1" (2026-08-30): 29 questions, zero folds in a past-paper
+section, and the numbering restart the resume block predicted
+
+**29 printed = 29 promised** — the contents count's tenth consecutive exact hit. Book
+pp.133–135 questions (9+11+9), p.136 all 29 keys ("Page As" told the truth this time);
+pp.137–138 read to prove the boundary (End Exam 2 starts at p.137). **Numbering RESTARTED
+at Q1** after t20's Q830 — read off the banner, not computed; ids `opqb-t21-1…29`. Zero
+printed boxes → 29 authored markers, delta predicted = observed. Zero figures, zero
+back-references.
+
+**The expected folds did not exist — and the zero has a reason.** 26 sweep candidates
+(A=0 B=1 C=6 D=1 E=4 F=14), every one rejected with a named token: the [B] identical
+menu + key "Elevation" pairs **thyroid eye disease** against **blow-out fracture**
+(t18-754); the F 1.00 pairs "(III) palsy, muscle **spared**" against tennis-ball
+**entrapment** (t3-130 — same word-bag of muscle names, different question and key); the
+[D] different-key hit pairs **congenital glaucoma** against **presbyopia** on the shared
+refractive-error menu (opmcq-c2-5). This End Exam *rewords* the teaching topics tersely
+("In thyroid eye disease, what is the most commonly limited eye movement?") rather than
+reprinting them — the recycling is thematic, not typographic. Self-sweep 0; the Q3/Q16
+presbyopia twins differ by two replaced distractors, so both stand per the
+options-replaced rule.
+
+**Keys noted, never disputed:** Q15 keys OCT for NPDR imaging where FFA sits on the
+book's own p.241 table; Q20 keys IV antibiotics for the tear-drop sign where `L25` sl.24
+prints "Systemic antibiotics" (route is the bank's). Ten outside-knowledge tags, each a
+filled gap (pinhole optics taught nowhere in the caches; CRAO ocular massage/IV mannitol
+— `L31,32`'s management slides are blank, recorded).
+
+**One agent near-miss caught by the agent itself:** it initially quoted a cache
+transcriber's annotation as if it were slide text, and repaired it before returning.
+**And one broken agent probe:** the ch.15 agent (running concurrently) reported exemplar
+`opqb-t3-116` "does not exist in the corpus, verified by search" — it exists, 3 mentions;
+*the agent that read the source is a prior, not a verdict* fired its second time.
+
+**Post-splice**: stagecheck 29/29 clean · validate 0 BAD, 0 dead refs, ophtho **1,266**
+(opqb **853** · opmcq 413 by prefix, parts counted), markers **3,075** = 3,046 + 29
+exact, corpus 3,827 incl. cases. Boot PROBE: 0 console errors, 876 rules, 3 5/4 blocks,
+4 modules, 153 chapters, 1,604 sections, 89 cases. GG remaining: **228** (EE2–5 97 ·
+EE6 Photos 35 · Tutorial 27 · Final 69).
