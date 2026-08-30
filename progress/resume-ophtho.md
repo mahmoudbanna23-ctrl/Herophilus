@@ -101,7 +101,11 @@ never just the total.**
 rather than reprint — twice running now; every reject named its token; back-reference
 `opqb-t22-7` hand-read clean). **Numbering RESTARTS at Q1 per exam section — read the number
 under each banner, never compute it.** **Next: End Exam 3, book pp.141–144 (+1 past), 30
-promised — renders READY in scratchpad `ee3\` (p-148..153 = book 141–146).** Later sections may
+promised — renders READY in scratchpad `ee3\` (p-148..153 = book 141–146).**
+⚠️ **The staged `ee3\` and `h17\` renders live in the DEAD session's scratchpad** (verified on
+disk 2026-08-30): `C:\Users\Alfa388\AppData\Local\Temp\claude\D--claude-os-Medical-school-Herophilus\fa979a62-cd4b-409d-8022-8bf772622092\scratchpad\` —
+use them from there, or re-render (cheap: `pdftoppm -png -r 150`, GG PDF = book + 7; House
+sheets 56–57 for ch.17). Later sections may
 still fold — EE1/EE2's zeros are measured per section, never assumed forward.
 
 **House — ~572 remaining (~1,025 printed − 450 written − 3 c16 folds netted). ch.16 "Pediatric
