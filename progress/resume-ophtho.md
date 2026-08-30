@@ -35,7 +35,7 @@ rather than from memory. The write-up is part of the batch, not a thing that fol
 
 | | |
 |---|---|
-| Questions merged | **1,281** — Grade Gain **853** (topics 1–20 + End Exam 1) · House **428** (ch.1–15), **counted by id prefix, not carried forward** (`validate.js` re-run 2026-08-30 post-§17t: 0 BAD, 0 dead refs, 0 holes, 3,090 markers) |
+| Questions merged | **1,308** — Grade Gain **880** (topics 1–20 + End Exams 1–2) · House **428** (ch.1–15), **counted by id prefix, not carried forward** (`validate.js` re-run 2026-08-30 post-§17u: 0 BAD, 0 dead refs, 0 holes, 3,117 markers) |
 | Corpus | **3,770** (3,681 MCQ + 89 cases) · **105 images** |
 | Chapters seeded | **35 of 36** — `op-appear` "Problems of Appearance" is the last empty one |
 | Last `file://` boot | 2026-08-29 post-§17p splice: **0 console errors, 876 rules, 3 `5/4` blocks, 4 modules, 153 chapters, 1,604 sections, 89 cases** |
@@ -93,14 +93,15 @@ Corrected 2026-08-29 from a direct count and reconciled against the topic tables
 784 written = 790 printed − 6 folded; House 358 written = 362 printed − 4 folded. **Count the split,
 never just the total.**
 
-**Grade Gain — 228 remaining, all of it exam sections:** End Exams 2–5 (97), End Exam 6 Photos
+**Grade Gain — 201 remaining, all of it exam sections:** End Exams 3–5 (70), End Exam 6 Photos
 (35), Tutorial Exam (27), Final Exam (69). Topics 1–20 ✅ COMPLETE at 824 written = 830 printed
-− 6 folded; **End Exam 1 ✅ MERGED 2026-08-30 (§17s) — 29 written = 29 printed, ZERO folds** (the
-End Exam rewords rather than reprints; every reject named its token). **Numbering RESTARTS at Q1
-per exam section — confirmed on the EE1 banner; ids carry `-t21-`ff by contents position, read the
-number under each banner, never compute it.** **Next: End Exam 2, book pp.137–140 (+1 past), 27
-promised — renders READY in scratchpad `ee2\` (p-144..149 = book 137–142).** Past-paper sections:
-expect real folds, sweep matters most here (EE1's zero is measured, not assumed).
+− 6 folded; **End Exam 1 ✅ §17s (29 = 29, zero folds) · End Exam 2 ✅ MERGED 2026-08-30 (§17u) —
+27 written = 27 printed (eleventh exact contents hit), ZERO folds again** (the End Exams reword
+rather than reprint — twice running now; every reject named its token; back-reference
+`opqb-t22-7` hand-read clean). **Numbering RESTARTS at Q1 per exam section — read the number
+under each banner, never compute it.** **Next: End Exam 3, book pp.141–144 (+1 past), 30
+promised — renders READY in scratchpad `ee3\` (p-148..153 = book 141–146).** Later sections may
+still fold — EE1/EE2's zeros are measured per section, never assumed forward.
 
 **House — ~597 remaining (~1,025 printed − 428 written). ch.15 "Squint" ✅ MERGED 2026-08-30 —
 15 shipped + 2 folded into `opmcq-c14-5`/`opmcq-c14-7` (`ledger.md` §17t — the SIXTH fold shape:
@@ -167,7 +168,8 @@ launch.
 | 19 Systemic Diseases | 36 | **36** (Q755–790) | **35** | **1** | 11 | ✅ 2026-08-25 |
 | 20 Drugs and The Eye | 40 | **40** (Q791–830) | 40 | 0 | 6 | ✅ 2026-08-29 |
 | 21 End Exam 1 | 29 | **29** (restarts at Q1) | 29 | 0 | 0 | ✅ 2026-08-30 |
-| Exam sections ×7 left | 228 | — | — | — | — | EE2 rendered, next |
+| 22 End Exam 2 | 27 | **27** (restarts at Q1) | 27 | 0 | 0 | ✅ 2026-08-30 §17u |
+| Exam sections ×6 left | 201 | — | — | — | — | EE3 rendered, next |
 
 ### Topic-by-topic status, House (Part A)
 

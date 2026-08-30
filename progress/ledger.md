@@ -11752,3 +11752,39 @@ opmcq **428** by prefix, parts counted) · markers **3,090** = 3,075 + 15 exact 
 3,842 incl. cases. Boot PROBE: 0 console errors, 876 rules, 3 5/4 blocks, 4 modules,
 153 chapters, 1,604 sections, 89 cases. House remaining: **~597** (~1,025 printed − 428
 written); ch.16 "Pediatric ophthalmology" opens at book p.102.
+
+## §17u — GG End Exam 2 merged: 27 = 27 promised (eleventh exact contents hit), zero folds again, 2026-08-30
+
+- **Source**: `ophthalmology qb.pdf` book pp.137–140 (questions 137–139, answers p.140 alone), renders
+  `ee2\` p-144..149; pp.141–142 read in full and are End Exam 3's fresh Q1 — the section closed where
+  the contents said. PDF = book + 7 verified on all six footers. Numbering restarts at Q1, read off
+  the banner; contents position #22 → ids `opqb-t22-1`..`opqb-t22-27`.
+- **Count**: 27 printed = 27 promised — eleventh consecutive exact contents hit. Measured 9+9+9 off
+  the printed numbers per column; the answer page prints exactly 27 keys. **0 boxes → 27 markers**,
+  machine-verified 27 of 27, none in `source`. 0 figures.
+- **Sweep** (`sweep-ee2.txt`, 192 lines, read whole): 9 candidates (C=4 E=2 F=3), **zero folds — the
+  End Exams reword topic questions rather than reprinting, second time running**. Every rejection
+  carries a named token: t22-17 "follicle formation" vs c6-19 "most common external ocular infection" ·
+  t22-23 bare recall vs c3-1 "enophthalmos" vignette · t22-2 "CRVO" vs t19-768 diabetic macula and vs
+  t21-2 "complication" (OCT vs CME keys) · t22-7 "demyelinating" vs t14-597 "Traumatic" · t22-1 vs
+  c5-16 shared-menu trap, keys differ (Diabetic ophthalmoplegia vs Trochlear palsy) · t22-12 "mature
+  cataract/RD" (Ultrasound) vs t13-534 "macular edema" (OCT) · t22-20 "glaucoma field" (Perimetry) vs
+  c1-14 "central field" (Amsler) · t22-24 abstract "Surgical intervention" vs t11-460 concrete
+  "Goniotomy", zero shared options. Self-sweep 0 (within-section Q20/Q26 both key Perimetry with two
+  replaced distractors — both transcribed, stems differ).
+- **Back-reference**: `opqb-t22-7` "In the previous case" — antecedent read (Q6, MRI demyelinating
+  plaques); repaired stem restates the MRI finding only, names no diagnosis, leaks neither its own key
+  nor Q6's. Hand-read at the hub against its antecedent and its key.
+- **Defective/tension keys, recorded never disputed**: Q4 keys "Binocular diplopia" for a tear-drop
+  pupil where `L25` sl.29 prints "Iridodialysis — (UNIOCULAR DIPLOPIA)" — slide quoted, key stays ·
+  Q2 keys OCT where the deck's CRVO follow-up investigation is FA — both set out · Q25 RD-lowers-IOP
+  overlap recorded, key stays B · Q14 key restates the stem's own "severe pain" · Q22 asks "type of
+  retinal break" over a detachment-type menu — wording notes carried.
+- **Stagecheck**: 27/27 compared, options+keys match staging, all repairs quoted. **Splice**: 27 →
+  file holds 1,308. **validate.js**: 0 BAD, 0 dead refs, 0 holes, markers 3,117 = 3,090 + 27 exact.
+  **Boot**: 0 console errors, 876 rules, 3 media54, q 3,869, 4 modules, 153 chapters.
+- **Agent note**: the transcription agent died on a usage limit mid-grounding with NOTHING on disk,
+  and was resumed by SendMessage with its context (page reads) intact — zero re-reads. The brief was
+  wrong nowhere; the "Page As" figure was correct this time.
+- GG now **880** = topics 1–20 + EE1 + EE2; **201 remain** (EE3 30 · EE4 20 · EE5 20 · EE6 Photos 35 ·
+  Tutorial 27 · Final 69). Next: EE3 book pp.141–144 (+1 past), renders READY `ee3\` p-148..153.
