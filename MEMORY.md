@@ -141,8 +141,7 @@ tonight; the 429 rule in their first version was wrong). ✅ ENT CLOSED (`ledger
 
 ## Validation state
 
-- **Corpus 3,982** (2026-08-31 — **measured by loading each array and reading `.length`**, then
-  cross-checked with the tolerant id regex; both agree): ENT **2,322** (2,240 q + 82 c) · **Ophtho
+- **Corpus 3,982** (2026-08-31 — **measured by loading each array and reading `.length`**, cross-checked with the tolerant id regex; both agree): ENT **2,322** (2,240 q + 82 c) · **Ophtho
   1,399** (1,399 q + 0 c; +69 today = 1,330 + 69 — the "1,400" recorded earlier was a slip) ·
   Neuro **180** (173 q + 7 c) · Peds **81**; **109 images**. Keys `ent`, `ophtho`, `pediatrics`,
   `neuropsych`. Options 2–9 coexist. ⚠️ **`grep -c "^  { id:"` UNDERCOUNTS `questions.ophtho.js`**
