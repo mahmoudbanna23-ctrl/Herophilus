@@ -642,3 +642,484 @@ prints a lowercase letter `x` for multiplication where we print the sign; the bo
 `39.5C` with no degree symbol where we print the degree symbol. These are house style applied
 consistently across the whole corpus, recorded here so a later reader does not mistake them for
 fresh faults. **Semantic strings are transcribed exactly; typography follows the corpus.**
+
+## 2026-08-31 — THE COUNT, MEASURED. Peds House ch.4-20 = 312, not ~160.
+
+The inherited "~160" estimate was derived from a density ratio, never measured. It is low by
+roughly 95%. Measured below by three instruments; every disagreement was settled by a visual
+read at 200 dpi, escalated to 400 dpi where a glyph was in doubt.
+
+**Instruments.** (1) count of `Answer:` markers in the OCR text; (2) a sequential numbering walk
+over the same text (find "1." then "2." then "3." … forward-only, immune to the OCR's junk digit
+runs); (3) a subagent reading the rendered half-pages. The two text instruments were validated
+first against three chapters with independently known totals: ch.1 = 31 (31 shipped), ch.2 = 26
+(26 shipped), ch.3 = 24 (contents page).
+
+| ch | title | book pp | count | settled by |
+|---|---|---|---|---|
+| 4 | Haematological disorders | 32-41 | 25 | both agree |
+| 5 | Genetics | 42-48 | 20 | both agree |
+| 6 | Perinatal medicine | 49-53 | 15 | both agree |
+| 7 | Neonatal medicine | 54-61 | 21 | both agree |
+| 8 | Normal development | 62-67 | **21** | visual — marker counter said 20 |
+| 9 | Developmental problems | 68-74 | **19** | visual — numbering walk said 18 |
+| 10 | Nutrition | 75-80 | 15 | both agree |
+| 11 | Gastroenterology | 81-89 | 26 | both agree |
+| 12 | Neurological disorders | 90-100 | 26 | both agree |
+| 13 | Respiratory disorders | 101-110 | **27** | visual — highest printed is 28, Q11 absent |
+| 14 | Diabetes and endocrinology | 111-117 | 16 | both agree |
+| 15 | Allergy | 118-120 | 6 | both agree |
+| 16 | Growth and puberty | 121-125 | **14** | visual — marker counter said 13 |
+| 17 | Pediatric emergencies | 126-134 | 26 | both agree |
+| 18 | Accidents and poisoning | 135-136 | 4 | both agree |
+| 19 | Liver disorders | 137-140 | 9 | both agree |
+| 20 | Malignant disease | 141-148 | 22 | both agree |
+| | **total ch.4-20** | | **312** | |
+
+Bank total = 312 + 81 already shipped (ch.1-3) = **393**.
+
+### Three printing defects in the source. All verified visually, none corrected.
+
+- **⚠️ ch.9 prints "18." TWICE**, on book p.74, on two different questions — Q18 "A 4-year-old
+  boy is referred to his GP by his teacher at nursery…" (key C) and a second item "An 18-month-old
+  baby boy… spastic diplegia…" (key D). The bank prints no Q19. **The printed number is not a
+  unique identifier in ch.9** — id assignment must not derive from it blind. Same trap already on
+  record for the endpoint bank and for ophtho House ch.9.
+- **ch.13 skips Q11 entirely.** Highest printed number is 28; 1-10 and 12-28 each appear once.
+  Confirmed by re-rendering the foot of p.104 and the head of p.105 at 400 dpi: p.104 closes on
+  Q10's "Answer: E." with nothing below but the rule, the folio and bleed-through; p.105 opens on
+  a sharp, unambiguous "12.". A publisher skip, not an OCR failure or a damaged glyph.
+- **ch.13 Q14-Q17 share one five-option menu that lists "Bronchiolitis" twice**, as both A and D.
+  That is how pp.105-107 print it. Transcribe as printed; note it in `explanation`; the `answer`
+  never moves.
+
+### ⚠️ The marker counter is a FLOOR, not a count.
+
+On book p.66 the OCR file `L-034.txt` is only 1,611 characters and holds 3 `Answer:` lines; the
+visual read found 4 (Q15-Q18). One marker was simply dropped. The same happened once in ch.16.
+**Neither text instrument may stand alone.** Where the two agree the figure is safe — they fail
+for independent reasons (a dropped "Answer" string vs a mangled numeral) — but a single instrument
+reporting a total has told you a lower bound. This is the "check the auditor before believing the
+audit" rule paying out for the seventh time.
+
+Two further counters were tried and are NOT usable: "Select one answer only" occurrences (108
+against a true 312 — the phrase is not printed on every question) and option-A line starts (287 —
+loses every question whose menu OCR'd as a run-on). Recorded so nobody rebuilds them.
+
+### Chapter boundaries — all 17 confirmed two ways.
+
+Every banner listed above sits on the contents page's stated page, AND the numbering restarts at
+Q1 there. Gastroenterology (p.81) and Growth and puberty (p.121) did not OCR their banner text at
+all; both were confirmed by the numbering restart plus a visual read of the banner.
+
+### The stop line, and what is past it.
+
+Book p.149 is the "Pediatric surgery end-of-round MCQs" divider. **Book p.150 onward is not MCQ
+format** — numbered short-answer items with the answer printed inline as prose. Out of current
+scope; it is `type:'case'` work if it is ever taken.
+
+### Image load: at least 36 figure references across 27 pages.
+
+28 "opposite figure", 6 "shown in the figure", 2 growth charts. **This is an OCR-derived floor,
+not a count** — a question can print a figure without naming it in the text. Every crop gets
+LOOKED at; this is the dominant cost of the remaining 312.
+
+## 2026-08-31 — House ch.4 "Haematological disorders" STAGED. 25 questions, zero folds.
+
+Verbatim staging: `content\peds\qb-pages\house-ch04-haem.array.js`, 25 entries, re-counted from
+disk after the last edit (`entries=25 holes=0 BAD=0`, `node --check` passes). Sequence 1..25
+complete, no repeat, no gap — unlike ch.9 and ch.13. All ten chapter pages read at 200 dpi plus
+book p.42 as the overrun check: p.42 opens the "Genetics" banner at Q1, so **ch.4 does not
+overrun**. Option counts: 25 x 5. Keys C11 E4 B4 A3 D3.
+
+**Zero explanation boxes**, counted by looking at every answer on all ten pages: each is a bare
+`Answer: X.` line inside the question's own rounded box with nothing printed below it, and there
+are no separate answer pages. Same as ch.1-3. **Every explanation in this chapter is therefore
+authored and carries the marker** — predicted marker delta on splice = +25.
+
+`Select one answer only.` runs Q1-Q6 and then stops dead — printed on no later question. Not
+scattered as it is in ch.3. Recorded in `boiler`, stripped from the drafted stems.
+
+### Two figures, both on book p.34, both in the right-hand third of the box.
+
+- **Q5** blood film photomicrograph — densely packed red cells, wide central pallor. Crop as
+  `q-pd-hd-34a`. Not transcribable as a table: the question turns on cell size and pallor.
+- **Q6** clinical photograph — infant with swollen dorsum and fingers (dactylitis). Crop as
+  `q-pd-hd-34b`. Not transcribable.
+
+No other figure in the chapter. The pedigree diagrams faintly visible on the blank lower half of
+book p.41 are **show-through from the reverse of the leaf** (ch.5's pedigrees) — confirmed against
+L-022, where the same pedigrees appear the right way round. Not printed on p.41.
+
+### Source defects, all transcribed verbatim, none corrected.
+
+- **`Recombinant factor IIIV`** — VIII transposed — is option D of **Q13, Q14 AND Q15**. Three
+  printings, verified at 400 dpi on two of them, so it is the book's own and not a scan artefact.
+- **Q15 contradicts itself**: "Angie is 6 weeks old… At 2 months of age she presents…".
+- **Q1 is a probable defective key.** Stem prints MCV 60 fL and "small red cells" — microcytic,
+  pointing to E. Thalassaemia — but the book prints `Answer: C.` (Hereditary spherocytosis) and
+  the film does not mention spherocytes. **`answer` stays on C.** The discrepancy is a note in
+  `explanation`. Not taken to the user; a defective key is noted, never disputed.
+- Q5 `platelets: 262 × 109/L` (superscript lost, two lines below a correct `11.2 × 10⁹/L`);
+  Q16 `Haematopoesis`; Q22 `Henoch–Schonlein purpura` (no umlaut); Q5 `HB electrophoresis` and
+  `g/dl`; Q21 `Von Willebrand` capitalised where Q7/Q8 print `von Willebrand`; Q24 `39C`;
+  Q17 `caucasian`. Multiplication signs vary within single sentences (`×`, `X`, `x`, `X10⁹/L`).
+  **All kept as printed** — the ch.1 CXR repair is the precedent.
+
+### Duplicate sweep A-F: ZERO folds. Here is how the zero was measured.
+
+25 staged against the whole live corpus of **3,824** loaded entries plus 25x25 self — **95,900
+pairs** scored. Comparator = `norm.js` (tolerance on the word), content-token Dice with a stopword
+list, threshold 0.60.
+
+- **A** exact tight stem: 0. **B** normalised stem within Levenshtein 3: 0.
+- **C** stem Dice: **exactly one pair over threshold** — `ch4-Q11` vs `ch4-Q7` at **0.659**, both
+  within ch.4. **Adjudicated by reading both: not a fold, a deliberate contrast pair.** Q7 is
+  Shlomo, 9 days, Hb 84, **PT 16 / APTT >120**, asked for the *diagnosis*, key Haemophilia A.
+  Q11 is Ahmed, 4 weeks, Hb 122, **PT 36 / APTT 25**, asked for the *treatment*, key Vitamin K.
+  **The coagulation profile is inverted between them** and the interrogative differs. The 0.659
+  is carried entirely by the shared circumcision-bleeding scaffold and the identical lab-bullet
+  template — the boilerplate, not the content. Next highest: 0.533, 0.463, 0.439. Highest
+  cross-chapter pair anywhere: **0.429**, `ch4-Q8` vs `pedhd-renal-8`.
+- **D** identical option menus: four pairs — Q11=Q12, and Q13=Q14=Q15. **A shared menu PAIRS
+  questions, it never folds them.** Q11/Q12 carry different keys (A vs C) and unrelated stems
+  (bleeding after circumcision vs Cypriot infant with absent HbA). Q13/Q14/Q15 carry keys D, E, E
+  over haemophilia, spherocytosis-with-aplastic-crisis, and neonatal jaundice with a falling Hb.
+  Discriminating tokens named in each case.
+- **E** same keyed answer text + stem Dice >=0.45: 0.
+- **F** within-chapter adjacent pairs: top is 0.437 (Q7/Q8, the two coagulation vignettes).
+
+### Chapter assignment for the draft (assigned here, not by the drafter — tie-breaks misfile most)
+
+`haematology` (15): Q1 Q2 Q4 Q5 Q6 Q10 Q12 Q14 Q15 Q16 Q17 Q18 Q19 Q20 Q23
+`haem-bleeding` (8): Q3 Q7 Q8 Q11 Q13 Q21 Q22 Q25
+`malignant` (2): Q9 Q24
+
+### Lecture coverage for ch.4 — measured by grep, not assumed
+
+`44)BM FAILURE.txt` is only **326 words** and `Iron deficiency anemia pdf.txt` **873**, so this
+chapter leans hard on gap-fill. Term-by-term: sickle → `44)BM FAILURE`, `24)Abdominal pain`,
+`53) stroke`, `39)Hematuria`. thalassaemia → `44)BM FAILURE`, `6) Genetically determined
+disease_`, `Iron deficiency anemia pdf`. G6PD and spherocytosis → `44)BM FAILURE`,
+`6) Genetically determined disease_`, `8) COMMON PROBLEMS IN THE TERM NEWBORN`. haemophilia, von
+Willebrand, ITP → `47)Hemorrhagic disorders `. ALL and neutropenia → `48)Leukemias`. parvovirus →
+`infectious diseases causing maculopapular rash`.
+
+### ⚠️ CORRECTION to the paragraph above — two errors, both mine, both caught after the brief shipped
+
+**1. The cache is 64 `.txt` files, not 59.** The 59 came from counting the output of
+`ls content/peds/lectures/ | head -60` without noticing the truncation. Measured
+`ls -1 *.txt | wc -l` → **64**. That number was the denominator of every absence claim in both
+ch.4 drafting briefs. Caught by the draft-A agent; verified here.
+
+**2. The gap map grepped disease names, not the signs and abbreviations the slides actually
+print** — this project's own "grep the SIGN, not just the disease name" rule, fired against the
+brief that quoted it. Re-measured across all 64:
+
+| brief said | truth, measured |
+|---|---|
+| `vitamin K` — 0 hits | the *phrase* is genuinely 0, but `47)Hemorrhagic disorders .txt:707` heads a comparison table `DIC \| Vit K deficiency`, line 296 prints `-Hgic disease of` / `newborn` (line-wrapped in the cache), and `Vitamin deficiency  Rickets.txt:433` gives the whole row — carboxylation of clotting factors, haemorrhagic disease of newborn, prothrombin time, `1 mg IM (once)`. **Q11 is one of the best-sourced entries in the chapter, not a gap-fill.** |
+| `glucose-6` — 0 hits | `G6PD` hits **3** files (`44)BM FAILURE`, `6) Genetically determined disease_`, `8) COMMON PROBLEMS IN THE TERM NEWBORN`); the last spells it `glucose6phosphate` at lines 84 and 285. `39)Hematuria.txt` names **favism** at lines 144 and 149 — absent from the brief's map entirely. |
+| `electrophoresis` — 0 hits | confirmed 0 across all 64. |
+| `portacath` — 0 hits | confirmed 0; nearest is `36)Myocardial diseases.txt:268` "Central venous catheter", wrong context. Q24's device stands as a gap-fill. |
+
+So of the four claimed gaps, **two were false** and one of them sat on the chapter's best-sourced
+question. An absence claim must be measured on the token the source prints, not the token the
+question prints.
+
+## 2026-08-31 — ch.4 drafted, 25/25. Both halves validate; both overshoot the house length band.
+
+Draft-A (Q1–13) and draft-B (Q14–25) both returned `BAD 0` against the staging record: zero stem
+drift, zero option drift, zero key drift, marker final in all 25, marker in no `source`, every
+chapter token resolving against `modules.js`, zero id collisions with the live file. Predicted
+splice: **81 → 106 entries, 81 → 106 markers** (every ch.4 explanation is authored — the chapter
+prints no explanation boxes at all).
+
+### ⚠️ Length: both drafts sit 30–40% above the shipped band, and both agents under-reported it
+
+Measured here with one counter over all three sets (markdown stripped, whitespace split):
+
+| set | n | min | median | mean | max |
+|---|---|---|---|---|---|
+| shipped `questions.peds.js` | 81 | 425 | **500** | 501 | **621** |
+| draft-A | 13 | 610 | 635 | 638 | 676 |
+| draft-B | 12 | 436 | 726 | 693 | 780 |
+
+Draft-A self-reported a mean of 481 and draft-B a mean of 671; neither matches. **An agent's
+self-measured length is not a measurement — re-count from disk with one counter.** The standing
+budget is ~520 w vignette / ~250 w straight recall (user, 2026-08-13), so this is a real drift, not
+a house-style quibble. Sent back for a **words-only** compression pass: ceiling 620, median ≤545,
+no fact, distractor, citation, cross-reference, gap tag or defect note may be dropped.
+
+**Fix forward: the ch.5+ drafting brief must state the band in numbers**, with the shipped median
+and maximum quoted, or every chapter will need this second pass.
+
+### Findings from the drafters that outlive ch.4
+
+- **`cow's milk` in Q17's stem prints a STRAIGHT apostrophe** — the only apostrophe in all 25
+  questions. A first pass smart-quoted it and the byte-comparison caught it. Do not normalise.
+- **`favism` is in the corpus and my gap map missed it** — `39)Hematuria.txt` lines 144 and 149,
+  the only named G6PD trigger anywhere in the 64 files. Q23's tag is now narrowed to Heinz bodies,
+  bite cells and primaquine alone.
+- **Non-accidental injury is well sourced, not a gap** — three lectures name it, `53) stroke.txt`
+  strongest ("a characteristic lesion in nonaccidental injury caused by shaking or direct trauma",
+  plus "Retinal haemorrhages are typical of shaking injury"). Only the safeguarding feature list
+  and the spiral-fracture biomechanics remain tagged on Q25.
+- **A quote can be sourced and still be mis-provenanced**: Q24's "No delay in the administration of
+  antibiotics and supportive therapy" sits in that lecture's **meningitis management** section, not
+  under neutropenia. The entry says so. The principle transfers; the citation does not pretend to.
+- **The sites-of-haematopoiesis slide is an IMAGE** — its text layer holds only the caption, so a
+  grep miss there is a cache limitation, not an absence in the teaching.
+- **⚠️ A mid-run system reminder is now telling subagents to prefer Bash (`sed`, heredocs) over
+  `Write`/`Edit` for file changes.** On this project that reminder is actively dangerous: a quoted
+  heredoc collapses `\\` to `\` and a backtick in a double-quoted bash string is command
+  substitution, and every entry we write contains both. The draft-B agent received it, recognised
+  the conflict, and kept using `Edit`. **Every brief from here must pre-empt it explicitly** — an
+  agent that obeys it will corrupt regexes, paths and chapter ids, and the write will report
+  success either way.
+
+## 2026-08-31 — the two ch.4 crops are cut, and the numeric hunt for them was wrong end to end
+
+`app\assets\q\q-pd-hd-34a.jpg` (823×536, Q5) and `q-pd-hd-34b.jpg` (765×559, Q6) are cut from the
+400 dpi render of book p.34 and **both were viewed in final form** before being accepted.
+
+| file | box on the 2360×3308 render (x0,y0,x1,y1) |
+|---|---|
+| `q-pd-hd-34a.jpg` | 1328, 332, 2151, 868 |
+| `q-pd-hd-34b.jpg` | 1379, 1926, 2144, 2485 |
+
+### ⚠️ What the numbers said, and what was actually there
+
+I spent a long stretch trying to split a single "non-white block" at rows 1894–2502 into two
+figures, and reported no interior seam. **There was no seam because the block is ONE figure —
+Q6's photograph, entire.** Every band I measured was a part of it:
+
+| I called it | it actually is |
+|---|---|
+| rows 1919–2133, `149,83,105` "pink/magenta, consistent with a stained film" | the baby's **magenta top** |
+| rows 2217–2499, `192,171,142` "skin tones" | the **bedsheet and a yellow toy** — the baby's skin is ~`60,58,58` |
+| the ~84 grey rows between, `137,138,144` | the **dark trousers/leg** crossing the frame |
+
+**Q5's blood film was at rows ~332–868, in the other question box, and my sweep could not see it:
+it is printed pale grey-green, so its chroma (`max−min`) falls under the saturation threshold the
+sweep used.** A colour-based figure finder is blind to a desaturated scan of a stained film — which
+is exactly the kind of figure this bank prints most.
+
+Rules that follow, and they generalise to every remaining chapter:
+
+- **Find figures by ink density, never by chroma.** A saturation test finds clothing and toys and
+  misses the histology.
+- **The page layout is the instrument, not the pixel statistics.** p.34 is the ordinary two-box
+  layout — a rounded blue question box per question, each with its figure in the **top-right**
+  corner, ~1,050 px of white between. Locate the boxes first, then take the figure inside each.
+- **There are TWO concentric blue rules around each figure**: the figure's own frame, and the
+  question box border running past it outside. Cropping to "the non-white region" bakes a box rule
+  into the image. Both final crops sit **inside** the inner frame — **zero pad, not 3 px**, because
+  here any pad is rule.
+- The first cut of `-34b` left a 2 px pale-blue sliver on the right edge. **A numeric bound did not
+  catch it; looking did**, and the right bound moved 2147 → 2144. This is the sixth time on this
+  project that only a look has caught a bad crop.
+
+### `imgAlt` correction sent
+
+Draft-A wrote Q6's alt as "…with the left hand held towards the camera". The hand is not held
+towards the camera — it rests across the flexed knee. Corrected to "Clinical photograph of an
+infant, cropped to the torso and the left hand resting across the flexed knee". **The alt still must
+not name the swelling** — dactylitis is the answer.
+
+## 2026-08-31 — House ch.5 "Genetics" STAGED. 20 questions, zero explanation boxes, zero folds.
+
+`content\peds\qb-pages\house-ch05-genetics.array.js`, `var PEDHD_GEN_STAGED`. Re-validated here
+from disk, independently of the staging agent, and it reproduces every figure exactly:
+
+```
+entries 20  holes 0   BAD 0
+n 1..20, no duplicate, no gap        option-count histogram {"5":20}
+keys {"E":3,"D":6,"B":5,"C":2,"A":4} pages {42:2,43:4,44:2,45:3,46:3,47:4,48:2}
+boiler 11   fig 6   expl 0   note 16
+non-ascii {"U+2019":2,"U+2013":3}    straight apostrophes 0
+```
+
+**Boundaries confirmed visually both ends**: "Genetics" opens p.42 Q1, and p.49 opens a new
+full-width banner "Perinatal medicine" with numbering restarting at Q1. Nothing from Genetics runs
+onto p.49; the lower two-thirds of p.48 is blank. **Zero explanation boxes again** — all 20
+explanations will be authored, so the predicted marker delta on splice is **+20**.
+
+### The count: 20, measured off the printed boxes, not inherited
+
+Counted box by box on the rendered halves: p.42 Q1–2 · p.43 Q3–6 (Q6 stem only) · p.44 Q6
+continuation + Q7–8 · p.45 Q9–11 · p.46 Q12–14 · p.47 Q15–18 · p.48 Q19–20. The prior estimate of
+20 happened to be right, but it was re-measured, not accepted.
+
+⚠️ **The boiler counter would have lost nearly half this chapter.** "Select one answer only." is
+printed on only **11 of 20** — the misses are Q8, Q10 and then a contiguous run Q14–Q20. This is
+the second chapter to fail that counter (ch.4: 108 occurrences against a true 312 bank-wide). It is
+not a counter; stop reaching for it.
+
+### Duplicate sweep A–F — zero folds, and here is why that zero is a zero
+
+Swept 20 staged against a pool of **3,918**: the whole live corpus (peds 81, neuro 173, ENT 2,240,
+ophtho 1,399) **plus the 25 unspliced ch.4 drafts**, 78,050 pairs, content-token Dice with
+stopwords, fold threshold 0.60.
+
+- **A** exact tight stem: 0. **B** normalised stem, Levenshtein-tolerant: 0. **E** same keyed answer
+  + stem Dice ≥0.45: 0.
+- **C**: **nothing at or above 0.60.** Top pair is `ch5-Q10` vs `ch5-Q8` at **0.590** — adjudicated
+  below. Next 0.444, then 0.415. **Highest cross-corpus pair anywhere is 0.286**, which is noise.
+- **D** identical option menu: **one** — `ch5-Q1` = `ch5-Q8`, both the five-inheritance-pattern menu.
+  Different pedigrees, different keys (E vs B). `ch5-Q12` shares four of the five (its D is
+  `X-linked dominant` where Q1/Q8 print `Trinucleotide repeat expansion mutation`), key A.
+  **A shared option menu PAIRS questions, it never folds them.**
+- **F** within-chapter neighbours: top 0.333.
+
+**The Q8/Q10 adjudication.** Q8: *Pakistani* couple, pedigree supplied, two children died under 2,
+one healthy 3-year-old girl, asks **the pattern of inheritance** → key B, autosomal recessive.
+Q10: *Bangladeshi* couple, **gene named (PEX1)**, no pedigree, same family shape, asks **the risk
+that the healthy daughter is a carrier** → key D, 2 in 3. Same scaffold, different data, different
+question, different answer type. A deliberate parallel, not a duplicate.
+
+### ⚠️ Q9 is a back-reference and the deck is shuffled — it must be repaired, and carefully
+
+Q9 prints *"The same couple (in the previous question) tell you that they would like more children.
+What is the risk of them having another affected baby?"*, key C = 1 in 4. **Question order in this
+app is hashed from the id, so Q9 will not appear after Q8 and the reference has no antecedent.**
+
+Precedent exists in this very module — `pedhd-renal-4` restates Johnathan's history into the stem
+and declares it under a *"A note on how this was printed."* heading naming the matching entry, with
+*"nothing else was altered."* Copy that shape.
+
+⚠️⚠️ **The repair must not answer its own question.** Inline Q8's *vignette* (Pakistani couple,
+two children died in the first 2 years, one healthy 3-year-old girl, faulty gene identified and
+relatives tested) and **NOT Q8's answer** — writing "autosomal recessive" into Q9's stem makes
+Q9's key of 1 in 4 a lookup and gives Q8 away at the same time. Hand-read the repaired stem against
+both its antecedent and its own key. **No instrument sees this.**
+
+### Chapter tokens for ch.5 (assigned here, not by the drafter — tie-breaks misfile most)
+
+`genetics` (17): Q1 Q2 Q3 Q4 Q5 Q6 Q7 Q8 Q9 Q10 Q11 Q12 Q13 Q14 Q15 Q16 Q18
+`malignant` (1): Q17 — Down with pallor, lethargy and bruising is a leukaemia *presentation*,
+where Q7 is the Down *association* and stays in `genetics`
+`growth-puberty` (1): Q19 — the vignette is framed as short stature on the 9th centile
+`gastroenterology` (1): Q20 — day-1 vomiting after polyhydramnios
+
+### Source defects, recorded and not corrected
+
+1. **Q13 prints two impossible karyotypes** — `A. 46, XO` and `D. 45, XY`. Options are also
+   unsorted (46, 46, 45, 45, 47). Key E (`47, XXY`) is correct; not disputed.
+2. **Q17 option E `Henoch–Schonlein purpura`** — en dash, **no umlaut**, verified at 6×. Option B
+   is the bare abbreviation `ITP` while every other option is spelled out.
+3. **Q15 `following an uneventful period`** — the qualifying word is missing, and the next sentence
+   separately says `The perinatal period was normal`.
+4. **Q10's options run out of order by magnitude**: `None / 1 in 4 / 1 in 2 / 2 in 3 / 100%`.
+5. **Q6's menu is the chapter's only non-alphabetised one.**
+6. **Q6 straddles the page break** — vignette last on p.43, its final sentence, boiler, options and
+   answer atop p.44. The number "6." is printed once, on p.43.
+7. **Q12's stem names Robert and Elizabeth; the pedigree labels neither.**
+8. **The chapter banner prints only "Genetics" — no chapter number.** The "5" is external.
+9. ⚠️ **Punctuation is the OPPOSITE of ch.4's.** Ch.5 prints **curly** U+2019 in `Gemma's` and
+   `Mark's` and U+2013 en dashes in `Prader–Willi`, `Henoch–Schonlein`, `Russell–Silver`; there is
+   **not one straight apostrophe in the chapter**, where ch.4's single apostrophe was straight.
+   The rule is *reproduce what is printed*, verified per chapter — never carry a previous chapter's
+   character shape forward.
+
+### Figures — six, all on the same page as their stem
+
+Q1 p.42 · Q2 p.42 · Q8 p.44 · Q11 p.45 · Q12 p.46 · Q14 p.46.
+
+⚠️ **The stems all say the figure is "shown in the opposite figure", and not one of them is.**
+That wording is inherited from the original two-column textbook and never resolves to a facing page
+in this printing; every figure sits in a yellow panel immediately right of its own stem column.
+**Do not go looking on the facing page.**
+
+⚠️ **p.42 carries TWO separate pedigree panels**, not one: Q1's clean, and Q2's the same tree with
+a black arrow added pointing at an unshaded generation-III female. Two crops from one page.
+
+## 2026-08-31 — the six ch.5 crops are cut and looked at. Assets 103 → 109.
+
+Cut from **400 dpi sheet renders** (the sheet is **4677 × 3308**, so the halves split near x 2340,
+not 2360 — measure the content bands, never derive them).
+
+| file | q | sheet / page | box (L,T,R,B) | output |
+|---|---|---|---|---|
+| `q-pd-hd-42a.jpg` | Q1 | 22 / p.42 left | 1221, 678, 2148, 1222 | 927×544 |
+| `q-pd-hd-42b.jpg` | Q2 | 22 / p.42 left | 1216, 2003, 2142, 2544 | 926×541 |
+| `q-pd-hd-44a.jpg` | Q8 | 23 / p.44 left | 1215, 2077, 2130, 2537 | 915×460 |
+| `q-pd-hd-45a.jpg` | Q11 | 23 / p.45 **right** | 3465, 1922, 4365, 2238 | 900×316 |
+| `q-pd-hd-46a.jpg` | Q12 | 24 / p.46 left | 1183, 351, 2150, 775 | 967×424 |
+| `q-pd-hd-46b.jpg` | Q14 | 24 / p.46 left | 1528, 2122, 2142, 2899 | 614×777 |
+
+**Two needed re-cutting after a look caught what the numbers missed** — the seventh and eighth times
+on this project that only the eye has caught a bad crop. `44a`: the panel's rounded-corner arc dips
+*inside* the ink bounding box, so the ink bbox itself was wrong and left a blue diagonal in two
+corners. `46b`: the frame's bottom-right arc left a pale-blue wedge. Both re-viewed as 4-corner
+contact sheets at 2×.
+
+⚠️ **"Zero padding" is not a universal rule — it was p.34's geometry, not the bank's.** Here the
+figure sits 10–45 px clear of the panel border on four of six, so a 3 px pad is safe and correct;
+only `44a` was tight enough to force the edge inside the ink bbox. **And there is no inner figure
+frame at all** on this chapter: the "two concentric rules" are the yellow panel's own rounded border
+and the question box border outside it. A numeric pass reported phantom inner-frame peaks; looking
+at a binary ink mask showed they were the top arc of the topmost circle and the bottom rule of the
+lowest square.
+
+### ⚠️ Figure content — this is load-bearing, and the shading IS the answer
+
+Read this from here rather than re-deriving it. Half-shading is always the **left** half.
+
+- **42a (Q1)** — 4 generations, 16 symbols. GI open circle × open square. GII: two married-in
+  spouses plus four sibs — **shaded square**, open circle, **shaded square**, open circle. GIII:
+  left sibship open square, open square, open circle (married to a married-in open square); right
+  sibship **shaded square**, open circle, open circle. GIV: one **shaded square**.
+  ⚠️ **Every shaded symbol is a square; no circle is shaded anywhere; nothing is half-shaded.**
+- **42b (Q2)** — identical tree and identical shading, plus a **solid black arrow** at lower right
+  whose tip touches the lower-left rim of the **middle symbol of the right-hand GIII sibship, an
+  unshaded circle**. That sibship reads shaded square, arrowed open circle, open circle — so
+  "the unshaded GIII female" is ambiguous on its own; it is the **middle** one.
+- **44a (Q8)** — 4 generations, 22 symbols, two founding couples joining in GIII. **Nine symbols are
+  HALF-shaded**; only the GIV circle and the GIV right square are solid. GI: left couple open circle
+  × half-shaded square; right couple half-shaded circle × open square. GII (5): half-shaded circle,
+  open square, half-shaded square | half-shaded square, open circle. GIII (10) includes a
+  half-shaded circle married to a half-shaded square. GIV (3, hanging below that couple):
+  **fully shaded circle**, open square, **fully shaded square**.
+- **45a (Q11)** — 2 generations, 9 symbols. GI: left couple **half-shaded circle × half-shaded
+  square**; **the right-hand GI couple is fully open.** GII: left sibship open circle, open circle,
+  **fully shaded square**, open circle; right sibship one open square. The fourth left-sibship
+  circle is labelled **"Gemma"**, the right open square **"Mark"**, joined by a marriage line.
+- **46a (Q12)** — 3 generations, 14 symbols. GI: **open circle × solid-shaded square** — the
+  founding couple is **not** both shaded. GII (4, no spouses drawn): shaded circle, open circle,
+  open square, shaded circle. GIII (8): shaded circle, shaded square, open circle | open square,
+  open circle | open circle | open circle, shaded square. All shading solid; none half.
+- **46b (Q14)** — colour clinical photograph, portrait, infant supine on a pale sheet, bare chest,
+  head and upper trunk filling the frame, eyes closed, left arm flexed with the hand up beside the
+  head, right arm out to the side. **Not in a yellow panel** — a plain rounded blue frame on white,
+  the one exception in the chapter.
+
+**There are no generation numerals (I, II, III, IV) printed on any of the five pedigrees** — the
+panel interior is blank yellow outside the drawing. Only `45a` carries text.
+
+### `imgAlt` for the six — modality and view only, verified not to answer
+
+```
+42a  Family pedigree chart spanning four generations.
+42b  Family pedigree chart spanning four generations, with a black arrow marking one symbol.
+44a  Family pedigree chart spanning four generations, two family lines joined.
+45a  Family pedigree chart spanning two generations, two symbols labelled with names.
+46a  Family pedigree chart spanning three generations.
+46b  Colour clinical photograph of an infant lying supine, head and upper chest.
+```
+
+⚠️ None of these may gain the words *affected*, *carrier*, *shaded*, *Down*, *trisomy* or any
+inheritance pattern. The shading and the facial features are the answers.
+
+## 2026-08-31 — USER RULING: skip all OSCE content for now
+
+*"Skip all the OSCE related part it it comes in your way for now, If I needed it later I'll tell
+you."* — user, 2026-08-31.
+
+**Deferred, not cut.** If a page, chapter, plan row or lecture cache turns out to be OSCE material:
+skip it, say in the report that it was skipped and why, and carry on with the surrounding non-OSCE
+work. Do not render it, transcribe it, plan for it, or raise it as a question, and do not treat
+skipping it as a scope cut needing approval. Wait to be asked.
+
+Nothing in the current stream is affected — the peds House bank is MCQs throughout, and the
+short-answer section from book p.149 was already out of scope on its own boundary.

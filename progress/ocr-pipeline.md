@@ -1,5 +1,62 @@
 # OCR-gated transcription pipeline — design (2026-08-30, hub session)
 
+## ⚠️ ROUTE CHANGE 2026-08-30 (hub research, user-approved pending ~$4 spend confirmation)
+
+**Mistral OCR Batch API is promoted from escape hatch to PRIMARY route** — $2/1,000 pages
+(mistral.ai/pricing/api), on the existing Mistral account with the API-training opt-out
+already OFF (verified 2026-08-30). ⚠️ CORRECTED 2026-08-31 (pdfinfo count, haiku agent —
+the earlier "~1,900 pages ≈ $3.80" conflated QUESTIONS with pages): the 11 bank PDFs total
+**12,537 pages**; ENT (3,364 pp) is already transcribed; **remaining ≈ 9,100–9,200 pages ≈
+$18–19** — ophtho endpoint 2,442 · neuro 2,190+142 · peds 1,991+1,993+104 · ophtho GG+House
+remainder ~150–300. **User should load ~$20 credit, not $5.** This SUPERSEDES the
+six pending Tesseract-gate changes — do not build them. Comparison (researched 2026-08-30,
+hub session, sonnet agent, sources in workspace-archive if needed): Azure Doc Intelligence
+Read ~$2–3 but new-account setup; Google Doc AI ~$2.85, no ongoing free tier; AWS Textract
+rejected (training opt-out needs AWS Organizations policy, unconfirmed for standalone
+accounts); MinerU/marker local CPU $0 but days of runtime + unverified accuracy; olmOCR
+needs 20GB GPU. No mature purpose-built MCQ extractor exists.
+
+Second confirming sweep 2026-08-31 (sonnet agent, first-hand accounts specifically): the one
+real comparable project (pokusew/testbook-ocr) used PAID Google Cloud Vision + manual
+correction; every free GitHub MCQ extractor requires an existing text layer (no OCR); Anki
+tools run Tesseract underneath; free local vision-OCR (DeepSeek-OCR/olmOCR) needs 7–20GB
+VRAM; no Reddit/HN account of anyone doing this size for free. Verdict: nothing beats the
+~$3.80 batch. Caveat valid for ALL LLM-OCR incl. Mistral: table/number drift is a known risk
+class — the verification pass below is mandatory regardless of engine.
+
+## ⚠️ COST LADDER 2026-08-31 (user ruled ~$19 too much; run pilots IN ORDER before paying)
+
+The ground truth that makes free pilots decisive: **thousands of already-shipped transcribed
+questions.** Every pilot = OCR ~20 pages we already transcribed → compare against shipped
+questions → check the killer failure classes (dropped answer-key letters — Tesseract's
+proven fault — decimals, units, option labels, negations). A pilot passes only if it beats
+the Tesseract calibration record (§ below), judged with the same paranoia.
+
+1. **Pilot A — PaddleOCR (free, PC, unattended).** `pip install paddleocr` (CPU build;
+   Python 3.12 present). Better layout handling than Tesseract on print, same engine class —
+   UNVERIFIED on our scans until piloted. GPU route is dead: RTX 3050 laptop has only
+   4 GB VRAM (measured 2026-08-31), below every local vision-OCR model's floor.
+2. **Pilot B — iPad Apple Vision OCR (free, on-device, no training — passes the data rule).**
+   iPad 10th gen via Shortcuts "Extract Text from Image" on the same 20 rendered pages
+   (user runs it by hand; renders synced over, text synced back with page numbers intact).
+   Clunky at scale — only promote it if Pilot A fails AND B passes clearly.
+3. **Pilot C — Mistral tiling trick (pennies).** Mistral bills per page; composite 4 scanned
+   pages as a 2×2 grid into one billed page → ~$19 becomes ~$5 (~250 EGP total). UNCONFIRMED:
+   needs a tiny paid pilot to verify billing unit + accuracy at reduced size.
+4. **Floor — Mistral per-module, never upfront.** Ophtho endpoint alone 2,442 pp ≈ $4.90
+   (~250 EGP); neuro/peds paid only if reached before their exams.
+
+Rules: pilots run in a fresh Herophilus session as its first task; tooling scripts go to the
+free lanes; page CONTENT never goes to any free-tier cloud service (Paddle and Apple Vision
+are local — fine). A pilot's verdict is written here with numbers, never adjectives.
+
+New flow once an engine passes (any rung): engine reads pages → OCR text → block parser
+(halt-loudly rule unchanged) → Claude subagents transcribe/verify from TEXT; visual read at
+150 DPI only for figure pages and anything flagged. All accuracy paranoia below (drug names,
+decimals, units, option labels, House landscape) still applies to the OCR text —
+verification is reduced, never removed. Everything below is kept for the fallback path and
+the failure-class checklist.
+
 Goal: remove the page IMAGE (~1–2k tokens each) from the request for the large majority of the
 ~1,900 remaining bank pages. OCR text is nearly free; Claude verifies text, not pixels.
 Research provenance: workspace hub session 2026-08-30 (two-agent GitHub/OCR sweep). Nothing here

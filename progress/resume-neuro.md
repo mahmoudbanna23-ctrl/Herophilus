@@ -468,3 +468,61 @@ mixed-style.** Any id regex must be the tolerant form — `/["']?id["']?\s*:\s*[
 
 **Next boundary, already established by the array header and not re-derived:** topic 17
 "Mood Disorders" opens at **Q41** on PDF 77 (book p.72). Offset PDF = book + 5 still holds.
+
+## 2026-08-31 — the neuro bank is rendered (142/142) and mapped; OCR is rate-limited, not exhausted
+
+**All 142 pages rendered** to the session scratchpad at `nb/p-001.png` … `p-142.png`, 200 dpi.
+OCR has produced only 2 of them so far. The blocker is WPS exit 429.
+
+**⚠️ CORRECTION — 429 IS NOT A DAILY QUOTA.** `MEMORY.md` and `tools\wps-ocr-reference.md` both
+record exit 429 as "daily OCR quota exhausted — that is the finding, do not retry". Measured
+directly on 2026-08-31 with a single-page probe (`p-020.png`), the response body is:
+
+    {"type":"error","code":"429","message":"The operation is too frequent, please try again later."}
+
+That is **rate limiting**. The allowance is not gone. The agent's own driver log proves it
+recovered without any wait for a day boundary: five 429s on `p-001` at 18:03:43, a restart at
+18:05:22, then `OK p-001 tries=3`. Two chats are running against the same WPS login today, so the
+account-wide request rate is roughly double what either driver believes it is issuing.
+**The correct response is pacing with backoff, not stopping.** A paced driver is now running.
+Fix the 429 line in `MEMORY.md` and in `tools\wps-ocr-reference.md` at the end-of-run
+consolidation pass — not mid-run, per the parallel-chat rule.
+
+**The structural map is recovered and it is authoritative** — read from the rendered page images,
+not from OCR. Full map in the scratchpad at `nb-anchors.txt`; the load-bearing facts:
+
+- **Bank = Grade Gain.** Cover (PDF 1) prints "QS BANK + GRADE GAIN EDITION". Not House, not
+  endpoint. Confirmed by cover, per the identify-by-the-cover rule.
+- **ONE book page per sheet**, A4 portrait 595x842 pt, two-column text inside each page. This bank
+  is **not** 2-up like the peds House bank — do not carry that arithmetic across.
+- **⚠️⚠️ THE PAGE OFFSET IS NOT GLOBAL.** Neuropsychiatry half: PDF = book + 5 (verified PDF 77 =
+  book 72, PDF 98 = book 93). Neurosurgery half: **PDF = book + 7** (verified PDF 101 = book 94).
+  The cause is two unnumbered neurosurgery contents pages at PDF 99-100. The single global "+5"
+  in `MEMORY.md` is correct only for the in-scope half; applied to the back half it misfiles every
+  citation by two pages.
+- Layout: PDF 1 cover / 2 blank / 3-5 neuropsychiatry contents / **6-98 neuropsychiatry body
+  (book 1-93)** / 99-100 neurosurgery contents, unnumbered / 101-140 neurosurgery body /
+  141 blank / 142 back-cover advert.
+- **In-scope = PDF 6-98. SKIP PDF 99-140 — neurosurgery, out of scope.**
+- **Two independent numbering runs, both continuous ACROSS topics.** Neurology block (topics 01-14,
+  book 1-64, PDF 6-69) starts at Q1. Psychiatry block (topics 15-23, book 65-93, PDF 70-98)
+  **restarts at Q1** and ends at Q165 on book p.93.
+- **Topic 17 Mood Disorders opens at Q41 on PDF 77 / book 72 — ANCHOR CONFIRMED** independently.
+- ⚠️ **The contents page's per-topic counts are unreliable** — the psychiatry counts sum to 157
+  but the block ends at Q165. Same defect shape as every other bank in this project: trust no
+  printed count. The contents also prints book page 14 twice (topics 04 and 05).
+- Answers print as `<n>. Correct Answer: (X)` with an optional `Explanation:` prose block, and
+  **may share a page with the tail of that topic's questions** (questions in the left column,
+  answers in the right) — e.g. PDF 98. Do not assume answers begin on a fresh page.
+- **No OSCE material** in the contents or in any sampled page. (User deferred OSCE 2026-08-31.)
+
+**23 neuropsychiatry topics, book page / printed q-count:** 01 Neurological Sheet 1/22 ·
+02 Localization 4/12 · 03 Ischemic CVS 7/20 · 04 Hemorrhagic CVS 14/7 · 05 Cranial Nerves 14/27 ·
+06 Hemiplegia & Paraplegia 22/30 · 07 Headache 27/22 · 08 Epilepsy 31/36 · 09 Coma 37/22 ·
+10 Movement Disorders 41/23 · 11 Demyelinating 46/16 · 12 Neuromuscular 50/45 ·
+13 CNS Infections 57/20 · 14 Back & Lower Limb Pain 61/23 · 15 Symptomatology & Myths 65/18 ·
+16 Anxiety & Related 68/21 · 17 Mood Disorders 72/22 · 18 Somatic Symptoms 76/11 ·
+19 Child Psychiatry 79/14 · 20 Schizophrenia 82/26 · 21 Dementia & Delirium 86/18 ·
+22 Substance-related & Pharmacology 89/16 · 23 Emergency, Devices & Psychotherapy 92/11.
+**These counts are the contents page's claim, not a measurement** — the sum defect above is proof.
+Count every topic by reading its answered pages, per the standing rule.

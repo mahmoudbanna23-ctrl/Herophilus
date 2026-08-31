@@ -42,7 +42,7 @@ rather than from memory. The write-up is part of the batch, not a thing that fol
 | Git | **262 commits ahead of `origin/design/clepsydra-and-sessions`, UNPUSHED** — 261 measured 2026-08-30 + the §17o/§17p recovery commit. Push needs the user's device-code flow; a plain `git push` hangs forever |
 | §14.5 register | ✅✅ **ZERO open rows, all four modules** |
 | Lecture cache | ✅✅ **all 29 decks read** — the module has no unread deck left |
-| Open caching debt | ⚠️ **`content\ophtho\book\ch20-drugs.txt` does not exist** though book ch.20 pp.254–270 was read in full for topic 20 (§17p) — the verbatim text died with the agent's context; a cache from memory is worse than none. `gg-t20.array.js` carries the page-by-page grounding map as partial substitute |
+| Open caching debt | ✅ **CLOSED 2026-08-31** — `content\ophtho\book\ch20-drugs.txt` rewritten off the renders, 1,354 lines / 68 KB, 18 page sections, verified from disk. Full findings in the "Open debt CLOSED" block at the end of this file. ⚠️ Read that block before writing any glaucoma-class question: the book prints **three incompatible orderings** of the same classes on pp.264 / 265–267 / 268 |
 
 **⚠️⚠️ THE PROTOCOL BELOW STILL HOLDS AND IS NOT NEGOTIABLE.** The hub is the SOLE WRITER of
 `questions.ophtho.js`, `cases.ophtho.js`, `theory.ophtho.js`, this file and every git commit.
@@ -751,3 +751,793 @@ Sequence is a speed decision, not a scope decision. Everything below gets done.
 **⚠️ The exam is approximately early September 2026.** If the calendar runs out before item 4 is
 complete, that is a fact to **report to the user while there is still time to act on it**, not to
 discover at the end.
+
+---
+
+## 2026-08-31 — WPS OCR checkpoint (Chat A). MEASURED, not estimated.
+
+**Verdict: the OCR route is safe for the transcription stage of this bank, and it is the fastest
+thing that has ever been measured on it. It replaces the transcription stage ONLY.**
+
+Ran the two-step pipeline on **GG End Exam 3** (PDF pp.148-153 = book pp.141-146, `PDF = book + 7`
+held on every page) and on a **calibration set of five already-shipped pages** (GG t16, PDF
+pp.116-120 = book pp.109-113, 23 shipped `opqb-t16-*` entries). EE3 alone has no ground truth --
+it is not yet drafted -- so the accuracy number would have been an assertion without the
+calibration set. Exit code **0** on both batches; no 429, quota not reached.
+
+### Number 1 -- how much came through clean
+
+| Set | Measured against | Result |
+|---|---|---|
+| EE3, 30 questions / 120 options | the rendered pages, read by a subagent | **30 of 30 word-perfect**, stems and every option |
+| EE3, 30 answer keys | the printed key list on book p.144, both columns | **30 of 30 correct** |
+| t16 calibration, 23 shipped questions | `questions.ophtho.js` | 23 of 23 located; **91 of 93 options verbatim**; **23 of 23 keys** |
+| t16 stems | `questions.ophtho.js` | 17 of 23 verbatim -- **all six misses are shipped-side, not OCR** |
+
+The six t16 stem misses break down as: **three are the deliberate back-reference repairs**
+(`opqb-t16-693/695/699` restate the antecedent inside the stem, by design) and **three are silent
+normalisations in the shipped text**. Two of those three were taken to the pixels:
+
+- **`opqb-t16-685`** -- the page (book p.109) prints `&` twice and the American **`edematous`**.
+  Shipped text reads `and` and British **`oedematous`**. **The OCR is faithful; the shipped entry
+  is not.**
+- **`opqb-t16-694`** -- the page (book p.110) prints "presents with **white** pupillary reflex" and
+  "**Most likely** diagnosis is:". Shipped text inserts "a" and reads "The most likely".
+  **Again the OCR is faithful.**
+
+⚠️ **This is a finding about the existing corpus, not about OCR.** Content standards say questions
+are transcribed, never authored. Two confirmed silent normalisations on one page pair suggests the
+visual transcription flow has been quietly tidying the source. Not repaired here -- flagged.
+
+### Number 2 -- exactly what the OCR got wrong
+
+**Zero substantive errors across 30 questions, 120 options and 30 keys.** Every defect found is
+cosmetic, and each one is a segmentation hazard rather than a wrong word:
+
+1. **Missing space after punctuation, pervasive** -- `1.Unilateral`, `(CRAO),the`, `punctum,the`,
+   `sac.What`, `astigmatism,light`. No word altered.
+2. **Options merged onto one line**, ~11 places (`B. Sensory squint C.Optic atrophy D.Glaucoma`).
+   Recovered by splitting on the `A.`-`D.` markers.
+3. **`ofthe`** for "of the" (Q19 opt. B) and **`O ra serrata`** for "Ora serrata" (Q23 opt. C).
+   ⚠️ The second one can be misparsed as option letter `O` -- check it at splice time.
+4. **Junk digit runs at page tops** (`83439230`, `122558379561`, `27937615148`), two of them fused
+   to real text: `27937615148End Exam 3`. Strip 4+ digit runs before any header-based split.
+5. **`ASM MinDS` watermark injected mid-column**, inside the question flow, three times.
+6. **Page footer shredded into the last option before a page break** -- `Page 109` came through as
+   `ge 65412028532Pa 109`. Bound the last option on the next question number, never on end-of-block.
+7. No stray CJK characters in 11 pages. No hallucinated text: the engine leaves visible garbage
+   rather than confident fiction, which is what makes it safe here.
+
+**A comparison harness was itself wrong first.** The first splitter anchored on line starts and
+reported 11 of 23 questions "NOT FOUND" -- the OCR wraps the next question number onto the tail of
+the previous option line, so nothing may anchor on a newline. Rewritten stream-based
+(`<scratch>\ocr\cmp2.js`). Check the auditor before believing the audit; it fired again here.
+
+### Number 3 -- is it measurably faster
+
+**Yes, for the transcription stage. Roughly 40x cheaper in tokens and ~12x in wall clock -- but it
+does not touch the other stages, so do not expect the questions/day figure to move 40x.**
+
+| Step | Measured |
+|---|---|
+| `pdftoppm -png -r 200` | **0.497 s/page** (11 pages, 5.47 s) |
+| `wpscli photo2word`, question pages | **3.03 s/page** (EE3, 6 pages, 18.17 s) |
+| `wpscli photo2word`, dense explanation pages | **7.49 s/page** (t16, 5 pages, 37.44 s) |
+| End to end, all 11 pages | **5.05 s/page** |
+
+⚠️ **The reference's 1.29 s/page did not reproduce** -- measured 3.0-7.5 s/page depending on how
+much text the page carries. `tools\wps-ocr-reference.md` should be read as an optimistic floor.
+Even so: **the 773 remaining questions live on roughly 260 pages ~ 22 minutes of machine time.**
+
+Against the visual route, measured in this same session: the audit subagent spent **262 s and
+120k tokens** to read 6 pages visually. The OCR delivered the same text in **18 s and ~3k tokens**.
+That is the transcription stage only -- drafting explanations, chapter filing, the six-stage fold
+sweep, the stagecheck, and every image crop are unchanged. **~304 of the 773 are image questions
+and 132 model-exam items are short-answer; OCR does nothing for either.** The honest claim is that
+OCR removes the cheapest-to-automate stage of a pipeline whose cost is dominated by drafting and
+crops, and it removes it almost completely.
+
+### Confirmed facts for the next batch
+
+- **EE3 prints 30 questions and 30 keys against 30 promised** -- the contents count is now exact
+  **twelve** times running on this bank. Keys: 1B 2B 3C 4A 5B 6B 7C 8B 9A 10D 11A 12B 13A 14B 15B
+  16B 17B 18D 19B 20A 21B 22A 23C 24C 25B 26B 27C 28B 29B 30A.
+- **EE3 carries no figures at all.** Every stem is answerable from text. This section costs no crops.
+- EE3 ends on PDF p.151 (book 144); EE4 begins PDF p.152. **No question tail on the answer page**
+  this time -- what is visible there is reverse-side show-through of EE4 Q6, correctly ignored.
+- ⚠️ **EE4's answer keys were not rendered** -- they fall on **PDF p.154 (book p.147)**. Render it
+  before drafting EE4. `ee3.txt` already carries EE4 Q1-20 from pp.152-153, un-audited.
+- Working files, current session scratchpad `…\e2adb0a0-…\scratchpad\ocr\`: `ee3.txt` · `cal.txt` ·
+  `cmp2.js` (the fixed comparison harness) · rendered PNGs in `ee3\` and `cal\`.
+- `wpscli` resolves at `12.1.0.28032`; re-resolve from `HKCU:\Software\Kingsoft\Office\6.0\Common`
+  after any WPS update.
+- The older `ocr-cal\report.txt` under `…\fa979a62-…\scratchpad\` is the **Tesseract** record
+  (WER 0.48-0.71), the dead ladder -- not comparable to these numbers.
+
+**STOPPED HERE by instruction.** 773 questions are not committed to this route until the user reads
+the three numbers above.
+
+---
+
+## 2026-08-31 — House Part A ends at chapter 20. The remaining ~572 is NOT chapterwise MCQs. (Chat A, MEASURED)
+
+Whole-bank OCR sweep of `ophthalmology MCQ.pdf` sheets 56-126 (61 of 62 pages; sheet 122 deferred,
+see below). Running head read on every sheet.
+
+**The bank has two parts, and the split falls inside sheet 69.**
+
+| Sheets | Book pp. | Running head | What it is |
+|---|---|---|---|
+| 56-69 | 108-135 | `Chapterwise MCQs` | Part A chapters **17, 18, 19, 20** - text MCQs, answers inline |
+| 69-118 | 134-233 | `OSCE (End-of-round E-exams)` | photo questions, ONE continuous numbering |
+| 119-126 | 234-249 | `OSCE (End-of-round E-exams)` | past-paper recall, numbering restarts each page-block |
+
+**Part A remaining = ~116 questions, confirmed two ways.** Highest printed question number per
+chapter: ch.17 **17** - ch.18 **27** - ch.19 **43** - ch.20 **29** = 116. Independently, inline
+`Answer:` lines counted per sheet across 56-69 = **~117**. The two agree.
+
+Chapter banners, quoted as the OCR renders them (junk digit runs are OCR artefacts, not print):
+`17.Ocular malignancies` sheet 56 - `03319218.Ocular trauma` sheet 58 -
+`0-14370619.Ocular manifestations of systemic diseases` sheet 61 - `03211420.Drugs &the eye` sheet 66.
+
+**So the ~572 figure was right in total and wrong in composition.** Only ~116 of it is the
+chapterwise work the last sixteen House batches did. The other ~456 is the OSCE section, and the
+OSCE section is **image questions almost end to end** - sheet after sheet reads
+`What is the diagnosis of the condition shown in the opposite photo?`. The continuous OSCE
+numbering reaches **301 by sheet 118** at a steady ~6 per sheet, then the recall blocks on 119-126
+add roughly 150 more at 20-33 per block.
+
+⚠️ **This raises the module's crop budget far above the ~304 image questions on record.** Nearly the
+whole OSCE section needs a looked-at crop, plus Grade Gain End Exam 6 (Photos, 35). Estimated, not
+counted - the per-question count for sheets 70-126 has NOT been read page by page yet, and the
+`~6 per sheet` rate is inferred from printed numbers, not from counting questions.
+
+**Not yet verified:** that the OSCE section is in scope as MCQs at all. Several recall items print
+`see the OSCE section` and a bare `Answer:PDR` - those may be short-answer, which in this project is
+`type:'case'` in `cases.ophtho.js`, not an MCQ. **Read a page before planning that section.**
+
+### WPS OCR - two exit codes the reference does not carry
+
+- **Exit 3 = the batch timed out**, default ~300 s for the whole batch, NOT a quota failure. A
+  62-page House batch died at page 35 of 62 with `Operation timed out. Use --timeout <seconds>`.
+  **Pass `--timeout 1800` on any batch over ~30 pages.** Pages already converted survive; re-run
+  only the remainder.
+- **Exit 6 = batch completed with per-file failures**; the `batch_completed` JSON line names them.
+- **429 is a RATE limit, not only the daily quota.** One page of 27 failed with
+  `The operation is too frequent, please try again later.` while the other 26 succeeded, and an
+  immediate single-file retry returned 429 again. It is a cooldown. **Two chats sharing the account
+  reach it faster.** Sheet 122 (book pp.240-241) is the one page still un-OCR'd.
+
+### Machine time, measured this session
+
+| Batch | Pages | Render | OCR | s/page OCR |
+|---|---|---|---|---|
+| Book ch.20, dense text | 18 | 14.6 s | 98.6 s | 5.48 |
+| GG sheets 155-183 | 29 | 16.9 s | 86.4 s | 2.98 |
+| House sheets 65-99, landscape two-up | 35 | 56.9 s (62 pp) | 305.9 s | 8.74 |
+
+House two-up sheets carry two book pages each, so 8.74 s/sheet is **4.37 s per book page** - in line
+with the rest. Render is negligible next to OCR everywhere.
+
+### Book chapter 20 - the open caching debt is now rendered and OCR'd
+
+`ophthalmology.pdf` printed pp.**254-270** = PDF pp.**256-272**, 17 pages, and **PDF p.273 came back
+empty** - the one-page-past check confirms chapter 20 runs to the last content page and stops,
+exactly as `content\ophtho\book-map.md` states. OCR text staged at `<scratch>\ocr\ch20.txt`
+(34,273 chars). ⚠️ **The cache is NOT written yet** - OCR is a search index, and every line has to be
+confirmed against the rendered page before `content\ophtho\book\ch20-drugs.txt` exists.
+**SUPERSEDED 2026-08-31 later the same day — the cache now exists, 1,354 lines, written off the
+renders. See the "Open debt CLOSED" block at the end of this file.**
+
+## 2026-08-31 - First OCR-route batch MERGED: GG End Exam 3 + House ch.17. Ophtho 1330 -> 1374. (Chat A)
+
+**44 entries spliced, 3 folded.** GG End Exam 3 = 30 entries `opqb-t23-1`..`-30`, printed 30 against
+30 promised, the two agree. House ch.17 "Ocular malignancies" = 17 transcribed, **3 folded**, 14
+spliced. Zero printed explanation boxes and zero figures in both, so **markers = 44 = entries - 0**,
+measured over the spliced ids themselves.
+
+**Post-splice state, all measured:** `validate.js` **0 BAD, 0 sparse holes, 0 dead backticked refs,
+0 markers in `source`**; ophtho **1374** (1330 + 44 exactly); `file://` boot **0 console errors**,
+876 CSS rules, **3** `max-aspect-ratio:5/4` blocks, 4 modules, 153 chapters, 1,604 sections, 89
+cases. 35/36 ophtho chapters seeded, `op-appear` still the only empty one.
+
+### The three ch.17 folds, and why the two zero counts are zeroes
+
+| Fold | Shape | Survivor |
+|---|---|---|
+| ch.17 Q5 = ch.16 Q5 | **Stage A exact** - stem word-identical, 5 options identical in text AND order, key C both | `opmcq-c16-5` |
+| ch.17 Q6 = ch.16 Q6 | Option set + key identical; the two printings differ by **one function word** ("in THE evaluation" vs "in evaluation"), verified on a 1.9x crop | `opmcq-c16-6` |
+| ch.17 Q2 = ch.16 Q19 | **SEVENTH FOLD SHAPE - distractor-swapped reprint with a lettering gap** | `opmcq-c16-19` |
+
+**⚠️ THE SEVENTH SHAPE, AND MY BRIEF HAD IT WRONG IN BOTH HALVES.** I briefed the agent that ch.17 Q2
+reprints ch.16 Q19 "with a fifth option `E. Choroidal melanoma` ADDED". Reading the page settled that
+**both printings carry four options**; what changed is the **TEXT of the fourth** - "Sebaceous
+carcinoma" at ch.16, "Choroidal melanoma" at ch.17 - and **separately** the ch.17 menu runs
+**A, B, C, E with the letter D skipped**, no blank line, no gap, keyed "Answer: C", verified on a
+2.2x crop. Two independent defects that I had collapsed into one wrong claim. The same wrong claim
+was sitting inside `opmcq-c16-19` as a FORWARD FLAG and **has been corrected in place** and rewritten
+as a fold record. **Folding was still right**: the swapped item is a pure distractor, the key sits
+third in both printings, so the key letter does not move.
+
+**GG End Exam 3 folded ZERO, and here is the measurement.** Sweep over 30 staged against 1,330 held:
+**stage A = 0, stage B = 0, stage D = 0** - no exact reprint, no identical option-set-plus-key, no
+identical menu under a different key anywhere in the module. All 14 candidates were C/E/F partial
+overlaps. ⚠️ **The one alarming score was an artefact**: `[E] stem 1.00` between EE3 Q29 and
+`opmcq-c16-20`. A 1.00 on a **four-word stem** is a token-set collapse, not a match - "The most
+common cause of leukocoria is:" against "Which of the following can cause leukocoria?". The
+discriminating token is **"most common" versus "can"**, and the keys differ (Congenital cataract vs
+All of the above) over different menus. **This is now the third consecutive End Exam section to fold
+zero** (EE1, EE2, EE3) - the GG End Exams reword rather than reprint, measured per section, still
+never assumed forward.
+
+**⚠️ The ch.17 sweep's other 19 candidates are one single artefact: the chapter's master option
+menu.** Five of seventeen questions draw from the same five tumour names, so stages C, D and F fired
+across the whole cluster. Every one was rejected **by name**: Q3 "commonest eyelid malignancy" vs the
+retinoblastoma vignette; Q13 "recurrent chalazia" -> sebaceous carcinoma; and the near-fold pair
+**Q14 vs Q15, whose entire difference is the word "primary"** (primary intraocular malignancy in
+adults = choroidal melanoma; intraocular malignancy in adults = secondaries). A shared menu pairs
+questions; it never folds them.
+
+**⚠️ Cross-bank match NOT taken: ch.17 Q1 vs `opqb-t19-790`.** Same key text (Choroid), same four
+options **reordered** so the key letter differs (C vs B), and the stems are reworded rather than
+reprinted ("most common intraocular site for metastatic tumors" vs "most common site of ocular
+metastasis"). Kept as two entries: no cross-bank fold has ever been taken in this module, and these
+are two independently-written banks testing one fact, not one question printed twice.
+
+### ⚠️ TWO INSTRUMENTS WERE BLIND THIS BATCH - both fixed, both had passed the batch first
+
+1. **`stagecheck.js` passed `house-c17` with a green tick while one repair went unrecorded.** Its
+   check for "every repaired option quotes its printed form" examined only words **LOST** from the
+   printed option, and only words **longer than 3 characters**. `opmcq-c17-12`'s repair **ADDED** a
+   word - the bank prints "Temporal part lower lid", the draft restored the "of" that the source's
+   own option A carries - so nothing was lost, the entry was never examined, and the tick was false.
+   The same two holes meant a draft silently **deleting** a short word - "not", "all", "no" - would
+   also have passed, and dropping "not" inverts an option. ⚠️ **The first fix did not work either**:
+   testing every changed word in both directions still passed, because the added word was "of" and
+   `includes("of")` is true of essentially any English sentence. **A short token can only be
+   evidenced by the printed PHRASE.** Now: long edits are quoted word-wise, short-token-only edits
+   require the printed phrase. It catches `c17-12`, and `gg-ee3` still passes clean over 30 entries,
+   so it is not a noise generator. The `c17-12` explanation now quotes the printed form.
+2. **`qcheck.js` anchored the authored-marker regex to the END of the explanation** - the exact fault
+   `validate.js` documents in its own header, since a legitimate `*(Secondary chapter: ...)*` note
+   follows the marker in some entries. It read 17/17 on ch.17 (which had no trailing notes) so
+   nothing was missed, but it was a guard waiting to fail. Now tests containment.
+
+⚠️ **`stagecheck.js` remains blind to one thing by design**: it converts a printed key LETTER to an
+index as A=0, so any menu with a lettering gap reports a KEY MISMATCH. `opmcq-c17-9` (menu printed
+B-E with no A, key D = the **third** printed line = `answer:2`) fires this every run. It flags
+loudly rather than passing silently, so a human adjudicates - but do not "fix" that entry.
+
+⚠️ **THE CORPUS MARKER DELTA IS NO LONGER A VALID BATCH CHECK WHILE CHAT B IS LIVE.** Corpus markers
+went 3,139 -> 3,199, a delta of **60** against my 44 new entries. The extra 16 are Chat B's: neuro
+went 151 -> 173 questions in the same window. **Measure markers over your own spliced ids**, never as
+a whole-corpus difference, until the parallel chats are done.
+
+### Remaining, unchanged in total
+
+GG **171** (EE4 20 · EE5 20 · EE6 Photos 35 · Tutorial 27 · Final 69) · House **~558** (~116 of it
+chapterwise: ch.18 27 numbers/26 questions, ch.19 43, ch.20 29 - minus ch.18's under way; the rest is
+the OSCE section). House ch.18 "Ocular trauma" is drafting now.
+
+---
+
+## House ch.18 "Ocular trauma" — MERGED 2026-08-31
+
+Book pp.**112–117** (sheets p-058…p-060). Numbered **1–27, but 26 questions exist**: the book skips
+Q11 outright — no blank, no gap in the layout, the numbering simply jumps from Q10 to Q12. **25
+spliced**, because Q14 folded.
+
+Post-splice: ophtho **1,399**, corpus **3,893**. `validate.js` 0 BAD · 0 dead refs · 0 sparse holes ·
+0 control bytes. Boot from `file://`: **0 console errors, 876 CSS rules, 3 `max-aspect-ratio:5/4`
+blocks, 4 modules, 153 chapters, 1,604 sections, 89 cases.**
+
+### The fold — no new shape; this is the cross-chapter exact reprint again
+
+`opmcq-c18-14` → **`opmcq-c6-27`**. Identical stem down to the printed defect "Digitally- measured"
+(hyphen closed up, space after) that c6-27's `source` already recorded, identical options in the same
+order, identical key. Within-bank, so **no `alsoIn`** — the ch.18 citation was folded into c6-27's
+`source`, with a note that ocular trauma is its secondary chapter (it is filed under `op-conj` for
+the subconjunctival haemorrhage that carries the stem). Three explanations still cited the folded id
+in backticks and were repointed at `opmcq-c6-27`.
+
+**`opmcq-c18-20` was REJECTED as a fold** — it shares the four-orbital-walls template menu with
+`opmcq-c3-5` and `opmcq-c3-27`, but the vignettes differ substantively (26-year-old ED presentation,
+"most common area fractured" vs 15-year-old with a CT-revealed fracture, "most likely site that
+fractured"). ⚠️ **A shared option menu PAIRS questions, it never folds them.** Q22/Q25 are the same
+trap inside this chapter: the identical five-option open-globe menu in the identical order, different
+definitions in the stems, different keys (E vs C).
+
+### ⚠️⚠️ THE REAL FAULT THIS BATCH: THE DRAFT SILENTLY COPY-EDITED 14 OF 26 STEMS
+
+Not a transcription slip — **authored prose replacing printed prose**, and every numeric instrument
+in the kit passed it. A subagent re-read all six half-sheets at 3.2×–4.5× zoom and confirmed the
+page:
+
+- **British spellings the bank does not use** — printed `hemorrhage` → drafted haemorrhage,
+  `hematoma` → haematoma, `discoloration` → discolouration, `characterized` → characterised.
+  **Chapter 18 prints AMERICAN spelling throughout; no British spelling appears anywhere in it.**
+- **Articles inserted where the bank prints none** — "a deep anterior chamber", "a sluggish pupil",
+  "an intra-ocular metallic foreign body", "a large subconjunctival hemorrhage", "in a case of".
+- **Tenses rewritten** — Q5's printed "presents… he had… He complained… Examination revealed" had
+  been smoothed to a uniform present tense; Q20's printed "heads… he got" likewise.
+- **A word dropped** — Q21 prints "the poorest prognosis **ever**".
+- **Parentheses removed** — Q22 and Q25 print their definitions inside round brackets, with the "?"
+  falling **outside** the closing paren.
+- **A clause elided** — Q5 prints "with swelling of the left lower lid" between "pain" and
+  "Examination".
+
+All 14 restored to the page. **Options and keys were clean throughout** — the damage was confined to
+stems, which is exactly where no numeric check looks.
+
+**Q9 is the one deliberate divergence.** The bank really prints "**blooda** accumulation" and
+"sharply **demarkated**" (both confirmed at 4× zoom). Those are the source's own typos, so the
+project rule applies: corrected in the stem, and **what the bank printed is recorded in the
+explanation** — which the draft had already done. `stagecheck` reports this one stem mismatch every
+run; it is correct to leave it reported.
+
+### New instrument: `leakcheck.js` — does a stem hand over a NEIGHBOUR's answer?
+
+MEMORY.md said no instrument sees this, and that was true. The bank prints **chains** ("In the
+previous case, …"), and because question order is hashed from the id, every chain member's stem must
+be rebuilt from its antecedent — which is where the damage happens.
+
+- **Matching is on the key's CONTENT WORDS through a spelling-tolerant skeleton** (ae/oe→e, doubled
+  letters collapsed, -ise/-ize levelled). An exact-string search finds **none** of the five real
+  ch.18 leaks, because the rebuilt stems said "haemorrhage"/"hyphaema" while the keys print
+  "hemorrhage"/"hyphema".
+- **Adjacency (±4) is what makes it a leak rather than a coincidence.** Unrestricted it returned
+  **273 hits over 1,400 questions** — every stem that happens to name a disease some other question
+  keys. 273 identical-looking failures is a broken probe, not a broken corpus (`CLAUDE.md` §7).
+- **A hit is not automatically a fault, and the precedent splits.** Shipped `opmcq-c17-9` MUST name
+  the sebaceous carcinoma because its own key is the treatment — **structural**, legitimate. Shipped
+  `opmcq-c17-11` correctly restates the findings without naming basal cell carcinoma — so an
+  **avoidable** leak is not legitimate.
+
+**ch.18 went from 5 leaks to 2.** Q7/Q8 keep "retrobulbar hemorrhage" named (they ask its time
+window and its definitive treatment — unanswerable otherwise) and both now **say so in `source`**.
+Q10/Q12/Q13 were rewritten to describe the findings without the word "hyphaema", which is possible
+because `opmcq-c18-6` already did exactly that — they had been handing over Q9's key.
+
+### Companion check: does a stem answer ITSELF? — run over all 1,400, **zero unrecorded faults**
+
+Four hits, all adjudicated: three are the standard negation shape (`opqb-t1-2`, `opmcq-c4-2`,
+`opmcq-c16-1` — the key negates a belief or finding the stem states, which *is* the question).
+`opqb-t22-14` really is self-answering ("presents with severe pain… what is the most common
+presenting symptom?" → key "Severe pain") — **and the earlier batch already recorded it verbatim** in
+its explanation as the bank's own printing, "recorded here, not a defect to dispute". Nothing to fix.
+
+### `idcheck.js` REBUILT — it had been lying in two ways
+
+1. **Its known-id set was built from the draft files alone**, never from the shipped corpus. Since
+   drafts are superseded after splicing, most live ids were invisible to it: it reported
+   `opqb-t2-77` DEAD while that question sits in `questions.ophtho.js` and is cited 5 times.
+   **A checker that cries wolf gets ignored — and this is the check MEMORY.md requires after every
+   fold.**
+2. **It scanned two hardcoded files**, `gg-t7` and `gg-t8`. Every draft written since was unchecked.
+
+Now the known set is the union of the shipped corpus and every draft, and the scan covers every
+draft **plus the shipped file itself** (a folded id that kept its backticks will be in an
+explanation, and most explanations are shipped). Result: ch.18's **32** backticked refs all resolve,
+and all **859** distinct backticked refs in the shipped corpus resolve. The only two remaining
+findings are trailing commas in the `house-c1` / `house-c10` drafts, already spliced — cosmetic, not
+shipping.
+
+### One more instrument fault, mine, worth the same warning
+
+`c18-stemfix.js` first reported **all 18 stems missing**. The draft double-quotes its string fields
+and the matcher assumed single quotes. **Every failure identical = broken probe, not broken file** —
+the same signature, hit twice in one session. The matcher now accepts either delimiter and reuses
+the one it found.
+
+### Remaining
+
+GG **171** (EE4 20 · EE5 20 · EE6 Photos 35 · Tutorial 27 · Final 69) · House **~533** (ch.19 43 ·
+ch.20 29 · the rest is the OSCE section, ~456 items on sheets 69–126, still unplanned — read a page
+before assuming MCQ vs `type:'case'`).
+
+**Ch.19 is staged and ready**: "**Ocular manifestations of systemic diseases**", **43 questions**
+(numbered 1–43), sheets **p-061…p-065** = book pp.**118–127**; ch.20 "Drugs & the eye" opens on sheet
+p-066, so the boundary is confirmed from both ends. Sheets 61–**67** are rendered (one past the last,
+as the rule requires) at `…\e2adb0a0-…\scratchpad\ocr\h19\`, each split into left/right halves
+`v61L.png`…`v67R.png` at 1170×1654.
+
+⚠️ **The brief for ch.18 was wrong on one point and the agent caught it: the chapter opens on book
+p.112, not p.113** — the banner and Q1–Q4 print on the LEFT half of sheet p-058. Check a chapter's
+first page against the banner, not against the arithmetic alone.
+
+⚠️ **The WPS OCR reorders options and deletes spaces.** For these sheets it emitted Q9 as A,C,B,D,E;
+Q12 with B before A; Q7 and Q26 with the whole option block **above** the stem; and rendered
+"Digitally- measured IOP was" as "Digitally-measuredIOPwas". **Anyone splicing from the OCR without
+looking at the page gets option order and spacing wrong.** Search index, never a source.
+
+---
+
+## Open debt CLOSED 2026-08-31 — `content\ophtho\book\ch20-drugs.txt` exists again
+
+The ch.20 book cache that died with its agent in §17p has been rewritten and **verified from disk**:
+**1,354 lines / 68 KB**, 18 `## printed p.N` sections, 18 `ophthalmology.pdf p.<N>` citations, zero
+illegible markers, and the `Semester 8\Opthalmo\Theoritical\Books\` path intact (the backslash-collapse
+probe passes — the agent used `Write`/`Edit` and overrode a mid-run system directive that told it to
+prefer bash heredocs, correctly, on the project's measured grounds).
+
+Chapter 20 "Drugs and the Eye" = printed pp.**254–270** + one blank leaf at 271; PDF = printed + 2.
+The contents page's "254–271" counts that blank.
+
+**Five things in it that will change how its questions get written:**
+
+1. **It is two chapters under one title.** Printed 254–268 is *drugs used on the eye*; printed
+   **269–270 is a separate banner, "Examples of Ocular Side Effects of Systemic Medications"** —
+   amiodarone, chloroquine/hydroxychloroquine, corticosteroids, digitalis, ethambutol, statins, the
+   PDE-5 drugs. A question from 269 is topically nothing like one from 259.
+2. **⚠️ THREE INCOMPATIBLE ORDERINGS OF THE SAME GLAUCOMA CLASSES.** Printed 264 numbers them roman
+   **I–VII**; pp.265–267 renumber arabic **1–6** in a *different* order and drop Combinations;
+   printed 268's summary table uses a **third** order. **"Class 3" is meaningless unless the page is
+   named** — cite the printed page on every glaucoma-class claim.
+3. **A book error, recorded not corrected** (printed 264): the book prints **"Dorzolamide +
+   brimonidine (Simbrinza)"**. Simbrinza is brinzolamide + brimonidine. Flagged inline in the cache;
+   per the project rule it is recorded, never silently fixed.
+4. **Printed 268's table is not a restatement** — it ADDS **Betaxolol** as the named cardio-selective
+   beta-blocker, a name the body text never gives, and it DROPS the prostaglandin "no major systemic
+   toxic effects" line, PAP reversibility, and every hyperosmotic drug name. Read both.
+5. **Statin polarity reverses inside one section** (printed 270): statins alone show **no** increased
+   cataract risk; **simvastatin + erythromycin together** do. Two adjacent bullets, opposite
+   directions — a distractor writes itself, and a careless one gets it backwards.
+
+**Absence claims, each naming the specific thing and how it was measured** (all over the same 18
+rendered PNGs, individually):
+
+- **Tutorial material: ZERO.** No tutorial tab, no dashed blue box, no "Additions from Tutorial"
+  ruled box, and no tutorial branch on the objectives tree. Unusual for this book.
+- **Star-glyph importance ratings: ZERO**, and ch.19's alternative quoted-`"important"` device is
+  absent too.
+- **Numbered figures: exactly ONE in 18 pages** — `Figure (20-1). Seidel test`, printed 256. The
+  opener cartoon and the three-photo prostaglandin strip on printed 266 are unnumbered.
+- **Class VI "Combinations" is listed once and never discussed** — printed 264 only; pp.265–267 have
+  no Combinations section and printed 268's table has no Combinations column.
+- **No dose or dosing frequency for any anti-glaucoma drug.** Concentrations appear for only three
+  groups: the five cycloplegics (259), decongestants + phenylephrine (260–261), and the three
+  hyperosmotics (264: Glycerin 50%, Isosorbide 45%, IV Mannitol 20%).
+- **Hydroxychloroquine screening is qualitative only** (269) — baseline dilated exam, fields, colour
+  vision, fundus photography; **no mg/kg threshold, no duration threshold, no OCT, no FAF**.
+- **Ethambutol has no dose and no colour-vision protocol** (270) — only "within 1 month" and
+  reversibility on stopping.
+
+### ⚠️ NEW OCR DEFECT SHAPE, AND IT IS THE WORST ONE YET: TABLES INVERT MEANING
+
+The WPS OCR on the two table pages does not merely mis-read characters — **it destroys row/column
+linkage in a way that silently reverses what the page says.** On printed 259 the cycloplegic table's
+"Systemic side effects" text sits **in the tropicamide column only**; the OCR flattens the table to a
+word list and it reads as applying to all five drugs. The same cell says **"the three drugs above"**,
+meaning the three columns it sits under (homatropine, scopolamine, atropine) — unrecoverable from the
+OCR. Printed 268 is worse: the page is **rotated 90°** and its OCR block preserves **not one**
+row/column relationship. Both pages had to be read cold off the PNG.
+
+**⇒ On a table page the OCR is not a degraded index, it is an actively misleading one.** Nine further
+defects on record in the cache: a whole heading dropped ("Systemic fluorescein:", 258), figure
+captions spliced into running prose (266), **six blank lines faking a figure slot on 257 where the
+page is one full-page ruled table with no image at all**, off-page text absorbed from the adjacent
+leaf (267), reverse-side show-through read as content (269), `eyclosporine A` for cyclosporine A
+(262 — a grep for the real name returns nothing), α → plain "a" (266), CJK glyphs for bullets (264),
+en-dashes flattened (270).
+
+⚠️ Separately, and this is **the page, not the OCR**: the book itself sets Latin capital **B** for β
+throughout pp.265–268 ("B-adrenergic"). Noted in the cache at the printed-265 block.
+
+14 genuine printed misspellings are preserved with `[sic]` rather than corrected — "medriatics" ×2
+and "nausia" (259), "Normaly"/"normaly" and "usualy" (257, 266), "bromofenac" (262), "cornea
+verticillate" (269), **"avanfil"** in a heading against "avanafil" four lines below it (270), and
+"HMG-COA … Hydroxymethylglutaryl coenzyme reductase inhibitors" with the coenzyme **A** dropped (270).
+
+---
+
+## GG remainder — the whole 171 is RENDERED and OCR'd, and the section map is settled 2026-08-31
+
+`ophthalmology qb.pdf` is **185 PDF pages** (`pdfinfo`, read — not assumed). `PDF = book + 7`.
+
+**⚠️ The tail question is answered: nothing is missing.** I expected the Final's answer key to run
+past the rendered range and rendered pdf **184–185** to check. **pdf.184 is BLANK** (the PNG is
+15.9 KB against 3.5 MB for its neighbour — the same blank-page signature the ch.20 book cache used)
+and **pdf.185 is the back matter**. The Final's key runs `1.` … **`69.Correct Answer: B`** and ends
+on **pdf.183**. So renders pdf **152–183** cover every remaining GG question, key included.
+
+Renders on disk: `<scratch>\ocr\ee4\p-152..156.png` and `<scratch>\ocr\gg-rest\p-155..183.png`
+(200 dpi, portrait, one book page per sheet — GG is NOT the two-up landscape layout House uses).
+OCR at `<scratch>\ocr\ee4.txt` and `<scratch>\ocr\gg-rest.txt`.
+
+### ⚠️ GG's STRUCTURE IS NOT HOUSE'S — THE KEY IS A SEPARATE BLOCK, NOT AN INLINE LINE
+
+Every GG section prints as **banner → "Questions" → all the stems → banner again → "Answers" → a
+bare numbered key list** (`1.Correct Answer: A`). House prints `Answer: X` inline under each
+question. **This means a GG stem and its key are pages apart, and mis-aligning the key list by one
+silently shifts every answer in the section.** Count the key entries against the question count
+before trusting either.
+
+### The section map (OCR-derived PRIOR — the reading agent confirms it off the banner, never adopts it)
+
+| Section | PDF pages | Promised q | Where the banner sits in the OCR |
+|---|---|---|---|
+| End Exam 4 | 152–154 | 20 | `ee4.txt` line 10 (pdf.152); key on pdf.154 |
+| End Exam 5 | 155–157 | 20 | `gg-rest.txt` line 8 (pdf.155); "Answers" line 186 (pdf.157) |
+| End Exam 6 (Photos) | 158–166 | 35 | line 220 (pdf.158); "Answers" line 605 (pdf.166) |
+| Tutorial Exam | 167–174 | 27 | line 656 (pdf.167) |
+| Final Exam | 175–183 | 69 | line 970 (pdf.175); key ends `69.` on pdf.183 |
+
+**Numbering restarts at Q1 in every section** — this is the GG exam-section rule already proved on
+EE1, EE2 and EE3, and the OCR shows each block opening at `1.` again. Ids follow the established
+`opqb-t<N>-<n>` scheme, one topic number per section.
+
+⚠️ **End Exam 6 is the expensive one.** 35 questions that read off photographs — "The patient will
+fail to blink in case of?", "What does this test in the photo examine?", "What does this device
+examine?". Every one needs a **looked-at crop**, and `imgAlt` must give modality and view only
+without answering the question. Budget it as the batch it is, not as 35 ordinary questions.
+
+⚠️ **Both End Exam 1 and End Exam 2 folded ZERO** against the topic questions, and End Exam 3 also
+came out at zero after all 26 candidates were rejected by name. **The GG End Exams reword rather
+than reprint.** That is a measured pattern over three sections, not a rule — measure it again per
+section and say how the zero was measured.
+
+---
+
+## House ch.20 "Drugs & the eye" — STAGED and SWEPT 2026-08-31 (draft in progress)
+
+`content\ophtho\qb-pages\house-c20.array.js`, **29 entries**, verified from disk: `num` runs 1–29
+contiguously with **no skipped or duplicated number** (checked band by band precisely because ch.18
+skips Q11), every key letter in range, option menus of 4 or 5 only, zero `A.` prefixes leaked into
+option strings, `n:20` throughout.
+
+Banner as printed, red full-width band, white bold: **`20. Drugs & the eye`** on book **p.128**
+(sheet p-066 LEFT half), folio read off the pixels. Chapter = book pp.**128–134** = sheets
+**p-066 … p-069 (LEFT half only of p-069)**. **Seven book pages, so it ends mid-sheet** — the one
+thing my brief did not anticipate.
+
+**Counted three ways, all agreeing on 29**: forwards half-sheet by half-sheet (4+5+5+5+5+4+1),
+backwards from the highest printed number, and by inline `Answer:` lines (4+5+5+4+5+5+1). The two
+forward counts differ per page only by the three straddles and reconcile exactly. **This is what
+"say how the count was measured" looks like** — a single count that happens to hit the promised
+number is not a measurement.
+
+**Lettering has no gaps or repeats in any of the 29 menus, so printed letter and zero-based index
+agree 29/29.** Straddles: 3 — Q19 (options p.131, `Answer: A` opens p.132: read only p.131 and the
+question has no key), Q24 (stem + A–B on p.132, C–D and the key open p.133: the key is visible but
+two distractors are not), Q29 (number + first line at the foot of p.133, breaking after "…develops
+sudden").
+
+**0 printed explanation boxes, 0 figures** — counted on this chapter's own seven half-sheets, not
+carried forward. Markers required in the draft = **29**.
+
+### The next section is confirmed, from the pixels
+
+Book **p.135** (sheet p-069, RIGHT half): full-width photographic banner, then the red display title
+**`Ophthalmology OSCE`** between two barbell rules, then Q1 in a red numbered badge. The running
+header strip changes from `Chapterwise MCQs` to **`OSCE (End-of-round E-exams)`** on that same half.
+**No chapter-20 question prints on that half-sheet.** The header strips of book 136/137/138/139
+(sheets p-070, p-071) were also checked — all four read `OSCE`; chapter 20 does not resume.
+
+### Source defects — eight, all to be repaired-with-record in the draft
+
+`Flourescien` ×3 in each of Q3 and Q4's menus · Q6 stem `is an the adverse effect` (doubled article)
++ `IV flourescien` · Q8 stem `flourescien dye` and option C printing `A& B` (space after the
+ampersand only — every other occurrence in the chapter prints `A & B`, confirmed at 2.4× against
+Q12/Q23) · Q15 option B `discrimmination` · Q19 stem `is the among the side effects` · Q23 option B
+`irrerversible` and `even if its stopped` · Q26 stem `longterm` as one word.
+
+⚠️ **The dye is spelled `flourescien` in Q3/Q4/Q6/Q8 and correctly `fluorescein` in Q20 — both
+printed, in one chapter.** Recorded once in `opmcq-c20-3`, with the others pointing there.
+
+⚠️ **Q19 prints `anaesthetics`, British, in a chapter that prints `anesthesia` at Q1 and `color` at
+Q15.** It is NOT in the repair list and it stays. This is the mirror image of the ch.18 disaster:
+there I British-ised an American page; here the page itself is inconsistent, and the fix is to copy
+it, not to regularise it.
+
+### The sweep: ZERO folds, and here is how the zero was measured
+
+29 staged against all **1,399** shipped ophtho questions. **Stage A = 0, stage B = 0** — no exact
+and no near-exact match exists. Five weak candidates surfaced at C and E and **all five are rejected
+by name, with the discriminating token identified**:
+
+| Candidate | Score | Why it is not a fold |
+|---|---|---|
+| Q11 vs `opmcq-c11-7` | C 0.82 | Shared key *and* an overlapping menu, but Q11 asks the **indication for hyperosmotic agents** and c11-7 is a vignette asking the **diagnosis**. The template trap exactly |
+| Q11 vs `opqb-t20-812` | C 0.38 | That one asks what **decongestants** precipitate — different drug class, different bank |
+| Q21 vs `opmcq-c1-46` | C 0.20 | The whole overlap is "All of the above" / "None of the above" filler |
+| Q6 vs `opqb-t20-806` | E 0.50 | Both on IV fluorescein adverse effects, but different menus and **different keys** ("All of the above" vs "Yellow skin/urine"). A real cross-bank topical pair, not a reprint |
+| Q12 vs `opmcq-c2-16` | E 0.50 | Opposite subject — complications of **hyperopia** |
+
+**Self-sweep: Q3 ↔ Q4 at 0.75 — NOT a fold.** The Jones I `+ve` / Jones II `-ve` template pair; the
+discriminating tokens are the test name and the polarity. Siblings, not duplicates: the lacrimal
+patency table goes in `opmcq-c20-3` and Q4 points at it. **This is the sixth time a shared menu has
+paired rather than folded a pair on this module.**
+
+⚠️ **There is no `op-drugs` chapter and there will not be one** — ch.20's questions file by TOPIC,
+following the precedent of GG's own drug topic (`opqb-t20-*`, 40 shipped, spread over eleven
+chapters: `op-glauc` 10 · `op-cornea` 6 · `op-insid` 5 · `op-conj` 4 · `op-pupil` 4 ·
+`op-neuro-optic` 3 · `op-intro` 2 · `op-lac` 2 · `op-refract` 2 · `op-ret-dr` 1 · `op-vissym` 1).
+
+---
+
+## House OSCE tail — STRUCTURAL RECON, 2026-08-31. It is NOT one section and NOT one format.
+
+Read off twelve rendered halves (`v72L/R`, `v73L/R`, `v90L/R`, `v110L/R`, `v125L/R`, `v126L/R` under
+`<scratch>\ocr\osce\`) with `<scratch>\ocr\house-all.txt` as the search index. **Nothing was rendered
+new and no PDF was opened.**
+
+### ⚠️ My brief was wrong in four ways, and the count was the smallest of them
+
+| What I briefed | What the pages say |
+|---|---|
+| "~456 items" | **~435** (303 + ~132). My figure was ~21 high. |
+| "a section" — singular, flat, one pipeline | **Three runs, two encoding formats**, and the numbering restarts three times |
+| "sheets 69–126" | Right, but **the boundary is MID-SHEET**: chapterwise MCQs end on sheet 69 **LEFT** (book p.134); the OSCE opens on sheet 69 **RIGHT** (book p.135) |
+| implied the running header marks sections | **`OSCE (End-of-round E-exams)` is a RUNNING HEADER on every sheet 69R–126.** It marks nothing. Do not use it as a boundary signal |
+
+`PDF = 2N−4 / 2N−3` **confirmed off the pixels on all six sampled sheets** (72→140/141, 73→142/143,
+90→176/177, 110→216/217, 125→246/247, 126→248/249). The House two-up arithmetic holds to the last page.
+
+### The three runs
+
+| Run | Book pp. | Items | Numbering | Format | Images |
+|---|---|---|---|---|---|
+| **A** "Ophthalmology OSCE" (title p.135) | 135–225 | **1–269** | continuous from 1 | image MCQ, ~3/page | **~100% image-bearing** |
+| **B** (no banner — silent format shift) | 226–232 | **270–303** | *continues* A | text-only MCQ, ~5/page | **ZERO** |
+| **C** "Some models for the end-of-round E-exam" (p.233) | 233–249 | **~132** | **restarts at 1 in each of four model exams** | short-answer, no options | zero printed; **~46% cross-reference Run A** |
+
+Run C sub-banners: `Model exam(1)` p.233 · `Model exam (2)` p.237 · `Model exam (3)` p.240 or 241
+**(unread — OCR gap)** · `Model exam(4)` p.245. Three of the four are confirmed at exactly 33 items;
+ME2 is `[EXTRAP]` at 33, which closes the arithmetic at 132 and matches the "132 model-exam items"
+already in `MEMORY.md`.
+
+Run C opens verbatim: *"These model exams are derived from the department's E-exams of the last year.
+Make sure to study the OSCE spots before proceeding to these model exams."*
+
+### How the 303 was measured — four pixel anchors, and one of them DISAGREED
+
+| Anchor | Read off pixels | Predicted by 6 items/sheet from p.135 |
+|---|---|---|
+| sheet 72 (p.140) top | Q15 | 15 ✓ |
+| sheet 73 (p.142) top | Q21 | 21 ✓ |
+| sheet 90 (p.176) top | Q123 | 123 ✓ |
+| sheet 110 (p.216) top | **Q241** | 243 ✗ — **two items short** |
+| sheet 118 | 299, 300, 301, +2 | → **303** ✓ |
+
+The Q241 anchor says two pages between sheets 91–109 carry fewer than three items, or the OCR emitted
+two spurious `Answer` lines there. **The printed numbering wins: 303.** An `Answer`-line count per
+sheet ran a dead-flat 6/sheet for 069–114 then 10/10/9/5 for 115–118 — **the density jump IS the
+format shift**, which is how run B was found at all. That count gave 304 and was reconciled to 303 by
+the printed numbering. ⚠️ *This is what "an offsetting error is invisible to a sum" looks like from
+the other side: the sum was one out, and chasing the one is what located the boundary.*
+
+### Answers, options, encoding
+
+- **Answers are INLINE throughout** — `Answer: X.` under the options, then a **printed red explanation
+  block** using arrows. **No separate key block anywhere in the section.** (Unlike GG, which separates
+  them.) Part C prints `Answer: <text>` under each item. **Nothing is unanswered.**
+- ⚠️ **The key sometimes carries a parenthetical gloss that is part of the key, not the explanation** —
+  `Answer: C (leukocoria of the left eye).`, `Answer: B (also called Marcus Gunn pupil).`
+- **Runs A and B are near-uniformly 4-option**; exactly **two items carry an `E.`** in 303.
+- **Run C is short-answer → `type:'case'`.** ⚠️ **Trap: many Part-C items are PHRASED as MCQs but
+  print no menu** — *"16. A picture for the pinhole test (see the OSCE section). Which of the following
+  is the diagnosis…? / Answer: Macular degeneration"*. They are recalled exam items whose option lists
+  were never recorded. **Free-text despite the wording.** A "which of the following" grep would misfile
+  every one of them.
+- **Printed explanation blocks exist in runs A and B** — so markers are NOT automatic here, unlike every
+  House chapter so far. Count boxes per page before splicing.
+- **No matching items, no a/b/c multi-part items, no tables** — grepped both runs, zero hits.
+
+### Cost, and what breaks the chapters-1–20 pipeline
+
+- **~269 crops to cut and LOOK at.** That is the entire cost of this section. Figure mix in an 18-item
+  pixel sample: fundus 6 · external/clinical photo 6 · perimetry printout 2 · OCT 1 · MRI brain 1 ·
+  Ishihara array 1 · spectacles-on-face 1.
+- ⚠️ **~46% of Run C items say "(see the OSCE section)"** and name the figure only in prose. Each needs
+  resolving to a Run-A item and **reusing its crop** — a lookup step no chapter has needed.
+- ⚠️ **The fold sweep will be the expensive part here, not the transcription.** OCR found **11 stems
+  repeating with 13 extra copies among 117** Run-C items (~11%) — *"A patient with allergic
+  conjunctivitis…"* ×3, *"A picture for the fundus showing CRAO"* ×3, *"In confrontation test, which is
+  true?"* ×2 — **plus** model items restating Run-A spots. All within-bank.
+- **Ids: `-c<n>-` will not fit.** Needs at minimum an `osce` id space plus `me1..me4`.
+
+### Two things to do before any OSCE transcription starts
+
+1. ⚠️ **Sheet 122 (book pp.240–241) was NEVER OCR'd** — the `[[pdf.122]]` marker is absent from
+   `house-all.txt`. Model exam 2's tail and Model exam 3's banner and first items live there, unseen.
+   **Render it first.**
+2. ⚠️ **Run B's boundary is the one soft spot.** No banner appears between item 269 (p.226's
+   predecessor) and item 270, and the OCR caught every other banner in the section — so it looks like a
+   silent format shift rather than a fourth sub-section. **Not proved from pixels.** One half-page
+   render of book p.226 settles it.
+
+### Ends clean
+
+Book **p.249** (sheet 126 RIGHT), Model exam 4 item **33** — *"A patient presented with lid retraction
+due to thyroid eye disease. What's the most vision-threatening complication? / Answer: Exposure
+keratopathy"*. The lower ~70% of the page is blank. **No index, no back matter, no answer key.** Sheet
+126 is the last sheet and p.249 the last book page — read off the pixels, not inferred.
+
+### Revised ophtho remaining
+
+GG **171** (EE4 20 · EE5 20 · EE6 Photos 35 · Tutorial 27 · Final 69) · House **~506**
+(ch.19 **42** after the fold · ch.20 29 · OSCE ~435). **Total ~677.**
+
+### The two OSCE blockers are RENDERED and waiting for a reader
+
+`<scratch>\ocr\osce2\` — sheets **115** and **122** at 200 dpi (2339×1654), each split into
+`v115L/R.png` and `v122L/R.png` at 1170×1654.
+
+- **v115L = book p.226, v115R = p.227** — the **run-B boundary**. Settles whether item 270 begins a
+  silent format shift inside run A or a fourth sub-section with a banner the OCR missed.
+- **v122L = book p.240, v122R = p.241** — the sheet the WPS run **skipped entirely** (`[[pdf.122]]`
+  absent from `house-all.txt`). Model exam 2's tail and Model exam 3's banner and first items are here
+  and have never been seen by anything.
+
+⚠️ Not yet read. **Read them in a subagent** — never in the hub conversation.
+
+### The ch.19 fold is APPLIED to the shipped corpus
+
+`opmcq-c13-17`'s `source` now absorbs the ch.19 citation: `ophthalmology MCQ.pdf p.88 (Ch.13 Q17)`
+**plus** p.123 (Ch.19 Q27), named as a within-bank cross-chapter reprint with the same option order and
+key, with the note that this entry's markdown emphasis is editorial and the two printed texts are
+identical. Secondary chapter recorded. **Within-bank, so no `alsoIn`.**
+`node --check` passes; corpus re-parses at **1,399** — unchanged, which is the correct result for a
+fold applied before its chapter is spliced. **`opmcq-c19-27` must never be written.**
+
+---
+
+## ⚠️ USER RULING 2026-08-31 — THE HOUSE OSCE SECTION IS DEFERRED
+
+**"Skip all the OSCE part for now. If I needed it later I'll tell you."**
+
+**Deferred, not cut.** ~435 items (runs A/B/C, book pp.135–249, sheets 69R–126) come out of the active
+queue. Do **not** transcribe, crop or plan them until the user asks. The structural recon above stands
+and is complete — resuming needs no re-recon, only the two unread renders.
+
+**Ready and waiting whenever it is called back:** the full recon block above, plus the two blockers
+already rendered and split at `<scratch>\ocr\osce2\` (`v115L/R` = book pp.226/227, the run-B boundary ·
+`v122L/R` = book pp.240/241, the sheet WPS skipped entirely). Read those two in a subagent first.
+
+### Active ophtho scope is now 242, and both banks close on it
+
+| Stream | Left | State |
+|---|---|---|
+| House ch.19 "Ocular manifestations of systemic diseases" | **42** | staged 43, Q27 folded into `opmcq-c13-17`; draft running |
+| House ch.20 "Drugs & the eye" | **29** | staged and swept (zero folds); draft running |
+| GG End Exam 4 | 20 | rendered + OCR'd; staging running |
+| GG End Exam 5 | 20 | rendered + OCR'd |
+| GG End Exam 6 (Photos) | 35 | rendered + OCR'd — ⚠️ **35 looked-at crops, the one expensive batch left** |
+| GG Tutorial Exam | 27 | rendered + OCR'd |
+| GG Final Exam | 69 | rendered + OCR'd |
+
+**House closes at ch.20** for this pass — the OSCE was its whole remaining tail. **GG closes at the
+Final Exam.** With the OSCE out, the only image-heavy work left in the module is **EE6's 35 photos**;
+everything else is text.
+
+⚠️ When both close, **STOP and report** — do not start `Opthalmology endpoint.pdf` (user deferred it
+2026-08-31, separately from this ruling).
+
+---
+
+## ⚠⚠ OPEN DEBT — EXPONENT AUDIT, ch.17 through ch.20 (raised 2026-08-31, unaddressed)
+
+**This chat never received this warning while it was running.** It merged ch.17 and ch.18 and had
+ch.19/ch.20 drafts in flight without it. Chat B found the defect the same day in peds; the message
+meant for this chat was queued and never arrived. Verified by transcript audit: zero mentions of
+"superscript" or "exponent" across this session's whole run.
+
+**The defect.** WPS `photo2word` read a printed **10⁶ as 10⁹** (peds House ch.1 Q28, confirmed at
+900 dpi by a subagent — every exponent in all five options is a 6). Superscripts also flatten
+outright, 10⁶ → 106, in most reads.
+
+**Why this one is different from every other OCR defect on record.** A wrong exponent is a
+**plausible wrong number, not visible garbage.** The rest of this engine's errors announce
+themselves — a planted typo ("perforated ear dram") survived rather than being silently corrected.
+An exponent does not announce anything. It ships, it looks right, and it is wrong by a factor of
+a thousand. In a lab value that is a clinical error.
+
+**What to do before ch.17–ch.20 are trusted:**
+
+1. Grep the merged ophtho entries for exponent-bearing numerals — counts, titres, dilutions,
+   any `10` followed by a digit, plus `mm`, `mg`, `IU`, `/mL`, `%`.
+2. For every hit, **read the number off the rendered page image in a subagent.** Not the OCR text.
+3. Record any mismatch in `explanation` per the standing rule — the `answer` never moves.
+
+**Standing rule from here on:** never take an **exponent, a unit, or a dose** from OCR text.
+Those three come off the page image, always. Everything else in the OCR route stands unchanged.

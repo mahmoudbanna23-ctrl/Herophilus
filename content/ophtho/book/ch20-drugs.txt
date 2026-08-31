@@ -1,0 +1,1354 @@
+OPHTHALMOLOGY WITH TUTORIALS — HEALIX TEAM
+Chapter 20 — Drugs and the Eye
+Printed pp. 254–271  (PDF pp. 256–273)
+Source: Semester 8\Opthalmo\Theoritical\Books\ophthalmology.pdf  (image-only scan; PDF page = printed page + 2)
+
+✅ THIS IS A **COMPLETE** CACHE — all 18 rendered pages transcribed, in order, nothing skipped.
+Printed 254–270 carry content; **printed 271 (PDF 273) is BLANK** — verified by rendering it
+(the PNG is 15.9 KB against 0.9–2.5 MB for every other page, and the image is white edge to
+edge). So the chapter's text ends on printed 270 and the contents-page range 254–271 counts one
+trailing blank leaf.
+
+Every fact below was confirmed against the rendered PNG at 150 dpi. A WPS OCR pass over the same
+pages was used only for navigation and to save typing; where the OCR and the page disagreed the
+PAGE WON and the divergence is flagged inline with `[OCR: …]`. Numbers that would not resolve at
+150 dpi were re-cropped and upscaled before being written; anything still unreadable is marked
+`[illegible at 150 dpi]` rather than guessed.
+
+Transcribed 2026-08-31.
+
+────────────────────────────────────────────────────────────────────────────────
+PAGE MAP — one line per page, the whole chapter, in order
+────────────────────────────────────────────────────────────────────────────────
+
+| Printed | PDF | Subject of the page |
+|---|---|---|
+| 254 | 256 | Chapter opener: title "Drugs and the Eye", cartoon (an eye holding hands with an eyedrop bottle), **OBJECTIVES** tree with four branches |
+| 255 | 257 | **Technique of applying drugs** — instructions to patients, how to instil eyedrops (5 steps), how to apply eye ointment (5 steps + an alternative 4-step method), N.B. on allergy |
+| 256 | 258 | **Topical Ocular Drugs** banner · **(1) Fluorescein dye** — properties, forms, contamination, topical indications 1–3; `Figure (20-1)` Seidel test |
+| 257 | 259 | Fluorescein cont. — one **full-page ruled table** headed "Lacrimal system evaluation": TBUT, dye disappearance test, Jones I and Jones II; N.B. on complete obstruction. **No figure on this page** |
+| 258 | 260 | **Systemic (intravenous) fluorescein** — concentrations, adverse effects · **(2) Local anaesthetics** — uses, types + concentrations, onset/duration, adverse reactions, N.B. |
+| 259 | 261 | **(3) Mydriatics** · **A) Cholinergic-blocking drugs** — the five-drug cycloplegic table (conc./onset/duration), systemic toxicity boxes |
+| 260 | 262 | **B) Adrenergic-stimulating drugs** — phenylephrine; adverse reactions; **Cautions regarding pupillary dilation** 1–7 |
+| 261 | 263 | **(4) Decongestants** · **(5) Agents used to treat allergic conjunctivitis** · **(6) Anti-inflammatory agents** (start) |
+| 262 | 264 | Anti-inflammatory cont. (NSAIDs) · **(7) Agents used to relieve dry eye symptoms** · **(8) Antibiotics** · **(9) Antivirals** |
+| 263 | 265 | **(10) Anti-VEGF medications** · **Systemic Side Effects of Glaucoma Medications** banner — principles, what patients need to know 1–3 |
+| 264 | 266 | **Classification of glaucoma medications I–VII** — the full drug/trade-name list |
+| 265 | 267 | **1. Beta-adrenergic blockers** · **2. Cholinergic stimulating drugs** (pilocarpine) |
+| 266 | 268 | **3. Alpha-2 adrenergic agonists** · **4. Prostaglandin analogues** — the seven unique ocular effects; three-photo figure strip (PAP before/after, iris darkening, hypertrichosis) |
+| 267 | 269 | **5. Carbonic anhydrase inhibitors** (oral and topical) · **6. Hyperosmotic agents** |
+| 268 | 270 | **Full-page summary table** of the six glaucoma drug classes — mechanism of action / side effects |
+| 269 | 271 | **Examples of Ocular Side Effects of Systemic Medications** banner · **Amiodarone** · **Chloroquine & Hydroxychloroquine** |
+| 270 | 272 | **Corticosteroids** · **Digitalis** · **Ethambutol** · **Statins** · **Sildenafil, tadalafil, vardenafil, avanfil** [sic, heading spelling] — last text page of the chapter |
+| 271 | 273 | **BLANK** — no header rule, no footer number, no content |
+
+**FIGURE NUMBERING:** chapter 20 numbers exactly **ONE** figure across all 18 pages —
+`Figure (20-1). Seidel test` on printed 256, in the parenthesised style (the ch.19 / ch.3 form).
+Every other image in the chapter is unnumbered and either uncaptioned or carries a plain label.
+
+**STAR-GLYPH IMPORTANCE RATINGS:** NONE anywhere in chapter 20. The `"important"` quoted-tag
+device used in chapter 19 does not appear either — checked all 18 pages.
+
+**TUTORIAL MARKERS in chapter 20:** NONE. There is no "Tutorial" tab, no dashed blue box and no
+"Additions from Tutorial (skip in final)" ruled box anywhere in the chapter — checked all 18
+pages. The whole chapter is plain examinable text. (This is unusual for the book and worth
+knowing: the chapter title page carries no tutorial branch on the objectives tree either.)
+
+
+================================================================================
+## printed p.254  (PDF p.256)  —  CHAPTER OPENER
+================================================================================
+
+[Blue double rule across the top of the page; a small round eye medallion at the top right —
+the book's running chapter glyph.]
+
+# Drugs and the Eye
+[Large bold blue serif, centred, underlined.]
+
+[Cartoon illustration, centred: a large cartoon EYE with arms and legs holding hands with a
+smiling cartoon EYEDROP BOTTLE that is waving. Decorative only, no clinical content.]
+
+**OBJECTIVES:**
+[Bold blue, underlined.]
+
+[A four-branch tree diagram in blue rounded boxes. Root box: **"Drugs and the eye"**.
+Transcribed as an outline — the boxes are otherwise unreadable as prose:]
+
+- **technique of applying drugs**
+- **Topical ocular drugs**
+  - fluorescein dye
+  - local anaesthetics
+  - mydriatics
+  - decongestants
+  - drugs of allergic conjunctivitis
+  - anti-inflammatory drugs
+  - drugs of dry eye
+  - antibiotics
+  - antivirals
+  - anti-VEGF drugs
+- **Systemic side effects of Glaucoma medications**
+  - BB
+  - α 2 agonist
+  - CAI
+  - cholinergic stimulating drugs
+  - PG analogues
+  - Hyperosmotic agents
+- **Ocular side effects of systemic medications**
+  - Amiodarone
+  - Chloroquine
+  - Corticosteroids
+  - Digitalis
+  - Ethambutol
+  - Statins
+  - Sildenafil …
+    [printed with a trailing ellipsis, as shown — the body text on printed 270 expands it to
+     "Sildenafil, tadalafil, vardenafil, avanafil"]
+
+[OCR: the WPS pass flattened this whole tree into an unordered word list, lost every parent–child
+link, and rendered "α 2 agonist" as "a 2 agonist". The page prints the Greek α. The OCR also
+gave "CAi"; the glyph on the page is a capital I in the same sans face used for "BB", i.e. CAI.]
+
+[Page number bottom-left: 254. `ophthalmology.pdf p.254`]
+
+
+================================================================================
+## printed p.255  (PDF p.257)  —  TECHNIQUE OF APPLYING DRUGS
+================================================================================
+
+`ophthalmology.pdf p.255`
+
+**Instructions to be given to patients when using ocular medications (eyedrops or ointments):**
+[Blue bold, underlined.]
+
+- Always check the expiration date of the medication before using it.
+- Apply only **one drop**. Instillation of more than one drop in the eye during a single
+  application gives no additional benefit and the waste can be costly.
+- Allow a minimum of **5 minutes between drops** if using more than one type of medication.
+- When using ointments or gels, make them **the last to be used**.
+
+The proper technique to instil eyedrops ensures maximum patient cooperation and adequate delivery
+of medication to the eye.
+
+**To instil topical ocular medications, follow the following steps:**
+[Blue bold, underlined.]
+
+1. Wash your hands and wear disposable gloves if desired.
+2. Instruct the seated patient to tilt the head back and to look up.
+3. Expose the palpebral conjunctiva by gently pulling downward on the skin over the cheekbone.
+   Avoid direct pressure on the eyeball.
+4. Instil the correct amount of medication into the **lower conjunctival fornix**.
+   **Avoid applying drops directly to the cornea**, which is the most sensitive part of the eye,
+   and avoid touching the tip of the applicator to the patient's lids or eye.
+5. Instruct the patient to close both eyes gently for a few seconds.
+   Wipe any excess medication from the patient's skin with a tissue.
+
+**To apply an eye ointment:**
+[Blue bold, underlined.]
+
+1. Wash your hands and wear disposable gloves if desired.
+2. Instruct the seated patient to tilt the head back and to look up.
+3. Expose the palpebral conjunctiva by gently pulling downward on the skin over the cheekbone.
+   Avoid direct pressure on the eyeball.
+4. Apply a small amount of ointment (**5 mm ribbon**) into the lower conjunctival fornix.
+5. Gently close the eye.
+
+**-OR-**
+
+1. Apply a small amount of ointment to the clean fingertip of the dominant hand
+2. Gently pull down the lower lid with the opposite hand
+3. Apply the ointment directly onto the exposed sac
+4. Gently close eyelids and roll them while closed to spread the ointment on the ocular surface
+
+**N.B:**
+[Blue bold, underlined.]
+
+Before administering any medication, always ask patients if they may be allergic to the agent.
+
+[Lower third of the page is empty. No figure on this page.]
+
+[OCR: gave the heading as "To apply an eve ointment" — the page reads **eye**. It also lost every
+space after a full stop in the numbered lists ("1.Wash", "2.Instruct") and merged "if desired"
+into "ifdesired"; those are OCR artefacts, not the page.]
+
+[Page number bottom-left: 255.]
+
+
+================================================================================
+## printed p.256  (PDF p.258)  —  TOPICAL OCULAR DRUGS · (1) FLUORESCEIN DYE
+================================================================================
+
+`ophthalmology.pdf p.256`
+
+[Banner heading, pale grey band across the page, centred, bold sans:]
+
+# Topical Ocular Drugs
+
+## (1) Fluorescein dye:
+[Blue bold sans, with a blue rule running the width of the page under it. This is the section
+style used for every numbered drug class in the chapter.]
+
+- Sodium fluorescein is a **water-soluble**, orange-yellow dye that is commonly used in
+  ophthalmic practice due to its **hydrophilicity**, **low toxicity**, and excellent fluorescent
+  properties.
+- It has an excitation wavelength of about **490 nm** and an emission wavelength of **520 nm**.
+  Therefore, it appears brilliant green when viewed under cobalt blue or fluorescent light.
+- It is present <u>in the form of</u>:
+  a. Eyedrops
+  b. Fluorescein-impregnated filter paper strips:
+     Instilled by moistening a sterile, individually packaged dry fluorescein strip with a drop
+     of sterile water, topical anaesthetic, or saline and then applying it to the inferior bulbar
+     conjunctiva. A few blinks spread the tear film across the cornea.
+  c. Injections for intravenous use
+- Sodium fluorescein solution has a high susceptibility to bacterial contamination, especially by
+  **<u>Pseudomonas aeruginosa</u>** (it grows easily in fluorescein).
+  Therefore, <u>to reduce bacterial contamination</u>:
+  - Use a sterile preparation as in air-tight sealed solutions (in injection ampoules), if
+    possible.
+  - Use preserved eye drops
+  - Use sterile fluorescein-impregnated strips.
+- There is topical and systemic fluorescein dye
+
+❖ **<u>Topically applied Sodium fluorescein is used for the following indications:</u>**
+[Blue bold, underlined, with a diamond bullet.]
+
+[A black-ruled two-column table, four rows. Left column = the indication, right column = the
+detail.]
+
+| Indication | Detail |
+|---|---|
+| **1. Assessment of ocular surface integrity** | **1. Punctate epithelial erosions, corneal abrasions, and ulceration:** Epithelial defects appear green in colour against a dark background<br>**2. Leaking corneal wounds:** The dark leaking aqueous (with cobalt blue light) is seen to wash out the green-stained tear film (Seidel test). |
+| **2. Contact lens fitting** | And management of contact lens complications i.e.: assessment of corneal integrity in contact lens wearers |
+| **3. Applanation tonometry** | ○ It helps determine the exact size of the applanated area<br>○ Although **no systemic complications** accompany the use of topical fluorescein, a <u>**single local complication is the staining of soft contact lenses**</u> because of their porous structure. To avoid discolouration, contact lenses should be removed before the fluorescein is instilled. |
+| **4. Lacrimal system evaluation** | Mentioned in the next page. |
+
+[Figure, inside row 1 of the table, under the "Leaking corneal wounds" text: a dark clinical
+photograph of a cornea under cobalt blue light, with a bright green-yellow stream running
+downward from the wound through the darker stained tear film. Caption, bold: **"Figure (20-1).
+Seidel test"** — the only numbered figure in the chapter.]
+
+[OCR: mis-split the indication list, printing the two sub-items of row 1 as "1." and "2." at the
+same level as the row numbers, so the OCR text reads as though there were six indications. The
+page prints **four** indications, with two sub-items inside the first. The OCR also broke
+"To avoid discolouration." with a full stop where the page has a comma, and dropped the ❖.]
+
+[Page number bottom-left: 256.]
+
+
+================================================================================
+## printed p.257  (PDF p.259)  —  FLUORESCEIN: LACRIMAL SYSTEM EVALUATION
+================================================================================
+
+`ophthalmology.pdf p.257`
+
+[The WHOLE page is a single black-ruled table. Its top row spans the full width and carries the
+title. There are no images on this page.]
+
+# Lacrimal system evaluation
+[Table title row, centred, plain sans.]
+
+[Left-hand column, spanning both body rows:]
+**Fluorescein is used for the evaluation of:**
+
+---
+
+**a. Check the stability of the precorneal tear film:**
+[Bold dark blue.]
+
+<mark>**Tear film break-up time (TBUT):**</mark>
+[Highlighted in yellow on the page.]
+
+- it is measured as the interval between the last complete blink and the appearance of the first
+  randomly distributed dark spot on the corneal surface.
+- A TBUT measuring **less than 10 seconds** *(printed in dark red)* is indicative of **dry eye**.
+
+---
+
+**b. Test the patency of the lacrimal drainage system:**
+[Bold dark blue.]
+
+**Dye disappearance test:**
+[Sub-heading on a pale blue-grey band.]
+
+- Normaly little or no dye remains in the conjunctival sac **5 minutes** after instillation.
+  [sic — "Normaly" for "Normally", as printed]
+- Dye retention of **more than 5 minutes** *(dark red)* indicated inadequate lacrimal drainage.
+  [sic — "indicated" for "indicates", as printed]
+
+**Jones dye tests:**
+[Sub-heading on a pale blue-grey band.]
+
+<mark>**Primary test (Jones 1) :**</mark>
+[Highlighted yellow. Note the ARABIC numeral 1 here, against the ROMAN II in the secondary test
+below — printed inconsistently, reproduced as printed.]
+
+- ○ Five minutes after the instillation of fluorescein in the conjunctival sac, a cotton-tipped
+  bud moistened with local anaesthetic is inserted under the inferior turbinate.
+- ○ <u>Results are interpreted as follows:</u>
+  - **+ve test:** fluorescein recovered from the nose indicating **patency** of the lacrimal
+    drainage system
+  - **-ve test:** no dye is recovered indicating **partial obstruction** of the lacrimal passages
+    or **failure of the lacrimal pump mechanism**
+
+<mark>**Secondary test (Jones II) :**</mark>
+[Highlighted yellow.]
+
+- ○ Only performed if the primary test is negative.
+- ○ The lacrimal drainage system is irrigated with saline while placing a cotton-tipped bud under
+  the inferior turbinate.
+- ○ <u>Results are interpreted as follows:</u>
+  - **+ve test:** fluorescein-stained saline is recovered from the nose indicating **partial
+    obstruction of the lacrimal drainage system**
+  - **-ve test:** unstained saline is recovered indicating **upper lacrimal (punctal or
+    canalicular) dysfunction** or **lacrimal pump failure**.
+
+**N.B:**
+[Blue bold, underlined.]
+
+In case of complete obstruction, regurgitation of fluorescein-stained saline through the **upper
+punctum** occurs.
+
+[OCR: inserted six blank lines where the page has none, which reads as though two figures sat in
+the table — **there is no image anywhere on printed 257.** The OCR also ran the two TBUT bullets
+together ("corneal surface. ATBUT measuring…"), losing the bullet break, and dropped the yellow
+highlighting and the dark-red emphasis that mark the two examinable numbers (10 seconds,
+5 minutes).]
+
+[Page number bottom-left: 257.]
+
+
+================================================================================
+## printed p.258  (PDF p.260)  —  SYSTEMIC FLUORESCEIN · (2) LOCAL ANAESTHETICS
+================================================================================
+
+`ophthalmology.pdf p.258`
+
+❖ **<u>Systemic fluorescein:</u>**
+[Blue bold, underlined, diamond bullet. **The OCR dropped this heading entirely** — without it
+the intravenous-fluorescein block reads as a continuation of the topical indications.]
+
+- ➤ Sodium fluorescein is available in ampules of **10% and 25% solutions** for injection and use
+  in **ophthalmic angiography**.
+- ➤ The dye is administered intravenously and is seen then as it enters the blood vessels
+  enabling **evaluation of the integrity of the retinal vasculature**.
+- ➤ The <u>adverse effects of intravenous fluorescein administration include</u>:
+  1. Yellowish discolouration of the skin and urine (usually fades within **36 hours**)
+  2. Nausea, vomiting and headache
+  3. Hypersensitivity (rare) that ranges from itching and hives up to anaphylactic shock.
+
+## (2) Local anaesthetics :
+[Blue bold sans with the full-width blue rule under it.]
+
+[Two columns side by side — "Uses:" on the left, "Types:" on the right.]
+
+**<u>Uses:</u>**
+
+- Tonometry
+- Corneal thickness measurement (pachymetry)
+- Corneal or ocular surface foreign body removal
+- Suture removal
+- Saline irrigation for chemical injury
+- Facilitate the examination of a damaged cornea
+- Gonioscopy
+- Nasolacrimal duct irrigation and tubing
+- Cataract surgery
+
+**<u>Types:</u>**
+
+| Agent | Concentration |
+|---|---|
+| Proparacaine hydrochloride | 0.5% |
+| Tetracaine hydrochloride | 0.5% |
+| Benoxinate hydrochloride | 0.4% |
+
+**<u>After instillation:</u>**
+
+- ✓ <u>Onset of action:</u> **10-20 seconds**
+- ✓ <u>Duration:</u> **20 minutes**
+- ✓ Patients should be instructed not to rub their eyes for at least **10 minutes** after
+  receiving topical ocular anaesthetics to avoid inadvertent corneal abrasions
+
+**<u>Adverse reactions:</u>**
+
+1. Early stinging sensation
+2. Corneal epithelial damage (prolonged or uncontrolled use)
+3. Local or systemic allergic reactions (rare)
+
+**<u>N.B.:</u>**
+
+- The topical application of two or more anaesthetics does not produce an additive effect but
+  increases the risk of toxicity.
+- They should never be prescribed for prolonged or repeated use by patients because they are
+  toxic to the corneal epithelium.
+  They inhibit mitosis and cellular migration and can lead to corneal ulceration and scarring
+
+[No figure on this page.]
+
+[OCR: three faults on this page. (1) It **omitted the "❖ Systemic fluorescein:" heading**
+altogether. (2) It emptied the "Uses:" bullet list into a column of bare bullet glyphs and then
+dumped the nine items as a run-on block, splicing "Corneal or ocular surface foreign body
+removal" into "Cormeal or ocular surface foreign body removal" and losing the line breaks. (3) It
+rendered "After instillation:" as "Aftr instillationOnset of act:ion; 10-20 seconds" — the
+heading and the first item collapsed into one string with an invented colon. Concentrations
+0.5% / 0.5% / 0.4% were re-checked against the page and are correct.]
+
+[Page number bottom-left: 258.]
+
+
+================================================================================
+## printed p.259  (PDF p.261)  —  (3) MYDRIATICS · A) CHOLINERGIC-BLOCKING DRUGS
+================================================================================
+
+`ophthalmology.pdf p.259`
+
+## (3) Mydriatics:
+[Blue bold sans with the full-width blue rule.]
+
+Mydriatics are drugs that dilate the pupil; dilation may be necessary for ophthalmoscopy.
+The **<u>two main classes</u>** of mydriatics are **<u>cholinergic-blocking</u>** (or
+parasympatholytic) drugs and **<u>adrenergic-stimulating</u>** (or sympathomimetic) drugs.
+
+### A) <u>Cholinergic-blocking drugs:</u>
+[Blue bold, underlined.]
+
+- Drugs in this category dilate the pupil by **paralyzing the sphincter pupillae muscle**.
+- Cholinergic-blocking drugs produce not only mydriasis but also cycloplegia, or <u>paralysis of
+  the muscles of the ciliary body</u>. For this reason, these drugs are often referred to as
+  **cycloplegics**.
+- Cycloplegia produces <u>paralysis of accommodation</u> (focusing), so patients find that their
+  near vision is blurred until the effects of the cycloplegic wear off.
+- The cycloplegic effect of these drugs facilitates refraction.
+
+[Rounded blue-outlined callout box, right-hand side, level with the last bullet:]
+> All cycloplegics are medriatics, but not all medriatics are cycloplegics
+> [sic — **"medriatics"** for "mydriatics", twice, exactly as printed. Confirmed at 2.2× zoom.]
+
+<mark>**Examples:**</mark>
+[Highlighted yellow.]
+
+[A black-ruled five-drug table. Header row on a pale blue band.]
+
+| | Tropicamide | Cyclopentolate hydrochloride | Homatropine hydrobromide | Scopolamine hydrobromide | Atropine sulfate |
+|---|---|---|---|---|---|
+| **Conc.** | 0.5% or 1% | 0.5%, 1%, or 2% | 2% or 5% | 0.25% | 0.5% or 1% |
+| **Onset** | 20-30 minutes | 20-45 minutes | 40-60 minutes | 30-60 minutes | 1-3 hours |
+| **Duration** | 4-5 hours | 6-24 hours | 1-3 days | 3-7 days | 7-12 days |
+
+[⚠️ Every cell above was re-read from a 2.2× upscaled crop of the rendered page. All fifteen
+values are legible and are exactly as written.]
+
+**⚠️ STRUCTURE OF THE "Systemic side effects" ROW — the OCR destroys this and it changes the
+meaning.** The row is headed **"Systemic side effects"** in the stub column. Its text sits **in
+the TROPICAMIDE COLUMN ONLY**; the Cyclopentolate, Homatropine, Scopolamine and Atropine cells of
+that row are **blank on the page**. So the following is the book's statement about *tropicamide*,
+not about cycloplegics in general:
+
+> rare because of its brief duration of action, but they may be serious; they include :
+> - nausia   [sic — "nausia" for "nausea", as printed]
+> - vomiting
+> - pallor
+> - vasomotor collapse
+
+Below that, spanning the four right-hand columns as one merged cell:
+
+**<u>Systemic toxicity of cycloplegics:</u>** (especially in children)
+1. Increased body temperature
+2. Flushing (reddening) of skin
+3. Dryness of skin and mouth
+4. Irregular rapid pulse
+5. Hallucinations, confusion, and delirium
+
+[Final row of the table, two merged cells:]
+
+| Left cell (under Tropicamide/Cyclopentolate) | Right cell (under Homatropine/Scopolamine/Atropine) |
+|---|---|
+| <mark>**Cyclopentolate**</mark> produces more complete cycloplegia than tropicamide, and it is often used by ophthalmologists to **perform refractions in children.** | The three drugs above, should **never be used to dilate the pupil for diagnostic purposes** *(dark red)* (fundus examination) because of their <u>long-lasting effects</u> |
+
+[⚠️ "The three drugs above" = **homatropine, scopolamine and atropine** — the three columns that
+cell sits under. The OCR prints this sentence as free-standing text with no column anchoring, so
+a reader working from the OCR alone cannot tell which three drugs are meant.]
+
+[No figure on this page.]
+
+[OCR: flattened the whole five-drug table into a vertical word list — every drug name, then every
+concentration, then every onset, then every duration — with no row/column linkage at all. It also
+placed the "Systemic side effects" text as if it applied to the whole table rather than to
+tropicamide's cell, and mangled "Systemic toxicity of cycloplegics" to "Systemic toxicity of
+cvcloplegics". It reproduced the printed misspellings "nausia" and "medriatics" correctly.]
+
+[Page number bottom-left: 259.]
+
+
+================================================================================
+## printed p.260  (PDF p.262)  —  B) ADRENERGIC-STIMULATING DRUGS
+================================================================================
+
+`ophthalmology.pdf p.260`
+
+### B) <u>Adrenergic-stimulating drugs:</u>
+[Blue bold, underlined.]
+
+- These drugs dilate the pupil by **stimulating the dilator pupillae muscle**.
+- Only one such drug is in regular use: <mark>**phenylephrine hydrochloride 2.5%.**</mark>
+  [Highlighted yellow on the page.]
+  - ○ Onset: **30-40 minutes**
+  - ○ Duration: **4-6 hours**
+- It does not affect accommodation (i.e.: it has <u>no cycloplegic effect</u>). Therefore, the
+  patient can use near vision after instillation. However, the mydriasis produced is not as great
+  as with tropicamide, and the pupil remains reactive to light. For these reasons, phenylephrine
+  is seldom used alone as a mydriatic.
+- When maximum mydriasis is required, **<u>phenylephrine in combination with tropicamide</u>** is
+  ideal because the effects are additive.
+  - ○ This combination is often used to dilate the pupil of a **brown iris** as well because
+    mydriatics are less effective in dark-eyed individuals than in blue-eyed ones.
+- In **infants**, the combination of **<u>cyclopentolate hydrochloride 0.2% and phenylephrine
+  hydrochloride 1.0%</u>** is the safest and most effective.
+
+**<u>Adverse reactions:</u>**
+
+1. **Phenylephrine 10% solution** has been associated with **acute hypertension** and even with
+   **myocardial infarction** in some patients.
+2. In infants, higher concentration preparations (higher than cyclopentolate 0.2% and
+   phenylephrine 1.0%) can result in **hypertension and reduced gastric emptying**.
+
+**<u>Cautions regarding pupillary dilation:</u>**
+
+1. All mydriatics/cycloplegics sting on instillation.
+2. Blurred vision will persist after the examination. Therefore, care must be taken when driving
+   with the pupil dilated.
+3. It is better to wear sunglasses after dilation to reduce discomfort and protect the retina.
+4. **Phenylephrine 10%** solution should be avoided especially in patients with **cardiac
+   diseases, systemic hypertension or arteriosclerosis**.
+5. Pupils of patients with <u>Down's syndrome</u> widely dilate with tropicamide due to autonomic
+   imbalance between cholinergic and adrenergic receptors.
+   Therefore, it is better to <u>avoid cyclopentolate, atropine or other longer-duration
+   mydriatics</u>.
+6. In eyes with **subluxated lens**, dilatation can precipitate an attack of **angle closure
+   glaucoma**.
+7. Patients should be warned about the symptoms of angle closure, **pain, headache, nausea and
+   vomiting, halos around light and decreased vision**.
+
+[No figure on this page.]
+
+[OCR: substantively faithful on this page — the worst faults are lost spaces after punctuation
+("Therefore.it", "vomiting,halos") and the loss of the yellow highlight on
+"phenylephrine hydrochloride 2.5%". ⚠️ Note the two DIFFERENT phenylephrine strengths printed on
+this page: **2.5%** is the mydriatic in regular use; **10%** is the one associated with acute
+hypertension and MI and to be avoided in cardiac disease. Both were re-read on the page.]
+
+[Page number bottom-left: 260.]
+
+
+================================================================================
+## printed p.261  (PDF p.263)  —  (4) DECONGESTANTS · (5) ALLERGIC CONJUNCTIVITIS ·
+##                                (6) ANTI-INFLAMMATORY AGENTS (start)
+================================================================================
+
+`ophthalmology.pdf p.261`
+
+## (4) Decongestants:
+
+- These **weak adrenergic-stimulating drugs** temporarily whiten the conjunctiva through
+  **vasoconstriction**.
+- They are advertised as effective in relieving eye redness due to minor eye irritations caused by
+  smoke, dust, smog, wind, glare, swimming, contact lenses, or fatigue.
+- <u>The 3 major drugs in this category are:</u>
+  1. Naphazoline hydrochloride **0.012%**
+  2. Phenylephrine hydrochloride **0.12%**
+  3. Tetrahydrozoline hydrochloride **0.05%**.
+  [⚠️ All three re-read from a 2.5× upscaled crop. Naphazoline is **0.012%** — three decimal
+   places — and phenylephrine here is **0.12%**, an order of magnitude apart and easy to
+   transpose. This 0.12% phenylephrine is the *decongestant* strength, distinct from the 2.5%
+   mydriatic and the 10% dangerous strength on printed 260.]
+- The widespread belief that the use of these compounds is part of good ocular hygiene is a
+  misconception.
+  Red, burning eyes may benefit as much from a cold, wet compress to the closed eyelids as they
+  would from these compounds. Nevertheless, these agents are purchased in high volume.
+
+**<u>The most frequent complication of ocular decongestants arises from overuse:</u>**
+
+1. **<u>Rebound vasodilation</u>** of conjunctival vessels. In other words, when used in excess,
+   these preparations can increase rather than decrease the redness of the eyes.
+2. In rare instances, **<u>acute angle-closure glaucoma</u>** may be precipitated in susceptible
+   eyes by the use of sympathomimetic drugs because they can dilate the pupil.
+   However, these drugs may be used without harm by patients with **chronic open-angle glaucoma**
+   because they do not produce a rise in intraocular pressure (IOP) if the filtration angle is
+   open.
+
+## (5) Agent used to treat allergic conjunctivitis:
+[sic — singular "Agent" in the heading, as printed; the objectives tree on printed 254 calls the
+same branch "drugs of allergic conjunctivitis".]
+
+- ○ Combinations of <u>naphazoline and antazoline or pheniramine drops</u> are available as
+  **OTC** remedies for redness and itching associated with seasonal allergic conjunctivitis.
+  These provide decongestant action (see above) as well as antihistamine effects.
+- ○ Prescription medications (non-OTC medications) are also available for the management of these
+  symptoms.
+- ○ The **mast-cell stabilizers** <u>cromoglicate sodium and olopatadine (Patanol)</u> prevent the
+  release of inflammatory mediators. They are administered chronically for the **prevention** of
+  allergic symptoms.
+- ○ <u>Ketotifen</u> acts as a mast-cell stabilizer **and** an antihistamine, as well as
+  decreasing eosinophil chemotaxis.
+- ○ **Anti-inflammatory** agents such as <u>ketorolac</u> are helpful for symptomatic relief.
+
+## (6) Anti-inflammatory agents :
+
+- ❖ Both corticosteroids and nonsteroidal topical preparations are useful in the management of
+  various ocular situations.
+- ❖ **Topical ocular corticosteroids** should never be prescribed by a primary care provider.
+  The serious <u>complications of this class of drugs include :</u>
+  1. promotion of **viral, bacterial, and fungal infections**
+  2. possible development of **glaucoma and cataract**.
+
+[Section (6) continues on printed 262. No figure on this page.]
+
+[OCR: rendered the decongestant heading as "(5)Agent used to treat allergic conjunctivitis:" with
+the numbers intact, and got all three concentrations right; its faults here are cosmetic (lost
+spaces, "mav be precipitated" for "may"). The one substantive loss is that it dropped the ❖
+bullets that mark section (6)'s two top-level statements.]
+
+[Page number bottom-left: 261.]
+
+
+================================================================================
+## printed p.262  (PDF p.264)  —  NSAIDs · (7) DRY EYE · (8) ANTIBIOTICS · (9) ANTIVIRALS
+================================================================================
+
+`ophthalmology.pdf p.262`
+
+[Section (6) Anti-inflammatory agents, continued from printed 261.]
+
+- ❖ **Nonsteroidal anti-inflammatory agents do not potentiate these complications.**
+  [i.e. they do not promote infection, glaucoma or cataract the way topical steroids do.]
+- ❖ Topical ocular preparations include **diclofenac, ketorolac, nepafenac, bromofenac, and
+  flurbiprofen**.
+  [sic — **"bromofenac"**, confirmed at 2.5× zoom; the INN is *bromfenac*. Transcribed as
+   printed.]
+  These alone are generally not potent enough to control significant intraocular inflammation,
+  however. They are also used by ophthalmologists for other specific indications, such as:
+  - Ocular itching
+  - Macular oedema
+  - Prevention of miosis during cataract surgery
+
+## (7) Agents used to relieve dry eye symptoms:
+
+- ○ Millions of individuals have some level of dry eye symptoms.
+- ○ Palliative treatments with lubricating eyedrops or ointments are available over the counter.
+- ○ Some patients may develop allergies to common preservatives and require **preservative-free
+  formulations**.
+- ○ The immunomodulatory agent **cyclosporine A** (Restasis) is available as a topical
+  medication. It affects the **underlying inflammatory pathology** of dry eye syndrome and may
+  provide relief to patients with chronic moderate to severe disease.
+  Cyclosporine A is relatively expensive, and an ophthalmologist should be involved in the
+  decision to use the medication
+
+## (8) Antibiotics:
+
+- Topical antibiotics may be used for bacterial infections of the **eyelids, conjunctiva, and
+  cornea**.
+- The choice of agent is based on the suspected infecting organism.
+- Many commercial agents are available in ophthalmic preparations of drops or ointment.
+- Topical antibiotics are often used to treat common **bacterial conjunctivitis**.
+- Useful antibiotics include **erythromycin, sulfacetamide, aminoglycosides, and
+  fluoroquinolones**.
+- **Neomycin-containing agents**, although effective as antibacterial, often cause increased
+  redness and tearing because of **topical allergic sensitivity**.
+- The development of **antibiotic-resistant organisms** is a significant risk with long-term and
+  inappropriate antibiotic use.
+- <u>Antibiotics combined with corticosteroids</u> should be used only under the direction of an
+  ophthalmologist, because the combination may accelerate the progression of a <u>herpes simplex
+  or fungal infection</u> and cause <u>permanent damage.</u>
+
+## (9) Antivirals:
+
+- ❖ Topical antiviral agents such as **acyclovir** (Zovirax) are very effective in treating
+  ophthalmic <u>herpes simplex</u> viral infections.
+- ❖ These drugs should be used only under the direction of an ophthalmologist, as only
+  **short-term** use is appropriate **to avoid toxicity to the cornea**.
+
+[No figure on this page.]
+
+[OCR: printed **"eyclosporine A"** for **cyclosporine A** — a c→e substitution that would break a
+grep for the drug name. It also gave "ofa" for "of a" twice and "ifdesired"-style space losses.
+The drug list "diclofenac, ketorolac, nepafenac, bromofenac, and flurbiprofen" matched the page.]
+
+[Page number bottom-left: 262.]
+
+
+================================================================================
+## printed p.263  (PDF p.265)  —  (10) ANTI-VEGF · SYSTEMIC SIDE EFFECTS OF
+##                                GLAUCOMA MEDICATIONS (opening)
+================================================================================
+
+`ophthalmology.pdf p.263`
+
+## (10) Anti-Vascular Endothelial Growth Factor (anti-VEGF) Medications:
+
+- Used in **wet AMD, diabetic macular oedema and PDR**.
+- They block the action of VEGF thus <u>preventing ocular angiogenesis and new vessel
+  formation</u>.
+- They are administered by **intravitreal injections**.
+- <u>Bevacizumab</u> (**Off-label use**), <u>ranibizumab</u> and <u>aflibercept</u> are the agents
+  most commonly used.
+- **<u>Several adverse events</u>** have been reported with the **systemic** administration of
+  anti-VEGF including **thromboembolic events, myocardial infarction, stroke, hypertension,
+  gastrointestinal perforations, and kidney disease**.
+- As all the **<u>intravitreal anti-VEGF agents</u>** have been reported to be associated with
+  detectable levels in the systemic circulation that may significantly suppress systemic VEGF
+  levels, they may be implicated in the occurrence of potential systemic adverse events
+
+[Banner heading, pale grey band across the page, centred, bold sans — this is the second of the
+chapter's three banner-level divisions:]
+
+# Systemic Side Effects of Glaucoma Medications
+
+- Glaucoma treatment is targeted to **decrease intraocular pressure** (IOP) to reduce or stop
+  further optic nerve damage and visual field loss. This is done pharmacologically by
+  <u>decreasing aqueous production or increasing outflow.</u>
+- Glaucoma therapy involves **treating the patient, not just the disease**. Factors related to
+  patient compliance, lifestyle, systemic health as well as the expenses of treatment must always
+  be taken into consideration.
+- <u>Topically administered glaucoma drugs can have potent systemic side effects</u> as any drug
+  instilled in the conjunctival cul-de-sac may be absorbed systemically by the **conjunctiva,
+  nasopharyngeal mucosa, or gastrointestinal tract (after saliva is swallowed)**.
+- Systemically administered carbonic anhydrase inhibitors may cause side effects as well.
+- Systemic side effects of glaucoma medications are more prominent and need more attention in
+  **elderly** individuals.
+
+**<u>Patients need to know the following about glaucoma treatment:</u>**
+
+1. Glaucoma is a **lifelong disease**. Drops must be taken every day.
+2. **Never to stop medications** for any reason (cost, nuisance, discomfort or feeling fine)
+   unless advised to do so by the ophthalmologist.
+3. After using glaucoma eyedrops, the patient should <u>close the eyes and gently press with the
+   index finger against the nasal corner of the palpebral fissure</u> for about **30-60 seconds**
+   to close the lacrimal passages, prevent tear drainage and keep the medication on the eye. This
+   helps prevent systemic absorption, thereby decreasing side effects.
+
+[Lower quarter of the page is empty. No figure on this page.]
+
+[OCR: faithful in substance here. It lost the banner's visual weight — "Systemic Side Effects of
+Glaucoma Medications" came through glued to a stray digit string
+("53344230818Systemic Side Effects…"), one of the OCR's recurring artefacts where it emits a
+numeric id for an embedded graphic frame and then runs it into the following text. Those bare
+digit runs appear on almost every page of ch20.txt and are **not** on the page.]
+
+[Page number bottom-left: 263.]
+
+
+================================================================================
+## printed p.264  (PDF p.266)  —  CLASSIFICATION OF GLAUCOMA MEDICATIONS
+================================================================================
+
+`ophthalmology.pdf p.264`
+
+**<u>Classification of glaucoma medications:</u>**
+[Blue bold, underlined, centred. Each roman-numeral class heading sits on a pale blue-grey band.]
+
+**I. Beta-adrenergic blockers:**
+- Timolol
+- Levobunolol (Betagan)
+- Betaxolol (Betoptic, Apixol, Epitaxol)
+- Metipranolol
+- Carteolol
+
+**II. Cholinergic stimulating drugs:**
+- Pilocarpine (Isoptocarpine, Ocucarpine)
+
+**III. Alpha-2 adrenergic agonists:**
+- Brimonidine tartrate (Alphagan-P, Alphanova, Brimonidine)
+- Apraclonidine
+- Epinephrine
+- Dipivefrin
+
+**IV. Prostaglandin analogues:**
+- Latanoprost (Xalatan, loprost)
+  [⚠️ The second trade name was re-read at 2.5× zoom. The first glyph is a bare vertical stroke —
+   lowercase **l** and capital **I** are not separable in this serif face at 150 dpi. Written as
+   "loprost"; treat "Ioprost" as an equally possible reading.]
+- Bimatoprost (Lumigan, Bimatoswix)
+- Travoprost (Travatan, Travoswix)
+
+**V. Carbonic anhydrase inhibitors:**
+- Oral acetazolamide (Cidamex)
+- Oral dichlorphenamide (Oratrol)
+- Oral methazolamide
+- Dorzolamide (Trusopt, Ozolamide, Xola)
+- Brinzolamide (Azopt)
+
+**VI. Combinations of drugs:**
+- Brimonidine + Timolol (Combigan, Alphanova plus)
+- Latanoprost + Timolol (Xalacom, Timxal)
+- Bimatoprost + Timolol (Ganfort)
+- Travoprost + Timolol (Duotrav)
+- Dorzolamide + Timolol (Cosopt, Twinzol, Xolamol)
+- **Dorzolamide + brimonidine (Simbrinza)**
+  [⚠️ **AS PRINTED.** Simbrinza is in fact brinzolamide + brimonidine, not dorzolamide +
+   brimonidine. The book prints "Dorzolamide"; recorded here as the book has it, flagged, not
+   corrected — per project rule, the source's own error is noted, never silently overwritten.]
+- Brinzolamide + Timolol (Azarga)
+
+**VII. Hyperosmotic agents:**
+- Oral Glycerin **50%**
+- Oral Isosorbide **45%**
+- Intravenous Mannitol **20%**
+
+[Bottom fifth of the page is empty. No figure on this page.]
+
+[⚠️ NOTE ON CLASS NUMBERING: this page numbers the classes **I–VII** in roman numerals. The
+per-class discussion that follows on printed 265–267 renumbers them in ARABIC **1–6** and
+**drops class VI (Combinations)** entirely, AND reorders them (1 Cholinergic, 2 Beta-blockers,
+3 Alpha-2, 4 Prostaglandins, 5 CAI, 6 Hyperosmotics). The summary table on printed 268 uses a
+THIRD order again. The three numbering systems do not line up anywhere past class I/—; see the
+class-order warning at the head of the printed-268 block.]
+
+[OCR: reproduced this list well — it is the one page where the OCR is close to complete. Its only
+substantive slips are the em-dash/bullet glyph for class V rendered as "-" and "一" (a CJK
+character) on two lines, and "Simbrinza" preserved correctly. Trade-name spellings above were
+each re-read on the page.]
+
+[Page number bottom-left: 264.]
+
+
+================================================================================
+## printed p.265  (PDF p.267)  —  1. BETA-ADRENERGIC BLOCKERS · 2. CHOLINERGIC
+##                                STIMULATING DRUGS
+================================================================================
+
+`ophthalmology.pdf p.265`
+
+[⚠️ Throughout printed 265–268 the book writes the Greek beta as a Latin capital **B** —
+"B-adrenergic", "B1-adrenergic", "Non selective BB". Reproduced as printed.]
+
+## 1. Beta-adrenergic blockers
+[Blue bold sans with full-width blue rule. Note: no colon on this heading, unlike the others.]
+
+- **Nonselective B-adrenergic antagonists (beta-blockers)** reduce the formation of aqueous
+  humour by the ciliary body and thereby reduce IOP. **Timolol** and **levobunolol** *(both
+  printed in dark red)*, are highly effective and widely used.
+
+  - **Pulmonary side effects** of B-adrenergic blockers include **bronchospasm, bronchial asthma,
+    and dyspnoea**. These drugs are, therefore, **contraindicated in patients with asthma or
+    chronic obstructive pulmonary disease**. Several deaths have been reported secondary to the
+    pulmonary complications of topically administered timolol.
+
+  - **Because of their cardiac side effects** (bradycardia, conduction arrhythmias, hypotension
+    and fluid retention), topical B-adrenergic antagonists may **precipitate or worsen heart
+    failure** and must be used with caution if bradycardia or systemic hypotension would
+    adversely affect the patient.
+
+  - **Other systemic side effects include:**
+    - ○ Headache, insomnia, amnesia, depression, and confusion
+    - ○ Diarrhoea and nausea
+    - ○ Urticaria
+
+- **A cardio-selective B1-adrenergic antagonist**, **betaxolol** *(dark red)*, was developed to
+  avoid the pulmonary complications of timolol.
+  It may be as effective as nonselective B-adrenergic antagonists in lowering IOP. However,
+  pulmonary effects have occasionally been noted, and caution should be used when this drug is
+  employed in patients with excessive impairment of pulmonary function.
+
+## 2. Cholinergic stimulating drugs:
+
+**Pilocarpine** *(dark red)*, a cholinergic-stimulating drug available as eyedrops, lowers IOP by
+**increasing aqueous outflow through the trabecular meshwork**.
+
+**Local side effects include:**
+
+- Diminished vision due to **pupillary constriction**
+- Headaches from **ciliary muscle spasm**
+
+**Systemic side effects:**
+
+They are rare as systemic toxicity occurs only at **5 to 10 times the usual ocular dosage**.
+<u>They include:</u>
+
+- Lacrimation, salivation, perspiration
+- Nausea, vomiting, and diarrhoea
+
+[Bottom quarter of the page is empty. No figure on this page.]
+
+[OCR: substantively faithful. It emitted stray digit strings ("42547282109", "38734775693") at
+the two section heads — the artefact described on printed 263 — and lost the dark-red colour that
+marks the four named drugs (timolol, levobunolol, betaxolol, pilocarpine).]
+
+[Page number bottom-left: 265.]
+
+
+================================================================================
+## printed p.266  (PDF p.268)  —  3. ALPHA-2 ADRENERGIC AGONISTS ·
+##                                4. PROSTAGLANDIN ANALOGUES
+================================================================================
+
+`ophthalmology.pdf p.266`
+
+## 3. Alpha-2 adrenergic agonists:
+
+**Brimonidine tartrate** *(dark red)* is a relatively selective **α 2 agonist** that lowers IOP
+by a presumed **dual mechanism** of **decreased aqueous production** and **increased uveoscleral
+(non-trabecular meshwork) aqueous outflow**.
+
+[⚠️ The page prints the Greek **α** here, spaced as "α 2 agonist". The OCR renders it "a 2
+agonist" — a plain Latin a. Confirmed on the page.]
+
+Its **systemic side effects** are few but may include:
+
+- Oral dryness
+- Headache
+- Fatigue
+- Drowsiness (as it is **lipid soluble and crosses the blood-brain barrier**)
+- **In infants** brimonidine carries the risk of producing **severe hypotension and apnoea**
+- Local allergic reaction.
+
+## 4. Prostaglandin analogues:
+
+- This class of glaucoma medications **increases aqueous outflow through the uveoscleral
+  pathway**, a supplemental route through which a small portion of aqueous normaly drains.
+  [sic — "normaly" for "normally", as printed.]
+- **No major systemic toxic effects** of these drugs have been reported, but there are **unique**
+  *(dark red)* ocular effects. <u>Patients may acquire:</u>
+  1. **Darkening of the iris** in patients with **light-coloured irides**.
+  2. **Eyelid skin hyperpigmentation**
+  3. Lengthening and thickening of the eyelashes (**hypertrichosis** *(dark red)*) usualy after
+     several months of therapy.
+     [sic — "usualy" for "usually", as printed.]
+  4. **Conjunctival hyperaemia**
+  5. **Anterior uveitis**
+  6. **Cystoid macular oedema** *(dark red)* (CME) causing decreased vision may occur, especially
+     in those predisposed to this condition **after cataract surgery** or following **vascular
+     disease in the eye (eg, central retinal vein occlusion)**.
+  7. **Prostaglandin-associated periorbitopathy** *(dark red)* (PAP), results in **periorbital
+     fat atrophy** in some patients who use topical prostaglandin analogues.
+     **The condition can be reversed by discontinuation of the drug.**
+
+**unique ocular effects of Prostaglandin analogues:**
+[Bold, lower case initial "u" as printed — the label above the figure strip.]
+
+[FIGURE STRIP, bottom of page, three unnumbered clinical photo groups left to right:]
+1. **Left** — a colour photograph of an elderly face, both eyes, showing a deep superior sulcus
+   and hollowed periorbital tissue, more marked on the patient's left. Caption below:
+   "Prostaglandin-associated periorbitopathy".
+2. **Centre** — a composite of three photographs: a full face-and-both-eyes shot on top, and two
+   close-up iris photographs below it, one showing a green-hazel iris and one a distinctly
+   browner iris. Caption below: "Darkening of the iris".
+3. **Right** — a paired before/after close-up of a closed lid margin. The left frame shows
+   ordinary lashes, the right frame shows markedly longer, denser, darker lashes. Label above the
+   pair: "hypertrichosis"; captions under the two frames: "Before drug" and "After drug".
+
+[OCR: spliced the figure strip's labels into the running prose — "unique ocular effects of
+Prostaglandin analogues:", "Prostaglandin-associated periorbitopathy", "Darkening of the iris",
+"hypertrichosis", "Before drug   After drug" all arrive as free-floating lines with no indication
+that they are captions on photographs. It also rendered **α** as a plain "a" and gave "normaly"
+and "usualy" faithfully (those two ARE the page's own spellings).]
+
+[Page number bottom-left: 266.]
+
+
+================================================================================
+## printed p.267  (PDF p.269)  —  5. CARBONIC ANHYDRASE INHIBITORS (CAI) ·
+##                                6. HYPEROSMOTIC AGENTS
+================================================================================
+
+`ophthalmology.pdf p.267`
+
+## 5. Carbonic anhydrase inhibitors (CAI):
+
+### **Oral CAI:**  [underlined bold heading]
+
+- These **aqueous suppressants** are the **only oral drugs** utilized for **long-term glaucoma
+  management**.
+- Their use, particularly on a **chronic basis**, is limited by several **side effects**, which
+  include:
+  1. **Numbness and tingling of extremities (Paraesthesia)**
+  2. Anorexia and gastrointestinal disturbances
+  3. Headaches
+  4. Altered taste and smell
+  5. **Metabolic acidosis**
+  6. **Hypokalaemia**
+  7. **Predisposition to renal calculi formation.**
+  8. Bone marrow suppression (rare)
+
+### **Topical CAI:**  [underlined bold heading]
+
+Topical carbonic anhydrase inhibitors lower IOP by the **same mechanism as oral** carbonic
+anhydrase inhibitors, but with a **much lower (but still possible) incidence of <u>systemic side
+effects</u>** such as:
+
+- Local irritation
+- Altered taste sensation
+
+## 6. Hyperosmotic agents:
+
+- **Systemic hyperosmotic agents draw water out of the body tissues into the plasma** and
+  consequently **quickly reduce IOP** by drawing aqueous out of the eye.
+- Their most common use in ophthalmology is in cases of **acute angle closure glaucoma**.
+
+- **Side effects include:**
+  1. **Thirst** (drinking counteracts the effect of these drugs)
+  2. Headache
+  3. Disorientation
+  4. **Hypervolemia** can result in cardiac problems (**congestive heart failure**)
+  5. Oral hyperosmotics are extremely sweet which can cause **nausea or vomiting**
+  6. **Glycerine can cause hyperglycaemia in diabetics**
+
+[No figure on this page. The lower third of the page is blank white space below item 6.]
+
+[⚠️ SCAN ARTEFACT — at the very bottom of the rendered PNG, BELOW the page's own "267" folio and
+outside its ruled area, a single stray line of text is visible: "treat rheumatoid arthritis,
+systemic lupus erythematosus, and other autoimmune disorders." It is set in a different, slightly
+skewed baseline and is **edge capture from a following leaf, not part of printed 267**. Traced
+exactly: it is **the second line of the chloroquine paragraph on printed 269** ("Chloroquine
+phosphate and hydroxychloroquine sulfate, originally used to treat malaria, are also used to /
+treat rheumatoid arthritis, systemic lupus erythematosus, and other autoimmune disorders."), so it
+belongs to printed 269 and nowhere else. Recorded here so a later reader does not attach it to the
+hyperosmotics list.]
+
+[OCR: renders the stray bottom line as if it were the last line of the page's body text, with no
+separation — the single most misleading fault on this page.]
+
+[Page number bottom-left: 267.]
+
+
+================================================================================
+## printed p.268  (PDF p.270)  —  FULL-PAGE LANDSCAPE SUMMARY TABLE OF THE
+##                                ANTI-GLAUCOMA DRUG CLASSES
+================================================================================
+
+`ophthalmology.pdf p.268`
+
+⚠️ **THIS PAGE IS ONE TABLE AND NOTHING ELSE.** It is printed **ROTATED 90° (landscape on a
+portrait leaf)** — in the rendered PNG the text runs bottom-to-top and the reader must turn the
+page clockwise. There is **no prose, no heading and no figure** on printed 268; the only upright
+element is the folio "268" bottom-left and the blue rule + eye glyph that mark the page edge.
+
+⚠️ **NO TABLE CAPTION AND NO TABLE NUMBER.** The book prints the table with no title of any kind
+— it is not "Table 20-1" or anything else. It follows directly from the class-by-class text of
+pp.265–267 and summarises it.
+
+⚠️ **CLASS ORDER, THIRD VARIANT.** This table's columns run:
+Alpha-2 adrenergic agonists → Beta-adrenergic blockers → Carbonic anhydrase inhibitors (CAI) →
+Cholinergic stimulating drugs → Prostaglandin analogues → Hyperosmotic agents.
+That is **not** the roman I–VII order of printed 264 and **not** the arabic 1–6 order of
+pp.265–267 (which ran Cholinergic 1 → Beta-blockers 2 → Alpha-2 3 → Prostaglandins 4 → CAI 5 →
+Hyperosmotics 6). **Combinations** — class VI on printed 264 — is **absent from this table too**.
+
+The table has **two body rows**, labelled in the stub column at the far edge:
+**"Mechanism of action"** and **"Side effects"**.
+
+[Rendered below with the classes as ROWS, because six columns of this depth cannot be read as a
+markdown table. The mechanism/side-effect split is preserved. Highlighting on the page: the
+mechanism cells are marked in **yellow highlighter**; the side-effect sub-headings sit on **grey
+bars**; several side-effect entries are in **red type** in the prostaglandin and CAI columns, and
+the beta-blocker sub-headings are in **blue type**. Colour is recorded because it is the book's
+own emphasis device on this page.]
+
+### Column 1 — Alpha-2 adrenergic agonists
+
+**Mechanism of action:**
+**Brimonidine tartrate** lowers IOP by a <u>dual mechanism</u> of:
+- ↓ aqueous production
+- ↑ uveoscleral aqueous outflow
+
+**Side effects:**
+**systemic side effects:** *(blue)*
+1. Oral dryness
+2. Headache
+3. Fatigue
+4. Drowsiness (as it is lipid soluble and crosses the blood-brain barrier)
+5. In infants brimonidine carries the risk of producing severe hypotension and apnoea
+6. Local allergic reaction.
+
+### Column 2 — Beta-adrenergic blockers
+
+**Mechanism of action:**
+**Non selective B-adrenergic antagonists (beta-blockers)** ↓ <u>the formation of aqueous humour</u>
+by the ciliary body and thereby ↓ IOP.
+**Timolol and levobunolol**, are highly effective and widely used.
+[⚠️ Latin capital **B** for Greek beta, as everywhere else in this chapter — "B-adrenergic". As
+printed.]
+
+**Side effects:**
+*Non selective BB:* [grey bar]
+- **Pulmonary side effects:** *(blue)* bronchospasm, bronchial asthma, and dyspnoea. so they are
+  **contraindicated in patients with asthma or COPD**
+  [sic — lower-case "so" after a full stop, as printed.]
+- **Because of their cardiac side effects** *(blue)* (bradycardia, conduction arrhythmias,
+  hypotension and fluid retention), topical BB may precipitate or worsen heart failure and must be
+  used with caution if bradycardia or systemic hypotension would adversely affect the patient.
+- **Other systemic side effects:** *(blue)*
+  - Headache, insomnia, amnesia, depression, and confusion
+  - Diarrhoea and nausea
+  - Urticaria
+
+*Cardio-selective BB :* [grey bar]
+**Betaxolol**
+
+### Column 3 — Carbonic anhydrase inhibitors (CAI)
+
+**Mechanism of action:**
+↓ the formation of aqueous humour
+
+**Side effects:**
+*Oral CAI :* [grey bar]
+They are the only oral drugs utilized <u>for long-term glaucoma Rx.</u>
+**side effects :** *(blue)*
+1. extremities numbness (Paraesthesia)
+2. Anorexia and gastrointestinal disturbances
+3. Headaches
+4. Altered taste and smell
+5. **Metabolic acidosis** *(red)*
+6. **Hypokalaemia** *(red)*
+7. Predisposition to renal **calculi** *(red)*
+8. Bone marrow suppression (rare)
+
+*Topical CAI :* [grey bar]
+**systemic side effects:**
+- Local irritation
+- Altered taste sensation
+
+### Column 4 — Cholinergic stimulating drugs
+
+**Mechanism of action:**
+**Pilocarpine** lowers IOP by ↑aqueous outflow through the **trabecular meshwork.**
+
+**Side effects:**
+*Local SI :* [grey bar]
+- **Diminished vision** due to pupillary constriction
+- **Headaches** from ciliary muscle spasm
+
+*Systemic SI :* [grey bar]
+- Lacrimation, salivation, perspiration
+- Nausea, vomiting, and diarrhoea
+
+[⚠️ "SI" here is the book's abbreviation for **side effects** in this table only — it writes
+"Local SI" / "Systemic SI" where the body text on printed 265 wrote them out in full. The
+abbreviation is never expanded anywhere in the chapter.]
+
+### Column 5 — Prostaglandin analogues
+
+**Mechanism of action:**
+↑ aqueous outflow through the uveoscleral pathway
+
+**Side effects:**
+<u>unique ocular effects:</u>
+1. **Darkening of the iris** *(red)* in patients with light-coloured irides.
+2. Eyelid skin **hyperpigmentation** *(red)*
+3. **Hypertrichosis** *(red)* (lengthening and thickening of the eyelashes)
+4. Conjunctival hyperaemia
+5. Anterior uveitis
+6. **Cystoid macular oedema (CME)** *(red)*
+7. **PG-associated periorbitopathy (PAP)** *(red)* → periorbital fat atrophy
+
+### Column 6 — Hyperosmotic agents
+
+**Mechanism of action:**
+draw water out of the tissues into plasma → quickly ↓ IOP by drawing aqueous out of the eye.
+Their **MC** use in ophthalmology is in cases of <u>**acute angle closure glaucoma.**</u>
+[⚠️ "MC" = most common — the table's abbreviation; the body text on printed 267 writes "most
+common use".]
+
+**Side effects:**
+**Side effects include:** *(blue)*
+1. Thirst (drinking counteracts the effect of these drugs)
+2. Headache
+3. Disorientation
+4. **Hypervolemia** can result in cardiac problems (<u>congestive heart failure</u>)
+5. Oral hyperosmotics are extremely sweet which can cause nausea or vomiting
+6. Glycerine can cause **hyperglycaemia** in diabetics
+
+[⚠️ CONTENT NOTE — the table is **not a pure restatement**. Two things appear here that the body
+text does NOT print: the **cardio-selective beta-blocker Betaxolol** is named as a class member
+(printed 265 discusses non-selective BB and their contraindications but does not name betaxolol),
+and the **"Local SI / Systemic SI"** split for pilocarpine is given as a formal two-way division.
+Conversely the table **drops** several things the text has: the prostaglandin "no major systemic
+toxic effects" line, the PAP reversibility on stopping the drug, and every hyperosmotic drug name.]
+
+[OCR: this page is **effectively unusable**. Because the page is rotated 90°, WPS reads the
+columns as broken vertical fragments and interleaves them — brimonidine's side-effect list, the
+beta-blocker pulmonary block and the CAI numbering arrive shuffled together with no cell
+boundaries. The `[[pdf.270]]` block is the longest in `ch20.txt` (lines 751–901) and **not one
+row/column relationship in it survives**. Everything above was read off the PNG directly.]
+
+[Page number bottom-left: 268.]
+
+
+================================================================================
+## printed p.269  (PDF p.271)  —  ⭑ NEW MAJOR SECTION ⭑
+##   EXAMPLES OF OCULAR SIDE EFFECTS OF SYSTEMIC MEDICATIONS
+##   Amiodarone · Chloroquine & Hydroxychloroquine
+================================================================================
+
+`ophthalmology.pdf p.269`
+
+# **Examples of Ocular Side Effects of Systemic Medications**
+
+[⚠️ **SECTION BANNER**, not an ordinary heading — centred bold black title on a **pale blue-grey
+filled band** running the full text width, the same device the book uses to open a major part.
+This is the **only banner of its kind in chapter 20** and it marks the chapter's turn from
+*drugs used to treat the eye* to *systemic drugs that damage the eye*. Everything from here to the
+end of the chapter (printed 269–270) sits under it.]
+
+## **Amiodarone:**  [blue heading, centred, blue rule under it]
+
+Amiodarone is a **cardiac arrhythmia drug** that has been associated with:
+
+- <u>**Corneal deposits:**</u> Amiodarone also produces **whorl-shaped, pigmented deposits in the
+  corneal epithelium** (**cornea verticillate** or **vortex keratopathy**).
+  These deposits are **dosage-related and reversible if the dosage is decreased, or the drug is
+  discontinued entirely.**
+  These epithelial deposits **rarely cause visual symptoms**
+  [sic — "cornea verticillate", as printed. The usual form is *cornea verticillata*. Recorded, not
+  corrected.]
+
+- <u>**Optic neuropathy**</u> (**non-arteritic AION**): Patients present with **mildly decreased
+  vision, visual field defects, and bilateral optic disc swelling.**
+
+- <u>**Intracranial hypertension.**</u>
+
+## **Chloroquine & Hydroxychloroquine:**  [blue heading, centred, blue rule under it]
+
+**Chloroquine phosphate** and **hydroxychloroquine sulfate**, originally used to treat **malaria**,
+are also used to treat **rheumatoid arthritis, systemic lupus erythematosus, and other autoimmune
+disorders.**
+
+They can produce:
+- <u>**Corneal deposits:**</u> They are usually **asymptomatic** but can produce **glare and
+  photophobia**. The deposits **regress when the drug is discontinued**
+- <u>**Retinopathy:**</u> This is **much more serious**.
+  - This drug-induced retinal damage is **insidious, slowly progressive, and usually
+    irreversible.**
+  - The typical **bull's-eye macular lesions** do not become visible ophthalmoscopically **until
+    serious retinal damage has already occurred**
+
+- Chloroquine phosphate is now **rarely used** for the treatment of autoimmune disease due to its
+  **greater toxicity** and largely has been replaced by the **less toxic drug hydroxychloroquine
+  (Plaquenil).**
+
+- All patients **beginning hydroxychloroquine therapy** should have a **complete baseline dilated
+  examination with visual field testing**, as well as **colour vision and fundus photography** to
+  document fundus appearance and any other ocular conditions (e.g., macular degeneration, retinal
+  dystrophy).
+- Patients on hydroxychloroquine **with visual complaints** should be **referred to an
+  ophthalmologist** for ocular examination.
+
+[No figure on this page. The bottom quarter is blank.]
+
+[⚠️ SCAN QUALITY — this leaf shows heavy **show-through from its reverse (printed 270)**: mirrored
+grey text is visible across the whole page in the render, including a legible reversed
+"Corticosteroids can produce..." near the top. It is show-through, **not** content of printed 269.
+It also explains the stray line at the foot of printed 267: that line — "treat rheumatoid
+arthritis, systemic lupus erythematosus, and other autoimmune disorders." — is **the second line
+of THIS page's chloroquine paragraph**, captured at the edge of the 267 render.]
+
+[OCR: the show-through produces scattered nonsense fragments interleaved with the real text in
+`[[pdf.271]]`. It also reads the banner "Examples of Ocular Side Effects of Systemic Medications"
+as an ordinary line, losing the fact that a new major section opens here.]
+
+[Page number bottom-left: 269.]
+
+
+================================================================================
+## printed p.270  (PDF p.272)  —  LAST TEXT PAGE OF THE CHAPTER
+##   Corticosteroids · Digitalis · Ethambutol · HMG-COA reductase inhibitors
+##   (Statins) · Sildenafil, tadalafil, vardenafil, avanfil
+================================================================================
+
+`ophthalmology.pdf p.270`
+
+[Still under the printed-269 banner **"Examples of Ocular Side Effects of Systemic Medications"**
+— the banner is not repeated, but every heading on this page belongs to it.]
+
+## **Corticosteroids:**  [blue heading, centred, blue rule under it]
+
+- Corticosteroids can produce **posterior subcapsular cataracts** *(dark red)*. This phenomenon has
+  been **commonly observed in people with asthma, renal transplant, or rheumatoid arthritis.**
+- The use of **systemic or inhaled** corticosteroids is associated with **<u>elevated IOP</u>**
+  (**steroid-induced glaucoma**) in **susceptible individuals**.
+- **Oral and inhaled steroids** may also precipitate or aggravate **acute or chronic central serous
+  retinopathy**, a condition resulting in **pooling of fluid under the macula** with the resultant
+  **decrease in central vision**.
+
+## **Digitalis:**  [blue heading, centred, blue rule under it]
+
+Used for treatment of  heart failure.
+[sic — double space after "of", as printed.]
+
+Its <u>ocular side effects</u> include:
+- Decreased vision
+- **Abnormal colour vision** (**yellow or blue tinge** and **coloured halos around light**).
+
+Usually, **fatigue and weakness develop concomitantly with digitalis intoxication**, but the
+**visual disturbances often dominate the patient's complaints.**
+
+## **Ethambutol:**  [blue heading, centred, blue rule under it]
+
+- Ethambutol is useful in the **chemotherapy of tuberculosis**.
+- As a side effect, ethambutol can result in **optic neuropathy** *(dark red)*.
+- The onset of vision loss may be <u>within 1 month</u> of starting the drug.
+- **Recovery usually occurs when the drug is stopped**, but it may take **months**; occasionally,
+  vision loss is **permanent**.
+
+## **HMG-COA reductase inhibitors (Statins):**  [blue heading, centred, blue rule under it]
+
+- **Hydroxymethylglutaryl coenzyme reductase inhibitors (statins)** are **cholesterol-lowering
+  agents**.
+  [sic — the book writes "HMG-COA" with a capital O and A in the heading, and expands it as
+  "Hydroxymethylglutaryl coenzyme reductase inhibitors", **omitting the "A" of coenzyme A**. Both
+  as printed; recorded, not corrected.]
+- **Long-term use of these drugs in humans has NOT been shown to increase the risk of cataract.**
+- Also, **concurrent use of simvastatin with erythromycin** *(dark red)* has been associated with
+  an **increased risk of cataract** *(dark red)* **formation**.
+
+  [⚠️ READ THE POLARITY — the second and third bullets point opposite ways: statins alone carry
+  **no** demonstrated cataract risk; **simvastatin + erythromycin together** do. A question that
+  asks "statins and cataract" turns on which of the two it means.]
+
+## **Sildenafil, tadalafil, vardenafil, avanfil:**  [blue heading, centred, blue rule under it]
+[sic — "avanfil" in the heading; the body spells it **"avanafil"**. The book is inconsistent
+within four lines. Both as printed.]
+
+- **Sildenafil (Viagra)** and its related compounds -**tadalafil (Cialis)**, **vardenafil (Levitra,
+  Staxyn)**, and **avanafil (Stendra)** - are **cGMP-specific phosphodiesterase 5 inhibitors**.
+- They are used primarily for the treatment of **men with erectile dysfunction**.
+- At the time of **peak plasma levels**, patients may experience <u>transient, mild impairment of
+  colour discrimination</u>, often noted as a **blue colour tinge of vision**.
+- **No long-term ocular side effects have been identified to date.**
+- There have been a **few case reports** of **nonarteritic ischemic optic neuropathy** and **central
+  serous retinopathy**.
+
+[No figure on this page. This is the **last page of the chapter carrying text** — the last line is
+the sildenafil case-reports bullet; nothing follows it but the folio.]
+
+⚠️ **THE CHAPTER STOPS HERE WITHOUT A CLOSING DEVICE** — no summary box, no "key points", no
+question set, no references. It simply ends mid-list-of-systemic-drugs on printed 270, and printed
+271 is a blank leaf.
+
+[OCR: reads this page well — it is the cleanest page in the chapter. The only faults are the
+heading "HMG-COA" rendered "HMG-COA" correctly but the expansion's hyphenation lost, and the
+en-dashes around the drug list flattened to hyphens.]
+
+[Page number bottom-left: 270.]
+
+
+================================================================================
+## printed p.271  (PDF p.273)  —  BLANK
+================================================================================
+
+`ophthalmology.pdf p.271`
+
+**BLANK PAGE — no text, no figure, no folio, no rule, no eye glyph.**
+
+Verified two ways, not assumed:
+1. The rendered PNG `p-273.png` is **15.9 KB**, against **0.9–2.5 MB** for every other page of the
+   chapter — a two-order-of-magnitude gap that only a white page produces at 150 dpi.
+2. The image itself was opened and is **white edge to edge**.
+3. The OCR block `[[pdf.273]]` in `ch20.txt` is **empty** — the marker is present with nothing
+   under it, consistent with (1) and (2) rather than with a failed OCR pass on a page with ink.
+
+So the chapter's text runs **printed 254–270**, and the contents-page range 254–271 counts one
+trailing blank leaf.
+
+
+================================================================================
+## END OF CHAPTER 20
+================================================================================
+
