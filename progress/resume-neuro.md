@@ -383,3 +383,88 @@ that rule exists — it pays for the NEXT topic, not the current one.**
    the badge letter is wrong — and each entry's `source` records the printed letter as a fallback.
    **`index.html` is not this chat's file to edit. Still awaiting the user's decision.**
 5. **Neurosurgery stays excluded** — the user's standing instruction, ~273 questions, book pp.94–136.
+
+---
+
+## 2026-08-31 — Chat B picked this module up. Two findings before any new reading.
+
+**Live state re-measured from disk** (id-prefix count, not derived): `questions.neuro.js` = **151 MCQs**
+(`npqb-nr` 133, `npqb-ps` 18) + `cases.neuro.js` = **7 cases** = **158**. Section 6 above is stale: it
+records 129 + 7 = 136. The difference is **Neurology t07 "Headache" (Q119-Q140, 22 entries), which WAS
+merged** — section 6a still lists it as "not yet launched". Update section 6 at the next consolidation.
+
+**⚠️ `content/neuro/qb-pages/gg-ps-t16.draft.js` IS A FINISHED, UNMERGED BATCH.** Psychiatry topic 16
+"Anxiety & Related Disorders", **22 entries, `npqb-ps-19` through `npqb-ps-40`**, complete with its
+verbatim `.array.js` staging. It is untracked in git and absent from the live file — a whole batch of
+paid-for work sitting on disk. **Sweep, fold, splice and validate it before drafting anything new.**
+
+Its staging header already records what the one-past render found, so the next boundary is free:
+- Topic 16 printed **22** questions (Q19-Q40) against a promise of 21 — **the bank errs downward again**,
+  exactly as section 3 predicts.
+- Book pp.68-70 = PDF 73-75, answers on book p.71 = PDF 76. Offset PDF = book + 5 holds.
+- **PDF 77 (book p.72) is entirely topic 17 "Mood Disorders", opening at Q41.**
+
+**OCR route:** the WPS pipeline was checkpointed on the Pediatrics House bank, not on this one — full
+measurements and defect list in `progress/resume-peds.md` under *2026-08-31 WPS OCR CHECKPOINT*. Two
+things carry over directly: **superscripts flatten and can come back as a plausible WRONG digit**
+(a 10⁶ read as 10⁹), and **junk digit runs glue onto printed question numbers**. This bank is single-page
+A4 portrait, so it needs no half-sheet cropping — the reading-order scramble that forced cropping on
+Pediatrics does not apply here.
+
+
+---
+
+## 2026-08-31 — topic 16 SPLICED. Live neuro corpus 151 -> 173 MCQ.
+
+The finished-but-unmerged batch found at the start of this session is now in
+`app/data/questions.neuro.js`. It was swept before splicing, not after.
+
+**Six-stage duplicate sweep, 22 draft entries against 151 live: ZERO folds. Here is why that
+zero is a zero, and how it was measured.**
+
+| Stage | Test | Result |
+|---|---|---|
+| A | Exact normalised stem match against every live entry | 0 |
+| B | Identical normalised option SET (order-insensitive) | 0 |
+| C | Stem token Jaccard >= 0.60, >3-char tokens | 0 |
+| D | Intra-draft stem and option-set collisions | 0 |
+| E | Id collisions; chapter ids resolve against `MODULES` | 0 collisions; `ps-anxiety`, `ps-ocd`, `ps-pharm`, `ps-devices` all resolve (36 neuropsych chapters) |
+| F | Hand-read of the ranked near-miss list | no fold |
+
+**The ranking is the instrument, so here is the top of it.** Highest stem similarity in the whole
+22 x 151 grid was **0.429**, `npqb-ps-32` against `npqb-ps-14`. Every shared token is the
+interrogative frame — *"Which of the following is a common symptom of..."* — and the two differ on
+the only word that carries content (**mania** vs the anxiety item). That is the standing
+shared-template rule: **a shared frame PAIRS questions, it never folds them.** The next three
+ranked pairs are all `npqb-ps-27` against three different live stems at 0.400-0.333, again on the
+frame alone. Highest OPTION similarity anywhere was **0.400**, and it is cross-section
+(`npqb-ps-38` vs `npqb-nr-58`, a neurology CT question) - not a candidate. **No pair anywhere in
+the grid reached the 0.60 threshold**, so stage C printed nothing; that is an empty result from a
+threshold that was actually applied, not a check that was skipped.
+
+**Marker delta predicted BEFORE the splice and confirmed after.** The draft header declared 6
+boxed printings (Q21, Q25, Q26, Q31, Q33, Q38) needing no authored marker, so 22 - 6 = 16 new
+markers. Live markers went **106 -> 122**, exactly +16. Zero markers in any `source` field.
+
+**Post-splice validation:** 173 entries, 0 sparse holes (indexed with `for i / !(i in A)`, never
+`filter`), 0 out-of-range `answer`, 0 duplicate ids, and `npqb-ps-` ids now run **1-40 contiguous
+with no gap and no repeat**. Option counts in the batch: 20 x 4, 1 x 3, 1 x 5.
+
+**⚠️ CARRIED FORWARD FROM THE ARRAY HEADER, NOT RE-TESTED HERE.** Topic 16's answer key prints
+**bare letters with no names beside them**. The letter/name cross-check that caught the
+`npqb-nr-23` mismatch is therefore **unavailable for this entire topic — it was not performed and
+must not be reported as having passed.** If a key in Q19-Q40 is ever disputed, that is the missing
+instrument.
+
+**Convention correction.** I had planned to delete `gg-ps-t16.draft.js` after splicing. The
+directory says otherwise: `gg-nr-t07.draft.js` (90.6K) is still present and tracked long after t07
+was merged. **Drafts are kept and committed, not deleted.** Both `gg-ps-t16.array.js` (verbatim
+staging, preserving the source's own typos on purpose) and `gg-ps-t16.draft.js` stay.
+
+**File-format note for anyone writing a grep here.** The live file was uniformly double-quoted
+(`"id": "npqb-nr-1"`); the spliced batch is single-quoted (`id:'npqb-ps-19'`). **The file is now
+mixed-style.** Any id regex must be the tolerant form — `/["']?id["']?\s*:\s*["']([a-z0-9-]+)["']/`
+— because a pattern written for either style alone returns a silent, plausible undercount.
+
+**Next boundary, already established by the array header and not re-derived:** topic 17
+"Mood Disorders" opens at **Q41** on PDF 77 (book p.72). Offset PDF = book + 5 still holds.

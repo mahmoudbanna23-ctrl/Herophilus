@@ -481,3 +481,164 @@ Chapter 2 was grounded on:
   `/c/Users/Alfa388/AppData/Local/Microsoft/WinGet/Packages/oschwartz10612.Poppler_Microsoft.Winget.Source_8wekyb3d8bbwe/poppler-25.07.0/Library/bin/`
 - `.ps1` files are blocked by execution policy — pass PowerShell inline.
 - Node **is** installed (v26.7.0); the validator in `START-HERE.md` §7 runs.
+
+---
+
+## 2026-08-31 — WPS OCR CHECKPOINT on House ch.1. Measured, not estimated.
+
+**Verdict: the OCR route works and it replaces the page-READING stage. It does not replace looking,
+and it does not replace drafting.** Run by Chat B; nothing was spliced, no source touched.
+
+### Identity — both labels are real, and the project record is right
+
+PDF p.1 is a photocopied spread. **Left half is a marketing poster** carrying *"Pediatrics treasure
+2025 / For 5th year medstudents / The ultimate question bank for pediatrics curriculum of AFM"* over
+a Dr. House photo, plus the panel *"Dr. HOUSE question banks"*. **Right half is the real title page**:
+*"Dr. HOUSE in pediatric medicine & surgery MCQs"*, which is also what the running header on every
+content page says (*"Pediatric medicine end-of-round MCQs - 2025."*). So *Pediatrics treasure* is the
+**series/edition name on the poster**; the **book title is Dr. HOUSE**. `bank:'house'` stands.
+The 2026-08-31 session that called this file "Pediatrics treasure" was reading the poster half.
+
+### The pipeline, timed on this machine
+
+| Step | Measured |
+|---|---|
+| Render full sheet, `-r 200` | 8 sheets in **9.37 s** = 1.17 s/sheet |
+| Render half-sheet crop (`-x -y -W -H`) | 2 halves in **1.43 s** = 0.72 s/half |
+| `wpscli photo2word`, full sheets | 8 in **61.4 s** wall, 8-way parallel (43-50 s each) |
+| `wpscli photo2word`, half sheets | 2 in **12.0 s** wall |
+| Text yield | 21,311 chars for 8 sheets = **~1,330 chars per BOOK page (~340 tokens)** |
+| Exit codes | **all success, exit 0.** No 429. Paid tier live |
+
+**Projection for the rest of House medicine** (book pp.3-148 = 146 book pages = 74 PDF sheets, half-page
+route): render ~105 s, OCR ~15 min → **under 20 minutes of machine time for the whole remaining bank.**
+
+### ⚠️ RENDER EACH HALF SEPARATELY — full-sheet OCR SCRAMBLES READING ORDER
+
+Measured on PDF p.4: the full-sheet OCR emitted **Q10, Q11, then the tail of Q7, then Q8** — it read
+the right book page before finishing the left. Cropping the sheet into two halves fixed it completely:
+left half returned Q7-tail, Q8, Q9 in order; right half returned Q10, Q11, Q12 in order. Half-page
+rendering also gives one book page per file, so `[[book p.N]]` stamping is free.
+
+    pdftoppm -png -r 200 -f N -l N -x 0    -y 0 -W 1180 -H 1660 "<src>" <out>a
+    pdftoppm -png -r 200 -f N -l N -x 1160 -y 0 -W 1200 -H 1660 "<src>" <out>b
+
+(Page is 841.86 x 595.26 pt landscape; at 200 dpi that is 2338 x 1653 px, so the halves overlap ~20 px
+by design — nothing is lost at the gutter.)
+
+### Accuracy against the 31 shipped ch.1 entries
+
+| Check | Result |
+|---|---|
+| Stems present and legible in OCR | **31 / 31** |
+| Answer letters agreeing with the shipped entry | **31 / 31** |
+| Option lists complete (155 options) | **31 / 31** |
+
+30 stems matched by automatic prefix comparison; `pedhd-inf-2` did not, and **that is correct** — its
+vignette was deliberately restated from Q1 because it printed as a back-reference. Its OCR answer
+letter (C) still agrees. `pedhd-inf-28` needed hand-checking because its options are numeric tables.
+
+### ⚠️ What the OCR got WRONG — one of them would have shipped a wrong clinical value
+
+1. **⚠️⚠️ A SUPERSCRIPT 6 READ AS 9.** Q28 option A OCR'd as *"red cells 6x109/L"*. The page prints
+   **10⁶**, verified at 900 dpi (the glyph loops at the bottom). Every exponent in all five options of
+   Q28 is 6; there is no 10⁹ in the question. **A superscript is exactly the kind of thing this engine
+   flattens, and it flattens it into a plausible different number rather than into garbage** — the one
+   failure mode the WPS reference says does not happen. It happens on superscripts. The shipped entry
+   was already right.
+2. **Superscripts flattened generally** — `10⁶` came back as `106` in 7 of 11 instances in Q28 alone.
+3. **Junk digit runs, and they GLUE to question numbers.** 93 runs of 6+ digits across 8 sheets,
+   1,476 junk digits (~185 per sheet). Q1 arrived as `3187675499931.Joseph,aged 3 years`. Strip any
+   digit run of 6 or more; the trailing 1-2 digits before a full stop are the real question number.
+4. **Spaces dropped at line joins**: `dayand`, `babyimmunized`, `5years`, `tenderto`, `Alumbar`,
+   `ACT scan`, `Oralantibiotic`, `turgoris`, `elf-assessment`, `coryzalsymptoms`, `InFluenza`.
+5. **Letter-level typos**: `neutrophis`, `mmo/L`, `5x106` (lowercase x — though the book itself prints
+   a lowercase x, so that one is fidelity, not error).
+6. **The logo garbles differently every time**: `HOUSE` came back as `画OUSE`, `EOUSE`, `回OUS`,
+   `DOUSE`, `团OUSE`, `田OUSE`, `DOUSe`. Harmless, but it means header-stripping cannot match a literal.
+7. **The contents page reproduced the book's own error faithfully** — it printed Malignant disease as
+   p.125, which the 2026-08-12 render already proved is p.141. **The engine did not invent a fix.**
+   It also dropped a digit: `14. Diabetes & endocrinology  11` for 111.
+
+### ⚠️ One fault in the SHIPPED work, found only because the OCR disagreed
+
+**`pedhd-inf-21` option A is wrong.** The book prints **`A. Request a CXR`**; the shipped entry says
+*"Request a chest X-ray"* — an abbreviation silently expanded, which `CLAUDE.md` section 5 forbids.
+Verified on the page at 400 dpi. **Not yet repaired — one-line fix pending.**
+This is a new instrument catching a fault no validator could see, in the same family as the
+apostrophe-deletion lesson above: **a well-formed entry that does not say what the page says.**
+
+Also confirmed on the page: the doubled `the the most appropriate NEXT step` runs through **Q13, Q14,
+Q15 AND Q16** — the defect table above names only 13, 14 and 16. All four are in fact repaired in the
+shipped entries; the record understated the defect, not the repair.
+
+### Structure re-confirmed by reading, not inherited
+
+Chapter 1 is **31 questions, numbered 1-31 with no gaps or repeats** — matching the 31 shipped.
+Layout: p-002 right = banner + Q1 · p-003 = Q2-4 | Q5-7 · p-004 = Q7 tail, Q8, Q9 | Q10-12 ·
+p-005 = Q13-15 | Q16-18 · p-006 = Q19-21 | Q22-24 · p-007 = Q25-28 stem | Q28 options, Q29-31 ·
+**p-008 LEFT (book p.14) holds one box containing only `Answer: E.`** — Q31's tail, rest of the page
+blank. **p-008 RIGHT (book p.15) opens the `Kidney & urinary tract disorders` banner, numbering
+restarting at 1.** The spread formula `book B -> PDF floor(B/2)+1` holds.
+
+**⚠️ That lone `Answer: E.` on an otherwise blank page is the render-one-past rule paying out again.**
+A reader who stopped at p-007 would have lost Q31's key entirely.
+
+### Is it measurably faster? Honestly: yes for reading, unmeasured for drafting.
+
+The OCR replaces the **page-reading stage only**. Measured today: 8 sheets = 16 book pages cost
+**71 s of machine time and ~5,500 tokens of searchable text**. For comparison, the subagent that
+verified five specific details visually on those same pages spent **103,000 tokens over 19 tool calls**.
+Per-page reading cost falls by roughly an order of magnitude, and the text is greppable, which no
+image is.
+
+**But the 110-121 questions/day pace comes from drafting, grounding and writing explanations, and none
+of that changes.** No chapter has been drafted both ways, so **no end-to-end multiplier is claimed.**
+
+**Standing rule confirmed the hard way: the OCR is a search index. Q28 proves a clinical value can come
+back wrong AND plausible. Every number, unit, exponent and dose is read off the rendered page before it
+ships.**
+
+
+---
+
+## 2026-08-31 — CORRECTION: the abbreviation fault is THREE options, not one
+
+My checkpoint report named a single fault (`pedhd-inf-21` option A). A systematic grep of every
+radiology string in shipped ch.1 against the OCR text widened it, and a 400 dpi visual confirmation
+settled it. **Three shipped options had silently expanded the book's printed `CXR` into
+"chest X-ray".** All three are now repaired.
+
+| Entry | Option | Book prints | Was shipped as | Confirmed |
+|---|---|---|---|---|
+| `pedhd-inf-19` | E | `CXR` | `Chest X-ray` | 400 dpi, p-006 right half (book p.10) |
+| `pedhd-inf-21` | A | `Request a CXR` | `Request a chest X-ray` | 400 dpi (checkpoint pass) |
+| `pedhd-inf-22` | C | `A CXR` | `A chest X-ray` | 400 dpi, p-006 right half (book p.11) |
+
+Not a fault: `pedhd-inf-6`'s stem. The book genuinely prints "chest X-ray" in long form there —
+the only long-form radiology string on those pages. The transcriber was not expanding at random;
+they were normalising *options* to a house style while leaving stems alone.
+
+The three "why the others are wrong" table rows that label these options were relabelled `CXR` to
+match, so the row still points visibly at its option. Keys unmoved and re-verified against the
+printed answers: Q19 = D Echocardiogram, Q21 = D urine dipstick, Q22 = A full septic screen.
+File re-parses: 81 entries, 0 holes, 0 out-of-range answers.
+
+**The process lesson, which is the part worth keeping.** A one-off transcription slip and a
+systematic transcriber habit look identical when you only inspect the instance you tripped over.
+The instance was found by accident; the pattern was found only because the OCR text made it cheap
+to ask "where else does this string appear, on both sides?". **Grep the corpus AND the source for
+every occurrence of the token before calling a fault a one-off** — the count is the finding, not
+the first hit.
+
+### Other printed forms verified in Q19-Q31, for the drafter of later chapters
+
+Abbreviations the book prints and must NOT be expanded: `ASOT`, `TB`, `IV`, `CRP`, `MMR`, `WCC`,
+`RBC`, `VZIG` (printed with its own parenthetical expansion, which is part of the option and is not
+editorial), `EBV`.
+
+Typographic conventions where the shipped corpus normalises and we are NOT churning: the book
+prints a lowercase letter `x` for multiplication where we print the sign; the book prints `38C` and
+`39.5C` with no degree symbol where we print the degree symbol. These are house style applied
+consistently across the whole corpus, recorded here so a later reader does not mistake them for
+fresh faults. **Semantic strings are transcribed exactly; typography follows the corpus.**
