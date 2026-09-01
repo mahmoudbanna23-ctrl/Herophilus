@@ -208,5 +208,21 @@ and anything above disagree, **this block wins.**
   **If a detail you remember is missing, it MOVED — it was not deleted.** Find it with
   `grep -n "Pruned from MEMORY" progress\memory-archive.md` then `sed` the line range.
 - ⚠️ **Never quote a per-request token cost from memory.** `progress\READING-COSTS.md` is the
-  only figure, and four separate snapshots of it were written and invalidated on 2026-09-02
+  only figure, and SIX separate snapshots of it were written and invalidated on 2026-09-02
   alone. Re-measure with the `wc -lc` command at the top of that file.
+- ✅ **The app no longer caps options at five (fixed 2026-09-02) — more than five is safe to
+  ship.** `app\index.html` used to letter options from the literal `'ABCDE'`, which is
+  `undefined` past index 4: a sixth option got the badge `undefined`, the verdict line read
+  “the answer is undefined”, and options 6+ were mouse-only. It now letters **A–Z** via
+  `OPT_LETTERS`. **Ophthalmology never had an over-cap question** — the eight that existed are
+  all in neuro — which is why you were never warned; the note is here so you do not hold an
+  ophtho question back for having six options. Two things to know:
+  • **Letters are POSITIONAL.** If a source prints non-contiguous keys (a matching set that
+  skips letters), the badge will not match the book past the gap — record the printed key in
+  the entry’s `source` field, as neuro topic 06 does.
+  • **On a question showing more than five options the letter keys pick options**, so F and J
+  select options F and J instead of flag/jump until the answer is revealed. Deliberate, chosen
+  by the user — do not "fix" it back.
+  ⚠️ `app\index.html` **stays on your forbidden list.** The fix was the watch chat acting on
+  the user’s explicit instruction. Report rendering problems; do not edit the app.
+  Check any file you touch: `python tools/count-options.py`
