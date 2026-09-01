@@ -29,10 +29,13 @@ wc -lc "D:/claude os/CLAUDE.md" "D:/claude os/MEMORY.md" "D:/claude os/Medical s
 ```
 
 These are re-sent with **every request**, so growth here is a permanent tax. Baseline measured
-2026-09-02: **166 / 197 / 190 / 178 lines, 54,007 chars ≈ 13.5k tokens per request.**
+2026-09-02, after the watch setup landed: **166 / 197 / 190 / 194 lines, 55,198 chars ≈ 13.8k
+tokens per request.**
 
-Flag any file at **195 lines or more** — workspace `MEMORY.md` was at 197 on 2026-09-02 and is the
-one most likely to breach first. **Do not trim it yourself**; report it.
+⚠️ **Two files are within 6 lines of the cap:** workspace `MEMORY.md` at **197/200** and
+Herophilus `MEMORY.md` at **194/200**. Flag any file at 195 or more. **Do not trim one yourself**
+— a trim is a split into a documented archive with a dated pointer left behind, not a delete,
+and it is not watch work. Report it.
 
 If the totals moved, `progress\READING-COSTS.md` is now stale — say so. Its numbers have drifted
 twice; **re-measure, never quote it.**

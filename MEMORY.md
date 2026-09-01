@@ -65,6 +65,22 @@ tonight; the 429 rule in their first version was wrong). ✅ ENT CLOSED (`ledger
 - **USER RULING 2026-08-31: skip ALL OSCE content** — *"If I needed it later I'll tell you."*
   Deferred, not cut: skip it, say it was skipped and why, carry on. Not a scope cut needing approval.
 
+## The watch — oversight every ~12 h (set up 2026-09-02)
+
+- **A fresh chat runs `progress\WATCH.md` roughly every 12 hours and then dies.** It inspects
+  and reports — changed / stale / at risk — and **does not build, splice, edit content or commit.**
+  The *role* is permanent; the *session* never is (workspace §9 — a standing overseer chat would
+  become the exact drain §9 exists to stop).
+- ⚠️ **The watch reads the repo and the journals — never a work chat’s conversation.** Anything a
+  session learns and does not write into `resume-ophtho.md` / `resume-peds.md` / `resume-neuro.md`
+  is invisible to it and dies with that session. **This is now the main reason to keep the
+  journals current**, and `WATCH.md` §3 checks for exactly that failure.
+- **Both chat resume prompts carry a `## Changed since 2026-09-01` block** that declares itself
+  authoritative where it and the older text above it disagree. Append to that block rather than
+  editing the body when something changes.
+- **Always start a work chat fresh from its resume prompt** — never paste one into a live chat,
+  which re-sends that chat’s whole stale context and wastes the prompt entirely.
+
 ## Running three chats in parallel — what it actually costs and breaks
 
 - **MOVED 2026-09-01 ->** the measured ~75k-token boot cost per chat and the four-chat endpoint plan: archive block `Pruned from MEMORY.md - 2026-09-01`

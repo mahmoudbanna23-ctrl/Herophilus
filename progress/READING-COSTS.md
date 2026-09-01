@@ -96,13 +96,15 @@ Both files are now under the cap, and the whole auto-loaded tax stands at:
 | workspace `CLAUDE.md` | 166 | 9,145 |
 | workspace `MEMORY.md` | 197 | 15,044 |
 | Herophilus `CLAUDE.md` | 190 | 13,166 |
-| Herophilus `MEMORY.md` | 178 | 16,652 |
-| **per request** | | **54,007 ≈ 13.5k tokens** |
+| Herophilus `MEMORY.md` | 194 | 17,843 |
+| **per request** | | **55,198 ≈ 13.8k tokens** |
 
 ⚠️ **Re-measured live 2026-09-02 — three of the four rows had drifted.** The trim figures were
 recorded the moment each trim finished, then later edits in the same day put the chars back:
 workspace `MEMORY.md` 14,231 → 15,044 and **197 of its 200 lines**, Herophilus `MEMORY.md`
-15,744 → 16,652, Herophilus `CLAUDE.md` 13,006 → 13,166. **Do not trust a number in this table
+15,744 → 16,652, Herophilus `CLAUDE.md` 13,006 → 13,166. It drifted **again** the same day —
+the watch section took Herophilus `MEMORY.md` to **194 lines / 17,843** within the hour.
+⚠️ **Two of the four files are now within 6 lines of the 200-line cap.** **Do not trust a number in this table
 without re-measuring it** — `wc -lc` on the four files takes one command:
 
 ```bash
