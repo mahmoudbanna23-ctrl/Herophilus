@@ -93,13 +93,23 @@ Both files are now under the cap, and the whole auto-loaded tax stands at:
 
 | file | lines | chars |
 |---|---|---|
-| workspace `CLAUDE.md` | 166 | 9,092 |
-| workspace `MEMORY.md` | 190 | 14,231 |
-| Herophilus `CLAUDE.md` | 190 | 13,006 |
-| Herophilus `MEMORY.md` | 172 | 15,744 |
-| **per request** | | **52,073 ≈ 13.0k tokens** |
+| workspace `CLAUDE.md` | 166 | 9,145 |
+| workspace `MEMORY.md` | 197 | 15,044 |
+| Herophilus `CLAUDE.md` | 190 | 13,166 |
+| Herophilus `MEMORY.md` | 178 | 16,652 |
+| **per request** | | **54,007 ≈ 13.5k tokens** |
 
-Down from 57,845 ≈ 14.5k before the splits. **Both `CLAUDE.md` files and both `MEMORY.md` files
+⚠️ **Re-measured live 2026-09-02 — three of the four rows had drifted.** The trim figures were
+recorded the moment each trim finished, then later edits in the same day put the chars back:
+workspace `MEMORY.md` 14,231 → 15,044 and **197 of its 200 lines**, Herophilus `MEMORY.md`
+15,744 → 16,652, Herophilus `CLAUDE.md` 13,006 → 13,166. **Do not trust a number in this table
+without re-measuring it** — `wc -lc` on the four files takes one command:
+
+```bash
+wc -lc "D:/claude os/CLAUDE.md" "D:/claude os/MEMORY.md" "D:/claude os/Medical school/Herophilus/CLAUDE.md" "D:/claude os/Medical school/Herophilus/MEMORY.md"
+```
+
+Down from 57,845 ≈ 14.5k before the splits, though less far down than the trims first showed. **Both `CLAUDE.md` files and both `MEMORY.md` files
 were trimmed on 2026-09-02**; the Herophilus one lost its duplicated source-tier table, its prose
 layout inventory and its bug-history list to `reference.md` (`## Moved from CLAUDE.md - 2026-09-02`)
 — duplicated reference and history only, **no live rule left it.** The largest remaining is
