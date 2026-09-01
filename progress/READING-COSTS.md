@@ -94,10 +94,10 @@ Both files are now under the cap, and the whole auto-loaded tax stands at:
 | file | lines | chars |
 |---|---|---|
 | workspace `CLAUDE.md` | 166 | 9,145 |
-| workspace `MEMORY.md` | 190 | 14,367 |
+| workspace `MEMORY.md` | 200 | 15,436 |
 | Herophilus `CLAUDE.md` | 190 | 13,166 |
-| Herophilus `MEMORY.md` | 179 | 16,439 |
-| **per request** | | **53,117 ≈ 13.3k tokens** |
+| Herophilus `MEMORY.md` | 185 | 17,009 |
+| **per request** | | **54,756 ≈ 13.7k tokens** |
 
 ⚠️ **Re-measured live 2026-09-02 — three of the four rows had drifted.** The trim figures were
 recorded the moment each trim finished, then later edits in the same day put the chars back:
@@ -108,10 +108,14 @@ Then it drifted a THIRD time: workspace `MEMORY.md` was trimmed 197 → **190 li
 the same night, two superseded decision blocks moved verbatim to `workspace-archive.md`.
 Then a FOURTH time: Herophilus `MEMORY.md` was trimmed 194 → **179 lines / 16,439** the same
 night, six blocks moved verbatim to `memory-archive.md`.
-⚠️ **Four corrections in one day. Re-measure with the command above; never quote this table
-at anyone — including at yourself in the next hour.** Every one of the four figures was
-accurate when written and wrong within hours. Widest headroom now: 21 lines (Herophilus
-`MEMORY.md`); the caps, not these numbers, are what a check should compare against. **Do not trust a number in this table
+Then a FIFTH time, within the hour: Herophilus `MEMORY.md` 179 → **185** (the mixed-key
+counting trap), and workspace `MEMORY.md` 190 → **200 — back AT its cap**, ten lines added by
+another live chat in the same night the trim landed.
+⚠️ **FIVE corrections in one day. Re-measure with the command above; never quote this table
+at anyone — including at yourself in the next hour.** Every figure was accurate when written
+and wrong within hours, and a file you personally trimmed can be back at the cap before you
+finish the session: **these files have several live writers.** The CAPS, not these numbers,
+are what a check compares against. **Do not trust a number in this table
 without re-measuring it** — `wc -lc` on the four files takes one command:
 
 ```bash
