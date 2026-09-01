@@ -163,6 +163,12 @@ tonight; the 429 rule in their first version was wrong). ✅ ENT CLOSED (`ledger
   `node --check` after every append; then GREP EVERY PATH AND REGEX — the write reports success
   either way.** ⚠️ **`app\data\*.js` is MIXED CRLF/LF** — original body CRLF, spliced entries LF,
   so **nothing may anchor on a bare newline**; scan structurally.
+- **⚠️⚠️ COUNTING QUESTIONS IS A TRAP: `app\data\*.js` MIXES TWO KEY STYLES.**
+  `questions.neuro.js` holds **151 JSON-style quoted-key entries** (`"id":`) and **22 bare-key**
+  ones (`id:`). A bare-key grep counted **22 of 173** on 2026-09-02 and read as catastrophic
+  loss — **it was not: neuro is 173 q + 7 cases = 180, corpus 3,982, matching this file exactly.**
+  Count BOTH styles (command in `progress\WATCH.md` §4). **Bytes rising while a count falls
+  means THE COUNT is broken** — cross-check `git cat-file -s HEAD:<path>` before reporting loss.
 - **GitHub, PRIVATE**: `mahmoudbanna23-ctrl/Herophilus`, `main` + `design/clepsydra-and-sessions`
   (only off-drive copy of the Clepsydra art). `Semester 8\` gitignored.
   ✅ **PUSHED AND CURRENT 2026-09-02 — 0 commits ahead.** The old note claiming 262+ unpushed and

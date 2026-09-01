@@ -55,7 +55,20 @@ module.
 
 - **Peds ch.4 (25 q) and ch.5 (20 q) are drafted on disk and NOT SPLICED.** `questions.peds.js`
   should still show 81 until Chat B splices them:
-  `grep -c "pedhouse-" "D:/claude os/Medical school/Herophilus/app/data/questions.peds.js"`
+  ```bash
+  f="D:/claude os/Medical school/Herophilus/app/data/questions.peds.js"
+  echo $(( $(grep -oE '(^|[{, ])id: *[^ ]' "$f" | wc -l) + $(grep -oE '"id" *:' "$f" | wc -l) ))
+  ```
+  ⚠️⚠️ **`app\data\*.js` MIXES TWO KEY STYLES — count both or the answer is nonsense.**
+  `questions.neuro.js` holds **151 entries with JSON-style quoted keys** (`"id": "…"`) and
+  **22 with bare keys** (`id: "…"`). A bare-key regex counts 22 of 173 and reads as
+  catastrophic loss. **It is not loss:** 173 q + 7 cases = 180 neuro, and the corpus totals
+  **3,982**, matching `MEMORY.md` to the unit (verified 2026-09-02 from disk).
+  This check has now shipped WRONG TWICE — first grepping the invented prefix `pedhouse-`
+  (real prefixes are `pedhd-inf-` / `pedhd-renal-` / `pedhd-card-`), then with a bare-key-only
+  regex. **Both returned a number that looked like data loss on a perfectly intact file.**
+  ⚠️ **Before reporting any count as loss, re-count with the command above and compare against
+  `git cat-file -s HEAD:<path>` — bytes rising while a count falls means the COUNT is broken.**
 - **`content\peds\qb-pages\endpoint-s01-growth-puberty.draft.js`** — 89 questions, committed
   2026-09-02 (`7351007`), a splice fragment opening on a bare `{`, never audited. It is **parked
   endpoint work** under the user's deferral ruling. Nobody should be touching it. If it moved,
