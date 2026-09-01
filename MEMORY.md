@@ -26,6 +26,10 @@ each section is in)**; war stories, superseded state and every block pruned from
 **`progress\memory-archive.md`** — read the block you are pointed at before resuming a paused stream.
 Where this file and the archive disagree, this file wins. ⚠️ **Before opening anything in
 `progress\`, check what it costs in `progress\READING-COSTS.md`.**
+**`CLAUDE.md` was trimmed 2026-09-02** (198 → 190 lines): its layout inventory, its duplicated
+source-tier table and its bug-history list are in `reference.md`, `## Moved from CLAUDE.md -
+2026-09-02` — **no live rule left it.** The four auto-loaded files now cost **52,073 chars ≈ 13.0k
+tokens per request**, down from 57,845.
 
 ## Resume here — state at end of 2026-08-31
 
@@ -157,8 +161,10 @@ tonight; the 429 rule in their first version was wrong). ✅ ENT CLOSED (`ledger
   ⚠️ **`app\data\*.js` is MIXED CRLF/LF** — the original body is CRLF, spliced entries are LF, so
   **nothing may anchor on a bare newline**; scan structurally.
 - **GitHub, PRIVATE**: `mahmoudbanna23-ctrl/Herophilus`, `main` + `design/clepsydra-and-sessions`
-  (only off-drive copy of the Clepsydra art). `Semester 8\` gitignored. Push: `ledger.md` §13 —
-  **262+ commits ahead, UNPUSHED; needs the user's device-code flow** (a plain `git push` hangs).
+  (only off-drive copy of the Clepsydra art). `Semester 8\` gitignored.
+  ✅ **PUSHED AND CURRENT 2026-09-02 — 0 commits ahead.** The old note claiming 262+ unpushed and
+  a required device-code flow was **stale**: a plain `git push` went straight through, no prompt
+  (Git Credential Manager has it cached). Verify with `git rev-list --count origin/<branch>..HEAD`.
   **⚠️ Stage EXPLICIT PATHS — never `git add -A`, never a directory a subagent writes into**; `index.lock` = another chat is mid-commit.
 - **Measure, then believe:** check the sum, check the auditor, reconcile written + folded = printed; a
   counter that does not move is a finding. **Never write a page number, filename or id from memory**
