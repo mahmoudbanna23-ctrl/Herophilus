@@ -73,13 +73,23 @@ module.
   2026-09-02 (`7351007`), a splice fragment opening on a bare `{`, never audited. It is **parked
   endpoint work** under the user's deferral ruling. Nobody should be touching it. If it moved,
   that is worth reporting.
-- **The five-option cap is still live and latent.** `app\index.html` lines **4576** (`'ABCDE'[i]`),
-  **4591**, **6315** assume at most five options. Verify no shipped question exceeds five:
+- **⚠️⚠️ THE FIVE-OPTION CAP HAS ALREADY FIRED — it is a LIVE DEFECT, not a latent risk.**
+  `app\index.html` **4576** (`'ABCDE'[i]`), **4591**, **6315** assume at most five options.
+  **Eight shipped questions exceed it, all in `questions.neuro.js`** (verified 2026-09-02 by
+  reading the arrays off disk, not by a regex): `npqb-nr-43` (9 options), `npqb-nr-51` (8),
+  and **`npqb-nr-113`–`118`, an extended-matching block sharing one 10-option gait list**.
+  Only the first two were ever documented, and only as a FUTURE risk for topic 03.
+  **Six of the eight have `answer` at index ≥ 5** (nr-43:6, nr-51:6, nr-113:5, nr-114:8,
+  nr-115:7, nr-117:6). For those the app prints **“the answer is undefined”** and renders the
+  correct option with the letter `undefined` — the student cannot learn the answer. The 6th
+  option onward is also **mouse-only**, since the A–E keyboard shortcut cannot reach it.
+  Re-check with the escape-aware scan (both key styles), never a bare `options:` grep — a
+  bare-key scan checked 22 of 173 neuro questions and reported all clear:
   ```bash
-  cd "D:/claude os/Medical school/Herophilus" && grep -o "options:\s*\[" app/data/questions.*.js | wc -l
+  cd "D:/claude os/Medical school/Herophilus" && python tools/count-options.py
   ```
-  The real test is neuro topic 03 (Q43 has nine options, Q51 has eight). **`index.html` is on both
-  work chats' forbidden list** — if topic 03 is approaching, raise it with the user.
+  **Do not fix it here — `index.html` is on both work chats' forbidden list and this is watch
+  work only. Report it to the user; the fix is theirs to schedule.**
 - **Source PDFs are originals.** 158 files, 3.64 GB under `Medical school`. Confirm the count:
   `find "D:/claude os/Medical school" -iname "*.pdf" | wc -l`
 

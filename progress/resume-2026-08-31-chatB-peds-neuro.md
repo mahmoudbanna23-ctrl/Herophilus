@@ -285,3 +285,15 @@ and anything above disagree, **this block wins.**
 - ⚠️ **Never quote a per-request token cost from memory.** `progress\READING-COSTS.md` is the
   only figure, and four separate snapshots of it were written and invalidated on 2026-09-02
   alone. Re-measure with the `wc -lc` command at the top of that file.
+- **⚠️⚠️ THE FIVE-OPTION CAP HAS FIRED — do not add to it** (found 2026-09-02, unfixed).
+  Eight `questions.neuro.js` questions already exceed five options: `npqb-nr-43` (9 options),
+  `npqb-nr-51` (8), and `npqb-nr-113` through `npqb-nr-118` — an extended-matching block
+  sharing one 10-option gait list. The renderer’s
+  `'ABCDE'[i]` is undefined past index 4, so six of them tell the student **“the answer is
+  undefined”** and letter the correct option `undefined`; option 6+ cannot be reached by keyboard.
+  ⚠️ **You cannot fix this — `app\index.html` stays on your forbidden list.** What you MUST do:
+  **if a source topic gives you an extended-matching block or any question with more than five
+  options, STOP and raise it with the user rather than splicing it.** Every one of the eight is
+  in neuro, which is yours. Re-check any file you touch with:
+  `cd "D:/claude os/Medical school/Herophilus" && python tools/count-options.py`
+  Full detail in `progress\WATCH.md` §4.

@@ -54,6 +54,12 @@ tonight; the 429 rule in their first version was wrong). ✅ ENT CLOSED (`ledger
   reported lost, found intact 2026-08-31 — archive). ⚠️ Debts: 12 `nr-intro`/`nr-exam` tags the book
   can replace (`npqb-nr-14` first) · ophtho theory reconciliation (~63 rows, `theory-plan.md`; book
   caches exist — do NOT re-read).
+- **⚠️⚠️ THE FIVE-OPTION CAP HAS FIRED ON SHIPPED CONTENT** (found 2026-09-02, NOT fixed).
+  Eight `questions.neuro.js` questions exceed five options — `npqb-nr-43`, `-51`, and the
+  `-113`–`118` extended-matching block (10 shared options). `'ABCDE'[i]` is undefined past
+  index 4, so **six of them print “the answer is undefined”** and render the correct option
+  with the letter `undefined`; option 6+ is mouse-only. Fix is in `app\index.html` (4576/4591/
+  6315) — **on both work chats’ forbidden list.** Detail: `progress\WATCH.md` §4.
 - **USER RULING 2026-08-31: skip ALL OSCE content** — *"If I needed it later I'll tell you."*
   Deferred, not cut: skip it, say it was skipped and why, carry on. Not a scope cut needing approval.
 
