@@ -73,23 +73,33 @@ module.
   2026-09-02 (`7351007`), a splice fragment opening on a bare `{`, never audited. It is **parked
   endpoint work** under the user's deferral ruling. Nobody should be touching it. If it moved,
   that is worth reporting.
-- **⚠️⚠️ THE FIVE-OPTION CAP HAS ALREADY FIRED — it is a LIVE DEFECT, not a latent risk.**
-  `app\index.html` **4576** (`'ABCDE'[i]`), **4591**, **6315** assume at most five options.
-  **Eight shipped questions exceed it, all in `questions.neuro.js`** (verified 2026-09-02 by
-  reading the arrays off disk, not by a regex): `npqb-nr-43` (9 options), `npqb-nr-51` (8),
-  and **`npqb-nr-113`–`118`, an extended-matching block sharing one 10-option gait list**.
-  Only the first two were ever documented, and only as a FUTURE risk for topic 03.
-  **Six of the eight have `answer` at index ≥ 5** (nr-43:6, nr-51:6, nr-113:5, nr-114:8,
-  nr-115:7, nr-117:6). For those the app prints **“the answer is undefined”** and renders the
-  correct option with the letter `undefined` — the student cannot learn the answer. The 6th
-  option onward is also **mouse-only**, since the A–E keyboard shortcut cannot reach it.
-  Re-check with the escape-aware scan (both key styles), never a bare `options:` grep — a
-  bare-key scan checked 22 of 173 neuro questions and reported all clear:
+- **✅ The five-option cap was FIXED 2026-09-02 — this is now a REGRESSION check, not a defect.**
+  `app\index.html` had `'ABCDE'[i]` at **4576**, **4591**, **6315**; past index 4 that is
+  `undefined`, so eight shipped `questions.neuro.js` questions — `npqb-nr-43` (9 options),
+  `npqb-nr-51` (8), and `npqb-nr-113`–`118` (a matching block sharing one 10-option gait list)
+  — lettered options `undefined` and told the student **“the answer is undefined”**. All three
+  sites now use `OPT_LETTERS` (A–Z). Verified with `node --check` on all 19 script blocks and a
+  node harness over the real data: `nr-113` letters **A–J**, answer **F — Parkinson’s disease**.
+  ⚠️ **Behaviour the user chose and should not be "corrected" back:** letter keys pick any
+  option that is actually shown, so on those eight questions **F picks option F and J picks
+  option J** while answering; flag(F)/jump(J) are unchanged on every other question and return
+  after reveal. Confirm the cap still holds, both key styles, escape-aware:
   ```bash
   cd "D:/claude os/Medical school/Herophilus" && python tools/count-options.py
   ```
-  **Do not fix it here — `index.html` is on both work chats' forbidden list and this is watch
-  work only. Report it to the user; the fix is theirs to schedule.**
+  Also confirmed 2026-09-02: **0 of 3,893 questions have an `answer` index outside their own
+  options list** — that would render `undefined` for the same reason. Re-check if it changes.
+  **Still not watch work to edit `index.html`** — the 2026-09-02 fix was done on the user’s
+  explicit instruction. Without one, report and stop.
+- **⚠️ ONE THING THE CAP FIX DID NOT SOLVE — letters are POSITIONAL, the book’s are not.**
+  The topic-06 gait matching set is printed in the bank with **non-contiguous** keys —
+  **A B C D E F J k L M** (G, H and I are skipped). The app letters strictly by position, so
+  measured 2026-09-02 against the data: `npqb-nr-113` app **F** = printed **F** ✅,
+  `-116` **B**=**B** ✅, `-118` **D**=**D** ✅, but `npqb-nr-114` app **I** vs printed **L**,
+  `-115` app **H** vs printed **K**, `-117` app **G** vs printed **J**. **The option TEXT and
+  the scoring are correct in all six** — only the badge letter differs, and each entry’s
+  `source` field records the printed key. Mirroring the book would need per-question letter
+  data in the bank plus a renderer change; **the user has been told and it is their call.**
 - **Source PDFs are originals.** 158 files, 3.64 GB under `Medical school`. Confirm the count:
   `find "D:/claude os/Medical school" -iname "*.pdf" | wc -l`
 

@@ -172,26 +172,25 @@ no distractor authored. **Record every question handled this way in §7 below.**
 
 ---
 
-## 4a. ⚠️⚠️ BLOCKER RAISED WITH THE USER — `app\index.html` CAPS OPTIONS AT FIVE
+## 4a. ✅ RESOLVED 2026-09-02 — `app\index.html` no longer caps options at five
 
-**Found 2026-08-12 when topic 03 produced the project's first questions with more than five options**
-— Q43 prints **nine** (a–i) and Q51 prints **eight** (a–h). Three places in the shared shell assume
-at most five, and **`index.html` is on this chat's forbidden list, so it has NOT been edited.**
+**Raised 2026-08-12** when topic 03 produced the project’s first questions with more than five
+options — Q43 prints **nine** (a–i) and Q51 **eight** (a–h) — and made worse by topic 06’s six
+ten-option questions. The shell assumed at most five in three places, all `'ABCDE'`, which is
+`undefined` past index 4: the letter badge, the verdict line (**“the answer is undefined”**), and
+the keyboard handler (options F+ were mouse-only).
 
-| Line | Code | What breaks |
-|---|---|---|
-| **3746** | `<span class="ltr">${'ABCDE'[i]}</span>` | the letter badge renders **`undefined`** for every option past E |
-| **3761** | `'Not quite — the answer is '+'ABCDE'[q.answer]` | for `npqb-nr-43` (answer index 6) the verdict reads **“the answer is undefined”** |
-| **5452** | `if('ABCDE'.includes(k) …)` | keyboard shortcuts only reach A–E; options F–I are mouse-only |
+**Fixed by the watch chat on the user’s explicit instruction, 2026-09-02.** A single
+`const OPT_LETTERS='ABCDEFGHIJKLMNOPQRSTUVWXYZ';` now feeds all three sites. Per the user’s
+ruling, **letter keys pick any option that is actually shown**, so on a question displaying A–J
+the F and J keys select options F and J rather than flag/jump; flag and jump are untouched
+everywhere else and return once the answer is revealed. Verified with `node --check` on all 19
+script blocks and a node harness on the real data: `npqb-nr-113` letters **A–J** and reveals
+**“the answer is F — Parkinson’s disease”**.
 
-**The questions still work** — the option text renders, clicking scores correctly, the ✅/❌ marks and
-the explanation are all fine. **Only the letter badge and the verdict line are wrong.** So the
-content is shipped as printed rather than held back.
-
-**The fix is one expression, in all three places:** `String.fromCharCode(65+i)` in place of
-`'ABCDE'[i]`, and a matching widening of the keyboard handler. **It is the app chat's or the user's
-call, not this one's.** ⚠️ It affects every module — Ophthalmology and Pediatrics will hit it the
-moment their banks print a sixth option.
+⚠️ **Still open — see item 4 in §10:** the letters are POSITIONAL, and this bank’s printed keys
+for the topic-06 matching set are not. **`index.html` remains outside this chat’s scope** — the
+edit was the watch chat’s, not a licence to edit it here.
 
 ## 5. Chapter filing decisions — keep later batches consistent with these
 
@@ -375,13 +374,15 @@ that rule exists — it pays for the NEXT topic, not the current one.**
 2. **Grade Gain Neurology t07–t14 and Psychiatry t16–t23.**
 3. **Theory notes for all 27 chapters** — in scope by the user's ruling of 2026-08-12, which
    overruled the brief's §9. One chapter per subagent once the banks are closed.
-4. **⚠️ The five-option cap in `app\index.html` (§4a) is now WORSE than first reported.** Topic 06
-   holds **six questions with TEN options**, and the bank's own printed letters for that matching set
-   are **non-contiguous — A B C D E F J k L M** (G, H and I are skipped). So `'ABCDE'[i]` yields
-   `undefined` beyond the fifth option, and even a corrected `String.fromCharCode(65+i)` would render
-   index 6 as "G" where the book prints "J". **The option TEXT and the scoring are correct** — only
-   the badge letter is wrong — and each entry's `source` records the printed letter as a fallback.
-   **`index.html` is not this chat's file to edit. Still awaiting the user's decision.**
+4. **✅ The five-option cap in `app\index.html` (§4a) was FIXED 2026-09-02 — one caveat left.**
+   Options now letter A–Z, so topic 06’s six ten-option questions render and score correctly and
+   no longer print “the answer is undefined”. **The caveat:** the app letters by POSITION, while
+   this bank prints the gait set’s keys **non-contiguously — A B C D E F J k L M** (G, H, I are
+   skipped). Measured against the data 2026-09-02: `npqb-nr-113` app **F** = printed **F**,
+   `-116` **B**=**B**, `-118` **D**=**D**, but `-114` app **I** vs printed **L**, `-115` **H** vs
+   **K**, `-117` **G** vs printed **J**. **Option text and scoring are right in all six**; only
+   the badge differs, and every entry’s `source` records the printed key. Mirroring the book
+   needs per-question letter data plus a renderer change — **reported to the user; their call.**
 5. **Neurosurgery stays excluded** — the user's standing instruction, ~273 questions, book pp.94–136.
 
 ---

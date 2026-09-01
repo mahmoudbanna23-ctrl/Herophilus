@@ -4543,6 +4543,11 @@ function vCase(p,q,m,prev){
   }
 }
 
+// Option letters. Extended-matching questions ship up to ten options (npqb-nr-113..118),
+// so this has to outrun 'ABCDE': past index 4 that string yields undefined, which rendered
+// as the literal letter "undefined" and printed "the answer is undefined" on reveal.
+const OPT_LETTERS='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
 function vQuiz(p){
   const q=QUESTIONS.find(x=>x.id===Q.ids[Q.i]);
   /* backticks, not quotes: ico() contains single quotes, which would close a
@@ -4573,7 +4578,7 @@ function vQuiz(p){
     else if(i===Q.sel)cls+=' sel';
     const mark=Q.shown?(i===q.answer?'<span class="mark">✅</span>':(i===Q.sel?'<span class="mark">❌</span>':'')):'';
     h+=`<button class="${cls}" ${Q.shown?'disabled':''} onclick="pick(${i})">
-      <span class="ltr">${'ABCDE'[i]}</span><span>${esc(o)}</span>${mark}</button>`;
+      <span class="ltr">${OPT_LETTERS[i]}</span><span>${esc(o)}</span>${mark}</button>`;
   });
   h+=`</div>`;
 
@@ -4588,7 +4593,7 @@ function vQuiz(p){
   }else{
     const ok=Q.sel===q.answer;
     h+=`<div class="verdict ${ok?'ok':'bad'}"><span class="big">${ok?ico('target',26):ico('laurel',26)}</span>
-      ${ok?'Correct!':'Not quite — the answer is '+'ABCDE'[q.answer]}</div>`;
+      ${ok?'Correct!':'Not quite — the answer is '+OPT_LETTERS[q.answer]}</div>`;
 
     if(!prev||prev.conf===undefined){
       h+=`<div class="conf"><div class="conf-q">${ico('target',15)} How sure were you? This sets when it comes back.</div>
@@ -6312,7 +6317,7 @@ document.addEventListener('keydown',e=>{
   const q=QUESTIONS.find(x=>x.id===Q.ids[Q.i]);
   if(!q)return;
   const k=e.key.toUpperCase();
-  if('ABCDE'.includes(k)&&!Q.shown&&q.options){const i='ABCDE'.indexOf(k);if(i<q.options.length){pick(i);return}}
+  if(!Q.shown&&q.options&&k.length===1){const i=OPT_LETTERS.indexOf(k);if(i>=0&&i<q.options.length){pick(i);return}}
   if(k==='E'&&Q.shown){const b=document.querySelector('.ex-head');if(b)toggleExp(b);return}
   if('1234'.includes(e.key)){setPen(PENS[+e.key-1][0]);return}
   if(e.key==='0'){setPen('er');return}

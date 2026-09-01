@@ -141,16 +141,13 @@ and committed today). Both `gg-ps-t16.array.js` and `gg-ps-t16.draft.js` are kep
   be the tolerant form** `/["']?id["']?\s*:\s*["']([a-z0-9-]+)["']/` — a pattern written for one
   style returns a silent, plausible undercount.
 
-⚠️⚠️ **BEFORE YOU SPLICE NEURO TOPIC 03 — THE APP CAPS OPTIONS AT FIVE.** Topic 03 prints the
-project's first over-five questions: **Q43 has nine options (a–i), Q51 has eight (a–h).** Three
-places in `app\index.html` assume at most five — verified still unfixed 2026-09-01 at lines
-**4576** (`'ABCDE'[i]` → the letter badge renders `undefined` past E), **4591** (the verdict line
-reads "the answer is undefined"), and **6315** (keyboard shortcuts only reach A–E). The fix is
-`String.fromCharCode(65+i)` in all three, plus widening the key handler — but **`index.html` is on
-your forbidden list, so do NOT edit it.** Raise it with the user before topic 03 ships.
-Measured 2026-09-01: **no shipped question in any module exceeds five options today**, so nothing
-is currently broken. Full detail in `resume-neuro.md` §4a. This affects ophtho and peds too, the
-moment either bank prints a sixth option.
+✅ **THE OPTION CAP IS FIXED (2026-09-02) — topic 03 is safe to splice.** This block used to
+say the app broke past five options and to hold topic 03 back. It no longer does: `app\index.html`
+letters options A–Z via `OPT_LETTERS`. **Q43 (nine options) and Q51 (eight) render correctly.**
+The earlier note that "no shipped question exceeds five options today" was **wrong** — eight
+already did. Letters are positional, so where a bank prints non-contiguous keys the badge can
+differ from the book; record the printed key in `source`. `index.html` is still NOT yours to
+edit — report rendering problems, do not fix them. Detail in `resume-neuro.md` §4a.
 
 **Open debt:** 12 `nr-intro`/`nr-exam` outside-knowledge tags the book can replace, `npqb-nr-14`
 first. Defects already recorded are rostered in `resume-neuro.md` §7 — read it before
@@ -285,15 +282,17 @@ and anything above disagree, **this block wins.**
 - ⚠️ **Never quote a per-request token cost from memory.** `progress\READING-COSTS.md` is the
   only figure, and four separate snapshots of it were written and invalidated on 2026-09-02
   alone. Re-measure with the `wc -lc` command at the top of that file.
-- **⚠️⚠️ THE FIVE-OPTION CAP HAS FIRED — do not add to it** (found 2026-09-02, unfixed).
-  Eight `questions.neuro.js` questions already exceed five options: `npqb-nr-43` (9 options),
-  `npqb-nr-51` (8), and `npqb-nr-113` through `npqb-nr-118` — an extended-matching block
-  sharing one 10-option gait list. The renderer’s
-  `'ABCDE'[i]` is undefined past index 4, so six of them tell the student **“the answer is
-  undefined”** and letter the correct option `undefined`; option 6+ cannot be reached by keyboard.
-  ⚠️ **You cannot fix this — `app\index.html` stays on your forbidden list.** What you MUST do:
-  **if a source topic gives you an extended-matching block or any question with more than five
-  options, STOP and raise it with the user rather than splicing it.** Every one of the eight is
-  in neuro, which is yours. Re-check any file you touch with:
+- **✅ THE FIVE-OPTION CAP IS FIXED (2026-09-02) — the earlier "do not splice" order is LIFTED.**
+  `app\index.html` now letters options A–Z via `OPT_LETTERS`, so **an extended-matching block
+  or any question with more than five options is safe to splice.** Previously eight neuro
+  questions (`npqb-nr-43`, `-51`, `npqb-nr-113`–`118`) lettered options `undefined` and printed
+  “the answer is undefined”; they render correctly now.
+  ⚠️ Letters are **positional**. If a source set prints non-contiguous keys (topic 06 prints
+  A B C D E F J k L M), the badge will not match the book for options past the gap — keep
+  recording the printed key in each entry’s `source`, as topic 06 already does.
+  ⚠️ `app\index.html` **stays on your forbidden list** — the fix was the watch chat acting on
+  the user’s explicit instruction, not a licence for you to edit it. If you hit a rendering
+  problem, report it; do not fix it.
+  After splicing, confirm answers still line up with their options:
   `cd "D:/claude os/Medical school/Herophilus" && python tools/count-options.py`
   Full detail in `progress\WATCH.md` §4.
