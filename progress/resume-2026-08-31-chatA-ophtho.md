@@ -17,7 +17,29 @@ A second chat is running peds and neuro at the same time. Stay inside your modul
 2. `tools\wps-ocr-reference.md` — the pipeline, its defects, its exit codes.
 3. `progress\briefs\ophtho-bank-brief.md` — **before touching anything.** The bank arithmetic is
    not guessable.
-4. `progress\resume-ophtho.md`, **last section** — your first task is written out there in full.
+4. `progress\resume-ophtho.md` — ⚠️ **DO NOT READ THIS FILE WHOLE.** 1,544 lines, ~26k tokens.
+   Read only from the anchor:
+
+   ```bash
+   sed -n '/RESUME-READ-FROM-HERE/,$p' progress/resume-ophtho.md
+   ```
+
+   That is ~6k tokens and carries everything from 2026-08-31 onward, your first task included.
+   Above the anchor is closed history: reach into it with `grep -n "^#\{1,3\} " progress/resume-ophtho.md`
+   and then `sed -n '<a>,<b>p'` on the one block you need. Never `Read` it.
+
+⚠️ **The same rule applies to every file in `progress\`.** Measured 2026-09-01, this chat's
+"read first" list was **161k chars ≈ 40k tokens** — a fifth of your window gone before question
+one. With the anchor it is ~23k. **Before opening anything in `progress\`, check its price in
+`progress\READING-COSTS.md`.**
+
+⚠️ **`progress\ledger.md` WAS SPLIT ON 2026-09-01.** It had reached 830k chars ≈ 207k tokens —
+larger than your whole context window, so it could not be opened at all. Sections 1–16 (ENT,
+closed) are now `progress\ledger-closed-1-16.md`; `ledger.md` keeps §17 onward and is ~32k tokens.
+**No section was renumbered and nothing was deleted** — verified byte-exact against git. A
+reference written anywhere as `ledger.md` §7 / §11 / §13 / §14 / §15 / §16 still means that
+section; the index at the top of `ledger.md` says which file it is in and on what line. Your
+end-of-run consolidation pass still writes to `ledger.md`, unchanged.
 
 ---
 

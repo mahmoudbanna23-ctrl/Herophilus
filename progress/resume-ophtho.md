@@ -1152,6 +1152,7 @@ looking at the page gets option order and spacing wrong.** Search index, never a
 
 ---
 
+<!-- RESUME-READ-FROM-HERE -->
 ## Open debt CLOSED 2026-08-31 — `content\ophtho\book\ch20-drugs.txt` exists again
 
 The ch.20 book cache that died with its agent in §17p has been rewritten and **verified from disk**:

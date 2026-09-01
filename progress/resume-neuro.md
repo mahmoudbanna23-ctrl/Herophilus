@@ -386,6 +386,7 @@ that rule exists — it pays for the NEXT topic, not the current one.**
 
 ---
 
+<!-- RESUME-READ-FROM-HERE -->
 ## 2026-08-31 — Chat B picked this module up. Two findings before any new reading.
 
 **Live state re-measured from disk** (id-prefix count, not derived): `questions.neuro.js` = **151 MCQs**

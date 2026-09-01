@@ -643,6 +643,7 @@ prints a lowercase letter `x` for multiplication where we print the sign; the bo
 consistently across the whole corpus, recorded here so a later reader does not mistake them for
 fresh faults. **Semantic strings are transcribed exactly; typography follows the corpus.**
 
+<!-- RESUME-READ-FROM-HERE -->
 ## 2026-08-31 — THE COUNT, MEASURED. Peds House ch.4-20 = 312, not ~160.
 
 The inherited "~160" estimate was derived from a density ratio, never measured. It is low by

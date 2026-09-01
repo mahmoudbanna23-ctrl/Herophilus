@@ -772,3 +772,82 @@ still operative, a compressed one-liner stayed in MEMORY.md; this is the full re
 - ✅ **OPHTHO BANKS COUNTED FOR REAL 2026-08-18: ~1,918 REMAIN** (GG 949 of 1,087, House ~969 of
   ~1,025) against 27 Sep. ⚠️ **~304 are IMAGE questions, every crop looked at — the dominant cost.**
   ⚠️ **56 House STAGED, UNMERGED**; **132 model-exam items are SHORT-ANSWER → `type:'case'`.**
+
+## Pruned from MEMORY.md - 2026-09-01
+
+Moved out of `MEMORY.md` on 2026-09-01 to get it back under the 200-line cap in workspace
+`CLAUDE.md` 9. **Nothing was deleted and nothing was reworded** -- each block below is the exact
+text that stood in `MEMORY.md`, sliced by line. Every one left a pointer bullet behind in the
+section it came from. All of it is closed-topic reference: theory is 153/153 complete and ENT is
+closed, so none of it is live resume state. Read the block you were pointed at before acting on the
+topic it covers.
+
+### The measured ~75k boot cost per chat, and the four-chat endpoint plan  (was MEMORY.md lines 64-69)
+
+- **Boot cost is ~75,000 tokens per chat, not the ~12,000 I first estimated** (measured from
+  transcript `usage`: 33,768 cache_creation + 41,627 cache_read at message 3). The low figure
+  counted project files only and omitted system prompt, tool definitions and MCP schemas.
+  Three duplicate boots ≈ 225k — still trivial against what the OCR route saves.
+- **The endpoint plan is FOUR chats** (peds splits part1/part2 — peds alone is 46% of the 8,616
+  pages): 9–15 working days wall-clock, against 33–51 sequential at the measured ~115 q/day.
+
+### Ophtho bank arithmetic, image-question crop craft, ENT general traps  (was MEMORY.md lines 86-98)
+
+- **⚠️ OPHTHO BANK ARITHMETIC — full brief `progress\briefs\ophtho-bank-brief.md`.** GG:
+  **PDF = book + 7**, continuous numbering (exam sections restart at Q1). House: **A4 LANDSCAPE,
+  TWO book pages per PDF sheet**, `PDF = floor(book/2)+2`, answers inline, numbering restarts
+  each chapter (`-c<n>-` ids). **Render past the LAST answer page** (the "Page As" figure has
+  failed three ways). **Confirm the box list two ways; markers = entries − boxes BEFORE
+  splicing.** Tools `<scratch>\oph\` (older sessions — `find` the temp root).
+- ⚠️ ~304 of the remaining ophtho questions are IMAGE questions (every crop LOOKED at — the
+  dominant cost); 132 model-exam items are SHORT-ANSWER → `type:'case'`. Crop craft (ink test
+  `max(r,g,b)<225 OR (max−min)>30`, full-resolution bounds, 3 px pad is a MAXIMUM, `image`
+  stores basename without extension): full block in the archive, 2026-08-31.
+- **ENT general traps, any sweep** (stories in the archive): British-vs-American spelling shipped a
+  duplicate twice · comparator tolerance belongs on the WORD (`norm.js`) · a stem match is not a
+  question match · a reconstructed stem can leak the NEXT question's answer.
+
+### Briefs corrected sixteen times; the six blind instruments  (was MEMORY.md lines 103-106)
+
+- **My briefs have been corrected by the agent that read the source SIXTEEN times** — "TRUST THE
+  STAGING AND THE TRANSCRIPT OVER THIS PROMPT, AND TELL ME WHERE I WAS WRONG" goes in every
+  brief. It is a prior, not a verdict. · **Six instruments have been blind to the exact fault
+  they were built to catch** (roster in archive) — read the function before writing the check.
+
+### Theory 153/153 complete -- the reference pointer block  (was MEMORY.md lines 108-110)
+
+- **Theory 153/153 COMPLETE; neuro theory 36/36** — craft rules, registers and book caches are
+  REFERENCE, not resume state: read the archive blocks (2026-08-23/24 + "Theory-done block"
+  2026-08-31) before ANY theory edit. §14.5 register: ZERO open rows, all four modules.
+
+### Governing decisions from the theory era (hub writes theory; format 14; chapters are SPLIT)  (was MEMORY.md lines 119-127)
+
+- **All theory is written from THIS hub chat** (2026-08-14); module chats resume **banks** only. Hub
+  plans, validates, prints, commits; **Opus subagents write, cap 2 concurrent**. **A dead agent's file
+  is usually complete: validate from disk before rewriting** (6 recoveries) — **but it may not exist
+  at all** (529 deaths). §11.
+- **Theory format = `START-HERE.md` §14** (2026-08-04 brief + first two §14s DEAD — user rejected
+  30–47 pp chapters; the distractor-essay rule caused it, REVOKED). Budget `max(source words, 25×q)`,
+  floor 600, **ceiling ~2,400 w / ~10 pp**; telegraphic; tables by default; §14.3a bold leads need
+  `:`/`—` within 44 chars for `mdLead()`; §14.5 register — *an unrecorded promise is a deletion*.
+- **Chapters are SPLIT, not compressed** (user, 2026-08-15, peds 21 → 51): every chapter ≤13 pp **measured by printing**. Safe (`SCHEDULE` is keyed by date+title, progress by question id) but **reassign questions from the theory `qs` links** — tie-breaks misfile most. ⚠️ **A seam that needs the chapter REORDERED is not a seam** (rejected one at `op-intro`).
+
+### Read the slide before declaring a gap (17 payments; 29 cached ophtho decks; two-decks-agreeing)  (was MEMORY.md lines 139-139)
+
+- **Read the slide before declaring a gap — paid 17 times, and a BOOK CROSS-REFERENCE IS NOT A VERDICT.** ⚠️ **OPEN THE HIT BEFORE WRITING THE ABSENCE**; grep the shortest stem AND the misspelling; **an absence claim must name the specific thing absent, not the topic** — and say how it was measured (*"exactly 2 hits across all 29 decks"* beats *"not taught"*). ⚠️ **OPHTHO HAS 29 CACHED LECTURE FILES, NOT 34** — nine merge two lectures each (`L1,2`, `L3,4`, `L7,8`, `L13,14`, `L15,16`, `L27,28`, `L31,32`, `L33,34`, `L35,36`); **count the directory, never the lecture numbers.** ⚠️⚠️ **TWO DECKS AGREEING IS NOT CORROBORATION WHEN BOTH NOT-COVERED LISTS ARE SCOPED TO THEMSELVES** — `L20` and `L31,32` both record PVD absent; the BOOK explains it at p.17, p.41, p.42.
+
+### Theory chapter counts; last file:// boot; the scratchpad harness roster  (was MEMORY.md lines 149-160)
+
+- **Theory: ✅ 153 of 153 chapters, 1,604 sections — COMPLETE.** ENT 30 (261 pp) · Peds 51
+  (340 / 8.3) · Ophtho 36 (331 / 9.2) · Neuro 36. Drafts in `content\<mod>\theory-drafts\`
+  (⚠️ ENT's bare `ent-csom/tonsils/aom/stridor` are the DEAD format; their `*.v2/v3` are current).
+- Last `file://` boot **2026-08-30** (post-§17v): **0 console errors, 876 CSS rules, 4 modules,
+  153 chapters, 3,891 q, 89 cases, 1,604 sections** (q count pre-dates today's merges).
+  ⚠️⚠️ **THE SESSION SCRATCHPAD STARTS EMPTY AND THE HARNESSES DO NOT LIVE IN THE CURRENT ONE —
+  `find` the temp root before rebuilding anything.** Theory/boot set (`print.sh` · `boot.sh` ·
+  `vdraft.js` · `qdump.js` · `shot.sh`) under `3528b857-…\scratchpad`; the **House** set
+  (`hparse`/`hsweep`/`deepsweep`/`norm`/**`splice-tail`**/**`mergeapply`** + 12 more) under
+  `7e50a9f0-…\scratchpad\t10\`; renders + `ocr-cal\` under `fa979a62-…\scratchpad\`. **List the
+  directory — never guess a harness name.** ⚠️⚠️ **`Array.filter` SKIPS SPARSE HOLES — index it:
+  `for i… if(!(i in A))`.**
+

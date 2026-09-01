@@ -16,11 +16,33 @@ A second chat is running ophthalmology at the same time. Stay inside your module
 **Read first:**
 1. `MEMORY.md` "Resume here — state at end of 2026-08-31", then the OCR banner at the very top.
 2. `tools\wps-ocr-reference.md` — the pipeline, its defects, its exit codes.
-3. `progress\resume-peds.md` **from the 2026-08-31 blocks onward** and `progress\resume-neuro.md`
-   **last two blocks**. Everything you need was measured there today; do not re-derive it.
+3. `progress\resume-peds.md` and `progress\resume-neuro.md` — ⚠️ **DO NOT READ EITHER WHOLE**
+   (1,126 and 529 lines). Read only from the anchor in each:
+
+   ```bash
+   sed -n '/RESUME-READ-FROM-HERE/,$p' progress/resume-peds.md
+   sed -n '/RESUME-READ-FROM-HERE/,$p' progress/resume-neuro.md
+   ```
+
+   That is ~8k + ~2.5k tokens instead of ~18k + ~9k, and it is exactly the 2026-08-31 blocks —
+   everything you need was measured there; do not re-derive it. Above the anchors is closed
+   history: `grep -n "^#\{1,3\} " <file>` then `sed -n '<a>,<b>p'` on the one block you need.
    ⚠️ Large earlier parts of `resume-peds.md` document the peds **ENDPOINT**, which is deferred —
    do not inherit its numbers, page maps, or offsets for the House bank. Different book,
    different structure.
+
+⚠️ **The same rule applies to every file in `progress\`.** Measured 2026-09-01, this chat's
+"read first" list was **139k chars ≈ 35k tokens** before the anchors — a sixth of your window
+gone before question one. With them it is ~22k. **Before opening anything in `progress\`, check
+its price in `progress\READING-COSTS.md`.**
+
+⚠️ **`progress\ledger.md` WAS SPLIT ON 2026-09-01.** It had reached 830k chars ≈ 207k tokens —
+larger than your whole context window, so it could not be opened at all. Sections 1–16 (ENT,
+closed) are now `progress\ledger-closed-1-16.md`; `ledger.md` keeps §17 onward and is ~32k tokens.
+**No section was renumbered and nothing was deleted** — verified byte-exact against git. A
+reference written anywhere as `ledger.md` §7 / §11 / §13 / §14 / §15 / §16 still means that
+section; the index at the top of `ledger.md` says which file it is in and on what line. Your
+end-of-run consolidation pass still writes to `ledger.md`, unchanged.
 
 **Files you own:** `app\data\questions.peds.js` · `questions.neuro.js` · `cases.peds.js` ·
 `cases.neuro.js` · `content\peds\` · `content\neuro\`. Touch nothing under `content\ophtho\`.
@@ -118,6 +140,17 @@ and committed today). Both `gg-ps-t16.array.js` and `gg-ps-t16.draft.js` are kep
   (`"id": "npqb-nr-1"`), spliced batches are single-quoted (`id:'npqb-ps-19'`). **Any id regex must
   be the tolerant form** `/["']?id["']?\s*:\s*["']([a-z0-9-]+)["']/` — a pattern written for one
   style returns a silent, plausible undercount.
+
+⚠️⚠️ **BEFORE YOU SPLICE NEURO TOPIC 03 — THE APP CAPS OPTIONS AT FIVE.** Topic 03 prints the
+project's first over-five questions: **Q43 has nine options (a–i), Q51 has eight (a–h).** Three
+places in `app\index.html` assume at most five — verified still unfixed 2026-09-01 at lines
+**4576** (`'ABCDE'[i]` → the letter badge renders `undefined` past E), **4591** (the verdict line
+reads "the answer is undefined"), and **6315** (keyboard shortcuts only reach A–E). The fix is
+`String.fromCharCode(65+i)` in all three, plus widening the key handler — but **`index.html` is on
+your forbidden list, so do NOT edit it.** Raise it with the user before topic 03 ships.
+Measured 2026-09-01: **no shipped question in any module exceeds five options today**, so nothing
+is currently broken. Full detail in `resume-neuro.md` §4a. This affects ophtho and peds too, the
+moment either bank prints a sixth option.
 
 **Open debt:** 12 `nr-intro`/`nr-exam` outside-knowledge tags the book can replace, `npqb-nr-14`
 first. Defects already recorded are rostered in `resume-neuro.md` §7 — read it before
