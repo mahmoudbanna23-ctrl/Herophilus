@@ -94,10 +94,13 @@ Both files are now under the cap, and the whole auto-loaded tax stands at:
 | file | lines | chars |
 |---|---|---|
 | workspace `CLAUDE.md` | 166 | 9,092 |
-| workspace `MEMORY.md` | 190 | 14,016 |
-| Herophilus `CLAUDE.md` | 198 | 13,401 |
+| workspace `MEMORY.md` | 190 | 14,231 |
+| Herophilus `CLAUDE.md` | 190 | 13,006 |
 | Herophilus `MEMORY.md` | 172 | 15,744 |
-| **per request** | | **52,253 ≈ 13.1k tokens** |
+| **per request** | | **52,073 ≈ 13.0k tokens** |
 
-Down from 57,845 ≈ 14.5k before the two splits. Herophilus `CLAUDE.md` is at 198 of 200 — it is
-the next one to breach.
+Down from 57,845 ≈ 14.5k before the splits. **Both `CLAUDE.md` files and both `MEMORY.md` files
+were trimmed on 2026-09-02**; the Herophilus one lost its duplicated source-tier table, its prose
+layout inventory and its bug-history list to `reference.md` (`## Moved from CLAUDE.md - 2026-09-02`)
+— duplicated reference and history only, **no live rule left it.** The largest remaining is
+`briefs\START-HERE.md` at ~48k tokens, which is read on demand, not auto-loaded.

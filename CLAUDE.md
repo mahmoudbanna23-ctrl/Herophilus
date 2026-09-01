@@ -17,13 +17,9 @@ path still saying `D:\claude os\Herophilus` is stale.
 
 ## 1. Layout
 
-`app\` — the deployable app, the only thing that ships: `index.html` (shell, one inline script) ·
-`assets\` (art, `q\` question crops, `clep\` the nine poses) · `data\` (content:
-`questions.<sub>.js`, `cases.<sub>.js`, aggregators, `fonts.js` loaded from `<head>`).
-`Design\` — source art (**never edited**) + `scripts\`. `content\<subject>\` — cached lecture
-text, `qb-pages\` transcriptions, plans, drafts. `progress\` — `ledger.md`, `briefs\`
-(`START-HERE.md` is the method + subagent protocol), `resume-<mod>.md`, `memory-archive.md`.
-`archive\` — pre-redesign backups. `Semester 8\` — sources, read-only (§5).
+`app\` is the only thing that ships and `Semester 8\` is read-only (§5). The full tree — every
+folder and what lives in it — is `reference.md` §1; the prose inventory that stood here **MOVED
+2026-09-02** to `reference.md`, `## Moved from CLAUDE.md - 2026-09-02`.
 
 ## 2. Code constraints
 
@@ -53,11 +49,9 @@ app run from `file://`, deploy by drag-and-drop, and work offline.
 
 ## 3. Source material — three tiers, very different costs
 
-| Tier | What | Text layer? |
-|---|---|---|
-| Lecture slides | 140 PDFs + 16 `.pptx/.ppt` | **Yes** (126/140 extract; `.pptx` via XML) |
-| Books | 7 PDFs, 1,637 pp | **No** — image-only |
-| Question banks | 7 PDFs | **No** — image-only |
+**Same three tiers as workspace `CLAUDE.md` §5** — slides carry a text layer (126 of 140 extract),
+books and question banks are image-only scans. This project adds **16 `.pptx/.ppt`** decks, which
+extract via their XML. Table **MOVED 2026-09-02** to `reference.md`, `## Moved from CLAUDE.md - 2026-09-02`.
 
 - **Check `content\<subject>\lectures\*.txt` before rendering anything** — harvested once,
   cached. **A cached `.pptx` `.txt` is not necessarily the whole deck** — check against
@@ -189,9 +183,7 @@ No test framework — verification is ad-hoc but must actually run:
 - After any content batch: module/chapter refs resolve, `answer` in range, `qs` ids real,
   counts match `progress\ledger.md`. Canonical validator: `<scratchpad>\wrT7\validate.js` —
   copy it out of the scratchpad if it has been cleaned.
-- History of real bugs worth re-testing: schedule reschedule, highlight erase maths, cloud
-  merge, profile isolation, boot with Firebase unreachable, `todayISO()`/UTC (now
-  `isoLocal()`), markdown tables with blank corner cells.
+- Real bugs worth re-testing, the list: **MOVED 2026-09-02** to `reference.md`, `## Moved from CLAUDE.md - 2026-09-02`.
 
 ---
 

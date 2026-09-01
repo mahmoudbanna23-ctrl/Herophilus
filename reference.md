@@ -1174,3 +1174,36 @@ PowerShell variable returns empty.
   schedule reschedule logic, highlight overlap and erase maths, cloud merge, profile data isolation,
   and boot with the Firebase CDN unreachable.
 
+
+## Moved from CLAUDE.md - 2026-09-02
+
+`CLAUDE.md` had reached 198 of its 200-line cap (workspace rule §9), and it is re-sent with
+every single request, so the cap is a per-turn cost and not a style preference. The blocks
+below are the exact text that stood in it, sliced by line — **nothing was deleted and nothing
+was reworded.** Each left a pointer where it stood. Only duplicated reference and history
+moved; **no live rule left `CLAUDE.md`.**
+
+### Section 1 Layout, the prose inventory (the fuller tree is section 1 above)  (was CLAUDE.md lines 20-26)
+
+`app\` — the deployable app, the only thing that ships: `index.html` (shell, one inline script) ·
+`assets\` (art, `q\` question crops, `clep\` the nine poses) · `data\` (content:
+`questions.<sub>.js`, `cases.<sub>.js`, aggregators, `fonts.js` loaded from `<head>`).
+`Design\` — source art (**never edited**) + `scripts\`. `content\<subject>\` — cached lecture
+text, `qb-pages\` transcriptions, plans, drafts. `progress\` — `ledger.md`, `briefs\`
+(`START-HERE.md` is the method + subagent protocol), `resume-<mod>.md`, `memory-archive.md`.
+`archive\` — pre-redesign backups. `Semester 8\` — sources, read-only (§5).
+
+### Section 3, the three-tier source table (duplicated workspace CLAUDE.md section 5)  (was CLAUDE.md lines 56-60)
+
+| Tier | What | Text layer? |
+|---|---|---|
+| Lecture slides | 140 PDFs + 16 `.pptx/.ppt` | **Yes** (126/140 extract; `.pptx` via XML) |
+| Books | 7 PDFs, 1,637 pp | **No** — image-only |
+| Question banks | 7 PDFs | **No** — image-only |
+
+### Section 7, the history of real bugs worth re-testing  (was CLAUDE.md lines 192-194)
+
+- History of real bugs worth re-testing: schedule reschedule, highlight erase maths, cloud
+  merge, profile isolation, boot with Firebase unreachable, `todayISO()`/UTC (now
+  `isoLocal()`), markdown tables with blank corner cells.
+
