@@ -1124,3 +1124,45 @@ skipping it as a scope cut needing approval. Wait to be asked.
 
 Nothing in the current stream is affected — the peds House bank is MCQs throughout, and the
 short-answer section from book p.149 was already out of scope on its own boundary.
+
+## 2026-09-02 — ch.4 SPLICED at last. `questions.peds.js` 81 → 106. Commit `73a01b1`.
+
+The two ch.4 drafts had been sitting complete on disk since 2026-08-31 and never landed. They are
+in now. **The compression pass that was sent back on 2026-08-31 had in fact been applied** — the
+drafts on disk measure min 393 / median 559 / mean 568 / max 620 words, against the instruction
+"ceiling 620, median ≤545". The ceiling was met exactly; the median is **14 words over**. Accepted
+as-is rather than paying for a third pass on a 2.5% overshoot — recorded here so it is a decision
+and not an oversight.
+
+**Method:** byte-level splice. The entry text was copied verbatim out of `draft-A.js` and
+`draft-B.js` between the `var … = [` opener and the final `];`, never re-serialised through
+`JSON.stringify`. That is what preserves ch.4's single **straight** apostrophe (`cow's milk`, Q17)
+and its en dashes. Script kept at `<scratchpad>\splice-ch4.js`; a `.bak` of the pre-splice file was
+taken first.
+
+**Validated after the splice, from disk, not from the drafts:**
+
+| check | result |
+|---|---|
+| entries / sparse holes | **106** / 0 (indexed with `for i / !(i in A)`, never `filter`) |
+| unique ids | 106 |
+| options + keys vs the staging record `PEDHD_HAEM_STAGED` | **BAD 0** — zero option drift, zero key drift, sequence 1..25 intact |
+| `answer` in range | all |
+| chapter tokens resolve in `modules.js` | all — `haematology`, `haem-bleeding`, `malignant` |
+| authored markers | 81 → **106**, delta **+25** exactly as predicted (ch.4 prints zero explanation boxes) |
+| markers in any `source` | 0 |
+| images | 14, all present on disk; **0 with a missing `imgAlt`** |
+| `node --check` | passes |
+| every data file re-parsed under a `window` shim | all pass (`fonts.js` needs `document`, expected) |
+| `python tools\count-options.py` | peds 106; distribution unchanged; the 8 >5-option questions are all neuro, as known |
+
+**Corpus 3,982 → 4,007.** Peds bank now **106 of 393** shipped; ch.6–20 = 267 outstanding.
+
+⚠️ **ch.5 was NOT ready to splice, contrary to the session brief.** The brief said "splice ch.4 and
+ch.5" and described ch.5 as staged. It is staged and *only* staged: `house-ch05-genetics.array.js`
+is the verbatim record (`n, p, boiler, fig, figp, stem, opts, key, note` — 14.8 KB for 20
+questions), with **no `id`, no `explanation`, no `objective`, no `source`**. There is no
+`ch05-genetics.draft-*.js` on disk. **Ch.5 needs the drafting pass before it can land**, and that
+pass is running now as two subagents (Q1–10, Q11–20) against a brief at
+`<scratchpad>\ch05-brief.md`. The brief states the length band in numbers — the fix-forward that
+ch.4 asked for.
