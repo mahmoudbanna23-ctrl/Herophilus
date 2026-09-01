@@ -1,6 +1,66 @@
 # OCR-gated transcription pipeline — design (2026-08-30, hub session)
 
+## ✅ SETTLED 2026-09-01 — WPS WINS. THE COST LADDER IS CLOSED. DO NOT RUN PILOTS A0–D.
+
+**Ruled by direct measurement on the endpoint PDFs themselves, not from either document.**
+Everything below this banner is kept as the research record only. **No pilot is a first task
+in any session.** A fresh Chat A starts on the exponent audit; a fresh Chat B starts by
+splicing peds ch.4 and ch.5.
+
+**What was measured (2026-09-01, 9 pages of "Opthalmology endpoint.pdf" through the live
+pipeline):**
+
+- **The endpoints are NOT scanned books.** Every page is a single **800x450 RGB JPEG at
+  96 ppi** — 16:9 slide captures, uniform across the whole 2,442-page file (sampled p3, 100,
+  101, 400, 900, 1500, 2100, 2438; a 60-page census at p600–659 returned 60/60 identical).
+  Text layer is **0 characters** at every sample point in ophtho, peds part1 and neuro — OCR
+  is genuinely required.
+- **WPS reads them accurately**, including at native 96 ppi. Medical terms survive intact
+  ("indentation (Schiotz) tonometry", "amblyopia", "3rd nerve palsy due to aneurysm of the
+  posterior communicating artery"). 200 dpi is marginally better structurally than 96 dpi and
+  costs 0.38 s/page — keep rendering at 200.
+- **Zero 429s across 9 consecutive calls** at a 3 s gap. The rate ceiling that motivated the
+  ladder did not appear on this workload.
+- **The ladder solves a problem that does not exist.** Its premise was that OCR is the
+  expensive bottleneck. WPS is **$0** on a tier already owned. Rungs A0 (Windows.Media.Ocr)
+  and D (Google Cloud Vision) can only compete on throughput, and throughput was not the
+  binding constraint when measured. Mistral at ~$19 is moot — there is nothing to buy.
+
+**Endpoint-specific OCR defect classes — these do NOT exist in the banks:**
+
+- ⚠️ **A whole option line gets DUPLICATED.** Seen on 3 of 9 pages: p100 repeated option B,
+  p400 repeated option B, p2100 repeated option D with the page number fused to the first
+  copy. Position varies. **Not yet established whether this is an OCR artifact or a printed
+  defect — it needs a visual check before any endpoint question ships.** A silent duplicate
+  turns a 4-option question into a 5-option one with a repeated distractor.
+- ⚠️ **Arrows become CJK characters.** p2438 printed an up-arrow and OCR returned
+  "glaucoma(个 IOP)". Same defect class as the superscript failure: a plausible-looking wrong
+  character, not visible garbage.
+- Minor and self-announcing: lost inter-word spaces ("measurement ofIOP"), letter-spacing
+  artifacts ("D.All    of    the    above"), one spurious inserted letter ("The i infant").
+
+**Two structural findings worth keeping:**
+
+- **PDF p3 is a contents page carrying an exact topic-to-page-range map** — Squint 1066–1097,
+  Pediatric Ophthalmology 1098–1149, Malignancies 1150–1181, Ocular Trauma 1182–1244, Ocular
+  Manifestations 1245–1331, Drugs and the Eye 1332–1373, Keys for Diagnosis 1374–1390, Model
+  Exams 1–5 at 1391–1545 / 1546–1700 / 1701–1856 / 1857–2022 / 2023–2175, Summer Exam
+  2176–2330, Exam Night Review 2331–2442. Read the contents pages before planning any
+  endpoint work; do not re-derive this by sweeping.
+- **The tail is not MCQs.** p2438 is revision prose, inside "Exam Night Review" (2331–2442).
+  Roughly one MCQ per slide holds for the body, not for that section.
+
+**Deferral still stands, on drafting cost — not on OCR cost.** OCR is now cheap and proven.
+The expensive step is drafting and verifying each question into the app, measured at
+110–121 q/day. At roughly one question per slide the ophtho endpoint alone is on the order of
+2,000 questions — far more than fits before 27 Sep alongside the banks. **The endpoints stay
+deferred because of drafting time, and that is the user's call to revisit, not a session's.**
+
+---
+
 ## ⚠️ ROUTE CHANGE 2026-08-30 (hub research, user-approved pending ~$4 spend confirmation)
+
+> **SUPERSEDED 2026-09-01 — see the SETTLED banner at the top. Mistral is NOT the route; nothing is bought.**
 
 **Mistral OCR Batch API is promoted from escape hatch to PRIMARY route** — $2/1,000 pages
 (mistral.ai/pricing/api), on the existing Mistral account with the API-training opt-out
@@ -26,12 +86,18 @@ class — the verification pass below is mandatory regardless of engine.
 
 ## ⚠️ COST LADDER 2026-08-31 (user ruled ~$19 too much; run pilots IN ORDER before paying)
 
+> **CLOSED 2026-09-01 — see the SETTLED banner at the top. Research record only. DO NOT run these pilots.**
+
 The ground truth that makes free pilots decisive: **thousands of already-shipped transcribed
 questions.** Every pilot = OCR ~20 pages we already transcribed → compare against shipped
 questions → check the killer failure classes (dropped answer-key letters — Tesseract's
 proven fault — decimals, units, option labels, negations). A pilot passes only if it beats
 the Tesseract calibration record (§ below), judged with the same paranoia.
 
+0. **Pilot A0 — Windows built-in OCR (free, local, ZERO install — try this first).**
+   Windows 10 ships an OCR engine (`Windows.Media.Ocr`), callable from PowerShell on the
+   already-rendered PNGs. Decent on printed English, untested on our scans. Cheapest
+   possible pilot: if it beats the Tesseract record, nothing else is needed.
 1. **Pilot A — PaddleOCR (free, PC, unattended).** `pip install paddleocr` (CPU build;
    Python 3.12 present). Better layout handling than Tesseract on print, same engine class —
    UNVERIFIED on our scans until piloted. GPU route is dead: RTX 3050 laptop has only
@@ -43,8 +109,14 @@ the Tesseract calibration record (§ below), judged with the same paranoia.
 3. **Pilot C — Mistral tiling trick (pennies).** Mistral bills per page; composite 4 scanned
    pages as a 2×2 grid into one billed page → ~$19 becomes ~$5 (~250 EGP total). UNCONFIRMED:
    needs a tiny paid pilot to verify billing unit + accuracy at reduced size.
-4. **Floor — Mistral per-module, never upfront.** Ophtho endpoint alone 2,442 pp ≈ $4.90
-   (~250 EGP); neuro/peds paid only if reached before their exams.
+4. **Pilot D — Google Cloud Vision OCR (~1,000 pages/month FREE, then ~$1.50/1k —
+   UNVERIFIED live).** Enterprise Cloud terms (no training on inputs — distinct from the
+   banned Gemini consumer free tier); the proven engine behind the testbook project found
+   in the sweep. Needs a Google Cloud account + user-run setup. Free quota alone can't
+   carry 9,100 pages before exams — use as free top-up or cheap main engine if A0–C fail.
+5. **Floor — Mistral per-module, never upfront.** Ophtho endpoint alone 2,442 pp ≈ $4.90
+   (~250 EGP); neuro/peds paid only if reached before their exams. Paid Gemini Flash is a
+   possible competitor at this rung — user will fund and ask first; do not pre-verify.
 
 Rules: pilots run in a fresh Herophilus session as its first task; tooling scripts go to the
 free lanes; page CONTENT never goes to any free-tier cloud service (Paddle and Apple Vision
