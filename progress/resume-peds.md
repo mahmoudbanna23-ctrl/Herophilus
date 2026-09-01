@@ -1166,3 +1166,129 @@ questions), with **no `id`, no `explanation`, no `objective`, no `source`**. The
 pass is running now as two subagents (Q1–10, Q11–20) against a brief at
 `<scratchpad>\ch05-brief.md`. The brief states the length band in numbers — the fix-forward that
 ch.4 asked for.
+
+---
+
+## 2026-09-02 — peds House ch.5 "Genetics" DRAFTED AND SPLICED: 106 → 126
+
+The drafting pass the entry above said was missing is done. Two agents wrote Q1–10 and Q11–20
+against `<scratchpad>\ch05-brief.md`; both files were checked from disk before the splice, not
+taken on report.
+
+### Duplicate sweep — ZERO folds, and here is how that zero was measured
+
+20 staged × 126 live = **2,120 cross pairs, plus 190 intra-draft self pairs.** Stages A–F all ran.
+
+| stage | test | result |
+|---|---|---|
+| A | exact normalised stem | **0** |
+| B | normalised stem within Levenshtein 3 | **0** |
+| C | stem token Jaccard, ranked | top **0.164** (`ch5-Q14` vs `pedhd-haem-6`) against a 0.60 fold threshold; **0** at or above it |
+| D | identical option SET | **0** |
+| E | same keyed answer text AND stem Jaccard ≥ 0.45 | **0** |
+| F | intra-draft collisions ≥ 0.45 | **0**; top self pair 0.368 (`ch5-Q8` vs `ch5-Q10`) |
+
+**The one near-miss worth naming.** Option-similarity ranking put `ch5-Q15` at **0.692** against
+`pedhd-card-6`, `-8`, `-13`, `-7`, `-22`, `-24` — the shared five-lesion congenital-heart menu.
+**A shared option menu pairs questions; it never folds them.** The discriminating tokens are Q15's
+Down-syndrome dysmorphology, and `epicanthic`, `palmar crease`, `hypotonic`, `Down` and
+`trisomy 21` each return **0 hits across the whole live peds corpus** — nothing shipped tests that
+route to AVSD. Its stem Jaccard against those six never exceeds 0.103.
+
+Q15 also shares a reordered menu with ch.5's own Q5 (`Innocent murmur` swapped for `Atrial septal
+defect`, key B vs A). Same ruling: a pair, not a fold.
+
+**Id space:** `pedhd-gen-` was unused. Live prefixes before this splice were `inf`, `renal`,
+`card`, `haem` only.
+
+### Validation after the splice
+
+| check | result |
+|---|---|
+| entries / sparse holes | **126** / 0 (indexed `for i / !(i in A)`) |
+| unique ids | 126 of 126, 0 dupes; `pedhd-gen-1`…`-20` contiguous |
+| stems / options / keys vs `PEDHD_GEN_STAGED` | **20 of 20 compared** — options **BAD 0**, keys **BAD 0**, stems 1 intended divergence (Q9, below) |
+| `answer` in range | BAD 0, across all 126 |
+| chapter tokens resolve | 17 distinct, **0 unresolved** — ch.5 adds `genetics` ×17, `malignant`, `growth-puberty`, `gastroenterology` |
+| authored markers | 106 → **126**, delta **+20** exactly as predicted (ch.5 prints zero explanation boxes) |
+| markers in any `source` | 0 |
+| images | 14 → **20**, all present on disk, **0 missing `imgAlt`**, 0 alts leaking the answer |
+| cross-references | 19 found, **0 dead ids** |
+| `node --check` | passes |
+| every array reloaded | ENT 2240 + 82c · ophtho 1399 · peds 126 · neuro 173 + 7c, **0 holes anywhere** |
+| `python tools\count-options.py` | peds 126, max 5 options; the 8 >5-option entries are still the known neuro ones |
+
+**Corpus 4,007 → 4,027.** Peds bank now **126 of 393**; ch.6–20 = **267 outstanding**.
+
+### Q9's stem is deliberately not the staged stem
+
+The bank prints `The same couple (in the previous question) tell you that they would like more
+children…` — a back-reference that is meaningless once the deck is hash-shuffled. Q8's vignette is
+inlined, copying the `pedhd-renal-4` shape, and declared in the explanation naming `pedhd-gen-8`.
+**Hand-read both ways:** the restated stem carries no pattern term, no carrier statement and no
+probability, so it hands over neither Q8's answer nor its own 1-in-4. The validator reports this as
+`stem differs at n=9` — **that single FAIL is expected and correct**; do not "repair" it back.
+
+### Two source defects RECORDED, neither corrected, no `answer` moved
+
+1. **Q8's pedigree contradicts Q8's stem.** The stem says *"one healthy girl, who is 3 years of
+   age"*; the chart draws that unaffected survivor as an **open square (male)**. **Verified against
+   the crop `q-pd-hd-44a` in a subagent, not taken on report** — bottom sibship measured as shaded
+   circle / open square / shaded square, interior grey 188 / 239 / 193 against paper 235, all three
+   uniform across their halves (this pedigree uses half-shading for carriers elsewhere, so the
+   uniformity matters). The chart also prints **no age anywhere, and no legend**. Recorded in
+   `pedhd-gen-8` as a printing mismatch that changes nothing: the pattern rests on the two affected
+   symbols being of opposite sex and both parents being carriers.
+2. **The genetics lecture contradicts itself on translocation Down** — bullet list prints
+   *"Translocation (4%)"*, section heading prints *"Translocation (5%)"*. Noted in `pedhd-gen-3`
+   rather than silently picking one.
+
+Also transcribed as printed and noted, never fixed: Q13's options `46, XO` and `45, XY` are
+chromosomally impossible; Q15's *"following an uneventful period"* drops its qualifying word;
+Q17 prints *"Henoch–Schonlein"* without the umlaut; Q12's pedigree leaves Robert and Elizabeth
+unlabelled.
+
+### Length — accepted over budget, as a decision
+
+Measured from disk with two counters (a loose one splitting hyphens and table pipes, a tight one
+not). **They agree:** median **563**, min 331, max 631, and **3 entries past the 620 ceiling** —
+`pedhd-gen-8` 622, `-9` 631, `-10` 623, over by 2–11 words. The brief asked for median ≤545.
+
+**Accepted rather than buying a third compression pass**, on the ch.4 precedent (14-word overshoot
+accepted) and with the Peds OSCE on 14 Sep. Recorded as a decision, not an oversight. Both agents
+had already self-compressed once — A trimmed from median 555.5/max 637, B from median 572.5 with
+three entries at 627/640/653 — and **both still under-reported their own final lengths by 10–30
+words.** An agent's self-measurement remains untrustworthy; measure from disk.
+
+### ⚠️ Three faults found in my own validator, each of which looked exactly like data loss
+
+Every one of these produced a confident false failure before it was fixed. **Check the auditor
+before believing the audit.**
+
+1. **Chapter resolution walked `module.chapters`** — but chapters live under
+   `module.groups[].chapters[]`, each as a two-element `['id','name']`. The check reported **all 14
+   chapters unresolved.** The script now throws if the traversal collects under 100 chapters, so
+   this cannot fail silently again.
+2. **The image check matched `q.image` against the directory listing** — but `image` stores a
+   **bare basename** and `qImgSrc()` appends `.jpg` (`app\index.html:2681`). It reported **all 14
+   images missing from disk.**
+3. **The staging comparison printed `BAD 0` while comparing zero pairs.** It now prints
+   `COMPARED n of 20` and fails loudly when those disagree. **A zero means nothing until it says
+   how many pairs produced it.**
+
+### Notes for whoever takes ch.6
+
+- **`git cat-file -s HEAD:app/data/questions.peds.js` (466,566) does not match the working file
+  (458,147 pre-splice).** That is the mixed CRLF/LF normalisation MEMORY.md warns about, **not
+  loss** — the byte difference is line endings. Compare entry counts by loading the array, never
+  blob sizes.
+- Scratchpad tooling, reusable and parameterised by filename: `sweep-ch05.js` (six-stage sweep),
+  `check-drafts-ch5.js` (pre-splice draft vs staging + both word counters),
+  `splice-ch5.js` (byte-level, backs up to `.bak-prech5` first), `validate-ch5.js` (11 checks).
+  **The scratchpad starts empty each session — copy them out before relying on them.**
+- Two gap-fill claims the ch.5 brief made turned out to be **false**, both caught by grepping the
+  right token: `33)Congenital acyanotic heart disease_.pdf` does carry the Down/AVSD block
+  including the surgical timing that dates Q14's 3-month-old, and `13) Short stature.pdf` defines
+  short stature as *"<3rd percentile"* — so Q19's girl **at the 9th centile is not short by the
+  deck's own definition**, and the diagnosis rests on dysmorphism plus absent puberty. **Grep the
+  abbreviation, the sign and the drug name separately before writing any absence claim.**
