@@ -218,3 +218,56 @@ Nothing in the current stream is affected — both banks are MCQs throughout.
 **Your exams: Peds OSCE 14 Sep · Peds papers 17 Sep · Neuro 3 Oct · Peds papers 18–19 Oct.**
 Peds is first because its exam is first. 267 peds + ~310 neuro at the measured 110–121 q/day ≈
 **5–6 working days.** Stop at clean topic boundaries; scope is never cut.
+
+---
+
+## Changed since 2026-09-01 — read this even if you skim the rest
+
+**Everything above is still accurate.** These are the deltas from 2026-09-02. Where this block
+and anything above disagree, **this block wins.**
+
+- ✅ **PUSHING WORKS. 0 commits ahead.** The old note saying *262+ commits ahead, unpushed,
+  needs the user’s device-code flow* was **stale** — a plain `git push` went straight through
+  with no prompt (Git Credential Manager has it cached). Re-check, never assume:
+  `git rev-list --count origin/<branch>..HEAD`.
+- ⚠️ **THE SCRATCHPAD WAS CLEARED 2026-09-02** — 6,304 cached page renders (2.99 GB) deleted.
+  **Any page you were told is "already rendered" is gone.** Re-render it; that is the only cost,
+  and it is seconds per page. **All 158 source PDFs were verified intact afterwards** — nothing
+  was lost, only cache.
+- **`CLAUDE.md` was trimmed** 198 → 190 lines. Its layout inventory, its duplicated source-tier
+  table and its bug-history list moved verbatim to `reference.md`,
+  `## Moved from CLAUDE.md - 2026-09-02`. **No live rule left the file** — nothing you were told
+  to obey has moved or changed.
+- **`MEMORY.md` is 178 lines**, with the push state corrected. Older closed-topic material is in
+  `progress\memory-archive.md`.
+- **`READING-COSTS.md`’s figures drifted twice and were corrected 2026-09-02.** The four
+  auto-loaded files now cost **54,007 chars ≈ 13.5k tokens per request**, not the 52,073 the table
+  claimed. ⚠️ **Re-measure before quoting any number in that file** — `wc -lc` on the four takes
+  one command, and the file now carries it.
+- **The workspace root `D:\claude os` is now a git repo** (`main`, local-only, no remote yet). It
+  tracks the seven root control files and ignores every project folder. **Your repo is unaffected**
+  — it was verified still at its own HEAD afterwards.
+- ⚠️ **An oversight chat now checks this project every ~12 hours**, reading `progress\WATCH.md`,
+  the repo state and the module journals. **It will never see your conversation.** Anything you
+  learn that is not written into your journal is invisible to it and dies with your session.
+  Keep the journal current as you go — this is now the main reason to.
+
+### Chat B only — two corrections to the text above
+
+- ⚠️ **`content\peds\qb-pages\endpoint-s01-growth-puberty.draft.js` is no longer untracked.**
+  It was **committed 2026-09-02** (`7351007`) to stop it being lost — 89 questions, 375,979 bytes,
+  a splice fragment that opens on a bare `{`, never exponent-audited. Section "Files you own"
+  above tells you never to stage it; that instruction is now moot, it is staged. **The rest of the
+  instruction stands unchanged: it is parked ENDPOINT work under the user’s deferral ruling — do
+  not edit it, do not splice it, do not audit it, do not plan around it.** It is committed and
+  safe; leave it alone.
+- ⚠️ **The 142 rendered neuro pages are GONE.** Section 2 says all 142 are already rendered in a
+  previous session’s scratchpad. That scratchpad was cleared 2026-09-02. **Re-render them** — the
+  file itself measures this at ~45 s, so this costs you almost nothing:
+
+  ```bash
+  pdftoppm -png -r 200 -f 6 -l 98 "<neuro qb source>" "<scratch>/npqb"
+  ```
+
+  **Your first job is unchanged and is NOT the endpoint draft: splice peds ch.4 (25 q) and ch.5
+  (20 q).** Both are drafted on disk and never landed; `questions.peds.js` still holds 81.

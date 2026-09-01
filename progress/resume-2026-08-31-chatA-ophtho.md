@@ -163,3 +163,36 @@ pages in any 15-minute stretch. Both stop conditions are in `tools\wps-ocr-refer
 
 **Your exam: Ophthalmology 27 Sep.** 242 left at the measured 110–121 q/day ≈ **2–3 working days**.
 Stop at clean topic boundaries; scope is never cut.
+
+---
+
+## Changed since 2026-09-01 — read this even if you skim the rest
+
+**Everything above is still accurate.** These are the deltas from 2026-09-02. Where this block
+and anything above disagree, **this block wins.**
+
+- ✅ **PUSHING WORKS. 0 commits ahead.** The old note saying *262+ commits ahead, unpushed,
+  needs the user’s device-code flow* was **stale** — a plain `git push` went straight through
+  with no prompt (Git Credential Manager has it cached). Re-check, never assume:
+  `git rev-list --count origin/<branch>..HEAD`.
+- ⚠️ **THE SCRATCHPAD WAS CLEARED 2026-09-02** — 6,304 cached page renders (2.99 GB) deleted.
+  **Any page you were told is "already rendered" is gone.** Re-render it; that is the only cost,
+  and it is seconds per page. **All 158 source PDFs were verified intact afterwards** — nothing
+  was lost, only cache.
+- **`CLAUDE.md` was trimmed** 198 → 190 lines. Its layout inventory, its duplicated source-tier
+  table and its bug-history list moved verbatim to `reference.md`,
+  `## Moved from CLAUDE.md - 2026-09-02`. **No live rule left the file** — nothing you were told
+  to obey has moved or changed.
+- **`MEMORY.md` is 178 lines**, with the push state corrected. Older closed-topic material is in
+  `progress\memory-archive.md`.
+- **`READING-COSTS.md`’s figures drifted twice and were corrected 2026-09-02.** The four
+  auto-loaded files now cost **54,007 chars ≈ 13.5k tokens per request**, not the 52,073 the table
+  claimed. ⚠️ **Re-measure before quoting any number in that file** — `wc -lc` on the four takes
+  one command, and the file now carries it.
+- **The workspace root `D:\claude os` is now a git repo** (`main`, local-only, no remote yet). It
+  tracks the seven root control files and ignores every project folder. **Your repo is unaffected**
+  — it was verified still at its own HEAD afterwards.
+- ⚠️ **An oversight chat now checks this project every ~12 hours**, reading `progress\WATCH.md`,
+  the repo state and the module journals. **It will never see your conversation.** Anything you
+  learn that is not written into your journal is invisible to it and dies with your session.
+  Keep the journal current as you go — this is now the main reason to.
