@@ -196,3 +196,17 @@ and anything above disagree, **this block wins.**
   the repo state and the module journals. **It will never see your conversation.** Anything you
   learn that is not written into your journal is invisible to it and dies with your session.
   Keep the journal current as you go — this is now the main reason to.
+- **`MEMORY.md` was trimmed 2026-09-02** (194 → 179 lines), and `CLAUDE.md` before it
+  (198 → 190). Six blocks moved **verbatim** into `progress\memory-archive.md` under
+  `## Pruned from MEMORY.md - 2026-09-02`: the OCR banner’s measured timings and page counts,
+  the `CLAUDE.md` cost figure, the ch20-drugs investigation, the first parallel run’s audit
+  detail, the escaping war stories, and the completed `_archive\` move.
+  ✅ **No live rule and no clinical safety rule left the file.** The exponent rule, the
+  "OCR is never a clinical source" rule and the 429 rule are all still in the banner; all
+  four escaping traps and their fixes are still in the environment section. This was checked
+  by assertion before a byte was written.
+  **If a detail you remember is missing, it MOVED — it was not deleted.** Find it with
+  `grep -n "Pruned from MEMORY" progress\memory-archive.md` then `sed` the line range.
+- ⚠️ **Never quote a per-request token cost from memory.** `progress\READING-COSTS.md` is the
+  only figure, and four separate snapshots of it were written and invalidated on 2026-09-02
+  alone. Re-measure with the `wc -lc` command at the top of that file.

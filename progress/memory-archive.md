@@ -851,3 +851,81 @@ topic it covers.
   directory — never guess a harness name.** ⚠️⚠️ **`Array.filter` SKIPS SPARSE HOLES — index it:
   `for i… if(!(i in A))`.**
 
+
+## Pruned from MEMORY.md - 2026-09-02 (at 194 of 200 lines)
+
+The file reached 194 of its 200-line cap. Six blocks moved here verbatim, sliced by line
+index and never retyped. **Nothing was deleted and nothing was reworded**; each left a dated
+pointer in `MEMORY.md` that carries every rule still in force. What left was measured detail,
+closed investigations and war stories — no live rule and no clinical safety rule moved. The
+OCR defect list and the 429 procedure also live in full in `tools\wps-ocr-reference.md`.
+
+### The OCR banner - measured timings, page counts and the dead cost ladder  (was MEMORY.md lines 3-20)
+
+**⚠️ OCR ROUTE (2026-08-31) — WPS, and it SUPERSEDES the cost ladder in `progress\ocr-pipeline.md`.**
+`pdftoppm` renders pages to PNG → `wpscli photo2word` OCRs them. **$0** (WPS paid tier already
+owned), measured **0.32 s/page render + 1.29 s/page OCR**; all 9,173 remaining pages ≈ 4 h machine
+time. The PaddleOCR → AppleVision → Mistral ladder and the six Tesseract-gate changes are **DEAD —
+do not build them** (fallback record only). **The user lifted the no-free-tier-cloud rule for WPS
+on 2026-08-31** — *"I don't care that much if they violated the policy a little, the project is not
+that private"*; Kingsoft's terms carry a no-training clause. The **three remaining** endpoint books
+(**8,616 pp** — ophtho 2,442 · neuro 2,190 · peds 1,991+1,993; **ENT endpoint is CLOSED, not
+deferred**) CANNOT be split (every page carries the whole resource pool — a 4-page split of a
+317 MB book came out 331 MB), so rasterising is mandatory, not optional. Verified commands, OCR
+defect list and exit codes: **`tools\wps-ocr-reference.md`**.
+⚠️ **OCR text is a SEARCH INDEX, never a clinical source** — confirm every fact against the
+rendered page before it ships. ⚠️⚠️ **AND SUPERSCRIPTS FAIL SILENTLY: WPS read a printed 10⁶ as
+10⁹** (peds House ch.1 Q28, verified at 900 dpi, 2026-08-31); they also flatten (10⁶ → 106). A
+wrong exponent is a **plausible wrong number, not visible garbage** — every other defect in this
+engine announces itself, this one ships. **Never take an exponent, a unit or a dose from OCR text;
+read those three off the page image.** ⚠️ **Exit 429 is a RATE limit, NOT a quota** — do not stop
+on it; back off, double the gap (cap 60 s), **retry the same page**. Content rules unchanged.
+
+### The CLAUDE.md trim note and its per-request cost figure (stale three times over)  (was MEMORY.md lines 29-32)
+
+**`CLAUDE.md` was trimmed 2026-09-02** (198 → 190 lines): its layout inventory, its duplicated
+source-tier table and its bug-history list are in `reference.md`, `## Moved from CLAUDE.md -
+2026-09-02` — **no live rule left it.** The four auto-loaded files now cost **52,073 chars ≈ 13.0k
+tokens per request**, down from 57,845.
+
+### ch20-drugs.txt - the "was it lost" investigation, closed 2026-08-31  (was MEMORY.md lines 60-64)
+
+- ✅ **CLOSED 2026-08-31: `content\ophtho\book\ch20-drugs.txt` was NOT lost** — recorded as dying
+  with its agent, verified from disk as **18 page sections, printed 254–271, no gaps**. **Validate
+  a dead agent's file from disk before believing a report that it died.** ⚠️ Debts left: 12
+  `nr-intro`/`nr-exam` tags the book can replace (`npqb-nr-14` first) · ophtho theory reconciliation
+  (~63 rows, `theory-plan.md`; book caches exist — do NOT re-read).
+
+### The first parallel-chat run, audited 2026-08-31 over 1,581 events  (was MEMORY.md lines 90-93)
+
+- ✅ **The parallel-chat rules held on their first real run** (audited 2026-08-31, 1,581 events):
+  **0 page images in either main conversation** (all image work in subagents), 0 `git add -A`,
+  0 writes to `MEMORY.md` or `ledger.md`, 0 cross-module writes. Peak context 167k of 200k.
+  **Keep these rules in every parallel brief — they are the reason the day was cheap.**
+
+### The four escaping traps - the war stories behind the rules  (was MEMORY.md lines 163-178)
+
+- **⚠️⚠️ ESCAPING IS THE PROJECT'S MOST EXPENSIVE PROBLEM — FOUR TRAPS, ALL MEASURED. (1)** `\n` **is a
+  real newline and a real newline ENDS A JSON STRING** — writing to a FILE does not save you.
+  **(2)** ⚠️⚠️ **the Bash tool's quoted heredoc collapses `\\` to `\`** (`\d`→`d`, `\s`→`s`), corrupting
+  paths, citations and MEMORY.md itself — **fired SIX times**, most recently 2026-08-31 twice in one
+  hour with a **Python** body, where `content\\ophtho\\book` became `content\ophtho` + a real
+  **backspace** (`\b` is a valid escape) and the edit silently failed to match. **A QUOTED HEREDOC IS
+  NO PROTECTION WHATEVER THE BODY'S LANGUAGE — the collapse happens BEFORE that language sees it.
+  Fix: never type a literal `\` in a heredoc body — build it as `chr(92)` / `String.fromCharCode(92)`,
+  or use the `Write`/`Edit` tools instead. GREP EVERY PATH AND REGEX AFTER WRITING; the write reports
+  success either way.** **(3)** a heredoc over **~7 KB** fails to parse —
+  **APPEND one section per call.** **(4)** ⚠️⚠️ **a backtick in a DOUBLE-QUOTED bash string is COMMAND
+  SUBSTITUTION, and `node -e "…"` IS one** — it blanked six terms from a plan edit, and **every chapter
+  id we write is in backticks.** **Fix: `String.fromCharCode(92)`/`(10)`/`(13)`; `node --check` after
+  every append; the `Write`/`Edit` tools for anything with a backtick; then GREP THE RESULT.**
+  ⚠️ **`app\data\*.js` is MIXED CRLF/LF** — the original body is CRLF, spliced entries are LF, so
+  **nothing may anchor on a bare newline**; scan structurally.
+
+### The 2026-08-31 move to _archive, completed  (was MEMORY.md lines 188-191)
+
+- Cleanup awaiting approval (nothing without a yes): 173 MB ophtho zip, two Peds PPT stubs, `files.zip`.
+  ✅ 2026-08-31, **MOVED not deleted** to `D:\claude os\_archive\herophilus-token-economy-2026-08-31\`:
+  `app\data\questions.ophtho.PRESPLICE18.js` (4.8 MB) + the 222 MB `progress\token-economy\archive\`
+  (pointer: `progress\token-economy\ARCHIVE-MOVED.md`).
+

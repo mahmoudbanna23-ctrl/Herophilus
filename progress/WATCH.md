@@ -29,14 +29,14 @@ wc -lc "D:/claude os/CLAUDE.md" "D:/claude os/MEMORY.md" "D:/claude os/Medical s
 ```
 
 These are re-sent with **every request**, so growth here is a permanent tax. Baseline measured
-2026-09-02, after the workspace `MEMORY.md` trim: **166 / 190 / 190 / 194 lines, 54,521 chars
-≈ 13.6k tokens per request.**
+⚠️ **Compare each line count against the 200-line CAP, not against a number written here.**
+The cap never moves; every recorded total does. Four snapshots were written and invalidated
+on 2026-09-02 alone — do not add a fifth. **Flag any file at 195 or more.**
 
-⚠️ **Herophilus `MEMORY.md` at 194/200 is the file closest to the cap.** The workspace one
-was trimmed 197 → 190 on 2026-09-02 (two superseded blocks moved verbatim to
-`workspace-archive.md`, dated pointers left behind). Flag any file at 195 or more. **Do not
-trim one yourself** — a trim is a documented split, not a delete, and it is not watch work.
-Report it.
+Both `MEMORY.md` files were trimmed on 2026-09-02 (workspace 197 → 190, Herophilus 194 → 179;
+blocks moved verbatim to `workspace-archive.md` and `memory-archive.md`, dated pointers left
+behind). **Do not trim one yourself** — a trim is a documented split, not a delete, and it is
+not watch work. Report it.
 
 If the totals moved, `progress\READING-COSTS.md` is now stale — say so. Its numbers have drifted
 twice; **re-measure, never quote it.**

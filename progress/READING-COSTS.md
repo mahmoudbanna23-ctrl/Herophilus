@@ -96,8 +96,8 @@ Both files are now under the cap, and the whole auto-loaded tax stands at:
 | workspace `CLAUDE.md` | 166 | 9,145 |
 | workspace `MEMORY.md` | 190 | 14,367 |
 | Herophilus `CLAUDE.md` | 190 | 13,166 |
-| Herophilus `MEMORY.md` | 194 | 17,843 |
-| **per request** | | **54,521 ≈ 13.6k tokens** |
+| Herophilus `MEMORY.md` | 179 | 16,439 |
+| **per request** | | **53,117 ≈ 13.3k tokens** |
 
 ⚠️ **Re-measured live 2026-09-02 — three of the four rows had drifted.** The trim figures were
 recorded the moment each trim finished, then later edits in the same day put the chars back:
@@ -106,8 +106,12 @@ workspace `MEMORY.md` 14,231 → 15,044 and **197 of its 200 lines**, Herophilus
 the watch section took Herophilus `MEMORY.md` to **194 lines / 17,843** within the hour.
 Then it drifted a THIRD time: workspace `MEMORY.md` was trimmed 197 → **190 lines / 14,367**
 the same night, two superseded decision blocks moved verbatim to `workspace-archive.md`.
-⚠️ Herophilus `MEMORY.md` at **194/200** is now the file closest to the cap.
-**Three corrections in one day is the whole argument for re-measuring instead of quoting.** **Do not trust a number in this table
+Then a FOURTH time: Herophilus `MEMORY.md` was trimmed 194 → **179 lines / 16,439** the same
+night, six blocks moved verbatim to `memory-archive.md`.
+⚠️ **Four corrections in one day. Re-measure with the command above; never quote this table
+at anyone — including at yourself in the next hour.** Every one of the four figures was
+accurate when written and wrong within hours. Widest headroom now: 21 lines (Herophilus
+`MEMORY.md`); the caps, not these numbers, are what a check should compare against. **Do not trust a number in this table
 without re-measuring it** — `wc -lc` on the four files takes one command:
 
 ```bash
