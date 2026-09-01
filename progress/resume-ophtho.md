@@ -1542,3 +1542,195 @@ a thousand. In a lab value that is a clinical error.
 
 **Standing rule from here on:** never take an **exponent, a unit, or a dose** from OCR text.
 Those three come off the page image, always. Everything else in the OCR route stands unchanged.
+
+---
+
+## ✅ EXPONENT AUDIT — RUN AND CLOSED 2026-09-02. Zero exponents exist in the scope.
+
+The open debt raised at the foot of this file is discharged. **The result is a clean zero, and here
+is how the zero was measured** — a zero that is not explained is not a measurement.
+
+### What the scope actually was — the brief undercounted it
+
+I was briefed to audit "ch.17–ch.20, 69 merged and 71 staged". **The 69 merged in commit `6ba6971`
+are not 69 chapter questions.** Measured by loading `questions.ophtho.js` at `83cb012` (before) and
+`6ba6971` (after) and diffing by id:
+
+| Batch | Entries added |
+|---|---|
+| GG topic 23 (`opqb-t23-*`) | **30** |
+| House ch.17 (`opmcq-c17-*`) | 14 (17 staged, 3 folded) |
+| House ch.18 (`opmcq-c18-*`) | 25 (26 staged, 1 folded) |
+| **total** | **69** |
+
+So a third batch — **GG End Exam 3, 30 questions** — went in that same session under the same
+missing warning and was never named in the brief. **It is included in this audit.** Corpus is
+**1,399**, not 1,400; the "1,400 by id prefix" in the resume brief is the same slip `MEMORY.md`
+already corrects.
+
+Audited set = **125 entries**: 69 merged (t23 30 + c17 14 + c18 25) + 27 drafted ch.19 + 29 drafted
+ch.20, cross-checked against all four verbatim staging records (17 + 26 + 43 + 29 = 115 staged).
+
+### The instrument, and its own defect
+
+Scanned every `stem` and every `options[]` string — the text that actually came off the page — for
+`10^n`, Unicode superscripts `\u00b2-\u00b9\u2070-\u2079`, `x 10`, flattened `10[0-9]`, and every
+unit and dose token (`%`, `mg`, `mcg`, `IU`, `mmHg`, `mm`, `mL`, `D`, `diopters`, `kg`, `mg/kg`).
+
+⚠️ **MY FIRST REGEX WAS ITSELF THE DEFECT, AND IT MANUFACTURED THREE FALSE POSITIVES.** It anchored
+on `\b\d`, which **silently eats a leading comparison operator or sign**. It reported `80%` where
+the file holds `>80%`, `2.00 D` where the file holds `-2.00 D`, and it suppressed the operators on
+all four of ch.20 Q20's options. The reading subagent, given those quotes, correctly reported them
+as page/file mismatches — **they are not; the transcriptions were right and my scan was wrong.**
+Re-run with `[<>≤≥+\u2212-]?\s?\d` the discrepancies vanished. *An operator-blind numeral scan is a
+false-positive generator on this bank* — the same shape as the short-token blindness that made
+`sweep.js` return a confident wrong verdict.
+
+### The page reads — 10 book pages, 2 subagents, 0 images in this conversation
+
+Rendered at **300 dpi** (not the usual 200 — the whole point is digit legibility) and, for House,
+split L/R by `System.Drawing` before reading. Every value carrying a unit anywhere in the 125
+entries was read off the page by eye.
+
+| Book page | Sheet | What was verified | Result |
+|---|---|---|---|
+| House 111 | s57-R | ch.17 Q17 option A `>80%` | **MATCH** — `>` present on page and in file |
+| House 118 | s61-L | ch.19 Q3 `6/7/8/9 %`, key B | MATCH |
+| House 121 | s62-R | ch.19 Q16 `20/50/60/80 %`, key A | MATCH |
+| House 122 | s63-L | ch.19 Q22 `20/50/60/80 %` key C; Q23 `20/40/60/80 %` + `None of the above`, key B | MATCH, incl. the 5th option |
+| House 123 | s63-R | ch.19 Q24 `5/10/15/20 %` + `None of the above`, key A | MATCH, incl. the 5th option |
+| House 126 | s65-L | ch.19 Q40 stem `-2.00 D` | **MATCH** — minus present on page and in file; zoomed 5x |
+| House 132 | s68-L | ch.20 Q20 `>5 sec / >5 min / <5 sec / >10 sec` | MATCH, operators intact |
+| House 133 | s68-R | ch.20 Q27 `2.5%`; Q29 stem opens and breaks at `…develops sudden` | MATCH |
+| House 134 | s69-L | ch.20 Q29 continuation `Her IOP is 48 mmHg`, 4 options A–D, `Answer: B` | **MATCH word for word**, incl. `mmHg` closed up and the space before it |
+| GG 143 | pdf 150 | t23 Q26 `36/43/50/60 diopters`; t23 Q24 `Sphere +2, Cylinder -2.5, Axis 180` | MATCH, incl. both signs |
+
+**Both subagents were additionally told to scan each page IN FULL** — headers, footers, every
+question, not only my targets — for any superscript, lab count, titre, dilution or drug dose.
+
+### The finding
+
+**COUNT CHECKED: 125 entries / 10 book pages read by eye.**
+**COUNT WRONG: 0.**
+**Exponent-bearing numerals in the entire ch.17–ch.20 + GG-t23 scope: ZERO — none exist to be
+misread.** Not one superscript, `10^n`, `x 10^n`, lab count, titre or dilution is printed on any of
+the ten pages. Not one drug dose either: **every drug question in ch.20 and ch.19 names drug
+CLASSES and never quantifies them** ("Beta-blockers", "Anticholinergics", "High dose of systemic
+steroids" — unquantified). The only clinical numerals this scope contains are percentages, four
+dioptre values, one IOP in mmHg, and time intervals.
+
+**So nothing moved. No `explanation` note was added, because there is no mismatch to record.**
+The `answer` never moved either — there was nothing to move it for.
+
+⚠️ **The zero is a property of ophthalmology, not of the OCR.** This module's questions do not carry
+the numerals the defect attacks. That is why the audit is cheap here and why it is **not**
+transferable — peds, which prints leucocyte counts and mg/kg dosing, is where the defect lives.
+**The standing rule is unchanged and still binds every future ophtho batch:** never take an
+exponent, a unit or a dose from OCR text; read those three off the page image.
+
+### What the audit found instead — worth more than the thing it was looking for
+
+The scan surfaced **the numeral classes this bank actually prints, and they carry operators and
+signs**: `>80%`, `-2.00 D`, `>5 seconds`, `<5 seconds`, `Sphere +2, Cylinder -2.5`. **A dropped `>`
+or a dropped `-` is the same category of failure as a wrong exponent** — a plausible wrong value,
+not visible garbage. `-2.00 D` unsigned is medically ambiguous; the whole stem (myopic shift, near
+vision improved) turns on the minus. **All five survived transcription intact**, which is a real
+result about the transcribers, not a lucky one.
+
+**⇒ NEW STANDING CHECK for this module: audit numerals WITH their leading operator, never without.**
+Any scan that anchors on a bare digit is blind to exactly the character that carries the meaning.
+
+### Two page facts recorded in passing, both from the pixels
+
+- **Book p.118, ch.19 Q3 prints a stray legacy question number inside the stem**: `3. 474. Tight
+  glycemic control…`. Independently confirmed by this audit's reader at 2.2x — the staging record
+  already flags it and the draft already strips it with the printed form recorded. Two independent
+  readings now agree.
+- **Book p.134 confirms chapter 20 ends at Q29.** Q29's answer line sits in the top ~20% of the
+  half-page and **the remaining ~80% is blank** — no Q30, no chapter 21, no OSCE banner. This
+  corroborates the boundary already read off sheet 69 RIGHT (the OSCE title on book p.135). The
+  reader also warns that the lower half of that scan carries **reverse-side show-through** which an
+  OCR pass would read as content — the same defect shape already recorded on book printed 269.
+
+
+---
+
+## 2026-09-02 — the pipeline scripts were GONE, and are now in the repo
+
+**Finding: `sweep.js`, `stagecheck.js`, `splice.js` and `validate.js` did not survive the
+scratchpad clear.** They lived only under the session temp root (`<scratchpad>\wrT7\`), which
+`CLAUDE.md` §7 still points at. No copy existed anywhere in the repo — verified by listing every
+`.js` outside `app\` and `qb-pages\`. **`CLAUDE.md` §7's "copy it out of the scratchpad if it has
+been cleaned" is not actionable: there is nothing to copy from.**
+
+**They are rebuilt and committed to the repo at `tools\qb-pipeline\`** so a clear cannot cost this
+again:
+
+| file | what it does |
+|---|---|
+| `lib.js` | `vm` loaders (classic scripts; `require()` returns undefined), normalisation, dice, option-menu keys |
+| `sweep.js` | the six-stage duplicate sweep A–F, plus within-batch and the shared-menu pair flag |
+| `stagecheck.js` | pre-splice: sparse holes, id collisions, `answer` index range, required fields, chapter ids, marker count, marker-not-in-`source`, staged-vs-drafted reconciliation, dead ids |
+| `splice.js` | dry-run by default, `--go` writes after a `.bak`; finds the array close structurally (the files are mixed CRLF/LF) |
+| `validate.js` | whole-corpus, loads arrays and reads `.length` — never greps |
+
+⚠️ **These are a RECONSTRUCTION from the rules in `CLAUDE.md` and `MEMORY.md`, not a recovered
+copy.** They have not been diffed against what they replace, because what they replace no longer
+exists. Treat their thresholds as new until a topic has been run through them.
+
+### The rebuilt instrument had two defects, both found by running it
+
+**1. The chapter-id check failed 98 peds entries that are fine.** It extracted known chapter ids
+with a regex demanding a hyphenated 2–4-letter prefix, so peds chapters that carry no hyphen —
+`cardiac`, `haematology`, `malignant` — were never in the known set. They **are** in `modules.js`.
+Fixed by reading the `[id, title]` array literals structurally. **Check the auditor before
+believing the audit: a run where a whole module fails identically is a broken probe.**
+
+**2. `loose()` destroyed two real discriminators, and one of them is a sign.** It normalised both
+`+ve` and `-ve` to `ve`, and its doubled-letter collapse turned the Roman numeral `ii` into `i`.
+Ch.20 Q3 (`+ve (Jones I)`) and Q4 (`-ve (Jones II)`) therefore scored **dice 1.00** — a false fold
+candidate on two questions whose keys differ (index 0 vs index 3). Fixed: signs and comparison
+operators are spelled out before the punctuation strip (`posve`, `negve`, `lt`, `gt`, `lte`,
+`gte`), and tokens of three characters or fewer skip the collapse. Q3/Q4 now score 0.67.
+
+**This is the exponent audit's rule arriving a second time from a different direction: a numeral
+or a marker is compared WITH its leading operator, never without.** The audit found it in the OCR;
+the sweep found it in the normaliser. Both times the failure was silent and plausible.
+
+### Whole-corpus validation, 2026-09-02 — clean
+
+Loaded each array and read `.length` (never grepped — the files mix quoted and bare keys, and
+`grep -c "^  { id:"` undercounts `questions.ophtho.js` outright):
+
+```
+ent     2240 q +  82 c = 2322    banks: endpoint 615  gradegain 1101  house 779
+ophtho  1399 q +   0 c = 1399    banks: gradegain 910  house 489
+neuro    173 q +   7 c =  180    banks: gradegain 173
+peds     106 q +   0 c =  106    banks: house 106
+                        -----
+                         4007    clean: 0 failures
+```
+
+**Ophtho is unchanged at 1,399** — nothing has been spliced this session.
+**Peds has moved 81 → 106** (Chat B, not mine). Corpus 3,982 → **4,007**. Not recorded in
+`MEMORY.md` from here; that is the consolidation pass's job, and peds is Chat B's to report.
+
+Option counts across the corpus now run 2 – 10. Neuro carries the 8-, 9- and 10-option entries the
+option-cap fix released.
+
+### House ch.20 — re-swept, and MEMORY's "zero folds" is confirmed
+
+29 incoming against 1,399 shipped = **40,571 pairs** compared on normalised stem, loose stem,
+option menu and printed option order. **Two candidates surfaced; both hand-decided as NOT folds:**
+
+- **`opmcq-c20-3` × `opmcq-c20-4`** — the instrument's own defect, described above. They are a
+  **shared option menu, which PAIRS questions and never folds them.** The discriminating tokens
+  are `+ve (Jones I)` against `-ve (Jones II)`, and the keys differ: index 0 against index 3.
+- **`opmcq-c20-6` × shipped `opqb-t20-806`** — same subject (IV fluorescein adverse effects),
+  **different question.** House prints five options keyed to `All of the above`; Grade Gain prints
+  four entirely different options keyed to `Yellow skin/urine`, with `Permanent retinal damage`,
+  `Orbital cellulitis` and `Optic neuritis` as distractors that do not appear in the House menu.
+  Not the same printing, so **no `alsoIn`** — a cross-bank *neighbour*, not a cross-bank match.
+
+**Ch.20 stands at 29 drafted, 29 staged, zero folds.** The rebuilt sweep reproduces the earlier
+result, which is the only evidence so far that the reconstruction behaves like the original.
