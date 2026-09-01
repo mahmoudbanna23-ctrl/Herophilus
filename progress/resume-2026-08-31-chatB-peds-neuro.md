@@ -287,7 +287,8 @@ and anything above disagree, **this block wins.**
   or any question with more than five options is safe to splice.** Previously eight neuro
   questions (`npqb-nr-43`, `-51`, `npqb-nr-113`–`118`) lettered options `undefined` and printed
   “the answer is undefined”; they render correctly now.
-  ⚠️ Letters are **positional**. If a source set prints non-contiguous keys (topic 06 prints
+  ✅ Letters are **positional** — **DECIDED 2026-09-02 by the user, do not raise it as a bug.**
+  If a source set prints non-contiguous keys (topic 06 prints
   A B C D E F J k L M), the badge will not match the book for options past the gap — keep
   recording the printed key in each entry’s `source`, as topic 06 already does.
   ⚠️ `app\index.html` **stays on your forbidden list** — the fix was the watch chat acting on

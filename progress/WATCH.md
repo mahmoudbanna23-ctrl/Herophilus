@@ -99,7 +99,9 @@ module.
   `-115` app **H** vs printed **K**, `-117` app **G** vs printed **J**. **The option TEXT and
   the scoring are correct in all six** — only the badge letter differs, and each entry’s
   `source` field records the printed key. Mirroring the book would need per-question letter
-  data in the bank plus a renderer change; **the user has been told and it is their call.**
+  data in the bank plus a renderer change. ✅ **DECIDED 2026-09-02: the user ruled the letters
+  stay POSITIONAL.** This is settled, not outstanding — if you meet an app letter that differs
+  from a printed key, **that is the accepted behaviour, not a defect to report or fix.**
 - **Source PDFs are originals.** 158 files, 3.64 GB under `Medical school`. Confirm the count:
   `find "D:/claude os/Medical school" -iname "*.pdf" | wc -l`
 

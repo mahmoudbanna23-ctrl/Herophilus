@@ -188,7 +188,7 @@ everywhere else and return once the answer is revealed. Verified with `node --ch
 script blocks and a node harness on the real data: `npqb-nr-113` letters **A–J** and reveals
 **“the answer is F — Parkinson’s disease”**.
 
-⚠️ **Still open — see item 4 in §10:** the letters are POSITIONAL, and this bank’s printed keys
+✅ **Settled — see item 4 in §10:** the letters are POSITIONAL, and this bank’s printed keys
 for the topic-06 matching set are not. **`index.html` remains outside this chat’s scope** — the
 edit was the watch chat’s, not a licence to edit it here.
 
@@ -382,7 +382,9 @@ that rule exists — it pays for the NEXT topic, not the current one.**
    `-116` **B**=**B**, `-118` **D**=**D**, but `-114` app **I** vs printed **L**, `-115` **H** vs
    **K**, `-117` **G** vs printed **J**. **Option text and scoring are right in all six**; only
    the badge differs, and every entry’s `source` records the printed key. Mirroring the book
-   needs per-question letter data plus a renderer change — **reported to the user; their call.**
+   needs per-question letter data plus a renderer change. ✅ **The user ruled 2026-09-02: leave
+   the letters as they are.** Positional lettering is the accepted behaviour — **do not re-open
+   this and do not report the mismatch as a defect.** Keep recording the printed key in `source`.
 5. **Neurosurgery stays excluded** — the user's standing instruction, ~273 questions, book pp.94–136.
 
 ---

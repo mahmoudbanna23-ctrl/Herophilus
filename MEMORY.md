@@ -58,8 +58,9 @@ tonight; the 429 rule in their first version was wrong). ✅ ENT CLOSED (`ledger
   Eight `questions.neuro.js` questions exceed five options — `npqb-nr-43`, `-51`, and the
   `-113`–`118` matching block (10 shared) — and used to print “the answer is undefined”.
   **Letter keys now pick any shown option**, so on those eight F/J select options instead of
-  flag/jump until the answer is revealed. Check: `python tools\count-options.py`. Open:
-  on `-114`/`-115`/`-117` the app letter (I/H/G) differs from the book’s printed key (L/K/J).
+  flag/jump until the answer is revealed. Check: `python tools\count-options.py`.
+  On `-114`/`-115`/`-117` the app letter (I/H/G) differs from the book’s printed key (L/K/J):
+  **DECIDED 2026-09-02 — letters stay POSITIONAL. Not a bug, do not re-open.**
 - **USER RULING 2026-08-31: skip ALL OSCE content** — *"If I needed it later I'll tell you."*
   Deferred, not cut: skip it, say it was skipped and why, carry on. Not a scope cut needing approval.
 

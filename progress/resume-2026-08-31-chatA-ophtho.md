@@ -217,7 +217,8 @@ and anything above disagree, **this block wins.**
   `OPT_LETTERS`. **Ophthalmology never had an over-cap question** — the eight that existed are
   all in neuro — which is why you were never warned; the note is here so you do not hold an
   ophtho question back for having six options. Two things to know:
-  • **Letters are POSITIONAL.** If a source prints non-contiguous keys (a matching set that
+  • **Letters are POSITIONAL — decided 2026-09-02, not a bug.** If a source prints
+  non-contiguous keys (a matching set that
   skips letters), the badge will not match the book past the gap — record the printed key in
   the entry’s `source` field, as neuro topic 06 does.
   • **On a question showing more than five options the letter keys pick options**, so F and J
