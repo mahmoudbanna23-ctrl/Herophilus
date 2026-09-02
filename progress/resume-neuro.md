@@ -858,3 +858,54 @@ options a-d, all 15 keys resolving inside their own option list, boxes on 77, 80
 
 Drafting agent launched the same day against `t19-draft-brief.md`, output
 `gg-ps-t19.draft.js`, ids `npqb-ps-76` to `-90`.
+
+### 2026-09-02 — topic 19 DRAFTED and SPLICED. questions.neuro.js is 222.
+
+15 entries, `npqb-ps-76` to `-90`. Validated against the staging record before the
+splice and again after it, by me and not only by the drafting agent: stems byte
+identical, option arrays byte identical, every `answer` equal to the staged key's
+index, 0 sparse holes, 0 unresolved chapter refs, 0 markers in `source`, 4 boxed
+entries carrying the box text inside a blockquote and NO marker, 11 authored
+entries with the marker as the final characters. Splice 851,376 -> 919,179 bytes.
+After: **222 entries**, 0 holes, 0 duplicate ids, 15/15 new ids, 0 answers out of
+range.
+
+- **Chapters: `ps-child` 12, `ps-pharm` 3.** The three moved are `-83`, `-84`, `-88`
+  — each asks for an agent's adverse-effect or monitoring profile, the subject the
+  shipped `npqb-ps-23`/`-47` establish for `ps-pharm`. **`npqb-ps-82` stayed
+  `ps-child`** on content: it tests ADHD *management* (which class is first-line),
+  and `L17) Psychopharmacology` never names an ADHD agent at all.
+- **`npqb-ps-90` stays `ps-child` although it is an OCD item and `ps-ocd` exists** —
+  the topic groups by teaching topic, and the question's work is diagnostic
+  recognition in a 12-year-old. Flagged by the drafting agent, decided here. Not a
+  bug; do not re-open without a reason.
+- **Q88 is a second divergence the staging pass did not catch.** The printed key is
+  "Liver impairment", which is **atomoxetine's** warned risk; what methylphenidate
+  needs monitoring for is blood pressure, pulse and growth, so the printed
+  distractor "Hypertension" is pharmacologically the stronger answer. Recorded in
+  `explanation` with two honest defences of the printed key. **The answer did not
+  move.** Q79's "more than two settings" defect recorded as planned.
+- **Q77's printed box is INCOMPLETE** — it omits social (pragmatic) communication
+  disorder, which `L14` lists among the four communication disorders. Noted after
+  the blockquote; the box itself untouched.
+- **A THIRD template group exists that no brief listed:** Q76 / Q78 / Q87 share a
+  distractor pool of neurodevelopmental disorder names. Paired by menu, not folded —
+  discriminating tokens named in each entry, as for Q83/Q88 and Q83/Q84.
+- ⚠️ **My brief contradicted itself on the `source` tail** — it gave
+  `p.79 (topic 19 Q76)` while also saying to match `gg-ps-t18.draft.js`, which
+  writes `p.76 (answer p.78)`. The agent followed the shipped file and was right:
+  `p.79 (answer p.81)` for Q76–Q84, `p.80 (answer p.81)` for Q85–Q90.
+  **When a brief and a shipped file disagree, the file wins.**
+- **Gaps filled and tagged, each with the grep that established it:** ADHD's
+  cross-setting criterion · ADHD prognosis · ADHD comorbidity including ODD
+  (`conduct disorder|oppositional` returns **zero hits in the whole lecture folder**)
+  · methylphenidate and atomoxetine adverse-effect profiles · combined behaviour
+  therapy plus medication · provisional vs persistent tic categories.
+  **Confirmed NOT gaps, so untagged:** clomipramine for OCD (`L8`), propranolol
+  (`L3) MOVEMENT DISORDERS`), alprazolam (`L17`). Phenobarbital genuinely is not
+  named — the decks say only "barbiturates" — and the entry says so.
+
+**Next in this bank: topic 20 "Schizophrenia", book pp.82–85, PDF 87–90, opening at
+Q91.** The contents page promises 26; five consecutive topics have run low, so
+measure it. ⚠️ Its Q98 prints **five** options — the four-option run ends at the
+topic 19/20 boundary.
