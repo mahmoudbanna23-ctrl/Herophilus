@@ -1734,3 +1734,220 @@ option menu and printed option order. **Two candidates surfaced; both hand-decid
 
 **Ch.20 stands at 29 drafted, 29 staged, zero folds.** The rebuilt sweep reproduces the earlier
 result, which is the only evidence so far that the reconstruction behaves like the original.
+
+---
+
+## 2026-09-02 — the page map of both banks' tails, read off the images
+
+### ⚠️⚠️ THE HOUSE BANK DOES NOT CLOSE AT CHAPTER 20. It is roughly half the book.
+
+**This contradicts the resume brief, `MEMORY.md`, and every plan built on them.** Chapter 20 ends
+at book p.134 (sheet 69 left). `ophthalmology MCQ.pdf` then runs for **another ~115 book pages, to
+sheet 126**, and every one of those pages carries the running header
+
+> `Ophthalmology MCQs 2026` / **`OSCE (End-of-round E-exams)`**
+
+Seven sheets were sampled (70, 71, 72, 85, 100, 115, 126). The two-up arithmetic
+(`left = 2N−4`, `right = 2N−3`) **held on all seven with no drift**, out to the last sheet.
+Three distinct runs are printed in there:
+
+| Run | Format | Measured anchors | Density |
+|---|---|---|---|
+| **Photo MCQs**, numbered from 1 | 4 options, inline `Answer:`, full red-ink explanation, **one clinical photograph per question** | Q3 @ p.136 · Q93 @ p.166 · Q181 @ p.196 · Q270 @ p.226 | flat **3 per page** |
+| **Text-only MCQs**, same number sequence | 4 options, one-line `Answer:`, **no image, no explanation** | Q270–279 @ pp.226–227 | **5 per page** |
+| **Short-answer**, **restarts at 1** | question then `Answer: <phrase>`, **no options at all** | Q22–33 @ pp.248–249 | ~10 per page |
+
+Because Q3 heads p.136, **Q1–Q2 sit on p.135 — sheet 69 right, immediately after chapter 20.**
+The photo run therefore begins the moment chapter 20 stops.
+
+**Volume: at least 279 + 33 = 312 questions, measured.** A 3-point density fit puts the true
+total nearer **350–420**, which is inference, not measurement, and is labelled as such.
+⚠️ **The photo run is the image-heavy material this module believed it had only 35 of.**
+
+**Sheet 126 is the last sheet**; its right page ends at Q33 with ~2/3 blank, so the book stops
+there rather than being truncated.
+
+**⚠️ The header band is a fixed template and is NOT a reliable section marker.** Items 28–31 of
+the short-answer run print *"(see the OSCE section)"* — so that run is **not itself** the OSCE
+section; it only references it. Do not take the header as proof of what any given page is.
+
+**Scope, and this is NOT the agent's call:** the user's ruling of 2026-08-31 is *skip ALL OSCE
+content — "If I needed it later I'll tell you."* Every one of these 57 sheets is headed OSCE, so
+**on the header the whole tail is out of scope and is being SKIPPED, not cut** — which is what the
+ruling directs, and it is reported rather than silently dropped. The tension worth flagging: the
+material is plain keyed MCQ, not station-style OSCE. **Nobody should budget 350+ questions against
+this without the user saying so.**
+
+**Three things the 7-sheet sample cannot settle.** Not rendered, deliberately:
+- **sheet 69** — confirms ch.20 ends on p.134 and shows whether p.135 carries an OSCE title page + Q1–Q2
+- **sheets 112–114** — where the photo run turns text-only (somewhere between p.197 and p.226)
+- **sheets 118, 121, 124** — where the numbered run ends and the short-answer run restarts at 1
+
+### Grade Gain tail — mapped end to end, sheets 154–185
+
+**The `book = sheet − 7` offset held on every sheet that prints a folio (154–183).** No break.
+Sheets 184–185 print no folio, so the offset stops applying rather than changing.
+
+| Section (printed verbatim) | Book pp. | PDF sheets | Questions **counted** | Key prints at |
+|---|---|---|---|---|
+| End Exam 4 — *answers only in this range* | 147 | 154 | — | p.147 / sheet 154 |
+| **End Exam 5** | 148–150 | 155–157 | **20** | p.150 right col / sheet 157 |
+| **End Exam 6 (Photos)** | 151–159 | 158–166 | **35** | p.159 right col / sheet 166 |
+| **Tutorial Exam** | 160–167 | 167–174 | **27** | p.167 / sheet 174, own page |
+| **Final Exam** | 168–176 | 175–183 | **69** | p.175 right col + p.176 / sheets 182–183 |
+| back matter | unnumbered | 184–185 | 0 | — |
+
+**Tail total 151.** Sheet 184 is blank; sheet 185 is a publisher advert. **Content ends at sheet
+183.** Numbering restarts at 1 in every section.
+
+**The bank prints no contents page and no per-section counts in the tail** — there was nothing to
+distrust, and every count above is a hand count of printed question numbers, cross-checked against
+the length of each answer key. **All four reconcile exactly: 20/20, 35/35, 27/27, 69/69.**
+⚠️ **The four inherited counts were all correct.** Recording that, because in this project they
+usually are not.
+
+**End Exam 6 figure audit, page by page:** 4·4·4·4·4·4·4·5·2 = **35 figure blocks for 35
+questions.** One figure per question; none shared, none missing. Three are multi-panel inside a
+single frame — **Q19** (two fundus photos side by side), **Q22** (two stacked eye photos),
+**Q7** (a two-panel line drawing).
+
+**⚠️ Option counts vary and will break any fixed-five assumption:**
+EE5 **Q8 has five options (A–E), key E** · Final **Q61–Q69 all have five** · Final **Q33 has only
+three (A–C)** · EE6 **Q32 has only three (A–C)**.
+Tutorial key **Q19 prints a lowercase `d`** where every other entry is uppercase — a typographic
+slip, not a different answer.
+
+### End Exam 4's answer key was OUTSIDE the transcribed range — checked, and it is fine
+
+The map showed EE4's key prints on **p.147 = sheet 154**, one sheet past where transcription
+stopped (153). The staged keys in `gg-ee4.array.js` were therefore of unverified provenance, and
+their distribution looked wrong: **12 of 20 are `A`**, including ten consecutive.
+
+**Read off the rendered key page: 0 mismatches in 20.** Printed distribution is A 12 · B 3 ·
+C 2 · D 3, identical in every position to the staged list, ten-A run and all. **The book really
+does print ten consecutive A's**; the suspicious distribution is the source's, not a transcription
+fault. A list produced any other way could not reproduce that positional sequence.
+
+**The suspicion was wrong and the check was still right** — the key page sat outside the range
+anyone had read, so its provenance was genuinely unestablished until now.
+
+⚠️ **What this does NOT establish:** that each question's **option ORDER** matches the book's.
+A reordered option list re-keys the question silently while the letter still "matches". That is a
+check against the question pages, and it belongs to the drafting pass.
+
+**Two page facts settled in passing:** the blue running header `QUESTION BANK: Previous Exam` is
+the **running header of this whole section**, not a section name — which closes the flag raised
+earlier about p.143 "printing the wrong header". And p.147 carries **reverse-side show-through**
+("16. Exophthalmos means…"), which is bleed-through, not content.
+
+---
+
+## 2026-09-02 — House ch.19 and ch.20 DRAFTED, SWEPT, SPLICED. **House chapter run 1–20 is closed.**
+
+**Ophtho 1,399 → 1,470 (+71).** House ophtho 489 → 560. Corpus 4,007 → **4,121** (neuro and peds
+moved under Chat B in the same window). Validation clean, loaded not grepped.
+
+| batch | staged | drafted | folds | spliced |
+|---|---|---|---|---|
+| House ch.19 | 43 | 42 | 1 (Q27 → `opmcq-c13-17`, folded at staging) | **42** |
+| House ch.20 | 29 | 29 | 0 | **29** |
+
+### The sweep: 17 candidates, ZERO folds — and why each zero is a zero
+
+Ch.19's 42 against the 1,399-question corpus produced **no stage A–F hit at all** — no exact,
+respelled, reordered, boxed-second-printing or cross-chapter match. The 17 rows are 13
+shared-menu pairs and 4 within-batch near-misses, hand-decided one at a time:
+
+**The `Grade 1 / Grade 2 / Grade 3 / Grade 4` menu is a TEMPLATE, and it collides across two
+different diseases.** `opmcq-c19-5`, `-6`, `-38`, `opqb-t19-775` and `-778` grade **hypertensive
+retinopathy**; `opqb-t18-725` and `opmcq-c18-15` grade **chemical injury**. Same four strings,
+unrelated questions. Discriminating tokens as printed: *arterial narrowing with focal
+irregularities* (Gr 2) · *optic disc edema* (Gr 4) · *copper-wire arterioles and venous nicking*
+(Gr 2) · *limbal ischemia <30%* (Gr 2, chemical).
+
+⚠️ **The closest call was `opmcq-c19-38` × `opqb-t19-775` — same fact, and NOT a fold.** Both key
+Grade 4 off disc oedema plus a macular star, but they are different printings of it: a **55**-year-
+old with *sudden blurred vision* against a **48**-year-old with *BP 230/130 and headache*, and the
+Grade Gain option list is **reordered** (`Grade 2 / 3 / 4 / 1`, key at index 2) against House's
+natural order (key at index 3). Same reasoning that kept `opmcq-c20-6` and `opqb-t20-806` apart:
+a cross-bank **neighbour**, so **no `alsoIn`**.
+
+`opmcq-c19-10` × `opmcq-c13-17` share the retinal-detachment-type menu and key **different**
+options — *copper-wire arterioles / hypertensive* → exudative (index 2), *proliferative diabetic
+retinopathy* → tractional (index 1). A pair, and the reason Q27 folded into `-c13-17` rather than
+`-c19-10`.
+
+Within-batch: `opmcq-c19-7/8/9` (dice 0.81–0.85) are **one GCA vignette asked three ways** —
+diagnosis, confirmatory test, management — with three disjoint option menus. `-10/-11` the same
+shape on the hypertensive vignette. **Stem-triplets score high by construction; the option menu is
+what separates them.**
+
+**Cross-batch: ch.19 × ch.20, 1,218 pairs, 0 candidates.** The two batches are disjoint.
+
+### Back-references hand-read against their antecedent AND their own key — all clean
+
+Ch.19 carries the chapter's only *"In the previous case…"* chain (Q7 → Q8 → Q9) plus Q10 → Q11.
+Every repaired stem restates the vignette without naming its own answer. **`opmcq-c19-11`
+deliberately drops the word "hypertensive" that `-10` keeps** — retaining it would have handed over
+*"lowering blood pressure in a controlled fashion"*, which is its key. No instrument sees this; it
+was read by hand, entry against entry.
+
+### ⚠️ THE MARKER AUDITOR WAS WRONG, AND IT FAILED 26 CORRECT ENTRIES
+
+`stagecheck.js` first reported the explanation marker on **23 of 42** in ch.19 and **22 of 29** in
+ch.20 — implying 26 verbatim printed explanation boxes. **There are none. All 71 entries carry the
+marker, verbatim and correctly worded.** The test was anchored `/prints no explanation here\.$/`,
+so any coda after the marker read as an absent marker.
+
+Every one of the 26 codas is a **`*(Secondary chapter: …)*` note**, which `CLAUDE.md` §4 *requires*
+for a straddling question. The shipped corpus settles it: of **3,287** marked entries, **383 carry
+a coda** after the marker and **45** of those are secondary-chapter notes, against **111** that
+place the same note before it. **Both placements are established convention.**
+
+Three independent lines confirmed the House chapter bank prints **no** explanation boxes at all:
+all **76** shipped `opmcq-c15…c18` entries declare the marker; the c19/c20 staging arrays record no
+explanation text; and the unmarked explanations are structurally *written* (markdown tables,
+lecture citations, distractor-by-distractor) rather than captured.
+
+**Fixed in `tools\qb-pipeline\stagecheck.js`:** the test is now for **presence**, and codas are
+reported separately with anything that is *not* a secondary-chapter note named individually.
+⚠️ **This is the third time the rebuilt pipeline's own instrument produced the false failure**
+(after the peds chapter-id regex and `loose()`'s destruction of `+ve`/`-ve`). *Check the auditor
+before believing the audit* has now paid for itself three times in one day on the same five files.
+
+### One real defect, found and fixed
+
+`opmcq-c19-24`'s explanation cited **`opmcq-c19-27`** — the id folded away at staging. Repointed to
+**`opmcq-c13-17`**, which is the question that actually carries tractional detachment. *A folded id
+loses its backticks everywhere it is still mentioned*, and the dead-id check is what catches it.
+Post-splice: **0 dead backticked ophtho ids, 0 duplicate ids, 0 out-of-range answers.**
+
+### Where the drafting brief was wrong (reported by the drafting agent, verified here)
+
+- Its entry template specified a `type:'mcq'` field and the order `{id, module, chapter, bank, …}`.
+  The file's 27 existing entries carry **no `type`** and use `{id, bank, module, chapter, …}`.
+  **The file's convention won.**
+- It said "no trailing comma"; every entry in the file carries one. Harmless — `[a,b,]`.length is 2.
+- It said to preserve `worldide` (Q31). The draft file's **own header** already declared that repair
+  alongside four made earlier in the chapter (Q3, Q4, Q7, Q17). **This file repairs-and-records**;
+  Q31 → `worldwide` and Q38's dropped article → `the likely grade`, both recorded in `source`.
+- Its chapter hints were wrong twice. **Q38** went to `op-systemic`, not `op-ret-vasc`, because its
+  four siblings on the identical Grade menu (`-5`, `-6`, `-10`, `-11`) are all `op-systemic`.
+  **Q34** went to `op-acute`, not `op-neuro-optic`, because it tests the workup of sudden painless
+  visual loss. Secondaries noted in both.
+- ⚠️ **Its §8 verification command silently printed nothing** — `node -e` does not echo the final
+  expression. It needs `console.log(...)` wrapped round it. **Every future brief must wrap it.**
+
+### Cache hole worth filling later
+
+`ophthalmology.pdf` **p.250 teaches multiple sclerosis, inside chapter 19, and that page is not
+transcribed** in `content\ophtho\book\ch19-systemic-tumours.txt`. Found while grounding
+`opmcq-c19-30`, whose ptosis-in-MS distractor had to be tagged as outside the material even though
+the book almost certainly prints the fact one page away.
+
+### Where ophthalmology stands
+
+**House is CLOSED at chapter 20** for the chapter run — 1–20 all shipped. What follows p.134 in
+`ophthalmology MCQ.pdf` is the ~57-sheet OSCE tail mapped earlier today, **skipped under the user's
+standing ruling, not cut.** **Grade Gain is the only open ophtho work: EE4 (drafting), EE5, EE6
+Photos, Tutorial, Final — 171 questions.**
