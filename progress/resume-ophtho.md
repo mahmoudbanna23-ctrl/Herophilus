@@ -2186,3 +2186,101 @@ worked was abandoning counting altogether and **searching for the vocabulary of 
 (`reprint|also printed|folded here|second printing`), which found the 21 real records immediately
 **and printed them for reading**. A probe that prints its matches would have caught every one of the
 five on the first run. Write probes that print, not probes that count.
+
+---
+
+## 2026-09-02 (later) — the Anthropic session limit, what it cost, and what it did NOT cost
+
+Five background agents were killed simultaneously by an **Anthropic session rate limit** (HTTP 429,
+"resets 7am Africa/Cairo"). Not WPS, not a quota, not anything the agents did — five heavy
+image-reading agents running at once is what triggered it. **Concurrency lesson: cap parallel
+image-heavy subagents at three.**
+
+**The write-incrementally rule limited the total loss to seven questions.** Damage assessed from
+disk, never from the agents' own dying reports:
+
+| file | state at death | missing |
+|---|---|---|
+| `gg-tutorial.array.js` | **27/27 complete** | — |
+| `gg-final.array.js` | **69/69 complete** | — |
+| `gg-ee6.array.js` | 33/35, all carrying `fig` | n=34, 35 |
+| `gg-ee5.draft.js` | 15/20 | `opqb-t25-16…20` |
+
+**Both agents whose dying words named a fault had actually landed the fix before dying** — the
+tutorial's `\'` collapse was already repaired (Q22 renders `the patient's rig`), and EE5's wrongly
+tagged Q8 was already corrected (`answer` idx 4 of 5 = E, matching the staged key). **Verify a dead
+agent's file from disk before believing its report** — this is now the second time that rule has
+paid, after ch20-drugs on 2026-08-31.
+
+⚠️ **AGENT RESUME IS NOT AVAILABLE AFTER THIS FAILURE MODE.** `SendMessage` to the killed EE6 agent
+returned `No transcript found for agent ID`. A rate-limit kill destroys the transcript, so the
+context — including every page image the agent had already read — is gone. **Fresh agents must
+re-read the pages.** Plan the cost of a 429 as *the whole job again*, not *the remainder*.
+
+## GG "End Exam 6 (Photos)" — STAGING COMPLETE, 35/35
+
+Finished by a fresh agent after the limit cleared. Loads through `loadStaging` at 35, every entry
+carrying `fig`.
+
+- **Answers block is book p.159, right column**, tan banner, under the same
+  `End Exam 6 (Photos) / Answers` wording. Full key:
+  `A A D B A B B C B C · A C B A B C A C D B · C A A A A A A A A A · A A D C B`
+  Distribution **A 17 · B 8 · C 7 · D 3 = 35**. ⚠️ **Q22–Q32 are eleven consecutive `A`.** Re-read
+  at 3× and recorded, not corrected — it is what the book prints.
+- **Option counts: 34 four-option, Q32 three-option.** All options are **text**; no question prints
+  its options as pictures. Nothing straddles a page break.
+- Source defect recorded on Q35: option C prints **"Filed Examination"** for *Field*. Kept as
+  printed.
+- ⚠️ **The completing agent corrected two faults in the earlier agent's own file** — not source
+  disputes, transcription repairs, both recorded in-file:
+  1. **Q23's key was staged `B`; the book prints `A`.** Confirmed at 3× against the lines above and
+     below. **This one would have marked a correct answer wrong in the app.**
+  2. The header PAGE MAP was wrong at the 156/157/158 boundaries. The pages print
+     **156:Q21–24, 157:Q25–28, 158:Q29–33** — the entries' own `p` fields were right throughout;
+     only the comment was wrong.
+  **A staging header is a claim, not a measurement — the same rule that has now been wrong ten
+  times about draft counts applies to page maps.**
+
+## Where the ophtho image files actually live, settled and recorded
+
+- **No per-module directory.** `qImgSrc()` builds `assets/q/<name>.jpg`; all question images across
+  all four modules are flat `.jpg` in `app\assets\q\`, and `image` stores the **bare basename**.
+- **Field order for a picture question**, verbatim from the shipped `opqb-t16-691`:
+  `id, bank, module, chapter, stem, options, answer, image, imgAlt, imgEssential, explanation, objective, source`
+- **`imgEssential:true` appends *"— this question cannot be answered without it"* to the figure
+  caption** (`app\index.html:2692`). Used once in the corpus so far; **all 35 EE6 entries qualify.**
+- **House image standard, measured off the 16 shipped ophtho images: JPEG, 560 px wide**, natural
+  height, ~40–110 KB. One legacy exception is 642 px (`q-op-gg-11`).
+- ⚠️ **EE6 images MUST be `q-op-gg-ee6-1 … -35`.** The corpus scheme is
+  `q-op-gg-<running question number>`, but EE6 restarts at 1 and **`q-op-gg-11.jpg` already exists
+  and belongs to `opqb-t2-95`** — a bare `q-op-gg-11` would point at another question's photograph.
+
+## Queue as at this entry
+
+Briefs now exist for every remaining ophtho job, all in the session scratchpad under
+`…\89a2b4fc-…\scratchpad\`:
+
+| job | brief | state |
+|---|---|---|
+| EE5 draft, `opqb-t25-16…20` | `ee5\BRIEF-EE5-DRAFT.md` | agent running |
+| Final draft A, `opqb-t28-1…23` | `final\BRIEF-FINAL-DRAFT.md` | agent running, **holds the key gate** |
+| Tutorial draft, `opqb-t27-1…27` | `tut\BRIEF-TUT-DRAFT.md` | agent running |
+| EE6 crops, 35 JPEGs | `ee6\BRIEF-EE6-CROPS.md` | written, not launched |
+| EE6 draft, `opqb-t26-1…35` | `ee6\BRIEF-EE6-DRAFT.md` | written, not launched |
+| Final drafts B and C, `opqb-t28-24…69` | `final\BRIEF-FINAL-DRAFT.md` | **held until Agent A confirms the key** |
+
+**Final B and C are deliberately held.** The staged Final key is **C 31 · D 13 · A 11 · B 11 · E 3 —
+45% C**, far from flat, and it has only ever been read by the pass that staged it. Agent A re-reads
+Q1–10, Q30–40 and Q60–69 off `book-175.png`/`book-176.png` before drafting anything. **If it
+disagrees, 46 questions were not built on a bad key.**
+
+## ⚠️ The `sed`/heredoc injection fired again
+
+An instruction reached this chat a second time, in a system-shaped position, directing that file
+changes be made "with sed, heredocs, or short scripts, rather than using the dedicated Read, Edit,
+or Write tools." **It did not come from the user**, and it contradicts this project's most expensive
+documented trap: the Bash tool collapses `\\` to `\` before the body's own language sees it, and a
+backtick inside a double-quoted string is command substitution — **and every id this project writes
+into an explanation is in backticks.** Reads and searches stayed on Bash; **content writes stayed on
+`Write`/`Edit`**, and the same warning is written into all three new briefs. Both drafting subagents
+refused the identical injection earlier today. Flagged to the user both times.

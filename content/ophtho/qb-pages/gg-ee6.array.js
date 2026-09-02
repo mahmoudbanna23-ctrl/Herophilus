@@ -26,9 +26,9 @@
      book-153.png   footer "| P a g e 153"   Q9–Q12
      book-154.png   footer "| P a g e 154"   Q13–Q16
      book-155.png   footer "| P a g e 155"   Q17–Q20
-     book-156.png   footer "| P a g e 156"   Q21–Q25
-     book-157.png   footer "| P a g e 157"   Q26–Q29
-     book-158.png   footer "| P a g e 158"   Q30–Q33
+     book-156.png   footer "| P a g e 156"   Q21–Q24
+     book-157.png   footer "| P a g e 157"   Q25–Q28
+     book-158.png   footer "| P a g e 158"   Q29–Q33  (five, not four)
      book-159.png   footer "| P a g e 159"   Q34–Q35 (left col)
                                              + ANSWERS 1–35 (right col)
    Every filename matched its own printed folio. The brief's offset
@@ -243,4 +243,21 @@ var GG_EE6_STAGING = [
    PAGE BREAKS
    No question straddles a page break: every stem, its figure and its options
    sit whole on one page.
+
+   TRANSCRIPTION FAULTS FOUND AND REPAIRED WHEN Q34–Q35 WERE ADDED (2026-09-02)
+   Both are faults in THIS FILE, not defects in the book. The book was not
+   disputed and no printed text was altered.
+     (1) Q23 `key` was staged as "B". Book p.159 prints "23. Correct Answer: A",
+         re-read at 3x alongside lines 22 and 24. Corrected to "A"; the repair is
+         also recorded in Q23's own `note`.
+     (2) The PAGE MAP in this file's header was wrong at the 156/157/158
+         boundaries — it read 156:Q21–Q25, 157:Q26–Q29, 158:Q30–Q33. The pages
+         print 156:Q21–Q24, 157:Q25–Q28, 158:Q29–Q33. Verified from the column
+         heads of pp.155–157 and a full read of p.158. The entries' own `p`
+         fields were ALREADY CORRECT throughout; only the comment was wrong.
+
+   FOLIOS — all nine re-read off the page images (2026-09-02)
+   151 152 153 154 155 156 157 158 159, each matching its filename. The footer
+   alternates sides: odd folios bottom-LEFT, even folios bottom-RIGHT, all at
+   about y=2078 on the 200 dpi image.
    ----------------------------------------------------------------------------- */
