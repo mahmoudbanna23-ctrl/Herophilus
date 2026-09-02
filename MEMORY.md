@@ -34,23 +34,21 @@ FALSE marker, not 143 missing; theory rows 76, 0 open). Close-out: `progress\res
   (ch.9–20).** **ch.9 is ALREADY STAGED** (`content\peds\qb-pages\house-ch09-dev-problems.array.js`)
   — resume at drafting. ⚠️ ch.9 prints **"18." twice with no Q19**, tokens `dev-problems`/`dev-nd`,
   boiler is a **fifth shape**. Peds OSCE **14 Sep**, nearest exam.
-- ⏳ **PEDS ENDPOINT part 1 — launch prep, NOT launched; part 2 deferred by the user.** Prompt
-  `progress\resume-2026-09-02-peds-endpoint.md` (v2, committed db0130e; needs v3 for the facts here).
-  Section 1 = 89 q pp.5–210, staged AND drafted (`endpoint-s01-growth-puberty.array.js` / `.draft.js`,
-  the draft a bare fragment with no `var`; 85 boxed, unboxed n=45/55/83/87 — record header fixed
-  66c2838; **draft passes `val-pd-ep.js 1` CLEAN and the splice dry run, 2026-09-02** — NOT spliced).
-  **Endpoint harness TESTED 2026-09-02** (`splice-pd-ep.js` now refuses unless the validator exits 0;
-  target `app\data\questions.peds.ep.js`, var `Q_PEDS_EP`, created on first `--write`; index.html
-  and questions.js wiring still to add). ⚠️ **Never run `val-pd.js`/`splice-pd.js` on endpoint files —
-  they write Chat B's live file.** Indexing proved but lives only in a dead scratchpad: the PDF is
-  1,991 A4 pages each holding one native **800×450 JPEG** (PyMuPDF `extract_image`, xref = 3997+page,
-  whole book 26 s — **not** pdftoppm); **Windows.Media.Ocr from PS 5.1 did all 1,991 pages in 74 s**,
-  free; yellow px > ~1,500 on a 400×225 downscale = answered page; a box = OCR text after the last
-  option. Exact scripts are only in this chat's transcript (`~\.claude\projects\D--claude-os-Personal\
-  650b8682-…jsonl`). **NEXT, in order: (1) ✅ header fixed; (2) ✅ validator + dry run clean — the 25
-  fails were verbatim-typo repairs, 3 box pages, 15 menu pointers, 15 slide blockquotes; (3) put the
-  extract+OCR scripts in `tools\ep-index\` and OCR into `content\peds\qb-pages\ocr\ep1\`; (4) prompt v3;
-  (5) launch.** Cost work this session = none beyond CLAUDE.md §9 (edited elsewhere today).
+- ⏳ **PEDS ENDPOINT part 1 — READY TO LAUNCH 2026-09-02, not launched; part 2 deferred by the user.**
+  Prompt **`progressesume-2026-09-02-peds-endpoint.md` v3** (paste whole into a fresh Opus chat).
+  Step zero DONE: `index.html` + `questions.js` wired, `app\data\questions.peds.ep.js` exists empty
+  (`var Q_PEDS_EP`), boot check 0 errors. Section 1 (89 q, pp.5–210) staged+drafted, **85 boxed,
+  unboxed n=45/55/83/87**, `val-pd-ep.js 1` CLEAN, `splice-pd-ep.js 1` dry run clean — **first
+  command of the launch chat is `splice-pd-ep.js 1 --write`.** The splice refuses unless the
+  validator exits 0. ⚠️ **Never run `val-pd.js`/`splice-pd.js` on endpoint files — they write
+  Chat B's live file.** **Search index BUILT 2026-09-02: `content\peds\qb-pages\ocr\ep1\`**
+  (p0001–p1991 .txt, two OCR reads each + `index.json`; tool `tools\ep-indexun-all.ps1`, README
+  there; PyMuPDF native-JPEG copy + free Windows.Media.Ocr, ~5 min whole book, $0). Part 1 =
+  **855 questions** (`kind == "answered"`; yellow alone over-counts — notes slides are highlighted
+  too), body pp.5–1156 = 476 (89 done), model exams 379 expected reprints. ⚠️ OCR drops whole lines,
+  a different one per resolution — use both halves; **never the key, an exponent, a unit or a
+  dose from OCR.** `toolsank-harnessalidate-all.js` (new, read-only, all live files) found and
+  fixed 9 dead ids in ophtho the same day. Cost work this session = none beyond CLAUDE.md §9.
 - ⏳ **NEURO — 268 live** (nr 133 · ps 135); topics 18–21 spliced 2026-09-02. **Next: topic 22,
   Q137 on PDF 94 / book p.89** — ⚠️ banner says "Psychopharmacology", contents says "Pharmacology";
   psychiatry ends **Q165** in topic 23. ⚠️ **The 142 renders died with a scratchpad and only 2

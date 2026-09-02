@@ -72,10 +72,16 @@ module.
   regex. **Both returned a number that looked like data loss on a perfectly intact file.**
   ⚠️ **Before reporting any count as loss, re-count with the command above and compare against
   `git cat-file -s HEAD:<path>` — bytes rising while a count falls means the COUNT is broken.**
-- **`content\peds\qb-pages\endpoint-s01-growth-puberty.draft.js`** — 89 questions, committed
-  2026-09-02 (`7351007`), a splice fragment opening on a bare `{`, never audited. It is **parked
-  endpoint work** under the user's deferral ruling. Nobody should be touching it. If it moved,
-  that is worth reporting.
+- **`content\peds\qb-pages\endpoint-s01-growth-puberty.draft.js`** — 89 questions, validated
+  CLEAN 2026-09-02 (`32f2a32`), waiting for the endpoint chat's first `splice-pd-ep.js 1 --write`.
+  Once `app\data\questions.peds.ep.js` holds 89, that is the floor for that file. Until the
+  launch, nobody should be touching the draft; if it moved, report it.
+- **Cross-bank integrity, one command, read-only:**
+  ```bash
+  cd "D:/claude os/Medical school/Herophilus" && node tools/bank-harness/validate-all.js
+  ```
+  Exit 1 = a hard failure (parse, holes, duplicate id across files, answer outside options,
+  dead backticked id). Report the failure line; do not fix it from the watch.
 - **✅ The five-option cap was FIXED 2026-09-02 — this is now a REGRESSION check, not a defect.**
   `app\index.html` had `'ABCDE'[i]` at **4576**, **4591**, **6315**; past index 4 that is
   `undefined`, so eight shipped `questions.neuro.js` questions — `npqb-nr-43` (9 options),
@@ -105,7 +111,8 @@ module.
   data in the bank plus a renderer change. ✅ **DECIDED 2026-09-02: the user ruled the letters
   stay POSITIONAL.** This is settled, not outstanding — if you meet an app letter that differs
   from a printed key, **that is the accepted behaviour, not a defect to report or fix.**
-- **Source PDFs are originals.** 158 files, 3.64 GB under `Medical school`. Confirm the count:
+- **Source PDFs are originals.** 166 files under `Medical school` (re-counted 2026-09-02; the
+  earlier 158 was stale). Confirm the count:
   `find "D:/claude os/Medical school" -iname "*.pdf" | wc -l`
 
 ## 5. Session hygiene (workspace §9)

@@ -1,7 +1,8 @@
-# Pediatrics ENDPOINT — part 1 only
+# Pediatrics ENDPOINT — part 1 only (prompt v3)
 
 Paste this whole file as the first message of a **fresh** chat. Opus 5, effort `high`, no Fast mode.
-Written 2026-09-02 by the watch session. Every number below was measured from disk the same day.
+v3 written 2026-09-02 (late) by the watch session. **Every number below was measured from disk the
+same day; v1/v2 figures that disagreed with the disk were replaced, not stacked.**
 
 ---
 
@@ -13,182 +14,202 @@ bank and owns `app\data\questions.peds.js`. You never write that file.
 | You own | Chat B owns |
 |---|---|
 | `app\data\questions.peds.ep.js` | `app\data\questions.peds.js` |
-| `content\peds\qb-pages\endpoint-*` | `content\peds\qb-pages\house-*` |
+| `content\peds\qb-pages\endpoint-*` · `content\peds\qb-pages\ocr\ep1\` | `content\peds\qb-pages\house-*` |
 | `app\assets\q\q-pd-ep-*.jpg` | `app\assets\q\q-pd-hd-*.jpg` |
-| `tools\bank-harness\*-pd-ep.js` | `tools\bank-harness\*-pd.js` |
+| `tools\bank-harness\*-pd-ep.js` · `tools\ep-index\` | `tools\bank-harness\*-pd.js`, `*-pd10.js` |
 | `progress\resume-peds-endpoint.md` | `progress\resume-peds.md` |
 
 **Scope is `Pediatrics endpoint part1.pdf` ONLY.** Part 2 is deliberately deferred by the user
-(2026-09-02) — a third work chat was judged not worth it. Do not open part 2, do not plan for it,
-do not treat part 1 as half a job. When part 1 closes, say so and stop.
+(2026-09-02). Do not open part 2, do not plan for it, do not treat part 1 as half a job. When
+part 1 closes, say so and stop.
 
 ⚠️ **Stage EXPLICIT PATHS — never `git add -A`.** Chat B commits in the gaps between your commands.
 If git reports `index.lock`, Chat B is mid-commit: **wait and retry, never delete it.**
 
 **Never touch:** `app\index.html` · `app\data\questions.js` · `app\data\questions.peds.js` ·
 `modules.js` · `MEMORY.md` · `progress\ledger.md` · `content\peds\qb-pages\house-*` ·
-`tools\bank-harness\splice-pd.js` · `tools\bank-harness\val-pd.js` (see the next section — this one
-will silently destroy Chat B's work).
+`tools\bank-harness\splice-pd.js` · `tools\bank-harness\val-pd.js` · `*-pd10.js`.
+
+⚠️⚠️ **`splice-pd.js` and `val-pd.js` write Chat B's live file** (`splice-pd.js` line 17 hardcodes
+`questions.peds.js`; its duplicate guard lets `pedep-` ids straight through). Both are **modified
+and uncommitted in Chat B's working tree** — never stage them, never run them on endpoint files.
+Your harness is `val-pd-ep.js` / `splice-pd-ep.js`, and **every splice you ever run is
+`splice-pd-ep.js`.**
 
 ---
 
-## ⚠️⚠️ THE HARNESS WILL OVERWRITE CHAT B'S BANK — read this before running anything
+## ✅ STEP ZERO IS DONE — start on the splice, not on setup
 
-`tools\bank-harness\splice-pd.js` line 17 hardcodes its target:
+Everything v2 asked you to set up or ask permission for is already on disk and committed:
+
+- **Wiring is in.** `app\index.html` loads `data/questions.peds.ep.js` after the House file, and
+  `app\data\questions.js` concatenates `window.Q_PEDS_EP || []`. `app\data\questions.peds.ep.js`
+  exists with an empty `var Q_PEDS_EP = [ ];` and the boot check runs clean (0 console errors,
+  4,438 questions). **Do not edit either shared file again.**
+- **The harness copies exist and are TESTED.** `tools\bank-harness\val-pd-ep.js <section>` and
+  `splice-pd-ep.js <section> [--write]`. The splice **refuses unless the validator exits 0** on the
+  same section — no flag skips that. Each knows one target: `questions.peds.ep.js`, var
+  `Q_PEDS_EP`. New sections are added to the `SEC` table at the top of **both** files.
+- **Section 1 is staged, drafted, VALIDATED and dry-run clean.**
+  `content\peds\qb-pages\endpoint-s01-growth-puberty.array.js` (89 rows, header corrected
+  `66c2838`) and `endpoint-s01-growth-puberty.draft.js` (89 entries `pedep-gp-1…89`, a bare
+  fragment with no `var`, repaired `32f2a32`). `val-pd-ep.js 1` → `ALL CHECKS PASSED`;
+  `splice-pd-ep.js 1` → "would be 89 entries, 373150 bytes".
+- **The 86-vs-85 discrepancy from v2 is RESOLVED: 85 boxed.** The four unboxed are n=45 (p.119),
+  **n=55 (p.139, re-read 2026-09-02: key d highlighted, nothing printed below the options)**,
+  n=83 (p.197), n=87 (p.205). The record header and the draft agree.
+
+**Your first three commands, in order:**
 
 ```
-const LIVE = R + 'app/data/questions.peds.js';
+node tools\bank-harness\splice-pd-ep.js 1 --write
+node tools\boot-check\boot-check.js
+node tools\bank-harness\validate-all.js
 ```
 
-and line 132 is `fs.writeFileSync(LIVE, out, 'utf8')`. Its duplicate guard only checks whether an id
-is *already* live, so `pedep-` ids sail straight through. **Running it splices your endpoint
-questions into Chat B's House bank and rewrites the file underneath a live chat.**
+Then `git add -- app/data/questions.peds.ep.js` and commit that one path. **Section 1 ships in
+the first ten minutes of this chat.** ~89 questions of coverage on day one, zero pages rendered.
 
-Both `splice-pd.js` and `val-pd.js` are **modified and uncommitted in Chat B's working tree right
-now** — they are a moving target as well as a shared one.
+---
 
-**So: copy, never edit, never run the originals.**
+## THE SEARCH INDEX — the whole book is already OCR'd, grep it before you render anything
+
+`content\peds\qb-pages\ocr\ep1\` holds **one text file per page, p0001–p1991**, plus
+`index.json`. Built 2026-09-02 with `tools\ep-index\` (README there): each page's native
+800×450 JPEG copied straight out of the PDF, OCR'd with the **free, offline Windows engine**, twice
+— once at native size and once at 150 dpi — because **the engine silently drops whole lines, and a
+different line at each size** (p.38 native lost the key line B; p.145 at 150 dpi lost its key).
+Each `pNNNN.txt` carries both reads, separated by `--- 150dpi ---`. **Use both halves.** On the
+7 ground-truth pages the union recovered every stem and option; stems were **character-exact,
+printed typos included.**
+
+`index.json` has one row per page: `kind`, `yellow`, `words`, `options` (letters seen per read)
+and `flags`. **`kind` is the fact you plan from:**
+
+| kind | meaning | part 1 |
+|---|---|---|
+| `answered` | yellow highlight AND ≥1 option letter — the answered printing, **one per question** | **855** |
+| `question` | no yellow, ≥2 option letters — the unanswered printing | 854 |
+| `notes` | no option letters — summary slides, dividers, contents | 281 |
+| `other` | one letter, no yellow — look at it | 1 (p.741) |
+
+⚠️ **Yellow alone is NOT a question count.** The summary slides (pp.6–27 and every section's
+notes) are highlighted too — 1,058 pages carry yellow, only 855 are questions. Count `kind`.
+The threshold (≥750 on the downscale) was calibrated on section 1 against the staging record:
+**89 of 89 answered pages found, 0 false positives on the 89 unanswered and 3 overflow pages.**
+
+**Flags — the index fails loudly rather than looking complete.** `thin` (83 pages: dividers,
+overflow boxes, lost pages), `few-options` (14 answered pages where both reads together saw
+< 4 letters — **render these before trusting the index for them**: 50, 139, 338, 504, 742, 797,
+938, 1039, 1043, 1232, 1268, 1603, 1684, 1774), `options-differ` (169: one read lost an option
+line — read both), `passes-differ` (20). List them:
 
 ```
-cp tools/bank-harness/splice-pd.js tools/bank-harness/splice-pd-ep.js
-cp tools/bank-harness/val-pd.js    tools/bank-harness/val-pd-ep.js
+python -c "import json;print([(r['page'],r['flags']) for r in json.load(open('content/peds/qb-pages/ocr/ep1/index.json')) if r['flags']])"
 ```
 
-Then change `questions.peds.js` → `questions.peds.ep.js` and `Q_PEDS` → `Q_PEDS_EP` inside **your
-copies only**, and re-read both files top to bottom before the first run — they carry peds House
-assumptions beyond the filename. **Every splice you ever run is `splice-pd-ep.js`.**
+⚠️⚠️ **THE INDEX IS A SEARCH INDEX, NEVER A CLINICAL SOURCE, AND NEVER THE ANSWER KEY.** The key is
+the yellow highlight on the image, read inside a subagent. A page's OCR can carry the key line in
+one read and not the other. **Never take an exponent, a unit or a dose from OCR text** — the
+WPS finding (10⁶ read as 10⁹) applies to every engine.
+
+**What the index is for:** the reprint map (diff answered pages' text against each other — the
+model exams are expected to be mostly reprints, as ENT's were at 96%), box presence (text after
+the last option on an answered page), locating every answered page per section, and searching
+for a stem before drafting. Contact sheets and page renders are still how you *read*; the index
+decides *which* pages are worth reading.
+
+**Re-running it** (only if the index is ever lost; ~5 minutes, images to the scratchpad):
+```
+powershell -ExecutionPolicy Bypass -File tools\ep-index\run-all.ps1 -Pdf "Semester 8\Pedo\Questions\Pediatrics endpoint part1.pdf" -Out content\peds\qb-pages\ocr\ep1 -Work <scratchpad>\ep1-index
+```
 
 ---
 
-## STEP ZERO — the wiring, the ONLY shared-file edit in this job
+## THE BOOK MAP — from the contents pages (p.2–3), counts from the index
 
-The app has no second pediatrics data file yet. Two lines create one:
+| section | pages | answered (= questions) | notes slides |
+|---|---|---|---|
+| ✅ Growth & Puberty | 5–210 | **89** — drafted | 28 |
+| Nutrition | 211–392 | 76 | 30 |
+| Gastroenterology | 393–549 | 67 | 23 |
+| Accidents & poisoning | 550–562 | 3 | 7 |
+| Pediatrics Emergencies | 563–702 | 60 | 18 |
+| Perinatal | 703–773 | 23 | 25 |
+| Neonatology | 774–903 | 53 | 24 |
+| Allergy | 904–928 | 9 | 7 |
+| Infection & Immunity | 929–1156 | 96 | 37 |
+| Model Final Exam 1–4 | 1157–1804 | 80 · 79 · 80 · 80 | 11 |
+| Model Training Exam 1–2 | 1805–1936 | 30 · 30 | 12 |
+| Exam Night Review | 1937–1990 | 0 — prose only | 54 |
 
-- `app\index.html:2533` — add directly after `<script src="data/questions.peds.js"></script>`:
-  `<script src="data/questions.peds.ep.js"></script>`
-- `app\data\questions.js:6` — add after `window.Q_PEDS   || [],`:
-  `window.Q_PEDS_EP || [],`
+**Body = 476 questions (pp.5–1156), of which 89 are done. Exams = 379, expected mostly reprints
+— they go last and they fold.** `Pediatrics Emergencies` shows 62 unanswered against 60 answered
+and Perinatal 22 against 23: a question printed once, or a lost highlight — reconcile per section
+from the index before staging, do not assume.
 
-Both files are on your forbidden list. **Ask the user to approve these two lines before you write a
-single question, and do not edit them yourself unless the user says so in this chat.** The
-aggregator is `const Q_ALL = [].concat(window.X || [], …)`, so until your file exists the app
-degrades to an empty list and nothing breaks. After these two lines you never touch a shared file.
-
-Your file opens with `var Q_PEDS_EP = [` — **`var`, not `const`**, like every other data file: the
-aggregator reads it off `window`.
-
----
-
-## READ THIS FILE FIRST — the staging record is worth more than this brief
-
-`content\peds\qb-pages\endpoint-s01-growth-puberty.array.js` (62 KB) is a **verbatim staging record
-for section 1, written 2026-08-12 by someone who read every page 5–215.** It holds facts you would
-otherwise spend hundreds of pages rediscovering:
-
-- **PDF page = printed page. THE OFFSET IS ZERO** — verified on pp.2, 3, 4, 5, 20, 30, 210.
-- **The contents page is TRUSTWORTHY for section ranges** — its 5–210 for section 1 was confirmed by
-  reading, and p.211 opens section 2 "Nutrition". Use it to map the whole book cheaply.
-- Section 1 splits: pp.5–27 study-notes slides (**not questions**) · p.28 divider · **pp.29–209 the
-  questions** · p.210 a closing slide.
-- **Every question is printed twice** — an unanswered page, then an answered page with the key
-  highlighted **in yellow** and usually a bordered box. Only the answered page is staged.
-- **Three questions take a THIRD page**, the box printed alone after the answered page: q39→p.107,
-  q59→p.148, q60→p.151. **This is what flips the odd/even parity, twice.** Reading alternate pages
-  loses those three boxes outright.
-- **The printed number is NOT an identifier.** Printed numbers run 1–87 across 89 questions: 69 is
-  printed on both p.169 and p.171, 81 on both p.195 and p.197. Count by yellow highlights, not by
-  printed numbers.
-- **Section 1 contains no figures at all** — the file's own p.4 states the exam contains no
-  pictures. No crops were cut. Do not go hunting for images in this section.
-
-It also carries the per-question `n` / `pr` / `p` / `box` table. **Read it before you render a
-single page.**
-
----
-
-## WHAT IS ALREADY DRAFTED — validate and splice it, do not rewrite it
-
-`content\peds\qb-pages\endpoint-s01-growth-puberty.draft.js` — **376 KB, written 2026-08-13, parked
-ever since.** Verified 2026-09-02:
-
-- **89 entries, `pedep-gp-1` … `pedep-gp-89`, all ids unique, no holes.**
-- Page citations span **pp.30–209** — inside the record's question range.
-- It **declares no variable** — it is a splice fragment, a bare list of object literals. It is not
-  runnable on its own, and `node file.js` proves nothing. Validate it through `val-pd-ep.js`.
-- It is written to the current standard: box quoted verbatim in a blockquote, then the expansion,
-  every distractor explained, lecture citations by filename, `objective`, and a `source` naming the
-  page.
-- **`questions.peds.js` holds zero `pedep-` ids** — none of this has ever shipped.
-
-⚠️ **ONE DISCREPANCY TO RESOLVE BEFORE SPLICING.** The staging record says **86 of 89** carry a
-printed box and names the three that do not — n=45 (p.119), n=83 (p.197), n=87 (p.205). The draft
-file contains **85** boxes and 85 closing markers. The two counts disagree by one. **Find the
-missing entry and re-read its page before shipping** — either a box was dropped at writing time, or
-the record miscounted. Do not assume which.
-
-Validating a parked file has beaten rewriting it **seven times** in this project. This is ~89
-questions of coverage on day one.
-
----
-
-## THE MATERIAL — measured 2026-09-02, do not re-measure
+**PDF page = printed page, offset ZERO** (verified pp.2–5, 20, 30, 210 and again on the index:
+the contents page's ranges match the `notes`/`answered` boundaries exactly).
 
 | | |
 |---|---|
-| File | `Semester 8\Pedo\Questions\Pediatrics endpoint part1.pdf` |
-| Pages | **1,991** (`pdfinfo`) · A4 · not encrypted |
-| Text layer | **NONE.** `pdftotext` returns 6 characters. Every page is a photograph. |
-| Size | 265.5 MB — **`Read` rejects it outright.** Render page ranges, always. |
-| Ids | prefix **`pedep-`** · `bank:'endpoint'` · `module:'pediatrics'` |
-| Done | section 1 (pp.5–210) staged and drafted; **pp.211–1991 untouched** |
+| File | `Semester 8\Pedo\Questions\Pediatrics endpoint part1.pdf` — 1,991 pages, **no text layer**, 265 MB, `Read` rejects it |
+| Ids | prefix **`pedep-`** · `bank:'endpoint'` · `module:'pediatrics'` · chapter ids from `app\data\modules.js` |
+| Figures | section 1 has none (p.4: "the exam does not contain pictures"). **Check the first ten pages of every other section** before assuming |
 
-**Grade Gain does not exist for pediatrics.** Two banks only: House and endpoint. Do not go looking.
-
-**The cost you are up against.** ENT's endpoint ran 3,075 pages for 697 questions — **4.4 pages per
-question**, against 0.17 for the compact banks: a **25× difference**. Section 1 here ran 89
-questions out of 206 pages. **Do not extrapolate either figure** — section 1 spent 23 of its pages
-on notes slides, and section length is not uniform. Map the book from the contents page first.
-
-**Tooling is present and verified 2026-09-02:** `pdftoppm` (Poppler 25.07.0), `pdftotext`, `wpscli`,
-`node` v26.7.0, `python` 3.12. **190 GB free on D:** — enough for a full-book render.
+**Grade Gain does not exist for pediatrics.** Two banks only: House and endpoint.
 
 ---
 
-## THE METHOD — this is what keeps the job affordable
+## READ THE STAGING RECORD BEFORE STAGING SECTION 2
 
-**1. OCR the whole file BEFORE you render or read anything.**
-`pdftoppm` → PNG → `wpscli photo2word`, **$0** on the WPS tier already owned. Timings, exit codes
-and defects: `tools\wps-ocr-reference.md`; pipeline: `progress\ocr-pipeline.md`. This is the whole
-trick — the rule *"only reading every page counts"* stays in force, but **the machine does the
-reading of all 1,991 pages, not you.**
-⚠️ **OCR text is a SEARCH INDEX, never a clinical source.** Confirm every shipped fact against the
-rendered page. ⚠️⚠️ **Superscripts fail silently — WPS read a printed 10⁶ as 10⁹.** Never take an
-exponent, a unit or a dose from OCR text; read those three off the image.
+`endpoint-s01-growth-puberty.array.js` is the worked example of the staging standard
+(`tools\bank-harness\pd-staging-brief.md`): fields `n / pr / p / key / stem / opts / expl / note /
+box`, the header stating boxed/unboxed counts by `n` and page, printed typos **verbatim**, shared
+option menus recorded once and referenced. Facts it proved that carry to every section:
 
-**2. Let the index find the repeats before you render a page.**
-Every question is printed twice — confirmed on this file, not inherited from ENT. Diff the OCR text
-against itself, build the reprint map, and render only pages carrying new content. **Model exams go
-last** — in ENT they were **96% reprints**; they fold, they are not written.
-⚠️ **Parity is not a shortcut here.** The three overflow boxes flip it twice inside section 1 alone.
-Derive answered-page positions from the yellow-highlight index, per section.
+- **Every question is printed twice** — unanswered page, then the answered page with the key
+  highlighted yellow and usually a bordered box. Only the answered page is staged.
+- **A box can overflow onto a third page** (q39→p.107, q59→p.148, q60→p.151). **Parity is not a
+  shortcut**; derive answered pages from `kind == "answered"` in the index, never from odd/even.
+  Overflow pages show as `thin` with no option letters — name them in `source`
+  ("p.106, box on p.107").
+- **The printed number is not an identifier** (87 numbers over 89 questions; 69 and 81 printed
+  twice). Count by answered pages, not by printed numbers.
+- **Printed typos survive verbatim** in stem and options ("Anal height is affected", "mostly
+  likely", "less than 500"); `val-pd-ep.js` enforces byte-identity with the record and says so in
+  the explanation.
+- **Shared option menus**: the anchor entry carries the option table, every sibling names the
+  anchor id in its explanation (`**Shared option menu — see \`pedep-gp-3\`.**`). The validator
+  checks for the pointer.
+- **Blockquote lines (`> `) in an explanation are the printed box and nothing else** — the
+  validator diffs every `> ` line against the record's `box`. Quote slides as `- “…”` list items.
+- **Held separately, never "held as one question in the app"** — that phrase was false three
+  times in the section 1 draft and was removed.
 
-**3. Contact sheets, four-up at 110 dpi — 10 reads instead of 40.**
-Crop by box presence: `-CropTop 0.30` where no box (24 pages per sheet), `0.45` where boxes are
-present, `0.55` when a long stem is clipped. **Re-render any tile whose last visible line is an
-option rather than white space.**
+---
 
-**4. Every render and every image read happens inside a subagent.**
-Spawn `lean-drafter` (Sonnet 5, ~13k floor; defined at `.claude\agents\lean-drafter.md`), **never
-`general-purpose`** (~58k). An image read in the main chat is re-sent with **every subsequent
-request for the rest of the session**. Cap **2 live subagents**. Subagents draft into
-`content\peds\qb-pages\endpoint-*.js` and **never touch a data file or git**. The agent registry
-loads at session start, so this only works in a chat opened after the definition existed.
+## THE METHOD
 
-**5. Writing budget — `tools\bank-harness\pd-draft-brief.md:111` and `progress\briefs\pediatrics.md:30`.**
-Adaptive depth: **~250 words for straight recall, ~520** for clinical vignettes, defective keys,
-cross-bank divergences and discrimination questions — the shorter form still carries the key, a
-verbatim quote, why every distractor is wrong, one clinical point and the citation. `source` is a
-**citation, not a second explanation**.
+**1. Plan each section from the index, then stage.** List its `answered` pages, diff their text
+against everything already staged or live (reprint map), read the flagged pages by eye, then
+stage the section into `endpoint-sNN-<slug>.array.js` from **rendered pages read inside a
+subagent** — the index tells you *which* pages; the image is what you transcribe from.
+
+**2. Every render and every image read happens inside a subagent.** Spawn `lean-drafter`
+(Sonnet 5, ~13k floor; `.claude\agents\lean-drafter.md`), **never `general-purpose`** (~58k). An
+image read in the main chat is re-sent with **every subsequent request for the rest of the
+session**. Cap **2 live subagents**. Subagents write only `content\peds\qb-pages\endpoint-*` and
+**never touch a data file or git.** The registry loads at session start.
+
+**3. Contact sheets, four-up at 110 dpi.** `-CropTop 0.30` where no box (24 pages per sheet),
+`0.45` where boxes are present, `0.55` when a long stem is clipped. **Re-render any tile whose
+last visible line is an option rather than white space.** The native JPEGs are 800×450: a 4-up
+sheet of them is already legible; render from the PDF only when the crop needs more.
+
+**4. Draft to `tools\bank-harness\pd-draft-brief.md`** (adaptive depth: ~250 words straight
+recall, ~520 for vignettes, defective keys, divergences), validate with `val-pd-ep.js N`, splice
+with `splice-pd-ep.js N --write`, boot-check, `validate-all.js`, commit the one data file.
 ⚠️ **Never trim a bank, thin an explanation or shorten notes to make the remainder fit.** If time
 runs short, **say so loudly** and leave the resume state clean. Scaling down is the user's call.
 
@@ -196,86 +217,66 @@ runs short, **say so loudly** and leave the resume state clean. Scaling down is 
 
 ## THE EXPLANATION BOXES — the saving, and the trap
 
-**The saving is real and large here.** 86 of section 1's 89 questions — **97%** — carry a printed
-explanation. Where a box exists you transcribe it instead of authoring 250–520 words.
+**85 of section 1's 89 (96%) carry a printed box.** Where a box exists you transcribe it instead
+of authoring. ⚠️ **Box presence is a property of the PAGE and does not extrapolate** — in ENT it
+vanished for 124 consecutive pages. The index shows it per page: an answered page whose text
+continues after the last option has a box. Detect, never assume.
 
-⚠️ **But box presence is a property of the PAGE and does not extrapolate.** In ENT it ran present,
-gone for ~150 pages, back at p.666, gone at p.680; on the Nose section it was on nearly every page
-for 150 pages and then **absent across 124 consecutive pages**. The 97% above is one section of
-twenty-odd. Detect presence from the OCR text per page — never assume it from the last page.
-
-⚠️⚠️ **The boxes are partly AI-generated and sometimes corrupt.** In ENT, **three ended with the
-literal string "Ask ChatGPT"**, pasted out of a chatbot. Three reprints carried a *worse* box than
-the first printing: one had its table lines slipped by one so it contradicted its own key, one
-printed the placeholder `[Effect not specified here]`, one was truncated mid-sentence.
-
-**The standing rule: a source box beats authored text, but an AI-pasted box is not evidence. Where a
-box contradicts the cached lecture slides, THE SLIDES WIN, and the clash is recorded.** Sweep every
-box for the marker. **A later printing's box is not automatically an upgrade — read it before
-folding it in.**
+⚠️⚠️ **The boxes are partly AI-generated and sometimes corrupt.** In ENT three ended in the literal
+"Ask ChatGPT"; one printed `[Effect not specified here]`; one was truncated. **A source box beats
+authored text, but an AI-pasted box is not evidence. Where a box contradicts the cached lecture
+slides, THE SLIDES WIN, and the clash is recorded.** Sweep every box for the marker.
 
 ---
 
 ## PITFALLS CARRIED FROM ENT'S ENDPOINT — all verified there, none guessed
 
-- **Printed numbers are not a count of questions.** Already proven on *this* file (87 numbers, 89
-  questions, two printed twice). In ENT's Nose section: 134 numbers over 135 questions, one question
-  printed as both Q19 and Q20, Q74–Q77 skipped, two different questions both numbered 131.
-- **The bank mis-keys itself somewhere — go looking for it.** ENT had five self-contradictions, all
-  on pages printing no box. **Transcribe what the bank printed, explain the clash, and write the
-  grading keys to accept either reading.** Never silently correct a key. **A defective key is noted,
-  never disputed; the `answer` never moves.**
-- **The same fact through a different option set is NOT a duplicate.** ENT printed one fact seven
-  times with seven distinct option sets. **Judge by the option set, not the stem** — and treat the
-  repetition itself as exam information.
-- **A vignette can be printed as a header over a numbered block**, belonging to no single question —
-  and **not every question under the header inherits it.** This breaks transcription silently.
-- **Never carry structure across a section boundary.** Section 1 has no figures at all; a later
-  section may. Check the first ten pages of every section. **Sample for structure, never for rate.**
-- **If a later section does print figures:** an explanation figure on an answer page is **never**
-  cropped — it renders between stem and options and gives the answer away. Only a figure printed
-  *with the question* is cut. ⚠️ Every figure crop in this project has been wrong on first attempt.
-  Naming follows the live convention `q-pd-ep-<page>.jpg`, with `a`/`b`/`c` suffixes when one page
-  yields several (as `q-pd-hd-26a/b/c.jpg` already does).
-- **Read one page PAST the last answer page, every time.** Answers have run past the mapped end.
-- **A missing lecture number means the professor withheld it** — never a capture failure, never a
-  file to chase. Peds is missing 21, 28, 29, 57; settled 2026-08-14, do not re-raise
-  (`progress\briefs\pediatrics.md:217`). Fill from general knowledge and tag it as such.
-- **Read the slide before declaring a gap.** Five staged "answered nowhere" items were withdrawn
-  once the lecture was actually read.
+- **The bank mis-keys itself somewhere — go looking for it.** ENT had five self-contradictions.
+  **Transcribe what the bank printed, explain the clash, write the grading keys to accept either
+  reading. A defective key is noted, never disputed; the `answer` never moves.**
+- **The same fact through a different option set is NOT a duplicate.** Judge by the option set,
+  not the stem, and treat the repetition itself as exam information.
+- **A vignette can be printed as a header over a numbered block** and not every question under
+  it inherits it.
+- **Figures, if a later section prints them:** an explanation figure on an answer page is **never**
+  cropped. Only a figure printed *with the question* is cut, named `q-pd-ep-<page>.jpg`
+  (`a`/`b`/`c` suffixes when one page yields several). Every figure crop in this project has
+  been wrong on first attempt.
+- **Read one page PAST the last answer page, every time.**
+- **A missing lecture number means the professor withheld it** — peds is missing 21, 28, 29,
+  57; settled 2026-08-14, do not re-raise (`progress\briefs\pediatrics.md:217`).
+- **Read the slide before declaring a gap.**
 
 ---
 
 ## THE OVERLAP WITH CHAT B — read, never write
 
-When endpoint prints a question House already holds, the rule is to hold it **once** with `alsoIn`.
-You cannot fold into Chat B's file and Chat B cannot fold into yours. So:
-
-- **Read `app\data\questions.peds.js` freely** — reading cannot clash — and run your fold sweep
-  before writing, so you never author a full explanation for a question already held.
-- **Record every match in your journal instead of resolving it.** One reconciliation pass merges
-  them after both banks close. In ENT the cross-bank overlap ran about 6%.
-- ⚠️ **Never backtick an id that does not exist yet.** Caught three times in ENT. Re-run the dead-id
-  check after every fold.
+When endpoint prints a question House already holds, the rule is to hold it **once** with
+`alsoIn`. You cannot fold into Chat B's file and Chat B cannot fold into yours. So: **read
+`questions.peds.js` freely**, run your fold sweep before writing, **record every match in your
+journal instead of resolving it.** One reconciliation pass merges them after both banks close.
+⚠️ **Never backtick an id that does not exist yet** — `validate-all.js` hard-fails on a dead id
+(it found nine in the closed ophtho bank on 2026-09-02; all repointed the same day).
 
 ---
 
 ## HOUSEKEEPING
 
 - **Write `progress\resume-peds-endpoint.md` as you go** — anything not written there is invisible
-  to the watch and **dies with this session**. Append to a `## Changed since` block; do not rewrite
-  the body.
-- **One work block per session.** Kill this chat at the end of the block and resume from the journal.
-- Boot check after every splice: `node tools\boot-check\boot-check.js` — it copies the app into a
-  temp directory and never writes into the repo.
-- Your module brief is `progress\briefs\pediatrics.md`; the drafting standard is
-  `tools\bank-harness\pd-draft-brief.md`; the staging standard is
-  `tools\bank-harness\pd-staging-brief.md`. **There is no `START-HERE.md` in this repo** — the
-  workspace rules live in `CLAUDE.md` at the repo root and at `D:\claude os\CLAUDE.md`.
+  to the watch and **dies with this session**. Append to a `## Changed since` block.
+- **One work block per session.** Kill this chat at the end of the block and resume from the
+  journal.
+- Boot check after every splice: `node tools\boot-check\boot-check.js`. Cross-bank check:
+  `node tools\bank-harness\validate-all.js` (read-only, exit 1 on a hard failure).
+- Briefs: `progress\briefs\pediatrics.md` (module), `tools\bank-harness\pd-draft-brief.md`
+  (drafting), `tools\bank-harness\pd-staging-brief.md` (staging). Workspace rules: `CLAUDE.md`
+  at the repo root and at `D:\claude os\CLAUDE.md`. There is no `START-HERE.md`.
 
 ## DONE LOOKS LIKE
 
-`Pediatrics endpoint part1.pdf` read end to end, every page accounted for against the contents-page
-map, `questions.peds.ep.js` parsing clean with zero holes and zero dead ids, the boot check green,
-the overlap with House recorded but not resolved, and `resume-peds-endpoint.md` current enough that
-a fresh chat could pick up part 2 from it. Then stop and tell the user.
+Section 1 spliced in the first ten minutes; then sections 2–9 (387 more questions) staged,
+drafted, validated and spliced in order; the model exams reconciled against the body through the
+index and folded; every page accounted for against the map above; `questions.peds.ep.js` parsing
+clean with zero holes, `validate-all.js` green, the boot check green, the overlap with House
+recorded but not resolved, and `resume-peds-endpoint.md` current enough that a fresh chat could
+pick up part 2 from it. Then stop and tell the user.
