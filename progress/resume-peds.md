@@ -2382,3 +2382,51 @@ refusing an instruction it was given is exactly what the escalate-don't-guess ru
 - `main` and `HEAD` were **identical at `119a825`** at the start of this session — the drift the
   previous block warned about had already been fixed by `git branch -f`. **Still check
   `git rev-parse main HEAD` every time**; it restarts with each commit made on the design branch.
+
+## ⚠️⚠️ 2026-09-02 — ch.10 IS COMMITTED, BUT INSIDE AN OPHTHO COMMIT. Nothing lost; the log lies.
+
+**All of ch.10 landed in `6f27079` — *"Ophtho: splice Tutorial 27 + Final 31, 1,505 -> 1,563"*.**
+Its message describes only ophthalmology work and does not mention pediatrics anywhere, but
+`git show --stat 6f27079` lists **`app\data\questions.peds.js` (+152)**,
+**`content\peds\qb-pages\house-ch10-nutrition.draft-A.js` (+198)** and
+**`progress\resume-peds.md` (+93)** among its 17 files. **Searching the log for "ch.10", "Nutrition"
+or "peds" will not find where ch.10 shipped.** It is in that commit.
+
+### What happened, from the reflog — not reconstructed
+
+I had staged my three peds paths and was composing the commit. In that window Chat A ran
+**`git checkout main`** (reflog `HEAD@{1}`: *"checkout: moving from design/clepsydra-and-sessions to
+main"*) and then committed **the whole index**, which by then held its ophtho work **and my three
+staged peds paths**. My own `git commit -- <paths>` then returned *"nothing to commit, working tree
+clean"* with exit 128, because there was nothing left to commit.
+
+**Two parallel-chat rules were broken at once**, and both are already written down:
+
+1. **`git checkout main` while a parallel chat is live** — the previous block in this very file warns
+   about exactly this and says to do the real checkout *"when no parallel chat is running."* It was
+   survivable here only because `main` and the design branch happened to hold the same tree at that
+   instant. Had they diverged it would have pulled ch.10 out of the working tree mid-write.
+2. **Committing the whole index instead of explicit paths.** The standing rule is *"Stage EXPLICIT
+   PATHS — never `git add -A`, never a directory a subagent writes into."* Staging explicitly is not
+   enough on its own: **the index is shared between chats, so a commit with no pathspec sweeps up
+   whatever the other chat has staged**, however carefully that chat staged it.
+
+### The rule this adds, and it is new
+
+⚠️ **In a parallel run, ALWAYS commit with a pathspec: `git commit -F <msgfile> -- <path> <path>`.**
+`git add <explicit paths>` protects nothing by itself — it puts your work into a *shared* index that
+the other chat's next bare `git commit` will pick up. The pathspec form is what actually confines a
+commit to your own module, and it leaves the other chat's staged entries untouched in the index.
+
+### Verified intact after the fact, from disk
+
+`Q_PEDS` **217, holes 0**, `pedhd-nutr-*` **15**. The journal block above this one is present in the
+committed file. **Nothing was lost or corrupted — only mis-recorded.** History was deliberately NOT
+rewritten: `main` is the shared branch and Chat A was still live, so a rebase or amend would have
+been more dangerous than an inaccurate message.
+
+### Also note
+
+`git branch -v` now shows **`main` at `6f27079`, ahead of `origin/main` by 4**, and the local
+`design/clepsydra-and-sessions` left behind at `119a825`. **Work is on `main` now** — that part
+matches the plan. Nothing has been pushed.
