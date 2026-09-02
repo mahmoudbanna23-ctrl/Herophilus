@@ -1854,6 +1854,85 @@ lives in Q15; Q19 carries the five-domain table and Q20 points back at it. Q19 r
 ⚠️ it prints "18." **twice** with no Q19, its chapters are `dev-problems`/`dev-nd`, and its boiler is
 a **fifth shape** (on its own line). Bank measured at 393; **210 questions remain after ch.8.**
 
+## 2026-09-02 — House ch.9 "Developmental problems" STAGED: 19 questions, and the staging agent died mid-run
+
+`content\peds\qb-pages\house-ch09-dev-problems.array.js` — `var PEDHD_DEVP_STAGED`, **19 entries,
+37,768 bytes**. Book pp.68–74 = PDF sheets 35L–38L. ⚠️ **That is an ODD seven-page span ending on a
+LEFT half**, so ch.8's even-span sheet arithmetic does not carry — do not reuse it for ch.10.
+
+**Counted from disk, twice, by me, not taken from the agent's report:** 19 entries · 0 sparse holes ·
+`n` 1–19 contiguous · pages `{68:3, 69:3, 70:3, 71:2, 72:3, 73:3, 74:2}` · keys
+`C C A D A A C A D B B E A C D B C C D` (A×5 B×3 C×6 D×4 E×1) · every entry five options · every `p`
+a string · no nulls · every entry carries a `note` · `boiler:true` on Q1–Q6 only · figure note on Q6 ·
+the "fiits" misprint present in the stems of Q12–Q16.
+
+### The agent died, and the standing rule paid for itself again
+
+The staging agent stopped with `API Error: Can't reach the API server (ENOTFOUND)`. **I validated its
+file from disk before believing any part of the loss report** — the file was complete and correct,
+header and all. On the user's "Try again" I **resumed the same agent** rather than restarting one,
+and told it explicitly what I had already validated so it would not re-render a single page. All of
+its rendering work survived. *Validate a dead agent's file from disk before believing a report that
+it died* has now been paid twice on this project.
+
+### The resumed agent caught its own fabrication — and that is the finding worth keeping
+
+It had written "Q18 Adam, Q18(second) Sam" into Q17's note **before reading p.74**. Both Q18s are in
+fact unnamed. It replaced the invented names with the measured split: **14 named vignettes, 3 unnamed,
+2 nameless knowledge questions.** It also corrected two of its own header claims: the 1200 dpi
+"fiits" settle belongs to **Q12** (p.72 top box), not Q15, by crop arithmetic; and the 400 dpi read
+covers **all five** "fiits" instances, not four.
+
+### ⚠️⚠️ SHOW-THROUGH IN THIS BANK IS DUPLEX, NOT FACING-LEAF
+
+Pairing measured on the scans: **35L↔36R, 35R↔36L, 37L↔38R, 37R↔38L.** A ghost can therefore carry
+text from **four book pages away**. This nearly produced a **wholly fictitious neuromuscular
+question** transcribed from a ghost on p.73. Anything faint is checked against its duplex partner
+before it is written down, not against the page opposite it.
+
+### ⚠️ The page prints "18." TWICE and prints no "19."
+
+Verified at 400 dpi. `n` is **ordinal position**, so `n:19` has no printed 19. Both entries' `source`
+must state which printed number the page carries.
+
+### Zero explanation boxes, and eight source defects
+
+All 19 answer lines end at "Answer: X." with the border closing immediately below — **so every ch.9
+explanation is authored and every one must end with the marker.** Eight printing defects are recorded
+in the staging header and all are required to survive byte-identical: "fiits" ×5 (Q12–Q16), Q7's
+unhyphenated "left handed", en dashes in the numeric ranges, curly quotes on 'dada' (Q4) and
+'scissor' (Q14), Q17 option D's missing comma, the second Q18's missing comma, and Q18(first) option
+E's bare "Fragile X".
+
+### Grounding established before drafting — read this, do not re-derive it
+
+`T_PEDS['dev-nd']` (9 sections: autism + ADHD) · `T_PEDS['dev-problems']` (8 sections: global delay,
+intellectual subnormality, the face-diagnosed disabilities, investigation, early intervention,
+developmental screening ages/tools, hearing and vision screening) · `T_PEDS['neuro-cp']` (the
+grounding for the whole Q12–Q16 block) · `T_PEDS['normal-dev']` (17 sections, milestones).
+All three of `dev-nd`, `dev-problems` and `neuro-cp` **verified to resolve in `MODULES`**.
+⚠️ `T_PEDS` is an **object keyed by chapter id**, not an array — an index walk returns nothing
+silently.
+
+### Q6 carries the chapter's only figure
+
+A colour photograph of an eye on p.69. `image:'q-pd-hd-69'` (basename only; 29 peds crops exist under
+`app\assets\q\`, all named `q-pd-hd-<book page>`). **The alt text states modality and view ONLY** —
+describing this photograph answers the question outright.
+
+### Two new grep traps, both from the neuro t21 work, both live here too
+
+- `grep -ril "Elated"` false-hits **twelve times** on *related / correlated / dilated*.
+- **A single very long line defeats `grep -o ".\{300\}…"` entirely — it exits 1, which reads exactly
+  like a genuine zero.** `theory.neuro.js` has such a line. Use a node or python slice instead.
+
+### Tooling cut and checked, waiting on the drafts
+
+`<scratchpad>\val-pd9.js` (relaxes ch.8's no-image assertion for Q6 only, requires the crop file to
+exist, maps ordinal 19 → printed 18, adds a **backtick-parity check** after the ch.8 `Coo` + backtick
+hazard) and `<scratchpad>\splice-pd9.js` (carve counts 10 and 9). The live file's tail anchor
+`\n}\n];` was re-confirmed present and LF-only after the ch.8 splice.
+
 ## 2026-09-02 — SESSION CLOSED. Everything needed to resume is now on disk, not in a chat.
 
 This chat is being retired deliberately. Before it goes, everything that lived only in the session
