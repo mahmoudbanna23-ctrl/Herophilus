@@ -83,14 +83,9 @@ for pg in pages:
     }
     if any(l.startswith('OCR-ERROR') for l in nat + hi):
         r['flags'].append('ocr-error')
-    with open(out / f'p{pg:04d}.txt', 'w', encoding='utf-8', newline='
-') as fh:
-        fh.write('
-'.join(nat) + '
---- 150dpi ---
-' + '
-'.join(hi) + '
-')
+    # newline='\n' so the committed index is LF on Windows too (text mode would write CRLF)
+    with open(out / f'p{pg:04d}.txt', 'w', encoding='utf-8', newline='\n') as fh:
+        fh.write('\n'.join(nat) + '\n--- 150dpi ---\n' + '\n'.join(hi) + '\n')
     rows[pg] = r
 
 for pg in pages:
@@ -118,8 +113,7 @@ for pg in pages:
     if r['options']['native'] != r['options']['hires']:
         r['flags'].append('options-differ')
 
-with open(out / 'index.json', 'w', encoding='utf-8', newline='
-') as fh:
+with open(out / 'index.json', 'w', encoding='utf-8', newline='\n') as fh:
     fh.write(json.dumps([rows[p] for p in pages], indent=0))
 flagged = {}
 for r in rows.values():
