@@ -1202,21 +1202,60 @@ against that set.
 falsehood into `vis-11`, where it was caught at merge. The terms return **9 and 8 sections**.
 **Re-run the check; never quote another row's finding as your own.**
 
-### What ophthalmology still owes — all of it reconciliation, none of it writing
+### ✅ CLOSED 2026-09-02 — the reconciliation is done, and it was bookkeeping, not writing
 
-- **~63 §14.5 rows are ophtho's**; ~20 closed, 13 notices, **6 undeliverable**, the rest open.
-- **Provenance defects, the most corrosive kind**: `va-6` tags the **WHO 3/60 definition** and the
-  **CSM fixation test** as supplied when the book prints both verbatim (p.21); `pup-10`'s
-  **cup-to-disc figures** are tagged supplied where the book prints different ones, sourced. The
-  facts are right and the labels are wrong, which devalues every honest tag in the module.
-- **Divergences held, not fixed** (each recorded in place with both citations): mean IOP **15 vs
-  16 mm Hg** · C/D **0.2–0.4 refer >0.5 vs 0.3–0.5 refer >0.6** · the examination order **ten steps
-  acuity-first vs six steps inspection-first** · tropicamide **1 % vs 0.5 %** on facing pages ·
-  **6 vs 9 cardinal positions**.
-- **`wht-8` owes the leukocoria RANKING and PHPV** from ch.16 p.206; it was deliberately not
-  rewritten.
-- **`L9` is read but never cached** — Hirschberg, Schirmer, Krause, Jones I/II and the tear-film
-  thicknesses have no other record, and ch.1 and ch.4 print none of them.
-- **Undeliverable from the book, recorded not invented**: iris melanoma as a tumour · orbital and
-  lacrimal tumour biology and staging (`orb-16` stays the account) · cosmetic oculoplastic
-  technique.
+**Measured, not estimated.** §14.5 was parsed and every row whose donor is an `op-*` chapter was
+counted and read. **The count in the old version of this section was wrong in both directions** —
+there are more rows than it claimed, and none of them are open.
+
+| | rows |
+|---|---|
+| **Ophthalmology rows in §14.5** | **76** — not the ~63 estimated here |
+| ✅ delivered and ticked | **54** |
+| ⚠️ notices — recorded, no debt | **16** |
+| substantive verdicts — circular · undeliverable · half-undeliverable · over-stated absence · split | **6** |
+| **blank, never adjudicated** | **0** |
+
+**Two of the six verdicts still named an open half. Both were already delivered, and never ticked
+back:**
+
+- `op-va` → **`op-conj`** (papillae · follicles · giant papillae · PTCs · trachomatous scarring) —
+  delivered **from the book, not `L6`**. `cnj-4` carries the discriminator (*vessels AROUND a
+  follicle, a vessel IN a papilla*) and defines giant papillae as **over 1 mm, flat-topped,
+  cobblestone**; `cnj-11` **expands PTCs as POST-TRACHOMATOUS CONCRETIONS**, which the row said was
+  never expanded anywhere; `cnj-15` records `L6` as a **66-slide, 342-word atlas** and supplies its
+  five otherwise-absent entities, each tagged. ⚠️ **"T4" is CORRECTED, not ticked** — `cnj-11`
+  records that **no grade is called T4** and **MacCallan is not printed at all**.
+- `op-trauma` → **`op-appear`** (marginal eyelid laceration repair as a procedure) — `app-10`'s own
+  verdict table already read *"CLOSED — the donor already wrote it"*: merged **`trm-9` writes the
+  full three-stage marginal repair**, and `app-9` cross-references it rather than repeating it.
+
+**The four other debts this section listed, each re-measured:**
+
+- **Provenance defects — REPAIRED.** `va-6` now cites the book for **both** the WHO 3/60 figure and
+  the CSM test (*"the book prints it verbatim (printed 21)"*), and `pup-10`'s cup-to-disc figures
+  are sourced to `L3,4` sl.53–58 rather than tagged supplied. ⚠️ **But the repair left a stale
+  sentence behind, and that was the one live defect in the module:** `int-13` still asserted
+  `pup-10` was *"tagged supplied"*, and its own five-row mini-register still carried the **lid
+  anatomy**, **C/D ratio** and **WHO blindness** rows as unfinished. **All four corrected
+  2026-09-02** in `app\data\theory.ophtho.js` — a 1-line diff, CRLF preserved.
+- **Divergences held, not fixed** — this is the standing rule working, not a debt. Each is recorded
+  in place with both citations (`int-13`, `ins-3`): mean IOP 15 vs 16 mm Hg · C/D 0.2–0.4 refer
+  >0.5 vs 0.3–0.5 refer >0.6 · examination order ten steps vs six · tropicamide 1 % vs 0.5 % ·
+  6 vs 9 cardinal positions.
+- **`wht-8`** — **delivered 2026-08-24.** It carries **PFV in full** and cites **the ranked
+  differential, book ch.16 printed 206**; the deck's five definitions were deliberately kept
+  because they are fuller. Nothing outstanding.
+- **`L9` IS cached** — `content\ophtho\lectures\L9) lacrimal system..txt`, **41,013 bytes**
+  (⚠️ the filename really does carry a double dot). **Hirschberg, Schirmer, Krause, Jones I/II and
+  the tear-film layers all survive in the merged theory** — Krause in 5 sections, Schirmer in 4,
+  Hirschberg and Jones I in 3 each. The "read but never cached" line was stale on both halves.
+
+**Undeliverable from the book, recorded not invented** — unchanged, and correctly closed: iris
+melanoma as a tumour · orbital and lacrimal tumour biology and staging (`orb-16` stays the account) ·
+cosmetic oculoplastic technique.
+
+⚠️ **The method finding worth carrying out of this pass:** every item above had already been settled
+inside a merged chapter's own text, and left open in the register. **A chapter that closes a row in
+its own body does not close the row.** Ticking the register back is part of writing the chapter, not
+an afterthought — otherwise the project carries a debt list that measurement dissolves in an hour.

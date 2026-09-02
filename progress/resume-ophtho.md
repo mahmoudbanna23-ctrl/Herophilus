@@ -3549,3 +3549,116 @@ name `questions.ent.js` specifically, which is where it is still true.
 **`CLAUDE.md` §7 says "all 134 chapters visible". The measured figure is 153**, and theory is
 153/153, so 153 is right and 134 is stale. **Not edited** — `CLAUDE.md` is shared with the two live
 module chats and this run does not own it.
+
+---
+
+## 2026-09-02 — the three carried debts, cleared. Two of them were recorded backwards.
+
+Instruction: *"fix all and don't report back to me until nothing ever left for opthalmology except
+endpoint."* All three are closed. **The headline is not that they are closed — it is that two of
+them described work that did not exist**, and the module has been carrying that description since
+the close-out was written.
+
+### Debt 1 — the marker debt was inverted. Real defect count: 1, and it was a FALSE marker.
+
+The record said **143 `opqb-*` explanations carry no "Written for this bank" marker; 136 cite a
+lecture cache, so they were written, not transcribed, and should carry it.** Measured across all
+1,598 entries:
+
+| | |
+|---|---|
+| unmarked | **154** |
+| marked | **1,444** |
+| of the 154, evidenced as a **printed box** | **154** — 139 by the disclosure line, 15 by `source` |
+| genuinely missing markers | **0** |
+| **false** markers (marker on a transcribed box) | **1** |
+
+The one defect was **`opqb-t16-683`**, whose explanation opens with the bank's own verbatim
+retinoblastoma-treatment box and carries the *"the box above is the bank's own printed explanation,
+transcribed verbatim"* disclosure — and then ended with the marker anyway, asserting the box was
+written for this bank. **The fix was a removal, not 143 additions.** After it: 1,598 entries, 0
+sparse holes, unique ids, **0 false markers, 0 markers in `source`**. The 98 markers followed by
+*(Secondary chapter: …)* are the legitimate variant.
+
+⚠️ **How the original count went wrong, and how my own first pass went wrong the same way.** The
+record inferred *"cites a cache ⇒ written"* from the explanation prose. I narrowed it to 23
+candidates (t11 ×18, t16 ×5) — also from prose. **The staging arrays inverted both.**
+`gg-t11.array.js`'s header states **19 boxes printed on 19 of 50 questions** and names them; the 18
+unmarked t11 entries are *exactly* that list minus `Q489`, which its own note records as a
+shared-typo fold into `opqb-t9-351` (t11 reconciles exactly: 50 staged, 49 shipped, 1 folded).
+`gg-t16.array.js` states **6 boxes** and the 5 unmarked t16 entries are box questions.
+**The staging is the verbatim record of what the page printed. It outranks any regex written after
+the fact, and it outranks the debt as filed.**
+
+Two probe faults on the way, both worth the warning: my first "printed-box evidence" regex looked
+only for *"box above"* and reported **93 false positives**, because most entries say *"the **line**
+above is the bank's own printed explanation"*. And parsing the t16 notes with `node -e "…"` threw
+`Unterminated regexp literal` — the backslash-collapse trap, fired from inside a double-quoted bash
+string. **A count from a probe you just wrote is a claim about the probe first.**
+
+### Debt 2 — the theory reconciliation was bookkeeping, not writing, and the row count was wrong too.
+
+§14.5 parsed rather than estimated: **76 ophtho rows, not ~63.** **54 ✅ delivered · 16 notices
+(recorded, no debt) · 6 substantive verdicts · 0 blank or open.** Of the 6, four were already
+resolved verdicts. The two that still named an open half had **both been delivered in the merged
+chapters and simply never ticked back**:
+
+- **`op-conj`** — delivered **from the book, not `L6`**. `cnj-4` carries the discriminator (*vessels
+  AROUND a follicle, a vessel IN a papilla*) and defines giant papillae as **over 1 mm, flat-topped,
+  cobblestone**; `cnj-11` **expands PTCs as post-trachomatous concretions**, which the row claimed
+  was never expanded anywhere; `cnj-15` records `L6` as a 66-slide/342-word atlas and supplies its
+  five absent entities, tagged. ⚠️ **"T4" is corrected, not ticked** — no grade is called T4, and
+  MacCallan is not printed at all.
+- **`op-appear`** — `app-10`'s own verdict table already read *"CLOSED — the donor already wrote
+  it"*: `trm-9` writes the full three-stage marginal repair.
+
+The rest of the `theory-plan.md` "still owes" block was stale on every line: `va-6` and `pup-10`
+provenance defects **already repaired**; `wht-8` delivered 2026-08-24 with PFV in full and the ranked
+differential from book ch.16 printed 206; the `L9` cache **exists** — `content\ophtho\lectures\L9)
+lacrimal system..txt`, **41,013 bytes**, ⚠️ double dot in the filename. The divergences are **held
+with both citations**, which is the standing rule working, not a debt.
+
+**One live content defect, and it was the register's own summary of itself:** `int-13` still carried
+the lid-anatomy, C/D and WHO-blindness rows as open and still called `pup-10` "tagged supplied". All
+four corrected — a **1-line diff** in `app\data\theory.ophtho.js`. Two §14.5 rows closed in
+`progress\briefs\START-HERE.md` (2-line diff), and `content\ophtho\theory-plan.md`'s stale block
+replaced with the measured close-out.
+
+⚠️ **The method finding worth carrying into peds and neuro: a chapter that closes a register row in
+its own body does not close the row.** Every item above had been settled inside a merged chapter and
+left open in §14.5. Ticking the register back is part of writing the chapter — otherwise the project
+carries a debt list that an hour of measurement dissolves.
+
+### Debt 3 — `splice.js`, fixed backward-compatibly rather than deferred.
+
+The record said *"not while peds and neuro are mid-run, since both use that pipeline."* **The
+concern is real, and it is what shaped the fix rather than what blocked it.** The CLI is
+**unchanged** — same arguments, same dry-run default, same structural insertion point (the corpus
+files may be mixed CRLF/LF, so nothing anchors on a newline) — so a command already in flight in
+either chat behaves identically. **The only change is where the backup lands:** `corpusPath +
+'.bak'`, which for ophtho recreated `app\data\questions.ophtho.js.bak` *inside the folder the app
+loads from*, becomes a **timestamped file in `_backups\`** at the repo root, with an explicit refusal
+to write any backup under `app\data`. Timestamping also stops a second splice overwriting the first
+backup. `_backups/` and `*.bak` added to `.gitignore`. Verified: `node --check` clean, dry run on
+`gg-ee1.draft.js` reports `1598 → 1627`, exit 0, and `app\data\` holds no `.bak`.
+
+### ⚠️ A line-ending claim in this journal's earlier entries was wrong. Measured now:
+
+`content\ophtho\theory-plan.md`, `app\data\theory.ophtho.js`, `progress\briefs\START-HERE.md`,
+`MEMORY.md`, `progress\ledger.md` and `app\data\questions.ophtho.js` are **all pure LF, 0 CRLF** —
+verified against the HEAD blob as well as the working tree, with `core.autocrlf=false` and no
+`.gitattributes`. Earlier in this run I recorded them as "pure CRLF, 3,219/3,219" and so on; **those
+were line counts misread as CRLF counts.** The consequence was live for one write: `patch-plan.js`
+joined its new block with CRLF into an LF file, injecting 57 CRLF lines. Caught by measuring after
+the write, normalised back to LF in the same pass, diff confirmed at **57/18** — the block only.
+**`questions.ent.js` remains the one mixed file** (13,767 CRLF of 19,023 lines).
+
+### Verification
+
+Boot check after every write: `node tools\boot-check\boot-check.js` — **`QUESTIONS 4412 · THEORY 153
+· MODULES 4 · 153 chapter rows (120 with questions, 33 empty by design) · 4 module cards · console
+errors: 0`**, `Q_OPHTHO 1598`. Diffs deliberately tiny and checked individually:
+`questions.ophtho.js` **1/1** · `theory.ophtho.js` **1/1** · `START-HERE.md` **2/2** ·
+`theory-plan.md` **57/18** · `MEMORY.md` **5/5** (still exactly 200 lines, at the cap).
+
+### Nothing is left for ophthalmology except the endpoint book, which was never in scope.

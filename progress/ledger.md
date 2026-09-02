@@ -1873,12 +1873,47 @@ clean**, and each is worth keeping because each looked exactly like a broken app
 is 153/153, so 153 is right and 134 is stale. **Not edited** — `CLAUDE.md` is shared with the two
 live module chats, and this run does not own it. **Raise it with the user.**
 
-### Still owed on this module (carried, not blocking)
+### ~~Still owed on this module~~ ✅ ALL THREE CLEARED 2026-09-02 — and two were recorded backwards
 
-- **143 `opqb-*` explanations carry no "Written for this bank" marker.** 136 of them cite a lecture
-  cache, which means they were *written*, not transcribed, and therefore should carry it. Mechanical
-  to fix; not attempted here because the corpus was mid-flight in two other chats.
-- **Ophtho theory reconciliation, ~63 rows** (`theory-plan.md`). ⚠️ **The book caches already exist —
-  do NOT re-read the book.**
-- `tools\qb-pipeline\splice.js` has a stale `.bak` path and needs fixing or retiring — **but not
-  while peds and neuro are mid-run**, since both use that pipeline.
+The three debts below are quoted verbatim as they were filed. **Two of them were wrong, and wrong in
+the direction that costs the most: they described a large amount of writing that did not exist.**
+
+- ~~**143 `opqb-*` explanations carry no "Written for this bank" marker.** 136 of them cite a lecture
+  cache, which means they were *written*, not transcribed, and therefore should carry it.~~
+  ⚠️ **THIS WAS BACKWARDS. The real defect count was 1, and it was a FALSE marker, not a missing
+  one.** Measured across all 1,598 entries: **154 unmarked · 1,444 marked**, and **every one of the
+  154 is a printed box** — 139 carry the disclosure line (*"the line/box above is the bank's own
+  printed explanation"*), the other 15 declare the box in `source`. A marker on a transcribed box
+  asserts something false, so the fix was a **removal**: `opqb-t16-683` opened with the bank's own
+  verbatim retinoblastoma-treatment box and still carried the marker. Removed; **0 false markers,
+  0 markers in `source`** now. The 98 markers followed by *(Secondary chapter: …)* are the
+  legitimate variant, not defects.
+  ⚠️ **What made the original count wrong:** it inferred "cites a cache ⇒ written" from the
+  explanation text. The **staging arrays are the verbatim record of what each page printed**, and
+  they invert it — `gg-t11.array.js` states 19 boxes on 19 of 50 questions, and the 18 unmarked
+  t11 entries are *exactly* that box list minus `Q489` (folded into `opqb-t9-351` on a shared typo);
+  `gg-t16.array.js` states 6 boxes, and the 5 unmarked t16 entries are box questions.
+  **The staging outranks any regex written after the fact.**
+- ~~**Ophtho theory reconciliation, ~63 rows** (`theory-plan.md`).~~ ✅ **CLOSED — it was bookkeeping,
+  not writing, and the row count was also wrong.** §14.5 parsed: **76 ophtho rows — 54 ✅ delivered ·
+  16 notices (no debt) · 6 substantive verdicts · 0 blank or open.** Of the 6, two still named an
+  open half and **both had been delivered in the merged chapters and never ticked back**: the
+  `op-conj` half (`cnj-4` discriminator + >1 mm flat-topped giant papillae, `cnj-11` **expanding PTCs
+  as post-trachomatous concretions**, `cnj-15` recording `L6` as a 66-slide/342-word atlas) and the
+  `op-appear` half (`app-10`'s own table already read *"CLOSED — the donor already wrote it"*, with
+  `trm-9` carrying the full three-stage marginal repair). `va-6` and `pup-10` provenance defects were
+  already repaired; `wht-8` got the ranked differential from book ch.16 p.206 on 2026-08-24; the `L9`
+  cache **exists** (41,013 bytes, double dot in the filename). Divergences are **held with both
+  citations**, per the standing rule — not debts. **One live defect found and fixed:** `int-13` still
+  carried three of those rows as open and called `pup-10` "tagged supplied" — 1-line diff.
+  ⚠️ **The method finding: a chapter that closes a row in its own body does not close the row.**
+- ~~`tools\qb-pipeline\splice.js` has a stale `.bak` path and needs fixing or retiring — **but not
+  while peds and neuro are mid-run**, since both use that pipeline.~~ ✅ **FIXED, backward-compatibly.**
+  The concern was real and is why the fix is shaped this way: **the CLI is unchanged** — same
+  arguments, same dry-run default, same structural insertion point — so a command already in flight
+  in the peds or neuro chat behaves identically. **The only change is where the backup lands**:
+  `corpusPath + '.bak'` (which for ophtho recreated `app\data\questions.ophtho.js.bak`, inside the
+  folder the app loads from) becomes a **timestamped file in `_backups\` at the repo root**, with an
+  explicit refusal to write any backup under `app\data`. Timestamping also stops a second splice
+  overwriting the first backup. `_backups/` and `*.bak` added to `.gitignore`. Verified by dry run:
+  `1598 → 1627` on `gg-ee1.draft.js`, exit 0, no `.bak` in `app\data\`.

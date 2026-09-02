@@ -31,11 +31,11 @@ tonight; the 429 rule in their first version was wrong). ✅ ENT CLOSED (`ledger
 
 - ✅ **OPHTHO CLOSED 2026-09-02** — House closed at ch.20, GG through the Final: **EE6 35/35** ·
   **Tutorial 27/27** (both 0 folds) · **Final 31 written + 38 folded = 69 printed**, the folded ids
-  reconciling *exactly* against the 38 absent. **1,598**, 0 holes, CLEAN, boots. Stale
-  `questions.ophtho.js.bak` **gone from `app\data\`** (moved, not deleted). **Still owed:** 143
-  `opqb-*` explanations carry no marker (136 cite a cache ⇒ written, not transcribed) · theory
-  reconciliation ~63 rows (`theory-plan.md`; **caches exist, do NOT re-read**). Endpoint never in
-  scope. Close-out: `progress\resume-ophtho.md`.
+  reconciling *exactly* against the 38 absent. **1,598**, 0 holes, CLEAN, boots. ✅ **ALL 3 CARRIED
+  DEBTS CLEARED 2026-09-02 — and 2 WERE RECORDED BACKWARDS HERE:** the marker debt was **not 143
+  missing, it was 1 FALSE marker** (`opqb-t16-683`, on a transcribed box), removed; theory
+  reconciliation is **76 rows not ~63 — 54 ✅ · 16 notices · 6 verdicts · 0 open**, only `int-13`
+  stale. `splice.js` backup path fixed. Endpoint never in scope. Close-out: `progress\resume-ophtho.md`.
 - ⏳ **PEDS — bank MEASURED at 393; `questions.peds.js` holds 183, ch.1–8 spliced; 210 remain
   (ch.9–20).** **ch.9 is ALREADY STAGED** (`content\peds\qb-pages\house-ch09-dev-problems.array.js`)
   — resume at drafting. ⚠️ ch.9 prints **"18." twice with no Q19**, tokens `dev-problems`/`dev-nd`,

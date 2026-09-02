@@ -27,6 +27,14 @@ files.zip
 # if it ever existed — that one is project config rather than machine config.
 .claude/settings.local.json
 
+# Pre-splice corpus backups. `tools/qb-pipeline/splice.js` and `splice-safe.js`
+# drop a timestamped copy of the corpus here before writing. They are 5 MB
+# each, they are recoverable from git history anyway, and the whole reason
+# this folder exists is that the old backup path put them inside `app/data/`,
+# where the app would load them.
+_backups/
+*.bak
+
 # Windows and editor litter
 Thumbs.db
 desktop.ini
