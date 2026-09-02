@@ -1951,3 +1951,93 @@ the book almost certainly prints the fact one page away.
 `ophthalmology MCQ.pdf` is the ~57-sheet OSCE tail mapped earlier today, **skipped under the user's
 standing ruling, not cut.** **Grade Gain is the only open ophtho work: EE4 (drafting), EE5, EE6
 Photos, Tutorial, Final — 171 questions.**
+
+---
+
+## 2026-09-02 — GG "End Exam 4" SPLICED: 15 of 20, five within-bank folds
+
+**Ophtho 1,470 → 1,485 (+15).** GG ophtho 910 → 925. Corpus **4,136**. Validator clean, loaded not
+grepped. `stagecheck` CLEAR; its staged-but-not-drafted list (14, 15, 16, 18, 20) matches the five
+folds named below exactly, so **written 15 + folded 5 = printed 20** reconciles on both sides.
+
+### Why EE4 folds when End Exams 1–3 fold nothing
+
+EE1–3 shipped 86 entries and reprint **nothing**: **0 `loose()` stem matches against all 824
+shipped `opqb-t1…t20` entries.** EE4 produced four exact matches plus three near ones. That
+asymmetry is not a defect in either pass — **EE4's pages carry the running header `QUESTION BANK:
+Previous Exam`.** It is a past-paper section, and a past paper reprints topic questions by
+construction. End Exams 1–3 are not past papers.
+
+**The corpus already holds 21 within-bank folds** — 7 Grade Gain, 14 House — every one keeping a
+single entry and recording the second printing in the survivor's `source`. Two of them settle the
+two calls that were not obvious:
+
+- **`opmcq-c16-19`** was folded *"same key, with the fourth option swapped"*. That is exactly EE4
+  Q15's shape, and it authorises folding on a single differing option.
+- **`opqb-t6-229`** was folded on respellings alone. That covers Q14, Q16 and Q18.
+
+The threshold applied, and it matches every one of the 21: **0–1 substantively differing options =
+one question printed twice, fold it. 2 or more = a different printing, ship both.**
+
+### The five folds, each recorded in the surviving entry's `source`
+
+| EE4 | survivor | why |
+|---|---|---|
+| Q14 p.146 | `opqb-t10-423` | respelled only — `Pas`/`PAS`, `Occlusio-`/`Occlusion-pupillae`; same order, same key |
+| Q15 p.146 | `opqb-t3-127` | option D swapped; **the survivor's own D is arguably a second correct answer** — recorded there, key unmoved |
+| Q16 p.146 | `opqb-t15-659` | respelled only — `accomodation`/`accommodation` |
+| Q18 p.146 | `opqb-t2-93` | respelled + word order — `The most 2`/`The 2 most`, `and`/`&`, `pachymetery`/`pachymetry` |
+| Q20 p.146 | `opqb-t16-690` | option C truncated in EE4 (`Herpes simplex` vs `Herpes simplex genital type`) — **fuller printing kept** |
+
+All five are **within-bank** (both printings Grade Gain), so **none takes `alsoIn`**. That now makes
+**seven** fold shapes seen in this project, the new one being *option truncated in the second
+printing*.
+
+### Two held apart, and the token that separates them
+
+- **Q13 × `opqb-t14-597`** — 3 of 4 options differ (`Atropine`/`NSAIDs`/`Vasodilator` against
+  `Antibiotics`/`Anti-histaminic`/`None`). A different question on the same stem.
+- **Q19 × `opqb-t7-289`** — 2 of 4 options differ **and the list is reordered**, moving the key from
+  index 3 to index 0. Two printings, not one.
+
+### ⚠️ I WROTE TWO BROKEN PROBES IN A ROW, AND BOTH LOOKED LIKE ANSWERS
+
+Checking EE1–3 for fold precedent, my first probe reported *"29 of 86 record a second printing"*.
+The regex was `p\.\d+.*p\.\d+`, which matched every ordinary `Supporting: ophthalmology.pdf p.NNN`
+citation. I rewrote it to scope the match to the qb — `/ophthalmology qb\.pdf[^;]*/` — and it
+reported **20**. That was **also wrong**: `[^;]*` runs past the sentence end and swallows the
+`Supporting:` clause that follows it. Two different numbers, both false, both plausible.
+
+What finally worked was abandoning page-counting and **searching for the vocabulary of a fold** —
+`reprint|also printed|folded here|second printing` — which found the 21 real records immediately
+and printed them for reading.
+
+*Check the auditor before believing the audit* has now cost this project **five** false instruments
+in one day: the peds chapter-id regex, `loose()`'s destruction of `+ve`/`-ve`, the marker anchor
+that failed 26 correct entries, and these two. **The pattern in all five: the probe returned a
+number, and the number was the wrong kind of thing.** A probe that prints its matches for reading
+would have caught every one of them on the first run.
+
+### Resolved: where question images actually live
+
+Recorded because the earlier note *"no ophtho image directory found under `app/assets/`"* was
+looking for the wrong thing. **There is no per-module directory.** `qImgSrc()` in `app\index.html`
+is one line:
+
+    function qImgSrc(name){ return 'assets/q/' + name + '.jpg'; }
+
+Every question image in the corpus — all 113 of them across four modules — is a **flat `.jpg` in
+`app\assets\q\`**, and `image` stores the bare basename. All 16 ophtho images verified present on
+disk. Ophtho basenames run `q-op-gg-<GG question number>`, with one legacy exception
+(`opqb-t2-95` carries `q-op-gg-11`).
+
+⚠️ **EE6 cannot follow that scheme.** Its numbering restarts at 1, and `q-op-gg-11.jpg` already
+exists. **EE6 images must be `q-op-gg-ee6-1 … -35`.**
+
+### Where ophthalmology stands
+
+House is **closed at chapter 20**; the ~57-sheet OSCE tail after p.134 is **skipped under the
+user's standing ruling, not cut**. Grade Gain is the only open ophtho work. EE4 is now shipped;
+**EE5 (20), EE6 Photos (35), Tutorial (27) and Final (69) remain — 151 questions**, all four in
+flight as background staging/drafting passes at the time of writing. Topic slots `t25`–`t28` were
+verified free by grep before any of them started; EE6 takes `t26`.
