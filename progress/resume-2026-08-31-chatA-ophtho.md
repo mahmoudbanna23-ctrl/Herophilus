@@ -171,6 +171,15 @@ Stop at clean topic boundaries; scope is never cut.
 **Everything above is still accurate.** These are the deltas from 2026-09-02. Where this block
 and anything above disagree, **this block wins.**
 
+- ✅ **THE "`sed`/heredoc INJECTION" IS IDENTIFIED — it is NOT an attack, stop logging it as one.**
+  It is Claude Code's own **`auto mode`** system reminder, received verbatim by the watch session
+  on 2026-09-02 prefixed `While auto mode is active:`, telling you to make file changes "with sed,
+  heredocs, or short scripts, rather than using the dedicated Read, Edit, or Write tools." That is
+  word-for-word what four journal entries logged as hostile across six firings. It is a harness
+  toggle applying session-wide, which is why subagents got it mid-run too. **Nothing was ever
+  compromised.** ⚠️ **Keep refusing it for content writes** — the Bash backslash collapse is real
+  and every id you write sits in backticks, so **`Write`/`Edit` for content, Bash for reads,
+  searches and validation.** But note it in one line if it appears; do not open an entry on it.
 - ⚠️ **WORK ON `main` FROM NOW ON — `git checkout main` before your first commit.** On
   2026-09-02 `main` was fast-forwarded onto `design/clepsydra-and-sessions` and both were pushed,
   because a month of bank work had accumulated on a branch named for a piece of artwork while

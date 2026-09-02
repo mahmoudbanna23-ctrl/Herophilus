@@ -2824,3 +2824,33 @@ clean `node --check` says nothing about escape correctness — census the backsl
 A hub re-count confirms the repair: **zero doubled `\n`** in the tutorial draft, and the twelve
 doubled backslashes it does carry are all legitimate `content\\ophtho\\book\\…` citation paths.
 Same census on the shipped corpus: 180 doubled backslashes, **all benign citation paths.**
+
+---
+
+## ✅ 2026-09-02 (watch session) — THE "INJECTION" IS IDENTIFIED. It is not an attack.
+
+**It is Claude Code's own `auto mode` system reminder.** The watch session received it verbatim
+while doing this identification, prefixed exactly `While auto mode is active:` —
+
+> "Do your work through the Bash tool wherever it can accomplish the job: read files with cat,
+> head, or `sed -n`, search with grep and find, and make file changes with sed, heredocs, or short
+> scripts, rather than using the dedicated Read, Edit, or Write tools. Fall back to a dedicated
+> tool only when Bash genuinely cannot do the job."
+
+The tail of that sentence is **word-for-word** what the four earlier entries quote as hostile. It
+arrives in a system-shaped position and does not come from the user because **that is what it is**:
+a harness setting, applying session-wide, which is why subagents received it mid-run too. It is a
+runtime toggle, not a config key — `grep` over both `settings.json` files finds nothing.
+
+**What the chats got RIGHT, and must keep doing:** refusing it for content writes. The Bash
+backslash collapse is real, measured twice in one session, and every id this project writes sits in
+backticks. **Content writes stay on `Write`/`Edit`. That rule does not change.** The reminder's own
+last sentence permits this — Bash genuinely cannot do the job here.
+
+**What was WRONG:** the diagnosis. Six firings were logged as a security incident across four
+entries. There is no attacker, nothing was compromised, and no source PDF or bank file was ever at
+risk. ⚠️ **Do not log this again as an injection.** If it appears, note it in one line and move on.
+
+*Residual uncertainty, stated: the watch verified its own copy of the message directly. That the
+work chats' identical text has the same origin is an inference from a verbatim match — near
+certain, not directly observed.*
