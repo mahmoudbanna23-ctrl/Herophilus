@@ -1,0 +1,40 @@
+8. At one minute of age, an infant exhibits central and peripheral cyanosis, floppy
+tone, gasping respiration, and a weak cry. The HR is 70 beats/min, and facial
+grimacing is observed but no crying is elicited by a nasal catheter.
+The one-minute Apgar score for this neonate is:
+1.Appearance (color): Central + peripheral cyanosis O
+2.Pu1se (HR): 70 bpm (<100) 1
+3.Grimace (reflex): Grimace only, no cry
+1
+4.Activity (tone): Floppy O
+5.Respiration: Gasping, weak cry 1
+Total
+No
+1890
+--- 150dpi ---
+8. At one minute of age, an infant exhibits central and peripheral cyanosis, floppy
+tone, gasping respiration, and a weak cry. The HR is 70 beats/min, and facial
+gnmacing is observed but no crying is elicited by a nasal catheter.
+The one-minute Apgar score for this neonate is:
+I.Appearance (color): Central + peripheral cyanosis O
+2.Pulse (HR): 70 bpm (<100) 1
+3.Grimace (reflex): Grimace only, no cry 1
+4.Activity (tone): Floppy O
+5.Respiration: Gasping, weak cry 1
+Total
+(Skin
+Pulse
+(Reflex
+Cyanotic
+No
+Grimace or
+—ak when
+stirm"ated
+breath
+2
+Cry
+stinwlated
+Wea flued
+extension
+*rong cry
+1890

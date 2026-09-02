@@ -1,0 +1,11 @@
+Correction for Gestational Age
+•Preterm infants (<32 weeks): use corrected age.
+•Plot at actual age, then shift backward by number of weeks preterm.
+•Correction usually until 1 year, sometimes until 2 years for extreme prematurity.
+10
+--- 150dpi ---
+Correction for Gestational Age
+•Preterm infants (<32 weeks): use corrected age.
+•Plot at actual age, then shift backward by number of weeks preterm.
+•Correction usually until 1 year, sometimes until 2 years for extreme prematurity.
+10

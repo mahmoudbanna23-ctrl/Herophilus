@@ -1,0 +1,65 @@
+Component
+Energy
+Protein
+CHO
+Casein:whey
+Fat
+Sodium
+Iron
+Human Milk
+66 kcal
+1.0 g
+7.0 g
+40:60
+3.8 g
+0.65 mmol
+1.2 gmol
+Cow's Milk
+65 kcal
+3.4 g
+4.6 g
+80:20
+3.7g
+1.9 mmol
+0.36 gmol
+Infant Formula
+60-70 kcal
+1.8-3.0g
+9—14 g
+4.4—6.0 g
+0.87-2.6 mmol
+5.4-23 gmol
+215
+--- 150dpi ---
+Component
+Energy
+Protein
+CHO
+Casein:whey
+Fat
+Sodium
+Iron
+Human Milk
+66 kcal
+1.0 g
+7.0 g
+40.•60
+3.8 g
+0.65 mmol
+1.2 gmol
+Cow's Milk
+65 kcal
+3.4 g
+4.6 g
+80:20
+3.7g
+1.9 mmol
+0.36 gmol
+Infant Formula
+60-70 kcal
+1.8-3.0 g
+9—14 g
+4.4—6.0 g
+0.87-2.6 mmol
+5.4-23 gmol
+215

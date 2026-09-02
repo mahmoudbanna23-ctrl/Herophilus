@@ -1,0 +1,21 @@
+17. Very low birth weight infants are those who have:
+a. birth weight less than 1750 gm
+b. birth weight less than 1500 gm
+c. birth weight less than 2500 gm
+d. birth weight less than 1000 gm
+e. birth weight less than 500 gm
+Classification: Low birth weight g, very low birth weight <1500 g,
+and extremely low birth weight g. This categorization helps guide
+neonatal risk assessment and care.
+760
+--- 150dpi ---
+17. Very low birth weight infants are those who have:
+a. birth weight less than 1750 gm
+b. birth weight less than 1500 gm
+c. birth weight less than 2500 gm
+d. birth weight less than 1000 gm
+e. birth weight less than 500 gm
+Classification: Low birth weight g, very low birth weight <1500 g,
+and extremely low birth weight <IOOO g. This categorization helps guide
+neonatal risk assessment and care.
+760

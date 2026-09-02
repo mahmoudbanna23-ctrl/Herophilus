@@ -1,0 +1,26 @@
+Mid-Parental Centile (MPC)
+•Purpose: Assesses a child's growth in relation to family height.
+•Methods:
+• Parent height comparator: Plot parents' heights, draw a line, and compare with
+MPC line.
+• Calculation:
+• Mid-parental height (Father's height + Mother's height) + 2
+• Add +7 cm for boys, subtract —7 cm for girls.
+• Locate the centile at age 18 years.
+•Interpretation:
+• Normal: Within 2 centile spaces of MPC.
+• Abnormal: >2 centile spaces away (suggests pathology).
+--- 150dpi ---
+Mid-Parental Centile (MPC)
+•Purpose: Assesses a child's growth in relation to family height.
+•Methods:
+• Parent height comparator: Plot parents' heights, draw a line, and compare with
+MPC line.
+• Calculation:
+• Mid-parental height = (Father's height + Mother's height) + 2
+• Add +7 cm for boys, subtract —7 cm for girls.
+• Locate the centile at age 18 years.
+•Interpretation:
+• Normal: Within 2 centile spaces of MPC.
+• Abnormal: >2 centile spaces away (suggests pathology).
+9

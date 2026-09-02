@@ -1,0 +1,16 @@
+7. Which of the following statements about vaccines is correct?
+a. OPV shouldn't be given to immunocompromised individuals
+b. MMR is contraindicated in all children under I year of age
+c. Hepatitis B vaccine is contraindicated in newborns of HBsAg-positive mothers
+d. BCG is never given after the neonatal period
+Live attenuated OPV can cause poliomyelitis in
+immunocompromised children, so it is contraindicated.
+--- 150dpi ---
+7. Which of the following statements about vaccines is correct?
+a. OPV shouldn't be given to immunocompromised individuals
+b. MMR is contraindicated in all children under 1 year of age
+c. Hepatitis B vaccine is contraindicated in newborns of HBsAg-positive mothers
+d. BCG is never given after the neonatal period
+Live attenuated OPV can cause vaccine-associated poliomyelitis in
+immunocompromised children, so it is contraindicated.
+979

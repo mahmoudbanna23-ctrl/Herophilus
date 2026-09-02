@@ -1,0 +1,61 @@
+Feature
+Parents
+Final Height
+puberty
+Growth Velocity
+Bone Age
+Family History
+Treatment
+Familial Short Stature (FSS)
+Short
+Short (within parental range)
+Normal
+Normal
+Normal
+Often short parents
+GH sometimes useful
+Constitutional Delay of Growth &
+puberty (CDGP)
+Normal
+Normal (appropriate for family
+size)
+Delayed
+Slow (during childhood, improves
+after puberty)
+Delayed
+History of delayed puberty/late
+menarche common
+Sex hormones may help; GH not
+useful
+13
+--- 150dpi ---
+Feature
+Parents
+Final Height
+Puberty
+Growth Velocity
+Bone Age
+Family History
+Treatment
+Familial Short Stature (FSS)
+Short
+Short (within parental range)
+Normal
+Normal
+Normal
+Often short parents
+GH sometimes useful
+Constitutional Delay of Growth &
+Puberty (CDGP)
+Normal
+Normal (appropriate for family
+size)
+Delayed
+Slow (during childhood, improves
+after puberty)
+Delayed
+History of delayed puberty/late
+menarche common
+Sex hormones may help; GH not
+useful
+13

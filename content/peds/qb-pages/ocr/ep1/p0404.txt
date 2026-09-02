@@ -1,0 +1,55 @@
+Feature
+Age
+Sex
+Vomiting
+Growth
+Complications
+Diagnosis
+Treatment
+GER
+Infants, 1st year
+Equal
+Regurgitation, benign
+Normal
+Aspiration, esophagitis
+Clinical ± pH/endoscopy
+Reassurance, meds, ±
+surgery
+Pyloric Stenosis
+Boys > girls (4:1)
+Progressive, projectile,
+non-bilious
+Poor if delayed DX
+Dehydration, metabolic
+alkalosis
+Ultrasound ± test feed
+Surgical (pyloromyotomy)
+--- 150dpi ---
+Feature
+Age
+Sex
+Vomiting
+Growth
+Complications
+Diagnosis
+Treatment
+GER
+Infants, 1st year
+Equal
+Regurgitation, benign
+Normal
+Aspiration, esophagitis
+Clinical ± pH/endoscopy
+Reassurance, meds, ±
+surgery
+Pyloric Stenosis
+weeks
+Boys > girls (4:1)
+Progressive, projectile,
+non-bilious
+Poor if delayed DX
+Dehydration, metabolic
+alkalosis
+Ultrasound ± test feed
+Surgical (pyloromyotomy)
+404

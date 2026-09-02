@@ -4,6 +4,7 @@
 const Q_ALL = [].concat(
   window.Q_ENT    || [],
   window.Q_PEDS   || [],
+  window.Q_PEDS_EP || [],
   window.Q_OPHTHO || [],
   window.Q_NEURO  || [],
   window.C_ENT    || [],

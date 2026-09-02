@@ -1,0 +1,21 @@
+73. In patients with neuroblastoma, which of the following prognostic factors is
+associated with decreased survival?
+A. Patient age less than one year
+B. N-myc amplification
+C. Thorax as the primary site
+D. Nodular, well-differentiated histology pattern
+Amplification of N-myc is associated with aggressive tumor behavior and
+lower survival, whereas age <1 year, thoracic site, or well-differentiated
+histology generally indicate better prognosis.
+1628
+--- 150dpi ---
+73. In patients with neuroblastoma, which of the following prognostic factors is
+associated with decreased survival?
+A. Patient age less than one year
+B. N-myc amplification
+C. Thorax as the primary site
+D. Nodular, well-differentiated histology pattern
+Amplification of N-myc is associated with awressive tumor behavior and
+lower survival, whereas age <I year, thoracic site, or well-differentiated
+histology generally indicate better prognosis,
+1628

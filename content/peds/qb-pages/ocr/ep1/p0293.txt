@@ -1,0 +1,17 @@
+29. The following is NOT a cause of anemia m severe protein-energy
+malnutrition:
+a. Iron deficiency
+b. Carbohydrate deficiency
+c. Protein deficiency
+d. Folic acid deficiency
+e. Infections
+293
+--- 150dpi ---
+29. The following is NOT a cause of anemia in severe protein-energy
+malnutrition:
+a. Iron deficiency
+b. Carbohydrate deficiency
+c. Protein deficiency
+d. Folic acid deficiency
+e. Infections
+293

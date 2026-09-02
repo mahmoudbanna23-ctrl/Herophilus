@@ -1,0 +1,30 @@
+Very low birth weight: Defined as birth weight <1500 g; extremely low
+birth weight is <1000 g.
+Large-for-gestational-age complications: LGA infants, often of diabetic
+mothers, are prone to birth asphyxia, trauma, and shoulder dystocia.
+Infant of diabetic mother: At risk for macrosomia, hypoglycemia,
+hypocalcemia, and transient hypertrophic cardiomyopathy.
+CMV in pregnancy: Congenital CMV infection can cause fetal microcephaly,
+periventricular calcifications, and growth restriction.
+Vitamin roles: Vitamin C deficiency causes bleeding and petechiae; vitamin
+K is essential for coagulation, not RBC synthesis.
+Biliary atresia: Persistent jaundice with
+acholic stools and dark urine
+suggests cholestasis from biliary atresia.
+1954
+--- 150dpi ---
+Very low birth weight: Defined as birth weight <1500 g; extremely low
+birth weight is <IOOO g.
+Large-for-gestational-age complications: LGA infants, often of diabetic
+mothers, are prone to birth asphyxia, trauma, and shoulder dystocia.
+Infant of diabetic mother: At risk for macrosomia, hypoglycemia,
+hypocalcemia, and transient hypertrophic cardiomyopathy.
+CMV in pregnancy: Congenital CMV infection can cause fetal microcephaly,
+periventricular calcifications, and growth restriction.
+Vitamin roles:
+Vitamin C deficiency causes bleeding and petechiae; vitamin
+K is essential for coagulation, not RBC synthesis.
+Biliary atresia: Persistent jaundice with
+acholic stools and dark urine
+suggests cholestasis from biliary atresia.
+1954
