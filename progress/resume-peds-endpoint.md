@@ -330,3 +330,26 @@ The reconciliation pass will have to pick one chapter per held question; it is n
 found none, not that none exists — the OCR drops whole lines, and this probe only ever compares
 the first 70 normalised characters of a stem. Absence is still established on the images.
 
+### The three `answered` ≠ `question` mismatches, narrowed to named pages (2026-09-03)
+
+The pre-map above flagged sections 5, 6 and 9 as needing reconciliation without saying where. A
+pairing walk over the index — every `question` page should be followed by an `answered` page, and
+every `answered` page preceded by a `question` page — locates all three. **These are hypotheses
+with a named page to test, not findings**; each still has to be settled on the image.
+
+| section | mismatch | where the walk breaks | most likely reading |
+|---|---|---|---|
+| 5 Emergencies | 60 answered vs **62** question | **pp.583, 584 and 585 are three consecutive `question` pages** before the answered p.586 | one question spilling over two unanswered pages, or two whose answered printings lost their highlight |
+| 6 Perinatal | **23** answered vs 22 question | **p.742 is answered but p.741 before it classed `other`** | p.741 is p.742's unanswered twin, misclassified: it carries yellow (520 px) and **only one option letter, "A"**, so it failed the option test in both OCR reads |
+| 9 Infection | **96** answered vs 95 question | **p.938 is answered but p.937 before it classed `notes`** | same shape — p.938 is also on the `few-options` list, so the pair is probably a sparse layout the classifier mis-scored |
+
+**In every case the walk breaks in exactly ONE place**, which is what makes each a single-page
+question rather than a section-wide audit. Sections 3, 4, 7 and 8 pair perfectly end to end.
+
+⚠️ **Section 6's mismatch and section 6's reprint are unrelated.** p.741/742 is a classification
+artefact near the front of the section; the `pedep-gp-70` reprint is at p.768. Do not net them off
+against each other — that would be an offsetting error, which no sum can see.
+
+⚠️ Note also that **p.586 is both the answered page ending section 5's odd three-page run and one
+half of the p.586 == p.630 reprint candidate.** Read it once, for both questions.
+

@@ -42,19 +42,43 @@ const doWrite = process.argv.includes('--write');
 const cfg = SEC[secNum];
 if (!cfg) { console.error('usage: node splice-pd-ep.js <' + Object.keys(SEC).join('|') + '> [--write]'); process.exit(2); }
 
+// ---- find the drafts ----
+// This runs BEFORE the validator gate because the gate has to know which halves exist:
+// val-pd-ep.js takes the half letter as its second argument and resolves a different file
+// for each. Section 1 was drafted as a single draft.js, so the gate was never exercised on a
+// split section until section 2, where it called val-pd-ep.js with no letter and sent it
+// looking for an endpoint-s02-nutrition.draft.js that has never existed. Fixed 2026-09-03.
+const base = path.basename(cfg.draft);
+let files = fs.readdirSync(QB)
+  .filter(f => f.startsWith(base + '-') && /^-[A-Z]\.js$/.test(f.slice(base.length)))
+  .sort();
+if (!files.length && fs.existsSync(QB + base + '.js')) files = [base + '.js'];
+if (!files.length) { console.error('no draft found matching ' + cfg.draft + '[-X].js'); process.exit(2); }
+
+// The half letters, in the same order as `files`; a single unsplit draft.js contributes ''.
+const halves = files.map(f => {
+  const m = f.slice(base.length).match(/^-([A-Z])\.js$/);
+  return m ? m[1] : '';
+});
+
 // The validator gates the splice. Found 2026-09-02: this dry run reported "all pre-splice checks
 // passed" on a draft val-pd-ep.js rejected with 25 failures -- the two tools check different
 // things, and nothing forced them to be run in order. Now nothing splices unless the validator
 // exits 0 on the same section. No flag skips this.
-{
-  const v = require('child_process').spawnSync(process.execPath,
-    [path.join(__dirname, 'val-pd-ep.js'), String(secNum)], { encoding: 'utf8' });
+//
+// EVERY half must pass. A split section that validated only one half would let the other through
+// unchecked, which is the whole failure this gate exists to prevent.
+for (const h of halves) {
+  const args = [path.join(__dirname, 'val-pd-ep.js'), String(secNum)];
+  if (h) args.push(h);
+  const v = require('child_process').spawnSync(process.execPath, args, { encoding: 'utf8' });
+  const who = 'section ' + secNum + (h ? ' half ' + h : '');
   if (v.status !== 0) {
-    console.error('VALIDATOR FAILED (exit ' + v.status + ') -- fix the draft before splicing. Its output:');
+    console.error('VALIDATOR FAILED for ' + who + ' (exit ' + v.status + ') -- fix the draft before splicing. Its output:');
     console.error((v.stdout || '') + (v.stderr || ''));
     process.exit(1);
   }
-  console.log('validator: ALL CHECKS PASSED for section ' + secNum);
+  console.log('validator: ALL CHECKS PASSED for ' + who);
 }
 
 function run(p, tail) {
@@ -66,14 +90,6 @@ run(QB + cfg.staging);
 const S = globalThis[cfg.svar];
 if (!Array.isArray(S)) { console.error('staging var ' + cfg.svar + ' did not load'); process.exit(2); }
 const wantIds = S.map(s => cfg.prefix + s.n);
-
-// ---- find the drafts ----
-const base = path.basename(cfg.draft);
-let files = fs.readdirSync(QB)
-  .filter(f => f.startsWith(base + '-') && /^-[A-Z]\.js$/.test(f.slice(base.length)))
-  .sort();
-if (!files.length && fs.existsSync(QB + base + '.js')) files = [base + '.js'];
-if (!files.length) { console.error('no draft found matching ' + cfg.draft + '[-X].js'); process.exit(2); }
 
 // carve() returns the raw entry text; the loaded array is what gets counted and checked.
 // Both are needed: the splice is byte-level, but a byte-level splice cannot see a hole.
