@@ -31,9 +31,16 @@ are both correct — pages staged is not questions held. Always say which one yo
 | Model exams 1–4, training 1–2 | 1157–1936 | 379 | last; expected mostly reprints |
 | Exam Night Review | 1937–1990 | 0 (prose) | nothing to stage |
 
-Live file `app\data\questions.peds.ep.js`: **89 entries, 0 holes.** Boot check after the section-1
-splice: **0 console errors, QUESTIONS 4527, 4 module cards, 153 chapter rows.**
-`validate-all.js`: all hard checks passed across 5 files.
+Live file `app\data\questions.peds.ep.js` as of 2026-09-03, after the section-2 splice and fold
+pass 1: **150 entries, 0 holes, 150 distinct ids, 470,768 bytes.** Boot check **0 console errors**;
+`validate-all.js` all hard checks passed across 5 files. (The "89 entries / QUESTIONS 4527" figures
+that stood here were the section-1 state and are superseded.)
+
+**▶ RESUME HERE.** Tree clean, three commits landed (`1ccfd17` section 2 + splicer gate fix,
+`3c429a6` the 15 folds). The next action is **fold pass 2 — two reworded reprints, 150 → 148**;
+the cause of its `carved 149, expected 150` assertion is diagnosed in the last section of this
+file, **OPEN 2026-09-03**. Read that block first; it names the exact fix and the verification list.
+After it: re-run the within-section OCR probe over section 3 (pp.393–549), then stage section 3.
 
 ---
 
@@ -456,3 +463,50 @@ comparing every stem against every stem. It also means the House nutrition chapt
 diffing against section 2 as a block once both banks close.
 
 Neither chat folds into the other's file. This stays a journal entry until both banks are closed.
+
+### OPEN 2026-09-03 — fold pass 2, two REWORDED reprints, diagnosed but NOT yet folded
+
+**The two duplicate detectors are complementary and neither alone is sufficient.**
+`validate-all.js` compares **transcribed stems** with an exact normalised match; `reprint-pd-ep.js`
+compares **OCR page text** with an 8% edit-distance tolerance. Exact-match is structurally blind to
+a reprint whose wording moved, however slightly. Run both, every section.
+
+Proof: the exact check declared section 1 clean after the 15 folds. The OCR probe, run over the
+same range, then found two more genuine reprints —
+
+| keep | drop | why the exact check missed it |
+|---|---|---|
+| `pedep-gp-8` (p.44) | `pedep-gp-72` (p.175) | same vignette **reworded**; options and key identical |
+| `pedep-gp-10` (p.48) | `pedep-gp-82` (p.195) | *"main drive"* vs *"main **driver**"* — one word |
+
+⚠️ **Test the auditor before believing the audit.** `reprint-pd-ep.js --self-test` skips the
+within-section comparison entirely (`if (selfTest) continue;`), which is exactly why it never
+surfaced section 1's self-reprints. Run it in **normal** mode over the section's page range.
+**Section 2 was run the same way and came back clean** — only p.280 == p.294, already folded.
+
+**Status: `<scratchpad>\fold2.js` is written and its assertion fired — `carved 149, expected 150`
+— so it refused to write.** The live file is intact and un-rewritten (150 entries, 0 holes, 150
+distinct ids, both keepers' `source` still unchanged). **The cause is now established:**
+
+⚠️⚠️ **`fold.js`'s own output moved the first entry onto the array line.** Its final join is
+`lines.slice(0, head).join('\n') + kept.join(',\n\n')` — **no newline between the two**, so the
+header line `var Q_PEDS_EP = [` was concatenated with the first block's `{` and the file now opens
+
+    var Q_PEDS_EP = [{
+      id:'pedep-gp-1',
+
+That is valid JS and every check passed, which is why nothing caught it: `node --check` clean, boot
+0 errors, `validate-all.js` green, array length 150. But `isOpen = /^\{(\s|$)/` cannot match a line
+beginning `var`, so the carve starts at entry 2 and sees 149. Measured on the live file: **111 bare
+`{` + 38 inline `{ id:` = 149 opening lines against 150 `id:'pedep-` lines**, and the one orphan is
+line 8, whose previous line is `var Q_PEDS_EP = [{`.
+
+⚠️ **A THIRD entry shape now exists, and it is one entry only — the first.** Any byte-level tool
+over this file must handle bare `{`, inline `{ id:`, **and the head `[{`**. The durable fix is for
+the tool to emit a newline after the header so the file returns to two shapes; do that in the same
+pass as the fold, and re-assert the block count against the loaded array length afterwards.
+
+**Next action, in order:** fix `fold2.js`'s carve (recognise the `[{` head and re-emit `[` + newline
++ blocks), dry-run until it reports `150 -> 148`, then `--write`; then `node --check`, entry/hole/id
+count from the loaded array, `boot-check.js`, `validate-all.js`, and commit `questions.peds.ep.js`
+plus this journal with an explicit pathspec.
