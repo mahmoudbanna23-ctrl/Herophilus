@@ -763,3 +763,33 @@ times running, so that is a prior, not a measurement. The brief carries three co
 the hard way: `box` is prose-or-`null` and **not a boolean**; the questions may stop before the
 topic's last book page (topic 18's did, and the brief's table was wrong about it); and reprints
 exist in this bank, so a familiar-looking question is to be flagged and still transcribed in full.
+
+### 2026-09-02 — topic 18 SPLICED AND COMMITTED (138067c). questions.neuro.js is 207.
+
+Eleven entries, npqb-ps-64 to -68 and -70 to -75, all chapter ps-somato. Eleven
+and not twelve: Q69 folded into npqb-nr-122 in 92cbc3b, cross-chapter, same bank,
+so no bank was added and no second entry made.
+
+Measured after the splice: 207 entries · 0 sparse holes (indexed, not filtered) ·
+0 duplicate ids · no npqb-ps-69 present · all 11 new ids found · 0 shape problems ·
+ps-somato resolves · 0 unresolved chapter refs in the file.
+
+⚠️ **House style for a boxed entry is SETTLED: attribution line + blockquote.**
+Eleven of the shipped npqb-ps- entries use it; ZERO use the woven form. My t18
+brief told the agent to weave, which was wrong, and four entries (-66, -68, -74,
+-75) were reshaped to the attributed form before splicing. Do not re-litigate.
+
+Q67 is the topic's one key-vs-lecture divergence — printed key "More common in
+females" against L3's "Male=female". Recorded in explanation; the answer did not
+move.
+
+### Topic 19 staging RELAUNCHED 2026-09-02
+
+The first t19 staging agent died on a usage limit. Its file gg-ps-t19.array.js was
+on disk but held **one entry** (n:76) — measured by loading the array. Relaunched
+clean with an instruction to overwrite.
+
+⚠️ **Lead, not a measurement:** that agent's dying words were "All 15 keys
+confirmed at 400 dpi" — **15 against a contents page promising 14**. If the new run
+also measures 15 that is the FIFTH consecutive downward count defect in this bank.
+The new agent was told not to bend its reading toward the earlier claim.
