@@ -793,3 +793,68 @@ clean with an instruction to overwrite.
 confirmed at 400 dpi" — **15 against a contents page promising 14**. If the new run
 also measures 15 that is the FIFTH consecutive downward count defect in this bank.
 The new agent was told not to bend its reading toward the earlier claim.
+
+### The "12 nr-intro/nr-exam debt, npqb-nr-14 first" line in MEMORY.md is WRONG on both halves (measured 2026-09-02)
+
+Measured by loading Q_NEURO and filtering on chapter plus the tag phrase:
+
+- **Eleven**, not twelve, entries in `nr-intro`/`nr-exam` carry the
+  "not taken from the course material" tag: `npqb-nr-10, -13, -17, -18, -19,
+  -20, -21, -22, -26, -32, -33`.
+- **`npqb-nr-14` is NOT one of them.** It carries no tag at all. It is a
+  DEFECTIVE-KEY note — the bank keys "Right lower optic radiation" for a
+  homonymous inferior quadrantanopia, where an inferior field defect comes from
+  the superior (parietal) radiation. Recorded in `explanation`, answer unmoved,
+  per the standing ruling. MEMORY.md conflated the two.
+
+Also, whole-corpus check run the same day: **QUESTIONS 4,162** (ENT 2,322 ·
+ophtho 1,485 · neuropsych 214 · peds 141; 89 cases, 4,073 MCQs), 0 sparse holes,
+0 duplicate ids corpus-wide, 0 unresolved module or chapter refs against 4
+modules / 153 chapter ids, 0 answers out of range. Ophtho's 1,485 is Chat A's
+work, not mine.
+
+**The debt itself is NOT started.** What "the book can replace" refers to is
+ambiguous — if it means the endpoint neuro book, that is off-limits under the
+deferral ruling. Resolve the source before anyone spends on it.
+
+### 2026-09-02 — topic 19 "Child Psychiatry" STAGED (15), and the fifth low count is now EVIDENCED
+
+`content\neuro\qb-pages\gg-ps-t19.array.js`, 17,141 bytes, `var GG_PS_T19_STAGED`.
+Verified independently from disk after the agent reported: **15 entries, 0 sparse
+holes, `n` contiguous 76-90, `p` a NUMBER (79 or 80), every question exactly FOUR
+options a-d, all 15 keys resolving inside their own option list, boxes on 77, 80,
+89, 90.** Keys, in order: B D A B D B B B B B C B C D B.
+
+- **Contents page promises 14; the book prints 15.** Fifth consecutive topic where
+  the printed count runs LOW, and every one of the five is low, never high. The
+  earlier dead agent's "15" is now backed by evidence it never got to write: the
+  run was walked one number at a time on both question pages and independently on
+  the answer page, nothing printed twice, nothing skipped.
+- **PDF 84-87 = book pp.79-82**, offset PDF = book + 5 re-confirmed off the printed
+  folio on all four sheets. Questions occupy **pp.79-80 only**; **p.81 is the
+  answers page and carries no questions**; the one-past sheet p.82 opens
+  "Schizophrenia / Questions" at **Q91**, so nothing overruns and topic 20 starts
+  clean at 91. Topic 18's count of 12 is corroborated by Q76 opening exactly where
+  Q75 left off.
+- ⚠️ **THE KEY LETTER/NAME CROSS-CHECK WAS NOT AVAILABLE AND MUST NOT BE RECORDED AS
+  PASSED.** Every answer line prints only "Correct Answer: (X)" with no option name
+  beside it. The topic is B-heavy - 9 of 15 - which is exactly the signature a
+  systematic B/D misread would produce, so all 15 letters were re-read from 400 dpi
+  crops and matched the 200 dpi read letter for letter. The 4 Explanation boxes name
+  their option in words and all 4 agree. **11 keys have no corroboration of any kind.**
+- **Zero exponents, lab values and doses in the whole topic** - measured by reading
+  every stem and option, not by searching. The four drug questions name agents only.
+- **Two defects, recorded not corrected.** Q79's keyed option prints "more than two
+  settings" where DSM-5 says "two or more" - a stricter, different claim, so the key
+  points at a mis-stated option; the answer does not move. Q89's printed box
+  attributes "fidgeting" and "difficulty waiting his turn" to a child whose stem
+  says neither.
+- **Two template PAIRS, flagged not folded.** Q83/Q88 share a drug and three option
+  strings but key differently (B vs C). Q83/Q84 differ only in the agent named. A
+  shared option menu pairs questions; it never folds them.
+- **The staging brief was wrong about PDF 86** - it predicted body-and/or-answers;
+  the sheet is answers only. Same shape of error the topic-18 brief made about its
+  own last row. Third brief in a row wrong about a page boundary.
+
+Drafting agent launched the same day against `t19-draft-brief.md`, output
+`gg-ps-t19.draft.js`, ids `npqb-ps-76` to `-90`.
