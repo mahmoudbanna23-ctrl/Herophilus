@@ -929,3 +929,85 @@ tokens per request**, down from 57,845.
   `app\data\questions.ophtho.PRESPLICE18.js` (4.8 MB) + the 222 MB `progress\token-economy\archive\`
   (pointer: `progress\token-economy\ARCHIVE-MOVED.md`).
 
+
+## Pruned from MEMORY.md - 2026-09-02 (ophtho close-out consolidation)
+
+Pruned to keep MEMORY.md under the 200-line cap while adding the ophtho close-out, the boot-check
+tool and the `git commit -- <paths>` correction. Nothing here is superseded; it is settled detail.
+
+### The five-option cap (verbatim, as it stood in MEMORY.md)
+
+- **The five-option cap was FIXED 2026-09-02** in `app\index.html` (`OPT_LETTERS`, A-Z).
+  Eight `questions.neuro.js` questions exceed five options - `npqb-nr-43`, `-51`, and the
+  `-113`-`118` matching block (10 shared) - and used to print "the answer is undefined".
+  **Letter keys now pick any shown option**, so on those eight F/J select options instead of
+  flag/jump until the answer is revealed. Check: `python tools\count-options.py`.
+  On `-114`/`-115`/`-117` the app letter (I/H/G) differs from the book's printed key (L/K/J):
+  **DECIDED 2026-09-02 - letters stay POSITIONAL. Not a bug, do not re-open.**
+
+Confirmed still live 2026-09-02 by the repo boot check: ophtho alone spreads 3 x4, 4 x1,384,
+5 x210 options and boots with 0 console errors.
+
+### The first parallel run's audit (verbatim)
+
+- **The parallel-chat rules held on their first real run** (audited 2026-08-31; detail in the
+  archive). **Keep them in every parallel brief:** image work in subagents only, no `git add -A`,
+  no writes to `MEMORY.md`/`ledger.md`, no cross-module writes.
+
+The `git add -A` half of that rule was found INSUFFICIENT on 2026-09-02 and has been replaced in
+MEMORY.md by the `git commit -F <msgfile> -- <paths>` rule. See the Environment section there.
+
+## Pruned from MEMORY.md - 2026-09-02 (line-cap consolidation, second pass)
+
+MEMORY.md was 214 lines against a hard ≤200 cap. These blocks were compressed in place; the text
+removed is kept verbatim below. **No live rule left MEMORY.md** — only history and worked detail.
+
+### The `main` branch history (compressed to one clause)
+
+> For a month `main` was a 2026-08-02 design snapshot with **no bank content** while 380 commits
+> accumulated on the design branch — cut for the Clepsydra, then `d1bd4af` (08-03) mixed a bank
+> sweep into a Clepsydra commit and everything after landed on whatever was checked out. **Work on
+> `main` from here.**
+
+Resolved 2026-09-02 by fast-forwarding `main` onto `design/clepsydra-and-sessions`; both pushed,
+0 ahead. The live instruction — work on `main` — stayed in MEMORY.md.
+
+### The `git commit` index contamination, in full
+
+> Measured 2026-09-02: commit `6f27079` staged 14 ophtho paths, Chat B ran its own `git add` in the
+> gap before the commit, and **three peds files were swallowed into the ophtho commit.** Nothing was
+> lost and history was NOT rewritten (another chat was live).
+> **THE FIX, USE IT EVERY TIME: `git commit -F <msgfile> -- <paths>`** (or `--only`) — it commits
+> only those paths and leaves the other chat's staging intact. Confirmed on the next three commits,
+> which touched exactly 2, 6 and the intended files.
+
+The fix itself is still live in MEMORY.md's Environment section; only the narrative was trimmed.
+
+### The two-key-styles count trap, in full
+
+> `questions.neuro.js` holds **151 JSON-style quoted-key entries** (`"id":`) and **22 bare-key** ones
+> (`id:`). A bare-key grep counted **22 of 173** on 2026-09-02 and read as catastrophic loss — **it
+> was not.** (Neuro was then 173 q + 7 c = 180 and the corpus 3,982; both have grown.)
+
+### The watch section, uncompressed
+
+> - **A fresh chat runs `progress\WATCH.md` roughly every 12 hours and then dies.** It inspects and
+>   reports — changed / stale / at risk — and **does not build, splice, edit content or commit.** The
+>   *role* is permanent; the *session* never is (workspace §9 — a standing overseer chat would become
+>   the exact drain §9 exists to stop).
+> - ⚠️ **The watch reads the repo and the journals — never a work chat's conversation.** Anything a
+>   session learns and does not write into `resume-ophtho.md` / `resume-peds.md` / `resume-neuro.md`
+>   is invisible to it and dies with that session. **This is now the main reason to keep the journals
+>   current**, and `WATCH.md` §3 checks for exactly that failure.
+> - **Both chat resume prompts carry a `## Changed since 2026-09-01` block** that declares itself
+>   authoritative where it and the older text above it disagree. Append to that block rather than
+>   editing the body when something changes.
+> - **Always start a work chat fresh from its resume prompt** — never paste one into a live chat,
+>   which re-sends that chat's whole stale context and wastes the prompt entirely.
+
+### Method note earned by this pass
+
+**Rewrapping prose does not reduce a line count.** Four consecutive edits that tightened wording
+inside the same number of wrapped lines moved the file by 0. What actually cut lines was removing
+*content* (to the archive) and merging two bullets into one. If a file is over a line cap, cut
+material or merge structure — do not reword.

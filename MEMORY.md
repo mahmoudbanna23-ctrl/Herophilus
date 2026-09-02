@@ -2,11 +2,10 @@
 
 **⚠️ OCR ROUTE (2026-08-31) — WPS, and it SUPERSEDES the cost ladder in `progress\ocr-pipeline.md`.**
 `pdftoppm` → PNG → `wpscli photo2word`, **$0** (WPS paid tier already owned). The PaddleOCR →
-AppleVision → Mistral ladder and the six Tesseract-gate changes are **DEAD — do not build them**
-(fallback record only). The user lifted the no-free-tier-cloud rule for WPS on 2026-08-31;
-Kingsoft’s terms carry a no-training clause. The three remaining endpoint books **CANNOT be split**,
-so rasterising is mandatory. Timings, page counts, defect list and exit codes:
-**`tools\wps-ocr-reference.md`** (detail pruned from here 2026-09-02: `progress\memory-archive.md`).
+AppleVision → Mistral ladder and the six Tesseract-gate changes are **DEAD — do not build them.**
+The user lifted the no-free-tier-cloud rule for WPS on 2026-08-31; Kingsoft's terms carry a
+no-training clause. The three remaining endpoint books **CANNOT be split**, so rasterising is
+mandatory. Timings, page counts, defects, exit codes: **`tools\wps-ocr-reference.md`**.
 ⚠️ **OCR text is a SEARCH INDEX, never a clinical source** — confirm every fact against the rendered
 page before it ships. ⚠️⚠️ **SUPERSCRIPTS FAIL SILENTLY: WPS read a printed 10⁶ as 10⁹**, and they
 also flatten (10⁶ → 106) — a **plausible wrong number, not visible garbage. Never take an exponent,
@@ -30,11 +29,13 @@ CLAUDE.md - 2026-09-02` — **no live rule left it.** ⚠️ **Never quote a per
 `progress\resume-2026-08-31-chatA-ophtho.md` and `…-chatB-peds-neuro.md`** (both corrected
 tonight; the 429 rule in their first version was wrong). ✅ ENT CLOSED (`ledger.md` §15–§16).
 
-- ⏳ **OPHTHO — staged Grade Gain questions left against 27 Sep; count in "Validation state",
-  never here.** ✅ **House CLOSED at ch.20**; GG shipped through **EE5**. Staged: **EE6 35**, the
-  only image-heavy batch left (⚠️ Q34–Q35 sit on p.**159** beside the Answers banner; a reader who
-  stops at p.158 counts 33) · Tutorial 27 · Final 69. ⚠️ Delete `app\data\questions.ophtho.js.bak`
-  (1,470 q) — it loads if anything globs `app\data\*.js`. Close-out: `progress\resume-ophtho.md`.
+- ✅ **OPHTHO CLOSED 2026-09-02** — House closed at ch.20, GG through the Final: **EE6 35/35** ·
+  **Tutorial 27/27** (both 0 folds) · **Final 31 written + 38 folded = 69 printed**, the folded ids
+  reconciling *exactly* against the 38 absent. **1,598**, 0 holes, CLEAN, boots. Stale
+  `questions.ophtho.js.bak` **gone from `app\data\`** (moved, not deleted). **Still owed:** 143
+  `opqb-*` explanations carry no marker (136 cite a cache ⇒ written, not transcribed) · theory
+  reconciliation ~63 rows (`theory-plan.md`; **caches exist, do NOT re-read**). Endpoint never in
+  scope. Close-out: `progress\resume-ophtho.md`.
 - ⏳ **PEDS — bank MEASURED at 393; `questions.peds.js` holds 183, ch.1–8 spliced; 210 remain
   (ch.9–20).** **ch.9 is ALREADY STAGED** (`content\peds\qb-pages\house-ch09-dev-problems.array.js`)
   — resume at drafting. ⚠️ ch.9 prints **"18." twice with no Q19**, tokens `dev-problems`/`dev-nd`,
@@ -54,41 +55,33 @@ tonight; the 429 rule in their first version was wrong). ✅ ENT CLOSED (`ledger
   reported lost, found intact 2026-08-31 — archive). ⚠️ Debts: 12 `nr-intro`/`nr-exam` tags the book
   can replace (`npqb-nr-14` first) · ophtho theory reconciliation (~63 rows, `theory-plan.md`; book
   caches exist — do NOT re-read).
-- **✅ The five-option cap was FIXED 2026-09-02** in `app\index.html` (`OPT_LETTERS`, A–Z).
-  Eight `questions.neuro.js` questions exceed five options — `npqb-nr-43`, `-51`, and the
-  `-113`–`118` matching block (10 shared) — and used to print “the answer is undefined”.
-  **Letter keys now pick any shown option**, so on those eight F/J select options instead of
-  flag/jump until the answer is revealed. Check: `python tools\count-options.py`.
-  On `-114`/`-115`/`-117` the app letter (I/H/G) differs from the book’s printed key (L/K/J):
-  **DECIDED 2026-09-02 — letters stay POSITIONAL. Not a bug, do not re-open.**
+- **✅ The five-option cap was FIXED 2026-09-02** (`OPT_LETTERS`, A–Z) and re-confirmed live by the
+  boot check. **DECIDED: letters stay POSITIONAL where the app letter differs from the book's
+  printed key — not a bug, do not re-open.** Detail (the eight neuro questions, the F/J key clash,
+  `python tools\count-options.py`): **PRUNED 2026-09-02 ->** archive, `## Pruned from MEMORY.md - 2026-09-02`.
 - **USER RULING 2026-08-31: skip ALL OSCE content** — *"If I needed it later I'll tell you."*
   Deferred, not cut: skip it, say it was skipped and why, carry on. Not a scope cut needing approval.
 
 ## The watch — oversight every ~12 h (set up 2026-09-02)
 
-- **A fresh chat runs `progress\WATCH.md` roughly every 12 hours and then dies.** It inspects
-  and reports — changed / stale / at risk — and **does not build, splice, edit content or commit.**
-  The *role* is permanent; the *session* never is (workspace §9 — a standing overseer chat would
-  become the exact drain §9 exists to stop).
-- ⚠️ **The watch reads the repo and the journals — never a work chat’s conversation.** Anything a
-  session learns and does not write into `resume-ophtho.md` / `resume-peds.md` / `resume-neuro.md`
-  is invisible to it and dies with that session. **This is now the main reason to keep the
-  journals current**, and `WATCH.md` §3 checks for exactly that failure.
-- **Both chat resume prompts carry a `## Changed since 2026-09-01` block** that declares itself
-  authoritative where it and the older text above it disagree. Append to that block rather than
-  editing the body when something changes.
-- **Always start a work chat fresh from its resume prompt** — never paste one into a live chat,
-  which re-sends that chat’s whole stale context and wastes the prompt entirely.
+- **A fresh chat runs `progress\WATCH.md` roughly every 12 h and then dies.** It inspects and
+  reports — changed / stale / at risk — and **never builds, splices, edits content or commits.**
+  The *role* is permanent; the *session* never is (workspace §9).
+- ⚠️ **It reads the repo and the journals — never a work chat’s conversation.** Anything not written
+  into `resume-ophtho.md` / `-peds.md` / `-neuro.md` is invisible to it and dies with that session:
+  **this is the main reason to keep the journals current** (`WATCH.md` §3 checks for that failure).
+- **Both chat resume prompts carry a `## Changed since 2026-09-01` block, authoritative over the
+  body above it** — append there, don't edit the body. **Always start a work chat fresh from its
+  prompt**; pasting one into a live chat re-sends that chat's stale context and wastes the prompt.
 
 ## Running three chats in parallel — what it actually costs and breaks
 
-- **MOVED 2026-09-01 ->** the measured ~75k-token boot cost per chat and the four-chat endpoint plan: archive block `Pruned from MEMORY.md - 2026-09-01`
-  in `progress\memory-archive.md`. Reach any of these with `grep -n "Pruned from MEMORY" <file>` then `sed`.
+- **MOVED 2026-09-01 ->** the ~75k-token boot cost per chat and the four-chat endpoint plan. Reach any `MOVED`/`PRUNED` block with `grep -n "Pruned from MEMORY" progress\memory-archive.md` then `sed`.
 - ⚠️ **Two chats share one WPS account, so the account-wide request rate is DOUBLE what either
   driver thinks it is issuing.** Pace as if you own half. This is what produces the 429s.
-- ✅ **The parallel-chat rules held on their first real run** (audited 2026-08-31; detail in the
-  archive). **Keep them in every parallel brief:** image work in subagents only, no `git add -A`, no
-  writes to `MEMORY.md`/`ledger.md`, no cross-module writes.
+- ✅ **Keep in every parallel brief:** image work in subagents only, **commit with an explicit
+  pathspec** (see Environment — `git add -A` alone was found insufficient), no writes to
+  `MEMORY.md`/`ledger.md` mid-run, no cross-module writes.
 - **Standing rules for the running bank stream** (war-story detail in the archive, 2026-08-31
   block): **a repaired back-reference must not answer its own question — hand-read each against
   its antecedent AND its own key; no instrument sees this** · **an offsetting error is invisible
@@ -138,63 +131,70 @@ tonight; the 429 rule in their first version was wrong). ✅ ENT CLOSED (`ledger
 
 - **Corpus 4,304** (2026-09-02, **chats mid-run — re-measure before quoting; it drifts by the
   commit**. Loaded each array and read `.length`; sparse holes checked with `for i… if(!(i in
-  A))`, zero holes, every file `eval`s clean): ENT **2,322** (2,240 q + 82 c) · **Ophtho 1,505**
-  · Neuro **275** (268 q + 7 c) · Peds **202**; **119 images**. ⚠️ **No `file://` boot since
-  2026-08-30** — an `eval` check is not a boot check. Keys `ent`, `ophtho`, `pediatrics`,
-  `neuropsych`. Options 2–10 coexist. ⚠️ **`grep -c "^  { id:"` UNDERCOUNTS
-  `questions.ophtho.js` BY 440** (1,065 vs 1,505) — **load the array.**
+  A))`, zero holes, every file `eval`s clean): ENT **2,322** (2,240 q + 82 c) · **Ophtho 1,598**
+  · Neuro **275** (268 q + 7 c) · Peds **202**. ✅ **BOOTED FROM `file://` 2026-09-02, 0 console
+  errors** — `QUESTIONS 4412 · THEORY 153 · MODULES 4 · 153 chapter rows (120 with questions, 33
+  empty by design) · 4 module cards`. Keys `ent`, `ophtho`, `pediatrics`, `neuropsych`. Options
+  2–10 coexist (ophtho **3 ×4 · 4 ×1,384 · 5 ×210**). ⚠️ **`grep -c "^  { id:"` UNDERCOUNTS
+  `questions.ophtho.js` BY ~440** — **load the array.**
+- **✅ THE BOOT CHECK IS NOW A REPO TOOL: `node tools\boot-check\boot-check.js`** (2026-09-02) —
+  copies `app\`, probes errors ahead of the app's own scripts, stubs the gate, seeds a profile,
+  kills animation, walks all four modules, **refuses to run under a path containing `--`**.
+  ⚠️ **Four probe faults each produced a confident zero from a HEALTHY app**: `THEORY` is an OBJECT
+  not an array · chapters nest **two** deep (`MODULES[].groups[].chapters[]`) · **nothing renders
+  until `enterProfile()` runs** · `.ch-row` exists only inside a module view. **A zero from a probe
+  you just wrote is a claim about the probe first.** ⚠️ `CLAUDE.md` §7 says "134 chapters"; it is **153**.
 - **✅ CACHES AND HARNESS NOW LIVE IN THE REPO, not a scratchpad** (2026-09-02):
-  `content\peds\qb-pages\ocr\` **139 files** (book pp.32–151 = all remaining peds House; grep
-  `ph_all.txt` first) · `content\neuro\qb-pages\ocr\` **2 only** + `nb-anchors.txt` (neuro map) ·
-  **`tools\bank-harness\`** (`norm.js`, `sweep-pd4/5.js`, **`splice-ch04.js`** = the
-  validate-then-splice model to copy per chapter, `vB.js`, `wc.js`, `d17.js`, `dx.py`).
+  `content\peds\qb-pages\ocr\` **139 files** (pp.32–151 = all remaining peds House; grep `ph_all.txt`
+  first) · `content\neuro\qb-pages\ocr\` **2 only** + `nb-anchors.txt` · **`tools\bank-harness\`**
+  (`norm.js`, `sweep-pd4/5.js`, **`splice-ch04.js`** = the validate-then-splice model to copy per
+  chapter, `vB.js`, `wc.js`, `d17.js`, `dx.py`).
 - **MOVED 2026-09-01 ->** theory chapter counts * the 2026-08-30 `file://` boot * the scratchpad harness roster.
   Two warnings stay here: ⚠️⚠️ **THE SCRATCHPAD STARTS EMPTY AND THE HARNESSES ARE NOT IN THE
   CURRENT ONE — `find` the temp root and LIST it; never guess a harness name.** ⚠️⚠️ **`Array.filter`
   SKIPS SPARSE HOLES — index it: `for i… if(!(i in A))`.**
-- **⚠️ THE THEORY READER IS AN A4 PAGE (2026-08-19, three user complaints) AND MUST NOT BE MADE WHITE.** 210:297 by `aspect-ratio`; **margins set in JS from the PAGE's width** (percentages resolve against the containing block). Mechanics in the archive.
-- **⚠️⚠️ `overflow:hidden` MAKES A BLOCK MONOLITHIC, AND MONOLITHIC MEANS CLIPPED, NOT BROKEN** — `.th-table` silently lost over-tall tables' last rows. Fixed screen-side; print never affected.
+- **⚠️ THE THEORY READER IS AN A4 PAGE (2026-08-19, three user complaints) AND MUST NOT BE MADE WHITE.** 210:297 by `aspect-ratio`; **margins set in JS from the PAGE's width** (percentages resolve against the containing block). Mechanics in the archive. **⚠️⚠️ `overflow:hidden` MAKES A BLOCK MONOLITHIC, AND MONOLITHIC MEANS CLIPPED, NOT BROKEN** — `.th-table` silently lost over-tall tables' last rows. Fixed screen-side; print never affected.
 - **⚠️ A draft header is a claim, not a measurement — re-count from disk after the final edit.** Wrong nine times; **the sum check alone no longer suffices.** Page divisors: resume block + plan §4.
 
 ## Environment — what changes what you do first
 
 - Poppler **25.07.0** (off PATH, under `…\WinGet\Packages\oschwartz10612.Poppler_…\`); `pdftotext` = 0
   chars on every book/bank; `Read` rejects >100 MB. **`.ps1` blocked by policy — pass PowerShell
-  inline.** **Node v26.7.0** · **Python 3.12.10 + pip 25.0.1 (verified 2026-08-31)**; no
-  ImageMagick, Ghostscript or `gh`. Images via `System.Drawing`
-  (⚠️ `Sort-Object` no-ops on hashtables; cast `Measure-Object` doubles to `[int]`). Headless Chrome is
-  the only screenshot/probe route — **⚠️ never under a path containing `--`** (`CLAUDE.md` §7).
-  Tesseract 5.4.0 at `C:\Program Files\Tesseract-OCR\tesseract.exe` (fallback path only).
-- **⚠️⚠️ ESCAPING IS THE PROJECT’S MOST EXPENSIVE PROBLEM — FOUR TRAPS, ALL MEASURED** (war
-  stories in the archive). **(1)** `\n` **is a real newline and a real newline ENDS A JSON STRING.**
+  inline.** **Node v26.7.0** · **Python 3.12.10 + pip 25.0.1**; no ImageMagick, Ghostscript or `gh`;
+  Tesseract 5.4.0 at `C:\Program Files\Tesseract-OCR\` (fallback only). Images via `System.Drawing`
+  (⚠️ `Sort-Object` no-ops on hashtables; cast `Measure-Object` doubles to `[int]`). Headless Chrome
+  is the only screenshot/probe route — **⚠️ never under a path containing `--`** (`CLAUDE.md` §7).
+- **⚠️⚠️ ESCAPING IS THE PROJECT’S MOST EXPENSIVE PROBLEM — FOUR TRAPS, ALL MEASURED** (war stories
+  in the archive). **(1)** `\n` **is a real newline and a real newline ENDS A JSON STRING.**
   **(2)** ⚠️⚠️ **the Bash tool’s quoted heredoc collapses `\\` to `\`** (`\d`→`d`, `\b`→ a real
-  backspace), silently corrupting paths, regexes and MEMORY.md itself — **quoting is NO protection
-  whatever the body’s language; the collapse happens BEFORE that language sees it.** **(3)** a heredoc
-  over **~7 KB** fails to parse — **APPEND one section per call.** **(4)** ⚠️⚠️ **a backtick in a
-  DOUBLE-QUOTED bash string is COMMAND SUBSTITUTION, and `node -e "…"` IS one** — and **every chapter
-  id we write is in backticks.** **FIX FOR ALL FOUR: never type a literal `\` or a backtick in a
-  heredoc — build them as `chr(92)`/`String.fromCharCode(92)`, or use the `Write`/`Edit` tools;
+  backspace), corrupting paths, regexes and MEMORY.md itself — **quoting is NO protection whatever
+  the body's language; the collapse happens BEFORE that language sees it.** **(3)** a heredoc over
+  **~7 KB** fails to parse — **APPEND one section per call.** **(4)** ⚠️⚠️ **a backtick in a
+  DOUBLE-QUOTED bash string is COMMAND SUBSTITUTION, and `node -e "…"` IS one** — and **every
+  chapter id we write is in backticks.** **FIX FOR ALL FOUR: never type a literal `\` or a backtick
+  in a heredoc — build them as `chr(92)`/`String.fromCharCode(92)`, or use `Write`/`Edit`;
   `node --check` after every append; then GREP EVERY PATH AND REGEX — the write reports success
-  either way.** ⚠️ **`app\data\*.js` is MIXED CRLF/LF** — original body CRLF, spliced entries LF,
-  so **nothing may anchor on a bare newline**; scan structurally.
-- **⚠️⚠️ COUNTING QUESTIONS IS A TRAP: `app\data\*.js` MIXES TWO KEY STYLES.**
-  `questions.neuro.js` holds **151 JSON-style quoted-key entries** (`"id":`) and **22 bare-key**
-  ones (`id:`). A bare-key grep counted **22 of 173** on 2026-09-02 and read as catastrophic
-  loss — **it was not.** (Neuro was then 173 q + 7 c = 180 and the corpus 3,982; both have grown.)
-  Count BOTH styles (command in `progress\WATCH.md` §4). **Bytes rising while a count falls
-  means THE COUNT is broken** — cross-check `git cat-file -s HEAD:<path>` before reporting loss.
+  either way.** ⚠️ **`app\data\*.js` is MIXED CRLF/LF** (body CRLF, spliced entries LF) — **nothing
+  may anchor on a bare newline**; scan structurally.
+- **⚠️⚠️ COUNTING QUESTIONS IS A TRAP: `app\data\*.js` MIXES TWO KEY STYLES** — `questions.neuro.js`
+  held **151 quoted-key** (`"id":`) + **22 bare-key** (`id:`) entries, so a bare-key grep counted
+  **22 of 173** on 2026-09-02 and read as catastrophic loss. **It was not.** Count BOTH styles
+  (command in `progress\WATCH.md` §4). **Bytes rising while a count falls means THE COUNT is
+  broken** — cross-check `git cat-file -s HEAD:<path>` before reporting loss.
 - **GitHub, PRIVATE**: `mahmoudbanna23-ctrl/Herophilus`. `Semester 8\` gitignored.
-  ✅ **2026-09-02: `main` FAST-FORWARDED onto `design/clepsydra-and-sessions`, both pushed, 0 ahead.**
-  For a month `main` was a 2026-08-02 design snapshot with **no bank content** while 380 commits
-  accumulated on the design branch — cut for the Clepsydra, then `d1bd4af` (08-03) mixed a bank
-  sweep into a Clepsydra commit and everything after landed on whatever was checked out. **Work on
-  `main` from here.** No device-code flow; Credential Manager is cached.
+  ✅ **2026-09-02: `main` FAST-FORWARDED onto `design/clepsydra-and-sessions`, both pushed, 0 ahead**
+  — it had been a 2026-08-02 design snapshot with **no bank content** for a month (history:
+  archive). **Work on `main` from here.** No device-code flow; Credential Manager is cached.
   **⚠️ Stage EXPLICIT PATHS — never `git add -A`, never a directory a subagent writes into**; `index.lock` = another chat is mid-commit.
+  **⚠️⚠️ STAGING EXPLICIT PATHS IS NOT ENOUGH — `git commit` COMMITS THE INDEX, NOT WHAT YOU
+  STAGED.** Measured 2026-09-02: `6f27079` staged 14 ophtho paths, Chat B `git add`ed in the gap,
+  **three peds files were swallowed in** (nothing lost, history NOT rewritten — another chat was
+  live). **THE FIX, USE IT EVERY TIME: `git commit -F <msgfile> -- <paths>`** (or `--only`) — it
+  commits only those paths and leaves the other chat's staging intact. Held on three commits since.
 - **Measure, then believe:** check the sum, check the auditor, reconcile written + folded = printed; a
   counter that does not move is a finding. **Never write a page number, filename or id from memory**
   (7/7 and 3/3 wrong) — read the `source`, list the directory, grep the id. **An adjudication not in the map did not happen.**
-- Cleanup awaiting approval (nothing without a yes): 173 MB ophtho zip, two Peds PPT stubs, `files.zip`.
-  The 2026-08-31 move to `_archive\` is done — pointer `progress\token-economy\ARCHIVE-MOVED.md`.
+- Cleanup awaiting approval (nothing without a yes): 173 MB ophtho zip, two Peds PPT stubs, `files.zip`. The 2026-08-31 move to `_archive\` is done — pointer `progress\token-economy\ARCHIVE-MOVED.md`.
 
 **⚠️ THE ONE THING THAT MUST SURVIVE ANY SUMMARY: the Clepsydra is the user's own artwork —
 do not redraw her, do not draw anything onto her.**

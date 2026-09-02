@@ -13,7 +13,7 @@ Rule: a scanned page is rendered and read **once, ever**. Before opening any sou
 > still resolves — those sections are ENT and live in `ledger-closed-1-16.md`. Find any section
 > in the index below.
 
-## Index of all 53 sections
+## Index of all 54 sections
 
 | Section | File | Line |
 |---|---|---|
@@ -70,6 +70,7 @@ Rule: a scanned page is rendered and read **once, ever**. Before opening any sou
 | §17s — GG topic 21 "End Exam 1" (2026-08-30): 29 questions, zero folds in a pa | ledger.md | 1550 |
 | §17u — GG End Exam 2 merged: 27 = 27 promised (eleventh exact contents hit), z | ledger.md | 1640 |
 | §17v — House ch.16 "Pediatric ophthalmology" merged: 22 shipped + 3 folded = 2 | ledger.md | 1676 |
+| ⭐ §18 — OPHTHALMOLOGY IS CLOSED (2026-09-02): 1,598 entries, the Final reconciled | ledger.md | 1742 |
 
 ---
 
@@ -1735,3 +1736,149 @@ written); ch.16 "Pediatric ophthalmology" opens at book p.102.
   option added ("E. Choroidal melanoma" — menu-LENGTHENED reprint, the inverse of the
   ch.14→ch.15 shape). Next: ch.17 "Ocular malignancies" opens book p.108, renders READY
   `h17\` p-056..059.
+
+---
+
+## §18 — ⭐ OPHTHALMOLOGY IS CLOSED (2026-09-02)
+
+**Both ophthalmology banks are fully transcribed. `app\data\questions.ophtho.js` holds 1,598
+entries, 0 sparse holes, 1,598 unique ids, validator clean, and the app boots from `file://` with
+0 console errors.** The endpoint book was never in this module's scope and is untouched.
+
+The blow-by-blow — every batch, every sweep, every figure read, every adjudication — is in
+`progress\resume-ophtho.md`. ⚠️ That file is ~3,500 lines; **navigate it with
+`grep -n "^#\{1,4\} "` and `sed`, never `Read` it whole.** This section is the reconciliation only.
+
+### What closed, and how the arithmetic reconciles
+
+| Stream | Printed | Written | Folded | Reconciles |
+|---|---|---|---|---|
+| House (`ophthalmology MCQ.pdf`), ch.1–20 | — | 560 | see §17* | ✅ closed at ch.20 |
+| Grade Gain (`ophthalmology qb.pdf`), through the Final | — | 1,038 | 38 in the Final | ✅ |
+| — of which EE6 "End Exam 6 (Photos)" | 35 | 35 | 0 | 35 = 35 |
+| — of which the Tutorial | 27 | 27 | 0 | 27 = 27 |
+| — of which the Final | 69 | 31 | 38 | **31 + 38 = 69** |
+| **Corpus** | | **1,598** | | gradegain 1,038 + house 560 = 1,598 |
+
+**The Final's reconciliation is the one worth keeping.** A count of `opqb-t28-*` in the corpus
+returns **31** against **69 printed**, which reads exactly like 38 lost questions. It is not:
+`foldmap.json` holds **38 folds, every one of them `opqb-t28-*`**, and the folded ids match the 38
+absent from the corpus **exactly** — id for id, with no residue on either side. *An absence
+reconciled against a fold map is a closed question; an absence merely counted is not.*
+
+There is **no cross-bank `alsoIn` anywhere in ophthalmology** — `gradegain 1,038 + house 560`
+sums to the entry count with nothing left over, so every fold in this module was within-bank.
+
+### EE6 — the last batch, and what the figure recheck changed
+
+35 printed, 35 shipped, **35 keys verified against the printed run `AADBABBCBCACBABCACDBCAAAAAAAAAAADCB`
+(p.159) with 0 mismatches**, the eleven consecutive `A` at Q22–Q32 included. Option spread across
+the module is now **3 ×4 · 4 ×1,384 · 5 ×210**; nothing exceeds five.
+
+⚠️ **Q34–Q35 sit on p.159 beside the Answers banner. A reader who stops at p.158 counts 33.**
+This is why the standing rule is *render one page past the last*.
+
+The two held-back entries (`opqb-t26-32` `op-pupil`, three options only, key A; `opqb-t26-34`
+`op-trauma`, key C) were written in the main chat against the verbatim staging plus a pixel-measured
+figure recheck. **The recheck measured rather than eyeballed, and it changed what the entries could
+honestly claim:**
+
+- **Q32 — the first pass's asymmetry claim is WITHDRAWN.** Both upper-row pupils are equal and small
+  (84 vs 81 px), both lower-row equal and large (410 vs 410 px). That is a *cleaner* swinging-flash
+  light depiction than the first pass described, matching `L22) Pupil and Visual pathway` sl.6 frame
+  for frame. But an exhaustive scan found **zero orientation cues** — no letters, no R/L, no arrows,
+  no face, no asymmetric shading; the torches and light-ray hatching were confirmed non-text at
+  12–16×. **Laterality is therefore undecidable from the drawing.** The key stays A as printed and
+  the explanation *says* the picture cannot settle it, rather than inventing a side. Options A and B
+  differ only in that convention; the teaching point being tested does not depend on it.
+- **Q34 — no discrete foreign body is resolvable.** A brightness-threshold sweep plus high-zoom
+  inspection of both orbits found no hyperdense fleck, no haematoma and no streak artifact separate
+  from normal bone. **Key stays C**, and the entry rests it on the clinical stem and on
+  `L25) Trauma I` sl.52/53–54 (suspected FB → CT ✓, MRI ✗), *saying so*, rather than describing a
+  fleck nobody can see.
+- **Q15 — the first pass is OVERTURNED, and that entry was already shipped.** The lower-lid swelling
+  is real (a discrete rounded reddish-brown convex swelling, confirmed on a redness-channel scan)
+  and fits the keyed incision and curettage; the "mottled iris" the first pass flagged is JPEG grain,
+  which crosses pupil, iris and sclera borders indiscriminately. `opqb-t26-15` needed no edit.
+
+**Two slide citations written from working memory were wrong** and were caught by reading the caches
+*before* the file shipped: `L10) orbit.txt` retrobulbar-haemorrhage-as-proptosis is **sl.6**, not
+sl.5; and `L21) Optic Nerve` sl.8 is the **papilloedema-vs-papillitis** table, not an
+"optic-neuritis-vs-papilloedema" one — so the entry now cites sl.3 as well (RAPD red-starred among
+the manifestations of optic nerve dysfunction) and tags the papillitis≡optic-neuritis equivalence as
+**not taken from the course material**, because the deck uses the two names in two places and never
+links them. *Never write a page number, filename or id from memory* paid for itself again.
+
+### The sweeps, and why each zero is a zero
+
+**EE6: 2 incoming ranked against 1,596 shipped by shared-token overlap over stem + options, top six
+read by hand for each. 0 folds.**
+
+- **Q32's four 0.60 ties are the token "optic neuritis" and nothing else.** Its stem is two words
+  ("Spot diagnosis:"), so the bag is almost entirely the option list — the score is an artefact of a
+  short stem, not a resemblance. `opqb-t13-523` (pseudotumor cerebri), `opmcq-c13-26` (vascular
+  differential), `opmcq-c14-26` (*pinpoint* pupil — the opposite direction, keys organophosphorus)
+  and `opqb-t27-10` (AION differential) carry no figure, none turns on a pupil *reaction*, and Q32 is
+  the only three-option entry among them.
+- **Q34's nearest neighbours are the punched-eye pair** `opqb-t18-727`/`-728` at 0.25 — text
+  vignettes with no figure, keying a *management* step, neither even listing "intraorbital foreign
+  body". Q34 asks a diagnosis off a shown CT after a penetrating workplace injury.
+
+**Tutorial: 27 printed, 27 shipped, 0 folds. Final: 69 printed, 31 written, 38 folded** — the only
+batch in the module where the fold count exceeded the written count, and the fold map is what proves
+it rather than the counter.
+
+### Whole-module validation, run after the last splice
+
+- **1,598 entries · 0 sparse holes** (indexed with `for i… if(!(i in A))`, not `Array.filter`, which
+  skips holes) **· 1,598 unique ids · every `answer` in range · every `bank` valid · every `image`
+  asset present on disk · every image carries an `imgAlt` · no missing stem/explanation/source/chapter.**
+- ⚠️ **`grep -c "^  { id:"` undercounts this file by ~440** (1,065 against a true 1,598) — the module
+  mixes two entry layouts. **Load the array; never grep a corpus count.**
+- **A figure-promise probe flagged 14 stems that appear to promise a figure without carrying one.
+  Three were read in full and all three are false positives** — "this clinical picture" meaning the
+  constellation of findings, "this condition", and a back-reference to a previous question. **0 real
+  defects**, and the probe is recorded as over-sensitive rather than as a finding.
+- `app\data\questions.ophtho.js.bak` (1,470 entries) is **out of `app\data\`** — moved, not deleted.
+  It would have loaded if anything ever globbed `app\data\*.js`.
+
+### A `file://` boot check now lives in the repo — `tools\boot-check\boot-check.js`
+
+There was **no boot harness in the repo**; every session rebuilt one in a scratchpad and threw it
+away, which is why MEMORY.md could record "no `file://` boot since 2026-08-30". There is one now:
+
+    node tools/boot-check/boot-check.js
+
+It copies the whole `app\`, injects an error probe *ahead of* the app's own head scripts, stubs the
+gate, seeds a profile, kills animation, forces `.reveal{opacity:1}`, walks all four modules, and
+**refuses to run under a path containing `--`** (the trap is handled structurally, not by comment).
+
+**Result:** `QUESTIONS 4412 · THEORY 153 · MODULES 4 · chapters 153 · Q_OPHTHO 1598 · 4 module
+cards · 153 chapter rows (120 with questions, 33 empty by design) · **0 console errors**.`
+Per module: ent 30 · ophtho 36 · neuropsych 36 · pediatrics 51.
+
+**⚠️ Four separate probe faults each produced a confident zero from a healthy app before it ran
+clean**, and each is worth keeping because each looked exactly like a broken app:
+
+1. **`THEORY` is an OBJECT keyed by chapter id, not an array** — `THEORY.length` is `undefined`.
+2. **Chapters nest TWO deep** — `MODULES[].groups[].chapters[]`. Summing `m.chapters.length` gives 0.
+3. **Nothing renders until a profile is entered.** Stubbing `showGate` gets past the gate but leaves
+   the home view unpainted, so every element count reads 0. The probe seeds `wardround.profiles` at
+   parse time and awaits `enterProfile()` before measuring.
+4. **`.ch-row` exists only inside a module view**, so the check walks all four with `go({name:'module',id})`.
+
+**A count of zero from a probe you just wrote is a claim about the probe first.**
+
+⚠️ **`CLAUDE.md` §7 still says "all 134 chapters visible". The measured figure is 153**, and theory
+is 153/153, so 153 is right and 134 is stale. **Not edited** — `CLAUDE.md` is shared with the two
+live module chats, and this run does not own it. **Raise it with the user.**
+
+### Still owed on this module (carried, not blocking)
+
+- **143 `opqb-*` explanations carry no "Written for this bank" marker.** 136 of them cite a lecture
+  cache, which means they were *written*, not transcribed, and therefore should carry it. Mechanical
+  to fix; not attempted here because the corpus was mid-flight in two other chats.
+- **Ophtho theory reconciliation, ~63 rows** (`theory-plan.md`). ⚠️ **The book caches already exist —
+  do NOT re-read the book.**
+- `tools\qb-pipeline\splice.js` has a stale `.bak` path and needs fixing or retiring — **but not
+  while peds and neuro are mid-run**, since both use that pipeline.
