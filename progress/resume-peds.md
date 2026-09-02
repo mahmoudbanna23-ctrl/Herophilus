@@ -1499,3 +1499,49 @@ neonatal-seiz 1 · genetics 18 (Q15 lands in genetics, not perinatal).
 **Next: ch.7 "Neonatal medicine", book pp.54-61, PDF sheets 28-31**, one past at
 sheet 32 left half = book p.62. Its staging agent died before writing anything —
 house-ch07-neonatal.array.js was ABSENT on disk, so that one restarts clean.
+
+### 2026-09-02 — ch.7 "Neonatal medicine" STAGED: 21 questions, Q1–Q21
+
+`content\peds\qb-pages\house-ch07-neonatal.array.js`, 29,612 bytes,
+`var PEDHD_NEO_STAGED`. Verified independently from disk after the agent reported:
+**21 entries, 0 sparse holes, `n` contiguous 1–21, `p` a STRING ('54'–'60'), every
+question exactly FIVE options, all 21 keys resolving inside their own option list.**
+Keys in order: `E A B A B D E A B C D C B E E B C D B B E`.
+
+- **21 matched the text-instrument prior** — the first unstarted chapter in this
+  bank where it did. Walked question by question, page by page; 1–21 each printed
+  exactly once, no duplicate, no skip.
+- **Boundaries measured, not predicted.** Opens PDF sheet 28 LEFT = book p.54,
+  numbering restarts at 1. Closes sheet 31 RIGHT = book p.61, which carries only
+  Q21's options and its answer; the marks below are **show-through of p.62 in
+  mirror**, checked and not transcribed. One-past sheet 32 LEFT = p.62 opens
+  "Normal development" at its own Q1, so ch.7 does not resume. The 2-up mapping
+  (sheet N = pages 2N−2 | 2N−1) held on both parities.
+- ⚠️⚠️ **Q20 and Q21 print bilirubin in `mmol/L` where it must be `µmol/L`.**
+  Re-rendered at 400 dpi to rule out a render artefact: the glyph is an unambiguous
+  plain `m`, and **the same book prints `µmol/L` for the same analyte in Q8 and
+  Q10** — confirmed in the staging data itself (`mmol` on 20, 21; `µmol` on 8, 10).
+  **The error is the book's.** Transcribed as printed, recorded, answer unmoved.
+- ⚠️ **The letter-vs-name cross-check was UNAVAILABLE for the whole chapter** — all
+  21 answer lines print a bare letter with no option name. Recorded as not
+  performed, NOT as passed.
+- **Zero explanation boxes**, counted by looking at all 21 answer lines. So every
+  ch.7 entry is authored and carries the marker.
+- **Boiler on Q1–Q4 only** — a clean front block, and a **third distinct shape** for
+  this bank (ch.5 dropped one interior question, ch.6 ran Q1–Q9). ⚠️ **ch.8 on p.62
+  prints the boiler INLINE at the end of the stem — a fourth shape**, for whoever
+  stages it.
+- **Four figures**, all grayscale neonatal chest X-rays: Q1 p.54, Q5 p.55, Q6 and
+  Q7 both p.56. **pp.57–61 carry no figures at all**, measured by looking at each
+  rendered half, not inferred.
+- Preserved defects: Q4 `Hirschprung` · Q8 `hemolytic` against Q18 `haemolytic`
+  (the book contradicts itself) · Q15/Q17 `Necrotizing` · Q16 a comma splice ·
+  Q15 negatively worded with **no** emphasis on "unlikely" · several missing full
+  stops and a missing space in `mmol/L).Which`.
+- **My brief was wrong about the field shape** and the agent followed the ch.6 file
+  over it, correctly: `boiler` is the boolean `true`, and `boiler`/`fig`/`figp`/
+  `note` are **omitted entirely** when false or absent — `undefined`, not `null`.
+
+**Launched the same day, three agents in parallel:** crop agent for the four figures
+(`q-pd-hd-54`, `-55`, `-56a`, `-56b` — names pre-assigned from the book-page
+convention), draft-A for Q1–Q11, draft-B for Q12–Q21.
