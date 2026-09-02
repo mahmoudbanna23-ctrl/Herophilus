@@ -1853,3 +1853,73 @@ lives in Q15; Q19 carries the five-domain table and Q20 points back at it. Q19 r
 **Peds is now 183. Next: ch.9 "Developmental problems", opening on PDF sheet 35 / book p.68** —
 ⚠️ it prints "18." **twice** with no Q19, its chapters are `dev-problems`/`dev-nd`, and its boiler is
 a **fifth shape** (on its own line). Bank measured at 393; **210 questions remain after ch.8.**
+
+## 2026-09-02 — SESSION CLOSED. Everything needed to resume is now on disk, not in a chat.
+
+This chat is being retired deliberately. Before it goes, everything that lived only in the session
+scratchpad has been copied into the repository, because **a session scratchpad dies with its chat
+and this project has lost harnesses that way before.**
+
+**Corpus measured from disk with a parser, not a grep** (holes checked with `for i… if(!(i in A))`;
+`Array.filter` skips sparse holes and would have lied):
+
+| file | entries |
+|---|---|
+| `questions.ent.js` | 2,240 |
+| `questions.ophtho.js` | 1,485 |
+| `questions.neuro.js` | **268** (npqb-nr 133 · npqb-ps 135) |
+| `questions.peds.js` | **183** |
+| `cases.ent.js` | 82 |
+| `cases.neuro.js` | 7 |
+| **corpus** | **4,265** |
+
+Zero sparse holes in any file; every file `eval`s clean, which is the guard against the silent
+data-file parse failure that once made the app boot and report 82 questions. Assets `app/assets/q/`
+= **118**. ⚠️ **A `file://` boot was NOT re-run in this session** — the parse check is not a boot
+check. Run one before trusting the app itself.
+
+**Peds House stands at 183 of 393.** Chapters 1–8 are spliced and committed
+(`inf` 31 · `renal` 26 · `card` 24 · `haem` 25 · `gen` 20 · `peri` 15 · `neo` 21 · `dev` 21).
+**210 questions remain, ch.9–20.** Next up is **ch.9 "Developmental problems", PDF sheet 35 /
+book p.68** — its staging array is already written and committed at
+`content/peds/qb-pages/house-ch09-dev-problems.array.js`, so the next session starts at drafting,
+not at rendering. Its three known traps, all recorded when it was staged: it prints **"18." twice
+with no Q19**, its chapter tokens are `dev-problems`/`dev-nd`, and its boilerplate is a **fifth
+shape** (on its own line).
+
+### ⚠️ The OCR cache is now IN THE REPO — do not re-render or re-OCR it
+
+`content/peds/qb-pages/ocr/` — **139 files**: 120 half-page `.txt` covering sheets 17–76 =
+**book pp.32–151**, i.e. the entire remaining peds House range; 18 more from the earlier
+perinatal pass; and `ph_all.txt`, the concatenated 203 KB index that is the fastest thing to grep.
+
+`content/neuro/qb-pages/ocr/` — only **2 pages** (`p-001`, `p-010`). The neuro OCR run did not get
+past them; see `resume-neuro.md`.
+
+**⚠️ These are SEARCH INDEXES, never clinical sources.** Use them for chapter boundaries, question
+anchors and count cross-checks. Every fact still gets confirmed against the rendered page before it
+ships. The reason is measured, not theoretical: **WPS drops superscripts silently** — a page
+printing 10⁶ came back as 10⁹ in this same pipeline. A wrong exponent reads as a plausible number,
+not as visible garbage.
+
+### The harness scripts survived too
+
+`tools/bank-harness/` — `norm.js` (the comparator; tolerance lives on the WORD) · `sweep-pd4.js`
+and `sweep-pd5.js` (six-stage A–F duplicate sweep, Dice over content tokens, fold threshold 0.60) ·
+`splice-ch04.js` (the validate-then-splice pattern: id sequence, bank/module, stem/option/key drift
+against staging, marker-is-last-line, marker-not-in-source, chapter tokens resolve, id collision vs
+the live file, then a **structural** splice that never anchors on a bare newline because the data
+files are mixed CRLF/LF) · `vB.js` · `wc.js` · `d17.js` · `dx.py` (the .docx text extractor).
+
+`splice-ch04.js` is the model to copy for every later chapter — change the three `loadVar` lines
+and the expected lengths. Note it now reports `ALREADY IN LIVE FILE` for ch.4, which is correct:
+ch.4 was spliced days ago. That is the collision check working, not a fault.
+
+### Left undone, honestly
+
+- **The `file://` boot check** described above.
+- **The MEMORY.md / ledger.md consolidation** — deliberately not done from here beyond one compact
+  block, because the parallel-chat rule forbids racing Chat A for those two shared files.
+- The ch.4 explanation compression finished within its ceiling (25 entries, max 620, median 569
+  against a ≤545 target) and was committed; the second-pass agent that would have pulled the
+  median down died on a session limit and was not restarted.

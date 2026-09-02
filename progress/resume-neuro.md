@@ -1165,3 +1165,66 @@ warning.
 **Next: topic 22, opening at Q137 on PDF 94 / book p.89.** Its banner reads "Substance-related
 Disorders & **Psychopharmacology**" against the contents page's "…& **Pharmacology**". Psychiatry
 numbering ends at **Q165** in topic 23.
+
+## 2026-09-02 — SESSION CLOSED. Neuro stands at 268; the OCR index was never built.
+
+**Neuro live count, measured with a parser: 268** — `npqb-nr` **133**, `npqb-ps` **135**, zero
+sparse holes. Topics 18–21 were drafted and spliced in this session (Somatic Symptoms → Child
+Psychiatry → Schizophrenia → Dementia & Delirium, 196 → 268).
+
+**Next: topic 22 "Substance-related Disorders & Psychopharmacology", opening at Q137 on PDF 94 /
+book p.89.** ⚠️ Its banner and the contents page disagree — the banner prints
+**"Psychopharmacology"**, the contents prints **"Pharmacology"**. Psychiatry numbering ends at
+**Q165** in topic 23, so topic 22 + topic 23 are the last ~29 psychiatry questions.
+
+### ⚠️ The OCR index for this bank DOES NOT EXIST — and the reason matters
+
+All 142 pages were rendered at 200 dpi, but **the renders lived in the session scratchpad and are
+now gone.** Only **2 pages** were ever OCR'd; they are preserved at
+`content/neuro/qb-pages/ocr/p-001.txt` and `p-010.txt`. Re-rendering is cheap (0.32 s/page,
+~45 s for the whole bank). The OCR is the part that is rate-limited.
+
+**⚠️⚠️ CORRECTION, MEASURED — WPS exit 429 IS NOT A DAILY QUOTA.** `MEMORY.md` and
+`tools\wps-ocr-reference.md` both record 429 as "daily OCR quota exhausted — that is the finding,
+do not retry". A single-page probe on 2026-08-31 returned:
+
+    {"type":"error","code":"429","message":"The operation is too frequent, please try again later."}
+
+That is **rate limiting**. The allowance was never gone — the driver log shows five 429s on
+`p-001`, a restart ~100 s later, then `OK p-001 tries=3`. Two chats were running against the same
+WPS login, doubling the account-wide request rate. **The correct response is a paced driver with
+exponential backoff, not stopping.** A paced run was launched and then died on an unrelated
+Anthropic session limit before it could measure the sustainable rate — **so the sustainable pace
+is still unknown, and finding it is worth doing once and writing down.**
+**Fix the 429 line in `MEMORY.md` and `tools\wps-ocr-reference.md`.**
+
+### The structural map is the durable win — `content/neuro/qb-pages/nb-anchors.txt`
+
+Read from the rendered page images, not from OCR, so it stands even though the renders are gone.
+The load-bearing facts, repeated here so they survive independently of that file:
+
+- **Bank = Grade Gain**, confirmed from the cover (PDF 1), per the identify-by-the-cover rule.
+- **ONE book page per sheet**, A4 portrait, two columns of text inside each page. This bank is
+  **not** 2-up like the peds House bank — do not carry that arithmetic across.
+- **⚠️⚠️ THE PAGE OFFSET IS NOT GLOBAL.** Neuropsychiatry: **PDF = book + 5** (verified PDF 77 =
+  book 72, PDF 98 = book 93). Neurosurgery: **PDF = book + 7** (verified PDF 101 = book 94), because
+  two unnumbered neurosurgery contents pages sit at PDF 99–100. The single global "+5" in
+  `MEMORY.md` is right only for the in-scope half; applied to the back half it misfiles every
+  citation by two pages.
+- Layout: PDF 1 cover · 2 blank · 3–5 contents · **6–98 neuropsychiatry body (book 1–93)** ·
+  99–100 neurosurgery contents · 101–140 neurosurgery body · 141 blank · 142 back-cover advert.
+  **In-scope = PDF 6–98. SKIP 99–140 (neurosurgery, out of scope).**
+- **Two independent numbering runs, both continuous across topics.** Neurology (topics 01–14,
+  book 1–64, PDF 6–69) starts at Q1. Psychiatry (topics 15–23, book 65–93, PDF 70–98) **restarts at
+  Q1** and ends at Q165.
+- ⚠️ **The contents page's per-topic counts are unreliable** — the psychiatry counts sum to 157 but
+  the block ends at **Q165**. The contents also prints book page 14 twice (topics 04 and 05).
+  Same defect shape as every other bank here: trust no printed count; read every answered page.
+- Answers print as `<n>. Correct Answer: (X)` with an optional `Explanation:` block, and **may share
+  a page with the tail of that topic's questions** (questions left column, answers right) — e.g.
+  PDF 98. Do not assume answers begin on a fresh page.
+- **No OSCE material** anywhere in the contents or in sampled pages.
+
+### Open debt carried forward
+
+12 `nr-intro`/`nr-exam` outside-knowledge tags that the book can replace, **`npqb-nr-14` first**.

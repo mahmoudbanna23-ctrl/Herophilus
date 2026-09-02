@@ -1,0 +1,50 @@
+NEURO QB — structural anchors (read from rendered pages, not OCR)
+Source: Semester 8\Neuro\Questions\neuropsychiatry & neurosurgery qb.pdf  142 pp, A4 portrait
+BANK = GRADE GAIN (cover PDF p.1: "GG EDITION ... QS BANK + GRADE GAIN EDITION"). NOT House, NOT endpoint.
+Geometry: ONE book page per sheet, 595x842 pt. Two-COLUMN text inside each page.
+
+PAGE OFFSET IS NOT GLOBAL:
+  Neuropsychiatry half : PDF = book + 5   (verified PDF 77 = book 72; PDF 98 = book 93)
+  Neurosurgery half    : PDF = book + 7   (verified PDF 101 = book 94)
+  Cause: 2 unnumbered neurosurgery contents pages at PDF 99-100.
+
+LAYOUT
+  PDF 1        cover
+  PDF 2        blank (byte-identical to PDF 141)
+  PDF 3-5      neuropsychiatry contents (23 topics)
+  PDF 6-98     neuropsychiatry body (book 1-93)
+  PDF 99-100   neurosurgery contents (8 topics), unnumbered
+  PDF 101-140  neurosurgery body (book 94-133)
+  PDF 141      blank
+  PDF 142      back-cover advert
+
+NEUROPSYCHIATRY contents (topic / book page / printed q-count):
+ 01 Neurological Sheet 1/22   02 Localization 4/12   03 Ischemic CVS 7/20
+ 04 Hemorrhagic CVS 14/7      05 Cranial Nerves 14/27 (contents prints 14 twice - defect)
+ 06 Hemiplegia & Paraplegia 22/30  07 Headache 27/22  08 Epilepsy 31/36
+ 09 Coma 37/22   10 Movement Disorders 41/23   11 Demyelinating 46/16
+ 12 Neuromuscular 50/45   13 CNS Infections 57/20   14 Back & Lower Limb Pain 61/23
+ 15 Symptomatology & Myths 65/18   16 Anxiety & Related 68/21   17 Mood Disorders 72/22
+ 18 Somatic Symptoms 76/11   19 Child Psychiatry 79/14   20 Schizophrenia 82/26
+ 21 Dementia & Delirium 86/18  22 Substance-related & Pharmacology 89/16
+ 23 Emergency, Devices & Psychotherapy 92/11
+
+NUMBERING (two independent runs, both continuous ACROSS topics):
+  Neurology block  (topics 01-14, book 1-64,  PDF 6-69)  starts Q1  (Q33 seen on book p.5, topic 02)
+  Psychiatry block (topics 15-23, book 65-93, PDF 70-98) restarts Q1, ends Q165 on book p.93
+  Topic 17 Mood Disorders opens at Q41 on PDF 77 / book 72 -- ANCHOR CONFIRMED.
+  Contents per-topic counts are UNRELIABLE: psychiatry counts sum to 157 but the block ends at Q165.
+
+ANSWERS: printed as "<n>. Correct Answer: (X)" with optional "Explanation:" prose.
+  Neuropsychiatry: answers follow each topic and may SHARE a page with the tail of that topic's
+  questions (left column questions, right column answers) - e.g. PDF 98.
+  Neurosurgery: contents lists separate "Page Qs" / "Page As" per topic.
+
+NEUROSURGERY contents (topic / book Qs / book As / q-count)  -> OUT OF SCOPE for this project
+ 01 Congenital Anomalies 94/98/34    02 Head Trauma 99/103/35
+ 03 Brain Tumors 104/109/43          04 Cerebrovascular Disorders 110/114/36
+ 05 Lumbar Spine Disorders 116/119/30 06 Spinal Cord Compression 121/124/33
+ 07 Spinal Trauma 125/128/22          08 Peripheral Nerve Disorders 128/132/40
+ => SKIP PDF 99-140 entirely (neurosurgery). In-scope neuropsychiatry = PDF 6-98.
+
+No OSCE material seen in contents or sampled pages.

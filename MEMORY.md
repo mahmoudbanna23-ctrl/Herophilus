@@ -38,11 +38,14 @@ tonight; the 429 rule in their first version was wrong). ✅ ENT CLOSED (`ledger
 - ⚠️⚠️ **OPHTHO'S FIRST TASK ON RESUME IS THE EXPONENT AUDIT of ch.17–ch.20** — the chat merged
   them without ever receiving the superscript warning (verified by transcript audit: zero
   mentions in its whole run). Procedure in `progress\resume-ophtho.md`, last section.
-- ⏳ **PEDS — bank MEASURED at 393 (81 shipped + ch.4–20 = 312); the inherited "~160" was low by
-  95%.** ch.4 (25, drafted) and ch.5 (20, staged) are **NOT SPLICED**; `questions.peds.js` still
-  holds **81**; 267 unstarted. 6 ch.5 crops cut (103 → 109). Peds OSCE **14 Sep**, nearest exam.
-- ⏳ **NEURO — topic 16 "Anxiety & Related" SPLICED and committed (22).** All **142 pages
-  rendered**. ⚠️ **Bank identity is GRADE GAIN**, cover prints "QS BANK + GRADE GAIN EDITION" —
+- ⏳ **PEDS — bank MEASURED at 393; `questions.peds.js` holds 183, ch.1–8 spliced; 210 remain
+  (ch.9–20).** **ch.9 is ALREADY STAGED** (`content\peds\qb-pages\house-ch09-dev-problems.array.js`)
+  — resume at drafting. ⚠️ ch.9 prints **"18." twice with no Q19**, tokens `dev-problems`/`dev-nd`,
+  boiler is a **fifth shape**. Peds OSCE **14 Sep**, nearest exam.
+- ⏳ **NEURO — 268 live** (nr 133 · ps 135); topics 18–21 spliced 2026-09-02. **Next: topic 22,
+  Q137 on PDF 94 / book p.89** — ⚠️ banner says "Psychopharmacology", contents says "Pharmacology";
+  psychiatry ends **Q165** in topic 23. ⚠️ **The 142 renders died with a scratchpad and only 2
+  pages were ever OCR'd** — re-render is ~45 s, the OCR is the rate-limited part. ⚠️ **Bank identity is GRADE GAIN**, cover prints "QS BANK + GRADE GAIN EDITION" —
   not House, not endpoint. ⚠️ **ONE book page per sheet, A4 portrait** — NOT 2-up; do not carry
   the peds/ophtho House arithmetic across. ⚠️⚠️ **THE PAGE OFFSET IS NOT GLOBAL: neuropsychiatry
   PDF = book + 5, neurosurgery PDF = book + 7** (two unnumbered contents pages at PDF 99–100).
@@ -136,11 +139,18 @@ tonight; the 429 rule in their first version was wrong). ✅ ENT CLOSED (`ledger
 
 ## Validation state
 
-- **Corpus 3,982** (2026-08-31 — **measured by loading each array and reading `.length`**, cross-checked with the tolerant id regex; both agree): ENT **2,322** (2,240 q + 82 c) · **Ophtho
-  1,399** (1,399 q + 0 c; +69 today = 1,330 + 69 — the "1,400" recorded earlier was a slip) ·
-  Neuro **180** (173 q + 7 c) · Peds **81**; **109 images**. Keys `ent`, `ophtho`, `pediatrics`,
+- **Corpus 4,265** (2026-09-02 — **measured by loading each array and reading `.length`**, sparse
+  holes checked with `for i… if(!(i in A))`; zero holes, every file `eval`s clean): ENT **2,322**
+  (2,240 q + 82 c) · **Ophtho 1,485** (1,485 q + 0 c) · Neuro **275** (268 q + 7 c) ·
+  Peds **183** (183 q + 0 c); **118 images**. ⚠️ **A `file://` boot has NOT been run since
+  2026-08-30** — an `eval` check is not a boot check. Keys `ent`, `ophtho`, `pediatrics`,
   `neuropsych`. Options 2–9 coexist. ⚠️ **`grep -c "^  { id:"` UNDERCOUNTS `questions.ophtho.js`**
   (mixed CRLF/LF, mixed indentation) — **load the array, or use the tolerant id regex.**
+- **✅ CACHES AND HARNESS NOW LIVE IN THE REPO, not a scratchpad** (2026-09-02):
+  `content\peds\qb-pages\ocr\` **139 files** (book pp.32–151 = all remaining peds House; grep
+  `ph_all.txt` first) · `content\neuro\qb-pages\ocr\` **2 only** + `nb-anchors.txt` (neuro map) ·
+  **`tools\bank-harness\`** (`norm.js`, `sweep-pd4/5.js`, **`splice-ch04.js`** = the
+  validate-then-splice model to copy per chapter, `vB.js`, `wc.js`, `d17.js`, `dx.py`).
 - **MOVED 2026-09-01 ->** theory chapter counts * the 2026-08-30 `file://` boot * the scratchpad harness roster.
   Two warnings stay here: ⚠️⚠️ **THE SCRATCHPAD STARTS EMPTY AND THE HARNESSES ARE NOT IN THE
   CURRENT ONE — `find` the temp root and LIST it; never guess a harness name.** ⚠️⚠️ **`Array.filter`
