@@ -1545,3 +1545,88 @@ Keys in order: `E A B A B D E A B C D C B E E B C D B B E`.
 **Launched the same day, three agents in parallel:** crop agent for the four figures
 (`q-pd-hd-54`, `-55`, `-56a`, `-56b` — names pre-assigned from the book-page
 convention), draft-A for Q1–Q11, draft-B for Q12–Q21.
+
+### 2026-09-02 — ch.7 "Neonatal medicine" DRAFTED (21) and crops cut; splice pending verification
+
+Both halves validated by me from disk against `PEDHD_NEO_STAGED`, not taken on report:
+
+- `content/peds/qb-pages/house-ch07-neonatal.draft-A.js` — 61.3 KB, `var PEDHD_NEO_DRAFT_A`,
+  **11 entries** (Q1–11), 0 sparse holes.
+- `content/peds/qb-pages/house-ch07-neonatal.draft-B.js` — 52.8 KB, `var PEDHD_NEO_DRAFT_B`,
+  **10 entries** (Q12–21), 0 sparse holes.
+
+Checks run on both: stem and option arrays byte-identical to staging · `answer` equals
+`'ABCDE'.indexOf(key)` on all 21 · exactly 5 options each · marker final and absent from every
+`source` · `source` page equals staging `p` · every chapter id resolves in `modules.js` · no stray
+fields · 0 id collisions with the live 141. **ALL CHECKS PASSED on both halves** once the crops
+landed.
+
+Chapters: `perinatal-rd` 7 · `neonatal` 6 · `perinatal-hie` 2 · `neonatal-sepsis` 2 · `perinatal` 1
+· `gastroenterology` 1 · `haem-bleeding` 1 · `liver` 1.
+
+Explanation words: A 600–769, B 483–827 (the two long ones are Q20/Q21, the unit-error pair).
+Shipped ch.6 measures 516–701 by the same method, so draft-A runs a little long; flagged, not hidden.
+
+**Crops cut and written to `app/assets/q/`:** `q-pd-hd-54.jpg` 676×751 (RDS) · `-55.jpg` 691×952
+(pneumothorax) · `-56a.jpg` 692×955 (CDH) · `-56b.jpg` 874×680 (CLD of prematurity). An independent
+verifier is looking at all four cold before the splice.
+
+**⚠️ NEW CROP FINDING, and it changes how the rest of this chapter's figures must be cut: every
+figure in ch.7 sits inside a blue rounded QUESTION BOX whose rule touches the film.** There are two
+nested rounded rectangles — the film's own thin frame (keepable) and the box's rule (a panel rule,
+not allowed). **No rectangular crop can contain the whole framed film and exclude the box arc**;
+moving the top bound down clips 7–17 rows of film, moving the right bound left clips ~4 px. The cut
+is therefore: crop flush at the film's own frame, then flood-fill the region outside the film
+component and repaint it with locally sampled paper colour. Affected area is 0.3–0.7 % of each
+image — four small corner triangles — and no film pixel is touched. A first pass at a 228 threshold
+left a blue antialias halo; the flood-fill rewrite removed it.
+
+**⚠️ A SHIPPED ch.6 CROP VIOLATES THE RULE: `app/assets/q/q-pd-hd-52b.jpg` (814×812) carries TWO
+blue rules down its right side** — its own frame plus the question box's rule outside it. Not
+re-cut, not raised with the user; recorded here so the next figure pass can decide.
+
+**Other cutter findings worth keeping:** a thumbnail read of Q7's film called it 602 px and
+portrait; the density profile proved 874×680 and landscape — **the profile is the instrument, the
+eye at thumbnail scale is not.** `scipy` is NOT installed, so connected-component work is
+hand-written BFS. Finished sizes are 207–289 KB, above the ch.6 band of 139–215 KB — **further
+proof file size is not a validity check.**
+
+**Where my briefs were wrong, corrected by both drafters independently:**
+1. **Field order.** I wrote `id, module, chapter, bank`; the shipped ch.6 files use
+   **`id, bank, module, chapter`**. Both agents followed the file. Same error I have now made twice
+   in the neuro brief as well.
+2. **My chapter list was actively misleading.** I glossed `neonatal` as the general-newborn bucket;
+   `modules.js` titles it **"Neonatal jaundice"**, and `perinatal` is "The newborn and prematurity".
+   Four ids the chapter genuinely needs were absent from my list — `cardiac`, `haem-bleeding`,
+   `liver`, `gi-abdopain` — while two I did list would have been wrong choices: `respiratory` is
+   titled "Asthma" and `haematology` is "Anaemia and marrow failure". `gastroenterology` is
+   "Vomiting and reflux", not a GI catch-all.
+3. **Figure count contradicted itself** — the brief's table listed four rows while the launch
+   message said three. Four is right.
+4. **Indentation**: peds entries open at column 0, but their *fields* indent two spaces. My brief
+   said only the former.
+
+**⚠️⚠️ A GREP TRAP THAT NEARLY SHIPPED FIVE FALSE GAP CLAIMS.** Draft-B's first lecture sweep used
+`grep -rilE` with `\|` alternation. **Under ERE, `\|` is a LITERAL PIPE, not alternation** — the run
+returned 0 hits for TTN, NEC, vitamin K, GBS and surfactant, all five of which are in fact well
+covered. A zero from that construction looks exactly like a real absence. **Use a bare `|` under
+`-E`, and re-run any zero-hit sweep a second way before believing it.**
+
+**Divergence recorded, key untouched:** Q19 — `47)Hemorrhagic disorders` marks **both PT and PTT**
+prolonged in vitamin K deficiency, while the bank keys PT alone. Noted in `explanation` (factor VII
+has the shortest half-life, so PT moves first); `answer` left on the printed letter.
+
+**Unprovable, and stated as such in the entry rather than claimed:** whether
+`8) COMMON PROBLEMS IN THE TERM NEWBORN` reproduces the same mmol/L error. `grep -c "µ"` returns 0
+there, but `µ` survives in only ONE of the 64 cached lecture `.txt` files, so the extraction may
+simply have dropped the glyph. The Q20 explanation says this explicitly and uses the lecture only
+for the arithmetic (5 mg/dL ≈ 86 µmol/L), never as proof.
+
+**Straddles noted, primaries assigned:** `pedhd-neo-9` biliary atresia (secondary `liver`) ·
+`pedhd-neo-11` G6PD (secondary `haematology`) · `pedhd-neo-12` (secondary `cardiac`) ·
+`pedhd-neo-14` (secondary `neuro-cp`) · `pedhd-neo-17` NEC (secondary `gi-abdopain`) ·
+`pedhd-neo-20` (secondary `neonatal`).
+
+**Not spliced yet** — live `questions.peds.js` still holds **141**. Splicer cut and waiting at
+`<scratchpad>/splice-pd7.js` (carves 11 + 10 at column 0; the neuro splicer's `'\n  {'` anchor does
+NOT work on peds files).
