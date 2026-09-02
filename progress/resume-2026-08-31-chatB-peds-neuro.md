@@ -192,6 +192,12 @@ read those three off the page image.** This applies to every peds and neuro ques
   the two chats on the night of 2026-09-01/02. Defined at
   `D:\claude os\.claude\agents\lean-drafter.md`; the agent registry loads at **session start**, so
   it only exists in a fresh chat.
+- **`lean-drafter` runs on Sonnet 5 — you stay on Opus 5.** Cache reads are 97% of the bill and
+  Sonnet 5 charges $0.20/MTok for them against Opus 5's $0.50. Drafting agents transcribe and
+  format against your brief; the clinical judgment stays with you. **Write the brief so nothing is
+  left to the agent's discretion** — name the pages, the file, the format, and what to do when the
+  source is unclear. The agent is told to escalate rather than guess: expect questions back, and
+  answer them rather than letting it decide. Verify its output the same way you always have.
 - **Stage explicit paths.** Never `git add -A`, never a directory a subagent writes into.
   `index.lock` means Chat A is mid-commit — wait, never force.
 - Peak context last run was 167k of 200k. Kill the session at the end of the work block.
