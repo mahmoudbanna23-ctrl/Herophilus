@@ -17,7 +17,7 @@ watch and dies with the session.
 | section | pages | questions | state |
 |---|---|---|---|
 | 1 Growth & Puberty | 5–210 | 89 | ✅ **SPLICED AND COMMITTED `1f05e45`** (2026-09-03) |
-| 2 Nutrition | 211–392 | 76 | staging in progress |
+| 2 Nutrition | 211–392 | 76 | ✅ staged (76, 0 holes) · figure cut · **drafting** |
 | 3 Gastroenterology | 393–549 | 67 | not started |
 | 4 Accidents & poisoning | 550–562 | 3 | not started |
 | 5 Pediatrics Emergencies | 563–702 | 60 | not started |
@@ -106,4 +106,143 @@ Both `val-pd-ep.js` and `splice-pd-ep.js` now carry a section-2 row (`pedep-nut-
 
 ---
 
+### Sections 3–9 pre-mapped from the index (2026-09-03, no pages rendered)
+
+Answered-page counts all match the contents page. `answered` vs `question` disagrees in three
+sections — a question printed once, or a lost highlight; **reconcile from the images before
+staging, do not assume**:
+
+| section | answered | question | first/last answered | box overflows onto own page |
+|---|---|---|---|---|
+| 3 Gastroenterology 393–549 | 67 | 67 | 414 / 548 | after 424, 495 |
+| 4 Accidents 550–562 | 3 | 3 | 557 / 561 | none |
+| 5 Emergencies 563–702 | 60 | **62** ⚠️ | 577 / 701 | after 675, 678 |
+| 6 Perinatal 703–773 | 23 | **22** ⚠️ (+1 `other`, p.741) | 728 / 772 | none |
+| 7 Neonatology 774–903 | 53 | 53 | 797 / 902 | after 797 |
+| 8 Allergy 904–928 | 9 | 9 | 911 / 927 | none |
+| 9 Infection & Immunity 929–1156 | 96 | **95** ⚠️ | 938 / 1155 | after 938 |
+
+Overflow candidates are notes pages of ≤90 words sitting immediately after an answered page. The
+notes page after each section's LAST answered page (548, 561, 701, 772, 902, 927, 1155) is
+excluded — those are the closing/divider slides, and section 1's closing page p.210 was a prayer
+slide. Confirm each candidate on the image; section 2's three were all genuine.
+
+`few-options` pages needing an eye before the index is trusted for them: 504, 742, 797, 938,
+1039, 1043.
+
 ## Changed since 2026-09-03
+
+### Section 2 part A staged — n=1..38, pp.238-312 (2026-09-03)
+
+`content\peds\qb-pages\endpoint-s02-nutrition.part-A.js`, 38 entries, parses clean, 0 holes,
+`n` 1-38 all distinct, every `key` in range, `pr` == `n` throughout (no duplicate printed numbers
+in this half). Options: 25 questions with 5, 13 with 4.
+
+⚠️⚠️ **THE OCR BOX-DETECTOR IS NOT A BOX DETECTOR — it over-called by 9 to 1.** "Text continues
+after the last option on the answered page" predicted NINE boxless pages in this half (246, 250,
+252, 254, 256, 264, 272, 282, 308). Reading the images found **one**: n=36, p.308. The other eight
+all print a box the OCR simply lost. So the launch prompt's "box presence... the index shows it per
+page" is true only in the direction of presence: **an OCR box hit is evidence, an OCR box miss is
+nothing at all.** Every "no box" claim has to come off the image. Section 1's 4-of-89 unboxed
+figure was established the same way and stands.
+
+**Findings from part A, all confirmed on the images:**
+- ⚠️ **p.238 (n=1) CARRIES A FIGURE** — a clinical wrist photo plus its X-ray, labelled (a)/(b).
+  Section 1 had none and its p.4 says "the exam does not contain pictures", so that claim does not
+  hold for section 2. Whether it belongs to the question or the explanation is being settled off
+  p.237, the unanswered printing. Not cropped yet.
+- **Within-section reprint: n=22 (p.280) == n=29 (p.294)** — identical stem, options and key
+  ("NOT a cause of anemia in severe PEM" -> Carbohydrate deficiency), different box wording. This
+  is the pair the reprint map flagged; the images confirm it.
+- **n=5 (p.246) and n=23 (p.282)** are the same marasmus vignette with the name/country dropped and
+  the weight centile changed (0.4th -> 3rd). A rewording, not an exact reprint.
+- **n=21, n=33, n=35** are three separate "best measurement for acute/severe malnutrition ->
+  weight-for-height" items, worded and boxed differently. **Left unfolded**: a shared template is
+  not a fold unless the discriminating token is named.
+- **n=7-10 share one 5-option menu** (Vitamin D / Vitamin K / Kwashiorkor / Marasmus / Cow's milk
+  protein allergy) across four distinct vignettes. A shared menu PAIRS, it never folds.
+- **p.272 (n=18) is garbled IN THE SOURCE** — "An 11th presented to the emergency room...", "he was
+  and had no past history of convulsions". Re-rendered at 200 dpi to rule out a misread; the print
+  is broken. Transcribed verbatim.
+- **p.276 (n=20) prints an editorial aside instead of a clinical explanation** ("this question is of
+  lesser importance... included it as a backup"). Verbatim, flagged.
+- Printed typos kept verbatim: n=15 "Which of the following **not** a finding" (missing "is") and
+  its option "distributed muscle: fat ratio".
+- Option letter-casing drifts through the section (A-E, then a-e, then A-E, then a-d) and from
+  n=19 on most questions print 4 options rather than 5. Confirmed per page, not a truncation.
+
+### Section 2 part B staged — n=39..76, pp.314-391 (2026-09-03)
+
+`content\peds\qb-pages\endpoint-s02-nutrition.part-B.js`, 38 entries, parses clean, 0 holes,
+`n` 39-76 all distinct, every `key` in range. Options: 20 with 5, 18 with 4.
+
+- **The duplicate printed number is confirmed on the images.** `pr` tracks `n` to n=65, then
+  trails it by one from **n=66 (p.370)** to the end — pp.368 and 370 both print "65", exactly as
+  the index predicted before any page was rendered.
+- **Three overflow boxes confirmed**: n=54 p.344 -> box p.345 · n=55 p.347 -> box p.348 ·
+  n=71 p.380 -> box p.381. All three carry `box:` and their `source` must name the box page.
+- **One unboxed page: n=74 (p.387).** The OCR detector had also called p.362; the image prints a
+  box there. Same 9:1 over-call shape as part A — **an OCR box miss is nothing at all.**
+- **Section boundary proved by reading one page past the last**: p.392 is a decorative Arabic
+  supplication slide and p.393 is the "Gastroenterology" section-title slide. Nutrition genuinely
+  ends at p.391.
+- **Three repeat pairs recorded, none folded** — all three sit inside part B, so one drafter owns
+  both sides of each:
+  - **n=58 / n=70** — the same five vitamin-deficiency statements **REORDERED**, which moves the
+    correct Vitamin C statement from key position A to key position E. This is fold shape 3 (the
+    reorder that moves the key letter) and it is the shape that produces a silent mis-key.
+  - **n=59 / n=74** — human-milk oligosaccharides, reworded stem and reworded option B, same key
+    position. n=74 is the unboxed one.
+  - **n=62 / n=71** — the same rickets vignette asking **genuinely different questions**
+    (treatment vs investigations). Not a repeat; both written in full.
+
+### Section 2 merged into the staging record (2026-09-03)
+
+`content\peds\qb-pages\endpoint-s02-nutrition.array.js` = a section-1-style header +
+`var PEDEP_S02_STAGED = [` + part A + part B + `];`. Measured from disk after the final edit:
+**76 entries, 0 holes, n 1..76 all distinct, 74 boxed, unboxed n=36 (p.308) and n=74 (p.387).**
+The two part files keep their own header comments inside the array — they are the provenance of
+each half and are legal JS comments.
+
+**Shared option menus, computed from the merged record** (the validator enforces these, so they
+are not a matter of taste): **n=7/8/9/10** (the Vitamin D / Vitamin K / Kwashiorkor / Marasmus /
+CMPA ladder) anchored at `pedep-nut-7`, and **n=22/29** (the identical PEM-anemia reprint)
+anchored at `pedep-nut-22`. Both groups fall entirely inside part A.
+
+### ✅ The p.238 figure: it belongs to the QUESTION, and it is cut
+
+**Settled by reading p.237, the unanswered printing** — it carries the identical stem, the same
+A-E options with nothing highlighted, and the same two-panel figure, with **no explanation box**.
+The reader is therefore meant to look at it before answering, so it is a question figure.
+
+- Staging row n=1 now carries `fig:` (which is what makes `val-pd-ep.js` demand an `image` and an
+  `imgAlt`) and a `note` recording how the decision was made.
+- Crop cut and **looked at over four rounds** — three were rejected for clipping the top of the
+  forearm or the "(a)" label; the accepted box is (415, 188, 748, 304) in the page's 800x450
+  frame. Saved as `app\assets\q\q-pd-ep-238.jpg`, **333x116 px, 9.4 KB**.
+- ⚠️ **333x116 is the source ceiling, not a choice.** The whole page is a single embedded 800x450
+  JPEG, so each panel is only ~165 px wide and rendering the PDF at a higher dpi just upsamples
+  the same pixels. The radiograph is legible as an irregular, widened metaphyseal contour and no
+  further than that; **an explanation must not claim fine metaphyseal texture this image cannot
+  support.**
+- `imgAlt` fixed and handed to the drafter rather than left to it:
+  `Clinical photograph of a child's forearm and wrist beside a plain radiograph of the same wrist,
+  labelled (a) and (b).` — modality and view only, no laterality, no finding. The validator's
+  `GIVEAWAY` regex would have failed anything naming the finding.
+- **No other figure in pp.239-250**, checked page by page. That is a 12-page sample and does not
+  license an absence claim for the rest of the section; the staging pass found none either.
+
+### New tool: `tools\bank-harness\pd-ep-draft-brief.md` (2026-09-03)
+
+The endpoint drafting brief, written this session because **none existed** — section 1 was drafted
+from an inline brief in the prep chat, and `pd-draft-brief.md` is Chat B's House brief, wrong here
+in three ways (`bank:'house'`, `pedhd-` ids, and "this bank prints no explanation boxes"). The new
+brief carries the two closing markers, the boxed lead line and blockquote shape, the `box`-page
+`source` variant, the `q-pd-ep-<page>` figure rule and the `imgAlt` caption rule, and it is
+reusable for sections 3-9.
+
+⚠️ **It also carries the correction that matters most: section 1 averaged near 700 words an entry
+against a budget of ~250 straight recall / ~520 vignette.** Drafters are now told to read a
+section-1 entry for its **shape** and never its length, and the validator prints per-entry word
+counts so the overrun is visible before the splice rather than after.
+
