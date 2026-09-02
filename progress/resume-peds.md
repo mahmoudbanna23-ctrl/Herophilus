@@ -2756,3 +2756,94 @@ fold sweep (the ENT shape), or they stay separate and peds knowingly ships cross
 `ALL HARD CHECKS PASSED (5 files)` · live entries **4438** · ids 4438 · holes 0 in every file ·
 `Q_ENT` 2240 · `Q_OPHTHO` 1598 · `Q_NEURO` 268 · `Q_PEDS` **243** · `Q_PEDS_EP` 89. Matches the
 2026-09-02 boot check's `QUESTIONS 4438` exactly, so nothing has drifted since.
+
+---
+
+## ✅ USER RULING 2026-09-03 — peds banks MERGE AND FOLD AT END OF STREAM
+
+Asked because the first House-endpoint collision landed (`pedhd-gastro-22` = `pedep-gp-79`, block
+above) and the answer governs hundreds of entries, not one.
+
+> **Merge + fold at end of stream.**
+
+### What this settles
+
+- **The two files stay separate while both chats are writing.** That separation is not an accident
+  to be corrected — it is what lets the House chat and the endpoint chat write without colliding.
+  **Nothing is folded mid-stream. Do not fold a collision when you find it.**
+- **When the endpoint stream closes**, `questions.peds.ep.js` merges into `questions.peds.js` and
+  **one** cross-bank fold sweep runs, in the shape ENT already proved: keep the **fuller** printing,
+  **add the bank** via `alsoIn`, fold the loser's citation into `source`, **never a second entry**
+  (`CLAUDE.md` §4). ENT carries `alsoIn` on 224 of its 2,240 entries; that is the target shape.
+- **Collisions found before then are LOGGED, not actioned.** Keep appending them to this journal as
+  they surface, so the end-of-stream sweep starts from a list instead of a blank search.
+
+### The one on the books so far
+
+| | |
+|---|---|
+| `pedhd-gastro-22` | house · `pediatric .pdf p.88 (Part I, ch.11 Q22)` · chapter `gi-abdopain` · **fuller printing** (option C *"Inflammatory markers and liver function tests"*) |
+| `pedep-gp-79` | endpoint · `Pediatrics endpoint part1.pdf p.189` · chapter `gastroenterology` · shorter option C *"Liver function tests"* |
+
+Same stem verbatim, same key (index 3). **House is the keeper**; endpoint's citation folds into its
+`source` and `alsoIn` gains `endpoint`.
+
+### ⚠️ Two things that must not be lost when this is executed
+
+1. **Chapter assignment differs between the two printings** (`gi-abdopain` vs `gastroenterology`).
+   A merge must pick one deliberately, not inherit whichever entry survives the script.
+2. ⚠️ **The stem-normaliser that found this is blind to figures** — `pedhd-card-6..10` share a
+   byte-identical stem and are five different questions. **The end-of-stream sweep must not fold on
+   stem identity alone**; check the figure and the option menu before folding anything.
+
+### Where this still needs propagating
+
+**Not written to `MEMORY.md`, `progress\ledger.md` or `progress\resume-peds-endpoint.md` by this
+session.** The first two are barred mid-run by the parallel-chat rules; the third was **modified on
+disk by the live endpoint chat while this was being written**, so editing it would have collided.
+**Carry all three in the end-of-session consolidation pass** — the endpoint chat is the one that
+will hit the merge, and it cannot see this file.
+
+---
+
+## 2026-09-03 — CROSS-BANK COLLISION LOG (per the merge-and-fold ruling). 1 → 5 in one splice.
+
+The endpoint chat spliced its nutrition section while this chat was running: **`Q_PEDS_EP` 89 → 150**
+(76 nutrition questions spliced, then 15 self-reprints folded — `1ccfd17`, `3c429a6`), new prefix
+`pedep-nut-`. Re-ran the scan immediately, because the ruling says collisions are **logged as they
+appear** and folded once at end of stream.
+
+**The count went from 1 to 5.** Four of the four new ones are nutrition-on-nutrition:
+
+| endpoint | House | note |
+|---|---|---|
+| `pedep-gp-79` | `pedhd-gastro-22` | logged 2026-09-03, block above; House is the fuller printing |
+| `pedep-nut-3` | `pedhd-nutr-3` | **NEW** |
+| `pedep-nut-4` | `pedhd-nutr-4` | **NEW** |
+| `pedep-nut-6` | `pedhd-nutr-6` | **NEW** |
+| `pedep-nut-14` | `pedhd-nutr-14` | **NEW** |
+
+⚠️ **The endpoint nutrition section and House ch.10 "Nutrition" overlap heavily, and the ids line up
+one-for-one** (`-nut-3` ≡ `-nutr-3`, `-4` ≡ `-4`, `-6` ≡ `-6`, `-14` ≡ `-14`). That is four of
+House ch.10's fifteen questions — **27% of one chapter** — and it is the first evidence that the
+overlap is chapter-shaped rather than scattered. **Which printing is fuller has NOT been checked for
+these four.** Do that at fold time, per entry; do not assume House wins because it did for
+`pedhd-gastro-22`.
+
+### The rate, and why it matters for the end-of-stream sweep
+
+**150 endpoint entries live → 5 collisions.** Part 1 alone is measured at ~855. A naive scaling puts
+the end-of-stream fold sweep somewhere near **25-30 entries**, concentrated wherever an endpoint
+section covers the same ground as a House chapter. **This is an estimate from one data point and
+must be re-measured, never quoted as a count** — the overlap is clearly clustered, not uniform, so
+scaling a clustered rate linearly is exactly the kind of arithmetic this project has been wrong
+about before.
+
+### Standing reminders for whoever runs the sweep
+
+- ⚠️ **`pedhd-card-6..10` must NOT be folded.** Five byte-identical stems, five different figures,
+  five different keys. The stem-normaliser cannot see figures. **Check the figure and the option
+  menu before folding anything.**
+- Chapter assignment differs across printings (`gi-abdopain` vs `gastroenterology` for the first
+  pair) — pick one deliberately.
+- **Nothing is folded mid-stream.** The two files stay separate while both chats write.
