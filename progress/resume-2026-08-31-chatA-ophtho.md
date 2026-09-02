@@ -131,6 +131,13 @@ pages in any 15-minute stretch. Both stop conditions are in `tools\wps-ocr-refer
 - **Render and read page images inside a subagent only**, never in this conversation. Audited
   2026-08-31 across 1,581 events: **0 page images in either main conversation.** Keep it that way —
   an image read here is re-sent with every later request for the rest of the session.
+- **Spawn drafting agents as `subagent_type: "lean-drafter"`, never `general-purpose`.** Measured
+  2026-09-02: a general-purpose agent starts at **~58k tokens before it does any work** — it carries
+  every tool schema. The same job on `lean-drafter` (`Read, Write, Edit, Bash, Glob, Grep` only)
+  starts at **~13k**. That is **~37k saved on every agent step**, and ~2,000 agent steps ran across
+  the two chats on the night of 2026-09-01/02. Defined at
+  `D:\claude os\.claude\agents\lean-drafter.md`; the agent registry loads at **session start**, so
+  it only exists in a fresh chat.
 - **Stage explicit paths.** Never `git add -A`, never a directory a subagent writes into.
   `index.lock` means Chat B is mid-commit — wait, never force.
 - Peak context last run was 167k of 200k. Kill the session at the end of the work block.
