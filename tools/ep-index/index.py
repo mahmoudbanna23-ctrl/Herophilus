@@ -83,8 +83,14 @@ for pg in pages:
     }
     if any(l.startswith('OCR-ERROR') for l in nat + hi):
         r['flags'].append('ocr-error')
-    (out / f'p{pg:04d}.txt').write_text(
-        '\n'.join(nat) + '\n--- 150dpi ---\n' + '\n'.join(hi) + '\n', encoding='utf-8')
+    with open(out / f'p{pg:04d}.txt', 'w', encoding='utf-8', newline='
+') as fh:
+        fh.write('
+'.join(nat) + '
+--- 150dpi ---
+' + '
+'.join(hi) + '
+')
     rows[pg] = r
 
 for pg in pages:
@@ -112,7 +118,9 @@ for pg in pages:
     if r['options']['native'] != r['options']['hires']:
         r['flags'].append('options-differ')
 
-(out / 'index.json').write_text(json.dumps([rows[p] for p in pages], indent=0), encoding='utf-8')
+with open(out / 'index.json', 'w', encoding='utf-8', newline='
+') as fh:
+    fh.write(json.dumps([rows[p] for p in pages], indent=0))
 flagged = {}
 for r in rows.values():
     for f in r['flags']:
