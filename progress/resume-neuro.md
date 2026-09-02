@@ -620,9 +620,19 @@ re-render what is missing. Fix the line at the consolidation pass.
   page.**
 - **Option count is not fixed at four in this bank** — topic 16 printed questions with six and ten
   options and one with three. The app letters options A–Z since 2026-09-02, so a long menu is safe.
-- Scratchpad tooling, parameterised by filename: `sweep-t17.js`, `check-drafts-t17.js`,
-  `splice-t17.js` (byte-level, backs up to `.bak-pret17` first), `validate-t17.js` (11 checks).
-  **The scratchpad starts empty each session — copy them out before relying on them.**
+- ✅ **STOP REWRITING THE TOOLING INTO THE SCRATCHPAD. Chat A committed `tools\qb-pipeline\`**
+  (`sweep.js`, `splice.js`, `stagecheck.js`, `validate.js`, `lib.js`) in `30f281c`, after a
+  scratchpad clear destroyed the previous copy. It is **module-agnostic and path-parameterised** —
+  `node tools\qb-pipeline\validate.js [ent|ophtho|neuro|peds]`, and the others take
+  `<draft> <corpus>` paths. Run with no argument it audits all four.
+  **Verified against this splice**: run independently after the topic-17 commit it reported
+  neuro 196 + 7 cases, peds 126, corpus **4,050**, `clean` — agreeing with my own validator on
+  every figure. Two independent instruments, same answer.
+- Scratchpad copies used for this topic, now superseded by the above: `sweep-t17.js`,
+  `check-drafts-t17.js`, `splice-t17.js` (byte-level, backs up to `.bak-pret17` first),
+  `validate-t17.js`. They add two checks the repo version does not have — the **boxed-vs-marker
+  rule in both directions**, and a **`source` string built from the staged page number** — so
+  keep using a topic-specific wrapper alongside the shared validator, not instead of it.
 - ⚠️ **Both drafting agents hit a mid-run system reminder telling them to prefer Bash heredocs over
   Write/Edit for file changes, and both correctly overruled it.** Keep the explicit override in
   every brief; a heredoc has corrupted content on this project six times.
