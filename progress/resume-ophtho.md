@@ -3269,3 +3269,97 @@ against the corpus, then the second splice.
 route file writes through Bash heredocs, and each cited the brief's Write/Edit rule. Agent B reports
 it caught itself writing a double-escaped apostrophe into a `source` field and fixed it before it
 could fail. Noted in one line, as ruled — no entry opened on it.
+
+## ⚠️⚠️ 2026-09-02 — MY COMMIT SWALLOWED CHAT B's PEDS WORK. "Stage explicit paths" IS NOT ENOUGH.
+
+Commit `6f27079` was meant to carry 14 ophtho paths. It carries **17**, and the extra three are
+peds:
+
+```
+app/data/questions.peds.js                            +152
+progress/resume-peds.md                                +93
+content/peds/qb-pages/house-ch10-nutrition.draft-A.js  new, +198
+```
+
+**Nothing was lost and nothing is broken** — Chat B's work is committed, in full, under my commit
+message. But Chat B's next `git commit` will find its index empty and may read that as lost work.
+**It is not lost. It is in `6f27079`.** History was deliberately **not** rewritten: another chat is
+live, and rewriting under it is worse than a mislabelled commit.
+
+### What actually happened, and why the standing rule did not stop it
+
+I staged 14 explicit paths and then ran `git commit`. Between those two commands Chat B ran its own
+`git add` on its three files. **`git commit` commits THE INDEX, not the paths you personally
+staged** — so a concurrent chat's staging rides along, silently, and `git status` taken before the
+`add` shows nothing wrong. The `index.lock` check does not help either: neither chat was mid-commit
+at the moment the other looked.
+
+### The rule that replaces it, for every parallel chat
+
+> **⚠️ `git add <paths>` then `git commit` is NOT safe while another chat is running.
+> Pathspec-limit the COMMIT itself:**
+>
+> ```bash
+> git commit -F <msgfile> -- app/data/questions.ophtho.js progress/resume-ophtho.md
+> ```
+>
+> The `--` form commits **only** those paths regardless of what else is in the index, and it leaves
+> the other chat's staged files staged. `git commit --only <paths>` is the same thing.
+
+**This belongs in `MEMORY.md` and in all three chat briefs at the consolidation pass** — it is a
+correction to a standing rule (`⚠️ Stage EXPLICIT PATHS — never `git add -A``), which turns out to
+protect against the wrong half of the problem. Left out of `MEMORY.md` tonight only because the
+no-mid-run-writes rule applies.
+
+## 2026-09-02 — EE6 sweep: 33 incoming, 9 candidates, **0 folds**. Why the zero is a zero.
+
+`node tools/qb-pipeline/sweep.js <blocks A+B+C combined> app/data/questions.ophtho.js` against the
+post-splice corpus of **1,563**. Nine ranked candidates, every one hand-read against its stem,
+its full option menu and its key. **None is a fold**, and none is close.
+
+| pair | dice | discriminating token |
+|---|---|---|
+| `opqb-t26-15` × `opqb-t27-20` | 0.73 | Chalazion photo keyed **incision and curettage** vs a **back-reference** ("In the previous Q") to a diabetic-retinopathy question keyed **intravitreal anti-VEGF**. `op-lid` vs `op-ret-dr`, disjoint menus. |
+| `opqb-t26-30` × `opqb-t14-639` | 0.73 | Opposite directions. t26-30 shows a field printout and asks **which disease** (key Glaucoma); t14-639 asks the **characteristic defect in NAION** (key Altitudinal). Disjoint menus. |
+| `opqb-t26-5` × `-10` | 0.80 | Both key keratoplasty, but different photographs and `-10` asks specifically about **an advanced case**, with `keratectomy` and `Spectacles` in its menu. Two printed questions, not one. |
+| `opqb-t26-5` × `-11` | 0.89 | `-11` is **trachoma** (single-dose azithromycin). Nothing in common but the words *treatment for this condition*. |
+| `opqb-t26-6` × `-7` × `-9` | 0.73–0.91 | **The shared-menu trap, three ways.** All three ask *what does this test/device examine*, and `-6`/`-9` share four menu items. The discriminator is **the instrument in the photograph**: indirect ophthalmoscope (key Retinal periphery), levator-function measurement (key Levator palpebrae superioris), tonometer (key IOP). A shared menu **pairs**, it never folds. |
+| `opqb-t26-10` × `-11`, `-10` × `-15` | 0.73 | Treatment-template collisions across three different diseases and three disjoint menus. |
+
+**This is a photo section, and that is what makes the zero structurally expected rather than lucky:
+the stem is often only "What is the diagnosis?" — the question is carried by the image, which dice
+cannot see.** Every one of the seven within-batch hits has a different `image` basename
+(`q-op-gg-ee6-5/6/7/9/10/11/15`), and all 33 crops were confirmed present before drafting. The
+measurement that stands behind the zero is the hand-read of all nine, not the sweep's ranking.
+
+Consistent with the finding recorded earlier tonight on the 15 below-threshold ship-list pairs:
+**on short template stems dice measures boilerplate, not content** — here it does so in both
+directions at once, missing a real fold (`-28`) at 0.667 while ranking nine non-folds up to 0.91.
+
+### EE6 validation — the 33 are CLEAN and every key matches the printed run
+
+`node <scratchpad>\vdraft.js ee6-33.draft.js 33` (a generalised `vpart1.js`; it also resolves every
+backticked `opqb-*`/`opmcq-*` cross-reference against the corpus and the batch):
+
+```
+entries 33  (expected 33)
+BAD doubled-newline escapes 0   doubled-backslash pairs 0
+with images 33   option counts 4
+chapters touched: op-acute op-cat-surg op-conj op-cornea op-cornea-surg op-glauc op-insid
+                  op-intro-exam op-lac op-lid op-neuro-motil op-neuro-optic op-orbit
+                  op-orbit-mass op-ret op-trauma op-uvea
+CLEAN
+```
+
+All 33 `image` basenames resolve to a real asset, all 33 carry the marker, no marker leaked into
+`source`, no dead cross-reference, no chapter outside the 35-token vocabulary.
+
+**Keys checked against the printed run `AADBABBCBCACBABCACDBCAAAAAAAAAAADCB` — 33 checked, 0
+mismatches.** The two unwritten ones are **Q32 = A** and **Q34 = C**, which is what agent C is
+holding for. The eleven-consecutive-`A` stretch at Q22–Q32 survived three independent drafters
+without one of them "correcting" it.
+
+**Option-cap check, since four of tonight's spec edits created five-option questions:**
+`OPT_LETTERS='ABCDEFGHIJKLMNOPQRSTUVWXYZ'` is live at `app\index.html:4549` and used at 4581, 4596
+and 6320, so the old five-option "the answer is undefined" bug cannot bite. Ophtho now spreads
+**3 options ×3 · 4 ×1,350 · 5 ×210**, nothing above five.
