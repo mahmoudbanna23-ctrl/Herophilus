@@ -2289,3 +2289,96 @@ while the design branch is checked out.
 The `While auto mode is active:` reminder (use sed/heredocs rather than Read/Edit/Write) fired at
 session start again. Identified, not an attack, no entry opened. **Refused for content writes** per
 the standing rule: `Write`/`Edit` for content, Bash for reads, searches and validation.
+
+## 2026-09-02 (later) — ✅ ch.10 "Nutrition" DRAFTED, VALIDATED AND SPLICED. Peds 202 → 217.
+
+`lean-drafter` **resolved on the first attempt** in a session opened at the project directory, so the
+2026-09-02 install (user scope + project scope) is confirmed working end to end, not just present on
+disk. One agent, one file, 62 tool uses, ~15½ minutes, ~53k agent tokens.
+
+### What shipped
+
+- `content\peds\qb-pages\house-ch10-nutrition.draft-A.js` — `var PEDHD_NUTR_DRAFT_A`, **n:1–n:10**.
+- `app\data\questions.peds.js` — spliced by `tools\bank-harness\splice-pd10.js`, carve counts 10 + 5.
+  **892,668 → 946,851 bytes. `Q_PEDS` 202 → 217, holes 0, duplicate ids none.**
+- Prefix roster after the splice: `pedhd-inf` 31 · `-renal` 26 · `-card` 24 · `-haem` 25 · `-gen` 20 ·
+  `-peri` 15 · `-neo` 21 · `-dev` 21 · `-devp` 19 · **`-nutr` 15**.
+- Answers, live file, n:1..n:15 = **2 2 3 3 1 4 0 1 2 4 4 0 0 3 3** — `'ABCDE'.indexOf()` of the
+  staged keys `C C D D B E A B C E E A A D D`, exactly. All 15 carry five options.
+- Chapters across the whole chapter: `nutrition-vit` 5 · `nutrition` 5 · `nutrition-feed` 3 ·
+  `nutrition-pem` 2.
+
+### How it was validated — from disk, never from the agent's report
+
+`val-pd10.js A` → **ALL CHECKS PASSED**, one expected warning (`q-pd-hd-75.jpg` not cut yet).
+Then, post-splice, against the live file: `node --check` clean · array loaded and index-walked for
+sparse holes · every `module` and `chapter` resolved through `MODULES[].groups[].chapters[]` ·
+every `answer` in range · **backtick parity even on every explanation in the whole peds file** ·
+marker-as-final-line **15/15**.
+
+⚠️ **Still outstanding and NOT claimed: no `file://` boot since 2026-08-30.** An `eval` check is not
+a boot check. Not attempted here because the parallel ophtho chat was live and the harness rule is
+one Chrome at a time.
+
+### Word counts — the ch.8/ch.9 overrun did NOT recur
+
+Per entry: 380 · 291 · 386 · 354 · 323 · 512 · 217 · 218 · 212 (n:1–n:10 after my edit to n:3),
+**total 3,291 for ten, mean 329** — inside the ~250/~520 guide. Compare **ch.8 ~12,900 for 21** and
+**ch.9 ~9,340 for 19**, both reported to the user as overruns. draft-B's five still stand at 2,702,
+mean 540. **The shared-menu rule is what did it**: n:7 carries the one comparative table at 512 w and
+n:8/n:9/n:10 come in at 217/218/212 pointing back at `pedhd-nutr-7`.
+
+### One edit I made to the agent's output, and why
+
+**`pedhd-nutr-3` opened by DECLARING the gap before answering it** — a bolded standalone sentence
+saying the question is answered entirely from outside the course material. That is the shape the
+standing ruling forbids (*a gap is ANSWERED, not declared; the tag sits on the claim, never as a
+dead-end sentence*). Rewritten to lead with the answer — *"The relationship between birthweight and
+adult cardiovascular disease is U-shaped, not linear"* — with `not taken from the course material`
+as an inline tag on that claim and the grep evidence kept in the parenthetical behind it. The
+duplicate sentence further down was removed in the same pass. **Content unchanged; 328 → 291 words.**
+Re-validated after the edit: `ALL CHECKS PASSED`.
+
+### Findings the agent surfaced that are worth keeping
+
+- **Outside knowledge, three tags, each with its grep:** n:3 Barker / fetal-origins birthweight →
+  CV risk (`"Barker"`, `"fetal origin"`, `"birthweight"`, `"birth weight"`, `"low birth"`,
+  `"cardiovascular disease"` across all of `T_PEDS` — hits exist but every one is unrelated:
+  meconium aspiration, cyanotic CHD, cerebral palsy, allergy risk) · n:6 self-esteem as an obesity
+  association (`"self-esteem"`/`"self esteem"` hits only `dp-15`, ADHD) · n:6 SUFE as an obesity
+  association (hits only `gp-11`, GH-therapy side effect). **Asthma and the T2DM link were NOT
+  tagged** — `resp-14` and `endo-1`/`endo-5` print both directly. That is the "grep the concept, not
+  the term" rule working as intended.
+- **One divergence recorded, key NOT moved:** n:5 (Anil) — the stem's z-score band (–2 to –3) is
+  printed as *moderate* malnutrition on the deck's own WHO table (`nut-16`), while marasmus is
+  defined in the same section by the older **Wellcome** %-of-median system and the two are not
+  cross-walked in the material. Noted in `explanation`; key **B** stands, every other criterion in
+  the vignette converging on it.
+- **The letter-vs-name key cross-check was correctly reported as UNAVAILABLE**, not as passed — all
+  15 keys print as bare letters.
+- The agent found **no error in the brief or in the task prompt**. Pages, keys, both straddle points,
+  the shared-menu structure and all five chapter-id candidates verified correct against disk.
+
+### ⚠️ Two injected instructions the agent reported and disregarded
+
+It was told mid-session (a) to switch to Bash heredocs for file work and (b) to call an unrelated
+Notion presentation tool. **It refused both and said so.** (a) is Claude Code's own `While auto mode
+is active:` harness toggle, the same one this file already notes — not an attack, and correctly
+refused for content writes. (b) is MCP server instructions leaking into a subagent that has no such
+tool. **Neither produced any file content.** Recorded here because a drafting agent correctly
+refusing an instruction it was given is exactly what the escalate-don't-guess rule is for.
+
+### Open, carried forward
+
+- **`app\assets\q\q-pd-hd-75.jpg` does not exist.** `pedhd-nutr-1` needs **ONE combined crop of BOTH
+  panels** — colour clinical photograph of a wrist (a) beside a plain AP radiograph of the same wrist
+  (b) — not two crops. `imgAlt` is modality and view only and was read by eye, not trusted to the
+  validator: *"Two images side by side inside the question box: (a) a colour clinical photograph of a
+  child's forearm and wrist; (b) a plain radiograph (antero-posterior view) of a wrist and hand."*
+  **No finding, no laterality. Do not let a crop pass edit it into naming the rachitic changes.**
+- **Next: ch.11 "Gastroenterology"**, opening book **p.81 = sheet 41 right**, its Q1 being the
+  Benjamin rotavirus question (key **D**) that proved ch.10 ends at Q15. **176 remain** against a
+  bank measured at 393.
+- `main` and `HEAD` were **identical at `119a825`** at the start of this session — the drift the
+  previous block warned about had already been fixed by `git branch -f`. **Still check
+  `git rev-parse main HEAD` every time**; it restarts with each commit made on the design branch.

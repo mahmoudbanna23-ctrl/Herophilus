@@ -2854,3 +2854,418 @@ risk. ⚠️ **Do not log this again as an injection.** If it appears, note it i
 *Residual uncertainty, stated: the watch verified its own copy of the message directly. That the
 work chats' identical text has the same origin is an inference from a verbatim match — near
 certain, not directly observed.*
+
+
+---
+
+## 2026-09-02 — SESSION CLOSED. Read this block first when resuming ophtho.
+
+### ✅ ALL SIX OPTION-LEVEL FOLDS VERIFIED ON THE PAGE — no transcription slip in any of them
+
+Every one of the six Final Exam drafts matches its page image exactly. **The differences against the
+shipped corpus are real second printings, not transcription faults.** Corroborated a second way:
+each shipped counterpart cites a **different book page** (pp.19, 21, 30, 60, 87, 109), so the bank
+genuinely prints these questions twice in two places.
+
+| n | book p. | printed | shipped counterpart | the difference |
+|---|---|---|---|---|
+| 20 | 170 | 4 opts, key B | `opqb-t16-683` (p.109) | option C **Chemotherapy** here, **Exenteration** there |
+| 45 | 172 | 4 opts, key D | `opqb-t4-148` (p.21) | option B prints "**a** common canalicular obstruction" |
+| 61 | 174 | **5** opts, key A | `opqb-t5-215` (p.30) | E **Systemic steroids** added |
+| 63 | 174 | **5** opts, key A | `opqb-t3-138` (p.19) | E **Optic nerve glioma** added |
+| 66 | 174 | **5** opts, key C | `opqb-t9-393` (p.60) | E **Corneal opacity** added; stem adds *unilateral* + *surgery* |
+| 68 | 175 | **5** opts, key **E** | `opqb-t13-559` (p.87) | **D Senile ptosis** inserted, pushing the answer to E |
+
+**n:68 is settled and it is `E`.** The reader stacked rows 57/59/62/65/66/67/68/69 from the same
+column at 4× and separated the glyphs by shape — a true `D` on that page shows one closed bowl and an
+unbroken right curve; row 68 shows a straight stem with three horizontal arms and an open right side,
+identical to row 65 which is independently keyed E. **Row shift excluded two ways**: the key list is
+continuous 37→69, and two content anchors either side land — Q66 = C matches *Amblyopia* read off
+p.174, Q67 = A matches *Nerve fiber layer* on the same page.
+
+⚠️ **So the fuller-printing adoption for `t13-559` is confirmed, and it moves `answer` from index 3 to
+index 4.** The decision flagged for you last turn is now the only thing standing between this and the
+splice: **adopting the fuller printing silently re-scores any progress already stored against
+`t13-559`.** Nothing has been changed.
+
+### ⚠️ MY OWN BRIEF NAMED THE WRONG COUNTERPART FOR n:20 — the reader caught it
+
+I wrote `opqb-t20-794` into the image-check brief. That is an **unrelated** question (mydriatic drug /
+shallow anterior chamber; stem-dice 0.14, **menu-dice 0.00**). The correct counterpart, and the one
+the adjudication actually used, is **`opqb-t16-683`** — I transposed it from `-15`'s pair, which *is*
+`t20-794`. The reader searched the corpus, found the real pair itself, and verified against that
+instead of reporting a false mismatch.
+
+**Fourth instrument failure of the day, and the second where the fault was mine rather than the
+data's.** The standing lesson holds and now has a fourth instance: **a brief is a prior, not a
+verdict.** The fold verdict for `-20` is unchanged.
+
+### ⚠️⚠️ EE6 IS NOT DRAFTED — the agent died on the session usage limit
+
+`Draft EE6 Photos, 35 questions` terminated on **HTTP 429, session limit, resets 5pm Africa/Cairo**.
+It had produced no staged output at the point it stopped. **EE6 must be re-launched from scratch**
+against `gg-ee6.draft.js` ids `opqb-t26-1…35`; the 35 figure crops were already shipped in commit
+`310c9aa`, so that part need not repeat. Two sibling EE6 jobs (crop descriptions, staging
+verification) were still running when this session ended — **check their output files before
+re-launching, they may have landed.**
+
+### State at close — NOTHING HAS BEEN SPLICED
+
+| section | drafted | swept | verdict | spliced |
+|---|---|---|---|---|
+| Tutorial, `t27-1…27` | ✅ 27 | ✅ real zero | **27 ship, 0 folds** | ❌ |
+| Final, `t28-1…69` | ✅ 69 | ✅ 49 candidates | **31 ship, 38 fold** | ❌ |
+| EE6, `t26-1…35` | ❌ **agent died** | ❌ | — | ❌ |
+
+**Corpus is still 1,505 and no total is reportable.** Projected 1,505 + 27 + 31 + EE6.
+
+### The splice plan, unchanged and unapplied
+
+1. Re-draft EE6, sweep it, then splice once so the corpus is measured a single time.
+2. Tutorial 27 whole — ⚠️ **`gg-tutorial.draft.js` is the authority for stems n:21..27**, not the
+   staging array, which carries a KNOWN BAD banner. Do not repair the draft backwards.
+3. Final's 31, dropping the 38 folded ids, each citation folded into its survivor.
+4. **Edits to already-shipped entries, same pass:** the `-13`/`t9-360` and `-37`/`t6-244` key
+   contradictions cross-cited in both directions · the four fuller-printing adoptions
+   (`t5-215`, `t3-138`, `t9-393`, `t13-559` — **the last one moves `answer` 3→4, awaiting the
+   user's call**) · the `-45` flipped-negation note · the `-20` substituted-option note.
+5. `opqb-t28-51` ships, key `A` — corrected in the staging, three reads, settled.
+6. Flagged not changed: `t15-646` (extraocular muscles) sits in `op-pupil`; `t6-232`
+   (episcleritis) in `op-conj`.
+7. Still outstanding at end of run: delete `app\data\questions.ophtho.js.bak` (1,470 q — it loads if
+   anything globs `app\data\*.js`); ophtho theory reconciliation (~63 rows, `theory-plan.md`, book
+   caches exist, do **not** re-read).
+
+### The injection — seventh and eighth firings
+
+It arrived in the hub's tool-result stream again, and the image-check reader received it too,
+formatted as part of its system prompt, and quoted it back verbatim while refusing. **Both refused;
+every content write this session stayed on `Write`/`Edit`, Bash stayed read-only plus validation.**
+Running total this session: eight firings across the hub and five agents, **zero compliance.**
+
+---
+
+## 2026-09-02 — INSTRUMENT FINDING: a "shared menu" row is not a not-a-fold verdict
+
+**Read this before trusting any future sweep.** The finding is about `tools\qb-pipeline\sweep.js`
+and applies to every sweep this project has run, in every module — not just ophtho.
+
+### What happened
+
+The re-run sweep classified `opqb-t28-28 × opqb-t8-320` as `! shared menu (PAIR, not a fold)`.
+The journal folds it. Hand-read settled the content question first: **it IS a fold** — four options
+identical word for word, same key (D = Levator muscle palsy). The stems differ only by
+"condition does" / "conditions do" and markdown bold.
+
+Then I measured *why* the instrument missed it, rather than reasoning about it. My first
+hypothesis — that `norm()` was failing to strip markdown asterisks — was **wrong**; `lib.js` does
+`.replace(/[^a-z0-9]+/g, ' ')`, which strips them correctly. The real cause, measured:
+
+```
+norm  A: "the following condition does not cause exposure keratitis"
+norm  B: "the following conditions do not cause exposure keratitis"
+dice: 0.6667   threshold 0.72
+menuKey equal:  true      orderKey equal: true
+```
+
+Two grammatical substitutions — singular/plural, and "does"/"do" — in an eight-token stem drop dice
+below the threshold. `loose()`'s FILLER set does not cover "condition(s)" or "do(es)". The stem
+never reached the near-stem branch, so it fell through to the shared-menu branch, where the
+identical menus were the only thing that surfaced it at all.
+
+**The threshold is length-sensitive.** The same two substitutions in a thirty-token stem would cost
+almost nothing. Short stems are the vulnerable class.
+
+### The gap-check, and why its zero is a zero
+
+If a short stem can sink below 0.72, then a fold with a short stem **and** a differing option menu
+would have been caught by nothing. So I re-scored all 31 Final ship-list ids against the whole
+1,505-entry corpus at a lowered 0.55 floor and printed everything the 0.72 run would have
+suppressed — 19 candidates, of which **15** were in the dangerous class (≤12 stem tokens, plus
+either a menu match or an equal option count). All 15 were hand-read side by side, full menus, keys
+marked.
+
+**Zero are folds.** Every one is a collision on the `All of the following … except` template alone;
+the subjects diverge completely and no option menu intersects. The clearest illustration:
+`opqb-t28-5` (aging) scored 0.667 against `opmcq-c4-24` (epiphora) **and** 0.667 against
+`opmcq-c6-16` (conjunctival papillae) — while `opmcq-c4-24` was independently hit by three different
+incoming ids. **On short EXCEPT-template stems dice is measuring the boilerplate, not the content.**
+All real discrimination there comes from `menuKey`/`orderKey`.
+
+The 38-fold verdict for the Final therefore stands complete, and the splice is unblocked.
+
+### The standing rules this produces
+
+1. **A `shared menu (PAIR, not a fold)` row must be HAND-READ. It is a ranking, never a verdict.**
+   This does not weaken the older rule — *a shared option menu PAIRS questions, it never folds
+   them; name the discriminating token* — it says where to look for the token. On `-28` there is
+   no discriminating token, which is what makes it a fold.
+2. **Below ~12 stem tokens, a dice score carries little signal on EXCEPT-template stems.** Do not
+   read a sub-threshold score as evidence of difference on a short stem; check the menu.
+3. **Sanity-pair every probe before believing it.** `probe28.js` and `lowsweep.js` both exit non-zero
+   unless dice separates an identical pair from an unrelated one. This session had already produced
+   one broken instrument (the doubled-newline census, `BS+BS+'n'` matching the ordinary escape and
+   reporting 418/264/409/376 false positives), so the pair is not ceremony.
+
+Probes kept in the scratchpad, and the scratchpad does not survive: `probe28.js` (measures one pair
+through the sweep's own functions), `lowsweep.js` (below-threshold gap-check), `pairs15.js` (compact
+side-by-side, full menus, key marked). Each is ~40 lines and cheaper to rewrite from this
+description than to hunt for.
+
+---
+
+## 2026-09-02 — SPLICE PREPARED. Where the run stands.
+
+### Ready and validated
+
+**`splice-part1` = Tutorial 27 + Final 31 survivors = 58 entries**, assembled in the scratchpad and
+validated: 58 unique ids, **no collision with the 1,505-entry corpus**, **no folded id leaked**,
+0 bad doubled-newline escapes, every entry carries the marker, no marker in any `source`, all
+`bank: 'gradegain'`, answers in range, option counts 4 and 5, 22 chapters touched, all from the live
+vocabulary. The six doubled backslashes it does contain were inspected individually and are
+legitimate Windows paths in citations (`content\ophtho\book\ch20-drugs.txt`,
+`content\ophtho\qb-pages\gg-tutorial.array.js`) — one literal backslash each, correct.
+
+Entries were assembled by **slicing the drafts' original source text**, not by re-serialising the
+parsed objects — re-serialising would reformat every string and destroy the drafts' deliberate
+layout. The slicer tracks brace depth while ignoring braces inside strings and comments, and it
+sanity-checks itself against `{ s: '} not an end {' }` before running.
+
+### The 38 fold citations are built
+
+`foldmap.json` in the scratchpad holds all 38 merges, generated and checked: every folded Final id
+resolved, every survivor found in the corpus, **none already carrying a Final citation**. Merged
+shape, appended to the survivor's existing `source`:
+
+`; also printed p.<N> (Q<n>, Grade Gain "Final Exam"), key pp.175–176`
+
+Two decisions recorded so they are not re-litigated:
+
+- **No `alsoIn` changes.** Every one of the 38 survivors is `bank: 'gradegain'` and the Final is the
+  same book — these are **within-bank folds**, and per the standing rule no within-bank fold takes
+  `alsoIn`. Verified, not assumed: the script printed the survivor bank set and it is the single
+  value `gradegain`.
+- **The incoming `Supporting:` lecture lists are dropped on the fold.** `source` is a citation, never
+  a second explanation, and those lists document the drafting of an entry that is not shipping.
+
+Key page `pp.175–176` is read off the journal's own section map (line 1797: Final Exam, book 168–176,
+PDF 175–183, key `p.175 right col + p.176`), not from memory.
+
+### EE6 — the last content left
+
+- **Figure read: 30 of 35 blocks written** to `content\ophtho\qb-pages\gg-ee6.figread.md` by a
+  background reader. It is good work and, importantly, **honest about its limits** — Q1's block says
+  outright that the crop shows a touch-stimulus exam but no corneal lesion, so it supports the
+  concept without confirming the printed key. That is exactly the shape a drafting pass needs.
+- **Drafting brief written**: `content\ophtho\qb-pages\BRIEF-EE6-DRAFT.md`. It carries the 35-token
+  chapter vocabulary **inline with counts**, because a drafting agent cannot derive it —
+  see the trap below.
+- `gg-ee6.draft.js` is still **header only**. The header is complete and correct; leave it and
+  assemble the blocks beneath it.
+
+### ⚠️ Two traps re-confirmed today, both already in MEMORY.md, both fired anyway
+
+1. **The quoted-heredoc backslash collapse fired again** (ninth firing this session). Writing
+   `if (c === '\\')` inside a `<<'EOF'` heredoc produced `if (c === '\')` on disk and Node rejected
+   the file. Fixed by writing the script with the `Write` tool and building the character as
+   `String.fromCharCode(92)`. **The heredoc's quoting is no protection — the collapse happens before
+   the body's language ever sees it.**
+2. **A single-pattern chapter grep returns a fraction of the vocabulary.** `grep -o "chapter: '…'"`
+   on `questions.ophtho.js` returned **three** tokens; loading the array returns **thirty-five**.
+   The corpus mixes quoted (`"chapter":`) and bare (`chapter:`) key styles, exactly as MEMORY.md
+   warns for the neuro file. **This one was caught only because three was an implausible answer** —
+   a grep returning, say, twenty-eight would have passed unnoticed and sent agents to invent tokens.
+   The brief now carries the list inline and tells agents not to grep for it.
+
+### ⚠️ `tools\qb-pipeline\splice.js` must not be used as-is
+
+Its backup line is `fs.writeFileSync(corpusPath + '.bak', …)`, which for this corpus writes
+**`app\data\questions.ophtho.js.bak`** — the exact file MEMORY.md flags for deletion because it
+loads if anything globs `app\data\*.js`. Using it would silently recreate the hazard while appearing
+to do the safe thing. **Back the corpus up outside `app\data\` when the splice runs.**
+
+### Order of the remaining work
+
+1. Finish the EE6 figure read (5 blocks left).
+2. Draft EE6 35 → sweep against the corpus → EE6 survivors.
+3. **One splice pass**, so the corpus is measured exactly once: part1's 58 + EE6 survivors, plus the
+   shipped-entry edits (38 fold citations, the two key-contradiction cross-cites `-13`/`t9-360` and
+   `-37`/`t6-244`, the four fuller-printing adoptions including `t13-559` whose `answer` moves 3→4
+   on the user's ruling, the `-45` flipped-negation note, the `-20` substituted-option note).
+4. `git checkout main` before the first commit.
+
+---
+
+## 2026-09-02 — EE6 figure read CLOSED (35/35), three crops flagged, drafting launched
+
+`content\ophtho\qb-pages\gg-ee6.figread.md` is **complete: all 35 blocks, in order.** The reader
+graded each crop on whether it actually supports the printed key: **YES 12 · PARTLY 21 · NO 1 ·
+could not adjudicate 2.**
+
+That distribution is the useful part. **Only twelve of thirty-five photographs visually confirm
+their own key.** The twenty-one PARTLY entries are the ordinary limit of a printed crop — the photo
+establishes the disease category the key implies but does not resolve the distinguishing detail (no
+visible embolus in a retinal artery occlusion, no resolvable neovascular fronds, a mechanism of
+trauma that no photograph could show). Those are interpretive limits, **not contradictions**, and
+each carries its own "Uncertain" line. This is why the drafting brief tells agents to read the
+figure read critically rather than mine it for findings: **an entry that asserts a finding the crop
+does not show is a fabricated clinical claim**, and this section is the only picture section in the
+module, so it is the only place that failure mode can occur.
+
+### The three flagged crops
+
+- **⚠️ Q32 — the one that matters.** Printed key **A = "Rt Optic Neuritis"**; three options only.
+  The crop is an unlabelled swinging-flashlight / RAPD schematic. Read literally, the pupil that
+  **dilates sits image-left in the lower row**, which under a patient's-own-laterality convention
+  points to **option B (Lt)**, not the printed key. Whether that is a real contradiction turns
+  entirely on whether the diagram is drawn **mirrored** (facing/viewer convention, image-left = the
+  patient's right eye) — and the first pass did not resolve it. **The key ships as A regardless**;
+  a defective key is noted, never disputed, and the `answer` never moves. What is being bought by
+  the recheck is an accurate *description*, so the explanation can state the pupil positions
+  honestly and record the contradiction if one survives.
+- **Q34** — key C = "Intraorbital foreign body". No foreign body, haemorrhage or abscess identifiable
+  at the resolution viewed. Possibly a resolution limit rather than a mismatch.
+- **Q15** — key B = "Incision and curettage". The crop frames a mottled iris and **no visible lid
+  lesion**; suspected crop/region mismatch.
+
+A focused reader is re-examining **only those three** at magnification, writing to
+`content\ophtho\qb-pages\gg-ee6.figread-recheck.md`. For Q32 it is being asked for pupil positions
+in image-relative terms only (never "right eye"/"left eye"), every orientation cue present or
+absent, where the light is drawn, and whether the diagram is internally consistent with key A under
+a mirrored convention — and it is told explicitly **not** to recommend a key change.
+
+### Drafting is running
+
+Three agents, one block each — **A: Q1–12 · B: Q13–24 · C: Q25–35** — writing
+`gg-ee6.block-A.js` / `-B.js` / `-C.js` as bare runs, `Edit`-appending entry by entry so a
+usage-limit death leaves a usable file. Brief: `content\ophtho\qb-pages\BRIEF-EE6-DRAFT.md`.
+Block C has been told to **draft around Q32 and Q34 and write them last**, and not to assert a
+laterality or a foreign body until the recheck lands.
+
+⚠️ **`lean-drafter` is still not in this session's agent registry** — the definition is present and
+well-formed in all three load paths, but only built-in types are exposed here. The three agents run
+as `general-purpose` on **Sonnet 5**, which keeps the ~60% cache-read saving but **loses the
+~37k-per-step tool-surface saving** the workspace cost discipline assumes. Unresolved; a fresh
+session may pick the registry up.
+
+### The 38 fold citations are applied-ready, and the two-layout trap bit again
+
+`applyfolds.js` (scratchpad) edits the **raw text** of `questions.ophtho.js` rather than
+re-serialising the array — re-serialising would reformat all 1,505 entries and destroy their
+layout. It locates each survivor's own `source` literal, verifies it matches the foldmap byte for
+byte before touching it, and refuses to write while any of the 38 is unresolved. **Dry run:
+38 of 38 located, 0 problems, +2,539 bytes.** Held until the single splice pass.
+
+⚠️ **The first run found only 36.** `opqb-t3-121` and `opqb-t3-138` were missed because the corpus
+uses **two entry layouts** — `id:'x'` (1,065 entries) and `id: 'x'` with a space (the other 440,
+and their `source: '…'` carries the space too). This is the same two-style trap MEMORY.md records
+for `questions.neuro.js`, in a **new place**: not counting, but **anchoring**. Any script that
+locates entries by a literal `id:'` string silently addresses two-thirds of the file. It was caught
+only because the script refuses to write while anything is unresolved — a script that had skipped
+the misses would have reported success and folded 36 citations.
+
+**`opqb-t2-77` now carries a third printing.** Its `source` already recorded a within-bank reprint
+at p.49 (Q327); the Final's p.172 (Q42) is appended after it. Consistent with the reprint rule, not
+a conflict — recorded here so a later pass does not read it as a doubled fold.
+
+## 2026-09-02 — the eight shipped-entry edits are SPECIFIED, in the repo, at `content\ophtho\qb-pages\SPEC-shipped-edits.md`
+
+They are more consequential than "notes" suggested, and the spec is now on disk so the analysis
+survives the session. **`applyfolds.js` does not do any of this work** — it only appends to `source`.
+
+- **Four are structural.** `opqb-t5-215` / `-t3-138` / `-t9-393` gain a fifth option (key unchanged);
+  `opqb-t13-559` gains a fourth distractor at index 3 and its **`answer` moves 3 → 4** — the single
+  `answer` change in the pass, on the user's explicit ruling. The keyed *option* is the same lesion
+  in both printings; only its index moves.
+- **`opqb-t9-393` also takes a stem change**, and it is not cosmetic: the Final prints
+  "**unilateral** aphakia after congenital cataract **surgery**". *Unilateral* is what makes the
+  amblyopia dense, and *surgery* places the aphakia after lensectomy rather than describing a
+  congenitally absent lens. The shipped stem said neither.
+- **"Fuller printing" means the OPTION LIST, not the essay.** On `-t3-138` the *shipped* explanation
+  is the longer of the two (4,933 vs 3,566 chars). Do not let the phrase mislead a later pass.
+- **Two are genuine key contradictions where BOTH entries ship** — `opqb-t9-360` (D) vs `opqb-t28-13`
+  (C), and `opqb-t6-244` (C) vs `opqb-t28-37` (B). Not folds; both are on the ship list; the t28 side
+  already cross-cites in its `source`, so what the spec adds is the **reciprocal note on the shipped
+  side**. Neither `answer` moves.
+- **⚠️ The clear-zone criterion behind `-t6-244` / `-t28-37` is a GAP IN THE MATERIAL, measured, not
+  assumed: "clear zone" and "lucid interval" return ZERO hits across all 29 cached lecture decks and
+  13 cached book chapters.** So the note is filled from outside knowledge and tagged
+  `not taken from the course material`, per the gap rule. What the caches *do* give is the fact that
+  carries it — `L6) Conjunctiva` sl.28 shows pannus vessels crossing the limbus **from above**, i.e.
+  no clear zone by construction. On that reading the shipped **C** is right and the Final's **B** is
+  defective; recorded, never corrected.
+- **`opqb-t4-148` is the one that would have been folded silently and shouldn't have been.** The
+  Final flips option B's negation: shipped prints "there is probably **no** common canalicular
+  obstruction", the Final "**a**". Regurgitation from the upper canaliculus after irrigating the
+  lower proves the common canaliculus is patent — so the **shipped** wording is a *true* statement
+  sitting beside the true key, i.e. two true options against a stem asking for one. The Final's
+  wording is the coherent printing. Both transcribe as printed; the key is D either way.
+- `opqb-t16-683`: the Final substitutes **Chemotherapy** for **Exenteration** at option C. Key B
+  (Evisceration) untouched. Note only.
+
+### Debt found in passing — 144 shipped `opqb-*` entries carry NO provenance marker
+
+Measured by loading the array: 945 `opqb-*` shipped · 791 carry `Written for this bank …` · 10 carry
+`*(Printed explanation box — transcribed from …)*` · **144 carry neither**. **136 of the 144 cite a
+lecture deck or `ophthalmology.pdf` inside the explanation**, which a transcribed bank box would not
+do — so they are written explanations missing the mandatory marker, not printed boxes.
+
+Provenance defect, not clinical: no answer or option is affected. The fix is mechanical but **must
+not be blind** — the 8 that cite no cache, and the 134-char shortest, want an eyeball. Only
+`opqb-t16-683` is fixed in this pass (it is being edited anyway); the other **143 are carried as a
+debt**. Reproduction command is in the spec file.
+
+⚠️ **`opqb-t13-559` is touched by BOTH `applyfolds.js` and the spec.** Apply the fold citations
+first, then the spec edits, then verify both landed on that id.
+
+## 2026-09-02 — SPLICED. Corpus 1,505 → 1,563. On `main`.
+
+Three writes, in this order, each verified before the next. `git checkout main` done first (HEAD
+was already the same sha as `main`, so the switch changed no files).
+
+| step | what | result |
+|---|---|---|
+| 1 | `applyfolds.js --go` — 38 fold citations appended to `source` | 38/38 located, **+2,539 bytes**, corpus re-parses at 1,505, 38 entries now cite the Final |
+| 2 | `applyspec.js --go` — the 8 shipped-entry edits | 8/8, **+5,085 bytes**, 1,505 entries · 0 sparse holes · 1,505 unique ids |
+| 3 | `splice-safe.js` — Tutorial 27 + Final 31 = 58 entries | **1,505 → 1,563**, 0 sparse holes, 1,563 unique ids |
+
+Post-checks on the four structural edits, read back off the parsed array, not off the diff:
+`opqb-t5-215` 5 options / key 0 · `opqb-t3-138` 5 / 0 · `opqb-t9-393` 5 / 2 · **`opqb-t13-559` 5
+options, answer 4, keyed option still "Senile macular degeneration."** — the option moved, the
+lesion did not. `opqb-t16-683` now carries the marker.
+
+### ⚠️ New tool, and why: `tools\qb-pipeline\splice-safe.js`
+
+**`tools\qb-pipeline\splice.js` backs up to `corpusPath + '.bak'`, which for this corpus writes
+`app\data\questions.ophtho.js.bak` — the exact file MEMORY.md flags for deletion because the app
+LOADS it if anything globs `app\data\*.js`.** A backup that ships is not a backup.
+
+`splice.js` was **not modified** — two other module chats are running against it tonight. The new
+file is additive and nothing references it, so it cannot break their runs. It takes an explicit
+backup directory, **refuses outright if that directory is inside `app\data`** (tested: it refuses),
+timestamps the backup, and adds three checks `splice.js` lacks — ids not already shipped, ids not
+duplicated within the draft, and a **sparse-hole scan by index** rather than `Array.filter`.
+
+**Debt for whoever owns `tools\`: fix `splice.js`'s backup path, or retire it for `splice-safe.js`.**
+Do not do it while peds and neuro are mid-run.
+
+### The two-layout trap fired again, and the script caught it
+
+`opqb-t3-138` uses the `id: 'x'` layout with one option per line and LF endings, so an anchor
+written as `'Lacrimal gland tumor.']` matched **zero** times while the other seven matched once.
+The run refused to write. This is the same fault that cost two of the 38 citations earlier tonight.
+**Both scripts now require every find to match EXACTLY ONCE inside the entry's own byte range, and
+refuse the whole run otherwise** — which is the only reason a silent 7-of-8 did not ship.
+
+### EE6 drafting — 33 of 35 written
+
+Blocks A (Q1–12), B (Q13–24) and C (Q25–31, 33, 35) are on disk and parse: 12 + 12 + 9. **Q32 and
+Q34 are deliberately unwritten**, waiting on the magnification re-read of their crops; agent C is
+holding for accurate crop descriptions and will ship key **A** for Q32 and **C** for Q34 regardless
+of what the re-read says, per the never-move-the-key rule. Not yet done: the EE6 duplicate sweep
+against the corpus, then the second splice.
+
+**All three drafting agents independently refused the same bypass-mode reminder** telling them to
+route file writes through Bash heredocs, and each cited the brief's Write/Edit rule. Agent B reports
+it caught itself writing a double-escaped apostrophe into a `source` field and fixed it before it
+could fail. Noted in one line, as ruled — no entry opened on it.
