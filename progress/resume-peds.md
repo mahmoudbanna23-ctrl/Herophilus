@@ -2486,3 +2486,80 @@ proof: quote the banner, stop, do not continue.
 the boundary. The running staging agent was deliberately **not** interrupted with this: perturbing a
 mid-transcription agent has a real cost and it cannot reach p.149 from its range. The rule is
 recorded where the *next* agent picks it up instead.
+
+
+---
+
+## ✅ ch.11 GASTROENTEROLOGY SPLICED 2026-09-02 — peds 217 → 243
+
+26 questions, book pp.81–89, drafted by three `lean-drafter` agents (A n:1–10, B n:11–18,
+C n:19–26) and spliced. **`Q_PEDS` 243, 0 holes, 0 duplicate ids, 0 unknown chapters, 0 answers out
+of range, every question 5 options.** Words 3,485 + 2,193 + 2,914 = **8,592** (mean 330, against
+ch.10's 329 — the shared-menu anchoring rule is what holds it there).
+
+Chapters: `gi-abdopain` 10 · `gastroenterology` 10 · `gi-diarrhoea` 6. Zero figures in the chapter,
+and that is the staging pass's measured zero, not an assumption.
+
+**Split boundaries were chosen to keep all three shared option menus inside one half** — n:8/9/10
+(anchor `pedhd-gastro-8`), n:11/12 (anchor `-11`), n:13/14/15/16 (anchor `-13`). The only valid
+boundaries were after n:7, 10, 12, 16 or 17+. Nothing was folded; a shared menu pairs, never folds.
+
+### ⚠️ Three faults found AFTER the agents reported success — none of which their own checks could see
+
+1. **`val-pd.js` failed a draft for a vocabulary it never needed.** The straddle check grepped the
+   `source` line for the word "straddle". `pedhd-gastro-23` wrote a strictly *better* line —
+   *"with only the closing 'Answer: E.' printed alone at the top of p.89"* — naming exactly what
+   crossed and where it landed, and was failed for not saying "straddle". **The validator was wrong,
+   the draft was right.** Now checks the source names the **destination page**, parsed out of the
+   staging marker's `p.<a> -> p.<b>` pair. Word-agnostic. This is the second time a ch.11 check has
+   been wrong about straddles in the same way the first was (the note-grep that returned 14 of 6) —
+   **derive straddles from the field, and check the prose for FACTS, never for VOCABULARY.**
+2. ⚠️ **Drafting-process language leaked into five student-facing explanations** — *"per the task
+   prompt"*, *"as the brief asks"*, *"one of this range's awkward assignments"*. The substance was
+   right and worth keeping (they explain where a question's material actually lives); only the
+   framing was addressed to me rather than to the reader. Rewritten. **No instrument was looking for
+   this** — every one of the five passed `val-pd.js` cleanly. Grep pattern now worth keeping:
+   `/task prompt|this range|the brief|staging record|per the prompt|as instructed|half [ABC]/i`.
+3. ⚠️ **`n:<num>` staging notation appeared in eight explanations.** It means nothing to a reader;
+   ch.10's convention is to name the sibling by its **id in backticks**. Converted — backticks come
+   in pairs so parity survived, re-checked.
+
+⚠️ **And the fix for (2)/(3) had its own fault, worth more than the fix:** the first de-leak pass
+matched apostrophes as `[’']` and silently missed every one of them, because the drafts are
+single-quoted JS and a literal apostrophe is stored **escaped** on disk — the bytes are `range\'s`.
+**Any regex touching an apostrophe in these files must allow the backslash.** The second pass then
+replaced `n:<num>` across the **whole file** rather than the explanation strings, rewriting each
+draft's measurement header and creating duplicates like ``in `pedhd-gastro-11` (`pedhd-gastro-11`)``.
+Headers are never spliced (`carve()` starts at the first `\n{`), so no shipped content was harmed and
+`val-pd.js`'s byte-compare against staging confirmed it — but **a scripted rewrite over a whole data
+file will hit comments, and the entry byte-compare is the only thing that proves it did not hit
+content.** Headers restored.
+
+### Tools
+
+- ✅ **`tools\bank-harness\splice-pd.js`** replaces `splice-pd10.js`. Halves are **discovered by
+  globbing** `draft-*.js`, so a 3-way split needed no edit. Four checks the old one could not make:
+  every staged question drafted **exactly once**; the halves **summing to the staging length** (the
+  signature of a half truncated by an agent dying on a usage limit); an **already-live guard**
+  against a double splice; and a **parse of the spliced result in memory before writing**, because a
+  data-file syntax slip boots fine and reports a plausible smaller number. **Dry run by default.**
+- `val-pd.js` now takes any single capital as the half letter, not just `A|B`.
+
+### ✅ Carried debt cleared: the ch.10 Q1 crop
+
+`app\assets\q\q-pd-hd-75.jpg` cut — **one combined crop of both panels** (colour photo (a) + AP wrist
+radiograph (b)), 1200×517, 183 KB. Folio confirmed as 75 by reading it; sheet 38 RIGHT, 500 dpi,
+bounds measured by eye so neither cutter trap applied. Two attempts — the first had no margin.
+**Looked at by the cutting agent, and sent to the user; not eyeballed in the hub chat** (an image
+read there is re-sent with every later request).
+
+### Not done, and why
+
+**No `file://` boot check.** Chat A was live and the harness rule is one Chrome at a time. The
+integrity check above was run in node against the loaded arrays instead — it proves the data, not
+the render.
+
+### Resume
+
+**Next: ch.12.** Peds now **243 of a measured 393**; 150 remain. Bank ends at book **p.148 /
+PDF sheet 75 LEFT** — surgery beyond is out of scope entirely (§ above).

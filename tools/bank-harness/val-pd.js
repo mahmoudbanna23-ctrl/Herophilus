@@ -24,8 +24,9 @@ const GIVEAWAY = /rickets|ricket|widen|fray|cupping|splay|rosary|bowing|metaphys
 
 const chNum = process.argv[2], which = process.argv[3];
 const cfg = CH[chNum];
-if (!cfg || !/^[AB]$/.test(which || '')) {
-  console.error('usage: node val-pd.js <' + Object.keys(CH).join('|') + '> <A|B>');
+// ch.11 is split three ways, so the half letter is any single capital, not just A or B.
+if (!cfg || !/^[A-Z]$/.test(which || '')) {
+  console.error('usage: node val-pd.js <' + Object.keys(CH).join('|') + '> <half letter>');
   process.exit(2);
 }
 
@@ -122,8 +123,16 @@ D.forEach(q => {
   // Anchor on the closer so Q1 cannot match Q15.
   if (!new RegExp('\\(Part I, ch\\.' + chNum + ' Q' + n + '[);,]').test(q.source || ''))
     fail.push(q.id + ': source lacks the (Part I, ch.' + chNum + ' Q' + n + ') tail');
-  if (STRADDLE.has(n) && !/straddle/i.test(q.source || ''))
-    fail.push(q.id + ': staging says it straddles the page break but source does not say so');
+  // A straddling entry's source must say where the crossing LANDED, which is the fact a reader
+  // needs. Do not grep for the word "straddle": ch.11 n:23 wrote a strictly better line --
+  // "with only the closing Answer: E. printed alone at the top of p.89" -- and this check failed
+  // it for a vocabulary it never needed. The destination page comes from the staging marker.
+  if (STRADDLE.has(n)) {
+    const m = /STRADDLES THE PAGE BREAK p\.([0-9]+) -> p\.([0-9]+)/.exec(s.note || '');
+    if (!m) fail.push('staging n:' + n + ': straddle marker does not carry a "p.<a> -> p.<b>" pair');
+    else if ((q.source || '').indexOf('p.' + m[2]) < 0)
+      fail.push(q.id + ': straddles onto p.' + m[2] + ' but source never names that page');
+  }
 
   if (!q.objective || !q.objective.trim()) fail.push(q.id + ': objective empty');
 
