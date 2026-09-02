@@ -3363,3 +3363,124 @@ without one of them "correcting" it.
 `OPT_LETTERS='ABCDEFGHIJKLMNOPQRSTUVWXYZ'` is live at `app\index.html:4549` and used at 4581, 4596
 and 6320, so the old five-option "the answer is undefined" bug cannot bite. Ophtho now spreads
 **3 options ×3 · 4 ×1,350 · 5 ×210**, nothing above five.
+
+---
+
+## EE6 CLOSED — Q32 and Q34 written and spliced, 1,596 → 1,598 (2026-09-02)
+
+**Grade Gain "End Exam 6 (Photos)" is complete: 35 printed, 35 shipped, 35 keys verified.**
+`opqb-t26-1` … `-35`, no gaps, checked by number against the corpus after the splice.
+
+The two held-back entries are `content\ophtho\qb-pages\gg-ee6.block-D.js` — Q32 (`op-pupil`,
+three options only) and Q34 (`op-trauma`). Written in the main chat from the verbatim staging in
+`gg-ee6.array.js` plus the figure recheck, not by a drafting agent.
+
+### What the figure recheck actually settled, and what it did not
+
+`gg-ee6.figread-recheck.md` (agent `ac5171c2ec26d7712`, pixel measurement rather than eyeballing):
+
+- **Q32 — the first pass's asymmetry claim is WITHDRAWN.** Both upper-row pupils are equal and
+  small (84 vs 81 px); both lower-row pupils are equal and large (410 vs 410 px, identical). There
+  is no within-row left/right asymmetry. That is a *cleaner* swinging-flashlight depiction than the
+  first pass described, and it matches `L22) Pupil and Visual pathway` sl.6 frame for frame.
+- **Q32 — laterality is genuinely undecidable from the drawing.** Zero orientation cues after an
+  exhaustive scan: no letters, no R/L, no arrows, no face or nose, no asymmetric shading. The two
+  torches and the decorative light-ray hatching were confirmed non-text at 12–16×. Whether the
+  image-left eye is the patient's right depends on a convention the book never prints. **The key
+  stays A as printed**; the entry says so in as many words and puts the undecidability in the
+  explanation rather than pretending the picture resolves it. The teaching point being tested —
+  this pattern is a RAPD, therefore optic neuritis — does not depend on the convention, and A and
+  B differ only in it.
+- **Q34 — no discrete foreign body is resolvable.** A brightness-threshold sweep of the whole
+  image plus high-zoom inspection of both orbits found no hyperdense fleck, no haematoma and no
+  streak artifact separate from normal bone. **Key stays C.** The entry therefore rests its answer
+  on the clinical stem and on the investigation the deck ties to it (`L25) Trauma I` sl.52,
+  sl.53–54: suspected FB → CT ✓, MRI ✗), and *says* that it does, rather than describing a fleck
+  nobody can see.
+- **Q15 — the first pass is OVERTURNED, and this one is already shipped.** Full magnification
+  shows a discrete rounded reddish-brown convex swelling of the lower lid (confirmed on a redness
+  channel scan) consistent with a chalazion/hordeolum, matching the keyed incision and curettage.
+  The "mottled iris" the first pass flagged is JPEG grain — it crosses pupil, iris and sclera
+  borders indiscriminately. `opqb-t26-15` needs no edit; its key and its explanation were already
+  right, and the recheck strengthens them.
+
+### Citations corrected before the write, not after
+
+Two slide numbers written from working memory were wrong and were caught by reading the caches:
+
+- `L10) orbit.txt` retrobulbar-haemorrhage-as-proptosis is **sl.6**, not sl.5.
+- `L21) Optic Nerve` sl.8 is the **papilloedema-vs-papillitis** table, not an
+  "optic-neuritis-vs-papilloedema" one. The entry now cites **sl.3** (RAPD red-starred among the
+  manifestations of optic nerve dysfunction — one of only two starred signs) *and* sl.8, and tags
+  the papillitis-equals-optic-neuritis equivalence as **not taken from the course material**,
+  because the deck uses the two names in two places and never links them.
+
+Retrobulbar haemorrhage / orbital compartment syndrome is likewise tagged in Q34: the deck does not
+name it as an entity, so the reasoning that separates options A and D from each other is outside
+knowledge. Options A ("Retrobulbar Hge") and D ("Rt orbital hematoma") are the same thing written
+twice — which is itself part of why C is the intended key.
+
+### Sweep — a measured zero
+
+2 incoming ranked against 1,596 shipped by shared-token overlap over stem + options, top six read
+by hand for each. **0 folds.**
+
+- **Q32's four 0.60 ties are the token "optic neuritis" and nothing else.** Its stem is two words
+  ("Spot diagnosis:"), so the bag is almost entirely the option list — the score is an artefact of
+  a short stem, not a resemblance. `opqb-t13-523` (pseudotumor cerebri → ocular effect),
+  `opmcq-c13-26` (70-year-old, sudden painless loss, vascular differential), `opmcq-c14-26` (cause
+  of a *pinpoint* pupil — the opposite direction, keys organophosphorus), `opqb-t27-10` (AION
+  differential). None carries a figure; none turns on a pupil *reaction*; Q32 is also the only
+  three-option entry among them.
+- **Q34's nearest neighbour is the punched-eye pair** `opqb-t18-727` / `-728` at 0.25. Both are
+  text vignettes with no figure, both key a *management* step (lateral canthotomy) or a mechanism,
+  and neither even lists "intraorbital foreign body" as an option. Q34 asks a diagnosis off a shown
+  CT after a penetrating workplace injury.
+
+### Keys, all 35, against the printed run
+
+`AADBABBCBCACBABCACDBCAAAAAAAAAAADCB` (p.159). **35/35 checked off the parsed corpus, 0
+mismatches**, the eleven consecutive `A` at Q22–Q32 included. Corpus **1,598**, 0 sparse holes,
+1,598 unique ids. Option spread now **3 ×4 · 4 ×1,384 · 5 ×210**, nothing above five.
+
+`content\ophtho\qb-pages\gg-ee6.draft.js` now holds the complete 35 in printed order beneath its
+existing header, assembled from blocks A–D by structural split on `^{ id: ` and re-parsed before
+writing. Validating it reports 35 "ALREADY SHIPPED" — that is correct: it is the record of what
+went in, not a pending draft.
+
+## A `file://` boot check now lives in the repo — `tools\boot-check\boot-check.js`
+
+There was **no boot harness in the repo**; every session rebuilt one in a scratchpad and threw it
+away, which is why MEMORY.md could record "no `file://` boot since 2026-08-30". There is one now.
+
+    node tools/boot-check/boot-check.js
+
+It copies the whole `app\` to a workspace, injects an error probe *before* the app's own head
+scripts, stubs the gate, seeds a profile, kills animation, forces `.reveal{opacity:1}`, then boots
+headless Chrome and reads the result out of `document.title`.
+
+**Four things it took to make it report the truth rather than a plausible zero, each worth keeping:**
+
+1. **`THEORY` is an OBJECT keyed by chapter id, not an array.** `THEORY.length` is `undefined`, which
+   printed as a finding and was not one.
+2. **Chapters are nested two deep** — `MODULES[].groups[].chapters[]`. Summing `m.chapters.length`
+   gives 0 across four modules, which reads exactly like a broken app.
+3. **Nothing renders until a profile is entered.** Stubbing `showGate` gets you past the gate but
+   leaves the home view unpainted, so every element count is 0. The probe seeds
+   `wardround.profiles` at parse time and the report awaits `enterProfile()` before measuring.
+4. **`.ch-row` only exists inside a module view**, so the check walks all four modules with
+   `go({name:'module',id})` and returns home.
+
+Every one of those produced a confident zero from a healthy app. **A count of zero from a probe you
+just wrote is a claim about the probe first.**
+
+**Result, run after the splice:** `QUESTIONS 4412 · THEORY 153 · MODULES 4 · chapters 153 ·
+Q_OPHTHO 1598 · 4 module cards · 153 chapter rows (120 with questions, 33 empty by design) ·
+**0 console errors**.`
+
+⚠️ **`CLAUDE.md` §7 still says "all 134 chapters visible". The real figure is 153**, and theory is
+153/153 per MEMORY.md, so 153 is the right number and 134 is stale. Not edited here — `CLAUDE.md`
+is shared with the other two live chats. **Raise it in the consolidation pass.**
+
+⚠️ The `--user-data-dir` trap is handled *structurally*, not by comment: the script builds its
+workspace under `%TEMP%\herophilus_boot` and **refuses to run** if that path contains `--`.
