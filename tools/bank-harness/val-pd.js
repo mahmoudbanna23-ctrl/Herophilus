@@ -56,10 +56,26 @@ const allowed = new Set(['id', 'module', 'chapter', 'bank', 'stem', 'options', '
   'explanation', 'objective', 'source', 'image', 'imgAlt']);
 const BT = String.fromCharCode(96);
 
+const fail = [], warn = [], notes = [];
+
 // ---- everything below is DERIVED FROM STAGING, not asserted here ----
 
-// A question straddles if its own staging note says so.
-const STRADDLE = new Set(S.filter(s => /straddle/i.test(s.note || '')).map(s => s.n));
+// A question straddles if its staging row SAYS SO IN A FIELD.
+//
+// This was originally derived by grepping the note for "straddle". That is wrong, and ch.11
+// proved it: the note is prose, so the grep also matched "no straddle" and "wrongly flagged
+// this one as a straddle" and returned 14 straddles where there are 6. ch.10 only escaped it
+// by luck -- it happened to contain no negated mention. A boolean field cannot be negated.
+const STRADDLE = new Set(S.filter(s => s.straddle === true).map(s => s.n));
+
+// ...but a staging pass could write the prose marker and forget the field, which would put us
+// straight back to a silent under-count. The marker is uppercase and deliberate; require the two
+// to agree in both directions.
+S.forEach(s => {
+  const marked = /STRADDLES THE PAGE BREAK/.test(s.note || '');
+  if (marked && s.straddle !== true) fail.push('staging n:' + s.n + ': note carries the STRADDLES marker but the row has no straddle:true');
+  if (!marked && s.straddle === true) fail.push('staging n:' + s.n + ': row says straddle:true but the note does not carry the STRADDLES marker');
+});
 
 // A question carries a figure if its staging row has a non-empty fig field.
 const FIGURE = new Set(S.filter(s => s.fig && String(s.fig).trim()).map(s => s.n));
@@ -74,8 +90,6 @@ S.forEach(s => {
   menus.get(k).push(s.n);
 });
 const SHARED = [...menus.values()].filter(g => g.length > 1).map(g => g.slice().sort((a, b) => a - b));
-
-const fail = [], warn = [], notes = [];
 
 D.forEach(q => {
   const n = Number(String(q.id).replace(cfg.prefix, ''));

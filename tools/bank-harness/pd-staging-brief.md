@@ -97,6 +97,7 @@ discarding it. Say in the header which ghosts you matched and to what.
 
 ```
 { n:<printed question number>, p:'<book page the NUMBER is printed on>', boiler:<true|false>,
+  straddle:true,                      // ONLY on entries that actually straddle; omit otherwise
   stem:'…', opts:['…','…','…','…','…'], key:'<bare letter>',
   fig:'<only when the question prints an image>',
   note:'<how you established it: crops named, straddles, oddities, verification>' }
@@ -123,6 +124,22 @@ discarding it. Say in the header which ghosts you matched and to what.
 A question whose box crosses a page break is filed on the page its **number** is printed on, and its
 note says **exactly what crossed** — usually the answer line printed alone at the top of the next
 page. Record every one.
+
+⚠️ **Mark a straddle in TWO places, and the validator checks that they agree:**
+
+1. the field **`straddle:true`** on the entry — present only on entries that really straddle, omitted
+   entirely otherwise (never `straddle:false`);
+2. the phrase **`⚠️ STRADDLES THE PAGE BREAK p.<a> -> p.<b>`** in uppercase at the head of the note,
+   followed by what crossed.
+
+**Why both:** the note is prose, and prose can be negated. Deriving straddles by grepping notes for
+"straddle" returned **14** on ch.11 where there are **6**, because it also matched "no straddle" and
+"wrongly flagged this one as a straddle". A boolean field cannot be negated; the uppercase marker
+catches a field you forgot. **A row carrying one without the other is a hard validator failure.**
+
+Where a re-read shows a question does **not** straddle after all, say so in its note in those words
+and leave the field off. That correction is worth recording — ch.11's n:5 was miscounted as a
+straddle mid-pass and caught by direct re-reading of p.82.
 
 ## 9. Folds and shared menus — record, never decide
 
