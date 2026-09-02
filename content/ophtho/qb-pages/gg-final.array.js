@@ -214,7 +214,11 @@ var GG_FINAL_STAGING = [
   { n:50, p:173, key:'C',
     stem:'The most important differentiating manifestation between acute iridocyclitis and acute angle closure glaucoma is:',
     opts:['Circum-corneal redness','Diminution of visual acuity','Size of the pupil','Age of onset'] },
-  { n:51, p:173, key:'C',
+  // KEY CORRECTED 2026-09-02: staged 'C', book prints 'A'. Three reads of the p.176
+  // answers block; two independent later reads both returned A, each anchor-verified
+  // (Q47 B · Q48 A · Q49 D · Q50 C · Q51 A · Q52 D · Q53 C), numbering strictly
+  // consecutive 37-69 so misalignment is excluded. Transcription fault, not a bank defect.
+  { n:51, p:173, key:'A',
     stem:'All of the following statements are true about tractional retinal detachment except:',
     opts:['It may be caused by trauma','The treatment is always medical','There is always a pathology in the vitreous','ROP is the most common cause'] },
   { n:52, p:173, key:'D',

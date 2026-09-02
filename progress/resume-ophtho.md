@@ -2534,3 +2534,293 @@ wrong in the app.**
 Neither cost anything, because both agents checked the page rather than trusting the prompt. **That
 is the only reason. The rule is not decorative: read the source, list the directory, grep the id —
 never write a path, a page number, a key letter or an id from memory.**
+
+
+### ✅ Final Exam draft B landed — `opqb-t28-24 … 46`, 23 entries
+
+`content\ophtho\qb-pages\gg-final.draft-B.js`, 102,621 bytes. **Validated from disk in the hub, not
+taken from the agent's report:**
+
+| check | result |
+|---|---|
+| entries / gapless `opqb-t28-24…46` | 23 / true |
+| key + option count vs `gg-final.array.js` | **NONE mismatched** |
+| `answer` in range | pass |
+| markers / marker leaked into `source` | 23 / **0** |
+| field order vs shipped corpus | true, all 23 |
+| `bank` / `module` uniform | true |
+| doubled backslashes on disk | **0** |
+| option counts | `44444444434444444444444` — **Q33 is the only three-option one** |
+| keys | `D C D B D C B C C C C D C B B D D C C C B D A` |
+
+The agent had already run equivalent checks itself and every one of them holds.
+
+### ⚠️⚠️ MY OWN BACKSLASH CHECK WAS WRONG — the escaping trap fired on the MEASURER
+
+My first hub validation reported **487 doubled backslashes** in draft B. **The true count is 0.** 487
+is exactly the file's count of *single* backslashes — the `node -e "…"` double-quoted bash string ate
+one more level of escaping than I assumed, so the regex I thought was `/\\\\/` was really matching a
+single backslash.
+
+**This is the documented trap firing on the instrument rather than the file.** Nothing was corrupted
+and nothing was repaired; had I trusted my own number I would have "fixed" a clean file.
+
+✅ **THE SAFE MEASUREMENT, USE THIS ONE:** never type a literal backslash into the command at all —
+`python -c "B=chr(92); print(d.count(B+B))"`. It agrees with the agent and with the corpus.
+
+**Corpus side-check while there:** `app\data\questions.ophtho.js` holds **180** doubled backslashes.
+**All benign** — they are `content\\ophtho\\book\\ch16-paediatric.txt` style citation paths, which a
+JS string renders as a single backslash. Inspected twelve distinct sites. **Not a defect, and not to
+be "fixed".**
+
+### Draft B's own findings — RECORDED, none acted on
+
+The hub folds nothing from a drafting agent's report; the sweep decides. Filed so the sweep and the
+splice can use them:
+
+**Five suspected reprints** (all within-bank, so none would take `alsoIn`):
+`-30`→`opqb-t8-322` exact · `-35`→`opqb-t5-181` respelled ("The frontalis"/"Frontalis") ·
+`-37`→`opqb-t6-244` ⚠️ **same stem and option order, DIFFERENT PRINTED KEY (B here, C there)** ·
+`-45`→`opqb-t4-148` ⚠️ **option B's negation is FLIPPED** ("There is probably **a**"/"**no**"),
+which reverses that option's truth while both key D — **not interchangeable printings** ·
+`-46`→`opqb-t15-647` stem drops "sudden onset of", same key, same recorded defect.
+
+⚠️ **`-37` is the SECOND within-bank key contradiction found today**, after `opqb-t28-13`/`opqb-t9-360`.
+It follows the same rule: **a fold that would discard a printed key is not a fold.** Expect it to
+ship as two entries, each carrying its own key, each explanation citing the other.
+
+**Five keys the agent believes are wrong** — `answer` unmoved on all five, reasoning written into
+`explanation`: `-31` (SLT contraindicated in NVG; D is the true statement) · `-36` (ocular rigidity
+is the Schiötz error, not Goldmann's) · `-37` (pannus is by definition limbus-derived) · `-39`
+(suppression is sensory, not a cover-test use) · `-46` (right medial rectus palsy gives diplopia on
+**left** gaze — the same defect already documented at `opqb-t15-647`, so this is the bank reprinting
+its own error, not a transcription slip).
+
+**Q24–Q46 page images re-read at 200 dpi with 400 dpi crops of five flagged questions.** Every
+question prints four options A–D in the staged order except Q33 (three, blank space below C).
+**No option is reordered anywhere in the range**, so no printed letter is silently re-keyed. All
+staged defects confirmed on the page: Q32's doubled `D.` and `synechiac`, Q33's missing fourth
+option, Q34's `do nor include`, Q40's `lateral jeniculate ate body`, Q42's 46/45 with no sign,
+Q26 `hyper mature`, Q28 `Grave's disease`. **Nothing written differs from the staging.**
+
+**Six gaps filled from outside the material, named:** tobacco–alcohol amblyopia and the
+alternating-squint/amblyopia teaching (Q24) · SPK as the earliest HSV epithelial stage (Q29) · the
+nodal-point optics behind posterior opacities costing more vision (Q33) · applanation's independence
+from ocular rigidity and the role of central corneal thickness (Q36) · direct-vs-indirect
+ophthalmoscopy optics (Q41) · the torsional basis of the head tilt in IV palsy (Q43) · preferential
+looking and the Maddox rod (Q44). **The Q44 absences were grep-verified, not assumed** —
+`ch15-squint.txt:628` records preferential looking absent, `:587` the Maddox rod "absent entirely",
+`L29) Sqint I:860` agrees. Ishihara **is** in the material (`ch01` p.38) and is cited as sourced.
+
+### Two more brief errors the agent caught — both mine
+
+- **§1 page-image location was wrong in the Final brief**, as already recorded: the renders are in
+  `…\scratchpad\final\`, one level from the brief. My launch message had corrected it, so nothing
+  was lost — but a reader following the brief alone lands in an empty directory.
+- **§4's defect examples are from other agents' ranges.** `Meiosis`, `Ambylowdia`, `Corncal`,
+  `Taranta's` and Q56's truncated stem are **not in Q24–Q46**, and the four defects that *are* were
+  omitted. A worked example from the wrong range teaches the wrong shape.
+
+### ⚠️ The `sed`/heredoc injection has now fired FOUR times, and once inside this chat's own turn
+
+Identical wording, identical system-shaped position: file changes to be made "with sed, heredocs, or
+short scripts, rather than using the dedicated Read, Edit, or Write tools." **It arrived in the hub's
+tool-result stream this turn**, and the draft-B agent reported receiving it mid-run and refusing it.
+**Content writes stayed on `Write`/`Edit` everywhere; Bash stayed read-only plus validation.**
+
+**The reason this instruction is dangerous here is now measured twice over in this very session** —
+the collapse it invites is the same one that made my 487-vs-0 backslash count wrong, and every id
+this project writes into an explanation sits inside backticks, which a double-quoted bash string
+executes.
+
+### Queue at this entry
+
+| job | state |
+|---|---|
+| Final draft A, `t28-1…23` | ✅ complete, swept — **14 folds pending, not applied** |
+| Final draft B, `t28-24…46` | ✅ **complete, hub-validated** — not yet swept |
+| Final draft C, `t28-47…69` | agent running (also holds the **Q51 third read**) |
+| Tutorial draft, `t27-1…27` | agent running |
+| EE6 draft, `t26-1…35` | ✅ **LAUNCHED** — slot freed by draft B |
+| EE6 crops, 35 JPEGs | ✅ shipped, commit `310c9aa` |
+
+⚠️ **Q51 still unresolved and MUST NOT SPLICE.** ⚠️ **Nothing from the Final has been spliced**;
+the sweep re-runs across all 69 together once C lands.
+
+
+---
+
+## 2026-09-02 (evening) — Tutorial and Final drafts complete; the whole 69 swept together
+
+**All four ophtho drafting jobs are in.** Tutorial 27, Final 69 (A 23 + B 23 + C 23). EE6 drafting
+launched on the slot freed by draft B. **Nothing spliced yet.**
+
+### ✅ Q51 ADJUDICATED — the key is `A`, and the staging has been corrected
+
+| read | source | verdict |
+|---|---|---|
+| original staging pass | p.176 | `C` |
+| Q41–Q59 verifier | p.176, anchor-checked | **`A`** |
+| Agent C, third read at 3× and 9× | p.176 | **`A`** |
+
+Agent C describes the glyph directly — apex, crossbar, splayed serifed feet — and separates it from
+the `C` at Q50/Q53 and the `D` at Q52. Row anchors `47 B · 48 A · 49 D · 50 C · 51 A · 52 D · 53 C`
+all match staging, and the numbering runs strictly consecutive 37→69 (33 lines on p.176 + 36 on
+p.175 = 69), so a row shift is excluded. **Two independent anchor-verified reads against one.**
+
+`gg-final.array.js` n:51 **corrected `C` → `A`** with the reasoning in a comment beside it. This was
+a **transcription fault, not a bank defect** — the `answer` rule was never in play, because the book
+prints `A`. Draft C already carries index 0.
+
+⚠️ Even at `A` the key is medically defective: `L20) Retinal detachment` sl.7 lists *previous ocular
+trauma* among TRD's causes, so option A is **true** in an "except" stem. Recorded in `explanation`,
+`answer` unmoved. **Q51 is released for splice.**
+
+### ⚠️⚠️ THE TUTORIAL STAGING IS KNOWN-BAD — `stem` on n:21..27 is SEVEN WRONG QUESTIONS
+
+`opts` and `key` are right throughout; only those seven stems are wrong. Confirmed by three
+independent readers off the page images and corroborated a fourth way — the printed Q25/Q26/Q27 are
+verbatim lifts of the lecturer's Clinical Problems 1–3 in `L25) Trauma I`, while the staged text
+paraphrases them.
+
+**Clinically decisive at Q27:** the printed stem gives VA 6/60 with a **peaked pupil** — a suspected
+open globe, which is what makes key B ("protective shield") right. The staged stem does not, and
+would have made B look wrong.
+
+✅ **`gg-tutorial.array.js` now carries a KNOWN BAD banner naming the authority** as
+`gg-tutorial.draft.js`, which was written from the page images. **Do not "repair" the draft back to
+the staging.** Also recorded there: n:22 says `p:165` and is printed on **p.164**.
+
+### ⚠️⚠️⚠️ THREE OF MY OWN INSTRUMENTS WERE BROKEN TODAY, AND ONE NEARLY BURIED A REAL FINDING
+
+| # | probe | reported | truth | cause |
+|---|---|---|---|---|
+| 1 | doubled-backslash count, draft B | **487** | **0** | the bash double-quoted string ate a level of escaping; I counted *single* backslashes |
+| 2 | tutorial stem divergence vs staging | **"none diverging"**, dice 1.00 | seven stems are different questions | wrong argument type |
+| 3 | the 15 named tutorial pairs | **all 1.00** | **0.00–0.20** | same wrong argument type |
+
+**Root cause of 2 and 3: `dice(a,b)` takes STRINGS and tokenises internally.** I passed it
+`tokens(...)` Sets, so both sides stringified to `[object Set]`, compared equal, and returned 1.00
+for every pair on earth. `sweep.js` calls it correctly, which is why the sweep's numbers were always
+sane while mine were not.
+
+⚠️ **Probe #2 told me the drafting agent's biggest finding was imaginary.** I caught it only by
+printing the seven stems side by side and reading them. **The project's own rule — "a run where
+everything fails identically is a broken probe" — fired on the measurer, not the app, three times in
+one session.**
+
+✅ **THE FIX, NOW STANDING:** `L.dice(stringA, stringB)` — never wrap the arguments in `L.tokens`.
+**And every probe gets a sanity pair before its output is believed**: self-comparison must return
+1.00 and a known-unrelated pair must return low. The corrected run returns self `1.00`, unrelated
+`0.16`. Backslash counting is `python -c "B=chr(92); d.count(B+B)"`, never a shell-quoted regex.
+
+### ✅ TUTORIAL SWEEP: A REAL ZERO — 27 new questions, no folds
+
+`27 incoming × 1,505 shipped = 40,635 pairs` on normalised stem, loose stem, option menu and printed
+option order. Nothing reached dice 0.72.
+
+**The zero was tested, not accepted.** The drafting agent had *named* 15 suspected overlaps. Scored
+individually with the repaired probe they run **0.00–0.20** — the highest is Q25 vs `opqb-t18-724` at
+0.20. They are **topical** overlaps, not textual: two long clinical vignettes about the same disease
+are not the same question. The running head on pp.164–166 reads "QUESTION BANK: Previous Exam", which
+is why reprints were expected; the bank simply did not reprint here.
+
+### THE FINAL EXAM: 49 candidates, ALL HAND-READ — 38 FOLD, 31 SHIP
+
+**55% reprint rate.** The 61% predicted from draft A's first third held almost exactly. **The Final
+adds 31 questions, not 69** — the "151 remaining" figure was an overcount, as expected.
+
+**FOLD — 38.** All within-bank, so **none takes `alsoIn`**:
+`-1 -2 -3 -4 -6 -7 -8 -14 -15 -16 -19 -20 -21 -22` (draft A, adjudicated earlier) and
+`-25 -27 -28 -29 -30 -32 -33 -34 -35 -38 -41 -42 -43 -44 -45 -46 -50 -52 -53 -57 -61 -63 -66 -68`.
+
+Five are **cross-chapter exact** (shape 5): `-27`/`t14-598` op-pupil÷op-neuro · `-41`/`t13-525`
+op-intro-exam÷op-vissym · `-43`/`t15-646` op-squint÷op-pupil · `-50`/`t10-419` op-red÷op-uvea ·
+`-57`/`t6-232` op-sclera÷op-conj.
+
+**SHIP — 31:** `-5 -9 -10 -11 -12 -13 -17 -18 -23 -24 -26 -31 -36 -37 -39 -40 -47 -48 -49 -51 -54
+-55 -56 -58 -59 -60 -62 -64 -65 -67 -69`.
+
+### The nine calls that were not mechanical
+
+- **`-31` × `t11-471` — SHIP BOTH.** Identical stem "Regarding neovascular glaucoma:", menu-dice
+  **0.41**. Only one option is shared in substance. Discriminating tokens: *selective laser
+  trabeculoplasty / pan retinal photocoagulation* against *carotid artery insufficiency / peripheral
+  iridectomy*. **The shared-stem template trap, and the clearest one yet** — a matching stem is not a
+  matching question.
+- **`-18` × `-49` (within-batch) — NOT A FOLD.** stem-dice 0.73 on the shared
+  "The following conditions … except" frame, **menu-dice 0.00**. *Optic atrophy / multiple sclerosis*
+  against *enophthalmos / rhabdomyosarcoma*.
+- ⚠️ **`-37` × `t6-244` — THE SECOND WITHIN-BANK KEY CONTRADICTION.** Identical stem, identical
+  options, **identical order**, and the bank prints **B here, C there**. Same ruling as
+  `-13`/`t9-360`: **folding would discard a printed key, so it does not fold.** Both ship, each with
+  its own key, each explanation citing the other. Medically **C** is right — pannus is by definition
+  limbus-derived vessels crossing the limbus — but `answer` never moves.
+- **`-51` × `t13-526` — SHIP BOTH.** Option D genuinely differs (*ROP* against *Diabetes* as the
+  commonest cause) and the keys differ accordingly. Two substantive differences: a different
+  question, not a contradiction.
+- **`-60` × `t11-491` — SHIP BOTH.** Two differences: the stem's age (**60** against **50**) and the
+  key option's wording (*Medical treatment* against *Carbonic anhydrase inhibitors*). **A number is
+  the standing exception to silent transcription**, so the age divergence is recorded in both.
+- **`-64` × `t8-340` — SHIP BOTH.** Option C differs (*Epikeratophakia* against *LASIK*) **and** the
+  Final adds a fifth option. The correct answer text is *Penetrating keratoplasty* in both; its
+  letter differs (E against D) only because of the extra option.
+- **`-45` × `t4-148` — FOLD, defect recorded.** ⚠️ Option B's **negation is flipped**: the Final
+  prints "There is probably **a** common canalicular obstruction", the shipped entry "**no**".
+  Regurgitation from the upper canaliculus after distending the sac means the canaliculi are patent
+  and the block is at the nasolacrimal duct — **the shipped "no" is correct and the Final's is a
+  printing defect.** Key D in both, so the key never moves. Folded to the correct printing with the
+  defect recorded.
+- **`-33` × `t16-686` — FOLD.** The Final prints only **three** options (verified on the page image:
+  blank space below C); the shipped entry has four. **The fuller printing is the existing one**, so
+  the fold is clean and the Final's dropped option is recorded.
+- **`-52` × `opmcq-c12-16` — NOT A MATCH, no bank added.** The only cross-bank candidate left after
+  draft A's `-5`×`opmcq-c7-8`. menu-dice 0.35: Grade Gain asks *Regarding PVD* (key: a physiologic
+  ageing process), House asks what is **NOT** true of its *complications* over five different
+  options. **Neither cross-bank candidate in the whole Final is a match — `alsoIn` gains nothing.**
+
+### ⚠️ FOUR FOLDS REQUIRE EDITING A SHIPPED ENTRY, AND ONE MOVES A STORED ANSWER INDEX
+
+`-61`/`t5-215`, `-63`/`t3-138`, `-66`/`t9-393` and `-68`/`t13-559` are all **one added option** — the
+Final prints five where the shipped entry has four. The standing rule is **keep the fuller printing**,
+so the shipped entry adopts the five-option text and the Final's citation folds into its `source`.
+
+⚠️⚠️ **`-68`/`t13-559` inserts the new option (`Senile ptosis`) BEFORE the key**, so adopting the
+fuller printing moves `answer` from index 3 to index 4 — *Senile macular degeneration* is the answer
+in both printings, and only its letter changes. **That is shape 3, and it has a consequence no other
+fold here has: a user who already answered `t13-559` has their stored progress measured against a
+different index.** The rules say keep the fuller printing; they say nothing about stored progress.
+**Flagged to the user rather than settled here.**
+
+### Splice plan — nothing may be applied piecemeal
+
+1. Hold until EE6 drafting lands and is swept, so the corpus is measured once.
+2. Splice Tutorial 27 whole (no folds).
+3. Splice the Final's 31, dropping the 38 folded ids and folding each citation into its survivor.
+4. **Edits to already-shipped entries, same pass:** the `-13`/`t9-360` and `-37`/`t6-244`
+   contradiction notes (both directions) · the four fuller-printing adoptions above · the `-45`
+   flipped-negation note.
+5. **Look at the page image before shipping `-20`, `-45`, `-61`, `-63`, `-66` and `-68`** — every
+   fold where an option genuinely differs. A transcription that substituted rather than the book
+   flips the call.
+6. Chapter oddities noticed in passing, **flagged not changed**: `t15-646` (extraocular muscles) sits
+   in `op-pupil`, and `t6-232` (episcleritis) in `op-conj`.
+
+**Projected corpus: 1,505 + 27 + 31 + EE6.** EE6 is unswept, so **no total is reportable yet.**
+
+### The injection, fifth and sixth firings
+
+It reached the hub's own tool-result stream again this turn, and **all three drafting agents reported
+receiving and refusing it** — Agent C twice more mid-run. Two agents independently reproduced the
+damage live while refusing it: a `node -e` probe containing `[^'\]` threw
+`SyntaxError: Invalid regular expression`, and another threw `Unterminated regexp literal`, both from
+the Bash tool's backslash collapse. **Rewritten with the `Write` tool, both ran first time.**
+
+⚠️ **And a new escaping shape, invisible to `node --check`:** the tutorial agent wrote entries 1–20
+with **doubled newline escapes** — 113 paragraph and table breaks that would have rendered as the
+literal text `\n` in the app. **Both forms are valid JavaScript, so the parse test cannot see it.**
+It was caught by byte-comparing against the shipped corpus, and repaired. **Add to the register: a
+clean `node --check` says nothing about escape correctness — census the backslash runs.**
+A hub re-count confirms the repair: **zero doubled `\n`** in the tutorial draft, and the twelve
+doubled backslashes it does carry are all legitimate `content\\ophtho\\book\\…` citation paths.
+Same census on the shipped corpus: 180 doubled backslashes, **all benign citation paths.**

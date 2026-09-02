@@ -2,6 +2,18 @@
    GRADE GAIN OPHTHALMOLOGY — "Tutorial Exam" — VERBATIM STAGING RECORD
    Source: Semester 8\Opthalmo\Questions\ophthalmology qb.pdf
    Transcribed 2026-09-02. This file is the staging record, not app data.
+
+   !! KNOWN BAD 2026-09-02 — THE `stem` FIELDS OF n:21..27 ARE THE WRONG QUESTIONS. !!
+   `opts` and `key` are correct throughout; only those seven stems are. They carry
+   differently-worded cases that are not what the book prints on pp.164-166. Confirmed by
+   three independent readers off the page images, and corroborated a fourth way: the
+   printed Q25/Q26/Q27 are verbatim lifts of the lecturer's Clinical Problems 1-3 in
+   `L25) Trauma I`, while the staged text paraphrases them.
+   THE AUTHORITY FOR THOSE SEVEN STEMS IS `gg-tutorial.draft.js`, WHICH WAS WRITTEN FROM
+   THE PAGE IMAGES. Do not "repair" the draft back to this file.
+   It is clinically decisive at n:27 — the printed stem gives VA 6/60 with a peaked pupil
+   (suspected open globe, so key B "protective shield" is right); the staged text does not.
+   Also: n:22 records p:165 and is printed on p.164.
    =============================================================================
 
    Shape copied from the finished sibling gg-ee4.array.js exactly:
