@@ -909,3 +909,113 @@ range.
 Q91.** The contents page promises 26; five consecutive topics have run low, so
 measure it. ⚠️ Its Q98 prints **five** options — the four-option run ends at the
 topic 19/20 boundary.
+
+### 2026-09-02 — topic 20 "Schizophrenia" STAGED (27), drafting launched
+
+`content/neuro/qb-pages/gg-ps-t20.array.js` — 24.7 KB, `var GG_PS_T20_STAGED`, **27 entries,
+0 sparse holes, n contiguous 91–117**, verified by me from disk (loaded the array and walked the
+index; `Array.filter` skips holes). All 27 keys resolve inside their own option list; `p` is a
+number on all 27; 0 id collisions with the live 222.
+
+- **Questions book pp.82–84 = PDF 87–89. Answers alone on book p.85 = PDF 90.** Offset `PDF = book
+  + 5` re-confirmed off the printed folio on every sheet opened (87→"82" … 91→"86").
+- **27 against a contents-page promise of 26 — the SIXTH consecutive topic in this bank to run
+  LOW.** No count in this bank has ever run high. Topics 16, 17, 18, 19 and now 20.
+- One-past read at PDF 91: banner "Dementia & Delirium / Questions", opening at Q118. Nothing of
+  t20 overruns; continuity back to t19's Q90 also verified, so **t19's 15 stands.**
+- **Option counts are mixed: Q98 and Q104 print five, the other 25 print four.** The four-option
+  run that held through topic 19 ends here.
+- Pages: 10 on p.82, 10 on p.83, 7 on p.84 — the lower third of both columns of p.84 is blank.
+- Boxed Explanations on **Q95, Q96, Q104, Q109, Q112** (5 of 27), counted by reading all 27 answer
+  lines. Key distribution A 6 · B 5 · C 7 · D 9.
+- **No figures in the topic** — established by looking at all four rendered pages end to end, not
+  by searching a caption list. Only non-text marks are the publisher logo, rules and banners.
+- **Letter/name cross-check UNAVAILABLE** — every answer line reads `<n>. Correct Answer: (X)` with
+  no option name. All 27 letters re-read at 400 dpi and agree with the 200 dpi first read; the five
+  printed Explanations corroborate their own keys indirectly. **5 of 27 have indirect support, 22
+  have none. Recorded as NOT PERFORMED, not as passed.**
+
+**Defects transcribed as printed, corrected nowhere:** Q110 is a defect of substance (stem asks for
+psychotic *disorders*, options are *symptom classes* plus "All of the above"; key D unmoved) ·
+Q99 option c "Morbid occupation" against option a "preoccupation" · **Q102 option d "Preservation"
+for "Perseveration" — the bank's house misspelling, SIXTH instance** (five prior in
+`gg-ps-t15.array.js`) · Q97 not grammatically a question · Q104 "A 35-years old woman" · Q110
+"represents on of the" · Q112 "even thought there is no one nearby" · Q115 "the most appropriated
+drug".
+
+**Two template pairs flagged, neither folded:** t20 Q91 ↔ t15 Q5 and t20 Q97 ↔ t15 Q6 — shared
+option menus approached from opposite ends. A shared menu pairs, it never folds.
+
+**Where my staging brief was wrong (fourth brief running to miss a page boundary):**
+1. I gave the topic as book pp.82–85. **The questions occupy pp.82–84 only**; p.85 is the answers
+   page alone — the same split as topic 19, which my own brief warned about and then failed to
+   apply to its own prior.
+2. I predicted **one** five-option question. There are **two** (Q98 and Q104).
+3. I predicted antipsychotic doses and clozapine monitoring counts. **The topic prints no dose, no
+   frequency, no ANC threshold and no laboratory value at all** — measured by reading every stem and
+   option word by word, not by searching for a unit.
+4. I said "entries indented two spaces — the neuro convention". The shipped `gg-ps-t19.array.js`
+   opens entries at **column 0** and indents continuation lines. **The staging and draft files use
+   DIFFERENT conventions** — the draft file does indent two spaces. Copy the file you are writing
+   alongside, never the description.
+
+**Drafting launched 2026-09-02**, split two ways: Q91–104 → `gg-ps-t20.draft-A.js`
+(`GG_PS_T20_DRAFT_A`), Q105–117 → `gg-ps-t20.draft-B.js` (`GG_PS_T20_DRAFT_B`). Not yet spliced;
+live `questions.neuro.js` still holds **222**.
+
+**Chapter note for the splice:** t20 is the FIRST topic to land questions on `ps-psychosis` and
+`ps-schizmgmt` — the 2026-08-23 split comment in `modules.js` records that neither half had a
+question at the time. The seam is presentation vs course/management, and **the antipsychotic block
+lives in `ps-schizmgmt`**, which `ps-pharm` points at rather than repeating.
+
+## Topic 20 SPLICED — 2026-09-02
+
+**`questions.neuro.js` 222 → 249** (bytes 919,179 → 1,032,218). Both draft halves were validated
+**from disk before the splice**, never from their agents' reports: draft-A 14 entries
+(`npqb-ps-91`–`-104`), draft-B 13 (`-105`–`-117`), 0 sparse holes in either, `n` contiguous 91–117.
+Per entry the validator checked stem byte-identity against `GG_PS_T20_STAGED`, options by
+`JSON.stringify`, `answer === 'ABCDE'.indexOf(key)`, module `neuropsych`, bank `gradegain`, chapter
+resolution against `MODULES`, boxed ⇒ blockquote reproducing the printed box and **no** authored
+marker, unboxed ⇒ marker as the final line, no marker anywhere in `source`, `source` carrying the
+staged page, non-empty `objective`, and no stray fields. **All checks passed on both halves.**
+
+**Whole corpus after the splice: 4,225** — ENT 2,322 · ophtho 1,485 · neuropsych **256**
+(249 q + 7 cases) · peds 162. 0 sparse holes, 0 duplicate ids corpus-wide, 4 modules / 153 chapter
+ids, 0 unresolved module or chapter refs, 0 answers out of range. Measured by loading every
+`Q_*`/`C_*` array and walking the index.
+
+⚠️ **The case arrays are `C_ENT`/`C_NEURO`/`C_OPHTHO`/`C_PEDS`, not `CASES_*`.** A corpus counter
+matching `^(Q|CASES)_` reported **4,136 with "cases 0"** — a clean-looking, wrong total. Match
+`^(Q|C)_`, and treat a zero-case corpus count as a broken probe.
+
+**The one deliberate divergence from staging byte-identity: `npqb-ps-102`.** Option d prints
+"Preservation" for "Perseveration" — the bank's sixth recorded instance. The five shipped t15
+entries (`npqb-ps-2/3/5/11/15`) all carry **"Perseveration"** in `options`, and every live
+"Preservation" string sits inside an *explanation*. That is `CLAUDE.md` §4 — where the source itself
+is wrong, correct it and record what the bank printed. I repaired the option in `draft-A` line 136
+and the validator carries an explicit, named exemption for that one entry. Draft-A had flagged the
+conflict between `gg-ps-t15.array.js`'s header and the t20 staging record; **the shipped array
+settled it, not either document.**
+
+**Chapter distribution, 27 entries:** `ps-psychosis` 10 · `ps-symptom` 9 · `ps-schizmgmt` 5 ·
+`ps-somato` 2 · `nr-delirium` 1. Explanation words 420–658 (mean ~510), inside the 456–752 t19
+calibration band at the low end — no entry ran long.
+
+⚠️ **`npqb-ps-115` is chaptered `nr-delirium` and is the ONLY topic-20 entry in the Neurology
+group** (post-operative delirium, taught in `L13`). It is correct, not a stray — **a later sweep
+counting topic-20 questions per chapter will flag it, and the answer is that it belongs there.**
+`npqb-ps-113` notes `ps-geri` as a secondary. `npqb-ps-109` sits in `ps-somato`, and its printed box
+opens "This term" without ever printing "Hysteria" — **the box does not corroborate the letter**,
+recorded as such.
+
+⚠️ **The letter/name cross-check was unavailable for the whole topic** — every answer line prints a
+bare letter. Five of 27 have indirect support from their own Explanation boxes; **22 have none.**
+Recorded as *not performed*, never as passed.
+
+**Splice trap carried from peds ch.7:** the two draft halves can close their last entry differently
+(`},` vs `}`), so a carve anchored on `lastIndexOf('\n  },')` silently drops one file's final entry.
+`splice-t20.js` anchors on `lastIndexOf('\n];')` and strips a trailing comma. Here both t20 halves
+happened to close `}`, but the anchor is the safe one regardless.
+
+**Next: topic 21 "Dementia & Delirium", opening at Q118 on PDF 91 / book p.86.** Still open on
+neuro: the 11 `nr-intro`/`nr-exam` outside-knowledge tags the book can replace (`npqb-nr-14` first).
