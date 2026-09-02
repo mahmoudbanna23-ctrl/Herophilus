@@ -18,10 +18,10 @@ watch and dies with the session.
 |---|---|---|---|
 | 1 Growth & Puberty | 5–210 | 89 | ✅ **SPLICED AND COMMITTED `1f05e45`** (2026-09-03) |
 | 2 Nutrition | 211–392 | 76 | ✅ staged (76, 0 holes) · figure cut · **drafting** |
-| 3 Gastroenterology | 393–549 | 67 | not started |
+| 3 Gastroenterology | 393–549 | 67 → **65?** | planned; 2 pages reprint `pedep-gp-79` — fold, do not stage |
 | 4 Accidents & poisoning | 550–562 | 3 | not started |
 | 5 Pediatrics Emergencies | 563–702 | 60 | not started |
-| 6 Perinatal | 703–773 | 23 | not started |
+| 6 Perinatal | 703–773 | 23 → **22?** | p.768 reprints `pedep-gp-70` — fold, do not stage |
 | 7 Neonatology | 774–903 | 53 | not started |
 | 8 Allergy | 904–928 | 9 | not started |
 | 9 Infection & Immunity | 929–1156 | 96 | not started |
@@ -245,4 +245,88 @@ reusable for sections 3-9.
 against a budget of ~250 straight recall / ~520 vignette.** Drafters are now told to read a
 section-1 entry for its **shape** and never its length, and the validator prints per-entry word
 counts so the overrun is visible before the splice rather than after.
+
+### Section 3 planned from the index while section 2 drafted (2026-09-03, no pages rendered)
+
+**Gastroenterology, pp.393–549, 67 questions.** `answered` 67 and `question` 67 agree, and both
+match the contents page. 23 `notes`, 0 `other`.
+
+- Notes slides pp.393–412 (the section's own summary run), then **p.425 and p.496 alone**, then
+  p.549 (closing slide).
+- First answered **p.414**, last answered **p.548**.
+- **Answered run: 414–424 even · 427–495 ODD · 498–548 even.** The parity flips exactly twice, at
+  p.425 and p.496 — which is the signature of the two overflow boxes and confirms them from the
+  page walk alone, independently of the ≤90-word test.
+- Index flags in range: `few-options` on **p.504** (read it hard); `options-differ` on 416, 422,
+  424, 461, 465, 500, 504, 520, 530, 540.
+
+**⚠️⚠️ TWO PAGES REPRINT A QUESTION ALREADY LIVE IN THIS FILE — these are folds, not new entries.**
+`reprint-pd-ep.js 393 549` matched **p.457 and p.534** to **`pedep-gp-79`**, and they match each
+other. `pedep-gp-79` is the recurrent-abdominal-pain question from section 1 (p.189) and it was
+already filed to chapter `gastroenterology`, so the chapter is right and only the reprint is new.
+Unlike the House overlap below, **this one is inside our own file and must be resolved**: confirm
+all three printings on the images, keep the fuller one, fold the citations into `source`, and stage
+**65, not 67, new questions** if both confirm. Cross-chapter exact reprint is fold shape 5 and is a
+known shape for this project.
+
+Also within section 3: **p.473 == p.512** — a second within-section pair to confirm on the images.
+
+**⚠️ House overlap again, and larger than section 2's.** 20 of the 26 live `pedhd-gastro-`
+questions reprint in section 3, in page order:
+
+| endpoint page | House id |
+|---|---|
+| 414 · 416 · 420 · 422 · 424 | `pedhd-gastro-1` · `-2` · `-4` · `-5` · `-6` |
+| 427 · 429 · 431 · 433 · 435 · 437 | `pedhd-gastro-7` … `-12` |
+| 443 · 445 · 447 | `pedhd-gastro-15` · `-16` · `-17` |
+| 451 · 453 · 455 · 457 | `pedhd-gastro-19` · `-20` · `-21` · `-22` |
+| 534 | `pedhd-gastro-22` (the second printing of `pedep-gp-79`) |
+
+No match surfaced for `pedhd-gastro-3`, `-13`, `-14`, `-18` or `-23`…`-26` — and per the standing
+rule that is **not** an absence claim, only an OCR miss. **Recorded, NOT resolved**: neither chat
+can fold into the other's file. This goes to the same single reconciliation pass as section 2's
+nutrition table.
+
+### ⚠️ Whole-body reprint sweep — sections 4–9 mapped in advance (2026-09-03)
+
+`reprint-pd-ep.js` run over every remaining body section while section 2 drafted. Cheap,
+read-only, and it means **every within-file fold in the book is known before a page is staged**
+rather than discovered afterwards. The probe self-tests at 89/89 on section 1, re-confirmed today.
+
+**A. Reprints of questions ALREADY LIVE in `questions.peds.ep.js` — these MUST be folded, not
+staged.** Both are section-1 entries that section 1 had already cross-filed to the right chapter,
+so only the reprint is new:
+
+| endpoint page | already live as | its chapter | its own page |
+|---|---|---|---|
+| **457 and 534** (Gastroenterology) | `pedep-gp-79` | `gastroenterology` | p.189 |
+| **768** (Perinatal) | `pedep-gp-70` | `perinatal` | p.171 |
+
+If all confirm on the images, **section 3 stages 65 not 67, and section 6 stages 22 not 23.**
+⚠️ Note the coincidence but do not lean on it: the pre-map already flagged section 6 as `answered`
+23 vs `question` 22. A reprint and a missing unanswered twin are **different anomalies** and both
+still have to be settled off the images.
+
+**B. Within-section pairs to confirm on the images** — candidates, not verdicts:
+p.586 == p.630 and p.689 == p.697 (Emergencies) · p.840 == p.888 (Neonatology) ·
+p.977 == p.1047 (Infection). Section 4 (Accidents) and section 8 (Allergy) returned nothing.
+
+**C. House overlap across the rest of the book — RECORDED, NOT RESOLVED**, same as sections 2 and
+3. Live House chapter sizes for reference: `nutr` 15 · `gastro` 26 · `peri` 15 · `neo` 21 ·
+`inf` 31.
+
+| endpoint section | endpoint page → House id |
+|---|---|
+| 6 Perinatal | 728 → `pedhd-peri-1` · 742 → `pedhd-peri-8` |
+| 7 Neonatology | 797 · 800 · 802 · 804 · 806 → `pedhd-neo-1`…`-5` · 810 → `-7` · 812 → `-8` · 824 → `-14` · 838 → `-21` |
+| 7 Neonatology | 866 → `pedhd-peri-5` · 870 → `pedhd-peri-9` · 876 → `pedhd-peri-6` |
+| 9 Infection | 1071 → `pedhd-inf-1` |
+
+⚠️ **The three `pedhd-peri-` hits inside endpoint's NEONATOLOGY range are a chapter-boundary
+disagreement, not an error** — the two books cut the perinatal/neonatal line in different places.
+The reconciliation pass will have to pick one chapter per held question; it is not this chat's call.
+
+⚠️ **Every zero above is an OCR zero.** Sections 4 and 8 returning no candidate means the probe
+found none, not that none exists — the OCR drops whole lines, and this probe only ever compares
+the first 70 normalised characters of a stem. Absence is still established on the images.
 
