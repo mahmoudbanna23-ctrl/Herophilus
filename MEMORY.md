@@ -23,23 +23,34 @@ Where this file and the archive disagree, this file wins. ⚠️ **Before openin
 CLAUDE.md - 2026-09-02` — **no live rule left it.** ⚠️ **Never quote a per-request cost from here;
 `progress\READING-COSTS.md` is the only figure, and it drifted three times on 2026-09-02 alone.**
 
-## Resume here — state at end of 2026-08-31
+## Resume here — state at end of 2026-09-02
 
-**Three module chats, run in parallel, all STOPPED cleanly tonight. Relaunch from
-`progress\resume-2026-08-31-chatA-ophtho.md` and `…-chatB-peds-neuro.md`** (both corrected
-tonight; the 429 rule in their first version was wrong). ✅ ENT CLOSED (`ledger.md` §15–§16).
+**Chat B (peds House + neuro) relaunches from `progress\resume-2026-08-31-chatB-peds-neuro.md`.**
+✅ ENT CLOSED (`ledger.md` §15–§16). ✅ **OPHTHO CLOSED 2026-09-02** — **1,598**, 0 holes, CLEAN,
+boots; all 3 carried debts cleared (2 had been recorded backwards here — the marker debt was 1
+FALSE marker, not 143 missing; theory rows 76, 0 open). Close-out: `progress\resume-ophtho.md`.
 
-- ✅ **OPHTHO CLOSED 2026-09-02** — House closed at ch.20, GG through the Final: **EE6 35/35** ·
-  **Tutorial 27/27** (both 0 folds) · **Final 31 written + 38 folded = 69 printed**, the folded ids
-  reconciling *exactly* against the 38 absent. **1,598**, 0 holes, CLEAN, boots. ✅ **ALL 3 CARRIED
-  DEBTS CLEARED 2026-09-02 — and 2 WERE RECORDED BACKWARDS HERE:** the marker debt was **not 143
-  missing, it was 1 FALSE marker** (`opqb-t16-683`, on a transcribed box), removed; theory
-  reconciliation is **76 rows not ~63 — 54 ✅ · 16 notices · 6 verdicts · 0 open**, only `int-13`
-  stale. `splice.js` backup path fixed. Endpoint never in scope. Close-out: `progress\resume-ophtho.md`.
-- ⏳ **PEDS — bank MEASURED at 393; `questions.peds.js` holds 183, ch.1–8 spliced; 210 remain
+- ⏳ **PEDS HOUSE — bank MEASURED at 393; `questions.peds.js` holds 183, ch.1–8 spliced; 210 remain
   (ch.9–20).** **ch.9 is ALREADY STAGED** (`content\peds\qb-pages\house-ch09-dev-problems.array.js`)
   — resume at drafting. ⚠️ ch.9 prints **"18." twice with no Q19**, tokens `dev-problems`/`dev-nd`,
   boiler is a **fifth shape**. Peds OSCE **14 Sep**, nearest exam.
+- ⏳ **PEDS ENDPOINT part 1 — launch prep, NOT launched; part 2 deferred by the user.** Prompt
+  `progress\resume-2026-09-02-peds-endpoint.md` (v2, uncommitted; needs v3 for the facts here).
+  Section 1 = 89 q pp.5–210, staged AND drafted (`endpoint-s01-growth-puberty.array.js` / `.draft.js`,
+  the draft a bare fragment with no `var`; 85 boxed, unboxed n=45/55/83/87 — the draft is right, the
+  **record header still says 86 and treats n=55 as boxed: p.139 re-read 2026-09-02 = key d, NO box**).
+  **Endpoint harness written, UNTESTED:** `tools\bank-harness\val-pd-ep.js` + `splice-pd-ep.js`
+  (target `app\data\questions.peds.ep.js`, var `Q_PEDS_EP`, created on first `--write`; index.html
+  and questions.js wiring still to add). ⚠️ **Never run `val-pd.js`/`splice-pd.js` on endpoint files —
+  they write Chat B's live file.** Indexing proved but lives only in a dead scratchpad: the PDF is
+  1,991 A4 pages each holding one native **800×450 JPEG** (PyMuPDF `extract_image`, xref = 3997+page,
+  whole book 26 s — **not** pdftoppm); **Windows.Media.Ocr from PS 5.1 did all 1,991 pages in 74 s**,
+  free; yellow px > ~1,500 on a 400×225 downscale = answered page; a box = OCR text after the last
+  option. Exact scripts are only in this chat's transcript (`~\.claude\projects\D--claude-os-Personal\
+  650b8682-…jsonl`). **NEXT, in order: (1) fix the record header + n=55 note; (2) `node
+  tools\bank-harness\val-pd-ep.js 1`, then `splice-pd-ep.js 1` dry run, fix what they find; (3) put the
+  extract+OCR scripts in `tools\ep-index\` and OCR into `content\peds\qb-pages\ocr\ep1\`; (4) prompt v3;
+  (5) launch.** Cost work this session = none beyond CLAUDE.md §9 (edited elsewhere today).
 - ⏳ **NEURO — 268 live** (nr 133 · ps 135); topics 18–21 spliced 2026-09-02. **Next: topic 22,
   Q137 on PDF 94 / book p.89** — ⚠️ banner says "Psychopharmacology", contents says "Pharmacology";
   psychiatry ends **Q165** in topic 23. ⚠️ **The 142 renders died with a scratchpad and only 2
@@ -51,10 +62,8 @@ tonight; the 429 rule in their first version was wrong). ✅ ENT CLOSED (`ledger
   each continuous across topics: neurology topics 01–14, then psychiatry 15–23 **restarts at Q1**
   and ends Q165. ⚠️ The contents page's per-topic counts sum to 157 against a true 165 — trust no
   printed count. Full 23-topic map: `progress\resume-neuro.md`, last block.
-- **Validate a dead agent’s file from disk before believing a report that it died** (ch20-drugs,
-  reported lost, found intact 2026-08-31 — archive). ⚠️ Debts: 12 `nr-intro`/`nr-exam` tags the book
-  can replace (`npqb-nr-14` first) · ophtho theory reconciliation (~63 rows, `theory-plan.md`; book
-  caches exist — do NOT re-read).
+- **Validate a dead agent’s file from disk before believing it died** (ch20-drugs, found intact
+  2026-08-31). ⚠️ Debt: 12 `nr-intro`/`nr-exam` tags the book can replace (`npqb-nr-14` first).
 - **✅ The five-option cap was FIXED 2026-09-02** (`OPT_LETTERS`, A–Z) and re-confirmed live by the
   boot check. **DECIDED: letters stay POSITIONAL where the app letter differs from the book's
   printed key — not a bug, do not re-open.** Detail (the eight neuro questions, the F/J key clash,
