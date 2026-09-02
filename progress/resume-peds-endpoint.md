@@ -16,10 +16,10 @@ watch and dies with the session.
 
 | section | pages | questions | state |
 |---|---|---|---|
-| 1 Growth & Puberty | 5–210 | 89 pages → **75 live** | ✅ spliced `1f05e45` · **14 self-reprints folded 2026-09-03** |
+| 1 Growth & Puberty | 5–210 | 89 pages → **73 live** | ✅ spliced `1f05e45` · **16 self-reprints folded 2026-09-03** (14 exact, then 2 reworded) |
 | 2 Nutrition | 211–392 | 76 pages → **75 live** | ✅ spliced · 1 self-reprint folded (nut-29) |
 
-**Live total: 150 entries from 165 answered pages.** The two numbers differ by the 15 folds and
+**Live total: 148 entries from 165 answered pages.** The two numbers differ by the 17 folds and
 are both correct — pages staged is not questions held. Always say which one you mean.
 | 3 Gastroenterology | 393–549 | 67 → **65?** | planned; 2 pages reprint `pedep-gp-79` — fold, do not stage |
 | 4 Accidents & poisoning | 550–562 | 3 | not started |
@@ -31,16 +31,18 @@ are both correct — pages staged is not questions held. Always say which one yo
 | Model exams 1–4, training 1–2 | 1157–1936 | 379 | last; expected mostly reprints |
 | Exam Night Review | 1937–1990 | 0 (prose) | nothing to stage |
 
-Live file `app\data\questions.peds.ep.js` as of 2026-09-03, after the section-2 splice and fold
-pass 1: **150 entries, 0 holes, 150 distinct ids, 470,768 bytes.** Boot check **0 console errors**;
-`validate-all.js` all hard checks passed across 5 files. (The "89 entries / QUESTIONS 4527" figures
-that stood here were the section-1 state and are superseded.)
+Live file `app\data\questions.peds.ep.js` as of 2026-09-03, after the section-2 splice and **both**
+fold passes: **148 entries, 0 holes, 148 distinct ids, 465,937 chars / 471,472 bytes.** Boot check
+**0 console errors** (`QUESTIONS 4586`); `validate-all.js` all hard checks passed across 5 files,
+no within-file duplicate stem left. ⚠️ **Chars and bytes differ by ~1.2% here** — the file is full
+of typographic quotes and arrows — so say which you mean; the "470,768 bytes" that stood here was
+a char count. (The "89 entries / QUESTIONS 4527" figures were the section-1 state and are dead.)
 
-**▶ RESUME HERE.** Tree clean, three commits landed (`1ccfd17` section 2 + splicer gate fix,
-`3c429a6` the 15 folds). The next action is **fold pass 2 — two reworded reprints, 150 → 148**;
-the cause of its `carved 149, expected 150` assertion is diagnosed in the last section of this
-file, **OPEN 2026-09-03**. Read that block first; it names the exact fix and the verification list.
-After it: re-run the within-section OCR probe over section 3 (pp.393–549), then stage section 3.
+**▶ RESUME HERE.** ✅ **Fold pass 2 is DONE** — see `CLOSED 2026-09-03 — fold pass 2 done` at the
+foot of this file for the carve fix, the id-choice reasoning and the markdown-table trap that
+passed every automated check. The next action is **`node tools\bank-harness\reprint-pd-ep.js
+393 549`** in NORMAL mode (not `--self-test`) over section 3, Gastroenterology, **before any page
+of it is staged** — then stage section 3.
 
 ---
 
@@ -464,7 +466,7 @@ diffing against section 2 as a block once both banks close.
 
 Neither chat folds into the other's file. This stays a journal entry until both banks are closed.
 
-### OPEN 2026-09-03 — fold pass 2, two REWORDED reprints, diagnosed but NOT yet folded
+### ~~OPEN~~ **CLOSED** 2026-09-03 — fold pass 2, two REWORDED reprints, diagnosed here and folded in the next section
 
 **The two duplicate detectors are complementary and neither alone is sufficient.**
 `validate-all.js` compares **transcribed stems** with an exact normalised match; `reprint-pd-ep.js`
@@ -510,3 +512,85 @@ pass as the fold, and re-assert the block count against the loaded array length 
 + blocks), dry-run until it reports `150 -> 148`, then `--write`; then `node --check`, entry/hole/id
 count from the loaded array, `boot-check.js`, `validate-all.js`, and commit `questions.peds.ep.js`
 plus this journal with an explicit pathspec.
+
+### ✅ CLOSED 2026-09-03 — fold pass 2 done, 150 → 148
+
+`node tools\bank-harness\fold2-pd-ep.js --write`. Live file now **148 entries, 0 holes, 148
+distinct ids, 465,937 chars / 471,472 bytes**. `node --check` clean · `boot-check.js` **0 console
+errors** (`QUESTIONS 4586 · THEORY 153 · MODULES 4 · 153 chapter rows`) · `validate-all.js`
+**ALL HARD CHECKS PASSED (5 files)** and **no within-file duplicate stem survives in
+`questions.peds.ep.js`** — the only peds duplicate groups left are the five known cross-bank
+House overlaps, which stay recorded and unresolved.
+
+⚠️ **The journal's "470,768 bytes" was a CHARACTER count, not bytes** — the pre-fold file was
+470,768 chars / 476,420 bytes. The file is full of typographic quotes, dashes and arrows, so the
+two numbers differ by about 1.2%. Say which one you mean; a byte figure compared against a char
+figure reads as a change that never happened.
+
+**The carve fix.** `normaliseHead()` splits `var Q_PEDS_EP = [{` back onto two lines *before*
+carving, and the re-emit puts the newline back, so **the file is now back to two entry shapes**
+(110 bare + 38 inline = 148, head shape gone). Three further guards were added and all three
+earned their place:
+
+- **the block count is asserted against the LOADED array length**, not a hard-coded `EXPECT`. A
+  hard-coded 150 tells you the carve disagrees; the loaded length tells you the carve is wrong.
+- **a dead-id guard**: every id about to be dropped is checked against every other block first.
+  It is what settled which id survives each pair — see below.
+- **the output is parsed and its array length checked before a byte is written.**
+
+### Which id survives, and why it is NOT the fuller printing
+
+⚠️ **`pedep-gp-72` says in its own explanation that IT is the version to keep** — "This printing
+carries the fuller box... and is the version to keep". The drafter was right about the box and the
+tool still keeps `pedep-gp-8`, because the dead-id guard settles it: **`pedep-gp-25` cites
+`pedep-gp-8`** (it is the adopted-child sibling of the same vignette, sharing the option menu).
+Dropping gp-8 would leave a dead id; dropping gp-72 leaves none. Nothing references gp-72 or
+gp-82 at all. So the id is chosen by the reference graph and **the fuller printing is preserved as
+content instead** — which is what the standing rule is actually protecting.
+
+Same for `pedep-gp-10` / `pedep-gp-82`: `pedep-gp-82` cross-referenced gp-10, not the other way
+round.
+
+### ⚠️ What the fold carried over rather than dropped
+
+A fold that keeps the earlier id silently discards the later entry's whole explanation. Both
+dropped entries held material the keeper did not, so both keepers were extended in the same pass
+(`explFrom`/`explTo`, anchored on the closing marker, which is unique inside a block):
+
+- **`pedep-gp-8`** gained p.175's fuller box verbatim — it adds "Constitutional delay would show
+  delayed puberty signs" — plus gp-72's **familial short stature vs CDGP comparison table** and the
+  lecture's two cases (Case 1 = this boy; Case 2 = the 13-year-old with a delayed bone age).
+- **`pedep-gp-10`** gained p.195's fuller box verbatim and gp-82's **four-phase table**.
+
+⚠️ **gp-82's phase table carried UNTAGGED outside knowledge and it has now been tagged.** Its
+"Share" column (fetal 30% · infantile 15% · childhood 40% · pubertal 15%) is **not in the cached
+lectures** — grepped all 58 files; the only phase share the material states is `14) Puberty.txt`'s
+"Add 15% to final adult height". The carried-over table drops the Share column, and a tagged
+sentence gives the usual figures marked *not taken from the course material*. Two rows of gp-72's
+CDGP table (age at presentation, final height) got the same tag. Everything else in both tables was
+verified line by line against `13) Short stature.txt` and `14) Puberty.txt` before it was carried.
+
+### ⚠️⚠️ A MARKDOWN TABLE'S ROWS MUST SIT ON CONSECUTIVE LINES — and nothing in the pipeline sees it
+
+The first run joined **every** line of the inserted text with a paragraph break (`\n\n`), which
+turns a table into a run of pipe-paragraphs that renders as garbage. It was written to disk and
+**passed every check we have**: the file parsed, `node --check` was clean, the array held 148 with
+0 holes, `boot-check.js` reported 0 console errors, `validate-all.js` passed every hard check.
+**It was caught only by printing the rendered explanation and reading it.**
+
+Fixed in the data (the collapse was confined to exactly the two entries the fold touched, proved
+by walking id boundaries) and in the tool, which now has `para()` — an insert is an array of
+paragraphs, and a table is itself an array of rows joined by a single `\n`.
+
+⚠️ **Existing entries encode tables correctly** (`| header |\n|---|---|\n| row |`), so the shape to
+copy was already in the file. Check the encoding of a live table before writing a new one.
+
+**The tool and the data are proved consistent.** `<scratchpad>\prove-tool.js` re-ran the committed
+`fold2-pd-ep.js` against `git show HEAD:app/data/questions.peds.ep.js` in the scratchpad and diffed
+its output against the live file: **IDENTICAL, byte for byte.** Worth repeating after any hand-patch
+of a file a tool owns — otherwise the tool quietly stops reproducing its own output.
+
+**▶ NEXT: `node tools\bank-harness\reprint-pd-ep.js 393 549`** in NORMAL mode (not `--self-test`,
+which skips the within-section comparison entirely) over section 3, Gastroenterology, before any
+page of it is staged. Expect it to confirm p.457 and p.534 against `pedep-gp-79` and p.473 ==
+p.512, and expect it to find the tail-reprints-head pattern that sections 1 and 2 both had.
