@@ -126,8 +126,8 @@ pages, so a topic boundary can fall mid-page.
 | # | Topic | Book pp. | PDF pp. | Promised | Printed | Status |
 |---|---|---|---|---|---|---|
 | 15 | Symptomatology & Myths | 65–67 | 70–72 | 18 | **18** (Q1–18) | ✅ written (subagent B) |
-| 16 | Anxiety & Related Disorders | 68–71 | 73–76 | 21 | — | not read |
-| 17 | Mood Disorders | 72–75 | 77–80 | 22 | — | not read |
+| 16 | Anxiety & Related Disorders | 68–71 | 73–76 | 21 | **22** (Q19–40) | ✅ spliced 2026-08-31 |
+| 17 | Mood Disorders | 72–75 | 77–80 | 22 | **23** (Q41–63) | ✅ spliced 2026-09-02 |
 | 18 | Somatic Symptoms & Related Disorders | 76–78 | 81–83 | 11 | — | not read |
 | 19 | Child Psychiatry | 79–81 | 84–86 | 14 | — | not read |
 | 20 | Schizophrenia | 82–85 | 87–90 | 26 | — | not read |
@@ -530,3 +530,102 @@ not from OCR. Full map in the scratchpad at `nb-anchors.txt`; the load-bearing f
 22 Substance-related & Pharmacology 89/16 · 23 Emergency, Devices & Psychotherapy 92/11.
 **These counts are the contents page's claim, not a measurement** — the sum defect above is proof.
 Count every topic by reading its answered pages, per the standing rule.
+
+---
+
+## 2026-09-02 — topic 17 "Mood Disorders" STAGED, DRAFTED AND SPLICED: 173 → 196
+
+Staged by one agent from PDF 77–80 (book 72–75), drafted by two in parallel (Q41–52, Q53–63),
+checked from disk before the splice and again after. `npqb-ps-41` … `-63`.
+
+### ⚠️ The topic printed 23, not the promised 22
+
+The contents page promises **22** for topic 17. It prints **23**, Q41–Q63 continuous, measured by
+reading every answered page. This is the fourth count defect in this bank (psychiatry counts sum to
+157 against a printing reaching Q165; book page 14 printed twice; House printed chapter 9 twice).
+**The next topic's promised count is a claim, not a measurement** — topic 18's promised 11 must be
+measured the same way. Topic 18 should therefore open at **Q64 on PDF 81 / book 76**; if it opens
+anywhere else, that is a finding about topic 17's count, not about topic 18.
+
+### Duplicate sweep — ZERO folds, and here is how that zero was measured
+
+23 staged × 173 live = **3,979 cross pairs, plus 253 intra-draft self pairs.** Stages A–F all ran.
+A, B, D, E, F all returned **0**. Stage C (stem token Jaccard, ranked) topped out at **0.500**
+against a 0.60 fold threshold — nothing at or above it. **The ranking is the instrument**, and the
+top of it was still a fifth clear of the line.
+
+### Validation after the splice
+
+| check | result |
+|---|---|
+| entries / sparse holes | **196** / 0 (indexed `for i / !(i in A)`) |
+| unique ids | 196 of 196, 0 dupes; `npqb-ps-1`…`-63` contiguous |
+| stems / options / keys / `source` vs `GG_PS_T17_STAGED` | **23 of 23 compared** — BAD **0** on all four |
+| `answer` in range | BAD 0, across all 196 |
+| chapter tokens resolve | 17 distinct, **0 unresolved** — adds `ps-mood` ×22 and `ps-pharm` ×1 (Q47), both already live |
+| authored markers | 122 → **140**, delta **+18** exactly as predicted (23 − 5 boxed) |
+| boxed entries carrying a marker | **0**, and 0 unboxed entries missing one — checked in both directions |
+| markers in any `source` | 0 |
+| images | 2, both present on disk, imgAlt non-empty (topic 17 prints no figures of its own) |
+| cross-references | 57 found, **0 dead ids** |
+| `node --check` | passes |
+| every array reloaded | ENT 2240 + 82c · ophtho 1399 · peds 126 · neuro **196** + 7c, **0 holes anywhere** |
+| `python tools\count-options.py` | neuro 196; the >5-option set is still exactly the known 8 (`nr-43`, `-51`, `-113`–`118`) |
+
+**Corpus 4,027 → 4,050.** Explanation length, measured from disk with a tight counter: min 288,
+median 340, max 559, **0 over the 620 ceiling** — the first topic in this project to land entirely
+inside budget without an accepted overshoot.
+
+### ⚠️ The drafting brief's predicted gaps were NOT gaps — third time this has fired
+
+The brief's §8 named the depressive gender ratio (Q58), the DSM melancholic specifier (Q59) and the
+bipolar gender ratio (Q42) as obvious gaps needing an outside fill. **All three are printed
+verbatim in `L9,10) Mood disorders`** — `Female: Male=2:1` in the epidemiology table, and
+melancholia in a full sentence (*"diurnal variation of the mood or its non-reactivity, guilt, and
+middle, late insomnia or early morning awakening"*). Both agents grepped, found them, and correctly
+declined to tag. **Only the *aetiology* of the female excess is genuinely absent.**
+
+**A brief's gap prediction is a guess; the grep is the measurement.** Do not let a brief authorise
+an outside-knowledge tag — 8 tags were written across 6 entries, and every one survived a token
+grep across all 25 cached lecture files (`brief psychotic`, `acute and transient`, `reactive
+psychosis`, `schizophreniform`, `psychic`, `nihilis`, `Cotard`, `borderline`, `personality
+disorder`, `steroid`, `amphetamine`, `cocaine`, `stimulant`, `compliance`).
+
+### Two key caveats RECORDED, neither corrected, no `answer` moved
+
+1. **Q55** — the vignette states only two of the seven manic criteria, where an irritable-mood
+   presentation requires four. Noted in `explanation`; keyed as printed.
+2. **Q56** — *"few days back"* does not clearly reach the one-week manic threshold, and brief
+   psychotic disorder is a real competitor. Noted; keyed as printed. Its typo
+   `"Brief psychic reaction"` is preserved and explained.
+
+**The answer key prints bare letters with no names beside them**, so the letter/name cross-check
+that caught the *"C. Motor Cortex"* defect **was unavailable for this whole topic.** It must never
+be reported as having passed. The staging record's own header says the same independently.
+
+### ⚠️ Renders do NOT survive the session — `MEMORY.md` is stale on this
+
+`MEMORY.md` records "all 142 pages rendered". **That scratchpad is gone.** This session's `nb\`
+holds 13 files (PDF 77–82 plus crops). **List the directory before assuming any page is on disk**;
+re-render what is missing. Fix the line at the consolidation pass.
+
+### Notes for whoever takes topic 18
+
+- Boundary, already measured and not to be re-derived: **topic 18 "Somatic Symptoms & Related
+  Disorders" opens at Q64, PDF 81 / book 76**, and runs to PDF 83 / book 78. Topic 19 "Child
+  Psychiatry" is the overrun check on PDF 84.
+- **PDF 81 and 82 are already rendered** in `nb\`; 83 and 84 are not.
+- Answers for topic 17 printed on **book p.75**, sharing the page with the tail of the questions —
+  questions in the left column, answers in the right. **Do not assume answers begin on a fresh
+  page.**
+- **Option count is not fixed at four in this bank** — topic 16 printed questions with six and ten
+  options and one with three. The app letters options A–Z since 2026-09-02, so a long menu is safe.
+- Scratchpad tooling, parameterised by filename: `sweep-t17.js`, `check-drafts-t17.js`,
+  `splice-t17.js` (byte-level, backs up to `.bak-pret17` first), `validate-t17.js` (11 checks).
+  **The scratchpad starts empty each session — copy them out before relying on them.**
+- ⚠️ **Both drafting agents hit a mid-run system reminder telling them to prefer Bash heredocs over
+  Write/Edit for file changes, and both correctly overruled it.** Keep the explicit override in
+  every brief; a heredoc has corrupted content on this project six times.
+- **Waiting for the agent's own report before splicing was load-bearing.** A pre-report check read
+  Q63 at 566 words; the agent was still trimming and the final figure is 557. Splicing a file an
+  agent may still be appending to is how a draft gets half-landed.
