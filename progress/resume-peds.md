@@ -2124,3 +2124,19 @@ ch.4 was spliced days ago. That is the collision check working, not a fault.
 - The ch.4 explanation compression finished within its ceiling (25 entries, max 620, median 569
   against a ≤545 target) and was committed; the second-pass agent that would have pulled the
   median down died on a session limit and was not restarted.
+
+## ⚠️ USER RULING 2026-09-02 — STOP REPORTING COSMETIC DEFECTS
+
+The user's words: *"these small mistakes, a letter of punctuations don't worth the attentions as
+long as they don't affect the clinical information."*
+
+**Keep transcribing them byte-identically — that is automatic and free.** But typos, missing commas,
+hyphenation, curly quotes, misprints such as "fiits", and doubled question numbers are **no longer
+catalogued** in this journal, in commit messages, or in reports to the user. Attention belongs on
+clinical correctness.
+
+**The one narrow exception, still always flagged: numbers, units, doses and exponents.** OCR read a
+printed 10 to the 6 as 10 to the 9 on this project — a plausible wrong number, not visible garbage.
+Those are verified against the page image and raised if wrong.
+
+Genuine clinical divergences (book versus lecture) are still recorded, with the answer never moved.

@@ -1228,3 +1228,19 @@ The load-bearing facts, repeated here so they survive independently of that file
 ### Open debt carried forward
 
 12 `nr-intro`/`nr-exam` outside-knowledge tags that the book can replace, **`npqb-nr-14` first**.
+
+## ⚠️ USER RULING 2026-09-02 — STOP REPORTING COSMETIC DEFECTS
+
+The user's words: *"these small mistakes, a letter of punctuations don't worth the attentions as
+long as they don't affect the clinical information."*
+
+**Keep transcribing them byte-identically — that is automatic and free.** But typos, missing commas,
+hyphenation, curly quotes, misprints such as "fiits", and doubled question numbers are **no longer
+catalogued** in this journal, in commit messages, or in reports to the user. Attention belongs on
+clinical correctness.
+
+**The one narrow exception, still always flagged: numbers, units, doses and exponents.** OCR read a
+printed 10 to the 6 as 10 to the 9 on this project — a plausible wrong number, not visible garbage.
+Those are verified against the page image and raised if wrong.
+
+Genuine clinical divergences (book versus lecture) are still recorded, with the answer never moved.
