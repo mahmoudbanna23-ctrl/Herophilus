@@ -16,11 +16,13 @@ const CH = {
         draft: 'house-ch10-nutrition.draft-' },
   11: { prefix: 'pedhd-gastro-', file: 'house-ch11-gastroenterology.array.js', svar: 'PEDHD_GASTRO_STAGED',
         draft: 'house-ch11-gastroenterology.draft-' },
+  12: { prefix: 'pedhd-neuro-',  file: 'house-ch12-neurological.array.js',     svar: 'PEDHD_NEURO_STAGED',
+        draft: 'house-ch12-neurological.draft-' },
 };
 
 // imgAlt must give MODALITY AND VIEW ONLY. Naming the finding answers the question --
 // this mistake gave away six answers once. Broad list; add to it, never trim it.
-const GIVEAWAY = /rickets|ricket|widen|fray|cupping|splay|rosary|bowing|metaphys|swell|deficien|scurvy|osteomalac|dilat|obstruct|atresia|stenos|volvulus|intussuscept|target sign|double bubble|perforat|free air|pneumoperit|megacolon|stricture|mass|tumour|tumor|inflamm|ulcer|polyp|varice|ascites|hernia|malrotat|coeliac|celiac|atroph|villous/i;
+const GIVEAWAY = /rickets|ricket|widen|fray|cupping|splay|rosary|bowing|metaphys|swell|deficien|scurvy|osteomalac|dilat|obstruct|atresia|stenos|volvulus|intussuscept|target sign|double bubble|perforat|free air|pneumoperit|megacolon|stricture|mass|tumour|tumor|inflamm|ulcer|polyp|varice|ascites|hernia|malrotat|coeliac|celiac|atroph|villous|hydroceph|ventriculomeg|myelomening|meningocele|encephalocele|spina bifida|neural tube|craniosynostos|macroceph|microceph|h(?:a)?emorrhag|h(?:a)?ematoma|infarct|isch(?:a)?em|calcif|midline shift|subdural|extradural|epidural|port-wine|caf(?:e|é)-au-lait|neurofibrom|tuberous|hypsarrhythm|spike|epileptiform|slow wave|papill(?:o)?edema|papilloedema|ptosis|squint|strabism|gower|wasting|fascicul|contractur/i;
 
 const chNum = process.argv[2], which = process.argv[3];
 const cfg = CH[chNum];

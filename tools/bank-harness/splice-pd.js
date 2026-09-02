@@ -22,6 +22,8 @@ const CH = {
         draft: 'house-ch10-nutrition.draft-',        dvar: 'PEDHD_NUTR_DRAFT_' },
   11: { prefix: 'pedhd-gastro-', staging: 'house-ch11-gastroenterology.array.js', svar: 'PEDHD_GASTRO_STAGED',
         draft: 'house-ch11-gastroenterology.draft-', dvar: 'PEDHD_GASTRO_DRAFT_' },
+  12: { prefix: 'pedhd-neuro-',  staging: 'house-ch12-neurological.array.js',     svar: 'PEDHD_NEURO_STAGED',
+        draft: 'house-ch12-neurological.draft-',     dvar: 'PEDHD_NEURO_DRAFT_' },
 };
 
 const chNum = process.argv[2];
