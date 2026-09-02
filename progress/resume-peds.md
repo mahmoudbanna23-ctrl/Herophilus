@@ -2593,3 +2593,166 @@ The render is now verified, not just the data.
 
 **Next: ch.12.** Peds now **243 of a measured 393**; 150 remain. Bank ends at book **p.148 /
 PDF sheet 75 LEFT** — surgery beyond is out of scope entirely (§ above).
+
+---
+
+## 2026-09-03 — ⚠️ THE CHAT B RESUME PROMPT WAS STALE BY TWO CHAPTERS. Nothing was lost.
+
+The session opened on a prompt whose "immediate job" was **already finished**, and whose central
+factual claim was **false**. Recorded because the prompt reads as authoritative and measured, and
+because the same failure has now happened to this stream twice in two days.
+
+### What the prompt asserted, against what the disk held
+
+| Prompt said | Disk held |
+|---|---|
+| *"`house-ch10-nutrition.draft-A.js` DOES NOT EXIST. Its agent died on the 5pm Cairo rate limit having read nothing."* | **It exists, 37.8 KB, complete n:1-n:10, committed.** `node --check` clean, `val-pd10.js A` → ALL CHECKS PASSED. |
+| *"Draft peds House ch.10 half A — this is your immediate job."* | ch.10 **drafted, validated and spliced**; ch.11 Gastroenterology drafted and spliced too. |
+| `questions.peds.js` **202**, ch.1-9 closed | **`Q_PEDS` 243, 0 holes, 0 duplicate ids** — ch.1-11 closed. |
+| *"176 questions remain after ch.10"* | **150 remain** after ch.11. |
+| *"no ch.12 staging file yet"* | True, and still the correct next step — the one thing the prompt got right about the resume point. |
+
+Prefix roster measured from the live file: `pedhd-inf` 31 · `-renal` 26 · `-card` 24 · `-haem` 25 ·
+`-gen` 20 · `-peri` 15 · `-neo` 21 · `-dev` 21 · `-devp` 19 · `-nutr` 15 · **`-gastro` 26** = 243.
+
+### Why the prompt was wrong, and it is not a mystery
+
+The prompt was written from **this journal's ch.10 block, which was accurate when written** — draft-A
+genuinely did not exist at that moment. Three later blocks in this same file superseded it, and the
+prompt's author stopped reading at the first one. The prompt even instructs its reader to
+`sed` from the ch.10 heading to end-of-file, which *would* have shown all four blocks; the
+instruction was right and the summary written above it was not.
+
+### The rule this adds
+
+⚠️ **A resume prompt is a claim about the past, not a measurement of the present. Measure the live
+file before doing the first thing it tells you to do** — `Q_PEDS.length`, the prefix roster, and
+`ls` the staging directory. Three commands, and they would have caught this before an agent was
+spawned to redo ~15½ minutes and ~53k tokens of finished work.
+
+This is the same shape as the ch.10 block's own warning that *"the Chat B resume prompt is badly
+stale above its errata block — three counts are wrong"*, and as the ch.10 discovery that its
+draft-A had been swallowed into ophtho commit `6f27079`. **The prompt's own closing instruction —
+TRUST THE STAGING AND THE TRANSCRIPT OVER THIS PROMPT — is the rule that saved it, and it is the
+only reason nothing was overwritten.** Keep that line in every future prompt.
+
+### On the draft-A "death" specifically
+
+The prompt's account of draft-A's agent dying on its first step having read nothing is
+**contradicted by the artefact**. draft-A is complete, internally consistent, and carries all four
+half-A specifics the prompt itself listed: both straddles (n:2, n:5), the single figure basename on
+n:1, the shared five-option menu anchored in `pedhd-nutr-7` with n:8/9/10 pointing back at it, and
+the marker as the final line of every explanation. Its keys read
+`2,2,3,3,1,4,0,1,2,4` = **C C D D B E A B C E**, matching the staged keys exactly.
+
+⚠️ **Validate a dead agent's file from disk before believing it died.** This is the *third* time this
+project has recorded that rule (ch20-drugs in neuro, 2026-08-31; ch.10-in-an-ophtho-commit,
+2026-09-02; here). An agent that dies without filing a report leaves work that looks like absence.
+
+### State confirmed clean before ch.12 was opened
+
+`git rev-parse main HEAD` → both `8e7b83d`, working tree clean, `main` == `origin/main`. No branch
+action was needed or taken. `q-pd-hd-75.jpg` present in `app\assets\q\` (1200x517), so the ch.10
+figure debt really is cleared.
+
+---
+
+## 2026-09-03 — ch.12 "Neurological disorders": staging pass LAUNCHED
+
+- **Range: book pp.90 to 100 = PDF sheet 46 LEFT through sheet 51 LEFT.** Boundary check page is
+  **p.101 = sheet 51 RIGHT**, which the OCR index shows carrying the banner "Respiratory disorders".
+- Chapter banner "Neurological disorders" sits on **p.90 (sheet 46 LEFT)**; Q1 opens *"Annette is a
+  15-year-old girl who complains of worsening daily occipital headaches."*
+- **Count hint only: the OCR index shows a "26." on p.100.** Handed to the agent explicitly as a hint
+  and not a count, with brief §6 (walk the printed numbers, look at every page whole, render one
+  past the last) governing.
+- ⚠️ **All of the above came from the OCR cache, which is a search index and not a source.** The
+  agent was told the rendered page wins on any disagreement and must say so if the geometry differs.
+- Output: `content\peds\qb-pages\house-ch12-neurological.array.js`, `var PEDHD_NEURO_STAGED`.
+  **Both `val-pd.js` and `splice-pd.js` are already registered for exactly that filename and
+  variable** (commit `b45af03`), so neither may be renamed.
+- ✅ **`lean-drafter` resolved on the first spawn**, from a session opened at the project directory —
+  the 2026-09-02 user-scope + project-scope install is now confirmed working twice over.
+
+---
+
+## 2026-09-03 — ⚠️ `validate-all.js` HAD BOTH ITS FLAGS DEAD. Fixed. What they were hiding.
+
+### The bug, and how it hid itself
+
+`tools\bank-harness\validate-all.js` took **`process.argv.slice(2)` as a module-name filter** and
+then, separately, read its flags with `process.argv.includes('--soft')` / `('--all-dups')`. So
+passing either advertised flag made the file filter match nothing:
+
+```
+$ node tools/bank-harness/validate-all.js --soft
+no question files matched          # exit 2, before a single check ran
+```
+
+**Both flags were unusable, and the tool's own closing line advertises one of them**
+(*"--soft lists the soft items one per line"*). Fixed by filtering `--`-prefixed args out of the
+selector; the bare-word filter (`validate-all.js peds`) still works and was re-tested.
+
+⚠️ **The failure mode is what matters: piping the broken run through `grep` returned NOTHING, which
+reads exactly like a clean result.** I reported "zero duplicate stems in peds and neuro" off it and
+had to retract within the minute — the error line went to stderr-then-stdout and did not contain the
+words being grepped for. **A zero from a probe you just wrote is a claim about the probe first**
+(the boot-check rule, which cost four confident zeroes from a healthy app). Applied here: it caught
+the retraction, and the real answer was **not** zero.
+
+### What the working flags then found — 49 groups, 18 lines touching peds
+
+**1. `pedhd-card-6` through `-10` — FALSE POSITIVE, and it should stay in the corpus.**
+Five entries with a byte-identical normalised stem (*"Given the findings shown in the figure, which
+of the following is the most likely congenital heart disease…"*). **They are five different
+questions discriminated entirely by their figures**, which the stem-normaliser cannot see. Verified:
+distinct basenames `q-pd-hd-25 / -26a / -26b / -26c / -27`, **all five crops present on disk, no
+basename reused anywhere in peds**, keys 4/0/1/2/1, option menus differing by one or two entries.
+Corpus-wide check while there: **24 peds stems refer to a figure and all 24 carry an `image` field
+— 0 orphans.** Nothing to fix.
+
+**2. ⚠️ `pedhd-gastro-22` ≡ `pedep-gp-79` — a REAL cross-bank collision, and the first one in peds.**
+Same stem verbatim, same key (index 3, *"Reassurance and no further investigation"*). The printings
+differ only as banks do: House prints *"paediatric"* and the fuller option C *"Inflammatory markers
+and liver function tests"*; endpoint prints *"pediatric"* and the shorter *"Liver function tests"*.
+Sources `pediatric .pdf p.88 (Part I, ch.11 Q22)` and `Pediatrics endpoint part1.pdf p.189`.
+
+**Both carry `module: 'pediatrics'`**, in chapters `gi-abdopain` and `gastroenterology`
+respectively — so **a student revising pediatrics currently meets this question twice**, in two
+chapters, under two bank colours, with the same key. That is the visible consequence, measured, not
+predicted.
+
+**3. Thirteen more groups entirely inside `questions.peds.ep.js`** (`pedep-gp-3|-65`, `-4|-68|-83`,
+`-5|-69` …). Consistent with the recorded *"model exams 379 expected reprints"* — the model exams
+reprint body questions — but **I did not verify that**, and endpoint is not this chat's file.
+Recorded as observed, not adjudicated.
+
+### The decision this forces, which is NOT per-question
+
+⚠️ **Peds is the only module whose banks live in two files.** Measured across the corpus:
+
+| file | banks held | entries carrying `alsoIn` |
+|---|---|---|
+| `questions.ent.js` | house 582 · endpoint 615 · gradegain 1043 | **224** |
+| `questions.ophtho.js` | gradegain 1038 · house 560 | 0 |
+| `questions.neuro.js` | gradegain 268 | 0 |
+| `questions.peds.js` | house 243 | 0 |
+| `questions.peds.ep.js` | endpoint 89 | 0 |
+
+**ENT — the only finished multi-bank module — holds all three banks in ONE file and folds with
+`alsoIn` 224 times.** That is the convention `CLAUDE.md` §4 describes (*on a cross-bank match, ADD
+THE BANK — never a second entry; keep the fuller printing, fold the other's citation into
+`source`*). The peds two-file split is a **parallel-work convenience** — it is what lets a House
+chat and an endpoint chat write without colliding — but it means §4's fold rule **cannot fire**, and
+one collision has already landed with **89 of ~855 endpoint questions live**. The rest are coming.
+
+**Not acted on, deliberately.** Folding it would mean editing parked endpoint work mid-stream, and
+the choice is architectural, not clerical: either the two files merge at end-of-stream and take one
+fold sweep (the ENT shape), or they stay separate and peds knowingly ships cross-bank duplicates.
+**Escalated to the user rather than decided here**, because it governs hundreds of entries.
+
+### State
+
+`ALL HARD CHECKS PASSED (5 files)` · live entries **4438** · ids 4438 · holes 0 in every file ·
+`Q_ENT` 2240 · `Q_OPHTHO` 1598 · `Q_NEURO` 268 · `Q_PEDS` **243** · `Q_PEDS_EP` 89. Matches the
+2026-09-02 boot check's `QUESTIONS 4438` exactly, so nothing has drifted since.

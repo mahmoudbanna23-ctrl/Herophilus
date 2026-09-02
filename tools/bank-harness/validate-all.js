@@ -16,7 +16,10 @@
 const fs = require('fs'), vm = require('vm'), path = require('path');
 const R = path.join(__dirname, '..', '..');
 const DIR = path.join(R, 'app', 'data');
-const want = process.argv.slice(2);
+// Flags are read later via process.argv.includes(); only bare words select files. Without the
+// filter, `--soft` and `--all-dups` were taken as module names and the run died "no question
+// files matched" before printing anything.
+const want = process.argv.slice(2).filter(a => !a.startsWith('--'));
 let files = fs.readdirSync(DIR).filter(f => /^questions\.[a-z.]+\.js$/.test(f)).sort();
 if (want.length) files = files.filter(f => want.some(w => f === 'questions.' + w + '.js'));
 if (!files.length) { console.error('no question files matched'); process.exit(2); }
