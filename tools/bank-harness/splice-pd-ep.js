@@ -40,6 +40,21 @@ const doWrite = process.argv.includes('--write');
 const cfg = SEC[secNum];
 if (!cfg) { console.error('usage: node splice-pd-ep.js <' + Object.keys(SEC).join('|') + '> [--write]'); process.exit(2); }
 
+// The validator gates the splice. Found 2026-09-02: this dry run reported "all pre-splice checks
+// passed" on a draft val-pd-ep.js rejected with 25 failures -- the two tools check different
+// things, and nothing forced them to be run in order. Now nothing splices unless the validator
+// exits 0 on the same section. No flag skips this.
+{
+  const v = require('child_process').spawnSync(process.execPath,
+    [path.join(__dirname, 'val-pd-ep.js'), String(secNum)], { encoding: 'utf8' });
+  if (v.status !== 0) {
+    console.error('VALIDATOR FAILED (exit ' + v.status + ') -- fix the draft before splicing. Its output:');
+    console.error((v.stdout || '') + (v.stderr || ''));
+    process.exit(1);
+  }
+  console.log('validator: ALL CHECKS PASSED for section ' + secNum);
+}
+
 function run(p, tail) {
   return vm.runInThisContext(fs.readFileSync(p, 'utf8') + (tail || ''), { filename: p });
 }
