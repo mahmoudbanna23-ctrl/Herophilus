@@ -188,8 +188,7 @@ tonight; the 429 rule in their first version was wrong). ✅ ENT CLOSED (`ledger
   For a month `main` was a 2026-08-02 design snapshot with **no bank content** while 380 commits
   accumulated on the design branch — cut for the Clepsydra, then `d1bd4af` (08-03) mixed a bank
   sweep into a Clepsydra commit and everything after landed on whatever was checked out. **Work on
-  `main` from here.** No device-code flow — Credential Manager is cached. Verify with
-  `git rev-list --count origin/<branch>..HEAD`.
+  `main` from here.** No device-code flow; Credential Manager is cached.
   **⚠️ Stage EXPLICIT PATHS — never `git add -A`, never a directory a subagent writes into**; `index.lock` = another chat is mid-commit.
 - **Measure, then believe:** check the sum, check the auditor, reconcile written + folded = printed; a
   counter that does not move is a finding. **Never write a page number, filename or id from memory**
