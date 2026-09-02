@@ -1470,3 +1470,32 @@ which is what guarantees nothing of the photo is clipped. The frame carries no t
 `…\Temp\claude\D--claude-os-Medical-школы\dummy.txt` (one byte, "x"). It is outside the project.
 Deletion was denied by the permission system to the agent and again to me; it needs a human to
 remove it or an explicit approval.
+
+### 2026-09-02 — ch.6 SPLICED, 126 -> 141. Chapter 6 is CLOSED.
+
+Draft-A turned out to be **complete on disk**, contradicting its own dying words
+("Now entries 6 and 7"). Nine entries, pedhd-peri-1 to -9, 0 holes, syntax ok.
+Validated field by field against the staging record before splicing: stems byte
+identical, option arrays byte identical, all nine keys mapping to the right index,
+all nine authored-with-marker, marker absent from every source. **This is the
+second time a dead agent's last message understated what it had written — check
+the file, never the report.**
+
+Splice was byte-level (no re-serialisation), draft-A then draft-B, 543,592 ->
+612,508 bytes. ⚠️ **The peds drafts and questions.peds.js put entries at COLUMN 0,
+not indented two spaces like questions.neuro.js** — the neuro splicer carved on
+"newline + two spaces + brace" and found nothing here. Splicer kept at
+scratchpad splice-pd6.js; carve on column-0 braces for peds, indented for neuro.
+
+Measured after: **141 entries** · 0 sparse holes (indexed, not filtered) ·
+0 duplicate ids · 15/15 new ids present · 0 unresolved chapter refs against 153
+MODULES chapter ids · 0 shape problems · 25 images referenced, 0 missing.
+⚠️ An image check must append the **.jpg** extension — the `image` field stores
+the basename and qImgSrc adds it. A first run without it reported all 25 missing.
+
+Per-chapter now: perinatal 11 · perinatal-rd 1 · neonatal-sepsis 1 ·
+neonatal-seiz 1 · genetics 18 (Q15 lands in genetics, not perinatal).
+
+**Next: ch.7 "Neonatal medicine", book pp.54-61, PDF sheets 28-31**, one past at
+sheet 32 left half = book p.62. Its staging agent died before writing anything —
+house-ch07-neonatal.array.js was ABSENT on disk, so that one restarts clean.
