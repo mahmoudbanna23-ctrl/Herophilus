@@ -16,8 +16,11 @@ watch and dies with the session.
 
 | section | pages | questions | state |
 |---|---|---|---|
-| 1 Growth & Puberty | 5–210 | 89 | ✅ **SPLICED AND COMMITTED `1f05e45`** (2026-09-03) |
-| 2 Nutrition | 211–392 | 76 | ✅ staged (76, 0 holes) · figure cut · **drafting** |
+| 1 Growth & Puberty | 5–210 | 89 pages → **75 live** | ✅ spliced `1f05e45` · **14 self-reprints folded 2026-09-03** |
+| 2 Nutrition | 211–392 | 76 pages → **75 live** | ✅ spliced · 1 self-reprint folded (nut-29) |
+
+**Live total: 150 entries from 165 answered pages.** The two numbers differ by the 15 folds and
+are both correct — pages staged is not questions held. Always say which one you mean.
 | 3 Gastroenterology | 393–549 | 67 → **65?** | planned; 2 pages reprint `pedep-gp-79` — fold, do not stage |
 | 4 Accidents & poisoning | 550–562 | 3 | not started |
 | 5 Pediatrics Emergencies | 563–702 | 60 | not started |
@@ -353,3 +356,103 @@ against each other — that would be an offsetting error, which no sum can see.
 ⚠️ Note also that **p.586 is both the answered page ending section 5's odd three-page run and one
 half of the p.586 == p.630 reprint candidate.** Read it once, for both questions.
 
+
+---
+
+## ⚠️ SECTION 1 REPRINTS ITSELF — 15 of the 165 live entries are duplicates (2026-09-03)
+
+Found by `validate-all.js`'s duplicate-stem check after the section-2 splice, not by any probe
+aimed at it. **The endpoint file holds 165 entries but only 150 distinct questions.**
+
+Section 1's last stretch reprints its own opening. Every pair below is the SAME question, and in
+twelve of the fourteen groups the options and the key are byte-identical as well:
+
+| keeper | reprinted at | shape |
+|---|---|---|
+| `pedep-gp-3` p.34 | p.161 | exact |
+| `pedep-gp-4` p.36 | p.167 **and** p.197 | ⚠️ p.197 inserts a 5th option — see below |
+| `pedep-gp-5` p.38 | p.169 | p.169 prints "less than 500 g", p.38 "less than 500"; key same |
+| `pedep-gp-6` p.40 | p.173 | exact |
+| `pedep-gp-9` p.46 | p.177 | exact |
+| `pedep-gp-10` p.48 | p.179 | exact |
+| `pedep-gp-11` p.50 | p.183 | exact |
+| `pedep-gp-12` p.52 | p.185 | exact |
+| `pedep-gp-13` p.54 | p.187 | exact |
+| `pedep-gp-14` p.56 | p.191 | exact |
+| `pedep-gp-15` p.58 | p.193 | exact |
+| `pedep-gp-16` p.60 | p.199 | exact |
+| `pedep-gp-17` p.62 | p.203 | exact |
+| `pedep-nut-22` p.280 | p.294 | exact — inside section 2, not section 1 |
+
+### ⚠️ Why section 1's own count check could not see this
+
+The staging header establishes 89 **two independent ways** and both are right: 89 pages carry a
+yellow highlight, and the printed numbers run 1..87 with two of them printed twice. Neither is
+wrong. **Counting pages is not counting distinct questions** — every reprint has its own answered
+page and its own printed number, so it passes both tests. Two independent measurements that
+measure the same wrong thing agree with each other and prove nothing.
+
+`reprint-pd-ep.js --self-test` scores 89/89 for the same reason: it matches each answered page to
+*a* live entry, and a reprint pair has two pages and two entries, so nothing is left over.
+
+### `pedep-gp-4` is the one that needs a decision, not a script
+
+pp.36 and 167 print four options; **p.197 prints five**, inserting `Plagiocephalic` at position 2
+and pushing the key from index 3 to index 4. This is the reorder-moves-the-key fold shape. The
+book keys `Flattening of the skull` while offering `Plagiocephalic` — near-synonyms — as a
+distractor on the same page; per the standing rule that is **noted, never disputed**, and the
+`answer` stays where the bank put it.
+
+### What this does NOT change
+
+- Section 2's splice is unaffected apart from `pedep-nut-22`/`29`.
+- The count of ANSWERED PAGES per section stays exactly as planned — the reprints are real pages
+  and were really staged. What changes is the count of distinct questions.
+- ⚠️ **The section 3–9 estimates are now suspect in the same way.** The pre-map found reprints
+  only by comparing against already-live entries and within a section; it never asked whether a
+  section reprints its own opening at its own end, which is precisely the shape found here.
+  **Re-run the within-section comparison over every section before staging it**, and expect the
+  same tail-reprints-head pattern.
+
+### RESOLVED 2026-09-03 — the folds are done, 165 -> 150
+
+All 15 reprints folded. `questions.peds.ep.js` now holds **150 entries, 0 holes, 150 distinct
+ids**; boot check 0 console errors; `validate-all.js` ALL HARD CHECKS PASSED; no within-file
+duplicate stem survives.
+
+- Each keeper's `source` now names the reprint page, e.g.
+  `Pediatrics endpoint part1.pdf p.34 (the same question is printed again on p.161)`.
+- `pedep-nut-22`'s explanation had *cited* `pedep-nut-29` as an unfolded duplicate — the drafter
+  spotted the reprint and correctly left the decision alone. That sentence became a statement
+  about the two pages, so folding nut-29 left no dead id.
+- **`pedep-gp-4` kept its four-option p.36 printing.** The fold rule says keep the fuller printing,
+  but here the fuller printing is the *defective* one: p.197 inserts `Plagiocephalic` as a fifth
+  option while still keying `Flattening of the skull`, and the bank's own box calls lambdoid fusion
+  "posterior plagiocephaly" — two correct answers on one page. Serving a knowingly-defective item
+  to a student is worse than serving the clean one, and both printings are recorded either way.
+  The defect is written into the explanation; the key was not disputed.
+
+⚠️ **Two entry styles coexist in the live file and a carve that knows one silently merges the
+other.** Section 1 and draft-A open on a bare `{` and close on a `},` line; draft-B opens
+`{ id:'...` inline and closes with ` },` on its source line. 127 bare + 38 inline = 165. The first
+carve found 127 blocks and reported a plausible 127 -> 112 fold. **165 - 127 = 38 = exactly one
+draft half**, which is what gave it away. Any future byte-level tool over this file must handle
+both shapes and assert its block count against the loaded array length.
+
+### Cross-bank overlap found by the section-2 splice — RECORDED, NOT RESOLVED
+
+| endpoint | House | note |
+|---|---|---|
+| `pedep-nut-3` | `pedhd-nutr-3` | same stem |
+| `pedep-nut-4` | `pedhd-nutr-4` | same stem |
+| `pedep-nut-6` | `pedhd-nutr-6` | same stem |
+| `pedep-nut-14` | `pedhd-nutr-14` | same stem |
+| `pedep-gp-79` | `pedhd-gastro-22` | known from the pre-map |
+
+⚠️ **Four of the five pair on the SAME NUMBER.** endpoint nut-3/4/6/14 against House nutr-3/4/6/14
+is not coincidence — the two books are printing a shared nutrition question set in a shared order.
+That is a strong lead for the reconciliation pass: **check number-for-number first**, rather than
+comparing every stem against every stem. It also means the House nutrition chapter is worth
+diffing against section 2 as a block once both banks close.
+
+Neither chat folds into the other's file. This stays a journal entry until both banks are closed.
