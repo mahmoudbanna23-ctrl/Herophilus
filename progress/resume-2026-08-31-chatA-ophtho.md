@@ -171,6 +171,13 @@ Stop at clean topic boundaries; scope is never cut.
 **Everything above is still accurate.** These are the deltas from 2026-09-02. Where this block
 and anything above disagree, **this block wins.**
 
+- ⚠️ **WORK ON `main` FROM NOW ON — `git checkout main` before your first commit.** On
+  2026-09-02 `main` was fast-forwarded onto `design/clepsydra-and-sessions` and both were pushed,
+  because a month of bank work had accumulated on a branch named for a piece of artwork while
+  `main` sat as a design snapshot with **no bank content**. It happened by drift, not by choice:
+  the branch was cut for the Clepsydra, one commit mixed a bank sweep into it, and every commit
+  after that landed on whatever was checked out. **Do not let it restart.** The two branches are
+  identical, so switching costs nothing and changes no file.
 - ✅ **PUSHING WORKS. 0 commits ahead.** The old note saying *262+ commits ahead, unpushed,
   needs the user’s device-code flow* was **stale** — a plain `git push` went straight through
   with no prompt (Git Credential Manager has it cached). Re-check, never assume:

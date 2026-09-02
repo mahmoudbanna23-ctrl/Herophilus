@@ -53,8 +53,10 @@ module.
 
 ## 4. Standing risks — check each is still true, do not act
 
-- **Peds ch.4 (25 q) and ch.5 (20 q) are drafted on disk and NOT SPLICED.** `questions.peds.js`
-  should still show 81 until Chat B splices them:
+- **✅ RESOLVED 2026-09-02 — peds ch.4 and ch.5 are SPLICED. This is now a floor check, not a
+  hold.** `questions.peds.js` read **202** on 2026-09-02 and Chat B is still adding: expect it to
+  **grow, never shrink**. A figure at or near the old 81 means the COUNT broke, not the file.
+  Re-measure the current floor from `MEMORY.md` "Validation state" before judging:
   ```bash
   f="D:/claude os/Medical school/Herophilus/app/data/questions.peds.js"
   echo $(( $(grep -oE '(^|[{, ])id: *[^ ]' "$f" | wc -l) + $(grep -oE '"id" *:' "$f" | wc -l) ))
@@ -62,8 +64,9 @@ module.
   ⚠️⚠️ **`app\data\*.js` MIXES TWO KEY STYLES — count both or the answer is nonsense.**
   `questions.neuro.js` holds **151 entries with JSON-style quoted keys** (`"id": "…"`) and
   **22 with bare keys** (`id: "…"`). A bare-key regex counts 22 of 173 and reads as
-  catastrophic loss. **It is not loss:** 173 q + 7 cases = 180 neuro, and the corpus totals
-  **3,982**, matching `MEMORY.md` to the unit (verified 2026-09-02 from disk).
+  catastrophic loss. **It is not loss** — neuro was 173 q + 7 cases = 180 at a corpus of 3,982
+  when that was written; both have since grown. ⚠️ **Never compare against a number written
+  here — the corpus moves by the commit. Load the array and read `.length`.**
   This check has now shipped WRONG TWICE — first grepping the invented prefix `pedhouse-`
   (real prefixes are `pedhd-inf-` / `pedhd-renal-` / `pedhd-card-`), then with a bare-key-only
   regex. **Both returned a number that looked like data loss on a perfectly intact file.**
