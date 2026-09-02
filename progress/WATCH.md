@@ -72,6 +72,9 @@ module.
   regex. **Both returned a number that looked like data loss on a perfectly intact file.**
   ⚠️ **Before reporting any count as loss, re-count with the command above and compare against
   `git cat-file -s HEAD:<path>` — bytes rising while a count falls means the COUNT is broken.**
+- **Chat B's `val-pd.js`/`splice-pd.js` diff is COMMITTED (`b45af03`, 2026-09-02).** Tree was
+  clean and `main == origin/main` there. Any dirty file from now on belongs to whichever chat is
+  live — report it, never stage it.
 - **`content\peds\qb-pages\endpoint-s01-growth-puberty.draft.js`** — 89 questions, validated
   CLEAN 2026-09-02 (`32f2a32`), waiting for the endpoint chat's first `splice-pd-ep.js 1 --write`.
   Once `app\data\questions.peds.ep.js` holds 89, that is the floor for that file. Until the
