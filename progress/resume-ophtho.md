@@ -2041,3 +2041,148 @@ user's standing ruling, not cut**. Grade Gain is the only open ophtho work. EE4 
 **EE5 (20), EE6 Photos (35), Tutorial (27) and Final (69) remain — 151 questions**, all four in
 flight as background staging/drafting passes at the time of writing. Topic slots `t25`–`t28` were
 verified free by grep before any of them started; EE6 takes `t26`.
+
+---
+
+# 2026-09-02 — CHAT A CLOSED OUT. The session is safe to delete.
+
+Every number below was **measured from disk at close**, by loading the arrays and reading
+`.length` — none of it is carried from the session's memory. The chat itself holds nothing that
+is not written here.
+
+## What shipped, and what the corpus is now
+
+`app\data\questions.ophtho.js` — **1,485 questions, 0 cases.** `node --check` SYNTAX OK.
+Whole-corpus total **4,265** (ENT 2,240 + 82 cases · **Ophtho 1,485** · Neuro 268 + 7 · Peds 183).
+All committed; working tree carries no modified tracked file.
+
+**House ophthalmology is CLOSED at chapter 20** for this pass. Chapters 1–20 are all shipped
+(66 `opmcq-c19-*` and 51 `opmcq-c20-*` id occurrences present). The ~435-item OSCE tail after
+book p.134 is **deferred under the user's standing ruling, not cut**.
+
+**Grade Gain has shipped through End Exam 4.** EE1–EE3 folded zero; EE4 shipped 15 of 20 with five
+within-bank folds, all recorded in the survivors' `source`.
+
+✅ **The exponent audit of ch.17–ch.20 is RUN AND CLOSED** (this file, 2026-09-02): zero
+exponent-bearing numerals exist anywhere in that scope, so nothing could have been corrupted. The
+open debt that MEMORY.md raised against this chat is discharged.
+
+## What is staged on disk and NOT yet shipped
+
+Four Grade Gain staging files, all **verbatim, all parsing, all with keys in range for their own
+menus, no sparse holes, contiguous numbering from 1**. All four are new and untracked at close —
+they are committed by this pass.
+
+| File | var | entries | `n` | state |
+|---|---|---|---|---|
+| `content\ophtho\qb-pages\gg-ee5.array.js` | `GG_EE5_STAGING` | 20 | 1..20 | complete, ends on the last printed question (Q20 p.150) |
+| `content\ophtho\qb-pages\gg-ee6.array.js` | `GG_EE6_STAGING` | **35** | 1..35 | complete; closing COUNT block reconciles four ways |
+| `content\ophtho\qb-pages\gg-tutorial.array.js` | `GG_TUTORIAL_STAGING` | 27 | 1..27 | complete, ends Q27 p.166 |
+| `content\ophtho\qb-pages\gg-final.array.js` | `GG_FINAL_STAGING` | 69 | 1..69 | complete; Q69 p.175 is recorded as *"the LAST question in the section and in the book"* |
+
+**Shape, for all four:** `{ n:<printed question number>, p:<BOOK folio>, key:'<LETTER>', stem, opts:[…], note? }`
+— field names `p`/`key`/`opts`, **never** `page`/`answer`/`options`. The topic number lives only in
+the variable name. This is the `gg-ee4.array.js` shape; every one of the four agents copied the
+finished sibling rather than the brief, which is the right instinct and is why they agree.
+
+## ⚠️ TWO THINGS THE NEXT SESSION MUST NOT INHERIT AS SETTLED
+
+**1. The EE5 draft is INCOMPLETE — 15 of 20, and it does not say so anywhere except its ids.**
+`content\ophtho\qb-pages\gg-ee5.draft.js` holds `opqb-t25-1` … `opqb-t25-15`, contiguous, and
+stops. Its own header claims the range *"opqb-t25-1 … opqb-t25-20"* — **that header is a promise,
+not a measurement.** The 15 that exist are clean: no missing fields, every `answer` in range,
+15/15 explanation markers, all `gradegain/ophtho`. **Q16–Q20 were never drafted.** The file's
+closing line is the instruction to follow: *"this file is appended in blocks; the last id present
+is how far it got."* Resume by `Edit`-appending Q16 onward — never by rewriting the file.
+
+**2. `app\data\questions.ophtho.js.bak` is a 5.1 MB pre-EE4-splice backup holding 1,470 questions.**
+It is untracked, deliberately not committed, and **it will load as `Q_OPHTHO` if anything ever
+globs `app\data\*.js`** — which is exactly how a 15-question regression would ship silently. It is
+on the cleanup list awaiting the user's approval; delete it or move it out of `app\data\` at the
+first opportunity.
+
+## EE6 is the expensive batch, and its traps are already known
+
+**The count is settled at 35, and it was settled the right way.** For part of this close-out the file
+held only 33 and its promised closing COUNT block was missing, so this document warned that 33 and
+the brief's 35 were irreconcilable. The transcriber then finished: **35 entries, `n` contiguous
+1..35, no sparse holes, every key in range for its own menu, every entry carrying a `fig`.** Q34 and
+Q35 sit on **book p.159**, sharing that page with the Answers banner — which is why a reader who
+stopped at p.158 would count 33 and be wrong. The closing block reconciles the number **four ways**
+(entries · banner-to-banner span · entries carrying a `fig` · option counts), and records the
+printed keys read off p.159 in order, distribution A 17 · B 8 · C 7 · D 3, summing to 35.
+
+⚠️ **Q22–Q32 are ELEVEN consecutive `A` keys as printed.** Re-read at magnification, recorded, not
+corrected. *A defective key is noted, never disputed* — and this one is not even defective, it is
+just improbable. **Do not let a later stage "fix" it.**
+
+**The general lesson, and it is the same one as the exponent audit:** a page count taken from where
+a section *looks* like it ends is a guess. The section ended two questions past the last page anyone
+would have checked. **Render one page past the last** is not a formality.
+
+EE6 is the only image-heavy work left in the module. Every entry carries a `fig` field describing
+**where the picture sits and what kind of picture it is, deliberately stopping short of naming the
+finding** — which is the `imgAlt` rule applied at staging time, and it means the staging can be read
+without the crops answering the questions. Four things recorded there that a cutter would otherwise
+have to rediscover:
+
+- **Image basenames must be `q-op-gg-ee6-1` … `-35`.** The ordinary ophtho scheme is
+  `q-op-gg-<GG question number>`, and EE6's numbering restarts at 1, so `q-op-gg-11.jpg` **already
+  exists** and would be overwritten. All images are flat `.jpg` in `app\assets\q\`; `image` stores
+  the bare basename and `qImgSrc()` supplies `assets/q/` and `.jpg`.
+- **Q21 reprints Q1's photograph** at a slightly smaller size and a marginally tighter crop, asking a
+  different question of it. **One crop serves both. It is NOT a duplicate question and must not be
+  folded.**
+- **Q32 prints THREE options only (A, B, C).** A fixed-four assumption corrupts it. Its printed key
+  `A` is inside the printed range.
+- **Q22 carries TWO stacked figures**, unlabelled, edge to edge. Both must be kept, in top/bottom
+  order.
+
+Source defects are recorded per entry and **not repaired**: `withCT` printed as one word, `VGEF`
+for VEGF at Q23 against a correct `Anti-VEGF` at Q28 (the bank contradicts itself and both
+spellings are kept), option C printing its own letter label inside its text (`"C)Anti-VGEF"`, so
+the rendered line reads `C. C)Anti-VGEF`), and a run of mid-sentence capitals. Watermarks,
+hand-inked numerals and a stray blue `174` figure-number belong to the source photographs, not to
+the questions.
+
+## What is left in ophthalmology, exactly
+
+**151 staged questions**, minus whatever the fold sweep removes:
+
+| Stream | staged | drafted | shipped |
+|---|---|---|---|
+| GG End Exam 5 | 20 | **15** | 0 |
+| GG End Exam 6 (Photos) | 35 | 0 | 0 |
+| GG Tutorial Exam | 27 | 0 | 0 |
+| GG Final Exam | 69 | 0 | 0 |
+
+**Deferred, not cut, and needing no re-recon:** the House OSCE section (~435 items, book pp.135–249)
+— the structural recon stands in this file, and its two blocker renders were left in a session
+scratchpad that is now gone, so **re-render sheets 115 and 122 if it is ever called back**.
+`Opthalmology endpoint.pdf` is separately deferred by the user; **do not start it.**
+
+⚠️ **When GG closes at the Final Exam, ophthalmology is done for this pass — STOP and report.**
+
+## The fold rule this chat settled, stated once
+
+**0–1 substantively differing options = one question printed twice, fold it. 2 or more = a different
+printing, ship both.** That threshold matches every one of the 21 within-bank folds already in the
+corpus. Within-bank folds **never take `alsoIn`**; the second printing is recorded in the survivor's
+`source` and the folded id loses its backticks everywhere it is still mentioned.
+
+**Why EE4 folded five when EE1–EE3 folded nothing:** EE4's pages carry the running header
+`QUESTION BANK: Previous Exam`. It is a past-paper section, and a past paper reprints topic
+questions by construction. **Expect folds in Tutorial and Final for the same reason, and expect
+none in a section that is not a past paper — but measure it per section, never assume it forward.**
+
+## The instrument warning, because it cost the most
+
+*Check the auditor before believing the audit* cost this chat **five** false instruments in one day,
+and **the pattern in all five is identical: the probe returned a number, and the number was the
+wrong kind of thing.** Two of them were mine, written back to back, both reporting plausible counts
+of fold precedent — 29, then 20 — and both wrong, the first because the regex matched ordinary
+`Supporting:` citations and the second because `[^;]*` ran past the sentence end. What finally
+worked was abandoning counting altogether and **searching for the vocabulary of a fold**
+(`reprint|also printed|folded here|second printing`), which found the 21 real records immediately
+**and printed them for reading**. A probe that prints its matches would have caught every one of the
+five on the first run. Write probes that print, not probes that count.

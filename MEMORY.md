@@ -30,14 +30,12 @@ CLAUDE.md - 2026-09-02` — **no live rule left it.** ⚠️ **Never quote a per
 `progress\resume-2026-08-31-chatA-ophtho.md` and `…-chatB-peds-neuro.md`** (both corrected
 tonight; the 429 rule in their first version was wrong). ✅ ENT CLOSED (`ledger.md` §15–§16).
 
-- ⏳ **OPHTHO — 242 bank questions left against 27 Sep**, and both banks close on it. House
-  **ch.17 + ch.18 MERGED** (ophtho now **1,399**, +69 today: 1,330 + 69); **ch.19 (42, one fold
-  into `opmcq-c13-17`) and ch.20 (29, zero folds) are STAGED, not merged**; GG EE4/EE5/EE6/Tutorial/
-  Final all rendered + OCR'd. **House closes at ch.20, GG at the Final Exam.** ⚠️ The only
-  image-heavy work left in the module is **EE6's 35 photos**; everything else is text.
-- ⚠️⚠️ **OPHTHO'S FIRST TASK ON RESUME IS THE EXPONENT AUDIT of ch.17–ch.20** — the chat merged
-  them without ever receiving the superscript warning (verified by transcript audit: zero
-  mentions in its whole run). Procedure in `progress\resume-ophtho.md`, last section.
+- ⏳ **OPHTHO — 151 staged questions left against 27 Sep, all Grade Gain; ophtho now 1,485.**
+  ✅ **House CLOSED at ch.20**; GG shipped through **EE4**. Staged, unshipped: **EE5 20** (⚠️ its
+  draft is **15 of 20 while its own header claims 20** — append, never rewrite) · **EE6 35**, the
+  only image-heavy batch left (⚠️ Q34–Q35 sit on p.**159** beside the Answers banner; a reader who
+  stops at p.158 counts 33) · Tutorial 27 · Final 69. ⚠️ Delete `app\data\questions.ophtho.js.bak`
+  (1,470 q) — it loads if anything globs `app\data\*.js`. Close-out: `progress\resume-ophtho.md`.
 - ⏳ **PEDS — bank MEASURED at 393; `questions.peds.js` holds 183, ch.1–8 spliced; 210 remain
   (ch.9–20).** **ch.9 is ALREADY STAGED** (`content\peds\qb-pages\house-ch09-dev-problems.array.js`)
   — resume at drafting. ⚠️ ch.9 prints **"18." twice with no Q19**, tokens `dev-problems`/`dev-nd`,
