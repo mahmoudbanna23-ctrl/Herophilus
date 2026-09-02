@@ -3484,3 +3484,68 @@ is shared with the other two live chats. **Raise it in the consolidation pass.**
 
 ⚠️ The `--user-data-dir` trap is handled *structurally*, not by comment: the script builds its
 workspace under `%TEMP%\herophilus_boot` and **refuses to run** if that path contains `--`.
+
+---
+
+## Consolidation pass — the module is closed in the ledger, and two measurement findings (2026-09-02)
+
+`progress\ledger.md` gains **§18 — OPHTHALMOLOGY IS CLOSED**, the reconciliation rather than the
+narrative; this journal stays the blow-by-blow. `MEMORY.md` is back to **exactly 200 lines** against
+its hard cap, with the displaced text in `progress\memory-archive.md` under
+`## Pruned from MEMORY.md - 2026-09-02 (line-cap consolidation, second pass)`. Commit `f56ca8b`,
+pathspec-limited to three files.
+
+### ⚠️ Finding 1 — rewrapping prose does not reduce a line count
+
+Four consecutive edits that tightened wording inside the same wrapped lines moved the file by
+**zero lines**. The cut only happened when material was *removed* (to the archive) or two bullets
+were *merged into one*. **If a file is over a line cap, cut content or merge structure — do not
+reword.** This cost four wasted edits and is worth remembering the next time a cap is hit.
+
+### ⚠️ Finding 2 — the Edit tool normalises a file's line endings
+
+`progress\ledger.md` was **mixed CRLF/LF** (1,662 CRLF of 1,737 lines). Two `Edit` calls on it —
+one changing "53 sections" to "54", one adding an index row — rewrote the **whole file to LF**, so
+the commit's diffstat reads **3,473 changed lines** for what is really 1 deletion and 148 additions.
+
+Verified rather than assumed: normalising both sides to LF and diffing gives **149 changed lines,
+of which exactly 1 is a deletion** (`## Index of all 53 sections`) and 148 are the new §18 plus its
+index row. **No ledger content was lost.** Left as-is — reverting would produce a second whole-file
+diff, and another chat is live, so history is not being rewritten.
+
+**The reason this matters beyond a noisy diff:** MEMORY.md warns that `app\data\*.js` is mixed
+CRLF/LF and that nothing may anchor on a bare newline. If a single `Edit` silently rewrites every
+line ending in a file, that warning needed re-measuring. It was:
+
+| file | CRLF | LF total |
+|---|---|---|
+| `questions.ent.js` | 13,767 | 19,023 — **still mixed** |
+| `questions.ophtho.js` | 0 | 14,031 — pure LF |
+| `questions.neuro.js` | 0 | 3,808 — pure LF |
+| `questions.peds.js` | 0 | 2,252 — pure LF |
+
+**Only ENT is still mixed.** And the ophtho file did *not* lose its CRLF in this session's splice —
+checked at `ce376fd~1`, it was already pure LF before it. MEMORY.md's warning has been narrowed to
+name `questions.ent.js` specifically, which is where it is still true.
+
+### What §18 records
+
+- The reconciliation table: House 560 (closed at ch.20) + Grade Gain 1,038 (closed through the
+  Final) = **1,598**, with **no cross-bank `alsoIn` anywhere in the module**.
+- **The Final's arithmetic**, which is the one worth keeping: `opqb-t28-*` counts **31** in the
+  corpus against **69 printed**, reading exactly like 38 lost questions. `foldmap.json` holds **38
+  folds, all `opqb-t28-*`**, matching the 38 absent ids **exactly**, with no residue on either side.
+  *An absence reconciled against a fold map is closed; an absence merely counted is not.*
+- EE6's 35/35 keys, the pixel-measured figure recheck (Q32's withdrawn asymmetry claim and
+  undecidable laterality, Q34's unresolvable foreign body, Q15's overturned first pass), and the two
+  slide citations corrected from the caches before the write.
+- The four boot-probe faults, each of which produced a confident zero from a healthy app.
+- The three carried debts: 143 unmarked `opqb-*` explanations, the ~63-row theory reconciliation
+  (**caches exist — do NOT re-read the book**), and `tools\qb-pipeline\splice.js`'s stale `.bak`
+  path, which must not be touched while peds and neuro are mid-run.
+
+### ⚠️ For the user, not for a file
+
+**`CLAUDE.md` §7 says "all 134 chapters visible". The measured figure is 153**, and theory is
+153/153, so 153 is right and 134 is stale. **Not edited** — `CLAUDE.md` is shared with the two live
+module chats and this run does not own it.

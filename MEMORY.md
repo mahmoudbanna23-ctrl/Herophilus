@@ -174,8 +174,8 @@ tonight; the 429 rule in their first version was wrong). ✅ ENT CLOSED (`ledger
   chapter id we write is in backticks.** **FIX FOR ALL FOUR: never type a literal `\` or a backtick
   in a heredoc — build them as `chr(92)`/`String.fromCharCode(92)`, or use `Write`/`Edit`;
   `node --check` after every append; then GREP EVERY PATH AND REGEX — the write reports success
-  either way.** ⚠️ **`app\data\*.js` is MIXED CRLF/LF** (body CRLF, spliced entries LF) — **nothing
-  may anchor on a bare newline**; scan structurally.
+  either way.** ⚠️ **`questions.ent.js` is MIXED CRLF/LF** (13,767 CRLF of 19,023 lines, 2026-09-02)
+  — **nothing may anchor on a bare newline there**; scan structurally. ophtho/neuro/peds are pure LF.
 - **⚠️⚠️ COUNTING QUESTIONS IS A TRAP: `app\data\*.js` MIXES TWO KEY STYLES** — `questions.neuro.js`
   held **151 quoted-key** (`"id":`) + **22 bare-key** (`id:`) entries, so a bare-key grep counted
   **22 of 173** on 2026-09-02 and read as catastrophic loss. **It was not.** Count BOTH styles
