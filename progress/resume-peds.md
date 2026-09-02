@@ -1292,3 +1292,87 @@ before believing the audit.**
   short stature as *"<3rd percentile"* — so Q19's girl **at the 9th centile is not short by the
   deck's own definition**, and the diagnosis rests on dysmorphism plus absent puberty. **Grep the
   abbreviation, the sign and the drug name separately before writing any absence claim.**
+
+## 2026-09-02 — House ch.6 "Perinatal medicine" STAGED. 15 questions, zero folds, five figures.
+
+Staging record committed: `content\peds\qb-pages\house-ch06-perinatal.array.js`,
+`var PEDHD_PERI_STAGED`, **15 entries, book pp.49–53** (commit `968b336`). Verified from disk by
+loading the array: 15 entries, no sparse holes, ns 1–15, keys `ADEABCADDCDBEDD`, every question
+exactly **five** options, **zero explanation boxes**, no multi-answer.
+
+⚠️ **The field shape is not ch.5's, and the difference is deliberate**: `p` is a **number** (`49`),
+not a string; `boiler` is a **boolean** that is `true` on **Q1–Q9** and **absent on Q10–Q15** — a
+clean block, not scattered; `fig` is a boolean true on Q10–Q14; `figp` is a **string**. Any check
+written against ch.5's shape will misread this file.
+
+⚠️ **Every answer line prints a bare `Answer: X.` with no option name.** The letter/name
+cross-check is **UNAVAILABLE for the whole chapter** and is not reported as passed.
+
+### The sweep: zero folds, and how the zero was measured
+
+The shared pipeline (`tools\qb-pipeline\sweep.js`) reported zero at dice ≥0.72 over 1,890 pairs but
+**printed no ranked near-miss**, so the ranking — which is the actual instrument — was missing. Ran
+the six-stage sweep separately for it. Stages A, B, D, E all **0**; **stage C tops out at 0.185**.
+
+**Stage F flagged one intra-draft pair, `ch6-Q12` vs `ch6-Q14` at 0.500 — inspected, and it is a
+PAIR, not a fold.** Q10–Q14 are a five-question neonatal-rash block sharing a verbatim closing
+sentence (*"What is the diagnosis that fits best with the attached clinical description and
+picture?"*) and, across Q10–Q12, one option menu. Q12 is small white spots on the nose and cheeks,
+key B; Q14 is blue-black macules on the back and buttocks, key D. Distinct lesions, distinct
+figures, distinct keys. **A shared option menu pairs questions; it never folds them.**
+
+⚠️ The adapted sweep script printed `ch5-Q` labels over ch.6 data until fixed — **a hardcoded label
+in a copied script is exactly how a wrong conclusion gets recorded.** Check the labels.
+
+### ⚠️ MEASURED GAP: the neonatal skin lesions are not in the lecture cache
+
+Q10–Q14 turn on five neonatal skin findings and **none of the 64 cached decks covers any of them.**
+17 tokens tested: `milia` **with a word boundary** → 0 (a raw substring grep returns 10 files and
+**every one is `familial`** — the raw count is a pure false positive) · `erythema toxicum` 0 ·
+`toxic erythema` 0 · `Mongolian` 0 · `blue spot` 0 · `port wine` 0 · `naevus|nevus` 0 ·
+`naevi|nevi` 0 · `birthmark` 0 · `capillary malformation` 0 · `Sturge` 0 · `stork` 0 ·
+`salmon` → **Salmonella** only · `strawberry` → **strawberry tongue** (scarlet fever) only ·
+`haemangioma|hemangioma`, `pustul`, `anomaly scan` → no neonatal-skin context.
+**`8) COMMON PROBLEMS IN THE TERM NEWBORN.txt` (20,317 bytes) is entirely hyperbilirubinaemia.**
+
+So these five are filled from general medical knowledge and tagged `not taken from the course
+material`, per the project rule that **a gap is answered, not declared**.
+
+⚠️ **A fixed-width context grep is not a search.** `grep -o ".\{18\}strawberry.\{22\}"` returned
+nothing because the term sat near the start of its line; `grep -rin "strawberry"` on full lines
+found four hits. **Read every hit in context before drawing any conclusion from a count.**
+
+### Chapter tokens assigned, grounded in the cache
+
+`perinatal` for Q1–Q5, Q8, Q10–Q14 · `perinatal-rd` for Q6 (infant of a diabetic mother with
+respiratory distress; `9) Respiratory distress in newborn.txt`) · `neonatal-sepsis` for Q7
+(congenital CMV; congenital infection is taught in `11) Neonatal sepsis.txt`) · `neonatal-seiz` for
+Q9 (neonatal hypoglycaemia; `10) new Seizures . Birth injuries , Hpoglycemia 2.txt` is the deck
+that teaches it) · `genetics` for Q15 (amniocentesis — `6) Genetically determined disease_.txt` is
+the **only** deck in the cache that names it). Secondary chapters named in prose only: Q2 →
+`renal-cakut`, Q5 → `cardiac`.
+
+### Figures — five, on pp.51–53
+
+`q-pd-hd-51` (Q10) · `q-pd-hd-52a` (Q11) · `q-pd-hd-52b` (Q12) · `q-pd-hd-52c` (Q13) ·
+`q-pd-hd-53` (Q14). Assets were 109 before this chapter. **Three of the five are different photos
+on the same book page and are easy to swap** — the crop agent was told to name what it saw in each
+and say how it told them apart.
+
+⚠️ **The `imgAlt` values are stripped to modality and view only.** The lesion IS the answer in all
+five, so no alt may carry a colour, a lesion noun, a distribution or a diagnosis. The staging
+record's `note` field describes each lesion in full — **that description is for the explanation,
+never for the alt.**
+
+### Source defects preserved
+
+Q2's lead-in ends with a full stop, not a question mark · Q5's options are not alphabetised ·
+Q6 prints *"Her glucose tolerance test and fasting glucose is abnormal"* · **Q11 prints
+`a month-old infant` with no numeral, verified at 400 dpi — the digit is genuinely absent from the
+page, not a rendering fault** · Q13 prints `33 weeks gestation` without the apostrophe that Q3 and
+Q6 use · Q15 prints `can not` as two words · **Q7, Q10 and Q13 each straddle the page break**, and
+each is cited to the page it opens on · Q10–Q15 print no `Select one answer only.` line at all.
+
+⚠️ **All five figure stems say the picture is in the "opposite figure" and not one of them is** —
+each figure sits immediately right of its own stem, wording inherited from a two-column original,
+exactly as in ch.5.

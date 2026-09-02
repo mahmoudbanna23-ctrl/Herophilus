@@ -639,3 +639,97 @@ re-render what is missing. Fix the line at the consolidation pass.
 - **Waiting for the agent's own report before splicing was load-bearing.** A pre-report check read
   Q63 at 566 words; the agent was still trimming and the final figure is 557. Splicing a file an
   agent may still be appending to is how a draft gets half-landed.
+
+## 2026-09-02 — topic 18 "Somatic Symptoms & Related Disorders" STAGED, and it carries a FOLD
+
+Staging record committed: `content\neuro\qb-pages\gg-ps-t18.array.js`, `var GG_PS_T18_STAGED`,
+**12 entries, Q64–Q75**, book pp.76–77, answers all on book p.78 (commit `968b336`).
+Verified from disk by loading the array: 12 entries, no sparse holes, ns 64–75 contiguous,
+keys `ADDACDAACBBB`, every question exactly **four** options, **no figures**, **no multi-answer**.
+
+### Measurements, and the one that changed the plan
+
+- **12 questions against a contents page promising 11.** Fourth downward count defect in this bank,
+  same direction and magnitude as topics 16 and 17. **Trust no printed count** — the rule keeps
+  paying.
+- **Numbering is continuous across the topic-17 boundary**: topic 18 opens at Q64, immediately after
+  topic 17's Q63. **This independently confirms topic 17's count of 23**, which the contents page
+  put at 22.
+- **Topic 19 "Child Psychiatry" banner is at PDF 84 = book p.79, opening at Q76.** One-past overrun
+  check passed, so topic 19's staging can open straight at PDF 84.
+- **Answers do NOT share a page with questions here** — book p.78 is answers only. Topic 17's did
+  share. Do not generalise either way; measure per topic.
+- **Duplicate/skip walk done explicitly** on both question pages and the answer page: 64…75, none
+  printed twice, none skipped, every one carrying both a question and an answer line.
+- **5 printed `Explanation:` blocks** — Q66, Q68, Q69, Q74, Q75 — counted by reading all twelve
+  answer lines, not sampled.
+- ⚠️ **The answer key prints BARE LETTERS with no option names.** The letter/name cross-check was
+  **UNAVAILABLE for this whole topic and is not reported as passed.** Mitigation actually done: all
+  12 letters re-read at 400 dpi to rule out B/D and C/G confusion (they matched the 200 dpi read),
+  and for the 5 boxed answers the prose names the intended option and agrees. **7 of 12 keys have no
+  corroboration of any kind.**
+
+### ⚠️⚠️ Q69 IS A CROSS-CHAPTER EXACT REPRINT — folded, not entered
+
+The six-stage sweep (12 × 196 = 2,352 cross pairs + 66 self) returned **one real fold**:
+
+- **`t18-Q69` vs live `npqb-nr-122` — stem Jaccard 1.000, identical option set, same key (D).**
+  The bank prints this question **twice**: book p.27 in the neurology run (already live as
+  `npqb-nr-122`, chapter `nr-headache`) and again at book p.76 in psychiatry topic 18. Same bank
+  both times, so **no `alsoIn`** — this is fold shape 5, cross-CHAPTER exact, and it is the seventh
+  fold shape seen. **`npqb-ps-69` must never exist.** The drafting agent was told mid-run to skip it.
+- ⚠️ **The two printings are not identical in what they carry: the p.76 printing prints an
+  `Explanation:` box and the p.27 printing does not.** So `npqb-nr-122`'s authored-explanation
+  marker is now factually wrong for the bank as a whole. **At splice time: fold the p.76 citation
+  into `npqb-nr-122.source`, add the printed box verbatim, and REMOVE the marker from that entry.**
+  Its 516-word authored explanation is much the fuller of the two and stays.
+- Net effect on the marker count: **+7 from the new entries, −1 from `npqb-nr-122` = +6.**
+  Entry count goes **196 → 207**, not 208.
+
+Other sweep results, and why each zero is a zero: stage A exact stem **0**; stage B Levenshtein ≤3
+**0**; stage C, apart from the Q69 hit, tops out at **0.273** (`t18-Q67` vs `npqb-ps-24`) against a
+0.60 threshold; stages D and E returned only the Q69 pair. Option-similarity's next-highest after
+Q69 is 0.500.
+
+**Stage F flagged `t18-Q65` vs `t18-Q70` at 0.600 — inspected, and it is a PAIR, not a fold.**
+Q65 asks *"Types of somatoform disorders include:"* (key D, `All of the above`); Q70 asks
+*"Somatoform disorders include all of the following, EXCEPT:"* (key A, `Acute stress disorder`).
+Positive and negative framings of one list, different keys, and the discriminating token is
+`Acute stress disorder`, which appears in only one of them. **A shared subject pairs questions; it
+never folds them.**
+
+### Sourcing measured before the drafting brief was written
+
+`content\neuro\lectures\` holds **25 decks**, and **`L3) Somatization.txt` (10,816 bytes) is a
+dedicated deck for exactly this topic** — the only file hitting `hypochondria|illness anxiety`,
+`factitious` and `pain disorder`, and it also hits `somatoform|somatic symptom`, `conversion`,
+`malinger`, `body dysmorphic`, `la belle`, `suggestion`, `placebo` and `reassur`. **This topic is
+well covered; expect citations, not gap-fills.**
+
+**The one measured zero:** `abreaction`, `amytal`, `amobarbital`, `narcoanalysis` and `saline` all
+return **0** across all 25 decks. Q68 and Q69 both turn on a 3-cc saline injection, so the specific
+technique may need filling — but the deck may teach the principle under `suggestion` or `placebo`,
+which is exactly how the last three gap predictions turned out to be wrong.
+
+### Source defects preserved (do not "fix" these later)
+
+Q68 comma splice with a capital T (`…her fiancé, The most immediate…`) · Q69 lowercase sentence
+starts inside the quoted speech, and option a opens with a **curly** double quote and closes with a
+**straight** one · Q74 prints `All here investigations were normal` · Q75's printed Explanation ends
+with **no full stop**, on the word "disorder" · Q67, Q70, Q73 print `TRUE`/`EXCEPT` bold and
+underlined, emphasis not carried · the bank hyphenates inconsistently, `3-cc` in Q68 and `3 cc` in
+Q69.
+
+⚠️ **`box` in this staging record is NOT a boolean** — it is `null` when no Explanation is printed
+and the **verbatim prose** when one is. That matches `gg-ps-t17.array.js`, which is the precedent,
+but it contradicts the boolean shown in the staging brief's own example. The brief was wrong; the
+precedent won. Any downstream check must treat `box` as truthy/falsy, never as `=== true`.
+
+### What the staging brief got wrong
+
+The geometry table predicted PDF 83 = "topic 18 body / tail"; **PDF 83 is the answers page** and the
+questions stop on PDF 82. It also warned of drug doses and symptom counts that are not printed —
+the only numerals are two saline volumes and a handful of ages and durations, all read at 400 dpi.
+**Show-through was checked**: faint mirrored text behind the p.78 Answers banner reverses to
+"…ADHD recently. His mom wants to know the…", which is Q80 on the reverse of the leaf. Nothing
+transcribed from it.
