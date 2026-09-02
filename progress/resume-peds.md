@@ -2574,6 +2574,21 @@ The fault above was found by eye, which is not repeatable. Both ends are now clo
   reporting. It says plainly that all five offenders passed the validator, so the agent knows no
   instrument was covering it.
 
+### ✅ `file://` BOOT CHECK RUN 2026-09-02 — the debt above is CLEARED
+
+`node tools\boot-check\boot-check.js`, run once no Chrome was live (checked with `tasklist` first —
+the harness allows one at a time, and Chat A had finished). **0 console errors.**
+
+```
+QUESTIONS 4438 · THEORY 153 · MODULES 4 · chapters 153
+chapter rows rendered 153 (122 with questions, 31 empty — deliberate)
+per module: ent 30 · ophtho 36 · neuropsych 36 · pediatrics 51
+```
+
+**4438 = the pre-ch.11 4412 + exactly 26.** Rows carrying questions went 120 → 122, which is ch.11
+lighting up two chapters that had none. `Q_OPHTHO` unchanged at 1598, so nothing of Chat A's moved.
+The render is now verified, not just the data.
+
 ### Resume
 
 **Next: ch.12.** Peds now **243 of a measured 393**; 150 remain. Bank ends at book **p.148 /
