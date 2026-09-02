@@ -1019,3 +1019,149 @@ happened to close `}`, but the anchor is the safe one regardless.
 
 **Next: topic 21 "Dementia & Delirium", opening at Q118 on PDF 91 / book p.86.** Still open on
 neuro: the 11 `nr-intro`/`nr-exam` outside-knowledge tags the book can replace (`npqb-nr-14` first).
+
+## Topic 21 "Dementia & Delirium" STAGED — 2026-09-02: 19 questions, Q118–Q136
+
+`content\neuro\qb-pages\gg-ps-t21.array.js`, `var GG_PS_T21_STAGED`. **Verified by me from disk after
+the agent reported, not taken on report: 19 entries, 0 sparse holes, `n` strictly contiguous 118–136
+with no gap and no duplicate, `p` a NUMBER (86 or 87), every key resolving inside its own option
+list, no curly quotes, no id collision with the live 249.** By page: p.86 ten, p.87 nine.
+
+- **Boundaries measured.** Questions on book pp.86–87 = PDF 91–92; **p.88 = PDF 93 carries the
+  answers alone, no questions** — the same split as topics 19 and 20. Offset re-confirmed off the
+  printed folio on every sheet (PDF 91="86" … 94="89"): **PDF = book + 5** still holds.
+- **One-past sheet PDF 94 (book p.89)** opens topic 22, banner "Substance-related Disorders &
+  Psychopharmacology / Questions", first question numbered **137**. Nothing of topic 21 overruns.
+  ⚠️ The contents page calls topic 22 "…& **Pharmacology**"; its banner says "…&
+  **Psychopharmacology**". Recorded for whoever stages it.
+- **Contents page promised 18; the true count is 19 — the SEVENTH consecutive topic running LOW.**
+  No count in this bank has ever run high.
+- **Option counts: four ×15, FIVE ×4 (Q120, Q121, Q128, Q129).** The four-option run that held
+  through topic 19 is now decisively broken; topic 20 had two five-option questions, this has four.
+- ⚠️ **Q121 is the FIRST letter-referencing combination key in the psychiatry run:** key E =
+  "A and c", with options d and e printing referenced letters as capitals against lower-case labels.
+  **The letters are positional**, which is also how the app prints option letters, so they line up —
+  but reordering that question would break the option TEXT as well as the key.
+- **Explanation boxes: 4 of 19 — Q120, Q125, Q134, Q136**, counted by reading all nineteen answer
+  lines. Keys A 3 · B 5 · C 6 · D 4 · **E 1**.
+- ⚠️ **Letter/name cross-check UNAVAILABLE for the whole topic** — bare letters, no option names. All
+  19 re-read at 400 dpi and agreeing with the first read. **Four keys have indirect corroboration
+  from their own Explanation prose (Q125/Q134/Q136 by name, Q120 by description); fifteen have
+  none.** Recorded as *not performed*, NOT as passed.
+- **No figures**, established by looking at all three rendered pages end to end. Show-through checked
+  at 400 dpi down the outer margins of PDF 91/92/93 — faint mirrored ink, nothing legible, nothing
+  transcribed. **Q136 describes an MRI in prose and prints no image.**
+- **The topic's entire numeric content is three ages and four age bands** — no exponent, no lab
+  value, no MMSE score, no cut-off, no dose. Q123 prints "small dose" twice with no mg or frequency.
+- **Defects, recorded and not corrected:** Q121 "Picks body" (no apostrophe, singular) · Q130 "Elated
+  mode" and "Delusion if infidelity" — **t20 Q97 prints that same distractor correctly, so the
+  misprint is local** · **Q135's four age bands out of ascending order AND overlapping** (65 in both
+  a and d, 74 in both b and d) · Q120 offering "Pain perception"/"Pain referral" on a dementia stem ·
+  Q136's box ending without a full stop. No key moved.
+- **Overlaps flagged, none folded:** Q125 ↔ Q131 within the topic (shared menu, discriminators
+  "Blunted affect" vs "Apraxia") · Q124 ↔ t20 Q102 · Q118 ↔ Q127 · Q127 ↔ shipped `npqb-ps-113`.
+  No word-for-word reprint anywhere in `questions.neuro.js` or any staged array.
+
+**Where my staging brief was wrong (fifth brief running):**
+1. It predicted **MMSE scores, ages and cut-offs**. The topic prints **no MMSE score and no cut-off
+   at all**, and only three ages — repeating exactly the mistake it apologised for making about
+   topic 20's doses. **Stop predicting a topic's numeric content.**
+2. It warned about the "Preservation"/"Perseveration" house misspelling. **It appears nowhere in
+   Q118–Q136**; the running total stays at six.
+3. Its combination-key guidance anticipated an "All of the above" aggregate. What appeared is a
+   **letter-referencing** combination — a different and more fragile shape.
+4. Its overlap prior pointed at `npqb-ps-115`. **No topic-21 question resembles it**; the four real
+   matches were all unanticipated.
+5. It framed the topic as opening on p.86 and running to an unstated boundary, without predicting
+   the questions/answers page split its own §2 warned about.
+
+### ⚠️ The chapter seam for topic 21 was ALREADY SETTLED by the written theory — read it, do not re-derive it
+
+`app\data\theory.neuro.js` records the seam in as many words, and both chapters are written:
+
+- **`ps-geri` "Geriatric Psychiatry" IS THE DEMENTIA CHAPTER.** Its own theory states that the
+  chapter is titled *Geriatric Psychiatry*, the deck is titled *Dementia and Delirium*, `geriatric`
+  returns **zero across all 25 cached decks**, and *"what IS here is dementia, and it is here in
+  full."* It held **0 questions** before topic 21.
+- **`nr-delirium` "Delirium" is the delirium half**, from the same deck's second half; the seam is
+  the deck's own *Delirium* title slide. It held **1** (`npqb-ps-115`).
+
+Facts the theory already measured, so no drafter need re-probe them: **MMSE and MoCA are named with
+no score, cut-off or domain** · **`ge-10` uses the MMSE for dementia while `dl-7` calls it NOT
+SENSITIVE for delirium — a contradiction inside one lecture, recorded** · **no dose for any of the
+six named drugs** · **Lewy body and frontotemporal dementia are named with no clinical picture**
+(the only clue is `ge-3`'s visual hallucination → LBD; vascular dementia's only marker is emotional
+instability) · **the prevalence figures do not sum to 100 %** and **AD is given two different shares**
+· **no investigation is printed for delirium at all.** ⚠️ **Book Psychiatry ch.8 "Dementia and
+delirium" (printed 239–248) is image-only and UNREAD — do not render it, do not plan around it.**
+
+**Drafting launched 2026-09-02**, split on the page boundary: Q118–127 → `gg-ps-t21.draft-A.js`
+(`GG_PS_T21_DRAFT_A`), Q128–136 → `gg-ps-t21.draft-B.js` (`GG_PS_T21_DRAFT_B`).
+
+### ✅ Topic 21 SPLICED AND CLOSED — 2026-09-02
+
+**`questions.neuro.js` 249 → 268**, measured by loading the array: `Q_NEURO.length` **268**, **0
+sparse holes** (index walk, not `Array.filter`), **no duplicate id**, no `answer` outside its own
+option list anywhere in the file, all 19 `npqb-ps-118`…`-136` present. Neuro corpus is now **268 q +
+7 cases = 275**.
+
+Both halves were validated **from disk before either report was believed** (`val-t21.js`, adapted
+from `val-t20.js` with the Perseveration exemption **removed** — the house misspelling does not occur
+in this range, so byte-identity against `GG_PS_T21_STAGED` was required and achieved on all 19 stems
+and all 19 option arrays). Also checked and passing: every `answer` index resolving to the staged key
+letter (including **Q121's letter-referencing key E = "A and c"** → index 4), `bank:'gradegain'`,
+`module:'neuropsych'`, every chapter resolving in `MODULES`, boxes reproduced as blockquotes with
+**no** marker on the four boxed entries, marker final on the other 15 and absent from every `source`,
+`source` carrying the staged page, no stray fields, no id collision with the pre-splice 249.
+
+- **Boxes: 4 of 19** — `npqb-ps-120`, `-125` (draft-A), `-134`, `-136` (draft-B). Matches staging exactly.
+- **Words: 463–646, mean 545** across 19. Draft-B's mean (563) runs above draft-A's (538) because
+  seven of its nine carry a tagged gap, a misprint or a divergence.
+- **Chapters: `ps-geri` 9 · `nr-delirium` 8 · `nr-movement` 1 · `ps-symptom` 1.** The seam was split
+  **one question at a time on what the stem is about**, never as a block — dementia stems to
+  `ps-geri`, delirium stems to `nr-delirium`. `npqb-ps-134` went to **`nr-movement`** because
+  Huntington's is *taught* at `mv-9` (inheritance, pathology, the four diagnostic signs, treatment)
+  while `ps-geri` `ge-5` only *names* it in a patho-etiological list; the reason is written into the
+  explanation.
+
+**Two findings the drafters established that contradict a lazy reading of the decks:**
+
+- ⚠️ **Huntington's is filed under the NON-neurodegenerative heading in L13.** That makes Q122's
+  option c arguable **on the deck's own printed text**. Recorded in the explanation; **key D unmoved,
+  not disputed.**
+- ⚠️ **Disorientation is absent from L13's printed "common" list** for dementia. Q127's key is
+  therefore grounded from four other places, and the explanation says so rather than glossing it.
+
+**Gaps filled from outside and tagged, each after a zero-hit sweep run twice by two methods** (`grep
+-ril` with **no `\|` anywhere**, then a Python substring scan over all 25 cached decks): long-term
+memory (0 hits), neologism (named but never defined), systematised delusions (0), "regressive" as
+Q132's keyed word (0 — the decks say "transient, usually reversible"), infidelity (0), CAG /
+trinucleotide (0 — Q134's own box supplies them, noted as the box's), traumatic dementia as a phrase
+(0 — the deck prints "chronic subdural hematoma"), hippocampal atrophy in L13 (0 — **no neuroimaging
+criteria are printed for any dementia**), episodic memory (0), and banded prevalence by age (0 in
+L13 — the deck's only age statement is >65 plus the presenile/senile split). Pick bodies, delirium
+tremens first-line and the CAG repeat were the three tagged in draft-A.
+
+**Defects reproduced as printed, never corrected:** Q121 "Picks body" · Q130 "Elated mode" and
+"Delusion if infidelity" (both local — t20 Q97 prints the distractor correctly; key A untouched by
+either) · Q135's overlapping out-of-order age bands, whose lower bounds sum to 110 % and upper to
+165 %, recorded inside the entry because the stem invites a prevalence answer the deck cannot supply
+· Q136 ending without a full stop.
+
+**Four overlaps flagged, none folded**, each with the discriminating token named inside the
+explanation: Q125↔Q131 (shared menu GAD/MDD/Dementia/Panic; **"Apraxia"** discriminates Q131 against
+Q125's "Blunted affect") · Q124↔t20 Q102 · Q118↔Q127 · Q127↔shipped `npqb-ps-113`.
+
+⚠️ **The letter/name cross-check is still UNAVAILABLE for all 19** — the answer page prints letters
+alone. Two entries (Q134, Q136) have indirect corroboration by name inside their own boxes; the other
+17 have none. This is recorded in the entries as **not performed**, never as passed.
+
+**Two new grep traps, both cost time and neither was in the brief:** `grep -ril "Elated"` returns
+twelve false hits on *related / correlated / dilated*; and a single very long line in
+`theory.neuro.js` defeats `grep -o ".\{300\}…"` **entirely — exit 1, which reads exactly like a
+genuine zero.** Both needed a Python slice to resolve. Add them to the next brief beside the `\|`
+warning.
+
+**Next: topic 22, opening at Q137 on PDF 94 / book p.89.** Its banner reads "Substance-related
+Disorders & **Psychopharmacology**" against the contents page's "…& **Pharmacology**". Psychiatry
+numbering ends at **Q165** in topic 23.
