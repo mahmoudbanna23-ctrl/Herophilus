@@ -2140,3 +2140,75 @@ printed 10 to the 6 as 10 to the 9 on this project — a plausible wrong number,
 Those are verified against the page image and raised if wrong.
 
 Genuine clinical divergences (book versus lecture) are still recorded, with the answer never moved.
+
+## 2026-09-02 — ch.10 "Nutrition": STAGED and HALF DRAFTED. Session killed on a usage limit.
+
+**⚠️ RESUME POINT: draft-A (n:1–n:10) DOES NOT EXIST. draft-B (n:11–n:15) IS COMPLETE.**
+Both drafting agents were launched together and **both died on the same session rate limit**
+(`resets 5pm Africa/Cairo`). draft-B had finished its five entries and closed the array before it
+stopped; draft-A died on its very first step, having read nothing. **Do not resume draft-A's agent —
+launch a fresh one; nothing of its work exists to preserve.**
+
+### What is on disk and validated
+
+- `content\peds\qb-pages\house-ch10-nutrition.array.js` — staging, 15 entries, 31,219 bytes,
+  committed as `25907a2`. Book pp.75–80 = PDF sheets 38R–41L.
+- `content\peds\qb-pages\house-ch10-nutrition.draft-B.js` — **n:11–n:15, 26,585 bytes,
+  `var PEDHD_NUTR_DRAFT_B`.** Validated by me from disk, not taken from the agent's report (it never
+  filed one — it died before reporting): `length 5 · holes 0 · ALL CHECKS PASSED`.
+  Words 498/670/350/588/596, **total 2,702, mean 540** — over the ~250/~520 guide again, a fifth of a
+  chapter costing what a third should. Chapters `nutrition` 2 · `nutrition-vit` 2 · `nutrition-feed` 1.
+  `node --check` clean.
+- **`app\data\questions.peds.js` is UNTOUCHED — nothing was spliced.** Peds stands at **202**.
+
+### Tooling, cut and syntax-checked, ready for the resume
+
+- `tools\bank-harness\val-pd10.js` — byte-identity vs staging · key→index · chapter resolution walked
+  through `module.groups[].chapters[]` · marker-as-final-line · **backtick parity** · the
+  `(Part I, ch.10 Q<n>)` tail anchored on its closer · the word "straddle" required in `source` on
+  **n:2 and n:5** · the single-basename image rule on **n:1 only** (a missing crop is a WARNING here,
+  because the cut comes after drafting) · an `imgAlt` give-away screen for rickets vocabulary **and
+  for laterality** · and a check that **n:8, n:9, n:10 each contain the literal `pedhd-nutr-7`**.
+- `tools\bank-harness\splice-pd10.js` — carve counts **10 and 5**. Live-file tail anchor confirmed.
+- `tools\bank-harness\pd10-draft-brief.md` — the shared brief, 13 sections.
+- ⚠️ **The scratchpad does not survive. If these are gone they are now IN THE REPO, not the scratchpad; the ch.9 pair still exists to re-cut from**
+  (`val-pd9.js` / `splice-pd9.js`) — the diffs are listed above and in the ch.9 block.
+
+### What draft-A must carry when it is relaunched (n:1–n:10)
+
+- Keys n:1..n:10 = **C C D D B E A B C E**. (n:11..n:15 = E A A D D, already drafted.)
+- **n:1 is the chapter's only figure question and it carries TWO panels behind ONE basename** —
+  `image:'q-pd-hd-75'`, a colour photograph of a wrist labelled (a) beside a plain radiograph of the
+  same wrist labelled (b), side by side inside the question box between stem and lead-in.
+  **The crop has NOT been cut.** `imgAlt` = modality and view only, **no finding and no laterality**.
+- **Both straddles are in draft-A**: n:2 (p.75→76) and n:5 (p.76→77) — the answer line falls on the
+  next page in each case; `p` is the page the NUMBER is printed on.
+- ⚠️ **n:7–n:10 print THE SAME FIVE OPTIONS in the same order** (Vitamin D deficiency / Vitamin K
+  deficiency / Kwashiorkor / Marasmus / Cow's milk protein allergy) **with four different keys
+  A, B, C, E.** The comparative table is written **once, in `pedhd-nutr-7`**; n:8/9/10 point at that
+  id and name only their own discriminating token. **A shared menu PAIRS questions, it never folds
+  them.** Nothing in ch.10 is folded.
+- **Keeping the menu, both straddles and the figure in one half is deliberate** — that is why the
+  split is 10/5 rather than 8/7.
+
+### Measurements from the staging pass worth not re-deriving
+
+- **Boiler measured question by question, not assumed:** printed on Q1–Q6, absent on Q7–Q15.
+- **Every key prints as a bare letter** — "Answer: C." with no option name. The letter-vs-name
+  cross-check that catches a mis-keyed transcription is **UNAVAILABLE for all 15 and must not be
+  reported as having passed.**
+- **Zero explanation boxes**, so every ch.10 explanation is authored and every one carries the marker.
+- **Two figures in the whole chapter, both on n:1.** The zero on pp.76–80 is measured: each was
+  rendered as its own half and examined whole.
+- ⚠️ **Duplex show-through extended and PROVEN for sheets 38–41: 39L↔40R, 39R↔40L, 41L↔42R.**
+  p.80's ghost is **p.83 — three book pages away.** The ghost on p.80's blank lower half reads like
+  real content (an ORS option list, "Matthew is a 3-day-old…", a five-option menu ending "Pyloric
+  stenosis") and is **not** on p.81. This is the trap that nearly invented a question in ch.9.
+- **n:1 option B prints "Vitamin B1 deficiency"; n:15 option B prints "Vitamin B deficiency"** with
+  no digit. Both verified at 600 dpi, both correct as printed. Do not harmonise them.
+
+### Next after ch.10 splices
+
+**ch.11 "Gastroenterology"**, opening on book **p.81 = sheet 41 right**, with its own Q1 (Benjamin,
+6-year-old, vomiting and diarrhoea 3 days, key **D** Rotavirus) — that question is the boundary proof
+that ch.10 ends at Q15. **176 questions remain after ch.10**, against a bank measured at 393.
