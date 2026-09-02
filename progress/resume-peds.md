@@ -1933,6 +1933,128 @@ exist, maps ordinal 19 → printed 18, adds a **backtick-parity check** after th
 hazard) and `<scratchpad>\splice-pd9.js` (carve counts 10 and 9). The live file's tail anchor
 `\n}\n];` was re-confirmed present and LF-only after the ch.8 splice.
 
+### ✅ ch.9 DRAFTED, CROPPED, SPLICED AND CLOSED — 2026-09-02. Peds 183 → 202.
+
+Measured from disk after the splice, not taken from any agent's report:
+`Q_PEDS 202 · holes 0 · dups none · unknown chapter none · answer out of range none · missing crops
+none · 19 ch.9 entries, n 1–19 contiguous`. Bytes 810,754 → 892,668. `node --check` clean.
+Pre-splice copy kept at `<scratchpad>\peds-pre-ch9.bak`.
+
+Both halves ran `ALL CHECKS PASSED` under `<scratchpad>\val-pd9.js` **before** the splice, and the
+word counts the validator printed matched each agent's own report exactly — which is the cheap
+cross-check that an agent measured rather than estimated.
+
+Chapter split, 19 questions: **`dev-problems` 8 · `neuro-cp` 7 · `dev-nd` 4**, decided one question
+at a time, never as a block.
+
+### The crop was cut once and looked at TWICE, by two different agents
+
+`app\assets\q\q-pd-hd-69.jpg` — 890×586, 200.5 KB, valid JPEG (FFD8…FFD9, no marker desync), peds
+crop count 118 → 119. Cut at **400 dpi** from sheet 35 right half; the bounding box came from
+column/row ink-density profiles, which is what separated three near-parallel blue lines a naive box
+merges — the photo's own rounded frame, the question box's top border, and its right border.
+
+**A second, unprimed agent read the finished image without being told what it should show** and
+confirmed: no question text, no question number, no option letters, no "Select one answer only", no
+"Answer:" line, no folio, nothing from a neighbouring question. Verdict fit to ship.
+
+⚠️ **The two agents disagree about WHICH edge carries the leftover box border** — the cutter reported
+it grazing the top-right corner from ~1° skew, the reader reports it running the left and top edges
+with right and bottom clean. Both agree it is blue line art over no anatomy. The disagreement is
+recorded rather than resolved; it changes nothing, but it is a reminder that a crop report is a
+reading, not a measurement.
+
+⚠️ **The reader added a constraint my brief did not have: the alt text must not state LATERALITY.**
+The crop does not reliably establish which eye it is — the medial canthus could not be confirmed. The
+stem says "one of her eyes", so nothing needs it. Shipped alt text, which passes:
+`Colour close-up photograph of one eye of a young infant, taken from the front.`
+Also from the reader: the dark corneal disc is dense and iris detail is lost, so this crop supports a
+question turning on **the presence of a white pupillary reflex and nothing finer.** No later question
+may be built on detail from it.
+
+### Divergences recorded, three, and no `answer` moved
+
+1. **Q3.** The book keys **0–12 months** for the onset of spastic bilateral CP; `dev-problems`[0] puts
+   motor problems in "the first 18 months", a window spanning options A and B. Noted, key unmoved.
+2. **Q11.** The delay lecture's own eight-test panel does not include creatine kinase; the book keys a
+   test taught in the floppy-infant lecture (`neuro-nm`). Right test for the child described, drawn
+   from a sibling chapter. Noted, key unmoved.
+3. **Q12.** ⚠️ **The book's entire five-option menu is built from the topographic CP terms**
+   (hemiplegia / diplegia / quadriplegia) that `neuro-cp` explicitly says are **superseded by SCPE**.
+   Both vocabularies are on the syllabus so the answer is unambiguous. Noted, key unmoved.
+
+Q17 option E's wording drift ("while sitting still" against the taught "or squirms in seat") noted;
+key C either way. Printing defects preserved byte-identically: "fiits" ×5, Q7's unhyphenated "left
+handed" against Q4's hyphenated "Left-hand preference" (noted in both entries), Q17 option D's
+missing comma, the second Q18's missing comma, Q18(first) option E's bare "Fragile X", curly quotes,
+en dashes, "specializing".
+
+### Ten outside-knowledge tags, each with the grep that established the gap
+
+Asperger syndrome's eponym (zero) · developmental coordination disorder described (one hit, named
+only as an ADHD comorbidity) · when true handedness emerges (threshold printed, no timetable) ·
+deaf infants babble then fail to progress · ROP screening criteria and end-stage leukocoria
+(`perinatal` gives cause and the 5 % laser figure only) · retinoblastoma as the other cause of
+leukocoria (zero) · cranial US through the open fontanelle and its ~20-month closure (zero; every
+neurological "ultrasound" hit is neonatal) · an early settled hand preference meaning the OTHER side
+is weak · vitiligo as an autoimmune association (one hit, and it is B12 deficiency) ·
+**selective mutism** (zero across all 59 cached lecture files and zero in `theory.peds.js`).
+
+### ⚠️ "Grep the CONCEPT, not the term" was paid for TWICE MORE in this chapter
+
+- **"creatine kinase" returns zero — but the material teaches plasma CK in full.** The abbreviation
+  is what is printed.
+- **"cranial US" returns zero — but cranial ultrasound is taught in three chapters.**
+
+Either zero, taken at face value, would have shipped a false gap claim. Also re-caught, exactly as
+warned: red reflex and NIPE, cataract, West syndrome / hypsarrhythmia, TORCH, and Egypt's heel-stick
+TSH screen are all present and none is a gap.
+
+### Three more faults in my own brief, all confirmed against disk
+
+1. **`normal-dev`'s section ids run `nd-1`…`nd-17` and my §-numbers were one off** — limit ages are
+   `nd-4`/`nd-5`, primitive reflexes `nd-12`, red flags `nd-15`. My "§4 the limit-age table" was
+   `sections[4]`, a 0-based index wearing a § sign, i.e. the *fifth* section.
+2. ⚠️ **`T_PEDS['dev-nd']`'s 9 sections are `dp-9`…`dp-17`** — they continue the `dev-problems`
+   numbering rather than starting an `nd-` run. Grepping `nd-` in that chapter returns a **false
+   zero**.
+3. **The staging header overstates Q14** — it calls Hassan's hand skills age-appropriate, but a
+   3-block tower is the 15–18-month row and prematurity correction stops at 2 years, so fine motor is
+   behind too. The legs-worse-than-arms contrast the stem rests on survives; key unaffected.
+   My drafting prompt for draft-A also said the boiler was on all ten of its questions; the staging
+   record had measured it on **Q1–Q6 only**, and the agent correctly followed the staging record.
+
+### The broken-probe signature fired again, on a different probe
+
+draft-B's first validator run failed **identically on all nine entries**. It had read
+`module.chapters`, which is `undefined` — chapters live at `module.groups[].chapters[]` as
+`[id, title]` pairs. **The file was never wrong.** Same shape as my own false failure on ch.8's
+`pedhd-dev-11`. *A run where everything fails identically is a broken probe, not broken data* now has
+three instances on this project.
+
+### The backslash trap fired on ME this time, not on an agent
+
+My own verification probe used a `[\\]` character class inside a double-quoted `node -e`. The Bash
+tool collapsed it to `[\]` and node died on an unterminated regex. Rebuilt with
+`String.fromCharCode(92)`. Confirmed afterwards at byte level that Q18's tag holds
+`content\peds\lectures\` with **single** backslashes at runtime, which is correct.
+
+### Length — over budget again, and reported rather than trimmed
+
+draft-A 372–753, mean 528. draft-B 347–676, mean 513. **Chapter total ≈ 9,340 words for 19
+questions**, against a ~250/~520 adaptive guide. Both agents cut their own overruns before returning
+(draft-A trimmed Q1/Q4/Q5/Q6 from 638/610/678/794 without dropping a citation) and both flagged what
+remained instead of hiding it. The mechanism that worked: **the shared CP-type table lives once, in
+Q12 (668 words), and Q13–Q16 point at it and came in at 347–408.** Every one of the 19 is a
+five-option vignette carrying four distractor refutations.
+**The hard-ceiling question is still open with the user and is deliberately not decided here.**
+
+### Next: ch.10 "Nutrition"
+
+Opens on **PDF sheet 38 right = book p.75**, its own Q1 (Sunit, 13-month-old, faltering growth,
+figures (a)/(b), key C), continuing on sheet 39. **191 questions remain** against a bank measured at
+393.
+
 ## 2026-09-02 — SESSION CLOSED. Everything needed to resume is now on disk, not in a chat.
 
 This chat is being retired deliberately. Before it goes, everything that lived only in the session
