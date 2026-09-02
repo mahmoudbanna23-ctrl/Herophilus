@@ -151,6 +151,32 @@ Your one output file. **No git. No `app\`. No `MEMORY.md`. No `progress\`. Nothi
 around `content\peds\qb-pages\endpoint-s01-growth-puberty.draft.js`**, parked endpoint work under a
 user deferral ruling. **Skip any OSCE content entirely** — say you skipped it and why, then carry on.
 
+### 11a. ⚠️ THE PAEDIATRIC SURGERY PART IS ENTIRELY OUT OF SCOPE (user ruling, 2026-09-02)
+
+The back of this PDF is a **Pediatric surgery** section. **It is ignored completely** — not deferred,
+not sampled, not counted, not mentioned in a count. Do not render it, do not transcribe it, do not
+let it into any total.
+
+**Where it starts, measured:**
+
+| | |
+|---|---|
+| Last House MCQ page | **book p.148 = PDF sheet 75, LEFT half** — the oncology chapter's Q22 (red reflex in one eye), "Answer. A." |
+| Surgery title page | **book p.149 = PDF sheet 75, RIGHT half** — reads "Pediatric surgery / end-of-round MCQs" over a "Question resources used" list |
+| Surgery runs to | the end of the file — **PDF sheet 104**, about book p.207 |
+
+**So the House MCQ bank you are staging lives in book pp. ≤ 148 / PDF sheets ≤ 75-LEFT. Nothing
+beyond that is ever in range.**
+
+⚠️ **The surgery part is not MCQ-shaped and will not look like the rest of the bank.** It is numbered
+short-answer facts — "1. Incidence of esophageal atresia: 1 in 3000–4500 live births", "12. Treatment
+of IHPS: Ramstedt's pyloromyotomy" — with no options and no answer letter. Its numbering **restarts
+at 1**, so a numbering restart near the back of the book is **not** a new House chapter. Its running
+header still prints the word "MCQs" and still prints "HOUSE"; **neither makes it in scope.**
+
+If your render-one-past (§6) lands on p.149 or later, that **is** your boundary proof: quote the
+surgery banner, say the chapter ended, and stop. Do not continue into it.
+
 ## 12. When the page is unclear
 
 **Escalate to the parent rather than guessing.** An illegible numeral, a key that will not resolve,

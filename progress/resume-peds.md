@@ -2430,3 +2430,59 @@ been more dangerous than an inaccurate message.
 `git branch -v` now shows **`main` at `6f27079`, ahead of `origin/main` by 4**, and the local
 `design/clepsydra-and-sessions` left behind at `119a825`. **Work is on `main` now** — that part
 matches the plan. Nothing has been pushed.
+
+---
+
+## ⚠️ USER RULING 2026-09-02 — the paediatric surgery part is entirely out of scope
+
+> *"the PDF has a surgery part at the end, it must entirely get ignored"*
+
+**Ignored completely — not deferred, not sampled, not counted.** Measured the boundary immediately
+rather than taking the ruling on trust, because it moves the end of the whole peds stream.
+
+### Where it starts, measured off the OCR index
+
+| | |
+|---|---|
+| Last House MCQ page | **book p.148 = PDF sheet 75, LEFT** — oncology Q22 (red reflex present in one eye only), `Answer. A.` |
+| Surgery title page | **book p.149 = PDF sheet 75, RIGHT** — "Pediatric surgery / end-of-round MCQs" over a "Question resources used" list naming end-of-round exams, final exams and department questions of the Egyptian program |
+| Surgery runs to | end of file — **PDF sheet 104**, about book p.207 |
+
+**The House MCQ bank therefore ends at book p.148 / PDF sheet 75-LEFT. That is the hard back edge of
+the peds stream.** Everything past it is out of scope for good.
+
+### Three things this corrects
+
+1. ⚠️ **The standing note "`content\peds\qb-pages\ocr\` 139 files (book pp.32–151 = all remaining
+   peds House)" is WRONG at its top end.** pp.149–151 are surgery, not House. The OCR cache covers
+   **House pp. ≤148 plus three stray surgery pages**. Correct reading of the cache: 138 half-page
+   files, sheets 008–076, of which `R-075`, `L-076` and `R-076` are surgery and must never be used.
+2. ⚠️ **The PDF is 104 sheets, and OCR only ever reached sheet 76.** Sheets 77–104 — roughly book
+   pp.152–207, about **28% of the file** — were never OCR'd. That gap is now permanent and correct:
+   it is all surgery. **Nobody should ever be sent to "finish the OCR".**
+3. ✅ **The measured bank total of 393 is NOT contaminated by surgery.** Counted line-start answer
+   lines: **346 across the House range, 0 across all three surgery pages.** The surgery part carries
+   no answer lines at all to be swept up. (346 is a floor, not a rival figure — the OCR index drops
+   answer lines that do not start their line, which is exactly why the rendered-page measurement of
+   393 is the one that stands. Do not "reconcile" 346 against 393.)
+
+### Why it cannot be mistaken for a House chapter later
+
+⚠️ **It is not MCQ-shaped.** Numbered short-answer facts, no options, no answer letter — *"1.
+Incidence of esophageal atresia: 1 in 3000-4500 live births…"*, *"12. Treatment of IHPS: Ramstedt's
+pyloromyotomy."* Its numbering **restarts at 1**, so a numbering restart near the back of the book is
+**not** evidence of a new House chapter. Its running header still prints **"MCQs"** and still prints
+**"HOUSE"** — neither makes it in scope. This is the trap: the header lies and the format is the tell.
+
+### Where it is written down
+
+`tools\bank-harness\pd-staging-brief.md` **§11a**, so every future staging agent inherits it without
+being told. The brief's render-one-past rule (§6) now says that landing on p.149 **is** the boundary
+proof: quote the banner, stop, do not continue.
+
+### Effect on the chapter now in flight
+
+**None.** ch.11 Gastroenterology is book pp.81–89 with p.90 as the one-past check — 59 pages clear of
+the boundary. The running staging agent was deliberately **not** interrupted with this: perturbing a
+mid-transcription agent has a real cost and it cannot reach p.149 from its range. The rule is
+recorded where the *next* agent picks it up instead.
