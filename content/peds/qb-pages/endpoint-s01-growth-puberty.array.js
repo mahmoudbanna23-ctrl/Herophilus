@@ -31,8 +31,11 @@
    ⚠️ THE PRINTED NUMBER IS THEREFORE NOT AN IDENTIFIER. `n` below is the
    TRUE SEQUENTIAL index 1..89; `pr` is what the page actually prints.
 
-   BOXES: 86 of 89 carry a printed explanation box. The three that do NOT are
-   n=45 (p.119), n=83 (p.197), n=87 (p.205).
+   BOXES: 85 of 89 carry a printed explanation box. The four that do NOT are
+   n=45 (p.119), n=55 (p.139), n=83 (p.197), n=87 (p.205).
+   [2026-09-02: this line said 86 with n=55 "treated as boxed-consistent". p.139 was
+   re-rendered and read by the watch: key d highlighted, NO box. Moved to the unboxed list,
+   as the n=55 note itself asked. The draft file had it right all along.]
 
    FIGURES: none. Not one question in this section prints an image. (The file's
    own p.4 says picture questions are "self-assessment ... the exam does not
@@ -379,7 +382,7 @@ var PEDEP_S01_STAGED = [
   stem:'The infantile growth phase accounts for approximately how much of eventual height?',
   opts:['40%','30%','20%','15%'],
   expl:'',
-  note:'⚠️ The box could not be read as printed on this page; the summary slide p.7 states "Infantile phase (15% of final height)", which corroborates the key. Treat as boxed-consistent; if the hub re-renders p.139 and finds no box, move this entry to the unboxed list.' },
+  note:'NO BOX on p.139 — re-rendered and read 2026-09-02: key d highlighted, nothing printed below the options. Unboxed, like n=45/83/87. The summary slide p.7 states "Infantile phase (15% of final height)", which corroborates the key.' },
 
 { n:56, pr:56, p:141, key:0,
   stem:'What is the most common cause of faltering growth in infants?',
