@@ -101,26 +101,20 @@ FALSE marker, not 143 missing; theory rows 76, 0 open). Close-out: `progress\res
   name the discriminating token or you matched a template** · **grep the SIGN, not just the
   disease name, before any absence claim** · `bounds.js` cannot bound a figure inside a text
   column — use a column/row density profile.
-- **MOVED 2026-09-01 ->** ophtho bank arithmetic * ~304 image questions + crop craft * ENT general traps.
-  Arithmetic is also in full in `progress\briefs\ophtho-bank-brief.md`; ENT is CLOSED.
+- **MOVED 2026-09-01 ->** ophtho bank arithmetic (also `progress\briefs\ophtho-bank-brief.md`) * image/crop craft * ENT traps.
 - **Write-incrementally survives usage limits** — resume by `Edit`-appending, never `Write`. A dead
   agent whose last words name a fault leaves a KNOWN-BAD file — check that spot first.
 - **⚠️⚠️ Contradictions are RECORDED, never corrected — the `answer` NEVER moves**; the note goes
   in `explanation`, quoting the slide (four shapes: archive, "ENT contradiction shapes").
-- **MOVED 2026-09-01 ->** "briefs corrected sixteen times" + the six blind instruments. The rule itself --
-  **TRUST THE STAGING AND THE TRANSCRIPT OVER THIS PROMPT** -- is in both chat briefs already.
-- **A book's own chapter numbers can be defective** (House printed 9 twice) — chapter by content.
-- **MOVED 2026-09-01 ->** the theory-complete pointer bullet. **Theory is 153/153, closed.**
+- **MOVED 2026-09-01 ->** "briefs corrected sixteen times" + six blind instruments; the rule **TRUST THE STAGING AND THE TRANSCRIPT OVER THIS PROMPT** is in both chat briefs.
+- **A book's own chapter numbers can be defective** (House printed 9 twice) — chapter by content. **Theory is 153/153, closed** (pointer bullet MOVED 2026-09-01).
 - **⚠️⚠️ REAL EXAM DATES (user, 2026-08-13):** Peds OSCE **14 Sep** · Peds papers **17 Sep** ·
   ENT **22 Sep** · Ophtho **27 Sep** · Neuro **3 Oct** · Peds papers **18–19 Oct**. Nothing is
   dropped — banks are deferred, not cut; stop at clean topic boundaries.
-- Untracked `content\peds\qb-pages\endpoint-s01-growth-puberty.draft.js` is PARKED endpoint work —
-  never stage or edit it from the hub. (`gg-ps-t16.*` spliced and committed 2026-08-31.)
 
 ## Governing decisions (verbatim rulings in the archive)
 
-- **MOVED 2026-09-01 ->** the theory-era rulings (hub writes all theory * format = `START-HERE.md` 14 *
-  chapters are SPLIT, <=13 pp measured by printing). **Read them before any theory edit.**
+- **MOVED 2026-09-01 ->** the theory-era rulings (hub writes all theory * `START-HERE.md` 14 format * chapters SPLIT, <=13 pp). **Read them before any theory edit.**
 - **Writing budget, banks (2026-08-13, supersedes "full depth everywhere"):** adaptive depth — ~520 w for
   vignettes/defects/divergences/gap-fills, **~250 w for straight slide-recall**, every distractor still
   explained; shared tables in ONE entry, siblings point at an **existing** id; `source` is a citation,
@@ -132,8 +126,7 @@ FALSE marker, not 143 missing; theory rows 76, 0 open). Close-out: `progress\res
 
 - **Read every answered page; trust no count** — not printed numbering, not the contents page, not the map (ranges 21/21 right, counts 17/21 wrong, always upward). **Render one page past the last.**
 - **Run the full six-stage duplicate sweep (A–F) on every topic**; folds ran 0–20 with no trend and **the rankings are the instrument**. **Say why a zero is a zero, and say how it was measured.** Grep drafted blocks for a folded id **before** splicing; re-run the dead-id check after every fold. ⚠️ Marker deltas, mis-keyed banks and the sweep's defect shapes 1–6: `progress\memory-archive.md`.
-- **MOVED 2026-09-01 ->** "read the slide before declaring a gap" -- paid 17 times, the 29 (not 34) cached
-  ophtho decks, the two-decks-agreeing trap. ⚠️ **Read it before writing any absence claim.**
+- **MOVED 2026-09-01 ->** "read the slide before declaring a gap" (paid 17 times; 29 not 34 ophtho decks). ⚠️ **Read it before any absence claim.**
 - **⚠️ Bank sampling and provenance: `progress\memory-archive.md`** — a contents page may print per-section counts (**verify, never trust**); the end-of-ENT "outside knowledge" list is **half wrong**, re-grep item by item; 67 entries record no provenance, roster in `ledger.md` §11.
 
 ## Validation state
@@ -158,10 +151,8 @@ FALSE marker, not 143 missing; theory rows 76, 0 open). Close-out: `progress\res
   first) · `content\neuro\qb-pages\ocr\` **2 only** + `nb-anchors.txt` · **`tools\bank-harness\`**
   (`norm.js`, `sweep-pd4/5.js`, **`splice-ch04.js`** = the validate-then-splice model to copy per
   chapter, `vB.js`, `wc.js`, `d17.js`, `dx.py`).
-- **MOVED 2026-09-01 ->** theory chapter counts * the 2026-08-30 `file://` boot * the scratchpad harness roster.
-  Two warnings stay here: ⚠️⚠️ **THE SCRATCHPAD STARTS EMPTY AND THE HARNESSES ARE NOT IN THE
-  CURRENT ONE — `find` the temp root and LIST it; never guess a harness name.** ⚠️⚠️ **`Array.filter`
-  SKIPS SPARSE HOLES — index it: `for i… if(!(i in A))`.**
+- **MOVED 2026-09-01 ->** theory chapter counts * the 2026-08-30 boot * scratchpad harness roster. ⚠️⚠️ **A NEW
+  SCRATCHPAD STARTS EMPTY — LIST it, never guess a harness name.** ⚠️⚠️ **`Array.filter` SKIPS SPARSE HOLES — index it.**
 - **⚠️ THE THEORY READER IS AN A4 PAGE (2026-08-19, three user complaints) AND MUST NOT BE MADE WHITE.** 210:297 by `aspect-ratio`; **margins set in JS from the PAGE's width** (percentages resolve against the containing block). Mechanics in the archive. **⚠️⚠️ `overflow:hidden` MAKES A BLOCK MONOLITHIC, AND MONOLITHIC MEANS CLIPPED, NOT BROKEN** — `.th-table` silently lost over-tall tables' last rows. Fixed screen-side; print never affected.
 - **⚠️ A draft header is a claim, not a measurement — re-count from disk after the final edit.** Wrong nine times; **the sum check alone no longer suffices.** Page divisors: resume block + plan §4.
 
