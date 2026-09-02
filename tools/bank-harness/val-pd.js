@@ -118,6 +118,21 @@ D.forEach(q => {
   // text. node --check never sees it. Parity is the only cheap instrument.
   if ((q.explanation.split(BT).length - 1) % 2) fail.push(q.id + ': ODD BACKTICK COUNT in explanation');
 
+  // An explanation is addressed to a student, who has never seen the brief, the staging record
+  // or the split. Five ch.11 explanations shipped "per the task prompt" / "as the brief asks" /
+  // "one of this range's awkward assignments" and ALL FIVE PASSED -- nothing was looking for it.
+  // The substance was right; only the framing was addressed to the drafter's reader instead of
+  // the student's. Also catch n:<num>, which is staging notation: a sibling is named by its id
+  // in backticks, the convention ch.10 set.
+  const LEAK = /task prompt|per the prompt|as instructed|staging record|the brief (?:ask|say|require|want|call)|brief['’]s rule|\bhalf [ABC]\b|draft-[ABC]\b/i;
+  const lk = LEAK.exec(q.explanation);
+  if (lk) fail.push(q.id + ': DRAFTING-PROCESS LANGUAGE in explanation -- "' + lk[0] + '"');
+  const nn = q.explanation.match(/\bn:[0-9]+/g);
+  if (nn) fail.push(q.id + ': staging notation ' + [...new Set(nn)].join(' ') + ' in explanation -- name the sibling by its id in backticks');
+  // "in this range" is how the drafter refers to their own half, but a clinical value can also
+  // sit in a range, so this one is only worth a look.
+  if (/\bin this range\b/i.test(q.explanation)) warn.push(q.id + ': "in this range" -- check it means a clinical range, not the drafted block');
+
   if ((q.source || '').indexOf('p.' + s.p) < 0) fail.push(q.id + ': source does not carry p.' + s.p);
   // The tail may close on ")" or continue with ";" or "," when a straddle note follows.
   // Anchor on the closer so Q1 cannot match Q15.

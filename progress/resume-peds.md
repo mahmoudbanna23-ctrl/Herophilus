@@ -2559,6 +2559,21 @@ read there is re-sent with every later request).
 integrity check above was run in node against the loaded arrays instead — it proves the data, not
 the render.
 
+### ✅ The process-language leak now has an instrument (added after the commit, `6073dae`)
+
+The fault above was found by eye, which is not repeatable. Both ends are now closed:
+
+- **`val-pd.js` FAILS** on `task prompt` · `per the prompt` · `as instructed` · `staging record` ·
+  `the brief asks/says/…` · `brief's rule` (either apostrophe) · `half A|B|C` · `draft-A|B|C`, and
+  on any `n:<num>` in an explanation. **WARNS** on `in this range` — a clinical value can sit in a
+  range, so that one is a look, not a verdict. Negative-tested against the five real ch.11
+  offenders (all caught) and against *"a serum sodium in this range"* (correctly only a warn).
+  ch.10 A/B and ch.11 A/B/C all still return `ALL CHECKS PASSED`, no new warnings.
+- **`pd-draft-brief.md` §7** gained *"An explanation is addressed to a student, never to me"* — the
+  banned phrases, the id-in-backticks convention for naming a sibling, and the grep to run before
+  reporting. It says plainly that all five offenders passed the validator, so the agent knows no
+  instrument was covering it.
+
 ### Resume
 
 **Next: ch.12.** Peds now **243 of a measured 393**; 150 remain. Bank ends at book **p.148 /
