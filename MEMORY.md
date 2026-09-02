@@ -25,10 +25,8 @@ CLAUDE.md - 2026-09-02` — **no live rule left it.** ⚠️ **Never quote a per
 
 ## Resume here — state at end of 2026-09-02
 
-**Chat B (peds House + neuro) relaunches from `progress\resume-2026-09-02-chatB-peds.md`** (the
-08-31 prompt is STALE). Its ch.12 neurological harness entry + neuro giveaway regex were committed
-`b45af03` 2026-09-02 by the watch; **tree clean, main == origin/main.** `house-ch12-neurological.array.js`
-does not exist yet.
+**Chat B relaunches from `progress\resume-2026-09-02-chatB-peds.md`** (08-31 prompt STALE). Its ch.12
+harness entry committed `b45af03`; **tree clean, main == origin/main**; no ch.12 staging file yet.
 ✅ ENT CLOSED (`ledger.md` §15–§16). ✅ **OPHTHO CLOSED 2026-09-02** — **1,598**, 0 holes, CLEAN,
 boots; all 3 carried debts cleared (2 had been recorded backwards here — the marker debt was 1
 FALSE marker, not 143 missing; theory rows 76, 0 open). Close-out: `progress\resume-ophtho.md`.
@@ -38,8 +36,7 @@ FALSE marker, not 143 missing; theory rows 76, 0 open). Close-out: `progress\res
   — resume at drafting. ⚠️ ch.9 prints **"18." twice with no Q19**, tokens `dev-problems`/`dev-nd`,
   boiler is a **fifth shape**. Peds OSCE **14 Sep**, nearest exam.
 - ⏳ **PEDS ENDPOINT part 1 — READY TO LAUNCH 2026-09-02, not launched; part 2 deferred by the user.**
-  All prep pushed. Scratchpad `ep1-index\` (~1 GB images) NOT deleted — permission denied twice;
-  user deletes by hand; rebuild is one command if ever needed.
+  All prep pushed. Scratchpad `ep1-index\` (~1 GB images) NOT deleted (permission denied); user deletes by hand.
   Prompt **`progressesume-2026-09-02-peds-endpoint.md` v3** (paste whole into a fresh Opus chat).
   Step zero DONE: `index.html` + `questions.js` wired, `app\data\questions.peds.ep.js` exists empty
   (`var Q_PEDS_EP`), boot check 0 errors. Section 1 (89 q, pp.5–210) staged+drafted, **85 boxed,

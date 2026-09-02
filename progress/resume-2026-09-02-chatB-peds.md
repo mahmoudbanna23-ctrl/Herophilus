@@ -83,7 +83,8 @@ live.** `main` was fast-forwarded in place with `git branch -f main HEAD` instea
 
 **Run `git rev-parse main HEAD` before any branch action.** Do the real `git checkout main` only when
 no parallel chat is running. The drift restarts with every commit made while the design branch is
-checked out. Nothing has been pushed since `b9937b4` — `git push` works with no prompt if you want it.
+checked out. As of `cf45bb6` (2026-09-02) `main` is checked out, clean, and equal to `origin/main`;
+your ch.12 harness edits (`val-pd.js`/`splice-pd.js`) are committed in `b45af03`.
 
 ## PARALLEL-CHAT RULES — audited, and they hold
 

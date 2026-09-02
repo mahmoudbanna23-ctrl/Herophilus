@@ -31,8 +31,8 @@ If git reports `index.lock`, Chat B is mid-commit: **wait and retry, never delet
 `tools\bank-harness\splice-pd.js` · `tools\bank-harness\val-pd.js` · `*-pd10.js`.
 
 ⚠️⚠️ **`splice-pd.js` and `val-pd.js` write Chat B's live file** (`splice-pd.js` line 17 hardcodes
-`questions.peds.js`; its duplicate guard lets `pedep-` ids straight through). Both are **modified
-and uncommitted in Chat B's working tree** — never stage them, never run them on endpoint files.
+`questions.peds.js`; its duplicate guard lets `pedep-` ids straight through). Both are **Chat B's
+files** (their ch.12 edit was committed `b45af03`) — never stage them, never run them on endpoint files.
 Your harness is `val-pd-ep.js` / `splice-pd-ep.js`, and **every splice you ever run is
 `splice-pd-ep.js`.**
 
