@@ -22,6 +22,8 @@ const R = 'D:/claude os/Medical school/Herophilus/';
 const SEC = {
   1: { prefix: 'pedep-gp-', file: 'endpoint-s01-growth-puberty.array.js', svar: 'PEDEP_S01_STAGED',
        draft: 'endpoint-s01-growth-puberty.draft', chapter: 'growth-puberty' },
+  2: { prefix: 'pedep-nut-', file: 'endpoint-s02-nutrition.array.js', svar: 'PEDEP_S02_STAGED',
+       draft: 'endpoint-s02-nutrition.draft', chapter: 'nutrition' },
 };
 
 // imgAlt must give MODALITY AND VIEW ONLY. Naming the finding answers the question --

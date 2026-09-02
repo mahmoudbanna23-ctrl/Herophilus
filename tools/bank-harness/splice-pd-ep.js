@@ -23,6 +23,8 @@ const QB = R + 'content/peds/qb-pages/';
 const SEC = {
   1: { prefix: 'pedep-gp-', staging: 'endpoint-s01-growth-puberty.array.js', svar: 'PEDEP_S01_STAGED',
        draft: 'endpoint-s01-growth-puberty.draft' },
+  2: { prefix: 'pedep-nut-', staging: 'endpoint-s02-nutrition.array.js', svar: 'PEDEP_S02_STAGED',
+       draft: 'endpoint-s02-nutrition.draft' },
 };
 
 const HEADER = `/* Pediatrics ENDPOINT questions (Pediatrics endpoint part1.pdf).
