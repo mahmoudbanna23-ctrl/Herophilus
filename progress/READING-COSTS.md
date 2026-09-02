@@ -1,4 +1,12 @@
-# What it costs to open a file in `progress\` — measured 2026-09-01
+# What it costs to open a file in `progress\` — re-measured 2026-09-02
+
+⚠️ **RE-MEASURE BEFORE YOU QUOTE ANY NUMBER BELOW.** The three module journals grew by
+**44%, 94% and 143%** in a single day (2026-09-02) because the chats are journalling properly.
+Every figure here has a date on it and none of them is durable. One command:
+
+```bash
+cd "D:/claude os/Medical school/Herophilus/progress" && wc -lc *.md briefs/*.md
+```
 
 Your context window is **200,000 tokens**. Four files in this folder are large enough to take a
 serious bite out of it, and **one is larger than the whole window.** This file exists so you can
@@ -12,12 +20,12 @@ check a price before you pay it.
 |---|---|---|---|---|
 | 🔴 `ledger-closed-1-16.md` | 720,864 | 10,212 | **~180k** | **almost your whole window.** `grep -n` / `sed` only — never whole |
 | 🔴 `briefs\START-HERE.md` | 191,038 | — | **~48k** | `sed` the one section you were sent to |
-| 🔴 `memory-archive.md` | 141,409 | 853 | **~35k** | `grep -n "^## "` then `sed`. ⚠️ its lines are enormous — a single line can be 8k+ chars, so `grep` without `-o` can dump more than the section |
+| 🔴 `memory-archive.md` | 147,434 | 931 | **~37k** | `grep -n "^## "` then `sed`. ⚠️ its lines are enormous — a single line can be 8k+ chars, so `grep` without `-o` can dump more than the section |
+| 🔴 `resume-ophtho.md` | **152,673** | 2,286 | **~38k** | **anchor** → **~18k**, no longer cheap |
+| 🔴 `resume-peds.md` | **142,660** | 2,142 | **~36k** | **anchor** → **~25k**, no longer cheap |
 | 🔴 `token-economy\plan.md` | 106,287 | — | **~26k** | closed project. Do not open unless asked |
 | 🟠 `ledger.md` | 128,548 | 1,737 | ~32k | index first (top of file), then `sed` the section |
-| 🟠 `resume-ophtho.md` | 105,678 | 1,544 | ~26k | **anchor** → ~6k |
-| 🟠 `resume-peds.md` | 73,601 | 1,126 | ~18k | **anchor** → ~8k |
-| 🟠 `resume-neuro.md` | 35,100 | 529 | ~9k | **anchor** → ~2.5k |
+| 🟠 `resume-neuro.md` | **85,150** | 1,246 | **~21k** | **anchor** → **~15k** |
 | 🟡 `briefs\ophtho-bank-brief.md` | 25,297 | 378 | ~6k | read whole — it is a brief |
 | 🟢 `resume-2026-08-31-chat*.md` | ~10–15k | — | ~3–4k | read whole — they are the entry point |
 
@@ -47,8 +55,23 @@ is closed history.
 sed -n '/RESUME-READ-FROM-HERE/,$p' progress/resume-ophtho.md
 ```
 
-That is the **only** way these three files should be opened at session start. Measured saving:
-**147k chars ≈ 36k tokens across the two parallel chats.**
+That is the **only** way these three files should be opened at session start.
+
+⚠️ **THE ANCHOR NO LONGER MAKES THESE FILES CHEAP — it only makes them survivable.** Measured
+2026-09-02, with the chats mid-run:
+
+| journal | whole | anchored |
+|---|---|---|
+| `resume-ophtho.md` | 152,673 ≈ 38k | **72,749 ≈ 18k** |
+| `resume-peds.md` | 142,660 ≈ 36k | **100,844 ≈ 25k** |
+| `resume-neuro.md` | 85,150 ≈ 21k | **59,637 ≈ 15k** |
+
+The saving is still ~147k chars ≈ 37k tokens, but **what is left after the anchor has grown 3–6×**:
+Chat A's anchored ophtho read is now **~18k**, and Chat B opens two journals for **~40k combined**
+— against the ~6k / ~8k / ~2.5k the chat briefs still quote. Those brief figures are **stale; this
+table wins.** The anchor is a marker at the start of the 2026-08-31 work, so everything written
+since accumulates below it and the anchored tail only ever grows. **When the tail passes ~30k, the
+journal needs a second anchor at the current date — not a trim.**
 
 ## Reaching into a red-band file
 

@@ -30,9 +30,8 @@ CLAUDE.md - 2026-09-02` — **no live rule left it.** ⚠️ **Never quote a per
 `progress\resume-2026-08-31-chatA-ophtho.md` and `…-chatB-peds-neuro.md`** (both corrected
 tonight; the 429 rule in their first version was wrong). ✅ ENT CLOSED (`ledger.md` §15–§16).
 
-- ⏳ **OPHTHO — 151 staged questions left against 27 Sep, all Grade Gain; ophtho now 1,485.**
-  ✅ **House CLOSED at ch.20**; GG shipped through **EE4**. Staged, unshipped: **EE5 20** (⚠️ its
-  draft is **15 of 20 while its own header claims 20** — append, never rewrite) · **EE6 35**, the
+- ⏳ **OPHTHO — staged Grade Gain questions left against 27 Sep; count in "Validation state",
+  never here.** ✅ **House CLOSED at ch.20**; GG shipped through **EE5**. Staged: **EE6 35**, the
   only image-heavy batch left (⚠️ Q34–Q35 sit on p.**159** beside the Answers banner; a reader who
   stops at p.158 counts 33) · Tutorial 27 · Final 69. ⚠️ Delete `app\data\questions.ophtho.js.bak`
   (1,470 q) — it loads if anything globs `app\data\*.js`. Close-out: `progress\resume-ophtho.md`.
@@ -137,13 +136,13 @@ tonight; the 429 rule in their first version was wrong). ✅ ENT CLOSED (`ledger
 
 ## Validation state
 
-- **Corpus 4,265** (2026-09-02 — **measured by loading each array and reading `.length`**, sparse
-  holes checked with `for i… if(!(i in A))`; zero holes, every file `eval`s clean): ENT **2,322**
-  (2,240 q + 82 c) · **Ophtho 1,485** (1,485 q + 0 c) · Neuro **275** (268 q + 7 c) ·
-  Peds **183** (183 q + 0 c); **118 images**. ⚠️ **A `file://` boot has NOT been run since
+- **Corpus 4,304** (2026-09-02, **chats mid-run — re-measure before quoting; it drifts by the
+  commit**. Loaded each array and read `.length`; sparse holes checked with `for i… if(!(i in
+  A))`, zero holes, every file `eval`s clean): ENT **2,322** (2,240 q + 82 c) · **Ophtho 1,505**
+  · Neuro **275** (268 q + 7 c) · Peds **202**; **119 images**. ⚠️ **No `file://` boot since
   2026-08-30** — an `eval` check is not a boot check. Keys `ent`, `ophtho`, `pediatrics`,
-  `neuropsych`. Options 2–9 coexist. ⚠️ **`grep -c "^  { id:"` UNDERCOUNTS `questions.ophtho.js`**
-  (mixed CRLF/LF, mixed indentation) — **load the array, or use the tolerant id regex.**
+  `neuropsych`. Options 2–10 coexist. ⚠️ **`grep -c "^  { id:"` UNDERCOUNTS
+  `questions.ophtho.js` BY 440** (1,065 vs 1,505) — **load the array.**
 - **✅ CACHES AND HARNESS NOW LIVE IN THE REPO, not a scratchpad** (2026-09-02):
   `content\peds\qb-pages\ocr\` **139 files** (book pp.32–151 = all remaining peds House; grep
   `ph_all.txt` first) · `content\neuro\qb-pages\ocr\` **2 only** + `nb-anchors.txt` (neuro map) ·
@@ -181,7 +180,7 @@ tonight; the 429 rule in their first version was wrong). ✅ ENT CLOSED (`ledger
 - **⚠️⚠️ COUNTING QUESTIONS IS A TRAP: `app\data\*.js` MIXES TWO KEY STYLES.**
   `questions.neuro.js` holds **151 JSON-style quoted-key entries** (`"id":`) and **22 bare-key**
   ones (`id:`). A bare-key grep counted **22 of 173** on 2026-09-02 and read as catastrophic
-  loss — **it was not: neuro is 173 q + 7 cases = 180, corpus 3,982, matching this file exactly.**
+  loss — **it was not.** (Neuro was then 173 q + 7 c = 180 and the corpus 3,982; both have grown.)
   Count BOTH styles (command in `progress\WATCH.md` §4). **Bytes rising while a count falls
   means THE COUNT is broken** — cross-check `git cat-file -s HEAD:<path>` before reporting loss.
 - **GitHub, PRIVATE**: `mahmoudbanna23-ctrl/Herophilus`, `main` + `design/clepsydra-and-sessions`
