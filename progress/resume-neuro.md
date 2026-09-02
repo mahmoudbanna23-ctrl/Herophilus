@@ -733,3 +733,33 @@ the only numerals are two saline volumes and a handful of ages and durations, al
 **Show-through was checked**: faint mirrored text behind the p.78 Answers banner reverses to
 "…ADHD recently. His mom wants to know the…", which is Q80 on the reverse of the leaf. Nothing
 transcribed from it.
+
+### The Q69 fold is APPLIED and committed — do not redo it (`92cbc3b`, 2026-09-02)
+
+`npqb-nr-122` has already taken the fold, ahead of the topic-18 splice, because it is independent
+of it. Verified after the edit by loading the array: **196 entries, 0 sparse holes**, `answer` 3,
+4 options, the marker gone from that entry, `p.76` present in its `source`, and **139 marker-bearing
+entries** across the file (was 140).
+
+- `source` now carries both citations and states in words that the second printing is the same
+  bank, so **no `alsoIn` and no second entry**.
+- The authored 516-word explanation stays — it is the fuller of the two. The p.76
+  `Explanation:` box is quoted verbatim at its foot and attributed to p.76.
+- The authored marker was **removed** from that entry: the bank does print an explanation for this
+  question, just on the other page, so the marker had become a false statement about the bank.
+
+**Consequence for the splice still to come:** the topic-18 drafting agent was told mid-run to skip
+Q69, so its file should hold **11 entries (Q64–Q68, Q70–Q75)** and **four** boxed ones (Q66, Q68,
+Q74, Q75). Splice takes `questions.neuro.js` **196 → 207**, not 208. If the file arrives with 12
+entries, the mid-run message did not land — drop `npqb-ps-69` at splice time rather than shipping a
+duplicate.
+
+### Topic 19 "Child Psychiatry" — staging launched 2026-09-02
+
+Brief written from the topic-18 agent's own boundary measurement: banner at **PDF 84 = book p.79,
+opening at Q76**, running to book p.81 (PDF 86), one-past check at **PDF 87 = book p.82** where the
+topic 20 "Schizophrenia" banner is expected. Contents promises **14** — and it has undercounted four
+times running, so that is a prior, not a measurement. The brief carries three corrections earned
+the hard way: `box` is prose-or-`null` and **not a boolean**; the questions may stop before the
+topic's last book page (topic 18's did, and the brief's table was wrong about it); and reprints
+exist in this bank, so a familiar-looking question is to be flagged and still transcribed in full.

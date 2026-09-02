@@ -58,9 +58,14 @@
 //
 // PAIRED, NOT FOLDED: Q11 and Q13 share an identical five-option menu (Bruising / Milia /
 //   Erythema toxicum / Port wine stain / Strawberry naevus) with different keys (D vs E), and
-//   Q10, Q12, Q14 share a second identical menu (Bruising / Milia / Erythema toxicum / Mongolian
-//   blue spots / Neonatal varicella zoster) with keys C, B, D. A shared option menu PAIRS
+//   Q10 and Q14 share a second identical menu (Bruising / Milia / Erythema toxicum / Mongolian
+//   blue spots / Neonatal varicella zoster) with keys C and D. A shared option menu PAIRS
 //   questions; it does not fold them. All five stems and all five figures are distinct.
+//   ⚠️ CORRECTED 2026-09-02: this block first said Q10, Q12 and Q14 all shared that menu. They do
+//   not. Q12's option A is "Group B streptococcal infection", not "Bruising"; its other four match.
+//   The `opts` DATA was right all along - only this prose claim was wrong. Verified by comparing
+//   the three option arrays byte for byte. Q12's key still lands on Milia (B) either way, so
+//   nothing downstream moved; but a later duplicate sweep must not trust the word "identical" here.
 //
 // SHOW-THROUGH: the reverse of each leaf prints through faintly. On p.53 the mirrored
 //   "Neonatal medicine" banner of p.54 is visible. It is show-through, not content, and is not

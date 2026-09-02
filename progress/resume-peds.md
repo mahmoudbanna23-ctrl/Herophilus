@@ -1376,3 +1376,97 @@ each is cited to the page it opens on · Q10–Q15 print no `Select one answer o
 ⚠️ **All five figure stems say the picture is in the "opposite figure" and not one of them is** —
 each figure sits immediately right of its own stem, wording inherited from a two-column original,
 exactly as in ch.5.
+
+### 2026-09-02 — ch.6 Q10–Q15 DRAFTED (6 entries), and the staging header carried a false claim
+
+`content\peds\qb-pages\house-ch06-perinatal.draft-B.js` = `PEDHD_PERI_DRAFT_B`, ids
+`pedhd-peri-10` … `-15`. **Validated from disk by me, not taken from the agent's report**: 6
+entries, 0 sparse holes, stems and option arrays byte-identical to `PEDHD_PERI_STAGED`, keys
+C/D/B/E/D/D mapping to answers 2/3/1/4/3/3, the authored marker the final line of all six and absent
+from every `source`, `image` present on exactly the five `fig:true` questions and on no other, every
+`image` paired with an `imgAlt`. Chapters `perinatal` (Q10–Q14) and `genetics` (Q15). Explanation
+words: min 486 / median 534 / max 563 — inside the band. The agent's own first pass measured median
+623 and it trimmed all six rather than report the overrun, which is the behaviour we want.
+
+**⚠️ THE STAGING HEADER WAS WRONG AND I HAVE CORRECTED IT IN PLACE.** Its "PAIRED, NOT FOLDED"
+block claimed Q10, Q12 and Q14 shared an *identical* five-option menu. They do not: **Q12's option
+A is `Group B streptococcal infection`, not `Bruising`.** Q10 and Q14 are identical to each other;
+Q12 differs in exactly that one option. Verified by comparing all three option arrays byte for byte.
+The `opts` **data was correct throughout** — only the prose claim was wrong, so nothing downstream
+moved and Q12's key still lands on Milia (B). The header now records the correction and warns a
+later sweep off the word "identical". **The lesson is the one this project keeps paying for: a
+header is a claim, the array is the measurement, and the two must be diffed rather than assumed to
+agree.** The drafting agent found this, not any instrument I ran.
+
+**Q11/Q13 half of that claim is TRUE** — those two menus are byte-identical, keys D vs E.
+
+**Three corrections to the drafting brief, all from the agent, all worth keeping:**
+
+1. **The gap prediction missed the distractors.** I grepped `pustul` but never `varicella`,
+   `zoster` or `chickenpox` — and "Neonatal varicella zoster" is a distractor in three of the five
+   figure questions. `infectious diseases causing vesicular rash.pdf` covers it in full (morphology,
+   "crops", maternal infection around delivery) and was **not** in my deck shortlist. Cited three
+   times in the draft. **Grep the distractors, not just the key.**
+2. **`haemangioma` was not the clean zero I recorded.** `47)Hemorrhagic disorders .pdf` lists
+   "Giant haemangioma" among the causes of DIC — a real citable fact, used in Q13 instead of a gap
+   tag. My note said "no neonatal-skin context", which was true but read as absence.
+3. **`p` is a string** (my brief said number; corrected mid-run). Also **on Q15 `figp`, `fig` and
+   `boiler` are absent entirely (undefined), not `null`** — so a later reader must test truthiness,
+   never `=== null`.
+
+Gaps tagged in the draft, six: erythema toxicum description (Q10) · port wine stain / capillary
+malformation and Sturge–Weber (Q11) · milia (Q12) · infantile haemangioma natural history,
+prematurity association and propranolol first-line (Q13) · Mongolian blue spots and the
+bruise-mimicry point (Q14) · amniotic-fluid AFP with acetylcholinesterase, and sickle cell's
+autosomal recessive inheritance (Q15 — the cache names the disease repeatedly but never its
+inheritance). Tokens grepped across all 64 decks before any of those claims are listed in the
+agent's report; the word-boundary form matters, since a raw `milia` search returns ten files
+entirely on the substring inside `familial`.
+
+The letter/name cross-check remains **unavailable** for this chapter — bare-letter keys throughout.
+It was not performed and is not claimed.
+
+### 2026-09-02 — ch.6's five crops are CUT, and every one was looked at
+
+`app\assets\q\` went 109 → 114 files. All five re-rendered from fresh 400 dpi sheets, not from the
+existing `hi_*` files.
+
+| file | px | KB | cut from | book p. |
+|---|---|---|---|---|
+| `q-pd-hd-51.jpg` | 524×764 | 139 | `H400_R26` | 51 (Q10) |
+| `q-pd-hd-52a.jpg` | 819×638 | 178 | `H400_L27` | 52 (Q11) |
+| `q-pd-hd-52b.jpg` | 814×812 | 215 | `H400_L27` | 52 (Q12) |
+| `q-pd-hd-52c.jpg` | 820×594 | 161 | `H400_L27` | 52 (Q13) |
+| `q-pd-hd-53.jpg` | 542×774 | 157 | `H400_R27` | 53 (Q14) |
+
+**Each panel was matched to its question by reading the stem text immediately to its left** in a
+wide working crop — not by position. That is the check that separates Q11 from Q12 from Q13, which
+sit in a vertical stack on one page and would otherwise be interchangeable. The matched stem
+fragments are recorded in the agent's report; each one is verbatim from the right question.
+
+**The looking caught four faults no numeric check would have.** 52b carried a 2–3 px black sliver
+of the stem's last letter (left edge moved 1366 → 1373); 52c carried the box's bottom blue double
+rule (height 622 → 594); 51 was re-cut **twice** — first pass clipped the photo's left and bottom,
+second caught the horizontal rule below the panel. **The standing rule paid for itself again.**
+
+**⚠️ Three corrections to the crop brief, all measured:**
+
+1. **The `hi_*` PNGs are NOT 400 dpi crops of whole questions** — they are thin single-line text
+   strips (1600×120, 1120×110, 1400×110). Only `hi_p52_q13` is tall (1120×520) and even that does
+   not contain its figure. **None of the five figures is inside any `hi_` file.** Anyone reusing
+   that naming convention should expect a text strip, not a figure.
+2. **A saturation bbox alone does not work on this book.** The box borders, section rules and panel
+   frames are all coloured, so the profile repeatedly locked onto a rule instead of the photo. The
+   method that held: coarse 20 px saturation map to find the panel band → generous crop → **look**
+   → tight profile inside the confirmed band → crop → **look again**.
+3. **Size band in the brief (22–165 KB) was too narrow.** These run 139–215 KB at JPEG q88, in line
+   with the largest existing peds crops (`q-pd-hd-42a` 157 KB, `q-pd-hd-46b` 165 KB). Left as cut;
+   `q-pd-hd-52b` at 215 KB is now the largest file in the folder.
+
+Each crop keeps the book's decorative blue rounded panel frame with a few px of white outside it,
+which is what guarantees nothing of the photo is clipped. The frame carries no text.
+
+**Housekeeping, not blocking:** a mistyped path created a stray
+`…\Temp\claude\D--claude-os-Medical-школы\dummy.txt` (one byte, "x"). It is outside the project.
+Deletion was denied by the permission system to the agent and again to me; it needs a human to
+remove it or an explicit approval.
