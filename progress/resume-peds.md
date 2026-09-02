@@ -1630,3 +1630,226 @@ for the arithmetic (5 mg/dL ≈ 86 µmol/L), never as proof.
 **Not spliced yet** — live `questions.peds.js` still holds **141**. Splicer cut and waiting at
 `<scratchpad>/splice-pd7.js` (carves 11 + 10 at column 0; the neuro splicer's `'\n  {'` anchor does
 NOT work on peds files).
+
+### ch.7 SPLICE CLOSED — the line above is superseded
+
+**`questions.peds.js` holds 162, 0 sparse holes, `pedhd-neo-1`…`-21` all present** — measured from
+disk by loading the array, not from the splicer's report. The "still holds 141" note above was
+written before the splice and never closed; treat this block as the state.
+
+## ch.8 "Normal development" STAGED — 2026-09-02: 21 questions, Q1–Q21
+
+`content\peds\qb-pages\house-ch08-normal-dev.array.js`, `var PEDHD_DEV_STAGED`. **Verified by me from
+disk after the agent reported: 21 entries, 0 sparse holes, `n` clean 1–21 with no gap and no
+duplicate, `p` a STRING, every key inside its own five-option list, no null fields.** By page
+62:3 · 63:4 · 64:4 · 65:4 · 66:3 · 67:3. **The count matches the 2026-08-31 prior of 21; the OCR
+marker count of 20 was the low one.**
+
+- **Boundaries measured.** Book pp.62–67 = PDF sheets 32 LEFT–34 RIGHT; folio read at the foot of
+  every half (62…68), the 2-up mapping **sheet N = 2N−2 | 2N−1** held on both parities. One-past
+  half **sheet 35 LEFT = p.68** is ch.9 "Developmental problems" opening at its own Q1 — numbering
+  restarts per chapter, and ch.8 closes clean at p.67 Q21.
+- **Options: `{5: 21}`** — every question exactly five. Keys `1E 2E 3C 4D 5E 6E 7B 8D 9C 10D 11A 12E
+  13B 14D 15B 16A 17A 18E 19B 20D 21C`; distribution A3 B4 C3 D5 E6.
+- **Zero explanation boxes, zero figures, zero multi-answer questions.** Figures established by
+  looking at all six halves whole, not inferred. **No crops needed for this chapter.**
+- **BOILER — a FOURTH shape, and its extent measured.** "Select one answer only." prints **INLINE,
+  running on inside the stem paragraph** (never its own line), and **only on Q1, Q2, Q3**; absent
+  Q4–Q21. `boiler:true` on the three, position recorded in each `note`, text kept OUT of the stem so
+  the field keeps its ch.5–ch.7 meaning. **Fifth shape sighted out of scope:** ch.9 p.68 prints it on
+  its own line.
+- ⚠️ **Letter/name cross-check UNAVAILABLE for all 21** — bare letters, no option names; all 21
+  re-read at 400 dpi against the first read. Recorded as *not performed*, NOT as passed.
+- **Straddles: two.** Q11 (p.64→65, carrying only "Answer: A.") and Q15 (p.65→66, carrying option E
+  and "Answer: B."). Both filed under the page their number prints on.
+- ⚠️ **The `L-034.txt` marker-count warning is confirmed on the page**: p.66 carries **four**
+  `Answer:` lines against the OCR's three. **The marker counter is a floor, never a count.**
+- **Show-through mattered once and was caught**: read through p.65, Q18 looks like "15-month-old" and
+  "She points to"; the real p.66 prints **"22-month-old"** and **"She can point to"**. Nothing
+  mirrored was transcribed.
+- **Defects recorded, none corrected:** Q4/Q5 option order **non-ascending** (D "18 months" before
+  E "12 months", and **Q5's key IS E**) · Q19 prints **"12-monthold"** — no space, no hyphen, where
+  the same book hyphenates Q18 and Q20 · Q15 double closing bracket "(Guthrie test))" · Q14 mixes
+  "immunization" with "programme" in one sentence · Q21's negative in lower case where Q2 capitalises
+  "NOT" · the book's possessive apostrophes are **inconsistent glyphs** (upright in Q1/Q9, slanted in
+  Q10/Q18) at 600–1200 dpi, while quotation marks are uniformly curly.
+- **Eight PAIRS flagged, none folded** — shared option menus with distinct discriminating tokens:
+  Q4↔Q5 · Q8↔Q12 · Q9↔Q13 · Q19↔Q20 · Q15↔Q16↔Q17 (shared menu **and** Q16/Q17 share key A, so the
+  bracketed action is what separates them) · Q14 shares the Q15–Q17 stem TEMPLATE but not their menu.
+  **A shared menu pairs, it never folds.**
+
+**Where my staging brief was wrong (and one new instrument failure):**
+1. **The source folder is `Semester 8\Pedo\Questions\`, not `…\Peds\Questions\`.** My brief invented
+   a path that does not exist. Filename `pediatric .pdf` (with the space) confirmed by listing.
+2. **§4 indentation was backwards.** `cat -A` on the shipped ch.7 array shows **entries indented two
+   spaces, fields four** — not column 0. The file wins; my note that "peds files open at column 0"
+   is true of the DRAFT halves the splicer carves, not of the array files.
+3. **§5 "straighten curly apostrophes" contradicts the shipped ch.7 file**, which preserves them
+   (`32 weeks’ gestation`). Settled against the file: **curly quotation marks preserved, possessive
+   apostrophes written straight** as a declared normalisation, documented in the header — the scan
+   cannot support a per-instance call.
+4. My boiler note was right about p.62 and could not have predicted the stop point at Q3.
+5. ⚠️ **NEW INSTRUMENT FAILURE, worth the ledger: `grep -c $'\r'` through the Bash tool reported 264
+   CRs in a 264-line file.** The backslash collapsed before grep saw it, so it counted lines
+   containing the letter **r**. A byte count in Node gives the truth: **CR=0, LF=264**, LF-only like
+   ch.7. **Never measure line endings with a backslash escape through this tool.**
+
+### Grounding established before drafting (read this instead of re-deriving it)
+
+`T_PEDS` is an **OBJECT keyed by chapter id**, not an array — `T_PEDS.length` is `undefined` and any
+index walk over it returns nothing. `T_PEDS['normal-dev']` is written in full (~3,000 words, 17
+sections) and covers this chapter almost completely:
+
+- **§4 the LIMIT-AGE table** (head control 4 m · sits unsupported 9 m · stands with support 12 m ·
+  walks independently 18 m · fixes and follows 3 m · reaches 6 m · transfers 9 m · pincer 12 m ·
+  6 words with meaning 18 m · joins words 2 y · smiles 8 w · symbolic play 2–2.5 y · interactive play
+  3–3.5 y) and **§5 the MEDIAN ladder 6 weeks–5 years**. **§3 states outright that limit ages beat
+  median ages**, with walking (median 12 m, limit 18 m) as the worked example.
+- **§14 red flags** carries exactly what Q19 and Q20 turn on: **early hand preference under 1.5 years
+  (18 months in the CP list — one threshold, two numbers)**, and the ASD list (no response to name by
+  12 m, no pointing by 18 m, no joint attention, no pretend play, poor eye contact).
+- ⚠️ **Divergences between the book's keys and the written theory — RECORD, never move the key:**
+  Q9 first word 'dada' keyed **10 months** against the ladder's **12 months** for 1–2 meaningful
+  words · Q13 crawling keyed **8 months** against the ladder's **9–10 months** · Q8 copying a square
+  keyed **4 years** against the ladder's **copies square at 5 years / copies cross at 4**.
+- ⚠️⚠️ **Q21 is the hard one: by the theory's own limit-age table, FOUR of its five options are not
+  developmental concerns** (not fixing at 5 w vs limit 3 m · not sitting at 7 m vs limit 9 m · not
+  using single words at 16 m vs limit 18 m · not walking at 17 m vs limit 18 m). The book keys **C**.
+  **The key does not move**; the conflict is explained in `explanation` and quoted against the table.
+- **Q14 is NOT a gap.** `T_PEDS['infection-vaccine']` prints the taught schedule with **MMR at 12
+  months**, which is the book's key D — the stem's UK framing differs, the age agrees. Cite the
+  course table and note the framing.
+- **Genuine gaps needing the outside-knowledge tag:** the **Guthrie/heel-prick timing** (zero hits
+  for "Guthrie" or "heel prick" anywhere in `theory.peds.js`), the **newborn hearing-screen timing**
+  (the one "otoacoustic" hit in the file is in the *jaundice* chapter, on failed ABR with normal OAE
+  in kernicterus), the **SIDS "back to sleep" advice**, and the UK **community-vs-general
+  paediatrician** referral distinction in Q18. Three-cube tower and shoe-lace tying are not in the
+  ladder either.
+
+**Chapter ids available:** `normal-dev` (the default here), with `dev-problems` and `dev-nd` as the
+neighbours ch.9 will fill. **Id prefix `pedhd-dev-` is FREE** — zero `pedhd-dev-` ids live
+(prefixes in use: card, gen, haem, inf, neo, peri, renal).
+
+**Drafting launched 2026-09-02**, split on the straddle-free seam: Q1–Q11 →
+`house-ch08-normal-dev.draft-A.js` (`PEDHD_DEV_DRAFT_A`), Q12–Q21 → `…draft-B.js`
+(`PEDHD_DEV_DRAFT_B`).
+
+### ch.8 draft-A RETURNED and VALIDATED FROM DISK — 2026-09-02
+
+**11 entries, `pedhd-dev-1`…`-11`, 0 sparse holes** (index walk, not `Array.filter`). `val-pd8.js A`
+→ **ALL CHECKS PASSED**: stems and option arrays byte-identical to `PEDHD_DEV_STAGED`, `answer`
+4,4,2,3,4,4,1,3,2,3,0 matching printed keys 1E 2E 3C 4D 5E 6E 7B 8D 9C 10D 11A, five options each,
+`bank:'house'`, `module:'pediatrics'`, `chapter:'normal-dev'` on all eleven, marker final and absent
+from every `source`, no stray fields, no image (ch.8 stages no figures). **Not spliced yet.**
+
+⚠️ **My validator's first run produced a FALSE FAILURE on `pedhd-dev-11`** — I required the source
+tail to close as `(Part I, ch.8 Q11)` while the straddle note continues after a semicolon, which is
+the shape I had instructed. **The draft was right and the instrument was wrong.** Fixed to anchor on
+`[);]` after the number, which also stops `Q1` matching `Q11`. Recording it because a validator
+failure is not evidence until the file itself has been looked at.
+
+**Divergences: FOUR, not the three the brief carried.** `answer` never moves; each is a note inside
+`explanation`.
+
+- **Q8** (briefed) — book keys "copies a square" at 4 years; the handout's drawing ladder is circle 3
+  · cross 4 · square 5.
+- **Q9** (briefed) — book keys a first word at 10 months, handout 1–2 meaningful words at 12.
+  Resolved on the discriminator: *'dada' to her father only* is specific, not non-specific babble —
+  **the distinction is MEANING**, and the theory's own rule is quoted.
+- **Q10 — NOT briefed, found while writing.** The lecture's cognitive ladder prints "Follows 2 step
+  commands" in the **18–24 month** band; the book keys **3 years**. A full year apart, **and the
+  taught answer is a live option on the menu**, which makes it the strongest distractor in the range.
+  Key holds because the printed command carries a location, a colour and a named object.
+- **Q6 — NOT briefed.** The lecture's social slide prints "24 months: imaginary play, plays in group
+  with other children", which would make 24 months defensible against the handout's parallel play at
+  2 / cooperative at 3. Key follows the handout.
+
+**⚠️ NEW MARKDOWN HAZARD, and it is a rendering bug not a syntax one: the handout prints the typo
+"Coo`s" with a LITERAL BACKTICK.** Quoted verbatim it passes `node --check` (backticks are legal
+inside single-quoted JS) but **opens an inline code span in the app and swallows the rest of the
+text**. Caught and rewritten. **Check every explanation for an EVEN backtick count** — added to
+`val-pd8.js`'s companion probe and relayed to draft-B mid-run. Put it in every future peds brief.
+
+**Grounding correction, measured:** the handout's **milestone table extracts cleanly as text** and is
+quoted directly — my brief's claim that it is image-only was wrong. Only the **limit-age tables and
+the locomotion plate** are image-only; those are quoted from the theory transcription and marked as
+such at every use.
+
+**Six outside-knowledge tags on five entries**, each a short tag on the claim: Q1 (commando crawlers
+and bottom-shufflers walk later; bottom-shuffling often familial) · Q2 (newborn hearing-screening
+programme and ABR timing — the one OAE hit in the decks is kernicterus material in the jaundice
+chapter) · Q3 ×2 (toilet training and its timing appear nowhere in the cached decks; undressing
+precedes dressing by ~a year) · Q4 (no ladder carries a three-cube tower) · Q8 (no ladder carries
+block steps built after demonstration).
+
+**Words 415–709, mean 559** by my count (the drafter's own count excludes table pipes and the marker
+and reads 395–651, mean 515). **Q1, Q2, Q3 and Q8 run over the ~520 budget** — five-domain vignettes
+that must walk every domain, plus Q8's divergence and shared table. **Not trimmed: scaling down is
+the user's call.**
+
+⚠️ **The letter-versus-name key cross-check is UNAVAILABLE for this whole chapter** — every answer
+line prints a bare letter. Recorded in the file header as **not performed**, never as passed.
+
+### ✅ ch.8 SPLICED AND CLOSED — 2026-09-02
+
+**`questions.peds.js` 162 → 183**, measured by loading the array: `Q_PEDS.length` **183**, **0 sparse
+holes**, **no duplicate id**, all 21 `pedhd-dev-*` present, no `answer` outside its own option list
+anywhere in the file, **no unknown chapter anywhere in the file** (checked against `MODULES`, not
+just the new entries). Backup `questions.peds.pre-pd8.bak` in the scratchpad.
+
+**Draft-B validated from disk first: 10 entries, 0 holes, ALL CHECKS PASSED.** `answer`
+4,1,3,1,0,0,4,1,3,2 matching keys 12E 13B 14D 15B 16A 17A 18E 19B 20D 21C; byte-identical to
+staging; backtick parity even on all ten. Chapters `normal-dev` ×9 and **`dev-nd` for Q20** with
+`normal-dev` named in-entry as secondary. Both halves came back clean on the backtick check — the
+"Coo`s" cell is not quoted in Q12–Q21 at all (grepped, zero hits).
+
+**⚠️⚠️ THE WRITING BUDGET IS BLOWN IN THE SECOND HALF AND I DID NOT TRIM.** Draft-B runs 413–933,
+mean 683, against the ~520 adaptive budget: **Q18 808 · Q19 827 · Q20 765 · Q21 933.** Draft-A ran
+415–709. Chapter total ≈ 12,900 words for 21 questions. The overruns are load-bearing — Q21 has to
+state a four-option conflict, Q19 carries the five-domain table, Q18 turns entirely on a
+UK-versus-Egypt service distinction that is not in the material — but **this is now the fattest
+chapter in peds by a wide margin, and whether to cut it back is the user's call, not mine.**
+
+**Three more brief errors, all measured by the drafter, all corrections to me:**
+
+1. **Shoe-lace tying (Q12) is NOT a gap.** nd-8's fine-motor table prints "5 years | Draws a
+   triangle; ties shoelaces (basic)" (`L1 pp.12–27, 32`). Key E is directly sourced and carries no
+   outside tag. My gap list was wrong.
+2. **The Guthrie/heel-prick timing (Q15) is NOT a gap either** — I had declared it one on zero hits
+   for "Guthrie" and "heel prick". **The concept is in a SIBLING chapter**: `T_PEDS['endo-thyroid']`
+   endo-27 prints Egypt's neonatal screening as all newborns, **3rd–7th day**, **heel stick**, filter
+   paper, central-lab TSH, plus "Not cord blood, and not day 1–3" (`L52 pp.36, 48`). That window
+   contains the key's 5–6 days. **Only the NAME "Guthrie" and the UK blood-spot panel were tagged.**
+   ⚠️ **A zero-hit grep on a term is not a gap — grep the CONCEPT, and grep the sibling chapters.**
+3. **The Q13 divergence was framed wrong in my brief.** nd-6's handout spine puts crawling at 9–10
+   months, but **nd-7, the lecturer's own gross-motor ladder, puts it at 8–9** (`L1 pp.15–27, 31`) —
+   exactly where the book's key B sits. It is an **internal handout-versus-lecture offset**, not a
+   book-versus-material conflict, and the theory flags the same ~1-month offset on walking and
+   sitting.
+
+**Divergences in draft-B, keys never moved:** Q13 (above) · Q19 (the theory's own self-flagged
+threshold inconsistency, quoted: hand preference "<1.5 years in the general list and <18 months in
+the CP list — one threshold, two numbers"; at 12 months the boy is inside both, so nothing turns on
+it) · **Q21, the hard one** — by the taught limit-age table options A–D are all inside their limits
+and E has no row at all, so the question is answerable as printed only from tighter thresholds than
+the taught ones. The entry says exactly that, **attempts no reconstruction of the missing set**, and
+follows the printed key C without editorialising.
+
+**Printing defects carried across verbatim:** Q19's `12-monthold` (no space, no hyphen, in a book
+that hyphenates Q18 and Q20) and that stem's own grammatical slip · Q15's double closing bracket
+`(Guthrie test))` · Q21's lower-case unemphasised `not`.
+
+**Five outside-knowledge tags in draft-B:** Q14 (UK MMR schedule only — the 12-month age comes from
+the taught Egyptian table) · Q15 (the name "Guthrie" and the UK panel) · Q16 ×2 (**SIDS is absent
+from the whole theory file** — "SIDS", "sudden infant death" and "back to sleep" each grepped
+separately, all zero — so the account and the risk list are both tagged) · Q17 (newborn hearing-screen
+timing and the OAE/ABR protocol) · Q18 (the UK community-versus-general paediatrics split, which is
+**the entire discriminator between options D and E**) · Q20 (jumping with both feet has no row).
+
+**Shared menus paired, never folded**, written once and pointed at: the Q14–Q17 surveillance menu
+lives in Q15; Q19 carries the five-domain table and Q20 points back at it. Q19 refers to Q20 only as
+"the next question in the chapter" with no id, because Q20 did not exist when it was written.
+
+**Peds is now 183. Next: ch.9 "Developmental problems", opening on PDF sheet 35 / book p.68** —
+⚠️ it prints "18." **twice** with no Q19, its chapters are `dev-problems`/`dev-nd`, and its boiler is
+a **fifth shape** (on its own line). Bank measured at 393; **210 questions remain after ch.8.**
