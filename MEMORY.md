@@ -183,11 +183,14 @@ tonight; the 429 rule in their first version was wrong). ✅ ENT CLOSED (`ledger
   loss — **it was not.** (Neuro was then 173 q + 7 c = 180 and the corpus 3,982; both have grown.)
   Count BOTH styles (command in `progress\WATCH.md` §4). **Bytes rising while a count falls
   means THE COUNT is broken** — cross-check `git cat-file -s HEAD:<path>` before reporting loss.
-- **GitHub, PRIVATE**: `mahmoudbanna23-ctrl/Herophilus`, `main` + `design/clepsydra-and-sessions`
-  (only off-drive copy of the Clepsydra art). `Semester 8\` gitignored.
-  ✅ **PUSHED AND CURRENT 2026-09-02 — 0 commits ahead.** The old note claiming 262+ unpushed and
-  a required device-code flow was **stale**: a plain `git push` went straight through, no prompt
-  (Git Credential Manager has it cached). Verify with `git rev-list --count origin/<branch>..HEAD`.
+- **GitHub, PRIVATE**: `mahmoudbanna23-ctrl/Herophilus`. `Semester 8\` gitignored.
+  ✅ **2026-09-02: `main` FAST-FORWARDED onto `design/clepsydra-and-sessions` and both pushed —
+  all four refs at `0db6e9f`, 0 ahead.** For a month `main` was a 2026-08-02 design snapshot with
+  **no bank content**, while 380 commits of ENT/ophtho/peds/neuro accumulated on the design branch:
+  it was cut for the Clepsydra on 2026-08-02, and `d1bd4af` (08-03) mixed a bank sweep into a
+  Clepsydra commit, after which everything just landed on whatever was checked out. **Work on
+  `main` from here.** Push needs no device-code flow — Credential Manager has it cached.
+  Verify with `git rev-list --count origin/<branch>..HEAD`.
   **⚠️ Stage EXPLICIT PATHS — never `git add -A`, never a directory a subagent writes into**; `index.lock` = another chat is mid-commit.
 - **Measure, then believe:** check the sum, check the auditor, reconcile written + folded = printed; a
   counter that does not move is a finding. **Never write a page number, filename or id from memory**
