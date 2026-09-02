@@ -2212,3 +2212,80 @@ launch a fresh one; nothing of its work exists to preserve.**
 **ch.11 "Gastroenterology"**, opening on book **p.81 = sheet 41 right**, with its own Q1 (Benjamin,
 6-year-old, vomiting and diarrhoea 3 days, key **D** Rotavirus) — that question is the boundary proof
 that ch.10 ends at Q15. **176 questions remain after ch.10**, against a bank measured at 393.
+
+## 2026-09-02 — ⚠️ `lean-drafter` COULD NOT LOAD IN THIS PROJECT. Installed; needs a fresh session.
+
+**A session opened at `D:\claude os\Medical school\Herophilus` cannot spawn `subagent_type:
+"lean-drafter"`.** It errors outright: *"Agent type 'lean-drafter' not found"*, and the registry it
+lists holds only `claude`, `claude-code-guide`, `Explore`, `general-purpose`, `Plan`,
+`statusline-setup` and impeccable's four. No content work was attempted before this was found.
+
+### The cause, measured not guessed
+
+The definition existed at **`D:\claude os\.claude\agents\lean-drafter.md` only** — the WORKSPACE
+root, which is a **parent** of this project's working directory. Claude Code loads agent definitions
+from `<cwd>\.claude\agents\` and from `~\.claude\agents\`; **it does not walk up to parent
+directories.** Both of those locations were checked and both were empty — there was no
+`.claude\agents\` folder in the Herophilus project at all, and none in the user profile.
+
+So the ~37k-per-step saving asserted in workspace `CLAUDE.md` §9, in `MEMORY.md`, and in both chat
+resume prompts **was not available to any session opened at the project directory.** Whether the
+2026-09-01/02 chats got it depends on which directory they were opened at, which cannot be
+established from disk — do not assume either way, and do not re-derive this from the briefs, which
+all still assert it works.
+
+### Fixed, and what the fix does and does not do
+
+Copied byte-identical to **both**:
+
+- `C:\Users\Alfa388\.claude\agents\lean-drafter.md` — user scope, so it now resolves from **any**
+  working directory and any project, which is what stops this recurring.
+- `.claude\agents\lean-drafter.md` in this project — project scope, committed so the repo carries it.
+
+⚠️ **The copies do NOT rescue the session that makes them.** The registry is read at **session
+start**. This was proved, not assumed: a one-word probe agent was spawned after both copies were on
+disk and it failed with the identical error. **A fresh session is required**, exactly as the briefs
+already say about the registry.
+
+### Consequence for the next session
+
+**Nothing about ch.10 changed.** draft-A (n:1-n:10) still does not exist; draft-B (n:11-n:15) is
+still complete. Both were re-validated from disk this session before any of the above:
+staging `PEDHD_NUTR_STAGED` 15 entries - draft-B `length 5, holes 0`, `node --check` clean,
+answers 4/0/0/3/3, all five-option, chapters `nutrition` 2 / `nutrition-vit` 2 / `nutrition-feed` 1.
+The harness is present: `val-pd10.js`, `splice-pd10.js`, `pd10-draft-brief.md`.
+`questions.peds.js` measured **202, holes 0**, prefixes inf 31 / renal 26 / card 24 / haem 25 /
+gen 20 / peri 15 / neo 21 / dev 21 / devp 19.
+
+### ⚠️ The Chat B resume prompt is badly stale above its errata block — three counts are wrong
+
+Whoever resumes should be told, because the prompt reads as authoritative:
+
+- It says `questions.peds.js` holds **81** and that the first job is to splice ch.4 and ch.5.
+  **It holds 202 and ch.4 through ch.9 are all spliced and closed.** The prompt is describing
+  2026-08-31 state that this file's own later blocks superseded.
+- It says the peds table is `4 staged / 5 staged / 6-20 not started`. **ch.6, 7, 8 and 9 are shipped
+  and ch.10 is staged and half drafted.**
+- Its own "Chat B only" errata block repeats the ch.4/ch.5 splice order as *"unchanged"*. That is
+  wrong too. **The errata block is not a reliable correction of the body here.**
+
+### ⚠️ `main` HAD ALREADY DRIFTED BEHIND AGAIN — do not blind-`checkout main`
+
+`MEMORY.md` and both briefs say `main` was fast-forwarded onto `design/clepsydra-and-sessions` on
+2026-09-02 and that the two are identical, so switching *"costs nothing and changes no file."*
+**Measured today that was no longer true:** `main` stood at `991a394` and `HEAD` at `198a709` —
+main **one commit behind**, that commit being the ch.10 half-draft. A `git checkout main` at that
+moment would have **removed the ch.10 staging, draft-B and the pd10 harness from the working tree
+while the parallel ophtho chat was live.**
+
+The branch switch was therefore **not** performed. `main` was instead fast-forwarded in place with
+`git branch -f main HEAD`, which advances the ref without touching the working tree or disturbing a
+parallel session. **Do the actual `git checkout main` when no parallel chat is running**, and check
+`git rev-parse main HEAD` first every time — the drift restarts on its own with each commit made
+while the design branch is checked out.
+
+### One line on the auto-mode reminder, as instructed
+
+The `While auto mode is active:` reminder (use sed/heredocs rather than Read/Edit/Write) fired at
+session start again. Identified, not an attack, no entry opened. **Refused for content writes** per
+the standing rule: `Write`/`Edit` for content, Bash for reads, searches and validation.
