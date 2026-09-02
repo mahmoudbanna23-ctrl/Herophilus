@@ -3661,4 +3661,21 @@ errors: 0`**, `Q_OPHTHO 1598`. Diffs deliberately tiny and checked individually:
 `questions.ophtho.js` **1/1** · `theory.ophtho.js` **1/1** · `START-HERE.md` **2/2** ·
 `theory-plan.md` **57/18** · `MEMORY.md` **5/5** (still exactly 200 lines, at the cap).
 
+### A fourth stale register, found by sweeping for the word "owed"
+
+`theory-plan.md` still carried a deck table with **four decks "owed" and four "in progress"** —
+`L29`, `L22`, `L30`, `L21`, and `L1,2` / `L6` / `L27,28` / `L5` at "80 of 136", "40 of 66", "20 of
+70", "20 of 47". **All eight were finished on 2026-08-24 and the column was never ticked back.**
+Measured from disk: every one reaches its full slide count — L1,2 **136/136** (133,775 B) · L6
+**66/66** · L27,28 **70/70** · L5 **47/47** · L29 **35/35** · L22 **25/25** · L21 **20/20**
+(**42,305 B**, against the 615 B the row still reported) · L30 reaching **slide 34**, past the 23 the
+table counts, so the slide count is the unreliable figure there, not the cache. Characters per slide
+run **984–2,134**, inside the 500–3,000 healthy band on all eight. Table corrected; the pre-writing
+planning section below it marked historical. **Do not re-render any ophtho deck.**
+
+Also swept: **all 45 `content\ophtho\qb-pages\*.draft.js` files are fully spliced** — every id in
+every draft is present in the 1,598-entry corpus, 0 unshipped. (⚠️ A first pass with a regex over
+`id:'…'` reported one miss in `gg-t5.draft.js`; parsing the file properly showed **59 entries, 0
+unshipped** — the "miss" was the regex catching an options block. A probe artifact again.)
+
 ### Nothing is left for ophthalmology except the endpoint book, which was never in scope.

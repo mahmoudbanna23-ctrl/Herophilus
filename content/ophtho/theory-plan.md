@@ -78,10 +78,19 @@ ERD**; sl.11's symptoms table), **six labelled diagrams**, the nine-layer retina
 `[sic]`; ⚠️ *"Choroid accuromatic macusis"* **has no plausible reading and must not be treated as a
 real term.** The deck contains **no percentage, no incidence, no interval, no dose, and no eponym.**
 
-### ✅⚠️ SUPERSEDED 2026-08-24 — THE VISUAL-READ DEBT IS BEING CLEARED, AND THE TABLE BELOW IS THE OLD ESTIMATE
+### ✅ THE VISUAL-READ DEBT IS CLEARED — every deck cached, re-measured 2026-09-02
 
 **Read the block immediately below before the table.** The table that follows it is preserved as the
 2026-08-17 estimate; the live status is here.
+
+⚠️ **The status column below was written mid-run on 2026-08-24 and was never ticked back** — the same
+failure the §14.5 register showed. Re-measured from disk 2026-09-02: **all 29 decks are cached in
+`content\ophtho\lectures\`, and every one of the eight rows still reading "owed" or "in progress"
+reaches its full slide count.** L1,2 → 136/136 (133,775 B) · L6 → 66/66 (86,794 B) · L27,28 → 70/70
+(127,367 B) · L5 → 47/47 (87,634 B) · L29 → 35/35 (54,632 B) · L22 → 25/25 (47,078 B) · L30 →
+**34**, past the 23 this table claims (49,095 B) · L21 → 20/20 (**42,305 B**, not the 615 B the row
+below reports). Characters per slide run 984–2,134, inside the 500–3,000 healthy band on every one.
+**Nothing here is owed. Do NOT re-render any of these decks.**
 
 Every deck was swept for **characters per slide** (healthy prose here runs 500–3,000; anything under
 ~200 was opened and looked at). That found **eleven decks and 574 slides**, not twelve decks and 660
@@ -94,14 +103,14 @@ extractions had SUCCEEDED and were simply near-empty**: `L1,2` (146 c/s), `L22` 
 | `L9) lacrimal system.` | 33 | ✅ **DONE — 41,013 B.** Tear-film thicknesses, drainage measurements, valves of Krause and Hasner, gland eponyms, **Jones I and Jones II with their result-to-diagnosis mappings** |
 | `L13,14) Uvea & Sclera` | 41 | ✅ **DONE — 42,819 B.** Uvea slides 2–27, sclera 28–40; the four-way anatomical classification, episcleritis/scleritis in full, the phenylephrine blanching table |
 | `L24) Ocular tumors.` | 78 | ✅ **DONE — 71,943 B.** ⚠️ **a composite of at least three decks**, PowerPoint's own footer numbers restart and repeat across the seams; **49 of 78 slides are photographs with at most a one-line caption**, and **slides 46–63 carry no caption and no case number at all** |
-| `L1,2) Ocular Anatomy…` | 136 | in progress — 80 of 136 written, resuming |
-| `L6) Conjunctiva` (`.pptx`) | 66 | in progress — 40 of 66 written, resuming |
-| `L27,28) Problems of External Appearance` | 70 | in progress — 20 of 70 written, resuming |
-| `L5) Eyelid disease` (`.pptx`) | 47 | in progress — 20 of 47 written, resuming |
-| `L29) Sqint I` | 35 | owed |
-| `L22) Pupil and Visual pathway` | 25 | owed |
-| `L30) Squint II` | 23 | owed |
-| `L21) Optic Nerve` | 20 | owed. ⚠️ **NOT a watermark** — `resume-ophtho.md` said *"22 blank lines, a title and one stray line"* and that is wrong; all 615 bytes are real content, and it is a **complete extraction of a sparse picture deck** whose teaching is in the fundus photographs |
+| `L1,2) Ocular Anatomy…` | 136 | ✅ **DONE — 133,775 B, 136/136 slides** (row said 80 of 136; re-measured 2026-09-02) |
+| `L6) Conjunctiva` (`.pptx`) | 66 | ✅ **DONE — 86,794 B, 66/66 slides** (row said 40 of 66). ⚠️ It is a **photograph atlas, 342 words of prose** — its five absent entities are supplied and tagged in `cnj-15` |
+| `L27,28) Problems of External Appearance` | 70 | ✅ **DONE — 127,367 B, 70/70 slides** (row said 20 of 70) |
+| `L5) Eyelid disease` (`.pptx`) | 47 | ✅ **DONE — 87,634 B, 47/47 slides** (row said 20 of 47) |
+| `L29) Sqint I` | 35 | ✅ **DONE — 54,632 B, 35/35 slides** |
+| `L22) Pupil and Visual pathway` | 25 | ✅ **DONE — 47,078 B, 25/25 slides.** Its sl.53–58 are what `pup-10` cites for the cup-to-disc figures |
+| `L30) Squint II` | 23 | ✅ **DONE — 49,095 B.** ⚠️ The cache reaches **slide 34**, past the 23 counted here — the slide count in this column is the unreliable figure, not the cache |
+| `L21) Optic Nerve` | 20 | ✅ **DONE — 42,305 B, 20/20 slides.** ⚠️ **The 615 B in this row is long dead** — it was re-read on 2026-08-24 and the cache is 42 KB. ⚠️ **NOT a watermark** — `resume-ophtho.md` said *"22 blank lines, a title and one stray line"* and that is wrong; all 615 bytes are real content, and it is a **complete extraction of a sparse picture deck** whose teaching is in the fundus photographs |
 
 **✅ The two `.pptx` decks are solved.** PowerPoint is installed, so they export to PDF with
 `$p.SaveCopyAs("$dest.pdf", 32)` — **`SaveCopyAs`, never `SaveAs`**, which rebinds the open
@@ -246,6 +255,10 @@ wrong.**
 
 Ceilings below are the naive formula's, and are **provisional for every chapter drawing on an owed
 deck** — which is most of them. The `est pp` column uses the project's `pages ≈ words ÷ 240`.
+
+⚠️ **Historical from here down: this is the pre-writing plan. No deck is owed any more** (all 29
+cached, verified 2026-09-02) **and the chapters are written — theory is 153/153.** The table is kept
+for the reasoning, not as a work list.
 
 | Chapter | Name | Decks | lecture pp | text w | Q | naive ceiling |
 |---|---|---|---|---|---|---|
