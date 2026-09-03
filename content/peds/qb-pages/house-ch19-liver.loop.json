@@ -1,0 +1,148 @@
+{
+  "chapter": 19,
+  "slug": "liver",
+  "file": "house-ch19-liver.array.js",
+  "created": "2026-09-03T18:12:38",
+  "steps": {
+    "locate": {
+      "at": "2026-09-03T18:12:38",
+      "pages": {
+        "137": "R-069",
+        "138": "L-070",
+        "139": "R-070",
+        "140": "L-071",
+        "141": "R-071"
+      }
+    },
+    "render": {
+      "at": "2026-09-03T18:12:46",
+      "dir": "C:\\Users\\Alfa388\\AppData\\Local\\Temp\\herophilus-loop\\house-ch19",
+      "pages": [
+        137,
+        138,
+        139,
+        140,
+        141
+      ]
+    },
+    "stage": {
+      "batches": [
+        {
+          "pages": [
+            137,
+            140
+          ],
+          "context": 141,
+          "at": "2026-09-03T18:14:28",
+          "answer": "C:\\Users\\Alfa388\\AppData\\Local\\Temp\\herophilus-loop\\house-ch19\\stage-p137-140.answer.txt",
+          "events": "C:\\Users\\Alfa388\\AppData\\Local\\Temp\\herophilus-loop\\house-ch19\\stage-p137-140.events.jsonl",
+          "usage": {
+            "input_tokens": 32159,
+            "cached_input_tokens": 11008,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 3218,
+            "reasoning_output_tokens": 1745
+          },
+          "entries": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "keyLetterConversions": [],
+          "pagesReported": [
+            {
+              "page": 137,
+              "folio_read": "137",
+              "banner": "Liver disorders",
+              "question_numbers": [
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "page": 138,
+              "folio_read": "138",
+              "banner": null,
+              "question_numbers": [
+                4,
+                5
+              ]
+            },
+            {
+              "page": 139,
+              "folio_read": "139",
+              "banner": null,
+              "question_numbers": [
+                6,
+                7,
+                8,
+                9
+              ]
+            },
+            {
+              "page": 140,
+              "folio_read": "140",
+              "banner": null,
+              "question_numbers": []
+            }
+          ],
+          "nextPageOpensWith": "Malignant disease",
+          "flags": []
+        }
+      ]
+    },
+    "gate": {
+      "at": "2026-09-03T18:14:33",
+      "ok": true,
+      "hash": "370904b9d146",
+      "count": 9,
+      "fails": [],
+      "warns": [],
+      "nullKeys": []
+    },
+    "check": {
+      "at": "2026-09-03T18:17:33",
+      "ack": "Claude Opus 5 2026-09-03",
+      "hash": "370904b9d146",
+      "count": 9
+    },
+    "draft": {
+      "A": {
+        "at": "2026-09-03T18:20:56",
+        "file": "content\\peds\\qb-pages\\house-ch19-liver.draft-A.js",
+        "entries": 9,
+        "valExit": 0,
+        "rewritten": "2026-09-03T21:40:00",
+        "rewrittenBy": "Claude Opus 5",
+        "rewriteNote": "The Codex draft passed val-pd at exit 0 and -- a first for this stream -- every citation in it checked out against the theory, including the liv-13 HBIG line I first read as fabricated. It was rewritten for two reasons. (1) Budget: 1977 words for nine vignettes, against a target of ~3400-3800 for five stand-alones plus an anchor plus three shared-menu siblings. (2) Three explanations reasoned past what the stem gives. liv-5 asserted that hepatic disease was paired with the neuropsychiatric change, when the vignette describes no hepatic sign at all; liv-3 fudged the rhesus row instead of naming the printed discriminator, that a rhesus-POSITIVE mother cannot be sensitised to D; liv-1 cited only the liver's glycogen storage and missed the nns-7/nns-8/nns-9 neonatal algorithm that puts bedside glucose at step 1 by name, with the 1-3 day threshold of 40 mg/dL that applies to a 3-day-old. Words 1977 -> 3998, valExit still 0. One chapter-id error of my own was caught and fixed on the way: the Wilson citation is `neuro-nm` §`neuro-16`, not `neuro-move`.",
+        "valExitAfterRewrite": 0
+      }
+    },
+    "crops": {
+      "at": "2026-09-03T21:35:00",
+      "by": "Claude Opus 5",
+      "method": "No cropper exists in the repo -- earlier chapters' croppers lived in scratchpads that have been cleaned. Cut with a midtone-density profile (System.Drawing, fraction of pixels with grey 60-205 per cell): a halftone photograph is full of mid-greys, a text column is bimodal black/white, so the figure box separates from body text cleanly at cell 40 px and the edges refine at cell 14-20 px. `bounds.js` cannot do this -- it cannot bound a figure sitting inside a text column.",
+      "cut": [
+        { "file": "q-pd-hd-137.jpg", "for": "pedhd-liv-3", "page": 137, "box": [1120, 1948, 420, 356] },
+        { "file": "q-pd-hd-138.jpg", "for": "pedhd-liv-5", "page": 138, "box": [930, 1530, 725, 445] }
+      ],
+      "eyeChecked": "Both looked at inside a lean-drafter subagent, not in the main conversation. Both complete, all four borders clear, no caption text, label, page number, neighbouring figure or scanner border carried in; the thin blue-grey rounded line in each is the book's own photo-box outline. q-pd-hd-138 was re-examined on a second pass because the first report described a white patch at the pupil: it is a broad pale field with a sharp specular highlight sitting on it, i.e. the flash catchlight, and the rest of the pupil is solid black, so it is not leukocoria. That second pass also confirmed the finding the question turns on -- a darker brown band at the iris-sclera junction, distinctly darker than the iris body, running round the left, top and bottom of the circumference, obscured on the right by the catchlight. The cornea is clear where it is visible. Both imgAlt strings give modality and view only and name no sign.",
+      "straddlerWarningResolved": "val-pd warns that pedhd-liv-3's figure page is not machine-decidable (legal p.137 or p.138). Confirmed p.137 against the page image at the check step, and again by the crop: the figure was cut from p137.png. The warning is correct behaviour and is left standing -- it is a demand for a human look, not a defect."
+    },
+    "close": {
+      "at": "2026-09-03T18:34:02",
+      "halves": [
+        "A"
+      ],
+      "wrote": true,
+      "by": "`node tools/chapter-loop.js 19 close --write`, run by the runner rather than by hand -- unlike ch.17 and ch.18, nothing had been spliced beforehand, so close() ran its own val-pd, dry run and write in sequence with no ALREADY LIVE conflict. splice-pd reported 362 -> 371 entries, 1425212 -> 1458235 bytes, 0 holes; boot-check reported 0 console errors, QUESTIONS 5011, THEORY 153, MODULES 4, 153 chapter rows (138 with questions), pediatrics 51."
+    }
+  }
+}

@@ -107,6 +107,25 @@ const CH = {
         // which would split a chapter a single agent drafts comfortably in one pass.
         split: [4],
         lectures: ['5) Poisoning in children_.txt'] },
+  19: { slug: 'liver', title: 'Liver disorders', pages: [137, 140], expected: 9,
+        file: 'house-ch19-liver.array.js', svar: 'PEDHD_LIV_STAGED',
+        draft: 'house-ch19-liver.draft-', dvar: 'PEDHD_LIV_DRAFT_', prefix: 'pedhd-liv-',
+        // Registered from the map's range so `locate` can run; the banners are what confirm it.
+        // p.137's opening banner is already known -- ch.18's stage step read the next page ahead
+        // and reported it opens with "Liver disorders".
+        // BOTH liver chapters are offered, unlike the ch.17/18 pair. They are not a boundary a
+        // drafter can misfile across: they are one section run (liv-1..liv-9 cholestasis and
+        // biliary atresia, liv-10..liv-15 the hepatitis viruses and chronic liver disease), split
+        // for length rather than for subject, and a bank question on jaundice may land in either.
+        chapterIds: ['liver', 'liver-hep'],
+        // ⚠️ ONE lecture cache for a chapter that needs two. L43 is cached as text; L42, the
+        // hepatitis deck, is IMAGE-ONLY and has no .txt -- `liver-hep` records reading all of it
+        // visually, pp.18, 20, 23, 33-34 re-rendered at 220 dpi. So for anything hepatitis the
+        // THEORY chapter is the source of record, not the lecture folder, and a drafter that goes
+        // looking for a 42) file will find nothing and wrongly call it a gap.
+        // Nine questions, one part: the same size as ch.13's halves, which drafted in one pass.
+        split: [9],
+        lectures: ['43)Infantile cholestasis_.txt'] },
 };
 
 // ---------------------------------------------------------------- args / state
