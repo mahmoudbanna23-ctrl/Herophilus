@@ -3718,5 +3718,483 @@ var Q_PEDS = [
   "explanation": "**She is not falling. She has been on the 2nd centile since birth, and both her parents are short — that is a small normal child, not a sick one.**\n\nThe deck's most repeated line is that **a single measurement is less important than the growth trend**, and the four questions to ask of a growth chart end with **is growth following or crossing centiles?** Crossing centile lines is one of the four definitions of short stature; **following** them is the opposite finding. She was **born on the 2nd centile** and is still on it at 14 months, so her growth is tracking, not decelerating.\n\nShe is also **proportionate in three dimensions** — weight, height *and* head circumference all on the same centile — which argues against a process that picks off one of them. There is no discrepancy between the height and weight centiles, so neither arm of the weight rule is triggered: **weight affected more than height** would point to systemic disease, **height affected with weight normal or rising** to endocrine disease. Add a normal examination, normal stools, a fully weaned diet, and **two short parents**, and this is the familial pattern — the deck's familial short stature has **short parents, a family history of short stature, normal height velocity, normal puberty, bone age equal to chronological age**, and a **final height that is short but normal for the target height**.\n\n**Why the others are wrong**\n\n| Option | Why it does not fit |\n|---|---|\n| Cow's milk protein enteropathy | Would show as gastrointestinal disease with faltering growth — **weight falling away from height**. Her **stool is normal**, her examination is unremarkable, and she has not crossed a centile in 14 months |\n| Hypothyroidism | The commonest **endocrine** cause of short stature, but the endocrine pattern is height affected with weight preserved, and the bone age is **markedly delayed**. Neither applies to a child tracking proportionately from birth |\n| Growth hormone deficiency | Investigated when **height is affected more than weight**, height is **more than 3 SD below the mean**, or velocity is **under 4 cm/year**, with **low IGF-1** and a **delayed bone age**. She is on the 2nd centile, not below the 0.4th, and her weight has fallen no further than her height. The lecture's rule is **do not jump to GH tests early** |\n| Skeletal dysplasia | Causes **disproportionate** short stature, which is why proportions are measured — **upper : lower segment ratio** (about **1.5 : 1** at one year), **arm span** and **sitting height** — and why disproportion prompts a limited skeletal survey. Her examination is unremarkable |\n\n**What to tell the parents, and what still needs doing:** the honest answer to their worry is the mid-parental height, (mother + father **− 13**) ÷ 2 for a girl, which sets the height she is actually expected to reach. Familial short stature is short **but normal for that target**. She still needs serial plotting — a child who is small is reassuring only while she keeps following her centile.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
   "objective": "Recognise constitutional smallness from proportionate low-centile growth tracking from birth in a well child with short parents, and distinguish it from the systemic, endocrine and skeletal causes of faltering growth.",
   "source": "pediatric .pdf p.125 (Part I, ch.16 Q14)"
+},
+
+{
+  "id": "pedhd-emg-1",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "emergencies",
+  "image": "q-pd-hd-126a",
+  "imgAlt": "Line illustration in three side-by-side panels, each an infant lying supine with a gloved hand on the chest, labelled A, B and C.",
+  "stem": "The paediatric team is resuscitating a 3-monthold boy who is in pulseless electrical activity. He was discovered to be blue and lifeless when his parents went to wake him in the morning. The airway has been secured and despite bag valve mask ventilation the child remains blue. Cardiac compressions are given. Where is the most appropriate position on the chest (in the figure below) to do cardiac compressions?",
+  "options": [
+    "A",
+    "B",
+    "C",
+    "None of the above",
+    "All of the above"
+  ],
+  "answer": 1,
+  "explanation": "**B marks the lower half of the sternum, and that is where every paediatric compression technique in the lecture is applied.** The deck gives the hand position by age and body size, and the anatomical target does not change between them: infant with two rescuers, two **thumbs** on the lower half of the sternum with the hands encircling the thorax; infant with a single rescuer, the **tips of two fingers** on the sternum; small child, the **heel of one hand** over the lower half of the sternum; large child, **both hands** over the lower half of the sternum. What changes with size is the instrument, never the site.\n\nThis infant is the paediatric arrest the deck describes. The commonest cause of cardiopulmonary arrest in children is hypoxia from respiratory failure or airway obstruction *(not taken from the course material)*, the child arrests at the end of a slow respiratory decline, and the rhythm found is bradycardia progressing to asystole or PEA rather than VF. Pulseless electrical activity is on the **non-shockable** arm of the algorithm, so compressions and adrenaline are the treatment and there is nothing to defibrillate. That he stays blue despite a secured airway and bag-mask ventilation is why compressions are already running.\n\nThe deck's four keys to effective cardiac output are push hard, push fast, release completely, and do not interrupt compressions unnecessarily. Depth is at least one-third of the depth of the chest — 4 cm in an infant, 5 cm in a child — at 100–120 compressions per minute.\n\n**Why the others are wrong**\n\n| Option | Why it fails |\n|---|---|\n| A | Too high on the chest, over the upper sternum or the manubrium. Compression there does not sit over the ventricles and generates poor forward flow. |\n| C | Too low, at the xiphisternum or upper abdomen. The lecture's site is the *lower half of the sternum*, not the tip below it; pressure here risks liver and gastric injury. |\n| None of the above | B is a correct, labelled lower-sternal position, so a negative answer cannot stand. |\n| All of the above | The three markers are competing alternatives on one diagram, not three sites used together or in sequence. |\n\nThe depth, rate and hand-position figures are L3 pp.24, 26–32; the algorithm arms are L3 pp.33, 36–37.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Identify the lower half of the sternum as the infant chest-compression site, and place PEA on the non-shockable arm.",
+  "source": "pediatric .pdf p.126 (Part I, ch.17 Q1)"
+},
+{
+  "id": "pedhd-emg-2",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "emergencies",
+  "image": "q-pd-hd-126b",
+  "imgAlt": "Clinical close-up photograph of a young child's legs.",
+  "stem": "You are in the Acute Assessment Unit and see David, a 15-month-old boy, who has a fever of 38.5°C. He has had a runny nose, cough and a fever for 3 days. Since this morning he has slept and has been difficult to wake. His heart rate is raised. He has a rash (Fig. 6.2) scattered over his legs which does not disappear with pressure. Which of the following is the most likely diagnosis?",
+  "options": [
+    "Acute lymphoblastic leukaemia",
+    "Henoch–Schönlein purpura",
+    "Immune thrombocytopenia",
+    "Non-accidental injury",
+    "Septicaemia"
+  ],
+  "answer": 4,
+  "explanation": "**A febrile child with a rash that does not blanch and a depressed conscious level is septicaemia until proved otherwise.** Three of this child's four findings are on the deck's own shock lists. Sepsis is named as a cause of **distributive** shock, the mechanism being loss of vascular tone. **Tachycardia is the early sign** of shock, printed twice and captioned \"Don't forget\". **A depressed cerebral state sits in the late, decompensated column** alongside bradycardia, acidotic breathing, blue peripheries, absent urine output and hypotension. David is tachycardic *and* difficult to wake, so he already spans both columns.\n\nThe rash is the fourth finding and the discriminating one. Failure to blanch under pressure means blood has left the vessels into the skin rather than filling them, which separates this instantly from the blanching erythema of an ordinary viral illness in a toddler with three days of coryza and cough.\n\nThe timing matters more than the label. The deck's reason for teaching the early column at all is that **compensated shock is reversible and decompensated shock may be irreversible**, and a child maintains blood pressure until late by raising the heart rate and clamping the peripheral vessels — so **a normal blood pressure does not exclude shock**. A blood pressure has not been given here, and would not be reassuring if it had.\n\n**Why the others are wrong**\n\n| Option | The discriminating point |\n|---|---|\n| Acute lymphoblastic leukaemia | Marrow failure does produce petechiae and bruising, but over weeks with pallor, hepatosplenomegaly or lymphadenopathy — not a three-day coryzal illness that tips into drowsiness in one morning. |\n| Henoch–Schönlein purpura | Palpable purpura, but characteristically over the buttocks and extensor surfaces of a child who is systemically **well**, with abdominal pain, arthralgia or renal signs. Fever with reduced consciousness is not its picture *(not taken from the course material)*. |\n| Immune thrombocytopenia | Petechiae and purpura, often days to weeks after a viral illness, in a child who is otherwise **well**. It explains the rash and nothing else in the stem *(not taken from the course material)*. |\n| Non-accidental injury | Bruising, not a rash scattered over both legs, and it does not produce fever, tachycardia and a falling conscious level. |\n\nThe shock definitions and the early/late columns are L4 pp.3–8 and p.23. Septic shock recognition in full is in the infection chapter.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Recognise fever, tachycardia, a non-blanching rash and altered consciousness as septicaemia with decompensating shock.",
+  "source": "pediatric .pdf p.126 (Part I, ch.17 Q2; the question straddles the page break p.126 -> p.127)"
+},
+{
+  "id": "pedhd-emg-3",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "emergencies",
+  "image": "q-pd-hd-127",
+  "imgAlt": "Illustration of a pair of eyes, frontal view.",
+  "stem": "A 3-year-old boy who is unconscious arrives in the Emergency Department. You manage his airway, breathing and circulation. His blood glucose is normal. On examination you note his pupils are as in the opposite figure (bilateral pinpoint pupils). His temperature and other vital signs are otherwise normal. What is the most likely cause?",
+  "options": [
+    "Third nerve lesion",
+    "Severe hypoxia",
+    "Hypothermia",
+    "Tentorial herniation",
+    "Opiate poisoning"
+  ],
+  "answer": 4,
+  "explanation": "**Symmetrical pinpoint pupils in an unconscious child with otherwise normal observations point to opioid toxicity.** The stem has been built to strip out the alternatives one at a time: airway, breathing and circulation are managed, the blood glucose is normal, the temperature is normal, and the other vital signs are normal. What is left is a pupillary sign, and the pupils are exactly what the deck tells you to examine — **D for disability** covers level of consciousness by AVPU, posture, and **pupil size and reactivity**.\n\nOpioids constrict the pupil by acting on the Edinger-Westphal nucleus, so the miosis is bilateral and symmetrical, and it persists while the child is unconscious *(not taken from the course material)*. In a 3-year-old the exposure is usually a household member's medication. The lecture's reversible-cause list reaches the same place from the other direction: the last of the four Ts is **toxic or therapeutic disturbances**.\n\n**Why the others are wrong**\n\n| Option | What its pupils actually do |\n|---|---|\n| Third nerve lesion | The **opposite** sign. Parasympathetic constrictor fibres are lost, so the pupil **dilates** and is unreactive, usually on one side, with ptosis and a down-and-out eye *(not taken from the course material)*. |\n| Severe hypoxia | Hypoxia is the commonest route to paediatric arrest and the first of the four Hs, but it depresses consciousness through respiratory failure — and the stem states breathing is managed and the other vital signs are normal. Late hypoxic pupils dilate rather than constrict *(not taken from the course material)*. |\n| Hypothermia | The fourth H, and it does depress consciousness. The temperature is explicitly normal, which excludes it on the stem's own terms. |\n| Tentorial herniation | Uncal herniation compresses the third nerve against the tentorial edge, giving a **fixed dilated** pupil, characteristically unilateral first — again the opposite of bilateral miosis, and it would come with hypertension, bradycardia and abnormal posturing rather than normal vital signs *(not taken from the course material)*. |\n\nThe ABCDE assessment and the pupil examination are L3 pp.6–9; the four Hs and four Ts are L3 pp.38–39. The pupillary signs themselves are supplied — neither deck prints a pupil-size differential.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Use symmetrical pinpoint pupils in an unconscious child to identify opiate poisoning, against the dilating causes.",
+  "source": "pediatric .pdf p.127 (Part I, ch.17 Q3)"
+},
+{
+  "id": "pedhd-emg-4",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "emergencies",
+  "stem": "You are called to see a 3-year-old boy with a high fever. The nurse is worried that he is very sleepy. As you walk into the resuscitation room he makes no spontaneous response. You try calling his name but he makes no response. On stimulation, his eyes open, he cries and he raises his hand and pushes your hand away. What is this child's Glasgow Coma Score (GCS)?",
+  "options": [
+    "8",
+    "9",
+    "10",
+    "11",
+    "12"
+  ],
+  "answer": 1,
+  "explanation": "**9, scored E2 + V2 + M5.** Take the three components in the order the stem gives them.\n\n| Component | What the child does | Score |\n|---|---|---|\n| **Eye opening** | Not spontaneous, and not to his name being called; the eyes open only on stimulation | **E2** — to pain |\n| **Verbal** | He cries. A cry carries no words and no recognisable content | **V2** — incomprehensible sounds |\n| **Motor** | He raises his hand and **pushes your hand away** — he finds the stimulus and moves towards it | **M5** — localises to pain |\n| | **Total** | **9** |\n\nThe motor component is the one the question turns on. Pushing the examiner's hand away is purposeful and directed at the source of the stimulus, which is localisation and scores 5. Simple withdrawal, scoring 4, is a reflex pull of the limb away from the stimulus with no attempt to reach it — that single distinction is the difference between the keyed 9 and the distractor 8.\n\nThe deck assesses consciousness by **AVPU** under D for disability, not by GCS, and prints no component scoring at all; the whole scale used above is supplied *(not taken from the course material)*. On AVPU this boy is **P** — he responds to painful stimulation and not to voice. The lecture's other disability items belong in the same examination: posture, checking for hypotonia and for decorticate rigid flexion of the arms or decerebrate rigid extension and pronation, and pupil size and reactivity.\n\nOne divergence worth carrying, since it changes the arithmetic rather than the reasoning: the **paediatric** verbal scale scores \"cries to pain\" as 3 rather than 2, which would give this boy 10 *(not taken from the course material)*. The bank keys 9 on the adult scale, and 9 is what stands here.\n\n**Why the others are wrong**\n\n| Option | Where it comes from |\n|---|---|\n| 8 | Reading the motor response as withdrawal (M4) instead of localisation. It also happens to be the classic airway threshold, which makes it a tempting figure. |\n| 10 | Requires one more point than the stem supports on the adult scale — eye opening to voice, or comprehensible words. He has neither: he does not respond to his name. |\n| 11 | Would need eye opening to voice **and** better verbal output. |\n| 12 | Describes a considerably more responsive child than one who makes no spontaneous response at all. |\n\nA GCS records the neurological response at one moment; it names no diagnosis. In a febrile 3-year-old scoring 9 the score's real use is serial — a falling number is the finding.\n\nThe AVPU and posture material is L3 pp.6–9.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Score a paediatric GCS from described eye, verbal and motor responses, separating localisation from withdrawal.",
+  "source": "pediatric .pdf p.127 (Part I, ch.17 Q4)"
+},
+{
+  "id": "pedhd-emg-5",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "emergencies",
+  "stem": "Ryan, aged 10 months, is rushed to the children's emergency department after being found submerged in the bath. His mother runs screaming into the department saying 'Help my baby, please'. Which is the next most appropriate step?",
+  "options": [
+    "Commence chest compressions in a ratio of 15:2",
+    "If the child is not breathing, commence bag and mask ventilation",
+    "Place the child onto the examination couch and put his head into the neutral position",
+    "Remove wet clothing/towels and dry the baby vigorously",
+    "Stimulate the baby and shout for help"
+  ],
+  "answer": 4,
+  "explanation": "**Stimulate the baby and shout for help — this is the opening move of the sequence, and nothing in the stem has been assessed yet.** The lecture's opening moves run in a fixed order: the SAFE approach, then **check responsiveness** by asking \"Are you all right?\" and stimulating gently, then **shout for help**, then open the airway, then check breathing for a maximum of 10 seconds, then give 5 rescue breaths. Every other option here is a step from further down that list, chosen before the child has been shown to need it.\n\nNote the deck's own caution attached to the stimulation step: **do not shake infants**, or anyone with a suspected cervical spine injury. Stimulating gently is not shaking.\n\nGetting help early is not a formality either. The deck singles out two situations for it — more than one rescuer available, or a **witnessed sudden collapse**, where defibrillation may be needed. Against that, if you are genuinely alone you give **one minute of resuscitation before leaving to seek help**, and CPR can be continued while carrying an infant or small child. Ryan has arrived in a department, so shouting brings a team within seconds.\n\n**Why the others are wrong**\n\n| Option | Why it is premature |\n|---|---|\n| Chest compressions at 15:2 | 15:2 is the correct **two-rescuer** ratio, but compressions follow the diagnosis of arrest, which rests on three findings: unconsciousness, apnoea, and no palpable pulse in a major artery. None has been established. |\n| Bag and mask ventilation if not breathing | The conditional gives it away — it presumes the breathing assessment that has not been done, and it skips calling for help. Ventilation is correct **after** 5 rescue breaths and assessment, and the deck rates bag-mask as effective as an endotracheal tube. |\n| Head into the neutral position on the couch | The right position for an infant airway, and worth knowing that it is **neutral** for an infant against the **sniffing** position for a child. But it is step four, not step one, and it summons nobody. |\n| Remove wet clothing and dry vigorously | Hypothermia is the fourth H and matters after a submersion, but drying a possibly apnoeic infant before assessing him inverts the priorities. Vigorous drying is also the newborn-at-delivery manoeuvre, not this one. |\n\nThe sequence and the age-specific airway positions are L3 pp.21–24; the arrest diagnosis is L3 pp.20–21; the ratios are L3 pp.30, 36.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Place stimulation and calling for help at the head of the paediatric BLS sequence, before airway, breathing or compressions.",
+  "source": "pediatric .pdf p.127 (Part I, ch.17 Q5; the question straddles the page break p.127 -> p.128)"
+},
+{
+  "id": "pedhd-emg-6",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "emergencies",
+  "stem": "Mohammed, aged 8 months, has been vomiting and off his feeds for 2 days. Initially, he had episodes of crying uncontrollably, drawing his legs up into his abdomen as if in pain, and appeared fractious. His mother gave him some oral rehydration solution, but his vomiting continued and he has become lethargic. On admission to hospital he is in shock. What is the most likely diagnosis?",
+  "options": [
+    "Gastroenteritis",
+    "Intussusception",
+    "Malrotation and volvulus",
+    "Meckel diverticulum",
+    "Strangulated hernia"
+  ],
+  "answer": 1,
+  "explanation": "**Intussusception. The diagnosis is in the pattern of the pain, not in the shock.** An infant of 8 months with paroxysms of inconsolable screaming, drawing the legs up to the abdomen, settling between attacks and appearing fractious in the intervals, then vomiting and becoming lethargic, is describing bowel telescoping into itself: colic while the peristaltic wave drives the intussusceptum onward, quiet in between, then obstruction, venous congestion and progressive fluid loss into the gut *(not taken from the course material)*. Lethargy in this illness is an ominous sign, not merely tiredness.\n\nThe shock is the consequence and is where the deck's material applies. **Shock is the circulation being inadequate to meet the metabolic demands of the tissues**, and this is **hypovolaemic** shock — the failing mechanism is volume. On the three-degree scale, shock corresponds to a loss of **10% or more** of body weight, against 5–9% for clinical dehydration and under 5% for no clinically detectable dehydration. Vomiting and poor fluid intake are both on the seven-cause list.\n\nThat his mother gave oral rehydration solution and the vomiting continued is a clinical detail with weight: ORS is the treatment for the option that is *not* the answer here.\n\n**Why the others are wrong**\n\n| Option | The discriminating token |\n|---|---|\n| Gastroenteritis | The obvious trap, and it does cause exactly this dehydration — but it gives diffuse cramping with **diarrhoea**, which is conspicuously absent, and it does not produce discrete recurrent attacks of leg-drawing pain. |\n| Malrotation and volvulus | The dangerous alternative, and it also presents with vomiting and shock in infancy. Its signature is **bilious** vomiting, which the stem never states; the episodic colic points elsewhere *(not taken from the course material)*. |\n| Meckel diverticulum | Classically **painless** rectal bleeding, or an appendicitis-like inflammation. Neither is described *(not taken from the course material)*. |\n| Strangulated hernia | Would obstruct and shock an infant, but expects an irreducible, tender groin or scrotal lump. No local finding is offered anywhere in the stem. |\n\nWhatever the cause, the immediate management is the same and is the subject of the next two questions: resuscitate the circulation first, then work out the deficit.\n\nThe shock definition and types are L4 pp.3–5; the degrees of dehydration and their causes are L4 pp.9–11, 13, 17.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Separate intussusception from gastroenteritis by the pattern of colic, and classify the resulting shock as hypovolaemic.",
+  "source": "pediatric .pdf p.128 (Part I, ch.17 Q6)"
+},
+{
+  "id": "pedhd-emg-7",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "emergencies",
+  "stem": "Mohammed, aged 8 months, presented with the clinical scenario described above. He weighs 8 kg. He needs a bolus of normal saline 0.9% to treat his shock. What volume of fluid would you give initially?",
+  "options": [
+    "40 ml",
+    "160 ml",
+    "320 ml",
+    "680 ml",
+    "800 ml"
+  ],
+  "answer": 1,
+  "explanation": "**160 ml — the bank is working at 20 mL/kg, and 20 × 8 = 160.**\n\n**⚠️ This diverges from the lecture, and the divergence is recorded rather than corrected.** L4 teaches a resuscitation bolus of **10 mL/kg** of balanced crystalloid or blood, repeated up to four times if necessary, so up to 40 mL/kg in total, and then intensive care. On the deck's figure an 8-kg infant would receive **80 ml**, which is not among the five options — the question has been written from the 20 mL/kg convention throughout *(the 20 mL/kg bolus is not taken from the course material; L4 records 10 mL/kg from the 6th edition of its source textbook)*. The bank's printed key stands.\n\nWhat both figures agree on is the ceiling and what it signals. A child who needs **more than 40 mL/kg** of resuscitation fluid is **likely to require mechanical ventilation**, and the deck's instruction is to call for advanced airway skills once multiple boluses are being given. For Mohammed that ceiling is 320 ml.\n\nA bolus is also only the first of the deck's **four phases of fluid management**: fluid resuscitation, then deficit replacement, then maintenance, then ongoing losses — and **only the first is an emergency**. Reassess after it: heart rate, pulse volume, capillary refill, conscious level and urine output, remembering that tachycardia is the early sign and hypotension the late one.\n\n**Why the others are wrong**\n\n| Option | What it actually is |\n|---|---|\n| 40 ml | 5 mL/kg. Below even the lecture's 10 mL/kg, and too small to restore circulating volume in a shocked infant. |\n| 320 ml | 40 mL/kg — the **cumulative maximum** after repeated boluses, not a first dose. Giving it as one bolus skips the reassessment between each. |\n| 680 ml | 85 mL/kg. Corresponds to no bolus rule; it is close to the deficit figure and is there to catch a confusion between the two phases. |\n| 800 ml | 100 mL/kg, which is the **10% deficit** for this child and also his 24-hour maintenance. It is a whole phase of the plan, not a bolus, and infusing it rapidly would be dangerous. |\n\nThe bolus and the four phases are L4 pp.14–16; the shock signs are L4 pp.6–8.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Calculate the initial resuscitation bolus, and hold the bank's 20 mL/kg against the lecture's 10 mL/kg.",
+  "source": "pediatric .pdf p.128 (Part I, ch.17 Q7)"
+},
+{
+  "id": "pedhd-emg-8",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "emergencies",
+  "stem": "Mohammed, aged 8 months, has presented with the clinical scenario described in the previous 2 questions. He has received the fluid bolus of normal saline 0.9%, which has improved his condition. From his presentation you suspect he is 10% dehydrated. You receive his laboratory results, which reveal a plasma sodium of 138 mmol/L (within the normal range). His continuing fluid loss from vomiting is small and can be ignored. What is Mohammed’s total fluid requirement for the initial 24 hours? He weighs 8 kg.",
+  "options": [
+    "160 ml",
+    "320 ml",
+    "800 ml",
+    "880 ml",
+    "1600 ml"
+  ],
+  "answer": 4,
+  "explanation": "**1600 ml — deficit plus maintenance, 800 + 800.**\n\n| Phase | Working | Volume |\n|---|---|---|\
+\n| **Deficit** | 10% of 8 kg = 0.8 kg lost, and **1 kg of body weight lost = 1 litre of fluid** | **800 ml** |\n| **Maintenance, 24 h** | First 10 kg at **100 mL/kg**; he is 8 kg, so 8 × 100 | **800 ml** |\n| **Ongoing losses** | The stem permits the small vomiting losses to be ignored | 0 |\n| | **Total** | **1600 ml** |\n\nThe maintenance formula in full is 100 mL/kg for the first 10 kg, 50 mL/kg for the second 10 kg, and 20 mL/kg for every kilogram after that, summed over 24 hours. The fluid itself is **0.9% NaCl with 5% dextrose**, with 20 mmol KCl per 500-mL bag considered according to serum potassium.\n\nThe plasma sodium is in the stem to settle the **timescale**, not the volume. The deck lengthens replacement to **48 hours** in hypernatraemic dehydration and in diabetic ketoacidosis, to avoid rapid changes in osmolarity. At 138 mmol/L Mohammed is normonatraemic, so the standard initial 24 hours applies and the question can be answered as a single day's total.\n\n**⚠️ One divergence, recorded with the key left as printed.** L4 states that fluid given during resuscitation is **deducted from the deficit**. Applied strictly, Mohammed's 160-ml bolus would leave a deficit of 640 ml and a 24-hour total of **1440 ml**, which is not offered. The bank keys the undeducted 1600 ml, and that is the answer here.\n\n**Why the others are wrong**\n\n| Option | What it actually is |\n|---|---|\n| 160 ml | The resuscitation bolus already given — one phase, and the one that is finished. |\n| 320 ml | Two boluses, or 40 mL/kg. Still resuscitation volume, not a 24-hour plan. |\n| 800 ml | The deficit **or** the maintenance, but not both; whichever way it is read, one phase has been dropped. |\n| 880 ml | 800 + 80, pairing the correct deficit with a tenth of the maintenance — the arithmetic slip of using 10 mL/kg instead of 100 mL/kg for the first 10 kg. |\n\nA further adjustment worth carrying: where there is a **risk of SIADH**, pneumonia being the deck's example, give **two thirds** of standard maintenance.\n\nThe deficit assessment, the maintenance table and both adjustments are L4 pp.17–22.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Sum a 10% deficit and 24-hour maintenance for an 8-kg infant, and use the sodium to fix the replacement period.",
+  "source": "pediatric .pdf p.128 (Part I, ch.17 Q8; the question straddles the page break p.128 -> p.129)"
+},
+{
+  "id": "pedhd-emg-9",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "emergencies",
+  "stem": "You are called to the resuscitation room where there is a 6-year-old child who has arrived by ambulance. The child has been having a generalized seizure for 15 minutes. The ambulance crew gave a dose of buccal midazolam 5 minutes ago. The emergency doctor has maintained the airway and has applied oxygen. His capillary refill time is less than 2 seconds and his heart rate 120 beats/min. What is the next most appropriate management step?",
+  "options": [
+    "Administer further anticonvulsant",
+    "Check blood glucose level",
+    "Gain intravenous access",
+    "Request senior review",
+    "Start bag and valve mask ventilation"
+  ],
+  "answer": 1,
+  "explanation": "**Check the blood glucose level. Hypoglycaemia is a reversible cause that is found at the bedside in seconds, and it must be excluded before the next anticonvulsant.** The stem has already closed off the other branches of the assessment: the airway is maintained and oxygen applied, so A and B are addressed; the capillary refill is **under 2 seconds**, which is normal on the deck's own threshold of greater than 2 seconds for delay. That leaves D — and under disability the lecture asks for conscious level, posture and pupils in a child whose consciousness is being consumed by a seizure.\n\nThe heart rate of 120/min is the figure most likely to pull a reader off course. For a 6-year-old the expected range is roughly **80–120/min** *(not taken from the course material)*, so this is the top of normal rather than a tachycardia, and it comes with a normal capillary refill. Even had it been raised, a convulsing child is generating a catecholamine response; taken together these observations do not describe shock, and no fluid-first answer is offered.\n\nA seizure that has run for **15 minutes** despite buccal midazolam **5 minutes** ago is heading for status epilepticus, so this is not a leisurely assessment. Glucose is checked precisely because it is quicker than anything else on the list and because treating it changes everything that follows.\n\n**Why the others are wrong**\n\n| Option | Why not yet |\n|---|---|\n| Administer further anticonvulsant | It is very likely the step after this one, but escalating drug treatment over an unchecked glucose risks sedating a hypoglycaemic child instead of feeding him. The order is the point of the question. |\n| Gain intravenous access | Necessary, and it will be needed for the next drug and for glucose if it is low — but a capillary glucose does not wait for a cannula in a moving, fitting child. |\n| Request senior review | Appropriate in prolonged status, and it costs nothing to call — but it is not a management step that changes this minute, and it does not substitute for the test. |\n| Start bag and valve mask ventilation | Indicated for absent or inadequate breathing. The airway is maintained and oxygen is applied, with no stated ventilatory failure; the deck's own instruction is to use only the volume needed to make the chest rise. |\n\nThe ABCDE assessment is L3 pp.6–9, bag-mask technique L3 pp.12–18, and the capillary refill threshold and shock signs L4 pp.6–8.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Order the immediate steps in a prolonged paediatric seizure, putting bedside glucose ahead of a second anticonvulsant.",
+  "source": "pediatric .pdf p.129 (Part I, ch.17 Q9)"
+},
+
+{
+  "id": "pedhd-emg-10",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "emergencies",
+  "stem": "Seb, a 2-year-old boy, was at his cousin's birthday party. His mother noticed that he has suddenly developed a widespread urticarial rash and has also become flushed in the face. His vital signs are normal and he has no respiratory compromise. Which medication would you give?",
+  "options": [
+    "Intramuscular adrenaline",
+    "Intramuscular antihistamine",
+    "Intravenous hydrocortisone",
+    "Oral antihistamine",
+    "Oral corticosteroid"
+  ],
+  "answer": 3,
+  "explanation": "**Oral antihistamine is the printed key: this is an allergic reaction confined to the skin, with no airway, breathing or circulatory involvement.** Seb has a rash and facial flushing; his vital signs are normal and there is no respiratory compromise. Nothing here meets the definition of anaphylaxis, which needs a systemic reaction threatening airway, breathing or circulation, so the treatment ladder starts at its bottom rung rather than its top.\n\nThis is the anchor for the shared menu it forms with `pedhd-emg-11`. Both questions print the same five options; what separates them is the presence or absence of respiratory involvement.\n\n| Option | Where it sits on the ladder |\n|---|---|\n| Intramuscular adrenaline | The treatment for **anaphylaxis** — a life-saving drug that is disproportionate for isolated hives, and is the key for `pedhd-emg-11`. |\n| Intramuscular antihistamine | The parenteral route buys no advantage in a stable child who can swallow; the deck classes antihistamines as adjuncts, whichever route they take. |\n| Intravenous hydrocortisone | A steroid, so its onset is delayed by hours. It cannot be an immediate treatment, and it needs a cannula in a well toddler. |\n| **Oral antihistamine** | Relieves itch and urticaria in a child who is otherwise stable — the printed key. |\n| Oral corticosteroid | Same delayed onset as hydrocortisone, and no faster relief of the symptom actually present. |\n\n**⚠️ This diverges from the allergy lecture, and the divergence is recorded rather than corrected.** L27's emergency action-plan card sorts symptoms into mild and severe and hangs the decision on that sorting. Its **mild** skin row reads \"a few hives, mild itch\" — for a single body area, the card advises **antihistamine if ordered by a healthcare provider**, staying with the person, watching closely, and giving epinephrine if symptoms worsen. Its **severe** skin row, however, reads **\"many hives, widespread redness\"**, and the card's rule is that **any one severe finding means epinephrine immediately**. Seb's rash is described as *widespread*, and his face is flushed, which reads onto the severe row and not the mild one — so the deck's card, applied literally, would select intramuscular adrenaline. Printed across the head of that card is the instruction **do not depend on antihistamines or inhalers to treat a severe reaction: use epinephrine.** The bank keys oral antihistamine on the absence of respiratory compromise and normal vital signs; **the key stands as printed**, and the card's stricter reading is recorded here beside it.\n\nOne further rule from the same card is worth carrying, because it catches the case this question is one half of: **mild symptoms in more than one body area also mean epinephrine.** A single system, mild, is the only combination the card treats with an antihistamine alone.\n\nThe mild and severe tables and the action-plan card are L27 pp.17–19, 27; the full anaphylaxis protocol and every dose are L27 pp.20–24, and are set out in the allergy chapter rather than repeated here.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Separate a skin-limited allergic reaction from anaphylaxis, and hold the bank's antihistamine key against the deck's severe-symptom card.",
+  "source": "pediatric .pdf p.129 (Part I, ch.17 Q10)"
+},
+{
+  "id": "pedhd-emg-11",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "emergencies",
+  "stem": "Jenny, a 3-year-old girl, was at a village fete. She suddenly developed swollen cheeks and lips and a widespread urticarial rash. She is rushed to the nearby general practice surgery, where it is noted that her breathing is very noisy. She is distressed and frightened. On auscultation she has widespread wheeze. Which medication would you give first?",
+  "options": [
+    "Intramuscular adrenaline",
+    "Intramuscular antihistamine",
+    "Intravenous hydrocortisone",
+    "Oral antihistamine",
+    "Oral corticosteroid"
+  ],
+  "answer": 0,
+  "explanation": "**Intramuscular adrenaline. This is anaphylaxis, and the discriminating token against `pedhd-emg-10` is the airway and breathing involvement — noisy breathing with widespread wheeze.** The comparative ladder for these five shared options is written once at `pedhd-emg-10`; only what selects adrenaline here is given.\n\nJenny triggers four separate rows of the deck's **severe** symptom table at once: **significant swelling of the tongue or lips** (swollen cheeks and lips), **wheezing and shortness of breath** (widespread wheeze), **a tight or hoarse throat with trouble breathing** (very noisy breathing), and **many hives or widespread redness**. The card's rule is that **any one** severe finding means epinephrine immediately, and it separately makes **a combination of symptoms from different body areas** its own indication. Her distress and fright are not incidental either — the card lists **a feeling that something bad is about to happen** among the severe findings.\n\nThe deck's dose is **0.01 mg/kg of 1:1,000 adrenaline given intramuscularly into the mid-anterolateral thigh**, to a maximum of **0.3 mg in a child**, with the time recorded and the dose **repeated every 5 to 15 minutes** if needed; most patients respond to one or two doses. Noisy breathing is stridor from laryngeal oedema, which is why nothing slower will do.\n\nWhy no other option can come **first**: the deck states plainly that **antihistamines and steroids are additional only — never instead of adrenaline**, and prints no dose for either in the initial protocol. Hydrocortisone and oral corticosteroid act over hours; an antihistamine by either route treats itch, not airway oedema or bronchospasm. Salbutamol is likewise listed as an addition **after** adrenaline, and the card warns against depending on inhalers in a severe reaction.\n\n**⚠️ A printed anomaly in this question, recorded and not corrected.** The five options run down the page in the order shown above, but the letters printed beside them read **A, E, C, D, B** across the page break rather than A to E. The printed answer is **A**, which is the first option down the page, **Intramuscular adrenaline** — so the key is unaffected by the lettering. In this app the letters are positional, and the option order above is the printed order down the page.\n\nThe severe and mild tables are L27 pp.17–19, 27; the protocol and doses are L27 pp.20–24. Anaphylaxis is named as a cause of distributive shock in the shock deck, L4 pp.3–5.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Identify anaphylaxis from airway and breathing involvement and give intramuscular adrenaline before any adjunct.",
+  "source": "pediatric .pdf p.129 (Part I, ch.17 Q11; the question straddles the page break p.129 -> p.130)"
+},
+{
+  "id": "pedhd-emg-12",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "emergencies",
+  "stem": "There has been a dramatic decline in the incidence of sudden infant death syndrome in the UK. Which of the following is the single most important factor responsible for this decline?",
+  "options": [
+    "Feet to foot of cot",
+    "Keeping baby in parent's room until 6 months of age",
+    "Keeping room cool to prevent overheating",
+    "Parents not smoking in the same room as infant",
+    "Supine sleeping"
+  ],
+  "answer": 4,
+  "explanation": "**Supine sleeping.** *(This question is answered from general medical knowledge and is not taken from the course material — sudden infant death syndrome appears nowhere in the pediatrics theory, and neither emergencies lecture addresses it.)*\n\nEvery option listed is genuine safer-sleep advice, so the question is not asking which measures help; it is asking which single change accounts for the **dramatic** fall. The answer is historical as much as clinical. Through the 1970s and 1980s prone sleeping was actively recommended, and campaigns from around 1991 reversed that advice; incidence fell by roughly three quarters within a few years, faster and further than any other single intervention has produced. Nothing else on this list was introduced as a population-wide reversal of standing advice.\n\nThe mechanism ties the risk factors together. Prone sleeping is thought to promote rebreathing of exhaled carbon dioxide into soft bedding, impair arousal from sleep, and reduce the infant's ability to lose heat — which is also why overheating is a separate risk factor rather than a competing explanation. Side sleeping was permitted early in the campaigns and later dropped, because an infant placed on the side can roll prone.\n\n| Option | Real, but not the answer |\n|---|---|\n| Feet to foot of cot | Placing the feet at the cot's end stops an infant wriggling under the bedding. Advised alongside supine sleeping, but a refinement of it, not the change itself. |\n| Baby in the parent's room to 6 months | Room-sharing without bed-sharing is associated with reduced risk and is standard advice, but it was never the step change. |\n| Keeping the room cool | Overheating is an independent risk factor, and this addresses it. Note that it and supine sleeping act partly through the same thermoregulatory route. |\n| Parents not smoking near the infant | Both antenatal and postnatal smoke exposure are strong, well-established risk factors — arguably the strongest **modifiable** one after sleep position. Smoking rates fell gradually over decades, which does not fit a dramatic decline. |\n\nAll of these belong to the same safer-sleep package, and the wording \"single most important factor\" is what forces a choice between them.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Identify supine sleeping as the single change behind the fall in sudden infant death syndrome, against the other safer-sleep measures.",
+  "source": "pediatric .pdf p.130 (Part I, ch.17 Q12)"
+},
+{
+  "id": "pedhd-emg-13",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "emergencies",
+  "stem": "Nathaniel, a 4-year-old boy, is brought to hospital with shortness of breath. He is able to talk but has oxygen saturation of 90%. His capillary refill time is less than 2 seconds. Which of the following is the most appropriate next step in the management of that patient?",
+  "options": [
+    "Check blood glucose",
+    "Check pupils",
+    "Airway opening manoeuvres",
+    "High-flow oxygen therapy",
+    "Commence cardiac compressions using the hands encircling method"
+  ],
+  "answer": 3,
+  "explanation": "**High-flow oxygen therapy — and this is the anchor for the five questions n13 to n17, which all print the same option menu.** Every one of them is answered the same way: walk ABCDE in order and act on the **first** abnormality you meet. The options are not a list of treatments to rank by severity; they are the assessment sequence itself, one option per letter.\n\n| Option | Which letter it belongs to | It is the answer when |\n|---|---|---|\n| Airway opening manoeuvres | **A** | The airway is not patent — an unconscious child, gasping, snoring or silent. |\n| High-flow oxygen therapy | **B** | Breathing is inadequate or oxygenation is poor, with a patent airway. |\n| Commence cardiac compressions, hands encircling | **C** | Circulation has failed — arrest, or profound bradycardia despite effective ventilation. |\n| Check blood glucose | **D** | A, B and C are addressed and hypoglycaemia is plausible. |\n| Check pupils | **D** | A, B, C and glucose are addressed and consciousness is still impaired. |\n\nApplied to Nathaniel: he is **able to talk**, which is itself the airway assessment — speech requires a patent airway and moving air, so **A is clear**. **B is not**: he is short of breath with an oxygen saturation of 90%. His **capillary refill is under 2 seconds**, normal against the deck's threshold of greater than 2 seconds, so **C is clear**. The first abnormality met is breathing, and the treatment for it on this menu is oxygen.\n\nThe deck's oxygen and ventilation ladder runs from face mask and nasal cannula, through **high-flow nasal cannula therapy**, to bag-mask ventilation and then intubation, and it names failure to oxygenate or ventilate despite adequate bag-mask support as the trigger for escalating. Nathaniel is at the second rung, not the fourth. Oxygen saturation and cyanosis sit in the breathing assessment, which is where his abnormality was found.\n\nOne caution the menu invites: a saturation of 90% is low but he is talking, so this is not an emergency requiring the airway or the circulation to be touched. Doing something more aggressive than the abnormality warrants is as much an error here as doing nothing.\n\nThe ABCDE assessment is L3 pp.6–9, the oxygen ladder L3 pp.10–18, and the capillary refill threshold L4 pp.6–8.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Anchor the ABCDE menu: act on the first abnormality found, here inadequate oxygenation with a patent airway.",
+  "source": "pediatric .pdf p.130 (Part I, ch.17 Q13)"
+},
+{
+  "id": "pedhd-emg-14",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "emergencies",
+  "stem": "Kelsey, a 2-year-old girl, is found unconscious in the garden. When she is bought into the resuscitation room she is gasping and moaning. Which of the following is the most appropriate next step in the management of that patient?",
+  "options": [
+    "Check blood glucose",
+    "Check pupils",
+    "Airway opening manoeuvres",
+    "High-flow oxygen therapy",
+    "Commence cardiac compressions using the hands encircling method"
+  ],
+  "answer": 2,
+  "explanation": "**Airway opening manoeuvres. The discriminating token against the menu anchored at `pedhd-emg-13` is that Kelsey is unconscious and gasping — the failure is at A, the first letter.**\n\nGasping is the sign that decides this. **Agonal gasping is not breathing**; the deck's own instruction during the breathing check is to look, listen and feel for **no more than 10 seconds**, and to treat gasps as absent respiration. An unconscious 2-year-old loses the muscle tone that holds the tongue and soft tissues clear of the pharynx, so the airway obstructs passively.\n\nThe manoeuvre is age-specific and the deck prints both positions: **neutral for an infant, the sniffing position for a child**, with a chin lift, or a jaw thrust where the cervical spine may be injured. Kelsey was found collapsed outdoors with no witnessed history, so an unwitnessed fall cannot be excluded and a jaw thrust is the safer opening.\n\nWhy nothing else can come first: **high-flow oxygen delivered into an obstructed airway does not reach the lungs**, which is the whole reason A precedes B. Glucose and pupils are D, and D is not assessed before A is secure. Compressions need the arrest triad — unconsciousness, apnoea, and no palpable major pulse; she is unconscious and barely breathing, but no pulse has been reported, and opening the airway may be all she needs.\n\nThe airway positions and the breathing check are L3 pp.6–9, 21–24; the arrest diagnosis is L3 pp.20–21.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Recognise gasping in an unconscious child as an airway failure and open the airway before anything else.",
+  "source": "pediatric .pdf p.130 (Part I, ch.17 Q14)"
+},
+{
+  "id": "pedhd-emg-15",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "emergencies",
+  "stem": "Ahmed, aged 2 months, is found by his mother to be pale and floppy in his cot. The paramedics are giving bag and valve mask ventilation when he arrives in the resuscitation room and his chest is moving well. His heart rate is 40 beats/min. Which of the following is the most appropriate next step in the management of that patient?",
+  "options": [
+    "Check blood glucose",
+    "Check pupils",
+    "Airway opening manoeuvres",
+    "High-flow oxygen therapy",
+    "Commence cardiac compressions using the hands encircling method"
+  ],
+  "answer": 4,
+  "explanation": "**Commence cardiac compressions. The discriminating token against the menu anchored at `pedhd-emg-13` is a heart rate of 40 beats/min that persists despite ventilation that is already working.**\n\nRead the stem in the order of the letters. **A and B are both being managed and are effective** — the paramedics are bag-mask ventilating and **the chest is moving well**, which is the deck's own test of adequate ventilation. That leaves **C**, and 40 beats/min in a 2-month-old is profound bradycardia. In children bradycardia is a **pre-arrest** rhythm rather than a rhythm disturbance in its own right: it is the hypoxic myocardium failing, and the deck places bradycardia progressing to asystole on the non-shockable arm of the algorithm. A rate this low generates no useful cardiac output, so it is treated as arrest *(the specific rate threshold for compressing an infant, conventionally under 60 beats/min with poor perfusion, is not taken from the course material)*.\n\nThe option's wording is also age-checked. **Hands encircling is the two-rescuer infant technique** — two thumbs on the lower half of the sternum with the hands encircling the thorax — and Ahmed at 2 months is an infant with a full resuscitation team present, so it is the correct technique as well as the correct action. Compress to at least a third of the chest depth, about 4 cm in an infant, at 100 to 120 per minute, with a two-rescuer ratio of 15:2.\n\nWhy not the others: oxygen and airway manoeuvres cannot improve on ventilation that is already moving the chest, and glucose and pupils are D — assessed after circulation is supported, not instead of supporting it.\n\nThe compression technique, depth, rate and ratio are L3 pp.24, 26–32, 36; the algorithm arms are L3 pp.33, 36–37.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Treat profound bradycardia despite effective ventilation as arrest, and match the encircling technique to an infant.",
+  "source": "pediatric .pdf p.131 (Part I, ch.17 Q15)"
+},
+{
+  "id": "pedhd-emg-16",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "emergencies",
+  "stem": "Daniel, age 10 years, has diabetes mellitus and has been playing football at his friend's house. He has been brought to the emergency department as he has become. Which of the following is the most appropriate next step in the management of that patient?",
+  "options": [
+    "Check blood glucose",
+    "Check pupils",
+    "Airway opening manoeuvres",
+    "High-flow oxygen therapy",
+    "Commence cardiac compressions using the hands encircling method"
+  ],
+  "answer": 0,
+  "explanation": "**Check blood glucose. The discriminating token against the menu anchored at `pedhd-emg-13` is diabetes mellitus plus prolonged exercise — the one combination on this menu that points straight to D.**\n\n**⚠️ The stem is printed incomplete and is reproduced as printed.** It ends \"as he has become.\" with the symptom itself missing; the book prints no more. Nothing has been trimmed in transcription, and the key is unaffected — the diagnosis is carried by the two facts that survive.\n\nThose two facts are enough. Exercise increases glucose uptake into muscle and increases insulin sensitivity for many hours afterwards, so a child on insulin who plays football without extra carbohydrate or a reduced dose is at real risk of hypoglycaemia *(this relationship is not taken from the course material)*. Whatever word is missing — drowsy, confused, unwell, unconscious — a capillary glucose is the test that would explain it, and it takes seconds at the bedside.\n\nThe general principle from `pedhd-emg-13` also happens to select this answer without needing the missing word: no airway, breathing or circulatory abnormality is stated anywhere in the stem, so A, B and C are unopposed and the assessment falls through to D. Between the two D options, glucose is chosen over pupils because the history names a specific, treatable and rapidly reversible cause.\n\nHypoglycaemia earns its place on this menu because it is on the deck's reversible-cause list — the four Hs and four Ts — where it sits under **metabolic and electrolyte disturbance**, and because untreated it causes seizures and permanent neurological injury. Treatment follows the test immediately: oral glucose if the child can swallow safely, intravenous dextrose or intramuscular glucagon if not.\n\nThe disability assessment is L3 pp.6–9; the reversible causes are L3 pp.38–39.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Check glucose first in a child with diabetes after exercise, and read a stem the book prints incomplete.",
+  "source": "pediatric .pdf p.131 (Part I, ch.17 Q16)"
+},
+{
+  "id": "pedhd-emg-17",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "emergencies",
+  "stem": "Aisha, a 3-year-old girl, is bought to hospital by the paramedics as she has had a seizure. She is receiving high-flow oxygen, her breathing is regular, and the cardiac monitor shows a heart rate of 100 beats/min. She is unresponsive to painful stimuli, as she does not flinch when her blood glucose is checked. Which of the following is the most appropriate next step in the management of that patient?",
+  "options": [
+    "Check blood glucose",
+    "Check pupils",
+    "Airway opening manoeuvres",
+    "High-flow oxygen therapy",
+    "Commence cardiac compressions using the hands encircling method"
+  ],
+  "answer": 1,
+  "explanation": "**Check pupils. The discriminating token against the menu anchored at `pedhd-emg-13` is that this stem has already closed off every other option, including the other D option.**\n\nThe stem is written as a process of elimination, and reading it that way is the skill being tested:\n\n| Letter | What the stem states | Status |\n|---|---|---|\n| A | Breathing regularly, so air is moving | Clear |\n| B | Already receiving high-flow oxygen, breathing regular | Managed |\n| C | Heart rate 100/min, appropriate for a 3-year-old | Clear |\n| D — glucose | **Checked** — the detail is hidden inside the clause about not flinching | Done |\n| D — pupils | Unresponsive to painful stimuli, post-seizure | **The abnormality** |\n\nThe sentence \"she does not flinch when her blood glucose is checked\" does two jobs at once, and the second is easy to miss: it reports the conscious level **and** tells you the glucose has been done, which removes the option most readers reach for. On AVPU she is **U**, unresponsive — the lowest grade, and a level that would ordinarily raise the question of whether she can protect her airway.\n\nPupils are the remaining unexamined item in the deck's disability assessment, which comprises level of consciousness by AVPU, **posture** — checking for decorticate flexion or decerebrate extension — and **pupil size and reactivity**. After a seizure they carry real information: unequal or fixed dilated pupils suggest raised intracranial pressure or a structural lesion, pinpoint pupils suggest opioid or other toxic causes, and normal reactive pupils in a child who is slow to recover support a post-ictal state.\n\nWhy not the rest: repeating a glucose that has just been done delays the assessment; oxygen is already running; the airway is not stated to be obstructed and breathing is regular; and compressions are for arrest, which a regular pulse of 100/min excludes.\n\nThe AVPU grading, posture and pupil assessment are L3 pp.6–9.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Complete the disability assessment with pupils once airway, breathing, circulation and glucose are all addressed.",
+  "source": "pediatric .pdf p.131 (Part I, ch.17 Q17)"
+},
+
+{
+  "id": "pedhd-emg-18",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "emergencies",
+  "stem": "A 9-year-old boy is 'blue-lighted' into the emergency department by ambulance with an acute history of reduced consciousness. His mother described him complaining of headache and fever earlier in the day. On examination, he is pyrexial with a GCS of 14/15 and is cardiovascularly stable. A few petechiae are noted on his legs. What is the single most effective immediate management for this child?",
+  "options": [
+    "Arrange an urgent CT brain scan",
+    "Give a 20 mL/kg normal saline fluid bolus",
+    "Give a 3 mL/kg 10% dextrose fluid bolus",
+    "Gain intravenous access, take blood cultures and administer broad-spectrum antibiotics",
+    "Administer vitamin K"
+  ],
+  "answer": 3,
+  "explanation": "**Access, cultures, antibiotics — and the deck states the governing rule outright: in septicaemia, start antibiotics on clinical suspicion, not on cultures.** Fever, headache, a falling conscious level and petechiae in a 9-year-old is meningococcal disease until proved otherwise, and the material says so in as many words: **petechiae or purpura in a febrile child is meningococcal disease until proved otherwise**, listed among the red flags that change the disposition.\n\nThe reassuring parts of the stem are the dangerous parts. He is **cardiovascularly stable with a GCS of 14/15**, and the deck's warning is that septicaemia is **hard to recognise before the rash**, its early signs being only tachycardia, tachypnoea and poor perfusion. Meningococcaemia is described as the more lethal of the organism's two faces, with **very rapid progression**: a macular rash turns maculopapular, then **petechial and purpuric within a few hours**. \"A few petechiae\" is where that curve begins, not where it ends.\n\nThe treatment instruction is equally explicit — **never delay treatment for investigations**: oxygen, IV fluids, vasopressors, and **ceftriaxone or cefotaxime immediately**, with penicillin G reserved until sensitivity is proven. Cultures are drawn in the same movement because blood culture is positive in **50–75%** of meningococcal cases and **the yield falls once antibiotics are given** — but they are taken alongside treatment, never ahead of it.\n\n**Why the others are wrong**\n\n| Option | Why it fails |\n|---|---|\n| Urgent CT brain scan | Imaging delays antibiotics, which is exactly what the material forbids. The same logic governs lumbar puncture: **if the LP would delay antibiotics, skip it** — and PCR remains definitive after treatment has started. |\n| 20 mL/kg saline bolus | The right move in shock, and it will very likely be needed soon. He is stated to be cardiovascularly stable, so it is not yet the single most effective step. |\n| 3 mL/kg 10% dextrose | For documented hypoglycaemia. No glucose value is given, and nothing here suggests it. |\n| Vitamin K | Treats vitamin-K-dependent coagulopathy. The petechiae here come from endotoxin-driven inflammation causing shock and DIC, not from a deficiency state. |\n\nThe septicaemia and red-flag rows are L18 pp.14–15; the meningococcal organism, rash, red flags and treatment are L18 and SBI as set out in the infection chapter.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Treat fever with petechiae as meningococcal disease and give antibiotics on suspicion, ahead of imaging or cultures.",
+  "source": "pediatric .pdf p.132 (Part I, ch.17 Q18)"
+},
+{
+  "id": "pedhd-emg-19",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "emergencies",
+  "stem": "A 3-year-old girl is 'blue-lighted' into the local emergency department with reduced consciousness. Her mother informs the paramedic that her daughter has been unwell for the last 8 days with vomiting and profuse diarrhoea. On arrival, she is apyrexial, has a heart rate of 170 beats per minute and respiratory rate of 20 per minute. Her systolic blood pressure is 75 mmHg and she has a capillary refill time of 5 seconds. She is barely responsive to pain. Resuscitation begins and a blood gas reveals a pH 6.9, base excess 18 mmol/L and blood sugar of 2.2 mmol/L. What is the most likely clinical syndrome?",
+  "options": [
+    "Anaphylactic shock",
+    "Septicaemic shock",
+    "Cardiogenic shock",
+    "Hypovolaemic shock",
+    "Neurogenic shock"
+  ],
+  "answer": 3,
+  "explanation": "**Decompensated hypovolaemic shock. Eight days of vomiting and profuse diarrhoea is the cause, and the deck names hypovolaemic shock as the commonest type in children.**\n\nEvery item in this stem sits on the lecture's late, **decompensated** column rather than its early one:\n\n| Finding | Where the deck places it |\n|---|---|\n| Heart rate 170/min | Tachycardia — the **early** sign, still present |\n| Capillary refill 5 seconds | Delayed, against a threshold of greater than 2 seconds |\n| Systolic BP 75 mmHg | **Hypotension — late.** A child holds blood pressure until last |\n| Barely responsive to pain | **Depressed cerebral state — late** |\n| pH 6.9 | Acidosis, from tissue hypoperfusion and anaerobic metabolism |\n\nShock is defined as a circulation inadequate to meet the metabolic demands of the tissues, and it corresponds to a fluid loss of **10% or more** of body weight. The reason the early column is taught at all is the reason it matters here: **compensated shock is reversible; decompensated shock may be irreversible.** This child has crossed that line, which is why resuscitation is already running.\n\n**⚠️ A printed number is internally inconsistent, and is recorded rather than corrected.** The gas reads **\"base excess 18 mmol/L\"** as a positive value. A base excess of +18 is a severe metabolic **alkalosis**, which cannot coexist with a pH of 6.9; the value consistent with the rest of the gas is **−18 mmol/L**, a profound base deficit. The transcription reproduces what the book prints. Note also the **blood sugar of 2.2 mmol/L** — hypoglycaemia, expected in a small child after eight days of poor intake, and treatable at once; it does not change the syndrome named.\n\n**Why the others are wrong**\n\n| Option | The discriminating point |\n|---|---|\n| Anaphylactic shock | Distributive, and on the deck's list — but it needs an allergen exposure, and urticaria, facial swelling or wheeze. None is present, and the illness has run eight days. |\n| Septicaemic shock | The serious alternative, also distributive. She is **apyrexial** with no focus, and the history supplies a complete mechanical explanation for the volume loss. |\n| Cardiogenic shock | Pump failure — myocarditis, arrhythmia, congenital disease. Nothing suggests it, and the tachycardia here is a compensatory response to lost volume. |\n| Neurogenic shock | Loss of sympathetic vascular tone after spinal cord injury. It classically gives hypotension **without** tachycardia; she is at 170/min. |\n\nThe shock definition, types and the early-versus-late columns are L4 pp.3–8, 23; the degrees of dehydration are L4 pp.9–13.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Identify decompensated hypovolaemic shock from prolonged gastrointestinal losses, and read a gas whose printed sign is wrong.",
+  "source": "pediatric .pdf p.132 (Part I, ch.17 Q19)"
+},
+{
+  "id": "pedhd-emg-20",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "emergencies",
+  "stem": "A known epileptic is brought into the local emergency department in status epilepticus. The paramedic crew have given rectal diazepam 10 minutes ago but the patient continues to have generalized tonic-clonic seizures. He now has intravenous access and his blood sugar is 5.5 mmol/L. What is the most appropriate next drug treatment to be given?",
+  "options": [
+    "Intravenous lorazepam",
+    "Intravenous phenytoin",
+    "Intravenous thiopental",
+    "Rectal paraldehyde",
+    "Buccal midazolam"
+  ],
+  "answer": 0,
+  "explanation": "**Intravenous lorazepam — the second benzodiazepine dose, now by the route that has just become available.** *(The status epilepticus drug ladder is answered from general medical knowledge and is not taken from the course material: sweeping the pediatrics theory returns no mention of lorazepam, diazepam, midazolam, phenytoin or status epilepticus. The resuscitation deck supplies the ABCDE framework around it and nothing more.)*\n\nThe conventional ladder gives **two** doses of benzodiazepine before moving to a second-line agent, at roughly ten-minute intervals. The crew gave one, rectally, ten minutes ago. So this child is due his second dose, and the stem has just told you a cannula is in — which changes the route, not the rung. Lorazepam is preferred intravenously over diazepam because its anticonvulsant effect lasts substantially longer, and its cerebral redistribution is slower.\n\nTwo details in the stem exist to be cleared before drug treatment: the **blood sugar of 5.5 mmol/L** is normal, so hypoglycaemia is excluded as a cause, and intravenous access is established, so no route is barred. Throughout, resuscitation runs in parallel — airway, high-flow oxygen, and monitoring, since every drug on this list depresses respiration.\n\n**Why the others are wrong**\n\n| Option | Where it actually sits |\n|---|---|\n| Intravenous phenytoin | The **second-line** agent, given as a loading dose over about 20 minutes once **two** benzodiazepine doses have failed. Only one has been given. |\n| Intravenous thiopental | Refractory status — a general anaesthetic requiring rapid sequence induction, intubation and intensive care. Several rungs too high. |\n| Rectal paraldehyde | A historical alternative rescue route, and pointless now that a cannula is in place. |\n| Buccal midazolam | A perfectly good **pre-hospital** rescue route, and it would count as the second dose — but with intravenous access secured there is no reason to prefer mucosal absorption over a titratable intravenous dose. |\n\nNote the pairing with `pedhd-emg-25`, which asks the same question from the opposite direction: there the first dose was buccal midazolam and the answer is again intravenous lorazepam. The rule being tested both times is *second benzodiazepine, best available route*.\n\nThe ABCDE framework around the seizing child is L3 pp.6–9.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Give the second benzodiazepine dose intravenously in ongoing status, before escalating to phenytoin.",
+  "source": "pediatric .pdf p.132 (Part I, ch.17 Q20)"
+},
+{
+  "id": "pedhd-emg-21",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "emergencies",
+  "stem": "A previously well 5-year-old boy is brought in by ambulance to the emergency department with an acute onset of breathing difficulty. On arrival, he appears unwell, pale with audible stridor and is sitting upright unable to speak. His temperature is 40C. What is the first priority in this child's management?",
+  "options": [
+    "Lie the child down",
+    "Take a throat swab",
+    "Obtain intravenous access",
+    "Give oral dexamethasone",
+    "Summon immediate anaesthetic help"
+  ],
+  "answer": 4,
+  "explanation": "**Summon immediate anaesthetic help. This is acute epiglottitis, and the deck's instruction is explicit: airway first — secure it, usually by intubation, before any other procedure.**\n\nEvery feature the book gives is on the epiglottitis side of the material's own discrimination table:\n\n|  | This child | Acute epiglottitis | Viral croup |\n|---|---|---|---|\n| **Onset** | Acute | **Hours**, no prodrome | Over 1–2 days after coryza |\n| **Fever** | **40°C** | **High** | Absent or low grade |\n| **Voice** | **Unable to speak** | **Muffled, \"hot potato\"** | Hoarse |\n| **Posture** | **Sitting upright** | **Tripod, sitting forward** | Any |\n| **Cough** | Not described | Absent or slight | **Barking** |\n| **Handling** | — | **Do not examine the throat** | Steroids, usually safe to examine |\n\nThe organism is **Haemophilus influenzae type b**, and the deck lists **sudden airway obstruction and death** among its complications. The airway here is partly obstructed already — stridor with an inability to speak — and it is being held open only by the child's own posture and effort. Anything that disturbs him can convert partial obstruction into complete obstruction, which is why the answer is to bring the person who can secure the airway rather than to do anything to the child.\n\n**Why the others are wrong**\n\n| Option | Why it is dangerous or premature |\n|---|---|\n| Lie the child down | He is sitting upright because that position holds his airway open. Forcing him supine can obstruct it completely. |\n| Take a throat swab | The material forbids it in as many words: **do not examine the throat**. Instrumenting the pharynx risks laryngospasm and total obstruction. |\n| Obtain intravenous access | Needed later, but cannulation distresses a child whose airway depends on staying calm — and distress increases obstruction. |\n| Give oral dexamethasone | This treats **croup**, which the table above excludes, and the deck's own epiglottitis line puts dexamethasone **after** the airway is secured. An oral drug also cannot be swallowed by a drooling child who cannot speak. |\n\nStridor is on the airway and breathing assessment in both emergency decks, and the febrile-child plate lists stridor as pointing to epiglottitis, viral croup or bacterial tracheitis.\n\nThe epiglottitis hallmark, the airway-first rule and the croup discrimination are L18 as set out in the infection chapter; the ABCDE assessment is L3 pp.6–9.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Recognise epiglottitis and secure expert airway help without examining the throat or laying the child down.",
+  "source": "pediatric .pdf p.133 (Part I, ch.17 Q21)"
+},
+{
+  "id": "pedhd-emg-22",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "emergencies",
+  "stem": "A 9-year-old boy in asystole is brought in by ambulance to the emergency department. The various members of the cardiac arrest team arrive and resuscitation begins. Which is the most important drug of choice?",
+  "options": [
+    "Adrenaline (epinephrine)",
+    "Sodium bicarbonate",
+    "Atropine",
+    "Amiodarone",
+    "Lidocaine"
+  ],
+  "answer": 0,
+  "explanation": "**Adrenaline. Asystole is a non-shockable rhythm, and adrenaline is the only drug on the non-shockable arm.**\n\nThe rhythm classification is the part of this the material teaches directly. Both arms are printed:\n\n| Arm | Rhythms | What is done |\n|---|---|---|\n| **Non-shockable** | **Pulseless electrical activity · asystole** | CPR, **adrenaline immediately**, then every 3–5 minutes |\n| **Shockable** | **Ventricular fibrillation · pulseless VT** | Shock first, then CPR; adrenaline after the third shock |\n\nAsystole is also the rhythm the deck expects in children, because paediatric arrest follows respiratory failure rather than a primary cardiac event, so the heart arrives hypoxic and slows through bradycardia into asystole. The shockable arm is described as the uncommon one, and defibrillating asystole or PEA does nothing.\n\n**⚠️ The doses are supplied, not printed.** The pediatrics theory records that sweeping both emergency decks returns **zero hits** for adrenaline, epinephrine, atropine, amiodarone, joule, J/kg and microgram — L3 p.33 is a screenshot of a scrolled page and everything below the shockable row was cut off. The conventional arrest dose is **10 micrograms/kg, or 0.1 mL/kg of 1:10,000, IV or IO, every 3 to 5 minutes** *(not taken from the course material)*. Note the contrast the theory chapter draws: **the same 10 micrograms/kg treats anaphylaxis, but IM as 1:1,000** — same dose, different route and different dilution.\n\nAdrenaline works in arrest chiefly through **alpha-mediated vasoconstriction**, which raises aortic diastolic pressure and so coronary perfusion during compressions. It supports the compressions rather than replacing them, and the deck is emphatic that nothing displaces effective CPR: push hard, push fast, release completely, do not interrupt.\n\n**Why the others are wrong**\n\n| Option | Where it belongs |\n|---|---|\n| Sodium bicarbonate | Not routine in arrest. The material uses it for **tricyclic antidepressant** arrhythmias, and the DKA chapter states it is generally **contraindicated** — over-correction carries its own harms. |\n| Atropine | An anticholinergic for **vagally mediated** bradycardia; the material's use for it is organophosphate poisoning, in large doses. It does nothing for asystole. |\n| Amiodarone | **5 mg/kg IV or IO after the third and fifth shocks** — by definition the **shockable** arm, and there is nothing to shock here. |\n| Lidocaine | An alternative antiarrhythmic for refractory ventricular rhythms; same objection *(not taken from the course material)*. |\n\nThe two algorithm arms are L3 pp.33, 36–37, and the compression quality rules L3 pp.26–32.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Place asystole on the non-shockable arm and choose adrenaline over the antiarrhythmics reserved for shockable rhythms.",
+  "source": "pediatric .pdf p.133 (Part I, ch.17 Q22)"
+},
+{
+  "id": "pedhd-emg-23",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "emergencies",
+  "stem": "A 3-year-old girl is brought into the emergency department by ambulance with a 4-hour history of listlessness, high fever and reduced responsiveness. Her temperature is 40.0C, she has a heart rate of 170 beats per minute, a respiratory rate of 35 per minute and saturations of 100% in 15 litres of high-flow oxygen. On examination, she is responsive to voice and maintaining her airway. Systemic examination is unremarkable; her capillary refill time is 4 seconds. What is the first priority in the management of this child?",
+  "options": [
+    "Intubation and ventilation",
+    "10 mL/kg bolus of normal saline",
+    "20 mL/kg bolus of normal saline",
+    "15 mL/kg packed red cells",
+    "3 mL/kg bolus of dextrose"
+  ],
+  "answer": 2,
+  "explanation": "**A 20 mL/kg saline bolus. She is in shock — tachycardic at 170/min with a capillary refill of 4 seconds — and fluid resuscitation is the first of the deck's four phases of fluid management.**\n\nWork the letters. **A** is stated to be maintained. **B** is satisfied: saturations are 100%, albeit on 15 litres of oxygen. **C** is not: capillary refill of 4 seconds is delayed against the threshold of greater than 2 seconds, and tachycardia is the **early** sign of shock, printed twice in the deck and captioned \"Don't forget\". That she is only **responsive to voice** with a 4-hour history of fever puts a distributive, septic cause at the head of the list, but the treatment for the circulation is the same whatever fills it.\n\nThe four phases run **fluid resuscitation → deficit replacement → maintenance → ongoing losses**, and only the first is an emergency. Reassess immediately after the bolus: heart rate, pulse volume, capillary refill, conscious level and urine output.\n\n**⚠️ This question diverges from the lecture, and the divergence is unusually sharp because the lecture's own figure is printed here as a wrong answer.** L4 teaches a resuscitation bolus of **10 mL/kg**, repeated up to four times to a maximum of 40 mL/kg — and **10 mL/kg is option B**, keyed wrong. The bank works at 20 mL/kg throughout the chapter, as it does at `pedhd-emg-7` *(the 20 mL/kg figure is not taken from the course material; L4 records 10 mL/kg, from the 6th edition of its source textbook)*. **The printed key stands**; the deck's figure is recorded beside it. Both agree on the ceiling: past **40 mL/kg** the child is likely to need mechanical ventilation, and advanced airway skills should be summoned.\n\n**Why the others are wrong**\n\n| Option | Why not first |\n|---|---|\n| Intubation and ventilation | She is responsive to voice, maintaining her own airway, and fully saturated. It may follow if she needs repeated boluses, but it is not the first priority. |\n| 10 mL/kg saline | See above — the lecture's figure, but not this book's key. |\n| 15 mL/kg packed red cells | For haemorrhage or severe anaemia. No bleeding and no haemoglobin are described. |\n| 3 mL/kg dextrose | For hypoglycaemia. No glucose value is given; it would not correct the perfusion failure that is stated. |\n\nOne caution worth carrying: saturations of 100% on high-flow oxygen say nothing reassuring about the circulation — a pulse oximeter reports haemoglobin saturation, not delivery, and the shocked periphery is exactly where its reading is least trustworthy.\n\nThe shock signs are L4 pp.6–8, the bolus and four phases L4 pp.14–16.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Resuscitate the circulation first in a febrile shocked child, and hold the bank's 20 mL/kg against the deck's 10 mL/kg.",
+  "source": "pediatric .pdf p.133 (Part I, ch.17 Q23)"
+},
+{
+  "id": "pedhd-emg-24",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "emergencies",
+  "stem": "An 8-year-old girl is brought to hospital following ingestion of a cereal bar containing peanuts. She is noted to have a widespread urticarial rash and swelling of the face and lips. She is finding it difficult to speak and there is widespread wheeze on auscultation. The single most important step in her management is which of the following?",
+  "options": [
+    "Intramuscular 1 microgram/kg adrenaline (epinephrine) (1:1000)",
+    "Intravenous adrenaline (epinephrine), 1 microgram/kg (1:10 000)",
+    "Intravenous hydrocortisone",
+    "Oxygen",
+    "Chlorphenamine"
+  ],
+  "answer": 0,
+  "explanation": "**Intramuscular adrenaline of 1:1,000 — the route and dilution are what this question turns on, and they are what the deck prints.** Peanut ingestion with widespread urticaria, facial and lip swelling, difficulty speaking and wheeze is anaphylaxis on the material's own card, which triggers four severe rows at once: significant swelling of the tongue or lips, wheezing and shortness of breath, a tight throat with trouble speaking, and many hives. **Any one** severe finding means epinephrine immediately.\n\nThe deck's dose is **0.01 mg/kg of a 1:1,000 (1 mg/mL) solution, intramuscularly, into the mid-anterolateral thigh**, to a maximum of **0.3 mg in a child**, with the time recorded and the dose repeated **every 5 to 15 minutes** if needed. It also states plainly that **antihistamines and steroids are additional only — never instead of adrenaline**.\n\n**⚠️ The printed dose diverges from the deck, and is recorded exactly as printed.** Option A reads **1 microgram/kg**, which is **a tenth** of the 0.01 mg/kg — that is, 10 micrograms/kg — taught in the allergy lecture and used universally. For this 8-year-old the printed figure would give roughly 25 micrograms instead of about 250. **The key is not moved and the option is not edited**: what the question is testing is the choice of the **intramuscular** route with the **1:1,000** dilution against an intravenous 1:10,000 alternative, and on that the printed key is right. The dose defect is noted here and the correct figure recorded beside it.\n\n**Why the others are wrong**\n\n| Option | Why it fails |\n|---|---|\n| IV adrenaline 1:10,000 | The **arrest** preparation and route. The theory chapter draws the contrast directly: the same 10 micrograms/kg is IV or IO as **1:10,000** in cardiac arrest, but IM as **1:1,000** in anaphylaxis. Intravenous adrenaline in a perfusing child risks hypertensive crisis and arrhythmia and belongs to specialists. |\n| IV hydrocortisone | A steroid — hours to act, listed as an adjunct after adrenaline, with no dose printed in the protocol. |\n| Oxygen | Genuinely important, and the deck gives it as **high-flow, 6–8 L/min** by face mask. But oxygen does not reverse laryngeal oedema or bronchospasm, and it is supportive, not the single most important step. |\n| Chlorphenamine | An antihistamine, adjunct only. The card's headline instruction is to **not depend on antihistamines or inhalers to treat a severe reaction: use epinephrine.** |\n\nEvery dose above is L27 pp.20–24; the severe-symptom card is L27 pp.17–19, 27. The full anaphylaxis protocol is set out in the allergy chapter.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Choose intramuscular 1:1,000 adrenaline over the intravenous 1:10,000 arrest preparation, and record the printed dose defect.",
+  "source": "pediatric .pdf p.134 (Part I, ch.17 Q24)"
+},
+{
+  "id": "pedhd-emg-25",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "emergencies",
+  "stem": "A 12-year-old girl with known epilepsy is brought in by ambulance. She has been fitting for 15 minutes. Her parents administered buccal midazolam after 5 minutes as part of her rescue regimen. On arrival, tonic-clonic movements are ongoing. The ambulance crew have inserted a cannula and are giving high flow oxygen via facemask. What is the next step in management?",
+  "options": [
+    "Intravenous lorazepam",
+    "Rectal diazepam",
+    "Rapid sequence induction",
+    "Loading dose of phenytoin",
+    "Intravenous phenobarbital"
+  ],
+  "answer": 0,
+  "explanation": "**Intravenous lorazepam — the second benzodiazepine dose, exactly as at `pedhd-emg-20`, arrived at from the opposite starting point.** *(As there, the status epilepticus drug ladder is answered from general medical knowledge and is not taken from the course material; no pediatrics deck names any of these drugs.)*\n\nThe parents gave one dose of buccal midazolam at 5 minutes, correctly and as prescribed. She has now been fitting for **15 minutes**, so she meets the definition of status epilepticus, and the ladder allows a **second** benzodiazepine before second-line treatment. Intravenous access is in and oxygen is running, so the second dose goes intravenously, where it can be titrated and acts fastest.\n\nWhat matters as much as the drug is what runs alongside it. Every agent on this list depresses respiration, and cumulative benzodiazepine doses are the commonest reason a child in status stops breathing — which is why high-flow oxygen, continuous monitoring and airway readiness precede the injection, and why a glucose should already have been checked *(not taken from the course material)*.\n\n**Why the others are wrong**\n\n| Option | Where it sits |\n|---|---|\n| Rectal diazepam | Would count as the second dose, but the rectal route is for when no cannula exists. One is in place, so there is no reason to accept slower, less predictable absorption. |\n| Rapid sequence induction | For **refractory** status, or airway failure. Her airway is being supported and only one rescue dose has been given; anaesthetising her now skips two rungs. |\n| Loading dose of phenytoin | Correct as the **second-line** agent — but after **two** benzodiazepine doses have failed. She has had one. It is very likely the step after this one. |\n| Intravenous phenobarbital | A later escalation, historically used where phenytoin is unavailable or contraindicated, and a marked respiratory depressant. Not the next step. |\n\nThe pairing with `pedhd-emg-20` is deliberate on the book's part: one question starts from a rectal dose, the other from a buccal dose, and both answer **the second benzodiazepine, by the best available route**. Recognising that the two stems are the same question saves working the ladder twice.\n\nThe ABCDE priorities that frame this are L3 pp.6–9.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Escalate from a buccal rescue dose to intravenous lorazepam once access exists, before second-line phenytoin.",
+  "source": "pediatric .pdf p.134 (Part I, ch.17 Q25)"
+},
+{
+  "id": "pedhd-emg-26",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "emergencies",
+  "stem": "A 3-month-old baby is found dead in a Moses basket sleeping on her back. She was born in July at 41 weeks to a mother who smoked during the pregnancy and afterwards. Which of the following factors is the most likely to have influenced her sudden infant death?",
+  "options": [
+    "Maternal smoking",
+    "Sleeping in a ‘Moses basket’",
+    "Supine sleeping position",
+    "Born in summer months",
+    "Post-term delivery"
+  ],
+  "answer": 0,
+  "explanation": "**Maternal smoking — the only genuine risk factor in the list, and the stem has been built so that every other option is either protective or neutral.** *(As at `pedhd-emg-12`, this is answered from general medical knowledge and is not taken from the course material: sudden infant death syndrome appears nowhere in the pediatrics theory.)*\n\nSmoking is the strongest modifiable risk factor after sleep position, and this baby was exposed both **during the pregnancy and afterwards** — the stem specifies both, because antenatal and postnatal exposure carry independent risk and combine. Antenatal exposure impairs fetal growth and lung development and is thought to blunt the arousal responses that let an infant recover from a hypoxic or rebreathing episode; postnatal exposure adds to it. The risk is dose-related.\n\nThe age fits the epidemiology: incidence peaks between **2 and 4 months**, which is why a 3-month-old is the age chosen.\n\n**Why the others are wrong**\n\n| Option | What it actually is |\n|---|---|\n| Sleeping in a Moses basket | A safe, firm, flat sleep surface of the infant's own — this is exactly what safer-sleep advice recommends, against bed-sharing or sleeping on a sofa. |\n| Supine sleeping position | **Protective, and the strongest protection there is.** It is the answer to `pedhd-emg-12`, where it is keyed as the single factor behind the dramatic fall in incidence — and here the same fact is printed as a distractor. Seeing it offered as a *risk* is the trap. |\n| Born in summer months | The seasonal association runs the other way: incidence is higher in **winter**, and has weakened as sleep position changed. July is the wrong end of it. |\n| Post-term delivery | **Prematurity** and low birth weight raise the risk. 41 weeks is term-plus, not preterm, and carries no comparable association. |\n\nThe two SIDS questions in this chapter are worth reading together: `pedhd-emg-12` asks which measure caused the decline, and this one asks which exposure caused a death. Supine sleeping is the correct answer to the first and a deliberate false lead in the second.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Identify maternal smoking as the risk factor in a stem where the other options are protective or neutral.",
+  "source": "pediatric .pdf p.134 (Part I, ch.17 Q26)"
 }
 ];

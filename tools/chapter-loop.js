@@ -24,7 +24,7 @@
 //   --reuse           stage: parse the saved answer for the batch instead of calling Codex
 //   --dry             stage/draft: print the Codex command and prompt path, run nothing
 //   --force           render: re-render existing PNGs · stage: replace entries already staged for the batch
-//   --half A|B        draft: which half (A = first half of the entries, B = the rest)
+//   --half A|B|C…     draft: which part (parts run in order; see `split` in the CH table)
 //   --brief <file>    draft: the drafting brief (default tools/bank-harness/pd-draft-brief.md; must exist)
 //   --write           close: let splice-pd.js write into app/data (default dry run)
 //
@@ -78,6 +78,18 @@ const CH = {
         // not the even 7, which would have put the anchor in A and n8 in B.
         split: 8,
         lectures: ['13) Short stature.txt', '14) Puberty.txt', '15.1) Faltering ﻿Growth.txt'] },
+  17: { slug: 'emergencies', title: 'Paediatric emergencies', pages: [126, 134], expected: 26,
+        file: 'house-ch17-emergencies.array.js', svar: 'PEDHD_EMG_STAGED',
+        draft: 'house-ch17-emergencies.draft-', dvar: 'PEDHD_EMG_DRAFT_', prefix: 'pedhd-emg-',
+        // Registered from the map's range so `locate` can run; the banners are what confirm it.
+        // `accidents` is deliberately NOT offered -- poisoning, choking and drowning are ch.18,
+        // and a drafter given both would file an emergencies question into the accidents chapter.
+        chapterIds: ['emergencies'],
+        // TWO shared option menus: n10+n11 (the anaphylaxis treatments) and n13..n17 (the five-step
+        // resuscitation menu). Neither may be cut, and neither may sit in a part big enough to outrun
+        // a drafting agent -- so a 3-way 9/8/9, not a 2-way 12/14. Both menus land whole in B.
+        split: [9, 8, 9],
+        lectures: ['3) Pediatric resuscitation.txt', '4) Shock in pediatrics_.txt'] },
 };
 
 // ---------------------------------------------------------------- args / state
@@ -430,7 +442,7 @@ function draft() {
   if (c.hash !== sha(ARRAY)) die('file changed since the ack — gate and check again');
   if (state.steps.gate.nullKeys.length) die(`null keys remain on n = ${state.steps.gate.nullKeys.join(',')} — resolve them first`);
   const half = String(opt.half || '').toUpperCase();
-  if (!['A', 'B'].includes(half)) die('--half A|B required');
+  if (!/^[A-Z]$/.test(half)) die('--half A|B|C… required');
   const brief = path.resolve(ROOT, opt.brief || 'tools/bank-harness/pd-draft-brief.md');
   if (!fs.existsSync(brief)) die(`drafting brief not found: ${brief} — pass --brief <file>`);
   for (const f of ['tools/bank-harness/val-pd.js', 'tools/bank-harness/splice-pd.js']) {
@@ -444,9 +456,19 @@ function draft() {
   // drafted by an agent that cannot see its anchor. ch.16 is the first chapter where the even cut (7)
   // fell inside such a run (n6,n7,n8 share five identical options), so the CH entry may now name the
   // boundary. `split` is the COUNT in half A. Added 2026-09-03.
-  const mid = C.split || Math.ceil(arr.length / 2);
-  if (mid < 1 || mid >= arr.length) die(`split ${mid} is not inside a ${arr.length}-entry chapter`);
-  const part = half === 'A' ? arr.slice(0, mid) : arr.slice(mid);
+  //
+  // It may also be an ARRAY of counts, one per part, for a 3-way or wider cut: ch.17 is 26 entries
+  // with a FIVE-question shared menu at n13..n17, and any 2-way cut that keeps that run whole leaves
+  // a 13- or 14-entry part -- more than one drafting agent finishes before it hands back at ~70 tool
+  // calls. Parts are lettered A, B, C… in order and must sum to the chapter. Added 2026-09-03.
+  const counts = Array.isArray(C.split) ? C.split.slice() : [C.split || Math.ceil(arr.length / 2)];
+  if (counts.length === 1) counts.push(arr.length - counts[0]);
+  if (counts.some(n => !(n >= 1)) || counts.reduce((a, b) => a + b, 0) !== arr.length)
+    die(`split ${counts.join('+')} does not partition ${arr.length} entries`);
+  const idx = half.charCodeAt(0) - 65;
+  if (idx >= counts.length) die(`--half ${half} but the split has ${counts.length} parts (A..${String.fromCharCode(64 + counts.length)})`);
+  const start = counts.slice(0, idx).reduce((a, b) => a + b, 0);
+  const part = arr.slice(start, start + counts[idx]);
   const lectures = C.lectures.filter(f => fs.existsSync(path.join(LECT, f)));
   const missing = C.lectures.filter(f => !lectures.includes(f));
   if (missing.length) console.log(`⚠ lecture caches not found (skipped): ${missing.join(' · ')}`);
@@ -495,7 +517,16 @@ ${JSON.stringify(part, null, 1)}
 // ---------------------------------------------------------------- 7 close
 function close() {
   if (!state.steps.check) die('no human ack — the chapter cannot close without step 5');
-  const halves = ['A', 'B'].filter(h => fs.existsSync(path.join(QB, `${C.draft}${h}.js`)));
+  // Glob the parts, do not assume two. An n-way split (CH.split as an array of counts) lands
+  // A, B, C..., and a hardcoded ['A','B'] here would have validated two of ch.17's three parts
+  // and printed a commit command MISSING draft-C.js -- the part that was nonetheless spliced
+  // into the live file. Silent content loss at the last step. Corrected 2026-09-03.
+  const pbase = `${C.draft}`;
+  const halves = fs.readdirSync(QB)
+    .filter(f => f.startsWith(pbase) && f.endsWith('.js'))
+    .map(f => f.slice(pbase.length, -3))
+    .filter(x => /^[A-Z]$/.test(x))
+    .sort();
   if (!halves.length) die('no draft halves on disk');
   const run = (label, args) => {
     console.log(`\n▶ ${label}: node ${args.join(' ')}`);

@@ -1,0 +1,279 @@
+{
+  "chapter": 17,
+  "slug": "emergencies",
+  "file": "house-ch17-emergencies.array.js",
+  "created": "2026-09-03T16:43:24",
+  "steps": {
+    "locate": {
+      "at": "2026-09-03T16:43:24",
+      "pages": {
+        "126": "L-064",
+        "127": "R-064",
+        "128": "L-065",
+        "129": "R-065",
+        "130": "L-066",
+        "131": "R-066",
+        "132": "L-067",
+        "133": "R-067",
+        "134": "L-068",
+        "135": "R-068"
+      }
+    },
+    "render": {
+      "at": "2026-09-03T16:43:49",
+      "dir": "C:\\Users\\Alfa388\\AppData\\Local\\Temp\\herophilus-loop\\house-ch17",
+      "pages": [
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135
+      ]
+    },
+    "stage": {
+      "batches": [
+        {
+          "pages": [
+            126,
+            129
+          ],
+          "context": 130,
+          "at": "2026-09-03T16:46:18",
+          "answer": "C:\\Users\\Alfa388\\AppData\\Local\\Temp\\herophilus-loop\\house-ch17\\stage-p126-129.answer.txt",
+          "events": "C:\\Users\\Alfa388\\AppData\\Local\\Temp\\herophilus-loop\\house-ch17\\stage-p126-129.events.jsonl",
+          "usage": {
+            "input_tokens": 32159,
+            "cached_input_tokens": 11008,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 3799,
+            "reasoning_output_tokens": 2070
+          },
+          "entries": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "keyLetterConversions": [],
+          "pagesReported": [
+            {
+              "page": 126,
+              "folio_read": "126",
+              "banner": "Paediatric emergencies",
+              "question_numbers": [
+                1,
+                2
+              ]
+            },
+            {
+              "page": 127,
+              "folio_read": "127",
+              "banner": null,
+              "question_numbers": [
+                3,
+                4,
+                5
+              ]
+            },
+            {
+              "page": 128,
+              "folio_read": "128",
+              "banner": null,
+              "question_numbers": [
+                6,
+                7,
+                8
+              ]
+            },
+            {
+              "page": 129,
+              "folio_read": "129",
+              "banner": null,
+              "question_numbers": [
+                9,
+                10,
+                11
+              ]
+            }
+          ],
+          "nextPageOpensWith": "Pediatric medicine end-of-round MCQs - 2025.",
+          "flags": [
+            "Question 11 option letters are printed out of sequence: A, E, C, D, B."
+          ]
+        },
+        {
+          "pages": [
+            130,
+            133
+          ],
+          "context": 134,
+          "at": "2026-09-03T16:58:57",
+          "answer": "C:\\Users\\Alfa388\\AppData\\Local\\Temp\\herophilus-loop\\house-ch17\\stage-p130-133.answer.txt",
+          "events": "C:\\Users\\Alfa388\\AppData\\Local\\Temp\\herophilus-loop\\house-ch17\\stage-p130-133.events.jsonl",
+          "usage": {
+            "input_tokens": 31966,
+            "cached_input_tokens": 11008,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 2344,
+            "reasoning_output_tokens": 516
+          },
+          "entries": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "keyLetterConversions": [],
+          "pagesReported": [
+            {
+              "page": 130,
+              "folio_read": "130",
+              "banner": "Pediatric medicine end-of-round MCQs - 2025.",
+              "question_numbers": [
+                12,
+                13,
+                14
+              ]
+            },
+            {
+              "page": 131,
+              "folio_read": "131",
+              "banner": "Pediatric medicine end-of-round MCQs - 2025.",
+              "question_numbers": [
+                15,
+                16,
+                17
+              ]
+            },
+            {
+              "page": 132,
+              "folio_read": "132",
+              "banner": "Pediatric medicine end-of-round MCQs - 2025.",
+              "question_numbers": [
+                18,
+                19,
+                20
+              ]
+            },
+            {
+              "page": 133,
+              "folio_read": "133",
+              "banner": "Pediatric medicine end-of-round MCQs - 2025.",
+              "question_numbers": [
+                21,
+                22,
+                23
+              ]
+            }
+          ],
+          "nextPageOpensWith": "Pediatric medicine end-of-round MCQs - 2025.",
+          "flags": [
+            "Question 16 printed stem ends \"has become.\""
+          ]
+        },
+        {
+          "pages": [
+            134,
+            134
+          ],
+          "context": 135,
+          "at": "2026-09-03T17:01:43",
+          "answer": "C:\\Users\\Alfa388\\AppData\\Local\\Temp\\herophilus-loop\\house-ch17\\stage-p134-134.answer.txt",
+          "events": "C:\\Users\\Alfa388\\AppData\\Local\\Temp\\herophilus-loop\\house-ch17\\stage-p134-134.events.jsonl",
+          "usage": {
+            "input_tokens": 22900,
+            "cached_input_tokens": 11008,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 1167,
+            "reasoning_output_tokens": 700
+          },
+          "entries": [
+            24,
+            25,
+            26
+          ],
+          "keyLetterConversions": [],
+          "pagesReported": [
+            {
+              "page": 134,
+              "folio_read": "134",
+              "banner": null,
+              "question_numbers": [
+                24,
+                25,
+                26
+              ]
+            }
+          ],
+          "nextPageOpensWith": "Accidents & poisoning",
+          "flags": []
+        }
+      ]
+    },
+    "gate": {
+      "at": "2026-09-03T17:08:48",
+      "ok": true,
+      "hash": "709dfb46c569",
+      "count": 26,
+      "fails": [],
+      "warns": [],
+      "nullKeys": []
+    },
+    "check": {
+      "at": "2026-09-03T17:08:52",
+      "ack": "Claude Opus 5 2026-09-03",
+      "hash": "709dfb46c569",
+      "count": 26
+    },
+    "draft": {
+      "A": {
+        "at": "2026-09-03T17:13:39",
+        "file": "content\\peds\\qb-pages\\house-ch17-emergencies.draft-A.js",
+        "entries": 9,
+        "valExit": 1
+      },
+      "C": {
+        "at": "2026-09-03T17:16:32",
+        "file": "content\\peds\\qb-pages\\house-ch17-emergencies.draft-C.js",
+        "entries": 9,
+        "valExit": 1
+      },
+      "B": {
+        "at": "2026-09-03T17:18:42",
+        "file": "content\\peds\\qb-pages\\house-ch17-emergencies.draft-B.js",
+        "entries": 8,
+        "valExit": 1
+      }
+    },
+    "close": {
+      "at": "2026-09-03T17:33:16",
+      "halves": [
+        "A",
+        "B",
+        "C"
+      ],
+      "wrote": true,
+      "by": "spliced by hand before this state was written; splice-pd.js --write reported 332 -> 358, holes 0; boot-check 0 console errors"
+    }
+  }
+}
