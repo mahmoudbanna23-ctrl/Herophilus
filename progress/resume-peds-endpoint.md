@@ -1133,3 +1133,62 @@ Nine other entries carry number/unit flags in `note` (fluid boluses, maintenance
 concentrations, a glucose of 850 mg/dl, a 40°C temperature, an adrenaline q3–5 min interval). Those
 are ordinary transcriptions, flagged because the rule says every number is flagged — only n24 is a
 defect.
+
+### ✅ §5 half B staged 2026-09-03 — n32–61, pp.640–701, and §5 MERGED
+
+`endpoint-s05-emergencies.part-B.js`, **30 entries, n 32..61, pp.640–701, 26,244 bytes.** Verified
+from disk: `check-part-ep.js` exit 0, option counts `{"4":8,"5":22}`, key positions
+`{0:6, 1:4, 2:7, 3:5, 4:8}`. 102 tool uses, ~15 min.
+
+**`merge-parts-ep.js 5 --write` passed its `expect: 61` gate** →
+`endpoint-s05-emergencies.array.js`, **61 entries, n 1..61, pp.577–701, 56,450 chars.** Combined:
+n contiguous, pages strictly increasing, **11 four-option entries of 61**, six unboxed
+(n1 n36 n48 n49 n50 n61), one figure (n2, under adjudication).
+
+⚠️ **THE STAGED RECORD REPRODUCES THE PRINTED-NUMBERING MEASUREMENT EXACTLY, BY A THIRD ROUTE.**
+Walking `pr` across all 61 staged entries: printed **27 and 47 are never used**, printed **55
+appears twice** (n53/p.685 and n54/p.687), and the last entry prints **62**. That is the same
+62 − 2 + 1 = 61 arrived at from the OCR sweep of every page 563–702 and from the pairing walk, by
+three instruments that share no input. The contents page's **60** stays wrong, and so does the
+book's own last printed number.
+
+Half B confirmed the two collisions on the images rather than inheriting them: n53 is a 1-month-old
+with fever, diarrhoea and acute otitis media needing a sepsis workup; n54 is an 11-month-old in
+hypovolaemic shock needing IV saline. **Different patients, stems, options and keys — two questions
+under one printed number, not a duplicate.** Both `thin` pages in range (643/653 twins → n34/n39)
+print their full five options; nothing dropped. `options-differ` spurious on all five of its half-B
+pages — the flag now stands at **0 for 23** and should be ignored on sight, not checked.
+
+### Four §5 escalations the DRAFTING pass owns — none blocks the splice
+
+1. **n33 / p.642 — a stem that references a figure the page does not print.** "His burns are
+   distributed on his body as shown", and there is no image on the page: two text boxes only,
+   confirmed. Record it in the explanation as a book defect; do **not** invent the distribution.
+   ⚠️ It is also a **longer variant of the §4 Roberto burns vignette** (`endpoint-s04-accidents`
+   n3, p.561) — identical final question, same five options, same key. That makes **two** §5
+   entries reprinting live `pedep-acc-*` rows (with n30/p.636 ≡ `pedep-acc-2`). Both go to the fold
+   pass, and the fold keeps the **fuller** printing — which here is the §5 one, not the live one.
+2. **n36 / p.648 — no explanation box; a captioned illustration instead** (cartoons labelled
+   "Cardiac arrest" / "Asphyxial arrest", a photo of a crying newborn, and the banner *Good Chest
+   Wall Movement Is The Key Of Neonatal Resuscitation*). Correctly **not** staged as `fig` — it sits
+   below the options and is not needed to answer. The drafting pass writes the explanation and may
+   quote the banner.
+3. **n61 / p.701 — no explanation box; a two-column Early(Compensated)/Late(Decompensated) shock
+   table instead**, transcribed whole into `note`. Same handling as p.584's GCS table: it goes into
+   the explanation **after** the key, never into `fig`. It independently supports the printed key —
+   it files mottled/pale/cold skin under Early and contradicts the distractor that calls decreased
+   urine output a decompensated sign.
+4. ⚠️ **n37 / p.650 — the printed explanation contradicts the printed options.** The box says 160 ml
+   is "also acceptable" (8 kg × 20 ml/kg), but **160 ml is not among the four options** (40 / 80 /
+   320 / 800) and the highlighted key is **80 ml** = 8 kg × 10 ml/kg. Standing rule applies
+   unchanged: **`answer` stays on the printed key**, and the discrepancy is recorded in
+   `explanation`. This is the box being wrong, not the key — it is not a key dispute and does not go
+   to the user as one.
+
+Also flagged and ordinary: n52 / p.683 prints a maternal HbA1c of **15%** against a stated normal of
+7% — both read clearly, no ambiguity, recorded verbatim.
+
+⚠️ **The two halves disagreed about what counts as a figure**, which is why n2 is being adjudicated
+separately: half A marked a photograph beside the options as `fig`, half B declined to mark one
+below the options. The rule is *must the reader look at it before answering*, and it is settled
+against **the unanswered printing**, exactly as p.238 was settled against p.237.
