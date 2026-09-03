@@ -336,3 +336,77 @@ the folded id (grepped before and after).
    file after the splice was 119,697 chars and 120,159 bytes across 231 non-ASCII characters.
    The label invited exactly the bytes-versus-count mismatch `MEMORY.md` treats as evidence of
    a broken count. Relabelled to `chars`, with the measurement recorded in the comment.
+
+
+---
+
+## Section 3 “Genetics” — STAGED AND MERGED, 2026-09-04
+
+pp.155–244. **38 questions from 42 answered pages**, staged in two halves and merged into
+`endpoint-p2-s03-genetics.array.js` (`PEDEP2_S03_STAGED`, n 1..38, pp.168–243, 40,193 chars,
+0 sparse holes, every `key` in range, options 4×7 and 5×31).
+
+### The count reconciles twice, by two instruments that share no input
+
+| Instrument | Reading |
+|---|---|
+| Answered pages minus lettered summary slides read on the image | 42 − 4 (pp.157, 159, 161, 162) = **38** |
+| The book’s own printed numbering, never consulted while staging | 1–16, then 17–36 with 24 and 25 each printed twice = 36 + 2 = **38** |
+
+One works off the page images, the other off the page furniture, and they meet. `expect`
+lowered 42 -> 38 in `merge-parts-ep2.js` with both reasons in the comment. That is three
+sections running on the rule that **`expect` is an answered-page count and an upper bound,
+never a question count.**
+
+Both boundaries proved by rendering one page past the range: p.200 is the unanswered twin of
+q17, p.245 carries the red “Hematological Disorders” banner.
+
+### What the section holds
+
+- **One shared option menu: n:8 and n:14**, identical 5-option ladder in identical order,
+  different keys — a **pairing, never a fold**. Discriminators named at staging time: n:8 is an
+  isolated clotting-factor deficiency with only affected males in the pedigree; n:14 is a
+  consanguineous Pakistani couple with affected individuals of both sexes. Both also carry
+  **different pedigree figures**, which is the `pedhd-card-6..10` shape — the normaliser cannot
+  see a figure, so a text-only instrument would have called these a duplicate.
+- **Five figures**, all pedigrees: n:8 (p.183), n:14 (p.195), n:36 (p.239), n:37 (p.241),
+  n:38 (p.243). Every one carries a `figAlt`.
+- **Four pages print no explanation box**: n:35–n:38.
+- **One overflowed box**: n:6 -> p.179.
+- **n:15 is an explicit follow-on to n:14** — its own stem says “the same couple as in the
+  previous question”. Kept as a separate entry, since it is a separately numbered and
+  separately highlighted question.
+
+### Two things staging escalated instead of deciding
+
+1. **p.211 (n:22, Klinefelter) prints the previous question’s box.** The box is word-for-word
+   the one on p.209 (PEX1 carrier risk) and has nothing to do with karyotypes. **Settled by the
+   standing rule: a source defect is RECORDED, never corrected.** The box is quoted verbatim,
+   the mismatch is named in the written expansion, and the `answer` does not move (it is
+   correct in any case).
+2. **p.243 (n:38) has faint illegible text behind the pedigree.** **Settled: it cannot be
+   recovered.** 800 × 450 is the hard resolution ceiling of this book — every page embeds one
+   800 × 450 JPEG drawn onto an A4 sheet, so `hires/` and `pdftoppm -r 300` are upscales of
+   that same image and add no information. The staging judgement (rendering artifact, not a
+   printed answer element) stands, and the page is not re-rendered.
+
+### An instruction of mine that was wrong, and an agent that was right to follow it
+
+Half B was told to start `n` at 100 “because the merge step renumbers”. **It does not** —
+`merge-parts-ep2.js` VALIDATES that `n` is the position and refuses otherwise, so the merge
+failed on all 22 entries. The agent followed the instruction exactly and its file was correct
+as written. Renumbered 100..121 -> 17..38 with `pr` and `p` asserted unchanged either side.
+
+### The tally claim from section 3 half A is corrected here
+
+The half-A commit recorded a third measurement of agent step-counting and concluded the fix
+worked: told to keep a running tally, an agent reported **63** against a harness-recorded
+**66**. The very next agent kept a tally, said so explicitly, itemised the three calls it
+wasted on a mistake it caught — and reported **51** against a harness-recorded **83**, 39%
+low while doing everything asked. **A tally helps and does not fix it.** Both briefs now say
+the honest thing: tally, say it is a tally, and treat your own number as a **floor**. The
+superseded claim is corrected in place rather than quietly dropped.
+
+Drafting split **three ways, not two** — A n:1–15, B n:16–27, C n:28–38 — chosen so the shared
+menu (n:8/n:14) and the n:14/n:15 follow-on pair each stay inside one half, and so no agent
+faces 22 entries against a 70-step cap.

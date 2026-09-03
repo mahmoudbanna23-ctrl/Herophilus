@@ -340,3 +340,39 @@ same way and is corrected in the section map from 18 to 19.
 **Next: §3 Genetics, pp.155–244, `expect: 42`, chapter `genetics`, prefix `pedep2-gn-`.**
 Boundary confirmed on the images: p.154 is a devotional slide, p.155 carries the red "Genetics"
 banner. Sweep with `node tools\bank-harness\reprint-pd-ep2.js 155 244` before drafting a line.
+
+
+### 2026-09-04 later still — §3 STAGED AND MERGED, DRAFTING IN FLIGHT
+
+⚠️ **The prefix line two paragraphs up is WRONG: it is `pedep2-gen-`, not `pedep2-gn-`.**
+`val-pd-ep2.js` SEC entry 3 is the authority and it says `gen`. Left in place above rather than
+edited out, because the disk winning over this file is the point.
+
+**`endpoint-p2-s03-genetics.array.js` is merged and committed: 38 entries, n 1..38, pp.168–243,
+40,193 chars, 0 holes.** 42 answered pages minus 4 lettered summary slides read on the image
+(pp.157, 159, 161, 162) = 38, and the book’s own printed numbering agrees independently
+(1–16, then 17–36 with 24 and 25 each printed twice = 38). `expect` lowered 42 -> 38.
+
+**Drafting is split THREE ways**, A n:1–15 / B n:16–27 / C n:28–38 — so the shared menu
+(n:8/n:14) and the n:14→n:15 follow-on pair each stay inside one half, and no agent faces 22
+entries against a 70-step cap. Drafts land at `endpoint-p2-s03-genetics.draft-A|B|C.js`; the
+validator takes any single uppercase letter and the splicer globs `draft-*.js`, so a third half
+needs no tool change.
+
+**Two escalations from staging, both settled before drafting:**
+- **p.211 (n:22) prints the previous question’s box**, word for word, about PEX1 carrier risk
+  rather than karyotype. Standing rule applies: **recorded, never corrected** — box quoted
+  verbatim, mismatch named in the expansion, `answer` unmoved.
+- **p.243 (n:38) faint text behind the pedigree: unrecoverable, do not re-render.** 800 × 450 is
+  this book’s hard ceiling; `hires/` and `-r 300` are upscales of the same JPEG.
+
+**Two corrections of mine, both recorded rather than dropped:** I told half B to start `n` at
+100 “because the merge renumbers” — it validates instead, and refused; and the tally claim in
+the half-A commit was disproved by the very next agent (51 reported against 83 recorded, 39%
+low, while keeping a tally and saying so). **A tally helps and does not fix it; treat an agent’s
+own count as a floor.** Both briefs corrected.
+
+**After the three drafts: `val-pd-ep2.js 3 A|B|C`, `splice-pd-ep2.js 3` dry then `--write`,
+verify the live file from disk, `boot-check.js`, commit with an explicit pathspec.**
+Then **§4 Haematology, pp.245–451, `expect: 95`** — the biggest body section, splits across
+`haematology` and `haem-bleeding`.
