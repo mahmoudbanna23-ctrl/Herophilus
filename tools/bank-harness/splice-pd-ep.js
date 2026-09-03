@@ -158,12 +158,21 @@ if (fail.length) { console.log('FAILURES:\n  ' + fail.join('\n  ')); process.exi
 console.log('all pre-splice checks passed');
 
 // ---- splice ----
+// ⚠️ The last entry's closing brace is NOT always on a line of its own. The fold passes rewrite
+// entries and leave the brace on the last field's line (`source:'...' }`), so a fixed '\n}\n];'
+// tail match found nothing after fold 2 and reported "neither a closing entry nor an empty array"
+// -- which reads like a corrupt live file and is not one. Find the array's closing '];' instead,
+// then walk back to the last '}' before it, allowing only whitespace between the two.
 const empty = live.lastIndexOf('[\n];');
-const tail = '\n}\n];';
-const at = live.lastIndexOf(tail);
+const close = live.lastIndexOf('\n];');
+let at = -1;
+if (close >= 0) {
+  const brace = live.lastIndexOf('}', close);
+  if (brace >= 0 && !live.slice(brace + 1, close).trim()) at = brace;
+}
 let out;
 if (at >= 0) {
-  out = live.slice(0, at) + '\n},\n\n' + parts.map(p => p.block).join(',\n\n') + '\n];' + live.slice(at + tail.length);
+  out = live.slice(0, at) + '},\n\n' + parts.map(p => p.block).join(',\n\n') + '\n];' + live.slice(close + 3);
 } else if (empty >= 0) {
   out = live.slice(0, empty + 2) + parts.map(p => p.block).join(',\n\n') + '\n];' + live.slice(empty + 4);
 } else { console.error('live: neither a closing entry nor an empty array found'); process.exit(1); }

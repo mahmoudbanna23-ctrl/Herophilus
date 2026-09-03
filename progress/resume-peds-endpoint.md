@@ -19,7 +19,7 @@ watch and dies with the session.
 | 1 Growth & Puberty | 5–210 | 89 pages → **73 live** | ✅ spliced `1f05e45` · **16 self-reprints folded 2026-09-03** (14 exact, then 2 reworded) |
 | 2 Nutrition | 211–392 | 76 pages → **75 live** | ✅ spliced · 1 self-reprint folded (nut-29) |
 
-| 3 Gastroenterology | 393–549 | 67 → **65** | staged 2026-09-03, 67 entries merged; folds settled on the images — see below |
+| 3 Gastroenterology | 393–549 | 67 → **65** | ✅ **CLOSED 2026-09-03** — drafted, validated, spliced 148→215, folded 215→**213**. 65 `pedep-gi-*` live. |
 | 4 Accidents & poisoning | 550–562 | 3 | not started |
 | 5 Pediatrics Emergencies | 563–702 | 60 | not started |
 | 6 Perinatal | 703–773 | 23 → **22?** | p.768 reprints `pedep-gp-70` — fold, do not stage |
@@ -784,3 +784,88 @@ throughout and the adjudication is unaffected — only the staging indices were 
 memory rather than from the file. Confirmed from the array: both print the identical Hirschsprung
 stem and identical options 0–3, differ only at option 4 (`Treatment is by repeated finger
 dilatation` versus `Resolves spontaneously`), and **each is keyed to its own option 4**.
+
+---
+
+## ✅ Section 3 CLOSED 2026-09-03 — 148 → 215 → 213
+
+Both halves drafted by `lean-drafter` (cap 2 live), validated, spliced, folded. Final state:
+**213 entries in `questions.peds.ep.js`, 0 holes, 65 `pedep-gi-*` live** — the predicted yield
+exactly. `validate-all.js` ALL HARD CHECKS PASSED (5 files); `boot-check.js` **0 console errors**,
+`QUESTIONS 4651 · THEORY 153 · MODULES 4 · 153 chapter rows (122 with questions)`, peds 51 rows.
+
+⚠️ That `QUESTIONS 4651` includes **Chat B's concurrent House work** — it is not a measure of this
+stream. Section 3 contributed 65.
+
+### The two adjudications that needed a page image, not an argument
+
+- **`pedep-gi-13` (p.439), the one validator warning.** Half A quoted the box as “…red throat, and
+  cervical **lymph nodes** suggests a viral etiology…”; staging had “cervical **lymphadenopathy**”.
+  A subagent read p.439 at native 800×450: **staging is right**. The draft was repaired to the
+  staged wording. Half A had reused “lymph nodes” from the box's own later clause (“inflamed
+  mesenteric lymph nodes”) — a plausible slip that no automatic check could have settled, which is
+  exactly why the validator warns rather than guesses.
+- **`pedep-gi-67` chapter moved `endo-dka` → `gi-abdopain`.** The stem asks which condition is a
+  *medical* cause of acute abdominal pain (answer: DKA). Half B filed it by its answer; the other
+  abdominal-pain mimics in the same half (mesenteric adenitis `pedep-gi-13`, appendicitis
+  `pedep-gi-54`) are all in `gi-abdopain`, and that is the chapter a student revising the topic
+  opens.
+
+Two other chapter fits were **reviewed and left alone**: `pedep-gi-18` (testicular torsion) and
+`pedep-gi-32` (coeliac screening at T1DM presentation) sit in `gi-abdopain` / `gi-diarrhoea`
+because the book prints both inside its GI section and no better chapter exists; `pedep-gi-51`
+(oral thrush in a 2-week-old) → `perinatal` is the best available fit — there is no oral or
+candidiasis chapter in the peds module.
+
+### ⚠️ The splicer could not find its insertion point, and the message reads like a corrupt file
+
+`splice-pd-ep.js 3` reported **“live: neither a closing entry nor an empty array found”**. The live
+file was fine. The splicer matched a fixed tail `'\n}\n];'` — closing brace on a line of its own —
+but **the fold passes rewrite entries and leave the brace on the last field's line**
+(`source:'…' }`), so after fold 2 the tail no longer existed. Fixed in `splice-pd-ep.js`: find the
+array's closing `];`, walk back to the last `}` before it, and require only whitespace between the
+two. Both shapes now splice. **This will recur on every section from here** — sections 1 and 2
+spliced before any fold pass had run, which is why it appeared only now.
+
+### The `pedep-gp-79` fold — three printings, and a seam between two upstream sources
+
+`fold3-pd-ep.js` (new; carve, dead-id guard and loaded-length assertion copied from
+`fold2-pd-ep.js`, plus a generic `edits` list so a chapter move needs no new mechanism):
+
+| Printing | Stem | Options | Key |
+|---|---|---|---|
+| `pedep-gp-79` p.189 (survivor) | — | “Liver function tests” | index 3 |
+| `pedep-gi-60` p.534 (dropped) | **byte-identical to p.189** | identical to p.189 | index 3 |
+| `pedep-gi-22` p.457 (dropped) | reworded | **“Inflammatory markers and liver function tests”**, “paediatric” | index 3 |
+| House `pedhd-gastro-22` (live, not touched) | **identical to p.189** | **identical to p.457** | index 3 |
+
+**House pairs p.189's stem with p.457's options.** The endpoint file is assembling this question
+from two upstream printings rather than reprinting itself — the same seam the four-option run at
+n=38+ and the upper/lower-case split already pointed at in this section.
+
+⚠️ **The options were NOT rewritten.** The survivor keeps the wording *its own cited page* prints;
+p.457's variant is recorded in the explanation. Rewriting an option to a wording p.189 does not
+print would make the entry misquote its own citation — **transcription fidelity outranks “keep the
+fuller printing” field by field**, and fold pass 2 set the precedent by touching only `source` and
+`explanation`. Nothing of substance was lost: the survivor was already 662 words and covered both
+dropped explanations entirely (same lecture, same alarm-signal list, same four distractors); it is
+now 938.
+
+`pedep-gp-79`'s chapter also moved `gastroenterology` → `gi-abdopain`. Its filing note had
+justified `gastroenterology` on the grounds that the question sat in the Growth and Puberty
+section; that reasoning stopped holding once the two Gastroenterology printings were folded in.
+
+### ⚠️ OPEN — the 21 cross-bank House hits in section 3 have NOT been actioned
+
+`reprint-pd-ep.js` found **21 pages in section 3 matching House entries** (p.414–455 ≈
+`pedhd-gastro-1`…`-21`). A cross-bank match **adds a bank to `alsoIn`; it never removes an entry**,
+so none of them affected the 65. But **no `alsoIn` was written for any of them**, here or in
+sections 1 and 2. This is one deliberate pass across the whole endpoint bank, not a per-section
+side effect, and it is still owed. ⚠️ It reads `questions.peds.js` (Chat B's file) but must only
+ever **write** `questions.peds.ep.js`.
+
+### Where section 3 leaves part 1
+
+**213 of 855.** Sections 4–9 (pp.550–1156, 244 answered pages) and the model exams (pp.1157–1936,
+379 expected reprints) are unstaged. **Part 1 is not closed.** Next section by the standing
+pipeline is **§4 Accidents, pp.550–562, 3 answered pages** — small enough to stage in one half.
