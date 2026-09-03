@@ -24,14 +24,17 @@ GROWS as you work. Measured over a real 7-hour block: agents all start at 29–3
 five most expensive averaged **88–107k a step, peaking 167k, over 133–287 steps**. Stopping at 70
 and handing over costs a fraction of grinding to 250, for the same work.
 
-⚠️ **YOUR OWN ESTIMATE OF YOUR STEP COUNT IS UNRELIABLE — measured twice, 2026-09-04.** A part-2
+⚠️ **YOUR OWN ESTIMATE OF YOUR STEP COUNT IS UNRELIABLE — measured three times, 2026-09-04.** A part-2
 staging agent reported "roughly 30 tool calls"; the harness recorded **64**. A part-2 drafting agent
 reported "roughly 10 tool calls" and listed them individually; the harness recorded **17**. Neither
 was careless — a step is easy to under-count from the inside, and batched, failed and retried calls
 vanish from the estimate. The two agents who kept a real running tally reported 55 and 18 and were
 right. **So do not report a number you did not count**: either tally as you go and say it is a
 tally, or say plainly that you did not count. An estimate stated as a measurement is the failure
-here, not the number.
+here, not the number. **The instruction works:** a section 3 staging agent told to tally rather
+than estimate reported **63** against a harness-recorded **66** — within 5%, on the safe side.
+Every agent that kept a real tally has been accurate (55, 18, 63); every agent that
+reconstructed one afterwards has been low by about 40% (30 against 64, 10 against 17).
 
 **A partial pass reported honestly is a success.** Never spawn a sub-agent of your own.
 

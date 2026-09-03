@@ -101,6 +101,23 @@ const pages = idx.filter(r => r.kind === 'answered' && r.page >= first && r.page
 
 // A page's stem is the text before its first option line, taken from whichever OCR read saw more
 // of it -- the two reads drop different lines.
+//
+// ⚠ A 0-CHAR STEM IS A DIAGNOSIS, NOT A FAILURE -- and it is the most useful thing this tool
+// prints. The scan below stops at the first line matching /^\s*[a-eA-E][.)]\s/. On a lettered
+// SUMMARY SLIDE -- 'B. Turner Syndrome (45,X)', 'B. Autosomal Recessive (AR)' -- that pattern
+// matches line ONE, so nothing accumulates and the stem comes back empty. The page is not
+// unreadable; p.159 holds 1027 bytes of clean OCR and p.162 holds 858. It simply is not a
+// question, which is exactly why it inflated `answered` in the first place.
+//
+// So: 'OCR stem too short' on this book means READ THE PAGE, EXPECTING A NOTES SLIDE. Measured
+// 2026-09-04 on section 3, where it fired on p.159 and p.162 and both turned out to be lettered
+// summary slides. It is a one-way test -- a notes slide headed with a NUMBER ('2. Chromosomal
+// Disorders' p.157, '1. Mendelian Inheritance' p.161) extracts normally and prints no warning,
+// and both of those were notes slides too. Silence proves nothing; the message is worth acting on.
+//
+// Do not paraphrase this as 'the page returned zero characters of OCR'. It did not, and an agent
+// told that will open a perfectly ordinary slide, find nothing wrong with it, and have to report
+// a discrepancy it cannot explain. That happened on 2026-09-04 and the agent was right.
 function stemOf(pn) {
   const t = fs.readFileSync(OCR + 'p' + String(pn).padStart(4, '0') + '.txt', 'utf8');
   const halves = t.split('--- 150dpi ---');

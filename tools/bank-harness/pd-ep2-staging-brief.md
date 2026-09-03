@@ -21,6 +21,8 @@ count** — either keep a running tally as you go and say it is a tally, or say 
 not count. An estimate stated as a measurement is the failure here, not the 64. Say exactly where you stopped and what the next page is; a replacement resumes
 from your file, which is why §8 writes every entry to disk as it goes.
 
+**The instruction works — third measurement, 2026-09-04.** A section 3 staging agent was told to keep a running tally rather than estimate, did so, and reported **63** against a harness-recorded **66**: within 5%, and on the safe side. Every agent that kept a real tally has been accurate (55, 18, 63); every agent that reconstructed one afterwards has been low by about 40% (30 against 64, 10 against 17). **Count as you go, or say you did not count.**
+
 This is not a token-saving nicety, it is the single biggest cost in this project. **Cost is step
 count, not starting context** — the whole conversation is re-sent every step and it GROWS as you
 work. Measured over a real 7-hour block: agents all start at 29–31k tokens, but the five most
@@ -123,7 +125,8 @@ visible garbage. **Never take an exponent, a unit, a dose or a key from OCR text
   box:<page>,                        // ONLY when the explanation box overflowed onto its own page
   straddle:true,                     // ONLY when the question box itself crosses a page break
   stem:'…', opts:['…','…','…','…','…'],
-  fig:'<only when the question prints an image>',
+  fig:'<only when the question prints an image -- describe it FULLY, for the drafter>',
+  figAlt:'<REQUIRED whenever fig is set -- modality and view ONLY, ships to the reader>',
   expl:'<the printed box VERBATIM, or "" when the page prints none>',
   note:'<how you established it: crops named, twin checked, oddities, verification>' }
 ```
@@ -139,9 +142,17 @@ visible garbage. **Never take an exponent, a unit, a dose or a key from OCR text
 - **`expl` is the printed box verbatim**, or `''` where the page prints none. Do not write one. Do
   not summarise one. An unboxed question is a normal and expected thing; the drafting pass handles
   it.
-- **`fig`** describes the image fully: how many panels, their labels, modality, view, where it sits
-  on the slide. **Do not crop anything** — cropping is a separate pass. Note that the drafting pass
-  must give `imgAlt` **modality and view only**, because naming the finding answers the question.
+- **`fig` and `figAlt` are TWO DIFFERENT AUDIENCES, and both are required once the page prints an
+  image.** `fig` describes the image fully — how many panels, their labels, modality, view, where it
+  sits on the slide — and exists so the drafting pass can work without re-opening the render; it may
+  name findings freely, because it never ships. `figAlt` is the alt text that DOES ship, and it gives
+  **modality and view only**: "a three-generation pedigree, affected individuals shaded", never
+  "an autosomal recessive pedigree". Naming the finding answers the question, and that has given
+  away six answers once already. **Do not crop anything** — cropping is a separate pass.
+  ⚠️ **`check-part-ep.js` hard-fails a `fig` with no `figAlt`.** This brief listed only `fig` until
+  2026-09-04 and the mismatch survived two whole sections, because sections 1 and 2 printed no
+  figures at all — the first agent to meet one hit the validator, worked out the missing field for
+  itself and reported it. It should not have had to.
 - **`p` is the PDF page of the ANSWERED page** — the one you staged from.
 
 ## 7. Folds and shared menus — record, never decide
