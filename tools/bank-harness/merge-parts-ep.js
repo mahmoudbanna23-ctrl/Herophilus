@@ -23,6 +23,8 @@ const BLANK = NL + NL;
 const SEC = {
   3: { base: 'endpoint-s03-gastro', svar: 'PEDEP_S03_STAGED', title: 'SECTION 3: "Gastroenterology"',
        pages: '393-549', expect: 67 },
+  4: { base: 'endpoint-s04-accidents', svar: 'PEDEP_S04_STAGED', title: 'SECTION 4: "Accidents"',
+       pages: '550-562', expect: 3 },
 };
 
 const secNum = process.argv[2];

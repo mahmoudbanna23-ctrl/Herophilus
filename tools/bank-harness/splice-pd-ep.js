@@ -27,6 +27,8 @@ const SEC = {
        draft: 'endpoint-s02-nutrition.draft' },
   3: { prefix: 'pedep-gi-', staging: 'endpoint-s03-gastro.array.js', svar: 'PEDEP_S03_STAGED',
        draft: 'endpoint-s03-gastro.draft' },
+  4: { prefix: 'pedep-acc-', staging: 'endpoint-s04-accidents.array.js', svar: 'PEDEP_S04_STAGED',
+       draft: 'endpoint-s04-accidents.draft' },
 };
 
 const HEADER = `/* Pediatrics ENDPOINT questions (Pediatrics endpoint part1.pdf).

@@ -30,6 +30,8 @@ const SEC = {
   // spill into liver and liver-hep, so no single id would be right here.
   3: { prefix: 'pedep-gi-', file: 'endpoint-s03-gastro.array.js', svar: 'PEDEP_S03_STAGED',
        draft: 'endpoint-s03-gastro.draft', chapter: 'gastroenterology' },
+  4: { prefix: 'pedep-acc-', file: 'endpoint-s04-accidents.array.js', svar: 'PEDEP_S04_STAGED',
+       draft: 'endpoint-s04-accidents.draft', chapter: 'accidents' },
 };
 
 // imgAlt must give MODALITY AND VIEW ONLY. Naming the finding answers the question --

@@ -20,7 +20,7 @@ watch and dies with the session.
 | 2 Nutrition | 211–392 | 76 pages → **75 live** | ✅ spliced · 1 self-reprint folded (nut-29) |
 
 | 3 Gastroenterology | 393–549 | 67 → **65** | ✅ **CLOSED 2026-09-03** — drafted, validated, spliced 148→215, folded 215→**213**. 65 `pedep-gi-*` live. |
-| 4 Accidents & poisoning | 550–562 | 3 | not started |
+| 4 Accidents & poisoning | 550–562 | 3 | ✅ **CLOSED 2026-09-03** — staged, drafted, validated, spliced 213→**216**. No fold. 3 `pedep-acc-*` live. |
 | 5 Pediatrics Emergencies | 563–702 | 60 | not started |
 | 6 Perinatal | 703–773 | 23 → **22?** | p.768 reprints `pedep-gp-70` — fold, do not stage |
 | 7 Neonatology | 774–903 | 53 | not started |
@@ -29,29 +29,43 @@ watch and dies with the session.
 | Model exams 1–4, training 1–2 | 1157–1936 | 379 | last; expected mostly reprints |
 | Exam Night Review | 1937–1990 | 0 (prose) | nothing to stage |
 
-**Live total: 148 entries from 165 answered pages.** The two numbers differ by the 17 folds and
-are both correct — pages staged is not questions held. Always say which one you mean.
+**Live total: 216 entries from 235 answered pages** (2026-09-03, after §4). The two numbers differ
+by the 19 folds and are both correct — pages staged is not questions held. Always say which one you
+mean.
 
 ⚠️ This paragraph used to sit **between rows 2 and 3 of the table above**, which silently split it
 into a header-less second table — rows 3–9 rendered as pipe-paragraphs. Same trap as the one that
 broke `pedep-gp-8`'s explanation: **a markdown table's rows must sit on consecutive lines**, and
 nothing checks it but reading the rendered page.
 
-Live file `app\data\questions.peds.ep.js` as of 2026-09-03, after the section-2 splice and **both**
-fold passes: **148 entries, 0 holes, 148 distinct ids, 465,937 chars / 471,472 bytes.** Boot check
-**0 console errors** (`QUESTIONS 4586`); `validate-all.js` all hard checks passed across 5 files,
-no within-file duplicate stem left. ⚠️ **Chars and bytes differ by ~1.2% here** — the file is full
-of typographic quotes and arrows — so say which you mean; the "470,768 bytes" that stood here was
-a char count. (The "89 entries / QUESTIONS 4527" figures were the section-1 state and are dead.)
+Live file `app\data\questions.peds.ep.js` as of 2026-09-03, after the section-4 splice and all
+three fold passes: **216 entries, 0 holes, 653,808 bytes.** Boot check **0 console errors**
+(`QUESTIONS 4654`, 153 chapter rows, 123 with questions); `validate-all.js` all hard checks passed
+across 5 files, no within-file duplicate stem left. ⚠️ **Chars and bytes differ by ~1.2% in this
+file** — it is full of typographic quotes and arrows — so always say which you mean; a figure that
+once stood here as "bytes" was a char count. (The 89/148/213-entry figures are earlier states and
+are dead.)
 
-**▶ RESUME HERE.** ✅ **Fold pass 2 is DONE** (`f4444d6`) and ✅ **the section-3 reprint sweep is
-DONE** — both are written up at the foot of this file. **Section 3 is being STAGED**: the 67
-answered pages are rendered, the `SEC` registry in `val-pd-ep.js` and `splice-pd-ep.js` now has a
-row 3 (`pedep-gi-`), and two `lean-drafter` halves are writing
-`content\peds\qb-pages\endpoint-s03-gastro.part-A.js` (n=1–34) and `.part-B.js` (n=35–67).
-**Next after they land:** merge the halves under one header into
-`endpoint-s03-gastro.array.js`, adjudicate the three reprint candidates on the images, then draft
-and `val-pd-ep.js 3` → `splice-pd-ep.js 3 --write`.
+**▶ RESUME HERE.** ✅ **Sections 1–4 are CLOSED**, each written up at the foot of this file, and all
+three fold passes are done. **Next is §5 Emergencies, pp.563–702, 60 answered pages** — nothing for
+it is staged, rendered or wired yet, so it starts from the beginning of the standing pipeline:
+
+1. Read `content\peds\qb-pages\ocr\ep1\index.json` over pp.563–702 — confirm the answered-page
+   list, look for overflow boxes appearing as short `notes` pages, and note every `options-differ`
+   and `few-options` flag. ⚠️ **`options-differ` is usually two bad OCR reads of one option, not a
+   real difference** (§4 proved this) — check both `.txt` reads before spending a re-render.
+2. Add a section-5 row (`pedep-emg-`, `endpoint-s05-emergencies`, `PEDEP_S05_STAGED`) to all three
+   of `val-pd-ep.js`, `splice-pd-ep.js` and `merge-parts-ep.js`; `node --check` each.
+3. Pull the answered pages with `tools\ep-index\pull.py`, then stage in **two halves** (60 pages is
+   the first section since §1 big enough to want splitting) — briefs modelled on
+   `<scratchpad>\s04-brief.md`, which states the **ZERO-BASED** key convention correctly.
+4. `merge-parts-ep.js 5 --write` → draft both halves → `val-pd-ep.js 5 A` and `5 B` →
+   `splice-pd-ep.js 5 --write` → fold sweep as a separate pass → `validate-all.js` →
+   `boot-check.js` → commit with an explicit pathspec.
+
+⚠️ Run `reprint-pd-ep.js 563 702` before staging: §5 is Emergencies and House holds a populated
+`emergencies` chapter, so cross-bank hits are likely. **A cross-bank match adds `alsoIn`; it never
+removes an entry and never changes the staging count.**
 
 ---
 
@@ -869,3 +883,63 @@ ever **write** `questions.peds.ep.js`.
 **213 of 855.** Sections 4–9 (pp.550–1156, 244 answered pages) and the model exams (pp.1157–1936,
 379 expected reprints) are unstaged. **Part 1 is not closed.** Next section by the standing
 pipeline is **§4 Accidents, pp.550–562, 3 answered pages** — small enough to stage in one half.
+
+---
+
+## ✅ Section 4 CLOSED 2026-09-03 — 213 → 216, no fold
+
+Three questions, pp.557 / 559 / 561, all five-option, all filed `accidents` ("Accidents and
+poisoning") — the chapter had **zero** questions in either bank before today, so this is the first
+content it has ever carried. `pedep-acc-1` paracetamol overdose · `pedep-acc-2` road-traffic trauma
+in compensated shock · `pedep-acc-3` extensive burn. Staged and drafted in one half each by a
+lean-drafter; validator ALL CHECKS PASSED first time, no adjudication needed on any key.
+
+**No fold, and the sweep is the evidence.** Every new stem was scored against all 456 other live
+peds entries (213 endpoint + 243 House, normalised-token Jaccard). Best matches: `pedep-acc-1`
+**0.317** (`pedhd-card-14`), `pedep-acc-2` **0.311** (`pedhd-neo-3`), `pedep-acc-3` **0.200**
+(`pedep-gp-89`). Folds in this bank have run above 0.85; nothing here is close, and no exact-stem
+match exists. **No cross-bank `alsoIn` either** — House holds no accidents question at all, so
+section 4 adds nothing to the `alsoIn` debt below.
+
+### Two index flags run down, both resolved before drafting
+
+- **`options-differ` on p.559 was SPURIOUS.** The index compares OCR of the unanswered and answered
+  printings; both print option B as "Blood glucose measurement", and the flag came from two bad
+  reads of that one option — "glucose measurement" (p.558, the word *Blood* dropped entirely) and
+  "Blocxi glucose measurement" (p.559). ⚠️ **This is the shape to expect from that flag: the OCR
+  differs, not the book.** Check it against both `.txt` reads before spending a re-render on it.
+- **`pedep-acc-3`'s stem is genuinely truncated by the book**, not by transcription. It gives an
+  "extensive burn" and analgesia already given, and names no burn area, depth, weight or time since
+  injury; the lead-in starts mid-sentence with a lowercase "which". Confirmed identical on the
+  unanswered twin p.560, so both printings carry it. Staged verbatim, `note` set, and the drafting
+  brief told the drafter not to repair it.
+
+### The burn question is the section's one gap-fill
+
+`pedep-acc-3` prints **no explanation box**, and **no peds lecture in the cache covers burns** —
+swept `content\peds\lectures\`, the only hit for "burn" is a hospitalisation aside in
+`specific bacterial infection.txt`. So it was answered and tagged per the standing rule, never
+declared: capillary leak, fluid-before-dressing sequencing, no prophylactic antibiotics,
+inhalational-injury indications for intubation, and the 20-minute/hypothermia limit on cold water
+each carry `(not taken from the course material)` at the claim. What *is* sourced is cited:
+`4) Shock in pediatrics_.txt` lists burns among the causes of dehydration and shock and puts fluid
+resuscitation first, and `3) Pediatric resuscitation.txt` carries the ABCDE priority.
+
+The other two are lecture-grounded throughout, and two distractor attributions were checked against
+the source rather than taken on trust: urinary alkalinisation is the salicylate intervention
+(`5) Poisoning in children_.txt` lines 94–95) and desferrioxamine the iron chelator (line 135).
+
+### Verification
+
+`validate-all.js` **ALL HARD CHECKS PASSED (5 files)**; the soft duplicate-stem list is the
+pre-existing ENT/ophtho set, unchanged. `boot-check.js` **0 console errors** —
+`QUESTIONS 4654 · THEORY 153 · MODULES 4 · 153 chapter rows`, now **123 with questions** (was 122;
+`accidents` is the new one), peds 51 rows. 216 entries live, 0 holes.
+
+### Where section 4 leaves part 1
+
+**216 of 855.** Sections 5–9 (pp.563–1156, 241 answered pages) and the model exams (pp.1157–1936,
+379 expected reprints) are unstaged. **Part 1 is not closed.** Next by the standing pipeline is
+**§5 Emergencies, pp.563–702, 60 answered pages** — the first section since §1 large enough to want
+splitting across two drafting halves. The cross-bank `alsoIn` pass (21 House hits in §3, plus §1
+and §2) is still owed and still unstarted.
