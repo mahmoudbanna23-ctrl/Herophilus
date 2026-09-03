@@ -1028,3 +1028,54 @@ is a separate pass afterwards. Do not skip a page because this table names it.
 p.584 was never swept.** Its GCS stem is distinctive and no other §5 page resembles it, but that is
 an eyeball judgement, not a measurement: **re-run the sweep against the staged file once §5 is
 staged, when p.584 is in the set.**
+
+### ✅ §5's printed numbering runs 1–62 over 61 questions — measured 2026-09-03, and it closes exactly
+
+Before staging, the printed question number was extracted from the OCR of **every page 563–702**,
+answered and unanswered alike, and the two printings were compared against each other. **Both
+printings agree on every pair**, which is what makes this a measurement rather than an OCR artefact:
+
+| where | what the book prints | net |
+|---|---|---|
+| p.628 → p.630 | **26 then 28** — printed **27 does not exist** (p.629 `question` also prints 28) | −1 |
+| p.666 → p.668 | **46 then 48** — printed **47 does not exist** (p.667 also prints 48) | −1 |
+| pp.683/685 and pp.687 | **55 printed TWICE**, on two distinct question pairs (684/685 and 686/687) | +1 |
+| p.701, last answered page | prints **62** | — |
+
+62 − 2 skipped + 1 duplicated = **61**. The count arrived at from the pairing walk and the count
+arrived at from the printed numbers now agree, by different routes. ⚠️ **The contents page's 60 and
+the book's own last printed number 62 are BOTH wrong**, in opposite directions — a third instance of
+*trust no printed count*, and the first where the two wrong counts straddle the true one.
+
+**So `pr` diverges from `n` in three places and the staging briefs carry the map:** `pr == n` for
+n1–26 · `pr == n+1` for n27–45 · `pr == n+2` for n46–53 · `pr == n+1` for n54–61. This is the same
+shape §2 had (a duplicate printed number from n=66) except that §5 runs it in both directions.
+
+⚠️ It also **independently confirms the p.584 adjudication**: p.583 and p.584 both print **4**, and
+p.585 prints **5** — so p.584 is Q4's answered page and p.585 is Q5's unanswered twin, exactly as
+the image reading concluded. Two instruments, two different signals, same verdict.
+
+### New tool: `tools\bank-harness\check-part-ep.js` (2026-09-03)
+
+⚠️ **`node --check` CANNOT check a staging half, and the brief had been telling agents to run it.**
+A half is a sequence of bare `{ … }` fragments with no array wrapper, so node reads `{ n:1, …` as a
+block with a label and always fails with `Unexpected token ':'`. Verified on the closed
+`endpoint-s04-accidents.part-A.js`, which is a good file. **An agent that believed that failure
+would start repairing a file that is fine** — and the instruction has been live since §2.
+
+`check-part-ep.js <path to a .part-X.js>` runs the **same** parse `merge-parts-ep.js` will run
+(`}\n\n{` → `},\n\n{`, then `new Function`), plus the schema checks — zero-based `key` in range,
+stripped letter prefixes, numeric `p`, `expl` a string, strictly increasing pages, contiguous `n`,
+no repeated page. So a pass is the merge's own verdict, obtained one page at a time instead of at
+the end. **Self-tests clean on both closed sections**: s04 part-A (3 entries) and s03 part-A (34).
+
+### §5 staging launched 2026-09-03
+
+- **61 native 800×450 JPEGs pulled** with `pull.py` into the session scratchpad, then **pruned to
+  exactly those 61** — `pull.py`'s ranges expand to every page in between, so 103 came out and 42
+  unanswered twins were deleted. No agent can waste a read on one.
+- Half split as recorded above: **A = n1–31, pp.577–638** · **B = n32–61, pp.640–701**.
+- Brief written fresh at `<scratchpad>\s05-brief.md` (the §4 one died with its scratchpad). It
+  carries the zero-based `key` convention, §10a's page-by-page order, the `check-part-ep.js`
+  correction above, and the verbatim/escalate rules.
+- **One agent at a time** (user ruling 2026-09-03). Half A launched first.
