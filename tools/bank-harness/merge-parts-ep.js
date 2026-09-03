@@ -59,6 +59,32 @@ const SEC = {
   // one pass. It drops a different line at each resolution, so read the page, not the index.
   8: { base: 'endpoint-s08-allergy', svar: 'PEDEP_S08_STAGED', title: 'SECTION 8: "Allergy"',
        pages: '904-928', expect: 9 },
+
+  // The last content section of part 1, and the largest after section 3. Measured off the index
+  // 2026-09-03: pp.929-1156 hold 96 `answered`, 95 `question` and 37 `notes` pages.
+  //
+  // ⚠️ 95, NOT THE 96 THE INDEX COUNTS -- SETTLED ON THE IMAGES 2026-09-03, DO NOT RE-OPEN.
+  // The index scored 96 `answered` against 95 `question` pages, and the whole discrepancy was
+  // ONE page: p.938, sitting alone inside a 37-page prose block (pp.929-937 before it, 939-965
+  // after it), 29 pages before the first real question. pp.936-939 were rendered and read:
+  // p.936 is meningitis treatment/complications/prophylaxis, p.937 viral meningitis, p.938
+  // ENCEPHALITIS, p.939 specific bacterial infections -- one continuous run of highlighted study
+  // notes, and NOT ONE of them prints a lettered option. p.938 is a prose page the yellow-measure
+  // classifier called `answered`; its `few-options` flag was the honest signal, since a page with
+  // no options at all looks like a page missing most of them.
+  // With p.938 out, the section is perfectly regular: pp.967-1155 alternate question/answered on
+  // a +2 with no exception -- 95 answered pages, exactly the `question` count. p.967 was rendered
+  // and confirmed as a real answered question page, so the run's start is proved, not assumed.
+  // p.1156 is the closing divider.
+  //
+  // ⚠️ 22 of the answered pages carry `options-differ` and 3 carry `few-options`. In section 8
+  // every such flag was OCR dropping a line at one resolution, not the book. HERE IT IS DIFFERENT:
+  // part A alone found SEVEN pages that genuinely print only four options (pp.967, 971, 973, 979,
+  // 991, 999, 1013). The flag still means "look at that page" and never "there is a fault" -- but
+  // in this section looking sometimes confirms it. 4-option entries are legitimate; the app holds
+  // 2 to 10.
+  9: { base: 'endpoint-s09-infection', svar: 'PEDEP_S09_STAGED', title: 'SECTION 9: "Infection and Immunity"',
+       pages: '929-1156', expect: 95 },
 };
 
 const secNum = process.argv[2];
@@ -106,8 +132,19 @@ all.forEach((q, i) => {
   if (typeof q.stem !== 'string' || q.stem.length < 15) fail.push(at + ': stem missing or too short');
   if (typeof q.expl !== 'string') fail.push(at + ': expl must be a string ("" where the page prints no box)');
   if (typeof q.p !== 'number') fail.push(at + ': p must be the numeric PDF page');
+  // ⚠️ `/^[A-J][.)]\s/` alone is WRONG on a microbiology bank: it fires on every abbreviated
+  // genus whose initial happens to fall in A-J -- "H. influenzae", "E. coli", "C. difficile",
+  // "B. pertussis". Section 9 tripped it at n=76 opt 2 on a perfectly correct option list.
+  // The discriminator is POSITION: a printed option letter is the letter for that option's own
+  // slot (A at index 0, B at index 1, ...). A genus initial almost never coincides with its slot,
+  // and when it does the following word is a lowercase species epithet. Both tests must pass
+  // before this is called a stray prefix.
   (q.opts || []).forEach((o, k) => {
-    if (/^[A-J][.)]\s/.test(o)) fail.push(at + ' opt ' + (k + 1) + ': carries a printed letter prefix, strip it');
+    const m = /^([A-J])[.)]\s+(.)/.exec(o);
+    if (!m) return;
+    const positional = m[1] === String.fromCharCode(65 + k);
+    const speciesEpithet = m[2] === m[2].toLowerCase() && m[2] !== m[2].toUpperCase();
+    if (positional && !speciesEpithet) fail.push(at + ' opt ' + (k + 1) + ': carries a printed letter prefix, strip it');
   });
   if (q.fig && !q.figAlt) fail.push(at + ': fig without figAlt');
 });

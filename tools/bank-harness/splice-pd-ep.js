@@ -37,6 +37,8 @@ const SEC = {
        draft: 'endpoint-s07-neonatology.draft' },
   8: { prefix: 'pedep-alg-', staging: 'endpoint-s08-allergy.array.js', svar: 'PEDEP_S08_STAGED',
        draft: 'endpoint-s08-allergy.draft' },
+  9: { prefix: 'pedep-inf-', staging: 'endpoint-s09-infection.array.js', svar: 'PEDEP_S09_STAGED',
+       draft: 'endpoint-s09-infection.draft' },
 };
 
 const HEADER = `/* Pediatrics ENDPOINT questions (Pediatrics endpoint part1.pdf).

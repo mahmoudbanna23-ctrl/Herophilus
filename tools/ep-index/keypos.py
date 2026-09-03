@@ -65,6 +65,28 @@ CALIBRATION OF RECORD -- 2026-09-03, Pediatrics endpoint part1.pdf
                      ink is still the option text at x~47 -- the figure only removes the GAP.
                      Any page with art alongside the options can do this.
 
+    SECOND CALIBRATION -- 2026-09-03, s09 "Infection and Immunity", 95 staged entries
+    89 agree, 5 disagree, 1 abstain (94.7%). All six were RENDERED AND READ BY EYE, and once
+    again EVERY staged key was right: 95/95, and 330/330 across both calibrations. The tool
+    has now been wrong nine times and right about a staged key zero times. Its value is
+    entirely in the direction of its failures -- it has never yet passed a wrong key.
+
+    Nothing new appeared. All six are the two causes above, and the split is exact:
+      p.1079, p.1087, p.1089   figures BESIDE the option column -- the p.238 shape, three
+                               times in one section. s09 is the first section of this book to
+                               carry figures at all, which is the whole reason the rate jumped
+                               from 3-in-235 to 6-in-95. It is a property of the LAYOUT, not
+                               of the section's difficulty or of the transcriber.
+      p.975, p.1123, p.1003    the wrap over-count. p.975's options are full sentences and
+                               several wrap; p.1123's options are CSF value lists and the key
+                               itself (option B) wraps to a second line. p.1003 wrapped far
+                               enough to imply -1 and correctly ABSTAINED.
+
+    ⚠️ THE PRACTICAL RULE THIS SETTLES: on a section carrying figures or long wrapping
+    options, expect ~5% disagreement and BUDGET THE RENDERS. Do not read a falling agreement
+    rate as a staging-quality signal -- it is a layout signal. The number that would actually
+    mean something is a disagreement that survives a human read, and that has never happened.
+
     ⚠️ CALIBRATION IS INVALIDATED BY: any change to DPI, MIN_BAND, LEFT_TOL, INK, the 2% lit
     threshold, the yellow test, or the band/margin logic -- and by a different source PDF,
     which is a different scanner, a different banner and a different layout. It is a property

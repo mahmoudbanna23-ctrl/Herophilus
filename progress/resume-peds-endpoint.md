@@ -1930,3 +1930,116 @@ all four harnesses at once (`merge-parts-ep.js`, `val-pd-ep.js`, `splice-pd-ep.j
 against 95 question pages, and pp.930–935 are prose notes — the same shape as §8's preamble, so
 look before staging. After that: model exams 1–4 and training 1–2, pp.1157–1936, 379 questions
 expected to be mostly reprints, then Exam Night Review, prose, nothing to stage.
+
+---
+
+## §9 Infection & Immunity — CLOSED 2026-09-03. 351 → 446 spliced → 445 after one fold.
+
+**95 staged, not the 96 the index predicted**, over pp.967–1155 (not pp.929–1156 — pp.930–966 are
+the prose preamble, exactly the shape §8 had). *Trust no printed count* holds for the eighth
+consecutive section.
+
+**⚠️ THE RESUME PROMPT WAS WRONG ABOUT THE NEXT ACTION, AND THE SPLICER IS WHAT PROVED IT.**
+v6 said §9's drafts "exist and appear to validate" and told me to splice. Both halves on disk *did*
+validate — because they were halves A and B, covering n1–n48 of a 95-entry staging record. The
+splicer refused: `COUNT: drafts sum to 48 but staging holds 95`, plus 47 `MISSING` lines. What
+"parts A–D merged into the array" had meant was that **staging** was complete, not drafting. Halves
+C (n49–72) and D (n73–95) were then drafted by two `lean-drafter` agents, one at a time, verified
+from disk. **A validator passing is a statement about the file it was given, never about coverage;
+only the splicer counts drafted against staged.**
+
+### ⚠️ A FALSE ATTRIBUTION TO THE SOURCE — the defect no instrument in this pipeline can see
+
+Staged **n79 (p.1123)** carried an authored sentence in `expl` — the field the pipeline treats as
+*the book's verbatim printed box* — while **the same row's own `note` said "NO explanation box is
+printed for this question on 1123."** `val-pd-ep.js` derives the boxed-vs-unboxed shape from `expl`
+being non-empty, so it **demanded** the §4a boxed form and **passed** the entry. The drafted entry
+therefore told a student *"**The endpoint file prints this explanation:**"* over a blockquote, and
+closed *"the box itself is the endpoint file's own"* — about a box that does not exist on the page.
+
+Every gate was green. The validator cannot compare `expl` against `note`; the splicer never reads
+either; keypos reads pixels, not prose. **The staging row contradicted itself and the pipeline had
+no way to notice.** Fixed by setting `expl: ''` in both `array.js` and `part-D.js` (with a note
+recording the correction), rewriting the entry to the §4b unboxed shape, and re-validating: the
+boxed census moved **95/95 → 94/95**, which is the number that now matches the record.
+**Scope checked, not assumed:** n79 was the only row of 95 whose `expl`/`note` disagreed.
+
+**The rule this leaves behind: `expl` and `note` are two humans' claims about the same page, and
+nothing in the harness cross-reads them. When a `note` mentions a box, read it against `expl`
+before drafting.** A validator that derives a *shape* from a *field* will enforce the shape of
+whatever it is handed.
+
+### keypos calibration, §9 — and a third failure mode
+
+**95 staged keys → 89 agree, 5 disagree, 1 abstain.** All six flagged pages rendered and read by
+eye: **all 95 staged keys were RIGHT.** A disagreement measures the tool.
+
+- n57, n61, n62 — **figures printed beside the option column.** Documented limit.
+- n19, n79 — **wrapping.** n79 is a variant worth naming: it is **the key's own row** that wraps,
+  not a row below it. The documented limit says "an option *below* the key wrapping".
+- **n5 / p975 — UNEXPLAINED.** Plain text, no figure, no wrap, one clean highlight, and the tool
+  still missed it. **A third failure mode, not in `keypos.py`'s docstring.** Recorded rather than
+  guessed at; it needs a look at the pixel profile, not another render.
+
+Running calibration of record: **330 staged keys across §1–§9 → 321 agree, 7 disagree, 2 abstain;
+every miss rendered and read; all 330 staged keys right.** Miss rate rose from 3-in-235 to
+6-in-95 in this section — a property of §9's layout (six figure pages), not of the bank.
+
+### The six figures — crop debt cleared, and two ceilings recorded
+
+All six of §9's figures sit in half C. Cut from the page's own **native embedded JPEGs**, no
+upsampling: `q-pd-ep-1071/1079/1081/1083/1087/1089.jpg`, 120×212 to 260×175. Every one was looked
+at on a 3×2 contact sheet, not trusted from the cutting agent's report — which was right to do:
+
+- **`q-pd-ep-1083` (n59, key *Measles virus*)** — the agent's alt claimed *conjunctival injection*.
+  **Not confirmable at 122×178.** Removed.
+- **`q-pd-ep-1089` (n62, key *Chickenpox*)** — claimed *lesions at different stages*. Discrete
+  lesions are barely resolvable at 150×220. Removed.
+
+Both explanations reason from the **stem**, not the picture, so no claim exceeded the image ceiling
+and no explanation needed an edit. **`imgAlt` states modality and view only**, on all six.
+
+### The reprint sweep, and the pair that was NOT folded
+
+`sweep-staged-ep.js 9`: within-section 3, vs live endpoint 13, vs House 6, option-set-only 24,
+shared menus 2.
+
+**Folded (1):** `pedep-inf-23` (p.1011) ← `pedep-inf-36` (p.1037), the **respelled** shape —
+identical five options bar a leading article on option a, identical key on identical option text,
+stems differing only in the opening interrogative. Both pages rendered and read: no figure, one
+question per sheet. `tools\bank-harness\fold8-pd-ep.js`. 446 → 445.
+
+**⚠️ NOT folded, and it must stay that way: n2 (p.969) / n40 (p.1045).** Same four-year-old girl,
+same one-day fever and sore throat, same pinpoint rash, circumoral pallor and coated tongue, same
+five options, same key — **a stronger-looking fold than the one that was taken.** It is refused
+because `pedep-inf-2`, `-40` and `-44` print the **same five-option exanthem ladder in the same
+order**, and `pd-ep-draft-brief.md` is absolute: *"A shared menu PAIRS questions. It NEVER folds
+them."* The rule exists because a shared ladder inflates the similarity score of questions that are
+not reprints; and the failure modes are asymmetric — keeping a near-duplicate the book really
+prints costs a student some redundancy, while dropping one costs them the question. `-40` and `-44`
+already name `-2` as the table anchor, so the relationship is recorded without anything being lost.
+**fold8 asserts all three still stand and still resolve, and halts if they do not.**
+
+**Dismissed on text, no render needed:** n29 (live attenuated vaccines) vs n81 (contraindications
+to live vaccination), sim 0.632 — keys disagree, option counts differ, two different questions.
+
+**⚠️ Cross-bank vs live House — RECORDED, NOT FOLDED** (the two files stay separate while both
+chats write): `n53 ≡ pedhd-inf-1` **0.925** · `n55 ≡ pedhd-inf-3` 0.718 · `n79 ≡ pedhd-inf-28`
+0.695 · `n81 ≡ pedhd-inf-30` · `n82 ≡ pedhd-inf-31` · `n43 ≡ pedhd-peri-7`. Section (d) shows the
+option-set overlap running heavily endpoint-§9 ≡ House ch.1 — **confirming the standing warning
+that the endpoint/House overlap is chapter-shaped, not scattered.** These six join the end-of-stream
+sweep; nothing here is folded now.
+
+### Boot
+
+`node tools\boot-check\boot-check.js` after the splice **and** after the fold:
+`QUESTIONS 4936 · THEORY 153 · MODULES 4 · 153 chapter rows (134 with questions) · 0 console
+errors`. `Q_PEDS_EP` 445, 0 holes, 0 duplicate ids.
+
+### What is left of part 1
+
+**All nine content sections are closed.** What remains is **model exams 1–4 and training 1–2,
+pp.1157–1936, 379 questions expected to be mostly reprints**, then Exam Night Review (prose,
+nothing to stage). ⚠️ **"Mostly reprints" is a prediction, not a measurement** — the reprint rate
+there has never been measured, and the sweep pool is now 445 endpoint entries, so the sweep is the
+expensive part of that stretch, not the drafting.

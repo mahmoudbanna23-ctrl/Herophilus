@@ -43,6 +43,12 @@ const SEC = {
        draft: 'endpoint-s07-neonatology.draft', chapter: 'neonatal' },
   8: { prefix: 'pedep-alg-', file: 'endpoint-s08-allergy.array.js', svar: 'PEDEP_S08_STAGED',
        draft: 'endpoint-s08-allergy.draft', chapter: 'allergy' },
+  // `chapter` is the DEFAULT the validator accepts without comment, not a straitjacket -- section 9
+  // is the one section of part 1 with a whole family of chapters to sort into: infection,
+  // infection-bact, infection-rash, infection-vesic, infection-immunity and infection-vaccine all
+  // exist in modules.js. Every one of those is legitimate here; `infection` is the fallback.
+  9: { prefix: 'pedep-inf-', file: 'endpoint-s09-infection.array.js', svar: 'PEDEP_S09_STAGED',
+       draft: 'endpoint-s09-infection.draft', chapter: 'infection' },
 };
 
 // imgAlt must give MODALITY AND VIEW ONLY. Naming the finding answers the question --
