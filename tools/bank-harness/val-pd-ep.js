@@ -36,6 +36,11 @@ const SEC = {
        draft: 'endpoint-s05-emergencies.draft', chapter: 'emergencies' },
   6: { prefix: 'pedep-per-', file: 'endpoint-s06-perinatal.array.js', svar: 'PEDEP_S06_STAGED',
        draft: 'endpoint-s06-perinatal.draft', chapter: 'perinatal' },
+  // Section 7 spreads across all six neonatal/perinatal chapters -- `neonatal` is jaundice alone,
+  // and prematurity, RDS, HIE, seizures/birth injury and sepsis each have their own. The field
+  // below is documentation only; every entry is checked against the real chapter set.
+  7: { prefix: 'pedep-neo-', file: 'endpoint-s07-neonatology.array.js', svar: 'PEDEP_S07_STAGED',
+       draft: 'endpoint-s07-neonatology.draft', chapter: 'neonatal' },
 };
 
 // imgAlt must give MODALITY AND VIEW ONLY. Naming the finding answers the question --

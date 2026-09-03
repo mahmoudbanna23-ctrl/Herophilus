@@ -38,6 +38,15 @@ const SEC = {
   // its page count fails the splice gate, and folds are always a separate pass afterwards.
   6: { base: 'endpoint-s06-perinatal', svar: 'PEDEP_S06_STAGED', title: 'SECTION 6: "Perinatal"',
        pages: '703-773', expect: 23 },
+  // The cleanest section in the book so far: the index's `answered` count, its `question` count and
+  // the contents page all say 53, and the alternation is perfect -- p.797, then every even page
+  // from 800 to 902. pp.774-795 are a 22-page teaching preamble with no questions in them, and
+  // p.903 is the closing divider (4 words). Two pages still need an eye on the image before the
+  // staging is believed: p.797 is flagged `few-options` (OCR read A, B, D and no C), and p.798 is
+  // a 34-word notes page sitting immediately after an answered page, so it is a box-overflow
+  // candidate rather than a page of its own.
+  7: { base: 'endpoint-s07-neonatology', svar: 'PEDEP_S07_STAGED', title: 'SECTION 7: "Neonatology"',
+       pages: '774-903', expect: 53 },
 };
 
 const secNum = process.argv[2];
