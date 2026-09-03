@@ -315,3 +315,28 @@ gap, cap 60 s, retry the same pages).
   support 4 vs 6 mo · n26 vocalizing at 6 weeks vs cooing 2-3 mo).
 - **Next: §2 Developmental problems, pp.76-154, `expect: 30`, prefix `pedep2-dp-`, chapters
   `dev-problems`/`dev-nd`.** Sweep with `reprint-pd-ep2.js 76 154` before drafting a line.
+
+### 2026-09-04 later still — §2 CLOSED AND LIVE
+
+`app\data\questions.peds.ep2.js` holds **56** entries (`normal-dev` 28 + `dev-problems` 28),
+0 sparse holes, 119,199 bytes. Booted from `file://` with **0 console errors**; corpus 5,139.
+Commits `9207880` (splice, 29) and the fold commit after it. **Nothing pushed** — this chat
+does not push.
+
+**§2 ran 28 -> 57 -> 56**: spliced at 29, then folded once as a separate recorded pass, the
+same model part 1's §3 used (148 -> 215 -> 213). `pedep2-dp-21` (p.137, "Fatima") folded into
+`pedep2-dp-4` (p.103, "Fortuna") — same question, patient renamed, no discriminating token.
+Reasoning and the reversal of the pre-draft plan: section map, "Section 2 CLOSED".
+
+**⚠️ THE ONE FINDING TO CARRY INTO EVERY LATER SECTION: `reprint-pd-ep2.js` UNDER-REPORTS
+BADLY.** On §2 it named 6 House matches; comparing the **staged verbatim stems** against House
+instead finds **19** — the whole of `pedhd-devp-1` .. `pedhd-devp-19`, one for one, in page
+order, same patient names throughout. `near()`'s 8% tolerance is calibrated for OCR damage, and
+an editor is not OCR damage. **Do not raise the tolerance** — at 30% it starts pairing questions
+that merely share a vignette shape. **Run the sweep before drafting as a cheap early warning,
+then re-measure overlap against the staged text once staging exists.** §1's figure was wrong the
+same way and is corrected in the section map from 18 to 19.
+
+**Next: §3 Genetics, pp.155–244, `expect: 42`, chapter `genetics`, prefix `pedep2-gn-`.**
+Boundary confirmed on the images: p.154 is a devotional slide, p.155 carries the red "Genetics"
+banner. Sweep with `node tools\bank-harness\reprint-pd-ep2.js 155 244` before drafting a line.

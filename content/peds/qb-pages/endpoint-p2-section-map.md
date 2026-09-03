@@ -278,3 +278,61 @@ The other three groups are true pairings, not folds — n:2/n:3 (autism vs spast
 age ladder), n:9/n:11 (congenital infection screen vs creatine kinase on one investigation ladder),
 and n:12-n:16, five questions on the single five-way CP-type ladder discriminated by kernicterus,
 ex-26-weeker toe-walking, early hand preference, wide-based gait and failure to attain any milestone.
+
+---
+
+## Section 2 CLOSED — 2026-09-04
+
+**Spliced at 29, folded to 28. Live file 28 -> 57 -> 56 entries.**
+
+| | |
+|---|---|
+| pages | 76–154 |
+| `expect` (answered pages) | 30, **corrected to 29** — p.87 is a notes slide |
+| staged | 29 |
+| drafted | 15 (half A) + 14 (half B) = 29 |
+| spliced | 29, live 28 -> 57, 0 holes |
+| folded | 1 (`pedep2-dp-21` into `pedep2-dp-4`), live 57 -> **56** |
+| words | 3,826 + 2,510 = 6,336, mean 218 |
+| boot | 0 console errors, corpus 5,140 -> 5,139 |
+| `keypos.py --calibrate` | 29 agree / 0 disagree / 0 abstain |
+
+### The fold: `pedep2-dp-21` -> `pedep2-dp-4`
+
+`menus-pd-ep2.js` flagged n:4 and n:21 as sharing an option menu **and** a key. Read side by
+side on p.103 and p.137 they are the same question with the patient renamed — Fortuna and
+Fatima, both 8 months, both born at term, the same four milestones, the same four options in
+the same text and the same order, the same key. There is no discriminating clinical token,
+which is the test the six fold shapes set for telling a genuine fold from a template match.
+Half B's drafting agent reached the same conclusion independently and said so plainly rather
+than inventing a distinction.
+
+**The pre-draft plan of record said keep n:21 — that was reversed, and the disk is why.** The
+plan was written from the staging, where n:21 looked like "the fuller printing" because its
+printed box names cerebral palsy outright. Once both were drafted the picture changed: `dp-4`
+is the anchor the shared option menu points at and carries the full 305-word table, while
+`dp-21` is a 138-word sibling that points **at** `dp-4`. Folding `dp-4` away would have
+stranded the anchor and forced a rewrite of the entry that replaced it.
+
+Nothing of `dp-21` was dropped. Its box is worded differently from `dp-4`'s — it names
+cerebral palsy where `dp-4`'s says "early hemiparesis and neurological injury" — so it is
+carried across **verbatim as a second printing** inside `dp-4`'s explanation, and p.137 is
+folded into `dp-4`'s `source`, which now reads
+`Pediatrics endpoint part2.pdf p.103; reprinted p.137`.
+
+**Ids were not renumbered.** `pedep2-dp-22` .. `pedep2-dp-29` keep theirs; 21 simply ceases to
+exist, and the numbering gap is the record of the fold. Nothing else in the repo referenced
+the folded id (grepped before and after).
+
+### Two harness corrections made in this section
+
+1. **`merge-parts-ep2.js` SEC entry 2, `expect` 30 -> 29.** p.87 was read on the image twice:
+   it is a "Types of CP" notes slide whose lettered sub-bullets (`B. Dyskinetic CP`,
+   `C. Ataxic CP`, `D. Mixed CP`) carry yellow and classify as `answered`. This is the
+   documented "answered over-counts" shape, caught on a real page. **The number was lowered
+   because a page was looked at, never to make a merge pass.**
+
+2. **`splice-pd-ep2.js` was printing JavaScript string length and calling it bytes.** The live
+   file after the splice was 119,697 chars and 120,159 bytes across 231 non-ASCII characters.
+   The label invited exactly the bytes-versus-count mismatch `MEMORY.md` treats as evidence of
+   a broken count. Relabelled to `chars`, with the measurement recorded in the comment.
