@@ -90,6 +90,23 @@ const CH = {
         // a drafting agent -- so a 3-way 9/8/9, not a 2-way 12/14. Both menus land whole in B.
         split: [9, 8, 9],
         lectures: ['3) Pediatric resuscitation.txt', '4) Shock in pediatrics_.txt'] },
+  18: { slug: 'accidents', title: 'Accidents & poisoning', pages: [135, 136], expected: 4,
+        file: 'house-ch18-accidents.array.js', svar: 'PEDHD_ACC_STAGED',
+        draft: 'house-ch18-accidents.draft-', dvar: 'PEDHD_ACC_DRAFT_', prefix: 'pedhd-acc-',
+        // Registered from the map's range so `locate` can run; the banners are what confirm it.
+        // `emergencies` is deliberately NOT offered, the mirror of ch.17 excluding `accidents`:
+        // poisoning management is full of resuscitation, and a drafter given both chapters would
+        // file a poisoning question into emergencies.
+        chapterIds: ['accidents'],
+        // ONE lecture, and it covers only half the chapter. The theory chapter's own intro says so:
+        // choking, suffocation, strangulation and drowning are the BOOK's and are algorithms; only
+        // poisoning is L5's. Verified against the cache before registering -- 29 slides, zero hits
+        // for choking, drowning, submersion, back blow, abdominal thrust or charcoal. A drafter must
+        // expect to be filling gaps here, and the accidents theory chapter tags what it supplied.
+        // Four questions, no shared option menu among them, so one part -- not the default even 2/2,
+        // which would split a chapter a single agent drafts comfortably in one pass.
+        split: [4],
+        lectures: ['5) Poisoning in children_.txt'] },
 };
 
 // ---------------------------------------------------------------- args / state
@@ -461,8 +478,13 @@ function draft() {
   // with a FIVE-question shared menu at n13..n17, and any 2-way cut that keeps that run whole leaves
   // a 13- or 14-entry part -- more than one drafting agent finishes before it hands back at ~70 tool
   // calls. Parts are lettered A, B, C… in order and must sum to the chapter. Added 2026-09-03.
-  const counts = Array.isArray(C.split) ? C.split.slice() : [C.split || Math.ceil(arr.length / 2)];
-  if (counts.length === 1) counts.push(arr.length - counts[0]);
+  const explicit = Array.isArray(C.split);
+  const counts = explicit ? C.split.slice() : [C.split || Math.ceil(arr.length / 2)];
+  // A NUMBER means "first part holds this many", so the remainder is appended. An ARRAY is already a
+  // complete partition and nothing may be appended to it -- doing so turned split:[4] into [4,0] and
+  // killed the partition check, making a one-part chapter impossible to draft. A 4-question chapter
+  // fits one agent comfortably and should not be forced into two. Corrected 2026-09-03.
+  if (!explicit && counts.length === 1) counts.push(arr.length - counts[0]);
   if (counts.some(n => !(n >= 1)) || counts.reduce((a, b) => a + b, 0) !== arr.length)
     die(`split ${counts.join('+')} does not partition ${arr.length} entries`);
   const idx = half.charCodeAt(0) - 65;

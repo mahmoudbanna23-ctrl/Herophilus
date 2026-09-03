@@ -1,0 +1,108 @@
+{
+  "chapter": 18,
+  "slug": "accidents",
+  "file": "house-ch18-accidents.array.js",
+  "created": "2026-09-03T17:58:13",
+  "steps": {
+    "locate": {
+      "at": "2026-09-03T17:58:13",
+      "pages": {
+        "135": "R-068",
+        "136": "L-069",
+        "137": "R-069"
+      }
+    },
+    "render": {
+      "at": "2026-09-03T17:58:23",
+      "dir": "C:\\Users\\Alfa388\\AppData\\Local\\Temp\\herophilus-loop\\house-ch18",
+      "pages": [
+        135,
+        136,
+        137
+      ]
+    },
+    "stage": {
+      "batches": [
+        {
+          "pages": [
+            135,
+            136
+          ],
+          "context": 137,
+          "at": "2026-09-03T17:59:07",
+          "answer": "C:\\Users\\Alfa388\\AppData\\Local\\Temp\\herophilus-loop\\house-ch18\\stage-p135-136.answer.txt",
+          "events": "C:\\Users\\Alfa388\\AppData\\Local\\Temp\\herophilus-loop\\house-ch18\\stage-p135-136.events.jsonl",
+          "usage": {
+            "input_tokens": 26116,
+            "cached_input_tokens": 13056,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 841,
+            "reasoning_output_tokens": 257
+          },
+          "entries": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "keyLetterConversions": [],
+          "pagesReported": [
+            {
+              "page": 135,
+              "folio_read": "135",
+              "banner": "Accidents & poisoning",
+              "question_numbers": [
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "page": 136,
+              "folio_read": "136",
+              "banner": null,
+              "question_numbers": [
+                4
+              ]
+            }
+          ],
+          "nextPageOpensWith": "Liver disorders",
+          "flags": []
+        }
+      ]
+    },
+    "gate": {
+      "at": "2026-09-03T17:59:11",
+      "ok": true,
+      "hash": "f4650a88f69e",
+      "count": 4,
+      "fails": [],
+      "warns": [],
+      "nullKeys": []
+    },
+    "check": {
+      "at": "2026-09-03T18:02:03",
+      "ack": "Claude Opus 5 2026-09-03",
+      "hash": "f4650a88f69e",
+      "count": 4
+    },
+    "draft": {
+      "A": {
+        "at": "2026-09-03T18:04:02",
+        "file": "content\\peds\\qb-pages\\house-ch18-accidents.draft-A.js",
+        "entries": 4,
+        "valExit": 1,
+        "rewritten": "2026-09-03T21:05:00",
+        "rewrittenBy": "Claude Opus 5",
+        "rewriteNote": "Codex draft failed val-pd (acc-1 199 words, acc-4 196, floor 200) and declared burn fluid resuscitation, the antibiotic policy and the intubation threshold all absent from the course material, when L4 pp.3-5 and pp.9-11 print burns as a cause of hypovolaemic shock and of dehydration. Rewritten by hand against the cached theory; the three genuine gaps (burn first aid, prophylactic antibiotics, inhalational-injury criteria) are tagged in place. Words 850 -> 1434, valExit now 0.",
+        "valExitAfterRewrite": 0
+      }
+    },
+    "close": {
+      "at": "2026-09-03T21:12:00",
+      "halves": ["A"],
+      "wrote": true,
+      "by": "Claude Opus 5 by hand, not via `chapter-loop.js 18 close`. The three commands close() runs were run in its exact order -- val-pd.js 18 A (exit 0), splice-pd.js 18 dry (exit 0), splice-pd.js 18 --write (358 -> 362, 0 holes), boot-check.js (0 console errors, QUESTIONS 5002). Re-running close now would fail its own dry run with 4 x ALREADY LIVE, which is correct behaviour and not a fault; this record is written rather than faked by unsplicing."
+    }
+  }
+}
