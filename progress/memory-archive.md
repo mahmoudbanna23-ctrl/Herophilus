@@ -1011,3 +1011,30 @@ The fix itself is still live in MEMORY.md's Environment section; only the narrat
 inside the same number of wrapped lines moved the file by 0. What actually cut lines was removing
 *content* (to the archive) and merging two bullets into one. If a file is over a line cap, cut
 material or merge structure — do not reword.
+
+## Pruned from MEMORY.md - 2026-09-03 (watch pass, file was AT 200 of 200 lines)
+
+Two blocks moved verbatim to make room for the 2026-09-03 resume state. Nothing was reworded and
+no live rule left `MEMORY.md` — the watch block is operational detail that `progress\WATCH.md`
+already carries in full, and the five-option block is a settled decision.
+
+### The watch — oversight every ~12 h (set up 2026-09-02)
+
+- **A fresh chat runs `progress\WATCH.md` roughly every 12 h and then dies.** It inspects and
+  reports — changed / stale / at risk — and **never builds, splices, edits content or commits.**
+  The *role* is permanent; the *session* never is (workspace §9).
+- ⚠️ **It reads the repo and the journals — never a work chat’s conversation.** Anything not written
+  into `resume-ophtho.md` / `-peds.md` / `-neuro.md` is invisible to it and dies with that session:
+  **this is the main reason to keep the journals current** (`WATCH.md` §3 checks for that failure).
+- **Both chat resume prompts carry a `## Changed since 2026-09-01` block, authoritative over the
+  body above it** — append there, don't edit the body. **Always start a work chat fresh from its
+  prompt**; pasting one into a live chat re-sends that chat's stale context and wastes the prompt.
+
+### The five-option cap (settled 2026-09-02, do not re-open)
+
+- **✅ The five-option cap was FIXED 2026-09-02** (`OPT_LETTERS`, A–Z) and re-confirmed live by the
+  boot check. **DECIDED: letters stay POSITIONAL where the app letter differs from the book's
+  printed key — not a bug, do not re-open.** Detail (the eight neuro questions, the F/J key clash,
+  `python tools\count-options.py`): earlier block, `## Pruned from MEMORY.md - 2026-09-02`.
+- **Validate a dead agent’s file from disk before believing it died** (ch20-drugs, found intact
+  2026-08-31). ⚠️ Debt: 12 `nr-intro`/`nr-exam` tags the book can replace (`npqb-nr-14` first).

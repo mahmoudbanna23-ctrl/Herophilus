@@ -33,10 +33,10 @@ These are re-sent with **every request**, so growth here is a permanent tax. Bas
 The cap never moves; every recorded total does. Four snapshots were written and invalidated
 on 2026-09-02 alone — do not add a fifth. **Flag any file at 195 or more.**
 
-Both `MEMORY.md` files were trimmed on 2026-09-02 (workspace 197 → 190, Herophilus 194 → 179;
-blocks moved verbatim to `workspace-archive.md` and `memory-archive.md`, dated pointers left
-behind). **Do not trim one yourself** — a trim is a documented split, not a delete, and it is
-not watch work. Report it.
+Both `MEMORY.md` files have been trimmed repeatedly (Herophilus most recently 2026-09-03, 200 → 189,
+two blocks verbatim to `memory-archive.md` under `## Pruned from MEMORY.md - 2026-09-03`, dated
+pointers left behind). **Do not trim one yourself** — a trim is a documented split, not a delete,
+and it is not watch work. Report it.
 
 If the totals moved, `progress\READING-COSTS.md` is now stale — say so. Its numbers have drifted
 twice; **re-measure, never quote it.**
@@ -54,8 +54,8 @@ module.
 ## 4. Standing risks — check each is still true, do not act
 
 - **✅ RESOLVED 2026-09-02 — peds ch.4 and ch.5 are SPLICED. This is now a floor check, not a
-  hold.** `questions.peds.js` read **202** on 2026-09-02 and Chat B is still adding: expect it to
-  **grow, never shrink**. A figure at or near the old 81 means the COUNT broke, not the file.
+  hold.** `questions.peds.js` read **243** on 2026-09-03 (ch.1–11) and Chat B is still adding:
+  expect it to **grow, never shrink**. A figure near the old 81 means the COUNT broke, not the file.
   Re-measure the current floor from `MEMORY.md` "Validation state" before judging:
   ```bash
   f="D:/claude os/Medical school/Herophilus/app/data/questions.peds.js"
@@ -72,13 +72,22 @@ module.
   regex. **Both returned a number that looked like data loss on a perfectly intact file.**
   ⚠️ **Before reporting any count as loss, re-count with the command above and compare against
   `git cat-file -s HEAD:<path>` — bytes rising while a count falls means the COUNT is broken.**
-- **Chat B's `val-pd.js`/`splice-pd.js` diff is COMMITTED (`b45af03`, 2026-09-02).** Tree was
-  clean and `main == origin/main` there. Any dirty file from now on belongs to whichever chat is
-  live — report it, never stage it.
-- **`content\peds\qb-pages\endpoint-s01-growth-puberty.draft.js`** — 89 questions, validated
-  CLEAN 2026-09-02 (`32f2a32`), waiting for the endpoint chat's first `splice-pd-ep.js 1 --write`.
-  Once `app\data\questions.peds.ep.js` holds 89, that is the floor for that file. Until the
-  launch, nobody should be touching the draft; if it moved, report it.
+- **Both chats are LIVE, so a dirty tree is now the NORMAL state, not a finding.** At 2026-09-03
+  03:20 the endpoint chat owned `resume-peds-endpoint.md`, `*-pd-ep.js`, `merge-parts-ep.js` and
+  `endpoint-s03-gastro.part-*.js`; Chat B owned `house-ch12-neurological.array.js`. **Report which
+  chat each dirty file belongs to; never stage one.** ⚠️ Report an untracked staging file that has
+  not moved in a day — that is a chat that died mid-chapter.
+- **✅ ENDPOINT LAUNCHED 2026-09-02 — s1 and s2 are SPLICED. Floor check, not a hold.**
+  `app\data\questions.peds.ep.js` read **148** on 2026-09-03 (s1 89 + s2 76 = 165, then two fold
+  passes 165 → 150 → 148). ⚠️ **A FOLD PASS MAKES THIS FILE SHRINK LEGITIMATELY** — unlike
+  `questions.peds.js`, a falling count here is not automatically loss. Check the commit message
+  says "fold" and that bytes moved with it; if a drop has no fold commit behind it, report it.
+  Section 3 (Gastro) stages as `endpoint-s03-gastro.part-A.js` / `part-B.js` — a section outgrew
+  one file, merged by `tools\bank-harness\merge-parts-ep.js`.
+- **⚠️ TWO JOURNALS ARE PAST THE SECOND-ANCHOR THRESHOLD, flagged 2026-09-03, NOT DONE.**
+  `resume-ophtho.md` anchors to ~41k and `resume-peds.md` to ~37k, against the ~30k rule in
+  `READING-COSTS.md`. Ophtho is closed and can be re-anchored safely; peds has a live writer and
+  must wait for a chapter boundary. **Re-anchoring is content work — report, do not do it.**
 - **Cross-bank integrity, one command, read-only:**
   ```bash
   cd "D:/claude os/Medical school/Herophilus" && node tools/bank-harness/validate-all.js

@@ -1,77 +1,109 @@
-# What it costs to open a file in `progress\` — re-measured 2026-09-02
+# What it costs to open a file in `progress\`
 
-⚠️ **RE-MEASURE BEFORE YOU QUOTE ANY NUMBER BELOW.** The three module journals grew by
-**44%, 94% and 143%** in a single day (2026-09-02) because the chats are journalling properly.
-Every figure here has a date on it and none of them is durable. One command:
+⚠️⚠️ **EVERY NUMBER IN THIS FILE IS A SNAPSHOT AND WILL BE WRONG WITHIN HOURS. RE-MEASURE BEFORE
+YOU QUOTE ANYTHING HERE — including at yourself, later in the same session.** These files have
+several live writers. Between 2026-09-01 and 2026-09-03 the recorded figures were corrected
+**seven times**, every one accurate when written. What is durable is the *shape*: which files are
+dangerous, and how to reach into one. **The CAPS and the bands are the check; the digits are not.**
+
+Two commands, and they cost nothing:
 
 ```bash
 cd "D:/claude os/Medical school/Herophilus/progress" && wc -lc *.md briefs/*.md
 ```
 
-Your context window is **200,000 tokens**. Four files in this folder are large enough to take a
-serious bite out of it, and **one is larger than the whole window.** This file exists so you can
-check a price before you pay it.
+```bash
+wc -lc "D:/claude os/CLAUDE.md" "D:/claude os/MEMORY.md" "D:/claude os/Medical school/Herophilus/CLAUDE.md" "D:/claude os/Medical school/Herophilus/MEMORY.md"
+```
+
+Your context window is **200,000 tokens**. Several files in this folder take a serious bite out of
+it and **one is larger than the whole window.** This file exists so you can check a price before
+you pay it.
 
 **Rule: never `Read`, `cat`, or `grep -r` a file in the red band. Reach into it.**
 
-## The prices
+## The prices — measured 2026-09-03 03:25, both work chats mid-run
 
-| File | bytes | lines | ≈ tokens | how to open it |
+| File | chars | lines | ≈ tokens | how to open it |
 |---|---|---|---|---|
 | 🔴 `ledger-closed-1-16.md` | 720,864 | 10,212 | **~180k** | **almost your whole window.** `grep -n` / `sed` only — never whole |
-| 🔴 `briefs\START-HERE.md` | 191,038 | — | **~48k** | `sed` the one section you were sent to |
-| 🔴 `memory-archive.md` | 147,434 | 931 | **~37k** | `grep -n "^## "` then `sed`. ⚠️ its lines are enormous — a single line can be 8k+ chars, so `grep` without `-o` can dump more than the section |
-| 🔴 `resume-ophtho.md` | **152,673** | 2,286 | **~38k** | **anchor** → **~18k**, no longer cheap |
-| 🔴 `resume-peds.md` | **142,660** | 2,142 | **~36k** | **anchor** → **~25k**, no longer cheap |
-| 🔴 `token-economy\plan.md` | 106,287 | — | **~26k** | closed project. Do not open unless asked |
-| 🟠 `ledger.md` | 128,548 | 1,737 | ~32k | index first (top of file), then `sed` the section |
-| 🟠 `resume-neuro.md` | **85,150** | 1,246 | **~21k** | **anchor** → **~15k** |
+| 🔴 `resume-ophtho.md` | **243,316** | 3,681 | **~60k** | ⚠️ **anchored is still ~41k** — see below |
+| 🔴 `briefs\START-HERE.md` | 192,561 | 1,259 | **~48k** | `sed` the one section you were sent to |
+| 🔴 `resume-peds.md` | **188,371** | 2,849 | **~47k** | ⚠️ **anchored is still ~37k** — see below |
+| 🔴 `memory-archive.md` | 152,413 | 1,040 | **~38k** | `grep -n "^## "` then `sed`. ⚠️ its lines are enormous — one line can be 8k+ chars, so `grep` without `-o` can dump more than the section |
+| 🔴 `ledger.md` | 140,353 | 1,919 | **~35k** | index first (top of file), then `sed` the section |
+| 🔴 `token-economy\plan.md` | 106,287 | 1,344 | **~26k** | closed project. Do not open unless asked |
+| 🟠 `resume-neuro.md` | 85,150 | 1,246 | ~21k | **anchor** → ~15k |
+| 🟠 `resume-peds-endpoint.md` | 45,866 | 699 | ~11k | read whole while it is this size — **re-check, it is growing fast** |
 | 🟡 `briefs\ophtho-bank-brief.md` | 25,297 | 378 | ~6k | read whole — it is a brief |
-| 🟢 `resume-2026-08-31-chat*.md` | ~10–15k | — | ~3–4k | read whole — they are the entry point |
+| 🟢 `resume-2026-09-02-*.md` | ~10–15k | — | ~3–4k | read whole — they are the entry point |
 
-Everything else in `progress\` is under 20k bytes and safe to read whole.
+Everything else in `progress\` is under 20k chars and safe to read whole.
 
-## The ledger was split — 2026-09-01
+⚠️ **`ledger.md` crossed into the red band** — it was 🟠 ~32k on 2026-09-02 and is ~35k now. It is
+still the file the end-of-run consolidation writes to, so it will keep growing. Index first, always.
 
-`ledger.md` had reached **830,045 chars ≈ 207k tokens, larger than the 200k window.** It was
-unopenable. It is now two files, cut at §17 where ophthalmology reopens:
-
-- **`ledger-closed-1-16.md`** — §1–§16, 47 sections, closed. 46 are ENT.
-- **`ledger.md`** — §17 onward, live. Still the file the end-of-run consolidation pass writes to.
-
-**Nothing was deleted and no section was renumbered.** The split was verified byte-exact by
-reconstructing the original from the two halves and diffing it against `git show HEAD` — exact
-match, zero characters changed. So a pointer written anywhere as `ledger.md` §11 or §13 still
-resolves; **the 53-row index at the top of `ledger.md` says which file each section is in and on
-what line.** Every one of those 53 rows was checked to land on a real `## ` heading.
-
-## The anchor
+## ⚠️ THE ANCHOR NO LONGER SAVES THE TWO BIG JOURNALS
 
 The three `resume-<module>.md` journals carry a marker line, `<!-- RESUME-READ-FROM-HERE -->`,
-placed at the start of the 2026-08-31 work. Everything below it is live state; everything above
-is closed history.
+placed at the start of the 2026-08-31 work. Everything below it is live state; everything above is
+closed history.
 
 ```bash
 sed -n '/RESUME-READ-FROM-HERE/,$p' progress/resume-ophtho.md
 ```
 
-That is the **only** way these three files should be opened at session start.
+That is the **only** way these three files should be opened at session start. But the marker sits at
+a fixed date, so **everything written since accumulates below it and the anchored tail only grows.**
+Measured 2026-09-03:
 
-⚠️ **THE ANCHOR NO LONGER MAKES THESE FILES CHEAP — it only makes them survivable.** Measured
-2026-09-02, with the chats mid-run:
+| journal | whole | anchored | anchor saves |
+|---|---|---|---|
+| `resume-ophtho.md` | 243,316 ≈ 60k | **163,392 ≈ 41k** | ~19k — **the anchor is barely helping** |
+| `resume-peds.md` | 188,371 ≈ 47k | **146,555 ≈ 37k** | ~10k — **the anchor is barely helping** |
+| `resume-neuro.md` | 85,150 ≈ 21k | 59,637 ≈ 15k | ~6k |
 
-| journal | whole | anchored |
+⚠️ **BOTH BIG JOURNALS ARE PAST THE ~30k THRESHOLD AT WHICH A SECOND ANCHOR IS DUE.** This was
+recorded as the rule on 2026-09-02 and is now overdue on two files:
+
+- **`resume-ophtho.md` — ophtho is CLOSED, so this journal has no live writer.** A second anchor
+  can be placed safely whenever someone is asked to.
+- **`resume-peds.md` — Chat B is a live writer.** Do not re-anchor it mid-run; do it at a clean
+  chapter boundary, or the chat's own appends will land above the new marker.
+
+**A second anchor is a marker line at the current date — NOT a trim.** Nothing is deleted, nothing
+moves. Flagged by the watch 2026-09-03; not done, because re-anchoring is content work and the
+watch does not build.
+
+## The auto-loaded tax — the only numbers with a hard rule behind them
+
+These four are re-sent with **every single request**, not once per session. Workspace rule §9 caps
+each at **200 lines**. Measured 2026-09-03 03:25:
+
+| file | lines | chars |
 |---|---|---|
-| `resume-ophtho.md` | 152,673 ≈ 38k | **72,749 ≈ 18k** |
-| `resume-peds.md` | 142,660 ≈ 36k | **100,844 ≈ 25k** |
-| `resume-neuro.md` | 85,150 ≈ 21k | **59,637 ≈ 15k** |
+| workspace `CLAUDE.md` | 191 | 11,357 |
+| workspace `MEMORY.md` | 181 | 13,862 |
+| Herophilus `CLAUDE.md` | 190 | 13,166 |
+| Herophilus `MEMORY.md` | 189 | 18,808 |
+| **per request** | **751** | **57,193 ≈ 14.3k tokens** |
 
-The saving is still ~147k chars ≈ 37k tokens, but **what is left after the anchor has grown 3–6×**:
-Chat A's anchored ophtho read is now **~18k**, and Chat B opens two journals for **~40k combined**
-— against the ~6k / ~8k / ~2.5k the chat briefs still quote. Those brief figures are **stale; this
-table wins.** The anchor is a marker at the start of the 2026-08-31 work, so everything written
-since accumulates below it and the anchored tail only ever grows. **When the tail passes ~30k, the
-journal needs a second anchor at the current date — not a trim.**
+⚠️ **Compare against the 200-line CAP, never against this table.** Flag any file at **195 or more**.
+Three of the four are within ten lines of the cap right now, and a file you personally trimmed can
+be back at the cap before you finish the session.
+
+**History of the trims** — each was a documented split, verbatim, with a dated pointer left behind,
+and **no live rule ever left a file**:
+
+- Herophilus `MEMORY.md` → `memory-archive.md`, under `## Pruned from MEMORY.md - <date>`
+  (2026-09-01, 2026-09-02 ×2, 2026-09-03).
+- Workspace `MEMORY.md` → `D:\claude os\workspace-archive.md`, `## Trimmed from root MEMORY.md - …`
+  (2026-09-02 ×2).
+- Herophilus `CLAUDE.md` → `reference.md`, `## Moved from CLAUDE.md - 2026-09-02` (duplicated
+  reference and bug history only).
+- `ledger.md` → split at §17 into `ledger-closed-1-16.md` + `ledger.md` on 2026-09-01, verified
+  **byte-exact** by reconstructing the original and diffing against `git show HEAD`. Nothing
+  renumbered; the 53-row index atop `ledger.md` says which file each section is in.
 
 ## Reaching into a red-band file
 
@@ -82,73 +114,14 @@ grep -n "^#\{1,3\} " progress/ledger.md
 sed -n '10192,11854p' progress/ledger.md
 ```
 
-The first prints the headings with line numbers (cheap: 53 top-level, 650 total). The second
-prints exactly the block you chose. If you only need to know *whether* something is recorded,
-`grep -n` for the term and read the hit lines — do not open the section.
+The first prints headings with line numbers (cheap). The second prints exactly the block you chose.
+If you only need to know *whether* something is recorded, `grep -n` for the term and read the hit
+lines — do not open the section.
 
 ## Why this file exists
 
 Measured 2026-09-01: the "read first" list at the top of the Chat A brief came to **161,234 chars
-≈ 40k tokens** — a fifth of the window spent before the first question was drafted. Chat B's came
-to 138,929 ≈ 35k. Neither chat was doing anything wrong; the files had simply grown, and nothing
-told anyone what they now cost.
-
-The auto-loaded files are a separate, unavoidable tax and are **re-sent with every single
-request**, not once per session: workspace `CLAUDE.md` + `MEMORY.md` and this project's
-`CLAUDE.md` + `MEMORY.md`. That is the reason both files are capped at 200 lines by workspace
-rule §9. Keep them pruned.
-
-**`MEMORY.md` was split 2026-09-01** for the same reason: 200 lines / 19,173 chars → **172 lines
-/ 15,744 chars**, with 48 lines of closed-topic reference moved verbatim into
-`memory-archive.md` under `## Pruned from MEMORY.md - 2026-09-01`. Nothing was deleted or
-reworded, and every moved block left a dated pointer bullet where it stood. The per-request
-total went **57,845 → 54,416 chars, ≈14.5k → ≈13.6k tokens.** Only closed topics moved — theory
-is 153/153 complete and ENT is closed — so no live warning left this file.
-
-**The workspace `MEMORY.md` (`D:\claude os\MEMORY.md`) was split the same way on 2026-09-02.** It
-had grown to 226 lines — over its own cap — so 57 lines went verbatim into
-`D:\claude os\workspace-archive.md` under `## Trimmed from root MEMORY.md - 2026-09-02`: a stale
-Herophilus corpus count, a PDF-tier block that only duplicated workspace `CLAUDE.md` §5, Physics
-source detail already held in that project, the full Promos entry (replaced by a 15-line condensed
-one), and the 2026-08-13/17 decisions-log tail. **226 → 190 lines, 16,982 → 14,016 chars.**
-
-Both files are now under the cap, and the whole auto-loaded tax stands at:
-
-| file | lines | chars |
-|---|---|---|
-| workspace `CLAUDE.md` | 166 | 9,145 |
-| workspace `MEMORY.md` | 200 | 15,436 |
-| Herophilus `CLAUDE.md` | 190 | 13,166 |
-| Herophilus `MEMORY.md` | 191 | 17,570 |
-| **per request** | | **55,317 ≈ 13.8k tokens** |
-
-⚠️ **Re-measured live 2026-09-02 — three of the four rows had drifted.** The trim figures were
-recorded the moment each trim finished, then later edits in the same day put the chars back:
-workspace `MEMORY.md` 14,231 → 15,044 and **197 of its 200 lines**, Herophilus `MEMORY.md`
-15,744 → 16,652, Herophilus `CLAUDE.md` 13,006 → 13,166. It drifted **again** the same day —
-the watch section took Herophilus `MEMORY.md` to **194 lines / 17,843** within the hour.
-Then it drifted a THIRD time: workspace `MEMORY.md` was trimmed 197 → **190 lines / 14,367**
-the same night, two superseded decision blocks moved verbatim to `workspace-archive.md`.
-Then a FOURTH time: Herophilus `MEMORY.md` was trimmed 194 → **179 lines / 16,439** the same
-night, six blocks moved verbatim to `memory-archive.md`.
-Then a FIFTH time, within the hour: Herophilus `MEMORY.md` 179 → **185** (the mixed-key
-counting trap), and workspace `MEMORY.md` 190 → **200 — back AT its cap**, ten lines added by
-another live chat in the same night the trim landed.
-Then a SIXTH time, 2026-09-02: Herophilus `MEMORY.md` 185 → **191 lines / 17,570** — the
-five-option cap bullet was rewritten when the cap was actually fixed in `app/index.html`.
-⚠️ **SIX corrections in one day. Re-measure with the command above; never quote this table
-at anyone — including at yourself in the next hour.** Every figure was accurate when written
-and wrong within hours, and a file you personally trimmed can be back at the cap before you
-finish the session: **these files have several live writers.** The CAPS, not these numbers,
-are what a check compares against. **Do not trust a number in this table
-without re-measuring it** — `wc -lc` on the four files takes one command:
-
-```bash
-wc -lc "D:/claude os/CLAUDE.md" "D:/claude os/MEMORY.md" "D:/claude os/Medical school/Herophilus/CLAUDE.md" "D:/claude os/Medical school/Herophilus/MEMORY.md"
-```
-
-Down from 57,845 ≈ 14.5k before the splits, though less far down than the trims first showed. **Both `CLAUDE.md` files and both `MEMORY.md` files
-were trimmed on 2026-09-02**; the Herophilus one lost its duplicated source-tier table, its prose
-layout inventory and its bug-history list to `reference.md` (`## Moved from CLAUDE.md - 2026-09-02`)
-— duplicated reference and history only, **no live rule left it.** The largest remaining is
-`briefs\START-HERE.md` at ~48k tokens, which is read on demand, not auto-loaded.
+≈ 40k tokens** — a fifth of the window spent before the first question was drafted. Chat B's came to
+138,929 ≈ 35k. Neither chat was doing anything wrong; the files had simply grown, and nothing told
+anyone what they now cost. **The chat briefs still quote ~6k / ~8k / ~2.5k for the journals. Those
+figures are dead — this file wins, and re-measurement wins over this file.**
