@@ -1,0 +1,183 @@
+{
+  "chapter": 16,
+  "slug": "growth",
+  "file": "house-ch16-growth.array.js",
+  "created": "2026-09-03T16:15:13",
+  "steps": {
+    "locate": {
+      "at": "2026-09-03T16:15:13",
+      "pages": {
+        "121": "R-061",
+        "122": "L-062",
+        "123": "R-062",
+        "124": "L-063",
+        "125": "R-063",
+        "126": "L-064"
+      }
+    },
+    "render": {
+      "at": "2026-09-03T16:15:49",
+      "dir": "C:\\Users\\Alfa388\\AppData\\Local\\Temp\\herophilus-loop\\house-ch16",
+      "pages": [
+        121,
+        122,
+        123,
+        124,
+        125,
+        126
+      ]
+    },
+    "stage": {
+      "batches": [
+        {
+          "pages": [
+            121,
+            124
+          ],
+          "context": 125,
+          "at": "2026-09-03T16:17:04",
+          "answer": "C:\\Users\\Alfa388\\AppData\\Local\\Temp\\herophilus-loop\\house-ch16\\stage-p121-124.answer.txt",
+          "events": "C:\\Users\\Alfa388\\AppData\\Local\\Temp\\herophilus-loop\\house-ch16\\stage-p121-124.events.jsonl",
+          "usage": {
+            "input_tokens": 32159,
+            "cached_input_tokens": 13056,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 2314,
+            "reasoning_output_tokens": 516
+          },
+          "entries": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "keyLetterConversions": [],
+          "pagesReported": [
+            {
+              "page": 121,
+              "folio_read": "121",
+              "banner": "Growth & puberty",
+              "question_numbers": [
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "page": 122,
+              "folio_read": "122",
+              "banner": null,
+              "question_numbers": [
+                4,
+                5,
+                6
+              ]
+            },
+            {
+              "page": 123,
+              "folio_read": "123",
+              "banner": null,
+              "question_numbers": [
+                7,
+                8,
+                9
+              ]
+            },
+            {
+              "page": 124,
+              "folio_read": "124",
+              "banner": null,
+              "question_numbers": [
+                10,
+                11,
+                12
+              ]
+            }
+          ],
+          "nextPageOpensWith": "Pediatric medicine end-of-round MCQs - 2025.",
+          "flags": []
+        },
+        {
+          "pages": [
+            125,
+            125
+          ],
+          "context": 126,
+          "at": "2026-09-03T16:17:32",
+          "answer": "C:\\Users\\Alfa388\\AppData\\Local\\Temp\\herophilus-loop\\house-ch16\\stage-p125-125.answer.txt",
+          "events": "C:\\Users\\Alfa388\\AppData\\Local\\Temp\\herophilus-loop\\house-ch16\\stage-p125-125.events.jsonl",
+          "usage": {
+            "input_tokens": 22900,
+            "cached_input_tokens": 11008,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 844,
+            "reasoning_output_tokens": 489
+          },
+          "entries": [
+            13,
+            14
+          ],
+          "keyLetterConversions": [],
+          "pagesReported": [
+            {
+              "page": 125,
+              "folio_read": "125",
+              "banner": "Pediatric medicine end-of-round MCQs - 2025.",
+              "question_numbers": [
+                13,
+                14
+              ]
+            }
+          ],
+          "nextPageOpensWith": "Pediatric medicine end-of-round MCQs - 2025.",
+          "flags": []
+        }
+      ]
+    },
+    "gate": {
+      "at": "2026-09-03T16:20:45",
+      "ok": true,
+      "hash": "6a679537b6f4",
+      "count": 14,
+      "fails": [],
+      "warns": [],
+      "nullKeys": []
+    },
+    "check": {
+      "at": "2026-09-03T16:20:53",
+      "ack": "Claude Opus 5 2026-09-03",
+      "hash": "6a679537b6f4",
+      "count": 14
+    },
+    "draft": {
+      "A": {
+        "at": "2026-09-03T16:23:55",
+        "file": "content\\peds\\qb-pages\\house-ch16-growth.draft-A.js",
+        "entries": 8,
+        "valExit": 0
+      },
+      "B": {
+        "at": "2026-09-03T16:26:43",
+        "file": "content\\peds\\qb-pages\\house-ch16-growth.draft-B.js",
+        "entries": 6,
+        "valExit": 1
+      }
+    },
+    "close": {
+      "at": "2026-09-03T16:40:42",
+      "halves": [
+        "A",
+        "B"
+      ],
+      "wrote": true
+    }
+  }
+}

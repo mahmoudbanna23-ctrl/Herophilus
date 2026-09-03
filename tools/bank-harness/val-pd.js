@@ -24,6 +24,8 @@ const CH = {
         draft: 'house-ch14-endocrine.draft-' },
   15: { prefix: 'pedhd-alg-',    file: 'house-ch15-allergy.array.js',          svar: 'PEDHD_ALLERGY_STAGED',
         draft: 'house-ch15-allergy.draft-' },
+  16: { prefix: 'pedhd-gp-',     file: 'house-ch16-growth.array.js',           svar: 'PEDHD_GROWTH_STAGED',
+        draft: 'house-ch16-growth.draft-' },
 };
 
 // imgAlt must give MODALITY AND VIEW ONLY. Naming the finding answers the question --

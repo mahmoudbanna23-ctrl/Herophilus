@@ -66,6 +66,18 @@ const CH = {
         // the material does not put it in.
         chapterIds: ['allergy', 'infection-immunity'],
         lectures: ['25)Immunodeficiency_.txt', '26)allergy_.txt', '27)Anaphylaxsis.txt'] },
+  16: { slug: 'growth', title: 'Growth & puberty', pages: [121, 125], expected: 14,
+        file: 'house-ch16-growth.array.js', svar: 'PEDHD_GROWTH_STAGED',
+        draft: 'house-ch16-growth.draft-', dvar: 'PEDHD_GROWTH_DRAFT_', prefix: 'pedhd-gp-',
+        // Growth and puberty are two theory chapters sharing one section run (gp-1..gp-11 growth,
+        // gp-12..gp-20 puberty), so both are offered. normal-dev and dev-problems are NOT: the map
+        // gives this chapter to growth, and a drafter offered a development chapter would file a
+        // milestone question away from the growth material the book is teaching here.
+        chapterIds: ['growth-puberty', 'puberty'],
+        // n6, n7 and n8 print one identical five-option menu, so they are drafted together: split 8,
+        // not the even 7, which would have put the anchor in A and n8 in B.
+        split: 8,
+        lectures: ['13) Short stature.txt', '14) Puberty.txt', '15.1) Faltering ﻿Growth.txt'] },
 };
 
 // ---------------------------------------------------------------- args / state
@@ -426,7 +438,14 @@ function draft() {
     if (!new RegExp(`^\\s*${chapter}:\\s*\\{`, 'm').test(src)) die(`${f} has no CH entry for ${chapter} — add: ${chapter}: { prefix:'${C.prefix}', ${f.includes('splice') ? 'staging' : 'file'}:'${C.file}', svar:'${C.svar}', draft:'${C.draft}'${f.includes('splice') ? `, dvar:'${C.dvar}'` : ''} }`);
   }
   const { arr } = loadArray();
-  const mid = Math.ceil(arr.length / 2);
+  // The halves default to an even cut, but an even cut is not always a LEGAL one: a run of questions
+  // sharing one option menu must be drafted together, because the comparative table is written once in
+  // the lowest-numbered member and the siblings point at it -- a sibling in the other half would be
+  // drafted by an agent that cannot see its anchor. ch.16 is the first chapter where the even cut (7)
+  // fell inside such a run (n6,n7,n8 share five identical options), so the CH entry may now name the
+  // boundary. `split` is the COUNT in half A. Added 2026-09-03.
+  const mid = C.split || Math.ceil(arr.length / 2);
+  if (mid < 1 || mid >= arr.length) die(`split ${mid} is not inside a ${arr.length}-entry chapter`);
   const part = half === 'A' ? arr.slice(0, mid) : arr.slice(mid);
   const lectures = C.lectures.filter(f => fs.existsSync(path.join(LECT, f)));
   const missing = C.lectures.filter(f => !lectures.includes(f));
