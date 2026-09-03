@@ -1334,3 +1334,35 @@ was unboxed. The staging has no `box` field at all — the printed box lives in 
 answer is **n36, n48, n49, n50, n61** in half B and **n1** alone in half A, which is what the
 journal already said. **A zero — or a thirty — from a probe you just wrote is a claim about the
 probe first.**
+
+### ⚠️ TWO MISSED FOLDS FOUND IN CLOSED §2 — a debt, found by the new option-set arm
+
+Because arm `(d)` is new, **every section swept before 2026-09-03 was swept by an instrument that
+could not see an abbreviated or reworded reprint.** So the live file was re-swept against itself on
+that shape alone: option sets ≥ 0.75, stems < 0.55, over all 216 live entries. **28 pairs.** Almost
+all are the expected EMQ furniture — one option menu printed against five different vignettes,
+which **pairs** questions and never folds them (`pedep-gp-26/27/28`, `pedep-nut-7..10`,
+`pedep-gi-8..10`, `pedep-gi-13..16`). Two are not.
+
+| pair | pages | stems | options | verdict |
+|---|---|---|---|---|
+| `pedep-nut-16` / `pedep-nut-64` | 268 / 366 | **0.286** | 1.000 | ⚠️ **FOLD** — *"Edema in kwashiorkor is mainly due to:"* ≡ *"What is the main cause of edema in kwashiorkor?"*; five options identical bar casing and *stool/stools*; same key 3 |
+| `pedep-nut-59` / `pedep-nut-74` | 356 / 387 | **0.308** | 0.800 | ⚠️ **FOLD** — *"main benefit of human milk oligosaccharides?"* ≡ *"How does human milk oligosaccharides work?"*; one option respelled *work* → *function as prebiotics*; same key 1 |
+| `pedep-nut-33` / `pedep-nut-35` | 302 / 306 | 0.308 | 0.750 | **NOT a fold** — **two of four options differ** (weight-for-age vs head circumference). Different menus, therefore different questions, both keyed weight-for-height. Keep both. |
+
+**Neither fold is taken here.** §5 is the work in hand, folds run as their own pass, and these two
+join it. Taking both would move the live file **216 → 214**, so ⚠️ **any count quoted before that
+pass is pre-fold and must say so.**
+
+**This is the second time in one day that a sweep's blind spot, not its threshold, was the
+problem.** The lesson is the same both times: **ask what shape the instrument cannot see, not just
+how confident it is about what it can.** Both misses were reworded short stems with intact option
+sets — invisible to every stem probe at every threshold, and trivially visible to the option sets.
+
+⚠️ **And one raised-then-withdrawn defect, recorded so it is not re-raised:** the sweep's output
+appeared to show malformed citations (`p.187))`, doubled parens) on 19 entries. **There is no
+defect.** All 24 non-plain `source` values are legitimate fold annotations of the shape
+`Pediatrics endpoint part1.pdf p.N (the same question is printed again on p.N)`, and the doubled
+paren was **my own display code** greedily stripping to the *last* `p.` — the one inside the
+parenthetical. **The file is clean.** I checked the format against a strict regex before believing
+my own printout, and it is the printout that was wrong.
