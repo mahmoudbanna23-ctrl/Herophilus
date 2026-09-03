@@ -197,3 +197,84 @@ entry, first run, no tuning.** That is part 2's calibration-of-record for the re
 it is what makes the section 2 sweep believable. Part 1's 89/89 does not transfer -- part 2's pages
 restart at 1. Re-run after any edit to `head()`, `near()` or `norm.js`; anything under 28 is drift
 to explain, not a result.
+
+## §2 Developmental problems staged — and a better instrument than the OCR sweep
+
+**29 entries, n 1..29, pp.97-153, merged from two halves (15 + 14), 0 sparse holes.**
+
+`expect` was **lowered from 30 to 29 in `merge-parts-ep2.js`, because a page was looked at.**
+p.87 classifies as `answered` and has no unanswered twin; read on the image twice — once building
+this map, once as the staging pass's first act — and both times it is a notes slide, **"Types of
+CP"**, whose lettered sub-bullets (`B. Dyskinetic CP`, `C. Ataxic CP`, `D. Mixed CP`) carry yellow
+and read as options. No stem, no prompt. The `answered` over-count, caught on a real page.
+
+| Measurement | Result |
+|---|---|
+| `pr == n` | all 29 |
+| explanation boxes | **29 printed, 0 unboxed** |
+| boxes overflowing onto their own page | none — alternation held pp.96-154 |
+| figures | **zero**, every answered page read whole |
+| options | 21 five-option, 8 four-option (ladder genuinely stops at `d`) |
+| shared option ladders | **4 groups**, derived from the merged array by `menus-pd-ep2.js` |
+| index flags | 10 `options-differ` + 1 `passes-differ`, **all false positives** |
+| `keypos.py --calibrate` | **29 agree, 0 disagree, 0 abstain** |
+
+Boundary read off the pages: **p.154 is a closing devotional slide, p.155 the red "Genetics"
+banner** — the same shape as §1's boundary.
+
+### ⚠⚠ THE REPRINT SWEEP UNDER-REPORTS WHEN THE TWO BOOKS REWORD. Measured here.
+
+`reprint-pd-ep2.js 76 154` found **6** House matches. Comparing the **staged verbatim stems**
+against House instead finds **19** — `pedhd-devp-1` through `pedhd-devp-19`, one for one, in page
+order, the **entire** House `devp` chapter inside this section's first 19 questions.
+
+The thirteen the sweep missed are not near-misses of noise. They are the endpoint printing a
+**condensed rewrite of the same vignette** — same patient names, same numbers:
+
+> Fortuna (8-month-old, left-hand preference) · Jenny (8-week-old, 35 weeks' gestation) ·
+> Dorcus (9-month-old, head-and-arms flexion spasms) · Darren (3-year-old, stairs) ·
+> Batar (1-week-old, cataracts, head circumference 32 cm) · Moses (5-year-old) ·
+> Ronaldo (6-year-old, wide-based gait)
+
+House writes *"who was born at term"*, the endpoint *"born at term"*; House *"because of unusual
+movements"*, the endpoint *"due to unusual movements"*. Every such edit costs edit-distance, and
+the sweep's 8% tolerance is calibrated for **OCR damage**, not for an editor.
+
+**So a miss in `reprint-pd-ep2.js` is not evidence of absence.** Its hits are worth having — they
+cost one step — but the overlap is only measurable once a section is staged, off the staged text.
+Recorded in the tool's own header.
+
+### §1's collision count was 18. It is 19. Corrected here.
+
+Re-measured the same way: `pedhd-dev-1..17, 19, 20` all match, **seventeen of them at edit-distance
+zero**. The sweep's miss was `pedhd-dev-2` — the endpoint prints *"a well-born 8-week-old baby"*
+for House's *"a well 8-week-old baby"*, transcribed as printed.
+
+Two genuine non-reprints, checked by reading rather than by threshold: **`pedhd-dev-18`** is a
+22-month-old girl's vignette against the endpoint's bare *"At what age should a child be able to
+join two words together in speech?"*, and **`pedhd-dev-21`** has no endpoint counterpart at all.
+
+**Nothing is folded.** House is another chat's live file; all 28 and all 29 stay staged in full.
+
+### ⚠ A WITHIN-PART-2 DUPLICATE: n:4 and n:21 are the same question, patient renamed
+
+`menus-pd-ep2.js` flagged them for sharing a menu **and** a key, which is the flag's whole purpose.
+Read side by side, there is no discriminating clinical token to name:
+
+| | n:4, p.103 | n:21, p.137 |
+|---|---|---|
+| patient | **Fortuna**, 8 months, Black African, born at term | **Fatima**, 8 months, born at term |
+| findings | rolls, no crawl, *"dada"* to everyone, grasps with left hand only, no bye-bye | identical, worded *"left hand but not with her right"* |
+| options | the same four, same order | the same four, same order |
+| key | 3, *"Left-hand preference"* | 3, *"Left-hand preference"* |
+
+This is the **reworded-stem** fold shape, **within one bank and one file** — so unlike every House
+collision above, this one is mine to fold. Following part 1's model, it is **staged and spliced
+first, then folded as a separate recorded pass** (part 1's §3 ran 148 -> 215 -> 213 the same way).
+n:21's printing is marginally fuller and its explanation names cerebral palsy outright; that is the
+one to keep, with p.103 folded into `source`. **§2 will therefore go live at 29 and settle at 28.**
+
+The other three groups are true pairings, not folds — n:2/n:3 (autism vs spastic bilateral CP on one
+age ladder), n:9/n:11 (congenital infection screen vs creatine kinase on one investigation ladder),
+and n:12-n:16, five questions on the single five-way CP-type ladder discriminated by kernicterus,
+ex-26-weeker toe-walking, early hand preference, wide-based gait and failure to attain any milestone.

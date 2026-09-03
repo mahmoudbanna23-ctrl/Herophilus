@@ -15,6 +15,20 @@
 //
 // OCR is a search index only. A hit here is a candidate to look at on the page image; a miss
 // is not proof of absence, because the OCR drops whole lines. Both reads of each page are used.
+//
+// ⚠⚠ AND A MISS IS NOT EVIDENCE OF ABSENCE FOR A SECOND, LARGER REASON -- MEASURED 2026-09-04.
+// On section 2 this found 6 House matches. Comparing the STAGED VERBATIM STEMS against House
+// instead found 19: the whole of House's `pedhd-devp` chapter, one for one, in page order. The
+// thirteen misses were not noise -- they are the endpoint printing a CONDENSED REWRITE of the same
+// vignette, same patient names, same numbers. House "who was born at term" against the endpoint
+// "born at term"; House "because of unusual movements" against "due to unusual movements". The 8%
+// tolerance in near() is calibrated for OCR DAMAGE, and an editor is not OCR damage.
+//
+// Raising the tolerance is not the fix: at 30% this starts matching questions that merely share a
+// vignette shape, and a false pair costs a person a render. The fix is to run this BEFORE drafting
+// for what it is good at -- one cheap step, exact reprints found -- and then measure the real
+// overlap AFTER staging, off the staged text, where both sides are verbatim. Section 1's count was
+// corrected from 18 to 19 the same way. Both numbers live in the section map, not here.
 const fs = require('fs'), vm = require('vm'), path = require('path');
 const R = 'D:/claude os/Medical school/Herophilus/';
 const OCR = R + 'content/peds/qb-pages/ocr/ep2/';

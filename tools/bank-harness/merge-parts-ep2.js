@@ -33,8 +33,14 @@ const BLANK = NL + NL;
 const SEC = {
   1: { base: 'endpoint-p2-s01-normal-dev', svar: 'PEDEP2_S01_STAGED', title: 'SECTION 1: "Normal Development"',
        pages: '5-75', expect: 28 },
+  // ⚠️ 29, NOT the index's 30. p.87 classifies as `answered` and has no unanswered twin; it was
+  // read on the image twice -- once building the section map, once as the staging pass's first act
+  // -- and both times it is a NOTES SLIDE, "Types of CP", whose lettered sub-bullets (B. Dyskinetic
+  // CP, C. Ataxic CP, D. Mixed CP) carry yellow and read as options. No stem, no prompt. This is
+  // the "`answered` over-counts" shape the header describes, caught on a real page: the number was
+  // lowered because a page was looked at, never to make a merge pass.
   2: { base: 'endpoint-p2-s02-dev-problems', svar: 'PEDEP2_S02_STAGED', title: 'SECTION 2: "Developmental problems"',
-       pages: '76-154', expect: 30 },
+       pages: '76-154', expect: 29 },
   3: { base: 'endpoint-p2-s03-genetics', svar: 'PEDEP2_S03_STAGED', title: 'SECTION 3: "Genetics"',
        pages: '155-244', expect: 42 },
   4: { base: 'endpoint-p2-s04-haematology', svar: 'PEDEP2_S04_STAGED', title: 'SECTION 4: "Hematological Disorders"',
