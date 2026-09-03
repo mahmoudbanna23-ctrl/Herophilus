@@ -236,3 +236,48 @@ across ALL live chats** (measured 2026-09-03) — cap at 4 and back off on any `
 gap, cap 60 s, retry the same pages).
 
 **TRUST THE DISK, THE INDEX, AND THE STAGING OVER THIS PROMPT — AND TELL ME WHERE I WAS WRONG.**
+
+
+---
+
+## Changed since this prompt was written — APPEND HERE, never edit the body above
+
+### 2026-09-04, session 1 (the hard gate is RELEASED)
+
+- ✅ **§2 DONE.** OCR index built: `content/peds/qb-pages/ocr/ep2/` — 1,993 `pNNNN.txt` +
+  `index.json`, by `tools/ep-index/run-all.ps1` with **no script edited**. Calibration re-verified,
+  `YELLOW_MIN = 750` unchanged (unanswered p.18 = 512, answered p.19 = 3,200).
+- ✅ **Section map agreed by the user ("go").** 18 sections on the contents page; **17 get
+  harness entries.** §18 Exam Night Review (pp.1950-1992) is deliberately absent from all three
+  SEC tables so asking for it fails loudly. Full map, the per-section counts and the reasoning:
+  **`content/peds/qb-pages/endpoint-p2-section-map.md`** — read that, not this summary.
+- ⚠️ **`answered` OVER-COUNTS.** 878 answered pages, but 15 are lettered summary slides and
+  pp.322+323 are one straddling question. **Corrected estimate ~860** — an estimate off an OCR
+  index, re-measured section by section, never quoted as a count. Part 1 was ~855.
+- ⚠️ **800 x 450 is the resolution CEILING of this book.** Every page embeds one 800x450 JPEG
+  drawn onto an A4 sheet. `hires/` (1241x1754) and any `pdftoppm -r 300` are **upscales of that same
+  image** — easier to read, but they confirm nothing the native did not contain. Never say a
+  higher dpi "confirmed" a numeral.
+- ✅ **Harness forked and cross-checked**: `val-pd-ep2.js`, `splice-pd-ep2.js`,
+  `merge-parts-ep2.js` — all three SEC tables agree on prefix, staging file, staging var and draft
+  base across all 17, all 17 prefixes distinct, 18 absent from every one. `check-part-ep.js` needed
+  no fork (it takes a path). Briefs: `pd-ep2-staging-brief.md`, `pd-ep2-draft-brief.md`.
+- ⚠️ **`node --check` ON A STAGING HALF ALWAYS FAILS** — a half is bare object literals with
+  no array wrapper, so it parses as a labelled block. Use `check-part-ep.js`. This was wrong in my
+  own staging brief before it was used; corrected.
+- ⚠⚠ **§1 IS 64% A HOUSE CHAPTER.** `reprint-pd-ep2.js 5 75`: **18 of 28 answered pages match
+  House `pedhd-dev-1..20`, in order, no gaps in the House run.** Page-by-page table in the section
+  map. **Nothing folded, nothing skipped, all 28 staged** — House is another chat's live file.
+  This is the chapter-shaped overlap MEMORY.md warns about, in its strongest form yet.
+- ✅ Shared files carry **exactly one added line each** (verified by diff): `app/index.html` after
+  2534, `app/data/questions.js` after line 7. Boot from `file://` after them: **0 console errors**,
+  `QUESTIONS 5033 · THEORY 153 · MODULES 4 · 153 chapter rows · ent 30 / ophtho 36 / neuropsych 36
+  / pediatrics 51`. (QUESTIONS drifts by the commit — other chats are splicing.)
+- **Commits on `main`, BOTH UNPUSHED** (this chat never pushes): `c8003ab` scaffold + OCR index +
+  section map; `5d85314` SEC tables, merge fork, staging brief, collision log.
+- ⏳ **IN FLIGHT: §1 staging**, two `lean-drafter` agents on
+  `endpoint-p2-s01-normal-dev.part-A.js` (answered pp.19-46, n:1-14) and `.part-B.js`
+  (pp.48-74, n:15-28, plus the boundary proof off pp.75/76).
+- **Next after §1 merges:** re-run `keypos.py --calibrate` on §1 and replace the
+  calibration-of-record; set `SELF_TEST_RANGE = [5, 75]` in `reprint-pd-ep2.js` and record its
+  self-test score **before trusting any later reprint sweep**. Then §2 onward, in order.
