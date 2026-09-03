@@ -57,7 +57,7 @@ rate, not the system's. **~311 questions is two solid blocks.**
 |---|---|
 | **Claude — endpoint chat** | staging (vision), one `lean-drafter` at a time, verify from disk, `keypos.py --calibrate`, splice, fold, commit, journal. s7 → s8 → s9. |
 | **Claude — Chat B** | the same for House ch.13–20, then neuro topics 22–23. |
-| **Codex** | nothing until it wins §6. Not installed, not on PATH. |
+| **Codex** | nothing until it wins §6. **Installed 2026-09-03** — `codex-cli 0.153.0`, real disk, user-run `.bat`. Sign-in is the user's. |
 | **agy · OpenCode · Grok · Mistral** | nothing on question content. Their only honest lane is repo chores touching no clinical text, and that lane is near-empty — the harness is written. |
 
 **Do not spread work across four free CLIs to prove the fleet exists.**
@@ -87,11 +87,27 @@ distractor sweep present.
 
 ## 6. The Codex benchmark — only if a block ends early
 
-**Task:** endpoint section 7 half C, `n` 37–53 (17 entries) — or the next equivalent third if
-s7 has closed. Real work, already gated, with a known-good comparator (half A: 18 entries,
-passed, 4,710 words).
+**Task — REVISED 2026-09-03, the original went stale within hours.** The first draft of this
+section named endpoint s7 half C. By 14:19 that day half C was on disk (`.draft-C.js`, 51,885 B)
+and half A was being revised at 14:33 — the work chat had already done it. **Do not benchmark on
+a task the fleet is about to finish; you measure a race nobody ran.**
 
-**Acceptance test:** `node tools/bank-harness/val-pd-ep.js 7 C` → exit 0.
+The task is **endpoint section 8, Allergy — pp.904–928, 9 questions.** Verified against disk
+2026-09-03: no `endpoint-s08-*` file of any kind exists. It is the next unstarted unit, it is
+small enough to fail cheaply, and it is real work that ships if it passes.
+
+**Codex owns a STREAM, not a file inside someone else's stream.** It writes only into
+`content\peds\qb-pages\`. **Never `app\data\`.** So there is zero contention with either work
+chat, and **the splice stays Claude's** — which keeps §4's "never delegated" list intact.
+
+**Acceptance test:** `node tools/bank-harness/val-pd-ep.js 8 A` → exit 0, then
+`keypos.py --calibrate` on the section array, then the §5 tier-3 hand-read of the sample.
+Passing the validator is necessary and **not sufficient** — §5 says why.
+
+**Measure it without watching it.** `codex exec --json` emits every event as JSONL and
+`-o <file>` writes the final message; both were confirmed present in `codex --help` on
+2026-09-03. Run it into a log, read the log **after it stops**, count steps from the log. This is
+what makes the zero-supervision rule below cheap to obey rather than a discipline problem.
 
 **⚠️ ZERO SUPERVISION — the user's amendment, and the point of the exercise.** Hand over the
 exact self-contained brief (`pd-ep-draft-brief.md` + the staging array + the task prompt), then
@@ -109,12 +125,28 @@ correction rate.** First job if it wins: the **model-exam reprint sweep** (pp.11
 pages) — mechanical text comparison, no clinical claim, the largest block of non-medical labour
 left.
 
+**⚠️ A WIN IS ONE MORE LANE, NOT A FAN-OUT.** If Codex passes s8, it gets **s9 next, alone** —
+then the reprint sweep. It does **not** authorise handing streams to agy, OpenCode, Grok or
+Mistral: their copyright exposure is unresolved (see the precondition below), and §2's arithmetic
+is unchanged — every extra lane is supervised from the main chat, which is the 70%. Widening is
+**sequential and evidence-led**: one lane proves itself on one stream before a second is opened.
+This paragraph exists because "Codex won" is the sentence a later session will misread.
+
 **Preconditions before a single stem is sent to any outside agent:**
 - ⚠️ **Copyright / training data.** The drafting input is byte-identical copyrighted bank text.
   The workspace already bans Gemini free for project content because it trains on inputs; Grok
   free and Mistral free carry the same exposure, and the publisher-copyright gate is parked as a
-  blocker for publishing. **Codex's training and retention terms are UNVERIFIED — verify before
-  paying, not after.**
+  blocker for publishing. **The user paid for Codex on 2026-09-03, before this was verified** —
+  so the gate moved from "verify before paying" to **"verify before the first stem is sent."**
+  The concrete step, on the ChatGPT account that owns the subscription: Settings → Data controls
+  → **"Improve the model for everyone" OFF.** ⚠️ **UNVERIFIED by Claude and unverifiable by
+  Claude** — it lives behind a login Claude must never touch. The user confirms it, or the
+  benchmark does not run.
+- **Two accounts is fine, and is not a mistake.** The subscription sits on a different ChatGPT
+  account from the one used for `/sama` paste-back debates. The CLI authenticates per-account, so
+  `codex login` with the paid account is the whole of it. The only real risks are **paying twice**
+  if the other account also carries a plan, and applying the training toggle **to the wrong
+  account** — it must be set on the one the CLI is signed into.
 - ⚠️ **The 2026-08-30 sandbox finding.** Installers and CLIs launched from Claude's shell landed
   in an overlay: reported success, files "existed" to Claude, real disk empty. **Install via a
   user-run Desktop `.bat`, verify with a user-run check that writes a report file.** Otherwise
