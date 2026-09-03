@@ -39,6 +39,18 @@ const SEC = {
        draft: 'endpoint-s08-allergy.draft' },
   9: { prefix: 'pedep-inf-', staging: 'endpoint-s09-infection.array.js', svar: 'PEDEP_S09_STAGED',
        draft: 'endpoint-s09-infection.draft' },
+  // ⚠️ SECTION 10 IS THE FIRST SECTION THAT DRAFTS FEWER QUESTIONS THAN IT STAGES, and every
+  // check below had to learn that. It is a model exam, so 30 of its 80 are reprints of questions
+  // the body already printed and that are already live. The standing rule for a reprint is
+  // "extend `source`, no new entry" -- so those 30 are never drafted, and reprint-s10-pd-ep.js
+  // (which proves each pair against both files, then rewrites 30 sources and no entries) is what
+  // records them. `reprints` below is only the COUNT side of that; the proof lives in that file.
+  // A section with no `reprints` key behaves exactly as before: staged == drafted.
+  10: { prefix: 'pedep-mf1-', staging: 'endpoint-s10-mfe1.array.js', svar: 'PEDEP_S10_STAGED',
+        draft: 'endpoint-s10-mfe1.draft',
+        reprints: [1, 2, 3, 6, 11, 12, 13, 15, 16, 17, 21, 22, 23, 24, 27, 28, 38, 40, 44, 46,
+                   47, 48, 50, 52, 62, 64, 65, 66, 67, 69],
+        reprintPass: 'reprint-s10-pd-ep.js', reprintMark: 'Model Final Exam 1' },
 };
 
 const HEADER = `/* Pediatrics ENDPOINT questions (Pediatrics endpoint part1.pdf).
@@ -103,7 +115,10 @@ function run(p, tail) {
 run(QB + cfg.staging);
 const S = globalThis[cfg.svar];
 if (!Array.isArray(S)) { console.error('staging var ' + cfg.svar + ' did not load'); process.exit(2); }
-const wantIds = S.map(s => cfg.prefix + s.n);
+// A reprint is staged but deliberately not drafted, so it is not a wanted id -- and because it is
+// not wanted, drafting one anyway trips the EXTRA check below rather than passing silently.
+const REPRINTS = new Set(cfg.reprints || []);
+const wantIds = S.filter(s => !REPRINTS.has(s.n)).map(s => cfg.prefix + s.n);
 
 // carve() returns the raw entry text; the loaded array is what gets counted and checked.
 // Both are needed: the splice is byte-level, but a byte-level splice cannot see a hole.
@@ -156,9 +171,20 @@ wantIds.forEach(id => { if (!seen.has(id)) fail.push('MISSING: ' + id + ' is sta
 gotIds.forEach(id => { if (!wantIds.includes(id)) fail.push('EXTRA: ' + id + ' is drafted but not staged'); });
 [...seen].forEach(([id, c]) => { if (c > 1) fail.push('DUPLICATE: ' + id + ' drafted ' + c + ' times'); });
 
-// 2. the drafts sum to the section
-if (drafted.length !== S.length)
-  fail.push('COUNT: drafts sum to ' + drafted.length + ' but staging holds ' + S.length);
+// 2. the drafts sum to the section, less anything recorded as a reprint
+if (drafted.length !== S.length - REPRINTS.size)
+  fail.push('COUNT: drafts sum to ' + drafted.length + ' but staging holds ' + S.length
+    + (REPRINTS.size ? ' less ' + REPRINTS.size + ' reprints = ' + (S.length - REPRINTS.size) : ''));
+
+// 2a. THE REPRINT PASS MUST ALREADY HAVE RUN. Splicing first would leave the 30 live entries with
+// no record of the exam printing, and nothing afterwards would notice: the count is right either
+// way, so only this check can catch the ordering. Same reasoning as the validator gate above.
+if (REPRINTS.size) {
+  const n = (fs.existsSync(LIVE) ? fs.readFileSync(LIVE, 'utf8') : '').split(cfg.reprintMark).length - 1;
+  if (n < REPRINTS.size)
+    fail.push('REPRINT PASS HAS NOT RUN: ' + n + ' of ' + REPRINTS.size + ' live sources name "'
+      + cfg.reprintMark + '". Run tools/bank-harness/' + cfg.reprintPass + ' --write first.');
+}
 
 // 3. every entry is an endpoint entry -- the one check that would have caught a House/endpoint mix
 drafted.forEach(q => { if (q.bank !== 'endpoint') fail.push('BANK: ' + q.id + ' is bank ' + JSON.stringify(q.bank) + ', not endpoint'); });

@@ -38,6 +38,11 @@ const SEC = {
   7: { base: 'endpoint-s07-neonatology',    svar: 'PEDEP_S07_STAGED' },
   8: { base: 'endpoint-s08-allergy',        svar: 'PEDEP_S08_STAGED' },
   9: { base: 'endpoint-s09-infection',      svar: 'PEDEP_S09_STAGED' },
+  // ⚠️ Section 10 is a MODEL EXAM. Expect the (a) vs-live-endpoint list to be long and to matter
+  // more than it has in any content section: 114 of the 379 exam pages score >=0.90 against a live
+  // stem by OCR overlap. A high (a) count here is the EXPECTED shape, not an alarm -- and a low
+  // one is the finding.
+  10: { base: 'endpoint-s10-mfe1',          svar: 'PEDEP_S10_STAGED' },
 };
 
 // Similarity over WORD BIGRAMS, Dice coefficient. A reprint that reworded its tail still shares

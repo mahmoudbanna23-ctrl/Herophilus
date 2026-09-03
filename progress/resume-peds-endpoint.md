@@ -2043,3 +2043,146 @@ pp.1157–1936, 379 questions expected to be mostly reprints**, then Exam Night 
 nothing to stage). ⚠️ **"Mostly reprints" is a prediction, not a measurement** — the reprint rate
 there has never been measured, and the sweep pool is now 445 endpoint entries, so the sweep is the
 expensive part of that stretch, not the drafting.
+
+### ⚠️ THE MODEL EXAMS ARE NOT "MOSTLY REPRINTS" — measured 2026-09-03, correcting the record
+
+Every earlier note in this file, and `MEMORY.md`, says pp.1157–1936 hold "379 questions expected to
+be mostly reprints". **The 379 is right. "Mostly reprints" is not.**
+
+**Structure, from `ocr\ep1\index.json` — six exams, each printing every question twice (once blank
+in the paper, once highlighted in the key), so answered pages ≈ questions:**
+
+| | pages | answered | question | notes |
+|---|---|---|---|---|
+| Model Final Exam 1 | 1157–1321 | 80 | 80 | 5 |
+| Model Final Exam 2 | 1322–1482 | 79 | 79 | 3 |
+| Model Final Exam 3 | 1483–1643 | 80 | 79 | 2 |
+| Model Final Exam 4 | 1644–1804 | 80 | 80 | 1 |
+| Model Training Exam 1 | 1805–1873 | 30 | 30 | 9 |
+| Model Training Exam 2 | 1874–1936 | 30 | 30 | 3 |
+| | | **379** | 378 | 23 |
+
+Exam Night Review opens at **p.1937** — prose, nothing to stage. The answered/question pairing is
+1:1 in five of six exams; Final 3's extra answered page is most likely an **explanation-overflow
+page** carrying yellow without a stem (p.1811 is a confirmed instance of that shape), so 379 is a
+slight **over**-count of questions, not an under-count.
+
+**The reprint measurement.** Each answered page's OCR text (first 700 characters) was scored by
+token overlap against the stems of all 445 live endpoint entries; content words only, ≤3 letters
+and a stop list dropped; the score is the fraction of the live stem's tokens present on the page.
+
+```
+  >=0.90   114        0.50-0.60   52
+  0.80-0.90 31        0.30-0.50   84
+  0.70-0.80 27        <0.30       25
+```
+
+**172 of 379 score ≥0.70; 114 score ≥0.90. 207 score below 0.70.** Three low scorers were opened
+and read: **p.1701 (chronic non-specific diarrhoea, a full vignette) and p.1901 (rickets in an
+exclusively breast-fed 18-month-old) are genuinely new questions**, not degraded reprints; p.1811
+is the overflow-explanation shape described above.
+
+**⚠️ STATE THE METHOD'S LIMITS WITH THE NUMBER.** This is an **OCR-derived** measurement — a
+legitimate use, since it searches rather than sourcing a clinical fact, but OCR drops whole lines
+and a dropped line depresses a score. It compares against **stems only**, so a reprint whose stem
+was reworded (the §9 fold shape) scores low. **The bands are a planning estimate, not a count.**
+Treat ≥0.90 as "very likely already held" and <0.70 as "must be looked at", and expect the true
+new-question count to land somewhere inside 207 — nobody has counted it yet.
+
+**What this means for the remaining work.** The stretch cannot be swept and skipped. It is closer
+to two more content sections' worth of drafting than to a reprint pass, and the sweep pool is now
+445 entries, so the duplicate sweep is the expensive half. Do it **one exam at a time**, register
+each in all four harnesses at once (`merge-parts-ep.js`, `val-pd-ep.js`, `splice-pd-ep.js`,
+`sweep-staged-ep.js`) — §6 and §9 each paid a round trip for doing it piecemeal — and stage from
+the **answered** page of each pair, never the blank one.
+
+**Part 1 is NOT closed.** All nine content sections are; the six exams are not.
+
+## §10 Model Final Exam 1 — staged 80, adjudicated 2026-09-03 (pp.1159–1320)
+
+All 80 staged and validated in four halves (`endpoint-s10-mfe1.part-A..D.js` → `.array.js`,
+88017 chars, n 1..80, options {4:40, 5:40}). **Every one of the 80 carries a printed explanation
+box**, so all drafting is the §4a boxed shape; the only two with `expl:''` (n48, n62) are folds.
+
+### The instrument, and why it is not a similarity score
+`sweep-staged-ep.js` returned **55 hits against the live endpoint file over 38 staged questions**.
+Rather than judge 55 by eye, `exactcmp.js` compared **the two transcriptions themselves** — both
+sides were already hand-read off the page, so byte equality of stem+options is a measurement, not
+an estimate. That decided 25 outright and cut the eye-judgement set from 55 to 30. `neardiff.js`
+then printed, for each survivor, the option-by-option diff **and whether the two printed keys land
+on the same option TEXT** — the distinction a similarity score cannot make, because "the key index
+moved because an option was inserted" and "the two printings disagree about the answer" score
+identically and mean opposite things.
+
+⚠️ **THE KEY TEST HAD TO BE MADE PUNCTUATION-BLIND, AND ITS FIRST VERSION WAS WRONG.** n12 read as
+a key disagreement solely because one printing punctuates its options and the other does not —
+`Administer surfactant` vs `Administer surfactant.` Left uncorrected that single full stop would
+have been recorded as a contradiction in the book. Option text still compares strictly; only the
+key verdict relaxes.
+
+### Verdict: 30 fold, 50 new, **ZERO contradictions**
+No pair anywhere in the section has identical text with a different printed key. Nothing to record
+under the never-correct-a-key rule for this section.
+
+**FOLD — 25 byte-exact** (stem, options and key all identical; extend `source`, no new entry):
+n1→gp-11 · n2→nut-67 · n3→nut-68 · n6→gp-12 · n11→nut-69 · n13→emg-60 · n15→alg-8 · n16→emg-61 ·
+n17→nut-75 · n21→gp-13 · n22→gp-79 · n23→nut-70 · n24→gp-14 · n27→nut-71 · n28→nut-72 · n38→gp-88 ·
+n40→alg-9 · n44→gp-15 · n46→gi-61 · n52→gp-16 · n64→gp-85 · n65→gi-63 · n66→gp-17 · n67→nut-73 ·
+n69→gp-89
+
+**FOLD — 5 more, key text identical, index moved** (documented fold shapes, each proved on the diff):
+- n12→`pedep-emg-47` — the live printing inserts `Obtain a chest x-ray.` as option A and punctuates
+  every option; key moves 1→2, same words. Stem differs only by `next best`/`next BEST`.
+- n47→`pedep-gp-10` — `drive`→`driver`, options byte-identical. **The live `source` already
+  predicted this printing** ("printed again on p.195 with 'drive' reworded to 'driver'").
+- n48→`pedep-gp-4` — a fifth option (`Plagiocephalic`) is added; key moves 3→4, same words. **The
+  live `source` already predicted this too** ("on p.197 with a fifth option added").
+- n50→`pedep-gi-1` — age 6→2 years and the travel-history line dropped; **all five options
+  identical in the same order**. The live `source` already predicted it (the p.538 variant).
+- n62→`pedep-emg-50` — same index, same 4 other options; the reprint abbreviates the key option
+  (drops `soft` and the sleep-positioner clause). The live printing is the fuller one and survives.
+
+**KEPT SEPARATE — near, but not folds.** Each names its discriminating token:
+- **n8 vs `pedep-emg-52`** — the live stem *lists* polycythemia among the risks already given, so
+  its key is RDS; the staged stem does not, so its key is polycythemia. **The stem expansion moves
+  the answer.** Two different questions, not a contradiction.
+- **n31 vs `pedep-neo-32` / `pedep-neo-47`** — one stem, three different option menus. Each key is
+  correct inside its own menu (TTN is associated with term birth *and* with caesarean delivery).
+  A shared stem PAIRS questions; it never folds them.
+- **n34 vs `pedep-per-19`** — 35 weeks / 3400 g against 36 weeks / 4000 g, and different menus.
+  **Different numbers mean a different question**; both readings survived the numeral audit.
+- **n35 vs `pedep-inf-30`** — same vignette, different menus, and the two keys (`Roseola infantum`,
+  `HHV-6 infection`) are the same disease named two ways. Worth cross-referencing, not folding.
+- **n49 vs `pedep-gi-3`** — two distractors replaced, and the loose-stool duration differs
+  (**2 days** staged vs **2 weeks** live). Replacement is not the dropped-filler shape.
+- **The remaining 14 hits are TEMPLATE MATCHES**, tested as a class rather than by eye
+  (`template.js`): the shared stem `Which of the following is true regarding X?` with a *different*
+  X on each side — gastroschisis vs capillary refill time, posterior urethral valves vs oxygen
+  therapy in preterm infants, abdominal pain vs pneumococcal infection. The within-section pair
+  n73/n78 (sim 0.750, same key index, 4 options each) is the same trap: gastroschisis against
+  posterior urethral valves. **None folds.**
+
+### Two pre-existing near-duplicates in the LIVE file, surfaced as a by-product
+Not created by this section and not resolved here — both are for the end-of-stream sweep:
+- `pedep-gi-2` / `pedep-gi-63` — n65 is byte-exact to gi-63 and near to gi-2.
+- `pedep-nut-58` / `pedep-nut-70` — n23 is byte-exact to nut-70 and a **reordered** sibling of
+  nut-58 (options A and E swapped, key letter moves, same key text).
+
+### Cross-bank overlap with House — RECORDED ONLY, folds nothing (standing rule)
+6 hits: n22≡`pedhd-gastro-22` (1.000) · n36≡`pedhd-inf-4` · n42≡`pedhd-alg-1` (**keys differ**) ·
+n49≡`pedhd-gastro-3` · n50≡`pedhd-gastro-1` · n65≡`pedhd-gastro-2`. These are similarity scores
+against a file Chat B is actively writing — **not** byte comparisons, and not grounds to write
+`alsoIn` yet. They merge once, after both banks close.
+
+### ⚠️ PAEDIATRIC SURGERY IS IN SCOPE FOR THIS BOOK, AND I TOLD THREE STAGERS IT WAS NOT
+I transplanted `pd-staging-brief.md` §11a — which excludes an appendix in the **House** book (House
+PDF sheets 75–104) — onto the endpoint book. It does not apply here. **The part C stager pushed
+back and was right.** MFE1 examines surgery heavily: 17 of the 50 new entries are surgical
+(gastroschisis, duodenal atresia, meconium ileus, Hirschsprung, imperforate anus, choledochal cyst,
+hypertrophic pyloric stenosis, intussusception, inguinal hernia, CDH, oesophageal atresia, PUJ
+obstruction, VUR, PUV, Wilms, neuroblastoma). Nothing was dropped — the exclusion was caught before
+staging finished — but a brief rule must be checked against **which book** it describes.
+
+### Id prefix
+`pedep-mfe1-N`. The prefix records the section a question was transcribed from (gp/nut/emg/per/neo/
+alg/gi/inf = §1–§9); `chapter` records its topic and is assigned independently.

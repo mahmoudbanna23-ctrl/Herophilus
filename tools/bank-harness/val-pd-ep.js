@@ -49,6 +49,13 @@ const SEC = {
   // exist in modules.js. Every one of those is legitimate here; `infection` is the fallback.
   9: { prefix: 'pedep-inf-', file: 'endpoint-s09-infection.array.js', svar: 'PEDEP_S09_STAGED',
        draft: 'endpoint-s09-infection.draft', chapter: 'infection' },
+
+  // Model Final Exam 1, pp.1157-1321. ⚠️ MIXED TOPIC: `chapter` here is a LABEL ONLY. This field
+  // is never read -- the real check is line 149, which validates each entry's own chapter against
+  // modules.js -- so an exam entry may be filed in any chapter that exists there, and should be
+  // filed by its content, not by this line.
+  10: { prefix: 'pedep-mf1-', file: 'endpoint-s10-mfe1.array.js', svar: 'PEDEP_S10_STAGED',
+        draft: 'endpoint-s10-mfe1.draft', chapter: '(mixed)' },
 };
 
 // imgAlt must give MODALITY AND VIEW ONLY. Naming the finding answers the question --

@@ -85,6 +85,22 @@ const SEC = {
   // 2 to 10.
   9: { base: 'endpoint-s09-infection', svar: 'PEDEP_S09_STAGED', title: 'SECTION 9: "Infection and Immunity"',
        pages: '929-1156', expect: 95 },
+
+  // ⚠️ SECTION 10 IS A MODEL EXAM, NOT A CONTENT SECTION, and three things about it differ.
+  //   1. EVERY QUESTION IS PRINTED TWICE -- once blank in the paper, once with the yellow key in
+  //      the answer section. `index.json` classes them `question` and `answered` respectively.
+  //      STAGE FROM THE `answered` PAGE ONLY. Staging the blank printing loses the key.
+  //   2. IT IS MIXED-TOPIC. Entries land across many chapters, so `chapter` below is a label, not
+  //      a constraint -- val-pd-ep.js validates each entry's chapter against modules.js and does
+  //      not read this field.
+  //   3. MUCH OF IT REPRINTS THE BODY. Measured 2026-09-03 over all 379 exam pages by OCR token
+  //      overlap against the 445 live stems: 114 score >=0.90, 172 >=0.70, 207 BELOW 0.70. The
+  //      expected reprint rate is real but it is NOT "mostly", which is what the record said
+  //      before it was measured. `expect` below is the answered-page count, an upper bound on
+  //      questions -- an explanation that overflows onto its own page carries yellow and is
+  //      counted here as answered (p.1811 is a confirmed instance). Read the pages; trust no count.
+  10: { base: 'endpoint-s10-mfe1', svar: 'PEDEP_S10_STAGED', title: 'MODEL FINAL EXAM 1',
+        pages: '1157-1321', expect: 80 },
 };
 
 const secNum = process.argv[2];
