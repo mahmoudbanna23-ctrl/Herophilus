@@ -57,12 +57,12 @@ pre-map — open one by name with `grep -n "^## "` and `sed` if a specific decis
 | 5 Pediatrics Emergencies | 563–702 | **61**, not the 60 the contents page prints | ✅ **CLOSED 2026-09-03** — staged, drafted both halves, validated, spliced 216→277, folded 277→**270**. 60 `pedep-emg-*` live (`emg-55` folded into `-59`). |
 | 6 Perinatal | 703–773 | 23 → **21** | ✅ **CLOSED 2026-09-03** — staged 23 (p.741 was an ordinary question page, not `other`), drafted both halves, validated, spliced 270→293, folded 293→**291**. 21 `pedep-per-*` live (`per-17`→`gp-5`, `per-21`→`gp-70`). |
 | 7 Neonatology | 774–903 | 53 → **52** | ✅ **CLOSED 2026-09-03** — staged 53, drafted in thirds A/B/C, validated, `keypos --calibrate` 51/53, 5 crops cut, spliced 291→344, folded 344→**343**. 52 `pedep-neo-*` live (`neo-22`→`neo-46`). |
-| 8 Allergy | 904–928 | 9 | ⏳ **NEXT.** Not started. |
-| 9 Infection & Immunity | 929–1156 | 96 | not started |
+| 8 Allergy | 904–928 | 9 → **8** | ✅ **CLOSED 2026-09-03** — staged 9, drafted 9, validated, `keypos --calibrate` 9/9 with 0 disagreements, spliced 343→352, folded 352→**351**. 8 `pedep-alg-*` live (`alg-7` → `pedep-nut-63`); the chapter holds 8, not 9, and that is the fold, not a loss. |
+| 9 Infection & Immunity | 929–1156 | 96 | ⏳ **NEXT** — the last content section of part 1. |
 | Model exams 1–4, training 1–2 | 1157–1936 | 379 | last; expected mostly reprints |
 | Exam Night Review | 1937–1990 | 0 (prose) | nothing to stage |
 
-**Live total: 343 entries from 372 answered pages** (2026-09-03, after §7 and fold pass 6). The two
+**Live total: 351 entries from 381 answered pages** (2026-09-03, after §8 and fold pass 7). The two
 numbers differ by the 28 folds and are both correct — pages staged is not questions held. Always
 say which one you mean.
 
@@ -1816,3 +1816,117 @@ Smallest section left. Register it in **all four** harnesses at once (`merge-par
 `val-pd-ep.js`, `splice-pd-ep.js`, `sweep-staged-ep.js`) before staging — §6 paid a round trip each
 for the last two. Prefix `pedep-alg-`, and §10a applies: header on disk before the first render,
 one page at a time, never render N+1 before N is on disk.
+
+---
+
+## ✅ §8 Allergy SPLICED then FOLDED — 343 -> 352 -> 351 — 2026-09-03
+
+The smallest section in part 1 and the only one so far where every instrument agreed before a page
+was opened. Nine answered pages, pp.911–927, odd-numbered without exception; the OCR index's
+`answered` count, its `question` count and the printed contents page all said 9. That agreement is
+rare enough to be worth writing down rather than trusted — it was still checked page by page.
+
+**Staged 9, drafted 9, spliced 343 → 352, folded 352 → 351.** `keypos.py --calibrate` answered all
+9 and agreed with all 9: *0 disagree, 0 abstain, 100.0% over the 9 it answered.* All five-option,
+all boxed, no figures, so neither of `keypos`'s two blind spots (an option wrapping below the key,
+a figure printed beside the option column) was in play here.
+
+Keys, for the record: n1 p911 k2 · n2 p913 k1 · n3 p915 k3 · n4 p917 k3 · n5 p919 k3 · n6 p921 k0 ·
+n7 p923 k0 · n8 p925 k2 · n9 p927 k1.
+
+### The section's shape, confirmed rather than assumed
+
+pp.905–909 are five highlighted **prose** pages — Definitions, Mechanisms of Allergy, the Hygiene
+Hypothesis with Clinical Evaluation, Food Allergy, Other Allergic Conditions — sitting between the
+p.904 divider and the first question. The index flagged them by their yellow measure (1044–2980
+against a ~520 baseline), which is what an answered page looks like; what separates them is that
+they carry no lettered options. They were looked at before being skipped. pp.904 and 928 are thin
+dividers, 1 and 3 words.
+
+⚠️ **The `options-differ` flags on p.921 (BCDE), p.925 and p.927 (ACDE) were OCR, not the book.**
+The index drops a different line at each resolution. All three pages print A–E. This is the third
+section where that flag has meant nothing; it is a prompt to look, never a finding.
+
+### One tagged gap
+
+n5 turns on the histamine and saline **controls** in a skin-prick test — what a positive control
+failing, or a negative control reacting, actually tells you. `26)allergy_.txt` describes skin-prick
+testing but prints nothing about the control pair. Answered from general knowledge and tagged
+inline as *not taken from the course material*, per the standing rule: a gap is answered, not
+declared.
+
+### The fold — `pedep-alg-7` (p.923) into `pedep-nut-63` (p.364)
+
+The sweep found exactly one candidate in the whole section: *within-section 0, vs live endpoint 1,
+vs House 0, option-set-only 0, shared menus 0.* The one hit scored **sim 1.000, key 0 against
+answer 0** — the cross-CHAPTER exact shape, the fifth of the six fold shapes. The endpoint file asks
+one question twice, 559 pages apart, once in Nutrition and once in Allergy.
+
+**⚠️ The stems were not byte-identical, and it was not a printing variant.** p.364 writes
+"this baby's urticaria" with a curly apostrophe, the p.923 staging with a straight one — one
+character, and nothing else, across the whole stem. Two agents read two page images months apart
+and one normalised the glyph. The fold script proves this rather than asserting it: it normalises
+the three curly quote characters away and requires byte identity of everything that remains, then
+counts and reports the differing characters. It is written into the survivor's explanation so that
+nobody later "discovers" a variant the book does not print.
+
+**The survivor is the shorter entry, deliberately.** p.364's expansion runs 169 words against
+p.923's 252, so on length alone the fold would have gone the other way. Three things outranked
+length, and they could, because a fold may carry the loser's material across:
+
+1. **`pedep-nut-72` (p.383) already names `pedep-nut-63` by id** as the IgE counterpart to its own
+   non-IgE case. The two are the same clinical scenario split on mechanism and they teach as a
+   pair, inside the same chapter. Keeping p.923 instead would have split that pair across two
+   chapters and needed the back-reference repointed.
+2. p.364 is the first printing.
+3. p.364 carries the book's own curly apostrophe.
+
+The two things p.923 said that p.364 did not — the reaction-timing numbers (IgE-mediated reactions
+within 10–15 minutes and up to about 2 hours; non-IgE hours later and largely gastrointestinal) and
+the anchor to the lecture's own Type 1 / immediate row — were folded into the survivor, which now
+runs 368 words. The script's exit checks are the proof: marker present exactly once, p.923 cited in
+both `source` and `explanation`, the curly apostrophe still in the stem, and `pedep-nut-72` still
+resolving to `pedep-nut-63`.
+
+**⚠️ The cost, stated rather than buried: the Allergy chapter holds 8, not 9.** A student filtering
+on Allergy will not see this question; it sits under `nutrition-feed` with its pair. That is the
+same trade fold5 made keeping `pedep-gp-70` under `perinatal`, and it is a choice, not an accident.
+
+### Three things that cost a round trip, all the same shape
+
+**⚠️ `questions.peds.ep.js` MIXES TWO ENTRY STYLES, and a fold that assumes one silently matches
+nothing.** The splicer writes `  id: 'x',` — two-space indent, space after the colon. Older entries,
+`pedep-nut-63` among them, are the tight form: `{ id:'pedep-nut-63', bank:'endpoint', ...` on one
+line and `source:'...'` with no space. fold6's `idOf` regex `/id: *'/` tolerates both, so the carve
+was clean and gave no warning; but the `from` string, copied from a spliced entry, matched **zero**
+times and the pass halted on *"source not matched exactly once"*. This is the fold6 lesson recurring
+in a second field. **Read the block off disk before writing a `from` string. Never copy a field
+shape from a sibling pass.**
+
+**⚠️ The staging brief handed the agent the wrong file shape.** It was given the *merged array*
+header — `var PEDEP_S08_STAGED = [` … `];` — where a **part** file is a header comment followed by
+bare `{...}` blocks separated by a blank line, with no opener, no closer and **no commas between
+entries**; `merge-parts-ep.js` restores the commas itself by splitting on `}\n\n{`. The merge failed
+with *"DOES NOT PARSE: Unexpected token 'var'"*. Repaired by a scratchpad fixer that refused to
+write unless `JSON.stringify(after) === JSON.stringify(before)` — the content was moved, never
+retyped. **The part-file contract belongs in the staging brief verbatim.**
+
+**⚠️ A probe against `modules.js` printed `undefined` for every chapter**, which read as "the
+allergy chapter does not exist". It does. Chapters there are **`["id","Title"]` arrays**, not
+objects with `.id`/`.title`, and the group key is `name`, not `title`. Fixed by dumping
+`Object.keys` and one sample row before querying again. *A zero from a probe you just wrote is a
+claim about the probe first* — third time this session it has paid.
+
+And one smaller one: the drafting agent reported preserving a newline inside one stem (n4). Disk
+showed **two**, n4 and n6. Both are faithful to the printed layout and both were kept — 4 of the
+343 live entries and 1 of §7's 53 carry the same shape. **Verify an agent's output from disk, never
+from its report.**
+
+### What is left of part 1
+
+**§9 Infection & Immunity, pp.929–1156, 96 questions — the last content section.** Register it in
+all four harnesses at once (`merge-parts-ep.js`, `val-pd-ep.js`, `splice-pd-ep.js`,
+`sweep-staged-ep.js`); §6 paid a round trip each for the last two. ⚠️ The index counts 96 answered
+against 95 question pages, and pp.930–935 are prose notes — the same shape as §8's preamble, so
+look before staging. After that: model exams 1–4 and training 1–2, pp.1157–1936, 379 questions
+expected to be mostly reprints, then Exam Night Review, prose, nothing to stage.

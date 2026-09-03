@@ -47,6 +47,18 @@ const SEC = {
   // candidate rather than a page of its own.
   7: { base: 'endpoint-s07-neonatology', svar: 'PEDEP_S07_STAGED', title: 'SECTION 7: "Neonatology"',
        pages: '774-903', expect: 53 },
+
+  // Section 8 is the smallest in part 1 and the most regular: pp.910-927 alternate strictly
+  // question / answered, even / odd, nine pairs with no exception. The index puts the answered
+  // pages at 911, 913, 915, 917, 919, 921, 923, 925, 927 -- nine, which is what the contents page
+  // prints, and the two agreeing is rare enough to be worth writing down rather than trusted.
+  // p.904 and p.928 are thin dividers (1 and 3 words); pp.905-909 are five HIGHLIGHTED PROSE pages
+  // (69-95 words, yellow 1044-2980, NO lettered options) sitting between the divider and the first
+  // question -- an allergy preamble, not questions, but LOOK at one before accepting that.
+  // ⚠️ `options-differ` on p.921 (BCDE), p.925 and p.927 (ACDE): OCR dropped an option letter on
+  // one pass. It drops a different line at each resolution, so read the page, not the index.
+  8: { base: 'endpoint-s08-allergy', svar: 'PEDEP_S08_STAGED', title: 'SECTION 8: "Allergy"',
+       pages: '904-928', expect: 9 },
 };
 
 const secNum = process.argv[2];

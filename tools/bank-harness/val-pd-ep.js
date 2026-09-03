@@ -41,6 +41,8 @@ const SEC = {
   // below is documentation only; every entry is checked against the real chapter set.
   7: { prefix: 'pedep-neo-', file: 'endpoint-s07-neonatology.array.js', svar: 'PEDEP_S07_STAGED',
        draft: 'endpoint-s07-neonatology.draft', chapter: 'neonatal' },
+  8: { prefix: 'pedep-alg-', file: 'endpoint-s08-allergy.array.js', svar: 'PEDEP_S08_STAGED',
+       draft: 'endpoint-s08-allergy.draft', chapter: 'allergy' },
 };
 
 // imgAlt must give MODALITY AND VIEW ONLY. Naming the finding answers the question --

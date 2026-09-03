@@ -36,6 +36,7 @@ const SEC = {
   5: { base: 'endpoint-s05-emergencies',    svar: 'PEDEP_S05_STAGED' },
   6: { base: 'endpoint-s06-perinatal',      svar: 'PEDEP_S06_STAGED' },
   7: { base: 'endpoint-s07-neonatology',    svar: 'PEDEP_S07_STAGED' },
+  8: { base: 'endpoint-s08-allergy',        svar: 'PEDEP_S08_STAGED' },
 };
 
 // Similarity over WORD BIGRAMS, Dice coefficient. A reprint that reworded its tail still shares
