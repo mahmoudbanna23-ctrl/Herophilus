@@ -31,6 +31,8 @@ const SEC = {
        draft: 'endpoint-s04-accidents.draft' },
   5: { prefix: 'pedep-emg-', staging: 'endpoint-s05-emergencies.array.js', svar: 'PEDEP_S05_STAGED',
        draft: 'endpoint-s05-emergencies.draft' },
+  6: { prefix: 'pedep-per-', staging: 'endpoint-s06-perinatal.array.js', svar: 'PEDEP_S06_STAGED',
+       draft: 'endpoint-s06-perinatal.draft' },
 };
 
 const HEADER = `/* Pediatrics ENDPOINT questions (Pediatrics endpoint part1.pdf).

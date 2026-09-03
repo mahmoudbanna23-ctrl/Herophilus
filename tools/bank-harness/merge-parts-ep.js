@@ -31,6 +31,13 @@ const SEC = {
   // image 2026-09-03 and settled. Trust no printed count.
   5: { base: 'endpoint-s05-emergencies', svar: 'PEDEP_S05_STAGED', title: 'SECTION 5: "Pediatrics Emergencies"',
        pages: '563-702', expect: 61 },
+  // ⚠️ 23 answered pages, and the contents page also says 23 -- but the index files p.741 as
+  // `other`, not `question`, which is what breaks the otherwise perfect odd-question / even-answer
+  // alternation across pp.727-772. 741 is 742's question page. Read it on the image before staging.
+  // ⚠️ p.768 is expected to reprint `pedep-gp-70`. It is STAGED ANYWAY -- a staging file short of
+  // its page count fails the splice gate, and folds are always a separate pass afterwards.
+  6: { base: 'endpoint-s06-perinatal', svar: 'PEDEP_S06_STAGED', title: 'SECTION 6: "Perinatal"',
+       pages: '703-773', expect: 23 },
 };
 
 const secNum = process.argv[2];

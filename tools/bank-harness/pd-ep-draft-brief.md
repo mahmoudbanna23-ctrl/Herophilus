@@ -71,6 +71,13 @@ field is a hard failure:
 - `options` takes the staged `opts` array verbatim. **No letter prefixes** — the app supplies them,
   and the printed letter-case drifts through these sections anyway.
 
+⚠️ **Entries ARE comma-joined: every entry but the last ends `},`.** The validator wraps your file
+as `'[' + src + ']'` and strips only a trailing comma, so a comma-free run of fragments is a syntax
+error, not a valid draft — the *staging* halves are comma-free, the *drafts* are not, and that
+difference has been mis-stated in a task prompt once (2026-09-03, section 6 half A, caught by the
+agent against `endpoint-s04-accidents.draft-A.js`). A `/* … */` provenance header at the top is
+welcome; the splicer strips it.
+
 ## 4. ⚠️ The explanation has TWO PARTS and a REQUIRED CLOSING LINE
 
 This bank **prints an explanation box on most pages and none on the rest**, and the staging `expl`

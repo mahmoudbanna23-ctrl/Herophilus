@@ -21,17 +21,17 @@ watch and dies with the session.
 
 | 3 Gastroenterology | 393–549 | 67 → **65** | ✅ **CLOSED 2026-09-03** — drafted, validated, spliced 148→215, folded 215→**213**. 65 `pedep-gi-*` live. |
 | 4 Accidents & poisoning | 550–562 | 3 | ✅ **CLOSED 2026-09-03** — staged, drafted, validated, spliced 213→**216**. No fold. 3 `pedep-acc-*` live. |
-| 5 Pediatrics Emergencies | 563–702 | **61**, not the 60 the contents page prints | ⏳ mapped 2026-09-03, not staged — see the §5 block at the foot |
-| 6 Perinatal | 703–773 | 23 → **22?** | p.768 reprints `pedep-gp-70` — fold, do not stage |
-| 7 Neonatology | 774–903 | 53 | not started |
+| 5 Pediatrics Emergencies | 563–702 | **61**, not the 60 the contents page prints | ✅ **CLOSED 2026-09-03** — staged, drafted both halves, validated, spliced 216→277, folded 277→**270**. 60 `pedep-emg-*` live (`emg-55` folded into `-59`). |
+| 6 Perinatal | 703–773 | 23 → **21** | ✅ **CLOSED 2026-09-03** — staged 23 (p.741 was an ordinary question page, not `other`), drafted both halves, validated, spliced 270→293, folded 293→**291**. 21 `pedep-per-*` live (`per-17`→`gp-5`, `per-21`→`gp-70`). |
+| 7 Neonatology | 774–903 | 53 | ⏳ **NEXT.** Not started. |
 | 8 Allergy | 904–928 | 9 | not started |
 | 9 Infection & Immunity | 929–1156 | 96 | not started |
 | Model exams 1–4, training 1–2 | 1157–1936 | 379 | last; expected mostly reprints |
 | Exam Night Review | 1937–1990 | 0 (prose) | nothing to stage |
 
-**Live total: 216 entries from 235 answered pages** (2026-09-03, after §4). The two numbers differ
-by the 19 folds and are both correct — pages staged is not questions held. Always say which one you
-mean.
+**Live total: 291 entries from 319 answered pages** (2026-09-03, after §6 and fold pass 5). The two
+numbers differ by the 28 folds and are both correct — pages staged is not questions held. Always
+say which one you mean.
 
 ⚠️ This paragraph used to sit **between rows 2 and 3 of the table above**, which silently split it
 into a header-less second table — rows 3–9 rendered as pipe-paragraphs. Same trap as the one that
@@ -1514,3 +1514,122 @@ The remaining owed work on part 1 is unchanged by this pass: **the cross-bank `a
 House hits in §3, plus §1, §2, and §5's two `pedhd-inf-15` matches (which after this fold means
 `pedep-emg-59` alone, since `-55` is gone). It reads `questions.peds.js` and may only ever **write**
 `questions.peds.ep.js`. ⚠️ `pedhd-card-6..10` must NOT be folded.
+
+---
+
+## §6 Perinatal SPLICED then FOLDED — 270 -> 293 -> 291 — 2026-09-03
+
+Pages 703–773, **23 answered pages, all 23 staged, 21 live.** Ids `pedep-per-1` … `pedep-per-23`,
+less the two folded away. Halves n1–11 (pp.728–748) and n12–23 (pp.750–772), one drafting agent
+each, run one at a time.
+
+**p.741 was NOT an anomaly.** The index filed it `other`, which broke the otherwise perfect
+odd-question / even-answer alternation across pp.727–772 and is why the pre-map hedged at "22?".
+The staging agent read the page: it is an ordinary unanswered question page carrying Q8, the Apgar
+scenario answered on p.742. **The section stages 23, the contents page says 23, and the two agree.**
+The classifier was wrong, not the book.
+
+**Section totals.** Boxed 22 of 23 — n8 (p.742) alone prints no prose box, printing a worked Apgar
+scoring table instead, which is summarised into that entry's staging `note` and written up under
+the §4b unboxed shape. No figures anywhere in the section. Option counts: twenty-one entries print
+five options, **n18 (p.762) and n23 (p.772) print four.** That is what the pages print; nothing was
+padded.
+
+### Chapters
+
+| chapter | entries |
+|---|---|
+| `perinatal` | 15 |
+| `cardiac` | 2 (n18, n23 — fetal circulation, which `33)Congenital acyanotic heart disease_.txt` teaches in its own slides) |
+| `perinatal-rd` | 1 (n6, gestational diabetes → RDS) |
+| `perinatal-hie` | 1 (n8, Apgar at 1 minute) |
+| `genetics` | 1 (n15, amniocentesis) |
+| `neonatal-seiz` | 1 (n16, clavicle — birth injury) |
+| `neonatal-sepsis` | 1 (n19) |
+| `dev-problems` | 1 (n20, microcephaly with preserved weight) |
+
+### Fold pass 5 — 293 -> 291
+
+`tools\bank-harness\fold5-pd-ep.js`, built from fold4's mechanics unchanged: carve, loaded-length
+assertion, exactly-once match on every edit, drop guard against `alsoIn`/`image`, output proved by
+parsing before writing, **dead-id check on the OUTPUT.**
+
+- **keep `pedep-gp-5` (p.38/p.169) <- drop `pedep-per-17` (p.760)** — a *third* printing of the VLBW
+  definition. Options reordered (p.38: 2500 / 1500 / 1750 / 1000 / 500; p.760: 1750 / 1500 / 2500 /
+  1000 / 500); the key text lands at index 1 in both by coincidence, not by preserved order.
+- **keep `pedep-gp-70` (p.171) <- drop `pedep-per-21` (p.768)** — identical stem, five options in
+  the same order, same key, same box. The pre-map predicted this one and was right.
+
+Both survivors are the fuller entry by a wide margin (457 words against 232; 505 against 270), and
+`pedep-gp-70` was **already filed under `perinatal`** despite being printed in the Growth and
+Puberty section — the p.768 printing is the book agreeing with that filing. Only `source` and
+`explanation` were touched. Neither dropped id was referenced by anything.
+
+**p.760 settles `pedep-gp-5`'s own transcription note.** That entry recorded that p.38 prints its
+last option as "Birth weight less than 500" with no unit. p.760 prints "birth weight less than
+500 gm" — the unit is grams. The note now says so; the option itself is left exactly as p.38 prints
+it, because that is the page the entry cites.
+
+### ⚠️ THE SWEEP COULD NOT SEE `gp-5` / `per-17`, AND A HUMAN READ CAUGHT IT
+
+`sweep-staged-ep.js` reported **zero** within-section reprints and did not list `pedep-gp-5` under
+its live-endpoint hits either. Both of its instruments were blind to the same reprint:
+
+- **Whole-stem similarity fell under the 0.55 threshold** — "How is a very low birth weight infant
+  defined?" against "Very low birth weight infants are those who have:".
+- **The option-set matcher missed too**, because it compares option strings for equality and p.38
+  prints "Birth weight less than 1750 g" where p.760 prints "birth weight less than 1750 gm". Not
+  one option string is equal, so the option-set route scored nothing either.
+
+A drafting agent reading the page found it and cross-checked it against the live file. **This is the
+shape to remember: two independent instruments, both blind in the same way, produce a confident
+zero.** Ask what shape the instrument cannot see, not how confident it is about what it can. A
+units-only respelling defeats string equality completely, and a stem rewritten from a question into
+a sentence fragment defeats bigram similarity completely — and this bank does both.
+
+**Not a fold, checked:** the sweep scored `pedep-per-18` against `pedep-emg-32` at 0.556 with the
+keys differing. They share nothing but the phrase "which of the following is TRUE" — per-18 is fetal
+circulation, emg-32 is capillary refill time. A shared question template pairs questions; it never
+folds them.
+
+### The brief was wrong about commas, and the agent caught it
+
+My half-A task prompt said the draft entries carry "no commas between entries". **That is the
+*staging* halves' shape, not the drafts'.** The validator wraps a draft as `'[' + src + ']'` and
+strips only a trailing comma, so a comma-free run of fragments is a syntax error. The agent checked
+`endpoint-s04-accidents.draft-A.js` — which had spliced clean — found `},` between entries, wrote
+its own file that way, and flagged the discrepancy rather than silently complying. **Fixed in
+`pd-ep-draft-brief.md` §3**, which was silent on it, so no future prompt can get it wrong again.
+
+### Verified from disk, not from an agent's report
+
+- Both validators re-run by the parent: `ALL CHECKS PASSED` for 6 A (11 entries, 0 holes) and 6 B
+  (12 entries, 0 holes).
+- Splice: `drafts -A.js:11 -B.js:12 = 23  staged 23`, `270 -> 293 (expected 293) | holes 0`.
+- Fold: `293 -> 291`, `output parses, array holds 291, 0 holes, 0 dead ids`.
+- `validate-all.js`: **ALL HARD CHECKS PASSED (5 files)**; `questions.peds.ep.js Q_PEDS_EP 291
+  entries, holes 0`.
+- `boot-check.js`: **0 console errors**, `QUESTIONS 4755 · THEORY 153 · MODULES 4 · 153 chapter
+  rows` (128 with questions, 25 empty by design), 4 module cards.
+- The only within-file duplicate `validate-all.js` still reports for this bank is
+  `pedep-gi-30 | pedep-gi-49`, which is correctly **not** a fold: an option is replaced, and the
+  replaced option is the key.
+
+### ⚠️ Cross-bank: §6 is the most House-shaped section yet — still RECORD ONLY
+
+The sweep put endpoint §6 against House chapter 6 at **three whole-stem matches** (n1 ≡
+`pedhd-peri-1` at 1.000, n8 ≡ `pedhd-peri-8` at 1.000, n5 ≡ `pedhd-peri-5` at 0.550) **and a further
+seven option-set matches with the key in the same position** — n2, n3, n4, n6, n7, n9, n15 against
+`pedhd-peri-2/3/4/6/7/9/15`, House `pediatric .pdf` pp.49–53. The numbering runs one-for-one across
+the whole chapter.
+
+**Nothing folds across the two banks while both chats write.** This is `alsoIn` work for the
+end-of-stream pass, which is still owed and now covers §1, §2, §3 (21 hits), §5 (`pedhd-inf-15` ≡
+`pedep-emg-59`) and §6 (10 hits). It **reads** `questions.peds.js` and only ever **writes**
+`questions.peds.ep.js`.
+
+### Harness registered for §6
+
+`merge-parts-ep.js`, `val-pd-ep.js`, **`splice-pd-ep.js`** and **`sweep-staged-ep.js`** all needed a
+section-6 row; the last two were missed until they refused to run, each costing one round trip. When
+opening a section, **register it in all four at once.**
