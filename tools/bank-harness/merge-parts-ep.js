@@ -58,9 +58,15 @@ all.forEach((q, i) => {
   const at = 'n=' + q.n + ' (p.' + q.p + ')';
   if (q.n !== i + 1) fail.push(at + ': n is not the position, expected ' + (i + 1));
   if (!Array.isArray(q.opts) || q.opts.length < 2) fail.push(at + ': ' + (q.opts || []).length + ' options');
-  if (typeof q.key !== 'number') fail.push(at + ': key is not numeric -- it must be a 1-based index, never a letter');
-  else if (q.key !== 0 && (q.key < 1 || q.key > q.opts.length)) fail.push(at + ': key ' + q.key + ' out of range 1..' + q.opts.length);
-  else if (q.key === 0) console.log('  ⚠️ ' + at + ': key 0 -- no highlight found, adjudicate before drafting');
+  // ⚠️ `key` is a ZERO-BASED index, matching the app's own `answer` and sections 1 and 2.
+  // Section 3 was first staged 1-based -- the brief said so and both agents complied -- and was
+  // converted here on 2026-09-03. val-pd-ep.js compares q.answer to the staged key with NO
+  // conversion, so a 1-based staging file drafts every answer one option too far AND PASSES
+  // EVERY CHECK: nothing in the harness knows which option is actually correct. There is no
+  // sentinel for "no highlight" -- 0 is the first option. A page with nothing highlighted is
+  // an adjudication, recorded in `note`, not a magic key value.
+  if (typeof q.key !== 'number') fail.push(at + ': key is not numeric -- it must be a 0-based index, never a letter');
+  else if (q.key < 0 || q.key >= q.opts.length) fail.push(at + ': key ' + q.key + ' out of range 0..' + (q.opts.length - 1));
   if (typeof q.stem !== 'string' || q.stem.length < 15) fail.push(at + ': stem missing or too short');
   if (typeof q.expl !== 'string') fail.push(at + ': expl must be a string ("" where the page prints no box)');
   if (typeof q.p !== 'number') fail.push(at + ': p must be the numeric PDF page');
@@ -93,7 +99,8 @@ const header = '/* =============================================================
   '   Every question is printed TWICE: an unanswered page, then the ANSWERED page with the key' + NL +
   '   highlighted in yellow and (usually) a bordered explanation box. Only answered pages are' + NL +
   '   staged. `n` is the true sequential index, `pr` what the page prints, `p` the PDF page,' + NL +
-  '   `key` a 1-BASED INDEX into `opts` (never a letter), `expl` the printed box verbatim or "".' + NL +
+  '   `key` a ZERO-BASED INDEX into `opts` (never a letter), matching the app field `answer`,' + NL +
+  '   `expl` the printed box verbatim or "".' + NL +
   '   =========================================================================== */' + NL +
   'var ' + cfg.svar + ' = [' + NL + NL;
 

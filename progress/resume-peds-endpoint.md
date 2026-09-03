@@ -629,7 +629,7 @@ isolation, and the sweep's three candidates resolve into two different outcomes:
 |---|---|---|
 | p.534 (n=60) | **exact reprint** of the live `pedep-gp-79` — same stem, same options, same key | **0** |
 | p.457 (n=22) | **reworded reprint** of the same `pedep-gp-79` — same vignette, same key, one option's text differs | **0** |
-| p.473 (n=39) / p.512 (n=53) | **NOT a fold. Two distinct questions on one template** | **2**, not 1 |
+| p.473 (n=30) / p.512 (n=49) | **NOT a fold. Two distinct questions on one template** | **2**, not 1 |
 
 67 − 2 = **65**. The number matches the original guess, but it was reached by different reasoning
 and the guess was right by coincidence — it assumed p.473/p.512 folded and did not know p.457
@@ -742,3 +742,45 @@ Section 3 splices at **67**, taking the live bank 148 → 215, and the fold pass
 **▶ NEXT: the drafting pass** — two `lean-drafter` halves writing `endpoint-s03-gastro.draft-A.js`
 (n=1–34) and `.draft-B.js` (n=35–67), then `val-pd-ep.js 3 A` / `3 B`, then
 `splice-pd-ep.js 3 --write`, boot check, `validate-all.js`.
+
+### ⚠⚠ The key convention was WRONG in section 3 staging, and no check could have caught it
+
+Sections 1 and 2 stage `key` as a **ZERO-BASED** index — `opts[key]` is the correct option, matching
+the app field `answer`. **My section-3 staging brief specified 1-BASED**, and both agents complied
+exactly. `val-pd-ep.js` compares `q.answer` to the staged `key` **with no conversion**, so drafting
+section 3 from that record would have set **every one of the 67 answers one option too far** — and
+it would have **passed every automated check in the harness**, because nothing here knows which
+option is actually correct. Staging, validator and splicer would all have agreed with each other
+and all been wrong. This is the sum-vs-parts rule in a new place: **two tools agreeing is not
+evidence when they read the same field from the same file.**
+
+Found by reading a section-2 draft entry beside its staging row before writing the section-3
+drafting brief: `pedep-nut-3` answers "3.9 kg", the **4th** option, with `answer:3`.
+
+**Fixed 2026-09-03**, in this order:
+
+1. Both part files rewritten, `key` decremented, anchored on the `p:<page>, key:<n>` token — 67
+   replacements, 34 + 33, matching the entry counts exactly. ⚠️ A bare `key:` grep counts **68** in
+   part-A: `n=22`'s note contains the English phrase "key: reassurance". Anchor on the field.
+2. `merge-parts-ep.js` range check moved to `0..opts.length-1`, and **its `key:0` sentinel deleted**
+   — 0 is now the first option, not "no highlight". Four entries (n=59, 63, 66, 67) were keyed to
+   the first option and had begun raising false "no highlight" warnings.
+3. Re-merged and re-verified against the two pages already read at 200 dpi: **n=41 p.495 key=4 →
+   the vitamin K option** (image: highlighted **e**, 5th of 5) and **n=45 p.504 key=2 → "Probiotic
+   treatment"** (image: highlighted **C**, 3rd of 4). Both land correctly. All 67 keys in range;
+   distribution across positions 0–4 is 17/13/14/14/9, with no pile-up at either end.
+
+⚠️ **Two escaping traps hit in the same edit, both already documented and both still expensive.**
+Python's text writer translated the files to **CRLF**, and `merge-parts-ep.js` splits entries on a
+bare `\n\n` — the merge then reported `DOES NOT PARSE: Unexpected token '{'`, which looks exactly
+like a corrupt staging file and is not. Peds files are pure LF; restored, 203 + 197 CRLF. Then the
+Bash heredoc **collapsed a `\\` to `\`** inside the Python source, so a JS string lost its escape and
+`merge-parts-ep.js` stopped parsing. **Write through `newline=''`, and never type a literal
+backslash inside a heredoc.**
+
+⚠️ **Correction:** the p.473/p.512 pair is **n=30 and n=49**, not the "n=39/n=53" written in the
+first version of this block and in commit `3ee4436`'s message. The page numbers were right
+throughout and the adjudication is unaffected — only the staging indices were misquoted, from
+memory rather than from the file. Confirmed from the array: both print the identical Hirschsprung
+stem and identical options 0–3, differ only at option 4 (`Treatment is by repeated finger
+dilatation` versus `Resolves spontaneously`), and **each is keyed to its own option 4**.
