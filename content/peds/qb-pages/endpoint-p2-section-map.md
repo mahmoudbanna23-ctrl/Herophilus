@@ -410,3 +410,53 @@ superseded claim is corrected in place rather than quietly dropped.
 Drafting split **three ways, not two** — A n:1–15, B n:16–27, C n:28–38 — chosen so the shared
 menu (n:8/n:14) and the n:14/n:15 follow-on pair each stay inside one half, and so no agent
 faces 22 entries against a 70-step cap.
+
+
+### Section 3 CLOSED AND LIVE — 2026-09-04
+
+**38 spliced. Live file 56 -> 94 entries, 118,741 -> 220,392 chars, 0 holes, 0 duplicate ids,
+one bank, one module, every `answer` in range.** Booted from `file://`: **0 console errors**,
+corpus 5,139 -> 5,177, chapters now `{normal-dev:28, dev-problems:28, genetics:38}`.
+
+**Drafted in three halves, all ALL CHECKS PASSED**: A n:1–15 (4,002 w), B n:16–27 (3,681 w),
+C n:28–38 (3,451 w). 11,134 words over 38 entries, **mean 293** — inside the adaptive budget
+with no entry needing a justified overrun.
+
+### Two printed keys left alone, and that is the section’s real content
+
+1. **p.211 (n:22) — the misprinted box is LIVE, word for word.** The endpoint file prints the
+   previous question’s explanation there (autosomal-recessive carrier probability) on a question
+   asking for Klinefelter’s karyotype. Quoted exactly as printed; the mismatch is named plainly
+   underneath so a reader is not left thinking they misunderstood; `answer` unmoved at index 4.
+2. **p.233 (n:33) — the harder one.** The stem asks which test is *diagnostic* and keys cell-free
+   fetal DNA. Strictly, cffDNA is a screening test confirmed by an invasive karyotype before any
+   irreversible decision. The entry says so, tagged as outside the material, and **leaves the key
+   at index 1.** Noting a defect and disputing one are different acts; only the first is ours.
+
+**All four unboxed entries (n:35–n:38) carry the unboxed marker** — verified by reading the live
+text for the marker, not by trusting the validator’s own pass. **Five figures, all pedigrees**;
+every `imgAlt` gives layout and modality only, never the inheritance pattern — which on those
+four questions **is** the answer.
+
+### Two faults the agents found that nobody told them to look for
+
+- Half A hit a malformed markdown table row inside a JS string and found it through
+  `node --check` before the validator ever saw it.
+- Half B had embedded its own outside-knowledge tag **inside a quoted box**, corrupting the
+  verbatim text. The validator’s non-fatal `quoted box differs from staging expl` warning caught
+  it exactly. **That check earns its keep by being a warning**: a failure would have been argued
+  with, a silent pass would have shipped it.
+
+### The tally instruction was wrong twice and is now stated without a direction
+
+Six tallying measurements exist. Three were accurate (55, 18, 63 against 66). Then, on this one
+section in one afternoon: **51 against 83** (low 39%), **~20 against 16** (**high 25%**),
+**~18–20 against 46** (low 59%), **~15 against 18** (low 17%). **The error has no direction and
+cannot be corrected for.** Both briefs previously said “tallying works”, then “treat your number
+as a floor”; both are wrong and both are corrected in place, not dropped. What stands: tally, say
+it is a tally and not a measurement, and **do not let it decide whether you keep going** — let
+the work decide, close out at a clean boundary, hand back.
+
+**Next: §4 Haematology, pp.245–451, `expect: 95`** — the largest body section, splitting across
+`haematology` and `haem-bleeding`. `expect` is an answered-page count and an upper bound; the
+true question count is measured while staging, as it was three times now.

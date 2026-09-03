@@ -24,21 +24,14 @@ GROWS as you work. Measured over a real 7-hour block: agents all start at 29–3
 five most expensive averaged **88–107k a step, peaking 167k, over 133–287 steps**. Stopping at 70
 and handing over costs a fraction of grinding to 250, for the same work.
 
-⚠️ **YOUR OWN ESTIMATE OF YOUR STEP COUNT IS UNRELIABLE — measured five times, 2026-09-04.** A part-2
+⚠️ **YOUR OWN ESTIMATE OF YOUR STEP COUNT IS UNRELIABLE — measured eight times, 2026-09-04.** A part-2
 staging agent reported "roughly 30 tool calls"; the harness recorded **64**. A part-2 drafting agent
 reported "roughly 10 tool calls" and listed them individually; the harness recorded **17**. Neither
 was careless — a step is easy to under-count from the inside, and batched, failed and retried calls
 vanish from the estimate. The two agents who kept a real running tally reported 55 and 18 and were
 right. **So do not report a number you did not count**: either tally as you go and say it is a
 tally, or say plainly that you did not count. An estimate stated as a measurement is the failure
-here, not the number. ⚠️ **A TALLY HELPS BUT DOES NOT FIX IT.** Kept-as-you-go tallies
-were right three times (55, 18, and 63 against 66) — then a section 3 staging agent kept one,
-said so, itemised the three calls it wasted on a mistake, and still reported **51** against a
-harness-recorded **83**: 39% low while doing everything asked. So the instruction is not
-"tally and you will be right". It is: tally, say it is a tally, and treat your own number as a
-**floor**. If the step budget matters, stop earlier than your count says you need to. An
-earlier version of this paragraph claimed the tally had solved it; the next agent disproved
-that, and the claim is corrected here rather than quietly dropped.
+here, not the number. ⚠️ **A TALLY DOES NOT MAKE YOUR COUNT RELIABLE — eight measurements now, 2026-09-04.** Counts reconstructed after the fact were low by about 40% both times (30 against 64, 10 against 17). Kept-as-you-go tallies were accurate three times (55, 18, and 63 against a harness-recorded 66) — and then, on one section in one afternoon, three tallying agents came in at **51 against 83**, **~20 against 16**, and **~18–20 against 46**. Low by 39%, **high by 25%**, low by 59%. Every one of them kept a tally and said so; one itemised the calls it had wasted. **So the error has no direction and cannot be corrected for.** Two earlier versions of this paragraph were wrong in turn — the first claimed tallying had solved it, the second said to treat your own number as a floor — and both are corrected here rather than quietly dropped, because a brief that silently revises itself teaches you to trust it more than the disk. **What actually holds:** tally as you go, say plainly that the number is a tally and not a measurement, and do not let it decide whether you keep going. **Let the WORK decide** — close out at a clean boundary with entries written to disk, and hand back. A partial pass reported honestly is a success; an agent grinding on because its own count said it had room is the expensive failure.
 
 **A partial pass reported honestly is a success.** Never spawn a sub-agent of your own.
 
