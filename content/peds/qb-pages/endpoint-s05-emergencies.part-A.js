@@ -24,7 +24,7 @@
   expl:'A non-blanching rash, fever, lethargy, and elevated heart rate are signs suggestive of meningococcal septicemia. This is a medical emergency requiring urgent antibiotics and supportive care.',
   fig:'Clinical photograph, close-up, of skin on a leg, positioned to the right of options A-D, above the explanation box.',
   figAlt:'Clinical photograph, close-up view of skin on the leg.',
-  note:'' }
+  note:'Verdict: question figure, decided by the p.238 precedent method. p.579 (unanswered printing) carries the identical clinical photograph of the leg rash, positioned to the right of options A-E, with no explanation box printed on that page and no option highlighted -- the same pattern as p.238, where a figure printed on the unanswered page is one the reader is meant to consult before answering. p.580 (answered printing) shows the same photograph in the same position (right of the options, above the boxed explanation), grouped with the options rather than inside the explanation box; key E (Septicaemia) is highlighted and boxed below. No caption or label appears on or near the photograph on either page. The stem does state the key finding in words (rash that does not blanch with pressure), but since the book prints the photograph before the answer is revealed on p.579, it is following the same question-figure convention as p.238, so it is kept as fig rather than reclassified as an answer-only illustration.' }
 
 { n:3, pr:3, p:582, key:4,
   stem:'A 3-year-old boy who is unconscious arrives at the Emergency Department. Airway, breathing, and circulation have been managed. Blood glucose is normal. On examination, his pupils are bilaterally pinpoint. Temperature and other vitals are normal. What is the most likely cause?',

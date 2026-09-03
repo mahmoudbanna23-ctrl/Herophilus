@@ -1192,3 +1192,29 @@ Also flagged and ordinary: n52 / p.683 prints a maternal HbA1c of **15%** agains
 separately: half A marked a photograph beside the options as `fig`, half B declined to mark one
 below the options. The rule is *must the reader look at it before answering*, and it is settled
 against **the unanswered printing**, exactly as p.238 was settled against p.237.
+
+### ✅ The p.580 figure: adjudicated a QUESTION figure, and it is cut
+
+**Settled the same way p.238 was, and it is now the method for this bank**: read the unanswered
+printing. **p.579 prints the identical photograph in the identical position beside options A–E,
+with nothing highlighted and no explanation box.** A book that prints the image *before* the answer
+is revealed means the reader to consult it. So `fig`/`figAlt` stay, and the reasoning is now in
+n2's `note`, which the staging agent had left empty.
+
+⚠️ **The obvious argument the other way was tested and lost**: the stem does state the finding in
+words ("does not blanch with pressure"), so the reader could answer without the picture. That is
+not the test. The test is what the book's own layout says, and its unanswered printing says
+question figure — the same convention it followed at p.237/238.
+
+- Crop `app\assets\q\q-pd-ep-580.jpg`, box **(520, 175) → (725, 320)** in the page's 800×450 frame,
+  **205×145 px, 4,979 bytes**. Accepted on the first box; two further crops were cut purely to
+  check the edges, and **looked at in the main chat as well as by the agent.**
+- **What the crop will and will not support**: legible are several red macules, one darker
+  purpuric lesion, a strip of dressing tape, and the examiner's finger performing the blanch test.
+  **Not** legible: fine skin texture or exact lesion borders. ⚠️ **An explanation must not claim
+  detail this image cannot carry** — the same ceiling that applies to p.238, and for the same
+  reason: the whole page is one embedded 800×450 JPEG, so re-rendering at higher dpi only upsamples.
+- `figAlt` is `Clinical photograph, close-up view of skin on the leg.` — modality and view only. It
+  names no lesion, no colour and no side, so the validator's `GIVEAWAY` regex has nothing to catch.
+
+Re-merged after the note edit: **61 entries, 57,466 chars.**
