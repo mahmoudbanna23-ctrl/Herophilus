@@ -2184,5 +2184,75 @@ obstruction, VUR, PUV, Wilms, neuroblastoma). Nothing was dropped — the exclus
 staging finished — but a brief rule must be checked against **which book** it describes.
 
 ### Id prefix
-`pedep-mfe1-N`. The prefix records the section a question was transcribed from (gp/nut/emg/per/neo/
-alg/gi/inf = §1–§9); `chapter` records its topic and is assigned independently.
+`pedep-mf1-N` — **not `pedep-mfe1-`, which is what this line said until 2026-09-04.** The staging
+file is named `endpoint-s10-mfe1`, and the file name was copied into the id by mistake. `mf1` is
+what `val-pd-ep.js` SEC[10] declares and what the 50 spliced entries carry. The prefix records the
+section a question was transcribed from (gp/nut/emg/per/neo/alg/gi/inf = §1–§9); `chapter` records
+its topic and is assigned independently.
+
+---
+
+## §10 CLOSED — 2026-09-04, 50 spliced, `Q_PEDS_EP` 445 → 495, 0 holes, boots with 0 errors
+
+Committed `d5f588e` (the reprint pass and the staging-note repair are the commit before it,
+`4b8c12f`). 12/13/12/13 across halves A–D, **every half passing its validator on the first run.**
+Coverage was checked against staging independently of the splicer: 50 drafted, 50 wanted, zero
+duplicates, zero missing, none of the 30 reprints drafted by mistake, nothing drafted that was never
+staged.
+
+**The three keypos disagreements were all the tool being wrong.** `--calibrate` over the array:
+74 agree, 3 disagree, 3 abstain of the 77 it answered. n54 p.1268, n60 p.1280 and n72 p.1304 were
+rendered and read **cold** — the reading agent was never told what had been staged. All three staged
+keys were right (meconium ileus C · UPJ obstruction B · Wilms chemotherapy C); each page carries
+exactly one fully highlighted option and no figure.
+
+**Calibration of record is now 315 staged keys: 306 agree, 5 disagree, 4 abstain — and all 315 were
+RIGHT.** ⚠️ **One stated limit is now known to be incomplete.** Two of the three new misses wrap,
+which is the documented shape, but **n60 does not wrap and is a single line**, so "an option below
+the key wraps" does not explain it. All four abstains report an implied index of −1, the same
+signature. The tool has still never been right against a staged key that was wrong — because there
+has not been one.
+
+**Paediatric surgery is in scope for this book** (the correction recorded above) and **17 of the 50
+are surgical.** There are no surgical chapters, so each files by organ system and timing:
+intussusception and constipation → `gi-abdopain` · Wilms and neuroblastoma → `malignant-solid` ·
+posterior urethral valves and UPJ obstruction → `renal-cakut` · diaphragmatic hernia →
+`perinatal-rd` · the newborn bowel obstructions, gastroschisis and anorectal malformation →
+`perinatal` · Hirschsprung and pyloric stenosis → `gastroenterology` · choledochal cyst → `liver`.
+
+### Four things the reprint pass found that the §10 adjudication above had wrong
+
+1. **Six of the 25 "byte-exact" folds are not byte-exact.** n1, n23, n24, n28, n52 and n69 differ
+   from their live entries **only in the apostrophe glyph** — staging recorded ASCII U+0027 where
+   the live entry carries curly U+2019. Keys and every other character agree. The pair check is
+   apostrophe-blind for that reason and strict about everything else. **Deliberately not written
+   into the six sources**: cosmetic variation is transcribed silently, not catalogued in
+   user-visible strings. Measured while there — **the bank has been mixed all along: 68 ASCII
+   against 32 curly across the 445 live stems and option lists**, §1 all-curly, every section after
+   it drifting toward ASCII. Not introduced here, not repaired here.
+2. **n12 and n47 read backwards when copied out of this journal.** The adjudication describes both
+   from the exam's side; a `source` line is read from the live entry's side. On disk the **exam**
+   printing of n12 is the one that LACKS "Obtain a chest x-ray" and leaves its options unpunctuated
+   (4 options against the live 5), and the **exam** printing of n47 is the "driver" one. Both
+   clauses were rewritten from the two texts, not from the summary of them. n48 also gained the
+   detail that "Plagiocephalic" is inserted **third**.
+3. **n62 halted the pass, correctly.** The exam prints the same key option with words **removed**
+   ("soft", and the sleep-positioner clause), which a strict comparison cannot tell apart from the
+   two printings disagreeing about the answer — the one distinction that matters. It is now a
+   **named and proved exception, not a waiver**: every word of the exam's key must already appear
+   in the live key, so an abbreviation passes and **a single added word halts the pass**. Measured:
+   26 words → 16, none added.
+4. **Two staging rows called a box overflow a straddle.** n27 and n51 carried the STRADDLES marker
+   while their own notes said stem, options and key sit on one sheet and only the explanation box
+   runs onto the next — which the `box` field already records, and both had it set right. **A
+   straddle is a question whose stem or options span two sheets; a box overflow is not one.** n41 is
+   the same shape and escaped only because its note said "STRADDLE" without the exact marker phrase.
+   The wording was corrected and every observation preserved verbatim. **Consequence for drafting:**
+   n41 and n51 are the two entries whose `source` names a second page (p.1241 and p.1262).
+
+### Next
+**§11 = Model Final Exam 2, pp.1322–1482, 79 questions.** Then MFE 3 (1483–1643, 80), MFE 4
+(1644–1804, 80), Training Exam 1 (1805–1873, 30), Training Exam 2 (1874–1936, 30). Exam Night Review
+opens at p.1937 and is prose — nothing to stage. **Part 1 is NOT closed until all six exams are
+done.** Expect §11 to reprint heavily too; stage first, adjudicate reprints against the live file,
+and only then decide how many entries the section actually drafts.
