@@ -144,8 +144,13 @@ detection, further OCR-confidence work, alternative OCR providers, pipeline stat
 plus `keypos.py`'s two documented misses (neither has produced a wrong shipped key), plus the
 frozen non-exam projects.
 
-## 9. Open question for the user
+## 9. The deadline — settled
 
-**The 14 Sep Peds OSCE is a practical exam, and the standing ruling of 2026-08-31 is to skip all
-OSCE content.** This bank therefore does not feed 14 Sep. The date it serves is **Peds papers
-17 Sep**. The window is planned to 17 Sep on that reading; say so if that is wrong.
+✅ **CONFIRMED by the user 2026-09-03: the 14 Sep Peds OSCE is a PRACTICAL exam and this bank does
+not feed it.** With the 2026-08-31 ruling to skip all OSCE content, the date this sprint serves is
+**Peds papers, 17 Sep** — **14 days**, not 11. Nothing is dropped: the OSCE is not in scope, so it
+is not a deadline that was missed.
+
+Order of exams the bank does feed: **Peds papers 17 Sep** · ENT 22 Sep (closed) · Ophtho 27 Sep
+(closed) · **Neuro 3 Oct** · Peds papers 18–19 Oct. So House and endpoint are the 17 Sep work and
+neuro's ~29 remaining are the 3 Oct work — **do not let neuro pull ahead of peds.**
