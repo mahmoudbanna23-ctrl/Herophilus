@@ -21,7 +21,7 @@ watch and dies with the session.
 
 | 3 Gastroenterology | 393–549 | 67 → **65** | ✅ **CLOSED 2026-09-03** — drafted, validated, spliced 148→215, folded 215→**213**. 65 `pedep-gi-*` live. |
 | 4 Accidents & poisoning | 550–562 | 3 | ✅ **CLOSED 2026-09-03** — staged, drafted, validated, spliced 213→**216**. No fold. 3 `pedep-acc-*` live. |
-| 5 Pediatrics Emergencies | 563–702 | 60 | not started |
+| 5 Pediatrics Emergencies | 563–702 | **61**, not the 60 the contents page prints | ⏳ mapped 2026-09-03, not staged — see the §5 block at the foot |
 | 6 Perinatal | 703–773 | 23 → **22?** | p.768 reprints `pedep-gp-70` — fold, do not stage |
 | 7 Neonatology | 774–903 | 53 | not started |
 | 8 Allergy | 904–928 | 9 | not started |
@@ -47,25 +47,38 @@ once stood here as "bytes" was a char count. (The 89/148/213-entry figures are e
 are dead.)
 
 **▶ RESUME HERE.** ✅ **Sections 1–4 are CLOSED**, each written up at the foot of this file, and all
-three fold passes are done. **Next is §5 Emergencies, pp.563–702, 60 answered pages** — nothing for
-it is staged, rendered or wired yet, so it starts from the beginning of the standing pipeline:
+three fold passes are done. **Live total is 216 of the 855 in part 1.** Next is **§5 Emergencies,
+pp.563–702, 61 answered pages** (not 60 — see below). **§5 is MAPPED, SWEPT and WIRED but NOT
+STAGED**: the two staging agents were launched on 2026-09-03 and killed by the user within a minute,
+before either wrote a byte, so **no `endpoint-s05-*` file exists on disk.** Resume at step 3.
 
-1. Read `content\peds\qb-pages\ocr\ep1\index.json` over pp.563–702 — confirm the answered-page
-   list, look for overflow boxes appearing as short `notes` pages, and note every `options-differ`
-   and `few-options` flag. ⚠️ **`options-differ` is usually two bad OCR reads of one option, not a
-   real difference** (§4 proved this) — check both `.txt` reads before spending a re-render.
-2. Add a section-5 row (`pedep-emg-`, `endpoint-s05-emergencies`, `PEDEP_S05_STAGED`) to all three
-   of `val-pd-ep.js`, `splice-pd-ep.js` and `merge-parts-ep.js`; `node --check` each.
-3. Pull the answered pages with `tools\ep-index\pull.py`, then stage in **two halves** (60 pages is
-   the first section since §1 big enough to want splitting) — briefs modelled on
-   `<scratchpad>\s04-brief.md`, which states the **ZERO-BASED** key convention correctly.
+1. ✅ **DONE.** The index was read over pp.563–702 and the section is mapped at the foot of this
+   file under *"Section 5 — Emergencies, mapped 2026-09-03"* — answered-page list, `options-differ`
+   flags, `thin` flags, and the p.584 adjudication. Nothing there needs re-deriving.
+2. ✅ **DONE.** The section-5 row (`pedep-emg-`, `endpoint-s05-emergencies`, `PEDEP_S05_STAGED`) is
+   live in all three of `val-pd-ep.js`, `splice-pd-ep.js` and `merge-parts-ep.js`; each passes
+   `node --check`. `merge-parts-ep.js` carries `expect: 61` and the comment explaining why.
+3. **⟵ START HERE. Re-pull the images and stage in two halves.** ⚠️ **The rendered pages died with
+   the session scratchpad** — `pull.py` must be run again. Its `<pages>` argument is a
+   **comma-separated** list of singles and `A-B` ranges; **there is no step syntax** (`586-672:2`
+   raises `ValueError`), so generate the explicit list. The half split, already computed:
+   **Half A = n1–31**, pp.577, 580, 582, 584, then 586–638 even.
+   **Half B = n32–61**, pp.640–672 even, then 675, 678, 681, 683, 685, 687, 689, 691, 693, 695,
+   697, 699, 701.
+   Briefs modelled on `<scratchpad>\s04-brief.md` (the **ZERO-BASED** key convention stated
+   correctly). The §5 brief written on 2026-09-03 also died with the scratchpad; the mapping section
+   at the foot of this file holds everything it carried.
 4. `merge-parts-ep.js 5 --write` → draft both halves → `val-pd-ep.js 5 A` and `5 B` →
-   `splice-pd-ep.js 5 --write` → fold sweep as a separate pass → `validate-all.js` →
-   `boot-check.js` → commit with an explicit pathspec.
+   `splice-pd-ep.js 5 --write` → fold pass as a separate pass → **re-run `reprint-pd-ep.js 563 702`
+   with p.584 in the set** → `validate-all.js` → `boot-check.js` → commit with an explicit pathspec.
 
-⚠️ Run `reprint-pd-ep.js 563 702` before staging: §5 is Emergencies and House holds a populated
-`emergencies` chapter, so cross-bank hits are likely. **A cross-bank match adds `alsoIn`; it never
-removes an entry and never changes the staging count.**
+⚠️ **The reprint sweep has already been run once (2026-09-03) — do not re-derive it, read it at the
+foot of this file.** Its findings: **no cross-bank hits at all** — House's `emergencies` chapter is
+**empty**, so the "cross-bank hits are likely" guess that stood here was wrong. Three self-reprints:
+p.630 (Q28) reprints p.586 (Q5), reworded; p.697 (Q60) reprints p.689 (Q56), punctuation only;
+p.636 (Q31) reprints live `pedep-acc-2`. So **§5 stages 61 and is expected to fold to 58 live.**
+⚠️ The sweep took its page list from the index classification, so **p.584 was never swept** — it
+must be included when the sweep is re-run after staging.
 
 ---
 
@@ -943,3 +956,75 @@ pre-existing ENT/ophtho set, unchanged. `boot-check.js` **0 console errors** —
 **§5 Emergencies, pp.563–702, 60 answered pages** — the first section since §1 large enough to want
 splitting across two drafting halves. The cross-bank `alsoIn` pass (21 House hits in §3, plus §1
 and §2) is still owed and still unstarted.
+
+---
+
+## Section 5 — Emergencies, mapped 2026-09-03 from the index (not staged)
+
+**61 questions, not 60.** The contents page and the pre-map both say 60; the index says
+`question 62 · answered 60 · notes 18` over pp.563–702, and 62+60 cannot be 60 pairs. **The
+discrepancy resolves to one mis-classified page, read on the image and settled:**
+
+⚠️ **p.584 IS AN ANSWERED PAGE.** The index filed it `question` because its yellow measure is 748
+against a 520 baseline and a 1,400–3,400 range on every other answered page in the section — under
+whatever threshold the classifier uses. It is a full, unambiguous highlight; **it just covers the
+two characters "B. 9"**. That is the whole story of the low number, and it is the shape to expect
+wherever a bank's options are single digits or single words. **A yellow measure is a proxy for a
+highlight, not the highlight** — pp.583–585 running as three `question` pages in a row is the
+tell that costs nothing to check.
+
+Question 4 (pp.583 unanswered / **584 answered**): a GCS calculation in a 3-year-old with fever.
+Options **A. 8 · B. 9 · C. 10 · D. 11 · E. 12**, key **B**, staged as the zero-based index 1. ⚠️ **An automated text
+extraction returns only C, D and E from both pages** — A and B are lost by OCR on both — which is
+exactly why the option list was read off the image. The printed box:
+
+> •Eyes open to pain = 2
+> •Verbal response = cries = 2
+> •Motor response = (localizes pain)= 5
+> Total = 9 (moderate coma).
+
+Components sum to the printed total; no discrepancy. p.584 also carries a **reference table**
+("Glasgow Coma Scale (4–15 years)" / "Children's Coma Scale (<4 years)") with three cells
+highlighted. ⚠️ **Do not stage that table as a `fig`** — a figure renders between stem and options
+and this one names the three scoring rows, i.e. it hands over the answer. Its content belongs in
+the explanation, after the key.
+
+**Answered pages (61):** 577 580 582 **584** 586 588 590 592 594 596 598 600 602 604 606 608 610
+612 614 616 618 620 622 624 626 628 630 632 634 636 638 640 642 644 646 648 650 652 654 656 658
+660 662 664 666 668 670 672 675 678 681 683 685 687 689 691 693 695 697 699 701.
+
+Clean question/answered alternation throughout except the pp.583–585 run above. Parity flips at
+p.675 and again at p.681, around the notes pages 673 / 676 / 679. **No overflow boxes** — no
+`notes` page in range is short enough to be one, and every notes page sits in a run, not between a
+question and its answer.
+
+**Index flags in range:** `thin` on 563 575 643 653 676 679 702 (all `notes` but 643 and 653, which
+are `question` pages — read those two hard); `options-differ` on 577 591 592 604 610 622 624 650
+656 672 695 701; `passes-differ` on 702 (a `notes` page, out of scope). ⚠️ **`options-differ` was
+spurious every time it has been checked** — in §4 it was two bad OCR reads of one option. Check
+both `.txt` reads before spending a re-render.
+
+**Before staging, run `reprint-pd-ep.js 563 702`.** House holds a populated `emergencies` chapter,
+so cross-bank hits are likely. A cross-bank match adds `alsoIn`; it never removes an entry and
+never changes the staging count.
+
+### §5 reprint sweep, run 2026-09-03 before staging
+
+`reprint-pd-ep.js 563 702` — **no cross-bank hits at all.** House's `emergencies` chapter holds
+**0 of its 243 questions**, so §5 adds nothing to the `alsoIn` debt. Three self-reprint candidates,
+all confirmed distinct-page printings of one question by their OCR stems:
+
+| candidate | printings | shape |
+|---|---|---|
+| p.586 (Q5) == p.630 (Q28) | both in §5 | reworded: "runs in screaming" / "runs screaming into the department"; "What is the next most appropriate step?" / "Which is the next most appropriate…" |
+| p.689 (Q56) == p.697 (Q60) | both in §5 | near-exact, punctuation only |
+| p.636 (Q31) == **`pedep-acc-2`** (p.559, live) | cross-section | the Louise road-traffic vignette, reworded — §4's question reprinted inside §5 |
+
+So §5 stages and drafts **61**, then folds to an expected **58 live**. ⚠️ **All 61 are still staged
+and drafted in full** — the splice gate requires every staged id drafted exactly once, and the fold
+is a separate pass afterwards. Do not skip a page because this table names it.
+
+⚠️ **The sweep reports "answered pages in range: 60" — it takes the index's classification, so
+p.584 was never swept.** Its GCS stem is distinctive and no other §5 page resembles it, but that is
+an eyeball judgement, not a measurement: **re-run the sweep against the staged file once §5 is
+staged, when p.584 is in the set.**

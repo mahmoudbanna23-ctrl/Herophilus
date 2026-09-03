@@ -25,6 +25,12 @@ const SEC = {
        pages: '393-549', expect: 67 },
   4: { base: 'endpoint-s04-accidents', svar: 'PEDEP_S04_STAGED', title: 'SECTION 4: "Accidents"',
        pages: '550-562', expect: 3 },
+  // ⚠️ 61, not the 60 the contents page and the pre-map both print. p.584 is an answered page the
+  // index filed as `question`: its yellow measure is 748 against a 520 baseline, under the
+  // classifier's threshold, because the highlight covers the two characters "B. 9". Read on the
+  // image 2026-09-03 and settled. Trust no printed count.
+  5: { base: 'endpoint-s05-emergencies', svar: 'PEDEP_S05_STAGED', title: 'SECTION 5: "Pediatrics Emergencies"',
+       pages: '563-702', expect: 61 },
 };
 
 const secNum = process.argv[2];

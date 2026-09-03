@@ -32,6 +32,8 @@ const SEC = {
        draft: 'endpoint-s03-gastro.draft', chapter: 'gastroenterology' },
   4: { prefix: 'pedep-acc-', file: 'endpoint-s04-accidents.array.js', svar: 'PEDEP_S04_STAGED',
        draft: 'endpoint-s04-accidents.draft', chapter: 'accidents' },
+  5: { prefix: 'pedep-emg-', file: 'endpoint-s05-emergencies.array.js', svar: 'PEDEP_S05_STAGED',
+       draft: 'endpoint-s05-emergencies.draft', chapter: 'emergencies' },
 };
 
 // imgAlt must give MODALITY AND VIEW ONLY. Naming the finding answers the question --
