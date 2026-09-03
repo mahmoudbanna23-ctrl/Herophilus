@@ -181,8 +181,14 @@ D.forEach(q => {
   if (!q.objective || !q.objective.trim()) fail.push(q.id + ': objective empty');
 
   if (FIGURE.has(n)) {
+    // A page carrying more than one figure disambiguates with a lowercase letter suffix.
+    // q-pd-hd-26a/b/c, -52a/b/c, -5a/b, -7a/b are already live and have been for weeks, so the
+    // suffix is the established convention, not a new invention. The old rule demanded the bare
+    // q-pd-hd-<page> unconditionally, which no chapter had yet contradicted because none had two
+    // figures on one page. ch.13 has three such pages. Corrected 2026-09-03.
     const want = 'q-pd-hd-' + s.p;
-    if (q.image !== want) fail.push(q.id + ': image should be the basename ' + want + ', got ' + JSON.stringify(q.image));
+    if (!new RegExp('^q-pd-hd-' + s.p + '[a-z]?$').test(q.image || ''))
+      fail.push(q.id + ': image should be ' + want + ' or ' + want + '<letter>, got ' + JSON.stringify(q.image));
     if (!q.imgAlt || !q.imgAlt.trim()) fail.push(q.id + ': imgAlt missing');
     // The crop is cut AFTER drafting, so a missing file is a warning here, not a failure.
     if (q.image && !fs.existsSync(R + 'app/assets/q/' + q.image + '.jpg'))
@@ -198,15 +204,35 @@ D.forEach(q => {
   Object.keys(q).forEach(k => { if (!allowed.has(k)) fail.push(q.id + ': stray field ' + k); });
 });
 
-// Two figure questions on one page would collide on the q-pd-hd-<page> basename.
+// Two figure questions on one page must not SHARE a basename -- but the fix is the letter suffix,
+// not a ban. This block used to fail any such page outright while the rule above simultaneously
+// DEMANDED the colliding bare basename, so a chapter with two figures on one page could not pass
+// however it was written. That contradiction sat here undetected until ch.13, which has three such
+// pages, ran through it. What matters is the actual collision, so test for that instead of for the
+// shape that merely predicts one. Corrected 2026-09-03.
 const figPages = {};
 [...FIGURE].forEach(n => {
   const p = S.find(x => x.n === n).p;
   (figPages[p] = figPages[p] || []).push(n);
 });
+const seenBase = {};
+D.forEach(q => { if (q.image) (seenBase[q.image] = seenBase[q.image] || []).push(q.id); });
+Object.keys(seenBase).forEach(b => {
+  if (seenBase[b].length > 1)
+    fail.push('BASENAME COLLISION: ' + seenBase[b].join(', ') + ' all use ' + b +
+              ' -- give each a distinct lowercase letter suffix');
+});
+// A page with several figures may not leave any of them on the bare basename: the bare form and a
+// suffixed form on the same page still read as two names for one crop.
 Object.keys(figPages).forEach(p => {
-  if (figPages[p].length > 1)
-    fail.push('BASENAME COLLISION: n:' + figPages[p].join(', n:') + ' all sit on p.' + p + ' and would share q-pd-hd-' + p);
+  if (figPages[p].length < 2) return;
+  const bare = figPages[p].filter(n => {
+    const q = D.find(x => x.id === cfg.prefix + n);
+    return q && q.image === 'q-pd-hd-' + p;
+  });
+  if (bare.length)
+    fail.push('p.' + p + ' carries figures on n:' + figPages[p].join(', n:') + ' -- n:' +
+              bare.join(', n:') + ' must carry a letter suffix, not the bare basename');
 });
 
 // A shared option menu pairs questions; it never folds them. The comparative table lives

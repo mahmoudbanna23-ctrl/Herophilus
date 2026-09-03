@@ -86,8 +86,20 @@
 //     B/W chest X-ray.  No figure on n:3,4,5 (p.102), n:6,7,8 (p.103), n:14-28 (p.105-110) —
 //     each box was examined individually, not assumed empty from the pattern.
 //
-// SHARED MENUS — TWO runs, both closed, no third run found in n:23-28 (each of those six boxes
-//   prints a unique five-option menu, checked against every neighbour):
+// SHARED MENUS — THREE runs, all closed. ⚠️ CORRECTED 2026-09-03: this line said TWO and listed
+//   only the two below. A THIRD run, n:12 + n:13, was missed — the two print an identical five-option
+//   menu in identical order (Pneumonia / Inhaled foreign body / Laryngotracheobronchitis (croup) /
+//   Bronchopulmonary dysplasia (BPD) / Chronic asthma). Found by the drafting pass and confirmed
+//   independently by val-pd.js, which derives the runs from this array rather than from this header;
+//   the two agreed, and both disagreed with what was written here. The staging entries themselves
+//   were correct — only this summary missed the pair. RUN 0 is recorded as a PAIRING, nothing folded:
+//   the comparative table is anchored in pedhd-resp-12, and n:13 names that anchor plus its own
+//   discriminating token. The reason it was missed is instructive: n:12 and n:13 sit on the same
+//   page, and the sweep for shared menus was looking across page breaks, where RUN 1 and RUN 2 both
+//   live. A menu shared by two boxes on ONE page is the easiest kind to walk past.
+//   RUN 0, n:12,13 (pneumonia/foreign body/croup/BPD/asthma menu, two-deep, both on p.105).
+//   The two runs found on the first pass, unchanged and still correct (n:23-28 confirmed clear —
+//   each of those six boxes prints a unique five-option menu, checked against every neighbour):
 //   RUN 1, n:14,15,16,17 (croup/bronchiolitis/pneumonia/pertussis menu, four-deep, "Bronchiolitis"
 //   printed twice at A and D on every box).
 //   RUN 2, n:18,19,20 (oral corticosteroid/salbutamol/antipyretic/CPAP/intubation menu, three-deep,
