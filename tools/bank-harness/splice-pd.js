@@ -32,6 +32,8 @@ const CH = {
         draft: 'house-ch15-allergy.draft-',          dvar: 'PEDHD_ALLERGY_DRAFT_' },
   16: { prefix: 'pedhd-gp-',     staging: 'house-ch16-growth.array.js',          svar: 'PEDHD_GROWTH_STAGED',
         draft: 'house-ch16-growth.draft-',           dvar: 'PEDHD_GROWTH_DRAFT_' },
+  17: { prefix: 'pedhd-emg-',    staging: 'house-ch17-emergencies.array.js',     svar: 'PEDHD_EMG_STAGED',
+        draft: 'house-ch17-emergencies.draft-',      dvar: 'PEDHD_EMG_DRAFT_' },
 };
 
 const chNum = process.argv[2];

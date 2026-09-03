@@ -26,6 +26,8 @@ const CH = {
         draft: 'house-ch15-allergy.draft-' },
   16: { prefix: 'pedhd-gp-',     file: 'house-ch16-growth.array.js',           svar: 'PEDHD_GROWTH_STAGED',
         draft: 'house-ch16-growth.draft-' },
+  17: { prefix: 'pedhd-emg-',    file: 'house-ch17-emergencies.array.js',      svar: 'PEDHD_EMG_STAGED',
+        draft: 'house-ch17-emergencies.draft-' },
 };
 
 // imgAlt must give MODALITY AND VIEW ONLY. Naming the finding answers the question --
