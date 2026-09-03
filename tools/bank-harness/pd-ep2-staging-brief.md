@@ -52,7 +52,7 @@ spend a step looking for a ghost.
 | What | Where | Size |
 |---|---|---|
 | native slide JPEG, one per page | `<SCRATCH>\ep2-index\native\pNNNN.jpeg` | **800 × 450** |
-| 150 dpi A4 render of the same page | `<SCRATCH>\ep2-index\hires\pNNNN.jpeg` | 1241 × 1754 |
+| 150 dpi A4 render of the same page | `<SCRATCH>\ep2-index\hires\pNNNN.png` (**.png, not .jpeg**) | 1241 × 1754 |
 
 `<SCRATCH>` is given in your task prompt. `NNNN` is the PDF page zero-padded to four digits.
 

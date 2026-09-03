@@ -38,11 +38,14 @@ function near(a, b) {
 // live entry, so anything under 100% means the matcher has drifted on this book. A probe's zero
 // is a claim about the probe first, which is the whole reason this exists.
 //
-// ⚠️ SELF_TEST_RANGE IS EMPTY UNTIL PART 2'S FIRST SECTION IS SPLICED. Part 1's numbers (pp.5-210,
-// 89 pages) are meaningless here: part 2's pages restart at 1 and its live file starts empty. Set
-// the range to the first closed section's page span, run it, and record the score in the journal
-// BEFORE trusting a reprint sweep. Until then --self-test refuses rather than scoring zero.
-const SELF_TEST_RANGE = null;   // e.g. [5, 75] once section 1 is closed
+// CALIBRATED 2026-09-04, the day section 1 was spliced: 28/28 pages in pp.5-75 matched their own
+// live entry, first run, no tuning. Part 1's numbers (pp.5-210, 89 pages) do not transfer -- part
+// 2's pages restart at 1 -- so this is part 2's own score and 28/28 is what it must stay at. A
+// later run under 28 means the matcher has drifted on this book, or the live file has, and the
+// reprint sweep is not to be trusted until that is explained. Re-run it after any edit to head(),
+// near() or norm.js. If SELF_TEST_RANGE is ever cleared, --self-test refuses rather than scoring
+// a meaningless zero against an empty file.
+const SELF_TEST_RANGE = [5, 75];   // section 1, Normal Development -- spliced 2026-09-04, 28 live entries
 const selfTest = process.argv.includes('--self-test');
 if (selfTest && !SELF_TEST_RANGE) {
   console.error('--self-test is not calibrated for part 2 yet: no section is closed, so the live '

@@ -180,3 +180,20 @@ prompt to look, never as a finding.
 
 p.75 is a closing devotional slide (Arabic dua, no question). **p.76 opens with the red banner
 "Developmental problems"** — §2's title. §1 ends at 75 and §2 begins at 76, as mapped.
+
+### Spliced, and the matcher calibrated against the result
+
+`node tools\bank-harness\splice-pd-ep2.js 1 --write` -- validator gate re-ran both halves and
+passed, drafted 28 matched staged 28. `app\data\questions.peds.ep2.js` **383 -> 56,069 bytes,
+0 -> 28 entries**. Read back off disk: length 28, **0 sparse holes**, ids unique, `pedep2-nd-1..28`,
+one bank `endpoint`, one module `pediatrics`, one chapter `normal-dev`, every `answer` in range.
+
+Boot from `file://` after the splice (`node tools\boot-check\boot-check.js`): **0 console errors**,
+QUESTIONS 5111, THEORY 153, 153 chapter rows, 4 module cards. (5111 is a corpus mid-run with two
+other chats writing -- a reading, not a count.)
+
+`reprint-pd-ep2.js` `SELF_TEST_RANGE` set to `[5, 75]` and run: **28/28 pages matched their own live
+entry, first run, no tuning.** That is part 2's calibration-of-record for the reprint matcher, and
+it is what makes the section 2 sweep believable. Part 1's 89/89 does not transfer -- part 2's pages
+restart at 1. Re-run after any edit to `head()`, `near()` or `norm.js`; anything under 28 is drift
+to explain, not a result.

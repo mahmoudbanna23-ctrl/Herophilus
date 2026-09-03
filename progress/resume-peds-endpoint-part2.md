@@ -281,3 +281,37 @@ gap, cap 60 s, retry the same pages).
 - **Next after §1 merges:** re-run `keypos.py --calibrate` on §1 and replace the
   calibration-of-record; set `SELF_TEST_RANGE = [5, 75]` in `reprint-pd-ep2.js` and record its
   self-test score **before trusting any later reprint sweep**. Then §2 onward, in order.
+
+### 2026-09-04 later — §1 CLOSED AND LIVE
+
+- ✅ **§1 SPLICED. `app/data/questions.peds.ep2.js` 0 -> 28 entries, 383 -> 56,069 bytes.**
+  Read back off disk: length 28, **0 sparse holes**, ids unique `pedep2-nd-1..28`, one bank
+  `endpoint`, one module `pediatrics`, one chapter `normal-dev`, every `answer` in range.
+  Boot from `file://`: **0 console errors**, QUESTIONS 5111, 153 chapter rows, 4 module cards.
+  Commit `0ff5896`, unpushed.
+- ✅ **`keypos.py --calibrate` on §1: 28 agree, 0 disagree, 0 abstain.** Part 2's
+  calibration-of-record. It measures the highlight's row centroid against the option bands in
+  pixels — the only check here that does not compare a key with itself. Agreement still does not
+  make a key right; what it rules out is a section staged one option out.
+- ✅ **`SELF_TEST_RANGE = [5, 75]` set and run: 28/28, first run, no tuning.** Recorded in the
+  tool's own header. **28/28 is what it must stay at** — anything less is matcher drift to explain
+  before a reprint sweep is believed. Part 1's 89/89 does not transfer; part 2's pages restart at 1.
+- ✅ **`§1` measurements**: `pr == n` on all 28 (no repeats, unlike part 1's §1) · 26 boxed,
+  2 unboxed · **no overflow boxes** · **zero figures** · 19 five-option / 9 four-option ·
+  **6 shared option menus, not the 3 the agents noticed** · 10 index flags looked at, **none
+  reproduced on the image** · boundary proved off p.75 (devotional slide) and p.76 (§2 banner).
+- ⚠ **THE FOUR-OPTION RUN IS REAL**, not a reader artefact — I called it one, wrongly. Two by-eye
+  audits: pp.42-52 all five options, so the break is inside one reader's range, not at the seam;
+  pp.54/60/74 print a ladder that **stops at `d`**. Twins agree.
+- ⚠ **AN AGENT'S OWN STEP COUNT IS UNRELIABLE.** One reported "roughly 30 tool calls"; the
+  harness recorded **64**. Recorded in `pd-ep2-staging-brief.md` §0.
+- ⚠ **A DRAFTING PROMPT I WROTE WAS WRONG**: I told half B it had no shared option ladders. It
+  has three. The evidence was already in the merged array. Fix is now a tool, not care:
+  **`node tools\bank-harness\menus-pd-ep2.js <array.js>` — run it on the merged array BEFORE
+  writing either half's drafting prompt.** An agent reports what it noticed; that reports what is there.
+- **Six contradictions recorded in `explanation`, the printed key never moved** (n8 square-copying
+  4 vs 5 y · n9 person-specific word 10 vs 12 mo · n10 two-step commands 3 y vs 18-24 mo ·
+  n19 early hand preference filed as fine-motor delay not a CP red flag · n22 sits with minimal
+  support 4 vs 6 mo · n26 vocalizing at 6 weeks vs cooing 2-3 mo).
+- **Next: §2 Developmental problems, pp.76-154, `expect: 30`, prefix `pedep2-dp-`, chapters
+  `dev-problems`/`dev-nd`.** Sweep with `reprint-pd-ep2.js 76 154` before drafting a line.
