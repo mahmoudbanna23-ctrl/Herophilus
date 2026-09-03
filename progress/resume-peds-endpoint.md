@@ -1298,3 +1298,39 @@ So **§5 reprints live §4 twice** — n30 ≡ `pedep-acc-2` and n33 ≡ `pedep-
 said, though only one of the two was reachable by the instrument that was supposed to find them.
 **Both folds keep the fuller printing, which in both cases is the §5 one.** All of it is for the
 separate fold pass after the splice; nothing here is resolved and nothing here blocks drafting.
+
+### ✅ §5 half A DRAFTED 2026-09-03 — `pedep-emg-1` … `pedep-emg-31`
+
+`content\peds\qb-pages\endpoint-s05-emergencies.draft-A.js`, **91.8 KB, 31 entries, 0 holes.**
+**Verified from disk, not from the agent's report** — `val-pd-ep.js 5 A` re-run here: `ALL CHECKS
+PASSED`, `chapters {"emergencies":31}`, staged-but-not-in-this-file = the 30 of half B, exactly as
+it should be. Words 243–463, mean ≈328, total 10,180 — inside the ~250–520 adaptive budget
+throughout.
+
+Four checks the validator does **not** run, run separately against the staging: **0** key moves,
+**0** option-count mismatches, **0** entries missing a page citation, over all 31.
+
+**11 gap-fill entries**, each tagged inline on the claim: n1 n3 n4 n7 n12 n20 n22 n24 n26 n29 n31.
+SIDS (n12, n26) and the head-tilt–chin-lift manoeuvre (n29) were each confirmed absent by grepping
+the cached lectures before being filled — ⚠️ **read the slide before declaring a gap** is the rule
+that has been paid for seventeen times.
+
+**n24, the defective printed dose, handled correctly:** `answer` stayed at 0, the key option is
+transcribed verbatim as `Intramuscular 1 microgram/kg adrenaline (epinephrine) (1:1000)`, and the
+~10× correction is a tagged gap-fill inside the explanation. `27)Anaphylaxsis.txt` prints **no**
+numeric dose anywhere, which is why the correction cannot be sourced. **This was never a key
+dispute and never went to the user as one.**
+
+**11 explanations cross-reference another id, and all 11 are legitimate** — checked sentence by
+sentence rather than by count. n13 tabulates the five-vignette ABCDE ladder and n14–n17 point at
+it, which is the required shared-menu shape; the rest are contrasts with earlier entries.
+⚠️ **None of them points at n5, n27 or n30** — the three half-A fold candidates — so no fold can
+strand a reference. **A folded id loses its backticks everywhere it is still mentioned**, so this
+is checked before every splice, not after.
+
+⚠️ **One probe of mine was wrong here and is worth remembering:** I tested for "prints no
+explanation box" with `!s.box` and got **all 30** of half B, which would have meant the whole half
+was unboxed. The staging has no `box` field at all — the printed box lives in **`expl`**. The real
+answer is **n36, n48, n49, n50, n61** in half B and **n1** alone in half A, which is what the
+journal already said. **A zero — or a thirty — from a probe you just wrote is a claim about the
+probe first.**
