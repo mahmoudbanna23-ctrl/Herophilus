@@ -78,19 +78,22 @@ watch does not build.
 ## The auto-loaded tax — the only numbers with a hard rule behind them
 
 These four are re-sent with **every single request**, not once per session. Workspace rule §9 caps
-each at **200 lines**. Measured 2026-09-03 03:25:
+each at **200 lines and 22 KB**, and since 2026-09-03 that cap is **enforced by a hook**
+(`D:\claude os\Tools\guard\context-budget.js`, `PreToolUse` on `Edit|Write`) rather than by memory:
+it refuses any write that pushes an over-budget file further over, and always allows a shrink.
+Re-measured 2026-09-03 05:10, after the root §8 rewrite moved history out of the root files:
 
 | file | lines | chars |
 |---|---|---|
-| workspace `CLAUDE.md` | 191 | 11,357 |
-| workspace `MEMORY.md` | 181 | 13,862 |
+| workspace `CLAUDE.md` | 187 | 11,062 |
+| workspace `MEMORY.md` | 166 | 11,751 |
 | Herophilus `CLAUDE.md` | 190 | 13,166 |
-| Herophilus `MEMORY.md` | 189 | 18,808 |
-| **per request** | **751** | **57,193 ≈ 14.3k tokens** |
+| Herophilus `MEMORY.md` | 191 | 18,973 |
+| **per request** | **734** | **54,952 ≈ 13.7k tokens** |
 
 ⚠️ **Compare against the 200-line CAP, never against this table.** Flag any file at **195 or more**.
-Three of the four are within ten lines of the cap right now, and a file you personally trimmed can
-be back at the cap before you finish the session.
+The two Herophilus files are within ten lines of the cap right now, and Herophilus `MEMORY.md` is
+the largest of the four in bytes while passing on lines — which is why the hook checks both.
 
 **History of the trims** — each was a documented split, verbatim, with a dated pointer left behind,
 and **no live rule ever left a file**:

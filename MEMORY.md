@@ -35,12 +35,12 @@ all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`.
 
 - ⏳ **PEDS HOUSE — bank MEASURED at 393; `questions.peds.js` holds 243, ch.1–11 spliced; 150 remain
   (ch.12–20).** **ch.12 is ALREADY STAGED, untracked** (`content\peds\qb-pages\house-ch12-neurological.array.js`,
-  13 KB at 03:13) — resume at drafting. Peds OSCE **14 Sep**, nearest exam.
+  47.6 KB at 03:44, watch-measured) — resume at drafting. Peds OSCE **14 Sep**, nearest exam.
 - ⏳ **PEDS ENDPOINT part 1 — LAUNCHED 2026-09-02, RUNNING; part 2 deferred by the user.**
   **`app\data\questions.peds.ep.js` holds 148** (s1 Growth & Puberty 89 + s2 Nutrition 76 = 165, then
   **two fold passes of self-reprints: 165 -> 150 -> 148**). **Section 3 Gastro is mid-staging, untracked**
-  (`content\peds\qb-pages\endpoint-s03-gastro.part-A.js` / `part-B.js`) — a section outgrew one file,
-  hence new `tools\bank-harness\merge-parts-ep.js` and the splicer's validator gate fixed for split
+  (`endpoint-s03-gastro.part-A/B.js` → `.draft-A/B.js` → `.array.js`; drafts newest 03:44) — it
+  outgrew one file, hence `tools\bank-harness\merge-parts-ep.js` and the splicer's validator gate for split
   sections. ⚠️ **Never run `val-pd.js`/`splice-pd.js` on endpoint files — they write Chat B's live
   file**; the `-pd-ep` pair is the endpoint's, and the splice refuses unless its validator exits 0.
   **Search index: `content\peds\qb-pages\ocr\ep1\`** (p0001–p1991 .txt, two OCR reads each +
