@@ -1218,3 +1218,83 @@ question figure — the same convention it followed at p.237/238.
   names no lesion, no colour and no side, so the validator's `GIVEAWAY` regex has nothing to catch.
 
 Re-merged after the note edit: **61 entries, 57,466 chars.**
+
+### ✅ §5 swept 2026-09-03 — and the sweep tool had to be rebuilt twice before its output was worth anything
+
+`tools\bank-harness\sweep-staged-ep.js`, new. It exists because **`reprint-pd-ep.js` takes its page
+set from the OCR index's classification**, the index mis-filed p.584, and so the §5 reprint sweep
+reported "answered pages in range: 60" and never looked at p.584 at all. A sweep that inherits a
+classifier's page set inherits every mistake the classifier made. The staged array does not have
+that problem — it is the settled record of every answered page, in clean text, so both sides of
+every comparison are clean and whole stems can be compared instead of a 70-character prefix.
+
+**⚠️⚠️ THE FIRST VERSION SAID YES TO EVERYTHING, AND ITS SELF-TEST PASSED 67/67 BECAUSE OF THE BUG.**
+`sim()` was `1 - lev(a,b)/maxLen` over whole stems. `norm.js`'s `lev` is a **bounded matcher, not a
+distance** — `if (Math.abs(a.length - b.length) > 6) return 99;` — which is right for the
+option-level work it was written for and catastrophic on stems: any two **unrelated** ~780-character
+stems scored `1 - 99/780 = 0.873` and cleared a 0.82 threshold. Its §5 run produced a 66 KB
+false-positive flood in which n1, n2, n3 and n4 each "matched" the same three live entries at
+identical scores. **That output was discarded, never journalled, and must never be quoted.**
+The self-test had passed because it only ever asked whether the true pair scored **high** — never
+whether a false pair scored **low**. ⚠️ **A matcher that says yes to everything passes every
+positive test there is.** Rebuilt on word-bigram Dice, `lev` dropped from the import behind a
+comment forbidding its return, and a **negative control** added permanently.
+
+**Then the negative control was itself wrong, in the opposite direction.** It read the runner-up as
+a known non-pair and reported the bands overlapping at 1.000. They were not overlapping: **§3 has
+five near-identical pairs living side by side in `questions.peds.ep.js`**, so for those staged
+entries the runner-up is the *twin*, not a non-pair. It was reporting a real property of the file as
+a matcher failure.
+
+| live pair | pages | what differs | fold? |
+|---|---|---|---|
+| `pedep-gi-30` / `pedep-gi-49` | 473 / 512 | stems **identical**; **the key option itself differs** — "repeated finger dilatation" vs "resolves spontaneously" | **no** — folding deletes a printed key |
+| `pedep-gi-4` / `pedep-gi-59` | 420 / 532 | named→unnamed vignette; distractor *H. pylori* → *gastroenteritis* | no — option **replaced**, not dropped |
+| `pedep-gi-7` / `pedep-gi-46` | 427 / 506 | reworded opening; distractor *rectal atresia* → *malrotation* | no — same |
+| `pedep-gi-2` / `pedep-gi-63` | 416 / 540 | name dropped, "never been abroad" dropped; distractor *coeliac* → *post-gastroenteritis syndrome* | no — same |
+| `pedep-gi-1` / `pedep-gi-62` | 414 / 538 | **all five options identical, same key**; age 6y → 2y, "never left the UK" dropped | ⚠️ **the one real fold candidate — never adjudicated** |
+
+⚠️ **`pedep-gi-1` / `pedep-gi-62` is carried forward as a live §3 debt.** Identical option set,
+identical key, and the only clinical difference is the child's age — which is not nothing, since
+rotavirus skews younger. It needs the two page images, not a score. It is **not** part of §5 and
+does not block anything here.
+
+**The sixth apparent twin was not one at all**, and it is the reason the exclusion rule now tests
+options as well as stems: `pedep-gi-64` / `pedep-gi-65` score **0.700 on the template alone** —
+*"What is the most common cause of recurrent abdominal pain / of gastroenteritis in children?"* —
+while sharing **zero** options. Excluding that as a twin would have quietly deleted a genuine
+non-pair from the negative band and **overstated the separation**.
+
+**Validated separation, measured, section 3:** positives recovered **67/67**, min **0.862**, mean
+0.998 · known non-pairs max **0.700**, mean 0.216. Threshold **0.55**, deliberately *below* the
+worst non-pair: the sweep resolves nothing, so a candidate that turns out not to be one is cheap
+and a reprint nobody is ever shown is expensive. ⚠️ **Any hit on a short one-line stem is
+template-suspect until the options agree.**
+
+**⚠️⚠️ AND THE CONVERSE TRAP — A STEM PROBE CANNOT SEE A REPRINT THAT WAS ABBREVIATED.** Half B
+reported n33/p.642 as a variant of the §4 Roberto burns vignette. The stem arm did not fire on it.
+Checked directly rather than trusting either side: n33 **is** a reprint of live **`pedep-acc-3`**
+(p.561) — same patient, same question, **five identical options in identical order, same key 0** —
+and the stems score **0.190**, because §4 prints a 33-word stub and §5 prints the full 90-word
+vignette. Nothing in the stem arm at any threshold would ever have found it. **The option set found
+it outright.** So the sweep now carries a fourth arm, `(d)`, comparing option sets and printing only
+pairs the stem arm missed. This is the exact mirror of the shared-menu rule: a menu match alone
+never folds anything, and it is also the only instrument that finds this shape.
+
+**§5 sweep, real results:**
+
+- **(c) within-section, 2** — n5/p.586 ≡ n27/p.630 (0.817, keys agree, 5/5 opts) · ⚠️ n55/p.689 ≡
+  n59/p.697 (**1.000**, but **keys differ 1 vs 4 and options 4 vs 5** — must be looked at on both
+  pages; an identical stem with a different key is either a defective reprint or a deliberate pair).
+- **(a) vs live endpoint, 1** — n30/p.636 ≡ `pedep-acc-2` (p.559), 0.963, keys agree.
+- **(b) vs live House, 2** — n55/p.689 and n59/p.697 both ≡ `pedhd-inf-15`, 0.855, keys differ.
+  **Recorded only.** Cross-bank overlap adds `alsoIn`; it never folds and never deletes, and
+  nothing folds across the two banks while both chats are writing.
+- **(d) option-set only, 1** — n33/p.642 ≡ `pedep-acc-3` (p.561), options **1.000**, stems 0.190.
+- **shared menus, 2** — n10/n11/n58 and n13–n17, each a single identical five-option ladder.
+  ⚠️ **A shared menu PAIRS questions and never folds them.**
+
+So **§5 reprints live §4 twice** — n30 ≡ `pedep-acc-2` and n33 ≡ `pedep-acc-3` — exactly as half B
+said, though only one of the two was reachable by the instrument that was supposed to find them.
+**Both folds keep the fuller printing, which in both cases is the §5 one.** All of it is for the
+separate fold pass after the splice; nothing here is resolved and nothing here blocks drafting.
