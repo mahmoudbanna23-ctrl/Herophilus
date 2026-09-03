@@ -126,6 +126,13 @@ Written for this bank — pediatric .pdf prints no explanation here.
 Explain the key **and every distractor**. Adaptive depth: **~250 words for straight recall, ~520 for
 a vignette, a defect, a divergence or a gap-fill.**
 
+⚠️ **`val-pd.js` NOW MEASURES THIS AND FAILS THE HALF.** Hard floors, set from what has already
+shipped: **200 words** for an ordinary entry, **120** for a shared-menu sibling that points at an
+anchor. A floor is not a target — clearing 200 on a vignette is still under-written. **ch.14 half A
+came back at 108–158 words an entry, mean 137, and had to be thrown away and rewritten**; the
+comparable ch.13 halves ran 150–484 with a non-sibling mean near 380. Under-writing has been the
+failure mode twice as often as overrunning, and until 2026-09-03 nothing looked for it.
+
 ⚠️ **ch.8 came in at ~12,900 words for 21 questions and ch.9 at ~9,340 for 19 — both over, both
 reported to the user.** ch.10 held the line at ~3,290 for 10 (mean 329) and the thing that did it was
 the shared-menu rule below. **Write to the guide. If a specific entry genuinely needs more, exceed it

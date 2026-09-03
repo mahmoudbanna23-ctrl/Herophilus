@@ -26,6 +26,8 @@ const CH = {
         draft: 'house-ch12-neurological.draft-',     dvar: 'PEDHD_NEURO_DRAFT_' },
   13: { prefix: 'pedhd-resp-',   staging: 'house-ch13-respiratory.array.js',      svar: 'PEDHD_RESP_STAGED',
         draft: 'house-ch13-respiratory.draft-',      dvar: 'PEDHD_RESP_DRAFT_' },
+  14: { prefix: 'pedhd-endo-',   staging: 'house-ch14-endocrine.array.js',        svar: 'PEDHD_ENDO_STAGED',
+        draft: 'house-ch14-endocrine.draft-',        dvar: 'PEDHD_ENDO_DRAFT_' },
 };
 
 const chNum = process.argv[2];
@@ -59,12 +61,23 @@ function carve(file, varName) {
   const t = fs.readFileSync(p, 'utf8');
   const v = t.indexOf('var ' + varName + ' = [');
   if (v < 0) throw new Error(file + ': var line "var ' + varName + ' = [" not found');
-  const first = t.indexOf('\n{', v);
+  // Entries do not always start at column 0. A hand-drafted half writes "{" flush left; a half
+  // written by tools/chapter-loop.js is JSON.stringify(list, null, 2), so every entry opens at two
+  // spaces. Anchoring on "\n{" found nothing in a Codex half and the carve failed outright --
+  // loudly, which is the one good thing about it. Detect the indent instead of assuming it, and
+  // strip it so the live file keeps one entry style throughout. Corrected 2026-09-03.
+  const m = new RegExp('\\n([ \\t]*)\\{').exec(t.slice(v));
+  if (!m) throw new Error(file + ': entries not found');
+  const first = v + m.index;
+  const indent = m[1];
   const close = t.lastIndexOf('\n];');
-  if (first < 0 || close < first) throw new Error(file + ': entries not found');
+  if (close < first) throw new Error(file + ': entries not found');
   // A half may close its last entry "}," or "}" -- carve to "];" and trim rather than
   // anchoring on "\n},".
   let block = t.slice(first + 1, close).replace(/,\s*$/, '').replace(/\s+$/, '');
+  // JSON.stringify escapes newlines inside strings, so no literal spans lines and a per-line
+  // de-indent cannot cut into content.
+  if (indent) block = block.split('\n').map(l => l.startsWith(indent) ? l.slice(indent.length) : l).join('\n');
   run(p);
   const arr = globalThis[varName];
   if (!Array.isArray(arr)) throw new Error(file + ': var ' + varName + ' did not load as an array');
@@ -73,7 +86,7 @@ function carve(file, varName) {
   if (holes) throw new Error(file + ': ' + holes + ' sparse holes');
   // The text block and the parsed array must agree, or the splice is moving something the
   // checks below never inspected.
-  const textCount = (block.match(/\n\{/g) || []).length + 1;
+  const textCount = (block.match(/\n\{/g) || []).length + 1;   // block is de-indented above
   if (textCount !== arr.length)
     throw new Error(file + ': carved text holds ' + textCount + ' entries but the array parses ' + arr.length);
   return { block, arr, file };

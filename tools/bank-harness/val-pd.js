@@ -20,6 +20,8 @@ const CH = {
         draft: 'house-ch12-neurological.draft-' },
   13: { prefix: 'pedhd-resp-',   file: 'house-ch13-respiratory.array.js',      svar: 'PEDHD_RESP_STAGED',
         draft: 'house-ch13-respiratory.draft-' },
+  14: { prefix: 'pedhd-endo-',   file: 'house-ch14-endocrine.array.js',        svar: 'PEDHD_ENDO_STAGED',
+        draft: 'house-ch14-endocrine.draft-' },
 };
 
 // imgAlt must give MODALITY AND VIEW ONLY. Naming the finding answers the question --
@@ -92,6 +94,14 @@ S.forEach(s => {
 // A question carries a figure if its staging row has a non-empty fig field.
 const FIGURE = new Set(S.filter(s => s.fig && String(s.fig).trim()).map(s => s.n));
 
+// Which page may a figure's crop be cut from? Normally the one page the question is printed on.
+// A question that straddles the break is printed across two, and the figure may sit on either --
+// so both are legal and the drafted basename is what says which. Returned as strings because
+// staging stores p as a string.
+function figPagesFor(s) {
+  return s.straddle ? [String(s.p), String(Number(s.p) + 1)] : [String(s.p)];
+}
+
 // Shared option menus: group staging rows by their exact option ladder. Any group of
 // two or more is a PAIRING -- the table is written once in the lowest-n member and the
 // siblings must point at that id. A shared menu never folds questions.
@@ -130,7 +140,16 @@ D.forEach(q => {
   // all survive verbatim, silently.
   if (q.stem !== s.stem) fail.push(q.id + ': stem differs from staging');
   if (JSON.stringify(q.options) !== JSON.stringify(s.opts)) fail.push(q.id + ': options differ from staging');
-  if (q.answer !== 'ABCDEFGHIJ'.indexOf(s.key)) fail.push(q.id + ': answer ' + q.answer + ' vs printed key ' + s.key);
+  // Staging carries the printed key two ways: the hand-staged chapters (10-13) store the bare
+  // printed LETTER, the Codex runner (14+) stores the 0-based INDEX. Resolve both to an index and
+  // range-check it here -- nothing else in this file bounds q.answer, so a key that is null, a
+  // stray type, or off the end of the option list must fail on this line or it fails nowhere.
+  const sKey = typeof s.key === 'number' && Number.isInteger(s.key) ? s.key
+             : typeof s.key === 'string' && s.key.length === 1 ? 'ABCDEFGHIJ'.indexOf(s.key)
+             : -1;   // the length test is not decoration: indexOf('') is 0, so an EMPTY key used to
+                     // resolve silently to option A and pass. It fails here now.
+  if (sKey < 0 || sKey >= s.opts.length) fail.push(q.id + ': staged key ' + JSON.stringify(s.key) + ' does not resolve into ' + s.opts.length + ' options');
+  else if (q.answer !== sKey) fail.push(q.id + ': answer ' + q.answer + ' vs printed key ' + s.key);
   // Option count comes from staging, not from an assumption that every question has five.
   if (q.options.length !== s.opts.length) fail.push(q.id + ': ' + q.options.length + ' options vs ' + s.opts.length + ' staged');
 
@@ -186,9 +205,22 @@ D.forEach(q => {
     // suffix is the established convention, not a new invention. The old rule demanded the bare
     // q-pd-hd-<page> unconditionally, which no chapter had yet contradicted because none had two
     // figures on one page. ch.13 has three such pages. Corrected 2026-09-03.
-    const want = 'q-pd-hd-' + s.p;
-    if (!new RegExp('^q-pd-hd-' + s.p + '[a-z]?$').test(q.image || ''))
-      fail.push(q.id + ': image should be ' + want + ' or ' + want + '<letter>, got ' + JSON.stringify(q.image));
+    // A basename names the page the CROP IS CUT FROM, not the page the question starts on. Those
+    // are the same page except when a question straddles the break and the figure lands overleaf --
+    // ch.14 n:3 starts on p.111 and its stem says the chart is "in the figure in the next page
+    // (overleaf)"; the chart really is printed on p.112. Read against both page images 2026-09-03.
+    // So a straddling question may name p or p+1, and nothing else may. Corrected 2026-09-03.
+    const pages = figPagesFor(s);
+    const want = pages.map(p => 'q-pd-hd-' + p).join(' or ');
+    if (!pages.some(p => new RegExp('^q-pd-hd-' + p + '[a-z]?$').test(q.image || '')))
+      fail.push(q.id + ': image should be ' + want + ' (optionally + <letter>), got ' + JSON.stringify(q.image));
+    // Two legal pages means the machine cannot tell which is right, and a wrong basename sends the
+    // cutter to a page the figure is not on. ch.14 n:3 was drafted q-pd-hd-111 on one run and
+    // q-pd-hd-112 on the next; the chart is on p.112. Say so out loud rather than pass in silence.
+    else if (pages.length > 1)
+      warn.push(q.id + ': STRADDLER, page not machine-decidable -- basename claims the figure is on p.'
+                + /^q-pd-hd-(\d+)/.exec(q.image)[1] + ' (legal: p.' + pages.join(' or p.')
+                + '). CONFIRM AGAINST THE PAGE IMAGE.');
     if (!q.imgAlt || !q.imgAlt.trim()) fail.push(q.id + ': imgAlt missing');
     // The crop is cut AFTER drafting, so a missing file is a warning here, not a failure.
     if (q.image && !fs.existsSync(R + 'app/assets/q/' + q.image + '.jpg'))
@@ -210,9 +242,16 @@ D.forEach(q => {
 // however it was written. That contradiction sat here undetected until ch.13, which has three such
 // pages, ran through it. What matters is the actual collision, so test for that instead of for the
 // shape that merely predicts one. Corrected 2026-09-03.
+// Grouped by the page the crop is actually cut from, read off the drafted basename -- NOT by the
+// question's staged page. A straddling question whose figure sits overleaf shares a page with the
+// figures of the questions printed there, and it is those it can collide with. Keying this on s.p
+// would have grouped it with the wrong page's figures and missed a real collision. 2026-09-03.
 const figPages = {};
 [...FIGURE].forEach(n => {
-  const p = S.find(x => x.n === n).p;
+  const s = S.find(x => x.n === n);
+  const q = D.find(x => x.id === cfg.prefix + n);
+  const m = /^q-pd-hd-(\d+)[a-z]?$/.exec((q && q.image) || '');
+  const p = m ? m[1] : String(s.p);   // no/blank basename already failed above; fall back to staging
   (figPages[p] = figPages[p] || []).push(n);
 });
 const seenBase = {};
@@ -245,6 +284,27 @@ SHARED.forEach(group => {
       fail.push(q.id + ': shares the n:' + group.join('/n:') + ' option menu but does not point at ' + anchor);
   });
   notes.push('shared menu n:' + group.join(', n:') + ' -> table anchored at ' + anchor);
+});
+
+// ---- the explanation is long enough to have explained anything ----
+// The brief has always carried the budget (~250 words for straight recall, ~520 for a vignette,
+// a defect, a divergence or a gap-fill) and nothing has ever measured it. ch.14 half A came back
+// at 108-158 words an entry, mean 137, and passed every check in this file. The floors below are
+// measured off what has already SHIPPED in questions.peds.js, not chosen: across ch.10-13 the
+// lowest non-sibling explanation is 224 words (pedhd-neuro-24) and the lowest shared-menu sibling
+// is 132 (pedhd-gastro-15). A sibling is legitimately short -- it points at the anchor's table and
+// adds only its own discriminating token -- so it gets its own, lower floor.
+// These are floors, not targets. Passing them is not the same as writing to the budget.
+const SIB = new Set([].concat(...SHARED.map(g => g.slice(1))));
+const FLOOR_SOLO = 200, FLOOR_SIB = 120;
+D.forEach(q => {
+  const n = Number(q.id.slice(cfg.prefix.length));
+  const w = q.explanation.split(/\s+/).filter(Boolean).length;
+  const floor = SIB.has(n) ? FLOOR_SIB : FLOOR_SOLO;
+  if (w < floor)
+    fail.push(q.id + ': explanation is ' + w + ' words, under the ' + floor +
+              (SIB.has(n) ? ' floor for a shared-menu sibling' : ' floor') +
+              ' -- the budget is ~250 for straight recall and ~520 for a vignette, defect or divergence');
 });
 
 console.log('ch.' + chNum + ' draft-' + which + '  length ' + D.length + '  holes ' + holes + '  var ' + vn);

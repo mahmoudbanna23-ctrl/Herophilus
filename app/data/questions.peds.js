@@ -3058,5 +3058,299 @@ var Q_PEDS = [
   explanation:'**This girl\'s combination — diarrhoea since birth, pale offensive stool, faltering growth and recurrent pneumonia with a chronic cough — is the same disease grounding `pedhd-resp-21`, approached from the gut side rather than the chest side.**\n\nThe deck\'s own recurrent/persistent pneumonia list names cystic fibrosis directly, alongside seven other causes (`resp-pneumonia` resp-8, already grounding `pedhd-resp-4` and `pedhd-resp-21`), and its chronic-diarrhoea material separately names cystic fibrosis among the non-infectious congenital causes of chronic diarrhoea: **"congenital causes such as cystic fibrosis"** (`gi-diarrhoea` gast-12). This girl sits at the intersection of both lists: four admissions with pneumonia and a chronic cough on the respiratory side, and diarrhoea since birth with pale, offensive stool and severe faltering growth (25th centile falling to 0.4th) on the gut side. *(Not taken from the course material: the mechanism linking these — pancreatic exocrine insufficiency in CF causing fat malabsorption, which produces pale, greasy, offensive-smelling stool ("steatorrhoea") and faltering growth despite adequate intake — is supplied from general medical knowledge; "sweat test" itself returns zero hits anywhere in T_PEDS, the same gap already tagged for `pedhd-resp-21`.)* The sweat test — the standard confirmatory investigation for cystic fibrosis, measuring elevated sweat chloride from defective CFTR function — is the investigation most likely to yield this diagnosis, tying together both the respiratory and gastrointestinal halves of her presentation.\n\n**Why the other four are each wrong for a stated reason:**\n\n| Option | Why it does not fit |\n|---|---|\n| Coeliac antibodies | Coeliac disease is a recognised non-infectious cause of chronic diarrhoea (gast-12) but would not explain her four admissions with pneumonia and chronic cough — coeliac disease is a gut-limited process |\n| Stool reducing substances | Tests for carbohydrate malabsorption (e.g. lactose intolerance), which does not account for pale, fat-laden stool or the respiratory admissions |\n| Stool for microscopy and culture | Diarrhoea since birth with this growth and respiratory pattern points away from an infectious cause toward a chronic congenital process, which a stool culture will not identify |\n| Endoscopy and colonoscopy | An invasive investigation that could support a gut-limited diagnosis such as inflammatory bowel disease, but it does not explain or test for the respiratory component of her presentation and is not the first, most yielding test here |\n\nWritten for this bank — pediatric .pdf prints no explanation here.',
   objective:'Diagnose cystic fibrosis from the combined respiratory (recurrent pneumonia, chronic cough) and gastrointestinal (diarrhoea since birth, pale offensive stool, faltering growth) picture, selecting the sweat test as the yielding investigation, using the deck\'s own recurrent-pneumonia and chronic-diarrhoea cause lists to place cystic fibrosis on both differentials.',
   source:'pediatric .pdf p.110 (Part I, ch.13 Q28)'
+},
+
+{
+  "id": "pedhd-endo-1",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "endocrine",
+  "stem": "Ellie, a 7-year-old girl, is newly diagnosed with diabetes mellitus. She has been drinking lots of fluid and has had to pass urine frequently. She has a markedly raised blood glucose (20 mmol/L) and heavy glycosuria. Which of the following is most likely to be true about her diabetes?",
+  "options": [
+    "Her diagnosis should be confirmed with an oral glucose tolerance test",
+    "She can be managed with oral hypoglycaemic agents and dietary modification",
+    "She will have gained weight in the last few weeks",
+    "The incidence in the UK is falling",
+    "There is autoimmune pancreatic β-cell damage"
+  ],
+  "answer": 4,
+  "explanation": "There is autoimmune pancreatic β-cell damage. The child has the classic osmotic symptoms of insulin deficiency: hyperglycaemia causes glycosuria, glucose draws water into urine, and the result is polyuria and compensatory polydipsia. In a child, this presentation is most consistent with type 1 diabetes mellitus. Section endo-1 identifies type 1 diabetes as the commonest paediatric form, and endo-2 explains that autoimmune destruction of pancreatic β-cells produces absolute insulin deficiency.\n\nAn oral glucose tolerance test is unnecessary here. Her unequivocal symptoms together with a markedly raised random blood glucose establish diabetes; an oral glucose tolerance test is principally useful when the diagnosis is uncertain. Oral hypoglycaemic agents and diet alone describe the usual initial approach to many cases of type 2 diabetes, not a symptomatic child with type 1 diabetes, who requires insulin replacement. Weight gain is unlikely: the classic symptom triad in endo-3 includes weight loss, because glucose cannot be used effectively and energy stores are broken down.\n\nThe incidence statement is the wrong way round: childhood type 1 diabetes has been becoming **more** common in the UK, not less, and the rise has been steepest in the under-fives — an epidemiological trend, not a course fact, and not taken from the course material, which gives no incidence figures at all. The clinical implication of the mechanism is the point worth carrying: autoimmune β-cell loss means endogenous insulin production progressively fails, so diet, carbohydrate awareness, activity and education all remain important but none of them replaces insulin in type 1 diabetes.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Recognise new-onset type 1 diabetes and its autoimmune β-cell mechanism.",
+  "source": "pediatric .pdf p.111 (Part I, ch.14 Q1)"
+},
+{
+  "id": "pedhd-endo-2",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "endocrine",
+  "stem": "James, aged 11 years, has type 1 diabetes mellitus. While playing football during the mid-morning break at a holiday camp, he suddenly feels faint. His classmates call the supervisor who finds him lying unresponsive in the playground. What should be his immediate management?",
+  "options": [
+    "Call an ambulance",
+    "Check blood glucose",
+    "Give a glucose drink",
+    "Give buccal glucose gel",
+    "Give insulin"
+  ],
+  "answer": 3,
+  "explanation": "Give buccal glucose gel. Exercise increases glucose use by muscle, and a child receiving insulin may become hypoglycaemic if carbohydrate intake or insulin adjustment has not matched the activity. Sudden faintness followed by unresponsiveness is a severe presentation in which immediate treatment must not wait for a measurement. The hypoglycaemia content in endo-8 describes neuroglycopenic features such as confusion, drowsiness, seizure and coma.\n\nA glucose drink is inappropriate for an unresponsive child because it cannot be swallowed safely and creates an aspiration risk. Buccal glucose gel can be placed inside the cheek for absorption without asking him to drink. The practical treatment sequence for severe hypoglycaemia, including use of buccal carbohydrate when oral drinking is unsafe, is not taken from the course material; endo-8 explicitly identifies hypoglycaemia as a gap in the supplied teaching.\n\nChecking blood glucose is useful when it can be done promptly, but it is not the best immediate action in an unconscious child with a convincing hypoglycaemic emergency. Calling an ambulance is necessary for urgent escalation, especially if consciousness does not promptly recover, but it does not correct the immediately reversible cause. Insulin would lower glucose further and is dangerous in this clinical situation. Once emergency treatment has been given, continuing observation and emergency support are required.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Choose immediate treatment for suspected severe hypoglycaemia in a child with type 1 diabetes.",
+  "source": "pediatric .pdf p.111 (Part I, ch.14 Q2)"
+},
+{
+  "id": "pedhd-endo-3",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "endocrine",
+  "image": "q-pd-hd-112",
+  "imgAlt": "Blood glucose record chart viewed from the front.",
+  "stem": "Catherine, aged 15 years, has had type 1 diabetes mellitus for 7 years. Her insulin regimen has remained unchanged for the last 7 months. Her HbA1C has increased from 58 mmol/mol (7.5%) to 90 mmol/mol (10.3%) (desired level <58 mmol/mol). The most recent blood glucose levels as recorded in her book are shown in the figure in the next page (overleaf):",
+  "options": [
+    "During the summer holidays she took less exercise",
+    "She has reduced her insulin dosage to try to lose weight",
+    "She is taking more insulin than she needs",
+    "She is regularly eating snacks and indulging in high carbohydrate food",
+    "Some of the blood glucose measurements are fictitious"
+  ],
+  "answer": 4,
+  "explanation": "Some of the blood glucose measurements are fictitious. HbA1C reflects average glycaemic exposure over the preceding weeks to months, whereas a logbook contains individual, selected capillary glucose values. Catherine's striking rise from 58 mmol/mol (7.5%) to 90 mmol/mol (10.3%) is evidence of substantially poorer overall control. It is incompatible with a record that appears reassuring throughout, so the discrepancy is the discriminating clue. The chart should be read as a blood-glucose record, while the HbA1C provides the independent longer-term check. Endo-7 specifically places HbA1c every 3 months and glucose logs together in routine monitoring.\n\nLess exercise can raise glucose by reducing insulin sensitivity, but it does not by itself explain a logbook that conflicts with the HbA1C. Reducing insulin to lose weight is an important possible cause of high HbA1C in an adolescent with type 1 diabetes, but the figure-and-HbA1C mismatch, rather than weight concerns or a reported dose change, is what selects the keyed option. Regular high-carbohydrate snacks could similarly worsen control, but would be expected to leave a recognisable pattern of elevated readings if those readings were genuine.\n\nTaking more insulin than needed would tend to cause recurrent hypoglycaemia, not persistent elevation of HbA1C. The clinical response should be non-judgemental: explore barriers to testing, insulin omission, distress, food, activity and support needs rather than treating the apparent entries as reliable proof of control.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Interpret discordance between HbA1C and self-recorded glucose values.",
+  "source": "pediatric .pdf p.111 (Part I, ch.14 Q3; the question straddles the page break from p.111 to p.112)"
+},
+{
+  "id": "pedhd-endo-4",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "endo-thyroid",
+  "stem": "Mohammed, a 12-year-old boy with type 1 diabetes mellitus, is reviewed in the outpatient clinic. In spite of maintaining good control of his diabetes, his height has remained static for 9 months. He says his appetite is alright, but he has lost interest in football, which is his passion, as he says he can't keep up with the other boys any more. He just stays at home and watches TV, but wants to be out playing football and getting back his energy. A full blood count and C-reactive protein are normal and his HbA1C is satisfactory. What is the most likely diagnosis?",
+  "options": [
+    "Anorexia nervosa",
+    "Depression",
+    "Growth hormone deficiency",
+    "Hypothyroidism",
+    "Inflammatory bowel disease"
+  ],
+  "answer": 3,
+  "explanation": "Hypothyroidism is the most likely diagnosis. Growth failure with fatigue and reduced exercise tolerance despite satisfactory diabetic control should prompt investigation for an associated autoimmune disorder. Endo-7 directs thyroid screening at diagnosis and every 2 years in children with type 1 diabetes, using TSH and anti-thyroid antibodies. The static height is particularly important: chronic thyroid hormone deficiency impairs linear growth, while the loss of energy explains why he cannot sustain football.\n\nDepression can produce withdrawal, low activity and poor enjoyment, but Mohammed says he wants to return to football and describes a physical inability to keep up. It does not readily account for failure of height progression. Anorexia nervosa would more strongly suggest intentional dietary restriction, body-image concerns and weight loss; the history instead says appetite is alright. Growth hormone deficiency is a legitimate consideration in short stature, and the short-stature lecture identifies it as an endocrine cause, but autoimmune hypothyroidism is the more direct association in a child with type 1 diabetes and fatigue.\n\nInflammatory bowel disease may cause impaired growth and lethargy, but normal inflammatory markers, a preserved appetite and no gastrointestinal history make it less likely. The older-child pattern of autoimmune hypothyroidism, including growth deceleration and reduced energy, is not taken from the course material; endo-30 records that extension beyond congenital hypothyroidism as supplied material. The correct next clinical step would be thyroid-function testing rather than attributing the symptoms to diabetes control or mood alone.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Recognise hypothyroidism as an associated autoimmune cause of growth failure in type 1 diabetes.",
+  "source": "pediatric .pdf p.113 (Part I, ch.14 Q4)"
+},
+{
+  "id": "pedhd-endo-5",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "endo-thyroid",
+  "stem": "Zeinab, aged 15 years, has had 3 months of diarrhoea, weight loss and palpitations. You suspect hyperthyroidism. Which combination of thyroid function test results would confirm the diagnosis?",
+  "options": [
+    "High TSH and high T4 levels",
+    "High TSH and low T4 levels",
+    "Low TSH and high T4 levels",
+    "Low TSH and low T4 levels",
+    "Normal TSH and high T4 levels"
+  ],
+  "answer": 2,
+  "explanation": "Low TSH and high T4 levels confirm primary hyperthyroidism. Excess thyroid hormone feeds back on the hypothalamic-pituitary axis and suppresses pituitary TSH secretion. Thus, the biochemical pattern is high circulating thyroxine with a low TSH. Zeinab's diarrhoea, weight loss and palpitations are also characteristic thyrotoxic symptoms. Endo-31 describes Graves disease as the commonest cause of hyperthyroidism in children and lists diarrhoea, weight loss and tachycardia among its manifestations; the thyroid lecture gives a Graves example with low TSH and high T4.\n\nHigh TSH with high T4 would suggest inappropriate TSH secretion or another uncommon central pattern, not the usual primary hyperthyroidism tested here. High TSH with low T4 is the classic direction of primary hypothyroidism: an underactive thyroid produces too little hormone, so pituitary TSH rises in an attempt to stimulate it. Low TSH with low T4 suggests central hypothyroidism or non-thyroidal illness rather than hyperthyroidism, because there is no excess T4.\n\nNormal TSH with high T4 is not the expected feedback response to genuine primary thyrotoxicosis and should prompt consideration of assay, binding-protein or central causes if encountered clinically. In this vignette, however, the symptoms and the expected feedback pair make low TSH plus high T4 the single best answer.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Identify the thyroid-function-test pattern of primary hyperthyroidism.",
+  "source": "pediatric .pdf p.113 (Part I, ch.14 Q5)"
+},
+{
+  "id": "pedhd-endo-6",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "endo-thyroid",
+  "stem": "George, a 2-week-old male infant, presents to the Emergency Department with vomiting, diarrhoea and poor feeding. Investigations show:\n• sodium 112 mmol/L (normal range 133–145 mmol/L)\n• potassium 6.8 mmol/L (normal range 3.5–6.0 mmol/L)\n• urea 7.8 mmol/L (normal range 2.5–8.0 mmol/L)\n• creatinine 30 mmol/L (normal range 20–65 mmol/L)\n• blood glucose 1.7 mmol/L (normal range >2.6 mmol/L)\n• infection screen—negative\nWhat is the most likely cause?",
+  "options": [
+    "Acute kidney injury",
+    "Congenital adrenal hyperplasia",
+    "Congenital adrenal hypoplasia",
+    "Cushing syndrome",
+    "Gastroenteritis"
+  ],
+  "answer": 1,
+  "explanation": "Congenital adrenal hyperplasia is the most likely cause. This is a neonatal salt-wasting adrenal crisis: profound hyponatraemia, hyperkalaemia and hypoglycaemia with vomiting, poor feeding and dehydration point to deficient adrenal steroid production. In the common salt-wasting form, impaired cortisol and aldosterone synthesis causes hypoglycaemia, sodium loss and potassium retention. The mechanism is not taken from the course material; endo-33 identifies congenital adrenal hyperplasia as a named but otherwise untaught topic and supplies the 21-hydroxylase mechanism.\n\nAcute kidney injury can cause hyperkalaemia, but it does not as coherently explain severe salt wasting and hypoglycaemia in this infant, and the urea is within the printed normal range. Congenital adrenal hypoplasia can also cause primary adrenal insufficiency and would be a clinical differential, but the keyed diagnosis is congenital adrenal hyperplasia, the commoner neonatal cause represented by this biochemical pattern. Cushing syndrome is an excess-glucocorticoid state and gives a very different picture, such as growth failure with weight gain and hypertension rather than salt loss and hypoglycaemia.\n\nGastroenteritis may explain vomiting and diarrhoea, but ordinary gastrointestinal fluid loss would not account for the combined endocrine pattern of hyperkalaemia and hypoglycaemia, and the negative infection screen adds support to a non-infectious cause. The creatinine is reproduced exactly as printed: “30 mmol/L (normal range 20–65 mmol/L)”. Creatinine is ordinarily reported in micromol/L, so this printed unit and range are discrepant by a factor of 1000; the diagnosis rests on the remaining clinical and biochemical pattern, not on correcting that line.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Recognise salt-wasting congenital adrenal hyperplasia in a neonate.",
+  "source": "pediatric .pdf p.113 (Part I, ch.14 Q6; the question straddles the page break from p.113 to p.114)"
+},
+{
+  "id": "pedhd-endo-7",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "endo-thyroid",
+  "image": "q-pd-hd-114",
+  "imgAlt": "Photograph of the perineum of a newborn, viewed from the front.",
+  "stem": "A newborn baby has recently been delivered. The midwife requests an urgent paediatric review of the baby because she cannot tell if the baby is male or female (as shown in the opposite figure). The parents are asking what sex their baby is. What should you tell them?",
+  "options": [
+    "You are unable to tell if the baby is male or female, and tell the parents it is likely to be a mixture of both sexes, i.e. ovotesticular disorder of sex development (DSD – or hermaphroditism)",
+    "You are unable to tell right now and a detailed assessment of the baby including scans and blood tests will be needed before a specialist can tell them",
+    "You are unable to tell right now but will be able to assign a sex as soon as you get the baby's chromosomes back",
+    "You think it is likely to be a girl so tell them the baby should be named as a female on the birth certificate pending the results",
+    "You think it is likely to be a boy so tell them the child should be named as a male on the birth certificate pending the results"
+  ],
+  "answer": 1,
+  "explanation": "Explain that sex cannot be assigned immediately and that detailed assessment, including scans and blood tests, is needed before a specialist can advise. The photograph is a frontal perineal view, but visual examination alone cannot establish the underlying anatomy, chromosomes, hormone production, or cause of atypical genital appearance. A careful, calm and non-speculative explanation protects the child and family from a premature and potentially incorrect conclusion.\n\nIt is not appropriate to describe the baby as a “mixture of both sexes” or to assume ovotesticular disorder of sex development from appearance alone. Disorders of sex development have several possible causes, including congenital adrenal hyperplasia, differences in gonadal development, and differences in androgen synthesis or action. This diagnostic framework is not taken from the course material; endo-33 notes that congenital adrenal hyperplasia is named but not taught in the paediatric material.\n\nChromosomes are important but are not sufficient on their own to assign sex in every situation. The assessment may also require urgent electrolytes and glucose, endocrine testing, pelvic or abdominal imaging, and specialist paediatric endocrine, urology and genetics input. Therefore, waiting only for a chromosome result is too narrow. Assigning female or male sex from external appearance before that assessment risks an avoidable error and should not be presented as the likely answer to the parents.\n\nThe immediate clinical priority is respectful communication and appropriate investigation, while considering time-critical causes such as salt-wasting congenital adrenal hyperplasia. The answer does not require the family to understand a diagnosis at once; it promises the appropriate next step and avoids unsupported assumptions.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "State the appropriate initial communication and assessment plan for atypical genital appearance in a newborn.",
+  "source": "pediatric .pdf p.114 (Part I, ch.14 Q7)"
+},
+{
+  "id": "pedhd-endo-8",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "endo-thyroid",
+  "stem": "A baby is born with a disorder of sexual differentiation. Congenital adrenal hyperplasia is suspected. What blood result would confirm the diagnosis?",
+  "options": [
+    "A low testosterone",
+    "A markedly lowered plasma 17α-hydroxyprogesterone",
+    "A markedly raised cortisol level",
+    "A markedly raised plasma 17α-hydroxyprogesterone",
+    "A raised blood glucose"
+  ],
+  "answer": 3,
+  "explanation": "A markedly raised plasma 17α-hydroxyprogesterone confirms the suspected diagnosis. In the commonest form of congenital adrenal hyperplasia, 21-hydroxylase deficiency blocks conversion of 17α-hydroxyprogesterone along the cortisol synthesis pathway. The precursor accumulates, so a markedly raised concentration is the key biochemical finding. This enzyme-pathway explanation is not taken from the course material; endo-33 records that congenital adrenal hyperplasia is not otherwise taught while retaining the ACTH-test and supplied explanatory content.\n\nA low testosterone is not confirmatory. Androgen concentrations vary with the underlying disorder, age and sex, and congenital adrenal hyperplasia commonly causes excess adrenal androgen production rather than providing a simple low-testosterone signature. A markedly lowered 17α-hydroxyprogesterone is the opposite of the expected precursor accumulation. A markedly raised cortisol is also wrong because impaired 21-hydroxylase activity reduces cortisol synthesis; loss of cortisol feedback drives ACTH upward and promotes adrenal hyperplasia.\n\nRaised blood glucose does not fit cortisol deficiency in a salt-wasting neonatal presentation. Hypoglycaemia, rather than hyperglycaemia, can occur where cortisol production is inadequate. The result should be interpreted alongside the clinical condition and urgent electrolyte assessment, because salt-wasting disease can be life-threatening. In this question, however, the specific diagnostic discriminator among the options is the markedly raised plasma 17α-hydroxyprogesterone.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Identify raised plasma 17α-hydroxyprogesterone as the diagnostic marker of congenital adrenal hyperplasia.",
+  "source": "pediatric .pdf p.114 (Part I, ch.14 Q8)"
+},
+
+{
+  "id": "pedhd-endo-9",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "endo-dka",
+  "stem": "Julie, aged 7 years, has diabetes mellitus. She is admitted to hospital as she has vomited on three occasions. She has a 2-day history of being unwell with a mild fever, sore throat and decreased appetite. Her blood glucose measurement reads ‘high’. Although she was not eating, her parents maintained her usual insulin dose. On examination her temperature is 37.5°C. She is drowsy and confused. Her pulse is 150 beats/min, blood pressure 80/45 mmHg (low for age) and capillary refill time 3 seconds. Examination of her throat shows tonsillitis. Her blood glucose is 22 mmol/L. Which of the following is the best course of action to take immediately for that patient?",
+  "options": [
+    "Oral glucose drink",
+    "Intravenous infusion of normal saline (0.9% sodium chloride)",
+    "Subcutaneous insulin",
+    "Fluid resuscitation with normal saline (0.9% sodium chloride)",
+    "Intravenous infusion of 5% glucose"
+  ],
+  "answer": 3,
+  "explanation": "Fluid resuscitation with normal saline (0.9% sodium chloride) is the immediate action. Julie has hyperglycaemia with vomiting, reduced consciousness, tachycardia, hypotension and prolonged capillary refill: this is circulatory compromise in a child with probable diabetic ketoacidosis precipitated by tonsillitis. Restore circulation before insulin. Course material section endo-15 identifies restoration of circulating volume as the first objective of DKA fluid therapy, and endo-16 starts insulin only after fluid replacement has begun.\n\nThese same five options are offered again in `pedhd-endo-10`, `pedhd-endo-11` and `pedhd-endo-12`, so it is worth setting the whole ladder out once here. Oral glucose drink is for a conscious child with hypoglycaemia who can swallow safely; it is not appropriate for marked hyperglycaemia, vomiting or impaired consciousness. Intravenous infusion of normal saline (0.9% sodium chloride) is appropriate for fluid replacement in a stable dehydrated child, but this child is shocked and needs resuscitation rather than routine infusion. Subcutaneous insulin is not the immediate treatment for an unstable probable DKA presentation; insulin is managed intravenously after initial fluid therapy. Fluid resuscitation with normal saline (0.9% sodium chloride) corrects the immediately life-threatening hypovolaemia. Intravenous infusion of 5% glucose is not an initial treatment for hyperglycaemic shock; glucose is added later if required while insulin must continue.\n\nThe discriminating token here is shock: low blood pressure, poor perfusion and altered consciousness select resuscitation. In `pedhd-endo-10`, the discriminating token is normal pH with no dehydration, selecting subcutaneous insulin. In `pedhd-endo-11`, it is symptomatic hypoglycaemia during exercise, selecting oral glucose. In `pedhd-endo-12`, it is dehydration without circulatory compromise, selecting an intravenous normal-saline infusion.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Recognize circulatory compromise in probable paediatric DKA and prioritize isotonic fluid resuscitation before insulin.",
+  "source": "pediatric .pdf p.115 (Part I, ch.14 Q9)"
+},
+{
+  "id": "pedhd-endo-10",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "endocrine",
+  "stem": "Jon is 12 years old. His brother has diabetes. He has started to drink a lot of fluids and pass a lot of urine. He checked his blood glucose on his brother’s glucometer. It was 19 mmol/L. When he arrives in the Emergency Department he is well with no signs of dehydration. Diabetes mellitus type 1 is diagnosed as his blood glucose is 21 mmol/L. A venous blood sample shows a normal pH with 2 mmol/L of ketones (within the normal range) and a HbA1c blood test result is awaited. Which of the following is the best course of action to take immediately for that patient?",
+  "options": [
+    "Oral glucose drink",
+    "Intravenous infusion of normal saline (0.9% sodium chloride)",
+    "Subcutaneous insulin",
+    "Fluid resuscitation with normal saline (0.9% sodium chloride)",
+    "Intravenous infusion of 5% glucose"
+  ],
+  "answer": 2,
+  "explanation": "Subcutaneous insulin is the appropriate immediate treatment for newly diagnosed type 1 diabetes without DKA. Jon has classic osmotic symptoms and hyperglycaemia, but he is clinically well, has no dehydration, normal venous pH and ketones stated to be within the normal range. The decisive token is absence of acidosis and dehydration, so there is no indication for the DKA resuscitation pathway. Insulin is mandatory treatment for type 1 diabetes; this is covered in course material section endo-4.\n\nFor the full comparison of this repeated option ladder, see `pedhd-endo-9`. Oral glucose and intravenous 5% glucose treat or prevent hypoglycaemia, not Jon’s hyperglycaemia. Intravenous normal saline is for dehydration, while fluid resuscitation is for circulatory compromise; neither is present. Subcutaneous insulin supplies the deficient hormone in a stable child without ketoacidosis.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Distinguish uncomplicated new-onset type 1 diabetes from DKA and select insulin for the stable child.",
+  "source": "pediatric .pdf p.115 (Part I, ch.14 Q10)"
+},
+{
+  "id": "pedhd-endo-11",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "endocrine",
+  "stem": "Harriet, a 5-year-old girl, is known to have diabetes mellitus type 1. She was only diagnosed 2 months ago and is on a basal bolus regime of insulin. She is running around the garden at home when her mother notices she suddenly becomes aggressive towards her brother and looks pale and not her usual self. Her mother checks her blood glucose, which is 3 mmol/L. Which of the following is the best course of action to take immediately for that patient?",
+  "options": [
+    "Oral glucose drink",
+    "Intravenous infusion of normal saline (0.9% sodium chloride)",
+    "Subcutaneous insulin",
+    "Fluid resuscitation with normal saline (0.9% sodium chloride)",
+    "Intravenous infusion of 5% glucose"
+  ],
+  "answer": 0,
+  "explanation": "Give an oral glucose drink. Harriet is conscious enough to display behavioural change and has symptomatic hypoglycaemia after exercise while receiving insulin. Pallor, sudden aggression and a blood glucose of 3 mmol/L identify the immediate problem as hypoglycaemia, so rapidly absorbed oral carbohydrate is appropriate when the child can safely drink. Exercise increases glucose use and can expose a mismatch between insulin availability and carbohydrate intake. Course material section endo-8 identifies hypoglycaemia as an acute complication of insulin-treated type 1 diabetes.\n\nFor the complete comparison of this shared option ladder, see `pedhd-endo-9`. Normal saline, whether routine infusion or resuscitation, does not correct low glucose. Subcutaneous insulin would worsen hypoglycaemia. Intravenous 5% glucose is not the first choice for a conscious child able to take oral treatment; intravenous glucose becomes relevant when oral treatment is unsafe or ineffective.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Recognize symptomatic hypoglycaemia in an insulin-treated child and give oral glucose when swallowing is safe.",
+  "source": "pediatric .pdf p.115 (Part I, ch.14 Q11; the question straddles the page break from p.115 to p.116)"
+},
+{
+  "id": "pedhd-endo-12",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "endo-dka",
+  "stem": "Sophie, a 9-year-old girl with type 1 diabetes mellitus, develops a fever along with vomiting and diarrhoea. After 2 days her mother takes her to the local paediatric assessment unit as she continues to vomit. On examination her temperature is 37.5°C. She is able to talk to her mother. She has clinical dehydration. Her pulses, capillary refill time and blood pressure are normal. Her blood glucose is 16 mmol/L. Which of the following is the best course of action to take immediately for that patient?",
+  "options": [
+    "Oral glucose drink",
+    "Intravenous infusion of normal saline (0.9% sodium chloride)",
+    "Subcutaneous insulin",
+    "Fluid resuscitation with normal saline (0.9% sodium chloride)",
+    "Intravenous infusion of 5% glucose"
+  ],
+  "answer": 1,
+  "explanation": "An intravenous infusion of normal saline (0.9% sodium chloride) is the immediate choice. Sophie has clinical dehydration after ongoing vomiting and diarrhoea, but remains able to talk and has normal pulses, capillary refill time and blood pressure. The discriminating token is dehydration without shock: she needs isotonic intravenous fluid replacement, not a resuscitation bolus. DKA fluid therapy aims to restore circulating volume and replace fluid deficit, as outlined in course material section endo-15.\n\nFor the full comparison of this shared option ladder, see `pedhd-endo-9`. Oral glucose is for hypoglycaemia, whereas Sophie is hyperglycaemic. Subcutaneous insulin is not the first step in an ill, dehydrated child before assessment and fluid treatment. Fluid resuscitation is reserved for compromised circulation, which her normal observations argue against. Intravenous 5% glucose does not address dehydration with hyperglycaemia initially.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Select isotonic intravenous fluid replacement for dehydration in an ill child with diabetes who has no circulatory compromise.",
+  "source": "pediatric .pdf p.116 (Part I, ch.14 Q12)"
+},
+{
+  "id": "pedhd-endo-13",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "endo-thyroid",
+  "stem": "A newborn baby is noted to have coarse facies, a large fontanelle and hypotonia on routine examination. He also has jaundice. His blood sugar levels are normal. Which of the following investigations would be most likely to reveal the underlying diagnosis?",
+  "options": [
+    "Growth hormone",
+    "Karyotype",
+    "Thyroid function tests",
+    "Blood group",
+    "CK"
+  ],
+  "answer": 2,
+  "explanation": "Thyroid function tests are most likely to reveal the diagnosis, which is congenital hypothyroidism. Coarse facies, a large fontanelle, hypotonia and jaundice in a newborn are the classic early cluster. Course material section endo-24 lists wide fontanels — a posterior fontanel greater than 0.5 cm — together with hypotonia and prolonged physiological jaundice among the early signs, alongside hypothermia, a sluggish sleepy baby, feeding difficulty, a large tongue and umbilical hernia. Only thyroid function tests measure the abnormality itself: in the common primary form, a low free T4 with a raised TSH.\n\nFinding it matters more than in almost any other newborn investigation. Section endo-26 records congenital hypothyroidism as the commonest cause of preventable mental retardation, notes that affected infants usually appear normal at birth, and warns that delay of diagnosis and treatment beyond the first 1–3 months of life produces irreversible neurological deficit. Only 5–10% of cases can be diagnosed in the first month without screening. That is why the neonatal screen exists, and why a baby who does show signs is tested at once rather than watched.\n\nGrowth hormone is the wrong axis and the wrong age: growth hormone deficiency declares itself through impaired linear growth later in infancy and childhood, not through this newborn constellation. A karyotype detects chromosomal disorders, and several do cause hypotonia with coarse features, but it would not explain the prolonged jaundice, and it would not direct the treatment that has to start now. Blood group — with a direct antiglobulin test — investigates haemolytic jaundice, and jaundice genuinely is one of this baby's features; it cannot, though, account for the coarse facies, the large fontanelle or the hypotonia, and the jaundice of congenital hypothyroidism is a prolonged unconjugated jaundice rather than a haemolytic one. CK is raised in muscle disease and is a fair thought in a hypotonic infant, but it explains neither the facies nor the jaundice. The normal blood sugar in the stem is a deliberate exclusion: it removes hypoglycaemia as the cause of the hypotonia, and with it the panhypopituitarism that would otherwise be worth chasing.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Identify neonatal features of congenital hypothyroidism and choose thyroid function testing.",
+  "source": "pediatric .pdf p.116 (Part I, ch.14 Q13)"
+},
+{
+  "id": "pedhd-endo-14",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "endo-thyroid",
+  "stem": "A 7-day-old male baby is brought into the emergency department with a 1-day history of poor feeding and vomiting. He was born at term by spontaneous vaginal delivery weighing 3200 g and his postnatal period was uneventful. On arrival, he appears lethargic and has moderate dehydration. His weight is 2750 g. His blood glucose is 2.0 and his blood gas reveals a sodium of 124 mmol/L and the potassium is 6.8 mmol/L. Following resuscitation and stabilization, what is most likely to confirm the diagnosis?",
+  "options": [
+    "Abdominal ultrasound scan",
+    "ACTH level",
+    "Karyotype",
+    "17 Hydroxyprogesterone level",
+    "Chloride level"
+  ],
+  "answer": 3,
+  "explanation": "A 17 Hydroxyprogesterone level is the confirming investigation. A previously well 7-day-old boy with vomiting, lethargy, weight loss, dehydration, hyponatraemia and hyperkalaemia has the pattern of a salt-wasting adrenal crisis due to congenital adrenal hyperplasia. Raised 17-hydroxyprogesterone is the characteristic screening biochemical result. The disease mechanism and salt-wasting presentation are not taken from the course material; congenital adrenal hyperplasia is named in section endo-33, but its clinical teaching is supplied there rather than taught by the available lectures.\n\nThe numbers are worth walking through, because together they are the diagnosis. A 3200 g term baby down to 2750 g at seven days has lost about 14% of birth weight — far beyond the physiological 7–10% — which is the salt and water going out. Sodium 124 mmol/L with potassium 6.8 mmol/L is the mineralocorticoid signature: without aldosterone the distal nephron cannot exchange sodium for potassium, so sodium is wasted into the urine and potassium is retained. Glucose 2.0 is hypoglycaemia, which is the cortisol half of the same enzyme block. Section endo-33 gives the salt-losing crisis at 1–3 weeks as vomiting, weight loss, dehydration and shock with hyponatraemia, hyperkalaemia, metabolic acidosis and hypoglycaemia — this baby has all of it.\n\nOne caution about that glucose. The book prints it as \"His blood glucose is 2.0\" with **no unit at all**, where every other glucose in the chapter is written in mmol/L. It is reproduced here exactly as printed and has not been corrected. Read in mmol/L it is unambiguously low, and nothing in the reasoning turns on the missing unit — the electrolytes and the collapse carry the diagnosis on their own.\n\nAn abdominal ultrasound scan may investigate anatomical causes of vomiting, such as pyloric stenosis, and it can map internal structures in a disorder of sex development — but pyloric stenosis classically produces a hypochloraemic, hypokalaemic metabolic **alkalosis**, the opposite potassium direction to this baby's, and ultrasound confirms no biochemical diagnosis. An ACTH level is genuinely raised in primary adrenal failure, and it is the loss of cortisol feedback that drives it, but it is a marker of adrenal insufficiency in general rather than of which enzyme failed; 17-hydroxyprogesterone names the block. Karyotype matters when the genitalia are ambiguous or a chromosomal disorder is suspected — but this infant's genitalia are described as male, which is exactly why nothing was noticed at birth, and a karyotype would not have shortened the week. Chloride belongs in the electrolyte panel and helps characterise an acid-base disturbance, but it cannot establish the underlying endocrine disorder.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Recognize salt-wasting congenital adrenal hyperplasia and select 17-hydroxyprogesterone testing.",
+  "source": "pediatric .pdf p.116 (Part I, ch.14 Q14)"
+},
+{
+  "id": "pedhd-endo-15",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "endo-dka",
+  "stem": "A 14-year-old boy is admitted with diabetic ketoacidosis. Intravenous insulin has been running at 0.1 units/kg/h for the last 12 hours alongside a 500 mL bag of 0.9% normal saline. His last blood sugar is 22 mmol/L and he has a good urine output. Which of the following are most likely to be decreased?",
+  "options": [
+    "Serum sodium",
+    "Serum potassium",
+    "Serum lactate",
+    "Serum chloride",
+    "Serum calcium"
+  ],
+  "answer": 1,
+  "explanation": "Serum potassium is most likely to be decreased. In DKA, total-body potassium is depleted by osmotic diuresis and vomiting even when the initial serum potassium may be normal or high because insulin deficiency and acidosis shift potassium out of cells. Once insulin is infused, potassium shifts back into cells and the measured serum potassium can fall substantially. Good urine output matters because it supports renal potassium excretion and permits potassium replacement; course material section endo-17 directs that potassium replacement be deferred until the child has voided and continued during intravenous fluid therapy except in renal failure.\n\nSerum sodium may be low at presentation because of hyperglycaemia and water movement, but it is not the best answer to the insulin-associated fall being tested. Serum lactate can rise with hypoperfusion and should improve as circulation is corrected; insulin treatment does not make it the expected falling electrolyte. Serum chloride may rise with prolonged normal-saline administration rather than decrease. Serum calcium is not the characteristic major electrolyte fall during standard DKA treatment. The high blood sugar does not justify stopping insulin; course material section endo-16 states that glucose can be given if needed while insulin continues to correct ketoacidosis.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Explain why insulin treatment during DKA can lower serum potassium and requires monitoring and replacement.",
+  "source": "pediatric .pdf p.117 (Part I, ch.14 Q15)"
+},
+{
+  "id": "pedhd-endo-16",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "endo-thyroid",
+  "stem": "On routine newborn examination a baby is noted to have bilaterally undescended testes. Genitalia appears to be male. Which is the most important initial investigation?",
+  "options": [
+    "Karyotype with FISH for sex-determining region of the Y chromosome",
+    "Abdominal ultrasound scan",
+    "Abdominal CT scan",
+    "17-Hydroxyprogesterone levels",
+    "Urea and electrolytes (U&Es)"
+  ],
+  "answer": 4,
+  "explanation": "Urea and electrolytes (U&Es) are the most important initial investigation. Bilaterally undescended testes can occur in a newborn with an underlying disorder of sex development, including an infant who appears male externally but could be at risk of an adrenal salt-wasting crisis. Electrolytes identify potentially life-threatening hyponatraemia and hyperkalaemia promptly. This emergency-focused priority is not taken from the course material; the available material names congenital adrenal hyperplasia and gives an ACTH-stimulation test in the puberty lecture, but does not teach the initial newborn investigation sequence.\n\nKaryotype with FISH for sex-determining region of the Y chromosome may become important in a full disorders-of-sex-development assessment, but it does not identify the immediate metabolic danger. Abdominal ultrasound scan can help locate internal structures but is not the urgent first test in a clinically well newborn with this finding. Abdominal CT scan adds radiation and is not an initial neonatal investigation. A 17-Hydroxyprogesterone level is relevant if congenital adrenal hyperplasia is suspected, but electrolytes come first because salt wasting can deteriorate rapidly and requires immediate treatment. Course material section endo-33 identifies raised 17-hydroxyprogesterone as the relevant biochemical marker once the emergency assessment is addressed.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Prioritize electrolyte assessment in a newborn with bilateral undescended testes because occult salt-wasting adrenal disease may be life-threatening.",
+  "source": "pediatric .pdf p.117 (Part I, ch.14 Q16)"
 }
 ];

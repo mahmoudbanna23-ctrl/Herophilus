@@ -164,13 +164,41 @@
       ]
     },
     "gate": {
-      "at": "2026-09-03T14:18:17",
+      "at": "2026-09-03T15:33:16",
       "ok": true,
-      "hash": "1978ec04d1ba",
+      "hash": "16e5fde22b0f",
       "count": 16,
       "fails": [],
       "warns": [],
       "nullKeys": []
+    },
+    "check": {
+      "at": "2026-09-03T15:33:27",
+      "ack": "Claude Opus 5 (all 8 pages read by eye, 3 staging faults repaired, 2 printed defects recorded) 2026-09-03",
+      "hash": "16e5fde22b0f",
+      "count": 16
+    },
+    "draft": {
+      "A": {
+        "at": "2026-09-03T15:45:15",
+        "file": "content\\peds\\qb-pages\\house-ch14-endocrine.draft-A.js",
+        "entries": 8,
+        "valExit": 0
+      },
+      "B": {
+        "at": "2026-09-03T15:50:20",
+        "file": "content\\peds\\qb-pages\\house-ch14-endocrine.draft-B.js",
+        "entries": 8,
+        "valExit": 1
+      }
+    },
+    "close": {
+      "at": "2026-09-03T15:52:53",
+      "halves": [
+        "A",
+        "B"
+      ],
+      "wrote": true
     }
   }
 }
