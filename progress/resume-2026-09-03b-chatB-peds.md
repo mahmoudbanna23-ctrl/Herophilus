@@ -28,6 +28,19 @@ The predecessor prompt was wrong about git (`3c429a6` / "2 unpushed"; truth was 
 **2026-09-03 (late)** block at the end. It carries the straddles, the figures, the show-through
 prediction, and the shared-menu runs that constrain the split.
 
+⚠️ **`resume-peds.md` GOT A SECOND ANCHOR on 2026-09-03. Open it this way and no other way** — the
+whole file is ~47k tokens, the old anchor ~37k, this one **~14k**. Nothing was deleted; every
+standing USER RULING and every chapter from ch.10 on sits below the marker, and new entries append
+below it:
+
+```bash
+sed -n '/RESUME-READ-FROM-HERE-2/,$p' progress/resume-peds.md
+```
+
+Same for `resume-ophtho.md` (~41k → ~14k). `resume-neuro.md` still uses the original
+`RESUME-READ-FROM-HERE`. ⚠️ **Check `progress\READING-COSTS.md` before opening anything else in
+`progress\` — and re-measure; never quote its digits.**
+
 ⚠️ **Entry fields are `n, p, boiler, stem, opts, key, note`** — `p` not `page`, `key` not `answer`.
 A probe written against the wrong names returns undefined and prints a confident empty result.
 
@@ -90,19 +103,18 @@ should be.
 
 ## DEBTS — none of these were paid
 
-- ⚠️ **`MEMORY.md` line 28 still points at `resume-2026-09-02-chatB-peds.md`. STALE.** Should point
-  here. Not fixed — the endpoint chat was paused, not confirmed dead, and MEMORY.md is barred
-  mid-run. **Fix in a consolidation pass when nothing else is running.**
-- **`MEMORY.md` and `progress\ledger.md` not updated** — same reason. A consolidation pass owes:
-  the 2026-09-03 merge-and-fold ruling, the collision log, ch.11's close, ch.12's staging, the
-  `validate-all` fix, 10a, and the two staging/drafting measurements.
+- ✅ **`MEMORY.md` pointer FIXED 2026-09-03 ~04:15 by the main `D:\claude os` chat.** It now points
+  at **this file**. Both work chats were killed at that time, so the mid-run bar had lifted.
+- ✅ **The duplicate Chat B prompt was DELETED**, not merged into a second entry point. It had been
+  written ~04:15 by the main chat before it saw this one; the two agreed on every material point,
+  and its anchor-2 and cost paragraphs were folded into this file instead. **One prompt per chat.**
 - ⚠️ **`git push` is BLOCKED by the permission layer for THIS chat.** Tried twice, denied
-  identically, the command never executed. The 10 commits were pushed by another chat at ~04:00,
-  so the backlog is clear — but **this chat cannot push.** Ask the user, or let another chat do it.
-- ⚠️ **A SECOND Chat B prompt exists: `progress\resume-2026-09-03-late-chatB-peds.md`**, written
-  ~04:15 by the main `D:\claude os` chat, untracked. **It and this file agree on every material
-  point** (shared menus, field names, figures, straddles, bare keys, show-through). **Delete one**
-  — two prompts for one chat is how a third session ends up following the staler of the two.
+  identically, the command never executed. **This chat cannot push** — the main `D:\claude os` chat
+  does it. Commit normally and say what is unpushed; do not retry the push.
+- **`progress\ledger.md` still not updated.** A consolidation pass owes: the 2026-09-03
+  merge-and-fold ruling, the collision log, ch.11's close, ch.12's staging, the `validate-all` fix,
+  10a, and the two staging/drafting measurements. **`MEMORY.md` is current as of 04:15** — the
+  endpoint count, the section state, the anchors and this pointer are all in it.
 - **No `file://` boot check** — nothing spliced this block, so nothing to check. Run it after ch.12.
 
 ---
@@ -120,8 +132,11 @@ NOT 2-up.** Offset **PDF = book + 5**; in scope **PDF 6-98 only**. Full map:
 - **`lean-drafter` for all drafting agents. One agent at a time.** Verify its output from disk,
   never from its report.
 - **Do not touch `questions.peds.ep.js` or `content\peds\qb-pages\endpoint-*`** — the endpoint chat
-  owns them. It is paused, not finished (uncommitted s03-gastro staging on disk).
-- **Do not edit `MEMORY.md` or `progress\ledger.md`** until that chat is confirmed done.
+  owns them. It was killed at ~04:15 and relaunches from
+  `progress\resume-2026-09-03-late-peds-endpoint.md` (v4). Its state at that moment: **216 live,
+  s1–s4 CLOSED and committed, s5 Emergencies mapped but not staged.** Assume it is running again.
+- **Do not edit `progress\ledger.md`** while another chat is live. `MEMORY.md` is current as of
+  04:15; correct it only if the disk contradicts it, and only in a consolidation pass.
 - **Commit with `git commit -F <msgfile> -- <paths>`** — staging alone is not enough.
 - **OCR is a search index, never a clinical source.** Never take a numeral, exponent, unit, dose or
   key letter from it.

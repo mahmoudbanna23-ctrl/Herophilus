@@ -22,11 +22,11 @@ Where this file and the archive disagree, this file wins. ⚠️ **Before openin
 **no live rule left it.**
 
 ## Resume here — state at end of 2026-09-03
-**BOTH CHATS RAN the night of 2026-09-02/03 and were still LIVE at the 04:00 watch pass**; Chat B
-relaunches from `progress\resume-2026-09-02-chatB-peds.md`, endpoint from
-`…-peds-endpoint.md` v3 — both journalled. ⚠️ **A DIRTY TREE IS NORMAL while they run** (endpoint
-`*-pd-ep.js`, `merge-parts-ep.js`, `endpoint-s04-*`; Chat B `house-ch12-*.array.js`) — **never stage
-another chat's file; commit explicit paths only.** `5079b86` pushed, ahead 0, no lock.
+**BOTH CHATS RAN the night of 2026-09-02/03 and were KILLED at ~04:15 on 2026-09-03.** ⚠️ **RELAUNCH
+ONLY FROM `progress\resume-2026-09-03b-chatB-peds.md` and
+`progress\resume-2026-09-03-late-peds-endpoint.md`** (v4) — every earlier prompt is stale and pays
+~50k more per read. ⚠️ **A DIRTY TREE IS NORMAL while two chats run** — **never stage another
+chat's file; commit explicit paths only, and wait on `index.lock`, never delete it.**
 ⚠️ **The watch runs FROM THE MAIN `D:\claude os` CHAT, not its own** (user, 2026-09-03) — note atop
 `progress\WATCH.md`. ✅ **SECOND ANCHORS PLACED 2026-09-03**: open `resume-ophtho.md` (~41k → ~14k)
 and `resume-peds.md` (~37k → ~13k) with **`RESUME-READ-FROM-HERE-2`**, nothing deleted;
