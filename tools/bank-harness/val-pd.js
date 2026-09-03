@@ -86,9 +86,27 @@ const FIGURE = new Set(S.filter(s => s.fig && String(s.fig).trim()).map(s => s.n
 // Shared option menus: group staging rows by their exact option ladder. Any group of
 // two or more is a PAIRING -- the table is written once in the lowest-n member and the
 // siblings must point at that id. A shared menu never folds questions.
+//
+// The grouping key is TYPOGRAPHICALLY NORMALISED, and ch.12 is why. n:8 prints
+// "Lennox-Gastaut" with a hyphen while n:14/15/16 print "Lennox-Gastaut" with an en dash --
+// one glyph, correctly transcribed either way. A byte-exact key split that one clinical menu
+// into two groups and then failed n:15/n:16 for pointing at n:8 (the real lowest-numbered
+// member) instead of n:14. The stored options stay byte-identical to staging; only this key
+// is normalised, and only for dash forms, quote forms and whitespace. Order is NOT normalised
+// -- a reordered ladder moves the key letter and is a different question.
+function menuKey(opts) {
+  return JSON.stringify(opts.map(o => String(o)
+    .replace(/[‐-―−]/g, '-')
+    .replace(/[‘’]/g, "'")
+    .replace(/[“”]/g, '"')
+    .replace(/ /g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .toLowerCase()));
+}
 const menus = new Map();
 S.forEach(s => {
-  const k = JSON.stringify(s.opts);
+  const k = menuKey(s.opts);
   if (!menus.has(k)) menus.set(k, []);
   menus.get(k).push(s.n);
 });
@@ -205,3 +223,10 @@ console.log('words: ' + D.map(q => q.id.replace(cfg.prefix, '') + ':' + q.explan
 console.log('total words: ' + D.reduce((a, q) => a + q.explanation.split(/\s+/).length, 0));
 console.log('chapters: ' + JSON.stringify(D.reduce((a, q) => (a[q.chapter] = (a[q.chapter] || 0) + 1, a), {})));
 if (D.some(q => q.imgAlt)) console.log('imgAlt (READ THIS BY EYE): ' + D.filter(q => q.imgAlt).map(q => q.id + ' = ' + JSON.stringify(q.imgAlt)).join(' | '));
+
+// The brief and MEMORY.md both say "the splicer refuses unless its validator gate exits 0".
+// Until 2026-09-03 this script printed FAILURES and then fell off the end -- exit 0 either way,
+// so that gate had never once fired. splice-pd.js does not invoke this script at all; it runs
+// its own independent checks. The claim of coupling was wrong. This makes the exit code real,
+// so that a caller (or a human reading $?) gets the answer the docs promise.
+if (fail.length) process.exitCode = 1;
