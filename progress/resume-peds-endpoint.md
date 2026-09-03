@@ -19,9 +19,7 @@ watch and dies with the session.
 | 1 Growth & Puberty | 5–210 | 89 pages → **73 live** | ✅ spliced `1f05e45` · **16 self-reprints folded 2026-09-03** (14 exact, then 2 reworded) |
 | 2 Nutrition | 211–392 | 76 pages → **75 live** | ✅ spliced · 1 self-reprint folded (nut-29) |
 
-**Live total: 148 entries from 165 answered pages.** The two numbers differ by the 17 folds and
-are both correct — pages staged is not questions held. Always say which one you mean.
-| 3 Gastroenterology | 393–549 | 67 → **65?** | planned; 2 pages reprint `pedep-gp-79` — fold, do not stage |
+| 3 Gastroenterology | 393–549 | 67 → **65** | staged 2026-09-03, 67 entries merged; folds settled on the images — see below |
 | 4 Accidents & poisoning | 550–562 | 3 | not started |
 | 5 Pediatrics Emergencies | 563–702 | 60 | not started |
 | 6 Perinatal | 703–773 | 23 → **22?** | p.768 reprints `pedep-gp-70` — fold, do not stage |
@@ -31,6 +29,14 @@ are both correct — pages staged is not questions held. Always say which one yo
 | Model exams 1–4, training 1–2 | 1157–1936 | 379 | last; expected mostly reprints |
 | Exam Night Review | 1937–1990 | 0 (prose) | nothing to stage |
 
+**Live total: 148 entries from 165 answered pages.** The two numbers differ by the 17 folds and
+are both correct — pages staged is not questions held. Always say which one you mean.
+
+⚠️ This paragraph used to sit **between rows 2 and 3 of the table above**, which silently split it
+into a header-less second table — rows 3–9 rendered as pipe-paragraphs. Same trap as the one that
+broke `pedep-gp-8`'s explanation: **a markdown table's rows must sit on consecutive lines**, and
+nothing checks it but reading the rendered page.
+
 Live file `app\data\questions.peds.ep.js` as of 2026-09-03, after the section-2 splice and **both**
 fold passes: **148 entries, 0 holes, 148 distinct ids, 465,937 chars / 471,472 bytes.** Boot check
 **0 console errors** (`QUESTIONS 4586`); `validate-all.js` all hard checks passed across 5 files,
@@ -38,11 +44,14 @@ no within-file duplicate stem left. ⚠️ **Chars and bytes differ by ~1.2% her
 of typographic quotes and arrows — so say which you mean; the "470,768 bytes" that stood here was
 a char count. (The "89 entries / QUESTIONS 4527" figures were the section-1 state and are dead.)
 
-**▶ RESUME HERE.** ✅ **Fold pass 2 is DONE** — see `CLOSED 2026-09-03 — fold pass 2 done` at the
-foot of this file for the carve fix, the id-choice reasoning and the markdown-table trap that
-passed every automated check. The next action is **`node tools\bank-harness\reprint-pd-ep.js
-393 549`** in NORMAL mode (not `--self-test`) over section 3, Gastroenterology, **before any page
-of it is staged** — then stage section 3.
+**▶ RESUME HERE.** ✅ **Fold pass 2 is DONE** (`f4444d6`) and ✅ **the section-3 reprint sweep is
+DONE** — both are written up at the foot of this file. **Section 3 is being STAGED**: the 67
+answered pages are rendered, the `SEC` registry in `val-pd-ep.js` and `splice-pd-ep.js` now has a
+row 3 (`pedep-gi-`), and two `lean-drafter` halves are writing
+`content\peds\qb-pages\endpoint-s03-gastro.part-A.js` (n=1–34) and `.part-B.js` (n=35–67).
+**Next after they land:** merge the halves under one header into
+`endpoint-s03-gastro.array.js`, adjudicate the three reprint candidates on the images, then draft
+and `val-pd-ep.js 3` → `splice-pd-ep.js 3 --write`.
 
 ---
 
@@ -281,7 +290,7 @@ all three printings on the images, keep the fuller one, fold the citations into 
 **65, not 67, new questions** if both confirm. Cross-chapter exact reprint is fold shape 5 and is a
 known shape for this project.
 
-Also within section 3: **p.473 == p.512** — a second within-section pair to confirm on the images.
+Also within section 3: **p.473 == p.512** — confirmed on the images to be **two distinct questions**, not a fold; they differ in option e. See the section-3 block below.
 
 **⚠️ House overlap again, and larger than section 2's.** 20 of the 26 live `pedhd-gastro-`
 questions reprint in section 3, in page order:
@@ -594,3 +603,142 @@ of a file a tool owns — otherwise the tool quietly stops reproducing its own o
 which skips the within-section comparison entirely) over section 3, Gastroenterology, before any
 page of it is staged. Expect it to confirm p.457 and p.534 against `pedep-gp-79` and p.473 ==
 p.512, and expect it to find the tail-reprints-head pattern that sections 1 and 2 both had.
+
+---
+
+## ✅ Section 3 — Gastroenterology, pp.393–549: the reprint sweep, and what it changed
+
+`node tools\bank-harness\reprint-pd-ep.js 393 549`, **NORMAL mode** — not `--self-test`, which
+short-circuits the within-section comparison entirely (`if (selfTest) continue;`) and would have
+found none of the three candidates below.
+
+    answered pages in range: 67
+    p.414 … p.455   ==  HOUSE pedhd-gastro-1 … -21     (17 pages — the pre-map exactly)
+    p.457           ==  endpoint pedep-gp-79 | HOUSE pedhd-gastro-22 | p.534 (within section)
+    p.473           ==  p.512  (within section)
+    p.534           ==  endpoint pedep-gp-79 | HOUSE pedhd-gastro-22
+    cross-file candidates 21 | within-section candidates 2
+
+### The arithmetic, SETTLED on the images: 67 answered pages → **65 new entries**
+
+The State table's "67 → 65?" was a guess made before the sweep; an intermediate "64" was written
+after it and was **wrong**. All four candidate pages have now been read at 200 dpi, each in
+isolation, and the sweep's three candidates resolve into two different outcomes:
+
+| Candidate | What the images show | New entries |
+|---|---|---|
+| p.534 (n=60) | **exact reprint** of the live `pedep-gp-79` — same stem, same options, same key | **0** |
+| p.457 (n=22) | **reworded reprint** of the same `pedep-gp-79` — same vignette, same key, one option's text differs | **0** |
+| p.473 (n=39) / p.512 (n=53) | **NOT a fold. Two distinct questions on one template** | **2**, not 1 |
+
+67 − 2 = **65**. The number matches the original guess, but it was reached by different reasoning
+and the guess was right by coincidence — it assumed p.473/p.512 folded and did not know p.457
+existed. Two errors cancelled. **An offsetting error is invisible to a sum: count the parts.**
+
+**p.473 vs p.512 differ only in option e**, and that is the whole question:
+
+- p.473 — `e. Treatment is by repeated finger dilatation`, and **e is the key**
+- p.512 — `e. Resolves spontaneously`, and **e is the key**
+
+Options a–d and the stem are identical, and each page prints its own explanation box. This is the
+standing rule paying out exactly as written: **a shared option menu PAIRS questions, it never folds
+them — name the discriminating token or you matched a template.** The discriminating token here is
+option e. A corroborating detail found by the adjudicating agent: p.473/p.512 print **lower-case
+a–e** while p.457/p.534 print **upper-case A–E**, so the four pages are two structurally
+distinct instances, not four printings of one thing.
+
+**p.457 vs p.534 differ only in option C**, and the difference points outside the book:
+
+- p.189 (the live `pedep-gp-79`) and p.534 — `C. Liver function tests`
+- p.457 — `C. Inflammatory markers and liver function tests`
+
+**p.457's wording is House's `pedhd-gastro-22` verbatim.** So the endpoint book prints this one
+vignette **three times from two different upstream sources**, and its own two printings disagree
+with each other. Both fold into `pedep-gp-79`; the p.457 option-C wording is carried across into the
+keeper when the fold pass runs, because it is the printing that agrees with the other bank.
+
+⚠️ **`pedep-gp-79` was re-verified on the p.189 image while this was adjudicated and is a correct
+transcription** — option C really is `Liver function tests`, key D. Nothing in the live bank needed
+repair. **I described that id to two staging agents from memory as a GORD/reflux question; it is a
+functional-abdominal-pain vignette.** Both agents flagged the mismatch instead of bending their
+transcription to fit it — "escalate, never decide" working as designed. **Read the id before
+describing it to an agent** (project rule: never write a page number, filename or id from memory).
+
+⚠️ The 21 cross-file hits against the **House** bank are NOT folds. A cross-bank match adds the
+bank to `alsoIn`; it never removes an entry, and the endpoint printing is staged in full either
+way. Only the two within-section hits and the two hits against a live *endpoint* id can subtract.
+
+### The layout, confirmed against `ocr\ep1\index.json` rather than taken from the pre-map
+
+- **notes / non-question pages: 393–412 · 425 · 496 · 549.** 393–412 are the section's study-note
+  slides; 549 is the closing slide; **425 and 496 are overflow explanation-box pages**, each
+  carrying the box of the question printed before it (n=6 on p.424, n=41 on p.495).
+- **67 answered pages**, first 414, last 548. `kind == "answered"` and `kind == "question"` both
+  come to 67 here — the two counts agree, unlike sections 5, 6 and 9.
+- **The page parity flips twice, and both flips are explained by the box pages:** even 414–424,
+  then **odd** 427–495, then **even** 498–548. A parity change with no box page beside it would be
+  a missing page; these two have one each.
+- Index flags to check on the image: `options-differ` on **416 · 422 · 424 · 461 · 465 · 500 ·
+  504 · 520 · 530 · 540**, and `few-options` on **504**.
+
+### Staging setup done 2026-09-03
+
+- **`SEC` row 3 added to both `val-pd-ep.js` and `splice-pd-ep.js`** — prefix **`pedep-gi-`**,
+  staging file `endpoint-s03-gastro.array.js`, var `PEDEP_S03_STAGED`, draft base
+  `endpoint-s03-gastro.draft`. ⚠️ `val-pd-ep.js`'s `chapter` field is **documentation only** — every
+  entry's chapter is validated against the real chapter set loaded from `modules.js`, so section 3
+  is free to spread across `gastroenterology` / `gi-diarrhoea` / `gi-abdopain` and into `liver` /
+  `liver-hep`. No single chapter id would have been right in that field.
+- **69 native 800×450 JPEGs pulled** (the 67 answered pages + the two box pages) with
+  `tools\ep-index\pull.py`, then **pruned to exactly those 69** — the unanswered twins were
+  rendered by the contiguous range and deleted, so no agent can waste a read on one.
+- **Two `lean-drafter` halves** (cap 2 live, never `general-purpose`) writing
+  `endpoint-s03-gastro.part-A.js` (n=1–34, pp.414–481) and `.part-B.js` (n=35–67, pp.483–548),
+  against `<scratchpad>\s03-brief.md`. Both were told to **stage all 67 verbatim and merely mark
+  the reprint candidates in `note`** — folding is the parent's call, made on the images, after the
+  two printings can be compared as transcribed text.
+
+### ✅ Staging complete 2026-09-03 — 67 entries, merged and verified
+
+`endpoint-s03-gastro.array.js`, **67 entries, n 1..67, pp.414–548, 49,779 chars**, built by
+`merge-parts-ep.js 3 --write` from the two halves. `node --check` clean.
+
+- **No printed explanation box on n=64 (p.542), n=65 (p.544), n=67 (p.548)** — `expl:''`, which is
+  a correct value at staging. The drafting pass writes those three from the lecture cache and must
+  end each with the "Written for this bank" marker.
+- **Boxes printed alone on their own page: n=6 → p.425, n=41 → p.496.** Both confirmed; each box
+  belongs to the question printed before it.
+- `pr == n` on all 67 — the book's own numbering does not drift anywhere in this section.
+- No figures anywhere in section 3.
+
+**⚠️ The merge's one surprise, and it was real: `option counts: {"4":11,"5":56}`.** The pre-map
+flagged `few-options` on **one** page (p.504), so eleven four-option questions read as a mass
+transcription failure — and all eleven sit in the half whose first agent died mid-run, which is
+exactly where a dropped option would hide. It was not a failure:
+
+- The index's own option-label detection reads `["A","B","C","D"]` and no E on all eleven pages.
+  `few-options` never fired because its threshold sits **below** 4 — p.504 tripped it at 3 labels.
+- Staged option counts agree with the **union of both OCR reads** on **65 of 67** pages. Taking
+  `max()` of the two reads instead of the union produced a third false disagreement (n=2, p.416,
+  where native missed A and hires missed C — union recovers all five). **Use both halves, and
+  union them: that is what the rule means.**
+- The two genuine disagreements were both read on 200 dpi images and **both staging readings were
+  confirmed**: **n=41 p.495** prints five options lower-case a–e with **e** highlighted (OCR dropped
+  the long fifth option, which was the key — the one under-read that would have mattered);
+  **n=45 p.504** prints four options upper-case A–D with **C** highlighted, as its agent noted.
+
+So the four-option run is a property of the book, not of the transcription. It begins at n=38 and
+is confined to the second half — the first 34 questions are uniformly five-option. Combined with
+the upper/lower-case split found during the fold adjudication, section 3 is visibly assembled from
+**two upstream sources**, and the four-option run is the seam.
+
+**⚠️ Do NOT delete the two folded pages from staging.** The pipeline is *stage all → draft all →
+splice all → fold as a separate pass afterwards* — the splice gate enforces "every staged id
+drafted exactly once", so a staging file short of its page count fails the gate. This is how
+sections 1 and 2 ran (89 and 76 staged, 73 and 75 live) and how `f4444d6` took 150 → 148.
+Section 3 splices at **67**, taking the live bank 148 → 215, and the fold pass then takes it to
+**213** by folding n=22 and n=60 into `pedep-gp-79`.
+
+**▶ NEXT: the drafting pass** — two `lean-drafter` halves writing `endpoint-s03-gastro.draft-A.js`
+(n=1–34) and `.draft-B.js` (n=35–67), then `val-pd-ep.js 3 A` / `3 B`, then
+`splice-pd-ep.js 3 --write`, boot check, `validate-all.js`.

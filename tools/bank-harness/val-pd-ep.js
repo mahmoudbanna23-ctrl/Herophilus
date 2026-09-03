@@ -24,6 +24,12 @@ const SEC = {
        draft: 'endpoint-s01-growth-puberty.draft', chapter: 'growth-puberty' },
   2: { prefix: 'pedep-nut-', file: 'endpoint-s02-nutrition.array.js', svar: 'PEDEP_S02_STAGED',
        draft: 'endpoint-s02-nutrition.draft', chapter: 'nutrition' },
+  // `chapter` is documentation only -- every entry's chapter is checked against the real
+  // chapter set from modules.js (chapIds, below), never against this field. Section 3 needs
+  // that latitude: its questions land in gastroenterology / gi-diarrhoea / gi-abdopain and
+  // spill into liver and liver-hep, so no single id would be right here.
+  3: { prefix: 'pedep-gi-', file: 'endpoint-s03-gastro.array.js', svar: 'PEDEP_S03_STAGED',
+       draft: 'endpoint-s03-gastro.draft', chapter: 'gastroenterology' },
 };
 
 // imgAlt must give MODALITY AND VIEW ONLY. Naming the finding answers the question --
