@@ -112,7 +112,14 @@ function carve(file) {
     run(p);
     arr = globalThis[v[1]];
   } else {
-    block = t.replace(/^\s+/, '').replace(/,\s*$/, '').replace(/\s+$/, '');
+    // A drafting agent may open the file with a /* … */ provenance header -- both section-5 halves
+    // do, section 4's did not, and the validator tolerates one while this carve did not, so the
+    // splice failed on two files that had already passed every check. The header is worth keeping
+    // in the draft and must NOT reach the live data file, so it is stripped here rather than
+    // deleted from the drafts. Only a comment BEFORE the first entry is removed; the guard below
+    // still fires on anything else that is not an entry.
+    block = t.replace(/^\s*(?:\/\*[\s\S]*?\*\/\s*|\/\/[^\n]*\n\s*)*/, '')
+             .replace(/,\s*$/, '').replace(/\s+$/, '');
     if (!block.startsWith('{')) throw new Error(file + ': bare fragment does not start with "{"');
     arr = vm.runInThisContext('[\n' + block + '\n]', { filename: file });
   }

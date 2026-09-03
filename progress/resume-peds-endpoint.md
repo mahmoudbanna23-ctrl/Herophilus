@@ -1366,3 +1366,69 @@ defect.** All 24 non-plain `source` values are legitimate fold annotations of th
 paren was **my own display code** greedily stripping to the *last* `p.` — the one inside the
 parenthetical. **The file is clean.** I checked the format against a strict regex before believing
 my own printout, and it is the printout that was wrong.
+
+---
+
+## §5 Emergencies SPLICED — 216 -> 277 — 2026-09-03
+
+**`questions.peds.ep.js` holds 277 entries, verified from disk, not from the splicer's own report.**
+Loaded the file through `vm.runInThisContext` and read the array: **277 entries, 0 sparse holes, 0
+duplicate ids**, 653,808 -> 839,255 bytes. The 61 new entries are `pedep-emg-1` … `pedep-emg-61`
+with **no gap in the sequence**, all `bank:'endpoint'`, all `module:'pediatrics'`, all
+`chapter:'emergencies'`. Independently of the validator: **0 `answer` values out of range, 0
+missing page citations, 0 thin explanations.** Chapter tally now
+`growth-puberty 69 · nutrition* 76 · gi* 63 · perinatal 3 · neonatal-sepsis 1 · haem-bleeding 1 ·
+accidents 3 · emergencies 61`.
+
+`node tools/bank-harness/validate-all.js` — **ALL HARD CHECKS PASSED (5 files)**, live corpus 4,652
+across the five data files. `node tools/boot-check/boot-check.js` — **0 console errors**,
+`QUESTIONS 4741 · THEORY 153 · MODULES 4 · 153 chapter rows (128 with questions, 25 empty by
+design) · 4 module cards`. The 4,741 vs 4,652 difference is the 89 free-text cases (82 ENT + 7
+neuro), which `validate-all.js` does not count and the app does.
+
+### The splice failed first, and the failure was in the harness, not the drafts
+
+Both validators printed `ALL CHECKS PASSED` and the splice then died with
+`CARVE FAILED: endpoint-s05-emergencies.draft-A.js: bare fragment does not start with "{"`.
+
+Cause: **both §5 drafts open with a `/* … */` provenance header; §4's did not.** `val-pd-ep.js`
+tolerates a header, `splice-pd-ep.js`'s bare-fragment branch did not — so two files that had
+already passed every check could not be spliced.
+
+**I fixed the splicer rather than deleting the headers.** Deleting them would have unblocked this
+splice and left the next drafting agent to hit the same wall, and the header is worth keeping in
+the draft: it records where the entries came from. `carve()` now strips a leading run of `/* … */`
+and `//` comments **before** the `startsWith('{')` guard, and the guard itself is untouched — it is
+what catches a genuinely malformed fragment, so only a comment *before the first entry* is removed.
+The header does not reach the live data file.
+
+### What is still owed, unchanged by this splice
+
+**The fold pass is still a separate pass and has not run.** Candidates, now all live in the file:
+
+- **§5** — `pedep-emg-5` (p.586) ≡ `pedep-emg-27` (p.630) · `pedep-emg-30` (p.636) ≡ `pedep-acc-2` ·
+  `pedep-emg-33` (p.642) ≡ `pedep-acc-3` (keep the fuller §5 printing in both).
+- **§5, must be looked at on the pages, not adjudicated from text** — `pedep-emg-55` (p.689) ≡
+  `pedep-emg-59` (p.697): stem similarity **1.000**, and `validate-all.js` now independently reports
+  them as a duplicate-stem group — **but the keys differ (1 vs 4) and the option counts differ
+  (4 vs 5).** A 1.000 stem match with a moved key is exactly the "reordered, which moves the key
+  letter" fold shape *or* two different questions sharing a stem; **the text cannot tell them apart.**
+- **§3** — `pedep-gi-1` ≡ `pedep-gi-62` (identical five options, same key, differing only in the
+  child's age, 6 y vs 2 y — which matters, rotavirus skews younger). Also unadjudicated.
+  ⚠️ `pedep-gi-30` ≡ `pedep-gi-49` is reported by `validate-all.js` and is **correctly NOT folded** —
+  an option is *replaced*, and the replaced option is the key.
+- **§2, found by re-sweeping the closed section** — `pedep-nut-16` (p.268) ≡ `pedep-nut-64` (p.366)
+  and `pedep-nut-59` (p.356) ≡ `pedep-nut-74` (p.387).
+
+Taking every fold above would move 277 -> roughly 271. **Any count quoted before that pass is
+pre-fold, and 277 is a pre-fold count.**
+
+**The cross-bank `alsoIn` pass is also still unstarted** — 21 House hits in §3, plus §1, §2, and
+§5's two `pedhd-inf-15` matches (`pedep-emg-55` and `-59`). It reads `questions.peds.js` and may
+only ever **write** `questions.peds.ep.js`. ⚠️ `pedhd-card-6..10` must NOT be folded: five identical
+stems against five different figures and keys, and no normaliser can see a figure —
+`validate-all.js` reports them as a five-way duplicate group every run, and that report is expected.
+
+⚠️ Chat B's `questions.peds.js` read **269** during this run, up from the 243 in `MEMORY.md`. That
+is Chat B working normally, not a finding — recorded only so the next reader does not mistake the
+movement for damage.
