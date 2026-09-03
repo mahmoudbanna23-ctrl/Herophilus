@@ -10,6 +10,39 @@ watch and dies with the session.
 **Never touched:** `questions.peds.js` (Chat B's), `index.html`, `questions.js`, `modules.js`,
 `MEMORY.md`, `ledger.md`, `splice-pd.js`/`val-pd.js`.
 
+## ⚠️ READ THIS FILE IN TWO PIECES, NOT WHOLE (anchor placed 2026-09-03, at 111 KB / ~28k tokens)
+
+Unlike `resume-ophtho.md` and `resume-peds.md`, **this journal keeps its standing material at the
+TOP** — the state table, the cross-bank overlap register, the tool roster and the section pre-maps.
+A tail-only read would throw all of that away, so the anchor here needs **two ranges, not one**:
+
+```bash
+sed -n '1,/^## .*SECTION 1 REPRINTS ITSELF/p' progress/resume-peds-endpoint.md
+sed -n '/^## .*Emergencies SPLICED/,$p'       progress/resume-peds-endpoint.md
+```
+
+**Measured, not estimated: 46,415 bytes of 114,408 — 41% of the file, ~11k tokens against ~28k**
+(2026-09-03, after this note was written; the share drifts as sections append below the tail anchor,
+so re-measure rather than quoting this).
+
+⚠️ **Both ranges anchor on HEADINGS, not on the `RESUME-READ-FROM-HERE` marker, and deliberately.**
+A `sed` for that marker matches **this note first** — the note names the marker, so the pattern
+finds it here and returns almost the whole file. `resume-ophtho.md` recorded that same trap for its
+own two markers and it bit again within a minute of this anchor being written. Headings cannot
+self-match, because the note's own lines start with `sed`, not with `##`.
+
+⚠️ **And `.` does NOT stand in for the emoji or the section sign.** The first draft of these two
+commands wrote `/^## . SECTION 1/` and `/^## .5 Emergencies/`, on the assumption that one `.` would
+cover one printed character. It does not — `sed` here matches bytes, and both of those glyphs are
+multi-byte, so **the head pattern matched nothing and returned the whole file while the tail pattern
+matched nothing and returned zero bytes.** `.*` is what works. A range that silently returns
+everything, and its partner that silently returns nothing, are the same bug wearing two faces:
+**always print the first and last line a new range actually resolves to before trusting it.**
+
+**Nothing has been deleted or moved**; new sections append below the anchor and are always included.
+What the two ranges skip is §1's self-reprint audit and the closed §3/§4 narratives plus §5's
+pre-map — open one by name with `grep -n "^## "` and `sed` if a specific decision needs checking.
+
 ---
 
 ## State
@@ -1368,6 +1401,16 @@ parenthetical. **The file is clean.** I checked the format against a strict rege
 my own printout, and it is the printout that was wrong.
 
 ---
+
+<!-- RESUME-READ-FROM-HERE -->
+<!-- First anchor, placed 2026-09-03, when this file reached 111 KB / ~28k tokens - past the ~30k
+     threshold in READING-COSTS.md once the head is counted too. Placed at the last two closed
+     sections plus the live one, so the most recent fold precedents stay below it.
+     ⚠️ THIS FILE NEEDS TWO RANGES, NOT ONE - its standing material is at the TOP, not the bottom,
+     and BOTH ranges anchor on HEADINGS, not on this marker: a sed for the marker string matches
+     the note under the title first and returns almost the whole file. The two commands are in
+     that note. This comment is a landmark for a reader scrolling, not a sed target.
+     Nothing was deleted or moved; new sections append below and are always included. -->
 
 ## §5 Emergencies SPLICED — 216 -> 277 — 2026-09-03
 
