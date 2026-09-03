@@ -195,3 +195,16 @@ entry; the second died after rendering the whole range and making every crop.
   Neuro 3 Oct · Peds papers 18–19 Oct. **Scope is never cut** — if time runs short, say so loudly.
 
 **TRUST THE DISK AND THE STAGING OVER THIS PROMPT, AND TELL ME WHERE I WAS WRONG.**
+
+---
+
+## Changed since v5 — 2026-09-03 14:20, measured by the main chat
+
+- ⚠️ **The section-7 table above is STALE.** Half C is NOT "not started": all three drafts are on
+  disk — A 18 ids, B 18 ids, **C 17 ids at 14:19** = **53**, matching the staged count exactly.
+  Re-run both validators and go to the splice; do not re-draft.
+- **Sprint plan of record agreed 2026-09-03: `progress\PLAN-sprint-to-17-sep.md`.** Read it once.
+  What binds you: optimization stays closed, non-exam projects are frozen, the review tiers, and
+  the floor for medical verification. **It does not change how you draft or splice.**
+- **Two open debts from v5 still stand** — the `pedep-neo-7` crop is not cut, and three half-A
+  `imgAlt` strings are identical across three different films. Neither has been touched.

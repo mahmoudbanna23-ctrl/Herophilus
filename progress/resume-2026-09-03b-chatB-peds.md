@@ -191,3 +191,17 @@ NOT 2-up.** Offset **PDF = book + 5**; in scope **PDF 6–98 only**. Full map:
   Neuro 3 Oct · Peds papers 18–19 Oct. **Scope is never cut** — if time runs short, say so loudly.
 
 **TRUST THE DISK AND THE STAGING OVER THIS PROMPT, AND TELL ME WHERE I WAS WRONG.**
+
+---
+
+## Changed since v3 — 2026-09-03 14:20, measured by the main chat
+
+- **ch.13 staging is in flight on disk** — `content\peds\qb-pages\house-ch13-respiratory.array.js`,
+  21,286 bytes at 14:20, header written per §10a, entries appending. **Resume from the file, not
+  from the top of the chapter**, and check its last entry first: a dead agent's last entry is a
+  known-bad spot.
+- **Sprint plan of record agreed 2026-09-03: `progress\PLAN-sprint-to-17-sep.md`.** Read it once.
+  What binds you: optimization stays closed, non-exam projects are frozen, the review tiers, and
+  the floor for medical verification. **It does not change how you stage, draft or splice.**
+- **Remaining on your streams, measured 2026-09-03:** House **124** (ch.13–20, bank 393 minus
+  `Q_PEDS` 269) · neuro **~29** (psychiatry Q137–165). Re-measure; both move by the commit.
