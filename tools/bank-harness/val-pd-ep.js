@@ -56,6 +56,13 @@ const SEC = {
   // filed by its content, not by this line.
   10: { prefix: 'pedep-mf1-', file: 'endpoint-s10-mfe1.array.js', svar: 'PEDEP_S10_STAGED',
         draft: 'endpoint-s10-mfe1.draft', chapter: '(mixed)' },
+
+  // Model Final Exam 2, pp.1323-1483. Mixed topic, exactly as §10 -- `chapter` is a label only.
+  // ⚠️ The prefix is `pedep-mf2-`, from the EXAM, not `pedep-mfe2-` from the staging FILE name.
+  // The journal printed the file name as the §10 prefix and a resume nearly drafted 79 entries
+  // under an id the validator rejects; the same trap is one character away here.
+  11: { prefix: 'pedep-mf2-', file: 'endpoint-s11-mfe2.array.js', svar: 'PEDEP_S11_STAGED',
+        draft: 'endpoint-s11-mfe2.draft', chapter: '(mixed)' },
 };
 
 // imgAlt must give MODALITY AND VIEW ONLY. Naming the finding answers the question --

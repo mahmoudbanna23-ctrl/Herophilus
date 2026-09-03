@@ -51,6 +51,15 @@ const SEC = {
         reprints: [1, 2, 3, 6, 11, 12, 13, 15, 16, 17, 21, 22, 23, 24, 27, 28, 38, 40, 44, 46,
                    47, 48, 50, 52, 62, 64, 65, 66, 67, 69],
         reprintPass: 'reprint-s10-pd-ep.js', reprintMark: 'Model Final Exam 1' },
+
+  // Model Final Exam 2. ⚠️ `reprints` IS DELIBERATELY ABSENT UNTIL THE SECTION IS ADJUDICATED.
+  // Without it this section behaves like a content section -- staged must equal drafted -- so the
+  // splice will REFUSE until the reprint list is filled in and reprint-s11-pd-ep.js exists. That
+  // refusal is the point: §10 measured 30 reprints in 80, and a section spliced before its
+  // reprints are found would create duplicate entries silently. Fill this in from the adjudication
+  // and add the pass; do not delete the field to get past the gate.
+  11: { prefix: 'pedep-mf2-', staging: 'endpoint-s11-mfe2.array.js', svar: 'PEDEP_S11_STAGED',
+        draft: 'endpoint-s11-mfe2.draft' },
 };
 
 const HEADER = `/* Pediatrics ENDPOINT questions (Pediatrics endpoint part1.pdf).

@@ -101,6 +101,14 @@ const SEC = {
   //      counted here as answered (p.1811 is a confirmed instance). Read the pages; trust no count.
   10: { base: 'endpoint-s10-mfe1', svar: 'PEDEP_S10_STAGED', title: 'MODEL FINAL EXAM 1',
         pages: '1157-1321', expect: 80 },
+
+  // Model Final Exam 2. All three notes above apply unchanged. Band measured from index.json on
+  // 2026-09-04, not copied from the journal, which had both ends off by one: the exam's first
+  // `question` sheet is p.1323 and its last `answered` sheet is p.1481, with MFE 3 opening at
+  // p.1484. 79 answered / 79 question / one `notes` interruption at p.1471. Option counts on the
+  // answered pages run 4:22, 5:57 -- so a five-option ladder is the norm here, unlike §10.
+  11: { base: 'endpoint-s11-mfe2', svar: 'PEDEP_S11_STAGED', title: 'MODEL FINAL EXAM 2',
+        pages: '1323-1483', expect: 79 },
 };
 
 const secNum = process.argv[2];
