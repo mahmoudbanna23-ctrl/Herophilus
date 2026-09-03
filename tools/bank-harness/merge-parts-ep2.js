@@ -41,8 +41,14 @@ const SEC = {
   // lowered because a page was looked at, never to make a merge pass.
   2: { base: 'endpoint-p2-s02-dev-problems', svar: 'PEDEP2_S02_STAGED', title: 'SECTION 2: "Developmental problems"',
        pages: '76-154', expect: 29 },
+  // expect LOWERED 42 -> 38 on 2026-09-04, after four pages were read on the image and are
+  // lettered SUMMARY SLIDES, not questions: p.157 Chromosomal Disorders, p.159 Turner Syndrome,
+  // p.161 Mendelian Inheritance, p.162 Autosomal Recessive. 42 answered pages - 4 = 38.
+  // The book's own printed numbering agrees independently: half A prints 1-16, half B prints
+  // 17-36 with 24 and 25 each printed twice, so 36 distinct numbers + 2 repeats = 38.
+  // Two instruments, one from the images and one from the page furniture, and they meet.
   3: { base: 'endpoint-p2-s03-genetics', svar: 'PEDEP2_S03_STAGED', title: 'SECTION 3: "Genetics"',
-       pages: '155-244', expect: 42 },
+       pages: '155-244', expect: 38 },
   4: { base: 'endpoint-p2-s04-haematology', svar: 'PEDEP2_S04_STAGED', title: 'SECTION 4: "Hematological Disorders"',
        pages: '245-451', expect: 95 },
   5: { base: 'endpoint-p2-s05-respiratory', svar: 'PEDEP2_S05_STAGED', title: 'SECTION 5: "Respiratory disorders"',
