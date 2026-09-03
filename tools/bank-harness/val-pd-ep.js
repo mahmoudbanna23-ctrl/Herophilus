@@ -96,9 +96,19 @@ S.forEach(s => {
 const FIGURE = new Set(S.filter(s => s.fig && String(s.fig).trim()).map(s => s.n));
 const BOXED = new Set(S.filter(s => norm(s.expl)).map(s => s.n));
 
+// ⚠️ THE MENU KEY IS SORTED, AND THAT IS THE WHOLE POINT. It used to be JSON.stringify(s.opts),
+// which is ORDER-SENSITIVE, so it grouped only menus printed in identical order. Measured on
+// section 5, 2026-09-03: n10, n11 and n58 print the SAME five anaphylaxis options in THREE
+// different orders and were never grouped -- the drafter had to notice the pairing by hand.
+// This is not a cosmetic miss. Letters are POSITIONAL here, so a reordered menu MOVES THE KEY
+// LETTER (n10 key 3, n11 key 0, n58 key 4 -- and n11 and n58 have the SAME key text), and
+// "reordered, which moves the key letter" is one of the six recognised fold shapes. An
+// order-sensitive detector is blind to that shape as well as to the pairing.
+// ⚠️ Do NOT sort the comparison at 'options differ from staging' below -- that one must stay
+// order-sensitive, because there a reordering IS the defect it exists to catch.
 const menus = new Map();
 S.forEach(s => {
-  const k = JSON.stringify(s.opts);
+  const k = JSON.stringify(s.opts.map(o => String(o).toLowerCase().replace(/\s+/g, ' ').trim()).slice().sort());
   if (!menus.has(k)) menus.set(k, []);
   menus.get(k).push(s.n);
 });
