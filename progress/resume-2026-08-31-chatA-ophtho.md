@@ -21,7 +21,7 @@ A second chat is running peds and neuro at the same time. Stay inside your modul
    Read only from the anchor:
 
    ```bash
-   sed -n '/RESUME-READ-FROM-HERE/,$p' progress/resume-ophtho.md
+   sed -n '/RESUME-READ-FROM-HERE-2/,$p' progress/resume-ophtho.md
    ```
 
    That is ~6k tokens and carries everything from 2026-08-31 onward, your first task included.

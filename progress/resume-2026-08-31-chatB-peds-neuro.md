@@ -20,7 +20,7 @@ A second chat is running ophthalmology at the same time. Stay inside your module
    (1,126 and 529 lines). Read only from the anchor in each:
 
    ```bash
-   sed -n '/RESUME-READ-FROM-HERE/,$p' progress/resume-peds.md
+   sed -n '/RESUME-READ-FROM-HERE-2/,$p' progress/resume-peds.md
    sed -n '/RESUME-READ-FROM-HERE/,$p' progress/resume-neuro.md
    ```
 

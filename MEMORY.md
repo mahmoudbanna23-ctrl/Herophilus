@@ -22,14 +22,15 @@ Where this file and the archive disagree, this file wins. ⚠️ **Before openin
 **no live rule left it.**
 
 ## Resume here — state at end of 2026-09-03
-**BOTH CHATS LAUNCHED AND RAN the night of 2026-09-02/03** (watch pass 03:20). Chat B relaunches from
-`progress\resume-2026-09-02-chatB-peds.md`, the endpoint chat from
-`progress\resume-2026-09-02-peds-endpoint.md` v3 — both journalled properly. ⚠️ **At 03:20 the tree
-was DIRTY with both chats' in-flight files** (endpoint: `resume-peds-endpoint.md`, `*-pd-ep.js`,
-`merge-parts-ep.js`, `endpoint-s03-gastro.part-A/B.js`; Chat B: `house-ch12-neurological.array.js`)
-— **the watch pushed the 10 finished commits and left every dirty file alone.**
-⚠️ **The watch now runs FROM THE MAIN `D:\claude os` CHAT, not its own** (user, 2026-09-03) — see the
-note atop `progress\WATCH.md`. Fewer live chats at once.
+**BOTH CHATS RAN the night of 2026-09-02/03 and were still LIVE at the 04:00 watch pass**; Chat B
+relaunches from `progress\resume-2026-09-02-chatB-peds.md`, endpoint from
+`…-peds-endpoint.md` v3 — both journalled. ⚠️ **A DIRTY TREE IS NORMAL while they run** (endpoint
+`*-pd-ep.js`, `merge-parts-ep.js`, `endpoint-s04-*`; Chat B `house-ch12-*.array.js`) — **never stage
+another chat's file; commit explicit paths only.** `5079b86` pushed, ahead 0, no lock.
+⚠️ **The watch runs FROM THE MAIN `D:\claude os` CHAT, not its own** (user, 2026-09-03) — note atop
+`progress\WATCH.md`. ✅ **SECOND ANCHORS PLACED 2026-09-03**: open `resume-ophtho.md` (~41k → ~14k)
+and `resume-peds.md` (~37k → ~13k) with **`RESUME-READ-FROM-HERE-2`**, nothing deleted;
+`resume-peds-endpoint.md` (~14k, growing fast) is the next anchor due.
 ✅ ENT CLOSED (`ledger.md` §15–§16). ✅ **OPHTHO CLOSED 2026-09-02** — **1,598**, 0 holes, CLEAN, boots;
 all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`.
 
@@ -37,11 +38,12 @@ all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`.
   (ch.12–20).** **ch.12 is ALREADY STAGED, untracked** (`content\peds\qb-pages\house-ch12-neurological.array.js`,
   47.6 KB at 03:44, watch-measured) — resume at drafting. Peds OSCE **14 Sep**, nearest exam.
 - ⏳ **PEDS ENDPOINT part 1 — LAUNCHED 2026-09-02, RUNNING; part 2 deferred by the user.**
-  **`app\data\questions.peds.ep.js` holds 148** (s1 Growth & Puberty 89 + s2 Nutrition 76 = 165, then
-  **two fold passes of self-reprints: 165 -> 150 -> 148**). **Section 3 Gastro is mid-staging, untracked**
-  (`endpoint-s03-gastro.part-A/B.js` → `.draft-A/B.js` → `.array.js`; drafts newest 03:44) — it
-  outgrew one file, hence `tools\bank-harness\merge-parts-ep.js` and the splicer's validator gate for split
-  sections. ⚠️ **Never run `val-pd.js`/`splice-pd.js` on endpoint files — they write Chat B's live
+  **`app\data\questions.peds.ep.js` holds 216** (s1 89 + s2 76 = 165, folded 165 -> 150 -> 148;
+  **s3 Gastro `aa6881d` 148 -> 215 -> 213 with a fold; s4 Accidents `a10bc69` 213 -> 216, no fold**).
+  ⚠️ **A FOLD MAKES THIS FILE SHRINK LEGITIMATELY** — a drop with no fold commit behind it is the
+  finding. **s1–s4 are SPLICED; s5 is next.** A section that outgrows one file splits `part-A/B` →
+  `tools\bank-harness\merge-parts-ep.js` → `.draft-*` → `.array.js`, and the splicer refuses unless
+  its validator gate exits 0. ⚠️ **Never run `val-pd.js`/`splice-pd.js` on endpoint files — they write Chat B's live
   file**; the `-pd-ep` pair is the endpoint's, and the splice refuses unless its validator exits 0.
   **Search index: `content\peds\qb-pages\ocr\ep1\`** (p0001–p1991 .txt, two OCR reads each +
   `index.json`; tool `tools\ep-index\run-all.ps1`, README there; PyMuPDF + free Windows.Media.Ocr,

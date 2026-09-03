@@ -59,7 +59,7 @@ module.
 ## 4. Standing risks — check each is still true, do not act
 
 - **✅ RESOLVED 2026-09-02 — peds ch.4 and ch.5 are SPLICED. This is now a floor check, not a
-  hold.** `questions.peds.js` read **243** on 2026-09-03 (ch.1–11) and Chat B is still adding:
+  hold.** `questions.peds.js` read **243** at the 04:00 pass 2026-09-03 (ch.1–11) and Chat B is still adding:
   expect it to **grow, never shrink**. A figure near the old 81 means the COUNT broke, not the file.
   Re-measure the current floor from `MEMORY.md` "Validation state" before judging:
   ```bash
@@ -83,16 +83,21 @@ module.
   chat each dirty file belongs to; never stage one.** ⚠️ Report an untracked staging file that has
   not moved in a day — that is a chat that died mid-chapter.
 - **✅ ENDPOINT LAUNCHED 2026-09-02 — s1 and s2 are SPLICED. Floor check, not a hold.**
-  `app\data\questions.peds.ep.js` read **148** on 2026-09-03 (s1 89 + s2 76 = 165, then two fold
-  passes 165 → 150 → 148). ⚠️ **A FOLD PASS MAKES THIS FILE SHRINK LEGITIMATELY** — unlike
+  `app\data\questions.peds.ep.js` read **216** at the 04:10 pass 2026-09-03 (s1 89 + s2 76 = 165,
+  folded 165 → 150 → 148; s3 Gastro 148 → 215 → 213 with a fold, `aa6881d`; s4 Accidents
+  213 → 216, no fold, `a10bc69`). It moves by the commit — re-measure, never quote this.
+  ⚠️ **A FOLD PASS MAKES THIS FILE SHRINK LEGITIMATELY** — unlike
   `questions.peds.js`, a falling count here is not automatically loss. Check the commit message
   says "fold" and that bytes moved with it; if a drop has no fold commit behind it, report it.
-  Section 3 (Gastro) stages as `endpoint-s03-gastro.part-A.js` / `part-B.js` — a section outgrew
-  one file, merged by `tools\bank-harness\merge-parts-ep.js`.
-- **⚠️ TWO JOURNALS ARE PAST THE SECOND-ANCHOR THRESHOLD, flagged 2026-09-03, NOT DONE.**
-  `resume-ophtho.md` anchors to ~41k and `resume-peds.md` to ~37k, against the ~30k rule in
-  `READING-COSTS.md`. Ophtho is closed and can be re-anchored safely; peds has a live writer and
-  must wait for a chapter boundary. **Re-anchoring is content work — report, do not do it.**
+  A section that outgrows one file stages as `part-A.js` / `part-B.js`, merged by
+  `tools\bank-harness\merge-parts-ep.js` — s3 did; s4 (Accidents) did not need it. **s5 is next.**
+- **✅ THE TWO SECOND ANCHORS WERE PLACED 2026-09-03 on the user's instruction. Settled.**
+  `resume-ophtho.md` ~41k → **~14k**, `resume-peds.md` ~37k → **~13k**, both via a
+  `<!-- RESUME-READ-FROM-HERE-2 -->` marker. **Nothing was deleted or moved** and new entries still
+  append below the marker. **Open both journals with `RESUME-READ-FROM-HERE-2`**; anchor 1 still
+  works and returns the longer tail. ⚠️ **The live item is now `resume-peds-endpoint.md`** —
+  ~14k and growing fast, no anchor at all. When its whole-file read passes ~30k tokens a second
+  anchor is due at a clean section boundary. **Measure it every pass; still report, do not build.**
 - **Cross-bank integrity, one command, read-only:**
   ```bash
   cd "D:/claude os/Medical school/Herophilus" && node tools/bank-harness/validate-all.js

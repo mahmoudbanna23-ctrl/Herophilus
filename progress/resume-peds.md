@@ -2055,6 +2055,14 @@ Opens on **PDF sheet 38 right = book p.75**, its own Q1 (Sunit, 13-month-old, fa
 figures (a)/(b), key C), continuing on sheet 39. **191 questions remain** against a bank measured at
 393.
 
+<!-- RESUME-READ-FROM-HERE-2 -->
+<!-- Second anchor, placed 2026-09-03, because the 2026-08-31 anchor above had grown to ~37k
+     tokens - past the ~30k threshold in READING-COSTS.md. Placed at the last SESSION CLOSED
+     block, so every standing USER RULING and every chapter from ch.10 on stays below it.
+     Read from here:  sed -n '/RESUME-READ-FROM-HERE-2/,$p' progress/resume-peds.md
+     Nothing was deleted or moved; new entries append below and are always included.
+     The original anchor still works and returns the longer tail. -->
+
 ## 2026-09-02 — SESSION CLOSED. Everything needed to resume is now on disk, not in a chat.
 
 This chat is being retired deliberately. Before it goes, everything that lived only in the session

@@ -2827,6 +2827,13 @@ Same census on the shipped corpus: 180 doubled backslashes, **all benign citatio
 
 ---
 
+<!-- RESUME-READ-FROM-HERE-2 -->
+<!-- Second anchor, placed 2026-09-03, because the 2026-08-31 anchor above had grown to ~41k
+     tokens - past the ~30k threshold in READING-COSTS.md. Ophthalmology is CLOSED, so this
+     journal has no live writer and everything above this line is settled history.
+     Read from here:  sed -n '/RESUME-READ-FROM-HERE-2/,$p' progress/resume-ophtho.md
+     Nothing was deleted or moved. The original anchor still works and returns the longer tail. -->
+
 ## ✅ 2026-09-02 (watch session) — THE "INJECTION" IS IDENTIFIED. It is not an attack.
 
 **It is Claude Code's own `auto mode` system reminder.** The watch session received it verbatim
@@ -3679,3 +3686,32 @@ every draft is present in the 1,598-entry corpus, 0 unshipped. (⚠️ A first p
 unshipped** — the "miss" was the regex catching an options block. A probe artifact again.)
 
 ### Nothing is left for ophthalmology except the endpoint book, which was never in scope.
+
+---
+
+## 2026-09-03 (watch/fix pass) — SECOND ANCHOR PLACED. This journal now opens at ~14k, not ~41k.
+
+`READING-COSTS.md` had flagged this file as **overdue for a second anchor**: the 2026-08-31 marker
+sits at a fixed date, so everything written after it accumulated below and the anchored tail had
+grown to **163,880 chars ≈ 41k tokens** — the anchor was saving almost nothing.
+
+**A second marker, `<!-- RESUME-READ-FROM-HERE-2 -->`, is now at line 2830**, immediately before the
+2026-09-02 watch-session block. Ophthalmology is CLOSED, so this journal has no live writer and
+nothing above that line is live state.
+
+| | chars | ≈ tokens |
+|---|---|---|
+| whole file | 243,804 | ~61k |
+| anchor 1 (2026-08-31) | 163,880 | ~41k |
+| **anchor 2 (2026-09-03)** | **56,751** | **~14k** |
+
+```bash
+sed -n '/RESUME-READ-FROM-HERE-2/,$p' progress/resume-ophtho.md
+```
+
+**Nothing was deleted, nothing moved, no text was rewritten.** An anchor is a marker line, not a
+trim. Anchor 1 still works and returns the longer tail — the two patterns do not conflict, because
+`RESUME-READ-FROM-HERE` matches the older marker first.
+
+`progressesume-2026-08-31-chatA-ophtho.md` was updated to point at anchor 2, so the ophtho resume
+prompt no longer pays for the closed history.
