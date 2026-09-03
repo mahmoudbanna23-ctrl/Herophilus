@@ -109,6 +109,31 @@ was already done, being done, or already automated. **This project has very litt
 un-scripted work left** — which is the real constraint on splitting work with Codex, and it has
 nothing to do with whether Codex is capable.
 
+### The better answer, and it is not Claude's — put to Codex 2026-09-03, verdict "wrong question"
+
+**Do not manufacture another drafting queue. The non-queue slice is INDEPENDENT STRUCTURAL QA.**
+Codex reads a finished draft against its staged record and **emits flags, never adjudications**:
+answer↔explanation contradictions · unsupported numerics · dose and unit strings with no anchor ·
+missing provenance · duplicate concepts · schema edge cases.
+
+Why it beats every drafting slice considered above:
+
+- **It competes with nothing.** Both work chats keep their queues untouched.
+- **It fails safe.** A false flag costs one look. A missed flag leaves the project exactly where
+  it already is. Contrast a bad draft, which can put a wrong dose into a medical bank.
+- **It produces no medical claim**, so §4's never-delegated list is untouched and the §5
+  medical-verification floor is unchanged.
+
+⚠️ **Codex's own caveat, kept because it is the honest half:** this is worth doing **only if it
+reduces human review minutes.** If it does not, *"it is supervision theater."* **Measure that
+before adopting it, exactly as §6 measures everything else.**
+
+⚠️ **TENSION WITH §1, FLAGGED NOT RESOLVED — the user's call, not Claude's.** Building a
+structural-QA pass is tooling, and optimization is closed until 3 Oct. The arguments that it is
+different in kind: it is not OCR or pipeline work, Codex builds it rather than Claude, and it
+costs the main chat almost no steps. **That reasoning is not Claude's to accept on its own** —
+§1 is a user ruling and only the user relaxes it.
+
 **The task is neuro, topics 22–23 — the ~29 remaining psychiatry questions (Q137–165).**
 Verified 2026-09-03: `app\data\questions.neuro.js` untouched since 2026-09-02 09:00, topics 18–21
 spliced and nothing since. Chat B is on House ch.13–20 and does not reach neuro this window.
@@ -131,9 +156,26 @@ Staging stays here regardless; Codex receives a staging record, never a page.
 `content\peds\qb-pages\`. **Never `app\data\`.** So there is zero contention with either work
 chat, and **the splice stays Claude's** — which keeps §4's "never delegated" list intact.
 
-**Acceptance test:** `node tools/bank-harness/val-pd.js` on its draft → exit 0, then the §5
-tier-3 hand-read of the sample, then `keypos.py` where the staging supports it. Passing the
-validator is necessary and **not sufficient** — §5 says why.
+**Acceptance test — REDESIGNED 2026-09-03 after Codex attacked the first version.** Its objection
+was correct and caught an inconsistency inside this plan: **§5 already says the validator cannot
+see a clinically wrong explanation, and §6 then made validator exit the headline metric.**
+
+- **Paired drafts, blinded review.** Codex and a Claude `lean-drafter` draft **the same staged
+  records**. The reviewer does not know which is which. Otherwise the trial measures expectation.
+- **Severity, not count.** A preregistered rubric. Measure **reviewer active minutes** and
+  corrections **by severity** — a comma and a wrong dose are not one unit each.
+- **⚠️ THE P0 RULE (adopted verbatim from Codex's own answer).** A wrong keyed answer, an invented
+  or unsupported dose, a reversed contraindication, or a dangerous management statement is a
+  **P0. ONE P0 = NOT CLEARED for medical drafting, even at 29/29 on the validator.**
+- **A 29-item pass clears a narrow workflow. It does not establish psychiatric reliability** —
+  do not let a green trial be quoted later as general medical clearance.
+
+⚠️ **Codex on its own honesty, asked directly and answered without flinching:** it does **not**
+know that an unconstrained run will flag rather than plausibly complete an unverified clinical
+claim, and says to *assume it can write plausible unsupported medicine.* **Abstention must be
+mechanically required, never trusted:** every substantive claim carries a source anchor, a missing
+anchor emits a structured `UNVERIFIED` flag, and **a dose or unit with no anchor fails
+validation.** This is the single most useful thing the exchange produced.
 
 ⚠️ **Nothing Codex produces is spliced on this run.** It writes a draft file; **Claude reads it,
 validates it, and decides.** The splice stays on §4's never-delegated list. A trial that ships
@@ -146,19 +188,25 @@ task prompt. It is 14 KB and already the distilled form of every drafting fix th
 made.
 
 ⚠️ **DO NOT brief it on the OCR/WPS history, the 429 backoff, the render pipeline or the staging
-craft.** Three reasons, and the third is the one that bites:
+craft.** The advice stands; **two of the three original reasons did not survive scrutiny and are
+corrected here rather than quietly dropped:**
 
-1. **Context is charged on every step**, and Codex's plan is quota-limited. A bigger brief buys
-   *less* work per month, not more.
-2. **It is staging knowledge, and Codex does not stage.** Not applicable.
-3. ⚠️ **Safety rules for a job imply the job is in scope.** Handing over *"never take an exponent,
-   unit or dose from OCR"* tells Codex that reading OCR is part of its work. **It is not** — it
-   drafts from a staging record already verified against page images. Give an agent the rules for
-   a job and you invite it to attempt the job.
+1. ~~"Context is charged on every step, so a bigger brief buys less work."~~ **WRONG AS STATED —
+   Claude's cost model does not port to Codex.** That formula is measured for token-billed
+   Claude sessions (§2). A ChatGPT plan draws on an **opaque agentic allowance** affected by
+   model, complexity, context, reasoning, tools and duration — not API-style token billing.
+   14 KB vs 60 KB is genuinely more context, but **no multiplier is known and none should be
+   quoted.** ⚠️ **MEASURE IT** — two or three representative jobs, record the credit delta,
+   extrapolate conservatively. Do not port §2's arithmetic to a system it was not measured on.
+2. **It is staging knowledge, and Codex does not stage.** Stands unchanged.
+3. ~~"Safety rules for a job imply the job is in scope."~~ **MISFRAMED.** Instruction hierarchy
+   handles scope; rules do not grant it. The real mechanism is that **irrelevant operational
+   material makes scope drift and wasted exploration more likely.** Same conclusion, accurate
+   reason. **Pair the 14 KB brief with a short explicit "out of scope / must flag" contract** —
+   which the original framing would not have produced.
 
-This is the sixteen-corrections lesson (`MEMORY.md`): long briefs went stale and misled, and the
-rule that came out of it was **trust the staging and the transcript over this prompt.** A large
-bespoke Codex brief would repeat it exactly.
+This remains the sixteen-corrections lesson (`MEMORY.md`): long briefs went stale and misled, and
+the rule that came out of it was **trust the staging and the transcript over this prompt.**
 
 **Measure it without watching it.** `codex exec --json` emits every event as JSONL and
 `-o <file>` writes the final message; both were confirmed present in `codex --help` on
