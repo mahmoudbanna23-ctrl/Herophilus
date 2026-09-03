@@ -267,13 +267,17 @@ if (after.holes) { console.error('SPLICED FILE HAS ' + after.holes + ' HOLES'); 
 if (after.n !== before.n + drafted.length) { console.error('POST-SPLICE COUNT WRONG: ' + before.n + ' + ' + drafted.length + ' != ' + after.n); process.exit(1); }
 
 if (!doWrite) {
-  console.log('DRY RUN. live ' + before.n + ' entries, ' + live.length + ' bytes -> would be '
-    + after.n + ' entries, ' + out.length + ' bytes. Re-run with --write.');
+  // chars, not bytes: the file carries non-ASCII (arrows, en-dashes, the warning glyph), so
+  // this number sits BELOW `git cat-file -s` by 1-2 per such character. Measured 2026-09-04
+  // after section 2: 119697 chars, 120159 bytes, 231 non-ASCII. Labelling it 'bytes' invited
+  // exactly the bytes-vs-count mismatch MEMORY.md treats as evidence of a broken count.
+  console.log('DRY RUN. live ' + before.n + ' entries, ' + live.length + ' chars -> would be '
+    + after.n + ' entries, ' + out.length + ' chars. Re-run with --write.');
   process.exit(0);
 }
 
 fs.writeFileSync(LIVE, out, 'utf8');
 const check = count(fs.readFileSync(LIVE, 'utf8'));
-console.log('spliced. bytes ' + live.length + ' -> ' + out.length + ' | entries ' + before.n + ' -> ' + check.n
+console.log('spliced. chars ' + live.length + ' -> ' + out.length + ' | entries ' + before.n + ' -> ' + check.n
   + ' (expected ' + after.n + ') | holes ' + check.holes);
 if (check.n !== after.n) { console.error('POST-WRITE COUNT WRONG'); process.exit(1); }

@@ -13,8 +13,10 @@ with pages left.
 
 ⚠️ **YOUR OWN ESTIMATE OF YOUR STEP COUNT IS UNRELIABLE — measured 2026-09-04.** A part-2
 staging agent finished a clean pass and reported "roughly 30 tool calls, well under the cap." The
-harness recorded **64**. It was not being careless; a step is easy to under-count from the inside,
-and batched or failed calls vanish from the estimate. **So do not report a number you did not
+harness recorded **64**. A part-2 drafting agent reported "roughly 10" and listed them
+individually; the harness recorded **17**. Neither was being careless; a step is easy to under-count
+from the inside, and batched, failed and retried calls vanish from the estimate. The two agents who
+kept a real running tally reported 55 and 18 and were right. **So do not report a number you did not
 count** — either keep a running tally as you go and say it is a tally, or say plainly that you did
 not count. An estimate stated as a measurement is the failure here, not the 64. Say exactly where you stopped and what the next page is; a replacement resumes
 from your file, which is why §8 writes every entry to disk as it goes.
