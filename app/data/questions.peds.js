@@ -3396,7 +3396,7 @@ var Q_PEDS = [
   "module": "pediatrics",
   "chapter": "allergy",
   "image": "q-pd-hd-118",
-  "imgAlt": "Clinical close-up photograph of an infant's trunk, thigh and nappy area.",
+  "imgAlt": "Clinical close-up photograph of an infant's thigh and lower leg, held by an adult's hand, with the edge of the nappy at the top of the frame.",
   "stem": "Cordelia, a 5-month-old infant, was exclusively breastfed up until yesterday when her mother started her on formula as she is planning to go back to work. She noticed that she developed a rash very soon after the formula feed. She has no other medical problems and is not routinely on any medications. On examination she has the rash shown in the opposite figure all over her body. What term provides the best description of this rash?",
   "options": [
     "Annular",
