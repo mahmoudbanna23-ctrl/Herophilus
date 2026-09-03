@@ -1,14 +1,28 @@
-# Pediatrics ENDPOINT — part 1 only (prompt v4, 2026-09-03 late)
+# Endpoint chat resume — PEDIATRICS ENDPOINT (written 2026-09-03, v5)
 
-Paste this whole file as the first message of a **fresh** chat. Opus 5, effort `high`, no Fast mode.
-Written 2026-09-03 ~04:15 by the main `D:\claude os` chat, replacing v3. **Every number below was
-measured from disk at that time.** Numbers move by the commit — re-measure, never quote this file.
+Paste into a **fresh Opus chat** at `D:\claude os\Medical school\Herophilus`.
+**Supersedes v4 entirely** — same filename, rewritten in place, so `MEMORY.md`'s pointer still
+holds. **One prompt per chat.** Do not paste into a live chat.
+
+---
+
+## MEASURE FIRST — a resume prompt is a claim about the past, not the present
+
+```bash
+git log --oneline -3 && git status --short && git log --oneline origin/main..HEAD | wc -l
+node tools/bank-harness/val-pd-ep.js 7 A | tail -4
+node tools/bank-harness/val-pd-ep.js 7 B | tail -4
+```
+
+**Where this file and the disk disagree, the disk wins. Say where this file was wrong.**
+Every predecessor of this file was wrong about something; v4 was wrong about the run's position
+within an hour of being written, because you commit faster than a prompt can be revised.
 
 ---
 
 ## WHAT YOU OWN, AND WHAT YOU DO NOT
 
-You are the **pediatrics endpoint chat**. Chat B owns the pediatrics **House** bank.
+You are the **pediatrics endpoint chat**. Chat B owns the pediatrics **House** bank and neuro.
 
 | You own | Chat B owns |
 |---|---|
@@ -39,103 +53,145 @@ files.** Never stage them, never run them on endpoint files. Your harness is **`
 
 ## READ THIS MUCH, AND NO MORE
 
-1. `progress\resume-peds-endpoint.md` — **read it whole; it was ~57k chars / ~14k tokens at 04:09
-   and it is growing fast.** Re-measure first (`wc -lc`). ⚠️ **When it passes ~30k tokens it needs a
-   `RESUME-READ-FROM-HERE-2` anchor at a clean section boundary** — that is the next anchor due in
-   this project, and it is yours to place at a section close, not mid-section.
-2. `tools\bank-harness\pd-staging-brief.md` — **§10a is mandatory**, see below. Also §7, §8, §9.
+1. `progress\resume-peds-endpoint.md` — **1,678 lines / 114,549 bytes, ~28k tokens. NEVER read it
+   whole.** It carries its own two-range reading instruction at the top; the ranges resolve to
+   **46,558 bytes, 41%, ~11k tokens** (re-measured 2026-09-03 after section 7 appended):
+
+   ```bash
+   sed -n '1,/^## .*SECTION 1 REPRINTS ITSELF/p' progress/resume-peds-endpoint.md
+   sed -n '/^## .*Emergencies SPLICED/,$p'       progress/resume-peds-endpoint.md
+   ```
+
+   ⚠️ **Both anchor on HEADINGS, not on the `RESUME-READ-FROM-HERE` marker, deliberately** — a
+   `sed` for that marker matches the file's own note about the marker first and returns nearly
+   everything. ⚠️ **And `.` does not stand in for the emoji or the section sign**: they are
+   multi-byte, so `/^## . SECTION 1/` matched nothing and returned the whole file while its
+   partner returned zero bytes. `.*` is what works. **Print the first and last line any new range
+   resolves to before trusting it.**
+2. `tools\bank-harness\pd-ep-draft-brief.md` — your drafting brief. **§0 is new and binding**
+   (the ~70-step cap). `pd-staging-brief.md` §10a when you next stage.
 3. `progress\READING-COSTS.md` **before opening anything else in `progress\`** — and re-measure.
-4. `Medical school\Herophilus\CLAUDE.md` and `MEMORY.md` load themselves. Do not re-read them.
+4. `CLAUDE.md` and `MEMORY.md` load themselves. Do not re-read them.
 
-⚠️ **Never `Read` a red-band file.** `grep -n` for headings, then `sed` the range. If you need
-Chat B's journal, `sed -n '/RESUME-READ-FROM-HERE-2/,$p' progress/resume-peds.md` — ~14k, not ~47k.
-
----
-
-## WHERE THE RUN STANDS — measured 2026-09-03 04:09
-
-- Repo `main`, last commit `1f52f59`, **pushed, ahead 0**.
-- **`app\data\questions.peds.ep.js` holds 216.** History: s1 Growth & Puberty 89 + s2 Nutrition 76
-  = 165, folded 165 → 150 → 148; **s3 Gastroenterology `aa6881d` 148 → 215 → 213 with a fold**;
-  **s4 Accidents `a10bc69` 213 → 216, no fold.**
-- ⚠️ **A FOLD MAKES THIS FILE SHRINK LEGITIMATELY.** A drop with no fold commit behind it is a
-  finding; a drop with one is not.
-- ✅ **s1–s4 CLOSED.** s5 is mapped but **not staged**.
-- Integrity at 04:09: `validate-all.js` exit **0**; `count-options.py` clean, 4,565 questions,
-  the same 8 documented >5-option items and no new ones.
-
-## YOUR NEXT TASK: STAGE §5 EMERGENCIES, pp.563–702
-
-Mapping is already done and is in `resume-peds-endpoint.md` under **"Section 5 — Emergencies, mapped
-2026-09-03 (not staged)"**. Read that block first. It carries:
-
-- **61 questions, NOT the 60 the contents page prints.** The full answered-page list is in that
-  block — use it, do not re-derive it.
-- ⚠️ **p.584 IS AN ANSWERED PAGE.** The index mis-filed it `question` because its yellow measure is
-  748 against a 520 baseline and a 1,400–3,400 range elsewhere — the highlight covers just the two
-  characters **"B. 9"**. Q4 (pp.583 unanswered / 584 answered): GCS in a 3-year-old with fever,
-  options **A.8 · B.9 · C.10 · D.11 · E.12**, key **B**, staged as zero-based index **1**.
-  ⚠️ Text extraction returns only C, D, E from both pages — **read the option list off the image.**
-  ⚠️ p.584's "Glasgow Coma Scale" reference table **must NOT be staged as a `fig`** — a figure
-  renders between stem and options and this one hands over the answer. It belongs in the
-  explanation, after the key. **A yellow measure is a proxy for a highlight, not the highlight.**
-- **Index flags in range:** `thin` on 563 575 643 653 676 679 702 — **643 and 653 are `question`
-  pages, read those two hard.** `options-differ` on 577 591 592 604 610 622 624 650 656 672 695 701
-  — ⚠️ **spurious every time it has been checked**; check both `.txt` reads before a re-render.
-- Clean question/answered alternation except the pp.583–585 run. Parity flips at p.675 and p.681.
-  **No overflow boxes.**
-
-**The reprint sweep is already run** (`reprint-pd-ep.js 563 702`): **no cross-bank hits at all** —
-House's `emergencies` chapter holds 0 of its 243. Three self-reprints, all confirmed:
-p.586 (Q5) ≡ p.630 (Q28) · p.689 (Q56) ≡ p.697 (Q60) · p.636 (Q31) ≡ live **`pedep-acc-2`** (p.559).
-
-⚠️ **Stage and draft all 61 in full anyway** — the splice gate requires every staged id drafted
-exactly once, and the fold is a **separate pass afterwards**. Do not skip a page because that table
-names it. Expect **216 → 277 → ~274 live** after the fold.
-
-⚠️ **The sweep reported "answered pages in range: 60" — it took the index's classification, so
-p.584 was never swept.** Re-run the sweep against the staged file once §5 is staged, with p.584 in
-the set. That is a measurement you still owe.
-
-§5 is the first section since §1 large enough to want **two drafting halves** — split with
-`part-A` / `part-B` and merge with `tools\bank-harness\merge-parts-ep.js`. The splicer refuses
-unless its validator gate exits 0.
-
-**Still owed, still unstarted:** the cross-bank **`alsoIn`** pass — 21 House hits in §3, plus §1 and
-§2. ⚠️ **`pedhd-card-6..10` must NOT be folded** (5 identical stems, 5 different figures/keys; the
-normaliser cannot see a figure). **Nothing folds across the two banks mid-stream** — `.ep.js` and
-`.peds.js` stay separate while both chats write.
+⚠️ **Never `Read` a red-band file.** `grep -n` for headings, then `sed` the range.
 
 ---
 
-## ⚠️⚠️ §10a IS NOT OPTIONAL — TWO AGENTS DIED ON A CHAPTER LEAVING ZERO BYTES
+## WHERE THE RUN STANDS — measured from disk 2026-09-03, re-measure before quoting
 
-The first wrote nothing. The second rendered a whole range, produced all 30 band crops, then died at
-"now let's review them in batches" — **the entire render pass was lost.** Both obeyed the
-append-one-entry-at-a-time rule in the letter; neither ever reached an entry to append.
+| | |
+|---|---|
+| `Q_PEDS_EP` | **291**, holes 0 (loaded the array and read `.length`) |
+| Sections 1–6 | **CLOSED, spliced, folded, committed** |
+| Section 7 Neonatology | **staging CLOSED at 53** — `endpoint-s07-neonatology.array.js`, parts A+B+C merged by `merge-parts-ep.js`. PDF pp.774–903; **PDF page = printed page, offset zero** |
+| Section 7 drafting | **IN FLIGHT — this is your next action, see below** |
+| git | `084b075` pushed by the main chat; the only untracked files are your two s7 drafts |
 
-**The fix:** write the file with its header and an empty array **before rendering anything**, then
-loop **one book page at a time** — render, crop, read, append, `node --check`, next — and **never
-render page N+1 before page N's entries are on disk.** It worked first try. Cheap re-renders are the
-right trade: the render is seconds, the reading is what costs.
+**Corpus at the same moment:** ENT 2,240 · Ophtho 1,598 · Neuro 268 · Peds House 269 · Peds
+endpoint 291. Holes 0 everywhere. **Never compare against a number written here** — the corpus
+moves by the commit; load the array and read `.length`.
+
+---
+
+## YOUR NEXT ACTION — finish drafting section 7, in thirds
+
+The staging parts define the thirds, and the drafts follow them:
+
+| third | `n` range | state |
+|---|---|---|
+| A | 1–18 | ✅ **`val-pd-ep.js 7 A` → ALL CHECKS PASSED**, 4,710 words, 18 entries |
+| B | 19–36 | ⚠️ **INCOMPLETE — 19–26 written, and it FAILS** |
+| C | 37–53 | ❌ not started |
+
+**Half B's exact failure, measured:** `pedep-neo-26: marker appears 0 times`. Entry 26 is
+half-written — the previous agent stopped inside it. **Open `endpoint-s07-neonatology.draft-B.js`,
+finish n=26 first, then continue to n=36**, then run `val-pd-ep.js 7 B` yourself before reporting.
+The other seven entries in B pass; their word counts are 219–353 against a ~250/~520 budget.
+
+**A dead agent's last entry is a KNOWN-BAD spot — check it before anything else.** That is exactly
+what happened here, and the validator names it for you.
+
+Then half C (37–53), then `splice-pd-ep.js`, then `node tools\boot-check\boot-check.js`.
+
+**Two open crop/alt debts the validator already surfaced** — do not let them ship silently:
+- `pedep-neo-7`: crop `q-pd-ep-810.jpg` **not cut yet** (the validator says "expected at this
+  stage" — it stops being expected once you splice).
+- **`imgAlt` must be READ BY EYE, and three in half A are identical:** `pedep-neo-1`, `-5` and
+  `-6` all read *"Grayscale frontal (AP) chest radiograph of a newborn infant."* Identical alt on
+  three different films is a copy, not a description. ⚠️ **An `imgAlt` must not answer the
+  question** — modality and view only (`CLAUDE.md` §4; this gave away six answers once).
+
+---
+
+## ⚠️ THE KEY CHECK IS NOW A TOOL — you already used it once, keep using it
+
+`python tools\ep-index\keypos.py "<pdf>" <page> <n_options>` reports **which option the yellow
+highlight sits on**, from pixels alone — no OCR, no `index.json`, no staging file. It is the only
+check in this project that does not compare the human's reading with itself, which is how a section
+came within one pass of being staged an option out.
+
+```bash
+python tools/ep-index/keypos.py "Semester 8/Pedo/Questions/Pediatrics endpoint part1.pdf" 584 5
+python tools/ep-index/keypos.py "<pdf>" --calibrate content/peds/qb-pages/endpoint-s07-neonatology.array.js
+```
+
+**Calibration of record (2026-09-03): 235 staged keys across the four closed sections → 232 agree,
+2 disagree, 1 abstain. All three misses were rendered and read by eye; all 235 staged keys were
+RIGHT.** So a disagreement measures the tool, not the bank. Its two known limits: an option **below**
+the key wrapping, and **figures printed beside the option column** (their ink stops two options
+separating into bands). ⚠️ **It is a CHECK, never a source. Disagreement means "render this page",
+not "change the key."** ⚠️ **Its calibration is invalidated by any constant change and by a
+different PDF** — the docstring says which; re-run `--calibrate` and REPLACE the numbers.
+
+**Run `--calibrate` on section 7's array before you splice it.** It is ~0.42 s a page and it is the
+only independent look the keys will get.
+
+---
+
+## ⚠️⚠️ §10a IS NOT OPTIONAL WHEN YOU NEXT STAGE — two agents died leaving zero bytes
+
+Create the file with its header **before rendering anything**, then loop **one page at a time**
+(render → crop → read → append → `node --check`), and **never render page N+1 before page N is on
+disk.** Both dead agents obeyed "append one entry at a time" in the letter and never reached an
+entry; the second died after rendering the whole range and making every crop.
 
 ---
 
 ## COST RULES — these are why the session is fresh
 
-- **Cost is STEP COUNT, not starting context.** The whole context re-sends every step and grows.
-  Keep agents SHORT: one bounded job, then return. Split long work across fresh agents.
-- **One agent at a time** (user ruling 2026-09-03; the 24-agent fan-out was costed and dropped).
-- **Spawn `lean-drafter`.** Measured staging anchor: 128 tool uses / 38.6 min / ~86k tokens for
-  11 pages / 26 questions. Drafting anchor: 62 tool uses / ~15.5 min / ~53k.
-- **Render scanned pages inside the agent, never in this chat.** An image read here is re-sent with
-  every subsequent request, forever.
-- **OCR is not a source** — it drops whole lines, a different one per resolution. Use both `.txt`
-  reads as a search index, and settle every option list on the image.
-- **This session is one work block.** Journal as you go, then kill it — do not carry it past a day.
+- **⚠️ AGENTS STOP AT ~70 TOOL CALLS AND HAND BACK** (user, 2026-09-03) — close out at 60,
+  reported and stopped by 80, even with entries left. **A partial pass reported honestly is a
+  success.** It is §0 of `pd-ep-draft-brief.md`; **keep §0 when you edit a brief.**
+- **Cost is step count, not starting context.** The whole conversation re-sends every step and it
+  GROWS. Agents all start at 29–31k; the five priciest averaged **88–107k a step over 133–287
+  steps**. Check with `node "D:/claude os/tools/token-audit.js" --agents`.
+- **One agent at a time. `lean-drafter`, never `general-purpose`.** Verify its output from disk,
+  never from its report.
+- **Image work in subagents only** — an image read in the main chat is re-sent with every later
+  request, forever.
+- **Kill this session at the end of the work block.** Do not carry it past ~2 days.
 
-## REPORTING
+---
 
-- Cite `<file>.pdf p.<N>` on every clinical fact. No citation means it did not come from the source.
-- Report faithfully: if a check failed, show the output. Say "done" only when verified **from disk**,
-  not from an agent's report.
+## STANDING CONSTRAINTS
+
+- **OCR is a search index, never a clinical source.** Never take a numeral, exponent, unit, dose or
+  key letter from it. It drops a **different** whole line at each resolution, which is why both
+  passes are kept.
+- **⚠️ Contradictions are RECORDED, never corrected — `answer` NEVER moves.** The note goes in
+  `explanation`, quoting the source. **A defective key is noted, never disputed, and never taken to
+  the user.** This is settled: the three exact duplicate-option pairs in the shipped corpus are all
+  printed defects, all were caught by eye and recorded, and **zero reached the app as errors**.
+- **Cosmetic defects transcribed silently, never catalogued** — exception, always flagged: numbers,
+  units, doses, exponents.
+- **`stem` and `opts` must be BYTE-IDENTICAL to staging.** The validator compares with
+  `JSON.stringify`. **The staged `key` is a 0-based INDEX, not a letter.**
+- **Write incrementally to disk** — resume by `Edit`-appending, never `Write`. This is what lets a
+  replacement pick up your half.
+- **Never modify, rename, move or delete a source PDF.** Renders go to the scratchpad.
+- **Write/Edit for content, Bash for reads** — heredocs collapse backslashes and backticks are
+  command substitution.
+- **Exams:** Peds OSCE **14 Sep** · Peds papers **17 Sep** · ENT 22 Sep · Ophtho 27 Sep ·
+  Neuro 3 Oct · Peds papers 18–19 Oct. **Scope is never cut** — if time runs short, say so loudly.
+
+**TRUST THE DISK AND THE STAGING OVER THIS PROMPT, AND TELL ME WHERE I WAS WRONG.**

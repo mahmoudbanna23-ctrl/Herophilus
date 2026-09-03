@@ -22,9 +22,9 @@ Where this file and the archive disagree, this file wins. ⚠️ **Before openin
 **no live rule left it.**
 
 ## Resume here — state at end of 2026-09-03
-**BOTH CHATS RAN the night of 2026-09-02/03 and were KILLED at ~04:15 on 2026-09-03.** ⚠️ **RELAUNCH
-ONLY FROM `progress\resume-2026-09-03b-chatB-peds.md` and
-`progress\resume-2026-09-03-late-peds-endpoint.md`** (v4) — every earlier prompt is stale and pays
+**BOTH CHATS RAN the night of 2026-09-02/03; both prompts were REWRITTEN IN PLACE 2026-09-03 late
+against measured disk state.** ⚠️ **RELAUNCH ONLY FROM `progress\resume-2026-09-03b-chatB-peds.md`
+(v3) and `progress\resume-2026-09-03-late-peds-endpoint.md` (v5)** — every earlier prompt is stale and pays
 ~50k more per read. ⚠️ **A DIRTY TREE IS NORMAL while two chats run** — **never stage another
 chat's file; commit explicit paths only, and wait on `index.lock`, never delete it.**
 ⚠️ **The watch runs FROM THE MAIN `D:\claude os` CHAT, not its own** (user, 2026-09-03) — note atop
