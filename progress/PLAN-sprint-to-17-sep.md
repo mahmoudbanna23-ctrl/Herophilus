@@ -99,37 +99,66 @@ queue the work chats are draining faster than you can write the brief** — whic
 conclusion arriving from a second direction: throughput is not the constraint, so a trial that
 competes for the queue is both stale-prone and pointless.
 
-**The task is a bounded slice of the model-exam reprint sweep — endpoint pp.1157–1991.**
-Verified 2026-09-03: no file on disk, no harness registration, named in plans only, and **on
-neither chat's path** — the endpoint chat goes s8 → s9 (96 q, the last body section) and reaches
-this only after. Take the **first 40 pages** as the trial.
+Draft 3 named a bounded slice of the model-exam reprint sweep. **That was wrong too:**
+`tools\bank-harness\reprint-pd-ep.js` already exists — 110 lines, already run repeatedly (§1 and
+§5 self-reprints, the 15 House `pedhd-nutr-` matches). The "379-page sweep" is a **script run**,
+not manual labour. Nothing to delegate.
 
-Three reasons it is the right trial and the earlier two were not:
+**THE PATTERN IS THE FINDING, and it is worth more than any of the three tasks.** Every candidate
+was already done, being done, or already automated. **This project has very little un-owned,
+un-scripted work left** — which is the real constraint on splitting work with Codex, and it has
+nothing to do with whether Codex is capable.
 
-- **Uncontended by construction.** Codex works p.1157 upward while the endpoint chat works s9. No
-  file, no section, no id prefix in common — the collision cannot recur.
-- **Mechanical, so a failure is cheap.** It is text comparison against existing entries, not
-  clinical drafting: a wrong answer here is a missed or false reprint match, not a wrong key in a
-  medical bank. Nothing it produces goes near `answer`.
-- **It is the actual job.** The plan already made the reprint sweep Codex's first task if it won.
-  Testing on the real first job beats testing on a proxy for it.
+**The task is neuro, topics 22–23 — the ~29 remaining psychiatry questions (Q137–165).**
+Verified 2026-09-03: `app\data\questions.neuro.js` untouched since 2026-09-02 09:00, topics 18–21
+spliced and nothing since. Chat B is on House ch.13–20 and does not reach neuro this window.
+
+Why this one survives where three others did not:
+
+- **Genuinely idle**, not merely unstarted — no chat is queued for it this window.
+- **⚠️ Its exam is 3 OCT, not 17 Sep.** Every earlier pick put the trial on the critical path of
+  the deadline 14 days out. **A failure here costs slack, not the near exam.** This is the
+  property that should have been required from the start.
+- **It tests the thing we actually want to know** — clinical drafting under `val-pd.js`, which is
+  the work that would matter if Codex is ever given a real stream. The reprint task would have
+  measured text-matching, which is not the question.
+
+⚠️ **Neuro is Grade Gain, one book page per sheet, A4 portrait, NOT 2-up** — the peds/ophtho
+arithmetic does not carry across. **The PDF offset is not global** (neuropsychiatry = book + 5).
+Staging stays here regardless; Codex receives a staging record, never a page.
 
 **Codex owns a STREAM, not a file inside someone else's stream.** It writes only into
 `content\peds\qb-pages\`. **Never `app\data\`.** So there is zero contention with either work
 chat, and **the splice stays Claude's** — which keeps §4's "never delegated" list intact.
 
-**Acceptance test.** The reprint sweep has no validator yet — and per §1 we do **not** build one.
-The test is a hand-check of a sample, which is cheap because the output is a list, not prose:
+**Acceptance test:** `node tools/bank-harness/val-pd.js` on its draft → exit 0, then the §5
+tier-3 hand-read of the sample, then `keypos.py` where the staging supports it. Passing the
+validator is necessary and **not sufficient** — §5 says why.
 
-1. Codex returns, for each of its 40 pages, either `reprint of <existing id>` or `NOT A REPRINT`,
-   with the page number and the matched stem's first eight words.
-2. **Claude spot-checks 10 of them against disk** — `grep` the claimed id, compare the stems.
-3. **A false positive is the failure that matters**, not a miss. Claiming p.1203 reprints
-   `pedep-neo-7` when it does not would, if trusted, delete a real question from the sweep's
-   remaining work. A miss only leaves work behind. **Score the two separately.**
+⚠️ **Nothing Codex produces is spliced on this run.** It writes a draft file; **Claude reads it,
+validates it, and decides.** The splice stays on §4's never-delegated list. A trial that ships
+its own output straight into a medical bank is not a trial.
 
-⚠️ **Nothing Codex produces is spliced on this run.** Its output is a list Claude reads, not a
-file that ships. That is what makes a zero-supervision run safe to try at all.
+### The brief — hand over what exists, do not write a new one
+
+**Give Codex `tools\bank-harness\pd-draft-brief.md` unmodified**, plus the staging array and the
+task prompt. It is 14 KB and already the distilled form of every drafting fix this project has
+made.
+
+⚠️ **DO NOT brief it on the OCR/WPS history, the 429 backoff, the render pipeline or the staging
+craft.** Three reasons, and the third is the one that bites:
+
+1. **Context is charged on every step**, and Codex's plan is quota-limited. A bigger brief buys
+   *less* work per month, not more.
+2. **It is staging knowledge, and Codex does not stage.** Not applicable.
+3. ⚠️ **Safety rules for a job imply the job is in scope.** Handing over *"never take an exponent,
+   unit or dose from OCR"* tells Codex that reading OCR is part of its work. **It is not** — it
+   drafts from a staging record already verified against page images. Give an agent the rules for
+   a job and you invite it to attempt the job.
+
+This is the sixteen-corrections lesson (`MEMORY.md`): long briefs went stale and misled, and the
+rule that came out of it was **trust the staging and the transcript over this prompt.** A large
+bespoke Codex brief would repeat it exactly.
 
 **Measure it without watching it.** `codex exec --json` emits every event as JSONL and
 `-o <file>` writes the final message; both were confirmed present in `codex --help` on
