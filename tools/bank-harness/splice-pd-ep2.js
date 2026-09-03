@@ -24,37 +24,64 @@ const LIVE = R + 'app/data/questions.peds.ep2.js';
 const LIVE_VAR = 'Q_PEDS_EP2';
 const QB = R + 'content/peds/qb-pages/';
 
+// PART 2's OWN SECTIONS -- kept identical to the SEC table in val-pd-ep2.js, minus the fields
+// only the validator documents. Agreed with the user 2026-09-04; the measurement behind every
+// page range is in content/peds/qb-pages/endpoint-p2-section-map.md.
+//
+// ⚠️ IF YOU EDIT ONE OF THESE TWO TABLES, EDIT THE OTHER. The splicer spawns the validator and
+// refuses to write unless it exits 0, so a prefix or filename that disagrees between them does
+// not produce a wrong splice -- it produces a confusing refusal.
 const SEC = {
-  1: { prefix: 'pedep-gp-', staging: 'endpoint-s01-growth-puberty.array.js', svar: 'PEDEP_S01_STAGED',
-       draft: 'endpoint-s01-growth-puberty.draft' },
-  2: { prefix: 'pedep-nut-', staging: 'endpoint-s02-nutrition.array.js', svar: 'PEDEP_S02_STAGED',
-       draft: 'endpoint-s02-nutrition.draft' },
-  3: { prefix: 'pedep-gi-', staging: 'endpoint-s03-gastro.array.js', svar: 'PEDEP_S03_STAGED',
-       draft: 'endpoint-s03-gastro.draft' },
-  4: { prefix: 'pedep-acc-', staging: 'endpoint-s04-accidents.array.js', svar: 'PEDEP_S04_STAGED',
-       draft: 'endpoint-s04-accidents.draft' },
-  5: { prefix: 'pedep-emg-', staging: 'endpoint-s05-emergencies.array.js', svar: 'PEDEP_S05_STAGED',
-       draft: 'endpoint-s05-emergencies.draft' },
-  6: { prefix: 'pedep-per-', staging: 'endpoint-s06-perinatal.array.js', svar: 'PEDEP_S06_STAGED',
-       draft: 'endpoint-s06-perinatal.draft' },
-  7: { prefix: 'pedep-neo-', staging: 'endpoint-s07-neonatology.array.js', svar: 'PEDEP_S07_STAGED',
-       draft: 'endpoint-s07-neonatology.draft' },
-  8: { prefix: 'pedep-alg-', staging: 'endpoint-s08-allergy.array.js', svar: 'PEDEP_S08_STAGED',
-       draft: 'endpoint-s08-allergy.draft' },
-  9: { prefix: 'pedep-inf-', staging: 'endpoint-s09-infection.array.js', svar: 'PEDEP_S09_STAGED',
-       draft: 'endpoint-s09-infection.draft' },
-  // ⚠️ SECTION 10 IS THE FIRST SECTION THAT DRAFTS FEWER QUESTIONS THAN IT STAGES, and every
-  // check below had to learn that. It is a model exam, so 30 of its 80 are reprints of questions
-  // the body already printed and that are already live. The standing rule for a reprint is
-  // "extend `source`, no new entry" -- so those 30 are never drafted, and reprint-s10-pd-ep.js
-  // (which proves each pair against both files, then rewrites 30 sources and no entries) is what
-  // records them. `reprints` below is only the COUNT side of that; the proof lives in that file.
-  // A section with no `reprints` key behaves exactly as before: staged == drafted.
-  10: { prefix: 'pedep-mf1-', staging: 'endpoint-s10-mfe1.array.js', svar: 'PEDEP_S10_STAGED',
-        draft: 'endpoint-s10-mfe1.draft',
-        reprints: [1, 2, 3, 6, 11, 12, 13, 15, 16, 17, 21, 22, 23, 24, 27, 28, 38, 40, 44, 46,
-                   47, 48, 50, 52, 62, 64, 65, 66, 67, 69],
-        reprintPass: 'reprint-s10-pd-ep.js', reprintMark: 'Model Final Exam 1' },
+  1: { prefix: 'pedep2-nd-', staging: 'endpoint-p2-s01-normal-dev.array.js', svar: 'PEDEP2_S01_STAGED',
+       draft: 'endpoint-p2-s01-normal-dev.draft' },
+  2: { prefix: 'pedep2-dp-', staging: 'endpoint-p2-s02-dev-problems.array.js', svar: 'PEDEP2_S02_STAGED',
+       draft: 'endpoint-p2-s02-dev-problems.draft' },
+  3: { prefix: 'pedep2-gen-', staging: 'endpoint-p2-s03-genetics.array.js', svar: 'PEDEP2_S03_STAGED',
+       draft: 'endpoint-p2-s03-genetics.draft' },
+  4: { prefix: 'pedep2-hem-', staging: 'endpoint-p2-s04-haematology.array.js', svar: 'PEDEP2_S04_STAGED',
+       draft: 'endpoint-p2-s04-haematology.draft' },
+  5: { prefix: 'pedep2-res-', staging: 'endpoint-p2-s05-respiratory.array.js', svar: 'PEDEP2_S05_STAGED',
+       draft: 'endpoint-p2-s05-respiratory.draft' },
+  6: { prefix: 'pedep2-car-', staging: 'endpoint-p2-s06-cardiac.array.js', svar: 'PEDEP2_S06_STAGED',
+       draft: 'endpoint-p2-s06-cardiac.draft' },
+  7: { prefix: 'pedep2-ren-', staging: 'endpoint-p2-s07-renal.array.js', svar: 'PEDEP2_S07_STAGED',
+       draft: 'endpoint-p2-s07-renal.draft' },
+  8: { prefix: 'pedep2-neu-', staging: 'endpoint-p2-s08-neuro.array.js', svar: 'PEDEP2_S08_STAGED',
+       draft: 'endpoint-p2-s08-neuro.draft' },
+  9: { prefix: 'pedep2-end-', staging: 'endpoint-p2-s09-endocrine.array.js', svar: 'PEDEP2_S09_STAGED',
+       draft: 'endpoint-p2-s09-endocrine.draft' },
+  10: { prefix: 'pedep2-liv-', staging: 'endpoint-p2-s10-liver.array.js', svar: 'PEDEP2_S10_STAGED',
+        draft: 'endpoint-p2-s10-liver.draft' },
+  11: { prefix: 'pedep2-mal-', staging: 'endpoint-p2-s11-malignant.array.js', svar: 'PEDEP2_S11_STAGED',
+        draft: 'endpoint-p2-s11-malignant.draft' },
+
+  // ⚠️ SECTIONS 12-15 ARE THE FOUR MODEL FINAL EXAMS, and a model exam DRAFTS FEWER QUESTIONS
+  // THAN IT STAGES: its questions are largely reprints of the body sections, which are already
+  // live. The standing rule for a reprint is "extend `source`, no new entry", so a reprint is
+  // never drafted -- a `reprints` array here lists the staged `n` values that are expected to
+  // have no draft entry, and `reprintPass` names the file that PROVES each pair page-by-page.
+  // Part 1's Model Final Exam 1 ran 30 of 80.
+  //
+  // ⚠️ THE ARRAYS BELOW ARE DELIBERATELY ABSENT, NOT EMPTY. A section with no `reprints` key
+  // behaves as staged == drafted, which is the correct behaviour until reprint-pd-ep2.js has
+  // actually been run over that exam's page range and each hit confirmed on the page image.
+  // Adding a guessed array here would make the splicer accept missing entries silently.
+  12: { prefix: 'pedep2-mf1-', staging: 'endpoint-p2-s12-mfe1.array.js', svar: 'PEDEP2_S12_STAGED',
+        draft: 'endpoint-p2-s12-mfe1.draft' },
+  13: { prefix: 'pedep2-mf2-', staging: 'endpoint-p2-s13-mfe2.array.js', svar: 'PEDEP2_S13_STAGED',
+        draft: 'endpoint-p2-s13-mfe2.draft' },
+  14: { prefix: 'pedep2-mf3-', staging: 'endpoint-p2-s14-mfe3.array.js', svar: 'PEDEP2_S14_STAGED',
+        draft: 'endpoint-p2-s14-mfe3.draft' },
+  15: { prefix: 'pedep2-mf4-', staging: 'endpoint-p2-s15-mfe4.array.js', svar: 'PEDEP2_S15_STAGED',
+        draft: 'endpoint-p2-s15-mfe4.draft' },
+
+  // Sections 16 and 17 print the answered page only -- no unanswered twin, verified on p.1923
+  // and p.1949. Section 18 (Exam Night Review) has no entry and must not get one: it is prose
+  // revision cards, no questions at all. See the section map.
+  16: { prefix: 'pedep2-rm-', staging: 'endpoint-p2-s16-recent-mod.array.js', svar: 'PEDEP2_S16_STAGED',
+        draft: 'endpoint-p2-s16-recent-mod.draft' },
+  17: { prefix: 'pedep2-ra-', staging: 'endpoint-p2-s17-recent-add.array.js', svar: 'PEDEP2_S17_STAGED',
+        draft: 'endpoint-p2-s17-recent-add.draft' },
 };
 
 const HEADER = `/* Pediatrics ENDPOINT PART 2 questions (Pediatrics endpoint part2.pdf).

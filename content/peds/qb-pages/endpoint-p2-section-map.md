@@ -96,3 +96,35 @@ section against part 2, part 1 and House before drafting.
 
 ⚠️ **Nothing folds across a live chat's file boundary.** Cross-bank and cross-part collisions are
 RECORDED here and merged once, after every stream closes.
+
+## Collision log — RECORD ONLY, nothing is folded while another chat is live
+
+### §1 Normal Development ≡ House `pedhd-dev-*` — 18 of 28, and it is one-for-one
+
+`node tools\bank-harness\reprint-pd-ep2.js 5 75`, 2026-09-04. **18 of the section's 28 answered
+pages match a House stem, in order, with no gaps in the House run:**
+
+| p. | House id | | p. | House id | | p. | House id |
+|---|---|---|---|---|---|---|---|
+| 19 | `pedhd-dev-1` | | 40 | `pedhd-dev-11` | | 52 | `pedhd-dev-17` |
+| 24 | `pedhd-dev-3` | | 42 | `pedhd-dev-12` | | 56 | `pedhd-dev-19` |
+| 26 | `pedhd-dev-4` | | 44 | `pedhd-dev-13` | | 58 | `pedhd-dev-20` |
+| 28 | `pedhd-dev-5` | | 46 | `pedhd-dev-14` | | | |
+| 30 | `pedhd-dev-6` | | 48 | `pedhd-dev-15` | | | |
+| 32 | `pedhd-dev-7` | | 50 | `pedhd-dev-16` | | | |
+| 34 | `pedhd-dev-8` | | | | | | |
+| 36 | `pedhd-dev-9` | | | | | | |
+| 38 | `pedhd-dev-10` | | | | | | |
+
+0 within-section candidates. `pedhd-dev-2` and `pedhd-dev-18` did not match; pp.22, 54, 60-74
+matched nothing.
+
+This is the **chapter-shaped** overlap `MEMORY.md` warns about, in its strongest form yet — a whole
+House chapter reprinted in section order, 64% of the section. It says nothing about the rest of
+part 2: §1 is the one topic (development) where the two books' syllabi meet, and the part-1 rate
+was much lower.
+
+**These are OCR-index candidates, not confirmed reprints.** Nothing is folded, nothing is skipped,
+all 28 are staged. When both streams close, each pair is confirmed on the page images, the fuller
+printing kept, and the other's citation folded into `source` — one entry with `alsoIn`, per the
+standing cross-bank rule. Until then the two files each carry their own entry, deliberately.

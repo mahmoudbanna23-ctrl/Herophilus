@@ -26,43 +26,74 @@
 const fs = require('fs'), vm = require('vm');
 const R = 'D:/claude os/Medical school/Herophilus/';
 
+// PART 2's OWN SECTIONS. Agreed with the user 2026-09-04 against
+// content/peds/qb-pages/endpoint-p2-section-map.md, which carries the measurement behind every
+// page range here and must be read before trusting the counts.
+//
+// `pages` and `ans` are DOCUMENTATION, never read by this file. They are here because the page
+// range is what reprint-pd-ep2.js takes by hand, and because `ans` is the index's `answered`
+// count -- which is NOT the question count. A summary slide with lettered bullets carries yellow
+// and reads as options, so `answered` runs high; the section map lists the 15 pages where it
+// does. Re-measure a section's true count as it is staged; never quote `ans` as a count.
+//
+// `chapter` is documentation only in EVERY entry -- each question's own chapter is checked
+// against the real chapter set from modules.js (chapIds, below), never against this field. Every
+// part-2 section lands on a pediatrics chapter that already exists, so modules.js is untouched.
 const SEC = {
-  1: { prefix: 'pedep-gp-', file: 'endpoint-s01-growth-puberty.array.js', svar: 'PEDEP_S01_STAGED',
-       draft: 'endpoint-s01-growth-puberty.draft', chapter: 'growth-puberty' },
-  2: { prefix: 'pedep-nut-', file: 'endpoint-s02-nutrition.array.js', svar: 'PEDEP_S02_STAGED',
-       draft: 'endpoint-s02-nutrition.draft', chapter: 'nutrition' },
-  // `chapter` is documentation only -- every entry's chapter is checked against the real
-  // chapter set from modules.js (chapIds, below), never against this field. Section 3 needs
-  // that latitude: its questions land in gastroenterology / gi-diarrhoea / gi-abdopain and
-  // spill into liver and liver-hep, so no single id would be right here.
-  3: { prefix: 'pedep-gi-', file: 'endpoint-s03-gastro.array.js', svar: 'PEDEP_S03_STAGED',
-       draft: 'endpoint-s03-gastro.draft', chapter: 'gastroenterology' },
-  4: { prefix: 'pedep-acc-', file: 'endpoint-s04-accidents.array.js', svar: 'PEDEP_S04_STAGED',
-       draft: 'endpoint-s04-accidents.draft', chapter: 'accidents' },
-  5: { prefix: 'pedep-emg-', file: 'endpoint-s05-emergencies.array.js', svar: 'PEDEP_S05_STAGED',
-       draft: 'endpoint-s05-emergencies.draft', chapter: 'emergencies' },
-  6: { prefix: 'pedep-per-', file: 'endpoint-s06-perinatal.array.js', svar: 'PEDEP_S06_STAGED',
-       draft: 'endpoint-s06-perinatal.draft', chapter: 'perinatal' },
-  // Section 7 spreads across all six neonatal/perinatal chapters -- `neonatal` is jaundice alone,
-  // and prematurity, RDS, HIE, seizures/birth injury and sepsis each have their own. The field
-  // below is documentation only; every entry is checked against the real chapter set.
-  7: { prefix: 'pedep-neo-', file: 'endpoint-s07-neonatology.array.js', svar: 'PEDEP_S07_STAGED',
-       draft: 'endpoint-s07-neonatology.draft', chapter: 'neonatal' },
-  8: { prefix: 'pedep-alg-', file: 'endpoint-s08-allergy.array.js', svar: 'PEDEP_S08_STAGED',
-       draft: 'endpoint-s08-allergy.draft', chapter: 'allergy' },
-  // `chapter` is the DEFAULT the validator accepts without comment, not a straitjacket -- section 9
-  // is the one section of part 1 with a whole family of chapters to sort into: infection,
-  // infection-bact, infection-rash, infection-vesic, infection-immunity and infection-vaccine all
-  // exist in modules.js. Every one of those is legitimate here; `infection` is the fallback.
-  9: { prefix: 'pedep-inf-', file: 'endpoint-s09-infection.array.js', svar: 'PEDEP_S09_STAGED',
-       draft: 'endpoint-s09-infection.draft', chapter: 'infection' },
+  1: { prefix: 'pedep2-nd-', file: 'endpoint-p2-s01-normal-dev.array.js', svar: 'PEDEP2_S01_STAGED',
+       draft: 'endpoint-p2-s01-normal-dev.draft', chapter: 'normal-dev', pages: [5, 75], ans: 28 },
+  // Developmental problems spans dev-problems and dev-nd (the neurodevelopmental chapter);
+  // both exist, both are legitimate here.
+  2: { prefix: 'pedep2-dp-', file: 'endpoint-p2-s02-dev-problems.array.js', svar: 'PEDEP2_S02_STAGED',
+       draft: 'endpoint-p2-s02-dev-problems.draft', chapter: 'dev-problems', pages: [76, 154], ans: 30 },
+  3: { prefix: 'pedep2-gen-', file: 'endpoint-p2-s03-genetics.array.js', svar: 'PEDEP2_S03_STAGED',
+       draft: 'endpoint-p2-s03-genetics.draft', chapter: 'genetics', pages: [155, 244], ans: 42 },
+  // The biggest body section, 207 pages. Splits across haematology and haem-bleeding; it will
+  // almost certainly need part-A/part-B halves through merge-parts-ep.js.
+  4: { prefix: 'pedep2-hem-', file: 'endpoint-p2-s04-haematology.array.js', svar: 'PEDEP2_S04_STAGED',
+       draft: 'endpoint-p2-s04-haematology.draft', chapter: 'haematology', pages: [245, 451], ans: 95 },
+  5: { prefix: 'pedep2-res-', file: 'endpoint-p2-s05-respiratory.array.js', svar: 'PEDEP2_S05_STAGED',
+       draft: 'endpoint-p2-s05-respiratory.draft', chapter: 'respiratory', pages: [452, 606], ans: 65 },
+  6: { prefix: 'pedep2-car-', file: 'endpoint-p2-s06-cardiac.array.js', svar: 'PEDEP2_S06_STAGED',
+       draft: 'endpoint-p2-s06-cardiac.draft', chapter: 'cardiac', pages: [607, 792], ans: 85 },
+  7: { prefix: 'pedep2-ren-', file: 'endpoint-p2-s07-renal.array.js', svar: 'PEDEP2_S07_STAGED',
+       draft: 'endpoint-p2-s07-renal.draft', chapter: 'renal', pages: [793, 929], ans: 55 },
+  8: { prefix: 'pedep2-neu-', file: 'endpoint-p2-s08-neuro.array.js', svar: 'PEDEP2_S08_STAGED',
+       draft: 'endpoint-p2-s08-neuro.draft', chapter: 'neurological', pages: [930, 1078], ans: 60 },
+  9: { prefix: 'pedep2-end-', file: 'endpoint-p2-s09-endocrine.array.js', svar: 'PEDEP2_S09_STAGED',
+       draft: 'endpoint-p2-s09-endocrine.draft', chapter: 'endocrine', pages: [1079, 1145], ans: 27 },
+  10: { prefix: 'pedep2-liv-', file: 'endpoint-p2-s10-liver.array.js', svar: 'PEDEP2_S10_STAGED',
+        draft: 'endpoint-p2-s10-liver.draft', chapter: 'liver', pages: [1146, 1210], ans: 20 },
+  11: { prefix: 'pedep2-mal-', file: 'endpoint-p2-s11-malignant.array.js', svar: 'PEDEP2_S11_STAGED',
+        draft: 'endpoint-p2-s11-malignant.draft', chapter: 'malignant', pages: [1211, 1269], ans: 23 },
 
-  // Model Final Exam 1, pp.1157-1321. ⚠️ MIXED TOPIC: `chapter` here is a LABEL ONLY. This field
-  // is never read -- the real check is line 149, which validates each entry's own chapter against
-  // modules.js -- so an exam entry may be filed in any chapter that exists there, and should be
-  // filed by its content, not by this line.
-  10: { prefix: 'pedep-mf1-', file: 'endpoint-s10-mfe1.array.js', svar: 'PEDEP_S10_STAGED',
-        draft: 'endpoint-s10-mfe1.draft', chapter: '(mixed)' },
+  // ⚠️ SECTIONS 12-17 ARE MIXED-TOPIC: `chapter` is a LABEL ONLY. An entry here is filed by its
+  // content in whatever chapter modules.js actually has. Sections 12-15 are the four model final
+  // exams, 80 questions each, and they reprint the body sections -- part 1's Model Final Exam 1
+  // was 30 reprints of 80. Run reprint-pd-ep2.js over a model exam BEFORE drafting it; a reprint
+  // extends `source` and gets no new entry.
+  12: { prefix: 'pedep2-mf1-', file: 'endpoint-p2-s12-mfe1.array.js', svar: 'PEDEP2_S12_STAGED',
+        draft: 'endpoint-p2-s12-mfe1.draft', chapter: '(mixed)', pages: [1270, 1431], ans: 80 },
+  13: { prefix: 'pedep2-mf2-', file: 'endpoint-p2-s13-mfe2.array.js', svar: 'PEDEP2_S13_STAGED',
+        draft: 'endpoint-p2-s13-mfe2.draft', chapter: '(mixed)', pages: [1432, 1594], ans: 80 },
+  14: { prefix: 'pedep2-mf3-', file: 'endpoint-p2-s14-mfe3.array.js', svar: 'PEDEP2_S14_STAGED',
+        draft: 'endpoint-p2-s14-mfe3.draft', chapter: '(mixed)', pages: [1595, 1756], ans: 80 },
+  15: { prefix: 'pedep2-mf4-', file: 'endpoint-p2-s15-mfe4.array.js', svar: 'PEDEP2_S15_STAGED',
+        draft: 'endpoint-p2-s15-mfe4.draft', chapter: '(mixed)', pages: [1757, 1921], ans: 80 },
+
+  // ⚠️ SECTIONS 16 AND 17 PRINT THE ANSWERED PAGE ONLY -- there is no unanswered twin, verified
+  // by eye on p.1923 and p.1949. So every `answered` page here is one real question and `ans` is
+  // right for once. Do not read the missing twin as a defect in the index.
+  16: { prefix: 'pedep2-rm-', file: 'endpoint-p2-s16-recent-mod.array.js', svar: 'PEDEP2_S16_STAGED',
+        draft: 'endpoint-p2-s16-recent-mod.draft', chapter: '(mixed)', pages: [1922, 1940], ans: 18 },
+  17: { prefix: 'pedep2-ra-', file: 'endpoint-p2-s17-recent-add.array.js', svar: 'PEDEP2_S17_STAGED',
+        draft: 'endpoint-p2-s17-recent-add.draft', chapter: '(mixed)', pages: [1941, 1949], ans: 8 },
+
+  // SECTION 18, Exam Night Review, pp.1950-1992, HAS NO ENTRY AND MUST NOT GET ONE. It is 43
+  // pages of prose revision cards -- 41 classify as notes, and the 2 that classify as `answered`
+  // (pp.1977, 1984) are revision cards with lettered bullets, read and confirmed not to be
+  // questions. There is nothing there to stage. It is left out of this table deliberately, so
+  // that `node val-pd-ep2.js 18` fails loudly rather than inviting a section that does not exist.
 };
 
 // imgAlt must give MODALITY AND VIEW ONLY. Naming the finding answers the question --
