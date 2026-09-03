@@ -128,3 +128,55 @@ was much lower.
 all 28 are staged. When both streams close, each pair is confirmed on the page images, the fuller
 printing kept, and the other's citation folded into `source` — one entry with `alsoIn`, per the
 standing cross-bank rule. Until then the two files each carry their own entry, deliberately.
+
+## §1 staging closed — the measurements, 2026-09-04
+
+**28 entries, n 1..28, pp.19-74, 0 sparse holes**, merged from two independently staged halves
+(pp.19-46 and pp.48-74). `expect: 28` met exactly — no shortfall to explain.
+
+| Measurement | Result |
+|---|---|
+| printed number vs sequential index | **`pr == n` on all 28** — no repeats (part 1's §1 printed two) |
+| explanation boxes | 26 printed, **2 unboxed** (n1, n13) |
+| boxes overflowing onto their own page | **none** — alternation held across every pair pp.19-75 |
+| figures | **zero**, measured by reading each answered page whole, both halves |
+| options | **19 five-option, 9 four-option** |
+| shared option ladders | 3, all in pp.19-46: n4/n5, n8/n12, n9/n13 |
+
+### The four-option run is real in the book — checked, because it looked like a reader artefact
+
+Option counts break at p.54, then run four-only from p.60 to the end of the section. That first read
+as a handover artefact between two transcribers. **It is not.** Two independent by-eye audits:
+
+- pp.42, 44, 46, 48, 50, 52 (spanning the handover) — **all five options, all six staged correctly.**
+  So the break is inside one reader's range, not at the seam.
+- pp.54, 60, 74 and their unanswered twins — **four options, and the printed ladder stops at `d`.**
+  A ladder ending at D is positive evidence of a genuine four-option question rather than a dropped
+  line. Twins agree; staged counts and key indices match an independent read.
+
+The lettering case also drifts (uppercase `A.` early, lowercase `a.` later). Immaterial — `options`
+carries no letter prefixes and the app supplies them.
+
+### Key check — the only one that does not compare a key with itself
+
+`python tools\ep-index\keypos.py "…part2.pdf" --calibrate endpoint-p2-s01-normal-dev.array.js`
+
+> **28 entries -> agree 28, DISAGREE 0, abstain 0 (100.0%)**
+
+`keypos.py` measures the yellow highlight's row centroid against the option text bands — pixels
+only, no OCR, no staging file, no shared code with the transcriber. **This is the
+calibration-of-record for part 2.** ⚠️ Per the tool's own header: agreement does not make a key
+right, since both routes still read the same ink. What 28/28 rules out is the failure it was built
+for — a section staged one option out.
+
+### Index flags that did NOT reproduce on the image
+
+`thin` p.59; `options-differ` pp.23/24, 26, 38, 46, 47/48, 49/50, 51/52. Every one read as a
+complete, undamaged page by the transcriber who owned it. Consistent with OCR being a search index;
+**no print defect in §1.** Nine `options-differ` flags, nine false positives — treat the flag as a
+prompt to look, never as a finding.
+
+### Boundary proof, read off the pages
+
+p.75 is a closing devotional slide (Arabic dua, no question). **p.76 opens with the red banner
+"Developmental problems"** — §2's title. §1 ends at 75 and §2 begins at 76, as mapped.

@@ -9,7 +9,14 @@ Project root: `D:\claude os\Medical school\Herophilus`.
 ## 0. STOP AT ~70 STEPS AND HAND BACK — this is a hard cap, not a target
 
 **Count your tool calls. At 60 you start closing out; by 80 you have reported and stopped**, even
-with pages left. Say exactly where you stopped and what the next page is; a replacement resumes
+with pages left.
+
+⚠️ **YOUR OWN ESTIMATE OF YOUR STEP COUNT IS UNRELIABLE — measured 2026-09-04.** A part-2
+staging agent finished a clean pass and reported "roughly 30 tool calls, well under the cap." The
+harness recorded **64**. It was not being careless; a step is easy to under-count from the inside,
+and batched or failed calls vanish from the estimate. **So do not report a number you did not
+count** — either keep a running tally as you go and say it is a tally, or say plainly that you did
+not count. An estimate stated as a measurement is the failure here, not the 64. Say exactly where you stopped and what the next page is; a replacement resumes
 from your file, which is why §8 writes every entry to disk as it goes.
 
 This is not a token-saving nicety, it is the single biggest cost in this project. **Cost is step
