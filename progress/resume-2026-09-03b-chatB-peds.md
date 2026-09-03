@@ -80,7 +80,21 @@ A probe written against the wrong names returns undefined and prints a confident
 
 ---
 
-## YOUR NEXT ACTION — stage ch.13 "Respiratory disorders"
+## YOUR NEXT ACTION — ch.13 "Respiratory disorders" was ALREADY STARTED
+
+⚠️ **The previous chat began staging this and was killed mid-file.** `house-ch13-respiratory.array.js`
+existed with 2 entries when this prompt was written, and it kept working after that — **so the number
+is certainly wrong by now. Measure it, never quote it:**
+
+```bash
+wc -l content/peds/qb-pages/house-ch13-respiratory.array.js
+grep -o "n: *[0-9]*" content/peds/qb-pages/house-ch13-respiratory.array.js | tail -3
+node --check content/peds/qb-pages/house-ch13-respiratory.array.js
+```
+
+**Resume from the last COMPLETE entry, and re-do the last one.** A killed chat's final entry is a
+known-bad spot — it may be half-written, and `node --check` passing does not prove the entry is whole.
+Append with `Edit`, never `Write`; a `Write` here destroys the work already banked.
 
 **Book pp.101–110 → PDF pp.51–56.** House is a **2-up spread scan**: each PDF sheet holds two book
 pages, left half = book `2P − 2`, right half = book `2P − 1`, so **book B → PDF `floor(B/2) + 1`**.

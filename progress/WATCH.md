@@ -157,6 +157,19 @@ module.
   earlier 158 was stale). Confirm the count:
   `find "D:/claude os/Medical school" -iname "*.pdf" | wc -l`
 
+- **⛔ OPTIMIZATION IS CLOSED UNTIL 3 OCT 2026 — user ruling, 2026-09-03.** *"And then: STOP
+  optimizing. Go back to drafting the questions."* Deferred by name until after the exams: the
+  tight-crop OCR gate, load-bearing-token detection, further OCR-confidence work, alternative OCR
+  providers, pipeline state machines, and any further architectural optimization. **Also deferred:
+  fixing `keypos.py`'s two known misses** — they are documented in its docstring and neither has
+  ever produced a wrong shipped key.
+  **The honest accounting of the 2026-09-03 block, so the trade is not re-made blind:** the ~70-step
+  cap and the resume-file read-ranges pay back on every later session and cost about an hour — those
+  were worth it. `keypos.py` and `dup-options.js` found **zero defects** between them; they are
+  insurance against a problem the bank did not have. The block produced **no questions**, against
+  124 House + neuro remaining and exams from 14 Sep. **Optimizing is visible and finishable and
+  drafting is not — that is the whole reason it keeps winning. Draft first.**
+
 ## 5. Session hygiene (workspace §9)
 
 Report any work chat that looks older than ~2 days. Every request re-sends the whole session, so
