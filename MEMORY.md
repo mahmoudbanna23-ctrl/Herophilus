@@ -28,6 +28,8 @@ Where this file and the archive disagree, this file wins. ⚠️ **Before openin
 was DIRTY with both chats' in-flight files** (endpoint: `resume-peds-endpoint.md`, `*-pd-ep.js`,
 `merge-parts-ep.js`, `endpoint-s03-gastro.part-A/B.js`; Chat B: `house-ch12-neurological.array.js`)
 — **the watch pushed the 10 finished commits and left every dirty file alone.**
+⚠️ **The watch now runs FROM THE MAIN `D:\claude os` CHAT, not its own** (user, 2026-09-03) — see the
+note atop `progress\WATCH.md`. Fewer live chats at once.
 ✅ ENT CLOSED (`ledger.md` §15–§16). ✅ **OPHTHO CLOSED 2026-09-02** — **1,598**, 0 holes, CLEAN, boots;
 all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`.
 

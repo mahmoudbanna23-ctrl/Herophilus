@@ -9,6 +9,11 @@ something needs doing, name it and stop — the user decides who does it.
 
 **Do not read a module journal whole.** Prices are in `READING-COSTS.md`; use the anchors.
 
+⚠️ **WHERE THE WATCH RUNS — CHANGED 2026-09-03 by the user.** It is no longer a separate Herophilus
+chat. **Run it from the main `D:\claude os` chat**, alongside the workspace-level fixes, so several
+chats are not live at once. Paths below are absolute and already work from there. Everything above
+still binds — inspect and report, do not build, unless the user says so **in that chat**.
+
 ---
 
 ## 1. Repo state
