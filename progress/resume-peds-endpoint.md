@@ -1079,3 +1079,57 @@ the end. **Self-tests clean on both closed sections**: s04 part-A (3 entries) an
   carries the zero-based `key` convention, §10a's page-by-page order, the `check-part-ep.js`
   correction above, and the verbatim/escalate rules.
 - **One agent at a time** (user ruling 2026-09-03). Half A launched first.
+
+### ✅ §5 half A staged 2026-09-03 — n1–31, pp.577–638
+
+`content\peds\qb-pages\endpoint-s05-emergencies.part-A.js`, **31 entries, n 1..31, pp.577–638,
+29,380 bytes.** Verified **from disk**, not from the agent's report: `check-part-ep.js` exit 0,
+option counts `{"4":3,"5":28}`, key positions `{0:8, 1:5, 2:3, 3:6, 4:9}`. 124 tool uses, ~21 min.
+
+- ⚠️ **`pr != n` starts exactly where it was predicted**: n27/p.630 prints **28**, and every page
+  after it in the half runs one ahead. The skipped printed 27 is confirmed on the image, not just
+  in OCR. The measurement above and the page agree.
+- **p.584 (n4) matched the pre-adjudication exactly** — key **B** at zero-based index 1, and the
+  Glasgow Coma Scale reference table described in `note` rather than staged as a `fig`, so the
+  drafting pass can put it in the explanation *after* the key.
+- **One figure: n2 / p.580** — a clinical photograph of skin on a leg beside a non-blanching-rash
+  vignette. `figAlt` gives modality and view only. ⚠️ **The crop has NOT been cut** —
+  `app\assets\q\q-pd-ep-580.jpg` does not exist yet, and the drafting pass needs it. It is the
+  parent's job and it must be **looked at**, not merely measured.
+- **Three four-option pages, all confirmed uncropped on the image: n23/p.622, n29/p.634,
+  n31/p.638.** The pre-map's `few-options` flag never fired on any of them — its threshold sits
+  below 4, exactly as in §3, where eleven four-option pages read as a mass transcription failure
+  and were not one. **A four-option page in this book is a property of the book.**
+- **Only one page prints no explanation box: n1 / p.577.** The drafting pass writes that one from
+  the lecture cache and it closes with the unboxed marker.
+- **`options-differ` on 577, 591/592, 604, 610, 622, 624: spurious, every one**, read clean off the
+  image. That flag is now **0 for 18** across §4 and §5 half A. It has never once been real.
+- **Shared option menu, recorded not folded: n13–n17 (pp.602–610)** print one identical five-option
+  resuscitation-sequence ladder across five different vignettes. Kept as five entries with the
+  discriminating clinical detail named in each `note`. A shared menu pairs; it never folds.
+- Both known self-reprints staged in full as instructed: **n5/p.586 ↔ n27/p.630** (the
+  bath-submersion vignette, reworded) and **n30/p.636**, which reprints the live `pedep-acc-2`
+  (Louise, p.559) reformatted as an arrow-list ABCDE with a reworded explanation.
+
+### ⚠️ A DOSE FLAG THE DRAFTING PASS MUST NOT PASS OVER — n24, p.624
+
+The anaphylaxis question's **key option** prints `Intramuscular 1 microgram/kg adrenaline
+(epinephrine) (1:1000)`. The agent read the digit off the image as an unambiguous single **1**, not
+a **10**, and transcribed it verbatim — correctly, per the standing rule that numbers, units and
+doses are the one thing never normalised silently.
+
+**The key itself is right**: the question tests route, and IM adrenaline is the answer. What is
+defective is a number printed inside the correct option — 10× below the usual paediatric IM
+anaphylaxis dose. So this is **not** a key dispute and must never be taken to the user as one; it
+is the `explanation`'s job, per *fix errors, never silently overwrite the source*.
+
+⚠️ **The course material cannot settle it.** `27)Anaphylaxsis.txt` names IM epinephrine and the
+auto-injector (lines 199, 208, 231, 251) and **prints no mg/kg or microgram/kg figure anywhere**;
+a repo-wide grep for a dose beside adrenaline/epinephrine in `content\peds\lectures\` returns
+nothing. So the correction is a **gap-fill**: state it, tag it `(not taken from the course
+material)` at the claim, and leave `opts` exactly as the book prints them.
+
+Nine other entries carry number/unit flags in `note` (fluid boluses, maintenance volumes, dextrose
+concentrations, a glucose of 850 mg/dl, a 40°C temperature, an adrenaline q3–5 min interval). Those
+are ordinary transcriptions, flagged because the rule says every number is flagged — only n24 is a
+defect.
