@@ -460,3 +460,82 @@ the work decide, close out at a clean boundary, hand back.
 **Next: §4 Haematology, pp.245–451, `expect: 95`** — the largest body section, splitting across
 `haematology` and `haem-bleeding`. `expect` is an answered-page count and an upper bound; the
 true question count is measured while staging, as it was three times now.
+
+---
+
+## Section 4 "Hematological Disorders" — STAGING LAUNCHED 2026-09-04
+
+pp.245–451, `expect: 95`. The largest body section: 207 pages, more than sections 1, 2 and 3
+put together. Chapters `haematology` (Anaemia and marrow failure) and `haem-bleeding`
+(Bleeding and clotting disorders) — both confirmed present in `app\data\modules.js`, read
+out of the file rather than assumed.
+
+### The split, and why it is four parts
+
+95 answered pages, split by answered-page count and not by page span, so each agent meets the
+same amount of work:
+
+| Part | Answered pages | Range | Structural oddities in it |
+|---|---|---|---|
+| A | 24 | pp.255–308 | pp.255–257 three consecutive answered, no twins |
+| B | 24 | pp.311–357 | notes at 309/312/321; **pp.322+323 consecutive answered** |
+| C | 24 | pp.359–405 | none — perfect alternation p.358→405 |
+| D | 23 | pp.407–450 | **pp.419+420 consecutive answered**; owns the end boundary |
+
+Four and not three because of the step cap, not because of the arithmetic. Section 3's three
+drafting agents each carried 11–15 entries; 95 across three parts is 32 apiece, which is the
+size at which an agent starts running the cap rather than the work.
+
+### ⚠️ The index's `answered` field is not the same as `kind: "answered"`
+
+Measured while computing the split, and it would have silently corrupted the count. Filtering
+`ocr\ep2\index.json` on the boolean `e.answered` returns **111** pages in pp.245–451; filtering
+on `e.kind === 'answered'` returns **95**. The difference is that `notes` pages carry
+`answered: true` as well — pp.453 onward are the visible example. **`kind` is the field; the
+boolean is not.** `MEMORY.md` already says "yellow alone over-counts" for a different reason;
+this is a second way to over-count from the same file.
+
+Separately, the JSON is keyed **0-based** while the `page` field inside each entry is 1-based
+(`idx['300'].page === 301`). A split computed off the keys comes out one page low across the
+board. Read `.page`, never the key.
+
+### Three alternation breaks, all handed to the agent that owns them
+
+The book prints every question twice — unanswered, then answered — so consecutive answered
+pages with no twin between them is a break, and §3 of the staging brief says to check every
+one rather than assume the section has none.
+
+- **pp.255, 256, 257** (part A). Three in a row, sitting between two blocks of `notes`
+  (pp.245–254 and pp.258–266) with the first real question page at p.267. In section 3 the
+  identical signature was **four lettered summary slides** — a slide listing A/B/C/D items,
+  which the detector reads as an answered page — and they were correctly not staged. Part A
+  reads all three whole and says what they actually are.
+- **pp.322 + 323** (part B) and **pp.419 + 420** (part D). Two pairs, same shape. The brief's
+  named cause is an explanation box that did not fit and was printed alone on the page after
+  the answered page, in which case the first page's entry carries `box:<second page>` and the
+  second gets no entry of its own. Part 1 had three of these. But a genuine second question and
+  a reprint produce the same signature, so both agents were told to read both pages and report
+  what they saw rather than apply the rule. The text sweep independently flagged both pairs as
+  near-identical, which is consistent with every one of the three readings and therefore
+  settles nothing.
+
+### The end boundary is part D's job
+
+Section 5 "Respiratory disorders" is said to start at p.452. The index says pp.451 and 452 are
+both `notes` and that the next `answered` page anywhere is **p.477** — a 26-page gap after
+p.450, much larger than any gap inside the section. That is an index reading and not a look at
+the page, so part D renders pp.451 and 452 and quotes what is printed on them.
+
+### Recorded, not acted on
+
+The §4 reprint sweep found **14 cross-file candidates**, with **pp.329–351 matching House
+`pedhd-haem-9` … `pedhd-haem-20` one-for-one in page order**. Chapter-shaped overlap again,
+the third time in this project. It is early warning only: **nothing folds across banks while
+Chat B holds `questions.peds.js` live**, and the staging agents were told it goes in a `note`
+and nowhere else.
+
+Four within-section candidates: p.322≡p.323 and p.419≡p.420 (the two alternation breaks above,
+so probably not questions at all), and **p.375≡p.442** and **p.383≡p.448** — these two straddle
+the C/D part boundary and cannot be settled by either agent alone. Both were told to transcribe
+those four pages exactly and to name the discriminating clinical token, so the pairs can be
+adjudicated after the merge with the whole section in view.
