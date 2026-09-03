@@ -4436,5 +4436,409 @@ var Q_PEDS = [
   "explanation": "**Haematemesis plus splenomegaly plus malnutrition in a jaundiced child is portal hypertension, and portal hypertension means the liver disease is long-standing.** The course's chronic liver disease section lists exactly this progression: portal hypertension producing **oesophageal varices**, ascites and spontaneous bacterial peritonitis, with hepatic encephalopathy precipitated by constipation, gastrointestinal bleeding, infection or renal failure (`liver-hep` §`liv-15`, L42 pp.41–43). Blood-stained vomiting in a child with a big spleen is variceal bleeding until proved otherwise.\n\nOf the five options, only hepatitis B reaches that state in a child. **Perinatal transmission is hepatitis B's main paediatric route**, and it is the route the deck opens on — an infant infected at birth carries the virus through childhood, and the deck's own cascade runs asymptomatic carrier → chronic hepatitis B in 30–50 % → cirrhosis in about 10 % → hepatocellular carcinoma (§`liv-13`, L42 pp.19–23). Twelve years of chronic infection acquired at birth is enough to reach cirrhosis and varices. The epidemiology in the stem is doing the same work the deck's world map does, which marks prevalence bands of over 8 %, 5–7 %, 2–4 % and under 2 % against a global total of some 240 million chronic carriers.\n\nHepatitis A is excluded by biology rather than by probability: it **never becomes chronic** (§`liv-11`), so it cannot produce varices. Biliary atresia and galactosemia are diseases of the first weeks of life. Primary sclerosing cholangitis is not taught in the course material.\n\nThe full comparison of this shared five-option menu is at `pedhd-liv-6`.\n\nWritten for this bank — pediatric .pdf prints no explanation here.",
   "objective": "Recognise chronic hepatitis B as a cause of portal-hypertensive upper gastrointestinal bleeding in a child.",
   "source": "pediatric .pdf p.139 (Part I, ch.19 Q9; the question straddles the page break from p.139 to p.140)"
+},
+
+{
+  "id": "pedhd-mal-1",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "malignant",
+  "stem": "Concerning the epidemiology of childhood cancer, which of the following types is most common in the UK?",
+  "options": [
+    "Bone tumour",
+    "Brain tumour",
+    "Leukaemia",
+    "Neuroblastoma",
+    "Wilms tumour (nephroblastoma)"
+  ],
+  "answer": 2,
+  "explanation": "Leukaemia. The course material states it plainly: acute leukaemia accounts for 25–30% of all childhood cancers, and ALL is the commonest cancer in paediatrics, peaking between 2 and 5 years. The scale is in the same section — 2,500–3,000 new cases of ALL a year in the USA against 500 of AML (`malignant` §`mal-2`).\n\nThe trap is the phrase most common, which has a different answer depending on the category you allow. Brain tumours are the commonest solid tumour of childhood, and in children most are infratentorial (not taken from the course material — the deck names medulloblastoma and ependymoma as the common paediatric brain tumours without ranking them against anything, `malignant-solid` §`mal-19`). A question that asked for the commonest solid tumour would key brain tumour. This one asks across all childhood cancer, where leukaemia outnumbers it.\n\nBone tumour covers osteosarcoma and Ewing sarcoma. Both matter, both are a small share of childhood cancer, and both are diseases of the second decade rather than of the toddler years.\n\nNeuroblastoma is the commonest tumour of infancy, peaking under 2 years — a much narrower claim than commonest childhood cancer, and the qualifier is what makes it true (not taken from the course material, `malignant-solid` §`mal-22`).\n\nWilms tumour peaks at 3–4 years and is the commonest renal tumour of childhood. Again the answer is true only with its qualifier attached (same section, also supplied).\n\nThe hierarchy worth carrying into the exam: leukaemia first overall, brain tumours first among solid tumours, neuroblastoma first in infancy.\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Identify leukaemia as the commonest childhood cancer and separate it from the commonest solid tumour and the commonest tumour of infancy.",
+  "source": "pediatric .pdf p.141 (Part I, ch.20 Q1)"
+},
+{
+  "id": "pedhd-mal-2",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "malignant",
+  "stem": "Polly is a 2-year-old girl who is receiving chemotherapy for her acute lymphoblastic leukaemia. She is known to be neutropenic and has developed a fever of over 38.5°C. What is the most appropriate course of action?",
+  "options": [
+    "Be admitted to hospital for observation",
+    "Be started immediately on oral antibiotics",
+    "Have her blood count and inflammatory markers (e.g. C-reactive protein) measured",
+    "Have blood cultures taken and be started on intravenous antibiotics",
+    "See her general practitioner for further assessment and decision regarding antibiotics"
+  ],
+  "answer": 3,
+  "explanation": "Blood cultures, then intravenous antibiotics. Fever in a child who is neutropenic on chemotherapy is febrile neutropenia, and the material sets it out as an emergency with a clock attached: fever with an absolute neutrophil count under 500/mm³, or under 1,000 and falling; cultures, then broad-spectrum intravenous antibiotics within one hour; do not wait for the count and do not wait for a focus (`malignant` §`mal-13` — that section carries its own tag as supplied rather than drawn from the deck).\n\nWhy there may be no focus is printed earlier and is the part students skip: neutropenia is what produces fever, buccal ulceration and infection in leukaemia (`malignant` §`mal-5`), and a child with no neutrophils cannot make pus. The usual signs of a collection — swelling, fluctuance, a purulent focus — may all be absent while she is bacteraemic.\n\nEvery wrong option here is a delay, and they differ only in how much delay they buy.\n\nAdmission for observation puts her in the right building and gives her nothing. Observation does not treat bacteraemia, and a neutropenic child can go from well to shocked inside a few hours.\n\nOral antibiotics are the wrong route and, at this risk level, the wrong decision. Absorption is unreliable in a child who may vomit or become hypotensive, and oral outpatient therapy belongs to carefully selected low-risk patients — which a 2-year-old on ALL chemotherapy with a temperature over 38.5°C is not (the risk stratification itself is not taken from the course material).\n\nBlood count and CRP is the most seductive wrong answer, because it is not a lazy one: these are investigations you would send anyway. The error is sequencing. The count cannot change the immediate decision — she is already known to be neutropenic — and CRP rises too slowly to exclude anything in the first hours.\n\nSending her to her general practitioner inserts a journey, a triage and a referral in front of a child who may be bacteraemic now.\n\nCultures come first only because they take seconds and are ruined by antibiotics. They never hold the antibiotic up; if venous access is difficult, the antibiotic still goes in on time.\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Recognise febrile neutropenia as an emergency and select cultures followed immediately by broad-spectrum intravenous antibiotics.",
+  "source": "pediatric .pdf p.141 (Part I, ch.20 Q2)"
+},
+{
+  "id": "pedhd-mal-3",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "malignant-solid",
+  "stem": "Mohammed is a 3-year-old boy who is reviewed in the Paediatric Assessment Unit. He has a history of weight loss and lethargy. His mother is also concerned as he keeps crying and complains of pain in his tummy. On examination of his abdomen he has an extensive mass. The doctor is worried he may have a childhood malignancy. Which of the following investigations would be the most useful in making the diagnosis?",
+  "options": [
+    "Plasma ammonia",
+    "Plasma LDG (lactate dehydrogenase)",
+    "Serum α-fetoprotein",
+    "Serum beta-HCG (human chorionic gonadotrophin)",
+    "Urinary catecholamines"
+  ],
+  "answer": 4,
+  "explanation": "Urinary catecholamines. The vignette gives a 3-year-old with weight loss, lethargy, abdominal pain and an extensive abdominal mass — a child who is unwell, not a child who happens to have a lump. The material separates the two abdominal masses of early childhood on exactly that axis: neuroblastoma arises from neural crest, in the adrenal medulla or sympathetic chain; the mass is irregular and hard and crosses the midline; the child is unwell with bone pain and weight loss; and the marker is urinary catecholamines, VMA and HVA. Wilms tumour gives a smooth mass that does not cross the midline in a child who is usually well, and has no marker at all (`malignant-solid` §`mal-22`, supplied and tagged in full — no cached deck teaches either tumour).\n\n“Extensive” is the word doing the work. Paired with the systemic illness it points at the neural-crest tumour rather than the renal one, and only one investigation on the list speaks to it.\n\nPlasma ammonia belongs to hyperammonaemia — urea-cycle disorders, organic acidaemias, liver failure. It is the test for an encephalopathic child, not for a mass.\n\nPlasma LDG rises with cell turnover in many malignancies, and also in haemolysis, hepatitis and after vigorous exercise. It may well be raised in this child. It cannot say which tumour, so it is not what makes the diagnosis.\n\nSerum α-fetoprotein marks hepatoblastoma and yolk-sac germ-cell tumours, and is physiologically high in the first months of life anyway. Serum beta-HCG marks choriocarcinoma and some other germ-cell tumours. Both are the right answers to a different abdominal mass — hepatic or gonadal — and neither is characteristic of neuroblastoma (these tumour-marker pairings are not taken from the course material).\n\nImaging follows, and ultrasound is the usual first look at a childhood abdominal mass. But the question asks which of these five is most useful in making the diagnosis, and among them only one is specific to the tumour the vignette is describing.\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Select urinary catecholamines as the tumour-specific investigation for a suspected neuroblastoma, and distinguish it from the markers of hepatic and germ-cell tumours.",
+  "source": "pediatric .pdf p.141 (Part I, ch.20 Q3)"
+},
+{
+  "id": "pedhd-mal-4",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "malignant",
+  "stem": "Josh is a 2-year-old boy who presents to the Emergency Department with weight loss and lethargy. On examination he has splenomegaly. You are worried that he has leukaemia. You perform an urgent full blood count. What are the most likely haematology results if he has leukaemia?",
+  "options": [
+    "Low haemoglobin and low platelets",
+    "High haemoglobin and low platelets",
+    "Normal haemoglobin and normal platelets",
+    "High haemoglobin and raised platelets",
+    "Low haemoglobin and raised platelets"
+  ],
+  "answer": 0,
+  "explanation": "Low haemoglobin and low platelets. Blasts fill the marrow — usually replaced by 80–100% of them — and the three normal lineages are crowded out (`malignant` §`mal-9`). The deck counts what that produces in ALL: 92% have platelets below normal, and its frequency table puts platelets above 100,000/mm³ in only 25% of children and haemoglobin above 11.0 g/dL in only 12% (`malignant` §`mal-6`, §`mal-9`). The anaemia is moderate to marked and normocytic normochromic, and it is what explains Josh's lethargy; thrombocytopenia is what would give him petechiae, purpura and easy bruising (`malignant` §`mal-5`).\n\nSplenomegaly fits. Hepatosplenomegaly is present in 68% of children with ALL at diagnosis and splenomegaly in 63%, outranking every symptom on the deck's list (`malignant` §`mal-6`).\n\nThe white cell count appears in none of the options, and that is deliberate rather than an omission. It can be low, normal or high; 53% present with leukocytes under 10,000/mm³ (`malignant` §`mal-6`, §`mal-9`). A normal white count never excludes leukaemia, and neither does a normal-looking film in a leukopenic child, where blasts may be very few or none.\n\nHigh haemoglobin with low platelets gets the platelet right and inverts the anaemia. Nothing about marrow replacement raises haemoglobin.\n\nNormal haemoglobin and normal platelets has to be actively refused rather than dismissed. It is not impossible — presentations vary, and 92% is not 100% — but with splenomegaly and weight loss already established, this is not an early presentation.\n\nHigh haemoglobin with raised platelets is a reactive picture: inflammation, iron deficiency, dehydration. It points away from marrow failure in every direction.\n\nLow haemoglobin with raised platelets is the trap for a student who reads “anaemia” and stops reading. A raised platelet count is itself reactive and argues against marrow replacement.\n\nThe full blood count is the urgent screening test, not the diagnostic one. The film shows blasts, abundant above a white count of 10,000/mm³, and the marrow makes the diagnosis — leukaemia is suspected above 5% blasts (`malignant` §`mal-9`).\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Recognise anaemia with thrombocytopenia as the marrow-infiltration pattern of acute leukaemia, and know that the white cell count may be low, normal or high.",
+  "source": "pediatric .pdf p.142 (Part I, ch.20 Q4)"
+},
+{
+  "id": "pedhd-mal-5",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "malignant-solid",
+  "image": "q-pd-hd-142",
+  "imgAlt": "CT scan of the brain, axial view.",
+  "stem": "Amy is a 2-year-old girl who presents to the outpatient department with a history of developmental regression. She was able to walk but has ‘gone off her legs’ in the last few weeks. Her parents are very worried about her. On further questioning she had been well with no preceding coryzal illness. On examination, she is very unsteady on her feet and her power is reduced in her lower limbs. She has no obvious visual problems and seems able to follow the picture book her mother has brought to clinic. A CT scan is obtained and is shown in the opposite figure. What is the most likely underlying cause?",
+  "options": [
+    "Cerebral abscess",
+    "Cortical astrocytoma",
+    "Craniopharyngioma",
+    "Medulloblastoma",
+    "Viral encephalitis"
+  ],
+  "answer": 3,
+  "explanation": "Medulloblastoma. Amy has lost a skill she had — she walked, and now does not — with truncal unsteadiness and reduced lower-limb power over a few weeks, no preceding illness and no visual problem. That is a posterior fossa syndrome. Medulloblastoma sits in the posterior fossa, in the cerebellar vermis, and is the commonest malignant brain tumour of childhood; it presents with truncal ataxia and an unsteady gait, and with morning headache and vomiting once it obstructs the fourth ventricle (`malignant-solid` §`mal-20`, supplied and tagged — “posterior fossa” returns no hit in the lecture itself). The deck does name medulloblastoma and ependymoma as the two common paediatric brain tumours (`malignant-solid` §`mal-19`).\n\nRegression is the word that should stop you. A child who acquires walking and then loses it is not developmentally delayed; something has been given and taken away, and in a previously well toddler that means a structural process rather than a slow one.\n\nCerebral abscess would ordinarily arrive with fever and an infective source — otitis media, sinusitis, cyanotic congenital heart disease — and often with seizures or a focal deficit. None is offered, and the illness has run for weeks without systemic upset.\n\nCortical astrocytoma is supratentorial. It would be expected to declare itself with seizures, hemiparesis or personality change rather than with a pure gait and balance failure.\n\nCraniopharyngioma is suprasellar, and its currency is endocrine: growth failure, diabetes insipidus, delayed puberty, plus bitemporal field loss from chiasmal compression. The stem quietly excludes it — Amy follows her picture book normally.\n\nViral encephalitis is acute, febrile and encephalopathic, with altered behaviour, reduced consciousness and seizures over days. Amy is alert enough to be assessed in a clinic and has been declining for weeks.\n\nTwo consequences follow from the diagnosis, and neither appears in the options. Medulloblastoma seeds drop metastases down the CSF pathway, so the whole neuraxis is imaged and the CSF examined before treatment is planned; and radiotherapy is avoided or deferred under 3 years of age, which matters directly for a 2-year-old (`malignant-solid` §`mal-20`, supplied and tagged).\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Recognise subacute ataxia with regression in a toddler as a posterior fossa syndrome, and name medulloblastoma as its commonest malignant cause.",
+  "source": "pediatric .pdf p.142 (Part I, ch.20 Q5)"
+},
+{
+  "id": "pedhd-mal-6",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "malignant",
+  "image": "q-pd-hd-143",
+  "imgAlt": "Clinical photograph of a child's skin.",
+  "stem": "Mark, a 3-year-old boy, is currently receiving chemotherapy. His sister has developed the rash shown in the opposite figure. Mark is well and does not have a fever. Mark’s parents are worried and phone the oncology ward for advice. What information should they be given?",
+  "options": [
+    "Advise them to see their general practitioner to check that he is all right",
+    "Mark needs urgent treatment to prevent him from becoming unwell",
+    "Monitor Mark and if he becomes unwell with a fever, bring him to the ward",
+    "Monitor Mark and if he has any signs of the rash, bring him to the ward",
+    "Reassurance – this is a common illness that most children get"
+  ],
+  "answer": 1,
+  "explanation": "Mark needs urgent treatment to prevent him from becoming unwell. The illness in the sister is chickenpox, and it is worth saying exactly where that comes from. The figure shows her rash — many small red-brown lesions scattered over the shoulder and trunk with one larger, darker, crusted lesion among them — but the reproduction is not sharp enough to call individual lesions vesicular, so the diagnosis is carried by the question rather than by the photograph: the stem offers reassurance that this is 'a common illness that most children get', and no other ordinary childhood exanthem turns a well sibling on chemotherapy into an emergency. The morphology to know is the one the material prints: lesions arrive in crops over 3–5 days so that macules, vesicles and scabs coexist, and that pleomorphism is the diagnostic feature of chickenpox (`infection-vesic` §`inf-32`).\n\nThe exposure, not Mark's current state, is the entire question. He is on chemotherapy and therefore immunocompromised, and the material's line for that group is explicit: aciclovir and/or VZIG in severe cases, the deck's own pairing (`infection-vesic` §`inf-33`). For post-exposure the options are vaccination within 3–5 days, or VZIG for high-risk contacts (`infection-vesic` §`inf-32`) — and for Mark the varicella vaccine is a live one, which is why immunoglobulin rather than vaccination is the route in an immunosuppressed child (not taken from the course material, though the deck approaches it from the other side: complications of the live vaccine are themselves a presentation of immunodeficiency, §`inf-33`).\n\nThe timing is already against them. His sister was infectious from 1–2 days before her rash appeared, so the exposure happened before anyone could see it. Incubation is 10–21 days, average 14–16 (§`inf-32`), which means there is a window in which Mark is well, afebrile and still preventable — and that window is precisely when this phone call is being made. “He is well and has no fever” is therefore not reassurance; it is the reason there is still something to do.\n\nAdvising the general practitioner delegates a time-critical oncology decision to a service that will have to refer it straight back.\n\nWaiting for fever abandons prophylaxis and waits for disease. In the immunocompromised that disease is disseminated varicella, with pneumonia and encephalitis, and antivirals then treat rather than prevent it.\n\nWaiting for the rash is later still, because the rash follows the viraemia rather than announcing it.\n\nReassurance is true of the sister and wrong about Mark. Chickenpox in a well child is mild and self-limiting, its commonest complication bacterial superinfection from scratching (§`inf-32`); the same virus in a child whose cellular immunity has been stripped by chemotherapy is a different illness with a different mortality.\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Recognise varicella exposure in a child on chemotherapy as requiring urgent post-exposure treatment rather than observation or reassurance.",
+  "source": "pediatric .pdf p.143 (Part I, ch.20 Q6)"
+},
+{
+  "id": "pedhd-mal-7",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "malignant-solid",
+  "stem": "Essa is a 2-year-old boy whose parents have noticed his two eyes look different. He has no other medical history and is not currently on any medication. On examination, the movement of the eyes is normal and the pupils are equal and reactive to light. On checking his pupillary reflex you observe his left pupil looks red but the right looks white. His systemic examination is normal. What is the likely cause of this?",
+  "options": [
+    "Congenital cataract",
+    "Glaucoma",
+    "Retinoblastoma",
+    "Allergic conjunctivitis",
+    "VI nerve palsy"
+  ],
+  "answer": 2,
+  "explanation": "Retinoblastoma. A white pupillary reflex — leukocoria — in one eye of a young child is retinoblastoma until proved otherwise, and it earns an urgent ophthalmology referral, because the tumour threatens sight in that eye and, left alone, life. Neither retinoblastoma nor leukocoria appears anywhere in the course material; both are supplied here (not taken from the course material).\n\nWhat the material does give is the screening designed to catch this: the red reflex is examined at birth and again at the 6–8 week check, both part of the Newborn Infant Physical Examination (`dev-problems` §`dp-8`). The deck names cataract as the thing that impedes the reflex. The screen is for any cause of an absent or asymmetric reflex, and retinoblastoma is the one that must not be missed.\n\nCongenital cataract is the other classic cause of leukocoria and remains a genuine differential — the stem cannot exclude it clinically, and it takes a dilated fundoscopy or a slit-lamp to separate the two. Retinoblastoma is what the question tests because it is the malignant cause and the one with a deadline attached (not taken from the course material).\n\nGlaucoma in infancy — buphthalmos — presents with a large, hazy, cloudy cornea, watering and photophobia, and an uncomfortable child. Essa's cornea is not described as abnormal and his eye is quiet.\n\nAllergic conjunctivitis gives itch, conjunctival redness, watering and lid swelling. It is a surface disease, and it cannot change the colour of a reflex that returns from the retina.\n\nSixth nerve palsy is a motility problem: failure of abduction, with a convergent squint. Essa's eye movements are explicitly normal, and in any case a complete palsy would leave the red reflex red.\n\nNotice how much the stem removes to leave one answer standing: pupils equal and reactive, movements normal, systemic examination normal, no medication, no past history. The single abnormality is that one reflex is white and the other red. Asymmetry of the red reflex in a child is never a normal variant.\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Recognise unilateral leukocoria as a red-flag presentation of retinoblastoma and distinguish it from cataract, glaucoma and surface eye disease.",
+  "source": "pediatric .pdf p.143 (Part I, ch.20 Q7)"
+},
+{
+  "id": "pedhd-mal-8",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "malignant-solid",
+  "image": "q-pd-hd-144",
+  "imgAlt": "Two-panel illustration of eye movements, viewed from the front.",
+  "stem": "Brittney, aged 5 years, goes to her optician. She has needed glasses for 4 months but her mother thinks her prescription needs changing as she has been getting progressively worsening headaches. When the optician examines her eyes she finds the examination shown in the figure below (next page). Both her eyes have a red reflex. What is the most likely diagnosis?",
+  "options": [
+    "Craniopharyngioma",
+    "Concomitant squint",
+    "Optic glioma",
+    "Posterior fossa tumour",
+    "Retinoblastoma"
+  ],
+  "answer": 3,
+  "explanation": "Posterior fossa tumour. Brittney's headaches have worsened over months while her spectacle prescription takes the blame, and the figure shows her eyes on gaze to each side — an ocular motility abnormality, not a refractive one. Progressive headache in a child, with an eye-movement defect and both red reflexes intact, is raised intracranial pressure until proved otherwise.\n\nThe deck lists what a brain tumour does: headache that is frequent and worse in the morning or with a change of position, seizures, deficits of vision, speech or motor function from pressure on the brain, and cognitive change (`malignant-solid` §`mal-19`). What it does not say — and what this question turns on — is that in children most brain tumours are infratentorial, so the picture is cerebellar signs with obstructive hydrocephalus rather than a focal cortical deficit (not taken from the course material, and recorded as such inside §`mal-19`). The sixth nerve is the classic false localising sign of raised pressure: it has the longest intracranial course, and its failure tells you about pressure rather than about site (not taken from the course material).\n\nCraniopharyngioma is suprasellar. It compresses the chiasm and the pituitary, so the expected findings are growth failure, endocrine disturbance and bitemporal field loss — not headache with a motility defect.\n\nConcomitant squint is the ordinary childhood squint: the angle of deviation is the same in every direction of gaze and no movement is limited. It does not progress, and it does not cause headache. Squint appears in the material only as a feature of a genetic syndrome (`genetics` §`gen-5`), never as an ophthalmic subject in its own right.\n\nOptic glioma impairs vision — reduced acuity, optic atrophy, sometimes proptosis — and is associated with neurofibromatosis type 1 (not taken from the course material). The function it takes is sight, not ocular movement.\n\nRetinoblastoma is excluded by the stem in a single clause: both eyes have a red reflex. That sentence is there deliberately, and it also ties this question to Q7 on the page before.\n\nThe practical rule is worth stating flatly. A child whose glasses keep needing changing and whose headaches keep worsening needs imaging, not another refraction.\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Recognise progressive headache with an ocular motility defect as raised intracranial pressure from an infratentorial tumour, and separate it from primary ophthalmic causes.",
+  "source": "pediatric .pdf p.143 (Part I, ch.20 Q8; the question straddles the page break from p.143 to p.144)"
+},
+{
+  "id": "pedhd-mal-9",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "malignant",
+  "stem": "Natalia, a 4-year-old girl, presents to her general practitioner. This is her second bad episode of tonsillitis in the same month. She is tired and looks pale and has a number of bruises on her lower legs. On examination she has pallor, scattered purpuric skin lesions and hepatosplenomegaly. Which of the following is the most likely diagnosis of that patient?",
+  "options": [
+    "Neuroblastoma",
+    "Brain tumour",
+    "Wilms tumour (nephroblastoma)",
+    "Acute lymphoblastic leukaemia",
+    "Hodgkin disease"
+  ],
+  "answer": 3,
+  "explanation": "Acute lymphoblastic leukaemia. Natalia has three cytopenias at once, which no solid tumour on this list produces: pallor and tiredness (anaemia), a second bad tonsillitis inside one month (neutropenia), and bruises with purpuric lesions (thrombocytopenia). Hepatosplenomegaly completes it — present in 68% of children with ALL at diagnosis, outranking every symptom on the deck's own frequency table, ahead of splenomegaly at 63%, fever at 61% and bleeding at 48% (`malignant` §`mal-6`). The mechanism is marrow invasion, and the deck maps each cytopenia onto its signs: anaemia gives pallor, fatigability, tachycardia and dyspnoea; neutropenia gives fever, buccal ulceration and infection; thrombocytopenia gives petechiae, purpura, easy bruising and mucosal bleeding (`malignant` §`mal-5`).\n\nThis question and the three that follow it share one option list. The comparative table is written here once; each sibling then names only its own discriminating token.\n\n|Option|What it needs before it can be chosen|Where that is printed|\n|---|---|---|\n|Acute lymphoblastic leukaemia|Two or more cytopenias — pallor, recurrent infection, bruising — with hepatosplenomegaly|`malignant` §`mal-5`, §`mal-6`|\n|Neuroblastoma|A hard irregular abdominal mass crossing the midline, in an unwell child with weight loss or bone pain|`malignant-solid` §`mal-22`|\n|Wilms tumour (nephroblastoma)|A smooth abdominal mass that does not cross the midline, in a child who is otherwise well|`malignant-solid` §`mal-22`|\n|Brain tumour|Progressive headache, morning vomiting, visual change, cognitive or school decline|`malignant-solid` §`mal-19`|\n|Hodgkin disease|Painless persistent lymphadenopathy, usually cervical, often with fever, night sweats and weight loss|not taken from the course material|\n\nHodgkin disease is this menu's filler option and appears nowhere in the material; it is supplied above so that it can be excluded on its own terms rather than by elimination. It would be argued for by rubbery painless nodes, not by cytopenias — and Natalia's tonsillitis is an infection, which is the opposite of what Hodgkin disease offers.\n\nThe confirmation is not among the options: an urgent full blood count and film, then marrow examination, where leukaemia is suspected above 5% blasts and the marrow at diagnosis is usually 80–100% blasts (`malignant` §`mal-9`).\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Recognise the combination of anaemia, recurrent infection, thrombocytopenia and hepatosplenomegaly as acute lymphoblastic leukaemia.",
+  "source": "pediatric .pdf p.144 (Part I, ch.20 Q9)"
+},
+{
+  "id": "pedhd-mal-10",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "malignant-solid",
+  "stem": "Angel, a 2-year-old boy, presents to his general practitioner with an abdominal mass noticed by his mother on dressing him. He has no other medical problems and is not on any medication. His stool pattern is regular. He is otherwise relatively well in himself. You examine his abdomen and feel a mass in his left abdomen, which does not cross the midline. There is no hepatosplenomegaly. Which of the following is the most likely diagnosis of that patient?",
+  "options": [
+    "Neuroblastoma",
+    "Brain tumour",
+    "Wilms tumour (nephroblastoma)",
+    "Acute lymphoblastic leukaemia",
+    "Hodgkin disease"
+  ],
+  "answer": 2,
+  "explanation": "Wilms tumour (nephroblastoma). The discriminating token from the shared table at `pedhd-mal-9` is a mass that does not cross the midline in a child who is otherwise relatively well, with no hepatosplenomegaly and a normal stool pattern. That is the renal tumour rather than the neural-crest one: Wilms is smooth and stays on its own side of the midline and the child is usually well, whereas neuroblastoma is hard and irregular, crosses the midline, and the child is unwell with bone pain and weight loss (`malignant-solid` §`mal-22`, supplied and tagged in full).\n\nAngel's age fits — the Wilms peak is 3–4 years — and the two other features to look for are haematuria and hypertension, neither of which the stem gives or needs. Bilateral disease occurs in 5–10%, so both kidneys are imaged; treatment is nephrectomy with chemotherapy, and the prognosis is good (same section).\n\nUltrasound of the abdomen is the appropriate first investigation for a childhood abdominal mass.\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Use an abdominal mass that does not cross the midline in a well child to identify Wilms tumour.",
+  "source": "pediatric .pdf p.144 (Part I, ch.20 Q10; the question straddles the page break from p.144 to p.145)"
+},
+{
+  "id": "pedhd-mal-11",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "malignant-solid",
+  "stem": "Kay, a 3-year-old girl, presents to the Paediatric Assessment Unit as her mother is worried she is pale, tired and ‘not quite right’. She has also lost 2 kg of weight in the last month. On examination the child looks unwell, has pallor and a large firm, irregular abdominal mass in the centre of her abdomen. Which of the following is the most likely diagnosis of that patient?",
+  "options": [
+    "Neuroblastoma",
+    "Brain tumour",
+    "Wilms tumour (nephroblastoma)",
+    "Acute lymphoblastic leukaemia",
+    "Hodgkin disease"
+  ],
+  "answer": 0,
+  "explanation": "Neuroblastoma. The discriminating token from the shared table at `pedhd-mal-9` is a large, firm, irregular mass in the centre of the abdomen in a child who looks unwell and has lost 2 kg in a month. Central and irregular means it is crossing the midline, and that finding paired with the systemic illness is what separates neuroblastoma from Wilms tumour, where the mass is smooth, stays on one side and the child is usually well (`malignant-solid` §`mal-22`, supplied and tagged in full).\n\nKay's age is compatible: neuroblastoma peaks under 2 years and is the commonest tumour of infancy, but it remains a tumour of early childhood. Its marker is urinary catecholamines, VMA and HVA; its signature sign is periorbital bruising with proptosis from orbital secondaries; and stage 4S disease in infants can regress spontaneously, which no other childhood malignancy does (same section).\n\nPallor here is part of a systemic illness with weight loss and a mass, not the isolated cytopenic picture that would argue for leukaemia.\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Use a hard irregular midline-crossing abdominal mass in an unwell child to identify neuroblastoma.",
+  "source": "pediatric .pdf p.145 (Part I, ch.20 Q11)"
+},
+{
+  "id": "pedhd-mal-12",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "malignant-solid",
+  "stem": "Douglas, a 7-year-old boy, visits his general practitioner with his mother. He has been getting headaches over the last 3–5 weeks which have increased in intensity. These have woken him from sleep. His mother reports that he has recently begun vomiting in the morning. His teachers have also commented his school work is getting worse. His mother thinks this may be because his sight has deteriorated as he keeps complaining of double vision. Which of the following is the most likely diagnosis of that patient?",
+  "options": [
+    "Neuroblastoma",
+    "Brain tumour",
+    "Wilms tumour (nephroblastoma)",
+    "Acute lymphoblastic leukaemia",
+    "Hodgkin disease"
+  ],
+  "answer": 1,
+  "explanation": "Brain tumour. The discriminating token from the shared table at `pedhd-mal-9` is raised intracranial pressure: headaches over 3–5 weeks that are increasing in intensity and wake him from sleep, morning vomiting, falling school performance and double vision. The material lists that cluster almost item for item — headache frequent and worse in the morning or with a change of position, deficits of vision, speech or motor function from pressure on the brain, and cognitive change including altered memory, personality or confusion (`malignant-solid` §`mal-19`).\n\nEach of those is a red flag by itself, and four together are not a headache disorder. Diplopia in particular should not be handed to an optician: in a child with progressive headache it suggests a sixth nerve palsy from raised pressure (not taken from the course material).\n\nNothing in the stem is abdominal, so neither neuroblastoma nor Wilms tumour is in play. There is no pallor, bruising, recurrent infection or organomegaly to suggest leukaemia, and Hodgkin disease would be a nodal illness rather than this.\n\nThe next step is urgent neuroimaging — MRI and CT are essential for locating and diagnosing the tumour (`malignant-solid` §`mal-20`) — and not a repeat refraction.\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Identify progressive headache with morning vomiting, diplopia and school decline as the raised-pressure presentation of a brain tumour.",
+  "source": "pediatric .pdf p.145 (Part I, ch.20 Q12)"
+},
+
+{
+  "id": "pedhd-mal-13",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "malignant",
+  "stem": "Connor, a 4-year-old boy, presents to the Paediatric Assessment Unit with his parents. They are worried as he seems to be very tired and complains of his legs hurting. He also seems to have a fine rash that has developed on his arms. On examination he is pale, has a petechial rash on his arms and legs and has hepatosplenomegaly. A full blood count shows low haemoglobin and platelet count. Which of the following is the investigation most likely to confirm the diagnosis of that patient?",
+  "options": [
+    "Bone marrow aspirate",
+    "Blood film",
+    "Chest X-ray",
+    "Clotting screen",
+    "CT scan"
+  ],
+  "answer": 0,
+  "explanation": "Bone marrow aspirate. Read the question carefully: it does not ask what to do next, it asks what confirms the diagnosis. The clinical picture is already made — pallor and fatigue, bone pain, petechiae, hepatosplenomegaly and a full blood count showing anaemia with thrombocytopenia. Bone pain is present in 23% of children with ALL at diagnosis and hepatosplenomegaly in 68% (`malignant` §`mal-6`), and the cytopenias are the marrow being crowded out (`malignant` §`mal-5`). What remains is proof, and proof is in the marrow: it is usually replaced by 80–100% blasts, megakaryocytes are usually absent, and leukaemia is suspected above 5% blasts (`malignant` §`mal-9`).\n\nBlood film is the trap, and it is a good one, because it is genuinely the right thing to send. The film shows blasts, and above a white count of 10,000/mm³ they are abundant. But 53% of children with ALL present with a white count under 10,000/mm³, and in a leukopenic child the blasts on the film may be very few or absent altogether (`malignant` §`mal-6`, §`mal-9`). A film can raise the diagnosis; it cannot confirm it, and it cannot classify the leukaemia — the morphology, the immunophenotype and the cytogenetics that decide treatment all come off the marrow (`malignant` §`mal-10`).\n\nChest X-ray has a real place here, but a different one. Bulky mediastinal lymphadenopathy causing superior vena cava syndrome is a recognised presentation, commoner in T-cell leukaemia in adolescents (`malignant` §`mal-7`), and the film is checked before a general anaesthetic for that reason. It stages and it warns; it does not diagnose.\n\nClotting screen answers a different question — is he bleeding because of a coagulopathy? His petechiae are explained by his platelet count, which is already known to be low, and a normal clotting screen would change nothing about the diagnosis.\n\nCT scan is for a mass. There is no mass in this vignette; the disease is diffuse and in the marrow, and the marrow is where the needle goes.\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Select bone marrow aspirate as the confirmatory investigation in suspected acute leukaemia, and explain why a blood film cannot confirm it.",
+  "source": "pediatric .pdf p.145 (Part I, ch.20 Q13; the question straddles the page break from p.145 to p.146)"
+},
+{
+  "id": "pedhd-mal-14",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "malignant-solid",
+  "stem": "Niamh, a 4-year-old girl, is taken to her general practitioner as her mother has noticed she has red urine. On further questioning she has been more tired than normal and has been complaining of abdominal pain. On examination she is pale with a left-sided abdominal mass. Her urine is red and a dipstick confirms that this is blood. Which of the following is the investigation most likely to confirm the diagnosis of that patient?",
+  "options": [
+    "Full blood count",
+    "Magnetic resonance imaging (MRI) scan",
+    "Positron emission tomography (PET) scan",
+    "Ultrasound of abdomen",
+    "Urine catecholamines"
+  ],
+  "answer": 3,
+  "explanation": "Ultrasound of the abdomen. Niamh has a left-sided abdominal mass with frank haematuria in a 4-year-old — the age, the side-specific mass and the blood in the urine together say renal, and that means Wilms tumour. The material's comparison gives the constellation: Wilms arises from metanephric blastema, peaks at 3–4 years, gives a smooth mass that does not cross the midline in a child who is usually well, and its two associated findings are haematuria and hypertension (`malignant-solid` §`mal-22`, supplied and tagged in full). Ultrasound is the first-line imaging of a childhood abdominal mass: it says at once whether the mass is renal or extrarenal, whether it is solid or cystic, and whether the other kidney is involved — which matters, because 5–10% of Wilms tumours are bilateral (same section).\n\nThis question and the three that follow share one option list. The table below is the comparison; each sibling then names only its own discriminating token.\n\n|Investigation|What has to be present before it is the answer|Where that is printed|\n|---|---|---|\n|Full blood count|Cytopenias — pallor with infection or bruising — and hepatosplenomegaly, i.e. leukaemia|`malignant` §`mal-5`, §`mal-6`|\n|MRI scan|A lesion inside a bony box that ultrasound cannot see through: brain, spinal cord or orbit|`malignant-solid` §`mal-20`|\n|PET scan|A staging question in a known malignancy, not a first diagnostic step in a child|not taken from the course material|\n|Ultrasound of abdomen|An abdominal mass, especially a renal one; the first look, no radiation, no sedation|`malignant-solid` §`mal-22`|\n|Urine catecholamines|An unwell child with an irregular mass crossing the midline — neuroblastoma, marked by VMA and HVA|`malignant-solid` §`mal-22`|\n\nUrine catecholamines is the near miss in this particular stem, and the discriminators are that Niamh's mass is left-sided rather than central and that haematuria is a Wilms feature, not a neuroblastoma one. PET is not a paediatric first-line test and appears nowhere in the material (not taken from the course material); a full blood count would document her anaemia and confirm nothing.\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Select abdominal ultrasound as the first confirmatory investigation for a suspected Wilms tumour, and set out the shared investigation menu for this group of questions.",
+  "source": "pediatric .pdf p.146 (Part I, ch.20 Q14)"
+},
+{
+  "id": "pedhd-mal-15",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "malignant-solid",
+  "stem": "Oscar, a 3-year-old boy, attends the Emergency Department as his mother is worried he has lost weight and looks pale. On examination he has a large irregular mass extending across his abdomen. His blood pressure is high. Which of the following is the investigation most likely to confirm the diagnosis of that patient?",
+  "options": [
+    "Full blood count",
+    "Magnetic resonance imaging (MRI) scan",
+    "Positron emission tomography (PET) scan",
+    "Ultrasound of abdomen",
+    "Urine catecholamines"
+  ],
+  "answer": 4,
+  "explanation": "Urine catecholamines. The discriminating token from the shared table at `pedhd-mal-14` is a large irregular mass extending across the abdomen — that is a mass crossing the midline — in a child who has lost weight and looks unwell. That pairing is neuroblastoma rather than Wilms tumour, where the mass is smooth, stays on one side and the child is usually well (`malignant-solid` §`mal-22`, supplied and tagged in full).\n\nThe marker follows from the cell of origin. Neuroblastoma arises from neural crest tissue in the adrenal medulla or the sympathetic chain, so it secretes catecholamines, and their urinary metabolites — VMA and HVA — are what confirm it (same section). The raised blood pressure fits the same mechanism, although hypertension is not specific: it occurs in Wilms tumour too, by a renal route.\n\nUltrasound would still be done, and would still be first: it shows the mass. It cannot say which tumour it is, and this question asks what confirms the diagnosis rather than what to order first.\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Use a midline-crossing abdominal mass in an unwell child to select urinary catecholamines as the confirmatory test for neuroblastoma.",
+  "source": "pediatric .pdf p.146 (Part I, ch.20 Q15)"
+},
+{
+  "id": "pedhd-mal-16",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "malignant-solid",
+  "stem": "Francis, a 2-year-old boy, is taken to his general practitioner by his father who is worried as he has become ‘cross-eyed’. Otherwise he is very well in himself and has no history of vomiting. On examination he appears to be well but has an absent red reflex in his left eye. Which of the following is the investigation most likely to confirm the diagnosis of that patient?",
+  "options": [
+    "Full blood count",
+    "Magnetic resonance imaging (MRI) scan",
+    "Positron emission tomography (PET) scan",
+    "Ultrasound of abdomen",
+    "Urine catecholamines"
+  ],
+  "answer": 1,
+  "explanation": "Magnetic resonance imaging. The discriminating token from the shared table at `pedhd-mal-14` is an absent red reflex in one eye — the lesion is inside the orbit, where no abdominal investigation reaches. A squint plus leukocoria in a 2-year-old is retinoblastoma until proved otherwise, and MRI of the orbits and brain is what defines the tumour, shows optic nerve extension and excludes an associated intracranial (trilateral) tumour (not taken from the course material; neither retinoblastoma nor leukocoria appears anywhere in the material).\n\nWhat the material does supply is the screen that should have caught it earlier: the red reflex is examined at birth and again at the 6–8 week check, as part of the Newborn Infant Physical Examination (`dev-problems` §`dp-8`).\n\nNote the two clauses the stem inserts to close off the alternatives. 'Very well in himself' and 'no history of vomiting' remove raised intracranial pressure, so this is not the brain-tumour stem; and it is the eye, not the abdomen, so ultrasound and catecholamines have nothing to look at. Examination under anaesthesia by an ophthalmologist is the other half of the work-up, and biopsy is avoided because it risks seeding the tumour (not taken from the course material).\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Select MRI as the confirmatory imaging for suspected retinoblastoma presenting with squint and an absent red reflex.",
+  "source": "pediatric .pdf p.146 (Part I, ch.20 Q16; the question straddles the page break from p.146 to p.147)"
+},
+{
+  "id": "pedhd-mal-17",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "malignant-solid",
+  "stem": "Carla is a 4-year-old girl who is seen in the Paediatric Assessment Unit complaining of headaches. Her mother has noticed that her eye movements are not normal. The whole family has recently had a sickness bug but Carla seems to have continued vomiting. Which of the following is the investigation most likely to confirm the diagnosis of that patient?",
+  "options": [
+    "Full blood count",
+    "Magnetic resonance imaging (MRI) scan",
+    "Positron emission tomography (PET) scan",
+    "Ultrasound of abdomen",
+    "Urine catecholamines"
+  ],
+  "answer": 1,
+  "explanation": "Magnetic resonance imaging. The discriminating token from the shared table at `pedhd-mal-14` is headache with abnormal eye movements and vomiting that has outlasted everyone else's gastroenteritis. The material lists headache — frequent, worse in the morning or with a change of position — together with visual, speech or motor deficits as the presentation of a brain tumour (`malignant-solid` §`mal-19`), and names MRI and CT as essential for locating and diagnosing it (`malignant-solid` §`mal-20`). MRI is preferred in children: better posterior fossa resolution, and no ionising radiation.\n\nThe family sickness bug is the whole design of this stem. It supplies an innocent explanation for the vomiting, and the word that dismantles it is 'continued' — everyone else recovered and Carla did not. Persistent vomiting with headache and an eye-movement abnormality is raised intracranial pressure, and a sixth nerve palsy is its classic false localising sign.\n\nOne caution the material makes explicit from the other direction: leukaemic CNS infiltration can produce the same picture — headache, morning vomiting, papilloedema and bilateral sixth nerve palsy (`malignant` §`mal-7`) — but it occurs in under 5% at diagnosis, and nothing else here suggests leukaemia.\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Recognise persistent vomiting with headache and abnormal eye movements as raised intracranial pressure and select MRI to confirm a brain tumour.",
+  "source": "pediatric .pdf p.147 (Part I, ch.20 Q17)"
+},
+{
+  "id": "pedhd-mal-18",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "malignant",
+  "stem": "Solomon is a 12-year-old boy. He has recently lost weight and his ‘glands are up’. His mother reports that the ‘glands’ in his neck have been enlarged for several months now. He has no other medical problems. He has not been having any episodes of fever or night sweats. On examination he has several large, irregular, hard lymph nodes in his neck. They are all greater than 2 cm in size. You order a full blood count and blood film, which show normal results. Which of the following is the investigation most likely to confirm the diagnosis of that patient?",
+  "options": [
+    "Blood film",
+    "Chest X-ray",
+    "Clotting screen",
+    "CT scan",
+    "Excision biopsy"
+  ],
+  "answer": 4,
+  "explanation": "Excision biopsy. Every feature of Solomon's nodes is on the malignant side of the reactive-versus-malignant line: several of them, larger than 2 cm, hard and irregular rather than soft and mobile, present for months rather than weeks, in a supraclavicular-to-cervical distribution, in an adolescent who is losing weight. Lymphoma is diagnosed on nodal architecture — the whole node has to be examined, not a sample of cells — so an excision biopsy is what confirms it, and a fine-needle aspirate is specifically inadequate for the same reason (not taken from the course material; lymphoma is named in the material only in passing, and neither Hodgkin nor non-Hodgkin lymphoma is taught).\n\nBlood film is excluded by the stem itself, which has already reported it as normal. This is worth noticing rather than skipping: lymphoma is a disease of nodes, and a normal blood count and film do not begin to exclude it. Leukaemia is the one that shows in the blood, because the marrow is involved (`malignant` §`mal-9`).\n\nChest X-ray belongs in the work-up and not in the answer. Mediastinal lymphadenopathy is looked for, and bulky mediastinal disease causing superior vena cava obstruction is a real hazard before anaesthesia (`malignant` §`mal-7`). It stages and it warns; it does not give a tissue diagnosis.\n\nClotting screen has no bearing on lymphadenopathy at all.\n\nCT scan defines the extent of disease and is part of staging once the diagnosis exists. It cannot distinguish a reactive node from a malignant one by size and shape alone, which is precisely the distinction at issue.\n\nThe absence of fever and night sweats is a deliberate distractor. B symptoms are prognostic in Hodgkin lymphoma and their absence is favourable; it is never reassuring about whether lymphoma is present (not taken from the course material).\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Select excision biopsy as the confirmatory investigation for persistent pathological lymphadenopathy, and recognise that a normal blood film does not exclude lymphoma.",
+  "source": "pediatric .pdf p.147 (Part I, ch.20 Q18)"
+},
+{
+  "id": "pedhd-mal-19",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "malignant",
+  "stem": "ALL is the commonest form of childhood leukaemia and carries a 5-year survival rate of over 80%. However, prognosis depends on a number of factors. Which of the following is a good prognostic factor in acute lymphoblastic leukaemia?",
+  "options": [
+    "White cell count (WCC) >50 x 10⁹/L at diagnosis",
+    "Age >10 at diagnosis",
+    "Age <1 year at diagnosis",
+    "Non-B cell, non-T cell leukaemia",
+    "Presence of translocations, e.g. Philadelphia chromosome"
+  ],
+  "answer": 3,
+  "explanation": "Non-B cell, non-T cell leukaemia. The other four options are the four classic adverse features, and the risk-stratification table sets all of them out — favourable is age 1–10 years, an initial white count under 50,000/mm³, B-precursor lineage and favourable cytogenetics; adverse is age under 1 or 10 and over, a white count of 50,000/mm³ and over, T-cell or mature B-cell lineage, and BCR–ABL1 t(9;22), the Philadelphia chromosome (`malignant` §`mal-12`, which is itself tagged as supplied — the deck stops at diagnosis and teaches no ALL therapy or prognosis).\n\n'Non-B cell, non-T cell' is the older name for common ALL — the CALLA-positive precursor-B disease that most children have, defined historically by the absence of surface immunoglobulin and of T-cell markers. It is the same population the modern table calls B-precursor, and it is the favourable one. The material's immunophenotype tree gives the two lineages and the split of the B arm into pre-B and mature B (`malignant` §`mal-10`), which is the axis this option is on.\n\nA white count above 50 × 10⁹/L is the presenting feature with the clearest cut-off, and it is adverse. Note the units: the option prints 50 × 10⁹/L, which is the same number as 50,000/mm³.\n\nAge over 10 and age under 1 are both adverse, at opposite ends. Infant ALL is the worse of the two, being associated with KMT2A rearrangement.\n\nTranslocations are not adverse as a class — ETV6–RUNX1, t(12;21), is favourable — but the example the option names, the Philadelphia chromosome, is the archetypal adverse one, and it is the example that decides the option.\n\nOne feature outranks every one of these and is not offered: end-of-induction minimal residual disease, the single strongest predictor of outcome (`malignant` §`mal-12`, supplied and tagged).\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Identify non-B, non-T (common, B-precursor) immunophenotype as the favourable prognostic factor in childhood ALL and recognise the four adverse features.",
+  "source": "pediatric .pdf p.147 (Part I, ch.20 Q19; the question straddles the page break from p.147 to p.148)"
+},
+{
+  "id": "pedhd-mal-20",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "malignant",
+  "stem": "There are a number of syndromes that predispose to specific forms of malignancy and require vigilance and screening to make an early diagnosis. Which of the following conditions is not associated with an increased risk of malignancy?",
+  "options": [
+    "Down syndrome",
+    "Beckwith-Wiedemann syndrome",
+    "Ataxia telangiectasia",
+    "Li Fraumeni syndrome",
+    "Turner syndrome"
+  ],
+  "answer": 4,
+  "explanation": "Turner syndrome. This is a negative stem — four of the five are cancer-predisposition syndromes and the odd one out is the answer. Turner syndrome's important associations are cardiovascular (coarctation, bicuspid aortic valve, aortic dissection), renal, and endocrine (ovarian failure, thyroid disease); it is not a general childhood cancer-predisposition syndrome, and it appears in neither of the material's two predisposition lists (not taken from the course material).\n\nDown syndrome is the one the material quantifies: a 1 in 95 risk of leukaemia under 10 years of age — the earliest risk window of the three chromosomal disorders it tabulates, alongside Bloom syndrome at 1 in 8 under 30 years and Fanconi anaemia at 1 in 12 under 16 years (`malignant` §`mal-3`). The material devotes a whole section to Down syndrome AML, where M7 leukaemia is commoner and yet the outcome is markedly superior — remission around 90%, event-free survival 70–80% — because Down syndrome blasts are unusually sensitive to cytarabine through the GATA1 mutation (`malignant` §`mal-11`).\n\nAtaxia telangiectasia is printed by name in the material's list of genetically determined conditions with increased incidence, alongside congenital agammaglobulinaemia, Poland syndrome, Shwachman–Diamond syndrome, neurofibromatosis, Diamond–Blackfan anaemia, Kostmann disease and Bloom syndrome (`malignant` §`mal-3`). It is a DNA-repair disorder, and lymphoma and leukaemia are its cancers.\n\nBeckwith–Wiedemann syndrome predisposes to embryonal tumours, and the material names it among the Wilms tumour associations along with WAGR and hemihypertrophy, which is why these children are entered into abdominal ultrasound surveillance (`malignant-solid` §`mal-22`, supplied and tagged in full).\n\nLi–Fraumeni syndrome is a germline TP53 disorder giving a broad, early-onset cancer risk — sarcoma, breast, brain, adrenocortical carcinoma and leukaemia. It appears nowhere in the material (not taken from the course material).\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Distinguish Turner syndrome from the syndromes that carry an increased risk of childhood malignancy.",
+  "source": "pediatric .pdf p.148 (Part I, ch.20 Q20)"
+},
+{
+  "id": "pedhd-mal-21",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "malignant-solid",
+  "stem": "Brain tumours are the most common solid tumour of childhood and presentation may be insidious leading to late diagnosis. Which of the following statements regarding brain tumours in childhood is true?",
+  "options": [
+    "They are usually supratentorial",
+    "Signs of raised intracranial pressure are rare",
+    "Astrocytomas carry poor prognosis",
+    "Medulloblastomas are the most common type",
+    "Metastasis is common"
+  ],
+  "answer": 2,
+  "explanation": "The bank keys 'Astrocytomas carry poor prognosis'. Take the four rejected options first, because each is a clean teaching point.\n\n'They are usually supratentorial' is false. In children most brain tumours are infratentorial, which is why the classical presentation is cerebellar — truncal ataxia, unsteady gait — with obstructive hydrocephalus at the fourth ventricle (`malignant-solid` §`mal-19`, where the infratentorial predominance is recorded as supplied rather than taught, and §`mal-20`).\n\n'Signs of raised intracranial pressure are rare' is false and is the opposite of the chapter. Headache worse in the morning or with a change of position, and morning vomiting, are the presenting complaints, precisely because a posterior fossa mass obstructs CSF flow early (`malignant-solid` §`mal-19`).\n\n'Metastasis is common' is false as most students will read it. Brain tumours rarely metastasise outside the central nervous system. Medulloblastoma does seed drop metastases down the CSF pathway, which is why the whole neuraxis is imaged (`malignant-solid` §`mal-20`, supplied and tagged) — but that is spread within the CNS, not systemic metastasis.\n\n⚠️ Recorded, not corrected: the two remaining options are both arguable, and the bank's key sits on the weaker of them. Astrocytoma is a family, not one disease. Low-grade pilocytic astrocytoma — the commonest of them in children, and typically cerebellar — is often curable by surgery alone and carries an excellent prognosis; high-grade astrocytoma and diffuse midline glioma carry a very poor one. As printed, without a grade, the statement is true only of the high-grade end. Meanwhile 'Medulloblastomas are the most common type' is the answer many sources would accept if 'type' is read as commonest malignant tumour, which is how the material states it (`malignant-solid` §`mal-20`, supplied and tagged); it is false if 'type' means commonest overall, where astrocytoma leads. The printed key is left exactly as the bank prints it and the discrepancy is noted here (this analysis is not taken from the course material).\n\nWhat to carry into the exam: in children, infratentorial, raised pressure early, spread within the CNS rather than outside it.\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Know the site, presentation and spread of childhood brain tumours, and recognise that the printed key here rests on an ungraded statement about astrocytoma.",
+  "source": "pediatric .pdf p.148 (Part I, ch.20 Q21)"
+},
+{
+  "id": "pedhd-mal-22",
+  "bank": "house",
+  "module": "pediatrics",
+  "chapter": "malignant-solid",
+  "stem": "A 2-month-old baby is brought to the GP as a family photo shows a discrepancy in her eyes. On examination a red reflex is present in one eye only. She is otherwise healthy. Which of the following is the most likely diagnosis?",
+  "options": [
+    "Retinoblastoma",
+    "Retinopathy of prematurity",
+    "Congenital cataracts",
+    "CMV retinitis",
+    "Glaucoma"
+  ],
+  "answer": 0,
+  "explanation": "Retinoblastoma. A unilateral absent red reflex in an otherwise healthy infant is retinoblastoma until proved otherwise, and the referral is urgent because the tumour threatens the eye and, untreated, life. It is not taught anywhere in the material; it is supplied here (not taken from the course material). What the material does give is how this child was meant to be found: the red reflex is examined at birth and again at the 6–8 week check, both part of the Newborn Infant Physical Examination (`dev-problems` §`dp-8`). She is 2 months old, so this is exactly the window that screening covers — and the family photograph did the job the examination is designed to do, since a camera flash returns the same reflex.\n\nUnilaterality is the strongest single clue. Retinoblastoma is unilateral in about 60% of cases, and unilateral disease is usually sporadic and presents later than bilateral, which is heritable (not taken from the course material).\n\nCongenital cataract is the true differential and cannot be separated from retinoblastoma at the bedside — it is the cause the material actually names as impeding the red reflex (`dev-problems` §`dp-8`). It is commonly bilateral, and dilated fundoscopy or examination under anaesthesia settles it. Choosing it here would not be foolish; retinoblastoma wins because it is unilateral, and because it is the diagnosis that cannot be allowed to wait.\n\nRetinopathy of prematurity requires prematurity and supplemental oxygen, and the stem gives neither. Advanced disease causes leukocoria, but the screening programme is confined to preterm infants.\n\nCMV retinitis in an infant means congenital CMV, which does not usually arrive alone — hearing loss, microcephaly, hepatosplenomegaly, thrombocytopenia. She is described as otherwise healthy.\n\nCongenital glaucoma is buphthalmos: a large, hazy, cloudy cornea with watering and photophobia, and an uncomfortable baby. The cornea, not the reflex, is what looks wrong.\nWritten for this bank — pediatric .pdf prints no explanation here.",
+  "objective": "Recognise a unilateral absent red reflex in an infant as retinoblastoma and separate it from cataract, retinopathy of prematurity, CMV retinitis and glaucoma.",
+  "source": "pediatric .pdf p.148 (Part I, ch.20 Q22)"
 }
 ];

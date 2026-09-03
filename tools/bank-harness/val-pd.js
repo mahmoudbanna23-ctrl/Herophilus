@@ -32,6 +32,8 @@ const CH = {
         draft: 'house-ch18-accidents.draft-' },
   19: { prefix: 'pedhd-liv-',    file: 'house-ch19-liver.array.js',            svar: 'PEDHD_LIV_STAGED',
         draft: 'house-ch19-liver.draft-' },
+  20: { prefix: 'pedhd-mal-',    file: 'house-ch20-malignant.array.js',        svar: 'PEDHD_MAL_STAGED',
+        draft: 'house-ch20-malignant.draft-' },
 };
 
 // imgAlt must give MODALITY AND VIEW ONLY. Naming the finding answers the question --

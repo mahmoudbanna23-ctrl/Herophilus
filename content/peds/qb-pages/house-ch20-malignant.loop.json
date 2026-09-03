@@ -1,0 +1,265 @@
+{
+  "chapter": 20,
+  "slug": "malignant",
+  "file": "house-ch20-malignant.array.js",
+  "created": "2026-09-03T18:36:22",
+  "steps": {
+    "locate": {
+      "at": "2026-09-03T18:36:26",
+      "pages": {
+        "141": "R-071",
+        "142": "L-072",
+        "143": "R-072",
+        "144": "L-073",
+        "145": "R-073",
+        "146": "L-074",
+        "147": "R-074",
+        "148": "L-075",
+        "149": "R-075"
+      }
+    },
+    "render": {
+      "at": "2026-09-03T18:36:57",
+      "dir": "C:\\Users\\Alfa388\\AppData\\Local\\Temp\\herophilus-loop\\house-ch20",
+      "pages": [
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149
+      ]
+    },
+    "stage": {
+      "batches": [
+        {
+          "pages": [
+            141,
+            144
+          ],
+          "context": 145,
+          "at": "2026-09-03T18:38:59",
+          "answer": "C:\\Users\\Alfa388\\AppData\\Local\\Temp\\herophilus-loop\\house-ch20\\stage-p141-144.answer.txt",
+          "events": "C:\\Users\\Alfa388\\AppData\\Local\\Temp\\herophilus-loop\\house-ch20\\stage-p141-144.events.jsonl",
+          "usage": {
+            "input_tokens": 32159,
+            "cached_input_tokens": 11008,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 4338,
+            "reasoning_output_tokens": 2720
+          },
+          "entries": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "keyLetterConversions": [],
+          "pagesReported": [
+            {
+              "page": 141,
+              "folio_read": "141",
+              "banner": "Malignant disease",
+              "question_numbers": [
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "page": 142,
+              "folio_read": "142",
+              "banner": null,
+              "question_numbers": [
+                4,
+                5
+              ]
+            },
+            {
+              "page": 143,
+              "folio_read": "143",
+              "banner": null,
+              "question_numbers": [
+                6,
+                7,
+                8
+              ]
+            },
+            {
+              "page": 144,
+              "folio_read": "144",
+              "banner": null,
+              "question_numbers": [
+                9,
+                10
+              ]
+            }
+          ],
+          "nextPageOpensWith": "Pediatric medicine end-of-round MCQs - 2025.",
+          "flags": []
+        },
+        {
+          "pages": [
+            145,
+            148
+          ],
+          "context": 149,
+          "at": "2026-09-03T18:40:36",
+          "answer": "C:\\Users\\Alfa388\\AppData\\Local\\Temp\\herophilus-loop\\house-ch20\\stage-p145-148.answer.txt",
+          "events": "C:\\Users\\Alfa388\\AppData\\Local\\Temp\\herophilus-loop\\house-ch20\\stage-p145-148.events.jsonl",
+          "usage": {
+            "input_tokens": 31966,
+            "cached_input_tokens": 11008,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 3826,
+            "reasoning_output_tokens": 1980
+          },
+          "entries": [
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+          ],
+          "keyLetterConversions": [],
+          "pagesReported": [
+            {
+              "page": 145,
+              "folio_read": "145",
+              "banner": "Pediatric medicine end-of-round MCQs - 2025.",
+              "question_numbers": [
+                11,
+                12,
+                13
+              ]
+            },
+            {
+              "page": 146,
+              "folio_read": "146",
+              "banner": "Pediatric medicine end-of-round MCQs - 2025.",
+              "question_numbers": [
+                14,
+                15,
+                16
+              ]
+            },
+            {
+              "page": 147,
+              "folio_read": "147",
+              "banner": "Pediatric medicine end-of-round MCQs - 2025.",
+              "question_numbers": [
+                17,
+                18,
+                19
+              ]
+            },
+            {
+              "page": 148,
+              "folio_read": "148",
+              "banner": "Pediatric medicine end-of-round MCQs - 2025.",
+              "question_numbers": [
+                20,
+                21,
+                22
+              ]
+            }
+          ],
+          "nextPageOpensWith": "Pediatric surgery end-of-round MCQs",
+          "flags": []
+        }
+      ]
+    },
+    "gate": {
+      "at": "2026-09-03T18:40:40",
+      "ok": true,
+      "hash": "3d1dc82d8f73",
+      "count": 22,
+      "fails": [],
+      "warns": [],
+      "nullKeys": []
+    },
+    "crops": {
+      "at": "2026-09-03T22:30:00",
+      "by": "Claude Opus 5",
+      "method": "Same midtone/colour density profiling used for ch.19, extended once. The CT (p.142) and the clinical photograph (p.143) are halftones and fall out of a plain darkness/midtone row profile. The p.144 figure does NOT -- it is line art on a very pale yellow ground, (255,255,217) against the page's (253,253,253), so a midtone test cannot see it and the first yellow test missed it too by demanding B < 185. Detect it as R > 228 AND G > 220 AND (R - B) > 22, which separates the pale wash from white without touching the ink. Recorded because the next line-art-in-a-tinted-box figure will fail the same way.",
+      "cut": [
+        {
+          "file": "q-pd-hd-142.jpg",
+          "for": "pedhd-mal-5",
+          "page": 142,
+          "box": [
+            928,
+            922,
+            704,
+            644
+          ],
+          "detected": "darkness row profile, x 936..1624, y 930..1556; scanned out to x 1700 and found nothing beyond 1624, so the tight right margin is a real edge and not a clip"
+        },
+        {
+          "file": "q-pd-hd-143.jpg",
+          "for": "pedhd-mal-6",
+          "page": 143,
+          "box": [
+            984,
+            240,
+            576,
+            400
+          ],
+          "detected": "midtone row profile, solid blob x 996..1540, y 248..~490"
+        },
+        {
+          "file": "q-pd-hd-144.jpg",
+          "for": "pedhd-mal-8",
+          "page": 144,
+          "box": [
+            550,
+            218,
+            800,
+            582
+          ],
+          "detected": "pale-yellow ground, x 556..1340, y 224..792, no window edge touched"
+        }
+      ],
+      "eyeChecked": "All three looked at inside a lean-drafter subagent, never in the main conversation. All three complete on all four borders, no caption, question number, option letter, page number, running head, neighbouring figure or scanner edge carried in. The rounded pale-blue outline in each is the book's own figure box, the same one ch.19's crops carry. q-pd-hd-142 is an axial head CT with enlarged-looking ventricular spaces and a large well-circumscribed heterogeneous hyperdense mass in the lower central-right of the slice. q-pd-hd-143 is a colour photograph of a child's chest/shoulder carrying many small red-to-purple macules plus one much larger dark violaceous lesion with a paler rim. q-pd-hd-144 is line art: verbatim text is 'Looking left' with a rightward arrow over the top pair and 'Looking right' with a leftward arrow over the bottom pair, and the four pupils sit inner/inner over inner/outer.",
+      "whyThisOneIsCroppedAndNotTranscribed": "The CH-table note said p.144's labelled diagram might be transcribable as markdown in the stem. It is not. The only printed words in it are 'Looking left' and 'Looking right'; everything the question turns on is the drawn pupil positions, so a faithful transcription would have to state which eye fails to move -- which is the answer. Transcribing it would either give the question away or omit its content. It is cropped."
+    },
+    "check": {
+      "at": "2026-09-03T18:46:47",
+      "ack": "Claude Opus 5 2026-09-03",
+      "hash": "3d1dc82d8f73",
+      "count": 22
+    },
+    "draft": {
+      "A": {
+        "at": "2026-09-03T18:59:41",
+        "file": "content\\peds\\qb-pages\\house-ch20-malignant.draft-A.js",
+        "entries": 12,
+        "valExit": 1
+      }
+    },
+    "close": {
+      "at": "2026-09-03T21:07:25",
+      "halves": [
+        "A",
+        "B"
+      ],
+      "wrote": true
+    }
+  }
+}

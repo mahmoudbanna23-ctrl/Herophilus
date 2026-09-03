@@ -38,6 +38,8 @@ const CH = {
         draft: 'house-ch18-accidents.draft-',        dvar: 'PEDHD_ACC_DRAFT_' },
   19: { prefix: 'pedhd-liv-',    staging: 'house-ch19-liver.array.js',           svar: 'PEDHD_LIV_STAGED',
         draft: 'house-ch19-liver.draft-',            dvar: 'PEDHD_LIV_DRAFT_' },
+  20: { prefix: 'pedhd-mal-',    staging: 'house-ch20-malignant.array.js',       svar: 'PEDHD_MAL_STAGED',
+        draft: 'house-ch20-malignant.draft-',        dvar: 'PEDHD_MAL_DRAFT_' },
 };
 
 const chNum = process.argv[2];

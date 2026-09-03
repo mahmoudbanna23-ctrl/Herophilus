@@ -126,6 +126,43 @@ const CH = {
         // Nine questions, one part: the same size as ch.13's halves, which drafted in one pass.
         split: [9],
         lectures: ['43)Infantile cholestasis_.txt'] },
+  20: { slug: 'malignant', title: 'Malignant disease', pages: [141, 148], expected: 22,
+        file: 'house-ch20-malignant.array.js', svar: 'PEDHD_MAL_STAGED',
+        draft: 'house-ch20-malignant.draft-', dvar: 'PEDHD_MAL_DRAFT_', prefix: 'pedhd-mal-',
+        // ⚠️ THE CONTENTS PAGE IS WRONG HERE BY 16 PAGES. It prints Malignant disease as p.125,
+        // which sits inside another chapter. It is book p.141, proved by render, not inferred:
+        // PDF sheet 71's right half carries the full-width banner over book p.141 with the
+        // numbering restarting at 1. Registered from the CORRECTED range; `locate` confirms.
+        // The last question is Q22 on book p.148. PDF sheet 75's right half opens "Pediatric
+        // surgery end-of-round MCQs", which the user ruled OUT OF SCOPE -- p.148 is the stop line
+        // for the whole medicine part, not just this chapter. Do not read past it.
+        chapterIds: ['malignant', 'malignant-solid', 'haematology', 'haem-bleeding'],
+        // Four chapters offered, and unlike ch.19's pair these are NOT one continuous run.
+        // `malignant` mal-1..mal-15 is leukaemia end to end; `malignant-solid` mal-16..mal-22 is
+        // rhabdomyoma, tuberous sclerosis, brain tumours and the abdominal mass. The two
+        // haematology chapters are offered because a leukaemia question presenting as pallor,
+        // bruising or marrow failure is graded on material that lives there, not under `malignant`.
+        // ⚠️ TWO SECTIONS ARE ALREADY SUPPLIED-AND-TAGGED IN FULL AND HAVE NO DECK BEHIND THEM:
+        // mal-12 (treatment of ALL and its risk groups) and mal-22 (Wilms against neuroblastoma).
+        // mal-13's oncological emergencies are part-sourced -- L48 pp.26, 28 cover SVC syndrome,
+        // leukostasis and chloroma, the rest is supplied. A drafter must not re-tag what the
+        // theory has already tagged, and must not report these as gaps in the material: they are
+        // recorded gaps that were already filled under CLAUDE.md §4.
+        // ⚠️ p.144 prints a LABELLED DIAGRAM, not a photograph -- a "Looking left / Looking right"
+        // eye-movement figure in a yellow box beside its question. Transcribe it as markdown in
+        // the stem if the labels reproduce faithfully; crop only if they do not.
+        // 22 questions in two parts of 11 -- ch.13 drafted halves of 13 and 14 in one pass each,
+        // so 11 is inside the size that is known to work.
+        // ⚠️ NOT [11, 11]. That was the first registration and it was wrong: it cuts the shared
+        // option menu n:9-n:12 down the middle, leaving n:12 in half B pointing at an anchor
+        // written in half A. A shared menu must be drafted whole, by one drafter, in one pass --
+        // the comparative table is written once at the lowest-numbered member and the siblings
+        // give only their own token, and that cannot be co-ordinated across two passes.
+        // [12, 10] puts n:9-n:12 wholly in A and n:14-n:17 wholly in B. Caught after draft A had
+        // already run at 11; the 11-entry draft was discarded and A re-drafted at 12.
+        split: [12, 10],
+        lectures: ['48)Leukemias.txt', '49)Rhabdomyoma and Brain Tumors Overview.txt',
+                   '44)BM FAILURE.txt', '47)Hemorrhagic disorders .txt'] },
 };
 
 // ---------------------------------------------------------------- args / state
