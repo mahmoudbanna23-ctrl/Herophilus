@@ -1,0 +1,176 @@
+{
+  "chapter": 14,
+  "slug": "endocrine",
+  "file": "house-ch14-endocrine.array.js",
+  "created": "2026-09-03T14:15:00",
+  "steps": {
+    "locate": {
+      "at": "2026-09-03T14:15:00",
+      "pages": {
+        "111": "R-056",
+        "112": "L-057",
+        "113": "R-057",
+        "114": "L-058",
+        "115": "R-058",
+        "116": "L-059",
+        "117": "R-059",
+        "118": "L-060"
+      }
+    },
+    "render": {
+      "at": "2026-09-03T14:15:00",
+      "dir": "C:\\Users\\Alfa388\\AppData\\Local\\Temp\\claude\\D--claude-os\\8e8e6807-098e-4209-855c-e138c7d477c5\\scratchpad\\house-ch14",
+      "pages": [
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118
+      ]
+    },
+    "stage": {
+      "batches": [
+        {
+          "pages": [
+            111,
+            114
+          ],
+          "context": 115,
+          "at": "2026-09-03T14:16:59",
+          "answer": "C:\\Users\\Alfa388\\AppData\\Local\\Temp\\claude\\D--claude-os\\8e8e6807-098e-4209-855c-e138c7d477c5\\scratchpad\\house-ch14\\stage-p111-114.answer.txt",
+          "events": "C:\\Users\\Alfa388\\AppData\\Local\\Temp\\claude\\D--claude-os\\8e8e6807-098e-4209-855c-e138c7d477c5\\scratchpad\\house-ch14\\stage-p111-114.events.jsonl",
+          "usage": {
+            "input_tokens": 71359,
+            "cached_input_tokens": 43008,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 3928,
+            "reasoning_output_tokens": 2284
+          },
+          "entries": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "keyLetterConversions": [],
+          "pagesReported": [
+            {
+              "page": 111,
+              "folio_read": "111",
+              "banner": "Diabetes & endocrinology",
+              "question_numbers": [
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "page": 112,
+              "folio_read": "112",
+              "banner": null,
+              "question_numbers": []
+            },
+            {
+              "page": 113,
+              "folio_read": "113",
+              "banner": null,
+              "question_numbers": [
+                4,
+                5,
+                6
+              ]
+            },
+            {
+              "page": 114,
+              "folio_read": "114",
+              "banner": null,
+              "question_numbers": [
+                7,
+                8
+              ]
+            }
+          ],
+          "nextPageOpensWith": "Pediatric medicine end-of-round MCQs - 2025.",
+          "flags": []
+        },
+        {
+          "pages": [
+            115,
+            117
+          ],
+          "context": 118,
+          "at": "2026-09-03T14:18:16",
+          "answer": "C:\\Users\\Alfa388\\AppData\\Local\\Temp\\claude\\D--claude-os\\8e8e6807-098e-4209-855c-e138c7d477c5\\scratchpad\\house-ch14\\stage-p115-117.answer.txt",
+          "events": "C:\\Users\\Alfa388\\AppData\\Local\\Temp\\claude\\D--claude-os\\8e8e6807-098e-4209-855c-e138c7d477c5\\scratchpad\\house-ch14\\stage-p115-117.events.jsonl",
+          "usage": {
+            "input_tokens": 29264,
+            "cached_input_tokens": 11008,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 3041,
+            "reasoning_output_tokens": 1611
+          },
+          "entries": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "keyLetterConversions": [],
+          "pagesReported": [
+            {
+              "page": 115,
+              "folio_read": "115",
+              "banner": null,
+              "question_numbers": [
+                9,
+                10,
+                11
+              ]
+            },
+            {
+              "page": 116,
+              "folio_read": "116",
+              "banner": null,
+              "question_numbers": [
+                12,
+                13,
+                14
+              ]
+            },
+            {
+              "page": 117,
+              "folio_read": "117",
+              "banner": null,
+              "question_numbers": [
+                15,
+                16
+              ]
+            }
+          ],
+          "nextPageOpensWith": "Allergy",
+          "flags": []
+        }
+      ]
+    },
+    "gate": {
+      "at": "2026-09-03T14:18:17",
+      "ok": true,
+      "hash": "1978ec04d1ba",
+      "count": 16,
+      "fails": [],
+      "warns": [],
+      "nullKeys": []
+    }
+  }
+}

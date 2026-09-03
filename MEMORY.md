@@ -24,7 +24,7 @@ Where this file and the archive disagree, this file wins. ⚠️ **Before openin
 ## Resume here — state at end of 2026-09-03
 **BOTH CHATS RAN the night of 2026-09-02/03; both prompts were REWRITTEN IN PLACE 2026-09-03 late
 against measured disk state.** ⚠️ **RELAUNCH ONLY FROM `progress\resume-2026-09-03b-chatB-peds.md`
-(v3) and `progress\resume-2026-09-03-late-peds-endpoint.md` (v5)** — every earlier prompt is stale and pays
+(v3), `progress\resume-2026-09-03-late-peds-endpoint.md` (v5) and `progress\resume-2026-09-03c-workflow-and-staging.md` (House via Codex + `tools\chapter-loop.js`)** — every earlier prompt is stale and pays
 ~50k more per read. ⚠️ **A DIRTY TREE IS NORMAL while two chats run** — **never stage another
 chat's file; commit explicit paths only, and wait on `index.lock`, never delete it.**
 ⚠️ **The watch runs FROM THE MAIN `D:\claude os` CHAT, not its own** (user, 2026-09-03) — note atop
@@ -34,9 +34,9 @@ and `resume-peds.md` (~37k → ~13k) with **`RESUME-READ-FROM-HERE-2`**, nothing
 ✅ ENT CLOSED (`ledger.md` §15–§16). ✅ **OPHTHO CLOSED 2026-09-02** — **1,598**, 0 holes, CLEAN, boots;
 all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`.
 
-- ⏳ **PEDS HOUSE — bank MEASURED at 393; `questions.peds.js` holds 243, ch.1–11 spliced; 150 remain
-  (ch.12–20).** **ch.12 is ALREADY STAGED, untracked** (`content\peds\qb-pages\house-ch12-neurological.array.js`,
-  47.6 KB at 03:44, watch-measured) — resume at drafting. Peds OSCE **14 Sep**, nearest exam.
+- ⏳ **PEDS HOUSE — bank MEASURED at 393; `questions.peds.js` holds 296 (2026-09-03 17:00, array loaded, 0 holes,
+  296 bare-key + 0 quoted-key), ch.1–13 spliced and committed (`ef1f9d5`); 97 remain (ch.14–20 = 16·6·14·26·4·9·22,
+  `resume-peds.md` map).** ch.14 is the first Codex-staged chapter — `node tools\chapter-loop.js 14 status`. Peds OSCE **14 Sep**.
 - ⏳ **PEDS ENDPOINT part 1 — LAUNCHED 2026-09-02, RUNNING; part 2 deferred by the user.**
   **`app\data\questions.peds.ep.js` holds 216** (s1 89 + s2 76 = 165, folded 165 -> 150 -> 148;
   **s3 Gastro `aa6881d` 148 -> 215 -> 213 with a fold; s4 Accidents `a10bc69` 213 -> 216, no fold**).
