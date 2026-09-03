@@ -155,6 +155,32 @@ straddle mid-pass and caught by direct re-reading of p.82.
 - ⚠️ **`Edit`-APPEND one entry at a time.** Never hold the chapter in memory for one big `Write` at
   the end — agents die on usage limits and an incrementally written file survives. If you die
   mid-chapter, whoever resumes starts from your last complete entry.
+
+### ⚠️⚠️ 10a. WORK PAGE BY PAGE. DO NOT BATCH THE PHASES. (added 2026-09-03, measured twice)
+
+**Two consecutive ch.12 staging agents died leaving a ZERO-BYTE result** — the second after
+rendering the whole range and generating all 30 band crops, dying at "now let's review them in
+batches". Both had the append-one-entry-at-a-time rule above and both obeyed it in the letter:
+they never reached an entry to append. **The rule was not enough, because nothing forbade doing
+all the rendering, then all the cropping, then all the reading, and only then the first write.**
+
+**The required order, and it is not negotiable:**
+
+1. **Write the file with its header block and an empty array declaration BEFORE you render
+   anything.** The file must exist on disk within your first few tool calls. A later pass can
+   extend the header; an absent file is unrecoverable.
+2. Then loop, **one book page at a time**: render that page's half → band-crop that page's
+   numerals and key letters → read them → **append that page's entries** → `node --check` →
+   next page.
+3. **Never render page N+1 before the entries of page N are on disk.**
+
+**Rendering ahead is the specific thing that killed both agents.** A render pass you have not
+yet written up is worth nothing to whoever resumes; a page you have written up is worth its full
+cost even if you die on the next call. Cheap re-renders are fine — the render is ~seconds, the
+reading is what costs.
+
+If you are resuming a dead agent's file, your first act is to find its last complete entry and
+continue from the page after it. Do not restart the range.
 - ⚠️ **The Bash tool's quoted heredoc collapses `\\` to `\`**, and a backtick inside a
   double-quoted `node -e` is command substitution. **Use `Write`/`Edit` for content; Bash for
   reads, searches and validation.** Then grep the result.

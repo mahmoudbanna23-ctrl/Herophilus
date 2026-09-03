@@ -2855,3 +2855,84 @@ about before.
 - Chapter assignment differs across printings (`gi-abdopain` vs `gastroenterology` for the first
   pair) — pick one deliberately.
 - **Nothing is folded mid-stream.** The two files stay separate while both chats write.
+
+---
+
+## 2026-09-03 (late) — ch.12 "Neurological disorders" STAGED AND VERIFIED. Supersedes the
+## "staging pass LAUNCHED" entry above.
+
+**`content\peds\qb-pages\house-ch12-neurological.array.js` is on disk, 312 lines,
+`var PEDHD_NEURO_STAGED`, 26 entries.** Verified by the hub from disk, not from the agent's report:
+
+| check | result |
+|---|---|
+| `node --check` | passes |
+| length / sparse holes | **26 / 0** — index-walked (`for i… if(!(i in A))`), not `Array.filter` |
+| `n` sequence | contiguous 1-26, no skip, no repeat |
+| pages covered | 90-100, all eleven present |
+| `opts.length` | 5 on every entry, none short |
+| keys | `EDABBAABEDCDAACDCABDABDBEC` = A x7, B x6, C x4, D x6, E x3, sums to 26 |
+| boiler bit string | `1 0 1 1 1 1 1 1 1 0` then zeros to n:26 |
+| empty stems / backtick parity | 0 / clean |
+
+Entry fields are `n, p, boiler, stem, opts, key, note` — **`p` not `page`, `key` not `answer`.**
+A hub probe written against `page`/`answer` returns undefined and prints an empty page list; that
+happened once here and was caught. Write probes against the real field names.
+
+- **Boundary proof, p.101 (sheet 51 RIGHT):** full-width "Respiratory disorders" banner, numbering
+  restarts at 1 ("Liam, a 7-year-old boy…", sore throat/tonsillitis, key C). ch.12 = pp.90-100, ends
+  Q26 on p.100. Geometry held on every folio: sheet N = book pages 2N-2 | 2N-1.
+- **The count hint (26) held exactly** — walked independently before it was believed. Second chapter
+  running where the hint proved right, which is worth recording because it is not the usual case.
+- **Boiler measured per question, not assumed.** Q2 breaks the front run on its own; Q10-26 carry
+  none. A block assumption would have mis-flagged Q2, same trap as ch.11.
+- **Every key is a bare letter.** The letter-vs-name cross-check is unavailable for the whole of
+  ch.12 and **must not be reported as having passed.**
+- **Figures: four, measured, all eleven pages examined whole** — n:4 p.91 (photo), n:7 p.92 (photo),
+  n:8 p.93 (EEG), n:9 p.94 (EEG). Zero elsewhere is a measured zero.
+- **Straddles: five** — n:3 (90 to 91), n:5 (91 to 92), n:7 (92 to 93, key-only tail), n:12 (95 to
+  96), n:24 (99 to 100).
+- ⚠️ **SHARED OPTION MENUS — these bind the drafting split:** n:8/9/14/15/16 (epilepsy syndromes,
+  n:9 reordered) - n:10/11/13 (syncope/absence) - n:12 overlaps that trio on A-B only, not a full
+  member - n:17/18/19/20 (clinical signs, the longest run). **Recorded as pairings, none folded.**
+  **No half-boundary may cut through any of these runs.**
+- **Three inherited band crops from the dead agent** (n:4 stem, n:5 stem, n:8 calibration) were
+  mislabeled or cropped too tight and were **re-cropped fresh before being trusted.** A dead agent's
+  leftover crops are not automatically good.
+- **Show-through on p.100**, behind the n:24 tail and n:25/26: an asthma vignette, not transcribed.
+  Its geometry-predicted source is **p.103, which is out of scope and unrendered** — so this is a
+  prediction, **not a confirmed match** (unlike ch.11's two fully matched ghosts). p.101 was
+  rendered and checked and does not contain it.
+
+### ⚠️⚠️ TWO AGENTS DIED ON THIS CHAPTER LEAVING ZERO BYTES. THE FIX IS BRIEF SECTION 10a.
+
+The first wrote nothing. The second rendered the whole range, generated **all 30 band crops**, then
+died at "now let's review them in batches" — **entire render pass lost.** Both had the
+append-one-entry-at-a-time rule and both obeyed it in the letter: they never reached an entry to
+append. **The rule was not enough, because nothing forbade doing all the rendering, then all the
+cropping, then all the reading, and only then the first write.**
+
+**`tools\bank-harness\pd-staging-brief.md` section 10a (added this session) is the fix:** write the
+file with its header and an empty array **before rendering anything**, then loop **one book page at
+a time** (render, crop, read, append, `node --check`, next), and **never render page N+1 before page
+N's entries are on disk.**
+
+**It worked on the first try.** The third agent's file existed on disk **one minute after launch** —
+1400 bytes of header — which neither predecessor ever managed. Cheap re-renders are the right trade:
+the render is seconds, the reading is what costs.
+
+### The first real staging measurement this project has
+
+**128 tool uses, 38.6 minutes, 86,395 agent tokens**, `lean-drafter`, 11 book pages / 26 questions.
+Staging had never been timed or metered before. The prior hub estimate of ~30 min / ~100k was
+**slower but cheaper than guessed**. Extrapolated across the eight remaining chapters, staging is
+**~690k tokens**. The one drafting anchor stays 62 tool uses / ~15.5 min / ~53k
+(`resume-peds.md` line ~2297).
+
+### User ruling 2026-09-03 — the 24-agent fan-out is DROPPED
+
+Costed at the user's request: 9 staging + 15 drafting = **24 agents**, theoretical floor
+**1.5-2 h**, realistic **3.5-4 h** at 3-4 concurrent, **~1.9-2.2M tokens**. User: *"fine let's skip
+it, it was a crazy idea anyway."* **One agent at a time stands.** Recorded because the costing is
+reusable, not because the plan is live. Note the fan-out only became arguable at all *because* 10a
+caps a death at one lost page; before 10a it was reckless.
