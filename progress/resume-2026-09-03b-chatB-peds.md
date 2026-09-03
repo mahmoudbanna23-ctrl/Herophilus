@@ -53,11 +53,11 @@ the validator exits 0) → `node tools\boot-check\boot-check.js`.
 | | |
 |---|---|
 | `Q_PEDS` (House) | **243**, holes 0 — ch.1-11 spliced; ch.12 staged, NOT yet spliced |
-| `Q_PEDS_EP` | **148** (was 150; the endpoint chat folded 2) — **not yours** |
+| `Q_PEDS_EP` | **216** at 04:05 (sections 3 and 4 spliced) — **not yours, and MOVING FAST** |
 | `Q_NEURO` | **268**, holes 0 | 
 | `Q_ENT` / `Q_OPHTHO` | 2240 / 1598 — closed, not yours |
 | validate-all | `ALL HARD CHECKS PASSED (5 files)` |
-| git | `main` == `HEAD` == `f4444d6`; **`origin/main` at `8e7b83d`, 10 commits unpushed** |
+| git | ch.12 committed as `662cc5c`. **The 10 unpushed commits were PUSHED by another chat ~04:00** |
 
 **House remaining after ch.12 splices: 124 questions, ch.13-20.** Chapter map with page ranges and
 counts: `progress\resume-peds.md` line ~659. Bank ends book p.148; paediatric surgery beyond it is
@@ -96,9 +96,13 @@ should be.
 - **`MEMORY.md` and `progress\ledger.md` not updated** — same reason. A consolidation pass owes:
   the 2026-09-03 merge-and-fold ruling, the collision log, ch.11's close, ch.12's staging, the
   `validate-all` fix, 10a, and the two staging/drafting measurements.
-- ⚠️ **`git push` is BLOCKED by the permission layer in this environment.** Tried twice, denied
-  identically, the command never executed. **10 commits sit unpushed.** The user must run
-  `git push origin main` themselves or grant the permission.
+- ⚠️ **`git push` is BLOCKED by the permission layer for THIS chat.** Tried twice, denied
+  identically, the command never executed. The 10 commits were pushed by another chat at ~04:00,
+  so the backlog is clear — but **this chat cannot push.** Ask the user, or let another chat do it.
+- ⚠️ **A SECOND Chat B prompt exists: `progress\resume-2026-09-03-late-chatB-peds.md`**, written
+  ~04:15 by the main `D:\claude os` chat, untracked. **It and this file agree on every material
+  point** (shared menus, field names, figures, straddles, bare keys, show-through). **Delete one**
+  — two prompts for one chat is how a third session ends up following the staler of the two.
 - **No `file://` boot check** — nothing spliced this block, so nothing to check. Run it after ch.12.
 
 ---
