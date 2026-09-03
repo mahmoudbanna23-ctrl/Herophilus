@@ -2876,5 +2876,884 @@ var Q_PEDS_EP = [
   explanation:'**The endpoint file prints this explanation:**\n\n> With the first breaths, pulmonary vascular resistance falls, left atrial pressure rises, and the foramen ovale closes functionally.\n\n---\n\n`33)Congenital acyanotic heart disease_.txt` describes exactly this transition: with the first breaths, resistance to pulmonary blood flow falls and the volume of blood flowing through the lungs rises roughly six-fold, which raises left atrial pressure; at the same time the volume returning to the right atrium falls once the placenta is excluded from the circulation, and that reversed pressure gradient closes the flap valve of the foramen ovale. This is a **functional** closure within minutes to hours of birth -- the same slide notes that anatomical sealing takes longer -- which is why this is the accurate description of the mechanism.\n\nThe remaining options each misstate fetal circulation, and the same lecture gives the corrections directly. Fetal circulation runs with a high pulmonary vascular resistance and a low systemic resistance, so blood is shunted **right to left**: only a small fraction of right-ventricular output actually perfuses the fetal lungs, with the great majority diverted through the ductus arteriosus into the systemic circulation, so "100% of the cardiac output goes to the lungs" is the reverse of the true picture. The ductus arteriosus itself connects the pulmonary artery to the aorta, and normal fetal shunt flow runs from the pulmonary artery **to** the aorta, not the other way; the option printed here reverses that to aorta-to-pulmonary-artery, which describes a **postnatal**, pathological patent ductus arteriosus shunt, not the normal fetal direction. And the ductus arteriosus carries the least-oxygenated blood in the fetal circulation, bypassing the lungs into the descending aorta and on to the placenta and lower body -- it does not preferentially supply the brain; the best-oxygenated blood reaches the brain via the ductus venosus and the foramen ovale, the shunt this question tests correctly in its key option.\n\n**Clinical bottom line.** In fetal life the shunt direction is right to left through the ductus arteriosus, the best-oxygenated blood is routed to the brain through the foramen ovale and ductus venosus, and it is the rise in pulmonary blood flow with the first breath that flips the foramen ovale shut.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
   objective:'Fetal circulation shunts right to left through the ductus arteriosus; the foramen ovale closes functionally once pulmonary blood flow rises with the first breaths.',
   source:'Pediatrics endpoint part1.pdf p.772'
+},
+
+{
+  id: 'pedep-neo-1',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  image: 'q-pd-ep-797',
+  imgAlt: 'Grayscale frontal (AP) radiograph of a newborn infant covering the chest and upper abdomen, portrait framing.',
+  stem: "Natasha, a female infant, is delivered by caesarean section at 32 weeks' gestation because of maternal pre-eclampsia. Her birth weight is 1.9 kg. No resuscitation is required. At 2 hours of age, she develops respiratory distress, with a respiratory rate of 70 breaths/min, grunting, and indrawing of her rib cage. Respiratory support with CPAP (continuous positive airway pressure) and 45% oxygen is required. A chest X-ray is taken at 4 hours of age. What is the most likely reason that this baby needs oxygen therapy and respiratory support?",
+  options: ['Aspiration of meconium has resulted in lung collapse', 'Blood is still flowing from the pulmonary artery to the aorta as in the fetal circulation', 'There is ventilation-perfusion mismatch from surfactant deficiency', 'The chest wall and ribs are too compliant'],
+  answer: 2,
+  explanation: '**The endpoint file prints this explanation:**\n\n> This preterm infant at 32 weeks is at high risk of respiratory distress syndrome due to surfactant deficiency. Surfactant reduces alveolar surface tension, and its absence leads to alveolar collapse and ventilation-perfusion mismatch.\n\n---\n\nType II pneumocytes only begin making surfactant from 24-28 weeks and the supply is not mature until 35 weeks, so a 32-week infant is caught in the gap. `9) Respiratory distress in newborn.txt` gives the mechanism directly: without surfactant\'s surface-tension-lowering action, alveoli collapse on expiration (atelectasis), producing poor pulmonary compliance and severe hypoxia — exactly the ventilation-perfusion mismatch the box names, and it explains why onset is within hours of birth with a chest film showing the classic fine reticulogranular, ground-glass pattern.\n\n**Why each wrong option is wrong.** *Meconium aspiration* needs meconium-stained liquor in the history, which this vignette does not give, and its film shows patchy asymmetric infiltrates and hyperinflation, not the diffuse ground-glass picture of RDS. *Blood still flowing pulmonary artery to aorta* describes persisting fetal-pattern ductal shunting (as in persistent pulmonary hypertension of the newborn) — a separate diagnosis with its own trigger (usually asphyxia or meconium), not the routine course of prematurity. *The chest wall being too compliant* is true of every preterm infant and worsens the work of breathing by letting the ribs cave in during inspiration, but it is a mechanical contributor, not the reason gas exchange itself fails — the primary defect is alveolar, not thoracic.\n\nThe radiograph shows the low lung volumes and diffuse granular opacification typical of surfactant-deficient lungs.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Attribute early-onset respiratory distress in a preterm infant to surfactant-deficiency RDS rather than its mechanical or vascular mimics.',
+  source: 'Pediatrics endpoint part1.pdf p.797 (the explanation box is printed alone on p.798)'
+},
+
+{
+  id: 'pedep-neo-2',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: "Robert is a full-term male infant, born 10 hours ago. His mother is blood group O Rhesus positive, and her membranes ruptured 2 days before delivery. He is breastfeeding well, but the midwife noticed he looks jaundiced. On examination, the baby is clinically well but markedly jaundiced. What investigation should be performed first?",
+  options: ['Bilirubin level', 'Blood culture', 'Blood group', 'Congenital infection screen', 'Direct antibody test'],
+  answer: 0,
+  explanation: '**The endpoint file prints this explanation:**\n\n> In any jaundiced newborn, especially within the first 24 hours, the initial step is to measure the serum bilirubin level. This helps determine the severity of jaundice and guides further investigation and treatment.\n\n---\n\nJaundice this early — 10 hours of age — is never dismissed as physiological, because physiological jaundice by definition appears **after** 24 hours (`8) COMMON PROBLEMS IN THE TERM NEWBORN.txt`: "Visible jaundice with a TSB greater than 5 mg/dL before 24 hours of age is most commonly a result of significant hemolysis"). Measuring the total serum bilirubin is the first step for two reasons at once: it quantifies how urgent treatment is, and a fractionated level (conjugated vs unconjugated) starts to narrow the cause. Every other test in the list is a *second-line* test chosen once the bilirubin confirms the picture is real and the differential needs narrowing.\n\n**Why each wrong option is wrong.** *Blood culture* and a *congenital infection screen* are reached for once sepsis or TORCH infection is actually suspected clinically — this baby is described as clinically well, breastfeeding well, with no fever or lethargy. *Blood group* and the *direct antibody (Coombs) test* are exactly the right next tests **once early jaundice is confirmed** — mother is group O, which raises ABO incompatibility as a cause — but they cannot be interpreted or requested sensibly before the severity of the jaundice itself is known, so bilirubin comes first.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Order serum bilirubin as the first investigation in early neonatal jaundice, before the causal work-up.',
+  source: 'Pediatrics endpoint part1.pdf p.800'
+},
+
+{
+  id: 'pedep-neo-3',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: "Isabelle was born at term weighing 4 kg. At 6 hours of age, she was noted to be breathing fast and have a low temperature. She was born by normal vaginal delivery and the membranes had ruptured 24 hours previously. Isabelle has not breastfed since birth and has vomited once. On examination, she is lethargic, her core temperature is 35.5°C, respiratory rate 90 breaths/min, capillary refill time 4 seconds, pulse 180/min, and oxygen saturation 89% in air. Her chest X-ray shows consolidation at the right base. What is the most likely causative organism?",
+  options: ['Escherichia coli (E. coli)', 'Group B streptococcus', 'Herpes simplex virus (HSV)', 'Listeria monocytogenes'],
+  answer: 1,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Isabelle\'s clinical picture suggests early-onset neonatal sepsis, which commonly presents with respiratory distress and temperature instability. Group B Streptococcus is the most common cause in neonates, especially with prolonged rupture of membranes.\n\n---\n\nEverything in the vignette is textbook early-onset neonatal sepsis (EONS): onset within the first 72 hours (here, 6 hours), a maternal risk factor — membranes ruptured 24 hours before delivery, meeting the ">18 hours" prolonged-rupture threshold — and a baby who is "not doing well": hypothermic, tachypnoeic, poorly perfused (CRT 4 s), tachycardic and hypoxic, with a focal consolidation on the film consistent with pneumonia. `11) Neonatal sepsis.txt` names GBS and *E. coli* together as the classic EONS organisms and specifically lists prolonged (>18 h) or prelabour rupture of membranes as a maternal risk factor; GBS is the more common of the two.\n\n**Why each wrong option is wrong.** *E. coli* is the correct organism family (EONS, vertical transmission) but is statistically second to GBS as the leading cause. *Herpes simplex virus* causes neonatal sepsis-like illness too, but classically with vesicular skin lesions, hepatitis or seizures, and a maternal history of genital HSV — none of which is given here. *Listeria monocytogenes* is a recognised but much rarer EONS organism, usually linked to maternal ingestion of unpasteurised dairy or deli meats, which the stem does not mention.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Recognise the maternal and clinical risk pattern of early-onset GBS sepsis with pneumonia in a term newborn.',
+  source: 'Pediatrics endpoint part1.pdf p.802'
+},
+
+{
+  id: 'pedep-neo-4',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'James was born at 39 weeks\' gestation by elective caesarean section because of pre-eclampsia. His birth weight was 3.7 kg. He fed well initially but is now vomiting after every feed. He is now 18 hours old, and after the last two feeds, he "vomited everything up" and it was greenish. On examination, his temperature is 36.5°C, and he is alert and hungry. His abdomen is not distended. He has not yet passed meconium. What is the most likely diagnosis?',
+  options: ['Duodenal atresia', 'Hirschsprung’s disease', 'Meconium ileus', 'Neonatal sepsis', 'Pyloric stenosis'],
+  answer: 0,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Bilious vomiting in a neonate without meconium passage raises suspicion for intestinal obstruction. Duodenal atresia is a common cause and often presents within the first day of life with greenish (bilious) vomiting.\n\n---\n\nBilious (greenish) vomiting in a newborn always means the obstruction is **distal to the ampulla of Vater**, and it is a surgical emergency until proven otherwise. Duodenal atresia is the classic cause presenting within the first day of life: complete failure of the duodenal lumen to recanalise in fetal life, so bile-stained fluid backs up as soon as feeding begins. James is alert, hungry and well — he has not had time to develop the systemic signs of a lower obstruction — and delayed passage of meconium is consistent with an obstruction proximal enough that the distal bowel was never used.\n\n**Why each wrong option is wrong.** *Hirschsprung’s disease* and *meconium ileus* are both **lower** bowel obstructions that classically present with marked abdominal **distension** and failure to pass meconium at all — this abdomen is explicitly not distended, arguing against a low obstruction. *Neonatal sepsis* can cause vomiting and feed intolerance, but the vomit would not be reliably bile-stained, and James is afebrile, alert and hungry rather than lethargic or unwell. *Pyloric stenosis* causes **non-bilious**, projectile vomiting (the obstruction is proximal to the bile duct) and typically presents from around 3-6 weeks of age, not on day one of life.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Localise a neonatal bowel obstruction using the presence of bile in the vomitus and the timing of presentation.',
+  source: 'Pediatrics endpoint part1.pdf p.804'
+},
+
+{
+  id: 'pedep-neo-5',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  image: 'q-pd-ep-806',
+  imgAlt: 'Grayscale frontal (AP) chest radiograph of a newborn infant, chest-only field of view.',
+  stem: 'Mohammed was born at term, weighing 3 kg. He is 6 hours old and on the postnatal ward with his mother, who asked the midwife to review him because he is breathing very quickly. He required mask ventilation at birth to establish breathing. By 5 minutes, he was crying and handed to his mother. On examination, he is breathing at 64 breaths/min, with mild chest recession. Breath sounds are reduced on the left compared with the right. Oxygen saturation is 95%. What is the most likely diagnosis?',
+  options: ['Pneumonia', 'Pneumothorax', 'Respiratory distress syndrome', 'Persistent pulmonary hypertension of the newborn'],
+  answer: 1,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Reduced breath sounds on one side in a neonate with respiratory distress following resuscitation suggest pneumothorax. This is a known complication after positive pressure ventilation.\n\n---\n\nThe two facts that fix this diagnosis are asymmetry and a history of positive-pressure ventilation. `7) Intro to neonatology.txt` describes pneumothorax as occurring spontaneously or, more commonly, after mechanical/positive-pressure ventilation of an unhealthy lung, with sudden deterioration, increased oxygen requirement, and **decreased breath sounds and chest movement on the affected side** — precisely Mohammed\'s findings, and mask ventilation at birth is enough positive pressure to over-distend and rupture an alveolus. A term baby, born well (crying by 5 minutes) with only mild, unilateral signs is a much better fit for a localised air leak than for a diffuse parenchymal process.\n\n**Why each wrong option is wrong.** *Pneumonia* and *respiratory distress syndrome* both cause bilateral, diffuse findings on auscultation and film, not a lateralised difference in air entry. RDS is also a disease of prematurity — Mohammed is term. *Persistent pulmonary hypertension of the newborn (PPHN)* causes profound, labile hypoxaemia out of proportion to the chest signs (often with a saturation gap between right hand and lower limbs) rather than a focal, one-sided reduction in breath sounds.\n\nThe film would be expected to show a lucent, avascular rim of air with a visible collapsed lung edge on the affected side.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Link asymmetric breath sounds after positive-pressure ventilation to pneumothorax as an air-leak complication.',
+  source: 'Pediatrics endpoint part1.pdf p.806'
+},
+
+{
+  id: 'pedep-neo-6',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  image: 'q-pd-ep-808',
+  imgAlt: 'Grayscale frontal (AP) radiograph of a newborn infant covering the chest and abdomen.',
+  stem: "Sabrina was born at 37 weeks' gestation, birth weight 2.8 kg. At 2 hours of age, she was noted to be breathing very fast. On examination, respiratory rate is 72 breaths/min with moderate chest recession. Heart sounds are difficult to hear on the left, and the apex beat is palpable on the right side. What is the most likely diagnosis?",
+  options: ['Pneumonia', 'Pneumothorax', 'Respiratory distress syndrome', 'Diaphragmatic hernia', 'Bronchopulmonary dysplasia'],
+  answer: 3,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Displacement of heart sounds and apex beat to the right with respiratory distress in a newborn suggests a diaphragmatic hernia. Abdominal contents herniate into the thoracic cavity, causing pulmonary hypoplasia.\n\n---\n\n**Comparative table — this option ladder (Pneumonia / Pneumothorax / RDS / Diaphragmatic hernia / Bronchopulmonary dysplasia) is shared with `pedep-neo-7`.** Both babies have early respiratory distress; the discriminating clinical sign is what separates them:\n\n| | This case (`pedep-neo-6`) | `pedep-neo-7` |\n|---|---|---|\n| Age at onset | 2 hours | Ongoing at 10 weeks |\n| Gestation | 37 weeks (near-term) | 28 weeks, 875 g |\n| Key sign | Heart displaced to the **right** | Continued O2 need long after birth |\n| Diagnosis | Diaphragmatic hernia | Bronchopulmonary dysplasia |\n\n`9) Respiratory distress in newborn.txt` gives the classic congenital diaphragmatic hernia (CDH) triad: severe, immediate respiratory distress, a scaphoid (sunken) abdomen, and heart sounds shifted to the right — bowel has herniated through the defect (almost always the left side) into the chest, pushing the mediastinum rightward and compressing the ipsilateral lung, which is why pulmonary hypoplasia is the complication that drives mortality.\n\n**Why each wrong option is wrong.** *Pneumonia* and *RDS* both produce diffuse, bilateral disease and never shift the heart. *Pneumothorax* can shift the mediastinum **away from** the affected (tension) side, but it does not arise spontaneously at 2 hours in a near-term infant with no ventilation history, and it lacks the sunken-abdomen appearance CDH produces (the abdomen looks empty because its contents are in the chest). *Bronchopulmonary dysplasia* is a **chronic** lung disease of prematurity diagnosed by ongoing oxygen need at 36 weeks corrected age — it cannot present at 2 hours of life.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Recognise displaced heart sounds and immediate respiratory distress as congenital diaphragmatic hernia, distinguishing it from its option-ladder siblings.',
+  source: 'Pediatrics endpoint part1.pdf p.808'
+},
+
+{
+  id: 'pedep-neo-7',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  image: 'q-pd-ep-810',
+  imgAlt: 'Grayscale frontal (AP) chest radiograph of an infant, wide landscape framing.',
+  stem: "Thomas, a baby boy with a birth weight of 875 g at 28 weeks' gestation, required artificial ventilation for 2 weeks. At 10 weeks of age, he still needs additional oxygen via nasal cannulae. What is the most likely diagnosis?",
+  options: ['Pneumonia', 'Pneumothorax', 'Respiratory distress syndrome', 'Diaphragmatic hernia', 'Bronchopulmonary dysplasia'],
+  answer: 4,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Bronchopulmonary dysplasia is a chronic lung disease in preterm infants who required prolonged ventilation and oxygen. Ongoing oxygen need at 36 weeks corrected gestational age confirms this diagnosis.\n\n---\n\n**Shared option menu — see `pedep-neo-6`** for the comparative table across this ladder. Thomas\'s discriminating token is chronicity: born extremely preterm (28 weeks, 875 g — extremely low birth weight) and ventilated for 2 weeks, he is now 10 weeks old — well past the 36-week corrected-gestational-age mark used to define bronchopulmonary dysplasia (BPD, chronic lung disease, `7) Intro to neonatology.txt`: "Need for oxygen >36 weeks postmenstrual age"). BPD results from a combination of ventilator/volutrauma, oxygen toxicity and the underlying immaturity of a lung whose alveolar development is still incomplete.\n\n**Why each wrong option is wrong.** *Pneumonia* and *respiratory distress syndrome* are both **acute** processes; RDS in particular is a disease of the first hours to days of life, not one that would still be active, unresolved and unnamed at 10 weeks. *Pneumothorax* is an acute air-leak event, not a state of chronic, stable additional oxygen need. *Diaphragmatic hernia* causes severe respiratory distress from birth with mediastinal shift, not a gradually persisting oxygen requirement after weeks of ventilation.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Identify bronchopulmonary dysplasia from a history of extreme prematurity and persistent oxygen dependence well beyond the acute neonatal period.',
+  source: 'Pediatrics endpoint part1.pdf p.810'
+},
+
+{
+  id: 'pedep-neo-8',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: "Stewart is a full-term baby boy, born 16 hours ago. His mother is blood group O Rhesus positive. The baby is breastfeeding well, but the midwife noted he looks jaundiced. His bilirubin was 150 μmol/L at 10 hours and intensive phototherapy was started. Six hours later, bilirubin is 250 μmol/L. The baby's blood group is A Rhesus positive. What is the most likely cause?",
+  options: ['ABO incompatibility', 'Biliary atresia', 'Breastmilk jaundice', 'Physiological jaundice', 'Rhesus hemolytic disease'],
+  answer: 0,
+  explanation: '**The endpoint file prints this explanation:**\n\n> The infant has early and rapidly rising jaundice, with maternal group O and baby group A—indicating ABO incompatibility. This is a common cause of hemolytic disease in neonates.\n\n---\n\n**Comparative table — this exact five-option ladder (ABO incompatibility / Biliary atresia / Breastmilk jaundice / Physiological jaundice / Rhesus hemolytic disease) recurs at `pedep-neo-9` and `pedep-neo-10`, with a related ladder at `pedep-neo-11`.** Each sibling is picked out from the ladder by a different discriminating feature:\n\n| | This case (`pedep-neo-8`) | `pedep-neo-9` | `pedep-neo-10` | `pedep-neo-11` |\n|---|---|---|---|---|\n| Age | 16 hours | 3 weeks | 2 weeks | 20 hours |\n| Pattern | Rapid rise, group O mother / A baby | Pale stools, hepatomegaly | Thriving, unconjugated, negative dipstick | Same blood groups, still marked |\n| Answer | ABO incompatibility | Biliary atresia | Breastmilk jaundice | G6PD deficiency |\n\n`8) COMMON PROBLEMS IN THE TERM NEWBORN.txt` names ABO incompatibility as an immune-mediated haemolytic cause with a positive direct antibody (Coombs) test, "usually mild" but of unpredictable severity — here the bilirubin nearly doubling in 6 hours despite intensive phototherapy shows active ongoing haemolysis, which the group O mother / group A baby setup produces via maternal anti-A IgG crossing the placenta.\n\n**Why each wrong option is wrong.** *Biliary atresia* and *breastmilk jaundice* both present **later**, over weeks, not within the first day. *Physiological jaundice* by definition appears after 24 hours and rises gradually (<5 mg/dL per day) — this bilirubin trajectory is both too early and too fast. *Rhesus hemolytic disease* requires a Rh-negative mother sensitised against a Rh-positive fetus; this mother is stated to be Rhesus **positive**, which excludes it outright.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Diagnose ABO incompatibility from a rapidly rising bilirubin in the first day of life with a group O mother and group A infant.',
+  source: 'Pediatrics endpoint part1.pdf p.812'
+},
+
+{
+  id: 'pedep-neo-9',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'Alfie is a 3-week-old male infant whose mother is concerned about pale stools. He is breastfed. On examination, he is jaundiced, has mild hepatomegaly, and has only just regained his birth weight. What is the most likely diagnosis?',
+  options: ['ABO incompatibility', 'Biliary atresia', 'Breastmilk jaundice', 'Physiological jaundice', 'Rhesus hemolytic disease'],
+  answer: 1,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Prolonged jaundice with pale stools and hepatomegaly in a neonate is classic for biliary atresia. It causes conjugated hyperbilirubinemia and requires early surgical intervention for better outcomes.\n\n---\n\n**Shared option menu — see `pedep-neo-8`** for the comparative table across this ladder. Alfie\'s discriminating token is pale (acholic) stools plus hepatomegaly at three weeks — `43)Infantile cholestasis_.txt` calls acholic, clay-coloured stools with dark urine and hepatomegaly the defining picture of neonatal cholestasis, and names biliary atresia the single most common cause of cholestatic jaundice in the first months of life (up to 60% of cases). Poor weight gain (only just back to birth weight at 3 weeks, when a term infant should already be well past it) reflects the failure to thrive that chronic cholestasis produces. The lecture stresses biliary atresia must be found within the first 6 weeks of life for surgery to have the best chance of success, which is why any pale-stool jaundice this age is treated as urgent.\n\n**Why each wrong option is wrong.** *ABO* and *Rhesus haemolytic disease* are early (first-day), unconjugated, haemolytic processes — neither causes pale stools, since bile is still reaching the gut normally in a purely haemolytic jaundice. *Breastmilk jaundice* is unconjugated and occurs in a thriving, well infant with normal-coloured stools, the opposite of Alfie\'s acholic stools and hepatomegaly. *Physiological jaundice* resolves by one week of age and never causes pale stools or hepatomegaly.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Recognise pale stools with hepatomegaly and poor weight gain as biliary atresia, distinguishing conjugated cholestatic jaundice from the haemolytic causes on the same ladder.',
+  source: 'Pediatrics endpoint part1.pdf p.814'
+},
+
+{
+  id: 'pedep-neo-10',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'Poppy is a 2-week-old breastfed baby who is thriving but jaundiced. Her bilirubin level is 170 μmol/L and nearly all unconjugated. Urine dipstick is negative. What is the most likely cause?',
+  options: ['ABO incompatibility', 'Biliary atresia', 'Breastmilk jaundice', 'Physiological jaundice', 'Rhesus hemolytic disease'],
+  answer: 2,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Breastmilk jaundice presents in a thriving breastfed baby with prolonged unconjugated jaundice beyond the first week. It is benign and requires no treatment.\n\n---\n\n**Shared option menu — see `pedep-neo-8`** for the comparative table across this ladder. Poppy\'s discriminating tokens are that she is *thriving* (excludes disease), the bilirubin is *nearly all unconjugated* (excludes the conjugated picture of biliary atresia), and the *urine dipstick is negative* for bilirubin (unconjugated bilirubin is protein-bound and not water-soluble, so it cannot appear in urine — a negative dipstick is expected and reassuring, not a red flag). `8) COMMON PROBLEMS IN THE TERM NEWBORN.txt` describes breastmilk jaundice as unconjugated hyperbilirubinaemia lasting weeks in a thriving breastfed infant "without evidence of hemolysis, hypothyroidism, or other disease" — exactly this picture — and states it needs no specific treatment beyond continued breastfeeding and monitoring.\n\n**Why each wrong option is wrong.** *ABO incompatibility* and *Rhesus haemolytic disease* are haemolytic and present early (within the first day), with a positive Coombs test — nothing here suggests haemolysis at 2 weeks. *Biliary atresia* causes **conjugated** hyperbilirubinaemia with pale stools and hepatomegaly, the opposite of Poppy\'s picture. *Physiological jaundice* resolves within a week in a term infant; Poppy\'s jaundice, still present and unconjugated at 2 weeks in an otherwise well, breastfed baby, has moved past physiological into the specific breastmilk-jaundice pattern.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Diagnose breastmilk jaundice from prolonged unconjugated jaundice in a thriving, well infant, excluding both haemolysis and cholestasis.',
+  source: 'Pediatrics endpoint part1.pdf p.816'
+},
+
+{
+  id: 'pedep-neo-11',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'Dimitri is 20 hours old and markedly jaundiced, requiring intensive phototherapy. Both mother and baby are group A Rhesus positive. He is feeding well and is alert. What is the most likely cause?',
+  options: ['ABO incompatibility', 'Biliary atresia', 'Breastmilk jaundice', 'G6PD deficiency', 'Rhesus hemolytic disease'],
+  answer: 3,
+  explanation: '**The endpoint file prints this explanation:**\n\n> In a jaundiced baby with no ABO or Rh incompatibility, G6PD deficiency is a likely cause of hemolytic jaundice, especially if the jaundice appears early and is significant. It is more common in certain ethnic groups.\n\n---\n\nThis ladder shares four of its five options with `pedep-neo-8` (ABO / breastmilk / Rhesus / biliary atresia all reappear) but here swaps out physiological jaundice for G6PD deficiency — the two ladders are related, not identical, so this is a related sibling rather than a strict shared-menu pair. Dimitri\'s discriminating token is that mother and baby share the **same** blood group (A, Rh-positive both), which mechanically rules out both antibody-mediated causes on the list, yet the jaundice is early and marked enough to need intensive phototherapy — a haemolytic process is still happening, just not an antibody-mediated one. `8) COMMON PROBLEMS IN THE TERM NEWBORN.txt` lists G6PD deficiency as the most common **red cell enzyme** defect causing non-immune haemolysis (Coombs-negative), most common in infants of African, Mediterranean or Asian descent, and specifically flags it as a cause of severe, early hyperbilirubinaemia that can mimic the immune haemolytic causes.\n\n**Why each wrong option is wrong.** *ABO incompatibility* is excluded because mother and baby are the same blood group, so there is no antigen mismatch for maternal antibodies to target. *Rhesus haemolytic disease* is excluded for the same reason — no Rh mismatch. *Biliary atresia* and *breastmilk jaundice* both present over days-to-weeks, not within the first 24 hours, and neither is severe enough at this age to need intensive phototherapy.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Consider G6PD deficiency as a Coombs-negative haemolytic cause of early, severe jaundice once ABO and Rh incompatibility are excluded by matching blood groups.',
+  source: 'Pediatrics endpoint part1.pdf p.818'
+},
+
+{
+  id: 'pedep-neo-12',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'Rebecca was born 48 hours ago at term weighing 3.2 kg. She is breathing very quickly and not feeding. On examination, respiratory rate is 68 breaths/min, with mild chest recession. She appears unwell. Femoral pulses are weak, and oxygen saturation is 85% in air. What is the most likely diagnosis?',
+  options: ['Pneumonia', 'Transient tachypnoea of the newborn', 'Coarctation of the aorta', 'Respiratory distress syndrome', 'Anaemia'],
+  answer: 2,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Weak femoral pulses, hypoxia, and poor feeding in a newborn suggest duct-dependent congenital heart disease like coarctation. This typically presents after ductal closure in the first few days of life.\n\n---\n\n**Comparative table — this option ladder (Pneumonia / TTN / Coarctation of the aorta / RDS / Anaemia) is shared with `pedep-neo-13`.**\n\n| | This case (`pedep-neo-12`) | `pedep-neo-13` |\n|---|---|---|\n| Delivery | Term, normal-course | Elective caesarean |\n| Key sign | Weak femoral pulses, SpO₂ 85%, unwell | Normal exam and normal CXR |\n| Diagnosis | Coarctation of the aorta | Transient tachypnoea of the newborn |\n\n`34)Students Obstructive diseases.pptx` describes critical neonatal coarctation as looking normal on day one, then presenting with acute circulatory collapse "after a few days of age when the duct closes" — the ductus arteriosus had been supplying the lower body around the coarctation, and once it constricts, flow to the legs and abdominal organs collapses. The lecture\'s own triad is here almost verbatim: a sick baby with severe heart failure, **absent/weak femoral pulses**, and severe metabolic acidosis (reflected in the low saturation and poor feeding).\n\n**Why each wrong option is wrong.** *Pneumonia* and *respiratory distress syndrome* do not weaken the femoral pulses — that finding is specific to an obstructed systemic circulation, not a primary lung problem, and RDS is a disease of prematurity, not a 48-hour-old term infant. *Transient tachypnoea of the newborn* is mild, self-limiting and does not cause pulse or perfusion abnormalities. *Anaemia* can cause tachypnoea and poor feeding but does not selectively weaken the **femoral** pulses while presumably sparing others.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Recognise weak femoral pulses with duct closure as coarctation of the aorta, distinguishing it from its ladder siblings.',
+  source: 'Pediatrics endpoint part1.pdf p.820'
+},
+
+{
+  id: 'pedep-neo-13',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'Zak, a full-term male infant, weighing 3.7 kg, is born by elective caesarean section. He becomes tachypnoeic with indrawing at 2 hours of age. Examination and chest X-ray are otherwise normal. What is the most likely diagnosis?',
+  options: ['Pneumonia', 'Transient tachypnoea of the newborn', 'Coarctation of the aorta', 'Respiratory distress syndrome', 'Anaemia'],
+  answer: 1,
+  explanation: '**The endpoint file prints this explanation:**\n\n> TTN is common after elective caesarean due to delayed lung fluid clearance. It presents with tachypnea shortly after birth and typically resolves within 48-72 hours.\n\n---\n\n**Shared option menu — see `pedep-neo-12`** for the comparative table across this ladder. Zak\'s discriminating tokens are exactly the opposite of Rebecca\'s: delivery by **elective caesarean section** (no labour, so the surge of catecholamines that normally switches off fetal lung fluid secretion and starts its resorption never happens) and an otherwise **normal** examination and chest film. `9) Respiratory distress in newborn.txt` names elective caesarean section, male gender and maternal diabetes as the recognised risk factors for transient tachypnoea of the newborn (TTN), with onset within 2 hours of delivery and a course lasting hours to a few days — matching Zak precisely.\n\n**Why each wrong option is wrong.** *Pneumonia* and *respiratory distress syndrome* would be expected to show an abnormal chest film (consolidation, or diffuse ground-glass change), which is explicitly excluded here; RDS is also a disease of prematurity, and Zak is full term. *Coarctation of the aorta* causes weak femoral pulses and hypoxaemia, not a normal exam. *Anaemia* does not typically present as isolated tachypnoea with indrawing in the first hours after an uncomplicated elective delivery.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Recognise transient tachypnoea of the newborn from delayed lung fluid clearance after elective caesarean section, with normal examination and imaging.',
+  source: 'Pediatrics endpoint part1.pdf p.822'
+},
+
+{
+  id: 'pedep-neo-14',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'A 15-month-old girl is referred for developmental assessment. She was born at term weighing 3400 g, needed resuscitation at birth with Apgar scores of 3 at 1 minute, 4 at 5 minutes, and 7 at 10 minutes. She was ventilated for 3 days. She now has global developmental delay. What is the most likely explanation?',
+  options: ['Congenital hypothyroidism', 'Meningitis', 'Inborn error of metabolism', 'Intracranial hemorrhage', 'Hypoxic-ischaemic encephalopathy (HIE)'],
+  answer: 4,
+  explanation: '**The endpoint file prints this explanation:**\n\n> A history of low Apgar scores, ventilation, and developmental delay strongly suggests HIE, resulting from perinatal asphyxia. This is a major cause of cerebral palsy and developmental disorders.\n\n---\n\nThe Apgar trajectory is the key evidence: severely depressed at 1 and 5 minutes (3, then 4) with slow, incomplete recovery by 10 minutes (7) and a need for 3 days of ventilation, is the pattern of significant perinatal asphyxia. `10) new Seizures . Birth injuries , Hpoglycemia 2.txt` lists hypoxic-ischaemic encephalopathy as the single most common acute symptomatic cause of neonatal brain injury in term and near-term infants (around 40% of cases), and `58) cerebral palsy.txt` names birth asphyxia/HIE among the leading perinatal causes of cerebral palsy and long-term developmental delay — this girl\'s global delay at 15 months is exactly that late outcome.\n\n**Why each wrong option is wrong.** *Congenital hypothyroidism* causes developmental delay but has no relationship to a difficult, asphyxial delivery — it would present with prolonged jaundice, constipation and a hoarse cry, not depressed Apgars. *Meningitis* and *inborn errors of metabolism* are both listed in the same lecture as alternative causes of neonatal brain injury and seizures, but neither is suggested by this history — there is no fever, sepsis picture, or metabolic crisis described, only a difficult birth needing resuscitation. *Intracranial haemorrhage* is a genuine differential for a difficult delivery, but it is not what a depressed, slowly-recovering Apgar score with prolonged ventilation specifically points to — that pattern is the signature of asphyxial hypoxic-ischaemic injury rather than a bleed.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Link a depressed, slowly recovering Apgar score and prolonged ventilation at birth to HIE as the cause of later global developmental delay.',
+  source: 'Pediatrics endpoint part1.pdf p.824'
+},
+
+{
+  id: 'pedep-neo-15',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'A newborn baby is delivered by caesarean following obstructed labor. He requires full resuscitation including adrenaline. His initial capillary blood gas shows pH 6.9. Which of the following is least likely related to perinatal asphyxia?',
+  options: ['Hypotension', 'Renal failure', 'Necrotizing enterocolitis', 'Seizures', 'Heart murmur'],
+  answer: 4,
+  explanation: '**The endpoint file prints this explanation:**\n\n> While hypotension, renal failure, NEC, and seizures are well-known complications of perinatal asphyxia, a heart murmur is not a direct consequence. It may occur coincidentally but is not a specific outcome.\n\n---\n\nSevere perinatal asphyxia — obstructed labour, resuscitation with adrenaline, and a profoundly acidotic pH of 6.9 — does not injure the brain alone; it is a whole-body hypoxic-ischaemic insult, and the organs most sensitive to it fail together as a multi-organ syndrome *(the multi-organ pattern itself is standard neonatal teaching and is not detailed as a single list in the cached decks — not taken from the course material, though each individual complication is)*. *Seizures* are directly grounded: `10) new Seizures . Birth injuries , Hpoglycemia 2.txt` lists hypoxic-ischaemic encephalopathy as the leading cause of neonatal seizures, typically beginning in the first 12-24 hours. *Hypotension* reflects myocardial hypoxic injury and loss of vascular tone. *Renal failure* follows redistribution of blood away from the kidneys during the asphyxial "diving reflex", producing acute tubular injury. *Necrotizing enterocolitis* follows the same redistribution away from the gut, and `11) Neonatal sepsis.txt` lists NEC among the anaerobic-risk conditions treated with metronidazole or clindamycin.\n\n**Why the key is right and the option is not a distractor mistake.** A *heart murmur* is a finding of a structural or flow abnormality across a valve or shunt — it is not a recognised direct consequence of a hypoxic insult itself. A murmur could coexist by chance, or reflect a separate congenital lesion, but asphyxia does not cause murmurs the way it causes organ failure, so it is correctly the "least likely" answer to a "which is NOT related" question.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Recognise the multi-organ pattern of perinatal asphyxia (CNS, cardiovascular, renal, gastrointestinal) and distinguish it from an unrelated finding.',
+  source: 'Pediatrics endpoint part1.pdf p.826'
+},
+
+{
+  id: 'pedep-neo-16',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'A male infant born at 29 weeks is now 4 hours old with increasing oxygen requirement, tachypnoea, and severe recessions. CXR shows a ground-glass appearance. What is the most likely diagnosis?',
+  options: ['Transient tachypnoea of the newborn', 'Respiratory distress syndrome', 'Congenital pneumonia', 'Pneumothorax', 'Congenital heart disease'],
+  answer: 1,
+  explanation: '**The endpoint file prints this explanation:**\n\n> A preterm infant with worsening respiratory status and ground-glass appearance on CXR is classic for RDS due to surfactant deficiency. This is common in infants born before 32 weeks.\n\n---\n\nAll three findings point the same way: birth at 29 weeks (surfactant synthesis is not mature until 35 weeks), onset within the first 4 hours (`9) Respiratory distress in newborn.txt`: RDS manifestations "appear immediately or shortly after birth" and worsen over the first 48 hours), and the film — "a fine reticulogranular ground-glass mottling in both lung fields through which an air bronchogram is seen" is the lecture\'s own description of the RDS chest X-ray, matched here almost word for word.\n\n**Why each wrong option is wrong.** *Transient tachypnoea of the newborn* is a term/late-preterm condition with a perihilar-streaking, wet-lung film, not ground-glass mottling, and it is mild rather than a "worsening", "severe" picture. *Congenital pneumonia* can mimic RDS clinically but its film typically shows focal or patchy consolidation rather than the diffuse, symmetric ground-glass pattern described here. *Pneumothorax* causes sudden, asymmetric deterioration with reduced breath sounds on one side, not a diffuse bilateral ground-glass appearance. *Congenital heart disease* would show a cardiac silhouette or vascular abnormality on the film, not the specific lung-parenchymal ground-glass sign being described.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Match the ground-glass, air-bronchogram chest film in an extremely preterm infant to surfactant-deficient respiratory distress syndrome.',
+  source: 'Pediatrics endpoint part1.pdf p.828'
+},
+
+{
+  id: 'pedep-neo-17',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'A female infant born at 28 weeks is now 10 days old. She recently started feeds via NG tube. Over the past 12 hours, she has become unwell with abdominal distension, temperature instability, bile-stained aspirates, and blood in stool. AXR shows air within bowel walls. What is the most likely diagnosis?',
+  options: ['Sepsis', 'Intestinal obstruction', 'Necrotizing enterocolitis', 'Malrotation', 'Duodenal atresia'],
+  answer: 2,
+  explanation: '**The endpoint file prints this explanation:**\n\n> NEC is a serious gastrointestinal emergency in preterm infants, presenting with feeding intolerance, distension, and bloody stools. The pathognomonic X-ray finding is pneumatosis intestinalis (air in the bowel wall).\n\n---\n\n`7) Intro to neonatology.txt` names necrotizing enterocolitis (NEC) the most common serious GI problem of the preterm infant, with an incidence that rises the more preterm the baby is (here, 28 weeks), and lists its own pathognomonic radiological sign as "pneumatosis intestinalis" — air tracking within the bowel wall itself, produced by gas-forming bacteria invading an ischaemic, insulted mucosa. The full clinical picture here — recently started enteral (NG) feeds, feeding intolerance (bile-stained aspirates), abdominal distension, temperature instability and bloody stools — is the textbook NEC presentation, and the air-in-bowel-wall finding on the film clinches it over any other diagnosis on the list.\n\n**Why each wrong option is wrong.** *Sepsis* shares many of the same non-specific signs (temperature instability, unwell appearance) and often coexists with NEC, but it does not explain the specific abdominal film finding of intramural air. *Intestinal obstruction*, *malrotation* and *duodenal atresia* are all mechanical/anatomical causes of bilious vomiting and distension, but none of them produces pneumatosis intestinalis, and duodenal atresia in particular presents in the first day of life, not after ten days of established feeding.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Recognise the feeding-intolerance, distension and pneumatosis-intestinalis picture of necrotizing enterocolitis in a preterm infant on enteral feeds.',
+  source: 'Pediatrics endpoint part1.pdf p.830'
+},
+
+{
+  id: 'pedep-neo-18',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: "A term female baby is 18 hours old and not feeding well. Her mother was supposed to receive intrapartum antibiotics but delivered too quickly. The baby is admitted with suspected sepsis; CXR confirms congenital pneumonia. What is the most likely organism?",
+  options: ['Streptococcus pneumoniae', 'Escherichia coli', 'Listeria monocytogenes', 'Group B streptococcus', 'Chlamydia pneumoniae'],
+  answer: 3,
+  explanation: '**The endpoint file prints this explanation:**\n\n> GBS is the most common cause of early-onset neonatal sepsis and congenital pneumonia. Lack of intrapartum antibiotics and early respiratory symptoms suggest this infection.\n\n---\n\n`11) Neonatal sepsis.txt` names GBS (Group B streptococcus, alongside *E. coli*) as the leading organism of early-onset sepsis (EONS, presenting within the first 72 hours — here 18 hours), and its own risk-factor list includes exactly this scenario: a colonised mother who should have received **intrapartum antibiotic prophylaxis** but did not, because delivery was too rapid to give it. Around 15-40% of pregnant women carry GBS, and without the intended prophylaxis the newborn is exposed to it during passage through the birth canal, producing pneumonia or septicaemia as the two classic early presentations.\n\n**Why each wrong option is wrong.** *Streptococcus pneumoniae* is a cause of childhood, not classic neonatal, pneumonia and is not part of the vertical-transmission organism list. *Escherichia coli* is the correct **category** (a leading EONS organism, vertically transmitted) but is statistically second to GBS. *Listeria monocytogenes* is a recognised but much rarer EONS cause, usually linked to maternal ingestion of unpasteurised dairy or contaminated deli foods, which is not mentioned here. *Chlamydia pneumoniae* (distinct from *Chlamydia trachomatis*, which causes a later, afebrile neonatal pneumonia via vertical transmission) is not a standard neonatal sepsis organism at all.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Identify GBS as the organism behind early-onset congenital pneumonia when intended intrapartum prophylaxis was missed.',
+  source: 'Pediatrics endpoint part1.pdf p.832'
+},
+
+{
+  id: 'pedep-neo-19',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: "A term infant born at home is brought on day 4 with bleeding from the umbilical stump. The mother mentions her other children received vitamin K, but she’s unsure about this baby. Which blood result is likely to be abnormal?",
+  options: [
+    'Platelets',
+    'Prothrombin time (PT)',
+    'Activated partial thromboplastin time (APTT)',
+    'Hemoglobin',
+    'Antiplatelet antibodies'
+  ],
+  answer: 1,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Vitamin K deficiency bleeding (VKDB) commonly presents around day 4 with bleeding (e.g. from the umbilical stump). The PT is typically prolonged due to deficient clotting factor production.\n\n---\n\nVitamin K activates the gamma-carboxylation of clotting factors II, VII, IX and X in the liver; without it these factors are made but functionally inactive, so the extrinsic pathway (and, later, the intrinsic pathway too) fails. `47)Hemorrhagic disorders .txt` sets vitamin K deficiency against DIC in a comparison table: PT is prolonged in both, but vitamin K deficiency keeps a normal thrombin time, a normal platelet count and a normal bleeding time — the pattern that separates an isolated factor-activation defect from a consumptive coagulopathy.\n\nWorking through the ladder against that table: **Platelets** stay normal in isolated vitamin K deficiency, since the defect sits in coagulation factor activation, not in platelet number or function. **APTT** does eventually prolong once factors IX and X fall, but factor VII — the vitamin K-dependent factor with by far the shortest half-life — collapses first, so the **PT**, which is most sensitive to factor VII, is the test that turns abnormal earliest; that is why the box names PT specifically rather than APTT. **Hemoglobin** falls only as a secondary consequence of ongoing blood loss and is not itself diagnostic of the underlying clotting defect. **Antiplatelet antibodies** belong to the work-up of immune thrombocytopenia, a platelet-destruction disorder unrelated to vitamin K.\n\nThe vignette detail that this baby’s status is unknown while siblings received vitamin K points at a missed dose of the routine intramuscular vitamin K prophylaxis given at birth to prevent exactly this bleed *(not taken from the course material; the cached deck carries the DIC-versus-vitamin-K-deficiency lab table but not the prophylaxis protocol itself)*. Bleeding on day 4 sits in the "classic" VKDB window of day 2–7, distinct from the early form (first 24 hours, usually maternal-drug-induced) and the late form (weeks 2–12, usually from malabsorption) *(also not taken from the course material)*.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Identify prothrombin time as the lab abnormality in classic vitamin K deficiency bleeding and distinguish it from a consumptive coagulopathy.',
+  source: 'Pediatrics endpoint part1.pdf p.834'
+},
+
+{
+  id: 'pedep-neo-20',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'A 4-week-old formula-fed girl presents with jaundice. Her urine is dark and stools are pale. She has not regained her birth weight. Total bilirubin is 135 μmol/L (normal <100), conjugated 65 μmol/L (normal <20). Blood counts are normal. What is the most likely diagnosis?',
+  options: [
+    'Physiological jaundice',
+    'Biliary atresia',
+    'Spherocytosis',
+    'G6PD deficiency',
+    'Urinary tract infection'
+  ],
+  answer: 1,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Cholestatic jaundice (raised conjugated bilirubin), pale stools, and poor weight gain point to biliary atresia. Early diagnosis is critical to allow for timely surgical intervention (Kasai procedure).\n\n---\n\nHere the conjugated fraction is roughly half of an already-raised total, and dark urine with pale (acholic) stools confirms bile is not reaching the gut. `8) COMMON PROBLEMS IN THE TERM NEWBORN.txt` lists a fractionated bilirubin as the correct test whenever jaundice is prolonged, stool is acholic, or the infant is failing to regain birth weight — every one of those triggers is present here. `43)Infantile cholestasis_.txt` names biliary atresia the single most common cause of cholestatic jaundice in early infancy and stresses that the Kasai portoenterostomy must happen within roughly the first 6–8 weeks of life for a meaningful chance of success, which is why pale-stool jaundice at this age is treated as urgent — matching the box’s own emphasis on early diagnosis.\n\nAgainst the ladder: **Physiological jaundice** is unconjugated and resolves within the first week of life; a 4-week-old with a raised *conjugated* fraction and pale stools cannot be physiological. **Spherocytosis** and **G6PD deficiency** are both haemolytic, unconjugated processes that present early, often the first days of life, with normal-coloured stools, since bile flow itself is intact — neither produces acholic stools or a raised conjugated fraction, and blood counts here are stated to be normal, arguing against active haemolysis. **Urinary tract infection** can cause conjugated hyperbilirubinemia and poor weight gain in a neonate, but it does not typically produce pale stools, and nothing in the vignette (fever, irritability, poor feeding from illness) points to sepsis; the specific combination of pale stools plus dark urine is a biliary, not an infective, signature.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Recognise pale stools, dark urine and a raised conjugated fraction at 4 weeks as biliary atresia rather than a haemolytic or infective cause of jaundice.',
+  source: 'Pediatrics endpoint part1.pdf p.836'
+},
+
+{
+  id: 'pedep-neo-21',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'A 6-day-old baby who is breast-feeding well and thriving is referred by the midwife because she appears jaundiced. She has pigmented stools and is passing urine normally. Examination is unremarkable. Her bilirubin is 68 μmol/L (normal <100 μmol/L) with a conjugated level of 8 μmol/L (normal <20 μmol/L).\n\nWhich of the following would be your management of this infant?',
+  options: [
+    'Complete a prolonged jaundice screen',
+    'Commence phototherapy',
+    'Top up feeds with formula milk',
+    'Repeat the bilirubin level in 8 hours',
+    'No treatment required'
+  ],
+  answer: 4,
+  explanation: '**The endpoint file prints this explanation:**\n\n> This baby has normal unconjugated jaundice at 6 days, is feeding well, and has normal stool and urine color. No further action is needed unless jaundice persists beyond 14 days.\n\n---\n\n`8) COMMON PROBLEMS IN THE TERM NEWBORN.txt` places physiological jaundice at a peak of 3–5 days with a total bilirubin no higher than 258 μmol/L, resolving by one week in a term infant; this baby’s 68 μmol/L, almost entirely unconjugated, sits comfortably inside that pattern, and pigmented stools with normal urine confirm bile flow is intact. The lecture also names breastfeeding-associated jaundice as common in a thriving breastfed infant, with weight, urine and stool output as the way to check feeding is adequate — all reassuring here.\n\nAgainst the ladder: a **prolonged jaundice screen** is reserved for jaundice still present beyond the 14-day cut-off the box itself names, not at day 6. **Phototherapy** is started when the total bilirubin approaches a threshold roughly 102 μmol/L below the exchange-transfusion level for the infant’s age in hours — a level far above 68 μmol/L at day 6. **Top up feeds with formula milk** is the lecture’s own remedy for breastfeeding-associated jaundice, but only when intake looks inadequate (poor weight gain, reduced urine or stool output); this baby is thriving and feeding well, so supplementing would undermine breastfeeding for no benefit. **Repeating the bilirubin in 8 hours** implies a level close to a treatment threshold that needs tight tracking, which does not apply to a low, unconjugated bilirubin in a well infant — the lecture’s own follow-up advice is a review in the following days, not hours.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Recognise a low, unconjugated bilirubin in a thriving, well 6-day-old as needing no treatment, reserving further work-up for jaundice persisting beyond 14 days.',
+  source: 'Pediatrics endpoint part1.pdf p.838'
+},
+
+{
+  id: 'pedep-neo-23',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  image: 'q-pd-ep-842',
+  imgAlt: 'Printed reference table with columns for diagnosis, jaundice type, presentation and notes.',
+  stem: 'Talia is 2 weeks old and is breastfed. She is active and thriving but is jaundiced. Her bilirubin level is moderately raised at 10 mg/dl and is nearly all unconjugated. A urine dipstick is -VE. The following is a list of diagnoses that are associated with jaundice in the newborn period. Pick the most likely cause of the jaundice in this condition.',
+  options: [
+    'ABO incompatibility',
+    'Biliary atresia',
+    'Breast milk jaundice',
+    'Congenital hypothyroidism',
+    'Neonatal infection'
+  ],
+  answer: 2,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Breast milk jaundice occurs in healthy, thriving infants after the first week of life. It is due to substances in breast milk that increase bilirubin reabsorption, and no treatment is needed.\n\n---\n\nThe printed table alongside this question lays the five options out by jaundice type and typical presentation. Talia’s picture — thriving, unconjugated bilirubin, negative urine dipstick, onset after the first week — matches exactly the "breast milk jaundice" row: begins 1–2 weeks, thriving infant, normal exam, negative urine dipstick. `8) COMMON PROBLEMS IN THE TERM NEWBORN.txt` describes moderate unconjugated hyperbilirubinemia lasting 6–12 weeks in a thriving breastfed infant, without evidence of haemolysis, hypothyroidism or other disease, as strongly suggestive of this diagnosis — the negative dipstick argues against a urinary or infective cause, and the infant’s wellbeing argues against anything that would make her unwell.\n\nThe table’s other rows explain why each distractor is wrong: **ABO incompatibility** is unconjugated but presents early, with signs of haemolysis and a positive Coombs test, not at two weeks in a well infant. **Biliary atresia** is a *conjugated* jaundice with pale stools, the opposite of this nearly-all-unconjugated picture. **Congenital hypothyroidism** does cause prolonged unconjugated jaundice, but with other hypothyroid signs (lethargy, constipation, feeding difficulty) that this thriving infant does not have, and it is caught by the newborn screen rather than diagnosed on this picture alone. **Neonatal infection** produces a mixed or unconjugated pattern in an ill-appearing infant with fever or poor feeding — Talia is active and thriving, which excludes it.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Use the printed comparison table to match a thriving, unconjugated, dipstick-negative jaundice at 2 weeks to breast milk jaundice rather than a haemolytic, biliary, endocrine or infective cause.',
+  source: 'Pediatrics endpoint part1.pdf p.842'
+},
+
+{
+  id: 'pedep-neo-24',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'A 4.3 kg infant is delivered to a woman whose diabetes mellitus is poorly controlled. Of the following, the MOST likely neonatal manifestation of maternal diabetes is:',
+  options: [
+    'Anemia',
+    'Hirschsprung disease',
+    'Hypercalcemia',
+    'Polycythemia',
+    'Blood glucose 75 mg/dl'
+  ],
+  answer: 3,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Infants of diabetic mothers are prone to polycythemia due to chronic intrauterine hypoxia stimulating erythropoiesis. They may also have hypoglycemia, hypocalcemia, and cardiomyopathy.\n\n---\n\n`7) Intro to neonatology.txt` lists the recognised complications of an infant of a diabetic mother: fetal demise, macrosomia, congenital malformations, RDS, hyperbilirubinemia, hypoglycemia, hypocalcemia, polycythemia, renal vein thrombosis and cardiomyopathy. This 4.3 kg baby is macrosomic, the expected result of fetal hyperinsulinaemia driving excess growth, and polycythaemia is on that same list, driven by the chronic relative intrauterine hypoxia that hyperglycaemia and placental changes produce.\n\nAgainst the ladder: **Anemia** is the opposite of the expected finding — these infants tend toward polycythaemia, not anaemia. **Hirschsprung disease** is not on the lecture’s IDM list; the bowel anomaly it does name is sacral hypoplasia with small left colon syndrome, a different entity, so Hirschsprung is a distractor built to be confused with that. **Hypercalcemia** inverts the real association — the lecture names *hypo*calcemia, from a functional immaturity of the parathyroid response, as the expected finding. **Blood glucose 75 mg/dl** is printed as a normal value and is itself a distractor: infants of diabetic mothers are prone to *hypoglycemia* after birth once the maternal glucose supply is cut off but fetal hyperinsulinaemia persists, not to a normal or high glucose reading.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Identify polycythaemia as the classic neonatal manifestation of maternal diabetes, distinguishing it from the inverted or unrelated distractors on the list.',
+  source: 'Pediatrics endpoint part1.pdf p.844'
+},
+
+{
+  id: 'pedep-neo-25',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'A baby is born with cord bilirubin of 5 mg/dl. Two hours later the serum bilirubin increased to 8 mg/dl. There is no history of premature rupture of membrane (PROM). The most probable cause is:',
+  options: [
+    'Congenital spherocytosis',
+    'Sickle cell anemia',
+    'RH incompatibility',
+    'Breast milk jaundice',
+    'Thalassemia'
+  ],
+  answer: 2,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Rapid rise in bilirubin within hours of life strongly suggests hemolysis, most commonly Rh incompatibility in a sensitized mother. This requires urgent evaluation and treatment.\n\n---\n\n`8) COMMON PROBLEMS IN THE TERM NEWBORN.txt` states that visible jaundice with a bilirubin rising this fast, this early, is most commonly a result of significant haemolysis, and separately describes Rh-isoimmunisation as less common than ABO incompatibility but more severe and more predictable, with affected neonates often anaemic at birth and continued haemolysis rapidly worsening both the bilirubin and the anaemia — exactly the trajectory described here. The absence of PROM (a risk factor for infection, not haemolysis) points away from sepsis as the cause of this rapid bilirubin rise and keeps the reasoning on an immune-haemolytic process.\n\nAgainst the ladder: **Congenital spherocytosis** and **thalassemia** are both possible causes of neonatal haemolysis, but they are inherited red-cell defects that the lecture notes are diagnosed on smear and family history, not the first, most probable explanation for an immediate, sharply rising bilirubin at birth. **Sickle cell anemia** does not typically cause haemolysis in the immediate newborn period, since fetal haemoglobin still dominates and sickling has not yet begun. **Breast milk jaundice** is unconjugated but slow-onset, appearing after the first week in a thriving infant, the opposite of a bilirubin doubling within two hours of birth.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Recognise a rapidly rising bilirubin from birth as Rh isoimmunisation rather than a slower-onset or non-haemolytic cause.',
+  source: 'Pediatrics endpoint part1.pdf p.846'
+},
+
+{
+  id: 'pedep-neo-26',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'A term infant who was delivered at home is breastfeeding poorly. She is referred to you 7 days after birth because of bleeding from the umbilical cord and blood in the stool. Findings on the physical examination are normal. There are no petechiae, and there is no hepatosplenomegaly, purpura, nor neurologic abnormality. Of the following the MOST likely diagnosis is:',
+  options: [
+    'classic vitamin K deficiency',
+    'disseminated intravascular coagulation',
+    'factor VIII deficiency',
+    'neonatal alloimmune thrombocytopenia',
+    'Von Willebrand disease'
+  ],
+  answer: 0,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Infants who did not receive vitamin K prophylaxis are at risk for bleeding in the first week of life. Presentation includes GI or umbilical bleeding with otherwise normal examination.\n\n---\n\nA home delivery raises the likelihood that intramuscular vitamin K prophylaxis was missed *(not taken from the course material; the cached deck does not describe the prophylaxis protocol)*, and bleeding on day 7 from the umbilical stump and gut, with an otherwise entirely normal examination, is the textbook picture of classic vitamin K deficiency bleeding. `47)Hemorrhagic disorders .txt` sets vitamin K deficiency against DIC on a table where vitamin K deficiency keeps a normal platelet count, normal bleeding time and normal thrombin time — consistent with a baby who looks well apart from the bleeding itself.\n\nAgainst the ladder: **DIC** is explicitly excluded by the normal exam — the lecture’s own DIC picture includes petechiae, thrombosis and the clinical signs of the underlying illness driving it, none of which are present here. **Factor VIII deficiency** (haemophilia A) classically causes joint and muscle bleeding rather than umbilical or GI bleeding, and severe bleeding this early, before circumcision or another haemostatic challenge, is less typical. **Neonatal alloimmune thrombocytopenia** causes bleeding through a low platelet count and would be expected to produce petechiae or purpura, which the exam specifically rules out. **Von Willebrand disease** more commonly causes mucosal or post-procedural bleeding later in life and is not the "most likely" explanation for an isolated umbilical-and-GI bleed with a clean exam in an unprophylaxed home-born infant.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Recognise isolated umbilical and GI bleeding with a normal exam at day 7 in an unprophylaxed infant as classic vitamin K deficiency, distinguishing it from causes that also mark the skin or joints.',
+  source: 'Pediatrics endpoint part1.pdf p.848'
+},
+
+{
+  id: 'pedep-neo-27',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'In hyaline membrane disease which of the following is WRONG?',
+  options: [
+    'Manifestations appear within 4 hours after birth',
+    'More common in infants of diabetic mothers',
+    'Surfactant is an effective replacement therapy in severe cases',
+    'Steroids given antenatally to the mother is useless',
+    'Cesarean section delivery is a risk factor'
+  ],
+  answer: 3,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Antenatal steroids significantly reduce the risk of RDS by accelerating surfactant production. Saying they are useless is incorrect.\n\n---\n\nThis is a "which statement is WRONG" question, so the correct choice is the one false statement among five otherwise-true ones. `9) Respiratory distress in newborn.txt` names antenatal corticosteroids — betamethasone or dexamethasone, given intramuscularly to the mother roughly 48 hours before delivery at 34 weeks of gestation or less — as prevention for hyaline membrane disease, working by accelerating fetal lung maturity, the opposite of "useless." That makes the steroid option the wrong (correct-to-select) statement.\n\nThe other four options are each true, and each is confirmed by the same lecture: **manifestations appear within 4 hours after birth** matches the lecture describing respiratory distress appearing "immediately or shortly after birth," worsening over the first 48 hours. **More common in infants of diabetic mothers** — the lecture lists RDS among the recognised complications of maternal diabetes, since fetal hyperinsulinaemia delays surfactant maturation. **Surfactant is an effective replacement therapy in severe cases** is one of the lecture\'s three named treatment pillars for hyaline membrane disease, alongside supportive care and assisted ventilation. **Cesarean section delivery is a risk factor** *(not taken from the course material as a discrete listed risk factor; elective caesarean before labour is a well-established RDS risk factor because the catecholamine surge of labour helps clear fetal lung fluid and prime surfactant release, a surge a pre-labour section bypasses)*.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Identify that antenatal corticosteroids reduce RDS risk by accelerating surfactant production, making "steroids are useless" the false statement among true ones.',
+  source: 'Pediatrics endpoint part1.pdf p.850'
+},
+
+{
+  id: 'pedep-neo-28',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'Hypoxic – ischemic Encephalopathy may be associated with all of the following except?',
+  options: [
+    'Persistent pulmonary hypertension of newborn',
+    'Hypotension',
+    'Renal failure',
+    'Hypercalcemia',
+    'DIC'
+  ],
+  answer: 3,
+  explanation: '**The endpoint file prints this explanation:**\n\n> HIE can cause hypotension, renal failure, PPHN, and DIC, but hypocalcemia (not hypercalcemia) is more typical. Hypercalcemia is not associated.\n\n---\n\nThis is an "except" question: four options are recognised complications of hypoxic-ischaemic encephalopathy and one is not. `12) HIE.txt` covers the multiorgan support a cooled infant needs — maintaining oxygenation, perfusion, vasopressor support, and "normal hematocrit, blood glucose and electrolyte level esp calcium" — which is the lecture\'s own signal that calcium derangement, specifically toward *hypo*calcaemia, belongs to the expected picture, matching the box\'s correction that hypocalcaemia, not hypercalcaemia, is what actually occurs.\n\nHypoxic-ischaemic injury is a systemic insult, not a brain-only one, and the box\'s other three associations follow from that: perinatal asphyxia impairs myocardial contractility and produces **hypotension**; ischaemic tubular injury from the same hypoxic-hypoperfusion event produces **renal failure**; loss of the normal fall in pulmonary vascular resistance at birth produces **persistent pulmonary hypertension of the newborn**; and endothelial and hepatic injury from hypoxia-ischaemia can trigger a consumptive coagulopathy, **DIC** *(these three mechanisms beyond the calcium note above are not spelled out in the cached HIE lecture; not taken from the course material)*. **Hypercalcemia** is the one option with no place in this picture — hypoxic-ischaemic stress and the vasopressor/inotropic support used to treat it both push serum calcium down, not up, which is exactly why the box singles it out as the exception.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Recognise hypercalcaemia, not hypocalcaemia, as the finding not associated with hypoxic-ischaemic encephalopathy, against a background of hypotension, renal failure, PPHN and DIC.',
+  source: 'Pediatrics endpoint part1.pdf p.852'
+},
+
+{
+  id: 'pedep-neo-29',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'The preterm newborn is defined as:',
+  options: [
+    '<37 weeks gestation',
+    '>37 weeks gestation',
+    '<37 weeks gestation',
+    '<30 weeks gestation',
+    '>30 weeks gestation'
+  ],
+  answer: 2,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Preterm is defined as delivery before 37 completed weeks of gestation. This classification is important for risk assessment.\n\n---\n\n**Printed defect, flagged per the numbers exception:** the endpoint file prints options a and c as identical text, "<37 weeks gestation," with the highlighted key sitting on the second occurrence (option c) rather than the first (option a) — an apparent duplication rather than a genuinely distinct fifth option. Both identical options are transcribed here exactly as printed, and `answer` is left at the staged key, index 2 (the highlighted second occurrence), per the standing rule that a defective key is recorded, never disputed or moved.\n\nThe clinical content itself is unambiguous: `7) Intro to neonatology.txt` classifies newborns by gestational age immediately alongside its birth-weight categories (LBW <2500 g, VLBW <1500 g, ELBW <1000 g), and separately gives the incidence of preterm birth as roughly 11% of livebirths in the US — consistent with the standard obstetric cutoff of birth before 37 completed weeks of gestation used throughout the deck\'s prematurity discussion. The specific numeral "37 completed weeks" is not printed verbatim anywhere in the cached slide text extracted from this deck *(not taken from the course material as a literal quoted threshold; it is the standard WHO/obstetric definition of preterm birth)*.\n\nAgainst the distractor design: **>37 weeks gestation** and **>30 weeks gestation** both invert the direction of the cutoff — preterm means born *before*, not after, the threshold. **<30 weeks gestation** sets the cutoff far too low; that range instead marks the extremely-preterm subgroup, not the boundary for "preterm" as a whole.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Identify birth before 37 completed weeks of gestation as the definition of preterm, and record the printed duplicate-option defect without disputing the staged key.',
+  source: 'Pediatrics endpoint part1.pdf p.854'
+},
+
+{
+  id: 'pedep-neo-30',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: "Naser, a newborn baby, is noted to have hepatosplenomegaly and a petechial rash. His red eye reflex is abnormal and there is no heart murmur. He fails his newborn screening hearing test. His mother's antenatal screening bloods were all normal. What is the most likely condition that has caused these symptoms?",
+  options: [
+    'Dysmorphic syndrome',
+    'Congenital infection',
+    'Infant of diabetic mother',
+    'Cranial abnormality',
+    'Neonatal infection'
+  ],
+  answer: 1,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Classic TORCH infections cause microcephaly, cataracts, hepatosplenomegaly, and sensorineural hearing loss. The abnormal red reflex suggests cataracts from congenital rubella or CMV.\n\n---\n\nNaser\'s findings — hepatosplenomegaly, a petechial rash, an abnormal red reflex, and a failed hearing screen — combine four separate systems (liver/spleen, skin, eye, ear) into one intrauterine picture, which is the pattern that points to a TORCH (Toxoplasmosis, Other, Rubella, CMV, Herpes) congenital infection rather than a single-organ diagnosis. `7) Intro to neonatology.txt` lists TORCH and "congenital infection" among the recognised causes of symmetrical IUGR/SGA, and `58) cerebral palsy.txt` names intrauterine TORCH infection as a prenatal risk factor serious enough to warrant TORCH screening when suspected — confirming TORCH as a real, taught cause of multisystem neonatal disease, though neither cached deck spells out the specific tetrad of hepatosplenomegaly, petechiae, cataract and sensorineural hearing loss printed in the box *(that specific clinical constellation, and the fact that congenital rubella and CMV are the two classic causes of a neonatal cataract with an abnormal red reflex, is not taken from the course material)*. A normal maternal antenatal screen does not rule this out, since routine antenatal panels in most settings do not include full TORCH serology, and several TORCH infections (notably CMV) can be asymptomatic in the mother *(also not taken from the course material)*.\n\nAgainst the ladder: a **dysmorphic syndrome** (e.g. a chromosomal disorder) is not excluded outright, but nothing in the vignette describes dysmorphic facial or limb features, and a syndrome alone does not explain a petechial rash. **Infant of diabetic mother** is undermined by the stem itself, which gives no history of maternal diabetes and specifically notes no heart murmur, whereas IDM-associated cardiomyopathy is often what produces one. **Cranial abnormality** is too vague and structural to explain a multisystem picture spanning liver, skin, eye and ear. **Neonatal infection** (postnatal sepsis) can cause hepatosplenomegaly and a petechial rash from DIC or thrombocytopenia, but it does not produce a congenital cataract or congenital sensorineural hearing loss — those two findings are stigmata of an *intrauterine*, not a postnatal, infection, which is exactly what separates "congenital infection" from plain "neonatal infection" as an answer choice.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Recognise hepatosplenomegaly, petechiae, an abnormal red reflex and failed hearing screening together as the multisystem pattern of a TORCH congenital infection, distinguishing it from postnatal sepsis, a syndrome or IDM.',
+  source: 'Pediatrics endpoint part1.pdf p.856'
+},
+
+{
+  id: 'pedep-neo-31',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'During a normal term newborn resuscitation, which of the following should be performed first?',
+  options: [
+    'The infant should be dried and kept warm under a radiant heater',
+    'The heart rate should be auscultated.',
+    'Breath sounds should be auscultated.',
+    'The nose and oropharynx should be suctioned'
+  ],
+  answer: 0,
+  explanation: '**The endpoint file prints this explanation:**\n\n> The initial step is to prevent hypothermia by drying and warming. Airway, breathing, and circulation steps follow as needed.\n\n---\n\nFor a normal term delivery, the very first action in the standard newborn resuscitation sequence is drying the infant and placing it under a radiant heater, because heat loss is rapid in a wet newborn and hypothermia itself raises oxygen consumption and worsens the respiratory and circulatory status that the following steps are trying to assess — drying and warming has to happen *before* that assessment is meaningful, not after it *(the routine stepwise newborn resuscitation sequence itself is not spelled out in the cached decks; not taken from the course material, though `9) Respiratory distress in newborn.txt` does list delivery-room thermoregulation as part of its own supportive-care treatment bullet, consistent with warmth coming first)*.\n\nAgainst the ladder: **auscultating the heart rate** and **auscultating breath sounds** are both part of the primary assessment that follows stabilisation, not the opening action — they only give a meaningful reading once the infant is dried, warm and positioned. **Suctioning the nose and oropharynx** is not the default first step for a vigorous term newborn; the same lecture reserves oropharyngeal suctioning "as soon as the head is delivered" specifically for the meconium-stained delivery, where clearing the airway of aspirated meconium is the priority, not for a routine term birth. Applying suction before drying and warming a normal newborn also risks a vagal bradycardic response and delays the one step that actually needs to happen first.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Identify drying and warming under a radiant heater as the first step of a normal term newborn resuscitation, ahead of auscultation or suctioning.',
+  source: 'Pediatrics endpoint part1.pdf p.858'
+},
+
+{
+  id: 'pedep-neo-32',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'Which of the following statements is TRUE about Transient tachypnea of the newborn?',
+  options: [
+    'Commonly associated with caesarian section delivery',
+    'Commonly associated with preterm delivery',
+    'Usually treated with mechanical ventilation',
+    'Caused by surfactant deficiency',
+    'Mild prenatal infection is a common association'
+  ],
+  answer: 0,
+  explanation: '**The endpoint file prints this explanation:**\n\n> TTN results from delayed clearance of lung fluid, more common after C-section where labor-related catecholamine surge is absent. It is usually mild and self-limited.\n\n---\n\n`9) Respiratory distress in newborn.txt` names elective caesarean section, male gender and maternal diabetes as the printed risk factors for transient tachypnea of the newborn (TTN), and explains the mechanism directly: during labour, rising adrenaline makes fetal lung fluid secretion stop and resorption begin, so a delivery that bypasses labour — an elective section — misses that catecholamine trigger and clears fetal lung fluid more slowly, producing the wet-lung picture on chest X-ray (perihilar streaking, fluid in the interlobar fissures) that the same lecture describes.\n\nAgainst the ladder: **commonly associated with preterm delivery** inverts the lecture\'s own statement that TTN "occurs in term and late preterm neonates" — prematurity is the classic association for hyaline membrane disease (surfactant deficiency), not for TTN. **Usually treated with mechanical ventilation** overstates the lecture\'s management, which describes TTN as alleviated by supplemental oxygen or CPAP and resolving within three days, with most cases needing no active treatment at all. **Caused by surfactant deficiency** describes the pathophysiology of hyaline membrane disease, not TTN, which the lecture instead attributes to delayed clearance of fetal lung fluid by the pulmonary lymphatics. **Mild prenatal infection is a common association** is not a risk factor the lecture lists for TTN at all; it is not on the printed list of elective CS, male gender and maternal diabetes.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Identify elective caesarean delivery, via the missing labour catecholamine surge, as the true association for TTN, against prematurity, surfactant deficiency and prenatal infection.',
+  source: 'Pediatrics endpoint part1.pdf p.860'
+},
+
+{
+  id: 'pedep-neo-33',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'Of the following, the MOST likely complications to expect for infants of diabetic mothers are:',
+  options: [
+    'hyperacusis, hypercalcemia, hydronephrosis',
+    'hyperbilirubinemia, hypercalcemia, polydactyly',
+    'hyperglycemia, hypocalcemia, polysplenia',
+    'hypoglycemia, hypocalcemia, polycythemia',
+    'hypogonadism, hypocalcemia, polyuria'
+  ],
+  answer: 3,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Hyperinsulinism causes hypoglycemia; calcium regulation is impaired, and hypoxia-induced erythropoiesis causes polycythemia. These are the classic complications.\n\n---\n\n`7) Intro to neonatology.txt` lists hypoglycemia, hypocalcemia and polycythemia together among the recognised complications of an infant of a diabetic mother (alongside macrosomia, RDS, hyperbilirubinemia, renal vein thrombosis and cardiomyopathy), and the mechanism the box gives matches the lecture directly: fetal hyperinsulinism (from chronic maternal hyperglycaemia) drops the newborn\'s glucose the moment the maternal supply is cut at delivery, calcium regulation is impaired by the same hyperinsulinaemic state, and chronic relative intrauterine hypoxia drives excess erythropoiesis into polycythaemia.\n\nEach distractor is built by inverting or substituting one or more of these three terms: **hyperacusis, hypercalcemia, hydronephrosis** replaces all three with unrelated or opposite findings — hyperacusis and hydronephrosis are not on the IDM list at all, and hypercalcemia inverts the true hypocalcaemia. **Hyperbilirubinemia, hypercalcemia, polydactyly** keeps one real IDM finding (hyperbilirubinaemia is on the lecture\'s list) but inverts the calcium direction and substitutes a structural anomaly, polydactyly, that is not a recognised IDM complication *(polydactyly is not on the cached lecture\'s IDM list; not taken from the course material)*. **Hyperglycemia, hypocalcemia, polysplenia** inverts the glucose direction — these infants become *hypo*glycaemic after birth, not hyperglycaemic — and substitutes polysplenia, an unrelated congenital anomaly. **Hypogonadism, hypocalcemia, polyuria** swaps in two findings absent from the IDM list entirely.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Match hypoglycaemia, hypocalcaemia and polycythaemia as the correct three-term set of classic IDM complications, against distractor sets that invert or substitute one term.',
+  source: 'Pediatrics endpoint part1.pdf p.862'
+},
+
+{
+  id: 'pedep-neo-34',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'Which of the following birth injuries may be associated with severe blood loss and hypovolemic shock?',
+  options: [
+    'caput succedaneum',
+    'cephalhematoma',
+    'bruising at face',
+    'subaponeurotic hemorrhage'
+  ],
+  answer: 3,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Subgaleal hemorrhage can accumulate large amounts of blood, leading to hypovolemic shock. It is the most serious scalp birth injury.\n\n---\n\n`10) new Seizures . Birth injuries , Hpoglycemia 2.txt` lists subaponeurotic (sub-galeal) hemorrhage alongside caput succedaneum and cephalhematoma as the three differentials for a birth-related scalp swelling, but only the subaponeurotic space is unbounded: it lies between the galea aponeurotica and the periosteum, a loose plane with no anatomic borders, so bleeding into it can spread across the whole scalp and accumulate a large enough volume to cause hypovolemic shock — which is why the lecture and the box both single it out as the most serious of the three scalp injuries *(the specific mechanism — the unbounded subgaleal plane versus the bounded subperiosteal and subcutaneous ones — is not spelled out in the cached lecture beyond naming the three entities; not taken from the course material)*.\n\nAgainst the ladder: **caput succedaneum** is oedema of the subcutaneous tissue of the presenting part, crosses suture lines, and the lecture notes it resolves within about 48 hours — a fluid collection, not a blood collection, and never large enough to cause shock. **Cephalhematoma** is subperiosteal bleeding, and because the periosteum is tightly bound to each individual skull bone, the collection is limited by the suture lines and self-tamponades well before reaching a volume that threatens circulation. **Bruising at face** is superficial soft-tissue bruising from a difficult delivery (e.g. face presentation) and, however visible, does not carry the blood volume needed to produce hypovolaemic shock.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Identify subaponeurotic (subgaleal) haemorrhage, via its unbounded scalp plane, as the birth injury that can cause hypovolaemic shock, against the self-limited caput succedaneum and cephalhematoma.',
+  source: 'Pediatrics endpoint part1.pdf p.864'
+},
+
+{
+  id: 'pedep-neo-35',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'You perform a routine newborn examination on a baby who is 72 hours old. Which one of the following features requires further immediate assessment?',
+  options: [
+    'Acrocyanosis (cyanosis of the hands and feet)',
+    'A heart murmur',
+    'White vaginal discharge',
+    'Breast enlargement',
+    'Subconjunctival hemorrhages'
+  ],
+  answer: 1,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Many newborn murmurs are benign, but a murmur at 72 hours could indicate congenital heart disease. This requires urgent evaluation.\n\n---\n\n`7) Intro to neonatology.txt` describes a systolic murmur (grade ii/vi, at the upper left sternal border) as part of the clinical picture of a haemodynamically significant patent ductus arteriosus — evidence that a newborn murmur is not automatically a normal finding and can be the first clue to a structural or ductal cardiac lesion that needs urgent cardiology work-up, rather than something to reassure the parents about on the spot *(the specific framing of a routine 72-hour check as a comparative checklist of "benign, no action" versus "needs urgent evaluation" findings is not printed in the cached deck as a single list; not taken from the course material)*.\n\nThe other four findings are all recognised benign variants of the first days of life. **Acrocyanosis** — bluish discolouration confined to the hands and feet from normal peripheral vasomotor instability — is distinct from *central* cyanosis, which the same lecture lists as a genuine sign of respiratory distress; acrocyanosis alone resolves without intervention *(the acrocyanosis-versus-central-cyanosis distinction itself is not spelled out in the cached deck beyond that central cyanosis heading; not taken from the course material)*. **White vaginal discharge** and **breast enlargement** both follow withdrawal of maternal oestrogen after delivery, are common in term newborns of either the expected sex, and settle over the following days to weeks without treatment *(not taken from the course material)*. **Subconjunctival hemorrhages** are minor, benign bleeds from pressure on the fetal head during vaginal delivery and resolve on their own within one to two weeks *(not taken from the course material)*.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Recognise a new heart murmur at 72 hours as the finding that needs urgent cardiac evaluation, against acrocyanosis, vaginal discharge, breast enlargement and subconjunctival haemorrhage as benign newborn variants.',
+  source: 'Pediatrics endpoint part1.pdf p.866'
+},
+
+{
+  id: 'pedep-neo-36',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'The most important and effective action in neonatal resuscitation if the baby does not start to breathe after delivery is:',
+  options: [
+    'Provide oxygen',
+    'Perform chest compressions',
+    'Ventilate the lungs',
+    'Give epinephrine',
+    'Tracheal intubation'
+  ],
+  answer: 2,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Positive pressure ventilation is the single most important and effective intervention in neonatal resuscitation. Oxygen, compressions, and drugs are secondary.\n\n---\n\n`3) Pediatric resuscitation.txt` states directly that bag-and-mask ventilation is as effective as endotracheal intubation, and dedicates its own slides to what makes bag-mask ventilation effective — using only the force and tidal volume needed to make the chest visibly rise, avoiding excess pressure, and having a second rescuer verify adequate chest expansion — which is exactly the emphasis behind the box’s claim that ventilating the lungs, not merely supplying oxygen, is the single most important action once a newborn fails to breathe *(the specific "airway is open but the baby still is not breathing → ventilate first" reasoning for the neonatal case is not spelled out as a standalone algorithm in the cached deck beyond this bag-mask-ventilation emphasis; not taken from the course material)*. Establishing lung inflation is what allows oxygen to actually reach the alveoli and what restores the heart rate in the great majority of apnoeic newborns, without needing to progress further down the resuscitation ladder.\n\nAgainst the ladder: **providing oxygen** alone does nothing if the lungs are not being inflated to move that oxygen into the alveoli — supplemental oxygen without ventilation cannot rescue an apnoeic baby. **Chest compressions** are reserved for a heart rate that stays low despite effective ventilation, and starting them before the lungs are ventilated skips the step that would have corrected the bradycardia on its own. **Epinephrine** is a later-tier drug, used only when compressions plus ventilation fail to raise the heart rate — administering it before ventilating would not solve the underlying problem of un-oxygenated blood. **Tracheal intubation** can deliver ventilation, but the same lecture states bag-mask ventilation is just as effective, so intubation is a route to achieve ventilation, not a separate step that outranks ventilating the lungs itself.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Identify lung ventilation, not oxygen alone, compressions, epinephrine or intubation specifically, as the single most important intervention for an apnoeic newborn.',
+  source: 'Pediatrics endpoint part1.pdf p.868'
+},
+
+{
+  id: 'pedep-neo-37',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'A mother is known to have pre-eclampsia and her fetus has shown signs of intrauterine growth restriction on antenatal scans. He is delivered at 37 weeks and weighs 2.2 kg. He is admitted to the Special Care Baby Unit because of his size. He appears well and has had a breast feed. What is he most at risk of?',
+  options: [
+    'Anemia',
+    'Congenital cardiac abnormality',
+    'Group B streptococcus infection',
+    'Hypoglycemia',
+    'Hyperglycemia'
+  ],
+  answer: 3,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Small-for-gestational-age infants have reduced glycogen and fat stores, putting them at high risk of hypoglycemia. Close monitoring is required.\n\n---\n\nPre-eclampsia restricts placental perfusion, and the resulting intrauterine growth restriction leaves this baby small-for-gestational-age (SGA) at term rather than simply preterm. `7) Intro to neonatology.txt` lists the complications of SGA explicitly: respiratory distress, hypothermia, **hypoglycemia**, congenital infection, polycythemia/hyperbilirubinemia and NEC. `10) new Seizures . Birth injuries , Hpoglycemia 2.txt` gives the mechanism directly under its hypoglycemia section — limited glycogen stores from IUGR and prematurity are named as a specific pathogenic route to neonatal hypoglycemia, alongside SGA\'s decreased glycogen and fat stores as an aetiological category in its own right. The same deck\'s working definition of neonatal hypoglycemia is <30 mg/dL in the first 24 hours, <40 mg/dL from 1–3 days and <45 mg/dL after day 3.\n\nThe vignette detail that the baby "appears well" does not argue against hypoglycemia — the same lecture stresses that hypoglycemia is "very non-specific and mimics many illnesses," with signs as subtle as poor feeding, temperature instability, lethargy and jitteriness rather than a dramatic presentation, which is exactly why glycemic screening is protocol-driven in a growth-restricted infant rather than triggered only by symptoms.\n\nAgainst the ladder: **Anemia** is not the SGA-specific risk — chronic intrauterine hypoxia in growth restriction more typically drives fetal erythropoietin up and produces **polycythemia**, the opposite direction from anaemia. **Congenital cardiac abnormality** tracks with the *symmetrical* (early-onset) pattern of IUGR, where chromosomal anomalies and TORCH infection are the drivers; this vignette gives late, pre-eclampsia-driven placental insufficiency, the asymmetrical pattern, with no dysmorphic or cardiac findings described. **Group B streptococcus infection** is a risk conferred by maternal colonisation and obstetric factors (prolonged rupture of membranes, maternal fever in labour), none of which is mentioned here — SGA itself does not specifically raise GBS risk the way it raises hypoglycaemia risk. **Hyperglycemia** runs in the opposite direction from what SGA physiology predicts; it is the infant of a diabetic mother (fetal hyperinsulinaemia in utero, then rebound hypoglycaemia after delivery) who sits at the hyperglycaemia/hypoglycaemia end of that spectrum, not a growth-restricted infant with depleted glycogen reserves.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Recognise a pre-eclampsia-related, growth-restricted term infant as small-for-gestational-age and identify hypoglycaemia, not anaemia or hyperglycaemia, as the specific metabolic risk from depleted glycogen and fat stores.',
+  source: 'Pediatrics endpoint part1.pdf p.870'
+},
+
+{
+  id: 'pedep-neo-38',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'Which of the following is RIGHT regarding pathological apnea in newborns?',
+  options: [
+    'It lasts < 20 seconds with tachycardia',
+    'It is central if there is cessation of air flow with presence of respiratory effort',
+    'More common in full term neonates',
+    'Bag and mask ventilation are contraindicated',
+    'May be treated with theophylline'
+  ],
+  answer: 4,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Pathological apnea lasts >20 seconds or is associated with bradycardia. In preterms, caffeine or theophylline can be used as respiratory stimulants.\n\n---\n\n`7) Intro to neonatology.txt` covers apnea of prematurity as a developmental problem of respiratory regulation whose "incidence is inversely related to GA" (more common the more preterm the infant, the opposite of option c), that generally resolves by 36 weeks corrected gestational age, and that a cessation of breathing of 20 seconds leads to bradycardia and desaturation — the deck\'s own numeral for the pathological cut-off, matching the box\'s ">20 seconds." The same lecture lists secondary causes to screen for: hypoxia, infection, anaemia, electrolyte disturbance, hypoglycaemia, seizures, heart failure, or aspiration from gastro-oesophageal reflux.\n\nMethylxanthines (caffeine, and historically theophylline) as respiratory stimulants for apnea of prematurity, and the central-versus-obstructive-versus-mixed classification of apnoea by airflow and respiratory effort, are standard neonatal teaching but are not spelled out in the cached deck beyond the definition and risk-factor list above *(not taken from the course material)*.\n\nAgainst the ladder: **"< 20 seconds with tachycardia"** inverts both numbers the box gives — pathological apnoea is defined by a *longer* pause than 20 seconds and by *brady*cardia (from vagally-mediated reflex bradycardia and hypoxia), not tachycardia. **"Central if there is cessation of air flow with presence of respiratory effort"** describes *obstructive* apnoea, not central apnoea — central apnoea is cessation of air flow *with absence* of respiratory effort (the drive to breathe itself stops), while obstructive apnoea keeps respiratory effort against a blocked airway; the option swaps the two definitions *(the central/obstructive/mixed distinction itself is not taught in the cached deck; not taken from the course material)*. **"More common in full term neonates"** contradicts the lecture directly, which states the incidence rises with lower gestational age, so apnoea of prematurity is a preterm, not a term, problem. **"Bag and mask ventilation are contraindicated"** is simply wrong — tactile stimulation and, if that fails, bag-and-mask ventilation are standard first-line responses to an apnoeic spell, exactly as in general neonatal resuscitation.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Define pathological neonatal apnoea as a pause >20 seconds with bradycardia, most common in preterm infants, and distinguish central from obstructive apnoea by the presence or absence of respiratory effort.',
+  source: 'Pediatrics endpoint part1.pdf p.872'
+},
+
+{
+  id: 'pedep-neo-39',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'Which one of the following is the most important cause of jaundice presenting in the first 24 h of life?',
+  options: [
+    'Prematurity',
+    'Hemolysis',
+    'Breastfeeding',
+    'Physiological jaundice',
+    'Early-onset sepsis'
+  ],
+  answer: 1,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Jaundice appearing within 24 hrs is always pathologic, most often due to hemolysis (Rh or ABO incompatibility). Physiological jaundice never appears this early.\n\n---\n\n`8) COMMON PROBLEMS IN THE TERM NEWBORN.txt` states this directly: "visible jaundice with a TSB greater than 5 mg/dL before 24 hours of age is most commonly a result of significant hemolysis," and separately gives Rh alloimmunisation and ABO incompatibility as its two named antibody-mediated (Coombs-positive) hemolytic causes — Rh disease "often anaemic at birth, with continued hemolysis rapidly causing hyperbilirubinaemia and worsening anaemia," and ABO incompatibility "usually mild" but capable of needing therapy in a type-O mother\'s infant.\n\nAgainst the ladder, the same lecture\'s own physiological-jaundice criteria rule out the other options directly. **Physiological jaundice** is defined by the deck as "visible jaundice appearing *after* 24 hours of age," with a rise of <5 mg/dL/day and a peak at 3–5 days — by definition it cannot be the cause of jaundice presenting within the first 24 hours, which is exactly the box\'s closing line. **Prematurity** predisposes to *exaggerated physiological* jaundice (from lower UDPGT activity and immature conjugation) and to delayed clearance, but it operates on the same after-24-hour physiological timeline, not as a first-day trigger. **Breastfeeding** (breastfeeding-associated jaundice, from poor early enteral intake and increased enterohepatic circulation) is a first-week problem that "occurs before the milk supply is established," again after the first 24 hours, and is a nonhemolytic mechanism with a normal reticulocyte count, unlike the elevated reticulocyte count of a hemolytic process. **Early-onset sepsis** can cause jaundice in a sick neonate, but it is not the *most important* cause of first-day jaundice in the framework the lecture gives — hemolysis is named specifically as the leading mechanism, and sepsis-associated jaundice is typically accompanied by other signs of systemic illness rather than isolated first-day hyperbilirubinaemia.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Identify hemolysis (Rh or ABO incompatibility) as the leading cause of jaundice presenting within the first 24 hours of life, and recognise that physiological jaundice by definition cannot appear this early.',
+  source: 'Pediatrics endpoint part1.pdf p.874'
+},
+
+{
+  id: 'pedep-neo-40',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: "A black mother is found to have glycosuria at her midwife appointment at 32 weeks' gestation. Her glucose tolerance test and fasting glucose are abnormal. She is given dietary advice to control her blood glucose. What problem is her newborn baby at most increased risk of?",
+  options: [
+    'Anemia',
+    'Hyperglycemia',
+    'Respiratory distress syndrome',
+    'Hypocalcemia'
+  ],
+  answer: 2,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Hyperinsulinemia delays surfactant synthesis, so IDM infants have increased risk of RDS even at term.\n\n---\n\nAbnormal glucose tolerance and fasting glucose at 32 weeks with dietary management is gestational diabetes, and this baby is therefore an infant of a diabetic mother (IDM). `7) Intro to neonatology.txt` lists the IDM complication set directly: fetal demise, macrosomia, congenital malformations, **RDS**, hyperbilirubinaemia, hypoglycaemia, hypocalcaemia, polycythaemia, renal vein thrombosis and cardiomyopathy — RDS is named fourth on that list, and the lecture separately gives the aetiological chain as maternal hyperglycaemia driving fetal hyperglycaemia and fetal hyperinsulinaemia. The mechanism by which that fetal hyperinsulinaemia delays type II pneumocyte surfactant production, raising RDS risk in an IDM even at term rather than only in a preterm infant, is standard neonatal physiology but is not spelled out step-by-step in the cached deck beyond naming RDS on the complication list *(not taken from the course material)*.\n\nAgainst the ladder: **Anemia** is not on the deck\'s IDM list — **polycythaemia** is, from chronic fetal hyperinsulinaemia and relative fetal hypoxia driving erythropoietin up, the opposite direction from anaemia. **Hyperglycemia** is not the IDM risk either — the same lecture lists **hypoglycaemia** as complication #6, since the fetus\'s own hyperinsulinaemia persists after birth once the maternal glucose supply is cut off at delivery, driving the newborn\'s glucose *down*, not up. **Hypocalcemia** is genuinely on the IDM list (#7) and is a real risk in this baby, but it is not the option the box keys — RDS is highlighted as the single most-increased risk in the vignette, and between two real complications on the same list the box\'s own emphasis, not this expansion, decides which one is "most."\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Identify RDS, driven by fetal hyperinsulinaemia delaying surfactant synthesis, as the keyed complication of maternal gestational diabetes, distinct from hypoglycaemia, polycythaemia and hypocalcaemia which are also on the IDM complication list.',
+  source: 'Pediatrics endpoint part1.pdf p.876'
+},
+
+{
+  id: 'pedep-neo-41',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'Single most common cause of the decline in SIDS:',
+  options: [
+    'supine sleeping',
+    'Feet to foot of cot',
+    'separate bed',
+    'avoid smoking'
+  ],
+  answer: 0,
+  explanation: '**The endpoint file prints this explanation:**\n\n> The "Back to Sleep" campaign (supine sleeping) has been the most significant factor in reducing SIDS rates worldwide.\n\n---\n\nSudden infant death syndrome and its risk-reduction advice are not covered in the cached lecture set at all — none of the peds decks carries a SIDS, "Back to Sleep," or safe-sleep section, so this entry is answered in full from general medical knowledge and tagged throughout *(not taken from the course material)*.\n\nThe international "Back to Sleep"/"Safe to Sleep" campaigns of the early 1990s promoted supine (back-lying) sleep positioning after prone sleeping was identified as a major modifiable SIDS risk factor; national SIDS rates fell sharply, often by more than half, in the years immediately following each country\'s campaign, more than any other single intervention introduced around the same time *(not taken from the course material)*.\n\nThe remaining three options are all genuine, guideline-listed components of safe-sleep advice, but none carries the same measured population-level impact as the positional change: **"Feet to foot of cot"** (positioning the baby with feet touching the foot of the cot) reduces the chance of the infant sliding under loose bedding and becoming covered, but it addresses one contributory hazard rather than the dominant modifiable factor. **"Separate bed"** (avoiding bed-sharing, particularly with a smoker, on a sofa, or when a parent is exhausted or has used alcohol/sedatives) lowers accidental overlay and airway-obstruction risk but is one element among several room-sharing/bed-sharing recommendations. **"Avoid smoking"** (both antenatal maternal smoking and postnatal exposure) is an independent, dose-related SIDS risk factor, but epidemiologically the shift to supine positioning produced the largest single drop in incidence when it was introduced, which is why the box names it specifically rather than smoking avoidance *(all not taken from the course material)*.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Identify supine sleep positioning ("Back to Sleep") as the single intervention most responsible for the population-level decline in SIDS, against other genuine but smaller-effect safe-sleep measures.',
+  source: 'Pediatrics endpoint part1.pdf p.878'
+},
+
+{
+  id: 'pedep-neo-42',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'Which requires further immediate investigation in a newborn?',
+  options: [
+    'heart murmur',
+    'undescended testes',
+    'subconjunctival hemorrhage',
+    'breast enlargement'
+  ],
+  answer: 0,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Unlike findings such as subconjunctival hemorrhage or breast enlargement, a murmur may indicate serious congenital heart disease.\n\n---\n\nThis is a general "which finding is not a benign newborn variant" item, testing the same underlying principle as other newborn-examination items in this bank: most soft-tissue and transient findings on a routine check are self-limiting, while a new murmur specifically needs cardiac work-up because it can be the only clinical clue to a structural heart defect that is otherwise asymptomatic in the first days of life. None of the cached peds decks carries a dedicated newborn-examination checklist covering these four specific findings, so the comparative detail below is answered from general medical knowledge and tagged throughout *(not taken from the course material)*.\n\nA **heart murmur** newly heard on a routine check is treated as needing further evaluation because, although many neonatal murmurs are transitional/innocent (e.g. from a closing ductus arteriosus), a persistent or otherwise-abnormal murmur can be the first sign of congenital heart disease that has not yet declared itself with cyanosis or heart failure, so it is not dismissed without at least a follow-up assessment.\n\nAgainst the ladder, the other three are recognised benign findings of the first days of life that do not need urgent work-up: **Undescended testes**, found in a minority of term boys at birth, very often descend spontaneously over the following months and are simply followed clinically rather than investigated immediately, with referral reserved for testes still undescended around 6 months of age. **Subconjunctival hemorrhage** is a minor, self-limited bleed from pressure on the fetal head during vaginal delivery that resolves without treatment over one to two weeks. **Breast enlargement**, seen in newborns of either sex, follows withdrawal of maternal oestrogen after birth and settles on its own over the following days to weeks without intervention *(all not taken from the course material)*.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Recognise a new heart murmur as the newborn examination finding that needs further immediate investigation, against undescended testes, subconjunctival haemorrhage and breast enlargement as benign, self-limiting variants.',
+  source: 'Pediatrics endpoint part1.pdf p.880'
+},
+
+{
+  id: 'pedep-neo-43',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'A full-term male infant, with a birth weight of 3.7 kg, is born by elective caesarean section. His mother was well during pregnancy and had a normal blood glucose screen. Zak becomes tachypnoeic with indrawing between his ribs at 2 hours of age. Examination is otherwise normal. A chest X-ray looks normal. Diagnosis?',
+  options: [
+    'transient tachypnea of new born',
+    'pneumonia',
+    'aspiration of meconium',
+    'bronchopulmonary dysplasia',
+    'respiratory distress syndrome'
+  ],
+  answer: 0,
+  explanation: '**The endpoint file prints this explanation:**\n\n> TTN presents with tachypnea soon after birth, especially after C-section, and resolves with supportive care. CXR is often normal or shows mild fluid retention.\n\n---\n\n`9) Respiratory distress in newborn.txt` matches this vignette point for point. Transient tachypnoea of the newborn (TTN, also called RDS type 2 or "wet lung") is the single most common cause of neonatal respiratory distress, over 40% of cases, from delayed lymphatic clearance of fetal lung fluid. Its named risk factors are **elective caesarean section**, **male gender**, and maternal diabetes — this baby has the first two directly, with a normal glucose screen excluding the third. Onset is "within 2 hours after delivery with mild to moderate RD," matching this baby\'s tachypnoea and rib indrawing starting at exactly 2 hours. The chest radiograph classically shows perihilar streaking with fluid in the interlobar fissures, but the lecture also notes "TTN is a clinical diagnosis" — an early or mild film can look unremarkable, consistent with this vignette\'s normal CXR, and the box\'s own wording ("often normal or shows mild fluid retention") reflects that same variability. Management is supportive (supplemental oxygen or CPAP), and it resolves within about 3 days, most cases needing no active treatment.\n\nAgainst the ladder: **Pneumonia** typically presents with additional signs of sepsis (temperature instability, hypotension, lethargy) and is not specifically tied to the elective-CS, term, well-mother picture given here; nothing in the vignette (maternal fever, prolonged rupture of membranes) points to an infective route. **Aspiration of meconium** requires meconium-stained liquor at delivery, which is not mentioned, and MAS classically produces patchy, asymmetric infiltrates on CXR rather than a normal film. **Bronchopulmonary dysplasia** is a chronic lung disease of prematurity from prolonged ventilation/oxygen exposure over weeks; this is a term infant at 2 hours of age, far too early and without the ventilatory history BPD requires. **Respiratory distress syndrome** (surfactant deficiency, RDS type 1) is a disease of prematurity with onset in the first 4 hours and a fine reticulogranular CXR pattern with air bronchograms — this baby is full-term with a normal film, arguing against RDS and for the far more common, milder, self-resolving TTN.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Recognise transient tachypnoea of the newborn from onset within 2 hours of an elective caesarean delivery in a term male infant with a normal or near-normal chest X-ray, against pneumonia, meconium aspiration, BPD and RDS type 1.',
+  source: 'Pediatrics endpoint part1.pdf p.882'
+},
+
+{
+  id: 'pedep-neo-44',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'Which group has the largest water distribution?',
+  options: [
+    'Preterm',
+    'Full term',
+    '1 year',
+    '5 years'
+  ],
+  answer: 0,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Preterm infants have the highest total body water proportion (up to 80–85%). This decreases with increasing age.\n\n---\n\nTotal body water as a proportion of body weight is not covered in the cached peds lecture set, so this entry is answered from general medical developmental physiology and tagged throughout *(not taken from the course material)*.\n\nTotal body water falls progressively across development: it is highest in the preterm fetus/infant, around 80–85% of body weight (matching the box\'s figure), falls to roughly 75–78% in the full-term newborn, continues down to about 60–65% by one year of age as extracellular water contracts relative to intracellular water and to growing fat and lean tissue mass, and settles near the adult figure of roughly 55–60% by around 5 years and beyond *(not taken from the course material)*. The mechanism is that a fetus/very preterm infant is proportionally almost all extracellular fluid and has very little body fat, and both postnatal diuresis in the first days of life and the accumulation of fat (which contains very little water) with advancing age steadily shrink the water fraction as a proportion of total weight.\n\nAgainst the ladder, each older group represents one step further along that same falling curve: **Full term** infants have already undergone some of the third-trimester extracellular fluid contraction and are less water-rich than a preterm infant born earlier in gestation. **1 year** and **5 years** sit progressively lower still as growth adds proportionally more fat and lean tissue relative to water, so ranking the options from highest to lowest water fraction reproduces exactly the order preterm > full term > 1 year > 5 years that the question asks about, with preterm keyed as the highest *(all not taken from the course material)*.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Recognise that total body water as a proportion of body weight is highest in preterm infants and falls progressively through term, infancy and childhood.',
+  source: 'Pediatrics endpoint part1.pdf p.884'
+},
+
+{
+  id: 'pedep-neo-45',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'Which of the following is a common complication in infants of diabetic mothers?',
+  options: [
+    'Hypertrophic cardiomyopathy',
+    'Microsomia',
+    'Hyperglycemia',
+    'Hypocalcemia'
+  ],
+  answer: 0,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Infants of diabetic mothers may develop hypertrophic cardiomyopathy due to fetal hyperinsulinism causing septal hypertrophy.\n\n---\n\n`7) Intro to neonatology.txt` lists IDM complications explicitly and closes its IDM section with a dedicated heading, "HYPERTROPHIC CARDIOMYOPATHY IN IDM," naming it item #10 on the complication list alongside fetal demise, macrosomia, congenital malformations, RDS, hyperbilirubinaemia, hypoglycaemia, hypocalcaemia, polycythaemia and renal vein thrombosis. The mechanism the box gives — fetal hyperinsulinism driving septal hypertrophy — follows the same hyperinsulinaemia pathway the lecture uses to explain the other IDM complications: chronic fetal hyperinsulinaemia acts as a growth factor on cardiac muscle (as it does on overall somatic growth in macrosomia), thickening the interventricular septum.\n\nAgainst the ladder: **"Microsomia,"** as printed on the option, denotes an abnormally small or underdeveloped body part (e.g. hemifacial microsomia) — the opposite growth direction from what IDM actually produces, which is **macrosomia** (excess fetal growth from anabolic fetal hyperinsulinaemia), the complication the lecture lists as #2. **Hyperglycemia** is not the IDM risk after birth — the lecture lists **hypoglycaemia** (#6) instead, since the infant\'s own hyperinsulinaemia persists once the maternal glucose supply is cut off at delivery, driving glucose down rather than up. **Hypocalcemia** is where this option set is defective, and it is worth naming rather than glossing: hypocalcaemia sits on the lecture’s own IDM complication list at #7 and is every bit as common a complication as the keyed one, so as printed the question offers two defensible answers to a stem that asks for one. The endpoint file highlights hypertrophic cardiomyopathy, and `answer` is left there unchanged — the discrepancy is recorded, never disputed. Treat both as expected IDM findings; only the keyed one is what this page was testing.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Identify hypertrophic cardiomyopathy from fetal hyperinsulinism-driven septal hypertrophy as a recognised complication in infants of diabetic mothers, distinct from macrosomia, hypoglycaemia and hypocalcaemia which are also on the IDM list.',
+  source: 'Pediatrics endpoint part1.pdf p.886'
+},
+
+{
+  id: 'pedep-neo-46',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'A 12-hour newborn is noted to be jaundiced. Indirect bilirubin is 6.4 mg/dl. What is the appropriate management?',
+  options: [
+    'Admit the baby to the incubator for phototherapy and lab investigations',
+    'Repeat the bilirubin measurement after another 12 hours',
+    'Ensure adequate breast feeding and repeat bilirubin measurement after 24 hours',
+    'Reassure the mother that this is normal',
+    'Give bottle feeds for 24 hours then resume breast feeding'
+  ],
+  answer: 0,
+  explanation: '**The endpoint file prints this explanation:**\n\n> As with earlier case, jaundice before 24 hours is pathologic. The appropriate action is phototherapy with evaluation of hemolysis or infection.\n\n---\n\n`8) COMMON PROBLEMS IN THE TERM NEWBORN.txt` states that "visible jaundice with a TSB greater than 5 mg/dL before 24 hours of age is most commonly a result of significant hemolysis" — this baby is jaundiced at 12 hours with an indirect bilirubin of 6.4 mg/dl, comfortably above that 5 mg/dL threshold, so the jaundice is pathological by definition rather than physiological. The same deck\'s physiologic-jaundice criteria require visible jaundice appearing **after** 24 hours of age, which this baby\'s timing directly fails. First-day pathological jaundice of this kind needs admission for phototherapy together with the work-up the box names — evaluation for haemolysis (blood group/Rh typing, direct Coombs test, reticulocyte count) or infection — rather than outpatient observation, because indirect bilirubin can rise quickly enough in the first day of life to risk kernicterus if left unmonitored.\n\nAgainst the ladder: **"Repeat the bilirubin measurement after another 12 hours"** delays action on a level that is already high for 12 hours of age without doing anything to lower it or find the cause, and risks a dangerous rise in the interval. **"Ensure adequate breast feeding and repeat bilirubin measurement after 24 hours"** is the correct approach to *breastfeeding-associated* jaundice, which the same lecture places after the first week is established and drives by reduced enteral intake with a normal reticulocyte count — it does not fit a pathological, first-day, haemolysis-pattern rise, and 24 hours is far too long to wait at this level. **"Reassure the mother that this is normal"** contradicts the deck\'s own definition outright, since jaundice this early is explicitly *not* physiological. **"Give bottle feeds for 24 hours then resume breast feeding"** is a historical response to suspected breastfeeding jaundice that does nothing for a pathological, likely haemolytic process and again wastes 24 hours a first-day bilirubin of 6.4 mg/dl cannot safely be given.\n\n**⚠️ Within-bank reprint — p.840, the first printing.** The endpoint file asks this question twice inside Neonatology, first on p.840 and again here on p.888, and the book knows it: the box on this page opens “As with earlier case”, pointing back at p.840. The two printings carry the same five options in the same order and the same key, and differ in two cosmetic ways only. p.840 writes the stem as “Indirect bilirubin 6.4 mg/dl” where this page writes “Indirect bilirubin is 6.4 mg/dl”, and p.840 abbreviates the first option to “Admit the baby to the incubator for phototherapy and lab Ix.” where this page spells out “lab investigations”. It is held once in the app, under this fuller p.888 printing.\n\n**The p.840 box, folded in.** The earlier printing prints the fuller explanation of the two, and it is the passage “As with earlier case” refers back to:\n\n> Jaundice appearing within the first 24 hours is always pathologic, often due to hemolysis. Such cases require immediate phototherapy and investigations to determine the cause.\n\nThe two boxes agree on the reasoning and on the key. Each names something the other leaves out: p.840 states the rule in full — first-day jaundice is *always* pathologic, and the investigations exist to find the cause — while p.888 adds **infection** alongside haemolysis as a cause to evaluate. The expansion above works through both.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Recognise jaundice with a raised indirect bilirubin at 12 hours of age as pathological, requiring admission for phototherapy and evaluation for haemolysis or infection rather than observation or delayed rechecking.',
+  source: 'Pediatrics endpoint part1.pdf p.888 (first printed on p.840 inside the same Neonatology section, with the stem one word shorter and the first option abbreviated to “lab Ix.”)'
+},
+
+{
+  id: 'pedep-neo-47',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'Which of the following is TRUE about Transient Tachypnea of the Newborn?',
+  options: [
+    'Oxygen therapy is always required',
+    'It is the most common cause of respiratory distress in term infants',
+    'It persists for several weeks',
+    'Chest X-ray is always normal'
+  ],
+  answer: 1,
+  explanation: '**The endpoint file prints this explanation:**\n\n> TTN is the leading cause of respiratory distress in term babies. It is benign and resolves within 2–3 days.\n\n---\n\n`9) Respiratory distress in newborn.txt` states this directly: TTN is "the most common cause of neonatal RD constituting more than 40% of cases," occurring specifically "in term and late preterm neonates" — matching the option\'s wording almost verbatim. The same deck gives the mechanism (delayed lymphatic clearance of fetal lung fluid after labour), the onset (within 2 hours of delivery), and the course (symptoms lasting from a few hours up to 3 days, matching the box\'s "2–3 days"), a benign, self-limited timeline.\n\nAgainst the ladder: **"Oxygen therapy is always required"** overstates the lecture\'s management line, which is that TTN "is alleviated by supplemental oxygen or CPAP" when needed and that "most cases need no active treatment" at all — supplemental oxygen is a supportive option, not a universal requirement. **"It persists for several weeks"** contradicts the deck\'s own course directly, which caps symptoms at "3 days," a self-resolving illness measured in hours to days, not weeks — a course of weeks instead points toward a chronic process such as bronchopulmonary dysplasia. **"Chest X-ray is always normal"** overstates the opposite direction from what the lecture teaches: the classic film shows "perihilar streaking with fluid in interlobar fissures" (the wet-lung pattern), and while an early or mild film can look unremarkable, TTN is explicitly called "a clinical diagnosis" precisely because the film is variable, not because it is invariably normal.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Confirm TTN as the leading cause of respiratory distress in term and late preterm infants, against overstated claims about mandatory oxygen therapy, a multi-week course, or an invariably normal chest X-ray.',
+  source: 'Pediatrics endpoint part1.pdf p.890'
+},
+
+{
+  id: 'pedep-neo-48',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'In neonatal resuscitation, which is the FIRST most important step?',
+  options: [
+    'Suction of the mouth and throat',
+    'Drying, warming, and ensuring airway',
+    'Administration of drugs',
+    'Immediate chest compressions'
+  ],
+  answer: 1,
+  explanation: '**The endpoint file prints this explanation:**\n\n> The priority is to prevent hypothermia and establish airway patency. Suction, ventilation, or drugs follow if needed.\n\n---\n\nNone of the cached peds decks covers the delivery-room neonatal resuscitation sequence step-by-step — `7) Intro to neonatology.txt` teaches that newborns are highly vulnerable to heat loss (large surface area relative to mass, thin heat-permeable skin, little subcutaneous fat, and being nursed naked and unable to shiver or curl up), and lists the warming tools used at delivery (polyethylene wrap, head cap, pre-warmed thermal mattress/towels), but it does not lay out the resuscitation algorithm itself, so the sequencing claim below is answered from general neonatal resuscitation teaching and tagged *(not taken from the course material)*.\n\nStandard neonatal resuscitation (e.g. the Neonatal Resuscitation Program approach) opens every delivery with the same initial steps regardless of how depressed the baby appears: dry the baby thoroughly to prevent evaporative heat loss, place under a radiant warmer, position to open the airway, and stimulate — only after these initial steps, and only if breathing or heart rate remain inadequate, does the algorithm escalate to suctioning secretions, positive-pressure ventilation, chest compressions, or drugs such as adrenaline. This ordering exists because most newly born infants who fail to breathe well do so from simple causes (cold stress, airway positioning, fluid in the airway) that the initial steps alone correct, and because hypothermia itself worsens any subsequent resuscitation, so warming and airway positioning are never skipped in favour of jumping straight to more invasive measures *(not taken from the course material)*.\n\nAgainst the ladder: **"Suction of the mouth and throat"** is only performed if the airway is visibly obstructed by secretions after the initial steps, and routine deep suctioning of a vigorous newborn is now avoided because it can trigger reflex bradycardia — it is not the first universal step. **"Administration of drugs"** sits at the bottom of the algorithm, reserved for a heart rate that remains below 60/min despite effective ventilation and chest compressions, and is needed in only a small minority of resuscitations. **"Immediate chest compressions"** would skip establishing effective ventilation first — compressions are added only when the heart rate stays below 60/min despite 30 seconds of adequate positive-pressure ventilation, never as the opening manoeuvre *(all not taken from the course material)*.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Identify drying, warming and airway positioning as the universal first step of neonatal resuscitation, performed before suction, drugs or chest compressions are ever considered.',
+  source: 'Pediatrics endpoint part1.pdf p.892'
+},
+
+{
+  id: 'pedep-neo-49',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'Which of the following is TRUE regarding oxygen therapy in preterm infants?',
+  options: [
+    'Low oxygen saturation increases risk of NEC and death',
+    'High oxygen saturation reduces risk of retinopathy of prematurity',
+    'Initial therapy should begin with 100% oxygen',
+    'Oxygen therapy has no effect on mortality'
+  ],
+  answer: 0,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Hypoxemia in preterm infants increases the risk of necrotizing enterocolitis (NEC), brain injury, and mortality\n\n---\n\n`7) Intro to neonatology.txt` lists NEC as one of the preterm infant\'s major GI complications, with "incidence inversely related to GA" — the more immature the infant, the higher the risk — consistent with the box\'s framing of hypoxaemia as a driver of gut ischaemia and NEC. The same deck lists retinopathy of prematurity separately under "Other Problems," explicitly tagged "(oxygen therapy)," marking oxygen exposure itself as the aetiological link for ROP, which is the key context for judging the other three options.\n\nOxygen management in preterm infants is a balance, not a one-directional relationship: too little oxygen (hypoxaemia) worsens tissue ischaemia and raises the risk of NEC, intraventricular haemorrhage and death, while too much oxygen (hyperoxia) drives retinal vessel injury and raises ROP risk — modern neonatal practice therefore targets oxygen saturation within a defined range rather than maximising or minimising it *(the specific target-range trials are not taught in the cached deck; not taken from the course material)*.\n\nAgainst the ladder: **"High oxygen saturation reduces risk of retinopathy of prematurity"** inverts the relationship the lecture\'s own tag states — oxygen therapy is what drives ROP risk *up*, not down, so higher saturation and more oxygen exposure increases rather than reduces that risk. **"Initial therapy should begin with 100% oxygen"** is not supported — resuscitation and ongoing oxygen therapy in preterm infants use titrated, blended oxygen concentrations guided by saturation targets, not a blanket 100% start, precisely because of the hyperoxia risks named above. **"Oxygen therapy has no effect on mortality"** is directly contradicted by the box, which names mortality as one of the outcomes hypoxaemia worsens — oxygen status clearly affects survival in preterm infants, in both directions.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Recognise that hypoxaemia in preterm infants raises the risk of NEC, brain injury and death, while oxygen therapy itself must be titrated because excess oxygen raises retinopathy of prematurity risk rather than lowering it.',
+  source: 'Pediatrics endpoint part1.pdf p.894'
+},
+
+{
+  id: 'pedep-neo-50',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'Which of the following complications are associated with preterm infants with RDS?',
+  options: [
+    'Reduced risk of necrotizing enterocolitis',
+    'Retinopathy of prematurity',
+    'Non-invasive therapy is contraindicated',
+    'Hypocalcemia is the main complication'
+  ],
+  answer: 1,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Preterm infants with respiratory distress syndrome (RDS) often require oxygen therapy, which predisposes them to retinopathy of prematurity. Non-invasive ventilation is not contraindicated, and hypocalcemia is not the main complication.\n\n---\n\nAs in `pedep-neo-49`, `7) Intro to neonatology.txt` tags retinopathy of prematurity to "(oxygen therapy)" under the preterm infant\'s complication list — a preterm infant with RDS characteristically needs supplemental oxygen (and often surfactant and respiratory support) to treat the surfactant-deficient lung, and that oxygen exposure is exactly the mechanism the deck links to ROP. RDS and its oxygen requirement therefore sit upstream of ROP risk rather than being unrelated to it.\n\nAgainst the ladder: **"Reduced risk of necrotizing enterocolitis"** runs the wrong direction — the same lecture lists NEC as a preterm complication whose incidence rises, not falls, with prematurity and the ischaemic/hypoxic stress that accompanies a sick, respiratory-distressed preterm infant; RDS does not protect against NEC. **"Non-invasive therapy is contraindicated"** is simply false — non-invasive respiratory support (CPAP, high-flow) is a mainstay of RDS management, used specifically to avoid the lung injury and complications of invasive mechanical ventilation where possible. **"Hypocalcemia is the main complication"** misassigns a real but secondary preterm metabolic problem — the lecture lists hypocalcaemia (from an immature parathyroid gland) as one line among several metabolic complications of prematurity (alongside hypoglycaemia and hypothermia), not as the defining complication of RDS specifically, and the box\'s emphasis is on the oxygen-driven ROP link rather than calcium status.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Link the oxygen therapy needed to treat RDS in preterm infants to an increased risk of retinopathy of prematurity, against distractors that misstate NEC risk, non-invasive ventilation safety, and the role of hypocalcaemia.',
+  source: 'Pediatrics endpoint part1.pdf p.896'
+},
+
+{
+  id: 'pedep-neo-51',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'A 7-day-old infant is seen in the emergency department for fever and poor feeding. The baby was delivered vaginally 2 hours after the mother arrived to hospital. The delivery was a 36 weeks of gestation and the birth weight was 2900 g. Maternal laboratory test results were negative. The most likely organism causing this patient’s symptoms is:',
+  options: [
+    'Group B Streptococcus (GBS)',
+    'Listeria monocytogenes',
+    'Staphylococcus aureus',
+    'Streptococcus pneumoniae',
+    'Haemophilus influenza'
+  ],
+  answer: 0,
+  explanation: '**The endpoint file prints this explanation:**\n\n> GBS is the most common pathogen to cause neonatal sepsis in infants aged 0 to 3 months\n\n---\n\n`11) Neonatal sepsis.txt` names GBS (with E. coli) as the leading organism of early-onset neonatal sepsis (EONS), the first-72-hours category, and gives its epidemiology in detail: 15–40% of pregnant women carry rectal or vaginal GBS colonisation, about half of their infants become colonised, and 1–2% of colonised infants go on to develop early-onset GBS disease. This baby is late preterm (36 weeks), a risk factor the same slide lists explicitly for EONS.\n\nWorth flagging on its own terms: this baby presents at **7 days** of age, which sits past the lecture\'s own 72-hour EONS cutoff, in the window the deck labels late-onset sepsis (LONS) — where the slide\'s own organism list names coagulase-negative staphylococci and *Staphylococcus aureus*, driven by horizontal/environmental transmission, rather than GBS. That tension is real, and it is not resolved inside the cached deck. GBS itself remains a well-recognised cause of neonatal sepsis through the first three months of life, not only the first three days — late-onset GBS disease (roughly day 7 to day 89) is a distinct, well-described clinical entity, usually from the same maternal vertical transmission or postnatal acquisition, often presenting with bacteraemia or meningitis rather than the catheter/ventilator-associated infections that dominate other LONS organisms *(not taken from the course material — the cached deck\'s LONS organism list does not mention GBS)*. The box\'s "0 to 3 months" framing matches that broader clinical picture rather than the lecture\'s strict 72-hour EONS/LONS split, and the vignette\'s negative maternal labs do not rule out unscreened or intrapartum GBS colonisation, so GBS stays the best-supported single answer.\n\nAgainst the ladder: **Listeria monocytogenes** is a recognised EONS organism (foodborne, associated with unpasteurised dairy/soft cheeses) but is far less common than GBS and not specifically cued by anything in this vignette. **Staphylococcus aureus** and **coagulase-negative staphylococci** are the lecture\'s own late-onset organisms, but they classically track with an indwelling line, ventilator or prolonged NICU stay, none of which this previously well, term-nursery-timeline infant has. **Streptococcus pneumoniae** and **Haemophilus influenzae** are pathogens of infancy and early childhood pneumonia/meningitis/otitis media rather than leading neonatal sepsis organisms, and neither appears on the deck\'s EONS or LONS lists at all.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Identify GBS as the leading organism of neonatal sepsis across the first three months of life, while recognising the tension between this vignette\'s day-7 timing and the lecture\'s strict 72-hour early/late-onset split and its late-onset organism list.',
+  source: 'Pediatrics endpoint part1.pdf p.898'
+},
+
+{
+  id: 'pedep-neo-52',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'What is the most likely cause of respiratory distress in a term infant with history of fetal distress and pea soup like amniotic fluid?',
+  options: [
+    'Pneumothorax',
+    'Meconium aspiration syndrome',
+    'Congenital heart disease',
+    'Respiratory distress syndrome',
+    'Transient tachypnea of the newborn'
+  ],
+  answer: 1,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Term baby + fetal distress + pea soup amniotic fluid → classic for Meconium Aspiration Syndrome (MAS).\n\n---\n\n`9) Respiratory distress in newborn.txt` walks the exact chain this vignette describes: acute or chronic fetal hypoxia (fetal distress) stimulates fetal peristalsis and relaxes the anal sphincter, passing meconium into the amniotic fluid, and that same hypoxia stimulates fetal breathing, driving aspiration of the meconium-stained fluid. "Pea soup" is the classic bedside description of thick, greenish-black meconium-stained amniotic fluid, and the deck lists "meconium staining of skin, umbilical cord and amniotic fluid" as the defining clinical sign, present specifically in "term and post-term infants who suffered from placental insufficiency," with fetal distress named explicitly as one of its markers. Only 4–5% of infants born through meconium-stained fluid actually develop MAS, but the lecture is explicit that "MAS must be considered in any infant, born through meconium-stained amniotic fluid, who develops symptoms of RD" — exactly this vignette.\n\nAgainst the ladder: **Pneumothorax** is a recognised *complication* of MAS (from ball-valve air trapping and over-inflation with air leak), not the primary diagnosis the fetal-distress-plus-meconium history points to. **Congenital heart disease** is not specifically cued by meconium-stained fluid or fetal distress, which are markers of placental insufficiency/hypoxia and gut/lung events, not cardiac malformation. **Respiratory distress syndrome** is a disease of prematurity from surfactant deficiency; this is a *term* infant, and RDS is not linked to meconium-stained fluid at all. **Transient tachypnea of the newborn** is the most common overall cause of neonatal RD but is tied to elective caesarean section, male gender and maternal diabetes, none of which this vignette mentions, and it carries no meconium history — the pea-soup fluid and fetal distress specifically flag MAS over the far more common but unrelated TTN.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Recognise meconium aspiration syndrome from the combination of fetal distress and "pea soup" (thick, meconium-stained) amniotic fluid in a term infant, against pneumothorax as a complication rather than the primary diagnosis and against RDS/TTN which do not fit a meconium history.',
+  source: 'Pediatrics endpoint part1.pdf p.900'
+},
+
+{
+  id: 'pedep-neo-53',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'Which clinical condition is left without further intervention on neonatal examination?',
+  options: [
+    'Central cyanosis',
+    'Heart murmur',
+    'Inguinal hernia',
+    'Umbilical hernia',
+    'Jaundice at 24 hours of age'
+  ],
+  answer: 3,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Common in neonates, usually closes spontaneously by 2–3 years of age. No intervention needed unless persistent after 3–5 years or very large.\n\n---\n\nA benign umbilical hernia on newborn examination is not covered in the cached peds lecture set — the only umbilical-hernia mention in the cache is as one of several signs of congenital hypothyroidism in `52) hypothyrodism.txt`, a different clinical context (a hernia as one feature of a systemic endocrine disease) from this question\'s general newborn-examination finding, so it is not applicable here. This entry is therefore answered from general neonatal examination teaching and tagged throughout *(not taken from the course material)*.\n\nAn umbilical hernia results from incomplete closure of the umbilical ring after the cord separates, and is common in newborns, especially preterm and Black infants. Left alone, the great majority close spontaneously as the abdominal wall musculature strengthens with growth, typically by 2–3 years of age (matching the box\'s figure); surgical referral is reserved for a hernia still present beyond about 3–5 years of age, one that is unusually large (commonly cited as a defect over 1.5–2 cm), or one that becomes symptomatic (incarcerated or strangulated), which is rare. Routine parental reassurance and observation, with no taping, binding or early surgical referral, is the standard first-line approach *(not taken from the course material)*.\n\nAgainst the ladder, each of the other four findings needs some form of active follow-up rather than being left alone: **Central cyanosis** on a newborn examination is never a "leave alone" finding — it signals hypoxaemia from cardiac, pulmonary or other systemic causes and needs urgent assessment (pulse oximetry, oxygen, work-up for the underlying cause). **Heart murmur** needs at least a follow-up cardiac assessment, since although many neonatal murmurs are transitional, a new murmur can be the first sign of otherwise unsuspected congenital heart disease. **Inguinal hernia**, unlike an umbilical hernia, does *not* resolve spontaneously and carries a real risk of incarceration/strangulation, so it is referred for elective surgical repair once diagnosed, generally soon after diagnosis in an infant. **Jaundice at 24 hours of age** is, by the same lecture set\'s own physiological-jaundice definition used elsewhere in this section, pathological rather than physiological when it appears this early, and needs evaluation (bilirubin level, work-up for haemolysis/infection) rather than being left without intervention *(all not taken from the course material)*.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Recognise an uncomplicated umbilical hernia as the newborn examination finding that is safely left without intervention, resolving spontaneously by 2–3 years of age, against central cyanosis, a heart murmur, an inguinal hernia and 24-hour jaundice, each of which needs some form of follow-up or work-up.',
+  source: 'Pediatrics endpoint part1.pdf p.902'
 }
 ];

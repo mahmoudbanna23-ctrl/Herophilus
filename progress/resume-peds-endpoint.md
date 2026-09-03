@@ -56,13 +56,13 @@ pre-map — open one by name with `grep -n "^## "` and `sed` if a specific decis
 | 4 Accidents & poisoning | 550–562 | 3 | ✅ **CLOSED 2026-09-03** — staged, drafted, validated, spliced 213→**216**. No fold. 3 `pedep-acc-*` live. |
 | 5 Pediatrics Emergencies | 563–702 | **61**, not the 60 the contents page prints | ✅ **CLOSED 2026-09-03** — staged, drafted both halves, validated, spliced 216→277, folded 277→**270**. 60 `pedep-emg-*` live (`emg-55` folded into `-59`). |
 | 6 Perinatal | 703–773 | 23 → **21** | ✅ **CLOSED 2026-09-03** — staged 23 (p.741 was an ordinary question page, not `other`), drafted both halves, validated, spliced 270→293, folded 293→**291**. 21 `pedep-per-*` live (`per-17`→`gp-5`, `per-21`→`gp-70`). |
-| 7 Neonatology | 774–903 | 53 | ⏳ **NEXT.** Not started. |
-| 8 Allergy | 904–928 | 9 | not started |
+| 7 Neonatology | 774–903 | 53 → **52** | ✅ **CLOSED 2026-09-03** — staged 53, drafted in thirds A/B/C, validated, `keypos --calibrate` 51/53, 5 crops cut, spliced 291→344, folded 344→**343**. 52 `pedep-neo-*` live (`neo-22`→`neo-46`). |
+| 8 Allergy | 904–928 | 9 | ⏳ **NEXT.** Not started. |
 | 9 Infection & Immunity | 929–1156 | 96 | not started |
 | Model exams 1–4, training 1–2 | 1157–1936 | 379 | last; expected mostly reprints |
 | Exam Night Review | 1937–1990 | 0 (prose) | nothing to stage |
 
-**Live total: 291 entries from 319 answered pages** (2026-09-03, after §6 and fold pass 5). The two
+**Live total: 343 entries from 372 answered pages** (2026-09-03, after §7 and fold pass 6). The two
 numbers differ by the 28 folds and are both correct — pages staged is not questions held. Always
 say which one you mean.
 
@@ -1676,3 +1676,143 @@ end-of-stream pass, which is still owed and now covers §1, §2, §3 (21 hits), 
 `merge-parts-ep.js`, `val-pd-ep.js`, **`splice-pd-ep.js`** and **`sweep-staged-ep.js`** all needed a
 section-6 row; the last two were missed until they refused to run, each costing one round trip. When
 opening a section, **register it in all four at once.**
+
+## ✅ §7 Neonatology SPLICED then FOLDED — 291 -> 344 -> 343 — 2026-09-03
+
+Staged 53, drafted 53, live 52. `keypos --calibrate` 51/53. Five crops cut. Part 1 is **NOT** closed
+— §8 Allergy (9) and §9 Infection & Immunity (96) remain, then the model exams.
+
+### Where the v5 resume prompt was wrong — measured against disk on arrival
+
+Both errors are the same error, and it is worth naming because it will recur: **a prompt quotes the
+last line of a tool's output as though it were the whole output.**
+
+- **It said half B failed on one entry.** It named `pedep-neo-26: marker appears 0 times` and
+  concluded "entry 26 is half-written — the previous agent stopped inside it." Disk said n=20
+  through n=26 **all seven** failed the same way, and n=19 alone passed. n=26 was not half-written:
+  259 words, closed brace, complete. The failure was **systematic across seven entries** — the
+  previous agent wrote every expansion without its closing marker — not a death mid-entry.
+  ⚠️ **This invalidated the standing "a dead agent's last entry is the KNOWN-BAD spot" heuristic
+  for this case**, and the prompt applied that heuristic to a fault it did not fit. Repaired by
+  appending the marker to all seven; stem, options and answer untouched.
+- **It said git tip was `084b075`.** Disk said `73428a6`.
+
+**The rule this leaves: the validator's last line is not the failure — read the whole list.**
+
+### An error of my own, corrected in the same pass
+
+I reported half A's crop debt as "the uncut `q-pd-ep-810.jpg`", following the prompt. The full
+validator warning list showed **four** uncut in A — 797, 806, 808, 810 — and a fifth in B, 842.
+Cause: I tailed the validator and inherited the prompt's count instead of measuring. All five are
+now cut and every crop warning is gone.
+
+### The key check disagreed twice and was wrong twice
+
+`python tools/ep-index/keypos.py "<pdf>" --calibrate content/peds/qb-pages/endpoint-s07-neonatology.array.js`
+→ **53 entries, agree 51, DISAGREE 2, abstain 0 (96.2%)**. Both disagreements were rendered and read
+by eye in a subagent:
+
+- **n5, p.806** — highlight sits on `B. Pneumothorax`, index 1. Staging says 1. Tool wrong.
+- **n23, p.842** — highlight sits on `c. Breast milk jaundice`, index 2. Staging says 2. Tool wrong.
+
+**Both are figure pages, which is the tool's second documented blind spot** (figure ink beside the
+option column stops two options separating into bands). **No key moved.** Section 7 leaves the
+calibration of record at 288 staged keys checked across five sections, 4 disagreements, 1 abstain,
+**and every staged key right.** A disagreement continues to measure the tool, not the bank.
+
+### `imgAlt` — the criterion that settles it, not a preference
+
+Three alts in half A were byte-identical across three different films. Rewritten to four distinct
+strings, and the test used was **does the distinguishing feature correlate with the answer?** — an
+alt is safe when it does not. "Chest and abdomen coverage" appears on both the RDS film (n1) and the
+diaphragmatic-hernia film (n6), so it carries no signal and may be written. The drafting agent had
+also offered monitoring apparatus and line positions; those were **dropped**, because they describe
+image *content* and the rule is modality and view only.
+
+### Fold pass 6 — one within-bank reprint, and why p.888 survived
+
+`keep pedep-neo-46 (p.888) <- drop pedep-neo-22 (p.840)`. Same five options in the same order, same
+key index 0, same keyed option text. Two differences, both cosmetic: p.840 writes `Indirect bilirubin
+6.4 mg/dl` where p.888 writes `... bilirubin is 6.4 mg/dl`, and p.840 abbreviates option 0 to
+`lab Ix.` where p.888 spells out `lab investigations`.
+
+**p.888 is the fuller printing on both counts, so it is the survivor** — 352 written words against
+240 — and per fold3's precedent only `source` and `explanation` were touched.
+
+⚠️ **This fold had to edit the explanation, not just the source, and the reason generalises.**
+p.888's box opens *"As with earlier case"* — the book itself marking its own repeat — and that
+phrase points at **nothing** once p.840 is dropped. p.840's box is what it points at, so it is
+folded in verbatim. Read the other way, p.888's box names one cause p.840 does not: **infection**,
+alongside haemolysis. **Neither box was complete without the other**; the survivor now carries both,
+583 words. **A self-referencing box is a fold hazard: check what the survivor's box points at.**
+
+### ⚠️ The carve regexes are not portable between fold scripts
+
+`fold5-pd-ep.js` matches ids with `/id:'([^']+)'/`. `splice-pd-ep.js` writes `  id: 'x',` — two-space
+indent, **space after the colon**. Measured: **344 of 344 id lines are the spaced form, zero are the
+tight form.** A copied `idOf` returns `undefined` for every block, and the failure surfaces as
+"keeper not present", which reads like a missing entry rather than a broken regex.
+`fold6-pd-ep.js` fixes the regex and adds an explicit guard — **if any carved block has no id, stop**
+— so the next copy fails loudly instead of plausibly.
+
+### ⚠️ `node --check` on a draft file ALWAYS throws — do not put it in a brief
+
+I put it in the first drafting agent's brief and it cost a round trip. A draft is a bare
+`{...},{...},` fragment, not a program; `node --check` reports `SyntaxError: Unexpected token ':'`
+at the first field whatever the file's state. The check that works wraps it as an array:
+
+```bash
+node -e "var fs=require('fs');var s=fs.readFileSync('<path>','utf8');var A=eval('['+s.replace(/^[\s\S]*?\*\//,'')+']');console.log('parses OK, entries',A.length);"
+```
+
+Two agent-side escaping faults were caught by exactly that wrap and self-repaired: `\\'` written
+where `\'` was needed, and a straight `'` where the curly `’` was needed. **Both broke parsing
+silently.**
+
+### One drafting judgement worth keeping
+
+n45's first draft resolved a two-defensible-answers item by writing that the keyed option is right
+*because the box keys it* — circular, and it teaches nothing. Rewritten to name the defect plainly.
+**Added to the brief: if two options are both defensible, say so plainly and say what separates
+them on the page. Never write circularly.** Separately, "Microsomia" in n45 is a **deliberate
+inverted distractor, not a typo** — had it read "Macrosomia" the item would have had two keys.
+
+### ⚠️ Cross-bank: §7 is chapter-shaped against House, and the standing estimate is LOW
+
+`node tools/bank-harness/reprint-pd-ep.js 774 903` → **cross-file candidates 67 | within-section
+candidates 1**. The within-section 1 is the fold above. Of the 67, **12 are real one-for-one House
+collisions**, and they map by position, not scatter:
+
+| endpoint page | House id |
+|---|---|
+| 797, 800, 802, 804, 806 | `pedhd-neo-1`, `-2`, `-3`, `-4`, `-5` |
+| 810, 812 | `pedhd-neo-7`, `-8` |
+| 824 | `pedhd-neo-14` |
+| 838 | `pedhd-neo-21` |
+| 866, 870, 876 | `pedhd-peri-5`, `-9`, `-6` |
+
+**Nothing folds across the two banks while both chats write** — this is `alsoIn` work for the
+end-of-stream pass. That pass now owes §1, §2, §3 (21), §5 (1), §6 (10) and §7 (12).
+⚠️ **`MEMORY.md`'s "naive scale puts the end-of-stream sweep near 25–30" is now measurably LOW:
+§3, §6 and §7 alone contribute 43.** Re-measure at the sweep; do not quote either number as a count.
+
+### Verified from disk, not from an agent's report
+
+- `val-pd-ep.js 7 A/B/C`: **ALL CHECKS PASSED** ×3 — 18 + 18 + 17 = **53** entries, 0 holes.
+  Words 4,710 · 5,116 · 5,754.
+- Splice: `spliced. bytes 881130 -> 1026691 | entries 291 -> 344 (expected 344) | holes 0`.
+- Fold: `344 -> 343`, `output parses, array holds 343, 0 holes, 0 dead ids`, survivor marker once.
+- Loaded array: `Q_PEDS_EP 343 | holes 0 | dup ids 0 | bad answer idx 0`; per prefix
+  `gp 73 · nut 73 · gi 64 · acc 2 · emg 58 · per 21 · neo 52`.
+- `boot-check.js`: **0 console errors**, `QUESTIONS 4807 · THEORY 153 · MODULES 4 · 153 chapter
+  rows` (128 with questions, 25 empty by design), 4 module cards, per module
+  `ent 30 · ophtho 36 · neuropsych 36 · pediatrics 51`.
+  ⚠️ 4807 is **not** comparable to the 4755 recorded under §6 — Chat B committed peds House work in
+  the interval. Only the `Q_PEDS_EP` number above is this chat's.
+
+### ▶ NEXT: §8 Allergy, pp.904–928, 9 questions
+
+Smallest section left. Register it in **all four** harnesses at once (`merge-parts-ep.js`,
+`val-pd-ep.js`, `splice-pd-ep.js`, `sweep-staged-ep.js`) before staging — §6 paid a round trip each
+for the last two. Prefix `pedep-alg-`, and §10a applies: header on disk before the first render,
+one page at a time, never render N+1 before N is on disk.
