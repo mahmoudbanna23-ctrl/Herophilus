@@ -87,22 +87,49 @@ distractor sweep present.
 
 ## 6. The Codex benchmark — only if a block ends early
 
-**Task — REVISED 2026-09-03, the original went stale within hours.** The first draft of this
-section named endpoint s7 half C. By 14:19 that day half C was on disk (`.draft-C.js`, 51,885 B)
-and half A was being revised at 14:33 — the work chat had already done it. **Do not benchmark on
-a task the fleet is about to finish; you measure a race nobody ran.**
+**Task — REVISED TWICE on 2026-09-03, and the second revision is the interesting one.**
 
-The task is **endpoint section 8, Allergy — pp.904–928, 9 questions.** Verified against disk
-2026-09-03: no `endpoint-s08-*` file of any kind exists. It is the next unstarted unit, it is
-small enough to fail cheaply, and it is real work that ships if it passes.
+Draft 1 named endpoint s7 half C. Within hours half C was on disk (`.draft-C.js`, 51,885 B, 14:19)
+and half A was being revised at 14:33 — the work chat had already done it. Draft 2 named s8
+Allergy, verified clear at 14:40. **Twenty minutes later the endpoint chat registered section 8
+across all four harness files** (`pedep-alg-`, pp.904–928, expect 9) and took it.
+
+**Stop picking drafting units. The finding is that you cannot schedule a benchmark against a
+queue the work chats are draining faster than you can write the brief** — which is §2's
+conclusion arriving from a second direction: throughput is not the constraint, so a trial that
+competes for the queue is both stale-prone and pointless.
+
+**The task is a bounded slice of the model-exam reprint sweep — endpoint pp.1157–1991.**
+Verified 2026-09-03: no file on disk, no harness registration, named in plans only, and **on
+neither chat's path** — the endpoint chat goes s8 → s9 (96 q, the last body section) and reaches
+this only after. Take the **first 40 pages** as the trial.
+
+Three reasons it is the right trial and the earlier two were not:
+
+- **Uncontended by construction.** Codex works p.1157 upward while the endpoint chat works s9. No
+  file, no section, no id prefix in common — the collision cannot recur.
+- **Mechanical, so a failure is cheap.** It is text comparison against existing entries, not
+  clinical drafting: a wrong answer here is a missed or false reprint match, not a wrong key in a
+  medical bank. Nothing it produces goes near `answer`.
+- **It is the actual job.** The plan already made the reprint sweep Codex's first task if it won.
+  Testing on the real first job beats testing on a proxy for it.
 
 **Codex owns a STREAM, not a file inside someone else's stream.** It writes only into
 `content\peds\qb-pages\`. **Never `app\data\`.** So there is zero contention with either work
 chat, and **the splice stays Claude's** — which keeps §4's "never delegated" list intact.
 
-**Acceptance test:** `node tools/bank-harness/val-pd-ep.js 8 A` → exit 0, then
-`keypos.py --calibrate` on the section array, then the §5 tier-3 hand-read of the sample.
-Passing the validator is necessary and **not sufficient** — §5 says why.
+**Acceptance test.** The reprint sweep has no validator yet — and per §1 we do **not** build one.
+The test is a hand-check of a sample, which is cheap because the output is a list, not prose:
+
+1. Codex returns, for each of its 40 pages, either `reprint of <existing id>` or `NOT A REPRINT`,
+   with the page number and the matched stem's first eight words.
+2. **Claude spot-checks 10 of them against disk** — `grep` the claimed id, compare the stems.
+3. **A false positive is the failure that matters**, not a miss. Claiming p.1203 reprints
+   `pedep-neo-7` when it does not would, if trusted, delete a real question from the sweep's
+   remaining work. A miss only leaves work behind. **Score the two separately.**
+
+⚠️ **Nothing Codex produces is spliced on this run.** Its output is a list Claude reads, not a
+file that ships. That is what makes a zero-supervision run safe to try at all.
 
 **Measure it without watching it.** `codex exec --json` emits every event as JSONL and
 `-o <file>` writes the final message; both were confirmed present in `codex --help` on
