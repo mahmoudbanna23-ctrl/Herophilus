@@ -1432,3 +1432,85 @@ stems against five different figures and keys, and no normaliser can see a figur
 ⚠️ Chat B's `questions.peds.js` read **269** during this run, up from the 243 in `MEMORY.md`. That
 is Chat B working normally, not a finding — recorded only so the next reader does not mistake the
 movement for damage.
+
+---
+
+## Fold pass 4 — all seven open folds taken — 277 -> 270 — 2026-09-03
+
+**`tools\bank-harness\fold4-pd-ep.js`, written and run.** Built on `fold3-pd-ep.js`'s mechanics
+(carve, loaded-length assertion, exactly-once match on every edit, output proved by parsing before
+it is written) with three things added: a **drop guard** that refuses to remove an entry carrying
+`alsoIn` or an image, an `OTHER_EDITS` map for back-references held by entries that are not
+themselves folded, and a **dead-id check that runs on the OUTPUT** rather than the input — run
+before the repairs, it would flag the very references this pass exists to fix.
+
+Result: **`questions.peds.ep.js` 277 -> 270 entries**, 839,255 -> 827,142 chars, `0 sparse holes`,
+`0 dead ids`, output parsed before writing. 7 dropped · 7 `source` rewritten · 5 explanations
+extended · 4 text edits.
+
+| keep | drop | shape |
+|---|---|---|
+| `pedep-emg-5` p.586 | `pedep-emg-27` p.630 | respelled reprint, same order, same key |
+| `pedep-acc-2` p.559 | `pedep-emg-30` p.636 | reprint across sections; p.636 reformats the ABCDE block and prints "Breathing" twice |
+| `pedep-emg-33` p.642 | `pedep-acc-3` p.561 | **abbreviated** reprint — p.561 cuts the vignette to one sentence |
+| `pedep-emg-59` p.697 | `pedep-emg-55` p.689 | **dropped filler — THE KEY LETTER MOVES** |
+| `pedep-gi-1` p.414 | `pedep-gi-62` p.538 | same question, child 6 y -> 2 y, travel line dropped |
+| `pedep-nut-16` p.268 | `pedep-nut-64` p.366 | reworded stem, two options respelled |
+| `pedep-nut-59` p.356 | `pedep-nut-74` p.387 | reworded stem, key option respelled |
+
+**In every case the survivor is the fuller printing and keeps the wording its own cited page
+prints.** Only `source` and `explanation` were touched — never `stem`, `options` or `answer` —
+which is `fold3-pd-ep.js`'s precedent: rewriting an option to a wording the cited page does not
+print would make the entry misquote its own citation. Each survivor's `source` now names the page
+it was folded from and what differs there, and each carries a **⚠️ Within-bank reprint** paragraph
+in its explanation.
+
+### The one that needed the most care
+
+`pedep-emg-55`/`-59` was the pair flagged as needing the pages. **It did not, and the text settles
+it.** p.689 prints four options; p.697 prints the same four plus *nasogastric rehydration therapy*
+and writes the IV option as a 20 mL/kg bolus rather than "IV normal saline". **The answer TEXT is
+identical on both pages — oral rehydration solution — and only its position moves, index 1 to
+index 4.** That is the "reordered/expanded, which moves the key letter" fold shape, not two
+different questions; the earlier worry was that the keys read 1 and 4, and reading the option lists
+is what dissolves it. The five-option printing is kept, because the nasogastric option it adds is
+the clinically interesting distractor: NG rehydration is the step for a child who cannot keep oral
+fluids down, and this boy's vomiting has settled.
+
+⚠️ **`pedep-emg-33` keeps a figure reference it cannot show.** p.642 refers to a body diagram
+("as shown") that has never been cropped into this bank, so the printed body-surface-area figure is
+not available. The explanation now says so outright and says why the reasoning does not depend on
+it — no option carries a percentage. **This is a warn in `val-pd-ep.js`, not a fail, and it is
+recorded rather than quietly kept.**
+
+### Three back-references were repaired, and repairing them is not a mechanical job
+
+`pedep-gi-1` -> `gi-62` and `pedep-nut-59` -> `nut-74` sat inside their own survivor blocks and were
+rewritten as part of the fold note. **`pedep-nut-65` and `pedep-nut-67` are not survivors of any
+fold** — they simply pointed at `pedep-nut-64`, and were redirected to `pedep-nut-16`.
+
+Each was **hand-read against its antecedent AND its own key**, because the standing rule is that a
+repaired back-reference must not answer its own question and **no instrument sees this**:
+`nut-65` keys *gross muscle wasting* and `nut-16` is about kwashiorkor oedema — no leak; `nut-67`
+keys *edema* and already states the low-albumin mechanism in its own printed box, so pointing it at
+`nut-16` instead of `nut-64` changes nothing about what it gives away.
+
+### Verified from disk after the write
+
+`validate-all.js` — **ALL HARD CHECKS PASSED (5 files)**. `boot-check.js` — **0 console errors**,
+`QUESTIONS 4734` (was 4741, exactly 7 fewer), 153 chapter rows, 4 module cards. Markdown balance
+checked across all 270 explanations: **0 unbalanced `**` or backtick runs**. `pedep-nut-64` no
+longer appears anywhere in the file.
+
+**Every within-file duplicate-stem group `validate-all.js` reported is now gone bar one**, and that
+one is correct: `pedep-gi-30` ≡ `pedep-gi-49` is **NOT a fold** — an option is *replaced*, and the
+replaced option is the key, so folding would delete a printed key. Everything else it still lists
+for this file is cross-bank against House and belongs to the `alsoIn` pass.
+
+### What §5 leaves behind
+
+**Section 5 Emergencies is drafted, spliced, folded and verified. The endpoint bank stands at 270.**
+The remaining owed work on part 1 is unchanged by this pass: **the cross-bank `alsoIn` pass** — 21
+House hits in §3, plus §1, §2, and §5's two `pedhd-inf-15` matches (which after this fold means
+`pedep-emg-59` alone, since `-55` is gone). It reads `questions.peds.js` and may only ever **write**
+`questions.peds.ep.js`. ⚠️ `pedhd-card-6..10` must NOT be folded.
