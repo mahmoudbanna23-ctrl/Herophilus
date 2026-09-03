@@ -12,6 +12,19 @@ your figures — are in your own task prompt.** This brief is the part that does
 Your work is checked by `node tools\bank-harness\val-pd-ep.js <section> <A|B>`. **Run it yourself
 before you report.** Everything below that it can see, it does see.
 
+## 0. STOP AT ~70 STEPS AND HAND BACK — this is a hard cap, not a target
+
+**Count your tool calls. At 60 you start closing out; by 80 you have run the validator, reported
+and stopped**, even with entries left. Write entries to your file as you go, never in one batch at
+the end, so a replacement can resume from disk. Say exactly which `n` you stopped after.
+
+**Cost is step count, not starting context** — the whole conversation is re-sent every step and it
+GROWS as you work. Measured over a real 7-hour block: agents all start at 29–31k tokens, but the
+five most expensive averaged **88–107k a step, peaking 167k, over 133–287 steps**. Stopping at 70
+and handing over costs a fraction of grinding to 250, for the same work.
+
+**A partial pass reported honestly is a success.** Never spawn a sub-agent of your own.
+
 ---
 
 ## 1. Your file, and the one rule about the other half

@@ -6,6 +6,21 @@ it. A separate drafting pass turns it into app entries later.
 
 Project root: `D:\claude os\Medical school\Herophilus`.
 
+## 0. STOP AT ~70 STEPS AND HAND BACK — this is a hard cap, not a target
+
+**Count your tool calls. At 60 you start closing out; by 80 you have reported and stopped**, even
+with pages left. Say exactly where you stopped and what the next page is; a replacement resumes
+from your file, which is why §10a writes every entry to disk as it goes.
+
+This is not a token-saving nicety, it is the single biggest cost in this project. **Cost is step
+count, not starting context** — the whole conversation is re-sent every step and it GROWS as you
+work. Measured over a real 7-hour block: agents all start at 29–31k tokens, but the five most
+expensive averaged **88–107k a step, peaking 167k, over 133–287 steps**. A run that stops at 70
+steps and hands over costs a fraction of one that grinds to 250, and the two produce the same work.
+
+**A partial pass reported honestly is a success.** Running long to "finish" is the failure.
+Never spawn a sub-agent of your own — one agent at a time is a standing project rule.
+
 ---
 
 ## 1. The source, and the one rule about it

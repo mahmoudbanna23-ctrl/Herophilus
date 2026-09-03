@@ -58,6 +58,26 @@ module.
 
 ## 4. Standing risks — check each is still true, do not act
 
+- **✅ CLOSED 2026-09-03 — the duplicated-option-line risk, and the answer inverts it.** It was
+  logged as "OCR artifact or printed defect, unresolved, needs a visual check before any endpoint
+  question ships". `node tools\ep-index\dup-options.js` scans all 4,591 shipped questions in
+  seconds, no render: **3 exact duplicate pairs, all ophtho, all three already documented as
+  PRINTED defects** by the transcriber. p.110 of `ophthalmology qb.pdf` was re-rendered and
+  re-read blind to confirm it. **Zero defects reached the app.** The 11 "normalised" and 28
+  "near" hits are the check being blunt, not content being wrong — read raw option text, never
+  the normalised form. **Run it after every content batch; chase only a NEW exact hit that
+  carries no note in `source` or `explanation`.**
+- **✅ MEASURED 2026-09-03 — answer keys are right, and the tool that checks them is the thing
+  that is wrong.** `tools\ep-index\keypos.py` locates the yellow highlight by POSITION, so it
+  answers "which option is keyed" from pixels alone — independent of OCR, of `index.json` and of
+  the staging file, which no previous check was. Over the four closed endpoint sections, **235
+  staged keys: 232 agreed, 2 disagreed, 1 abstained. All three misses were rendered and read by
+  eye, and all 235 staged keys were RIGHT** — the misses are the tool's own two limitations
+  (an option below the key wrapping; figures printed beside the option column merging bands).
+  **Shipped key error rate from this measurement: 0 of 235.** The failure direction is the safe
+  one — wasted renders, never a silent pass. ⚠️ **Its calibration is invalidated by any constant
+  or logic change and by a different PDF** — the docstring says which; re-run `--calibrate`.
+
 - **✅ RESOLVED 2026-09-02 — peds ch.4 and ch.5 are SPLICED. This is now a floor check, not a
   hold.** `questions.peds.js` read **243** at the 04:00 pass 2026-09-03 (ch.1–11) and Chat B is still adding:
   expect it to **grow, never shrink**. A figure near the old 81 means the COUNT broke, not the file.

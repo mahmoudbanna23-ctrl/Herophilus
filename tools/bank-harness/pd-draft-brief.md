@@ -10,6 +10,21 @@ Project root: `D:\claude os\Medical school\Herophilus`.
 candidates, the shared option menus, the straddles, the figures — are in your own task prompt.**
 This brief is the part that does not change between chapters.
 
+## 0. STOP AT ~70 STEPS AND HAND BACK — this is a hard cap, not a target
+
+**Count your tool calls. At 60 you start closing out; by 80 you have reported and stopped**, even
+with entries left. Write entries to your file as you go, never in one batch at the end, so a
+replacement can resume from disk. Say exactly which `n` you stopped after.
+
+**Cost is step count, not starting context** — the whole conversation is re-sent every step and it
+GROWS as you work. Measured over a real 7-hour block: agents all start at 29–31k tokens, but the
+five most expensive averaged **88–107k a step, peaking 167k, over 133–287 steps**. Stopping at 70
+and handing over costs a fraction of grinding to 250, for the same work. The drafting anchor is
+**62 tool uses / ~15.5 min / ~53k** — a normal pass fits inside the cap with room to spare, so
+hitting it means something is wrong and a fresh agent will do better than more of your steps.
+
+**A partial pass reported honestly is a success.** Never spawn a sub-agent of your own.
+
 ---
 
 ## 1. Your file, and the one rule about the other halves

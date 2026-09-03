@@ -89,6 +89,12 @@ all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`.
 - ✅ **Keep in every parallel brief:** image work in subagents only, **commit with an explicit
   pathspec** (see Environment — `git add -A` alone was found insufficient), no writes to
   `MEMORY.md`/`ledger.md` mid-run, no cross-module writes.
+- **⚠️ AGENTS STOP AT ~70 TOOL CALLS AND HAND BACK** (user, 2026-09-03) — close out at 60, reported
+  and stopped by 80, even with work left; a partial pass reported honestly is a success. **Cost is
+  step count, not starting context**: all agents start at 29–31k, the five priciest averaged
+  **88–107k a step over 133–287 steps**. §0 of `pd-staging-brief` / `pd-draft-brief` /
+  `pd-ep-draft-brief` — **keep §0 when editing a brief.** Write entries to disk as you go, so the
+  replacement resumes from the file.
 - **Standing rules for the running bank stream** (war stories: archive, 2026-08-31 block):
   **a repaired back-reference must not answer its own question — hand-read each against its antecedent
   AND its own key; no instrument sees this** · **an offsetting error is invisible to a sum — count the

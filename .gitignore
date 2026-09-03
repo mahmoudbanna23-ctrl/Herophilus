@@ -41,3 +41,7 @@ desktop.ini
 *.tmp
 ~$*
 .DS_Store
+
+# Python bytecode from tools/ep-index/*.py
+__pycache__/
+*.pyc
