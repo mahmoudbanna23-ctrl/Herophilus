@@ -1,0 +1,40 @@
+// house-ch15-allergy.array.js — STAGED transcription of House ch.15 "Allergy", book pp.118–120.
+// Staged by Codex via tools/chapter-loop.js (stage) from 300-dpi half-sheet renders; each run's raw answer sits in
+// the scratchpad and is summarised in house-ch15-allergy.loop.json. UNVERIFIED until the `check` step is acked —
+// every key, dose, unit and exponent must be read against the page image before this file is drafted or spliced.
+// Schema: { n, p:'<book page>', boiler, stem, opts:[...], key:<zero-based index | null>, fig?, straddle?, note }.
+var PEDHD_ALLERGY_STAGED = [
+  { n:1, p:"118", boiler:true,
+    stem:"Jonathan, aged 6 years, is brought to the Emergency Department after becoming unwell at a family party. He is unable to say more than a single word and he indicates that he is finding it hard to breathe. He is very anxious. He has a raised itchy rash that is spreading from his face down to his chest. He has never had an episode like this before, although his mother explains that he has asthma and he has been prescribed a salbutamol inhaler previously for wheezy episodes. What is the most likely diagnosis?",
+    opts:["Acute asthma", "Allergic reaction", "Anaphylaxis", "Idiopathic urticaria", "Inhaled foreign body"],
+    key:2,
+    note:"" },
+  { n:2, p:"118", boiler:true,
+    stem:"What will be your first step in Johnathan’s management?",
+    opts:["Administer a budesonide nebulizer", "Assess his airway and give him high-flow oxygen", "Give intramuscular benzylpenicillin", "Insert an intravenous cannula", "Lie him flat"],
+    key:1,
+    note:"" },
+  { n:3, p:"118", boiler:false,
+    stem:"Cordelia, a 5-month-old infant, was exclusively breastfed up until yesterday when her mother started her on formula as she is planning to go back to work. She noticed that she developed a rash very soon after the formula feed. She has no other medical problems and is not routinely on any medications. On examination she has the rash shown in the opposite figure all over her body. What term provides the best description of this rash?",
+    opts:["Annular", "Maculopapular", "Purpuric", "Urticarial", "Vesicular"],
+    key:3,
+    fig:"Clinical photograph, close-up of an infant's trunk, thigh and nappy area.",
+    straddle:true,
+    note:"STRADDLES THE PAGE BREAK p.118 -> p.119: stem and figure on p.118, options and key on p.119. THE FIGURE IS PRINTED ON p.118, beside the stem — read against the page image at the check step, so the crop basename is q-pd-hd-118 and not p+1." },
+  { n:4, p:"119", boiler:false,
+    stem:"Eddy is an 8-month-old infant who presents to his general practitioner following a bout of diarrhoea and vomiting, associated with fever for 3 days. This was managed at home with oral rehydration solution. The vomiting had settled but the diarrhoea has continued for three weeks. The stool microscopy and culture were negative. He has no other medical problems and is not on any other medication. On examination he is not dehydrated. He has a soft, mildly distended abdomen. What is the most likely cause of his prolonged diarrhoea?",
+    opts:["Coeliac disease", "Giardiasis", "IgE mediated cow’s milk protein allergy", "Non-allergic food hypersensitivity", "Non-IgE mediated cow’s milk protein allergy"],
+    key:3,
+    note:"" },
+  { n:5, p:"119", boiler:false,
+    stem:"A 4-year-old girl with a family history of atopy attends her GP. Her older brother suffers from nut allergy and hay fever from grass and pollen. Her mother is very keen to have her tested before introducing her to nuts and requests skin-prick testing. Which of the following statements is true regarding skin-prick testing?",
+    opts:["The severity of an allergic reaction is accurately predicted by the size of skin-prick reaction", "It is suitable for identifying both IgE and non-IgE mediated allergy", "It is more accurate than blinded food challenge", "Positive (histamine) and negative (saline) controls should be injected, along with other allergens to confirm success of testing", "Tests for levels of specific IgE to allergens in the serum"],
+    key:3,
+    note:"The keyed option D is printed \"controls should be injected\". Skin-prick testing applies the controls as drops and pricks through them; injecting them is intradermal testing, a different procedure. Transcribed as printed and NOT corrected — record the wording in the explanation." },
+  { n:6, p:"119", boiler:false,
+    stem:"A 6-month-old boy attends clinic with a history of bloody diarrhoea and failure to thrive. There is no vomiting and examination is normal. A diagnosis of cow’s milk allergy is suspected. Which of the following statements regarding food allergy is true?",
+    opts:["It is commonly non-IgE mediated", "RAST testing will accurately identify all food allergies", "A positive skin prick test to soya means that the child is allergic", "Elimination/reintroduction programme is unhelpful", "It is rare for children to outgrow their allergies"],
+    key:0,
+    straddle:true,
+    note:"STRADDLES THE PAGE BREAK p.119 -> p.120: stem and option A on p.119, options B-E and the key on p.120." },
+];

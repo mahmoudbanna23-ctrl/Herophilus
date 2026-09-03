@@ -58,6 +58,14 @@ const CH = {
         lectures: ['13) Short stature.txt', '14) Puberty.txt', '15.1) Faltering ﻿Growth.txt',
                    '51) DKA.txt', '52) hypothyrodism.txt',
                    'diabetes mellitus for under grad_8acf29c9d51bcde47ca89846d49176b2.txt'] },
+  15: { slug: 'allergy', title: 'Allergy', pages: [118, 120], expected: 6,
+        file: 'house-ch15-allergy.array.js', svar: 'PEDHD_ALLERGY_STAGED',
+        draft: 'house-ch15-allergy.draft-', dvar: 'PEDHD_ALLERGY_DRAFT_', prefix: 'pedhd-alg-',
+        // Anaphylaxis is written inside the allergy chapter (alg-9..14), not in emergencies --
+        // checked in theory.peds.js before registering, so a drafter is not offered a chapter
+        // the material does not put it in.
+        chapterIds: ['allergy', 'infection-immunity'],
+        lectures: ['25)Immunodeficiency_.txt', '26)allergy_.txt', '27)Anaphylaxsis.txt'] },
 };
 
 // ---------------------------------------------------------------- args / state

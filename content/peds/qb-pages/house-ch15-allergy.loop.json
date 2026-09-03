@@ -1,0 +1,127 @@
+{
+  "chapter": 15,
+  "slug": "allergy",
+  "file": "house-ch15-allergy.array.js",
+  "created": "2026-09-03T15:57:27",
+  "steps": {
+    "locate": {
+      "at": "2026-09-03T15:57:27",
+      "pages": {
+        "118": "L-060",
+        "119": "R-060",
+        "120": "L-061",
+        "121": "R-061"
+      }
+    },
+    "render": {
+      "at": "2026-09-03T15:57:36",
+      "dir": "C:\\Users\\Alfa388\\AppData\\Local\\Temp\\herophilus-loop\\house-ch15",
+      "pages": [
+        118,
+        119,
+        120,
+        121
+      ]
+    },
+    "stage": {
+      "batches": [
+        {
+          "pages": [
+            118,
+            120
+          ],
+          "context": 121,
+          "at": "2026-09-03T15:58:59",
+          "answer": "C:\\Users\\Alfa388\\AppData\\Local\\Temp\\herophilus-loop\\house-ch15\\stage-p118-120.answer.txt",
+          "events": "C:\\Users\\Alfa388\\AppData\\Local\\Temp\\herophilus-loop\\house-ch15\\stage-p118-120.events.jsonl",
+          "usage": {
+            "input_tokens": 29136,
+            "cached_input_tokens": 13056,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 3446,
+            "reasoning_output_tokens": 2339
+          },
+          "entries": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "keyLetterConversions": [],
+          "pagesReported": [
+            {
+              "page": 118,
+              "folio_read": "118",
+              "banner": "Allergy",
+              "question_numbers": [
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "page": 119,
+              "folio_read": "119",
+              "banner": null,
+              "question_numbers": [
+                4,
+                5,
+                6
+              ]
+            },
+            {
+              "page": 120,
+              "folio_read": "120",
+              "banner": null,
+              "question_numbers": []
+            }
+          ],
+          "nextPageOpensWith": "Growth & puberty",
+          "flags": [
+            "Question 6 option B is printed \"B.RAST\" without a space after the option label.",
+            "The supplied pages show p.120 completing question 6 begun on p.119; no question begins on p.120 and continues to p.121."
+          ]
+        }
+      ]
+    },
+    "gate": {
+      "at": "2026-09-03T16:00:33",
+      "ok": true,
+      "hash": "0a91590d91a4",
+      "count": 6,
+      "fails": [],
+      "warns": [],
+      "nullKeys": []
+    },
+    "check": {
+      "at": "2026-09-03T16:00:39",
+      "ack": "Claude Opus 5 2026-09-03",
+      "hash": "0a91590d91a4",
+      "count": 6
+    },
+    "draft": {
+      "A": {
+        "at": "2026-09-03T16:04:08",
+        "file": "content\\peds\\qb-pages\\house-ch15-allergy.draft-A.js",
+        "entries": 3,
+        "valExit": 0
+      },
+      "B": {
+        "at": "2026-09-03T16:05:43",
+        "file": "content\\peds\\qb-pages\\house-ch15-allergy.draft-B.js",
+        "entries": 3,
+        "valExit": 0
+      }
+    },
+    "close": {
+      "at": "2026-09-03T16:11:45",
+      "halves": [
+        "A",
+        "B"
+      ],
+      "wrote": true
+    }
+  }
+}

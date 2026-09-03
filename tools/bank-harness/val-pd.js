@@ -22,17 +22,23 @@ const CH = {
         draft: 'house-ch13-respiratory.draft-' },
   14: { prefix: 'pedhd-endo-',   file: 'house-ch14-endocrine.array.js',        svar: 'PEDHD_ENDO_STAGED',
         draft: 'house-ch14-endocrine.draft-' },
+  15: { prefix: 'pedhd-alg-',    file: 'house-ch15-allergy.array.js',          svar: 'PEDHD_ALLERGY_STAGED',
+        draft: 'house-ch15-allergy.draft-' },
 };
 
 // imgAlt must give MODALITY AND VIEW ONLY. Naming the finding answers the question --
 // this mistake gave away six answers once. Broad list; add to it, never trim it.
-const GIVEAWAY = /rickets|ricket|widen|fray|cupping|splay|rosary|bowing|metaphys|swell|deficien|scurvy|osteomalac|dilat|obstruct|atresia|stenos|volvulus|intussuscept|target sign|double bubble|perforat|free air|pneumoperit|megacolon|stricture|mass|tumour|tumor|inflamm|ulcer|polyp|varice|ascites|hernia|malrotat|coeliac|celiac|atroph|villous|hydroceph|ventriculomeg|myelomening|meningocele|encephalocele|spina bifida|neural tube|craniosynostos|macroceph|microceph|h(?:a)?emorrhag|h(?:a)?ematoma|infarct|isch(?:a)?em|calcif|midline shift|subdural|extradural|epidural|port-wine|caf(?:e|é)-au-lait|neurofibrom|tuberous|hypsarrhythm|spike|epileptiform|slow wave|papill(?:o)?edema|papilloedema|ptosis|squint|strabism|gower|wasting|fascicul|contractur|consolidat|hyperinflat|bronchogram|atelectas|collapse|opacit|infiltrat|effusion|pneumothorax|bronchiectas|steeple|thumbprint|epiglott|croup|pertussis|cystic fibrosis|clubbing|recession|indrawing|stridor|wheez|grunting|flaring|cyanos|erythema|exudate|purulen|bulging|hypertroph|adenoid/i;
+const GIVEAWAY = /rickets|ricket|widen|fray|cupping|splay|rosary|bowing|metaphys|swell|deficien|scurvy|osteomalac|dilat|obstruct|atresia|stenos|volvulus|intussuscept|target sign|double bubble|perforat|free air|pneumoperit|megacolon|stricture|mass|tumour|tumor|inflamm|ulcer|polyp|varice|ascites|hernia|malrotat|coeliac|celiac|atroph|villous|hydroceph|ventriculomeg|myelomening|meningocele|encephalocele|spina bifida|neural tube|craniosynostos|macroceph|microceph|h(?:a)?emorrhag|h(?:a)?ematoma|infarct|isch(?:a)?em|calcif|midline shift|subdural|extradural|epidural|port-wine|caf(?:e|é)-au-lait|neurofibrom|tuberous|hypsarrhythm|spike|epileptiform|slow wave|papill(?:o)?edema|papilloedema|ptosis|squint|strabism|gower|wasting|fascicul|contractur|consolidat|hyperinflat|bronchogram|atelectas|collapse|opacit|infiltrat|effusion|pneumothorax|bronchiectas|steeple|thumbprint|epiglott|croup|pertussis|cystic fibrosis|clubbing|recession|indrawing|stridor|wheez|grunting|flaring|cyanos|erythema|exudate|purulen|bulging|hypertroph|adenoid|urticari|wheal|weal|annular|maculopapular|purpur|vesic|blister|macule|papule|eczema|excoriat|angio-?o?edema/i;
 // ch.13 added the respiratory and ENT half of this list on 2026-09-03. The regex had NO term for
 // any finding this chapter's six figures actually show -- tonsils, tympanic membrane, two chest
 // X-rays and a photo of sternal recession -- so an imgAlt reading "chest X-ray showing lobar
 // consolidation" or "sternal recession" would have passed the guard and answered its own question.
 // "recession" is in the list deliberately: this chapter's own staging note describes n:10's figure
 // that way, which is correct for a note and forbidden in an imgAlt. Modality and view only.
+// ch.15 added the rash-morphology terms on 2026-09-03 for the same reason. Its one figure is a
+// photograph of a rash and the question asks WHICH TERM DESCRIBES IT, so every one of the five
+// printed options -- annular, maculopapular, purpuric, urticarial, vesicular -- is a giveaway word
+// in an imgAlt, and the guard held none of them. Modality and view only.
 // Add to this list, never trim it.
 
 const chNum = process.argv[2], which = process.argv[3];
