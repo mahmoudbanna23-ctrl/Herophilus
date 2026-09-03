@@ -1,0 +1,15 @@
+22. George has Klinefelter syndrome. What is his karyotype?
+A. 46, XO
+B. 46, XY
+c. 45, xo
+D. 45, xy
+E. 47, XXY
+210
+--- 150dpi ---
+22. George has Klinefelter syndrome. What is his karyotype?
+46,
+B. 46
+C. 45, XO
+D. 45 XY
+E. 47 xxy
+210

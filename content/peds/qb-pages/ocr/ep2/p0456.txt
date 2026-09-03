@@ -1,0 +1,63 @@
+Croup vs Bacterial Tracheitis/Epiglottitis
+Feature
+Onset
+Preceding coryza
+Cough
+Drooling
+Fever
+Appearance
+Stridor
+Voice
+Croup
+Gradual, over days
+yes
+Barking
+No
+<38.50C
+Mildly ill
+Harsh
+Hoarse
+Bacterial
+Tracheitis/Epiglottitis
+Rapid, over hours
+yes
+None
+Yes
+>38.50C
+Very ill, toxic
+Soft, whispering
+Muffled, reluctant to
+speak
+456
+--- 150dpi ---
+Croup vs Bacterial Tracheitis/Epiglottitis
+Feature
+Onset
+Preceding coryza
+Cough
+Drooling
+Fever
+Appearance
+Stridor
+Voice
+Croup
+Gradual, over days
+Yes
+Barking
+No
+<38.50C
+Mildly ill
+Harsh
+Hoarse
+Bacterial
+Tracheitis/Epiglottitis
+Rapid, over hours
+Yes
+None
+Yes
+>38.50C
+Very ill, toxic
+Soft, whispering
+Muffled, reluctant to
+speak
+456

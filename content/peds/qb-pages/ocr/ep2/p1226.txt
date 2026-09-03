@@ -1,0 +1,25 @@
+2. Polly is a 2-year-old girl receiving chemotherapy for acute lymphoblastic
+leukaemia. She is known to be neutropenic and has developed a fever over
+38.50C. What is the most appropriate course of action?
+A. Be admitted to hospital for observation
+B. Be started immediately on oral antibiotics
+C. Have her count and inflammatory markers (e.g. CRP) measured
+D. Have blood cultures taken and be started on intravenous antibiotics
+E. See her general practitioner for further assessment
+Fever in a neutropenic child is a medical emergency because of
+the high risk of sepsis. Immediate IV antibiotics and blood
+cultures are essential.
+1226
+--- 150dpi ---
+2. Polly is a 2-year-old girl receiving chemotherapy for acute lymphoblastic
+leukaemia. She is known to be neutropenic and has developed a fever over
+38.50C. What is the most appropriate course of action?
+A. Be admitted to hospital for observation
+B. Be started immediately on oral antibiotics
+C. Have her blood count and inflammatory markers (e.g. CRP) measured
+D. Have blood cultures taken and be started on intravenous antibiotics
+E. See her general practitioner for further assessment
+Fever in a neutropenic child is a medical emergency because of
+the high risk of sepsis. Immediate IV antibiotics and blood
+cultures are essential.
+1226

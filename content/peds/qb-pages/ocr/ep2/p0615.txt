@@ -1,0 +1,68 @@
+Lesion
+ASD
+Partial AVSD
+Small VSD
+Large VSD
+PDA
+Symptoms
+None
+None CHF
+None
+CHF, infections
+None CHF
+Signs
+ESM ULSE, fixed
+split S2
+ESM ULSE,
+pansystolic apex
+Loud pansystolic
+LLSE
+Soft murmur, loud
+P2
+Continuous
+Management
+Device closure (3—
+5y)
+Surgery (3y)
+Spontaneous
+closure
+Surgery (3—6m)
+Coil/device (1 y),
+murmur, bounding
+ligation preterm
+pulse
+615
+--- 150dpi ---
+Lesion
+ASD
+Partial AVSD
+Small VSD
+Large VSD
+PDA
+Symptoms
+None
+None CHF
+None
+CHF, infections
+None CHF
+Signs
+ESM ULSE, fixed
+split S2
+ESM ULSE,
+pansystolic apex
+Loud pansystolic
+LLSE
+Soft murmur, loud
+Continuous
+Management
+Device closure (3—
+5y)
+Surgery (3y)
+Spontaneous
+closure
+Surgery (3—6m)
+Coil/device (ly),
+murmur, bounding
+ligation preterm
+pulse
+615

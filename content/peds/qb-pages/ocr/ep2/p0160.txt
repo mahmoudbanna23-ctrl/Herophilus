@@ -1,0 +1,57 @@
+Feature
+Cause
+Gender
+Cognition
+Fertility
+Life Expectancy
+Diagnosis
+Treatment
+Down Syndrome
+Extra chromosome 21 (trisomy)
+Mild-moderate ID
+Reduced/absent
+Reduced (variable)
+Prenatal screening, karyotype
+Supportive, early intervention
+Turner Syndrome
+Missing/incomplete X
+chromosome
+Females only
+Usually normal; possible
+learning difficulties
+Common infertility
+Reduced but improving
+with care
+Prenatal US, karyotype
+Hormone therapy, medical
+monitoring
+160
+--- 150dpi ---
+Feature
+Cause
+Gender
+Cognition
+Fertility
+Life Expectancy
+Diagnosis
+Treatment
+Down Syndrome
+Extra chromosome 21 (trisomy)
+Mild-moderate ID
+Reduced/absent
+Reduced (variable)
+Prenatal screening, karyotype
+Supportive, early intervention
+Turner Syndrome
+Missing/incomplete X
+chromosome
+Females only
+Usually normal; possible
+learning difficulties
+Common infertility
+Reduced but improving
+with care
+Prenatal IJS, karyotype
+Hormone therapy, medical
+monitoring
+160

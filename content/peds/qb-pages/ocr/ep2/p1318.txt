@@ -1,0 +1,25 @@
+24. When a girl with Down syndrome was investigated, three copies of
+chromosome 21 were seen in karyotyping, one of which is attached to
+chromosome 14. How would you describe this abnormality?
+A. Balanced Robertsonian translocation
+B. Mosaicism
+C. Nondisjunction
+D. Triplet repeat expansion
+E. Unbalanced Robertsonian translocation
+The extra chromosome 21 attached to 14 causes trisomy 21.
+This is unbalanced, unlike a balanced translocation where no
+extra material is present.
+1318
+--- 150dpi ---
+24. When a girl with Down syndrome was investigated, three copies of
+chromosome 21 were seen in karyotyping, one of which is attached to
+chromosome 14. How would you describe this abnormality?
+A. Balanced Robertsonian translocation
+B. Mosaicism
+C. Nondisjunction
+D. Triplet repeat expansion
+E. Unbalanced Robertsonian translocation
+The extra chromosome 21 attached to 14 causes trisomy 21,
+This is unbalanced, unlike a balanced translocation where no
+extra material is present.
+1318

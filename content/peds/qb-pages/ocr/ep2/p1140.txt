@@ -1,0 +1,23 @@
+24. What is the most ideal insulin regimen for an 8-year-old child recently
+diagnosed with type I diabetes mellitus, who has 3 regular meals a day?
+a. Short-acting insulin 3 times daily
+b. Basal-bolus regimen
+c. Intermediate-acting insulin every 12 hours
+d. Premixed insulin every 12 hours
+The basal-bolus regimen best mimics physiological insulin release,
+providing long-acting insulin for baseline needs and rapid-acting insulin for
+meals. It offers flexibility and optimal glycemic control, especially in
+school-aged children.
+1140
+--- 150dpi ---
+24. What is the most ideal insulin regimen for an 8-year-old child recently
+diagnosed with type I diabetes mellitus, who has 3 regular meals a day?
+a. Short-acting insulin 3 times daily
+b. Basal-bolus regimen
+c. Intermediate-acting insulin every 12 hours
+d. Premixed insulin every 12 hours
+The basal-bolus regimen best mimics physiological insulin release,
+providing long-acting insulin for baseline needs and rapid-acting insulin for
+meals, It offers flexibility and optimal glycemic control, especially in
+school-aged children.
+1140
