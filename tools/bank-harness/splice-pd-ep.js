@@ -52,14 +52,19 @@ const SEC = {
                    47, 48, 50, 52, 62, 64, 65, 66, 67, 69],
         reprintPass: 'reprint-s10-pd-ep.js', reprintMark: 'Model Final Exam 1' },
 
-  // Model Final Exam 2. ⚠️ `reprints` IS DELIBERATELY ABSENT UNTIL THE SECTION IS ADJUDICATED.
-  // Without it this section behaves like a content section -- staged must equal drafted -- so the
-  // splice will REFUSE until the reprint list is filled in and reprint-s11-pd-ep.js exists. That
-  // refusal is the point: §10 measured 30 reprints in 80, and a section spliced before its
-  // reprints are found would create duplicate entries silently. Fill this in from the adjudication
-  // and add the pass; do not delete the field to get past the gate.
+  // Model Final Exam 2. ADJUDICATED 2026-09-04: 33 of its 79 are reprints, so 46 are drafted.
+  // The list below is the COUNT side only; reprint-s11-pd-ep.js is where each pair is proved
+  // against both files on disk, and it has run -- 33 live sources now name Model Final Exam 2.
+  // ⚠️ N24 IS NOT A REPRINT AND MUST STAY OUT OF THIS LIST. It matches live pedep-emg-23 on the
+  // stem, and the two printings DISAGREE ABOUT THE ANSWER: the body keys "20 mL/kg bolus of normal
+  // saline", the exam drops that option and keys "10 mL/kg". A contradiction is recorded, never
+  // corrected, so n24 is drafted as its own entry carrying the exam's printed key. Adding it here
+  // would delete one of two conflicting doses and leave no trace.
   11: { prefix: 'pedep-mf2-', staging: 'endpoint-s11-mfe2.array.js', svar: 'PEDEP_S11_STAGED',
-        draft: 'endpoint-s11-mfe2.draft' },
+        draft: 'endpoint-s11-mfe2.draft',
+        reprints: [1, 3, 4, 5, 6, 7, 8, 9, 10, 12, 15, 16, 17, 18, 25, 26, 27, 38, 39, 40, 42, 43,
+                   47, 52, 53, 54, 57, 70, 72, 73, 74, 76, 79],
+        reprintPass: 'reprint-s11-pd-ep.js', reprintMark: 'Model Final Exam 2' },
 };
 
 const HEADER = `/* Pediatrics ENDPOINT questions (Pediatrics endpoint part1.pdf).
