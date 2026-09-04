@@ -81,6 +81,38 @@ field is a hard failure:
 - `options` takes the staged `opts` array verbatim. **No letter prefixes** — the app supplies them,
   and the printed letter-case drifts through these sections anyway.
 
+### ⚠️ `chapter` IS DECIDED PER ENTRY, BY CONTENT, AND NOTHING WILL CATCH YOU IF IT IS WRONG
+
+Your task prompt names the **candidate** chapters for your section. It is a candidate list, not an
+assignment: **each entry gets the chapter its own content belongs to**, and you write a one-line
+reason for each in your report.
+
+**No instrument checks this.** `val-pd-ep2.js` says so in its own header — the `chapter` in the
+section config is documentation only, and each entry's chapter is only ever checked against the real
+chapter set from `modules.js`. Every candidate for your section is a real chapter, so a question
+filed under the wrong one passes the validator, the splicer and the boot check alike, and surfaces
+only as a question sitting on the wrong shelf months later.
+
+⚠️ **Measured on section 4, 2026-09-04.** Four of the six drafting prompts hard-coded
+`chapter:'haematology'` instead of naming candidates. **24 of 87 entries came out misfiled** — every
+ITP, haemophilia, von Willebrand and HSP question filed under *Anaemia and marrow failure*, four
+leukaemia questions with them, and one child-protection question that is not haematology at all. The
+two halves that were left to judge for themselves got all 28 of their entries right, agreeing exactly
+with a later independent pass. **The judgment was never the weak part; removing it was.**
+
+Two consequences for you:
+
+- **A question printed inside a section is not necessarily a question about that section.**
+  Section 4's `pedep2-hem-46` is printed among the haematology questions and asks which feature of an
+  infant's spiral humeral fracture suggests non-accidental injury. It is filed under `accidents`.
+  Part 1's `questions.peds.ep.js` files 216 entries across **36 different chapters** — filing by
+  content, not by which section the book printed it in, is this bank's established practice.
+- **Where a question genuinely straddles two chapters, assign the primary and note the secondary in
+  your report.** The test is which chapter's knowledge decides the answer. Section 4's "which of
+  these is not a cause of acute abdomen?" offers four haematological options and turns on
+  thalassaemia not causing one — a haematology fact, so `haematology` primary, abdominal pain
+  secondary, even though `gi-abdopain` exists.
+
 ⚠️ **Entries ARE comma-joined: every entry but the last ends `},`.** The validator wraps your file
 as `'[' + src + ']'` and strips only a trailing comma, so a comma-free run of fragments is a syntax
 error, not a valid draft — the *staging* halves are comma-free, the *drafts* are not, and that

@@ -27,11 +27,11 @@ the blank p.1993 sit outside), and each range's `answered` count matches its `qu
 
 | § | Section | Pages | np | answered | question | notes | Chapter(s) in `modules.js` |
 |---|---|---|---|---|---|---|---|
-| 1 | Normal Development | 5-75 | 71 | 28 | 28 | 15 | `normal-dev` |
-| 2 | Developmental problems | 76-154 | 79 | 30 | 29 | 20 | `dev-problems` `dev-nd` |
-| 3 | Genetics | 155-244 | 90 | 42 | 38 | 10 | `genetics` |
-| 4 | Hematological Disorders | 245-451 | 207 | 95 | 89 | 23 | `haematology` `haem-bleeding` |
-| 5 | Respiratory disorders | 452-606 | 155 | 65 | 65 | 25 | `respiratory` `resp-pneumonia` `resp-bronch` |
+| 1 | Normal Development | 4-74 | 71 | 28 | 28 | 15 | `normal-dev` |
+| 2 | Developmental problems | 75-153 | 79 | 30 | 29 | 20 | `dev-problems` `dev-nd` |
+| 3 | Genetics | 154-243 | 90 | 42 | 38 | 10 | `genetics` |
+| 4 | Hematological Disorders | 244-450 | 207 | 95 | 89 | 23 | `haematology` `haem-bleeding` |
+| 5 | Respiratory disorders | 451-605 | 155 | 65 | 65 | 25 | `respiratory` `resp-pneumonia` `resp-bronch` |
 | 6 | Cardiac disorders | 607-792 | 186 | 85 | 81 | 20 | `cardiac` `cardiac-cyan` `cardiac-acq` |
 | 7 | Kidney & Urinary Tract Disorders | 793-929 | 137 | 55 | 55 | 27 | `renal` `renal-uti` `renal-cakut` |
 | 8 | Neurological disorders | 930-1078 | 149 | 60 | 60 | 29 | `neurological` `neuro-stroke` `neuro-nm` `neuro-cp` |
@@ -46,6 +46,20 @@ the blank p.1993 sit outside), and each range's `answered` count matches its `qu
 | 17 | Recently Added Questions | 1941-1949 | 9 | 8 | 0 | 1 | (mixed) |
 | 18 | Exam Night Review | 1950-1992 | 43 | 2 | 0 | 41 | — **no questions** |
 | | **TOTAL** | | **1,993** | **878** | **834** | **281** | |
+
+**⚠️⚠️ THE `Pages` COLUMN WAS ONE HIGH IN EVERY ROW. Rows 1–5 are CORRECTED above (2026-09-04);
+rows 6–18 are NOT — subtract one from both ends, and re-measure before staging.** The column was
+derived by reading `index.json`'s object keys as page numbers. They are not: **the key is a 0-based
+position and the record's own `page` field is the real 1-based PDF page** — `idx['452'].page === 453`.
+Every count in the other columns is unaffected (a uniform shift preserves them), but every boundary
+was one page out. Measured from `e.page`: §1 ends 74, §2 ends 153, §3 ends 243, §4 ends 450, §5 runs
+451–605 — **and under the correction every section ends exactly on its own last answered page**,
+with the next section owning its leading notes run. Under the uncorrected numbers every section
+ended on a notes page belonging to its successor, which is what gave it away. §18's end sits inside
+a notes run (pp.1989–1993 are all `notes`) and cannot be settled from the index at all; render it.
+
+**How to read the index, every time:** iterate `Object.values(idx)` and key your own map on `e.page`.
+Never `idx[String(p)]`.
 
 **⚠️ No new chapter is needed.** Every section maps onto a chapter that already exists in
 `modules.js`. `modules.js` is out of this stream's scope and must stay untouched.
@@ -1484,3 +1498,73 @@ boot check: QUESTIONS 5310 · THEORY 153 · MODULES 4 · 153 chapter rows (138 w
 
 `app/index.html` and `app/data/questions.js` already carried their one line each from the section 1–3
 splice; neither was touched. **Sections 1–4 of part 2 are live. Section 5 (Respiratory) is next.**
+
+---
+
+## Section 5 launched, stopped, and relaunched — the index is keyed 0-based and it put the whole section one page out (2026-09-04)
+
+**Four staging agents were launched on the wrong pages and stopped minutes later.** The ranges were
+A 476–508, B 510–540, C 542–572, D 574–604. Every one of those is the *unanswered twin* of the page
+that was meant. Nothing was staged from them; no part file from that launch survived on disk.
+
+### What the defect actually is
+
+`content/peds/qb-pages/ocr/ep2/index.json` is an object. **Its keys are a 0-based position; each
+record's own `page` field is the real 1-based PDF page.**
+
+```
+idx['452'].page === 453
+```
+
+I profiled the section with `idx[String(p)]`, so every page I read was one lower than the page I
+named. Because this book alternates unanswered/answered, **a one-page shift does not merely move the
+range — it inverts the parity**, turning "odd pages are answered" into "even pages are answered" and
+pointing all four agents at the twin. A shift of one page is the most dangerous size of error this
+book can produce, precisely because the wrong page looks exactly like a right one: same question,
+same options, no key.
+
+### How it was caught, and what the instrument was
+
+Not by a checker — there is none for this. It was caught against **this file**, which already said
+"the next `answered` page anywhere is **p.477**" from an earlier pass. My freshly computed 476
+contradicted a number this map had recorded, and the contradiction is what forced the re-measure.
+Confirmed directly (`idx['452'].page === 453`), then cross-checked against section 4's staged array,
+which is verified against images: staged `p` runs 268..450, and `kind` **at key 268** is `question`
+while `kind` **at `e.page` 268** is `answered`. The staged data is right; my read was wrong.
+
+Agent C had already reported **"confirmed still unanswered at p560"** before it was stopped — the
+alternation check working exactly as it is supposed to, an agent refusing to stage a page that did
+not match what its prompt promised. That report is the real instrument, and §4a-pre of
+`pd-ep2-staging-brief.md` now tells every future agent that such a mismatch is a finding to report,
+never something to work around.
+
+### Section 5's true structure, re-measured on `e.page`
+
+| | |
+|---|---|
+| p.450 | section 4's last answered page |
+| pp.451–475 | teaching notes, **25 pages**, every one `options: 0` |
+| p.476 | first unanswered question page |
+| pp.476–605 | strict alternation, **EVEN unanswered / ODD answered** |
+| answered | **65 pages, 477 … 605**, all odd, zero even |
+| pp.606–612 | closing notes; section 6 follows |
+
+Section 4 ran the opposite parity (even answered, odd unanswered) — a 25-page notes block between
+them is an odd count, so the parity flips. **Parity is a property of one section, never of the book.
+Measure it per section.**
+
+Relaunched ranges: **A 477–509 (n:1–17) · B 511–541 (n:18–33) · C 543–573 (n:34–49) ·
+D 575–605 (n:50–65)**, D also rendering pp.606–607 to prove the end boundary. This supersedes
+"The end boundary is part D's job" above, which named pp.451–452 from the shifted read.
+
+### The section table was wrong the same way, in all eighteen rows
+
+The `Pages` column at the top of this file was derived from the same keys, so **every row is one
+high at both ends**. Rows 1–5 have been corrected in place; rows 6–18 have not. The counts are all
+unaffected — a uniform shift preserves them, which is why 65/65/25 came out right for section 5 even
+from the wrong window.
+
+The correction is self-confirming: with one subtracted, **every section ends exactly on its own last
+answered page** (§1 74, §2 153, §3 243, §4 450, §5 605) and each section owns the notes run that
+opens it. Uncorrected, every section ended on a notes page belonging to its successor. §18 cannot be
+settled either way from the index — pp.1989–1993 are all `notes` — so it gets rendered when it comes.

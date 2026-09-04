@@ -152,6 +152,21 @@ Its specific failure mode is why: **superscripts fail silently.** OCR read a pri
 this project, and exponents also flatten (10⁶ becomes 106). That is a plausible wrong number, not
 visible garbage. **Never take an exponent, a unit, a dose or a key from OCR text.**
 
+### ⚠️⚠️ 4a-pre. THE INDEX IS KEYED 0-BASED, AND IT ONCE PUT A WHOLE SECTION'S PROMPT ONE PAGE OUT
+
+You do not open `index.json`, but the page ranges in your prompt were derived from it, so its one
+trap can reach you. `index.json` is an object whose **keys are a 0-based position** while each
+record's own `page` field is the **real 1-based PDF page**: `idx['452'].page === 453`. Reading the
+key as a page number shifts every range down by one — and because this book alternates unanswered
+and answered pages, a one-page shift also **inverts the parity**, so every page in the prompt is the
+unanswered twin of the page that was meant. That happened to section 5 on 2026-09-04. It was caught
+because an agent reported "confirmed still unanswered at p560" on a page its prompt called answered.
+
+**That report is the instrument.** If the pages you actually see disagree with the structure your
+prompt describes — an unanswered page where an answered one was promised, a printed question number
+that does not follow, a section banner one page off — **stop and report it. Do not renumber, do not
+shift your range to fit, do not quietly stage the twin.** The disk wins over the prompt, always.
+
 ### ⚠️⚠️ 4a. THE BOOK PRINTS ITS EXPONENTS THREE DIFFERENT WAYS — measured 2026-09-04, section 4
 
 All three shapes occur in one section, each confirmed at 300 dpi on its own page:
