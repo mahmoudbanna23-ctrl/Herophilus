@@ -57,8 +57,16 @@ const SEC = {
   // at 419+420, staged once from the fuller printing. ⚠️ The two genuine overflow boxes (312, 321)
   // are NOT among the five -- the index classified them `notes`, so they never inflated 95 at all.
   // A shortfall is reconciled by DIFFERENCING THE PAGE SETS, never by subtracting a category.
+  // `folded` lists the staged entries adjudicated as duplicate reprints and DROPPED at drafting --
+  // n53 (p.375) into n86 (p.442), n89 (p.448) into n57 (p.383), n90 (p.450) into n82 (p.434).
+  // ⚠️ It exists because the shared-menu detector derives its groups from the STAGED array, which
+  // still holds the discards, and so it demanded that pedep2-hem-86 point at a pedep2-hem-53 that
+  // will never exist -- a hard FAILURE on a correct file, 2026-09-04. A fold and a genuine sibling
+  // pairing look identical to an option-menu comparison; only the adjudication tells them apart, so
+  // the adjudication has to be recorded here for the tool to see it.
   4: { prefix: 'pedep2-hem-', file: 'endpoint-p2-s04-haematology.array.js', svar: 'PEDEP2_S04_STAGED',
-       draft: 'endpoint-p2-s04-haematology.draft', chapter: 'haematology', pages: [245, 451], ans: 90 },
+       draft: 'endpoint-p2-s04-haematology.draft', chapter: 'haematology', pages: [245, 451], ans: 90,
+       folded: [53, 89, 90] },
   5: { prefix: 'pedep2-res-', file: 'endpoint-p2-s05-respiratory.array.js', svar: 'PEDEP2_S05_STAGED',
        draft: 'endpoint-p2-s05-respiratory.draft', chapter: 'respiratory', pages: [452, 606], ans: 65 },
   6: { prefix: 'pedep2-car-', file: 'endpoint-p2-s06-cardiac.array.js', svar: 'PEDEP2_S06_STAGED',
@@ -173,13 +181,42 @@ const BOXED = new Set(S.filter(s => norm(s.expl)).map(s => s.n));
 // order-sensitive detector is blind to that shape as well as to the pairing.
 // ⚠️ Do NOT sort the comparison at 'options differ from staging' below -- that one must stay
 // order-sensitive, because there a reordering IS the defect it exists to catch.
+// A folded entry is never drafted, so it cannot anchor a table and cannot be pointed at. Drop the
+// discards before grouping, or every fold manufactures a shared menu with its own survivor and the
+// survivor is failed for not citing an id that does not exist.
+const FOLDED = new Set(cfg.folded || []);
 const menus = new Map();
-S.forEach(s => {
+S.filter(s => !FOLDED.has(s.n)).forEach(s => {
   const k = JSON.stringify(s.opts.map(o => String(o).toLowerCase().replace(/\s+/g, ' ').trim()).slice().sort());
   if (!menus.has(k)) menus.set(k, []);
   menus.get(k).push(s.n);
 });
 const SHARED = [...menus.values()].filter(g => g.length > 1).map(g => g.slice().sort((a, b) => a - b));
+
+// ⚠️ EXACT MATCHING IS NOT ENOUGH. Section 4, 2026-09-04: n69 and n70 print the same four-option
+// management ladder in the same order, differing only in that n69's first option reads "No action
+// needed" and n70's reads "No action". One trimmed word, and the detector above saw two unrelated
+// questions -- the drafter paired them by hand instead, which is exactly the manual catch this tool
+// exists to remove. Report a near-miss as a WARNING and never as a failure: a menu one option away
+// from another is often a genuine pairing and sometimes just two questions off the same syllabus,
+// and only a person reading both can tell. The exact detector above still owns the hard failure.
+const NEAR = [];
+const pool = S.filter(s => !FOLDED.has(s.n));
+const normed = new Map(pool.map(s => [s.n, s.opts.map(o => String(o).toLowerCase().replace(/\s+/g, ' ').trim()).slice().sort()]));
+const alreadyGrouped = new Set(SHARED.flatMap(g => g.map(n => g.filter(m => m !== n).map(m => n + '/' + m)).flat()));
+for (let i = 0; i < pool.length; i++) {
+  for (let j = i + 1; j < pool.length; j++) {
+    const a = normed.get(pool[i].n), b = normed.get(pool[j].n);
+    if (a.length !== b.length) continue;
+    const exact = a.filter((o, k) => o === b[k]).length;
+    if (exact === a.length || exact < a.length - 1) continue;      // identical is SHARED's job; 2+ apart is not a near-miss
+    if (alreadyGrouped.has(pool[i].n + '/' + pool[j].n)) continue;
+    NEAR.push([pool[i].n, pool[j].n]);
+  }
+}
+NEAR.forEach(([a, b]) => warn.push('near-identical option menus n:' + a + ' and n:' + b
+  + ' -- one option apart. Read both: if it is the same menu, anchor the table at ' + cfg.prefix + a
+  + ' and have ' + cfg.prefix + b + ' point at it. If the differing option changes what is asked, it is not a pairing.'));
 
 const seen = new Map();
 D.forEach(q => {
@@ -286,7 +323,12 @@ SHARED.forEach(group => {
   notes.push('shared menu n:' + group.join(', n:') + ' -> table anchored at ' + anchor);
 });
 
-const missing = S.filter(s => !seen.has(s.n)).map(s => s.n);
+// A folded discard drafted anyway is a silent duplicate in the live bank -- the survivor and the
+// reprint both present, under two ids, saying almost the same thing. Nothing downstream catches it.
+[...FOLDED].forEach(n => {
+  if (seen.has(n)) fail.push(cfg.prefix + n + ': n:' + n + ' was FOLDED and must not be drafted at all');
+});
+const missing = S.filter(s => !seen.has(s.n) && !FOLDED.has(s.n)).map(s => s.n);
 console.log('section ' + secNum + (which ? ' draft-' + which : ' draft') + '  length ' + D.length + '  holes ' + holes + '  var ' + vn);
 console.log('derived from staging: boxed ' + BOXED.size + '/' + S.length + ' | straddles ' + (STRADDLE.size ? [...STRADDLE].join(',') : 'none')
   + ' | figures ' + (FIGURE.size ? [...FIGURE].join(',') : 'none') + ' | shared menus ' + (SHARED.length || 'none')

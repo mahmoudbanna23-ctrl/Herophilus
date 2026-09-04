@@ -1356,3 +1356,131 @@ p.375's age, n82 must absorb p.450's normal range).
 `val-pd-ep2.js`'s section-4 `ans` was still the index's 95; lowered to 90 with the five-page
 reconciliation written beside it, so nobody re-derives the discrepancy from scratch. It is an unused
 documentation field — which is exactly why a stale value there survives.
+
+---
+
+## Correction: "every structural oddity falls inside half B" was wrong — there is a second boxless entry in half D (2026-09-04)
+
+The block above says every structural oddity in section 4 falls inside half B. **It does not.** Re-read
+off the staged array rather than off this journal:
+
+```
+--- figs anywhere ---        n26 p.320 "peripheral blood film, low power"
+                             n27 p.323 "clinical photograph, infant's hand"
+--- boxless anywhere ---     n21 p.308
+                             n54 p.377
+--- box overflow anywhere -- n22 p.311 box 312
+                             n26 p.320 box 321
+```
+
+**`n54` (p.377) is boxless and it is in half D, not half B.** Both figures, both box overflows and the
+first boxless entry are in B, which is what produced the claim; the second boxless entry was simply
+not looked for outside B's range. The earlier merge block did record `boxless: n21 p.308 n54 p.377`
+correctly — the error was introduced later, when the drafting split was described, by generalising
+from three of the four oddity kinds. **A claim that a property is confined to one range is a claim
+about the WHOLE array and has to be measured over the whole array.**
+
+Half D's task prompt carries the general unboxed rule (no blockquote anywhere; closing line
+`Written for this bank — Pediatrics endpoint part2.pdf prints no explanation here.` with an em dash;
+the marker never in `source`), so n54 is covered by contract rather than by being pointed at. **It is
+checked in D's returned file before that half is accepted** — an unboxed entry that acquires a
+blockquote is a silent hard-fail at the validator, exactly the failure mode the "tell B explicitly"
+reasoning was meant to prevent.
+
+### The fold pages and keys, re-verified against the staged array
+
+| n | p | key | pairs with | its key | agree? |
+|---|---|---|---|---|---|
+| 53 | 375 | 3 | **86** (p.442) | 3 | yes |
+| 89 | 448 | 0 | **57** (p.383) | 0 | yes |
+| 90 | 450 | 3 | **82** (p.434) | 3 | yes |
+
+**Every fold pair carries the same key on both printings**, so no fold in this section moves an
+answer — checked on disk, not assumed from the adjudication. The three survivors (n57, n82, n86) and
+the three discards (n53, n89, n90) are disjoint sets.
+
+---
+
+## Section 4 drafted, refiled across four chapters, spliced at 87 — and the chapter field turned out to have no instrument behind it (2026-09-04)
+
+All six halves returned and validate. **15 + 15 + 15 + 14 + 15 + 13 = 87**, exactly 90 staged less the
+three folded discards. Word counts by half: 4,101 · 4,180 · 4,177 · 3,818 · 3,727 · 3,756 —
+**23,759 words, 273 a question**, against a budget of ~250 for slide-recall and ~520 for vignettes.
+
+Every half was cross-checked from disk in the main chat rather than taken on the agent's word:
+`answer` against the staged `key` index, `stem` and `options` byte-identical to staging, the exact
+`source` string including the box-overflow form, boxed-versus-unboxed shape, the unboxed marker's
+presence and its absence from `source`, figure basename and `imgAlt` against the staged `figAlt`, and
+the allowed-field set. All clean. **n54 (p.377), the second boxless entry, came out right from the
+general rule alone** — half D was never pointed at it, because the journal block that would have
+pointed at it was the one that wrongly said every oddity sits in half B.
+
+### ⚠️ THE CHAPTER FIELD WAS WRONG IN 24 ENTRIES AND NOTHING WOULD EVER HAVE CAUGHT IT
+
+**My defect, not the agents'.** I hard-coded `chapter:'haematology'` into the prompts for halves A–D
+and let E and F judge per entry. So every ITP, haemophilia, von Willebrand and HSP question in the
+first sixty was filed under *Anaemia and marrow failure*, and so were four leukaemia questions and one
+child-protection question.
+
+**No instrument sees this.** `val-pd-ep2.js` lines 39–41 say it outright: the `chapter` in the section
+config is documentation only, and each entry's own chapter is checked against the real chapter set
+from `modules.js`, never against that field. `haematology` and `haem-bleeding` are both real chapters,
+so a bleeding disorder filed as anaemia passes every check there is — validator, splicer, boot check —
+and surfaces only as a question sitting in the wrong chapter on the shelf. **A field with no
+instrument behind it needs a deliberate pass, and the pass has to cover halves that were not suspect.**
+
+One pass over all six halves, by content, filed 24 entries elsewhere:
+
+| Chapter | Count | What moved there |
+|---|---|---|
+| `haematology` — Anaemia and marrow failure | 51 | unchanged |
+| `haem-bleeding` — Bleeding and clotting disorders | 30 | 18 moved from A–D; E and F had already filed 12 |
+| `malignant` — Leukaemia | 5 | n30, n45, n47, n49, n58 |
+| `accidents` — Accidents and poisoning | 1 | n46 |
+
+**`pedep2-hem-46` leaves haematology altogether.** It is printed inside the haematology section and it
+asks which feature of a 5-month-old's spiral humeral fracture suggests non-accidental injury — a child
+protection question, not a haematology one. Chapter by content, which is part 1's established
+practice: `questions.peds.ep.js` files 216 entries across **36 different chapters**.
+
+**E and F agreed with me on all 28 of their own entries — zero moved back.** That is the useful part
+of the measurement: the two halves that were left to judge for themselves reached the same filing an
+independent pass reached, so the split is a property of the questions and not of whoever was reading
+them. The error was entirely in the four prompts that removed the judgment.
+
+Two straddling cases were decided and left where they were. **n64** ("Which is not a cause of acute
+abdomen?") and **n72** ("true medical causes of abdominal pain, EXCEPT") both offer four options that
+are all haematological, and the discriminating fact — that thalassaemia does not cause an acute
+abdomen where sickle cell disease and HSP do — is a haematology fact. Primary `haematology`, secondary
+abdominal pain, per the standing straddle rule. `gi-abdopain` exists and was considered.
+
+### The splicer carried the same fold blindness the validator did
+
+`splice-pd-ep2.js` refused the section: `MISSING: pedep2-hem-53 / -89 / -90 is staged but not drafted`,
+and `COUNT: drafts sum to 87 but staging holds 90`. **Identical defect to the validator's, found the
+same day for the same reason** — a fold register that lives only in a journal is invisible to every
+tool, and a staged discard is indistinguishable from an entry someone forgot.
+
+The splicer already had a `reprints` mechanism, and **it is not the same thing.** A reprint is a model
+exam re-printing a question that is already live from a body section; it is folded by extending the
+existing entry's `source`, and the splicer has a `REPRINT PASS HAS NOT RUN` check that proves the pass
+happened by counting a marker in the live file. A section-4 fold is two printings inside one section,
+both staged in the same pass, the survivor drafted in the same batch — **there is no live entry to
+extend and no reprint pass to run, so borrowing the reprint machinery would have failed a correct
+file on a proof that cannot exist.** A separate `folded: [53, 89, 90]` was added instead, sharing only
+the "staged but deliberately not drafted" behaviour, and drafting a folded entry anyway still trips
+`EXTRA` — which is what keeps a silent duplicate out of the live bank.
+
+### Spliced and booted
+
+```
+questions.peds.ep2.js   94 -> 181 entries   220,855 -> 447,824 chars   holes 0
+banks: {"endpoint":181}    ids: no duplicates    answer in range: all
+chapters: normal-dev 28 · dev-problems 28 · genetics 38 · haematology 51 ·
+          haem-bleeding 30 · malignant 5 · accidents 1        (unknown chapters: none)
+boot check: QUESTIONS 5310 · THEORY 153 · MODULES 4 · 153 chapter rows (138 with questions)
+            console errors 0
+```
+
+`app/index.html` and `app/data/questions.js` already carried their one line each from the section 1–3
+splice; neither was touched. **Sections 1–4 of part 2 are live. Section 5 (Respiratory) is next.**

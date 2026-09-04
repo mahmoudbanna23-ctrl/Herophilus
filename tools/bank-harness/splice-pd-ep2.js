@@ -38,8 +38,21 @@ const SEC = {
        draft: 'endpoint-p2-s02-dev-problems.draft' },
   3: { prefix: 'pedep2-gen-', staging: 'endpoint-p2-s03-genetics.array.js', svar: 'PEDEP2_S03_STAGED',
        draft: 'endpoint-p2-s03-genetics.draft' },
+  // `folded` lists staged entries adjudicated as duplicate printings WITHIN this section and
+  // dropped at drafting -- n53 (p.375) into n86 (p.442), n89 (p.448) into n57 (p.383), n90 (p.450)
+  // into n82 (p.434). It is NOT the same thing as `reprints` below and must not be merged with it:
+  // a reprint is a model-exam re-printing of a question already live from a body section, folded by
+  // extending an existing entry's `source`, and `reprintPass` proves each pair. A fold here is two
+  // printings inside the same section, both staged in the same pass, the survivor drafted in the
+  // same batch -- there is no live entry to extend and no reprint pass to run, so the reprint
+  // machinery's proof check would fail on a correct file. Both mean "staged but deliberately not
+  // drafted"; only that part is shared.
+  // ⚠️ Same defect, same day, as the one recorded in val-pd-ep2.js: without this the splicer reads
+  // the three discards as MISSING and refuses a correct set of drafts. The adjudication lives in
+  // content/peds/qb-pages/endpoint-p2-section-map.md; it has to be recorded in the tool as well,
+  // because nothing in the staged array distinguishes a discard from an entry someone forgot.
   4: { prefix: 'pedep2-hem-', staging: 'endpoint-p2-s04-haematology.array.js', svar: 'PEDEP2_S04_STAGED',
-       draft: 'endpoint-p2-s04-haematology.draft' },
+       draft: 'endpoint-p2-s04-haematology.draft', folded: [53, 89, 90] },
   5: { prefix: 'pedep2-res-', staging: 'endpoint-p2-s05-respiratory.array.js', svar: 'PEDEP2_S05_STAGED',
        draft: 'endpoint-p2-s05-respiratory.draft' },
   6: { prefix: 'pedep2-car-', staging: 'endpoint-p2-s06-cardiac.array.js', svar: 'PEDEP2_S06_STAGED',
@@ -148,7 +161,12 @@ if (!Array.isArray(S)) { console.error('staging var ' + cfg.svar + ' did not loa
 // A reprint is staged but deliberately not drafted, so it is not a wanted id -- and because it is
 // not wanted, drafting one anyway trips the EXTRA check below rather than passing silently.
 const REPRINTS = new Set(cfg.reprints || []);
-const wantIds = S.filter(s => !REPRINTS.has(s.n)).map(s => cfg.prefix + s.n);
+// A folded discard is staged and deliberately not drafted, exactly like a reprint, so it drops out
+// of the wanted set the same way -- and drafting one anyway still trips EXTRA, which is what keeps
+// a silent duplicate out of the live bank.
+const FOLDED = new Set(cfg.folded || []);
+const SKIP = new Set([...REPRINTS, ...FOLDED]);
+const wantIds = S.filter(s => !SKIP.has(s.n)).map(s => cfg.prefix + s.n);
 
 // carve() returns the raw entry text; the loaded array is what gets counted and checked.
 // Both are needed: the splice is byte-level, but a byte-level splice cannot see a hole.
@@ -201,10 +219,13 @@ wantIds.forEach(id => { if (!seen.has(id)) fail.push('MISSING: ' + id + ' is sta
 gotIds.forEach(id => { if (!wantIds.includes(id)) fail.push('EXTRA: ' + id + ' is drafted but not staged'); });
 [...seen].forEach(([id, c]) => { if (c > 1) fail.push('DUPLICATE: ' + id + ' drafted ' + c + ' times'); });
 
-// 2. the drafts sum to the section, less anything recorded as a reprint
-if (drafted.length !== S.length - REPRINTS.size)
+// 2. the drafts sum to the section, less anything recorded as a reprint or a within-section fold
+if (drafted.length !== S.length - SKIP.size) {
+  const less = [REPRINTS.size ? REPRINTS.size + ' reprints' : '', FOLDED.size ? FOLDED.size + ' folded' : '']
+    .filter(Boolean).join(' and ');
   fail.push('COUNT: drafts sum to ' + drafted.length + ' but staging holds ' + S.length
-    + (REPRINTS.size ? ' less ' + REPRINTS.size + ' reprints = ' + (S.length - REPRINTS.size) : ''));
+    + (less ? ' less ' + less + ' = ' + (S.length - SKIP.size) : ''));
+}
 
 // 2a. THE REPRINT PASS MUST ALREADY HAVE RUN. Splicing first would leave the 30 live entries with
 // no record of the exam printing, and nothing afterwards would notice: the count is right either
