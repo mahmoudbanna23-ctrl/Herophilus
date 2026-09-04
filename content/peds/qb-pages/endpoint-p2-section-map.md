@@ -1143,3 +1143,118 @@ denote 10⁹, and is recorded in that entry's note.
 `merge-parts-ep2.js 4` → the reprint/fold sweep over all 90 → draft → `val-pd-ep2.js` →
 `splice-pd-ep2.js` → boot check → commit. **Nothing folds across the part-1/part-2 boundary while
 both chats are live**; these folds are all within section 4 of part 2 and are unaffected by that.
+
+---
+
+## Section 4 MERGED at 90, the shortfall reconciled page by page, and House's haematology chapter turns out to be a contiguous slice of this section (2026-09-04)
+
+`merge-parts-ep2.js 4 --write` → **`endpoint-p2-s04-haematology.array.js`, 90 entries, n 1…90,
+pp.268–450, 104,906 chars.** Every structural check passes: `pr != n` **none**, pages strictly
+increasing, no key out of range, no stray option-letter prefixes, no `fig` without `figAlt`.
+Two boxes on their own page (n22 → p.312, n26 → p.321), two figures (n26, n27), two entries with no
+printed box (n21, n54), option counts 31 four-option and 59 five-option.
+
+### ⚠️ `n` IS SECTION-GLOBAL, NOT PER-PART — the brief did not say so, and four agents read it four times the same way
+
+All four parts were written with `n` restarting at 1, and the merge refused every entry after the
+first part: *"n is not the position"*. **The brief was at fault, not the agents.** §6 said only
+*"`n` is the true sequential index"*, which is exactly as true of a per-part index as of a
+section-global one, and nothing anywhere said which. Sections 1 and 3 had already established the
+convention on disk — s01 part B opens at `n:15`, s03 part B at `n:17` — but **a convention that
+lives only in previously written files is not an instruction**, and no agent staging section 4 had
+any reason to open them.
+
+Repaired by setting `n := pr` in all four files, which is safe **here and only here** and was proved
+before anything was written: the printed numbers across the four parts form a contiguous 1…90 run
+with **no duplicate and no gap**, so the printed number *is* the section-global position. The script
+refuses to write unless that holds. 69 entries renumbered; part A already satisfied it.
+
+⚠️ **This will not be true of every section.** Part 1's section 1 printed "69" and "81" twice each,
+so there `pr` is not the position and `n := pr` would silently corrupt the ordering. **The check is
+the point, not the shortcut** — §6 of the brief now states the convention outright, and the first
+part of every section from 5 onward starts at 1 while each later part continues the count.
+
+### The 95 → 90 shortfall: five pages, each one opened and named
+
+`expect` was the index's answered-page count, 95. The merge came in at 90 and the tool refused it —
+correctly, since a shortfall is *"a page to LOOK AT, never automatically a fault"*. Reconciled by
+differencing the index's answered set against the staged set, which named the five exactly:
+
+| Page(s) | Cause | Reading |
+|---|---|---|
+| 255, 256, 257 | lettered content slides | bullets like "A. Beta-Thalassemia" carry yellow and read as options |
+| 322 | **index mistag** | no highlight, no box — an ordinary unanswered printing of Q27; p.323 is the real answered page |
+| 420 | exact duplicate reprint of 419 | staged once from the fuller printing |
+
+**95 − 5 = 90, with every one of the five accounted for by a cause that was seen on the page.**
+`expect` lowered to 90 with all five written into the config comment.
+
+⚠️⚠️ **The two overflow boxes are NOT in that list, and that is the lesson.** pp.312 and 321 are
+genuine overflow boxes and were staged as `box:` on their own questions — but the index classified
+them **`notes`, not `answered`**, so they never entered `expect` at all. Nor did p.309, the teaching
+slide. **Three of the four known structural causes appear in this reconciliation and one does not.**
+So a shortfall can never be settled by subtracting a category — "we found two overflow boxes,
+therefore two of the missing five are those" would have been wrong by two, and wrong in a way that
+still summed correctly. **Difference the actual page sets and open what the difference names.**
+
+### ⚠️⚠️ HOUSE'S HAEMATOLOGY CHAPTER IS A CONTIGUOUS SLICE OF THIS SECTION — 13 hits in a row
+
+`reprint-pd-ep2.js 245 451` returned **14 cross-file candidates, every one of them against Chat B's
+House bank**, and they are not scattered:
+
+```
+p.322/323 == pedhd-haem-6      p.339 == pedhd-haem-14
+p.329     == pedhd-haem-9      p.341 == pedhd-haem-15
+p.331     == pedhd-haem-10     p.343 == pedhd-haem-16
+p.333     == pedhd-haem-11     p.345 == pedhd-haem-17
+p.335     == pedhd-haem-12     p.347 == pedhd-haem-18
+p.337     == pedhd-haem-13     p.349 == pedhd-haem-19
+                               p.351 == pedhd-haem-20
+```
+
+**Fifteen consecutive House ids against fifteen consecutive endpoint answered pages, thirteen of
+them matching one-for-one and in order.** The two misses (`haem-7`, `haem-8`, which would sit at
+pp.325 and 327) are almost certainly the OCR threshold rather than genuine non-matches — but they
+are unconfirmed and are written down as unconfirmed.
+
+`MEMORY.md` already records that the two banks overlap and that the overlap is **chapter-shaped, not
+scattered** — 5 collisions in part 1's first 150 entries, four of them endpoint Nutrition ≡ House
+ch.10, with a naive projection of *"25–30 for the whole stream, ONE data point, re-measure, never
+quote as a count."* **This is the re-measurement, and it is much larger than the projection: 14 from
+a single section of a single part.** The shape holds — contiguous, one-for-one, chapter-aligned —
+but the magnitude does not. ⚠️ **The 25–30 figure is now known to be low and must not be quoted.**
+
+**None of these fold, and none may be touched.** `questions.peds.js` is Chat B's live file and Chat
+B is writing it. The standing rule is unchanged: *nothing folds across a live chat's boundary; the
+two files stay separate while both chats write.* These 14 are recorded here for the end-of-stream
+sweep, when one chat owns both files. **Recording is the whole action; there is nothing else to do
+with them yet.**
+
+### The within-section folds — two decided, one that the instrument missed
+
+Four within-section candidates came back; two of them were already settled and are false as folds:
+
+- **p.322 ≡ p.323** — the mistag against its own answered page. Not a fold; only p.323 is staged.
+- **p.419 ≡ p.420** — the duplicate reprint. Already staged once from the fuller printing.
+
+The two real ones, both confirmed on the page earlier today and now confirmed by the sweep as well:
+
+| Fold | Keep | Discard | Why |
+|---|---|---|---|
+| p.375 (n53) ≡ p.442 (n86) | **n86, p.442** | n53 | p.442 prints the bleeding-time normal range `(3–8 min)` and full-sentence labs; p.375 is telegraphic |
+| p.383 (n57) ≡ p.448 (n89) | **n57, p.383** | n89 | a tie on content; p.383 prints "ecchymosis" where p.448 prints "bruising", and the earlier printing keeps the deck's order |
+
+⚠️ **Each fold DISCARDS A PRINTED AGE** — the child is 3 on p.375 and 12 on p.442; the girl is 5 on
+p.383 and 3 on p.448. Neither age touches its key. **The discarded age and the discarded page
+citation both go into the surviving entry's `source` and `note`. A fold that loses a printed number
+without recording it is a silent edit to the source**, which is the one thing this bank does not do.
+
+⚠️⚠️ **And the sweep did NOT flag n82 (p.434) ≡ n90 (p.450)** — the pair part D's own agent caught by
+eye, differing in wording, one normal-range figure and **one option count**. The OCR similarity
+never reached threshold. **The instrument is a net with holes, and a human flag it misses is still a
+flag.** It stays open and is settled on the images before drafting, not by the sweep's silence. As
+it happens the differing option count is, under the existing rules, the one feature that makes a
+pair *not* a fold — so the likely outcome is two entries; that is a reading to confirm, not to
+assume.
+
+**Net: 90 staged − 2 folds = 88 live entries expected from section 4.**

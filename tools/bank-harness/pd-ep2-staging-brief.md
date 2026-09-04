@@ -199,6 +199,14 @@ conventionally reported in g/dL**. Both units on that page are correct and neith
 - **Walk the printed question numbers in order** and record the walk in the header, page by page.
   **The printed number is NOT an identifier**: part 1 section 1 printed "69" and "81" twice each, so
   its 89 questions numbered 1..87. `n` is the true sequential index; `pr` is what the page prints.
+- **⚠️⚠️ `n` IS SECTION-GLOBAL, NOT PER-PART. It is the entry's position among ALL the section's
+  questions, and it CONTINUES across the part files — it does NOT restart at 1 in part B.** Part A
+  starts at `n:1`; if part A ends at `n:21`, part B opens at `n:22`. **The merge tool checks
+  `q.n === i + 1` over the concatenated parts and refuses the whole section if any entry is off**,
+  so a per-part numbering fails at merge time, not at staging time — which is exactly when your
+  page-by-page walk is no longer in front of anyone. If you are staging part B, C or D, **read the
+  last entry of the preceding part off disk and start from the next number.** (Four agents got this
+  wrong the same way on section 4, 2026-09-04, because this bullet was not here.)
 - **Render one page PAST the end of your range** and prove the boundary off it: quote the next
   section's banner or the closing slide, and say what you saw.
 - Re-count the finished array from disk in node — `.length` plus an index walk for sparse holes,
@@ -209,7 +217,8 @@ conventionally reported in g/dL**. Both units on that page are correct and neith
 ## 6. What goes in each entry
 
 ```
-{ n:<true sequential index>, pr:<printed number>, p:<PDF page of the ANSWERED page>, key:<0-based INDEX>,
+{ n:<SECTION-GLOBAL sequential index -- continues across parts, never restarts>, pr:<printed number>,
+  p:<PDF page of the ANSWERED page>, key:<0-based INDEX>,
   box:<page>,                        // ONLY when the explanation box overflowed onto its own page
   straddle:true,                     // ONLY when the question box itself crosses a page break
   stem:'…', opts:['…','…','…','…','…'],

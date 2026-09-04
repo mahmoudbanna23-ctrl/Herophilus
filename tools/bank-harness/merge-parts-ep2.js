@@ -49,8 +49,21 @@ const SEC = {
   // Two instruments, one from the images and one from the page furniture, and they meet.
   3: { base: 'endpoint-p2-s03-genetics', svar: 'PEDEP2_S03_STAGED', title: 'SECTION 3: "Genetics"',
        pages: '155-244', expect: 38 },
+  // ⚠️ 90, NOT the index's 95, LOWERED 2026-09-04 after all four staging parts closed. Every one
+  // of the five is a page that was opened and named, not a shortfall that was waved through --
+  // and between them they exhibit three of the four known structural causes:
+  //   255, 256, 257  lettered content slides; their bullets carry yellow and read as options
+  //   322            the index's own tag is WRONG -- no highlight, no box, an ordinary unanswered
+  //                  printing of Q27. p.323 is the real answered page. A defect in the instrument,
+  //                  not something printed on the page.
+  //   420            the second half of the exact duplicate reprint at 419+420; staged once from
+  //                  the fuller printing, per "record, never decide".
+  // ⚠️ The two overflow boxes in this section (312, 321) are NOT in this list: the index classified
+  // them `notes`, so they never inflated `expect` in the first place. Neither did p.309, the
+  // teaching slide. The overflow cause is real but it does not show up here -- which is exactly why
+  // a shortfall has to be reconciled page by page and never by subtracting a category.
   4: { base: 'endpoint-p2-s04-haematology', svar: 'PEDEP2_S04_STAGED', title: 'SECTION 4: "Hematological Disorders"',
-       pages: '245-451', expect: 95 },
+       pages: '245-451', expect: 90 },
   5: { base: 'endpoint-p2-s05-respiratory', svar: 'PEDEP2_S05_STAGED', title: 'SECTION 5: "Respiratory disorders"',
        pages: '452-606', expect: 65 },
   6: { base: 'endpoint-p2-s06-cardiac', svar: 'PEDEP2_S06_STAGED', title: 'SECTION 6: "Cardiac disorders"',
