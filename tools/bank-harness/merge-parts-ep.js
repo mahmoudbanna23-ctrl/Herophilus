@@ -109,6 +109,16 @@ const SEC = {
   // answered pages run 4:22, 5:57 -- so a five-option ladder is the norm here, unlike §10.
   11: { base: 'endpoint-s11-mfe2', svar: 'PEDEP_S11_STAGED', title: 'MODEL FINAL EXAM 2',
         pages: '1323-1483', expect: 79 },
+
+  // Model Final Exam 3. All three notes on Section 10 apply unchanged. Band measured from
+  // index.json on 2026-09-04: 161 pages from p.1483 to p.1643 hold 79 `question`, 80 `answered`
+  // and 2 `notes`, the notes being the p.1483 and p.1643 dividers. ANSWERED IS ONE HIGHER THAN
+  // QUESTION because a single explanation runs onto its own sheet -- q p.1604 answers across
+  // 1605 AND 1606, the one break in an otherwise perfect +2 step. That page carries yellow and so
+  // counts as answered; it is a BOX OVERFLOW, not a straddle, and the row it belongs to takes
+  // `box: 1606`. `expect` below is therefore the question count, 79, not the answered count.
+  12: { base: 'endpoint-s12-mfe3', svar: 'PEDEP_S12_STAGED', title: 'MODEL FINAL EXAM 3',
+        pages: '1484-1643', expect: 79 },
 };
 
 const secNum = process.argv[2];

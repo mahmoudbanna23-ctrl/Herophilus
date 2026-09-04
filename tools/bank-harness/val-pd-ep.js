@@ -63,6 +63,16 @@ const SEC = {
   // under an id the validator rejects; the same trap is one character away here.
   11: { prefix: 'pedep-mf2-', file: 'endpoint-s11-mfe2.array.js', svar: 'PEDEP_S11_STAGED',
         draft: 'endpoint-s11-mfe2.draft', chapter: '(mixed)' },
+
+  // Model Final Exam 3, pp.1484-1643. Mixed topic, exactly as sections 10 and 11 -- `chapter` is a
+  // label only. The prefix is `pedep-mf3-`, from the EXAM, not `pedep-mfe3-` from the staging FILE
+  // name; that one character is the same trap section 11 records above.
+  // A SPLIT SECTION CANNOT BE VALIDATED AS A WHOLE HERE. `node val-pd-ep.js 12` with no half letter
+  // builds the path endpoint-s12-mfe3.draft.js, a merged file that does not exist while the section
+  // is drafted in halves, and dies ENOENT. Pass the half letter. splice-pd-ep.js already globs the
+  // halves and runs this gate over every letter, so nothing goes unchecked at splice time.
+  12: { prefix: 'pedep-mf3-', file: 'endpoint-s12-mfe3.array.js', svar: 'PEDEP_S12_STAGED',
+        draft: 'endpoint-s12-mfe3.draft', chapter: '(mixed)' },
 };
 
 // imgAlt must give MODALITY AND VIEW ONLY. Naming the finding answers the question --
