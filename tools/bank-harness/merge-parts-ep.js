@@ -112,13 +112,22 @@ const SEC = {
 
   // Model Final Exam 3. All three notes on Section 10 apply unchanged. Band measured from
   // index.json on 2026-09-04: 161 pages from p.1483 to p.1643 hold 79 `question`, 80 `answered`
-  // and 2 `notes`, the notes being the p.1483 and p.1643 dividers. ANSWERED IS ONE HIGHER THAN
-  // QUESTION because a single explanation runs onto its own sheet -- q p.1604 answers across
-  // 1605 AND 1606, the one break in an otherwise perfect +2 step. That page carries yellow and so
-  // counts as answered; it is a BOX OVERFLOW, not a straddle, and the row it belongs to takes
-  // `box: 1606`. `expect` below is therefore the question count, 79, not the answered count.
+  // and 2 `notes`. ANSWERED IS ONE HIGHER THAN QUESTION, AND THE EXTRA SHEET IS AN EXTRA QUESTION,
+  // NOT AN OVERFLOWING BOX. That inference was made from the index on 2026-09-04 and CORRECTED
+  // FROM THE PAGES on 2026-09-05: p.1605 and p.1606 are two complete, unrelated questions, each
+  // with its own stem, its own ladder, its own yellow key and its own closed box. Nothing overflows
+  // anywhere in this section and no row here takes `box`. What p.1606 lacks is a BLANK twin --
+  // p.1607 is the blank printing of the p.1608 question -- so one question of the eighty is printed
+  // once instead of twice, which is exactly why `answered` exceeds `question` by one.
+  // THE SECTION HOLDS 80 QUESTIONS and `expect` is the answered-sheet count. The printed numbering
+  // proves it from both ends: the answered run skips 52 (p.1585 prints 51, p.1587 prints 53, and
+  // blank p.1586 carries that question as 52), then prints 63 TWICE (p.1606 duodenal atresia,
+  // p.1608 neonatal obstruction), which closes the offset so that p.1642 prints 80 as the eightieth
+  // question. An older plan predicted 80 for reasons nobody had measured; it was right by accident.
+  // p.1643 is not a divider in any useful sense -- it is a full-bleed photograph carrying an Arabic
+  // poem, and p.1644 is the Model Final Exam 4 title page.
   12: { base: 'endpoint-s12-mfe3', svar: 'PEDEP_S12_STAGED', title: 'MODEL FINAL EXAM 3',
-        pages: '1484-1643', expect: 79 },
+        pages: '1484-1643', expect: 80 },
 };
 
 const secNum = process.argv[2];
