@@ -644,3 +644,66 @@ Note that for when it is reached; do not carry the twin-checking method into it 
 Of the pairs already read: 255+256+257 are lettered content slides, not questions; 419+420 are an
 exact duplicate reprint where the second page prints no box; 322+323 is still open. **Three
 different causes for one signature, in one section.** A break is not evidence of an overflow box.
+
+---
+
+## The two overflow-box candidates, read on the image — one is a box, and it was already live (2026-09-04)
+
+The replacement test in §3a proposed two candidates out of the 95 entries already staged. Both were
+opened. **They did not settle the same way, and one of them was a live-content defect.**
+
+### ✅ p.20 IS a box — and section 1's first question was already in the app without it
+
+`pedep2-nd-1` (p.19, the Steven first-birthday-party milestone vignette, printed key **E "None – his
+development is within normal limits"**) was staged with `expl: ''` and a note reading *"No explanation
+box printed on p19"*. That note was **true about p.19 and wrong about the question.** The box is
+printed alone on p.20: four bulleted lines inside a bordered box, each label — "Fine motor:",
+"Gross motor:", "Social:", "Speech:" — bold red, the body italic black, page number "20" outside the
+box, and **nothing else on the page.** No stem, no options, no key.
+
+Verbatim, as printed:
+
+> •Fine motor: He demonstrates a pincer grip (picking Smarties).
+> •Gross motor: At 12 months, walking is not expected for all children — many are still crawling or pulling to stand; walking may occur anytime up to 18 months.
+> •Social: He waves goodbye, which is normal.
+> •Speech: Saying 2 words with meaning is appropriate for 12 months.
+
+It walks p.19's stem clinical detail by clinical detail, in the order the stem introduces them, and
+reasons each is age-appropriate — which is what settles it as p.19's box and not a teaching slide.
+
+**Repaired in both files, same pass:**
+- `endpoint-p2-s01-normal-dev.array.js` n:1 — `box: 20` added, `expl` filled with the four bullets
+  (`\n`-separated), and the note rewritten to record what it originally claimed and why that was wrong.
+- `app\data\questions.peds.ep2.js` `pedep2-nd-1` — the box now leads the explanation in the section's
+  own convention (**"The endpoint file prints this explanation:"** → blockquote → `---` → expansion),
+  the written expansion kept unchanged, the closing marker swapped from *"Written for this bank —
+  Pediatrics endpoint part2.pdf prints no explanation here"* (**a false statement about the source, the
+  reason this mattered**) to the expansion marker every other boxed entry in the section carries, and
+  `source` extended to `p.19 (explanation box printed alone on p.20)`.
+- Boot check after: **QUESTIONS 5177 · THEORY 153 · MODULES 4 · 153 chapter rows · 0 console errors.**
+
+⚠️ **The app renders this as ONE blockquote, not four lines.** `md()` at `app\index.html` joins
+consecutive `> ` lines with a space (`quote.join(' ')`), and a `- ` list flushes an open quote rather
+than nesting inside it — so a four-bullet box cannot be rendered as four lines in a single quote. The
+`•` glyphs are kept precisely so the joined paragraph still reads as four bullets. **Every word is
+verbatim; only the line breaks are lost, and that is a renderer limit, not a transcription choice.**
+
+### ❌ p.244 is NOT a box
+
+A full-page Arabic religious supplication (du'a) — end-of-section furniture closing section 3, with no
+connection to p.243's pedigree question. `pedep2` section 3's n:38 keeps its written explanation and
+its unboxed marker. My prompt to the checking agent described p.244 as "2 words" from the index's word
+count; it is a multi-line devotional passage. **The index's word count is a classifier's artefact, not
+a description of the page** — do not paraphrase it into a prompt as though it were one.
+
+### What the pass is worth
+
+Two candidates, two different answers, and the true one had been sitting live in the app for a day
+carrying a marker that said the book prints no explanation where the book does. **The structural
+position is a suggestion; only the page settles it** — which is exactly why both went to an agent that
+reads the image rather than being resolved from the index.
+
+⚠️ **A verbatim claim cannot rest on a summary of a reading.** The first checking agent's output file
+came back empty and its findings survived only inside my own compressed account of them. That is not a
+transcription, so p.20 was re-read by a second agent that wrote the text to disk itself
+(`p0020-verbatim.md`) before any of it reached live content. The two readings agree word for word.

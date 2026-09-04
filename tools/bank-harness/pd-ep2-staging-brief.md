@@ -113,6 +113,12 @@ p.19 is live with no box) and **p.244** (section 3, the last page of the section
 re-found **p.179**, which section 3 had already recorded as `box:179`. A test that re-finds a known
 true case before it proposes new ones is worth running.
 
+**Both were then read on the image, and they settled differently — the measured hit rate is 1 in 2.**
+p.20 **is** the box for p.19's question (four bulleted lines, bold red labels, no stem and no options),
+so `pedep2-nd-1` was repaired: it had been live carrying the marker *"the endpoint file prints no
+explanation here"* about a page where the book does print one. p.244 is **not** a box — a full-page
+Arabic supplication closing the section. **Flagging a page is not finding a box. Open it.**
+
 **Two things that are NOT overflow boxes**, both established by reading the page rather than the
 index — a lone `notes` page can be either, so it is opened, never assumed:
 

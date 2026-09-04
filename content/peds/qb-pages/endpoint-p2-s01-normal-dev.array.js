@@ -19,12 +19,12 @@ var PEDEP2_S01_STAGED = [
    Printed question number (pr) walk so far: n1=pr1 (p19).
 */
 
-{ n: 1, pr: 1, p: 19,
+{ n: 1, pr: 1, p: 19, box: 20,
   key: 4,
   stem: "Steven has just had his first birthday party. During his party, he commando crawled with great speed, although he cannot walk. He managed to pick off all the Smarties (round chocolate sweets) from his birthday cake. He can say two words with meaning. After his birthday party, he impressed his guests by waving goodbye. Which area of Steven's development is delayed?",
   opts: ['Fine motor and vision', 'Gross motor', 'Social, emotional, and behavioral development', 'Speech and hearing', 'None – his development is within normal limits'],
-  expl: '',
-  note: 'Highlighted option E, "None – his development is within normal limits" (index 4), underlined+bold yellow highlight. No explanation box printed on p19. Twin p18 identical text, unanswered.' },
+  expl: '•Fine motor: He demonstrates a pincer grip (picking Smarties).\n•Gross motor: At 12 months, walking is not expected for all children — many are still crawling or pulling to stand; walking may occur anytime up to 18 months.\n•Social: He waves goodbye, which is normal.\n•Speech: Saying 2 words with meaning is appropriate for 12 months.',
+  note: 'Highlighted option E, "None – his development is within normal limits" (index 4), underlined+bold yellow highlight. Twin p18 identical text, unanswered.\n⚠️ THE EXPLANATION BOX IS ON p20, NOT p19 — an overflow box printed alone on the next page, which the index classifies as `notes` and the alternation-break test could never see (see §3a of the staging brief). Originally staged 2026-09-04 with expl:\'\' and a note reading "No explanation box printed on p19"; corrected the same day after p20 was read on the image. p20 carries four bulleted lines inside a bordered box, each label ("Fine motor:", "Gross motor:", "Social:", "Speech:") bold red, the body italic black, and nothing else but the page number. No stem, no options, no key — it is an explanation, not a question. The four bullets are printed on SEPARATE lines; \\n preserved here, and the app renders them as one blockquote because md() joins consecutive quote lines with a space.' },
 
 { n: 2, pr: 2, p: 22,
   key: 4,
