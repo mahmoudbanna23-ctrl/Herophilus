@@ -2256,3 +2256,89 @@ posterior urethral valves and UPJ obstruction → `renal-cakut` · diaphragmatic
 opens at p.1937 and is prose — nothing to stage. **Part 1 is NOT closed until all six exams are
 done.** Expect §11 to reprint heavily too; stage first, adjudicate reprints against the live file,
 and only then decide how many entries the section actually drafts.
+
+---
+
+## §11 CLOSED — 2026-09-04, Model Final Exam 2, pp.1322–1482, staged 79 → 33 reprints + 46 drafted
+
+`Q_PEDS_EP` **495 → 541**, 0 holes, 541 unique ids, no `answer` out of range, boots from `file://`
+with **0 console errors** (`QUESTIONS 5223 · THEORY 153 · MODULES 4 · 153 chapter rows, 138 with
+questions · pediatrics 51`). Commits: `eca60f0` staging halves C+D · `b20db77` reprint adjudication
+and pass · `32fd2b9` draft halves A/B/C · `7f56895` half D and the splice.
+
+### The reprint set was found twice, by probes sharing no input
+`reprint-pd-ep.js 1323 1483` matches the **OCR** of every answered page against the live file and
+returned 45 candidates; a second probe (`scratchpad\adj11.js`) matched the **staged transcription**
+against the same live file and returned 23 EXACT + 11 NEAR over **the same 34 pages**. The
+agreement is what makes the set trustworthy: the OCR probe reported "stem too short to match" on
+p.1382 and the transcription probe resolved it as no match at all — the shape of a miss a single
+probe would have swallowed. The 11 NEAR were then read side by side (`scratchpad\near11.js`) and
+adjudicated by hand to **10 reprints + 1 non-reprint**.
+
+### ⚠️⚠️ n24 IS NOT A REPRINT, AND ITS ABSENCE FROM THE LIST IS THE FINDING
+Staged n24 (p.1370) matches live `pedep-emg-23` (p.622) on the stem, **and the two printings
+disagree about the answer.** The body printing offers both a 10 mL/kg and a 20 mL/kg normal-saline
+bolus and keys the 20; the exam printing drops the 20 mL/kg option entirely and keys the 10. **The
+exam's answer is an option the body bank prints as a distractor.** Per the standing rule —
+contradictions are recorded, never corrected; the key never moves; a key dispute is never taken to
+the user — n24 is drafted as **its own entry carrying the exam's printed key**, with p.622's
+printing quoted in its explanation. Folding it would have destroyed one of two conflicting doses
+and left nothing behind to find. Both `splice-pd-ep.js` SEC[11] and `reprint-s11-pd-ep.js` say so
+in a header warning, at the point where a later reader would be tempted to tidy it away.
+
+### The second contradiction: n64's key and its own explanation box disagree (p.1450)
+The highlight sits on **D — wait 24 hours and observe the perineum for meconium** — and the box
+argues for the technique named in option **E**. `keypos.py` read the page as index 2 and was
+overruled by a **cold render read** in a subagent told nothing about the staging, which returned D
+off a 300 dpi page and a 600 dpi ladder crop and independently reproduced the stem, all five
+options and the box. **Staged key stayed 3 and reached the live file as 3.** That is the sixth
+keypos disagreement and the sixth time the tool, not the bank, was wrong. Running calibration:
+**394 staged keys, 384 agree, 6 disagree, 4 abstain — all 394 right.**
+
+### ⚠️ p.1471 IS n74'S EXPLANATION-BOX OVERFLOW, NOT THE "NOTES PAGE" THE OCR INDEX CALLS IT
+Established from the rendered pages. The `index.json` mislabel is what seeded a parity-shift
+warning into three agent prompts: **the shift is real, but its stated cause was not.** Do not
+"correct" a page offset around pp.1471–1473 on the strength of that label.
+
+### Four tool facts this section established, each of which cost a step to learn
+1. **`val-pd-ep.js <sec> <half>` validates one half; the bare `val-pd-ep.js <sec>` form does not
+   check a split section.** It builds the path `<draft>.js` — a merged file that has never existed
+   for a split section — and dies ENOENT at line 95. `splice-pd-ep.js` already globs the halves and
+   loops its gate over every letter, so nothing goes unchecked at splice time.
+2. **Draft entries are comma-terminated (`},`)** — unlike the bare-fragment `part-*.js` files. Two
+   half-briefs said the opposite and nothing broke only because both agents copied the section-10
+   file they were pointed at instead of the sentence.
+3. **The closing marker's apostrophe is CURLY (U+2019).** Half C wrote all eleven entries with a
+   straight one; the marker check would have failed at splice time, not at write time. Take the
+   bytes from `BOXED_MARK` in `val-pd-ep.js` before writing entry one.
+4. **In `app\data\modules.js` a chapter is a two-element array `[id, name]`, not an object.** Three
+   probes returned a confident "chapter id does not exist" for nine ids that all exist. **A zero
+   from a probe you just wrote is a claim about the probe first.**
+
+### Standing gaps in the taxonomy, recorded not fixed
+**There is no paediatric-surgery chapter and no dermatology chapter.** §11 has a lot of both —
+imperforate anus, hypospadias, Morgagni hernia, malrotation, Hirschsprung, nappy-rash candida — so
+those rows went to the nearest existing chapter following endpoint precedent (`perinatal`,
+`renal-cakut`, `perinatal-rd`, `gastroenterology`, `gi-diarrhoea`, `infection-rash`). Recorded here
+because it will recur in every remaining exam. Paediatric surgery **IS** in scope for this book.
+
+### Debt found in passing, not fixed
+`pedep-inf-4` (MMR, chapter `infection-vaccine`) states the Egyptian vaccination schedule with **no
+lecture citation and no "not taken from the course material" tag**, and no vaccine-schedule lecture
+is cached anywhere in `content\peds\lectures\`. Surfaced by the half-B drafter, which tagged its own
+n44 properly rather than copying the gap forward. Untouched — it belongs to an earlier section.
+
+### The rate limit, and why it cost nothing
+Sonnet's **weekly** limit ran out mid-section (resets **2026-09-05 21:00 Africa/Cairo**), killing
+the first half-D drafter with a 429 **before it wrote a byte**. Halves A/B/C were committed first,
+then D was re-dispatched with an **Opus** model override. The write-incrementally rule is what made
+this cheap: a killed drafter leaves either complete entries or no file at all, never a half-written
+one. ⚠️ Opus helper agents bill cache reads at $0.50/MTok against Sonnet's $0.20 — a deliberate
+2.5× on that component, taken to avoid stopping a section one half short.
+
+### Next
+**§12 = Model Final Exam 3, pp.1483–1643, 80 questions.** Then MFE 4 (1644–1804, 80), Training
+Exam 1 (1805–1873, 30), Training Exam 2 (1874–1936, 30). Exam Night Review opens at p.1937 and is
+prose — nothing to stage. **Part 1 is NOT closed until all six exams are done.** Expect MFE 3 to
+reprint heavily as well: stage all 80 first, run both probes, adjudicate every NEAR by side-by-side
+reading, and only then decide how many entries the section drafts.
