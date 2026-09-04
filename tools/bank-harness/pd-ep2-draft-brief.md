@@ -222,7 +222,12 @@ sibling chapters. Then say why the zero is a zero and how you measured it.**
 Only where the staging row carries a `fig` field. Everything else must carry **no** `image` at all
 — an unbacked `image` is a hard failure, and so is a missing one where staging records a figure.
 
-- `image` is the **basename** `q-pd-ep-<the staged p>` — no path, no extension. `qImgSrc()` builds
+- `image` is the **basename** `q-pd-ep2-<the staged p>` — no path, no extension. ⚠️ **`ep2`, with
+  the 2. This brief said `q-pd-ep-` until 2026-09-04 and was wrong** — `val-pd-ep2.js` line 244
+  requires `q-pd-ep2-`, so every figure entry written to the old shape hard-fails. The `2` is not
+  cosmetic: **part 2's page numbers restart at 1, so `q-pd-ep-320` would collide with part 1's crop
+  of its own page 320** — a different picture under the same name, in a chat that does not own it.
+  No path, no extension. `qImgSrc()` builds
   the path at runtime; a literal path is a broken image no bundler can see.
 - Where the page prints two panels, they get **one combined crop** under that single basename.
   Never invent a second image field.

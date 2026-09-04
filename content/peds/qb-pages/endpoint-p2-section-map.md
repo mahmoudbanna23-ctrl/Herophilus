@@ -1258,3 +1258,101 @@ pair *not* a fold — so the likely outcome is two entries; that is a reading to
 assume.
 
 **Net: 90 staged − 2 folds = 88 live entries expected from section 4.**
+
+---
+
+## Section 4's fold register CLOSED at three, the two figure crops cut, and drafting opened in six halves (2026-09-04)
+
+### The third fold: p.434 ≡ p.450, and the option count did not stop it
+
+The pair part D's agent flagged by eye and the OCR sweep never saw. Adjudicated on both page images.
+
+Both stems: a 3-year-old child, pale, iron-deficiency anaemia, asked for the expected haematological
+picture. Reworded, not re-scoped. **Options a–d carry identical numeric values on both pages** — Hb
+10/MCV 70/retic 10%, Hb 15/MCV 78/retic 2%, Hb 8/MCV 45/retic 9%, Hb 7.5/MCV 65/retic 1% — with
+p.450 restating the units (`g/dL`, `fL`) that p.434 leaves as bare numerals. **The key is `d` on both
+pages, index 3 on both.** p.434 prints a fifth option, `e. Hemoglobin (7), MCV (80), reticulocyte
+(16%)`; p.450 stops at four.
+
+**VERDICT: FOLD** — the recorded "reworded stem + dropped filler option" shape. The test that
+settles it is not the count but **whether the dropped option changes what is being asked or what
+could be answered**, and it does not: option e sits in the last slot, so removing it leaves the key's
+index untouched, and d remains the only option low on all three of Hb, MCV and reticulocytes among
+the four that survive. **p.434 (n82) is the fuller printing and survives.**
+
+⚠️⚠️ **THE TWO PAGES PRINT A DIFFERENT NORMAL RANGE FOR THE SAME ANALYTE.** p.434 prints
+`(N: MCV 70-100)`; p.450 prints `(Normal MCV: 75–100 fL)`. Confirmed on both page images at native
+resolution — **not an OCR artefact, and not a transcription slip.** The book contradicts itself about
+a reference interval. Standing rule: **a contradiction is RECORDED, never corrected, and the key
+never moves.** The surviving entry keeps `70-100` exactly as its own page prints it, and its
+explanation records that the same question is reprinted on p.448–450 with the lower bound printed as
+75. Neither number is adjudicated, and this is not taken to the user.
+
+⚠️ **This is why the fold has to be a merge and not a deletion.** A fold that simply drops the
+second printing would have silently destroyed the only evidence that the book prints two different
+normal ranges — a printed number lost with no record. **Every value the discarded printing carries
+and the survivor does not goes into the survivor.**
+
+### The register, closed
+
+| Discard | Survivor | Why the survivor | What the discard carries into it |
+|---|---|---|---|
+| n53, p.375 | **n86, p.442** | prints the bleeding-time normal range `(3–8 min)` and full-sentence labs | the child's age is **3** on p.375 and **12** on p.442 |
+| n89, p.448 | **n57, p.383** | a tie on content; p.383 prints "ecchymosis" against "bruising", and the earlier printing keeps the deck's order | the girl is **5** on p.383 and **3** on p.448 |
+| n90, p.450 | **n82, p.434** | carries the fifth option | normal MCV lower bound printed as **75**, against **70** on p.434 |
+
+**All three folds discard a printed number and every one of those numbers is preserved in the
+survivor.** Two are the patient's age, one is a reference interval. None touches a key.
+
+**90 staged − 3 folded = 87 live entries expected from section 4.** No survivor is also a discard;
+checked explicitly rather than assumed.
+
+### ⚠️ The instrument missed the fold a human caught, and that is now measured twice
+
+The OCR reprint sweep flagged the two age-change pairs and **did not flag p.434 ≡ p.450**, which
+turned out to be a genuine fold — the rewording plus the restated units pushed the similarity below
+threshold. It also flagged **p.322 ≡ p.323** and **p.419 ≡ p.420**, neither of which is a fold: the
+first is the index-mistag against its own answered page, the second the duplicate already staged
+once. **So on four candidates the sweep produced two true, two false, and one miss.**
+**It is a net with holes and it is not a decider.** A human flag it misses is still a flag; a hit it
+produces is a page to open. Nothing in this section was folded or refused on the sweep's word alone.
+
+### The two figure crops, cut and looked at
+
+| File | Page | Crop on the 2481×3508 300 dpi render | Output |
+|---|---|---|---|
+| `q-pd-ep2-320.jpg` | 320 | x1450, y800, w700, h480 | 700×480 |
+| `q-pd-ep2-323.jpg` | 323 | x1800, y560, w600, h480 | 600×480 |
+
+p.320 is a low-power peripheral blood film — small pale hypochromic red cells, two darker nucleated
+cells, in its own black-bordered box, no labels, no arrows, no scale bar. p.323 is a colour clinical
+photograph of an infant's hand and forearm on white bedding beside a shape-sorter toy, an ID band at
+the ankle, the fingers visibly swollen.
+
+**Both were looked at after cutting.** In both cases the printed key sits in the frame's
+neighbourhood and was deliberately excluded — p.320's highlighted `C. Iron-deficiency anemia` and
+p.323's highlighted `E. Sickle cell disease` and its blue box naming hand-foot syndrome are all
+outside the crop. ⚠️ **The p.323 photograph shows the finding itself**, which is unavoidable and is
+the whole point of the picture; **what must not give the answer away is the caption**, and the staged
+`figAlt` is `clinical photograph, infant's hand` — modality and view, no diagnosis, no laterality.
+
+⚠️ **The draft brief said the basename was `q-pd-ep-<page>` and the brief was wrong** — `val-pd-ep2.js`
+line 244 requires **`q-pd-ep2-`**. Every figure entry written to the old shape would have hard-failed.
+The `2` is not cosmetic: **part 2's page numbers restart at 1, so `q-pd-ep-320` names a different
+picture belonging to another chat.** Fixed in the brief, with the reason, rather than silently.
+
+### Drafting opened, six halves
+
+87 live entries against a measured ~11–15 per drafting agent across sections 1–3, so **six halves,
+A–F**, not the usual two. Ranges by staged `n`: **A 1–15 · B 16–30 · C 31–45 · D 46–60 · E 61–75 ·
+F 76–90**, less the three folded entries — D loses n53, F loses n89 and n90 — giving 15/15/15/14/15/13.
+
+⚠️ **Every structural oddity in the section falls inside half B**: the boxless n21, the p.312
+overflow on n22, and both figures (n26, which also overflows to p.321, and n27). B was given all four
+explicitly rather than left to discover them, since three of them are silent hard-fails at the
+validator. The fold instructions go to **D** (n57 must absorb p.448's age) and **F** (n86 must absorb
+p.375's age, n82 must absorb p.450's normal range).
+
+`val-pd-ep2.js`'s section-4 `ans` was still the index's 95; lowered to 90 with the five-page
+reconciliation written beside it, so nobody re-derives the discrepancy from scratch. It is an unused
+documentation field — which is exactly why a stale value there survives.

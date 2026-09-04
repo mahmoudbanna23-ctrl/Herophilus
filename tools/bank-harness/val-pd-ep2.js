@@ -48,10 +48,17 @@ const SEC = {
        draft: 'endpoint-p2-s02-dev-problems.draft', chapter: 'dev-problems', pages: [76, 154], ans: 30 },
   3: { prefix: 'pedep2-gen-', file: 'endpoint-p2-s03-genetics.array.js', svar: 'PEDEP2_S03_STAGED',
        draft: 'endpoint-p2-s03-genetics.draft', chapter: 'genetics', pages: [155, 244], ans: 42 },
-  // The biggest body section, 207 pages. Splits across haematology and haem-bleeding; it will
-  // almost certainly need part-A/part-B halves through merge-parts-ep.js.
+  // The biggest body section, 207 pages. Splits across haematology and haem-bleeding; it needed
+  // FOUR staging parts (A-D) through merge-parts-ep2.js.
+  // ⚠️ `ans` here is 90, NOT the OCR index's 95 -- CLOSED 2026-09-04, every one of the five
+  // reconciled on the page: 255/256/257 are lettered content slides whose bullets carry yellow and
+  // read as options; 322 is the index's own tag being WRONG (an ordinary unanswered printing of
+  // Q27 -- p.323 is the real answered page); 420 is the second half of the exact duplicate reprint
+  // at 419+420, staged once from the fuller printing. ⚠️ The two genuine overflow boxes (312, 321)
+  // are NOT among the five -- the index classified them `notes`, so they never inflated 95 at all.
+  // A shortfall is reconciled by DIFFERENCING THE PAGE SETS, never by subtracting a category.
   4: { prefix: 'pedep2-hem-', file: 'endpoint-p2-s04-haematology.array.js', svar: 'PEDEP2_S04_STAGED',
-       draft: 'endpoint-p2-s04-haematology.draft', chapter: 'haematology', pages: [245, 451], ans: 95 },
+       draft: 'endpoint-p2-s04-haematology.draft', chapter: 'haematology', pages: [245, 451], ans: 90 },
   5: { prefix: 'pedep2-res-', file: 'endpoint-p2-s05-respiratory.array.js', svar: 'PEDEP2_S05_STAGED',
        draft: 'endpoint-p2-s05-respiratory.draft', chapter: 'respiratory', pages: [452, 606], ans: 65 },
   6: { prefix: 'pedep2-car-', file: 'endpoint-p2-s06-cardiac.array.js', svar: 'PEDEP2_S06_STAGED',
