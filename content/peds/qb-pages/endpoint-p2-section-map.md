@@ -1583,3 +1583,44 @@ and real: `idx['452'].page === 453`, it cost section 5 a whole launch, and it is
 "correction" was **inferred** from that defect and cost nothing only because a boundary render was
 already scheduled. **The staging pipeline renders one page past every range for exactly this reason,
 and this is the first time that rule has caught the main chat rather than an agent.**
+
+## Section 6 "Cardiac disorders" profiled BEFORE staging — it is three runs, not one alternation (2026-09-05)
+
+Section 5 ran a single clean alternation: odd answered, even unanswered, all the way through. **Do
+not carry that across the boundary.** Section 6 was profiled page by page off `index.json` before
+any agent was launched, iterating `Object.values(idx)` and keying on `e.page`, and it does not
+alternate uniformly. pp.607-792, 186 pages:
+
+| Run | Pages | Answered pages | Parity of the answered page |
+|---|---|---|---|
+| Opening notes | 607-627 | 613, 617, 618, 619 | **neither — no twins** |
+| Run 1 | 628-635 | 629, 631, 633, 635 | odd |
+| *interruption* | **636** | — | one `notes` page |
+| Run 2 | 637-688 | 638, 640 … 688 (26) | **even** |
+| *interruption* | **689** | — | one `notes` page |
+| Run 3 | 690-791 | 691, 693 … 791 (51) | **odd** |
+| Close | 792 | — | the Arabic closing supplication |
+
+**A single interposed notes page flips the parity, and it happens twice.** 636 and 689 each sit
+alone between an answered page and the next question page, so the run that follows starts on the
+opposite parity from the run before it. A range profiled from either end and extrapolated by
+alternation is wrong for two thirds of the section. **Every staging range in section 6 must be built
+from the profile, page by page, never from a parity rule.**
+
+Counts reconcile exactly: 4 + 4 + 26 + 51 = **85** pages with `kind:"answered"`, and **81** pages
+with `kind:"question"`. That matches the contents-page table's `answered 85 / question 81` and
+identifies the difference precisely — **the four answered pages inside the opening notes block
+(613, 617, 618, 619) have no unanswered twin.** Every other answered page in the section is the
+second half of a question/answer pair.
+
+⚠️ **Those four must be read by eye before anyone decides whether they are questions.** The
+`answered` flag is only the yellow threshold, and the whole notes block 608-626 crosses it — notes
+slides in this book are yellow-heavy, so `answered:true` is meaningless there. What separates the
+four is `kind`, which is a different measurement. They may be worked examples printed inside the
+teaching notes rather than bank questions, in which case they are not staged; they may be four
+questions the book chose not to print an unanswered face for, in which case they are. **The index
+cannot settle it and neither can this note.** Render them.
+
+The section 5 close-out estimate of "answered pages 613/617/618/619 inside the notes run, p.636
+interrupting" was measured on a partial sweep and was right about those five pages and blind to
+p.689. This profile supersedes it.
