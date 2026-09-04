@@ -20,7 +20,30 @@
    there is no printed question or key on any of these three pages.
 
    Question-number walk (pr = printed number, page by page):
-     n1 pr1 p268 */
+     n1 pr1 p268 ... n21 pr21 p308. RANGE CLOSED at p.308, part A's full assigned range (255-308)
+     now staged (21 questions, n1-n21, pp.268-308).
+
+   BOUNDARY PROOF off the one-past page, read 2026-09-04: p.309 is a single full-width bordered
+   teaching paragraph, no stem/options/key -- "Iron deficiency is the most common cause of anemia
+   in toddlers and is often related to excessive cow's milk intake, which is low in iron. Dietary
+   history is crucial to identify insufficient iron-rich foods." This CONFIRMS the prior report
+   that p.309 is an unrelated teaching slide on iron deficiency -- read fresh here, not taken on
+   trust. It is NOT staged (out of range, and not a question). p.310 is the unanswered twin of a
+   NEW question ("22. Tia is a 4-year-old Caucasian girl..."), and p.311 is that twin's answered
+   printing (option C "Hereditary spherocytosis" highlighted) -- confirms p.311 is the first
+   answered page of part B's range, per the task prompt. Nothing past p.308 is staged in this file.
+
+   n:21 (p.308) prints NO explanation box -- box test per brief §3a run: p.309 opened and found to
+   be the teaching slide above, not an overflow box for n:21 (different box shape/position/font
+   from every real overflow box in this range; see n:21's note). expl:'' for n:21 is correct as the
+   page itself prints no box.
+
+   n:6 (p.278) and n:7 (p.280) notes were corrected 2026-09-04 per an audit: n:6's note had been
+   contaminated with n:7's p.279/280 content by a copy error (key:1 itself was always right -- p.278
+   highlights option B "Fanconi anemia" -- only the prose was wrong, now rewritten). n:7's flat
+   "5.0×109/L" / "80×109/L" was re-confirmed at 300 dpi (ep2-stage\\p-0279.jpg / p-0280.jpg): the
+   book itself prints it flat, no superscript anywhere on either page -- staged exactly as printed,
+   note updated to record the 300 dpi confirmation. */
 
 { n:1, pr:1, p:268, key:2,
   stem:'Microcytes are seen in blood films of which of the following conditions?',
@@ -56,13 +79,13 @@
   stem:'What is the MOST common inherited pancytopenia syndrome?',
   opts:['Dyskeratosis congenita','Fanconi anemia','Shwachman-Diamond syndrome','Diamond-Blackfan anemia','Congenital amegakaryocytic thrombocytopenia'],
   expl:'Fanconi anemia is the most common inherited cause of pancytopenia, often presenting with physical anomalies and progressive bone marrow failure.',
-  note:'Twin checked (p.279, unanswered, identical stem/options; double period after "bruising" printed on both, reproduced verbatim). Option D "Fanconi anemia" is highlighted yellow and underlined -> key=3. Printed box present, transcribed verbatim. FLAGGED NUMERAL/UNIT: stem prints "5.0×109/L" and "80×109/L" with NO superscript on the exponent -- checked at native 800x450 AND at a 300 dpi crop of p.280 (ep2-stage\\p-0280.jpg), both show the same flat "109", not a stylised 10^9. This is the source slide itself printing it flat (verified on the rendered page pixels, not via OCR), most likely intended as x10^9/L (standard WBC/platelet units) but the slide carries no superscript formatting to confirm that intent. Staged exactly as printed. AUDIT NOTE (n7 pass, did not re-view p.278/p.277): this entry\'s note text says "Option D \"Fanconi anemia\"... key=3", but in THIS entry\'s own opts array "Fanconi anemia" sits at opts[1] (the letter B, since A=Dyskeratosis congenita, B=Fanconi anemia, C=Shwachman-Diamond, D=Diamond-Blackfan, E=Congenital amegakaryocytic) -- the note mislabels the letter. The field key:1 does point at opts[1]="Fanconi anemia", which also matches expl\'s stated answer, so key:1 itself looks internally consistent with opts and expl; it is only the note\'s own "Option D... key=3" phrase that is wrong. Not re-verified against the page image (out of my assigned range, p.278 already closed) -- flagged for the drafting pass to check against the source if it matters, field left unedited per "do not renumber, do not rewrite."' }
+  note:'RE-READ 2026-09-04 to settle a contaminated note (this entry\'s note previously carried n:7\'s p.279/280 bruising-case text by copy error). Re-verified fresh against the images: p.277 (unanswered twin) and p.278 (answered) both print stem "What is the MOST common inherited pancytopenia syndrome?" with options A.Dyskeratosis congenita, B.Fanconi anemia, C.Shwachman-Diamond syndrome, D.Diamond-Blackfan anemia, E.Congenital amegakaryocytic thrombocytopenia -- identical on both pages, no numerals in this stem. On p.278, option B "Fanconi anemia" is highlighted yellow, bold and underlined -> key=1 (letter B, opts[1]). This CONFIRMS key:1 was already correct; expl already agreed. The prior note\'s "Option D \\"Fanconi anemia\\"... key=3" and its numeral/twin-bruising text did not belong to this entry at all -- they are n:7\'s content (p.279/280) and have been removed here, not merely commented on.' }
 
 { n:7, pr:7, p:280, key:3,
   stem:'A 4-year-old male develops recurrent epistaxis and easy bruising.. The patient was the first child of unrelated healthy parents born after 41 weeks of pregnancy. Physical examination of the patient reveal short stature, clinodactyly with brachy mesophalangia on bilateral 5th fingers, multiple café-au-lait spots on both thighs and right buttock. He has no other abnormalities. His initial complete blood cell count results are as follows: white blood cell, 5.0×109/L; hemoglobin 9.5 g/dL; platelets 80×109/L.\n\nWhich of the following is the MOST likely diagnosis ?',
   opts:['megaloblastic anemia','Pearson syndrome','congenital Amegakaryocytic Thrombocytopenia','Fanconi anemia','Diamond-Blackfan anemia'],
   expl:'The combination of short stature, café-au-lait spots, congenital anomalies, and pancytopenia suggests Fanconi anemia, a DNA repair disorder.',
-  note:'Twin checked (p.279, unanswered, identical stem/options, verbatim including double period after "bruising.."). Option D "Fanconi anemia" is highlighted yellow, bold and underlined -> key=3. Printed box present, transcribed verbatim. FLAGGED NUMERAL/UNIT: stem prints "5.0×109/L" and "80×109/L" with no superscript on the exponent, on BOTH the answered (p.280) and unanswered (p.279) pages at native 800x450 -- same flattening pattern as n:6 (p.278); staged exactly as printed, most likely intended as x10^9/L.' }
+  note:'Twin checked (p.279, unanswered, identical stem/options, verbatim including double period after "bruising.."). Option D "Fanconi anemia" is highlighted yellow, bold and underlined -> key=3. Printed box present, transcribed verbatim. FLAGGED NUMERAL/UNIT: stem prints "5.0×109/L" and "80×109/L" with no superscript on the exponent. CONFIRMED AT 300 DPI 2026-09-04 (ep2-stage\\p-0280.jpg and ep2-stage\\p-0279.jpg, both re-rendered independently of the native 800x450 extraction): the "109" is the same size and baseline as the surrounding text on both the answered and unanswered page, no superscript glyph anywhere. This is the book\'s own printing, not an artefact of the low-res native image or of OCR -- staged exactly as printed, most likely intended as x10^9/L (standard WBC/platelet units). Note that n:6 (p.278) prints no numerals at all -- its stem is unrelated to this CBC; an earlier version of n:6\'s note wrongly carried this same flag, now corrected there.' }
 
 { n:8, pr:8, p:282, key:1,
   stem:'What is the MOST common hematological abnormality in Shwachman Diamond syndrome?',
@@ -117,3 +140,33 @@
   opts:['A two-year old boy with newly diagnosed ITP whose bleeding symptoms failed to be ameliorated with steroids and IVIG','A ten-year old girl with chronic ITP with recurrent symptoms of skin bleeding that is diffuse, not responding to steroids, rituximab and other  medical therapy.','A six-year old boy with acute ITP developed intracranial hemorrhage from a road traffic accident who is hemodynamically stable and his bleeding is controlled with IVIG and steroids','A thirteen-year old girl with chronic ITP and severe vaginal bleeding that necessitated blood transfusion and failed to respond to steroids, IVIG, rituximab and contraceptive therapy.'],
   expl:'Splenectomy is indicated in refractory chronic ITP with severe bleeding, especially after failure of steroids, IVIG, and rituximab.',
   note:'Twin checked (p.297, unanswered, identical stem/options -- line-wrap differs between pages but text is character-identical, including the double space before "medical therapy" in option B, reproduced verbatim). Only 4 options printed (A-D), no E, on both pages. Option D "A thirteen-year old girl..." is highlighted yellow, bold and underlined -> key=3. Printed box present, transcribed verbatim. No numerals in question.' }
+
+{ n:17, pr:17, p:300, key:1,
+  stem:'A 2-year-old boy has had pallor since the age of 6 months and received a blood transfusion one month ago. There is a history of a similar illness in an older sibling. On examination, the child has pallor, jaundice, frontal bossing, and hepatosplenomegaly.\n\nWhat is the most likely diagnosis?',
+  opts:['Iron deficiency anemia','Beta thalassemia','Peutz-Jeghers syndrome','Sickle cell anemia','Dyskeratosis congenita'],
+  expl:'Chronic hemolysis, transfusion dependence, family history, and skeletal changes like frontal bossing point to beta thalassemia major.',
+  note:'Twin checked (p.299, unanswered, identical stem/options). Option b) "Beta thalassemia" is highlighted yellow, bold and underlined -> key=1. Printed box present, transcribed verbatim. No numerals in question. Options printed lowercase a)-e) on this page (unlike A.-E. on earlier pages in this range); reproduced as printed.' }
+
+{ n:18, pr:18, p:302, key:0,
+  stem:'A 9-month-old boy presents with progressive lethargy, irritability, and pallor since the age of 6 months. He is exclusively breastfed. Laboratory findings reveal:\nHemoglobin: 7 g/dL   MCV: 58 fL   MCH: 19.4 pg/cell\nOsmotic fragility: Normal\n\nWhat is the most likely diagnosis?',
+  opts:['Iron deficiency anemia','Acute leukemia','Megaloblastic anemia','Hereditary spherocytosis','G6PD deficiency'],
+  expl:'Exclusively breastfed infants may become iron-deficient by 6 months, leading to microcytic hypochromic anemia with low MCV and MCH.',
+  note:'Twin checked (p.301, unanswered, identical stem/options/labs). Option a) "Iron deficiency anemia" is highlighted yellow, bold and underlined -> key=0. Printed box present, transcribed verbatim. Numerals plain and legible at native 800x450 on both pages, no exponents involved: Hgb 7 g/dL, MCV 58 fL, MCH 19.4 pg/cell. Three red bullet glyphs printed before Hemoglobin/MCV/MCH and one before Osmotic fragility line are dropped in stem (typographic, not clinical content), reproduced as plain text on separate lines.' }
+
+{ n:19, pr:19, p:304, key:2,
+  stem:'A child develops severe bleeding following a tonsillectomy. Laboratory tests show a prolonged bleeding time and a prolonged partial thromboplastin time (PTT).\n\nWhat is the most likely diagnosis?',
+  opts:['Hemophilia A','Hemophilia B','Von Willebrand disease','Factor I deficiency'],
+  expl:'This condition causes both platelet function defect (↑ bleeding time) and factor VIII deficiency (↑ PTT), and often presents with mucosal bleeding.',
+  note:'Twin checked (p.303, unanswered, identical stem/options). Only 4 options printed (a-d), no e, on both pages. Option c) "Von Willebrand disease" is highlighted yellow, bold and underlined -> key=2. Printed box present, transcribed verbatim, including the printed up-arrow glyphs before "bleeding time" and "PTT" (reproduced as printed). No numerals in question.' }
+
+{ n:20, pr:20, p:306, key:4,
+  stem:'Frightened parents bring their 2-year-old son with a 2-week history of an upper respiratory tract infection. Yesterday, he developed bruises on his trunk and generalized petechiae, more prominent on the legs. On physical examination, he appears well, with no lymphadenopathy or hepatosplenomegaly. Laboratory testing shows normal hemoglobin, white blood cell count, and differential. The platelet count is 20,000/mm³.Which of the following is the most likely diagnosis?',
+  opts:['Thrombotic thrombocytopenic purpura','Von Willebrand disease','Acute lymphoblastic leukemia','Aplastic anemia','Immune thrombocytopenic purpura'],
+  expl:'A typical presentation of ITP is isolated thrombocytopenia following a viral illness, with a well child and no organomegaly or systemic signs.',
+  note:'Twin checked (p.305, unanswered, identical stem/options, including missing space before "Which" after "20,000/mm³." reproduced verbatim). Option e) "Immune thrombocytopenic purpura" is highlighted yellow, bold and underlined -> key=4. Printed box present, transcribed verbatim. "20,000/mm³" prints a TRUE superscript "3" glyph on both pages at native 800x450 -- not flat, no exponent concern here.' }
+
+{ n:21, pr:21, p:308, key:2,
+  stem:'A 1-year-old boy is noted to be pale during a routine check-up. He is on the 75th percentile for weight and the 25th percentile for length. Physical examination is normal except for pallor. His hematocrit is 24%. One question could help identify the most common cause of his presentation.\n\nWhich of the following questions is most likely to reveal the cause of his anemia?',
+  opts:['Did the child receive phototherapy for neonatal jaundice?','Has anyone in the family received a blood transfusion?',"What is the child's usual daily diet?",'Is the child on any medications?','What is the pattern and appearance of his bowel movements?'],
+  expl:'',
+  note:'Twin checked (p.307, unanswered, identical stem/options, including the curly apostrophe in "child\'s", reproduced verbatim). Option c) "What is the child\'s usual daily diet?" is highlighted yellow, bold and underlined -> key=2. NO explanation box printed on this page. Per brief §3a box test, opened the next page (p.309) before moving on: p.309 carries a single full-width bordered teaching paragraph ("Iron deficiency is the most common cause of anemia in toddlers... Dietary history is crucial...") -- NOT an overflow answer box. It differs structurally from every other explanation box in this range (those print as a SMALL box beside/below the options, in a smaller font); p.309\'s box spans nearly the full slide width in body-text size, and the page carries no stem, no options and no highlighted key. Thematically adjacent to this question\'s answer (diet history -> iron deficiency) but not formatted or positioned as this entry\'s box -- flagged for the drafting pass to weigh, not folded in here. Confirms the prior read of p.309 as an unrelated teaching slide (see file-boundary note). expl left "" as p.308 itself prints no box. Numerals (75th/25th percentile, 24% hematocrit) plain and legible on both pages, no exponents.' }

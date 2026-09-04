@@ -123,7 +123,11 @@ Arabic supplication closing the section. **Flagging a page is not finding a box.
 index — a lone `notes` page can be either, so it is opened, never assumed:
 
 - **A preceding teaching slide.** p.309 sits in the same position and is an unrelated slide on iron
-  deficiency, printed before the unanswered twin. Not staged.
+  deficiency, printed before the unanswered twin. Not staged. ⚠️ **It is thematically adjacent to
+  the question before it** — p.308's key is "ask about diet" and p.309 is about dietary iron
+  deficiency — so subject matter cannot separate the two. **The discriminator is FORMAT, measured
+  2026-09-04:** a real overflow box here is a *small side box in reduced font*; a teaching slide
+  *spans the page in body-text size*. Read the shape, not the topic.
 - **A duplicate reprint.** pp.419+420 ARE two consecutive answered pages — a real alternation break
   — but not this shape: identical stem, identical options, the same option highlighted on both, and
   the second simply prints no box. Because that second page still carries the full stem and options

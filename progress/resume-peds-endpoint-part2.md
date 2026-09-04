@@ -818,3 +818,86 @@ diagnosis. Every other answered page in the range was read whole and carries no 
 option-menu pairings and no fold candidates in this range. House-bank overlap is recorded in the
 note of every entry from n:9 (p.329) onward as an observation only — the House file was never
 opened, and **nothing folds across a live chat's boundary.**
+
+---
+
+## Section 4 parts A and C CLOSED — and a note that was carrying another entry's text (2026-09-04)
+
+**Part A closed: 21 entries, `n:1 pr:1 p:268` … `n:21 pr:21 p:308`, `pr == n` throughout.**
+**Part C closed: 24 entries, `n:1 pr:45 p:359` … `n:24 pr:68 p:405`, `pr = n + 44` throughout.**
+Both validate clean, both proved their boundary by rendering one page past the range. 62 entries now
+on disk across the four parts. Part B has 6 pages left (p.347–357) and part D has 14 (p.424–450).
+
+### ⚠️⚠️ THE AUDIT TRAIL ITSELF CAN BE FALSE — part A n:6, p.278
+
+The flagged contradiction resolved, and **not the way the internal-consistency argument predicted.**
+p.278 highlights option **B "Fanconi anemia"** — so `key:1` was already correct and did not move.
+But the note was not merely mis-worded: **it had been contaminated with n:7's entire text by a copy
+error** — n:7's p.279/280 bruising case, its numeral flag, its twin description, all sitting inside
+n:6's note describing a stem that carries no numerals at all. The predecessor's `AUDIT NOTE` had
+correctly diagnosed the mislabel and then **left it in place**, so the file contained a note that
+described the wrong question and a comment saying so.
+
+**Rewritten from a fresh read of p.277 and p.278, with the audit note removed rather than stacked.**
+
+The lesson is not about this entry. `note` is where every measurement in this pipeline is recorded —
+which option was highlighted, whether a twin was checked, whether a numeral was escalated to 300 dpi.
+**A contaminated note is a false measurement that reads exactly like a true one**, and no validator
+can see it: `check-part-ep.js` checks structure, `pr`/`n` position and dead ids, not whether a note
+describes its own entry. It was caught only because its claim disagreed with its own `key`. **A note
+whose numbers or letters disagree with its entry's own fields is a defect in the note until a page
+says otherwise — and it is settled by opening the page, never by counting which fields agree.**
+
+### The flat exponent is the book's own — p.280, settled at 300 dpi
+
+Both `p-0280.jpg` and its twin `p-0279.jpg` at 300 dpi print **`5.0×109/L` and `80×109/L`
+completely flat — no superscript glyph anywhere, same size and baseline as body text.** That is the
+book's printing, not a native-resolution artefact and not an OCR artefact. **Kept as printed**; the
+note now records the 300 dpi confirmation explicitly, where before it cited only the 800×450 check.
+
+So `5.0×109/L` — a value that means nothing as printed — stands in the staging record as the source's
+own defect. ⚠️ **The drafting pass must not "restore" the superscript.** It may say in the expansion
+what the count evidently is; the quoted stem keeps what the page prints.
+
+### p.309 confirmed, and the discriminator that settles its shape
+
+Confirmed independently as a teaching slide, verbatim: a single full-width bordered paragraph on
+dietary iron deficiency, no stem, no options, no key. Not staged.
+
+⚠️ **It is thematically adjacent to the question it follows** — p.308's key is "ask about diet" —
+so subject matter cannot separate a teaching slide from an overflow box. **The discriminator is
+format:** a real overflow box in this book is a *small side box in reduced font*; a teaching slide
+*spans the page in body-text size*. Written into the brief. The adjacency is flagged in n:21's note
+for the drafting pass rather than folded in.
+
+### Printed defects recorded, not corrected — part C, p.391 (n:17)
+
+Two on one page, both confirmed at 300 dpi (`ep2-stage\p-0391.jpg`) and therefore the book's own:
+
+- The stem prints **`Hb (6mg/dl)`** while its own explanation box cites **`Hb 90–110 g/L`** — a unit
+  and magnitude mismatch *inside a single printed question*.
+- **Options d and e are both printed "Thalassemia"**, verbatim identical.
+
+Neither touches the key: p.391 highlights option c, "Hereditary spherocytosis", so `key:2` is
+unambiguous and the duplicate pair is not the answer. Both staged exactly as printed.
+
+### The rest
+
+- **§3a fired twice more and resolved twice as "not a box"**: part A's n:21 (p.308 boxless → p.309, a
+  teaching slide) and part C's n:10 (p.377 boxless → p.378, an ordinary unanswered twin). Running
+  hit rate for the test across this section: **2 true boxes, 4 false**.
+- **No figures anywhere in part A or part C** — every answered page read whole.
+- The two cross-part reprint flags are staged and unresolved by design: **p.375 (n:9, q53, hemophilia)
+  against p.442**, and **p.383 (n:13, q57, ITP) against p.448**, both in part D's range. Each note
+  records stem opening, option count, highlighted key and box state, for adjudication after the merge.
+- Part C rendered p.407 once to prove the boundary: an ordinary q69 continuation, part D's, not staged.
+
+### ⚠️ Agents are being handed instructions that contradict this project's rules
+
+Twice now, staging agents have reported system-reminder-style messages arriving mid-task — an
+unrelated Notion instruction block, and one directing them to make file edits through Bash `sed` and
+heredocs instead of `Read`/`Edit`/`Write`. **Both agents disregarded both**, correctly, on the
+grounds that the heredoc route is the exact mechanism this project has measured corrupting content
+(a quoted heredoc collapses `\\` to `\` before the body's language ever sees it) and that
+instructions arriving outside the task's own authority are not followed. **Recorded because it is
+now a pattern, not an incident**, and because the agents got it right without being told to expect it.
