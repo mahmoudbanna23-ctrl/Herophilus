@@ -94,6 +94,37 @@ naming the page the box was printed on, and the box text still goes in `expl`. Y
 the strict question/answer alternation breaks. **Check every alternation break; do not assume the
 section has none.**
 
+### ⚠️⚠️ 3a. AN OVERFLOW BOX DOES NOT ALWAYS BREAK THE ALTERNATION — measured 2026-09-04
+
+The sentence above is true and not sufficient, and it cost a whole section before anyone noticed.
+An alternation break means *two answered pages in a row*. But a box-only page carries no question,
+no options and no highlighted key, so **the detector classifies it `notes`** — and a `notes` page
+between an answered page and the next question page produces **no run of answered pages at all.**
+It is invisible to the break test. p.312 in section 4 is exactly this, and a section-4 agent found
+it only because it opened a page it had been told was a lone `notes` page.
+
+**The reliable test is not the alternation. It is the box itself:**
+
+> **If an answered page prints NO explanation box, open the very next page before moving on.**
+
+That test is cheap, it is one extra look per boxless question, and it catches both shapes. Applied
+backwards over the three sections already staged, it flagged **p.20** (section 1, whose question on
+p.19 is live with no box) and **p.244** (section 3, the last page of the section) — and it correctly
+re-found **p.179**, which section 3 had already recorded as `box:179`. A test that re-finds a known
+true case before it proposes new ones is worth running.
+
+**Two things that are NOT overflow boxes**, both established by reading the page rather than the
+index — a lone `notes` page can be either, so it is opened, never assumed:
+
+- **A preceding teaching slide.** p.309 sits in the same position and is an unrelated slide on iron
+  deficiency, printed before the unanswered twin. Not staged.
+- **A duplicate reprint.** pp.419+420 ARE two consecutive answered pages — a real alternation break
+  — but not this shape: identical stem, identical options, the same option highlighted on both, and
+  the second simply prints no box. Because that second page still carries the full stem and options
+  it is **not a box-only page**, and `box:420` would have been wrong. Staged once from the fuller
+  printing; the duplicate gets no entry. **So a break is not evidence of an overflow box either.**
+  Read both pages and say which of the three it is.
+
 ## 4. ⚠️ OCR is not a source
 
 `content\peds\qb-pages\ocr\ep2\` is a **search index only**. It may be used to locate something,

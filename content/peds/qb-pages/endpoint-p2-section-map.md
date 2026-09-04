@@ -607,3 +607,74 @@ the page after it — it does not restart the range.
   that the box was present and transcribed verbatim; this book does print boxes in that voice.
   **Spot-check two of them against the page during drafting** before treating the whole section's
   boxes as verbatim.
+
+---
+
+## The overflow-box detector, and what it says about the whole book (2026-09-04)
+
+### The test that was wrong, and the test that replaces it
+
+The staging brief said overflow boxes are spotted "because the strict question/answer alternation
+breaks". That is true and **not sufficient**, and section 4 is where it showed. A box-only page
+carries no stem, no options and no highlighted key, so the page classifier calls it **`notes`** — and
+a `notes` page sitting between an answered page and the next question page produces **no run of
+consecutive answered pages at all.** It is invisible to the break test. p.312 was found only because
+a part-B agent opened a page it had been told was a lone `notes` page.
+
+**The replacement test is about the box, not the alternation:**
+
+> **If an answered page prints NO explanation box, open the very next page before moving on.**
+
+One extra look per boxless question, and it catches both shapes. Written into
+`tools\bank-harness\pd-ep2-staging-brief.md` as §3a.
+
+### It re-finds a known true case before it proposes new ones
+
+Run backwards over the three sections already staged — 95 entries, of which **6 print no box**:
+
+| Section | Boxless entry | Next page | Verdict |
+|---|---|---|---|
+| 1 | n:1 p.19 | p.20 `notes`, 56 words | **candidate — checked** |
+| 1 | n:13 p.44 | p.45 `question` | not a candidate |
+| 3 | n:35 p.237 | p.238 `question` | not a candidate |
+| 3 | n:36 p.239 | p.240 `question` | not a candidate |
+| 3 | n:37 p.241 | p.242 `question` | not a candidate |
+| 3 | n:38 p.243 | p.244 `notes`, 2 words | **candidate — checked** |
+
+And independently, scanning for lone `notes` pages in the box position across the whole book
+re-finds **p.179** — which section 3 had already staged as `box:179`, discovered the ordinary way.
+**A test that re-finds a known true case before proposing new ones is worth running.** Both new
+candidates were sent to a subagent to read on the image, because the structural position is a
+suggestion and only the page settles it.
+
+### Book-wide candidates, for the sections not yet staged
+
+Lone `notes` pages in the overflow position (previous page answered, next page a question):
+
+| § | Section | Pages to open |
+|---|---|---|
+| 1 | Normal Development | 20 |
+| 3 | Genetics | 179 ✅ already staged as `box:179` |
+| 4 | Hematological | 309 ❌ read, a teaching slide · 312 ✅ staged as `box:312` |
+| 6 | Cardiac | 636, 689 |
+| 8 | Neurological | 962, 1037 |
+| 9 | Endocrine | 1098 |
+| 10 | Liver | 1175, 1204, 1207 |
+| 13 | Model Exam 2 | 1531 |
+| 15 | Model Exam 4 | 1790, 1821, 1828, 1865 |
+
+Sections 2, 5, 7, 11, 12, 14 and 16 have none. **These are candidates, not findings** — p.309 sat in
+exactly this position and turned out to be an unrelated teaching slide. Every one is opened and read.
+
+### And the other shape, which the break test DOES catch
+
+Consecutive answered pages, book-wide: §3 161+162 · §4 255+256, 256+257, 322+323, 419+420 ·
+§6 617+618, 618+619 · §16 **1923+1924 through 1939+1940, seventeen in a row.**
+
+Section 16 "Recently modified Questions" is 19 pages of solid answered pages with no unanswered
+twins at all — which fits its name, and means it is a different shape of section from every other.
+Note that for when it is reached; do not carry the twin-checking method into it unexamined.
+
+Of the pairs already read: 255+256+257 are lettered content slides, not questions; 419+420 are an
+exact duplicate reprint where the second page prints no box; 322+323 is still open. **Three
+different causes for one signature, in one section.** A break is not evidence of an overflow box.
