@@ -27,11 +27,11 @@ the blank p.1993 sit outside), and each range's `answered` count matches its `qu
 
 | § | Section | Pages | np | answered | question | notes | Chapter(s) in `modules.js` |
 |---|---|---|---|---|---|---|---|
-| 1 | Normal Development | 4-74 | 71 | 28 | 28 | 15 | `normal-dev` |
-| 2 | Developmental problems | 75-153 | 79 | 30 | 29 | 20 | `dev-problems` `dev-nd` |
-| 3 | Genetics | 154-243 | 90 | 42 | 38 | 10 | `genetics` |
-| 4 | Hematological Disorders | 244-450 | 207 | 95 | 89 | 23 | `haematology` `haem-bleeding` |
-| 5 | Respiratory disorders | 451-605 | 155 | 65 | 65 | 25 | `respiratory` `resp-pneumonia` `resp-bronch` |
+| 1 | Normal Development | 5-75 | 71 | 28 | 28 | 15 | `normal-dev` |
+| 2 | Developmental problems | 76-154 | 79 | 30 | 29 | 20 | `dev-problems` `dev-nd` |
+| 3 | Genetics | 155-244 | 90 | 42 | 38 | 10 | `genetics` |
+| 4 | Hematological Disorders | 245-451 | 207 | 95 | 89 | 23 | `haematology` `haem-bleeding` |
+| 5 | Respiratory disorders | 452-606 | 155 | 65 | 65 | 25 | `respiratory` `resp-pneumonia` `resp-bronch` |
 | 6 | Cardiac disorders | 607-792 | 186 | 85 | 81 | 20 | `cardiac` `cardiac-cyan` `cardiac-acq` |
 | 7 | Kidney & Urinary Tract Disorders | 793-929 | 137 | 55 | 55 | 27 | `renal` `renal-uti` `renal-cakut` |
 | 8 | Neurological disorders | 930-1078 | 149 | 60 | 60 | 29 | `neurological` `neuro-stroke` `neuro-nm` `neuro-cp` |
@@ -47,19 +47,25 @@ the blank p.1993 sit outside), and each range's `answered` count matches its `qu
 | 18 | Exam Night Review | 1950-1992 | 43 | 2 | 0 | 41 | — **no questions** |
 | | **TOTAL** | | **1,993** | **878** | **834** | **281** | |
 
-**⚠️⚠️ THE `Pages` COLUMN WAS ONE HIGH IN EVERY ROW. Rows 1–5 are CORRECTED above (2026-09-04);
-rows 6–18 are NOT — subtract one from both ends, and re-measure before staging.** The column was
-derived by reading `index.json`'s object keys as page numbers. They are not: **the key is a 0-based
-position and the record's own `page` field is the real 1-based PDF page** — `idx['452'].page === 453`.
-Every count in the other columns is unaffected (a uniform shift preserves them), but every boundary
-was one page out. Measured from `e.page`: §1 ends 74, §2 ends 153, §3 ends 243, §4 ends 450, §5 runs
-451–605 — **and under the correction every section ends exactly on its own last answered page**,
-with the next section owning its leading notes run. Under the uncorrected numbers every section
-ended on a notes page belonging to its successor, which is what gave it away. §18's end sits inside
-a notes run (pp.1989–1993 are all `notes`) and cannot be settled from the index at all; render it.
+**✅ THE `Pages` COLUMN IS CORRECT AND HAS BEEN CONFIRMED BY RENDER. It was briefly "corrected" by
+one on 2026-09-04 and has been PUT BACK.** I found a real off-by-one in my own reading of
+`index.json` (its keys are a 0-based position; each record's own `page` field is the real 1-based PDF
+page — `idx['452'].page === 453`), and then **inferred, without measuring, that this table had been
+built the same wrong way.** It had not. A staging agent rendered pp.606–607 hours later: **p.606 is
+section 5's Arabic closing supplication and p.607 prints the "Cardiac disorders" banner** — exactly
+where this table's §5 ends and its §6 begins, and one page away from where my "correction" put them.
+
+The convention the column actually follows, now confirmed on a rendered page: **a section runs from
+its opening notes to its own closing supplication, which is the page after its last answered page.**
+§1 last answered 74, closes 75. §2 153 / 154. §3 243 / 244. §4 450 / 451. §5 605 / 606. My inference
+had every section ending on its last answered page instead, which is uniform too — that self-
+consistency is what made it convincing, and it was worth nothing. **A pattern that fits is not a
+measurement.** Rows 6–18 stand as printed; §18's end sits inside a notes run (pp.1989–1993 all
+`notes`) and still wants a render.
 
 **How to read the index, every time:** iterate `Object.values(idx)` and key your own map on `e.page`.
-Never `idx[String(p)]`.
+Never `idx[String(p)]`. That defect was real — it cost section 5 a whole launch — but it lived in my
+profiling code, not in this table.
 
 **⚠️ No new chapter is needed.** Every section maps onto a chapter that already exists in
 `modules.js`. `modules.js` is out of this stream's scope and must stay untouched.
@@ -1557,14 +1563,23 @@ Relaunched ranges: **A 477–509 (n:1–17) · B 511–541 (n:18–33) · C 543�
 D 575–605 (n:50–65)**, D also rendering pp.606–607 to prove the end boundary. This supersedes
 "The end boundary is part D's job" above, which named pp.451–452 from the shifted read.
 
-### The section table was wrong the same way, in all eighteen rows
+### ⚠️ AND THEN I OVER-CORRECTED, AND A RENDERED PAGE CAUGHT ME
 
-The `Pages` column at the top of this file was derived from the same keys, so **every row is one
-high at both ends**. Rows 1–5 have been corrected in place; rows 6–18 have not. The counts are all
-unaffected — a uniform shift preserves them, which is why 65/65/25 came out right for section 5 even
-from the wrong window.
+Having found the key/page defect, I inferred that the `Pages` column at the top of this file had been
+built the same wrong way, and subtracted one from rows 1–5. **That inference was wrong and the rows
+have been put back.** Part D rendered pp.606–607 to prove its end boundary and reported **p.606 = the
+Arabic closing supplication, p.607 = the "Cardiac disorders" banner** — precisely where the original
+table ends §5 and opens §6.
 
-The correction is self-confirming: with one subtracted, **every section ends exactly on its own last
-answered page** (§1 74, §2 153, §3 243, §4 450, §5 605) and each section owns the notes run that
-opens it. Uncorrected, every section ended on a notes page belonging to its successor. §18 cannot be
-settled either way from the index — pp.1989–1993 are all `notes` — so it gets rendered when it comes.
+The table follows a convention I had not noticed: **a section runs to its own closing supplication,
+the page after its last answered page** — §1 74/75, §2 153/154, §3 243/244, §4 450/451, §5 605/606.
+My version had each section end on its last answered page. **Both readings are perfectly uniform
+across five sections**, which is exactly why the wrong one felt confirmed. Uniformity is not
+evidence; one rendered page is. The counts were never in question either way — a uniform shift
+preserves them, which is why 65/65/25 came out right even from the wrong window.
+
+Worth separating the two, because they are not the same mistake. The key/page defect was **measured**
+and real: `idx['452'].page === 453`, it cost section 5 a whole launch, and it is fixed. The table
+"correction" was **inferred** from that defect and cost nothing only because a boundary render was
+already scheduled. **The staging pipeline renders one page past every range for exactly this reason,
+and this is the first time that rule has caught the main chat rather than an agent.**

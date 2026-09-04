@@ -1509,14 +1509,22 @@ Relaunched ranges: **A 477–509 (n:1–17) · B 511–541 (n:18–33) · C 543�
 D 575–605 (n:50–65)**, D also rendering pp.606–607 to prove the end boundary. This supersedes
 "The end boundary is part D's job" above, which named pp.451–452 from the shifted read.
 
-### The section table was wrong the same way, in all eighteen rows
+### ⚠️ AND THEN I OVER-CORRECTED THE SECTION TABLE, AND A RENDERED PAGE CAUGHT ME
 
-The `Pages` column at the top of this file was derived from the same keys, so **every row is one
-high at both ends**. Rows 1–5 have been corrected in place; rows 6–18 have not. The counts are all
-unaffected — a uniform shift preserves them, which is why 65/65/25 came out right for section 5 even
-from the wrong window.
+Having found the key/page defect, I inferred that the `Pages` column in `endpoint-p2-section-map.md`
+had been built the same wrong way, and subtracted one from rows 1–5. **That inference was wrong and
+the rows have been put back.** Part D rendered pp.606–607 to prove its end boundary and reported
+**p.606 = the Arabic closing supplication, p.607 = the "Cardiac disorders" banner** — precisely where
+the original table ends §5 and opens §6.
 
-The correction is self-confirming: with one subtracted, **every section ends exactly on its own last
-answered page** (§1 74, §2 153, §3 243, §4 450, §5 605) and each section owns the notes run that
-opens it. Uncorrected, every section ended on a notes page belonging to its successor. §18 cannot be
-settled either way from the index — pp.1989–1993 are all `notes` — so it gets rendered when it comes.
+The table follows a convention I had not noticed: **a section runs to its own closing supplication,
+the page after its last answered page** — §1 74/75, §2 153/154, §3 243/244, §4 450/451, §5 605/606.
+My version had each section end on its last answered page. **Both readings are perfectly uniform
+across five sections**, which is exactly why the wrong one felt confirmed. Uniformity is not
+evidence; one rendered page is.
+
+The two mistakes are not the same and should not be remembered as one. The key/page defect was
+**measured** and real — `idx['452'].page === 453` — and it cost section 5 a whole launch. The table
+"correction" was **inferred from** that defect, and cost nothing only because a boundary render was
+already scheduled. **The pipeline renders one page past every range for exactly this reason, and
+this is the first time that rule has caught the main chat rather than an agent.**
