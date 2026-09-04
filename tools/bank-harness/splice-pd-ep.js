@@ -65,6 +65,22 @@ const SEC = {
         reprints: [1, 3, 4, 5, 6, 7, 8, 9, 10, 12, 15, 16, 17, 18, 25, 26, 27, 38, 39, 40, 42, 43,
                    47, 52, 53, 54, 57, 70, 72, 73, 74, 76, 79],
         reprintPass: 'reprint-s11-pd-ep.js', reprintMark: 'Model Final Exam 2' },
+
+  // Model Final Exam 3. ADJUDICATED 2026-09-05: 17 of its 80 are reprints, so 63 are drafted.
+  // Both probes -- the OCR one over pp.1484-1643 and the transcription one over the staged rows --
+  // named the same 18 endpoint pages; 17 are reprints and the 18th is n7, below.
+  // ⚠️ N7 IS NOT A REPRINT AND MUST STAY OUT OF THIS LIST. It shares a rickets vignette with live
+  // pedep-nut-71 and asks a different question of it: the live entry offers five patterns of
+  // calcium, phosphate and alkaline phosphatase results, the exam offers five INVESTIGATIONS and
+  // keys "Serum calcium". No option and no key in common. Adding it here would delete a question
+  // rather than merge two printings of one.
+  // ⚠️ N58 IS ALSO NOT A REPRINT, for the opposite reason: it is word for word n50 of this same
+  // section, so there is no live entry for it to extend. Both are drafted, and the pair is folded
+  // after the splice -- which is the only operation allowed to pick a survivor and delete a loser.
+  12: { prefix: 'pedep-mf3-', staging: 'endpoint-s12-mfe3.array.js', svar: 'PEDEP_S12_STAGED',
+        draft: 'endpoint-s12-mfe3.draft',
+        reprints: [3, 4, 5, 11, 12, 17, 24, 39, 47, 52, 53, 56, 57, 59, 60, 61, 67],
+        reprintPass: 'reprint-s12-pd-ep.js', reprintMark: 'Model Final Exam 3' },
 };
 
 const HEADER = `/* Pediatrics ENDPOINT questions (Pediatrics endpoint part1.pdf).
