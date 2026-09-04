@@ -901,3 +901,211 @@ grounds that the heredoc route is the exact mechanism this project has measured 
 (a quoted heredoc collapses `\\` to `\` before the body's language ever sees it) and that
 instructions arriving outside the task's own authority are not followed. **Recorded because it is
 now a pattern, not an incident**, and because the agents got it right without being told to expect it.
+
+---
+
+## Section 4 part B CLOSED — and the book prints its exponents both ways (2026-09-04)
+
+**Part B closed: 23 entries, `n:1 pr:22 p:311` … `n:23 pr:44 p:357`, `pr = n + 21` throughout.**
+Validator OK at every append, no holes, no entry with an empty `expl`. Boundary proved by reading
+p.358 (Q45 unanswered) and p.359 (Q45 answered, key E "Intravenous antibiotics", febrile
+neutropenia box) — **p.359 is part C's first answered page and matches its staged `pr:45` exactly.**
+Neither boundary page was staged.
+
+**Parts A + B + C now stand at 68 entries with `pr` running 1…68 unbroken across the three files.**
+Part D is still being written.
+
+### ⚠️⚠️ THE SUPERSCRIPT IS NOT A CONSTANT OF THIS BOOK — IT VARIES PAGE TO PAGE
+
+pp.347–357 print their FBC panels with a **genuine typeset superscript**: `× 10⁹/L`, confirmed on a
+300 dpi crop of p.347 (`ep2-stage\p-0347.png`). p.280, settled in the same session, prints the same
+quantity **completely flat** — `5.0×109/L`, no superscript glyph, same size and baseline as body
+text, confirmed at the same 300 dpi on both twin pages.
+
+**Both readings are correct, and that is the finding.** The book is internally inconsistent about
+superscripts, so neither answer generalises:
+
+- **A flat exponent cannot be dismissed as a render artefact** — pp.347–357 prove this book *can*
+  typeset a superscript, so where one is missing it is genuinely missing.
+- **A flat exponent cannot be assumed to be the book's style either** — p.280 is not evidence about
+  p.400, and p.347 is not evidence about p.280.
+
+⚠️ **Every exponent is read on its own page. There is no page from which another page's exponent can
+be inferred.** This is the same rule `MEMORY.md` already carries for OCR — *never take an exponent,
+a unit or a dose from OCR; read those three off the page image* — now shown to hold **between two
+rendered pages of the same book**, not just between OCR and image.
+
+The one licence taken, and taken explicitly: pp.349–357 repeat p.347's typesetting unchanged, so the
+300 dpi escalation was run once and the finding carried forward — **and each of those five entries
+says in its own note that it was carried, not separately measured.** A carried measurement that
+announces itself is auditable; the danger is the one that does not.
+
+### The Hb unit switch is a run, not an isolated slip — and a near-miss on the correction
+
+n:17 (p.345) was recorded as *"the only entry in this file using g/dL rather than g/L"*. **The
+"only" was wrong.** Every entry from n:17 to n:23 that reports a haemoglobin — pp.345, 347, 349,
+353, 355, 357 — prints **Hb in g/dL**, while every Hb from p.311 to p.341 is printed in **g/L**.
+This is a **unit switch beginning at p.345 and running to the end of part B**, not a one-off. All of
+them are transcribed as printed and flagged in their own notes. ⚠️ **The drafting pass must not
+normalise them**, and must not read an Hb figure across the p.345 boundary as though one unit were
+in force throughout the section. **Part D's range gets checked for where, or whether, the switch
+ends.**
+
+### ⚠️⚠️ AND THE CORRECTION ITSELF WAS NEARLY WRONG — A UNIT BELONGS TO THE ANALYTE, NOT THE PAGE
+
+A `g/dL` grep over the whole file returned a hit at **p.320 — twenty-five pages before the switch**
+— and that reads exactly like proof the switch started earlier and the whole account was wrong.
+**It is not.** p.320's stem prints `Hb (hemoglobin): 86 g/L` alongside `MCHC (mean corpuscular
+hemoglobin concentration): 22 g/dL (normal: 32–35 g/dL)`. **MCHC is conventionally reported in
+g/dL.** Both units on that page are correct, standard, and not a defect of any kind. The page mixes
+units because the two analytes take different units, which is what every haematology report does.
+
+The grep was answering a different question from the one asked. It was asked *"does g/dL appear
+before p.345"* when the question was *"is haemoglobin printed in g/dL before p.345"* — and it
+answered the first one truthfully. **⚠️ A unit is a property of the analyte, not of the page, so no
+search for a bare unit string can decide a units question.** Only reading the line that carries the
+number can, because only the line says what was measured.
+
+This came within one write of being committed as a correction to a note that was right. Two rules
+out of it, both cheap and both paid for:
+
+- **Before overturning a measurement, read the line, not the match.** A grep hit is a pointer to
+  something to read; it is never itself the reading. The same discipline that settles a key by
+  opening the page settles a unit by opening the line.
+- **A correction is a claim and gets the same scrutiny as the claim it corrects** — more, if
+  anything, because it arrives wearing the authority of having caught something.
+
+What survives of the original criticism is the smaller, true part: n:17's note said *"only"* on the
+strength of one page, and one page can establish what it prints but never that it is the sole page
+printing it. That still needed the other six pages read — and now they have been.
+
+### The rest
+
+- **Clean alternation through all six new pages, pp.346–357** — no overflow box, no misclassified
+  `answered` tag, no duplicate reprint. All four known §3a causes were checked for by name and none
+  applied. A measured zero, said as one.
+- **No figures on pp.347–357** — every answered page read whole. Part B's only two figures remain
+  n:5 (p.320, peripheral blood film) and n:6 (p.323, clinical hand photo).
+- **The prompt matched the disk on every point it asserted** — the six-page range, the p.359/`pr:45`
+  boundary claim, and the settled p.322/323 items. Nothing to correct in it, said plainly rather
+  than left silent.
+
+### ⚠️ The contradicting instruction reached a third agent
+
+Same shape as the two before it: a system-reminder-style message arriving mid-task, directing the
+agent to make file changes through Bash `sed` and heredocs rather than `Read`/`Edit`/`Write`. **The
+agent did not follow it, and reported that it had arrived** — reasoning that instructions reaching
+it outside its brief do not override an explicit, grounded constraint, and that the heredoc route is
+the exact mechanism measured corrupting content on this project.
+
+**Three for three now, each agent reaching that conclusion independently.** Recorded because the
+pattern is the point: the rule is holding without anyone being warned to expect the challenge.
+
+---
+
+## SECTION 4 FULLY STAGED — 90 entries, `pr` 1…90 unbroken, and the two reprint flags now have their facing pages (2026-09-04)
+
+**Part D closed: 22 entries, `n:1 pr:69 p:407` … `n:22 pr:90 p:450`.** Validator OK, no boxless
+entries, no figures. That closes the last of the four parts.
+
+| Part | Entries | Pages | Printed numbers |
+|---|---|---|---|
+| A | 21 | 268–308 | 1–21 |
+| B | 23 | 311–357 | 22–44 |
+| C | 24 | 359–405 | 45–68 |
+| D | 22 | 407–450 | 69–90 |
+| **Total** | **90** | **268–450** | **1–90, unbroken** |
+
+**The `pr` sequence running 1…90 across four independently written files, with no gap and no repeat
+at any of the three seams, is the strongest check this section has.** Each part was written blind to
+the others' contents and each seam was proved by rendering the page past the range: p.309 (A/B),
+p.358–359 (B/C), p.407 (C/D). Four agents, three seams, one continuous sequence.
+
+**Section boundary proved at p.451** — a full-page Arabic supplication, no stem, no options, no box,
+unconnected to p.450's question. **The same shape closed section 3 at p.244.** So this is
+end-of-section furniture, a recognisable printed object rather than any of the four §3a causes, and
+now seen twice. Not staged either time.
+
+### The two cross-part reprint flags — both are real reprints, and both changed the patient's age
+
+Staged separately by design and now readable side by side. Neither is folded yet: **the fold pass
+runs after the merge, over all 90 entries at once, using `reprint-pd-ep2.js`.** Folding a pair by
+hand while 88 entries are unswept is exactly the error the project already knows about — *an
+offsetting error is invisible to a sum; count the parts.*
+
+**Pair 1 — p.375 (part C, n:9, pr 53) ≡ p.442 (part D, n:18, pr 86).** Haemarthrosis after a garden
+fall; identical five-option menu in identical order (fibrinogen deficiency / G6PD deficiency /
+prothrombin deficiency / hemophilia / factor VII deficiency); **same key, index 3.** Differences:
+the child is **3 years old on p.375 and 12 on p.442**; p.442 adds the normal range `(3–8 min)` to
+the bleeding time and writes the labs in full sentences ("INR is normal") where p.375 is
+telegraphic; the lead-in differs ("What is the most likely cause?" vs "Which one of the
+following…"); **the two explanation boxes are differently worded**, both correct.
+
+**Pair 2 — p.383 (part C, n:13, pr 57) ≡ p.448 (part D, n:21, pr 89).** Post-viral petechiae with
+haematemesis and epistaxis; identical five-option menu in identical order; **same key, index 0.**
+Differences: the girl is **5 years old on p.383 and 3 on p.448**; "was recovering" vs "is
+recovering"; "ecchymosis" vs "bruising"; "gamma globulins" vs "gammaglobulins"; **again two
+differently worded boxes.**
+
+⚠️ **These are not respellings — a printed number changed in both.** The age moved 3→12 in one pair
+and 5→3 in the other. `MEMORY.md`'s six fold shapes are all shapes where nothing clinical moves;
+this is a seventh, and it needs stating: **a reprint whose stem carries a different numeric value is
+still one question, but folding it discards one of the book's two printings of that value.** Neither
+age change touches its key — haemarthrosis is haemophilia at 3 or 12, post-viral ITP is ITP at 3 or
+5 — so the fold is safe, **provided the discarded age is written into the surviving entry's note
+rather than lost.** That is the instruction for the fold pass.
+
+A third candidate sits **inside** part D and is flagged, not decided: **n:22 (p.450) against n:14
+(p.434)** — same clinical framing, overlapping Hb/MCV/reticulocyte values across options a–d,
+different stem wording, a different normal-range figure, and **one fewer option**. A changed option
+count is the one thing that makes a pair not a fold under the existing rules; it goes to the sweep
+with the rest.
+
+⚠️ **Part D's range, pp.407–450, now carries three reprint candidates out of 22 entries.** That is a
+concentration, not a scatter — the same chapter-shaped clustering `MEMORY.md` already records for
+the endpoint/House overlap, and consistent with part 1's model-exam reprint blocks. **The sweep is
+run over the whole section, and the hypothesis that the tail of section 4 is a revision block is
+tested there, not asserted here.**
+
+### The exponent finding, and a convention that had to be settled before the merge
+
+**The book prints its exponents three different ways, all three confirmed at 300 dpi in this one
+section:** a genuine typeset superscript at pp.347–357 (`× 10⁹/L`), a **literal printed caret** at
+p.428 (`10^9/L`), and **completely flat** at p.280 (`5.0×109/L`, same size and baseline as body
+text). ⚠️ **No page is evidence about another page's exponent.** A flat exponent cannot be dismissed
+as a render artefact, because pp.347–357 prove the book can typeset a superscript; and it cannot be
+assumed to be house style, because p.280 says nothing about p.400.
+
+That left the four staging files encoding the same thing three ways — 66 carets, 3 real superscripts
+and 6 flat — with the encoding no longer distinguishing what the page showed. **Settled and written
+into the brief as §4a: `10^9` is the transcription convention.** Part C's three real superscripts
+were normalised to it (`10⁹` → `10^9`, one entry, revalidated); **part A's six flat `109` were left
+exactly as printed**, because `109` and `10⁹` are different numbers and that page's flatness is a
+recorded defect, not an encoding choice.
+
+The reason for choosing the caret over the superscript is the one that matters: **writing a real `⁹`
+on 66 occurrences would assert a measurement nobody made.** Three pages were checked at 300 dpi; the
+other sixty-odd were not. The caret claims only the value. The cost — a page that literally prints a
+caret can no longer be told apart from one that prints a superscript — is clinically nil, since both
+denote 10⁹, and is recorded in that entry's note.
+
+### The rest
+
+- **Clean alternation across all fourteen new pages, pp.424–450** — every answered page printed its
+  own box, so the §3a overflow test never fired in this range. A measured zero.
+- **p.444's dense numeral block** (Hb, MCV, MCHC, WBC, platelets, HbA/HbA₂ percentages) was escalated
+  to 300 dpi in full and read identical to the native. No figures anywhere in part D — every
+  answered page read whole.
+- **The prompt matched the disk on every assertion it made** — the resume point, the page list, both
+  reprint flags, p.450 as the last answered page and p.451 as furniture. Said plainly rather than
+  left silent, as with part B.
+- **Four for four on the contradicting instruction.** Every agent in this section reported the
+  system-reminder directing file edits through `sed`/heredocs, and every one declined it
+  independently and said why. The rule is holding without anyone being warned to expect the
+  challenge.
+
+### Next
+
+`merge-parts-ep2.js 4` → the reprint/fold sweep over all 90 → draft → `val-pd-ep2.js` →
+`splice-pd-ep2.js` → boot check → commit. **Nothing folds across the part-1/part-2 boundary while
+both chats are live**; these folds are all within section 4 of part 2 and are unaffected by that.

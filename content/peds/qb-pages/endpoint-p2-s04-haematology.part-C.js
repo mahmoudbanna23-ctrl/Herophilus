@@ -26,7 +26,7 @@
      n19 pr63 p395 · n20 pr64 p397 · n21 pr65 p399 · n22 pr66 p401 · n23 pr67 p403 · n24 pr68 p405 */
 
 { n:1, pr:45, p:359, key:4,
-  stem:'A 4-year-old girl undergoing chemotherapy for acute lymphoblastic leukaemia presents 8 days after her last treatment with a fever of 39°C. She has a portacath in situ. Her FBC reveals: WCC: 1.0 × 10⁹/L Neutrophils: 0.4 × 10⁹/L Platelets: 100 × 10⁹/L Hb: 10 g/dL What is the most important step in her management?',
+  stem:'A 4-year-old girl undergoing chemotherapy for acute lymphoblastic leukaemia presents 8 days after her last treatment with a fever of 39°C. She has a portacath in situ. Her FBC reveals: WCC: 1.0 × 10^9/L Neutrophils: 0.4 × 10^9/L Platelets: 100 × 10^9/L Hb: 10 g/dL What is the most important step in her management?',
   opts:['Packed red cell transfusion','Platelet transfusion','G-CSF administration','Antipyretics','Intravenous antibiotics'],
   expl:'This patient is neutropenic with a fever, which is a medical emergency. Immediate IV antibiotics are essential to prevent sepsis and improve survival.',
   note:'Twin checked (p.358, unanswered, identical stem/options). Option E "Intravenous antibiotics" highlighted yellow and underlined -> key=4. Printed box present, transcribed verbatim.' }

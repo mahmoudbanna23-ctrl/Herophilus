@@ -152,6 +152,46 @@ Its specific failure mode is why: **superscripts fail silently.** OCR read a pri
 this project, and exponents also flatten (10⁶ becomes 106). That is a plausible wrong number, not
 visible garbage. **Never take an exponent, a unit, a dose or a key from OCR text.**
 
+### ⚠️⚠️ 4a. THE BOOK PRINTS ITS EXPONENTS THREE DIFFERENT WAYS — measured 2026-09-04, section 4
+
+All three shapes occur in one section, each confirmed at 300 dpi on its own page:
+
+| Page | What the page prints | Reading |
+|---|---|---|
+| p.347 (and 349–357) | `× 10⁹/L`, a genuine typeset superscript | 10⁹ |
+| p.428 | `10^9/L`, a **literal printed caret** | 10⁹ |
+| p.280 | `5.0×109/L`, **completely flat** — no superscript glyph, same size and baseline as body text | the book's own defect |
+
+**⚠️ No page is evidence about any other page's exponent.** A flat exponent cannot be dismissed as a
+render artefact, because pp.347–357 prove this book *can* typeset a superscript. A flat exponent
+cannot be assumed to be house style either, because p.280 is not evidence about p.400. **Read every
+exponent on the page that carries it.**
+
+**The transcription convention, settled 2026-09-04: write `10^9` in `stem` and `expl`.** It is
+ASCII, it is what 66 of 69 occurrences in section 4 already use, and — this is the point — **it
+asserts nothing about the glyph.** Writing a real `⁹` where the page has not been checked would
+claim a measurement nobody made; the caret claims only the value.
+
+Two consequences, both accepted deliberately:
+
+- **A page that literally prints a caret is now indistinguishable from one that prints a
+  superscript.** That costs nothing clinically — both denote 10⁹ — so it is recorded in the entry's
+  `note` and left alone.
+- **A FLAT exponent is NEVER encoded as a caret.** `109` and `10⁹` are different numbers, so p.280
+  keeps its flat `109` exactly as printed, with the defect recorded in its note. ⚠️ **The drafting
+  pass must not "restore" it.**
+
+### ⚠️ 4b. A UNIT BELONGS TO THE ANALYTE, NOT THE PAGE
+
+Section 4 switches haemoglobin from **g/L** (pp.311–341) to **g/dL** (pp.345–357) mid-file. Both are
+transcribed as printed and neither is normalised.
+
+⚠️ **A grep for a bare unit string cannot decide a units question.** Searching part B for `g/dL`
+returns a hit at p.320, twenty-five pages before the switch — which reads exactly like proof the
+switch started earlier. It is not: p.320 prints `Hb: 86 g/L` beside `MCHC: 22 g/dL`, and **MCHC is
+conventionally reported in g/dL**. Both units on that page are correct and neither is a defect.
+**Read the line that carries the number** — only the line says what was measured.
+
 ## 5. Counting — trust nothing
 
 - **Read every answered page in your range.** Read the unanswered twin too wherever the answered

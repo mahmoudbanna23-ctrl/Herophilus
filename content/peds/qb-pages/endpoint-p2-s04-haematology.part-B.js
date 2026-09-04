@@ -56,6 +56,25 @@
    NOT ACTED ON, as matching House-bank questions one-for-one in page order per the task
    instruction -- flagged in each affected entry's note; the House file was never opened,
    audited or compared, and nothing folds across files here.
+
+   CONTINUATION 2026-09-04: staged the last 6 answered pages of this part's assigned range:
+   347 (Q39,keyC), 349 (Q40,keyD), 351 (Q41,keyC), 353 (Q42,keyB), 355 (Q43,keyC),
+   357 (Q44,keyA) -- n18-n23, pr39-pr44. Every unanswered twin (346/348/350/352/354/356)
+   checked and identical to its answered page; every box fit on the answered page itself,
+   no overflow, no misclassified "answered" tag, no duplicate reprint -- clean alternation
+   throughout this stretch, confirmed page by page. pr = n+21 holds through n23 (44=23+21).
+   PART B's ASSIGNED RANGE (pp.311-357) IS NOW CLOSED at n:23/pr:44/p:357.
+   All six FBC-panel exponents (10^9) in this stretch confirmed as genuine superscript
+   nines at a 300 dpi crop of p.347 (the first of the six); the identical typeset repeats
+   unchanged across 349-357, so later pages were not separately re-escalated.
+   Hb is printed in g/dL on all six of these pages (n18-n23) -- same unit already seen
+   starting at n:17 (p.345) -- transcribed as printed, not converted, each flagged in its
+   own note.
+   BOUNDARY PROVEN: p.358 rendered and read -- Q45 UNANSWERED (WCC 1.0x10^9/L, Neutrophils
+   0.4x10^9/L, Platelets 100x10^9/L, Hb 10 g/dL; options A-E, no highlight). p.359 rendered
+   and read -- Q45 ANSWERED, key E "Intravenous antibiotics" highlighted, boxed explanation
+   on febrile neutropenia. This CONFIRMS the task prompt's claim: p.359 is part C's first
+   answered page, staged there as pr:45. Neither p.358 nor p.359 is staged in this file.
 */
 
 { n:1, pr:22, p:311, key:2, box:312,
@@ -163,4 +182,40 @@
   opts:['Sickle cell anemia','Thalassaemia','Iron deficiency anemia','Vitamin B12 deficiency'],
   expl:'A diet high in cow’s milk and low in iron-rich solids commonly leads to iron deficiency anemia in infants. The low Hb and microcytic MCV (69 fL) confirm the diagnosis.',
   note:'Key highlighted = option C, "Iron deficiency anemia" (index 2). Box fits on page, no overflow. ⚠️ UNIT FLAG: Hb printed here as "7.8 g/dL" -- this is the first entry in this file using g/dL rather than g/L (every prior entry printed Hb in g/L); read directly off the image on both the answered page and its unanswered twin p.344, identical unit both places, not a transcription slip on my part. Transcribed as printed, not converted. MCV 69 fL also cross-checked against p.344, identical. Only 4 options printed (A-D).' }
+
+{ n:18, pr:39, p:347, key:2,
+  stem:'A 3-year-old Afro-Caribbean girl presents with severe pain in her hands and abdomen. On examination, there is mucosal pallor, yellow sclerae, generalized abdominal tenderness with hepatosplenomegaly. Bloods show: Hb: 6.1 g/dL MCV: 78 fL WBC: 6.0 x 10^9/L Platelets: 300 x 10^9/L\nWhat is the most likely cause of her anemia?',
+  opts:['Thalassaemia','Iron deficiency anemia','Sickle cell disease','Anemia of chronic disease','G6PD deficiency'],
+  expl:'The child’s symptoms (pain crisis, pallor, jaundice) and background are classic for sickle cell disease. The anemia, normocytic MCV, and hepatosplenomegaly support hemolysis from sickling.',
+  note:'Key highlighted = option C, "Sickle cell disease" (index 2). Box fits on the answered page, no overflow. Stem/options/values (Hb 6.1 g/dL, MCV 78 fL, WBC 6.0 x 10^9/L, platelets 300 x 10^9/L) cross-checked against unanswered twin p.346, identical. Exponent confirmed genuine superscript 9 (not flattened) at a 300 dpi crop of p.347 -- caret notation used per file convention. ⚠️ UNIT: Hb again printed in g/dL here (as n:17 was), consistent within this run of pages, transcribed as printed.' }
+
+{ n:19, pr:40, p:349, key:3,
+  stem:'A 9-year-old girl with known sickle cell disease presents with a 4-day history of fever, coryza, and myalgia. Over the past 24 hours, she has developed a lacy rash particularly over her hands and feet and has become more lethargic. Her mother reports her looking more pale. An FBC reveals: Hb: 5.9 g/dL WCC: 1.0 x 10^9/L Platelets: 50 x 10^9/L\nWhat is the most likely cause for her blood results?',
+  opts:['Splenic sequestration crisis','Painful crisis','Chest crisis','Parvovirus B19 infection','Pneumococcal sepsis'],
+  expl:'Parvovirus B19 causes transient aplastic crisis in sickle cell patients, presenting with sudden anemia, reticulocytopenia, and pancytopenia. The lacy rash is characteristic of the virus.',
+  note:'Key highlighted = option D, "Parvovirus B19 infection" (index 3). Box fits on page, no overflow. Stem/options/values (Hb 5.9 g/dL, WCC 1.0 x 10^9/L, platelets 50 x 10^9/L) cross-checked against unanswered twin p.348, identical. Exponent style (10^9) matches n:18\'s confirmed genuine-superscript reading; not re-escalated to 300 dpi as the same font/rendering was already confirmed one page prior. ⚠️ UNIT: Hb again in g/dL, third consecutive page in this style, transcribed as printed.' }
+
+{ n:20, pr:41, p:351, key:2,
+  stem:'An 8-month-old girl with Greek-Cypriot parents is brought to her GP as her parents are worried she is not growing well and is very pale. On examination, there is pallor and mildly icteric sclerae. She has a distended abdomen with hepatosplenomegaly and mild frontal bossing. She was born on the 25th centile and her weight has fallen below the 2nd centile. Blood tests show microcytic hypochromic anemia. What is the likely diagnosis?',
+  opts:['Sickle cell disease','Hereditary spherocytosis','Thalassaemia major','G6PD deficiency','Iron deficiency anemia'],
+  expl:'Features such as severe microcytic anemia, hepatosplenomegaly, and failure to thrive in a child from a high-risk ethnic group are classic for β-thalassaemia major.',
+  note:'Key highlighted = option C, "Thalassaemia major" (index 2). Box fits on page, no overflow. Stem/options match unanswered twin p.350 exactly, no lab numerals or exponents on this page to check.' }
+
+{ n:21, pr:42, p:353, key:1,
+  stem:'A 14-month-old boy is brought to the emergency room by his mother with pain and swelling in his right knee. He is unable to weight bear, and on examination, several large bruises are noted over the lower limbs and arms. His blood tests show: Hb: 10.5 g/dL WCC: 11 x 10^9/L Platelets: 340 x 10^9/L PT: 13.3 seconds APTT: >120 seconds\nWhat is the most likely diagnosis?',
+  opts:['Vitamin K deficiency','Hemophilia A','Von Willebrand disease','Immune thrombocytopenic purpura'],
+  expl:'A significantly prolonged APTT with normal platelets and PT, plus joint bleeding, is typical for Hemophilia A, an X-linked deficiency of factor VIII.',
+  note:'Key highlighted = option B, "Hemophilia A" (index 1). Box fits on page, no overflow. Stem/options/values (Hb 10.5 g/dL, WCC 11 x 10^9/L, platelets 340 x 10^9/L, PT 13.3s, APTT >120s) cross-checked against unanswered twin p.352, identical. Exponent style (10^9) matches the confirmed genuine-superscript reading from n:18/n:19; not re-escalated, same font/rendering. Only 4 options printed (A-D). ⚠️ UNIT: Hb again in g/dL, consistent with the run of pages since n:17.' }
+
+{ n:22, pr:43, p:355, key:2,
+  stem:'A 5-year-old boy attends the emergency department with a nosebleed that has lasted for 45 minutes. He had a viral upper respiratory tract infection 1 week ago. On examination, he has petechiae over his chest, legs, and abdomen. Blood tests reveal: Hb: 10.4 g/dL WCC: 13 x 10^9/L Platelets: 15 x 10^9/L Clotting screen: normal\nWhat is the most likely diagnosis?',
+  opts:['Henoch–Schönlein purpura','Hemophilia B','Immune thrombocytopenic purpura','Meningococcal septicaemia'],
+  expl:'Recent viral infection, petechiae, and isolated low platelets with normal clotting suggest ITP, a common immune-mediated cause of thrombocytopenia in children.',
+  note:'Key highlighted = option C, "Immune thrombocytopenic purpura" (index 2). Box fits on page, no overflow. Stem/options/values (Hb 10.4 g/dL, WCC 13 x 10^9/L, platelets 15 x 10^9/L, "Clotting screen: normal") cross-checked against unanswered twin p.354, identical. Exponent style (10^9) matches the confirmed genuine-superscript reading from earlier pages in this run; not re-escalated. Only 4 options printed (A-D). ⚠️ UNIT: Hb again in g/dL.' }
+
+{ n:23, pr:44, p:357, key:0,
+  stem:'A 7-year-old Ghanaian boy presented to A&E 3 days after returning from West Africa with high fever and rigors. He was diagnosed with malaria and started on primaquine. His mother is now concerned about jaundice. On examination, he is pale, jaundiced, and breathless. Investigations reveal: Hb: 5.5 g/dL WCC: 15 x 10^9/L Platelets: 200 x 10^9/L Blood film: red cell fragments, bite cells, Heinz bodies\nWhat is the most likely diagnosis?',
+  opts:['G6PD deficiency','Pyruvate kinase deficiency','Sickle cell disease','Beta-thalassaemia'],
+  expl:'G6PD deficiency can cause hemolysis after exposure to oxidative drugs like primaquine. Bite cells and Heinz bodies on blood film confirm oxidative hemolysis.',
+  note:'Key highlighted = option A, "G6PD deficiency" (index 0). Box fits on page, no overflow. Stem/options/values (Hb 5.5 g/dL, WCC 15 x 10^9/L, platelets 200 x 10^9/L, blood film findings) cross-checked against unanswered twin p.356, identical. Exponent style (10^9) matches the confirmed genuine-superscript reading from earlier pages in this run; not re-escalated. Only 4 options printed (A-D). ⚠️ UNIT: Hb again in g/dL. This is the LAST entry in Part B\'s assigned range (pp.311-357) -- range now closed at n:23/pr:44/p:357.' }
 
