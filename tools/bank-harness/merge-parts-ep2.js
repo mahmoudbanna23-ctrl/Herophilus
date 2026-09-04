@@ -66,8 +66,18 @@ const SEC = {
        pages: '245-451', expect: 90 },
   5: { base: 'endpoint-p2-s05-respiratory', svar: 'PEDEP2_S05_STAGED', title: 'SECTION 5: "Respiratory disorders"',
        pages: '452-606', expect: 65 },
+  // ⚠️ Section 6 was 85 until 2026-09-05 and 85 was WRONG -- it is the index's `answered` count, and
+  // four of those pages are not questions. pp.613, 617, 618 and 619 sit inside the opening teaching
+  // notes and carry no printed number, no stem and no lettered option list; they were rendered and
+  // read against 612/614/615/616/620 and are outline slides in the same template. `answered` is only
+  // a yellow-pixel threshold and this book's notes slides are yellow-heavy enough to cross it. They
+  // are also the only four pages in the section with no unanswered twin, which is what raised it.
+  // The section's two overflow boxes (636, 689) are a separate matter and never inflated `expect`:
+  // the index called them `notes`, and both were found by the staging halves applying the brief's
+  // §3a rule, not by any count. A shortfall is reconciled page by page, never by subtracting a
+  // category -- that is how both of these were told apart from each other.
   6: { base: 'endpoint-p2-s06-cardiac', svar: 'PEDEP2_S06_STAGED', title: 'SECTION 6: "Cardiac disorders"',
-       pages: '607-792', expect: 85 },
+       pages: '607-792', expect: 81 },
   7: { base: 'endpoint-p2-s07-renal', svar: 'PEDEP2_S07_STAGED', title: 'SECTION 7: "Kidney & Urinary Tract Disorders"',
        pages: '793-929', expect: 55 },
   8: { base: 'endpoint-p2-s08-neuro', svar: 'PEDEP2_S08_STAGED', title: 'SECTION 8: "Neurological disorders"',
