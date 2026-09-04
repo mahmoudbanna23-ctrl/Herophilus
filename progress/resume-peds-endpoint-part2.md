@@ -505,3 +505,71 @@ so probably not questions at all), and **p.375≡p.442** and **p.383≡p.448** �
 the C/D part boundary and cannot be settled by either agent alone. Both were told to transcribe
 those four pages exactly and to name the discriminating clinical token, so the pairs can be
 adjudicated after the merge with the whole section in view.
+
+---
+
+## Section 4 — ALL FOUR STAGING AGENTS KILLED BY THE ACCOUNT SESSION LIMIT, 2026-09-04
+
+Not a fault in the work. All four returned HTTP 429 `rate_limit`, "You've hit your session
+limit · resets 4:10am (Africa/Cairo)", within seconds of each other. That is an **account-wide**
+limit, not a per-agent one, and three chats were live against it. **Four concurrent staging
+agents is what exhausted it.** Next launch runs **two at a time**, not four.
+
+Every one of the four had already written its header and entries to disk, so nothing was lost —
+this is the §8a write-as-you-go rule earning its keep for the third time.
+
+### State on disk, measured, all four `check-part-ep.js` OK
+
+| Part | Entries | Last staged | **Resume at** | Range end |
+|---|---|---|---|---|
+| A | 6 | n:6 pr:6 p.278 | **p.280** | p.308 |
+| B | 4 | n:4 pr:25 p.318 | **p.320** | p.357 |
+| C | 8 | n:8 pr:52 p.373 | **p.375** ⚠️ near-twin page | p.405 |
+| D | 8 | n:8 pr:76 p.422 | **p.424** | p.450 |
+
+26 entries of a revised ~90. A resuming agent finds the last complete entry and continues from
+the page after it — it does not restart the range.
+
+### THREE OF THE FOUR BREAKS ARE NOW SETTLED ON THE IMAGE, AND A FOURTH WAS FOUND
+
+- **pp.255, 256, 257 — NOT questions.** Part A read all three whole. They are lettered content
+  slides: p.255 "4. Hemoglobinopathies / A. Beta-Thalassemia", p.256 "B. Alpha-Thalassemia",
+  p.257 "C. Sickle Cell Disease (SCD)" — Cause/Types/Clinical Features bullet slides with the
+  heading line highlighted yellow, no stem, no options, no key anywhere on any of them. Same
+  signature as section 3's four lettered summary slides: **the detector reads a highlighted
+  heading as an answered page.** Not staged. So `expect: 95` drops to 92 answered pages here.
+
+- **⚠️ p.312 — AN OVERFLOW BOX THE INDEX CALLS `notes`, WHICH MY BREAK-DETECTION COULD NOT SEE.**
+  Part B found it unprompted. p.311 is Q22 answered and prints **no box**; p.312 prints the box
+  alone, and it reasons through p.311's exact vignette. Staged as `box:312` on n:1, with p.312
+  given no entry of its own — the shape the brief describes, arriving in a form I had not
+  looked for.
+  **This is a hole in the method, not a one-off.** I detected breaks by looking for *consecutive
+  `answered` pages*; an overflow box that lands in `notes` produces no such run and is invisible
+  to that test. Every lone `notes` page sitting inside clean alternation must be opened. In this
+  section that is pp.309, 312 and 321 — p.312 is a box, and **p.309 is not**: part B read it and
+  it is an unrelated preceding teaching slide on iron deficiency, correctly not staged. p.321 is
+  still unread.
+
+- **pp.419 + 420 — an exact duplicate reprint, and NOT the overflow shape.** Part D read both.
+  Identical stem, identical four options, the same option b "Leukemia" highlighted on each. The
+  only difference is that p.420 prints **no box at all** — and because p.420 still carries the
+  full stem and options, it is not a box-only page and `box:420` would be wrong. Staged once from
+  p.419, the fuller printing. p.420 gets no entry. So the sweep's "p.419 ≡ p.420" was right about
+  the identity and wrong about the cause, and the brief's named cause did not apply.
+
+- **pp.322 + 323 — STILL OPEN.** Part B died at p.318, four pages short of it. Whoever resumes
+  part B must read both pages whole and must not assume p.419/420's answer applies: three
+  readings remain live (overflow box, duplicate reprint, genuine second question), and the
+  section has now produced two different ones.
+
+### Two transcription decisions to carry into drafting
+
+- Part B rendered the printed raised superscripts as **caret notation** — `8 x 10^9/L` — and said
+  so in its note. It read them off the image, not off OCR, which is the direction that matters:
+  `MEMORY.md` records WPS reading a printed 10⁶ as 10⁹ and flattening 10⁶ to 106. The drafting
+  pass must render these consistently across the section.
+- Part A's and part D's `expl` fields read as plain short prose. Both agents state in their notes
+  that the box was present and transcribed verbatim; this book does print boxes in that voice.
+  **Spot-check two of them against the page during drafting** before treating the whole section's
+  boxes as verbatim.
