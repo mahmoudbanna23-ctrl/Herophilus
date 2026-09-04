@@ -1624,3 +1624,38 @@ cannot settle it and neither can this note.** Render them.
 The section 5 close-out estimate of "answered pages 613/617/618/619 inside the notes run, p.636
 interrupting" was measured on a partial sweep and was right about those five pages and blind to
 p.689. This profile supersedes it.
+
+### ✅ SETTLED BY EYE 2026-09-05 — the four are NOT questions
+
+pp.612-620 were rendered and read whole, the four flagged pages plus the pages either side. All nine
+carry one continuous visual template — a yellow-highlighted subheading, red bold sub-bullets, black
+body bullets — and all nine are outline slides: 612 "6. Diagnosis", 613 "7. Common Lesions — A. ASD,
+B. VSD", 614 "C. PDA", 615 a lesion/symptoms/signs/management summary table, 616 "Right-to-Left
+Shunts (Cyanotic Heart Disease)", 617 "A. Tetralogy of Fallot", 618 "B. Transposition of the Great
+Arteries", 619 "C. Eisenmenger Syndrome", 620 "7. Rheumatic Fever & Related Acquired Heart Disease".
+
+**None of the four carries a printed question number, a stem, or a lettered option list, and none
+poses a rhetorical question answered inline either** — they are indistinguishable in kind from the
+plain `notes` pages around them. No "Questions" divider appears anywhere in 607-620, where section 5
+printed one at p.475 immediately before its first question page. They are excluded from staging, and
+the 85-vs-81 difference is fully explained: the `answered` flag is the yellow threshold, and this
+notes block is yellow-heavy enough to cross it four times.
+
+**Section 6 therefore stages 81 entries, n:1 at p.629.** The three boundary pages were confirmed on
+the same pass: p.607 is the "Cardiac disorders" banner, p.792 is the Arabic closing supplication,
+p.793 opens section 7 "Kidney & Urinary Tract Disorders". Nothing was contradicted.
+
+Staging ranges, built page by page from the profile and never from a parity rule, every one of the
+81 verified to have a `kind:"question"` twin at p-1:
+
+| Part | n | Pages |
+|---|---|---|
+| A | 1-16 | 629 631 633 635 · **638** 640 642 644 646 648 650 652 654 656 658 660 |
+| B | 17-32 | 662 664 666 668 670 672 674 676 678 680 682 684 686 688 · **691** 693 |
+| C | 33-48 | 695 697 699 701 703 705 707 709 711 713 715 717 719 721 723 725 |
+| D | 49-64 | 727 729 731 733 735 737 739 741 743 745 747 749 751 753 755 757 |
+| E | 65-81 | 759 761 763 765 767 769 771 773 775 777 779 781 783 785 787 789 791 |
+
+The bold pages are the two that follow a parity flip: p.636 sits between n:4 and n:5, p.689 between
+n:30 and n:31. Halves C, D and E run cleanly odd because both flips are behind them — which is
+exactly why a parity rule read off any one of those three halves would be wrong about half A.
