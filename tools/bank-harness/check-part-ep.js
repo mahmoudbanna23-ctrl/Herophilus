@@ -25,6 +25,7 @@ try { arr = (new Function('return [' + body + ']'))(); }
 catch (e) { console.error('DOES NOT PARSE: ' + e.message); process.exit(1); }
 
 const fail = [];
+const warn = [];
 const seenN = new Set(), seenP = new Set();
 arr.forEach(q => {
   const at = 'n=' + q.n + ' (p.' + q.p + ')';
@@ -40,9 +41,19 @@ arr.forEach(q => {
   else if (q.key < 0 || q.key >= (q.opts || []).length) fail.push(at + ': key ' + q.key + ' out of range 0..' + ((q.opts || []).length - 1));
   if (typeof q.stem !== 'string' || q.stem.length < 15) fail.push(at + ': stem missing or too short');
   if (typeof q.expl !== 'string') fail.push(at + ': expl must be a string ("" where the page prints no box)');
-  (q.opts || []).forEach((o, k) => {
-    if (/^[A-Ja-j][.)]\s/.test(o)) fail.push(at + ' opt ' + (k + 1) + ': carries a printed letter prefix, strip it');
-  });
+  // A printed letter prefix ("A. Cough") is a transcription slip and every option of the entry
+  // carries one, because the page prints the whole lettered list the same way. A SINGLE option
+  // matching this pattern is far more likely to be real content: "E. coli" is a genuine option on
+  // p.521 of part 2 section 5, and stripping it would have produced the option "coli". So two or
+  // more in one entry is the slip and fails; exactly one is reported and left for a human to look
+  // at, because no regex can tell an abbreviated genus from a list letter.
+  const prefixed = (q.opts || []).map((o, k) => (/^[A-Ja-j][.)]\s/.test(o) ? k : -1)).filter(k => k >= 0);
+  if (prefixed.length >= 2) {
+    fail.push(at + ': opts ' + prefixed.map(k => k + 1).join(', ') + ' carry printed letter prefixes, strip them');
+  } else if (prefixed.length === 1) {
+    warn.push(at + ' opt ' + (prefixed[0] + 1) + ': starts like a list letter -- ' +
+      JSON.stringify(q.opts[prefixed[0]]) + '. Real content (e.g. "E. coli") or a stray prefix? Look at the page.');
+  }
   if (q.fig && !q.figAlt) fail.push(at + ': fig without figAlt');
 });
 for (let i = 1; i < arr.length; i++) {
@@ -58,5 +69,6 @@ console.log('no printed box (expl:""): ' + (arr.filter(q => q.expl === '').map(q
 console.log('pr != n: ' + (arr.filter(q => q.pr !== q.n).map(q => 'n' + q.n + ' prints ' + q.pr).join(', ') || 'none'));
 console.log('figures: ' + (arr.filter(q => q.fig).map(q => 'n' + q.n).join(' ') || 'none'));
 
+if (warn.length) { console.log(NL + 'LOOK AT THESE (not failures):'); warn.forEach(w => console.log('  ' + w)); }
 if (fail.length) { console.error(NL + 'FAILED:'); fail.forEach(f => console.error('  ' + f)); process.exit(1); }
 console.log(NL + 'OK');
