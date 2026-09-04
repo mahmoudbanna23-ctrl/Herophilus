@@ -741,3 +741,114 @@ reads the image rather than being resolved from the index.
 came back empty and its findings survived only inside my own compressed account of them. That is not a
 transcription, so p.20 was re-read by a second agent that wrote the text to disk itself
 (`p0020-verbatim.md`) before any of it reached live content. The two readings agree word for word.
+
+---
+
+## Section 4 part A — resumed to n:16 (p.298), and a staged note that contradicts its own key (2026-09-04)
+
+Extended from the dead agent's n:1–6 to **n:1–16, pp.268–298, pr 1–16**, `pr == n` throughout, no
+repeats and no skips. `check-part-ep.js` OK: 16 entries, contiguous, no holes, no figures.
+**Next page for whoever resumes part A: p.300** (then 302, 304, 306, 308; then render one page past
+308 to prove the part A/B boundary — the agent did not reach that step). It stopped at its own
+tally of about 78 tool calls, at the cap, and said honestly that the tally is not a measurement.
+
+**No alternation breaks, no overflow boxes and no figures anywhere in pp.279–298** — every answered
+page printed its own box and every twin pair was adjacent. The brief held for this whole stretch.
+
+### ⚠️ A NOTE THAT DISAGREES WITH ITS OWN ENTRY — n:6, p.278, left unedited and flagged
+
+The predecessor's note on n:6 reads `Option D "Fanconi anemia" … -> key=3`. In that entry's own
+`opts`, **Fanconi anemia sits at index 1 (letter B)**, and the entry carries `key:1`, which points
+at Fanconi anemia and agrees with its `expl`. So **three fields agree and the note disagrees with
+all three.**
+
+The resuming agent did the right thing: it added an `AUDIT NOTE (n7 pass)` inside that entry, left
+`key:1` untouched, and did **not** re-view p.278 because that page is outside its assigned range.
+⚠️ **This is not yet settled.** The likely reading is a slip in the prose note, but "three fields
+agree" is an internal-consistency argument, not a measurement, and the key is the one field this
+project never guesses at. **p.278 gets re-read on the image before the section is drafted**, and
+whatever the page highlights is what stands.
+
+### ⚠️ A FLAT EXPONENT THAT MAY BE THE BOOK'S OR MAY BE THE RENDER'S — p.280 and p.290
+
+n:7 (p.280) is staged with `5.0×109/L` and `80×109/L` — **flat, not superscript** — the agent
+reporting the same non-superscript pattern as n:6 and confirming it on both twin pages at native
+resolution. n:12 (p.290) hit the same question and **escalated to a 300 dpi crop** to settle it,
+confirming that `/mm3` there prints a plain inline 3.
+
+The escalation is the difference. `MEMORY.md` records WPS reading a printed 10⁶ as 10⁹ **and
+flattening 10⁶ to 106** — a plausible wrong number rather than visible garbage — and 800×450 is
+this book's hard ceiling, which is exactly the resolution at which a superscript stops being
+legible. **p.280 is re-read at 300 dpi with p.290's method before drafting.** A white cell count of
+`5.0×10⁹/L` is normal and `5.0×109/L` is meaningless, so if the flat printing is real it is the
+book's own defect and gets recorded as one — but it is recorded only after being seen.
+
+Also staged as printed at p.290: `1.000` and `2.500`, **period as a thousands separator** (= 1,000
+and 2,500), a European convention this book uses. Not corrected.
+
+### Escaping, again — and the fix that worked
+
+The agent hit two escaping bugs of its own making — a `\\'` where `\'` was needed, and a literal
+`\uXXXX` where the actual character was wanted, building a stem containing a bullet and a µ sign —
+plus one mis-anchored append that put n:10 ahead of n:9. **All three were caught by
+`check-part-ep.js` failing, and all three were fixed with `Read` + `Edit`, never with a bash
+heredoc.** That is the project's standing escaping rule doing its job inside an agent for the first
+time recorded. Nothing was lost; the file validates clean.
+
+---
+
+## Section 4 part B — resumed to n:17 (p.345), and the index's own `answered` tag turned out to be wrong (2026-09-04)
+
+Resumed from the dead agent's n:1–4 and extended to **n:1–17, pp.311–345, pr 22–38**, clean
+1-for-1 alternation with `pr = n + 21` throughout and no printed-number repeats.
+`check-part-ep.js` OK. **Next page for whoever resumes part B: p.347** (then 349, 351, 353, 355,
+357; render one past 357 to prove the section boundary). The agent stopped itself at a clean page
+boundary at roughly 62 tool calls by its own tally — and said plainly it was a tally, not a
+measurement.
+
+### ⚠️⚠️ A FOURTH CAUSE: p.322 WAS TAGGED `answered` AND IS NOT
+
+None of the three predicted readings for pp.322/323 applied. **p.322 carries no yellow highlight
+and no box at all** — an ordinary unanswered printing of Q27 that the page-kind classifier simply
+mistagged. p.323 is the genuinely answered page (key E "Sickle cell disease", box present), so
+this is a normal unanswered/answered pair, not an overflow split and not a p.419/420-style
+duplicate reprint. Only p.323 was staged.
+
+**This changes what the index is for.** Three of the four causes are things printed on the page;
+this one is a defect in the instrument. **A page is answered because the highlighted key is
+visible on it, never because the index said so.** Written into the staging brief beside the other
+three.
+
+Running tally of causes for one "structural oddity" signature, all four measured in this section
+alone: lettered content slides (255–257) · overflow box in `notes` (312, 321) · exact duplicate
+reprint (419+420) · **index mistag (322)**.
+
+### p.321 resolved — an overflow box, the second in this section
+
+p.321 is the explanation box for **n:5 (Q26, p.320)**: microcytic/hypochromic anaemia, normal
+electrophoresis, HbA2 not raised — matching that vignette exactly. Staged as `box:321` on n:5,
+with p.321 given no entry of its own. Confirmed distinct from p.309, which sits in the same
+structural position and is an unrelated preceding teaching slide, correctly left unstaged by the
+predecessor. **Both readings of that position have now occurred in one section.**
+
+### Two things flagged for the drafting pass
+
+- **n:14 (p.339, Q35) — the printed box is truncated by its own border, mid-sentence**, ending
+  "…reached the level where a blood". Confirmed on both the native and the hires render, and
+  p.340 is the next question rather than a continuation, so this is **not** an overflow. It is
+  transcribed verbatim as truncated. ⚠️ **Do not complete it during drafting.** The book printed
+  a broken sentence; the expansion may say what the box was heading towards, the quoted box may
+  not gain words it does not have.
+- **n:17 (p.345, Q38) — Hb printed as 7.8 g/dL**, the only entry in this file using g/dL rather
+  than g/L. Confirmed on the answered page and its unanswered twin, so it is the book's own
+  inconsistency and not a transcription slip. Kept as printed, per the numbers-and-units
+  exception.
+
+### Figures and folds
+
+Two figures, both photographic: **n:5 (p.320, peripheral blood film)** and **n:6 (p.323, clinical
+hand photo, hand-foot syndrome)**. `figAlt` on both gives modality and view only and names no
+diagnosis. Every other answered page in the range was read whole and carries no figure. No
+option-menu pairings and no fold candidates in this range. House-bank overlap is recorded in the
+note of every entry from n:9 (p.329) onward as an observation only — the House file was never
+opened, and **nothing folds across a live chat's boundary.**

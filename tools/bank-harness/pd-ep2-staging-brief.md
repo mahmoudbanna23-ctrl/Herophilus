@@ -129,7 +129,14 @@ index — a lone `notes` page can be either, so it is opened, never assumed:
   the second simply prints no box. Because that second page still carries the full stem and options
   it is **not a box-only page**, and `box:420` would have been wrong. Staged once from the fuller
   printing; the duplicate gets no entry. **So a break is not evidence of an overflow box either.**
-  Read both pages and say which of the three it is.
+- **⚠️⚠️ A PAGE THE INDEX TAGGED `answered` THAT IS NOT ANSWERED.** p.322, measured 2026-09-04:
+  tagged `answered`, and carrying **no yellow highlight and no box at all**. It is an ordinary
+  unanswered printing of Q27 that the classifier mistagged; p.323 is the real answered page. Only
+  p.323 was staged. The other three causes are things printed on the page — **this one is a defect
+  in the instrument.** A page is answered because **you can see the highlighted key on it**, never
+  because the index said so.
+
+Read the page and say which of the **four** it is.
 
 ## 4. ⚠️ OCR is not a source
 

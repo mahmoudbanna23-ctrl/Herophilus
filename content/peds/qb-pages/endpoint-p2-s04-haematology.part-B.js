@@ -28,8 +28,34 @@
    325 = answered.
    326-357 = clean alternation per parent map, to be confirmed as reached.
 
-   QUESTION-NUMBER WALK (pr = printed number, filled in as pages are read):
-   n1 p.311 pr22 -- n2 p.314 pr23 -- (continuing below)
+   QUESTION-NUMBER WALK (pr = printed number, n = true sequential index):
+   n1 p.311 pr22 -- n2 p.314 pr23 -- n3 p.316 pr24 -- n4 p.318 pr25 -- n5 p.320 pr26 (box:321)
+   -- n6 p.323 pr27 -- n7 p.325 pr28 -- n8 p.327 pr29 -- n9 p.329 pr30 -- n10 p.331 pr31
+   -- n11 p.333 pr32 -- n12 p.335 pr33 -- n13 p.337 pr34 -- n14 p.339 pr35 (box TRUNCATED
+   in its own printed border, not an overflow -- see n14 note) -- n15 p.341 pr36 -- n16 p.343
+   pr37 -- n17 p.345 pr38. Printed numbers run 1-for-1 with n across this whole range (n
+   offset is +21 vs pr throughout, ie pr = n+21), no printed-number repeats or skips found.
+
+   pp.322/323 RESOLVED (this was the flagged structural question): p.322 carries no yellow
+   highlight and no box -- it is an ordinary UNANSWERED printing of Q27, the page-kind index's
+   "answered" tag for it was wrong. p.323 is the true answered page (key E). Neither an
+   overflow-box split nor a duplicate-with/without-box reprint (the part-D pp.419/420 pattern)
+   -- just a normal pair the index misclassified. Only p.323 staged (n:6).
+
+   p.321 RESOLVED: it IS the overflow explanation box for n:5 (Q26, p.320) -- content
+   (microcytic/hypochromic anemia, normal electrophoresis, HbA2 not raised) matches Q26's
+   vignette exactly. n:5 carries box:321. This differs from p.309, which was an unrelated
+   preceding teaching slide and correctly unstaged.
+
+   RESUME POINT for the next agent: last complete entry is n:17, pr:38, p:345. Continue from
+   the next answered page, p:347, through the rest of this part's range: 347, 349, 351, 353,
+   355, 357. Render one page past 357 to confirm the section boundary before the file is
+   declared done.
+
+   Pages 329-351 in this file (n:9 through n:17 so far, and likely further) were RECORDED,
+   NOT ACTED ON, as matching House-bank questions one-for-one in page order per the task
+   instruction -- flagged in each affected entry's note; the House file was never opened,
+   audited or compared, and nothing folds across files here.
 */
 
 { n:1, pr:22, p:311, key:2, box:312,
@@ -55,4 +81,86 @@
   opts:['Dietary advice','Folic acid','Iron supplements','Multivitamin tablets','Vitamin B12 injections'],
   expl:'The presence of pica (eating carpet) and microcytic anemia (MCV 60 fL) are classic for iron deficiency anemia. Iron supplementation is the first-line treatment.',
   note:'Key highlighted = option C, "Iron supplements" (index 2). Box fits on page, no overflow. Stem/options match unanswered twin p.317 exactly. Pica presentation echoes the standalone teaching box on p.309 (iron deficiency/toddler anemia) that precedes n=1 -- recorded as an observation only.' }
+
+{ n:5, pr:26, p:320, key:2, box:321,
+  stem:'Joseph, a 2-year-old Black Caribbean boy from London, is admitted to the hospital for elective inguinal hernia repair. He has no other medical problems. His pre-operative assessment reveals the following results: Hb (hemoglobin): 86 g/L MCV (mean cell volume): 68 fL (normal: 75–87 fL) MCHC (mean corpuscular hemoglobin concentration): 22 g/dL (normal: 32–35 g/dL) WBC (white blood cell count): 11.2 x 10^9/L Platelet count: 262 x 10^9/L Hemoglobin electrophoresis: HbA 98%, HbA2 2%\nWhat is the most likely diagnosis?',
+  opts:['β-Thalassaemia trait','Glucose-6-phosphate dehydrogenase deficiency','Iron-deficiency anemia','Normal variation for age and ethnicity'],
+  fig:'A stained peripheral blood film/smear image printed to the right of the answer options, low-to-medium power, showing numerous red cells on a pale background; most cells appear small with pale (hypochromic) centres, a few cells stain darker/more compact; no labels, arrows, or scale bar on the image itself.',
+  figAlt:'peripheral blood film, low power',
+  expl:'This child has microcytic, hypochromic anemia with normal hemoglobin electrophoresis, making thalassemia unlikely. Iron-deficiency anemia is the most common cause of these findings in young children and is usually due to dietary insufficiency. The absence of HbA2 or HbF elevation supports iron deficiency over β-thalassemia trait.',
+  note:'Key highlighted = option C, "Iron-deficiency anemia" (index 2). Page 320 itself prints no box; the explanation box overflowed onto p.321 (the lone "notes" page flagged in the task) -- confirmed by content, it reasons through this exact vignette (microcytic/hypochromic, normal electrophoresis, HbA2 not elevated) and matches Q26, not a separate teaching slide. So p.321 IS the overflow box for n:5, unlike p.309 which was unrelated. Stem/options/values (Hb 86, MCV 68, MCHC 22, WBC 11.2 x 10^9/L, platelets 262 x 10^9/L, HbA 98%/HbA2 2%) read off the answered page and cross-checked against the unanswered twin p.319, identical. Only 4 options printed on this page (A-D), unlike the 5-option pages before it -- read directly off image, confirmed on both p.319 and p.320.' }
+
+{ n:6, pr:27, p:323, key:4,
+  stem:'Peter, aged 9 months, presents to the Emergency Department. His family moved to the UK when he was 6 weeks old. He has had pain in his fingers for the past 6 hours and an upper respiratory tract infection for the last 24 hours. He has no medical history and is not on any medications. The appearance of his left hand is shown in the figure What is the most likely diagnosis?',
+  opts:['Acute lymphoblastic leukaemia','β-Thalassaemia major','Glucose-6-phosphate dehydrogenase deficiency','Haemophilia A','Sickle cell disease'],
+  fig:'Clinical colour photograph of an infant, printed to the right of the option list: an adult holds the infant\'s left hand/forearm, the fingers of the hand resting near a colourful shape-sorter toy; the hand/fingers are visibly swollen. Identical image on p.322 (unanswered twin) and p.323 (answered).',
+  figAlt:'clinical photograph, infant\'s hand',
+  expl:'Painful dactylitis (hand-foot syndrome) in an infant with recent infection is often the first manifestation of sickle cell disease. It is common in children of African origin and presents early in life.',
+  note:'RESOLVES the pp.322-323 structural question flagged in the task: read both pages whole. p.322 carries NO yellow highlight and NO box -- it is a plain, ordinary UNANSWERED printing of Q27 (ie the index tagged it "answered" incorrectly; visually it is indistinguishable from every other unanswered page in this section). p.323 is the genuinely answered page: option E, "Sickle cell disease" (index 4), highlighted yellow, with an explanation box. So this is neither an overflow-box split, nor a duplicate-with/without-box reprint (the part-D pp.419/420 pattern) -- it is a normal unanswered/answered pair that the page-kind index misclassified. Only p.323 (the answered page) gets an entry; p.322 is the unanswered twin and is not staged, per the section\'s standing rule. Stem, options and figure identical on both pages.' }
+
+{ n:7, pr:28, p:325, key:2,
+  stem:'Shlomo is a 9-day-old Jewish boy born in the UK. He underwent religious circumcision yesterday, but the wound has not stopped bleeding. On examination, he is pale and tachycardic. There is oozing of blood from the circumcision site and, later, from the cannula site after insertion. Investigations show: Hb (hemoglobin): 84 g/L WBC (white blood cell count): 12 x 10^9/L Platelet count: 322 x 10^9/L Prothrombin time: 16 seconds (control: 12–15 seconds) Activated partial thromboplastin time: >120 seconds (control: 25–35 seconds)\nWhat is the most likely diagnosis?',
+  opts:['β-Thalassaemia major','Liver disease','Hemophilia A','von Willebrand disease'],
+  expl:'A significantly prolonged APTT with normal platelets and PT in a male infant with prolonged bleeding after circumcision is classic for Hemophilia A (factor VIII deficiency), an X-linked condition.',
+  note:'Key highlighted = option C, "Hemophilia A" (index 2). Box fits on the answered page, no overflow. Stem/options/values (Hb 84, WBC 12 x 10^9/L, platelets 322 x 10^9/L, PT 16s, APTT >120s) read off the answered page and cross-checked against the unanswered twin p.324, identical. Only 4 options printed (A-D).' }
+
+{ n:8, pr:29, p:327, key:3,
+  stem:'Charlie, aged 5 years, has recurrent nosebleeds, the most recent of which lasted 1.5 hours. He has no other medical problems. On examination, he is pale, with normal findings otherwise. Investigations reveal: Hb (hemoglobin): 86 g/L WBC (white blood cell count): 10.2 x 10^9/L Platelet count: 350 x 10^9/L Prothrombin time: 16 seconds (control: 12–15 seconds) Activated partial thromboplastin time: 46 seconds (control: 25–35 seconds) Fibrinogen: 2.5 g/L (normal: 2–4 g/L) Factor VIII: just below the normal range\nWhat is the most likely diagnosis?',
+  opts:['Vitamin K deficiency','Liver disease','Immune thrombocytopenic purpura','von Willebrand disease'],
+  expl:'Recurrent mucosal bleeding with mild anemia, prolonged PTT, and slightly reduced factor VIII levels suggests von Willebrand disease. Platelets and PT are typically normal or near-normal.',
+  note:'Key highlighted = option D, "von Willebrand disease" (index 3). Box fits on page, no overflow. Stem/options/values (Hb 86, WBC 10.2 x 10^9/L, platelets 350 x 10^9/L, PT 16s, APTT 46s, fibrinogen 2.5 g/L, "Factor VIII: just below the normal range" -- printed as prose, not a number) read off the answered page and cross-checked against unanswered twin p.326, identical. Only 4 options printed (A-D).' }
+
+{ n:9, pr:30, p:329, key:0,
+  stem:'Melissa is a 3-year-old girl. She presents to her general practitioner with a 3–4-week history of lethargy and weight loss. On examination, she is pale and has widespread bruising. She has no other medical history and is not currently on any medications. The general practitioner orders a full blood count, which reveals: Hb: 66 g/L WBC: 43.2 x 10^9/L Platelet count: 50 x 10^9/L\nWhich of the following is the most likely diagnosis?',
+  opts:['Acute lymphoblastic leukaemia','Acute myeloid leukaemia','Alpha-thalassaemia major','Beta-thalassaemia major','Iron deficiency anemia'],
+  expl:'A child with pallor, bruising, and pancytopenia (low Hb, high WBCs, and low platelets) is highly suggestive of ALL, the most common childhood cancer',
+  note:'Key highlighted = option A, "Acute lymphoblastic leukaemia" (index 0). Box fits on page, no overflow. Stem/options/values (Hb 66, WBC 43.2 x 10^9/L, platelets 50 x 10^9/L) read off the answered page and cross-checked against unanswered twin p.328, identical. This is the FIRST page of the pp.329-351 range flagged in the task as matching House-bank questions one-for-one in page order -- recorded here per instruction; the House file was not opened, audited or compared.' }
+
+{ n:10, pr:31, p:331, key:1,
+  stem:'Xevera is a 7-year-old Greek boy who is seen by a paediatrician for constipation and is noted to look pale. Hematological testing reveals that he is anaemic with an Hb of 100 g/L (both MCV and MCHC are low). He is given a course of iron therapy, but his anemia does not improve. Further testing reveals 5% hemoglobin A2 (HbA2) and 3% fetal hemoglobin (HbF). Which of the following is the most likely diagnosis?',
+  opts:['Alpha-thalassaemia trait','Beta-thalassaemia trait','Thalassaemia major','Beta-thalassaemia major','Iron deficiency anemia'],
+  expl:'Failure to respond to iron, along with elevated HbA2 and HbF on electrophoresis, is diagnostic of beta-thalassemia trait. Microcytic anemia is present despite adequate iron levels.',
+  note:'Key highlighted = option B, "Beta-thalassaemia trait" (index 1). Box fits on page, no overflow. Stem/options/values (Hb 100 g/L, HbA2 5%, HbF 3%) read off the answered page and cross-checked against unanswered twin p.330, identical. Within the pp.329-351 House-overlap range flagged in the task -- observation only, not opened or compared.' }
+
+{ n:11, pr:32, p:333, key:0,
+  stem:'Ahmed is a 4-week-old infant of Somali refugees who have just fled to the UK. He was circumcised yesterday, but the wound will not stop bleeding. On examination, there is oozing of blood around the circumcision wound. Investigations reveal: Hb: 122 g/L WBC: 11 x 10^9/L Platelets: 312 x 10^9/L Prothrombin time: 36 seconds (control: 12–15 seconds) APTT: 25 seconds (control: 25–35 seconds)\nWhich of the following is the best treatment option for this patient?',
+  opts:['Vitamin K','Vitamin D','Blood transfusion','Iron supplementation'],
+  expl:'The infant has an isolated prolonged PT with normal platelets and APTT, which is consistent with vitamin K deficiency bleeding (VKDB), common in exclusively breastfed infants not given prophylaxis.',
+  note:'Key highlighted = option A, "Vitamin K" (index 0). Box fits on page, no overflow. Stem/options/values (Hb 122, WBC 11 x 10^9/L, platelets 312 x 10^9/L, PT 36s, APTT 25s) read off the answered page and cross-checked against unanswered twin p.332, identical. Only 4 options printed (A-D). Within the pp.329-351 House-overlap range -- observation only.' }
+
+{ n:12, pr:33, p:335, key:2,
+  stem:'Lola is an 8-month-old girl from Cyprus. She is referred to the paediatric department because she is clinically anaemic and has faltering growth. Upon examination, you find that she has a large liver and spleen. Electrophoresis reveals an absence of hemoglobin A (HbA). Which of the following is the best treatment option for this patient?',
+  opts:['Vitamin K','Vitamin D','Blood transfusion','Iron supplementation','Chemotherapy'],
+  expl:'Absence of HbA on electrophoresis and hepatosplenomegaly in a symptomatic infant from a thalassemia-endemic area (Cyprus) suggest beta-thalassemia major. Lifelong transfusion therapy is often required.',
+  note:'Key highlighted = option C, "Blood transfusion" (index 2). Box fits on page, no overflow. Stem/options read off the answered page and cross-checked against unanswered twin p.334, identical. Within the pp.329-351 House-overlap range -- observation only.' }
+
+{ n:13, pr:34, p:337, key:3,
+  stem:'George is a 3-month-old boy. He presents to the paediatric ward with a swollen leg. He had an immunization yesterday and there is now a large swelling at the injection site. Hematological investigation reveals: Hb: 102 g/L WBC: 9.0 x 10^9/L Platelets: 312 x 10^9/L Prothrombin time: 13 seconds (control: 12–15 s) APTT: 100 seconds (control: 25–35 s)\nThere is currently no bleeding and he is hemodynamically stable. His two older brothers both suffer from a bleeding disorder, but both his parents and older sister do not. Which of the following is the best treatment option?',
+  opts:['Vitamin K','Blood transfusion','Folic acid supplementation','Recombinant factor VIII'],
+  expl:'A prolonged APTT with normal PT and platelets in a male infant, plus a family history of bleeding in male siblings, strongly suggests Hemophilia A. Recombinant factor VIII is the treatment of choice.',
+  note:'Key highlighted = option D, "Recombinant factor VIII" (index 3). Box fits on page, no overflow. Stem/options/values (Hb 102, WBC 9.0 x 10^9/L, platelets 312 x 10^9/L, PT 13s, APTT 100s) read off the answered page and cross-checked against unanswered twin p.336, identical. Only 4 options printed (A-D). Within the pp.329-351 House-overlap range -- observation only.' }
+
+{ n:14, pr:35, p:339, key:4,
+  stem:'Lizzie is a 9-year-old girl who presents to the paediatric clinic. She is known to have hereditary spherocytosis. Her mother is concerned that she is very pale. Three weeks ago, Lizzie had an upper respiratory tract infection. Her mother reports that she had a fever and was very flushed with bright red cheeks. She is otherwise well and has fully recovered from her infection. Her mother informs you that she has a very good diet. A complete blood count reveals an Hb of 88 g/L. A blood film reveals a normochromic normocytic anemia with no blast cells. Which of the following is the best treatment option?',
+  opts:['Vitamin K','Blood transfusion','Folic acid supplementation','Recombinant factor VIII','No action required at present'],
+  expl:'She probably had a parvovirus infection associated with bone marrow suppression. This level of anaemia does not need transfusion. If she has a good diet, she will not need iron supplementation. However, she will need a further full blood count in a couple of weeks to ensure that her haemoglobin has not dropped further and reached the level where a blood',
+  note:'Key highlighted = option E, "No action required at present" (index 4). ⚠️ PRINTING DEFECT, flagged not corrected: the explanation box\'s own border cuts the last sentence off mid-word after "...reached the level where a blood" -- confirmed on both native and hires renders, the box border closes right there with no continuation visible; p.340 is the next question (Q36, unanswered), not a continuation of this box. Transcribed verbatim as truncated; not completed or guessed. Stem/options/Hb 88 g/L read off the answered page and cross-checked against unanswered twin p.338, identical. Within the pp.329-351 House-overlap range -- observation only.' }
+
+{ n:15, pr:36, p:341, key:4,
+  stem:'Angie is 6 weeks old. She was jaundiced at 24 hours of age when her hemoglobin (Hb) was checked and found to be 150 g/L. At 2 months of age, she presents with an upper respiratory tract infection. The full blood count is repeated, and she has an Hb of 102 g/L. Which of the following is the best treatment option for this patient?',
+  opts:['Vitamin K','Blood transfusion','Folic acid supplementation','Recombinant factor VIII','No action required at present'],
+  expl:'This is a normal variant. At birth, the haemoglobin in term infants is high, 140–215 g/L, to compensate for the low oxygen concentration in the fetus. The haemoglobin falls over the first few weeks, mainly due to reduced red cell production, reaching a nadir of around 100 g/L at 2 months of age',
+  note:'Key highlighted = option E, "No action required at present" (index 4). Box fits on page, no overflow (unlike n:14, this box\'s border closes cleanly after a complete sentence). Stem/options/values (Hb 150 g/L at 24h, Hb 102 g/L at repeat, reference range 140-215 g/L) read off the answered page and cross-checked against unanswered twin p.340, identical. Within the pp.329-351 House-overlap range -- observation only.' }
+
+{ n:16, pr:37, p:343, key:1,
+  stem:'Hemoglobin production differs through fetal life and extrauterine life, and the molecule itself changes with age. Which of the following statements regarding hemoglobin is correct?',
+  opts:['At birth, HbA is predominant','Hb concentration falls after birth until around 7 weeks','Hematopoiesis mainly occurs in the liver and spleen at term','The lifespan of a normal red blood cell is 10 days','Fetal hemoglobin has lower affinity for oxygen'],
+  expl:'After birth, Hb levels physiologically drop due to reduced erythropoiesis and transition from fetal to adult hemoglobin, reaching a nadir around 6–8 weeks. This is known as physiological anemia of infancy.',
+  note:'Key highlighted = option B, "Hb concentration falls after birth until around 7 weeks" (index 1). p.342 (not in the assigned answered-page list, checked anyway) is the plain unanswered twin, identical stem/options -- confirmed. Box fits on the answered page, no overflow. Note the box text says nadir "around 6-8 weeks" while the correct-option text says "around 7 weeks" -- both printed as-is, not reconciled (7 weeks falls within the stated 6-8 week range, not a contradiction, recorded verbatim only).' }
+
+{ n:17, pr:38, p:345, key:2,
+  stem:"An 11-month-old Caucasian boy attends his GP as his mother has been struggling to wean him. He will drink cow's milk at regular intervals and eats some baby rice but refuses most other solids. On examination, he appears very pale but otherwise well. There is no hepatosplenomegaly. A complete blood count (FBC) shows: Hb: 7.8 g/dL MCV: 69 fL\nWhat is the most likely cause of his anemia?",
+  opts:['Sickle cell anemia','Thalassaemia','Iron deficiency anemia','Vitamin B12 deficiency'],
+  expl:'A diet high in cow’s milk and low in iron-rich solids commonly leads to iron deficiency anemia in infants. The low Hb and microcytic MCV (69 fL) confirm the diagnosis.',
+  note:'Key highlighted = option C, "Iron deficiency anemia" (index 2). Box fits on page, no overflow. ⚠️ UNIT FLAG: Hb printed here as "7.8 g/dL" -- this is the first entry in this file using g/dL rather than g/L (every prior entry printed Hb in g/L); read directly off the image on both the answered page and its unanswered twin p.344, identical unit both places, not a transcription slip on my part. Transcribed as printed, not converted. MCV 69 fL also cross-checked against p.344, identical. Only 4 options printed (A-D).' }
 
