@@ -91,12 +91,6 @@ identical options.** Four questions off one menu means the discriminating detail
 every time. Read each stem for what it actually asks; do not let one entry's reasoning bleed into the
 next three.
 
-The sweep also flagged two shared option **menus**, which pair questions and never fold them:
-n2/n23 (the pair above), and **n9/n10/n11/n12 — four DKA-and-hypoglycaemia questions sharing five
-identical options.** Four questions off one menu means the discriminating detail is in the vignette
-every time. Read each stem for what it actually asks; do not let one entry's reasoning bleed into the
-next three.
-
 ---
 
 ## ⚠️ For the end-of-stream cross-bank sweep — a second chapter-shaped House overlap
@@ -137,9 +131,18 @@ skimmed:
 
 - **n18** (p.1128) — pre-eclampsia, 2.2 kg baby at 37 weeks, admitted to SCBU, answer *hypoglycemia*.
   The hypoglycaemia ruling splits at 28 days and this baby is hours old.
-- **n26** (p.1144) — a 5-month-old with prolonged jaundice and pale stools whose answer is
-  *hypothyroidism*. It is printed in the endocrine section and matches a House **liver** question on
-  its option set. Assign on what the question tests, not on the symptom it opens with.
+- **n26** (p.1144) — a 5-month-old with jaundice whose answer is *hypothyroidism*. It is printed in
+  the endocrine section and matches a House **liver** question on its option set. Assign on what the
+  question tests, not on the symptom it opens with.
+
+  ⚠️ **CORRECTED 2026-09-05, and the error was mine.** This line first said "jaundice and pale
+  stools". The stem says the opposite: *"His stool and urine are normal in color."* Normal stool
+  colour is precisely what rules biliary atresia out and points at hypothyroidism, so the invented
+  detail argued for the wrong answer. It came from reading a 120-character truncation of the stem
+  that cut off at "His stool" and completing the sentence from the picture I expected rather than
+  from the page. **Half B caught it, followed the staged text over this file, and said so** — which
+  is the behaviour the drafting brief asks for and the reason a half is told these notes are not the
+  source. Nothing reached a live entry.
 - **n7** (p.1106) — a communication question about a newborn with ambiguous genitalia; the answer is
   what you say to the parents, not a diagnosis.
 

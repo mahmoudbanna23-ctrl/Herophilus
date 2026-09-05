@@ -75,8 +75,16 @@ const SEC = {
   // against entries already live in section 2. Reasoning in val-pd-ep2.js's section-8 block.
   8: { prefix: 'pedep2-neu-', staging: 'endpoint-p2-s08-neuro.array.js', svar: 'PEDEP2_S08_STAGED',
        draft: 'endpoint-p2-s08-neuro.draft', folded: [34, 41, 47, 59] },
+  // Section 9's one within-section fold: n23 (p.1138) into n2 (p.1094), the James hypoglycaemia
+  // vignette reprinted with a condensed stem, the same five options in the same order and the same
+  // key -- confirmed on both page images, where option D is highlighted, bold and underlined on each.
+  // ⚠️ The book prints a DIFFERENTLY WORDED explanation box under each printing and neither is a
+  // superset: p.1094 has "cannot swallow", p.1138 has "without needing IV access". The survivor keeps
+  // its own box verbatim and unmixed and the reprint's extra detail is carried in the expansion below
+  // the rule, attributed to p.1138. Blending two printings into one blockquote would fabricate a box
+  // the book never printed. Reasoning in endpoint-p2-s09-drafting-notes.md.
   9: { prefix: 'pedep2-end-', staging: 'endpoint-p2-s09-endocrine.array.js', svar: 'PEDEP2_S09_STAGED',
-       draft: 'endpoint-p2-s09-endocrine.draft' },
+       draft: 'endpoint-p2-s09-endocrine.draft', folded: [23] },
   10: { prefix: 'pedep2-liv-', staging: 'endpoint-p2-s10-liver.array.js', svar: 'PEDEP2_S10_STAGED',
         draft: 'endpoint-p2-s10-liver.draft' },
   11: { prefix: 'pedep2-mal-', staging: 'endpoint-p2-s11-malignant.array.js', svar: 'PEDEP2_S11_STAGED',

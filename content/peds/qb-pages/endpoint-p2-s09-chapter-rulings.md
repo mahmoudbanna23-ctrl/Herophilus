@@ -1,7 +1,9 @@
 # Section 9 — chapter rulings
 
 Binding for every drafting half of peds endpoint part 2 section 9, "Diabetes & Endocrinology",
-pp.1079-1145, 27 questions. Written before any section-9 agent exists, and measured off
+pp.1079-1145, ~~27~~ **26** questions (the count was corrected 2026-09-05 after p.1082 proved to be
+a teaching-notes slide, not a question — see `endpoint-p2-s09-drafting-notes.md`). Written before any
+section-9 agent exists, and measured off
 `app\data\theory.peds.js` and the OCR text of the section's own pages — not assumed from chapter
 names. Read this with `endpoint-p2-s09-s11-page-map.md`.
 
@@ -28,6 +30,29 @@ complications develop and when screening for them starts, what travels with type
 the acute episode and everything done during it — the fluids, the insulin infusion, the potassium,
 the withheld bicarbonate, the monitoring, the exit. A question that mentions ketoacidosis only as the
 way a new diabetic presented, and then asks about the diabetes, is `endocrine`.
+
+**1a. ⚠️ ADDED 2026-09-05 after ruling 1 failed to settle a real question.** A drafting half raised
+n12 (p.1116) and was right to: Sophie is a known type 1 diabetic with fever, vomiting and diarrhoea,
+clinically dehydrated, **vitals stable, talking, glucose 16 mmol/L, and no ketones or pH given
+anywhere.** By ruling 1's literal test — is the vignette an episode? — she is not in one, which
+argues `endocrine`. By ruling 1's own list of what `endo-dka` owns — "the fluids" — she is, because
+the thing being tested is the choice between an intravenous **infusion** and fluid **resuscitation**,
+and that distinction is taught in `endo-dka` and nowhere else in the module.
+
+**The ruling: `endo-dka`, and the test is refined rather than overturned.** Ruling 1's last sentence
+only ever covered the reverse case — DKA mentioned as how a new diabetic presented, then the question
+asks about the diabetes. Here diabetes is the background and the question asks about the
+DKA-prevention fluid. **Where the vignette is not an episode but the thing being asked is taught only
+inside the acute-episode chapter, the chapter follows what is asked.** The file's own printed box
+supports this: it says the picture indicates "a risk of diabetic ketoacidosis" — the question exists
+to teach what you do about that risk.
+
+Note this sits inside the four-question shared menu n9/n10/n11/n12, which the book uses to make
+exactly this discrimination: shock goes to resuscitation (n9, `endo-dka`), a non-ketotic new
+diagnosis to subcutaneous insulin (n10, `endocrine`), a conscious hypo to an oral glucose drink (n11,
+`endocrine`), and stable dehydration to a routine infusion (n12, `endo-dka`). **Two of the four land
+in each chapter, which is the menu working as intended** — a run of four identical option sets
+landing in one chapter would have been the finding.
 
 **2. Cerebral oedema is `endo-dka`, always.** `endo-18` and `endo-19` are written for it; no other
 chapter in the module teaches it. Measured on p.1086.
