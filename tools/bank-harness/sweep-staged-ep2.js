@@ -18,9 +18,14 @@
 // The pools, and what each one means here:
 //   (a) app/data/questions.peds.ep2.js  -- THIS file. A hit is a FOLD candidate.
 //   (b) app/data/questions.peds.js      -- Chat B's House bank. RECORDED, never folded.
-//   (e) app/data/questions.peds.ep.js   -- PART 1, written by another live chat. RECORDED, never
-//       folded. ⚠️ Nothing folds across the part-1/part-2 boundary while both chats are live; the
-//       two files merge by ADDING a bank at the end of the stream, never by deleting an entry.
+//   (e) app/data/questions.peds.ep.js   -- PART 1. A hit is a FOLD candidate, same as (a).
+//       ⚠️ CORRECTED 2026-09-05, and the old note here was wrong twice over. It said nothing folds
+//       across the part-1/part-2 boundary while both chats are live -- true only until part 1
+//       closed, which it has. And it said the two files "merge by ADDING a bank", which they never
+//       could: both carry bank:'endpoint', so the split is two source PDFs, not two banks. A
+//       part-1/part-2 match is a WITHIN-bank duplicate. It folds by deleting the lesser printing,
+//       or by not drafting the staged entry at all, and the survivor's `source` gains the citation.
+//       Adding a bank is the HOUSE shape, leg (b), and belongs nowhere near this leg.
 //   (c) the other staged entries in the same section -- a within-section reprint.
 //
 // It RESOLVES NOTHING. Every hit is a page to open, not a verdict.
@@ -234,9 +239,9 @@ S.forEach((s, i) => {
 });
 if (!aN) console.log('  none');
 
-// (e) against PART 1 -- RECORDED, never folded while both chats are live
+// (e) against PART 1 -- fold candidates since part 1 closed and the two parts folded together
 console.log('');
-console.log('--- (e) AGAINST LIVE ENDPOINT PART 1 -- another chat writes that file: RECORD ONLY ---');
+console.log('--- (e) AGAINST LIVE ENDPOINT PART 1 -- same bank, fold candidates, judge on the images ---');
 let eN = 0;
 S.forEach((s, i) => {
   EP1.forEach((q, k) => {

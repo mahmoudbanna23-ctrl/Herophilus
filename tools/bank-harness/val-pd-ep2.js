@@ -181,8 +181,17 @@ const SEC = {
         draft: 'endpoint-p2-s12-mfe1.draft', chapter: '(mixed)', pages: [1270, 1431], ans: 80,
         folded: [1, 2, 5, 6, 8, 18, 19, 21, 22, 23, 26, 30, 31, 32, 34, 43, 45, 52, 53, 56, 57,
                  58, 60, 62, 66, 68, 72, 75] },
+  // Section 13's 29 reprints. This validator has no `reprints` concept -- `folded` means only
+  // "staged and deliberately not drafted", which is true of a reprint as much as of a within-section
+  // discard. The proof that each pair is real lives in reprint-s13-pd-ep2.js and in
+  // endpoint-p2-s13-reprint-map.md; the splicer is what enforces that the pass ran.
+  // ⚠️ Five of the 29 (n8, n37, n38, n41, n42) extend an entry in questions.peds.ep.js, not in this
+  // stream's own file, because part 1 closed and folded and both files carry bank:'endpoint'.
+  // Nothing here needs to know that -- the count is the same either way -- but the splicer does.
   13: { prefix: 'pedep2-mf2-', file: 'endpoint-p2-s13-mfe2.array.js', svar: 'PEDEP2_S13_STAGED',
-        draft: 'endpoint-p2-s13-mfe2.draft', chapter: '(mixed)', pages: [1432, 1594], ans: 80 },
+        draft: 'endpoint-p2-s13-mfe2.draft', chapter: '(mixed)', pages: [1432, 1594], ans: 80,
+        folded: [4, 5, 7, 8, 13, 14, 15, 17, 18, 19, 22, 23, 24, 25, 27, 28, 37, 38, 41, 42,
+                 61, 66, 70, 71, 76, 77, 78, 79, 80] },
   14: { prefix: 'pedep2-mf3-', file: 'endpoint-p2-s14-mfe3.array.js', svar: 'PEDEP2_S14_STAGED',
         draft: 'endpoint-p2-s14-mfe3.draft', chapter: '(mixed)', pages: [1595, 1756], ans: 80 },
   15: { prefix: 'pedep2-mf4-', file: 'endpoint-p2-s15-mfe4.array.js', svar: 'PEDEP2_S15_STAGED',

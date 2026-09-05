@@ -122,8 +122,25 @@ const SEC = {
         reprints: [1, 2, 5, 6, 8, 18, 19, 21, 22, 23, 26, 30, 31, 32, 34, 43, 45, 52, 53, 56, 57,
                    58, 60, 62, 66, 68, 72, 75],
         reprintPass: 'reprint-s12-pd-ep2.js', reprintMark: 'Model Final Exam 1' },
+  // ⚠️ SECTION 13 IS THE FIRST SECTION WHOSE REPRINTS LAND IN TWO FILES. Twenty-four of its 29
+  // reprints extend a pedep2-* entry in this stream's own live file; five extend a pedep-* entry in
+  // questions.peds.ep.js, because part 1 closed and folded and both files carry bank:'endpoint' --
+  // one bank, two source PDFs. So `reprintMark` (one string, counted in the part-2 file) cannot
+  // prove this pass ran: it would find 24 of 29 and refuse a correct splice. `reprintMarks` below
+  // replaces it, counting a different string in each file.
+  // ⚠️ And neither string may be the bare exam name. Measured before the pass ran: 33 part-1 sources
+  // already contained "Model Final Exam 2", because part1.pdf prints an exam of that name too. The
+  // part-1 clause therefore names the file, and both marks are counted as full clause prefixes.
   13: { prefix: 'pedep2-mf2-', staging: 'endpoint-p2-s13-mfe2.array.js', svar: 'PEDEP2_S13_STAGED',
-        draft: 'endpoint-p2-s13-mfe2.draft' },
+        draft: 'endpoint-p2-s13-mfe2.draft',
+        reprints: [4, 5, 7, 8, 13, 14, 15, 17, 18, 19, 22, 23, 24, 25, 27, 28, 37, 38, 41, 42,
+                   61, 66, 70, 71, 76, 77, 78, 79, 80],
+        reprintPass: 'reprint-s13-pd-ep2.js',
+        reprintMarks: [
+          { file: 'questions.peds.ep2.js', mark: 'reprinted in Model Final Exam 2, p.1', expect: 24 },
+          { file: 'questions.peds.ep.js',
+            mark: 'reprinted in Pediatrics endpoint part2.pdf, Model Final Exam 2, p.1', expect: 5 },
+        ] },
   14: { prefix: 'pedep2-mf3-', staging: 'endpoint-p2-s14-mfe3.array.js', svar: 'PEDEP2_S14_STAGED',
         draft: 'endpoint-p2-s14-mfe3.draft' },
   15: { prefix: 'pedep2-mf4-', staging: 'endpoint-p2-s15-mfe4.array.js', svar: 'PEDEP2_S15_STAGED',
@@ -271,11 +288,21 @@ if (drafted.length !== S.length - SKIP.size) {
 // 2a. THE REPRINT PASS MUST ALREADY HAVE RUN. Splicing first would leave the 30 live entries with
 // no record of the exam printing, and nothing afterwards would notice: the count is right either
 // way, so only this check can catch the ordering. Same reasoning as the validator gate above.
+// ⚠️ `reprintMarks` (plural) is the two-file form, and it is not a refinement of `reprintMark` --
+// it is the only form that can prove a section whose reprints do not all land in this file. From
+// section 13 on, a model exam re-prints part-1 questions as readily as part-2 ones, because part 1
+// closed and folded and the two files are one bank. A single mark counted in one file reports a
+// shortfall on a correct pass; count each file for its own clause instead.
 if (REPRINTS.size) {
-  const n = (fs.existsSync(LIVE) ? fs.readFileSync(LIVE, 'utf8') : '').split(cfg.reprintMark).length - 1;
-  if (n < REPRINTS.size)
-    fail.push('REPRINT PASS HAS NOT RUN: ' + n + ' of ' + REPRINTS.size + ' live sources name "'
-      + cfg.reprintMark + '". Run tools/bank-harness/' + cfg.reprintPass + ' --write first.');
+  const marks = cfg.reprintMarks
+    || [{ file: path.basename(LIVE), mark: cfg.reprintMark, expect: REPRINTS.size }];
+  for (const M of marks) {
+    const f = path.join(path.dirname(LIVE), M.file);
+    const n = (fs.existsSync(f) ? fs.readFileSync(f, 'utf8') : '').split(M.mark).length - 1;
+    if (n < M.expect)
+      fail.push('REPRINT PASS HAS NOT RUN: ' + n + ' of ' + M.expect + ' sources in ' + M.file
+        + ' name "' + M.mark + '". Run tools/bank-harness/' + cfg.reprintPass + ' --write first.');
+  }
 }
 
 // 3. every entry is an endpoint entry -- the one check that would have caught a House/endpoint mix
