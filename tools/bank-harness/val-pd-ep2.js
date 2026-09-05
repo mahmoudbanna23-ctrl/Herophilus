@@ -69,8 +69,19 @@ const SEC = {
        folded: [53, 89, 90] },
   5: { prefix: 'pedep2-res-', file: 'endpoint-p2-s05-respiratory.array.js', svar: 'PEDEP2_S05_STAGED',
        draft: 'endpoint-p2-s05-respiratory.draft', chapter: 'respiratory', pages: [452, 606], ans: 65 },
+  // ⚠️ Section 6's `ans` was 85 until 2026-09-05 and 85 was WRONG -- it is the OCR index's `answered`
+  // count, and pp.613, 617, 618 and 619 are outline slides inside the opening teaching notes, read by
+  // eye against 612/614/615/616/620 before staging began. `answered` is a yellow-pixel threshold and
+  // this book's notes slides cross it. The section stages 81 and n:1 is p.629.
+  // `chapter: 'cardiac'` here is documentation only, and for this section it is documentation of the
+  // majority, not of the rule: the section spreads over `cardiac`, `cardiac-cyan` and `cardiac-acq`,
+  // and two entries leave cardiology entirely (scarlet fever -> `infection-rash`, shock recognition
+  // -> `emergencies`). The rulings are in the drafting prompts; nothing here checks them.
+  // `folded` is the two within-bank reprints dropped at drafting: n57 (p.743) into n26 (p.680), and
+  // n73 (p.775) into n32 (p.693). Both kept printings carry the fuller explanation box.
   6: { prefix: 'pedep2-car-', file: 'endpoint-p2-s06-cardiac.array.js', svar: 'PEDEP2_S06_STAGED',
-       draft: 'endpoint-p2-s06-cardiac.draft', chapter: 'cardiac', pages: [607, 792], ans: 85 },
+       draft: 'endpoint-p2-s06-cardiac.draft', chapter: 'cardiac', pages: [607, 792], ans: 81,
+       folded: [57, 73] },
   7: { prefix: 'pedep2-ren-', file: 'endpoint-p2-s07-renal.array.js', svar: 'PEDEP2_S07_STAGED',
        draft: 'endpoint-p2-s07-renal.draft', chapter: 'renal', pages: [793, 929], ans: 55 },
   8: { prefix: 'pedep2-neu-', file: 'endpoint-p2-s08-neuro.array.js', svar: 'PEDEP2_S08_STAGED',

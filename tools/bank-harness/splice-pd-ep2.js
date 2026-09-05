@@ -55,8 +55,14 @@ const SEC = {
        draft: 'endpoint-p2-s04-haematology.draft', folded: [53, 89, 90] },
   5: { prefix: 'pedep2-res-', staging: 'endpoint-p2-s05-respiratory.array.js', svar: 'PEDEP2_S05_STAGED',
        draft: 'endpoint-p2-s05-respiratory.draft' },
+  // Section 6's two within-section folds: n57 (p.743) into n26 (p.680), and n73 (p.775) into
+  // n32 (p.693). Both discards were adjudicated by comparing the two printings' explanation
+  // boxes and keeping the fuller one (318 chars against 114; 160 against 134). The n32/n73 pair
+  // disagrees about a number -- "a graded pansystolic murmur" against "a grade 4 pan-systolic
+  // murmur" -- so the kept stem stays byte-identical to its own printing and the second
+  // printing's grade is recorded in the explanation rather than merged into the stem.
   6: { prefix: 'pedep2-car-', staging: 'endpoint-p2-s06-cardiac.array.js', svar: 'PEDEP2_S06_STAGED',
-       draft: 'endpoint-p2-s06-cardiac.draft' },
+       draft: 'endpoint-p2-s06-cardiac.draft', folded: [57, 73] },
   7: { prefix: 'pedep2-ren-', staging: 'endpoint-p2-s07-renal.array.js', svar: 'PEDEP2_S07_STAGED',
        draft: 'endpoint-p2-s07-renal.draft' },
   8: { prefix: 'pedep2-neu-', staging: 'endpoint-p2-s08-neuro.array.js', svar: 'PEDEP2_S08_STAGED',
