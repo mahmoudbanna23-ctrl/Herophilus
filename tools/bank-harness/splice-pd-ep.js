@@ -88,6 +88,29 @@ const SEC = {
         draft: 'endpoint-s12-mfe3.draft',
         reprints: [3, 4, 5, 11, 12, 17, 24, 26, 39, 46, 47, 52, 53, 56, 57, 59, 60, 61, 67],
         reprintPass: 'reprint-s12-pd-ep.js', reprintMark: 'Model Final Exam 3' },
+
+  // Model Final Exam 4. ADJUDICATED 2026-09-05: 21 of its 80 are reprints, so 59 are drafted.
+  // Section 12 closed with a finding about instruments rather than about itself -- two probes
+  // sharing no input agreed on 18 candidates and were wrong by two, because both matched on the
+  // STEM and both missed a printing that the live entry records in prose inside `source`. Section
+  // 13 therefore ran the method that would have caught them, and ran three arms rather than two:
+  // the OCR arm over pp.1644-1804, the stem arm over the staged rows, and a whole-text arm that
+  // searches stem, options, explanation AND source, paired with an OPTION-SET arm comparing the
+  // menus directly. The first two arms named the same 14 pages. The third added nine more -- n16,
+  // n19, n25, n35, n37, n38, n44, n55 and n59 -- and two of the first fourteen turned out not to
+  // be reprints at all. The under-count is the same shape both times: a stem probe is blind to a
+  // reprint whose vignette was rewritten around an unchanged option ladder.
+  // ⚠️ TEN CANDIDATES ARE DELIBERATELY ABSENT and each is drafted as its own entry, with the
+  // pairing recorded in its explanation: n4, n7, n12, n27, n53, n58, n61, n62, n64, and n30/n50/
+  // n65 against the mf3-62/75/76/80 cluster. Each shares a stem or a menu with a live entry and
+  // differs in a way that makes it a different question -- a replaced distractor, a different age,
+  // a NOT-true against a TRUE, management against diagnosis. reprint-s13-pd-ep.js names them one
+  // by one and says what discriminates each. Do not tidy any of them into this list later.
+  13: { prefix: 'pedep-mf4-', staging: 'endpoint-s13-mfe4.array.js', svar: 'PEDEP_S13_STAGED',
+        draft: 'endpoint-s13-mfe4.draft',
+        reprints: [1, 16, 19, 22, 25, 29, 31, 32, 33, 35, 37, 38, 44, 46, 52, 54, 55, 57, 59, 60,
+                   68],
+        reprintPass: 'reprint-s13-pd-ep.js', reprintMark: 'Model Final Exam 4' },
 };
 
 const HEADER = `/* Pediatrics ENDPOINT questions (Pediatrics endpoint part1.pdf).
