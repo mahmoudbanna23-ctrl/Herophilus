@@ -2646,3 +2646,37 @@ n3 vs `pedep-nut-14` and n15 vs `pedep-neo-4` were both put to the drafters **as
 than as instructions**, and both came back silent. Nothing was written into either live entry.
 Framing the pairing check as a question produced three correct silences in §13 and two more here.
 **A template match is not a pairing.**
+
+## THE TAIL, pp.1937–1991 — MEASURED 2026-09-05, STAGES NOTHING
+
+The book does not end on a question. After Model Training Exam 2's last answered sheet at p.1936,
+**55 pages of revision material run to the end of the file at p.1991, and not one of them is an
+exam question.** This is recorded so no later pass re-opens the range.
+
+**How it was established — three instruments, none of them trusted alone:**
+1. **The OCR classifier** calls all 55 pages `notes`. ⚠️ **On its own this proves nothing**: the
+   same classifier missed pp.1889–1890, a real question, because that question's explanation was
+   printed as an Apgar table rather than a lettered ladder.
+2. **A structural text arm over all 55 pages** — zero pages carry three or more lettered option
+   lines, and zero pages open with a numbered question. This covers the whole range, not a sample.
+3. **Renders read by eye**: all six pages that returned no OCR text at all, plus a one-in-six
+   sample across 1937–1985 (1937, 1943, 1949, 1955, 1961, 1967, 1973, 1979, 1985). ⚠️ **This arm
+   is a SAMPLE, not a sweep** — 15 of 55 pages were looked at. It is the text arm above that
+   covers the other 40, and the verdict rests on the two together.
+
+**What the range actually is.** p.1937 is a title page, "Exam Night Review". pp.1938–1978 are
+revision bullets — prose facts, no options. From about p.1979 the format changes to **numbered
+rapid-review items in a scenario-to-answer shape** (Meckel's diverticulum, Hirschsprung's disease,
+cow's milk protein allergy). ⚠️ **Those are flashcards, not MCQs**: a numbered item with no option
+ladder and no key. A future pass grepping for numbered lines will hit them, and they still stage
+nothing. pp.1986–1987 are comparison tables (Apgar by parameter; familial short stature versus
+constitutional delay).
+
+**The four opaque pages are explained, not merely unread.** pp.1988–1990 are Arabic devotional
+pages and p.1991 is a blank white final page. They return no OCR text because there is no body
+text on them, not because a question is hidden there. **p.1991 is the last page of the book**, so
+the "render one page past the last" rule has nowhere further to go.
+
+**Independent confirmation: no live entry cites any page in 1874–1991.** Measured over all 689
+entries of `Q_PEDS_EP` by pulling every `p.<n>` out of every `source`. The whole tail, exams
+included, had never been transcribed before this section.
