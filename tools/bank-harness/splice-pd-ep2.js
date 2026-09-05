@@ -141,22 +141,25 @@ const SEC = {
           { file: 'questions.peds.ep.js',
             mark: 'reprinted in Pediatrics endpoint part2.pdf, Model Final Exam 2, p.1', expect: 5 },
         ] },
-  // Section 14 is the most derivative section either part of this book has produced: 48 of its 80
+  // Section 14 is the most derivative section either part of this book has produced: 49 of its 80
   // questions are reprints, against 28 for Model Final Exam 1, 29 for Model Final Exam 2 and 30 for
-  // part 1's own Model Final Exam 1. Only 32 are drafted.
+  // part 1's own Model Final Exam 1. Only 31 are drafted.
   // ⚠️ The page numbers collide across the two files. Part 1 has a Model Final Exam 3 of its own
   // whose pages overlap part 2's section 14 exactly, so questions.peds.ep.js already contained
   // "reprinted in Model Final Exam 3, p.1" nineteen times before this pass ran, none of them from
   // it. Both marks below were measured at 0 in their own file first, and reprint-s14-pd-ep2.js
   // scans each file only for its own rows for the same reason.
+  // n33 was added after the pass first ran: the adjudication had rejected it, resting on
+  // pedep2-gen-24 and pedep2-car-25 being deliberate never-folded siblings, and they turned out to
+  // be an unexamined duplicate. fold-gen24-pd-ep2.js folded them; the survivor is n33's target.
   14: { prefix: 'pedep2-mf3-', staging: 'endpoint-p2-s14-mfe3.array.js', svar: 'PEDEP2_S14_STAGED',
         draft: 'endpoint-p2-s14-mfe3.draft',
         reprints: [4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 18, 20, 21, 22, 24, 28,
-                   30, 31, 32, 36, 37, 38, 39, 40, 41, 42, 43, 45, 46, 49, 52, 54, 56, 57,
+                   30, 31, 32, 33, 36, 37, 38, 39, 40, 41, 42, 43, 45, 46, 49, 52, 54, 56, 57,
                    58, 59, 61, 62, 65, 69, 70, 71, 72, 76, 77, 80],
         reprintPass: 'reprint-s14-pd-ep2.js',
         reprintMarks: [
-          { file: 'questions.peds.ep2.js', mark: 'reprinted in Model Final Exam 3, p.1', expect: 46 },
+          { file: 'questions.peds.ep2.js', mark: 'reprinted in Model Final Exam 3, p.1', expect: 47 },
           { file: 'questions.peds.ep.js',
             mark: 'reprinted in Pediatrics endpoint part2.pdf, Model Final Exam 3, p.1', expect: 2 },
         ] },

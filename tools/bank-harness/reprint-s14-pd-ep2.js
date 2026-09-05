@@ -38,7 +38,7 @@ const WRITE = process.argv.includes('--write');
 const EP2 = 'questions.peds.ep2.js', EP1 = 'questions.peds.ep.js';
 const EXAM = 'Model Final Exam 3';
 const PAGE_LO = 1597, PAGE_HI = 1755;   // n1 is p.1597; the banner page 1595 stages nothing
-const EXPECTED = 48;
+const EXPECTED = 49;
 const STAGING = R + 'content/peds/qb-pages/endpoint-p2-s14-mfe3.array.js';
 const SVAR = 'PEDEP2_S14_STAGED';
 
@@ -85,7 +85,7 @@ const OPTCOUNT_OK = {
 
 // The proof-of-run marks.  Each measures 0 in its own file before the pass; see the header.
 const MARKS = [
-  { file: EP2, mark: 'reprinted in ' + EXAM + ', p.1', expect: 46 },
+  { file: EP2, mark: 'reprinted in ' + EXAM + ', p.1', expect: 47 },
   { file: EP1, mark: 'reprinted in Pediatrics endpoint part2.pdf, ' + EXAM + ', p.1', expect: 2 },
 ];
 
@@ -132,6 +132,14 @@ const PLAN = [
     tail: "the options and the key are unchanged" },
   { n: 32, p: 1659, id: 'pedep2-mf2-44', file: EP2, sep: ';',
     tail: "the options and the key are unchanged" },
+  // Added after the first run of this pass, and after fold-gen24-pd-ep2.js.  The adjudication
+  // rejected n33 on the ground that its age change (2 days to 3 months) plus a dropped maternal age
+  // is too large to be cosmetic -- but n8, n13 and n22 are accepted rows of exactly that shape, and
+  // n42 is accepted with the whole vignette stripped out.  The rejection also leaned on
+  // pedep2-gen-24 and pedep2-car-25 being deliberate never-folded siblings; they were never
+  // compared, and folding them is what surfaced this row.  The target below is the survivor.
+  { n: 33, p: 1661, id: 'pedep2-gen-24', file: EP2, sep: ',',
+    tail: "giving the baby’s age as 3 months rather than 2 days, describing the birth as following “an uneventful perinatal period” rather than “an uneventful pregnancy”, and dropping the mother’s age; the options and the key are unchanged, and the box is shortened to “The baby shows features of Down syndrome (hypotonia, single palmar crease, epicanthic folds). AV septal defect is the most common heart lesion in Down syndrome.”" },
   { n: 36, p: 1667, id: 'pedep2-dp-19', file: EP2, sep: ',',
     tail: "with the child’s age printed as 15 months rather than 18 months; the options and the key are unchanged" },
   { n: 37, p: 1669, id: 'pedep2-car-21', file: EP2, sep: ',',

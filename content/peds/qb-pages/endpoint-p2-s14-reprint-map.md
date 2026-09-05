@@ -4,14 +4,17 @@ Section 14 is **Model Final Exam 3**, pp.1595–1756 of
 `Semester 8\Pedo\Questions\Pediatrics endpoint part2.pdf`, 80 questions staged in
 `endpoint-p2-s14-mfe3.array.js` as `PEDEP2_S14_STAGED`.
 
-**48 of its 80 questions are reprints** of questions the endpoint bank already carries, the
+**49 of its 80 questions are reprints** of questions the endpoint bank already carries, the
 highest ratio this stream has produced: Model Final Exam 1 ran 28 of 80, Model Final Exam 2 ran 29,
-and part 1's own Model Final Exam 1 ran 30. The remaining 32 are drafted as new entries.
+and part 1's own Model Final Exam 1 ran 30. The remaining 31 are drafted as new entries.
 
 Every row below was consolidated from the three adjudication files by reading their `## nNN ==`
 verdict headings, not their prose summaries — all three quarters miscounted themselves in prose
 while being correct in their headings. Every verdict page was checked against the page the staging
 staged for that `n`, and all 80 matched.
+
+**One verdict was overturned afterwards — n33.** It is described in full in its own section below.
+Every other row is the adjudication’s.
 
 ## Why part 1 and part 2 are one bank here
 
@@ -32,7 +35,7 @@ before the pass, and the pass scans each file only for its own rows:
 
 | file | mark | expected after the pass |
 |---|---|---|
-| `questions.peds.ep2.js` | `reprinted in Model Final Exam 3, p.1` | 46 |
+| `questions.peds.ep2.js` | `reprinted in Model Final Exam 3, p.1` | 47 |
 | `questions.peds.ep.js` | `reprinted in Pediatrics endpoint part2.pdf, Model Final Exam 3, p.1` | 2 |
 
 ## The two clause shapes
@@ -46,307 +49,349 @@ A part-1 target must name the file, because its `source` opens with `part1.pdf`:
     (reprinted in Pediatrics endpoint part2.pdf, Model Final Exam 3, p.<page>, <tail>)
 
 Where the target already ends in a parenthetical, the clause **merges into it with `; `** rather
-than opening a second one. 13 of the 48 targets are in that state; the other 35 open a new one.
+than opening a second one. 42 of the 49 targets are in that state; the other 7 open a new one.
 
-## The 48 reprints
+## The 49 reprints
 
 `p` is the section-14 page. The target is the live entry that gains the clause.
 
 ### n4 — p.1603 → `pedep2-mf1-12`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.1294`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.1294 (reprinted in Model Final Exam 3, p.1603, giving the baby’s age as 7 days rather than 2 and reordering to “E. coli positive blood cultures”; the options and the key are unchanged)`
 - clause tail: giving the baby's age as 7 days rather than 2 and reordering to "E. coli positive blood cultures"; the options and the key are unchanged
 
 ### n5 — p.1605 → `pedep2-neu-26`
 
-- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
-- current source: `Pediatrics endpoint part2.pdf p.1008 (reprinted at p.1075; and again in Model Final Exam 1, p.1314, which gives the girl her age, twelve; the options and the key are unchanged)`
+- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
+- current source: `Pediatrics endpoint part2.pdf p.1008 (reprinted at p.1075; and again in Model Final Exam 1, p.1314, which gives the girl her age, twelve; the options and the key are unchanged; reprinted in Model Final Exam 3, p.1605, again giving the girl her age, twelve, softening “diarrhea” to “signs”, and pairing the stem with the “level of the neuromuscular lesion” menu that belongs to pedep2-neu-51 (Disorder of neuromuscular transmission / Muscle disorder / Poliomyelitis / Guillain-Barré syndrome / Disorder of anterior horn cell) instead of this entry’s own named-disease menu; Guillain-Barré syndrome is still keyed, now as option D)`
 - clause tail: again giving the girl her age, twelve, softening "diarrhea" to "signs", and pairing the stem with the "level of the neuromuscular lesion" menu that belongs to `pedep2-neu-51` (Disorder of neuromuscular transmission / Muscle disorder / Poliomyelitis / Guillain-Barré syndrome / Disorder of anterior horn cell) instead of this entry's own named-disease menu; Guillain-Barré syndrome is still keyed, now as option D
 
 ### n6 — p.1607 → `pedep2-mf1-54`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.1378`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.1378 (reprinted in Model Final Exam 3, p.1607, with the same five options and the same key)`
 - clause tail: with the same five options and the same key
 
 ### n7 — p.1609 → `pedep2-ren-5`
 
 - file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
-- current source: `Pediatrics endpoint part2.pdf p.828 (reprinted in Model Final Exam 1, p.1382, with the history and the urine findings worded differently; the options and the key are unchanged)`
+- current source: `Pediatrics endpoint part2.pdf p.828 (reprinted in Model Final Exam 1, p.1382, with the history and the urine findings worded differently; the options and the key are unchanged; reprinted in Model Final Exam 3, p.1609, again wording the history and the urine findings differently and dropping the name “Eesa” and the Pakistani ethnicity; the options and the key are unchanged)`
 - clause tail: again wording the history and the urine findings differently and dropping the name "Eesa" and the Pakistani ethnicity; the options and the key are unchanged
 
 ### n8 — p.1611 → `pedep2-hem-39`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.347`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.347 (reprinted in Model Final Exam 3, p.1611, giving the girl’s age as 8 rather than 3, dropping the Afro-Caribbean ethnicity, annotating the MCV as normal, spelling “G6PD deficiency” out as “Glucose-6-phosphate dehydrogenase deficiency”, and printing the white cell count as “6,000/ml” and the platelets as “300,000/ml” against this entry’s 6.0 x 10^9/L and 300 x 10^9/L — the same values read per microlitre, printed here per millilitre; the options and the key are unchanged)`
 - clause tail: giving the girl’s age as 8 rather than 3, dropping the Afro-Caribbean ethnicity, annotating the MCV as normal, spelling "G6PD deficiency" out as "Glucose-6-phosphate dehydrogenase deficiency", and printing the white cell count as "6,000/ml" and the platelets as "300,000/ml" against this entry’s 6.0 x 10^9/L and 300 x 10^9/L — the same values read per microlitre, printed here per millilitre; the options and the key are unchanged
 
 ### n9 — p.1613 → `pedep2-car-19`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.666`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.666 (reprinted in Model Final Exam 3, p.1613, wording the diagnosis “a lower respiratory chest infection” rather than “a lower respiratory tract infection” and adding a fifth option, “Change the present antibiotic regimen”; the key, the innocent-murmur option, is unchanged in text and stays fourth)`
 - clause tail: wording the diagnosis "a lower respiratory chest infection" rather than "a lower respiratory tract infection" and adding a fifth option, "Change the present antibiotic regimen"; the key, the innocent-murmur option, is unchanged in text and stays fourth
 
 ### n11 — p.1617 → `pedep2-dp-12`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.119`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.119 (reprinted in Model Final Exam 3, p.1617, without the “Spastic diplegia” option; the key, Spastic quadriplegia, is unchanged in text and moves from index 4 to index 3 as a result)`
 - clause tail: without the "Spastic diplegia" option; the key, Spastic quadriplegia, is unchanged in text and moves from index 4 to index 3 as a result
 
 ### n12 — p.1619 → `pedep2-ren-21`
 
 - file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
-- current source: `Pediatrics endpoint part2.pdf p.860 (reprinted in Model Final Exam 1, p.1386, without the “Membranous glomerulonephritis” option; the key text is unchanged)`
+- current source: `Pediatrics endpoint part2.pdf p.860 (reprinted in Model Final Exam 1, p.1386, without the “Membranous glomerulonephritis” option; the key text is unchanged; reprinted in Model Final Exam 3, p.1619, giving the child as a boy rather than a girl and adding “There is no hypertension”; the options and the key are unchanged)`
 - clause tail: giving the child as a boy rather than a girl and adding "There is no hypertension"; the options and the key are unchanged
 
 ### n13 — p.1621 → `pedep2-car-18`
 
-- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
-- current source: `Pediatrics endpoint part2.pdf p.664 (reprinted in Model Final Exam 1, p.1308, with the same five options and the same key)`
+- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
+- current source: `Pediatrics endpoint part2.pdf p.664 (reprinted in Model Final Exam 1, p.1308, with the same five options and the same key; reprinted in Model Final Exam 3, p.1621, dropping the baby’s age (“3-day-old”) and shortening “a single loud second heart sound” to “a single heart sound”; the options and the key are unchanged)`
 - clause tail: dropping the baby's age ("3-day-old") and shortening "a single loud second heart sound" to "a single heart sound"; the options and the key are unchanged
 
 ### n14 — p.1623 → `pedep2-mf1-47`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.1364`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.1364 (reprinted in Model Final Exam 3, p.1623, without the “Y-linked” option; the key, Autosomal dominant, is unchanged in text and position)`
 - clause tail: without the "Y-linked" option; the key, Autosomal dominant, is unchanged in text and position
 
 ### n15 — p.1625 → `pedep2-hem-58`
 
 - file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
-- current source: `Pediatrics endpoint part2.pdf p.385 (reprinted in Model Final Exam 1, p.1420, spelling the fourth option “Miliary tuberculosis”; the options and the key are unchanged)`
+- current source: `Pediatrics endpoint part2.pdf p.385 (reprinted in Model Final Exam 1, p.1420, spelling the fourth option “Miliary tuberculosis”; the options and the key are unchanged; reprinted in Model Final Exam 3, p.1625, again spelling the fourth option “Miliary tuberculosis” and rewording the stem lightly; the options and the key are unchanged)`
 - clause tail: again spelling the fourth option "Miliary tuberculosis" and rewording the stem lightly; the options and the key are unchanged
 
 ### n16 — p.1627 → `pedep2-liv-9`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.1185`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.1185 (reprinted in Model Final Exam 3, p.1627, dropping the name “Lee,” the Chinese ethnicity and the 2-years-in-the-UK detail, reordering the options, and substituting “Bacterial infection” for “Primary sclerosing cholangitis” as the unkeyed filler option; Hepatitis B is still keyed, now as option D)`
 - clause tail: dropping the name "Lee," the Chinese ethnicity and the 2-years-in-the-UK detail, reordering the options, and substituting "Bacterial infection" for "Primary sclerosing cholangitis" as the unkeyed filler option; Hepatitis B is still keyed, now as option D
 
 ### n18 — p.1631 → `pedep2-mf1-7`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.1284`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.1284 (reprinted in Model Final Exam 3, p.1631, giving the murmur as grade V/VI rather than grade I/VI — a discrepancy recorded here, not reconciled; the options and the key are unchanged)`
 - clause tail: giving the murmur as grade V/VI rather than grade I/VI — a discrepancy recorded here, not reconciled; the options and the key are unchanged
 
 ### n20 — p.1635 → `pedep2-neu-21`
 
 - file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
-- current source: `Pediatrics endpoint part2.pdf p.998 (reprinted in Model Final Exam 1, p.1338, without the “Tet spells” option; the key text is unchanged; reprinted in Model Final Exam 2, p.1482)`
+- current source: `Pediatrics endpoint part2.pdf p.998 (reprinted in Model Final Exam 1, p.1338, without the “Tet spells” option; the key text is unchanged; reprinted in Model Final Exam 2, p.1482; reprinted in Model Final Exam 3, p.1635, again without the “Tet spells” option; the key text is unchanged)`
 - clause tail: again without the "Tet spells" option; the key text is unchanged
 
 ### n21 — p.1637 → `pedep2-mf1-71`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.1412`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.1412 (reprinted in Model Final Exam 3, p.1637, with the stem condensed into shorter sentences; the values, the options and the key are unchanged)`
 - clause tail: with the stem condensed into shorter sentences; the values, the options and the key are unchanged
 
 ### n22 — p.1639 → `pedep2-hem-41`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.351`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.351 (reprinted in Model Final Exam 3, p.1639, giving the girl’s age as 11 months rather than 8, dropping the Greek-Cypriot ethnicity and the 25th-centile birth detail, and rewording “fallen” as “dropped”; the labs, options and key are unchanged)`
 - clause tail: giving the girl's age as 11 months rather than 8, dropping the Greek-Cypriot ethnicity and the 25th-centile birth detail, and rewording "fallen" as "dropped"; the labs, options and key are unchanged
 
 ### n24 — p.1643 → `pedep2-end-13`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.1118`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.1118 (reprinted in Model Final Exam 3, p.1643, giving the child’s age as 2 months rather than describing him only as a newborn; the options and the key are unchanged)`
 - clause tail: giving the child's age as 2 months rather than describing him only as a newborn; the options and the key are unchanged
 
 ### n28 — p.1651 → `pedep2-mf1-49`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.1368`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.1368 (reprinted in Model Final Exam 3, p.1651, with the stem reworded and condensed — the diagnosis confirmation and the parents’ concern are dropped in favour of a direct two-sentence case plus question; the options and the key are unchanged)`
 - clause tail: with the stem reworded and condensed — the diagnosis confirmation and the parents' concern are dropped in favour of a direct two-sentence case plus question; the options and the key are unchanged
 
 ### n30 — p.1655 → `pedep-neo-20`
 
-- file: `questions.peds.ep.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part1.pdf p.836`
+- file: `questions.peds.ep.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part1.pdf p.836 (reprinted in Pediatrics endpoint part2.pdf, Model Final Exam 3, p.1655, with the specific bilirubin values and the blood-count sentence condensed to “Labs show elevated conjugated bilirubin”; the options and the key are unchanged)`
 - clause tail: with the specific bilirubin values and the blood-count sentence condensed to "Labs show elevated conjugated bilirubin"; the options and the key are unchanged; the same vignette, with the original numeric values, also appears in House as `pedhd-neo-20`, cross-bank, not folded
 
 ### n31 — p.1657 → `pedep2-mf2-43`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.1518`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.1518 (reprinted in Model Final Exam 3, p.1657; the options and the key are unchanged)`
 - clause tail: the options and the key are unchanged
 
 ### n32 — p.1659 → `pedep2-mf2-44`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.1520`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.1520 (reprinted in Model Final Exam 3, p.1659; the options and the key are unchanged)`
 - clause tail: the options and the key are unchanged
+
+### n33 — p.1661 → `pedep2-gen-24`
+
+- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
+- current source: `Pediatrics endpoint part2.pdf p.215 (reprinted in the cardiology section, p.678, with “a 38-year-old primiparous mother” reworded “a primiparous mother aged 38”, the sentence “The perinatal period was normal” added and “he is hypotonic” changed to “the baby is hypotonic”; the options and the key are unchanged, and that printing carries the fuller of the two explanation boxes, quoted above; reprinted in Model Final Exam 3, p.1661, giving the baby’s age as 3 months rather than 2 days, describing the birth as following “an uneventful perinatal period” rather than “an uneventful pregnancy”, and dropping the mother’s age; the options and the key are unchanged, and the box is shortened to “The baby shows features of Down syndrome (hypotonia, single palmar crease, epicanthic folds). AV septal defect is the most common heart lesion in Down syndrome.”)`
+- clause tail: giving the baby's age as 3 months rather than 2 days, describing the birth as following "an uneventful perinatal period" rather than "an uneventful pregnancy", and dropping the mother's age; the options and the key are unchanged, and the box is shortened to "The baby shows features of Down syndrome (hypotonia, single palmar crease, epicanthic folds). AV septal defect is the most common heart lesion in Down syndrome."
 
 ### n36 — p.1667 → `pedep2-dp-19`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.133`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.133 (reprinted in Model Final Exam 3, p.1667, with the child’s age printed as 15 months rather than 18 months; the options and the key are unchanged)`
 - clause tail: with the child's age printed as 15 months rather than 18 months; the options and the key are unchanged; the same question, at 18 months, also appears in House as `pedhd-devp-19`, cross-bank, not folded
 
 ### n37 — p.1669 → `pedep2-car-21`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.670`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.670 (reprinted in Model Final Exam 3, p.1669, as a bare question with the clinical vignette stripped out entirely — “What is the most likely causative pathogen in infective endocarditis?” — the five options, their order, and the key, Streptococcus viridans, are all unchanged)`
 - clause tail: as a bare question with the clinical vignette stripped out entirely — "What is the most likely causative pathogen in infective endocarditis?" — the five options, their order, and the key, Streptococcus viridans, are all unchanged; the same vignette also appears in House as `pedhd-card-21`, cross-bank, not folded
 
 ### n38 — p.1671 → `pedep2-neu-1`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.955`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.955 (reprinted in Model Final Exam 3, p.1671, with the opening sentence that establishes the patient dropped, leaving the stem open on the dangling reference “her parents” with no antecedent on the page — a printed defect, carried across as printed; the options and the key are unchanged)`
 - clause tail: with the opening sentence that establishes the patient dropped, leaving the stem open on the dangling reference "her parents" with no antecedent on the page — a printed defect, carried across as printed; the options and the key are unchanged; the same question, missing the article "the" in option C, also appears in House as `pedhd-neuro-26`, cross-bank, not folded
 
 ### n39 — p.1673 → `pedep2-mf1-69`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.1408`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.1408 (reprinted in Model Final Exam 3, p.1673; with a fifth option, “Robertsonian translocation”, printed after “Mosaicism”; the four options this entry carries, their order, and the key, Meiotic nondisjunction, are unchanged)`
 - clause tail: with a fifth option, "Robertsonian translocation", printed after "Mosaicism"; the four options this entry carries, their order, and the key, Meiotic nondisjunction, are unchanged
 
 ### n40 — p.1675 → `pedep2-hem-37`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.343`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.343 (reprinted in Model Final Exam 3, p.1675, with the stem’s “extrauterine” printed as “extra-uterine” and option B’s “Hb” spelled out as “Hemoglobin”; the key is unchanged)`
 - clause tail: with the stem's "extrauterine" printed as "extra-uterine" and option B's "Hb" spelled out as "Hemoglobin"; the key is unchanged; the same question, in British spelling, also appears in House as `pedhd-haem-16`, cross-bank, not folded
 
 ### n41 — p.1677 → `pedep2-mf2-20`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.1472`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.1472 (reprinted in Model Final Exam 3, p.1677; the options and the key are unchanged)`
 - clause tail: the options and the key are unchanged
 
 ### n42 — p.1679 → `pedep-emg-28`
 
-- file: `questions.peds.ep.js`  ·  **merges into an existing parenthetical**
-- current source: `Pediatrics endpoint part1.pdf p.632 (also printed in Pediatrics endpoint part2.pdf p.1142, in a different chapter, respelled; the options and the key are unchanged)`
+- file: `questions.peds.ep.js`  ·  opens a new parenthetical
+- current source: `Pediatrics endpoint part1.pdf p.632 (also printed in Pediatrics endpoint part2.pdf p.1142, in a different chapter, respelled; the options and the key are unchanged; reprinted in Pediatrics endpoint part2.pdf, Model Final Exam 3, p.1679, as a bare question with the vignette stripped out — “What would be the initial step in the management of diabetic ketoacidosis (DKA)?” — with the same five options reordered, moving the key, an IV bolus of normal saline, from third position to fifth, and “NaHCO3” printed as “IV NaHCO3”; the answer is unchanged)`
 - clause tail: as a bare question with the vignette stripped out — "What would be the initial step in the management of diabetic ketoacidosis (DKA)?" — with the same five options reordered, moving the key, an IV bolus of normal saline, from third position to fifth, and "NaHCO3" printed as "IV NaHCO3"; the answer is unchanged
 
 ### n43 — p.1681 → `pedep2-mf2-9`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.1450`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.1450 (reprinted in Model Final Exam 3, p.1681; the options and the key are unchanged)`
 - clause tail: the options and the key are unchanged
 
 ### n45 — p.1685 → `pedep2-mf2-1`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.1434`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.1434 (reprinted in Model Final Exam 3, p.1685; the options and the key are unchanged)`
 - clause tail: the options and the key are unchanged
 
 ### n46 — p.1687 → `pedep2-mf1-39`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.1348`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.1348 (reprinted in Model Final Exam 3, p.1687, with option A printed as “Enzyme deficiency GPO” rather than “Enzyme deficiency”; the key, Amino acid replacement, is unchanged)`
 - clause tail: with option A printed as "Enzyme deficiency GPO" rather than "Enzyme deficiency"; the key, Amino acid replacement, is unchanged
 
 ### n49 — p.1693 → `pedep2-mf1-65`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.1400`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.1400 (reprinted in Model Final Exam 3, p.1693, with an additional option, “High indirect bilirubin,” printed between the key and “Positive Coombs test” — a five-option printing where this printing carries only four; the key, “Low reticulocyte count,” is unchanged and unmoved)`
 - clause tail: with an additional option, "High indirect bilirubin," printed between the key and "Positive Coombs test" — a five-option printing where this printing carries only four; the key, "Low reticulocyte count," is unchanged and unmoved
 
 ### n52 — p.1699 → `pedep2-mf2-69`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.1571`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.1571 (reprinted in Model Final Exam 3, p.1699, with option E printed as “Bone marrow radiation relapse” rather than “Bone marrow radiation”; the key, Intrathecal chemotherapy, is unchanged)`
 - clause tail: with option E printed as "Bone marrow radiation relapse" rather than "Bone marrow radiation"; the key, Intrathecal chemotherapy, is unchanged
 
 ### n54 — p.1703 → `pedep2-mf1-70`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.1410`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.1410 (reprinted in Model Final Exam 3, p.1703; the options and the key are unchanged)`
 - clause tail: the options and the key are unchanged
 
 ### n56 — p.1707 → `pedep2-ren-41`
 
 - file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
-- current source: `Pediatrics endpoint part2.pdf p.900 (reprinted in Model Final Exam 1, p.1390, in question form, with “Cerebral strokes” replaced by “Electrolyte disturbances” and the key option worded “Susceptibility to infections”; the answer is unchanged)`
+- current source: `Pediatrics endpoint part2.pdf p.900 (reprinted in Model Final Exam 1, p.1390, in question form, with “Cerebral strokes” replaced by “Electrolyte disturbances” and the key option worded “Susceptibility to infections”; the answer is unchanged; reprinted in Model Final Exam 3, p.1707, with the same “Electrolyte disturbances” and “Susceptibility to infections” wording as the Model Final Exam 1 printing, and with “Acute renal failure” additionally reworded to “Acute kidney injury”; the answer and its first position are unchanged)`
 - clause tail: with the same "Electrolyte disturbances" and "Susceptibility to infections" wording as the Model Final Exam 1 printing, and with "Acute renal failure" additionally reworded to "Acute kidney injury"; the answer and its first position are unchanged
 
 ### n57 — p.1709 → `pedep2-car-28`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.684`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.684 (reprinted in Model Final Exam 3, p.1709, as a question, “Which clinical problem is a serious complication of Fallot tetralogy?”, with a fifth option, “Heart failure”, added at the end; the key, Cerebrovascular accidents, keeps its third position)`
 - clause tail: as a question, "Which clinical problem is a serious complication of Fallot tetralogy?", with a fifth option, "Heart failure", added at the end; the key, Cerebrovascular accidents, keeps its third position
 
 ### n58 — p.1711 → `pedep2-ren-1`
 
-- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
-- current source: `Pediatrics endpoint part2.pdf p.820 (reprinted at p.878)`
+- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
+- current source: `Pediatrics endpoint part2.pdf p.820 (reprinted at p.878; reprinted in Model Final Exam 3, p.1711, with the vignette stripped out and the stem generalised to “the preferred method to collect a urine sample for culture in female infants,” and the five options reordered (Bag sample, Catheter sample, Pad/cotton wool balls in nappy, Suprapubic aspirate, Clean catch); the key, Clean catch, is unchanged and now sits fifth)`
 - clause tail: with the vignette stripped out and the stem generalised to "the preferred method to collect a urine sample for culture in female infants," and the five options reordered (Bag sample, Catheter sample, Pad/cotton wool balls in nappy, Suprapubic aspirate, Clean catch); the key, Clean catch, is unchanged and now sits fifth
 
 ### n59 — p.1713 → `pedep2-hem-68`
 
 - file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
-- current source: `Pediatrics endpoint part2.pdf p.405 (reprinted word for word in Model Final Exam 1, p.1306)`
+- current source: `Pediatrics endpoint part2.pdf p.405 (reprinted word for word in Model Final Exam 1, p.1306; reprinted in Model Final Exam 3, p.1713)`
 - clause tail: *none — printed word for word*
 
 ### n61 — p.1717 → `pedep2-mf2-58`
 
 - file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.1549`
+- current source: `Pediatrics endpoint part2.pdf p.1549 (reprinted in Model Final Exam 3, p.1717, with “HSP” expanded to “Henoch-Schönlein Purpura (HSP)” in the stem; the options, their order, and the key are unchanged)`
 - clause tail: with "HSP" expanded to "Henoch-Schönlein Purpura (HSP)" in the stem; the options, their order, and the key are unchanged
 
 ### n62 — p.1719 → `pedep2-mf2-6`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.1444`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.1444 (reprinted in Model Final Exam 3, p.1719, with “Brainstem” printed as two words, “Brain stem”; otherwise word for word, same key)`
 - clause tail: with "Brainstem" printed as two words, "Brain stem"; otherwise word for word, same key
 
 ### n65 — p.1725 → `pedep2-mf1-79`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.1428`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.1428 (reprinted in Model Final Exam 3, p.1725, with the first option shortened from “Prenatal cause” to “Prenatal”; otherwise unchanged, same key)`
 - clause tail: with the first option shortened from "Prenatal cause" to "Prenatal"; otherwise unchanged, same key
 
 ### n69 — p.1733 → `pedep2-hem-84`
 
 - file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
-- current source: `Pediatrics endpoint part2.pdf p.438 (reprinted in Model Final Exam 2, p.1557, with the stem reworded, "Steroid" printed as "Oral steroids", the unit given as 30,000/μL and the "or mucous membrane purpura" clause dropped; the key text and its fourth position are unchanged)`
+- current source: `Pediatrics endpoint part2.pdf p.438 (reprinted in Model Final Exam 2, p.1557, with the stem reworded, "Steroid" printed as "Oral steroids", the unit given as 30,000/μL and the "or mucous membrane purpura" clause dropped; the key text and its fourth position are unchanged; reprinted in Model Final Exam 3, p.1733, restoring the “or mucous membrane purpura” clause and the 30,000/dL unit from this printing while keeping the Model Final Exam 2 wording of the options; the key and its fourth position are unchanged in both)`
 - clause tail: restoring the "or mucous membrane purpura" clause and the 30,000/dL unit from this printing while keeping the Model Final Exam 2 wording of the options; the key and its fourth position are unchanged in both
 
 ### n70 — p.1735 → `pedep2-end-24`
 
-- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
-- current source: `Pediatrics endpoint part2.pdf p.1140 (reprinted in Model Final Exam 2, p.1587, with a fifth option, Once daily long-acting insulin, inserted first so the key moves to third, and the key printed as Basal bolus)`
+- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
+- current source: `Pediatrics endpoint part2.pdf p.1140 (reprinted in Model Final Exam 2, p.1587, with a fifth option, Once daily long-acting insulin, inserted first so the key moves to third, and the key printed as Basal bolus; reprinted in Model Final Exam 3, p.1735, with the same five-option order as the Model Final Exam 2 printing (Once daily long-acting insulin first, key third), the stem reworded “Which of the following is the most ideal insulin regimen for an 8-year-old child recently diagnosed with type 1 diabetes mellitus, who has regular meals a day?” (dropping the “3” before “regular meals”), and the key printed as “Basal-bolus” (hyphenated, without “regimen”))`
 - clause tail: with the same five-option order as the Model Final Exam 2 printing (Once daily long-acting insulin first, key third), the stem reworded "Which of the following is the most ideal insulin regimen for an 8-year-old child recently diagnosed with type 1 diabetes mellitus, who has regular meals a day?" (dropping the "3" before "regular meals"), and the key printed as "Basal-bolus" (hyphenated, without "regimen")
 
 ### n71 — p.1737 → `pedep2-gen-27`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.221`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.221 (reprinted in Model Final Exam 3, p.1737, with the introductory sentence about trisomy 21 and chromosome 21 folded into the question stem, “Which of the following statements is true about Down syndrome?”; the options, their order and the key are unchanged)`
 - clause tail: with the introductory sentence about trisomy 21 and chromosome 21 folded into the question stem, "Which of the following statements is true about Down syndrome?"; the options, their order and the key are unchanged
 
 ### n72 — p.1739 → `pedep2-mf2-59`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.1551`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.1551 (reprinted in Model Final Exam 3, p.1739)`
 - clause tail: *none — printed word for word*
 
 ### n76 — p.1747 → `pedep2-car-43`
 
 - file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
-- current source: `Pediatrics endpoint part2.pdf p.715 (reprinted in Model Final Exam 2, p.1528, with the stem worded "All of the following are among the major manifestations of Jones criteria for diagnosis of rheumatic fever except?" and the first three options reordered to chorea, migratory arthritis, carditis; Maculopapular rash stays fourth and the key is unchanged)`
+- current source: `Pediatrics endpoint part2.pdf p.715 (reprinted in Model Final Exam 2, p.1528, with the stem worded "All of the following are among the major manifestations of Jones criteria for diagnosis of rheumatic fever except?" and the first three options reordered to chorea, migratory arthritis, carditis; Maculopapular rash stays fourth and the key is unchanged; reprinted in Model Final Exam 3, p.1747, with the stem reworded “Which clinical finding should not be associated with rheumatic fever?” and “migratory arthritis” spelled out as “migratory polyarthritis”; the option order and the key, Maculopapular rash at fourth position, are unchanged)`
 - clause tail: with the stem reworded "Which clinical finding should not be associated with rheumatic fever?" and "migratory arthritis" spelled out as "migratory polyarthritis"; the option order and the key, Maculopapular rash at fourth position, are unchanged
 
 ### n77 — p.1749 → `pedep2-mf2-12`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.1456`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.1456 (reprinted in Model Final Exam 3, p.1749, with “Skull bone reconstructive surgery” inserted as a third option, moving the key, reworded from “Insertion of ventriculoperitoneal shunt” to “Ventriculo-peritoneal shunt”, from third position to fourth)`
 - clause tail: with "Skull bone reconstructive surgery" inserted as a third option, moving the key, reworded from "Insertion of ventriculoperitoneal shunt" to "Ventriculo-peritoneal shunt", from third position to fourth
 
 ### n80 — p.1755 → `pedep2-mf1-38`
 
-- file: `questions.peds.ep2.js`  ·  opens a new parenthetical
-- current source: `Pediatrics endpoint part2.pdf p.1346`
+- file: `questions.peds.ep2.js`  ·  **merges into an existing parenthetical**
+- current source: `Pediatrics endpoint part2.pdf p.1346 (reprinted in Model Final Exam 3, p.1755, with the third, fourth and fifth options reordered: this printing puts “High retic count and marked red cell hypochromia” third, “Marked red cell hypochromia and microcytosis” fourth, and the key, “High retic count and normal bilirubin,” fifth, against this entry’s own third-position key; the first two options and the key’s text are unchanged)`
 - clause tail: with the third, fourth and fifth options reordered: this printing puts "High retic count and marked red cell hypochromia" third, "Marked red cell hypochromia and microcytosis" fourth, and the key, "High retic count and normal bilirubin," fifth, against this entry's own third-position key; the first two options and the key's text are unchanged
 
-## The 32 questions that are drafted
+## The 31 questions that are drafted
 
-    n1, n2, n3, n10, n17, n19, n23, n25, n26, n27, n29, n33, n34, n35, n44, n47, n48, n50, n51, n53, n55, n60, n63, n64, n66, n67, n68, n73, n74, n75, n78, n79
+    n1, n2, n3, n10, n17, n19, n23, n25, n26, n27, n29, n34, n35, n44, n47, n48, n50, n51, n53, n55, n60, n63, n64, n66, n67, n68, n73, n74, n75, n78, n79
 
 Their pages, from the staging:
 
-    n1=1597  n2=1599  n3=1601  n10=1615  n17=1629  n19=1633  n23=1641  n25=1645  n26=1647  n27=1649  n29=1653  n33=1661  n34=1663  n35=1665  n44=1683  n47=1689  n48=1691  n50=1695  n51=1697  n53=1701  n55=1705  n60=1715  n63=1721  n64=1723  n66=1727  n67=1729  n68=1731  n73=1741  n74=1743  n75=1745  n78=1751  n79=1753
+    n1=1597  n2=1599  n3=1601  n10=1615  n17=1629  n19=1633  n23=1641  n25=1645  n26=1647  n27=1649  n29=1653  n34=1663  n35=1665  n44=1683  n47=1689  n48=1691  n50=1695  n51=1697  n53=1701  n55=1705  n60=1715  n63=1721  n64=1723  n66=1727  n67=1729  n68=1731  n73=1741  n74=1743  n75=1745  n78=1751  n79=1753
+
+## n33, the one overturned verdict, and the duplicate that overturned it
+
+`endpoint-p2-s14-fold-adjudication-B.md` ruled n33 **NOT A REPRINT**. Two reasons were given, and
+both fail.
+
+The first was that the vignette changes the age from 2 days to 3 months and drops the mother’s
+stated age, which is more than the cosmetic rounding that folds elsewhere. But that is precisely
+the shape of three rows the same adjudication pass accepted — **n8** (age 3 → 8, Afro-Caribbean
+ethnicity dropped), **n13** (the age dropped outright) and **n22** (age 8 months → 11 months,
+Greek-Cypriot ethnicity and the birth-centile detail dropped) — and **n42** is accepted with the
+entire vignette stripped out, leaving a bare question. The option list, its order and the key are
+untouched here, which is the test the other rows are held to.
+
+The second reason was that `pedep2-gen-24` and `pedep2-car-25` are *"two already-live,
+never-folded siblings of exactly this vignette"*, evidence that the bank deliberately keeps this
+family as distinct entries. **They were never adjudicated as siblings.** They were staged by two
+different passes out of two different sections and never compared to each other, because the
+within-bank comparison had not crossed chapter boundaries — the gap already recorded in
+`endpoint-p2-s13-missed-folds.md`. The premise was an unexamined duplicate.
+
+`fold-gen24-pd-ep2.js` folded them on 2026-09-06. The two printings share their five options in
+the same order and share the key; the stems differ only in `"a 38-year-old primiparous mother"` vs
+`"a primiparous mother aged 38"`, one added sentence, and `"he is hypotonic"` vs `"the baby is
+hypotonic"` — token overlap 0.830, with no distinguishing token on either side. Both carry a
+printed box and the boxes differ, so this is the boxed-second-printing shape crossed with the
+cross-chapter shape, and it is within-bank: the fold **deletes**, and takes no `alsoIn`.
+
+The survivor is the **genetics** entry, `pedep2-gen-24`, although the cardiac one carried the
+fuller expansion. The chapter was measured, not judged: of the five live entries in this corpus
+whose stem names a syndrome and whose key names a cardiac lesion, four sit in `genetics` and one
+in `cardiac` — and the one is `pedep2-car-25` itself. Removing it makes the corpus unanimous,
+including the House bank's own printing of this same vignette. `pedep2-car-25`'s content was
+merged into the survivor rather than discarded: both boxes are quoted, its two
+`33) Congenital acyanotic heart disease_.pptx` anchors are carried across, and its natural-history
+material is kept. `questions.peds.ep2.js` went 589 → 588.
 
 ## What the pass must not do
 
@@ -357,5 +402,6 @@ Their pages, from the staging:
   in the adjudication files and deferred to the closing cross-bank sweep; **nothing folds across
   banks**.
 - The `reprints:` array must **not** be added to `splice-pd-ep2.js` until this pass has actually
-  run. A guessed array makes the splicer accept missing entries silently.
+  run. A guessed array makes the splicer accept missing entries silently. It was added after the
+  first run of 48 and amended to 49 after n33 was written.
 
