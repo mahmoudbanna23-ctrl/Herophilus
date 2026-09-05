@@ -1,0 +1,535 @@
+[
+ {
+  "sim": 1,
+  "opt": 0.5,
+  "p2": {
+   "id": "pedep2-dp-29",
+   "chapter": "dev-problems",
+   "source": "Pediatrics endpoint part2.pdf p.153",
+   "answer": 1,
+   "stem": "What is the most likely cause of faltering growth in a 9-month-old infant?",
+   "options": [
+    "Small atrial septal defect (ASD)",
+    "Persistent diarrhea",
+    "Acute otitis media",
+    "Minor umbilical hernia"
+   ]
+  },
+  "p1": {
+   "id": "pedep-gp-40",
+   "chapter": "growth-puberty",
+   "source": "Pediatrics endpoint part1.pdf p.109 (reprinted in Model Final Exam 3, p.1595, with three of the four options replaced -- physiological gastroesophageal reflux and frequent minor upper respiratory infections giving way to acute UTI, mild intermittent asthma and acute gastroenteritis requiring IV fluids, a five-option ladder -- which moves the key from the second option to the third; the key text is unchanged)",
+   "answer": 1,
+   "stem": "What is the most likely cause of faltering growth in a 9-month-old infant?",
+   "options": [
+    "Small atrial septal defect (ASD)",
+    "Persistent diarrhea",
+    "Physiological gastroesophageal reflux",
+    "Frequent minor upper respiratory infections"
+   ]
+  }
+ },
+ {
+  "sim": 1,
+  "opt": 1,
+  "p2": {
+   "id": "pedep2-mf1-28",
+   "chapter": "normal-dev",
+   "source": "Pediatrics endpoint part2.pdf p.1326",
+   "answer": 1,
+   "stem": "At a routine health visitor consultation, a 13-month-old boy is noticed to be crossing arms in his left hand and dragging his left hand and synkinesis and spastic gait. He is holding a toy in his left hand and his father informs the health visitor that he only uses his right side. What is the most likely finding here?",
+   "options": [
+    "Normal developmental milestones",
+    "Fine motor delay",
+    "Speech and language delay",
+    "Play and social delay",
+    "Global delay"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-13",
+   "chapter": "dev-problems",
+   "source": "Pediatrics endpoint part1.pdf p.1509",
+   "answer": 1,
+   "stem": "At a routine health visitor consultation, a 13-month-old boy is noticed to be crossing arms in his left hand and dragging his left hand and synkinesis and spastic gait. He is holding a toy in his left hand and his father informs the health visitor that he only uses his right side. What is the most likely finding here?",
+   "options": [
+    "Normal developmental milestones",
+    "Fine motor delay",
+    "Speech and language delay",
+    "Play and social delay",
+    "Global delay"
+   ]
+  }
+ },
+ {
+  "sim": 1,
+  "opt": 1,
+  "p2": {
+   "id": "pedep2-mf1-46",
+   "chapter": "resp-bronch",
+   "source": "Pediatrics endpoint part2.pdf p.1362",
+   "answer": 2,
+   "stem": "A 3-month-old baby is admitted with a diagnosis of bronchiolitis. Her condition has further worsened, and she developed audible grunting sounds. What is the best pathophysiologic explanation for grunting in this baby?",
+   "options": [
+    "Oxygen consumption is decreased with grunting, which helps resolve hypoxemia.",
+    "During grunting, lung volume increases as more air moves through the conducting airways.",
+    "Grunting increases end-expiratory pressure and promotes gas exchange.",
+    "During grunting, the diameter of the bronchi and bronchioles is increased."
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-37",
+   "chapter": "resp-bronch",
+   "source": "Pediatrics endpoint part1.pdf p.1557",
+   "answer": 2,
+   "stem": "A 3-month-old baby is admitted with a diagnosis of bronchiolitis. Her condition has further worsened, and she developed audible grunting sounds. What is the best pathophysiologic explanation for grunting in this baby?",
+   "options": [
+    "Oxygen consumption is decreased with grunting which helps resolve hypoxemia",
+    "During grunting lung volume increases as more air moves through the conducting airways",
+    "Grunting increases end expiratory pressure and promotes gas exchange",
+    "During grunting the diameter of the bronchi and bronchioles is increased"
+   ]
+  }
+ },
+ {
+  "sim": 0.9647,
+  "opt": 0.8,
+  "p2": {
+   "id": "pedep2-mf1-25",
+   "chapter": "infection-rash",
+   "source": "Pediatrics endpoint part2.pdf p.1320",
+   "answer": 4,
+   "stem": "A 15-year-old boy presents to the hospital with malaise, fever, and mild jaundice over the last week. On examination, there is intense inflammation of the tonsils with purulent discharge, splenomegaly, and cervical lymphadenopathy. What is the most likely cause of his illness?",
+   "options": [
+    "Acute lymphoblastic leukemia",
+    "Beta-hemolytic Streptococcus",
+    "Hepatitis A infection",
+    "Non-Hodgkin’s lymphoma",
+    "Epstein-Barr virus (EBV) infection"
+   ]
+  },
+  "p1": {
+   "id": "pedep-inf-82",
+   "chapter": "infection",
+   "source": "Pediatrics endpoint part1.pdf p.1129",
+   "answer": 4,
+   "stem": "A 15-year-old boy presents to the hospital with malaise, fever, and mild jaundice over the last week. On examination, there is intense inflammation of the tonsils with discharge, splenomegaly, and cervical lymphadenopathy. What is the most likely cause of his illness?",
+   "options": [
+    "Acute lymphoblastic leukemia",
+    "Beta hemolytic Streptococcus",
+    "Hepatitis A infection",
+    "Non-Hodgkins lymphoma",
+    "Epstein-Barr infection (EBV)"
+   ]
+  }
+ },
+ {
+  "sim": 0.9268,
+  "opt": 1,
+  "p2": {
+   "id": "pedep2-mf1-13",
+   "chapter": "normal-dev",
+   "source": "Pediatrics endpoint part2.pdf p.1296",
+   "answer": 2,
+   "stem": "An infant can sit without support, roll over, and crawl but cannot stand alone. What is her most likely developmental age?",
+   "options": [
+    "4 months",
+    "6 months",
+    "9 months",
+    "13 months",
+    "16 months"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-29",
+   "chapter": "normal-dev",
+   "source": "Pediatrics endpoint part1.pdf p.1541",
+   "answer": 2,
+   "stem": "A healthy infant can sit without support, roll over and crawl but cannot stand alone. What is her most likely developmental age?",
+   "options": [
+    "4 months",
+    "6 months",
+    "9 months",
+    "13 months",
+    "16 months"
+   ]
+  }
+ },
+ {
+  "sim": 0.8947,
+  "opt": 0.8889,
+  "p2": {
+   "id": "pedep2-liv-15",
+   "chapter": "neonatal",
+   "source": "Pediatrics endpoint part2.pdf p.1197",
+   "answer": 1,
+   "stem": "Which one of the following is the most important cause of jaundice presenting in the first 24 hours of life?",
+   "options": [
+    "Prematurity",
+    "Hemolysis",
+    "Breastfeeding",
+    "Physiological jaundice"
+   ]
+  },
+  "p1": {
+   "id": "pedep-neo-39",
+   "chapter": "neonatal",
+   "source": "Pediatrics endpoint part1.pdf p.874 (reprinted in Model Final Exam 2, p.1481, with “24 h” written out as “24 hours”; the options and the key are unchanged)",
+   "answer": 1,
+   "stem": "Which one of the following is the most important cause of jaundice presenting in the first 24 h of life?",
+   "options": [
+    "Prematurity",
+    "Hemolysis",
+    "Breastfeeding",
+    "Physiological jaundice",
+    "Early-onset sepsis"
+   ]
+  }
+ },
+ {
+  "sim": 0.8,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-hem-83",
+   "chapter": "haematology",
+   "source": "Pediatrics endpoint part2.pdf p.436",
+   "answer": 1,
+   "stem": "Which of the following is TRUE about thalassemia?",
+   "options": [
+    "Increased serum ferritin",
+    "Presence of target cells in blood film",
+    "Macrocytosis is a typical finding",
+    "It is not inherited"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-43",
+   "chapter": "neonatal-sepsis",
+   "source": "Pediatrics endpoint part1.pdf p.1569",
+   "answer": 2,
+   "stem": "Which of the following is true about neonatal sepsis?",
+   "options": [
+    "A heart murmur is usually present.",
+    "Early-onset sepsis is usually acquired via the placenta following maternal infection.",
+    "Pneumonia is the commonest presentation in early-onset sepsis.",
+    "High fever is commonly present.",
+    "CBC is done to detect neutrophilia."
+   ]
+  }
+ },
+ {
+  "sim": 0.8,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-liv-11",
+   "chapter": "liver-hep",
+   "source": "Pediatrics endpoint part2.pdf p.1189",
+   "answer": 2,
+   "stem": "Which of the following is true regarding hepatitis A?",
+   "options": [
+    "It is a DNA virus which is spread by faecal–oral transmission.",
+    "It requires urgent treatment",
+    "Cure is usually achieved after 4 weeks of infection",
+    "Chronic liver disease usually occurs"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf1-73",
+   "chapter": "perinatal",
+   "source": "Pediatrics endpoint part1.pdf p.1306",
+   "answer": 2,
+   "stem": "Which of the following is true regarding gastroschisis?",
+   "options": [
+    "The defect is usually to the left of the midline.",
+    "It is usually associated with chromosomal anomalies.",
+    "The most common association is intestinal atresia",
+    "Cardiac anomalies are seen in 10% of cases."
+   ]
+  }
+ },
+ {
+  "sim": 0.6829,
+  "opt": 0.8,
+  "p2": {
+   "id": "pedep2-end-25",
+   "chapter": "endo-dka",
+   "source": "Pediatrics endpoint part2.pdf p.1142",
+   "answer": 2,
+   "stem": "A 3-year-old boy presents to the emergency department with dehydration and rapid breathing following a short history of abdominal pain and vomiting. His blood glucose level is 850 mg/dL, and urine ketones are positive (++). What is the most appropriate initial treatment?",
+   "options": [
+    "Start IV insulin infusion",
+    "SC rapid-acting insulin",
+    "IV bolus of normal saline",
+    "Sodium bicarbonate (NaHCO3)",
+    "Oxygen therapy"
+   ]
+  },
+  "p1": {
+   "id": "pedep-emg-28",
+   "chapter": "emergencies",
+   "source": "Pediatrics endpoint part1.pdf p.632",
+   "answer": 2,
+   "stem": "A 3-year-old boy comes to the ER with dehydration and rapid breathing, following a short history of abdominal pain and vomiting. Blood glucose is 850 mg/dl and ketones ++ in urine. What is the most appropriate initial management?",
+   "options": [
+    "Start IV insulin infusion",
+    "SC rapid-acting insulin",
+    "IV bolus of normal saline",
+    "NaHCO3",
+    "Oxygen therapy"
+   ]
+  }
+ },
+ {
+  "sim": 0.6667,
+  "opt": 1,
+  "p2": {
+   "id": "pedep2-res-29",
+   "chapter": "allergy",
+   "source": "Pediatrics endpoint part2.pdf p.533",
+   "answer": 2,
+   "stem": "Ali, aged 6, is brought to the Emergency Department after becoming unwell at a family party. He is unable to say more than a single word and indicates that he is finding it hard to breathe. He appears very anxious. He has a raised, itchy rash that is spreading from his face to his chest. He has never had an episode like this before. His mother reports that he has asthma and uses a salbutamol inhaler for wheezy episodes.What is the most likely diagnosis?",
+   "options": [
+    "Acute asthma",
+    "Allergic reaction",
+    "Anaphylaxis",
+    "Idiopathic urticaria",
+    "Inhaled foreign body"
+   ]
+  },
+  "p1": {
+   "id": "pedep-alg-1",
+   "chapter": "allergy",
+   "source": "Pediatrics endpoint part1.pdf p.911",
+   "answer": 2,
+   "stem": "Jonathan, aged 6 years, is brought to the Emergency Department after becoming unwell at a family party. He is only able to say one word at a time and indicates that he is struggling to breathe. He appears very anxious and has a raised itchy rash spreading from his face down to his chest. This has never happened before. His mother says he has asthma and uses a salbutamol inhaler for wheezy episodes.What is the most likely diagnosis?",
+   "options": [
+    "Acute asthma",
+    "Allergic reaction",
+    "Anaphylaxis",
+    "Idiopathic urticaria",
+    "Inhaled foreign body"
+   ]
+  }
+ },
+ {
+  "sim": 0.6542,
+  "opt": 0.8,
+  "p2": {
+   "id": "pedep2-nd-19",
+   "chapter": "normal-dev",
+   "source": "Pediatrics endpoint part2.pdf p.56",
+   "answer": 1,
+   "stem": "At a routine health visitor consultation, a 12-month-old boy is noticed to be cruising around furniture, responding to his name and saying \"mama\" and \"papa\". He is holding a crayon in his left hand, and his father informs the health visitor that he only uses his left hand at home. What is the most likely finding here?",
+   "options": [
+    "Gross motor delay",
+    "Fine motor delay",
+    "Speech and language delay",
+    "Play and social delay",
+    "Global delay"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-13",
+   "chapter": "dev-problems",
+   "source": "Pediatrics endpoint part1.pdf p.1509",
+   "answer": 1,
+   "stem": "At a routine health visitor consultation, a 13-month-old boy is noticed to be crossing arms in his left hand and dragging his left hand and synkinesis and spastic gait. He is holding a toy in his left hand and his father informs the health visitor that he only uses his right side. What is the most likely finding here?",
+   "options": [
+    "Normal developmental milestones",
+    "Fine motor delay",
+    "Speech and language delay",
+    "Play and social delay",
+    "Global delay"
+   ]
+  }
+ },
+ {
+  "sim": 0.6294,
+  "opt": 0.6667,
+  "p2": {
+   "id": "pedep2-liv-14",
+   "chapter": "neonatal",
+   "source": "Pediatrics endpoint part2.pdf p.1195",
+   "answer": 0,
+   "stem": "Kamal is a full-term baby boy, born 16 hours ago. His mother is blood group O Rhesus positive. The baby is breastfeeding well, but the grandmother has noticed he looks jaundiced. On examination, the baby is clinically well. His bilirubin was 9 mg/dL at 10 hours of age, and he was started on intensive phototherapy. Six hours later, his bilirubin is 14.5 mg/dL. Kamal's blood group is identified as group A Rhesus positive. What is the most likely cause of the baby's jaundice?",
+   "options": [
+    "ABO incompatibility",
+    "Biliary atresia",
+    "Congenital hypothyroidism",
+    "Rhesus hemolytic disease"
+   ]
+  },
+  "p1": {
+   "id": "pedep-neo-8",
+   "chapter": "neonatal",
+   "source": "Pediatrics endpoint part1.pdf p.812",
+   "answer": 0,
+   "stem": "Stewart is a full-term baby boy, born 16 hours ago. His mother is blood group O Rhesus positive. The baby is breastfeeding well, but the midwife noted he looks jaundiced. His bilirubin was 150 μmol/L at 10 hours and intensive phototherapy was started. Six hours later, bilirubin is 250 μmol/L. The baby's blood group is A Rhesus positive. What is the most likely cause?",
+   "options": [
+    "ABO incompatibility",
+    "Biliary atresia",
+    "Breastmilk jaundice",
+    "Physiological jaundice",
+    "Rhesus hemolytic disease"
+   ]
+  }
+ },
+ {
+  "sim": 0.5882,
+  "opt": 0.6,
+  "p2": {
+   "id": "pedep2-res-41",
+   "chapter": "neonatal-sepsis",
+   "source": "Pediatrics endpoint part2.pdf p.557",
+   "answer": 2,
+   "stem": "In neonatal sepsis, which of the following statements is TRUE?",
+   "options": [
+    "A heart murmur is usually present",
+    "Early-onset sepsis is usually acquired via the placenta following maternal infection",
+    "Pneumonia is the most common presentation in early-onset sepsis",
+    "High fever is commonly present",
+    "A CBC is done to detect neutrophilia"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-43",
+   "chapter": "neonatal-sepsis",
+   "source": "Pediatrics endpoint part1.pdf p.1569",
+   "answer": 2,
+   "stem": "Which of the following is true about neonatal sepsis?",
+   "options": [
+    "A heart murmur is usually present.",
+    "Early-onset sepsis is usually acquired via the placenta following maternal infection.",
+    "Pneumonia is the commonest presentation in early-onset sepsis.",
+    "High fever is commonly present.",
+    "CBC is done to detect neutrophilia."
+   ]
+  }
+ },
+ {
+  "sim": 0.5143,
+  "opt": 0.8889,
+  "p2": {
+   "id": "pedep2-end-18",
+   "chapter": "neonatal-seiz",
+   "source": "Pediatrics endpoint part2.pdf p.1128",
+   "answer": 3,
+   "stem": "A mother with pre-eclampsia delivers a baby at 37 weeks' gestation. The baby weighs 2.2 kg and is admitted to the Special Care Baby Unit due to his small size. He appears well and has had a breastfeed. What is he most at risk of?",
+   "options": [
+    "Anemia",
+    "Congenital cardiac abnormality",
+    "Group B streptococcus infection",
+    "Hypoglycemia"
+   ]
+  },
+  "p1": {
+   "id": "pedep-neo-37",
+   "chapter": "neonatal",
+   "source": "Pediatrics endpoint part1.pdf p.870",
+   "answer": 3,
+   "stem": "A mother is known to have pre-eclampsia and her fetus has shown signs of intrauterine growth restriction on antenatal scans. He is delivered at 37 weeks and weighs 2.2 kg. He is admitted to the Special Care Baby Unit because of his size. He appears well and has had a breast feed. What is he most at risk of?",
+   "options": [
+    "Anemia",
+    "Congenital cardiac abnormality",
+    "Group B streptococcus infection",
+    "Hypoglycemia",
+    "Hyperglycemia"
+   ]
+  }
+ },
+ {
+  "sim": 0.5,
+  "opt": 1,
+  "p2": {
+   "id": "pedep2-res-30",
+   "chapter": "allergy",
+   "source": "Pediatrics endpoint part2.pdf p.535",
+   "answer": 3,
+   "stem": "A boy, while attending a birthday party, develops sudden onset edema that started on his lips and eyelids, and then spread to the dorsum of the hands, eyes, and genitalia.\nWhat is the most likely diagnosis?",
+   "options": [
+    "Nutritional anemia",
+    "Nephrotic syndrome",
+    "Hepatic insufficiency",
+    "Angioedema",
+    "Heart failure"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-42",
+   "chapter": "allergy",
+   "source": "Pediatrics endpoint part1.pdf p.1567",
+   "answer": 3,
+   "stem": "A 5-year-old boy, at a birthday party, presented with sudden onset of edema that started in his lips and eyelids, then spread to the dorsum of the hands and the genitalia. What is the first possibility?",
+   "options": [
+    "Nutritional anemia",
+    "Nephrotic syndrome",
+    "Hepatic insufficiency",
+    "Angioedema",
+    "Heart failure"
+   ]
+  }
+ },
+ {
+  "sim": 0.4565,
+  "opt": 0.8889,
+  "p2": {
+   "id": "pedep2-end-18",
+   "chapter": "neonatal-seiz",
+   "source": "Pediatrics endpoint part2.pdf p.1128",
+   "answer": 3,
+   "stem": "A mother with pre-eclampsia delivers a baby at 37 weeks' gestation. The baby weighs 2.2 kg and is admitted to the Special Care Baby Unit due to his small size. He appears well and has had a breastfeed. What is he most at risk of?",
+   "options": [
+    "Anemia",
+    "Congenital cardiac abnormality",
+    "Group B streptococcus infection",
+    "Hypoglycemia"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-16",
+   "chapter": "neonatal-seiz",
+   "source": "Pediatrics endpoint part1.pdf p.1515",
+   "answer": 3,
+   "stem": "A mother is known to have preeclampsia and had her delivery at 37 weeks of gestation for a boy weighing 2.2 kg. The newborn is admitted to the Special Care Baby Unit because of his size. He appears well. What is he most at risk of?",
+   "options": [
+    "Anemia",
+    "Congenital cardiac abnormality",
+    "Group B streptococcus infection",
+    "Hypoglycemia",
+    "Hypercalcemia"
+   ]
+  }
+ },
+ {
+  "sim": 0.3099,
+  "opt": 0.8,
+  "p2": {
+   "id": "pedep2-mf1-51",
+   "chapter": "infection",
+   "source": "Pediatrics endpoint part2.pdf p.1372",
+   "answer": 2,
+   "stem": "A 2-year-old boy is brought into the emergency department by ambulance at night with an acute history of cough and stridor following a 2-day history of coryzal symptoms. On examination, he is afebrile but has marked intercostal recession with stridor and a 'barking cough' is heard. What is the most likely causative organism?",
+   "options": [
+    "Adenovirus",
+    "Respiratory syncytial virus",
+    "Parainfluenza virus",
+    "Rhinovirus",
+    "Influenza virus"
+   ]
+  },
+  "p1": {
+   "id": "pedep-inf-68",
+   "chapter": "respiratory",
+   "source": "Pediatrics endpoint part1.pdf p.1101",
+   "answer": 2,
+   "stem": "A 2-year-old boy has barking cough, stridor, and intercostal recession. What's the most likely causative organism?",
+   "options": [
+    "Adenovirus",
+    "RSV",
+    "Parainfluenza virus",
+    "Rhinovirus",
+    "Influenza virus"
+   ]
+  }
+ }
+]

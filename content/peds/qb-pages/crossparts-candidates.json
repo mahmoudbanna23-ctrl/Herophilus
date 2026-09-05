@@ -1,0 +1,5656 @@
+[
+ {
+  "sim": 0.8,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-hem-83",
+   "chapter": "haematology",
+   "source": "Pediatrics endpoint part2.pdf p.436",
+   "answer": 1,
+   "stem": "Which of the following is TRUE about thalassemia?",
+   "options": [
+    "Increased serum ferritin",
+    "Presence of target cells in blood film",
+    "Macrocytosis is a typical finding",
+    "It is not inherited"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-43",
+   "chapter": "neonatal-sepsis",
+   "source": "Pediatrics endpoint part1.pdf p.1569 (also printed in Pediatrics endpoint part2.pdf p.557, with the stem clauses reordered; the options and the key are unchanged)",
+   "answer": 2,
+   "stem": "Which of the following is true about neonatal sepsis?",
+   "options": [
+    "A heart murmur is usually present.",
+    "Early-onset sepsis is usually acquired via the placenta following maternal infection.",
+    "Pneumonia is the commonest presentation in early-onset sepsis.",
+    "High fever is commonly present.",
+    "CBC is done to detect neutrophilia."
+   ]
+  }
+ },
+ {
+  "sim": 0.8,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-liv-11",
+   "chapter": "liver-hep",
+   "source": "Pediatrics endpoint part2.pdf p.1189",
+   "answer": 2,
+   "stem": "Which of the following is true regarding hepatitis A?",
+   "options": [
+    "It is a DNA virus which is spread by faecal–oral transmission.",
+    "It requires urgent treatment",
+    "Cure is usually achieved after 4 weeks of infection",
+    "Chronic liver disease usually occurs"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf1-73",
+   "chapter": "perinatal",
+   "source": "Pediatrics endpoint part1.pdf p.1306",
+   "answer": 2,
+   "stem": "Which of the following is true regarding gastroschisis?",
+   "options": [
+    "The defect is usually to the left of the midline.",
+    "It is usually associated with chromosomal anomalies.",
+    "The most common association is intestinal atresia",
+    "Cardiac anomalies are seen in 10% of cases."
+   ]
+  }
+ },
+ {
+  "sim": 0.7778,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-dp-25",
+   "chapter": "dev-problems",
+   "source": "Pediatrics endpoint part2.pdf p.145 (reprinted at p.1024)",
+   "answer": 0,
+   "stem": "Which of the following is not true about cerebral palsy?",
+   "options": [
+    "Meningitis/encephalitis is the most common cause.",
+    "Preterm infants are more vulnerable.",
+    "Spastic form is the most common.",
+    "Clinical manifestations can evolve over time.",
+    "Often accompanied by disturbances of cognition."
+   ]
+  },
+  "p1": {
+   "id": "pedep-nut-27",
+   "chapter": "nutrition-feed",
+   "source": "Pediatrics endpoint part1.pdf p.290",
+   "answer": 1,
+   "stem": "Which of the following is NOT true about breast feeding?",
+   "options": [
+    "Recommended food for infants both term and preterm",
+    "50% of energy from proteins",
+    "Contains immunological benefits (i.e. IgA, active lymphocytes)",
+    "Promotes growth of lactobacillus in GI",
+    "Decreases incidence of allergic disorders"
+   ]
+  }
+ },
+ {
+  "sim": 0.75,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-hem-83",
+   "chapter": "haematology",
+   "source": "Pediatrics endpoint part2.pdf p.436",
+   "answer": 1,
+   "stem": "Which of the following is TRUE about thalassemia?",
+   "options": [
+    "Increased serum ferritin",
+    "Presence of target cells in blood film",
+    "Macrocytosis is a typical finding",
+    "It is not inherited"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-25",
+   "chapter": "emergencies",
+   "source": "Pediatrics endpoint part1.pdf p.1533",
+   "answer": 2,
+   "stem": "Which of the following is true about \"capillary refill time\"?",
+   "options": [
+    "Apply blanching pressure for 2 seconds",
+    "Prolonged capillary refill if > 3 seconds",
+    "It is affected by body exposure to a cold environment",
+    "It is reproducible only in children over the age of 2 years"
+   ]
+  }
+ },
+ {
+  "sim": 0.75,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-liv-11",
+   "chapter": "liver-hep",
+   "source": "Pediatrics endpoint part2.pdf p.1189",
+   "answer": 2,
+   "stem": "Which of the following is true regarding hepatitis A?",
+   "options": [
+    "It is a DNA virus which is spread by faecal–oral transmission.",
+    "It requires urgent treatment",
+    "Cure is usually achieved after 4 weeks of infection",
+    "Chronic liver disease usually occurs"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-76",
+   "chapter": "perinatal",
+   "source": "Pediatrics endpoint part1.pdf p.1634",
+   "answer": 2,
+   "stem": "Which of the following is TRUE regarding duodenal atresia?",
+   "options": [
+    "Most common form of bowel atresia is thrush",
+    "Presents after birth with non-bilious vomiting",
+    "Prenatal diagnosis is common",
+    "Gastrojejunostomy is the procedure of choice"
+   ]
+  }
+ },
+ {
+  "sim": 0.7368,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-dp-22",
+   "chapter": "dev-problems",
+   "source": "Pediatrics endpoint part2.pdf p.139",
+   "answer": 1,
+   "stem": "Which of the following is NOT true about autism spectrum disorder?",
+   "options": [
+    "The child may have associated comorbidities",
+    "It is usually benign with no long-term consequences",
+    "It is an impaired social interaction",
+    "There is no evidence for a link with MMR vaccine"
+   ]
+  },
+  "p1": {
+   "id": "pedep-nut-27",
+   "chapter": "nutrition-feed",
+   "source": "Pediatrics endpoint part1.pdf p.290",
+   "answer": 1,
+   "stem": "Which of the following is NOT true about breast feeding?",
+   "options": [
+    "Recommended food for infants both term and preterm",
+    "50% of energy from proteins",
+    "Contains immunological benefits (i.e. IgA, active lymphocytes)",
+    "Promotes growth of lactobacillus in GI",
+    "Decreases incidence of allergic disorders"
+   ]
+  }
+ },
+ {
+  "sim": 0.7368,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-dp-24",
+   "chapter": "dev-problems",
+   "source": "Pediatrics endpoint part2.pdf p.143",
+   "answer": 1,
+   "stem": "Which of the following is NOT true about Global developmental delay?",
+   "options": [
+    "It usually presents in the first 2 years of life.",
+    "It is a delay in the acquisition of one or more of the four fields of development.",
+    "It is mostly associated with cognitive difficulties.",
+    "Clinical picture is clearer when children become older."
+   ]
+  },
+  "p1": {
+   "id": "pedep-nut-27",
+   "chapter": "nutrition-feed",
+   "source": "Pediatrics endpoint part1.pdf p.290",
+   "answer": 1,
+   "stem": "Which of the following is NOT true about breast feeding?",
+   "options": [
+    "Recommended food for infants both term and preterm",
+    "50% of energy from proteins",
+    "Contains immunological benefits (i.e. IgA, active lymphocytes)",
+    "Promotes growth of lactobacillus in GI",
+    "Decreases incidence of allergic disorders"
+   ]
+  }
+ },
+ {
+  "sim": 0.7368,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-36",
+   "chapter": "neuro-cp",
+   "source": "Pediatrics endpoint part2.pdf p.1028",
+   "answer": 0,
+   "stem": "Which of the following is NOT true about cerebral palsy (CP)?",
+   "options": [
+    "Progressive disorder",
+    "Non-progressive brain injury",
+    "Motor impairment is the main feature",
+    "Usually appears in early childhood"
+   ]
+  },
+  "p1": {
+   "id": "pedep-nut-27",
+   "chapter": "nutrition-feed",
+   "source": "Pediatrics endpoint part1.pdf p.290",
+   "answer": 1,
+   "stem": "Which of the following is NOT true about breast feeding?",
+   "options": [
+    "Recommended food for infants both term and preterm",
+    "50% of energy from proteins",
+    "Contains immunological benefits (i.e. IgA, active lymphocytes)",
+    "Promotes growth of lactobacillus in GI",
+    "Decreases incidence of allergic disorders"
+   ]
+  }
+ },
+ {
+  "sim": 0.7368,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-mf1-35",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1340",
+   "answer": 3,
+   "stem": "Which of the following is a feature of a typical febrile seizure?",
+   "options": [
+    "Age usually before 6 months",
+    "Focal or generalized",
+    "Lasts more than 15 minutes",
+    "No post-ictal manifestations",
+    "Recurs within 24 hours"
+   ]
+  },
+  "p1": {
+   "id": "pedep-nut-65",
+   "chapter": "nutrition-pem",
+   "source": "Pediatrics endpoint part1.pdf p.368 (reprinted word for word in Model Final Exam 3, p.1577)",
+   "answer": 1,
+   "stem": "Which of the following is a feature of marasmus?",
+   "options": [
+    "Dermatosis",
+    "Gross muscle wasting",
+    "Edema",
+    "Hair changes"
+   ]
+  }
+ },
+ {
+  "sim": 0.7143,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-hem-83",
+   "chapter": "haematology",
+   "source": "Pediatrics endpoint part2.pdf p.436",
+   "answer": 1,
+   "stem": "Which of the following is TRUE about thalassemia?",
+   "options": [
+    "Increased serum ferritin",
+    "Presence of target cells in blood film",
+    "Macrocytosis is a typical finding",
+    "It is not inherited"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf1-73",
+   "chapter": "perinatal",
+   "source": "Pediatrics endpoint part1.pdf p.1306",
+   "answer": 2,
+   "stem": "Which of the following is true regarding gastroschisis?",
+   "options": [
+    "The defect is usually to the left of the midline.",
+    "It is usually associated with chromosomal anomalies.",
+    "The most common association is intestinal atresia",
+    "Cardiac anomalies are seen in 10% of cases."
+   ]
+  }
+ },
+ {
+  "sim": 0.7059,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-dp-25",
+   "chapter": "dev-problems",
+   "source": "Pediatrics endpoint part2.pdf p.145 (reprinted at p.1024)",
+   "answer": 0,
+   "stem": "Which of the following is not true about cerebral palsy?",
+   "options": [
+    "Meningitis/encephalitis is the most common cause.",
+    "Preterm infants are more vulnerable.",
+    "Spastic form is the most common.",
+    "Clinical manifestations can evolve over time.",
+    "Often accompanied by disturbances of cognition."
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-75",
+   "chapter": "gi-abdopain",
+   "source": "Pediatrics endpoint part1.pdf p.1632",
+   "answer": 3,
+   "stem": "Which of the following is NOT TRUE regarding intussusception?",
+   "options": [
+    "More common in boys",
+    "Can occur secondary to Meckel's diverticulum",
+    "Bilious vomiting is not always present",
+    "Bleeding per rectum is the most common presenting symptom"
+   ]
+  }
+ },
+ {
+  "sim": 0.7059,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-hem-83",
+   "chapter": "haematology",
+   "source": "Pediatrics endpoint part2.pdf p.436",
+   "answer": 1,
+   "stem": "Which of the following is TRUE about thalassemia?",
+   "options": [
+    "Increased serum ferritin",
+    "Presence of target cells in blood film",
+    "Macrocytosis is a typical finding",
+    "It is not inherited"
+   ]
+  },
+  "p1": {
+   "id": "pedep-neo-47",
+   "chapter": "neonatal",
+   "source": "Pediatrics endpoint part1.pdf p.890",
+   "answer": 1,
+   "stem": "Which of the following is TRUE about Transient Tachypnea of the Newborn?",
+   "options": [
+    "Oxygen therapy is always required",
+    "It is the most common cause of respiratory distress in term infants",
+    "It persists for several weeks",
+    "Chest X-ray is always normal"
+   ]
+  }
+ },
+ {
+  "sim": 0.7059,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-hem-83",
+   "chapter": "haematology",
+   "source": "Pediatrics endpoint part2.pdf p.436",
+   "answer": 1,
+   "stem": "Which of the following is TRUE about thalassemia?",
+   "options": [
+    "Increased serum ferritin",
+    "Presence of target cells in blood film",
+    "Macrocytosis is a typical finding",
+    "It is not inherited"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf1-31",
+   "chapter": "perinatal-rd",
+   "source": "Pediatrics endpoint part1.pdf p.1220",
+   "answer": 1,
+   "stem": "Which of the following is TRUE about transient tachypnea of the newborn?",
+   "options": [
+    "Commonly associated with vaginal delivery",
+    "Commonly associated with term delivery",
+    "Usually treated with mechanical ventilation",
+    "Caused by surfactant deficiency"
+   ]
+  }
+ },
+ {
+  "sim": 0.7059,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-28",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1012",
+   "answer": 0,
+   "stem": "Which of the following is true about antiepileptic drugs (AEDs)?",
+   "options": [
+    "All AEDs have side effects",
+    "Using multiple drugs is the preferred first-line approach",
+    "All cases of epilepsy should automatically receive AEDs",
+    "AEDs have no long-term adverse effects"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-43",
+   "chapter": "neonatal-sepsis",
+   "source": "Pediatrics endpoint part1.pdf p.1569 (also printed in Pediatrics endpoint part2.pdf p.557, with the stem clauses reordered; the options and the key are unchanged)",
+   "answer": 2,
+   "stem": "Which of the following is true about neonatal sepsis?",
+   "options": [
+    "A heart murmur is usually present.",
+    "Early-onset sepsis is usually acquired via the placenta following maternal infection.",
+    "Pneumonia is the commonest presentation in early-onset sepsis.",
+    "High fever is commonly present.",
+    "CBC is done to detect neutrophilia."
+   ]
+  }
+ },
+ {
+  "sim": 0.7059,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-32",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1020",
+   "answer": 0,
+   "stem": "Which of the following is true about antiepileptic drug treatment?",
+   "options": [
+    "Not all cases need treatment",
+    "All patients must start multidrug therapy",
+    "All seizures require immediate lifelong AEDs",
+    "AEDs have no side effects"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-43",
+   "chapter": "neonatal-sepsis",
+   "source": "Pediatrics endpoint part1.pdf p.1569 (also printed in Pediatrics endpoint part2.pdf p.557, with the stem clauses reordered; the options and the key are unchanged)",
+   "answer": 2,
+   "stem": "Which of the following is true about neonatal sepsis?",
+   "options": [
+    "A heart murmur is usually present.",
+    "Early-onset sepsis is usually acquired via the placenta following maternal infection.",
+    "Pneumonia is the commonest presentation in early-onset sepsis.",
+    "High fever is commonly present.",
+    "CBC is done to detect neutrophilia."
+   ]
+  }
+ },
+ {
+  "sim": 0.7059,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-liv-11",
+   "chapter": "liver-hep",
+   "source": "Pediatrics endpoint part2.pdf p.1189",
+   "answer": 2,
+   "stem": "Which of the following is true regarding hepatitis A?",
+   "options": [
+    "It is a DNA virus which is spread by faecal–oral transmission.",
+    "It requires urgent treatment",
+    "Cure is usually achieved after 4 weeks of infection",
+    "Chronic liver disease usually occurs"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf1-78",
+   "chapter": "renal-cakut",
+   "source": "Pediatrics endpoint part1.pdf p.1316",
+   "answer": 2,
+   "stem": "Which of the following is true regarding posterior urethral valves?",
+   "options": [
+    "Anterior urethral valves are more common in males",
+    "Type 3 is the most common",
+    "Bilateral hydronephrosis in a baby male should always be investigated with urgent micturating cystogram",
+    "They always present with bilateral upper tract dilatation"
+   ]
+  }
+ },
+ {
+  "sim": 0.7059,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-liv-11",
+   "chapter": "liver-hep",
+   "source": "Pediatrics endpoint part2.pdf p.1189",
+   "answer": 2,
+   "stem": "Which of the following is true regarding hepatitis A?",
+   "options": [
+    "It is a DNA virus which is spread by faecal–oral transmission.",
+    "It requires urgent treatment",
+    "Cure is usually achieved after 4 weeks of infection",
+    "Chronic liver disease usually occurs"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-80",
+   "chapter": "gi-abdopain",
+   "source": "Pediatrics endpoint part1.pdf p.1642",
+   "answer": 3,
+   "stem": "Which of the following is TRUE regarding congenital inguinal hernia?",
+   "options": [
+    "It is more common on the left side in females",
+    "Herniotomy should be delayed until the child is over 2 years old",
+    "The most common presenting age is between 1–2 years",
+    "Incarcerated hernia can cause infarction of the testis in the very young"
+   ]
+  }
+ },
+ {
+  "sim": 0.7059,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-liv-11",
+   "chapter": "liver-hep",
+   "source": "Pediatrics endpoint part2.pdf p.1189",
+   "answer": 2,
+   "stem": "Which of the following is true regarding hepatitis A?",
+   "options": [
+    "It is a DNA virus which is spread by faecal–oral transmission.",
+    "It requires urgent treatment",
+    "Cure is usually achieved after 4 weeks of infection",
+    "Chronic liver disease usually occurs"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf4-50",
+   "chapter": "neonatal",
+   "source": "Pediatrics endpoint part1.pdf p.1744",
+   "answer": 1,
+   "stem": "Which of the following is true regarding breast milk jaundice?",
+   "options": [
+    "Conjugated",
+    "May be prolonged >2 months",
+    "Managed by advice to switch to formula feeding",
+    "It causes pale gray stool"
+   ]
+  }
+ },
+ {
+  "sim": 0.7059,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-liv-11",
+   "chapter": "liver-hep",
+   "source": "Pediatrics endpoint part2.pdf p.1189",
+   "answer": 2,
+   "stem": "Which of the following is true regarding hepatitis A?",
+   "options": [
+    "It is a DNA virus which is spread by faecal–oral transmission.",
+    "It requires urgent treatment",
+    "Cure is usually achieved after 4 weeks of infection",
+    "Chronic liver disease usually occurs"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf4-65",
+   "chapter": "renal-cakut",
+   "source": "Pediatrics endpoint part1.pdf p.1774",
+   "answer": 1,
+   "stem": "Which of the following is TRUE regarding undescended testes (cryptorchidism)?",
+   "options": [
+    "Always approached using an inguinal approach",
+    "Ectopic testes may be found in the perineum",
+    "Usually requires a two-stage procedure",
+    "Are bilateral in 50% of cases"
+   ]
+  }
+ },
+ {
+  "sim": 0.7059,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-liv-20",
+   "chapter": "liver-hep",
+   "source": "Pediatrics endpoint part2.pdf p.1209",
+   "answer": 1,
+   "stem": "Which of the following is true about acute viral hepatitis?",
+   "options": [
+    "Abdominal pain, nausea, and vomiting aren't common signs",
+    "Jaundice is not evident in all cases",
+    "All cases present with dark urine and clay-colored stools",
+    "All patients become icteric and febrile"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-43",
+   "chapter": "neonatal-sepsis",
+   "source": "Pediatrics endpoint part1.pdf p.1569 (also printed in Pediatrics endpoint part2.pdf p.557, with the stem clauses reordered; the options and the key are unchanged)",
+   "answer": 2,
+   "stem": "Which of the following is true about neonatal sepsis?",
+   "options": [
+    "A heart murmur is usually present.",
+    "Early-onset sepsis is usually acquired via the placenta following maternal infection.",
+    "Pneumonia is the commonest presentation in early-onset sepsis.",
+    "High fever is commonly present.",
+    "CBC is done to detect neutrophilia."
+   ]
+  }
+ },
+ {
+  "sim": 0.7059,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-mf1-79",
+   "chapter": "neuro-cp",
+   "source": "Pediatrics endpoint part2.pdf p.1428",
+   "answer": 0,
+   "stem": "What is the most common cause of cerebral palsy?",
+   "options": [
+    "Prenatal cause",
+    "Perinatal brain injury",
+    "Neonatal infections",
+    "Accidents",
+    "Meningitis/encephalitis"
+   ]
+  },
+  "p1": {
+   "id": "pedep-gi-65",
+   "chapter": "gi-diarrhoea",
+   "source": "Pediatrics endpoint part1.pdf p.544 (reprinted word for word in Model Final Exam 3, p.1517; reprinted word for word in Model Final Exam 4, p.1764)",
+   "answer": 3,
+   "stem": "What is the most common cause of gastroenteritis in children?",
+   "options": [
+    "Shigella",
+    "Giardia",
+    "Cryptosporidium",
+    "Viruses",
+    "Campylobacter jejuni"
+   ]
+  }
+ },
+ {
+  "sim": 0.7,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-res-47",
+   "chapter": "respiratory",
+   "source": "Pediatrics endpoint part2.pdf p.569",
+   "answer": 0,
+   "stem": "What is the most common cause of chronic wet cough in children?",
+   "options": [
+    "Persistent bacterial bronchitis",
+    "Bacterial bronchitis",
+    "Viral bronchitis",
+    "Asthma"
+   ]
+  },
+  "p1": {
+   "id": "pedep-gi-65",
+   "chapter": "gi-diarrhoea",
+   "source": "Pediatrics endpoint part1.pdf p.544 (reprinted word for word in Model Final Exam 3, p.1517; reprinted word for word in Model Final Exam 4, p.1764)",
+   "answer": 3,
+   "stem": "What is the most common cause of gastroenteritis in children?",
+   "options": [
+    "Shigella",
+    "Giardia",
+    "Cryptosporidium",
+    "Viruses",
+    "Campylobacter jejuni"
+   ]
+  }
+ },
+ {
+  "sim": 0.7,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-car-41",
+   "chapter": "cardiac",
+   "source": "Pediatrics endpoint part2.pdf p.711",
+   "answer": 0,
+   "stem": "Which of the following is NOT true about innocent (physiologic) heart murmurs?",
+   "options": [
+    "May be diastolic",
+    "Usually soft",
+    "Occur in an otherwise healthy child",
+    "Vary with position or respiration"
+   ]
+  },
+  "p1": {
+   "id": "pedep-nut-27",
+   "chapter": "nutrition-feed",
+   "source": "Pediatrics endpoint part1.pdf p.290",
+   "answer": 1,
+   "stem": "Which of the following is NOT true about breast feeding?",
+   "options": [
+    "Recommended food for infants both term and preterm",
+    "50% of energy from proteins",
+    "Contains immunological benefits (i.e. IgA, active lymphocytes)",
+    "Promotes growth of lactobacillus in GI",
+    "Decreases incidence of allergic disorders"
+   ]
+  }
+ },
+ {
+  "sim": 0.7,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-ren-39",
+   "chapter": "renal",
+   "source": "Pediatrics endpoint part2.pdf p.896 (reprinted at p.912)",
+   "answer": 1,
+   "stem": "Which of the following statements is true about most nephrotic syndromes?",
+   "options": [
+    "Hematuria is a common feature",
+    "They rarely cause chronic renal failure",
+    "Low C3 level is typically seen",
+    "Always present with hypertension"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf4-27",
+   "chapter": "growth-puberty",
+   "source": "Pediatrics endpoint part1.pdf p.1698",
+   "answer": 1,
+   "stem": "Which of the following statements is true about familial short stature?",
+   "options": [
+    "It is usually associated with obesity",
+    "Child's height fluctuates 2 centiles between mid-parental height",
+    "It is a form of delay in attaining normal height",
+    "It leads to achieving normal height eventually"
+   ]
+  }
+ },
+ {
+  "sim": 0.6667,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-dp-22",
+   "chapter": "dev-problems",
+   "source": "Pediatrics endpoint part2.pdf p.139",
+   "answer": 1,
+   "stem": "Which of the following is NOT true about autism spectrum disorder?",
+   "options": [
+    "The child may have associated comorbidities",
+    "It is usually benign with no long-term consequences",
+    "It is an impaired social interaction",
+    "There is no evidence for a link with MMR vaccine"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-75",
+   "chapter": "gi-abdopain",
+   "source": "Pediatrics endpoint part1.pdf p.1632",
+   "answer": 3,
+   "stem": "Which of the following is NOT TRUE regarding intussusception?",
+   "options": [
+    "More common in boys",
+    "Can occur secondary to Meckel's diverticulum",
+    "Bilious vomiting is not always present",
+    "Bleeding per rectum is the most common presenting symptom"
+   ]
+  }
+ },
+ {
+  "sim": 0.6667,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-dp-24",
+   "chapter": "dev-problems",
+   "source": "Pediatrics endpoint part2.pdf p.143",
+   "answer": 1,
+   "stem": "Which of the following is NOT true about Global developmental delay?",
+   "options": [
+    "It usually presents in the first 2 years of life.",
+    "It is a delay in the acquisition of one or more of the four fields of development.",
+    "It is mostly associated with cognitive difficulties.",
+    "Clinical picture is clearer when children become older."
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-75",
+   "chapter": "gi-abdopain",
+   "source": "Pediatrics endpoint part1.pdf p.1632",
+   "answer": 3,
+   "stem": "Which of the following is NOT TRUE regarding intussusception?",
+   "options": [
+    "More common in boys",
+    "Can occur secondary to Meckel's diverticulum",
+    "Bilious vomiting is not always present",
+    "Bleeding per rectum is the most common presenting symptom"
+   ]
+  }
+ },
+ {
+  "sim": 0.6667,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-hem-80",
+   "chapter": "haematology",
+   "source": "Pediatrics endpoint part2.pdf p.430",
+   "answer": 3,
+   "stem": "Which one of the following is a feature of hereditary spherocytosis?",
+   "options": [
+    "Conjugated hyperbilirubinemia",
+    "Hemolytic crises following fava bean ingestion",
+    "Short stature",
+    "Splenomegaly",
+    "X-linked inheritance"
+   ]
+  },
+  "p1": {
+   "id": "pedep-nut-65",
+   "chapter": "nutrition-pem",
+   "source": "Pediatrics endpoint part1.pdf p.368 (reprinted word for word in Model Final Exam 3, p.1577)",
+   "answer": 1,
+   "stem": "Which of the following is a feature of marasmus?",
+   "options": [
+    "Dermatosis",
+    "Gross muscle wasting",
+    "Edema",
+    "Hair changes"
+   ]
+  }
+ },
+ {
+  "sim": 0.6667,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-hem-83",
+   "chapter": "haematology",
+   "source": "Pediatrics endpoint part2.pdf p.436",
+   "answer": 1,
+   "stem": "Which of the following is TRUE about thalassemia?",
+   "options": [
+    "Increased serum ferritin",
+    "Presence of target cells in blood film",
+    "Macrocytosis is a typical finding",
+    "It is not inherited"
+   ]
+  },
+  "p1": {
+   "id": "pedep-per-18",
+   "chapter": "cardiac",
+   "source": "Pediatrics endpoint part1.pdf p.762",
+   "answer": 2,
+   "stem": "In intrauterine life, which of the following is TRUE?",
+   "options": [
+    "Oxygen saturation is higher in the lower body than upper body",
+    "Blood passes from the aorta to the pulmonary artery via the ductus arteriosus",
+    "There is a shift to the left of the oxygen dissociation curve of fetal hemoglobin",
+    "Fetal hypoxia results in secondary apnea after birth"
+   ]
+  }
+ },
+ {
+  "sim": 0.6667,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-hem-83",
+   "chapter": "haematology",
+   "source": "Pediatrics endpoint part2.pdf p.436",
+   "answer": 1,
+   "stem": "Which of the following is TRUE about thalassemia?",
+   "options": [
+    "Increased serum ferritin",
+    "Presence of target cells in blood film",
+    "Macrocytosis is a typical finding",
+    "It is not inherited"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-76",
+   "chapter": "perinatal",
+   "source": "Pediatrics endpoint part1.pdf p.1634",
+   "answer": 2,
+   "stem": "Which of the following is TRUE regarding duodenal atresia?",
+   "options": [
+    "Most common form of bowel atresia is thrush",
+    "Presents after birth with non-bilious vomiting",
+    "Prenatal diagnosis is common",
+    "Gastrojejunostomy is the procedure of choice"
+   ]
+  }
+ },
+ {
+  "sim": 0.6667,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-res-31",
+   "chapter": "resp-pneumonia",
+   "source": "Pediatrics endpoint part2.pdf p.537",
+   "answer": 2,
+   "stem": "Which of the following is the most common cause of pneumonia in infants and young children?",
+   "options": [
+    "Streptococcus pneumoniae",
+    "Mycoplasma",
+    "Viruses",
+    "Chlamydia",
+    "Haemophilus influenzae"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-50",
+   "chapter": "emergencies",
+   "source": "Pediatrics endpoint part1.pdf p.1583 (printed again, word for word, on p.1599 of the same exam)",
+   "answer": 4,
+   "stem": "Which of the following is the most common cause of pediatric cardiopulmonary arrest?",
+   "options": [
+    "Cardiac arrhythmias",
+    "Metabolic abnormalities",
+    "Overwhelming infections",
+    "Trauma",
+    "Respiratory problems"
+   ]
+  }
+ },
+ {
+  "sim": 0.6667,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-res-39",
+   "chapter": "resp-bronch",
+   "source": "Pediatrics endpoint part2.pdf p.553",
+   "answer": 3,
+   "stem": "Which of the following statements is true in acute bronchiolitis?",
+   "options": [
+    "Wheezing is due to spasm of smooth muscles of bronchioles",
+    "Inhaled salbutamol is the treatment of choice",
+    "Chest X-ray is diagnostic",
+    "Feeding difficulties are common",
+    "Antibiotics are indicated in severe cases"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf4-30",
+   "chapter": "infection-vaccine",
+   "source": "Pediatrics endpoint part1.pdf p.1704",
+   "answer": 1,
+   "stem": "Which of the following statements is true regarding child vaccination?",
+   "options": [
+    "In case of missing a vaccine, the whole course needs to be restarted",
+    "OPV vaccine should not be given to a child whose brother suffers leukemia",
+    "IPV is given within the first 24 hours after birth",
+    "All of the above"
+   ]
+  }
+ },
+ {
+  "sim": 0.6667,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-car-2",
+   "chapter": "cardiac",
+   "source": "Pediatrics endpoint part2.pdf p.631",
+   "answer": 0,
+   "stem": "Which of the following is the most common congenital heart disease?",
+   "options": [
+    "Ventricular septal defect (VSD)",
+    "Atrial septal defect (ASD)",
+    "Patent ductus arteriosus (PDA)",
+    "Tetralogy of Fallot"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf4-21",
+   "chapter": "perinatal-rd",
+   "source": "Pediatrics endpoint part1.pdf p.1686",
+   "answer": 0,
+   "stem": "Which of the following is the most common complication of meconium aspiration?",
+   "options": [
+    "Pneumothorax",
+    "Bacterial pneumonia",
+    "Sepsis",
+    "None of the above"
+   ]
+  }
+ },
+ {
+  "sim": 0.6667,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-ren-39",
+   "chapter": "renal",
+   "source": "Pediatrics endpoint part2.pdf p.896 (reprinted at p.912)",
+   "answer": 1,
+   "stem": "Which of the following statements is true about most nephrotic syndromes?",
+   "options": [
+    "Hematuria is a common feature",
+    "They rarely cause chronic renal failure",
+    "Low C3 level is typically seen",
+    "Always present with hypertension"
+   ]
+  },
+  "p1": {
+   "id": "pedep-neo-32",
+   "chapter": "neonatal",
+   "source": "Pediatrics endpoint part1.pdf p.860 (reprinted word for word in Model Final Exam 3, p.1589)",
+   "answer": 0,
+   "stem": "Which of the following statements is TRUE about Transient tachypnea of the newborn?",
+   "options": [
+    "Commonly associated with caesarian section delivery",
+    "Commonly associated with preterm delivery",
+    "Usually treated with mechanical ventilation",
+    "Caused by surfactant deficiency",
+    "Mild prenatal infection is a common association"
+   ]
+  }
+ },
+ {
+  "sim": 0.6667,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-28",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1012",
+   "answer": 0,
+   "stem": "Which of the following is true about antiepileptic drugs (AEDs)?",
+   "options": [
+    "All AEDs have side effects",
+    "Using multiple drugs is the preferred first-line approach",
+    "All cases of epilepsy should automatically receive AEDs",
+    "AEDs have no long-term adverse effects"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-25",
+   "chapter": "emergencies",
+   "source": "Pediatrics endpoint part1.pdf p.1533",
+   "answer": 2,
+   "stem": "Which of the following is true about \"capillary refill time\"?",
+   "options": [
+    "Apply blanching pressure for 2 seconds",
+    "Prolonged capillary refill if > 3 seconds",
+    "It is affected by body exposure to a cold environment",
+    "It is reproducible only in children over the age of 2 years"
+   ]
+  }
+ },
+ {
+  "sim": 0.6667,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-32",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1020",
+   "answer": 0,
+   "stem": "Which of the following is true about antiepileptic drug treatment?",
+   "options": [
+    "Not all cases need treatment",
+    "All patients must start multidrug therapy",
+    "All seizures require immediate lifelong AEDs",
+    "AEDs have no side effects"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-25",
+   "chapter": "emergencies",
+   "source": "Pediatrics endpoint part1.pdf p.1533",
+   "answer": 2,
+   "stem": "Which of the following is true about \"capillary refill time\"?",
+   "options": [
+    "Apply blanching pressure for 2 seconds",
+    "Prolonged capillary refill if > 3 seconds",
+    "It is affected by body exposure to a cold environment",
+    "It is reproducible only in children over the age of 2 years"
+   ]
+  }
+ },
+ {
+  "sim": 0.6667,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-36",
+   "chapter": "neuro-cp",
+   "source": "Pediatrics endpoint part2.pdf p.1028",
+   "answer": 0,
+   "stem": "Which of the following is NOT true about cerebral palsy (CP)?",
+   "options": [
+    "Progressive disorder",
+    "Non-progressive brain injury",
+    "Motor impairment is the main feature",
+    "Usually appears in early childhood"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-75",
+   "chapter": "gi-abdopain",
+   "source": "Pediatrics endpoint part1.pdf p.1632",
+   "answer": 3,
+   "stem": "Which of the following is NOT TRUE regarding intussusception?",
+   "options": [
+    "More common in boys",
+    "Can occur secondary to Meckel's diverticulum",
+    "Bilious vomiting is not always present",
+    "Bleeding per rectum is the most common presenting symptom"
+   ]
+  }
+ },
+ {
+  "sim": 0.6667,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-liv-11",
+   "chapter": "liver-hep",
+   "source": "Pediatrics endpoint part2.pdf p.1189",
+   "answer": 2,
+   "stem": "Which of the following is true regarding hepatitis A?",
+   "options": [
+    "It is a DNA virus which is spread by faecal–oral transmission.",
+    "It requires urgent treatment",
+    "Cure is usually achieved after 4 weeks of infection",
+    "Chronic liver disease usually occurs"
+   ]
+  },
+  "p1": {
+   "id": "pedep-emg-32",
+   "chapter": "emergencies",
+   "source": "Pediatrics endpoint part1.pdf p.640",
+   "answer": 0,
+   "stem": "Which of the following is true regarding capillary refill time (CRT)?",
+   "options": [
+    "It is affected by cold environment",
+    "It is assessed by pressing on the forehead",
+    "It is not prolonged in compensated (early) shock",
+    "It is considered prolonged if > 4 seconds"
+   ]
+  }
+ },
+ {
+  "sim": 0.6667,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-liv-11",
+   "chapter": "liver-hep",
+   "source": "Pediatrics endpoint part2.pdf p.1189",
+   "answer": 2,
+   "stem": "Which of the following is true regarding hepatitis A?",
+   "options": [
+    "It is a DNA virus which is spread by faecal–oral transmission.",
+    "It requires urgent treatment",
+    "Cure is usually achieved after 4 weeks of infection",
+    "Chronic liver disease usually occurs"
+   ]
+  },
+  "p1": {
+   "id": "pedep-inf-31",
+   "chapter": "infection-bact",
+   "source": "Pediatrics endpoint part1.pdf p.1027",
+   "answer": 0,
+   "stem": "Which of the following is true regarding pneumococcal infection in children?",
+   "options": [
+    "It is commonly found in the nasopharynx of healthy children",
+    "It is a viral infection with seasonal outbreaks",
+    "It is primarily transmitted via the fecal-oral route",
+    "It does not cause invasive disease in immunocompromised hosts"
+   ]
+  }
+ },
+ {
+  "sim": 0.6667,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-liv-20",
+   "chapter": "liver-hep",
+   "source": "Pediatrics endpoint part2.pdf p.1209",
+   "answer": 1,
+   "stem": "Which of the following is true about acute viral hepatitis?",
+   "options": [
+    "Abdominal pain, nausea, and vomiting aren't common signs",
+    "Jaundice is not evident in all cases",
+    "All cases present with dark urine and clay-colored stools",
+    "All patients become icteric and febrile"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-25",
+   "chapter": "emergencies",
+   "source": "Pediatrics endpoint part1.pdf p.1533",
+   "answer": 2,
+   "stem": "Which of the following is true about \"capillary refill time\"?",
+   "options": [
+    "Apply blanching pressure for 2 seconds",
+    "Prolonged capillary refill if > 3 seconds",
+    "It is affected by body exposure to a cold environment",
+    "It is reproducible only in children over the age of 2 years"
+   ]
+  }
+ },
+ {
+  "sim": 0.6667,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-mf1-79",
+   "chapter": "neuro-cp",
+   "source": "Pediatrics endpoint part2.pdf p.1428",
+   "answer": 0,
+   "stem": "What is the most common cause of cerebral palsy?",
+   "options": [
+    "Prenatal cause",
+    "Perinatal brain injury",
+    "Neonatal infections",
+    "Accidents",
+    "Meningitis/encephalitis"
+   ]
+  },
+  "p1": {
+   "id": "pedep-gp-56",
+   "chapter": "growth-puberty",
+   "source": "Pediatrics endpoint part1.pdf p.141",
+   "answer": 0,
+   "stem": "What is the most common cause of faltering growth in infants?",
+   "options": [
+    "Inadequate weight gain",
+    "Genetic short stature",
+    "Growth hormone deficiency",
+    "Endocrine disorder"
+   ]
+  }
+ },
+ {
+  "sim": 0.6542,
+  "opt": 0.8,
+  "p2": {
+   "id": "pedep2-nd-19",
+   "chapter": "normal-dev",
+   "source": "Pediatrics endpoint part2.pdf p.56",
+   "answer": 1,
+   "stem": "At a routine health visitor consultation, a 12-month-old boy is noticed to be cruising around furniture, responding to his name and saying \"mama\" and \"papa\". He is holding a crayon in his left hand, and his father informs the health visitor that he only uses his left hand at home. What is the most likely finding here?",
+   "options": [
+    "Gross motor delay",
+    "Fine motor delay",
+    "Speech and language delay",
+    "Play and social delay",
+    "Global delay"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-13",
+   "chapter": "dev-problems",
+   "source": "Pediatrics endpoint part1.pdf p.1509 (also printed in Pediatrics endpoint part2.pdf p.1326, in a different chapter, where the stem and the options are identical)",
+   "answer": 1,
+   "stem": "At a routine health visitor consultation, a 13-month-old boy is noticed to be crossing arms in his left hand and dragging his left hand and synkinesis and spastic gait. He is holding a toy in his left hand and his father informs the health visitor that he only uses his right side. What is the most likely finding here?",
+   "options": [
+    "Normal developmental milestones",
+    "Fine motor delay",
+    "Speech and language delay",
+    "Play and social delay",
+    "Global delay"
+   ]
+  }
+ },
+ {
+  "sim": 0.64,
+  "opt": 0.25,
+  "p2": {
+   "id": "pedep2-mal-23",
+   "chapter": "malignant",
+   "source": "Pediatrics endpoint part2.pdf p.1268",
+   "answer": 0,
+   "stem": "Which of the following is the most common malignant tumor in children?",
+   "options": [
+    "Leukemia",
+    "Lymphoma",
+    "Kaposi sarcoma",
+    "Wilm’s tumor"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf1-80",
+   "chapter": "malignant-solid",
+   "source": "Pediatrics endpoint part1.pdf p.1320",
+   "answer": 0,
+   "stem": "Which of the following is the most common abdominal solid tumor in infancy and childhood?",
+   "options": [
+    "Neuroblastoma",
+    "Wilms tumor",
+    "Sarcoma",
+    "Teratoma"
+   ]
+  }
+ },
+ {
+  "sim": 0.64,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-mf1-27",
+   "chapter": "cardiac",
+   "source": "Pediatrics endpoint part2.pdf p.1324",
+   "answer": 3,
+   "stem": "Which of the following is not a feature of an innocent heart murmur and requires further investigation?",
+   "options": [
+    "No radiation",
+    "Varies with posture",
+    "Systolic",
+    "Third heart sound",
+    "No symptoms"
+   ]
+  },
+  "p1": {
+   "id": "pedep-nut-20",
+   "chapter": "nutrition-pem",
+   "source": "Pediatrics endpoint part1.pdf p.276",
+   "answer": 0,
+   "stem": "Which of the following is NOT a feature of marasmus?",
+   "options": [
+    "Looking apathetic",
+    "No edema",
+    "Gross muscle wasting",
+    "Loss of subcutaneous fat",
+    "Weight for height is >3SD below the median in growth chart"
+   ]
+  }
+ },
+ {
+  "sim": 0.64,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-mf1-27",
+   "chapter": "cardiac",
+   "source": "Pediatrics endpoint part2.pdf p.1324",
+   "answer": 3,
+   "stem": "Which of the following is not a feature of an innocent heart murmur and requires further investigation?",
+   "options": [
+    "No radiation",
+    "Varies with posture",
+    "Systolic",
+    "Third heart sound",
+    "No symptoms"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf2-65",
+   "chapter": "renal-cakut",
+   "source": "Pediatrics endpoint part1.pdf p.1452",
+   "answer": 0,
+   "stem": "Which of the following is not a feature of hypospadias?",
+   "options": [
+    "Dorsal chordee",
+    "Hooded foreskin",
+    "Ventrally placed meatus",
+    "Proximal meatus"
+   ]
+  }
+ },
+ {
+  "sim": 0.6364,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-hem-88",
+   "chapter": "haematology",
+   "source": "Pediatrics endpoint part2.pdf p.446",
+   "answer": 3,
+   "stem": "Which of the following is NOT a cause of hydrops fetalis?",
+   "options": [
+    "Rh incompatibility",
+    "ABO incompatibility",
+    "Alpha thalassemia major",
+    "Beta thalassemia major"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-63",
+   "chapter": "gastroenterology",
+   "source": "Pediatrics endpoint part1.pdf p.1608 (reprinted in Model Final Exam 4, p.1780, spelling the third option \"Hirschsprung's disease\" in full)",
+   "answer": 0,
+   "stem": "Which of the following is NOT a typical cause of neonatal intestinal obstruction?",
+   "options": [
+    "Intussusception",
+    "Meconium ileus",
+    "Hirschrung's disease",
+    "Incarcerated hernia"
+   ]
+  }
+ },
+ {
+  "sim": 0.6364,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-res-47",
+   "chapter": "respiratory",
+   "source": "Pediatrics endpoint part2.pdf p.569",
+   "answer": 0,
+   "stem": "What is the most common cause of chronic wet cough in children?",
+   "options": [
+    "Persistent bacterial bronchitis",
+    "Bacterial bronchitis",
+    "Viral bronchitis",
+    "Asthma"
+   ]
+  },
+  "p1": {
+   "id": "pedep-gi-64",
+   "chapter": "gi-abdopain",
+   "source": "Pediatrics endpoint part1.pdf p.542 (reprinted word for word in Model Final Exam 2, p.1408; reprinted word for word in Model Final Exam 3, p.1505)",
+   "answer": 2,
+   "stem": "What is the most common cause of recurrent abdominal pain in children?",
+   "options": [
+    "Appendicitis",
+    "Ascariasis",
+    "Functional",
+    "Hepatitis"
+   ]
+  }
+ },
+ {
+  "sim": 0.6364,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-car-2",
+   "chapter": "cardiac",
+   "source": "Pediatrics endpoint part2.pdf p.631",
+   "answer": 0,
+   "stem": "Which of the following is the most common congenital heart disease?",
+   "options": [
+    "Ventricular septal defect (VSD)",
+    "Atrial septal defect (ASD)",
+    "Patent ductus arteriosus (PDA)",
+    "Tetralogy of Fallot"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-50",
+   "chapter": "emergencies",
+   "source": "Pediatrics endpoint part1.pdf p.1583 (printed again, word for word, on p.1599 of the same exam)",
+   "answer": 4,
+   "stem": "Which of the following is the most common cause of pediatric cardiopulmonary arrest?",
+   "options": [
+    "Cardiac arrhythmias",
+    "Metabolic abnormalities",
+    "Overwhelming infections",
+    "Trauma",
+    "Respiratory problems"
+   ]
+  }
+ },
+ {
+  "sim": 0.6364,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-mal-23",
+   "chapter": "malignant",
+   "source": "Pediatrics endpoint part2.pdf p.1268",
+   "answer": 0,
+   "stem": "Which of the following is the most common malignant tumor in children?",
+   "options": [
+    "Leukemia",
+    "Lymphoma",
+    "Kaposi sarcoma",
+    "Wilm’s tumor"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf4-21",
+   "chapter": "perinatal-rd",
+   "source": "Pediatrics endpoint part1.pdf p.1686",
+   "answer": 0,
+   "stem": "Which of the following is the most common complication of meconium aspiration?",
+   "options": [
+    "Pneumothorax",
+    "Bacterial pneumonia",
+    "Sepsis",
+    "None of the above"
+   ]
+  }
+ },
+ {
+  "sim": 0.6364,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-mf1-35",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1340",
+   "answer": 3,
+   "stem": "Which of the following is a feature of a typical febrile seizure?",
+   "options": [
+    "Age usually before 6 months",
+    "Focal or generalized",
+    "Lasts more than 15 minutes",
+    "No post-ictal manifestations",
+    "Recurs within 24 hours"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf4-41",
+   "chapter": "nutrition-pem",
+   "source": "Pediatrics endpoint part1.pdf p.1726",
+   "answer": 0,
+   "stem": "Which of the following is a feature of protien energy malnutrition (Kwashiorkor)?",
+   "options": [
+    "Edema",
+    "Hyperactivity",
+    "High plasma albumin",
+    "All of the above"
+   ]
+  }
+ },
+ {
+  "sim": 0.6316,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-hem-88",
+   "chapter": "haematology",
+   "source": "Pediatrics endpoint part2.pdf p.446",
+   "answer": 3,
+   "stem": "Which of the following is NOT a cause of hydrops fetalis?",
+   "options": [
+    "Rh incompatibility",
+    "ABO incompatibility",
+    "Alpha thalassemia major",
+    "Beta thalassemia major"
+   ]
+  },
+  "p1": {
+   "id": "pedep-nut-20",
+   "chapter": "nutrition-pem",
+   "source": "Pediatrics endpoint part1.pdf p.276",
+   "answer": 0,
+   "stem": "Which of the following is NOT a feature of marasmus?",
+   "options": [
+    "Looking apathetic",
+    "No edema",
+    "Gross muscle wasting",
+    "Loss of subcutaneous fat",
+    "Weight for height is >3SD below the median in growth chart"
+   ]
+  }
+ },
+ {
+  "sim": 0.6316,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-hem-88",
+   "chapter": "haematology",
+   "source": "Pediatrics endpoint part2.pdf p.446",
+   "answer": 3,
+   "stem": "Which of the following is NOT a cause of hydrops fetalis?",
+   "options": [
+    "Rh incompatibility",
+    "ABO incompatibility",
+    "Alpha thalassemia major",
+    "Beta thalassemia major"
+   ]
+  },
+  "p1": {
+   "id": "pedep-inf-29",
+   "chapter": "infection-vaccine",
+   "source": "Pediatrics endpoint part1.pdf p.1023",
+   "answer": 2,
+   "stem": "Which of the following is NOT a live attenuated vaccine?",
+   "options": [
+    "Varicella",
+    "Rubella",
+    "Inactivated influenza",
+    "MMR"
+   ]
+  }
+ },
+ {
+  "sim": 0.6316,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-hem-88",
+   "chapter": "haematology",
+   "source": "Pediatrics endpoint part2.pdf p.446",
+   "answer": 3,
+   "stem": "Which of the following is NOT a cause of hydrops fetalis?",
+   "options": [
+    "Rh incompatibility",
+    "ABO incompatibility",
+    "Alpha thalassemia major",
+    "Beta thalassemia major"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf2-65",
+   "chapter": "renal-cakut",
+   "source": "Pediatrics endpoint part1.pdf p.1452",
+   "answer": 0,
+   "stem": "Which of the following is not a feature of hypospadias?",
+   "options": [
+    "Dorsal chordee",
+    "Hooded foreskin",
+    "Ventrally placed meatus",
+    "Proximal meatus"
+   ]
+  }
+ },
+ {
+  "sim": 0.6316,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-res-39",
+   "chapter": "resp-bronch",
+   "source": "Pediatrics endpoint part2.pdf p.553",
+   "answer": 3,
+   "stem": "Which of the following statements is true in acute bronchiolitis?",
+   "options": [
+    "Wheezing is due to spasm of smooth muscles of bronchioles",
+    "Inhaled salbutamol is the treatment of choice",
+    "Chest X-ray is diagnostic",
+    "Feeding difficulties are common",
+    "Antibiotics are indicated in severe cases"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf4-27",
+   "chapter": "growth-puberty",
+   "source": "Pediatrics endpoint part1.pdf p.1698",
+   "answer": 1,
+   "stem": "Which of the following statements is true about familial short stature?",
+   "options": [
+    "It is usually associated with obesity",
+    "Child's height fluctuates 2 centiles between mid-parental height",
+    "It is a form of delay in attaining normal height",
+    "It leads to achieving normal height eventually"
+   ]
+  }
+ },
+ {
+  "sim": 0.6316,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-res-40",
+   "chapter": "resp-pneumonia",
+   "source": "Pediatrics endpoint part2.pdf p.555",
+   "answer": 3,
+   "stem": "Which of the following is NOT a complication of whooping cough?",
+   "options": [
+    "Pneumonia",
+    "Intracranial hemorrhage",
+    "Convulsions",
+    "Hemolytic anemia",
+    "Subconjunctival hemorrhage"
+   ]
+  },
+  "p1": {
+   "id": "pedep-nut-20",
+   "chapter": "nutrition-pem",
+   "source": "Pediatrics endpoint part1.pdf p.276",
+   "answer": 0,
+   "stem": "Which of the following is NOT a feature of marasmus?",
+   "options": [
+    "Looking apathetic",
+    "No edema",
+    "Gross muscle wasting",
+    "Loss of subcutaneous fat",
+    "Weight for height is >3SD below the median in growth chart"
+   ]
+  }
+ },
+ {
+  "sim": 0.6316,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-res-40",
+   "chapter": "resp-pneumonia",
+   "source": "Pediatrics endpoint part2.pdf p.555",
+   "answer": 3,
+   "stem": "Which of the following is NOT a complication of whooping cough?",
+   "options": [
+    "Pneumonia",
+    "Intracranial hemorrhage",
+    "Convulsions",
+    "Hemolytic anemia",
+    "Subconjunctival hemorrhage"
+   ]
+  },
+  "p1": {
+   "id": "pedep-inf-29",
+   "chapter": "infection-vaccine",
+   "source": "Pediatrics endpoint part1.pdf p.1023",
+   "answer": 2,
+   "stem": "Which of the following is NOT a live attenuated vaccine?",
+   "options": [
+    "Varicella",
+    "Rubella",
+    "Inactivated influenza",
+    "MMR"
+   ]
+  }
+ },
+ {
+  "sim": 0.6316,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-res-40",
+   "chapter": "resp-pneumonia",
+   "source": "Pediatrics endpoint part2.pdf p.555",
+   "answer": 3,
+   "stem": "Which of the following is NOT a complication of whooping cough?",
+   "options": [
+    "Pneumonia",
+    "Intracranial hemorrhage",
+    "Convulsions",
+    "Hemolytic anemia",
+    "Subconjunctival hemorrhage"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf2-65",
+   "chapter": "renal-cakut",
+   "source": "Pediatrics endpoint part1.pdf p.1452",
+   "answer": 0,
+   "stem": "Which of the following is not a feature of hypospadias?",
+   "options": [
+    "Dorsal chordee",
+    "Hooded foreskin",
+    "Ventrally placed meatus",
+    "Proximal meatus"
+   ]
+  }
+ },
+ {
+  "sim": 0.6316,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-car-41",
+   "chapter": "cardiac",
+   "source": "Pediatrics endpoint part2.pdf p.711",
+   "answer": 0,
+   "stem": "Which of the following is NOT true about innocent (physiologic) heart murmurs?",
+   "options": [
+    "May be diastolic",
+    "Usually soft",
+    "Occur in an otherwise healthy child",
+    "Vary with position or respiration"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-75",
+   "chapter": "gi-abdopain",
+   "source": "Pediatrics endpoint part1.pdf p.1632",
+   "answer": 3,
+   "stem": "Which of the following is NOT TRUE regarding intussusception?",
+   "options": [
+    "More common in boys",
+    "Can occur secondary to Meckel's diverticulum",
+    "Bilious vomiting is not always present",
+    "Bleeding per rectum is the most common presenting symptom"
+   ]
+  }
+ },
+ {
+  "sim": 0.6316,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-ren-36",
+   "chapter": "renal-uti",
+   "source": "Pediatrics endpoint part2.pdf p.890 (reprinted at p.916)",
+   "answer": 3,
+   "stem": "Which of the following is not a common pathogen in UTI?",
+   "options": [
+    "E.coli",
+    "Klebsiella",
+    "S.Faecalis",
+    "Staph aureus"
+   ]
+  },
+  "p1": {
+   "id": "pedep-nut-20",
+   "chapter": "nutrition-pem",
+   "source": "Pediatrics endpoint part1.pdf p.276",
+   "answer": 0,
+   "stem": "Which of the following is NOT a feature of marasmus?",
+   "options": [
+    "Looking apathetic",
+    "No edema",
+    "Gross muscle wasting",
+    "Loss of subcutaneous fat",
+    "Weight for height is >3SD below the median in growth chart"
+   ]
+  }
+ },
+ {
+  "sim": 0.6316,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-ren-36",
+   "chapter": "renal-uti",
+   "source": "Pediatrics endpoint part2.pdf p.890 (reprinted at p.916)",
+   "answer": 3,
+   "stem": "Which of the following is not a common pathogen in UTI?",
+   "options": [
+    "E.coli",
+    "Klebsiella",
+    "S.Faecalis",
+    "Staph aureus"
+   ]
+  },
+  "p1": {
+   "id": "pedep-inf-29",
+   "chapter": "infection-vaccine",
+   "source": "Pediatrics endpoint part1.pdf p.1023",
+   "answer": 2,
+   "stem": "Which of the following is NOT a live attenuated vaccine?",
+   "options": [
+    "Varicella",
+    "Rubella",
+    "Inactivated influenza",
+    "MMR"
+   ]
+  }
+ },
+ {
+  "sim": 0.6316,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-ren-36",
+   "chapter": "renal-uti",
+   "source": "Pediatrics endpoint part2.pdf p.890 (reprinted at p.916)",
+   "answer": 3,
+   "stem": "Which of the following is not a common pathogen in UTI?",
+   "options": [
+    "E.coli",
+    "Klebsiella",
+    "S.Faecalis",
+    "Staph aureus"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf2-65",
+   "chapter": "renal-cakut",
+   "source": "Pediatrics endpoint part1.pdf p.1452",
+   "answer": 0,
+   "stem": "Which of the following is not a feature of hypospadias?",
+   "options": [
+    "Dorsal chordee",
+    "Hooded foreskin",
+    "Ventrally placed meatus",
+    "Proximal meatus"
+   ]
+  }
+ },
+ {
+  "sim": 0.6316,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-ren-39",
+   "chapter": "renal",
+   "source": "Pediatrics endpoint part2.pdf p.896 (reprinted at p.912)",
+   "answer": 1,
+   "stem": "Which of the following statements is true about most nephrotic syndromes?",
+   "options": [
+    "Hematuria is a common feature",
+    "They rarely cause chronic renal failure",
+    "Low C3 level is typically seen",
+    "Always present with hypertension"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf4-30",
+   "chapter": "infection-vaccine",
+   "source": "Pediatrics endpoint part1.pdf p.1704",
+   "answer": 1,
+   "stem": "Which of the following statements is true regarding child vaccination?",
+   "options": [
+    "In case of missing a vaccine, the whole course needs to be restarted",
+    "OPV vaccine should not be given to a child whose brother suffers leukemia",
+    "IPV is given within the first 24 hours after birth",
+    "All of the above"
+   ]
+  }
+ },
+ {
+  "sim": 0.6316,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-28",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1012",
+   "answer": 0,
+   "stem": "Which of the following is true about antiepileptic drugs (AEDs)?",
+   "options": [
+    "All AEDs have side effects",
+    "Using multiple drugs is the preferred first-line approach",
+    "All cases of epilepsy should automatically receive AEDs",
+    "AEDs have no long-term adverse effects"
+   ]
+  },
+  "p1": {
+   "id": "pedep-neo-47",
+   "chapter": "neonatal",
+   "source": "Pediatrics endpoint part1.pdf p.890",
+   "answer": 1,
+   "stem": "Which of the following is TRUE about Transient Tachypnea of the Newborn?",
+   "options": [
+    "Oxygen therapy is always required",
+    "It is the most common cause of respiratory distress in term infants",
+    "It persists for several weeks",
+    "Chest X-ray is always normal"
+   ]
+  }
+ },
+ {
+  "sim": 0.6316,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-28",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1012",
+   "answer": 0,
+   "stem": "Which of the following is true about antiepileptic drugs (AEDs)?",
+   "options": [
+    "All AEDs have side effects",
+    "Using multiple drugs is the preferred first-line approach",
+    "All cases of epilepsy should automatically receive AEDs",
+    "AEDs have no long-term adverse effects"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf1-31",
+   "chapter": "perinatal-rd",
+   "source": "Pediatrics endpoint part1.pdf p.1220",
+   "answer": 1,
+   "stem": "Which of the following is TRUE about transient tachypnea of the newborn?",
+   "options": [
+    "Commonly associated with vaginal delivery",
+    "Commonly associated with term delivery",
+    "Usually treated with mechanical ventilation",
+    "Caused by surfactant deficiency"
+   ]
+  }
+ },
+ {
+  "sim": 0.6316,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-32",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1020",
+   "answer": 0,
+   "stem": "Which of the following is true about antiepileptic drug treatment?",
+   "options": [
+    "Not all cases need treatment",
+    "All patients must start multidrug therapy",
+    "All seizures require immediate lifelong AEDs",
+    "AEDs have no side effects"
+   ]
+  },
+  "p1": {
+   "id": "pedep-neo-47",
+   "chapter": "neonatal",
+   "source": "Pediatrics endpoint part1.pdf p.890",
+   "answer": 1,
+   "stem": "Which of the following is TRUE about Transient Tachypnea of the Newborn?",
+   "options": [
+    "Oxygen therapy is always required",
+    "It is the most common cause of respiratory distress in term infants",
+    "It persists for several weeks",
+    "Chest X-ray is always normal"
+   ]
+  }
+ },
+ {
+  "sim": 0.6316,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-32",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1020",
+   "answer": 0,
+   "stem": "Which of the following is true about antiepileptic drug treatment?",
+   "options": [
+    "Not all cases need treatment",
+    "All patients must start multidrug therapy",
+    "All seizures require immediate lifelong AEDs",
+    "AEDs have no side effects"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf1-31",
+   "chapter": "perinatal-rd",
+   "source": "Pediatrics endpoint part1.pdf p.1220",
+   "answer": 1,
+   "stem": "Which of the following is TRUE about transient tachypnea of the newborn?",
+   "options": [
+    "Commonly associated with vaginal delivery",
+    "Commonly associated with term delivery",
+    "Usually treated with mechanical ventilation",
+    "Caused by surfactant deficiency"
+   ]
+  }
+ },
+ {
+  "sim": 0.6316,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-liv-11",
+   "chapter": "liver-hep",
+   "source": "Pediatrics endpoint part2.pdf p.1189",
+   "answer": 2,
+   "stem": "Which of the following is true regarding hepatitis A?",
+   "options": [
+    "It is a DNA virus which is spread by faecal–oral transmission.",
+    "It requires urgent treatment",
+    "Cure is usually achieved after 4 weeks of infection",
+    "Chronic liver disease usually occurs"
+   ]
+  },
+  "p1": {
+   "id": "pedep-neo-49",
+   "chapter": "neonatal",
+   "source": "Pediatrics endpoint part1.pdf p.894",
+   "answer": 0,
+   "stem": "Which of the following is TRUE regarding oxygen therapy in preterm infants?",
+   "options": [
+    "Low oxygen saturation increases risk of NEC and death",
+    "High oxygen saturation reduces risk of retinopathy of prematurity",
+    "Initial therapy should begin with 100% oxygen",
+    "Oxygen therapy has no effect on mortality"
+   ]
+  }
+ },
+ {
+  "sim": 0.6316,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-liv-20",
+   "chapter": "liver-hep",
+   "source": "Pediatrics endpoint part2.pdf p.1209",
+   "answer": 1,
+   "stem": "Which of the following is true about acute viral hepatitis?",
+   "options": [
+    "Abdominal pain, nausea, and vomiting aren't common signs",
+    "Jaundice is not evident in all cases",
+    "All cases present with dark urine and clay-colored stools",
+    "All patients become icteric and febrile"
+   ]
+  },
+  "p1": {
+   "id": "pedep-neo-47",
+   "chapter": "neonatal",
+   "source": "Pediatrics endpoint part1.pdf p.890",
+   "answer": 1,
+   "stem": "Which of the following is TRUE about Transient Tachypnea of the Newborn?",
+   "options": [
+    "Oxygen therapy is always required",
+    "It is the most common cause of respiratory distress in term infants",
+    "It persists for several weeks",
+    "Chest X-ray is always normal"
+   ]
+  }
+ },
+ {
+  "sim": 0.6316,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-liv-20",
+   "chapter": "liver-hep",
+   "source": "Pediatrics endpoint part2.pdf p.1209",
+   "answer": 1,
+   "stem": "Which of the following is true about acute viral hepatitis?",
+   "options": [
+    "Abdominal pain, nausea, and vomiting aren't common signs",
+    "Jaundice is not evident in all cases",
+    "All cases present with dark urine and clay-colored stools",
+    "All patients become icteric and febrile"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf1-31",
+   "chapter": "perinatal-rd",
+   "source": "Pediatrics endpoint part1.pdf p.1220",
+   "answer": 1,
+   "stem": "Which of the following is TRUE about transient tachypnea of the newborn?",
+   "options": [
+    "Commonly associated with vaginal delivery",
+    "Commonly associated with term delivery",
+    "Usually treated with mechanical ventilation",
+    "Caused by surfactant deficiency"
+   ]
+  }
+ },
+ {
+  "sim": 0.6316,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-mf1-79",
+   "chapter": "neuro-cp",
+   "source": "Pediatrics endpoint part2.pdf p.1428",
+   "answer": 0,
+   "stem": "What is the most common cause of cerebral palsy?",
+   "options": [
+    "Prenatal cause",
+    "Perinatal brain injury",
+    "Neonatal infections",
+    "Accidents",
+    "Meningitis/encephalitis"
+   ]
+  },
+  "p1": {
+   "id": "pedep-gi-64",
+   "chapter": "gi-abdopain",
+   "source": "Pediatrics endpoint part1.pdf p.542 (reprinted word for word in Model Final Exam 2, p.1408; reprinted word for word in Model Final Exam 3, p.1505)",
+   "answer": 2,
+   "stem": "What is the most common cause of recurrent abdominal pain in children?",
+   "options": [
+    "Appendicitis",
+    "Ascariasis",
+    "Functional",
+    "Hepatitis"
+   ]
+  }
+ },
+ {
+  "sim": 0.625,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-hem-83",
+   "chapter": "haematology",
+   "source": "Pediatrics endpoint part2.pdf p.436",
+   "answer": 1,
+   "stem": "Which of the following is TRUE about thalassemia?",
+   "options": [
+    "Increased serum ferritin",
+    "Presence of target cells in blood film",
+    "Macrocytosis is a typical finding",
+    "It is not inherited"
+   ]
+  },
+  "p1": {
+   "id": "pedep-nut-27",
+   "chapter": "nutrition-feed",
+   "source": "Pediatrics endpoint part1.pdf p.290",
+   "answer": 1,
+   "stem": "Which of the following is NOT true about breast feeding?",
+   "options": [
+    "Recommended food for infants both term and preterm",
+    "50% of energy from proteins",
+    "Contains immunological benefits (i.e. IgA, active lymphocytes)",
+    "Promotes growth of lactobacillus in GI",
+    "Decreases incidence of allergic disorders"
+   ]
+  }
+ },
+ {
+  "sim": 0.625,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-hem-83",
+   "chapter": "haematology",
+   "source": "Pediatrics endpoint part2.pdf p.436",
+   "answer": 1,
+   "stem": "Which of the following is TRUE about thalassemia?",
+   "options": [
+    "Increased serum ferritin",
+    "Presence of target cells in blood film",
+    "Macrocytosis is a typical finding",
+    "It is not inherited"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf1-78",
+   "chapter": "renal-cakut",
+   "source": "Pediatrics endpoint part1.pdf p.1316",
+   "answer": 2,
+   "stem": "Which of the following is true regarding posterior urethral valves?",
+   "options": [
+    "Anterior urethral valves are more common in males",
+    "Type 3 is the most common",
+    "Bilateral hydronephrosis in a baby male should always be investigated with urgent micturating cystogram",
+    "They always present with bilateral upper tract dilatation"
+   ]
+  }
+ },
+ {
+  "sim": 0.625,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-hem-83",
+   "chapter": "haematology",
+   "source": "Pediatrics endpoint part2.pdf p.436",
+   "answer": 1,
+   "stem": "Which of the following is TRUE about thalassemia?",
+   "options": [
+    "Increased serum ferritin",
+    "Presence of target cells in blood film",
+    "Macrocytosis is a typical finding",
+    "It is not inherited"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-80",
+   "chapter": "gi-abdopain",
+   "source": "Pediatrics endpoint part1.pdf p.1642",
+   "answer": 3,
+   "stem": "Which of the following is TRUE regarding congenital inguinal hernia?",
+   "options": [
+    "It is more common on the left side in females",
+    "Herniotomy should be delayed until the child is over 2 years old",
+    "The most common presenting age is between 1–2 years",
+    "Incarcerated hernia can cause infarction of the testis in the very young"
+   ]
+  }
+ },
+ {
+  "sim": 0.625,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-hem-83",
+   "chapter": "haematology",
+   "source": "Pediatrics endpoint part2.pdf p.436",
+   "answer": 1,
+   "stem": "Which of the following is TRUE about thalassemia?",
+   "options": [
+    "Increased serum ferritin",
+    "Presence of target cells in blood film",
+    "Macrocytosis is a typical finding",
+    "It is not inherited"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf4-50",
+   "chapter": "neonatal",
+   "source": "Pediatrics endpoint part1.pdf p.1744",
+   "answer": 1,
+   "stem": "Which of the following is true regarding breast milk jaundice?",
+   "options": [
+    "Conjugated",
+    "May be prolonged >2 months",
+    "Managed by advice to switch to formula feeding",
+    "It causes pale gray stool"
+   ]
+  }
+ },
+ {
+  "sim": 0.625,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-hem-83",
+   "chapter": "haematology",
+   "source": "Pediatrics endpoint part2.pdf p.436",
+   "answer": 1,
+   "stem": "Which of the following is TRUE about thalassemia?",
+   "options": [
+    "Increased serum ferritin",
+    "Presence of target cells in blood film",
+    "Macrocytosis is a typical finding",
+    "It is not inherited"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf4-65",
+   "chapter": "renal-cakut",
+   "source": "Pediatrics endpoint part1.pdf p.1774",
+   "answer": 1,
+   "stem": "Which of the following is TRUE regarding undescended testes (cryptorchidism)?",
+   "options": [
+    "Always approached using an inguinal approach",
+    "Ectopic testes may be found in the perineum",
+    "Usually requires a two-stage procedure",
+    "Are bilateral in 50% of cases"
+   ]
+  }
+ },
+ {
+  "sim": 0.625,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-res-59",
+   "chapter": "resp-bronch",
+   "source": "Pediatrics endpoint part2.pdf p.593",
+   "answer": 0,
+   "stem": "Which of the following statements about bronchiolitis is true?",
+   "options": [
+    "It is caused by viruses only",
+    "Antibiotics are recommended in severe cases",
+    "Chest X-ray is diagnostic",
+    "It is most commonly caused by a bacterial infection"
+   ]
+  },
+  "p1": {
+   "id": "pedep-emg-61",
+   "chapter": "emergencies",
+   "source": "Pediatrics endpoint part1.pdf p.701 (reprinted word for word in Model Final Exam 1, p.1189; reprinted in Model Final Exam 4, p.1732, with the five options reworded and the anaphylaxis and gastroenteritis statements exchanged, and with the key option broken off before its noun as \"Mottled, pale and cold skin is found in compensated\"; the key is the same statement and stands in the same position)",
+   "answer": 2,
+   "stem": "Which of the following statements concerning shock is TRUE?",
+   "options": [
+    "Dehydration due to gastroenteritis can cause shock due to maldistribution of fluid",
+    "Bradycardia occurs in compensated shock",
+    "Mottled, pale and cold skin is a sign of compensated shock",
+    "Anaphylaxis can cause shock due to hypovolemia",
+    "Decreased urine output is a sign of decompensated shock"
+   ]
+  }
+ },
+ {
+  "sim": 0.625,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-res-59",
+   "chapter": "resp-bronch",
+   "source": "Pediatrics endpoint part2.pdf p.593",
+   "answer": 0,
+   "stem": "Which of the following statements about bronchiolitis is true?",
+   "options": [
+    "It is caused by viruses only",
+    "Antibiotics are recommended in severe cases",
+    "Chest X-ray is diagnostic",
+    "It is most commonly caused by a bacterial infection"
+   ]
+  },
+  "p1": {
+   "id": "pedep-inf-7",
+   "chapter": "infection-vaccine",
+   "source": "Pediatrics endpoint part1.pdf p.979",
+   "answer": 0,
+   "stem": "Which of the following statements about vaccines is correct?",
+   "options": [
+    "OPV shouldn't be given to immunocompromised individuals",
+    "MMR is contraindicated in all children under 1 year of age",
+    "Hepatitis B vaccine is contraindicated in newborns of HBsAg-positive mothers",
+    "BCG is never given after the neonatal period"
+   ]
+  }
+ },
+ {
+  "sim": 0.625,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-res-59",
+   "chapter": "resp-bronch",
+   "source": "Pediatrics endpoint part2.pdf p.593",
+   "answer": 0,
+   "stem": "Which of the following statements about bronchiolitis is true?",
+   "options": [
+    "It is caused by viruses only",
+    "Antibiotics are recommended in severe cases",
+    "Chest X-ray is diagnostic",
+    "It is most commonly caused by a bacterial infection"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-54",
+   "chapter": "infection-vaccine",
+   "source": "Pediatrics endpoint part1.pdf p.1591",
+   "answer": 4,
+   "stem": "Which of the following statements concerning immunization is TRUE?",
+   "options": [
+    "Vaccines should not be given if the baby has a runny nose.",
+    "Oral polio vaccine is safe in immune-compromised children.",
+    "Hepatitis A vaccine is given immediately after birth in Egypt.",
+    "BCG is a killed vaccine.",
+    "MMR vaccine is a live attenuated virus vaccine."
+   ]
+  }
+ },
+ {
+  "sim": 0.625,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-28",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1012",
+   "answer": 0,
+   "stem": "Which of the following is true about antiepileptic drugs (AEDs)?",
+   "options": [
+    "All AEDs have side effects",
+    "Using multiple drugs is the preferred first-line approach",
+    "All cases of epilepsy should automatically receive AEDs",
+    "AEDs have no long-term adverse effects"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf1-73",
+   "chapter": "perinatal",
+   "source": "Pediatrics endpoint part1.pdf p.1306",
+   "answer": 2,
+   "stem": "Which of the following is true regarding gastroschisis?",
+   "options": [
+    "The defect is usually to the left of the midline.",
+    "It is usually associated with chromosomal anomalies.",
+    "The most common association is intestinal atresia",
+    "Cardiac anomalies are seen in 10% of cases."
+   ]
+  }
+ },
+ {
+  "sim": 0.625,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-32",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1020",
+   "answer": 0,
+   "stem": "Which of the following is true about antiepileptic drug treatment?",
+   "options": [
+    "Not all cases need treatment",
+    "All patients must start multidrug therapy",
+    "All seizures require immediate lifelong AEDs",
+    "AEDs have no side effects"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf1-73",
+   "chapter": "perinatal",
+   "source": "Pediatrics endpoint part1.pdf p.1306",
+   "answer": 2,
+   "stem": "Which of the following is true regarding gastroschisis?",
+   "options": [
+    "The defect is usually to the left of the midline.",
+    "It is usually associated with chromosomal anomalies.",
+    "The most common association is intestinal atresia",
+    "Cardiac anomalies are seen in 10% of cases."
+   ]
+  }
+ },
+ {
+  "sim": 0.625,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-53",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1063",
+   "answer": 2,
+   "stem": "Which of the following statements about headache is true?",
+   "options": [
+    "Migraine is most commonly unilateral",
+    "Migraine is most commonly with aura",
+    "Tension headache is symmetrical and gradual",
+    "Cluster headache is most common in children"
+   ]
+  },
+  "p1": {
+   "id": "pedep-emg-61",
+   "chapter": "emergencies",
+   "source": "Pediatrics endpoint part1.pdf p.701 (reprinted word for word in Model Final Exam 1, p.1189; reprinted in Model Final Exam 4, p.1732, with the five options reworded and the anaphylaxis and gastroenteritis statements exchanged, and with the key option broken off before its noun as \"Mottled, pale and cold skin is found in compensated\"; the key is the same statement and stands in the same position)",
+   "answer": 2,
+   "stem": "Which of the following statements concerning shock is TRUE?",
+   "options": [
+    "Dehydration due to gastroenteritis can cause shock due to maldistribution of fluid",
+    "Bradycardia occurs in compensated shock",
+    "Mottled, pale and cold skin is a sign of compensated shock",
+    "Anaphylaxis can cause shock due to hypovolemia",
+    "Decreased urine output is a sign of decompensated shock"
+   ]
+  }
+ },
+ {
+  "sim": 0.625,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-53",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1063",
+   "answer": 2,
+   "stem": "Which of the following statements about headache is true?",
+   "options": [
+    "Migraine is most commonly unilateral",
+    "Migraine is most commonly with aura",
+    "Tension headache is symmetrical and gradual",
+    "Cluster headache is most common in children"
+   ]
+  },
+  "p1": {
+   "id": "pedep-inf-7",
+   "chapter": "infection-vaccine",
+   "source": "Pediatrics endpoint part1.pdf p.979",
+   "answer": 0,
+   "stem": "Which of the following statements about vaccines is correct?",
+   "options": [
+    "OPV shouldn't be given to immunocompromised individuals",
+    "MMR is contraindicated in all children under 1 year of age",
+    "Hepatitis B vaccine is contraindicated in newborns of HBsAg-positive mothers",
+    "BCG is never given after the neonatal period"
+   ]
+  }
+ },
+ {
+  "sim": 0.625,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-53",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1063",
+   "answer": 2,
+   "stem": "Which of the following statements about headache is true?",
+   "options": [
+    "Migraine is most commonly unilateral",
+    "Migraine is most commonly with aura",
+    "Tension headache is symmetrical and gradual",
+    "Cluster headache is most common in children"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-54",
+   "chapter": "infection-vaccine",
+   "source": "Pediatrics endpoint part1.pdf p.1591",
+   "answer": 4,
+   "stem": "Which of the following statements concerning immunization is TRUE?",
+   "options": [
+    "Vaccines should not be given if the baby has a runny nose.",
+    "Oral polio vaccine is safe in immune-compromised children.",
+    "Hepatitis A vaccine is given immediately after birth in Egypt.",
+    "BCG is a killed vaccine.",
+    "MMR vaccine is a live attenuated virus vaccine."
+   ]
+  }
+ },
+ {
+  "sim": 0.625,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-liv-11",
+   "chapter": "liver-hep",
+   "source": "Pediatrics endpoint part2.pdf p.1189",
+   "answer": 2,
+   "stem": "Which of the following is true regarding hepatitis A?",
+   "options": [
+    "It is a DNA virus which is spread by faecal–oral transmission.",
+    "It requires urgent treatment",
+    "Cure is usually achieved after 4 weeks of infection",
+    "Chronic liver disease usually occurs"
+   ]
+  },
+  "p1": {
+   "id": "pedep-per-18",
+   "chapter": "cardiac",
+   "source": "Pediatrics endpoint part1.pdf p.762",
+   "answer": 2,
+   "stem": "In intrauterine life, which of the following is TRUE?",
+   "options": [
+    "Oxygen saturation is higher in the lower body than upper body",
+    "Blood passes from the aorta to the pulmonary artery via the ductus arteriosus",
+    "There is a shift to the left of the oxygen dissociation curve of fetal hemoglobin",
+    "Fetal hypoxia results in secondary apnea after birth"
+   ]
+  }
+ },
+ {
+  "sim": 0.625,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-liv-11",
+   "chapter": "liver-hep",
+   "source": "Pediatrics endpoint part2.pdf p.1189",
+   "answer": 2,
+   "stem": "Which of the following is true regarding hepatitis A?",
+   "options": [
+    "It is a DNA virus which is spread by faecal–oral transmission.",
+    "It requires urgent treatment",
+    "Cure is usually achieved after 4 weeks of infection",
+    "Chronic liver disease usually occurs"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-43",
+   "chapter": "neonatal-sepsis",
+   "source": "Pediatrics endpoint part1.pdf p.1569 (also printed in Pediatrics endpoint part2.pdf p.557, with the stem clauses reordered; the options and the key are unchanged)",
+   "answer": 2,
+   "stem": "Which of the following is true about neonatal sepsis?",
+   "options": [
+    "A heart murmur is usually present.",
+    "Early-onset sepsis is usually acquired via the placenta following maternal infection.",
+    "Pneumonia is the commonest presentation in early-onset sepsis.",
+    "High fever is commonly present.",
+    "CBC is done to detect neutrophilia."
+   ]
+  }
+ },
+ {
+  "sim": 0.625,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-liv-11",
+   "chapter": "liver-hep",
+   "source": "Pediatrics endpoint part2.pdf p.1189",
+   "answer": 2,
+   "stem": "Which of the following is true regarding hepatitis A?",
+   "options": [
+    "It is a DNA virus which is spread by faecal–oral transmission.",
+    "It requires urgent treatment",
+    "Cure is usually achieved after 4 weeks of infection",
+    "Chronic liver disease usually occurs"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-75",
+   "chapter": "gi-abdopain",
+   "source": "Pediatrics endpoint part1.pdf p.1632",
+   "answer": 3,
+   "stem": "Which of the following is NOT TRUE regarding intussusception?",
+   "options": [
+    "More common in boys",
+    "Can occur secondary to Meckel's diverticulum",
+    "Bilious vomiting is not always present",
+    "Bleeding per rectum is the most common presenting symptom"
+   ]
+  }
+ },
+ {
+  "sim": 0.625,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-liv-20",
+   "chapter": "liver-hep",
+   "source": "Pediatrics endpoint part2.pdf p.1209",
+   "answer": 1,
+   "stem": "Which of the following is true about acute viral hepatitis?",
+   "options": [
+    "Abdominal pain, nausea, and vomiting aren't common signs",
+    "Jaundice is not evident in all cases",
+    "All cases present with dark urine and clay-colored stools",
+    "All patients become icteric and febrile"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf1-73",
+   "chapter": "perinatal",
+   "source": "Pediatrics endpoint part1.pdf p.1306",
+   "answer": 2,
+   "stem": "Which of the following is true regarding gastroschisis?",
+   "options": [
+    "The defect is usually to the left of the midline.",
+    "It is usually associated with chromosomal anomalies.",
+    "The most common association is intestinal atresia",
+    "Cardiac anomalies are seen in 10% of cases."
+   ]
+  }
+ },
+ {
+  "sim": 0.6154,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-mal-23",
+   "chapter": "malignant",
+   "source": "Pediatrics endpoint part2.pdf p.1268",
+   "answer": 0,
+   "stem": "Which of the following is the most common malignant tumor in children?",
+   "options": [
+    "Leukemia",
+    "Lymphoma",
+    "Kaposi sarcoma",
+    "Wilm’s tumor"
+   ]
+  },
+  "p1": {
+   "id": "pedep-inf-25",
+   "chapter": "infection-bact",
+   "source": "Pediatrics endpoint part1.pdf p.1015",
+   "answer": 0,
+   "stem": "Which of the following is the most common causative organism of acute otitis media in children?",
+   "options": [
+    "Streptococcus pneumoniae",
+    "Staphylococcus aureus",
+    "Adenovirus",
+    "Herpes simplex virus",
+    "Influenza virus"
+   ]
+  }
+ },
+ {
+  "sim": 0.6087,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-mal-23",
+   "chapter": "malignant",
+   "source": "Pediatrics endpoint part2.pdf p.1268",
+   "answer": 0,
+   "stem": "Which of the following is the most common malignant tumor in children?",
+   "options": [
+    "Leukemia",
+    "Lymphoma",
+    "Kaposi sarcoma",
+    "Wilm’s tumor"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-50",
+   "chapter": "emergencies",
+   "source": "Pediatrics endpoint part1.pdf p.1583 (printed again, word for word, on p.1599 of the same exam)",
+   "answer": 4,
+   "stem": "Which of the following is the most common cause of pediatric cardiopulmonary arrest?",
+   "options": [
+    "Cardiac arrhythmias",
+    "Metabolic abnormalities",
+    "Overwhelming infections",
+    "Trauma",
+    "Respiratory problems"
+   ]
+  }
+ },
+ {
+  "sim": 0.6,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-dp-25",
+   "chapter": "dev-problems",
+   "source": "Pediatrics endpoint part2.pdf p.145 (reprinted at p.1024)",
+   "answer": 0,
+   "stem": "Which of the following is not true about cerebral palsy?",
+   "options": [
+    "Meningitis/encephalitis is the most common cause.",
+    "Preterm infants are more vulnerable.",
+    "Spastic form is the most common.",
+    "Clinical manifestations can evolve over time.",
+    "Often accompanied by disturbances of cognition."
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf4-64",
+   "chapter": "perinatal-rd",
+   "source": "Pediatrics endpoint part1.pdf p.1772",
+   "answer": 3,
+   "stem": "Which of the following is NOT true regarding congenital diaphragmatic hernia (CDH)?",
+   "options": [
+    "May be diagnosed antenatally",
+    "Is usually left-sided",
+    "May be associated with pulmonary hypoplasia",
+    "Repair is required within the next 48 hours"
+   ]
+  }
+ },
+ {
+  "sim": 0.6,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-hem-51",
+   "chapter": "haematology",
+   "source": "Pediatrics endpoint part2.pdf p.371",
+   "answer": 0,
+   "stem": "What is the most common cause of anemia in school-aged children?",
+   "options": [
+    "Iron deficiency anemia",
+    "Thalassemia",
+    "Sickle cell anemia",
+    "Megaloblastic anemia"
+   ]
+  },
+  "p1": {
+   "id": "pedep-gi-65",
+   "chapter": "gi-diarrhoea",
+   "source": "Pediatrics endpoint part1.pdf p.544 (reprinted word for word in Model Final Exam 3, p.1517; reprinted word for word in Model Final Exam 4, p.1764)",
+   "answer": 3,
+   "stem": "What is the most common cause of gastroenteritis in children?",
+   "options": [
+    "Shigella",
+    "Giardia",
+    "Cryptosporidium",
+    "Viruses",
+    "Campylobacter jejuni"
+   ]
+  }
+ },
+ {
+  "sim": 0.6,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-hem-65",
+   "chapter": "haematology",
+   "source": "Pediatrics endpoint part2.pdf p.399",
+   "answer": 2,
+   "stem": "Which of the following is the most common cause of aplastic crisis in a patient with sickle cell disease?",
+   "options": [
+    "Dehydration",
+    "Respiratory syncytial virus infection",
+    "Human parvovirus B19 infection",
+    "Repeated blood transfusion",
+    "Hemophilus influenzae septicemia"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-50",
+   "chapter": "emergencies",
+   "source": "Pediatrics endpoint part1.pdf p.1583 (printed again, word for word, on p.1599 of the same exam)",
+   "answer": 4,
+   "stem": "Which of the following is the most common cause of pediatric cardiopulmonary arrest?",
+   "options": [
+    "Cardiac arrhythmias",
+    "Metabolic abnormalities",
+    "Overwhelming infections",
+    "Trauma",
+    "Respiratory problems"
+   ]
+  }
+ },
+ {
+  "sim": 0.6,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-hem-88",
+   "chapter": "haematology",
+   "source": "Pediatrics endpoint part2.pdf p.446",
+   "answer": 3,
+   "stem": "Which of the following is NOT a cause of hydrops fetalis?",
+   "options": [
+    "Rh incompatibility",
+    "ABO incompatibility",
+    "Alpha thalassemia major",
+    "Beta thalassemia major"
+   ]
+  },
+  "p1": {
+   "id": "pedep-inf-81",
+   "chapter": "infection-vaccine",
+   "source": "Pediatrics endpoint part1.pdf p.1127",
+   "answer": 4,
+   "stem": "Which of the following is not a contraindication to live vaccination?",
+   "options": [
+    "Acute fever >38°C",
+    "High-dose steroids",
+    "Previous severe reaction",
+    "Immunodeficiency",
+    "Weight <2.5 kg"
+   ]
+  }
+ },
+ {
+  "sim": 0.6,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-res-39",
+   "chapter": "resp-bronch",
+   "source": "Pediatrics endpoint part2.pdf p.553",
+   "answer": 3,
+   "stem": "Which of the following statements is true in acute bronchiolitis?",
+   "options": [
+    "Wheezing is due to spasm of smooth muscles of bronchioles",
+    "Inhaled salbutamol is the treatment of choice",
+    "Chest X-ray is diagnostic",
+    "Feeding difficulties are common",
+    "Antibiotics are indicated in severe cases"
+   ]
+  },
+  "p1": {
+   "id": "pedep-neo-32",
+   "chapter": "neonatal",
+   "source": "Pediatrics endpoint part1.pdf p.860 (reprinted word for word in Model Final Exam 3, p.1589)",
+   "answer": 0,
+   "stem": "Which of the following statements is TRUE about Transient tachypnea of the newborn?",
+   "options": [
+    "Commonly associated with caesarian section delivery",
+    "Commonly associated with preterm delivery",
+    "Usually treated with mechanical ventilation",
+    "Caused by surfactant deficiency",
+    "Mild prenatal infection is a common association"
+   ]
+  }
+ },
+ {
+  "sim": 0.6,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-res-40",
+   "chapter": "resp-pneumonia",
+   "source": "Pediatrics endpoint part2.pdf p.555",
+   "answer": 3,
+   "stem": "Which of the following is NOT a complication of whooping cough?",
+   "options": [
+    "Pneumonia",
+    "Intracranial hemorrhage",
+    "Convulsions",
+    "Hemolytic anemia",
+    "Subconjunctival hemorrhage"
+   ]
+  },
+  "p1": {
+   "id": "pedep-inf-81",
+   "chapter": "infection-vaccine",
+   "source": "Pediatrics endpoint part1.pdf p.1127",
+   "answer": 4,
+   "stem": "Which of the following is not a contraindication to live vaccination?",
+   "options": [
+    "Acute fever >38°C",
+    "High-dose steroids",
+    "Previous severe reaction",
+    "Immunodeficiency",
+    "Weight <2.5 kg"
+   ]
+  }
+ },
+ {
+  "sim": 0.6,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-ren-36",
+   "chapter": "renal-uti",
+   "source": "Pediatrics endpoint part2.pdf p.890 (reprinted at p.916)",
+   "answer": 3,
+   "stem": "Which of the following is not a common pathogen in UTI?",
+   "options": [
+    "E.coli",
+    "Klebsiella",
+    "S.Faecalis",
+    "Staph aureus"
+   ]
+  },
+  "p1": {
+   "id": "pedep-inf-81",
+   "chapter": "infection-vaccine",
+   "source": "Pediatrics endpoint part1.pdf p.1127",
+   "answer": 4,
+   "stem": "Which of the following is not a contraindication to live vaccination?",
+   "options": [
+    "Acute fever >38°C",
+    "High-dose steroids",
+    "Previous severe reaction",
+    "Immunodeficiency",
+    "Weight <2.5 kg"
+   ]
+  }
+ },
+ {
+  "sim": 0.6,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-end-20",
+   "chapter": "endo-thyroid",
+   "source": "Pediatrics endpoint part2.pdf p.1132",
+   "answer": 4,
+   "stem": "Which of the following is not a manifestation of untreated congenital hypothyroidism?",
+   "options": [
+    "Puffy eyes",
+    "Constipation",
+    "Hoarse voice",
+    "Delayed motor and mental milestones",
+    "Overweight due to voracious appetite"
+   ]
+  },
+  "p1": {
+   "id": "pedep-nut-20",
+   "chapter": "nutrition-pem",
+   "source": "Pediatrics endpoint part1.pdf p.276",
+   "answer": 0,
+   "stem": "Which of the following is NOT a feature of marasmus?",
+   "options": [
+    "Looking apathetic",
+    "No edema",
+    "Gross muscle wasting",
+    "Loss of subcutaneous fat",
+    "Weight for height is >3SD below the median in growth chart"
+   ]
+  }
+ },
+ {
+  "sim": 0.6,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-end-20",
+   "chapter": "endo-thyroid",
+   "source": "Pediatrics endpoint part2.pdf p.1132",
+   "answer": 4,
+   "stem": "Which of the following is not a manifestation of untreated congenital hypothyroidism?",
+   "options": [
+    "Puffy eyes",
+    "Constipation",
+    "Hoarse voice",
+    "Delayed motor and mental milestones",
+    "Overweight due to voracious appetite"
+   ]
+  },
+  "p1": {
+   "id": "pedep-inf-29",
+   "chapter": "infection-vaccine",
+   "source": "Pediatrics endpoint part1.pdf p.1023",
+   "answer": 2,
+   "stem": "Which of the following is NOT a live attenuated vaccine?",
+   "options": [
+    "Varicella",
+    "Rubella",
+    "Inactivated influenza",
+    "MMR"
+   ]
+  }
+ },
+ {
+  "sim": 0.6,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-end-20",
+   "chapter": "endo-thyroid",
+   "source": "Pediatrics endpoint part2.pdf p.1132",
+   "answer": 4,
+   "stem": "Which of the following is not a manifestation of untreated congenital hypothyroidism?",
+   "options": [
+    "Puffy eyes",
+    "Constipation",
+    "Hoarse voice",
+    "Delayed motor and mental milestones",
+    "Overweight due to voracious appetite"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf2-65",
+   "chapter": "renal-cakut",
+   "source": "Pediatrics endpoint part1.pdf p.1452",
+   "answer": 0,
+   "stem": "Which of the following is not a feature of hypospadias?",
+   "options": [
+    "Dorsal chordee",
+    "Hooded foreskin",
+    "Ventrally placed meatus",
+    "Proximal meatus"
+   ]
+  }
+ },
+ {
+  "sim": 0.6,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-mf1-35",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1340",
+   "answer": 3,
+   "stem": "Which of the following is a feature of a typical febrile seizure?",
+   "options": [
+    "Age usually before 6 months",
+    "Focal or generalized",
+    "Lasts more than 15 minutes",
+    "No post-ictal manifestations",
+    "Recurs within 24 hours"
+   ]
+  },
+  "p1": {
+   "id": "pedep-nut-20",
+   "chapter": "nutrition-pem",
+   "source": "Pediatrics endpoint part1.pdf p.276",
+   "answer": 0,
+   "stem": "Which of the following is NOT a feature of marasmus?",
+   "options": [
+    "Looking apathetic",
+    "No edema",
+    "Gross muscle wasting",
+    "Loss of subcutaneous fat",
+    "Weight for height is >3SD below the median in growth chart"
+   ]
+  }
+ },
+ {
+  "sim": 0.6,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-mf1-35",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1340",
+   "answer": 3,
+   "stem": "Which of the following is a feature of a typical febrile seizure?",
+   "options": [
+    "Age usually before 6 months",
+    "Focal or generalized",
+    "Lasts more than 15 minutes",
+    "No post-ictal manifestations",
+    "Recurs within 24 hours"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf2-65",
+   "chapter": "renal-cakut",
+   "source": "Pediatrics endpoint part1.pdf p.1452",
+   "answer": 0,
+   "stem": "Which of the following is not a feature of hypospadias?",
+   "options": [
+    "Dorsal chordee",
+    "Hooded foreskin",
+    "Ventrally placed meatus",
+    "Proximal meatus"
+   ]
+  }
+ },
+ {
+  "sim": 0.5926,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-car-52",
+   "chapter": "cardiac-acq",
+   "source": "Pediatrics endpoint part2.pdf p.733",
+   "answer": 2,
+   "stem": "Which of the following statements about rheumatic fever is most factually correct?",
+   "options": [
+    "PR prolongation on the ECG is one of the major diagnostic criteria",
+    "Prophylactic antibiotics should be stopped after 3 months",
+    "Rheumatic fever is caused by an infection with group A β-hemolytic Streptococcus species",
+    "The most common cardiac manifestation of rheumatic fever is an isolated endocarditis, Occurring in over 50% of cases",
+    "The most commonly occurring major criterion for diagnosing rheumatic fever is polyarthritis"
+   ]
+  },
+  "p1": {
+   "id": "pedep-nut-54",
+   "chapter": "nutrition-feed",
+   "source": "Pediatrics endpoint part1.pdf p.344 (the explanation box is printed alone on p.345)",
+   "answer": 0,
+   "stem": "Which of the following statements about preterm and term formulae and breast milk is most factually correct?",
+   "options": [
+    "Babies fed on fortified breast milk have a decreased incidence of late-onset sepsis and necrotizing enterocolitis when compared with babies fed on preterm formulae",
+    "Preterm babies fed with fortified breast milk show similar weight gain profiles to preterm babies fed on preterm formula milks",
+    "Preterm formula contains more fat, protein, and electrolytes but the same amount of carbohydrate as term formula or unfortified breast milk",
+    "Preterm formula has a lower sodium content than term formula",
+    "Preterm formula has the same protein content as term formula"
+   ]
+  }
+ },
+ {
+  "sim": 0.5882,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-dp-25",
+   "chapter": "dev-problems",
+   "source": "Pediatrics endpoint part2.pdf p.145 (reprinted at p.1024)",
+   "answer": 0,
+   "stem": "Which of the following is not true about cerebral palsy?",
+   "options": [
+    "Meningitis/encephalitis is the most common cause.",
+    "Preterm infants are more vulnerable.",
+    "Spastic form is the most common.",
+    "Clinical manifestations can evolve over time.",
+    "Often accompanied by disturbances of cognition."
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-43",
+   "chapter": "neonatal-sepsis",
+   "source": "Pediatrics endpoint part1.pdf p.1569 (also printed in Pediatrics endpoint part2.pdf p.557, with the stem clauses reordered; the options and the key are unchanged)",
+   "answer": 2,
+   "stem": "Which of the following is true about neonatal sepsis?",
+   "options": [
+    "A heart murmur is usually present.",
+    "Early-onset sepsis is usually acquired via the placenta following maternal infection.",
+    "Pneumonia is the commonest presentation in early-onset sepsis.",
+    "High fever is commonly present.",
+    "CBC is done to detect neutrophilia."
+   ]
+  }
+ },
+ {
+  "sim": 0.5882,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-gen-9",
+   "chapter": "genetics",
+   "source": "Pediatrics endpoint part2.pdf p.185",
+   "answer": 0,
+   "stem": "Which of the following is an X-linked disease?",
+   "options": [
+    "Favism",
+    "Sickle cell disease",
+    "Thalassemia",
+    "Phenylketonuria"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf2-45",
+   "chapter": "infection-immunity",
+   "source": "Pediatrics endpoint part1.pdf p.1412",
+   "answer": 0,
+   "stem": "Which of the following is an example of passive immunity?",
+   "options": [
+    "Palivizumab (monoclonal antibody to RSV)",
+    "Diphtheria-Tetanus toxoid",
+    "MMR",
+    "Influenza vaccine",
+    "Hepatitis B vaccine given at birth"
+   ]
+  }
+ },
+ {
+  "sim": 0.5882,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-hem-83",
+   "chapter": "haematology",
+   "source": "Pediatrics endpoint part2.pdf p.436",
+   "answer": 1,
+   "stem": "Which of the following is TRUE about thalassemia?",
+   "options": [
+    "Increased serum ferritin",
+    "Presence of target cells in blood film",
+    "Macrocytosis is a typical finding",
+    "It is not inherited"
+   ]
+  },
+  "p1": {
+   "id": "pedep-emg-32",
+   "chapter": "emergencies",
+   "source": "Pediatrics endpoint part1.pdf p.640",
+   "answer": 0,
+   "stem": "Which of the following is true regarding capillary refill time (CRT)?",
+   "options": [
+    "It is affected by cold environment",
+    "It is assessed by pressing on the forehead",
+    "It is not prolonged in compensated (early) shock",
+    "It is considered prolonged if > 4 seconds"
+   ]
+  }
+ },
+ {
+  "sim": 0.5882,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-hem-83",
+   "chapter": "haematology",
+   "source": "Pediatrics endpoint part2.pdf p.436",
+   "answer": 1,
+   "stem": "Which of the following is TRUE about thalassemia?",
+   "options": [
+    "Increased serum ferritin",
+    "Presence of target cells in blood film",
+    "Macrocytosis is a typical finding",
+    "It is not inherited"
+   ]
+  },
+  "p1": {
+   "id": "pedep-inf-31",
+   "chapter": "infection-bact",
+   "source": "Pediatrics endpoint part1.pdf p.1027",
+   "answer": 0,
+   "stem": "Which of the following is true regarding pneumococcal infection in children?",
+   "options": [
+    "It is commonly found in the nasopharynx of healthy children",
+    "It is a viral infection with seasonal outbreaks",
+    "It is primarily transmitted via the fecal-oral route",
+    "It does not cause invasive disease in immunocompromised hosts"
+   ]
+  }
+ },
+ {
+  "sim": 0.5882,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-hem-83",
+   "chapter": "haematology",
+   "source": "Pediatrics endpoint part2.pdf p.436",
+   "answer": 1,
+   "stem": "Which of the following is TRUE about thalassemia?",
+   "options": [
+    "Increased serum ferritin",
+    "Presence of target cells in blood film",
+    "Macrocytosis is a typical finding",
+    "It is not inherited"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf1-70",
+   "chapter": "gi-abdopain",
+   "source": "Pediatrics endpoint part1.pdf p.1300 (reprinted word for word in Model Training Exam 1, p.1815)",
+   "answer": 1,
+   "stem": "Which of the following is true of abdominal pain in children?",
+   "options": [
+    "Severe pain associated with blood in the stools at 6 months old is probably constipation and can be treated with lactulose",
+    "Intussusception is the most common cause of intestinal obstruction in infants after the neonatal period",
+    "Abdominal pain with a rash on the buttocks is typical of idiopathic thrombocytopenic purpura",
+    "In appendicitis, the pain typically starts in the right iliac fossa and moves towards the umbilicus in a few hours"
+   ]
+  }
+ },
+ {
+  "sim": 0.5882,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-hem-83",
+   "chapter": "haematology",
+   "source": "Pediatrics endpoint part2.pdf p.436",
+   "answer": 1,
+   "stem": "Which of the following is TRUE about thalassemia?",
+   "options": [
+    "Increased serum ferritin",
+    "Presence of target cells in blood film",
+    "Macrocytosis is a typical finding",
+    "It is not inherited"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-77",
+   "chapter": "perinatal-rd",
+   "source": "Pediatrics endpoint part1.pdf p.1636",
+   "answer": 2,
+   "stem": "Regarding congenital diaphragmatic hernia (CDH), which of the following is TRUE?",
+   "options": [
+    "Chest tube should be placed",
+    "Baby should be ventilated with bag-mask ventilation",
+    "Nasogastric tube should be placed",
+    "Ventilation with high-frequency oscillation is contraindicated"
+   ]
+  }
+ },
+ {
+  "sim": 0.5882,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-hem-83",
+   "chapter": "haematology",
+   "source": "Pediatrics endpoint part2.pdf p.436",
+   "answer": 1,
+   "stem": "Which of the following is TRUE about thalassemia?",
+   "options": [
+    "Increased serum ferritin",
+    "Presence of target cells in blood film",
+    "Macrocytosis is a typical finding",
+    "It is not inherited"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf4-27",
+   "chapter": "growth-puberty",
+   "source": "Pediatrics endpoint part1.pdf p.1698",
+   "answer": 1,
+   "stem": "Which of the following statements is true about familial short stature?",
+   "options": [
+    "It is usually associated with obesity",
+    "Child's height fluctuates 2 centiles between mid-parental height",
+    "It is a form of delay in attaining normal height",
+    "It leads to achieving normal height eventually"
+   ]
+  }
+ },
+ {
+  "sim": 0.5882,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-res-39",
+   "chapter": "resp-bronch",
+   "source": "Pediatrics endpoint part2.pdf p.553",
+   "answer": 3,
+   "stem": "Which of the following statements is true in acute bronchiolitis?",
+   "options": [
+    "Wheezing is due to spasm of smooth muscles of bronchioles",
+    "Inhaled salbutamol is the treatment of choice",
+    "Chest X-ray is diagnostic",
+    "Feeding difficulties are common",
+    "Antibiotics are indicated in severe cases"
+   ]
+  },
+  "p1": {
+   "id": "pedep-emg-61",
+   "chapter": "emergencies",
+   "source": "Pediatrics endpoint part1.pdf p.701 (reprinted word for word in Model Final Exam 1, p.1189; reprinted in Model Final Exam 4, p.1732, with the five options reworded and the anaphylaxis and gastroenteritis statements exchanged, and with the key option broken off before its noun as \"Mottled, pale and cold skin is found in compensated\"; the key is the same statement and stands in the same position)",
+   "answer": 2,
+   "stem": "Which of the following statements concerning shock is TRUE?",
+   "options": [
+    "Dehydration due to gastroenteritis can cause shock due to maldistribution of fluid",
+    "Bradycardia occurs in compensated shock",
+    "Mottled, pale and cold skin is a sign of compensated shock",
+    "Anaphylaxis can cause shock due to hypovolemia",
+    "Decreased urine output is a sign of decompensated shock"
+   ]
+  }
+ },
+ {
+  "sim": 0.5882,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-res-39",
+   "chapter": "resp-bronch",
+   "source": "Pediatrics endpoint part2.pdf p.553",
+   "answer": 3,
+   "stem": "Which of the following statements is true in acute bronchiolitis?",
+   "options": [
+    "Wheezing is due to spasm of smooth muscles of bronchioles",
+    "Inhaled salbutamol is the treatment of choice",
+    "Chest X-ray is diagnostic",
+    "Feeding difficulties are common",
+    "Antibiotics are indicated in severe cases"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-54",
+   "chapter": "infection-vaccine",
+   "source": "Pediatrics endpoint part1.pdf p.1591",
+   "answer": 4,
+   "stem": "Which of the following statements concerning immunization is TRUE?",
+   "options": [
+    "Vaccines should not be given if the baby has a runny nose.",
+    "Oral polio vaccine is safe in immune-compromised children.",
+    "Hepatitis A vaccine is given immediately after birth in Egypt.",
+    "BCG is a killed vaccine.",
+    "MMR vaccine is a live attenuated virus vaccine."
+   ]
+  }
+ },
+ {
+  "sim": 0.5882,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-res-42",
+   "chapter": "respiratory",
+   "source": "Pediatrics endpoint part2.pdf p.559",
+   "answer": 0,
+   "stem": "Which of the following is considered an asthma preventer?",
+   "options": [
+    "Inhaled corticosteroids",
+    "Short-acting beta agonists (SABA)",
+    "Oral antihistamines",
+    "Intravenous magnesium sulfate"
+   ]
+  },
+  "p1": {
+   "id": "pedep-nut-73",
+   "chapter": "nutrition-feed",
+   "source": "Pediatrics endpoint part1.pdf p.385 (reprinted word for word in Model Final Exam 1, p.1294)",
+   "answer": 3,
+   "stem": "Which of the following is considered a drawback of breastfeeding?",
+   "options": [
+    "Reduces the risk of diabetes mellitus",
+    "Promotes maternal-child bonding",
+    "Provides passive immunity to the infant",
+    "May be harmful in some genetic disorders"
+   ]
+  }
+ },
+ {
+  "sim": 0.5882,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-res-59",
+   "chapter": "resp-bronch",
+   "source": "Pediatrics endpoint part2.pdf p.593",
+   "answer": 0,
+   "stem": "Which of the following statements about bronchiolitis is true?",
+   "options": [
+    "It is caused by viruses only",
+    "Antibiotics are recommended in severe cases",
+    "Chest X-ray is diagnostic",
+    "It is most commonly caused by a bacterial infection"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-62",
+   "chapter": "gastroenterology",
+   "source": "Pediatrics endpoint part1.pdf p.1606",
+   "answer": 0,
+   "stem": "Which of the following statements regarding duodenal atresia is true?",
+   "options": [
+    "Around 30% of these infants have Trisomy 21 (Down syndrome).",
+    "When associated with an annular pancreas, division of the pancreas at the site of obstruction is curative.",
+    "Nonbilious vomiting is typical because the obstruction is usually proximal to the ampulla of Vater.",
+    "Reconstruction is best achieved with Roux-en-Y duodenojejunostomy."
+   ]
+  }
+ },
+ {
+  "sim": 0.5882,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-res-59",
+   "chapter": "resp-bronch",
+   "source": "Pediatrics endpoint part2.pdf p.593",
+   "answer": 0,
+   "stem": "Which of the following statements about bronchiolitis is true?",
+   "options": [
+    "It is caused by viruses only",
+    "Antibiotics are recommended in severe cases",
+    "Chest X-ray is diagnostic",
+    "It is most commonly caused by a bacterial infection"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf4-30",
+   "chapter": "infection-vaccine",
+   "source": "Pediatrics endpoint part1.pdf p.1704",
+   "answer": 1,
+   "stem": "Which of the following statements is true regarding child vaccination?",
+   "options": [
+    "In case of missing a vaccine, the whole course needs to be restarted",
+    "OPV vaccine should not be given to a child whose brother suffers leukemia",
+    "IPV is given within the first 24 hours after birth",
+    "All of the above"
+   ]
+  }
+ },
+ {
+  "sim": 0.5882,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-28",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1012",
+   "answer": 0,
+   "stem": "Which of the following is true about antiepileptic drugs (AEDs)?",
+   "options": [
+    "All AEDs have side effects",
+    "Using multiple drugs is the preferred first-line approach",
+    "All cases of epilepsy should automatically receive AEDs",
+    "AEDs have no long-term adverse effects"
+   ]
+  },
+  "p1": {
+   "id": "pedep-per-18",
+   "chapter": "cardiac",
+   "source": "Pediatrics endpoint part1.pdf p.762",
+   "answer": 2,
+   "stem": "In intrauterine life, which of the following is TRUE?",
+   "options": [
+    "Oxygen saturation is higher in the lower body than upper body",
+    "Blood passes from the aorta to the pulmonary artery via the ductus arteriosus",
+    "There is a shift to the left of the oxygen dissociation curve of fetal hemoglobin",
+    "Fetal hypoxia results in secondary apnea after birth"
+   ]
+  }
+ },
+ {
+  "sim": 0.5882,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-28",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1012",
+   "answer": 0,
+   "stem": "Which of the following is true about antiepileptic drugs (AEDs)?",
+   "options": [
+    "All AEDs have side effects",
+    "Using multiple drugs is the preferred first-line approach",
+    "All cases of epilepsy should automatically receive AEDs",
+    "AEDs have no long-term adverse effects"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-76",
+   "chapter": "perinatal",
+   "source": "Pediatrics endpoint part1.pdf p.1634",
+   "answer": 2,
+   "stem": "Which of the following is TRUE regarding duodenal atresia?",
+   "options": [
+    "Most common form of bowel atresia is thrush",
+    "Presents after birth with non-bilious vomiting",
+    "Prenatal diagnosis is common",
+    "Gastrojejunostomy is the procedure of choice"
+   ]
+  }
+ },
+ {
+  "sim": 0.5882,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-32",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1020",
+   "answer": 0,
+   "stem": "Which of the following is true about antiepileptic drug treatment?",
+   "options": [
+    "Not all cases need treatment",
+    "All patients must start multidrug therapy",
+    "All seizures require immediate lifelong AEDs",
+    "AEDs have no side effects"
+   ]
+  },
+  "p1": {
+   "id": "pedep-per-18",
+   "chapter": "cardiac",
+   "source": "Pediatrics endpoint part1.pdf p.762",
+   "answer": 2,
+   "stem": "In intrauterine life, which of the following is TRUE?",
+   "options": [
+    "Oxygen saturation is higher in the lower body than upper body",
+    "Blood passes from the aorta to the pulmonary artery via the ductus arteriosus",
+    "There is a shift to the left of the oxygen dissociation curve of fetal hemoglobin",
+    "Fetal hypoxia results in secondary apnea after birth"
+   ]
+  }
+ },
+ {
+  "sim": 0.5882,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-32",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1020",
+   "answer": 0,
+   "stem": "Which of the following is true about antiepileptic drug treatment?",
+   "options": [
+    "Not all cases need treatment",
+    "All patients must start multidrug therapy",
+    "All seizures require immediate lifelong AEDs",
+    "AEDs have no side effects"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-76",
+   "chapter": "perinatal",
+   "source": "Pediatrics endpoint part1.pdf p.1634",
+   "answer": 2,
+   "stem": "Which of the following is TRUE regarding duodenal atresia?",
+   "options": [
+    "Most common form of bowel atresia is thrush",
+    "Presents after birth with non-bilious vomiting",
+    "Prenatal diagnosis is common",
+    "Gastrojejunostomy is the procedure of choice"
+   ]
+  }
+ },
+ {
+  "sim": 0.5882,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-53",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1063",
+   "answer": 2,
+   "stem": "Which of the following statements about headache is true?",
+   "options": [
+    "Migraine is most commonly unilateral",
+    "Migraine is most commonly with aura",
+    "Tension headache is symmetrical and gradual",
+    "Cluster headache is most common in children"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-62",
+   "chapter": "gastroenterology",
+   "source": "Pediatrics endpoint part1.pdf p.1606",
+   "answer": 0,
+   "stem": "Which of the following statements regarding duodenal atresia is true?",
+   "options": [
+    "Around 30% of these infants have Trisomy 21 (Down syndrome).",
+    "When associated with an annular pancreas, division of the pancreas at the site of obstruction is curative.",
+    "Nonbilious vomiting is typical because the obstruction is usually proximal to the ampulla of Vater.",
+    "Reconstruction is best achieved with Roux-en-Y duodenojejunostomy."
+   ]
+  }
+ },
+ {
+  "sim": 0.5882,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-53",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1063",
+   "answer": 2,
+   "stem": "Which of the following statements about headache is true?",
+   "options": [
+    "Migraine is most commonly unilateral",
+    "Migraine is most commonly with aura",
+    "Tension headache is symmetrical and gradual",
+    "Cluster headache is most common in children"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf4-30",
+   "chapter": "infection-vaccine",
+   "source": "Pediatrics endpoint part1.pdf p.1704",
+   "answer": 1,
+   "stem": "Which of the following statements is true regarding child vaccination?",
+   "options": [
+    "In case of missing a vaccine, the whole course needs to be restarted",
+    "OPV vaccine should not be given to a child whose brother suffers leukemia",
+    "IPV is given within the first 24 hours after birth",
+    "All of the above"
+   ]
+  }
+ },
+ {
+  "sim": 0.5882,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-liv-11",
+   "chapter": "liver-hep",
+   "source": "Pediatrics endpoint part2.pdf p.1189",
+   "answer": 2,
+   "stem": "Which of the following is true regarding hepatitis A?",
+   "options": [
+    "It is a DNA virus which is spread by faecal–oral transmission.",
+    "It requires urgent treatment",
+    "Cure is usually achieved after 4 weeks of infection",
+    "Chronic liver disease usually occurs"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-25",
+   "chapter": "emergencies",
+   "source": "Pediatrics endpoint part1.pdf p.1533",
+   "answer": 2,
+   "stem": "Which of the following is true about \"capillary refill time\"?",
+   "options": [
+    "Apply blanching pressure for 2 seconds",
+    "Prolonged capillary refill if > 3 seconds",
+    "It is affected by body exposure to a cold environment",
+    "It is reproducible only in children over the age of 2 years"
+   ]
+  }
+ },
+ {
+  "sim": 0.5882,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-liv-11",
+   "chapter": "liver-hep",
+   "source": "Pediatrics endpoint part2.pdf p.1189",
+   "answer": 2,
+   "stem": "Which of the following is true regarding hepatitis A?",
+   "options": [
+    "It is a DNA virus which is spread by faecal–oral transmission.",
+    "It requires urgent treatment",
+    "Cure is usually achieved after 4 weeks of infection",
+    "Chronic liver disease usually occurs"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf4-30",
+   "chapter": "infection-vaccine",
+   "source": "Pediatrics endpoint part1.pdf p.1704",
+   "answer": 1,
+   "stem": "Which of the following statements is true regarding child vaccination?",
+   "options": [
+    "In case of missing a vaccine, the whole course needs to be restarted",
+    "OPV vaccine should not be given to a child whose brother suffers leukemia",
+    "IPV is given within the first 24 hours after birth",
+    "All of the above"
+   ]
+  }
+ },
+ {
+  "sim": 0.5882,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-liv-20",
+   "chapter": "liver-hep",
+   "source": "Pediatrics endpoint part2.pdf p.1209",
+   "answer": 1,
+   "stem": "Which of the following is true about acute viral hepatitis?",
+   "options": [
+    "Abdominal pain, nausea, and vomiting aren't common signs",
+    "Jaundice is not evident in all cases",
+    "All cases present with dark urine and clay-colored stools",
+    "All patients become icteric and febrile"
+   ]
+  },
+  "p1": {
+   "id": "pedep-per-18",
+   "chapter": "cardiac",
+   "source": "Pediatrics endpoint part1.pdf p.762",
+   "answer": 2,
+   "stem": "In intrauterine life, which of the following is TRUE?",
+   "options": [
+    "Oxygen saturation is higher in the lower body than upper body",
+    "Blood passes from the aorta to the pulmonary artery via the ductus arteriosus",
+    "There is a shift to the left of the oxygen dissociation curve of fetal hemoglobin",
+    "Fetal hypoxia results in secondary apnea after birth"
+   ]
+  }
+ },
+ {
+  "sim": 0.5882,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-liv-20",
+   "chapter": "liver-hep",
+   "source": "Pediatrics endpoint part2.pdf p.1209",
+   "answer": 1,
+   "stem": "Which of the following is true about acute viral hepatitis?",
+   "options": [
+    "Abdominal pain, nausea, and vomiting aren't common signs",
+    "Jaundice is not evident in all cases",
+    "All cases present with dark urine and clay-colored stools",
+    "All patients become icteric and febrile"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-76",
+   "chapter": "perinatal",
+   "source": "Pediatrics endpoint part1.pdf p.1634",
+   "answer": 2,
+   "stem": "Which of the following is TRUE regarding duodenal atresia?",
+   "options": [
+    "Most common form of bowel atresia is thrush",
+    "Presents after birth with non-bilious vomiting",
+    "Prenatal diagnosis is common",
+    "Gastrojejunostomy is the procedure of choice"
+   ]
+  }
+ },
+ {
+  "sim": 0.5833,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-car-2",
+   "chapter": "cardiac",
+   "source": "Pediatrics endpoint part2.pdf p.631",
+   "answer": 0,
+   "stem": "Which of the following is the most common congenital heart disease?",
+   "options": [
+    "Ventricular septal defect (VSD)",
+    "Atrial septal defect (ASD)",
+    "Patent ductus arteriosus (PDA)",
+    "Tetralogy of Fallot"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf1-80",
+   "chapter": "malignant-solid",
+   "source": "Pediatrics endpoint part1.pdf p.1320",
+   "answer": 0,
+   "stem": "Which of the following is the most common abdominal solid tumor in infancy and childhood?",
+   "options": [
+    "Neuroblastoma",
+    "Wilms tumor",
+    "Sarcoma",
+    "Teratoma"
+   ]
+  }
+ },
+ {
+  "sim": 0.5714,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-dp-22",
+   "chapter": "dev-problems",
+   "source": "Pediatrics endpoint part2.pdf p.139",
+   "answer": 1,
+   "stem": "Which of the following is NOT true about autism spectrum disorder?",
+   "options": [
+    "The child may have associated comorbidities",
+    "It is usually benign with no long-term consequences",
+    "It is an impaired social interaction",
+    "There is no evidence for a link with MMR vaccine"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf4-64",
+   "chapter": "perinatal-rd",
+   "source": "Pediatrics endpoint part1.pdf p.1772",
+   "answer": 3,
+   "stem": "Which of the following is NOT true regarding congenital diaphragmatic hernia (CDH)?",
+   "options": [
+    "May be diagnosed antenatally",
+    "Is usually left-sided",
+    "May be associated with pulmonary hypoplasia",
+    "Repair is required within the next 48 hours"
+   ]
+  }
+ },
+ {
+  "sim": 0.5714,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-dp-24",
+   "chapter": "dev-problems",
+   "source": "Pediatrics endpoint part2.pdf p.143",
+   "answer": 1,
+   "stem": "Which of the following is NOT true about Global developmental delay?",
+   "options": [
+    "It usually presents in the first 2 years of life.",
+    "It is a delay in the acquisition of one or more of the four fields of development.",
+    "It is mostly associated with cognitive difficulties.",
+    "Clinical picture is clearer when children become older."
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf4-64",
+   "chapter": "perinatal-rd",
+   "source": "Pediatrics endpoint part1.pdf p.1772",
+   "answer": 3,
+   "stem": "Which of the following is NOT true regarding congenital diaphragmatic hernia (CDH)?",
+   "options": [
+    "May be diagnosed antenatally",
+    "Is usually left-sided",
+    "May be associated with pulmonary hypoplasia",
+    "Repair is required within the next 48 hours"
+   ]
+  }
+ },
+ {
+  "sim": 0.5714,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-gen-13",
+   "chapter": "genetics",
+   "source": "Pediatrics endpoint part2.pdf p.193",
+   "answer": 4,
+   "stem": "Which of the following is NOT a commonly associated problem of Down syndrome?",
+   "options": [
+    "Congenital heart disease",
+    "Leukemia",
+    "Hypothyroidism",
+    "Short stature",
+    "Gastro-esophageal reflux disease"
+   ]
+  },
+  "p1": {
+   "id": "pedep-nut-20",
+   "chapter": "nutrition-pem",
+   "source": "Pediatrics endpoint part1.pdf p.276",
+   "answer": 0,
+   "stem": "Which of the following is NOT a feature of marasmus?",
+   "options": [
+    "Looking apathetic",
+    "No edema",
+    "Gross muscle wasting",
+    "Loss of subcutaneous fat",
+    "Weight for height is >3SD below the median in growth chart"
+   ]
+  }
+ },
+ {
+  "sim": 0.5714,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-gen-13",
+   "chapter": "genetics",
+   "source": "Pediatrics endpoint part2.pdf p.193",
+   "answer": 4,
+   "stem": "Which of the following is NOT a commonly associated problem of Down syndrome?",
+   "options": [
+    "Congenital heart disease",
+    "Leukemia",
+    "Hypothyroidism",
+    "Short stature",
+    "Gastro-esophageal reflux disease"
+   ]
+  },
+  "p1": {
+   "id": "pedep-inf-29",
+   "chapter": "infection-vaccine",
+   "source": "Pediatrics endpoint part1.pdf p.1023",
+   "answer": 2,
+   "stem": "Which of the following is NOT a live attenuated vaccine?",
+   "options": [
+    "Varicella",
+    "Rubella",
+    "Inactivated influenza",
+    "MMR"
+   ]
+  }
+ },
+ {
+  "sim": 0.5714,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-gen-13",
+   "chapter": "genetics",
+   "source": "Pediatrics endpoint part2.pdf p.193",
+   "answer": 4,
+   "stem": "Which of the following is NOT a commonly associated problem of Down syndrome?",
+   "options": [
+    "Congenital heart disease",
+    "Leukemia",
+    "Hypothyroidism",
+    "Short stature",
+    "Gastro-esophageal reflux disease"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf2-65",
+   "chapter": "renal-cakut",
+   "source": "Pediatrics endpoint part1.pdf p.1452",
+   "answer": 0,
+   "stem": "Which of the following is not a feature of hypospadias?",
+   "options": [
+    "Dorsal chordee",
+    "Hooded foreskin",
+    "Ventrally placed meatus",
+    "Proximal meatus"
+   ]
+  }
+ },
+ {
+  "sim": 0.5714,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-hem-51",
+   "chapter": "haematology",
+   "source": "Pediatrics endpoint part2.pdf p.371",
+   "answer": 0,
+   "stem": "What is the most common cause of anemia in school-aged children?",
+   "options": [
+    "Iron deficiency anemia",
+    "Thalassemia",
+    "Sickle cell anemia",
+    "Megaloblastic anemia"
+   ]
+  },
+  "p1": {
+   "id": "pedep-gp-56",
+   "chapter": "growth-puberty",
+   "source": "Pediatrics endpoint part1.pdf p.141",
+   "answer": 0,
+   "stem": "What is the most common cause of faltering growth in infants?",
+   "options": [
+    "Inadequate weight gain",
+    "Genetic short stature",
+    "Growth hormone deficiency",
+    "Endocrine disorder"
+   ]
+  }
+ },
+ {
+  "sim": 0.5714,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-hem-80",
+   "chapter": "haematology",
+   "source": "Pediatrics endpoint part2.pdf p.430",
+   "answer": 3,
+   "stem": "Which one of the following is a feature of hereditary spherocytosis?",
+   "options": [
+    "Conjugated hyperbilirubinemia",
+    "Hemolytic crises following fava bean ingestion",
+    "Short stature",
+    "Splenomegaly",
+    "X-linked inheritance"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf4-41",
+   "chapter": "nutrition-pem",
+   "source": "Pediatrics endpoint part1.pdf p.1726",
+   "answer": 0,
+   "stem": "Which of the following is a feature of protien energy malnutrition (Kwashiorkor)?",
+   "options": [
+    "Edema",
+    "Hyperactivity",
+    "High plasma albumin",
+    "All of the above"
+   ]
+  }
+ },
+ {
+  "sim": 0.5714,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-hem-88",
+   "chapter": "haematology",
+   "source": "Pediatrics endpoint part2.pdf p.446",
+   "answer": 3,
+   "stem": "Which of the following is NOT a cause of hydrops fetalis?",
+   "options": [
+    "Rh incompatibility",
+    "ABO incompatibility",
+    "Alpha thalassemia major",
+    "Beta thalassemia major"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-44",
+   "chapter": "infection-bact",
+   "source": "Pediatrics endpoint part1.pdf p.1571",
+   "answer": 1,
+   "stem": "Which of the following is a cause of bacterial meningitis in children?",
+   "options": [
+    "Group A streptococci",
+    "Streptococcus pneumoniae",
+    "E. coli",
+    "Pseudomonas"
+   ]
+  }
+ },
+ {
+  "sim": 0.5714,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-res-47",
+   "chapter": "respiratory",
+   "source": "Pediatrics endpoint part2.pdf p.569",
+   "answer": 0,
+   "stem": "What is the most common cause of chronic wet cough in children?",
+   "options": [
+    "Persistent bacterial bronchitis",
+    "Bacterial bronchitis",
+    "Viral bronchitis",
+    "Asthma"
+   ]
+  },
+  "p1": {
+   "id": "pedep-gp-56",
+   "chapter": "growth-puberty",
+   "source": "Pediatrics endpoint part1.pdf p.141",
+   "answer": 0,
+   "stem": "What is the most common cause of faltering growth in infants?",
+   "options": [
+    "Inadequate weight gain",
+    "Genetic short stature",
+    "Growth hormone deficiency",
+    "Endocrine disorder"
+   ]
+  }
+ },
+ {
+  "sim": 0.5714,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-car-31",
+   "chapter": "cardiac",
+   "source": "Pediatrics endpoint part2.pdf p.691",
+   "answer": 4,
+   "stem": "Which of the following statements about patent ductus arteriosus is most factually correct?",
+   "options": [
+    "The incidence of persistent ductus arteriosus is increased in males compared with females",
+    "Cardiac catheter color placement is the treatment of choice for symptomatic infants with persistent ductus arteriosus post birth",
+    "PDA can be treated with prostaglandins",
+    "PDA always closes spontaneously in term infants",
+    "The incidence of PDA is increased in preterm infants and those with perinatal hypoxia and/or distress"
+   ]
+  },
+  "p1": {
+   "id": "pedep-nut-54",
+   "chapter": "nutrition-feed",
+   "source": "Pediatrics endpoint part1.pdf p.344 (the explanation box is printed alone on p.345)",
+   "answer": 0,
+   "stem": "Which of the following statements about preterm and term formulae and breast milk is most factually correct?",
+   "options": [
+    "Babies fed on fortified breast milk have a decreased incidence of late-onset sepsis and necrotizing enterocolitis when compared with babies fed on preterm formulae",
+    "Preterm babies fed with fortified breast milk show similar weight gain profiles to preterm babies fed on preterm formula milks",
+    "Preterm formula contains more fat, protein, and electrolytes but the same amount of carbohydrate as term formula or unfortified breast milk",
+    "Preterm formula has a lower sodium content than term formula",
+    "Preterm formula has the same protein content as term formula"
+   ]
+  }
+ },
+ {
+  "sim": 0.5714,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-36",
+   "chapter": "neuro-cp",
+   "source": "Pediatrics endpoint part2.pdf p.1028",
+   "answer": 0,
+   "stem": "Which of the following is NOT true about cerebral palsy (CP)?",
+   "options": [
+    "Progressive disorder",
+    "Non-progressive brain injury",
+    "Motor impairment is the main feature",
+    "Usually appears in early childhood"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf4-64",
+   "chapter": "perinatal-rd",
+   "source": "Pediatrics endpoint part1.pdf p.1772",
+   "answer": 3,
+   "stem": "Which of the following is NOT true regarding congenital diaphragmatic hernia (CDH)?",
+   "options": [
+    "May be diagnosed antenatally",
+    "Is usually left-sided",
+    "May be associated with pulmonary hypoplasia",
+    "Repair is required within the next 48 hours"
+   ]
+  }
+ },
+ {
+  "sim": 0.5714,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-end-20",
+   "chapter": "endo-thyroid",
+   "source": "Pediatrics endpoint part2.pdf p.1132",
+   "answer": 4,
+   "stem": "Which of the following is not a manifestation of untreated congenital hypothyroidism?",
+   "options": [
+    "Puffy eyes",
+    "Constipation",
+    "Hoarse voice",
+    "Delayed motor and mental milestones",
+    "Overweight due to voracious appetite"
+   ]
+  },
+  "p1": {
+   "id": "pedep-inf-81",
+   "chapter": "infection-vaccine",
+   "source": "Pediatrics endpoint part1.pdf p.1127",
+   "answer": 4,
+   "stem": "Which of the following is not a contraindication to live vaccination?",
+   "options": [
+    "Acute fever >38°C",
+    "High-dose steroids",
+    "Previous severe reaction",
+    "Immunodeficiency",
+    "Weight <2.5 kg"
+   ]
+  }
+ },
+ {
+  "sim": 0.56,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-car-2",
+   "chapter": "cardiac",
+   "source": "Pediatrics endpoint part2.pdf p.631",
+   "answer": 0,
+   "stem": "Which of the following is the most common congenital heart disease?",
+   "options": [
+    "Ventricular septal defect (VSD)",
+    "Atrial septal defect (ASD)",
+    "Patent ductus arteriosus (PDA)",
+    "Tetralogy of Fallot"
+   ]
+  },
+  "p1": {
+   "id": "pedep-inf-25",
+   "chapter": "infection-bact",
+   "source": "Pediatrics endpoint part1.pdf p.1015",
+   "answer": 0,
+   "stem": "Which of the following is the most common causative organism of acute otitis media in children?",
+   "options": [
+    "Streptococcus pneumoniae",
+    "Staphylococcus aureus",
+    "Adenovirus",
+    "Herpes simplex virus",
+    "Influenza virus"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-dp-22",
+   "chapter": "dev-problems",
+   "source": "Pediatrics endpoint part2.pdf p.139",
+   "answer": 1,
+   "stem": "Which of the following is NOT true about autism spectrum disorder?",
+   "options": [
+    "The child may have associated comorbidities",
+    "It is usually benign with no long-term consequences",
+    "It is an impaired social interaction",
+    "There is no evidence for a link with MMR vaccine"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-43",
+   "chapter": "neonatal-sepsis",
+   "source": "Pediatrics endpoint part1.pdf p.1569 (also printed in Pediatrics endpoint part2.pdf p.557, with the stem clauses reordered; the options and the key are unchanged)",
+   "answer": 2,
+   "stem": "Which of the following is true about neonatal sepsis?",
+   "options": [
+    "A heart murmur is usually present.",
+    "Early-onset sepsis is usually acquired via the placenta following maternal infection.",
+    "Pneumonia is the commonest presentation in early-onset sepsis.",
+    "High fever is commonly present.",
+    "CBC is done to detect neutrophilia."
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-dp-24",
+   "chapter": "dev-problems",
+   "source": "Pediatrics endpoint part2.pdf p.143",
+   "answer": 1,
+   "stem": "Which of the following is NOT true about Global developmental delay?",
+   "options": [
+    "It usually presents in the first 2 years of life.",
+    "It is a delay in the acquisition of one or more of the four fields of development.",
+    "It is mostly associated with cognitive difficulties.",
+    "Clinical picture is clearer when children become older."
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-43",
+   "chapter": "neonatal-sepsis",
+   "source": "Pediatrics endpoint part1.pdf p.1569 (also printed in Pediatrics endpoint part2.pdf p.557, with the stem clauses reordered; the options and the key are unchanged)",
+   "answer": 2,
+   "stem": "Which of the following is true about neonatal sepsis?",
+   "options": [
+    "A heart murmur is usually present.",
+    "Early-onset sepsis is usually acquired via the placenta following maternal infection.",
+    "Pneumonia is the commonest presentation in early-onset sepsis.",
+    "High fever is commonly present.",
+    "CBC is done to detect neutrophilia."
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-dp-25",
+   "chapter": "dev-problems",
+   "source": "Pediatrics endpoint part2.pdf p.145 (reprinted at p.1024)",
+   "answer": 0,
+   "stem": "Which of the following is not true about cerebral palsy?",
+   "options": [
+    "Meningitis/encephalitis is the most common cause.",
+    "Preterm infants are more vulnerable.",
+    "Spastic form is the most common.",
+    "Clinical manifestations can evolve over time.",
+    "Often accompanied by disturbances of cognition."
+   ]
+  },
+  "p1": {
+   "id": "pedep-gp-19",
+   "chapter": "growth-puberty",
+   "source": "Pediatrics endpoint part1.pdf p.66",
+   "answer": 4,
+   "stem": "Which of the following is NOT associated with short stature?",
+   "options": [
+    "Chronic renal failure",
+    "Hypothyroidism",
+    "PEM",
+    "Thalassemia major",
+    "G6PD deficiency"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-dp-25",
+   "chapter": "dev-problems",
+   "source": "Pediatrics endpoint part2.pdf p.145 (reprinted at p.1024)",
+   "answer": 0,
+   "stem": "Which of the following is not true about cerebral palsy?",
+   "options": [
+    "Meningitis/encephalitis is the most common cause.",
+    "Preterm infants are more vulnerable.",
+    "Spastic form is the most common.",
+    "Clinical manifestations can evolve over time.",
+    "Often accompanied by disturbances of cognition."
+   ]
+  },
+  "p1": {
+   "id": "pedep-nut-20",
+   "chapter": "nutrition-pem",
+   "source": "Pediatrics endpoint part1.pdf p.276",
+   "answer": 0,
+   "stem": "Which of the following is NOT a feature of marasmus?",
+   "options": [
+    "Looking apathetic",
+    "No edema",
+    "Gross muscle wasting",
+    "Loss of subcutaneous fat",
+    "Weight for height is >3SD below the median in growth chart"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-dp-25",
+   "chapter": "dev-problems",
+   "source": "Pediatrics endpoint part2.pdf p.145 (reprinted at p.1024)",
+   "answer": 0,
+   "stem": "Which of the following is not true about cerebral palsy?",
+   "options": [
+    "Meningitis/encephalitis is the most common cause.",
+    "Preterm infants are more vulnerable.",
+    "Spastic form is the most common.",
+    "Clinical manifestations can evolve over time.",
+    "Often accompanied by disturbances of cognition."
+   ]
+  },
+  "p1": {
+   "id": "pedep-inf-29",
+   "chapter": "infection-vaccine",
+   "source": "Pediatrics endpoint part1.pdf p.1023",
+   "answer": 2,
+   "stem": "Which of the following is NOT a live attenuated vaccine?",
+   "options": [
+    "Varicella",
+    "Rubella",
+    "Inactivated influenza",
+    "MMR"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-dp-25",
+   "chapter": "dev-problems",
+   "source": "Pediatrics endpoint part2.pdf p.145 (reprinted at p.1024)",
+   "answer": 0,
+   "stem": "Which of the following is not true about cerebral palsy?",
+   "options": [
+    "Meningitis/encephalitis is the most common cause.",
+    "Preterm infants are more vulnerable.",
+    "Spastic form is the most common.",
+    "Clinical manifestations can evolve over time.",
+    "Often accompanied by disturbances of cognition."
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf2-65",
+   "chapter": "renal-cakut",
+   "source": "Pediatrics endpoint part1.pdf p.1452",
+   "answer": 0,
+   "stem": "Which of the following is not a feature of hypospadias?",
+   "options": [
+    "Dorsal chordee",
+    "Hooded foreskin",
+    "Ventrally placed meatus",
+    "Proximal meatus"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-dp-25",
+   "chapter": "dev-problems",
+   "source": "Pediatrics endpoint part2.pdf p.145 (reprinted at p.1024)",
+   "answer": 0,
+   "stem": "Which of the following is not true about cerebral palsy?",
+   "options": [
+    "Meningitis/encephalitis is the most common cause.",
+    "Preterm infants are more vulnerable.",
+    "Spastic form is the most common.",
+    "Clinical manifestations can evolve over time.",
+    "Often accompanied by disturbances of cognition."
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-25",
+   "chapter": "emergencies",
+   "source": "Pediatrics endpoint part1.pdf p.1533",
+   "answer": 2,
+   "stem": "Which of the following is true about \"capillary refill time\"?",
+   "options": [
+    "Apply blanching pressure for 2 seconds",
+    "Prolonged capillary refill if > 3 seconds",
+    "It is affected by body exposure to a cold environment",
+    "It is reproducible only in children over the age of 2 years"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-dp-26",
+   "chapter": "dev-problems",
+   "source": "Pediatrics endpoint part2.pdf p.147",
+   "answer": 3,
+   "stem": "Which of the following is NOT characteristic of autism spectrum disorder?",
+   "options": [
+    "Repetitive actions",
+    "Sensory blocking and echolalia",
+    "Language and learning deficiencies",
+    "Encopresis and overeating",
+    "Highly restricted and fixated interests."
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-75",
+   "chapter": "gi-abdopain",
+   "source": "Pediatrics endpoint part1.pdf p.1632",
+   "answer": 3,
+   "stem": "Which of the following is NOT TRUE regarding intussusception?",
+   "options": [
+    "More common in boys",
+    "Can occur secondary to Meckel's diverticulum",
+    "Bilious vomiting is not always present",
+    "Bleeding per rectum is the most common presenting symptom"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-hem-83",
+   "chapter": "haematology",
+   "source": "Pediatrics endpoint part2.pdf p.436",
+   "answer": 1,
+   "stem": "Which of the following is TRUE about thalassemia?",
+   "options": [
+    "Increased serum ferritin",
+    "Presence of target cells in blood film",
+    "Macrocytosis is a typical finding",
+    "It is not inherited"
+   ]
+  },
+  "p1": {
+   "id": "pedep-neo-32",
+   "chapter": "neonatal",
+   "source": "Pediatrics endpoint part1.pdf p.860 (reprinted word for word in Model Final Exam 3, p.1589)",
+   "answer": 0,
+   "stem": "Which of the following statements is TRUE about Transient tachypnea of the newborn?",
+   "options": [
+    "Commonly associated with caesarian section delivery",
+    "Commonly associated with preterm delivery",
+    "Usually treated with mechanical ventilation",
+    "Caused by surfactant deficiency",
+    "Mild prenatal infection is a common association"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-hem-83",
+   "chapter": "haematology",
+   "source": "Pediatrics endpoint part2.pdf p.436",
+   "answer": 1,
+   "stem": "Which of the following is TRUE about thalassemia?",
+   "options": [
+    "Increased serum ferritin",
+    "Presence of target cells in blood film",
+    "Macrocytosis is a typical finding",
+    "It is not inherited"
+   ]
+  },
+  "p1": {
+   "id": "pedep-neo-49",
+   "chapter": "neonatal",
+   "source": "Pediatrics endpoint part1.pdf p.894",
+   "answer": 0,
+   "stem": "Which of the following is TRUE regarding oxygen therapy in preterm infants?",
+   "options": [
+    "Low oxygen saturation increases risk of NEC and death",
+    "High oxygen saturation reduces risk of retinopathy of prematurity",
+    "Initial therapy should begin with 100% oxygen",
+    "Oxygen therapy has no effect on mortality"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-hem-88",
+   "chapter": "haematology",
+   "source": "Pediatrics endpoint part2.pdf p.446",
+   "answer": 3,
+   "stem": "Which of the following is NOT a cause of hydrops fetalis?",
+   "options": [
+    "Rh incompatibility",
+    "ABO incompatibility",
+    "Alpha thalassemia major",
+    "Beta thalassemia major"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-75",
+   "chapter": "gi-abdopain",
+   "source": "Pediatrics endpoint part1.pdf p.1632",
+   "answer": 3,
+   "stem": "Which of the following is NOT TRUE regarding intussusception?",
+   "options": [
+    "More common in boys",
+    "Can occur secondary to Meckel's diverticulum",
+    "Bilious vomiting is not always present",
+    "Bleeding per rectum is the most common presenting symptom"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-res-39",
+   "chapter": "resp-bronch",
+   "source": "Pediatrics endpoint part2.pdf p.553",
+   "answer": 3,
+   "stem": "Which of the following statements is true in acute bronchiolitis?",
+   "options": [
+    "Wheezing is due to spasm of smooth muscles of bronchioles",
+    "Inhaled salbutamol is the treatment of choice",
+    "Chest X-ray is diagnostic",
+    "Feeding difficulties are common",
+    "Antibiotics are indicated in severe cases"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-62",
+   "chapter": "gastroenterology",
+   "source": "Pediatrics endpoint part1.pdf p.1606",
+   "answer": 0,
+   "stem": "Which of the following statements regarding duodenal atresia is true?",
+   "options": [
+    "Around 30% of these infants have Trisomy 21 (Down syndrome).",
+    "When associated with an annular pancreas, division of the pancreas at the site of obstruction is curative.",
+    "Nonbilious vomiting is typical because the obstruction is usually proximal to the ampulla of Vater.",
+    "Reconstruction is best achieved with Roux-en-Y duodenojejunostomy."
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-res-40",
+   "chapter": "resp-pneumonia",
+   "source": "Pediatrics endpoint part2.pdf p.555",
+   "answer": 3,
+   "stem": "Which of the following is NOT a complication of whooping cough?",
+   "options": [
+    "Pneumonia",
+    "Intracranial hemorrhage",
+    "Convulsions",
+    "Hemolytic anemia",
+    "Subconjunctival hemorrhage"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-75",
+   "chapter": "gi-abdopain",
+   "source": "Pediatrics endpoint part1.pdf p.1632",
+   "answer": 3,
+   "stem": "Which of the following is NOT TRUE regarding intussusception?",
+   "options": [
+    "More common in boys",
+    "Can occur secondary to Meckel's diverticulum",
+    "Bilious vomiting is not always present",
+    "Bleeding per rectum is the most common presenting symptom"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-res-42",
+   "chapter": "respiratory",
+   "source": "Pediatrics endpoint part2.pdf p.559",
+   "answer": 0,
+   "stem": "Which of the following is considered an asthma preventer?",
+   "options": [
+    "Inhaled corticosteroids",
+    "Short-acting beta agonists (SABA)",
+    "Oral antihistamines",
+    "Intravenous magnesium sulfate"
+   ]
+  },
+  "p1": {
+   "id": "pedep-inf-39",
+   "chapter": "infection-immunity",
+   "source": "Pediatrics endpoint part1.pdf p.1043",
+   "answer": 2,
+   "stem": "Which of the following is considered a form of passive immunity?",
+   "options": [
+    "Influenza vaccine",
+    "MMR vaccine",
+    "Monoclonal antibody (palivizumab)"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-res-59",
+   "chapter": "resp-bronch",
+   "source": "Pediatrics endpoint part2.pdf p.593",
+   "answer": 0,
+   "stem": "Which of the following statements about bronchiolitis is true?",
+   "options": [
+    "It is caused by viruses only",
+    "Antibiotics are recommended in severe cases",
+    "Chest X-ray is diagnostic",
+    "It is most commonly caused by a bacterial infection"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-64",
+   "chapter": "gi-abdopain",
+   "source": "Pediatrics endpoint part1.pdf p.1610",
+   "answer": 3,
+   "stem": "Which of the following statements regarding congenital inguinal hernia is TRUE?",
+   "options": [
+    "It is more common in females",
+    "Herniotomy should be delayed until the child is over 2 years",
+    "The most common presenting age is between 1–2 years",
+    "Bilaterality is more common in girls"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-res-59",
+   "chapter": "resp-bronch",
+   "source": "Pediatrics endpoint part2.pdf p.593",
+   "answer": 0,
+   "stem": "Which of the following statements about bronchiolitis is true?",
+   "options": [
+    "It is caused by viruses only",
+    "Antibiotics are recommended in severe cases",
+    "Chest X-ray is diagnostic",
+    "It is most commonly caused by a bacterial infection"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf4-27",
+   "chapter": "growth-puberty",
+   "source": "Pediatrics endpoint part1.pdf p.1698",
+   "answer": 1,
+   "stem": "Which of the following statements is true about familial short stature?",
+   "options": [
+    "It is usually associated with obesity",
+    "Child's height fluctuates 2 centiles between mid-parental height",
+    "It is a form of delay in attaining normal height",
+    "It leads to achieving normal height eventually"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-ren-36",
+   "chapter": "renal-uti",
+   "source": "Pediatrics endpoint part2.pdf p.890 (reprinted at p.916)",
+   "answer": 3,
+   "stem": "Which of the following is not a common pathogen in UTI?",
+   "options": [
+    "E.coli",
+    "Klebsiella",
+    "S.Faecalis",
+    "Staph aureus"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-75",
+   "chapter": "gi-abdopain",
+   "source": "Pediatrics endpoint part1.pdf p.1632",
+   "answer": 3,
+   "stem": "Which of the following is NOT TRUE regarding intussusception?",
+   "options": [
+    "More common in boys",
+    "Can occur secondary to Meckel's diverticulum",
+    "Bilious vomiting is not always present",
+    "Bleeding per rectum is the most common presenting symptom"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-ren-39",
+   "chapter": "renal",
+   "source": "Pediatrics endpoint part2.pdf p.896 (reprinted at p.912)",
+   "answer": 1,
+   "stem": "Which of the following statements is true about most nephrotic syndromes?",
+   "options": [
+    "Hematuria is a common feature",
+    "They rarely cause chronic renal failure",
+    "Low C3 level is typically seen",
+    "Always present with hypertension"
+   ]
+  },
+  "p1": {
+   "id": "pedep-emg-61",
+   "chapter": "emergencies",
+   "source": "Pediatrics endpoint part1.pdf p.701 (reprinted word for word in Model Final Exam 1, p.1189; reprinted in Model Final Exam 4, p.1732, with the five options reworded and the anaphylaxis and gastroenteritis statements exchanged, and with the key option broken off before its noun as \"Mottled, pale and cold skin is found in compensated\"; the key is the same statement and stands in the same position)",
+   "answer": 2,
+   "stem": "Which of the following statements concerning shock is TRUE?",
+   "options": [
+    "Dehydration due to gastroenteritis can cause shock due to maldistribution of fluid",
+    "Bradycardia occurs in compensated shock",
+    "Mottled, pale and cold skin is a sign of compensated shock",
+    "Anaphylaxis can cause shock due to hypovolemia",
+    "Decreased urine output is a sign of decompensated shock"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-ren-39",
+   "chapter": "renal",
+   "source": "Pediatrics endpoint part2.pdf p.896 (reprinted at p.912)",
+   "answer": 1,
+   "stem": "Which of the following statements is true about most nephrotic syndromes?",
+   "options": [
+    "Hematuria is a common feature",
+    "They rarely cause chronic renal failure",
+    "Low C3 level is typically seen",
+    "Always present with hypertension"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-43",
+   "chapter": "neonatal-sepsis",
+   "source": "Pediatrics endpoint part1.pdf p.1569 (also printed in Pediatrics endpoint part2.pdf p.557, with the stem clauses reordered; the options and the key are unchanged)",
+   "answer": 2,
+   "stem": "Which of the following is true about neonatal sepsis?",
+   "options": [
+    "A heart murmur is usually present.",
+    "Early-onset sepsis is usually acquired via the placenta following maternal infection.",
+    "Pneumonia is the commonest presentation in early-onset sepsis.",
+    "High fever is commonly present.",
+    "CBC is done to detect neutrophilia."
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-ren-39",
+   "chapter": "renal",
+   "source": "Pediatrics endpoint part2.pdf p.896 (reprinted at p.912)",
+   "answer": 1,
+   "stem": "Which of the following statements is true about most nephrotic syndromes?",
+   "options": [
+    "Hematuria is a common feature",
+    "They rarely cause chronic renal failure",
+    "Low C3 level is typically seen",
+    "Always present with hypertension"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-54",
+   "chapter": "infection-vaccine",
+   "source": "Pediatrics endpoint part1.pdf p.1591",
+   "answer": 4,
+   "stem": "Which of the following statements concerning immunization is TRUE?",
+   "options": [
+    "Vaccines should not be given if the baby has a runny nose.",
+    "Oral polio vaccine is safe in immune-compromised children.",
+    "Hepatitis A vaccine is given immediately after birth in Egypt.",
+    "BCG is a killed vaccine.",
+    "MMR vaccine is a live attenuated virus vaccine."
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-ren-45",
+   "chapter": "renal-cakut",
+   "source": "Pediatrics endpoint part2.pdf p.908",
+   "answer": 0,
+   "stem": "Which of the following is commonly associated with secondary enuresis?",
+   "options": [
+    "Emotional upset",
+    "Ectopic ureter",
+    "Posterior urethral valves",
+    "Neurogenic bladder"
+   ]
+  },
+  "p1": {
+   "id": "pedep-gp-19",
+   "chapter": "growth-puberty",
+   "source": "Pediatrics endpoint part1.pdf p.66",
+   "answer": 4,
+   "stem": "Which of the following is NOT associated with short stature?",
+   "options": [
+    "Chronic renal failure",
+    "Hypothyroidism",
+    "PEM",
+    "Thalassemia major",
+    "G6PD deficiency"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-28",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1012",
+   "answer": 0,
+   "stem": "Which of the following is true about antiepileptic drugs (AEDs)?",
+   "options": [
+    "All AEDs have side effects",
+    "Using multiple drugs is the preferred first-line approach",
+    "All cases of epilepsy should automatically receive AEDs",
+    "AEDs have no long-term adverse effects"
+   ]
+  },
+  "p1": {
+   "id": "pedep-nut-27",
+   "chapter": "nutrition-feed",
+   "source": "Pediatrics endpoint part1.pdf p.290",
+   "answer": 1,
+   "stem": "Which of the following is NOT true about breast feeding?",
+   "options": [
+    "Recommended food for infants both term and preterm",
+    "50% of energy from proteins",
+    "Contains immunological benefits (i.e. IgA, active lymphocytes)",
+    "Promotes growth of lactobacillus in GI",
+    "Decreases incidence of allergic disorders"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-28",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1012",
+   "answer": 0,
+   "stem": "Which of the following is true about antiepileptic drugs (AEDs)?",
+   "options": [
+    "All AEDs have side effects",
+    "Using multiple drugs is the preferred first-line approach",
+    "All cases of epilepsy should automatically receive AEDs",
+    "AEDs have no long-term adverse effects"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf1-78",
+   "chapter": "renal-cakut",
+   "source": "Pediatrics endpoint part1.pdf p.1316",
+   "answer": 2,
+   "stem": "Which of the following is true regarding posterior urethral valves?",
+   "options": [
+    "Anterior urethral valves are more common in males",
+    "Type 3 is the most common",
+    "Bilateral hydronephrosis in a baby male should always be investigated with urgent micturating cystogram",
+    "They always present with bilateral upper tract dilatation"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-28",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1012",
+   "answer": 0,
+   "stem": "Which of the following is true about antiepileptic drugs (AEDs)?",
+   "options": [
+    "All AEDs have side effects",
+    "Using multiple drugs is the preferred first-line approach",
+    "All cases of epilepsy should automatically receive AEDs",
+    "AEDs have no long-term adverse effects"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-80",
+   "chapter": "gi-abdopain",
+   "source": "Pediatrics endpoint part1.pdf p.1642",
+   "answer": 3,
+   "stem": "Which of the following is TRUE regarding congenital inguinal hernia?",
+   "options": [
+    "It is more common on the left side in females",
+    "Herniotomy should be delayed until the child is over 2 years old",
+    "The most common presenting age is between 1–2 years",
+    "Incarcerated hernia can cause infarction of the testis in the very young"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-28",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1012",
+   "answer": 0,
+   "stem": "Which of the following is true about antiepileptic drugs (AEDs)?",
+   "options": [
+    "All AEDs have side effects",
+    "Using multiple drugs is the preferred first-line approach",
+    "All cases of epilepsy should automatically receive AEDs",
+    "AEDs have no long-term adverse effects"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf4-50",
+   "chapter": "neonatal",
+   "source": "Pediatrics endpoint part1.pdf p.1744",
+   "answer": 1,
+   "stem": "Which of the following is true regarding breast milk jaundice?",
+   "options": [
+    "Conjugated",
+    "May be prolonged >2 months",
+    "Managed by advice to switch to formula feeding",
+    "It causes pale gray stool"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-28",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1012",
+   "answer": 0,
+   "stem": "Which of the following is true about antiepileptic drugs (AEDs)?",
+   "options": [
+    "All AEDs have side effects",
+    "Using multiple drugs is the preferred first-line approach",
+    "All cases of epilepsy should automatically receive AEDs",
+    "AEDs have no long-term adverse effects"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf4-65",
+   "chapter": "renal-cakut",
+   "source": "Pediatrics endpoint part1.pdf p.1774",
+   "answer": 1,
+   "stem": "Which of the following is TRUE regarding undescended testes (cryptorchidism)?",
+   "options": [
+    "Always approached using an inguinal approach",
+    "Ectopic testes may be found in the perineum",
+    "Usually requires a two-stage procedure",
+    "Are bilateral in 50% of cases"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-32",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1020",
+   "answer": 0,
+   "stem": "Which of the following is true about antiepileptic drug treatment?",
+   "options": [
+    "Not all cases need treatment",
+    "All patients must start multidrug therapy",
+    "All seizures require immediate lifelong AEDs",
+    "AEDs have no side effects"
+   ]
+  },
+  "p1": {
+   "id": "pedep-nut-27",
+   "chapter": "nutrition-feed",
+   "source": "Pediatrics endpoint part1.pdf p.290",
+   "answer": 1,
+   "stem": "Which of the following is NOT true about breast feeding?",
+   "options": [
+    "Recommended food for infants both term and preterm",
+    "50% of energy from proteins",
+    "Contains immunological benefits (i.e. IgA, active lymphocytes)",
+    "Promotes growth of lactobacillus in GI",
+    "Decreases incidence of allergic disorders"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-32",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1020",
+   "answer": 0,
+   "stem": "Which of the following is true about antiepileptic drug treatment?",
+   "options": [
+    "Not all cases need treatment",
+    "All patients must start multidrug therapy",
+    "All seizures require immediate lifelong AEDs",
+    "AEDs have no side effects"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf1-78",
+   "chapter": "renal-cakut",
+   "source": "Pediatrics endpoint part1.pdf p.1316",
+   "answer": 2,
+   "stem": "Which of the following is true regarding posterior urethral valves?",
+   "options": [
+    "Anterior urethral valves are more common in males",
+    "Type 3 is the most common",
+    "Bilateral hydronephrosis in a baby male should always be investigated with urgent micturating cystogram",
+    "They always present with bilateral upper tract dilatation"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-32",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1020",
+   "answer": 0,
+   "stem": "Which of the following is true about antiepileptic drug treatment?",
+   "options": [
+    "Not all cases need treatment",
+    "All patients must start multidrug therapy",
+    "All seizures require immediate lifelong AEDs",
+    "AEDs have no side effects"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-80",
+   "chapter": "gi-abdopain",
+   "source": "Pediatrics endpoint part1.pdf p.1642",
+   "answer": 3,
+   "stem": "Which of the following is TRUE regarding congenital inguinal hernia?",
+   "options": [
+    "It is more common on the left side in females",
+    "Herniotomy should be delayed until the child is over 2 years old",
+    "The most common presenting age is between 1–2 years",
+    "Incarcerated hernia can cause infarction of the testis in the very young"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-32",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1020",
+   "answer": 0,
+   "stem": "Which of the following is true about antiepileptic drug treatment?",
+   "options": [
+    "Not all cases need treatment",
+    "All patients must start multidrug therapy",
+    "All seizures require immediate lifelong AEDs",
+    "AEDs have no side effects"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf4-50",
+   "chapter": "neonatal",
+   "source": "Pediatrics endpoint part1.pdf p.1744",
+   "answer": 1,
+   "stem": "Which of the following is true regarding breast milk jaundice?",
+   "options": [
+    "Conjugated",
+    "May be prolonged >2 months",
+    "Managed by advice to switch to formula feeding",
+    "It causes pale gray stool"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-32",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1020",
+   "answer": 0,
+   "stem": "Which of the following is true about antiepileptic drug treatment?",
+   "options": [
+    "Not all cases need treatment",
+    "All patients must start multidrug therapy",
+    "All seizures require immediate lifelong AEDs",
+    "AEDs have no side effects"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf4-65",
+   "chapter": "renal-cakut",
+   "source": "Pediatrics endpoint part1.pdf p.1774",
+   "answer": 1,
+   "stem": "Which of the following is TRUE regarding undescended testes (cryptorchidism)?",
+   "options": [
+    "Always approached using an inguinal approach",
+    "Ectopic testes may be found in the perineum",
+    "Usually requires a two-stage procedure",
+    "Are bilateral in 50% of cases"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-36",
+   "chapter": "neuro-cp",
+   "source": "Pediatrics endpoint part2.pdf p.1028",
+   "answer": 0,
+   "stem": "Which of the following is NOT true about cerebral palsy (CP)?",
+   "options": [
+    "Progressive disorder",
+    "Non-progressive brain injury",
+    "Motor impairment is the main feature",
+    "Usually appears in early childhood"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-43",
+   "chapter": "neonatal-sepsis",
+   "source": "Pediatrics endpoint part1.pdf p.1569 (also printed in Pediatrics endpoint part2.pdf p.557, with the stem clauses reordered; the options and the key are unchanged)",
+   "answer": 2,
+   "stem": "Which of the following is true about neonatal sepsis?",
+   "options": [
+    "A heart murmur is usually present.",
+    "Early-onset sepsis is usually acquired via the placenta following maternal infection.",
+    "Pneumonia is the commonest presentation in early-onset sepsis.",
+    "High fever is commonly present.",
+    "CBC is done to detect neutrophilia."
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-45",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1047",
+   "answer": 0,
+   "stem": "Which of the following is not typical for a febrile seizure?",
+   "options": [
+    "Recurrence or may be focal and generalized",
+    "Occurs in children 6 months to 5 years",
+    "Usually lasts less than 15 minutes",
+    "No underlying CNS infection or metabolic cause"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-75",
+   "chapter": "gi-abdopain",
+   "source": "Pediatrics endpoint part1.pdf p.1632",
+   "answer": 3,
+   "stem": "Which of the following is NOT TRUE regarding intussusception?",
+   "options": [
+    "More common in boys",
+    "Can occur secondary to Meckel's diverticulum",
+    "Bilious vomiting is not always present",
+    "Bleeding per rectum is the most common presenting symptom"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-50",
+   "chapter": "neuro-cp",
+   "source": "Pediatrics endpoint part2.pdf p.1057 (reprinted in Model Final Exam 1, p.1402, with the key option printed in full as “Botulinum toxin injections to the spastic muscles” at D and two distractors replaced — “Treatment of the cause of cerebral palsy” and “Restriction of certain proteins in the diet” for “Anticonvulsants only” and “Chemotherapy”; the answer is unchanged)",
+   "answer": 0,
+   "stem": "Which of the following is a treatment modality in cerebral palsy?",
+   "options": [
+    "Botulinum toxin",
+    "Resection of the affected brain area",
+    "Anticonvulsants only",
+    "Chemotherapy"
+   ]
+  },
+  "p1": {
+   "id": "pedep-nut-65",
+   "chapter": "nutrition-pem",
+   "source": "Pediatrics endpoint part1.pdf p.368 (reprinted word for word in Model Final Exam 3, p.1577)",
+   "answer": 1,
+   "stem": "Which of the following is a feature of marasmus?",
+   "options": [
+    "Dermatosis",
+    "Gross muscle wasting",
+    "Edema",
+    "Hair changes"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-53",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1063",
+   "answer": 2,
+   "stem": "Which of the following statements about headache is true?",
+   "options": [
+    "Migraine is most commonly unilateral",
+    "Migraine is most commonly with aura",
+    "Tension headache is symmetrical and gradual",
+    "Cluster headache is most common in children"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-64",
+   "chapter": "gi-abdopain",
+   "source": "Pediatrics endpoint part1.pdf p.1610",
+   "answer": 3,
+   "stem": "Which of the following statements regarding congenital inguinal hernia is TRUE?",
+   "options": [
+    "It is more common in females",
+    "Herniotomy should be delayed until the child is over 2 years",
+    "The most common presenting age is between 1–2 years",
+    "Bilaterality is more common in girls"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-neu-53",
+   "chapter": "neurological",
+   "source": "Pediatrics endpoint part2.pdf p.1063",
+   "answer": 2,
+   "stem": "Which of the following statements about headache is true?",
+   "options": [
+    "Migraine is most commonly unilateral",
+    "Migraine is most commonly with aura",
+    "Tension headache is symmetrical and gradual",
+    "Cluster headache is most common in children"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf4-27",
+   "chapter": "growth-puberty",
+   "source": "Pediatrics endpoint part1.pdf p.1698",
+   "answer": 1,
+   "stem": "Which of the following statements is true about familial short stature?",
+   "options": [
+    "It is usually associated with obesity",
+    "Child's height fluctuates 2 centiles between mid-parental height",
+    "It is a form of delay in attaining normal height",
+    "It leads to achieving normal height eventually"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-liv-11",
+   "chapter": "liver-hep",
+   "source": "Pediatrics endpoint part2.pdf p.1189",
+   "answer": 2,
+   "stem": "Which of the following is true regarding hepatitis A?",
+   "options": [
+    "It is a DNA virus which is spread by faecal–oral transmission.",
+    "It requires urgent treatment",
+    "Cure is usually achieved after 4 weeks of infection",
+    "Chronic liver disease usually occurs"
+   ]
+  },
+  "p1": {
+   "id": "pedep-neo-47",
+   "chapter": "neonatal",
+   "source": "Pediatrics endpoint part1.pdf p.890",
+   "answer": 1,
+   "stem": "Which of the following is TRUE about Transient Tachypnea of the Newborn?",
+   "options": [
+    "Oxygen therapy is always required",
+    "It is the most common cause of respiratory distress in term infants",
+    "It persists for several weeks",
+    "Chest X-ray is always normal"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-liv-11",
+   "chapter": "liver-hep",
+   "source": "Pediatrics endpoint part2.pdf p.1189",
+   "answer": 2,
+   "stem": "Which of the following is true regarding hepatitis A?",
+   "options": [
+    "It is a DNA virus which is spread by faecal–oral transmission.",
+    "It requires urgent treatment",
+    "Cure is usually achieved after 4 weeks of infection",
+    "Chronic liver disease usually occurs"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf1-31",
+   "chapter": "perinatal-rd",
+   "source": "Pediatrics endpoint part1.pdf p.1220",
+   "answer": 1,
+   "stem": "Which of the following is TRUE about transient tachypnea of the newborn?",
+   "options": [
+    "Commonly associated with vaginal delivery",
+    "Commonly associated with term delivery",
+    "Usually treated with mechanical ventilation",
+    "Caused by surfactant deficiency"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-liv-11",
+   "chapter": "liver-hep",
+   "source": "Pediatrics endpoint part2.pdf p.1189",
+   "answer": 2,
+   "stem": "Which of the following is true regarding hepatitis A?",
+   "options": [
+    "It is a DNA virus which is spread by faecal–oral transmission.",
+    "It requires urgent treatment",
+    "Cure is usually achieved after 4 weeks of infection",
+    "Chronic liver disease usually occurs"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf1-70",
+   "chapter": "gi-abdopain",
+   "source": "Pediatrics endpoint part1.pdf p.1300 (reprinted word for word in Model Training Exam 1, p.1815)",
+   "answer": 1,
+   "stem": "Which of the following is true of abdominal pain in children?",
+   "options": [
+    "Severe pain associated with blood in the stools at 6 months old is probably constipation and can be treated with lactulose",
+    "Intussusception is the most common cause of intestinal obstruction in infants after the neonatal period",
+    "Abdominal pain with a rash on the buttocks is typical of idiopathic thrombocytopenic purpura",
+    "In appendicitis, the pain typically starts in the right iliac fossa and moves towards the umbilicus in a few hours"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-liv-11",
+   "chapter": "liver-hep",
+   "source": "Pediatrics endpoint part2.pdf p.1189",
+   "answer": 2,
+   "stem": "Which of the following is true regarding hepatitis A?",
+   "options": [
+    "It is a DNA virus which is spread by faecal–oral transmission.",
+    "It requires urgent treatment",
+    "Cure is usually achieved after 4 weeks of infection",
+    "Chronic liver disease usually occurs"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-65",
+   "chapter": "perinatal-rd",
+   "source": "Pediatrics endpoint part1.pdf p.1612",
+   "answer": 1,
+   "stem": "All of the following is true regarding congenital diaphragmatic hernia EXCEPT:",
+   "options": [
+    "May be diagnosed antenatally",
+    "Is usually right-sided",
+    "May be associated with pulmonary hypoplasia",
+    "Posterolateral defect is the most common subtype"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-liv-11",
+   "chapter": "liver-hep",
+   "source": "Pediatrics endpoint part2.pdf p.1189",
+   "answer": 2,
+   "stem": "Which of the following is true regarding hepatitis A?",
+   "options": [
+    "It is a DNA virus which is spread by faecal–oral transmission.",
+    "It requires urgent treatment",
+    "Cure is usually achieved after 4 weeks of infection",
+    "Chronic liver disease usually occurs"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-77",
+   "chapter": "perinatal-rd",
+   "source": "Pediatrics endpoint part1.pdf p.1636",
+   "answer": 2,
+   "stem": "Regarding congenital diaphragmatic hernia (CDH), which of the following is TRUE?",
+   "options": [
+    "Chest tube should be placed",
+    "Baby should be ventilated with bag-mask ventilation",
+    "Nasogastric tube should be placed",
+    "Ventilation with high-frequency oscillation is contraindicated"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-liv-20",
+   "chapter": "liver-hep",
+   "source": "Pediatrics endpoint part2.pdf p.1209",
+   "answer": 1,
+   "stem": "Which of the following is true about acute viral hepatitis?",
+   "options": [
+    "Abdominal pain, nausea, and vomiting aren't common signs",
+    "Jaundice is not evident in all cases",
+    "All cases present with dark urine and clay-colored stools",
+    "All patients become icteric and febrile"
+   ]
+  },
+  "p1": {
+   "id": "pedep-nut-27",
+   "chapter": "nutrition-feed",
+   "source": "Pediatrics endpoint part1.pdf p.290",
+   "answer": 1,
+   "stem": "Which of the following is NOT true about breast feeding?",
+   "options": [
+    "Recommended food for infants both term and preterm",
+    "50% of energy from proteins",
+    "Contains immunological benefits (i.e. IgA, active lymphocytes)",
+    "Promotes growth of lactobacillus in GI",
+    "Decreases incidence of allergic disorders"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-liv-20",
+   "chapter": "liver-hep",
+   "source": "Pediatrics endpoint part2.pdf p.1209",
+   "answer": 1,
+   "stem": "Which of the following is true about acute viral hepatitis?",
+   "options": [
+    "Abdominal pain, nausea, and vomiting aren't common signs",
+    "Jaundice is not evident in all cases",
+    "All cases present with dark urine and clay-colored stools",
+    "All patients become icteric and febrile"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf1-78",
+   "chapter": "renal-cakut",
+   "source": "Pediatrics endpoint part1.pdf p.1316",
+   "answer": 2,
+   "stem": "Which of the following is true regarding posterior urethral valves?",
+   "options": [
+    "Anterior urethral valves are more common in males",
+    "Type 3 is the most common",
+    "Bilateral hydronephrosis in a baby male should always be investigated with urgent micturating cystogram",
+    "They always present with bilateral upper tract dilatation"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-liv-20",
+   "chapter": "liver-hep",
+   "source": "Pediatrics endpoint part2.pdf p.1209",
+   "answer": 1,
+   "stem": "Which of the following is true about acute viral hepatitis?",
+   "options": [
+    "Abdominal pain, nausea, and vomiting aren't common signs",
+    "Jaundice is not evident in all cases",
+    "All cases present with dark urine and clay-colored stools",
+    "All patients become icteric and febrile"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf3-80",
+   "chapter": "gi-abdopain",
+   "source": "Pediatrics endpoint part1.pdf p.1642",
+   "answer": 3,
+   "stem": "Which of the following is TRUE regarding congenital inguinal hernia?",
+   "options": [
+    "It is more common on the left side in females",
+    "Herniotomy should be delayed until the child is over 2 years old",
+    "The most common presenting age is between 1–2 years",
+    "Incarcerated hernia can cause infarction of the testis in the very young"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-liv-20",
+   "chapter": "liver-hep",
+   "source": "Pediatrics endpoint part2.pdf p.1209",
+   "answer": 1,
+   "stem": "Which of the following is true about acute viral hepatitis?",
+   "options": [
+    "Abdominal pain, nausea, and vomiting aren't common signs",
+    "Jaundice is not evident in all cases",
+    "All cases present with dark urine and clay-colored stools",
+    "All patients become icteric and febrile"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf4-50",
+   "chapter": "neonatal",
+   "source": "Pediatrics endpoint part1.pdf p.1744",
+   "answer": 1,
+   "stem": "Which of the following is true regarding breast milk jaundice?",
+   "options": [
+    "Conjugated",
+    "May be prolonged >2 months",
+    "Managed by advice to switch to formula feeding",
+    "It causes pale gray stool"
+   ]
+  }
+ },
+ {
+  "sim": 0.5556,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-liv-20",
+   "chapter": "liver-hep",
+   "source": "Pediatrics endpoint part2.pdf p.1209",
+   "answer": 1,
+   "stem": "Which of the following is true about acute viral hepatitis?",
+   "options": [
+    "Abdominal pain, nausea, and vomiting aren't common signs",
+    "Jaundice is not evident in all cases",
+    "All cases present with dark urine and clay-colored stools",
+    "All patients become icteric and febrile"
+   ]
+  },
+  "p1": {
+   "id": "pedep-mf4-65",
+   "chapter": "renal-cakut",
+   "source": "Pediatrics endpoint part1.pdf p.1774",
+   "answer": 1,
+   "stem": "Which of the following is TRUE regarding undescended testes (cryptorchidism)?",
+   "options": [
+    "Always approached using an inguinal approach",
+    "Ectopic testes may be found in the perineum",
+    "Usually requires a two-stage procedure",
+    "Are bilateral in 50% of cases"
+   ]
+  }
+ },
+ {
+  "sim": 0.5517,
+  "opt": 0,
+  "p2": {
+   "id": "pedep2-car-30",
+   "chapter": "cardiac",
+   "source": "Pediatrics endpoint part2.pdf p.688 (the explanation box is printed alone on p.689)",
+   "answer": 3,
+   "stem": "Which of the following statements about ventricular septal defect (VSDs) is most factually correct?",
+   "options": [
+    "VSDs are most commonly located in the muscular part of the ventricular septum",
+    "VSDs will cause an audible flow murmur across the defect, usually audible from birth",
+    "Infective endocarditis is a complication seen in approx. 10% of all children with VSDs",
+    "VSDs are associated with higher oxygen content in the blood of the right ventricle than the right atrium",
+    "VSDs are usually associated with right ventricular volume overload"
+   ]
+  },
+  "p1": {
+   "id": "pedep-nut-54",
+   "chapter": "nutrition-feed",
+   "source": "Pediatrics endpoint part1.pdf p.344 (the explanation box is printed alone on p.345)",
+   "answer": 0,
+   "stem": "Which of the following statements about preterm and term formulae and breast milk is most factually correct?",
+   "options": [
+    "Babies fed on fortified breast milk have a decreased incidence of late-onset sepsis and necrotizing enterocolitis when compared with babies fed on preterm formulae",
+    "Preterm babies fed with fortified breast milk show similar weight gain profiles to preterm babies fed on preterm formula milks",
+    "Preterm formula contains more fat, protein, and electrolytes but the same amount of carbohydrate as term formula or unfortified breast milk",
+    "Preterm formula has a lower sodium content than term formula",
+    "Preterm formula has the same protein content as term formula"
+   ]
+  }
+ },
+ {
+  "sim": 0.3099,
+  "opt": 0.8,
+  "p2": {
+   "id": "pedep2-mf1-51",
+   "chapter": "infection",
+   "source": "Pediatrics endpoint part2.pdf p.1372",
+   "answer": 2,
+   "stem": "A 2-year-old boy is brought into the emergency department by ambulance at night with an acute history of cough and stridor following a 2-day history of coryzal symptoms. On examination, he is afebrile but has marked intercostal recession with stridor and a 'barking cough' is heard. What is the most likely causative organism?",
+   "options": [
+    "Adenovirus",
+    "Respiratory syncytial virus",
+    "Parainfluenza virus",
+    "Rhinovirus",
+    "Influenza virus"
+   ]
+  },
+  "p1": {
+   "id": "pedep-inf-68",
+   "chapter": "respiratory",
+   "source": "Pediatrics endpoint part1.pdf p.1101",
+   "answer": 2,
+   "stem": "A 2-year-old boy has barking cough, stridor, and intercostal recession. What's the most likely causative organism?",
+   "options": [
+    "Adenovirus",
+    "RSV",
+    "Parainfluenza virus",
+    "Rhinovirus",
+    "Influenza virus"
+   ]
+  }
+ }
+]
