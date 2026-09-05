@@ -2680,3 +2680,156 @@ the "render one page past the last" rule has nowhere further to go.
 **Independent confirmation: no live entry cites any page in 1874–1991.** Measured over all 689
 entries of `Q_PEDS_EP` by pulling every `p.<n>` out of every `source`. The whole tail, exams
 included, had never been transcribed before this section.
+
+## §15 CLOSED — 2026-09-05, Model Training Exam 2, pp.1874–1936, staged 31 → 15 reprints + 16 drafted
+
+`Q_PEDS_EP` 689 → 705, 0 holes, boot check clean with **0 console errors**
+(`QUESTIONS 5792 · THEORY 153 · MODULES 4 · 153 chapter rows`). Commits `54191f8` (staging, the
+reprint pass, `SEC[15]` in the splicer, the fifteen extended sources) and `5d359e1` (both drafts +
+the spliced live file). Nothing pushed.
+
+### THREE PRE-MEASUREMENTS, ALL CONFIRMED ON THE RENDERS BEFORE ANYTHING WAS STAGED
+1. **The section holds 31 questions, not the 30 the OCR index reports.** The classifier misses
+   pp.1889/1890 because that question's explanation is an **Apgar scoring table** beginning
+   "1.Appearance (color):" rather than a lettered ladder with a yellow key, so neither page looks
+   like an answered sheet to it. It is question 8, and its key is marked ("b. 3", highlighted),
+   cross-checked against the box's own arithmetic 0+1+1+0+1 = 3.
+2. **The sheet prints "14" twice**, on pp.1901/02 and pp.1903/04 — the same defect shape as §12's
+   skipped 52 and doubled 63. `n` is sequential position and `pr` records the printed number, so
+   from n15 on the printed number runs one behind position.
+3. **No live entry cited any page in 1874–1936** before this section ran.
+
+### ⚠️ THE FINDING: THIS EXAM REPRINTS JUST UNDER HALF ITS PAPER
+Section 14 reprinted **one question in thirty**. Section 15 reprints **fifteen in thirty-one**, and
+they are not scattered: **n18 through n31 is a solid block of reprints**, broken only by n29's moved
+clause. Neither ratio is the book's rate. **Count every section; never carry one section's ratio
+into the next.**
+
+Twelve are word for word and passed the strict comparator untouched — n12→`pedep-mf2-41`,
+n18→`pedep-emg-57`, n20→`pedep-nut-58`, n21→`pedep-gp-85`, n22→`pedep-mf1-63`,
+n23→`pedep-mf1-68`, n24→`pedep-gp-89`, n25→`pedep-mf2-11`, n26→`pedep-mf2-13`, n27→`pedep-gp-6`,
+n28→`pedep-mf2-19`, n30→`pedep-nut-61`. **n18 sits in EXACT rather than NEAR because the only
+difference is a paragraph break the live entry does not carry**, and whitespace is one of the three
+classes that comparator is blind to. Three are NEAR, each clause naming what moved:
+n19→`pedep-emg-35` (the first option respelled *again* — "capillary refill time greater than 3
+seconds"; `pedep-emg-35`'s own source already recorded the same option being respelled once
+before), n29→`pedep-mf3-2` (the clause "On assessment, she has global developmental delay" moved
+from mid-stem to the end of the vignette), n31→`pedep-mf2-37` (the leading "A" dropped from the
+stem). **Every one keys the same option index and the same option text**, asserted by the pass.
+
+### n1 IS A GENUINE VARIANT AND IS DRAFTED, NOT REPRINTED
+p.1876 prints `pedep-mf3-8`'s case (p.1499) on **four options where the live entry prints five, two
+of them replaced**: the exam's [Rubella\*, Roseola, Erythema infectiosum, Erythema multiforme]
+against the live [Rubella\*, Measles, Roseola infantum, Erythema infectiosum, Chickenpox]. It also
+expands the vignette — "During the next 24 h, she develops tender swelling of her wrists and redness
+of her eyes." Key text is Rubella in both. **Same stem plus any option replaced, added or removed
+means DRAFT and record the pairing.** Drafted as `pedep-tr2-1` with the cross-reference written into
+its explanation, naming what the two live-only distractors would have shown. Nothing folded.
+
+### THE KEY-TEXT ARM, AND THE ROW IT CANNOT SEE
+Five arms ran. The fifth — the key-text arm invented for §14, which asks whether a live entry's key
+option is the same string as a staged row's key option — returned **eight hits over four rows**, and
+**every one was hand-read and every one is a different question that happens to share an answer**:
+- **n4** (p.1882, "Scarlet fever") vs `pedep-inf-2` and `pedep-inf-40`. The exam gives a 6-year-old
+  boy with vomiting, abdominal pain, tender cervical nodes and a heavily coated tongue; the two live
+  entries give 4-year-old girls with circumoral pallor and a pinpoint rash. The menu replaces
+  Chickenpox and Mumps with Infectious Mononucleosis and Erythema infectiosum.
+- **n7** (p.1888, "Weight for height") vs `pedep-gp-6`, `pedep-nut-21`, `pedep-nut-33`,
+  `pedep-nut-35`. The exam has **no vignette at all** — "You are assessing child nutrition" — where
+  the live entries give a fussy 2-year-old or a bare malnutrition fact, and its ladder drops
+  Skinfold thickness for Mid upper arm circumference.
+- **n9** (p.1892, "Breast milk jaundice") vs `pedep-neo-23`. The exam gives a 25-day-old's serial
+  TSB figures (6 → 13 mg/dL, direct 0.2); the live entry gives "Talia is 2 weeks old and is
+  breastfed". Three of five options differ.
+- ⚠️ **n8's key text is "3", below the arm's six-character floor, so the arm cannot see that row at
+  all** — the same blindness that hid §14's n18 ("MRCP"). n8 was read by hand for exactly that
+  reason. It asks the one-minute Apgar score of a depressed neonate on a ladder of bare numerals;
+  the only other live entry with a numeric ladder anywhere near it, `pedep-per-8`, scores a vigorous
+  term infant at 140 beats/min. Different question. **The floor is deliberate — shorter key texts
+  match on grammar, not on content — and the price of it is that somebody must read those rows.**
+
+### FIVE RELATIVES RECORDED, NONE FOLDED
+n19 vs `pedep-mf3-35` (a bare stem on the same menu with one option genuinely different — **a shared
+menu pairs questions, it never folds them**), n20 vs `pedep-nut-70` (a live duplicate pair that
+predates this section), n27 vs `pedep-nut-21` (different vignette, menu differing only in
+hyphenation), n29 vs `pedep-neo-14` (the body-bank ancestor, ischaemic against ischemic), n31 vs
+`pedep-neo-17` (a condensed printing sharing the menu). The three House hits — `pedhd-emg-19`,
+`pedhd-neo-14`, `pedhd-neo-17` — are record-only for the same reason plus one more: `questions.peds.js`
+is another chat's live file and nothing in this stream writes to it.
+
+### ⚠️ MY OWN ERROR: BOTH STAGING PROMPTS TOLD THE AGENTS TO DECLARE A VARIABLE
+Both subagent prompts instructed the stagers to write `var PEDEP_S15_STAGED_A/B = [ … ];` at the top
+of their part files. **A part file carries no declaration at all** — `merge-parts-ep.js` reads the
+raw file and wraps it itself — so that line breaks the parse outright. Both agents complied and both
+files were wrong. Repaired by deleting the declaration and its blank line from each.
+⚠️ **`SendMessage` is disabled in this session, for subagents as well**, so a running agent cannot be
+corrected mid-flight; the fix has to be made in its output afterwards. Half A's summary line also
+miscounted n12 as a 4-option sheet — the row's own `note` says "5 options printed (A–E)" and the file
+holds 5. **The disk was right and the report was wrong.** True split: 4 options on n1, n13, n14, n15,
+n16, and 5 on the other 26.
+
+### TWO THINGS RECORDED RATHER THAN CORRECTED
+1. **Numbers, which are always flagged.** Staged n15 (p.1904, printed 14) gives a birth weight of
+   **3400 g** and **3450 g at three weeks**. Read as steady linear gain that is slow against the
+   feeding lecture's 20–30 g/day, but the vignette reports a normal examination and the figures are
+   transcribed exactly as printed. Nothing altered.
+2. **A book/lecture divergence at n5.** The exam's vignette says the roseola rash "appeared on the
+   face then spread all over the body"; `infectious diseases causing maculopapular rash.txt` says
+   the rash starts on the trunk and rarely affects the face. **The disagreement is noted in the
+   explanation and the printed key does not move** — the fever-resolves-then-rash timing settles the
+   question unambiguously either way.
+
+### THE PAIRING CHECKS WERE PUT AS QUESTIONS AGAIN, AND AGAIN CAME BACK SILENT
+Both drafters were asked whether their same-answer candidates were the same question, and told that
+silence was the expected outcome and that they must not act alone if they disagreed. Both returned
+the same verdict reached independently here. **Framing the check as a question rather than an
+instruction has now produced correct silences in §13, §14 and §15.**
+
+### THE ARITHMETIC RECONCILES EXACTLY
+16 drafted + 15 reprinted = 31 staged, **with no `n` drafted twice and no `n` neither drafted nor
+reprinted**, measured over both halves loaded from disk. Both drafts were verified against the
+staging record before the splice: stem, options and key compared with `JSON.stringify`, **0 faults**.
+
+## ⛳ PART 1 IS CLOSED — 2026-09-05
+
+`Pediatrics endpoint part1.pdf` is transcribed end to end. **`Q_PEDS_EP` holds 705 entries, 0 holes**,
+and the app boots from `file://` with **0 console errors**: `QUESTIONS 5792 · THEORY 153 ·
+MODULES 4 · 153 chapter rows (138 with questions, 15 empty by design)`, per module ent 30 ·
+ophtho 36 · neuropsych 36 · pediatrics 51.
+
+**Fifteen sections, all spliced:** §1–§9 the body (pp.5–1156), §10–§13 the four Model Final Exams
+(pp.1157–1804), §14–§15 the two Model Training Exams (pp.1805–1936). The tail, pp.1937–1991, was
+measured and **stages nothing** — see the tail block above. **Part 2 is Chat C's file
+(`questions.peds.ep2.js`) and nothing in this stream touched it.**
+
+### THE CLOSING MEASUREMENT, AND THE ONE PAGE IT TURNED UP
+The check that part 1 is actually finished is not a section count — it is **page coverage**: every
+`p.<n>` was pulled out of the `source` of all 705 live entries and set against every page the OCR
+index classifies as `answered`.
+
+**855 answered pages. 854 of them are cited by a live entry. One is not: p.938.**
+
+p.938 was rendered and read. It is a **revision-bullets page headed "Encephalitis"** — Definition,
+Causes, Presentation, Management — with no question stem and no lettered option ladder anywhere on
+it. Its neighbours pp.937 and 939 are the same shape ("Viral Meningitis", "Specific Bacterial
+Infections"). The only highlight on any of the three is the yellow background behind the heading,
+which is what the classifier mistook for a marked key. **The classifier's "answered" tag on p.938 is
+a false positive, and no question was missed.**
+
+⚠️ **The classifier is wrong in BOTH directions on this book, and the two errors have opposite
+costs.** It called p.938 answered when it is prose (harmless — it produced one page to look at), and
+it called pp.1889/1890 notes when they are question 8 of Training Exam 2 (**expensive — it would
+have lost a real question**). Neither direction is rare enough to trust the tag alone.
+**Page coverage against the live sources is the instrument that catches the expensive direction.**
+
+⚠️ **A numbered-line grep will not survive this book.** p.939 numbers its disease subheadings
+"1. Meningococcal Disease", "2. Pneumococcal Infection", and from ~p.1979 the Exam Night Review
+prints numbered rapid-review flashcards. Both hit a numbered-line search and both stage nothing.
+
+### WHAT PART 1 COST IN REPRINTS
+The book reprints itself heavily and **the rate is not stable across sections, so no section's rate
+predicts the next one.** Section 14 reprinted 1 of 30; section 15 reprinted 15 of 31, in a solid
+block from n18 to n31. Every reprint extends an existing entry's `source` and creates nothing;
+every variant — an option replaced, added or removed — is drafted as its own entry with the pairing
+recorded in prose. **Nothing was ever folded between two live entries on the strength of a
+similarity score.**
