@@ -2563,3 +2563,86 @@ The staging header names two more (n33, n60) and both are reprints, so they were
 distinct answers on five lines where the live printing prints Hepatitis B at E. **p.1732 truncates
 an option mid-phrase** at "found in compensated" with no noun. **n31's explanation box repeats
 n30's word for word.** Each is staged exactly as printed and none moved a key.
+
+## §14 CLOSED — 2026-09-05, Model Training Exam 1, pp.1805–1873, staged 30 → 1 reprint + 29 drafted
+
+`Q_PEDS_EP` 660 → 689, 0 holes, boot check clean with 0 console errors. Commits `c986485`
+(reprint pass, `SEC[14]`, the one extended live source), `9062cc3` (a line-ending repair, below)
+and `fb46f00` (both drafts + the spliced live file). Nothing pushed.
+
+### THE SECTION IS 30 QUESTIONS AND ONE OF THEM IS A REPRINT
+Title page 1805, then 1806–1873 = 68 pages = 34 sheets. The exam prints 30 questions; the four
+remaining answered sheets are explanation overflow, which the OCR classifier reads as `notes`.
+**A "notes" page in this book is not always prose — it is often an explanation that ran long.**
+That is the same miscount shape as §15's, recorded separately below.
+
+Adjudication used **five arms**, and the fifth is new:
+1. **OCR page arm** — the two live sources citing anything near this range. 2 candidate pages.
+2. **Stem arm** — normalised stem against every live entry: 1 exact hit (n4), 1 near hit (n5).
+3. **Whole-text arm** — 49 candidate lines over 17 of the 28 remaining rows, every one hand-read.
+   All different questions.
+4. **Option-set arm** — Jaccard over the option sets. **0.000 on all 28.**
+5. **Key-text arm, WRITTEN FOR THIS SECTION** — match the *text of the printed key* rather than
+   the stem, which catches a question that asks the same fact from a different angle. 4 hits;
+   three hand-read as same-fact/different-question (n15 vs `pedep-neo-4`, n17 vs `pedep-mf2-69`,
+   n22 vs `pedep-mf1-80`) and nothing was written into any of them. ⚠️ **The arm has a
+   6-character floor**, so n18's key text "MRCP" is below it and the arm cannot see that row.
+   The floor is deliberate: shorter key texts match on grammar, not on content.
+
+**The one reprint: n4, p.1815 → `pedep-mf1-70`, p.1300, word for word.** `pedep-mf1-70`'s `source`
+now reads `… p.1300 (reprinted word for word in Model Training Exam 1, p.1815)`. Entry count
+unchanged, as a reprint always leaves it.
+
+**No live source cites any page in 1805–1873.** That is the independent confirmation that this
+range had never been transcribed before.
+
+### THE FINDING: n5 IS A VARIANT, NOT A REPRINT — the key moved with the options
+p.1817 reprints `pedep-mf4-63` (p.1770) with **two options replaced by their opposites, and the
+printed key moved to follow them**:
+
+| | live `pedep-mf4-63`, p.1770 | staged n5, p.1817 |
+|---|---|---|
+| A | Presence of stomach **in the chest** ← live key | Presence of stomach **down in the abdomen** |
+| C | Lung-to-head ratio (LHR) of **1.5** | Lung-head ratio of **0.8** ← staged key |
+
+Both printings are internally correct: a stomach in the chest and an LHR of 0.8 are each the
+poor-prognosis answer to their own ladder. **Same stem + any option replaced = DRAFT and record
+the pairing.** It is drafted as `pedep-tr1-5`, the pairing is written into both explanations, and
+nothing was folded. **Different numbers mean a different question.**
+
+### HALF B WAS A KNOWN-BAD FILE AND THE REPAIR HAD TO AVOID THE HEREDOC
+Half B's drafter hit a session rate limit (429, model `claude-sonnet-5`) with its last words
+"All 15 entries fixed. Now verify it parses." — leaving exactly the shape MEMORY warns about.
+All 15 entries were present; the file did not parse. Two unescaped apostrophes inside
+single-quoted `explanation` strings: `pedep-tr1-17` line 28 col 989 (`bowel wall's innervation`)
+and `pedep-tr1-19` line 54 col 696 (`this lesion's single most common way`).
+
+⚠️ **The repair was written to disk with the `Write` tool and run from there, never typed into a
+heredoc** — a quoted heredoc collapses `\\` to `\` before the inner language sees it, which is
+precisely what broke the n9 note one section earlier. The script builds both characters as
+`String.fromCharCode(39)` and `String.fromCharCode(92)` and asserts exactly one occurrence of each
+target before substituting. Both halves then verified against staging from disk: stems, options
+and keys byte-identical on all 29 drafted entries, 0 faults.
+
+### ⚠️ TWO DIAGNOSTICS THAT LIED, BOTH WORTH KEEPING
+1. **`sed '1,/^\*\//d'` produced a false pass.** It only matches `*/` at column 0, and the draft
+   headers close with an indented `   … strips this header. */`, so sed deleted the entire file
+   and `node --check` passed on an empty array — briefly hiding half B's real parse error.
+   **A pass from a stripper you just wrote is a claim about the stripper first.**
+2. **`node --check` FAILS on a healthy draft file** and that is not a fault: a draft is a
+   comma-joined fragment, not a program. Parse it by wrapping in `[` … `]` and `eval`ing.
+
+### ⚠️ A PYTHON TEXT-MODE REWRITE SILENTLY CONVERTED 309 CRLF ENDINGS TO LF
+Inserting the four-line `SEC[14]` block into `tools/bank-harness/splice-pd-ep.js` with
+`io.open(P, encoding='utf-8').read()` + `io.open(P,'w',newline='').write()` rewrote the whole file
+as LF and committed as `622 ++++----`. `node --check` passes either way, so the tool never
+noticed. **`splice-pd-ep.js` is a CRLF file.** Detected by `git diff --stat --ignore-cr-at-eol`
+(4 insertions, not 622) and `tr -cd '\r' | wc -c` (309 before, 0 after). Repaired **forward, not
+by amending** — another chat is live and committing — with a byte-mode `s.replace(b'\n', b'\r\n')`,
+committed separately as `9062cc3`. **Read and write bytes, or count the CRs before and after.**
+
+### JUDGMENT CALLS ANSWERED "NO", WHICH IS THE CORRECT OUTCOME
+n3 vs `pedep-nut-14` and n15 vs `pedep-neo-4` were both put to the drafters **as questions rather
+than as instructions**, and both came back silent. Nothing was written into either live entry.
+Framing the pairing check as a question produced three correct silences in §13 and two more here.
+**A template match is not a pairing.**
