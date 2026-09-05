@@ -1744,11 +1744,96 @@ without the same reason.
 matching other negative-stem questions, NOT a reprint. Do not fold any of them.** This is the third
 chapter-shaped House overlap in the stream (s5 ≈ ch.13, s8 ≈ ch.12, s9 ≈ ch.14).
 
+## Sections 10 and 11 — staged, merged, swept (2026-09-05, commit `8cc17c4`, unpushed)
+
+Two sections staged in one batch and committed together. **Neither is spliced yet**; four drafting
+halves were running when the commit landed. Section 10 "Liver disorders" pp.1146–1210 merged to
+`endpoint-p2-s10-liver.array.js` at **20**, pp.1168–1209; section 11 "Malignant diseases" pp.1211–1269
+merged to `endpoint-p2-s11-malignant.array.js` at **23**, pp.1224–1268. `pr` equals `n` throughout
+both. All four hand-copied section tables (`val-pd-ep2.js` `SEC`, `splice-pd-ep2.js`,
+`merge-parts-ep2.js`, `sweep-staged-ep2.js`) already carried 20 and 23 and needed no edit, and no
+figure in either section sits off its answered page, so neither needed a `figPage` override — the
+first two sections running to need nothing from the tools.
+
+**Both counts were confirmed on the page images, not on the index.** Section 10's twenty were opened
+twice over — by the chapter-rulings agent, which read all twenty question pages while doing its own
+job, and again page by page by both staging halves. Section 11's rulings file had confirmed 23 on OCR
+text alone and said so in its own words; its summary line was corrected before staging to hand the
+count to the halves as a hypothesis, and both halves then opened all twenty-three pages individually
+and 23 held. **No second `kind === "answered"` false positive after section 9's.** Section 11's
+boundary was proved on both sides: p.1269 is the closing Arabic supplication, p.1270 the "Model Final
+Exam 1" title slide.
+
+### The fold is cross-section, and it is the book's own filing error
+
+**n17 of section 10, printed on p.1201 inside the liver section, is nephrotic syndrome** — the same
+vignette, the same four options in the same order and the same key as **`pedep2-ren-34`, live since
+section 7 from p.886.** The chapter-rulings agent found it before staging by measuring the question
+against `theory.peds.js` rather than against the section heading; the adjudication then confirmed it
+page against page (`endpoint-p2-s10-fold-adjudication.md`). Spontaneous bacterial peritonitis is a
+named complication in **both** the chronic-liver-disease and the nephrotic-syndrome material, so the
+sign alone could not have settled it — the whole vignette had to be read.
+
+**The fold was applied to the live entry**, since the survivor was already spliced. Section 9's shape
+exactly: the survivor keeps its own p.886 box verbatim and unmixed, and p.1201's differently worded
+box is quoted and attributed in the expansion, because neither box contains the other — p.886 states
+the general infection risk, p.1201 adds the diagnostic inference from the oedema and names complement
+loss alongside immunoglobulin loss. Blending the two into one blockquote would fabricate a box the
+book never printed. `source` now reads `p.886 (reprinted at p.1201, inside the liver-disorders
+section)`, and `splice-pd-ep2.js` declares `folded: [17]` so the gap is named rather than silent.
+
+**The fold upgraded an outside-knowledge tag.** The live entry had tagged its whole complement claim
+as not taught; p.1201's box prints complement loss, so the tag was narrowed to **complement factor B
+by name** alone. A fold that improves an already-live entry's sourcing is new in this stream.
+
+### Four pairs adjudicated as templates, none folded
+
+Section 10's **n18/n19** (hepatitis B vs hepatitis A) and **n11/n20** (hepatitis A vs acute viral
+hepatitis in general) are the same statement-testing frame on different diseases, different keys, no
+shared option text. Section 11's **n21** and **n23** match live entries about bronchiolitis, headache
+and congenital heart disease — the "which statement is true" and "most common X" frames again. **Two
+of the three section-11 sweep pairs were adjudicated without a page pass**, because the comparators
+name entirely different diseases; the stem-frame template signature is now recognisable from text
+alone, which saved an agent. Section 11 has **zero folds**.
+
+### Shapes worth carrying forward
+
+- **Section 10 prints three explanation boxes alone on the page after their question** (pp.1175, 1204,
+  1207) — the most in any section of either part. A naive alternation check misses all three, because
+  the box page occupies the slot the next question's unanswered twin would otherwise fill. Four of its
+  questions print **no box at all** (n10, n12, n13, n16).
+- **Section 11 is the opposite: all 23 print their box on their own page**, and it contains **no figure
+  anywhere** — no boxless markers to write in that section at all.
+- **Three shared option menus** across the two sections, each pairing rather than folding: section 10's
+  four-way hepatitis-and-cholestasis ladder (n6–n9), section 11's four-way diagnosis ladder (n9–n12)
+  and four-way investigation ladder (n14–n17). **n16 and n17 share both the ladder AND the key**, so
+  there the discriminating token is the whole of the difference.
+- **Two crops, both looked at**, both section 10: `q-pd-ep2-1172.jpg` (an infant's face) and
+  `q-pd-ep2-1177.jpg` (an eye). Both `imgAlt` strings are confined to modality and view because each
+  photograph shows the finding its question turns on. **The p.1172 crop is 620×400, under this bank's
+  652×408 floor** — that is the printed photograph's own size inside its thin border; extending would
+  pull in page background, not more picture. Recorded so it is not read as a convention change.
+- **Two contradictions to RECORD in section 11, `answer` not moving on either**: n20's Turner key
+  against `gen-8`'s Y-bearing-karyotype gonadoblastoma risk, and n15's box calling hypertension a
+  neuroblastoma sign against `mal-22`'s table, which puts hypertension under Wilms.
+- **Section 11's n19 prints "White cell count >50 × 10⁹/L"** — checked at hires as a genuine typeset
+  superscript and staged as `10^9`, not taken from OCR.
+
+### ⚠️ For the end-of-stream cross-bank sweep — a fourth and a fifth chapter-shaped overlap
+
+**Section 10 n1–n9 map one-for-one onto House chapter 19** (`pedhd-liv-1` … `-9`, 0.893–1.000, every
+key agreeing), plus **n14 ≈ `pedhd-neo-8`** (0.736). **Section 11 maps onto House chapter 20 by
+printed question number**: `n1≈pedhd-mal-1` (1.000), `n2≈mal-2` (0.865), and on identical option sets
+`n4≈mal-4 · n5≈mal-5 · n7≈mal-7 · n8≈mal-8 · n13≈mal-13 · n18≈mal-18 · n20≈mal-20 · n21≈mal-21 ·
+n22≈mal-22` — every key agreeing wherever the numbers align. **Five chapter-shaped overlaps now**:
+Nutrition ≡ ch.10, s8 ≡ ch.12, s9 ≡ ch.14, s10 ≡ ch.19, s11 ≡ ch.20. **Nothing folds across banks
+while both chats are live.** ⚠️ Section 10's n11/n20 and section 11's n21/n23 are templates — do not
+fold them.
+
 ### Next
 
-**Section 10** (liver, 20, pp.1146–…): the chapter-rulings agent is running. Then staging halves →
-`merge-parts-ep2.js 10` → `sweep-staged-ep2.js` → drafting notes → drafting halves → `val-pd-ep2.js`
-→ `splice-pd-ep2.js 10 --write` → `boot-check.js` → commit → journal. ⚠️ **Re-measure section 10's
-count on the page images before staging — `kind === "answered"` is no longer a trustworthy field.**
-Then **11** (malignant 23). Sections **12–15 are the four model exams at 80 each and need
-`reprint-pd-ep2.js` run over the range before drafting**; then recent-mod 18 and recent-add 8.
+**Section 10**: four drafting halves are out (s10 A/B, s11 A/B). As each returns →
+`val-pd-ep2.js <n> <half>` → `splice-pd-ep2.js 10 --write` (`folded: [17]` already declared) →
+`boot-check.js` → commit → journal. **Section 11** the same, with no `folded:` needed. Then sections
+**12–15, the four model exams at 80 each — `reprint-pd-ep2.js` must be run over the range BEFORE
+drafting**; then recent-mod 18 and recent-add 8.

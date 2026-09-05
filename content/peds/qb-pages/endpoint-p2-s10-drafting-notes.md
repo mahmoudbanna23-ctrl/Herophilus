@@ -109,7 +109,14 @@ is the section-9 one:
 **n10, n12, n13 and n16.** Write the explanation from the cached lecture and end it with the
 marker, exactly:
 
-`Written for this bank — the endpoint file prints no explanation here.`
+`Written for this bank — Pediatrics endpoint part2.pdf prints no explanation here.`
+
+⚠️ **CORRECTED 2026-09-05, after half B caught it.** This file first printed the marker as
+`Written for this bank — the endpoint file prints no explanation here.`, which is **not** the string
+`val-pd-ep2.js` checks: its `UNBOXED_MARK` constant (line 238) and `pd-ep2-draft-brief.md` line 168
+both name the file, not "the endpoint file". Half B followed the validator over these notes, said so,
+and passed clean. The rule that made that safe is the one at the top of this file — **the notes are
+not the source.**
 
 The marker never lives in `source`. n10's boxlessness was confirmed during staging by checking
 that p.1188 is the next question's own unanswered twin rather than a missed overflow box — it is
