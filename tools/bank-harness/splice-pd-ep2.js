@@ -85,8 +85,19 @@ const SEC = {
   // the book never printed. Reasoning in endpoint-p2-s09-drafting-notes.md.
   9: { prefix: 'pedep2-end-', staging: 'endpoint-p2-s09-endocrine.array.js', svar: 'PEDEP2_S09_STAGED',
        draft: 'endpoint-p2-s09-endocrine.draft', folded: [23] },
+  // Section 10's one fold is cross-section, not within-section: n17 (p.1201) into pedep2-ren-34
+  // (p.886), already live from section 7. The book shelves a nephrotic-syndrome question inside
+  // the liver-disorders section -- a mis-shelving, not a transcription error -- and the two
+  // printings share the same four options in the same order and the same key. Here too the two
+  // explanation boxes are differently worded and neither is a superset: p.886 has the general
+  // "high risk of infections", p.1201 adds the diagnostic inference from the oedema and names
+  // complement loss as well as immunoglobulin loss. The live entry keeps its own p.886 box
+  // verbatim; p.1201's wording is carried in the expansion, attributed. Adjudication in
+  // endpoint-p2-s10-fold-adjudication.md.
+  // ⚠️ n11/n20 and n18/n19 were adjudicated NOT folds -- both pairs are negative-stem or
+  // "which statement is correct" TEMPLATES applied to different diseases with different keys.
   10: { prefix: 'pedep2-liv-', staging: 'endpoint-p2-s10-liver.array.js', svar: 'PEDEP2_S10_STAGED',
-        draft: 'endpoint-p2-s10-liver.draft' },
+        draft: 'endpoint-p2-s10-liver.draft', folded: [17] },
   11: { prefix: 'pedep2-mal-', staging: 'endpoint-p2-s11-malignant.array.js', svar: 'PEDEP2_S11_STAGED',
         draft: 'endpoint-p2-s11-malignant.draft' },
 
