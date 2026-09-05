@@ -2439,3 +2439,127 @@ and n46.
 (1874–1936). Exam Night Review opens at p.1937 and is prose — nothing to stage. **Every count above
 for those three is a claim from the contents page, not a measurement — re-measure each from the
 pages before staging.** Part 1 is NOT closed until all six exams are done.
+
+---
+
+## §13 CLOSED — 2026-09-05, Model Final Exam 4, pp.1644–1804, staged 80 → 21 reprints + 59 drafted
+
+`Q_PEDS_EP` **601 → 660**, 0 holes, 1,763,490 → 1,919,587 bytes. Boot check clean:
+`QUESTIONS 5705 · THEORY 153 · MODULES 4 · 153 chapter rows (138 with questions) · 4 module cards`,
+pediatrics 51, **0 console errors**. Commits `15a4031` (staged), `fe6de4d` (reprint pass),
+`44bb4a6` (four halves + splice). **No fold: the section stands at 59 live entries.**
+
+The arithmetic, each part measured separately: **80 staged = 21 reprints + 59 drafted
+(A 17 · B 11 · C 12 · D 19)**. The halves are lopsided because the reprints are: nine of half B's
+twenty rows are reprints and only one of half D's.
+
+### THE THIRD ARM IS WHAT §12 COST US, AND IT PAID HERE
+§12 closed with a finding about instruments rather than about itself: two probes sharing no input
+agreed on 18 candidates and were wrong by two, because **both matched on the STEM** and both missed
+a printing the live entry records in prose inside `source`. §13 therefore ran **three arms**:
+
+1. **OCR arm** — `reprint-pd-ep.js 1644 1804` over the page text. 14 endpoint-side candidate pages.
+2. **Stem arm** — stem-head Levenshtein at 8% tolerance over the staged rows. 4 exact + 10 near,
+   naming the same 14 pages.
+3. **Whole-text arm + option-set arm** — `adj13.js` pass 3 searching stem, options, explanation AND
+   source for each row's key text and its rarest words, and `screen13.js` comparing option MENUS
+   directly by Jaccard over `tight()`-normalised sets.
+
+**Arms 1 and 2 agreed with each other and were both short by nine.** Arm 3 added **n16, n19, n25,
+n35, n37, n38, n44, n55 and n59**, and two of the first fourteen turned out not to be reprints at
+all. Four of the nine were found on the option menu alone, scoring **1.000 on the set against
+0.238–0.31 on the stem** — n19 (`pedep-gp-41`, `pedep-gp-15`), n35 (`pedep-inf-69`), n55
+(`pedep-inf-75`), n25 (`pedep-mf1-49`). A stem probe is structurally blind to a reprint whose
+vignette was rewritten around an unchanged ladder, and no amount of agreement between stem probes
+fixes that.
+
+**Pass 4 found no live source citing any page in 1644–1804**, so nothing was already recorded.
+
+### ⚠️ THE PROBE'S THRESHOLDS WERE CALIBRATED, NOT CHOSEN, AND THE FIRST CALIBRATION CAUGHT A BUG
+Pass 3 was run over the 14 rows pass 1 had already matched and asked to recover the same live entry.
+It recovered **0 of 14** — a statement about the probe, not about the bank. The cause: **`tight()`
+strips EVERY space**, so tokenising its output yields one giant word and the rare-word test keeps
+nothing. `words()` is the tokenising normaliser. After the fix, recall went 11 → 12 → 13 → **14/14**
+at `DFCAP 25 / NTERMS 8 / MINRARE 2 / THRESH 3`, printing 156 candidate lines over 59 of 66 rows.
+Loosening to DFCAP 40 / NTERMS 10 still recovers 14 and prints 215 lines, so it buys nothing.
+
+**A second instrument fault, worth the same warning:** the first probe run was piped through
+`| tee adj13.out.txt | head -40`. `head` closing early SIGPIPE-killed the pipeline, leaving a
+**55-line file whose own header claimed 156 candidate lines**. Caught only because the score
+histogram summed to 28 rather than 156. **Never put `head` in a pipeline whose output you intend to
+keep.**
+
+### THE 21 REPRINTS
+Written into `reprint-s13-pd-ep.js` with a clause each saying what the exam printing did, and into
+`splice-pd-ep.js` as `SEC[13].reprints`. n1 `pedep-nut-57` · n16 `pedep-gp-85` · n19 `pedep-gp-15` ·
+n22 `pedep-nut-70` · n25 `pedep-mf1-49` · n29 `pedep-gi-2` · n31 `pedep-mf3-27` · n32 `pedep-mf3-32` ·
+n33 `pedep-mf1-10` · n35 `pedep-inf-69` · n37 `pedep-inf-56` · n38 `pedep-mf3-9` · n44 `pedep-emg-61` ·
+n46 `pedep-gp-88` · n52 `pedep-mf1-43` · n54 `pedep-nut-60` · n55 `pedep-inf-75` · n57 `pedep-nut-11` ·
+n59 `pedep-nut-59` · n60 `pedep-gi-65` · n68 `pedep-mf3-63`.
+
+**Four passed the strict comparator as EXACT** (n1, n33, n46, n60); the other seventeen carry a
+written clause. **Two keys whose TEXT does not match are named rather than waved through** — the
+pass proves a reprint by checking the key still lands on the same option text, which is the one
+distinction a similarity score cannot make. n22 coordinates the same two signs the other way round
+("can cause mucosal bleeding and petechiae" for "can lead to petechiae and mucosal bleeding"), and
+n44's sheet **breaks the key option off before its noun** at "found in compensated". A third, n59,
+passes by the `recorded` escape §12 built: its live `source` already quotes the variant wording.
+
+### ONE NUMERAL SETTLED BY CROP, AND THE TWO PRINTINGS DISAGREE
+n25 and live `pedep-mf1-49` are the same question. Read at 600 dpi: **p.1694 prints "the last 2
+weeks", p.1257 prints "the last 2 days"**. A third printing, live `pedep-gi-3` at p.418, agrees with
+the exam at two weeks. Recorded in the source clause, **not reconciled** — the key never moves and
+neither does a printed number. The exam also names the girl Ellie where p.1257 says only "a
+4-year-old girl", and spells the fifth option "Wilms tumour" against p.1257's "tumor".
+
+### TEN CANDIDATES DELIBERATELY DRAFTED, AND THE THREE PUT TO THE DRAFTERS AS A QUESTION
+Each shares a stem or a menu with a live entry and differs in a way that makes it a different
+question: **n4** (`pedep-nut-73`, benefit-shaped distractors against drawback-shaped) · **n7**
+(`pedep-mf1-19`) · **n12** (`pedep-alg-9`, **the same vignette at 5 years here and 7 there**) ·
+**n27** (`pedep-gp-12`) · **n53** (`pedep-mf3-28` / `pedep-neo-32` / `pedep-neo-47` — **one stem,
+four menus**, each key correct inside its own; §12 already ruled this stem stays separate) ·
+**n58** (`pedep-mf3-40`, Mumps and CMV replacing Chickenpox and HSV) · **n61** (`pedep-alg-1`,
+**management against diagnosis**) · **n62** (`pedep-emg-24`, a menu of doses against a menu of bare
+names) · **n64** (`pedep-mf3-77` and `pedep-mf3-80`, **NOT-true against TRUE**, diaphragmatic
+against inguinal).
+
+**n30, n50 and n65 were put to their drafters as a QUESTION, not an instruction, and all three
+answered no.** The `pedep-mf3-62/75/76/80` cluster scores against them on the shared
+"which of the following is TRUE regarding X" frame; read against the actual entries, the cluster is
+duodenal atresia, intussusception and inguinal hernia while the three rows are vaccination,
+breast-milk jaundice and cryptorchidism. **A template match is not a pairing**, and framing the
+check as a question is what produced three correct silences instead of three fabricated
+cross-references.
+
+### A SEVENTH PAIRING CAME FROM A DRAFTER, NOT FROM THE ADJUDICATION
+Half B surfaced **`pedep-mf1-33`**, which tests n21's fact — pneumothorax as the commonest
+complication of meconium aspiration — and **declined to decide on it**, which is the correct
+behaviour. It is a pairing: the live entry asks the fact against a full vignette on a five-option
+menu, n21 asks it bare on four, and Hyperglycemia and Hypernatremia appear only in the live menu.
+The cross-reference was added by hand after the half validated. **§12's lesson repeating in a
+smaller key: the drafters read more carefully than any probe, because they read for meaning.**
+
+### THREE ROWS PRINT NO EXPLANATION BOX
+n42, n63 and n70 carry authored explanations ending in the marker, matching the 20 already live.
+The staging header names two more (n33, n60) and both are reprints, so they were never drafted.
+
+### LIVE-FILE DEBTS SURFACED HERE, RECORDED AND NOT CHASED
+1. **Four `pedep-inf-*` entries carry condensed, summarised stems rather than transcriptions** —
+   `pedep-inf-8`, `pedep-inf-56`, `pedep-inf-69`, `pedep-inf-75`, all from pp.981–1115. Each matched
+   a staged row on options and key while printing a stem far shorter than the exam's ("A 6-month-old
+   develops a blanching rash after fever resolves. Cultures are negative."). Repairing them means
+   re-reading pp.981–1115. **Writing the exam's fuller text under the body bank's citation would be
+   worse than leaving it.**
+2. **Two pre-existing live duplicate pairs**, both recorded and neither folded:
+   `pedep-nut-58` / `pedep-nut-70` (one question in two option orders) and `pedep-inf-8` /
+   `pedep-mf1-43`.
+3. **A unit divergence between two live printings of one question**: `pedep-inf-56` prints
+   2.2 g/L, 1.3 mmol/L and 6.3 mmol/L; `pedep-mf1-36` converts to mg/dL. **2.2 g/L = 220 mg/dL and
+   1.3 mmol/L = 24 mg/dL both check out, but 6.3 mmol/L = 113 mg/dL against a printed 149 mg/dL.**
+   Recorded, never corrected.
+
+### DEFECTS IN THIS EXAM'S PRINTING, staged as printed
+**n32 prints options D and E identically** ("Hepatitis A vaccine"), so its ladder offers four
+distinct answers on five lines where the live printing prints Hepatitis B at E. **p.1732 truncates
+an option mid-phrase** at "found in compensated" with no noun. **n31's explanation box repeats
+n30's word for word.** Each is staged exactly as printed and none moved a key.
