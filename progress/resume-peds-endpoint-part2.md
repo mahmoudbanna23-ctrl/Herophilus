@@ -1830,10 +1830,85 @@ Nutrition ≡ ch.10, s8 ≡ ch.12, s9 ≡ ch.14, s10 ≡ ch.19, s11 ≡ ch.20. *
 while both chats are live.** ⚠️ Section 10's n11/n20 and section 11's n21/n23 are templates — do not
 fold them.
 
+## Sections 10 and 11 — SPLICED (2026-09-05, `e146831` and `82b2825`, unpushed)
+
+**Live: 457 → 476 → 499 entries, 0 holes, 0 duplicate ids, no stray field, and the boot check clean
+at each step** — `QUESTIONS 5747 · THEORY 153 · MODULES 4 · 153 chapter rows · 4 module cards ·
+0 console errors`. Ids run `pedep2-liv-1`…`-20` with **17 deliberately absent** (the fold) and
+`pedep2-mal-1`…`-23` with no gap.
+
+Both sections' chapter splits landed exactly where the rulings predicted, which is the check those
+files exist to pass: **section 10 liver 5 · liver-hep 10 · neonatal 3 · haematology 1 = 19**, and
+**section 11 malignant 9 · malignant-solid 13 · infection-vesic 1 = 23**. The validator's own tally
+agreed on all four halves independently.
+
+**Section 11 is the first section of this stream with no fold at all.** The sweep found no
+within-section reprint and both cross-file hits were templates.
+
+### Divergences and contradictions recorded, no key moved
+
+Five in the two sections, and one of them was found during drafting rather than predicted:
+
+- **s10 n4** — the printed key vaccinates the baby and the household contacts; `liv-13`'s own
+  exposed-newborn protocol gives the baby **HBIG alongside** the vaccine.
+- **s10 n12** — the key puts hepatitis A's incubation at **14–28 days**; the material says **15–45,
+  average 30**.
+- **s11 n15** — the box reasons from hypertension to neuroblastoma; `mal-22`'s comparison table files
+  hypertension under **Wilms** and gives neuroblastoma no BP association at all.
+- **s11 n20** — the key says Turner carries no increased malignancy risk; `gen-8` says Y-bearing
+  mosaic and structural karyotypes, about half of all cases, raise gonadoblastoma risk enough to
+  indicate gonadectomy.
+- **s11 n23 — NOT predicted by any notes file, found on the page by half B.** The box puts ALL at
+  **80%** of childhood leukaemia against the lecture's **75%**. Recorded; it changes no answer.
+
+### Gaps answered and tagged
+
+**s10 n5** carries three separate tags — Wilson's disease appears exactly once in the whole peds
+corpus, in the neurology deck's chorea table, never as a liver disease, so mechanism, organ sequence
+and treatment are each tagged where the claim is made. **s11 carries four**: retinoblastoma /
+leukocoria (zero corpus hits, three questions — n7, n16, n22, written as siblings reaching one
+diagnosis by three presentations), lymphoma as a disease (n18), Li-Fraumeni (inside n20), and PET
+scan as a distractor across the n14–n17 ladder, **tagged once at the anchor rather than four times.**
+
+### Two placements that look wrong at a glance, and are not
+
+**s10 n13 files `haematology` inside a liver section** — there is no bilirubin anywhere in its stem
+and the haemoglobin has fallen 15 → 10.2 at the physiological nadir of infancy. **s11 n6 leaves
+oncology although its patient is an oncology patient** — a well 3-year-old on chemotherapy exposed to
+a sibling's rash is asking about varicella contact management, which `mal-13`'s emergencies never
+mention and `inf-33` is written for. Both entries say so in the expansion.
+
+### ⚠️ Process findings from these four halves
+
+1. **A drafting-notes file of mine was wrong and the validator caught it.** I printed the boxless
+   marker as `Written for this bank — the endpoint file prints no explanation here.`; `val-pd-ep2.js`
+   line 238's `UNBOXED_MARK` and `pd-ep2-draft-brief.md` line 168 both name the file:
+   `Written for this bank — Pediatrics endpoint part2.pdf prints no explanation here.` **Half B
+   followed the validator over my notes, passed clean, and said so.** Corrected in place with a note
+   recording it. This is the second time in two sections that the rule "the notes are not the source"
+   has paid.
+2. **s10 half A wrote two missing commas between adjacent entry objects** (n4/n5 and n7/n8), caught
+   both itself with `node --check`, fixed and re-verified. A draft half IS comma-joined — that is the
+   opposite of a staging part, where `node --check` always fails meaninglessly.
+3. **All four halves again disregarded the injected instruction** to edit files with sed/heredocs
+   instead of Write/Edit, and each said so unprompted.
+
 ### Next
 
-**Section 10**: four drafting halves are out (s10 A/B, s11 A/B). As each returns →
-`val-pd-ep2.js <n> <half>` → `splice-pd-ep2.js 10 --write` (`folded: [17]` already declared) →
-`boot-check.js` → commit → journal. **Section 11** the same, with no `folded:` needed. Then sections
-**12–15, the four model exams at 80 each — `reprint-pd-ep2.js` must be run over the range BEFORE
-drafting**; then recent-mod 18 and recent-add 8.
+**Section 12, MODEL FINAL EXAM 1, pp.1270–1431, 80 questions — four staging quarters are out**
+(`.part-A.js` n1–20, `.part-B.js` n21–40, `.part-C.js` n41–60, `.part-D.js` n61–80). The reprint map
+is already run and committed (`endpoint-p2-s12-reprint-map.md`). Then `merge-parts-ep2.js 12` →
+`sweep-staged-ep2.js 12` → **the reprint pass, which must PROVE each pair on the page image** →
+`reprints: [...]` and `reprintPass:` added to `splice-pd-ep2.js`'s section-12 config → chapter
+rulings (**this is a mixed section, so chapters can only be ruled AFTER staging — the reverse of a
+body section's order**) → drafting notes → drafting → splice.
+
+⚠️ **`splice-pd-ep2.js`'s section-12 `reprints` array is deliberately absent, not empty.** A section
+with no `reprints` key behaves as staged == drafted, which is correct until each hit has been
+confirmed on the page image. Adding a guessed array would make the splicer accept missing entries
+silently.
+
+Then **13, 14, 15** the same way (each needs its own `reprint-pd-ep2.js` run, immediately before its
+staging, because the scan compares against the live file and goes stale after every splice), then
+**16 recent-mod 18** and **17 recent-add 8** — both of which print the answered page only, with no
+unanswered twin. **Section 18, Exam Night Review, pp.1950–1992, takes no entry and must not get one.**
