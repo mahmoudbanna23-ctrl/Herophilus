@@ -2342,3 +2342,100 @@ Exam 1 (1805–1873, 30), Training Exam 2 (1874–1936, 30). Exam Night Review o
 prose — nothing to stage. **Part 1 is NOT closed until all six exams are done.** Expect MFE 3 to
 reprint heavily as well: stage all 80 first, run both probes, adjudicate every NEAR by side-by-side
 reading, and only then decide how many entries the section drafts.
+
+---
+
+## §12 CLOSED — 2026-09-05, Model Final Exam 3, pp.1483–1643, staged 80 → 19 reprints + 61 drafted → 60 live
+
+`Q_PEDS_EP` **541 → 602 → 601**, 0 holes, 1,589,900 → 1,759,645 bytes. Boot check clean:
+`QUESTIONS 5514 · THEORY 153 · MODULES 4 · 153 chapter rows (138 with questions) · 4 module cards`,
+pediatrics 51, **0 console errors**. Commits `5d5a5fa` (reprint pass), `399dfca`/`b5b5ffa`/
+`5204563`/`02f5dbb` (halves A–D), `d7bbb34` (splice + fold).
+
+The arithmetic, each part measured separately because a sum hides an offsetting error:
+**80 staged = 19 reprints + 61 drafted (A 17 · B 16 · C 15 · D 13)**, then one within-section fold,
+so the section stands at **60 live entries**.
+
+### ⚠️⚠️ THE REPRINT COUNT WENT 17 → 18 → 19, AND BOTH LATE ONES WERE FOUND BY DRAFTERS, NOT PROBES
+Two probes sharing no input — one over the OCR text of every answered page, one over the human
+staged transcription — agreed on **18 endpoint candidates**, of which 17 were reprints and the 18th
+was n7 (proved not a reprint, below). That agreement was wrong by two.
+
+**n26 (`pedep-nut-59`) and n46 (`pedep-nut-16`) are reprints, and both probes were blind to them for
+the same reason: both probes match on the STEM, and these two questions reprint a wording that the
+live entry records in PROSE INSIDE `source`, not in its stem.** n26 was surfaced by the half-B
+drafter, n46 by the half-C drafter, each while reading its own rows against the live file. Two
+independent instruments agreeing is not a measurement of the thing; it is a measurement of what they
+share. Written into `reprint-s12-pd-ep.js` beside both rows and into `splice-pd-ep.js`'s comment
+block, so the next section's adjudication does not repeat it.
+
+**The comparator needed no change for n46** — its key text differs only by capitalisation, which
+`flat()` already folds. **n26 needed one narrow escape**: the live entry keys "Work as prebiotics"
+where the exam prints "Function as prebiotics", so the pass now accepts a differing key text **only
+when the live `source` already contains the exam's wording verbatim**:
+
+```js
+const recorded = liveKey !== examKey && flat(q.source || '').indexOf(examKey) >= 0;
+```
+
+A blanket relaxation would have swallowed n7 — which is exactly the row this pass exists to keep out.
+
+### n7 IS NOT A REPRINT — the same child, a different question
+n7 shares a rickets vignette with live `pedep-nut-71` (p.380) down to the 37.8 °C rectal temperature.
+p.380 offers five calcium/phosphate/alkaline-phosphatase **patterns**; the exam offers five
+**investigations** and keys "Serum calcium". No option and no key in common. Folding it would delete
+a question rather than merge two printings of one. This is §11's n24 shape reached by another route:
+there the two printings disagreed about a dose, here they are not the same question at all.
+
+### THE EXAM PRINTS ONE OF ITS OWN QUESTIONS TWICE — n50 (p.1583) ≡ n58 (p.1599)
+Word for word: same stem, same five options in the same order, key on the same option
+("Respiratory problems"), same chapter `emergencies`. **The reprint pass structurally could not see
+this**: it extends the `source` of a LIVE entry when the exam reprints something the book printed
+earlier, and here both rows were new — no live source to extend, nothing to write. Both were drafted
+in full and the pair was resolved after the splice by **`tools\bank-harness\fold9-pd-ep.js`**, the
+fold being the only operation allowed to pick a survivor and delete a loser.
+
+**p.1583 survives because its box states the discriminator** — "Unlike adults (cardiac), in children
+respiratory failure is the most common cause" — which is the comparison the ladder tests, where
+p.1599's box states the conclusion alone. p.1599 was the longer entry only because it defers the
+option-by-option comparison to p.1583 and spends its length on the hypoxic sequence; that physiology
+and the second box are both carried into the survivor, so the fold loses nothing. The dropped entry
+was **the only thing in the file naming `pedep-mf3-50`**, and nothing named `pedep-mf3-58` — proved
+by the dead-id check running on the OUTPUT, after the repairs, which is the only place it proves
+anything.
+
+### The four drafting agents corrected my prompts in seven places, all accepted
+Half C, five: the missing-connective box is on **n61, not n60**; the printed-number offset closes at
+**n63, not n64**; the validator **hard-fails** the n50/n58 shared option menu rather than merely
+reporting it (`pedep-mf3-58: shares the n:50/n:58 option menu but does not point at pedep-mf3-50`),
+so n58 named n50 until the fold dropped it; the staging file holds 80 rows and half D's own title
+line is stale; and **brief §12's `<A|B>` usage line is wrong — `val-pd-ep.js <sec> <half>` accepts
+A–D.** Half D, two: **none** of n68–n80 is unboxed, so the authored marker appears nowhere in
+draft-D; and the staging half-D header contradicts its own page walk by one row on where the printed
+offset closes.
+
+### Divergences recorded, key never moved
+n34 (limit age given as ~90–95% where the lecture uses 97.5%) · n25 (box prints 2 s where the stem
+says 5 s; >3 s vs >2 s CRT) · n44 (*E. coli* listed as a meningitis cause) · n55 (polycythaemia named
+as a hypoglycaemia mechanism — it is a real one) · n68 (box prints no figure for an all-numeric
+ladder) · n73 (<1 year where the usual teaching is 18 months) · n76 (option A prints "Most common
+form of bowel atresia is thrush") · n78 (box names associations no option offers, silent on duodenal
+atresia) · n79 (the rolling test answers a different question than the one asked).
+
+### Pairings recorded, not folded — a shared menu pairs, it never folds
+n41 ↔ `pedep-mf3-6` · n64 ↔ n80 · n66 ↔ n73 · n45/n48/n49/n50 near-twins living in other sections ·
+n70 ↔ `pedep-mf2-30` · n71 ↔ `pedep-mf2-35` · n76 ↔ `pedep-gi-58` · n77 ↔ `pedep-mf2-33` ·
+n79/n80 ↔ `pedep-mf1-53`.
+
+### Half D's reprint hunt used the stronger method and came back empty
+Rather than matching stems, it scanned stem + options + explanation + `source` of all 541 live
+entries, then regex-scanned every live `source` for pages 1616–1643. One hit: `pedep-mf2-66`, which
+already records p.1616 — that is n67, already on the list. **This is the method the next section's
+adjudication should start from**, since it is the only one of the three that would have caught n26
+and n46.
+
+### Next
+**§13 = Model Final Exam 4, pp.1644–1804.** Then Training Exam 1 (1805–1873) and Training Exam 2
+(1874–1936). Exam Night Review opens at p.1937 and is prose — nothing to stage. **Every count above
+for those three is a claim from the contents page, not a measurement — re-measure each from the
+pages before staging.** Part 1 is NOT closed until all six exams are done.
