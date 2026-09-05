@@ -21,10 +21,10 @@ Where this file and the archive disagree, this file wins. ⚠️ **Before openin
 `CLAUDE.md` was trimmed 2026-09-02 into `reference.md` (`## Moved from CLAUDE.md - 2026-09-02`);
 **no live rule left it.**
 
-## Resume here — state at end of 2026-09-03
+## Resume here — state at 2026-09-05
 **BOTH CHATS RAN the night of 2026-09-02/03; both prompts were REWRITTEN IN PLACE 2026-09-03 late
 against measured disk state.** ⚠️ **RELAUNCH ONLY FROM `progress\resume-2026-09-03b-chatB-peds.md`
-(v3), `progress\resume-2026-09-03-late-peds-endpoint.md` (v5) and `progress\resume-2026-09-03c-workflow-and-staging.md` (House via Codex + `tools\chapter-loop.js`)** — every earlier prompt is stale and pays
+(v4 — House now via `tools\chapter-loop.js` + Codex), `progress\resume-2026-09-03-late-peds-endpoint.md` (v6, part 1), and `progress\resume-peds-endpoint-part2.md` (v1, Chat C part 2)** — every earlier prompt is stale and pays
 ~50k more per read. ⚠️ **A DIRTY TREE IS NORMAL while two chats run** — **never stage another
 chat's file; commit explicit paths only, and wait on `index.lock`, never delete it.**
 ⚠️ **The watch runs FROM THE MAIN `D:\claude os` CHAT, not its own** (user, 2026-09-03) — note atop
@@ -34,14 +34,14 @@ and `resume-peds.md` (~37k → ~13k) with **`RESUME-READ-FROM-HERE-2`**, nothing
 ✅ ENT CLOSED (`ledger.md` §15–§16). ✅ **OPHTHO CLOSED 2026-09-02** — **1,598**, 0 holes, CLEAN, boots;
 all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`.
 
-- ⏳ **PEDS HOUSE — bank MEASURED at 393; `questions.peds.js` holds 296 (2026-09-03 17:00, array loaded, 0 holes,
-  296 bare-key + 0 quoted-key), ch.1–13 spliced and committed (`ef1f9d5`); 97 remain (ch.14–20 = 16·6·14·26·4·9·22,
-  `resume-peds.md` map).** ch.14 is the first Codex-staged chapter — `node tools\chapter-loop.js 14 status`. Peds OSCE **14 Sep**.
-- ⏳ **PEDS ENDPOINT part 1 — LAUNCHED 2026-09-02, RUNNING; part 2 deferred by the user.**
-  **`app\data\questions.peds.ep.js` holds 216** (s1 89 + s2 76 = 165, folded 165 -> 150 -> 148;
-  **s3 Gastro `aa6881d` 148 -> 215 -> 213 with a fold; s4 Accidents `a10bc69` 213 -> 216, no fold**).
+- ✅ **PEDS HOUSE CLOSED 2026-09-04 — `questions.peds.js` holds 393, the full measured bank**, all
+  20 chapter prefixes present (array loaded 2026-09-05, 0 holes, boots clean). Close-out: `resume-peds.md`.
+- ⏳ **PEDS ENDPOINT part 1 RUNNING; PART 2 LAUNCHED 2026-09-04 as Chat C** — own file `questions.peds.ep2.js` (`Q_PEDS_EP2`, `pedep2-`, `bank:'endpoint'`); subagent-vision, NOT Codex; HARD GATE build `ocr\ep2\` + agree the section map before staging; resume `progress\resume-peds-endpoint-part2.md`. part2.pdf = 1993 pp / 272 MB.
+  **MEASURED 2026-09-05, arrays loaded, 0 holes: p1 `questions.peds.ep.js` 541** (11 sections: inf 94 ·
+  gp 73 · nut 73 · gi 64 · emg 58 · neo 52 · mf1 50 · mf2 46 · per 21 · alg 8 · acc 2) · **p2 246** (hem 87 ·
+  res 65 · gen 38 · nd 28 · dp 28). Splice history through s4: `ledger.md`.
   ⚠️ **A FOLD MAKES THIS FILE SHRINK LEGITIMATELY** — a drop with no fold commit behind it is the
-  finding. **s1–s4 are SPLICED; s5 is next.** A section that outgrows one file splits `part-A/B` →
+  finding. A section that outgrows one file splits `part-A/B` →
   `tools\bank-harness\merge-parts-ep.js` → `.draft-*` → `.array.js`, and the splicer refuses unless
   its validator gate exits 0. ⚠️ **Never run `val-pd.js`/`splice-pd.js` on endpoint files — they write Chat B's live
   file**; the `-pd-ep` pair is the endpoint's, and the splice refuses unless its validator exits 0.
@@ -131,21 +131,21 @@ all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`.
 - **⚠️ Bank sampling and provenance: `progress\memory-archive.md`** — a contents page may print per-section counts (**verify, never trust**); the end-of-ENT "outside knowledge" list is **half wrong**, re-grep item by item; 67 entries record no provenance, roster in `ledger.md` §11.
 
 ## Validation state
-- **Corpus 4,586** (2026-09-03 watch, **chats mid-run — re-measure before quoting; it drifts by the
-  commit**. Loaded each array and read `.length`; sparse holes checked with `for i… if(!(i in A))`,
-  **zero holes, every file `eval`s clean**): ENT **2,322** (2,240 q + 82 c) · **Ophtho 1,598** ·
-  Neuro **275** (268 q + 7 c) · Peds House **243** · **Peds endpoint 148**. ✅ **BOOTED FROM
-  `file://` 2026-09-03, 0 console errors** — `QUESTIONS 4586 · THEORY 153 · MODULES 4 · 153 chapter
-  rows (122 with questions, 31 empty by design) · 4 module cards`; per module ent 30 · ophtho 36 ·
-  neuropsych 36 · pediatrics 51. Keys `ent`, `ophtho`, `pediatrics`, `neuropsych`. Options 2–10
-  coexist. ⚠️ **`grep -c "^  { id:"` UNDERCOUNTS `questions.ophtho.js` BY ~440 — load the array.**
+- **Corpus 5,375** (2026-09-05, **chats still mid-run — re-measure before quoting; it drifts by the
+  commit**. Every array loaded and indexed for sparse holes, `for i… if(!(i in A))`, **zero holes,
+  every file `eval`s clean**): ENT **2,322** (2,240 q + 82 c) · **Ophtho 1,598** · Neuro **275**
+  (268 q + 7 c) · Peds House **393** · Peds endpoint **787** (p1 541 + p2 246). ✅ **BOOTED FROM
+  `file://` 2026-09-05, 0 console errors** — `QUESTIONS 5375 · THEORY 153 · MODULES 4 · 153 chapter
+  rows (138 with questions, 15 empty by design) · 4 module cards`; per module ent 30 · ophtho 36 ·
+  neuropsych 36 · pediatrics 51. **The per-file sum reconciles exactly to the boot number.** Keys `ent`, `ophtho`, `pediatrics`, `neuropsych`; options 2–10 coexist (2:10 · 3:67 · 4:3836 · 5:1365 · 8:1 · 9:1 · 10:6).
+  ⚠️ **`grep -c "^  { id:"` UNDERCOUNTS `questions.ophtho.js` BY ~440 — load the array.**
 - **✅ THE BOOT CHECK IS NOW A REPO TOOL: `node tools\boot-check\boot-check.js`** (2026-09-02) —
   copies `app\`, probes errors ahead of the app's own scripts, stubs the gate, seeds a profile,
   kills animation, walks all four modules, **refuses to run under a path containing `--`**.
-  ⚠️ **Four probe faults each produced a confident zero from a HEALTHY app**: `THEORY` is an OBJECT
+  ⚠️ **Six probe faults each produced a confident zero from a HEALTHY app**: `THEORY` is an OBJECT
   not an array · chapters nest **two** deep (`MODULES[].groups[].chapters[]`) · **nothing renders
   until `enterProfile()` runs** · `.ch-row` exists only inside a module view. **A zero from a probe
-  you just wrote is a claim about the probe first.** ⚠️ `CLAUDE.md` §7 says "134 chapters"; it is **153**.
+  you just wrote is a claim about the probe first.** ⚠️ `CLAUDE.md` §7 says "134 chapters"; it is **153**. ⚠️ **Faults 5-6, 2026-09-05:** `modules.js` declares `const MODULES` and a `const` does NOT leak out of `eval()` the way the data files' `var` does (append `;MODULES` to the source); and **a chapter is a TUPLE `["<id>","<name>"]`, not an object** — reading `.id` off it made all 5,375 entries look unresolvable.
 - **✅ CACHES AND HARNESS NOW LIVE IN THE REPO, not a scratchpad** (2026-09-02):
   `content\peds\qb-pages\ocr\` **139 files** (pp.32–151 = all remaining peds House; grep `ph_all.txt`
   first) · `content\neuro\qb-pages\ocr\` **2 only** + `nb-anchors.txt` · **`tools\bank-harness\`**
