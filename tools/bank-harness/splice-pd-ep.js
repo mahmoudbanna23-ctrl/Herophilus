@@ -115,6 +115,16 @@ const SEC = {
         draft: 'endpoint-s14-tre1.draft',
         reprints: [4],
         reprintPass: 'reprint-s14-pd-ep.js', reprintMark: 'Model Training Exam 1' },
+  // Training Exam 2 reprints just under half its paper: 15 of 31 staged rows are already in
+  // the live file, and n18 through n31 are a solid block of them. Section 14 reprinted one in
+  // thirty. Neither ratio is the book's -- count every section.
+  // n1 is NOT a reprint and is deliberately absent from this list: p.1876 prints
+  // pedep-mf3-8's question on four options where the live entry prints five, two of them
+  // replaced, and expands the vignette. Same stem plus any option replaced means DRAFT.
+  15: { prefix: 'pedep-tr2-', staging: 'endpoint-s15-tre2.array.js', svar: 'PEDEP_S15_STAGED',
+        draft: 'endpoint-s15-tre2.draft',
+        reprints: [12, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31],
+        reprintPass: 'reprint-s15-pd-ep.js', reprintMark: 'Model Training Exam 2' },
 };
 
 const HEADER = `/* Pediatrics ENDPOINT questions (Pediatrics endpoint part1.pdf).
