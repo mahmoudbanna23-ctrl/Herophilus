@@ -144,8 +144,22 @@ const SEC = {
   8: { prefix: 'pedep2-neu-', file: 'endpoint-p2-s08-neuro.array.js', svar: 'PEDEP2_S08_STAGED',
        draft: 'endpoint-p2-s08-neuro.draft', chapter: 'neurological', pages: [930, 1078], ans: 60,
        folded: [34, 41, 47, 59], figPage: { 8: 970, 9: 973 } },
+  // ⚠️ `ans` IS 26, NOT THE 27 THE INDEX AND THE PAGE MAP BOTH SAID. Measured page by page on the
+  // images by section 9's staging half A, 2026-09-05: p.1082 is an ordinary teaching-notes slide
+  // headed "Management", with no stem, no options and no highlighted key. It sits inside an unbroken
+  // notes run pp.1079-1090, and its yellow section header is the same shape as the un-flagged yellow
+  // headers on pp.1080/1081/1083/1084/1088/1089 -- it is the only one of that run the index
+  // mistagged `answered`. The printed question numbers confirm it independently: they run 1..26
+  // across all three staging parts with no gap, and 3 (pp.1092, 1094, 1097) + 23 (the even run
+  // 1100-1144) = 26. The page map's premise that one question was "twinless" rested on this false
+  // positive; nothing in the section is twinless. See endpoint-p2-s09-s11-page-map.md.
+  //
+  // `figPage` for n3: p.1097's stem says the diary "is shown on the next page" and the figure is
+  // printed alone on p.1096, so the crop comes off 1096 and not off the answered page. Same shape as
+  // section 8's two EEG tracings -- the second section running to need the override.
   9: { prefix: 'pedep2-end-', file: 'endpoint-p2-s09-endocrine.array.js', svar: 'PEDEP2_S09_STAGED',
-       draft: 'endpoint-p2-s09-endocrine.draft', chapter: 'endocrine', pages: [1079, 1145], ans: 27 },
+       draft: 'endpoint-p2-s09-endocrine.draft', chapter: 'endocrine', pages: [1079, 1145], ans: 26,
+       figPage: { 3: 1096 } },
   10: { prefix: 'pedep2-liv-', file: 'endpoint-p2-s10-liver.array.js', svar: 'PEDEP2_S10_STAGED',
         draft: 'endpoint-p2-s10-liver.draft', chapter: 'liver', pages: [1146, 1210], ans: 20 },
   11: { prefix: 'pedep2-mal-', file: 'endpoint-p2-s11-malignant.array.js', svar: 'PEDEP2_S11_STAGED',

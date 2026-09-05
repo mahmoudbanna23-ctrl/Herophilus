@@ -83,7 +83,14 @@ const SEC = {
   8: { base: 'endpoint-p2-s08-neuro', svar: 'PEDEP2_S08_STAGED', title: 'SECTION 8: "Neurological disorders"',
        pages: '930-1078', expect: 60 },
   9: { base: 'endpoint-p2-s09-endocrine', svar: 'PEDEP2_S09_STAGED', title: 'SECTION 9: "Diabetes & Endocrinology"',
-       pages: '1079-1145', expect: 27 },
+       // ⚠️ `expect` IS 26, NOT THE 27 THE OCR INDEX AND THE PAGE MAP BOTH SAID. Measured page by
+       // page on the images by section 9's staging half A, 2026-09-05: p.1082 is an ordinary
+       // teaching-notes slide headed "Management" -- no stem, no options, no highlighted key -- sat
+       // inside an unbroken notes run pp.1079-1090, and the index mistagged it `answered` because
+       // its yellow section header matches the un-flagged yellow headers on pp.1080/1081/1083/1084/
+       // 1088/1089. Confirmed independently by the printed question numbers, which run 1..26 with no
+       // gap across all three staging parts. See endpoint-p2-s09-s11-page-map.md.
+       pages: '1079-1145', expect: 26 },
   10: { base: 'endpoint-p2-s10-liver', svar: 'PEDEP2_S10_STAGED', title: 'SECTION 10: "Liver disorders"',
         pages: '1146-1210', expect: 20 },
   11: { base: 'endpoint-p2-s11-malignant', svar: 'PEDEP2_S11_STAGED', title: 'SECTION 11: "Malignant diseases"',
