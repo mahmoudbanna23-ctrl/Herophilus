@@ -111,6 +111,10 @@ const SEC = {
         reprints: [1, 16, 19, 22, 25, 29, 31, 32, 33, 35, 37, 38, 44, 46, 52, 54, 55, 57, 59, 60,
                    68],
         reprintPass: 'reprint-s13-pd-ep.js', reprintMark: 'Model Final Exam 4' },
+  14: { prefix: 'pedep-tr1-', staging: 'endpoint-s14-tre1.array.js', svar: 'PEDEP_S14_STAGED',
+        draft: 'endpoint-s14-tre1.draft',
+        reprints: [4],
+        reprintPass: 'reprint-s14-pd-ep.js', reprintMark: 'Model Training Exam 1' },
 };
 
 const HEADER = `/* Pediatrics ENDPOINT questions (Pediatrics endpoint part1.pdf).
