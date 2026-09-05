@@ -256,9 +256,9 @@ Not gaps. Lead with the sourced part, tag only the sentence that leaves the mate
   options (trauma, visual impairment) are red flags in ordinary practice too; the entry must say
   the key is the one the bank chose, and record the printed key as printed.
 
-## ⚠️ Two anchors that carry their own gap tags — do not double-source them
+## ⚠️ Three anchors that carry their own gap tags — do not double-source them
 
-The theory file marks its own outside knowledge, and two anchors this section leans on are marked:
+The theory file marks its own outside knowledge, and three anchors this section leans on are marked:
 
 - **`endo-33` (n34, congenital adrenal hyperplasia)** opens with *"The gap: CAH is named as a cause
   in three paediatric decks and taught in none."* Everything `endo-33` says about CAH is therefore
@@ -268,6 +268,14 @@ The theory file marks its own outside knowledge, and two anchors this section le
   the course material)"*. `mal-19` — brain tumours are the commonest **solid** tumour of childhood,
   mostly infratentorial — is genuine course content and is what n47 actually turns on. Take the
   answer from `mal-19` and treat `mal-20`'s medulloblastoma detail as tagged.
+- **`ren-12` (n65, haemolytic uraemic syndrome)** opens with *"**⚠️ NOT DESCRIBED IN ANY PAEDIATRIC
+  DECK** — L39 names HUS only in the cause tree and as a cause of **haemoglobinuria**, the diarrhoea
+  deck only as a stool-culture indication."* and states outright that everything below it is supplied
+  from general medical knowledge and tagged. Cite `ren-12` as the anchor — it is where the course
+  material stops and the project's own write-up starts — and carry the tag onto the HUS triad itself
+  (microangiopathic haemolytic anaemia, thrombocytopenia, acute kidney injury), not merely onto a
+  detail of it. **This bullet was missing when the halves were drafted**; half B resolved n65 the
+  right way regardless and the omission was found reading the file back.
 
 ## ⚠️ n43 and n46 — a chapter tension to record, not to resolve
 
