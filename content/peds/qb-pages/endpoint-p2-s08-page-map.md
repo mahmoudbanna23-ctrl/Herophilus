@@ -63,3 +63,42 @@ is cropped.
 Part A carries both parity flips and both missing twins, so it is the one to launch with the
 boundary checks: **pp.930-954 opening block** (confirm no question hides in it) and the twin
 question at 970/973. Part D carries the closing boundary, **p.1078**.
+
+---
+
+## ⚠️ CORRECTION, measured on the image 2026-09-05 — this file was wrong about p.1037
+
+Staging part C opened p.1037 rather than trusting this file's account of it, because p.1036 printed
+no explanation box. **p.1037 is not a teaching-notes page. It is a genuine overflow explanation box
+for n:40**, a small bordered side box in reduced font — the discriminator the staging brief names.
+The entry carries `box:1037`.
+
+The box is **itself truncated**, ending mid-sentence at "...brain imaging (MRI" with a large blank
+area below it, confirmed at 300 dpi and not a render artefact. Transcribed verbatim; nothing
+completed, nothing invented. Whoever drafts n:40 is drafting from an explanation the book leaves
+unfinished.
+
+**Why the map was wrong, and where else it may be wrong.** The OCR index's `kind` classifier reads a
+box-only page as `notes`, because it sees no question, no options and no highlight. `kind` is still
+the right instrument for counting *answered* pages — it matched `expect` exactly at 60 — but it
+cannot distinguish an overflow box from a teaching slide, and this file repeated its verdict without
+checking.
+
+Three other pages in this section carry the same `notes` label in the same position, immediately
+after an answered page:
+
+| page | sits after | status |
+|---|---|---|
+| **962** | 961 (answered, last of run 1) | ⚠️ **UNCHECKED** — nobody was addressed to it |
+| **970** | 968 … 971 | checked by part A as the missing-twin question |
+| **973** | 971 … 974 | checked by part A as the missing-twin question |
+| **1037** | 1036 (answered) | **overflow box, confirmed** |
+
+**p.962 is the open one.** It has exactly the shape that p.1037 turned out to have — a lone `notes`
+page directly after an answered page whose box may not have fitted. It must be looked at before
+section 8 is called complete, and if it is an overflow box then n:4 (p.961) needs `box:962`.
+
+This is the second time in this book the index has been proved wrong about a page's kind, and the
+second time in the opposite direction from the first: section 6 had notes pages the boolean called
+answered; here an answered page's box is called notes. **The index is an address list, not a
+description. Open the page.**
