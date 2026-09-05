@@ -1922,7 +1922,7 @@ nine the pre-staging scan found are all inside the thirty-seven; none was a fals
 at ≥0.90, five at or near 1.000. Full table in `endpoint-p2-s12-reprint-map.md`, under
 `## MEASURED AFTER STAGING`.
 
-### Next
+### Next — as it stood at staging, and superseded by the two blocks below
 
 **Section 12's adjudication pass is out** — three agents over disjoint ranges, writing
 `endpoint-p2-s12-fold-adjudication-A.md` (n1–30), `-B.md` (n31–60), `-C.md` (n61–80). Each names the
@@ -1947,3 +1947,129 @@ Then **13, 14, 15** the same way (each needs its own `reprint-pd-ep2.js` run, im
 staging, because the scan compares against the live file and goes stale after every splice), then
 **16 recent-mod 18** and **17 recent-add 8** — both of which print the answered page only, with no
 unanswered twin. **Section 18, Exam Night Review, pp.1950–1992, takes no entry and must not get one.**
+
+---
+
+## Section 12 — SPLICED at 52, then folded to 49 (`c4340ac`, `8a82eb1`, `47d4d76`, unpushed)
+
+Twenty-eight of the eighty were ruled reprints and extended in place; fifty-two were drafted and
+spliced. Three of those fifty-two were then deleted by the two-part fold — `pedep2-mf1-13`, `-28`
+and `-46` — so **`pedep2-mf1-` stands at 49 live, and the arithmetic 80 − 28 − 3 = 49 has a fold
+commit behind every step of it.**
+
+⚠️ **That drop is the shape MEMORY.md warns about**, and it is worth writing down how it was
+cleared rather than merely asserted: `git show 47d4d76` was read for removed ids, and it removes
+exactly twelve — eleven part-2 entries and `pedep-inf-82` from part 1, which is what its own commit
+message claims. A count that falls with no fold commit behind it would have been the finding.
+
+### ⚠️ A false alarm I raised against this section, and why it was false
+
+Counting section 12's reprint clauses in the live file with the fixed string
+`reprinted in Model Final Exam 1, p.1` returns **22, not 28**, which reads as six clauses lost.
+**All twenty-eight are present.** Six are worded differently by the pass that wrote them —
+*"reprinted word for word in Model Final Exam 1, p.1306"*, *"and again in Model Final Exam 1,
+p.1314"*, *"reprinted p.137 (and a third time in Model Final Exam 1, p.1274"* — and a fixed-prefix
+grep cannot see them. Counting entries whose `source` names the exam at all returns 28.
+
+**The rule this pays for again: a probe you just wrote is a claim about the probe first.** The
+splicer itself was never fooled, because its section-12 `reprintMark` is the bare exam name.
+
+## Section 13 — MODEL FINAL EXAM 2, spliced at 51 of 80 (`d5a7a4b`, `694a422`, `b9cfef9`, `bb93b3a`, unpushed)
+
+pp.1432–1594, staged 80, **29 reprints, 51 drafted.** Live now **591 entries, 0 sparse holes**;
+the app boots from `file://` at **5883 questions, 0 console errors**.
+
+**Measured on the 51 drafted:** 18 print four options and 33 print five · two print no explanation
+box (n30, n51), each carrying the boxless marker · one has its box printed alone on the following
+page (n49, question on p.1530, box on p.1531) · no figures anywhere in the section · 24 distinct
+chapters, every one of them matching the section's binding rulings table row for row, with nothing
+ruled that was not drafted.
+
+### ⚠️ The page arithmetic flips parity mid-section
+
+`p = 1432 + 2n` for n1–n49, then a **step of 3 across p.1531** — the page the n49 box sits on alone —
+and `p = 1433 + 2n` for n50–n80. Zero deviations either side of the flip. **Do not compute a page:
+take `p` from the staged row.** Section 14, measured this session, has no flip at all.
+
+### ⚠️ The first section whose reprints land in two files
+
+Twenty-four of the 29 extend a `pedep2-` entry in this stream's own file; **five extend a `pedep-`
+entry in `questions.peds.ep.js`**, because part 1 has closed and both files carry `bank:'endpoint'` —
+one bank, two source PDFs. The splicer's single `reprintMark` could not prove that pass had run: it
+reports 24 of 29 and refuses a correct splice. Section 13 therefore carries **`reprintMarks`**, a
+different string counted in each file, and neither string may be the bare exam name — **33 part-1
+sources already contained "Model Final Exam 2" before the pass ran**, because part1.pdf prints an
+exam of that name too.
+
+⚠️ **Those five clauses sit on four entries, not five.** One part-1 entry is reprinted twice in this
+exam, at p.1448 and p.1506, and carries both clauses in one `source`. The splicer counts
+*occurrences* and expects 5; a probe that counts *entries* returns 4 and looks like a missing clause.
+It is not one.
+
+### ⚠️ Three defects in a drafted half that every gate passed
+
+`val-pd-ep2.js` returned ALL CHECKS PASSED on half B while it (1) named options by their zero-based
+array index 77 times, (2) declared absences in bold four times instead of answering and tagging them,
+and (3) **cited no theory anchor at all.** The validator checks structure; none of these is
+structural.
+
+**The instrument that caught it was a cross-half comparison** — the same four counts measured on all
+four drafted halves of this stream — which made one half's outlier status a measurement rather than a
+matter of taste. Run it on every future split section before splicing.
+
+⚠️ **The option-index habit had already reached the live file.** Ten references across
+`pedep2-mf1-44`, `-47` and `-48` were converted to letters in `b9cfef9`, each checked against the
+option text it names rather than converted blind. **Options are named to the reader by LETTER
+(0→A … 4→E), never by index** — an index is also the internal representation of the key, which an
+explanation should not be exposing. A drafting-half prompt must now say so explicitly; half B
+invented an index convention in the absence of one.
+
+⚠️⚠️ **A subagent's self-report was false about its own file twice in this section** — once claiming
+five theory anchors the file did not contain, once claiming zero remaining bolded absence spans when
+one survived. Both were caught only by grepping the file. **Grep the file.**
+
+### Four live entries the reprint pass could not fix with a citation alone
+
+`pedep2-car-12` had asserted the page prints only four options and no fifth distractor; the reprint
+at p.1470 prints a fifth, *Mitral regurgitation*. The paragraph now records that the two printings
+differ and folds in the reprint's fuller box. `pedep2-gen-28`, `pedep2-nd-5` and `pedep2-nd-6` each
+gained substance the body printing does not carry. **A reprint clause that leaves a false sentence
+standing is worse than no clause** — read what the entry already says before stamping one on.
+
+### An omission in my own drafting notes, found by reading the drafted file back
+
+The notes' "anchors that carry their own gap tags" section named `endo-33` and `mal-20` and missed
+**`ren-12`**, which opens *"⚠️ NOT DESCRIBED IN ANY PAEDIATRIC DECK"* and says outright that
+everything below it is general knowledge and tagged. Half B resolved the affected question correctly
+regardless. The heading now reads "Three anchors".
+
+### ⚠️ For the end-of-stream cross-bank sweep
+
+Section 13 contributes 18 House overlaps, including **n46 (p.1524) == `pedhd-devp-18`, sim 1.000**.
+Nothing folds across banks — House stays `alsoIn`, never a deletion. The autism chapter question
+(`dev-problems` vs `dev-nd`, 9 entries) is still deliberately unresolved and belongs to that sweep.
+
+### Next
+
+**Section 14, MODEL FINAL EXAM 3, pp.1595–1756, is staging now** in four quarters of 20.
+
+Measured off `index.json` this session: 162 pages in range — 80 `answered`, 80 unanswered twins, and
+`notes` at p.1595 and p.1756 which stage nothing. **`p = 1595 + 2n` for n1–n80, step 2 at all 79
+intervals, zero deviations and no parity flip.** Quarters: A n1–20 pp.1597–1635 · B n21–40
+pp.1637–1675 · C n41–60 pp.1677–1715 · D n61–80 pp.1717–1755.
+
+Then, in order: `sweep-staged-ep2.js 14` → fold adjudication → `reprints:`/`reprintMarks:` into
+`splice-pd-ep2.js` (**deliberately absent until the pass has actually run — a guessed array makes
+the splicer accept missing entries silently**) → chapter rulings, which for a mixed section can only
+be written after staging → drafting notes → drafting halves → `val-pd-ep2.js` → cross-half comparison
+→ `splice-pd-ep2.js 14 --write` → `boot-check.js` → commit → journal.
+
+Then **15** the same way — ⚠️ it has four lone-`notes` candidates to check by eye at pp.1790, 1821,
+1828 and 1865 — then **16 recent-mod 18** and **17 recent-add 8**, both of which print the answered
+page only with no unanswered twin. **Section 18, Exam Night Review, pp.1950–1992, takes no entry.**
+
+⚠️ **Owed:** `MEMORY.md` records part 1 closed at **705**; it is **704**. Not written, because
+`MEMORY.md` is modified in the tree by another chat and this brief forbids mid-run writes to it.
+
+⚠️ **Owed:** part 1's closing test was page coverage. A re-run must read both endpoint files as ONE
+bank, or it reports **p.1129** as a false gap — that page is cited from `pedep2-mf1-25`.
