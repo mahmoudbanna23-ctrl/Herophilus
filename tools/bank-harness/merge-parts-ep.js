@@ -153,6 +153,16 @@ const SEC = {
   // A stager reading only the answered sheet would truncate eight explanations without noticing.
   14: { base: 'endpoint-s14-tre1', svar: 'PEDEP_S14_STAGED', title: 'MODEL TRAINING EXAM 1',
         pages: '1805-1873', expect: 30 },
+  // Training Exam 2. The OCR index returns 30 answered sheets for pp.1875-1936 and that count
+  // is WRONG BY ONE. The range is 62 pages of clean question/answered pairs, which is 31
+  // questions, not 30. The classifier misses pp.1889-1890 because that question's explanation
+  // is an Apgar scoring table beginning "1.Appearance (color):" rather than a lettered ladder
+  // with a yellow key, so neither page looks like an answered sheet to it. It is question 8.
+  // The sheet also PRINTS "14" TWICE, on two different questions (pp.1901/1902 and
+  // pp.1903/1904), the same defect shape as section 12's skipped 52 and doubled 63. `n` is
+  // sequential position and `pr` records the printed number, so n14 and n15 both carry pr 14.
+  15: { base: 'endpoint-s15-tre2', svar: 'PEDEP_S15_STAGED', title: 'MODEL TRAINING EXAM 2',
+        pages: '1874-1936', expect: 31 },
 };
 
 const secNum = process.argv[2];
