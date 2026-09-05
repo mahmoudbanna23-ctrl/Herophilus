@@ -143,6 +143,16 @@ const SEC = {
   // without the index noticing either, because the index counts sheets and not numbers.
   13: { base: 'endpoint-s13-mfe4', svar: 'PEDEP_S13_STAGED', title: 'MODEL FINAL EXAM 4',
         pages: '1644-1804', expect: 80 },
+  // Training Exam 1. The index returns 30 answered sheets for pp.1805-1873 and the contents page
+  // also prints 30, but the two agree for different reasons and neither was taken on trust: the
+  // range holds 69 pages, 30 question sheets, 30 answered sheets, a title page at 1805 and EIGHT
+  // pages the OCR classifier calls "notes". Each of those eight follows an answered sheet and
+  // carries prose continuing that sheet's explanation -- 1808 after 1807, 1811 after 1810, 1820
+  // after 1819, 1823 after 1822, 1832 after 1831, 1835 after 1834, 1854 after 1853, 1857 after
+  // 1856. They are overflow explanation boxes, not questions, exactly as part 2's section 6 found.
+  // A stager reading only the answered sheet would truncate eight explanations without noticing.
+  14: { base: 'endpoint-s14-tre1', svar: 'PEDEP_S14_STAGED', title: 'MODEL TRAINING EXAM 1',
+        pages: '1805-1873', expect: 30 },
 };
 
 const secNum = process.argv[2];

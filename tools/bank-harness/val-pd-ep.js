@@ -83,6 +83,8 @@ const SEC = {
   // stale and was reported wrong by the section 12 half-C drafter.
   13: { prefix: 'pedep-mf4-', file: 'endpoint-s13-mfe4.array.js', svar: 'PEDEP_S13_STAGED',
         draft: 'endpoint-s13-mfe4.draft', chapter: '(mixed)' },
+  14: { prefix: 'pedep-tr1-', file: 'endpoint-s14-tre1.array.js', svar: 'PEDEP_S14_STAGED',
+        draft: 'endpoint-s14-tre1.draft', chapter: '(mixed)' },
 };
 
 // imgAlt must give MODALITY AND VIEW ONLY. Naming the finding answers the question --
