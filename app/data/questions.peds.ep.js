@@ -8205,5 +8205,287 @@ var Q_PEDS_EP = [
   explanation: '**The endpoint file prints this explanation:**\n\n> A coiled NG tube with gas in stomach indicates EA with distal TEF (most common type). If there were pure EA, there would be no gas in stomach.\n\n---\n\n**The film here has two findings, and the correct answer is the one diagnosis that accounts for both.** A nasogastric tube **coiling in the esophagus**, unable to pass further, proves the esophagus itself ends blind — an **atresia**. Gas seen **in the stomach**, though, proves that air is reaching the gut by some route despite that blind pouch, which is only possible if a **fistula** connects the airway to the distal esophagus (and so, indirectly, to the stomach). Put the two signs together and the diagnosis is the combined lesion, **esophageal atresia with distal tracheoesophageal fistula** — the most common variant, accounting for roughly 85% of cases. (Antenatal polyhydramnios fits the same story: the fetus cannot swallow past the atretic segment, so amniotic fluid is not cleared normally.)\n\n**Why picking only half the finding is wrong.** *Esophageal atresia* alone explains the coiled tube but not the gas in the stomach — pure (type A) EA, as this exam\'s own `pedep-tr1-16` establishes, produces a **gasless** abdomen, the opposite of what is described here. *Tracheoesophageal fistula* alone explains how air reaches the stomach but says nothing about why the tube itself cannot pass — an isolated H-type fistula without atresia would let a feeding tube pass freely into the stomach. Only the combined diagnosis accounts for both x-ray findings at once.\n\n**Why the last two are unrelated.** *Omphalocele* and *gastroschisis* are abdominal wall defects with no connection to the oesophagus, the airway, or swallowing — neither produces drooling, feeding-related choking, or a coiled feeding tube, and neither is what this vignette\'s findings describe.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
   objective: 'A nasogastric tube coiling in the esophagus (proving atresia) together with gas visible in the stomach (proving a fistula lets air reach the gut) together diagnose combined esophageal atresia with distal tracheoesophageal fistula, the most common variant; either finding alone, or the unrelated abdominal-wall defects, account for only part of the picture.',
   source: 'Pediatrics endpoint part1.pdf p.1873'
+},
+
+{ id: 'pedep-tr2-1',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'infection-rash',
+  stem: 'A 14-year-old girl awakens with a mild sore throat, low-grade fever, and a diffuse maculopapular rash. During the next 24 h, she develops tender swelling of her wrists and redness of her eyes. In addition, her physician notes mild tenderness and marked swelling of her posterior cervical and occipital lymph nodes. Four days after the onset of her illness, the rash has vanished.\nThe most likely diagnosis of this girl\'s condition is:',
+  options: [
+    'Rubella',
+    'Roseola',
+    'Erythema infectiosum',
+    'Erythema multiforme'
+  ],
+  answer: 0,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Low-grade fever, sore throat, maculopapular rash with posterior cervical and occipital lymphadenopathy are classic. Rash disappears within 3-4 days.\n\n---\n\n`infectious diseases causing maculopapular rash.txt` names tender post-auricular, occipital and posterior cervical lymphadenopathy as rubella\'s hallmark prodromal feature, and lists mild conjunctivitis among the prodrome\'s own symptoms and arthralgia/arthritis of the small joints (up to 70% of affected adolescent females) as a recognised complication -- together accounting for this stem\'s added detail of tender wrist swelling and red eyes riding on top of the fever, sore throat and brief maculopapular rash. `pedep-mf3-8` prints the same case on a different menu: an identical stem core (14-year-old girl, low-grade fever, sore throat, maculopapular rash, posterior cervical/occipital nodes, rash gone by day four), but this exam expands the vignette with the arthritis-and-conjunctivitis detail and swaps two of the five live options for a different pair, so it stands as its own entry rather than a straight reprint.\n\n**Why the other three fail.** *Roseola* needs several days of high fever *before* the rash, with the rash appearing only once the fever breaks -- the opposite of this stem\'s concurrent low-grade fever and rash -- and it is a disease of infants and toddlers, not a 14-year-old. *Erythema infectiosum* produces a "slapped-cheek" facial flush before a lacy body rash, a different morphology and without rubella\'s posterior cervical/occipital node pattern. *Erythema multiforme* is a hypersensitivity reaction producing target-shaped lesions rather than a diffuse maculopapular eruption, and carries no link to posterior lymphadenopathy at all. Had the live sibling\'s two dropped distractors been offered here instead, *Measles* would be ruled out by its Koplik-spot/three-Cs prodrome and confluent cephalocaudal rash rather than rubella\'s brief, milder eruption, and *Chickenpox* would be ruled out by morphology alone, since its lesions are vesicular rather than maculopapular.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Recognise posterior cervical/occipital lymphadenopathy with a brief self-resolving maculopapular rash, plus rubella\'s arthritis and conjunctivitis complications, against roseola\'s fever-then-rash sequence, erythema infectiosum\'s slapped-cheek pattern and erythema multiforme\'s target lesions.',
+  source: 'Pediatrics endpoint part1.pdf p.1876'
+},
+
+{ id: 'pedep-tr2-2',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'growth-puberty',
+  stem: 'A 14-year-old boy is evaluated for short stature. He has no significant past medical history and is considered otherwise healthy by his parents. He eats a normal diet and has regular meals. His height and weight have been consistently at the 5th percentile since early childhood. His physical examination is normal, with genitalia at Tanner stage 3.\nWhich of the following is the most likely laboratory finding for this boy?',
+  options: [
+    'Bone age that is equivalent to chronologic age',
+    'Decreased complement C3 level',
+    'Decreased serum albumin concentration',
+    'Decreased thyroid stimulating hormone',
+    'Increased serum creatinine concentration'
+  ],
+  answer: 0,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Consistent growth at 5th percentile with normal puberty = familial short stature, where bone age matches chronological age.\n\n---\n\n`13) Short stature.txt` works through the same picture as its own teaching case: an 11-year-old boy at the 3rd centile, normal growth velocity, short parents, normal proportions and normal puberty stage, resolved as "Familial short stature" with "Bone age = chronological age". This boy\'s steady 5th-percentile tracking since early childhood and normal Tanner stage 3 puberty match that case exactly. Steady percentile tracking, rather than crossing centiles downward over time, is what the lecture uses to separate a familial pattern from a pathological one.\n\n**Why each distractor fails.** *Decreased complement C3* points toward a glomerulonephritis -- nothing in this healthy boy\'s picture suggests renal or immune disease. *Decreased serum albumin* would flag malnutrition, liver disease or a protein-losing state, contradicted by his normal diet and regular meals. *Decreased thyroid stimulating hormone* points to hypothyroidism, which the same lecture files under endocrine causes of short stature that classically slow growth velocity and delay bone age -- this boy\'s growth has been steady, not decelerating, and no other hypothyroid feature is given. *Increased serum creatinine* would flag chronic kidney disease, another organic cause the lecture pairs with poor height velocity, again inconsistent with his steady growth and otherwise normal exam.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Recognise steady percentile tracking with normal pubertal staging as familial short stature, where bone age equals chronological age, against the organic/endocrine causes (renal, hepatic/nutritional, thyroid) that would instead show a decelerating growth velocity.',
+  source: 'Pediatrics endpoint part1.pdf p.1878'
+},
+
+{ id: 'pedep-tr2-3',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'nutrition',
+  stem: 'The mother brought her 10-month-old son complaining that he is not thriving well for the last 4 months although he did not have any disease. You find his weight is just below -2 Z-score, his length is below -1 Z-score, and his head circumference is below 0-Z-score.\nYour correct comment will be as follows:',
+  options: [
+    'he has microcephaly',
+    'he has short stature',
+    'his feeding and weaning is proper',
+    'he has chronic problem since birth',
+    'he has recent improper feeding and weaning'
+  ],
+  answer: 4,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Weight is most affected, length mildly affected, and head spared → indicates recent nutritional problem, not chronic disease.\n\n---\n\n*The ordering of which anthropometric parameter falls first in a nutritional insult (weight, then length, then head circumference) is standard growth-assessment teaching, not taken from the course material -- the cached `15.1) Faltering ﻿Growth.txt` and `16) P.E.M.txt` decks describe growth faltering\'s red flags and PEM\'s severity grading but do not teach the weight/length/head-circumference sequence used to time an insult.* Weight reflects fat and muscle mass, which depletes within weeks of inadequate intake; linear growth (length) only slows once a deficit has run for months; head circumference, driven by ongoing brain growth, is protected until malnutrition is both severe and prolonged. A weight clearly reduced (just below -2 Z), a length only mildly reduced (below -1 Z) and a head circumference still essentially average (below 0 Z) is exactly the pattern of an insult that started recently, over the four months this mother describes, rather than one present since birth.\n\n**Why each distractor fails.** *Microcephaly* requires a head circumference itself markedly reduced (conventionally below -2 Z), and here it sits close to average -- the head is the one parameter this vignette says is spared. *Short stature* is a diagnosis built on a length/height clearly below -2 Z sustained over time; a mild -1 Z reduction over only four months does not meet that bar. *"Feeding and weaning is proper"* is contradicted by the weight deficit itself -- an adequately fed infant would not be losing weight-for-age this way. *"Chronic problem since birth"* is contradicted both by the history (no disease, well until four months ago) and by the spared head circumference, which a truly longstanding, severe insult would eventually also drag down.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Use the relative depth of weight, length and head-circumference Z-scores to time a growth insult as recent (weight-led) rather than chronic (length- and eventually head-circumference-led), and to reject microcephaly or short stature where the deficits are too shallow to meet either definition.',
+  source: 'Pediatrics endpoint part1.pdf p.1880'
+},
+
+{ id: 'pedep-tr2-4',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'infection-rash',
+  stem: 'A 6-year-old boy presented with fever for the last 3 days, associated with headache and sore throat. He had frequent episodes of vomiting and abdominal pain. He appears ill, febrile, skin rash, with tender bilateral cervical lymphadenopathy, the tongue covered with heavy white coat with obvious red papillae protruded. The tonsils were red and edematous.\nThe most likely diagnosis is:',
+  options: [
+    'Measles',
+    'Infectious Mononucleosis',
+    'Scarlet fever',
+    'Erythema infectiosum',
+    'Rubella'
+  ],
+  answer: 2,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Fever, sore throat, abdominal pain, "strawberry tongue," sandpaper rash = streptococcal scarlet fever.\n\n---\n\n`infectious diseases causing maculopapular rash.txt` describes scarlet fever\'s prodrome exactly as printed here: abrupt high fever, sore throat with red/edematous tonsils, and abdominal pain/vomiting are called out explicitly as common in children, alongside the white-coated tongue with red papillae protruding through it ("White Strawberry Tongue") that later peels to a "Red Strawberry Tongue". The rash itself is a rough, sandpaper-textured eruption, and the tender cervical lymphadenopathy given here fits the streptococcal pharyngitis driving the whole picture.\n\n**Why the other four fail.** *Measles* is defined by a cough/coryza/conjunctivitis prodrome and pathognomonic Koplik spots, neither present here, and its rash is a confluent, cephalocaudal eruption rather than a strawberry tongue and sandpaper texture. *Infectious Mononucleosis* also causes fever, sore throat and lymphadenopathy, but the same lecture places its nodal swelling primarily in the posterior cervical chain rather than diffusely bilateral, its pharyngitis with exudative tonsils rather than a strawberry tongue, and its own spontaneous rash in only about 10% of cases -- none of which is this stem\'s picture. *Erythema infectiosum* produces a "slapped-cheek" facial flush, a different morphology entirely, with no strawberry tongue. *Rubella* causes only a mild, brief illness with posterior cervical/occipital nodes and a fine, quickly fading rash, not the abrupt high fever, tonsillar exudate and strawberry tongue described here.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Recognise scarlet fever from an abrupt fever/sore throat, a strawberry tongue and a sandpaper rash, against measles\' Koplik-spot prodrome, mononucleosis\' posterior cervical nodes and exudative pharyngitis, erythema infectiosum\'s slapped-cheek pattern and rubella\'s milder posterior-node illness.',
+  source: 'Pediatrics endpoint part1.pdf p.1882'
+},
+
+{ id: 'pedep-tr2-5',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'infection-rash',
+  stem: 'A 3-month-old boy has a maculopapular rash that appeared on the face then spread all over the body. It has been preceded by very high fever for 3 days. Today he looks well active, afebrile with this rash. The most likely causative agent is:',
+  options: [
+    'Rubella virus',
+    'Human herpes virus type 1',
+    'Human herpes virus type 6',
+    'Epstein–Barr virus',
+    'Measles'
+  ],
+  answer: 2,
+  explanation: '**The endpoint file prints this explanation:**\n\n> High fever for 3 days then maculopapular rash after defervescence = roseola infantum.\n\n---\n\n`infectious diseases causing maculopapular rash.txt` names Human Herpesvirus 6 (and less often HHV-7) as roseola infantum\'s cause, and its whole entry turns on this exact sequence: an abrupt, very high fever lasting 3 to 5 days in a well-looking infant, ending in a "crisis" after which the rash appears -- "the rash and the fever rarely overlap." This 3-month-old\'s 3 days of high fever followed by an afebrile, active child with a maculopapular rash is that sequence precisely, and roseola is a disease of infants and toddlers, matching the age here.\n\n*One vignette detail sits oddly against the source: the same lecture describes roseola\'s rash as starting on the trunk and rarely affecting the face at all, where this stem has the rash appear on the face first. The diagnostic sequence (fever resolving, then rash) is unambiguous on its own and is what the answer turns on; the face-first spread does not match the lecture\'s own description of roseola\'s distribution.*\n\n**Why the other four fail.** *Rubella virus* would need a preceding prodrome and posterior cervical/occipital lymphadenopathy, neither given here, and its rash typically runs concurrent with a milder fever rather than only appearing once a high fever has broken. *Human herpesvirus type 1* (HSV-1) causes oral/facial vesicular disease (gingivostomatitis, cold sores), not a maculopapular exanthem following a febrile illness. *Epstein–Barr virus* causes infectious mononucleosis, a disease of older children and young adults with pharyngitis and lymphadenopathy, not an afebrile rash in a 3-month-old. *Measles* produces its rash while the fever is still high, alongside a cough/coryza/conjunctivitis prodrome and Koplik spots -- the opposite timing to this stem\'s fever-then-rash sequence.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Use the "fever resolves, then rash appears" sequence to identify HHV-6/roseola infantum, against rubella\'s concurrent fever-and-rash, HSV-1\'s vesicular disease, EBV\'s mononucleosis and measles\' rash-during-fever pattern.',
+  source: 'Pediatrics endpoint part1.pdf p.1884'
+},
+
+{ id: 'pedep-tr2-6',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'gi-diarrhoea',
+  stem: 'A 6-year-old girl presented with recurrent abdominal pain, bloating, and foul-smelling diarrhea. These symptoms exacerbate after consuming foods such as bread and pasta. Her pediatrician suspected her to have a celiac disease. Which of the following would be the most appropriate choice?',
+  options: [
+    'Testing serum antibodies for tissue transglutaminase (tTG-IgA)',
+    'Performing upper gastrointestinal endoscopy with duodenal biopsy',
+    'Conducting a complete blood count',
+    'Examining stool for fecal fat content',
+    'Carrying out a barium follow-through'
+  ],
+  answer: 0,
+  explanation: '**The endpoint file prints this explanation:**\n\n> The best first step for suspected celiac disease is checking tissue transglutaminase antibodies. Biopsy is confirmatory but not first.\n\n---\n\n*Coeliac disease\'s own diagnostic workup is not taught in the cached peds lectures -- grepping "celiac", "coeliac", "tTG", "transglutaminase" and "gluten" across the set returns only two passing mentions, both listing coeliac disease as a differential to consider for chronic diarrhoea (`23).1) Acute diarrhea.txt`) and for constipation (`23).2)Constipation.txt`), with no lecture teaching how it is actually confirmed. The reasoning below is standard paediatric gastroenterology practice, not taken from the course material.* Serum IgA anti-tissue transglutaminase (tTG-IgA) is the recommended first-line serologic screen for suspected coeliac disease: it is inexpensive, non-invasive and highly sensitive, and this girl\'s bread/pasta-triggered bloating and foul-smelling diarrhoea is exactly the picture it is used to screen. A positive screen is what then leads on to the confirmatory step.\n\n**Why each distractor fails.** *Upper GI endoscopy with duodenal biopsy* is the diagnostic gold standard, but it is confirmatory and invasive -- it follows a positive serology, it is not the first test reached for. *A complete blood count* may incidentally show iron-deficiency anaemia from malabsorption, but it is nonspecific and diagnoses nothing about coeliac disease itself. *Stool fecal fat* tests generalised fat malabsorption and would not distinguish coeliac disease from any other cause of steatorrhoea. *A barium follow-through* is an imaging study for structural bowel disease, not the serologic or histologic route used to diagnose an autoimmune enteropathy like coeliac disease.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Reach for tTG-IgA serology as the first-line screen for suspected coeliac disease, reserving duodenal biopsy for confirmation, and reject the nonspecific (CBC, faecal fat) and structural (barium) tests that diagnose nothing about coeliac disease itself.',
+  source: 'Pediatrics endpoint part1.pdf p.1886'
+},
+
+{ id: 'pedep-tr2-7',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'nutrition-pem',
+  stem: 'You are assessing child nutrition. Which of the following anthropometric measures is best used to assess the nutritional status of this child?',
+  options: [
+    'Head circumference',
+    'Height for age',
+    'Mid upper arm circumference',
+    'Weight for age',
+    'Weight for height'
+  ],
+  answer: 4,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Best indicator of acute malnutrition because it shows wasting.\n\n---\n\n`16) P.E.M.txt` lists exactly this menu among its anthropometric assessment tools -- length/height, weight for age and weight for height, head/chest/abdominal circumference, and mid-arm circumference -- as the data a nutritional assessment is built from. *Ranking weight-for-height above mid-upper-arm circumference as the single best acute-malnutrition indicator is general paediatric nutrition teaching beyond what this deck ranks explicitly -- not taken from the course material.* Weight-for-height compares a child\'s current weight against the expected weight for their current height, so it reflects **wasting** -- a recent, acute loss of soft tissue -- independent of the child\'s age, which is what makes it the standard acute-malnutrition indicator.\n\n**Why each distractor fails.** *Head circumference* tracks brain growth and is one of the last parameters to fall in malnutrition, so it is a poor marker of current nutritional status. *Height for age* reflects **stunting**, the cumulative effect of chronic, longstanding undernutrition, not the acute picture the stem asks about. *Mid upper arm circumference* is a genuinely useful acute-wasting screen, especially in the field, but it is a screening proxy rather than the reference anthropometric standard weight-for-height provides. *Weight for age* is a composite measure that cannot separate a child who is wasted (acute) from one who is stunted but proportionate (chronic), so it does not specifically demonstrate wasting the way weight-for-height does.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Identify weight-for-height as the anthropometric indicator of acute wasting, distinct from height-for-age (chronic stunting), weight-for-age (a composite that cannot separate the two) and head circumference (a late-falling parameter).',
+  source: 'Pediatrics endpoint part1.pdf p.1888'
+},
+
+{ id: 'pedep-tr2-8',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'perinatal-hie',
+  stem: 'At one minute of age, an infant exhibits central and peripheral cyanosis, floppy tone, gasping respiration, and a weak cry. The HR is 70 beats/min, and facial grimacing is observed but no crying is elicited by a nasal catheter.\nThe one-minute Apgar score for this neonate is:',
+  options: [
+    '2',
+    '3',
+    '4',
+    '5',
+    '6'
+  ],
+  answer: 1,
+  explanation: '**The endpoint file prints this explanation:**\n\n> 1.Appearance (color): Central + peripheral cyanosis → 0\n> 2.Pulse (HR): 70 bpm (<100) → 1\n> 3.Grimace (reflex): Grimace only, no cry → 1\n> 4.Activity (tone): Floppy → 0\n> 5.Respiration: Gasping, weak cry → 1\n> 👉 Total = 0 + 1 + 1 + 0 + 1 = 3\n>\n> Also printed alongside, a reference SCORE table (columns "0 points" / "1 point" / "2 points"):\n> Appearance (Skin color): Cyanotic / Pale all over | Peripheral cyanosis only | Pink\n> Pulse (Heart rate): 0 | <100 | 100-140\n> Grimace (Reflex irritability): No response to stimulation | Grimace or weak cry when stimulated | Cry when stimulated\n> Activity (Tone): Floppy | Some flexion | Well flexed and resisting extension\n> Respiration: Apneic | Slow, irregular breathing | Strong cry\n\n---\n\nThe five Apgar components are each scored 0/1/2 and summed *(the standard scoring table above is general obstetric/paediatric practice -- not taken from the course material; the cached decks mention Apgar only as a clinical marker, e.g. `12) HIE.txt`\'s depressed score at 5/10 minutes flagging birth asphyxia, without printing the point breakdown)*. Here: colour scores 0 (cyanotic centrally and peripherally, not even the acrocyanosis-only 1), heart rate scores 1 (70/min is below the 100/min cutoff for full marks), reflex scores 1 (grimace without a cry), tone scores 0 (floppy), and respiration scores 1 (gasping with a weak cry, short of the vigorous crying needed for 2). Summing 0 + 1 + 1 + 0 + 1 gives 3, matching both the box\'s own worked arithmetic and the highlighted key.\n\n**Why each wrong option is wrong.** A score of 2 would require losing a point on a fourth component beyond the three already lost (colour, tone) and the two partial credits (pulse, reflex) -- there is no further deduction to make from this description. Scores of 4, 5 or 6 would each require full marks somewhere this infant does not have them: he is neither pink (colour = 2) nor actively crying (reflex or respiration = 2), so nothing here supports a total above 3.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Score each of the five Apgar components (colour, heart rate, reflex irritability, tone, respiration) from a clinical description and sum them correctly, distinguishing a component scoring 0 from one scoring a partial 1.',
+  source: 'Pediatrics endpoint part1.pdf p.1890'
+},
+
+{ id: 'pedep-tr2-9',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'A 25-day-old healthy full-term, developed jaundice on the 5th day of life, with a total serum bilirubin (TSB) level of 6 mg/dL increasing to 13 mg/dL; by the 10th day, TSB is now 13 mg/dL, with a direct bilirubin of 0.2 mg/dL. All other investigations are normal.\nWhat is the most likely diagnosis?',
+  options: [
+    'Physiological jaundice',
+    'Biliary atresia',
+    'Breast milk jaundice',
+    'TORCH infection',
+    'Neonatal hemolytic disease due to Rh incompatibility'
+  ],
+  answer: 2,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Jaundice appears after the 5th day, persists but baby is otherwise well, indirect bilirubin predominates.\n\n---\n\n`8) COMMON PROBLEMS IN THE TERM NEWBORN.txt` describes "moderate unconjugated hyperbilirubinemia for 6-12 weeks in a thriving breastfed infant without evidence of hemolysis, hypothyroidism, or other disease" as strongly suggestive of breast-milk jaundice, with unconjugated hyperbilirubinemia in breastfed infants persisting "until 2-3 months of age." This baby is 25 days old, still visibly jaundiced, otherwise entirely healthy, and the direct bilirubin is only 0.2 mg/dL out of a total of 13 -- essentially all of it is unconjugated -- which is exactly the picture the lecture describes.\n\n**Why the other four fail.** *Physiological jaundice* (A) is defined by the same lecture as jaundice that "resolves by 1 week in the fullterm infant" -- this baby is still jaundiced well past that window, at 25 days, which is too prolonged for the physiological pattern even though the onset after 24 hours and the biochemical trend both look otherwise unremarkable. *Biliary atresia* (B) is a *conjugated* hyperbilirubinemia -- the lecture notes conjugated jaundice appears "in some congenital infections, intrahepatic cholestasis, or extrahepatic obstruction of the biliary tract" -- and a direct bilirubin of only 0.2 mg/dL rules that pattern out here. *TORCH infection* (D) also produces a conjugated picture in a baby who is usually otherwise unwell (hepatosplenomegaly, growth restriction), not an isolated unconjugated hyperbilirubinemia in a baby with every other investigation normal. *Rh incompatibility* (E) is a haemolytic, antibody-mediated process that the same lecture places among the causes of pathological jaundice presenting early, "before 24 hours of age," with evidence of haemolysis on work-up -- neither the timing nor "all other investigations are normal" fits that mechanism here.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Isolated unconjugated hyperbilirubinemia persisting past two to three weeks in an otherwise well, thriving breastfed infant with every other investigation normal is breast milk jaundice -- distinct from physiological jaundice (resolves by one week), biliary atresia and TORCH infection (both conjugated), and Rh incompatibility (early-onset, haemolytic).',
+  source: 'Pediatrics endpoint part1.pdf p.1892'
+},
+
+{ id: 'pedep-tr2-10',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'infection-rash',
+  stem: 'A 15-year-old boy develops repetitive attacks of myoclonic jerks not associated with loss of consciousness. He has been experienced poor academic experience, irritability, reduced attention span. He has a history of measles infection at the age of 5 years.\nWhat is the MOST likely diagnosis?',
+  options: [
+    'Brain tumor',
+    'Encephalitis',
+    'Myoclonic seizure',
+    'Progressive rubella panencephalitis',
+    'Sub-acute sclerosing panencephalitis (SSPE)'
+  ],
+  answer: 4,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Progressive myoclonic jerks, cognitive decline years after measles → subacute sclerosing panencephalitis.\n\n---\n\n`infectious diseases causing maculopapular rash.txt` names this exact long-term complication of measles directly: "Subacute Sclerosing Panencephalitis (SSPE) is a rare (1 in 10,000-100,000), fatal, progressive brain degeneration occurring years after infection." This boy had measles at age 5 and now, ten years later at 15, presents with the SSPE picture -- repetitive myoclonic jerks without loss of consciousness, together with declining academic performance, irritability and reduced attention span, the behavioural and cognitive deterioration that precedes or accompanies the myoclonus in this progressive, delayed measles complication.\n\n**Why the other four fail.** *Brain tumor* (A) can cause focal neurological decline, but nothing here (a remote measles history, symmetric myoclonic jerks, global cognitive and behavioural decline rather than a focal deficit) points specifically to a mass lesion. *Encephalitis* (B) is the same lecture\'s **acute** measles complication ("1 in 1,000 cases," occurring during or shortly after the acute illness) -- it does not fit a presentation appearing a full decade after the original infection. *Myoclonic seizure* (C) names only the movement itself, not the underlying disease process driving it, and does not account for the progressive cognitive decline or the specific link to remote measles. *Progressive rubella panencephalitis* (D) is the analogous late, progressive neurological deterioration described in the same lecture, but as a complication of **congenital rubella syndrome**, not of measles infection acquired at age 5 -- this option is the "wrong virus" distractor, testing whether the two delayed panencephalitides get confused with one another.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Myoclonic jerks with progressive cognitive and behavioural decline appearing years after a childhood measles infection is subacute sclerosing panencephalitis (SSPE) -- distinct from acute measles encephalitis, a generic myoclonic seizure label, a brain tumour, and progressive rubella panencephalitis, which is the same late picture but follows congenital rubella, not measles.',
+  source: 'Pediatrics endpoint part1.pdf p.1894'
+},
+
+{ id: 'pedep-tr2-11',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'neonatal',
+  stem: 'A 21-day-old breastfed boy (3.8 kg) presented with jaundice since day seven of life. Mother\'s blood is O–ve, father\'s blood is A+ve, total serum bilirubin (TSB) 13 mg/dL (indirect 12 mg/dL, direct 1 mg/dL), vital signs and primitive reflexes are normal.\nWhat is your best action in regard to the following options?',
+  options: [
+    'Serial TSB monitoring',
+    'Start phototherapy immediately',
+    'Double-volume exchange transfusion',
+    'Administration of intravenous immunoglobulin',
+    'Cessation of breast feeding and start bottle feeding'
+  ],
+  answer: 0,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Stable breastfed infant with indirect hyperbilirubinemia and normal reflexes → physiological/breast milk jaundice, just monitor.\n\n---\n\n`8) COMMON PROBLEMS IN THE TERM NEWBORN.txt` places this baby squarely in the reassuring category: vital signs and primitive reflexes are normal (no sign of acute bilirubin encephalopathy, which the lecture describes as beginning with "lethargy, poor feeding" and "irritability, high-pitched cry"), the bilirubin is overwhelmingly indirect (12 of 13 mg/dL), and onset at day seven is well past the pathological "before 24 hours" window the lecture flags for haemolytic disease. A TSB of 13 mg/dL in a thriving, neurologically normal 21-day-old breastfed infant is exactly the picture the lecture describes as "moderate unconjugated hyperbilirubinemia... in a thriving breastfed infant without evidence of hemolysis" -- serial monitoring, not active intervention, is the safe course while the trend is watched.\n\n**Why the other four fail.** *Immediate phototherapy* (B) is reserved for a TSB that is close to the age- and risk-adjusted treatment threshold; the lecture\'s own criterion is that "phototherapy is started electively when the TSB is approximately 6 mg/dL lower than the predicted exchange level" -- nothing in this stable, well infant\'s picture places 13 mg/dL near that threshold. *Double-volume exchange transfusion* (C) is reserved, per the same lecture, for "TSB above 30 mg/dL," signs of encephalopathy, or failure of intensive phototherapy to lower the level -- none of which applies to a well infant at 13 mg/dL. *Intravenous immunoglobulin* (D) is specifically indicated in isoimmune haemolytic disease (the lecture gives Rh-isoimmunisation as the example) to reduce the need for exchange transfusion -- there is no haemolysis here, and the blood-group mismatch alone, without a positive Coombs test or evidence of ongoing haemolysis, does not establish that mechanism. *Cessation of breastfeeding* (E) is not the first move in a stable, thriving infant -- the lecture\'s own advice for inadequate intake is to increase feeding frequency and add lactation support, reserving formula supplementation for infants who are not thriving, which this baby, with normal vitals and reflexes, is not.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'A stable, neurologically normal breastfed infant with a predominantly indirect TSB of 13 mg/dL beginning after the first week of life is managed with serial monitoring, not phototherapy, exchange transfusion, IVIG, or cessation of breastfeeding -- each of those is reserved for a more severe or haemolytic picture this vignette does not show.',
+  source: 'Pediatrics endpoint part1.pdf p.1896'
+},
+
+{ id: 'pedep-tr2-13',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'nutrition-vit',
+  stem: 'When examining an infant, you note bilateral genu varum, widening of her wrists, and frontal bossing. The mother states she noticed her child\'s bow legs when the child started walking and it has been getting worse with time.\nWhat additional possible clinical features would you expect in this patient?',
+  options: [
+    'Clinodactyly',
+    'Delayed posterior fontanelle closure',
+    'Harrison sulcus',
+    'Microcephaly'
+  ],
+  answer: 2,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Bow legs, wrist widening, frontal bossing = rickets. Harrison sulcus (rib cage deformity) is another expected feature.\n\n---\n\n`17) Vitamin D Defficiency Rickets(1).txt` lists genu varum ("bowlegs... due to deformed tibia and fibula"), epiphyseal widening at the wrists ("best felt at the wrists and ankles") and frontal/parietal bossing together as classic rachitic bony changes, and lists "Harrison\'s sulcus" among the same set of thoracic findings -- "a horizontal groove corresponding to the line of attachment of the diaphragm with flaring of the costal margins below," caused by "inward pull by the diaphragm on the soft rib cage." Since this infant already shows three of the lecture\'s rachitic signs, Harrison\'s sulcus is the next feature the same underlying vitamin D deficiency and bone softening would be expected to produce.\n\n**Why the other three fail.** *Clinodactyly* (A) is a dysmorphic finger curvature unrelated to rickets, seen instead in various chromosomal and syndromic conditions -- it is not on this lecture\'s rachitic feature list. *Delayed posterior fontanelle closure* (B) reverses the lecture\'s own finding -- rickets delays the **anterior** fontanelle\'s closure ("anterior fontanel is wider and its closure is delayed than normal"), not the posterior, which closes early in infancy regardless. *Microcephaly* (D) is the opposite of what rickets produces -- the lecture states plainly that "the head is larger than normal and may remain so throughout life" in rickets, driven by the same osteoid overgrowth that causes the bossing already seen here.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Genu varum, wrist widening and frontal bossing are rachitic signs that predict Harrison\'s sulcus (diaphragmatic pull on the soft rib cage) as a further feature -- not clinodactyly, delayed posterior fontanelle closure, or microcephaly, since rickets in fact widens the anterior fontanelle and enlarges, not shrinks, the head.',
+  source: 'Pediatrics endpoint part1.pdf p.1900'
+},
+
+{ id: 'pedep-tr2-14',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'nutrition-vit',
+  stem: 'In 18-month-old boy presenting with delayed walking is exclusively breast-fed with no history of intake of any vitamins or minerals. Examination revealed a distended abdomen and wrist thickening. Which of the following investigations would be correct in this case?',
+  options: [
+    'Low serum calcium, phosphorus, and alkaline phosphatase',
+    'Normal serum calcium, phosphorus, and alkaline phosphatase',
+    'Normal phosphorus, low serum calcium, and high alkaline phosphatase',
+    'Normal calcium, low serum phosphorus, and high alkaline phosphatase'
+  ],
+  answer: 3,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Classic lab finding in nutritional rickets (vitamin D deficiency).\n\n---\n\n`17) Vitamin D Defficiency Rickets(1).txt` gives this exact biochemical triad for rickets: "Serum calcium: normal due to compensatory hyperparathyroidism," "Serum phosphate: Low... due to compensatory hyperparathyroidism," and "Serum alkaline phosphatase activity is high." This exclusively breastfed 18-month-old with no vitamin or mineral intake, delayed walking (rachitic hypotonia), a distended abdomen (the hypotonic "rachitic potbelly") and wrist thickening (epiphyseal widening, the lecture\'s "Marfan sign") is textbook nutritional rickets from prolonged vitamin D deficiency. Low vitamin D reduces intestinal calcium absorption, which triggers secondary hyperparathyroidism; PTH mobilises bone calcium and wastes phosphate renally, keeping serum calcium normal at the cost of low phosphate, while the accompanying rise in osteoblastic activity raises alkaline phosphatase.\n\n**Why the other three fail.** *Low calcium, phosphorus and alkaline phosphatase* (A) describes a hypoparathyroid pattern, the opposite of rickets\' compensated picture -- the lecture is explicit that calcium stays normal and alkaline phosphatase rises, not falls, with active rachitic bone turnover. *Normal calcium, phosphorus and alkaline phosphatase* (B) would mean no biochemical derangement at all, inconsistent with a child already showing deforming, symptomatic rickets. *Normal phosphorus, low calcium, high alkaline phosphatase* (C) swaps which electrolyte is deranged -- it is phosphate, not calcium, that the lecture identifies as low in rickets, precisely because secondary hyperparathyroidism\'s job is to defend the calcium level at phosphate\'s expense.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Nutritional rickets from prolonged, unsupplemented exclusive breastfeeding produces normal serum calcium (defended by secondary hyperparathyroidism), low serum phosphate, and high alkaline phosphatase -- not a low-calcium, low-phosphate, or biochemically normal pattern.',
+  source: 'Pediatrics endpoint part1.pdf p.1902'
+},
+
+{ id: 'pedep-tr2-15',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'nutrition-feed',
+  stem: 'A 3-week-old baby girl is brought to her pediatrician for a checkup. She was born at term with a birth weight of 3400 g. The infant is exclusively breast-fed, nurses every 2 to 3 hours, and has 6 to 8 wet diapers and 2 to 4 seedy stools daily. At the time of her examination, she weighs 3450 g. Results of the physical examination are normal.\nThe most appropriate next step is:',
+  options: [
+    'Continue breast feeding only',
+    'Continue breast feeding with supplemental cow\'s milk formula between feeds',
+    'Continue breast feeding with supplemental soy formula between feeds',
+    'Continue breast feeding and add rice cereal to her diet'
+  ],
+  answer: 0,
+  explanation: '**The endpoint file prints this explanation:**\n\n> Baby is thriving, normal growth, so no supplementation needed.\n\n---\n\n`15.2) Infant Feeding.txt` lists the "criteria of adequate breast-feeding" this baby meets point for point: nursing frequently (every 2-3 hours fits "sleeps well 2-4 hours after nursing"), "good amount of urine (6 or more full diapers per day)" -- this infant has 6 to 8 -- and "good motions," acidic, seedy stools whose frequency the lecture says "varies with age," matching the 2 to 4 stools described here, together with a normal physical examination. Every marker of adequate intake is present, so the appropriate next step is simply to continue exclusive breastfeeding.\n\n**Why the other three fail.** *Supplemental cow\'s milk formula* (B) and *supplemental soy formula* (C) are both unnecessary interventions for an infant who already meets every one of the lecture\'s criteria for adequate breastfeeding -- the lecture reserves supplementation for infants meeting its "criteria of insufficient breast feeding" (inadequate weight gain, inadequate urine and stools, fretfulness), none of which this baby shows. *Adding rice cereal* (D) is premature regardless of feeding adequacy -- the same lecture places the start of complementary feeding "after 6 months" of age (180 days), not at three weeks, so solids have no place in this baby\'s diet yet.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'An exclusively breastfed 3-week-old meeting every criterion for adequate intake (frequent feeds, 6 or more wet diapers daily, normal stooling, normal exam) needs no formula supplementation and, separately, no complementary solids -- those begin only after 6 months regardless of feeding adequacy.',
+  source: 'Pediatrics endpoint part1.pdf p.1904'
+},
+
+{ id: 'pedep-tr2-16',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'puberty',
+  stem: 'The parents of a 14-year-old boy are concerned about his short stature and lack of sexual development. He had a normal growth pattern, although he was always shorter than children of his age. Examination revealed height at the 5th percentile, upper segment to lower segment ratio is 0.98. A small number of fine axillary and pubic hairs are present.\nWhich of the following is the most appropriate action?',
+  options: [
+    'Measure pituitary gonadotropin',
+    'Measure serum testosterone',
+    'Obtain a CT scan of the pituitary gland',
+    'Reassure the parents'
+  ],
+  answer: 3,
+  explanation: '**The endpoint file prints this explanation:**\n\n> This is constitutional delay of growth and puberty; reassurance is appropriate.\n\n---\n\n`14) Puberty.txt` names constitutional delay as "the most common cause" of delayed puberty (defined in the same lecture as failure of any pubertal feature "by 14 yrs of age in males") and describes it as a "normal variant" whose features include a "height at or below the third centile," a "normal growth pattern," "delayed bone age," and, critically, "normal final adult height" that "need[s] no treatment." This boy fits that picture closely: lifelong short stature with an otherwise normal growth trajectory, a proportionate build (an upper-to-lower segment ratio of 0.98 is essentially the normal prepubertal ratio, arguing against a disproportionate skeletal dysplasia), and fine pubic and axillary hair already emerging -- evidence that his hypothalamic-pituitary-gonadal axis is beginning to activate on its own, spontaneous timeline rather than being arrested altogether.\n\n**Why the other three fail.** *Measuring pituitary gonadotropin* (A) and *measuring serum testosterone* (B) are the appropriate next steps for suspected hypogonadotropic or hypergonadotropic hypogonadism -- pathological causes the same lecture separates from constitutional delay -- but the early, spontaneous appearance of pubic and axillary hair here argues against an arrested axis needing that work-up. *A CT scan of the pituitary gland* (C) is reserved for suspected hypothalamic-pituitary structural pathology, a considerable overinvestigation for a boy whose picture -- lifelong proportionate short stature and puberty already beginning on its own -- fits the lecture\'s most common and benign cause.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'Lifelong, proportionate short stature (normal upper-to-lower segment ratio) with early, spontaneously emerging pubic and axillary hair in a 14-year-old boy is constitutional delay of growth and puberty, the commonest cause of delayed puberty, needing reassurance rather than gonadotropin or testosterone measurement or pituitary imaging.',
+  source: 'Pediatrics endpoint part1.pdf p.1906'
+},
+
+{ id: 'pedep-tr2-17',
+  bank: 'endpoint',
+  module: 'pediatrics',
+  chapter: 'allergy',
+  stem: 'You have just given a 10-year-old boy an injection of pollen extract as prescribed by his allergist. The boy starts to complain about nausea and chest tightness. You note that his face is flushed and his voice sounds muffled and strained.\nWhich of the following is the first priority in managing this episode of anaphylaxis?',
+  options: [
+    'Administration of corticosteroids',
+    'Administration of oxygen',
+    'Endotracheal intubation',
+    'IM injection of 1:1000 epinephrine'
+  ],
+  answer: 3,
+  explanation: '**The endpoint file prints this explanation:**\n\n> First-line in anaphylaxis is intramuscular epinephrine.\n\n---\n\n`27)Anaphylaxsis.txt` sets out hospital management in a clear order: after rapid airway/breathing/circulation assessment and positioning, "the main therapy is: inject epinephrine (adrenaline) intramuscularly in the mid-outer thigh," with oxygen, inhaled salbutamol, IV fluids, antihistamines and steroids all listed afterward as "additional treatments." This boy\'s picture after his allergen injection -- nausea, chest tightness, facial flushing, and a muffled, strained voice pointing to laryngeal swelling -- is a systemic anaphylactic reaction, and IM epinephrine is the immediate, first-priority step that reverses the underlying vasodilation, bronchospasm and airway oedema directly, ahead of any supportive measure. The specific 1:1000 (1 mg/mL) IM concentration named in the option is standard resuscitation practice for this route -- *not spelled out in the cached lecture, which names the drug, route and injection site but not the dilution; not taken from the course material.*\n\n**Why the other three fail.** *Corticosteroids* (A) appear only among the lecture\'s "additional treatments" -- useful for limiting a delayed, biphasic reaction, but too slow in onset to be the first priority in an evolving airway emergency. *Oxygen* (B) is likewise an additional treatment in the same list; it supports oxygenation but does not reverse the anaphylactic process the way epinephrine does, so it follows rather than precedes it. *Endotracheal intubation* (C) is reserved for actual or imminent complete airway obstruction -- this boy is still speaking, if strained and muffled, and reaching for intubation before the first-line drug that may itself resolve the airway swelling skips the step the lecture places first.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
+  objective: 'In anaphylaxis with early airway compromise (muffled voice, flushing, chest tightness), intramuscular epinephrine in the mid-outer thigh is the first-priority treatment, given before oxygen, corticosteroids, or intubation, all of which are secondary or reserved for more advanced compromise.',
+  source: 'Pediatrics endpoint part1.pdf p.1908'
 }
 ];
