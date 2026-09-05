@@ -89,16 +89,56 @@ after an answered page:
 
 | page | sits after | status |
 |---|---|---|
-| **962** | 961 (answered, last of run 1) | ⚠️ **UNCHECKED** — nobody was addressed to it |
-| **970** | 968 … 971 | checked by part A as the missing-twin question |
-| **973** | 971 … 974 | checked by part A as the missing-twin question |
+| **962** | 961 (answered, last of run 1) | **overflow box for n:4, confirmed** — see the second correction below |
+| **970** | 968 … 971 | **EEG figure page belonging to the question on p.969** — see below |
+| **973** | 971 … 974 | **EEG figure page belonging to the question on p.972** — see below |
 | **1037** | 1036 (answered) | **overflow box, confirmed** |
 
-**p.962 is the open one.** It has exactly the shape that p.1037 turned out to have — a lone `notes`
-page directly after an answered page whose box may not have fitted. It must be looked at before
-section 8 is called complete, and if it is an overflow box then n:4 (p.961) needs `box:962`.
+**All four flip pages carry real question content. None of them is a teaching slide.** Not one of
+the four `notes` labels in the question block was describing what is actually on the page.
 
 This is the second time in this book the index has been proved wrong about a page's kind, and the
 second time in the opposite direction from the first: section 6 had notes pages the boolean called
 answered; here an answered page's box is called notes. **The index is an address list, not a
 description. Open the page.**
+
+---
+
+## ⚠️ THREE MORE CORRECTIONS, reported by staging half A on the image 2026-09-05
+
+Half A was told to check its own boundaries and report disagreements. It reported three, and all
+three contradict something written above. Recorded here rather than fixed silently.
+
+### 1. p.962 is an overflow box for n:4 — the open question above is now closed
+
+n:4 is the question answered on p.961, and **p.961 prints no explanation box of its own.** p.962 is a
+genuine small bordered overflow box carrying it, exactly the shape p.1037 turned out to have. The
+staged entry carries `box:962`, and `merge-parts-ep2.js 8` reports the section's two boxes-on-their-
+own-page as `n4 -> p.962, n40 -> p.1037`.
+
+The prediction written above — *"if it is an overflow box then n:4 (p.961) needs `box:962`"* — was
+correct. The map's status line for p.962 has been changed from ⚠️ UNCHECKED accordingly.
+
+### 2. ⚠️ pp.970 and 973 are neither of the two things this file offered
+
+This file said the two options were: those questions genuinely have no clean twin, or the index
+mislabelled the twin. **Both were wrong.** They are a third shape nobody had measured:
+
+**p.970 and p.973 are EEG-tracing figure pages belonging to the question printed on the page
+before.** Q8 on p.969 says "the figure below" and Q9 on p.972 says "His EEG is shown in the figure
+below" — in each case the tracing did not fit alongside the stem and options, so the book gave it its
+own page. The index reads a page holding only an image as `notes`.
+
+**The consequence for drafting, and it is not cosmetic:** the answered pages 971 and 974 reprint the
+stem, the options, the key and the box — **but never the figure itself.** So `fig`/`figAlt` on n:8
+and n:9 point at **p.970 and p.973**, not at the entry's own `p`. A cutter addressed to the entry's
+`p` would render a page with no figure on it and find nothing to crop.
+
+### 3. The opening notes block is 930–953, not 930–954
+
+Half A spot-checked 930, 935, 940, 945, 950 and 954. Five are teaching notes as described.
+**p.954 is not** — it is Q1's unanswered twin, a full stem with five options and no highlight,
+matching the answered page at p.955. The true notes-only span is **930–953**, and the twin-at-p−1
+rule holds for Q1 after all.
+
+The parity table above is unaffected: p.954 is not an answered page and was never in it.

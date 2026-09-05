@@ -103,8 +103,38 @@ const SEC = {
   7: { prefix: 'pedep2-ren-', file: 'endpoint-p2-s07-renal.array.js', svar: 'PEDEP2_S07_STAGED',
        draft: 'endpoint-p2-s07-renal.draft', chapter: 'renal', pages: [793, 929], ans: 55,
        folded: [30, 47, 49, 51] },
+  // `folded` is four reprints adjudicated on the staged text 2026-09-05, two within the section and
+  // two against entries ALREADY LIVE in section 2 -- the first cross-section folds in this bank:
+  //   n47 -> n17      the Ahmed/Gower vignette word-for-word, same answer; the options are
+  //                   reordered and two distractors swapped (Romberg -> Brudzinski, Chorea ->
+  //                   Dyskinesia) without changing what has to be excluded. n17 keeps the fuller
+  //                   question line.
+  //   n59 -> n26      stem and all five options identical in order, same key. An exact reprint.
+  //   n34 -> pedep2-dp-25   identical stem, five identical options in order, same key; the book
+  //                   prints this cerebral-palsy question in section 2 AND section 8.
+  //   n41 -> pedep2-dp-2    differs by one word ("What age" / "At what age"); options and key
+  //                   identical.
+  // ⚠️ The two cross-section folds mean the SURVIVOR is already live and carries a `pedep2-dp-`
+  // id. Nothing is written for n34 or n41; the section-8 page is added to the live entry's
+  // `source` instead, which is the fold rule this bank has used since section 5.
+  //
+  // Five further pairs the sweep raised are NOT folded:
+  //   n6/n51    the same GBS scenario, but n51 replaces the whole menu with lesion-SITE categories
+  //             (disorder of neuromuscular transmission, anterior horn cell) against n6's disease
+  //             names, and flips febrile to afebrile. A different discrimination.
+  //   n28/n32   both "which is true about antiepileptic drugs", but the keys are different true
+  //             facts and each one's key is the other's distractor NEGATED. Folding either would
+  //             delete a fact the bank teaches.
+  //   n34/n36   scored 0.947 on the stem template alone; n36's four options are a different
+  //             question entirely. n34 folds into dp-25, n36 stands.
+  //   n40/pedep2-dp-7   the same Clara/Clarissa vignette, both keying CT or MRI, but dp-7 offers
+  //             cranial ultrasound and EEG where n40 offers creatine kinase, karyotype and TFTs --
+  //             4 options against 5, and genuinely different exclusion work.
+  //   n53/pedep2-res-59  headache against bronchiolitis, matched on "Which of the following
+  //             statements about X is true?" alone. A pure template false positive.
   8: { prefix: 'pedep2-neu-', file: 'endpoint-p2-s08-neuro.array.js', svar: 'PEDEP2_S08_STAGED',
-       draft: 'endpoint-p2-s08-neuro.draft', chapter: 'neurological', pages: [930, 1078], ans: 60 },
+       draft: 'endpoint-p2-s08-neuro.draft', chapter: 'neurological', pages: [930, 1078], ans: 60,
+       folded: [34, 41, 47, 59] },
   9: { prefix: 'pedep2-end-', file: 'endpoint-p2-s09-endocrine.array.js', svar: 'PEDEP2_S09_STAGED',
        draft: 'endpoint-p2-s09-endocrine.draft', chapter: 'endocrine', pages: [1079, 1145], ans: 27 },
   10: { prefix: 'pedep2-liv-', file: 'endpoint-p2-s10-liver.array.js', svar: 'PEDEP2_S10_STAGED',

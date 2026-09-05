@@ -71,8 +71,10 @@ const SEC = {
   // this section's entry; do not re-derive it here.
   7: { prefix: 'pedep2-ren-', staging: 'endpoint-p2-s07-renal.array.js', svar: 'PEDEP2_S07_STAGED',
        draft: 'endpoint-p2-s07-renal.draft', folded: [30, 47, 49, 51] },
+  // n47 -> n17 and n59 -> n26 within the section; n34 -> pedep2-dp-25 and n41 -> pedep2-dp-2
+  // against entries already live in section 2. Reasoning in val-pd-ep2.js's section-8 block.
   8: { prefix: 'pedep2-neu-', staging: 'endpoint-p2-s08-neuro.array.js', svar: 'PEDEP2_S08_STAGED',
-       draft: 'endpoint-p2-s08-neuro.draft' },
+       draft: 'endpoint-p2-s08-neuro.draft', folded: [34, 41, 47, 59] },
   9: { prefix: 'pedep2-end-', staging: 'endpoint-p2-s09-endocrine.array.js', svar: 'PEDEP2_S09_STAGED',
        draft: 'endpoint-p2-s09-endocrine.draft' },
   10: { prefix: 'pedep2-liv-', staging: 'endpoint-p2-s10-liver.array.js', svar: 'PEDEP2_S10_STAGED',
