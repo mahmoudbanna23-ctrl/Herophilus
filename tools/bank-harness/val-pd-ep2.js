@@ -132,9 +132,18 @@ const SEC = {
   //             4 options against 5, and genuinely different exclusion work.
   //   n53/pedep2-res-59  headache against bronchiolitis, matched on "Which of the following
   //             statements about X is true?" alone. A pure template false positive.
+  // ⚠️ `figPage` is new here, and section 8 is the first section in either part that needed it.
+  // Everywhere else in this book the figure is printed on the answered page, so the crop's basename
+  // is derived from the staged `p` and no override exists. Section 8 breaks that: n8 and n9 say
+  // "the figure below", and the answered pages 971 and 974 reprint the stem, the options, the key
+  // and the box but NOT the figure. Both EEG tracings are printed alone on the preceding page --
+  // p.970 and p.973 -- which the OCR index labels `notes`. Confirmed on the page images by the
+  // staging half and recorded in endpoint-p2-s08-page-map.md before any drafting half was launched.
+  // Without this override the validator demands q-pd-ep2-971 and q-pd-ep2-974, and a cutter obeying
+  // it would render two pages with no figure on them and find nothing to crop.
   8: { prefix: 'pedep2-neu-', file: 'endpoint-p2-s08-neuro.array.js', svar: 'PEDEP2_S08_STAGED',
        draft: 'endpoint-p2-s08-neuro.draft', chapter: 'neurological', pages: [930, 1078], ans: 60,
-       folded: [34, 41, 47, 59] },
+       folded: [34, 41, 47, 59], figPage: { 8: 970, 9: 973 } },
   9: { prefix: 'pedep2-end-', file: 'endpoint-p2-s09-endocrine.array.js', svar: 'PEDEP2_S09_STAGED',
        draft: 'endpoint-p2-s09-endocrine.draft', chapter: 'endocrine', pages: [1079, 1145], ans: 27 },
   10: { prefix: 'pedep2-liv-', file: 'endpoint-p2-s10-liver.array.js', svar: 'PEDEP2_S10_STAGED',
@@ -229,6 +238,15 @@ S.forEach(s => {
   if (!marked && s.straddle === true) fail.push('staging n:' + s.n + ': row says straddle:true but the note does not carry the STRADDLES marker');
 });
 const FIGURE = new Set(S.filter(s => s.fig && String(s.fig).trim()).map(s => s.n));
+
+// Which PDF page the crop for n comes off. Normally the answered page; a section whose book prints
+// a figure on a page of its own overrides it in SEC.figPage. Both the basename check and the
+// collision check go through here, so the two can never disagree about which page a crop is from.
+function figPageOf(n) {
+  if (cfg.figPage && cfg.figPage[n] != null) return cfg.figPage[n];
+  const s = S.find(x => x.n === n);
+  return s && s.p;
+}
 const BOXED = new Set(S.filter(s => norm(s.expl)).map(s => s.n));
 
 // ⚠️ THE MENU KEY IS SORTED, AND THAT IS THE WHOLE POINT. It used to be JSON.stringify(s.opts),
@@ -345,7 +363,9 @@ D.forEach(q => {
   if (!q.objective || !q.objective.trim()) fail.push(q.id + ': objective empty');
 
   if (FIGURE.has(n)) {
-    const want = 'q-pd-ep2-' + s.p;
+    // The crop's page is the answered page UNLESS the section config overrides it -- see `figPage`
+    // in SEC, and the section-8 comment there for the one case that needed it.
+    const want = 'q-pd-ep2-' + figPageOf(n);
     if (q.image !== want) fail.push(q.id + ': image should be the basename ' + want + ', got ' + JSON.stringify(q.image));
     if (!q.imgAlt || !q.imgAlt.trim()) fail.push(q.id + ': imgAlt missing');
     if (q.image && !fs.existsSync(R + 'app/assets/q/' + q.image + '.jpg'))
@@ -365,7 +385,7 @@ D.forEach(q => {
 
 const figPages = {};
 [...FIGURE].forEach(n => {
-  const p = S.find(x => x.n === n).p;
+  const p = figPageOf(n);
   (figPages[p] = figPages[p] || []).push(n);
 });
 Object.keys(figPages).forEach(p => {
