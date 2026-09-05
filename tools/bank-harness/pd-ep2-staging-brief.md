@@ -55,10 +55,29 @@ spend a step looking for a ghost.
 
 | What | Where | Size |
 |---|---|---|
-| native slide JPEG, one per page | `<SCRATCH>\ep2-index\native\pNNNN.jpeg` | **800 × 450** |
-| 150 dpi A4 render of the same page | `<SCRATCH>\ep2-index\hires\pNNNN.png` (**.png, not .jpeg**) | 1241 × 1754 |
+| native slide JPEG, one per page | `<CACHE>\native\pNNNN.jpeg` | **800 × 450** |
+| 150 dpi A4 render of the same page | `<CACHE>\hires\pNNNN.png` (**.png, not .jpeg**) | 1241 × 1754 |
 
-`<SCRATCH>` is given in your task prompt. `NNNN` is the PDF page zero-padded to four digits.
+`NNNN` is the PDF page **zero-padded to four digits** — `p0876.jpeg`, not `p876.jpeg`.
+
+### ⚠️ `<CACHE>` IS NOT YOUR SESSION'S SCRATCHPAD, AND THIS LINE USED TO SAY IT WAS
+
+The extraction was run once, in a session that has since ended, and **its scratchpad was never
+deleted**. Every later session inherits the cache by absolute path; nothing re-extracts it. All
+1,993 pages are present, re-verified 2026-09-05:
+
+```
+C:\Users\Alfa388\AppData\Local\Temp\claude\D--claude-os-Medical-school-Herophilus\0ffb5f86-a1df-4f33-a8c4-fc32a73946ba\scratchpad\ep2-index\
+```
+
+**Your task prompt should give you this path. If it instead points at your own `<SCRATCH>\ep2-index`,
+that directory will not exist** — this brief said so for eight sections and it was wrong from the
+second session onward. Check the absolute path above before concluding the cache is gone, and say in
+your report which one you used.
+
+⚠️ **A missing cache is not a licence to re-extract the book.** If the path above is ever genuinely
+empty, escalate (§10) — 1,993 pages is hours of work and the parent decides whether to spend it, not
+you. Render only the handful of pages your own range needs, into your own scratch directory.
 
 ### ⚠️ 800 × 450 IS THE CEILING. There is no more resolution anywhere.
 

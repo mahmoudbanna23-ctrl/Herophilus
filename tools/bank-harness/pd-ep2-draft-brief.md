@@ -87,6 +87,19 @@ Your task prompt names the **candidate** chapters for your section. It is a cand
 assignment: **each entry gets the chapter its own content belongs to**, and you write a one-line
 reason for each in your report.
 
+⚠️ **THE BINDING DOCUMENT IS THE SECTION'S OWN RULINGS FILE, NOT YOUR TASK PROMPT.** From section 6
+onward every section has one — `content\peds\qb-pages\endpoint-p2-s<NN>-chapter-rulings.md` —
+written and measured before any drafting agent existed. **Open it. It outranks the prompt that sent
+you**, and it is where the borderline cases in your section have already been decided.
+
+⚠️ **If your task prompt tells you your section's chapter is one named chapter, THE PROMPT IS
+WRONG** — say so and follow the rulings file. Measured twice: section 4's prompts hard-coded one
+chapter and misfiled 24 of 87; **section 8's prompt did it again** and said "Chapter is
+`neurological`" when the rulings file for that very section warns in as many words that a
+mostly-`neurological` result is "a symptom, not a result". Half C caught it and said so, and 24 of
+56 entries landed outside `neurological` as a result. **A half that reads the rulings file and
+contradicts its prompt is doing the job correctly.**
+
 **No instrument checks this.** `val-pd-ep2.js` says so in its own header — the `chapter` in the
 section config is documentation only, and each entry's chapter is only ever checked against the real
 chapter set from `modules.js`. Every candidate for your section is a real chapter, so a question
