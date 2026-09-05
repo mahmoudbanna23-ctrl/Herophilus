@@ -112,8 +112,16 @@ const SEC = {
   // behaves as staged == drafted, which is the correct behaviour until reprint-pd-ep2.js has
   // actually been run over that exam's page range and each hit confirmed on the page image.
   // Adding a guessed array here would make the splicer accept missing entries silently.
+  // Section 12's array is PRESENT because its pass has actually run: the sweep offered 37 fold
+  // candidates against the live file, all 37 were read page against page in
+  // endpoint-p2-s12-fold-adjudication-A/B/C.md, 28 were ruled reprints and 9 were ruled shared
+  // templates that pair rather than fold, and reprint-s12-pd-ep2.js --write then stamped the exam
+  // page into those 28 live sources. 28 of 80 against part 1's 30 of 80.
   12: { prefix: 'pedep2-mf1-', staging: 'endpoint-p2-s12-mfe1.array.js', svar: 'PEDEP2_S12_STAGED',
-        draft: 'endpoint-p2-s12-mfe1.draft' },
+        draft: 'endpoint-p2-s12-mfe1.draft',
+        reprints: [1, 2, 5, 6, 8, 18, 19, 21, 22, 23, 26, 30, 31, 32, 34, 43, 45, 52, 53, 56, 57,
+                   58, 60, 62, 66, 68, 72, 75],
+        reprintPass: 'reprint-s12-pd-ep2.js', reprintMark: 'Model Final Exam 1' },
   13: { prefix: 'pedep2-mf2-', staging: 'endpoint-p2-s13-mfe2.array.js', svar: 'PEDEP2_S13_STAGED',
         draft: 'endpoint-p2-s13-mfe2.draft' },
   14: { prefix: 'pedep2-mf3-', staging: 'endpoint-p2-s14-mfe3.array.js', svar: 'PEDEP2_S14_STAGED',

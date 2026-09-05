@@ -134,3 +134,44 @@ adjudicated list becomes `splice-pd-ep2.js`'s section-12 `reprints:` array.
 - **p.1431 is a full-page image of a handwritten Arabic supplication** closing the section, not a
   question and not an overflow box; p.1432 opens Model Final Exam 2. There is no eighty-first
   question hiding at the end.
+
+---
+
+## ADJUDICATED — 2026-09-05
+
+All thirty-seven candidates and the within-section pair were read page against page in
+`endpoint-p2-s12-fold-adjudication-A.md` (n1–n30), `-B.md` (n31–n60) and `-C.md` (n61–n80), with the
+model-exam page image opened for every REPRINT call. **Twenty-eight are reprints; nine are not.**
+
+```
+reprints: [1, 2, 5, 6, 8, 18, 19, 21, 22, 23, 26, 30, 31, 32, 34, 43, 45, 52, 53, 56, 57,
+           58, 60, 62, 66, 68, 72, 75]
+```
+
+**28 of 80, against part 1's 30 of 80. 52 entries are drafted.** The nine that are not reprints —
+n28, n35, n44, n59, n74, n79, and the second live id flagged against each of n21, n45 and n60 — are
+shared option menus or shared stem frames applied to different vignettes, each with its
+discriminating token named in the adjudication file that owns it. Three of them turn on a ruling the
+live bank had already made and recorded in its own explanations: `res-7` against `res-54`, `dp-7`
+against `neu-40`, and `ren-41` (most common) against `ren-54` (major).
+
+The pass that proves the pairs and stamps the exam page into the twenty-eight live `source` fields is
+**`tools/bank-harness/reprint-s12-pd-ep2.js`**, run `--write` on 2026-09-05. Its three EXACT entries
+were byte-equal on the apostrophe-blind comparison as claimed; **seven pairs have a key option whose
+TEXT differs between printings**, each named in the tool's `KEYTEXT_OK` table with both strings and
+the page it was settled on — four spelling or abbreviation variants (n5, n8, n26, n53) and three real
+rewordings of the same answer (n21, n60, n66). None of the seven moves a key.
+
+Two of the twenty-eight also record a contradiction between the printings in the live entry's
+`explanation`, because the new `source` clause promises it: `pedep2-ren-22` (p.1286 prints urea
+90.0 mmol/L and creatinine 200 mmol/L against p.862's 9.0 mmol/L and 200 µmol/L — the creatinine is
+not possible in the unit printed) and `pedep2-res-23` (p.1406 puts the consolidation in the right
+lower lobe where p.521 states the left).
+
+**A seventh fold shape, from n66.** The six recognised shapes do not cover a printing that keeps the
+stem and the key but REBUILDS the distractor set: `pedep2-neu-50`'s "Anticonvulsants only" and
+"Chemotherapy" are replaced on p.1402 by "Treatment of the cause of cerebral palsy" and "Restriction
+of certain proteins in the diet", while botulinum toxin survives as the key in fuller words and moves
+from index 0 to index 3. Two of four options replaced is heavier than shape 6's dropped filler, and
+the range-C agent flagged it as its weakest call; ruled a reprint because the disease, the question
+and the key concept are all unchanged and no distractor discriminates between the two printings.

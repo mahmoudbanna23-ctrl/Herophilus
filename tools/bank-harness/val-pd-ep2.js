@@ -170,8 +170,17 @@ const SEC = {
   // exams, 80 questions each, and they reprint the body sections -- part 1's Model Final Exam 1
   // was 30 reprints of 80. Run reprint-pd-ep2.js over a model exam BEFORE drafting it; a reprint
   // extends `source` and gets no new entry.
+  // ⚠️ Section 12's `folded` is the 28 REPRINTS, not 28 folds. This tool has no separate reprint
+  // concept and does not need one: `folded` means "staged and deliberately not drafted", which is
+  // exactly what a reprint is here, and the two things it drives -- keeping a never-drafted entry
+  // out of the shared-menu grouping, and failing one that gets drafted anyway -- are what a reprint
+  // needs too. The splicer keeps them apart (`reprints` there also demands the reprint pass has
+  // run); the list is the same 28 in both files and must be edited in both. Adjudicated in
+  // endpoint-p2-s12-fold-adjudication-A/B/C.md, stamped by reprint-s12-pd-ep2.js.
   12: { prefix: 'pedep2-mf1-', file: 'endpoint-p2-s12-mfe1.array.js', svar: 'PEDEP2_S12_STAGED',
-        draft: 'endpoint-p2-s12-mfe1.draft', chapter: '(mixed)', pages: [1270, 1431], ans: 80 },
+        draft: 'endpoint-p2-s12-mfe1.draft', chapter: '(mixed)', pages: [1270, 1431], ans: 80,
+        folded: [1, 2, 5, 6, 8, 18, 19, 21, 22, 23, 26, 30, 31, 32, 34, 43, 45, 52, 53, 56, 57,
+                 58, 60, 62, 66, 68, 72, 75] },
   13: { prefix: 'pedep2-mf2-', file: 'endpoint-p2-s13-mfe2.array.js', svar: 'PEDEP2_S13_STAGED',
         draft: 'endpoint-p2-s13-mfe2.draft', chapter: '(mixed)', pages: [1432, 1594], ans: 80 },
   14: { prefix: 'pedep2-mf3-', file: 'endpoint-p2-s14-mfe3.array.js', svar: 'PEDEP2_S14_STAGED',
