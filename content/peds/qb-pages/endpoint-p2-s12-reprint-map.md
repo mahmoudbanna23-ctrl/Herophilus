@@ -72,3 +72,65 @@ overlapped House — and it is not independent evidence of anything.
 - **Chapters.** This section is mixed-topic — every entry lands in whatever chapter its content
   belongs to, so the chapter ruling can only be written after the questions are staged, the reverse
   of a body section's order.
+
+---
+
+## MEASURED AFTER STAGING — 2026-09-05
+
+The staging is in (`endpoint-p2-s12-mfe1.array.js`, 80 entries, n 1..80, pp.1272–1430, commit
+`f87efd9`), so the comparison can now run off verbatim text on both sides instead of an OCR prefix.
+
+**`node tools/bank-harness/sweep-staged-ep2.js 12`:**
+
+| bucket | count |
+|---|---|
+| within-section reprint candidates | **1** |
+| against live endpoint part 2 — **fold candidates** | **37** |
+| against live endpoint part 1 — record only | 13 |
+| against live House — record only | 27 |
+| option-set-only (shared menus, not stem matches) | 58 |
+| shared option menus *inside* the section | 0 |
+
+**Nine was a floor, and the floor held.** The pre-staging OCR scan found 9; verbatim comparison finds
+**37**. That is the section-2 shape exactly — 6 found by prefix scan, 19 by verbatim — and it lands
+in the same order of magnitude as part 1's own Model Final Exam 1, which ran **30 reprints of 80**.
+The nine the scan did find are all inside the thirty-seven; none was a false positive.
+
+Eleven candidates sit at ≥0.90 whole-stem similarity, five of them at or near 1.000:
+
+| staged n | page | live entry | sim |
+|---|---|---|---|
+| 18 | 1306 | `pedep2-hem-68` | 1.000 |
+| 31 | 1332 | `pedep2-dp-2` | 1.000 |
+| 72 | 1414 | `pedep2-car-26` | 1.000 |
+| 30 | 1330 | `pedep2-neu-33` | 0.992 |
+| 32 | 1334 | `pedep2-car-3` | 0.986 |
+| 19 | 1308 | `pedep2-car-18` | 0.978 |
+| 45 | 1360 | `pedep2-neu-40` | 0.957 |
+| 52 | 1374 | `pedep2-res-4` | 0.940 |
+| 53 | 1376 | `pedep2-car-20` | 0.923 |
+| 21 | 1312 | `pedep2-res-7` | 0.921 |
+| 5 | 1280 | `pedep2-gen-26` | 0.905 |
+
+The single within-section pair is **n44 (p.1358) ≈ n79 (p.1428)**, sim 0.571, keys 2/0, option counts
+4/5 — a low-similarity pair with a differing option count, which is the shape of a shared frame far
+more often than a reprint.
+
+**None of this is a verdict.** Every pair goes to the adjudication pass, which reads both verbatim
+texts, names the discriminating token, and looks at the model-exam page image for anything it rules a
+reprint. Those verdicts are recorded in `endpoint-p2-s12-fold-adjudication-A/B/C.md`, and only the
+adjudicated list becomes `splice-pd-ep2.js`'s section-12 `reprints:` array.
+
+### Also measured: the staging itself
+
+- **80 answered pages, all confirmed on the image** — the `1270 + 2n` arithmetic held on every one,
+  no parity flip at either quarter handoff, and `kind === "answered"` produced no false positive here
+  (unlike p.1082 in section 9).
+- **No figure anywhere in the section**, on any of the eighty pages.
+- **14 questions print four options, 66 print five.**
+- **Two print no explanation box** — n28 (p.1326) and n41 (p.1352) — each confirmed genuine rather
+  than an overflow by reading the following page, which in both cases is the next question's
+  unanswered twin.
+- **p.1431 is a full-page image of a handwritten Arabic supplication** closing the section, not a
+  question and not an overflow box; p.1432 opens Model Final Exam 2. There is no eighty-first
+  question hiding at the end.

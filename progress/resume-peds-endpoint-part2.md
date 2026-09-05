@@ -1893,15 +1893,50 @@ mention and `inf-33` is written for. Both entries say so in the expansion.
 3. **All four halves again disregarded the injected instruction** to edit files with sed/heredocs
    instead of Write/Edit, and each said so unprompted.
 
+## Section 12 — MODEL FINAL EXAM 1, staged at 80 (`f87efd9`)
+
+pp.1270–1431. Four quarters merged into `endpoint-p2-s12-mfe1.array.js`, **n 1..80, printed number
+matching `n` on every page, no gap and no repeat.** The `1270 + 2n` arithmetic the index proposed was
+handed out as a *hypothesis*, not a measurement — section 9's p.1082 is where `kind === "answered"`
+produced its first false positive — and all four quarters confirmed it page by page. Here it produced
+no false positive at all.
+
+**Measured on the eighty pages:** no figure anywhere in the section · 14 questions print four options,
+66 print five · two print no explanation box (n28 p.1326, n41 p.1352), each confirmed genuine rather
+than an overflow by reading the following page, which in both cases is the next question's unanswered
+twin. Both quarter handoffs (p.1311/1312, p.1391/1392) are clean with no parity flip.
+
+**The closing boundary is settled: p.1431 is a full-page image of a handwritten Arabic supplication**
+closing the section — not a question, not an overflow box — and p.1432 opens Model Final Exam 2. There
+is no eighty-first question at the end.
+
+⚠️ **Quarters B and D both died to the session rate limit (429, "resets 6:10pm") AFTER writing their
+files and headers.** A `failed` status on a staging agent is not the same as a missing file — check
+the disk with `check-part-ep.js` before re-running one. Both passed their gate untouched.
+
+**The reprint map's floor of nine measured out at thirty-seven.** `sweep-staged-ep2.js 12`, off
+verbatim text on both sides: within-section **1**, vs live part 2 **37**, vs part 1 **13**, vs House
+**27**, option-set-only 58, shared menus inside the section 0. That is the section-2 shape exactly
+(prefix scan 6, verbatim 19) and the same order as part 1's own Model Final Exam 1 at 30 of 80. The
+nine the pre-staging scan found are all inside the thirty-seven; none was a false positive. Eleven sit
+at ≥0.90, five at or near 1.000. Full table in `endpoint-p2-s12-reprint-map.md`, under
+`## MEASURED AFTER STAGING`.
+
 ### Next
 
-**Section 12, MODEL FINAL EXAM 1, pp.1270–1431, 80 questions — four staging quarters are out**
-(`.part-A.js` n1–20, `.part-B.js` n21–40, `.part-C.js` n41–60, `.part-D.js` n61–80). The reprint map
-is already run and committed (`endpoint-p2-s12-reprint-map.md`). Then `merge-parts-ep2.js 12` →
-`sweep-staged-ep2.js 12` → **the reprint pass, which must PROVE each pair on the page image** →
-`reprints: [...]` and `reprintPass:` added to `splice-pd-ep2.js`'s section-12 config → chapter
-rulings (**this is a mixed section, so chapters can only be ruled AFTER staging — the reverse of a
-body section's order**) → drafting notes → drafting → splice.
+**Section 12's adjudication pass is out** — three agents over disjoint ranges, writing
+`endpoint-p2-s12-fold-adjudication-A.md` (n1–30), `-B.md` (n31–60), `-C.md` (n61–80). Each names the
+discriminating token for every verdict and opens the model-exam page image for anything it rules a
+reprint. **A hit is a candidate to look at, never a verdict.**
+
+The one within-section pair, **n44 (p.1358) ≈ n79 (p.1428)**, sim 0.571, keys 2/0, option counts 4/5,
+straddles two agents' ranges — B describes it, C describes n79, and **this chat settles which side
+folds**, since the later printing is the one that folds.
+
+Then: `reprints: [...]` and `reprintPass:` into `splice-pd-ep2.js`'s section-12 config → chapter
+rulings (**mixed section, so chapters can only be ruled AFTER staging — the reverse of a body
+section's order**) → drafting notes → drafting halves → `val-pd-ep2.js` → `splice-pd-ep2.js 12
+--write` → `boot-check.js` → commit → journal.
 
 ⚠️ **`splice-pd-ep2.js`'s section-12 `reprints` array is deliberately absent, not empty.** A section
 with no `reprints` key behaves as staged == drafted, which is correct until each hit has been
