@@ -2,19 +2,19 @@
 //   node tools/bank-harness/reprint-s12-pd-ep.js            # dry run, writes nothing
 //   node tools/bank-harness/reprint-s12-pd-ep.js --write
 //
-// ⚠️ THIS PASS DROPS NOTHING AND CHANGES NO KEY. Same shape as reprint-s11-pd-ep.js: the 18
+// ⚠️ THIS PASS DROPS NOTHING AND CHANGES NO KEY. Same shape as reprint-s11-pd-ep.js: the 19
 // reprints are never drafted at all -- the exam reprints a question the book already printed, so
 // the entry that would have been created is not created, and the live entry's `source` gains the
 // exam page. Entry count is unchanged by design; `source` is the only field any entry gains.
 //
 // WHY IT RUNS BEFORE THE SPLICE. splice-pd-ep.js demands every staged n be drafted exactly once.
-// Section 12 stages 80 and drafts 62, so SEC[12].reprints there records the 18 that are
+// Section 12 stages 80 and drafts 61, so SEC[12].reprints there records the 19 that are
 // deliberately absent. This file is where that list is PROVED against the two files on disk --
 // the splicer only reads the count.
 //
 // ⚠️ THE WITHIN-SECTION PAIR IS NOT THIS PASS'S BUSINESS. Staged n50 (p.1583) and n58 (p.1599) are
 // word for word the same question, same five options, same key, differing only in the explanation
-// box. Neither is a reprint of anything LIVE, so both stay in the drafted 63 and the pair is
+// box. Neither is a reprint of anything LIVE, so both stay in the drafted 61 and the pair is
 // resolved after the splice by a fold, which is the one operation that may pick a survivor and
 // delete the loser. Putting n58 in `reprints` would be wrong twice over: there is no live entry
 // for its source to gain, and this pass would have nothing to write.
@@ -88,6 +88,17 @@ const NEAR = {
   26: ['nut-59', 'and again in Model Final Exam 3, p.PAGE, reprinting the p.387 wording rather ' +
        'than the one above -- the same five options in the same order, the key in the same ' +
        'position, and "Function as prebiotics" for "Work as prebiotics"'],
+  // ⚠️ THE SECOND ROW BOTH PROBES MISSED, AND THE SAME BLIND SPOT AS n26 ABOVE -- found by the
+  // agent drafting half C, after eighteen had been written. Live pedep-nut-16 asks "Edema in
+  // kwashiorkor is mainly due to:" and its own source already records a second printing on p.366
+  // phrased "What is the main cause of edema in kwashiorkor?", with the same five options in the
+  // same order, the same key, and two options differing only in casing and in stool/stools. The
+  // exam prints that p.366 wording exactly. Twice now the missed reprint has been a variant living
+  // in prose inside `source` rather than in `stem`, which is the shape the remaining exams should
+  // be probed for FIRST rather than last.
+  46: ['nut-16', 'and a third time in Model Final Exam 3, p.PAGE, again in the p.366 wording ' +
+       'rather than the one above -- the same five options in the same order and the same key, ' +
+       'with "Low Protein intake" capitalised and "stool" printed "stools"'],
   4: ['emg-57', 'and a third time in Model Final Exam 3, p.PAGE, with a fifth option added ' +
       '("Neurogenic shock", printed last); the key text is unchanged'],
   5: ['gi-59', 'and a third time in Model Final Exam 3, p.PAGE, where one distractor is replaced ' +
@@ -203,7 +214,7 @@ Object.keys(NEAR).forEach(k => {
 });
 
 if (fail.length) { console.log('FAILURES:\n  ' + fail.join('\n  ')); process.exit(1); }
-if (plan.length + done.length !== 18) { console.log('expected 18 reprints, planned ' + plan.length + ' and found ' + done.length + ' already written'); process.exit(1); }
+if (plan.length + done.length !== 19) { console.log('expected 19 reprints, planned ' + plan.length + ' and found ' + done.length + ' already written'); process.exit(1); }
 if (done.length) console.log('already written, left alone: ' + done.join(', '));
 
 // ---- rewrite each source, byte-level, in the live text ----
@@ -238,7 +249,7 @@ let after;
 try { after = count(out); } catch (e) { console.error('REWRITTEN FILE DOES NOT PARSE: ' + e.message); process.exit(1); }
 if (after.n !== before.n) { console.error('ENTRY COUNT MOVED: ' + before.n + ' -> ' + after.n + '. This pass must not change it.'); process.exit(1); }
 if (after.holes) { console.error('REWRITTEN FILE HAS HOLES'); process.exit(1); }
-if (after.srcs !== 18) { console.error('expected 18 sources naming Model Final Exam 3, got ' + after.srcs); process.exit(1); }
+if (after.srcs !== 19) { console.error('expected 18 sources naming Model Final Exam 3, got ' + after.srcs); process.exit(1); }
 
 console.log('edited ' + edited + ' sources | entries ' + before.n + ' -> ' + after.n + ' (unchanged, as intended) | holes ' + after.holes);
 if (!process.argv.includes('--write')) { console.log('DRY RUN. Re-run with --write.'); process.exit(0); }

@@ -71,7 +71,11 @@ const SEC = {
   // named the same 18 endpoint pages; 17 are reprints and the 18th is n7, below. A drafting
   // agent later found a NINETEENTH candidate that neither probe could see, n26, and it is a
   // reprint: both probes match on `stem`, and n26 reprints a wording that live pedep-nut-59
-  // records in prose inside its own `source` rather than in its stem. 18 reprints, 62 drafts.
+  // records in prose inside its own `source` rather than in its stem. The agent drafting half C
+  // then found a TWENTIETH candidate, n46, with exactly the same shape: live pedep-nut-16's
+  // source already records a p.366 printing that the exam reprints word for word. Both are
+  // reprints, so the count is 19 and the drafted count is 61. The probes are not at fault for a
+  // rule they were never given; the rule is now written into reprint-s12-pd-ep.js.
   // ⚠️ N7 IS NOT A REPRINT AND MUST STAY OUT OF THIS LIST. It shares a rickets vignette with live
   // pedep-nut-71 and asks a different question of it: the live entry offers five patterns of
   // calcium, phosphate and alkaline phosphatase results, the exam offers five INVESTIGATIONS and
@@ -82,7 +86,7 @@ const SEC = {
   // after the splice -- which is the only operation allowed to pick a survivor and delete a loser.
   12: { prefix: 'pedep-mf3-', staging: 'endpoint-s12-mfe3.array.js', svar: 'PEDEP_S12_STAGED',
         draft: 'endpoint-s12-mfe3.draft',
-        reprints: [3, 4, 5, 11, 12, 17, 24, 26, 39, 47, 52, 53, 56, 57, 59, 60, 61, 67],
+        reprints: [3, 4, 5, 11, 12, 17, 24, 26, 39, 46, 47, 52, 53, 56, 57, 59, 60, 61, 67],
         reprintPass: 'reprint-s12-pd-ep.js', reprintMark: 'Model Final Exam 3' },
 };
 
