@@ -1634,10 +1634,121 @@ overlap measured in this stream. Three further House hits sit outside the block:
 banks and nothing folds across the part-1/part-2 boundary while both chats are live** — recorded,
 not acted on.
 
+## Section 9 spliced at 25 — the section holds 26, not 27, and `kind === "answered"` produced its first false positive (2026-09-05)
+
+Commits `91c1635` (staging, 8 files) and `7ea5bfd` (splice, 7 files). Both **unpushed by design** —
+this chat cannot push. `app\data\questions.peds.ep2.js` 432 → **457** entries, 1107369 → 1174851
+chars, **0 sparse holes, 0 duplicate ids**. Booted from `file://` after the splice: **0 console
+errors**, `QUESTIONS 5705 · THEORY 153 · MODULES 4 · 153 chapter rows (138 with questions)`.
+
+### ⚠️ THE COUNT WAS WRONG IN FOUR PLACES AND NO COUNTER CAUGHT IT
+
+**p.1082 is not a question.** It is an ordinary teaching-notes slide headed "Management" — no stem,
+no options, no highlighted key — sitting inside an unbroken notes run pp.1079–1090. The OCR index
+tagged it `kind: "answered"` because its yellow section header is the same shape as the un-flagged
+yellow headers on pp.1080/1081/1083/1084/1088/1089, and it is the only page of that run mistagged.
+
+**This is the first time in either part that `kind === "answered"` has produced a false positive.**
+Until now only the yellow-pixel `answered` boolean over-counted, which is exactly why the page map
+treated `kind` as the trustworthy field and built a puzzle on top of it — 27 answered pages against
+26 question pages, so one question "had to be" twinless, with p.1082 and p.1097 named as candidates.
+**The premise was the false positive.** Neither page is twinless: p.1097's twin is a split pair, stem
+and options plain on p.1095 and the glucose diary the stem refers to printed alone on p.1096.
+
+The correction was made **by a staging half, not by an instrument.** It was told the twinless question
+was its second job, read pp.1079–1091 page by page instead of spot-checking, staged only the seven
+real questions among its eight assigned pages, and **escalated rather than inventing an eighth entry.**
+Three independent confirmations of 26 followed: the printed question numbers run **1..26 with no gap**
+across three parts written by three halves that never saw each other's files; 3 + 23 = 26; and the
+answered/question page counts reconcile once p.1082 leaves the answered set.
+
+Corrected where the count lived: `val-pd-ep2.js` (`ans: 26`), `merge-parts-ep2.js` (`expect: 26`),
+`endpoint-p2-s09-s11-page-map.md`, and the two mis-numbered staging parts (B n:9–18 → n:8–17, C
+n:19–27 → n:18–26, `n := pr`). `splice-pd-ep2.js` and `sweep-staged-ep2.js` carry no count for this
+section — **verified, not assumed.** The renumber was trivially safe because `pr` was transcribed off
+the page by three halves and was never wrong; the merge then reported `pr != n: none`.
+
+### The fold — two boxes, neither a superset
+
+n23 (p.1138) folds into n2 (p.1094): James, 11, T1DM, collapses playing football. **Read on both page
+images**, not scored — same patient, same five options in the same order, same key (option D,
+highlighted yellow, bold and underlined on each). Stem similarity read only **0.560 because the second
+printing is condensed**, not because it is a different question. A similarity gate would have called
+this a near-miss.
+
+**What needed a ruling: the book prints a differently worded explanation box under each printing and
+neither is a superset** — p.1094 has "cannot swallow", p.1138 has "without needing IV access". "Keep
+the fuller printing" does not decide it. **Ruling: the survivor keeps its own box verbatim and
+unmixed; the reprint's detail goes into the expansion below the rule, attributed in prose to p.1138.
+The two boxes are never merged into one blockquote** — a box records what one page prints, and
+blending two printings would fabricate a box the book never printed. `source` on the survivor:
+`Pediatrics endpoint part2.pdf p.1094 (reprinted at p.1138)`.
+
+⚠️ **`splice-pd-ep2.js` refuses a silent gap by design** — the dry run failed with `MISSING:
+pedep2-end-23 is staged but not drafted` until section 9's config declared `folded: [23]`. That is the
+tool working, not a bug; its own comment warns that a guessed array there would make it accept missing
+entries silently.
+
+### Chapters, and a ruling that had to be refined mid-drafting
+
+Landed **`endo-thyroid` 13 · `endocrine` 7 · `endo-dka` 4 · `neonatal-seiz` 1.** The one entry outside
+the section's three chapters is **n18** — a 2.2 kg baby at 37 weeks to a pre-eclamptic mother, admitted
+to SCBU, answer *hypoglycaemia*. The rulings file splits hypoglycaemia at **28 days** and this baby is
+hours old, so it files neonatal.
+
+**Ruling 1a was added during drafting** because half A escalated n12 rather than deciding it: Sophie is
+a known type 1 diabetic, dehydrated but stable, talking, glucose 16 mmol/L, **no ketones and no pH
+given anywhere.** By ruling 1's literal test she is not in an episode (`endocrine`); by ruling 1's own
+list of what `endo-dka` owns — the fluids — she is. **The refined test: where the vignette is not an
+episode but the thing being asked is taught only inside the acute-episode chapter, the chapter follows
+what is asked.** Lands `endo-dka`. The four-question shared menu n9–n12 then splits **two and two**
+across the chapters — the menu working as intended; four identical option sets landing in one chapter
+would have been the finding.
+
+### The figure, and why the crop breaks the size convention
+
+**n3's figure is not on the answered page** — the second section running to need `figPage`. The home
+blood-glucose diary captioned "Figure 26.1" is printed alone on **p.1096**; p.1095 is the unanswered
+stem twin; p.1097 is the answered page; and n3's explanation box is printed alone on **p.1098**, so its
+`source` takes the box form. Crop cut from p.1096 as `q-pd-ep2-1096.jpg` **and looked at**: nothing
+clipped, every date and all twenty glucose readings legible, **the insulin Time and Dosage columns are
+printed blank in the source** — which the `imgAlt` now says rather than implying readings that are not
+there. **1805×1149, 162 KB, above this bank's 652×408–1040×883 / 24–90 KB range**, kept at native
+300 dpi because downscaling blurred the handwritten digits. Recorded so the next crop does not copy it
+without the same reason.
+
+### ⚠️ Two of my own errors, both caught by the pipeline rather than by me
+
+1. **I fabricated a clinical detail.** The drafting notes described n26 as a five-month-old with
+   jaundice **and pale stools**. The stem says the opposite: *"His stool and urine are normal in
+   color."* Normal stool colour is precisely what rules biliary atresia out and points at
+   hypothyroidism, so the invented detail argued for the wrong answer. **Cause: I read a 120-character
+   truncation that cut off at "His stool" and completed the sentence from expectation instead of from
+   the page.** **Half B caught it, followed the staged text over my notes, and said so** — which is the
+   behaviour the brief asks for and the reason a half is told the notes are not the source. Nothing
+   reached a live entry.
+2. **I told the user `check-part-ep.js` does not exist. It does** — first file in
+   `tools\bank-harness\`, read-only, path-argument-driven, bank-agnostic, and the ep2 staging brief
+   instructs halves to run it after every append. I carried a stale claim forward without listing the
+   directory and put it into two drafting prompts. No work damage — a draft half's gate is
+   `val-pd-ep2.js` either way, and both halves passed it clean.
+
+### ⚠️ For the end-of-stream cross-bank sweep
+
+**n1 through n9 map one-for-one onto House chapter 14** — `pedhd-endo-1` … `pedhd-endo-9`,
+0.686–1.000, **every key agreeing.** Also n16 ≈ `pedhd-endo-16` (0.739) and n23 ≈ `pedhd-endo-2`
+(0.560, through the n2 reprint); option-set-only hits n13/n14/n15 ≈ `pedhd-endo-13/14/15` and n26 ≈
+`pedhd-liv-3`. Against live part 1 (record only, another chat writes that file): n25 ≈ `pedep-emg-28`
+(0.683, keys agree), n18 ≈ `pedep-neo-37` and `pedep-mf3-16` on options. ⚠️ **n20 hits seven entries at
+0.571–0.600 with keys differing everywhere — that is a `Which of the following is NOT…` template
+matching other negative-stem questions, NOT a reprint. Do not fold any of them.** This is the third
+chapter-shaped House overlap in the stream (s5 ≈ ch.13, s8 ≈ ch.12, s9 ≈ ch.14).
+
 ### Next
 
-Sections **9–11 are already mapped and ruled** (`endpoint-p2-s09-s11-page-map.md`): endocrine 27,
-liver 20, malignant 23, all three counts matching `expect` on `kind === "answered"`. Section 9 runs
-p.1082 (1) · pp.1092, 1094 (2) · p.1097 (1, **odd parity**) · pp.1100–1144 (23). Sections **12–15 are
-the four model exams at 80 each and need `reprint-pd-ep2.js` run over the range before drafting**;
-then recent-mod 18 and recent-add 8.
+**Section 10** (liver, 20, pp.1146–…): the chapter-rulings agent is running. Then staging halves →
+`merge-parts-ep2.js 10` → `sweep-staged-ep2.js` → drafting notes → drafting halves → `val-pd-ep2.js`
+→ `splice-pd-ep2.js 10 --write` → `boot-check.js` → commit → journal. ⚠️ **Re-measure section 10's
+count on the page images before staging — `kind === "answered"` is no longer a trustworthy field.**
+Then **11** (malignant 23). Sections **12–15 are the four model exams at 80 each and need
+`reprint-pd-ep2.js` run over the range before drafting**; then recent-mod 18 and recent-add 8.
