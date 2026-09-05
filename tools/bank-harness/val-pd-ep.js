@@ -73,6 +73,16 @@ const SEC = {
   // halves and runs this gate over every letter, so nothing goes unchecked at splice time.
   12: { prefix: 'pedep-mf3-', file: 'endpoint-s12-mfe3.array.js', svar: 'PEDEP_S12_STAGED',
         draft: 'endpoint-s12-mfe3.draft', chapter: '(mixed)' },
+
+  // Model Final Exam 4, pp.1644-1804. Mixed topic, exactly as sections 10, 11 and 12 -- `chapter`
+  // is a label only. The prefix is `pedep-mf4-`, from the EXAM, not `pedep-mfe4-` from the staging
+  // FILE name; that one character is the trap sections 11 and 12 both record above.
+  // Pass the half letter. This section is drafted in halves like the three before it, so
+  // `node val-pd-ep.js 13` alone would build a merged draft path that does not exist and die
+  // ENOENT. A-D are all accepted; the usage line in the drafting brief's §12 saying `<A|B>` is
+  // stale and was reported wrong by the section 12 half-C drafter.
+  13: { prefix: 'pedep-mf4-', file: 'endpoint-s13-mfe4.array.js', svar: 'PEDEP_S13_STAGED',
+        draft: 'endpoint-s13-mfe4.draft', chapter: '(mixed)' },
 };
 
 // imgAlt must give MODALITY AND VIEW ONLY. Naming the finding answers the question --

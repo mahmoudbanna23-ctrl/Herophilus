@@ -128,6 +128,21 @@ const SEC = {
   // poem, and p.1644 is the Model Final Exam 4 title page.
   12: { base: 'endpoint-s12-mfe3', svar: 'PEDEP_S12_STAGED', title: 'MODEL FINAL EXAM 3',
         pages: '1484-1643', expect: 80 },
+
+  // Model Final Exam 4. All three notes on Section 10 apply unchanged. Band measured from
+  // index.json on 2026-09-05: 161 pages from p.1644 to p.1804 hold 80 `question`, 80 `answered`
+  // and 1 `notes`. THIS SECTION IS PERFECTLY REGULAR WHERE 12 WAS NOT: p.1644 is the exam's title
+  // page, p.1645 is the first blank printing, p.1646 the first answered sheet, and every one of the
+  // 79 gaps between consecutive answered pages is exactly 2 -- so every question is printed twice,
+  // question and answered counts agree, and the last answered sheet is p.1804. Nothing here needs
+  // the "extra answered sheet" reasoning that section 12 required.
+  // ⚠️ THE INDEX IS THE INSTRUMENT AND IT HAS BEEN CHECKED AGAINST THE THREE SECTIONS ALREADY
+  // CLOSED: it returns 80 answered for §10 (staged 80), 79 for §11 (staged 79) and 80 for §12
+  // (staged 80). It has never yet been wrong on this book. That is a reason to start from it, not
+  // a reason to skip reading the pages -- §12's printed numbering skipped 52 and printed 63 twice
+  // without the index noticing either, because the index counts sheets and not numbers.
+  13: { base: 'endpoint-s13-mfe4', svar: 'PEDEP_S13_STAGED', title: 'MODEL FINAL EXAM 4',
+        pages: '1644-1804', expect: 80 },
 };
 
 const secNum = process.argv[2];
