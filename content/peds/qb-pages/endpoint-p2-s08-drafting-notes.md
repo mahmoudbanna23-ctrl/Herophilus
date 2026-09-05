@@ -77,11 +77,29 @@ tracings are printed alone on **p.970** and **p.973**, the pages the OCR index l
 | n | crop from | what it is |
 |---|---|---|
 | n4 | **p.961** | colour photograph of an infant's face, eyes deviated downward with white sclera above each iris |
-| n7 | **p.968** | colour photograph of a newborn's lower back, raised midline sac-like lesion. A caption line under the photo is cut off at the slide's bottom edge and illegible — **it is not transcribed and not guessed at** |
+| n7 | **p.968** | colour photograph of a newborn's lower back, raised midline sac-like lesion, a foot visible at the right on a sheepskin. ⚠️ **There is NO caption under this photo** — see the correction below |
 | n8 | **p.970** | 16-channel EEG tracing, calibration `200 uV` / `1 s` |
 | n9 | **p.973** | 16-channel EEG tracing, calibration `100 uV` / `1 s` |
 
 A cutter addressed to the entry's own `p` would render p.971 and p.974 and find nothing to crop.
+
+### ⚠️ CORRECTION — p.968 has no caption, and this file said it did
+
+The staging recorded "a small caption line is printed beneath the photo but is cut off at the bottom
+edge of the slide and not legible", this file repeated it, and half A wrote it into n7's explanation.
+**It is not there.** The cutter zoomed the strip between the photo's bottom edge and the explanation
+box at 300 dpi: that band is white. The only text below the photo is the explanation box's own
+("…ida are associated with / …nceptional folic acid / …s the risk"), which is the box, correctly
+excluded from the crop. The sentence has been removed from n7.
+
+What the staging half most likely saw at a lower render was the top of that box. **The lesson is the
+one this project keeps paying for: a partial line at the edge of a slide is not evidence of a
+truncated caption until something has zoomed in on it.** Nothing was invented from it either way —
+the claim was that a line existed and was unreadable, so no text was ever fabricated.
+
+The staged `fig` on n7 **still carries the original wording**, deliberately: staging is the record of
+what that half saw on the page, and the record is not rewritten after the fact. This file is the
+correction, and this file is what a drafting half reads.
 
 **`imgAlt` must not answer the question.** Half A already wrote alts that hold that line — n4 reads
 "Colour close-up clinical photograph of an infant's face and eyes", not *setting-sun sign*; n8 and
