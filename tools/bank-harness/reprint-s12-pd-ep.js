@@ -2,13 +2,13 @@
 //   node tools/bank-harness/reprint-s12-pd-ep.js            # dry run, writes nothing
 //   node tools/bank-harness/reprint-s12-pd-ep.js --write
 //
-// ⚠️ THIS PASS DROPS NOTHING AND CHANGES NO KEY. Same shape as reprint-s11-pd-ep.js: the 17
+// ⚠️ THIS PASS DROPS NOTHING AND CHANGES NO KEY. Same shape as reprint-s11-pd-ep.js: the 18
 // reprints are never drafted at all -- the exam reprints a question the book already printed, so
 // the entry that would have been created is not created, and the live entry's `source` gains the
 // exam page. Entry count is unchanged by design; `source` is the only field any entry gains.
 //
 // WHY IT RUNS BEFORE THE SPLICE. splice-pd-ep.js demands every staged n be drafted exactly once.
-// Section 12 stages 80 and drafts 63, so SEC[12].reprints there records the 17 that are
+// Section 12 stages 80 and drafts 62, so SEC[12].reprints there records the 18 that are
 // deliberately absent. This file is where that list is PROVED against the two files on disk --
 // the splicer only reads the count.
 //
@@ -24,7 +24,12 @@
 // 22 cross-file candidates, four of them HOUSE pages rather than endpoint ones. A second probe
 // matched the STAGED TRANSCRIPTION -- a human read of the same pages -- against the same file, and
 // returned 10 exact and 8 near. Both probes named the same 18 endpoint pages. 18 candidates,
-// 17 reprints, and the 18th is the finding below.
+// 17 reprints, and the 18th is the n7 finding below.
+//
+// ⚠️ AN EIGHTEENTH REPRINT WAS FOUND AFTERWARDS, BY A DRAFTING AGENT, AND NEITHER PROBE COULD HAVE
+// SEEN IT. n26 reprints a SECOND printing that live pedep-nut-59 records inside its `source` rather
+// than in its stem; both probes match on stems. The clause on n26 below says what that costs and
+// what to do about it in the exams still to come.
 //
 // ⚠️⚠️ N7 IS NOT IN THIS FILE, AND ITS ABSENCE IS THE POINT. Staged n7 (p.1497) shares a rickets
 // vignette with live pedep-nut-71 (p.380) -- the same convulsing infant, the same wide fontanelle
@@ -71,6 +76,18 @@ const NEAR = {
       'quadrant and the blood gas values withheld -- the exam prints no pH, pCO2 or bicarbonate ' +
       'and asks what finding is expected rather than what the printed gas represents; the options ' +
       'and the key are unchanged, and the printing above is the fuller one'],
+  // ⚠️ FOUND AFTER THE OTHER SEVENTEEN HAD ALREADY BEEN WRITTEN, by the agent drafting half B, and
+  // it is the one row both adjudication probes missed. They compare against the live STEM, and the
+  // live stem here is "What is the main benefit of human milk oligosaccharides?" -- but that entry
+  // already records a SECOND printing on p.387 phrased "How does human milk oligosaccharides
+  // work?" with "Work as prebiotics" respelled "Function as prebiotics", and it is that second
+  // wording the exam reprints, word for word, options and key included. A probe that reads only
+  // `stem` cannot see a variant recorded inside `source`. The lesson for the remaining exams: a
+  // live entry whose source already documents more than one printing must be matched against every
+  // printing it names, not just the one in its stem field.
+  26: ['nut-59', 'and again in Model Final Exam 3, p.PAGE, reprinting the p.387 wording rather ' +
+       'than the one above -- the same five options in the same order, the key in the same ' +
+       'position, and "Function as prebiotics" for "Work as prebiotics"'],
   4: ['emg-57', 'and a third time in Model Final Exam 3, p.PAGE, with a fifth option added ' +
       '("Neurogenic shock", printed last); the key text is unchanged'],
   5: ['gi-59', 'and a third time in Model Final Exam 3, p.PAGE, where one distractor is replaced ' +
@@ -117,13 +134,20 @@ const cos = s => ap(s).toLowerCase().replace(/\s+/g, '');
 // option can separate a dose from a route or a value from its unit, and stays strict.
 const cosOpt = s => cos(String(s).replace(/[.;,]+$/, ''));
 
-const fail = [], plan = [];
+const fail = [], plan = [], done = [];
 
+// An entry whose source ALREADY names the exam is not a failure, it is a row this pass has already
+// written. Section 11's version treated it as a failure, which was right while a reprint list was
+// settled before the pass first ran and wrong the moment one grew afterwards: n26 was found by the
+// half-B drafting agent, hours after the other 17 had been written, and a hard failure would have
+// meant either reverting 17 good edits or hand-editing the eighteenth outside the tool that proves
+// it. The gates below still demand the full count, so a row silently skipped here cannot pass
+// unnoticed -- it just has to be already correct rather than freshly written.
 function target(n, suf) {
   const id = 'pedep-' + suf;
   const q = byId.get(id);
   if (!q) { fail.push('n' + n + ' -> ' + id + ': not live'); return null; }
-  if (/Model Final Exam 3/.test(q.source || '')) { fail.push('n' + n + ' -> ' + id + ': source already names Model Final Exam 3 -- this pass has already run'); return null; }
+  if (/Model Final Exam 3/.test(q.source || '')) { done.push('n' + n + ' -> ' + id); return null; }
   return q;
 }
 
@@ -159,7 +183,18 @@ Object.keys(NEAR).forEach(k => {
                          .replace(/\s+/g, '')
                          .replace(/ae/g, 'e').replace(/oe/g, 'e');
   const liveKey = flat(q.options[q.answer]), examKey = flat(s.opts[s.key]);
-  if (liveKey !== examKey) {
+  // ONE narrow way past the key-text check, and it is the entry's own record rather than an
+  // exception list: if the live `source` already quotes the exam's key text, the entry itself has
+  // documented that printing and this pass is naming a third or fourth appearance of a variant it
+  // already knows about. n26 is the case -- live pedep-nut-59 keys "Work as prebiotics" in its
+  // options and records in its source that its p.387 printing respells that key "Function as
+  // prebiotics", which is exactly what the exam prints. Without this, the file would have to
+  // either relax the check for everyone or hand-edit the eighteenth source outside the tool that
+  // proves it. It stays narrow on purpose: the escape needs the live entry to have written the
+  // exam's key text down FIRST, so it can never open on a key the book has not already reconciled.
+  const recorded = liveKey !== examKey && flat(q.source || '').indexOf(examKey) >= 0;
+  if (recorded) console.log('n' + n + ' -> ' + q.id + ': key text differs, and the live source already records it as a variant of this same question');
+  if (liveKey !== examKey && !recorded) {
     fail.push('n' + n + ' -> ' + q.id + ': KEY TEXT DIFFERS -- live "' + q.options[q.answer] +
       '", exam "' + s.opts[s.key] + '". That is the n7 shape: it is not a reprint. Draft it and ' +
       'record the divergence; do not add an exception here.');
@@ -168,7 +203,8 @@ Object.keys(NEAR).forEach(k => {
 });
 
 if (fail.length) { console.log('FAILURES:\n  ' + fail.join('\n  ')); process.exit(1); }
-if (plan.length !== 17) { console.log('expected 17 reprints, planned ' + plan.length); process.exit(1); }
+if (plan.length + done.length !== 18) { console.log('expected 18 reprints, planned ' + plan.length + ' and found ' + done.length + ' already written'); process.exit(1); }
+if (done.length) console.log('already written, left alone: ' + done.join(', '));
 
 // ---- rewrite each source, byte-level, in the live text ----
 // The existing sources are two shapes: a bare citation, and a citation with a trailing
@@ -202,7 +238,7 @@ let after;
 try { after = count(out); } catch (e) { console.error('REWRITTEN FILE DOES NOT PARSE: ' + e.message); process.exit(1); }
 if (after.n !== before.n) { console.error('ENTRY COUNT MOVED: ' + before.n + ' -> ' + after.n + '. This pass must not change it.'); process.exit(1); }
 if (after.holes) { console.error('REWRITTEN FILE HAS HOLES'); process.exit(1); }
-if (after.srcs !== 17) { console.error('expected 17 sources naming Model Final Exam 3, got ' + after.srcs); process.exit(1); }
+if (after.srcs !== 18) { console.error('expected 18 sources naming Model Final Exam 3, got ' + after.srcs); process.exit(1); }
 
 console.log('edited ' + edited + ' sources | entries ' + before.n + ' -> ' + after.n + ' (unchanged, as intended) | holes ' + after.holes);
 if (!process.argv.includes('--write')) { console.log('DRY RUN. Re-run with --write.'); process.exit(0); }
