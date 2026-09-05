@@ -82,8 +82,27 @@ const SEC = {
   6: { prefix: 'pedep2-car-', file: 'endpoint-p2-s06-cardiac.array.js', svar: 'PEDEP2_S06_STAGED',
        draft: 'endpoint-p2-s06-cardiac.draft', chapter: 'cardiac', pages: [607, 792], ans: 81,
        folded: [57, 73] },
+  // Section 7's four within-section folds. pp.876-928 systematically re-run the pp.820-874
+  // material, so the candidates were found with a Jaccard sweep over stem tokens; a first-60-
+  // character comparison caught only two of the eight pairs it turned up. Folded, with the kept
+  // printing first: n49 into n36 (stem byte-identical, options differ only in spelling, n36 keeps
+  // the box and n49 prints none), n47 into n39 (same four options in order, abbreviated, key
+  // unmoved), n51 into n31 (options differ by one hyphen, explanation byte-identical at 157
+  // chars), and n30 into n1 (the same five options REORDERED, which moves the key from index 2 to
+  // index 3; the second printing also renames the child Emily to Iman and adds limping, both
+  // recorded in the kept entry rather than merged into its stem).
+  //
+  // Four further pairs the same sweep raised are NOT folded, and folding any of them would have
+  // destroyed a correct question: n41/n54 both ask about a complication of minimal change
+  // nephrotic syndrome but one asks the most common (repeated infections) and the other a major
+  // one (thrombosis); n29/n50 are mirror images, glomerular causes EXCEPT against non-glomerular
+  // causes EXCEPT; n11/n43 and n13/n35 re-set one vignette against a DIFFERENT option set, not a
+  // reordered one -- the 4-option printing drops two real distractors and adds one the 5-option
+  // printing never had. The line is: fold when the option set is the same question, pair when the
+  // option set changes what is being discriminated.
   7: { prefix: 'pedep2-ren-', file: 'endpoint-p2-s07-renal.array.js', svar: 'PEDEP2_S07_STAGED',
-       draft: 'endpoint-p2-s07-renal.draft', chapter: 'renal', pages: [793, 929], ans: 55 },
+       draft: 'endpoint-p2-s07-renal.draft', chapter: 'renal', pages: [793, 929], ans: 55,
+       folded: [30, 47, 49, 51] },
   8: { prefix: 'pedep2-neu-', file: 'endpoint-p2-s08-neuro.array.js', svar: 'PEDEP2_S08_STAGED',
        draft: 'endpoint-p2-s08-neuro.draft', chapter: 'neurological', pages: [930, 1078], ans: 60 },
   9: { prefix: 'pedep2-end-', file: 'endpoint-p2-s09-endocrine.array.js', svar: 'PEDEP2_S09_STAGED',

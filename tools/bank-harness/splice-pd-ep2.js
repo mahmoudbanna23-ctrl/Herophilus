@@ -63,8 +63,14 @@ const SEC = {
   // printing's grade is recorded in the explanation rather than merged into the stem.
   6: { prefix: 'pedep2-car-', staging: 'endpoint-p2-s06-cardiac.array.js', svar: 'PEDEP2_S06_STAGED',
        draft: 'endpoint-p2-s06-cardiac.draft', folded: [57, 73] },
+  // Section 7's four within-section folds -- kept printing first: n49 into n36, n47 into n39,
+  // n51 into n31, n30 into n1 (that last one a REORDER, which moves the key from index 2 to
+  // index 3). Four further near-duplicate pairs raised by the same sweep are deliberately NOT
+  // folded -- n41/n54, n29/n50, n11/n43, n13/n35 -- because their option sets differ in what they
+  // discriminate rather than merely in order. The full adjudication is in val-pd-ep2.js above
+  // this section's entry; do not re-derive it here.
   7: { prefix: 'pedep2-ren-', staging: 'endpoint-p2-s07-renal.array.js', svar: 'PEDEP2_S07_STAGED',
-       draft: 'endpoint-p2-s07-renal.draft' },
+       draft: 'endpoint-p2-s07-renal.draft', folded: [30, 47, 49, 51] },
   8: { prefix: 'pedep2-neu-', staging: 'endpoint-p2-s08-neuro.array.js', svar: 'PEDEP2_S08_STAGED',
        draft: 'endpoint-p2-s08-neuro.draft' },
   9: { prefix: 'pedep2-end-', staging: 'endpoint-p2-s09-endocrine.array.js', svar: 'PEDEP2_S09_STAGED',
