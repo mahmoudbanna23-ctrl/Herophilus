@@ -1528,3 +1528,116 @@ The two mistakes are not the same and should not be remembered as one. The key/p
 "correction" was **inferred from** that defect, and cost nothing only because a boundary render was
 already scheduled. **The pipeline renders one page past every range for exactly this reason, and
 this is the first time that rule has caught the main chat rather than an agent.**
+
+## Section 8 spliced at 56 — the validator was wrong about two figures, and a caption was never there (2026-09-05)
+
+⚠️ **Sections 6 and 7 are not journaled in this file.** Their record is in the commits
+(`a90b187` section 6 spliced at 79, and the section 7 batch before it). This entry resumes the
+journal at section 8 rather than back-filling history I would be writing from memory.
+
+**Live file: `questions.peds.ep2.js` 376 → 432 entries, 956766 → 1107281 chars, 0 sparse holes,
+0 duplicate ids.** Boots from `file://` with 0 console errors — `QUESTIONS 5621 · THEORY 153 ·
+MODULES 4 · 153 chapter rows · 4 module cards`. Commits `a1e670e` (splice, crops, caption
+correction) and `d1e2834` (the four fold records). **Unpushed, by design — this chat cannot push.**
+
+Staged 60, four folded, **56 drafted** across four halves at 15 + 15 + 13 + 13, every half returning
+`ALL CHECKS PASSED` from `val-pd-ep2.js`. 15,251 words.
+
+### ⚠️ THE FIRST SECTION IN EITHER PART WHERE THE FIGURE IS NOT ON THE ANSWERED PAGE
+
+`val-pd-ep2.js` derived every crop basename from the staged answered page `p`. That holds everywhere
+else in this book, so nothing had ever tested it. Section 8 breaks it: **n8 and n9 say "the figure
+below", and pp.971 and 974 reprint the stem, the options, the key and the box but not the figure.**
+Both EEG tracings are printed alone on the preceding page — **p.970 and p.973** — which the OCR index
+labels `notes`.
+
+Half A hit this as two validator failures and **was right**. The fix went into the tool, not the
+draft: a `figPage: { 8: 970, 9: 973 }` override in the section config, read through one new helper
+`figPageOf(n)` that **both** the basename check and the basename-collision check now call, so the two
+cannot disagree about which page a crop came from. Section 8 is the only section that sets it.
+Obeying the uncorrected tool would have addressed the cutter to two pages with nothing on them.
+
+⚠️ `splice-pd-ep2.js` does **not** touch images, so `figPage` lives in the validator alone — this is
+the one section-table key of the four hand-copied tables that does *not* have to move together.
+
+### ⚠️ THE CAPTION UNDER p.968 DOES NOT EXIST
+
+Staging recorded "a small caption line is printed beneath the photo but is cut off at the bottom edge
+of the slide and not legible". The drafting notes repeated it. Half A wrote it into n7's explanation.
+**The cutter zoomed that strip at 300 dpi and the band is white.** The only text below the photo is
+the explanation box's own, correctly excluded from the crop. What the staging half saw at a lower
+render was almost certainly the top of that box.
+
+The sentence is gone from n7 and the drafting notes now carry the correction. **The staged `fig`
+keeps the original wording on purpose** — staging is the record of what that half saw on the page,
+and the record is not rewritten after the fact.
+
+Nothing was fabricated either way: the claim was that a line existed and could not be read, so no
+text was ever invented from it. **The lesson is the one this project keeps paying for — a partial
+line at the edge of a slide is not evidence of a truncated caption until something has zoomed in
+on it.**
+
+### The chapter field, wrong in the prompt for the second section running
+
+My drafting prompt told each half "Chapter is `neurological`". That was wrong and **half C said so**:
+`endpoint-p2-s08-chapter-rulings.md` requires per-entry judgment and warns in as many words that a
+mostly-`neurological` result is "a symptom, not a result". The validator checks chapters against the
+real set from `modules.js`, never against the config's `chapter:` field, which is documentation only.
+The halves assigned by content instead: **24 of 56 landed outside `neurological`** — across
+`neuro-nm`, `malignant-solid`, `neuro-cp`, `perinatal`, `genetics`, `infection`, `renal` and
+`nutrition-vit`. This is the same defect section 4 recorded at 24 entries. **Fix the brief, not the
+draft.**
+
+**One escalation adjudicated here rather than by the half that raised it.** n46 asks how long complete
+cerebral ischaemia takes to cause brain death; this course mentions brain death exactly once, in the
+drowning part of `accidents`. The half filed it there for want of an anchor and flagged the call. It
+moves to `neurological`: the question is a physiology fact about ischaemia tolerance, the book prints
+it in the neurology section, and the drowning teaching is the cold-water **exception** to the number
+rather than the number itself. The cross-reference stays in `explanation`, which is where a secondary
+chapter belongs.
+
+### The four folds, now recorded on their survivors
+
+| dropped | survives as | source now reads |
+|---|---|---|
+| n47 p.1051 | `pedep2-neu-17` p.990 | `… p.990 (reprinted at p.1051)` |
+| n59 p.1075 | `pedep2-neu-26` p.1008 | `… p.1008 (reprinted at p.1075)` |
+| **n34 p.1024** | **`pedep2-dp-25` p.145** | `… p.145 (reprinted at p.1024)` |
+| **n41 p.1039** | **`pedep2-dp-2` p.99** | `… p.99 (reprinted at p.1039)` |
+
+⚠️ **The last two are the first CROSS-SECTION folds in this bank** — survivors written weeks of work
+earlier in section 2, which no half of section 8 was allowed to touch. That is why the edit was held
+for the main chat and made after the splice. Keys were re-checked against the staged array before
+editing: n34 key 0 against dp-25's `answer:0`, n41 key 2 against dp-2's `answer:2`, options identical
+and in order in both.
+
+### Three divergences recorded, no key moved
+
+- **n4** — the printed key names the intraventricular haemorrhage; the described findings are the
+  post-haemorrhagic complication.
+- **n35 / n45** — the box gives the febrile-seizure window as 6 months to 5 years against the cached
+  lecture's 5 months to 6 years.
+- **n60** — the box attributes the finding to raised intracranial pressure where the course teaches
+  the same signs as rickets bony changes. Both readings agree on IV calcium gluconate.
+
+**n40's explanation box is truncated in the book**, ending mid-sentence at "brain imaging (MRI" with
+blank space below, confirmed at 300 dpi and not a render artefact. Quoted verbatim including the
+cutoff, **nothing completed inside the box**; the finished thought is carried below the rule as this
+bank's own writing.
+
+### ⚠️ For the end-of-stream cross-bank sweep
+
+**n1 through n25 are a one-for-one reprint of House chapter 12** — `pedhd-neuro-1` … `pedhd-neuro-26`,
+0.75–1.000 stem similarity, **every key agreeing**. This is the largest chapter-shaped endpoint/House
+overlap measured in this stream. Three further House hits sit outside the block: n40 ≈ `pedhd-devp-7`
+(keys differ), n41 ≈ `pedhd-devp-2`, n47 ≈ `pedhd-neuro-17` (keys differ). **Nothing folds across
+banks and nothing folds across the part-1/part-2 boundary while both chats are live** — recorded,
+not acted on.
+
+### Next
+
+Sections **9–11 are already mapped and ruled** (`endpoint-p2-s09-s11-page-map.md`): endocrine 27,
+liver 20, malignant 23, all three counts matching `expect` on `kind === "answered"`. Section 9 runs
+p.1082 (1) · pp.1092, 1094 (2) · p.1097 (1, **odd parity**) · pp.1100–1144 (23). Sections **12–15 are
+the four model exams at 80 each and need `reprint-pd-ep2.js` run over the range before drafting**;
+then recent-mod 18 and recent-add 8.
