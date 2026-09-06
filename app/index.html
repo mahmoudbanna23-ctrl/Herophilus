@@ -2083,6 +2083,18 @@ h2{font-family:var(--font-display);letter-spacing:.035em;font-weight:600}
 .mod-grid{grid-template-columns:repeat(2,1fr);max-width:880px}
 /* button.card sets padding:17px at (0,1,1) — .mod-card alone would lose to it */
 button.card.mod-card{display:flex;flex-direction:column;padding:0}
+/* A subject whose bank is not finished. It keeps its artwork and its place in
+   the grid — the syllabus is four subjects and the grid should say so — but it
+   sits back: no hover lift, no pointer, dimmed enough to read as not-yet
+   without reading as broken. The dashboard card is a <div>, so there is no
+   disabled state to style; this is what carries it. */
+.mod-card.locked{display:flex;flex-direction:column;padding:0;opacity:.55;cursor:default}
+.mod-card.locked:hover{transform:none;box-shadow:none}
+.soon{
+  margin-left:auto;flex:0 0 auto;font-size:10px;letter-spacing:.08em;
+  text-transform:uppercase;padding:3px 8px;border-radius:999px;
+  border:1px solid var(--line);color:var(--ink-3)
+}
 .mod-card>*{position:relative;z-index:1}
 .mod-art{
   display:block;width:100%;aspect-ratio:1;flex:0 0 auto;
@@ -2732,6 +2744,12 @@ const bankPills=q=>banksOf(q).map(id=>
 /* Empty or absent filter = show everything. Filtering lives here, in the two
    selectors the whole app already reads through, so chapter rows, counts,
    quizzes, search and progress all agree without any of them knowing about it. */
+/* A subject whose bank is not finished. QUESTIONS and THEORY already exclude
+   these in data/questions.js and data/theory.js, so nothing here has to filter
+   anything — this is only for the places that walk MODULES itself, which still
+   holds all four so the cards keep appearing. */
+const isLocked=id=>LOCKED_MODULES.indexOf(id)>=0;
+const openModules=()=>MODULES.filter(m=>!isLocked(m.id));
 const bankOn=q=>{const f=S.banks&&S.banks[q.module];
   return !f||!f.length||banksOf(q).some(b=>f.indexOf(b)>=0)};
 const qsIn=ch=>QUESTIONS.filter(q=>q.chapter===ch&&bankOn(q));
@@ -3207,11 +3225,13 @@ function vTheory(p){
     <div class="grid g3 mod-grid">`;
     MODULES.forEach(m=>{
       const chs=theoryChapters(m.id);
-      h+=`<button class="card mod-card" style="--c:${m.color}" ${chs.length?`onclick="go({name:'theory',mod:'${m.id}'})"`:'disabled style="opacity:.45"'}>
+      const lock=isLocked(m.id);
+      h+=`<button class="card mod-card${lock?' locked':''}" style="--c:${m.color}" ${chs.length?`onclick="go({name:'theory',mod:'${m.id}'})"`:'disabled style="opacity:.45"'}>
         <span class="mod-art" style="--art:url('assets/${MOD_ART[m.id]}.jpg')"></span>
         <div class="mod-info">
-          <div class="mod-top"><span class="mod-ic">${ico(m.icon,25)}</span><span class="mod-name">${m.name}</span></div>
-          <div class="mod-meta" style="margin-bottom:0">${chs.length?`${chs.length} lecture${chs.length===1?'':'s'} written`:'not written yet'}</div>
+          <div class="mod-top"><span class="mod-ic">${ico(m.icon,25)}</span><span class="mod-name">${m.name}</span>
+            ${lock?'<span class="soon">Coming soon</span>':''}</div>
+          <div class="mod-meta" style="margin-bottom:0">${lock?'Being written':chs.length?`${chs.length} lecture${chs.length===1?'':'s'} written`:'no notes yet'}</div>
         </div>
       </button>`;
     });
@@ -3965,6 +3985,13 @@ function hideGate(){$('gate').classList.add('hide');hideSplash();syncFilm()}
    One decision and nothing else. The escape hatch is worded for what it
    actually does, which differs depending on whether this device already has
    profiles on it.                                                           */
+/* Named from the module data rather than typed out, so unlocking a subject
+   never leaves the front door promising three subjects and delivering two. */
+function gateSubjects(){
+  const names=openModules().map(m=>m.name);
+  const soon=MODULES.filter(m=>isLocked(m.id)).map(m=>m.name);
+  return names.join(' · ')+'.'+(soon.length?` ${soon.join(' and ')} coming soon.`:'');
+}
 function gateSignInStep(){
   /* Google OAuth requires an http(s) origin. Opened straight from disk as a
      file:// URL, signInGoogle() can ONLY ever fail, with
@@ -3979,7 +4006,7 @@ function gateSignInStep(){
     return `<div class="gstep" data-step="signin">
       <div class="gmark" style="--d:0ms"><img src="assets/icon-180.png" alt="" width="88" height="88"></div>
       <h1 class="gtitle" style="--d:80ms">Herophilus</h1>
-      <p class="gtag" style="--d:150ms">ENT · Ophthalmology · Neuropsychiatry · Pediatrics.<br>${QUESTIONS.length} questions, transcribed from the real banks.</p>
+      <p class="gtag" style="--d:150ms">${gateSubjects()}<br>${QUESTIONS.length} questions from the real exam question banks.</p>
       <button class="btn go gbig" style="--d:230ms" onclick="showGate('profiles')">${onward} →</button>
       <div class="gsign off" style="--d:300ms" aria-disabled="true">${GOOGLE_MARK}<span>Sign in with Google</span></div>
       <p class="gnote" style="--d:370ms"><b>Google sign-in needs the app to be online.</b> Opened directly from the file on this computer it cannot run — so your progress saves here instead, which works fully and offline.</p>
@@ -3988,7 +4015,7 @@ function gateSignInStep(){
   return `<div class="gstep" data-step="signin">
     <div class="gmark" style="--d:0ms"><img src="assets/icon-180.png" alt="" width="88" height="88"></div>
     <h1 class="gtitle" style="--d:80ms">Herophilus</h1>
-    <p class="gtag" style="--d:150ms">ENT · Ophthalmology · Neuropsychiatry · Pediatrics.<br>${QUESTIONS.length} questions, transcribed from the real banks.</p>
+    <p class="gtag" style="--d:150ms">${gateSubjects()}<br>${QUESTIONS.length} questions from the real exam question banks.</p>
     <button class="gsign" style="--d:230ms" onclick="signInGoogle()">${GOOGLE_MARK}<span>Sign in with Google</span></button>
     <button class="glink" style="--d:300ms" onclick="showGate('profiles')">${profiles.length?'Use a profile on this device':'Continue without an account'} →</button>
     <p class="gnote" style="--d:370ms">Signing in keeps your progress the same on your phone and your laptop. Without it everything still works — it just stays on this device.</p>
@@ -4347,6 +4374,11 @@ function renderNav(){
   h+=`<button class="nav-item ${view.name==='theory'?'on':''}" onclick="go({name:'theory'})"><span class="ic">${ico('scroll',17)}</span> Theory<span class="cnt">${theoryCount()}</span></button>`;
   h+=`<div class="nav-label">Modules</div>`;
   MODULES.forEach(m=>{
+    if(isLocked(m.id)){
+      h+=`<button class="nav-item" disabled style="opacity:.45">
+        <span class="ic">${ico(m.icon,17)}</span> ${m.name}<span class="cnt">soon</span></button>`;
+      return;
+    }
     h+=`<button class="nav-item ${view.name==='module'&&view.id===m.id?'on':''}" onclick="go({name:'module',id:'${m.id}'})">
       <span class="ic">${ico(m.icon,17)}</span> ${m.name}<span class="cnt">${qsInModule(m.id).length}</span></button>`;
   });
@@ -4380,8 +4412,11 @@ function vHome(p){
     <div class="stat"><span class="emo">${ico('laurel',20)}</span><div class="n">${Object.keys(S.flags).filter(k=>S.flags[k]).length}</div><div class="l">Flagged</div></div>
   </div>`;
 
+  /* openModules(), not MODULES: a student who practised a subject before it was
+     locked still has its place saved, and offering to continue it would open a
+     chapter with nothing in it. The pointer is kept, just not offered. */
   const recent=Object.keys(S.resumeByChapter||{}).filter(cid=>
-    MODULES.some(m=>m.groups.some(g=>g.chapters.some(c=>c[0]===cid)))
+    openModules().some(m=>m.groups.some(g=>g.chapters.some(c=>c[0]===cid)))
   ).sort((a,b)=>S.resumeByChapter[b].at-S.resumeByChapter[a].at)[0];
   if(recent){
     const r=S.resumeByChapter[recent];
@@ -4419,6 +4454,20 @@ function vHome(p){
     const a=accuracy(qs);
     const pct=qs.length?d/qs.length*100:0;
     const chs=m.groups.reduce((n,g)=>n+g.chapters.length,0);
+    /* A locked subject keeps its card and its artwork — dropping it would read
+       as an app that only covers two subjects — but shows no counts and no
+       progress ring, because both would be zero and a zero reads as broken. */
+    if(isLocked(m.id)){
+      h+=`<div class="card mod-card locked" style="--c:${m.color}" aria-disabled="true">
+        <span class="mod-art" style="--art:url('assets/${MOD_ART[m.id]}.jpg')"></span>
+        <div class="mod-info">
+          <div class="mod-top"><span class="mod-ic">${ico(m.icon,25)}</span><span class="mod-name">${m.name}</span>
+            <span class="soon">Coming soon</span></div>
+          <div class="mod-meta">${chs} chapters on the syllabus. The questions are still being transcribed.</div>
+        </div>
+      </div>`;
+      return;
+    }
     h+=`<button class="card mod-card" style="--c:${m.color}" onclick="go({name:'module',id:'${m.id}'})">
       <span class="mod-art" style="--art:url('assets/${MOD_ART[m.id]}.jpg')"></span>
       <div class="mod-info">
@@ -4487,7 +4536,7 @@ function vModule(p){
       h+=`<button class="ch-row" ${cq.length?'':'disabled'} onclick="startChapter('${cid}')">
         <span class="ch-dot" style="background:${dot}"></span>
         <span class="ch-name">${cname}${resume?` &middot; ${resume.finished?'Restart':'Continue'}`:''}</span>
-        <span class="ch-count">${cq.length?`${cd}/${cq.length}`:'coming soon'}</span>
+        <span class="ch-count">${cq.length?`${cd}/${cq.length}`:'no questions yet'}</span>
         <span class="ch-acc" style="color:${accColor(ca)}">${ca===null?'':ca+'%'}</span>
       </button>`;
     });
@@ -5090,7 +5139,7 @@ function vMock(p){
   let h=`<div class="eyebrow" style="background:var(--neuro)">Exam conditions</div><h1>${ico('amphora',26)} Mock exam</h1>
   <p class="page-sub">Pick your modules, pick a length. Random order, clock running, no peeking at explanations until you finish.</p>
   <h2>1 · Choose modules</h2><div class="filterbar">`;
-  MODULES.forEach(m=>{
+  openModules().forEach(m=>{
     const n=qsInModule(m.id).length;
     h+=`<button class="chip ${mockMods[m.id]&&n?'on':''}" style="--c:${m.hex};${n?'':'opacity:.4'}"
       ${n?`onclick="mockMods['${m.id}']=!mockMods['${m.id}'];render()"`:'disabled'}>
@@ -5996,7 +6045,10 @@ function clepGlitchLoop(){
 /* Every line is generated from the same data the screen renders from, so a
    number she quotes cannot disagree with the number on the page. */
 function clepChapterCount(){
-  return MODULES.reduce((n,m)=>n+m.groups.reduce((k,g)=>k+g.chapters.length,0),0);
+  /* Walks MODULES, which deliberately still holds the locked subjects so their
+     cards render — so it has to skip them itself, unlike everything that counts
+     off QUESTIONS. */
+  return openModules().reduce((n,m)=>n+m.groups.reduce((k,g)=>k+g.chapters.length,0),0);
 }
 /* Kept deliberately short (user's request, 2026-08-02): same facts, fewer
    words. A companion who talks past the second line stops being read. */

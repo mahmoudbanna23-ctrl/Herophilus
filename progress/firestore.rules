@@ -1,0 +1,60 @@
+rules_version = '2';
+
+// ============================================================================
+// Herophilus — Firestore security rules
+//
+// What the app actually does today (verified in app/index.html, 2026-09-06,
+// after the per-profile sync change landed):
+//
+//   - One Google account can hold SEVERAL profiles, Netflix-style, each with
+//     its own saved progress. So the app now uses two kinds of document.
+//
+//   - users/{the person's own Google account id}
+//     The roster. Holds only the list of profiles on the account — for each
+//     one an id, a display name, and an avatar. No quiz answers live here.
+//
+//   - users/{the person's own Google account id}/profiles/{the profile's id}
+//     One document per profile, holding that profile's progress as text plus
+//     a timestamp. This is where the actual answers are.
+//
+//   - The account document's own name (its id) IS the person's Google account
+//     id (fbUser.uid). Nothing inside the document repeats that id — the
+//     checks below compare the document's name to the signed-in account.
+//
+// Result: each person can touch their own roster and their own profiles, and
+// nothing else. Two people sharing a laptop under one Google account share
+// that account's profiles, which is the intended behaviour.
+// ============================================================================
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ALLOW: a signed-in person may read and write ONLY the one roster
+    // document whose name matches their own Google account id. Nobody who is
+    // not signed in gets anything, and a signed-in person cannot read or write
+    // any other person's document — the {uid} in the path must equal the
+    // account making the request.
+    match /users/{uid} {
+      allow read, write: if request.auth != null
+                          && request.auth.uid == uid;
+    }
+
+    // ALLOW: the same person's individual profile documents, which sit inside
+    // their roster document. This block is REQUIRED and is not implied by the
+    // one above — a rule on users/{uid} covers that document alone and does
+    // not reach anything stored underneath it. Without this block every
+    // profile's progress would be refused and nothing would sync.
+    match /users/{uid}/profiles/{profileId} {
+      allow read, write: if request.auth != null
+                          && request.auth.uid == uid;
+    }
+
+    // DENY EVERYTHING ELSE: any path not explicitly allowed above is
+    // refused, for both reading and writing, with no exceptions. This is
+    // the default-deny backstop — a new part of the app that reaches for
+    // an unlisted path gets refused instead of silently exposed.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

@@ -42,7 +42,13 @@ function qHash(s){
   h ^= h>>>13; h = Math.imul(h, 0xc2b2ae35);
   h ^= h>>>16; return h>>>0;
 }
+/* One filter, here, rather than fifteen at the call sites. Everything that
+   shows a question to a student reads QUESTIONS — search, the review deck, the
+   flagged list, the mock pool, every count — so holding a locked subject out
+   here is what makes the lock hold on every route instead of only the front
+   door, and keeps holding when something new starts reading this array. */
 const QUESTIONS = Q_ALL
+  .filter(q => LOCKED_MODULES.indexOf(q.module) < 0)
   .map(q => ({q, k: qHash(q.id)}))
   .sort((a,b) => a.k - b.k || (a.q.id < b.q.id ? -1 : 1))
   .map(x => x.q);

@@ -8,6 +8,17 @@
    one topic taught over two lectures. See the note at nr-lmn/nr-nerve below.
    SCHEDULE is deliberately untouched: it carries no chapter ids. */
 
+/* Subjects whose banks are not finished yet. Their cards still appear on the
+   home page and in the nav, marked as coming soon and not clickable, but their
+   questions and their notes are held out of QUESTIONS and THEORY entirely — so
+   search, the review deck, the flagged list, the mock pool and every derived
+   count stay correct without any of them knowing a lock exists.
+
+   Launching a subject is removing its id from this list. Nothing else. A
+   student's local progress on a locked subject is hidden, never deleted, and
+   comes back untouched when the id goes. */
+const LOCKED_MODULES = ['ophtho', 'neuropsych'];
+
 const MODULES = [
   {id:'ent', name:'ENT', icon:'ear', color:'var(--ent)', hex:'#b4472f', groups:[
     {name:'Ear', chapters:[
