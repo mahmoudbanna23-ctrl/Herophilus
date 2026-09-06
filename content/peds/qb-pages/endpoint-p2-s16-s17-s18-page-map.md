@@ -77,3 +77,59 @@ Sections 16 and 17 contribute **26 answered pages** (18 + 8) with no twins, and 
 contributes **none**. A coverage test that expects every `answered` page in pp.1950–1992 to be cited
 will report p.1977 and p.1984 as gaps. They are not gaps — they are this file's finding, and the
 test should exclude section 18 by range with a pointer here.
+
+---
+
+## Added 2026-09-06, after staging — what the page furniture says
+
+⚠️ **A second file, `endpoint-p2-s16-s17-page-map.md`, was written later the same day by someone who
+had not found this one, and it was DELETED once the duplication was seen.** Everything below is the
+part of it that this file did not already say. Two claims it made are not carried across, because
+both were wrong: that section 17 "was never in the plan" (it is configured in `merge-parts-ep2.js`,
+`val-pd-ep2.js` and `splice-pd-ep2.js`, with prefixes `pedep2-rm-`/`pedep2-ra-` and the counts 18 and
+8), and that nobody had ever looked at pp.1977/1984 (this file records that reading). **Read the
+harness configs and this file before writing a third one.**
+
+### Section 16 prints each question's ORIGINAL number, and they are scattered
+
+The printed number at the head of each page, in page order — confirmed on every page by the staging
+pass, which matched all eighteen:
+
+```
+p1923=14  p1924=15  p1925=36  p1926=49  p1927=50  p1928=62  p1929=42  p1930=35  p1931=59
+p1932=71  p1933=3   p1934=41  p1935=16  p1936=36  p1937=70  p1938=25  p1939=55  p1940=21
+```
+
+Not a sequence, not sorted, and **36 appears twice** (p.1925 and p.1936). That is what "recently
+modified" means: each page reprints a question **under the number it carries in its home section**.
+So `pr` here is a back-reference to somewhere else in the book, not a position in this section, and
+`n` is the only sequential index. Section 17's pages print **no number at all**, which fits "recently
+added" — `pr` is empty on all eight, confirmed page by page.
+
+⚠️ **That makes section 16 a reprint problem before it is anything else.** Measured after staging:
+**17 of its 18 are reprints of live entries** — eleven byte-identical in stem, options and key, and
+six modified. Only n11 (p.1933, printed 3) has no live counterpart in either part. Section 17 is the
+opposite, as its name implies: **six of its eight are new**, and only n6 and n7 restate live
+questions.
+
+### One figure reference, and where the figure is
+
+p.1923 (n1, printed 14) reads *"other members of their family have been tested (see opposite
+figure)"*. "Opposite" belongs to the layout of the book this question was lifted from; p.1922 is the
+section divider. **The staging pass looked: the pedigree is printed on p.1923 itself**, top right, and
+is carried on the entry. p.1925 also prints a Jones-criteria infographic the stem does not reference.
+
+### The tail, confirmed on the page
+
+Four pages opened directly (p.1993 on hires as well), plus p.1992 to explain p.1993:
+
+- **p.1950** — a title/divider slide, "Exam Night Review", with a "YOU CAN DO IT" ribbon graphic.
+  Not a question and not a teaching-point list; it is the divider that opens section 18.
+- **p.1977** and **p.1984** — exactly the shape this file describes above, confirmed independently.
+- **p.1993** — a blank white page, on both resolutions. No text, no graphic.
+- **p.1992** — the book's closing slide: a full-page sunset photograph with a yellow Arabic closing
+  supplication over it, the same shape as part 1's p.244.
+
+**So the book's content ends cleanly on p.1992 and p.1993 is a trailing blank**, not a page of
+content cut off mid-thought — which is the thing worth knowing, because a truncated last page would
+mean questions lost rather than a book that finished.
