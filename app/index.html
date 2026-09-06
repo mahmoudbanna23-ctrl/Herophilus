@@ -5013,7 +5013,10 @@ function vQuiz(p){
       ${ico('scroll',16)} <span>Read the notes on this &mdash; <b>${esc(th.h)}</b></span>
       <span style="margin-left:auto">&rarr;</span></button>`;
 
-    const note=(S.notes||{})[q.id];
+    /* An emptied note is kept as a stamped blank so it can win a merge (see
+       saveNote), which means a record with no text is not a note. */
+    const noteRec=(S.notes||{})[q.id];
+    const note=(noteRec&&noteRec.txt)?noteRec:null;
     const reported=!!(S.reports||{})[q.id];
     h+=`<div class="qfoot">
       <button class="lnk ${note?'has':''}" onclick="toggleNote('${q.id}')">${note?'Your note':'Write a note on this'}</button>
@@ -5242,9 +5245,30 @@ document.addEventListener('visibilitychange',()=>{
 /* ============ A NOTE ON A QUESTION, AND A WAY TO SAY IT IS WRONG ============ */
 
 /* The note saves as it is typed and never re-renders, because a render would
-   take the cursor out of the box mid-sentence. Emptying the box deletes the
-   note rather than storing a blank one. */
-let NOTE_T=null;
+   take the cursor out of the box mid-sentence.
+
+   Emptying the box stores a blank note rather than deleting the key. Deleting
+   it looks tidier and loses the student's work: mergeStates treats an absent
+   key as "this device has nothing to say" and takes the other side's copy, so
+   a note cleared on the laptop came back from the phone's older copy on the
+   next sync, box open, reading "Saved 4 min ago". A blank note carries a
+   timestamp, so it wins the merge the way any other edit does. Everything
+   downstream reads a note with no text as no note. */
+let NOTE_T=null, NOTE_DIRTY=false;
+/* Only the write to disk is debounced; the state is updated on the keystroke.
+   Debouncing the state too meant a render inside the window — a confidence
+   button, Next, anything — rebuilt the textarea from state that had not caught
+   up yet and blanked the box under the student's hands. */
+function flushNote(){
+  if(!NOTE_DIRTY)return;
+  clearTimeout(NOTE_T); NOTE_T=null; NOTE_DIRTY=false;
+  save();
+}
+/* A tab being hidden is the last event a phone reliably delivers before the
+   browser is killed, so the pending write goes out here. pagehide covers the
+   desktop close; both are cheap and idempotent. */
+document.addEventListener('visibilitychange',()=>{ if(document.hidden)flushNote() });
+window.addEventListener('pagehide',flushNote);
 function toggleNote(qid){
   Q.noteOpen=(Q.noteOpen===qid)?null:qid;
   render();
@@ -5252,12 +5276,13 @@ function toggleNote(qid){
 }
 function saveNote(qid,txt){
   clearTimeout(NOTE_T);
+  if(!S.notes)S.notes={};
+  const t=(txt||'').trim();
+  S.notes[qid]={txt:t,at:Date.now()};
+  NOTE_DIRTY=true;
   const say=$('qNoteSay'); if(say)say.textContent='Saving…';
   NOTE_T=setTimeout(()=>{
-    if(!S.notes)S.notes={};
-    const t=(txt||'').trim();
-    if(t)S.notes[qid]={txt:t,at:Date.now()};
-    else delete S.notes[qid];
+    NOTE_T=null; NOTE_DIRTY=false;
     save();
     const s2=$('qNoteSay'); if(s2)s2.textContent=t?'Saved just now':'';
   },500);
@@ -5318,15 +5343,23 @@ function copyReport(qid){
   const r=reportText(qid);
   const line=qid+' — '+r.label+(r.txt?': '+r.txt:'');
   const done=()=>toast('Copied — paste it wherever you like');
-  if(navigator.clipboard&&navigator.clipboard.writeText){
-    navigator.clipboard.writeText(line).then(done,()=>toast('Could not copy on this browser'));
-  }else{
+  /* The old path is the fallback for a REJECTION as well as for an absent API.
+     navigator.clipboard exists over file:// and on any page the browser does
+     not consider secure, and then writeText rejects — so the branch that has
+     the API is exactly the branch most likely to fail, and it was the one with
+     no second try. */
+  const legacy=()=>{
     const t=document.createElement('textarea');
     t.value=line; t.style.position='fixed'; t.style.opacity='0';
     document.body.appendChild(t); t.select();
-    try{document.execCommand('copy');done()}catch(e){toast('Could not copy on this browser')}
+    let ok=false;
+    try{ok=document.execCommand('copy')}catch(e){}
     document.body.removeChild(t);
-  }
+    ok?done():toast('Could not copy on this browser');
+  };
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(line).then(done,legacy);
+  }else legacy();
 }
 
 function toggleFlag(id){S.flags[id]=!S.flags[id];save();render();toast(S.flags[id]?'Flagged':'Flag removed')}
@@ -5518,17 +5551,38 @@ function markbar(qid){
 const WEAK_MIN=5;
 
 function weakChapters(){
+  /* One pass over QUESTIONS, bucketed by chapter — not qsIn() per chapter,
+     which is a full scan of the array each time. At 153 chapters that was 153
+     passes over four thousand questions, and renderNav calls this on every
+     render: every answer, every Next, every flag, every confidence tap. It
+     measured 7.7 ms a call on this desktop and a phone is several times that,
+     which is a stutter on the hottest path in the app rather than a fault
+     anybody would report. The bucketing runs once at 4,049 iterations. */
+  const by={};
+  for(let i=0;i<QUESTIONS.length;i++){
+    const q=QUESTIONS[i];
+    if(!bankOn(q))continue;
+    (by[q.chapter]||(by[q.chapter]=[])).push(q);
+  }
   const out=[];
   openModules().forEach(m=>{
     m.groups.forEach(g=>{
       g.chapters.forEach(([cid,cname])=>{
-        const cq=qsIn(cid);
-        if(!cq.length)return;
-        const done=cq.filter(q=>isAnswered(q.id));
-        if(!done.length)return;
-        const wrong=done.filter(q=>!isCorrect(q.id));
-        out.push({cid:cid,name:cname,mod:m,total:cq.length,done:done.length,
-                  wrong:wrong.map(q=>q.id),acc:accuracy(cq)});
+        const cq=by[cid];
+        if(!cq||!cq.length)return;
+        /* One walk of the chapter, not three filters and then accuracy() over
+           the same array again. The accuracy is the same number accuracy(cq)
+           returns — answered questions only — computed from the counts this
+           walk already has. */
+        let done=0; const wrong=[];
+        for(let j=0;j<cq.length;j++){
+          const a=S.answers[cq[j].id];
+          if(a===undefined)continue;
+          done++; if(!a.ok)wrong.push(cq[j].id);
+        }
+        if(!done)return;
+        out.push({cid:cid,name:cname,mod:m,total:cq.length,done:done,
+                  wrong:wrong,acc:Math.round((done-wrong.length)/done*100)});
       });
     });
   });
@@ -5721,9 +5775,9 @@ function sessRing(frac,color){
 }
 /* The tick repaints these four nodes and nothing else. A full render() every
    second would rebuild the page under the reader's cursor once a second. */
-/* The rail clock is drawn by renderNav(), which runs only on navigation — so
-   for a whole year it showed whatever the time was when the page last
-   rendered, and looked "frozen" everywhere except the session view (where
+/* The rail clock is drawn by renderNav(), which runs only when something calls
+   render() — so for a whole year it showed whatever the time was at the last
+   render, and looked "frozen" everywhere except the session view (where
    answering a question forces a render and hides the fault). It is repainted
    from the tick here instead, on every view. */
 function paintNavClock(){
