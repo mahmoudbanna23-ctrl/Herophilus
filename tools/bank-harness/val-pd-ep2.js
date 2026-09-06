@@ -227,10 +227,20 @@ const SEC = {
   // ⚠️ SECTIONS 16 AND 17 PRINT THE ANSWERED PAGE ONLY -- there is no unanswered twin, verified
   // by eye on p.1923 and p.1949. So every `answered` page here is one real question and `ans` is
   // right for once. Do not read the missing twin as a defect in the index.
+  // ⚠️ SECTION 16 DRAFTS NOTHING. All 18 staged questions are reprints of live entries, cited by
+  // reprint-s16-s17-pd-ep2.js, so `folded` is the whole section and the draft file is a legitimately
+  // empty array. It is the only section in this stream that stages 18 and adds 0, which is exactly
+  // what a section named "Recently modified Questions" should do. n11 belongs in that list only
+  // because it was run down by hand after the sweep returned nothing for it -- verdicts and the
+  // method are in endpoint-p2-s16-s17-fold-adjudication.md.
   16: { prefix: 'pedep2-rm-', file: 'endpoint-p2-s16-recent-mod.array.js', svar: 'PEDEP2_S16_STAGED',
-        draft: 'endpoint-p2-s16-recent-mod.draft', chapter: '(mixed)', pages: [1922, 1940], ans: 18 },
+        draft: 'endpoint-p2-s16-recent-mod.draft', chapter: '(mixed)', pages: [1922, 1940], ans: 18,
+        folded: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18] },
+  // Section 17's `folded` is its two reprints, n6 -> pedep2-mf1-4 and n7 -> pedep2-mf1-15. The other
+  // six are new and are drafted; none of the eight pages prints an explanation box.
   17: { prefix: 'pedep2-ra-', file: 'endpoint-p2-s17-recent-add.array.js', svar: 'PEDEP2_S17_STAGED',
-        draft: 'endpoint-p2-s17-recent-add.draft', chapter: '(mixed)', pages: [1941, 1949], ans: 8 },
+        draft: 'endpoint-p2-s17-recent-add.draft', chapter: '(mixed)', pages: [1941, 1949], ans: 8,
+        folded: [6, 7] },
 
   // SECTION 18, Exam Night Review, pp.1950-1992, HAS NO ENTRY AND MUST NOT GET ONE. It is 43
   // pages of prose revision cards -- 41 classify as notes, and the 2 that classify as `answered`

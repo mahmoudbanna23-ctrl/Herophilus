@@ -214,10 +214,18 @@ const SEC = {
   // Sections 16 and 17 print the answered page only -- no unanswered twin, verified on p.1923
   // and p.1949. Section 18 (Exam Night Review) has no entry and must not get one: it is prose
   // revision cards, no questions at all. See the section map.
+  // ⚠️ SECTION 16 DRAFTS NOTHING. All 18 staged questions are reprints of live entries, cited by
+  // reprint-s16-s17-pd-ep2.js, so `folded` is the whole section and the draft file is a legitimately
+  // empty array. It is the only section in this stream that stages 18 and adds 0, which is exactly
+  // what a section named "Recently modified Questions" should do. n11 belongs in that list only
+  // because it was run down by hand after the sweep returned nothing for it -- verdicts and the
+  // method are in endpoint-p2-s16-s17-fold-adjudication.md.
   16: { prefix: 'pedep2-rm-', staging: 'endpoint-p2-s16-recent-mod.array.js', svar: 'PEDEP2_S16_STAGED',
-        draft: 'endpoint-p2-s16-recent-mod.draft' },
+        draft: 'endpoint-p2-s16-recent-mod.draft', folded: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18] },
+  // Section 17's `folded` is its two reprints, n6 -> pedep2-mf1-4 and n7 -> pedep2-mf1-15. The other
+  // six are new and are drafted; none of the eight pages prints an explanation box.
   17: { prefix: 'pedep2-ra-', staging: 'endpoint-p2-s17-recent-add.array.js', svar: 'PEDEP2_S17_STAGED',
-        draft: 'endpoint-p2-s17-recent-add.draft' },
+        draft: 'endpoint-p2-s17-recent-add.draft', folded: [6, 7] },
 };
 
 const HEADER = `/* Pediatrics ENDPOINT PART 2 questions (Pediatrics endpoint part2.pdf).
