@@ -2073,3 +2073,65 @@ page only with no unanswered twin. **Section 18, Exam Night Review, pp.1950–19
 
 ⚠️ **Owed:** part 1's closing test was page coverage. A re-run must read both endpoint files as ONE
 bank, or it reports **p.1129** as a false gap — that page is cited from `pedep2-mf1-25`.
+
+---
+
+## Section 14 staged, adjudicated, and then re-adjudicated — where it actually stands
+
+Section 14 is staged: `content\peds\qb-pages\endpoint-p2-s14-mfe3.array.js`, 80 rows, 0 holes,
+`PEDEP2_S14_STAGED`. Measured off the array by index walk: `p = 1595 + 2n` with every step exactly
++2 and no anomaly; `pr === n` on all 80; **zero `box`, zero `straddle`, zero `fig` rows**; every row
+carries a distinct `note`; **zero boxless rows — all 80 print an explanation box**; option counts
+`{4: 9, 5: 71}`; zero keys out of range.
+
+The three fold adjudications ruled 49 reprints and 31 to draft. **That split is wrong, and the
+correction is measured, verified on the page images, and written up in
+`content\peds\qb-pages\endpoint-p2-s14-late-reprint-rulings.md`.** Four more rows are reprints —
+**n19, n23, n25 and n51** — so the true split is **53 reprints / 27 drafted**. Read that file before
+touching anything in section 14; it carries the four rulings with their divergences, the audit of the
+four "none" verdicts that do hold, the 27 survivors, and their chapter rulings.
+
+### ⚠️ The methodological finding, which outlives this section
+
+**A candidate list's silence is not a verdict.** All four misses have one cause: the candidate
+generator produced nothing for that `n`, and the adjudicating quarter recorded the silence as a pass.
+Adjudication B states it outright for n51 — "carried no candidate at all, per brief". **A fold-
+adjudication brief must demand a verdict for every `n` in range and must never let a quarter fall
+silent for want of a candidate.**
+
+**Stem-overlap ranking is blind to a bare-stem reprint** — a one-sentence stem scores low against its
+own twin. n51 scores 0.600 against a twin with the same five options, the same order and the same
+key. The complementary instrument is option-pool overlap plus key-text identity, ignoring the stem
+entirely. Both were run over all 31 against all 1,292 live endpoint entries in both files.
+
+This is the **third** proof in this stream that the candidate lists have a real gap — after the
+`pedep2-gen-24`/`car-25` fold and then n51. ⚠️ **The end-of-stream sweep must re-run the within-bank
+comparison across the whole of `questions.peds.ep2.js` and across chapter boundaries, and must not
+rely on any candidate list.**
+
+### The revision chain section 14 now owes, before any drafting begins
+
+Nothing below has been done yet. It is the same chain the single n33 ruling forced, now for four rows:
+
+1. `tools\bank-harness\reprint-s14-pd-ep2.js` — **the tails live inline in its `PLAN` array; there is
+   no `tails14.json`** (an earlier note of mine said there was, and was wrong). Add four PLAN rows
+   with the divergences from the rulings file, move `EXPECTED` 49 → 53, and move the ep2 mark's
+   `expect` 47 → 51 in `MARKS`. **n51 also needs a `KEYTEXT_OK` entry** — its key text moves from
+   "Spinal muscle atrophy" to "Spinal muscular atrophy" — or the pass will stop on it, correctly.
+2. Dry-run it, then `--write`.
+3. `tools\bank-harness\splice-pd-ep2.js` — section 14's `reprints` array 49 → 53 entries, and
+   `reprintMarks` from 49/2 to 53/2.
+4. Regenerate `content\peds\qb-pages\endpoint-p2-s14-reprint-map.md` (the generator computes its
+   statistics and headings; do not hand-edit the numbers).
+5. Commit, with an explicit pathspec.
+
+Then, in order: `endpoint-p2-s14-chapter-rulings.md` → `endpoint-p2-s14-drafting-notes.md` (copy the
+structure of `endpoint-p2-s13-drafting-notes.md`) → drafting halves for the **27** → `val-pd-ep2.js`
+→ the cross-half comparison → `splice-pd-ep2.js 14 --write` → `boot-check.js` → commit → journal.
+
+⚠️ **Carry into every drafting-half prompt:** options are named to the reader **by letter (0→A … 4→E)
+or better by their text, never by index**; cite theory anchors; a gap in the material is answered and
+tagged, never declared; **all 27 print a box**, so the boxed shape and its contract marker apply
+throughout; the section has no figure, no box row and no straddle, so an `image` field is a hard
+failure. The gate for a staging part is `check-part-ep.js` — **`check-part-ep2.js` does not exist**,
+and four section-13 quarter prompts named it wrongly.
