@@ -342,6 +342,20 @@ input{font-family:inherit;font-size:inherit}
   }
 }
 
+/* The saving warning is inserted as a sibling of .page rather than inside it,
+   because the page is rebuilt on every answer and the notice must outlive that.
+   Living outside the column, it has to restate the column's own width or it
+   would run edge to edge while everything below it stays inset: 1124px is the
+   page's 1180px capped column less its 28px of padding on either side, so the
+   notice lines up with the heading underneath it rather than overhanging it. */
+#saveWarning{
+  max-width:1124px;width:calc(100% - 56px);margin:22px auto -6px;padding:16px 18px;
+  border:1px solid var(--bad);border-radius:var(--r-3);background:var(--bad-bg);
+  display:flex;align-items:center;gap:16px;flex-wrap:wrap;
+}
+#saveWarning p{margin:0;flex:1;min-width:260px;font-size:14px;line-height:1.55;color:var(--tx)}
+#saveWarning strong{color:var(--bad)}
+#saveWarning .btn{flex:none}
 .page{padding:28px;max-width:1180px;width:100%;margin:0 auto;flex:1}
 /* The dashboard is narrower than every other view, and deliberately so. Module
    cards are capped at two per row so the artwork is worth showing, which puts
@@ -352,6 +366,9 @@ input{font-family:inherit;font-size:inherit}
    reader, the quiz and the theory pages keep the wider measure they were set
    in. Scoped to screen so the print block's max-width still wins on paper. */
 @media screen{body[data-view="home"] .page{max-width:936px}}
+/* The dashboard narrows, so the notice above it narrows by the same amount,
+   or it would hang past both edges of the only content on that screen. */
+@media screen{body[data-view="home"] #saveWarning{max-width:880px}}
 
 /* ---------- Type ---------- */
 /* Display type is carved, not set: Roman capitals, letter-spaced OUT rather than
@@ -1759,6 +1776,7 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
   .rail.open{left:0}
   .mobile-only{display:block}
   .page{padding:18px 14px}
+  #saveWarning{width:calc(100% - 28px)}   /* the page's gutter halves here; the notice follows it */
   .qcard{padding:20px 17px}
   .topbar{padding:10px 14px}
   h1{font-size:25px}
