@@ -914,7 +914,8 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
 .gate .gfoot{margin-top:34px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
 .gate .goffline{margin:20px auto 0;max-width:460px;text-align:center;font-size:12.5px;line-height:1.6;color:var(--ink-4)}
 
-.emgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(46px,1fr));gap:8px;margin-bottom:16px;max-height:180px;overflow-y:auto}
+.emgrid{display:grid;grid-template-columns:repeat(8,1fr);gap:8px;margin-bottom:16px}
+@media(max-width:420px){.emgrid{grid-template-columns:repeat(4,1fr)}}
 .emb{
   aspect-ratio:1;border-radius:var(--r-3);border:2.5px solid var(--line-2);background:var(--card);
   font-size:22px;display:flex;align-items:center;justify-content:center;
@@ -933,6 +934,14 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
   box-shadow:0 10px 24px rgba(0,0,0,.2);
 }
 .avprev img{width:100%;height:100%;object-fit:cover}
+/* An emblem is drawn at whatever size its box is, so one rule covers a 96px
+   gate card, an 88px editor preview, a 46px picker tile and a 32px rail chip.
+   58% leaves the emblem the same optical weight as the emoji it replaced. */
+.pav,.avprev,.rav{color:#fff}
+.emb{color:var(--tx)}
+.emb.on{color:#fff}
+.pav .gi,.avprev .gi,.rav .gi{width:58%;height:58%;stroke-width:1.4}
+.emb .gi{width:56%;height:56%;stroke-width:1.5}
 .pinbox{
   display:flex;gap:9px;justify-content:center;margin:14px 0;
 }
@@ -2983,7 +2992,37 @@ const ICONS={
      from `hourglass`, which the review deck already owns. */
   clepsydra:'M4.6 3.6h11l-1.9 6.4H6.5z@M10.1 10v2.3@M10.1 14.3m-1 0a1 1 0 1 0 2 0a1 1 0 1 0-2 0@M6.4 15.6h7.4v5h-7.4z@M6.4 18.4h7.4@M15.2 16.6h1.9M15.2 19.2h1.9',
   /* backup: a shield taking the blow, with the tick that says it held */
-  shield:'M12 3.2l7 2.8v5.4c0 4.1-2.8 7.4-7 8.8-4.2-1.4-7-4.7-7-8.8V6z@M9 12.1l2.1 2.1 4-4.1'
+  shield:'M12 3.2l7 2.8v5.4c0 4.1-2.8 7.4-7 8.8-4.2-1.4-7-4.7-7-8.8V6z@M9 12.1l2.1 2.1 4-4.1',
+
+  /* The last four are the profile emblems and nothing else uses them. They are
+     drawn to the same 24-unit grammar as the rest so a profile picture sits in
+     the interface rather than on top of it. Two of the first drafts were thrown
+     away: a Corinthian helmet read as a hood at 22px in both a front and a side
+     view, and every dolphin read as a fish. A column and a theatre mask carry
+     the same Greece and survive the size, which is the only test that counts
+     here — these are shown at 32px in the rail far more often than at 96px. */
+  owl:'M6 8.6V4.2l3.6 2.6@M18 8.6V4.2l-3.6 2.6'
+    +'@M12 6.4c-3.9 0-6 2.8-6 6.5C6 17.1 8.7 21 12 21s6-3.9 6-8.1c0-3.7-2.1-6.5-6-6.5z'
+    +'@M9.6 11.6m-1.7 0a1.7 1.7 0 1 0 3.4 0a1.7 1.7 0 1 0-3.4 0'
+    +'@M14.4 11.6m-1.7 0a1.7 1.7 0 1 0 3.4 0a1.7 1.7 0 1 0-3.4 0'
+    +'@M12 13.6l-1.1 1.6h2.2z',
+  /* The arms scroll OUTWARD at the top and the strings are few. Three earlier
+     drafts failed the only test that matters: a lyre whose arms bow inward
+     reads as a purse, and one with the strings filled in reads as a basket or
+     a barrel. The open top is what says instrument at 35px. */
+  lyre:'M8.2 19h7.6'
+     +'@M8.6 19V9.4c0-2.6-1-4-2.8-4.2-1.4-.1-2.2 1-1.8 2.6'
+     +'@M15.4 19V9.4c0-2.6 1-4 2.8-4.2 1.4-.1 2.2 1 1.8 2.6'
+     +'@M8.6 8.4h6.8'
+     +'@M10.9 8.8V19M13.1 8.8V19',
+  column:'M4.4 21h15.2@M6.4 21v-1.8h11.2V21'
+       +'@M7.8 19.2V8.8M10.6 19.2V8.8M13.4 19.2V8.8M16.2 19.2V8.8'
+       +'@M6.6 8.8c.7-1.3 1.2-2.3 1.2-3.4h8.4c0 1.1.5 2.1 1.2 3.4z'
+       +'@M4.8 5.4h14.4V3.2H4.8z',
+  mask:'M5.4 5.4h13.2c0 6.8-1.2 10.6-3 12.8-1.5 1.9-3 2.6-3.6 2.6s-2.1-.7-3.6-2.6C6.6 16 5.4 12.2 5.4 5.4z'
+     +'@M8.2 10c.7-1.2 2.4-1.2 3.1 0-.7 1.2-2.4 1.2-3.1 0z'
+     +'@M12.7 10c.7-1.2 2.4-1.2 3.1 0-.7 1.2-2.4 1.2-3.1 0z'
+     +'@M9.8 15.2c1.4.9 3 .9 4.4 0'
 };
 /* `@` splits one icon into several subpaths — it keeps the map readable and
    avoids repeating the <path> wrapper for every circle. */
@@ -3793,7 +3832,11 @@ async function afterSignIn(u){
       showGate('profiles');
       if(!profiles.length){
         draft={id:'g:'+u.uid,name:(u.displayName||'Me').split(' ')[0],
-               av:u.photoURL?{t:'p',v:u.photoURL,c:'#6d4c7d'}:{t:'e',v:'\uD83E\uDE7A',c:'#6d4c7d'},pin:''};
+               /* No Google picture, so the account is given an emblem rather than
+                  one house default: avKey hashes whatever it is handed, so two
+                  colleagues signing in on the same laptop do not appear as twins. */
+               av:u.photoURL?{t:'p',v:u.photoURL,c:'#6d4c7d'}
+                            :{t:'g',v:avKey({v:u.uid||u.email||''}),c:'#6d4c7d'},pin:''};
         drawProfileEditor(false);
       }
     }
@@ -4055,9 +4098,34 @@ function clearCfg(){
 /* ============ PROFILES ============ */
 const PKEY='wardround.profiles', LASTKEY='wardround.lastprofile';
 let profiles=[], me=null, profileLoad=0;
-const AVATARS=['\uD83E\uDE7A','\uD83E\uDDE0','\uD83D\uDC68\u200D\u2695\uFE0F','\uD83D\uDC69\u200D\u2695\uFE0F','\uD83E\uDDB4','\uD83D\uDC8A','\uD83D\uDD2C','\uD83E\uDEC0','\uD83E\uDEC1','\uD83D\uDC41\uFE0F',
-  '\uD83D\uDC3B','\uD83E\uDD8A','\uD83D\uDC3C','\uD83E\uDD89','\uD83D\uDC27','\uD83E\uDD81','\uD83D\uDC2F','\uD83D\uDC38',
-  '\u26A1','\uD83C\uDF1F','\uD83D\uDD25','\uD83C\uDFAF','\uD83D\uDE80','\uD83C\uDF08'];
+/* THE EIGHT EMBLEMS. This used to be twenty-four emoji, and emoji were the
+   single loudest thing in the interface saying a machine assembled it: they
+   arrive from the operating system, so they carry another vendor's drawing
+   style, another palette and another line weight into a page that has its own.
+   These are the app's own icons, drawn in the same grammar as every other
+   glyph here, so a profile picture belongs to the design instead of sitting
+   on top of it.
+
+   Eight, not twenty-four, because a wall of choices is not generosity: it is
+   a picker to get through. Eight fits one row of the grid at every width. */
+const AVATARS=['asclepius','amphora','olive','lamp','owl','lyre','column','mask'];
+const AVSET=new Set(AVATARS);
+
+/* Every profile saved before the emblems existed holds an emoji in av.v, and
+   those profiles are not rewritten — a stored record is not touched to suit a
+   redesign, and a photo profile must keep its photo. So the emoji is resolved
+   to an emblem at DRAWING time, by hashing the character. Deterministic, so a
+   profile wears the same emblem on every device and every reload rather than
+   changing face when the list is reordered; and the moment that profile is
+   next saved from the editor it writes a real emblem key and stops hashing. */
+function avKey(av){
+  if(!av)return AVATARS[0];
+  if(av.t==='g'&&AVSET.has(av.v))return av.v;
+  const s=String(av.v||'');
+  if(!s)return AVATARS[0];
+  let h=0;for(let i=0;i<s.length;i++)h=(Math.imul(h,31)+s.charCodeAt(i))>>>0;
+  return AVATARS[h%AVATARS.length];
+}
 const AVCOLS=['#b4472f','#5c7a52','#6d4c7d','#2e5f8a','#9a6b1f','#8f3f5c','#3f7d7a','#7a6a55'];
 
 function stateKey(id){return 'wardround.v3.'+id}
@@ -4071,15 +4139,19 @@ function bootstrapProfiles(){
   let old=null;
   try{old=localStorage.getItem('wardround.v2')}catch(e){}
   if(old){
-    const p={id:'p'+Date.now(),name:'Me',av:{t:'e',v:'\uD83E\uDE7A',c:'#6d4c7d'},pin:''};
+    const p={id:'p'+Date.now(),name:'Me',av:{t:'g',v:AVATARS[0],c:'#6d4c7d'},pin:''};
     profiles.push(p);saveProfiles();
     try{localStorage.setItem(stateKey(p.id),old)}catch(e){}
   }
 }
+/* One place draws an avatar, and every surface that shows one goes through it:
+   the gate cards, the editor's preview, the rail. ico() emits no size of its
+   own worth trusting here — the container is 96px on a gate card and 32px in
+   the rail — so the emblem is sized in CSS as a share of whatever holds it. */
 function avHTML(av,cls){
-  av=av||{t:'e',v:'\uD83E\uDE7A',c:'#6d4c7d'};
+  av=av||{t:'g',v:AVATARS[0],c:'#6d4c7d'};
   if(av.t==='p')return `<div class="${cls}" style="background:${av.c}"><img src="${av.v}" alt=""></div>`;
-  return `<div class="${cls}" style="background:${av.c}">${av.v}</div>`;
+  return `<div class="${cls}" style="background:${av.c}">${ico(avKey(av))}</div>`;
 }
 
 /* ---- gate ----
@@ -4187,8 +4259,12 @@ function gateProfileStep(){
   h+=`<h2 style="${step()}">${profiles.length?"Who's studying?":'Create your profile'}</h2>
     <div class="pgrid">`;
   profiles.forEach(p=>{
-    const av=p.av||{t:'e',v:'🩺',c:'#6d4c7d'};
-    const inner=av.t==='p'?`<img src="${av.v}" alt="" referrerpolicy="no-referrer">`:av.v;
+    /* The card cannot call avHTML: it hangs a PIN dot and a Google badge inside
+       the same box. So it builds its own wrapper and borrows the resolver, which
+       is the part that must not drift — a profile showing one emblem here and a
+       different one in the rail is the bug this line exists to prevent. */
+    const av=p.av||{t:'g',v:AVATARS[0],c:'#6d4c7d'};
+    const inner=av.t==='p'?`<img src="${av.v}" alt="" referrerpolicy="no-referrer">`:ico(avKey(av));
     h+=`<button class="pcard" style="${step()}" onclick="pickProfile('${p.id}')">
       <div class="pav" style="background:${av.c}">${inner}${p.pin?'<span class="lock" style="font-size:9px;letter-spacing:1.5px;padding-left:1.5px">\u2022\u2022\u2022\u2022</span>':''}${p.id.indexOf('g:')===0?'<span class="lock" style="background:#4285F4;color:#fff;font-size:14px;font-weight:900">G</span>':''}</div>
       <div class="pname">${esc(p.name)}</div></button>`;
@@ -4334,7 +4410,7 @@ function tryPin(id){
 let draft=null;
 function editProfile(id){
   const p=id?profiles.find(x=>x.id===id):null;
-  draft=p?JSON.parse(JSON.stringify(p)):{id:'p'+Date.now(),name:'',av:{t:'e',v:AVATARS[0],c:AVCOLS[2]},pin:''};
+  draft=p?JSON.parse(JSON.stringify(p)):{id:'p'+Date.now(),name:'',av:{t:'g',v:AVATARS[0],c:AVCOLS[2]},pin:''};
   drawProfileEditor(!!p);
 }
 function drawProfileEditor(isEdit){
@@ -4345,8 +4421,8 @@ function drawProfileEditor(isEdit){
      oninput="draft.name=this.value">
    <div style="font-size:11px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin-bottom:8px">Picture</div>
    <div class="emgrid">
-     ${AVATARS.map(e=>`<button class="emb ${draft.av.t==='e'&&draft.av.v===e?'on':''}"
-       onclick="draft.av={t:'e',v:'${e}',c:draft.av.c};drawProfileEditor(${isEdit})">${e}</button>`).join('')}
+     ${AVATARS.map(k=>`<button class="emb ${avKey(draft.av)===k&&draft.av.t!=='p'?'on':''}" title="${k}"
+       onclick="draft.av={t:'g',v:'${k}',c:draft.av.c};drawProfileEditor(${isEdit})">${ico(k,24)}</button>`).join('')}
    </div>
    <div class="colrow">
      ${AVCOLS.map(c=>`<button class="colb ${draft.av.c===c?'on':''}" style="background:${c}"
@@ -4354,7 +4430,7 @@ function drawProfileEditor(isEdit){
    </div>
    <div style="margin-bottom:16px">
      <button class="btn sec" onclick="document.getElementById('pfPhoto').click()">Upload a photo</button>
-     ${draft.av.t==='p'?`<button class="ai-p" onclick="draft.av={t:'e',v:AVATARS[0],c:draft.av.c};drawProfileEditor(${isEdit})" style="border:2px solid var(--line-2);padding:7px 13px;border-radius:var(--r-pill);font-size:12px;font-weight:700;margin-left:7px">Use an emoji instead</button>`:''}
+     ${draft.av.t==='p'?`<button class="ai-p" onclick="draft.av={t:'g',v:AVATARS[0],c:draft.av.c};drawProfileEditor(${isEdit})" style="border:2px solid var(--line-2);padding:7px 13px;border-radius:var(--r-pill);font-size:12px;font-weight:700;margin-left:7px">Use an emblem instead</button>`:''}
      <input type="file" id="pfPhoto" accept="image/*" style="display:none" onchange="pfUpload(event,${isEdit})">
    </div>
    <div style="font-size:11px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin-bottom:8px">PIN (optional)</div>
