@@ -4865,7 +4865,8 @@ function renderNav(){
   }
   drawRailSync();
   const st=streakCount();
-  $('streakBox').innerHTML=`<span class="fl">${ico('olive',18)}</span>
+  $('streakBox').innerHTML=st===0?`<span class="fl">${ico('olive',18)}</span>
+    <span><span class="t">Answer a question to start a streak</span></span>`:`<span class="fl">${ico('olive',18)}</span>
     <span><span class="n">${st}</span> <span class="t">day${st===1?'':'s'} in a row</span></span>`;
   const due=dueNow().length;
   const flagged=QUESTIONS.filter(q=>S.flags[q.id]).length;
@@ -6237,11 +6238,12 @@ let mockMods={};
    own path, which exam mode does not intercept, so one in the pool would be a
    hole in the no-peeking promise. Both the pool and the counts beside the
    module chips have to use this, or the chip promises questions the paper
-   will not contain. */
+   will not contain. Both pools must also use bankOn, as the chip counts do,
+   or the paper can include questions from sources the student switched off. */
 function mockable(q){ return q.type!=='case' }
 function vMock(p){
   activeModules().forEach(m=>{if(mockMods[m.id]===undefined)mockMods[m.id]=qsInModule(m.id).filter(mockable).length>0});
-  const pool=QUESTIONS.filter(q=>mockMods[q.module]&&mockable(q));
+  const pool=QUESTIONS.filter(q=>mockMods[q.module]&&mockable(q)&&bankOn(q));
   let h=`<div class="eyebrow" style="background:var(--neuro)">Exam conditions</div><h1>${ico('amphora',26)} Mock exam</h1>
   <p class="page-sub">Pick your modules, pick a length. Random order, a clock you can see, and no explanations until you hand the paper in. Anything left blank counts as wrong.</p>
   <h2>1 · Choose modules</h2><div class="filterbar">`;
@@ -6280,7 +6282,7 @@ function runMock(n){
     toast('A saved paper belongs to another semester. Switch back to resume or discard it before starting another.');
     return;
   }
-  const pool=QUESTIONS.filter(q=>mockMods[q.module]&&mockable(q)).slice();
+  const pool=QUESTIONS.filter(q=>mockMods[q.module]&&mockable(q)&&bankOn(q)).slice();
   for(let i=pool.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]]}
   const mins=examMins(n);
   startQuiz(pool.slice(0,n).map(q=>q.id),'Mock exam',null,null,
