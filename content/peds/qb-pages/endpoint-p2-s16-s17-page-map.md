@@ -6,14 +6,21 @@ question's content is re-established on the page image by the staging pass. What
 *shape*: where the sections start and stop, how many questions each holds, and which pages are not
 questions at all.
 
-## ⚠️ THE JOURNAL SAID ONE SECTION. THERE ARE TWO.
+## ⚠️ THE JOURNAL SAID ONE SECTION. THE HARNESS ALREADY KNEW THERE WERE TWO.
 
 `progress\resume-peds-endpoint-part2.md` carried "section 16, Recently modified Questions,
 pp.1922–1940" from a page-shape survey run before any of the tail was read. That is section 16, and
 it is right as far as it goes. **p.1941 is a second red-text divider reading "Recently Added
-Questions", and pp.1942–1949 are eight more question pages under it.** Section 17 was never in the
-plan. It is in scope, it is the last section of the book, and its questions are a different kind from
-section 16's — see below.
+Questions", and pp.1942–1949 are eight more question pages under it.**
+
+⚠️ **The prose journal is what was incomplete, not the tooling.** `merge-parts-ep2.js`,
+`val-pd-ep2.js` and `splice-pd-ep2.js` each already carry a section 17 config — id prefixes
+`pedep2-rm-` and `pedep2-ra-`, staged files `endpoint-p2-s16-recent-mod.array.js` and
+`endpoint-p2-s17-recent-add.array.js`, and the counts 18 and 8 that this file measured independently
+and matched. **An earlier version of this file said section 17 "was never in the plan"; that was
+wrong, and it was wrong because I checked the journal and not the harness.** Read both. The counts
+below are a second, independent measurement of what the configs already assert, which is worth
+something — it is not a discovery.
 
 | section | banner page | question pages | questions | banner text |
 |---|---|---|---|---|
@@ -70,9 +77,20 @@ that the same classifier called notes.
 
 ⚠️ **This is the classifier erring in the direction part 1's close-out named as the expensive one, and
 also in the cheap one, on the same run.** Part 1 found it calling a real question page "notes"
-(pp.1889/1890); here it calls a notes page "answered" twice. **The tail is confirmed by eye during
-the section-17 staging pass before the book is declared closed** — one look at p.1977 and p.1984
-settles it, and a wrong answer here means questions left in the book.
+(pp.1889/1890); here it calls a notes page "answered" twice.
+
+⚠️ **This was already settled, on the page, before this file existed.** `val-pd-ep2.js` carries it:
+
+> `// SECTION 18, Exam Night Review, pp.1950-1992, HAS NO ENTRY AND MUST NOT GET ONE. It is 43`
+> `// pages of prose revision cards -- 41 classify as notes, and the 2 that classify as` `answered`
+> `// (pp.1977, 1984) are revision cards with lettered bullets, read and confirmed not to be`
+> `// questions.`
+
+and `merge-parts-ep2.js` records the boundary pages as verified by eye on p.1923 and p.1949. **An
+earlier version of this file claimed nobody had ever looked at the tail; that was wrong.** The
+section-17 staging pass looks at p.1977 and p.1984 anyway — a second eye on the pages that decide
+whether questions are left in the book is cheap — but it is a confirmation, not a first reading, and
+section 18 gets no harness entry under any outcome short of finding a real question there.
 
 ## One figure reference, already visible
 
