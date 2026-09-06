@@ -203,8 +203,24 @@ const SEC = {
         folded: [4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21, 22, 23, 24, 25, 28,
                  30, 31, 32, 33, 36, 37, 38, 39, 40, 41, 42, 43, 45, 46, 49, 51, 52, 54, 56, 57,
                  58, 59, 61, 62, 65, 69, 70, 71, 72, 76, 77, 80] },
+  // Section 15's `folded` is 64 rows and it is not 64 folds: 63 are REPRINTS, cited onto entries
+  // that already hold the question by reprint-s15-pd-ep2.js, and the 64th, n75, is a true
+  // within-section fold into n67. This validator has no `reprints` concept and does not need one --
+  // `folded` means "staged and deliberately not drafted", which both are. Twelve of the 63 extend a
+  // pedep-* entry in questions.peds.ep.js rather than this stream's own file, because part 1 closed
+  // and folded and both files carry bank:'endpoint'. Verdicts for all 80:
+  // endpoint-p2-s15-fold-adjudication-A/B/C/D.md. 16 entries are drafted:
+  // n1, 3, 15, 19, 21, 25, 34, 36, 44, 56, 67, 69, 71, 73, 79, 80.
+  //
+  // ⚠️ Four staged rows carry a box that overflows onto the next page -- n16 -> p.1790,
+  // n31 -> p.1821, n34 -> p.1828, n52 -> p.1865. Only n34 is drafted, so it is the first entry in
+  // this stream to exercise the overflow-page check below.
   15: { prefix: 'pedep2-mf4-', file: 'endpoint-p2-s15-mfe4.array.js', svar: 'PEDEP2_S15_STAGED',
-        draft: 'endpoint-p2-s15-mfe4.draft', chapter: '(mixed)', pages: [1757, 1921], ans: 80 },
+        draft: 'endpoint-p2-s15-mfe4.draft', chapter: '(mixed)', pages: [1757, 1921], ans: 80,
+        folded: [2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16, 17, 18, 20, 22, 23, 24, 26, 27,
+                 28, 29, 30, 31, 32, 33, 35, 37, 38, 39, 40, 41, 42, 43, 45, 46, 47, 48, 49,
+                 50, 51, 52, 53, 54, 55, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 68, 70, 72,
+                 74, 75, 76, 77, 78] },
 
   // ⚠️ SECTIONS 16 AND 17 PRINT THE ANSWERED PAGE ONLY -- there is no unanswered twin, verified
   // by eye on p.1923 and p.1949. So every `answered` page here is one real question and `ans` is
