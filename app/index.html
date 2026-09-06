@@ -2602,7 +2602,7 @@ let KEY='wardround.v2';
 /* banks: per-module source filter, {ent:['endpoint','house'], …}. An absent or
    empty entry means "all sources" — never store the full set, so a bank added
    later is included by default instead of silently hidden. */
-let S={answers:{},flags:{},conf:{},sched:{},srs:{},days:{},hl:{},banks:{}};
+let S={answers:{},flags:{},conf:{},sched:{},srs:{},days:{},hl:{},banks:{},resumeByChapter:{}};
 let storageMode='memory';
 
 async function loadState(){
@@ -3660,6 +3660,14 @@ function mergeStates(a,b){
   ['srs','hl','flags','conf','days','sched'].forEach(k=>{
     out[k]=Object.assign({},older[k]||{},newer[k]||{});
   });
+  /* Each chapter has its own clock: practising another chapter on a second
+     device must not discard a more recent place in this one. */
+  out.resumeByChapter={};
+  const chapters=new Set(Object.keys(a.resumeByChapter||{}).concat(Object.keys(b.resumeByChapter||{})));
+  chapters.forEach(cid=>{
+    const x=(a.resumeByChapter||{})[cid], y=(b.resumeByChapter||{})[cid];
+    out.resumeByChapter[cid]=!x?y:!y?x:((x.at||0)>=(y.at||0)?x:y);
+  });
   out.schedule=newer.schedule||older.schedule||null;
   out.updatedAt=Math.max(at,bt);
   return out;
@@ -3970,7 +3978,7 @@ async function enterProfile(p){
   me=p;
   KEY=stateKey(p.id);
   try{localStorage.setItem(LASTKEY,p.id)}catch(e){}
-  S={answers:{},flags:{},conf:{},sched:{},srs:{},days:{},hl:{},banks:{},schedule:null};
+  S={answers:{},flags:{},conf:{},sched:{},srs:{},days:{},hl:{},banks:{},resumeByChapter:{},schedule:null};
   await loadState();
   sanitiseBanks();
   migrateColours();
@@ -4274,6 +4282,14 @@ function vHome(p){
     <div class="stat"><span class="emo">${ico('laurel',20)}</span><div class="n">${Object.keys(S.flags).filter(k=>S.flags[k]).length}</div><div class="l">Flagged</div></div>
   </div>`;
 
+  const recent=Object.keys(S.resumeByChapter||{}).filter(cid=>
+    MODULES.some(m=>m.groups.some(g=>g.chapters.some(c=>c[0]===cid)))
+  ).sort((a,b)=>S.resumeByChapter[b].at-S.resumeByChapter[a].at)[0];
+  if(recent){
+    const r=S.resumeByChapter[recent];
+    h+=`<div class="filterbar"><button class="btn go" onclick="startChapter('${recent}')">${r.finished?'Restart':'Continue'} &mdash; ${esc(chapterName(recent))}</button></div>`;
+  }
+
   const t=todayISO();
   const rows=buildSchedule().rows;
   const today=rows.find(d=>d.date===t);
@@ -4369,9 +4385,10 @@ function vModule(p){
       const ca=accuracy(cq);
       const cd=cq.filter(q=>isAnswered(q.id)).length;
       const dot=cq.length?(ca===null?'#fff':accColor(ca)):'transparent';
-      h+=`<button class="ch-row" ${cq.length?'':'disabled'} onclick="startQuiz(${JSON.stringify(cq.map(q=>q.id)).replace(/"/g,'&quot;')},'${esc(cname).replace(/'/g,"\\'")}')">
+      const resume=(S.resumeByChapter||{})[cid];
+      h+=`<button class="ch-row" ${cq.length?'':'disabled'} onclick="startChapter('${cid}')">
         <span class="ch-dot" style="background:${dot}"></span>
-        <span class="ch-name">${cname}</span>
+        <span class="ch-name">${cname}${resume?` &middot; ${resume.finished?'Restart':'Continue'}`:''}</span>
         <span class="ch-count">${cq.length?`${cd}/${cq.length}`:'coming soon'}</span>
         <span class="ch-acc" style="color:${accColor(ca)}">${ca===null?'':ca+'%'}</span>
       </button>`;
@@ -4381,10 +4398,46 @@ function vModule(p){
 }
 
 /* ============ QUIZ ============ */
-let Q={ids:[],i:0,title:'',sel:null,shown:false,t0:null,txt:'',peek:false};
-function startQuiz(ids,title){
+let Q={ids:[],i:0,title:'',sel:null,shown:false,t0:null,txt:'',peek:false,attempts:{},chapter:null,sources:[]};
+function startChapter(cid,restart=false){
+  const qs=qsIn(cid);
+  if(!qs.length){toast('No questions in this chapter with the current sources. Change the source filter to continue.');return}
+  const r=(S.resumeByChapter||{})[cid];
+  if(r&&!r.finished&&!restart&&!qs.some(q=>q.id===r.qid)){
+    const exists=QUESTIONS.some(q=>q.id===r.qid&&q.chapter===cid);
+    showModal(`<h3>Saved question unavailable</h3>
+      <p>${exists?'Your current source filter excludes the saved question. Change the source filter to continue there, or restart with the current sources.':'The saved question is no longer in this chapter. You can restart with the current questions.'}</p>
+      <div class="modal-actions">
+        <button class="btn sec" onclick="closeModal()">Close</button>
+        <button class="btn go" onclick="closeModal();startChapter('${cid}',true)">Restart chapter</button>
+      </div>`);
+    return;
+  }
+  startQuiz(qs.map(q=>q.id),chapterName(cid),cid,r&&!r.finished&&!restart?r.qid:null);
+}
+function saveResume(finished=false){
+  if(!Q.chapter)return;
+  const qid=Q.ids[Q.i];
+  if(!qid)return;
+  if(!S.resumeByChapter)S.resumeByChapter={};
+  S.resumeByChapter[Q.chapter]={qid:qid,sources:Q.sources.slice(),at:Date.now(),finished:finished};
+  save();
+}
+function moveQ(i){
+  /* Saved progress survives a new run; attempts only survive movement inside
+     this run, including jumps and unfinished selections. */
+  const input=$('caseInput');
+  Q.attempts[Q.ids[Q.i]]={sel:Q.sel,shown:Q.shown,txt:input&&!Q.shown?input.value:Q.txt,peek:Q.peek};
+  Q.i=i;
+  Object.assign(Q,Q.attempts[Q.ids[i]]||{sel:null,shown:false,txt:'',peek:false});
+  saveResume();
+}
+function startQuiz(ids,title,chapter=null,qid=null){
   if(!ids||!ids.length){toast('No questions there yet 🤷');return}
-  Q={ids:ids.slice(),i:0,title:title,sel:null,shown:false,t0:Date.now(),txt:'',peek:false};
+  const q=QUESTIONS.find(x=>x.id===ids[0]);
+  Q={ids:ids.slice(),i:Math.max(0,ids.indexOf(qid)),title:title,sel:null,shown:false,t0:Date.now(),txt:'',peek:false,
+     attempts:{},chapter:chapter,sources:chapter&&q?(S.banks[q.module]||[]).slice():[]};
+  saveResume();
   go({name:'quiz'});
 }
 
@@ -4452,8 +4505,8 @@ function peekCase(){
 function vCase(p,q,m,prev){
   /* A case is NEVER auto-revealed, not even one answered before — the whole
      point is to type the diagnosis first (user's instruction, 2026-07-26).
-     Returning to an answered case therefore starts blank again; the previous
-     attempt is shown as a chip so the earlier score is not lost. */
+     A new run starts blank; movement within a run keeps its attempt. The
+     previous score is shown as a chip so the earlier score is not lost. */
   const flagged=!!S.flags[q.id];
   const g=(Q.shown&&!Q.peek)?gradeCase(q,Q.txt):null;
   const verdict=Q.peek?['bad',ico('eye',18),'Revealed — not scored']
@@ -4559,7 +4612,6 @@ function vQuiz(p){
   const m=moduleOf(q.module)||{hex:'#7a6a55'};
   const prev=S.answers[q.id];
   if(q.type==='case'){vCase(p,q,m,prev);return}
-  if(prev&&!Q.shown&&Q.sel===null){Q.sel=prev.pick;Q.shown=true}
   const flagged=!!S.flags[q.id];
 
   let h=`<div class="qwrap">
@@ -4584,6 +4636,9 @@ function vQuiz(p){
       <span class="ltr">${OPT_LETTERS[i]}</span><span>${esc(o)}</span>${mark}</button>`;
   });
   h+=`</div>`;
+  if(!Q.shown&&prev&&Number.isInteger(prev.pick)&&prev.pick>=0&&prev.pick<q.options.length){
+    h+=`<details class="lastgo"><summary>Previous choice</summary>${OPT_LETTERS[prev.pick]} &middot; ${esc(q.options[prev.pick])}</details>`;
+  }
 
   if(!Q.shown){
     h+=`<div class="qactions">
@@ -4637,14 +4692,14 @@ function vQuiz(p){
 }
 function pick(i){if(Q.shown)return;Q.sel=i;render()}
 function reveal(){
-  if(Q.sel===null)return;
+  if(Q.shown||Q.sel===null)return;
   const q=QUESTIONS.find(x=>x.id===Q.ids[Q.i]);
   const ok=Q.sel===q.answer;
   Q.shown=true;
-  if(!S.answers[q.id]||S.answers[q.id].pick!==Q.sel){
-    S.answers[q.id]={pick:Q.sel,ok:ok,at:Date.now()};
-    scheduleSRS(q.id,ok);
-  }
+  /* Repeating the same choice is still a new recall attempt. Schedule once
+     on submission, never when revisiting the result inside this run. */
+  S.answers[q.id]={pick:Q.sel,ok:ok,at:Date.now()};
+  scheduleSRS(q.id,ok);
   markDayActive();save();render();
   /* she reacts, then settles back to the screen's own pose */
   clepPose(ok?'dancing':'surprised'); clepSettle(3200);
@@ -4664,12 +4719,13 @@ function navQ(d){
   const n=Q.i+d;
   if(n<0)return;
   if(n>=Q.ids.length){finishSet();return}
-  Q.i=n;Q.sel=null;Q.shown=false;Q.txt='';Q.peek=false;render();
+  moveQ(n);render();
   /* a new question: back to the screen's own pose. clepOnView cannot do this —
      the view key has not changed, so its dedupe returns early. */
   clearTimeout(CLEP.settleT); clepPose(clepViewPose());
 }
 function finishSet(){
+  saveResume(true);
   const done=Q.ids.filter(id=>isAnswered(id));
   const right=done.filter(id=>isCorrect(id)).length;
   const mins=Math.round((Date.now()-Q.t0)/60000);
@@ -4730,7 +4786,7 @@ function openJump(){
 }
 function jumpTo(i){
   if(i<0||i>=Q.ids.length)return;
-  Q.i=i;Q.sel=null;Q.shown=false;Q.txt='';Q.peek=false;
+  moveQ(i);
   closeModal();render();window.scrollTo(0,0);
 }
 function jumpGo(){
@@ -6299,7 +6355,7 @@ function bakRestore(at){
   const box=bakRead(), s=box.snaps.find(x=>x.at===at);
   if(!s){toast('That snapshot is gone');return}
   let st; try{ st=JSON.parse(s.json) }catch(e){ toast('That snapshot could not be read'); return }
-  S=Object.assign({answers:{},flags:{},conf:{},sched:{},srs:{},days:{},hl:{},banks:{}},st);
+  S=Object.assign({answers:{},flags:{},conf:{},sched:{},srs:{},days:{},hl:{},banks:{},resumeByChapter:{}},st);
   save(); closeModal(); render();
   toast('Restored your progress from '+bakWhen(at)+' ✅');
 }
