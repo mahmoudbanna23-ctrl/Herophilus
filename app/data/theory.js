@@ -21,4 +21,14 @@ LOCKED_MODULES.forEach(id => {
 });
 
 const THEORY = {};
-Object.keys(T_ALL).forEach(k => { if (!T_LOCKED.has(k)) THEORY[k] = T_ALL[k] });
+/* Chapter ids come from the selected term's tuples. Clearing the same object
+   prevents notes from the previous profile or semester surviving a switch. */
+function rebuildTheory(termId){
+  Object.keys(THEORY).forEach(k=>{delete THEORY[k]});
+  MODULES.filter(m=>m.term===termId).forEach(m=>{
+    m.groups.forEach(g=>g.chapters.forEach(c=>{
+      const k=c[0];
+      if(!T_LOCKED.has(k)&&Object.prototype.hasOwnProperty.call(T_ALL,k))THEORY[k]=T_ALL[k];
+    }));
+  });
+}

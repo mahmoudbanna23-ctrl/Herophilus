@@ -32,8 +32,31 @@ const LOCKED_MODULES = ['ophtho', 'neuropsych'];
    search index keep working the day the flag flips. */
 const THEORY_LOCKED = true;
 
+/* Terms exist even before their content does, so an empty semester remains a
+   real choice rather than borrowing another semester's subjects.
+   Every module must name one of these ids. Module, chapter and question ids
+   must stay unique across terms because saved progress is keyed by those ids. */
+const TERMS = [
+  {id:'y1s1',year:1,semester:1,name:'1st year · 1st semester'},
+  {id:'y1s2',year:1,semester:2,name:'1st year · 2nd semester'},
+  {id:'y2s1',year:2,semester:1,name:'2nd year · 1st semester'},
+  {id:'y2s2',year:2,semester:2,name:'2nd year · 2nd semester'},
+  {id:'y3s1',year:3,semester:1,name:'3rd year · 1st semester'},
+  {id:'y3s2',year:3,semester:2,name:'3rd year · 2nd semester'},
+  {id:'y4s1',year:4,semester:1,name:'4th year · 1st semester'},
+  {id:'y4s2',year:4,semester:2,name:'4th year · 2nd semester'},
+  {id:'y5s1',year:5,semester:1,name:'5th year · 1st semester'},
+  {id:'y5s2',year:5,semester:2,name:'5th year · 2nd semester'}
+];
+let activeTerm=null;
+function activeModules(){return MODULES.filter(m=>m.term===activeTerm)}
+function termChoice(p){
+  return p&&TERMS.some(t=>t.id===p.id)&&Number.isFinite(p.at)&&p.at>=0
+    ?{id:p.id,at:p.at}:null;
+}
+
 const MODULES = [
-  {id:'ent', name:'ENT', icon:'ear', color:'var(--ent)', hex:'#b4472f', groups:[
+  {id:'ent', term:'y4s2', name:'ENT', icon:'ear', color:'var(--ent)', hex:'#b4472f', groups:[
     {name:'Ear', chapters:[
       ['ent-audio','Audiovestibular evaluation'],['ent-facial','Facial nerve paralysis'],
       ['ent-csom','CSOM and complications'],
@@ -54,7 +77,7 @@ const MODULES = [
       ['ent-rhin','Rhinitis'],['ent-nasalobs','Nasal obstruction, discharge'],
       ['ent-facialpain','Facial pain, rhinogenic headache']]}
   ]},
-  {id:'ophtho', name:'Ophthalmology', icon:'eye', color:'var(--ophtho)', hex:'#5c7a52', groups:[
+  {id:'ophtho', term:'y4s2', name:'Ophthalmology', icon:'eye', color:'var(--ophtho)', hex:'#5c7a52', groups:[
     {name:'All lectures', chapters:[
       /* Split 2026-08-18, AFTER printing 14 pp — past the 13-page hard shape,
          so the split is a measurement, not a forecast. Book ch.1 is 20,920
@@ -140,7 +163,7 @@ const MODULES = [
       ['op-acute','Acute Visual Loss'],['op-white','The White Eye'],
       ['op-insid','Insidious Visual Loss'],['op-vissym','Visual Symptoms']]}
   ]},
-  {id:'neuropsych', name:'Neuropsychiatry', icon:'brain', color:'var(--neuro)', hex:'#6d4c7d', groups:[
+  {id:'neuropsych', term:'y4s2', name:'Neuropsychiatry', icon:'brain', color:'var(--neuro)', hex:'#6d4c7d', groups:[
     {name:'Psychiatry', chapters:[
       ['ps-interview','Interview Assessment'],['ps-osce','OSCE demonstration'],
       ['ps-somato','Somatoform disorders'],['ps-symptom','Symptomatology'],
@@ -257,7 +280,7 @@ const MODULES = [
       ['nr-hemi','Hemiplegia and hemiparesis'],
       ['nr-para','Paraparesis and ataxia']]}
   ]},
-  {id:'pediatrics', name:'Pediatrics', icon:'teddy', color:'var(--peds)', hex:'#2e5f8a', groups:[
+  {id:'pediatrics', term:'y4s2', name:'Pediatrics', icon:'teddy', color:'var(--peds)', hex:'#2e5f8a', groups:[
     {name:'Non-systems', chapters:[
       ['emergencies','Pediatric emergencies'],['allergy','Allergy'],
       ['infection','The febrile child and meningitis'],

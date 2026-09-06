@@ -47,8 +47,14 @@ function qHash(s){
    flagged list, the mock pool, every count — so holding a locked subject out
    here is what makes the lock hold on every route instead of only the front
    door, and keeps holding when something new starts reading this array. */
-const QUESTIONS = Q_ALL
-  .filter(q => LOCKED_MODULES.indexOf(q.module) < 0)
-  .map(q => ({q, k: qHash(q.id)}))
-  .sort((a,b) => a.k - b.k || (a.q.id < b.q.id ? -1 : 1))
-  .map(x => x.q);
+/* A profile is chosen after this script loads. Until its term is known there
+   is no student-facing pool; rebuilding here keeps every reader on one policy. */
+let QUESTIONS = [];
+function rebuildQuestions(termId){
+  const ids=new Set(MODULES.filter(m=>m.term===termId).map(m=>m.id));
+  QUESTIONS = Q_ALL
+    .filter(q => ids.has(q.module) && LOCKED_MODULES.indexOf(q.module) < 0)
+    .map(q => ({q, k: qHash(q.id)}))
+    .sort((a,b) => a.k - b.k || (a.q.id < b.q.id ? -1 : 1))
+    .map(x => x.q);
+}
