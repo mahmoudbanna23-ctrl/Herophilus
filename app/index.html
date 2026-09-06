@@ -2806,14 +2806,31 @@ function migrateSched(){
   });
   S.sched=out;
 }
+/* A toast disappears and the page is rebuilt on every answer. This notice lives
+   outside the page, so a storage failure stays visible throughout this visit. */
+function warnSaveFailure(){
+  if(document.getElementById('saveWarning'))return;
+  const box=document.createElement('div');
+  box.id='saveWarning';
+  box.setAttribute('role','alert');
+  box.innerHTML='<p><strong>Saving failed during this visit.</strong> Recent progress may be missing from storage. Keep this tab open and download a copy before leaving.</p>'+
+    '<button class="btn sec" onclick="exportData()">Download progress</button>';
+  const page=document.getElementById('page');
+  page.parentNode.insertBefore(box,page);
+  toast('Progress could not be saved. Please read the saving warning.');
+}
 async function save(){
   S.updatedAt=Date.now();
+  let saved=false;
   try{
     if(storageMode==='cloud'&&window.storage&&window.storage.set){await window.storage.set(KEY,JSON.stringify(S));}
     else if(storageMode==='local')localStorage.setItem(KEY,JSON.stringify(S));
-  }catch(e){}
+    else throw new Error('No persistent storage is available');
+    saved=true;
+  }catch(e){warnSaveFailure()}
   schedulePush();
   bakSchedule();
+  return saved;
 }
 
 /* ============ HELPERS ============ */
@@ -3958,6 +3975,13 @@ function mergeStates(a,b){
     });
   });
   out.schedule=newer.schedule||older.schedule||null;
+  /* A paper travels as one record. Combining picks from different sittings would
+     invent a paper; a dated empty record also prevents an older copy returning. */
+  const x=a.mockResume, y=b.mockResume;
+  out.mockResume=!x?(y||null):!y?x:
+    x.at!==y.at?(x.at>y.at?x:y):
+    x.paper===null?x:y.paper===null?y:
+    (JSON.stringify(x)>=JSON.stringify(y)?x:y);
   out.updatedAt=Math.max(at,bt);
   return out;
 }
@@ -4207,6 +4231,8 @@ function gateChrome(){
 }
 
 function showGate(step){
+  examStopTick();
+  Q.exam=null;
   const g=$('gate');g.classList.remove('hide');hideSplash();
   /* She lives at z-index 150 and the gate at 200, so she would only ever be a
      glow behind the sign-in card. Hidden outright, and her session tick with
@@ -4355,6 +4381,8 @@ function migrateColours(){
 
 async function enterProfile(p){
   resetCloud();
+  examStopTick();
+  Q.exam=null;
   const entry=++profileLoad;
   me=p;
   KEY=stateKey(p.id);
@@ -4374,6 +4402,7 @@ async function enterProfile(p){
   if(sess())sessStartTick(); else sessStopTick();
   paintBakBtn();
   render();
+  if(hasSavedMock())offerMockResume();
   if(bakRestored){
     toast('Progress restored from the backup taken '+bakWhen(bakRestored));
     bakRestored=0;
@@ -4590,6 +4619,9 @@ function render(){
   syncFilm();
   ({home:vHome,module:vModule,quiz:vQuiz,review:vReview,schedule:vSchedule,theory:vTheory,
     moved:vMoved,flagged:vFlagged,mock:vMock,session:vSession,weak:vWeak}[view.name]||vHome)(p);
+  if((view.name==='home'||view.name==='mock')&&hasSavedMock()){
+    p.insertAdjacentHTML('afterbegin','<p><button class="btn sec" onclick="offerMockResume()">Open saved mock exam</button></p>');
+  }
   revealOnScroll(p);
   /* The companion travels with the view: she repaints her readout and, the
      first time she meets a screen, explains it. */
@@ -4848,6 +4880,84 @@ function vModule(p){
 
 /* ============ QUIZ ============ */
 let Q={ids:[],i:0,title:'',sel:null,shown:false,t0:null,txt:'',peek:false,caret:null,did:{},attempts:{},chapter:null,sources:[]};
+/* The profile already has a storage key. Keeping the paper inside it makes picks
+   and the paper recover together, including through exports and cloud merges. */
+function hasSavedMock(){return !!(S.mockResume&&S.mockResume.paper!==null)}
+function validMockResume(r){
+  const obj=v=>v!==null&&typeof v==='object'&&!Array.isArray(v);
+  const num=v=>typeof v==='number'&&Number.isFinite(v)&&v>=0;
+  if(r===null)return true;
+  if(!obj(r)||!num(r.at))return false;
+  if(r.paper===null)return true;
+  const p=r.paper, e=obj(p)&&p.exam;
+  if(!obj(p)||!Array.isArray(p.ids)||!p.ids.length||
+     !p.ids.every(id=>typeof id==='string'&&id&&
+       ['__proto__','constructor','prototype'].indexOf(id)<0)||
+     new Set(p.ids).size!==p.ids.length||
+     !Number.isInteger(p.i)||p.i<0||p.i>=p.ids.length||
+     typeof p.title!=='string'||!num(p.t0)||!obj(e)||
+     !num(e.end)||e.end<=p.t0||!num(e.mins)||e.mins<=0||
+     e.done!==false||!obj(e.picked))return false;
+  return Object.keys(e.picked).every(id=>p.ids.indexOf(id)>=0&&
+    Number.isInteger(e.picked[id])&&e.picked[id]>=0);
+}
+function writeMockResume(paper){
+  const old=S.mockResume;
+  const at=old&&Number.isFinite(old.at)?old.at:0;
+  S.mockResume={at:Math.max(Date.now(),at+1),
+    paper:paper===null?null:JSON.parse(JSON.stringify(paper))};
+}
+function savedMockProblem(r){
+  if(!validMockResume(r))return 'The saved paper is damaged and cannot be resumed. Download a copy before discarding it.';
+  const p=r.paper;
+  const unavailable=p.ids.some(id=>{
+    const q=QUESTIONS.find(x=>x.id===id);
+    return !q||!mockable(q)||!Array.isArray(q.options)||!q.options.length||
+      (Object.prototype.hasOwnProperty.call(p.exam.picked,id)&&p.exam.picked[id]>=q.options.length);
+  });
+  return unavailable?'Some saved questions or options are unavailable. The whole paper is kept; it cannot be resumed or handed in with questions removed. Download a copy before discarding it.':'';
+}
+function offerMockResume(){
+  if(!hasSavedMock())return;
+  const r=S.mockResume, entry=profileLoad;
+  const problem=savedMockProblem(r);
+  const expired=!problem&&r.paper.exam.end<=Date.now();
+  const current=()=>entry===profileLoad&&JSON.stringify(S.mockResume)===JSON.stringify(r);
+  const message=problem||(expired
+    ?'The time limit passed while you were away. Nothing has been handed in. You can hand in the saved answers now, keep the paper for later, or discard it.'
+    :'Your question order, choices and place are saved. The clock has kept running. Resuming continues the original time limit and hands in automatically when it ends.');
+  showModal('<h3>Saved mock exam</h3><p>'+message+'</p><div class="modal-actions">'+
+    '<button class="btn sec" onclick="closeModal()">Keep for later</button>'+
+    '<button class="btn sec" onclick="exportData()">Download a copy</button>'+
+    '<button class="btn sec" id="mockDiscard">Discard paper</button>'+
+    (problem?'':'<button class="btn go" id="mockContinue">'+
+      (expired?'Hand in saved answers':'Resume timed paper')+'</button>')+'</div>');
+  $('mockDiscard').onclick=()=>{
+    if(!current()){offerMockResume();return}
+    if(!window.confirm('Discard this saved paper? Its order and clock will be lost. Answers already recorded in your progress remain.'))return;
+    examStopTick(); Q.exam=null;
+    writeMockResume(null); save(); closeModal(); go({name:'mock'});
+  };
+  if(problem)return;
+  $('mockContinue').onclick=()=>{
+    if(!current()){offerMockResume();return}
+    /* A deadline can pass while this dialog is open. A Resume click must never
+       turn into consent to hand in an already expired paper. */
+    if(!expired&&r.paper.exam.end<=Date.now()){offerMockResume();return}
+    if(savedMockProblem(r)){offerMockResume();return}
+    const p=JSON.parse(JSON.stringify(r.paper));
+    examStopTick();
+    Q={ids:p.ids,i:p.i,title:p.title,sel:null,shown:false,t0:p.t0,txt:'',
+      peek:false,caret:null,did:{},attempts:{},chapter:null,sources:[],exam:p.exam};
+    Q.ids.forEach(id=>{
+      Q.attempts[id]={sel:Object.prototype.hasOwnProperty.call(Q.exam.picked,id)?Q.exam.picked[id]:null,
+        shown:false,txt:'',peek:false,caret:null};
+    });
+    Object.assign(Q,Q.attempts[Q.ids[Q.i]]);
+    closeModal(); go({name:'quiz'});
+    if(expired)examFinish(true); else examStartTick();
+  };
+}
 function startChapter(cid,restart=false){
   const qs=qsIn(cid);
   if(!qs.length){toast('No questions in this chapter with the current sources. Change the source filter to continue.');return}
@@ -4865,6 +4975,13 @@ function startChapter(cid,restart=false){
   startQuiz(qs.map(q=>q.id),chapterName(cid),cid,r&&!r.finished&&!restart?r.qid:null);
 }
 function saveResume(finished=false){
+  if(Q.exam){
+    writeMockResume(Q.exam.done?null:{
+      ids:Q.ids,i:Q.i,title:Q.title,t0:Q.t0,exam:Q.exam
+    });
+    save();
+    return;
+  }
   if(!Q.chapter)return;
   const qid=Q.ids[Q.i];
   if(!qid)return;
@@ -5193,7 +5310,8 @@ function vQuiz(p){
   }
 }
 function pick(i){
-  if(Q.shown)return;
+  if(Q.shown||(Q.exam&&Q.exam.done))return;
+  if(Q.exam&&examLeft()<=0){examFinish(true);return}
   Q.sel=i;
   /* In a paper the answer is committed to storage the moment it is chosen,
      because there is no Check answer to commit it later and a reload mid-exam
@@ -5205,7 +5323,7 @@ function pick(i){
     const q=QUESTIONS.find(x=>x.id===Q.ids[Q.i]);
     Q.exam.picked[q.id]=i;
     S.answers[q.id]={pick:i,ok:i===q.answer,at:Date.now()};
-    save();
+    saveResume();
   }
   render();
 }
@@ -5373,11 +5491,14 @@ function examFinish(byClock){
      This is also what fixes the old scoring: finishSet() counted every
      question the student had ever answered, in any earlier session, as part of
      today's mark. */
-  answered.forEach(id=>scheduleSRS(id,isCorrect(id)));
-  markDayActive(); save();
-  const right=answered.filter(id=>isCorrect(id)).length;
+  /* Progress may have changed while the paper was away. Its mark must come
+     from its own picks, not a later practice answer or a cloud merge. */
+  const correct=id=>picked[id]===QUESTIONS.find(q=>q.id===id).answer;
+  answered.forEach(id=>scheduleSRS(id,correct(id)));
+  markDayActive(); saveResume();
+  const right=answered.filter(correct).length;
   const pct=Math.round(right/ids.length*100);
-  const secs=Math.max(0,Math.round((Date.now()-Q.t0)/1000));
+  const secs=Math.max(0,Math.round((Math.min(Date.now(),Q.exam.end)-Q.t0)/1000));
   const mins=Math.floor(secs/60), rem=secs%60;
   const taken=mins?`${mins} min ${rem} s`:`${rem} s`;
   const blank=ids.length-answered.length;
@@ -5929,6 +6050,7 @@ function vMock(p){
    student has been choosing all along is the length they now get. */
 function examMins(n){ return Math.max(1,Math.round(n*1.2)) }
 function runMock(n){
+  if(hasSavedMock()){offerMockResume();return}
   const pool=QUESTIONS.filter(q=>mockMods[q.module]&&mockable(q)).slice();
   for(let i=pool.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]]}
   const mins=examMins(n);
@@ -7309,16 +7431,105 @@ function exportData(){
   a.href=URL.createObjectURL(blob);a.download=`herophilus-progress-${todayISO()}.json`;a.click();
   toast('Progress downloaded');
 }
+/* Known fields are checked where their readers need a particular shape. Extra
+   JSON fields are retained, so adding a runtime field does not make exports lossy. */
+function checkedProgressState(st){
+  const own=(o,k)=>Object.prototype.hasOwnProperty.call(o,k);
+  const obj=v=>v!==null&&typeof v==='object'&&!Array.isArray(v);
+  const num=v=>typeof v==='number'&&Number.isFinite(v)&&v>=0;
+  const int=v=>Number.isInteger(v)&&v>=0;
+  const str=v=>typeof v==='string';
+  const bool=v=>typeof v==='boolean';
+  const strings=v=>Array.isArray(v)&&v.every(str);
+  const date=v=>str(v)&&/^\d{4}-\d{2}-\d{2}$/.test(v)&&Number.isFinite(Date.parse(v));
+  const optional=(o,k,test)=>!own(o,k)||test(o[k]);
+  const map=(v,test)=>obj(v)&&Object.keys(v).every(k=>test(v[k]));
+  const bad=k=>{throw new Error('Invalid progress field: '+k)};
+  /* JSON.parse accepts these names as data, but Object.assign and later map
+     writes can give them prototype behaviour. Reject them before any merge. */
+  function safe(v){
+    if(v===null||str(v)||bool(v))return true;
+    if(typeof v==='number')return Number.isFinite(v);
+    if(Array.isArray(v))return v.every(safe);
+    return obj(v)&&Object.keys(v).every(k=>
+      ['__proto__','constructor','prototype'].indexOf(k)<0&&safe(v[k]));
+  }
+  if(!obj(st)||!own(st,'answers')||!safe(st))bad('state');
+  const rating=v=>int(v)&&v<=2;
+  const answer=v=>obj(v)&&bool(v.ok)&&optional(v,'at',num)&&
+    (own(v,'pick')||own(v,'text'))&&
+    optional(v,'pick',x=>x===null||int(x))&&optional(v,'text',str)&&
+    optional(v,'got',int)&&optional(v,'total',int)&&optional(v,'conf',rating);
+  const checks={
+    answers:v=>map(v,answer),
+    flags:v=>map(v,bool),
+    conf:v=>map(v,rating),
+    sched:v=>map(v,x=>x==='done'||x==='missed'),
+    srs:v=>map(v,x=>obj(x)&&int(x.lvl)&&x.lvl<SRS.length&&date(x.due)),
+    days:v=>map(v,bool),
+    hl:v=>map(v,x=>Array.isArray(x)&&x.every(h=>obj(h)&&int(h.s)&&int(h.e)&&
+      h.e>h.s&&['y','g','p','b'].indexOf(h.c)>=0)),
+    banks:v=>map(v,strings),
+    resumeByChapter:v=>map(v,x=>obj(x)&&str(x.qid)&&strings(x.sources)&&
+      num(x.at)&&bool(x.finished)),
+    notes:v=>map(v,x=>obj(x)&&str(x.txt)&&num(x.at)),
+    reports:v=>map(v,x=>obj(x)&&str(x.kind)&&str(x.txt)&&num(x.at))
+  };
+  const out=Object.assign({},st);
+  Object.keys(checks).forEach(k=>{
+    if(!own(out,k))out[k]={};
+    else if(!checks[k](out[k]))bad(k);
+  });
+  const item=x=>obj(x)&&str(x.label)&&str(x.text)&&
+    optional(x,'hex',v=>str(v)&&/^#[0-9a-f]{3}([0-9a-f]{3})?$/i.test(v));
+  const schedule=v=>v===null||(Array.isArray(v)&&v.every(d=>obj(d)&&date(d.date)&&
+    optional(d,'rest',bool)&&Array.isArray(d.items)&&d.items.every(item)));
+  const session=v=>v===null||(obj(v)&&obj(v.plan)&&
+    num(v.startedAt)&&num(v.phaseStart)&&num(v.pausedAt)&&bool(v.paused)&&
+    (v.phase==='focus'||v.phase==='break')&&int(v.cycle)&&v.cycle>0&&
+    num(v.plan.focus)&&v.plan.focus>0&&num(v.plan.brk)&&v.plan.brk>0&&
+    int(v.plan.cycles)&&v.plan.cycles>0&&str(v.scope)&&
+    optional(v,'lost',num)&&optional(v,'focusMs',num)&&optional(v,'done',bool));
+  const log=v=>Array.isArray(v)&&v.every(x=>obj(x)&&num(x.start)&&num(x.end)&&
+    int(x.cycles)&&num(x.focusMin)&&int(x.answered)&&int(x.correct)&&
+    str(x.scope)&&bool(x.completed));
+  const extra={schedule:schedule,updatedAt:num,editSched:bool,sess:session,
+    sessLog:log,mockResume:validMockResume};
+  Object.keys(extra).forEach(k=>{if(!optional(out,k,extra[k]))bad(k)});
+  return out;
+}
 function importData(e){
   const f=e.target.files[0];if(!f)return;
+  const entry=profileLoad, key=KEY, profile=me;
   const r=new FileReader();
-  r.onload=()=>{
+  r.onload=async()=>{
+    if(entry!==profileLoad||key!==KEY||profile!==me)return;
+    let incoming;
     try{
       const d=JSON.parse(r.result);
-      if(d.state){S=Object.assign(S,d.state);save();render();toast('Progress restored')}
-      else toast('That file is not a progress export')
-    }catch(err){toast('Could not read that file')}
+      if(!d||d.v!==2)throw new Error('Expected a version 2 progress export');
+      incoming=checkedProgressState(d.state);
+    }catch(err){toast('Could not import that file. '+err.message);return}
+    if(!window.confirm('Merge this file into the current profile? Existing progress is kept where possible; more recent entries and settings win conflicts, including the saved mock paper.'))return;
+    if(entry!==profileLoad||key!==KEY||profile!==me)return;
+    let next;
+    try{
+      const newer=(S.updatedAt||0)>=(incoming.updatedAt||0)?S:incoming;
+      const older=newer===S?incoming:S;
+      next=checkedProgressState(Object.assign({},older,newer,mergeStates(S,incoming)));
+    }catch(err){toast('Could not merge that progress. '+err.message);return}
+    S=next;
+    /* A running paper must reopen from the merged record, or its next tap would
+       overwrite the imported paper with the quiz that was already on screen. */
+    if(Q.exam){examStopTick();Q.exam=null;view={name:'home'}}
+    if(sess())sessStartTick(); else sessStopTick();
+    render();
+    const saved=await save();
+    if(entry===profileLoad&&key===KEY&&profile===me){
+      toast(saved?'Progress merged':'Progress merged in memory. Download a copy before leaving.');
+    }
   };
+  r.onerror=()=>{if(entry===profileLoad&&key===KEY&&profile===me)toast('Could not read that file')};
   r.readAsText(f);e.target.value='';
 }
 function toggleRail(){$('rail').classList.toggle('open')}
