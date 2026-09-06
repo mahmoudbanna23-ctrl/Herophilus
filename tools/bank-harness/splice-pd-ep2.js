@@ -168,9 +168,9 @@ const SEC = {
           { file: 'questions.peds.ep.js',
             mark: 'reprinted in Pediatrics endpoint part2.pdf, Model Final Exam 3, p.1', expect: 2 },
         ] },
-  // Model Final Exam 4, pp.1759-1921. 80 staged = 63 reprints + 1 within-section fold + 16 drafted.
-  // 63 of 80 is the highest reprint ratio in this stream -- 28 for Model Final Exam 1, 29 for
-  // Model Final Exam 2, 53 for Model Final Exam 3 -- and twelve of the 63 extend a pedep-* entry in
+  // Model Final Exam 4, pp.1759-1921. 80 staged = 70 reprints + 1 within-section fold + 9 drafted.
+  // 70 of 80 is the highest reprint ratio in this stream -- 28 for Model Final Exam 1, 29 for
+  // Model Final Exam 2, 53 for Model Final Exam 3 -- and fourteen of the 70 extend a pedep-* entry in
   // questions.peds.ep.js rather than this stream's own file, again the most of any section. Part 1
   // closed and folded and both files carry bank:'endpoint', so a part-1 match is a within-bank
   // duplicate exactly like a part-2 one, and `reprintMarks` (plural) is the only form that can
@@ -179,24 +179,31 @@ const SEC = {
   // Five live entries take TWO of these citations each, because the book prints those five
   // questions twice inside this one exam: pedep2-mf1-51 (n4, n57), pedep2-nd-19 (n9, n51),
   // pedep2-res-22 (n17, n60), pedep2-res-25 (n18, n59) and pedep-gi-17 (n12, n54). That is why the
-  // ep2 mark is expected 51 times against 51 rows but only 47 distinct targets. All five were
+  // ep2 mark is expected 56 times against 56 rows but only 52 distinct targets, and the ep1 mark
+  // 14 times against 13. The seven late reprints all opened a target of their own. All five were
   // hand-checked against both printings before they were allowed: four had been listed by the sweep
   // only as shared option MENUS, and a shared menu pairs questions rather than folding them.
   //
   // The verdicts for all 80, including the eleven the candidate generator was silent on, are in
   // endpoint-p2-s15-fold-adjudication-A/B/C/D.md. A candidate list's silence is not a verdict, and
-  // all eleven were ruled by hand; every one of them came back NOT A REPRINT.
+  // all eleven were ruled by hand -- but SEVEN OF THOSE ELEVEN HAND RULINGS WERE WRONG. n1, n3,
+  // n19, n34, n69, n79 and n80 are reprints. They were adjudicated against a candidate list ranked
+  // on STEM similarity, and a hand ruling made against such a list inherits its blind spot: six of
+  // the seven word the stem differently, and three (n69, n79, n80) are one-line recall questions
+  // carrying almost no stem to rank on at all. The key text is the right probe for those, not the
+  // stem. All seven were re-read against both printings and cited by reprint-s15-late-pd-ep2.js;
+  // the rulings and the rule are in endpoint-p2-s15-late-reprint-rulings.md.
   15: { prefix: 'pedep2-mf4-', staging: 'endpoint-p2-s15-mfe4.array.js', svar: 'PEDEP2_S15_STAGED',
         draft: 'endpoint-p2-s15-mfe4.draft',
-        reprints: [2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16, 17, 18, 20, 22, 23, 24, 26, 27,
-                   28, 29, 30, 31, 32, 33, 35, 37, 38, 39, 40, 41, 42, 43, 45, 46, 47, 48, 49,
-                   50, 51, 52, 53, 54, 55, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 68, 70, 72,
-                   74, 76, 77, 78],
-        reprintPass: 'reprint-s15-pd-ep2.js',
+        reprints: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16, 17, 18, 19, 20, 22, 23,
+                   24, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 37, 38, 39, 40, 41, 42, 43, 45,
+                   46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 57, 58, 59, 60, 61, 62, 63, 64, 65,
+                   66, 68, 69, 70, 72, 74, 76, 77, 78, 79, 80],
+        reprintPass: ['reprint-s15-pd-ep2.js', 'reprint-s15-late-pd-ep2.js'],
         reprintMarks: [
-          { file: 'questions.peds.ep2.js', mark: 'reprinted in Model Final Exam 4, p.1', expect: 51 },
+          { file: 'questions.peds.ep2.js', mark: 'reprinted in Model Final Exam 4, p.1', expect: 56 },
           { file: 'questions.peds.ep.js',
-            mark: 'reprinted in Pediatrics endpoint part2.pdf, Model Final Exam 4, p.1', expect: 12 },
+            mark: 'reprinted in Pediatrics endpoint part2.pdf, Model Final Exam 4, p.1', expect: 14 },
         ],
         // n75 is NOT a reprint and must not be moved into the array above. It prints n67's question
         // a second time inside this same exam, so both printings are staged in this one pass and
@@ -359,7 +366,9 @@ if (REPRINTS.size) {
     const n = (fs.existsSync(f) ? fs.readFileSync(f, 'utf8') : '').split(M.mark).length - 1;
     if (n < M.expect)
       fail.push('REPRINT PASS HAS NOT RUN: ' + n + ' of ' + M.expect + ' sources in ' + M.file
-        + ' name "' + M.mark + '". Run tools/bank-harness/' + cfg.reprintPass + ' --write first.');
+        + ' name "' + M.mark + '". Run '
+        + [].concat(cfg.reprintPass).map(p => 'tools/bank-harness/' + p).join(' and ')
+        + ' --write first.');
   }
 }
 
