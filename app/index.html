@@ -912,6 +912,7 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
 .pcard.add .pav{border-style:dashed;background:var(--card);font-size:38px;color:var(--ink-4);box-shadow:none}
 .pcard.add:hover .pav{border-color:var(--neuro);color:var(--neuro)}
 .gate .gfoot{margin-top:34px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.gate .goffline{margin:20px auto 0;max-width:460px;text-align:center;font-size:12.5px;line-height:1.6;color:var(--ink-4)}
 
 .emgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(46px,1fr));gap:8px;margin-bottom:16px;max-height:180px;overflow-y:auto}
 .emb{
@@ -4197,10 +4198,17 @@ function gateProfileStep(){
   h+=`<div class="gfoot" style="${step()}">`;
   if(canBack)h+=`<button class="btn sec" onclick="showGate('signin')">← Back</button>`;
   if(profiles.length)h+=`<button class="btn sec" onclick="manageProfiles()">Manage profiles</button>`;
-  /* Sync settings button hidden — config is embedded in FIREBASE_CONFIG above.
-     If sync is ever NOT configured, still offer setup so the file stays reusable. */
-  if(!cloudEnabled())h+=`<button class="btn sec" onclick="syncSetup()">Set up sync</button>`;
-  h+=`</div></div>`;
+  h+=`</div>`;
+  /* cloudEnabled() is false whenever the app is opened as a file rather than
+     from an address, which is the ordinary way a student ends up with a copy
+     on a laptop. This used to offer them a "Set up sync" button, and behind it
+     instructions for creating a Firebase project — a developer's door left in
+     the front of the building. What they actually need is the plain fact: this
+     copy keeps their work, and it keeps it here. syncSetup() still exists and
+     is still callable by name for a rebuild of the file; it is simply not
+     something to hand a reader. */
+  if(!cloudEnabled())h+=`<p class="goffline" style="${step()}">Running from a file, so this copy is yours alone &mdash; your progress is saved on this device and does not travel. Open the app at its web address to sign in and carry it between devices.</p>`;
+  h+=`</div>`;
   return h;
 }
 
@@ -4707,7 +4715,7 @@ function vModule(p){
 }
 
 /* ============ QUIZ ============ */
-let Q={ids:[],i:0,title:'',sel:null,shown:false,t0:null,txt:'',peek:false,attempts:{},chapter:null,sources:[]};
+let Q={ids:[],i:0,title:'',sel:null,shown:false,t0:null,txt:'',peek:false,caret:null,did:{},attempts:{},chapter:null,sources:[]};
 function startChapter(cid,restart=false){
   const qs=qsIn(cid);
   if(!qs.length){toast('No questions in this chapter with the current sources. Change the source filter to continue.');return}
@@ -4736,9 +4744,9 @@ function moveQ(i){
   /* Saved progress survives a new run; attempts only survive movement inside
      this run, including jumps and unfinished selections. */
   const input=$('caseInput');
-  Q.attempts[Q.ids[Q.i]]={sel:Q.sel,shown:Q.shown,txt:input&&!Q.shown?input.value:Q.txt,peek:Q.peek};
+  Q.attempts[Q.ids[Q.i]]={sel:Q.sel,shown:Q.shown,txt:input&&!Q.shown?input.value:Q.txt,peek:Q.peek,caret:Q.caret};
   Q.i=i;
-  Object.assign(Q,Q.attempts[Q.ids[i]]||{sel:null,shown:false,txt:'',peek:false});
+  Object.assign(Q,Q.attempts[Q.ids[i]]||{sel:null,shown:false,txt:'',peek:false,caret:null});
   saveResume();
 }
 /* exam is null for ordinary study and an object under exam conditions. Fifth
@@ -4747,7 +4755,7 @@ function moveQ(i){
 function startQuiz(ids,title,chapter=null,qid=null,exam=null){
   if(!ids||!ids.length){toast('No questions there yet');return}
   const q=QUESTIONS.find(x=>x.id===ids[0]);
-  Q={ids:ids.slice(),i:Math.max(0,ids.indexOf(qid)),title:title,sel:null,shown:false,t0:Date.now(),txt:'',peek:false,
+  Q={ids:ids.slice(),i:Math.max(0,ids.indexOf(qid)),title:title,sel:null,shown:false,t0:Date.now(),txt:'',peek:false,caret:null,did:{},
      attempts:{},chapter:chapter,sources:chapter&&q?(S.banks[q.module]||[]).slice():[],exam:exam};
   saveResume();
   go({name:'quiz'});
@@ -4806,6 +4814,9 @@ function revealCase(){
     S.answers[q.id]={text:txt,got:g.got,total:g.total,ok:g.ok,at:Date.now()};
     scheduleSRS(q.id,g.ok);
   }
+  /* Outside the storage guard on purpose: retyping the same words is still an
+     attempt made in this sitting, and the set's score is about the sitting. */
+  Q.did[q.id]=g.ok;
   markDayActive();save();render();
   /* a case is graded got/total, so partly right gets its own reading */
   clepPose(g.ok?'dancing':(g.got>0?'thinking':'surprised')); clepSettle(3200);
@@ -4846,6 +4857,7 @@ function vCase(p,q,m,prev){
     <div class="caseask">${ico('asclepius',17)} What is your diagnosis?</div>
     <textarea id="caseInput" class="caseinput" rows="3" ${Q.shown?'disabled':''}
       placeholder="Type the diagnosis in your own words — wording is not marked, the concepts are."
+      oninput="Q.txt=this.value;Q.caret=this.selectionStart"
       >${esc(Q.txt||'')}</textarea>`;
 
   if(!Q.shown&&prev&&prev.text){
@@ -4906,9 +4918,16 @@ function vCase(p,q,m,prev){
     stemEl.addEventListener('mouseup',onStemSelect);
     stemEl.addEventListener('touchend',onStemSelect);
   }
+  /* The box is rebuilt from Q.txt by every render, and a render happens under
+     the student's hands whenever they flag the question or pick a highlighter.
+     Q.txt is kept current on the keystroke (see the textarea's oninput), so the
+     words survive; the caret has to be put back by hand, or a half-typed answer
+     restarts from the beginning of the line. */
   const inp=document.getElementById('caseInput');
   if(inp&&!Q.shown){
     inp.focus();
+    const c=Q.caret==null?inp.value.length:Math.min(Q.caret,inp.value.length);
+    try{inp.setSelectionRange(c,c)}catch(e){}
     inp.addEventListener('keydown',e=>{        // Ctrl/Cmd+Enter submits
       if(e.key==='Enter'&&(e.ctrlKey||e.metaKey)){e.preventDefault();revealCase()}
     });
@@ -5067,6 +5086,7 @@ function reveal(){
   /* Repeating the same choice is still a new recall attempt. Schedule once
      on submission, never when revisiting the result inside this run. */
   S.answers[q.id]={pick:Q.sel,ok:ok,at:Date.now()};
+  Q.did[q.id]=ok;                         /* what THIS sitting scored — see finishSet */
   scheduleSRS(q.id,ok);
   markDayActive();save();render();
   /* she reacts, then settles back to the screen's own pose */
@@ -5112,23 +5132,49 @@ function navQ(d){
      the view key has not changed, so its dedupe returns early. */
   clearTimeout(CLEP.settleT); clepPose(clepViewPose());
 }
+/* ⚠️ THIS SCORES THE SITTING, NOT THE CHAPTER. It used to count Q.ids through
+   isAnswered/isCorrect, which read S.answers — lifetime state. So a student who
+   had worked the chapter last week and now skipped straight through it was told
+   they had answered forty questions at 92%, "in 1 min"; and a brand-new profile
+   skipping everything was congratulated with "0%, you answered 0, all correct."
+   Q.did is written only where an answer is actually submitted in this run
+   (reveal and revealCase), so what the card reports is what just happened. */
 function finishSet(){
   if(Q.exam){examFinish(false);return}
   saveResume(true);
-  const done=Q.ids.filter(id=>isAnswered(id));
-  const right=done.filter(id=>isCorrect(id)).length;
+  const ids=Object.keys(Q.did||{});
+  const done=ids.length;
+  const right=ids.filter(id=>Q.did[id]).length;
+  const missed=done-right;
   const mins=Math.round((Date.now()-Q.t0)/60000);
-  const pct=done.length?Math.round(right/done.length*100):0;
-  if(pct>=80&&done.length>=3)confetti();
+  const pct=done?Math.round(right/done*100):0;
+
+  /* Nothing answered is not a score of zero — it is not a score at all, and
+     dressing it as one is how the end of a set started reading as a machine
+     talking to itself. */
+  if(!done){
+    clepPose('presenting'); clepSettle(5000);
+    showModal(`<h3>${ico('scroll',40)} End of the set</h3>
+     <p>You reached the end without answering anything, so there is nothing to score. Everything here is still waiting whenever you want it.</p>
+     <div class="modal-actions">
+       <button class="btn sec" onclick="closeModal();go({name:'home'})">Dashboard</button>
+       <button class="btn go" onclick="closeModal();Q.i=0;render()">Back to the first question</button>
+     </div>`);
+    return;
+  }
+
+  if(pct>=80&&done>=3)confetti();
   /* the end of a set is the one moment she gets to jump */
-  clepPose(pct>=80&&done.length>=3?'jumping':'presenting'); clepSettle(5000);
+  clepPose(pct>=80&&done>=3?'jumping':'presenting'); clepSettle(5000);
   const face=ico(pct>=90?'laurel':pct>=75?'target':pct>=50?'hourglass':'scroll',40);
+  const skipped=Q.ids.length-done;
   showModal(`<h3>${face} ${pct}%</h3>
-   <p>You answered <strong>${done.length}</strong> question${done.length===1?'':'s'} and got <strong>${right}</strong> right${mins?` in ${mins} min`:''}.
-   ${done.length-right>0?` The ${done.length-right} you missed are in your review deck.`:' All correct.'}</p>
+   <p>You answered <strong>${done}</strong> question${done===1?'':'s'} and got <strong>${right}</strong> right${mins?` in ${mins} min`:''}.
+   ${missed>0?` The ${missed} you missed ${missed===1?'is':'are'} in your review deck.`:' All correct.'}
+   ${skipped>0?`<br><span style="color:var(--ink-4)">${skipped} skipped, still unanswered.</span>`:''}</p>
    <div class="modal-actions">
      <button class="btn sec" onclick="closeModal();go({name:'home'})">Dashboard</button>
-     ${done.length-right>0?`<button class="btn go" onclick="closeModal();go({name:'review'})">Review mistakes</button>`:`<button class="btn go" onclick="closeModal()">Continue</button>`}
+     ${missed>0?`<button class="btn go" onclick="closeModal();go({name:'review'})">Review mistakes</button>`:`<button class="btn go" onclick="closeModal()">Continue</button>`}
    </div>`);
 }
 /* ---- Exam conditions ----------------------------------------------------
