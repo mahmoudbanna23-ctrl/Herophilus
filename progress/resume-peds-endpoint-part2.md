@@ -2135,3 +2135,66 @@ tagged, never declared; **all 27 print a box**, so the boxed shape and its contr
 throughout; the section has no figure, no box row and no straddle, so an `image` field is a hard
 failure. The gate for a staging part is `check-part-ep.js` — **`check-part-ep2.js` does not exist**,
 and four section-13 quarter prompts named it wrongly.
+
+### 2026-09-06 — section 14 is DRAFTED AND SPLICED. `questions.peds.ep2.js` holds 615.
+
+The whole chain this block owed is done: reprint pass → splice reprints → reprint map generator →
+commit `94f2191` → chapter rulings → drafting notes → the 27 halves → validator → cross-half
+comparison → `splice --write` → boot check.
+
+**`app\data\questions.peds.ep2.js` 588 → 615**, 27 entries, 0 holes, chars 1537636 → 1610350 against
+an expected 615. `node tools\boot-check\boot-check.js`: **QUESTIONS 5907 · THEORY 153 · MODULES 4 ·
+153 chapter rows (138 with questions) · pediatrics 51 · 0 console errors.** Section 14 is closed:
+80 staged = 53 reprints cited + 27 drafted.
+
+`content\peds\qb-pages\endpoint-p2-s14-drafting-notes.md` is the section's binding notes, built to
+the section-13 template. What it records that no earlier section did:
+
+- **The page arithmetic is a single clean `p = 1595 + 2n` with zero deviations across all 80** —
+  section 13's parity flip does not carry over, and neither does section 12's arithmetic.
+- **53 of 80 are reprints**, the highest ratio this stream has produced, two of them landing on
+  part 1's `questions.peds.ep.js` — a part-1/part-2 match is **within-bank** and never takes `alsoIn`.
+- Three defects to record and never correct: **n68** keys EMG as the acute GBS investigation while
+  `neuro-21` names three investigations and EMG is not one; **n53** asks about "cerebral diplegia"
+  while `neuro-28` says the topographic term is retired and then uses it anyway; **n74** calls ASOT
+  "specific" when it is specific for recent streptococcal infection, not for any one sequela.
+- Three theory anchors that carry their **own** gap tags — `endo-33` (CAH), `ren-12` (HUS),
+  `endo-8` (hypoglycaemia on insulin). Cite them, carry the tag, do not double-source them.
+
+**Two things the notes got wrong, both caught by a drafting half and both now fixed in the file:**
+
+1. ⚠️ **A GAP CAN LIVE IN A DISTRACTOR, AND A KEY-ONLY SWEEP WILL NEVER SEE IT.** The notes recorded
+   three measured gaps, all found by grepping the 27 keys. The half-A pass found a fourth in an
+   *option*: n2 prints **tricuspid stenosis**, and `"tricuspid stenosis"` is **zero** corpus-wide
+   while `"tricuspid"` alone returns seven — the valve is taught, the lesion is not. Every distractor
+   must be explained, so **every distractor is inside the grounding requirement.** Sweep the option
+   pools, not just the keys.
+2. The notes listed **five** shared-menu pairs; the chapter-rulings file itself carried a sixth,
+   **n35 ↔ `pedep2-mf1-48`** — identical five options in identical order with the key moved from
+   index 1 to index 2. A moved key inside an identical menu is the clearest pairing there is.
+   **These notes reproduce the rulings table but are not a substitute for reading it.**
+
+**The cross-half comparison** (`<scratchpad>\xhalf.js`, worth rebuilding per section) ran eight
+checks over the union of the 27: id collisions **0** · folded `n` drafted **0** · sibling citations
+16, dead **0**, pointing at a never-drafted reprint **0** · closing-marker faults **0** · repeated
+paragraphs across entries **0** · field-set faults **0** · mean explanation length A 285 / B 281
+words, no drift. **Five theory anchors are used by both halves** — `haem-10`, `haem-8`, `neuro-6`,
+`endo-1`, `endo-2` — and every sentence citing them was dumped and read: the two halves agree on all
+five. Separately, all **52** theory ids cited across the 27 resolve against the live 518-section
+`T_PEDS`, and all 13 chapter ids resolve in `modules.js`.
+
+**A gate defect closed on the way through.** `val-pd-ep2.js`'s section-14 config had **no `folded:`
+key** while section 13's did, so the validator would not have hard-failed a half that drafted one of
+the 53 reprints. It now holds the same 53 the splicer holds. Both halves passed under it.
+
+Validator output, both halves ALL CHECKS PASSED: A 14 entries / 3985 words (228–378) · B 13 entries /
+3657 words (192–372). No deliberate overruns; every entry inside the 520-word ceiling.
+
+**Next: section 15, "Model Final Exam 4", pp.1757–1921, `ans: 80`.** ⚠️ **Run
+`reprint-pd-ep2.js` over it BEFORE staging drafting halves** — sections 12/13/14 ran **28 / 29 / 53**
+reprints of 80, counted off `splice-pd-ep2.js`'s own `reprints` arrays and confirmed against
+`val-pd-ep2.js`'s `folded` lists, which agree section for section. So the trend is not a smooth ramp:
+12 and 13 sat level and 14 nearly doubled them. A model exam is a reprint problem before it is a
+drafting problem. ⚠️ I first wrote "30 / 48 / 53" here from memory and it was wrong in both of the
+places it could be — **never write a count from memory; the arrays are two commands away.** ⚠️ **A candidate list's silence is not a verdict** — it has now cost this stream three
+separate recoveries, and the fold-adjudication brief must demand a verdict for every `n` in range.

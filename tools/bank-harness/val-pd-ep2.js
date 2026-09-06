@@ -192,8 +192,17 @@ const SEC = {
         draft: 'endpoint-p2-s13-mfe2.draft', chapter: '(mixed)', pages: [1432, 1594], ans: 80,
         folded: [4, 5, 7, 8, 13, 14, 15, 17, 18, 19, 22, 23, 24, 25, 27, 28, 37, 38, 41, 42,
                  61, 66, 70, 71, 76, 77, 78, 79, 80] },
+  // Section 14's 53 reprints -- the highest ratio this stream has produced, and the same list the
+  // splicer holds under `reprints`. Four of them (n19, n23, n25, n51) were never ruled on by any of
+  // the three fold adjudications: the candidate generator produced nothing for each and the
+  // adjudicating quarter read that silence as a pass. They were verified on the page images and
+  // added afterwards, together with n33, whose NOT-A-REPRINT verdict was overturned. Two of the 53
+  // (n30, n42) extend entries in questions.peds.ep.js rather than this stream's own file.
   14: { prefix: 'pedep2-mf3-', file: 'endpoint-p2-s14-mfe3.array.js', svar: 'PEDEP2_S14_STAGED',
-        draft: 'endpoint-p2-s14-mfe3.draft', chapter: '(mixed)', pages: [1595, 1756], ans: 80 },
+        draft: 'endpoint-p2-s14-mfe3.draft', chapter: '(mixed)', pages: [1595, 1756], ans: 80,
+        folded: [4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21, 22, 23, 24, 25, 28,
+                 30, 31, 32, 33, 36, 37, 38, 39, 40, 41, 42, 43, 45, 46, 49, 51, 52, 54, 56, 57,
+                 58, 59, 61, 62, 65, 69, 70, 71, 72, 76, 77, 80] },
   15: { prefix: 'pedep2-mf4-', file: 'endpoint-p2-s15-mfe4.array.js', svar: 'PEDEP2_S15_STAGED',
         draft: 'endpoint-p2-s15-mfe4.draft', chapter: '(mixed)', pages: [1757, 1921], ans: 80 },
 
