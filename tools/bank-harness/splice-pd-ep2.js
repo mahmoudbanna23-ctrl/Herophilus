@@ -299,6 +299,17 @@ const FOLDED = new Set(cfg.folded || []);
 const SKIP = new Set([...REPRINTS, ...FOLDED]);
 const wantIds = S.filter(s => !SKIP.has(s.n)).map(s => cfg.prefix + s.n);
 
+// A section can legitimately draft NOTHING. Section 16 is the first: all 18 of its staged questions
+// are reprints cited onto live entries, so `folded` covers the section and the draft file is an
+// empty array by design. Stop here rather than letting carve() report "entries not found", which
+// reads as a broken draft file and is the opposite of what has happened. The validator has already
+// run and passed by this point.
+if (!wantIds.length) {
+  console.log('section ' + secNum + ' drafts nothing -- all ' + S.length +
+              ' staged entries are folded or reprinted, so there is nothing to splice.');
+  process.exit(0);
+}
+
 // carve() returns the raw entry text; the loaded array is what gets counted and checked.
 // Both are needed: the splice is byte-level, but a byte-level splice cannot see a hole.
 function carve(file) {
