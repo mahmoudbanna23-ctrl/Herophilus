@@ -2088,12 +2088,35 @@ button.card.mod-card{display:flex;flex-direction:column;padding:0}
    sits back: no hover lift, no pointer, dimmed enough to read as not-yet
    without reading as broken. The dashboard card is a <div>, so there is no
    disabled state to style; this is what carries it. */
-.mod-card.locked{display:flex;flex-direction:column;padding:0;opacity:.55;cursor:default}
+.mod-card.locked{display:flex;flex-direction:column;padding:0;cursor:default}
 .mod-card.locked:hover{transform:none;box-shadow:none}
-.soon{
-  margin-left:auto;flex:0 0 auto;font-size:10px;letter-spacing:.08em;
+/* Dim the PAINTING, not the words. This card used to carry opacity:.55, which
+   dims the text with everything else: measured against the page that put the
+   title, the meta line and the badge at 2.65:1, well under AA, at 10px on the
+   badge. The card still sits back — the artwork is what carries "not yet" —
+   and the reading stays readable. §6: measured, not habit. */
+.mod-card.locked .mod-art{opacity:.42}
+.mod-card.locked .mod-ic{opacity:.72}
+.mod-card.locked .mod-name{color:var(--ink-2)}
+/* The badge sits on the painting's top corner, not in the title row.
+   Measured at 360px: in the title row it needed 328px of a 294px row, so it
+   was clipped by the card on BOTH locked subjects, and Neuropsychiatry was
+   still 4px over at 390px. Nothing numeric could have caught that — the card
+   clips it, so the page never overflows and every width reported "fits". It
+   came out of a screenshot. Out of the flow it cannot compete with a long
+   subject name at any width, and both locked cards look identical.
+   The fill is --card, not --fill: --fill is a dark solid in BOTH themes and
+   --ink-3 on it is unreadable in light mode. */
+.mod-card>.soon{
+  position:absolute;top:11px;right:11px;z-index:2;
+  font-size:10px;letter-spacing:.08em;
   text-transform:uppercase;padding:3px 8px;border-radius:999px;
-  border:1px solid var(--line);color:var(--ink-3)
+  background:var(--card);border:1px solid var(--line);color:var(--ink-3)
+}
+/* Print drops .mod-art, so anchoring to a corner of nothing would land the
+   badge on top of the title. Put it back in the flow there. */
+@media print{
+  .mod-card>.soon{position:static;display:inline-block;margin:0 0 6px}
 }
 .mod-card>*{position:relative;z-index:1}
 .mod-art{
@@ -2115,6 +2138,18 @@ button.card:hover .mod-art{opacity:1;filter:saturate(1.12)}
 /* on parchment the art is dark against a light card, so it needs less presence */
 :root[data-theme="light"] .mod-art{opacity:.82}
 :root[data-theme="light"] button.card:hover .mod-art{opacity:.95}
+/* The locked card dims its artwork, and the rule that says so is further up —
+   but the two rules directly above are (0,3,0) as well, and an equal-specificity
+   tie is broken by source order, so up there it loses. This is measured, not
+   deduced: a locked card in light mode computed .mod-art opacity .82, exactly
+   what an unlocked card computes. Dark mode was already correct at .42, because
+   dark is bare :root and carries no competing rule. .38 rather than .42 keeps
+   the same step down from light's own .82 baseline.
+   The theory view's locked card is a real <button class="card">, so the hover
+   rule undims it on touch and focus; these two hold it dimmed. */
+:root[data-theme="light"] .mod-card.locked .mod-art{opacity:.38}
+button.card.locked:hover .mod-art{opacity:.42}
+:root[data-theme="light"] button.card.locked:hover .mod-art{opacity:.38}
 /* the corner blob was drawn for a text-only card; over artwork it is noise */
 .mod-card::after{display:none}
 /* two 300px columns plus the gap need ~615px; below that go single file, where
@@ -3228,9 +3263,9 @@ function vTheory(p){
       const lock=isLocked(m.id);
       h+=`<button class="card mod-card${lock?' locked':''}" style="--c:${m.color}" ${chs.length?`onclick="go({name:'theory',mod:'${m.id}'})"`:'disabled style="opacity:.45"'}>
         <span class="mod-art" style="--art:url('assets/${MOD_ART[m.id]}.jpg')"></span>
+        ${lock?'<span class="soon">Coming soon</span>':''}
         <div class="mod-info">
-          <div class="mod-top"><span class="mod-ic">${ico(m.icon,25)}</span><span class="mod-name">${m.name}</span>
-            ${lock?'<span class="soon">Coming soon</span>':''}</div>
+          <div class="mod-top"><span class="mod-ic">${ico(m.icon,25)}</span><span class="mod-name">${m.name}</span></div>
           <div class="mod-meta" style="margin-bottom:0">${lock?'Being written':chs.length?`${chs.length} lecture${chs.length===1?'':'s'} written`:'no notes yet'}</div>
         </div>
       </button>`;
@@ -4460,9 +4495,9 @@ function vHome(p){
     if(isLocked(m.id)){
       h+=`<div class="card mod-card locked" style="--c:${m.color}" aria-disabled="true">
         <span class="mod-art" style="--art:url('assets/${MOD_ART[m.id]}.jpg')"></span>
+        <span class="soon">Coming soon</span>
         <div class="mod-info">
-          <div class="mod-top"><span class="mod-ic">${ico(m.icon,25)}</span><span class="mod-name">${m.name}</span>
-            <span class="soon">Coming soon</span></div>
+          <div class="mod-top"><span class="mod-ic">${ico(m.icon,25)}</span><span class="mod-name">${m.name}</span></div>
           <div class="mod-meta">${chs} chapters on the syllabus. The questions are still being transcribed.</div>
         </div>
       </div>`;
