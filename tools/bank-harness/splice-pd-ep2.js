@@ -154,12 +154,17 @@ const SEC = {
   // be an unexamined duplicate. fold-gen24-pd-ep2.js folded them; the survivor is n33's target.
   14: { prefix: 'pedep2-mf3-', staging: 'endpoint-p2-s14-mfe3.array.js', svar: 'PEDEP2_S14_STAGED',
         draft: 'endpoint-p2-s14-mfe3.draft',
-        reprints: [4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 18, 20, 21, 22, 24, 28,
-                   30, 31, 32, 33, 36, 37, 38, 39, 40, 41, 42, 43, 45, 46, 49, 52, 54, 56, 57,
+        // n19, n23, n25 and n51 were added after the pass first ran too, and for a different
+        // reason from n33: none of the three adjudications ever ruled on them. The candidate
+        // generator produced nothing for each, and the adjudicating quarter recorded that silence
+        // as a pass. All four were verified on the page images; the rulings, and the two
+        // instruments that found them, are in endpoint-p2-s14-late-reprint-rulings.md.
+        reprints: [4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21, 22, 23, 24, 25, 28,
+                   30, 31, 32, 33, 36, 37, 38, 39, 40, 41, 42, 43, 45, 46, 49, 51, 52, 54, 56, 57,
                    58, 59, 61, 62, 65, 69, 70, 71, 72, 76, 77, 80],
         reprintPass: 'reprint-s14-pd-ep2.js',
         reprintMarks: [
-          { file: 'questions.peds.ep2.js', mark: 'reprinted in Model Final Exam 3, p.1', expect: 47 },
+          { file: 'questions.peds.ep2.js', mark: 'reprinted in Model Final Exam 3, p.1', expect: 51 },
           { file: 'questions.peds.ep.js',
             mark: 'reprinted in Pediatrics endpoint part2.pdf, Model Final Exam 3, p.1', expect: 2 },
         ] },

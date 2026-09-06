@@ -1,7 +1,11 @@
 // reprint-s14-pd-ep2.js — write section 14's reprint citations onto the entries that already carry
 // the questions.  Section 14 is Model Final Exam 3, pp.1595-1756 of Pediatrics endpoint part2.pdf,
-// and 48 of its 80 questions are reprints; those 48 are never drafted as entries, they are cited
-// onto the entry that already holds the question.
+// and 53 of its 80 questions are reprints; those 53 are never drafted as entries, they are cited
+// onto the entry that already holds the question.  (The three fold adjudications ruled 49; n33 was
+// added by the 2026-09-06 gen-24 fold, and n19, n23, n25 and n51 by the late pass written up in
+// content\peds\qb-pages\endpoint-p2-s14-late-reprint-rulings.md.  All four of the late four had been
+// skipped rather than ruled on: the candidate generator produced nothing for them and the
+// adjudicating quarter recorded the silence as a pass.)
 //
 // NOT the same tool as reprint-s14-pd-ep.js, which is part 1's and must not be reused or overwritten.
 //
@@ -38,7 +42,7 @@ const WRITE = process.argv.includes('--write');
 const EP2 = 'questions.peds.ep2.js', EP1 = 'questions.peds.ep.js';
 const EXAM = 'Model Final Exam 3';
 const PAGE_LO = 1597, PAGE_HI = 1755;   // n1 is p.1597; the banner page 1595 stages nothing
-const EXPECTED = 49;
+const EXPECTED = 53;
 const STAGING = R + 'content/peds/qb-pages/endpoint-p2-s14-mfe3.array.js';
 const SVAR = 'PEDEP2_S14_STAGED';
 
@@ -46,9 +50,12 @@ const SVAR = 'PEDEP2_S14_STAGED';
 // both printings one row at a time; an unlisted key-text move stops the pass, because a key that
 // moved for a real reason is a different question and not a reprint.
 const KEYTEXT_OK = {
+  19: ['Henoch–Schönlein purpura', 'Henoch-Schönlein purpura', 'the en dash printed as a hyphen, p.1633'],
   22: ['Thalassaemia major', 'Thalassemia major', 'the same key respelled American, p.1639'],
+  25: ['Cyanotic spell', 'Cyanotic spells', 'the key pluralised, p.1645'],
   38: ['Occur between the ages of 6 months and 5 years', 'Occur between ages of 6 months and 5 years', 'the article dropped, p.1671'],
   40: ['Hb concentration falls after birth until around 7 weeks', 'Hemoglobin concentration falls after birth until around 7 weeks', 'Hb spelled out, p.1675'],
+  51: ['Spinal muscle atrophy', 'Spinal muscular atrophy', 'muscle respelled muscular, p.1697'],
   56: ['Repeated infections', 'Susceptibility to infections', 'the same rewording this entry already records for the Model Final Exam 1 printing, p.1707'],
   65: ['Prenatal cause', 'Prenatal', 'the option shortened, p.1725'],
   69: ['Observation and follow up', 'Observation and follow-up', 'hyphenated, p.1733'],
@@ -85,7 +92,7 @@ const OPTCOUNT_OK = {
 
 // The proof-of-run marks.  Each measures 0 in its own file before the pass; see the header.
 const MARKS = [
-  { file: EP2, mark: 'reprinted in ' + EXAM + ', p.1', expect: 47 },
+  { file: EP2, mark: 'reprinted in ' + EXAM + ', p.1', expect: 51 },
   { file: EP1, mark: 'reprinted in Pediatrics endpoint part2.pdf, ' + EXAM + ', p.1', expect: 2 },
 ];
 
@@ -116,14 +123,25 @@ const PLAN = [
     tail: "dropping the name “Lee,” the Chinese ethnicity and the 2-years-in-the-UK detail, reordering the options, and substituting “Bacterial infection” for “Primary sclerosing cholangitis” as the unkeyed filler option; Hepatitis B is still keyed, now as option D" },
   { n: 18, p: 1631, id: 'pedep2-mf1-7', file: EP2, sep: ',',
     tail: "giving the murmur as grade V/VI rather than grade I/VI — a discrepancy recorded here, not reconciled; the options and the key are unchanged" },
+  // Late ruling.  Never compared by any of the three adjudications: no candidate was generated for
+  // it and the silence was recorded as a pass.  Verified on the two page images before being added.
+  { n: 19, p: 1633, id: 'pedep2-ren-19', file: EP2, sep: ',',
+    tail: "giving the boy’s age as 6 rather than 4, printing “He is febrile” where this entry prints “He is afebrile” — a discrepancy recorded here, not reconciled — dropping the sentence “Routine blood tests are normal.”, and printing the third and fourth options in American spelling and without their parentheticals, as “Acute lymphoblastic leukemia” and “Vitamin C deficiency”; the key stays fifth and names the same answer, its en dash printed as a hyphen" },
   { n: 20, p: 1635, id: 'pedep2-neu-21', file: EP2, sep: ',',
     tail: "again without the “Tet spells” option; the key text is unchanged" },
   { n: 21, p: 1637, id: 'pedep2-mf1-71', file: EP2, sep: ',',
     tail: "with the stem condensed into shorter sentences; the values, the options and the key are unchanged" },
   { n: 22, p: 1639, id: 'pedep2-hem-41', file: EP2, sep: ',',
     tail: "giving the girl’s age as 11 months rather than 8, dropping the Greek-Cypriot ethnicity and the 25th-centile birth detail, and rewording “fallen” as “dropped”; the labs, options and key are unchanged" },
+  // Late ruling, same cause as n19 — no candidate, so no verdict.  Verified on both page images.
+  { n: 23, p: 1641, id: 'pedep2-dp-17', file: EP2, sep: ',',
+    tail: "dropping “by the educational psychologist” from the referral and condensing the presenting picture to “He is hyperactive and struggles to concentrate in school”, and printing the fourth and fifth options as “Constantly talking and interrupting others” and “Fidgeting with his hands while sitting” against this entry’s longer wordings; the option order, the option count and the key are unchanged" },
   { n: 24, p: 1643, id: 'pedep2-end-13', file: EP2, sep: ',',
     tail: "giving the child’s age as 2 months rather than describing him only as a newborn; the options and the key are unchanged" },
+  // Late ruling, same cause as n19.  ⚠️ This target's source line is DOUBLE-quoted, so this tail
+  // must never contain a straight double quote; mergeCitation refuses it, correctly.
+  { n: 25, p: 1645, id: 'pedep2-mf1-74', file: EP2, sep: ',',
+    tail: "printing the chest X-ray sign as “boot-shaped heart” where this entry prints “boat-shaped heart” — a discrepancy recorded here, not reconciled — dropping the four-limb blood-pressure sentence, and asking for “the other possible clinical presentation” rather than “the possible clinical presentation”; the four options keep their order, the key stays third and is pluralised to “Cyanotic spells”, and the first and fourth options are printed as “Recurrent chest infection” and “Choking while feeding”" },
   { n: 28, p: 1651, id: 'pedep2-mf1-49', file: EP2, sep: ',',
     tail: "with the stem reworded and condensed — the diagnosis confirmation and the parents’ concern are dropped in favour of a direct two-sentence case plus question; the options and the key are unchanged" },
   { n: 30, p: 1655, id: 'pedep-neo-20', file: EP1, sep: ',',
@@ -162,6 +180,11 @@ const PLAN = [
     tail: "with option A printed as “Enzyme deficiency GPO” rather than “Enzyme deficiency”; the key, Amino acid replacement, is unchanged" },
   { n: 49, p: 1693, id: 'pedep2-mf1-65', file: EP2, sep: ',',
     tail: "with an additional option, “High indirect bilirubin,” printed between the key and “Positive Coombs test” — a five-option printing where this printing carries only four; the key, “Low reticulocyte count,” is unchanged and unmoved" },
+  // Late ruling.  Adjudication B says in its own words that this row "carried no candidate at all,
+  // per brief" and passed it on that ground.  Stem-overlap ranking is blind here: a one-sentence
+  // stem scores 0.600 against its own twin.  Option-pool overlap plus key-text identity found it.
+  { n: 51, p: 1697, id: 'pedep2-mf2-3', file: EP2, sep: ',',
+    tail: "with “disorder” and “fasciculations” inverted in number against this entry’s “disorders” and “fasciculation”, the quotation marks straight rather than curly, the key respelled “Spinal muscular atrophy”, and the fourth option printed as “Neuromuscular junction disorders”; the five options keep their order and the key stays first, and the exam prints a shorter explanation box of its own which adds nothing this entry’s box does not already say" },
   { n: 52, p: 1699, id: 'pedep2-mf2-69', file: EP2, sep: ',',
     tail: "with option E printed as “Bone marrow radiation relapse” rather than “Bone marrow radiation”; the key, Intrathecal chemotherapy, is unchanged" },
   { n: 54, p: 1703, id: 'pedep2-mf1-70', file: EP2, sep: ';',
