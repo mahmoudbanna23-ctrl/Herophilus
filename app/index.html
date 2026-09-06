@@ -4250,7 +4250,8 @@ function renderNav(){
   const ls=sess();
   h+=`<button class="nav-item ${view.name==='session'?'on':''}" onclick="go({name:'session'})">
     <span class="ic">${ico('clepsydra',17)}</span> Study session${
-      ls?`<span class="badge-due">${clMMSS(phaseLeft())}</span>`:'<span class="cnt">—</span>'}</button>`;
+      ls?`<span class="badge-due" id="navSessClock">${clMMSS(phaseLeft())}</span>`
+        :'<span class="cnt" id="navSessClock">—</span>'}</button>`;
   h+=`<button class="nav-item ${view.name==='review'?'on':''}" onclick="go({name:'review'})"><span class="ic">${ico('hourglass',17)}</span> Review deck
     ${due?`<span class="badge-due">${due}</span>`:'<span class="cnt">0</span>'}</button>`;
   h+=`<button class="nav-item ${view.name==='flagged'?'on':''}" onclick="go({name:'flagged'})"><span class="ic">${ico('laurel',17)}</span> Flagged<span class="cnt">${flagged}</span></button>`;
@@ -4977,6 +4978,18 @@ function sessRing(frac,color){
 }
 /* The tick repaints these four nodes and nothing else. A full render() every
    second would rebuild the page under the reader's cursor once a second. */
+/* The rail clock is drawn by renderNav(), which runs only on navigation — so
+   for a whole year it showed whatever the time was when the page last
+   rendered, and looked "frozen" everywhere except the session view (where
+   answering a question forces a render and hides the fault). It is repainted
+   from the tick here instead, on every view. */
+function paintNavClock(){
+  const n=$('navSessClock'); if(!n)return;
+  const s=sess();
+  if(!s){ if(n.className!=='cnt'){n.className='cnt'; n.textContent='—'} return }
+  if(n.className!=='badge-due')n.className='badge-due';
+  n.textContent=clMMSS(phaseLeft());
+}
 function paintSessionLive(){
   const s=sess(); if(!s||view.name!=='session')return;
   const t=$('sessTime'); if(!t)return;
@@ -6097,10 +6110,23 @@ function sessStartTick(){
   CLEP.tickT=setInterval(()=>{
     const s=sess(); if(!s){sessStopTick();return}
     if(!s.paused&&phaseLeft()<=0){advancePhase(false);return}
-    clepPaint(); paintSessionLive();
+    clepPaint(); paintNavClock(); paintSessionLive();
   },1000);
 }
 function sessStopTick(){ clearInterval(CLEP.tickT); CLEP.tickT=null }
+/* A backgrounded tab has its one-second interval throttled hard, and iOS
+   Safari suspends it outright — often for good. The phase is stored as
+   timestamps, so no time is actually lost; what is lost is the repainting.
+   Restart the interval and redraw from those timestamps the moment the tab is
+   looked at again, or the clocks keep showing the minute the tab went away. */
+document.addEventListener('visibilitychange',()=>{
+  if(document.hidden||!sess())return;
+  /* showGate() stops the tick on purpose — nobody is studying on the gate —
+     and enterProfile() is what starts it again. Do not undo that here. */
+  const g=$('gate'); if(g&&!g.classList.contains('hide'))return;
+  sessStartTick();
+  clepPaint(); paintNavClock(); paintSessionLive();
+});
 
 /* ============ MODALS / IO ============ */
 function showModal(html,wide){const m=$('modal');m.innerHTML=html;if(m.classList){wide?m.classList.add('wide'):m.classList.remove('wide')}$('modalBg').classList.add('show')}
