@@ -31,6 +31,7 @@ const ROOT = path.resolve(__dirname, '..', '..');
 const CHROME = 'C:/Program Files/Google/Chrome/Application/chrome.exe';
 const EDGE = 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe';
 const browser = fs.existsSync(CHROME) ? CHROME : EDGE;
+const SELFTEST = process.argv.includes('--selftest');
 
 // A double dash anywhere in the workspace path kills both browsers.
 const WORK = path.join(os.tmpdir(), 'herophilus_boot');
@@ -89,7 +90,11 @@ const report = [
   '  Promise.resolve(p).catch(function(e){window.__errs.push("enterProfile REJECTED: "+e);}).then(function(){setTimeout(measure,600);});',
   '},1200);});',
   'function measure(){',
-  '  var r={errs:window.__errs.slice(0,40)};',
+  // r.errs is filled at the END of this function, never here. The module walk
+  // below pushes into window.__errs, so a snapshot taken now reports zero errors
+  // for a walk that threw — which is exactly how this harness once passed a
+  // broken app. Capture last, after everything that can fail has run.
+  '  var r={};',
   '  try{r.questions=(typeof QUESTIONS!=="undefined")?QUESTIONS.length:-1;}catch(e){r.questions="THREW "+e.message;}',
   // THEORY is an OBJECT keyed by chapter id, not an array — .length is undefined.
   '  try{r.theory=(typeof THEORY!=="undefined")?Object.keys(THEORY).length:-1;}catch(e){r.theory="THREW "+e.message;}',
@@ -100,12 +105,16 @@ const report = [
   '  r.modCards=document.querySelectorAll(".mod-name").length;',
   // Chapter rows only exist inside a module view, so open each module in turn.
   // A disabled row is an EMPTY chapter, which is deliberate — count both.
+  // --selftest makes the module walk throw on purpose. A harness that has never
+  // been seen failing is not evidence that it can fail: this is how we check.
+  SELFTEST ? '  (function(){var g=go;go=function(v){if(v&&v.name==="module")throw new Error("selftest injected fault");return g(v);};})();' : '',
   '  r.chapRows=0; r.chapLive=0; r.perMod={};',
   '  try{MODULES.forEach(function(m){go({name:"module",id:m.id});',
   '    var rows=document.querySelectorAll(".ch-row");',
   '    r.perMod[m.id]=rows.length; r.chapRows+=rows.length;',
   '    r.chapLive+=document.querySelectorAll(".ch-row:not([disabled])").length;});',
   '    go({name:"home"});}catch(e){window.__errs.push("module walk THREW: "+e.message);}',
+  '  r.errs=window.__errs.slice(0,40);',
   '  document.title="BOOTREPORT "+JSON.stringify(r);',
   '}',
   '</script>',
