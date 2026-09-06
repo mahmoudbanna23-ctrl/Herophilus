@@ -3672,6 +3672,7 @@ function bkToSec(id){
   bkPaint();
 }
 function openTheoryFor(qid){
+  if(THEORY_LOCKED)return;
   const t=qTheory(qid);
   if(!t)return;
   const q=QUESTIONS.find(x=>x.id===qid);
@@ -4446,7 +4447,10 @@ function manageProfiles(){
 
 /* ============ ROUTER ============ */
 let view={name:'home'};
-function go(v){view=v;render();window.scrollTo(0,0);closeRail()}
+/* The backstop for the one route that outlives a lock: a student who bookmarked
+   a note, or whose last view was restored from a session on another device. */
+function go(v){if(v&&v.name==='theory'&&THEORY_LOCKED)v={name:'home'};
+  view=v;render();window.scrollTo(0,0);closeRail()}
 /* Screens where the learner READS for minutes at a time. The cinematic layer
    pauses the ambient orbs on these, so nothing drifts beside a clinical stem.
    Everything else is a browse screen and stays alive. */
@@ -4536,7 +4540,12 @@ function renderNav(){
   let h=`<button class="nav-item ${view.name==='home'?'on':''}" onclick="go({name:'home'})"><span class="ic">${ico('temple',17)}</span> Dashboard</button>`;
   h+=`<button class="nav-item ${view.name==='schedule'?'on':''}" onclick="go({name:'schedule'})"><span class="ic">${ico('tablet',17)}</span> Schedule</button>`;
   h+=`<button class="nav-item ${view.name==='moved'?'on':''}" onclick="go({name:'moved'})"><span class="ic">${ico('shuffle',17)}</span> Rescheduled${moves?`<span class="badge-due">${moves}</span>`:'<span class="cnt">0</span>'}</button>`;
-  h+=`<button class="nav-item ${view.name==='theory'?'on':''}" onclick="go({name:'theory'})"><span class="ic">${ico('scroll',17)}</span> Theory<span class="cnt">${theoryCount()}</span></button>`;
+  /* Theory sits back exactly the way a locked subject does — same disabled row,
+     same "soon" count — because it is the same promise: the section is coming,
+     it is not broken and it is not gone. */
+  h+=THEORY_LOCKED
+    ? `<button class="nav-item" disabled style="opacity:.45"><span class="ic">${ico('scroll',17)}</span> Theory<span class="cnt">soon</span></button>`
+    : `<button class="nav-item ${view.name==='theory'?'on':''}" onclick="go({name:'theory'})"><span class="ic">${ico('scroll',17)}</span> Theory<span class="cnt">${theoryCount()}</span></button>`;
   h+=`<div class="nav-label">Modules</div>`;
   MODULES.forEach(m=>{
     if(isLocked(m.id)){
@@ -4893,7 +4902,7 @@ function vCase(p,q,m,prev){
       <div class="ex-body">${hasExp?md(q.explanation):'<div class="noexp">No explanation came with this case.</div>'}
       ${q.objective?`<div class="objective"><b>${ico('laurel',15)} Educational objective</b>${md(q.objective).replace(/<\/?p>/g,'')}</div>`:''}
       </div></div>`;
-    const th=qTheory(q.id);
+    const th=THEORY_LOCKED?null:qTheory(q.id);
     if(th)h+=`<button class="readtheory" onclick="openTheoryFor('${q.id}')">
       ${ico('scroll',16)} <span>Read the notes on this &mdash; <b>${esc(th.h)}</b></span>
       <span style="margin-left:auto">&rarr;</span></button>`;
@@ -5008,7 +5017,7 @@ function vQuiz(p){
       ${q.objective?`<div class="objective"><b>${ico('laurel',15)} Educational objective</b>${md(q.objective).replace(/<\/?p>/g,'')}</div>`:''}
       </div></div>`;
 
-    const th=qTheory(q.id);
+    const th=THEORY_LOCKED?null:qTheory(q.id);
     if(th)h+=`<button class="readtheory" onclick="openTheoryFor('${q.id}')">
       ${ico('scroll',16)} <span>Read the notes on this &mdash; <b>${esc(th.h)}</b></span>
       <span style="margin-left:auto">&rarr;</span></button>`;
@@ -6211,8 +6220,11 @@ function doSearch(){
     if(idx>=0)hits.push({kind:'q',q:q,idx:idx});
     if(hits.length>=40)break;
   }
+  /* THEORY is still indexed and still searchable in the code; it is simply not
+     searched while the section is held back, because a result the student
+     cannot open is worse than no result. */
   const thits=[];
-  Object.keys(THEORY).forEach(ch=>{
+  if(!THEORY_LOCKED)Object.keys(THEORY).forEach(ch=>{
     (THEORY[ch].sections||[]).forEach(s=>{
       const hay=(s.h+' '+(s.body||'')+' '+JSON.stringify(s.table||'')+' '+JSON.stringify(s.flow||'')).toLowerCase();
       const idx=hay.indexOf(v);
@@ -6222,7 +6234,7 @@ function doSearch(){
   thits.sort((a,b)=>a.idx-b.idx);
   hits.sort((a,b)=>a.idx-b.idx);
   if(!hits.length&&!thits.length){
-    box.innerHTML='<div class="res-empty">Nothing matched \u2014 try a shorter term. Search covers questions, explanations and the notes.</div>';
+    box.innerHTML='<div class="res-empty">Nothing matched \u2014 try a shorter term. Search covers questions'+(THEORY_LOCKED?' and explanations.':', explanations and the notes.')+'</div>';
     box.classList.add('show');return;
   }
   let h='';

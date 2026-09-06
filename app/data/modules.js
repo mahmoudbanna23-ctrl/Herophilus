@@ -19,6 +19,19 @@
    comes back untouched when the id goes. */
 const LOCKED_MODULES = ['ophtho', 'neuropsych'];
 
+/* The Theory section as a whole, not one subject's share of it. The summaries
+   in T_ENT/T_PEDS/T_OPHTHO/T_NEURO were written to be read alongside the
+   questions; the real book chapters replace them, and shipping a summary a
+   student would learn from and then have to unlearn is worse than shipping
+   nothing. So the notes are held back until the chapters exist.
+
+   Unlocking is setting this to false. Nothing else — every entry point reads
+   it: the rail item, the "Read the notes on this" link under an explanation,
+   the search results, and go() itself as the backstop for a stale bookmark.
+   THEORY itself stays populated so that qTheory(), theoryCount() and the
+   search index keep working the day the flag flips. */
+const THEORY_LOCKED = true;
+
 const MODULES = [
   {id:'ent', name:'ENT', icon:'ear', color:'var(--ent)', hex:'#b4472f', groups:[
     {name:'Ear', chapters:[
