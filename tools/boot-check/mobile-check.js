@@ -178,7 +178,8 @@ const report = [
   '  return n;',
   '}',
   'function walk(){',
-  '  var out={vw:document.documentElement.clientWidth,iw:window.innerWidth,views:{}};',
+  '  var out={vw:document.documentElement.clientWidth,iw:window.innerWidth,'
+  + 'hov:matchMedia("(hover:none)").matches,ptr:matchMedia("(pointer:coarse)").matches,views:{}};',
   '  var names=' + JSON.stringify(VIEWS) + ';',
   '  var firstMod=(typeof MODULES!=="undefined"&&MODULES.length)?MODULES[0].id:null;',
   '  var someQ=(typeof QUESTIONS!=="undefined"&&QUESTIONS.length)?QUESTIONS[0]:null;',
@@ -265,6 +266,13 @@ async function measure(send, vp) {
   await send('Emulation.setDeviceMetricsOverride', {
     width: vp.w, height: vp.h, deviceScaleFactor: 1, mobile: vp.w < 768,
   });
+  /* The metrics override sets the size but NOT the pointer: measured
+     2026-09-06, a page under it reports (hover:none) false and
+     (pointer:coarse) false, so every hover: rule in the app resolved the
+     desktop way and anything gated on hover looked reachable when on a phone
+     it is not. Emulating touch is what makes those media queries true, so the
+     tap-target count below is counting the sizes a finger actually gets. */
+  await send('Emulation.setTouchEmulationEnabled', { enabled: true, maxTouchPoints: 5 });
   await send('Page.navigate', { url: url });
 
   for (let i = 0; i < 120; i++) {
@@ -314,7 +322,11 @@ async function measure(send, vp) {
     const got = rep.vw;
     const honest = got === vp.w ? '' : '   REQUESTED ' + vp.w + ', GOT ' + got;
     if (got !== vp.w) bad++;
-    console.log('\n' + vp.name + '  (layout viewport ' + got + 'px, visual ' + (rep.iw || got) + 'px)' + honest);
+    /* Print the pointer alongside the width. A run where hover:none is false is
+       a run measuring a mouse, and the tap-target counts below mean nothing. */
+    const pointer = rep.hov ? 'finger' : 'MOUSE — hover: rules resolved the desktop way';
+    console.log('\n' + vp.name + '  (layout viewport ' + got + 'px, visual ' + (rep.iw || got)
+      + 'px, ' + pointer + ')' + honest);
 
     for (const [name, v] of Object.entries(rep.views)) {
       if (typeof v === 'string') { console.log('  ' + name.padEnd(10) + v); bad++; continue; }

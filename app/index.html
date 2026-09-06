@@ -303,6 +303,21 @@ input{font-family:inherit;font-size:inherit}
 .topbar-actions{margin-left:auto;display:flex;gap:7px;align-items:center}
 .tb-btn{padding:7px 12px;border-radius:10px;font-size:12.5px;color:var(--ink-3);font-weight:700;transition:background .13s,transform .13s}
 .tb-btn:hover{background:var(--bg-2);color:var(--tx);transform:translateY(-1px)}
+/* Touch. The nav rows are 36px tall and the topbar buttons 33-36px, both under
+   the 44px minimum. The nav is a vertical list, so it can simply grow. The
+   topbar cannot: four 44px buttons would push a sticky bar to ~70px and take
+   that height off every screen, so those get an invisible 44px hit area
+   centred on the button instead and the bar keeps its size. The 14px gap
+   between them is wider than the 3px each overlay adds, so they do not
+   overlap — two overlapping targets only move the mis-tap elsewhere. */
+@media(hover:none){
+  .nav-item{min-height:44px}
+  .tb-btn{position:relative}
+  .tb-btn::after{
+    content:"";position:absolute;left:50%;top:50%;width:100%;height:44px;
+    min-width:44px;transform:translate(-50%,-50%);
+  }
+}
 
 .page{padding:28px;max-width:1180px;width:100%;margin:0 auto;flex:1}
 
@@ -572,6 +587,16 @@ button.card:active:not(:disabled){transform:translate(1px,1px);box-shadow:0 2px 
 .mk.done.on{background:var(--ok);color:#fff}
 .mk.miss.on{background:var(--bad);color:#fff}
 .mk .lbl{position:absolute;opacity:0;pointer-events:none}
+/* Touch. These are 38px, under the 44px minimum, and the two of them sit 7px
+   apart while meaning opposite things — the schedule renders 119 rows, so 238
+   of them are on the page at once and a mis-tap is likeliest exactly here.
+   Growing the target without growing the gap would trade one error for
+   another, so both move. A portrait tablet is 768px and is still a finger, so
+   this is keyed on the pointer as well as on the width, not on width alone. */
+@media(max-width:700px),(hover:none){
+  .day-marks{gap:10px}
+  .mk{width:44px;height:44px;border-radius:13px;font-size:17px}
+}
 
 
 .track{
@@ -2383,6 +2408,23 @@ button.card.locked:hover .mod-art{opacity:.42}
   font:700 12px/1 var(--font-body);display:flex;align-items:center;justify-content:center;
 }
 .cl-tool:hover{background:var(--cl-2);color:#241502;border-color:var(--cl-2)}
+/* A phone has no hover, so the only thing left to reveal these is
+   :focus-within — which means blind-tapping a control you cannot see to find
+   out where it is. Where there is no pointer to hover with, show them, and
+   give them and the dismiss a real target. 36px with an 8px gap is a 44px
+   pitch, so the invisible 44px hit areas tile without overlapping: two
+   overlapping targets would just move the mis-tap somewhere else. */
+@media(hover:none){
+  .cl-tools{opacity:1;gap:8px}
+  .cl-tool{width:36px;height:36px;font-size:15px;position:relative}
+  /* .cl-x is NOT in that list on purpose: it is position:absolute at a corner
+     of the speech bubble, so it already anchors its own ::after, and setting
+     it relative here would drop it back into the flow. */
+  .cl-tool::after,.cl-x::after{
+    content:"";position:absolute;left:50%;top:50%;width:44px;height:44px;
+    transform:translate(-50%,-50%);
+  }
+}
 
 /* ---- collapsed ---------------------------------------------------------- */
 .cl-mini{
