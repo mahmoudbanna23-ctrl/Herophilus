@@ -99,6 +99,14 @@
   --rail-2:#16202e;
   --rail-3:#27364b;
   --rail-text:#b9a88d;
+  /* Secondary text in the rail — the subtitle, the section labels, the counts,
+     the streak caption. Five rules each carried their own hardcoded lavender
+     (#a79ddb, #a89fd4, #9c92cc, #c2bbe4), left over from a palette this app no
+     longer uses: a cool purple secondary sitting underneath a warm sand
+     primary, which is the seam that makes a rail read as two designs stacked.
+     Warm, and one value. Measured 4.87:1 against the rail's darker gradient
+     stop, so the small uppercase labels clear AA on their own. */
+  --rail-dim:#8c7f6a;
 
   /* module colours — the Greek set */
   --ent:#b4472f;
@@ -252,7 +260,7 @@ input{font-family:inherit;font-size:inherit}
   box-shadow:0 0 0 1px rgba(217,180,74,.4),0 4px 12px rgba(0,0,0,.45);
 }
 .blip img,.gmark img{width:100%;height:100%;display:block;border-radius:50%}
-.rail-sub{font-size:10.5px;color:#a79ddb;margin-top:4px;letter-spacing:.09em;text-transform:uppercase;font-weight:700}
+.rail-sub{font-size:10.5px;color:var(--rail-dim);margin-top:4px;letter-spacing:.09em;text-transform:uppercase;font-weight:700}
 
 .streak{
   margin:8px 12px 4px;padding:10px 12px;border-radius:var(--r-3);
@@ -261,10 +269,10 @@ input{font-family:inherit;font-size:inherit}
 }
 .streak .fl{font-size:17px}
 .streak .n{color:#ffd977;font-weight:900;font-size:16px;line-height:1}
-.streak .t{font-size:10.5px;color:#a89fd4;line-height:1.25;font-weight:600}
+.streak .t{font-size:10.5px;color:var(--rail-dim);line-height:1.25;font-weight:600}
 
 .nav{padding:6px 10px 20px;flex:1}
-.nav-label{font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:#9c92cc;padding:15px 8px 6px;font-weight:800}
+.nav-label{font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--rail-dim);padding:15px 8px 6px;font-weight:800}
 .nav-item{
   display:flex;align-items:center;gap:10px;width:100%;text-align:left;
   padding:9px 11px;border-radius:var(--r-3);color:var(--rail-text);font-size:13.5px;font-weight:600;
@@ -273,8 +281,8 @@ input{font-family:inherit;font-size:inherit}
 .nav-item:hover{background:var(--rail-2);color:#fff;transform:translateX(3px)}
 .nav-item.on{background:var(--rail-3);color:#fff;font-weight:800;box-shadow:inset 3px 0 0 var(--gold)}
 .nav-item .ic{width:19px;text-align:center;flex-shrink:0;font-size:15px}
-.nav-item .cnt{margin-left:auto;font-size:11px;color:#a79ddb;font-variant-numeric:tabular-nums;font-weight:700}
-.nav-item.on .cnt{color:#c2bbe4}
+.nav-item .cnt{margin-left:auto;font-size:11px;color:var(--rail-dim);font-variant-numeric:tabular-nums;font-weight:700}
+.nav-item.on .cnt{color:var(--rail-text)}
 .badge-due{
   margin-left:auto;background:var(--ent);color:#fff;font-size:10.5px;font-weight:900;
   padding:2px 7px;border-radius:var(--r-pill);min-width:20px;text-align:center;
@@ -355,7 +363,6 @@ h2{font-size:18px;font-weight:800;letter-spacing:-.02em;margin:0 0 13px}
 .eyebrow{
   display:inline-block;font-size:10px;letter-spacing:.13em;text-transform:uppercase;font-weight:900;
   padding:4px 11px;border-radius:var(--r-pill);background:var(--fill);color:#fff;margin-bottom:11px;
-  transform:rotate(-1.2deg);
 }
 
 /* ---------- Cards ---------- */
@@ -393,6 +400,16 @@ button.card:active:not(:disabled){transform:translate(1px,1px);box-shadow:0 2px 
 .ringmeta{flex:1;min-width:0}
 .ringmeta .a{font-size:19px;font-weight:900;font-variant-numeric:tabular-nums;line-height:1.1}
 .ringmeta .b{font-size:11.5px;color:var(--ink-3);font-weight:600}
+/* Stands in for the ring on a subject nobody has opened. Height is matched to
+   the ring's 52px so a card that has just earned its first answer changes what
+   it says without changing what it measures. Colour is --tx, not the module's
+   own: brand colour as text on the card ground has not been measured, and §6
+   says that is chosen by measurement rather than habit. */
+.mod-card .startrow{min-height:52px}
+.mod-card .startgo{
+  font-family:var(--font-display);font-size:13.5px;font-weight:600;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--tx);
+}
 
 .stat{
   background:var(--card);border:2.5px solid var(--line-2);border-radius:var(--r);padding:15px;
@@ -465,7 +482,7 @@ button.card:active:not(:disabled){transform:translate(1px,1px);box-shadow:0 2px 
 }
 .stem p{margin:0 0 12px}
 .stem p:last-child{margin-bottom:0}
-.stem table{border-collapse:separate;border-spacing:0;width:100%;margin:13px 0;font-size:13px;font-family:"Nunito",sans-serif;border:2px solid var(--line-2);border-radius:var(--r-2);overflow:hidden}
+.stem table{border-collapse:separate;border-spacing:0;width:100%;margin:13px 0;font-size:13px;font-family:var(--font-body);font-variant-numeric:tabular-nums;border:2px solid var(--line-2);border-radius:var(--r-2);overflow:hidden}
 .stem th,.stem td{border-bottom:1.5px solid var(--line);padding:7px 10px;text-align:left}
 .stem th{background:var(--bg-2);font-weight:800}
 .stem tr:last-child td{border-bottom:none}
@@ -975,7 +992,7 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
 .railprof .rav img{width:100%;height:100%;object-fit:cover}
 .railprof .rn{font-size:13px;font-weight:800;color:#fff;line-height:1.2;flex:1;min-width:0;
   overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.railprof .rs{font-size:10px;color:#a79ddb;font-weight:700}
+.railprof .rs{font-size:10px;color:var(--rail-dim);font-weight:700}
 
 
 /* ---------- Cloud sync ---------- */
@@ -2061,6 +2078,7 @@ button.card:active:not(:disabled){transform:translateY(-1px)}
    restated here, and the whole rail is re-measured after. */
 :root[data-theme="light"] .rail{
   --rail:#eae2d3; --rail-2:#ded3bf; --rail-3:#cec0a6; --rail-text:#4f4536;
+  --rail-dim:#60533e;   /* the one value four separate light overrides used to repeat */
   /* The token alone does NOTHING here. The cinematic layer re-declares .rail
      with a hardcoded dark gradient, so background-color computes to
      transparent and --rail is never consulted. Found by reading the computed
@@ -2077,22 +2095,16 @@ button.card:active:not(:disabled){transform:translateY(-1px)}
      On parchment the disc already stands out, so it becomes a plain soft edge */
   box-shadow:0 0 0 1px rgba(122,90,20,.30),0 3px 9px rgba(60,45,20,.20);
 }
-:root[data-theme="light"] .rail-sub,
-:root[data-theme="light"] .nav-label,
-:root[data-theme="light"] .railprof .rs{color:#60533e}
 :root[data-theme="light"] .nav-item:hover,
 :root[data-theme="light"] .nav-item.on,
 :root[data-theme="light"] .railprof .rn{color:#2a2118}
-:root[data-theme="light"] .nav-item .cnt{color:#60533e}
-:root[data-theme="light"] .nav-item.on .cnt{color:#4f4536}
 :root[data-theme="light"] .railprof .rav{border-color:rgba(42,33,24,.18)}
-:root[data-theme="light"] .railsync{background:rgba(42,33,24,.055);color:#60533e}
+:root[data-theme="light"] .railsync{background:rgba(42,33,24,.055);color:var(--rail-dim)}
 :root[data-theme="light"] .streak{
   background:linear-gradient(135deg,rgba(217,180,74,.26),rgba(180,71,47,.14));
   border-color:rgba(154,107,31,.38);
 }
 :root[data-theme="light"] .streak .n{color:#7a5200}
-:root[data-theme="light"] .streak .t{color:#60533e}
 :root[data-theme="light"] .modal{
   background:linear-gradient(160deg,rgba(255,255,255,.98),rgba(243,247,252,.97));
   border:1px solid var(--line-2);
@@ -4658,14 +4670,30 @@ function vHome(p){
   const done=QUESTIONS.filter(q=>isAnswered(q.id)).length;
   const acc=accuracy(QUESTIONS);
   const due=dueNow().length;
-  let h=`<div class="eyebrow">Second term · July–August</div><h1>Where you stand</h1>
-  <p class="page-sub">${total} questions loaded. Work through them by chapter, by module, or build a custom set.</p>
-  <div class="grid g4" style="margin-bottom:30px">
+  /* A profile that has answered nothing has nothing to stand on, and the four
+     stat tiles say so in the bluntest possible way: 0 / — / 0 / 0. That is an
+     empty scoreboard shown to somebody who has not played yet, and it was the
+     first sentence the app spoke to a new colleague. The first run asks for a
+     subject instead, and puts the subjects directly underneath the question.
+     The moment one answer lands the dashboard becomes the ledger it was built
+     to be — nothing is removed, it is deferred until it means something. */
+  const fresh=done===0;
+
+  let h=`<div class="eyebrow">Second term · July–August</div>`;
+  h+=fresh
+    ?`<h1>Choose a subject to begin</h1>
+      <p class="page-sub">${total} questions, transcribed from the printed banks. Start anywhere — every chapter remembers where you stopped.</p>`
+    :`<h1>Where you stand</h1>
+      <p class="page-sub">${total} questions loaded. Work through them by chapter, by module, or build a custom set.</p>`;
+
+  if(!fresh){
+    h+=`<div class="grid g4" style="margin-bottom:30px">
     <div class="stat"><span class="emo">${ico('stylus',20)}</span><div class="n">${done}<span style="font-size:15px;color:var(--ink-4)">/${total}</span></div><div class="l">Answered</div></div>
     <div class="stat"><span class="emo">${ico('target',20)}</span><div class="n" style="color:${accColor(acc)}">${acc===null?'—':acc+'%'}</div><div class="l">Accuracy</div></div>
     <div class="stat"><span class="emo">${ico('hourglass',20)}</span><div class="n" style="color:${due?'var(--ent)':'var(--ok)'}">${due}</div><div class="l">Due for review</div></div>
     <div class="stat"><span class="emo">${ico('laurel',20)}</span><div class="n">${Object.keys(S.flags).filter(k=>S.flags[k]).length}</div><div class="l">Flagged</div></div>
   </div>`;
+  }
 
   /* openModules(), not MODULES: a student who practised a subject before it was
      locked still has its place saved, and offering to continue it would open a
@@ -4681,8 +4709,9 @@ function vHome(p){
   const t=todayISO();
   const rows=buildSchedule().rows;
   const today=rows.find(d=>d.date===t);
+  let todayHTML='';
   if(today&&today.items&&today.items.length){
-    h+=`<h2>${ico('laurel',20)} On today</h2><div class="card" style="margin-bottom:28px;--c:rgba(109,76,125,.4)">
+    todayHTML=`<h2>${ico('laurel',20)} On today</h2><div class="card" style="margin-bottom:28px;--c:rgba(109,76,125,.4)">
       ${today.items.map(it=>`<div class="day-line">${it.label?`<span class="tag" style="background:${it.hex}">${esc(it.label)}</span>`:''}${esc(it.text)}</div>`).join('')}
       </div>`;
   }
@@ -4691,7 +4720,7 @@ function vHome(p){
      from the user's own supplied image (Design\Images\Father of anatomy 2.jpg) — this
      is NOT from the Semester 8 course material and carries no page citation,
      which is why it is kept to biography and never touches clinical content. */
-  h+=`<section class="hero-panel">
+  const heroHTML=`<section class="hero-panel">
     <div class="hp-art"><img src="assets/herophilus-bust.jpg" alt="Engraved bust of Herophilus" loading="lazy"></div>
     <div class="hp-txt">
       <div class="hp-kicker">Alexandria · c. 335–280 BC</div>
@@ -4702,7 +4731,7 @@ function vHome(p){
     </div>
   </section>`;
 
-  h+=`<h2>Modules</h2><div class="grid g3 mod-grid">`;
+  let modsHTML=`<h2>${fresh?'Subjects':'Modules'}</h2><div class="grid g3 mod-grid">`;
   MODULES.forEach(m=>{
     const qs=qsInModule(m.id);
     const d=qs.filter(q=>isAnswered(q.id)).length;
@@ -4713,7 +4742,7 @@ function vHome(p){
        as an app that only covers two subjects — but shows no counts and no
        progress ring, because both would be zero and a zero reads as broken. */
     if(isLocked(m.id)){
-      h+=`<div class="card mod-card locked" style="--c:${m.color}" aria-disabled="true">
+      modsHTML+=`<div class="card mod-card locked" style="--c:${m.color}" aria-disabled="true">
         <span class="mod-art" style="--art:url('assets/${MOD_ART[m.id]}.jpg')"></span>
         <span class="soon">Coming soon</span>
         <div class="mod-info">
@@ -4723,18 +4752,33 @@ function vHome(p){
       </div>`;
       return;
     }
-    h+=`<button class="card mod-card" style="--c:${m.color}" onclick="go({name:'module',id:'${m.id}'})">
+    /* An untouched subject has no ring worth drawing. A 0% arc, a dash for
+       accuracy and "0/1598 answered" are three separate ways of printing the
+       same nothing, and printed three times they read as a fault rather than a
+       beginning. The card says what to do instead, and earns its ring with the
+       first answer. Same height either way, so the grid does not jump when one
+       subject crosses over. */
+    const foot=d===0
+      ?`<div class="ringrow startrow"><span class="startgo">Start studying</span></div>`
+      :`<div class="ringrow">${ring(pct,m.hex)}
+          <div class="ringmeta"><div class="a" style="color:${accColor(a)}">${a===null?'—':a+'%'}</div>
+          <div class="b">${d}/${qs.length} answered</div></div></div>`;
+    modsHTML+=`<button class="card mod-card" style="--c:${m.color}" onclick="go({name:'module',id:'${m.id}'})">
       <span class="mod-art" style="--art:url('assets/${MOD_ART[m.id]}.jpg')"></span>
       <div class="mod-info">
         <div class="mod-top"><span class="mod-ic">${ico(m.icon,25)}</span><span class="mod-name">${m.name}</span></div>
         <div class="mod-meta">${chs} chapters · ${qs.length} question${qs.length===1?'':'s'}</div>
-        <div class="ringrow">${ring(pct,m.hex)}
-          <div class="ringmeta"><div class="a" style="color:${accColor(a)}">${a===null?'—':a+'%'}</div>
-          <div class="b">${d}/${qs.length} answered</div></div></div>
+        ${foot}
       </div>
     </button>`;
   });
-  h+=`</div>`;
+  modsHTML+=`</div>`;
+
+  /* First run leads with the subjects and keeps the biography as a closing
+     note; once there is progress to report the page goes back to reporting it
+     first and the subjects sit where a returning reader already looks for
+     them. */
+  h+=fresh?modsHTML+todayHTML+heroHTML:todayHTML+heroHTML+modsHTML;
   p.innerHTML=h;
 }
 
@@ -6797,6 +6841,10 @@ function clepChapterCount(){
 const CL_TIPS={
   home(){
     const due=dueNow().length, done=QUESTIONS.filter(q=>isAnswered(q.id)).length;
+    /* On a first visit "0 of 4049 answered, nothing due" is the same empty
+       scoreboard the dashboard has just stopped printing, and hearing it from
+       her as well makes it two. She says what to do instead. */
+    if(!done)return `**${QUESTIONS.length}** questions, waiting. Pick a subject — I keep your place in every chapter.`;
     return `**${done}** of **${QUESTIONS.length}** answered. `+
       (due?`**${due}** due for review — what the spacing algorithm says you are about to forget.`
          :`Nothing due for review today.`);
