@@ -24,7 +24,7 @@ Where this file and the archive disagree, this file wins. ⚠️ **Before openin
 ## Resume here — state at 2026-09-05
 **BOTH CHATS RAN the night of 2026-09-02/03; both prompts were REWRITTEN IN PLACE 2026-09-03 late
 against measured disk state.** ⚠️ **RELAUNCH ONLY FROM `progress\resume-2026-09-03b-chatB-peds.md`
-(v4 — House now via `tools\chapter-loop.js` + Codex), `progress\resume-2026-09-03-late-peds-endpoint.md` (v6, part 1), and `progress\resume-peds-endpoint-part2.md` (v1, Chat C part 2)** — every earlier prompt is stale and pays
+(v4 — House now via `tools\chapter-loop.js` + Codex) and `progress\resume-peds-endpoint-part2.md` (v1, Chat C part 2). **`resume-2026-09-03-late-peds-endpoint.md` (v6) is SPENT — part 1 closed under it; do not relaunch it.** Every earlier prompt is stale and pays
 ~50k more per read. ⚠️ **A DIRTY TREE IS NORMAL while two chats run** — **never stage another
 chat's file; commit explicit paths only, and wait on `index.lock`, never delete it.**
 ⚠️ **The watch runs FROM THE MAIN `D:\claude os` CHAT, not its own** (user, 2026-09-03) — note atop
@@ -32,31 +32,29 @@ chat's file; commit explicit paths only, and wait on `index.lock`, never delete 
 and `resume-peds.md` (~37k → ~13k) with **`RESUME-READ-FROM-HERE-2`**, nothing deleted;
 `resume-peds-endpoint.md` (~14k, growing fast) is the next anchor due.
 ✅ ENT CLOSED (`ledger.md` §15–§16). ✅ **OPHTHO CLOSED 2026-09-02** — **1,598**, 0 holes, CLEAN, boots;
-all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`.
+all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **The ophtho ENDPOINT is a separate, UNSTARTED book — 2,442 pp / 293 MB, the largest of the four; do NOT split the PDF (splits come out bigger), split the page range on a section boundary, and note NO ophtho toolchain exists in `bank-harness` (all `-pd`). Measurements + conditions: `progress\ophtho-endpoint-scoping-2026-09-06.md`.**
 
 - ✅ **PEDS HOUSE CLOSED 2026-09-04 — `questions.peds.js` holds 393, the full measured bank**, all
   20 chapter prefixes present (array loaded 2026-09-05, 0 holes, boots clean). Close-out: `resume-peds.md`.
-- ⏳ **PEDS ENDPOINT part 1 RUNNING; PART 2 LAUNCHED 2026-09-04 as Chat C** — own file `questions.peds.ep2.js` (`Q_PEDS_EP2`, `pedep2-`, `bank:'endpoint'`); subagent-vision, NOT Codex; HARD GATE build `ocr\ep2\` + agree the section map before staging; resume `progress\resume-peds-endpoint-part2.md`. part2.pdf = 1993 pp / 272 MB.
-  **MEASURED 2026-09-05, arrays loaded, 0 holes: p1 `questions.peds.ep.js` 541** (11 sections: inf 94 ·
-  gp 73 · nut 73 · gi 64 · emg 58 · neo 52 · mf1 50 · mf2 46 · per 21 · alg 8 · acc 2) · **p2 246** (hem 87 ·
-  res 65 · gen 38 · nd 28 · dp 28). Splice history through s4: `ledger.md`.
-  ⚠️ **A FOLD MAKES THIS FILE SHRINK LEGITIMATELY** — a drop with no fold commit behind it is the
-  finding. A section that outgrows one file splits `part-A/B` →
-  `tools\bank-harness\merge-parts-ep.js` → `.draft-*` → `.array.js`, and the splicer refuses unless
-  its validator gate exits 0. ⚠️ **Never run `val-pd.js`/`splice-pd.js` on endpoint files — they write Chat B's live
-  file**; the `-pd-ep` pair is the endpoint's, and the splice refuses unless its validator exits 0.
-  **Search index: `content\peds\qb-pages\ocr\ep1\`** (p0001–p1991 .txt, two OCR reads each +
-  `index.json`; tool `tools\ep-index\run-all.ps1`, README there; PyMuPDF + free Windows.Media.Ocr,
-  ~5 min whole book, $0). Part 1 = **855 questions** (`kind == "answered"`; yellow alone over-counts),
-  body pp.5–1156 = 476, model exams 379 expected reprints. ⚠️ OCR drops whole lines, a different one
-  per resolution — use both halves. Scratchpad `ep1-index\` (~1 GB images) NOT deleted
-  (permission denied); user deletes by hand. ⚠️⚠️ **ENDPOINT AND HOUSE OVERLAP, AND IT IS
-  CHAPTER-SHAPED, NOT SCATTERED** — 5 collisions in the first 150 entries, four of them endpoint
-  Nutrition ≡ House ch.10, ids one-for-one = 27% of that chapter, fuller printing UNCHECKED. Naive
-  scale puts the end-of-stream sweep near **25–30 — ONE data point, re-measure, never quote as a
-  count.** **Nothing folds mid-stream; the two files stay separate while both chats write.**
-  ⚠️ **`pedhd-card-6..10` must NOT be folded** (5 identical stems, 5 different figures/keys; the
-  normaliser cannot see a figure). Full collision log: `resume-peds.md` tail.
+- ✅ **PEDS ENDPOINT PART 1 CLOSED 2026-09-05 — `questions.peds.ep.js` holds 704, 0 holes** — it closed
+  at 705 and `47d4d76` folded `pedep-inf-82` into part 2's fuller printing, which is the legitimate
+  drop (re-measured commit by commit 2026-09-06). 15 sections (body pp.5–1156 · 4 Model Final Exams pp.1157–1804 · 2 Model Training Exams pp.1805–1936; tail pp.1937–1991 measured, stages nothing). Close-out: `progress\resume-peds-endpoint.md`.
+  ⚠️ **THE CLOSING TEST IS PAGE COVERAGE, NOT A SECTION COUNT** — every `p.<n>` in the `source`
+  fields against every OCR-`answered` page: 855 answered, 854 cited; the one gap, p.938, was rendered
+  and is prose the classifier mis-tagged. **The classifier errs BOTH ways** — it also called
+  pp.1889/1890 notes when they hold a real question, which is the expensive direction.
+- ✅ **PEDS ENDPOINT PART 2 CLOSED 2026-09-06 — `questions.peds.ep2.js` holds 630, 0 holes**, 17
+  sections pp.5–1949 (tail pp.1950–1993 stages nothing). Close-out: `progress\resume-peds-endpoint-part2.md`.
+  part2.pdf 1993 pp / 272 MB. ⚠️ **A FOLD MAKES THIS FILE SHRINK LEGITIMATELY** — a drop with no fold
+  commit behind it is the finding. A section that outgrows one file splits `part-A/B` →
+  `tools\bank-harness\merge-parts-ep.js` → `.draft-*` → `.array.js`. ⚠️ **Never run
+  `val-pd.js`/`splice-pd.js` on endpoint files — they write Chat B's live file**; the `-pd-ep` pair is
+  the endpoint's, and it refuses unless its validator gate exits 0. Search index
+  `content\peds\qb-pages\ocr\ep1\`, tool `tools\ep-index\run-all.ps1`. ⚠️⚠️ **ENDPOINT AND HOUSE
+  OVERLAP, AND IT IS CHAPTER-SHAPED** — 5 collisions in the first 150 entries, four endpoint Nutrition
+  ≡ House ch.10 = 27% of that chapter; **nothing folds mid-stream**, and **`pedhd-card-6..10` must NOT
+  be folded** (5 identical stems, 5 different figures). Log: `resume-peds.md` tail. Pruned detail ->
+  archive, `## Pruned from MEMORY.md - 2026-09-05`.
 - ⏳ **NEURO — 268 live** (nr 133 · ps 135); topics 18–21 spliced 2026-09-02, **untouched since.**
   **Next: topic 22, Q137 on PDF 94 / book p.89** — ⚠️ banner says "Psychopharmacology", contents says
   "Pharmacology"; psychiatry ends **Q165** in topic 23. ⚠️ **The 142 renders died with a scratchpad,
@@ -131,13 +129,15 @@ all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`.
 - **⚠️ Bank sampling and provenance: `progress\memory-archive.md`** — a contents page may print per-section counts (**verify, never trust**); the end-of-ENT "outside knowledge" list is **half wrong**, re-grep item by item; 67 entries record no provenance, roster in `ledger.md` §11.
 
 ## Validation state
-- **Corpus 5,375** (2026-09-05, **chats still mid-run — re-measure before quoting; it drifts by the
-  commit**. Every array loaded and indexed for sparse holes, `for i… if(!(i in A))`, **zero holes,
-  every file `eval`s clean**): ENT **2,322** (2,240 q + 82 c) · **Ophtho 1,598** · Neuro **275**
-  (268 q + 7 c) · Peds House **393** · Peds endpoint **787** (p1 541 + p2 246). ✅ **BOOTED FROM
-  `file://` 2026-09-05, 0 console errors** — `QUESTIONS 5375 · THEORY 153 · MODULES 4 · 153 chapter
-  rows (138 with questions, 15 empty by design) · 4 module cards`; per module ent 30 · ophtho 36 ·
-  neuropsych 36 · pediatrics 51. **The per-file sum reconciles exactly to the boot number.** Keys `ent`, `ophtho`, `pediatrics`, `neuropsych`; options 2–10 coexist (2:10 · 3:67 · 4:3836 · 5:1365 · 8:1 · 9:1 · 10:6).
+- **Corpus 5,922** (re-measured from disk 2026-09-06, **re-measure before quoting; it drifts by the
+  commit**. Every array loaded and indexed for sparse holes,
+  `for i… if(!(i in A))`, **zero holes, every file `eval`s clean**): ENT **2,322** (2,240 q + 82 c) ·
+  **Ophtho 1,598** · Neuro **275** (268 q + 7 c) · Peds House **393** · Peds endpoint **1,334**
+  (p1 704 + p2 630, both CLOSED). ⚠️ **The case arrays are `C_ENT`/`C_NEURO`/`C_OPHTHO`/`C_PEDS`, not
+  `CASES_*`** (ophtho and peds hold 0). ✅ **BOOTED FROM `file://` 2026-09-06, 0 console errors** —
+  `QUESTIONS 5922 · THEORY 153 · MODULES 4 · 153 chapter rows (138 with questions, 15 empty by
+  design) · 4 module cards`; per module ent 30 · ophtho 36 · neuropsych 36 · pediatrics 51. **The
+  per-file sum reconciles exactly at 5,922.** Keys `ent`, `ophtho`, `pediatrics`, `neuropsych`; options 2–10 coexist (2:10 · 3:67 · 4:3836 · 5:1365 · 8:1 · 9:1 · 10:6).
   ⚠️ **`grep -c "^  { id:"` UNDERCOUNTS `questions.ophtho.js` BY ~440 — load the array.**
 - **✅ THE BOOT CHECK IS NOW A REPO TOOL: `node tools\boot-check\boot-check.js`** (2026-09-02) —
   copies `app\`, probes errors ahead of the app's own scripts, stubs the gate, seeds a profile,
