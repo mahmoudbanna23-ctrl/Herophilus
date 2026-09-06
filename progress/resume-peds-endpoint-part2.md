@@ -2198,3 +2198,100 @@ reprints of 80, counted off `splice-pd-ep2.js`'s own `reprints` arrays and confi
 drafting problem. ⚠️ I first wrote "30 / 48 / 53" here from memory and it was wrong in both of the
 places it could be — **never write a count from memory; the arrays are two commands away.** ⚠️ **A candidate list's silence is not a verdict** — it has now cost this stream three
 separate recoveries, and the fold-adjudication brief must demand a verdict for every `n` in range.
+
+### 2026-09-06 — section 15 is CLOSED. `questions.peds.ep2.js` holds 624, and the app boots at 5,916.
+
+**80 staged = 70 reprints cited + 1 within-section fold (n75 into n67) + 9 drafted.** Commits
+`c45c50c` (the chapter rulings and the drafting notes) and `c4be00c` (the nine, drafted and spliced),
+both unpushed. `app\data\questions.peds.ep2.js` **615 → 624**, chars 1629136 → 1665713, 0 holes.
+`node tools\boot-check\boot-check.js`: **QUESTIONS 5916 · THEORY 153 · MODULES 4 · 153 chapter rows
+(138 with questions) · pediatrics 51 · 0 console errors.**
+
+The nine are `n15, n21, n25, n36, n44, n56, n67, n71, n73` — one drafting pass, not two, so there is
+no `part-A/B`, no `merge-parts`, and no cross-half comparison for this section. Chapters follow
+`endpoint-p2-s15-chapter-rulings.md` exactly: `resp-bronch` ×3, `normal-dev` ×2, and one each of
+`respiratory`, `resp-pneumonia`, `renal-cakut`, `endo-thyroid`. Validator: ALL CHECKS PASSED,
+9 entries / 4451 words, 413–603 per entry.
+
+#### ⚠️ THE VALIDATOR COMPARES STEMS BYTE-FOR-BYTE, AND THE SECTION-14 SHAPE BREAKS THAT
+
+Section 14's drafted entries put a `\n\n` before the closing question sentence, and the entries copied
+from that template inherited it. `val-pd-ep2.js` line 367 is `if (q.stem !== s.stem)` — no
+normalisation of any kind — and section 15's staging carries the question inline in six of the nine.
+**Six of nine failed on the first run for that one reason.** Section 14 passed only because its own
+staging already held the break. The fix was to rewrite the six stem lines straight out of the staging
+(`<scratchpad>\fixstems15.js`, one pass, line-based, no hand-typing), after which the same validator
+passed unchanged. **The rule: never reflow a stem to match a template. Copy the entry SHAPE from an
+earlier section; copy the stem TEXT from the staging, byte for byte, including a missing space — n67
+prints "not a square.What is his expected age?" and the entry prints it that way too.**
+
+#### The page arithmetic is four formulas, not one
+
+Section 14's clean `p = 1595 + 2n` does not carry. Here the four boxed explanations at n16, n31, n34
+and n52 each overflow onto a page of their own and push everything after them, so the step is +2
+except after those four, where it is +3. **`p = 1757 + 2n + (box rows before n)`, verified across all
+eighty rows with zero other deviations.** None of the four box rows is drafted, so no drafted entry
+carries a `box` field.
+
+Two printed-number defects, both recorded and neither corrected: the printed sequence **skips 36**
+(so n36 prints 37, n44 prints 45, n56 prints 57), and the printed number **65 appears twice** — n64
+prints 65 and n65 prints 65 again, and that repeat is what resyncs the printed number to the section
+number, which is why n67, n71 and n73 print their own. Neither of the repeated rows is drafted.
+
+#### The four substantive rulings the drafting carried
+
+1. **n21's printed box misnames the disturbance.** pH 7.30 with pCO₂ 7.8 kPa is a **respiratory**
+   acidosis and the box says metabolic. The box is captured verbatim and unmarked, the classification
+   is corrected above it, and the correction carries the outside-knowledge tag — **`respiratory
+   acidosis` returns zero across all 518 theory sections and `kPa` returns zero too.** The key does
+   not move.
+2. **n25 keys against average ages where `nd-5` is a table of limit ages.** Measured against `nd-5`,
+   **three of the four distractors are also not developmental concerns** — 5 weeks against a limit of
+   3 months, 7 months against 9, 17 months against 18 — and the fourth (copying a line at 24 months)
+   names a skill the material never prints in either drawing ladder. The bank's own box proves the
+   instrument it is using by quoting `nd-6`'s 12-month cell. The entry answers as keyed, then says
+   what `nd-5` prints and that a limit age and an average age are two different instruments. **The key
+   is not disputed.** The paper's own 16-vs-15-months slip between option C and the box is noted at
+   the foot of the explanation.
+3. **n67 is fully sourced and contradicts a live sibling.** `nd-6` and `nd-8` both print circle 3,
+   cross 4, square 5, so n67's key of 3 years is exact; `pedep2-nd-8` keys **4 years** for the square.
+   Both keys stand and neither entry is edited. The box's claim that the square follows the circle by
+   "a few months" is corrected to the two years the tables print.
+4. **n36 is a partial, not the total gap the rulings expected.** No live entry in 1,712 asks about
+   SIADH, but **`emg-16` prints one line — risk of SIADH, for example pneumonia, give two thirds of
+   standard maintenance — and that is n36's exact scenario.** What stays tagged is the diagnostic
+   triad. n44's conditioning alarm is a full gap and is tagged the same way.
+
+#### Gap tags, all measured this section
+
+`\bADH\b|vasopressin|antidiuretic` → **0 corpus-wide**, so the hormone the abbreviation stands for is
+never named in theory · `adrenal insufficiency|addison` → **2**, both name-only in unrelated lists,
+so secondary adrenal insufficiency is effectively untaught · `deep sleep|arousal` → **1**, unrelated
+neonatal, so the bell-alarm mechanism has no anchor at all · `desmopressin` → 2, both `haem-bleeding`
+· `respiratory acidosis` → 0 · `kPa` → 0 · `single word` → 0. `ren-17` and `endo-33`/`endo-34` each
+carry **their own** gap tag; cite them, carry the tag, do not double-source them.
+
+#### Five pairs named, none folded
+
+The nearest miss is **n56 against the four live foreign-body entries** (`pedep2-res-11`, `-35`, `-49`,
+`pedep2-mf1-15`): every live one hands over a witnessed choking or a sudden-onset event, and n56 gives
+a previously healthy 2-year-old simply **found** cyanosed at play. **That absence is the question.**
+The others are n25 and n67 against the `pedep2-nd-*` run (a shared menu of ages pairs, never folds),
+n21 against `pedep2-mf2-51` (same key, no patient in it), and n73 against `pedep2-res-59` and
+`pedep2-res-26`.
+
+#### ⚠️ For the end-of-stream cross-bank sweep
+
+House neighbours recorded and folding nothing: `pedhd-resp-15` (bronchiolitis), `pedhd-resp-12`
+(foreign body), `pedhd-renal-9` (enuresis, key *Urinary dipstick*), and the **twenty-entry
+`pedhd-dev-*` run** that is the whole of House's `normal-dev`. All four chapter assignments agree with
+the rulings above, which is evidence about House and not a ground for any ruling here.
+
+**Next: section 16, "Recently modified Questions", pp.1922–1940.** ⚠️ **It is a different shape from
+every other section in the book** — 19 pages of solid answered pages, `1923+1924` through
+`1939+1940`, **seventeen consecutive answered pages with no unanswered twins at all**, which fits its
+name. **Do not carry the twin-checking page method into it unexamined** (journal, "the other shape,
+which the break test DOES catch"). It is also the last section: p.1940 onward is the tail, which
+part 1's close-out measured as staging nothing — **measure it here rather than assuming it.** Run
+`reprint-pd-ep2.js` over it before staging anything; a section named for modified questions is a
+reprint problem by construction, and the four model exams ran 28 / 29 / 53 / 70 reprints of 80.
