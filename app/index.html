@@ -473,7 +473,9 @@ button.card:active:not(:disabled){transform:translate(1px,1px);box-shadow:0 2px 
 .opt.correct .ltr{background:var(--ok);border-color:var(--ok);color:#fff}
 .opt.wrong{border-color:var(--bad);background:var(--bad-bg);box-shadow:0 7px 20px rgba(255,71,87,.25)}
 .opt.wrong .ltr{background:var(--bad);border-color:var(--bad);color:#fff}
-.opt .mark{margin-left:auto;font-weight:900;font-size:17px;flex-shrink:0}
+.opt .mark{margin-left:auto;font-weight:900;font-size:19px;flex-shrink:0;line-height:1}
+.opt.correct .mark{color:var(--ok)}
+.opt.wrong .mark{color:var(--bad)}
 
 .qactions{display:flex;gap:10px;margin-top:22px;align-items:center;flex-wrap:wrap}
 .btn{
@@ -518,6 +520,7 @@ button.card:active:not(:disabled){transform:translate(1px,1px);box-shadow:0 2px 
 .keys{margin-top:14px;padding:13px 16px;border:2.5px dashed var(--line-2);border-radius:14px}
 .keys-h{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);font-weight:800;margin-bottom:9px}
 .key{display:flex;align-items:center;gap:9px;padding:4px 0;font-size:14px;font-weight:700}
+.key.hit>span:first-child{color:var(--ok);font-weight:900}
 .key.miss{opacity:.55}
 .lastgo{
   display:inline-flex;align-items:center;gap:7px;margin-top:9px;
@@ -2853,7 +2856,7 @@ function toggleBank(mod,b){
   let cur=stored.length?stored.filter(x=>present.indexOf(x)>=0):present.slice();
   if(!cur.length)cur=present.slice();
   cur=cur.indexOf(b)>=0?cur.filter(x=>x!==b):cur.concat([b]);
-  if(!cur.length){toast('Keep at least one source on 🙂');return}
+  if(!cur.length){toast('Keep at least one source turned on');return}
   /* Store [] when everything present is on, so a bank added later is included
      by default rather than silently filtered out. */
   S.banks[mod]=(cur.length===present.length)?[]:cur;
@@ -2986,7 +2989,7 @@ function setTheme(t,announce){
   const m=document.querySelector('meta[name="theme-color"]');
   if(m)m.setAttribute('content',t==='light'?'#e9eef6':'#070d16');
   paintThemeBtn();
-  if(announce)toast(t==='light'?'☀️ Light mode':'🌙 Dark mode');
+  if(announce)toast(t==='light'?'Light mode':'Dark mode');
 }
 function toggleTheme(){setTheme(currentTheme()==='light'?'dark':'light',true)}
 /* The button shows the theme you would GET, not the one you are in. */
@@ -3348,7 +3351,7 @@ function vTheory(p){
 
   /* ---- the lecture as one continuous document ---- */
   const t=THEORY[view.ch];
-  if(!t){p.innerHTML='<div class="empty"><div class="big">&#128220;</div><h3>Not written yet</h3></div>';return}
+  if(!t){p.innerHTML=`<div class="empty"><div class="big">${ico('scroll',46)}</div><h3>No notes for this lecture</h3></div>`;return}
   const secs=t.sections||[];
   const allQs=[];
   secs.forEach(s=>(s.qs||[]).forEach(q=>{if(allQs.indexOf(q)<0)allQs.push(q)}));
@@ -3388,7 +3391,7 @@ function vTheory(p){
       <button class="tb-btn" onclick="go({name:'theory',mod:'${view.mod}'})">&larr; ${esc(m.name)} notes</button>
       <div class="bk-acts">
         ${allQs.length?`<button class="btn go" onclick="startQuiz(${JSON.stringify(allQs).replace(/"/g,'&quot;')},'${esc(chapterName(view.ch)).replace(/'/g,"\\'")}')">\u25b6 Test the lecture (${allQs.length})</button>`:''}
-        <button class="btn sec" onclick="window.print()">&#128424;&#65039; Save as PDF</button>
+        <button class="btn sec" onclick="window.print()">${ico('scroll',16)} Save as PDF</button>
       </div>
     </div>
     <div class="bk-stage" id="bkStage">
@@ -3939,7 +3942,7 @@ function hideSplash(){const s=$('splash');if(s)s.classList.add('hide')}
 /* ---- setup helper ---- */
 function syncSetup(){
   const cfg=cloudConfig();
-  showModal(`<h3>\u2601\uFE0F Set up sync</h3>
+  showModal(`<h3>Set up sync</h3>
    <p>Signing in with Google keeps your progress the same on your laptop, iPhone and iPad. It is free and needs no payment method.</p>
    <ol class="steps">
      <li>Go to <b>console.firebase.google.com</b> and click <b>Add project</b>. Any name will do.</li>
@@ -4129,7 +4132,7 @@ function gateProfileStep(){
     const av=p.av||{t:'e',v:'🩺',c:'#6d4c7d'};
     const inner=av.t==='p'?`<img src="${av.v}" alt="" referrerpolicy="no-referrer">`:av.v;
     h+=`<button class="pcard" style="${step()}" onclick="pickProfile('${p.id}')">
-      <div class="pav" style="background:${av.c}">${inner}${p.pin?'<span class="lock">🔒</span>':''}${p.id.indexOf('g:')===0?'<span class="lock" style="background:#4285F4;font-size:10px">☁</span>':''}</div>
+      <div class="pav" style="background:${av.c}">${inner}${p.pin?'<span class="lock" style="font-size:9px;letter-spacing:1.5px;padding-left:1.5px">\u2022\u2022\u2022\u2022</span>':''}${p.id.indexOf('g:')===0?'<span class="lock" style="background:#4285F4;color:#fff;font-size:14px;font-weight:900">G</span>':''}</div>
       <div class="pname">${esc(p.name)}</div></button>`;
   });
   h+=`<button class="pcard add" style="${step()}" onclick="editProfile(null)">
@@ -4139,7 +4142,7 @@ function gateProfileStep(){
   if(profiles.length)h+=`<button class="btn sec" onclick="manageProfiles()">Manage profiles</button>`;
   /* Sync settings button hidden — config is embedded in FIREBASE_CONFIG above.
      If sync is ever NOT configured, still offer setup so the file stays reusable. */
-  if(!cloudEnabled())h+=`<button class="btn sec" onclick="syncSetup()">☁️ Set up sync</button>`;
+  if(!cloudEnabled())h+=`<button class="btn sec" onclick="syncSetup()">Set up sync</button>`;
   h+=`</div></div>`;
   return h;
 }
@@ -4285,7 +4288,7 @@ function drawProfileEditor(isEdit){
        onclick="draft.av.c='${c}';drawProfileEditor(${isEdit})"></button>`).join('')}
    </div>
    <div style="margin-bottom:16px">
-     <button class="btn sec" onclick="document.getElementById('pfPhoto').click()">\uD83D\uDCF7 Upload a photo</button>
+     <button class="btn sec" onclick="document.getElementById('pfPhoto').click()">Upload a photo</button>
      ${draft.av.t==='p'?`<button class="ai-p" onclick="draft.av={t:'e',v:AVATARS[0],c:draft.av.c};drawProfileEditor(${isEdit})" style="border:2px solid var(--line-2);padding:7px 13px;border-radius:20px;font-size:12px;font-weight:700;margin-left:7px">Use an emoji instead</button>`:''}
      <input type="file" id="pfPhoto" accept="image/*" style="display:none" onchange="pfUpload(event,${isEdit})">
    </div>
@@ -4362,7 +4365,7 @@ function manageProfiles(){
     h+=`<button class="ch-row" style="margin-bottom:8px" onclick="editProfile('${p.id}')">
       ${avHTML(p.av,'rav').replace('class="rav"','class="rav" style="width:34px;height:34px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;overflow:hidden;background:'+(p.av?p.av.c:'#6d4c7d')+'"')}
       <span class="ch-name">${esc(p.name)}</span>
-      <span class="ch-count">${p.pin?'\uD83D\uDD12 PIN set':'no PIN'}</span></button>`;
+      <span class="ch-count">${p.pin?'PIN set':'no PIN'}</span></button>`;
   });
   h+=`<div class="modal-actions" style="margin-top:16px">
      <button class="btn sec" onclick="closeModal();showGate()">Back</button>
@@ -4495,7 +4498,7 @@ function vHome(p){
   const acc=accuracy(QUESTIONS);
   const due=dueNow().length;
   let h=`<div class="eyebrow">Second term · July–August</div><h1>Where you stand</h1>
-  <p class="page-sub">${total} questions loaded. More arrive as you send sources — every chapter is already wired and waiting.</p>
+  <p class="page-sub">${total} questions loaded. Work through them by chapter, by module, or build a custom set.</p>
   <div class="grid g4" style="margin-bottom:30px">
     <div class="stat"><span class="emo">${ico('stylus',20)}</span><div class="n">${done}<span style="font-size:15px;color:var(--ink-4)">/${total}</span></div><div class="l">Answered</div></div>
     <div class="stat"><span class="emo">${ico('target',20)}</span><div class="n" style="color:${accColor(acc)}">${acc===null?'—':acc+'%'}</div><div class="l">Accuracy</div></div>
@@ -4671,7 +4674,7 @@ function moveQ(i){
   saveResume();
 }
 function startQuiz(ids,title,chapter=null,qid=null){
-  if(!ids||!ids.length){toast('No questions there yet 🤷');return}
+  if(!ids||!ids.length){toast('No questions there yet');return}
   const q=QUESTIONS.find(x=>x.id===ids[0]);
   Q={ids:ids.slice(),i:Math.max(0,ids.indexOf(qid)),title:title,sel:null,shown:false,t0:Date.now(),txt:'',peek:false,
      attempts:{},chapter:chapter,sources:chapter&&q?(S.banks[q.module]||[]).slice():[]};
@@ -4721,7 +4724,7 @@ function revealCase(){
   const q=QUESTIONS.find(x=>x.id===Q.ids[Q.i]);
   const el=document.getElementById('caseInput');
   const txt=el?el.value:'';
-  if(!normTxt(txt)){toast('Type a diagnosis first ✍️');return}
+  if(!normTxt(txt)){toast('Type a diagnosis first');return}
   Q.txt=txt; Q.shown=true; Q.peek=false;
   const g=gradeCase(q,txt);
   if(!S.answers[q.id]||S.answers[q.id].text!==txt){
@@ -4790,7 +4793,7 @@ function vCase(p,q,m,prev){
       h+=`<div class="keys"><div class="keys-h">What was being looked for</div>`;
       q.keys.forEach((k,i)=>{
         const hit=g?g.hits[i]:false;
-        h+=`<div class="key ${g?(hit?'hit':'miss'):''}"><span>${g?(hit?'✅':'⬜'):'•'}</span>
+        h+=`<div class="key ${g?(hit?'hit':'miss'):''}"><span>${g?(hit?'\u2713':'\u00d7'):'\u2022'}</span>
             <span>${esc(k.label)}</span></div>`;
       });
       h+=`</div>`;
@@ -4811,7 +4814,7 @@ function vCase(p,q,m,prev){
       </div></div>`;
     const th=qTheory(q.id);
     if(th)h+=`<button class="readtheory" onclick="openTheoryFor('${q.id}')">
-      &#128218; <span>Read the notes on this &mdash; <b>${esc(th.h)}</b></span>
+      ${ico('scroll',16)} <span>Read the notes on this &mdash; <b>${esc(th.h)}</b></span>
       <span style="margin-left:auto">&rarr;</span></button>`;
     h+=`<div class="qactions">
       <button class="btn sec flag ${flagged?'on':''}" onclick="toggleFlag('${q.id}')">${ico('laurel',15)} ${flagged?'Flagged':'Flag'}</button>
@@ -4869,7 +4872,7 @@ function vQuiz(p){
     let cls='opt';
     if(Q.shown){ if(i===q.answer)cls+=' correct'; else if(i===Q.sel)cls+=' wrong' }
     else if(i===Q.sel)cls+=' sel';
-    const mark=Q.shown?(i===q.answer?'<span class="mark">✅</span>':(i===Q.sel?'<span class="mark">❌</span>':'')):'';
+    const mark=Q.shown?(i===q.answer?'<span class="mark">\u2713</span>':(i===Q.sel?'<span class="mark">\u00d7</span>':'')):'';
     h+=`<button class="${cls}" ${Q.shown?'disabled':''} onclick="pick(${i})">
       <span class="ltr">${OPT_LETTERS[i]}</span><span>${esc(o)}</span>${mark}</button>`;
   });
@@ -4889,7 +4892,7 @@ function vQuiz(p){
   }else{
     const ok=Q.sel===q.answer;
     h+=`<div class="verdict ${ok?'ok':'bad'}"><span class="big">${ok?ico('target',26):ico('laurel',26)}</span>
-      ${ok?'Correct!':'Not quite — the answer is '+OPT_LETTERS[q.answer]}</div>`;
+      ${ok?'Correct.':'Not quite — the answer is '+OPT_LETTERS[q.answer]}</div>`;
 
     if(!prev||prev.conf===undefined){
       h+=`<div class="conf"><div class="conf-q">${ico('target',15)} How sure were you? This sets when it comes back.</div>
@@ -4903,13 +4906,13 @@ function vQuiz(p){
     const hasExp=q.explanation&&q.explanation.trim().length>0;
     h+=`<div class="explain">
       <button class="ex-head" onclick="toggleExp(this)">${ico('lamp',16)} Explain this answer<span class="chev">▾</span></button>
-      <div class="ex-body">${hasExp?md(q.explanation):'<div class="noexp">No explanation came with this question. Flag it and I can write one.</div>'}
+      <div class="ex-body">${hasExp?md(q.explanation):'<div class="noexp">No explanation came with this question.</div>'}
       ${q.objective?`<div class="objective"><b>${ico('laurel',15)} Educational objective</b>${md(q.objective).replace(/<\/?p>/g,'')}</div>`:''}
       </div></div>`;
 
     const th=qTheory(q.id);
     if(th)h+=`<button class="readtheory" onclick="openTheoryFor('${q.id}')">
-      &#128218; <span>Read the notes on this &mdash; <b>${esc(th.h)}</b></span>
+      ${ico('scroll',16)} <span>Read the notes on this &mdash; <b>${esc(th.h)}</b></span>
       <span style="margin-left:auto">&rarr;</span></button>`;
 
     h+=`<div class="qactions">
@@ -4994,13 +4997,13 @@ function finishSet(){
   const face=ico(pct>=90?'laurel':pct>=75?'target':pct>=50?'hourglass':'scroll',40);
   showModal(`<h3>${face} ${pct}%</h3>
    <p>You answered <strong>${done.length}</strong> question${done.length===1?'':'s'} and got <strong>${right}</strong> right${mins?` in ${mins} min`:''}.
-   ${done.length-right>0?` The ${done.length-right} you missed are in your review deck.`:' Clean sweep.'}</p>
+   ${done.length-right>0?` The ${done.length-right} you missed are in your review deck.`:' All correct.'}</p>
    <div class="modal-actions">
      <button class="btn sec" onclick="closeModal();go({name:'home'})">Dashboard</button>
-     ${done.length-right>0?`<button class="btn go" onclick="closeModal();go({name:'review'})">Review mistakes</button>`:`<button class="btn go" onclick="closeModal()">Nice</button>`}
+     ${done.length-right>0?`<button class="btn go" onclick="closeModal();go({name:'review'})">Review mistakes</button>`:`<button class="btn go" onclick="closeModal()">Continue</button>`}
    </div>`);
 }
-function toggleFlag(id){S.flags[id]=!S.flags[id];save();render();toast(S.flags[id]?'Flagged 🚩':'Flag removed')}
+function toggleFlag(id){S.flags[id]=!S.flags[id];save();render();toast(S.flags[id]?'Flagged':'Flag removed')}
 function toggleExp(b){b.classList.toggle('open');b.nextElementSibling.classList.toggle('open')}
 
 
@@ -5009,7 +5012,7 @@ function toggleExp(b){b.classList.toggle('open');b.nextElementSibling.classList.
 /* ============ JUMP NAVIGATOR ============ */
 function openJump(){
   const n=Q.ids.length;
-  let h=`<h3>&#127919; Go to question</h3>
+  let h=`<h3>${ico('target',19)} Go to question</h3>
    <p style="margin-bottom:15px">${n} question${n===1?'':'s'} in this set. Type a number or pick one from the grid.</p>
    <div class="jumprow">
      <input class="jumpin" id="jumpNum" type="number" min="1" max="${n}" placeholder="e.g. ${Math.min(100,n)}"
@@ -5058,7 +5061,7 @@ function jumpNextUnanswered(){
     const i=(Q.i+k)%Q.ids.length;
     if(!isAnswered(Q.ids[i])){jumpTo(i);return}
   }
-  toast('Every question in this set is answered \u2705');
+  toast('Every question in this set is answered');
 }
 function jumpFirstWrong(){
   for(let k=1;k<=Q.ids.length;k++){
@@ -5066,7 +5069,7 @@ function jumpFirstWrong(){
     const id=Q.ids[i];
     if(isAnswered(id)&&!isCorrect(id)){jumpTo(i);return}
   }
-  toast('Nothing wrong in this set \u2705');
+  toast('Nothing wrong in this set');
 }
 
 /* ============ HIGHLIGHTER ============ */
@@ -5160,7 +5163,7 @@ function clearHl(){
 }
 function markbar(qid){
   const n=(S.hl[qid]||[]).length;
-  let h='<div class="mkbar"><span class="lb">&#128396;&#65039; Marker</span>';
+  let h=`<div class="mkbar"><span class="lb">${ico('stylus',14)} Marker</span>`;
   PENS.forEach(([c,name])=>{
     h+=`<button class="pen ${c} ${armed===c?'on':''}" title="${name} highlighter" onclick="setPen('${c}')"></button>`;
   });
@@ -5178,11 +5181,11 @@ function vReview(p){
   <p class="page-sub">Anything you got wrong, or got right but marked as a guess or as unsure, lands here. A guess comes back tomorrow, an unsure one in three days, then 7, 21, 60. Right answer moves it out a step; wrong resets it.</p>`;
   if(!deck.length){
     h+=`<div class="empty"><div class="big">${ico('hourglass',46)}</div><h3>Deck is empty</h3>
-     <p>Nothing wrong, nothing guessed, nothing unsure. Keep going and this fills itself.</p></div>`;
+     <p>Nothing wrong, nothing guessed, nothing unsure.</p></div>`;
     p.innerHTML=h;return;
   }
   h+=`<div class="grid g4" style="margin-bottom:24px">
-    <div class="stat"><span class="emo">⏰</span><div class="n" style="color:${due.length?'var(--ent)':'var(--ok)'}">${due.length}</div><div class="l">Due today</div></div>
+    <div class="stat"><span class="emo">${ico('hourglass',20)}</span><div class="n" style="color:${due.length?'var(--ent)':'var(--ok)'}">${due.length}</div><div class="l">Due today</div></div>
     <div class="stat"><span class="emo">${ico('amphora',20)}</span><div class="n">${deck.length}</div><div class="l">In the deck</div></div>
     <div class="stat"><span class="emo">${ico('target',20)}</span><div class="n">${deck.filter(q=>S.answers[q.id].conf===0&&isCorrect(q.id)).length}</div><div class="l">Lucky guesses</div></div>
     <div class="stat"><span class="emo">${ico('laurel',20)}</span><div class="n">${deck.filter(q=>(S.srs[q.id]||{}).lvl>=3).length}</div><div class="l">Nearly retired</div></div>
@@ -5265,7 +5268,7 @@ function vMock(p){
     [10,20,40].forEach(n=>{
       const ok=pool.length>=n;
       h+=`<button class="card" ${ok?`onclick="runMock(${n})"`:'disabled'} style="--c:rgba(109,76,125,.4)">
-        <div class="mod-top"><span class="mod-ic" style="background:var(--neuro)">⏱️</span><span class="mod-name">${n} questions</span></div>
+        <div class="mod-top"><span class="mod-ic" style="background:var(--neuro)">${ico('clepsydra',22)}</span><span class="mod-name">${n} questions</span></div>
         <div class="mod-meta">~${Math.round(n*1.2)} minutes${ok?'':' · pool too small'}</div></button>`;
     });
     if(pool.length<40)h+=`<button class="card" onclick="runMock(${pool.length})" style="--c:rgba(109,76,125,.4)">
@@ -5436,7 +5439,7 @@ function vSchedule(p){
   let h=`<div class="eyebrow" style="background:var(--peds)">Your plan</div><h1>${ico('tablet',26)} Study schedule</h1>
   <p class="page-sub">Every subject has its own <b>&#10003; done</b> and <b>&#10007; missed</b> buttons. Missed work moves to a catch-up slot on a free day; nothing else shifts.</p>
   <div class="edbar">
-    <button class="btn ${ed?'':'sec'}" onclick="S.editSched=!S.editSched;save();render()">${ed?'\u2713 Done editing':'\u270f\ufe0f Edit schedule'}</button>
+    <button class="btn ${ed?'':'sec'}" onclick="S.editSched=!S.editSched;save();render()">${ed?'\u2713 Done editing':`${ico('stylus',14)} Edit schedule`}</button>
     ${ed?`<button class="ed-t danger" onclick="resetSchedule()">Reset to the original plan</button>`:''}
   </div>`;
 
@@ -5451,9 +5454,9 @@ function vSchedule(p){
     if(n){
       h+=`<button class="card" style="margin-bottom:20px;--c:rgba(109,76,125,.4)" onclick="go({name:'moved'})">
         <div style="display:flex;align-items:center;gap:11px">
-          <span class="mod-ic" style="background:var(--neuro)">&#128260;</span>
+          <span class="mod-ic" style="background:var(--neuro)">${ico('shuffle',20)}</span>
           <div><div class="mod-name" style="font-size:14.5px">${n} missed item${n===1?'':'s'} to catch up</div>
-          <div class="mod-meta" style="margin:0">${overflow>0?`&#9888;&#65039; ${overflow} with no slot left`:'All of it has a new date'} &rarr;</div></div>
+          <div class="mod-meta" style="margin:0">${overflow>0?`${overflow} with no slot left`:'All of it has a new date'} &rarr;</div></div>
         </div></button>`;
     }
   }
@@ -5493,7 +5496,7 @@ function vSchedule(p){
       h+=`<button class="ed-add" onclick="addItem(${di})">+ Add a subject</button>`;
     }else{
       if(!d.items.length){
-        h+=`<div class="track"><span class="track-body" style="color:var(--ink-4);font-style:italic">&#128564; Free day \u2014 catch-up slot</span></div>`;
+        h+=`<div class="track"><span class="track-body" style="color:var(--ink-4);font-style:italic">Free day \u2014 catch-up slot</span></div>`;
       }
       d.items.forEach(it=>{
         h+=trackRow(d.date,it.idx,it.label,it.hex,it.text,S.sched[d.date+'|'+it.idx]);
@@ -5541,8 +5544,8 @@ function setMark(date,idx,mark){
   markDayActive();save();render();
   if(S.sched[k]==='missed'){
     const {overflow}=buildSchedule();
-    toast(overflow>0?`Queued for catch-up \u2014 \u26a0\ufe0f ${overflow} with no slot left`:'Queued for catch-up \u2705');
-  }else if(S.sched[k]==='done')toast('Nice work \u2705');
+    toast(overflow>0?`Queued for catch-up \u2014 ${overflow} with no slot left`:'Queued for catch-up');
+  }else if(S.sched[k]==='done')toast('Marked done');
   else toast('Cleared');
 }
 
@@ -5666,8 +5669,8 @@ function vMoved(p){
   <p class="page-sub">Only the subjects you marked missed, and the day each one has been moved to. Nothing else in the schedule was touched.</p>`;
 
   if(!catchups.length){
-    h+=`<div class="empty"><div class="big">&#10024;</div><h3>Nothing missed</h3>
-     <p>You're on plan. Mark a subject missed on the schedule and it appears here with a new date.</p>
+    h+=`<div class="empty"><div class="big">${ico('laurel',46)}</div><h3>Nothing missed</h3>
+     <p>Nothing is behind. Mark a subject missed on the schedule and it appears here with a new date.</p>
      <div style="margin-top:20px"><button class="btn go" onclick="go({name:'schedule'})">Open schedule</button></div></div>`;
     p.innerHTML=h;return;
   }
@@ -5675,16 +5678,16 @@ function vMoved(p){
   const placed=catchups.filter(c=>c.to);
   const dropped=catchups.filter(c=>!c.to);
   h+=`<div class="grid g4" style="margin-bottom:24px">
-    <div class="stat"><span class="emo">&#128260;</span><div class="n">${placed.length}</div><div class="l">Given a new date</div></div>
-    <div class="stat"><span class="emo">${overflow?'\u26a0\ufe0f':'\u2705'}</span><div class="n" style="color:${overflow?'var(--bad)':'var(--ok)'}">${overflow}</div><div class="l">No slot left</div></div>
-    <div class="stat"><span class="emo">&#128203;</span><div class="n">${capacity}</div><div class="l">Catch-up capacity</div></div>
+    <div class="stat"><span class="emo">${ico('shuffle',20)}</span><div class="n">${placed.length}</div><div class="l">Given a new date</div></div>
+    <div class="stat"><span class="emo">${ico('hourglass',20)}</span><div class="n" style="color:${overflow?'var(--bad)':'var(--ok)'}">${overflow}</div><div class="l">No slot left</div></div>
+    <div class="stat"><span class="emo">${ico('tablet',20)}</span><div class="n">${capacity}</div><div class="l">Catch-up capacity</div></div>
   </div>`;
 
   if(overflow){
     h+=`<div class="card" style="margin-bottom:22px;background:var(--bad-bg);border-color:var(--bad)">
-      <b>\u26a0\ufe0f ${overflow} item${overflow===1?'':'s'} have nowhere to go.</b>
+      <b>${overflow} item${overflow===1?'':'s'} have nowhere to go.</b>
       <div style="margin-top:7px;font-size:13.3px;color:var(--ink-2);font-weight:500">
-      Rest days and buffer days are full. Either double up on a catch-up day, drop something, or tell me and I'll re-compress the whole plan.</div></div>`;
+      Rest days and buffer days are full. Double up on a catch-up day, or drop something from the plan.</div></div>`;
   }
 
   const byDate={};
@@ -5745,7 +5748,7 @@ function doSearch(){
   let h='';
   thits.slice(0,5).forEach(t=>{
     h+=`<div class="res-item" onclick="jumpTheory('${t.ch}','${t.sec.id}')">
-      <div class="res-tag" style="color:var(--neuro)">&#128218; Notes \u00b7 ${esc(chapterName(t.ch))}</div>
+      <div class="res-tag" style="color:var(--neuro)">${ico('scroll',16)} Notes \u00b7 ${esc(chapterName(t.ch))}</div>
       <div class="res-txt"><b>${esc(t.sec.h)}</b></div></div>`;
   });
   hits.slice(0,12).forEach(({q})=>{
@@ -6070,12 +6073,17 @@ function clepMini(){
 }
 function clepMute(){
   CLEP.muted=!CLEP.muted; clepSaveCfg(); clepPaintTools();
-  if(CLEP.muted){clepDismiss(); toast('The Clepsydra will keep quiet 🤫')}
+  if(CLEP.muted){clepDismiss(); toast('The Clepsydra will keep quiet')}
   else clepSay('Back with you. Tap me on any screen and I will explain it.',{force:true});
 }
 function clepPaintTools(){
   const b=$('clepMuteBtn'); if(!b)return;
-  b.textContent=CLEP.muted?'🔈':'🔇';
+  /* This assigns textContent, so an ico() SVG cannot go here — it would
+     show as a literal <svg> string. The icon set has no speaker glyph
+     either. The pause/play pair is the convention every start button in
+     the app already uses, and it says the right thing: she is talking,
+     or she is stopped. The title and aria-label carry the words. */
+  b.textContent=CLEP.muted?'\u25b6':'\u275a\u275a';
   b.title=CLEP.muted?'Let her talk':'Quiet her';
   b.setAttribute('aria-label',b.title);
 }
@@ -6449,7 +6457,7 @@ document.addEventListener('visibilitychange',()=>{
 function showModal(html,wide){const m=$('modal');m.innerHTML=html;if(m.classList){wide?m.classList.add('wide'):m.classList.remove('wide')}$('modalBg').classList.add('show')}
 function closeModal(){$('modalBg').classList.remove('show')}
 function showShortcuts(){
-  showModal(`<h3>⌨️ Shortcuts</h3>
+  showModal(`<h3>${ico('keys',19)} Shortcuts</h3>
    <div class="shortcuts">
      <span><span class="kbd">A</span>–<span class="kbd">E</span></span><span class="d">Pick an answer</span>
      <span><span class="kbd">Enter</span></span><span class="d">Check, then next</span>
@@ -6618,14 +6626,14 @@ function bakRestore(at){
   let st; try{ st=JSON.parse(s.json) }catch(e){ toast('That snapshot could not be read'); return }
   S=Object.assign({answers:{},flags:{},conf:{},sched:{},srs:{},days:{},hl:{},banks:{},resumeByChapter:{}},st);
   save(); closeModal(); render();
-  toast('Restored your progress from '+bakWhen(at)+' ✅');
+  toast('Restored your progress from '+bakWhen(at));
 }
 
 function exportData(){
   const blob=new Blob([JSON.stringify({v:2,saved:new Date().toISOString(),state:S},null,2)],{type:'application/json'});
   const a=document.createElement('a');
   a.href=URL.createObjectURL(blob);a.download=`herophilus-progress-${todayISO()}.json`;a.click();
-  toast('Progress downloaded 💾');
+  toast('Progress downloaded');
 }
 function importData(e){
   const f=e.target.files[0];if(!f)return;
@@ -6633,7 +6641,7 @@ function importData(e){
   r.onload=()=>{
     try{
       const d=JSON.parse(r.result);
-      if(d.state){S=Object.assign(S,d.state);save();render();toast('Progress restored ✅')}
+      if(d.state){S=Object.assign(S,d.state);save();render();toast('Progress restored')}
       else toast('That file is not a progress export')
     }catch(err){toast('Could not read that file')}
   };
