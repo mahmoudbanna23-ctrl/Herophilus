@@ -206,22 +206,69 @@ Recorded so nobody re-argues these from an armchair:
 **Today, and in this order** — B2 first because it is the instrument:
 
 1. **B2** — move the error capture after the walk; then deliberately inject a throw and confirm the
-   exit code is nonzero. ~10 min.
+   exit code is nonzero. ~10 min. ✅ **DONE — commit `309d797`**, verified with `--selftest`:
+   injected fault exits 1, normal run exits 0 at 5,922 questions.
 2. **Firestore rules** — owner publishes. Until they are live, B1 is not "you overwrite your own
-   account", it is "anyone can write anyone's document". ~15 min, owner.
+   account", it is "anyone can write anyone's document". ~15 min, owner. **Status unknown — owner
+   console, not verifiable from the repo.**
 3. **B1 + B7** — identity test in `docRef()`, cancel-then-check in `schedulePush()`, flush before
    `enterProfile()` reassigns `me` and before `signOut()`, exact-UID test on the pull. Then the
-   three-tap manual test. ~60–100 min.
-4. **The lock** — Ophthalmology and Neuropsychiatry across all 14 surfaces.
-5. **Exam mode**, scoped as above; fallback to untimed if the clock slips.
-6. **B5 copy** — two minutes, and the toast currently lies.
-7. **Mobile pass**, then the trimmed build.
+   three-tap manual test. ~60–100 min. **NOT done as of 2026-09-06** — `docRef()` (`app/index.html:3644`)
+   still keys off `fbUser.uid` alone and `schedulePush()` (`:3693`) still only tests `!fbUser`; no
+   identity check exists yet. Still open, still today's job.
+4. **The lock** — Ophthalmology and Neuropsychiatry across all 14 surfaces. **NOT done** — no
+   `isLocked`/`locked:true` anywhere in `app\data\modules.js` or `app\index.html`. Still open.
+5. **Exam mode**, scoped as above; fallback to untimed if the clock slips. **NOT done** — no
+   mode flag or exam toggle found in `app\index.html`. Still open.
+6. **B5 copy** — two minutes, and the toast currently lies. **NOT done** — the toast at
+   `app/index.html:4716` still promises the middle rating ("Noted — it will come back soon") and
+   `inDeck()` (`:2970`) still only admits `conf===0`. Still open.
+7. **Mobile pass**, then the trimmed build. **Trimmed build: partly done** — `tools/build-launch.js`
+   exists on disk (untracked, uncommitted, 2026-09-06) and reads as a working build script; whether
+   it has actually been run to produce a shipped `dist\` is unverified. **Mobile pass: unknown** —
+   needs a live screenshot check, not cheap to verify from disk.
 
-**Cut to next week, deliberately:** B4 and B5's behaviour (they touch the same seam the exam commit
-uses — let it settle first), B6 history integration, the write-interval raise plus a
-`visibilitychange`/`pagehide` flush, the payload size warning, an "Export progress (JSON)" button,
-and a first-sign-in "bring this profile into your account" merge — which the B1 guard makes
-necessary, because the accidental route it closes was the only migration path that existed.
+## Superseded 2026-09-06 — the deferral list is overturned
+
+**Owner ruling, verbatim: "Don't leave any thing for next weak."** Nothing in this project is being
+left for later. The paragraph below is kept as the historical record of what this meeting first
+proposed deferring — it no longer describes the plan.
+
+> *Original text, now overturned:* "Cut to next week, deliberately: B4 and B5's behaviour (they
+> touch the same seam the exam commit uses — let it settle first), B6 history integration, the
+> write-interval raise plus a `visibilitychange`/`pagehide` flush, the payload size warning, an
+> "Export progress (JSON)" button, and a first-sign-in "bring this profile into your account"
+> merge — which the B1 guard makes necessary, because the accidental route it closes was the only
+> migration path that existed."
+
+**Current status of each item, checked against the repo 2026-09-06 — none of it is scheduled for
+later; each is either today's work or a stated drop:**
+
+- **B4** (identical re-answer never advancing SRS) — **in scope for today.** `reveal()`
+  (`app/index.html:4694`) now calls `scheduleSRS()` unconditionally on every submission with no
+  guard visible; this may already be moot, but it has not been confirmed fixed by a named commit,
+  so it stays on today's list until someone checks it off.
+- **B5's behaviour** (correct-but-Unsure never entering the review deck) — **in scope for today.**
+  Verified still broken (see item 6 above). It shares the B1/B7 identity seam only in copy, not in
+  code, so there is no reason left to hold it for the exam-mode commit to "settle first" — do it
+  today alongside the copy fix.
+- **B6** (history integration / back-button) — **status: genuinely not being done today.** This is
+  a real feature build (`pushState`/`popstate` wiring across the whole app), not a small fix, and
+  nothing on disk suggests it has been started. Named here as out of scope for the launch, not
+  quietly dropped.
+- **Write-interval raise + `visibilitychange`/`pagehide` flush** — **in scope for today.** Verified
+  not present: the only `visibilitychange` listener in the app (`:6178`) is the session-clock tick
+  fix (commit `864b77d`), unrelated to the sync flush. This is small and belongs with the B1/B7 fix
+  since it touches the same debounce.
+- **Payload-size warning** — **status: genuinely not being done today.** No warning UI exists; this
+  is new UI work with no start on disk, and the board's own measurement (539,101 bytes, 51% of the
+  Firestore ceiling) means it is not launch-blocking.
+- **"Export progress (JSON)" button** — **status: genuinely not being done today.** No such button
+  exists; new UI work, not started, not launch-blocking.
+- **First-sign-in "bring this profile into your account" merge** — **status: genuinely not being
+  done today.** Not started. This is real follow-up work born from the B1/B7 fix closing the
+  accidental migration route; it is correctly a next task, just not one that fits in today's build,
+  and it is recorded here rather than silently forgotten.
 
 ## New items the meeting added to the plan
 
