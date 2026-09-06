@@ -24,7 +24,7 @@ Where this file and the archive disagree, this file wins. ⚠️ **Before openin
 ## Resume here — state at 2026-09-05
 **BOTH CHATS RAN the night of 2026-09-02/03; both prompts were REWRITTEN IN PLACE 2026-09-03 late
 against measured disk state.** ⚠️ **RELAUNCH ONLY FROM `progress\resume-2026-09-03b-chatB-peds.md`
-(v4 — House now via `tools\chapter-loop.js` + Codex) and `progress\resume-peds-endpoint-part2.md` (v1, Chat C part 2). **`resume-2026-09-03-late-peds-endpoint.md` (v6) is SPENT — part 1 closed under it; do not relaunch it.** Every earlier prompt is stale and pays
+(v4 — House now via `tools\chapter-loop.js` + Codex). **BOTH peds endpoint prompts are now SPENT — `resume-2026-09-03-late-peds-endpoint.md` (v6, part 1 closed under it) and `resume-peds-endpoint-part2.md` (v1, part 2 closed under it 2026-09-06); do not relaunch either.** Every earlier prompt is stale and pays
 ~50k more per read. ⚠️ **A DIRTY TREE IS NORMAL while two chats run** — **never stage another
 chat's file; commit explicit paths only, and wait on `index.lock`, never delete it.**
 ⚠️ **The watch runs FROM THE MAIN `D:\claude os` CHAT, not its own** (user, 2026-09-03) — note atop
@@ -44,7 +44,7 @@ all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **Th
   and is prose the classifier mis-tagged. **The classifier errs BOTH ways** — it also called
   pp.1889/1890 notes when they hold a real question, which is the expensive direction.
 - ✅ **PEDS ENDPOINT PART 2 CLOSED 2026-09-06 — `questions.peds.ep2.js` holds 630, 0 holes**, 17
-  sections pp.5–1949 (tail pp.1950–1993 stages nothing). Close-out: `progress\resume-peds-endpoint-part2.md`.
+  sections pp.5–1949 (tail pp.1950–1993 stages nothing; `val-pd-ep2.js` must never get a section 18 row). Close-out: `progress\resume-peds-endpoint-part2.md`. ⚠️ **THE CLOSING TEST IS A REPO TOOL: `node tools\bank-harness\pagecov-ep2.js`** — exit 0 is clean, and it fails on a page outside its two measured classifier-error lists. **An adjudication is not a citation**; it caught six of those.
   part2.pdf 1993 pp / 272 MB. ⚠️ **A FOLD MAKES THIS FILE SHRINK LEGITIMATELY** — a drop with no fold
   commit behind it is the finding. A section that outgrows one file splits `part-A/B` →
   `tools\bank-harness\merge-parts-ep.js` → `.draft-*` → `.array.js`. ⚠️ **Never run

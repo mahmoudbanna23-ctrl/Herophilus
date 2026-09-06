@@ -1,3 +1,32 @@
+# CLOSED 2026-09-06 -- THIS PROMPT IS SPENT, DO NOT RELAUNCH IT
+
+Part 2 of the pediatrics endpoint bank ran to its end under this prompt and is finished:
+`Q_PEDS_EP2` holds **630 entries, 0 holes**, 17 sections spliced across pp.5-1949, and the app
+boots from `file://` with 0 console errors (`QUESTIONS 5922`). The tail pp.1950-1993 was measured
+and stages nothing; `val-pd-ep2.js` has no section 18 row and must never acquire one.
+
+The closing test was **page coverage, not a section count**, and it is now a repo tool rather than
+a scratchpad script: `node tools/bank-harness/pagecov-ep2.js`. It reads all three peds banks and
+compares every page the OCR classifier marked `answered` against every `p.<n>` cited in a live
+`source`. Its last run: 877 part-2 pages cited, 15 answered pages uncited and 14 cited pages
+classified `notes` -- both lists measured classifier error, listed in the tool and read on the
+images. **A drop from those numbers is a finding; a rise means someone edited a `source`.**
+
+What that test found, and the reason to keep it: **an adjudication is not a citation.** Six pages
+had been read, compared and ruled reprints during their section passes, with the ruling written
+into the journal or the fold adjudication -- and never appended to the surviving entry's `source`.
+No other instrument in the harness can see that. The validator checks drafts against staging, the
+splicer checks the array, and neither reads an adjudication note.
+
+Everything else -- every section report, the fold adjudications, the six citations and the two
+wrong earlier versions of the coverage test -- is at the tail of this file, from
+`## Sections 16 and 17 closed, and part 2 with them (2026-09-06)`.
+
+The prompt body below is kept verbatim as the record of how the stream was run. Do not paste it
+into a chat.
+
+---
+
 # Chat C resume — PEDIATRICS ENDPOINT **PART 2** (2026-09-04, v1)
 
 Paste into a **fresh Opus chat** at `D:\claude os\Medical school\Herophilus`. **One prompt per
@@ -2451,3 +2480,50 @@ The tail pp.1950–1993 stages nothing.
 - `MEMORY.md`'s corpus figures are stale: live ep2 is 630 and the boot check reports 5,922.
   ⚠️ **No writes to `MEMORY.md` mid-run** — that is the parallel-chat rule, so it stands as a note
   for whoever closes the workspace state.
+
+---
+
+## Closed for good (2026-09-06) — the three open items above are resolved
+
+The list at the end of the previous block said three things were flagged and not chased. All three
+are now done, and this block is what turns "part 2 is finished" into "part 2 is closed".
+
+**1. The 704 vs 705 count in part 1 was resolved by measurement, not by argument.** The entry count
+was taken at each commit that touched `questions.peds.ep.js`: 705 at `5d359e1`, 704 at `47d4d76`,
+and 704 at every commit since including HEAD. `47d4d76` is the cross-part fold, and its diff deletes
+exactly one part-1 entry, `pedep-inf-82` — part 2's printing of that vignette calls the tonsillar
+discharge purulent and part 1's does not, so the fuller printing was kept. That commit's own message
+already said "Part 1 is 704 now". **704 is correct and `MEMORY.md` was the stale artefact**, which
+is the good shape of this finding: the rule is that a fold makes an endpoint file shrink
+legitimately and a drop with no fold commit behind it is the finding. There was a fold commit. The
+stale figures went with it — corpus 5,922 not 5,792, peds endpoint 1,334 not 1,204, part 2 630 not
+499 — all re-measured from disk in one pass rather than carried forward.
+
+**2. The four untracked staging files are committed.** `endpoint-p2-s13-mfe2.part-A..D.js` were this
+stream's own and were never added. They were not committed on trust: all four were merged by the
+blank-line rule `merge-parts-ep2.js` uses and reconciled against the tracked
+`endpoint-p2-s13-mfe2.array.js` — **80 entries against 80, the `n:p:key` sequence identical, zero
+stem or option-list mismatches.** They are the array's real provenance, and every other section's
+part files were already tracked, so their absence was an oversight and not a decision.
+
+⚠️ **A part file does not pass `node --check`, and that is not a fault.** They are a bare run of
+object literals separated by blank lines, never comma-joined, because one drafting agent per half
+appends incrementally and neither can know whether it owns the last entry. `merge-parts-ep2.js` is
+what makes them an array. A half that "fails to load" is nearly always this.
+
+**3. The closing test is now a repo tool: `tools/bank-harness/pagecov-ep2.js`.** It lived in the
+session scratchpad, which dies with the session, while the journal pointed at it as the instrument
+that proved the book was covered. It now carries its own history in its header — the two earlier
+versions that understated coverage, and why each was wrong — and, more usefully, it carries the two
+residual lists as expected state and **exits 1 on a page outside them**. That was verified by
+negative control: removing p.87 from `KNOWN_UNCITED` makes it report the finding and exit 1.
+
+Final state, all measured today: `questions.peds.ep2.js` **630 entries, 0 holes**. Boot check
+`QUESTIONS 5922 · THEORY 153 · MODULES 4 · 153 chapter rows (138 with questions) · ent 30 ·
+ophtho 36 · neuropsych 36 · pediatrics 51 · console errors 0`. Coverage `877 part-2 pages cited
+(ep2 845, folded into part 1 32, House 0)`, 15 uncited and 14 over-cited, both lists unchanged and
+both classifier error. **CLEAN, exit 0.**
+
+**What is left, and it is not part 2's:** the SPENT header on
+`progress/resume-2026-09-03-late-peds-endpoint.md` still says part 1 closed at 705. It is part 1's
+file and this chat does not write to it; `MEMORY.md` now carries the corrected number and the reason.
