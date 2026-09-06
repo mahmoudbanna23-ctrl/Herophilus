@@ -2791,31 +2791,30 @@ let storageMode='memory';
 
 async function loadState(){
   const key=KEY,p=me,entry=profileLoad;
+  let raw=null,mode='local';
   try{
     if(typeof window!=='undefined'&&window.storage&&window.storage.get){
       const r=await window.storage.get(key);
       if(entry!==profileLoad||me!==p)return;
-      if(r&&r.value)S=Object.assign(S,JSON.parse(r.value));
-      if(!S.hl)S.hl={};
-      storageMode='cloud';migrateSched();dropAI();return;
+      raw=r&&r.value;mode='cloud';
     }
   }catch(e){if(entry===profileLoad&&me===p)storageMode='cloud';return}
-  /* The parse is deliberately its own try: a corrupt value used to fall into
-     the outer catch and drop the app to memory-only, which is exactly the case
-     the snapshots exist to repair. Missing OR unreadable both reach for the
-     newest snapshot; anything that parses is left alone. */
+  /* Parsing and checking share their own try so a missing, unreadable or
+     unusable value reaches the existing snapshot ladder instead of becoming
+     live state or dropping the app to memory-only storage. */
   try{
-    let raw=null;
-    try{ raw=localStorage.getItem(KEY) }catch(e){}
+    if(mode==='local'){try{ raw=localStorage.getItem(key) }catch(e){}}
     let parsed=null;
-    if(raw){ try{ parsed=JSON.parse(raw) }catch(e){ parsed=null } }
+    if(raw){ try{ parsed=checkedProgressState(JSON.parse(raw)) }catch(e){ parsed=null } }
     if(!parsed){
       const r=bakNewest();
-      if(r){ parsed=r.state; bakRestored=r.at }
+      if(r){
+        try{ parsed=checkedProgressState(r.state); bakRestored=r.at }catch(e){}
+      }
     }
     if(parsed)S=Object.assign(S,parsed);
     if(!S.hl)S.hl={};
-    storageMode='local';
+    storageMode=mode;
     migrateSched();dropAI();
   }catch(e){storageMode='memory'}
 }
@@ -2847,10 +2846,33 @@ async function save(){
   S.updatedAt=Date.now();
   let saved=false;
   try{
-    if(storageMode==='cloud'&&window.storage&&window.storage.set){await window.storage.set(KEY,JSON.stringify(S));}
-    else if(storageMode==='local')localStorage.setItem(KEY,JSON.stringify(S));
+    if(storageMode==='cloud'&&window.storage&&window.storage.set){
+      const key=KEY,raw=JSON.stringify(S),storage=window.storage;
+      /* Each key has one active write and one replaceable pending write, so
+         a slow earlier request cannot overwrite a later answer. Keeping the
+         key and payload together also prevents writes crossing profiles.
+         A superseded caller gets false because its payload was not persisted. */
+      const writes=save.cloudWrites||(save.cloudWrites=new Map());
+      let queue=writes.get(key);
+      if(!queue){queue={running:false,pending:null};writes.set(key,queue)}
+      saved=await new Promise(resolve=>{
+        if(queue.pending)queue.pending.resolve(false);
+        queue.pending={raw:raw,storage:storage,resolve:resolve};
+        if(queue.running)return;
+        queue.running=true;
+        (async()=>{
+          while(queue.pending){
+            const job=queue.pending;queue.pending=null;
+            let ok=false;
+            try{await job.storage.set(key,job.raw);ok=true}catch(e){warnSaveFailure()}
+            job.resolve(ok);
+          }
+          writes.delete(key);
+        })();
+      });
+    }
+    else if(storageMode==='local'){localStorage.setItem(KEY,JSON.stringify(S));saved=true}
     else throw new Error('No persistent storage is available');
-    saved=true;
   }catch(e){warnSaveFailure()}
   schedulePush();
   bakSchedule();
@@ -4166,8 +4188,10 @@ async function pushCloud(c=cloudSession){
     const termChanged=!termEntryPending&&termChoice(S.term)&&S.term.id!==activeTerm;
     if(termChanged)render();
     const raw=JSON.stringify(S);
-    if(c.mode==='cloud'&&window.storage&&window.storage.set)await cloudWait(window.storage.set(c.key,raw));
-    else if(c.mode==='local')localStorage.setItem(c.key,raw);
+    try{
+      if(c.mode==='cloud'&&window.storage&&window.storage.set)await cloudWait(window.storage.set(c.key,raw));
+      else if(c.mode==='local')localStorage.setItem(c.key,raw);
+    }catch(e){warnSaveFailure()}
     if(!currentCloud(c))return;
     bakSchedule();
     /* A push runs 1.2 s after every answer. Repainting unconditionally would
@@ -7636,7 +7660,7 @@ function bakConfirm(at){
 function bakRestore(at){
   const box=bakRead(), s=box.snaps.find(x=>x.at===at);
   if(!s){toast('That snapshot is gone');return}
-  let st; try{ st=JSON.parse(s.json) }catch(e){ toast('That snapshot could not be read'); return }
+  let st; try{ st=checkedProgressState(JSON.parse(s.json)) }catch(e){ toast('That snapshot is unusable. Your current progress has been kept.'); return }
   S=Object.assign({answers:{},flags:{},conf:{},sched:{},srs:{},days:{},hl:{},banks:{},resumeByChapter:{},notes:{},reports:{}},st);
   save(); closeModal(); render();
   toast('Restored your progress from '+bakWhen(at));
