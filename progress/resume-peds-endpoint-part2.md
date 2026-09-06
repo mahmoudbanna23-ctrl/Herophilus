@@ -2295,3 +2295,159 @@ which the break test DOES catch"). It is also the last section: p.1940 onward is
 part 1's close-out measured as staging nothing — **measure it here rather than assuming it.** Run
 `reprint-pd-ep2.js` over it before staging anything; a section named for modified questions is a
 reprint problem by construction, and the four model exams ran 28 / 29 / 53 / 70 reprints of 80.
+
+---
+
+## Sections 16 and 17 closed, and part 2 with them (2026-09-06)
+
+**Section 16, "Recently modified Questions", pp.1923–1940: 18 staged, 18 reprints, nothing drafted.**
+**Section 17, "Recently Added Questions", pp.1942–1949: 8 staged, 6 drafted, 2 reprints.** The two
+section names turned out to describe the two ratios exactly, which is the one time in this stream a
+printed label predicted a measurement. Neither ratio was assumed: `sweep-staged-ep2.js` ran over the
+staged verbatim text of both, and every candidate pair was then compared field by field — stem byte
+for byte, option list element by element, key index — against the live entries. That comparison is
+what separates the eleven byte-identical reprints from the six genuinely modified ones, and a
+modified reprint is still a reprint.
+
+**⚠️ SECTION 16's n11 WAS FOUND BY GREPPING THE SIGN, NOT BY THE SWEEP.** The sweep returned no
+candidate above threshold for it, and the fold adjudication refused to call that silence a draft
+verdict. Grepping the sign instead — an innocent murmur during a febrile illness — found
+`pedep2-car-19` at once. Adding a fifth option and shortening the key text was enough to push a real
+reprint under a similarity threshold. **A candidate list's silence is not a verdict**, and this is
+the measurement behind that rule.
+
+### The section-17 splice, and the splicer bug it exposed
+
+`splice-pd-ep2.js` was given section 16, whose draft list is legitimately empty, and reported
+"entries not found" — because `carve()` cannot find an insertion point in an empty array. That
+message reads as a broken draft file and is the opposite of what happened. The splicer now exits
+cleanly when a section's draft list is empty *after* the validator has already passed, and says so:
+`section N drafts nothing -- all M staged entries are folded or reprinted`.
+
+Section 17's six drafted entries spliced clean. `questions.peds.ep2.js` goes **624 → 630 entries, 0
+holes**, and the app boots from `file://` with **0 console errors** (`QUESTIONS 5922 · THEORY 153 ·
+MODULES 4 · 153 chapter rows, 138 with questions · per module ent 30 · ophtho 36 · neuropsych 36 ·
+pediatrics 51`). Two things were fixed in the draft before it was spliced, both house-style rather
+than content: all six objectives opened "Tests recognising…" and were rewritten to the imperative
+(**zero of the 1,329 live endpoint entries open an objective with "Tests"**), and `ra-4` opened with
+a dead-end sentence about otitis media being absent from the peds material. That is the gap rule
+inverted — **answer first, tag at the end** — so the absence moved to a closing note before the
+marker, in the shape of `entep-throat-103`.
+
+### ⚠️ SECTION 18 EXISTS IN THE BOOK AND MUST NEVER GET A HARNESS ENTRY
+
+pp.1950–1993 were measured, not assumed: they stage nothing. `val-pd-ep2.js` has no section 18 row
+and must not acquire one — an empty section in the config is a section the validator will demand
+drafts for.
+
+---
+
+## The closing test is page coverage, and it found six citations that were adjudicated and never written
+
+The test: every page the OCR classifier marked `answered` in
+`content/peds/qb-pages/ocr/ep2/index.json`, against every `p.<n>` cited in a live `source`. Script at
+`<scratchpad>/pagecov-ep2-all.js`.
+
+**⚠️ THE FIRST TWO VERSIONS OF THIS TEST WERE BOTH WRONG, IN THE SAME DIRECTION — THEY UNDERSTATED
+COVERAGE AND MANUFACTURED A CRISIS.** Recorded because the next stream will write this test again:
+
+1. The first version matched only the literal `part2.pdf p.<n>` and read only `questions.peds.ep2.js`.
+   It reported **451** answered-but-uncited pages. The fault: a `source` names the book once and then
+   lists further pages bare — `(reprinted at p.1024)`, `; reprinted p.137` — so the whole `source`
+   field has to be parsed for page numbers, not just the run after the filename.
+2. The second version parsed whole `source` fields but still read only the ep2 file. **A part-1/part-2
+   duplicate is a WITHIN-bank fold** (both are `bank:'endpoint'`), so its part-2 citation lives in
+   `questions.peds.ep.js` — **23 `part2` mentions there, 0 in House.** Reading only ep2 understates
+   coverage by exactly those folds.
+
+The correct test reads all three peds banks, and in the two that are not ep2 it counts only the page
+numbers in the span following a `part2.pdf` mention, stopping at the next `.pdf` named in the same
+`source`. Result before the fix:
+
+```
+part-2 pages cited: 871   (from ep2 839, folded into part 1 32, folded into House 0)
+classifier `answered` pages: 1081
+UNCITED, kind "answered": 21   [87,157,159,161,162,255,256,257,322,375,420,448,450,613,617,618,619,1082,1911,1977,1984]
+UNCITED, kind "notes": 203
+cited but not classified answered: 14   [20,179,312,321,636,689,962,1037,1098,1129,1175,1204,1207,1531]
+```
+
+### All 21 were run down. None is an undrafted question. Six were missing citations.
+
+**⚠️ AN ADJUDICATION IS NOT A CITATION.** Every one of the six had been read, compared and ruled a
+reprint during its section pass, and the ruling was written into this journal or into
+`endpoint-p2-s15-fold-adjudication-D.md` — and then never appended to the surviving entry's `source`.
+Nothing else in the harness could see it: the validator checks drafts against staging, the splicer
+checks the array, and neither reads an adjudication note. **The page-coverage test is the only
+instrument in this stream that reads the live file and asks what the book printed.**
+
+| uncited | folds into | its page | what the second printing changes |
+|---|---|---|---|
+| p.322 | `pedep2-hem-27` | p.323 | the unanswered twin — same vignette, same hand figure, same five options, **no key marked and no box**; the page the classifier mistagged |
+| p.375 | `pedep2-hem-86` | p.442 | the boy's age printed **3 not 12**; labs telegraphic; the **(3-8 min) range dropped**; "What is the most likely cause?" for "Which one of the following…" |
+| p.420 | `pedep2-hem-75` | p.419 | identical stem, identical four options, the same highlighted key *Leukemia*; **p.420 prints no box** |
+| p.448 | `pedep2-hem-57` | p.383 | the girl's age printed **3 not 5**; "is recovering" for "was recovering"; "bruising" for "ecchymosis"; "gammaglobulins" for "gamma globulins" |
+| p.450 | `pedep2-hem-82` | p.434 | values written with units; **normal MCV printed 75–100 fL against the 70-100 printed here**; the diagnosis named in the stem; **the fifth option dropped** |
+| p.1911 | `pedep2-mf4-67` | p.1895 | the same question printed twice inside Model Final Exam 4, as Q75 against Q67; five options and key *3 years* unchanged; a shorter explanation box |
+
+**The discarded numbers were not lost.** The journal's fold instruction — "the discarded age is
+written into the surviving entry's note rather than lost" — was honoured when hem-57, hem-82 and
+hem-86 were drafted; all three explanations already carry the other printing's age or MCV range. What
+was missing was only the `source` clause, which is what the coverage test measures.
+
+### `reprint-uncited-pd-ep2.js` — and why two of the six could not be measured the usual way
+
+Built in the shape of `reprint-s16-s17-pd-ep2.js`: re-measures every declared divergence against disk,
+refuses on an undeclared one, idempotent on the whole clause, dry run by default and `--write` to
+apply. Four of the six (pp.375, 448, 450, 1911) are staged as `n53`, `n89`, `n90` and `s15 n75`, so
+their stems, option counts, key text and key index are compared field by field against the staging
+arrays. **pp.322 and 420 are not staged and never will be** — both adjudications ruled that neither
+page gets an entry, which is correct and is why there is nothing to compare against.
+
+For those two the gate is the ruling itself: the script requires this journal to still carry the
+verdict byte for byte, refuses if the staging turns out to hold that page after all, and checks the
+surviving entry's option count, key text and figure against what the clause claims. A hand-typed
+clause with no disk-side check behind it is exactly what this stream has been punished for.
+
+All six written, 0 merged into an existing parenthetical and 6 opening a new one. Re-run:
+
+```
+part-2 pages cited: 877   (from ep2 845, folded into part 1 32, folded into House 0)
+UNCITED, kind "answered": 15   [87,157,159,161,162,255,256,257,613,617,618,619,1082,1977,1984]
+```
+
+### The 29 that remain are measured classifier error, in both directions
+
+**The 15 still uncited** were read and are revision-notes prose carrying a stray highlight: p.87 types
+of cerebral palsy · pp.157/159/161/162 chromosomal and Mendelian inheritance · pp.255/256/257
+haemoglobinopathies · pp.613/617/618/619 ASD, TOF, TGA, Eisenmenger · p.1082 T1DM management ·
+pp.1977/1984 the already-known HUS and DIC review prose. **A page is answered because the highlighted
+key is visible on it, never because the index said so.**
+
+**The 14 cited but not classified `answered`** are the error running the other way — pages carrying a
+real question that the classifier filed as `notes` or `question`. Part 1 measured the same defect at
+pp.1889/1890, and it is the expensive direction: an undercount of question pages is invisible unless
+something else finds the question.
+
+**Both lists are the instrument's error, not the bank's**, and the running tally of causes for the
+`answered` mistag now reads: lettered content slides (255–257) · overflow box in `notes` (312, 321) ·
+exact duplicate reprint (419+420) · index mistag (322) · **revision-notes prose with a stray
+highlight (the 15 above)**.
+
+---
+
+## Part 2 is finished
+
+`questions.peds.ep2.js` holds **630 entries, 0 holes**, 17 sections across pp.5–1949, and every page
+the book prints a highlighted key on is cited by some live entry or accounted for as classifier error.
+The tail pp.1950–1993 stages nothing.
+
+**Open, flagged and deliberately not chased in this chat:**
+
+- `questions.peds.ep.js` loads at **704** while `MEMORY.md` says part 1 closed at **705**. Measured,
+  not resolved — it is part 1's file and this chat does not write to it.
+- Four untracked staging files, `content/peds/qb-pages/endpoint-p2-s13-mfe2.part-A..D.js`. They are
+  this stream's own and were never committed.
+- `MEMORY.md`'s corpus figures are stale: live ep2 is 630 and the boot check reports 5,922.
+  ⚠️ **No writes to `MEMORY.md` mid-run** — that is the parallel-chat rule, so it stands as a note
+  for whoever closes the workspace state.
