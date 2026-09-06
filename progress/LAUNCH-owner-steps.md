@@ -1,12 +1,51 @@
-# Launch day — the three things only you can do
+# Launch day — the four things only you can do
 
-These three tasks live inside Google/Firebase's and Netlify's own websites (their
+These four tasks live inside Netlify's and Google/Firebase's own websites (their
 "consoles" — the control-panel page you see after logging in). Nobody else can click
-these buttons for you, and nobody can do it by editing code. Do them in order.
+these buttons for you, and nobody can do it by editing code. Do them in order —
+Task 0 comes first because Task 2 needs the web address it gives you.
 
 You will need to be logged into the Google account that owns the Firebase project
 called **ward-round-e4822** (that name is fixed — it's how you'll recognize the right
 project if your Google account has more than one).
+
+---
+
+## Task 0 — Put the site on the internet
+
+**What this is:** Netlify hosts the site for free, and it accepts a folder dragged
+straight from your desktop — no account setup beyond signing in, no command to run.
+This is the step that turns the app on your computer into a link you can send.
+
+**Drag this folder, and only this folder:**
+
+    D:\claude os\Medical school\Herophilus\dist
+
+1. Go to **app.netlify.com** and log in.
+2. Look for the drag-and-drop area — it usually says something like *"Drag and drop
+   your site output folder here"*. On the Sites page it may be at the bottom; if you
+   don't see it, click **Add new site** and choose the deploy-manually option.
+3. Open the `dist` folder's *parent* in File Explorer, and drag the `dist` folder
+   itself onto that area. Wait for it to finish uploading — it is about 29 MB, so on
+   a slow connection this takes a few minutes.
+4. When it's done, Netlify shows you an address like
+   `something-random.netlify.app`. **That is your link.** Write it down; Task 2
+   needs it.
+
+**⚠️ Do not drag the `app` folder.** `app` is the working copy and it contains the
+Ophthalmology and Neuropsychiatry question files. `dist` is the same site with those
+files removed, which is what makes "Coming soon" mean *coming soon* rather than
+*locked but downloadable by anyone who opens the browser's network tab*. The two
+folders look nearly identical in File Explorer; the difference is the whole point.
+
+**How to tell it worked:** open the Netlify link on your phone. You should see the
+gate screen with the Clepsydra, and four subject cards once you're in — ENT and
+Pediatrics live, Ophthalmology and Neuropsychiatry marked "Coming soon". Sign-in
+will *not* work yet — that is Task 2's job, not a fault.
+
+*If you rebuild the site later (after more questions are added), you drag the new
+`dist` folder onto the **same** site in Netlify — not a new one. A new site gets a
+new address, and everyone's saved progress is tied to the address it was saved on.*
 
 ---
 
@@ -118,9 +157,14 @@ or require a business.*
 
 ---
 
-## When all three are done
+## When all four are done
 
 Google sign-in and cloud sync will work for any classmate who opens your Netlify
 link, and each person's progress will be private to their own account. Nothing else
-about the app needs to change for this to be true — these three console steps are
+about the app needs to change for this to be true — these four console steps are
 the whole gap between "works on my computer" and "works for the class."
+
+**Before you send the link to anyone, open it yourself on your phone and sign in.**
+If the account picker appears and the home screen paints afterwards, all four steps
+took. If it shows an error page instead, it is almost always Task 2 — the domain on
+the authorized list has to match the address in your phone's address bar exactly.
