@@ -249,9 +249,23 @@ Recorded so nobody re-argues these from an armchair:
    three toasts say what actually happens: back tomorrow, back in three days, left on the normal
    schedule.
 7. **Mobile pass**, then the trimmed build. ✅ **Mobile pass DONE** — `tools/boot-check/mobile-check.js`
-   reports PASS with no view overflow at any width, across every view. **Trimmed build: script done,
-   not yet run for shipping** — `tools/build-launch.js` is committed (`9d59634`) and reads correctly;
-   no `dist\` has been produced for upload yet.
+   reports PASS with no view overflow at any width, across every view. **Trimmed build DONE and
+   booted 2026-09-06** — `tools/build-launch.js` (`9d59634`) produced `dist\`: 197 files,
+   28,905,461 bytes, with `questions.ophtho.js`, `questions.neuro.js`, `cases.ophtho.js`,
+   `cases.neuro.js`, `theory.ophtho.js`, `theory.neuro.js` and 51 locked-subject image assets left
+   out. `dist\` is gitignored; it is the folder that gets dragged onto Netlify.
+
+   **The folder that ships had never been booted** — only the source it was built from. It is now:
+   `node tools/boot-check/boot-check.js --dir=dist` (the flag was added for this, commit `6ec2f2b`)
+   reports 4,049 questions, 81 theory chapters, 4 module cards, 153 chapter rows and **0 console
+   errors**, with `Q_OPHTHO -1` — the global is genuinely gone and the aggregators degrade to empty
+   instead of throwing, which is what the whole var-on-window convention exists to do.
+
+   **No locked content leaked.** `dist/data/` holds only the ent, peds and shared files, and an
+   anchored search for question ids carrying the locked prefixes (`oph`, `ophep`, `nr`, `npqb`)
+   across every data file returns nothing. A looser first pass hit five files; all five were the
+   pattern matching PNG bytes and the locked chapters' *names* in `modules.js` and `index.html`,
+   which are exactly what paints the "Coming soon" cards and must stay.
 
 ## Superseded 2026-09-06 — the deferral list is overturned
 
