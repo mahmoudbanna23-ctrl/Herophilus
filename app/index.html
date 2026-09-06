@@ -3070,11 +3070,18 @@ function scheduleSRS(qid,ok){
   cur.due=isoLocal(d);
   S.srs[qid]=cur;
 }
-/* CHANGE 4: guessed questions belong in the deck even when correct */
+/* Guessed and unsure questions belong in the deck even when correct.
+   Unsure used to be excluded here, which is what made the middle button of
+   the confidence rating dead: it stored a 1 and nothing read it, so the
+   question never came back and the toast promising it would was false.
+   Confident is deliberately still out — that is what confident means.
+   An old record saved before ratings existed has no conf at all, and
+   undefined matches neither number, so it stays out exactly as before. */
 function inDeck(q){
   if(!isAnswered(q.id))return false;
   if(!isCorrect(q.id))return true;
-  return S.answers[q.id].conf===0;
+  const c=S.answers[q.id].conf;
+  return c===0||c===1;
 }
 function deckAll(){return QUESTIONS.filter(inDeck)}
 function dueNow(){
@@ -4935,16 +4942,36 @@ function reveal(){
   /* she reacts, then settles back to the screen's own pose */
   clepPose(ok?'dancing':'surprised'); clepSettle(3200);
 }
+/* The three ratings have to differ in what they DO, not only in what they
+   store, or the heading above them — "this sets when it comes back" — is a
+   lie on two of the three buttons.
+     Guessed   rung 0, back tomorrow.
+     Unsure    rung 1, back in three days.
+     Confident untouched: the ordinary ladder, and out of the deck.
+   Both intervals come off the existing SRS ladder rather than being new
+   numbers, so the deck's own description of itself stays true.
+   Unsure PINS the rung instead of inheriting it. scheduleSRS has already
+   promoted a correct answer by the time this runs, so a question answered
+   right at rung 3 would otherwise go out to 60 days while the student was
+   telling us they did not trust it. Pinning can therefore demote, which is
+   the intended reading of unsure: the memory is not solid yet.
+   A wrong answer is deliberately NOT touched here. scheduleSRS has already
+   put it at rung 0, due tomorrow, and tomorrow is the floor — no rating can
+   make it come back sooner, and none should make it come back later. */
 function setConf(id,c){
   S.conf[id]=c;
   if(S.answers[id]){
     S.answers[id].conf=c;
-    if(c===0){ /* guessed → back tomorrow, in the deck */
-      S.srs[id]={lvl:0,due:(()=>{const d=new Date();d.setDate(d.getDate()+1);return isoLocal(d)})()};
+    if(isCorrect(id)&&(c===0||c===1)){
+      const lvl=c===0?0:1;
+      const d=new Date();d.setDate(d.getDate()+SRS[lvl]);
+      S.srs[id]={lvl:lvl,due:isoLocal(d)};
     }
   }
   save();render();
-  toast(c===0?'Added to your review deck 🎲':c===1?'Noted — it will come back soon':'Nice 💪');
+  toast(c===0?'In your review deck, back tomorrow.'
+    :c===1?'In your review deck, back in three days.'
+    :'Left on the normal schedule.');
 }
 function navQ(d){
   const n=Q.i+d;
@@ -5148,10 +5175,10 @@ function vReview(p){
   const deck=deckAll();
   const due=dueNow();
   let h=`<div class="eyebrow" style="background:var(--ent)">Spaced repetition</div><h1>${ico('hourglass',26)} Review deck</h1>
-  <p class="page-sub">Anything you got wrong — or got right but marked as a guess — lands here. It comes back after 1 day, then 3, 7, 21, 60. Right answer moves it out a step; wrong resets it.</p>`;
+  <p class="page-sub">Anything you got wrong, or got right but marked as a guess or as unsure, lands here. A guess comes back tomorrow, an unsure one in three days, then 7, 21, 60. Right answer moves it out a step; wrong resets it.</p>`;
   if(!deck.length){
     h+=`<div class="empty"><div class="big">${ico('hourglass',46)}</div><h3>Deck is empty</h3>
-     <p>Nothing wrong and nothing guessed. Keep going and this fills itself.</p></div>`;
+     <p>Nothing wrong, nothing guessed, nothing unsure. Keep going and this fills itself.</p></div>`;
     p.innerHTML=h;return;
   }
   h+=`<div class="grid g4" style="margin-bottom:24px">
