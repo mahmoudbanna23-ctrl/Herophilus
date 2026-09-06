@@ -222,11 +222,27 @@ Recorded so nobody re-argues these from an armchair:
    trimmed build also drops the locked modules' questions and theory: boot-check reads 4,049
    questions and 81 theory chapters, which is 5,922 − 1,873 (ophtho 1,598 + neuro 275) and
    153 − 72 exactly.
-5. **Exam mode**, scoped as above; fallback to untimed if the clock slips. **NOT done as of
-   2026-09-06.** `runMock()` shuffles a pool and calls `startQuiz()`; there is no clock, no mode flag,
-   and explanations reveal as they do in an ordinary quiz. The mock page's own three promises —
-   random order, clock running, no peeking until you finish — are true only of the first. **This is
-   the one item on this list still open.**
+5. **Exam mode**, scoped as above. ✅ **DONE, commit `38ac0e0`, probed live 2026-09-06** — no
+   fallback needed, the clock did not slip. `startQuiz()` takes a fifth `exam` argument carrying the
+   end time and the picks; the header shows a countdown at ~1.2 min a question that turns amber under
+   two minutes, red under thirty seconds, and hands the paper in at zero. Nothing is revealed during a
+   paper, and that costs nothing to enforce because the whole verdict/explanation/confidence block
+   lives inside `if(Q.shown)` and a paper never sets `Q.shown` — there is nothing to find with
+   devtools open. Free-text cases are excluded from the pool; they have their own reveal path and
+   would have been a hole in the promise.
+
+   **The scoring bug found while building it, which nobody had ranked:** `finishSet()` marked the
+   paper with `Q.ids.filter(isAnswered)`, and `isAnswered` reads `S.answers`, which holds every
+   attempt from every earlier session — so a paper drawn from an already-revised chapter was marked
+   partly on last week's work, and a question left blank still counted as answered if it had ever
+   been answered before. `examFinish()` scores from `Q.exam.picked` over the whole paper, so a blank
+   counts as wrong. **The jump grid leaked the same way and worse**, colouring squares green and red
+   from `isCorrect` mid-paper; during a paper it now shows answered-or-not only, drops "First wrong",
+   and counts "next unanswered" from this paper rather than the student's history.
+
+   Verified by driving the real functions in a live headless page — 36 checks, all passing, including
+   a question deliberately pre-marked as answered-in-an-earlier-session, correctly left out of the
+   mark.
 6. **B5 copy** — two minutes, and the toast currently lies. ✅ **DONE, verified from disk
    2026-09-06** — `inDeck()` now admits `conf===0||conf===1`, `setConf()` pins the rung rather than
    inheriting it (so "unsure" can demote a question `scheduleSRS` has already promoted), and the

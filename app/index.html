@@ -403,6 +403,10 @@ button.card:active:not(:disabled){transform:translate(1px,1px);box-shadow:0 2px 
 .ch-name{flex:1;font-size:14px;font-weight:700}
 .ch-count{font-size:11.5px;color:var(--ink-4);font-variant-numeric:tabular-nums;font-weight:700}
 .ch-acc{font-size:12px;font-weight:900;font-variant-numeric:tabular-nums;min-width:40px;text-align:right}
+/* On the weakest-chapters page the rows come from four different modules, so
+   each name has to say which one it belongs to. */
+.wk-mod{display:block;font-size:11px;font-weight:700;color:var(--ink-4);
+  letter-spacing:.05em;text-transform:uppercase;margin-top:2px}
 
 /* ---------- Question ---------- */
 .qwrap{max-width:830px;margin:0 auto}
@@ -549,6 +553,21 @@ button.card:active:not(:disabled){transform:translate(1px,1px);box-shadow:0 2px 
 .conf-b.on{background:var(--fill);color:#fff}
 
 .explain{margin-top:18px;border:2.5px solid var(--line-2);border-radius:14px;overflow:hidden;box-shadow:var(--pop) rgba(0,0,0,.14)}
+
+/* Two quiet routes out of a question: a note the student writes to themselves,
+   and the one way to tell us the question itself is wrong. Both sit under the
+   explanation as plain underlined text — a student who wants them will find
+   them, and a student who does not is never asked anything. */
+.qfoot{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:16px}
+.qfoot .lnk{background:none;border:none;padding:0;font:inherit;font-size:12.5px;font-weight:700;
+  color:var(--ink-2);border-bottom:2px solid var(--line);cursor:pointer;
+  transition:color .13s,border-color .13s}
+.qfoot .lnk:hover{color:var(--tx);border-bottom-color:var(--tx)}
+.qfoot .lnk.has{color:var(--gold);border-bottom-color:var(--gold)}
+.qnote{margin-top:13px}
+.qnote .lb{display:block;font-size:11.5px;font-weight:800;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--ink-2);margin-bottom:7px}
+.qnote .say{font-size:12px;color:var(--ink-2);margin-top:7px;min-height:16px}
 .ex-head{
   display:flex;align-items:center;gap:10px;padding:13px 17px;background:var(--bg-2);
   width:100%;text-align:left;font-weight:900;font-size:13.5px;transition:background .13s;
@@ -849,6 +868,7 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
 }
 .glink:hover{color:var(--tx);background:var(--tint-2)}
 .gnote{font-size:11.8px;color:var(--ink-4);font-weight:600;max-width:400px;text-align:center;line-height:1.65;margin:26px 0 0}
+.gnote.warn{color:var(--warn);border:2px solid var(--warn);border-radius:12px;padding:12px 15px}
 .gwho{
   display:inline-flex;align-items:center;gap:8px;padding:7px 15px;border-radius:20px;
   background:var(--ok-bg);color:var(--ok);border:1px solid var(--ok);
@@ -2715,7 +2735,7 @@ let KEY='wardround.v2';
 /* banks: per-module source filter, {ent:['endpoint','house'], …}. An absent or
    empty entry means "all sources" — never store the full set, so a bank added
    later is included by default instead of silently hidden. */
-let S={answers:{},flags:{},conf:{},sched:{},srs:{},days:{},hl:{},banks:{},resumeByChapter:{}};
+let S={answers:{},flags:{},conf:{},sched:{},srs:{},days:{},hl:{},banks:{},resumeByChapter:{},notes:{},reports:{}};
 let storageMode='memory';
 
 async function loadState(){
@@ -3709,13 +3729,23 @@ function isStandalone(){
   return (window.navigator&&window.navigator.standalone===true)||
          (window.matchMedia&&window.matchMedia('(display-mode: standalone)').matches);
 }
-function setSync(s){syncState=s;const el=$('railSync');if(el&&me)drawRailSync()}
+let lastSyncAt=0;
+const syncClock=ts=>new Date(ts).toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'});
+function setSync(s){
+  if(s==='idle')lastSyncAt=Date.now();
+  if(s==='off')lastSyncAt=0;
+  syncState=s;const el=$('railSync');if(el&&me)drawRailSync();
+}
 function drawRailSync(){
   const el=$('railSync');
   if(!el)return;
   if(!fbUser){el.innerHTML='';el.style.display='none';return}
   el.style.display='flex';
-  const label={idle:'Synced',busy:'Syncing\u2026',err:'Sync failed \u2014 retry on next change',off:'Offline'}[syncState]||'Synced';
+  /* "Synced" alone is a claim with no time on it, and a push that quietly
+     stopped an hour ago looks identical to one that finished a second ago.
+     Say when. */
+  const when=lastSyncAt?' '+syncClock(lastSyncAt):'';
+  const label={idle:'Synced'+when,busy:'Syncing\u2026',err:'Sync failed \u2014 retry on next change',off:'Offline'}[syncState]||'Synced'+when;
   const cls={idle:'ok',busy:'busy',err:'err',off:''}[syncState]||'ok';
   el.innerHTML=`<span class="syncdot ${cls}"></span>${label}`;
 }
@@ -3852,6 +3882,18 @@ function mergeStates(a,b){
   chapters.forEach(cid=>{
     const x=(a.resumeByChapter||{})[cid], y=(b.resumeByChapter||{})[cid];
     out.resumeByChapter[cid]=!x?y:!y?x:((x.at||0)>=(y.at||0)?x:y);
+  });
+  /* A note and a report are written per question and stamped, so they merge the
+     way answers do. Object.assign would let the whole of an older device's notes
+     lose to the whole of a newer one's, which is how a note gets typed on a phone
+     and vanishes on a laptop. */
+  ['notes','reports'].forEach(k=>{
+    out[k]={};
+    const keys=new Set(Object.keys(a[k]||{}).concat(Object.keys(b[k]||{})));
+    keys.forEach(id=>{
+      const x=(a[k]||{})[id], y=(b[k]||{})[id];
+      out[k][id]=!x?y:!y?x:((x.at||0)>=(y.at||0)?x:y);
+    });
   });
   out.schedule=newer.schedule||older.schedule||null;
   out.updatedAt=Math.max(at,bt);
@@ -4126,9 +4168,16 @@ function gateSignInStep(){
     <p class="gtag" style="--d:150ms">${gateSubjects()}<br>${QUESTIONS.length} questions from the real exam question banks.</p>
     <button class="gsign" style="--d:230ms" onclick="signInGoogle()">${GOOGLE_MARK}<span>Sign in with Google</span></button>
     <button class="glink" style="--d:300ms" onclick="showGate('profiles')">${profiles.length?'Use a profile on this device':'Continue without an account'} →</button>
-    <p class="gnote" style="--d:370ms">Signing in keeps your progress the same on your phone and your laptop. Without it everything still works — it just stays on this device.</p>
+    ${inAppBrowser()?`<p class="gnote warn" style="--d:370ms"><b>Open this in your own browser first.</b> You have arrived here from inside another app, and Google will not let anyone sign in from there. Use the menu in the corner and choose <b>Open in browser</b> — or carry on below and keep your progress on this device.</p>`
+      :`<p class="gnote" style="--d:370ms">Signing in keeps your progress the same on your phone and your laptop. Without it everything still works — it just stays on this device.</p>`}
   </div>`;
 }
+
+/* Google refuses OAuth inside an app's embedded browser — it answers
+   disallowed_useragent — and this link will mostly arrive over WhatsApp, where
+   tapping it opens exactly that. The student cannot be warned after the fact,
+   because the refusal happens on Google's own page, off this site. */
+const inAppBrowser=()=>/FBAN|FBAV|FB_IAB|Instagram|Line\/|MicroMessenger|Snapchat|TikTok|; ?wv\)/i.test(navigator.userAgent||'');
 
 /* STEP 2 ------------------------------------------------------------------- */
 function gateProfileStep(){
@@ -4208,7 +4257,7 @@ async function enterProfile(p){
   me=p;
   KEY=stateKey(p.id);
   try{localStorage.setItem(LASTKEY,p.id)}catch(e){}
-  S={answers:{},flags:{},conf:{},sched:{},srs:{},days:{},hl:{},banks:{},resumeByChapter:{},schedule:null};
+  S={answers:{},flags:{},conf:{},sched:{},srs:{},days:{},hl:{},banks:{},resumeByChapter:{},notes:{},reports:{},schedule:null};
   await loadState();
   if(entry!==profileLoad||me!==p)return;
   sanitiseBanks();
@@ -4435,7 +4484,7 @@ function render(){
   document.body.classList.remove('bk-on');
   syncFilm();
   ({home:vHome,module:vModule,quiz:vQuiz,review:vReview,schedule:vSchedule,theory:vTheory,
-    moved:vMoved,flagged:vFlagged,mock:vMock,session:vSession}[view.name]||vHome)(p);
+    moved:vMoved,flagged:vFlagged,mock:vMock,session:vSession,weak:vWeak}[view.name]||vHome)(p);
   revealOnScroll(p);
   /* The companion travels with the view: she repaints her readout and, the
      first time she meets a screen, explains it. */
@@ -4501,6 +4550,9 @@ function renderNav(){
   h+=`<button class="nav-item ${view.name==='review'?'on':''}" onclick="go({name:'review'})"><span class="ic">${ico('hourglass',17)}</span> Review deck
     ${due?`<span class="badge-due">${due}</span>`:'<span class="cnt">0</span>'}</button>`;
   h+=`<button class="nav-item ${view.name==='flagged'?'on':''}" onclick="go({name:'flagged'})"><span class="ic">${ico('laurel',17)}</span> Flagged<span class="cnt">${flagged}</span></button>`;
+  const weak=weakChapters().filter(c=>c.done>=WEAK_MIN&&c.acc<60).length;
+  h+=`<button class="nav-item ${view.name==='weak'?'on':''}" onclick="go({name:'weak'})"><span class="ic">${ico('target',17)}</span> Weakest chapters${
+    weak?`<span class="badge-due">${weak}</span>`:'<span class="cnt">0</span>'}</button>`;
   h+=`<button class="nav-item ${view.name==='mock'?'on':''}" onclick="go({name:'mock'})"><span class="ic">${ico('amphora',17)}</span> Mock exam</button>`;
   $('nav').innerHTML=h;
 }
@@ -4953,6 +5005,21 @@ function vQuiz(p){
       ${ico('scroll',16)} <span>Read the notes on this &mdash; <b>${esc(th.h)}</b></span>
       <span style="margin-left:auto">&rarr;</span></button>`;
 
+    const note=(S.notes||{})[q.id];
+    const reported=!!(S.reports||{})[q.id];
+    h+=`<div class="qfoot">
+      <button class="lnk ${note?'has':''}" onclick="toggleNote('${q.id}')">${note?'Your note':'Write a note on this'}</button>
+      <button class="lnk ${reported?'has':''}" onclick="openReport('${q.id}')">${reported?'You reported this':'Something wrong here?'}</button>
+     </div>`;
+    if(note||Q.noteOpen===q.id){
+      h+=`<div class="qnote">
+        <span class="lb">Your note &mdash; only you see this</span>
+        <textarea class="caseinput" id="qNote" rows="3" placeholder="Why you got it wrong, the bit you keep forgetting, a mnemonic…"
+          oninput="saveNote('${q.id}',this.value)">${esc(note?note.txt:'')}</textarea>
+        <div class="say" id="qNoteSay">${note?'Saved '+bakWhen(note.at):''}</div>
+       </div>`;
+    }
+
     h+=`<div class="qactions">
       <button class="btn sec flag ${flagged?'on':''}" onclick="toggleFlag('${q.id}')">${ico('laurel',15)} ${flagged?'Flagged':'Flag'}</button>
       <div style="margin-left:auto;display:flex;gap:9px">
@@ -5164,6 +5231,96 @@ document.addEventListener('visibilitychange',()=>{
   examStartTick(); paintExamClock();
 });
 
+/* ============ A NOTE ON A QUESTION, AND A WAY TO SAY IT IS WRONG ============ */
+
+/* The note saves as it is typed and never re-renders, because a render would
+   take the cursor out of the box mid-sentence. Emptying the box deletes the
+   note rather than storing a blank one. */
+let NOTE_T=null;
+function toggleNote(qid){
+  Q.noteOpen=(Q.noteOpen===qid)?null:qid;
+  render();
+  if(Q.noteOpen===qid){const el=$('qNote'); if(el)el.focus()}
+}
+function saveNote(qid,txt){
+  clearTimeout(NOTE_T);
+  const say=$('qNoteSay'); if(say)say.textContent='Saving…';
+  NOTE_T=setTimeout(()=>{
+    if(!S.notes)S.notes={};
+    const t=(txt||'').trim();
+    if(t)S.notes[qid]={txt:t,at:Date.now()};
+    else delete S.notes[qid];
+    save();
+    const s2=$('qNoteSay'); if(s2)s2.textContent=t?'Saved just now':'';
+  },500);
+}
+
+/* Reports live in the student's own state, so they ride the same sync as
+   everything else and reach whoever runs the bank without anybody having to
+   publish an email address. Copy puts the same text on the clipboard for a
+   student who would rather just send it. */
+const REPORT_KINDS=[
+  ['key','The marked answer looks wrong'],
+  ['typo','A typo, or an option that makes no sense'],
+  ['exp','The explanation is wrong or contradicts itself'],
+  ['img','The picture is missing, cut off, or gives the answer away'],
+  ['other','Something else'],
+];
+function openReport(qid){
+  const q=QUESTIONS.find(x=>x.id===qid); if(!q)return;
+  const old=(S.reports||{})[qid];
+  showModal(`<h3>${ico('stylus',19)} Something wrong with this question</h3>
+   <p style="margin-bottom:15px">Tell us what you saw and we will check it against the book. Nothing you write here changes your score.</p>
+   <div class="conf-btns" id="repKinds" style="flex-wrap:wrap;margin-bottom:13px">
+     ${REPORT_KINDS.map(([k,label])=>`<button class="conf-b${old&&old.kind===k?' on':''}" data-k="${k}" onclick="pickReportKind(this)">${label}</button>`).join('')}
+   </div>
+   <textarea class="caseinput" id="repTxt" rows="4" placeholder="Anything that helps us find it — which option, which line.">${esc(old?old.txt:'')}</textarea>
+   <div class="modal-actions">
+     <button class="btn sec" onclick="closeModal()">Cancel</button>
+     <button class="btn sec" onclick="copyReport('${qid}')">Copy it instead</button>
+     <button class="btn go" onclick="sendReport('${qid}')">Send</button>
+   </div>`);
+  const el=$('repTxt'); if(el)el.dataset.kind=old?old.kind:'';
+}
+function pickReportKind(btn){
+  const box=$('repKinds'); if(box)Array.from(box.children).forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+  const el=$('repTxt'); if(el)el.dataset.kind=btn.dataset.k;
+}
+/* kind comes back empty when nothing was picked, and stays empty, so the caller
+   can tell an unfilled form from one where the student chose "Something else".
+   Defaulting it here would make the guard below unable to ever fire. */
+function reportText(qid){
+  const el=$('repTxt');
+  const kind=el?(el.dataset.kind||''):'';
+  const label=(REPORT_KINDS.find(r=>r[0]===kind)||['','Something else'])[1];
+  return {kind:kind,label:label,txt:el?el.value.trim():''};
+}
+function sendReport(qid){
+  const r=reportText(qid);
+  if(!r.kind&&!r.txt){toast('Pick what is wrong, or write a line');return}
+  if(!S.reports)S.reports={};
+  S.reports[qid]={kind:r.kind||'other',txt:r.txt,at:Date.now()};
+  save();
+  closeModal();
+  render();
+  toast(fbUser?'Thank you — it is on its way':'Thank you — it goes up next time you sign in');
+}
+function copyReport(qid){
+  const r=reportText(qid);
+  const line=qid+' — '+r.label+(r.txt?': '+r.txt:'');
+  const done=()=>toast('Copied — paste it wherever you like');
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(line).then(done,()=>toast('Could not copy on this browser'));
+  }else{
+    const t=document.createElement('textarea');
+    t.value=line; t.style.position='fixed'; t.style.opacity='0';
+    document.body.appendChild(t); t.select();
+    try{document.execCommand('copy');done()}catch(e){toast('Could not copy on this browser')}
+    document.body.removeChild(t);
+  }
+}
+
 function toggleFlag(id){S.flags[id]=!S.flags[id];save();render();toast(S.flags[id]?'Flagged':'Flag removed')}
 function toggleExp(b){b.classList.toggle('open');b.nextElementSibling.classList.toggle('open')}
 
@@ -5343,6 +5500,83 @@ function markbar(qid){
   if(n)h+=`<button class="clr" onclick="clearHl()">Clear all</button>`;
   h+=`<span class="hint">${armed?(armed==='er'?'Select text to erase':'Select text to highlight'):'Pick a colour to start'}</span>`;
   return h+'</div>';
+}
+
+/* ============ WEAKEST CHAPTERS ============ */
+
+/* A chapter needs this many answered before it is ranked. Below it the number
+   is noise: one wrong out of two reads as 50% and would sit above a chapter
+   the student has genuinely failed forty questions in. */
+const WEAK_MIN=5;
+
+function weakChapters(){
+  const out=[];
+  openModules().forEach(m=>{
+    m.groups.forEach(g=>{
+      g.chapters.forEach(([cid,cname])=>{
+        const cq=qsIn(cid);
+        if(!cq.length)return;
+        const done=cq.filter(q=>isAnswered(q.id));
+        if(!done.length)return;
+        const wrong=done.filter(q=>!isCorrect(q.id));
+        out.push({cid:cid,name:cname,mod:m,total:cq.length,done:done.length,
+                  wrong:wrong.map(q=>q.id),acc:accuracy(cq)});
+      });
+    });
+  });
+  /* Worst first; on a tie the one with more answered questions, because that
+     verdict rests on more evidence. */
+  out.sort((a,b)=>a.acc-b.acc||b.done-a.done);
+  return out;
+}
+
+function vWeak(p){
+  const all=weakChapters();
+  const ranked=all.filter(c=>c.done>=WEAK_MIN);
+  const early=all.filter(c=>c.done<WEAK_MIN);
+  let h=`<div class="eyebrow" style="background:var(--bad)">Where it hurts</div><h1>${ico('target',26)} Weakest chapters</h1>
+  <p class="page-sub">Every chapter you have started, worst score first. A chapter is only ranked once you have answered ${WEAK_MIN} of its questions &mdash; below that the percentage says more about luck than about you.</p>`;
+
+  if(!all.length){
+    h+=`<div class="empty"><div class="big">${ico('target',46)}</div><h3>Nothing to rank yet</h3>
+     <p>Answer a few questions and this page will tell you where to spend your time.</p></div>`;
+    p.innerHTML=h;return;
+  }
+
+  const worst=ranked.slice(0,5);
+  const drill=worst.reduce((a,c)=>a.concat(c.wrong),[]);
+  if(drill.length){
+    h+=`<div class="filterbar">
+      <button class="btn go" onclick="startQuiz(${JSON.stringify(drill).replace(/"/g,'&quot;')},'Weakest chapters — what you got wrong')">▶ Everything you got wrong in the worst ${worst.length} (${drill.length})</button>
+    </div>`;
+  }
+
+  if(ranked.length){
+    h+=`<div class="grouphdr">Ranked</div>`;
+    ranked.forEach(c=>{
+      h+=`<button class="ch-row" onclick="startChapter('${c.cid}')">
+        <span class="ch-dot" style="background:${accColor(c.acc)}"></span>
+        <span class="ch-name">${c.name}<span class="wk-mod">${c.mod.name}</span></span>
+        <span class="ch-count">${c.done} of ${c.total} answered${c.wrong.length?` &middot; ${c.wrong.length} wrong`:''}</span>
+        <span class="ch-acc" style="color:${accColor(c.acc)}">${c.acc}%</span>
+      </button>`;
+    });
+  }else{
+    h+=`<p class="page-sub">No chapter has ${WEAK_MIN} answered questions yet, so nothing is ranked. The chapters you have started are below.</p>`;
+  }
+
+  if(early.length){
+    h+=`<div class="grouphdr">Too early to tell</div>`;
+    early.forEach(c=>{
+      h+=`<button class="ch-row" onclick="startChapter('${c.cid}')">
+        <span class="ch-dot" style="background:var(--line-2)"></span>
+        <span class="ch-name">${c.name}<span class="wk-mod">${c.mod.name}</span></span>
+        <span class="ch-count">${c.done} of ${c.total} answered</span>
+        <span class="ch-acc" style="color:var(--ink-4)">&mdash;</span>
+      </button>`;
+    });
+  }
+  p.innerHTML=h;
 }
 
 /* ============ REVIEW DECK — CHANGE 3: by module ============ */
@@ -6808,7 +7042,7 @@ function bakRestore(at){
   const box=bakRead(), s=box.snaps.find(x=>x.at===at);
   if(!s){toast('That snapshot is gone');return}
   let st; try{ st=JSON.parse(s.json) }catch(e){ toast('That snapshot could not be read'); return }
-  S=Object.assign({answers:{},flags:{},conf:{},sched:{},srs:{},days:{},hl:{},banks:{},resumeByChapter:{}},st);
+  S=Object.assign({answers:{},flags:{},conf:{},sched:{},srs:{},days:{},hl:{},banks:{},resumeByChapter:{},notes:{},reports:{}},st);
   save(); closeModal(); render();
   toast('Restored your progress from '+bakWhen(at));
 }
