@@ -301,6 +301,13 @@ input{font-family:inherit;font-size:inherit}
 .res-empty{padding:16px 14px;color:var(--ink-4);font-size:13px}
 
 .topbar-actions{margin-left:auto;display:flex;gap:7px;align-items:center}
+/* On a narrow phone the topbar's fixed furniture leaves the search box 121px
+   wide, of which 73px is text room: measured at 360px, and no useful
+   placeholder fits in it — even "Search questions" needs 91px. The button
+   that goes is the keyboard-shortcuts one, because a device with no keyboard
+   cannot press anything the dialog lists; it is the only control here that is
+   not merely cramped but meaningless. That returns 48px to the search. */
+@media(max-width:520px){ .kbd-btn{display:none} }
 .tb-btn{padding:7px 12px;border-radius:10px;font-size:12.5px;color:var(--ink-3);font-weight:700;transition:background .13s,transform .13s}
 .tb-btn:hover{background:var(--bg-2);color:var(--tx);transform:translateY(-1px)}
 /* Touch. The nav rows are 36px tall and the topbar buttons 33-36px, both under
@@ -2585,7 +2592,7 @@ button.card.locked:hover .mod-art{opacity:.42}
       </div>
       <div class="topbar-actions">
         <button class="tb-btn themebtn" onclick="toggleTheme()"></button>
-        <button class="tb-btn" onclick="showShortcuts()" title="Keyboard shortcuts" aria-label="Keyboard shortcuts"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.5h19v11h-19z"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M7 14h10"/></svg></button>
+        <button class="tb-btn kbd-btn" onclick="showShortcuts()" title="Keyboard shortcuts" aria-label="Keyboard shortcuts"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.5h19v11h-19z"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M7 14h10"/></svg></button>
         <!-- Backup used to be a pair of Export / Import buttons the user had to
              remember to press. It is automatic now: this is a status light that
              opens the snapshot list. The file input stays as the rescue path. -->
@@ -6640,6 +6647,17 @@ document.addEventListener('keydown',e=>{
 });
 $('search').addEventListener('input',doSearch);
 document.addEventListener('click',e=>{if(!e.target.closest('.search-wrap'))$('results').classList.remove('show')});
+/* The long placeholder is worth having — it is where a student learns the
+   search reads explanations too — but on a phone it clips mid-word to
+   "Search questions, to", which reads as breakage rather than as a hint. CSS
+   cannot change placeholder text, so the swap is here. matchMedia rather than
+   a resize handler: it fires only on the crossing, not on every pixel. */
+(function(){
+  var narrow=matchMedia('(max-width:520px)'), el=$('search');
+  function setPh(){ el.placeholder = narrow.matches ? 'Search questions'
+    : 'Search questions, topics, explanations\u2026'; }
+  narrow.addEventListener('change',setPh); setPh();
+})();
 
 boot();
 async function boot(){
