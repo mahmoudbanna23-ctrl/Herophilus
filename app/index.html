@@ -4385,13 +4385,6 @@ function hideGate(){$('gate').classList.add('hide');hideSplash();syncFilm()}
    One decision and nothing else. The escape hatch is worded for what it
    actually does, which differs depending on whether this device already has
    profiles on it.                                                           */
-/* Named from the module data rather than typed out, so unlocking a subject
-   never leaves the front door promising three subjects and delivering two. */
-function gateSubjects(){
-  const names=openModules().map(m=>m.name);
-  const soon=MODULES.filter(m=>isLocked(m.id)).map(m=>m.name);
-  return names.join(' · ')+'.'+(soon.length?` ${soon.join(' and ')} coming soon.`:'');
-}
 function gateSignInStep(){
   /* Google OAuth requires an http(s) origin. Opened straight from disk as a
      file:// URL, signInGoogle() can ONLY ever fail, with
