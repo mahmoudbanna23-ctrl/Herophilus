@@ -3590,8 +3590,6 @@ var Q_PEDS_EP2 = [
   bank: "endpoint",
   module: "pediatrics",
   chapter: "renal",
-  image: "q-pd-ep2-830",
-  imgAlt: "Colour clinical photograph of a young child, face and upper chest visible.",
   stem: "Freddie is a 3-year-old boy referred due to facial swelling. His mother suspects a peanut allergy. On examination, he has abdominal distension, bilateral scrotal swelling, and pitting edema of the lower limbs. Urine dipstick shows 4+ protein, 2+ blood, nitrites present, and negative leucocytes. Blood pressure and renal function are normal. Complement levels (C3, C4) are normal. What is the most likely diagnosis?",
   options: ["Acute allergic reaction to peanuts", "Acute glomerulonephritis", "Hemolytic-uraemic syndrome", "Nephrotic syndrome", "Urinary tract infection"],
   answer: 3,
