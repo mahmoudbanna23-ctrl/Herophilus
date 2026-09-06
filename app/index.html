@@ -2669,7 +2669,6 @@ button.card.locked:hover .mod-art{opacity:.42}
      Classic scripts (not modules) so they load over file:// without CORS.
      Order matters: per-subject files before the aggregators that concat them. -->
 <script src="data/modules.js"></script>
-<script src="data/schedule.js"></script>
 <script src="data/questions.ent.js"></script>
 <script src="data/questions.peds.js"></script>
 <script src="data/questions.peds.ep.js"></script>
@@ -2705,35 +2704,21 @@ const FIREBASE_CONFIG = {
 
 
 
-/* ============ SCHEDULE DATA ============ */
+/* ============ SCHEDULE ============ */
 const SUBJ_COLOURS=[['#b4472f','ENT'],['#5c7a52','Ophthalmology'],['#6d4c7d','Neuro/Psych'],
                     ['#2e5f8a','Pediatrics'],['#7a6a55','Revision'],['#9a6b1f','Buffer'],['#2f6b8f','Other']];
 
-/* built-in plan -> {date, rest, items:[{label,text,hex}]}
+/* Shape: [{date, rest, items:[{label,text,hex}]}], sorted by date.
 
-   Row shape: [date, key1, label1, text1, key2, label2, text2]
-   ⚠️ REBUILT 2026-08-13 for the real exam dates. The old parser hardwired the
-   SECOND track to Pediatrics and had no Pediatrics colour in its map, because
-   the original plan ran Peds as a permanent side-track under ENT/Ophtho/Neuro.
-   Pediatrics is now the FIRST exam (OSCE 14 Sep), so it has to be able to sit on
-   the main track in its own colour, and the second track has to be able to carry
-   any subject. Both tracks now take their own key and label.
-
-   The editor works on the PARSED shape, not on these rows, so widening the row
-   costs it nothing. */
-const SCH_HEX={ent:'#b4472f',ophtho:'#5c7a52',neuropsych:'#6d4c7d',peds:'#2e5f8a',
-               exam:'#a3182a',revision:'#7a6a55',buffer:'#9a6b1f'};
-function defaultSchedule(){
-  return SCHEDULE.map(r=>{
-    if(r[1]==='rest')return {date:r[0],rest:true,items:[]};
-    const items=[];
-    if(r[3])items.push({label:r[2]||'',text:r[3],hex:SCH_HEX[r[1]]||'#7a6a55'});
-    if(r[6])items.push({label:r[5]||'',text:r[6],hex:SCH_HEX[r[4]]||'#2e5f8a'});
-    return {date:r[0],rest:false,items:items};
-  });
-}
+   THERE IS NO BUILT-IN PLAN, and that is deliberate. The app used to ship one
+   author's revision timetable, built around one faculty's exam dates. Everyone
+   who opened it inherited a stranger's plan and had to demolish it before their
+   own could exist — and the dates were wrong for them the moment the calendar
+   moved on. A schedule is the one thing here that cannot be written for someone
+   else, so every profile starts empty and builds its own. `data/schedule.js` was
+   deleted with this change; nothing else read it. */
 function activeSchedule(){
-  if(!S.schedule)S.schedule=defaultSchedule();
+  if(!S.schedule)S.schedule=[];
   return S.schedule;
 }
 function saveSchedule(){save();render()}
@@ -5917,7 +5902,7 @@ function vSession(p){
   p.innerHTML=h;
 }
 
-/* ============ SCHEDULE — CHANGE 1: two markers ============ */
+/* ============ SCHEDULE PAGE ============ */
 function vSchedule(p){
   const t=todayISO();
   const {rows,catchups,overflow}=buildSchedule();
@@ -5925,11 +5910,26 @@ function vSchedule(p){
   catchups.forEach(c=>{if(c.to)(landing[c.to]=landing[c.to]||[]).push(c)});
   const ed=!!S.editSched;
 
+  const empty=!rows.length;
+
   let h=`<div class="eyebrow" style="background:var(--peds)">Your plan</div><h1>${ico('tablet',26)} Study schedule</h1>
-  <p class="page-sub">Every subject has its own <b>&#10003; done</b> and <b>&#10007; missed</b> buttons. Missed work moves to a catch-up slot on a free day; nothing else shifts.</p>
-  <div class="edbar">
+  <p class="page-sub">${empty
+      ? 'This is yours to write. Add the days you are studying and what each one is for; the plan is stored with your profile and nobody else sees it.'
+      : 'Every subject has its own <b>&#10003; done</b> and <b>&#10007; missed</b> buttons. Missed work moves to a catch-up slot on a free day; nothing else shifts.'}</p>`;
+
+  /* An empty plan gets one door, not a toolbar: the edit bar's two buttons are
+     both meaningless before a day exists. */
+  if(empty&&!ed){
+    h+=`<div class="empty"><div class="big">${ico('tablet',46)}</div><h3>No days yet</h3>
+     <p>Build the plan a day at a time &mdash; a date, then what you mean to study on it. A day you leave without a subject becomes a catch-up slot for anything you miss.</p>
+     <div style="margin-top:20px"><button class="btn go" onclick="S.editSched=true;save();render()">${ico('stylus',15)} Start your plan</button></div></div>`;
+    p.innerHTML=h;
+    return;
+  }
+
+  h+=`<div class="edbar">
     <button class="btn ${ed?'':'sec'}" onclick="S.editSched=!S.editSched;save();render()">${ed?'\u2713 Done editing':`${ico('stylus',14)} Edit schedule`}</button>
-    ${ed?`<button class="ed-t danger" onclick="resetSchedule()">Reset to the original plan</button>`:''}
+    ${ed&&rows.length?`<button class="ed-t danger" onclick="resetSchedule()">Clear the whole plan</button>`:''}
   </div>`;
 
   if(!ed){
@@ -6139,19 +6139,19 @@ function nextFreeDate(){
   return isoLocal(d);
 }
 function resetSchedule(){
-  showModal(`<h3>Reset the schedule?</h3>
-   <p>This restores the original plan and clears every done / missed mark on it. Your answers, highlights and review deck are not affected.</p>
+  showModal(`<h3>Clear the whole plan?</h3>
+   <p>Every day you have written, and every done / missed mark on them, is removed and the schedule goes back to empty. There is no built-in plan to fall back on, so this cannot be undone. Your answers, highlights and review deck are not affected.</p>
    <div class="modal-actions">
      <button class="btn sec" onclick="closeModal()">Cancel</button>
-     <button class="btn" style="background:var(--bad);border-color:var(--bad)" onclick="doResetSchedule()">Reset</button>
+     <button class="btn" style="background:var(--bad);border-color:var(--bad)" onclick="doResetSchedule()">Clear it</button>
    </div>`);
 }
 function doResetSchedule(){
-  S.schedule=defaultSchedule();S.sched={};
-  save();closeModal();render();toast('Schedule reset');
+  S.schedule=[];S.sched={};
+  save();closeModal();render();toast('Schedule cleared');
 }
 
-/* ============ RESCHEDULED PAGE — CHANGE 2 ============ */
+/* ============ RESCHEDULED PAGE ============ */
 function vMoved(p){
   const {catchups,overflow,capacity}=buildSchedule();
   let h=`<div class="eyebrow" style="background:var(--neuro)">Catch-up plan</div><h1>${ico('shuffle',26)} Rescheduled</h1>
