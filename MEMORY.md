@@ -134,10 +134,8 @@ all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **Th
   `for i… if(!(i in A))`, **zero holes, every file `eval`s clean**): ENT **2,322** (2,240 q + 82 c) ·
   **Ophtho 1,598** · Neuro **275** (268 q + 7 c) · Peds House **393** · Peds endpoint **1,334**
   (p1 704 + p2 630, both CLOSED). ⚠️ **The case arrays are `C_ENT`/`C_NEURO`/`C_OPHTHO`/`C_PEDS`, not
-  `CASES_*`** (ophtho and peds hold 0). ✅ **BOOTED FROM `file://` 2026-09-06, 0 console errors** —
-  `QUESTIONS 5922 · THEORY 153 · MODULES 4 · 153 chapter rows (138 with questions, 15 empty by
-  design) · 4 module cards`; per module ent 30 · ophtho 36 · neuropsych 36 · pediatrics 51. **The
-  per-file sum reconciles exactly at 5,922.** Keys `ent`, `ophtho`, `pediatrics`, `neuropsych`; options 2–10 coexist (2:10 · 3:67 · 4:3836 · 5:1365 · 8:1 · 9:1 · 10:6).
+  `CASES_*`** (ophtho and peds hold 0). **5,922 is the CORPUS and no longer what the app reports:** ⚠️ `LOCKED_MODULES=['ophtho','neuropsych']` + `THEORY_LOCKED` hold 1,873 q (1,598 ophtho + 275 neuro) and 72 theory chapters out at the aggregator, so **a healthy boot reports 4,049 / 81** — a check wanting 5,922/153 is STALE, not a loss.
+  ✅ **BOOTED `file://` 2026-09-07, 0 errors**: `QUESTIONS 4049 · THEORY 81 · MODULES 4 · 153 chapter rows, 80 with questions`; per module ent 30 · ophtho 36 · neuropsych 36 · pediatrics 51. Keys `ent`, `ophtho`, `pediatrics`, `neuropsych`; options 2–10 coexist (2:10 · 3:67 · 4:3836 · 5:1365 · 8:1 · 9:1 · 10:6).
   ⚠️ **`grep -c "^  { id:"` UNDERCOUNTS `questions.ophtho.js` BY ~440 — load the array.**
 - **✅ THE BOOT CHECK IS NOW A REPO TOOL: `node tools\boot-check\boot-check.js`** (2026-09-02) —
   copies `app\`, probes errors ahead of the app's own scripts, stubs the gate, seeds a profile,
