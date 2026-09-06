@@ -407,6 +407,17 @@ button.card:active:not(:disabled){transform:translate(1px,1px);box-shadow:0 2px 
 /* ---------- Question ---------- */
 .qwrap{max-width:830px;margin:0 auto}
 .qhead{display:flex;align-items:center;gap:10px;margin-bottom:17px;flex-wrap:wrap}
+/* The exam clock rides after .qprog, which already carries margin-left:auto,
+   so the pair sits at the right end of the head together. Tabular figures
+   because a proportional 1 is narrower than a 0 and the whole clock jitters
+   sideways once a second otherwise. */
+.exam-clock{
+  font-variant-numeric:tabular-nums;font-weight:900;font-size:15px;letter-spacing:.02em;
+  padding:6px 12px;border-radius:11px;border:2px solid var(--line-2);background:var(--fill);
+  color:var(--tx);white-space:nowrap;
+}
+.exam-clock.low{color:var(--warn);border-color:var(--warn)}
+.exam-clock.out{color:var(--bad);border-color:var(--bad)}
 .pill{
   font-size:10px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;padding:4px 11px;
   border-radius:20px;color:#fff;border:2px solid var(--line-2);box-shadow:0 5px 14px rgba(0,0,0,.18);
@@ -685,6 +696,9 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
 .qg:hover{transform:translate(-2px,-2px);box-shadow:0 10px 24px rgba(0,0,0,.24)}
 .qg.ok{background:var(--ok-bg);color:#5fe0a8;border-color:var(--ok)}
 .qg.bad{background:var(--bad-bg);color:#ff9aa2;border-color:var(--bad)}
+/* During a paper the grid may say only whether a question has been answered.
+   Right and wrong are the marks, and the marks come out at hand-in. */
+.qg.done{background:var(--fill);border-color:var(--tx);color:var(--tx)}
 .qg.cur{background:var(--neuro);color:#fff;transform:translate(-2px,-2px);box-shadow:0 10px 24px rgba(0,0,0,.3)}
 .qg.flagged::after{
   content:"";position:absolute;top:-5px;right:-5px;width:11px;height:11px;
@@ -4673,13 +4687,20 @@ function moveQ(i){
   Object.assign(Q,Q.attempts[Q.ids[i]]||{sel:null,shown:false,txt:'',peek:false});
   saveResume();
 }
-function startQuiz(ids,title,chapter=null,qid=null){
+/* exam is null for ordinary study and an object under exam conditions. Fifth
+   positional argument on purpose: every existing caller passes four or fewer
+   and keeps behaving exactly as it did. */
+function startQuiz(ids,title,chapter=null,qid=null,exam=null){
   if(!ids||!ids.length){toast('No questions there yet');return}
   const q=QUESTIONS.find(x=>x.id===ids[0]);
   Q={ids:ids.slice(),i:Math.max(0,ids.indexOf(qid)),title:title,sel:null,shown:false,t0:Date.now(),txt:'',peek:false,
-     attempts:{},chapter:chapter,sources:chapter&&q?(S.banks[q.module]||[]).slice():[]};
+     attempts:{},chapter:chapter,sources:chapter&&q?(S.banks[q.module]||[]).slice():[],exam:exam};
   saveResume();
   go({name:'quiz'});
+  /* Stop first either way: an abandoned paper's interval would otherwise keep
+     running underneath an ordinary quiz and hand it in. */
+  examStopTick();
+  if(exam)examStartTick();
 }
 
 /* ---- Free-text cases ----------------------------------------------------
@@ -4862,6 +4883,7 @@ function vQuiz(p){
     ${bankPills(q)}
     ${q.source?`<span class="pill ghost">${mdInline(q.source)}</span>`:''}
     <button class="qprog" title="Jump to a question (J)" onclick="openJump()">${Q.i+1} / ${Q.ids.length} &nbsp;&#9776;</button>
+    ${Q.exam?`<span class="exam-clock ${examClockClass()}" id="examClock" title="Time left in this paper">${examClockText()}</span>`:''}
    </div>
    <div class="qcard">
     ${markbar(q.id)}
@@ -4877,11 +4899,27 @@ function vQuiz(p){
       <span class="ltr">${OPT_LETTERS[i]}</span><span>${esc(o)}</span>${mark}</button>`;
   });
   h+=`</div>`;
-  if(!Q.shown&&prev&&Number.isInteger(prev.pick)&&prev.pick>=0&&prev.pick<q.options.length){
+  /* Under exam conditions the previous attempt is somebody else's paper. */
+  if(!Q.shown&&!Q.exam&&prev&&Number.isInteger(prev.pick)&&prev.pick>=0&&prev.pick<q.options.length){
     h+=`<details class="lastgo"><summary>Previous choice</summary>${OPT_LETTERS[prev.pick]} &middot; ${esc(q.options[prev.pick])}</details>`;
   }
 
-  if(!Q.shown){
+  if(Q.exam){
+    /* No Check answer here, and that is the whole point: Q.shown stays false
+       for the length of the paper, so the verdict, the confidence rating, the
+       explanation and the theory link below are never built at all. Moving on
+       is the only thing this row does. */
+    const last=Q.i+1>=Q.ids.length;
+    const left=Q.ids.filter(id=>!(id in Q.exam.picked)).length;
+    h+=`<div class="qactions">
+      ${Q.i>0?'<button class="btn sec" onclick="navQ(-1)">←</button>':''}
+      <button class="btn go" onclick="navQ(1)">${last?'Last one — hand in':'Next'} →</button>
+      <button class="btn sec flag ${flagged?'on':''}" onclick="toggleFlag('${q.id}')">${ico('laurel',15)} ${flagged?'Flagged':'Flag'}</button>
+      <div style="margin-left:auto;display:flex;gap:9px;align-items:center">
+        <span class="ch-count">${left} unanswered</span>
+        <button class="btn sec" onclick="examConfirmFinish()">Hand in</button>
+      </div></div>`;
+  }else if(!Q.shown){
     h+=`<div class="qactions">
       <button class="btn go" ${Q.sel===null?'disabled':''} onclick="reveal()">Check answer</button>
       <button class="btn sec flag ${flagged?'on':''}" onclick="toggleFlag('${q.id}')">${ico('laurel',15)} ${flagged?'Flagged':'Flag'}</button>
@@ -4931,8 +4969,25 @@ function vQuiz(p){
     stemEl.addEventListener('touchend',onStemSelect);
   }
 }
-function pick(i){if(Q.shown)return;Q.sel=i;render()}
+function pick(i){
+  if(Q.shown)return;
+  Q.sel=i;
+  /* In a paper the answer is committed to storage the moment it is chosen,
+     because there is no Check answer to commit it later and a reload mid-exam
+     must not cost the student the work they have already done. What is NOT
+     done here is scheduleSRS — a paper is one sitting, and forty promotions
+     fired one at a time as the student worked down the page would be forty
+     separate reviews of the same sitting. It runs once each, at hand-in. */
+  if(Q.exam){
+    const q=QUESTIONS.find(x=>x.id===Q.ids[Q.i]);
+    Q.exam.picked[q.id]=i;
+    S.answers[q.id]={pick:i,ok:i===q.answer,at:Date.now()};
+    save();
+  }
+  render();
+}
 function reveal(){
+  if(Q.exam)return;                       /* no peeking: the promise on the mock page */
   if(Q.shown||Q.sel===null)return;
   const q=QUESTIONS.find(x=>x.id===Q.ids[Q.i]);
   const ok=Q.sel===q.answer;
@@ -4986,6 +5041,7 @@ function navQ(d){
   clearTimeout(CLEP.settleT); clepPose(clepViewPose());
 }
 function finishSet(){
+  if(Q.exam){examFinish(false);return}
   saveResume(true);
   const done=Q.ids.filter(id=>isAnswered(id));
   const right=done.filter(id=>isCorrect(id)).length;
@@ -5003,6 +5059,111 @@ function finishSet(){
      ${done.length-right>0?`<button class="btn go" onclick="closeModal();go({name:'review'})">Review mistakes</button>`:`<button class="btn go" onclick="closeModal()">Continue</button>`}
    </div>`);
 }
+/* ---- Exam conditions ----------------------------------------------------
+   The mock page has always promised three things: random order, a running
+   clock, and no peeking at explanations until you finish. Only the first was
+   ever true. These functions are the other two.
+
+   Nothing here is a second quiz engine. Exam mode is one extra field on Q, and
+   the reason that is enough is that the whole verdict / confidence /
+   explanation / theory block in vQuiz lives inside `if(Q.shown)`. A paper
+   never sets Q.shown, so none of it is built, and there is nothing to peek at
+   even with the developer tools open.
+
+   The end time is a timestamp, not a countdown, so a tab that gets throttled
+   or suspended loses repaints but never loses time — the clock is right again
+   the instant it is looked at.                                             */
+let EXAM_T=null;
+function examLeft(){ return Q.exam?Math.max(0,Q.exam.end-Date.now()):0 }
+function examClockText(){
+  const s=Math.round(examLeft()/1000);
+  return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0');
+}
+function examClockClass(){ const s=examLeft()/1000; return s<=30?'out':s<=120?'low':'' }
+/* Repaint one node. render() once a second would rebuild the stem the student
+   is in the middle of reading, and take their highlighter selection with it. */
+function paintExamClock(){
+  const el=$('examClock'); if(!el)return;
+  el.textContent=examClockText();
+  el.className='exam-clock '+examClockClass();
+}
+/* Its own interval, not sessStartTick — that one returns early unless a study
+   session is running, and a mock exam is not a study session. */
+function examStartTick(){
+  examStopTick();
+  EXAM_T=setInterval(()=>{
+    /* Leaving the quiz view during a paper is walking out of the hall. */
+    if(!Q.exam||Q.exam.done||view.name!=='quiz'){examStopTick();return}
+    paintExamClock();
+    if(examLeft()<=0)examFinish(true);
+  },1000);
+}
+function examStopTick(){ clearInterval(EXAM_T); EXAM_T=null }
+function examConfirmFinish(){
+  const left=Q.exam?Q.ids.filter(id=>!(id in Q.exam.picked)).length:0;
+  showModal(`<h3>Hand in the paper?</h3>
+   <p>${left?`<strong>${left}</strong> question${left===1?' is':'s are'} still unanswered. Unanswered counts as wrong, the same as it would on the day.`:'Every question is answered.'}</p>
+   <div class="modal-actions">
+     <button class="btn sec" onclick="closeModal()">Keep working</button>
+     <button class="btn go" onclick="closeModal();examFinish(false)">Hand in</button>
+   </div>`);
+}
+function examFinish(byClock){
+  if(!Q.exam||Q.exam.done)return;
+  Q.exam.done=true;
+  examStopTick();
+  const picked=Q.exam.picked, ids=Q.ids;
+  const answered=ids.filter(id=>id in picked);
+  /* Scheduled once each, here, rather than on every tap: a paper is one
+     sitting, and a question whose answer was changed three times is still one
+     attempt. Unanswered questions are deliberately left out — they score as
+     wrong on the paper, because that is what an exam does, but a question the
+     student never reached is not one they got wrong, and putting it in the
+     review deck would claim they had.
+     This is also what fixes the old scoring: finishSet() counted every
+     question the student had ever answered, in any earlier session, as part of
+     today's mark. */
+  answered.forEach(id=>scheduleSRS(id,isCorrect(id)));
+  markDayActive(); save();
+  const right=answered.filter(id=>isCorrect(id)).length;
+  const pct=Math.round(right/ids.length*100);
+  const secs=Math.max(0,Math.round((Date.now()-Q.t0)/1000));
+  const mins=Math.floor(secs/60), rem=secs%60;
+  const taken=mins?`${mins} min ${rem} s`:`${rem} s`;
+  const blank=ids.length-answered.length;
+  if(pct>=80)confetti();
+  clepPose(pct>=80?'jumping':'presenting'); clepSettle(5000);
+  const face=ico(pct>=90?'laurel':pct>=75?'target':pct>=50?'hourglass':'scroll',40);
+  showModal(`<h3>${face} ${pct}%</h3>
+   <p>${byClock?'Time is up. ':''}<strong>${right}</strong> right out of <strong>${ids.length}</strong>, in ${taken}.${blank?` <strong>${blank}</strong> left blank, counted as wrong.`:''}</p>
+   <div class="modal-actions">
+     <button class="btn sec" onclick="closeModal();go({name:'home'})">Dashboard</button>
+     <button class="btn go" onclick="examReview()">Go through the paper</button>
+   </div>`);
+}
+/* Marking every question as revealed hands the paper back to the ordinary quiz
+   view, which already knows how to show a verdict, an explanation, the theory
+   link and the confidence rating. A question left blank opens with no
+   selection, which reads as "not quite — the answer is C". That is what it was. */
+function examReview(){
+  closeModal();
+  if(!Q.exam)return;
+  const picked=Q.exam.picked;
+  Q.exam=null;
+  Q.ids.forEach(id=>{ Q.attempts[id]={sel:(id in picked)?picked[id]:null,shown:true,txt:'',peek:false} });
+  Q.i=0; Object.assign(Q,Q.attempts[Q.ids[0]]);
+  Q.title='Mock exam — the paper';
+  render();
+}
+/* The session listener above returns early when no session is running, so a
+   paper needs its own. Same reason: a backgrounded tab stops repainting, and
+   the clock would otherwise show the minute the student looked away. */
+document.addEventListener('visibilitychange',()=>{
+  if(document.hidden||!Q.exam||Q.exam.done||view.name!=='quiz')return;
+  const g=$('gate'); if(g&&!g.classList.contains('hide'))return;
+  examStartTick(); paintExamClock();
+});
+
 function toggleFlag(id){S.flags[id]=!S.flags[id];save();render();toast(S.flags[id]?'Flagged':'Flag removed')}
 function toggleExp(b){b.classList.toggle('open');b.nextElementSibling.classList.toggle('open')}
 
@@ -5019,12 +5180,14 @@ function openJump(){
        onkeydown="if(event.key==='Enter'){event.preventDefault();jumpGo()}">
      <button class="btn go" onclick="jumpGo()">Go</button>
      <button class="btn sec" onclick="jumpNextUnanswered()">Next unanswered</button>
-     <button class="btn sec" onclick="jumpFirstWrong()">First wrong</button>
+     ${Q.exam?'':'<button class="btn sec" onclick="jumpFirstWrong()">First wrong</button>'}
    </div>
    <div class="jumpkey">
      <span class="k"><span class="sw" style="background:var(--neuro)"></span>Current</span>
-     <span class="k"><span class="sw" style="background:var(--ok-bg);border-color:var(--ok)"></span>Correct</span>
-     <span class="k"><span class="sw" style="background:var(--bad-bg);border-color:var(--bad)"></span>Wrong</span>
+     ${Q.exam
+       ? `<span class="k"><span class="sw" style="background:var(--fill);border-color:var(--tx)"></span>Answered</span>`
+       : `<span class="k"><span class="sw" style="background:var(--ok-bg);border-color:var(--ok)"></span>Correct</span>
+     <span class="k"><span class="sw" style="background:var(--bad-bg);border-color:var(--bad)"></span>Wrong</span>`}
      <span class="k"><span class="sw" style="background:var(--card)"></span>Not answered</span>
      <span class="k"><span class="sw" style="background:var(--gold)"></span>Flagged</span>
    </div>
@@ -5032,6 +5195,10 @@ function openJump(){
   Q.ids.forEach((id,i)=>{
     const cls=['qg'];
     if(i===Q.i)cls.push('cur');
+    /* Q.exam.picked, not isAnswered — isAnswered reads S.answers, which also
+       holds every attempt at this question from every earlier session, so it
+       would light a question green before the student had even reached it. */
+    else if(Q.exam){ if(id in Q.exam.picked)cls.push('done') }
     else if(isAnswered(id))cls.push(isCorrect(id)?'ok':'bad');
     if(S.flags[id])cls.push('flagged');
     h+=`<button class="${cls.join(' ')}" onclick="jumpTo(${i})">${i+1}</button>`;
@@ -5057,13 +5224,18 @@ function jumpGo(){
   jumpTo(v-1);
 }
 function jumpNextUnanswered(){
+  /* In a paper "unanswered" means unanswered in this paper. Falling back to
+     isAnswered would step over every question the student happened to have
+     seen weeks ago and leave it blank. */
+  const seen=id=>Q.exam?(id in Q.exam.picked):isAnswered(id);
   for(let k=1;k<=Q.ids.length;k++){
     const i=(Q.i+k)%Q.ids.length;
-    if(!isAnswered(Q.ids[i])){jumpTo(i);return}
+    if(!seen(Q.ids[i])){jumpTo(i);return}
   }
-  toast('Every question in this set is answered');
+  toast(Q.exam?'Every question in this paper is answered':'Every question in this set is answered');
 }
 function jumpFirstWrong(){
+  if(Q.exam)return;
   for(let k=1;k<=Q.ids.length;k++){
     const i=(Q.i+k)%Q.ids.length;
     const id=Q.ids[i];
@@ -5247,14 +5419,20 @@ function vFlagged(p){
 
 /* ============ MOCK — CHANGE 3: by module ============ */
 let mockMods={};
+/* Free-text cases stay out of a paper. They reveal themselves through vCase's
+   own path, which exam mode does not intercept, so one in the pool would be a
+   hole in the no-peeking promise. Both the pool and the counts beside the
+   module chips have to use this, or the chip promises questions the paper
+   will not contain. */
+function mockable(q){ return q.type!=='case' }
 function vMock(p){
-  MODULES.forEach(m=>{if(mockMods[m.id]===undefined)mockMods[m.id]=qsInModule(m.id).length>0});
-  const pool=QUESTIONS.filter(q=>mockMods[q.module]);
+  MODULES.forEach(m=>{if(mockMods[m.id]===undefined)mockMods[m.id]=qsInModule(m.id).filter(mockable).length>0});
+  const pool=QUESTIONS.filter(q=>mockMods[q.module]&&mockable(q));
   let h=`<div class="eyebrow" style="background:var(--neuro)">Exam conditions</div><h1>${ico('amphora',26)} Mock exam</h1>
-  <p class="page-sub">Pick your modules, pick a length. Random order, clock running, no peeking at explanations until you finish.</p>
+  <p class="page-sub">Pick your modules, pick a length. Random order, a clock you can see, and no explanations until you hand the paper in. Anything left blank counts as wrong.</p>
   <h2>1 · Choose modules</h2><div class="filterbar">`;
   openModules().forEach(m=>{
-    const n=qsInModule(m.id).length;
+    const n=qsInModule(m.id).filter(mockable).length;
     h+=`<button class="chip ${mockMods[m.id]&&n?'on':''}" style="--c:${m.hex};${n?'':'opacity:.4'}"
       ${n?`onclick="mockMods['${m.id}']=!mockMods['${m.id}'];render()"`:'disabled'}>
       ${ico(m.icon,15)} ${m.name} <span style="opacity:.7">${n}</span></button>`;
@@ -5269,19 +5447,25 @@ function vMock(p){
       const ok=pool.length>=n;
       h+=`<button class="card" ${ok?`onclick="runMock(${n})"`:'disabled'} style="--c:rgba(109,76,125,.4)">
         <div class="mod-top"><span class="mod-ic" style="background:var(--neuro)">${ico('clepsydra',22)}</span><span class="mod-name">${n} questions</span></div>
-        <div class="mod-meta">~${Math.round(n*1.2)} minutes${ok?'':' · pool too small'}</div></button>`;
+        <div class="mod-meta">${examMins(n)} minutes on the clock${ok?'':' · pool too small'}</div></button>`;
     });
     if(pool.length<40)h+=`<button class="card" onclick="runMock(${pool.length})" style="--c:rgba(109,76,125,.4)">
       <div class="mod-top"><span class="mod-ic" style="background:var(--gold);color:var(--on-accent)">${ico('target',22)}</span><span class="mod-name">All ${pool.length}</span></div>
-      <div class="mod-meta">Everything in the pool</div></button>`;
+      <div class="mod-meta">${examMins(pool.length)} minutes on the clock</div></button>`;
     h+=`</div>`;
   }
   p.innerHTML=h;
 }
+/* 72 seconds a question. The card said "~1.2 minutes each" long before there
+   was a clock to hold it to; keeping the same figure means the length the
+   student has been choosing all along is the length they now get. */
+function examMins(n){ return Math.max(1,Math.round(n*1.2)) }
 function runMock(n){
-  const pool=QUESTIONS.filter(q=>mockMods[q.module]).slice();
+  const pool=QUESTIONS.filter(q=>mockMods[q.module]&&mockable(q)).slice();
   for(let i=pool.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]]}
-  startQuiz(pool.slice(0,n).map(q=>q.id),'Mock exam');
+  const mins=examMins(n);
+  startQuiz(pool.slice(0,n).map(q=>q.id),'Mock exam',null,null,
+    {end:Date.now()+mins*60000,mins:mins,picked:{},done:false});
 }
 
 /* ============ STUDY SESSION — the screen ============ */
@@ -6676,7 +6860,8 @@ document.addEventListener('keydown',e=>{
   if(e.key==='0'){setPen('er');return}
   if(k==='J'){openJump();return}
   if(k==='F'){toggleFlag(q.id);return}
-  if(e.key==='Enter'){e.preventDefault();Q.shown?navQ(1):(q.type==='case'?revealCase():reveal());return}
+  /* In a paper Enter moves on — there is nothing to reveal. */
+  if(e.key==='Enter'){e.preventDefault();(Q.shown||Q.exam)?navQ(1):(q.type==='case'?revealCase():reveal());return}
   if(e.key==='ArrowRight'){navQ(1);return}
   if(e.key==='ArrowLeft'){navQ(-1);return}
 });
