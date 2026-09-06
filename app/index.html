@@ -2606,14 +2606,16 @@ let S={answers:{},flags:{},conf:{},sched:{},srs:{},days:{},hl:{},banks:{},resume
 let storageMode='memory';
 
 async function loadState(){
+  const key=KEY,p=me,entry=profileLoad;
   try{
     if(typeof window!=='undefined'&&window.storage&&window.storage.get){
-      const r=await window.storage.get(KEY);
+      const r=await window.storage.get(key);
+      if(entry!==profileLoad||me!==p)return;
       if(r&&r.value)S=Object.assign(S,JSON.parse(r.value));
       if(!S.hl)S.hl={};
       storageMode='cloud';migrateSched();dropAI();return;
     }
-  }catch(e){storageMode='cloud';return}
+  }catch(e){if(entry===profileLoad&&me===p)storageMode='cloud';return}
   /* The parse is deliberately its own try: a corrupt value used to fall into
      the outer catch and drop the app to memory-only, which is exactly the case
      the snapshots exist to repair. Missing OR unreadable both reach for the
@@ -3525,6 +3527,7 @@ const SDK=['https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js',
            'https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js',
            'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js'];
 let fbApp=null, fbUser=null, syncState='off', pushTimer=null, sdkLoading=null;
+let cloudSession=null, cloudAuth=0;
 
 function cloudConfig(){
   if(FIREBASE_CONFIG&&FIREBASE_CONFIG.apiKey)return FIREBASE_CONFIG;
@@ -3534,7 +3537,7 @@ function cloudConfig(){
   }catch(e){}
   return null;
 }
-function cloudEnabled(){return !!cloudConfig()}
+function cloudEnabled(){return location.protocol!=='file:'&&!!cloudConfig()}
 
 function loadSDK(){
   if(window.firebase)return Promise.resolve(true);
@@ -3559,6 +3562,7 @@ function loadSDK(){
   return sdkLoading;
 }
 async function initCloud(){
+  if(!cloudEnabled())return false;
   const cfg=cloudConfig();
   if(!cfg)return false;
   const ok=await loadSDK();
@@ -3614,36 +3618,89 @@ async function signInGoogle(){
   }
 }
 async function afterSignIn(u){
+  resetCloud();cloudAuth++;
   fbUser=u;
-  const id='g:'+u.uid;
-  let p=profiles.find(x=>x.id===id);
-  if(!p){
-    /* FIRST TIME on this Google account. Rather than silently minting a profile
-       and dropping the user into the app, move to gate step 2 and open the
-       editor prefilled from their account \u2014 signing in leads to creating a
-       profile, which is the whole point of splitting the gate in two.
-       Nothing is written to `profiles` until they press Save. */
-    showGate('profiles');
-    draft={id:id,name:(u.displayName||'Me').split(' ')[0],
-           av:u.photoURL?{t:'p',v:u.photoURL,c:'#6d4c7d'}:{t:'e',v:'\uD83E\uDE7A',c:'#6d4c7d'},pin:''};
-    drawProfileEditor(false);
-    return;
-  }
-  /* Returning account with a profile already on this device: show it on step 2
-     rather than auto-entering, so the picker is always the last thing before
-     the app and switching between profiles behaves the same way every time. */
-  showGate('profiles');
+  const auth=cloudAuth;
+  const local=new Map(profiles.map(p=>[p.id,JSON.stringify(rosterProfile(p))]));
+  /* Signing in while studying keeps the local profile and merges its work.
+     The picker stays usable while another device's roster is arriving. */
+  if(me)pullCloud();else showGate('profiles');
+  try{
+    const ref=rosterRef();
+    if(!ref)return;
+    const snap=await cloudWait(ref.get());
+    if(auth!==cloudAuth||!fbUser||fbUser.uid!==u.uid)return;
+    rosterList(snap.exists?snap.data():{}).forEach(p=>{
+      const old=profiles.find(x=>x.id===p.id);
+      if(!old){if(!local.has(p.id))profiles.push(Object.assign({pin:''},p))}
+      else if(local.get(p.id)===JSON.stringify(rosterProfile(old)))Object.assign(old,p);
+    });
+    saveProfiles();
+    if(!me&&!draft){
+      showGate('profiles');
+      if(!profiles.length){
+        draft={id:'g:'+u.uid,name:(u.displayName||'Me').split(' ')[0],
+               av:u.photoURL?{t:'p',v:u.photoURL,c:'#6d4c7d'}:{t:'e',v:'\uD83E\uDE7A',c:'#6d4c7d'},pin:''};
+        drawProfileEditor(false);
+      }
+    }
+  }catch(e){if(auth===cloudAuth)setSync('err')}
 }
 async function signOutCloud(){
-  try{if(window.firebase&&firebase.auth)await firebase.auth().signOut()}catch(e){}
+  resetCloud();cloudAuth++;
   fbUser=null;setSync('off');
   me=null;closeModal();showGate();
+  try{if(window.firebase&&firebase.auth)await cloudWait(firebase.auth().signOut())}catch(e){}
   toast('Signed out \u2014 your progress stays on this device');
 }
 
+function cloudWait(work){
+  let timer;
+  return Promise.race([work,new Promise((_,reject)=>{
+    timer=setTimeout(()=>reject(new Error('Sync timed out')),8000);
+  })]).finally(()=>clearTimeout(timer));
+}
+function resetCloud(){
+  clearTimeout(pushTimer);pushTimer=null;cloudSession=null;
+}
+function currentCloud(c){
+  return !!(c&&c===cloudSession&&fbUser&&me&&c.auth===cloudAuth&&
+            c.uid===fbUser.uid&&c.pid===me.id);
+}
+function rosterRef(uid=fbUser&&fbUser.uid){
+  if(!uid||!cloudEnabled()||!window.firebase||!firebase.firestore)return null;
+  try{return firebase.firestore().collection('users').doc(uid)}catch(e){return null}
+}
 function docRef(){
-  if(!fbUser||!window.firebase)return null;
-  return firebase.firestore().collection('users').doc(fbUser.uid);
+  if(!me||!fbUser)return null;
+  const ref=rosterRef();
+  return ref?ref.collection('profiles').doc(me.id):null;
+}
+function rosterProfile(p){
+  const av=p.av||{};
+  return {id:p.id,name:p.name||'Untitled',av:{t:av.t||'e',v:av.v||'',c:av.c||'#6d4c7d'}};
+}
+function rosterList(data,p,remove=false){
+  const list=(Array.isArray(data.profiles)?data.profiles:[])
+    .filter(x=>x&&typeof x.id==='string'&&x.id&&(!p||x.id!==p.id)).map(rosterProfile);
+  if(p&&!remove)list.push(rosterProfile(p));
+  return list;
+}
+async function syncRoster(p,remove=false){
+  const ref=rosterRef(),auth=cloudAuth;
+  if(!ref)return;
+  const entry=rosterProfile(p);
+  let live=true;
+  try{
+    await cloudWait(firebase.firestore().runTransaction(async tx=>{
+      const snap=await tx.get(ref);
+      if(!live||auth!==cloudAuth||!fbUser)return;
+      /* Keep a legacy state until profile entry can adopt it atomically. */
+      tx.set(ref,{profiles:rosterList(snap.exists?snap.data():{},entry,remove)},{merge:true});
+      if(remove)tx.delete(ref.collection('profiles').doc(entry.id));
+    }));
+  }catch(e){if(auth===cloudAuth)setSync('err')}
+  finally{live=false}
 }
 function mergeStates(a,b){
   const at=a.updatedAt||0, bt=b.updatedAt||0;
@@ -3675,35 +3732,67 @@ function mergeStates(a,b){
 async function pullCloud(){
   const ref=docRef();
   if(!ref)return;
-  setSync('busy');
-  try{
-    const snap=await ref.get();
-    if(snap.exists){
-      const cloud=snap.data()&&snap.data().state?JSON.parse(snap.data().state):null;
-      if(cloud){
-        S=mergeStates(S,cloud);
-        if(!S.hl)S.hl={};
-        await save();
-      }
-    }
-    setSync('idle');render();
-    await pushCloud();
-  }catch(e){setSync('err')}
+  if(!currentCloud(cloudSession))cloudSession={uid:fbUser.uid,pid:me.id,auth:cloudAuth,
+    ref:ref,key:KEY,mode:storageMode,running:false,again:false};
+  await pushCloud(cloudSession);
 }
 function schedulePush(){
-  if(!fbUser)return;
+  const c=cloudSession;
+  if(!currentCloud(c))return;
   clearTimeout(pushTimer);
-  pushTimer=setTimeout(pushCloud,1200);
+  pushTimer=setTimeout(()=>{if(currentCloud(c))pushCloud(c)},1200);
 }
-async function pushCloud(){
-  const ref=docRef();
-  if(!ref)return;
+async function pushCloud(c=cloudSession){
+  if(!currentCloud(c))return;
+  if(c.running){c.again=true;return}
+  c.running=true;c.again=false;
+  let live=true;
   setSync('busy');
   try{
-    await ref.set({state:JSON.stringify(S),updatedAt:Date.now(),
-                   name:(fbUser.displayName||''),email:(fbUser.email||'')},{merge:true});
+    const local=JSON.parse(JSON.stringify(S)),entry=rosterProfile(me),root=rosterRef(c.uid);
+    /* mergeStates rebuilds answers and resumeByChapter key by key, so its output
+       does not compare byte-for-byte against its input even when nothing moved.
+       Merging local with itself gives the same normal form, which is what makes
+       the comparison below mean "another device changed something" rather than
+       "the keys came back in a different order". */
+    const before=JSON.stringify(mergeStates(local,local));
+    const merged=await cloudWait(firebase.firestore().runTransaction(async tx=>{
+      const roster=await tx.get(root),snap=await tx.get(c.ref);
+      if(!live||!currentCloud(c))return null;
+      const data=roster.exists?roster.data():{};
+      let out=local;
+      if(snap.exists&&snap.data().state)out=mergeStates(out,JSON.parse(snap.data().state));
+      /* Removing the old field and adopting its contents in the same commit
+         makes retries and simultaneous first sign-ins adopt it only once. */
+      if(Object.prototype.hasOwnProperty.call(data,'state'))out=mergeStates(out,JSON.parse(data.state));
+      tx.set(c.ref,{state:JSON.stringify(out),updatedAt:Date.now()});
+      const list=rosterList(data);
+      if(!list.some(p=>p.id===entry.id))list.push(entry);
+      tx.set(root,{profiles:list});
+      return out;
+    }));
+    if(!merged||!currentCloud(c))return;
+    /* Include edits made during the request without scheduling an endless
+       save/push loop. Their existing debounce sends them on the next pass. */
+    S=mergeStates(S,merged);
+    if(!S.hl)S.hl={};
+    const raw=JSON.stringify(S);
+    if(c.mode==='cloud'&&window.storage&&window.storage.set)await cloudWait(window.storage.set(c.key,raw));
+    else if(c.mode==='local')localStorage.setItem(c.key,raw);
+    if(!currentCloud(c))return;
+    bakSchedule();
+    /* A push runs 1.2 s after every answer. Repainting unconditionally would
+       rebuild the page under the student mid-question — losing the caret in a
+       case's answer box — for a merge that changed nothing, which is what a
+       merge changes on a single device. Repaint only when a second device
+       actually sent something back. */
+    if(JSON.stringify(merged)!==before)render();
     setSync('idle');
-  }catch(e){setSync('err')}
+  }catch(e){if(currentCloud(c))setSync('err')}
+  finally{
+    live=false;c.running=false;
+    if(currentCloud(c)&&c.again)schedulePush();
+  }
 }
 
 /* restore an existing session on load */
@@ -3752,6 +3841,10 @@ service cloud.firestore {
     match /users/{uid} {
       allow read, write: if request.auth != null
                          &amp;&amp; request.auth.uid == uid;
+      match /profiles/{pid} {
+        allow read, write: if request.auth != null
+                           &amp;&amp; request.auth.uid == uid;
+      }
     }
   }
 }</code></div>
@@ -3796,7 +3889,7 @@ function clearCfg(){
 
 /* ============ PROFILES ============ */
 const PKEY='wardround.profiles', LASTKEY='wardround.lastprofile';
-let profiles=[], me=null;
+let profiles=[], me=null, profileLoad=0;
 const AVATARS=['\uD83E\uDE7A','\uD83E\uDDE0','\uD83D\uDC68\u200D\u2695\uFE0F','\uD83D\uDC69\u200D\u2695\uFE0F','\uD83E\uDDB4','\uD83D\uDC8A','\uD83D\uDD2C','\uD83E\uDEC0','\uD83E\uDEC1','\uD83D\uDC41\uFE0F',
   '\uD83D\uDC3B','\uD83E\uDD8A','\uD83D\uDC3C','\uD83E\uDD89','\uD83D\uDC27','\uD83E\uDD81','\uD83D\uDC2F','\uD83D\uDC38',
   '\u26A1','\uD83C\uDF1F','\uD83D\uDD25','\uD83C\uDFAF','\uD83D\uDE80','\uD83C\uDF08'];
@@ -3975,11 +4068,14 @@ function migrateColours(){
 }
 
 async function enterProfile(p){
+  resetCloud();
+  const entry=++profileLoad;
   me=p;
   KEY=stateKey(p.id);
   try{localStorage.setItem(LASTKEY,p.id)}catch(e){}
   S={answers:{},flags:{},conf:{},sched:{},srs:{},days:{},hl:{},banks:{},resumeByChapter:{},schedule:null};
   await loadState();
+  if(entry!==profileLoad||me!==p)return;
   sanitiseBanks();
   migrateColours();
   closeModal();hideGate();
@@ -3996,25 +4092,23 @@ async function enterProfile(p){
     toast('Progress restored from the backup taken '+bakWhen(bakRestored));
     bakRestored=0;
   }
-  /* A cloud profile pulls once on entry. This used to sit in afterSignIn(), but
-     the two-step gate means signing in no longer enters a profile directly —
-     the user picks or creates one first, so the pull belongs here instead. */
-  if(fbUser&&p.id.indexOf('g:')===0){
-    try{await pullCloud()}catch(e){}
-  }
+  /* Every profile under the account syncs, including one created offline.
+     Entry is already usable while the optional cloud merge runs. */
+  if(fbUser)pullCloud();
 }
+function leaveProfile(){resetCloud();me=null;closeModal();showGate()}
 function switchProfile(){
   if(fbUser){
     showModal(`<h3>Switch or sign out?</h3>
      <p>You are signed in as <b>${esc(fbUser.displayName||fbUser.email||'your Google account')}</b>. Signing out stops syncing on this device; your progress stays in the cloud.</p>
      <div class="modal-actions">
        <button class="btn sec" onclick="closeModal()">Stay</button>
-       <button class="btn sec" onclick="me=null;closeModal();showGate()">Switch profile</button>
+       <button class="btn sec" onclick="leaveProfile()">Switch profile</button>
        <button class="btn" style="background:var(--bad);border-color:var(--bad)" onclick="signOutCloud()">Sign out</button>
      </div>`);
     return;
   }
-  me=null;closeModal();showGate();
+  leaveProfile();
 }
 
 /* ---- PIN ---- */
@@ -4118,6 +4212,7 @@ function saveProfile(){
   if(i>=0)profiles[i]=draft; else profiles.push(draft);
   saveProfiles();
   const saved=draft;draft=null;
+  syncRoster(saved);
   closeModal();
   if(me&&me.id===saved.id){me=saved;render();toast('Profile updated')}
   else if(!me)enterProfile(saved);
@@ -4134,10 +4229,13 @@ function deleteProfile(id){
    </div>`);
 }
 function doDeleteProfile(id){
+  const p=profiles.find(x=>x.id===id);
+  if(!p)return;
+  if(me&&me.id===id){resetCloud();me=null}
   profiles=profiles.filter(p=>p.id!==id);
   saveProfiles();
   try{localStorage.removeItem(stateKey(id))}catch(e){}
-  if(me&&me.id===id)me=null;
+  syncRoster(p,true);
   closeModal();showGate();toast('Profile deleted');
 }
 function manageProfiles(){
