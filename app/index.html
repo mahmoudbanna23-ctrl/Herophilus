@@ -335,6 +335,15 @@ input{font-family:inherit;font-size:inherit}
 }
 
 .page{padding:28px;max-width:1180px;width:100%;margin:0 auto;flex:1}
+/* The dashboard is narrower than every other view, and deliberately so. Module
+   cards are capped at two per row so the artwork is worth showing, which puts
+   the grid's right edge at 880px — and against a 1180px column that left a
+   244px hole down the right of the page that nothing filled and nothing
+   explained. Everything on this view now ends at the same place: 880px of
+   content plus the page's own 28px either side. Only this view moves; the
+   reader, the quiz and the theory pages keep the wider measure they were set
+   in. Scoped to screen so the print block's max-width still wins on paper. */
+@media screen{body[data-view="home"] .page{max-width:936px}}
 
 /* ---------- Type ---------- */
 /* Display type is carved, not set: Roman capitals, letter-spaced OUT rather than
