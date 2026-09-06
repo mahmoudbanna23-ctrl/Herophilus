@@ -173,6 +173,7 @@ all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **Th
   `node --check` after every append; then GREP EVERY PATH AND REGEX — the write reports success
   either way.** ⚠️ **`questions.ent.js` is MIXED CRLF/LF** (13,767 CRLF of 19,023 lines, 2026-09-02)
   — **nothing may anchor on a bare newline there**; scan structurally. ophtho/neuro/peds are pure LF.
+- **Three more traps, all measured 2026-09-06/07:** ⚠️ a **plain backtick template literal in JS eats backslashes too** (`` `\d` `` becomes `d`) — **`String.raw` on every patch payload** carrying a regex, and reject a payload holding a backtick or `${` · ⚠️ **`cd "<path>" && git …` is DENIED by permissions; `git -C "<path>" …` is not** · ⚠️ **node resolves a Git-Bash `/tmp/x` as `D:\tmp\x`** — pass the scratchpad's full Windows path. ⚠️ **Python writes CRLF on Windows: `newline=''` on every read AND write of a project file**; the definitive test is `tr -cd '\r' < <file> | wc -c`.
 - **⚠️⚠️ COUNTING QUESTIONS IS A TRAP: `app\data\*.js` MIXES TWO KEY STYLES** — `questions.neuro.js`
   held **151 quoted-key** (`"id":`) + **22 bare-key** (`id:`) entries, so a bare-key grep counted
   **22 of 173** on 2026-09-02 and read as catastrophic loss. **It was not.** Count BOTH styles
