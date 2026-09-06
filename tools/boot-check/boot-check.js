@@ -33,6 +33,16 @@ const EDGE = 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe';
 const browser = fs.existsSync(CHROME) ? CHROME : EDGE;
 const SELFTEST = process.argv.includes('--selftest');
 
+/* --dir=<path> boots something other than app\. The reason it exists: the
+   folder that actually ships is dist\, built by tools\build-launch.js with the
+   locked subjects' data files removed, and until now nothing had ever booted
+   the thing being uploaded — only the source it was built from. A build that
+   orphans a global the aggregators do not guard would look identical here. */
+const SRC = (() => {
+  const a = process.argv.find(x => x.startsWith('--dir='));
+  return a ? path.resolve(ROOT, a.slice(6)) : path.join(ROOT, 'app');
+})();
+
 // A double dash anywhere in the workspace path kills both browsers.
 const WORK = path.join(os.tmpdir(), 'herophilus_boot');
 if (WORK.includes('--')) {
@@ -51,7 +61,8 @@ function copyDir(src, dst) {
 
 rmrf(WORK);
 const APP = path.join(WORK, 'app');
-copyDir(path.join(ROOT, 'app'), APP);
+copyDir(SRC, APP);
+if (SRC !== path.join(ROOT, 'app')) console.log('source    ' + path.relative(ROOT, SRC));
 
 // The probe goes in FIRST, before the app's own <head> scripts, so it catches a
 // parse-time throw in a data file as well as a runtime one.
