@@ -213,20 +213,29 @@ Recorded so nobody re-argues these from an armchair:
    console, not verifiable from the repo.**
 3. **B1 + B7** — identity test in `docRef()`, cancel-then-check in `schedulePush()`, flush before
    `enterProfile()` reassigns `me` and before `signOut()`, exact-UID test on the pull. Then the
-   three-tap manual test. ~60–100 min. **NOT done as of 2026-09-06** — `docRef()` (`app/index.html:3644`)
-   still keys off `fbUser.uid` alone and `schedulePush()` (`:3693`) still only tests `!fbUser`; no
-   identity check exists yet. Still open, still today's job.
-4. **The lock** — Ophthalmology and Neuropsychiatry across all 14 surfaces. **NOT done** — no
-   `isLocked`/`locked:true` anywhere in `app\data\modules.js` or `app\index.html`. Still open.
-5. **Exam mode**, scoped as above; fallback to untimed if the clock slips. **NOT done** — no
-   mode flag or exam toggle found in `app\index.html`. Still open.
-6. **B5 copy** — two minutes, and the toast currently lies. **NOT done** — the toast at
-   `app/index.html:4716` still promises the middle rating ("Noted — it will come back soon") and
-   `inDeck()` (`:2970`) still only admits `conf===0`. Still open.
-7. **Mobile pass**, then the trimmed build. **Trimmed build: partly done** — `tools/build-launch.js`
-   exists on disk (untracked, uncommitted, 2026-09-06) and reads as a working build script; whether
-   it has actually been run to produce a shipped `dist\` is unverified. **Mobile pass: unknown** —
-   needs a live screenshot check, not cheap to verify from disk.
+   three-tap manual test. ~60–100 min. ✅ **DONE, verified from disk 2026-09-06** — `currentCloud(c)`
+   tests the auth generation, the uid and the profile id together, and `mergeStates` merges by each
+   key's own `.at` across both `answers` and `resumeByChapter`.
+4. **The lock** — Ophthalmology and Neuropsychiatry across all 14 surfaces. ✅ **DONE, verified from
+   disk 2026-09-06** — `LOCKED_MODULES=['ophtho','neuropsych']`, `isLocked`, the `.mod-card.locked`
+   rules, the "Coming soon" badge on the module card and the chapter list, and the gate tagline. The
+   trimmed build also drops the locked modules' questions and theory: boot-check reads 4,049
+   questions and 81 theory chapters, which is 5,922 − 1,873 (ophtho 1,598 + neuro 275) and
+   153 − 72 exactly.
+5. **Exam mode**, scoped as above; fallback to untimed if the clock slips. **NOT done as of
+   2026-09-06.** `runMock()` shuffles a pool and calls `startQuiz()`; there is no clock, no mode flag,
+   and explanations reveal as they do in an ordinary quiz. The mock page's own three promises —
+   random order, clock running, no peeking until you finish — are true only of the first. **This is
+   the one item on this list still open.**
+6. **B5 copy** — two minutes, and the toast currently lies. ✅ **DONE, verified from disk
+   2026-09-06** — `inDeck()` now admits `conf===0||conf===1`, `setConf()` pins the rung rather than
+   inheriting it (so "unsure" can demote a question `scheduleSRS` has already promoted), and the
+   three toasts say what actually happens: back tomorrow, back in three days, left on the normal
+   schedule.
+7. **Mobile pass**, then the trimmed build. ✅ **Mobile pass DONE** — `tools/boot-check/mobile-check.js`
+   reports PASS with no view overflow at any width, across every view. **Trimmed build: script done,
+   not yet run for shipping** — `tools/build-launch.js` is committed (`9d59634`) and reads correctly;
+   no `dist\` has been produced for upload yet.
 
 ## Superseded 2026-09-06 — the deferral list is overturned
 
