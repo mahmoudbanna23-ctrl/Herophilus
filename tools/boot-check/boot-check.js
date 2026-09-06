@@ -98,7 +98,31 @@ const report = [
   // enterProfile() is what paints the home view; it is async, so measure after.
   '  var p=Promise.resolve();',
   '  try{p=enterProfile({id:"boot",name:"Boot",av:0,col:0});}catch(e){window.__errs.push("enterProfile THREW: "+e.message);}',
-  '  Promise.resolve(p).catch(function(e){window.__errs.push("enterProfile REJECTED: "+e);}).then(function(){setTimeout(measure,600);});',
+  // Content is now scoped to a chosen term and QUESTIONS/THEORY start empty. A
+  // seeded profile alone measures an empty app — render() returns early while
+  // termEntryPending is true — which reads as catastrophic loss of all questions
+  // and theory chapters. Mirror chooseTerm()'s tail for the term whose content
+  // is published (id "y4s2") so the harness measures what the user actually sees
+  // after picking a semester. Guard every new symbol with typeof so the harness
+  // still runs against a pre-term build and reports honestly rather than
+  // throwing on the first reference.
+  '  Promise.resolve(p).catch(function(e){window.__errs.push("enterProfile REJECTED: "+e);}).then(function(){',
+  '    try{',
+  '      if(typeof TERMS==="undefined"){window.__errs.push("term seed: TERMS undefined");setTimeout(measure,600);return;}',
+  '      if(typeof S==="undefined"){window.__errs.push("term seed: S undefined");setTimeout(measure,600);return;}',
+  '      if(typeof save!=="function"){window.__errs.push("term seed: save not a function");setTimeout(measure,600);return;}',
+  '      var T=null;',
+  '      for(var i=0;i<TERMS.length;i++){if(TERMS[i]&&TERMS[i].id==="y4s2"){T=TERMS[i];break;}}',
+  '      if(!T){window.__errs.push("term seed: y4s2 not in TERMS");setTimeout(measure,600);return;}',
+  '      var prev=null;',
+  '      try{if(S&&S.term)prev=S.term;}catch(_){}',
+  '      S.term={id:T.id,at:Math.max(Date.now(),prev?prev.at+1:0)};',
+  '      save();',
+  '      if(typeof termEntryPending!=="undefined"&&termEntryPending&&typeof finishProfileEntry==="function"){finishProfileEntry();}',
+  '      else{if(typeof activateTerm==="function")activateTerm(T.id);if(typeof render==="function")render();}',
+  '    }catch(e){window.__errs.push("term seed THREW: "+e.message);}',
+  '    setTimeout(measure,600);',
+  '  });',
   '},1200);});',
   'function measure(){',
   // r.errs is filled at the END of this function, never here. The module walk
