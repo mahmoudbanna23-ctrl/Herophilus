@@ -59,6 +59,39 @@ if (!fs.existsSync(INDEX_SRC)) {
 // locked for this launch. Which FILES belong to them is worked out below.
 const LOCKED_SUBJECTS = ['ophtho', 'neuro'];
 
+/* The Theory section as a whole is locked separately from the two locked
+ * subjects, and for a different reason: the summaries there are placeholders
+ * that the real book chapters will replace, so they are not being published at
+ * all yet. The same rule that governs a locked subject governs them — "coming
+ * soon" has to mean the bytes never leave this machine, or a student with dev
+ * tools open is reading a draft that was deliberately withheld.
+ *
+ * The flag is NOT restated here. It is read out of app/data/modules.js, which
+ * is where the app itself reads it, so unlocking Theory is still the one-line
+ * change it was designed to be and this tool follows it automatically. Parsed
+ * without a regex on purpose: the declaration is a single line and a literal
+ * scan cannot half-match something that merely mentions the name. */
+function readTheoryLocked() {
+  const src = fs.readFileSync(path.join(APP, 'data', 'modules.js'), 'utf8');
+  const marker = 'THEORY_LOCKED';
+  const at = src.indexOf(marker);
+  if (at < 0) return null;
+  const eq = src.indexOf('=', at);
+  const end = src.indexOf(';', eq);
+  if (eq < 0 || end < 0) return null;
+  const value = src.slice(eq + 1, end).trim();
+  if (value === 'true') return true;
+  if (value === 'false') return false;
+  return null;
+}
+const THEORY_LOCKED = readTheoryLocked();
+if (THEORY_LOCKED === null) {
+  console.error('REFUSING: could not read THEORY_LOCKED out of app/data/modules.js. ' +
+    'It is either gone, renamed, or no longer a plain true/false — and this tool cannot ' +
+    'tell whether the theory notes are meant to ship. Fix the flag or this reader; do not guess.');
+  process.exit(1);
+}
+
 function rmrf(p) { if (fs.existsSync(p)) fs.rmSync(p, { recursive: true, force: true }); }
 function copyDir(src, dst) {
   fs.mkdirSync(dst, { recursive: true });
@@ -103,6 +136,27 @@ for (const src of scriptSrcs) {
   const base = path.basename(src);
   if (!dataDirFiles.includes(base)) continue; // only touching files that really live in app/data
   if (LOCKED_SUBJECTS.some(k => base.toLowerCase().includes(k))) excludedRel.add(src);
+  // Every per-subject theory file while the section is locked — but never
+  // theory.js itself, which is the aggregator the app still needs in order to
+  // build an empty THEORY map rather than throw.
+  if (THEORY_LOCKED && base !== 'theory.js' &&
+      base.toLowerCase().startsWith('theory.') && base.toLowerCase().endsWith('.js')) {
+    excludedRel.add(src);
+  }
+}
+
+// Same refusal as the locked subjects get, for the same reason: if the section
+// is locked and nothing matched, the naming changed and this tool no longer
+// knows what it is meant to be withholding.
+if (THEORY_LOCKED) {
+  const theoryHits = [...excludedRel].filter(r => path.basename(r) !== 'theory.js' &&
+    path.basename(r).toLowerCase().startsWith('theory.'));
+  if (!theoryHits.length) {
+    console.error('REFUSING: THEORY_LOCKED is true, but no per-subject theory file was found ' +
+      'among the <script src> tags in index.html. Either those files were renamed, or they are ' +
+      'genuinely gone; either way the exclusion cannot be confirmed and will not be guessed.');
+    process.exit(1);
+  }
 }
 
 // The constraint that matters most here: if a locked subject turns out to
@@ -270,12 +324,18 @@ if (fs.existsSync(GITIGNORE)) {
 // ----------------------------------------------------------------------
 // 9. Report.
 // ----------------------------------------------------------------------
-console.log('--- excluded data files (locked subjects: ' + LOCKED_SUBJECTS.join(', ') + ') ---');
+console.log('--- excluded data files (locked subjects: ' + LOCKED_SUBJECTS.join(', ') +
+  (THEORY_LOCKED ? '; plus every theory file, section locked' : '') + ') ---');
 for (const e of excludedReport) {
   console.log('  ' + e.file + '  (' + e.bytes.toLocaleString() + ' bytes)');
 }
 console.log('  reason: subject is behind "Coming soon" for this launch; its questions, cases and');
 console.log('  theory notes must be genuinely absent from the upload, not just unlinked in the UI.');
+if (THEORY_LOCKED) {
+  console.log('  theory: THEORY_LOCKED is true in app/data/modules.js, so the summaries are');
+  console.log('  withheld whole — they are placeholders for the real book chapters and are not');
+  console.log('  being published yet. theory.js itself still ships, and builds an empty map.');
+}
 
 console.log('\n--- excluded image assets (referenced only by the excluded subjects) ---');
 if (droppedImageCount) {
