@@ -1,0 +1,121 @@
+# START PROMPT — Ophthalmology endpoint, HALF A (chapters)
+
+**Paste this as the first message of a fresh chat. Open it on Fable 5.1.**
+Do not continue an old session into this work (`CLAUDE.md` §9: step count is the cost).
+
+---
+
+You are Chat OPH-A. Workspace `D:\claude os`; project `Medical school\Herophilus`
+(its `CLAUDE.md` and `MEMORY.md` auto-load — read them before doing anything).
+
+## Your scope
+
+Transcribe the **chapter half** of `Semester 8\Opthalmo\Questions\Opthalmology endpoint.pdf`.
+
+- **Your pages: PDF 6 – 1390.** 1,385 pages, sections 1–21 (Examination of the Eye → Keys for
+  Diagnosis). A second chat, OPH-B, owns PDF 1391–2442 (the exam sections). **Never render, read,
+  cite or write a question from a page outside your range.**
+- Printed page number **equals** PDF page number across your whole range — verified at 6, 880 and
+  1391. You have no offset to correct. (OPH-B does; that is their problem, not yours.)
+- Section table with all 21 chapter ranges:
+  **`progress\ophtho-endpoint-section-map-2026-09-07.md`** — read it, it is short, and it means you
+  never re-render the TOC.
+
+## Read these first, in this order
+
+1. `progress\ophtho-endpoint-section-map-2026-09-07.md` — sections, page ranges, the offset warning.
+2. `progress\ophtho-endpoint-scoping-2026-09-06.md` — why the split is shaped this way; the
+   do-not-split-the-PDF finding; the OCR conditions.
+3. `progress\resume-peds-endpoint.md` — the closed peds endpoint part 1. **This is your template.**
+   It is the same job on a different book. Copy its method, not its content.
+4. `tools\wps-ocr-reference.md` before your first OCR call.
+
+Do **not** open anything else in `progress\` without checking `progress\READING-COSTS.md` first.
+
+## Your outputs — names are fixed, do not improvise
+
+| Thing | Value |
+|---|---|
+| Data file | `app\data\questions.ophtho.ep.js` |
+| Array | `Q_OPHTHO_EP` |
+| Id prefix | `ophep-` |
+| Bank | `endpoint` |
+| Ledger section | a new section in `progress\ledger.md` |
+
+OPH-B uses `questions.ophtho.ep2.js` / `Q_OPHTHO_EP2` / `ophep2-`. **If you touch any of those three,
+you have made the mistake this split exists to prevent.**
+
+## GATE 0 — you build the toolchain, and OPH-B is blocked until you do
+
+`tools\bank-harness\` is **entirely pediatrics-shaped**. Nothing ophthalmology exists. Before either
+chat writes a question, build, from the `-pd-ep2` scripts as the model:
+
+- `tools\bank-harness\val-oph-ep.js` — validator, `--part 1|2`
+- `tools\bank-harness\splice-oph-ep.js` — splicer, `--part 1|2`, refuses unless the validator exits 0
+- `tools\bank-harness\pagecov-oph.js` — the page-coverage closing test, `--part 1|2`
+
+One toolchain with a part flag, not two copies. **`val-pd-ep2.js` is 33.9 K — budget for this
+properly; it is not a detail.** ⚠️ Never run `val-pd.js` / `splice-pd.js` / `pagecov-ep2.js` against
+an ophthalmology file — they write peds files.
+
+**Also at gate 0, so the two chats never collide in `app\index.html`:** add **both** `<script>` tags
+(`questions.ophtho.ep.js` and `questions.ophtho.ep2.js`), mirroring the existing
+`questions.peds.ep2.js` tag and its load position, and create OPH-B's file as a stub declaring an
+empty `Q_OPHTHO_EP2`. Boot from `file://` and confirm 0 console errors before you go further.
+**After this, `app\index.html` is OPH-B's to leave alone and yours to leave alone.**
+
+Tell the user when gate 0 is done — that is OPH-B's green light.
+
+## Method (the parts people get wrong)
+
+- **Render + read scanned pages inside a subagent that returns text only.** An image read in the main
+  conversation is re-sent every request for the rest of the session. `pdftoppm -png -r 150 -f <a>
+  -l <b> "<source>" "<scratchpad>/oph-epa-"`. **Never modify the source PDF.**
+- **Never split the PDF.** Splitting these books makes them *bigger*. You split the page range only.
+- **OCR text is a search index, never a clinical source.** ⚠️ Never take an exponent, a unit or a
+  dose from OCR — WPS read a printed 10⁶ as 10⁹ and also flattens 10⁶ → 106. Read those off the page
+  image.
+- **Exit 429 is a rate limit, not a quota** — back off, double the gap (cap 60 s), retry the same
+  page. **You share one WPS account with OPH-B**, so the account-wide rate is double what you think
+  you are issuing. Pace as if you own half.
+- **Read every answered page; trust no printed count**, not the contents page, not the section map's
+  own ranges. Render one page past the last page of each section.
+- Content standards, folds, explanations, the six-shape duplicate sweep: project `CLAUDE.md` §4 and
+  `MEMORY.md`. **Endpoint/House overlap is chapter-shaped** and it will hit *you*, not OPH-B —
+  Ophthalmology House is closed at 1,598 and its questions are chapter-organised. **Nothing folds
+  mid-stream**; log collisions and fold at the end.
+- **Cache as you go.** Transcription to `content\`, page ranges to `progress\ledger.md`, in the same
+  pass. Write entries to disk incrementally (`Edit`-append, never `Write`) so a dead session resumes
+  from the file.
+
+## Routing — who does the work (workspace `CLAUDE.md` §9)
+
+Take the lowest rung that can do the job and **say which rung before starting**.
+
+Scanned medical pages **never leave Claude** — the fleet is not an option for transcription here.
+That puts page work on rung 3: **`lean-drafter` subagents on Sonnet**, one bounded job each, back
+in under ~60 tool calls. Use `haiku` for pure read-only search. Non-page work that *can* leave —
+research, formatting, first-draft tool code — goes to the fleet via `/msn` or `opencode-delegate`
+first. The main chat reviews and routes; it does not transcribe.
+
+## Closing test
+
+**Page coverage, not a section count.** Every `p.<n>` in every `source` field against every
+OCR-`answered` page in PDF 6–1390. `node tools\bank-harness\pagecov-oph.js --part 1`, exit 0.
+⚠️ The classifier errs **both** ways — it calls real questions "notes" (the expensive direction) and
+prose "questions". An adjudication is not a citation; record each one.
+
+## Rules that end a session badly if broken
+
+- **Commit with `git commit -F <msgfile> -- <explicit paths>`.** Never `git add -A`. Never stage a
+  file OPH-B owns. `index.lock` present = the other chat is mid-commit; wait, never delete it.
+- **Do not write to `MEMORY.md` or `ledger.md` mid-run** beyond your own appended ledger section.
+- **A dirty tree is normal while two chats run.**
+- Stop at a clean section boundary. A partial pass reported honestly is a success; a silent gap is
+  not.
+
+## Report back
+
+When you stop, append to this file's `## Changed since` block (create it) — never edit the body
+above. State: sections done, page ranges covered, entry count from disk (not from a draft header),
+folds logged, and anything you left open.
