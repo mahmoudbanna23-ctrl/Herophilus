@@ -232,3 +232,39 @@ MODULES 4 · 0 console errors) and `node tools/build-launch.js && node tools/dis
 ⚠️ Print must be re-tested after Stage 1 — `CLAUDE.md` §6 requires the print block's selector to
 stay `:root, :root[data-theme="light"], :root[data-theme="dark"]`, and the token work lands
 directly on it. Portraits at 820×1180 and 1180×820 after any film, scrim or page-width change.
+
+---
+
+## What actually landed — 2026-09-07
+
+Four commits on `main`, all pushed. Each was verified by the orchestrator against the repo's own
+gates before it was committed, never on the executing agent's self-report.
+
+| commit | stage | what |
+|---|---|---|
+| earlier | 1 + 1b | tokens, decoration, highlighter inks |
+| `612d070` | 2 | the study run stops keeping score; colour stops being the only mark |
+| `7885f90` | 3 | the subject page becomes a contents page |
+
+**Two rulings from the owner override this document where they disagree with it.**
+
+1. **Subject colour is kept**, on the rail and on chapter/group headers only. The line above
+   reading "Subject colour-coding goes" is superseded. Colour leaves every other surface.
+2. **Accuracy leaves the study run only.** The quiz, the case and the live session show position,
+   not score. Accuracy survives on home, on this contents page, in Review and in Weak chapters.
+
+**Numbers that look wrong and are not.** A healthy boot reports `QUESTIONS 4049 · THEORY 81 ·
+MODULES 4` and renders **81** chapter rows, 80 of them carrying questions. Ophthalmology and
+Neuropsychiatry are launch-locked and theory is locked, which holds 1,873 questions and 72 theory
+chapters out at the aggregator. A gate expecting 153 rows or 5,922 questions is stale, not a loss.
+
+**Three faults the Stage 2 agent's own green light did not catch**, found by independent checking
+and fixed before the commit: removing one of three session stats left the grid painting two stats
+into three tracks; and a bare `!` was prepended to two prose sentences that already named the
+fault in words — exactly the machine-look this redesign exists to remove.
+
+**Still open, and the owner's call, not Claude's: the host.** Netlify is ruled out by measurement
+— its edge times out from this connection. Vercel and GitHub Pages are both reachable. The choice
+is permanent because `localStorage` is per-origin, so a later move orphans every student's saved
+progress. Firebase's authorised-domain list must gain the chosen host on the same day or Google
+sign-in breaks. **Nothing publishes until this is decided.**
