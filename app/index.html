@@ -138,7 +138,14 @@
                
               
   --r:6px;              /* cards, modals, the outermost surfaces */
-          
+
+  /* Sticky offset for the subject index's group heads (Stage 3). Measured off
+     the real box, not guessed: headless Chrome at desktop width put .topbar's
+     border-box at 67px (13px padding top/bottom + border-bottom + content);
+     the max-width:860px breakpoint drops .topbar's padding to 10px and the
+     box to 61px, restated there. One token, used in both places so the
+     number never has to be typed twice. */
+  --topbar-h:67px;
   --pop:0 7px 18px;
   --pop-lg:0 14px 34px;
   --glow:0 0 0 1px rgba(242,232,213,.07);
@@ -478,6 +485,33 @@ button.card:active:not(:disabled){transform:translate(1px,1px);}
    each name has to say which one it belongs to. */
 .wk-mod{display:block;font-size:11px;font-weight:700;color:var(--ink-4);
   text-transform:none;margin-top:2px}
+
+/* ---------- Subject index — table of contents (Stage 3) ----------------
+   .grouphdr and .ch-row are shared with Weak/Session/Schedule/the profile
+   switcher, which keep the card look untouched. vModule adds a second class
+   to its own markup only, so these rules reach nothing else: .toc-hdr for
+   the sticky group head, .toc-row for the gridded line. Both selectors pair
+   two classes on purpose — that beats the base .ch-row:hover rule's own
+   specificity regardless of source order. */
+.grouphdr.toc-hdr{
+  position:sticky;top:var(--topbar-h);z-index:5;background:var(--bg);
+  padding:6px 0 6px 10px;margin:24px 0 11px;
+}
+.ch-row.toc-row{
+  display:grid;grid-template-columns:26px 11px 1fr 116px 44px;
+  column-gap:13px;align-items:center;
+}
+/* A line in a table of contents does not levitate — change of paper tone
+   and the border brightening stand in for the lift the rest of the app
+   still uses on real cards. */
+.ch-row.toc-row:hover:not(:disabled){
+  transform:none;background:var(--bg-2);border-color:var(--ink-4);
+}
+.ch-num{
+  font-size:11px;font-weight:700;color:var(--ink-4);
+  font-variant-numeric:tabular-nums;text-align:right;
+}
+.ch-row.toc-row .ch-count{text-align:right}
 
 /* ---------- Question ---------- */
 .qwrap{max-width:830px;margin:0 auto}
@@ -1492,6 +1526,11 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
   /* The schedule's own controls: the ✓/✗ marks and the Edit/Reset bar. Same
      reason as the buttons above — a printed plan is read, not clicked. */
   .mk,.edbar{display:none!important}
+  /* The subject index's group heads stick to the topbar on screen. .topbar
+     is hidden above, but position:sticky is still evaluated per printed
+     page in Chrome's print engine, which would repeat or overlap a group
+     head on every sheet. Pin it back to normal flow on paper. */
+  .grouphdr{position:static!important}
   /* A question's photograph is content, so it PRINTS — unlike the module
      artwork below. It is an <img>, not a background, so it needs nothing but
      room; the caption's "tap to enlarge" is meaningless on paper. */
@@ -1849,6 +1888,7 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
   #saveWarning, #dataWarning{width:calc(100% - 28px)}   /* the page's gutter halves here; the notice follows it */
   .qcard{padding:20px 17px}
   .topbar{padding:10px 14px}
+  :root{--topbar-h:61px}
   h1{font-size:25px}
   .day{flex-wrap:wrap}
   .day-marks{margin-left:auto}
@@ -5339,19 +5379,25 @@ function vModule(p){
     </div>`;
   }
 
+  /* Numbered continuously across the subject's own groups — 1..30 for ENT,
+     1..51 for Paediatrics — never a global 1..153, which two launch-locked
+     modules would leave full of gaps. */
+  let cn=0;
   m.groups.forEach(g=>{
-    h+=`<div class="grouphdr">${g.name}</div>`;
+    h+=`<div class="grouphdr toc-hdr">${g.name}</div>`;
     g.chapters.forEach(([cid,cname])=>{
+      cn++;
       const cq=qsIn(cid);
       const ca=accuracy(cq);
       const cd=cq.filter(q=>isAnswered(q.id)).length;
       const dot=cq.length?(ca===null?'#fff':accColor(ca)):'transparent';
       const resume=(S.resumeByChapter||{})[cid];
-      h+=`<button class="ch-row" ${cq.length?'':'disabled'} onclick="startChapter('${cid}')">
+      h+=`<button class="ch-row toc-row" ${cq.length?'':'disabled'} onclick="startChapter('${cid}')">
+        <span class="ch-num">${cn}</span>
         <span class="ch-dot" style="background:${dot}"></span>
         <span class="ch-name">${cname}${resume?` &middot; ${resume.finished?'Restart':'Continue'}`:''}</span>
-        <span class="ch-count">${cq.length?`${cd}/${cq.length}`:'no questions yet'}</span>
-        <span class="ch-acc" style="color:${accColor(ca)}">${ca===null?'':ca+'%'}</span>
+        <span class="ch-count">${cq.length?`${cd}/${cq.length}`:'not yet written'}</span>
+        <span class="ch-acc" style="color:${accColor(ca)}">${ca===null?(cq.length?'&mdash;':''):ca+'%'}</span>
       </button>`;
     });
   });
