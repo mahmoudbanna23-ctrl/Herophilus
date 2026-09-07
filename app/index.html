@@ -73,26 +73,23 @@
      Cinzel and EB Garamond are embedded in data/fonts.js. The fallbacks matter:
      if that file is ever missing the app must still read, so each stack ends in
      a real system serif rather than in `serif`. */
-  --font-display:var(--font-body);
+  --font-display:'Cinzel','Trajan Pro','Palatino Linotype','Book Antiqua',Georgia,serif;
   --font-body:'EB Garamond','Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
 
   /* text ramp — warm parchment on ink */
-  --tx:#ded6c7;
-  --ink:#ded6c7;
-  --ink-2:#bdb6a8;
-  --ink-3:#b1a999;
-  --ink-4:#aaa292;   /* secondary labels; measurements in the Stage 1 report */
+  --tx:#f2e8d5;
+  --ink:#f2e8d5;
+  --ink-2:#cfc0a5;
+  --ink-3:#ab9a80;
+  --ink-4:#9c8b71;   /* the 10-11px ramp; 5.2:1 on --card, audited */
 
-  /* ground and surfaces — warmed onto the parchment's own axis (R>G>B in
-     every stop) and widened: bg -> card -> bg-2 -> fill roughly doubles in
-     luminance at each step, so a card now visibly sits above the page and
-     a raised control sits above the card. Measurements in the change report. */
-  --bg:#241e18;
-  --bg-2:#403428;
-  --card:#332a21;
-  --fill:#55462f;
-  --glass:#332a21;
-  --glass-2:#241e18;
+  /* ground and surfaces */
+  --bg:#0a1017;
+  --bg-2:#151f2d;
+  --card:#121a27;
+  --fill:#2b3a4f;
+  --glass:rgba(18,27,40,.76);
+  --glass-2:rgba(11,17,26,.84);
 
   /* hairlines — parchment, not white */
   --line:rgba(242,232,213,.085);
@@ -120,28 +117,27 @@
   --buffer:#9a6b1f;
 
   /* state colours */
-  --ok:var(--tx);
-  --ok-bg:var(--bg-2);
-  --bad:#f292ac;
-  --bad-bg:rgba(242,146,172,.10);
+  --ok:#7fae6f;
+  --ok-bg:rgba(127,174,111,.15);
+  --bad:#d4674f;
+  --bad-bg:rgba(212,103,79,.15);
   --gold:#d9b44a;
-  --gold-bg:rgba(228,196,96,.12);
-  /* Student annotation washes: ochre, sage, dusty rose, slate. */
-  --hl-y:#49402b;
-  --hl-g:#2f4539;
-  --hl-p:#4b343e;
-  --hl-b:#303f50;
-  --warn:#e4c460;
+  --gold-bg:rgba(217,180,74,.15);
+  --warn:#d1a03c;
   --on-accent:#12100b;   /* text ON gold and other bright fills */
-  --gold-text:#e4c460;   /* gold used AS TEXT. Separate from --gold because on
+  --gold-text:#d9b44a;   /* gold used AS TEXT. Separate from --gold because on
                             parchment the background gold measures 1.6:1. */
 
-  /* Two corners: 6px outer surfaces; 3px controls. Circles remain circles. */
-  --r-1:3px;             /* swatches, marks, thin bars, inline code */
-               
-              
-  --r:6px;              /* cards, modals, the outermost surfaces */
-
+  /* One radius scale, four steps and a pill. Before this there were seventeen
+     different values across the stylesheet — two sibling buttons in the same
+     toolbar were 11px and 12px — and nothing but drift decided which a given
+     element got. The steps nest: a 12px panel inside a 16px card reads as
+     deliberate, two 13px boxes beside a 14px one reads as an accident. */
+  --r-1:4px;             /* swatches, marks, thin bars, inline code */
+  --r-2:8px;             /* small square tiles, icon buttons, images */
+  --r-3:12px;            /* rows, options, inputs, buttons, inner panels */
+  --r:16px;              /* cards, modals, the outermost surfaces */
+  --r-pill:999px;        /* anything shaped like a chip or a badge */
   --pop:0 7px 18px;
   --pop-lg:0 14px 34px;
   --glow:0 0 0 1px rgba(242,232,213,.07);
@@ -149,89 +145,71 @@
   --sh:rgba(0,0,0,.5);
   --sh-soft:rgba(0,0,0,.3);
   --sh-deep:rgba(0,0,0,.65);
-  --sheen:var(--card);
+  --sheen:linear-gradient(160deg,rgba(242,232,213,.05),rgba(242,232,213,.012));
   --tint:rgba(242,232,213,.045);
   --tint-2:rgba(242,232,213,.075);
 
   /* the clinical reading surface */
-  --stem:var(--tx);
-  --prose:var(--tx);
-  --strong:var(--tx);
-
-  --on-fill:var(--tx);
-  --on-subject:#fcf8ee;
---sheen:linear-gradient(160deg,rgba(242,232,213,.05),rgba(242,232,213,.012));}
+  --stem:#f5ecdb;
+  --prose:#d8c9ae;
+  --strong:#fff8ea;
+}
 
 /* ============================================================================
    LIGHT — parchment. Sampled from the user's "Father of Anatomy" card: an aged
    page, warm ink, sienna rule lines. Only tokens are restated; the rules are
    shared with dark.
 
-   One asymmetry from the previous theme still holds:
+   The two asymmetries from the previous theme still hold and still matter:
      1. THE RAIL STAYS DARK — it is a carved plinth in both themes, and the ~12
         hardcoded #fff values inside it stay correct.
-   A second one was ruled the other way, 2026-09-07: --gold no longer stays
-   bright here — bronze, matching --gold-text, with --on-accent moved light
-   to match. Dark keeps the bright gold; see the note above --gold below.
-   --ok and --bad DO darken, because accColor() returns them as text.
+     2. --gold STAYS BRIGHT — it is a background in 7 places and a text colour
+        in none. --ok and --bad DO darken, because accColor() returns them as
+        text.
    ============================================================================ */
 :root[data-theme="light"]{
-  --tx:#28221c;
-  --ink:#28221c;
-  --ink-2:#5d5549;
-  --ink-3:#645a4b;   /* restored step between ink-2 and ink-4 — was equal to ink-4 */
-  --ink-4:#68604f;   /* secondary labels; 4.76:1 on bg, 5.57:1 on card — see report */
+  --tx:#241c14;
+  --ink:#241c14;
+  --ink-2:#463726;
+  --ink-3:#5e4c37;
+  --ink-4:#5c4b36;   /* 5.2:1 on --bg-2, the DARKEST surface it lands on — measuring
+                        against --card alone put this at 4.11:1 in real use */
 
-  --bg:#ece0c8;      /* page — deeper, warmer than the old f3ecde */
-  --bg-2:#e0d3b4;
-  --card:#f8f2e4;    /* raised sheet — lighter than the page now, was equal to it */
-  --fill:#d9caa8;    /* raised paper for controls */
-  --glass:#f8f2e4;
-  --glass-2:#ece0c8;
+  --bg:#e6d9be;
+  --bg-2:#dbcbab;
+  --card:#f7efe0;
+  --fill:#2b2118;    /* dark ink solid — buttons stay dark on the page */
+  --glass:rgba(247,239,224,.78);
+  --glass-2:rgba(247,239,224,.85);
 
   --line:rgba(60,44,28,.13);
   --line-2:rgba(60,44,28,.22);
 
   /* rail unchanged — see note 1 above */
 
-  --ok:var(--tx);
-  --ok-bg:var(--bg-2);
-  --bad:#92294f;
-  --bad-bg:rgba(146,41,79,.07);
-  /* Colour pass, 2026-09-07: the owner ruled --gold stays bright in dark but
-     does not belong on parchment — bright saturated yellow sitting close to
-     the paper in both lightness and hue read as a smudge, not an accent.
-     --gold now takes the bronze the file already used for --gold-text (the
-     "established light-mode gold voice"); --on-accent moves to a light fill
-     so text on a solid gold background still passes. Contrast measured in
-     the change report. Dark's --gold/--gold-bg/--gold-text/--on-accent are
-     untouched, per the owner's explicit ruling for dark mode. */
-  --gold:#745800;
-  --gold-bg:rgba(116,88,0,.10);
-  --hl-y:#e3d3a4;
-  --hl-g:#c9d8c0;
-  --hl-p:#dfc5c9;
-  --hl-b:#c5d2de;
-  --warn:#745800;
-  --on-accent:#fcf8ee;
-  --gold-text:#745800;   /* bronze. The background gold measures 1.6:1 as text
+  --ok:#2f5426;
+  --ok-bg:rgba(47,84,38,.13);
+  --bad:#9c3620;
+  --bad-bg:rgba(156,54,32,.11);
+  --gold:#d9b44a;              /* unchanged — see note 2 above */
+  --gold-bg:rgba(154,107,31,.17);
+  --warn:#8a5a12;
+  --on-accent:#1a150e;
+  --gold-text:#7a5410;   /* bronze. The background gold measures 1.6:1 as text
                             on parchment — unreadable. See the dark block. */
 
   --glow:0 0 0 1px rgba(74,56,34,.06);
   --sh:rgba(74,56,34,.16);
   --sh-soft:rgba(74,56,34,.10);
   --sh-deep:rgba(74,56,34,.24);
-  --sheen:var(--card);
+  --sheen:linear-gradient(160deg,rgba(74,56,34,.02),rgba(74,56,34,.05));
   --tint:rgba(74,56,34,.045);
   --tint-2:rgba(74,56,34,.075);
 
-  --stem:var(--tx);
-  --prose:var(--tx);
-  --strong:var(--tx);
-
-  --on-fill:var(--tx);
-  --on-subject:#fcf8ee;
---sheen:linear-gradient(160deg,rgba(74,56,34,.02),rgba(74,56,34,.05));}
+  --stem:#1c150e;
+  --prose:#33281c;
+  --strong:#000000;
+}
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
 body{
@@ -241,24 +219,24 @@ body{
   font-family:var(--font-body);
   background:var(--bg);color:var(--tx);font-size:16.5px;line-height:1.55;
   -webkit-font-smoothing:antialiased;
-  background-image:var(--light-body-background-image,none);
+  background-image:radial-gradient(circle at 12% 8%, rgba(109,76,125,.09) 0, transparent 42%),
+                   radial-gradient(circle at 88% 4%, rgba(46,95,138,.05) 0, transparent 38%);
   background-attachment:fixed;
-background-image:radial-gradient(circle at 12% 8%, rgba(109,76,125,.09) 0, transparent 42%),
-                   radial-gradient(circle at 88% 4%, rgba(46,95,138,.05) 0, transparent 38%);}
+}
 button{font-family:inherit;font-size:inherit;cursor:pointer;border:none;background:none;color:inherit}
 input{font-family:inherit;font-size:inherit}
-:focus-visible{outline:3px solid var(--line-2);outline-offset:2px;border-radius:var(--r-1)}
+:focus-visible{outline:3px solid var(--neuro);outline-offset:2px;border-radius:var(--r-1)}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 
 /* ---------- Layout ---------- */
 .app{display:flex;min-height:100vh}
 .rail{
-  width:238px;flex-shrink:0;background:var(--light-rail-background,var(--rail));color:var(--rail-text);
+  width:238px;flex-shrink:0;background:var(--rail);color:var(--rail-text);
   display:flex;flex-direction:column;position:sticky;top:0;height:100vh;overflow-y:auto;
-  border-right:var(--light-rail-border-right,3px solid #150f33);
+  border-right:3px solid #150f33;
 }
 .rail-head{padding:20px 16px 12px}
-.logo{display:flex;align-items:center;gap:9px;color:var(--light-rail-logo-color,var(--on-fill));font-weight:700;font-size:19px}
+.logo{display:flex;align-items:center;gap:9px;color:#fff;font-weight:900;letter-spacing:-.03em;font-size:19px}
 /* THE MARK IS THE MEDALLION — `Design\Images\Icons\Herophilus 3.png`, the user's choice
    on 2026-07-28, cut to a transparent circle in assets\icon-96.png.
 
@@ -279,37 +257,37 @@ input{font-family:inherit;font-size:inherit}
 .logo .blip{
   width:32px;height:32px;border-radius:50%;overflow:hidden;
   display:flex;align-items:center;justify-content:center;flex-shrink:0;
-  box-shadow:var(--light-rail-logo-blip-shadow,0 0 0 1px rgba(217,180,74,.4),0 4px 12px rgba(0,0,0,.45));
+  box-shadow:0 0 0 1px rgba(217,180,74,.4),0 4px 12px rgba(0,0,0,.45);
 }
 .blip img,.gmark img{width:100%;height:100%;display:block;border-radius:50%}
-.rail-sub{font-size:10.5px;color:var(--rail-dim);margin-top:4px;text-transform:none;font-weight:700}
+.rail-sub{font-size:10.5px;color:var(--rail-dim);margin-top:4px;letter-spacing:.09em;text-transform:uppercase;font-weight:700}
 
 .streak{
-  margin:8px 12px 4px;padding:10px 12px;border-radius:var(--r-1);
-  background:var(--light-streak-background,linear-gradient(135deg,rgba(255,201,74,.16),rgba(255,90,95,.13)));
+  margin:8px 12px 4px;padding:10px 12px;border-radius:var(--r-3);
+  background:linear-gradient(135deg,rgba(255,201,74,.16),rgba(255,90,95,.13));
   border:1.5px solid rgba(255,201,74,.3);display:flex;align-items:center;gap:9px;
 }
 .streak .fl{font-size:17px}
-.streak .n{color:var(--light-streak-n-color,#ffd977);font-weight:700;font-size:16px;line-height:1}
+.streak .n{color:#ffd977;font-weight:900;font-size:16px;line-height:1}
 .streak .t{font-size:10.5px;color:var(--rail-dim);line-height:1.25;font-weight:600}
 
 .nav{padding:6px 10px 20px;flex:1}
-.nav-label{font-size:9.5px;text-transform:none;color:var(--rail-dim);padding:15px 8px 6px;font-weight:700}
+.nav-label{font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--rail-dim);padding:15px 8px 6px;font-weight:800}
 .nav-item{
   display:flex;align-items:center;gap:10px;width:100%;text-align:left;
-  padding:9px 11px;border-radius:var(--r-1);color:var(--rail-text);font-size:13.5px;font-weight:600;
+  padding:9px 11px;border-radius:var(--r-3);color:var(--rail-text);font-size:13.5px;font-weight:600;
   transition:transform .13s ease,background .13s,color .13s;
 }
-.nav-item:hover{background:var(--rail-2);color:var(--light-nav-item-hover-color,var(--on-fill));transform:translateX(3px)}
-.nav-item.on{background:var(--rail-3);color:var(--light-nav-item-hover-color,var(--on-fill));font-weight:700;box-shadow:inset 3px 0 0 var(--gold);}
+.nav-item:hover{background:var(--rail-2);color:#fff;transform:translateX(3px)}
+.nav-item.on{background:var(--rail-3);color:#fff;font-weight:800;box-shadow:inset 3px 0 0 var(--gold)}
 .nav-item .ic{width:19px;text-align:center;flex-shrink:0;font-size:15px}
 .nav-item .cnt{margin-left:auto;font-size:11px;color:var(--rail-dim);font-variant-numeric:tabular-nums;font-weight:700}
 .nav-item.on .cnt{color:var(--rail-text)}
 .badge-due{
-  margin-left:auto;background:var(--fill);color:var(--on-fill);font-size:10.5px;font-weight:700;
-  padding:2px 7px;border-radius:var(--r-1);min-width:20px;text-align:center;
-  
-box-shadow:0 0 0 3px rgba(255,90,95,.2);}
+  margin-left:auto;background:var(--ent);color:#fff;font-size:10.5px;font-weight:900;
+  padding:2px 7px;border-radius:var(--r-pill);min-width:20px;text-align:center;
+  box-shadow:0 0 0 3px rgba(255,90,95,.2);
+}
 
 .main{flex:1;min-width:0;display:flex;flex-direction:column}
 .topbar{
@@ -319,21 +297,21 @@ box-shadow:0 0 0 3px rgba(255,90,95,.2);}
 }
 .search-wrap{position:relative;flex:1;max-width:440px}
 .search{
-  width:100%;padding:9px 13px 9px 35px;border:2px solid var(--line-2);border-radius:var(--r-1);
-  background:var(--card);font-size:13.5px;color:var(--tx);font-weight:600;transition:border-color .14s;
+  width:100%;padding:9px 13px 9px 35px;border:2px solid var(--line-2);border-radius:var(--r-3);
+  background:var(--card);font-size:13.5px;color:var(--tx);font-weight:600;transition:box-shadow .14s,border-color .14s;
 }
-.search:focus{border-color:var(--line-2);outline:none;box-shadow:var(--pop) rgba(125,88,144,.35);}
+.search:focus{border-color:var(--neuro);box-shadow:var(--pop) rgba(125,88,144,.35);outline:none}
 .search::placeholder{color:var(--ink-4);font-weight:500}
 .keyin{
-  width:100%;padding:9px 13px;border:2px solid var(--line-2);border-radius:var(--r-1);
-  background:var(--card);font-size:13.5px;color:var(--tx);font-weight:600;transition:border-color .14s;
+  width:100%;padding:9px 13px;border:2px solid var(--line-2);border-radius:var(--r-3);
+  background:var(--card);font-size:13.5px;color:var(--tx);font-weight:600;transition:box-shadow .14s,border-color .14s;
 }
-.keyin:focus{border-color:var(--line-2);outline:none;box-shadow:var(--pop) rgba(125,88,144,.35);}
+.keyin:focus{border-color:var(--neuro);box-shadow:var(--pop) rgba(125,88,144,.35);outline:none}
 .keyin::placeholder{color:var(--ink-4);font-weight:500}
 .search-ic{position:absolute;left:12px;top:50%;transform:translateY(-50%);font-size:14px;pointer-events:none}
 .results{
-  position:absolute;top:calc(100% + 7px);left:0;right:0;background:var(--light-results-background,var(--card));
-  border:2px solid var(--line-2);border-radius:var(--r-1);box-shadow:var(--pop-lg) var(--sh);
+  position:absolute;top:calc(100% + 7px);left:0;right:0;background:var(--card);
+  border:2px solid var(--line-2);border-radius:var(--r-3);box-shadow:var(--pop-lg) var(--sh);
   max-height:380px;overflow-y:auto;z-index:40;display:none;
 }
 .results.show{display:block}
@@ -343,9 +321,9 @@ box-shadow:0 0 0 3px rgba(255,90,95,.2);}
 /* A button inside a listbox needs a focus ring the cursor cannot miss — the
    results list lives at the top of the screen, the items are dense, and the
    ring is the only signal that the next Enter is going somewhere real. */
-.res-item:focus{outline:none;background:var(--bg-2);box-shadow:inset 3px 0 0 var(--neuro);}
+.res-item:focus{outline:none;background:var(--bg-2);box-shadow:inset 3px 0 0 var(--neuro)}
 .res-item.res-more{font-weight:700;color:var(--ink-3)}
-.res-tag{display:block;font-size:9.5px;text-transform:none;font-weight:700;margin-bottom:3px}
+.res-tag{display:block;font-size:9.5px;text-transform:uppercase;letter-spacing:.08em;font-weight:900;margin-bottom:3px}
 .res-txt{display:block;color:var(--ink-2);line-height:1.45}
 .res-empty{padding:16px 14px;color:var(--ink-4);font-size:13px}
 
@@ -357,9 +335,8 @@ box-shadow:0 0 0 3px rgba(255,90,95,.2);}
    cannot press anything the dialog lists; it is the only control here that is
    not merely cramped but meaningless. That returns 48px to the search. */
 @media(max-width:520px){ .kbd-btn{display:none} }
-.tb-btn{padding:7px 12px;border-radius:var(--r-1);font-size:12.5px;color:var(--ink-3);font-weight:700;transition:background .13s,transform .13s}
+.tb-btn{padding:7px 12px;border-radius:var(--r-2);font-size:12.5px;color:var(--ink-3);font-weight:700;transition:background .13s,transform .13s}
 .tb-btn:hover{background:var(--bg-2);color:var(--tx);transform:translateY(-1px)}
-.tb-btn:active{transform:translateY(1px)}
 /* Touch. The nav rows are 36px tall and the topbar buttons 33-36px, both under
    the 44px minimum. The nav is a vertical list, so it can simply grow. The
    topbar cannot: four 44px buttons would push a sticky bar to ~70px and take
@@ -384,13 +361,12 @@ box-shadow:0 0 0 3px rgba(255,90,95,.2);}
    notice lines up with the heading underneath it rather than overhanging it. */
 #saveWarning, #dataWarning{
   max-width:1124px;width:calc(100% - 56px);margin:22px auto -6px;padding:16px 18px;
-  border:1px solid var(--bad);border-radius:var(--r-1);background:var(--bad-bg);
+  border:1px solid var(--bad);border-radius:var(--r-3);background:var(--bad-bg);
   display:flex;align-items:center;gap:16px;flex-wrap:wrap;
 }
 #saveWarning p, #dataWarning p{margin:0;flex:1;min-width:260px;font-size:14px;line-height:1.55;color:var(--tx)}
 #saveWarning strong, #dataWarning strong{color:var(--bad)}
 #saveWarning .btn, #dataWarning .btn{flex:none}
-#saveWarning .warnico, #dataWarning .warnico{flex:none;font-size:19px;font-weight:900;color:var(--bad)}
 .page{padding:28px;max-width:1180px;width:100%;margin:0 auto;flex:1}
 /* The dashboard is narrower than every other view, and deliberately so. Module
    cards are capped at two per row so the artwork is worth showing, which puts
@@ -406,14 +382,15 @@ box-shadow:0 0 0 3px rgba(255,90,95,.2);}
 @media screen{body[data-view="home"] #saveWarning, body[data-view="home"] #dataWarning{max-width:880px}}
 
 /* ---------- Type ---------- */
-/* The heading hierarchy is size and weight in the body serif. */
-h1{font-family:var(--font-display);font-size:29px;font-weight:700;
-   margin:0 0 5px;line-height:1.18;text-transform:none}
-h2{font-size:18px;font-weight:700;letter-spacing:-.02em;margin:0 0 13px}
+/* Display type is carved, not set: Roman capitals, letter-spaced OUT rather than
+   in. The old -.035em tracking is wrong for capitals — it jams them together. */
+h1{font-family:var(--font-display);font-size:29px;font-weight:700;letter-spacing:.02em;
+   margin:0 0 5px;line-height:1.18;text-transform:uppercase}
+h2{font-size:18px;font-weight:800;letter-spacing:-.02em;margin:0 0 13px}
 .page-sub{color:var(--ink-3);font-size:14px;margin:0 0 26px;font-weight:500;max-width:640px;line-height:1.55}
 .eyebrow{
-  display:inline-block;font-size:10px;text-transform:none;font-weight:700;
-  padding:4px 11px;border-radius:var(--r-1);background:var(--fill);color:var(--on-fill);margin-bottom:11px;
+  display:inline-block;font-size:10px;letter-spacing:.13em;text-transform:uppercase;font-weight:900;
+  padding:4px 11px;border-radius:var(--r-pill);background:var(--fill);color:#fff;margin-bottom:11px;
 }
 
 /* ---------- Cards ---------- */
@@ -422,23 +399,23 @@ h2{font-size:18px;font-weight:700;letter-spacing:-.02em;margin:0 0 13px}
 .g4{grid-template-columns:repeat(auto-fit,minmax(158px,1fr))}
 .card{
   background:var(--card);border:1px solid var(--line-2);border-radius:var(--r);
-  padding:17px;text-align:left;width:100%;
-  transition:transform .15s ease;
-box-shadow:var(--pop) rgba(0,0,0,.16);}
-button.card:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:var(--pop-lg) var(--c,rgba(0,0,0,.3));}
-button.card:active:not(:disabled){transform:translate(1px,1px);box-shadow:0 2px 7px rgba(0,0,0,.2);}
+  padding:17px;text-align:left;width:100%;box-shadow:var(--pop) rgba(0,0,0,.16);
+  transition:transform .15s ease,box-shadow .15s;
+}
+button.card:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:var(--pop-lg) var(--c,rgba(0,0,0,.3))}
+button.card:active:not(:disabled){transform:translate(1px,1px);box-shadow:0 2px 7px rgba(0,0,0,.2)}
 
 .mod-card{position:relative;overflow:hidden}
 .mod-card::after{
   content:"";position:absolute;right:-24px;top:-24px;width:74px;height:74px;border-radius:50%;
-  background:var(--fill);opacity:.11;
+  background:var(--c);opacity:.11;
 }
 .mod-top{display:flex;align-items:center;gap:10px;margin-bottom:6px}
 .mod-ic{
-  width:36px;height:36px;border-radius:var(--r-1);background:var(--fill);display:flex;align-items:center;
-  justify-content:center;font-size:18px;flex-shrink:0;
-box-shadow:0 5px 14px rgba(0,0,0,.2);}
-.mod-name{font-weight:700;font-size:17.5px;}
+  width:36px;height:36px;border-radius:var(--r-3);background:var(--c);display:flex;align-items:center;
+  justify-content:center;font-size:18px;flex-shrink:0;box-shadow:0 5px 14px rgba(0,0,0,.2);
+}
+.mod-name{font-weight:700;font-size:17.5px;letter-spacing:.045em}
 .mod-meta{font-size:12px;color:var(--ink-3);margin-bottom:13px;font-weight:600}
 
 .ringrow{display:flex;align-items:center;gap:13px}
@@ -446,7 +423,7 @@ box-shadow:0 5px 14px rgba(0,0,0,.2);}
 .ring svg{transform:rotate(-90deg)}
 .ring .rv{
   position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
-  font-size:12.5px;font-weight:700;font-variant-numeric:tabular-nums;
+  font-size:12.5px;font-weight:900;font-variant-numeric:tabular-nums;
 }
 .ringmeta{flex:1;min-width:0}
 .ringmeta .a{font-size:15px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1}
@@ -458,41 +435,40 @@ box-shadow:0 5px 14px rgba(0,0,0,.2);}
    says that is chosen by measurement rather than habit. */
 .mod-card .startrow{min-height:52px}
 .mod-card .startgo{
-  font-family:var(--font-display);font-size:13.5px;font-weight:600;
-  text-transform:none;color:var(--tx);
+  font-family:var(--font-display);font-size:13.5px;font-weight:600;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--tx);
 }
 
 .stat{
   background:var(--card);border:1px solid var(--line-2);border-radius:var(--r);padding:15px;
-  position:relative;overflow:hidden;
-box-shadow:var(--pop) rgba(0,0,0,.16);}
-.stat .n{font-size:31px;font-weight:700;letter-spacing:-.04em;font-variant-numeric:tabular-nums;line-height:1.05}
+  box-shadow:var(--pop) rgba(0,0,0,.16);position:relative;overflow:hidden;
+}
+.stat .n{font-size:31px;font-weight:900;letter-spacing:-.04em;font-variant-numeric:tabular-nums;line-height:1.05}
 .stat .l{font-size:11.5px;color:var(--ink-3);margin-top:3px;font-weight:700}
 .stat .emo{position:absolute;right:11px;top:10px;font-size:19px;opacity:.3}
 
 /* ---------- Chapter rows ---------- */
 .grouphdr{
   display:flex;align-items:center;gap:10px;margin:24px 0 11px;
-  font-size:10.5px;text-transform:none;font-weight:700;color:var(--ink-3);
+  font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;font-weight:900;color:var(--ink-3);
 }
 .grouphdr::after{content:"";flex:1;height:2.5px;background:var(--line);border-radius:var(--r-1)}
 .ch-row{
   display:flex;align-items:center;gap:13px;padding:12px 15px;background:var(--card);
-  border:1px solid var(--line-2);border-radius:var(--r-1);margin-bottom:9px;width:100%;text-align:left;
-
-  transition:transform .13s ease,background-color .15s ease,border-color .15s ease;
-box-shadow:0 5px 14px rgba(0,0,0,.13);}
-.ch-row:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:0 10px 24px rgba(0,0,0,.2);}
-.ch-row:active:not(:disabled){transform:translate(1px,1px);}
-.ch-row:disabled{opacity:.45;cursor:default;border-style:dashed;box-shadow:none;}
+  border:1px solid var(--line-2);border-radius:var(--r-3);margin-bottom:9px;width:100%;text-align:left;
+  box-shadow:0 5px 14px rgba(0,0,0,.13);
+  transition:transform .13s ease,box-shadow .13s;
+}
+.ch-row:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:0 10px 24px rgba(0,0,0,.2)}
+.ch-row:disabled{opacity:.45;cursor:default;box-shadow:none;border-style:dashed}
 .ch-dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;border:2px solid var(--line-2)}
 .ch-name{flex:1;font-size:14px;font-weight:700}
 .ch-count{font-size:11.5px;color:var(--ink-4);font-variant-numeric:tabular-nums;font-weight:700}
-.ch-acc{font-size:12px;font-weight:700;font-variant-numeric:tabular-nums;min-width:40px;text-align:right}
+.ch-acc{font-size:12px;font-weight:900;font-variant-numeric:tabular-nums;min-width:40px;text-align:right}
 /* On the weakest-chapters page the rows come from four different modules, so
    each name has to say which one it belongs to. */
 .wk-mod{display:block;font-size:11px;font-weight:700;color:var(--ink-4);
-  text-transform:none;margin-top:2px}
+  letter-spacing:.05em;text-transform:uppercase;margin-top:2px}
 
 /* ---------- Question ---------- */
 .qwrap{max-width:830px;margin:0 auto}
@@ -502,16 +478,16 @@ box-shadow:0 5px 14px rgba(0,0,0,.13);}
    because a proportional 1 is narrower than a 0 and the whole clock jitters
    sideways once a second otherwise. */
 .exam-clock{
-  font-variant-numeric:tabular-nums;font-weight:700;font-size:15px;
-  padding:6px 12px;border-radius:var(--r-1);border:2px solid var(--line-2);background:var(--fill);
+  font-variant-numeric:tabular-nums;font-weight:900;font-size:15px;letter-spacing:.02em;
+  padding:6px 12px;border-radius:var(--r-3);border:2px solid var(--line-2);background:var(--fill);
   color:var(--tx);white-space:nowrap;
 }
 .exam-clock.low{color:var(--warn);border-color:var(--warn)}
 .exam-clock.out{color:var(--bad);border-color:var(--bad)}
 .pill{
-  font-size:10px;font-weight:700;text-transform:none;padding:4px 11px;
-  border-radius:var(--r-1);color:var(--on-fill);border:2px solid var(--line-2);
-box-shadow:0 5px 14px rgba(0,0,0,.18);}
+  font-size:10px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;padding:4px 11px;
+  border-radius:var(--r-pill);color:#fff;border:2px solid var(--line-2);box-shadow:0 5px 14px rgba(0,0,0,.18);
+}
 /* The source citation reuses .pill, but it is a SENTENCE, not a label — often a
    long one with a page number and a transcription note. Uppercase at 10px suits
    "ENDPOINT"; it turns a citation into a wall, and EB Garamond's capitals are
@@ -519,24 +495,24 @@ box-shadow:0 5px 14px rgba(0,0,0,.18);}
    and allowed to wrap. */
 .pill.ghost{
   background:var(--bg-2);color:var(--ink-3);
-  text-transform:none;font-size:11.5px;font-weight:600;
-  line-height:1.5;text-align:left;white-space:normal;border-radius:var(--r-1);padding:5px 11px;
+  text-transform:none;font-size:11.5px;font-weight:600;letter-spacing:.005em;
+  line-height:1.5;text-align:left;white-space:normal;border-radius:var(--r-pill);padding:5px 11px;
 }
 .qprog{
-  margin-left:auto;font-size:12px;color:var(--ink-2);font-variant-numeric:tabular-nums;font-weight:700;
-  background:var(--card);padding:4px 11px;border-radius:var(--r-1);border:2px solid var(--line-2);
+  margin-left:auto;font-size:12px;color:var(--ink-2);font-variant-numeric:tabular-nums;font-weight:800;
+  background:var(--card);padding:4px 11px;border-radius:var(--r-pill);border:2px solid var(--line-2);
 }
 
-.qcard{background:var(--card);border:3px solid var(--line-2);border-radius:var(--r);padding:27px 29px;box-shadow:0 15px 35px rgba(0,0,0,.15);}
+.qcard{background:var(--card);border:3px solid var(--line-2);border-radius:var(--r);padding:27px 29px;box-shadow:0 15px 35px rgba(0,0,0,.15)}
 .stem{
   font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
   font-size:16.5px;line-height:1.64;color:var(--tx);margin-bottom:21px;
 }
 .stem p{margin:0 0 12px}
 .stem p:last-child{margin-bottom:0}
-.stem table{border-collapse:separate;border-spacing:0;width:100%;margin:13px 0;font-size:13px;font-family:var(--font-body);font-variant-numeric:tabular-nums;border:2px solid var(--line-2);border-radius:var(--r-1);overflow:hidden}
+.stem table{border-collapse:separate;border-spacing:0;width:100%;margin:13px 0;font-size:13px;font-family:var(--font-body);font-variant-numeric:tabular-nums;border:2px solid var(--line-2);border-radius:var(--r-2);overflow:hidden}
 .stem th,.stem td{border-bottom:1.5px solid var(--line);padding:7px 10px;text-align:left}
-.stem th{background:var(--bg-2);font-weight:700}
+.stem th{background:var(--bg-2);font-weight:800}
 .stem tr:last-child td{border-bottom:none}
 
 /* The clinical photograph some questions cannot be answered without. It sits
@@ -545,126 +521,109 @@ box-shadow:0 5px 14px rgba(0,0,0,.18);}
    Capped rather than stretched: the crops top out around 560px and enlarging
    past their own resolution only makes a scan look worse. */
 .qfig{margin:0 0 21px;display:flex;flex-direction:column;align-items:flex-start;gap:7px}
-.qfig img{max-width:min(100%,430px);height:auto;display:block;border-radius:var(--r-1);
-  border:2px solid var(--line-2);background:var(--on-fill);cursor:zoom-in;box-shadow:0 8px 22px var(--sh-soft);}
+.qfig img{max-width:min(100%,430px);height:auto;display:block;border-radius:var(--r-3);
+  border:2px solid var(--line-2);background:#fff;box-shadow:0 8px 22px var(--sh-soft);cursor:zoom-in}
 /* A failed figure takes the image's place in the flow rather than sitting over
    it, so the box it needs is sized on the message itself. Reserving that height
    on every figure instead would pad the two dozen crops that render shorter
    than the reserve — the shortest is 112px against a message that needs 150. */
 .qfig-media{width:100%;max-width:430px}
 .qfig-failure:not([hidden]){display:flex;align-items:center;justify-content:center;
-  min-height:150px;margin:0;padding:18px;border:2px solid var(--line-2);border-radius:var(--r-1);
+  min-height:150px;margin:0;padding:18px;border:2px solid var(--line-2);border-radius:var(--r-3);
   background:var(--bg);color:var(--tx);font-size:14px;line-height:1.55}
 .qzoom .qfig-failure:not([hidden]){max-width:430px}
-.qfig figcaption{font-size:11.5px;color:var(--ink-2)}
+.qfig figcaption{font-size:11.5px;letter-spacing:.03em;color:var(--ink-2)}
 /* Full-size look. The crops carry fine detail — a speck of debris, a leader
    line — that a 430px column cannot show. */
 .qzoom{position:fixed;inset:0;z-index:300;display:flex;align-items:center;justify-content:center;
   padding:24px;background:rgba(3,7,14,.86);cursor:zoom-out}
-.qzoom img{max-width:100%;max-height:100%;border-radius:var(--r-1);background:var(--on-fill);box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.qzoom img{max-width:100%;max-height:100%;border-radius:var(--r-2);background:#fff;box-shadow:0 20px 60px rgba(0,0,0,.5)}
 
 .opts{display:flex;flex-direction:column;gap:9px}
 .opt{
   display:flex;gap:13px;align-items:flex-start;padding:13px 16px;
-  border:1px solid var(--line-2);border-radius:var(--r-1);background:var(--card);
+  border:1px solid var(--line-2);border-radius:var(--r-3);background:var(--card);
   text-align:left;width:100%;line-height:1.5;font-weight:600;
-  transition:transform .12s ease,border-color .12s;
+  transition:transform .12s ease,border-color .12s,box-shadow .12s;
 }
-.opt:hover:not(:disabled){border-color:var(--line-2);transform:translateX(4px);box-shadow:0 7px 20px rgba(0,0,0,.12);}
-/* Hover slides the row four pixels out; a press has to travel back toward the
-   page, not past it. Landing at one pixel gives the same three-pixel movement
-   the buttons use, so pressing an option feels like pressing anything else. */
-.opt:active:not(:disabled){transform:translateX(1px);}
+.opt:hover:not(:disabled){border-color:var(--line-2);transform:translateX(4px);box-shadow:0 7px 20px rgba(0,0,0,.12)}
 .opt:disabled{cursor:default}
 .opt .ltr{
-  width:26px;height:26px;border-radius:var(--r-1);border:2.5px solid var(--line-2);
-  display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;
+  width:26px;height:26px;border-radius:var(--r-2);border:2.5px solid var(--line-2);
+  display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;
   flex-shrink:0;color:var(--ink-3);margin-top:1px;transition:all .12s;
 }
-.opt.sel{border-color:var(--line-2);background:var(--tint);transform:translateX(4px);box-shadow:0 7px 20px rgba(109,76,125,.28);}
-.opt.sel .ltr{background:var(--fill);border-color:var(--line-2);color:var(--on-fill)}
-/* The verdict is a fresh render, not a class flip on a live element — render()
-   rebuilds the whole .opts block, so a `transition` on background/border-color
-   never has a prior frame to animate FROM. An `animation` plays on mount
-   instead; the empty `to{}` keyframe takes its end state from the rule it is
-   attached to, so correct and wrong each arrive at their own colour without a
-   second keyframe list. Same idea for the mark and the letter chip — a small
-   scale-and-fade so the tick/cross reads as landing, not appearing, with the
-   same restraint on wrong as on correct: no shake, no punishment shape. */
-@keyframes optLand{from{background-color:var(--card);border-color:var(--line-2)}}
-@keyframes markLand{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
-.opt.correct{border-color:var(--line-2);background:var(--bg-2);animation:optLand .18s ease-out;box-shadow:0 7px 20px rgba(0,168,107,.25);}
-.opt.correct .ltr{background:var(--fill);border-color:var(--ok);color:var(--on-fill);animation:markLand .16s ease-out .04s both;}
-.opt.wrong{border-color:var(--bad);background:var(--bad-bg);animation:optLand .18s ease-out;box-shadow:0 7px 20px rgba(255,71,87,.25);}
-.opt.wrong .ltr{background:var(--bad);border-color:var(--bad);color:var(--on-fill);animation:markLand .16s ease-out .04s both;}
-.opt .mark{margin-left:auto;font-weight:700;font-size:19px;flex-shrink:0;line-height:1;animation:markLand .16s ease-out .04s both;}
+.opt.sel{border-color:var(--neuro);background:rgba(109,76,125,.15);transform:translateX(4px);box-shadow:0 7px 20px rgba(109,76,125,.28)}
+.opt.sel .ltr{background:var(--neuro);border-color:var(--neuro);color:#fff}
+.opt.correct{border-color:var(--ok);background:var(--ok-bg);box-shadow:0 7px 20px rgba(0,168,107,.25)}
+.opt.correct .ltr{background:var(--ok);border-color:var(--ok);color:#fff}
+.opt.wrong{border-color:var(--bad);background:var(--bad-bg);box-shadow:0 7px 20px rgba(255,71,87,.25)}
+.opt.wrong .ltr{background:var(--bad);border-color:var(--bad);color:#fff}
+.opt .mark{margin-left:auto;font-weight:900;font-size:19px;flex-shrink:0;line-height:1}
 .opt.correct .mark{color:var(--ok)}
 .opt.wrong .mark{color:var(--bad)}
 
 .qactions{display:flex;gap:10px;margin-top:22px;align-items:center;flex-wrap:wrap}
 .btn{
-  padding:11px 20px;border-radius:var(--r-1);font-size:13.5px;font-weight:700;
-  background:var(--fill);color:var(--on-fill);border:1px solid var(--line-2);
-  transition:transform .13s ease;
-box-shadow:var(--pop) var(--sh-soft);}
-.btn:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:var(--pop-lg) rgba(0,0,0,.35);}
-.btn:active:not(:disabled){transform:translate(1px,1px);box-shadow:0 2px 7px rgba(0,0,0,.3);}
-.btn:disabled{opacity:.32;cursor:default;box-shadow:none;}
+  padding:11px 20px;border-radius:var(--r-3);font-size:13.5px;font-weight:800;
+  background:var(--fill);color:#fff;border:1px solid var(--line-2);box-shadow:var(--pop) var(--sh-soft);
+  transition:transform .13s ease,box-shadow .13s;
+}
+.btn:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:var(--pop-lg) rgba(0,0,0,.35)}
+.btn:active:not(:disabled){transform:translate(1px,1px);box-shadow:0 2px 7px rgba(0,0,0,.3)}
+.btn:disabled{opacity:.32;cursor:default;box-shadow:none}
 .btn.sec{background:var(--card);color:var(--tx)}
-.btn.go{background:var(--fill);border-color:var(--line-2)}
+.btn.go{background:var(--neuro);border-color:var(--line-2)}
 .btn.flag.on{background:var(--gold);color:var(--tx)}
-/* a destructive button was marked by a red border only — a glyph says it too */
-.btn[style*="--bad"]::before{content:"! ";font-weight:900}
 
 @keyframes pop{0%{transform:scale(.86)}60%{transform:scale(1.04)}100%{transform:scale(1)}}
 .verdict{
-  margin-top:21px;padding:15px 18px;border-radius:var(--r-1);font-weight:700;font-size:15px;
+  margin-top:21px;padding:15px 18px;border-radius:var(--r-3);font-weight:900;font-size:15px;
   display:flex;align-items:center;gap:11px;border:1px solid var(--line-2);animation:pop .32s cubic-bezier(.34,1.56,.64,1);
 }
-.verdict.ok{background:var(--ok-bg);color:var(--tx);box-shadow:var(--pop) rgba(0,168,107,.3);}
-.verdict.bad{background:var(--bad-bg);color:var(--bad);box-shadow:var(--pop) rgba(255,71,87,.3);}
-.verdict.part{background:var(--gold-bg);color:var(--warn);box-shadow:var(--pop) rgba(255,201,74,.45);}
+.verdict.ok{background:var(--ok-bg);color:#5fe0a8;box-shadow:var(--pop) rgba(0,168,107,.3)}
+.verdict.bad{background:var(--bad-bg);color:#ff9aa2;box-shadow:var(--pop) rgba(255,71,87,.3)}
+.verdict.part{background:var(--gold-bg);color:#ffd27a;box-shadow:var(--pop) rgba(255,201,74,.45)}
 .verdict .big{font-size:22px}
 
 /* ---- free-text case questions ---- */
-.caseask{margin-top:19px;font-weight:700;font-size:14px;color:var(--ink-2)}
+.caseask{margin-top:19px;font-weight:900;font-size:14px;color:var(--ink-2)}
 .caseinput{
   width:100%;margin-top:9px;padding:13px 15px;font:inherit;font-size:15px;line-height:1.5;
-  border:1px solid var(--line-2);border-radius:var(--r-1);background:var(--card);color:var(--tx);
-  resize:vertical;
-  transition:transform .18s ease;
-box-shadow:var(--pop) rgba(0,0,0,.12);}
-.caseinput:focus{border-color:var(--line-2);outline:none;transform:translate(-1px,-1px);box-shadow:0 12px 28px rgba(0,0,0,.18);}
+  border:1px solid var(--line-2);border-radius:var(--r-3);background:var(--card);color:var(--tx);
+  box-shadow:var(--pop) rgba(0,0,0,.12);resize:vertical;
+  transition:box-shadow .18s ease,transform .18s ease;
+}
+.caseinput:focus{outline:none;transform:translate(-1px,-1px);box-shadow:0 12px 28px rgba(0,0,0,.18)}
 .caseinput:disabled{opacity:.75;cursor:default}
 .caseinput::placeholder{color:var(--ink-2);opacity:.6}
 .modelans{
-  margin-top:15px;padding:14px 17px;border:1px solid var(--line-2);border-radius:var(--r-1);
-  background:var(--bg-2);
-box-shadow:var(--pop) rgba(0,168,107,.25);}
-.modelans>b{display:block;font-size:11.5px;text-transform:none;color:var(--ink-2);margin-bottom:5px}
-.modelans>div{font-weight:700;font-size:15px}
-.keys{margin-top:14px;padding:13px 16px;border:2.5px dashed var(--line-2);border-radius:var(--r-1)}
-.keys-h{font-size:11.5px;text-transform:none;color:var(--ink-2);font-weight:700;margin-bottom:9px}
+  margin-top:15px;padding:14px 17px;border:1px solid var(--line-2);border-radius:var(--r-3);
+  background:var(--ok-bg);box-shadow:var(--pop) rgba(0,168,107,.25);
+}
+.modelans>b{display:block;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);margin-bottom:5px}
+.modelans>div{font-weight:800;font-size:15px}
+.keys{margin-top:14px;padding:13px 16px;border:2.5px dashed var(--line-2);border-radius:var(--r-3)}
+.keys-h{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);font-weight:800;margin-bottom:9px}
 .key{display:flex;align-items:center;gap:9px;padding:4px 0;font-size:14px;font-weight:700}
-.key.hit>span:first-child{color:var(--ok);font-weight:700}
+.key.hit>span:first-child{color:var(--ok);font-weight:900}
 .key.miss{opacity:.55}
 .lastgo{
   display:inline-flex;align-items:center;gap:7px;margin-top:9px;
-  padding:5px 12px;border:2px dashed var(--line-2);border-radius:var(--r-1);
-  font-size:12px;font-weight:700;color:var(--ink-2);opacity:.85}
+  padding:5px 12px;border:2px dashed var(--line-2);border-radius:var(--r-pill);
+  font-size:12px;font-weight:800;color:var(--ink-2);opacity:.85}
 
-.conf{margin-top:17px;padding:15px 17px;background:var(--gold-bg);border:1px solid var(--line-2);border-radius:var(--r-1);box-shadow:var(--pop) rgba(255,201,74,.4);}
+.conf{margin-top:17px;padding:15px 17px;background:var(--gold-bg);border:1px solid var(--line-2);border-radius:var(--r-3);box-shadow:var(--pop) rgba(255,201,74,.4)}
 .conf-q{font-size:13px;color:var(--ink-2);margin-bottom:11px;font-weight:700}
 .conf-btns{display:flex;gap:8px;flex-wrap:wrap}
 .conf-b{
-  padding:8px 15px;border:1px solid var(--line-2);border-radius:var(--r-1);font-size:12.5px;
-  background:var(--card);font-weight:700;transition:transform .12s ease;
+  padding:8px 15px;border:1px solid var(--line-2);border-radius:var(--r-pill);font-size:12.5px;
+  background:var(--card);font-weight:800;transition:transform .12s ease,box-shadow .12s;
 }
-.conf-b:hover{transform:translateY(-2px);box-shadow:0 7px 18px rgba(2,6,14,.25);}
-.conf-b:active{transform:translateY(1px);}
-.conf-b.on{background:var(--fill);color:var(--on-fill)}
+.conf-b:hover{transform:translateY(-2px);box-shadow:0 7px 18px rgba(2,6,14,.25)}
+.conf-b.on{background:var(--fill);color:#fff}
 
-.explain{margin-top:18px;border:1px solid var(--line-2);border-radius:var(--r-1);overflow:hidden;box-shadow:var(--pop) rgba(0,0,0,.14);}
+.explain{margin-top:18px;border:1px solid var(--line-2);border-radius:var(--r-3);overflow:hidden;box-shadow:var(--pop) rgba(0,0,0,.14)}
 
 /* Two quiet routes out of a question: a note the student writes to themselves,
    and the one way to tell us the question itself is wrong. Both sit under the
@@ -677,12 +636,12 @@ box-shadow:var(--pop) rgba(0,168,107,.25);}
 .qfoot .lnk:hover{color:var(--tx);border-bottom-color:var(--tx)}
 .qfoot .lnk.has{color:var(--gold);border-bottom-color:var(--gold)}
 .qnote{margin-top:13px}
-.qnote .lb{display:block;font-size:11.5px;font-weight:700;
-  text-transform:none;color:var(--ink-2);margin-bottom:7px}
+.qnote .lb{display:block;font-size:11.5px;font-weight:800;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--ink-2);margin-bottom:7px}
 .qnote .say{font-size:12px;color:var(--ink-2);margin-top:7px;min-height:16px}
 .ex-head{
   display:flex;align-items:center;gap:10px;padding:13px 17px;background:var(--bg-2);
-  width:100%;text-align:left;font-weight:700;font-size:13.5px;transition:background .13s;
+  width:100%;text-align:left;font-weight:900;font-size:13.5px;transition:background .13s;
 }
 .ex-head:hover{background:rgba(255,255,255,.07)}
 .ex-head .chev{margin-left:auto;transition:transform .22s ease}
@@ -691,13 +650,13 @@ box-shadow:var(--pop) rgba(0,168,107,.25);}
 .ex-body.open{display:block;animation:pop .24s ease}
 .ex-body p{margin:0 0 13px}
 .ex-body p:last-child{margin-bottom:0}
-.ex-body strong{color:var(--tx);font-weight:700}
+.ex-body strong{color:var(--tx);font-weight:800}
 .ex-body em{color:var(--ink-3)}
 .objective{
-  margin-top:17px;padding:14px 17px;background:var(--card);
-  border:2.5px solid var(--line-2);border-radius:var(--r-1);font-size:13.8px;line-height:1.6;
-background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));}
-.objective b{display:block;font-size:10px;text-transform:none;color:var(--tx);margin-bottom:5px;font-weight:700}
+  margin-top:17px;padding:14px 17px;background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));
+  border:2.5px solid var(--neuro);border-radius:var(--r-3);font-size:13.8px;line-height:1.6;
+}
+.objective b{display:block;font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--neuro);margin-bottom:5px;font-weight:900}
 .noexp{padding:17px 21px;color:var(--ink-4);font-size:13.5px;font-style:italic}
 
 /* ---------- Schedule ---------- */
@@ -706,39 +665,38 @@ background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));}
 .leg .sw{width:13px;height:13px;border-radius:var(--r-1);border:2px solid var(--line-2)}
 .day{
   display:flex;gap:14px;align-items:center;padding:13px 15px;background:var(--card);
-  border:1px solid var(--line-2);border-radius:var(--r-1);margin-bottom:9px;
-  transition:transform .13s;
-box-shadow:0 5px 14px rgba(0,0,0,.13);}
-.day:hover{transform:translate(-1px,-1px);box-shadow:0 10px 24px rgba(0,0,0,.18);}
-.day:active{transform:translate(1px,1px);}
+  border:1px solid var(--line-2);border-radius:var(--r-3);margin-bottom:9px;
+  box-shadow:0 5px 14px rgba(0,0,0,.13);transition:transform .13s,box-shadow .13s;
+}
+.day:hover{transform:translate(-1px,-1px);box-shadow:0 10px 24px rgba(0,0,0,.18)}
 .day.rest{background:var(--bg-2);opacity:.72;border-style:dashed}
 .day.missed{background:var(--bad-bg);border-color:var(--bad)}
-.day.done{background:var(--bg-2);border-color:var(--line-2)}
-.day.today{border-color:var(--line-2);box-shadow:0 10px 24px rgba(125,88,144,.4);}
+.day.done{background:var(--ok-bg);border-color:var(--ok)}
+.day.today{border-color:var(--neuro);box-shadow:0 10px 24px rgba(125,88,144,.4)}
 .day-date{width:74px;flex-shrink:0}
-.day-d{font-weight:700;font-size:14px;font-variant-numeric:tabular-nums;}
-.day-w{font-size:10.5px;color:var(--ink-4);font-weight:700;text-transform:none;}
+.day-d{font-weight:900;font-size:14px;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.day-w{font-size:10.5px;color:var(--ink-4);font-weight:700;text-transform:uppercase;letter-spacing:.05em}
 .day-body{flex:1;min-width:0}
 .day-line{font-size:13.2px;margin-bottom:4px;line-height:1.45;font-weight:600}
 .day-line:last-child{margin-bottom:0}
 .day-line.faded{opacity:.45;text-decoration:line-through}
 .tag{
-  display:inline-block;font-size:9.5px;font-weight:700;text-transform:none;
-  padding:3px 10px;border-radius:var(--r-1);color:var(--on-fill);margin-right:10px;vertical-align:1.5px;
-  border:1.5px solid var(--line-2);white-space:nowrap;
-box-shadow:0 3px 10px rgba(0,0,0,.22);}
-.movednote{font-size:11px;color:var(--tx);font-weight:700;margin-top:4px}
+  display:inline-block;font-size:9.5px;font-weight:900;letter-spacing:.07em;text-transform:uppercase;
+  padding:3px 10px;border-radius:var(--r-pill);color:#fff;margin-right:10px;vertical-align:1.5px;
+  border:1.5px solid var(--line-2);white-space:nowrap;box-shadow:0 3px 10px rgba(0,0,0,.22);
+}
+.movednote{font-size:11px;color:var(--neuro);font-weight:800;margin-top:4px}
 .day-marks{display:flex;gap:7px;flex-shrink:0}
 .mk{
-  width:38px;height:38px;border-radius:var(--r-1);border:1px solid var(--line-2);background:var(--card);
+  width:38px;height:38px;border-radius:var(--r-3);border:1px solid var(--line-2);background:var(--card);
   display:flex;align-items:center;justify-content:center;font-size:15px;
-  transition:transform .13s ease,background .13s;
-  
-box-shadow:0 5px 14px rgba(0,0,0,.16);}
-.mk:hover{transform:translate(-1px,-1px);box-shadow:0 7px 18px rgba(0,0,0,.25);}
-.mk:active{transform:translate(1px,1px);box-shadow:0 2px 7px rgba(0,0,0,.2);}
-.mk.done.on{background:var(--ok);color:var(--on-fill)}
-.mk.miss.on{background:var(--bad);color:var(--on-fill)}
+  transition:transform .13s ease,box-shadow .13s,background .13s;
+  box-shadow:0 5px 14px rgba(0,0,0,.16);
+}
+.mk:hover{transform:translate(-1px,-1px);box-shadow:0 7px 18px rgba(0,0,0,.25)}
+.mk:active{transform:translate(1px,1px);box-shadow:0 2px 7px rgba(0,0,0,.2)}
+.mk.done.on{background:var(--ok);color:#fff}
+.mk.miss.on{background:var(--bad);color:#fff}
 .mk .lbl{position:absolute;opacity:0;pointer-events:none}
 /* Touch. These are 38px, under the 44px minimum, and the two of them sit 7px
    apart while meaning opposite things — the schedule renders 119 rows, so 238
@@ -748,7 +706,7 @@ box-shadow:0 5px 14px rgba(0,0,0,.16);}
    this is keyed on the pointer as well as on the width, not on width alone. */
 @media(max-width:700px),(hover:none){
   .day-marks{gap:10px}
-  .mk{width:44px;height:44px;border-radius:var(--r-1);font-size:17px}
+  .mk{width:44px;height:44px;border-radius:var(--r-3);font-size:17px}
 }
 
 
@@ -760,37 +718,41 @@ box-shadow:0 5px 14px rgba(0,0,0,.16);}
 .track-body{flex:1;min-width:0;font-size:13.4px;font-weight:600;line-height:1.55}
 .track.is-done .track-body{opacity:.6}
 .track.is-missed .track-body{opacity:.55;text-decoration:line-through}
-.track.catchup{background:var(--tint);border-radius:var(--r-1);padding:8px 11px;margin-top:5px;border:1.5px dashed var(--line-2)}
+.track.catchup{background:rgba(109,76,125,.12);border-radius:var(--r-2);padding:8px 11px;margin-top:5px;border:1.5px dashed var(--neuro)}
 .day{align-items:stretch}
 .day-body{display:flex;flex-direction:column;justify-content:center}
 
 
 /* ---------- Highlighter ---------- */
-mark.hl{background:var(--hl-y);padding:1.5px 1px;border-radius:var(--r-1);color:inherit;
+mark.hl{background:transparent;padding:1.5px 1px;border-radius:var(--r-1);color:inherit;
   box-decoration-break:clone;-webkit-box-decoration-break:clone}
-/* Shared paper-wash tokens keep the picker and saved annotation ids in step. */
-mark.hl[data-c="y"],.pen.y{background:var(--hl-y);}
-mark.hl[data-c="g"],.pen.g{background:var(--hl-g);}
-mark.hl[data-c="p"],.pen.p{background:var(--hl-p);}
-mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
+/* On the old white paper these were solid pastels with dark text. On the dark
+   ground a solid pastel would need dark text inside light-on-dark prose, which
+   reads badly mid-sentence — so the highlight is now a translucent wash of the
+   same hue and the text stays light. Colour still identifies the pen. */
+mark.hl[data-c="y"]{background:rgba(255,220,90,.30);box-shadow:inset 0 -1px 0 rgba(255,220,90,.55)}
+mark.hl[data-c="g"]{background:rgba(110,240,160,.28);box-shadow:inset 0 -1px 0 rgba(110,240,160,.5)}
+mark.hl[data-c="p"]{background:rgba(255,150,200,.28);box-shadow:inset 0 -1px 0 rgba(255,150,200,.5)}
+mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 rgba(120,190,255,.5)}
 
 .mkbar{
   display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-bottom:15px;
-  padding:9px 12px;background:var(--bg-2);border:2px dashed var(--line-2);border-radius:var(--r-1);
+  padding:9px 12px;background:var(--bg-2);border:2px dashed var(--line-2);border-radius:var(--r-3);
 }
-.mkbar .lb{font-size:10.5px;font-weight:700;text-transform:none;color:var(--ink-3);margin-right:2px}
+.mkbar .lb{font-size:10.5px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin-right:2px}
 .pen{
-  width:29px;height:29px;border-radius:var(--r-1);border:2.5px solid var(--line-2);
-  transition:transform .13s ease;
+  width:29px;height:29px;border-radius:var(--r-2);border:2.5px solid var(--line-2);
+  box-shadow:0 5px 14px rgba(0,0,0,.18);transition:transform .13s ease,box-shadow .13s;
   position:relative;
-box-shadow:0 5px 14px rgba(0,0,0,.18);}
-.pen:hover{transform:translate(-1px,-1px);box-shadow:0 7px 18px rgba(0,0,0,.26);}
-.pen.on{transform:translateY(-3px);box-shadow:0 9px 22px rgba(0,0,0,.3);}
-.pen.on::after{content:"";position:absolute;inset:-6px;border:2.5px solid var(--line-2);border-radius:var(--r-1)}
+}
+.pen:hover{transform:translate(-1px,-1px);box-shadow:0 7px 18px rgba(0,0,0,.26)}
+.pen.on{transform:translateY(-3px);box-shadow:0 9px 22px rgba(0,0,0,.3)}
+.pen.on::after{content:"";position:absolute;inset:-6px;border:2.5px solid var(--line-2);border-radius:var(--r-3)}
+.pen.y{background:#ffe97a}.pen.g{background:#a8f0bd}.pen.p{background:#ffc2dc}.pen.b{background:#a9d6ff}
 .pen.er{background:var(--card);font-size:14px;display:flex;align-items:center;justify-content:center}
 .mkbar .hint{font-size:11.5px;color:var(--ink-4);font-weight:600;margin-left:auto}
 .mkbar .clr{
-  font-size:11.5px;font-weight:700;color:var(--ink-3);padding:5px 11px;border-radius:var(--r-1);
+  font-size:11.5px;font-weight:800;color:var(--ink-3);padding:5px 11px;border-radius:var(--r-pill);
   border:2px solid var(--line-2);background:var(--card);
 }
 .mkbar .clr:hover{border-color:var(--line-2);color:var(--tx)}
@@ -802,10 +764,10 @@ box-shadow:0 5px 14px rgba(0,0,0,.18);}
 .modal.wide{max-width:660px}
 .jumprow{display:flex;gap:9px;margin-bottom:16px;flex-wrap:wrap;align-items:center}
 .jumpin{
-  width:112px;padding:9px 13px;border:1px solid var(--line-2);border-radius:var(--r-1);
-  font-size:14px;font-weight:700;background:var(--card);color:var(--tx);
-  
-box-shadow:0 5px 14px rgba(0,0,0,.15);}
+  width:112px;padding:9px 13px;border:1px solid var(--line-2);border-radius:var(--r-3);
+  font-size:14px;font-weight:800;background:var(--card);color:var(--tx);
+  box-shadow:0 5px 14px rgba(0,0,0,.15);
+}
 .jumpin::-webkit-outer-spin-button,.jumpin::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
 .jumpin{-moz-appearance:textfield}
 .jumpkey{display:flex;gap:13px;flex-wrap:wrap;font-size:11.5px;color:var(--ink-3);font-weight:700;margin-bottom:13px}
@@ -816,67 +778,66 @@ box-shadow:0 5px 14px rgba(0,0,0,.15);}
   max-height:42vh;overflow-y:auto;padding:5px 3px;
 }
 .qg{
-  aspect-ratio:1;border-radius:var(--r-1);border:1px solid var(--line-2);font-weight:700;font-size:12.5px;
+  aspect-ratio:1;border-radius:var(--r-2);border:1px solid var(--line-2);font-weight:900;font-size:12.5px;
   background:var(--card);display:flex;align-items:center;justify-content:center;position:relative;
-  
-  transition:transform .12s ease;
-box-shadow:0 5px 14px rgba(0,0,0,.15);}
-.qg:hover{transform:translate(-2px,-2px);box-shadow:0 10px 24px rgba(0,0,0,.24);}
-.qg.ok{background:var(--ok-bg);color:var(--tx);border-color:var(--ok)}
-.qg.bad{background:var(--bad-bg);color:var(--bad);border-color:var(--bad)}
-/* colour alone told ok from bad; a corner glyph says it too, so the grid
-   still reads with the two states' hues collapsed */
-.qg.ok::before{content:"\2713";position:absolute;left:2px;bottom:0;font-size:9px;line-height:1;color:var(--ok)}
-.qg.bad::before{content:"\00d7";position:absolute;left:2px;bottom:0;font-size:10px;line-height:1;color:var(--bad)}
+  box-shadow:0 5px 14px rgba(0,0,0,.15);
+  transition:transform .12s ease,box-shadow .12s;
+}
+.qg:hover{transform:translate(-2px,-2px);box-shadow:0 10px 24px rgba(0,0,0,.24)}
+.qg.ok{background:var(--ok-bg);color:#5fe0a8;border-color:var(--ok)}
+.qg.bad{background:var(--bad-bg);color:#ff9aa2;border-color:var(--bad)}
 /* During a paper the grid may say only whether a question has been answered.
    Right and wrong are the marks, and the marks come out at hand-in. */
 .qg.done{background:var(--fill);border-color:var(--tx);color:var(--tx)}
-.qg.cur{background:var(--fill);color:var(--on-fill);transform:translate(-2px,-2px);box-shadow:0 10px 24px rgba(0,0,0,.3);}
+.qg.cur{background:var(--neuro);color:#fff;transform:translate(-2px,-2px);box-shadow:0 10px 24px rgba(0,0,0,.3)}
 .qg.flagged::after{
   content:"";position:absolute;top:-5px;right:-5px;width:11px;height:11px;
   background:var(--gold);border:2px solid var(--line-2);border-radius:50%;
 }
-.qprog{border:2px solid var(--line-2);cursor:pointer;transition:transform .12s}
-.qprog:hover{transform:translate(-1px,-1px);box-shadow:0 5px 14px rgba(0,0,0,.22);}
+.qprog{border:2px solid var(--line-2);cursor:pointer;transition:transform .12s,box-shadow .12s}
+.qprog:hover{transform:translate(-1px,-1px);box-shadow:0 5px 14px rgba(0,0,0,.22)}
 
 
 
 /* ---------- Schedule editor ---------- */
 .edbar{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin-bottom:18px}
-.day.editing{border-style:dashed;border-color:var(--line-2);background:var(--tint)}
+.day.editing{border-style:dashed;border-color:var(--neuro);background:rgba(109,76,125,.10)}
 .ed-item{display:flex;gap:8px;align-items:center;padding:7px 0;flex-wrap:wrap}
 .ed-lab,.ed-txt{
-  padding:7px 11px;border:2px solid var(--line-2);border-radius:var(--r-1);font-size:12.8px;
+  padding:7px 11px;border:2px solid var(--line-2);border-radius:var(--r-2);font-size:12.8px;
   background:var(--card);color:var(--tx);font-weight:600;font-family:inherit;
 }
 .ed-lab{width:132px;flex-shrink:0}
 .ed-txt{flex:1;min-width:150px}
-.ed-lab:focus,.ed-txt:focus{border-color:var(--line-2);outline:none}
-.ed-col{width:30px;height:30px;border-radius:var(--r-1);border:2.5px solid var(--line-2);flex-shrink:0;cursor:pointer;transition:transform .13s ease}
-.ed-col:hover{transform:scale(1.08);}
-.ed-col:active{transform:scale(0.96);}
+.ed-lab:focus,.ed-txt:focus{border-color:var(--neuro);outline:none}
+.ed-col{width:30px;height:30px;border-radius:var(--r-2);border:2.5px solid var(--line-2);flex-shrink:0;cursor:pointer}
 .ed-x{
-  width:29px;height:29px;border-radius:var(--r-1);border:2px solid var(--bad);color:var(--bad);
-  background:var(--card);font-weight:700;flex-shrink:0;font-size:13px;
+  width:29px;height:29px;border-radius:var(--r-2);border:2px solid var(--bad);color:var(--bad);
+  background:var(--card);font-weight:900;flex-shrink:0;font-size:13px;
 }
 .ed-x:hover{background:var(--bad-bg)}
 .ed-add{
-  font-size:11.5px;font-weight:700;color:var(--tx);padding:6px 12px;border-radius:var(--r-1);
-  border:2px dashed var(--line-2);background:transparent;margin-top:5px;
+  font-size:11.5px;font-weight:800;color:var(--neuro);padding:6px 12px;border-radius:var(--r-pill);
+  border:2px dashed var(--neuro);background:transparent;margin-top:5px;
 }
-.ed-add:hover{background:var(--tint)}
+.ed-add:hover{background:rgba(109,76,125,.17)}
 .ed-day-tools{display:flex;gap:7px;flex-shrink:0;flex-wrap:wrap}
 .ed-t{
-  font-size:11px;font-weight:700;padding:5px 10px;border-radius:var(--r-1);border:2px solid var(--line-2);
+  font-size:11px;font-weight:800;padding:5px 10px;border-radius:var(--r-2);border:2px solid var(--line-2);
   background:var(--card);color:var(--ink-3);
 }
 .ed-t:hover{border-color:var(--line-2);color:var(--tx)}
 .ed-t.danger{border-color:var(--bad);color:var(--bad)}
-.ed-t.on{background:var(--fill);color:var(--on-fill);border-color:var(--line-2)}
+.ed-t.on{background:var(--fill);color:#fff;border-color:var(--line-2)}
 .newday{display:flex;gap:9px;align-items:center;flex-wrap:wrap;padding:14px;margin-top:10px;
-  border:2.5px dashed var(--line-2);border-radius:var(--r-1);background:var(--card)}
-.newday input[type=date]{padding:8px 11px;border:2px solid var(--line-2);border-radius:var(--r-1);
+  border:2.5px dashed var(--line-2);border-radius:var(--r-3);background:var(--card)}
+.newday input[type=date]{padding:8px 11px;border:2px solid var(--line-2);border-radius:var(--r-2);
   font-family:inherit;font-size:13px;font-weight:600;background:var(--card);color:var(--tx)}
+.palette{display:flex;gap:6px;flex-wrap:wrap}
+.pal{width:24px;height:24px;border-radius:var(--r-2);border:2.5px solid var(--line-2);cursor:pointer}
+.pal.on{transform:translateY(-3px)}
+
+
 /* ---------- Profile gate ----------
    TWO STEPS: sign in, then choose or create a profile. showGate() renders one
    at a time and re-writes innerHTML to move between them, which is also what
@@ -897,18 +858,18 @@ box-shadow:0 5px 14px rgba(0,0,0,.15);}
 /* .5 before the film went in behind them. Same lesson as the page's orbs: two
    ambient systems at full strength cancel, and an 80px blur at half opacity
    simply fogs the room away. */
-.gate-amb .gorb{position:absolute;border-radius:50%;filter:blur(80px);opacity:var(--light-gate-amb-gorb-opacity,.34);will-change:transform}
+.gate-amb .gorb{position:absolute;border-radius:50%;filter:blur(80px);opacity:.34;will-change:transform}
 /* one orb per module, in the module's own colour — the four colours of the app
    are the first thing you see */
 .gate-amb .g1{width:44vw;height:44vw;left:-10vw;top:-16vh;background:radial-gradient(circle,var(--neuro),transparent 68%);animation:gd1 26s ease-in-out infinite}
 .gate-amb .g2{width:38vw;height:38vw;right:-8vw;top:-6vh;background:radial-gradient(circle,var(--ent),transparent 68%);animation:gd2 31s ease-in-out infinite}
 .gate-amb .g3{width:40vw;height:40vw;left:14vw;bottom:-22vh;background:radial-gradient(circle,var(--peds),transparent 70%);animation:gd3 37s ease-in-out infinite}
-.gate-amb .g4{width:26vw;height:26vw;right:12vw;bottom:-14vh;background:radial-gradient(circle,var(--ophtho),transparent 72%);opacity:var(--light-gate-amb-g4-opacity,.34);animation:gd1 43s ease-in-out infinite reverse}
+.gate-amb .g4{width:26vw;height:26vw;right:12vw;bottom:-14vh;background:radial-gradient(circle,var(--ophtho),transparent 72%);opacity:.34;animation:gd1 43s ease-in-out infinite reverse}
 @keyframes gd1{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(7vw,6vh,0) scale(1.14)}}
 @keyframes gd2{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(-8vw,8vh,0) scale(1.1)}}
 @keyframes gd3{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(6vw,-7vh,0) scale(1.16)}}
-:root[data-theme="light"] .gate-amb .gorb{--light-gate-amb-gorb-opacity:.26}
-:root[data-theme="light"] .gate-amb .g4{--light-gate-amb-g4-opacity:.18}
+:root[data-theme="light"] .gate-amb .gorb{opacity:.26}
+:root[data-theme="light"] .gate-amb .g4{opacity:.18}
 
 /* THE GATE IS THE ONE PLACE TEXT SITS DIRECTLY ON THE FILM.
    Everywhere else in the app the type is on an opaque card, which is why the
@@ -919,11 +880,11 @@ box-shadow:0 5px 14px rgba(0,0,0,.15);}
    column while leaving the lamp and the edges of the room fully visible. */
 .gate-amb .film-scrim::after{
   content:'';position:absolute;inset:0;
-  background:var(--light-gate-amb-film-scrim-after-background,radial-gradient(46% 42% at 50% 52%,
-    rgba(7,13,22,.88) 0%, rgba(7,13,22,.72) 45%, transparent 78%));
+  background:radial-gradient(46% 42% at 50% 52%,
+    rgba(7,13,22,.88) 0%, rgba(7,13,22,.72) 45%, transparent 78%);
 }
 :root[data-theme="light"] .gate-amb .film-scrim::after{
-  --light-gate-amb-film-scrim-after-background:radial-gradient(46% 42% at 50% 52%,
+  background:radial-gradient(46% 42% at 50% 52%,
     rgba(247,244,236,.92) 0%, rgba(247,244,236,.78) 45%, transparent 78%);
 }
 
@@ -932,12 +893,12 @@ box-shadow:0 5px 14px rgba(0,0,0,.15);}
    soft against. */
 .gate::before{
   content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
-  background-image:none;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),
+                   linear-gradient(90deg,var(--line) 1px,transparent 1px);
   background-size:64px 64px;
-  -webkit-mask-image:none;
-          mask-image:none;
-background-image:linear-gradient(var(--line) 1px,transparent 1px),
-                   linear-gradient(90deg,var(--line) 1px,transparent 1px);-webkit-mask-image:radial-gradient(ellipse 78% 62% at 50% 44%,#000 18%,transparent 76%);mask-image:radial-gradient(ellipse 78% 62% at 50% 44%,#000 18%,transparent 76%);}
+  -webkit-mask-image:radial-gradient(ellipse 78% 62% at 50% 44%,#000 18%,transparent 76%);
+          mask-image:radial-gradient(ellipse 78% 62% at 50% 44%,#000 18%,transparent 76%);
+}
 
 .gstep{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;width:100%;max-width:780px}
 .gate-theme{position:absolute;top:16px;right:16px;z-index:3;font-size:15px}
@@ -970,24 +931,24 @@ background-image:linear-gradient(var(--line) 1px,transparent 1px),
    tracking is positive because Cinzel is tracked out everywhere else it is
    used, and a titling face set tight is the tell that nobody chose it. */
 .gtitle{
-  font-size:clamp(28px,6vw,36px);font-weight:700;margin:0 0 10px;
+  font-size:clamp(28px,6vw,36px);font-weight:900;letter-spacing:.02em;margin:0 0 10px;
   color:var(--tx);
   animation:gRise .62s cubic-bezier(.22,1,.36,1) var(--d,0ms) backwards;
 }
 .gtag{font-size:14.5px;color:var(--ink-3);font-weight:600;margin:0 0 30px;text-align:center;max-width:430px;line-height:1.6}
 .glink{
-  margin-top:18px;font-size:13px;font-weight:700;color:var(--ink-3);
-  padding:9px 17px;border-radius:var(--r-1);transition:color .15s,background .15s;
+  margin-top:18px;font-size:13px;font-weight:800;color:var(--ink-3);
+  padding:9px 17px;border-radius:var(--r-pill);transition:color .15s,background .15s;
 }
 .glink:hover{color:var(--tx);background:var(--tint-2)}
 .gnote{font-size:11.8px;color:var(--ink-4);font-weight:600;max-width:400px;text-align:center;line-height:1.65;margin:26px 0 0}
-.gnote.warn{color:var(--warn);border:2px solid var(--warn);border-radius:var(--r-1);padding:12px 15px}
+.gnote.warn{color:var(--warn);border:2px solid var(--warn);border-radius:var(--r-3);padding:12px 15px}
 .gwho{
-  display:inline-flex;align-items:center;gap:8px;padding:7px 15px;border-radius:var(--r-1);
+  display:inline-flex;align-items:center;gap:8px;padding:7px 15px;border-radius:var(--r-pill);
   background:var(--ok-bg);color:var(--ok);border:1px solid var(--ok);
-  font-size:12.5px;font-weight:700;margin-bottom:22px;
+  font-size:12.5px;font-weight:800;margin-bottom:22px;
 }
-.gate .glogo{display:flex;align-items:center;gap:11px;font-weight:700;font-size:24px;margin-bottom:6px}
+.gate .glogo{display:flex;align-items:center;gap:11px;font-weight:900;font-size:24px;letter-spacing:-.03em;margin-bottom:6px}
 .gate .glogo .blip,.splash .glogo .blip{
   width:38px;height:38px;border-radius:50%;overflow:hidden;
   display:flex;align-items:center;justify-content:center;
@@ -1004,23 +965,18 @@ background-image:linear-gradient(var(--line) 1px,transparent 1px),
 .pav{
   width:96px;height:96px;border-radius:var(--r);border:3px solid var(--line-2);
   display:flex;align-items:center;justify-content:center;font-size:44px;overflow:hidden;
-  position:relative;--fr-t:9px;
-box-shadow:0 12px 28px rgba(0,0,0,.2);}
-.pcard:hover .pav{box-shadow:0 17px 40px rgba(0,0,0,.28);}
+  box-shadow:0 12px 28px rgba(0,0,0,.2);position:relative;--fr-t:9px;
+}
+.pcard:hover .pav{box-shadow:0 17px 40px rgba(0,0,0,.28)}
 .pav img{width:100%;height:100%;object-fit:cover;display:block}
 .pav .lock{
   position:absolute;right:-6px;bottom:-6px;width:28px;height:28px;border-radius:50%;
-  background:var(--gold);color:var(--on-accent);border:2.5px solid var(--line-2);display:flex;
-  align-items:center;justify-content:center;font-size:12px;
-  /* Colour pass, 2026-09-07: this badge had no color of its own and was
-     inheriting --tx, which read 7.06:1 on the old bright gold but 2.35:1 on
-     the new light-mode bronze — the PIN dots (••••) were nearly invisible.
-     The Google-id "G" badge sets its own inline background+color and is
-     unaffected. */
+  background:var(--gold);border:2.5px solid var(--line-2);display:flex;align-items:center;
+  justify-content:center;font-size:12px;
 }
-.pname{font-weight:700;font-size:14.5px;text-align:center;line-height:1.3;word-break:break-word}
-.pcard.add .pav{border-style:dashed;background:var(--card);font-size:38px;color:var(--ink-4);box-shadow:none;}
-.pcard.add:hover .pav{border-color:var(--line-2);color:var(--tx)}
+.pname{font-weight:800;font-size:14.5px;text-align:center;line-height:1.3;word-break:break-word}
+.pcard.add .pav{border-style:dashed;background:var(--card);font-size:38px;color:var(--ink-4);box-shadow:none}
+.pcard.add:hover .pav{border-color:var(--neuro);color:var(--neuro)}
 .gate .gfoot{margin-top:34px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
 .gate .goffline{margin:20px auto 0;max-width:460px;text-align:center;font-size:12.5px;line-height:1.6;color:var(--ink-4)}
 
@@ -1032,17 +988,17 @@ box-shadow:0 12px 28px rgba(0,0,0,.2);}
    this is the app's existing vocabulary rather than a third one. */
 .tpick{display:flex;flex-direction:column;gap:18px;align-items:center;width:100%}
 .tlab{
-  font-size:11px;font-weight:700;text-transform:none;
+  font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
   color:var(--ink-4);margin:0 0 9px;text-align:center;
 }
 .trow{display:flex;gap:9px;flex-wrap:wrap;justify-content:center}
 .tchip{
-  padding:9px 17px;border:1px solid var(--line-2);border-radius:var(--r-1);
-  background:var(--card);color:var(--tx);font-size:13px;font-weight:700;
-  transition:transform .13s ease,background .13s,color .13s;
+  padding:9px 17px;border:1px solid var(--line-2);border-radius:var(--r-pill);
+  background:var(--card);color:var(--tx);font-size:13px;font-weight:800;
+  transition:transform .13s ease,box-shadow .13s,background .13s,color .13s;
 }
-.tchip:hover:not(.on){transform:translateY(-2px);box-shadow:0 8px 20px var(--sh-soft);}
-.tchip.on{background:var(--fill);color:var(--on-fill);box-shadow:0 9px 24px rgba(0,0,0,.35),var(--glow);}
+.tchip:hover:not(.on){transform:translateY(-2px);box-shadow:0 8px 20px var(--sh-soft)}
+.tchip.on{background:var(--fill);color:#fff;box-shadow:0 9px 24px rgba(0,0,0,.35),var(--glow)}
 /* The status line is what the old copy's "some semesters have no published
    content yet" was trying to say, except it says it about the semester the
    student is actually looking at, at the moment they select it. A student who
@@ -1060,57 +1016,57 @@ box-shadow:0 12px 28px rgba(0,0,0,.2);}
    the size. */
 .emgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:16px}
 .emb{
-  aspect-ratio:1;border-radius:var(--r-1);border:2.5px solid var(--line-2);background:var(--card);
+  aspect-ratio:1;border-radius:var(--r-3);border:2.5px solid var(--line-2);background:var(--card);
   font-size:22px;display:flex;align-items:center;justify-content:center;overflow:hidden;
   transition:transform .12s ease;
 }
 .emb:hover{transform:translateY(-2px);border-color:var(--line-2)}
 .emb.on{border-color:var(--line-2);background:var(--fill);transform:translateY(-2px)}
 .colrow{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
-.colb{width:34px;height:34px;border-radius:var(--r-1);border:2.5px solid var(--line-2);
+.colb{width:34px;height:34px;border-radius:var(--r-2);border:2.5px solid var(--line-2);
   transition:transform .12s ease}
 .colb:hover{transform:translateY(-2px)}
-.colb.on{transform:translateY(-4px);box-shadow:0 9px 22px rgba(2,6,14,.3);}
+.colb.on{transform:translateY(-4px);box-shadow:0 9px 22px rgba(2,6,14,.3)}
 .avprev{
   width:88px;height:88px;border-radius:var(--r);border:3px solid var(--line-2);margin:0 auto 16px;
   display:flex;align-items:center;justify-content:center;font-size:40px;overflow:hidden;
-  --fr-t:8px;
-box-shadow:0 10px 24px rgba(0,0,0,.2);}
+  box-shadow:0 10px 24px rgba(0,0,0,.2);--fr-t:8px;
+}
 .avprev img{width:100%;height:100%;object-fit:cover}
 /* A portrait fills its box at whatever size the box is, so one rule covers a
    96px gate card, an 88px editor preview, a 90px picker tile and a 32px rail
    chip. Unscoped on purpose: manageProfiles() renders a .rav outside .railprof
    and it must size the same there. */
-.pav,.avprev,.rav{color:var(--on-fill)}
+.pav,.avprev,.rav{color:#fff}
 .emb{color:var(--tx)}
-.emb.on{color:var(--on-fill)}
+.emb.on{color:#fff}
 .pav img,.avprev img,.rav img,.emb img,.frtile img{width:100%;height:100%;object-fit:cover;display:block}
-.emb img{border-radius:calc(var(--r-1) - var(--r-1))}
+.emb img{border-radius:calc(var(--r-3) - 2px)}
 .pav .gi,.avprev .gi,.rav .gi{width:58%;height:58%;stroke-width:1.4}
 .emb .gi{width:56%;height:56%;stroke-width:1.5}
 .pinbox{
   display:flex;gap:9px;justify-content:center;margin:14px 0;
 }
 .pind{
-  width:52px;height:60px;border:2.5px solid var(--line-2);border-radius:var(--r-1);text-align:center;
-  font-size:24px;font-weight:700;background:var(--card);color:var(--tx);
-  
-box-shadow:0 5px 14px rgba(0,0,0,.18);}
-.pind:focus{border-color:var(--line-2);outline:none;box-shadow:0 7px 18px rgba(125,88,144,.4);}
-.pinerr{color:var(--bad);font-weight:700;font-size:13px;text-align:center;margin-top:4px;min-height:18px}
+  width:52px;height:60px;border:2.5px solid var(--line-2);border-radius:var(--r-3);text-align:center;
+  font-size:24px;font-weight:900;background:var(--card);color:var(--tx);
+  box-shadow:0 5px 14px rgba(0,0,0,.18);
+}
+.pind:focus{border-color:var(--neuro);outline:none;box-shadow:0 7px 18px rgba(125,88,144,.4)}
+.pinerr{color:var(--bad);font-weight:800;font-size:13px;text-align:center;margin-top:4px;min-height:18px}
 
 .railprof{
-  display:flex;align-items:center;gap:10px;margin:4px 12px 8px;padding:9px 11px;border-radius:var(--r-1);
+  display:flex;align-items:center;gap:10px;margin:4px 12px 8px;padding:9px 11px;border-radius:var(--r-3);
   background:var(--rail-2);width:calc(100% - 24px);text-align:left;
   transition:background .13s;
 }
 .railprof:hover{background:var(--rail-3)}
 .railprof .rav{
-  width:32px;height:32px;border-radius:var(--r-1);display:flex;align-items:center;justify-content:center;
+  width:32px;height:32px;border-radius:var(--r-2);display:flex;align-items:center;justify-content:center;
   font-size:17px;flex-shrink:0;overflow:hidden;border:2px solid rgba(255,255,255,.22);--fr-t:3px;
 }
 .railprof .rav img{width:100%;height:100%;object-fit:cover}
-.railprof .rn{font-size:13px;font-weight:700;color:var(--light-nav-item-hover-color,var(--on-fill));line-height:1.2;flex:1;min-width:0;
+.railprof .rn{font-size:13px;font-weight:800;color:#fff;line-height:1.2;flex:1;min-width:0;
   overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .railprof .rs{font-size:10px;color:var(--rail-dim);font-weight:700}
 
@@ -1212,42 +1168,42 @@ box-shadow:0 5px 14px rgba(0,0,0,.18);}
 /* ---------- Cloud sync ---------- */
 .gsign{
   position:relative;overflow:hidden;
-  display:flex;align-items:center;gap:11px;padding:14px 24px;border-radius:var(--r-1);
-  background:var(--on-fill);border:var(--light-gsign-border,1px solid rgba(255,255,255,.5));font-weight:700;font-size:14.5px;color:#1f2430;
-  transition:transform .14s ease;
-box-shadow:0 10px 24px rgba(0,0,0,.2);}
-.gsign:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(0,0,0,.3);}
+  display:flex;align-items:center;gap:11px;padding:14px 24px;border-radius:var(--r-3);
+  background:#fff;border:1px solid rgba(255,255,255,.5);font-weight:800;font-size:14.5px;color:#1f2430;
+  box-shadow:0 10px 24px rgba(0,0,0,.2);transition:transform .14s ease,box-shadow .14s;
+}
+.gsign:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(0,0,0,.3)}
 .gsign:active{transform:translateY(-1px)}
 /* a slow sheen crossing the button every few seconds. The button is white, so
    the sweep has to be a shadow rather than a light or it is invisible. */
 .gsign::after{
   content:"";position:absolute;top:0;left:-60%;width:42%;height:100%;pointer-events:none;
-  background:var(--card);
+  background:linear-gradient(100deg,transparent,rgba(60,90,140,.16),transparent);
   transform:skewX(-18deg);animation:sweep 5s ease-in-out 1.8s infinite;
-background:linear-gradient(100deg,transparent,rgba(212,180,120,.16),transparent);}
+}
 @keyframes sweep{0%{left:-60%}24%{left:135%}100%{left:135%}}
 /* the primary action when running from a file, where Google sign-in cannot work */
-.gbig{font-size:15px;padding:15px 30px;border-radius:var(--r-1)}
+.gbig{font-size:15px;padding:15px 30px;border-radius:var(--r-3)}
 /* the cloud button in its unavailable state: shown, so the option is visible,
    but plainly inert — no pointer, no hover, no sheen */
-.gsign.off{margin-top:18px;opacity:.42;cursor:not-allowed;box-shadow:none;}
+.gsign.off{margin-top:18px;opacity:.42;cursor:not-allowed;box-shadow:none}
 .gsign.off::after{animation:none;display:none}
-.gsign.off:hover{transform:none;box-shadow:none;}
+.gsign.off:hover{transform:none;box-shadow:none}
 .gsign svg{width:19px;height:19px;flex-shrink:0}
-.gate .gor{margin:22px 0 4px;font-size:12px;font-weight:700;color:var(--ink-4);text-transform:none}
+.gate .gor{margin:22px 0 4px;font-size:12px;font-weight:800;color:var(--ink-4);letter-spacing:.08em;text-transform:uppercase}
 .syncdot{
   display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;flex-shrink:0;
   background:var(--ink-4);vertical-align:1px;
 }
 .syncdot.ok{background:#4ade80}
 .syncdot.busy{background:var(--gold);animation:blink 1s infinite}
-.syncdot.err{background:var(--fill)}
+.syncdot.err{background:var(--ent)}
 .railsync{
-  margin:0 12px 6px;padding:7px 11px;border-radius:var(--r-1);background:var(--light-railsync-background,rgba(255,255,255,.05));
-  font-size:10.5px;font-weight:700;color:var(--light-railsync-color,#b3a9dd);display:flex;align-items:center;
+  margin:0 12px 6px;padding:7px 11px;border-radius:var(--r-2);background:rgba(255,255,255,.05);
+  font-size:10.5px;font-weight:700;color:#b3a9dd;display:flex;align-items:center;
 }
 .cfgbox{
-  width:100%;min-height:150px;padding:12px 14px;border:1px solid var(--line-2);border-radius:var(--r-1);
+  width:100%;min-height:150px;padding:12px 14px;border:1px solid var(--line-2);border-radius:var(--r-3);
   font-family:ui-monospace,Menlo,monospace;font-size:11.5px;background:var(--card);color:var(--tx);
   line-height:1.55;resize:vertical;
 }
@@ -1265,17 +1221,17 @@ background:linear-gradient(100deg,transparent,rgba(212,180,120,.16),transparent)
 .splash .msg{font-size:13.5px;color:var(--ink-3);font-weight:700}
 @keyframes spin{to{transform:rotate(360deg)}}
 .spinner{
-  width:34px;height:34px;border:3.5px solid var(--line-2);border-top-color:var(--line-2);
+  width:34px;height:34px;border:3.5px solid var(--line-2);border-top-color:var(--neuro);
   border-radius:50%;animation:spin .8s linear infinite;
 }
 
 
 /* ---------- Theory (document view) ---------- */
 .th-intro{
-  background:var(--card);border:2.5px solid var(--line-2);
-  border-radius:var(--r-1);padding:16px 20px;font-size:14px;line-height:1.68;margin-bottom:22px;
-  
-background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));box-shadow:var(--pop) rgba(109,76,125,.22);}
+  background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));border:2.5px solid var(--neuro);
+  border-radius:var(--r-3);padding:16px 20px;font-size:14px;line-height:1.68;margin-bottom:22px;
+  box-shadow:var(--pop) rgba(109,76,125,.22);
+}
 /* ⚠️ "In this lecture" IS GONE FROM THE SCREEN TOO (user, 2026-08-19: "I don't
    need the in this lecture part I thought we changed this formula long ago").
    It was removed from PRINT on 2026-08-13 and the screen kept it — which is
@@ -1286,7 +1242,7 @@ background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));box-
 
 /* a section is now a chapter of a document, always open */
 .th-sec{
-  margin-bottom:34px;padding-left:20px;border-left:5px solid var(--line-2);
+  margin-bottom:34px;padding-left:20px;border-left:5px solid var(--c,var(--neuro));
   scroll-margin-top:80px;
 }
 
@@ -1387,7 +1343,7 @@ background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));box-
 .bk-foot{
   padding-top:9px;text-align:center;
   font-family:'EB Garamond',Georgia,serif;
-  font-size:11.5px;font-weight:700;
+  font-size:11.5px;font-weight:700;letter-spacing:.06em;
   color:var(--ink-4);font-variant-numeric:tabular-nums;
 }
 /* A narrower measure needs its indents back — the section rule was set for an
@@ -1413,8 +1369,8 @@ background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));box-
 .bk-on .th-intro{margin-top:0}
 /* The intro opens the chapter, so it is a first page, not a tinted callout. */
 .bk-on .th-intro.bk-first{
-  border:none;background:none;padding:0;
-box-shadow:none;}
+  border:none;background:none;box-shadow:none;padding:0;
+}
 .bk-on .bk-view{
   overflow:hidden;                    /* the window the pages slide behind */
   position:relative;
@@ -1447,10 +1403,10 @@ box-shadow:none;}
    block has done since the tables were tightened, so a table that breaks across
    a page turn keeps its headings. Rows still never split. */
 .bk-on .th-table{overflow:visible}
-.bk-on .th-table thead th:first-child{border-top-left-radius:var(--r-1)}
-.bk-on .th-table thead th:last-child{border-top-right-radius:var(--r-1)}
-.bk-on .th-table tbody tr:last-child td:first-child{border-bottom-left-radius:var(--r-1)}
-.bk-on .th-table tbody tr:last-child td:last-child{border-bottom-right-radius:var(--r-1)}
+.bk-on .th-table thead th:first-child{border-top-left-radius:var(--r-2)}
+.bk-on .th-table thead th:last-child{border-top-right-radius:var(--r-2)}
+.bk-on .th-table tbody tr:last-child td:first-child{border-bottom-left-radius:var(--r-2)}
+.bk-on .th-table tbody tr:last-child td:last-child{border-bottom-right-radius:var(--r-2)}
 .bk-on .th-table thead{display:table-header-group}
 .bk-on .th-table tr{break-inside:avoid;page-break-inside:avoid}
 /* A heading with nothing under it is the other half of the same fault — the
@@ -1469,29 +1425,28 @@ box-shadow:none;}
   display:inline-flex;align-items:center;justify-content:center;
   width:44px;height:44px;border-radius:50%;cursor:pointer;
   border:1px solid var(--line-2);background:var(--card);color:var(--tx);
-  
+  box-shadow:0 1px 0 var(--sh-soft);
   transition:transform .18s ease,background .18s ease;
-box-shadow:0 1px 0 var(--sh-soft);}
+}
 .bk-btn:hover:not(:disabled){transform:translateY(-2px);background:var(--bg-2)}
 .bk-btn:disabled{opacity:.32;cursor:default}
 .bk-num{
-  font-size:12.5px;font-weight:700;color:var(--ink-3);
+  font-size:12.5px;font-weight:800;letter-spacing:.05em;color:var(--ink-3);
   min-width:132px;text-align:center;font-variant-numeric:tabular-nums;
 }
 .bk-run{
   display:flex;justify-content:space-between;align-items:baseline;gap:16px;
   border-bottom:1px solid var(--line);padding-bottom:7px;margin-bottom:14px;
-  font-size:10.5px;font-weight:700;text-transform:none;
+  font-size:10.5px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;
   color:var(--ink-4);
 }
-.bk-run .r{color:var(--ink-3);text-transform:none;font-weight:700}
+.bk-run .r{color:var(--ink-3);text-transform:none;letter-spacing:.02em;font-weight:700}
 /* A thin progress rule under the turning bar — how far through the chapter. */
 .bk-prog{height:3px;border-radius:var(--r-1);background:var(--line);max-width:640px;margin:0 auto 6px}
-.bk-prog i{display:block;height:100%;border-radius:var(--r-1);background:var(--subject,var(--gold));
+.bk-prog i{display:block;height:100%;border-radius:var(--r-1);background:var(--gold);
   transition:width .42s cubic-bezier(.22,1,.36,1)}
 /* Click the outer thirds of the sheet to turn, as you would a page. */
-.bk-on .bk-tap{position:absolute;top:0;bottom:0;width:11%;cursor:pointer;z-index:2;transition:opacity .13s ease}
-.bk-on .bk-tap:active{opacity:.2}
+.bk-on .bk-tap{position:absolute;top:0;bottom:0;width:11%;cursor:pointer;z-index:2}
 .bk-on .bk-tap.l{left:0}
 .bk-on .bk-tap.r{right:0}
 @media (max-width:700px){
@@ -1514,26 +1469,26 @@ box-shadow:0 1px 0 var(--sh-soft);}
 }
 .th-h{display:flex;align-items:center;gap:11px;margin-bottom:13px;flex-wrap:wrap}
 .th-h h2{
-  margin:0;font-size:21px;font-weight:700;color:var(--tx);line-height:1.2;
+  margin:0;font-size:21px;font-weight:900;letter-spacing:-.028em;color:var(--tx);line-height:1.2;
 }
 .th-num{
-  font-size:11px;font-weight:700;color:var(--tx);
-  text-transform:none;
+  font-size:11px;font-weight:900;color:var(--c,var(--neuro));letter-spacing:.1em;
+  text-transform:uppercase;
 }
 .wbadge{
-  font-size:8.5px;font-weight:700;text-transform:none;padding:3px 8px;
+  font-size:8.5px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;padding:3px 8px;
   border-radius:var(--r-1);border:1.5px solid var(--line-2);flex-shrink:0;
 }
-.wbadge.must{background:var(--fill);color:var(--on-fill)}
+.wbadge.must{background:var(--ent);color:#fff}
 .wbadge.high{background:var(--gold);color:var(--tx)}
 .wbadge.know{background:var(--bg-2);color:var(--ink-3)}
 .th-body{font-size:14.6px;line-height:1.78;color:var(--ink-2)}
 .th-body p{margin:0 0 14px}
-.th-body strong{color:var(--tx);font-weight:700}
+.th-body strong{color:var(--tx);font-weight:800}
 .th-body em{color:var(--ink-3)}
 .th-body ul{margin:0 0 14px;padding-left:22px}
 .th-body li{margin-bottom:7px}
-.th-body li::marker{color:var(--tx)}
+.th-body li::marker{color:var(--c,var(--neuro))}
 /* Three line kinds mdBlock() now marks up. On screen they are STRUCTURAL only —
    the module colour they take in print is deliberately absent here, because
    those hues are chosen dark enough for white text to sit on them and are
@@ -1541,67 +1496,67 @@ box-shadow:0 1px 0 var(--sh-soft);}
 .th-body .th-sub{
   margin:22px 0 10px;padding-bottom:5px;border-bottom:1px solid var(--line);
   font-family:var(--font-display),Georgia,serif;font-size:13px;font-weight:700;
-  text-transform:none;color:var(--tx)}
+  letter-spacing:.12em;text-transform:uppercase;color:var(--tx)}
 .th-body .th-sub:first-child{margin-top:0}
 .th-body .src{
   margin:14px 0 0;padding-top:7px;border-top:1px solid var(--line);
-  font-size:11px;text-transform:none;color:var(--ink-4)}
+  font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-4)}
 .th-body .xref{color:var(--ink-4);font-size:13.6px}
 .th-body .xref em{color:var(--ink-4)}
 .th-body p.lead{margin-top:20px}
 .th-body p.lead:first-child{margin-top:0}
 .th-body blockquote{
   margin:0 0 15px;padding:13px 18px;background:var(--gold-bg);border-left:4px solid var(--gold);
-  border-radius:0 var(--r-1) var(--r-1) 0;font-weight:700;color:var(--tx);font-size:14.5px;
+  border-radius:0 var(--r-2) var(--r-2) 0;font-weight:700;color:var(--tx);font-size:14.5px;
 }
 .th-table{width:100%;border-collapse:separate;border-spacing:0;margin:4px 0 18px;font-size:13.3px;
-  border:1px solid var(--line-2);border-radius:var(--r-1);overflow:hidden}
-.th-table th{background:var(--fill);color:var(--on-fill);text-align:left;padding:10px 13px;font-weight:700;
-  font-size:11px;text-transform:none;}
+  border:1px solid var(--line-2);border-radius:var(--r-3);overflow:hidden}
+.th-table th{background:var(--fill);color:#fff;text-align:left;padding:10px 13px;font-weight:800;
+  font-size:11px;text-transform:uppercase;letter-spacing:.06em}
 /* ⚠️ A header cell holding **bold** becomes <strong>, and `.th-body strong` sets
    it to the body ink — which is the SAME near-black as the header's own
    background, so the label vanishes. Invisible on screen and on paper both.
    Found by reading the printed PDF, not the source. */
-.th-table th strong,.th-table th em{color:var(--on-fill)}
+.th-table th strong,.th-table th em{color:#fff}
 .th-table td{padding:10px 13px;border-bottom:1.5px solid var(--line);vertical-align:top;line-height:1.55}
 .th-table tr:last-child td{border-bottom:none}
 .th-table tbody tr:nth-child(odd) td{background:rgba(255,255,255,.03)}
 
-.flow{margin:4px 0 18px;border:2.5px dashed var(--line-2);border-radius:var(--r-1);padding:16px 17px;background:var(--tint)}
-.flow-title{font-size:11px;font-weight:700;text-transform:none;color:var(--tx);margin-bottom:14px}
+.flow{margin:4px 0 18px;border:2.5px dashed var(--neuro);border-radius:var(--r-3);padding:16px 17px;background:rgba(109,76,125,.12)}
+.flow-title{font-size:11px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:var(--neuro);margin-bottom:14px}
 .fstep{margin-bottom:9px}
-.fbox{background:var(--card);border:1px solid var(--line-2);border-radius:var(--r-1);padding:11px 14px;
-  box-shadow:0 5px 14px rgba(0,0,0,.15);}
-.fbox .ft{font-weight:700;font-size:13.6px;line-height:1.42}
+.fbox{background:var(--card);border:1px solid var(--line-2);border-radius:var(--r-3);padding:11px 14px;
+  box-shadow:0 5px 14px rgba(0,0,0,.15)}
+.fbox .ft{font-weight:800;font-size:13.6px;line-height:1.42}
 .fbox .fn{font-size:12.4px;color:var(--ink-3);margin-top:5px;line-height:1.5;font-weight:600}
-.fbox.alert{background:var(--tint);border-color:var(--line-2);box-shadow:0 5px 14px rgba(255,90,95,.3);}
+.fbox.alert{background:rgba(255,90,95,.13);border-color:var(--ent);box-shadow:0 5px 14px rgba(255,90,95,.3)}
 .fbox.alert .ft{color:#ff9aa2}
 .fbox.dec{background:var(--gold-bg);border-color:var(--gold)}
-.farrow{text-align:center;color:var(--tx);font-size:17px;line-height:1;margin:2px 0 7px;font-weight:700}
+.farrow{text-align:center;color:var(--neuro);font-size:17px;line-height:1;margin:2px 0 7px;font-weight:900}
 .fbranch{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:9px}
-.fb{border:2px solid var(--line-2);border-radius:var(--r-1);padding:9px 12px;font-size:12.6px;font-weight:700;line-height:1.45}
+.fb{border:2px solid var(--line-2);border-radius:var(--r-2);padding:9px 12px;font-size:12.6px;font-weight:700;line-height:1.45}
 .fb.y{background:rgba(0,168,107,.14);border-color:var(--ok)}
 .fb.n{background:rgba(255,71,87,.13);border-color:var(--bad)}
-.fb b{display:block;font-size:9.5px;text-transform:none;margin-bottom:4px}
+.fb b{display:block;font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;margin-bottom:4px}
 .fb.y b{color:var(--ok)}
 .fb.n b{color:var(--bad)}
 @media(max-width:600px){.fbranch{grid-template-columns:1fr}}
 
 .th-test{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:4px}
-.th-test .lbl{font-size:12px;font-weight:700;color:var(--ink-3)}
+.th-test .lbl{font-size:12px;font-weight:800;color:var(--ink-3)}
 .readtheory{
   display:flex;align-items:center;gap:9px;width:100%;text-align:left;margin-top:16px;
-  padding:12px 16px;background:var(--card);
-  border:2.5px solid var(--line-2);border-radius:var(--r-1);font-weight:700;font-size:13.5px;
-  
-  transition:transform .13s ease;
-background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));box-shadow:var(--pop) rgba(125,88,144,.3);}
-.readtheory:hover{transform:translate(-2px,-2px);box-shadow:var(--pop-lg) rgba(125,88,144,.35);}
+  padding:12px 16px;background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));
+  border:2.5px solid var(--neuro);border-radius:var(--r-3);font-weight:800;font-size:13.5px;
+  box-shadow:var(--pop) rgba(125,88,144,.3);
+  transition:transform .13s ease,box-shadow .13s;
+}
+.readtheory:hover{transform:translate(-2px,-2px);box-shadow:var(--pop-lg) rgba(125,88,144,.35)}
 .th-ch{display:flex;align-items:center;gap:13px;padding:14px 16px;background:var(--card);
-  border:1px solid var(--line-2);border-radius:var(--r-1);margin-bottom:9px;width:100%;text-align:left;
-  transition:transform .13s ease;box-shadow:0 5px 14px rgba(0,0,0,.13);}
-.th-ch:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:0 10px 24px rgba(0,0,0,.2);}
-.th-ch:disabled{opacity:.4;cursor:default;border-style:dashed;box-shadow:none;}
+  border:1px solid var(--line-2);border-radius:var(--r-3);margin-bottom:9px;width:100%;text-align:left;
+  box-shadow:0 5px 14px rgba(0,0,0,.13);transition:transform .13s ease,box-shadow .13s}
+.th-ch:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:0 10px 24px rgba(0,0,0,.2)}
+.th-ch:disabled{opacity:.4;cursor:default;box-shadow:none;border-style:dashed}
 .th-ch .n{flex:1;font-weight:700;font-size:14px}
 .th-ch .m{font-size:11.5px;color:var(--ink-4);font-weight:700}
 .doc-head{border-bottom:3px solid var(--line-2);padding-bottom:14px;margin-bottom:22px}
@@ -1624,7 +1579,7 @@ background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));box-
   /* A question's photograph is content, so it PRINTS — unlike the module
      artwork below. It is an <img>, not a background, so it needs nothing but
      room; the caption's "tap to enlarge" is meaningless on paper. */
-  .qfig img{max-width:78mm;box-shadow:none;}
+  .qfig img{max-width:78mm;box-shadow:none}
   .qfig figcaption{color:#444}
   /* The module artwork is a background-image, and browsers do not print those by
      default — left in, it reserves a square of blank paper per card. It carries
@@ -1638,7 +1593,9 @@ background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));box-
      this block and printed its grey page background onto paper. Matching the
      specificity here — and sitting later in the file — puts print back on top
      for BOTH themes. */
-  :root, :root[data-theme="light"], :root[data-theme="dark"]{
+  :root,
+  :root[data-theme="light"],
+  :root[data-theme="dark"]{
     /* ⚠️ THE MUTED RAMP WAS TOO LIGHT ON PAPER AND THE USER SAID IT HURT TO READ.
        --ink-3 and --ink-4 carry the italic "(not taken from the course material)"
        tags and every small label; at #4a5464/#6b7688 in a light serif they render
@@ -1647,19 +1604,13 @@ background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));box-
     --tx:#14181f; --ink:#14181f; --ink-2:#1b2028; --ink-3:#2f3742; --ink-4:#3a424e;
     --card:#fff; --bg:#fff; --bg-2:#f2f4f8; --fill:#14181f;
     --line:#d8dde5; --line-2:#b9c1cd;
-    --ok-bg:#f3f3f3; --bad-bg:#f3f3f3; --gold-bg:#f3f3f3;
-    /* Pale washes remain visible on white paper in either source theme. */
-    --hl-y:#e3d3a4;
-    --hl-g:#c9d8c0;
-    --hl-p:#dfc5c9;
-    --hl-b:#c5d2de;
+    --ok-bg:#e6f9f0; --bad-bg:#ffecee; --gold-bg:#fff6e0;
     --stem:#14181f; --prose:#22282f; --strong:#000;
-    --warn:#745800; --ok:#14181f; --bad:#92294f;
+    --warn:#8a5000; --ok:#06603f; --bad:#a3182a;
     --sh:rgba(0,0,0,.10); --sh-soft:rgba(0,0,0,.07); --sh-deep:rgba(0,0,0,.14);
-    --sheen:var(--card); --tint:transparent; --tint-2:#f2f4f8;
-    --glow:none;
+    --sheen:none; --tint:transparent; --tint-2:#f2f4f8;
+    --glow:0 0 0 1px rgba(0,0,0,.06);
   }
-  mark.hl{-webkit-print-color-adjust:exact;print-color-adjust:exact}
   body{background:#fff!important;background-image:none!important;font-size:11pt;color:#14181f}
   .ambient,.ambient *{display:none!important}
   /* Weight, not just colour. EB Garamond is a light serif and at 11pt its regular
@@ -1676,7 +1627,7 @@ background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));box-
     -webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
   /* Table heads take the module colour too, so a table reads as part of the
      chapter rather than as a black slab dropped into it. */
-  .th-table{border:.6pt solid #d8dde5!important;border-radius:var(--r-1)!important;overflow:hidden}
+  .th-table{border:.6pt solid #d8dde5!important;border-radius:2pt!important;overflow:hidden}
   .th-table th{background:var(--mod,#14181f)!important;color:#fff!important}
   .th-table th strong,.th-table th em{color:#fff!important}
   /* The stripe was a neutral grey, which read as a printing artefact next to a
@@ -1689,7 +1640,7 @@ background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));box-
      bar in the warn colour, and room to breathe. */
   .th-body blockquote{
     border-left:3pt solid #c08a1e!important;background:#fdf7e8!important;
-    border-radius:0 var(--r-1) var(--r-1) 0!important;
+    border-radius:0 2pt 2pt 0!important;
     -webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;
   }
   .app{display:block}
@@ -1708,7 +1659,7 @@ background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));box-
   .flow,.fbox,.th-body blockquote{break-inside:avoid;page-break-inside:avoid}
   .th-table thead{display:table-header-group}
   .th-table tr{break-inside:avoid;page-break-inside:avoid}
-  .fbox,.th-table{box-shadow:none!important;}
+  .fbox,.th-table{box-shadow:none!important}
   /* ⚠️ THE PDF IS A BOOK, NOT THE SCREEN (user's instruction, 2026-08-13):
      title page, contents, then straight into the notes. The exam-patterns
      intro is screen-only — on paper the user asked to start with the
@@ -1750,8 +1701,8 @@ background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));box-
   .th-body .src{
     margin:7pt 0 0!important;padding-top:3pt!important;
     border-top:.4pt solid #e4e8ee!important;
-    font-size:7.5pt!important;font-weight:500!important;
-    text-transform:none!important;color:#8a94a3!important}
+    font-size:7.5pt!important;font-weight:500!important;letter-spacing:.09em!important;
+    text-transform:uppercase!important;color:#8a94a3!important}
   /* ⚠️ `.th-body .xref` is TWO classes so it outranks the `.th-body p` weight
      rule above, which forces 500 on every paragraph. A single-class selector
      loses and the aside prints at full prose weight. */
@@ -1763,8 +1714,8 @@ background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));box-
     margin:9pt 0 4pt!important;padding-bottom:2pt!important;
     border-bottom:.4pt solid #e4e8ee!important;
     font-family:var(--font-display),Georgia,serif!important;
-    font-size:9.5pt!important;font-weight:700!important;
-    text-transform:none!important;color:var(--mod,#14181f)!important;
+    font-size:9.5pt!important;font-weight:700!important;letter-spacing:.07em!important;
+    text-transform:uppercase!important;color:var(--mod,#14181f)!important;
     break-after:avoid;page-break-after:avoid}
   .th-body .th-sub:first-child{margin-top:0!important}
   /* ── SECTION HEADINGS ──────────────────────────────────────────────────────
@@ -1783,12 +1734,12 @@ background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));box-
   .th-h{
     margin:0 0 6pt!important;padding:4pt 8pt!important;
     background:var(--mod,#b4472f)!important;border:none!important;
-    align-items:baseline!important;border-radius:var(--r-1)!important;
+    align-items:baseline!important;border-radius:2pt!important;
     flex-wrap:nowrap!important;gap:7pt!important;
     -webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;
   }
   .th-h h2{
-    font-size:11.4pt!important;margin:0!important;
+    font-size:11.4pt!important;letter-spacing:.03em!important;margin:0!important;
     color:#fff!important;flex:1 1 auto;min-width:0;
   }
   .th-num{
@@ -1800,7 +1751,7 @@ background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));box-
     flex:0 0 auto;white-space:nowrap;
   }
   .wbadge{
-    font-size:6.6pt!important;padding:1pt 4pt!important;
+    font-size:6.6pt!important;padding:1pt 4pt!important;letter-spacing:.09em!important;
     -webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;
   }
   .wbadge.know{display:none!important}   /* "background" is the default; saying so costs a line */
@@ -1835,8 +1786,8 @@ background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));box-
   .bk-on .bk-sheet{
     display:block!important;aspect-ratio:auto!important;height:auto!important;
     width:auto!important;padding:0!important;border:none!important;
-    border-radius:0!important;background:none!important;
-    overflow:visible!important;box-shadow:none!important;}
+    border-radius:0!important;box-shadow:none!important;background:none!important;
+    overflow:visible!important}
   /* ── THE COVER ─────────────────────────────────────────────────────────────
      Typographic, not illustrated: Canva was considered and set aside because a
      cover image cannot be generated per chapter for 104 chapters, and the module
@@ -1860,17 +1811,17 @@ background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));box-
   }
   .doc-head .eyebrow{
     display:inline-block;margin-bottom:11mm;background:none!important;
-    color:rgba(255,255,255,.82)!important;font-size:9.5pt;
-    font-weight:700;padding:0;border:none;
+    color:rgba(255,255,255,.82)!important;font-size:9.5pt;letter-spacing:.4em;
+    font-weight:800;padding:0;border:none;
   }
   .doc-head .eyebrow svg{display:none}
   .doc-head h1{
-    font-size:31pt;line-height:1.1;margin:0;
+    font-size:31pt;line-height:1.1;letter-spacing:.035em;margin:0;
     color:#fff!important;
   }
   .doc-head .doc-meta{
-    margin-top:12mm;padding-top:7mm;font-size:9pt;
-    text-transform:none;color:rgba(255,255,255,.9)!important;font-weight:700;
+    margin-top:12mm;padding-top:7mm;font-size:9pt;letter-spacing:.18em;
+    text-transform:uppercase;color:rgba(255,255,255,.9)!important;font-weight:700;
     border-top:.8pt solid rgba(255,255,255,.42);display:inline-block;
   }
   /* ── RUNNING HEAD AND PAGE NUMBERS ─────────────────────────────────────────
@@ -1893,20 +1844,21 @@ background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));box-
 /* ---------- Misc ---------- */
 .empty{text-align:center;padding:64px 20px;color:var(--ink-4)}
 .empty .big{font-size:52px;margin-bottom:14px}
-.empty h3{color:var(--ink-2);font-size:17px;margin:0 0 7px;font-weight:700}
+.empty h3{color:var(--ink-2);font-size:17px;margin:0 0 7px;font-weight:900}
 .empty p{margin:0 auto;font-size:13.5px;max-width:400px;line-height:1.6;font-weight:500}
 
 .toast{
   position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(90px);
-  background:var(--fill);color:var(--on-fill);padding:13px 22px;border-radius:var(--r-1);font-size:13.5px;
-  border:2.5px solid var(--tx);box-shadow:var(--light-toast-shadow,0 10px 24px rgba(0,0,0,.3));z-index:400;opacity:0;
-  transition:all .3s cubic-bezier(.34,1.56,.64,1);font-weight:700;
+  background:var(--fill);color:#fff;padding:13px 22px;border-radius:var(--r-3);font-size:13.5px;
+  border:2.5px solid #000;box-shadow:0 10px 24px rgba(0,0,0,.3);z-index:400;opacity:0;
+  transition:all .3s cubic-bezier(.34,1.56,.64,1);font-weight:800;
 }
 .toast.show{transform:translateX(-50%) translateY(0);opacity:1}
 
 .modal-bg{
-  position:fixed;inset:0;background:var(--light-modal-bg-background,rgba(0,0,0,.5));z-index:300;
-  display:none;align-items:center;justify-content:center;padding:20px;backdrop-filter:var(--light-modal-bg-blur,blur(3px));
+  position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:300;
+  display:none;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(3px);
+  /* A tall modal was unscrollable and cut its own save button off. */
   overflow-y:auto;overscroll-behavior:contain;
 }
 .modal-bg.show{display:flex}
@@ -1915,13 +1867,13 @@ background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));box-
   max-width:460px;width:100%;animation:pop .3s cubic-bezier(.34,1.56,.64,1);
   margin:auto;flex-shrink:0;
 }
-.modal h3{margin:0 0 9px;font-size:20px;font-weight:700;}
+.modal h3{margin:0 0 9px;font-size:20px;font-weight:900;letter-spacing:-.02em}
 .modal p{margin:0 0 19px;color:var(--ink-2);font-size:14px;line-height:1.6;font-weight:500}
 .modal-actions{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap}
 
 .kbd{
   display:inline-block;padding:2px 8px;border:2px solid var(--line-2);border-bottom-width:3px;
-  border-radius:var(--r-1);font-size:11px;font-family:ui-monospace,Menlo,monospace;background:var(--bg-2);font-weight:700;
+  border-radius:var(--r-1);font-size:11px;font-family:ui-monospace,Menlo,monospace;background:var(--bg-2);font-weight:800;
 }
 .shortcuts{display:grid;grid-template-columns:auto 1fr;gap:10px 17px;font-size:13px;align-items:center}
 .shortcuts .d{color:var(--ink-3);font-weight:600}
@@ -1929,14 +1881,13 @@ background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));box-
 .filterbar{display:flex;gap:9px;margin-bottom:20px;flex-wrap:wrap;align-items:center}
 /* Source filter — which of the three question banks a module draws from. */
 .bankbar{display:flex;gap:8px;margin:0 0 16px;flex-wrap:wrap;align-items:center}
-.bank-lbl{font-size:12px;font-weight:700;text-transform:none;
+.bank-lbl{font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;
   color:var(--ink-2);margin-right:2px}
 .bankchip{display:inline-flex;align-items:center;gap:7px;padding:7px 13px;cursor:pointer;
-  border:1px solid var(--line-2);border-radius:var(--r-1);background:var(--card);color:var(--ink-2);
-  font-family:inherit;font-size:13px;font-weight:700;
-  transition:transform .18s ease,background .18s,color .18s}
+  border:1px solid var(--line-2);border-radius:var(--r-pill);background:var(--card);color:var(--ink-2);
+  font-family:inherit;font-size:13px;font-weight:800;
+  transition:transform .18s ease,box-shadow .18s,background .18s,color .18s}
 .bankchip:hover{transform:translateY(-2px)}
-.bankchip:active{transform:translateY(1px);}
 /* Off-state is deliberately flat and grey: which sources are live must be
    readable at a glance, or you sit an exam on a filtered set without noticing. */
 /* White text is correct again as of the Greek palette: bronze #9a6b1f, aegean
@@ -1945,11 +1896,11 @@ background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));box-
    measured 2.15:1, the worst reading in the app, and this rule had to carry
    dark text instead. Recheck by measurement if the bank colours ever change.
 
-   The glow once used the text token, which is TEXT colour — parchment-white, so the
+   The glow was `var(--ink)`, which is TEXT colour — parchment-white, so the
    chip wore a pale halo. That is the exact re-merge the token contract forbids. */
-.bankchip.on{background:var(--bk);color:var(--on-fill);box-shadow:0 6px 16px var(--sh);}
+.bankchip.on{background:var(--bk);color:#fff;box-shadow:0 6px 16px var(--sh)}
 .bankchip:not(.on){opacity:.5;text-decoration:line-through}
-.bankn{font-size:11px;font-weight:700;padding:1px 7px;border-radius:var(--r-1);
+.bankn{font-size:11px;font-weight:900;padding:1px 7px;border-radius:var(--r-pill);
   background:rgba(0,0,0,.18)}
 .bankchip.on .bankn{background:rgba(0,0,0,.26)}
 .bankchip:not(.on) .bankn{background:rgba(0,0,0,.08)}
@@ -1958,24 +1909,23 @@ background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));box-
 /* white again, for the same reason as .bankchip.on — the Greek bank colours are
    dark. This pill sits right beside a question stem, so it is the one to
    re-measure first if those colours are ever touched. */
-.pill.bankpill{color:var(--on-fill)}
+.pill.bankpill{color:#fff}
 .chip{
-  padding:8px 15px;border:1px solid var(--line-2);border-radius:var(--r-1);font-size:12.5px;
-  background:var(--card);font-weight:700;
-  transition:transform .13s ease;
+  padding:8px 15px;border:1px solid var(--line-2);border-radius:var(--r-pill);font-size:12.5px;
+  background:var(--card);font-weight:800;
+  transition:transform .13s ease,box-shadow .13s;
 }
-.chip:hover{transform:translate(-1px,-1px);box-shadow:0 7px 18px rgba(0,0,0,.25);}
-.chip:active{transform:translate(1px,1px);}
+.chip:hover{transform:translate(-1px,-1px);box-shadow:0 7px 18px rgba(0,0,0,.25)}
 /* fallback is --fill, not --ink: --ink is near-white since the redesign, so an
    unset --c would have made a white chip carrying white text */
-.chip.on{background:var(--c,var(--subject,var(--fill)));color:var(--subject-fg,var(--on-fill))}
+.chip.on{background:var(--c,var(--fill));color:#fff}
 
 @keyframes fall{to{transform:translateY(105vh) rotate(720deg);opacity:0}}
 .confetti{position:fixed;top:-14px;width:11px;height:11px;z-index:250;pointer-events:none;animation:fall linear forwards}
 
 .mobile-only{display:none}
 @media(max-width:860px){
-  .rail{position:fixed;left:-238px;z-index:60;transition:left .24s;box-shadow:8px 0 30px rgba(0,0,0,.3);}
+  .rail{position:fixed;left:-238px;z-index:60;transition:left .24s;box-shadow:8px 0 30px rgba(0,0,0,.3)}
   .rail.open{left:0}
   .mobile-only{display:block}
   .page{padding:18px 14px}
@@ -2002,12 +1952,12 @@ background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));box-
 /* ---- ground ------------------------------------------------------------- */
 body{
   background:var(--bg);
-  background-image:var(--light-body-background-image,none);
-  background-attachment:fixed;
-background-image:
+  background-image:
     radial-gradient(1200px 700px at 8% -10%, rgba(109,76,125,.30), transparent 60%),
     radial-gradient(1000px 620px at 100% 0%, rgba(46,95,138,.26), transparent 58%),
-    radial-gradient(900px 600px at 50% 110%, rgba(92,122,82,.20), transparent 60%);}
+    radial-gradient(900px 600px at 50% 110%, rgba(92,122,82,.20), transparent 60%);
+  background-attachment:fixed;
+}
 
 /* Slow-moving colour behind everything. Fixed, non-interactive, z-index 0;
    .app sits at z-index 1. Blur is on an element that never scrolls and never
@@ -2018,13 +1968,13 @@ background-image:
    their old weight they simply fogged the room away. They are a tint over the
    film now, not the atmosphere in their own right. */
 .ambient .orb{
-  position:absolute;border-radius:50%;filter:blur(90px);opacity:var(--light-ambient-orb-opacity,.38);
+  position:absolute;border-radius:50%;filter:blur(90px);opacity:.38;
   will-change:transform;
 }
 .ambient .o1{width:46vw;height:46vw;left:-12vw;top:-14vh;background:radial-gradient(circle,var(--neuro),transparent 68%);animation:drift1 34s ease-in-out infinite}
 .ambient .o2{width:40vw;height:40vw;right:-10vw;top:4vh;background:radial-gradient(circle,var(--peds),transparent 68%);animation:drift2 41s ease-in-out infinite}
 .ambient .o3{width:38vw;height:38vw;left:26vw;bottom:-18vh;background:radial-gradient(circle,var(--ophtho),transparent 70%);animation:drift3 47s ease-in-out infinite}
-.ambient .o4{width:26vw;height:26vw;right:16vw;bottom:-10vh;background:radial-gradient(circle,var(--gold),transparent 72%);opacity:var(--light-ambient-o4-opacity,.28);animation:drift1 52s ease-in-out infinite reverse}
+.ambient .o4{width:26vw;height:26vw;right:16vw;bottom:-10vh;background:radial-gradient(circle,var(--gold),transparent 72%);opacity:.28;animation:drift1 52s ease-in-out infinite reverse}
 @keyframes drift1{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(6vw,5vh,0) scale(1.12)}}
 @keyframes drift2{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(-7vw,7vh,0) scale(1.09)}}
 @keyframes drift3{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(5vw,-6vh,0) scale(1.14)}}
@@ -2054,20 +2004,21 @@ background-image:
 .ambient .film,.gate-amb .film{
   position:absolute;inset:0;width:100%;height:100%;
   object-fit:cover;object-position:50% 42%;
-  opacity:var(--light-gate-amb-film-opacity,var(--light-ambient-film-opacity,.48));
+  opacity:.48;
   /* the source is warm amber against a navy ground; pulling the saturation
      back and easing the brightness settles it without draining the lamp */
-  filter:var(--light-ambient-film-filter,saturate(.70) contrast(1.05) brightness(.82));
+  filter:saturate(.70) contrast(1.05) brightness(.82);
 }
 /* The scrim is the contrast guarantee, not a mood effect. It is heaviest top
    and bottom — behind the top bar and below the fold — and lightest across the
    middle band where the lamp and the figure actually are. */
 .ambient .film-scrim,.gate-amb .film-scrim{
   position:absolute;inset:0;
-  background:var(--light-ambient-film-scrim-background,linear-gradient(180deg,
+  background:
+    linear-gradient(180deg,
       rgba(7,13,22,.88) 0%, rgba(7,13,22,.44) 18%,
       rgba(7,13,22,.26) 50%, rgba(7,13,22,.64) 100%),
-    radial-gradient(150% 105% at 50% 48%, transparent 38%, rgba(7,13,22,.46) 100%));
+    radial-gradient(150% 105% at 50% 48%, transparent 38%, rgba(7,13,22,.46) 100%);
 }
 
 /* PORTRAIT IS A DIFFERENT PICTURE, not the same one narrower.
@@ -2086,12 +2037,13 @@ background-image:
    the first card and the gaps between sections. What survives has to carry the
    whole effect, so the film runs brighter here than it ever does on a desktop. */
 @media (max-aspect-ratio:5/4){
-  .ambient .film,.gate-amb .film{object-position:18% 45%;opacity:var(--light-gate-amb-film-opacity,var(--light-ambient-film-opacity,.72))}
+  .ambient .film,.gate-amb .film{object-position:18% 45%;opacity:.72}
   .ambient .film-scrim,.gate-amb .film-scrim{
-    background:var(--light-ambient-film-scrim-background,linear-gradient(180deg,
+    background:
+      linear-gradient(180deg,
         rgba(7,13,22,.78) 0%, rgba(7,13,22,.28) 14%,
         rgba(7,13,22,.14) 48%, rgba(7,13,22,.52) 100%),
-      radial-gradient(170% 95% at 50% 45%, transparent 50%, rgba(7,13,22,.34) 100%));
+      radial-gradient(170% 95% at 50% 45%, transparent 50%, rgba(7,13,22,.34) 100%);
   }
 }
 
@@ -2111,26 +2063,26 @@ body[data-view="theory"] .orb{animation-play-state:paused}
 /* Deliberately NOT on cards, chapter rows or question options: backdrop-filter
    on a long scrolling list is the single most expensive thing on the page. */
 .rail{
-  background:var(--light-rail-background,linear-gradient(180deg,rgba(10,20,34,.96),rgba(8,16,28,.99)));
-  border-right:var(--light-rail-border-right,1px solid var(--line-2));
-  backdrop-filter:var(--light-rail-blur,blur(14px));-webkit-backdrop-filter:var(--light-rail-webkit-blur,blur(14px));
+  background:linear-gradient(180deg,rgba(10,20,34,.96),rgba(8,16,28,.99));
+  border-right:1px solid var(--line-2);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
 }
 .topbar{backdrop-filter:blur(16px) saturate(140%);-webkit-backdrop-filter:blur(16px) saturate(140%)}
 .modal{
-  background:var(--light-modal-background,linear-gradient(160deg,rgba(52,42,32,.96),rgba(32,26,20,.98)));
+  background:linear-gradient(160deg,rgba(24,40,60,.96),rgba(14,25,40,.98));
   backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
-  border:var(--light-modal-border,1px solid var(--line-2));box-shadow:var(--light-modal-shadow,0 30px 80px rgba(0,0,0,.6),var(--glow));
+  border:1px solid var(--line-2);box-shadow:0 30px 80px rgba(0,0,0,.6),var(--glow);
 }
-.modal-bg{background:var(--light-modal-bg-background,rgba(3,7,14,.66));backdrop-filter:var(--light-modal-bg-blur,blur(5px))}
-.results{background:var(--light-results-background,var(--glass));border:1px solid var(--line-2);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);}
+.modal-bg{background:rgba(3,7,14,.66);backdrop-filter:blur(5px)}
+.results{background:var(--glass);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid var(--line-2)}
 .gate,.splash{background:var(--bg);background-image:inherit}
 
 /* ---- surfaces get an inner highlight so edges read on dark -------------- */
 /* Shadow ink and the sheen wash come from tokens so the light theme inherits
    these rules unchanged instead of restating all of them. */
 .card,.stat,.ch-row,.qcard,.th-ch,.day,.modelans,.explain,.fbox,.conf,.bk-sheet{
-  
-box-shadow:var(--pop) var(--sh),var(--glow);}
+  box-shadow:var(--pop) var(--sh),var(--glow);
+}
 .card,.stat,.qcard,.ch-row,.th-ch,.day{
   background:var(--sheen);
   background-color:var(--card);
@@ -2139,39 +2091,39 @@ box-shadow:var(--pop) var(--sh),var(--glow);}
 /* hover lifts instead of sliding into a hard shadow */
 button.card:hover:not(:disabled),.ch-row:hover:not(:disabled),.th-ch:hover:not(:disabled){
   transform:translateY(-3px);
-  
-box-shadow:0 16px 38px var(--sh-deep),0 0 0 1px var(--c,var(--line-2));}
+  box-shadow:0 16px 38px var(--sh-deep),0 0 0 1px var(--c,var(--line-2));
+}
 button.card:active:not(:disabled){transform:translateY(-1px)}
-.day:hover{transform:translateY(-2px);box-shadow:0 14px 32px var(--sh-deep),var(--glow);}
+.day:hover{transform:translateY(-2px);box-shadow:0 14px 32px var(--sh-deep),var(--glow)}
 
 /* module cards glow in their own colour */
 .mod-card::after{opacity:.5;filter:blur(26px);width:120px;height:120px;right:-40px;top:-40px}
-.mod-ic{box-shadow:0 8px 22px var(--c),0 0 0 1px rgba(255,255,255,.14);}
-.pill{border:none;box-shadow:0 4px 14px rgba(0,0,0,.4);}
+.mod-ic{box-shadow:0 8px 22px var(--c),0 0 0 1px rgba(255,255,255,.14)}
+.pill{border:none;box-shadow:0 4px 14px rgba(0,0,0,.4)}
 
 /* buttons: the primary action is now a lit surface, not a dark slab */
 .btn{
-  background:var(--card);
+  background:linear-gradient(160deg,#2c4a6b,#1b2d44);
   background-color:var(--fill);border:1px solid var(--line-2);
-  
-background:linear-gradient(160deg,#3a2f24,#241d15);box-shadow:0 8px 20px rgba(0,0,0,.45),var(--glow);}
-.btn:hover:not(:disabled){transform:translateY(-2px);box-shadow:0 14px 30px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.18);}
+  box-shadow:0 8px 20px rgba(0,0,0,.45),var(--glow);
+}
+.btn:hover:not(:disabled){transform:translateY(-2px);box-shadow:0 14px 30px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.18)}
 .btn:active:not(:disabled){transform:translateY(0)}
-.btn.go{background-color:var(--subject,#94642a);background-image:linear-gradient(160deg,transparent,rgba(0,0,0,.32));border-color:rgba(255,255,255,.2);color:var(--subject-fg,var(--on-subject));box-shadow:0 10px 26px rgba(0,0,0,.45);}
-.btn.go:hover:not(:disabled){box-shadow:0 16px 36px rgba(0,0,0,.55);}
-.btn.flag.on{background:var(--card);color:var(--on-accent);background:linear-gradient(160deg,#ffd469,#f0b429);}
+.btn.go{background:linear-gradient(160deg,#7d5890,#573a66);border-color:rgba(255,255,255,.2);box-shadow:0 10px 26px rgba(125,88,144,.5)}
+.btn.go:hover:not(:disabled){box-shadow:0 16px 36px rgba(125,88,144,.65)}
+.btn.flag.on{background:linear-gradient(160deg,#ffd469,#f0b429);color:var(--on-accent)}
 .wbadge.high{color:var(--on-accent)}
 
 /* options: selection and verdict read by glow, not by a hard offset */
 .opt{background:var(--tint);border-color:var(--line-2)}
-.opt:hover:not(:disabled){background:var(--tint-2);border-color:var(--line-2);transform:translateX(3px);box-shadow:0 6px 18px var(--sh-soft);}
-.opt.sel{box-shadow:0 8px 24px rgba(125,88,144,.4),0 0 0 1px rgba(125,88,144,.6);}
-.opt.correct{box-shadow:0 8px 24px rgba(34,201,138,.3),0 0 0 1px rgba(34,201,138,.5);}
-.opt.wrong{box-shadow:0 8px 24px rgba(255,90,106,.3),0 0 0 1px rgba(255,90,106,.5);}
+.opt:hover:not(:disabled){background:var(--tint-2);border-color:var(--line-2);transform:translateX(3px);box-shadow:0 6px 18px var(--sh-soft)}
+.opt.sel{box-shadow:0 8px 24px rgba(125,88,144,.4),0 0 0 1px rgba(125,88,144,.6)}
+.opt.correct{box-shadow:0 8px 24px rgba(34,201,138,.3),0 0 0 1px rgba(34,201,138,.5)}
+.opt.wrong{box-shadow:0 8px 24px rgba(255,90,106,.3),0 0 0 1px rgba(255,90,106,.5)}
 .verdict{border:1px solid var(--line-2)}
-.verdict.ok{box-shadow:0 10px 30px rgba(34,201,138,.22),0 0 0 1px rgba(34,201,138,.4);}
-.verdict.bad{box-shadow:0 10px 30px rgba(255,90,106,.22),0 0 0 1px rgba(255,90,106,.4);}
-.verdict.part{box-shadow:0 10px 30px rgba(255,201,74,.22),0 0 0 1px rgba(255,201,74,.4);}
+.verdict.ok{box-shadow:0 10px 30px rgba(34,201,138,.22),0 0 0 1px rgba(34,201,138,.4)}
+.verdict.bad{box-shadow:0 10px 30px rgba(255,90,106,.22),0 0 0 1px rgba(255,90,106,.4)}
+.verdict.part{box-shadow:0 10px 30px rgba(255,201,74,.22),0 0 0 1px rgba(255,201,74,.4)}
 
 /* the reading surface — highest contrast on the page, deliberately.
    These three carry the clinical text, so they are the one place the theme is
@@ -2181,46 +2133,28 @@ background:linear-gradient(160deg,#3a2f24,#241d15);box-shadow:0 8px 20px rgba(0,
 .th-body{color:var(--prose)}
 .th-body strong,.ex-body strong{color:var(--strong)}
 .stem th{background:var(--tint-2)}
-.th-table th{background:var(--fill);color:var(--on-fill)}
+.th-table th{background:var(--fill);color:#fff}
 
 /* inputs */
 .search,.caseinput,.jumpin,.pind,.cfgbox,.ed-lab,.ed-txt,.keyin,.newday input[type=date]{
   background:var(--tint);border-color:var(--line-2);color:var(--tx);
 }
-.search:focus,.caseinput:focus{border-color:var(--line-2);box-shadow:0 0 0 3px rgba(125,88,144,.3);}
+.search:focus,.caseinput:focus{border-color:var(--neuro);box-shadow:0 0 0 3px rgba(125,88,144,.3)}
 /* --fill is a DARK solid in both themes, so the text on it must be white in
    both. Using var(--tx) here worked on dark only by coincidence — on light it
    put near-black text on a near-black chip. */
-.eyebrow{background:var(--fill);color:var(--on-fill);border:1px solid var(--line-2)}
-.toast{background:var(--card);border:1px solid var(--line-2);box-shadow:var(--light-toast-shadow,0 18px 44px rgba(0,0,0,.6));background:linear-gradient(160deg,#22344b,#14243a);}
+.eyebrow{background:var(--fill);color:#fff;border:1px solid var(--line-2)}
+.toast{background:linear-gradient(160deg,#22344b,#14243a);border:1px solid var(--line-2);box-shadow:0 18px 44px rgba(0,0,0,.6)}
 .kbd{background:var(--tint-2);border-color:var(--line-2)}
 .grouphdr::after{height:1px;background:var(--line-2)}
 
 /* ---- entrance motion ---------------------------------------------------- */
-/* render() replaces #page's content synchronously (every view function ends
-   in p.innerHTML=h) — there is no old markup left in the DOM to hold for an
-   exit, and deferring that assignment behind a JS timer would touch every
-   call site that navigates, well past what this pass should risk. So the
-   exit stays out of reach and this is the smallest change that still makes
-   navigation read as movement: a slightly longer, slightly deeper entrance
-   (was .34s / 10px) with a faint scale-settle added, so the new view arrives
-   rather than just fading up. Still no bounce — same easing curve. */
-@keyframes pagein{from{opacity:0;transform:translateY(14px) scale(.985)}to{opacity:1;transform:none}}
-#page{animation:pagein .42s cubic-bezier(.22,1,.36,1)}
+@keyframes pagein{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+#page{animation:pagein .34s cubic-bezier(.22,1,.36,1)}
 
-/* scroll reveal — browse screens only, applied by the observer in JS.
-   Tuned down from 16px / .5s / 26ms×10 (worst case ~760ms after the last
-   card) — that finished well after #page's own .34s entrance, so a browse
-   view read as loading in two separate stages instead of arriving once.
-   12px / .38s / 18ms×8 (worst case ~524ms) settles close behind the page
-   entrance instead of trailing it. */
-.reveal{opacity:0;transform:translateY(12px)}
-.reveal.in{opacity:1;transform:none;transition:opacity .38s cubic-bezier(.22,1,.36,1),transform .38s cubic-bezier(.22,1,.36,1)}
-
-/* A card the observer has not reached yet is still transparent, and paper has
-   no scrolling for it to be reached by. Printing a browse view straight after
-   load would have dropped those cards off the page entirely. */
-@media print{.reveal{opacity:1!important;transform:none!important}}
+/* scroll reveal — browse screens only, applied by the observer in JS */
+.reveal{opacity:0;transform:translateY(16px)}
+.reveal.in{opacity:1;transform:none;transition:opacity .5s cubic-bezier(.22,1,.36,1),transform .5s cubic-bezier(.22,1,.36,1)}
 
 /* ---- accessibility ------------------------------------------------------ */
 /* The original rule already killed animation and transition. Ambient orbs are
@@ -2254,13 +2188,13 @@ background:linear-gradient(160deg,#3a2f24,#241d15);box-shadow:0 8px 20px rgba(0,
 :root[data-theme="light"] body{
   /* same three orbs of colour, roughly a third of the strength — at dark-mode
      alpha they turn a white page murky rather than atmospheric */
-  --light-body-background-image:none;
-background-image:
+  background-image:
     radial-gradient(1200px 700px at 8% -10%, rgba(109,76,125,.13), transparent 60%),
     radial-gradient(1000px 620px at 100% 0%, rgba(46,95,138,.11), transparent 58%),
-    radial-gradient(900px 600px at 50% 110%, rgba(154,107,31,.14), transparent 60%);}
-:root[data-theme="light"] .ambient .orb{--light-ambient-orb-opacity:.20}
-:root[data-theme="light"] .ambient .o4{--light-ambient-o4-opacity:.13}
+    radial-gradient(900px 600px at 50% 110%, rgba(154,107,31,.14), transparent 60%);
+}
+:root[data-theme="light"] .ambient .orb{opacity:.20}
+:root[data-theme="light"] .ambient .o4{opacity:.13}
 
 /* The film is a night scene and this is the page in daylight, so it cannot
    simply run dimmer here — a dark image at low opacity on parchment is a grey
@@ -2274,11 +2208,12 @@ background-image:
 :root[data-theme="light"] .gate-amb .film{
   /* .42 -> .55 at the user's request: at .42 it was present but easy to miss.
      The brightening does the work, not the opacity — see the note above. */
-  --light-ambient-film-opacity:.55;--light-ambient-film-filter:saturate(.58) contrast(.66) brightness(1.82);
+  opacity:.55;filter:saturate(.58) contrast(.66) brightness(1.82);
 }
 :root[data-theme="light"] .ambient .film-scrim,
 :root[data-theme="light"] .gate-amb .film-scrim{
-  --light-ambient-film-scrim-background:linear-gradient(180deg,
+  background:
+    linear-gradient(180deg,
       rgba(247,244,236,.64) 0%, rgba(247,244,236,.34) 22%,
       rgba(247,244,236,.26) 55%, rgba(247,244,236,.58) 100%),
     radial-gradient(140% 100% at 50% 50%, rgba(247,244,236,.08) 34%, rgba(247,244,236,.50) 100%);
@@ -2287,7 +2222,7 @@ background-image:
    saying again here or it silently keeps the wide-screen values. */
 @media (max-aspect-ratio:5/4){
   :root[data-theme="light"] .ambient .film,
-  :root[data-theme="light"] .gate-amb .film{--light-ambient-film-opacity:.68}
+  :root[data-theme="light"] .gate-amb .film{opacity:.68}
 }
 
 /* ---- the gate runs the film harder than the app does ----------------------
@@ -2301,11 +2236,11 @@ background-image:
    Placed after every shared rule on purpose: these match the shared selectors'
    specificity exactly, so they win on source order alone. Moving this block
    higher silently disables it. */
-.gate-amb .film{opacity:var(--light-gate-amb-film-opacity,var(--light-ambient-film-opacity,.66))}
-:root[data-theme="light"] .gate-amb .film{--light-gate-amb-film-opacity:.62}
+.gate-amb .film{opacity:.66}
+:root[data-theme="light"] .gate-amb .film{opacity:.62}
 @media (max-aspect-ratio:5/4){
-  .gate-amb .film{opacity:var(--light-gate-amb-film-opacity,var(--light-ambient-film-opacity,.86))}
-  :root[data-theme="light"] .gate-amb .film{--light-gate-amb-film-opacity:.78}
+  .gate-amb .film{opacity:.86}
+  :root[data-theme="light"] .gate-amb .film{opacity:.78}
 }
 
 /* ---- the rail follows the theme (2026-07-28, user's request) --------------
@@ -2324,49 +2259,55 @@ background-image:
      background, which came back rgba(0,0,0,0) while --rail was correctly
      #eae2d3 — the token had applied and changed nothing. The gradient is what
      has to be replaced. Contrast below is measured against the DARKER stop. */
-  --light-rail-background:linear-gradient(180deg,#ece5d7,#e6dccb);
-  --light-rail-border-right:1px solid rgba(44,33,20,.14);
-  --light-rail-blur:none;--light-rail-webkit-blur:none;
-backdrop-filter:none;-webkit-backdrop-filter:none;}
-:root[data-theme="light"] .rail .logo{--light-rail-logo-color:#2a2118}
+  background:linear-gradient(180deg,#ece5d7,#e6dccb);
+  border-right:1px solid rgba(16,27,45,.14);
+  backdrop-filter:none;-webkit-backdrop-filter:none;
+}
+:root[data-theme="light"] .rail .logo{color:#2a2118}
 :root[data-theme="light"] .rail .logo .blip{
   /* the gold ring existed to separate a navy medallion from a near-black rail.
      On parchment the disc already stands out, so it becomes a plain soft edge */
-  --light-rail-logo-blip-shadow:0 0 0 1px rgba(122,90,20,.30),0 3px 9px rgba(60,45,20,.20);
-box-shadow:0 0 0 1px rgba(122,90,20,.30),0 3px 9px rgba(60,45,20,.20);}
+  box-shadow:0 0 0 1px rgba(122,90,20,.30),0 3px 9px rgba(60,45,20,.20);
+}
 :root[data-theme="light"] .nav-item:hover,
 :root[data-theme="light"] .nav-item.on,
-:root[data-theme="light"] .railprof .rn{--light-nav-item-hover-color:#2a2118}
-:root[data-theme="light"] .railprof .rav{--light-railprof-rav-border-color:rgba(42,33,24,.18)}
-:root[data-theme="light"] .railsync{--light-railsync-background:rgba(42,33,24,.055);--light-railsync-color:var(--rail-dim)}
+:root[data-theme="light"] .railprof .rn{color:#2a2118}
+:root[data-theme="light"] .railprof .rav{border-color:rgba(42,33,24,.18)}
+:root[data-theme="light"] .railsync{background:rgba(42,33,24,.055);color:var(--rail-dim)}
 :root[data-theme="light"] .streak{
-  --light-streak-background:var(--card);
-  --light-streak-border-color:rgba(154,107,31,.38);
-background:linear-gradient(135deg,rgba(217,180,74,.26),rgba(180,71,47,.14));}
-:root[data-theme="light"] .streak .n{--light-streak-n-color:#7a5200}
+  background:linear-gradient(135deg,rgba(217,180,74,.26),rgba(180,71,47,.14));
+  border-color:rgba(154,107,31,.38);
+}
+:root[data-theme="light"] .streak .n{color:#7a5200}
 :root[data-theme="light"] .modal{
-  --light-modal-background:var(--card);
-  --light-modal-border:1px solid var(--line-2);
-  --light-modal-shadow:0 30px 80px rgba(58,44,28,.22),var(--glow);
-background:linear-gradient(160deg,rgba(255,255,255,.98),rgba(243,247,252,.97));box-shadow:0 30px 80px rgba(58,44,28,.22),var(--glow);}
-:root[data-theme="light"] .modal-bg{--light-modal-bg-background:rgba(46,36,24,.38);--light-modal-bg-blur:blur(5px);backdrop-filter:blur(5px);}
-:root[data-theme="light"] .results{--light-results-background:var(--card)}
+  background:linear-gradient(160deg,rgba(255,255,255,.98),rgba(243,247,252,.97));
+  border:1px solid var(--line-2);
+  box-shadow:0 30px 80px rgba(23,38,66,.22),var(--glow);
+}
+:root[data-theme="light"] .modal-bg{background:rgba(28,42,66,.38);backdrop-filter:blur(5px)}
+:root[data-theme="light"] .results{background:var(--card)}
 :root[data-theme="light"] .toast{
   /* stays dark — a light toast on a light page has no presence */
-  --light-toast-shadow:0 18px 44px rgba(58,44,28,.3);
-box-shadow:0 18px 44px rgba(58,44,28,.3);}
+  box-shadow:0 18px 44px rgba(23,38,66,.3);
+}
 :root[data-theme="light"] .gsign{
   /* the Google button is white by brand, which on a light page needs a real
      border or it dissolves into the background */
-  --light-gsign-border:1px solid rgba(44,33,20,.16);
-  
-box-shadow:0 6px 18px rgba(58,44,28,.12);}
-:root[data-theme="light"] .gsign:hover{box-shadow:0 12px 28px rgba(58,44,28,.18);}
-:root[data-theme="light"] .mod-ic{box-shadow:0 8px 22px var(--c),0 0 0 1px rgba(44,33,20,.08);}
-:root[data-theme="light"] .pill{box-shadow:0 4px 14px rgba(58,44,28,.18);}
-:root[data-theme="light"] .btn:hover:not(:disabled){box-shadow:0 14px 30px rgba(58,44,28,.28),0 0 0 1px rgba(44,33,20,.12);}
+  border:1px solid rgba(16,27,45,.16);
+  box-shadow:0 6px 18px rgba(23,38,66,.12);
+}
+:root[data-theme="light"] .gsign:hover{box-shadow:0 12px 28px rgba(23,38,66,.18)}
+:root[data-theme="light"] .mod-ic{box-shadow:0 8px 22px var(--c),0 0 0 1px rgba(16,27,45,.08)}
+:root[data-theme="light"] .pill{box-shadow:0 4px 14px rgba(23,38,66,.18)}
+:root[data-theme="light"] .btn:hover:not(:disabled){box-shadow:0 14px 30px rgba(23,38,66,.28),0 0 0 1px rgba(16,27,45,.12)}
 
-
+/* The highlighter pens are translucent brights. Over a white card with dark
+   text they read fine unchanged, but they need a touch more opacity to be
+   visible at all against white rather than against navy. */
+:root[data-theme="light"] mark.hl[data-c="y"]{background:rgba(255,214,60,.55)}
+:root[data-theme="light"] mark.hl[data-c="g"]{background:rgba(88,232,146,.45)}
+:root[data-theme="light"] mark.hl[data-c="p"]{background:rgba(255,140,196,.42)}
+:root[data-theme="light"] mark.hl[data-c="b"]{background:rgba(96,178,255,.45)}
 
 /* ============================================================================
    THE GREEK LAYER — 2026-07-28. Type, glyphs, and the artwork.
@@ -2381,20 +2322,23 @@ h1 .gi,h2 .gi{vertical-align:-.1em;margin-right:.3em;opacity:.85}
 .nav-item .ic,.search-ic,.blip,.fl,.emo{display:inline-flex;align-items:center;justify-content:center}
 .mod-ic .gi{width:25px;height:25px}
 /* the glyph inside a coloured tile is on that colour, so it must be light */
-.mod-ic{color:var(--on-fill)}
+.mod-ic{color:#fff}
 
 /* ---- display type -------------------------------------------------------- */
-/* EB Garamond carries headings and reading text in one family. */
+/* Cinzel is a titling face: it is drawn for capitals at large sizes with air
+   between the letters. Everything it touches is therefore tracked OUT, never
+   in, and h1 is uppercased. Body copy stays EB Garamond — Cinzel is unreadable
+   in a paragraph and was never meant for one. */
 .logo,.glogo,.gtitle,.mod-name,.grouphdr,.nav-label,.stat .n,.gate h2,.hp-name,.hp-sub{
   font-family:var(--font-display);
 }
-.logo{font-weight:700}
-.eyebrow{font-family:var(--font-display);font-weight:600}
-.mod-name{font-weight:700;font-size:17.5px;text-transform:none}
-.grouphdr{font-weight:600}
-.nav-label{}
-.stat .n{font-weight:600}
-h2{font-family:var(--font-display);font-weight:600}
+.logo{letter-spacing:.06em;font-weight:700}
+.eyebrow{font-family:var(--font-display);letter-spacing:.16em;font-weight:600}
+.mod-name{letter-spacing:.045em;font-weight:700;font-size:17.5px;text-transform:uppercase}
+.grouphdr{letter-spacing:.13em;font-weight:600}
+.nav-label{letter-spacing:.19em}
+.stat .n{letter-spacing:.01em;font-weight:600}
+h2{font-family:var(--font-display);letter-spacing:.035em;font-weight:600}
 /* the question stem stays EB Garamond: it is the one place on the page that is
    read for minutes at a time, and a titling face there would be punishing */
 .stem{font-family:var(--font-body)}
@@ -2427,13 +2371,13 @@ button.card.mod-card{display:flex;flex-direction:column;padding:0}
    without reading as broken. The dashboard card is a <div>, so there is no
    disabled state to style; this is what carries it. */
 .mod-card.locked{display:flex;flex-direction:column;padding:0;cursor:default}
-.mod-card.locked:hover{transform:none;box-shadow:none;}
+.mod-card.locked:hover{transform:none;box-shadow:none}
 /* Dim the PAINTING, not the words. This card used to carry opacity:.55, which
    dims the text with everything else: measured against the page that put the
    title, the meta line and the badge at 2.65:1, well under AA, at 10px on the
    badge. The card still sits back — the artwork is what carries "not yet" —
    and the reading stays readable. §6: measured, not habit. */
-.mod-card.locked .mod-art{opacity:var(--light-mod-card-locked-mod-art-opacity,var(--light-mod-art-opacity,.42))}
+.mod-card.locked .mod-art{opacity:.42}
 .mod-card.locked .mod-ic{opacity:.72}
 .mod-card.locked .mod-name{color:var(--ink-2)}
 /* The badge sits on the painting's top corner, not in the title row.
@@ -2447,9 +2391,10 @@ button.card.mod-card{display:flex;flex-direction:column;padding:0}
    --ink-3 on it is unreadable in light mode. */
 .mod-card>.soon{
   position:absolute;top:11px;right:11px;z-index:2;
-  font-size:10px;
-  text-transform:none;padding:3px 8px;border-radius:var(--r-1);
-  background:var(--card);border:1px solid var(--line);color:var(--ink-3)}
+  font-size:10px;letter-spacing:.08em;
+  text-transform:uppercase;padding:3px 8px;border-radius:var(--r-pill);
+  background:var(--card);border:1px solid var(--line);color:var(--ink-3)
+}
 /* Print drops .mod-art, so anchoring to a corner of nothing would land the
    badge on top of the title. Put it back in the flow there. */
 @media print{
@@ -2462,8 +2407,8 @@ button.card.mod-card{display:flex;flex-direction:column;padding:0}
   background-image:linear-gradient(var(--c),var(--c)),var(--art);
   background-size:cover;background-position:center;
   background-blend-mode:color;
-  opacity:var(--light-button-card-locked-hover-mod-art-opacity,var(--light-mod-card-locked-mod-art-opacity,var(--light-button-card-hover-mod-art-opacity,var(--light-mod-art-opacity,.9))));
-  transition:opacity .13s ease,filter .13s ease;
+  opacity:.9;
+  transition:opacity .5s cubic-bezier(.22,1,.36,1),filter .5s cubic-bezier(.22,1,.36,1);
 }
 /* the body sits under the art and carries the padding the card gave up */
 .mod-info{padding:15px 17px 17px;display:flex;flex-direction:column;gap:0}
@@ -2471,10 +2416,10 @@ button.card.mod-card{display:flex;flex-direction:column;padding:0}
 .mod-info::before{
   content:"";position:absolute;left:0;right:0;top:0;height:1px;background:var(--line-2);
 }
-button.card:hover .mod-art{opacity:var(--light-button-card-hover-mod-art-opacity,var(--light-mod-art-opacity,1));filter:saturate(1.12)}
+button.card:hover .mod-art{opacity:1;filter:saturate(1.12)}
 /* on parchment the art is dark against a light card, so it needs less presence */
-:root[data-theme="light"] .mod-art{--light-mod-art-opacity:.82}
-:root[data-theme="light"] button.card:hover .mod-art{--light-button-card-hover-mod-art-opacity:.95}
+:root[data-theme="light"] .mod-art{opacity:.82}
+:root[data-theme="light"] button.card:hover .mod-art{opacity:.95}
 /* The locked card dims its artwork, and the rule that says so is further up —
    but the two rules directly above are (0,3,0) as well, and an equal-specificity
    tie is broken by source order, so up there it loses. This is measured, not
@@ -2484,9 +2429,9 @@ button.card:hover .mod-art{opacity:var(--light-button-card-hover-mod-art-opacity
    the same step down from light's own .82 baseline.
    The theory view's locked card is a real <button class="card">, so the hover
    rule undims it on touch and focus; these two hold it dimmed. */
-:root[data-theme="light"] .mod-card.locked .mod-art{--light-mod-card-locked-mod-art-opacity:.38}
-button.card.locked:hover .mod-art{opacity:var(--light-button-card-locked-hover-mod-art-opacity,var(--light-mod-art-opacity,.42))}
-:root[data-theme="light"] button.card.locked:hover .mod-art{--light-button-card-locked-hover-mod-art-opacity:.38}
+:root[data-theme="light"] .mod-card.locked .mod-art{opacity:.38}
+button.card.locked:hover .mod-art{opacity:.42}
+:root[data-theme="light"] button.card.locked:hover .mod-art{opacity:.38}
 /* the corner blob was drawn for a text-only card; over artwork it is noise */
 .mod-card::after{display:none}
 /* two 300px columns plus the gap need ~615px; below that go single file, where
@@ -2501,24 +2446,24 @@ button.card.locked:hover .mod-art{opacity:var(--light-button-card-locked-hover-m
   background:var(--sheen);background-color:var(--card);
   border:1px solid var(--line-2);border-radius:var(--r);
   padding:24px 30px;margin-bottom:30px;position:relative;overflow:hidden;
-  
-box-shadow:var(--pop) var(--sh),var(--glow);}
+  box-shadow:var(--pop) var(--sh),var(--glow);
+}
 /* a gold rule down the spine, the one ornament on the panel */
 .hero-panel::after{
   content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
-  background:var(--card);opacity:.65;
-background:linear-gradient(180deg,transparent,var(--gold),transparent);}
+  background:linear-gradient(180deg,transparent,var(--gold),transparent);opacity:.65;
+}
 .hp-art img{
-  width:100%;display:block;border-radius:var(--r-1);border:1px solid var(--line-2);
-  
-box-shadow:0 10px 26px var(--sh);}
+  width:100%;display:block;border-radius:var(--r-2);border:1px solid var(--line-2);
+  box-shadow:0 10px 26px var(--sh);
+}
 /* the engraving is printed on parchment; on the dark theme it is lifted off the
    page so it reads as an object rather than a bright rectangle */
-:root .hp-art img{filter:var(--light-hp-art-img-filter,sepia(.2) contrast(1.02) brightness(.94))}
-:root[data-theme="light"] .hp-art img{--light-hp-art-img-filter:none}
-.hp-kicker{font-size:10.5px;text-transform:none;color:var(--ink-4);font-weight:700}
-.hp-name{font-size:33px;text-transform:none;margin:7px 0 3px;color:var(--tx);line-height:1}
-.hp-sub{font-size:12.5px;text-transform:none;color:var(--gold-text);margin-bottom:13px}
+:root .hp-art img{filter:sepia(.2) contrast(1.02) brightness(.94)}
+:root[data-theme="light"] .hp-art img{filter:none}
+.hp-kicker{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-4);font-weight:700}
+.hp-name{font-size:33px;letter-spacing:.07em;text-transform:uppercase;margin:7px 0 3px;color:var(--tx);line-height:1}
+.hp-sub{font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-text);margin-bottom:13px}
 .hp-txt p{margin:0 0 9px;color:var(--ink-2);font-size:15.5px;line-height:1.72;max-width:62ch}
 .hp-txt p:last-child{margin-bottom:0;color:var(--ink-3);font-style:italic}
 @media(max-width:720px){
@@ -2618,7 +2563,7 @@ box-shadow:0 10px 26px var(--sh);}
 .clep.swap .cl-ghost{animation:clSwapOut .46s cubic-bezier(.3,.9,.3,1) forwards}
 .clep.swap .cl-main {animation:clSwapIn  .46s cubic-bezier(.3,.9,.3,1) forwards}
 .clep.swap .cl-band {animation:clTear    .46s steps(4,end)}
-.clep.swap .cl-scan {opacity:var(--light-cl-scan-opacity,.9)}
+.clep.swap .cl-scan {opacity:.9}
 
 /* The light pool she stands on. It was part of the artwork's background and
    was removed with it, so it is redrawn here as a DOM element — it has to
@@ -2650,7 +2595,7 @@ box-shadow:0 10px 26px var(--sh);}
 
 /* ---- projection artefacts ----------------------------------------------- */
 .cl-scan{
-  position:absolute;inset:-6px;pointer-events:none;opacity:var(--light-cl-scan-opacity,.55);mix-blend-mode:var(--light-cl-scan-mix-blend-mode,screen);
+  position:absolute;inset:-6px;pointer-events:none;opacity:.55;mix-blend-mode:screen;
   background:repeating-linear-gradient(180deg,rgba(255,214,150,.17) 0 1px,transparent 1px 3px);
   animation:clScan 2.4s linear infinite;
   -webkit-mask-image:radial-gradient(62% 56% at 50% 44%,#000 38%,transparent 80%);
@@ -2679,16 +2624,16 @@ box-shadow:0 10px 26px var(--sh);}
 /* ---- what she says ------------------------------------------------------ */
 .cl-say{
   position:relative;max-width:270px;min-width:0;
-  background:var(--cl-panel);border:1px solid var(--cl-edge);border-radius:var(--r-1);
+  background:var(--cl-panel);border:1px solid var(--cl-edge);border-radius:var(--r-3);
   padding:11px 30px 12px 14px;
   color:var(--cl-text);font:400 13.3px/1.58 var(--font-body);
-  
+  box-shadow:0 12px 32px var(--sh-deep),0 0 20px rgba(255,150,50,.14);
   opacity:0;transform:translateY(6px) scale(.97);transform-origin:100% 100%;
   transition:opacity .26s cubic-bezier(.22,1,.36,1),transform .26s cubic-bezier(.22,1,.36,1);
   pointer-events:none;
-box-shadow:0 12px 32px var(--sh-deep),0 0 20px rgba(255,150,50,.14);}
+}
 .cl-say.show{opacity:1;transform:none;pointer-events:auto}
-.cl-say b,.cl-say strong{color:var(--light-cl-say-b-color,var(--cl-1));font-weight:700}
+.cl-say b,.cl-say strong{color:var(--cl-1);font-weight:700}
 .cl-say::after{                       /* the tail, pointing at her */
   content:"";position:absolute;right:-6px;bottom:16px;width:10px;height:10px;
   background:var(--cl-panel);border-right:1px solid var(--cl-edge);
@@ -2703,14 +2648,14 @@ box-shadow:0 12px 32px var(--sh-deep),0 0 20px rgba(255,150,50,.14);}
 
 /* ---- the readout and controls ------------------------------------------- */
 .cl-hud{
-  display:none;align-items:center;gap:7px;padding:5px 11px;border-radius:var(--r-1);
+  display:none;align-items:center;gap:7px;padding:5px 11px;border-radius:var(--r-pill);
   background:var(--cl-panel);border:1px solid var(--cl-edge);color:var(--cl-text);
-  font:700 13px/1 var(--font-display);
+  font:700 13px/1 var(--font-display);letter-spacing:.07em;
   font-variant-numeric:tabular-nums;white-space:nowrap;
-  
-box-shadow:0 6px 18px var(--sh-soft);}
+  box-shadow:0 6px 18px var(--sh-soft);
+}
 .clep.timed .cl-hud{display:inline-flex}
-.cl-hud .ph{font-size:9.5px;text-transform:none;opacity:.72;font-weight:700}
+.cl-hud .ph{font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;opacity:.72;font-weight:700}
 .cl-hud.rest{--cl-edge:rgba(127,174,111,.5)}
 .cl-tools{display:flex;gap:5px;opacity:0;transition:opacity .2s}
 .clep:hover .cl-tools,.clep:focus-within .cl-tools{opacity:1}
@@ -2740,13 +2685,11 @@ box-shadow:0 6px 18px var(--sh-soft);}
 
 /* ---- collapsed ---------------------------------------------------------- */
 .cl-mini{
-  display:none;align-items:center;gap:8px;padding:6px 12px 6px 7px;border-radius:var(--r-1);
+  display:none;align-items:center;gap:8px;padding:6px 12px 6px 7px;border-radius:var(--r-pill);
   background:var(--cl-panel);border:1px solid var(--cl-edge);color:var(--cl-text);
-  cursor:pointer;font:700 13px/1 var(--font-display);
-  font-variant-numeric:tabular-nums;transition:transform .13s ease;
-box-shadow:0 8px 22px var(--sh-soft);}
-.cl-mini:hover{transform:translate(-1px,-1px);}
-.cl-mini:active{transform:translate(1px,1px);}
+  cursor:pointer;font:700 13px/1 var(--font-display);letter-spacing:.06em;
+  font-variant-numeric:tabular-nums;box-shadow:0 8px 22px var(--sh-soft);
+}
 .cl-mini svg{filter:drop-shadow(0 0 5px var(--cl-glow))}
 .clep.mini .cl-body,.clep.mini .cl-col{display:none}
 .clep.mini .cl-mini{display:inline-flex}
@@ -2780,8 +2723,8 @@ box-shadow:0 8px 22px var(--sh-soft);}
   --cl-glow:rgba(196,100,20,.26); --cl-glow2:rgba(196,100,20,.12);
   --cl-panel:#fff6e6; --cl-text:#4a2c07; --cl-edge:rgba(164,84,10,.42);
 }
-:root[data-theme="light"] .cl-say b,:root[data-theme="light"] .cl-say strong{--light-cl-say-b-color:#8a4408}
-:root[data-theme="light"] .cl-scan{--light-cl-scan-opacity:.3;--light-cl-scan-mix-blend-mode:multiply}
+:root[data-theme="light"] .cl-say b,:root[data-theme="light"] .cl-say strong{color:#8a4408}
+:root[data-theme="light"] .cl-scan{opacity:.3;mix-blend-mode:multiply}
 
 /* ---- small screens: she gets out of the way ----------------------------- */
 @media(max-width:700px){
@@ -2811,28 +2754,28 @@ box-shadow:0 8px 22px var(--sh-soft);}
   display:grid;grid-template-columns:auto 1fr;gap:30px;align-items:center;
   background:var(--sheen);background-color:var(--card);
   border:1px solid var(--line-2);border-radius:var(--r);
-  padding:24px 28px;margin-bottom:28px;
-box-shadow:var(--pop) var(--sh),var(--glow);}
+  padding:24px 28px;margin-bottom:28px;box-shadow:var(--pop) var(--sh),var(--glow);
+}
 .sr-wrap{position:relative;width:172px;height:172px;flex:0 0 auto}
 .sr-ring{display:block;width:100%;height:100%}
 .sr-mid{position:absolute;inset:0;display:flex;flex-direction:column;
   align-items:center;justify-content:center;gap:5px;pointer-events:none}
-.sr-time{font:700 34px/1 var(--font-display);color:var(--tx);
+.sr-time{font:700 34px/1 var(--font-display);letter-spacing:.03em;color:var(--tx);
   font-variant-numeric:tabular-nums}
-.sr-ph{font-size:10.5px;text-transform:none;color:var(--ink-3);
+.sr-ph{font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);
   font-weight:700;text-align:center;max-width:124px;line-height:1.45}
 .sess-side{min-width:0}
 /* The shared .g3 asks for a 258px minimum column, which is right for the full
    page and wrong beside a 172px ring — it wrapped three tiles into 2 + 1.
    Inside the panel the three are pinned, and only collapse on a phone. */
-.sess-live .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.sess-live .grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
 .sess-live .stat{padding:13px 14px}
 .sess-live .stat .n{font-size:25px}
 .sess-live .stat .emo{right:9px;top:8px;font-size:16px}
 .sess-setup h2{margin:23px 0 10px;font-size:15px}
 .sess-setup h2:first-of-type{margin-top:0}
 .sess-sum{
-  margin:21px 0 16px;padding:13px 16px;border-radius:var(--r-1);
+  margin:21px 0 16px;padding:13px 16px;border-radius:var(--r-3);
   background:var(--tint);border:1px solid var(--line);color:var(--ink-2);font-size:14px;
 }
 .sess-sum b{color:var(--tx)}
@@ -2848,161 +2791,16 @@ box-shadow:var(--pop) var(--sh),var(--glow);}
 .bak-btn{position:relative}
 .bak-dot{
   position:absolute;right:6px;top:6px;width:6px;height:6px;border-radius:50%;
-  background:var(--ok);
-box-shadow:0 0 0 2px var(--bg-2);}
-.bak-dot.warn{background:var(--bad)}
-/* the dot's colour is not the only warning — a mark rides on top of it */
-.bak-dot.warn::after{
-  content:"!";position:absolute;inset:-4px;display:flex;align-items:center;justify-content:center;
-  font-size:8px;line-height:1;font-weight:900;color:var(--card);
+  background:var(--ok);box-shadow:0 0 0 2px var(--bg-2);
 }
+.bak-dot.warn{background:var(--bad)}
 .bak-list{display:flex;flex-direction:column;gap:7px;margin-top:15px;max-height:272px;overflow:auto}
 .bak-row{
-  display:flex;align-items:center;gap:13px;padding:9px 13px;border-radius:var(--r-1);
+  display:flex;align-items:center;gap:13px;padding:9px 13px;border-radius:var(--r-3);
   background:var(--tint);border:1px solid var(--line);
 }
 .bak-when{font-weight:700;font-size:13.5px;color:var(--tx);flex:0 0 auto}
 .bak-meta{font-size:12px;color:var(--ink-3);flex:1;min-width:0}
-
-/* Stage 1: a casebook page. The shipped Latin subsets have no smcp feature;
-   size and weight carry hierarchy, and fallback small-cap synthesis is disabled.
-   --ok remains a compatibility alias for plain ink; --bad is wrong ink and
-   --warn / --gold-text are flag ink; student annotations have their own washes. */
-@media screen{
-  body{font-synthesis: none;font-variant-numeric:lining-nums tabular-nums}
-  h1{font-size:32px;letter-spacing:-.02em}
-  h2{font-size:21px}
-  .grouphdr,.nav-label,.eyebrow,.res-tag,.bank-lbl,.mklabel,.hp-kicker,.hp-sub,
-  .keys-h,.flow-title,.th-num,.sr-ph{font-size:12px;font-weight:700}
-  .pill,.tag,.bankchip,.chip,.conf-b{font-size:12px}
-  .mod-name{font-size:21px;line-height:1.2}
-  .mod-card>*:not(.mod-art){--c:var(--fill)}
-  .card,.stat,.ch-row,.qcard,.th-ch,.day,.modelans,.explain,.fbox,.conf,.bk-sheet,
-  .hero-panel,.sess-live{border:1px solid var(--line-2);background:var(--card)}
-  button.card:hover:not(:disabled),.ch-row:hover:not(:disabled),.th-ch:hover:not(:disabled),
-  .btn:hover:not(:disabled),.day:hover,.chip:hover,.conf-b:hover{transform:none;background:var(--bg-2)}
-  .opt.sel{border-color:var(--ink-3);background:var(--bg-2)}
-  .opt.correct,.opt.wrong{transform:none}
-  .opt.wrong .ltr{background:var(--bad-bg);color:var(--bad)}
-  .opt.correct .ltr,.mk.done.on,.mk.miss.on{background:var(--fill);color:var(--tx)}
-  .mk.miss.on{color:var(--bad)}
-  .btn,.btn.go,.eyebrow,.pill,.tag,.chip,.bankchip.on,.qg.cur,.mod-ic,.th-table th{
-    background:var(--fill);color:var(--tx);border:1px solid var(--line-2);
-  }
-  .btn.flag.on,.qg.flag,.qg.part,.verdict.part{background:var(--gold-bg);color:var(--warn)}
-  .conf,.objective,.flow,.fbox.alert,.fb.y,.fb.n,.th-intro{background:var(--bg-2);border-color:var(--line-2)}
-  .fb.n b{color:var(--tx)}
-  .cl-say,.cl-mini,.cl-readout,.cl-tool{background:var(--card);color:var(--tx);border-color:var(--line-2)}
-  .cl-say b,.cl-say strong{color:var(--light-cl-say-b-color,var(--tx))}
-  .clep.drag .cl-body{box-shadow:0 8px 20px var(--sh-soft)}
-  .pen.on{outline:2px solid var(--warn);outline-offset:2px}
-  .res-item:focus,.search:focus,.keyin:focus,.caseinput:focus,.pind:focus{
-    outline:2px solid var(--ink-3);outline-offset:2px;
-  }
-  .nav-item.on{border-left:2px solid var(--rail-dim)}
-  .toast{background:var(--card);color:var(--tx)}
-  .modal,.results{background:var(--light-results-background,var(--light-modal-background,var(--card)))}
-  /* These classes receive literal subject colours inline. !important is scoped
-     to their paint properties; inline geometry and handlers remain authoritative. */
-  .mod-ic,.tag,.pill,.bankchip.on{background:var(--fill)!important;color:var(--tx)!important}
-  .chip{background:var(--fill)!important;color:var(--tx)!important}
-  /* Colour pass, 2026-09-07: the eyebrow is the subject's own name, so it
-     reads its colour off --subject when the page has one (set below by the
-     four .page:has() rules) and falls back to flat fill everywhere else —
-     Weak/Review/Flagged/Mock/Schedule eyebrows use a fixed feature colour,
-     not a subject hex, so they never match and stay exactly as before. */
-  .eyebrow{background:var(--subject,var(--fill))!important;color:var(--subject-fg,var(--tx))!important}
-  .ch-dot{background:var(--line-2)!important;border-color:var(--line-2)!important}
-  .ch-acc,.stat .n,.ringmeta .a,.page-sub b,.res-tag,.movednote{color:var(--tx)!important}
-  /* .ring (the Home dashboard's per-module accuracy ring) already carries its
-     own module colour as an inline stroke= attribute — it needs no flatten
-     removed. .sr-ring is the session's live ring, a reading surface, and
-     stays flat. */
-  .sr-ring circle[stroke]:last-of-type{stroke:var(--ink-3)!important}
-  .mod-info [style*="background"],.qprog [style*="background"]{background:var(--fill)!important}
-  .doc-head .eyebrow,.bk-title .eyebrow{background:var(--subject,var(--fill))!important;color:var(--subject-fg,var(--tx))!important}
-  .qhead>.pill:first-of-type{background:var(--fill)!important;color:var(--tx)!important}
-}
-
-/* Literal colours and obsolete radius tokens in generated inline styles are
-   bridged here until the render paths can be edited in a later stage. */
-@media screen{
-  .page{background:var(--bg)}
-  .pill.ghost{background:var(--bg-2)!important;color:var(--ink-2)!important}
-  [style*="text-transform:uppercase"]{text-transform:none!important;letter-spacing:normal!important}
-  .cl-say::after{background:var(--card);border-color:var(--line-2)}
-  .cl-hud{background:var(--card);color:var(--tx);border-color:var(--line-2)}
-  .cl-say b,.cl-say strong{color:var(--light-cl-say-b-color,var(--tx)!important)}
-  .qfig img,.qzoom img{background:var(--card)}
-  .opt.correct .ltr{border-color:var(--line-2)}
-  .btn[style*="--bad"]{background:var(--bad-bg)!important;color:var(--bad)!important;border-color:var(--bad)!important}
-  .grouphdr{color:var(--tx);border-left:3px solid var(--subject,var(--line-2));padding-left:10px}
-  .th-h{border-left:3px solid var(--mod,var(--line-2));padding-left:10px}
-  .th-sec{border-left-color:var(--line-2)}
-  .th-num{color:var(--ink-3)}
-  .wbadge.must,.wbadge.high,.wbadge.know{background:var(--fill);color:var(--tx);border-color:var(--line-2)}
-  .hp-sub{color:var(--ink-2)}
-  .ring circle:first-of-type{stroke:var(--line-2)}
-  .bk-prog>*{background:var(--subject,var(--line-2))!important}
-  .syncdot.err{background:var(--bad)}
-}
-@media screen{
-  .page:has(>.eyebrow[style*="#b4472f"]){--subject:var(--ent);--subject-fg:var(--on-subject)}
-  .rail .nav-item[onclick*="id:'ent'"] .ic{background:var(--ent);color:var(--on-subject);border-radius:50%}
-}
-@media screen{
-  .page:has(>.eyebrow[style*="#5c7a52"]){--subject:var(--ophtho);--subject-fg:var(--on-subject)}
-  .rail .nav-item[onclick*="id:'ophtho'"] .ic{background:var(--ophtho);color:var(--on-subject);border-radius:50%}
-}
-@media screen{
-  .page:has(>.eyebrow[style*="#6d4c7d"]){--subject:var(--neuro);--subject-fg:var(--on-subject)}
-  .rail .nav-item[onclick*="id:'neuropsych'"] .ic{background:var(--neuro);color:var(--on-subject);border-radius:50%}
-}
-@media screen{
-  .page:has(>.eyebrow[style*="#2e5f8a"]){--subject:var(--peds);--subject-fg:var(--on-subject)}
-  .rail .nav-item[onclick*="id:'pediatrics'"] .ic{background:var(--peds);color:var(--on-subject);border-radius:50%}
-}
-/* Colour pass, 2026-09-07 (Change 4): a subject's own colour reaches a bit
-   further now than the .grouphdr rule above and the rail dot — the primary
-   button that starts a subject's chapter/quiz, and the "due"/"flagged"
-   module chip on Review and Weakest-chapters-adjacent browse pages. Never on
-   the quiz, the case or the session — those stay flat by construction,
-   because .filterbar>.btn.go only exists at the top of a browse page and the
-   chip rule below is scoped to the two view names by hand. */
-@media screen{
-  .filterbar>.btn.go:first-child{
-    background:var(--subject,var(--fill));color:var(--subject-fg,var(--tx));
-    border-color:var(--subject,var(--line-2));
-  }
-  body[data-view="review"] .chip.on,body[data-view="flagged"] .chip.on{
-    background:var(--c,var(--fill))!important;color:var(--on-subject,var(--on-fill))!important;
-  }
-}
-
-/* On paper the teacher's annotations are black ink on white A4 stock.
-   The original print selector and all pagination rules remain above. */
-@media print{
-  @page{size:A4}
-  .doc-head,.th-h,.th-table th,.th-table tbody tr:nth-child(odd) td,
-  .th-body blockquote,.wbadge,.eyebrow{background:#fff!important;color:#14181f!important}
-  .doc-head h1,.doc-head .eyebrow,.doc-head .doc-meta,
-  .th-h h2,.th-h .th-num,.th-h .wbadge,.th-table th strong,.th-table th em,
-  .th-body .lt{color:#14181f!important}
-  .doc-head .doc-meta,.th-h{border-color:#b9c1cd!important}
-  .th-table th{border-bottom:1pt solid #b9c1cd!important}
-}
-
-/* Conditional theme tokens preserve the existing artwork and furniture values. */
-.railprof .rav{border-color:var(--light-railprof-rav-border-color,rgba(255,255,255,.22))}
-.streak{border-color:var(--light-streak-border-color,rgba(255,201,74,.3))}
-/* Palette pass, 2026-09-08: a subject's colour reaches its own browse and
-   theory pages through body[data-subject], set in the render path. Quiz,
-   mock, session and case views carry no subject id and so stay flat, which
-   is the alive-to-browse / calm-to-read rule. */
-body[data-subject="ent"]{--subject:var(--ent);--subject-fg:var(--on-subject)}
-body[data-subject="ophtho"]{--subject:var(--ophtho);--subject-fg:var(--on-subject)}
-body[data-subject="neuropsych"]{--subject:var(--neuro);--subject-fg:var(--on-subject)}
-body[data-subject="pediatrics"]{--subject:var(--peds);--subject-fg:var(--on-subject)}
 </style>
 </head>
 <body>
@@ -3185,8 +2983,8 @@ function warnSaveFailure(message,id='saveWarning'){
   const box=document.createElement('div');
   box.id=id;
   box.setAttribute('role','alert');
-  box.innerHTML='<span class="warnico" aria-hidden="true">!</span>'+(message||'<p><strong>Saving failed during this visit.</strong> Recent progress may be missing from storage. Keep this tab open and download a copy before leaving.</p>'+
-    '<button class="btn sec" onclick="exportData()">Download progress</button>');
+  box.innerHTML=message||'<p><strong>Saving failed during this visit.</strong> Recent progress may be missing from storage. Keep this tab open and download a copy before leaving.</p>'+
+    '<button class="btn sec" onclick="exportData()">Download progress</button>';
   const page=document.getElementById('page');
   page.parentNode.insertBefore(box,page);
   if(!message)toast('Progress could not be saved. Please read the saving warning.');
@@ -3473,8 +3271,6 @@ const ICONS={
   /* dashboard stats */
   stylus:'M4 20l1-4L16 5l3 3L8 19zM14.5 6.5l3 3',
   target:'M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0-18 0@M12 12m-4.6 0a4.6 4.6 0 1 0 9.2 0a4.6 4.6 0 1 0-9.2 0@M12 12m-1.3 0a1.3 1.3 0 1 0 2.6 0a1.3 1.3 0 1 0-2.6 0',
-  /* the mark a teacher makes on a right answer */
-  check:'M5 12.5l4.5 4.5L19 7',
   olive:'M4.5 19.5C10 18 15.5 13 19 5M9.2 15.4c-1.6.4-3-.4-3.4-2 1.6-.4 3 .4 3.4 2zM12.8 10.9c-1.6.4-3-.4-3.4-2 1.6-.4 3 .4 3.4 2zM16.4 6.4c-1.6.4-3-.4-3.4-2 1.6-.4 3 .4 3.4 2z',
   /* interface */
   search:'M11 11m-7 0a7 7 0 1 0 14 0a7 7 0 1 0-14 0@M20 20l-4.2-4.2',
@@ -5170,7 +4966,7 @@ function drawProfileEditor(isEdit){
    </div>
    <div style="margin-bottom:16px">
      <button class="btn sec" onclick="document.getElementById('pfPhoto').click()">Upload a photo</button>
-     ${draft.av.t==='p'?`<button class="ai-p" onclick="draft.av={t:'g',v:AVATARS[0],c:draft.av.c,f:draft.av.f};drawProfileEditor(${isEdit})" style="border:2px solid var(--line-2);padding:7px 13px;border-radius:var(--r-1);font-size:12px;font-weight:700;margin-left:7px">Use a portrait instead</button>`:''}
+     ${draft.av.t==='p'?`<button class="ai-p" onclick="draft.av={t:'g',v:AVATARS[0],c:draft.av.c,f:draft.av.f};drawProfileEditor(${isEdit})" style="border:2px solid var(--line-2);padding:7px 13px;border-radius:var(--r-pill);font-size:12px;font-weight:700;margin-left:7px">Use a portrait instead</button>`:''}
      <input type="file" id="pfPhoto" accept="image/*" style="display:none" onchange="pfUpload(event,${isEdit})">
    </div>
    <div style="font-size:11px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin-bottom:8px">PIN (optional)</div>
@@ -5248,7 +5044,7 @@ function manageProfiles(){
     const mfr=mav.f||'plain';
     const minner=avFrame(mfr,`<img src="${msrc}" alt="">`,true);
     h+=`<button class="ch-row" style="margin-bottom:8px" onclick="editProfile('${p.id}')">
-      <div class="rav${mfr!=='plain'?' hasfr':''}" style="width:34px;height:34px;border-radius:var(--r-1);display:flex;align-items:center;justify-content:center;font-size:18px;overflow:hidden;border:${mfr==='plain'?'2px solid '+mav.c:'0'};background:${mav.c};--fr-c:${mav.c};--fr-t:3px">${minner}</div>
+      <div class="rav${mfr!=='plain'?' hasfr':''}" style="width:34px;height:34px;border-radius:var(--r-2);display:flex;align-items:center;justify-content:center;font-size:18px;overflow:hidden;border:${mfr==='plain'?'2px solid '+mav.c:'0'};background:${mav.c};--fr-c:${mav.c};--fr-t:3px">${minner}</div>
       <span class="ch-name">${esc(p.name)}</span>
       <span class="ch-count">${p.pin?'PIN set':'no PIN'}</span></button>`;
   });
@@ -5328,9 +5124,6 @@ function render(){
   const p=$('page');
   // Drives body[data-view] in CSS — the alive-to-browse / calm-to-read gate.
   document.body.dataset.view=view.name||'home';
-  // A module or theory view carries its subject; every other view stays flat.
-  const subjId=view.id||view.mod||'';
-  if(subjId)document.body.dataset.subject=subjId;else delete document.body.dataset.subject;
   /* ⚠️ Drop the reader before EVERY render. bk-on is set by bkInit() on the way
      into a chapter; left on, its overflow:hidden and fixed column height apply
      to whatever view comes next and clip it. Clearing here means only the
@@ -5363,21 +5156,10 @@ function revealOnScroll(root){
   if(!items.length||!('IntersectionObserver' in window)) return;
   _revealObs=new IntersectionObserver((entries,obs)=>{
     entries.forEach(e=>{ if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target)} });
-  /* Reveal BEFORE the element arrives, not after. A negative bottom margin
-     held the fade until a row was already 40px inside the viewport, so on a
-     long list every row was blank at the moment you looked at it and only
-     resolved a third of a second later. Scrolling could not outrun a frame
-     budget -- it was outrunning the reveal. Growing the root downward starts
-     the fade while the row is still below the fold, so it has finished
-     arriving by the time it is on screen. */
-  },{rootMargin:'0px 0px 220px 0px',threshold:.06});
+  },{rootMargin:'0px 0px -40px 0px',threshold:.06});
   items.forEach((el,i)=>{
     el.classList.add('reveal');
-    /* The stagger belongs to the entrance, where a handful of elements arrive
-       together and the offset reads as one movement. Anything revealed later,
-       by scrolling, arrives alone -- a delay there is not rhythm, it is just
-       the row being late. Only the first screenful is staggered. */
-    el.style.transitionDelay=(i<9?i*18:0)+'ms';
+    el.style.transitionDelay=Math.min(i,10)*26+'ms';
     _revealObs.observe(el);
   });
 }
@@ -5602,7 +5384,7 @@ function vModule(p){
       const cq=qsIn(cid);
       const ca=accuracy(cq);
       const cd=cq.filter(q=>isAnswered(q.id)).length;
-      const dot=cq.length?accColor(ca):'transparent';
+      const dot=cq.length?(ca===null?'#fff':accColor(ca)):'transparent';
       const resume=(S.resumeByChapter||{})[cid];
       h+=`<button class="ch-row" ${cq.length?'':'disabled'} onclick="startChapter('${cid}')">
         <span class="ch-dot" style="background:${dot}"></span>
@@ -5839,7 +5621,7 @@ function vCase(p,q,m,prev){
   const flagged=!!S.flags[q.id];
   const g=(Q.shown&&!Q.peek)?gradeCase(q,Q.txt):null;
   const verdict=Q.peek?['bad',ico('eye',18),'Revealed — not scored']
-    :!g?null:(g.ok?['ok',ico('check',18),'Spot on']
+    :!g?null:(g.ok?['ok',ico('target',18),'Spot on']
     :g.got>0?['part',ico('hourglass',18),'Partly right — '+g.got+' of '+g.total+' key points']
     :['bad',ico('laurel',18),'Not quite']);
 
@@ -6004,7 +5786,7 @@ function vQuiz(p){
       </div></div>`;
   }else{
     const ok=Q.sel===q.answer;
-    h+=`<div class="verdict ${ok?'ok':'bad'}"><span class="big">${ok?ico('check',26):ico('laurel',26)}</span>
+    h+=`<div class="verdict ${ok?'ok':'bad'}"><span class="big">${ok?ico('target',26):ico('laurel',26)}</span>
       ${ok?'Correct.':'Not quite — the answer is '+OPT_LETTERS[q.answer]}</div>`;
 
     if(!prev||prev.conf===undefined){
@@ -6212,11 +5994,7 @@ let EXAM_T=null;
 function examLeft(){ return Q.exam?Math.max(0,Q.exam.end-Date.now()):0 }
 function examClockText(){
   const s=Math.round(examLeft()/1000);
-  const digits=String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0');
-  const cls=examClockClass();
-  /* colour is not the only warning: the state is named beside the digits too */
-  const word=cls==='out'?' Time expired':cls==='low'?' Low time':'';
-  return digits+word;
+  return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0');
 }
 function examClockClass(){ const s=examLeft()/1000; return s<=30?'out':s<=120?'low':'' }
 /* Repaint one node. render() once a second would rebuild the stem the student
@@ -6508,7 +6286,7 @@ function jumpFirstWrong(){
 
 /* ============ HIGHLIGHTER ============ */
 let armed='y';           /* active pen: y/g/p/b, or 'er' to erase */
-const PENS=[['y','Ochre'],['g','Sage'],['p','Dusty rose'],['b','Slate']];
+const PENS=[['y','Yellow'],['g','Green'],['p','Pink'],['b','Blue']];
 
 function setPen(c){armed=(armed===c)?null:c;render()}
 
@@ -6872,6 +6650,8 @@ function paintSessionLive(){
   if(ph)ph.textContent=s.paused?'Paused':(s.phase==='focus'?`Focus · block ${s.cycle} of ${s.plan.cycles}`:'Break');
   const st=sessStats(s);
   const n=$('sessCount'); if(n)n.textContent=st.n;
+  const a=$('sessAcc');
+  if(a){a.textContent=st.acc===null?'—':st.acc+'%'; a.style.color=accColor(st.acc)}
   const f=$('sessFocus'); if(f)f.textContent=Math.round(sessFocusMs(s)/60000);
 }
 function sessSetDraft(k,v){ sessDraft[k]=v; render() }
@@ -6897,6 +6677,7 @@ function vSession(p){
       <div class="sess-side">
         <div class="grid g3" style="margin:0 0 18px">
           <div class="stat"><span class="emo">${ico('stylus',20)}</span><div class="n" id="sessCount">${st.n}</div><div class="l">Answered now</div></div>
+          <div class="stat"><span class="emo">${ico('target',20)}</span><div class="n" id="sessAcc" style="color:${accColor(st.acc)}">${st.acc===null?'—':st.acc+'%'}</div><div class="l">This session</div></div>
           <div class="stat"><span class="emo">${ico('clepsydra',20)}</span><div class="n" id="sessFocus">${Math.round(sessFocusMs(s)/60000)}</div><div class="l">Minutes focused</div></div>
         </div>
         <div class="filterbar">
@@ -7042,7 +6823,7 @@ function vSchedule(p){
     const landed=landing[d.date]||[];
 
     h+=`<div class="${cls.join(' ')}">
-      <span class="day-date"><span class="day-d">${dd}</span><br><span class="day-w">${wd}${isToday&&!ed?' \u00b7 today':''}${!ed&&anyMissed?' \u00b7 missed':(!ed&&allDone?' \u00b7 done':'')}</span></span>
+      <span class="day-date"><span class="day-d">${dd}</span><br><span class="day-w">${wd}${isToday&&!ed?' \u00b7 today':''}</span></span>
       <span class="day-body">`;
 
     if(ed){
