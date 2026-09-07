@@ -1836,11 +1836,13 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
 .modal-bg{
   position:fixed;inset:0;background:var(--light-modal-bg-background,rgba(0,0,0,.5));z-index:300;
   display:none;align-items:center;justify-content:center;padding:20px;backdrop-filter:var(--light-modal-bg-blur,blur(3px));
+  overflow-y:auto;overscroll-behavior:contain;
 }
 .modal-bg.show{display:flex}
 .modal{
   border-radius:var(--r);padding:27px;
   max-width:460px;width:100%;animation:pop .3s cubic-bezier(.34,1.56,.64,1);
+  margin:auto;flex-shrink:0;
 }
 .modal h3{margin:0 0 9px;font-size:20px;font-weight:700;}
 .modal p{margin:0 0 19px;color:var(--ink-2);font-size:14px;line-height:1.6;font-weight:500}
@@ -3062,14 +3064,26 @@ function warnSaveFailure(message,id='saveWarning'){
 warnSaveFailure.checkData=function(){
   const missing=[];
   const subjects=[
-    ['ENT',['Q_ENT','C_ENT'],['T_ENT']],
-    ['Pediatrics',['Q_PEDS','Q_PEDS_EP','Q_PEDS_EP2','C_PEDS'],['T_PEDS']],
-    ['Ophthalmology',['Q_OPHTHO','C_OPHTHO'],['T_OPHTHO']],
-    ['Neuro/Psych',['Q_NEURO','C_NEURO'],['T_NEURO']]
+    ['ENT','ent',['Q_ENT','C_ENT'],['T_ENT']],
+    ['Pediatrics','pediatrics',['Q_PEDS','Q_PEDS_EP','Q_PEDS_EP2','C_PEDS'],['T_PEDS']],
+    ['Ophthalmology','ophtho',['Q_OPHTHO','C_OPHTHO'],['T_OPHTHO']],
+    ['Neuro/Psych','neuropsych',['Q_NEURO','C_NEURO'],['T_NEURO']]
   ];
+  /* The launch build leaves out the data for a locked subject on purpose, and
+     every theory file while that section is locked. Looking for those files is
+     looking for something the build was told not to ship, which is why the
+     upload showed all four subjects failing while the rail counted 4,049
+     questions. Only the files that should be present are checked. */
+  let locked=[];
+  try{if(typeof LOCKED_MODULES!=='undefined'&&Array.isArray(LOCKED_MODULES))locked=LOCKED_MODULES}catch(e){}
+  let notesLocked=false;
+  try{notesLocked=typeof THEORY_LOCKED!=='undefined'&&!!THEORY_LOCKED}catch(e){}
   subjects.forEach(s=>{
-    if(s[1].some(k=>!Array.isArray(window[k]))||s[2].some(k=>
-      !window[k]||typeof window[k]!=='object'||Array.isArray(window[k])))missing.push(s[0]);
+    if(locked.indexOf(s[1])>=0)return;
+    const banksGone=s[2].some(k=>!Array.isArray(window[k]));
+    const notesGone=!notesLocked&&s[3].some(k=>
+      !window[k]||typeof window[k]!=='object'||Array.isArray(window[k]));
+    if(banksGone||notesGone)missing.push(s[0]);
   });
   /* MODULES is a lexical constant, so looking on window would falsely report
      a failure on every healthy boot. Without the catalogue no subject can open. */
