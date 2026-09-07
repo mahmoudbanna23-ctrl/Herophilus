@@ -28,8 +28,11 @@ const inject='<script>'
   +'<style>*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1!important}</style>';
 const h=html.indexOf('<head>');
 html=html.slice(0,h+6)+'\n'+inject+'\n'+html.slice(h+6);
+// A fresh profile must choose a semester before its question pool and UI render.
+// Complete that user action through chooseTerm(), as the published content is y4s2.
 html+='\n<script>window.addEventListener("load",function(){setTimeout(function(){'
-  +'Promise.resolve(enterProfile(profiles[0])).then(function(){window.__ready=1});'
+  +'Promise.resolve(enterProfile(profiles[0])).then(function(){'
+  +'termFields.pick={year:4,semester:2};chooseTerm();window.__ready=1});'
   +'},1200)});<\/script>\n';
 fs.writeFileSync(INDEX,html);
 const BS = String.fromCharCode(92);
