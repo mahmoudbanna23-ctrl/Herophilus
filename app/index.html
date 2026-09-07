@@ -365,6 +365,7 @@ input{font-family:inherit;font-size:inherit}
 @media(max-width:520px){ .kbd-btn{display:none} }
 .tb-btn{padding:7px 12px;border-radius:var(--r-1);font-size:12.5px;color:var(--ink-3);font-weight:700;transition:background .13s,transform .13s}
 .tb-btn:hover{background:var(--bg-2);color:var(--tx);transform:translateY(-1px)}
+.tb-btn:active{transform:translateY(1px)}
 /* Touch. The nav rows are 36px tall and the topbar buttons 33-36px, both under
    the 44px minimum. The nav is a vertical list, so it can simply grow. The
    topbar cannot: four 44px buttons would push a sticky bar to ~70px and take
@@ -488,6 +489,7 @@ button.card:active:not(:disabled){transform:translate(1px,1px);}
   transition:transform .13s ease,background-color .15s ease,border-color .15s ease;
 }
 .ch-row:hover:not(:disabled){transform:translate(-2px,-2px);}
+.ch-row:active:not(:disabled){transform:translate(1px,1px);}
 .ch-row:disabled{opacity:.45;cursor:default;border-style:dashed}
 .ch-dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;border:2px solid var(--line-2)}
 .ch-name{flex:1;font-size:14px;font-weight:700}
@@ -626,6 +628,10 @@ button.card:active:not(:disabled){transform:translate(1px,1px);}
   transition:transform .12s ease,border-color .12s;
 }
 .opt:hover:not(:disabled){border-color:var(--line-2);transform:translateX(4px);}
+/* Hover slides the row four pixels out; a press has to travel back toward the
+   page, not past it. Landing at one pixel gives the same three-pixel movement
+   the buttons use, so pressing an option feels like pressing anything else. */
+.opt:active:not(:disabled){transform:translateX(1px);}
 .opt:disabled{cursor:default}
 .opt .ltr{
   width:26px;height:26px;border-radius:var(--r-1);border:2.5px solid var(--line-2);
@@ -685,7 +691,7 @@ button.card:active:not(:disabled){transform:translate(1px,1px);}
   resize:vertical;
   transition:transform .18s ease;
 }
-.caseinput:focus{outline:none;transform:translate(-1px,-1px);}
+.caseinput:focus{border-color:var(--line-2);outline:none;transform:translate(-1px,-1px);}
 .caseinput:disabled{opacity:.75;cursor:default}
 .caseinput::placeholder{color:var(--ink-2);opacity:.6}
 .modelans{
@@ -712,6 +718,7 @@ button.card:active:not(:disabled){transform:translate(1px,1px);}
   background:var(--card);font-weight:700;transition:transform .12s ease;
 }
 .conf-b:hover{transform:translateY(-2px);}
+.conf-b:active{transform:translateY(1px);}
 .conf-b.on{background:var(--fill);color:var(--on-fill)}
 
 .explain{margin-top:18px;border:1px solid var(--line-2);border-radius:var(--r-1);overflow:hidden;}
@@ -760,6 +767,7 @@ button.card:active:not(:disabled){transform:translate(1px,1px);}
   transition:transform .13s;
 }
 .day:hover{transform:translate(-1px,-1px);}
+.day:active{transform:translate(1px,1px);}
 .day.rest{background:var(--bg-2);opacity:.72;border-style:dashed}
 .day.missed{background:var(--bad-bg);border-color:var(--bad)}
 .day.done{background:var(--bg-2);border-color:var(--line-2)}
@@ -901,7 +909,9 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
 .ed-lab{width:132px;flex-shrink:0}
 .ed-txt{flex:1;min-width:150px}
 .ed-lab:focus,.ed-txt:focus{border-color:var(--line-2);outline:none}
-.ed-col{width:30px;height:30px;border-radius:var(--r-1);border:2.5px solid var(--line-2);flex-shrink:0;cursor:pointer}
+.ed-col{width:30px;height:30px;border-radius:var(--r-1);border:2.5px solid var(--line-2);flex-shrink:0;cursor:pointer;transition:transform .13s ease}
+.ed-col:hover{transform:scale(1.08);}
+.ed-col:active{transform:scale(0.96);}
 .ed-x{
   width:29px;height:29px;border-radius:var(--r-1);border:2px solid var(--bad);color:var(--bad);
   background:var(--card);font-weight:700;flex-shrink:0;font-size:13px;
@@ -924,11 +934,6 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
   border:2.5px dashed var(--line-2);border-radius:var(--r-1);background:var(--card)}
 .newday input[type=date]{padding:8px 11px;border:2px solid var(--line-2);border-radius:var(--r-1);
   font-family:inherit;font-size:13px;font-weight:600;background:var(--card);color:var(--tx)}
-.palette{display:flex;gap:6px;flex-wrap:wrap}
-.pal{width:24px;height:24px;border-radius:var(--r-1);border:2.5px solid var(--line-2);cursor:pointer}
-.pal.on{transform:translateY(-3px)}
-
-
 /* ---------- Profile gate ----------
    TWO STEPS: sign in, then choose or create a profile. showGate() renders one
    at a time and re-writes innerHTML to move between them, which is also what
@@ -1541,7 +1546,8 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
 .bk-prog i{display:block;height:100%;border-radius:var(--r-1);background:var(--gold);
   transition:width .42s cubic-bezier(.22,1,.36,1)}
 /* Click the outer thirds of the sheet to turn, as you would a page. */
-.bk-on .bk-tap{position:absolute;top:0;bottom:0;width:11%;cursor:pointer;z-index:2}
+.bk-on .bk-tap{position:absolute;top:0;bottom:0;width:11%;cursor:pointer;z-index:2;transition:opacity .13s ease}
+.bk-on .bk-tap:active{opacity:.2}
 .bk-on .bk-tap.l{left:0}
 .bk-on .bk-tap.r{right:0}
 @media (max-width:700px){
@@ -1991,6 +1997,7 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
   font-family:inherit;font-size:13px;font-weight:700;
   transition:transform .18s ease,background .18s,color .18s}
 .bankchip:hover{transform:translateY(-2px)}
+.bankchip:active{transform:translateY(1px);}
 /* Off-state is deliberately flat and grey: which sources are live must be
    readable at a glance, or you sit an exam on a filtered set without noticing. */
 /* White text is correct again as of the Greek palette: bronze #9a6b1f, aegean
@@ -2019,6 +2026,7 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
   transition:transform .13s ease;
 }
 .chip:hover{transform:translate(-1px,-1px);}
+.chip:active{transform:translate(1px,1px);}
 /* fallback is --fill, not --ink: --ink is near-white since the redesign, so an
    unset --c would have made a white chip carrying white text */
 .chip.on{background:var(--c,var(--fill));color:var(--on-fill)}
@@ -2511,7 +2519,7 @@ button.card.mod-card{display:flex;flex-direction:column;padding:0}
   background-size:cover;background-position:center;
   background-blend-mode:color;
   opacity:var(--light-button-card-locked-hover-mod-art-opacity,var(--light-mod-card-locked-mod-art-opacity,var(--light-button-card-hover-mod-art-opacity,var(--light-mod-art-opacity,.9))));
-  transition:opacity .5s cubic-bezier(.22,1,.36,1),filter .5s cubic-bezier(.22,1,.36,1);
+  transition:opacity .13s ease,filter .13s ease;
 }
 /* the body sits under the art and carries the padding the card gave up */
 .mod-info{padding:15px 17px 17px;display:flex;flex-direction:column;gap:0}
@@ -2791,8 +2799,10 @@ button.card.locked:hover .mod-art{opacity:var(--light-button-card-locked-hover-m
   display:none;align-items:center;gap:8px;padding:6px 12px 6px 7px;border-radius:var(--r-1);
   background:var(--cl-panel);border:1px solid var(--cl-edge);color:var(--cl-text);
   cursor:pointer;font:700 13px/1 var(--font-display);
-  font-variant-numeric:tabular-nums;
+  font-variant-numeric:tabular-nums;transition:transform .13s ease;
 }
+.cl-mini:hover{transform:translate(-1px,-1px);}
+.cl-mini:active{transform:translate(1px,1px);}
 .cl-mini svg{filter:drop-shadow(0 0 5px var(--cl-glow))}
 .clep.mini .cl-body,.clep.mini .cl-col{display:none}
 .clep.mini .cl-mini{display:inline-flex}
@@ -2958,7 +2968,7 @@ button.card.locked:hover .mod-art{opacity:var(--light-button-card-locked-hover-m
      Weak/Review/Flagged/Mock/Schedule eyebrows use a fixed feature colour,
      not a subject hex, so they never match and stay exactly as before. */
   .eyebrow{background:var(--subject,var(--fill))!important;color:var(--subject-fg,var(--tx))!important}
-  .ch-dot,.qleg .sw,.legend .sw{background:var(--line-2)!important;border-color:var(--line-2)!important}
+  .ch-dot{background:var(--line-2)!important;border-color:var(--line-2)!important}
   .ch-acc,.stat .n,.ringmeta .a,.page-sub b,.res-tag,.movednote{color:var(--tx)!important}
   /* .ring (the Home dashboard's per-module accuracy ring) already carries its
      own module colour as an inline stroke= attribute — it needs no flatten
@@ -2990,7 +3000,6 @@ button.card.locked:hover .mod-art{opacity:var(--light-button-card-locked-hover-m
   .hp-sub{color:var(--ink-2)}
   .ring circle:first-of-type{stroke:var(--line-2)}
   .bk-prog>*{background:var(--subject,var(--line-2))!important}
-  .qleg .sw{border-color:var(--line-2)!important}
   .syncdot.err{background:var(--bad)}
 }
 @media screen{
