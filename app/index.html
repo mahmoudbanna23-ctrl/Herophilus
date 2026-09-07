@@ -354,14 +354,14 @@ input{font-family:inherit;font-size:inherit}
    would run edge to edge while everything below it stays inset: 1124px is the
    page's 1180px capped column less its 28px of padding on either side, so the
    notice lines up with the heading underneath it rather than overhanging it. */
-#saveWarning{
+#saveWarning, #dataWarning{
   max-width:1124px;width:calc(100% - 56px);margin:22px auto -6px;padding:16px 18px;
   border:1px solid var(--bad);border-radius:var(--r-3);background:var(--bad-bg);
   display:flex;align-items:center;gap:16px;flex-wrap:wrap;
 }
-#saveWarning p{margin:0;flex:1;min-width:260px;font-size:14px;line-height:1.55;color:var(--tx)}
-#saveWarning strong{color:var(--bad)}
-#saveWarning .btn{flex:none}
+#saveWarning p, #dataWarning p{margin:0;flex:1;min-width:260px;font-size:14px;line-height:1.55;color:var(--tx)}
+#saveWarning strong, #dataWarning strong{color:var(--bad)}
+#saveWarning .btn, #dataWarning .btn{flex:none}
 .page{padding:28px;max-width:1180px;width:100%;margin:0 auto;flex:1}
 /* The dashboard is narrower than every other view, and deliberately so. Module
    cards are capped at two per row so the artwork is worth showing, which puts
@@ -374,7 +374,7 @@ input{font-family:inherit;font-size:inherit}
 @media screen{body[data-view="home"] .page{max-width:936px}}
 /* The dashboard narrows, so the notice above it narrows by the same amount,
    or it would hang past both edges of the only content on that screen. */
-@media screen{body[data-view="home"] #saveWarning{max-width:880px}}
+@media screen{body[data-view="home"] #saveWarning, body[data-view="home"] #dataWarning{max-width:880px}}
 
 /* ---------- Type ---------- */
 /* Display type is carved, not set: Roman capitals, letter-spaced OUT rather than
@@ -518,6 +518,15 @@ button.card:active:not(:disabled){transform:translate(1px,1px);box-shadow:0 2px 
 .qfig{margin:0 0 21px;display:flex;flex-direction:column;align-items:flex-start;gap:7px}
 .qfig img{max-width:min(100%,430px);height:auto;display:block;border-radius:var(--r-3);
   border:2px solid var(--line-2);background:#fff;box-shadow:0 8px 22px var(--sh-soft);cursor:zoom-in}
+/* A failed figure takes the image's place in the flow rather than sitting over
+   it, so the box it needs is sized on the message itself. Reserving that height
+   on every figure instead would pad the two dozen crops that render shorter
+   than the reserve — the shortest is 112px against a message that needs 150. */
+.qfig-media{width:100%;max-width:430px}
+.qfig-failure:not([hidden]){display:flex;align-items:center;justify-content:center;
+  min-height:150px;margin:0;padding:18px;border:2px solid var(--line-2);border-radius:var(--r-3);
+  background:var(--bg);color:var(--tx);font-size:14px;line-height:1.55}
+.qzoom .qfig-failure:not([hidden]){max-width:430px}
 .qfig figcaption{font-size:11.5px;letter-spacing:.03em;color:var(--ink-2)}
 /* Full-size look. The crops carry fine detail — a speck of debris, a leader
    line — that a 430px column cannot show. */
@@ -1782,7 +1791,7 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
   .rail.open{left:0}
   .mobile-only{display:block}
   .page{padding:18px 14px}
-  #saveWarning{width:calc(100% - 28px)}   /* the page's gutter halves here; the notice follows it */
+  #saveWarning, #dataWarning{width:calc(100% - 28px)}   /* the page's gutter halves here; the notice follows it */
   .qcard{padding:20px 17px}
   .topbar{padding:10px 14px}
   h1{font-size:25px}
@@ -2831,17 +2840,41 @@ function migrateSched(){
 }
 /* A toast disappears and the page is rebuilt on every answer. This notice lives
    outside the page, so a storage failure stays visible throughout this visit. */
-function warnSaveFailure(){
-  if(document.getElementById('saveWarning'))return;
+function warnSaveFailure(message,id='saveWarning'){
+  if(document.getElementById(id))return;
   const box=document.createElement('div');
-  box.id='saveWarning';
+  box.id=id;
   box.setAttribute('role','alert');
-  box.innerHTML='<p><strong>Saving failed during this visit.</strong> Recent progress may be missing from storage. Keep this tab open and download a copy before leaving.</p>'+
+  box.innerHTML=message||'<p><strong>Saving failed during this visit.</strong> Recent progress may be missing from storage. Keep this tab open and download a copy before leaving.</p>'+
     '<button class="btn sec" onclick="exportData()">Download progress</button>';
   const page=document.getElementById('page');
   page.parentNode.insertBefore(box,page);
-  toast('Progress could not be saved. Please read the saving warning.');
+  if(!message)toast('Progress could not be saved. Please read the saving warning.');
 }
+/* The aggregators deliberately tolerate absent files. Checking their inputs
+   here prevents a missing or unparseable script from looking like a small bank.
+   Empty arrays and maps are valid, including subjects still being prepared. */
+warnSaveFailure.checkData=function(){
+  const missing=[];
+  const subjects=[
+    ['ENT',['Q_ENT','C_ENT'],['T_ENT']],
+    ['Pediatrics',['Q_PEDS','Q_PEDS_EP','Q_PEDS_EP2','C_PEDS'],['T_PEDS']],
+    ['Ophthalmology',['Q_OPHTHO','C_OPHTHO'],['T_OPHTHO']],
+    ['Neuro/Psych',['Q_NEURO','C_NEURO'],['T_NEURO']]
+  ];
+  subjects.forEach(s=>{
+    if(s[1].some(k=>!Array.isArray(window[k]))||s[2].some(k=>
+      !window[k]||typeof window[k]!=='object'||Array.isArray(window[k])))missing.push(s[0]);
+  });
+  /* MODULES is a lexical constant, so looking on window would falsely report
+     a failure on every healthy boot. Without the catalogue no subject can open. */
+  let catalogue=false;
+  try{catalogue=typeof MODULES!=='undefined'&&Array.isArray(MODULES)}catch(e){}
+  if(!catalogue)missing.push('all subjects (module list)');
+  if(missing.length)warnSaveFailure('<p><strong>Part of the question bank failed to load.</strong> Affected: '+
+    missing.join(', ')+'. Reload the page.'+(catalogue?' You can study the subjects that loaded.':'')+'</p>', 'dataWarning');
+  return catalogue;
+};
 async function save(){
   S.updatedAt=Date.now();
   let saved=false;
@@ -2915,15 +2948,33 @@ function qFigure(q){
   if(!q.image) return '';
   const alt=q.imgAlt||'Clinical image printed with this question';
   return `<figure class="qfig">
-    <img src="${qImgSrc(q.image)}" alt="${esc(alt)}" onclick="openZoom('${q.image}')">
+    <div class="qfig-media"><img src="${qImgSrc(q.image)}" alt="${esc(alt)}" onclick="openZoom('${q.image}')" onerror="qFigure.failed(this)">
+      <p class="qfig-failure" role="alert" hidden>The figure could not be loaded. This question needs it. Reload the page to try again.</p></div>
     <figcaption>${esc(alt)}${q.imgEssential?' — this question cannot be answered without it.':''}
-      Tap to enlarge.</figcaption>
+      <span class="qfig-hint">Tap to enlarge.</span></figcaption>
   </figure>`;
 }
+/* The image gives up its place to an explanation and loses the zoom it can no
+   longer open, so a missing file cannot leave the browser's broken-image glyph
+   sitting in a question the student cannot answer without the picture. The
+   caption's invitation to enlarge goes with it, because there is nothing left
+   to enlarge. */
+qFigure.failed=function(img){
+  img.onerror=null;
+  img.onclick=null;
+  img.style.display='none';
+  img.setAttribute('aria-hidden','true');
+  const box=img.parentNode;
+  box.querySelector('.qfig-failure').hidden=false;
+  const fig=box.closest('.qfig');
+  const hint=fig?fig.querySelector('.qfig-hint'):null;
+  if(hint)hint.hidden=true;
+};
 function openZoom(name){
   const d=document.createElement('div');
   d.className='qzoom';
-  d.innerHTML=`<img src="${qImgSrc(name)}" alt="">`;
+  d.innerHTML=`<img src="${qImgSrc(name)}" alt="" onerror="qFigure.failed(this)">
+    <p class="qfig-failure" role="alert" hidden>The figure could not be loaded. This question needs it. Reload the page to try again. Tap to close.</p>`;
   d.onclick=()=>d.remove();
   document.body.appendChild(d);
 }
@@ -6256,7 +6307,8 @@ function vMock(p){
   h+=`</div>`;
   h+=`<h2>2 · Choose length</h2>`;
   if(!pool.length){
-    h+=`<div class="empty"><div class="big">${ico('amphora',46)}</div><h3>Nothing selected</h3><p>Pick at least one module that has questions loaded.</p></div>`;
+    const filtered=QUESTIONS.some(q=>mockMods[q.module]&&mockable(q));
+    h+=`<div class="empty"><div class="big">${ico('amphora',46)}</div><h3>${filtered?'No questions match your source filter':'Nothing selected'}</h3><p>${filtered?'Your source filter hides all questions in the selected modules. Change it on the module page.':'Pick at least one module that has questions loaded.'}</p></div>`;
   }else{
     h+=`<p class="page-sub" style="margin-bottom:14px">${pool.length} question${pool.length===1?'':'s'} in the selected pool.</p><div class="grid g3" style="max-width:780px">`;
     [10,20,40].forEach(n=>{
@@ -7827,6 +7879,7 @@ document.addEventListener('click',e=>{if(!e.target.closest('.search-wrap'))$('re
 
 boot();
 async function boot(){
+  if(!warnSaveFailure.checkData()){hideSplash();return}
   paintThemeBtn();          /* the icon depends on the theme the head script chose */
   clepLoadCfg();            /* where she stands is a device preference, like the theme */
   paintBakBtn();
