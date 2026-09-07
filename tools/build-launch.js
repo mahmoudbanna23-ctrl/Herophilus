@@ -1,4 +1,4 @@
-/* Build the Netlify-ready dist/ folder for launch, with the two locked
+/* Build the upload-ready dist/ folder for launch, with the two locked
  * subjects' question data genuinely absent — not hidden in the client.
  *
  *   node tools/build-launch.js
@@ -357,4 +357,4 @@ largest.forEach(x => console.log('    ' + x.size.toLocaleString().padStart(12) +
 
 console.log('\n.gitignore: dist/ ' + gitignoreNote);
 
-console.log('\n=== READY TO UPLOAD: dist/ can be dragged onto Netlify. ===');
+console.log('\n=== READY TO UPLOAD: dist/ is the folder the host serves. ===');
