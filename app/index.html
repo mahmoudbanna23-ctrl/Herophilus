@@ -87,12 +87,12 @@
      every stop) and widened: bg -> card -> bg-2 -> fill roughly doubles in
      luminance at each step, so a card now visibly sits above the page and
      a raised control sits above the card. Measurements in the change report. */
-  --bg:#1a1512;
-  --bg-2:#332a20;
-  --card:#28211a;
-  --fill:#453a2c;
-  --glass:#28211a;
-  --glass-2:#1a1512;
+  --bg:#241e18;
+  --bg-2:#403428;
+  --card:#332a21;
+  --fill:#55462f;
+  --glass:#332a21;
+  --glass-2:#241e18;
 
   /* hairlines — parchment, not white */
   --line:rgba(242,232,213,.085);
@@ -1282,7 +1282,7 @@ box-shadow:0 10px 24px rgba(0,0,0,.2);}
   content:"";position:absolute;top:0;left:-60%;width:42%;height:100%;pointer-events:none;
   background:var(--card);
   transform:skewX(-18deg);animation:sweep 5s ease-in-out 1.8s infinite;
-background:linear-gradient(100deg,transparent,rgba(60,90,140,.16),transparent);}
+background:linear-gradient(100deg,transparent,rgba(212,180,120,.16),transparent);}
 @keyframes sweep{0%{left:-60%}24%{left:135%}100%{left:135%}}
 /* the primary action when running from a file, where Google sign-in cannot work */
 .gbig{font-size:15px;padding:15px 30px;border-radius:var(--r-1)}
@@ -1545,7 +1545,7 @@ box-shadow:0 1px 0 var(--sh-soft);}
 .bk-run .r{color:var(--ink-3);text-transform:none;font-weight:700}
 /* A thin progress rule under the turning bar — how far through the chapter. */
 .bk-prog{height:3px;border-radius:var(--r-1);background:var(--line);max-width:640px;margin:0 auto 6px}
-.bk-prog i{display:block;height:100%;border-radius:var(--r-1);background:var(--gold);
+.bk-prog i{display:block;height:100%;border-radius:var(--r-1);background:var(--subject,var(--gold));
   transition:width .42s cubic-bezier(.22,1,.36,1)}
 /* Click the outer thirds of the sheet to turn, as you would a page. */
 .bk-on .bk-tap{position:absolute;top:0;bottom:0;width:11%;cursor:pointer;z-index:2;transition:opacity .13s ease}
@@ -2031,7 +2031,7 @@ background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));box-
 .chip:active{transform:translate(1px,1px);}
 /* fallback is --fill, not --ink: --ink is near-white since the redesign, so an
    unset --c would have made a white chip carrying white text */
-.chip.on{background:var(--c,var(--fill));color:var(--on-fill)}
+.chip.on{background:var(--c,var(--subject,var(--fill)));color:var(--subject-fg,var(--on-fill))}
 
 @keyframes fall{to{transform:translateY(105vh) rotate(720deg);opacity:0}}
 .confetti{position:fixed;top:-14px;width:11px;height:11px;z-index:250;pointer-events:none;animation:fall linear forwards}
@@ -2181,7 +2181,7 @@ body[data-view="theory"] .orb{animation-play-state:paused}
 }
 .topbar{backdrop-filter:blur(16px) saturate(140%);-webkit-backdrop-filter:blur(16px) saturate(140%)}
 .modal{
-  background:var(--light-modal-background,linear-gradient(160deg,rgba(24,40,60,.96),rgba(14,25,40,.98)));
+  background:var(--light-modal-background,linear-gradient(160deg,rgba(52,42,32,.96),rgba(32,26,20,.98)));
   backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
   border:var(--light-modal-border,1px solid var(--line-2));box-shadow:var(--light-modal-shadow,0 30px 80px rgba(0,0,0,.6),var(--glow));
 }
@@ -2218,11 +2218,11 @@ button.card:active:not(:disabled){transform:translateY(-1px)}
   background:var(--card);
   background-color:var(--fill);border:1px solid var(--line-2);
   
-background:linear-gradient(160deg,#2c4a6b,#1b2d44);box-shadow:0 8px 20px rgba(0,0,0,.45),var(--glow);}
+background:linear-gradient(160deg,#3a2f24,#241d15);box-shadow:0 8px 20px rgba(0,0,0,.45),var(--glow);}
 .btn:hover:not(:disabled){transform:translateY(-2px);box-shadow:0 14px 30px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.18);}
 .btn:active:not(:disabled){transform:translateY(0)}
-.btn.go{background:var(--card);border-color:rgba(255,255,255,.2);background:linear-gradient(160deg,#7d5890,#573a66);box-shadow:0 10px 26px rgba(125,88,144,.5);}
-.btn.go:hover:not(:disabled){box-shadow:0 16px 36px rgba(125,88,144,.65);}
+.btn.go{background-color:var(--subject,#94642a);background-image:linear-gradient(160deg,transparent,rgba(0,0,0,.32));border-color:rgba(255,255,255,.2);color:var(--subject-fg,var(--on-subject));box-shadow:0 10px 26px rgba(0,0,0,.45);}
+.btn.go:hover:not(:disabled){box-shadow:0 16px 36px rgba(0,0,0,.55);}
 .btn.flag.on{background:var(--card);color:var(--on-accent);background:linear-gradient(160deg,#ffd469,#f0b429);}
 .wbadge.high{color:var(--on-accent)}
 
@@ -2389,7 +2389,7 @@ background-image:
      #eae2d3 — the token had applied and changed nothing. The gradient is what
      has to be replaced. Contrast below is measured against the DARKER stop. */
   --light-rail-background:linear-gradient(180deg,#ece5d7,#e6dccb);
-  --light-rail-border-right:1px solid rgba(16,27,45,.14);
+  --light-rail-border-right:1px solid rgba(44,33,20,.14);
   --light-rail-blur:none;--light-rail-webkit-blur:none;
 backdrop-filter:none;-webkit-backdrop-filter:none;}
 :root[data-theme="light"] .rail .logo{--light-rail-logo-color:#2a2118}
@@ -2411,24 +2411,24 @@ background:linear-gradient(135deg,rgba(217,180,74,.26),rgba(180,71,47,.14));}
 :root[data-theme="light"] .modal{
   --light-modal-background:var(--card);
   --light-modal-border:1px solid var(--line-2);
-  --light-modal-shadow:0 30px 80px rgba(23,38,66,.22),var(--glow);
-background:linear-gradient(160deg,rgba(255,255,255,.98),rgba(243,247,252,.97));box-shadow:0 30px 80px rgba(23,38,66,.22),var(--glow);}
-:root[data-theme="light"] .modal-bg{--light-modal-bg-background:rgba(28,42,66,.38);--light-modal-bg-blur:blur(5px);backdrop-filter:blur(5px);}
+  --light-modal-shadow:0 30px 80px rgba(58,44,28,.22),var(--glow);
+background:linear-gradient(160deg,rgba(255,255,255,.98),rgba(243,247,252,.97));box-shadow:0 30px 80px rgba(58,44,28,.22),var(--glow);}
+:root[data-theme="light"] .modal-bg{--light-modal-bg-background:rgba(46,36,24,.38);--light-modal-bg-blur:blur(5px);backdrop-filter:blur(5px);}
 :root[data-theme="light"] .results{--light-results-background:var(--card)}
 :root[data-theme="light"] .toast{
   /* stays dark — a light toast on a light page has no presence */
-  --light-toast-shadow:0 18px 44px rgba(23,38,66,.3);
-box-shadow:0 18px 44px rgba(23,38,66,.3);}
+  --light-toast-shadow:0 18px 44px rgba(58,44,28,.3);
+box-shadow:0 18px 44px rgba(58,44,28,.3);}
 :root[data-theme="light"] .gsign{
   /* the Google button is white by brand, which on a light page needs a real
      border or it dissolves into the background */
-  --light-gsign-border:1px solid rgba(16,27,45,.16);
+  --light-gsign-border:1px solid rgba(44,33,20,.16);
   
-box-shadow:0 6px 18px rgba(23,38,66,.12);}
-:root[data-theme="light"] .gsign:hover{box-shadow:0 12px 28px rgba(23,38,66,.18);}
-:root[data-theme="light"] .mod-ic{box-shadow:0 8px 22px var(--c),0 0 0 1px rgba(16,27,45,.08);}
-:root[data-theme="light"] .pill{box-shadow:0 4px 14px rgba(23,38,66,.18);}
-:root[data-theme="light"] .btn:hover:not(:disabled){box-shadow:0 14px 30px rgba(23,38,66,.28),0 0 0 1px rgba(16,27,45,.12);}
+box-shadow:0 6px 18px rgba(58,44,28,.12);}
+:root[data-theme="light"] .gsign:hover{box-shadow:0 12px 28px rgba(58,44,28,.18);}
+:root[data-theme="light"] .mod-ic{box-shadow:0 8px 22px var(--c),0 0 0 1px rgba(44,33,20,.08);}
+:root[data-theme="light"] .pill{box-shadow:0 4px 14px rgba(58,44,28,.18);}
+:root[data-theme="light"] .btn:hover:not(:disabled){box-shadow:0 14px 30px rgba(58,44,28,.28),0 0 0 1px rgba(44,33,20,.12);}
 
 
 
@@ -3059,6 +3059,14 @@ box-shadow:0 0 0 2px var(--bg-2);}
 /* Conditional theme tokens preserve the existing artwork and furniture values. */
 .railprof .rav{border-color:var(--light-railprof-rav-border-color,rgba(255,255,255,.22))}
 .streak{border-color:var(--light-streak-border-color,rgba(255,201,74,.3))}
+/* Palette pass, 2026-09-08: a subject's colour reaches its own browse and
+   theory pages through body[data-subject], set in the render path. Quiz,
+   mock, session and case views carry no subject id and so stay flat, which
+   is the alive-to-browse / calm-to-read rule. */
+body[data-subject="ent"]{--subject:var(--ent);--subject-fg:var(--on-subject)}
+body[data-subject="ophtho"]{--subject:var(--ophtho);--subject-fg:var(--on-subject)}
+body[data-subject="neuropsych"]{--subject:var(--neuro);--subject-fg:var(--on-subject)}
+body[data-subject="pediatrics"]{--subject:var(--peds);--subject-fg:var(--on-subject)}
 </style>
 </head>
 <body>
@@ -5384,6 +5392,9 @@ function render(){
   const p=$('page');
   // Drives body[data-view] in CSS — the alive-to-browse / calm-to-read gate.
   document.body.dataset.view=view.name||'home';
+  // A module or theory view carries its subject; every other view stays flat.
+  const subjId=view.id||view.mod||'';
+  if(subjId)document.body.dataset.subject=subjId;else delete document.body.dataset.subject;
   /* ⚠️ Drop the reader before EVERY render. bk-on is set by bkInit() on the way
      into a chapter; left on, its overflow:hidden and fixed column height apply
      to whatever view comes next and clip it. Clearing here means only the
