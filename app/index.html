@@ -484,8 +484,8 @@ button.card:active:not(:disabled){transform:translate(1px,1px);}
 .ch-row{
   display:flex;align-items:center;gap:13px;padding:12px 15px;background:var(--card);
   border:1px solid var(--line-2);border-radius:var(--r-1);margin-bottom:9px;width:100%;text-align:left;
-  
-  transition:transform .13s ease;
+
+  transition:transform .13s ease,background-color .15s ease,border-color .15s ease;
 }
 .ch-row:hover:not(:disabled){transform:translate(-2px,-2px);}
 .ch-row:disabled{opacity:.45;cursor:default;border-style:dashed}
@@ -518,8 +518,13 @@ button.card:active:not(:disabled){transform:translate(1px,1px);}
 }
 /* A line in a table of contents does not levitate — change of paper tone
    and the border brightening stand in for the lift the rest of the app
-   still uses on real cards. */
-.ch-row.toc-row:hover:not(:disabled){
+   still uses on real cards. Both now carry a real transition (added above,
+   on .ch-row) instead of cutting, and :focus-visible gets the identical
+   treatment so a keyboard reader feels the same thing a pointer does — the
+   global outline (:focus-visible, near the top of this file) still lands on
+   top of it. */
+.ch-row.toc-row:hover:not(:disabled),
+.ch-row.toc-row:focus-visible:not(:disabled){
   transform:none;background:var(--bg-2);border-color:var(--line-2);
 }
 .ch-num{
@@ -629,11 +634,21 @@ button.card:active:not(:disabled){transform:translate(1px,1px);}
 }
 .opt.sel{border-color:var(--line-2);background:var(--tint);transform:translateX(4px);}
 .opt.sel .ltr{background:var(--fill);border-color:var(--line-2);color:var(--on-fill)}
-.opt.correct{border-color:var(--line-2);background:var(--bg-2);}
-.opt.correct .ltr{background:var(--fill);border-color:var(--ok);color:var(--on-fill)}
-.opt.wrong{border-color:var(--bad);background:var(--bad-bg);}
-.opt.wrong .ltr{background:var(--bad);border-color:var(--bad);color:var(--on-fill)}
-.opt .mark{margin-left:auto;font-weight:700;font-size:19px;flex-shrink:0;line-height:1}
+/* The verdict is a fresh render, not a class flip on a live element — render()
+   rebuilds the whole .opts block, so a `transition` on background/border-color
+   never has a prior frame to animate FROM. An `animation` plays on mount
+   instead; the empty `to{}` keyframe takes its end state from the rule it is
+   attached to, so correct and wrong each arrive at their own colour without a
+   second keyframe list. Same idea for the mark and the letter chip — a small
+   scale-and-fade so the tick/cross reads as landing, not appearing, with the
+   same restraint on wrong as on correct: no shake, no punishment shape. */
+@keyframes optLand{from{background-color:var(--card);border-color:var(--line-2)}}
+@keyframes markLand{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
+.opt.correct{border-color:var(--line-2);background:var(--bg-2);animation:optLand .18s ease-out;}
+.opt.correct .ltr{background:var(--fill);border-color:var(--ok);color:var(--on-fill);animation:markLand .16s ease-out .04s both;}
+.opt.wrong{border-color:var(--bad);background:var(--bad-bg);animation:optLand .18s ease-out;}
+.opt.wrong .ltr{background:var(--bad);border-color:var(--bad);color:var(--on-fill);animation:markLand .16s ease-out .04s both;}
+.opt .mark{margin-left:auto;font-weight:700;font-size:19px;flex-shrink:0;line-height:1;animation:markLand .16s ease-out .04s both;}
 .opt.correct .mark{color:var(--ok)}
 .opt.wrong .mark{color:var(--bad)}
 
@@ -2139,12 +2154,30 @@ button.card:active:not(:disabled){transform:translateY(-1px)}
 .grouphdr::after{height:1px;background:var(--line-2)}
 
 /* ---- entrance motion ---------------------------------------------------- */
-@keyframes pagein{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-#page{animation:pagein .34s cubic-bezier(.22,1,.36,1)}
+/* render() replaces #page's content synchronously (every view function ends
+   in p.innerHTML=h) — there is no old markup left in the DOM to hold for an
+   exit, and deferring that assignment behind a JS timer would touch every
+   call site that navigates, well past what this pass should risk. So the
+   exit stays out of reach and this is the smallest change that still makes
+   navigation read as movement: a slightly longer, slightly deeper entrance
+   (was .34s / 10px) with a faint scale-settle added, so the new view arrives
+   rather than just fading up. Still no bounce — same easing curve. */
+@keyframes pagein{from{opacity:0;transform:translateY(14px) scale(.985)}to{opacity:1;transform:none}}
+#page{animation:pagein .42s cubic-bezier(.22,1,.36,1)}
 
-/* scroll reveal — browse screens only, applied by the observer in JS */
-.reveal{opacity:0;transform:translateY(16px)}
-.reveal.in{opacity:1;transform:none;transition:opacity .5s cubic-bezier(.22,1,.36,1),transform .5s cubic-bezier(.22,1,.36,1)}
+/* scroll reveal — browse screens only, applied by the observer in JS.
+   Tuned down from 16px / .5s / 26ms×10 (worst case ~760ms after the last
+   card) — that finished well after #page's own .34s entrance, so a browse
+   view read as loading in two separate stages instead of arriving once.
+   12px / .38s / 18ms×8 (worst case ~524ms) settles close behind the page
+   entrance instead of trailing it. */
+.reveal{opacity:0;transform:translateY(12px)}
+.reveal.in{opacity:1;transform:none;transition:opacity .38s cubic-bezier(.22,1,.36,1),transform .38s cubic-bezier(.22,1,.36,1)}
+
+/* A card the observer has not reached yet is still transparent, and paper has
+   no scrolling for it to be reached by. Printing a browse view straight after
+   load would have dropped those cards off the page entirely. */
+@media print{.reveal{opacity:1!important;transform:none!important}}
 
 /* ---- accessibility ------------------------------------------------------ */
 /* The original rule already killed animation and transition. Ambient orbs are
@@ -5238,7 +5271,7 @@ function revealOnScroll(root){
   },{rootMargin:'0px 0px -40px 0px',threshold:.06});
   items.forEach((el,i)=>{
     el.classList.add('reveal');
-    el.style.transitionDelay=Math.min(i,10)*26+'ms';
+    el.style.transitionDelay=Math.min(i,8)*18+'ms';
     _revealObs.observe(el);
   });
 }
