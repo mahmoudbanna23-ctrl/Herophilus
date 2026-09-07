@@ -167,7 +167,7 @@
 
   --on-fill:var(--tx);
   --on-subject:#fcf8ee;
-}
+--sheen:linear-gradient(160deg,rgba(242,232,213,.05),rgba(242,232,213,.012));}
 
 /* ============================================================================
    LIGHT — parchment. Sampled from the user's "Father of Anatomy" card: an aged
@@ -238,7 +238,7 @@
 
   --on-fill:var(--tx);
   --on-subject:#fcf8ee;
-}
+--sheen:linear-gradient(160deg,rgba(74,56,34,.02),rgba(74,56,34,.05));}
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
 body{
@@ -250,7 +250,8 @@ body{
   -webkit-font-smoothing:antialiased;
   background-image:var(--light-body-background-image,none);
   background-attachment:fixed;
-}
+background-image:radial-gradient(circle at 12% 8%, rgba(109,76,125,.09) 0, transparent 42%),
+                   radial-gradient(circle at 88% 4%, rgba(46,95,138,.05) 0, transparent 38%);}
 button{font-family:inherit;font-size:inherit;cursor:pointer;border:none;background:none;color:inherit}
 input{font-family:inherit;font-size:inherit}
 :focus-visible{outline:3px solid var(--line-2);outline-offset:2px;border-radius:var(--r-1)}
@@ -292,7 +293,7 @@ input{font-family:inherit;font-size:inherit}
 
 .streak{
   margin:8px 12px 4px;padding:10px 12px;border-radius:var(--r-1);
-  background:var(--light-streak-background,var(--card));
+  background:var(--light-streak-background,linear-gradient(135deg,rgba(255,201,74,.16),rgba(255,90,95,.13)));
   border:1.5px solid rgba(255,201,74,.3);display:flex;align-items:center;gap:9px;
 }
 .streak .fl{font-size:17px}
@@ -307,7 +308,7 @@ input{font-family:inherit;font-size:inherit}
   transition:transform .13s ease,background .13s,color .13s;
 }
 .nav-item:hover{background:var(--rail-2);color:var(--light-nav-item-hover-color,var(--on-fill));transform:translateX(3px)}
-.nav-item.on{background:var(--rail-3);color:var(--light-nav-item-hover-color,var(--on-fill));font-weight:700;}
+.nav-item.on{background:var(--rail-3);color:var(--light-nav-item-hover-color,var(--on-fill));font-weight:700;box-shadow:inset 3px 0 0 var(--gold);}
 .nav-item .ic{width:19px;text-align:center;flex-shrink:0;font-size:15px}
 .nav-item .cnt{margin-left:auto;font-size:11px;color:var(--rail-dim);font-variant-numeric:tabular-nums;font-weight:700}
 .nav-item.on .cnt{color:var(--rail-text)}
@@ -315,7 +316,7 @@ input{font-family:inherit;font-size:inherit}
   margin-left:auto;background:var(--fill);color:var(--on-fill);font-size:10.5px;font-weight:700;
   padding:2px 7px;border-radius:var(--r-1);min-width:20px;text-align:center;
   
-}
+box-shadow:0 0 0 3px rgba(255,90,95,.2);}
 
 .main{flex:1;min-width:0;display:flex;flex-direction:column}
 .topbar{
@@ -328,13 +329,13 @@ input{font-family:inherit;font-size:inherit}
   width:100%;padding:9px 13px 9px 35px;border:2px solid var(--line-2);border-radius:var(--r-1);
   background:var(--card);font-size:13.5px;color:var(--tx);font-weight:600;transition:border-color .14s;
 }
-.search:focus{border-color:var(--line-2);outline:none}
+.search:focus{border-color:var(--line-2);outline:none;box-shadow:var(--pop) rgba(125,88,144,.35);}
 .search::placeholder{color:var(--ink-4);font-weight:500}
 .keyin{
   width:100%;padding:9px 13px;border:2px solid var(--line-2);border-radius:var(--r-1);
   background:var(--card);font-size:13.5px;color:var(--tx);font-weight:600;transition:border-color .14s;
 }
-.keyin:focus{border-color:var(--line-2);outline:none}
+.keyin:focus{border-color:var(--line-2);outline:none;box-shadow:var(--pop) rgba(125,88,144,.35);}
 .keyin::placeholder{color:var(--ink-4);font-weight:500}
 .search-ic{position:absolute;left:12px;top:50%;transform:translateY(-50%);font-size:14px;pointer-events:none}
 .results{
@@ -349,7 +350,7 @@ input{font-family:inherit;font-size:inherit}
 /* A button inside a listbox needs a focus ring the cursor cannot miss — the
    results list lives at the top of the screen, the items are dense, and the
    ring is the only signal that the next Enter is going somewhere real. */
-.res-item:focus{outline:none;background:var(--bg-2);}
+.res-item:focus{outline:none;background:var(--bg-2);box-shadow:inset 3px 0 0 var(--neuro);}
 .res-item.res-more{font-weight:700;color:var(--ink-3)}
 .res-tag{display:block;font-size:9.5px;text-transform:none;font-weight:700;margin-bottom:3px}
 .res-txt{display:block;color:var(--ink-2);line-height:1.45}
@@ -430,9 +431,9 @@ h2{font-size:18px;font-weight:700;letter-spacing:-.02em;margin:0 0 13px}
   background:var(--card);border:1px solid var(--line-2);border-radius:var(--r);
   padding:17px;text-align:left;width:100%;
   transition:transform .15s ease;
-}
-button.card:hover:not(:disabled){transform:translate(-2px,-2px);}
-button.card:active:not(:disabled){transform:translate(1px,1px);}
+box-shadow:var(--pop) rgba(0,0,0,.16);}
+button.card:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:var(--pop-lg) var(--c,rgba(0,0,0,.3));}
+button.card:active:not(:disabled){transform:translate(1px,1px);box-shadow:0 2px 7px rgba(0,0,0,.2);}
 
 .mod-card{position:relative;overflow:hidden}
 .mod-card::after{
@@ -443,7 +444,7 @@ button.card:active:not(:disabled){transform:translate(1px,1px);}
 .mod-ic{
   width:36px;height:36px;border-radius:var(--r-1);background:var(--fill);display:flex;align-items:center;
   justify-content:center;font-size:18px;flex-shrink:0;
-}
+box-shadow:0 5px 14px rgba(0,0,0,.2);}
 .mod-name{font-weight:700;font-size:17.5px;}
 .mod-meta{font-size:12px;color:var(--ink-3);margin-bottom:13px;font-weight:600}
 
@@ -471,7 +472,7 @@ button.card:active:not(:disabled){transform:translate(1px,1px);}
 .stat{
   background:var(--card);border:1px solid var(--line-2);border-radius:var(--r);padding:15px;
   position:relative;overflow:hidden;
-}
+box-shadow:var(--pop) rgba(0,0,0,.16);}
 .stat .n{font-size:31px;font-weight:700;letter-spacing:-.04em;font-variant-numeric:tabular-nums;line-height:1.05}
 .stat .l{font-size:11.5px;color:var(--ink-3);margin-top:3px;font-weight:700}
 .stat .emo{position:absolute;right:11px;top:10px;font-size:19px;opacity:.3}
@@ -487,10 +488,10 @@ button.card:active:not(:disabled){transform:translate(1px,1px);}
   border:1px solid var(--line-2);border-radius:var(--r-1);margin-bottom:9px;width:100%;text-align:left;
 
   transition:transform .13s ease,background-color .15s ease,border-color .15s ease;
-}
-.ch-row:hover:not(:disabled){transform:translate(-2px,-2px);}
+box-shadow:0 5px 14px rgba(0,0,0,.13);}
+.ch-row:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:0 10px 24px rgba(0,0,0,.2);}
 .ch-row:active:not(:disabled){transform:translate(1px,1px);}
-.ch-row:disabled{opacity:.45;cursor:default;border-style:dashed}
+.ch-row:disabled{opacity:.45;cursor:default;border-style:dashed;box-shadow:none;}
 .ch-dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;border:2px solid var(--line-2)}
 .ch-name{flex:1;font-size:14px;font-weight:700}
 .ch-count{font-size:11.5px;color:var(--ink-4);font-variant-numeric:tabular-nums;font-weight:700}
@@ -568,7 +569,7 @@ button.card:active:not(:disabled){transform:translate(1px,1px);}
 .pill{
   font-size:10px;font-weight:700;text-transform:none;padding:4px 11px;
   border-radius:var(--r-1);color:var(--on-fill);border:2px solid var(--line-2);
-}
+box-shadow:0 5px 14px rgba(0,0,0,.18);}
 /* The source citation reuses .pill, but it is a SENTENCE, not a label — often a
    long one with a page number and a transcription note. Uppercase at 10px suits
    "ENDPOINT"; it turns a citation into a wall, and EB Garamond's capitals are
@@ -584,7 +585,7 @@ button.card:active:not(:disabled){transform:translate(1px,1px);}
   background:var(--card);padding:4px 11px;border-radius:var(--r-1);border:2px solid var(--line-2);
 }
 
-.qcard{background:var(--card);border:3px solid var(--line-2);border-radius:var(--r);padding:27px 29px;}
+.qcard{background:var(--card);border:3px solid var(--line-2);border-radius:var(--r);padding:27px 29px;box-shadow:0 15px 35px rgba(0,0,0,.15);}
 .stem{
   font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
   font-size:16.5px;line-height:1.64;color:var(--tx);margin-bottom:21px;
@@ -603,7 +604,7 @@ button.card:active:not(:disabled){transform:translate(1px,1px);}
    past their own resolution only makes a scan look worse. */
 .qfig{margin:0 0 21px;display:flex;flex-direction:column;align-items:flex-start;gap:7px}
 .qfig img{max-width:min(100%,430px);height:auto;display:block;border-radius:var(--r-1);
-  border:2px solid var(--line-2);background:var(--on-fill);cursor:zoom-in}
+  border:2px solid var(--line-2);background:var(--on-fill);cursor:zoom-in;box-shadow:0 8px 22px var(--sh-soft);}
 /* A failed figure takes the image's place in the flow rather than sitting over
    it, so the box it needs is sized on the message itself. Reserving that height
    on every figure instead would pad the two dozen crops that render shorter
@@ -627,7 +628,7 @@ button.card:active:not(:disabled){transform:translate(1px,1px);}
   text-align:left;width:100%;line-height:1.5;font-weight:600;
   transition:transform .12s ease,border-color .12s;
 }
-.opt:hover:not(:disabled){border-color:var(--line-2);transform:translateX(4px);}
+.opt:hover:not(:disabled){border-color:var(--line-2);transform:translateX(4px);box-shadow:0 7px 20px rgba(0,0,0,.12);}
 /* Hover slides the row four pixels out; a press has to travel back toward the
    page, not past it. Landing at one pixel gives the same three-pixel movement
    the buttons use, so pressing an option feels like pressing anything else. */
@@ -638,7 +639,7 @@ button.card:active:not(:disabled){transform:translate(1px,1px);}
   display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;
   flex-shrink:0;color:var(--ink-3);margin-top:1px;transition:all .12s;
 }
-.opt.sel{border-color:var(--line-2);background:var(--tint);transform:translateX(4px);}
+.opt.sel{border-color:var(--line-2);background:var(--tint);transform:translateX(4px);box-shadow:0 7px 20px rgba(109,76,125,.28);}
 .opt.sel .ltr{background:var(--fill);border-color:var(--line-2);color:var(--on-fill)}
 /* The verdict is a fresh render, not a class flip on a live element — render()
    rebuilds the whole .opts block, so a `transition` on background/border-color
@@ -650,9 +651,9 @@ button.card:active:not(:disabled){transform:translate(1px,1px);}
    same restraint on wrong as on correct: no shake, no punishment shape. */
 @keyframes optLand{from{background-color:var(--card);border-color:var(--line-2)}}
 @keyframes markLand{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
-.opt.correct{border-color:var(--line-2);background:var(--bg-2);animation:optLand .18s ease-out;}
+.opt.correct{border-color:var(--line-2);background:var(--bg-2);animation:optLand .18s ease-out;box-shadow:0 7px 20px rgba(0,168,107,.25);}
 .opt.correct .ltr{background:var(--fill);border-color:var(--ok);color:var(--on-fill);animation:markLand .16s ease-out .04s both;}
-.opt.wrong{border-color:var(--bad);background:var(--bad-bg);animation:optLand .18s ease-out;}
+.opt.wrong{border-color:var(--bad);background:var(--bad-bg);animation:optLand .18s ease-out;box-shadow:0 7px 20px rgba(255,71,87,.25);}
 .opt.wrong .ltr{background:var(--bad);border-color:var(--bad);color:var(--on-fill);animation:markLand .16s ease-out .04s both;}
 .opt .mark{margin-left:auto;font-weight:700;font-size:19px;flex-shrink:0;line-height:1;animation:markLand .16s ease-out .04s both;}
 .opt.correct .mark{color:var(--ok)}
@@ -663,10 +664,10 @@ button.card:active:not(:disabled){transform:translate(1px,1px);}
   padding:11px 20px;border-radius:var(--r-1);font-size:13.5px;font-weight:700;
   background:var(--fill);color:var(--on-fill);border:1px solid var(--line-2);
   transition:transform .13s ease;
-}
-.btn:hover:not(:disabled){transform:translate(-2px,-2px);}
-.btn:active:not(:disabled){transform:translate(1px,1px);}
-.btn:disabled{opacity:.32;cursor:default;}
+box-shadow:var(--pop) var(--sh-soft);}
+.btn:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:var(--pop-lg) rgba(0,0,0,.35);}
+.btn:active:not(:disabled){transform:translate(1px,1px);box-shadow:0 2px 7px rgba(0,0,0,.3);}
+.btn:disabled{opacity:.32;cursor:default;box-shadow:none;}
 .btn.sec{background:var(--card);color:var(--tx)}
 .btn.go{background:var(--fill);border-color:var(--line-2)}
 .btn.flag.on{background:var(--gold);color:var(--tx)}
@@ -678,9 +679,9 @@ button.card:active:not(:disabled){transform:translate(1px,1px);}
   margin-top:21px;padding:15px 18px;border-radius:var(--r-1);font-weight:700;font-size:15px;
   display:flex;align-items:center;gap:11px;border:1px solid var(--line-2);animation:pop .32s cubic-bezier(.34,1.56,.64,1);
 }
-.verdict.ok{background:var(--ok-bg);color:var(--tx);}
-.verdict.bad{background:var(--bad-bg);color:var(--bad);}
-.verdict.part{background:var(--gold-bg);color:var(--warn);}
+.verdict.ok{background:var(--ok-bg);color:var(--tx);box-shadow:var(--pop) rgba(0,168,107,.3);}
+.verdict.bad{background:var(--bad-bg);color:var(--bad);box-shadow:var(--pop) rgba(255,71,87,.3);}
+.verdict.part{background:var(--gold-bg);color:var(--warn);box-shadow:var(--pop) rgba(255,201,74,.45);}
 .verdict .big{font-size:22px}
 
 /* ---- free-text case questions ---- */
@@ -690,14 +691,14 @@ button.card:active:not(:disabled){transform:translate(1px,1px);}
   border:1px solid var(--line-2);border-radius:var(--r-1);background:var(--card);color:var(--tx);
   resize:vertical;
   transition:transform .18s ease;
-}
-.caseinput:focus{border-color:var(--line-2);outline:none;transform:translate(-1px,-1px);}
+box-shadow:var(--pop) rgba(0,0,0,.12);}
+.caseinput:focus{border-color:var(--line-2);outline:none;transform:translate(-1px,-1px);box-shadow:0 12px 28px rgba(0,0,0,.18);}
 .caseinput:disabled{opacity:.75;cursor:default}
 .caseinput::placeholder{color:var(--ink-2);opacity:.6}
 .modelans{
   margin-top:15px;padding:14px 17px;border:1px solid var(--line-2);border-radius:var(--r-1);
   background:var(--bg-2);
-}
+box-shadow:var(--pop) rgba(0,168,107,.25);}
 .modelans>b{display:block;font-size:11.5px;text-transform:none;color:var(--ink-2);margin-bottom:5px}
 .modelans>div{font-weight:700;font-size:15px}
 .keys{margin-top:14px;padding:13px 16px;border:2.5px dashed var(--line-2);border-radius:var(--r-1)}
@@ -710,18 +711,18 @@ button.card:active:not(:disabled){transform:translate(1px,1px);}
   padding:5px 12px;border:2px dashed var(--line-2);border-radius:var(--r-1);
   font-size:12px;font-weight:700;color:var(--ink-2);opacity:.85}
 
-.conf{margin-top:17px;padding:15px 17px;background:var(--gold-bg);border:1px solid var(--line-2);border-radius:var(--r-1);}
+.conf{margin-top:17px;padding:15px 17px;background:var(--gold-bg);border:1px solid var(--line-2);border-radius:var(--r-1);box-shadow:var(--pop) rgba(255,201,74,.4);}
 .conf-q{font-size:13px;color:var(--ink-2);margin-bottom:11px;font-weight:700}
 .conf-btns{display:flex;gap:8px;flex-wrap:wrap}
 .conf-b{
   padding:8px 15px;border:1px solid var(--line-2);border-radius:var(--r-1);font-size:12.5px;
   background:var(--card);font-weight:700;transition:transform .12s ease;
 }
-.conf-b:hover{transform:translateY(-2px);}
+.conf-b:hover{transform:translateY(-2px);box-shadow:0 7px 18px rgba(2,6,14,.25);}
 .conf-b:active{transform:translateY(1px);}
 .conf-b.on{background:var(--fill);color:var(--on-fill)}
 
-.explain{margin-top:18px;border:1px solid var(--line-2);border-radius:var(--r-1);overflow:hidden;}
+.explain{margin-top:18px;border:1px solid var(--line-2);border-radius:var(--r-1);overflow:hidden;box-shadow:var(--pop) rgba(0,0,0,.14);}
 
 /* Two quiet routes out of a question: a note the student writes to themselves,
    and the one way to tell us the question itself is wrong. Both sit under the
@@ -753,7 +754,7 @@ button.card:active:not(:disabled){transform:translate(1px,1px);}
 .objective{
   margin-top:17px;padding:14px 17px;background:var(--card);
   border:2.5px solid var(--line-2);border-radius:var(--r-1);font-size:13.8px;line-height:1.6;
-}
+background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));}
 .objective b{display:block;font-size:10px;text-transform:none;color:var(--tx);margin-bottom:5px;font-weight:700}
 .noexp{padding:17px 21px;color:var(--ink-4);font-size:13.5px;font-style:italic}
 
@@ -765,13 +766,13 @@ button.card:active:not(:disabled){transform:translate(1px,1px);}
   display:flex;gap:14px;align-items:center;padding:13px 15px;background:var(--card);
   border:1px solid var(--line-2);border-radius:var(--r-1);margin-bottom:9px;
   transition:transform .13s;
-}
-.day:hover{transform:translate(-1px,-1px);}
+box-shadow:0 5px 14px rgba(0,0,0,.13);}
+.day:hover{transform:translate(-1px,-1px);box-shadow:0 10px 24px rgba(0,0,0,.18);}
 .day:active{transform:translate(1px,1px);}
 .day.rest{background:var(--bg-2);opacity:.72;border-style:dashed}
 .day.missed{background:var(--bad-bg);border-color:var(--bad)}
 .day.done{background:var(--bg-2);border-color:var(--line-2)}
-.day.today{border-color:var(--line-2);}
+.day.today{border-color:var(--line-2);box-shadow:0 10px 24px rgba(125,88,144,.4);}
 .day-date{width:74px;flex-shrink:0}
 .day-d{font-weight:700;font-size:14px;font-variant-numeric:tabular-nums;}
 .day-w{font-size:10.5px;color:var(--ink-4);font-weight:700;text-transform:none;}
@@ -783,7 +784,7 @@ button.card:active:not(:disabled){transform:translate(1px,1px);}
   display:inline-block;font-size:9.5px;font-weight:700;text-transform:none;
   padding:3px 10px;border-radius:var(--r-1);color:var(--on-fill);margin-right:10px;vertical-align:1.5px;
   border:1.5px solid var(--line-2);white-space:nowrap;
-}
+box-shadow:0 3px 10px rgba(0,0,0,.22);}
 .movednote{font-size:11px;color:var(--tx);font-weight:700;margin-top:4px}
 .day-marks{display:flex;gap:7px;flex-shrink:0}
 .mk{
@@ -791,9 +792,9 @@ button.card:active:not(:disabled){transform:translate(1px,1px);}
   display:flex;align-items:center;justify-content:center;font-size:15px;
   transition:transform .13s ease,background .13s;
   
-}
-.mk:hover{transform:translate(-1px,-1px);}
-.mk:active{transform:translate(1px,1px);}
+box-shadow:0 5px 14px rgba(0,0,0,.16);}
+.mk:hover{transform:translate(-1px,-1px);box-shadow:0 7px 18px rgba(0,0,0,.25);}
+.mk:active{transform:translate(1px,1px);box-shadow:0 2px 7px rgba(0,0,0,.2);}
 .mk.done.on{background:var(--ok);color:var(--on-fill)}
 .mk.miss.on{background:var(--bad);color:var(--on-fill)}
 .mk .lbl{position:absolute;opacity:0;pointer-events:none}
@@ -840,9 +841,9 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
   width:29px;height:29px;border-radius:var(--r-1);border:2.5px solid var(--line-2);
   transition:transform .13s ease;
   position:relative;
-}
-.pen:hover{transform:translate(-1px,-1px);}
-.pen.on{transform:translateY(-3px);}
+box-shadow:0 5px 14px rgba(0,0,0,.18);}
+.pen:hover{transform:translate(-1px,-1px);box-shadow:0 7px 18px rgba(0,0,0,.26);}
+.pen.on{transform:translateY(-3px);box-shadow:0 9px 22px rgba(0,0,0,.3);}
 .pen.on::after{content:"";position:absolute;inset:-6px;border:2.5px solid var(--line-2);border-radius:var(--r-1)}
 .pen.er{background:var(--card);font-size:14px;display:flex;align-items:center;justify-content:center}
 .mkbar .hint{font-size:11.5px;color:var(--ink-4);font-weight:600;margin-left:auto}
@@ -862,7 +863,7 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
   width:112px;padding:9px 13px;border:1px solid var(--line-2);border-radius:var(--r-1);
   font-size:14px;font-weight:700;background:var(--card);color:var(--tx);
   
-}
+box-shadow:0 5px 14px rgba(0,0,0,.15);}
 .jumpin::-webkit-outer-spin-button,.jumpin::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
 .jumpin{-moz-appearance:textfield}
 .jumpkey{display:flex;gap:13px;flex-wrap:wrap;font-size:11.5px;color:var(--ink-3);font-weight:700;margin-bottom:13px}
@@ -877,8 +878,8 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
   background:var(--card);display:flex;align-items:center;justify-content:center;position:relative;
   
   transition:transform .12s ease;
-}
-.qg:hover{transform:translate(-2px,-2px);}
+box-shadow:0 5px 14px rgba(0,0,0,.15);}
+.qg:hover{transform:translate(-2px,-2px);box-shadow:0 10px 24px rgba(0,0,0,.24);}
 .qg.ok{background:var(--ok-bg);color:var(--tx);border-color:var(--ok)}
 .qg.bad{background:var(--bad-bg);color:var(--bad);border-color:var(--bad)}
 /* colour alone told ok from bad; a corner glyph says it too, so the grid
@@ -888,13 +889,13 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
 /* During a paper the grid may say only whether a question has been answered.
    Right and wrong are the marks, and the marks come out at hand-in. */
 .qg.done{background:var(--fill);border-color:var(--tx);color:var(--tx)}
-.qg.cur{background:var(--fill);color:var(--on-fill);transform:translate(-2px,-2px);}
+.qg.cur{background:var(--fill);color:var(--on-fill);transform:translate(-2px,-2px);box-shadow:0 10px 24px rgba(0,0,0,.3);}
 .qg.flagged::after{
   content:"";position:absolute;top:-5px;right:-5px;width:11px;height:11px;
   background:var(--gold);border:2px solid var(--line-2);border-radius:50%;
 }
 .qprog{border:2px solid var(--line-2);cursor:pointer;transition:transform .12s}
-.qprog:hover{transform:translate(-1px,-1px);}
+.qprog:hover{transform:translate(-1px,-1px);box-shadow:0 5px 14px rgba(0,0,0,.22);}
 
 
 
@@ -993,7 +994,8 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
   background-size:64px 64px;
   -webkit-mask-image:none;
           mask-image:none;
-}
+background-image:linear-gradient(var(--line) 1px,transparent 1px),
+                   linear-gradient(90deg,var(--line) 1px,transparent 1px);-webkit-mask-image:radial-gradient(ellipse 78% 62% at 50% 44%,#000 18%,transparent 76%);mask-image:radial-gradient(ellipse 78% 62% at 50% 44%,#000 18%,transparent 76%);}
 
 .gstep{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;width:100%;max-width:780px}
 .gate-theme{position:absolute;top:16px;right:16px;z-index:3;font-size:15px}
@@ -1061,8 +1063,8 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
   width:96px;height:96px;border-radius:var(--r);border:3px solid var(--line-2);
   display:flex;align-items:center;justify-content:center;font-size:44px;overflow:hidden;
   position:relative;--fr-t:9px;
-}
-.pcard:hover .pav{}
+box-shadow:0 12px 28px rgba(0,0,0,.2);}
+.pcard:hover .pav{box-shadow:0 17px 40px rgba(0,0,0,.28);}
 .pav img{width:100%;height:100%;object-fit:cover;display:block}
 .pav .lock{
   position:absolute;right:-6px;bottom:-6px;width:28px;height:28px;border-radius:50%;
@@ -1075,7 +1077,7 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
      unaffected. */
 }
 .pname{font-weight:700;font-size:14.5px;text-align:center;line-height:1.3;word-break:break-word}
-.pcard.add .pav{border-style:dashed;background:var(--card);font-size:38px;color:var(--ink-4);}
+.pcard.add .pav{border-style:dashed;background:var(--card);font-size:38px;color:var(--ink-4);box-shadow:none;}
 .pcard.add:hover .pav{border-color:var(--line-2);color:var(--tx)}
 .gate .gfoot{margin-top:34px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
 .gate .goffline{margin:20px auto 0;max-width:460px;text-align:center;font-size:12.5px;line-height:1.6;color:var(--ink-4)}
@@ -1097,8 +1099,8 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
   background:var(--card);color:var(--tx);font-size:13px;font-weight:700;
   transition:transform .13s ease,background .13s,color .13s;
 }
-.tchip:hover:not(.on){transform:translateY(-2px);}
-.tchip.on{background:var(--fill);color:var(--on-fill);}
+.tchip:hover:not(.on){transform:translateY(-2px);box-shadow:0 8px 20px var(--sh-soft);}
+.tchip.on{background:var(--fill);color:var(--on-fill);box-shadow:0 9px 24px rgba(0,0,0,.35),var(--glow);}
 /* The status line is what the old copy's "some semesters have no published
    content yet" was trying to say, except it says it about the semester the
    student is actually looking at, at the moment they select it. A student who
@@ -1126,12 +1128,12 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
 .colb{width:34px;height:34px;border-radius:var(--r-1);border:2.5px solid var(--line-2);
   transition:transform .12s ease}
 .colb:hover{transform:translateY(-2px)}
-.colb.on{transform:translateY(-4px);}
+.colb.on{transform:translateY(-4px);box-shadow:0 9px 22px rgba(2,6,14,.3);}
 .avprev{
   width:88px;height:88px;border-radius:var(--r);border:3px solid var(--line-2);margin:0 auto 16px;
   display:flex;align-items:center;justify-content:center;font-size:40px;overflow:hidden;
   --fr-t:8px;
-}
+box-shadow:0 10px 24px rgba(0,0,0,.2);}
 .avprev img{width:100%;height:100%;object-fit:cover}
 /* A portrait fills its box at whatever size the box is, so one rule covers a
    96px gate card, an 88px editor preview, a 90px picker tile and a 32px rail
@@ -1151,8 +1153,8 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
   width:52px;height:60px;border:2.5px solid var(--line-2);border-radius:var(--r-1);text-align:center;
   font-size:24px;font-weight:700;background:var(--card);color:var(--tx);
   
-}
-.pind:focus{border-color:var(--line-2);outline:none;}
+box-shadow:0 5px 14px rgba(0,0,0,.18);}
+.pind:focus{border-color:var(--line-2);outline:none;box-shadow:0 7px 18px rgba(125,88,144,.4);}
 .pinerr{color:var(--bad);font-weight:700;font-size:13px;text-align:center;margin-top:4px;min-height:18px}
 
 .railprof{
@@ -1271,8 +1273,8 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
   display:flex;align-items:center;gap:11px;padding:14px 24px;border-radius:var(--r-1);
   background:var(--on-fill);border:var(--light-gsign-border,1px solid rgba(255,255,255,.5));font-weight:700;font-size:14.5px;color:#1f2430;
   transition:transform .14s ease;
-}
-.gsign:hover{transform:translateY(-3px);}
+box-shadow:0 10px 24px rgba(0,0,0,.2);}
+.gsign:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(0,0,0,.3);}
 .gsign:active{transform:translateY(-1px)}
 /* a slow sheen crossing the button every few seconds. The button is white, so
    the sweep has to be a shadow rather than a light or it is invisible. */
@@ -1280,15 +1282,15 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
   content:"";position:absolute;top:0;left:-60%;width:42%;height:100%;pointer-events:none;
   background:var(--card);
   transform:skewX(-18deg);animation:sweep 5s ease-in-out 1.8s infinite;
-}
+background:linear-gradient(100deg,transparent,rgba(60,90,140,.16),transparent);}
 @keyframes sweep{0%{left:-60%}24%{left:135%}100%{left:135%}}
 /* the primary action when running from a file, where Google sign-in cannot work */
 .gbig{font-size:15px;padding:15px 30px;border-radius:var(--r-1)}
 /* the cloud button in its unavailable state: shown, so the option is visible,
    but plainly inert — no pointer, no hover, no sheen */
-.gsign.off{margin-top:18px;opacity:.42;cursor:not-allowed;}
+.gsign.off{margin-top:18px;opacity:.42;cursor:not-allowed;box-shadow:none;}
 .gsign.off::after{animation:none;display:none}
-.gsign.off:hover{transform:none;}
+.gsign.off:hover{transform:none;box-shadow:none;}
 .gsign svg{width:19px;height:19px;flex-shrink:0}
 .gate .gor{margin:22px 0 4px;font-size:12px;font-weight:700;color:var(--ink-4);text-transform:none}
 .syncdot{
@@ -1331,7 +1333,7 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
   background:var(--card);border:2.5px solid var(--line-2);
   border-radius:var(--r-1);padding:16px 20px;font-size:14px;line-height:1.68;margin-bottom:22px;
   
-}
+background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));box-shadow:var(--pop) rgba(109,76,125,.22);}
 /* ⚠️ "In this lecture" IS GONE FROM THE SCREEN TOO (user, 2026-08-19: "I don't
    need the in this lecture part I thought we changed this formula long ago").
    It was removed from PRINT on 2026-08-13 and the screen kept it — which is
@@ -1470,7 +1472,7 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
 /* The intro opens the chapter, so it is a first page, not a tinted callout. */
 .bk-on .th-intro.bk-first{
   border:none;background:none;padding:0;
-}
+box-shadow:none;}
 .bk-on .bk-view{
   overflow:hidden;                    /* the window the pages slide behind */
   position:relative;
@@ -1527,7 +1529,7 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
   border:1px solid var(--line-2);background:var(--card);color:var(--tx);
   
   transition:transform .18s ease,background .18s ease;
-}
+box-shadow:0 1px 0 var(--sh-soft);}
 .bk-btn:hover:not(:disabled){transform:translateY(-2px);background:var(--bg-2)}
 .bk-btn:disabled{opacity:.32;cursor:default}
 .bk-num{
@@ -1627,10 +1629,10 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
 .flow-title{font-size:11px;font-weight:700;text-transform:none;color:var(--tx);margin-bottom:14px}
 .fstep{margin-bottom:9px}
 .fbox{background:var(--card);border:1px solid var(--line-2);border-radius:var(--r-1);padding:11px 14px;
-  }
+  box-shadow:0 5px 14px rgba(0,0,0,.15);}
 .fbox .ft{font-weight:700;font-size:13.6px;line-height:1.42}
 .fbox .fn{font-size:12.4px;color:var(--ink-3);margin-top:5px;line-height:1.5;font-weight:600}
-.fbox.alert{background:var(--tint);border-color:var(--line-2);}
+.fbox.alert{background:var(--tint);border-color:var(--line-2);box-shadow:0 5px 14px rgba(255,90,95,.3);}
 .fbox.alert .ft{color:#ff9aa2}
 .fbox.dec{background:var(--gold-bg);border-color:var(--gold)}
 .farrow{text-align:center;color:var(--tx);font-size:17px;line-height:1;margin:2px 0 7px;font-weight:700}
@@ -1651,13 +1653,13 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
   border:2.5px solid var(--line-2);border-radius:var(--r-1);font-weight:700;font-size:13.5px;
   
   transition:transform .13s ease;
-}
-.readtheory:hover{transform:translate(-2px,-2px);}
+background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));box-shadow:var(--pop) rgba(125,88,144,.3);}
+.readtheory:hover{transform:translate(-2px,-2px);box-shadow:var(--pop-lg) rgba(125,88,144,.35);}
 .th-ch{display:flex;align-items:center;gap:13px;padding:14px 16px;background:var(--card);
   border:1px solid var(--line-2);border-radius:var(--r-1);margin-bottom:9px;width:100%;text-align:left;
-  transition:transform .13s ease}
-.th-ch:hover:not(:disabled){transform:translate(-2px,-2px);}
-.th-ch:disabled{opacity:.4;cursor:default;border-style:dashed}
+  transition:transform .13s ease;box-shadow:0 5px 14px rgba(0,0,0,.13);}
+.th-ch:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:0 10px 24px rgba(0,0,0,.2);}
+.th-ch:disabled{opacity:.4;cursor:default;border-style:dashed;box-shadow:none;}
 .th-ch .n{flex:1;font-weight:700;font-size:14px}
 .th-ch .m{font-size:11.5px;color:var(--ink-4);font-weight:700}
 .doc-head{border-bottom:3px solid var(--line-2);padding-bottom:14px;margin-bottom:22px}
@@ -1685,7 +1687,7 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
   /* A question's photograph is content, so it PRINTS — unlike the module
      artwork below. It is an <img>, not a background, so it needs nothing but
      room; the caption's "tap to enlarge" is meaningless on paper. */
-  .qfig img{max-width:78mm;}
+  .qfig img{max-width:78mm;box-shadow:none;}
   .qfig figcaption{color:#444}
   /* The module artwork is a background-image, and browsers do not print those by
      default — left in, it reserves a square of blank paper per card. It carries
@@ -1769,7 +1771,7 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
   .flow,.fbox,.th-body blockquote{break-inside:avoid;page-break-inside:avoid}
   .th-table thead{display:table-header-group}
   .th-table tr{break-inside:avoid;page-break-inside:avoid}
-  .fbox,.th-table{}
+  .fbox,.th-table{box-shadow:none!important;}
   /* ⚠️ THE PDF IS A BOOK, NOT THE SCREEN (user's instruction, 2026-08-13):
      title page, contents, then straight into the notes. The exam-patterns
      intro is screen-only — on paper the user asked to start with the
@@ -1897,7 +1899,7 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
     display:block!important;aspect-ratio:auto!important;height:auto!important;
     width:auto!important;padding:0!important;border:none!important;
     border-radius:0!important;background:none!important;
-    overflow:visible!important}
+    overflow:visible!important;box-shadow:none!important;}
   /* ── THE COVER ─────────────────────────────────────────────────────────────
      Typographic, not illustrated: Canva was considered and set aside because a
      cover image cannot be generated per chapter for 104 chapters, and the module
@@ -2008,7 +2010,7 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
 
    The glow once used the text token, which is TEXT colour — parchment-white, so the
    chip wore a pale halo. That is the exact re-merge the token contract forbids. */
-.bankchip.on{background:var(--bk);color:var(--on-fill);}
+.bankchip.on{background:var(--bk);color:var(--on-fill);box-shadow:0 6px 16px var(--sh);}
 .bankchip:not(.on){opacity:.5;text-decoration:line-through}
 .bankn{font-size:11px;font-weight:700;padding:1px 7px;border-radius:var(--r-1);
   background:rgba(0,0,0,.18)}
@@ -2025,7 +2027,7 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
   background:var(--card);font-weight:700;
   transition:transform .13s ease;
 }
-.chip:hover{transform:translate(-1px,-1px);}
+.chip:hover{transform:translate(-1px,-1px);box-shadow:0 7px 18px rgba(0,0,0,.25);}
 .chip:active{transform:translate(1px,1px);}
 /* fallback is --fill, not --ink: --ink is near-white since the redesign, so an
    unset --c would have made a white chip carrying white text */
@@ -2036,7 +2038,7 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
 
 .mobile-only{display:none}
 @media(max-width:860px){
-  .rail{position:fixed;left:-238px;z-index:60;transition:left .24s;}
+  .rail{position:fixed;left:-238px;z-index:60;transition:left .24s;box-shadow:8px 0 30px rgba(0,0,0,.3);}
   .rail.open{left:0}
   .mobile-only{display:block}
   .page{padding:18px 14px}
@@ -2066,7 +2068,10 @@ body{
   background:var(--bg);
   background-image:var(--light-body-background-image,none);
   background-attachment:fixed;
-}
+background-image:
+    radial-gradient(1200px 700px at 8% -10%, rgba(109,76,125,.30), transparent 60%),
+    radial-gradient(1000px 620px at 100% 0%, rgba(46,95,138,.26), transparent 58%),
+    radial-gradient(900px 600px at 50% 110%, rgba(92,122,82,.20), transparent 60%);}
 
 /* Slow-moving colour behind everything. Fixed, non-interactive, z-index 0;
    .app sits at z-index 1. Blur is on an element that never scrolls and never
@@ -2176,12 +2181,12 @@ body[data-view="theory"] .orb{animation-play-state:paused}
 }
 .topbar{backdrop-filter:blur(16px) saturate(140%);-webkit-backdrop-filter:blur(16px) saturate(140%)}
 .modal{
-  background:var(--light-modal-background,var(--card));
+  background:var(--light-modal-background,linear-gradient(160deg,rgba(24,40,60,.96),rgba(14,25,40,.98)));
   backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
   border:var(--light-modal-border,1px solid var(--line-2));box-shadow:var(--light-modal-shadow,0 30px 80px rgba(0,0,0,.6),var(--glow));
 }
 .modal-bg{background:var(--light-modal-bg-background,rgba(3,7,14,.66));backdrop-filter:var(--light-modal-bg-blur,blur(5px))}
-.results{background:var(--light-results-background,var(--glass));border:1px solid var(--line-2)}
+.results{background:var(--light-results-background,var(--glass));border:1px solid var(--line-2);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);}
 .gate,.splash{background:var(--bg);background-image:inherit}
 
 /* ---- surfaces get an inner highlight so edges read on dark -------------- */
@@ -2189,7 +2194,7 @@ body[data-view="theory"] .orb{animation-play-state:paused}
    these rules unchanged instead of restating all of them. */
 .card,.stat,.ch-row,.qcard,.th-ch,.day,.modelans,.explain,.fbox,.conf,.bk-sheet{
   
-}
+box-shadow:var(--pop) var(--sh),var(--glow);}
 .card,.stat,.qcard,.ch-row,.th-ch,.day{
   background:var(--sheen);
   background-color:var(--card);
@@ -2199,38 +2204,38 @@ body[data-view="theory"] .orb{animation-play-state:paused}
 button.card:hover:not(:disabled),.ch-row:hover:not(:disabled),.th-ch:hover:not(:disabled){
   transform:translateY(-3px);
   
-}
+box-shadow:0 16px 38px var(--sh-deep),0 0 0 1px var(--c,var(--line-2));}
 button.card:active:not(:disabled){transform:translateY(-1px)}
-.day:hover{transform:translateY(-2px);}
+.day:hover{transform:translateY(-2px);box-shadow:0 14px 32px var(--sh-deep),var(--glow);}
 
 /* module cards glow in their own colour */
 .mod-card::after{opacity:.5;filter:blur(26px);width:120px;height:120px;right:-40px;top:-40px}
-.mod-ic{}
-.pill{border:none;}
+.mod-ic{box-shadow:0 8px 22px var(--c),0 0 0 1px rgba(255,255,255,.14);}
+.pill{border:none;box-shadow:0 4px 14px rgba(0,0,0,.4);}
 
 /* buttons: the primary action is now a lit surface, not a dark slab */
 .btn{
   background:var(--card);
   background-color:var(--fill);border:1px solid var(--line-2);
   
-}
-.btn:hover:not(:disabled){transform:translateY(-2px);}
+background:linear-gradient(160deg,#2c4a6b,#1b2d44);box-shadow:0 8px 20px rgba(0,0,0,.45),var(--glow);}
+.btn:hover:not(:disabled){transform:translateY(-2px);box-shadow:0 14px 30px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.18);}
 .btn:active:not(:disabled){transform:translateY(0)}
-.btn.go{background:var(--card);border-color:rgba(255,255,255,.2);}
-.btn.go:hover:not(:disabled){}
-.btn.flag.on{background:var(--card);color:var(--on-accent)}
+.btn.go{background:var(--card);border-color:rgba(255,255,255,.2);background:linear-gradient(160deg,#7d5890,#573a66);box-shadow:0 10px 26px rgba(125,88,144,.5);}
+.btn.go:hover:not(:disabled){box-shadow:0 16px 36px rgba(125,88,144,.65);}
+.btn.flag.on{background:var(--card);color:var(--on-accent);background:linear-gradient(160deg,#ffd469,#f0b429);}
 .wbadge.high{color:var(--on-accent)}
 
 /* options: selection and verdict read by glow, not by a hard offset */
 .opt{background:var(--tint);border-color:var(--line-2)}
-.opt:hover:not(:disabled){background:var(--tint-2);border-color:var(--line-2);transform:translateX(3px);}
-.opt.sel{}
-.opt.correct{}
-.opt.wrong{}
+.opt:hover:not(:disabled){background:var(--tint-2);border-color:var(--line-2);transform:translateX(3px);box-shadow:0 6px 18px var(--sh-soft);}
+.opt.sel{box-shadow:0 8px 24px rgba(125,88,144,.4),0 0 0 1px rgba(125,88,144,.6);}
+.opt.correct{box-shadow:0 8px 24px rgba(34,201,138,.3),0 0 0 1px rgba(34,201,138,.5);}
+.opt.wrong{box-shadow:0 8px 24px rgba(255,90,106,.3),0 0 0 1px rgba(255,90,106,.5);}
 .verdict{border:1px solid var(--line-2)}
-.verdict.ok{}
-.verdict.bad{}
-.verdict.part{}
+.verdict.ok{box-shadow:0 10px 30px rgba(34,201,138,.22),0 0 0 1px rgba(34,201,138,.4);}
+.verdict.bad{box-shadow:0 10px 30px rgba(255,90,106,.22),0 0 0 1px rgba(255,90,106,.4);}
+.verdict.part{box-shadow:0 10px 30px rgba(255,201,74,.22),0 0 0 1px rgba(255,201,74,.4);}
 
 /* the reading surface — highest contrast on the page, deliberately.
    These three carry the clinical text, so they are the one place the theme is
@@ -2246,12 +2251,12 @@ button.card:active:not(:disabled){transform:translateY(-1px)}
 .search,.caseinput,.jumpin,.pind,.cfgbox,.ed-lab,.ed-txt,.keyin,.newday input[type=date]{
   background:var(--tint);border-color:var(--line-2);color:var(--tx);
 }
-.search:focus,.caseinput:focus{border-color:var(--line-2);}
+.search:focus,.caseinput:focus{border-color:var(--line-2);box-shadow:0 0 0 3px rgba(125,88,144,.3);}
 /* --fill is a DARK solid in both themes, so the text on it must be white in
    both. Using var(--tx) here worked on dark only by coincidence — on light it
    put near-black text on a near-black chip. */
 .eyebrow{background:var(--fill);color:var(--on-fill);border:1px solid var(--line-2)}
-.toast{background:var(--card);border:1px solid var(--line-2);box-shadow:var(--light-toast-shadow,0 18px 44px rgba(0,0,0,.6))}
+.toast{background:var(--card);border:1px solid var(--line-2);box-shadow:var(--light-toast-shadow,0 18px 44px rgba(0,0,0,.6));background:linear-gradient(160deg,#22344b,#14243a);}
 .kbd{background:var(--tint-2);border-color:var(--line-2)}
 .grouphdr::after{height:1px;background:var(--line-2)}
 
@@ -2314,7 +2319,10 @@ button.card:active:not(:disabled){transform:translateY(-1px)}
   /* same three orbs of colour, roughly a third of the strength — at dark-mode
      alpha they turn a white page murky rather than atmospheric */
   --light-body-background-image:none;
-}
+background-image:
+    radial-gradient(1200px 700px at 8% -10%, rgba(109,76,125,.13), transparent 60%),
+    radial-gradient(1000px 620px at 100% 0%, rgba(46,95,138,.11), transparent 58%),
+    radial-gradient(900px 600px at 50% 110%, rgba(154,107,31,.14), transparent 60%);}
 :root[data-theme="light"] .ambient .orb{--light-ambient-orb-opacity:.20}
 :root[data-theme="light"] .ambient .o4{--light-ambient-o4-opacity:.13}
 
@@ -2383,13 +2391,13 @@ button.card:active:not(:disabled){transform:translateY(-1px)}
   --light-rail-background:linear-gradient(180deg,#ece5d7,#e6dccb);
   --light-rail-border-right:1px solid rgba(16,27,45,.14);
   --light-rail-blur:none;--light-rail-webkit-blur:none;
-}
+backdrop-filter:none;-webkit-backdrop-filter:none;}
 :root[data-theme="light"] .rail .logo{--light-rail-logo-color:#2a2118}
 :root[data-theme="light"] .rail .logo .blip{
   /* the gold ring existed to separate a navy medallion from a near-black rail.
      On parchment the disc already stands out, so it becomes a plain soft edge */
   --light-rail-logo-blip-shadow:0 0 0 1px rgba(122,90,20,.30),0 3px 9px rgba(60,45,20,.20);
-}
+box-shadow:0 0 0 1px rgba(122,90,20,.30),0 3px 9px rgba(60,45,20,.20);}
 :root[data-theme="light"] .nav-item:hover,
 :root[data-theme="light"] .nav-item.on,
 :root[data-theme="light"] .railprof .rn{--light-nav-item-hover-color:#2a2118}
@@ -2398,29 +2406,29 @@ button.card:active:not(:disabled){transform:translateY(-1px)}
 :root[data-theme="light"] .streak{
   --light-streak-background:var(--card);
   --light-streak-border-color:rgba(154,107,31,.38);
-}
+background:linear-gradient(135deg,rgba(217,180,74,.26),rgba(180,71,47,.14));}
 :root[data-theme="light"] .streak .n{--light-streak-n-color:#7a5200}
 :root[data-theme="light"] .modal{
   --light-modal-background:var(--card);
   --light-modal-border:1px solid var(--line-2);
   --light-modal-shadow:0 30px 80px rgba(23,38,66,.22),var(--glow);
-}
-:root[data-theme="light"] .modal-bg{--light-modal-bg-background:rgba(28,42,66,.38);--light-modal-bg-blur:blur(5px)}
+background:linear-gradient(160deg,rgba(255,255,255,.98),rgba(243,247,252,.97));box-shadow:0 30px 80px rgba(23,38,66,.22),var(--glow);}
+:root[data-theme="light"] .modal-bg{--light-modal-bg-background:rgba(28,42,66,.38);--light-modal-bg-blur:blur(5px);backdrop-filter:blur(5px);}
 :root[data-theme="light"] .results{--light-results-background:var(--card)}
 :root[data-theme="light"] .toast{
   /* stays dark — a light toast on a light page has no presence */
   --light-toast-shadow:0 18px 44px rgba(23,38,66,.3);
-}
+box-shadow:0 18px 44px rgba(23,38,66,.3);}
 :root[data-theme="light"] .gsign{
   /* the Google button is white by brand, which on a light page needs a real
      border or it dissolves into the background */
   --light-gsign-border:1px solid rgba(16,27,45,.16);
   
-}
-:root[data-theme="light"] .gsign:hover{}
-:root[data-theme="light"] .mod-ic{}
-:root[data-theme="light"] .pill{}
-:root[data-theme="light"] .btn:hover:not(:disabled){}
+box-shadow:0 6px 18px rgba(23,38,66,.12);}
+:root[data-theme="light"] .gsign:hover{box-shadow:0 12px 28px rgba(23,38,66,.18);}
+:root[data-theme="light"] .mod-ic{box-shadow:0 8px 22px var(--c),0 0 0 1px rgba(16,27,45,.08);}
+:root[data-theme="light"] .pill{box-shadow:0 4px 14px rgba(23,38,66,.18);}
+:root[data-theme="light"] .btn:hover:not(:disabled){box-shadow:0 14px 30px rgba(23,38,66,.28),0 0 0 1px rgba(16,27,45,.12);}
 
 
 
@@ -2483,7 +2491,7 @@ button.card.mod-card{display:flex;flex-direction:column;padding:0}
    without reading as broken. The dashboard card is a <div>, so there is no
    disabled state to style; this is what carries it. */
 .mod-card.locked{display:flex;flex-direction:column;padding:0;cursor:default}
-.mod-card.locked:hover{transform:none;}
+.mod-card.locked:hover{transform:none;box-shadow:none;}
 /* Dim the PAINTING, not the words. This card used to carry opacity:.55, which
    dims the text with everything else: measured against the page that put the
    title, the meta line and the badge at 2.65:1, well under AA, at 10px on the
@@ -2558,16 +2566,16 @@ button.card.locked:hover .mod-art{opacity:var(--light-button-card-locked-hover-m
   border:1px solid var(--line-2);border-radius:var(--r);
   padding:24px 30px;margin-bottom:30px;position:relative;overflow:hidden;
   
-}
+box-shadow:var(--pop) var(--sh),var(--glow);}
 /* a gold rule down the spine, the one ornament on the panel */
 .hero-panel::after{
   content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
   background:var(--card);opacity:.65;
-}
+background:linear-gradient(180deg,transparent,var(--gold),transparent);}
 .hp-art img{
   width:100%;display:block;border-radius:var(--r-1);border:1px solid var(--line-2);
   
-}
+box-shadow:0 10px 26px var(--sh);}
 /* the engraving is printed on parchment; on the dark theme it is lifted off the
    page so it reads as an object rather than a bright rectangle */
 :root .hp-art img{filter:var(--light-hp-art-img-filter,sepia(.2) contrast(1.02) brightness(.94))}
@@ -2742,7 +2750,7 @@ button.card.locked:hover .mod-art{opacity:var(--light-button-card-locked-hover-m
   opacity:0;transform:translateY(6px) scale(.97);transform-origin:100% 100%;
   transition:opacity .26s cubic-bezier(.22,1,.36,1),transform .26s cubic-bezier(.22,1,.36,1);
   pointer-events:none;
-}
+box-shadow:0 12px 32px var(--sh-deep),0 0 20px rgba(255,150,50,.14);}
 .cl-say.show{opacity:1;transform:none;pointer-events:auto}
 .cl-say b,.cl-say strong{color:var(--light-cl-say-b-color,var(--cl-1));font-weight:700}
 .cl-say::after{                       /* the tail, pointing at her */
@@ -2764,7 +2772,7 @@ button.card.locked:hover .mod-art{opacity:var(--light-button-card-locked-hover-m
   font:700 13px/1 var(--font-display);
   font-variant-numeric:tabular-nums;white-space:nowrap;
   
-}
+box-shadow:0 6px 18px var(--sh-soft);}
 .clep.timed .cl-hud{display:inline-flex}
 .cl-hud .ph{font-size:9.5px;text-transform:none;opacity:.72;font-weight:700}
 .cl-hud.rest{--cl-edge:rgba(127,174,111,.5)}
@@ -2800,7 +2808,7 @@ button.card.locked:hover .mod-art{opacity:var(--light-button-card-locked-hover-m
   background:var(--cl-panel);border:1px solid var(--cl-edge);color:var(--cl-text);
   cursor:pointer;font:700 13px/1 var(--font-display);
   font-variant-numeric:tabular-nums;transition:transform .13s ease;
-}
+box-shadow:0 8px 22px var(--sh-soft);}
 .cl-mini:hover{transform:translate(-1px,-1px);}
 .cl-mini:active{transform:translate(1px,1px);}
 .cl-mini svg{filter:drop-shadow(0 0 5px var(--cl-glow))}
@@ -2868,7 +2876,7 @@ button.card.locked:hover .mod-art{opacity:var(--light-button-card-locked-hover-m
   background:var(--sheen);background-color:var(--card);
   border:1px solid var(--line-2);border-radius:var(--r);
   padding:24px 28px;margin-bottom:28px;
-}
+box-shadow:var(--pop) var(--sh),var(--glow);}
 .sr-wrap{position:relative;width:172px;height:172px;flex:0 0 auto}
 .sr-ring{display:block;width:100%;height:100%}
 .sr-mid{position:absolute;inset:0;display:flex;flex-direction:column;
@@ -2905,7 +2913,7 @@ button.card.locked:hover .mod-art{opacity:var(--light-button-card-locked-hover-m
 .bak-dot{
   position:absolute;right:6px;top:6px;width:6px;height:6px;border-radius:50%;
   background:var(--ok);
-}
+box-shadow:0 0 0 2px var(--bg-2);}
 .bak-dot.warn{background:var(--bad)}
 /* the dot's colour is not the only warning — a mark rides on top of it */
 .bak-dot.warn::after{
