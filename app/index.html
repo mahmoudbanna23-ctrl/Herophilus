@@ -5268,10 +5268,21 @@ function revealOnScroll(root){
   if(!items.length||!('IntersectionObserver' in window)) return;
   _revealObs=new IntersectionObserver((entries,obs)=>{
     entries.forEach(e=>{ if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target)} });
-  },{rootMargin:'0px 0px -40px 0px',threshold:.06});
+  /* Reveal BEFORE the element arrives, not after. A negative bottom margin
+     held the fade until a row was already 40px inside the viewport, so on a
+     long list every row was blank at the moment you looked at it and only
+     resolved a third of a second later. Scrolling could not outrun a frame
+     budget -- it was outrunning the reveal. Growing the root downward starts
+     the fade while the row is still below the fold, so it has finished
+     arriving by the time it is on screen. */
+  },{rootMargin:'0px 0px 220px 0px',threshold:.06});
   items.forEach((el,i)=>{
     el.classList.add('reveal');
-    el.style.transitionDelay=Math.min(i,8)*18+'ms';
+    /* The stagger belongs to the entrance, where a handful of elements arrive
+       together and the offset reads as one movement. Anything revealed later,
+       by scrolling, arrives alone -- a delay there is not rhythm, it is just
+       the row being late. Only the first screenful is staggered. */
+    el.style.transitionDelay=(i<9?i*18:0)+'ms';
     _revealObs.observe(el);
   });
 }
