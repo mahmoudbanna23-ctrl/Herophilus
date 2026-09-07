@@ -123,6 +123,11 @@
   --bad-bg:rgba(242,146,172,.10);
   --gold:#d9b44a;
   --gold-bg:rgba(228,196,96,.12);
+  /* Student annotation washes: ochre, sage, dusty rose, slate. */
+  --hl-y:#49402b;
+  --hl-g:#2f4539;
+  --hl-p:#4b343e;
+  --hl-b:#303f50;
   --warn:#e4c460;
   --on-accent:#12100b;   /* text ON gold and other bright fills */
   --gold-text:#e4c460;   /* gold used AS TEXT. Separate from --gold because on
@@ -191,6 +196,10 @@
   --bad-bg:rgba(146,41,79,.07);
   --gold:#d9b44a;              /* unchanged — see note 2 above */
   --gold-bg:rgba(116,88,0,.10);
+  --hl-y:#e3d3a4;
+  --hl-g:#c9d8c0;
+  --hl-p:#dfc5c9;
+  --hl-b:#c5d2de;
   --warn:#745800;
   --on-accent:#1a150e;
   --gold-text:#745800;   /* bronze. The background gold measures 1.6:1 as text
@@ -723,16 +732,13 @@ button.card:active:not(:disabled){transform:translate(1px,1px);}
 
 
 /* ---------- Highlighter ---------- */
-mark.hl{background:var(--gold-bg);padding:1.5px 1px;border-radius:var(--r-1);color:inherit;
+mark.hl{background:var(--hl-y);padding:1.5px 1px;border-radius:var(--r-1);color:inherit;
   box-decoration-break:clone;-webkit-box-decoration-break:clone}
-/* On the old white paper these were solid pastels with dark text. On the dark
-   ground a solid pastel would need dark text inside light-on-dark prose, which
-   reads badly mid-sentence — so the highlight is now a translucent wash of the
-   same hue and the text stays light. Colour still identifies the pen. */
-mark.hl[data-c="y"]{background:var(--light-mark-hl-data-c-y-background,var(--gold-bg));}
-mark.hl[data-c="g"]{background:var(--light-mark-hl-data-c-g-background,var(--gold-bg));}
-mark.hl[data-c="p"]{background:var(--light-mark-hl-data-c-p-background,var(--gold-bg));}
-mark.hl[data-c="b"]{background:var(--light-mark-hl-data-c-b-background,var(--gold-bg));}
+/* Shared paper-wash tokens keep the picker and saved annotation ids in step. */
+mark.hl[data-c="y"],.pen.y{background:var(--hl-y);}
+mark.hl[data-c="g"],.pen.g{background:var(--hl-g);}
+mark.hl[data-c="p"],.pen.p{background:var(--hl-p);}
+mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
 
 .mkbar{
   display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-bottom:15px;
@@ -747,7 +753,6 @@ mark.hl[data-c="b"]{background:var(--light-mark-hl-data-c-b-background,var(--gol
 .pen:hover{transform:translate(-1px,-1px);}
 .pen.on{transform:translateY(-3px);}
 .pen.on::after{content:"";position:absolute;inset:-6px;border:2.5px solid var(--line-2);border-radius:var(--r-1)}
-.pen.y{background:#ffe97a}.pen.g{background:#a8f0bd}.pen.p{background:#ffc2dc}.pen.b{background:#a9d6ff}
 .pen.er{background:var(--card);font-size:14px;display:flex;align-items:center;justify-content:center}
 .mkbar .hint{font-size:11.5px;color:var(--ink-4);font-weight:600;margin-left:auto}
 .mkbar .clr{
@@ -1507,12 +1512,18 @@ mark.hl[data-c="b"]{background:var(--light-mark-hl-data-c-b-background,var(--gol
     --card:#fff; --bg:#fff; --bg-2:#f2f4f8; --fill:#14181f;
     --line:#d8dde5; --line-2:#b9c1cd;
     --ok-bg:#f3f3f3; --bad-bg:#f3f3f3; --gold-bg:#f3f3f3;
+    /* Pale washes remain visible on white paper in either source theme. */
+    --hl-y:#e3d3a4;
+    --hl-g:#c9d8c0;
+    --hl-p:#dfc5c9;
+    --hl-b:#c5d2de;
     --stem:#14181f; --prose:#22282f; --strong:#000;
     --warn:#745800; --ok:#14181f; --bad:#92294f;
     --sh:rgba(0,0,0,.10); --sh-soft:rgba(0,0,0,.07); --sh-deep:rgba(0,0,0,.14);
     --sheen:var(--card); --tint:transparent; --tint-2:#f2f4f8;
     --glow:none;
   }
+  mark.hl{-webkit-print-color-adjust:exact;print-color-adjust:exact}
   body{background:#fff!important;background-image:none!important;font-size:11pt;color:#14181f}
   .ambient,.ambient *{display:none!important}
   /* Weight, not just colour. EB Garamond is a light serif and at 11pt its regular
@@ -2191,13 +2202,7 @@ button.card:active:not(:disabled){transform:translateY(-1px)}
 :root[data-theme="light"] .pill{}
 :root[data-theme="light"] .btn:hover:not(:disabled){}
 
-/* The highlighter pens are translucent brights. Over a white card with dark
-   text they read fine unchanged, but they need a touch more opacity to be
-   visible at all against white rather than against navy. */
-:root[data-theme="light"] mark.hl[data-c="y"]{--light-mark-hl-data-c-y-background:var(--gold-bg)}
-:root[data-theme="light"] mark.hl[data-c="g"]{--light-mark-hl-data-c-g-background:var(--gold-bg)}
-:root[data-theme="light"] mark.hl[data-c="p"]{--light-mark-hl-data-c-p-background:var(--gold-bg)}
-:root[data-theme="light"] mark.hl[data-c="b"]{--light-mark-hl-data-c-b-background:var(--gold-bg)}
+
 
 /* ============================================================================
    THE GREEK LAYER — 2026-07-28. Type, glyphs, and the artwork.
@@ -2691,7 +2696,7 @@ button.card.locked:hover .mod-art{opacity:var(--light-button-card-locked-hover-m
 /* Stage 1: a casebook page. The shipped Latin subsets have no smcp feature;
    size and weight carry hierarchy, and fallback small-cap synthesis is disabled.
    --ok remains a compatibility alias for plain ink; --bad is wrong ink and
-   --warn / --gold-text are the single flagged/highlighted ink. No storage rename. */
+   --warn / --gold-text are flag ink; student annotations have their own washes. */
 @media screen{
   body{font-synthesis: none;font-variant-numeric:lining-nums tabular-nums}
   h1{font-size:32px;letter-spacing:-.02em}
@@ -2719,7 +2724,6 @@ button.card.locked:hover .mod-art{opacity:var(--light-button-card-locked-hover-m
   .cl-say,.cl-mini,.cl-readout,.cl-tool{background:var(--card);color:var(--tx);border-color:var(--line-2)}
   .cl-say b,.cl-say strong{color:var(--light-cl-say-b-color,var(--tx))}
   .clep.drag .cl-body{box-shadow:0 8px 20px var(--sh-soft)}
-  .pen[data-c]{background:var(--gold-bg)!important;border-color:var(--line-2)}
   .pen.on{outline:2px solid var(--warn);outline-offset:2px}
   .res-item:focus,.search:focus,.keyin:focus,.caseinput:focus,.pind:focus{
     outline:2px solid var(--ink-3);outline-offset:2px;
@@ -2743,8 +2747,6 @@ button.card.locked:hover .mod-art{opacity:var(--light-button-card-locked-hover-m
   .page{background:var(--bg)}
   .pill.ghost{background:var(--bg-2)!important;color:var(--ink-2)!important}
   [style*="text-transform:uppercase"]{text-transform:none!important;letter-spacing:normal!important}
-  .pen.y,.pen.g,.pen.p,.pen.b{background:var(--gold-bg);border-color:var(--warn)}
-  .pen.g{border-style:dashed}.pen.p{border-style:dotted}.pen.b{border-style:double}
   .cl-say::after{background:var(--card);border-color:var(--line-2)}
   .cl-hud{background:var(--card);color:var(--tx);border-color:var(--line-2)}
   .cl-say b,.cl-say strong{color:var(--light-cl-say-b-color,var(--tx)!important)}
