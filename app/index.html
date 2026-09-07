@@ -315,11 +315,16 @@ input{font-family:inherit;font-size:inherit}
   max-height:380px;overflow-y:auto;z-index:40;display:none;
 }
 .results.show{display:block}
-.res-item{padding:11px 14px;border-bottom:1.5px solid var(--line);cursor:pointer;font-size:13px}
+.res-item{display:block;width:100%;padding:11px 14px;border:0;border-bottom:1.5px solid var(--line);border-radius:0;cursor:pointer;font-size:13px;color:inherit;text-align:left;background:none}
 .res-item:last-child{border-bottom:none}
 .res-item:hover{background:var(--bg-2)}
-.res-tag{font-size:9.5px;text-transform:uppercase;letter-spacing:.08em;font-weight:900;margin-bottom:3px}
-.res-txt{color:var(--ink-2);line-height:1.45}
+/* A button inside a listbox needs a focus ring the cursor cannot miss — the
+   results list lives at the top of the screen, the items are dense, and the
+   ring is the only signal that the next Enter is going somewhere real. */
+.res-item:focus{outline:none;background:var(--bg-2);box-shadow:inset 3px 0 0 var(--neuro)}
+.res-item.res-more{font-weight:700;color:var(--ink-3)}
+.res-tag{display:block;font-size:9.5px;text-transform:uppercase;letter-spacing:.08em;font-weight:900;margin-bottom:3px}
+.res-txt{display:block;color:var(--ink-2);line-height:1.45}
 .res-empty{padding:16px 14px;color:var(--ink-4);font-size:13px}
 
 .topbar-actions{margin-left:auto;display:flex;gap:7px;align-items:center}
@@ -2699,8 +2704,8 @@ button.card.locked:hover .mod-art{opacity:.42}
       <button class="tb-btn mobile-only" onclick="toggleRail()" aria-label="Menu"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
       <div class="search-wrap">
         <span class="search-ic"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M11 11m-7 0a7 7 0 1 0 14 0a7 7 0 1 0-14 0"/><path d="M20 20l-4.2-4.2"/></svg></span>
-        <input class="search" id="search" placeholder="Search questions, topics, explanations…" autocomplete="off">
-        <div class="results" id="results"></div>
+        <input class="search" id="search" placeholder="Search questions, topics, explanations…" autocomplete="off" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-controls="results">
+        <div class="results" id="results" role="listbox" aria-label="Search results"></div>
       </div>
       <div class="topbar-actions">
         <button class="tb-btn themebtn" onclick="toggleTheme()"></button>
@@ -5494,7 +5499,7 @@ function vQuiz(p){
     if(Q.shown){ if(i===q.answer)cls+=' correct'; else if(i===Q.sel)cls+=' wrong' }
     else if(i===Q.sel)cls+=' sel';
     const mark=Q.shown?(i===q.answer?'<span class="mark">\u2713</span>':(i===Q.sel?'<span class="mark">\u00d7</span>':'')):'';
-    h+=`<button class="${cls}" ${Q.shown?'disabled':''} onclick="pick(${i})">
+    h+=`<button class="${cls}" ${Q.shown?'disabled':''} onclick="pick(${i},event.detail===0)">
       <span class="ltr">${OPT_LETTERS[i]}</span><span>${esc(o)}</span>${mark}</button>`;
   });
   h+=`</div>`;
@@ -5586,7 +5591,7 @@ function vQuiz(p){
     stemEl.addEventListener('touchend',onStemSelect);
   }
 }
-function pick(i){
+function pick(i,byKey){
   if(Q.shown||(Q.exam&&Q.exam.done))return;
   if(Q.exam&&examLeft()<=0){examFinish(true);return}
   Q.sel=i;
@@ -5602,7 +5607,21 @@ function pick(i){
     S.answers[q.id]={pick:i,ok:i===q.answer,at:Date.now()};
     saveResume();
   }
+  /* The student who tabbed to option C and pressed Enter must not have to tab
+     from the top of the page to reach Check answer next. render() rebuilds
+     the question card from its HTML, which destroys every button inside it
+     and lets focus fall back to <body>; the answer is now selected and we
+     know which one, so put the focus back on the matching NEW button. Only
+     when byKey is true: a mouse click is not asking for a focus ring under
+     the cursor, and a touch tap even less so. event.detail===0 in the inline
+     onclick is the keyboard signal (Enter or Space on the focused button);
+     the letter-key handler passes byKey:true. The recording above is
+     unchanged — only the place the focus lands after is. */
   render();
+  if(byKey){
+    const btn=document.querySelector('.opts .opt:nth-child('+(i+1)+')');
+    if(btn&&btn.focus)btn.focus();
+  }
 }
 function reveal(){
   if(Q.exam)return;                       /* no peeking: the promise on the mock page */
@@ -6792,13 +6811,19 @@ function vMoved(p){
 }
 
 /* ============ SEARCH ============ */
+/* The listbox is what the search input opens. The items are real buttons so a
+   keyboard reaches them, Enter and Space activate them, and a screen reader
+   hears what each one is. The "+N more" line at the bottom used to look like a
+   control while doing nothing, which is the worst of both: it now opens the
+   rest of the matches this search collected. */
 function doSearch(){
   const v=$('search').value.trim().toLowerCase();
   const box=$('results');
-  if(v.length<2){box.classList.remove('show');return}
+  const sinput=$('search');
+  if(v.length<2){box.classList.remove('show');box.innerHTML='';sinput.setAttribute('aria-expanded','false');sinput.removeAttribute('aria-activedescendant');return}
   const hits=[];
   for(const q of QUESTIONS){
-    const hay=(q.stem+' '+((q.options||[]).join(' '))+' '+(q.type==='case'?(q.answer||'')+' ':'')+(q.explanation||'')+' '+(q.objective||'')+' '+chapterName(q.chapter)).toLowerCase();
+    const hay=(q.stem+' '+((q.options||[]).join(' '))+' '+((q.type==='case')?((q.answer||'')+' '):'')+(q.explanation||'')+' '+(q.objective||'')+' '+chapterName(q.chapter)).toLowerCase();
     const idx=hay.indexOf(v);
     if(idx>=0)hits.push({kind:'q',q:q,idx:idx});
     if(hits.length>=40)break;
@@ -6816,33 +6841,94 @@ function doSearch(){
   });
   thits.sort((a,b)=>a.idx-b.idx);
   hits.sort((a,b)=>a.idx-b.idx);
+  /* A button's content model is phrasing content, so the tag and the text are
+     spans made into blocks by the stylesheet rather than the divs a div-based
+     row could afford. */
+  const renderList=(extra)=>{
+    const showT=extra?thits:thits.slice(0,5);
+    const showQ=extra?hits:hits.slice(0,12);
+    let h='';
+    let id=0;
+    showT.forEach(t=>{
+      h+=`<button class="res-item" type="button" role="option" id="res-${id}" data-jump="theory" data-ch="${esc(t.ch)}" data-sec="${esc(t.sec.id)}">
+        <span class="res-tag" style="color:var(--neuro)">${ico('scroll',16)} Notes \u00b7 ${esc(chapterName(t.ch))}</span>
+        <span class="res-txt"><b>${esc(t.sec.h)}</b></span></button>`;
+      id++;
+    });
+    showQ.forEach(({q})=>{
+      const m=moduleOf(q.module)||{hex:'#7a6a55'};
+      h+=`<button class="res-item" type="button" role="option" id="res-${id}" data-jump="q" data-qid="${esc(q.id)}">
+        <span class="res-tag" style="color:${m.hex}">${esc(chapterName(q.chapter))}</span>
+        <span class="res-txt">${esc(q.stem.slice(0,130))}\u2026</span></button>`;
+      id++;
+    });
+    /* The count is of matches this search actually collected, and the loop above
+       stops at forty, so this promises only what the next click can deliver. It
+       carries role="option" because a listbox may hold nothing else, and the
+       arrow keys already walk it as the last row. */
+    const more=(hits.length-showQ.length)+(thits.length-showT.length);
+    if(more>0)h+=`<button class="res-item res-more" type="button" role="option" data-jump="more">+${more} more \u2014 show them</button>`;
+    box.innerHTML=h;
+    box.setAttribute('aria-label',`${id} result${id===1?'':'s'} for ${v}`);
+    sinput.setAttribute('aria-expanded','true');
+    sinput.removeAttribute('aria-activedescendant');
+  };
   if(!hits.length&&!thits.length){
     box.innerHTML='<div class="res-empty">Nothing matched \u2014 try a shorter term. Search covers questions'+(THEORY_LOCKED?' and explanations.':', explanations and the notes.')+'</div>';
-    box.classList.add('show');return;
+    box.classList.add('show');
+    sinput.setAttribute('aria-expanded','true');
+    sinput.removeAttribute('aria-activedescendant');
+    return;
   }
-  let h='';
-  thits.slice(0,5).forEach(t=>{
-    h+=`<div class="res-item" onclick="jumpTheory('${t.ch}','${t.sec.id}')">
-      <div class="res-tag" style="color:var(--neuro)">${ico('scroll',16)} Notes \u00b7 ${esc(chapterName(t.ch))}</div>
-      <div class="res-txt"><b>${esc(t.sec.h)}</b></div></div>`;
-  });
-  hits.slice(0,12).forEach(({q})=>{
-    const m=moduleOf(q.module)||{hex:'#7a6a55'};
-    h+=`<div class="res-item" onclick="jump('${q.id}')">
-      <div class="res-tag" style="color:${m.hex}">${esc(chapterName(q.chapter))}</div>
-      <div class="res-txt">${esc(q.stem.slice(0,130))}\u2026</div></div>`;
-  });
-  const more=(hits.length-12)+(thits.length-5);
-  if(more>0)h+=`<div class="res-empty">+${more} more</div>`;
-  box.innerHTML=h;box.classList.add('show');
+  renderList(!!doSearch.all);
+  box.classList.add('show');
 }
+/* The listbox click handler is delegated because the items are rebuilt on
+   every keystroke. theory and q are the two jump targets; more re-runs the
+   search with the slice limits lifted, so every match this search collected is
+   shown at once. The flag lives on doSearch rather than in a new variable
+   because the input listener passes doSearch its Event object as the first
+   argument, which a parameter would read as a permanent "show everything". It
+   is cleared on the next keystroke: a new term deserves the short list again. */
+$('results').addEventListener('click',e=>{
+  const b=e.target.closest&&e.target.closest('.res-item');if(!b)return;
+  const j=b.getAttribute('data-jump');
+  if(j==='more'){doSearch.all=true;doSearch();return}
+  if(j==='theory'){jumpTheory(b.getAttribute('data-ch'),b.getAttribute('data-sec'));return}
+  if(j==='q'){jump(b.getAttribute('data-qid'));return}
+});
 function jumpTheory(ch,sec){
-  $('search').value='';$('results').classList.remove('show');
+  $('search').value='';$('results').classList.remove('show');$('search').setAttribute('aria-expanded','false');
   const m=activeModules().find(x=>x.groups.some(g=>g.chapters.some(c=>c[0]===ch)));
   if(!m||!THEORY[ch])return;
   go({name:'theory',mod:m.id,ch:ch,sec:sec});
 }
-function jump(id){$('search').value='';$('results').classList.remove('show');startQuiz([id],'Search result')}
+function jump(id){$('search').value='';$('results').classList.remove('show');$('search').setAttribute('aria-expanded','false');startQuiz([id],'Search result')}
+/* The listbox is operable from the keyboard because the cursor only has the
+   input to land on otherwise, and a dropdown the cursor cannot reach is a
+   dropdown that does not exist. ArrowDown and ArrowUp move through the items,
+   Home and End jump to the ends, Enter opens the one with focus, Escape closes
+   the listbox without clearing the typed term — the student may still want it. */
+$('search').addEventListener('keydown',e=>{
+  const box=$('results');
+  const items=box.querySelectorAll&&box.querySelectorAll('.res-item');
+  const open=box.classList.contains('show')&&items&&items.length>0;
+  if(e.key==='ArrowDown'&&open){e.preventDefault();if(items[0].focus)items[0].focus();return}
+  if(e.key==='ArrowUp'&&open){e.preventDefault();if(items[items.length-1].focus)items[items.length-1].focus();return}
+  if(e.key==='Enter'&&open){e.preventDefault();if(items[0])items[0].click();return}
+  if(e.key==='Escape'&&open){e.preventDefault();box.classList.remove('show');e.target.setAttribute('aria-expanded','false');e.target.removeAttribute('aria-activedescendant');return}
+});
+$('results').addEventListener('keydown',e=>{
+  const items=e.currentTarget.querySelectorAll('.res-item');
+  if(!items.length)return;
+  const i=Array.prototype.indexOf.call(items,e.target);
+  if(i<0)return;
+  if(e.key==='ArrowDown'){e.preventDefault();if(items[(i+1)%items.length].focus)items[(i+1)%items.length].focus();return}
+  if(e.key==='ArrowUp'){e.preventDefault();if(items[(i-1+items.length)%items.length].focus)items[(i-1+items.length)%items.length].focus();return}
+  if(e.key==='Home'){e.preventDefault();if(items[0].focus)items[0].focus();return}
+  if(e.key==='End'){e.preventDefault();if(items[items.length-1].focus)items[items.length-1].focus();return}
+  if(e.key==='Escape'){e.preventDefault();$('results').classList.remove('show');const s=$('search');s.setAttribute('aria-expanded','false');s.removeAttribute('aria-activedescendant');s.focus();return}
+});
 
 /* ============================================================================
    THE CLEPSYDRA — the study companion.
@@ -7647,10 +7733,23 @@ function bakSchedule(){
   bakTimer=setTimeout(()=>{ bakTimer=null; bakLast=Date.now(); bakSnapshot() },wait);
 }
 function bakNewest(){
+  /* Walks the list newest-first. The previous version took only snaps[0], so a
+     truncated or corrupt newest snapshot was a complete outage: loadState()
+     would conclude there was nothing to rescue while five perfectly good
+     snapshots sat behind the bad one. Walk past every entry that fails to
+     parse, keep returning the same {at,state} shape the caller already reads,
+     and only return null when nothing in the list is usable. A rescue path is
+     the wrong place to delete anything — bad entries are left alone in storage
+     so bakRestore() can still see them and the snapshot history is not
+     quietly rewritten by the one path that exists to be safe. */
   const box=bakRead();
-  const s=box.snaps[0];
-  if(!s)return null;
-  try{ return {at:s.at,state:JSON.parse(s.json)} }catch(e){ return null }
+  const snaps=box.snaps||[];
+  for(let i=0;i<snaps.length;i++){
+    const s=snaps[i];
+    if(!s)continue;
+    try{ return {at:s.at,state:JSON.parse(s.json)} }catch(e){}
+  }
+  return null;
 }
 function bakWhen(ts){
   const d=Math.max(0,Date.now()-ts);
@@ -7835,6 +7934,25 @@ function closeRail(){$('rail').classList.remove('open')}
 /* ============ KEYBOARD ============ */
 document.addEventListener('keydown',e=>{
   if(e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA'||e.target.tagName==='SELECT')return;
+  /* The handler has to know when an overlay is up. Without this guard, a student
+     who opens the keyboard-shortcuts dialog (or any modal built by showModal)
+     still has every quiz shortcut live underneath it: a letter answers the
+     question behind the dialog, E toggles its explanation, 1-4 sets a pen, and
+     pick() writes that answer to storage as if the student had really chosen
+     it. The only overlay that intercepts the page underneath is #modalBg.show
+     — the toast is transient and non-blocking, the gate covers the page before
+     any quiz view, and the rail slides alongside. While the modal is open,
+     Escape still has to close it (already wired below); nothing else does. */
+  if($('modalBg').classList.contains('show')){
+    if(e.key==='Escape'){closeModal();return}
+    return;
+  }
+  /* The search results listbox is a different case and belongs to doSearch(): a
+     focused result button answers its own keys (ArrowDown/Up/Enter/Escape) via
+     the keydown listener attached at render time. If focus is on a result while
+     the listbox is open, the page underneath must also stay silent — without
+     this, pressing A on a focused result would pick an answer behind it. */
+  if($('results').classList.contains('show')&&e.target.closest&&e.target.closest('#results'))return;
   if(e.key==='Escape'){closeModal();$('results').classList.remove('show');return}
   if(e.key==='/'){e.preventDefault();$('search').focus();return}
   /* Global, so it works while reading theory as well as in a quiz. Safe above
@@ -7852,7 +7970,7 @@ document.addEventListener('keydown',e=>{
   const q=QUESTIONS.find(x=>x.id===Q.ids[Q.i]);
   if(!q)return;
   const k=e.key.toUpperCase();
-  if(!Q.shown&&q.options&&k.length===1){const i=OPT_LETTERS.indexOf(k);if(i>=0&&i<q.options.length){pick(i);return}}
+  if(!Q.shown&&q.options&&k.length===1){const i=OPT_LETTERS.indexOf(k);if(i>=0&&i<q.options.length){pick(i,true);return}}
   if(k==='E'&&Q.shown){const b=document.querySelector('.ex-head');if(b)toggleExp(b);return}
   if('1234'.includes(e.key)){setPen(PENS[+e.key-1][0]);return}
   if(e.key==='0'){setPen('er');return}
@@ -7863,8 +7981,13 @@ document.addEventListener('keydown',e=>{
   if(e.key==='ArrowRight'){navQ(1);return}
   if(e.key==='ArrowLeft'){navQ(-1);return}
 });
-$('search').addEventListener('input',doSearch);
-document.addEventListener('click',e=>{if(!e.target.closest('.search-wrap'))$('results').classList.remove('show')});
+$('search').addEventListener('input',function(){doSearch.all=false;doSearch()});
+document.addEventListener('click',e=>{
+  if(!e.target.closest('.search-wrap')){
+    $('results').classList.remove('show');
+    $('search').setAttribute('aria-expanded','false');
+  }
+});
 /* The long placeholder is worth having — it is where a student learns the
    search reads explanations too — but on a phone it clips mid-word to
    "Search questions, to", which reads as breakage rather than as a hint. CSS
