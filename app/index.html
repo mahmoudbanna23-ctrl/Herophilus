@@ -1055,7 +1055,7 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
 .pav{
   width:96px;height:96px;border-radius:var(--r);border:3px solid var(--line-2);
   display:flex;align-items:center;justify-content:center;font-size:44px;overflow:hidden;
-  position:relative;
+  position:relative;--fr-t:9px;
 }
 .pcard:hover .pav{}
 .pav img{width:100%;height:100%;object-fit:cover;display:block}
@@ -1125,7 +1125,7 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
 .avprev{
   width:88px;height:88px;border-radius:var(--r);border:3px solid var(--line-2);margin:0 auto 16px;
   display:flex;align-items:center;justify-content:center;font-size:40px;overflow:hidden;
-  
+  --fr-t:8px;
 }
 .avprev img{width:100%;height:100%;object-fit:cover}
 /* A portrait fills its box at whatever size the box is, so one rule covers a
@@ -1135,7 +1135,7 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
 .pav,.avprev,.rav{color:var(--on-fill)}
 .emb{color:var(--tx)}
 .emb.on{color:var(--on-fill)}
-.pav img,.avprev img,.rav img,.emb img{width:100%;height:100%;object-fit:cover;display:block}
+.pav img,.avprev img,.rav img,.emb img,.frtile img{width:100%;height:100%;object-fit:cover;display:block}
 .emb img{border-radius:calc(var(--r-1) - var(--r-1))}
 .pav .gi,.avprev .gi,.rav .gi{width:58%;height:58%;stroke-width:1.4}
 .emb .gi{width:56%;height:56%;stroke-width:1.5}
@@ -1158,13 +1158,107 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
 .railprof:hover{background:var(--rail-3)}
 .railprof .rav{
   width:32px;height:32px;border-radius:var(--r-1);display:flex;align-items:center;justify-content:center;
-  font-size:17px;flex-shrink:0;overflow:hidden;border:2px solid rgba(255,255,255,.22);
+  font-size:17px;flex-shrink:0;overflow:hidden;border:2px solid rgba(255,255,255,.22);--fr-t:3px;
 }
 .railprof .rav img{width:100%;height:100%;object-fit:cover}
 .railprof .rn{font-size:13px;font-weight:700;color:var(--light-nav-item-hover-color,var(--on-fill));line-height:1.2;flex:1;min-width:0;
   overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .railprof .rs{font-size:10px;color:var(--rail-dim);font-weight:700}
 
+/* ---------- Frame treatments ----------
+   Three ported frame styles sit alongside the flat ring, which keeps its
+   original name internally ("plain") but needs no rule here at all — that
+   ring is whatever border .pav/.avprev/.rav already draw, unchanged, so an
+   existing profile with no av.f looks exactly as it did before this landed.
+   The other three each draw inside a same-size inner wrapper instead of on
+   the box's own border, sized off --fr-t (frame thickness) and --fr-c (the
+   profile colour), both set by whichever render site is drawing them.
+   .fr-sm is added by the two sites under ~40px, where a carved step or a
+   walnut swirl stops reading as a step or a swirl and just reads as noise —
+   dropped there, never drawn faint. */
+.fr{display:block;width:100%;height:100%;border-radius:inherit;overflow:hidden;}
+
+/* mount — a hairline in the app's own line token plus a mat of the profile
+   colour at low alpha, the way a framer's mount sits between the moulding
+   and the picture. The mat's depth holds the same two-thirds-of---fr-t
+   ratio at every size, so it neither vanishes nor swallows the picture. */
+.fr-mount{
+  border:1px solid var(--line-2);
+  padding:calc(var(--fr-t) * 2 / 3);
+  background:color-mix(in srgb, var(--fr-c) 16%, transparent);
+}
+
+/* carved moulding — three wood steps plus a gilded bead, each step lit
+   top/left and shadowed bottom/right with its own per-side border colour —
+   no box-shadow anywhere in it. Below ~40px (.fr-sm) the steps flatten to
+   one plain band, because a 1px bevel stops being a bevel at that size; the
+   bead keeps a fixed width there instead of shrinking with the rest, since
+   it is what carries the profile colour and must not thin into a hairline. */
+.fr-moulding{
+  --w1:calc(var(--fr-t) * .33);--w2:calc(var(--fr-t) * .28);
+  --wb:calc(var(--fr-t) * .17);--w3:calc(var(--fr-t) * .22);
+  background:#4a3319;
+}
+.fr-moulding span{display:block;width:100%;height:100%;box-sizing:border-box;}
+.fr-moulding .b1{background:#86643a;padding:var(--w1);
+  border-top:1px solid rgba(255,240,210,.5);border-left:1px solid rgba(255,240,210,.5);
+  border-bottom:1px solid rgba(20,10,4,.45);border-right:1px solid rgba(20,10,4,.45);}
+.fr-moulding .b2{background:#6f5029;padding:var(--w2);
+  border-top:1px solid rgba(255,240,210,.42);border-left:1px solid rgba(255,240,210,.42);
+  border-bottom:1px solid rgba(20,10,4,.4);border-right:1px solid rgba(20,10,4,.4);}
+.fr-moulding .bead{background:var(--fr-c);padding:var(--wb);
+  border-top:1px solid color-mix(in srgb, var(--fr-c) 55%, white 45%);
+  border-left:1px solid color-mix(in srgb, var(--fr-c) 55%, white 45%);
+  border-bottom:1px solid color-mix(in srgb, var(--fr-c) 60%, black 40%);
+  border-right:1px solid color-mix(in srgb, var(--fr-c) 60%, black 40%);}
+.fr-moulding .b3{background:#54391c;padding:var(--w3);
+  border-top:1px solid rgba(255,240,210,.3);border-left:1px solid rgba(255,240,210,.3);
+  border-bottom:1px solid rgba(20,10,4,.42);border-right:1px solid rgba(20,10,4,.42);}
+.fr-moulding.fr-sm{--w1:.5px;--w2:.5px;--wb:1.5px;--w3:1px;}
+.fr-moulding.fr-sm .b1,.fr-moulding.fr-sm .b2,.fr-moulding.fr-sm .b3{background:#6b4c2c;border:none;}
+
+/* figured walnut — dark swirling wood from overlapping low-alpha radial
+   gradients plus fine grain and one off-centre knot, with the profile
+   colour as a thin inlay set in from the edge. Padding and inset both
+   scale directly off --fr-t; below ~40px (.fr-sm) the swirl and knot stop
+   being drawn but the inlay line stays, since that is what carries the
+   profile colour. */
+.fr-walnut{
+  position:relative;background-color:#3a2416;
+  background-image:
+    repeating-linear-gradient(96deg, rgba(255,225,180,.10) 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(96deg, rgba(15,8,3,.13) 0 1px, transparent 1px 7px),
+    radial-gradient(ellipse 95% 42% at 32% 28%, rgba(120,80,42,.16), transparent 62%),
+    radial-gradient(ellipse 85% 38% at 68% 74%, rgba(10,5,2,.15), transparent 60%),
+    radial-gradient(ellipse 110% 30% at 50% 50%, rgba(120,80,42,.10), transparent 55%),
+    radial-gradient(circle at 72% 62%, rgba(12,6,2,.55) 0 1.5px, transparent 1.5px 3px),
+    radial-gradient(circle at 72% 62%, rgba(12,6,2,.28) 3px 4px, transparent 4px 5px),
+    linear-gradient(135deg, rgba(255,255,255,.06), transparent 45%, transparent 60%, rgba(0,0,0,.14));
+  padding:var(--fr-t);
+}
+.fr-walnut::before{content:"";position:absolute;inset:calc(var(--fr-t) / 3);border:1px solid var(--fr-c);
+  border-radius:inherit;pointer-events:none;}
+.fr-walnut.fr-sm{background-image:none;background-color:#402917;}
+
+/* the picker tile — the size the comparison page never needed, since it
+   only ever showed one frame per cell. border-width stays --fr-t for every
+   choice so the four tiles do not jump size as the selection changes; for
+   "plain" the border carries --fr-c and IS the whole treatment, for the
+   other three it goes transparent and the inner .fr span draws instead. */
+.frtile{
+  width:48px;height:48px;border-radius:var(--r);overflow:hidden;position:relative;
+  display:flex;align-items:center;justify-content:center;--fr-t:5px;
+  border:var(--fr-t) solid var(--line-2);transition:transform .12s ease;
+}
+.frtile:hover{transform:translateY(-2px)}
+.frtile.on{transform:translateY(-4px);}
+.frgrid{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+
+/* A ported frame draws its own complete edge, so wherever one is active the
+   box's own border — the plain ring's 2/3px — is zeroed rather than left
+   reserved as a blank gap outside it. Plain never carries this class and
+   keeps the ring exactly as it always has. */
+.pav.hasfr,.avprev.hasfr,.rav.hasfr,.frtile.hasfr{border-width:0}
 
 /* ---------- Cloud sync ---------- */
 .gsign{
@@ -4449,7 +4543,7 @@ function docRef(){
 }
 function rosterProfile(p){
   const av=p.av||{};
-  return {id:p.id,name:p.name||'Untitled',av:{t:av.t||'e',v:av.v||'',c:av.c||'#6d4c7d'}};
+  return {id:p.id,name:p.name||'Untitled',av:{t:av.t||'e',v:av.v||'',c:av.c||'#6d4c7d',f:av.f||'plain'}};
 }
 function rosterList(data,p,remove=false){
   const list=(Array.isArray(data.profiles)?data.profiles:[])
@@ -4765,19 +4859,42 @@ function bootstrapProfiles(){
     try{localStorage.setItem(stateKey(p.id),old)}catch(e){}
   }
 }
+/* Wraps a ready-made <img> tag in whatever av.f asks for. "plain" (or no
+   f at all — every profile made before this shipped) returns the image
+   untouched, so the box's own border keeps drawing the ring it always has.
+   The other three wrap it in a same-size inner span carrying that
+   treatment's texture; moulding needs four nested spans for its stepped
+   bands, mount and walnut need one. small drops the size-dependent detail
+   (moulding's steps, walnut's swirl and knot) below the ~40px floor where
+   they stop reading as detail — see the "Frame treatments" CSS block. */
+function avFrame(f,imgHTML,small){
+  f=f||'plain';
+  if(f==='plain')return imgHTML;
+  const cls='fr fr-'+f+(small?' fr-sm':'');
+  if(f==='moulding')return `<span class="${cls}"><span class="b1"><span class="b2"><span class="bead"><span class="b3">${imgHTML}</span></span></span></span></span>`;
+  return `<span class="${cls}">${imgHTML}</span>`;
+}
+
 /* One place draws an avatar, and every surface that shows one goes through it:
-   the gate cards, the editor's preview, the rail. A portrait and an uploaded
-   photo are now the same shape — an <img> filling the box — so both branches
-   emit the same markup and the existing object-fit:cover rules size them.
+   the editor's preview and the rail (the gate cards and Manage profiles build
+   their own wrapper — see the comments where they do). A portrait and an
+   uploaded photo are now the same shape — an <img> filling the box — so both
+   branches emit the same markup and the existing object-fit:cover rules size
+   them.
 
    av.c survives as the ring rather than the backdrop. An opaque portrait hides
    whatever is painted behind it, and a colour picker that changes nothing is a
    dead control; on the border it still tells two profiles apart at a glance.
-   class="${cls}" stays the first attribute — manageProfiles() rewrites it. */
+   --fr-c carries that same colour to the frame CSS. A ported frame (mount,
+   moulding, walnut) draws its own edge, so the box's own border — the plain
+   ring — is zeroed with the "hasfr" class whenever one is active; plain keeps
+   the border exactly as it always has. */
 function avHTML(av,cls){
   av=av||{t:'g',v:AVATARS[0],c:'#6d4c7d'};
   const src=av.t==='p'?av.v:avSrc(avKey(av));
-  return `<div class="${cls}" style="background:${av.c};border-color:${av.c}"><img src="${src}" alt=""></div>`;
+  const f=av.f||'plain';
+  const inner=avFrame(f,`<img src="${src}" alt="">`,cls==='rav');
+  return `<div class="${cls}${f!=='plain'?' hasfr':''}" style="background:${av.c};border-color:${av.c};--fr-c:${av.c}">${inner}</div>`;
 }
 
 /* ---- gate ----
@@ -4886,11 +5003,14 @@ function gateProfileStep(){
     /* The card cannot call avHTML: it hangs a PIN dot and a Google badge inside
        the same box. So it builds its own wrapper and borrows the resolver, which
        is the part that must not drift — a profile showing one emblem here and a
-       different one in the rail is the bug this line exists to prevent. */
+       different one in the rail is the bug this line exists to prevent. The same
+       is now true of the frame: it goes through avFrame(), same as everywhere else. */
     const av=p.av||{t:'g',v:AVATARS[0],c:'#6d4c7d'};
-    const inner=av.t==='p'?`<img src="${av.v}" alt="" referrerpolicy="no-referrer">`:`<img src="${avSrc(avKey(av))}" alt="">`;
+    const img=av.t==='p'?`<img src="${av.v}" alt="" referrerpolicy="no-referrer">`:`<img src="${avSrc(avKey(av))}" alt="">`;
+    const fr=av.f||'plain';
+    const inner=avFrame(fr,img,false);
     h+=`<button class="pcard" style="${step()}" onclick="pickProfile('${p.id}')">
-      <div class="pav" style="background:${av.c};border-color:${av.c}">${inner}${p.pin?'<span class="lock" style="font-size:9px;letter-spacing:1.5px;padding-left:1.5px">\u2022\u2022\u2022\u2022</span>':''}${p.id.indexOf('g:')===0?'<span class="lock" style="background:#4285F4;color:#fff;font-size:14px;font-weight:900">G</span>':''}</div>
+      <div class="pav${fr!=='plain'?' hasfr':''}" style="background:${av.c};border-color:${av.c};--fr-c:${av.c}">${inner}${p.pin?'<span class="lock" style="font-size:9px;letter-spacing:1.5px;padding-left:1.5px">\u2022\u2022\u2022\u2022</span>':''}${p.id.indexOf('g:')===0?'<span class="lock" style="background:#4285F4;color:#fff;font-size:14px;font-weight:900">G</span>':''}</div>
       <div class="pname">${esc(p.name)}</div></button>`;
   });
   h+=`<button class="pcard add" style="${step()}" onclick="editProfile(null)">
@@ -5074,15 +5194,22 @@ function drawProfileEditor(isEdit){
    <div style="font-size:11px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin-bottom:8px">Picture</div>
    <div class="emgrid">
      ${AVATARS.map(k=>`<button class="emb ${avKey(draft.av)===k&&draft.av.t!=='p'?'on':''}" title="${AVNAMES[k]}"
-       onclick="draft.av={t:'g',v:'${k}',c:draft.av.c};drawProfileEditor(${isEdit})"><img src="${avSrc(k)}" alt="${AVNAMES[k]}"></button>`).join('')}
+       onclick="draft.av={t:'g',v:'${k}',c:draft.av.c,f:draft.av.f};drawProfileEditor(${isEdit})"><img src="${avSrc(k)}" alt="${AVNAMES[k]}"></button>`).join('')}
    </div>
    <div class="colrow">
      ${AVCOLS.map(c=>`<button class="colb ${draft.av.c===c?'on':''}" style="background:${c}"
        onclick="draft.av.c='${c}';drawProfileEditor(${isEdit})"></button>`).join('')}
    </div>
+   <div style="font-size:11px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin-bottom:8px">Frame</div>
+   <div class="frgrid">
+     ${(()=>{const tileImg=`<img src="${draft.av.t==='p'?draft.av.v:avSrc(avKey(draft.av))}" alt="">`;
+       return ['plain','mount','moulding','walnut'].map(f=>`<button class="frtile ${f!=='plain'?'hasfr ':''}${(draft.av.f||'plain')===f?'on':''}"
+         style="--fr-c:${draft.av.c};border-color:${f==='plain'?draft.av.c:'transparent'}"
+         onclick="draft.av.f='${f}';drawProfileEditor(${isEdit})">${avFrame(f,tileImg,false)}</button>`).join('');})()}
+   </div>
    <div style="margin-bottom:16px">
      <button class="btn sec" onclick="document.getElementById('pfPhoto').click()">Upload a photo</button>
-     ${draft.av.t==='p'?`<button class="ai-p" onclick="draft.av={t:'g',v:AVATARS[0],c:draft.av.c};drawProfileEditor(${isEdit})" style="border:2px solid var(--line-2);padding:7px 13px;border-radius:var(--r-1);font-size:12px;font-weight:700;margin-left:7px">Use a portrait instead</button>`:''}
+     ${draft.av.t==='p'?`<button class="ai-p" onclick="draft.av={t:'g',v:AVATARS[0],c:draft.av.c,f:draft.av.f};drawProfileEditor(${isEdit})" style="border:2px solid var(--line-2);padding:7px 13px;border-radius:var(--r-1);font-size:12px;font-weight:700;margin-left:7px">Use a portrait instead</button>`:''}
      <input type="file" id="pfPhoto" accept="image/*" style="display:none" onchange="pfUpload(event,${isEdit})">
    </div>
    <div style="font-size:11px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin-bottom:8px">PIN (optional)</div>
@@ -5109,7 +5236,7 @@ function pfUpload(e,isEdit){
       const x=c.getContext('2d');
       const s=Math.min(img.width,img.height);
       x.drawImage(img,(img.width-s)/2,(img.height-s)/2,s,s,0,0,SZ,SZ);
-      draft.av={t:'p',v:c.toDataURL('image/jpeg',0.8),c:draft.av.c};
+      draft.av={t:'p',v:c.toDataURL('image/jpeg',0.8),c:draft.av.c,f:draft.av.f};
       drawProfileEditor(isEdit);
     };
     img.onerror=()=>toast('Could not read that image');
@@ -5155,8 +5282,12 @@ function doDeleteProfile(id){
 function manageProfiles(){
   let h=`<h3>Manage profiles</h3><p>Pick one to rename, change its picture or PIN, or delete it.</p>`;
   profiles.forEach(p=>{
+    const mav=p.av||{t:'g',v:AVATARS[0],c:'#6d4c7d'};
+    const msrc=mav.t==='p'?mav.v:avSrc(avKey(mav));
+    const mfr=mav.f||'plain';
+    const minner=avFrame(mfr,`<img src="${msrc}" alt="">`,true);
     h+=`<button class="ch-row" style="margin-bottom:8px" onclick="editProfile('${p.id}')">
-      ${avHTML(p.av,'rav').replace('class="rav"','class="rav" style="width:34px;height:34px;border-radius:var(--r-1);display:flex;align-items:center;justify-content:center;font-size:18px;overflow:hidden;border:2px solid '+(p.av?p.av.c:'#6d4c7d')+';background:'+(p.av?p.av.c:'#6d4c7d')+'"')}
+      <div class="rav${mfr!=='plain'?' hasfr':''}" style="width:34px;height:34px;border-radius:var(--r-1);display:flex;align-items:center;justify-content:center;font-size:18px;overflow:hidden;border:${mfr==='plain'?'2px solid '+mav.c:'0'};background:${mav.c};--fr-c:${mav.c};--fr-t:3px">${minner}</div>
       <span class="ch-name">${esc(p.name)}</span>
       <span class="ch-count">${p.pin?'PIN set':'no PIN'}</span></button>`;
   });
