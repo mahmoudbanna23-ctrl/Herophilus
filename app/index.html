@@ -980,6 +980,36 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
 .gate .gfoot{margin-top:34px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
 .gate .goffline{margin:20px auto 0;max-width:460px;text-align:center;font-size:12.5px;line-height:1.6;color:var(--ink-4)}
 
+/* Year and semester. This was two native <select> boxes — the only unstyled
+   controls left in the app, and they landed on the gate, which is the first
+   thing a new student sees. A white operating-system rectangle on a dark
+   cinematic page does not read as a plain control; it reads as a page that was
+   never finished. The chips borrow .chip's shape and .emb's selected state so
+   this is the app's existing vocabulary rather than a third one. */
+.tpick{display:flex;flex-direction:column;gap:18px;align-items:center;width:100%}
+.tlab{
+  font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-4);margin:0 0 9px;text-align:center;
+}
+.trow{display:flex;gap:9px;flex-wrap:wrap;justify-content:center}
+.tchip{
+  padding:9px 17px;border:1px solid var(--line-2);border-radius:var(--r-pill);
+  background:var(--card);color:var(--tx);font-size:13px;font-weight:800;
+  transition:transform .13s ease,box-shadow .13s,background .13s,color .13s;
+}
+.tchip:hover:not(.on){transform:translateY(-2px);box-shadow:0 8px 20px var(--sh-soft)}
+.tchip.on{background:var(--fill);color:#fff;box-shadow:0 9px 24px rgba(0,0,0,.35),var(--glow)}
+/* The status line is what the old copy's "some semesters have no published
+   content yet" was trying to say, except it says it about the semester the
+   student is actually looking at, at the moment they select it. A student who
+   picks an empty semester and gets an empty app otherwise has no way to tell a
+   deliberate gap from a broken build. */
+.tstat{
+  font-size:12.5px;font-weight:600;color:var(--ink-3);text-align:center;
+  max-width:430px;line-height:1.6;margin:2px 0 0;min-height:20px;
+}
+.tstat.empty{color:var(--ink-4)}
+
 .emgrid{display:grid;grid-template-columns:repeat(8,1fr);gap:8px;margin-bottom:16px}
 @media(max-width:420px){.emgrid{grid-template-columns:repeat(4,1fr)}}
 .emb{
@@ -3367,27 +3397,67 @@ function activateTerm(id,force=false){
   if(me&&!termEntryPending&&sess())sessStartTick();
   return true;
 }
+/* The pending year and semester live on termFields.pick rather than in a new
+   global, the same place doSearch keeps its own flag. Both callers render
+   through termFields() — the gate's own step and the settings modal — and both
+   hand the answer to chooseTerm(), so there is exactly one place the choice can
+   be read from and no way for the two to disagree. It is reset on every render
+   so reopening the picker after cancelling shows the saved semester again
+   rather than the abandoned selection. */
 function termFields(){
   const choice=termChoice(S.term);
   const t=TERMS.find(x=>x.id===(choice?choice.id:activeTerm))||
     TERMS.find(x=>x.id==='y4s2');
-  return `<p><label for="termYear">Year</label><br>
-    <select id="termYear">
-      ${TERMS.filter(x=>x.semester===1).map(x=>
-        `<option value="${x.year}"${x.year===t.year?' selected':''}>Year ${x.year}</option>`
-      ).join('')}
-    </select></p>
-    <p><label for="termSemester">Semester</label><br>
-    <select id="termSemester">
-      <option value="1"${t.semester===1?' selected':''}>1st semester</option>
-      <option value="2"${t.semester===2?' selected':''}>2nd semester</option>
-    </select></p>`;
+  termFields.pick={year:t.year,semester:t.semester};
+  return `<div class="tpick" id="tpick">${termChips()}</div>`;
+}
+/* Whether a term has anything in it is read from MODULES, not from a list kept
+   by hand: a semester acquires content the moment a module names its id, and a
+   hand-kept list would go stale on the commit that adds one. */
+function termPublished(year,semester){
+  const t=TERMS.find(x=>x.year===year&&x.semester===semester);
+  return t?MODULES.filter(m=>m.term===t.id):[];
+}
+function termChips(){
+  const p=termFields.pick;
+  const years=TERMS.filter(x=>x.semester===1).map(x=>x.year);
+  const chip=(kind,val,label,on)=>
+    `<button type="button" class="tchip${on?' on':''}" role="radio"` +
+    ` aria-checked="${on?'true':'false'}" onclick="termPick('${kind}',${val})">` +
+    `${label}</button>`;
+  const mods=termPublished(p.year,p.semester);
+  const names=mods.map(m=>esc(m.name));
+  const stat=names.length
+    ? `${names.join(' · ')} — ${names.length===1?'one subject':names.length+' subjects'} published here.`
+    : 'Nothing published in this semester yet. You can still pick it and come back.';
+  return `<div>
+      <p class="tlab" id="tlabYear">Year</p>
+      <div class="trow" role="radiogroup" aria-labelledby="tlabYear">
+        ${years.map(y=>chip('year',y,'Year '+y,y===p.year)).join('')}
+      </div>
+    </div>
+    <div>
+      <p class="tlab" id="tlabSem">Semester</p>
+      <div class="trow" role="radiogroup" aria-labelledby="tlabSem">
+        ${chip('semester',1,'1st semester',p.semester===1)}
+        ${chip('semester',2,'2nd semester',p.semester===2)}
+      </div>
+    </div>
+    <p class="tstat${names.length?'':' empty'}" role="status">${stat}</p>`;
+}
+/* Only the chips inside #tpick are rewritten. Calling render() here would
+   rebuild the page underneath the gate — or close the modal this control is
+   sitting in — for what is a change of highlight. */
+function termPick(kind,val){
+  termFields.pick[kind]=val;
+  const box=$('tpick');
+  if(box)box.innerHTML=termChips();
 }
 function gateTermStep(){
   return `<div class="gstep" data-step="profiles">
     <h2>Choose your year and semester</h2>
-    <p class="gtag">For ${esc(me.name)}. Only content from your selection will appear.
-      Some semesters have no published content yet.</p>
+    <p class="gtag">${me.name&&me.name!=='Untitled'?'For '+esc(me.name)+'. ':''}Only
+      content from the semester you pick will appear anywhere in the app.</p>
     ${termFields()}
     <div class="gfoot">
       <button class="btn sec" onclick="leaveProfile()">Back to profiles</button>
@@ -3410,9 +3480,11 @@ function showTermPicker(){
 }
 function chooseTerm(){
   if(!me)return;
-  const year=Number($('termYear').value);
-  const semester=Number($('termSemester').value);
-  const t=TERMS.find(x=>x.year===year&&x.semester===semester);
+  /* The choice is read from termFields.pick, which the chips write, rather
+     than out of the DOM. Reading the DOM would leave this function silently
+     dependent on which of the two pickers happens to be on screen. */
+  const p=termFields.pick;
+  const t=p&&TERMS.find(x=>x.year===p.year&&x.semester===p.semester);
   if(!t)return;
   if(!termEntryPending&&t.id===activeTerm){closeModal();return}
   flushNote();
