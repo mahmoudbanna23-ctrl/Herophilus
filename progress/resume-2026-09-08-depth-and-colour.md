@@ -134,3 +134,54 @@ playful voice, bold shapes on browsing screens only, much more artwork. The fram
 the avatars. ⚠️ Playful and "must not read as AI-built" pull against each other — playful has to
 come from being specific and wry, never from exclamation marks or cheering. Show the owner options
 before any of it ships.
+
+---
+
+## Changed since — 2026-09-08, both tasks closed
+
+**This prompt is SPENT. Do not relaunch it.**
+
+- **Task 1, the depth restore: `ae9a7b9`, pushed.** Applied by a Codex seat from
+  `Temp\depthwork\apply-edits.js`, verified here. 127 splices — 125 rule blocks holding
+  134 declarations, plus the 2 special replacements. Counts landed box-shadow 10 to 120,
+  linear-gradient 11 to 28, radial-gradient 21 to 31, backdrop-filter 11 to 16,
+  `transition:` unchanged at 48.
+  ⚠️ **The two "wrong" gradient deltas were a counting artefact, not a fault.** The brief
+  expected +16 and +5 from the declaration count; `grep -o` counts gradient *functions*,
+  and four restored declarations layer several each (`body` twice, `.gate::before`, the
+  light-theme `body`). 17 and 10 are correct. Do not re-investigate.
+  The four `mark.hl[data-c=]` selectors gained nothing, CRLF stayed 0, and every original
+  declaration survived except the two documented replacements.
+
+- ⚠️ **`f7c359d` IS THE NAVY ERA — a faithful restore imports cold values.** That commit's
+  dark ground was `--bg:#0a1017 --card:#121a27`; the app has since been re-warmed to
+  `#1a1512 / #28211a`. The replay therefore brought in twelve navy shadow tints, a navy
+  modal gradient, a hardcoded navy `.btn` gradient and a hardcoded purple `.btn.go` one —
+  and that last also overrode the subject-colour mechanism already in the sheet. Task 1
+  was committed as a pure replay with the drift named in its message; Task 2 corrected it.
+
+- **Task 2, grounds and colour: `ea75502`, pushed.** Dark ramp lifted 1.46 to 1.71 times
+  on the warm axis — bg `#241e18`, card `#332a21`, bg-2 `#403428`, fill `#55462f`. Body
+  text measures 11.42 / 9.74 / 8.36 / 6.32 to 1 against those four; the dimmest ink holds
+  7.07 / 6.03 / 5.18 / 3.91. Step ratios 1.80 / 1.50 / 1.76.
+  A go button now paints `background-color:var(--subject,#94642a)` under a
+  **darkening-only** overlay. ⚠️ **Do not add a light top stop to it** — a ten percent
+  white stop was tried and measured, and it put ENT at 4.26 and Ophthalmology at 3.75
+  against the button text, both under AA. Darkening alone leaves the raw colour as the
+  worst case: 5.10 / 4.54 / 6.64 / 6.35 / 4.81. `#a4712f` was rejected as the default at
+  3.97; `#94642a` measures 4.81.
+  The subject reaches a page through `body[data-subject]`, set in the render path from
+  `view.id || view.mod`. Quiz, mock, session and case carry no id and stay flat, which is
+  the alive-to-browse rule. All four module ids match the new selectors.
+
+- **Gate, run here after each commit:** `QUESTIONS 4049 · THEORY 81 · MODULES 4`, 153
+  chapter rows, 80 with questions, **0 console errors, exit 0**. `mobile-check --shot`
+  PASS at every width. Print selector and the three `max-aspect-ratio` blocks untouched;
+  the light theme kept its own grounds and only its shadow tints were warmed.
+
+- **Not done, and not attempted:** a screenshot of the browse views in dark theme. The
+  `mobile-check` harness stubs `showGate` but stops at the year/semester modal, and
+  seeding past that needs `enterProfile()` rather than a localStorage key. A dark-theme
+  frame of the gate was captured and looks right, but one frame is not a verdict.
+
+- **Phase 2 of `redesign-spec-2026-09-07-owner-interview.md` is still after the exams.**
