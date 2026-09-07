@@ -18,6 +18,11 @@ No draft, no cache, no page count, no map. The sources have never been opened. T
 already in the app is **psychiatry OSCE, a different subject** — do not treat it as prior work here,
 and do not overwrite it.
 
+⚠️ **This work belongs to this repo, the question-bank app.** The sibling project
+`D:\claude os\Medical school\Herophilus Book` — the A4 print textbook — excludes OSCE by name
+(`PLAN.md` line 324: *"It does not add OSCE content, which remains deferred."*). Write nothing into
+that folder.
+
 ## The sources
 
 All three under `D:\claude os\Medical school\Herophilus\Semester 8\Pedo\OSCE\`:
