@@ -83,13 +83,16 @@
   --ink-3:#b1a999;
   --ink-4:#aaa292;   /* secondary labels; measurements in the Stage 1 report */
 
-  /* ground and surfaces */
-  --bg:#181b1d;
-  --bg-2:#25282a;
-  --card:#1b1e20;
-  --fill:#35393b;
-  --glass:#1b1e20;
-  --glass-2:#181b1d;
+  /* ground and surfaces — warmed onto the parchment's own axis (R>G>B in
+     every stop) and widened: bg -> card -> bg-2 -> fill roughly doubles in
+     luminance at each step, so a card now visibly sits above the page and
+     a raised control sits above the card. Measurements in the change report. */
+  --bg:#1a1512;
+  --bg-2:#332a20;
+  --card:#28211a;
+  --fill:#453a2c;
+  --glass:#28211a;
+  --glass-2:#1a1512;
 
   /* hairlines — parchment, not white */
   --line:rgba(242,232,213,.085);
@@ -171,26 +174,27 @@
    page, warm ink, sienna rule lines. Only tokens are restated; the rules are
    shared with dark.
 
-   The two asymmetries from the previous theme still hold and still matter:
+   One asymmetry from the previous theme still holds:
      1. THE RAIL STAYS DARK — it is a carved plinth in both themes, and the ~12
         hardcoded #fff values inside it stay correct.
-     2. --gold STAYS BRIGHT — it is a background in 7 places and a text colour
-        in none. --ok and --bad DO darken, because accColor() returns them as
-        text.
+   A second one was ruled the other way, 2026-09-07: --gold no longer stays
+   bright here — bronze, matching --gold-text, with --on-accent moved light
+   to match. Dark keeps the bright gold; see the note above --gold below.
+   --ok and --bad DO darken, because accColor() returns them as text.
    ============================================================================ */
 :root[data-theme="light"]{
-  --tx:#302b25;
-  --ink:#302b25;
+  --tx:#28221c;
+  --ink:#28221c;
   --ink-2:#5d5549;
-  --ink-3:#625a4e;
-  --ink-4:#625a4e;   /* secondary labels; measured on all paper tones */
+  --ink-3:#645a4b;   /* restored step between ink-2 and ink-4 — was equal to ink-4 */
+  --ink-4:#68604f;   /* secondary labels; 4.76:1 on bg, 5.57:1 on card — see report */
 
-  --bg:#f3ecde;
-  --bg-2:#e4dac7;
-  --card:#f3ecde;
-  --fill:#e0d6c3;    /* raised paper for controls */
-  --glass:#f3ecde;
-  --glass-2:#f3ecde;
+  --bg:#ece0c8;      /* page — deeper, warmer than the old f3ecde */
+  --bg-2:#e0d3b4;
+  --card:#f8f2e4;    /* raised sheet — lighter than the page now, was equal to it */
+  --fill:#d9caa8;    /* raised paper for controls */
+  --glass:#f8f2e4;
+  --glass-2:#ece0c8;
 
   --line:rgba(60,44,28,.13);
   --line-2:rgba(60,44,28,.22);
@@ -201,14 +205,22 @@
   --ok-bg:var(--bg-2);
   --bad:#92294f;
   --bad-bg:rgba(146,41,79,.07);
-  --gold:#d9b44a;              /* unchanged — see note 2 above */
+  /* Colour pass, 2026-09-07: the owner ruled --gold stays bright in dark but
+     does not belong on parchment — bright saturated yellow sitting close to
+     the paper in both lightness and hue read as a smudge, not an accent.
+     --gold now takes the bronze the file already used for --gold-text (the
+     "established light-mode gold voice"); --on-accent moves to a light fill
+     so text on a solid gold background still passes. Contrast measured in
+     the change report. Dark's --gold/--gold-bg/--gold-text/--on-accent are
+     untouched, per the owner's explicit ruling for dark mode. */
+  --gold:#745800;
   --gold-bg:rgba(116,88,0,.10);
   --hl-y:#e3d3a4;
   --hl-g:#c9d8c0;
   --hl-p:#dfc5c9;
   --hl-b:#c5d2de;
   --warn:#745800;
-  --on-accent:#1a150e;
+  --on-accent:#fcf8ee;
   --gold-text:#745800;   /* bronze. The background gold measures 1.6:1 as text
                             on parchment — unreadable. See the dark block. */
 
@@ -1034,8 +1046,13 @@ mark.hl[data-c="b"],.pen.b{background:var(--hl-b);}
 .pav img{width:100%;height:100%;object-fit:cover;display:block}
 .pav .lock{
   position:absolute;right:-6px;bottom:-6px;width:28px;height:28px;border-radius:50%;
-  background:var(--gold);border:2.5px solid var(--line-2);display:flex;align-items:center;
-  justify-content:center;font-size:12px;
+  background:var(--gold);color:var(--on-accent);border:2.5px solid var(--line-2);display:flex;
+  align-items:center;justify-content:center;font-size:12px;
+  /* Colour pass, 2026-09-07: this badge had no color of its own and was
+     inheriting --tx, which read 7.06:1 on the old bright gold but 2.35:1 on
+     the new light-mode bronze — the PIN dots (••••) were nearly invisible.
+     The Google-id "G" badge sets its own inline background+color and is
+     unaffected. */
 }
 .pname{font-weight:700;font-size:14.5px;text-align:center;line-height:1.3;word-break:break-word}
 .pcard.add .pav{border-style:dashed;background:var(--card);font-size:38px;color:var(--ink-4);}
@@ -2806,12 +2823,24 @@ button.card.locked:hover .mod-art{opacity:var(--light-button-card-locked-hover-m
   .modal,.results{background:var(--light-results-background,var(--light-modal-background,var(--card)))}
   /* These classes receive literal subject colours inline. !important is scoped
      to their paint properties; inline geometry and handlers remain authoritative. */
-  .mod-ic,.tag,.pill,.eyebrow,.chip,.bankchip.on{background:var(--fill)!important;color:var(--tx)!important}
+  .mod-ic,.tag,.pill,.bankchip.on{background:var(--fill)!important;color:var(--tx)!important}
+  .chip{background:var(--fill)!important;color:var(--tx)!important}
+  /* Colour pass, 2026-09-07: the eyebrow is the subject's own name, so it
+     reads its colour off --subject when the page has one (set below by the
+     four .page:has() rules) and falls back to flat fill everywhere else —
+     Weak/Review/Flagged/Mock/Schedule eyebrows use a fixed feature colour,
+     not a subject hex, so they never match and stay exactly as before. */
+  .eyebrow{background:var(--subject,var(--fill))!important;color:var(--subject-fg,var(--tx))!important}
   .ch-dot,.qleg .sw,.legend .sw{background:var(--line-2)!important;border-color:var(--line-2)!important}
   .ch-acc,.stat .n,.ringmeta .a,.page-sub b,.res-tag,.movednote{color:var(--tx)!important}
-  .ring circle[stroke]:last-of-type,.sr-ring circle[stroke]:last-of-type{stroke:var(--ink-3)!important}
+  /* .ring (the Home dashboard's per-module accuracy ring) already carries its
+     own module colour as an inline stroke= attribute — it needs no flatten
+     removed. .sr-ring is the session's live ring, a reading surface, and
+     stays flat. */
+  .sr-ring circle[stroke]:last-of-type{stroke:var(--ink-3)!important}
   .mod-info [style*="background"],.qprog [style*="background"]{background:var(--fill)!important}
-  .doc-head .eyebrow,.bk-title .eyebrow,.qhead>.pill:first-of-type{background:var(--fill)!important;color:var(--tx)!important}
+  .doc-head .eyebrow,.bk-title .eyebrow{background:var(--subject,var(--fill))!important;color:var(--subject-fg,var(--tx))!important}
+  .qhead>.pill:first-of-type{background:var(--fill)!important;color:var(--tx)!important}
 }
 
 /* Literal colours and obsolete radius tokens in generated inline styles are
@@ -2833,25 +2862,41 @@ button.card.locked:hover .mod-art{opacity:var(--light-button-card-locked-hover-m
   .wbadge.must,.wbadge.high,.wbadge.know{background:var(--fill);color:var(--tx);border-color:var(--line-2)}
   .hp-sub{color:var(--ink-2)}
   .ring circle:first-of-type{stroke:var(--line-2)}
-  .bk-prog>*{background:var(--line-2)!important}
+  .bk-prog>*{background:var(--subject,var(--line-2))!important}
   .qleg .sw{border-color:var(--line-2)!important}
   .syncdot.err{background:var(--bad)}
 }
 @media screen{
-  .page:has(>.eyebrow[style*="#b4472f"]){--subject:var(--ent)}
+  .page:has(>.eyebrow[style*="#b4472f"]){--subject:var(--ent);--subject-fg:var(--on-subject)}
   .rail .nav-item[onclick*="id:'ent'"] .ic{background:var(--ent);color:var(--on-subject);border-radius:50%}
 }
 @media screen{
-  .page:has(>.eyebrow[style*="#5c7a52"]){--subject:var(--ophtho)}
+  .page:has(>.eyebrow[style*="#5c7a52"]){--subject:var(--ophtho);--subject-fg:var(--on-subject)}
   .rail .nav-item[onclick*="id:'ophtho'"] .ic{background:var(--ophtho);color:var(--on-subject);border-radius:50%}
 }
 @media screen{
-  .page:has(>.eyebrow[style*="#6d4c7d"]){--subject:var(--neuro)}
+  .page:has(>.eyebrow[style*="#6d4c7d"]){--subject:var(--neuro);--subject-fg:var(--on-subject)}
   .rail .nav-item[onclick*="id:'neuropsych'"] .ic{background:var(--neuro);color:var(--on-subject);border-radius:50%}
 }
 @media screen{
-  .page:has(>.eyebrow[style*="#2e5f8a"]){--subject:var(--peds)}
+  .page:has(>.eyebrow[style*="#2e5f8a"]){--subject:var(--peds);--subject-fg:var(--on-subject)}
   .rail .nav-item[onclick*="id:'pediatrics'"] .ic{background:var(--peds);color:var(--on-subject);border-radius:50%}
+}
+/* Colour pass, 2026-09-07 (Change 4): a subject's own colour reaches a bit
+   further now than the .grouphdr rule above and the rail dot — the primary
+   button that starts a subject's chapter/quiz, and the "due"/"flagged"
+   module chip on Review and Weakest-chapters-adjacent browse pages. Never on
+   the quiz, the case or the session — those stay flat by construction,
+   because .filterbar>.btn.go only exists at the top of a browse page and the
+   chip rule below is scoped to the two view names by hand. */
+@media screen{
+  .filterbar>.btn.go:first-child{
+    background:var(--subject,var(--fill));color:var(--subject-fg,var(--tx));
+    border-color:var(--subject,var(--line-2));
+  }
+  body[data-view="review"] .chip.on,body[data-view="flagged"] .chip.on{
+    background:var(--c,var(--fill))!important;color:var(--on-subject,var(--on-fill))!important;
+  }
 }
 
 /* On paper the teacher's annotations are black ink on white A4 stock.
