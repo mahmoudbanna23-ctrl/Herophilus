@@ -1,0 +1,81 @@
+Feature
+Fever
+Lid edema
+Conjunctival injection
+Chemosis
+Proptosis
+Pain on eye movement
+Ocular motility
+Vision
+RAPD
+Leukocytosis
+ESR
+Additional findings
+Pre-septal Cellulitis
+May be present
+Moderate—severe
+Absent
+Absent
+Absent
+Absent
+Normal
+Normal
+Absent
+Moderate
+Normal/elevated
+Skin infection
+Orbital Cellulitis
+Present
+Severe
+Present
+Marked
+present
+present
+Decreased
+Diminished ± diplopia
+In severe cases
+Marked
+Elevated
+Sinusitis, dental abscess
+226
+--- 150dpi ---
+Feature
+Fever
+Lid edema
+Conjunctival injection
+Chemosis
+Proptosis
+Pain on eye movement
+Ocular motility
+Vision
+RAPD
+Leukocytosis
+ESR
+Additional findings
+Pre-septal Cellulitis
+May be present
+Moderate—severe
+Absent
+Absent
+Absent
+Absent
+Normal
+Normal
+Absent
+Moderate
+Normal/elevated
+Skin infection
+Orbital Cellulitis
+Present
+Severe
+Present
+Marked
+Present
+Present
+Decreased
+Diminished ± diplopia
+In severe cases
+Marked
+Elevated
+Sinusitis, dental abscess
+226
