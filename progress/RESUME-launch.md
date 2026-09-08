@@ -37,9 +37,13 @@ From `LAUNCH-owner-steps.md`. None can be scripted; Claude may not enter credent
 
 **Ask which of the four are done before planning anything downstream.** The repo cannot see a console.
 
-## ⛔ The real blocker — two gates, both unresolved
+## ✅ The two gates — BOTH CLOSED BY THE OWNER, 2026-09-08
 
-Neither is a technical task and neither is Claude's to decide.
+Neither was a technical task and neither was Claude's to decide. The owner ruled on both on
+2026-09-08, asked directly and answering directly: the transcribed bank text is authorised, and
+that authorisation covers ENT Q153's photograph of an identifiable child. Recorded here as the
+owner's decision, not as a finding of Claude's. The reasoning below is kept as history; it is no
+longer a blocker.
 
 1. **Publisher copyright.** The drafting input is byte-identical copyrighted bank text
    (`PLAN-sprint-to-17-sep.md`); the publisher-copyright gate is parked as a blocker for publishing.
@@ -47,9 +51,13 @@ Neither is a technical task and neither is Claude's to decide.
    an identifiable child — *"a question to settle before any publication, alongside the copyright
    question already open on the transcribed content."*
 
-**Do not treat a green build as permission to publish.** Both gates are owner rulings. Also still
-open in `MEMORY.md`: **host and visibility undecided.** The one precondition that has been met is
-ENT, which is now closed.
+**HOST DECIDED 2026-09-08: Netlify**, by the owner, and permanent — `localStorage` is per-origin,
+so a later move orphans every student saved progress. This supersedes the "Netlify is ruled out by
+measurement" note in `redesign-direction-2026-09-07.md`; if its edge is unreachable again from the
+owner connection, that is a fault to report, not a licence to change host.
+
+With both gates closed and the host chosen, nothing stands between the build and the four console
+steps. A green build still is not permission on its own — the permission is the ruling above.
 
 If asked to push the site live while either gate is open, say plainly that the gate is open, name it,
 and put the decision to the owner. Unpublishing does not unpublish.
