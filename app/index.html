@@ -5339,11 +5339,10 @@ function vHome(p){
   });
   modsHTML+=`</div>`;
 
-  /* First run leads with the subjects and keeps the biography as a closing
-     note; once there is progress to report the page goes back to reporting it
-     first and the subjects sit where a returning reader already looks for
-     them. */
-  h+=fresh?modsHTML+todayHTML+heroHTML:todayHTML+heroHTML+modsHTML;
+  /* The biography sits above the subjects on every run. A first run once led
+     with the subjects and kept it as a closing note, which buried the card the
+     app is named after at the foot of the page. */
+  h+=todayHTML+heroHTML+modsHTML;
   p.innerHTML=h;
 }
 
