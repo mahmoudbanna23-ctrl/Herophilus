@@ -53,8 +53,13 @@ longer a blocker.
 
 **HOST DECIDED 2026-09-08: Netlify**, by the owner, and permanent — `localStorage` is per-origin,
 so a later move orphans every student saved progress. This supersedes the "Netlify is ruled out by
-measurement" note in `redesign-direction-2026-09-07.md`; if its edge is unreachable again from the
-owner connection, that is a fault to report, not a licence to change host.
+measurement" note in `redesign-direction-2026-09-07.md`, and 2026-09-08 explains that note: the
+first deploy, `dapper-blancmange-ba9474.netlify.app`, would not load over the owner home wifi but
+loaded immediately over mobile data on the same phone. The block is the owner network, almost
+certainly DNS, NOT Netlify edge — the site is reachable for everyone else. Suggested fix on the
+owner side is a public resolver (1.1.1.1 or 8.8.8.8). ⚠️ It follows that the owner cannot test
+their own live site on home wifi, so a report of "the site is down" from that network is not
+evidence the site is down; check from another connection before believing it.
 
 With both gates closed and the host chosen, nothing stands between the build and the four console
 steps. A green build still is not permission on its own — the permission is the ruling above.
