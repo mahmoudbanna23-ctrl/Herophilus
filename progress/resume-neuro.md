@@ -1367,3 +1367,78 @@ already read.
 Remaining after that: topics 09 Coma, 10 Movement Disorders, 11 Demyelinating Diseases,
 12 Neuromuscular Disorders, 13 CNS Infections, 14 Back & Lower Limb Pain — book pp.37–64,
 PDF 42–69. Then the endpoint PDF, which does not start until the user says so, and theory.
+
+## 2026-09-09 — neurology topic 08 "Epilepsy" spliced. CLOSED.
+
+36 questions, Q141–Q176, book pp.31–36 = PDF 36–41. The contents page claimed 36 and was exact —
+the **first exact contents claim in ten topics running**, after nine consecutive undercounts. The
++5 offset held on all nine rendered sheets, PDF 035 = book 30 through PDF 043 = book 38.
+
+### What was transcribed
+
+9 of the 36 entries print an `Explanation:` box — Q141, 142, 143, 157, 158, 160, 162, 169, 170 —
+carried verbatim and unmarked. The remaining 27 carry the authored marker.
+
+`app/data/questions.neuro.js` went **297 -> 333**, measured from disk after the write: 0 sparse
+holes, 333 unique ids. The marker count went **214 -> 241**, exactly the predicted +27. `node
+--check` exits 0, and `tools/boot-check/boot-check.js` reports 0 console errors with `QUESTIONS
+4049 · THEORY 81 · MODULES 4 · 153 chapters` unchanged — `neuropsych` still sits in
+`LOCKED_MODULES` and contributes nothing at the aggregator, so that is the healthy number, not a
+loss.
+
+### The six-stage sweep — 0 folds, and the zero was proved this time
+
+Stage C found 5 pairs at or above Dice 0.45 and stage D found 4 intra-draft pairs, nine candidates
+in total. Every one turned out to be the bank's own recurring stem template — "In previous case,
+first-line…", "occurs in all of the following EXCEPT" — with **zero option overlap on any pair**.
+`nr-epilepsy` held 0 live entries before this splice, which corroborates the zero independently.
+
+The stage-A/B zeros were proved rather than assumed: a planted verbatim clone of a live entry fired
+both stages, and a clone with two options reordered and one word respelled fired stage B but not
+stage A — fold shape 3 behaving exactly as designed.
+
+### The bare-letter gap, and how it was closed
+
+The bank prints bare key letters, so the letter/name cross-check is **unavailable and is recorded
+as not performed — never as passed.** The substitute was an independent second reading through the
+omniroute gateway, a different house from the seat that produced the transcript. All 36 keys agree
+three ways: that second reading, the cached first-pass transcript, and the staged `key` field. Q174
+was re-read a third time on its own because the first report wrote it ambiguously as `A→B`; it
+prints a clean single bold **B**, folio 36 confirmed, and option b reads "Negative but can be
+positive".
+
+### A measured correction to the omniroute admission gate
+
+The gate was earlier written up as a payload-size ceiling. That is too clean and is now corrected:
+a 1178 KB PNG failed identically at 2.0 s on all 14 candidate seats, but 136 KB and 159 KB JPEGs
+were admitted first try, ~9–10 s, no retries — the same size class that had failed repeatedly an
+hour earlier. **The gate is congestion-dependent, not a fixed byte ceiling; the exact ceiling
+remains unpinned.** A flat 2.0 s `503 chat_admission_busy` means shrink or wait, never seat-hunt; a
+`429 model_cooldown` after 20+ s is ordinary and retryable. Grayscale JPEG at 150 dpi q50 is the
+size lever that gets scans through.
+
+### A corpus-wide defect, recorded and not fixed — outside this chat's write allowlist
+
+Question order is hashed from the id, so a question whose stem says "In previous case" never lands
+next to its antecedent. The settled project convention is that the stem stays exactly as the bank
+printed it and the explanation carries the link, naming the antecedent by id and restating enough
+of its vignette to stand alone. Topic 08's 9 chains were linked that way. But `pedep2-gen-15` and
+`pedep2-ren-4` in `app/data/questions.peds.ep2.js` ship today with live "previous case" stems and
+are not this chat's to touch. Someone owns this; it is not fixed.
+
+### Q159, a tension held as printed
+
+The bank keys myoclonic as the sole generalized-seizure exception to complete loss of
+consciousness; the cached lecture `L4) Seizures_Epilepsy.txt` names myoclonic and atonic, and
+atonic is an unselected option on the same question. Noted in `explanation`, `answer` untouched,
+per the standing ruling that a defective key is noted and never disputed.
+
+### Flags topic 09 "Coma" inherits
+
+Banner confirmed at PDF 42, Q177–Q186. Q186 prints only three options, a–c, ending "Brainstem
+stroke", and appears to run past the page edge. Q194 carries a waveform figure, transcribed as
+`[figure]`.
+
+### Next
+
+Topics 09–14, book pp.37–64 = PDF 42–69.
