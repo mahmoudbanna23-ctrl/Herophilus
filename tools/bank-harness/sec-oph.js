@@ -1,6 +1,6 @@
 // ans is unmeasured and is documentation only; never a question count.
 const SEC_P1 = {
-  1: { prefix: 'ophep-exam-eye-', file: 'oph-ep-p1-s01-exam-eye.array.js', svar: 'OPHEP_S01_STAGED', draft: 'oph-ep-p1-s01-exam-eye.draft', chapter: 'op-intro-exam', pages: [6, 133], ans: null },
+  1: { prefix: 'ophep-exam-eye-', file: 'oph-ep-p1-s01-exam-eye.array.js', svar: 'OPHEP_S01_STAGED', draft: 'oph-ep-p1-s01-exam-eye.draft', chapter: 'op-intro-exam', pages: [6, 133], ans: null, folded: [27] },
   2: { prefix: 'ophep-optics-refraction-', file: 'oph-ep-p1-s02-optics-refraction.array.js', svar: 'OPHEP_S02_STAGED', draft: 'oph-ep-p1-s02-optics-refraction.draft', chapter: 'op-refract', pages: [134, 213], ans: null },
   3: { prefix: 'ophep-orbit-', file: 'oph-ep-p1-s03-orbit.array.js', svar: 'OPHEP_S03_STAGED', draft: 'oph-ep-p1-s03-orbit.draft', chapter: 'op-orbit', pages: [214, 272], ans: null },
   4: { prefix: 'ophep-lacrimal-system-', file: 'oph-ep-p1-s04-lacrimal-system.array.js', svar: 'OPHEP_S04_STAGED', draft: 'oph-ep-p1-s04-lacrimal-system.draft', chapter: 'op-lac', pages: [273, 342], ans: null },

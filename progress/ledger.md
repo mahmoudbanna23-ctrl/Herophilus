@@ -71,6 +71,7 @@ Rule: a scanned page is rendered and read **once, ever**. Before opening any sou
 | §17u — GG End Exam 2 merged: 27 = 27 promised (eleventh exact contents hit), z | ledger.md | 1640 |
 | §17v — House ch.16 "Pediatric ophthalmology" merged: 22 shipped + 3 folded = 2 | ledger.md | 1676 |
 | ⭐ §18 — OPHTHALMOLOGY IS CLOSED (2026-09-02): 1,598 entries, the Final reconciled | ledger.md | 1742 |
+| §19 — Ophthalmology ENDPOINT, section 1 "Examination of the Eye" spliced, 33 live | ledger.md | 1923 |
 
 ---
 
@@ -1917,3 +1918,68 @@ the direction that costs the most: they described a large amount of writing that
   explicit refusal to write any backup under `app\data`. Timestamping also stops a second splice
   overwriting the first backup. `_backups/` and `*.bak` added to `.gitignore`. Verified by dry run:
   `1598 → 1627` on `gg-ee1.draft.js`, exit 0, no `.bak` in `app\data\`.
+
+---
+
+## §19 — Ophthalmology ENDPOINT, section 1 "Examination of the Eye" transcribed and spliced (2026-09-09)
+
+Chat OPH-A's first section since GATE 0 closed 2026-09-08. Source: `Semester 8\Opthalmo\Questions\Opthalmology endpoint.pdf`, PDF pages 6–133, section 1 of 21 in part 1 (chapter half). **33 questions now live** in `app\data\questions.ophtho.ep.js` as `Q_OPHTHO_EP`, ids `ophep-exam-eye-1` … `ophep-exam-eye-34` with **27 absent** (folded, below). 0 sparse holes. All `bank:'endpoint'`, all `chapter:'op-intro-exam'`. File measured at **33 entries, 39,811 bytes** (`wc -c`), up from a 467-byte stub.
+
+### Structure of the source
+
+- PDF pp.6–63: lecture prose (title/topic dividers, bold highlighted headings, numbered/lettered outline lists, occasional anatomy tables). **No MCQs.**
+- PDF p.64: a "Questions" divider.
+- PDF pp.65–133: one MCQ per page, printed as adjacent odd/even pairs. **Question *n* is unmarked on PDF `63+2n`, marked (key highlighted, usually yellow) on PDF `64+2n`.** Q1 = pp.65–66; Q34 = pp.131–132.
+- PDF p.133 is a **third printing of Q34**, identical text to pp.131–132, unmarked. Stages nothing.
+- PDF p.134 is a clean section-2 divider ("Optics and Errors of Refraction"), confirming the section boundary and matching the printed table of contents.
+
+Full classifier calibration, OCR route (native embedded JPEG extraction + Windows.Media.Ocr, **no WPS call, no 429s** — cheaper than the documented route), and the false-positive pattern in the classifier's `kind` field: `progress\ophtho-endpoint-s01-calibration-2026-09-08.md`.
+
+### Fold
+
+**34 questions staged, 33 drafted.** n:27 (PDF p.118) is a verbatim reprint of n:10 (PDF p.84) — identical stem, options and key, confirmed by reading both page images. n:10 survives because p.84 prints an explanation box and p.118 does not. Registered as `folded: [27]` in `tools\bank-harness\sec-oph.js`. `ophep-exam-eye-10`'s `source` cites **both p.84 and p.118**, the only thing keeping p.118 covered for the closing page-coverage test.
+
+### Explanations
+
+**13 of 34 questions carry a printed explanation box** (pp.66–88 and p.112), transcribed verbatim. The other 20 carry an explanation written for this bank, each closing with the unboxed marker. Source formatting shift noted at drafting time: Q1–12 (pp.66–88) print lowercase `a/b/c/d` and each carries a box; Q13–33 print uppercase `A/B/C/D` and, apart from p.112 (cyan highlight), carry no box; pp.130 and 132 return to lowercase.
+
+### Keys — all 34 confirmed visually
+
+`tools\ep-index\keypos.py` (mechanical yellow-highlight pixel measurement) was run against this book for the first time and scored **32 of 33 correct plus one correct abstention** — about 3% error, not safe unsupervised. Both failures landed on pages its own diagnostics had already flagged (an abstention reason, and `litBands:2` instead of the usual 1), so it does not fail silently.
+
+- **p.124 (n:30) wrong**: keypos reported A, two independent visual reads confirm **B** — options A/B are near-mirror sentences swapping "directly"/"consensually", and a two-line highlight run was miscounted as two bands, shifting the band-to-option arithmetic by one. Corrected to B; `keypos` diagnostics left untouched as the record of what the tool reported.
+- **p.112 (n:24) abstained, correctly**: the key highlight on this page is **cyan**, not yellow; keypos measures only yellow and correctly reported no lit band rather than guessing.
+- **p.122 (n:29) is the control**: also `litBands:2`, and here keypos was correct — a two-band report is a reason to look closer, not by itself a verdict of error.
+
+Full detail, including the numbering cross-check against the book's own printed "29."/"30.": `progress\ophtho-endpoint-s01-calibration-2026-09-08.md`.
+
+### OCR errors caught by reading the page images
+
+**8 of 34 rows (24%) had wrong stem or option text in the OCR pass**, all caught by transcribing the page images directly and corrected before drafting:
+
+- p.82: four eaten degree signs — `15°`/`45°` read as `150`/`450`.
+- p.92: `1` read as capital `I`.
+- p.106, p.114, p.122: `=` read as a dash or em dash — `ration = 0.4-0.6`, `VA = 3/60`, `(VA= 6/12)`. This third shape (`=` → dash) was previously unrecorded in this project and turns a definition into what reads like a range or subtraction. Worth watching for in later sections.
+
+### Source defects kept verbatim (project rule: transcription faults are fixed, source typos are kept and recorded)
+
+p.96 `Minmum`, p.106 `ration`, p.102 `The i infant` (double space), p.112 `signifcance`, p.118 `C.Fovea` (no space), p.130 option d truncated by the book itself at `stationary ligh`.
+
+### Validator adjudications
+
+`node tools\bank-harness\val-oph-ep.js --part 1 1` exits 0, ALL CHECKS PASSED, 3,508 words. It warned twice, both adjudicated:
+
+- **n:12** — the drafted quote had an editorial aside folded inside the quoted box, making non-source text read as verbatim. Corrected against the page image; the staging itself was already right.
+- **n:6 / n:22** — near-identical option menus. Adjudicated **not a pairing**: n:6 asks nerve supply, n:22 asks action, and n:22's differing option (Inferior rectus) belongs to the vertical-action set while n:6's (Lateral rectus) is a generic distractor. Both explanations stay self-contained.
+
+### Verification
+
+`node tools\boot-check\boot-check.js` exits 0, **0 console errors**; the app's reported total stays 4,049 because `LOCKED_MODULES` holds ophthalmology out at the aggregator — the evidence of the splice is the array loading 33 entries, not the reported total moving. `node tools\bank-harness\pagecov-oph.js --part 1` **refuses**, correctly and expectedly: 1,256 pages of part 1's OCR index are still absent (1 of 21 sections drafted). It is a whole-part closing test, taking `--part <1|2> [--flip <pdfpage>]` and no section argument — it closes when part 1 closes, not now.
+
+### Drafting note
+
+OmniRoute failed both halves (`auto/reasoning` HTTP 503, `auto` HTTP 401); both halves were drafted by Codex `gpt-5.6-terra` instead. The n=1–17 half's first attempt exited 0 with empty output after ~21k tokens burned; a straight retry succeeded.
+
+### Next
+
+Section 2, "Optics and Errors of Refraction", PDF pages 134–213. Sections 12 (Vitreous), 16 (Pediatric Ophthalmology) and 20 (Drugs and the Eye) still carry `chapter: null` in `sec-oph.js` and need chapters added to `app\data\modules.js` before they can be drafted. Full resume state: `progress\resume-ophtho-endpoint-A-chapters.md`.

@@ -170,3 +170,18 @@ derived from a frozen `TARGETS` object keyed by a regex-validated `--part`, and 
 `--file`/`--target`/`--out` flag and no environment-variable read anywhere in the three tools.
 
 **OPH-B is now unblocked.** The next work on this side is section 1 (PDF pages 6–133).
+
+**2026-09-09 — SECTION 1 CLOSED, 33 live.** "Examination of the Eye", PDF pages 6–133,
+transcribed, drafted, validated and spliced into `app\data\questions.ophtho.ep.js`
+(`Q_OPHTHO_EP`, `ophep-exam-eye-1`…`ophep-exam-eye-34`, `ophep-exam-eye-27` folded into
+`ophep-exam-eye-10` — verbatim reprint, p.118 into p.84). 0 sparse holes. All keys confirmed
+visually; OCR was wrong on 8 of 34 rows for stem/option text (all caught reading page images, all
+corrected — see `progress\ophtho-endpoint-s01-calibration-2026-09-08.md` for the shapes, including
+a newly-seen `=` -> dash/em-dash misread worth watching for downstream). `val-oph-ep.js --part 1 1`
+exits 0; `boot-check.js` exits 0, 0 console errors; `pagecov-oph.js --part 1` correctly refuses
+(only 1 of 21 sections drafted — it is a whole-part test). Full account: `progress\ledger.md` §19.
+
+**Next: section 2, "Optics and Errors of Refraction", PDF pages 134–213.** Sections 12
+(Vitreous), 16 (Pediatric Ophthalmology) and 20 (Drugs and the Eye) still carry `chapter: null`
+in `sec-oph.js` and need chapters added to `app\data\modules.js` before they can be drafted — not
+blocking section 2, but due before those three come up.
