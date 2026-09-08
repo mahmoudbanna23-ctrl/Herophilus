@@ -3804,5 +3804,461 @@ var Q_NEURO = [
     explanation:'The bank prints an explanation box for this question. **Transcribed verbatim as printed:**\n\n> Progressive memory loss (especially episodic memory), disorientation, and impaired executive function are hallmark signs of Alzheimer disease (AD). Bilateral hippocampal atrophy on MRI strongly supports AD\n\n⚠️ **The printed box ends without a full stop**, after "strongly supports AD". Nothing has been added to close it. The box names the keyed option, so **key B is corroborated by the bank itself** — one of only two questions in this half (with Q134) where the answer page\'s bare letter is backed by anything printed. The answer page itself gives no name, only "(B)", so for the other seven of my nine the key carries no corroboration at all; the topic-wide letter-versus-name cross-check was **not performed**, and it is recorded as unavailable rather than passed.\n\n**The vignette is the lecture\'s domain list, written out as a story.** `L13) Dementia and Delirium` defines dementia as *"one or more acquired significant impairments (independence lost) in cognitive domains"* and then lists them; the daughter\'s account walks straight down that list:\n\n| What the daughter reports | The lecture\'s domain |\n|---|---|\n| Forgets recent conversations; repeats questions within a short period | **Memory (amnesia)** |\n| Has gotten lost twice walking to her local grocery store | **Visuospatial function (topographical disorientation)** |\n| Struggles to manage her finances | **Self-control/management (executive functions impairment)**, with the deck\'s **acalculia** alongside it |\n| Worsening **over the past 3 years** | Dementia\'s **insidious onset**, **progressive** course and **months-years** duration on the delirium-versus-dementia table — against delirium\'s acute onset, fluctuating course and days-weeks |\n\nAnd the base rate points the same way before a single sign is weighed: the deck puts **Alzheimer\'s disease at 65-85 %** of dementia in the elderly and calls it *"the most common form of dementia"*.\n\n**The three that are not the answer:**\n\n| Option | Why it fails here |\n|---|---|\n| **Vascular dementia** | The deck files it under **non-neurodegenerative (secondary)** dementia, *"e.g. multi-infarct dementia"* — and **the MRI is explicitly reported with no evidence of infarcts**, which removes the mechanism the name is built on. The deck\'s one behavioural pointer, *"in vascular dementia emotional instability is common"*, is absent from the vignette too. **20-30 %** |\n| **Major depressive disorder** | The right trap, and the deck raises it by name: depression in the elderly sits **fourth in the differential diagnosis of AD**, with the N.B. that *"sometimes memory loss in elderly depression is obviously present. This type of depression is called pseudo-dementia."* But the vignette gives **no mood symptom at all** - no sadness, anhedonia, sleep or appetite change - and the deficits are three years of steady worsening with structural atrophy on imaging, which is not pseudo-dementia |\n| **Lewy body dementia** | The deck\'s single discriminating sign for LBD is BPSD-based: *"in LBD, visual hallucination is typically seen."* **No hallucination is described**, and no parkinsonism or fluctuation either. **15-30 %**, so common enough to be worth excluding on a sign rather than on frequency |\n\n⚠️ **Two of the box\'s own terms are not in the material, and are flagged rather than passed off as taught.** The deck\'s pathology slide gives only **"Gross pathology: marked brain atrophy"** - *hippocamp* returns **zero** in this lecture, and the deck sets out **no neuroimaging criteria for any dementia**. **Episodic memory** returns **zero across all 25 cached decks**; the deck\'s word is simply **memory (amnesia)**. Both are correct - medial temporal and hippocampal atrophy is the imaging signature of AD, and episodic memory is the modality that fails first - but *not taken from the course material*.',
     objective:'Three years of insidiously progressive amnesia, topographical disorientation and executive/financial decline in a 75-year-old, with hippocampal atrophy and no infarcts on MRI, is Alzheimer disease - the most common dementia at 65-85% of elderly cases; the MRI excludes vascular dementia, the absent mood symptoms exclude depressive pseudo-dementia, and the absent visual hallucinations exclude Lewy body dementia.',
     source:'neuropsychiatry & neurosurgery qb.pdf p.87 (answer p.88), Explanation printed with the answer. "75-year-old" and "past 3 years" were read off a 400 dpi crop, not from OCR. ⚠️ THE PRINTED EXPLANATION ENDS WITHOUT A FULL STOP after "strongly supports AD" - transcribed exactly as printed, nothing added. The Explanation names the keyed option ("Alzheimer disease"), corroborating key B. The stem describes a brain MRI in prose but NO IMAGE IS PRINTED with the question, so no figure is attached here. LAST QUESTION OF TOPIC 21: book p.87 is blank below it and the next printed question is Q137 under the topic-22 banner on book p.89. Lecture support: content\\neuro\\lectures\\L13) Dementia and Delirium.txt (cognitive-domain list, prevalence by type, differential diagnosis of AD with pseudo-dementia, BPSD pointers for vascular dementia and LBD, delirium-versus-dementia table).'
+  },
+
+{
+    "id": "npqb-ps-137",
+    "bank": "gradegain",
+    "module": "neuropsych",
+    "chapter": "ps-sud",
+    "stem": "Which neurotransmitter is primarily involved in the brain reward system?",
+    "options": [
+      "Serotonin",
+      "Dopamine",
+      "GABA",
+      "Norepinephrine"
+    ],
+    "answer": 1,
+    "explanation": "**Dopamine is the neurotransmitter primarily involved in the brain reward system.** The reward system is a core concept in addiction and substance use disorders. **The bank prints no explanation box for this question.** Course references and additional teaching are distinguished below. The deck `L15) substance related disorder and psychiatry emergency` states: \"The brain reward system comprises mainly dopaminergic neurons, whose cell bodies are located in the ventral tegmental area (VTA)\" and that \"all drugs of abuse stimulate, directly or indirectly, the dopaminergic neurons located in the ventral tegmental area (VTA) and thereby increase the dopamine tone.\" This makes dopamine the key neurotransmitter mediating reward and reinforcement.\n\nThe table below walks through each wrong option:\n\n| Option | What it is | Where it belongs |\n|---|---|---|\n| Serotonin | A neurotransmitter involved in mood, appetite, and sleep regulation (not taken from the course material) | Associated with depression and anxiety; SSRIs target serotonin reuptake (see `L17) Psychopharmacology`), not the brain reward system |\n| GABA | The main inhibitory neurotransmitter in the brain (not taken from the course material) | Benzodiazepines enhance GABA-A receptor function to produce anxiolytic and sedative effects (not taken from the course material); `L17) Psychopharmacology` slide 27 lists anxiety and insomnia indications, but it is not the primary reward system messenger |\n| Norepinephrine | A neurotransmitter involved in arousal, alertness, and the fight-or-flight response (not taken from the course material) | `L17) Psychopharmacology` slide 6 names the SNRI class and slide 8 states that TCAs inhibit serotonin and noradrenaline reuptake. Norepinephrine contributes to cocaine’s stimulating effects (not taken from the course material), while L15 describes the reward pathway as dopaminergic |\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.",
+    "objective": "State that dopamine is the primary neurotransmitter in the brain reward system.",
+    "source": "neuropsychiatry & neurosurgery qb.pdf p.89 (answer p.91). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key."
+  },
+  {
+    "id": "npqb-ps-138",
+    "bank": "gradegain",
+    "module": "neuropsych",
+    "chapter": "ps-sud",
+    "stem": "Which substance causes synthetic hallucinations?",
+    "options": [
+      "Cocaine",
+      "Cannabis",
+      "Heroine",
+      "LSD"
+    ],
+    "answer": 3,
+    "explanation": "**LSD is the substance that causes synthetic hallucinations.** It is a classic hallucinogen. **The bank prints no explanation box for this question.** Course references and additional teaching are distinguished below. The deck `L15) substance related disorder and psychiatry emergency` classifies drugs into categories, listing \"Hallucinogens\" as \"LSD, phencyclidine, ketamine.\" The deck establishes the hallucinogen classification; the synthetic designation is not taken from the course material. The deck also lists the other options in their appropriate classes: Cocaine and amphetamines appear under \"Stimulants\", Heroin under \"Opiates\", and Cannabis under \"Cannabinoids\".\n\n| Option | What it is | Where it belongs |\n|---|---|---|\n| Cocaine | A powerful stimulant that increases dopamine, norepinephrine, and serotonin in the synapse (not taken from the course material) | Classified under \"Stimulants\" in `L15) substance related disorder and psychiatry emergency`; causes euphoria, increased energy, and sympathomimetic effects; hallucinations can also occur, so the distinction here is its stimulant classification (not taken from the course material) |\n| Cannabis | A psychoactive drug that can alter perception (not taken from the course material) | Listed under \"Cannabinoids\" in the classification; can produce paranoia and altered perception, but the classic synthetic hallucinogen in this option list is LSD (not taken from the course material) |\n| Heroine | An opiate that causes euphoria and sedation, and is also a common drug of misuse with notable withdrawal features (not taken from the course material) | Classified under \"Opiates\" in the deck; its characteristic effects are sedative and analgesic (not taken from the course material) |\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.",
+    "objective": "Identify LSD as a synthetic hallucinogen.",
+    "source": "neuropsychiatry & neurosurgery qb.pdf p.89 (answer p.91). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key."
+  },
+  {
+    "id": "npqb-ps-139",
+    "bank": "gradegain",
+    "module": "neuropsych",
+    "chapter": "ps-sud",
+    "stem": "Korsakoff syndrome is characterized by:",
+    "options": [
+      "Ataxia and ophthalmoplegia",
+      "Anterograde amnesia and confabulation",
+      "Seizures and coma",
+      "Respiratory depression"
+    ],
+    "answer": 1,
+    "explanation": "**Korsakoff syndrome is characterized by anterograde amnesia and confabulation.** It is a chronic neuropsychiatric consequence of chronic alcohol use and thiamine deficiency. **The bank prints no explanation box for this question.** Course references and additional teaching are distinguished below. `L13) Dementia and Delirium` lists thiamine deficiency with \"Wernicke Korsakoff psychosis\" among nutritional causes of dementia. `L16) Emergency Psychiatry Critical Interventions` describes the Wernicke triad as ophthalmoparesis, ataxia and mental status change due to thiamine deficiency. The staging for Q142 includes a printed box that states: \"Chronic alcohol use leads to thiamine deficiency, causing Wernicke (ataxia, ophthalmoplegia) and Korsakoff (amnesia, confabulation) syndromes\". This supplies the bank’s pairing. Korsakoff syndrome specifically involves severe anterograde amnesia and a tendency to confabulate to fill memory gaps (the memory-gap description is not taken from the course material).\n\n| Option | What it is | Where it belongs |\n|---|---|---|\n| Ataxia and ophthalmoplegia | Two components of the Wernicke encephalopathy triad; mental status change is the third in L16 | Wernicke encephalopathy is an acute manifestation of thiamine deficiency that can respond to treatment (not taken from the course material); Q142’s printed bank box attributes ataxia and ophthalmoplegia to Wernicke syndrome |\n| Seizures and coma | Non-specific features of many severe metabolic or toxic states | Not specific to Korsakoff; seizures are more associated with alcohol withdrawal or stimulant toxicity (not taken from the course material) |\n| Respiratory depression | An overdose effect of opioids (not taken from the course material) and an adverse effect listed for benzodiazepines in L17 slide 30 | Opioids and benzodiazepines cause respiratory depression; the deck `L17) Psychopharmacology` lists \"Respiratory depression\" as a benzodiazepine adverse effect, but it does not characterise Korsakoff syndrome |\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.",
+    "objective": "Identify the characteristic features of Korsakoff syndrome as anterograde amnesia and confabulation.",
+    "source": "neuropsychiatry & neurosurgery qb.pdf p.89 (answer p.91). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key."
+  },
+  {
+    "id": "npqb-ps-140",
+    "bank": "gradegain",
+    "module": "neuropsych",
+    "chapter": "ps-pharm",
+    "stem": "Which mood stabilizer requires monitoring for Stevens-Johnson syndrome?",
+    "options": [
+      "Lithium",
+      "Lamotrigine",
+      "Valproate",
+      "Carbamazepine"
+    ],
+    "answer": 1,
+    "explanation": "**Lamotrigine requires monitoring for Stevens-Johnson syndrome.** The bank prints an explanation box for this question. **Transcribed verbatim as printed:**\n\n> Lamotrigine carries a risk of severe skin reactions\n\nThe box names the keyed option directly. Under Lamotrigine, `L17) Psychopharmacology` slide 26 states: \"Monitoring for Stevens–Johnson syndrome \"a very rare but potentially fatal skin condition\" is highly important.\" This is a direct printed match to the key. The box says \"severe skin reactions\", which is the practical description of Stevens-Johnson syndrome (SJS).\n\n| Option | What it is | Where it belongs |\n|---|---|---|\n| Lithium | A classic mood stabilizer for bipolar disorder | Its side effects are captured in the LITHIUM mnemonic in `L17) Psychopharmacology` slide 24 (leucocytosis, polyuria, tremors, hypothyroidism, weight gain, upset stomach); the box names lamotrigine for the skin-reaction warning; lithium toxicity presents with CAN HAM SUCS signs (slide 25) |\n| Valproate | An anticonvulsant used as a mood stabilizer (L17 slide 23); its broad-spectrum anticonvulsant action is not taken from the course material | Slide 26 lists its issues as \"Stomach irritation, weight gain, tremors, menstrual irregularities and polycystic ovary\" requiring liver and CBC monitoring; no mention of SJS |\n| Carbamazepine | An anticonvulsant and mood stabilizer | Slide 26 notes \"CBC should be monitored, as it can lower white blood cell count\"; it is not the drug the box names for SJS |",
+    "objective": "Identify lamotrigine as the mood stabilizer that carries a risk of Stevens-Johnson syndrome.",
+    "source": "neuropsychiatry & neurosurgery qb.pdf p.89 (answer p.91). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key."
+  },
+  {
+    "id": "npqb-ps-141",
+    "bank": "gradegain",
+    "module": "neuropsych",
+    "chapter": "ps-sud",
+    "stem": "A 45-year-old man reports daily consumption of 6–12 beers and hard liquor. He has blackouts, tolerance, withdrawal symptoms, and failed attempts to quit. His wife threatens to leave him due to his drinking. What is the most likely diagnosis?",
+    "options": [
+      "Generalized anxiety disorder",
+      "Alcohol use disorder",
+      "Bipolar disorder",
+      "Major depressive disorder"
+    ],
+    "answer": 1,
+    "explanation": "**The most likely diagnosis is alcohol use disorder.** The vignette provides the classic features: daily heavy drinking, tolerance, withdrawal symptoms, failed attempts to quit (impaired control), and continued use despite harmful consequences (marital problems). **The bank prints no explanation box for this question.** Course references and additional teaching are distinguished below. The deck `L15) substance related disorder and psychiatry emergency` defines addiction as \"a chronic, relapsing brain disease that is characterized by compulsive drug seeking and use, despite harmful consequences.\" The man's daily consumption of 6–12 beers plus hard liquor, tolerating his usual intake, experiencing withdrawal, blackouts, and failed quit attempts all fulfil the core criteria. The wife threatening to leave is the \"harmful consequences\" that he continues to drink despite.\n\n| Option | What it is | Where it belongs |\n|---|---|---|\n| Generalized anxiety disorder | A condition of excessive worry and anxiety about a range of everyday problems, present most days for at least 6 months (not taken from the course material; this duration is not supplied in the available lecture text) | There is no mention of generalised worry or tension outside his drinking; his anxiety, if any, could be a withdrawal symptom, but the overall picture is alcohol-dominant; `L17) Psychopharmacology` slide 5 lists \"Anxiety disorders\" as an indication for antidepressants but this vignette is alcoholism (not taken from the course material except as differential) |\n| Bipolar disorder | A mood disorder with episodes of mania and depression | There is no evidence of mood elevation, grandiosity, decreased need for sleep, or depressive episodes; the problem is his alcohol use |\n| Major depressive disorder | A mood disorder characterised by depressed mood, loss of interest, and low energy for at least 2 weeks (`L9,10) Mood disorders` gives the duration as \"two weeks duration or more\") | The man has no stated depressive symptoms; \"blackouts\" here are read as alcohol-induced memory loss (not taken from the course material); his marital distress is a consequence of drinking, not a primary major depressive episode |\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.",
+    "objective": "Diagnose alcohol use disorder when the criteria of tolerance, withdrawal, failed control, and continued use despite harm are met.",
+    "source": "neuropsychiatry & neurosurgery qb.pdf p.89 (answer p.91). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key.",
+    "note": "The draft’s GAD duration of 6 months is not taken from the course material and awaits a human check; it was not inferred from the alcohol vignette."
+  },
+  {
+    "id": "npqb-ps-142",
+    "bank": "gradegain",
+    "module": "neuropsych",
+    "chapter": "ps-sud",
+    "stem": "Which medical complication is most associated with this disorder?",
+    "options": [
+      "Hypothyroidism",
+      "Rheumatoid arthritis",
+      "Wernicke-Korsakoff syndrome",
+      "Psoriasis"
+    ],
+    "answer": 2,
+    "explanation": "**Wernicke-Korsakoff syndrome is the medical complication most associated with alcohol use disorder.** The bank prints an explanation box for this question. **Transcribed verbatim as printed:**\n\n> Chronic alcohol use leads to thiamine deficiency, causing Wernicke (ataxia, ophthalmoplegia) and Korsakoff (amnesia, confabulation) syndromes\n\nThe box links chronic alcohol use to thiamine deficiency. Thiamine is vitamin B1 (not taken from the course material). `L16) Emergency Psychiatry Critical Interventions` supplies the Wernicke triad of ophthalmoparesis, ataxia and mental status change due to thiamine deficiency. Untreated Wernicke encephalopathy can progress to Korsakoff syndrome with persistent anterograde amnesia and confabulation (this progression is not taken from the course material). The stem of Q141 gave the setting of severe alcohol use disorder, and this question asks for its most associated complication. The complication is also linked to thiamine deficiency in `L13) Dementia and Delirium` under nutritional causes of dementia.\n\n| Option | What it is | Where it belongs |\n|---|---|---|\n| Hypothyroidism | A thyroid gland underactivity | Listed as a lithium adverse effect; the lithium mnemonic in `L17) Psychopharmacology` slide 24 lists \"Hypothyroidism\" as an H-item; it is not the complication named in this bank box |\n| Rheumatoid arthritis | An autoimmune inflammatory joint disease (not taken from the course material) | Not a recognised complication of chronic alcohol use; alcohol use disorder predisposes to gout (not taken from the course material) but rheumatoid arthritis is not the complication identified by this box |\n| Psoriasis | A chronic immune-mediated skin condition (not taken from the course material) | Certain medications and infections can trigger it; alcohol is a risk factor for flares, but the boxed teaching and the core alcohol complication is Wernicke-Korsakoff syndrome (not taken from the course material) |",
+    "objective": "Identify Wernicke-Korsakoff syndrome as the most associated complication of chronic alcohol use disorder.",
+    "source": "neuropsychiatry & neurosurgery qb.pdf p.89 (answer p.91). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key."
+  },
+  {
+    "id": "npqb-ps-143",
+    "bank": "gradegain",
+    "module": "neuropsych",
+    "chapter": "ps-symptom",
+    "stem": "The prefrontal cortex is critical for:",
+    "options": [
+      "Executive functions",
+      "Dopamine release",
+      "Respiratory control",
+      "Motor coordination"
+    ],
+    "answer": 0,
+    "explanation": "**The prefrontal cortex is critical for executive functions.** The bank prints an explanation box for this question. **Transcribed verbatim as printed:**\n\n> PFC governs decision-making and impulse control\n\nThe box names the function directly. The lecture deck `L15) substance related disorder and psychiatry emergency` states: \"Executive functions (EF) (E.g., decision making, weighing risk against reward, and resisting limbic impulses) are controlled through the Prefrontal cortex (PFC).\" The deck even ties this to addiction, noting \"The EF are impaired in addictive patients.\" Thus the PFC is central to higher-order cognitive control.\n\n| Option | What it is | Where it belongs |\n|---|---|---|\n| Dopamine release | The ventral tegmental area (VTA) mediates dopamine release | The deck says the reward system \"comprises mainly dopaminergic neurons\" originating in the VTA, projecting to the nucleus accumbens, hippocampus, amygdala, and prefrontal cortex; the PFC is a projection target, not the source of dopamine release |\n| Respiratory control | Brainstem centres, mainly the medulla oblongata and pons, control respiration | Respiratory depression is a drug effect seen with opioids and benzodiazepines (see `L17) Psychopharmacology` slide 30), but the cortex is not the primary respiratory centre (not taken from the course material) |\n| Motor coordination | The cerebellum and basal ganglia coordinate movement | `L1) INTRODUCTION AND LOCALISATION IN NEUROLOGY` describes cerebellar coordination. The printed box at Q153 links striatal D2 blockade to EPS, and L15’s NMS section associates nigrostriatal D2 antagonism with rigidity and tremor; the prefrontal cortex’s function in this question is executive control |",
+    "objective": "Identify the prefrontal cortex as the seat of executive functions such as decision-making and impulse control.",
+    "source": "neuropsychiatry & neurosurgery qb.pdf p.89 (answer p.91). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key."
+  },
+  {
+    "id": "npqb-ps-144",
+    "bank": "gradegain",
+    "module": "neuropsych",
+    "chapter": "ps-sud",
+    "stem": "Which substance causes constricted pupils during intoxication?",
+    "options": [
+      "Cocaine",
+      "Heroine",
+      "Alcohol",
+      "Cannabis"
+    ],
+    "answer": 1,
+    "explanation": "**Heroine causes constricted pupils (miosis) during intoxication.** **The bank prints no explanation box for this question.** Course references and additional teaching are distinguished below. The deck `L15) substance related disorder and psychiatry emergency` classifies Heroin under \"Opiates\". Opiates are known to cause pupillary constriction (miosis) as a direct pharmacological effect via the Edinger-Westphal nucleus, while stimulants like cocaine cause mydriasis (pupil dilation). The deck does not print this specific pupil sign, so the teaching point is not taken from the course material, but the classification of heroin as an opiate is from the lecture, and the miosis is a core clinical exam finding.\n\n| Option | What it is | Where it belongs |\n|---|---|---|\n| Cocaine | A stimulant that blocks monoamine reuptake | It causes pupil dilation (mydriasis) through sympathetic activation, the opposite of the stem's \"constricted\" sign (not taken from the course material) |\n| Alcohol | A CNS depressant | It is a depressant listed in the classification; it does not reliably cause constricted pupils, and severe intoxication can cause sluggish or dilated pupils in overdose (not taken from the course material) |\n| Cannabis | A psychoactive drug from the Cannabinoid class | Cannabis typically causes red conjunctivae (bloodshot eyes), not pin-point pupils; pupillary effects are not a classic sign of cannabis intoxication (not taken from the course material) |\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.",
+    "objective": "Identify opiate intoxication as a cause of constricted (miotic) pupils.",
+    "source": "neuropsychiatry & neurosurgery qb.pdf p.89 (answer p.91). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key."
+  },
+  {
+    "id": "npqb-ps-145",
+    "bank": "gradegain",
+    "module": "neuropsych",
+    "chapter": "ps-pharm",
+    "stem": "MAOIs are rarely used due to:",
+    "options": [
+      "Weight gain",
+      "Dry mouth",
+      "Sedation",
+      "Tyramine-cheese reaction"
+    ],
+    "answer": 3,
+    "explanation": "**MAOIs are rarely used due to the tyramine-cheese reaction.** **The bank prints no explanation box for this question.** Course references and additional teaching are distinguished below. The deck `L17) Psychopharmacology` lists \"Monoamine Oxidase Inhibitors (MAOIs)\" as one of the five classes of antidepressants on slide 6, but it never returns to them: no agent, side effect, or interaction is printed anywhere in the deck. The tyramine-cheese reaction is a well-known hypertensive crisis caused by the interaction between MAOIs and tyramine-containing foods (aged cheese, cured meats, etc.), and the interaction risk restricts their use. This claim is not taken from the course material and is filled from general medical knowledge.\n\n| Option | What it is | Where it belongs |\n|---|---|---|\n| Weight gain | A common side effect of several psychotropics | Weight gain is a classic side effect of NaSSAs (see slide 12: \"sedation & increase appetite and weight\") and lithium (LITHIUM mnemonic, slide 24); MAOIs can also cause it (not taken from the course material), but the defining and dangerous reason for their avoidance is the hypertensive crisis |\n| Dry mouth | An anticholinergic side effect | `L17) Psychopharmacology` slide 9 prints \"Muscarinic receptor\" without a subtype number. The draft’s M1 antimuscarinic explanation of TCA-related dry mouth is not taken from the course material; the keyed MAOI interaction is a different mechanism |\n| Sedation | A side effect of many sedating antidepressants | Slide 12 lists NaSSA sedation. Slide 9 labels the TCA histamine receptor as H1; the explanation that its blockade causes sedation is not taken from the course material. MAOIs can cause insomnia or sedation (not taken from the course material), but these are distinct from the dangerous tyramine interaction |\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.",
+    "objective": "Identify the tyramine-cheese reaction, a hypertensive crisis, as the reason MAOIs are rarely used.",
+    "source": "neuropsychiatry & neurosurgery qb.pdf p.89 (answer p.91). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key. The lecture deck names the MAOI class but prints no MAOI side effect or interaction.",
+    "note": "The draft’s M1 receptor subtype is not taken from the course material; L17 slide 9 names a muscarinic receptor without that subtype. The numerical subtype awaits a human check."
+  },
+
+{
+    "id": "npqb-ps-146",
+    "bank": "gradegain",
+    "module": "neuropsych",
+    "chapter": "ps-sud",
+    "stem": "A 30-year-old heroin user complains of lacrimation, rhinorrhea, and diarrhea 24 hours after last use. What is the diagnosis?",
+    "options": [
+      "Opioid intoxication",
+      "Opioid withdrawal",
+      "Serotonin syndrome",
+      "Alcohol withdrawal"
+    ],
+    "answer": 1,
+    "explanation": "The correct answer is **Opioid withdrawal**. The symptoms of lacrimation, rhinorrhea, and diarrhea appearing 24 hours after last heroin use are classic autonomic and gastrointestinal signs of opioid withdrawal syndrome. \n\nThe lecture deck `L15) substance related disorder and psychiatry emergency` covers opioid withdrawal as part of substance-induced disorders, listing withdrawal alongside intoxication as a primary presentation. The draft’s additional description is a noradrenergic surge with autonomic hyperactivity (e.g., rhinorrhea, lacrimation, diarrhea, diaphoresis), musculoskeletal aches and psychological distress (not taken from the course material). Its stated peak within 2-3 days of cessation is also not taken from the course material and awaits a human check; the staged vignette itself specifies 24 hours. \n\nAnalysis of incorrect options:\n\n| Option | Actual Concept | Why It Is Incorrect |\n| :--- | :--- | :--- |\n| **Opioid intoxication** | Presents with CNS depression, miosis, and respiratory depression (not taken from the course material). | The stem describes withdrawal symptoms (hyperactivity), not intoxication (sedation). |\n| **Serotonin syndrome** | Caused by excess serotonergic activity, featuring agitation, hyperthermia, clonus, and hyperreflexia (`L16) Emergency Psychiatry Critical Interventions`, serotonin toxicity sections). | Symptoms in the stem (lacrimation, rhinorrhea) are not characteristic; serotonin syndrome is related to antidepressants/serotonergic drugs, not opioid cessation. |\n| **Alcohol withdrawal** | Characterized by autonomic hyperactivity, tremor, and potentially seizures/delirium tremens. | While both are withdrawal states, the specific symptoms (rhinorrhea, diarrhea) are more typical of opioid withdrawal; alcohol withdrawal often includes hypertension, tachycardia, and hyperreflexia (this alcohol-withdrawal description is not taken from the course material). |\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.",
+    "objective": "The question tests the recognition of the classic symptom cluster of opioid withdrawal.",
+    "source": "neuropsychiatry & neurosurgery qb.pdf p.90 (answer p.91). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key.",
+    "note": "The draft’s 2-3 days withdrawal peak is not taken from the course material and awaits a human check. The staged timing of 24 hours and age of 30-year-old are unchanged."
+  },
+  {
+    "id": "npqb-ps-147",
+    "bank": "gradegain",
+    "module": "neuropsych",
+    "chapter": "ps-sud",
+    "stem": "Which medication is first-line for managing this condition?",
+    "options": [
+      "Naltrexone",
+      "Acamprosate",
+      "Methadone",
+      "Bupropion"
+    ],
+    "answer": 2,
+    "explanation": "The bank prints an explanation box for this question. **Transcribed verbatim as printed:**\n\n> Methadone, a long-acting opioid agonist, prevents withdrawal and cravings\n\nThe printed box names methadone as a long-acting opioid agonist that prevents withdrawal and cravings; it does not rank treatments. Methadone is the printed answer to this bank’s first-line question. The lecture `L15) substance related disorder and psychiatry emergency` supports this, stating that for less motivated patients, \"harm reduction\" can be done using methadone or buprenorphine, and describing methadone’s mu-opioid receptor occupancy and blockade of other opioids’ reinforcing effects. A separate bullet states: \"It prevents opiate withdrawal, blocks the effects of illicit opiate use, and decreases opiate craving.\" The stem refers to the condition in Q146 (opioid withdrawal), for which opioid agonist replacement is the standard pharmacological treatment to prevent withdrawal and reduce cravings.\n\nAnalysis of incorrect options:\n\n| Option | Actual Concept | Why It Is Incorrect |\n| :--- | :--- | :--- |\n| **Naltrexone** | A long-acting opioid antagonist used for relapse prevention after detoxification, not for managing acute withdrawal. | Requires the patient to be opioid-free first; using it in active withdrawal would precipitate severe withdrawal. It is for motivated patients in maintenance, not acute management. |\n| **Acamprosate** | L15 describes acamprosate as a GABA agonist used for alcohol dependence; craving reduction and maintenance of abstinence are additional teaching (not taken from the course material). | Indicated for alcohol use disorder, not opioid withdrawal. |\n| **Bupropion** | A norepinephrine-dopamine reuptake inhibitor (NDRI) antidepressant (the NDRI identification is not taken from the course material), also listed for smoking cessation in L15. | It is not an opioid agonist and has no role in managing opioid withdrawal; it is used for nicotine dependence and depression. |",
+    "objective": "Recognize methadone, a long-acting opioid agonist that prevents withdrawal and cravings, as the printed answer for the Q146 opioid-withdrawal context.",
+    "source": "neuropsychiatry & neurosurgery qb.pdf p.90 (answer p.91). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key."
+  },
+  {
+    "id": "npqb-ps-148",
+    "bank": "gradegain",
+    "module": "neuropsych",
+    "chapter": "ps-pharm",
+    "stem": "A patient stops sertraline abruptly after 6 months and reports electric-shock sensations and dizziness. What is the diagnosis?",
+    "options": [
+      "Serotonin syndrome",
+      "Antidepressant discontinuation syndrome",
+      "Bipolar disorder",
+      "Opioid withdrawal"
+    ],
+    "answer": 1,
+    "explanation": "The correct answer is **Antidepressant discontinuation syndrome**. The stem describes the abrupt cessation of an SSRI (sertraline) and the subsequent onset of sensory symptoms (electric-shock sensations) and disequilibrium (dizziness), which are hallmark features of SSRI discontinuation syndrome. \n\nThe lecture deck `L17) Psychopharmacology` has a special-considerations slide (slide 14) with the printed hub title \"Primary SSRI discontinuation syndrome\" which explicitly lists \"Electric-shock-like sensations\" under Sensory symptoms and \"Dizziness\" under Disequilibrium. The draft states that this syndrome typically occurs within days of stopping an SSRI after prolonged use (not taken from the course material; the timing awaits a human check). Its proposed mechanism of rapid down-regulation of serotonergic autoreceptors is unresolved: L17 slide 14 does not state a mechanism, while slide 7’s autoreceptor caption concerns SSRI action. This mechanism claim is not taken from the course material and is retained as a draft claim for human review, not established here.\n\nAnalysis of incorrect options:\n\n| Option | Actual Concept | Why It Is Incorrect |\n| :--- | :--- | :--- |\n| **Serotonin syndrome** | A potentially life-threatening condition of excessive serotonergic activity, usually from drug interactions or overdose. Features include agitation, hyperthermia, clonus, and hyperreflexia (L16’s serotonin toxicity sections). | The stem describes symptoms upon *discontinuation*, not initiation/overdose of a serotonergic agent. The specific \"electric-shock\" sensation is characteristic of discontinuation, not serotonin syndrome. |\n| **Bipolar disorder** | A mood disorder with episodes of mania/hypomania and depression. | Abruptly stopping an antidepressant can precipitate a depressive episode or, in susceptible individuals, a manic switch (not taken from the course material; retained as a draft claim for human review), but the specific symptoms described (electric shocks, dizziness) are not diagnostic of bipolar disorder itself. |\n| **Opioid withdrawal** | Characterized by autonomic hyperactivity (rhinorrhea, diarrhea) and muscle aches (not taken from the course material). | The highlighted symptoms are sensory and balance symptoms; the context is antidepressant discontinuation. Q146 supplies the different opioid-cessation context with rhinorrhea and diarrhea. |\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.",
+    "objective": "The question tests the recognition of the symptom profile of antidepressant discontinuation syndrome after abrupt SSRI cessation.",
+    "source": "neuropsychiatry & neurosurgery qb.pdf p.90 (answer p.91). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key.",
+    "note": "Unresolved draft claims: onset within days and a mechanism of rapid down-regulation of serotonergic autoreceptors after SSRI cessation. These are not taken from the course material; L17 slide 7 describes SSRI action and slide 14 lists discontinuation symptoms without this mechanism. The claimed discontinuation-associated manic switch also awaits a human check."
+  },
+  {
+    "id": "npqb-ps-149",
+    "bank": "gradegain",
+    "module": "neuropsych",
+    "chapter": "ps-pharm",
+    "stem": "The therapeutic lithium serum range is:",
+    "options": [
+      "0.1–0.5 mEq/L",
+      "0.6–1.2 mEq/L",
+      "1.5–2.5 mEq/L",
+      "3.0–4.0 mEq/L"
+    ],
+    "answer": 1,
+    "explanation": "The correct answer is **0.6–1.2 mEq/L**. This is the staged option selected by the printed key. Its general application as a therapeutic window for bipolar disorder and recurrent major depression is not taken from the course material; the lecture does not supply a serum range. \n\nThe lecture deck `L17) Psychopharmacology` lists lithium as a mood stabilizer (slide 23) and discusses its side effects (slide 24) and toxicity (slide 25), but it does **not** print the specific serum therapeutic range. The range 0.6–1.2 mEq/L comes directly from staged option B. The draft’s generalization that levels below 0.6 mEq/L are sub-therapeutic and levels above 1.2 mEq/L increase toxicity risk (e.g., confusion, ataxia, renal issues) is not taken from the course material; these clinical thresholds await a human check. L17 slide 25 lists toxicity symptoms without serum thresholds.\n\nAnalysis of incorrect options:\n\n| Option | Actual Concept | Why It Is Incorrect |\n| :--- | :--- | :--- |\n| **0.1–0.5 mEq/L** | Described in the draft as sub-therapeutic (not taken from the course material; clinical classification awaits a human check). | The draft describes it as generally too low for mood-stabilizing effects (not taken from the course material; pending human review). |\n| **1.5–2.5 mEq/L** | Described in the draft as moderate to severe toxicity (not taken from the course material; the severity classification awaits a human check). | The draft associates it with significant neurological and renal toxicity requiring urgent intervention (not taken from the course material; pending human review). |\n| **3.0–4.0 mEq/L** | Described in the draft as severe, life-threatening toxicity (not taken from the course material; the severity classification awaits a human check). | The draft describes an emergency with risk of seizures, coma and death (not taken from the course material; pending human review). |\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.",
+    "objective": "The question tests the knowledge of the specific therapeutic serum concentration range for lithium.",
+    "source": "neuropsychiatry & neurosurgery qb.pdf p.90 (answer p.91). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key.",
+    "note": "The four option ranges are copied from staging. Clinical use of 0.6 and 1.2 mEq/L as general thresholds and the severity labels attached to 1.5–2.5 mEq/L and 3.0–4.0 mEq/L are not taken from the course material and remain unresolved for human review."
+  },
+  {
+    "id": "npqb-ps-150",
+    "bank": "gradegain",
+    "module": "neuropsych",
+    "chapter": "ps-pharm",
+    "stem": "Which of the following medications is a nicotine receptor partial agonist?",
+    "options": [
+      "Bupropion",
+      "Naltrexone",
+      "Nicotine patch",
+      "Varenicline"
+    ],
+    "answer": 3,
+    "explanation": "The correct answer is **Varenicline**. Varenicline is a nicotinic acetylcholine receptor partial agonist used for smoking cessation. The draft specifies the selective α4β2 subtype (not taken from the course material); that numerical subtype awaits a human check. \n\nThe lecture `L15) substance related disorder and psychiatry emergency` explicitly states in its \"Pharmacotherapy for addiction\" section under nicotine: \"Nicotine receptor partial agonist (varenicline)\". It also lists other agents: nicotine replacement therapies (patch, gum, lozenge) and bupropion, which is noted as a nicotine receptor antagonist with dopaminergic action.\n\nAnalysis of incorrect options:\n\n| Option | Actual Concept | Why It Is Incorrect |\n| :--- | :--- | :--- |\n| **Bupropion** | An NDRI antidepressant (the NDRI identification is not taken from the course material) also used for smoking cessation. The lecture classifies it as a \"Nicotine receptor antagonist\" (with dopaminergic action). | It is an antagonist, not a partial agonist. |\n| **Naltrexone** | A long-acting opioid antagonist listed for opiate dependence in L15; its use for alcohol use disorder is not taken from the course material. | It belongs to the opioid-antagonist entry in L15, not the nicotine partial-agonist entry. |\n| **Nicotine patch** | A form of nicotine replacement therapy (NRT) that delivers nicotine transdermally. | It supplies nicotine as an agonist replacement rather than varenicline’s partial agonism (the full-agonist distinction is not taken from the course material). |\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.",
+    "objective": "The question tests the identification of varenicline's mechanism as a nicotine receptor partial agonist.",
+    "source": "neuropsychiatry & neurosurgery qb.pdf p.90 (answer p.91). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key.",
+    "note": "The draft’s α4β2 receptor subtype is not taken from the course material; L15 states nicotine receptor partial agonist without the subtype. The subtype awaits a human check."
+  },
+  {
+    "id": "npqb-ps-151",
+    "bank": "gradegain",
+    "module": "neuropsych",
+    "chapter": "ps-emerg",
+    "stem": "A 24-year-old man with chronic schizophrenia that is maintained on antipsychotic treatment was brought to the emergency room after being found lying fixed in bed and is unable to communicate. Examination revealed that the patient was confused and disoriented. He has severe muscle rigidity and a temperature of 39.4 C. His blood pressure was 180/100 mmHg. His CBC showed leukocytosis. What is the most appropriate first line drug for treatment of this patient?",
+    "options": [
+      "Bromocriptine",
+      "Lithium",
+      "Haloperidol",
+      "Lamotrigine"
+    ],
+    "answer": 0,
+    "explanation": "The bank prints an explanation box for this question. **Transcribed verbatim as printed:**\n\n> This patient is presenting with neuroleptic malignant syndrome (NMS), a rare but life-threatening condition associated with the use of antipsychotics. Key features include: Severe muscle rigidity Hyperthermia (temperature >38°C) Autonomic dysregulation (e.g., hypertension). Altered mental status (e.g., confusion, disorientation). Leukocytosis and elevated creatine kinase (CK) levels. Bromocriptine, a dopamine agonist, is commonly used to counteract dopamine receptor blockade caused by antipsychotics.\n\nThe printed explanation names NMS and describes bromocriptine as commonly used; it does not itself call it first-line. Bromocriptine is the printed answer among these options. The lecture `L15) substance related disorder and psychiatry emergency` describes NMS in its \"Neuroleptic Malignant Syndrome\" section, listing the tetrad (mental status change, rigidity, fever, dysautonomia) and noting that \"Dopaminergic drugs, such as bromocriptine and amantadine\" are used in treatment. The staged stem prints 39.4 C and 180/100 mmHg; the staged box separately prints temperature >38°C. These numerical strings are preserved. Bromocriptine works by stimulating dopamine receptors, counteracting the antipsychotic dopamine blockade described in the printed box. L15 also lists discontinuing the offending drug, ICU admission and supportive care; the keyed drug is part of management.\n\nAnalysis of incorrect options:\n\n| Option | Actual Concept | Why It Is Incorrect |\n| :--- | :--- | :--- |\n| **Lithium** | A mood stabilizer used in bipolar disorder. | It is not the NMS treatment named here; the draft’s warning that lithium could worsen the condition or contribute to toxicity is not taken from the course material. |\n| **Haloperidol** | A typical antipsychotic (dopamine D2 antagonist). | It is an *antipsychotic* and would likely *worsen* NMS, which is caused by dopamine blockade. It is a potential precipitant, not a treatment. |\n| **Lamotrigine** | An anticonvulsant/mood stabilizer used in bipolar disorder. | It has no role in the acute management of NMS, which requires dopaminergic stimulation. |",
+    "objective": "Recognize the bank’s NMS presentation and its keyed drug, bromocriptine, within management that also requires stopping the offending drug and supportive care.",
+    "source": "neuropsychiatry & neurosurgery qb.pdf p.90 (answer p.91). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key."
+  },
+  {
+    "id": "npqb-ps-152",
+    "bank": "gradegain",
+    "module": "neuropsych",
+    "chapter": "ps-mood",
+    "stem": "In managing a recurrent major depression, which of the following needs to be added to antidepressants?",
+    "options": [
+      "Antipsychotics",
+      "ECT",
+      "Mood stabilized",
+      "Anti-convulsant"
+    ],
+    "answer": 2,
+    "explanation": "The correct answer is **Mood stabilized**, the staged option selected by the printed key. For recurrent major depressive disorder, particularly with a history of multiple episodes or inadequate response to antidepressants alone, augmentation with a mood stabilizer (e.g., lithium) is a strategy described by the draft to prevent relapse (this treatment-strategy detail is not taken from the course material; L17 lists the indication without a treatment algorithm). \n\nThe lecture `L17) Psychopharmacology` on slide 22, the mood-stabilizer indications slide, explicitly lists \"Recurrent major depressive disorder\" as an indication for mood stabilizers. The draft links augmentation to mood stabilization and reduced recurrence (not taken from the course material); the cited slide supplies the indication, not this explanation of benefit. \n\nAnalysis of incorrect options:\n\n| Option | Actual Concept | Why It Is Incorrect |\n| :--- | :--- | :--- |\n| **Antipsychotics** | Some atypical antipsychotics (e.g., quetiapine, aripiprazole) are described by the draft as FDA-approved adjuncts for major depression (the named-agent and regulatory details are not taken from the course material and await a human check). L17 slide 17 explicitly lists antipsychotic adjunctive therapy for treatment-resistant major depression. | While they are a possible augmentation strategy, the question asks what \"needs to be added\" based on standard teaching, and the lecture slide specifically lists recurrent major depression under mood stabilizers. The draft’s first-line ranking of mood stabilizers, especially lithium, is not taken from the course material; slide 22 does not rank augmentation options. |\n| **ECT** | Electroconvulsive therapy is a treatment for severe, treatment-resistant, or acute suicidal depression; `L18) Devices in Psychiatry` lists treatment-resistant depression and acute suicidality among ECT indications. | It is a treatment modality, not a medication \"added\" to an antidepressant regimen in the same sense; pharmacotherapy failure is one indication, while acute suicidality is a separate indication in L18. |\n| **Anti-convulsant** | Some anticonvulsants (e.g., lamotrigine, valproate) are used as mood stabilizers. | L17 slide 23 groups carbamazepine, lamotrigine and valproic acid / divalproex as anticonvulsant mood stabilizers, alongside lithium. The classes overlap; the bank’s printed key remains C. |\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.",
+    "objective": "The question tests the knowledge that mood stabilizers are indicated as an augmentation strategy for recurrent major depressive disorder.",
+    "source": "neuropsychiatry & neurosurgery qb.pdf p.90 (answer p.91). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key.",
+    "note": "The draft’s named-agent FDA-approval claim and first-line augmentation ranking are not taken from the course material and await a human check. L17 states indications, including both mood stabilizers for recurrent major depression and antipsychotic adjuncts for treatment-resistant major depression."
+  },
+  {
+    "id": "npqb-ps-153",
+    "bank": "gradegain",
+    "module": "neuropsych",
+    "chapter": "ps-pharm",
+    "stem": "Conventional antipsychotics carry the risk of having extra-pyramidal side effects as they work in?",
+    "options": [
+      "Striatal dopaminergic 3 receptors",
+      "Striatal dopaminergic 2 receptors",
+      "Prefrontal dopaminergic 3 receptors",
+      "Mesolimbic dopaminergic 2 receptors"
+    ],
+    "answer": 1,
+    "explanation": "The bank prints an explanation box for this question. **Transcribed verbatim as printed:**\n\n> Conventional (typical) antipsychotics, such as haloperidol and chlorpromazine, block dopamine D2 receptors in various dopaminergic pathways in the brain. The extrapyramidal side effects (EPS) arise primarily due to dopamine D2 receptor blockade in the striatal (nigrostriatal) pathway, which plays a critical role in motor control.\n\nThe printed box attributes EPS to D2 blockade in the striatal (nigrostriatal) pathway. The prose in `L15) substance related disorder and psychiatry emergency` links nigrostriatal D2 receptor antagonism to rigidity and tremor in its NMS section. The additional EPS examples—dystonia, akathisia, parkinsonism and tardive dyskinesia—are not taken from the course material.\n\nAnalysis of incorrect options:\n\n| Option | Actual Concept | Why It Is Incorrect |\n| :--- | :--- | :--- |\n| **Striatal dopaminergic 3 receptors** | The draft describes striatal D3 receptors as distinct from the D2 target named in the printed box. Its receptor-distribution claim is not taken from the course material and awaits a human check. | L17 slide 18 describes typical antipsychotics as blocking dopamine receptors in all parts of the brain; this question’s printed box specifically attributes EPS to nigrostriatal D2 blockade. D3 is the different subtype printed in this distractor. |\n| **Prefrontal dopaminergic 3 receptors** | The draft asserts prefrontal D3 receptor expression and associates prefrontal D2 blockade with cognitive and negative symptoms. These receptor-specific claims are not taken from the course material and await a human check. | The box locates EPS in the striatal pathway. L17 slide 19 prints \"Mesocortical pathway dysfunction\" with \"Negative and cognitive symptoms\"; the draft’s further attribution specifically to prefrontal D2 blockade is not taken from the course material. |\n| **Mesolimbic dopaminergic 2 receptors** | L17 slide 19 prints \"Overactivity of the mesolimbic pathway\" with \"Positive symptoms\". The explanation that mesolimbic D2 blockade alleviates hallucinations and delusions is not taken from the course material. | Blockade here is the *desired effect* for treating psychosis, not the cause of EPS. EPS arise from blockade in a different pathway (nigrostriatal). |",
+    "objective": "The question tests the understanding that extrapyramidal side effects of conventional antipsychotics result from dopamine D2 receptor blockade in the striatal (nigrostriatal) pathway.",
+    "source": "neuropsychiatry & neurosurgery qb.pdf p.90 (answer p.91). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key.",
+    "note": "The draft’s striatal/prefrontal D3 distribution and prefrontal D2-blockade claims are not taken from the course material and remain unresolved for human review. Printed receptor numbers in the options and both D2 occurrences in the staged box are unchanged."
+  },
+
+{
+    id:'npqb-ps-154',
+    bank:'gradegain',
+    module:'neuropsych',
+    chapter:'ps-emerg',
+    stem:'A 22-year-old male presents with excessive sweating, agitation, disorientation, fever, and cogwheel rigidity. His heart rate is 120 bpm, and he recently had his risperidone dose increased. What is the most likely diagnosis?',
+    options:['Serotonin Syndrome','Anticholinergic Toxicity','Neuroleptic Malignant Syndrome (NMS)','Malignant Hyperthermia'],
+    answer:2,
+    explanation:'**C is correct — this is neuroleptic malignant syndrome (NMS).** In `L16) Emergency Psychiatry Critical Interventions`, NMS is defined as a "Life-threatening emergency from antipsychotic use.", with "Delirium, confusion, stupor.", "Lead-Pipe" muscle rigidity, and "High Fever & Dysautonomia." The recent risperidone dose increase is the classic trigger, because "Central D2 receptor antagonism is the fundamental foundation of pathogenesis."; fever, agitation, disorientation, tachycardia, sweating, and cogwheel rigidity all fit that picture.\n\n| Option | What it is |\n|---|---|\n| A — Serotonin Syndrome | Caused by "Overstimulation of Serotonin" (SSRIs/MAOIs, tramadol, fentanyl, dextromethorphan), with hyperacute onset, hyperreflexia, clonus, tremor, GI hyperactivity, and mydriasis; the serotonergic trigger profile differs from the recent risperidone increase in this stem. |\n| B — Anticholinergic Toxicity | An antimuscarinic toxidrome with fever, agitation, delirium, flushed skin, dry mouth, mydriasis, and urinary retention, but not cogwheel rigidity (not taken from the course material); the discriminating exposure is an anticholinergic drug (not taken from the course material), whereas this stem describes a neuroleptic dose increase. |\n| D — Malignant Hyperthermia | A hypermetabolic crisis triggered by volatile anesthetics or succinylcholine, not by antipsychotics (not taken from the course material); it is an operating-room emergency, whereas this patient\'s exposure is neuroleptic. |\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
+    objective:'NMS is a life-threatening antipsychotic-induced emergency characterized by mental status change, rigidity, fever, and autonomic instability, classically triggered by rapid antipsychotic dose escalation.',
+    source:'neuropsychiatry & neurosurgery qb.pdf p.92 (answer p.93). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key. No numeric risperidone dose is printed.'
+  },
+
+  {
+    id:'npqb-ps-155',
+    bank:'gradegain',
+    module:'neuropsych',
+    chapter:'ps-emerg',
+    stem:'What is the next step in managing a patient diagnosed with NMS?',
+    options:['Administer dantrolene immediately','Start IV benzodiazepines','Discontinue the antipsychotic and admit to ICU','Give bromocriptine'],
+    answer:2,
+    explanation:'The bank prints an explanation box for this question. **Transcribed verbatim as printed:**\n\n> First step is discontinuing the offending drug. Supportive care in the ICU, including hydration and temperature management, is crucial\n\n**C is correct — the first step is immediate discontinuation of the offending antipsychotic and ICU supportive care.** The box describes the keyed option rather than naming letter C: "discontinuing the offending drug." matches option C\'s "Discontinue the antipsychotic and admit to ICU", and the box\'s "Supportive care in the ICU" matches the ICU admission. In `L16) Emergency Psychiatry Critical Interventions`, the immediate life-saving interventions are "ICU Admission", "Absolute, immediate cessation of all offending neuroleptic agents.", and "Aggressive IV ﬂuids".\n\n| Option | What it is |\n|---|---|\n| A — Administer dantrolene immediately | Dantrolene sodium is listed as an "Antidotes" under "Targeted Medical Interventions" after the offending drug is stopped and supportive care is underway; it is not the first step. |\n| B — Start IV benzodiazepines | Benzodiazepines are presented as first-line for catatonia, not as the first step in NMS; they are not the immediate discontinuation-and-ICU intervention required here. |\n| D — Give bromocriptine | Bromocriptine (with amantadine) is another "Antidotes" used as targeted treatment after supportive care, not the first step. |',
+    objective:'The first step in managing neuroleptic malignant syndrome is immediate discontinuation of the offending antipsychotic and ICU supportive care.',
+    source:'neuropsychiatry & neurosurgery qb.pdf p.92 (answer p.93). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key.'
+  },
+
+  {
+    id:'npqb-ps-156',
+    bank:'gradegain',
+    module:'neuropsych',
+    chapter:'ps-emerg',
+    stem:'Which of the following is NOT a risk factor for suicide?',
+    options:['Male gender','Previous suicidal attempts','Sense of worthlessness','Well-controlled chronic illness'],
+    answer:3,
+    explanation:'**D is the printed answer — well-controlled chronic illness is the exception in this option set.** In `L16) Emergency Psychiatry Critical Interventions`, the high-risk profile lists "Male Gender, Age > 40, Single/Widowed/Divorced.", "Previous attempts and persistent preoccupations.", "Severe depression and high impulsivity.", and "Chronic physical illness and drug dependence." The deck also stresses that a "sense of worthlessness" was a missed warning sign in the case example. The deck specifically lists incurable/painful conditions, highly stigmatized conditions and advanced malignancies. Applying that contrast to the staged option explains the printed answer; the deck does not explicitly identify well-controlled illness as risk-free.\n\n| Option | What it is |\n|---|---|\n| A — Male gender | A genuine risk factor; the deck gives the "Gender Paradox" as "64% Male to 36% Female." for completed suicide. |\n| B — Previous suicidal attempts | A genuine risk factor; the high-risk profile explicitly lists "Previous attempts and persistent preoccupations." |\n| C — Sense of worthlessness | A genuine red flag; the case example says the team "missed her sense of worthlessness", and affective red flags include appearing depressed/hopeless. |\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
+    objective:'The printed exception is well-controlled chronic illness; the lecture lists male gender, previous attempts and worthlessness, and emphasizes incurable/painful, stigmatized or advanced physical illness.',
+    source:'neuropsychiatry & neurosurgery qb.pdf p.92 (answer p.93). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key.'
+  },
+
+  {
+    id:'npqb-ps-157',
+    bank:'gradegain',
+    module:'neuropsych',
+    chapter:'ps-devices',
+    stem:'Which condition is vagus nerve stimulation (VNS) approved to treat?',
+    options:['Anxiety disorders','Epilepsy and treatment-resistant depression','Schizophrenia','Bipolar disorder'],
+    answer:1,
+    explanation:'**B is correct — VNS is approved for epilepsy and treatment-resistant depression.** In `L18) Devices in Psychiatry`, the indications for VNS are "Treatment-Resistant Depression (TRD)" and "Refractory Epilepsy". The deck explains that VNS stimulates the left vagus nerve; because the vagus is 80% afferent, pulses reach the nucleus tractus solitarius and then project to the locus coeruleus and raphe nuclei, releasing norepinephrine and serotonin. It is "not an acute intervention.", requiring 3 to 12 months of continuous stimulation.\n\n| Option | What it is |\n|---|---|\n| A — Anxiety disorders | Not listed as a VNS indication in the deck; the course addresses anxiety through other modalities such as EEG neurofeedback and psychotherapies. |\n| C — Schizophrenia | Not a VNS indication; ECT is mentioned for severe psychosis/treatment-resistant schizophrenia, and DBS is listed for severe, intractable OCD and investigational TRD; schizophrenia is absent from the VNS indication list. |\n| D — Bipolar disorder | Not listed as a VNS indication; ECT is the device treatment mentioned for severe mania, and DBS is listed for severe, intractable OCD and investigational TRD; bipolar disorder is absent from the VNS indication list. |\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
+    objective:'Vagus nerve stimulation is indicated for treatment-resistant depression and refractory epilepsy.',
+    source:'neuropsychiatry & neurosurgery qb.pdf p.92 (answer p.93). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key.'
+  },
+
+  {
+    id:'npqb-ps-158',
+    bank:'gradegain',
+    module:'neuropsych',
+    chapter:'ps-emerg',
+    stem:'In a patient with psychotic depression and suicidal ideation who refuses food, what is the most urgent intervention?',
+    options:['Start antidepressants','Begin electroconvulsive therapy','Offer psychodynamic therapy','Monitor and reassess in a few days'],
+    answer:1,
+    explanation:'**B is correct — the most urgent intervention is to begin electroconvulsive therapy (ECT).** In `L16) Emergency Psychiatry Critical Interventions`, ECT is called "The premier, rapid-acting emergency tool to abort a severe suicidal crisis.", and the same deck says ECT is an "emergency mandate" if catatonia is life-threatening (starvation). A patient with psychotic depression, suicidal ideation, and refusal of food needs rapid biological intervention; `L18) Devices in Psychiatry` lists "Acute Suicidality" among ECT indications, when "immediate biological intervention is required to save a life."\n\n| Option | What it is |\n|---|---|\n| A — Start antidepressants | Antidepressants are effective but take weeks to work, so they are not the most urgent intervention in a patient who is suicidal and refusing food (not taken from the course material). |\n| C — Offer psychodynamic therapy | Psychodynamic therapy is an insight-oriented talk therapy that develops over sessions; it is not designed to manage an acute suicidal emergency (not taken from the course material). |\n| D — Monitor and reassess in a few days | Delaying treatment is unsafe with suicidal ideation and food refusal; the emergency deck emphasizes securing the environment and continuous monitoring. Its broader summary says "Stop the agent, secure the environment, and support physiology." The instruction to stop an agent applies when an offending drug is involved; this stem names no such drug. |\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
+    objective:'ECT is the most urgent intervention for severe psychotic depression with suicidal ideation and food refusal because it acts rapidly and can be life-saving.',
+    source:'neuropsychiatry & neurosurgery qb.pdf p.92 (answer p.93). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key.'
+  },
+
+  {
+    id:'npqb-ps-159',
+    bank:'gradegain',
+    module:'neuropsych',
+    chapter:'ps-devices',
+    stem:'What is the primary mechanism of action of transcranial magnetic stimulation (TMS)?',
+    options:['Inducing seizures to reset brain chemistry','Delivering electrical impulses through implanted electrodes','Using magnetic fields to stimulate nerve cells','Increasing cerebral blood flow'],
+    answer:2,
+    explanation:'**C is correct — TMS uses magnetic fields to stimulate nerve cells.** In `L18) Devices in Psychiatry`, TMS "uses an electromagnetic coil placed against the scalp to generate localized, high-intensity magnetic pulses", and "These magnetic fields pass through the skull entirely unimpeded, inducing a targeted focal electrical current in the underlying cortical tissue".\n\n| Option | What it is |\n|---|---|\n| A — Inducing seizures to reset brain chemistry | This describes ECT, which deliberately induces a generalized therapeutic seizure lasting 20–60 seconds under anesthesia; TMS is non-invasive, performed awake, and its intended mechanism is cortical stimulation rather than therapeutic seizure induction (not taken from the course material). |\n| B — Delivering electrical impulses through implanted electrodes | This describes DBS, which uses stereotactically implanted micro-electrodes connected to an implanted pulse generator; TMS requires no implant. |\n| D — Increasing cerebral blood flow | Blood-flow changes may accompany neuromodulation (not taken from the course material), but the deck\'s stated primary mechanism is electromagnetic induction of current in cortical neurons, not increasing cerebral blood flow. |\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
+    objective:'Transcranial magnetic stimulation works by applying magnetic fields through the skull to induce focal electrical currents in underlying cortical neurons.',
+    source:'neuropsychiatry & neurosurgery qb.pdf p.92 (answer p.93). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key.'
+  },
+
+{
+    id:'npqb-ps-160',
+    bank:'gradegain',
+    module:'neuropsych',
+    chapter:'ps-devices',
+    stem:'Which condition is deep brain stimulation (DBS) most commonly used for?',
+    options:['Generalized anxiety disorder','Parkinson’s disease','Schizophrenia','Major depressive disorder'],
+    answer:1,
+    explanation:'The bank prints an explanation box for this question. **Transcribed verbatim as printed:**\n\n> DBS is primarily used for movement disorders like Parkinson’s disease and essential tremors.\n\n**The boxed explanation names the condition in the keyed option.** The lecture `L18) Devices in Psychiatry` describes DBS as an invasive neuromodulatory procedure reserved for severe, treatment-refractory conditions, and lists "Parkinson’s disease and some movement disorders" under neurological indications. The deck also lists severe, intractable OCD as the primary psychiatric indication and treatment-resistant depression as investigational, but its most established and common use is for movement disorders like Parkinson\'s disease. The printed box supplies the movement-disorder emphasis used by this question.\n\n| Option | Analysis |\n| :--- | :--- |\n| **A. Generalized anxiety disorder** | Not an established or common indication for DBS (not taken from the course material); the lecture does not list it among DBS indications. Anxiety disorders are typically managed with psychotherapy (e.g., CBT, listed in `L19) Psychotherapy`) and pharmacotherapy (covered in `L17) Psychopharmacology`). |\n| **B. Parkinson’s disease** | **Correct.** The lecture lists Parkinson’s disease and describes an invasive procedure targeting subcortical nuclei to disrupt pathological neural circuits. The selection of advanced, medication-refractory Parkinson’s disease is additional teaching (not taken from the course material). |\n| **C. Schizophrenia** | DBS is not a standard or common treatment for schizophrenia (not taken from the course material); schizophrenia is absent from the lecture?s DBS indication list. Management relies on antipsychotics and psychosocial interventions, as outlined in `L11,12) Schizophrenia`. |\n| **D. Major depressive disorder** | While the lecture notes DBS is "Highly effective" for treatment-resistant depression, it is described as "investigational" and strictly reserved as an "ultimate resort", making it far less common than its use in Parkinson\'s disease. |',
+    objective:'The discriminator is that DBS is primarily indicated for MOVEMENT DISORDERS like Parkinson\'s disease, making it the correct choice, whereas generalized anxiety and schizophrenia are not established indications, and major depressive disorder is investigational and less common.',
+    source:'neuropsychiatry & neurosurgery qb.pdf p.92 (answer p.93). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key.'
+  },
+
+  {
+    id:'npqb-ps-161',
+    bank:'gradegain',
+    module:'neuropsych',
+    chapter:'ps-therapy',
+    stem:'What is the primary focus of CBT?',
+    options:['Exploring unconscious thoughts','Identifying and changing harmful thought patterns','Developing insight into past trauma','Strengthening coping mechanisms'],
+    answer:1,
+    explanation:'**The correct answer is identifying and changing harmful thought patterns.** The lecture `L19) Psychotherapy` states that Cognitive Behavioral Therapy (CBT) "helps people identify and change thinking and behavior patterns that are harmful or ineffective, replacing them with more accurate thoughts and functional behaviors." It is a present-focused, skills-based therapy.\n\n| Option | Analysis |\n| :--- | :--- |\n| **A. Exploring unconscious thoughts** | This describes **psychodynamic psychotherapy** or psychoanalysis, which the lecture defines as based on the idea that behavior is influenced by "unconscious" childhood experiences. |\n| **B. Identifying and changing harmful thought patterns** | **Correct.** This is the core mechanism of CBT as defined in the lecture, targeting current cognitive distortions and maladaptive behaviors. |\n| **C. Developing insight into past trauma** | This is a goal of **psychodynamic therapy** and some trauma-focused therapies (not taken from the course material), not the primary focus of standard CBT, which is oriented toward present problems and solutions. |\n| **D. Strengthening coping mechanisms** | This is a component of many therapies, including supportive therapy, which the lecture describes as helping "strengthen coping mechanisms". While CBT builds skills, its *primary* focus is the cognitive restructuring mentioned in option B. |\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
+    objective:'The primary focus of CBT is identifying and changing harmful thought patterns, which is the discriminator, while exploring unconscious thoughts and developing insight into past trauma are features of psychodynamic therapy, and strengthening coping mechanisms aligns with supportive therapy.',
+    source:'neuropsychiatry & neurosurgery qb.pdf p.92 (answer p.93). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key.'
+  },
+
+  {
+    id:'npqb-ps-162',
+    bank:'gradegain',
+    module:'neuropsych',
+    chapter:'ps-emerg',
+    stem:'What is the characteristic tetrad of symptoms in NMS?',
+    options:['Mental status change, rigidity, fever, and dysautonomia','Fever, rigidity, tremors, and hallucinations','Agitation, tachycardia, seizures, and mydriasis','Hypotension, confusion, hyperreflexia, and tremors'],
+    answer:0,
+    explanation:'**The correct answer is Mental status change, rigidity, fever, and dysautonomia.** The lecture `L16) Emergency Psychiatry Critical Interventions` defines Neuroleptic Malignant Syndrome (NMS) with a classic tetrad: "Mental Status: Delirium, confusion, stupor."; a motor description of lead-pipe muscle rigidity; and "Autonomic: High Fever & Dysautonomia." These three headings contain the four features named in option A.\n\n| Option | Analysis |\n| :--- | :--- |\n| **A. Mental status change, rigidity, fever, and dysautonomia** | **Correct.** This is the classic tetrad for NMS as per the emergency psychiatry lecture. |\n| **B. Fever, rigidity, tremors, and hallucinations** | Hallucinations and tremor can occur in NMS (not taken from the course material), but this list does not express the complete tetrad: it omits dysautonomia and substitutes individual symptoms for the broader mental-status change. The lecture emphasizes lead-pipe rigidity and bradykinesia. Parkinsonian motor findings and delirium help explain the overlapping distractor terms. |\n| **C. Agitation, tachycardia, seizures, and mydriasis** | This profile is more indicative of **serotonin syndrome** or an anticholinergic toxidrome (not taken from the course material). Mydriasis (dilated pupils) and hyperreflexia/clonus are hallmarks of serotonin toxicity, not NMS. |\n| **D. Hypotension, confusion, hyperreflexia, and tremors** | Hyperreflexia and tremors point toward **serotonin syndrome** or a withdrawal state (not taken from the course material). NMS is characterized by rigidity and autonomic instability (which can include labile blood pressure), not typically prominent hyperreflexia. |\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
+    objective:'For NMS, the characteristic tetrad includes mental status change, rigidity, fever, and DYSAUTONOMIA, whereas option B omits dysautonomia and adds hallucinations, and options C and D point to serotonin syndrome, making A the correct list.',
+    source:'neuropsychiatry & neurosurgery qb.pdf p.93 (answer p.93). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key.'
+  },
+
+  {
+    id:'npqb-ps-163',
+    bank:'gradegain',
+    module:'neuropsych',
+    chapter:'ps-therapy',
+    stem:'Which psychotherapy is best suited for individuals with borderline personality disorder?',
+    options:['Cognitive Behavioral Therapy','Dialectical Behavioral Therapy','Interpersonal Therapy','Psychoanalysis'],
+    answer:1,
+    explanation:'The bank prints an explanation box for this question. **Transcribed verbatim as printed:**\n\n> DBT is a specific type of CBT designed to help regulate emotions and manage behaviors, particularly for borderline personality disorder.\n\n**The boxed explanation names the therapy in the keyed option.** The lecture `L19) Psychotherapy` specifies that Dialectical Behavioral Therapy (DBT) "a specific type of CBT that helps regulate emotions. It is often used to treat people with chronic suicidal thoughts and people with borderline personality disorder, eating disorders and PTSD." The lecture and box both associate DBT with borderline personality disorder.\n\n| Option | Analysis |\n| :--- | :--- |\n| **A. Cognitive Behavioral Therapy** | CBT is a foundational therapy for many disorders, but DBT is its specialized offshoot developed *specifically* for the emotion dysregulation and behavioral patterns of borderline personality disorder (BPD; this historical specificity is not taken from the course material). |\n| **B. Dialectical Behavioral Therapy** | **Correct.** As stated in both the box and the lecture, DBT is the tailored treatment for BPD, focusing on emotion regulation; the additional skill domains are mindfulness, distress tolerance and interpersonal effectiveness (this skill-domain list is not taken from the course material). |\n| **C. Interpersonal Therapy** | The lecture defines IPT as a short-term therapy for underlying interpersonal issues (like grief, role conflicts) and states it is "most often used to treat depression", whereas the DBT section explicitly names borderline personality disorder. |\n| **D. Psychoanalysis** | An intensive psychodynamic therapy focused on unconscious processes; its long-term characterization is not taken from the course material. Its emphasis on insight into unconscious processes differs from DBT’s emphasis on emotion regulation and new behavioral skills. The claim that psychoanalysis is less suited to acute behavioral crises and skill deficits is additional teaching (not taken from the course material). |',
+    objective:'The discriminator is that Dialectical Behavioral Therapy is specifically tailored for borderline personality disorder, focusing on emotion regulation, while Cognitive Behavioral Therapy is general, Interpersonal Therapy targets depression, and Psychoanalysis emphasizes unconscious processes.',
+    source:'neuropsychiatry & neurosurgery qb.pdf p.93 (answer p.93). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key.'
+  },
+
+  {
+    id:'npqb-ps-164',
+    bank:'gradegain',
+    module:'neuropsych',
+    chapter:'ps-emerg',
+    stem:'A 79-year-old male with psychotic depression is mute and refuses food. What is the best treatment plan?',
+    options:['Antidepressants and anxiolytics','Hospitalization and ECT','Outpatient counseling','Psychodynamic therapy'],
+    answer:1,
+    explanation:'**The correct answer is Hospitalization and ECT.** This vignette describes a medical emergency: an elderly patient with severe psychotic depression exhibiting **mutism and food refusal**, which are red flags for **catatonia** and risk of imminent medical compromise (dehydration, malnutrition). The lecture `L16) Emergency Psychiatry Critical Interventions` identifies ECT as "The premier, rapid-acting emergency tool to abort a severe suicidal crisis." and notes it is an "emergency mandate" for severe, life-threatening catatonia or starvation. For catatonia, the lecture places hospitalization first in its stabilization sequence because the patient cannot care for themselves. Therefore, the immediate priorities are hospitalization for safety/nutritional support and ECT as the definitive treatment.\n\n| Option | Analysis |\n| :--- | :--- |\n| **A. Antidepressants and anxiolytics** | Antidepressants take time to act (not taken from the course material), and this option omits hospitalization. Benzodiazepines can provide rapid, temporary improvement in catatonia according to the lecture, but they do not remove the need for supportive care in this presentation. The deck links antipsychotics to NMS; their potential to cause or worsen catatonia is additional teaching (not taken from the course material). The printed plan addresses both the immediate danger and the severe depressive presentation. |\n| **B. Hospitalization and ECT** | **Correct.** Hospitalization ensures safety and supportive care (IV/NG feeding). ECT provides rapid, effective treatment for both the catatonic symptoms and the underlying psychotic depression. |\n| **C. Outpatient counseling** | This patient cannot care for themselves and is in medical danger; outpatient management is completely inappropriate and unsafe. |\n| **D. Psychodynamic therapy** | This is an insight-oriented therapy, described in `L19) Psychotherapy` in terms of self-awareness and changing old patterns. Its long-term therapeutic work does not address the immediate physical risk or replace acute catatonia treatment (not taken from the course material). |\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
+    objective:'The teaching point is that mutism and food refusal in psychotic depression indicate CATATONIA, necessitating HOSPITALIZATION and ECT as emergency interventions, while antidepressants are too slow, and outpatient or psychodynamic therapy fail to address the immediate crisis.',
+    source:'neuropsychiatry & neurosurgery qb.pdf p.93 (answer p.93). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key.'
+  },
+
+  {
+    id:'npqb-ps-165',
+    bank:'gradegain',
+    module:'neuropsych',
+    chapter:'ps-emerg',
+    stem:'All of the following are true regarding catatonia, EXCEPT:',
+    options:['The diagnosis is not made if the catatonia is better explained by a primary mental disorder','There are no pathognomonic laboratory findings in catatonia','ECT is appropriate for catatonia','Benzodiazepines have no rule in treatment'],
+    answer:3,
+    explanation:'**The correct answer (the FALSE statement) is that benzodiazepines have no role in treatment.** This is an EXCEPT question, so we are looking for the option that is *not* true. The lecture `L16) Emergency Psychiatry Critical Interventions` explicitly states that **Benzodiazepines are First-Line** for catatonia, providing "Rapid, temporary improvement in symptoms" and drastically improving communication. Therefore, the staged statement "Benzodiazepines have no rule in treatment" is the printed exception.\n\n| Option | Analysis |\n| :--- | :--- |\n| **A. The diagnosis is not made if the catatonia is better explained by a primary mental disorder** | **The deck gives this exclusion under medical catatonia.** In its section on secondary versus primary catatonia, the lecture defines medical catatonia as a direct physiological consequence of an underlying medical illness, then prints "Exclusion Criteria" for symptoms better explained by a primary mental disorder or occurring exclusively during acute delirium. That is the context of the cited exclusion; the staged option and printed key are retained. |\n| **B. There are no pathognomonic laboratory findings in catatonia** | **TRUE.** The lecture states under "Diagnostic Toolkit": "There are no pathognomonic laboratory markers. Labs are used to identify metabolic or organic triggers." |\n| **C. ECT is appropriate for catatonia** | **TRUE.** The lecture indicates ECT is an "emergency mandate" for life-threatening catatonia or malignant catatonia. |\n| **D. Benzodiazepines have no rule in treatment** | **FALSE.** This contradicts the lecture, which lists benzodiazepines as a first-line pharmacological treatment for catatonia. Therefore, this is the correct answer to the EXCEPT question. |\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
+    objective:'This EXCEPT question hinges on the fact that benzodiazepines are FIRST-LINE for catatonia, so stating they have NO ROLE is false, while the other options are true: diagnosis excludes primary mental disorder explanations, no pathognomonic labs exist, and ECT is appropriate.',
+    source:'neuropsychiatry & neurosurgery qb.pdf p.93 (answer p.93). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key.'
   }
+
 ];

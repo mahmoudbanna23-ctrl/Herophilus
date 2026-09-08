@@ -55,17 +55,16 @@ all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **Th
   ≡ House ch.10 = 27% of that chapter; **nothing folds mid-stream**, and **`pedhd-card-6..10` must NOT
   be folded** (5 identical stems, 5 different figures). Log: `resume-peds.md` tail. Pruned detail ->
   archive, `## Pruned from MEMORY.md - 2026-09-05`.
-- ⏳ **NEURO — 268 live** (nr 133 · ps 135); topics 18–21 spliced 2026-09-02, **untouched since.**
-  **Next: topic 22, Q137 on PDF 94 / book p.89** — ⚠️ banner says "Psychopharmacology", contents says
-  "Pharmacology"; psychiatry ends **Q165** in topic 23. ⚠️ **The 142 renders died with a scratchpad,
-  only 2 pages OCR'd** — re-render ~45 s, the OCR is the rate-limited part. ⚠️ **Bank identity is
-  GRADE GAIN** (cover: "QS BANK + GRADE GAIN EDITION") — not House, not endpoint; **ONE book page per
-  sheet, A4 portrait, NOT 2-up** — do not carry the peds/ophtho House arithmetic across.
-  ⚠️⚠️ **THE PAGE OFFSET IS NOT GLOBAL: neuropsychiatry PDF = book + 5, neurosurgery PDF = book + 7.
-  In scope = PDF 6–98 ONLY; SKIP PDF 99–140, neurosurgery, out of scope.** Two numbering runs:
-  neurology topics 01–14, then psychiatry 15–23 **restarts at Q1** and ends Q165; ⚠️ the contents
-  page's counts sum to 157 against a true 165 — **trust no printed count.** Full 23-topic map:
-  `progress\resume-neuro.md`, last block.
+- ⏳ **NEURO — 297 live** (nr 133 · ps 164). **✅ GRADE GAIN PSYCHIATRY CLOSED 2026-09-08** — t22+t23
+  spliced, Q1–Q165 whole, every question page 65–93 cited, 0 folds, markers 194->214 as predicted.
+  **Next: NEUROLOGY topic 08 "Epilepsy", Q141, book pp.31–36 = PDF 36–41**, then 09–14 to book p.64.
+  ⚠️ **Psychiatry keys print BARE LETTERS — the letter/name cross-check is UNAVAILABLE, recorded NOT
+  PERFORMED, never passed**; a second seat re-read all 29 at 400 dpi instead. ⚠️ **Renders die with
+  the scratchpad** — re-render ~45 s, OCR is the rate-limited part. ⚠️ **Bank is GRADE GAIN, ONE book
+  page per sheet, A4, NOT 2-up** — do not carry the peds/ophtho House arithmetic across.
+  ⚠️⚠️ **OFFSET IS NOT GLOBAL: neuropsychiatry PDF = book + 5, neurosurgery PDF = book + 7. In scope
+  = PDF 6–98 ONLY; SKIP 99–140.** ⚠️ **Trust no printed count** — the contents undercounted ten
+  topics running and has never once run high. Full map + method: `progress\resume-neuro.md`.
 - **Five-option cap settled; OSCE skipped by user ruling 2026-08-31** — both **PRUNED 2026-09-08 ->**
   archive, `## Pruned from MEMORY.md - 2026-09-08`. Still binding, just no longer re-read every turn.
 
@@ -126,12 +125,12 @@ all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **Th
 - **⚠️ Bank sampling and provenance — PRUNED 2026-09-08 ->** archive, same dated heading. Verify every printed count; the end-of-ENT "outside knowledge" list is half wrong; 67 entries have no provenance (`ledger.md` §11).
 
 ## Validation state
-- **Corpus 5,922** (re-measured from disk 2026-09-06, **re-measure before quoting; it drifts by the
+- **Corpus 5,951** (re-measured from disk 2026-09-08, **re-measure before quoting; it drifts by the
   commit**. Every array loaded and indexed for sparse holes,
   `for i… if(!(i in A))`, **zero holes, every file `eval`s clean**): ENT **2,322** (2,240 q + 82 c) ·
-  **Ophtho 1,598** · Neuro **275** (268 q + 7 c) · Peds House **393** · Peds endpoint **1,334**
+  **Ophtho 1,598** · Neuro **304** (297 q + 7 c) · Peds House **393** · Peds endpoint **1,334**
   (p1 704 + p2 630, both CLOSED). ⚠️ **The case arrays are `C_ENT`/`C_NEURO`/`C_OPHTHO`/`C_PEDS`, not
-  `CASES_*`** (ophtho and peds hold 0). **5,922 is the CORPUS and no longer what the app reports:** ⚠️ `LOCKED_MODULES=['ophtho','neuropsych']` + `THEORY_LOCKED` hold 1,873 q (1,598 ophtho + 275 neuro) and 72 theory chapters out at the aggregator, so **a healthy boot reports 4,049 / 81** — a check wanting 5,922/153 is STALE, not a loss.
+  `CASES_*`** (ophtho and peds hold 0). **5,951 is the CORPUS and no longer what the app reports:** ⚠️ `LOCKED_MODULES=['ophtho','neuropsych']` + `THEORY_LOCKED` hold 1,902 q (1,598 ophtho + 304 neuro) and 72 theory chapters out at the aggregator, so **a healthy boot reports 4,049 / 81** — a check wanting 5,951/153 is STALE, not a loss.
   ✅ **BOOTED `file://` 2026-09-07, 0 errors**: `QUESTIONS 4049 · THEORY 81 · MODULES 4 · 153 chapter rows, 80 with questions`; per module ent 30 · ophtho 36 · neuropsych 36 · pediatrics 51. Keys `ent`, `ophtho`, `pediatrics`, `neuropsych`; options 2–10 coexist (2:10 · 3:67 · 4:3836 · 5:1365 · 8:1 · 9:1 · 10:6).
   ⚠️ **`grep -c "^  { id:"` UNDERCOUNTS `questions.ophtho.js` BY ~440 — load the array.**
 - **✅ THE BOOT CHECK IS NOW A REPO TOOL: `node tools\boot-check\boot-check.js`** (2026-09-02) —

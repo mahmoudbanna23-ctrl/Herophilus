@@ -1244,3 +1244,126 @@ printed 10 to the 6 as 10 to the 9 on this project — a plausible wrong number,
 Those are verified against the page image and raised if wrong.
 
 Genuine clinical divergences (book versus lecture) are still recorded, with the answer never moved.
+
+## 2026-09-08 — psychiatry topics 22 and 23 spliced. GRADE GAIN PSYCHIATRY IS COMPLETE.
+
+`app/data/questions.neuro.js` went **268 -> 297**, measured from disk after the write: 0 sparse
+holes, 297 unique ids, `npqb-nr` 133 unchanged, `npqb-ps` **135 -> 164** (+29). The app boots from
+`file://` with **0 console errors** (`node tools/boot-check/boot-check.js`); `QUESTIONS` still reads
+4049 because `neuropsych` sits in `LOCKED_MODULES` and contributes nothing at the aggregator, which
+is the healthy number, not a loss.
+
+**Psychiatry now runs Q1 to Q165 with nothing missing.** Every book page from 65 to 93 that carries
+questions is cited in a `source` field; the uncited pages in that range — 67, 71, 75, 78, 81, 85, 88
+and 91 — are the answer-only sheets. Topics 15 to 23 are all spliced.
+
+### What was transcribed
+
+| topic | questions | book pp. | contents claimed | measured | boxed |
+|---|---|---|---|---|---|
+| 22 Substance-related Disorders & Psychopharmacology | Q137–Q153 | 89–90 (answers 91) | 16 | **17** | 6 |
+| 23 Emergency, Devices & Psychotherapy | Q154–Q165 | 92–93 (answers 93) | 11 | **12** | 3 |
+
+The contents page undercounted again — the **ninth and tenth consecutive undercounts**, and it has
+still never once run high. Both question sequences and both answer sequences were walked
+independently: 137…153 and 154…165, none doubled, none skipped.
+
+**The offset held on every numbered sheet** (PDF 94 = book 89 through PDF 98 = book 93). PDF 99 is
+unnumbered so it cannot be checked against the offset; it is the neurosurgery contents page and is
+out of scope.
+
+**The banner disagreement is unresolved and is recorded, not fixed:** the question page's banner
+reads "Substance-related Disorders & Psychopharmacology", the contents page reads
+"…& Pharmacology".
+
+⚠️ **The letter/name cross-check was UNAVAILABLE for all 29 keys and was NOT PERFORMED.** This bank
+prints its psychiatry answers as bare parenthesised letters with no option name beside them, so
+there is nothing to cross-check against. That sentence is carried in every one of the 29 `source`
+fields. It is recorded as not performed — never as passed.
+
+Instead, **all 29 keys were independently re-read by a second seat.** omniroute `auto/vision`
+(served `gemini-3.7-flash`) read the answer columns re-rendered at 400 dpi and matched the staging
+letter for letter on all 29. It also read folios **91** and **93** independently, and returned
+**COUNT=0** answer lines from PDF 98's left column — corroborating the claim that that column
+carries questions rather than answers. That is a structural cross-check, not merely a letter check.
+
+### The six-stage sweep — why the zero is a zero
+
+29 incoming × 268 shipped = **7,772 pairs** compared on normalised stem, loose stem, option menu and
+printed option order. Nothing reached the 0.72 threshold. The ranked near-miss list was then
+hand-read down to dice 0.45, which surfaced **five pairs, and every one is a shared frame rather
+than a fold** — the discriminating token is named in each case:
+
+| dice | incoming | shipped | discriminator |
+|---|---|---|---|
+| 0.667 | `npqb-ps-165` | `npqb-ps-73` | catatonia vs conversion disorder |
+| 0.667 | `npqb-ps-165` | `npqb-ps-116` | catatonia vs premorbid phase |
+| 0.500 | `npqb-ps-139` | `npqb-nr-90` | Korsakoff vs spinal hemiplegia |
+| 0.500 | `npqb-ps-139` | `npqb-nr-110` | Korsakoff vs capsular hemiplegia |
+| 0.500 | `npqb-ps-159` | `npqb-nr-130` | TMS vs triptans |
+
+All five are different option menus as well as different subjects. **Intra-draft pairs at 0.45: 0.**
+**Folds this batch: 0.** No id in Q137–Q165 collided with anything shipped.
+
+### The marker arithmetic was predicted before the splice and confirmed after
+
+9 of the 29 entries print an `Explanation:` box (t22 Q140, 142, 143, 147, 151, 153; t23 Q155, 160,
+163), so 20 carry the authored marker. The corpus held **194** markers before the splice and holds
+**214** after — exactly the predicted +20, with the printed boxes carried verbatim as blockquotes
+and taking no marker.
+
+### ⚠️ A silent encoding defect, found by measurement and repaired
+
+`gg-ps-t22.draft-A.js` came back from its fix pass with **every non-ASCII byte in the file replaced
+by a literal `?`** — zero non-ASCII characters in the whole file, against 8 in the sibling t23 file
+and 28 in the shipped t21 draft. The damage reached the authored marker itself, which read
+`Written for this bank ? neuropsychiatry` instead of carrying the em dash.
+
+**This is the shape of defect that a keyword grep declares healthy.** The marker count came back
+right, because the count matched on the leading words and never looked at the dash. What caught it
+was counting non-ASCII bytes per file and comparing against a shipped file — a cheap check worth
+keeping, because a file that has lost every accented character, dash and curly quote looks perfectly
+normal in a diff.
+
+The cause was the write path, not the content: the seat's own log holds correct `—` and `’`
+throughout, and the file was written through a PowerShell `-Command` step that flattened it. The
+repair was done by shape (`6?12` -> `6–12`, `cocaine?s` -> `cocaine's`, ` ? ` -> em dash) and then
+**every stem and option was restored verbatim from the staging array rather than trusted**, which is
+also what proves the repair: all 9 stems, all 9 option lists and all 9 answer indices then matched
+staging exactly. 21 characters were repaired; the 6 remaining `?` are genuine question marks ending
+genuine stems.
+
+**`gg-ps-t23.draft-B.js` was missing the `objective` field on all six entries** — and the raw draft
+never had it either, so nothing was dropped in the fix pass; it was never written. The six were
+authored to the shipped register and merged in.
+
+### Instrument faults found this block
+
+- **`tools/qb-pipeline/validate.js` reports `corpus total (loaded, not grepped): 0` and then prints
+  `clean`.** It found no array in `app/data/questions.neuro.js`, which loads fine under `vm` for
+  every other tool here. A validator that reports zero and passes is worse than one that fails.
+  Not fixed — `tools/` is outside this chat's write allowlist.
+- `tools/qb-pipeline/sweep.js` decides draft-vs-staging shape with `/\.draft\.js$/`, so a
+  `.draft-A.js` file takes the staging loader. It works by luck, because the staging loader is the
+  generic one, but the test does not mean what it says.
+- `splice-safe.js` needs a **bare** comma-separated entry run, not a `var NAME = [...]` file. The
+  four halves were stripped to a bare run first, entry text copied verbatim, never re-serialised.
+- The **heredoc backslash-collapse bit again**, exactly as `MEMORY.md` documents: a `.replace(/\\/g,
+  ...)` written into a quoted heredoc arrived as `.replace(/\/g, ...)` and died on an unmatched
+  paren. The file was not damaged because the script failed before writing. Written with the `Write`
+  tool instead, building the backslash as `String.fromCharCode(92)`.
+
+### Where this leaves the bank
+
+**Neurology is spliced through topic 07** — Q1 to Q140 live as 133 entries, the 7 missing numbers
+being earlier folds (24, 27, 28, 46, 49, 52, 61). `gg-nr-t06.array.js` and `gg-nr-t07.array.js` are
+both staged and both spliced.
+
+**Next is neurology topic 08, "Epilepsy", book pp.31–36 = PDF 36–41, opening at Q141.** The contents
+page claims 36 questions for it, which is the largest claim in the neurology run — and on this
+bank's record that number is a floor, not a count. Book p.30 is topic 07's answer page and is
+already read.
+
+Remaining after that: topics 09 Coma, 10 Movement Disorders, 11 Demyelinating Diseases,
+12 Neuromuscular Disorders, 13 CNS Infections, 14 Back & Lower Limb Pain — book pp.37–64,
+PDF 42–69. Then the endpoint PDF, which does not start until the user says so, and theory.
