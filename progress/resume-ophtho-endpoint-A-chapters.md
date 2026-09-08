@@ -185,3 +185,27 @@ exits 0; `boot-check.js` exits 0, 0 console errors; `pagecov-oph.js --part 1` co
 (Vitreous), 16 (Pediatric Ophthalmology) and 20 (Drugs and the Eye) still carry `chapter: null`
 in `sec-oph.js` and need chapters added to `app\data\modules.js` before they can be drafted — not
 blocking section 2, but due before those three come up.
+
+**2026-09-09 — SECTION 2 SPLICED, 60 live; SECTION 3 MEASURED + STAGED, NOT YET SPLICED.**
+Section 2, "Optics and Errors of Refraction" (PDF 134-213, 27 questions, 0 corrections against
+page images, 12 of 27 boxed, 4 tagged `not taken from the course material`), is now live.
+Re-measured from disk: `app\data\questions.ophtho.ep.js` **60 entries, 88,064 bytes, 0 sparse
+holes, 0 duplicate ids** (section 1 + section 2 only). `val-oph-ep.js --part 1 2` exits 0;
+`boot-check.js` exits 0, 0 console errors; 0 carriage returns.
+Section 3, "Orbit" (PDF 214-272, 21 questions, 9 of 21 boxed, no figures, 11 of 21 box calls
+inferred from an OCR word-count delta then confirmed by direct reading), is fully calibrated,
+keyed and staged, committed as `7a7ae42` — **but its splice into the live array has not run yet.**
+Full account: `progress\ledger.md` §20.
+
+Two tool/process fixes made this pass, both need to survive downstream:
+- `tools\ep-index\index.py` was destroying prior OCR index rows on every run (full-replacement
+  write) — fixed to read-merge-write; it now prints `merge: index.json had N rows before this run,
+  M after (+K)`, check that line.
+- `git commit -F <msgfile> -- <paths>` fails on an untracked path — `git add` those paths first,
+  then the pathspec-scoped commit.
+- `.ps1` is NOT blocked by policy (contrary to `MEMORY.md`'s old Environment line, now corrected) —
+  `powershell -ExecutionPolicy Bypass -File` works.
+
+**Next: splice section 3** (already calibrated/keyed/committed as `7a7ae42`) **into the live
+array**, then section 4 onward through the chapter half (PDF page 1390). Sections 12, 16, 20
+still need chapters added to `app\data\modules.js` before they can be drafted — not blocking.

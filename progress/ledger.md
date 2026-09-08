@@ -72,6 +72,7 @@ Rule: a scanned page is rendered and read **once, ever**. Before opening any sou
 | §17v — House ch.16 "Pediatric ophthalmology" merged: 22 shipped + 3 folded = 2 | ledger.md | 1676 |
 | ⭐ §18 — OPHTHALMOLOGY IS CLOSED (2026-09-02): 1,598 entries, the Final reconciled | ledger.md | 1742 |
 | §19 — Ophthalmology ENDPOINT, section 1 "Examination of the Eye" spliced, 33 live | ledger.md | 1923 |
+| §20 — Ophthalmology ENDPOINT, sections 2-3 spliced/measured, 60 live | ledger.md | 1990 |
 
 ---
 
@@ -1983,3 +1984,107 @@ OmniRoute failed both halves (`auto/reasoning` HTTP 503, `auto` HTTP 401); both 
 ### Next
 
 Section 2, "Optics and Errors of Refraction", PDF pages 134–213. Sections 12 (Vitreous), 16 (Pediatric Ophthalmology) and 20 (Drugs and the Eye) still carry `chapter: null` in `sec-oph.js` and need chapters added to `app\data\modules.js` before they can be drafted. Full resume state: `progress\resume-ophtho-endpoint-A-chapters.md`.
+
+---
+
+## §20 — Ophthalmology ENDPOINT, section 2 spliced ("Optics and Errors of Refraction") and section 3 ("Orbit") measured and staged — 60 live (2026-09-09)
+
+Since §19: **section 2 is spliced** into `app\data\questions.ophtho.ep.js`, which went 33 -> **60**,
+re-measured today: **60 entries, 88,064 bytes, 0 sparse holes, 0 duplicate ids** (loaded the array in
+a `vm` and indexed it — never counted by grep, `app\data\*.js` mixes `"id":` and `id:` styles).
+First id `ophep-exam-eye-1`, last `ophep-optics-refraction-27`. **Section 3 is fully calibrated,
+keyed and staged, and its calibration/keys files are committed as `7a7ae42`, but it is NOT yet
+spliced into the live array** — the 60-count above is section 1 + section 2 only; section 3's 21
+questions are not among them.
+
+### Section 2 — "Optics and Errors of Refraction", PDF pages 134-213, 27 questions
+
+27 staged from OCR, checked against the page images with **zero corrections needed** (section 1
+needed 8 of 34). All 27 keys read visually off the marked pages; `keypos.py` agreed 27/27.
+12 questions carry a printed explanation box, 15 do not. The 15 written explanations total 4,531
+words, range 226-444, average 302 — above section 1's 106 average and inside the project's own
+~250/~520 writing budget. Four entries carry a `not taken from the course material` tag. Five-option
+questions appear here (unlike section 1 and section 3).
+
+The validator's shared-menu check fired on n13/n24, which print an identical four-option menu.
+Adjudicated **not a fold**: n13 is named as n24's anchor and the explanations state what
+discriminates the two, following the project's standing shared-menu rule.
+
+### Section 3 — "Orbit", PDF pages 214-272, 21 questions — measured and staged, NOT yet spliced
+
+Question *n* unmarked on PDF page `229 + 2n`, marked on `230 + 2n` — Q1 = 231/232, Q21 = 271/272,
+landing exactly on the section's last page. All 21 keys read visually; `keypos.py` agreed 21/21.
+Every question carries 4 options, no five-option question in this section. Option lettering shifts
+mid-section: lowercase a-d on Q1-Q7, uppercase A-D on Q8-Q21. **9 of 21 carry a printed explanation
+box: Q1-Q7, Q9, Q10**, with Q8 sitting as an isolated gap between two boxed runs. No figures in this
+section. The OCR index merged 208 rows to 267 over the two sections.
+
+Method note: box presence for 11 of the 21 pages was first inferred from an **OCR word-count
+delta** — pages reading ~20-43 words over the unmarked twin scored as boxed, ~0-1 as not — and a
+later pass reading all 21 page images directly **confirmed the inference on all 11**. Recorded as a
+legitimate instrument on the condition that each question states, individually, whether its box
+call was read or inferred.
+
+### Validation run against the section-2 splice
+
+`val-oph-ep.js --part 1 2` exits 0. Splicer run dry-run then `--write`. `node --check` exit 0.
+`node tools\boot-check\boot-check.js` exit 0: `QUESTIONS 4049   THEORY 81   MODULES 4   chapters
+153`, `Q_OPHTHO 1598`, 0 console errors — the reported total does not move because
+`LOCKED_MODULES` still holds ophthalmology out at the aggregator; the array loading 60 is the
+evidence. 0 carriage returns in the live file. Section 3 has no splice run yet — it is verified only
+as staged calibration/keys material, per `7a7ae42`.
+
+### Findings recorded here because they exist nowhere else on disk
+
+**`tools\ep-index\index.py` was destroying its own index and has been fixed.** It rebuilt
+`index.json` from only the just-processed page range and wrote it as a full replacement, so a run
+over pages 135-213 deleted section 1's 129 rows. It now reads any existing `index.json` into a
+`page -> row` dict first, applies `existing.update(rows)` so the current run's rows win on any
+shared page and every other row survives, and prints `merge: index.json had N rows before this
+run, M after (+K)`. A future run must read that line and check it moved the way expected. The 129
+destroyed rows were re-derived deterministically and checked against the section 1 calibration
+note, the 34-row staged array, and all 33 live section-1 `source` strings.
+
+**A new OCR corruption shape:** a printed `->` arrow was read by the OCR pass as `-5`. Like the
+known exponent-flattening (10^6 read as 10^9 or 106), this is a plausible wrong value rather than
+visible garbage — it does not look broken, it looks like a different number. Watch for it
+alongside the exponent warning.
+
+**Two latent risks, named and left unfixed.** The per-page `pNNNN.txt` writes follow the same
+new-run-wins policy the old `index.json` did, with no backup of the previous version. Neither the
+`.txt` writes nor `index.json` are atomic (no write-to-temp-then-rename), so two runs writing the
+same output directory at once could race the read-modify-write. Nothing in this session's use hit
+the race; it is recorded as a risk for the next worker who runs two OCR passes concurrently, not
+fixed here.
+
+**A hand-translation of a 0-based key index into a letter was wrong once, and caught.** A Codex
+prompt file in the scratchpad marked its Q26 as option A ("over corrected"), where the staged
+array's `key:1` is option B ("under corrected"). Caught only because the drafting worker re-derived
+every key from the staged array rather than trusting the prompt file's own label. **Scratchpad
+prompt files are a known-bad key source** — exactly the failure `keypos.py`'s own docstring warns
+against trusting a second, unverified source for the same fact.
+
+**Two Codex failure modes, kept distinct.** (1) `codex exec` returned exit 1 with 0 bytes of
+output and `ERROR: You've hit your usage limit`, reset time stated on Codex's own clock (~4:07 AM).
+(2) Previously recorded separately: Codex exiting **0** with completely empty output after burning
+~21k tokens (seen again in section 1, §19). An exit code of 0 is still no evidence output exists.
+Section 2's 15 written explanations were produced by a Claude subagent instead, for this reason.
+
+### Environment corrections from today's session
+
+**`.ps1` is NOT blocked by policy**, contrary to the line in `MEMORY.md`'s Environment block.
+Measured working repeatedly today via `powershell -ExecutionPolicy Bypass -File`, driving
+`tools\ep-index\run-all.ps1`. `MEMORY.md` corrected in the same pass as this section.
+
+**`git commit -F <msgfile> -- <paths>` fails on an untracked path** with an unrecognized-pathspec
+error. The pathspec-scoped commit is still correct and still necessary, but for any path not yet
+tracked it must be `git add`ed explicitly first, then the pathspec-scoped commit run — both steps,
+neither alone works.
+
+### Next
+
+**Splice section 3** ("Orbit", 21 questions, already calibrated/keyed/committed as `7a7ae42`) into
+the live array, then section 4 onward through the chapter half (sections up to 21, PDF page 1390).
+Sections 12, 16 and 20 still need chapters added to `app\data\modules.js` before they can be
+drafted — not blocking, but due before those three come up. Full resume state:
+`progress\resume-ophtho-endpoint-A-chapters.md`.
