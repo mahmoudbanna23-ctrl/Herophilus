@@ -117,7 +117,7 @@ all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **Th
   explained; shared tables in ONE entry, siblings point at an **existing** id; `source` is a citation,
   never a second explanation. **Scope is never cut.** If time runs short, **say so loudly — scaling down is theirs.**
 - **A defective key is noted, never disputed** (2026-08-11) — never take a key dispute to the user. **A lecture-numbering gap = the professor withheld it** (2026-08-14) — fill and tag, never chase.
-- **SHIPPED 2026-09-08.** Owner closed both gates (publisher copyright, ENT Q153's child). **LIVE at https://herophilus.netlify.app — PERMANENT ORIGIN**, localStorage is per-origin so a move orphans all progress. All 4 console steps done; ⚠️ the rules live since 25 Jul had **no `profiles` block, no default-deny** — sync was silently refused for every profile until replaced. Firebase console demands 2SV. `progress\RESUME-launch.md`.
+- **SHIPPED 2026-09-08; HOST MOVED THE SAME DAY. LIVE at https://herophilus.pages.dev** — **PERMANENT ORIGIN**, localStorage is per-origin. ⚠️ **Netlify's IPs are blocked at Telecom Egypt's edge (measured), so `herophilus.netlify.app` is DEAD on TE Data**, not a fallback. Both authorised in Firebase; rules live since 25 Jul had **no `profiles` block, no default-deny** — sync silently refused until replaced. 2SV. `progress\RESUME-launch.md`.
 
 ## The method — what transcription work must never skip
 - **Read every answered page; trust no count** — not printed numbering, not the contents page, not the map (ranges 21/21 right, counts 17/21 wrong, always upward). **Render one page past the last.**

@@ -28,23 +28,32 @@ We are resuming the **Herophilus launch**. Read this whole message before acting
 
 ## Owner console steps — ALL FOUR DONE 2026-09-08
 
-**The site is live at https://herophilus.netlify.app** — `dist` deployed and renamed by the owner
-on 2026-09-08. That is the permanent origin; it must not be renamed or moved again, because
-`localStorage` is per-origin.
+**The site is live at https://herophilus.pages.dev** — Cloudflare Pages, 202 files / 28 MB,
+deployed 2026-09-08. That is the permanent origin; it must not be renamed or moved again, because
+`localStorage` is per-origin. It replaces herophilus.netlify.app the same day — see "The host moved"
+below. Nobody had the Netlify link and no progress had been saved, which is the only window in
+which a move is free.
 
 From `LAUNCH-owner-steps.md`. None can be scripted; Claude may not enter credentials.
 
-1. ~~Drag `dist` onto app.netlify.com~~ — **DONE 2026-09-08**, live at herophilus.netlify.app.
-   A rebuild is re-dragged onto the SAME site, never a new one.
+1. ~~Drag `dist` onto app.netlify.com~~ — **SUPERSEDED 2026-09-08.** `dist` now goes to
+   **Cloudflare Pages**: dash.cloudflare.com → Workers & Pages → the `herophilus` project → drag the
+   `dist` FOLDER (not a zip) onto the dropzone. The wrapper folder is stripped, so `index.html`
+   lands at the root. A rebuild is re-dropped onto the SAME project, never a new one.
+   ⚠️ Claude cannot do this step through the browser tool — its file-upload cap is 10 MB and the
+   build is 28 MB. Either the owner drops the folder, or Wrangler is used (`wrangler login` is an
+   OAuth grant covering far more than Pages, so it is the owner's call, and it is not set up).
 2. ~~Publish `progress\firestore.rules`~~ — **DONE 2026-09-08.** The rules that had been live since
    **25 July 2026** granted `users/{uid}` only: **no `profiles` subcollection block and no
    default-deny.** Per-profile sync was therefore being refused in production, silently, for every
    profile on every account. The file was published whole and re-read after a full page reload:
    2,808 characters, 61 lines, the `/users/{uid}/profiles/{profileId}` block present and the
    `if false` backstop present.
-3. ~~Add **herophilus.netlify.app** to Authorized domains~~ — **DONE 2026-09-08**, bare, and now
-   listed as `Custom` beside `localhost`, the two `*.firebaseapp.com`/`*.web.app` defaults and the
-   older `steep-feather-4c9b.mahmoud-banna23.workers.dev`.
+3. ~~Add the live domain to Authorized domains~~ — **DONE 2026-09-08, TWICE.** Both
+   `herophilus.netlify.app` and, after the move, `herophilus.pages.dev` are listed as `Custom`
+   beside `localhost`, the two `*.firebaseapp.com`/`*.web.app` defaults and the older
+   `steep-feather-4c9b.mahmoud-banna23.workers.dev`. The Netlify entry was left in place — it costs
+   nothing and removing it would break nothing but could not be undone without the console.
 4. ~~Publish the OAuth consent screen out of "Testing"~~ — **ALREADY DONE**, nothing changed.
    Google Auth Platform → Audience reads publishing status **In production**, user type
    **External**, 0 users against a 100-user cap.
@@ -73,16 +82,37 @@ longer a blocker.
    an identifiable child — *"a question to settle before any publication, alongside the copyright
    question already open on the transcribed content."*
 
-**HOST DECIDED 2026-09-08: Netlify**, by the owner, and permanent — `localStorage` is per-origin,
-so a later move orphans every student saved progress. This supersedes the "Netlify is ruled out by
-measurement" note in `redesign-direction-2026-09-07.md`, and 2026-09-08 explains that note: the
-first deploy, `dapper-blancmange-ba9474.netlify.app` (renamed the same day to the permanent
-**https://herophilus.netlify.app**), would not load over the owner home wifi but
-loaded immediately over mobile data on the same phone. The block is the owner network, almost
-certainly DNS, NOT Netlify edge — the site is reachable for everyone else. Suggested fix on the
-owner side is a public resolver (1.1.1.1 or 8.8.8.8). ⚠️ It follows that the owner cannot test
-their own live site on home wifi, so a report of "the site is down" from that network is not
-evidence the site is down; check from another connection before believing it.
+## The host moved to Cloudflare Pages, 2026-09-08 — and why
+
+**HOST: Cloudflare Pages, https://herophilus.pages.dev.** The owner chose the move on 2026-09-08
+after the diagnosis below. Netlify had been chosen earlier the same day and was live for a few
+hours; that decision is superseded, not still open.
+
+⚠️ **The earlier note in this file — "the block is the owner network, almost certainly DNS" — was
+wrong, and it is corrected here rather than left standing.** Measured four ways from the owner line:
+
+1. **DNS is innocent.** System resolver, 1.1.1.1, 8.8.8.8 and encrypted Google DoH all return the
+   same two Netlify IPs. A public resolver fixes nothing.
+2. **TCP is the failure.** Ports 80 **and** 443 to both of those IPs fail, while netlify.com,
+   app.netlify.com and Google all succeed on the same connection in the same minute.
+3. **It is not the home router.** Traceroute reaches hop 6, `212.133.4.230` — Telecom Egypt's
+   international transit — before dying. ⚠️ The silence past hop 6 is not itself proof: the control
+   trace to a host that works fine on 443 died at the same place. The decisive evidence is the TCP
+   result, not the ICMP.
+4. **It is Netlify's whole app-serving edge, not one site.** `netlify.app` resolves to the same two
+   blocked IPs. Cloudflare — `cloudflare.com`, `pages.dev`, and the owner's own
+   `steep-feather-4c9b.mahmoud-banna23.workers.dev` — is fully reachable.
+
+**Conclusion: Netlify's serving IPs are blocked upstream, at Telecom Egypt's international edge.**
+A block there most likely hits every TE Data subscriber, which would include a large share of
+classmates in Alexandria — but that is inference from one vantage point, not measurement, and it
+cannot be proved from this machine.
+
+**Verified after the move, from the same home wifi:** TCP 443 to herophilus.pages.dev succeeds;
+`GET /` returns 200 and 443,033 bytes; `/data/questions.ent.js` and `/assets/ambient-library.jpg`
+both return 200, so the dropped `dist` wrapper was stripped and paths resolve at the root.
+
+⚠️ **herophilus.netlify.app is dead to the owner's network and must not be treated as a fallback.**
 
 With both gates closed and the host chosen, nothing stands between the build and the four console
 steps. A green build still is not permission on its own — the permission is the ruling above.
