@@ -26,13 +26,19 @@ We are resuming the **Herophilus launch**. Read this whole message before acting
   `node tools/boot-check/boot-check.js --dir=dist` → 4,049 questions, 81 theory, 0 console errors,
   no locked ids leaked.
 
-## Blocked on the owner — four console steps, none confirmed done
+## Owner console steps — step 0 DONE 2026-09-08, three left
+
+**The site is live at https://herophilus.netlify.app** — `dist` deployed and renamed by the owner
+on 2026-09-08. That is the permanent origin; it must not be renamed or moved again, because
+`localStorage` is per-origin.
 
 From `LAUNCH-owner-steps.md`. None can be scripted; Claude may not enter credentials.
 
-1. Drag `D:\claude os\Medical school\Herophilus\dist` onto app.netlify.com. ⚠️ **Not the `app` folder.**
+1. ~~Drag `dist` onto app.netlify.com~~ — **DONE 2026-09-08**, live at herophilus.netlify.app.
+   A rebuild is re-dragged onto the SAME site, never a new one.
 2. Publish `progress\firestore.rules` in the Firebase console — status unknown from the repo.
-3. Add the Netlify domain to Firebase **Authorized domains**.
+3. Add **herophilus.netlify.app** to Firebase **Authorized domains** — bare domain, no scheme,
+   no trailing slash.
 4. Publish the OAuth consent screen out of "Testing" at console.cloud.google.com.
 
 **Ask which of the four are done before planning anything downstream.** The repo cannot see a console.
@@ -54,7 +60,8 @@ longer a blocker.
 **HOST DECIDED 2026-09-08: Netlify**, by the owner, and permanent — `localStorage` is per-origin,
 so a later move orphans every student saved progress. This supersedes the "Netlify is ruled out by
 measurement" note in `redesign-direction-2026-09-07.md`, and 2026-09-08 explains that note: the
-first deploy, `dapper-blancmange-ba9474.netlify.app`, would not load over the owner home wifi but
+first deploy, `dapper-blancmange-ba9474.netlify.app` (renamed the same day to the permanent
+**https://herophilus.netlify.app**), would not load over the owner home wifi but
 loaded immediately over mobile data on the same phone. The block is the owner network, almost
 certainly DNS, NOT Netlify edge — the site is reachable for everyone else. Suggested fix on the
 owner side is a public resolver (1.1.1.1 or 8.8.8.8). ⚠️ It follows that the owner cannot test

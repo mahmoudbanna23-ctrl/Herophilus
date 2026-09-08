@@ -120,7 +120,7 @@ all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **Th
   explained; shared tables in ONE entry, siblings point at an **existing** id; `source` is a citation,
   never a second explanation. **Scope is never cut.** If time runs short, **say so loudly — scaling down is theirs.**
 - **A defective key is noted, never disputed** (2026-08-11) — never take a key dispute to the user. **A lecture-numbering gap = the professor withheld it** (2026-08-14) — fill and tag, never chase.
-- **PUBLISHING CLEARED 2026-09-08 (owner):** both gates closed by owner ruling — publisher copyright AND ENT Q153’s identifiable child. **Host = Netlify, permanent** (localStorage is per-origin; a later move orphans all progress). Left: 4 owner console steps, `progress\RESUME-launch.md`.
+- **PUBLISHING CLEARED 2026-09-08 (owner):** both gates closed by owner ruling — publisher copyright AND ENT Q153’s identifiable child. **LIVE 2026-09-08 at https://herophilus.netlify.app — PERMANENT ORIGIN** (localStorage is per-origin; a later move orphans all progress). Left: 4 owner console steps, `progress\RESUME-launch.md`.
 
 ## The method — what transcription work must never skip
 - **Read every answered page; trust no count** — not printed numbering, not the contents page, not the map (ranges 21/21 right, counts 17/21 wrong, always upward). **Render one page past the last.**
