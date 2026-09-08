@@ -1,0 +1,49 @@
+Actions of the Extraocular Muscles.
+Muscle
+Lateral rectus
+Medial rectus
+Superior rectus
+Inferior rectus
+Superior 0
+Inferior oblique
+primary Action
+Abduction
+Adduction
+Elevation (in abduction)
+Depression (in
+abduction)
+Depression (in
+adduction)
+Elevation (in adduction)
+Secondary Action
+Intorsion, adduction
+Extorsion, adduction
+Intorsion, abduction
+Extorsion, abduction
+Nerve
+25
+--- 150dpi ---
+Actions of the Extraocular Muscles.
+Muscle
+Lateral rectus
+Medial rectus
+Superior rectus
+Inferior rectus
+Superior oblique
+Inferior oblique
+Primary Action
+Abduction
+Adduction
+Elevation (in abduction)
+Depression (in
+abduction)
+Depression (in
+adduction)
+Elevation (in adduction)
+Secondary Action
+Intorsion, adduction
+Extorsion, adduction
+Intorsion, abduction
+Extorsion, abduction
+Nerve
+25

@@ -11,6 +11,12 @@ r"""Merge the two OCR passes and the page metadata into the committed search ind
                    recovered every option and every stem. grep either half, trust neither.
     index.json     per page: kind, answered (yellow), yellow count, words in each pass,
                    option letters seen in each pass, and FLAGS (below). Sorted by page.
+                   ACCUMULATES across runs: rows already in index.json for pages outside
+                   this run's range are kept untouched; a page inside this run's range
+                   overwrites whatever row (if any) was already there. A run never drops
+                   rows for pages it was not asked to process -- fixed 2026-09-09 after a
+                   run over pages 135-213 overwrote the whole file and destroyed the 129
+                   rows section 1 had already earned.
 
     kind:  "answered"  yellow highlight present AND at least one option letter read --
                        the answered printing of a question; one per question.
@@ -113,8 +119,19 @@ for pg in pages:
     if r['options']['native'] != r['options']['hires']:
         r['flags'].append('options-differ')
 
-with open(out / 'index.json', 'w', encoding='utf-8', newline='\n') as fh:
-    fh.write(json.dumps([rows[p] for p in pages], indent=0))
+# Merge onto whatever index.json already exists in <outdir>, so a run over one page range
+# never destroys the rows an earlier run wrote for a different range. A page in both the old
+# file and this run's range takes THIS run's row (that is the point of re-running a range).
+existing = {}
+idx_path = out / 'index.json'
+if idx_path.exists():
+    for r in json.loads(idx_path.read_text(encoding='utf-8')):
+        existing[r['page']] = r
+before = len(existing)
+existing.update(rows)
+all_pages = sorted(existing.keys())
+with open(idx_path, 'w', encoding='utf-8', newline='\n') as fh:
+    fh.write(json.dumps([existing[p] for p in all_pages], indent=0))
 flagged = {}
 for r in rows.values():
     for f in r['flags']:
@@ -124,3 +141,5 @@ for r in rows.values():
     kinds[r['kind']] = kinds.get(r['kind'], 0) + 1
 print(f'index: {len(pages)} pages, kinds {kinds} (yellow >= {YELLOW_MIN}), '
       f'flags {flagged or "none"} -> {out}')
+print(f'merge: index.json had {before} rows before this run, {len(all_pages)} after '
+      f'({len(all_pages) - before:+d}) -- pages outside {pages[0]}-{pages[-1]} are untouched carryover')

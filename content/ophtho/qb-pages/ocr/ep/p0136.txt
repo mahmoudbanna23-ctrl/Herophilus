@@ -1,0 +1,17 @@
+Lens Power (Dioptre)
+1
+f (in meters)
+e.g. focal length 20 cm 0.2 m P = +5 D
+•Convex (+) converging for hyperopia
+•Concave (—) —Y diverging for myopia
+•Cylindrical lens for astigmatism
+136
+--- 150dpi ---
+Lens Power (Dioptre)
+1
+f (in meters)
+e.g. focal length 20 cm 0.2 m P = +5 D
+•Convex (+) -5 converging for hyperopia
+•Concave (—) diverging for myopia
+•Cylindrical lens -5 for astigmatism
+136

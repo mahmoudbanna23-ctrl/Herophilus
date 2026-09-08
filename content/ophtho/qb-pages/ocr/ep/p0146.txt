@@ -1,0 +1,43 @@
+Mnemonic
+Condition
+Myopia
+Hyp
+Astigmatism
+Aniso m
+Focus
+In front of retina
+Behind retina
+Two focal lines
+Unequal eyes
+Lens
+Concave (-)
+Convex (+)
+Cylindrical
+Individual correction
+Surgery
+LASIK, PRK, Phakic IOL
+LASIK, Lenticular
+LASIK, ICR
+146
+--- 150dpi ---
+Mnemonic
+Condition
+Myopia
+Hypermetropia
+Astigmatism
+Anisometropia
+Focus
+In front of retina
+Behind retina
+Two focal lines
+Unequal eyes
+Lens
+Concave (—)
+Convex (+)
+Cylindrical
+Individual correction
+Surgery
+LASIK, PRK, Phakic IOL
+LASIK, Lenticular
+LASIK, ICR
+146
