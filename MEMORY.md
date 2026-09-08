@@ -66,11 +66,8 @@ all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **Th
   neurology topics 01–14, then psychiatry 15–23 **restarts at Q1** and ends Q165; ⚠️ the contents
   page's counts sum to 157 against a true 165 — **trust no printed count.** Full 23-topic map:
   `progress\resume-neuro.md`, last block.
-- **✅ Five-option cap FIXED, letters stay POSITIONAL — settled, do not re-open.** Both bullets
-  (plus "validate a dead agent's file from disk"; debt: 12 `nr-intro`/`nr-exam` tags, `npqb-nr-14`
-  first) **PRUNED 2026-09-03 ->** archive, `## Pruned from MEMORY.md - 2026-09-03`.
-- **USER RULING 2026-08-31: skip ALL OSCE content** — *"If I needed it later I'll tell you."* Deferred,
-  not cut: skip it, say so and why, carry on. Not a scope cut needing approval.
+- **Five-option cap settled; OSCE skipped by user ruling 2026-08-31** — both **PRUNED 2026-09-08 ->**
+  archive, `## Pruned from MEMORY.md - 2026-09-08`. Still binding, just no longer re-read every turn.
 
 ## The watch — oversight every ~12 h (set up 2026-09-02)
 - **A fresh chat runs `progress\WATCH.md` top to bottom every ~12 h, reports changed / stale / at
@@ -120,13 +117,13 @@ all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **Th
   explained; shared tables in ONE entry, siblings point at an **existing** id; `source` is a citation,
   never a second explanation. **Scope is never cut.** If time runs short, **say so loudly — scaling down is theirs.**
 - **A defective key is noted, never disputed** (2026-08-11) — never take a key dispute to the user. **A lecture-numbering gap = the professor withheld it** (2026-08-14) — fill and tag, never chase.
-- **PUBLISHING CLEARED 2026-09-08 (owner):** both gates closed by owner ruling — publisher copyright AND ENT Q153’s identifiable child. **LIVE 2026-09-08 at https://herophilus.netlify.app — PERMANENT ORIGIN** (localStorage is per-origin; a later move orphans all progress). Left: 4 owner console steps, `progress\RESUME-launch.md`.
+- **SHIPPED 2026-09-08.** Owner closed both gates (publisher copyright, ENT Q153's child). **LIVE at https://herophilus.netlify.app — PERMANENT ORIGIN**, localStorage is per-origin so a move orphans all progress. All 4 console steps done; ⚠️ the rules live since 25 Jul had **no `profiles` block, no default-deny** — sync was silently refused for every profile until replaced. Firebase console demands 2SV. `progress\RESUME-launch.md`.
 
 ## The method — what transcription work must never skip
 - **Read every answered page; trust no count** — not printed numbering, not the contents page, not the map (ranges 21/21 right, counts 17/21 wrong, always upward). **Render one page past the last.**
 - **Run the full six-stage duplicate sweep (A–F) on every topic**; folds ran 0–20 with no trend and **the rankings are the instrument**. **Say why a zero is a zero, and say how it was measured.** Grep drafted blocks for a folded id **before** splicing; re-run the dead-id check after every fold. ⚠️ Marker deltas, mis-keyed banks and the sweep's defect shapes 1–6: `progress\memory-archive.md`.
 - **MOVED 2026-09-01 ->** "read the slide before declaring a gap" (paid 17 times; 29 not 34 ophtho decks). ⚠️ **Read it before any absence claim.**
-- **⚠️ Bank sampling and provenance: `progress\memory-archive.md`** — a contents page may print per-section counts (**verify, never trust**); the end-of-ENT "outside knowledge" list is **half wrong**, re-grep item by item; 67 entries record no provenance, roster in `ledger.md` §11.
+- **⚠️ Bank sampling and provenance — PRUNED 2026-09-08 ->** archive, same dated heading. Verify every printed count; the end-of-ENT "outside knowledge" list is half wrong; 67 entries have no provenance (`ledger.md` §11).
 
 ## Validation state
 - **Corpus 5,922** (re-measured from disk 2026-09-06, **re-measure before quoting; it drifts by the
@@ -151,7 +148,7 @@ all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **Th
   chapter, `vB.js`, `wc.js`, `d17.js`, `dx.py`).
 - **MOVED 2026-09-01 ->** theory chapter counts * the 2026-08-30 boot * scratchpad harness roster. ⚠️⚠️ **A NEW
   SCRATCHPAD STARTS EMPTY — LIST it, never guess a harness name.** ⚠️⚠️ **`Array.filter` SKIPS SPARSE HOLES — index it.**
-- **⚠️ THE THEORY READER IS AN A4 PAGE (2026-08-19, three user complaints) AND MUST NOT BE MADE WHITE.** 210:297 by `aspect-ratio`; **margins set in JS from the PAGE's width** (percentages resolve against the containing block). Mechanics in the archive. **⚠️⚠️ `overflow:hidden` MAKES A BLOCK MONOLITHIC, AND MONOLITHIC MEANS CLIPPED, NOT BROKEN** — `.th-table` silently lost over-tall tables' last rows. Fixed screen-side; print never affected.
+- **⚠️ THE THEORY READER IS AN A4 PAGE AND MUST NOT BE MADE WHITE** (2026-08-19, three complaints); `overflow:hidden` clips over-tall tables rather than breaking them. **Full bullet PRUNED 2026-09-08 ->** archive, same dated heading.
 - **⚠️ A draft header is a claim, not a measurement — re-count from disk after the final edit.** Wrong nine times; **the sum check alone no longer suffices.** Page divisors: resume block + plan §4.
 
 ## Environment — what changes what you do first

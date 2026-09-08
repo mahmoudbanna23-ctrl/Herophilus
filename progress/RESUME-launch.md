@@ -26,7 +26,7 @@ We are resuming the **Herophilus launch**. Read this whole message before acting
   `node tools/boot-check/boot-check.js --dir=dist` → 4,049 questions, 81 theory, 0 console errors,
   no locked ids leaked.
 
-## Owner console steps — steps 1 and 4 DONE 2026-09-08, two left
+## Owner console steps — ALL FOUR DONE 2026-09-08
 
 **The site is live at https://herophilus.netlify.app** — `dist` deployed and renamed by the owner
 on 2026-09-08. That is the permanent origin; it must not be renamed or moved again, because
@@ -36,22 +36,28 @@ From `LAUNCH-owner-steps.md`. None can be scripted; Claude may not enter credent
 
 1. ~~Drag `dist` onto app.netlify.com~~ — **DONE 2026-09-08**, live at herophilus.netlify.app.
    A rebuild is re-dragged onto the SAME site, never a new one.
-2. Publish `progress\firestore.rules` in the Firebase console — **STILL OPEN.**
-3. Add **herophilus.netlify.app** to Firebase **Authorized domains** — bare domain, no scheme,
-   no trailing slash. **STILL OPEN.**
-4. ~~Publish the OAuth consent screen out of "Testing"~~ — **ALREADY DONE.** Checked in the Google
-   Cloud console on 2026-09-08: Google Auth Platform → Audience reads publishing status **In
-   production**, user type **External**, 0 users against a 100-user cap. Nothing was changed.
+2. ~~Publish `progress\firestore.rules`~~ — **DONE 2026-09-08.** The rules that had been live since
+   **25 July 2026** granted `users/{uid}` only: **no `profiles` subcollection block and no
+   default-deny.** Per-profile sync was therefore being refused in production, silently, for every
+   profile on every account. The file was published whole and re-read after a full page reload:
+   2,808 characters, 61 lines, the `/users/{uid}/profiles/{profileId}` block present and the
+   `if false` backstop present.
+3. ~~Add **herophilus.netlify.app** to Authorized domains~~ — **DONE 2026-09-08**, bare, and now
+   listed as `Custom` beside `localhost`, the two `*.firebaseapp.com`/`*.web.app` defaults and the
+   older `steep-feather-4c9b.mahmoud-banna23.workers.dev`.
+4. ~~Publish the OAuth consent screen out of "Testing"~~ — **ALREADY DONE**, nothing changed.
+   Google Auth Platform → Audience reads publishing status **In production**, user type
+   **External**, 0 users against a 100-user cap.
 
-⚠️ **THE FIREBASE CONSOLE IS GATED BEHIND MFA, 2026-09-08.** Every
-`console.firebase.google.com` address redirects to `/mfa` — *"Multi-factor authentication (MFA),
-also called two-step verification (2SV), is now required for users. You must enable MFA to gain
-access to Firebase."* Steps 2 and 3 are unreachable until the owner turns on 2SV for the Google
-account. That is an account security setting and it needs a phone: it is the owner's to do, not
-Claude's, and no amount of retrying moves it. The Google **Cloud** console is not affected — only
-Firebase.
+⚠️ **THE FIREBASE CONSOLE IS BEHIND MANDATORY 2SV.** On 2026-09-08 every
+`console.firebase.google.com` address redirected to `/mfa` — *"Multi-factor authentication (MFA),
+also called two-step verification (2SV), is now required for users."* The owner enabled it and the
+console opened. Anyone hitting that wall again enables 2SV on the Google account; it needs a phone,
+so it is the owner's to do. The Google **Cloud** console is not affected — only Firebase.
 
-**Ask which of the four are done before planning anything downstream.** The repo cannot see a console.
+**Note for whoever touches sync next:** the live `users/{uid}` documents still carry a `state`
+field directly on the account document, the pre-per-profile shape. The published rules allow both
+shapes, so nothing is broken, but the old documents have not been migrated.
 
 ## ✅ The two gates — BOTH CLOSED BY THE OWNER, 2026-09-08
 

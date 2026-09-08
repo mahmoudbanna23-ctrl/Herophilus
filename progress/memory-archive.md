@@ -1038,3 +1038,44 @@ already carries in full, and the five-option block is a settled decision.
   `python tools\count-options.py`): earlier block, `## Pruned from MEMORY.md - 2026-09-02`.
 - **Validate a dead agent’s file from disk before believing it died** (ch20-drugs, found intact
   2026-08-31). ⚠️ Debt: 12 `nr-intro`/`nr-exam` tags the book can replace (`npqb-nr-14` first).
+
+
+## Pruned from MEMORY.md - 2026-09-05
+
+Peds endpoint part 1 closed on this date. The live bullet in MEMORY.md was rewritten to the closed
+state and the running-stream detail below was moved here verbatim. Nothing was deleted.
+
+- ⏳ **PEDS ENDPOINT part 1 RUNNING; PART 2 LAUNCHED 2026-09-04 as Chat C** — own file `questions.peds.ep2.js` (`Q_PEDS_EP2`, `pedep2-`, `bank:'endpoint'`); subagent-vision, NOT Codex; HARD GATE build `ocr\ep2\` + agree the section map before staging; resume `progress\resume-peds-endpoint-part2.md`. part2.pdf = 1993 pp / 272 MB.
+  **MEASURED 2026-09-05, arrays loaded, 0 holes: p1 `questions.peds.ep.js` 541** (11 sections: inf 94 ·
+  gp 73 · nut 73 · gi 64 · emg 58 · neo 52 · mf1 50 · mf2 46 · per 21 · alg 8 · acc 2) · **p2 325** (hem 87 · car 79 ·
+  res 65 · gen 38 · nd 28 · dp 28). Splice history through s4: `ledger.md`.
+  ⚠️ **A FOLD MAKES THIS FILE SHRINK LEGITIMATELY** — a drop with no fold commit behind it is the
+  finding. A section that outgrows one file splits `part-A/B` →
+  `tools\bank-harness\merge-parts-ep.js` → `.draft-*` → `.array.js`, and the splicer refuses unless
+  its validator gate exits 0. ⚠️ **Never run `val-pd.js`/`splice-pd.js` on endpoint files — they write Chat B's live
+  file**; the `-pd-ep` pair is the endpoint's, and the splice refuses unless its validator exits 0.
+  **Search index: `content\peds\qb-pages\ocr\ep1\`** (p0001–p1991 .txt, two OCR reads each +
+  `index.json`; tool `tools\ep-index\run-all.ps1`, README there; PyMuPDF + free Windows.Media.Ocr,
+  ~5 min whole book, $0). Part 1 = **855 questions** (`kind == "answered"`; yellow alone over-counts),
+  body pp.5–1156 = 476, model exams 379 expected reprints. ⚠️ OCR drops whole lines, a different one
+  per resolution — use both halves. Scratchpad `ep1-index\` (~1 GB images) NOT deleted
+  (permission denied); user deletes by hand. ⚠️⚠️ **ENDPOINT AND HOUSE OVERLAP, AND IT IS
+  CHAPTER-SHAPED, NOT SCATTERED** — 5 collisions in the first 150 entries, four of them endpoint
+  Nutrition ≡ House ch.10, ids one-for-one = 27% of that chapter, fuller printing UNCHECKED. Naive
+  scale puts the end-of-stream sweep near **25–30 — ONE data point, re-measure, never quote as a
+  count.** **Nothing folds mid-stream; the two files stay separate while both chats write.**
+  ⚠️ **`pedhd-card-6..10` must NOT be folded** (5 identical stems, 5 different figures/keys; the
+  normaliser cannot see a figure). Full collision log: `resume-peds.md` tail.
+
+## Pruned from MEMORY.md - 2026-09-08
+
+Two settled rulings, moved verbatim to make room for the launch close-out. Neither
+is dead: both still bind, they just no longer need to be re-read every turn.
+
+- **OK Five-option cap FIXED, letters stay POSITIONAL - settled, do not re-open.** Both bullets
+  (plus "validate a dead agent's file from disk"; debt: 12 `nr-intro`/`nr-exam` tags, `npqb-nr-14`
+  first) **PRUNED 2026-09-03 ->** archive, `## Pruned from MEMORY.md - 2026-09-03`.
+- **USER RULING 2026-08-31: skip ALL OSCE content** - *"If I needed it later I'll tell you."* Deferred,
+  not cut: skip it, say so and why, carry on. Not a scope cut needing approval.
+- **⚠️ Bank sampling and provenance: `progress\memory-archive.md`** — a contents page may print per-section counts (**verify, never trust**); the end-of-ENT "outside knowledge" list is **half wrong**, re-grep item by item; 67 entries record no provenance, roster in `ledger.md` §11.
+- **⚠️ THE THEORY READER IS AN A4 PAGE (2026-08-19, three user complaints) AND MUST NOT BE MADE WHITE.** 210:297 by `aspect-ratio`; **margins set in JS from the PAGE's width** (percentages resolve against the containing block). Mechanics in the archive. **⚠️⚠️ `overflow:hidden` MAKES A BLOCK MONOLITHIC, AND MONOLITHIC MEANS CLIPPED, NOT BROKEN** — `.th-table` silently lost over-tall tables' last rows. Fixed screen-side; print never affected.
