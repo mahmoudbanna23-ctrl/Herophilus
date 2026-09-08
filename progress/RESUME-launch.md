@@ -26,7 +26,7 @@ We are resuming the **Herophilus launch**. Read this whole message before acting
   `node tools/boot-check/boot-check.js --dir=dist` → 4,049 questions, 81 theory, 0 console errors,
   no locked ids leaked.
 
-## Owner console steps — step 0 DONE 2026-09-08, three left
+## Owner console steps — steps 1 and 4 DONE 2026-09-08, two left
 
 **The site is live at https://herophilus.netlify.app** — `dist` deployed and renamed by the owner
 on 2026-09-08. That is the permanent origin; it must not be renamed or moved again, because
@@ -36,10 +36,20 @@ From `LAUNCH-owner-steps.md`. None can be scripted; Claude may not enter credent
 
 1. ~~Drag `dist` onto app.netlify.com~~ — **DONE 2026-09-08**, live at herophilus.netlify.app.
    A rebuild is re-dragged onto the SAME site, never a new one.
-2. Publish `progress\firestore.rules` in the Firebase console — status unknown from the repo.
+2. Publish `progress\firestore.rules` in the Firebase console — **STILL OPEN.**
 3. Add **herophilus.netlify.app** to Firebase **Authorized domains** — bare domain, no scheme,
-   no trailing slash.
-4. Publish the OAuth consent screen out of "Testing" at console.cloud.google.com.
+   no trailing slash. **STILL OPEN.**
+4. ~~Publish the OAuth consent screen out of "Testing"~~ — **ALREADY DONE.** Checked in the Google
+   Cloud console on 2026-09-08: Google Auth Platform → Audience reads publishing status **In
+   production**, user type **External**, 0 users against a 100-user cap. Nothing was changed.
+
+⚠️ **THE FIREBASE CONSOLE IS GATED BEHIND MFA, 2026-09-08.** Every
+`console.firebase.google.com` address redirects to `/mfa` — *"Multi-factor authentication (MFA),
+also called two-step verification (2SV), is now required for users. You must enable MFA to gain
+access to Firebase."* Steps 2 and 3 are unreachable until the owner turns on 2SV for the Google
+account. That is an account security setting and it needs a phone: it is the owner's to do, not
+Claude's, and no amount of retrying moves it. The Google **Cloud** console is not affected — only
+Firebase.
 
 **Ask which of the four are done before planning anything downstream.** The repo cannot see a console.
 
