@@ -193,3 +193,7 @@ all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **Th
 
 **⚠️ THE ONE THING THAT MUST SURVIVE ANY SUMMARY: the Clepsydra is the user's own artwork —
 do not redraw her, do not draw anything onto her.**
+
+## Connections to other projects
+
+- **Herophilus Book** and the **Pediatrics OSCE pack** read from `Semester 8\` here, **read-only** — neither has git, neither commits into this repo. Nothing else in the workspace depends on this project.
