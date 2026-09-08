@@ -119,3 +119,54 @@ prose "questions". An adjudication is not a citation; record each one.
 When you stop, append to this file's `## Changed since` block (create it) — never edit the body
 above. State: sections done, page ranges covered, entry count from disk (not from a draft header),
 folds logged, and anything you left open.
+
+## Changed since
+
+**2026-09-08 — GATE 0 CLOSED.** This was the prerequisite blocking both ophthalmology endpoint
+chats, and it is now done. No questions have been transcribed yet — the bank is still at zero.
+
+Built:
+
+- `tools\bank-harness\sec-oph.js` — section tables. `SEC_P1` holds sections 1–21 (the chapter
+  half, PDF pages 6–1390), `SEC_P2` holds sections 22–28 (the exam half, PDF pages 1391–2442). 28
+  sections total, each entry carrying `prefix`, `file`, `svar`, `draft`, `chapter`, `pages`, `ans`.
+  Structurally checked: all 28 present, page ranges match the section map exactly, field order
+  identical throughout, no illegal chapter id.
+- `tools\bank-harness\val-oph-ep.js` — validator, `--part 1|2`.
+- `tools\bank-harness\splice-oph-ep.js` — splicer, `--part 1|2`, refuses unless the validator
+  exits 0 (a real `spawnSync` exit-status check, run once per draft half).
+- `tools\bank-harness\pagecov-oph.js` — page-coverage closing test, `--part 1|2`.
+- `app\data\questions.ophtho.ep.js` — stub, `var Q_OPHTHO_EP = []`.
+- `app\data\questions.ophtho.ep2.js` — stub, `var Q_OPHTHO_EP2 = []`.
+- `app\index.html` — both `<script>` tags added immediately after the existing
+  `data\questions.ophtho.js` tag. This file is now finished for both chats; neither should touch
+  it again.
+
+Verified: `node tools\boot-check\boot-check.js` exit 0, 0 console errors. `node --check` exit 0 on
+each of the three tools. An independent Claude subagent (not the seat that wrote the code) ran a
+ten-item adversarial check and returned 10/10 PASS with no defects.
+
+Two decisions were taken rather than asked, and both need to survive into the drafting work:
+
+- Figure basenames are `q-oph-ep-<page>` for **both** parts. Peds needed distinct basenames only
+  because its part 2 restarts page numbering at 1; this book is one continuous range whose halves
+  own disjoint pages, so a page number is globally unique and one scheme is correct.
+- `pagecov-oph.js --part 2` refuses by default to score any page above PDF 2150, because the
+  printed page number becomes the PDF number plus one at an unpinned flip somewhere in PDF
+  2151–2170. An explicit `--flip <pdfpage>` opt-out takes the pinned flip page, restricted to the
+  2151–2170 window. Part 1 is unaffected: offset is zero across its whole range.
+
+Still open, to be decided at drafting time, not now: sections 12 (Vitreous), 16 (Pediatric
+Ophthalmology) and 20 (Drugs and the Eye) have `chapter: null` in `sec-oph.js` because no matching
+ophthalmology chapter id exists in `app\data\modules.js` yet. They will need chapters added there.
+The seven exam sections (22–28) are `chapter: null` too, but for a different reason — they draw
+from every chapter.
+
+Also open: `content\ophtho\qb-pages\ocr\ep\index.json` does not exist yet. `pagecov-oph.js` needs
+it and fails honestly on its absence. No OCR has been run.
+
+Protection against writing a pediatrics file is structural, not conventional: the live target is
+derived from a frozen `TARGETS` object keyed by a regex-validated `--part`, and there is no
+`--file`/`--target`/`--out` flag and no environment-variable read anywhere in the three tools.
+
+**OPH-B is now unblocked.** The next work on this side is section 1 (PDF pages 6–133).
