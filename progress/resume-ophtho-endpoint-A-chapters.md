@@ -276,3 +276,82 @@ calibrate 16/18/20 (and whatever lane A did not finish); close out ledger + MEMO
 - §6 image check Q1–30 + Q8 figure p.459: two Sonnet drafters (Q1–15, Q16–30), report-only, to
   scratchpad `cl-s06-imagecheck-*-report.md`; results to be folded into `oph-ep-s06-keys.md` by
   a builder before staging §6 is trusted.
+
+**2026-09-15, third block (chat OPH-A) — gateway down, Codex solo, then Codex ALSO hit its own limit.**
+- Root-caused and fixed: rung-4 `codex exec` without `--add-dir "<scratchpad>"` gets its
+  report-file write rejected (`patch rejected: writing outside of the project`) — sandbox denies
+  writes outside the git repo without that flag. Fix confirmed working on fresh individual
+  dispatches (not on a script edited mid-run — see next point).
+- Editing `rung4-calib-lane.sh` while its loop was still executing did NOT take effect for the
+  live run (s16-s21 all still failed report-writes on the old command) and the interpreter later
+  died: `unexpected EOF while looking for matching` `"'`. Lesson: never edit a script file while
+  it is running; dispatch fresh individual `codex exec` calls instead of re-running a loop script.
+- Three lost reports reconstructed from job-log transcripts (no new finding, just recovery),
+  written to the SESSION SCRATCHPAD only (dies with the session, not in `progress\`):
+  `gw-s05-stage-report.md`, `gw-s06-stage-report.md` (repeats the n:14 defect below),
+  `gw-calib-s15-report.md` (compressed from the already-landed full note, nothing new).
+  Re-derive from the full notes/log files again if needed; do not hunt for these scratchpad files.
+- §6 row n:14 (p.470) confirmed by direct inspection: stem field literally reads `...following
+  excision with conjunctival autograft? c. 15%` — "c. 15%" is option C's text, swallowed into the
+  stem, `opts:[]` empty. Genuine parser defect, not a benign flag. Needs a manual reread of p.470
+  before this row can be drafted. NOT fixed yet.
+- s16/17/18 full calibration notes landed (6.6K/6.7K/7.3K) but still have no short `-report.md`
+  companion. s19 is still the broken 730-byte "Pending OCR/index analysis" stub. s20/s21 never
+  ran at all (no note file exists).
+- Three fresh individual redo dispatches for s19/s20/s21 (correct `--add-dir` from creation) all
+  failed within seconds of launch: `ERROR: You've hit your usage limit. ... try again at 9:34 PM.`
+  This is Codex's own OpenAI-account limit, separate from the OmniRoute gateway 429 on
+  big-pickle. Per the drop-a-rung rule, do not retry-loop this — wait past 21:34 local or drop
+  to rung 5.
+- Probed rung 5 as a result: `vibe -p "<prompt>" --auto-approve --max-turns N [--workdir DIR]`
+  and `grok -p "<prompt>" --always-approve --cwd DIR` both answered a one-line ping in seconds —
+  LIVE, confirmed 2026-09-15 ~19:30 local. `vibe` without `--trust` warns the folder is untrusted
+  and ignores `AGENTS.md`; add `--trust` for any dispatch that should read project conventions.
+  Neither was pushed further than the ping this session — no calibration/staging work has
+  actually been run on either yet.
+
+**Next on resume:**
+1. Redispatch s19 (redo), s20, s21 calibration on vibe or grok (rung 5) using the same
+   `gw-calib-sNN.md` briefs already generated in this chat's scratchpad (regenerate via the `sed`
+   template if the scratchpad is gone) — do not wait for the 21:34 Codex reset unless vibe/grok
+   both go down too.
+2. Compress s16/s17/s18's full notes into short `-report.md` files (vibe/grok, or inline — they
+   are trivial reads of already-landed files).
+3. Independently re-verify the §5 (`oph-ep-p1-s05-eyelids.array.js`) and §6
+   (`oph-ep-p1-s06-conjunctiva.array.js`) staged arrays using vibe or grok — never Codex, per the
+   user's standing rule (Codex checking its own Codex output is a same-house check).
+4. Fix §6 n:14 (manual reread of p.470) once a checker is free.
+5. Commit `oph-ep-p1-s05-eyelids.array.js`, `stage-oph-s05.js`, `oph-ep-p1-s06-conjunctiva.array.js`,
+   `stage-oph-s06.js`, and the landed `ophtho-endpoint-s13/15/16/17/18/19-calibration-2026-09-15.md`
+   notes ONLY after each is independently checked (git write is Claude's own job, explicit paths,
+   never `add -A`).
+6. Continue calibration through s21, then move to §5/§6 image-check and splice.
+
+**2026-09-15, fourth block — lean-drafter (rung 6, ROUTE-OK) finished s19/s20/s21 calibration +
+s16-18 reports. Own script check passed (non-empty, 0 CR, no leftover "Pending" stub text,
+internally consistent counts/formulas); NO independent fleet/refuter check run yet on the three
+new notes — do that before relying on them for staging.**
+- §5 (`oph-ep-p1-s05-eyelids.array.js` + `stage-oph-s05.js`) independently verified PASS by vibe
+  (29 rows, keys, 4 opts everywhere, no swallowed text) and COMMITTED: `3ebe834`.
+- §6 (`oph-ep-p1-s06-conjunctiva.array.js`) independently verified by grok: only n:14 (p.470,
+  empty `opts`, swallowed "c. 15%") is broken, the other 38 rows/keys/counts are clean. NOT
+  committed — held back until n:14 is fixed (needs a page reread; Codex vision also out right
+  now, so this is blocked on the same 21:20-ish window, or another vision seat).
+- s19 (redo): pp.1245-1331, 25 physical pairs but the SOURCE ITSELF double-prints "16." on two
+  different questions (k=16/k=17) — 24 distinct numbers, a source-side defect, not a transcription
+  one. Formula `1280+2k`/`1281+2k` holds all 25. One 5-option pair (k=25/"24"). Two pairs
+  (k=22/"21", k=24/"23") show no key-mark signal at all — needs image check before staging.
+- s20: pp.1332-1373, clean 1-15 numbering, formula `1342+2n`/`1343+2n` holds all 15, all
+  4-option, one no-key-mark anomaly at Q11.
+- **s21: PDF pp.1374-1390 is a "Keys For Diagnosis" mnemonic appendix — ZERO MCQs.** All 17 pages
+  classify as `notes`, no Questions divider, no lettered-option pattern anywhere (regex swept,
+  zero hits). Nothing to stage from this section. Two tables (p.1384, p.1388) flagged as possibly
+  image-laid-out, unconfirmed. **Open question for the user/orchestrator: does `SEC_P1` entry 21
+  get marked "stages nothing" like the s06 p.522 reprint pattern, or does this need a ruling?**
+- Reports for s16/s17/s18 written to scratchpad (compression only, no new analysis, per job 4).
+
+**Next on resume:** independent-check s19/s20/s21 (vibe/grok, same pattern as §5/§6) before
+trusting the counts for staging; decide s21's status; fix §6 n:14 once a vision seat is free;
+commit calibration notes s13/15/16/17/18/19/20/21 once each has its independent check (or judge
+calibration notes as lower-stakes structural-only and commit on the script check alone — not yet
+decided, ask the user if unsure); continue toward §5/§6 image-check and splice.
