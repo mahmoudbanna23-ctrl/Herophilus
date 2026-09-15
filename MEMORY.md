@@ -55,7 +55,7 @@ all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **Th
   ≡ House ch.10 = 27% of that chapter; **nothing folds mid-stream**, and **`pedhd-card-6..10` must NOT
   be folded** (5 identical stems, 5 different figures). Log: `resume-peds.md` tail. Pruned detail ->
   archive, `## Pruned from MEMORY.md - 2026-09-05`.
-- ⏳ **NEURO — 297 live** (nr 133 · ps 164). **✅ GRADE GAIN PSYCHIATRY CLOSED 2026-09-08** — t22+t23
+- ⏳ **NEURO — 333 live** (nr 169 · ps 164). **✅ GRADE GAIN PSYCHIATRY CLOSED 2026-09-08** — t22+t23
   spliced, Q1–Q165 whole, every question page 65–93 cited, 0 folds, markers 194->214 as predicted.
   **Next: t09 Q177 PDF 42; t09 drafts UNCOMMITTED on disk, inspect first**; t10–14 to PDF 69.
   ⚠️ **Psychiatry keys print BARE LETTERS — the letter/name cross-check is UNAVAILABLE, recorded NOT
