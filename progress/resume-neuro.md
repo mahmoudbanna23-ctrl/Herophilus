@@ -1441,9 +1441,39 @@ stroke", and appears to run past the page edge. Q194 carries a waveform figure, 
 
 ### Next
 
-Topics 09–14, book pp.37–64 = PDF 42–69.
+Topics 10–14, book pp.41–64 = PDF 46–69. Topic 09 CLOSED (below). Topic 10 staged and
+verified (below) — draft expansion is the next step.
 
-## Topic 09 "Coma" — state at 2026-09-15 (session stopped by owner for a fresh chat)
+## Topic 10 "Movement Disorders" — state at 2026-09-15
+
+Book pp.41-44 (PDF 046-049) questions, pp.44-45 (PDF 049-050) answers. Contents page
+promised 23; **29 actually print, Q199-227** — this bank's contents page has never once
+undercounted correctly, per standing rule.
+
+**Done (commit `62abba5`):** `content/neuro/qb-pages/gg-nr-t10.array.js` — Codex solo
+(`gpt-5.6-terra`, own OpenAI login, gateway's `big-pickle` still in cooldown) transcribed
+all 29 from the 6 rendered page images. Fixed post-hoc in Claude: Codex invented a
+non-existent "repository rule" and stored `key` as a zero-based index instead of the
+letter t08's schema uses — converted back to letters mechanically (deterministic, no
+new transcription); header comment carried cp1252/UTF-8 mojibake (â€” for —, Â· for ·)
+— fixed; Q203's box had silently normalized source typo "especillay" to "especially" —
+restored verbatim. Independent Opus-refuter check against all 6 images: **all 29 keys
+verified letter-by-letter, correct; stems/options/boxes verified; pg-051 confirmed
+holding nothing from this topic** (next topic's banner, Q228+). Clean.
+
+**Not done:** draft expansion to writing budget, refuter review, sweep, splice — same
+pipeline as t09.
+
+**Route state at 2026-09-15 ~22:15 (supersedes the 19:24 note below):** Codex solo is
+back (`gpt-5.6-terra` probed live). Gateway healthy but `big-pickle`/other OpenCode free
+models blocked by OpenCode's own limit until ~03:00 — not a gateway fault, don't debug
+it. Most `auto/*` combos now land on unconfirmed-payer Claude/GPT — treat as paid, avoid.
+Free+live on gateway: `groq/openai/gpt-oss-120b` (small jobs, 8k cap), `gemini/gemini-flash-latest`.
+Fleet direct: vibe, grok live; agy, opencode down. Order: Codex solo → gateway free model →
+fleet direct → Claude helpers (ROUTE-OK required). Probe with "pong" before any batch;
+drop a dead route at once, never retry-loop.
+
+## Topic 09 "Coma" — CLOSED 2026-09-15
 
 **Owner's limits for t09, verbatim (2026-09-15):**
 > - Codex (codex-gw.sh) may: finish the drafts to the word budget, and write/run a script proving stems, options, answers and quoted boxes are unchanged vs staging.
@@ -1466,14 +1496,5 @@ Topics 09–14, book pp.37–64 = PDF 42–69.
 - Six-stage sweep (`tools/qb-pipeline/sweep.js`) run 22 incoming (`gg-nr-t09.draft-A.js` + `draft-B.js`) vs 333-entry shipped corpus: **ZERO candidates** at Dice ≥ 0.72 across all 7,326 pairs, zero within-batch. Instrument verified first with a planted clone + a planted reordered-option clone (both caught, correctly staged) before trusting the zero. No fold/adjudication needed.
 - Splice done: `app/data/questions.neuro.js` 333 → **355** (both header comments stripped, tail structure preserved, bare-key/single-quote style matched — no quote conversion needed). Validated from disk: parses clean, count 333→355, markers 241→259 (+18, matches prediction), 0 duplicate ids, all 22 new ids present once, answers in range, chapters/module sane, 0 CR bytes. Not yet committed — next step.
 
-**Not done:**
-1. Commit the splice (`app/data/questions.neuro.js`) and this journal update.
-2. Decide whether `gg-nr-t09-review-A2.md` / `gg-nr-t09-review-B.md` go in the same commit or a separate one — both still untracked.
-3. Then topics 10–14 (Movement Disorders opens PDF 046, Q199) to PDF 69.
-
-**Blockers, unrelated to the splice — updated 2026-09-15 19:24:**
-- OmniRoute gateway model `opencode-zen/big-pickle`: **429 "credentials cooling down" since ~2 h, a gateway restart did not clear it — do not retry it, do not switch to `auto/coding` either** (lands on billed `anthropic/claude-sonnet-5`). Wait for the orchestration chat to say clear.
-- Codex sandbox ACL bug (`apply deny-read ACLs`) is **fixed** — Codex on its own login works again: `codex exec --skip-git-repo-check -s workspace-write -m gpt-5.6-terra "<prompt>"` (routine), `-m gpt-6-astra` (must-be-right), no `codex-gw.sh` wrapper. Every brief must say "If a command fails, say FAILED and quote the error" — Codex once claimed success having run nothing; check output files with a script, never trust its self-report.
-- Fleet probe 18:50: **live** vibe, grok, Groq `openai/gpt-oss-120b` (short jobs only). **down** agy, Gemini (503), opencode (server error), OpenRouter `minimax-m3:free` (no longer free). Independent checker for Codex work: vibe or grok, never Codex itself.
-- Page renders PDF 042–050 still in the old session scratchpad `…\874149fd-…\scratchpad\t09\` — a new session's scratchpad starts empty; re-render if gone.
-- `MEMORY.md` neuro line is stale (says "t09 drafts UNCOMMITTED on disk", "333 live") — needs updating to 355 and topic 09 closed; off this chat's write allowlist until the splice commits.
+**Splice committed:** `63f4bfe` (splice + journal), `7defff3` (the two review docs). Neither
+pushed. `app/data/questions.neuro.js`: 333 → **355**. All done, nothing left on t09.
