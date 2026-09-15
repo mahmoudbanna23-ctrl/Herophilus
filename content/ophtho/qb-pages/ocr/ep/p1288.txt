@@ -1,0 +1,11 @@
+4. Cause ofvision loss in diabetic retinopathy?
+a. Vitreous hemorrhage
+b. Cataract
+c. Glaucoma
+128B
+--- 150dpi ---
+4. Cause of vision loss in diabetic retinopathy?
+a. Vitreous hemorrhage
+b. Cataract
+c. Glaucoma
+1288

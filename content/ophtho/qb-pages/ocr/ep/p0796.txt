@@ -1,0 +1,53 @@
+Type
+POAG
+NTG
+PACG (acute)
+20 Glaucoma
+Angle
+Open
+Open
+Closed
+Either
+Normal
+Symptoms
+Silent, gradual
+Silent
+Pain + halos + N/V
+Depends on cause
+Key Rx
+PG analogues, 6-
+blocker
+target IOP
+Emergency
+mannitol +
+irido tomy
+Treat cause + IOP
+control
+796
+--- 150dpi ---
+Type
+POAG
+NTG
+PACG (acute)
+20 Glaucoma
+Angle
+Open
+Open
+Closed
+Either
+Normal
+Symptoms
+Silent, gradual
+Silent
+Pain + halos + N/V
+Depends on cause
+Key Rx
+PG analogues, 6-
+blocker
+target IOP
+Emergency
+mannitol +
+iridotomy
+Treat cause + IOP
+control
+796

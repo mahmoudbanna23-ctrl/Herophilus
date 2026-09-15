@@ -1,0 +1,81 @@
+Feature
+Pain
+Vision loss
+Fundus
+RAPD
+Urgency
+Main goal
+CRA O
+Painless
+Sudden, severe
+Pale retina, cherry-
+red spot
+Emergency
+Restore flow
+CRVO
+Painless
+Gradual or sudden
+Blood & thunder
++ (if ischemic)
+Semi-urgent
+Prevent
+neo vascularization
+BRAO
+Painless
+Sectoral
+Sectoral pallor
++ (if large area)
+Urgent
+BRVO
+Painless
+Sectoral
+Sectoral
+hemorrhage
+Mild/-
+Routine unless
+macular edema
+Treat macular
+Dislodge embolus
+edema
+890
+--- 150dpi ---
+Feature
+Pain
+Vision loss
+Fundus
+RAPD
+Urgency
+Main goal
+CRAO
+Painless
+Sudden, severe
+Pale retina, cherry-
+red spot
+Emergency
+Restore flow
+CRVO
+Painless
+Gradual or sudden
+Blood & thunder
++ (if ischemic)
+Semi-urgent
+Prevent
+neovascularization
+BRAO
+Painless
+Sectoral
+Sectoral pallor
++ (if large area)
+Urgent
+BRVO
+Painless
+Sectoral
+Sectoral
+hemorrhage
+Mild/—
+Routine unless
+macular edema
+Treat macular
+Dislodge embolus
+edema
+890

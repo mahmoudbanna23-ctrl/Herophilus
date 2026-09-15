@@ -1,0 +1,53 @@
+Pupillary Findings
+Condition
+Anterior uveitis
+Acute angle-closure glaucoma
+Keratitis
+Reflex Colors (Leukocoria)
+Pupil
+Constricted
+Mid-dilated
+Fluorescein stain positive
+(ulcer/erosion)
+Reflex
+White
+Yellow
+Unilateral dim
+Bilateral dim
+Grey
+Black/Absent
+Cause
+Congenital cataract (MO, Retinoblastoma (serious)
+Endophthalmitis, Retinal exudation
+Anisometropia
+Refractive errors
+Retinal detachment
+Vitreous hemorrhage
+1388
+--- 150dpi ---
+Pupillary Findings
+Condition
+Anterior uveitis
+Acute angle-closure glaucoma
+Keratitis
+Reflex Colors (Leukocoria)
+Pupil
+Constricted
+Mid-dilated
+Fluorescein stain positive
+(ulcer/erosion)
+Reflex
+White
+Yellow
+Unilateral dim
+Bilateral dim
+Grey
+Black/Absent
+Cause
+Congenital cataract (MC), Retinoblastoma (serious)
+Endophthalmitis, Retinal exudation
+Anisometropia
+Refractive errors
+Retinal detachment
+Vitreous hemorrhage
+1388

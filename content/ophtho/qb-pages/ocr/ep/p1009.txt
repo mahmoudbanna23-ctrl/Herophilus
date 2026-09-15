@@ -1,0 +1,93 @@
+Condition
+Papilledema
+Papillitis
+Retrobulbar
+neuritis
+NAION
+Arteritic AION
+Laterality
+Bilateral
+Unilateral
+Unilateral
+Unilateral
+Unilateral
+Vision
+Normal
+early
+ICP Symptoms
+Present
+Absent
+Absent
+Absent
+Systemic GCA
+Signs
+Pain
+None
+None
+Fundus
+Marked
+disc
+oedema
+Mild
+oedema
+Normal
+Pale
+oedema
+Chalky
+Main Cause
+ICP
+Inflammato
+ry
+Demyelinat
+ion (MS)
+Vascular
+GCA
+swollen disc
+Icog
+--- 150dpi ---
+Condition
+Papilledema
+Papillitis
+Retrobulbar
+neuritis
+NAION
+Arteritic AION
+Laterality
+Bilateral
+Unilateral
+Unilateral
+Unilateral
+Unilateral
+Vision
+Normal
+early
+4,
+ICP Symptoms
+Present
+Absent
+Absent
+Absent
+Systemic GCA
+signs
+Pain
+None
+None
+Fundus
+Marked
+disc
+oedema
+Mild
+oedema
+Normal
+Pale
+oedema
+Chalky
+Main Cause
+Inflammato
+ry
+Demyelinat
+ion (MS)
+Vascular
+GCA
+swollen disc
+1009

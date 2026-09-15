@@ -1,0 +1,46 @@
+Types:
+Type
+Non-ischemic
+Visual Acuity
+26/24
+(venous stasis)
+Ischemic
+S6/60
+(hemorrhagic)
+Complications
+RAPD
+NO
+Yes
+Ischemia
+Mild
+Severe
+Prognosis
+Good
+poor
+•Neovascularization rubeosis iridis neovascular glaucoma ("100-day glaucoma").
+•Vitreous hemorrhage
+•Macular edema
+--- 150dpi ---
+Types:
+Type
+Non-ischemic
+Visual Acuity
+26/24
+(venous stasis)
+Ischemic
+S6/60
+(hemorrhagic)
+Complications
+RAPD
+No
+Yes
+Ischemia
+Mild
+Severe
+Prognosis
+Good
+poor
+•Neovascularization -5 rubeosis iridis neovascular glaucoma ("100-day glaucoma").
+•Vitreous hemorrhage
+•Macular edema
+887

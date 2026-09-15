@@ -1,0 +1,21 @@
+21. 43 years old patient complaining of blurred vision. On detailed history the
+vision problem is mainly during doing his work on laptop. Visual acuity is 6/6
+in both eyes with normal IOP. Examination of the anterior segment reveals
+nuclear sclerosis, while fundus exammation is normal in both eyes.
+What do you recommend for this patient?
+A. Glasses for distant vision correction
+B. Preparing patient for phacoemulsification for nuclear sclerosis
+C. Glasses for near vision correction
+D. Assurance of the patient and scheduling follow up visits
+706
+--- 150dpi ---
+21.43 years old patient complaining of blurred vision. On detailed history the
+vision problem is mainly during doing his work on laptop. Visual acuity is 6/6
+in both eyes with normal IOP. Examination of the anterior segment reveals
+nuclear sclerosis, while fundus examination is normal in both eyes.
+What do you recommend for this patient?
+A. Glasses for distant vision correction
+B. Prepanng patient for phacoemulsification for nuclear sclerosis
+C. Glasses for near vision correction
+D. Assurance of the patient and scheduling follow up visits
+706

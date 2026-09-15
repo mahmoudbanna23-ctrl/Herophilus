@@ -1,0 +1,101 @@
+Feature
+Age
+Onset & Nature
+Laterality
+System Symptoms
+Visual Acuity
+Fundus App
+Systemic Signs /
+Associa tions
+Investigations
+Treatment
+prognosis
+Non-Arteritic Ischemic Optic Neuropathy (NAION)
+Majority > SO years
+Acute, painless, unilateral visual loss (Often noticed on
+waking)
+Usually one eye, Other rarely affected
+Absent
+Moderate—severe reduction
+Swollen, pale optic disc
+Local vascular risk factors (HTN, DM, hyperlipidemia,
+nocturnal hypotension)
+ESR and CRP normal (done to exclude arteritic cause)
+NO definitive treatment; manage systemic vascular risk
+factors and avoid nocturnal hypotension
+May recover partially; risk of recurrence in same/other
+eye
+Arteritic Anterior Ischemic Optic Neuropathy
+(A-AION)
+Majority > 60 years
+Sudden, severe unilateral visual loss with
+periocular pain
+Often bilateral, second eye involved within
+days to weeks
+Present — due to Giant cell Arteritis (GQ)
+• Severe headache • Scalp tenderness
+• Jaw claudication
+•proximal myalgia (polymyalgia rheumatica)
+• Malaise, weight loss
+profound loss — only hand movements (HM)
+or perception of light (PL)
+Swollen, chalky-white optic disc
+Signs of temporal arteritis (tender, thick
+temporal artery, absent pulse)
+ESR and CRP markedly elevated; Temporal
+artery biopsy confirms GCA
+Urgent high-dose systemic corticosteroids to
+prevent blindness in the fellow eye
+Medical emergency — vision loss often
+permanent if untreated
+--- 150dpi ---
+Feature
+Age
+Onset & Nature
+Laterality
+Systemic Symptoms
+Visual Acuity
+Fundus Appearance
+Systemic Signs /
+Associations
+Investigations
+Treatment
+Prognosis
+Non-Arteritic Ischemic Optic Neuropathy (NAION)
+Majority > SO years
+Acute, painless, unilateral visual loss (often noticed on
+waking)
+Usually one eye, other rarely affected
+Absent
+Moderate—severe reduction
+Swollen, pale optic disc
+Local vascular risk factors (HTN, DM, hyperlipidemia,
+nocturnal hypotension)
+ESR and CRP normal (done to exclude arteritic cause)
+No definitive treatment; manage systemic vascular risk
+factors and avoid nocturnal hypotension
+May recover partially; risk of recurrence in same/other
+eye
+Arteritic Anterior Ischemic Optic Neuropathy
+(A-AION)
+Majority > 60 years
+Sudden, severe unilateral visual loss with
+periocular pain
+Often bilateral, second eye involved within
+days to weeks
+Present — due to Giant cell Arteritis (GQ):
+• Severe headache • Scalp tenderness
+• Jaw claudication
+•Proximal myalgia (polymyalgia rheumatica)
+• Malaise, weight loss
+Profound loss — only hand movements (HM)
+or perception of light (PL)
+Swollen, chalky-white optic disc
+Signs of temporal arteritis (tender, thick
+temporal artery, absent pulse)
+ESR and CRP markedly elevated; Temporal
+artery biopsy confirms GCA
+Urgent high-dose systemic corticosteroids to
+prevent blindness in the fellow eye
+Medical emergency — vision loss often
+permanent if untreated

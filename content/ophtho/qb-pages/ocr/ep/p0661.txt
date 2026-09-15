@@ -1,0 +1,46 @@
+Term
+phacomorp hic
+phacolytic
+Pseudophakia
+Ectopia Lentis
+YAG laser
+Meaning
+Swollen lens angle closure
+Leaky lens proteins -5 open-angle
+glaucoma
+IOL implanted
+No lens hypermetropia
+Dislocated lens
+Treats PCO
+Mnemonic Tip
+"Morphs shape blocks angle"
+"Lytic -5 leaks"
+"Pseudo-lens"
+"A = absent"
+"Lens lost its spot"
+"After-ca taract fix"
+661
+--- 150dpi ---
+Term
+Phacomorphic
+Phacolytic
+Pseudophakia
+Aphakia
+Ectopia Lentis
+YAG laser
+Meaning
+Swollen lens angle closure
+Leaky lens proteins -5 open-angle
+glaucoma
+IOL implanted
+No lens hypermetropia
+Dislocated lens
+Treats PCO
+Mnemonic Tip
+"Morphs shape blocks angle"
+"Lytic -Y leaks"
+"Pseudo-lens"
+"A = absent"
+"Lens lost its spot"
+"After-cataract fix"
+661

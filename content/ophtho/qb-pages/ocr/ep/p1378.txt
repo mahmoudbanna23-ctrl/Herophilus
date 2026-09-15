@@ -1,0 +1,29 @@
+Female + history of gout or rheumatoid arthritis + localized redness + localized
+tenderness + visual acuity normal + sclera uninvolved = Episcleritis
+Female + history of gout or rheumatoid arthritis + localized redness + localized
+tenderness + visual acuity normal + sclera involved = Scleritis
+Redness improves with topical vasoconstrictor = Episcleritis (superficial)
+Redness does not improve with topical vasoconstrictor = Scleritis (deep)
+Eye pain + lacrimation + blepharospasm + photophobia + vision = Acute uveitis/
+uveal case
+Acute inflammation signs (redness + tenderness) + miotic pupil Acute iridocyclitis
+Erythematous nodules + painful joints + oral & genital ulcers = Behcet disease
+Yellow reflex in vitreous + no proptosis + no limitation of eye movement =
+Endophthalmitis
+Yellow reflex in vitreous + proptosis + limitation of eye movement = Panophthalmitis
+1378
+--- 150dpi ---
+Female + history of gout or rheumatoid arthritis + localized redness + localized
+tenderness + visual acuity normal + sclera uninvolved = Episcleritis
+Female + history of gout or rheumatoid arthritis + localized redness + localized
+tenderness + visual acuity normal + sclera involved = Scleritis
+Redness improves with topical vasoconstrictor = Episcleritis (superficial)
+Redness does not improve with topical vasoconstrictor = Scleritis (deep)
+Eye pain + lacrimation + blepharospasm + photophobia + vision = Acute uveitis /
+uveal case
+Acute inflammation signs (redness + tenderness) + miotic pupil = Acute iridocyclitis
+Erythematous nodules + painful joints + oral & genital ulcers = Behcet disease
+Yellow reflex in vitreous + no proptosis + no limitation of eye movement =
+Endophthalmitis
+Yellow reflex in vitreous + proptosis + limitation of eye movement = Panophthalmitis
+1378
