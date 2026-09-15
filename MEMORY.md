@@ -21,7 +21,7 @@ Where this file and the archive disagree, this file wins. ⚠️ **Before openin
 `CLAUDE.md` was trimmed 2026-09-02 into `reference.md` (`## Moved from CLAUDE.md - 2026-09-02`);
 **no live rule left it.**
 
-## Resume here — state at 2026-09-05
+## Resume here — state at 2026-09-15
 **BOTH CHATS RAN the night of 2026-09-02/03; both prompts were REWRITTEN IN PLACE 2026-09-03 late
 against measured disk state.** ⚠️ **RELAUNCH ONLY FROM `progress\resume-2026-09-03b-chatB-peds.md`
 (v4 — House now via `tools\chapter-loop.js` + Codex). **BOTH peds endpoint prompts are now SPENT — `resume-2026-09-03-late-peds-endpoint.md` (v6, part 1 closed under it) and `resume-peds-endpoint-part2.md` (v1, part 2 closed under it 2026-09-06); do not relaunch either.** Every earlier prompt is stale and pays
@@ -57,7 +57,7 @@ all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **Th
   archive, `## Pruned from MEMORY.md - 2026-09-05`.
 - ⏳ **NEURO — 297 live** (nr 133 · ps 164). **✅ GRADE GAIN PSYCHIATRY CLOSED 2026-09-08** — t22+t23
   spliced, Q1–Q165 whole, every question page 65–93 cited, 0 folds, markers 194->214 as predicted.
-  **Next: NEUROLOGY topic 08 "Epilepsy", Q141, book pp.31–36 = PDF 36–41**, then 09–14 to book p.64.
+  **Next: t09 Q177 PDF 42; t09 drafts UNCOMMITTED on disk, inspect first**; t10–14 to PDF 69.
   ⚠️ **Psychiatry keys print BARE LETTERS — the letter/name cross-check is UNAVAILABLE, recorded NOT
   PERFORMED, never passed**; a second seat re-read all 29 at 400 dpi instead. ⚠️ **Renders die with
   the scratchpad** — re-render ~45 s, OCR is the rate-limited part. ⚠️ **Bank is GRADE GAIN, ONE book
