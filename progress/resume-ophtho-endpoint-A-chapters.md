@@ -254,3 +254,25 @@ State per section:
 **Next:** apply the §4 n:2/n:4 fold (builder), refuter check both §3/§4 diffs, splice
 `--part 1 3` then `--part 1 4`, `boot-check.js` after each; then run §5/§6 staging on the gateway;
 calibrate 16/18/20 (and whatever lane A did not finish); close out ledger + MEMORY.md.
+
+**2026-09-15, second block (chat OPH-A) — SECTIONS 3 AND 4 SPLICED, LIVE 102.** Commit `35f771c`.
+- §4 fold applied as ruled: survivor n:4 (fuller box), n:2 folded, `folded: [2]` on `SEC_P1` s04;
+  n:4 `source` = `Opthalmology endpoint.pdf p.301 (the same question is printed again on p.297)`.
+  Draft 23 entries. Refuter PASS on §4.
+- §3 refuter found the two fold citations written as MARKED pages (244, 268) while `source`
+  cites STAGED PDF pages; corrected to 243 and 267. **Rule: a reprint citation uses the folded
+  row's staged `p`, never the marked page.** `sec-oph.js` comments still say marked pages
+  (documentation only).
+- `splice-oph-ep.js --part 1 3 --write` 60 -> 79, `--part 1 4 --write` 79 -> 102, 0 holes,
+  `boot-check.js` 0 errors after each (reports 4049 — ophtho is LOCKED at the aggregator, so the
+  endpoint file never changes that number; a check wanting 4049+ is stale).
+- Lane A (`calib-lane.sh` from the dead scratchpad) was KILLED at s11: its retry was looping on
+  `CreateProcess ... orchestrator_helper_exit_nonzero (-1073741502)` and had overwritten the
+  committed 307-line s11 note with a 172-line partial — restored with `git checkout`. Sections
+  7–12 and 14 notes stand as committed. A fresh lane (`calib-lane.sh 13 15 16 17 18 19 20 21`,
+  new scratchpad, 1500 s timeout per try) launched from this chat.
+- §5 staging (`gw-s05-stage.md`, gateway) launched; §6 staging waits for a free slot (≤2 of this
+  chat's jobs; the neuro chat and one other workspace chat each had a gateway job running too).
+- §6 image check Q1–30 + Q8 figure p.459: two Sonnet drafters (Q1–15, Q16–30), report-only, to
+  scratchpad `cl-s06-imagecheck-*-report.md`; results to be folded into `oph-ep-s06-keys.md` by
+  a builder before staging §6 is trusted.

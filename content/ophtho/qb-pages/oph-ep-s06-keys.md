@@ -28,36 +28,36 @@ Explanation box, Figure) carries over unchanged.
 
 | Q | Unmarked page | Marked page | Visual letter | Visual index (0-based) | keypos letter | keypos index | Agree? | Options | Explanation box | Figure |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | 444 | 445 | c | 2 | B | 1 | no (disagree — highlight is cyan, not yellow) | 4 (a-d) | boxed? (unconf.) | none seen |
-| 2 | 446 | 447 | b | 1 | B | 1 | yes | 4 (a-d) | boxed? (unconf.) | none seen |
-| 3 | 448 | 449 | d | 3 | D | 3 | yes | 4 (A,b,c,d — mixed case, see Anomalies) | boxed? (unconf.) | none seen |
-| 4 | 450 | 451 | b | 1 | B | 1 | yes | 4 (a-d) | boxed? (unconf.) | none seen |
-| 5 | 452 | 453 | c | 2 | C | 2 | yes | 4 (a-d) | boxed? (unconf.) | none seen |
-| 6 | 454 | 455 | b | 1 | B | 1 | yes | 4 (a-d) | boxed? (unconf.) | none seen |
-| 7 | 456 | 457 | a | 0 | A | 0 | yes | 4 (a-d) | boxed? (unconf.) | none seen |
-| 8 | 458 | 459 | d | 3 | D | 3 | yes | 4 (a-d) | boxed? (unconf.) | eyeRounds.org watermarked eye photo (confirmed) |
-| 9 | 460 | 461 | a | 0 | A | 0 | yes | 4 (a-d) | boxed? (unconf.) | none seen |
-| 10 | 462 | 463 | a | 0 | A | 0 | yes | 4 (a-d) | boxed? (unconf.) | none seen |
-| 11 | 464 | 465 | b | 1 | B | 1 | yes | 4 (a-d) | boxed? (unconf.) | none seen |
-| 12 | 466 | 467 | a | 0 | A | 0 | yes | 4 (a-d) | boxed? (unconf.) | none seen |
-| 13 | 468 | 469 | A | 0 | A | 0 | yes | 4 (A-D) — first uppercase question | boxed? (unconf.) | none seen |
-| 14 | 470 | 471 | A | 0 | A | 0 | yes | 4 (A-D) — resolves calib's option-count doubt, full A-D visible both pages | boxed? (unconf.) | none seen |
-| 15 | 472 | 473 | A | 0 | A | 0 | yes | 4 (A-D) | boxed? (unconf.) | none seen |
-| 16 | 474 | 475 | C | 2 | C | 2 | yes | 4 (A-D) | boxed? (unconf.) | none seen |
-| 17 | 476 | 477 | D | 3 | D | 3 | yes | 4 (A-D) | boxed? (unconf.) | none seen |
-| 18 | 478 | 479 | B | 1 | B | 1 | yes | 4 (A-D) | none? (unconf.) | none seen |
-| 19 | 480 | 481 | D | 3 | D | 3 | yes | 5 (A-E) | none? (unconf.) | none seen |
-| 20 | 482 | 483 | D | 3 | D | 3 | yes | 4 (A-D) | none? (unconf.) | none seen |
-| 21 | 484 | 485 | C | 2 | C | 2 | yes | 4 (A-D) | none? (unconf.) | none seen |
-| 22 | 486 | 487 | A | 0 | A | 0 | yes | 4 (A-D) | none? (unconf.) | none seen |
-| 23 | 488 | 489 | C | 2 | C | 2 | yes | 4 (A-D) | none? (unconf.) | none seen |
-| 24 | 490 | 491 | A | 0 | A | 0 | yes | 4 (A-D) | none? (unconf.) | none seen |
-| 25 | 492 | 493 | B | 1 | B | 1 | yes | 4 (A-D) | none? (unconf.) | none seen |
-| 26 | 494 | 495 | D | 3 | D | 3 | yes | 4 (A-D) | none? (unconf.) | none seen |
-| 27 | 496 | 497 | A | 0 | A | 0 | yes | 4 (A-D) | none? (unconf.) | none seen |
-| 28 | 498 | 499 | B | 1 | B | 1 | yes | 4 (A-D) — printed "28" (first of dup) | none? (unconf.) | none seen |
-| 29 | 500 | 501 | E | 4 | E | 4 | yes | 5 (A-E) — printed "28" again (dup, distinct question) | none? (unconf.) | none seen |
-| 30 | 502 | 503 | D | 3 | D | 3 | yes | 5 (A-E) — printed "29", numbering resumes | none? (unconf.) | none seen |
+| 1 | 444 | 445 | c | 2 | B | 1 | no (disagree — highlight is cyan, not yellow) | 4 (a-d) | boxed (plain bulleted list, no border — confirmed p.445) | none seen |
+| 2 | 446 | 447 | b | 1 | B | 1 | yes | 4 (a-d) | boxed (confirmed by eye 2026-09-15) | none seen |
+| 3 | 448 | 449 | d | 3 | D | 3 | yes | 4 (A,b,c,d — mixed case, see Anomalies) | boxed (confirmed by eye 2026-09-15) | none seen |
+| 4 | 450 | 451 | b | 1 | B | 1 | yes | 4 (a-d) | boxed (confirmed by eye 2026-09-15) | none seen |
+| 5 | 452 | 453 | c | 2 | C | 2 | yes | 4 (a-d) | boxed (confirmed by eye 2026-09-15) | none seen |
+| 6 | 454 | 455 | b | 1 | B | 1 | yes | 4 (a-d) | boxed (confirmed by eye 2026-09-15) | none seen |
+| 7 | 456 | 457 | a | 0 | A | 0 | yes | 4 (a-d) | boxed (confirmed by eye 2026-09-15) | none seen |
+| 8 | 458 | 459 | d | 3 | D | 3 | yes | 4 (a-d) | boxed (confirmed by eye 2026-09-15) | eyeRounds.org watermarked eye photo (confirmed) |
+| 9 | 460 | 461 | a | 0 | A | 0 | yes | 4 (a-d) | boxed (confirmed by eye 2026-09-15) | none seen |
+| 10 | 462 | 463 | a | 0 | A | 0 | yes | 4 (a-d) | boxed (confirmed by eye 2026-09-15) | none seen |
+| 11 | 464 | 465 | b | 1 | B | 1 | yes | 4 (a-d) | boxed (confirmed by eye 2026-09-15) | none seen |
+| 12 | 466 | 467 | a | 0 | A | 0 | yes | 4 (a-d) | boxed (confirmed by eye 2026-09-15) | none seen |
+| 13 | 468 | 469 | A | 0 | A | 0 | yes | 4 (A-D) — first uppercase question | boxed (confirmed by eye 2026-09-15) | none seen |
+| 14 | 470 | 471 | A | 0 | A | 0 | yes | 4 (A-D) — resolves calib's option-count doubt, full A-D visible both pages | boxed (confirmed by eye 2026-09-15) | none seen |
+| 15 | 472 | 473 | A | 0 | A | 0 | yes | 4 (A-D) | boxed (confirmed by eye 2026-09-15) | none seen |
+| 16 | 474 | 475 | C | 2 | C | 2 | yes | 4 (A-D) | boxed (confirmed by eye 2026-09-15) | none seen |
+| 17 | 476 | 477 | D | 3 | D | 3 | yes | 4 (A-D) | boxed (confirmed by eye 2026-09-15) | none seen |
+| 18 | 478 | 479 | B | 1 | B | 1 | yes | 4 (A-D) | none (confirmed by eye 2026-09-15) | none seen |
+| 19 | 480 | 481 | D | 3 | D | 3 | yes | 5 (A-E) | none (confirmed by eye 2026-09-15) | none seen |
+| 20 | 482 | 483 | D | 3 | D | 3 | yes | 4 (A-D) | none (confirmed by eye 2026-09-15) | none seen |
+| 21 | 484 | 485 | C | 2 | C | 2 | yes | 4 (A-D) | none (confirmed by eye 2026-09-15) | none seen |
+| 22 | 486 | 487 | A | 0 | A | 0 | yes | 4 (A-D) | none (confirmed by eye 2026-09-15) | none seen |
+| 23 | 488 | 489 | C | 2 | C | 2 | yes | 4 (A-D) | none (confirmed by eye 2026-09-15) | none seen |
+| 24 | 490 | 491 | A | 0 | A | 0 | yes | 4 (A-D) | none (confirmed by eye 2026-09-15) | none seen |
+| 25 | 492 | 493 | B | 1 | B | 1 | yes | 4 (A-D) | none (confirmed by eye 2026-09-15) | none seen |
+| 26 | 494 | 495 | D | 3 | D | 3 | yes | 4 (A-D) | none (confirmed by eye 2026-09-15) | none seen |
+| 27 | 496 | 497 | A | 0 | A | 0 | yes | 4 (A-D) | none (confirmed by eye 2026-09-15) | none seen |
+| 28 | 498 | 499 | B | 1 | B | 1 | yes | 4 (A-D) — printed "28" (first of dup) | none (confirmed by eye 2026-09-15) | none seen |
+| 29 | 500 | 501 | E | 4 | E | 4 | yes | 5 (A-E) — printed "28" again (dup, distinct question) | none (confirmed by eye 2026-09-15) | none seen |
+| 30 | 502 | 503 | D | 3 | D | 3 | yes | 5 (A-E) — printed "29", numbering resumes | none (confirmed by eye 2026-09-15) | none seen |
 | 31 | 504 | 505 | C | 2 | C | 2 | yes | 4 (A-D) — printed "30" | boxed (confirmed) | none seen |
 | 32 | 506 | 507 | D | 3 | D | 3 | yes | 4 (A-D) — printed "31" | boxed (confirmed) | none seen |
 | 33 | 508 | 509 | B | 1 | B | 1 | yes | 4 (A-D) — printed "32" | boxed (confirmed) | none seen |
@@ -190,6 +190,11 @@ item, not safely assumed closed.
   "b./c./d." lowercase for the rest, on a page that otherwise belongs to the lowercase run.
 - No page-arithmetic break, out-of-sequence page, or question spanning more than its two-page pair
   was found anywhere rendered.
+- **Explanation-box status for Q1-Q30 confirmed by eye 2026-09-15**, from 110 dpi renders. Q2-Q17
+  boxed, Q18-Q30 no box. Q1 (p.445) has no bordered panel but a plain right-side bulleted list —
+  ruled boxed anyway because it explains the answer ("Conjunctival follicles: ... Causes: 1. Viral
+  conjunctivitis"), listing the causes that isolate option c (Vernal conjunctivitis, not a listed
+  cause) as the exception; typography (bordered vs. plain) does not decide box status, content does.
 
 ## Contradictions with (and corrections to) the calibration note
 
