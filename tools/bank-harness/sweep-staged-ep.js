@@ -43,6 +43,9 @@ const SEC = {
   // stem by OCR overlap. A high (a) count here is the EXPECTED shape, not an alarm -- and a low
   // one is the finding.
   10: { base: 'endpoint-s10-mfe1',          svar: 'PEDEP_S10_STAGED' },
+  // Sections 11-14 were adjudicated with ad-hoc arms rather than this sweep. Section 15 is
+  // registered here so its stem, within-section and option-set arms run from one tool.
+  15: { base: 'endpoint-s15-tre2',          svar: 'PEDEP_S15_STAGED' },
 };
 
 // Similarity over WORD BIGRAMS, Dice coefficient. A reprint that reworded its tail still shares

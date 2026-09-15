@@ -6008,5 +6008,3412 @@
 },
 "flags": [],
 "kind": "answered"
+},
+{
+"page": 273,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 2,
+"hires": 3
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [
+"thin",
+"passes-differ"
+],
+"kind": "notes"
+},
+{
+"page": 274,
+"yellow": 1392,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 46,
+"hires": 44
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [],
+"kind": "notes"
+},
+{
+"page": 275,
+"yellow": 1640,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 74,
+"hires": 73
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [],
+"kind": "notes"
+},
+{
+"page": 276,
+"yellow": 1368,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 30,
+"hires": 32
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [],
+"kind": "notes"
+},
+{
+"page": 277,
+"yellow": 1080,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 46,
+"hires": 46
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [],
+"kind": "notes"
+},
+{
+"page": 278,
+"yellow": 1968,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 58,
+"hires": 58
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [],
+"kind": "notes"
+},
+{
+"page": 279,
+"yellow": 1968,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 42,
+"hires": 43
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 280,
+"yellow": 2448,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 64,
+"hires": 64
+},
+"options": {
+"native": [
+"A"
+],
+"hires": [
+"A",
+"B"
+]
+},
+"flags": [
+"few-options",
+"options-differ"
+],
+"kind": "answered"
+},
+{
+"page": 281,
+"yellow": 3004,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 59,
+"hires": 59
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [],
+"kind": "notes"
+},
+{
+"page": 282,
+"yellow": 3016,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 38,
+"hires": 39
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [],
+"kind": "notes"
+},
+{
+"page": 283,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 87,
+"hires": 87
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [],
+"kind": "notes"
+},
+{
+"page": 284,
+"yellow": 1624,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 78,
+"hires": 78
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [],
+"kind": "notes"
+},
+{
+"page": 285,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 120,
+"hires": 119
+},
+"options": {
+"native": [
+"A"
+],
+"hires": [
+"A"
+]
+},
+"flags": [],
+"kind": "other"
+},
+{
+"page": 286,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 96,
+"hires": 96
+},
+"options": {
+"native": [
+"A"
+],
+"hires": [
+"A"
+]
+},
+"flags": [],
+"kind": "other"
+},
+{
+"page": 287,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 24,
+"hires": 25
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [
+"thin"
+],
+"kind": "notes"
+},
+{
+"page": 288,
+"yellow": 2012,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 59,
+"hires": 62
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [],
+"kind": "notes"
+},
+{
+"page": 289,
+"yellow": 2012,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 44,
+"hires": 45
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [],
+"kind": "notes"
+},
+{
+"page": 290,
+"yellow": 1988,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 28,
+"hires": 28
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [],
+"kind": "notes"
+},
+{
+"page": 291,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 46,
+"hires": 45
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [],
+"kind": "notes"
+},
+{
+"page": 292,
+"yellow": 1448,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 42,
+"hires": 42
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [],
+"kind": "notes"
+},
+{
+"page": 293,
+"yellow": 3924,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 57,
+"hires": 57
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [],
+"kind": "notes"
+},
+{
+"page": 294,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 1,
+"hires": 1
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [
+"thin"
+],
+"kind": "notes"
+},
+{
+"page": 295,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 33,
+"hires": 33
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 296,
+"yellow": 1768,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 60,
+"hires": 60
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 297,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 60,
+"hires": 60
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 298,
+"yellow": 1956,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 85,
+"hires": 85
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 299,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 21,
+"hires": 21
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [
+"thin"
+],
+"kind": "question"
+},
+{
+"page": 300,
+"yellow": 1360,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 37,
+"hires": 37
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 301,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 60,
+"hires": 60
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 302,
+"yellow": 1956,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 94,
+"hires": 94
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 303,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 32,
+"hires": 32
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 304,
+"yellow": 1300,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 62,
+"hires": 62
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 305,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 60,
+"hires": 61
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 306,
+"yellow": 1676,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 142,
+"hires": 142
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 307,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 61,
+"hires": 61
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 308,
+"yellow": 1132,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 60,
+"hires": 61
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 309,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 29,
+"hires": 30
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 310,
+"yellow": 1940,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 29,
+"hires": 30
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 311,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 46,
+"hires": 46
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 312,
+"yellow": 2028,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 46,
+"hires": 46
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 313,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 57,
+"hires": 56
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 314,
+"yellow": 1668,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 57,
+"hires": 56
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 315,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 49,
+"hires": 49
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 316,
+"yellow": 1844,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 49,
+"hires": 49
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 317,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 62,
+"hires": 62
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 318,
+"yellow": 5260,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 47,
+"hires": 47
+},
+"options": {
+"native": [
+"A",
+"C",
+"D"
+],
+"hires": [
+"A",
+"C",
+"D"
+]
+},
+"flags": [
+"few-options"
+],
+"kind": "answered"
+},
+{
+"page": 319,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 94,
+"hires": 95
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 320,
+"yellow": 5160,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 93,
+"hires": 94
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 321,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 34,
+"hires": 34
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 322,
+"yellow": 2128,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 34,
+"hires": 34
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 323,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 34,
+"hires": 34
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 324,
+"yellow": 1708,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 34,
+"hires": 34
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 325,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 32,
+"hires": 32
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 326,
+"yellow": 1504,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 32,
+"hires": 32
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 327,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 63,
+"hires": 64
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 328,
+"yellow": 3752,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 63,
+"hires": 51
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"C",
+"D"
+]
+},
+"flags": [
+"options-differ"
+],
+"kind": "answered"
+},
+{
+"page": 329,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 70,
+"hires": 70
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D",
+"E"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D",
+"E"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 330,
+"yellow": 1676,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 70,
+"hires": 70
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D",
+"E"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D",
+"E"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 331,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 47,
+"hires": 48
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 332,
+"yellow": 2108,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 46,
+"hires": 48
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 333,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 51,
+"hires": 52
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 334,
+"yellow": 2408,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 51,
+"hires": 52
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 335,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 56,
+"hires": 56
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 336,
+"yellow": 1980,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 56,
+"hires": 56
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 337,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 39,
+"hires": 39
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 338,
+"yellow": 2264,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 39,
+"hires": 39
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 339,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 43,
+"hires": 44
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 340,
+"yellow": 1088,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 44,
+"hires": 44
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 341,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 44,
+"hires": 44
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 342,
+"yellow": 2528,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 44,
+"hires": 44
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 343,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 1,
+"hires": 1
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [
+"thin"
+],
+"kind": "notes"
+},
+{
+"page": 344,
+"yellow": 712,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 84,
+"hires": 83
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [],
+"kind": "notes"
+},
+{
+"page": 345,
+"yellow": 2380,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 43,
+"hires": 43
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [],
+"kind": "notes"
+},
+{
+"page": 346,
+"yellow": 2384,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 71,
+"hires": 71
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [],
+"kind": "notes"
+},
+{
+"page": 347,
+"yellow": 2576,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 41,
+"hires": 42
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [],
+"kind": "notes"
+},
+{
+"page": 348,
+"yellow": 2576,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 42,
+"hires": 42
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [],
+"kind": "notes"
+},
+{
+"page": 349,
+"yellow": 1796,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 65,
+"hires": 66
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [],
+"kind": "notes"
+},
+{
+"page": 350,
+"yellow": 1796,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 52,
+"hires": 52
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [],
+"kind": "notes"
+},
+{
+"page": 351,
+"yellow": 1796,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 45,
+"hires": 47
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [],
+"kind": "notes"
+},
+{
+"page": 352,
+"yellow": 1796,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 18,
+"hires": 18
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [
+"thin"
+],
+"kind": "notes"
+},
+{
+"page": 353,
+"yellow": 2748,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 62,
+"hires": 59
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [],
+"kind": "notes"
+},
+{
+"page": 354,
+"yellow": 3200,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 56,
+"hires": 56
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [],
+"kind": "notes"
+},
+{
+"page": 355,
+"yellow": 7956,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 91,
+"hires": 91
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [],
+"kind": "notes"
+},
+{
+"page": 356,
+"yellow": 4592,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 84,
+"hires": 87
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [],
+"kind": "notes"
+},
+{
+"page": 357,
+"yellow": 7980,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 112,
+"hires": 112
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [],
+"kind": "notes"
+},
+{
+"page": 358,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 1,
+"hires": 1
+},
+"options": {
+"native": [],
+"hires": []
+},
+"flags": [
+"thin"
+],
+"kind": "notes"
+},
+{
+"page": 359,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 27,
+"hires": 27
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 360,
+"yellow": 2348,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 48,
+"hires": 48
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 361,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 27,
+"hires": 27
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 362,
+"yellow": 2432,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 48,
+"hires": 43
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"D"
+]
+},
+"flags": [
+"options-differ"
+],
+"kind": "answered"
+},
+{
+"page": 363,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 32,
+"hires": 32
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 364,
+"yellow": 3884,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 45,
+"hires": 53
+},
+"options": {
+"native": [
+"A",
+"B",
+"D"
+],
+"hires": [
+"A",
+"B",
+"D"
+]
+},
+"flags": [
+"few-options"
+],
+"kind": "answered"
+},
+{
+"page": 365,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 27,
+"hires": 27
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 366,
+"yellow": 2164,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 50,
+"hires": 50
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 367,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 53,
+"hires": 53
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 368,
+"yellow": 896,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 82,
+"hires": 84
+},
+"options": {
+"native": [
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [
+"options-differ"
+],
+"kind": "answered"
+},
+{
+"page": 369,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 38,
+"hires": 38
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 370,
+"yellow": 1808,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 65,
+"hires": 65
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"D"
+]
+},
+"flags": [
+"options-differ"
+],
+"kind": "answered"
+},
+{
+"page": 371,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 18,
+"hires": 18
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [
+"thin"
+],
+"kind": "question"
+},
+{
+"page": 372,
+"yellow": 1444,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 43,
+"hires": 43
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 373,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 47,
+"hires": 47
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 374,
+"yellow": 2080,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 85,
+"hires": 85
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"D"
+]
+},
+"flags": [
+"options-differ"
+],
+"kind": "answered"
+},
+{
+"page": 375,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 27,
+"hires": 27
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 376,
+"yellow": 1172,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 56,
+"hires": 56
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 377,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 26,
+"hires": 26
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [
+"thin"
+],
+"kind": "question"
+},
+{
+"page": 378,
+"yellow": 1220,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 81,
+"hires": 80
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 379,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 56,
+"hires": 56
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 380,
+"yellow": 2144,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 86,
+"hires": 86
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 381,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 40,
+"hires": 40
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 382,
+"yellow": 1780,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 42,
+"hires": 43
+},
+"options": {
+"native": [
+"A",
+"B",
+"D"
+],
+"hires": [
+"A",
+"B",
+"D"
+]
+},
+"flags": [
+"few-options"
+],
+"kind": "answered"
+},
+{
+"page": 383,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 49,
+"hires": 49
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 384,
+"yellow": 1476,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 49,
+"hires": 49
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 385,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 24,
+"hires": 23
+},
+"options": {
+"native": [
+"A",
+"C",
+"D"
+],
+"hires": [
+"A",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 386,
+"yellow": 1728,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 24,
+"hires": 23
+},
+"options": {
+"native": [
+"A",
+"C",
+"D"
+],
+"hires": [
+"A",
+"C",
+"D"
+]
+},
+"flags": [
+"few-options"
+],
+"kind": "answered"
+},
+{
+"page": 387,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 47,
+"hires": 47
+},
+"options": {
+"native": [
+"A",
+"C",
+"D"
+],
+"hires": [
+"A",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 388,
+"yellow": 2316,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 47,
+"hires": 47
+},
+"options": {
+"native": [
+"A",
+"C",
+"D"
+],
+"hires": [
+"A",
+"C",
+"D"
+]
+},
+"flags": [
+"few-options"
+],
+"kind": "answered"
+},
+{
+"page": 389,
+"yellow": 524,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 26,
+"hires": 26
+},
+"options": {
+"native": [
+"A",
+"C",
+"D"
+],
+"hires": [
+"A",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 390,
+"yellow": 2016,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 26,
+"hires": 26
+},
+"options": {
+"native": [
+"A",
+"C",
+"D"
+],
+"hires": [
+"A",
+"C",
+"D"
+]
+},
+"flags": [
+"few-options"
+],
+"kind": "answered"
+},
+{
+"page": 391,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 43,
+"hires": 43
+},
+"options": {
+"native": [
+"A",
+"C",
+"D"
+],
+"hires": [
+"A",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 392,
+"yellow": 5824,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 31,
+"hires": 31
+},
+"options": {
+"native": [
+"C",
+"D"
+],
+"hires": [
+"C",
+"D"
+]
+},
+"flags": [
+"few-options"
+],
+"kind": "answered"
+},
+{
+"page": 393,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 78,
+"hires": 80
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 394,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 79,
+"hires": 80
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 395,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 55,
+"hires": 56
+},
+"options": {
+"native": [
+"A",
+"C",
+"D"
+],
+"hires": [
+"A",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 396,
+"yellow": 5200,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 55,
+"hires": 55
+},
+"options": {
+"native": [
+"A",
+"C",
+"D"
+],
+"hires": [
+"A",
+"C",
+"D"
+]
+},
+"flags": [
+"few-options"
+],
+"kind": "answered"
+},
+{
+"page": 397,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 23,
+"hires": 23
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 398,
+"yellow": 1824,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 23,
+"hires": 23
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 399,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 57,
+"hires": 57
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 400,
+"yellow": 4192,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 57,
+"hires": 56
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 401,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 49,
+"hires": 49
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 402,
+"yellow": 1800,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 49,
+"hires": 49
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 403,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 48,
+"hires": 48
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 404,
+"yellow": 1816,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 47,
+"hires": 48
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 405,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 66,
+"hires": 66
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 406,
+"yellow": 4000,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 66,
+"hires": 66
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 407,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 68,
+"hires": 69
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 408,
+"yellow": 2544,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 68,
+"hires": 69
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 409,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 61,
+"hires": 61
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 410,
+"yellow": 2044,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 61,
+"hires": 61
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 411,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 72,
+"hires": 72
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 412,
+"yellow": 1276,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 72,
+"hires": 74
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C"
+]
+},
+"flags": [
+"options-differ"
+],
+"kind": "answered"
+},
+{
+"page": 413,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 49,
+"hires": 48
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 414,
+"yellow": 2024,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 49,
+"hires": 48
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
+},
+{
+"page": 415,
+"yellow": 520,
+"answered": false,
+"native_copy": true,
+"words": {
+"native": 50,
+"hires": 50
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "question"
+},
+{
+"page": 416,
+"yellow": 1796,
+"answered": true,
+"native_copy": true,
+"words": {
+"native": 50,
+"hires": 50
+},
+"options": {
+"native": [
+"A",
+"B",
+"C",
+"D"
+],
+"hires": [
+"A",
+"B",
+"C",
+"D"
+]
+},
+"flags": [],
+"kind": "answered"
 }
 ]
