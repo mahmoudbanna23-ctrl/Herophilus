@@ -29,8 +29,9 @@ So these now belong on rung 1 (fleet / OmniRoute), not on a Claude subagent:
 - ⚠️ **OCR text is a search index, never a clinical source.** Confirm every fact against the rendered
   page. **Never take an exponent, a unit or a dose from OCR** — WPS read a printed 10⁶ as 10⁹ and
   also flattens 10⁶ to 106. That is a plausible wrong number, not visible garbage.
-- **Vision never leaves Claude.** Looking at a scan, a crop, a figure or a render is a Claude
-  subagent or Codex. OmniRoute cannot look at anything at all.
+- ~~**Vision never leaves Claude.**~~ **SUPERSEDED 2026-09-15** (`CLAUDE.md` §8): vision goes
+  Codex `-i` → gateway `auto/vision` → Gemini by key → Claude last. `auto/*` now allowed; the
+  prefix bans below still stand.
 - **Verification of fleet output never leaves Claude.**
 - **The OmniRoute prefix bans stand** — never `dva/` `cxa/` `aug/` `zc/`, never `auto/*`, never a Web
   Cookie provider, and **select by prefix allowlist, never by matching text in a model id** (a

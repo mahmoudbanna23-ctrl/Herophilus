@@ -185,6 +185,14 @@ No test framework — verification is ad-hoc but must actually run:
   copy it out of the scratchpad if it has been cleaned.
 - Real bugs worth re-testing, the list: **MOVED 2026-09-02** to `reference.md`, `## Moved from CLAUDE.md - 2026-09-02`.
 
+## 8. Delegation — the one rule (owner 2026-09-15)
+
+Supersedes `PLAN-sprint-to-17-sep.md` §4 "Never delegated", `WORKFLOW-who-does-what.md` "Never" column, `UPDATE-ophtho-2026-09-07.md` "Vision never leaves Claude".
+- **Claude only — judgement:** key adjudication · fold decisions · the splice · any git write · the final medical read · edits to `CLAUDE.md` / `MEMORY.md`.
+- **Everything else goes to the fleet** per root `CLAUDE.md` §9, vision ladder included: staging, page reads, OCR, drafting, `imgAlt`, merges, key-file edits. Each result passes a script check and an independent checker (never the seat that made it) before Claude judges it.
+- **Gateway:** `auto/*` combos allowed. Still banned: prefixes `dva/` `cxa/` `aug/` `zc/` and any Web Cookie provider — select by prefix allowlist, never by text match in a model id.
+- `Tools\guard\route-guard.js` refuses a Claude drafter while the gateway is up unless the prompt opens `ROUTE-OK: <reason>`.
+
 ---
 
 @MEMORY.md

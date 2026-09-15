@@ -64,6 +64,8 @@ rate, not the system's. **~311 questions is two solid blocks.**
 
 ### Never delegated, to any agent
 
+> ⚠️ **SUPERSEDED 2026-09-15** by `CLAUDE.md` §8 — only key adjudication, folds, splice, git, the final medical read stay Claude; staging and `imgAlt` go to the fleet.
+
 Staging (vision, duplex show-through, 600 dpi band crops for every numeral) · key adjudication ·
 fold decisions (six shapes; one moves the key letter) · `imgAlt` (must not answer the question) ·
 the splice · any git write · the final medical read.

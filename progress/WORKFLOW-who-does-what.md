@@ -1,5 +1,7 @@
 # The workflow — who does what, and what gates each handoff
 
+> ⚠️ **Delegation lines SUPERSEDED 2026-09-15** by `CLAUDE.md` §8 and root `CLAUDE.md` §9 — the "Free fleet: nothing" row and the agy ban no longer stand; measured results below still do.
+
 Written 2026-09-03, after the Codex vision test passed (`vision-test-2026-09-03-codex-staging.md`)
 and the Codex audit lane failed (`audit-2026-09-03-silent-defects.md`). Both results are measured,
 not estimated. **Supersedes `PLAN-sprint-to-17-sep.md` §4's "staging is never delegated"** — staging
