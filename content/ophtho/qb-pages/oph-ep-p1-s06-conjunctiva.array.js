@@ -15,7 +15,7 @@ var OPHEP_S06_STAGED = [
   stem:"Causes of conjunctival follicles EXCEPT:",
   opts:["Trachoma","Local drug toxicity","Vernal conjunctivitis","Adenoviral conjunctivitis"],
   expl:"",
-  boxPrinted:true,
+  boxPrinted:false,
   keySource:"Recorded in content/ophtho/qb-pages/oph-ep-s06-keys.md, 2026-09-15. Not re-run or re-derived by this script.",
   keypos:{"visualIndex":2,"keyposIndex":1,"agree":false},
   numberCheck:false,
@@ -269,7 +269,7 @@ var OPHEP_S06_STAGED = [
   keySource:"Recorded in content/ophtho/qb-pages/oph-ep-s06-keys.md, 2026-09-15. Not re-run or re-derived by this script.",
   keypos:{"visualIndex":3,"keyposIndex":3,"agree":true},
   numberCheck:true,
-  note:"KEY: 3 (D), from oph-ep-s06-keys.md; not re-derived here. NUMBER CHECK: stem/options contain a number, unit, dose, exponent, arrow or dash; verify against the page image before drafting. NO EXPLANATION BOX PRINTED per oph-ep-s06-keys.md -- the draft explanation must be authored from source, not copied from a box." },
+  note:"KEY: 3 (D), from oph-ep-s06-keys.md; not re-derived here. NUMBER CHECK: stem/options contain a number, unit, dose, exponent, arrow or dash; verify against the page image before drafting. NO EXPLANATION BOX PRINTED per oph-ep-s06-keys.md -- the draft explanation must be authored from source, not copied from a box. NOT A FOLD with n:17 (p.476): same options and key, stem reworded 'drug'->'medication', box moved -- boxed-second-printing shape, but no discriminating token exists to pair on either; both transcribed and drafted normally per house-c15 precedent, draft explanation cross-references n:17's id to satisfy the shared-menu check." },
 
 { n:27, p:496, key:0,
   stem:"A 2-year-old child is brought by his parents to the ophthalmology clinic. They report that he suffers from red eye, itching and excessive lacrimation especially during spring and summer seasons. Examination revealed mild papillary reaction coupled with conjunctival injection. Which of the following is the most likely diagnosis?",
