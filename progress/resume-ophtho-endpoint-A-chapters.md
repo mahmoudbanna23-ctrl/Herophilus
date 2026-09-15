@@ -501,3 +501,16 @@ the fifth block above is DEFERRED until then — do not resume s13 staging next.
   rung 5/6 applies directly), not Gemini. After a draft exists: `val-oph-ep.js --part 1 6`,
   independent check (different house from whoever drafts), then splice + commit.
 - Session hit its ~80-step budget here — stop, `/prep`, resume from this block.
+
+## 2026-09-16 (autonomous tick, cont'd)
+- Committed the s6 array.js fix + docs from the block above: `98da2d6`. `git status` clean for
+  ophtho paths now (only an unrelated OpenAI CLI credential folder, a code-search tool cache, and
+  the now-stale Codex draft brief `content/ophtho/qb-pages/oph-ep-codex-s06-draft.brief.md` remain
+  untracked -- that brief still asks for Steps 1+2, which are done; do not hand it to a worker
+  as-is, write a Step-3-only brief).
+- Confirmed (again) the prior Codex draft attempt (23:48 2026-09-15,
+  `<scratch>/s06-codex-run.log`) failed on `refresh_token_invalidated` -- same dead OpenAI login,
+  not re-attempted.
+- Did NOT start Step 3 (draft.js) this tick -- step-budget hook fired first. Next session: write a
+  Step-3-only brief (chapter id confirmed `op-conj` in `tools/bank-harness/sec-oph.js:11`) and
+  route to `lean-drafter`, per CLAUDE.md §9 rung 5/6.
