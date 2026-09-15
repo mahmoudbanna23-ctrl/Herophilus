@@ -55,10 +55,9 @@ all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **Th
   ≡ House ch.10 = 27% of that chapter; **nothing folds mid-stream**, and **`pedhd-card-6..10` must NOT
   be folded** (5 identical stems, 5 different figures). Log: `resume-peds.md` tail. Pruned detail ->
   archive, `## Pruned from MEMORY.md - 2026-09-05`.
-- ⏳ **NEURO — 355 live** (t09 Coma CLOSED 2026-09-15, 333->355; Grade Gain Psychiatry CLOSED
-  2026-09-08). **Topic 10 "Movement Disorders" (Q199-227): drafted, refuter-fixed+reverified PASS,
-  swept (0 folds, 2 template-collision false positives adjudicated), UNCOMMITTED. Next: splice
-  355->384, commit.** t11-14 to PDF 69 next. Close-out detail: `progress\resume-neuro.md` "Topic 10".
+- ⏳ **NEURO — 384 live** (t09 Coma CLOSED 2026-09-15, 333->355; t10 Movement Disorders CLOSED
+  2026-09-16, 355->384, 0 folds, marker 259->281; Grade Gain Psychiatry CLOSED 2026-09-08).
+  **Next: t11-14 to PDF 69, staging first.** Close-out detail: `progress\resume-neuro.md` "Topic 10".
   ⚠️ **Renders die with the scratchpad** — re-render ~45 s, OCR is the rate-limited part. ⚠️ **Bank
   is GRADE GAIN, ONE book page per sheet, A4, NOT 2-up** — do not carry peds/ophtho House arithmetic
   across. ⚠️⚠️ **OFFSET IS NOT GLOBAL: neuropsychiatry PDF = book + 5, neurosurgery PDF = book + 7.

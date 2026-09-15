@@ -1444,7 +1444,7 @@ stroke", and appears to run past the page edge. Q194 carries a waveform figure, 
 Topics 10–14, book pp.41–64 = PDF 46–69. Topic 09 CLOSED (below). Topic 10 staged and
 verified (below) — draft expansion is the next step.
 
-## Topic 10 "Movement Disorders" — state at 2026-09-15
+## Topic 10 "Movement Disorders" — CLOSED 2026-09-16
 
 Book pp.41-44 (PDF 046-049) questions, pp.44-45 (PDF 049-050) answers. Contents page
 promised 23; **29 actually print, Q199-227** — this bank's contents page has never once
@@ -1461,17 +1461,63 @@ restored verbatim. Independent Opus-refuter check against all 6 images: **all 29
 verified letter-by-letter, correct; stems/options/boxes verified; pg-051 confirmed
 holding nothing from this topic** (next topic's banner, Q228+). Clean.
 
-**Not done:** draft expansion to writing budget, refuter review, sweep, splice — same
-pipeline as t09.
+**Draft, refuter review and fix cycle done (untracked on disk, not yet committed):**
+Codex solo built `gg-nr-t10.draft-A.js` (Q199-213, 15 entries, boxed 199/200/202/203/211)
+and `gg-nr-t10.draft-B.js` (Q214-227, 14 entries, boxed 219/225) to writing budget. A
+Codex-written mechanical frozen-field script (`SCRATCH/frozen-check.js`) passed clean —
+stems/options/answers/boxes unchanged vs staging. An independent Opus refuter reviewed
+both drafts: draft-A clean bar one low-severity note (Q200 reproduces a lecture line
+about no-single-gold-standard-strategy — re-read and judged NOT a real contradiction,
+levodopa-is-broad-gold-standard vs anticholinergics-are-tremor-predominant-choice are
+reconcilable and already reconciled in the prose; left as-is); draft-B **FAILED** — 13
+entries leaked internal bookkeeping sentences ("The printed key maps B to index 1.")
+into the student-facing `explanation`, Q219/Q225 didn't label their boxed quote to match
+draft-A's "The printed box says:" convention, Q219 had a grammar slip, and Q224 leaked
+`keyName`-is-null meta-commentary and needed the lecture-vs-key divergence stated
+explicitly (lecture: "onset after age 60" implies **seventh** decade; bank's printed key
+selects **Sixth decade** — per "a defective key is noted, never disputed" the answer
+stays Sixth decade, index 1, unmoved). Per "Codex never revises what Codex drafted," a
+Claude session fixed draft-B directly (Codex drafted it, so Codex could not do the fix).
+A second, independent Opus refuter re-reviewed the fixed file: **PASS**, all 7 checks
+clean, Q224's rewrite cross-checked against `L3) MOVEMENT DISORDERS.txt` line-by-line.
 
-**Route state at 2026-09-15 ~22:15 (supersedes the 19:24 note below):** Codex solo is
-back (`gpt-5.6-terra` probed live). Gateway healthy but `big-pickle`/other OpenCode free
-models blocked by OpenCode's own limit until ~03:00 — not a gateway fault, don't debug
-it. Most `auto/*` combos now land on unconfirmed-payer Claude/GPT — treat as paid, avoid.
-Free+live on gateway: `groq/openai/gpt-oss-120b` (small jobs, 8k cap), `gemini/gemini-flash-latest`.
-Fleet direct: vibe, grok live; agy, opencode down. Order: Codex solo → gateway free model →
-fleet direct → Claude helpers (ROUTE-OK required). Probe with "pong" before any batch;
-drop a dead route at once, never retry-loop.
+**Sweep done, zero folds, both hits hand-adjudicated as false positives:**
+`tools/qb-pipeline/sweep.js` expects a `*.draft.js`-suffixed bare-object file for its
+draft loader (`/\.draft\.js$/`) — our `.draft-A.js`/`.draft-B.js` names miss that regex
+and silently fall through to the corpus loader, which throws on bare object syntax (the
+2026-09-02 lib.js note claiming this "works by luck" is wrong, unverified by a real run —
+fix by copying to a scratch file named `*.draft.js` before sweeping, never rename the
+repo file). Instrument verified first with a planted exact clone + planted
+reordered-option clone (both caught correctly, stage A and stage C) before trusting the
+real result. Real sweep: 29 incoming (draft-A+B combined) × 355 shipped = 10,295 cross
+pairs + 406 within-batch pairs. **2 candidates, 0 folds:**
+- `npqb-nr-207` vs `npqb-nr-212` (within-batch, dice 1.00) — both stems say "cardinal
+  feature of parkinsonism is," but option sets are fully disjoint (rigidity/spasticity/
+  planter-response/steroids/gait vs bradykinesia/micrographia/monotonous-speech) with
+  different keyed answers. Same fact tested two different ways by the printed source,
+  not a fold shape — kept both.
+- `npqb-nr-223` vs `npqb-ps-129` (cross-corpus, dice 0.75) — shared templated stem
+  ("Which of the following is NOT typically associated with ___?") over unrelated
+  diseases (chorea vs dementia, different chapters `nr-movement`/`ps-geri`), fully
+  different option sets. Template collision, not a fold — kept both.
+
+**Splice done and committed.** `app/data/questions.neuro.js`: 355 → **384** (29 new,
+0 folds — matches prediction exactly). Draft entries copied verbatim, never
+re-serialised. Verified from disk: count 384, 0 sparse holes, 0 duplicate ids, all 29
+new ids present exactly once, all answers in range, correct chapter/module on every new
+entry, marker count 259 → 281 (+22, exact prediction). Boot-check clean, 0 console
+errors (`QUESTIONS 4049` unchanged — neuropsych is `LOCKED_MODULES`, doesn't move the
+aggregator's live count).
+
+**Commits:** `2f017f6` (drafts + briefs: `gg-nr-t10.draft-A.js`, `gg-nr-t10.draft-B.js`,
+`t10-briefs/codex-finish-A.md`, `codex-finish-B.md`, `codex-frozen.md`), `d00f32c` (the
+splice itself). Staging commit was earlier: `62abba5`. All done, nothing left on t10.
+
+**Route state — last probed 2026-09-15 ~22:15, RE-PROBE BEFORE TRUSTING:** Codex solo
+was live (`gpt-5.6-terra`); gateway healthy but OpenCode free models were rate-limited
+until ~03:00; most `auto/*` combos were landing on unconfirmed-payer seats, treat as
+paid. This is now stale — probe fresh with "pong" before any batch, drop a dead rung at
+once, never retry-loop.
 
 ## Topic 09 "Coma" — CLOSED 2026-09-15
 
