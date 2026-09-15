@@ -8,14 +8,6 @@ var S04_DRAFT_LACRIMAL_SYSTEM = [
   objective:"The Meibomian glands secrete the outer oily layer of the tear film, which prevents tear evaporation.",
   source:"Opthalmology endpoint.pdf p.295" },
 
-{ id:"ophep-lacrimal-system-2", bank:"endpoint", module:"ophtho", chapter:"op-lac",
-  stem:"A 59-year-old lady presented with chronic painless tearing and recurrent conjunctivitis in her right eye over the last year. On examination, there was a positive regurge test on the affected side. Which of the following is the treatment of choice?",
-  options:["Digital massage of the lacrimal sac","Nasolacrimal duct probing","Dacryocystorhinostomy","Systemic antibiotics"],
-  answer:2,
-  explanation:"**The endpoint file prints this explanation:**\n\n> Chronic dacryocystitis due to nasolacrimal duct obstruction is treated surgically by DCR, which creates a new drainage pathway between the lacrimal sac and nasal cavity.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*",
-  objective:"Chronic dacryocystitis due to nasolacrimal duct obstruction is treated surgically by DCR, which creates a new drainage pathway between the lacrimal sac and nasal cavity.",
-  source:"Opthalmology endpoint.pdf p.297" },
-
 { id:"ophep-lacrimal-system-3", bank:"endpoint", module:"ophtho", chapter:"op-lac",
   stem:"To diagnose dry eye we do:",
   options:["Canalicular probing","Regurge test","Schirmer test","Fluorescein dye test"],
@@ -28,9 +20,9 @@ var S04_DRAFT_LACRIMAL_SYSTEM = [
   stem:"A 59-year-old lady presented with chronic painless tearing and recurrent conjunctivitis in her right eye over the last year. On examination, there was a positive regurge test on the affected side. Which of the following is the treatment of choice?",
   options:["Digital massage of the lacrimal sac","Nasolacrimal duct probing","Dacryocystorhinostomy","Systemic antibiotics"],
   answer:2,
-  explanation:"**The endpoint file prints this explanation:**\n\n> Chronic dacryocystitis due to nasolacrimal duct obstruction is treated surgically by DCR, which creates a new passage between the lacrimal sac and nasal cavity. Massage or probing is only for congenital or early cases.\n\nThis question shares its option menu with `ophep-lacrimal-system-2`; read the two together.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*",
+  explanation:"**The endpoint file prints this explanation:**\n\n> Chronic dacryocystitis due to nasolacrimal duct obstruction is treated surgically by DCR, which creates a new passage between the lacrimal sac and nasal cavity. Massage or probing is only for congenital or early cases.\n\nThe file prints the same question again on p.297, and its shorter box reads `drainage pathway` where this one reads `passage` and omits the final sentence on massage or probing.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*",
   objective:"Chronic dacryocystitis due to nasolacrimal duct obstruction is treated surgically by DCR, which creates a new passage between the lacrimal sac and nasal cavity.",
-  source:"Opthalmology endpoint.pdf p.301" },
+  source:"Opthalmology endpoint.pdf p.301 (the same question is printed again on p.297)" },
 
 { id:"ophep-lacrimal-system-5", bank:"endpoint", module:"ophtho", chapter:"op-lac",
   stem:"Which of the following is the structure responsible for secreting inner mucus layer of tear film?",

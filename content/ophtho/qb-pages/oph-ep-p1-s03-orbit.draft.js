@@ -28,9 +28,9 @@ var S03_DRAFT_ORBIT = [
   stem:"A 25-year-old male patient presented with left enophthalmos. He gave history of receiving a punch in that eye 6 months ago. On examination, there was hypoesthesia over the left side of the nose, upper lip, upper teeth, and gum. Which of the following nerves is commonly affected?",
   options:["Infraorbital","Supratrochlear","Supraorbital","Facial"],
   answer:0,
-  explanation:"**The endpoint file prints this explanation:**\n\n> A blow-out fracture of the orbital floor damages the infraorbital nerve, leading to numbness over the cheek, upper lip, and gums. Enophthalmos and restricted eye movement may also occur.\n\nThe file prints the same question again on p.244, and its box reads `upper teeth` where this one reads `gums`.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*",
+  explanation:"**The endpoint file prints this explanation:**\n\n> A blow-out fracture of the orbital floor damages the infraorbital nerve, leading to numbness over the cheek, upper lip, and gums. Enophthalmos and restricted eye movement may also occur.\n\nThe file prints the same question again on p.243, and its box reads `upper teeth` where this one reads `gums`.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*",
   objective:"Blow-out fracture of the orbital floor damages the infraorbital nerve, producing numbness over the cheek, upper lip and gums along with enophthalmos.",
-  source:"Opthalmology endpoint.pdf p.237 (the same question is printed again on p.244)" },
+  source:"Opthalmology endpoint.pdf p.237 (the same question is printed again on p.243)" },
 
 { id:"ophep-orbit-5", bank:'endpoint', module:'ophtho', chapter:'op-orbit',
   stem:"What is the distance between the tip of the cornea and the plane of the lateral orbital margin?",
@@ -62,7 +62,7 @@ var S03_DRAFT_ORBIT = [
   answer:3,
   explanation:"**The endpoint file prints this explanation:**\n\n> Blow-out fracture most frequently involves the floor of the orbit along the thin bone covering the infraorbital canal. Sometimes, the medial orbital wall may also be fractured. Those thin walls of the orbit separate the orbital cavity from the surrounding nasal sinuses.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*",
   objective:"The orbital floor, the thin bone over the infraorbital canal, is the site most often involved in a blow-out fracture; the medial wall is next most common.",
-  source:"Opthalmology endpoint.pdf p.247 (the same question is printed again on p.268)" },
+  source:"Opthalmology endpoint.pdf p.247 (the same question is printed again on p.267)" },
 
 { id:"ophep-orbit-10", bank:'endpoint', module:'ophtho', chapter:'op-orbit',
   stem:"Proptosis can be assessed by which of the following devices?",
