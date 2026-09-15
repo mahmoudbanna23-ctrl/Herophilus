@@ -56,3 +56,25 @@ owner's own artwork — she is never redrawn and nothing is ever drawn onto her.
 The subject page stays a contents list for now. The owner's "this whole thing needs redesigning"
 was said about it, but that is Phase 2 work — rolling it back to the old card grid would spend the
 week undoing something that is going to be rebuilt anyway.
+
+---
+
+## Correction — 2026-09-08
+
+The section above is wrong about the subject page, and it was wrong on the day it
+was written. The owner's framing of the whole interview was *"Interview me to see
+what we rollback and what keeps"* — a rollback interview. Three of the four
+answers were honoured: depth restored (`ae9a7b9`), grounds lifted and subject
+colour added (`ea75502`), the running score left out. The fourth, the subject
+page, was read as a Phase 2 deferral and left standing.
+
+The owner said plainly on 2026-09-08 that the rollback we agreed on had not been
+done. The list is gone as of `f2dc218` — the subject page is a field of cards
+again, the same look Weak, Session, Schedule and the profile switcher never lost.
+
+The reading that produced the error is worth naming: *"this whole thing needs
+redesigning to more alive, creative and funny"* was taken as *"leave it, it is
+due for rebuild"*. It is not. It is a verdict on what is there now, and the thing
+it replaced is what the owner had asked to go back to.
+
+Phase 2 below is unchanged.
