@@ -1442,3 +1442,30 @@ stroke", and appears to run past the page edge. Q194 carries a waveform figure, 
 ### Next
 
 Topics 09–14, book pp.37–64 = PDF 42–69.
+
+## Topic 09 "Coma" — state at 2026-09-15 (session stopped by owner for a fresh chat)
+
+**Owner's limits for t09, verbatim (2026-09-15):**
+> - Codex (codex-gw.sh) may: finish the drafts to the word budget, and write/run a script proving stems, options, answers and quoted boxes are unchanged vs staging.
+> - Stays with Claude: the key cross-check, the duplicate decisions, the splice, git.
+> - The reviewer checks Claude-made drafts: a separate Claude refuter, not Codex. If the weekly limit blocks it, stop and tell me. Do not swap in Codex for keys.
+> - Commit after each step, explicit paths only.
+
+**Done (commits):**
+- `6ae9950` `content/neuro/qb-pages/gg-nr-t09-factcheck.md` — the five provenance findings on draft A (pushed).
+- `9e1ebdd` `gg-nr-t09-keycheck.md` — blind Claude key cross-check Q177–Q198: **22/22 letters agree**. Letter/name check **NOT PERFORMED** (staging `keyName` is null throughout). Source defects confirmed on the page: Q186 and Q198 print three options; Q197 option b truncated at "Obtain a repeat brain MRI with". Not pushed.
+- `1549a87` `gg-nr-t09.draft-A.js` — Codex (gateway, opencode-zen/big-pickle) expansion + fact-check fixes. Not pushed.
+- (this commit) `gg-nr-t09-review-A.md` — Opus refuter on `1549a87`: **FAIL, 5 failures, all explanation prose** (F1 Q182 "unopposed" not in L8 · F2 Q181 13 is the BOTTOM of the mild band · F3 Q177 self-contradiction + untagged clause under L10 · F4 untagged outside knowledge in 179/180/183/187 · F5 179/180/181/183/184/185 are gap-fills at 251–283 w, need ~520). Frozen fields, boxes, 9 markers, LF, parse, emoji all PASS. Briefs + Codex's self-report saved under `content/neuro/qb-pages/t09-briefs/`.
+
+**Not done:**
+1. Draft A fix pass against `gg-nr-t09-review-A.md`. ⚠️ Codex made this expansion and Codex never revises what Codex drafted — the fix pass needs a different seat (a Claude lean-drafter, or another fleet seat); confirm with the owner, since the limits name Codex for drafting. Then refuter re-check.
+2. Draft B (`gg-nr-t09.draft-B.js`, Q188–Q198) — unchanged since `89f2189` (previous dead-agent state: mean 489, min 288, max 592 words, 9 markers, 0 emoji; never reviewed). Finish per `t09-briefs/codex-finish.md` half B, then Claude refuter. Known to check: Markdown bold/italic is house style (confirmed by the A review).
+3. Frozen-field script per `t09-briefs/codex-frozen.md` — never produced.
+4. Claude: six-stage duplicate sweep A–F with Gate 0 · splice into `app/data/questions.neuro.js` (333 → 355 predicted, markers 241 → 259) · validate from disk · journal · commit.
+5. Then topics 10–14 (Movement Disorders opens PDF 046, Q199) to PDF 69.
+
+**Blockers found 2026-09-15:**
+- OmniRoute gateway: first `503 Chat admission capacity is temporarily unavailable` (codex-gw run on draft B died after 5 reconnects, no net change), then unreachable ("waiting for network"; MCP `fetch failed`). Owner restarts it with `Desktop\start-omniroute.bat`.
+- Codex on its own login (`gpt-5.6-terra`, `-s workspace-write`): **every command rejected** — `Failed to create unified exec process: helper_unknown_error: apply deny-read ACLs`. Same with the gateway script's `--disable` flags. The Windows sandbox helper is broken; `danger-full-access` was NOT tried (needs owner's say).
+- Page renders PDF 042–050 still in the old session scratchpad `…\874149fd-…\scratchpad\t09\` — a new session's scratchpad starts empty; re-render if gone.
+- `MEMORY.md` neuro line is stale (says "t09 drafts UNCOMMITTED on disk"); it is off this chat's write allowlist.
