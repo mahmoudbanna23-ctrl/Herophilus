@@ -7,7 +7,7 @@ const SEC_P1 = {
   // "upper teeth" where n4's reads "gums") into n4 (marked p.238).
   3: { prefix: 'ophep-orbit-', file: 'oph-ep-p1-s03-orbit.array.js', svar: 'OPHEP_S03_STAGED', draft: 'oph-ep-p1-s03-orbit.draft', chapter: 'op-orbit', pages: [214, 272], ans: null, folded: [7, 19] },
   4: { prefix: 'ophep-lacrimal-system-', file: 'oph-ep-p1-s04-lacrimal-system.array.js', svar: 'OPHEP_S04_STAGED', draft: 'oph-ep-p1-s04-lacrimal-system.draft', chapter: 'op-lac', pages: [273, 342], ans: null, folded: [2] },
-  5: { prefix: 'ophep-eyelids-', file: 'oph-ep-p1-s05-eyelids.array.js', svar: 'OPHEP_S05_STAGED', draft: 'oph-ep-p1-s05-eyelids.draft', chapter: 'op-lid', pages: [343, 416], ans: null },
+  5: { prefix: 'ophep-eyelids-', file: 'oph-ep-p1-s05-eyelids.array.js', svar: 'OPHEP_S05_STAGED', draft: 'oph-ep-p1-s05-eyelids.draft', chapter: 'op-lid', pages: [343, 416], ans: null, folded: [15], figPage: { 1: 360 } },
   6: { prefix: 'ophep-conjunctiva-', file: 'oph-ep-p1-s06-conjunctiva.array.js', svar: 'OPHEP_S06_STAGED', draft: 'oph-ep-p1-s06-conjunctiva.draft', chapter: 'op-conj', pages: [417, 522], ans: null },
   7: { prefix: 'ophep-sclera-', file: 'oph-ep-p1-s07-sclera.array.js', svar: 'OPHEP_S07_STAGED', draft: 'oph-ep-p1-s07-sclera.draft', chapter: 'op-sclera', pages: [523, 559], ans: null },
   8: { prefix: 'ophep-cornea-', file: 'oph-ep-p1-s08-cornea.array.js', svar: 'OPHEP_S08_STAGED', draft: 'oph-ep-p1-s08-cornea.draft', chapter: 'op-cornea', pages: [560, 638], ans: null },
