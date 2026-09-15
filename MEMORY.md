@@ -55,16 +55,15 @@ all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **Th
   ≡ House ch.10 = 27% of that chapter; **nothing folds mid-stream**, and **`pedhd-card-6..10` must NOT
   be folded** (5 identical stems, 5 different figures). Log: `resume-peds.md` tail. Pruned detail ->
   archive, `## Pruned from MEMORY.md - 2026-09-05`.
-- ⏳ **NEURO — 333 live** (nr 169 · ps 164). **✅ GRADE GAIN PSYCHIATRY CLOSED 2026-09-08** — t22+t23
-  spliced, Q1–Q165 whole, every question page 65–93 cited, 0 folds, markers 194->214 as predicted.
-  **Next: t09 Q177 PDF 42; t09 drafts UNCOMMITTED on disk, inspect first**; t10–14 to PDF 69.
-  ⚠️ **Psychiatry keys print BARE LETTERS — the letter/name cross-check is UNAVAILABLE, recorded NOT
-  PERFORMED, never passed**; a second seat re-read all 29 at 400 dpi instead. ⚠️ **Renders die with
-  the scratchpad** — re-render ~45 s, OCR is the rate-limited part. ⚠️ **Bank is GRADE GAIN, ONE book
-  page per sheet, A4, NOT 2-up** — do not carry the peds/ophtho House arithmetic across.
-  ⚠️⚠️ **OFFSET IS NOT GLOBAL: neuropsychiatry PDF = book + 5, neurosurgery PDF = book + 7. In scope
-  = PDF 6–98 ONLY; SKIP 99–140.** ⚠️ **Trust no printed count** — the contents undercounted ten
-  topics running and has never once run high. Full map + method: `progress\resume-neuro.md`.
+- ⏳ **NEURO — 355 live** (t09 Coma CLOSED 2026-09-15, 333->355; Grade Gain Psychiatry CLOSED
+  2026-09-08). **Topic 10 "Movement Disorders" (Q199-227): drafted, refuter-fixed+reverified PASS,
+  swept (0 folds, 2 template-collision false positives adjudicated), UNCOMMITTED. Next: splice
+  355->384, commit.** t11-14 to PDF 69 next. Close-out detail: `progress\resume-neuro.md` "Topic 10".
+  ⚠️ **Renders die with the scratchpad** — re-render ~45 s, OCR is the rate-limited part. ⚠️ **Bank
+  is GRADE GAIN, ONE book page per sheet, A4, NOT 2-up** — do not carry peds/ophtho House arithmetic
+  across. ⚠️⚠️ **OFFSET IS NOT GLOBAL: neuropsychiatry PDF = book + 5, neurosurgery PDF = book + 7.
+  In scope = PDF 6–98 ONLY; SKIP 99–140.** ⚠️ **Trust no printed count** — the contents undercounted
+  ten topics running and has never once run high.
 - **Five-option cap settled; OSCE skipped by user ruling 2026-08-31** — both **PRUNED 2026-09-08 ->**
   archive, `## Pruned from MEMORY.md - 2026-09-08`. Still binding, just no longer re-read every turn.
 

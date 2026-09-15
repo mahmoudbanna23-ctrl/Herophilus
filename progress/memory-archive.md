@@ -1079,3 +1079,22 @@ is dead: both still bind, they just no longer need to be re-read every turn.
   not cut: skip it, say so and why, carry on. Not a scope cut needing approval.
 - **⚠️ Bank sampling and provenance: `progress\memory-archive.md`** — a contents page may print per-section counts (**verify, never trust**); the end-of-ENT "outside knowledge" list is **half wrong**, re-grep item by item; 67 entries record no provenance, roster in `ledger.md` §11.
 - **⚠️ THE THEORY READER IS AN A4 PAGE (2026-08-19, three user complaints) AND MUST NOT BE MADE WHITE.** 210:297 by `aspect-ratio`; **margins set in JS from the PAGE's width** (percentages resolve against the containing block). Mechanics in the archive. **⚠️⚠️ `overflow:hidden` MAKES A BLOCK MONOLITHIC, AND MONOLITHIC MEANS CLIPPED, NOT BROKEN** — `.th-table` silently lost over-tall tables' last rows. Fixed screen-side; print never affected.
+
+## Pruned from MEMORY.md - 2026-09-15  (was MEMORY.md lines 58-67, neuro Resume-here block)
+Superseded by t09 Coma closing (333->355) and Topic 10 draft/review/sweep work landing the same day
+— full detail in `progress\resume-neuro.md` "Topic 10" section. Kept here as history only.
+
+**Grade Gain Psychiatry close-out (closed 2026-09-08):** t22+t23 spliced, Q1-165 whole, every
+question page 65-93 cited, 0 folds, markers went 194->214 as predicted.
+⚠️ **Psychiatry keys print BARE LETTERS — the letter/name cross-check was UNAVAILABLE, recorded NOT
+PERFORMED, never passed**; a second seat re-read all 29 at 400 dpi instead as the substitute check.
+
+**Stale "Next" pointer (dead as of 2026-09-15):** "Next: t09 Q177 PDF 42; t09 drafts UNCOMMITTED on
+disk, inspect first; t10-14 to PDF 69." — t09 Coma closed 2026-09-15 (333->355, committed). Topic 10
+(Q199-227) fully drafted both halves, Opus-refuter reviewed (draft-A clean bar one non-issue at
+Q200, draft-B FAILED 13 bookkeeping-leak findings + Q224 rewrite, fixed by Claude direct per "Codex
+never revises what Codex drafted", independently re-verified PASS all 7 checks), six-stage duplicate
+sweep run (29 incoming x 355 corpus + within-batch, 2 candidates found and hand-adjudicated to 0
+folds: npqb-nr-207/212 disjoint-option same-fact-twice, npqb-nr-223/npqb-ps-129 templated-stem
+cross-chapter collision) — UNCOMMITTED on disk, splice is the remaining step. Superseded pointer:
+`progress\resume-neuro.md` "Topic 10" section carries the full account.
