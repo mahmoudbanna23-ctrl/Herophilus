@@ -455,3 +455,49 @@ the fifth block above is DEFERRED until then — do not resume s13 staging next.
    898+2n/899+2n).
 7. Still separately pending, lower priority: s21 "stages nothing" ruling not implemented in
    `sec-oph.js`.
+
+**2026-09-16 — s6 Conjunctiva Step 1+2 done (box/figure/key confirm + expl transcription); Step 3 (draft.js) NOT started.**
+
+- Vision rung used: Codex solo dead (OAuth `refresh_token_invalidated`, confirmed via run log —
+  needs user re-login before Codex can be used again). OmniRoute gateway dead (`omniroute_get_health`
+  timed out 1800s, no response). Dropped to Gemini by key — `gemini-3.7-flash`, reached via a Node
+  `https` script (raw `curl` is denied by the Bash tool's permission system in this session; Node's
+  `https` module is not). All 39 marked-page images (445–521 odd, 8.8 MB) sent in one call, JSON-only
+  response, STOP finish reason, clean.
+- Script kept for reuse: `<scratchpad>/s06-gemini-dispatch.js` (dispatch) +
+  `<scratchpad>/s06-apply-expl.js` (apply into array.js by `n:`/`p:`/`key:` anchor). Gemini's raw
+  JSON: `<scratchpad>/s06-gemini-text.txt` (39 rows: n, printed_q, box, border_color, expl, figure,
+  figure_desc, key_letter_seen, key_agrees, note) — scratchpad, will not survive a fresh scratchpad.
+- Box status: confirmed box 2–17, 31–35 (21 rows); confirmed NOT boxed 1, 18–30, 36–39 (18 rows) —
+  matches the array's original `note` pattern exactly except n:1 (see below). `expl` filled verbatim
+  for all 21 boxed rows, straight from Gemini's page read (not OCR).
+- **n:1 (p.445) corrected**: array `note` said box printed; confirmed NOT boxed (plain bulleted notes
+  list, not a bordered panel) by two independent reads now (`cl-s06-imagecheck-1-15-report.md` +
+  this Gemini pass). `expl` stays empty, `note` corrected in place. `boxPrinted:true` field left
+  untouched (out of this pass's write grant; the validator gates on `expl` emptiness, not this
+  field, so it does not affect validation — just stale metadata worth fixing whenever the array is
+  next touched).
+- **n:8 (p.459) key FIXED, Claude adjudication**: staged `key` was 3 (from
+  `oph-ep-s06-keys.md`, "confirmed by eye 2026-09-15") — a mistranscription. Gemini's independent
+  read flagged `key_agrees:false` (page highlights option A). Read the page image myself
+  (`<scratchpad>/s06/s06-0459.png`): "a. Tranta spots" is printed highlighted/underlined as correct.
+  Medically this is also the only defensible answer (vernal keratoconjunctivitis with cobblestone
+  papillae -> Horner-Trantas dots; "Kayser-Fleischer rings" is a Wilson's-disease finding, unrelated).
+  This is our own staging error, not the source being wrong, so the "defective key is never disputed"
+  rule does not apply — `key` corrected 3 -> 0, `note` records the correction and why.
+  `oph-ep-s06-keys.md`'s row for n:8 was NOT corrected (out of scope this pass) — flag before trusting
+  that file's key column for n:8 again.
+- No other `key_agrees:false` and no other figure besides n:8 (confirmed, matches prior report).
+  n:14's previously-flagged "0 parsed options" issue is already resolved on disk (keySource note
+  shows it was fixed before this session — 4 options present, confirmed by eye).
+- `node --check` clean on the edited array.js; no mangled-encoding markers (em/en dash render as
+  real U+2013/U+2014, not the Codex cp1252 double-encode pattern).
+- **Still open for s6**: Step 3, the 39-entry `oph-ep-p1-s06-conjunctiva.draft.js` — boxed rows wrap
+  the now-filled `expl` in the boxed template (see `oph-ep-codex-s06-draft.brief.md` Step 3 for the
+  exact marker text), unboxed rows (1, 18–30, 36–39) need an authored explanation from
+  `content/ophtho/lectures/L6) Conjunctiva.txt` + `content/ophtho/book/ch06-conjunctiva.txt`, closed
+  with the unboxed marker. This is text-only, no vision needed — route it to `lean-drafter` (Sonnet)
+  or another fleet text seat per CLAUDE.md §9 rung 5/6 (Codex + gateway both dead this session, so
+  rung 5/6 applies directly), not Gemini. After a draft exists: `val-oph-ep.js --part 1 6`,
+  independent check (different house from whoever drafts), then splice + commit.
+- Session hit its ~80-step budget here — stop, `/prep`, resume from this block.
