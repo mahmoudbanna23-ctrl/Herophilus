@@ -209,3 +209,48 @@ Two tool/process fixes made this pass, both need to survive downstream:
 **Next: splice section 3** (already calibrated/keyed/committed as `7a7ae42`) **into the live
 array**, then section 4 onward through the chapter half (PDF page 1390). Sections 12, 16, 20
 still need chapters added to `app\data\modules.js` before they can be drafted — not blocking.
+
+**2026-09-15 — SECTIONS 3 AND 4 DRAFTED AND VALIDATED, NOT SPLICED; SECTIONS 5–6 KEYED; CALIBRATION
+5–12 AND 14 DONE.** Live is still **60** (re-measured by loading the array). Working briefs and
+checker reports from this block are copied to `progress\briefs\ophtho-ep-A\`; their absolute
+scratchpad paths point at a dead session, so adapt them.
+
+Rules learned this block, binding downstream:
+- **Staged `*.array.js` `expl` holds the BARE printed box text only** — no lead line, no `> `, no
+  marker — and stays EMPTY on unboxed rows. The validator derives "boxed" from a non-empty `expl`
+  and compares its `> ` quote to it. Section 2 is the model. Written explanations live ONLY in the
+  `.draft.js`. Any "quoted box differs from staging expl" warning means the array shape is wrong.
+- **A shared option menu needs a pointer sentence naming the anchor id** in every non-anchor row
+  (validator fails otherwise). On a BOXED row it sits after the quote, before the boxed marker,
+  unquoted; the marker stays the last line.
+- **Folds are recorded as `folded: [n…]` on the `SEC_P1` entry in `tools\bank-harness\sec-oph.js`**
+  (not in `val-oph-ep.js`); `splice-oph-ep.js` reads `cfg.folded`. The survivor's `source` is a
+  citation only: `Opthalmology endpoint.pdf p.<N> (the same question is printed again on p.<M>)`.
+  A boxed survivor records the second printing's differing box wording in ONE plain sentence before
+  the marker.
+- Keep the Codex gateway (`opencode-zen/big-pickle`, no vision) at **≤2 concurrent jobs**; a third
+  gave 503s and one run emptied the section 3 boxes mid-reconnect (restored from git).
+
+State per section:
+- **§3 Orbit** — draft `oph-ep-p1-s03-orbit.draft.js` **19 entries**; n:7 folded into n:4 (p.244
+  into p.237, boxes differ "gums" / "upper teeth"), n:19 folded into n:9 (p.268 into p.247, exact
+  reprint). Array boxes normalised. `val-oph-ep.js --part 1 3` exit 0, 0 warnings. Independent
+  refuter PASS. **Ready to splice: 60 -> 79.**
+- **§4 Lacrimal System** — draft 24 entries, array boxes n:1–6 normalised, pointers n:4->2,
+  n:11->9, n:16->5, n:12->6. Validator exit 0. Refuter found n:2/n:4 identical stem/options/key
+  with different boxes. **OPEN RULING, orchestrator decided, not yet applied:** n:4's box is FULLER
+  (a whole extra sentence plus a wording swap, see `cl-s04-fold-report.md`), so keep the fuller
+  printing — **survivor n:4, fold n:2**, `SEC_P1` section 4 `folded: [2]`, n:4 gets one sentence
+  recording n:2's shorter box, n:2's pointer sentences removed, other pointers re-anchored as the
+  validator demands. Then re-validate, splice: 79 -> 102.
+- **§5 Eyelids** (PDF 343–416, 29 q) and **§6 Conjunctiva** (PDF 417–522, 39 q) — keys read off
+  images: `content\ophtho\qb-pages\oph-ep-s05-keys.md`, `oph-ep-s06-keys.md`. Staging briefs
+  written (`gw-s05-stage.md`, `gw-s06-stage.md`) but **NOT RUN** (the queue script had a poll bug
+  and was killed). §6 boxes n:1–30 not yet confirmed by eye; Q8 p.459 has a figure.
+- **Calibration notes** `progress\ophtho-endpoint-s05…s12, s14-calibration-2026-09-15.md` written.
+  Lane A (odd sections, `calib-lane.sh 7 9 11 … 21`) may still be running on 13+; even 16, 18, 20
+  were never started.
+
+**Next:** apply the §4 n:2/n:4 fold (builder), refuter check both §3/§4 diffs, splice
+`--part 1 3` then `--part 1 4`, `boot-check.js` after each; then run §5/§6 staging on the gateway;
+calibrate 16/18/20 (and whatever lane A did not finish); close out ledger + MEMORY.md.

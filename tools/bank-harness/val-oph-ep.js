@@ -20,8 +20,9 @@
 //
 // SEC is shared, never copied. ans and chapter are documentation only, including
 // null values. Question chapters come from the real MODULES completion value.
-// No ophthalmology folds/reprints/figure overrides have been adjudicated yet;
-// the generic optional machinery remains, without any pediatrics exemptions.
+// Section 3 carries the first two adjudicated ophthalmology folds (see sec-oph.js); no figure
+// overrides have been adjudicated yet. The generic optional machinery remains, without any
+// pediatrics exemptions.
 'use strict';
 const fs = require('fs'), vm = require('vm'), path = require('path');
 const { SEC_P1, SEC_P2 } = require('./sec-oph.js');

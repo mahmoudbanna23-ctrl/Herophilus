@@ -2,7 +2,10 @@
 const SEC_P1 = {
   1: { prefix: 'ophep-exam-eye-', file: 'oph-ep-p1-s01-exam-eye.array.js', svar: 'OPHEP_S01_STAGED', draft: 'oph-ep-p1-s01-exam-eye.draft', chapter: 'op-intro-exam', pages: [6, 133], ans: null, folded: [27] },
   2: { prefix: 'ophep-optics-refraction-', file: 'oph-ep-p1-s02-optics-refraction.array.js', svar: 'OPHEP_S02_STAGED', draft: 'oph-ep-p1-s02-optics-refraction.draft', chapter: 'op-refract', pages: [134, 213], ans: null },
-  3: { prefix: 'ophep-orbit-', file: 'oph-ep-p1-s03-orbit.array.js', svar: 'OPHEP_S03_STAGED', draft: 'oph-ep-p1-s03-orbit.draft', chapter: 'op-orbit', pages: [214, 272], ans: null },
+  // Section 3's two within-section folds, both dropped at drafting: n19 (marked p.268, unboxed
+  // exact reprint) into n9 (marked p.248), and n7 (marked p.244, boxed second printing, box reading
+  // "upper teeth" where n4's reads "gums") into n4 (marked p.238).
+  3: { prefix: 'ophep-orbit-', file: 'oph-ep-p1-s03-orbit.array.js', svar: 'OPHEP_S03_STAGED', draft: 'oph-ep-p1-s03-orbit.draft', chapter: 'op-orbit', pages: [214, 272], ans: null, folded: [7, 19] },
   4: { prefix: 'ophep-lacrimal-system-', file: 'oph-ep-p1-s04-lacrimal-system.array.js', svar: 'OPHEP_S04_STAGED', draft: 'oph-ep-p1-s04-lacrimal-system.draft', chapter: 'op-lac', pages: [273, 342], ans: null },
   5: { prefix: 'ophep-eyelids-', file: 'oph-ep-p1-s05-eyelids.array.js', svar: 'OPHEP_S05_STAGED', draft: 'oph-ep-p1-s05-eyelids.draft', chapter: 'op-lid', pages: [343, 416], ans: null },
   6: { prefix: 'ophep-conjunctiva-', file: 'oph-ep-p1-s06-conjunctiva.array.js', svar: 'OPHEP_S06_STAGED', draft: 'oph-ep-p1-s06-conjunctiva.draft', chapter: 'op-conj', pages: [417, 522], ans: null },

@@ -32,7 +32,7 @@ chat's file; commit explicit paths only, and wait on `index.lock`, never delete 
 and `resume-peds.md` (~37k → ~13k) with **`RESUME-READ-FROM-HERE-2`**, nothing deleted;
 `resume-peds-endpoint.md` (~14k, growing fast) is the next anchor due.
 ✅ ENT CLOSED (`ledger.md` §15–§16). ✅ **OPHTHO CLOSED 2026-09-02** — **1,598**, 0 holes, CLEAN, boots;
-all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **The ophtho ENDPOINT is a separate book — 2,442 pp / 293 MB; do NOT split the PDF, split the page RANGE.** Printed page = PDF **+1** past an unpinned flip in PDF 2151–2170. ✅ **GATE 0 CLOSED 2026-09-08** — `-oph-ep` toolchain (`sec-oph.js`/`val-oph-ep.js`/`splice-oph-ep.js`/`pagecov-oph.js`, `--part 1|2`) + stubs + both `index.html` tags done, **OPH-B unblocked**. Sec.2 spliced, **60 live**; sec.3 staged (`7a7ae42`), splice PENDING. Close-out: `progress\resume-ophtho-endpoint-A-chapters.md`.**
+all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **The ophtho ENDPOINT is a separate book — 2,442 pp / 293 MB; do NOT split the PDF, split the page RANGE.** Printed page = PDF **+1** past an unpinned flip in PDF 2151–2170. ✅ **GATE 0 CLOSED 2026-09-08** — `-oph-ep` toolchain (`sec-oph.js`/`val-oph-ep.js`/`splice-oph-ep.js`/`pagecov-oph.js`, `--part 1|2`) + stubs + both `index.html` tags done, **OPH-B unblocked**. **60 live**; sec.3+4 validated, NOT spliced (2026-09-15). Close-out: `progress\resume-ophtho-endpoint-A-chapters.md`.**
 
 - ✅ **PEDS HOUSE CLOSED 2026-09-04 — `questions.peds.js` holds 393, the full measured bank**, all
   20 chapter prefixes present (array loaded 2026-09-05, 0 holes, boots clean). Close-out: `resume-peds.md`.
