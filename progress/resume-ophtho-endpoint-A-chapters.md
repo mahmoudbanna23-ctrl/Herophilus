@@ -355,3 +355,54 @@ trusting the counts for staging; decide s21's status; fix §6 n:14 once a vision
 commit calibration notes s13/15/16/17/18/19/20/21 once each has its independent check (or judge
 calibration notes as lower-stakes structural-only and commit on the script check alone — not yet
 decided, ask the user if unsure); continue toward §5/§6 image-check and splice.
+
+**2026-09-15, fifth block — routing updated twice more (19:50 fleet-direct, then 22:15 "Codex
+solo back, use gpt-5.6-terra/gpt-6-astra first"). §6 n:14 fixed and committed, calibration notes
+committed, full endpoint state taken for the user. Session hit its ~80-step budget here — stop,
+`/prep`, resume from this block.**
+- §6 n:14 (p.470/471, pterygium recurrence rate): fix was already by-eye-confirmed in
+  `oph-ep-s06-keys.md` from an earlier pass (opts `["5%","10%","15%","50%"]`, key 0). Applied as
+  a one-liner main-chat edit (no fresh vision dispatch needed), grok independent-check PASS,
+  COMMITTED: `e7f08c8` (array fix + `stage-oph-s06.js`).
+- Calibration notes s13/15/16/17/18/19/20/21 — all 8 independently re-verified against raw OCR
+  by grok (two dispatches, 3 then 5 sections), all PASS. COMMITTED: `c4fdada` (amended from
+  `edc7755` to add the missing `Co-Authored-By` line — local/unpushed, own immediately-preceding
+  mistake, not a rewrite of shared history).
+- `MEMORY.md` + this file's fourth block COMMITTED together: `94343ea`.
+- **Full part-1 state as of this block**: spliced/live = s1-4 (102 q, commits `274c855`
+  `3674c3f` `35f771c`). Staged+committed, not yet spliced = s5 Eyelids (`3ebe834`), s6 Conjunctiva
+  (`e7f08c8`). Calibrated only, nothing staged = s7 through s21 (15 sections). **Part 2 (s22-28,
+  pp.1391-2442, model/summer exams) untouched** — no calibration, no array files; that's OPH-B's
+  scope, `val-oph-ep.js`/`splice-oph-ep.js --part 2` ready since gate-0.
+- User said "start section 13 staging." s13 calibration note
+  (`progress/ophtho-endpoint-s13-calibration-2026-09-15.md`) flags this as a BIG job versus s5/s6:
+  **zero key extracted at all** — 41 marked pages (901-981, formula `898+2n`/`899+2n`), every
+  option count, letter case (lowercase 1-8, uppercase 9-27, lowercase 28-38, uppercase 39-41 —
+  unconfirmed), explanation-box presence (16 flagged pages), figures (zero found in OCR sweep,
+  does not rule them out) and **every single answer mark** all need a genuine vision pass. Known
+  source defect: duplicate "27." label at ordinals 27/28 (confirmed independently by grok — last
+  pair's real stem reads "40." not "41.", so ordinal-to-printed-number is NOT 1:1, physical order
+  `n` is the only stable key, same pattern as s06's double-28).
+- No staging dispatch was launched yet for s13 — decided approach (mirror s05/s06: Codex solo
+  vision pass over all 41 marked-page renders -> `oph-ep-s13-keys.md` keys file in the s05/s06
+  table+prose format -> `stage-oph-s13.js` + `.array.js`) but ran out of step budget before
+  writing the brief or dispatching.
+
+**Next on resume (in order):**
+1. `/prep`, fresh session, open FROM THIS BLOCK (not the fourth block above it).
+2. Render s13's 41 marked pages (901-981, odd) + 41 unmarked (900-980, even) at 150 dpi to the
+   scratchpad — reuse `oph-ep-p1-s06-conjunctiva.array.js`/`stage-oph-s06.js` as the structural
+   template (same `n/p/key/stem/opts/expl/boxPrinted/keySource/keypos/numberCheck/note` shape).
+3. Dispatch Codex solo (`gpt-5.6-terra`; `gpt-6-astra` if s13 gets flagged must-be-right given its
+   size) with `codex exec -i <png...>` per the vision ladder, brief naming: the 898+2n/899+2n
+   formula, the duplicate-"27." defect, physical-order `n` as the only key, and the requirement to
+   produce BOTH `content/ophtho/qb-pages/oph-ep-s13-keys.md` (s05/s06 table format) and the staged
+   `oph-ep-p1-s13-retina.array.js` + `tools/ep-index/stage-oph-s13.js` pair. Given 41 pairs, batch
+   the vision pass (e.g. 4 calls of ~10 pairs) rather than one call over 82+ images.
+4. Two-layer check: `node --check` + hole/bad-opts scanner, then one independent checker from a
+   different house than Codex (grok or vibe, not Codex-on-Codex).
+5. Continue s7-s12, s14 staging (calibrated, not yet staged) and s16-s21 staging once s13 sets
+   the pattern for a "needs full vision key extraction" section; then §5/§6 image-check
+   (figures/case/boxes, flagged but never confirmed) and splice.
+6. Rule on s21 "stages nothing" (Keys-For-Diagnosis appendix, zero MCQs) in `sec-oph.js` entry 21
+   — still not implemented or confirmed.
