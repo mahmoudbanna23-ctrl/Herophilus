@@ -406,3 +406,52 @@ committed, full endpoint state taken for the user. Session hit its ~80-step budg
    (figures/case/boxes, flagged but never confirmed) and splice.
 6. Rule on s21 "stages nothing" (Keys-For-Diagnosis appendix, zero MCQs) in `sec-oph.js` entry 21
    — still not implemented or confirmed.
+
+**2026-09-15, sixth block — s5 Eyelids drafted, corrected, validator clean, COMMITTED. Standing
+instruction for this stream is "finish all of s5-s12 first" (splice each), s13 vision work from
+the fifth block above is DEFERRED until then — do not resume s13 staging next.**
+
+- s5 draft (`oph-ep-p1-s05-eyelids.draft.js`, from a prior Codex dispatch) failed val-oph-ep.js on
+  nearly every row. Root causes, all fixed: (1) staged `expl` left empty by design for n:1-11,
+  which silently broke the validator's boxed-count derivation off `s.expl` — backfilled verbatim
+  box text into staging; (2) `source` cited the marked/answer page instead of the staged unmarked
+  page `s.p` (a defect in an earlier-written brief) — rewritten per row; (3) marker text used an
+  ASCII apostrophe instead of the required curly U+2019, and the unboxed-marker sentence was
+  wrong wording (same brief defect) — both fixed verbatim against `val-oph-ep.js`'s `BOXED_MARK`/
+  `UNBOXED_MARK`.
+- Two Claude-only adjudications (CLAUDE.md §8): folded n:15 (p.387) into n:8 (p.373) as an exact
+  reprint (identical stem/key, OCR-spacing-only option variant) — `folded:[15]` in `sec-oph.js`,
+  row dropped from the draft, left untouched in staging. Confirmed row-1's figure is real: p.359
+  (question page) has no photo, p.360 (answer page) does — an ectropion close-up, unusually only
+  present on the marked render. Cropped to `app/assets/q/q-oph-ep-360.jpg`, `figPage:{1:360}` +
+  `fig:true` on staged n:1 recorded in `sec-oph.js` / the staged array.
+- `node tools/bank-harness/val-oph-ep.js --part 1 5`: **ALL CHECKS PASSED** (28 rows, 0 holes,
+  boxed 11/29, figures 1, no failures).
+- COMMITTED: `75b3217` (staged array + sec-oph.js + draft + crop, all four files).
+- **Not yet done for s5**: the required independent checker (two-layer discipline — never Codex
+  checking Codex; use vibe/grok, same pattern as s6 n:14) has NOT been dispatched against the
+  corrected draft/staging. Splice (`splice-oph-ep.js --part 1 5 --write`) has NOT been run.
+- Session hit its ~80-step budget again here — stop, `/prep`, resume from this block.
+
+**Next on resume (in order):**
+1. `/prep`, fresh session, open FROM THIS BLOCK.
+2. Dispatch an independent checker (vibe or grok, not Codex) against the corrected
+   `oph-ep-p1-s05-eyelids.draft.js` + `.array.js` — re-verify stem/options/key byte-match to
+   staging, box-text transcription accuracy against p.360, marker text, the n:15 fold, and the
+   row-1 figure crop (visual check, no bleed / no answer-key text in frame — already eyeballed
+   once this session but wants the independent pass too).
+3. On a clean independent check: `node tools/bank-harness/splice-oph-ep.js --part 1 5 --write`,
+   verify boot, commit the splice.
+4. s6 Conjunctiva: staged and committed (`e7f08c8`), drafting not started. Known issue before
+   drafting: n:14 (p.470) staging showed 0 parsed options vs 4 in keys.md, stem text may have
+   absorbed option text — reread by hand before including it in the draft brief. Mirror the s5
+   draft brief pattern (now corrected — use the FIXED s5 draft as the new template, not s4, since
+   s5's brief had the source-page and marker-text defects).
+5. s7 Sclera through s12 Vitreous: calibrated only, nothing staged. Each needs staging
+   (array.js + keys.md + stage script, vision pass) then drafting then validate/independent-check
+   /splice/commit — mirror s5/s6.
+6. Only after s5-s12 are fully spliced and committed: resume s13 Retina staging per the fifth
+   block above (Codex solo vision dispatch, 41 marked-page pairs, duplicate-"27." defect, formula
+   898+2n/899+2n).
+7. Still separately pending, lower priority: s21 "stages nothing" ruling not implemented in
+   `sec-oph.js`.
