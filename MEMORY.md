@@ -53,15 +53,15 @@ archive, `## Pruned from MEMORY.md - 2026-09-16 (part 2)`.
   Close-out: `progress\resume-peds-endpoint-part2.md`. ⚠️ Endpoint/House overlap is chapter-shaped —
   never fold `pedhd-card-6..10` (5 identical stems, 5 different figures). Full detail: archive,
   `## Pruned from MEMORY.md - 2026-09-16`, and `## Pruned from MEMORY.md - 2026-09-05`.
-- ⏳ **NEURO — 407 live** (t09 Coma CLOSED 2026-09-15, 333->355; t10 Movement Disorders CLOSED
-  2026-09-16, 355->384; **t11 Demyelinating CLOSED 2026-09-16, 384->407, 0 folds**; Grade Gain
-  Psychiatry CLOSED 2026-09-08). ✅ **T12 "Neuromuscular" boundary CONFIRMED 2026-09-16: Q251-295,
-  45q exact** (book pp.50-56 / PDF 055-061) — staging brief WRITTEN
-  `content\neuro\qb-pages\t12-briefs\staging-brief.md`, staging NOT yet run. ⚠️⚠️ **RUNNING HEADER
-  LAGS TRUE SECTION ~1 PAGE** (confirmed pg-054/055) — never trust it alone; boxed section-title
-  banner + question content are the only reliable markers. Gateway/Codex reported back online
-  2026-09-16 (GATEWAY ROUTE block above) — **pong-test before trusting, state drifts fast here.**
-  Close-out: `progress\resume-neuro.md` "Topic 12". ⚠️ **Renders die with the scratchpad.**
+- ⏳ **NEURO — 450 live** (t09 Coma CLOSED 2026-09-15, 333->355; t10 Movement Disorders CLOSED
+  2026-09-16, 355->384; t11 Demyelinating CLOSED 2026-09-16, 384->407, 0 folds; **t12
+  Neuromuscular CLOSED 2026-09-16, 407->450, 2 folds (272->261, 280->262)**; Grade Gain
+  Psychiatry CLOSED 2026-09-08). Commits `e6066e1` (t12 staging+drafts), `bd0cd31` (t12 splice).
+  Close-out: `progress\resume-neuro.md` "Topic 12". **Next: T13 "CNS Infections," Q296+, book
+  p.57 (PDF 062), nothing scouted/staged yet.**
+  ⚠️⚠️ **RUNNING HEADER LAGS TRUE SECTION ~1 PAGE** — boxed section-title banner + question
+  content are the only reliable markers, still applies to T13's own boundary. ⚠️ **Renders die
+  with the scratchpad.**
   ⚠️⚠️ **OFFSET NOT GLOBAL: neuropsychiatry PDF = book+5, neurosurgery PDF = book+7. In scope =
   PDF 6–98 ONLY; SKIP 99–140.**
 - **Five-option cap settled; OSCE skipped by user ruling 2026-08-31** — both **PRUNED 2026-09-08 ->**

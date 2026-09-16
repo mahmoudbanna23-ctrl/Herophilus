@@ -1510,7 +1510,7 @@ the aggregator's live count).
 **Commits:** `34533cf` (staging + both drafts + all four t11-briefs files), `5a47976`
 (the splice). Nothing left on t11.
 
-## Topic 12 "Neuromuscular" — SCOUTING ONLY, 2026-09-16, nothing staged/committed yet
+## Topic 12 "Neuromuscular Disorders" — CLOSED 2026-09-16
 
 Per `content/neuro/qb-pages/nb-anchors.txt`: book p.50, contents-page count 45 (routinely
 undercounts — expect more, same as t11's 16->23). Book p.57 = topic 13 "CNS Infections". PDF
@@ -1555,23 +1555,79 @@ t11's brief. Scope: PDF 055-061 (7 pages, printed pp.50-56), n:251-295, file
 `gg-nr-t12.array.js`, var `GG_NR_T12_STAGED`. Documents the header-lag defect and the mixed
 question/answer page (PDF 060) explicitly so the staging pass isn't misled by it.
 
-**Next session, in order:** (1) re-render PDF 055-061 to a fresh scratchpad (this session's
-render will not survive a scratchpad reset, same as before — do not assume it's still there);
-(2) run staging via the confirmed working vision route (`agy --model gemini-3.1-pro-high`
-after `agy mcp disable agentmemory` — pong-test first, this is stale by next session) against
-`t12-briefs/staging-brief.md`; (3) independent-refuter check the staged array against the page
-images before drafting starts; (4) proceed to drafting once staging is clean. Session stopped
-here (contradiction resolved, boundary confirmed, brief written) rather than starting the
-staging pass, to keep this a clean, reviewable checkpoint. Nothing staged or committed to
-`content\` yet.
+**✅ Staging RUN and INDEPENDENTLY VERIFIED 2026-09-16.** `gg-nr-t12.array.js` holds 45 entries
+(n:251-295), produced via `agy --model gemini-3.1-pro-high`. A fresh Opus-refuter subagent
+(different house) checked all 45 against the 7 rendered page images pg-055–061.png:
+**PASS, 0 discrepancies** — n/p/key/stem/opts all confirmed, all printed typos and defects
+(278's duplicate option, the 5-option keys, the odd 3-option entries) preserved correctly.
+Drafting cleared to proceed on this staging. (Renders were session-scratchpad-local and are
+gone now — re-render PDF 055-061 if a future re-check is ever needed; staging itself doesn't
+need re-verifying, it already passed.)
 
-**Route state — last probed 2026-09-16 ~03:30, RE-PROBE BEFORE TRUSTING:** OmniRoute
-gateway and Codex solo reported back online (`opencode-zen/big-pickle`, gateway ponged
-1.2s) — normal fleet-routing order restored: Codex+OmniRoute → opencode+OmniRoute →
-Codex solo → fleet direct → Claude helpers last with a `ROUTE-OK:` prefix. `auto/*`
-gateway combos are now BANNED regardless (answer with Claude/GPT models, payer
-unconfirmed — treat as paid). Pong-test before every batch, drop a route on first
-failure, no retry loops.
+**Two duplicate folds adjudicated, baked into both briefs — do not redo:** n:261≡n:280 (fold
+280, note in 261's `source`), n:262≡n:272 (fold 272, note in 262's `source`).
+
+**Drafting briefs written:** `t12-briefs/codex-finish-A.md` (23 ids, n:251-274 excl 272, file
+`gg-nr-t12.draft-A.js`), `codex-finish-B.md` (20 ids, n:275-295 excl 280, file
+`gg-nr-t12.draft-B.js`), `codex-finish-B-remainder.md` (delta brief for just n:292-295,
+appends to an existing partial draft-B, explicitly tells the worker to use its own file-edit
+tool, not a `js`/`node_repl` MCP tool).
+
+**Draft-A: 0/23, nothing produced.** Two Codex+OmniRoute gateway attempts both failed
+differently — first got stuck rebuilding an identical JS-serialization scaffold across
+repeated `ERROR: Reconnecting... 1/5` gateway drops, never wrote the file; second exited
+within seconds of reading the brief, wrote nothing, left no report. Needs a full fresh
+attempt, next session — see route note below before retrying the same rung.
+
+**Draft-B: 16/20, verified clean, needs n:292-295 only.** Entries `npqb-nr-275`–`279`,
+`281`–`291` present, syntax-valid, every explanation ends with the marker, n:278's duplicate
+option preserved and noted, no `npqb-nr-280`, no mojibake. Two remainder-dispatch attempts
+both failed: first got stuck looping on a broken `js`/`node_repl` MCP tool call
+(`error=unsupported call: js`) trying to append the last 4; second (with the tool explicitly
+banned in the brief) exited within seconds having only read the staging source, wrote
+nothing, left no report.
+
+**Route state — last probed 2026-09-16 evening.** Gateway text pong succeeds reliably
+(`opencode-zen/big-pickle`, sub-2s). But real multi-step drafting jobs through
+`codex-gw.sh` died within seconds on BOTH retry attempts this session, despite the live
+pong — pong tests liveness, not capacity to do the actual job. **Next session: do not just
+retry Codex+OmniRoute again.** Pong-test it once; if a real drafting job dies again fast,
+drop to the next rung (opencode+OmniRoute) per CLAUDE.md §9 rather than repeating the same
+dispatch. Never retry-loop the same rung.
+
+**Safety note:** up to 8 unattributed `codex.exe` OS processes were observed this session
+(other concurrent chats sharing the local gateway). Never `taskkill` by PID — stop only this
+session's own background task by its task ID (`TaskStop`).
+
+**✅ Draft-A finished and independently re-verified 2026-09-16.** A Claude lean-drafter agent
+expanded the 7 vignette/boxed entries (252, 254, 255, 257, 258, 259, 263) to the ~450-520w
+budget after every fleet lane (Codex+OmniRoute, opencode+OmniRoute, OpenRouter free models,
+Groq, Gemini) failed or exhausted for the day — logged in the commit message as an explicit
+exception to the routing ladder. Re-verified independently (never the same house that drafted):
+mechanical layer — word-count diff confirmed all 16 non-target entries byte-identical (0
+mismatches) and boxed-text `.includes()` check confirmed all 4 boxed entries (254/255/258/259)
+preserved verbatim against staging; medical-accuracy layer — Claude's own direct read (§8, the
+final medical read is Claude-only) of all 7 expanded entries, confirmed correctly grounded in
+the two cached lectures, correctly tagging outside-knowledge additions, correctly preserving
+entry 258's genuinely truncated printed box without inventing a completion. **PASS.**
+
+**✅ Draft-B finished and verified 2026-09-16** (the remaining n:292-295 were appended in a
+background task processed earlier this session) — full 20/20, syntax-valid, every explanation
+ends with the marker where required, n:278's duplicate option preserved and noted.
+
+**Splice done and committed (`bd0cd31`).** `app/data/questions.neuro.js`: 407 → **450** (43
+new: n:251-295 excl the two adjudicated folds 272→261, 280→262). A first splice attempt had an
+off-by-one slice bug (stripped the prior entry's closing brace along with the array wrapper,
+`node --check` caught it as a syntax error); fixed with a targeted brace-reinsertion Edit rather
+than reverting and redoing (the `git checkout` to discard and restart was denied by the
+permission system — no live approval existed for it). Verified from disk after the fix: 450
+entries, 0 sparse holes, 0 duplicate ids, both folded ids (272, 280) correctly absent, all
+answers in range, T12 subset (251-295) = exactly 43. Boot-check clean, 0 console errors
+(`QUESTIONS 4049` unchanged — neuropsych is `LOCKED_MODULES`, doesn't move the aggregator's
+live count).
+
+**Commits:** `e6066e1` (staging array + both drafts + all four t12-briefs files), `bd0cd31`
+(the splice). Nothing left on t12.
 
 ## Topic 10 "Movement Disorders" — CLOSED 2026-09-16
 
