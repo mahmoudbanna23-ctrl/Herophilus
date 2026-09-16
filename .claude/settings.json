@@ -122,5 +122,16 @@
       "PowerShell(git reset --hard*)",
       "PowerShell(git clean*)"
     ]
+  },
+
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          { "type": "command", "command": "node \"D:/claude os/Medical school/Herophilus/tools/data-check-hook.js\"" }
+        ]
+      }
+    ]
   }
 }
