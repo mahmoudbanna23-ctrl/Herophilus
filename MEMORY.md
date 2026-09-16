@@ -11,6 +11,16 @@ page. ⚠️⚠️ **SUPERSCRIPTS FAIL SILENTLY: WPS read a printed 10⁶ as 10�
 dose from OCR; read those three off the page image.** ⚠️ **Exit 429 is a RATE limit, NOT a quota** —
 back off, double the gap (cap 60 s), **retry the same page.**
 
+**⚠️ GATEWAY ROUTE (2026-09-16 03:30, supersedes the 22:15 note) — Codex+OmniRoute BACK, resume as
+default worker.** `opencode-zen/big-pickle` free, gateway ponged 1.2s. Ladder: Codex+OmniRoute
+(`Tools/omniroute/codex-gw.sh`) -> opencode+OmniRoute same lane -> gateway down: Codex solo own
+OpenAI login (`gpt-5.6-terra` routine / `gpt-6-astra` must-be-right) -> fleet direct (vibe/grok,
+Groq `gpt-oss-120b`, Gemini Flash by key) -> Claude helpers last, prompt opens `ROUTE-OK: <why>`.
+⚠️ **`auto/*` gateway combos BANNED** — now answer with Claude/GPT models, payer unconfirmed, treat
+as paid. Pong-test before every batch; drop a route on first failure, no retry loops. Checking stays
+two layers, different house, Codex never checks itself. "Headroom" mode dropped for good — 3%
+smaller but drops words from medical text; never in front of the Codex lane.
+
 Running record, organised around *resuming*. ISO dates; unverified marked as such. Method in
 `CLAUDE.md`; per-topic history in **`progress\ledger.md` (17+) and `progress\ledger-closed-1-16.md`
 (1-16, SPLIT 2026-09-01, byte-exact, nothing renumbered — the index atop `ledger.md` says which file
@@ -32,32 +42,26 @@ chat's file; commit explicit paths only, and wait on `index.lock`, never delete 
 and `resume-peds.md` (~37k → ~13k) with **`RESUME-READ-FROM-HERE-2`**, nothing deleted;
 `resume-peds-endpoint.md` (~14k, growing fast) is the next anchor due.
 ✅ ENT CLOSED (`ledger.md` §15–§16). ✅ **OPHTHO CLOSED 2026-09-02** — **1,598**, 0 holes, CLEAN, boots;
-all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **The ophtho ENDPOINT is a separate book — 2,442 pp / 293 MB; do NOT split the PDF, split the page RANGE.** Printed page = PDF **+1** past an unpinned flip in PDF 2151–2170. ✅ **GATE 0 CLOSED 2026-09-08** — `-oph-ep` toolchain (`sec-oph.js`/`val-oph-ep.js`/`splice-oph-ep.js`/`pagecov-oph.js`, `--part 1|2`) + stubs + both `index.html` tags done, **OPH-B unblocked**. **102 live**, sec.3+4 spliced (35f771c); s5 drafted, splice pending check; s6 array fixed, draft.js next. s5-s12 first, s13 deferred. Close-out: `progress\resume-ophtho-endpoint-A-chapters.md` tail.**
+all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **The ophtho ENDPOINT is a separate book — 2,442 pp / 293 MB; do NOT split the PDF, split the page RANGE.** Printed page = PDF **+1** past an unpinned flip in PDF 2151–2170. ✅ **GATE 0 CLOSED 2026-09-08** — `-oph-ep` toolchain (`sec-oph.js`/`val-oph-ep.js`/`splice-oph-ep.js`/`pagecov-oph.js`, `--part 1|2`) + stubs + both `index.html` tags done, **OPH-B unblocked**. **169 live, s1-6 done** (checked+spliced+committed; s6 Conjunctiva closed 2026-09-16, 130->169, `74c0213`). s7-12 next, s13 deferred, s14-28 unstaged. Close-out: `progress\resume-ophtho-endpoint-A-chapters.md` tail.**
 
 - ✅ **PEDS HOUSE CLOSED 2026-09-04 — `questions.peds.js` holds 393, the full measured bank**, all
   20 chapter prefixes present (array loaded 2026-09-05, 0 holes, boots clean). Close-out: `resume-peds.md`.
-- ✅ **PEDS ENDPOINT PART 1 CLOSED 2026-09-05 — `questions.peds.ep.js` holds 704, 0 holes** — it closed
-  at 705 and `47d4d76` folded `pedep-inf-82` into part 2's fuller printing, which is the legitimate
-  drop (re-measured commit by commit 2026-09-06). 15 sections (body pp.5–1156 · 4 Model Final Exams pp.1157–1804 · 2 Model Training Exams pp.1805–1936; tail pp.1937–1991 measured, stages nothing). Close-out: `progress\resume-peds-endpoint.md`.
-  ⚠️ **THE CLOSING TEST IS PAGE COVERAGE, NOT A SECTION COUNT** — every `p.<n>` in the `source`
-  fields against every OCR-`answered` page: 855 answered, 854 cited; the one gap, p.938, was rendered
-  and is prose the classifier mis-tagged. **The classifier errs BOTH ways** — it also called
-  pp.1889/1890 notes when they hold a real question, which is the expensive direction.
-- ✅ **PEDS ENDPOINT PART 2 CLOSED 2026-09-06 — `questions.peds.ep2.js` holds 630, 0 holes**, 17
-  sections pp.5–1949 (tail pp.1950–1993 stages nothing; `val-pd-ep2.js` must never get a section 18 row). Close-out: `progress\resume-peds-endpoint-part2.md`. ⚠️ **THE CLOSING TEST IS A REPO TOOL: `node tools\bank-harness\pagecov-ep2.js`** — exit 0 is clean, and it fails on a page outside its two measured classifier-error lists. **An adjudication is not a citation**; it caught six of those.
-  part2.pdf 1993 pp / 272 MB. ⚠️ **A FOLD MAKES THIS FILE SHRINK LEGITIMATELY** — a drop with no fold
-  commit behind it is the finding. A section that outgrows one file splits `part-A/B` →
-  `tools\bank-harness\merge-parts-ep.js` → `.draft-*` → `.array.js`. ⚠️ **Never run
-  `val-pd.js`/`splice-pd.js` on endpoint files — they write Chat B's live file**; the `-pd-ep` pair is
-  the endpoint's, and it refuses unless its validator gate exits 0. Search index
-  `content\peds\qb-pages\ocr\ep1\`, tool `tools\ep-index\run-all.ps1`. ⚠️⚠️ **ENDPOINT AND HOUSE
-  OVERLAP, AND IT IS CHAPTER-SHAPED** — 5 collisions in the first 150 entries, four endpoint Nutrition
-  ≡ House ch.10 = 27% of that chapter; **nothing folds mid-stream**, and **`pedhd-card-6..10` must NOT
-  be folded** (5 identical stems, 5 different figures). Log: `resume-peds.md` tail. Pruned detail ->
-  archive, `## Pruned from MEMORY.md - 2026-09-05`.
+- ✅ **PEDS ENDPOINT PART 1 CLOSED 2026-09-05 — `questions.peds.ep.js` holds 704, 0 holes.**
+  Close-out: `progress\resume-peds-endpoint.md`. Full detail: archive, `## Pruned from MEMORY.md -
+  2026-09-16`.
+- ✅ **PEDS ENDPOINT PART 2 CLOSED 2026-09-06 — `questions.peds.ep2.js` holds 630, 0 holes.**
+  Close-out: `progress\resume-peds-endpoint-part2.md`. ⚠️ Endpoint/House overlap is chapter-shaped —
+  never fold `pedhd-card-6..10` (5 identical stems, 5 different figures). Full detail: archive,
+  `## Pruned from MEMORY.md - 2026-09-16`, and `## Pruned from MEMORY.md - 2026-09-05`.
 - ⏳ **NEURO — 384 live** (t09 Coma CLOSED 2026-09-15, 333->355; t10 Movement Disorders CLOSED
   2026-09-16, 355->384, 0 folds, marker 259->281; Grade Gain Psychiatry CLOSED 2026-09-08).
-  **Next: t11-14 to PDF 69, staging first.** Close-out detail: `progress\resume-neuro.md` "Topic 10".
+  **t11 Demyelinating (Q228-250, 23 entries) staged+drafted 2026-09-16, NOT spliced (still 384)** —
+  untracked: `gg-nr-t11.array.js`, `.draft-A/B.js`, `t11-briefs\*`. **Next: refuter review (diff
+  house from the drafting seat), sweep, splice 384->407, boot-check, commit, journal. Then t12-14 to
+  PDF 69.** Gateway/Codex back online — see GATEWAY ROUTE block above. Fallback if it drops again:
+  `agy --add-dir "<repo root>"` (cwd alone unreliable), `--model gemini-3.1-pro-high` vision /
+  `claude-sonnet-4-6` drafting (no `--effort`), `--print-timeout 8m` (5m default too short for
+  12-entry jobs). Close-out: `progress\resume-neuro.md` "Topic 11".
   ⚠️ **Renders die with the scratchpad** — re-render ~45 s, OCR is the rate-limited part. ⚠️ **Bank
   is GRADE GAIN, ONE book page per sheet, A4, NOT 2-up** — do not carry peds/ophtho House arithmetic
   across. ⚠️⚠️ **OFFSET IS NOT GLOBAL: neuropsychiatry PDF = book + 5, neurosurgery PDF = book + 7.
