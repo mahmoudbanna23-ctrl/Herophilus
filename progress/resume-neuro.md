@@ -1510,6 +1510,40 @@ the aggregator's live count).
 **Commits:** `34533cf` (staging + both drafts + all four t11-briefs files), `5a47976`
 (the splice). Nothing left on t11.
 
+## Topic 12 "Neuromuscular" — SCOUTING ONLY, 2026-09-16, nothing staged/committed yet
+
+Per `content/neuro/qb-pages/nb-anchors.txt`: book p.50, contents-page count 45 (routinely
+undercounts — expect more, same as t11's 16->23). Book p.57 = topic 13 "CNS Infections". PDF
+offset = book + 5 (neuropsychiatry half). Rendered PDF 055-063 (book 50-58, one page past
+expected end) to scratchpad `t12-pages/pg-0NN.png`, untracked, not yet cached into `content\`.
+
+**Route liveness probed this session:** Codex solo dead (401 `refresh_token_invalidated`,
+same fault as before — untrue that it's "back", the earlier `agy mcp disable agentmemory`
+pong test only exercised text). Gateway text route alive (`opencode-zen/big-pickle`, plain
+pong confirmed). Gateway vision route (`auto/vision` via `codex exec -i`) **dead** — falls
+through to the same revoked ChatGPT OAuth token regardless of OmniRoute model routing
+(image upload appears to always go through Codex's native backend, not the gateway).
+**Working vision route: `agy --model gemini-3.1-pro-high` (after `agy mcp disable
+agentmemory`)** — confirmed alive, real content returned.
+
+**⚠️ UNRESOLVED CONTRADICTION, DO NOT STAGE UNTIL RESOLVED:** the single-page liveness probe
+on `pg-055.png` had agy/Gemini read banner "CNS Infections" opening at Q251 — but t11's own
+close-out already confirmed (independent-refuter-checked) that pg-055 opens topic 12
+"Neuromuscular" at Q251. One of these is wrong. This was a one-shot pong test, not a real
+transcription pass — **first task next session: re-render pg-054/055/056 fresh and read
+them properly (two independent reads, not one probe) before trusting either banner claim.**
+Do not carry either answer forward without re-checking.
+
+**Next session, in order:** (1) resolve the banner contradiction above; (2) confirm topic 12's
+actual end page (rendered through PDF 063 already, book 58, one past the book-57 topic-13
+start — check whether topic 13 truly starts there or the offset/count assumption above is
+wrong given the contradiction); (3) write a staging brief mirroring
+`content/neuro/qb-pages/t11-briefs/staging-brief.md` (n starts at 251, `GG_NR_T12_STAGED`,
+file `gg-nr-t12.array.js`); (4) run staging via the confirmed agy/Gemini vision route; (5)
+independent-refuter check the staged array against the page images before drafting starts.
+Session hit the ~80-step budget during route-probing — stopping here per `CLAUDE.md` §9,
+nothing staged or written to `content\` yet, only this scouting note.
+
 **Route state — last probed 2026-09-16 ~03:30, RE-PROBE BEFORE TRUSTING:** OmniRoute
 gateway and Codex solo reported back online (`opencode-zen/big-pickle`, gateway ponged
 1.2s) — normal fleet-routing order restored: Codex+OmniRoute → opencode+OmniRoute →
