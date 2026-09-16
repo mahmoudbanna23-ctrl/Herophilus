@@ -1146,3 +1146,21 @@ parts have since closed, per the pointer above).
 
 Both endpoint parts are long closed, so this relaunch-prompt map is obsolete; kept only as history
 of how the 2026-09-02/03 parallel-chat run was coordinated.
+
+## Pruned from MEMORY.md - 2026-09-17  (was MEMORY.md lines 38-46, "Resume here" ophtho endpoint bullet)
+Condensed to a shorter bullet in MEMORY.md to make room for the neuro-endpoint resume update; full
+s8/s9 closing detail moved here.
+
+**GATE 0 CLOSED 2026-09-08** — `-oph-ep` toolchain (`sec-oph.js`/`val-oph-ep.js`/`splice-oph-ep.js`/
+`pagecov-oph.js`, `--part 1|2`) + stubs + both `index.html` tags done, OPH-B unblocked.
+
+**s9 Lens CLOSED 2026-09-16 — 182->207, `216baad`**, drafted by `agy` fleet-rung-5 after gateway/
+Codex/OpenRouter all dead or exhausted that day, checked by `vibe` (different house).
+
+**s8 CLOSED 2026-09-17 — 207->235, `f5fed04`+`15d4c61`**: rungs 1-5 all failed 2026-09-16, drafted
+by ROUTE-OK Claude lean-drafter, checked by vibe (different house) — vibe's 4-item fail list all
+adjudicated false positives on re-check (row 12 "Flourescine" is already in array.js, not a typo;
+rows 14/19 flagged as "staging language" are the brief's required box-mismatch naming and the
+standard gap-fill tag). Full medical read + boot-check clean (4049/81, 0 errors), spliced+committed.
+
+s10-12 next, s13 deferred, s14-28 unstaged. Close-out: `progress\resume-ophtho-endpoint-A-chapters.md` tail.

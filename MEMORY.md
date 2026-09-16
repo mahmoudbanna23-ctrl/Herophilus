@@ -35,15 +35,13 @@ Where this file and the archive disagree, this file wins. ⚠️ **Before openin
 ✅ ENT CLOSED (`ledger.md` §15–§16). ✅ **OPHTHO CLOSED 2026-09-02** — **1,598**, 0 holes, CLEAN,
 boots; all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **The ophtho
 ENDPOINT is a separate book — 2,442 pp / 293 MB; do NOT split the PDF, split the page RANGE.**
-Printed page = PDF **+1** past an unpinned flip in PDF 2151–2170. ✅ **GATE 0 CLOSED 2026-09-08** —
-`-oph-ep` toolchain (`sec-oph.js`/`val-oph-ep.js`/`splice-oph-ep.js`/`pagecov-oph.js`, `--part 1|2`)
-+ stubs + both `index.html` tags done, **OPH-B unblocked**. **207 live, s1-9 done** (checked+
-spliced+committed; s9 Lens closed 2026-09-16, 182->207, `216baad`, drafted by `agy` fleet-rung-5
-after gateway/Codex/OpenRouter all dead or exhausted that day — checked by `vibe`, different
-house). ✅ **s8 CLOSED 2026-09-17 — 207->235, `f5fed04`+`15d4c61`**: rungs 1-5 all failed 2026-09-16, drafted by ROUTE-OK Claude lean-drafter, checked by vibe (different house) — vibe's 4-item fail list all adjudicated false positives on re-check (row 12 "Flourescine" is already in array.js, not a typo; rows 14/19 flagged as "staging language" are the brief's required box-mismatch naming and the standard gap-fill tag). Full medical read + boot-check clean (4049/81, 0 errors), spliced+committed. s10-12 next, s13 deferred, s14-28 unstaged. Close-out:
-`progress\resume-ophtho-endpoint-A-chapters.md` tail. Multi-chat parallel-run coordination history
-(2026-09-02/03 relaunch prompts, now obsolete — both peds endpoint parts have since closed):
-archive, `## Pruned from MEMORY.md - 2026-09-16 (part 2)`.
+Printed page = PDF **+1** past an unpinned flip in PDF 2151–2170. ✅ **GATE 0 CLOSED 2026-09-08**,
+OPH-B unblocked. **235 live, s1-9 done** (s9 Lens closed 2026-09-16, 182->207, `216baad`; ✅ **s8
+CLOSED 2026-09-17 — 207->235, `f5fed04`+`15d4c61`**, full medical read + boot-check clean 4049/81,
+spliced+committed). s10-12 next, s13 deferred, s14-28 unstaged. Close-out + full s8/s9 detail:
+`progress\resume-ophtho-endpoint-A-chapters.md` tail, and archive, `## Pruned from MEMORY.md -
+2026-09-17`. Multi-chat parallel-run coordination history: archive, `## Pruned from MEMORY.md -
+2026-09-16 (part 2)`.
 
 - ✅ **PEDS HOUSE CLOSED 2026-09-04 — `questions.peds.js` holds 393, the full measured bank**, all
   20 chapter prefixes present (array loaded 2026-09-05, 0 holes, boots clean). Close-out: `resume-peds.md`.
@@ -57,8 +55,11 @@ archive, `## Pruned from MEMORY.md - 2026-09-16 (part 2)`.
 - ✅ **NEURO CLOSED 2026-09-17 — 493 live** (t09->t12 history in `resume-neuro.md`; **t13 CNS
   Infections + t14 Back & Lower Limb Pain CLOSED 2026-09-17, 450->493, 0 folds**, commits
   `45aa11a` staging+drafts, `b34c56c` splice, `c069c54` journal). Close-out:
-  `progress\resume-neuro.md` "Topic 13/14". **Next neuro work is Neuro Endpoint — separate,
-  not-yet-started book.**
+  `progress\resume-neuro.md` "Topic 13/14". **Neuro Endpoint — separate 2190-page book, started
+  2026-09-17.** Ch.1 Localization CLOSED: 17 live (`npep-loc-1..17`), 493->510, commits `09af8b4`
+  staging+drafts, `eb97183` splice, `0da6fa5` journal. Close-out: `progress\resume-neuro-endpoint.md`
+  §4. Next: Ch.2 Stroke, printed pp.52-111 — measure real count from answered pages, don't project
+  from TOC range. Model Final Exams pp.1424-2189 stay DEFERRED.
   ⚠️⚠️ **RUNNING HEADER LAGS TRUE SECTION ~1 PAGE** — boxed section-title banner + question
   content are the only reliable markers, still applies to T13's own boundary. ⚠️ **Renders die
   with the scratchpad.**
