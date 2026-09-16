@@ -1,0 +1,382 @@
+[
+  {
+    "pdf_page": 600,
+    "printed_page": 600,
+    "page_type": "question_marked",
+    "printed_q": 10,
+    "stem": "10. A 25-year-old woman presents with eye pain, tearing, and photophobia. She has a history of contact lens use. Fluorescein staining shows a corneal ulcer. What is she at risk for?",
+    "options": [
+      "Corneal perforation",
+      "Cataract",
+      "Glaucoma",
+      "Retinal detachment"
+    ],
+    "key_letter": "a",
+    "key_index": 0,
+    "box_printed": true,
+    "explanation_verbatim": "A corneal ulcer, especially in contact lens users, can progress to perforation if untreated. This may lead to endophthalmitis and vision loss.",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "25-year-old"
+  },
+  {
+    "pdf_page": 601,
+    "printed_page": 601,
+    "page_type": "question_unmarked",
+    "printed_q": 11,
+    "stem": "11. A young boy with Down syndrome presents to the ophthalmologist with conical protrusion and thinning of the cornea. Which of the following is a useful tool for decision making and management of that patient?",
+    "options": [
+      "Amsler's grid",
+      "CT orbit",
+      "Pentacam",
+      "None of the above"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": ""
+  },
+  {
+    "pdf_page": 602,
+    "printed_page": 602,
+    "page_type": "question_marked",
+    "printed_q": 11,
+    "stem": "11. A young boy with Down syndrome presents to the ophthalmologist with conical protrusion and thinning of the cornea. Which of the following is a useful tool for decision making and management of that patient?",
+    "options": [
+      "Amsler's grid",
+      "CT orbit",
+      "Pentacam",
+      "None of the above"
+    ],
+    "key_letter": "c",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "Investigations of keratoconus → Corneal topography (Map of corneal curvature is diagnostic), Pachymetry (measurement of the corneal thickness) & Pentacam (It gives, in addition to both topography and corneal thickness data, other data that help decision making and management of KC).",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": ""
+  },
+  {
+    "pdf_page": 603,
+    "printed_page": 603,
+    "page_type": "question_unmarked",
+    "printed_q": 12,
+    "stem": "12. Which of the following is used to detect corneal abrasions?",
+    "options": [
+      "Flourescine dye",
+      "Steroids",
+      "Pachymetry",
+      "None of the above"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": ""
+  },
+  {
+    "pdf_page": 604,
+    "printed_page": 604,
+    "page_type": "question_marked",
+    "printed_q": 12,
+    "stem": "12. Which of the following is used to detect corneal abrasions?",
+    "options": [
+      "Flourescine dye",
+      "Steroids",
+      "Pachymetry",
+      "None of the above"
+    ],
+    "key_letter": "a",
+    "key_index": 0,
+    "box_printed": true,
+    "explanation_verbatim": "Corneal epithelial defects (e.g. abrasions) are demonstrated by staining with 1% fluorescein sodium and viewing with cobalt blue filtered light.",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "1%"
+  },
+  {
+    "pdf_page": 605,
+    "printed_page": 605,
+    "page_type": "question_unmarked",
+    "printed_q": 13,
+    "stem": "13. Which of the following is among the side effects that accompany the use of local anaesthetics?",
+    "options": [
+      "Corneal epithelial defect",
+      "Keratoconus",
+      "Corneal opacification",
+      "Retinal detachment"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": ""
+  },
+  {
+    "pdf_page": 606,
+    "printed_page": 606,
+    "page_type": "question_marked",
+    "printed_q": 13,
+    "stem": "13. Which of the following is among the side effects that accompany the use of local anaesthetics?",
+    "options": [
+      "Corneal epithelial defect",
+      "Keratoconus",
+      "Corneal opacification",
+      "Retinal detachment"
+    ],
+    "key_letter": "a",
+    "key_index": 0,
+    "box_printed": true,
+    "explanation_verbatim": "Local anesthetics cause corneal epithelial defects; this is why they are not advised during the treatment of photokeratitis (as they delay the healing process by causing corneal epithelial defects)",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": ""
+  },
+  {
+    "pdf_page": 607,
+    "printed_page": 607,
+    "page_type": "question_unmarked",
+    "printed_q": 14,
+    "stem": "14. What is the initial management in case of chemical eye burn?",
+    "options": [
+      "Neutralization",
+      "Copious irrigation",
+      "Antibiotics",
+      "Eye patching"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": ""
+  },
+  {
+    "pdf_page": 608,
+    "printed_page": 608,
+    "page_type": "question_marked",
+    "printed_q": 14,
+    "stem": "14. What is the initial management in case of chemical eye burn?",
+    "options": [
+      "Neutralization",
+      "Copious irrigation",
+      "Antibiotics",
+      "Eye patching"
+    ],
+    "key_letter": "b",
+    "key_index": 1,
+    "box_printed": true,
+    "explanation_verbatim": "The initial management of a case presenting with an intra-ocular foreign body is copious irrigation. However, the definitive management of that case is surgical removal of the foreign body.",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": ""
+  },
+  {
+    "pdf_page": 609,
+    "printed_page": 609,
+    "page_type": "question_unmarked",
+    "printed_q": 15,
+    "stem": "15. What is the grade of chemical eye injury that is characterized by total loss of corneal epithelium and stromal haze obscuring iris details?",
+    "options": [
+      "Grade 1",
+      "Grade 2",
+      "Grade 3",
+      "Grade 4"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": ""
+  },
+  {
+    "pdf_page": 610,
+    "printed_page": 610,
+    "page_type": "question_marked",
+    "printed_q": 15,
+    "stem": "15. What is the grade of chemical eye injury that is characterized by total loss of corneal epithelium and stromal haze obscuring iris details?",
+    "options": [
+      "Grade 1",
+      "Grade 2",
+      "Grade 3",
+      "Grade 4"
+    ],
+    "key_letter": "c",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "Grading of chemical eye injuries →\nA. Grade 1: (excellent prognosis): Clear cornea (epithelial damage only) and no limbal ischaemia.\nB. Grade 2: (good prognosis): Hazy cornea but with visible iris detail and less than 30% limbal ischaemia.\nC. Grade 3: (guarded prognosis):\n● Total loss of corneal epithelium.\n● Stromal haze obscuring iris detail.\n1/3 to 1/2 limbal ischaemia.\nD. Grade 4: (poor prognosis):\n● Opaque cornea.\n● More than 50% limbal ischaemia.",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "30%, 1/3 to 1/2, 50%"
+  },
+  {
+    "pdf_page": 611,
+    "printed_page": 611,
+    "page_type": "question_unmarked",
+    "printed_q": 16,
+    "stem": "16. A patient with iridocyclitis was found to have WBC clumps on the back surface of the cornea. Which of the following might occur as a complication of that condition?",
+    "options": [
+      "Glaucoma",
+      "Anterior synechiae",
+      "Hypotony",
+      "Corneal erosions"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": ""
+  },
+  {
+    "pdf_page": 612,
+    "printed_page": 612,
+    "page_type": "question_marked",
+    "printed_q": 16,
+    "stem": "16. A patient with iridocyclitis was found to have WBC clumps on the back surface of the cornea. Which of the following might occur as a complication of that condition?",
+    "options": [
+      "Glaucoma",
+      "Anterior synechiae",
+      "Hypotony",
+      "Corneal erosions"
+    ],
+    "key_letter": "a",
+    "key_index": 0,
+    "box_printed": true,
+    "explanation_verbatim": "Anterior uveitis can be complicated by 2ry glaucoma, Posterior synechiae, Complicated cataract, Calcific band keratopathy (if the iritis becomes chronic) especially in juvenile idiopathic arthritis & Macular oedema (if the iritis becomes chronic).",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": ""
+  },
+  {
+    "pdf_page": 613,
+    "printed_page": 613,
+    "page_type": "question_unmarked",
+    "printed_q": 17,
+    "stem": "17. A young boy with Down syndrome presents to the ophthalmologist with conical protrusion and thinning of the cornea. Which of the following is a useful tool for decision making and management of that patient?",
+    "options": [
+      "Amsler's gird",
+      "CT orbit",
+      "Pentacam",
+      "None of the above"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": ""
+  },
+  {
+    "pdf_page": 614,
+    "printed_page": 614,
+    "page_type": "question_marked",
+    "printed_q": 17,
+    "stem": "17. A young boy with Down syndrome presents to the ophthalmologist with conical protrusion and thinning of the cornea. Which of the following is a useful tool for decision making and management of that patient?",
+    "options": [
+      "Amsler's gird",
+      "CT orbit",
+      "Pentacam",
+      "None of the above"
+    ],
+    "key_letter": "c",
+    "key_index": 2,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": ""
+  },
+  {
+    "pdf_page": 615,
+    "printed_page": 615,
+    "page_type": "question_unmarked",
+    "printed_q": 18,
+    "stem": "18. Herpes simplex virus can cause all of the following ocular conditions except?",
+    "options": [
+      "Blepharitis",
+      "Keratitis",
+      "Scleritis",
+      "lridocyclitis"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": ""
+  },
+  {
+    "pdf_page": 616,
+    "printed_page": 616,
+    "page_type": "question_marked",
+    "printed_q": 18,
+    "stem": "18. Herpes simplex virus can cause all of the following ocular conditions except?",
+    "options": [
+      "Blepharitis",
+      "Keratitis",
+      "Scleritis",
+      "lridocyclitis"
+    ],
+    "key_letter": "c",
+    "key_index": 2,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": ""
+  },
+  {
+    "pdf_page": 617,
+    "printed_page": 617,
+    "page_type": "question_unmarked",
+    "printed_q": 19,
+    "stem": "19. Which of the following is the use of Seidel test?",
+    "options": [
+      "To detect corneal scarring",
+      "To detect corneal perforation",
+      "To detect corneal foreign body",
+      "All of the above"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": ""
+  },
+  {
+    "pdf_page": 618,
+    "printed_page": 618,
+    "page_type": "question_marked",
+    "printed_q": 19,
+    "stem": "19. Which of the following is the use of Seidel test?",
+    "options": [
+      "To detect corneal scarring",
+      "To detect corneal perforation",
+      "To detect corneal foreign body",
+      "All of the above"
+    ],
+    "key_letter": "b",
+    "key_index": 1,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": ""
+  }
+]

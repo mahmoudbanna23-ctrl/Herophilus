@@ -1,0 +1,408 @@
+[
+  {
+    "pdf_page": 619,
+    "printed_page": 619,
+    "page_type": "question_unmarked",
+    "printed_q": 20,
+    "stem": "20. Which of the following is the most important and prevalent complication of herpes zoster ophthalmicus?",
+    "options": [
+      "Cicatrisation of skin",
+      "Postherpetic neuralgia",
+      "Limbal atrophy",
+      "Vision loss"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": ""
+  },
+  {
+    "pdf_page": 620,
+    "printed_page": 620,
+    "page_type": "question_marked",
+    "printed_q": 20,
+    "stem": "20. Which of the following is the most important and prevalent complication of herpes zoster ophthalmicus?",
+    "options": [
+      "Cicatrisation of skin",
+      "Postherpetic neuralgia",
+      "Limbal atrophy",
+      "Vision loss"
+    ],
+    "key_letter": "b",
+    "key_index": 1,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": ""
+  },
+  {
+    "pdf_page": 621,
+    "printed_page": 621,
+    "page_type": "question_unmarked",
+    "printed_q": 21,
+    "stem": "21. A 21-year-old male patient complains of diminshed vision in the left eye. Examination revealed positive Munson's sign in the affected eye. Which of the following is the most likely diagnosis?",
+    "options": [
+      "Herpes zoster ophthalmicus",
+      "Calcific band keratopathy",
+      "Photokeratitis",
+      "Keratoconus",
+      "Corneal ulcer"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "21-year-old; stem verbatim includes source typo \"diminshed\""
+  },
+  {
+    "pdf_page": 622,
+    "printed_page": 622,
+    "page_type": "question_marked",
+    "printed_q": 21,
+    "stem": "21. A 21-year-old male patient complains of diminshed vision in the left eye. Examination revealed positive Munson's sign in the affected eye. Which of the following is the most likely diagnosis?",
+    "options": [
+      "Herpes zoster ophthalmicus",
+      "Calcific band keratopathy",
+      "Photokeratitis",
+      "Keratoconus",
+      "Corneal ulcer"
+    ],
+    "key_letter": "d",
+    "key_index": 3,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "21-year-old; stem verbatim includes source typo \"diminshed\"; part of stem also shown in red on this marked page (\"revealed positive Munson's sign\")"
+  },
+  {
+    "pdf_page": 623,
+    "printed_page": 623,
+    "page_type": "question_unmarked",
+    "printed_q": 22,
+    "stem": "22. A 38-year-old male patient complains of eye pain, excessive tearing and redness. History is significant for severe unilateral facial pain that was followed by appearance of skin vesicles. Which of the following is the most likely diagnosis?",
+    "options": [
+      "Herpes simplex keratitis",
+      "Herpes zoster ophthalmicus",
+      "Calcific band keratopathy",
+      "Exposure keratopathy",
+      "Geronotoxon"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "38-year-old"
+  },
+  {
+    "pdf_page": 624,
+    "printed_page": 624,
+    "page_type": "question_marked",
+    "printed_q": 22,
+    "stem": "22. A 38-year-old male patient complains of eye pain, excessive tearing and redness. History is significant for severe unilateral facial pain that was followed by appearance of skin vesicles. Which of the following is the most likely diagnosis?",
+    "options": [
+      "Herpes simplex keratitis",
+      "Herpes zoster ophthalmicus",
+      "Calcific band keratopathy",
+      "Exposure keratopathy",
+      "Geronotoxon"
+    ],
+    "key_letter": "b",
+    "key_index": 1,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "38-year-old"
+  },
+  {
+    "pdf_page": 625,
+    "printed_page": 625,
+    "page_type": "question_unmarked",
+    "printed_q": 23,
+    "stem": "23. A 65-year-old man visits the ophthalmologist with a complaint of noticing a brown ring in both eyes. From history, there was no blurred vision or any other complaint. Examination revealed bilateral grayish brown ring around the limbus and separated from the limbus by a clear scleral zone. Which of the following would be the most important next step to do for such a patient?",
+    "options": [
+      "Urgent surgery",
+      "CT orbit",
+      "Lipid profile and reassurance",
+      "Massive steroid administration",
+      "Ophthalmoscopic examination"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "65-year-old"
+  },
+  {
+    "pdf_page": 626,
+    "printed_page": 626,
+    "page_type": "question_marked",
+    "printed_q": 23,
+    "stem": "23. A 65-year-old man visits the ophthalmologist with a complaint of noticing a brown ring in both eyes. From history, there was no blurred vision or any other complaint. Examination revealed bilateral grayish brown ring around the limbus and separated from the limbus by a clear scleral zone. Which of the following would be the most important next step to do for such a patient?",
+    "options": [
+      "Urgent surgery",
+      "CT orbit",
+      "Lipid profile and reassurance",
+      "Massive steroid administration",
+      "Ophthalmoscopic examination"
+    ],
+    "key_letter": "c",
+    "key_index": 2,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "65-year-old"
+  },
+  {
+    "pdf_page": 627,
+    "printed_page": 627,
+    "page_type": "question_unmarked",
+    "printed_q": 24,
+    "stem": "24. A 29-year-old woman complains of eye redness, pain and blurred vision. After staining with fluorescein, examination revealed a dendritic ulcer in the affected eye. Which of the following is absolutely contraindicated in the treatment of that patient?",
+    "options": [
+      "Topical antiviral medications",
+      "Topical steroids",
+      "Prophylactic antibiotics",
+      "All of the above"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "29-year-old"
+  },
+  {
+    "pdf_page": 628,
+    "printed_page": 628,
+    "page_type": "question_marked",
+    "printed_q": 24,
+    "stem": "24. A 29-year-old woman complains of eye redness, pain and blurred vision. After staining with fluorescein, examination revealed a dendritic ulcer in the affected eye. Which of the following is absolutely contraindicated in the treatment of that patient?",
+    "options": [
+      "Topical antiviral medications",
+      "Topical steroids",
+      "Prophylactic antibiotics",
+      "All of the above"
+    ],
+    "key_letter": "b",
+    "key_index": 1,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "29-year-old"
+  },
+  {
+    "pdf_page": 629,
+    "printed_page": 629,
+    "page_type": "question_unmarked",
+    "printed_q": 25,
+    "stem": "25. 54-year-old woman with a red, painful eye and the patient is complaining of photophobia. When you examine her, you note that visual acuity is decreased in the affected eye and cornea appears opaque and hazy with positive fluoresceine staining.What is the most likely diagnosis?",
+    "options": [
+      "Conjunctivitis",
+      "Corneal ulcer",
+      "Old corneal scar",
+      "Scleritis"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "54-year-old; stem verbatim spelling \"fluoresceine\""
+  },
+  {
+    "pdf_page": 630,
+    "printed_page": 630,
+    "page_type": "question_marked",
+    "printed_q": 25,
+    "stem": "25. 54-year-old woman with a red, painful eye and the patient is complaining of photophobia. When you examine her, you note that visual acuity is decreased in the affected eye and cornea appears opaque and hazy with positive fluoresceine staining.What is the most likely diagnosis?",
+    "options": [
+      "Conjunctivitis",
+      "Corneal ulcer",
+      "Old corneal scar",
+      "Scleritis"
+    ],
+    "key_letter": "b",
+    "key_index": 1,
+    "box_printed": true,
+    "explanation_verbatim": "A corneal ulcer presents with pain, photophobia, decreased vision, and fluorescein uptake. It requires urgent antimicrobial therapy.",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "54-year-old; stem verbatim spelling \"fluoresceine\""
+  },
+  {
+    "pdf_page": 631,
+    "printed_page": 631,
+    "page_type": "question_unmarked",
+    "printed_q": 26,
+    "stem": "26. 54-year-old woman with a red, painful eye and the patient is complaining of photophobia. When you examine her, you note that visual acuity is decreased in the affected eye and cornea appears opaque and hazy with positive fluoresceine staining. regarding your management, which of the following should be avoided?",
+    "options": [
+      "Intensive topical antimicrobial eye drops",
+      "Topical cycloplegic eye drops",
+      "Scraping for culture and sensitivity",
+      "Topical steroid therapy"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "54-year-old; stem verbatim spelling \"fluoresceine\""
+  },
+  {
+    "pdf_page": 632,
+    "printed_page": 632,
+    "page_type": "question_marked",
+    "printed_q": 26,
+    "stem": "26. 54-year-old woman with a red, painful eye and the patient is complaining of photophobia. When you examine her, you note that visual acuity is decreased in the affected eye and cornea appears opaque and hazy with positive fluoresceine staining. regarding your management, which of the following should be avoided?",
+    "options": [
+      "Intensive topical antimicrobial eye drops",
+      "Topical cycloplegic eye drops",
+      "Scraping for culture and sensitivity",
+      "Topical steroid therapy"
+    ],
+    "key_letter": "d",
+    "key_index": 3,
+    "box_printed": true,
+    "explanation_verbatim": "Management to avoid in corneal ulcer → (D) Topical steroid therapy\nSteroids delay healing and can worsen corneal infections. The mainstay is topical antibiotics and supportive care.",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "54-year-old; stem verbatim spelling \"fluoresceine\"; explanation box contains a printed → arrow, transcribed verbatim"
+  },
+  {
+    "pdf_page": 633,
+    "printed_page": 633,
+    "page_type": "question_unmarked",
+    "printed_q": 27,
+    "stem": "27. 45-year-old man reports a 2-day history of redness, pain, and photophobia of his left eye. He denies any trauma to the eye, fluoresceine staining reveals dendritic corneal ulcer.\nManagement would consist of which of the following?",
+    "options": [
+      "Topical antiviral like acyclovir",
+      "Topical steroid therapy",
+      "Topical antibiotics",
+      "Assurance and follow-up in one week"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "45-year-old, 2-day history; stem verbatim spelling \"fluoresceine\""
+  },
+  {
+    "pdf_page": 634,
+    "printed_page": 634,
+    "page_type": "question_marked",
+    "printed_q": 27,
+    "stem": "27. 45-year-old man reports a 2-day history of redness, pain, and photophobia of his left eye. He denies any trauma to the eye, fluoresceine staining reveals dendritic corneal ulcer.\nManagement would consist of which of the following?",
+    "options": [
+      "Topical antiviral like acyclovir",
+      "Topical steroid therapy",
+      "Topical antibiotics",
+      "Assurance and follow-up in one week"
+    ],
+    "key_letter": "a",
+    "key_index": 0,
+    "box_printed": true,
+    "explanation_verbatim": "Herpes simplex keratitis is treated with topical antivirals, not steroids. Steroids can exacerbate viral replication.",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "45-year-old, 2-day history; stem verbatim spelling \"fluoresceine\""
+  },
+  {
+    "pdf_page": 635,
+    "printed_page": 635,
+    "page_type": "question_unmarked",
+    "printed_q": 28,
+    "stem": "28. A 35-year-old man complains of pain in his right eye for several days, watering, photophobia, and blurring of vision. These symptoms are recurrent. He also had an acute attack of the common cold the week before. The most probable cause is:",
+    "options": [
+      "Catarrhal conjunctivitis",
+      "Dendritic ulcer",
+      "Chronic dacryocystitis",
+      "Acute angle closure glaucoma"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "35-year-old. FLAG: page prints option labels out of alphabetical order — a) Catarrhal conjunctivitis, c) Dendritic ulcer, b) Chronic dacryocystitis, d) Acute angle closure glaucoma (verbatim label order). options[] above lists them in the printed top-to-bottom order (index 0=a-labeled, 1=c-labeled, 2=b-labeled, 3=d-labeled); key_index on the marked page refers to this array position, not to a standard a=0/b=1/c=2/d=3 mapping."
+  },
+  {
+    "pdf_page": 636,
+    "printed_page": 636,
+    "page_type": "question_marked",
+    "printed_q": 28,
+    "stem": "28. A 35-year-old man complains of pain in his right eye for several days, watering, photophobia, and blurring of vision. These symptoms are recurrent. He also had an acute attack of the common cold the week before. The most probable cause is:",
+    "options": [
+      "Catarrhal conjunctivitis",
+      "Dendritic ulcer",
+      "Chronic dacryocystitis",
+      "Acute angle closure glaucoma"
+    ],
+    "key_letter": "c",
+    "key_index": 1,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "35-year-old. FLAG: printed key_letter is \"c)\" but the highlighted option is \"Dendritic ulcer\", which sits in the SECOND printed row (labels run a, c, b, d top-to-bottom, not alphabetical). key_index=1 points at options[1]=\"Dendritic ulcer\" (the actual highlighted text) rather than at the standard c=2 slot — escalating this for parent confirmation before it goes in the bank."
+  },
+  {
+    "pdf_page": 637,
+    "printed_page": 637,
+    "page_type": "question_unmarked",
+    "printed_q": 29,
+    "stem": "29. A farmer suffered eye trauma from a tree branch, followed by photophobia and lacrimation. Examination of the cornea showed stromal infiltration. The etiological diagnosis is reached by:",
+    "options": [
+      "Fluorescein staining",
+      "Tonometry",
+      "Corneal biopsy",
+      "Corneal topography"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": ""
+  },
+  {
+    "pdf_page": 638,
+    "printed_page": 638,
+    "page_type": "question_marked",
+    "printed_q": 29,
+    "stem": "29. A farmer suffered eye trauma from a tree branch, followed by photophobia and lacrimation. Examination of the cornea showed stromal infiltration. The etiological diagnosis is reached by:",
+    "options": [
+      "Fluorescein staining",
+      "Tonometry",
+      "Corneal biopsy",
+      "Corneal topography"
+    ],
+    "key_letter": "a",
+    "key_index": 0,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": ""
+  }
+]
