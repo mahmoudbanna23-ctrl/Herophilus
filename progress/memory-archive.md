@@ -1098,3 +1098,51 @@ sweep run (29 incoming x 355 corpus + within-batch, 2 candidates found and hand-
 folds: npqb-nr-207/212 disjoint-option same-fact-twice, npqb-nr-223/npqb-ps-129 templated-stem
 cross-chapter collision) — UNCOMMITTED on disk, splice is the remaining step. Superseded pointer:
 `progress\resume-neuro.md` "Topic 10" section carries the full account.
+
+## Pruned from MEMORY.md - 2026-09-16  (was MEMORY.md lines 39-57, peds endpoint part1/2 closed detail)
+Both parts long CLOSED with their own close-out files; kept here as history only, condensed to a
+one-line pointer each in MEMORY.md.
+
+**PEDS ENDPOINT PART 1 CLOSED 2026-09-05 — `questions.peds.ep.js` holds 704, 0 holes** — it closed
+at 705 and `47d4d76` folded `pedep-inf-82` into part 2's fuller printing, which is the legitimate
+drop (re-measured commit by commit 2026-09-06). 15 sections (body pp.5-1156 · 4 Model Final Exams
+pp.1157-1804 · 2 Model Training Exams pp.1805-1936; tail pp.1937-1991 measured, stages nothing).
+Close-out: `progress\resume-peds-endpoint.md`.
+THE CLOSING TEST IS PAGE COVERAGE, NOT A SECTION COUNT — every `p.<n>` in the `source` fields
+against every OCR-`answered` page: 855 answered, 854 cited; the one gap, p.938, was rendered and is
+prose the classifier mis-tagged. The classifier errs BOTH ways — it also called pp.1889/1890 notes
+when they hold a real question, which is the expensive direction.
+
+**PEDS ENDPOINT PART 2 CLOSED 2026-09-06 — `questions.peds.ep2.js` holds 630, 0 holes**, 17 sections
+pp.5-1949 (tail pp.1950-1993 stages nothing; `val-pd-ep2.js` must never get a section 18 row).
+Close-out: `progress\resume-peds-endpoint-part2.md`. THE CLOSING TEST IS A REPO TOOL:
+`node tools\bank-harness\pagecov-ep2.js` — exit 0 is clean, and it fails on a page outside its two
+measured classifier-error lists. An adjudication is not a citation; it caught six of those.
+part2.pdf 1993 pp / 272 MB. A FOLD MAKES THIS FILE SHRINK LEGITIMATELY — a drop with no fold commit
+behind it is the finding. A section that outgrows one file splits `part-A/B` ->
+`tools\bank-harness\merge-parts-ep.js` -> `.draft-*` -> `.array.js`. Never run
+`val-pd.js`/`splice-pd.js` on endpoint files — they write Chat B's live file; the `-pd-ep` pair is
+the endpoint's, and it refuses unless its validator gate exits 0. Search index
+`content\peds\qb-pages\ocr\ep1\`, tool `tools\ep-index\run-all.ps1`. ENDPOINT AND HOUSE OVERLAP, AND
+IT IS CHAPTER-SHAPED — 5 collisions in the first 150 entries, four endpoint Nutrition = House ch.10
+= 27% of that chapter; nothing folds mid-stream, and `pedhd-card-6..10` must NOT be folded (5
+identical stems, 5 different figures). Log: `resume-peds.md` tail.
+
+## Pruned from MEMORY.md - 2026-09-16 (part 2)  (was MEMORY.md lines 34-45, "Resume here" preamble)
+Historical multi-chat parallel-run narrative, condensed to one line in MEMORY.md.
+
+**BOTH CHATS RAN the night of 2026-09-02/03; both prompts were REWRITTEN IN PLACE 2026-09-03 late
+against measured disk state.** RELAUNCH ONLY FROM `progress\resume-2026-09-03b-chatB-peds.md`
+(v4 — House now via `tools\chapter-loop.js` + Codex). BOTH peds endpoint prompts are now SPENT —
+`resume-2026-09-03-late-peds-endpoint.md` (v6, part 1 closed under it) and
+`resume-peds-endpoint-part2.md` (v1, part 2 closed under it 2026-09-06); do not relaunch either.
+Every earlier prompt is stale and pays ~50k more per read. A DIRTY TREE IS NORMAL while two chats
+run — never stage another chat's file; commit explicit paths only, and wait on `index.lock`, never
+delete it. The watch runs FROM THE MAIN `D:\claude os` CHAT, not its own (user, 2026-09-03) — note
+atop `progress\WATCH.md`. SECOND ANCHORS PLACED 2026-09-03: open `resume-ophtho.md` (~41k → ~14k)
+and `resume-peds.md` (~37k → ~13k) with `RESUME-READ-FROM-HERE-2`, nothing deleted;
+`resume-peds-endpoint.md` (~14k, growing fast) was the next anchor due at the time (both endpoint
+parts have since closed, per the pointer above).
+
+Both endpoint parts are long closed, so this relaunch-prompt map is obsolete; kept only as history
+of how the 2026-09-02/03 parallel-chat run was coordinated.

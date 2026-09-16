@@ -1526,23 +1526,44 @@ through to the same revoked ChatGPT OAuth token regardless of OmniRoute model ro
 **Working vision route: `agy --model gemini-3.1-pro-high` (after `agy mcp disable
 agentmemory`)** — confirmed alive, real content returned.
 
-**⚠️ UNRESOLVED CONTRADICTION, DO NOT STAGE UNTIL RESOLVED:** the single-page liveness probe
-on `pg-055.png` had agy/Gemini read banner "CNS Infections" opening at Q251 — but t11's own
-close-out already confirmed (independent-refuter-checked) that pg-055 opens topic 12
-"Neuromuscular" at Q251. One of these is wrong. This was a one-shot pong test, not a real
-transcription pass — **first task next session: re-render pg-054/055/056 fresh and read
-them properly (two independent reads, not one probe) before trusting either banner claim.**
-Do not carry either answer forward without re-checking.
+**✅ CONTRADICTION RESOLVED 2026-09-16.** Fresh render of PDF 054-064 (scratchpad, prior render
+had not survived reset), read via two independent Explore subagents, blind to each other,
+reading actual boxed section banners + question content rather than the running header. Both
+agree exactly: **the running header at the top corner of each page lags the true section by
+about one page — a printing defect, not a boundary marker.** pg-054 (printed p.49)'s header
+says "Coma" but its content/boxed banner is "Demyelinating Diseases — Answers"; pg-055
+(printed p.50)'s top-left header says "CNS Infections" but its boxed banner reads
+"Neuromuscular Disorders / Questions" and Q251 ("Management of choice in Guillain-Barre
+syndrome...") opens there — content confirms neuromuscular (GBS, myasthenia, porphyria), not
+CNS infections. **t11's close-out was correct; the one-shot Gemini probe was wrong because it
+read only the lagging header.** Treat this header-lag as a standing defect shape for this
+book — never trust a running header alone to place a topic boundary again; use the boxed
+banner + content.
 
-**Next session, in order:** (1) resolve the banner contradiction above; (2) confirm topic 12's
-actual end page (rendered through PDF 063 already, book 58, one past the book-57 topic-13
-start — check whether topic 13 truly starts there or the offset/count assumption above is
-wrong given the contradiction); (3) write a staging brief mirroring
-`content/neuro/qb-pages/t11-briefs/staging-brief.md` (n starts at 251, `GG_NR_T12_STAGED`,
-file `gg-nr-t12.array.js`); (4) run staging via the confirmed agy/Gemini vision route; (5)
-independent-refuter check the staged array against the page images before drafting starts.
-Session hit the ~80-step budget during route-probing — stopping here per `CLAUDE.md` §9,
-nothing staged or written to `content\` yet, only this scouting note.
+**✅ TOPIC 12 END PAGE CONFIRMED 2026-09-16.** Rendered PDF 057-064 (book pp.52-59), read by a
+third Explore pass across all 8 pages. **Neuromuscular Disorders runs Q251-295 exactly — 45
+questions, matching the contents-page count exactly** (one of the rare topics where the
+contents page is right; still verify against real print rather than trusting this). Its own
+answer key ("Neuromuscular Disorders — Answers" boxed banner) starts partway down PDF 060
+(printed p.55), continues to PDF 061 (printed p.56). Topic 13 "CNS Infections" genuinely
+begins at **Q296, book p.57 (PDF 062)**, marked by its own boxed "CNS Infections — Questions"
+banner, first question about TB-meningitis treatment duration — clinically confirmed CNS
+infections, not a lagging-header artifact this time.
+
+**✅ Staging brief written:** `content/neuro/qb-pages/t12-briefs/staging-brief.md`, mirroring
+t11's brief. Scope: PDF 055-061 (7 pages, printed pp.50-56), n:251-295, file
+`gg-nr-t12.array.js`, var `GG_NR_T12_STAGED`. Documents the header-lag defect and the mixed
+question/answer page (PDF 060) explicitly so the staging pass isn't misled by it.
+
+**Next session, in order:** (1) re-render PDF 055-061 to a fresh scratchpad (this session's
+render will not survive a scratchpad reset, same as before — do not assume it's still there);
+(2) run staging via the confirmed working vision route (`agy --model gemini-3.1-pro-high`
+after `agy mcp disable agentmemory` — pong-test first, this is stale by next session) against
+`t12-briefs/staging-brief.md`; (3) independent-refuter check the staged array against the page
+images before drafting starts; (4) proceed to drafting once staging is clean. Session stopped
+here (contradiction resolved, boundary confirmed, brief written) rather than starting the
+staging pass, to keep this a clean, reviewable checkpoint. Nothing staged or committed to
+`content\` yet.
 
 **Route state — last probed 2026-09-16 ~03:30, RE-PROBE BEFORE TRUSTING:** OmniRoute
 gateway and Codex solo reported back online (`opencode-zen/big-pickle`, gateway ponged

@@ -31,18 +31,18 @@ Where this file and the archive disagree, this file wins. ⚠️ **Before openin
 `CLAUDE.md` was trimmed 2026-09-02 into `reference.md` (`## Moved from CLAUDE.md - 2026-09-02`);
 **no live rule left it.**
 
-## Resume here — state at 2026-09-15
-**BOTH CHATS RAN the night of 2026-09-02/03; both prompts were REWRITTEN IN PLACE 2026-09-03 late
-against measured disk state.** ⚠️ **RELAUNCH ONLY FROM `progress\resume-2026-09-03b-chatB-peds.md`
-(v4 — House now via `tools\chapter-loop.js` + Codex). **BOTH peds endpoint prompts are now SPENT — `resume-2026-09-03-late-peds-endpoint.md` (v6, part 1 closed under it) and `resume-peds-endpoint-part2.md` (v1, part 2 closed under it 2026-09-06); do not relaunch either.** Every earlier prompt is stale and pays
-~50k more per read. ⚠️ **A DIRTY TREE IS NORMAL while two chats run** — **never stage another
-chat's file; commit explicit paths only, and wait on `index.lock`, never delete it.**
-⚠️ **The watch runs FROM THE MAIN `D:\claude os` CHAT, not its own** (user, 2026-09-03) — note atop
-`progress\WATCH.md`. ✅ **SECOND ANCHORS PLACED 2026-09-03**: open `resume-ophtho.md` (~41k → ~14k)
-and `resume-peds.md` (~37k → ~13k) with **`RESUME-READ-FROM-HERE-2`**, nothing deleted;
-`resume-peds-endpoint.md` (~14k, growing fast) is the next anchor due.
-✅ ENT CLOSED (`ledger.md` §15–§16). ✅ **OPHTHO CLOSED 2026-09-02** — **1,598**, 0 holes, CLEAN, boots;
-all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **The ophtho ENDPOINT is a separate book — 2,442 pp / 293 MB; do NOT split the PDF, split the page RANGE.** Printed page = PDF **+1** past an unpinned flip in PDF 2151–2170. ✅ **GATE 0 CLOSED 2026-09-08** — `-oph-ep` toolchain (`sec-oph.js`/`val-oph-ep.js`/`splice-oph-ep.js`/`pagecov-oph.js`, `--part 1|2`) + stubs + both `index.html` tags done, **OPH-B unblocked**. **182 live, s1-7 done** (checked+spliced+committed; s7 Sclera closed 2026-09-16, 169->182, `c16ae83`). s8-s9 transcribed (29q/26q, draft next), s10-12 next, s13 deferred, s14-28 unstaged. Close-out: `progress\resume-ophtho-endpoint-A-chapters.md` tail.**
+## Resume here — state at 2026-09-16
+✅ ENT CLOSED (`ledger.md` §15–§16). ✅ **OPHTHO CLOSED 2026-09-02** — **1,598**, 0 holes, CLEAN,
+boots; all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **The ophtho
+ENDPOINT is a separate book — 2,442 pp / 293 MB; do NOT split the PDF, split the page RANGE.**
+Printed page = PDF **+1** past an unpinned flip in PDF 2151–2170. ✅ **GATE 0 CLOSED 2026-09-08** —
+`-oph-ep` toolchain (`sec-oph.js`/`val-oph-ep.js`/`splice-oph-ep.js`/`pagecov-oph.js`, `--part 1|2`)
++ stubs + both `index.html` tags done, **OPH-B unblocked**. **182 live, s1-7 done** (checked+
+spliced+committed; s7 Sclera closed 2026-09-16, 169->182, `c16ae83`). s8-s9 transcribed (29q/26q,
+draft next), s10-12 next, s13 deferred, s14-28 unstaged. Close-out:
+`progress\resume-ophtho-endpoint-A-chapters.md` tail. Multi-chat parallel-run coordination history
+(2026-09-02/03 relaunch prompts, now obsolete — both peds endpoint parts have since closed):
+archive, `## Pruned from MEMORY.md - 2026-09-16 (part 2)`.
 
 - ✅ **PEDS HOUSE CLOSED 2026-09-04 — `questions.peds.js` holds 393, the full measured bank**, all
   20 chapter prefixes present (array loaded 2026-09-05, 0 holes, boots clean). Close-out: `resume-peds.md`.
@@ -55,16 +55,15 @@ all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **Th
   `## Pruned from MEMORY.md - 2026-09-16`, and `## Pruned from MEMORY.md - 2026-09-05`.
 - ⏳ **NEURO — 407 live** (t09 Coma CLOSED 2026-09-15, 333->355; t10 Movement Disorders CLOSED
   2026-09-16, 355->384; **t11 Demyelinating CLOSED 2026-09-16, 384->407, 0 folds**; Grade Gain
-  Psychiatry CLOSED 2026-09-08). **Next: Topic 12 "Neuromuscular" (book p.50).** Gateway/Codex back
-  online — see GATEWAY ROUTE block above. Fallback if it drops again: `agy --add-dir "<repo root>"`
-  (cwd alone unreliable), `--model gemini-3.1-pro-high` vision / `claude-sonnet-4-6` drafting (no
-  `--effort`), `--print-timeout 8m` (5m default too short for 12-entry jobs). Close-out:
-  `progress\resume-neuro.md` "Topic 11".
-  ⚠️ **Renders die with the scratchpad** — re-render ~45 s, OCR is the rate-limited part. ⚠️ **Bank
-  is GRADE GAIN, ONE book page per sheet, A4, NOT 2-up** — do not carry peds/ophtho House arithmetic
-  across. ⚠️⚠️ **OFFSET IS NOT GLOBAL: neuropsychiatry PDF = book + 5, neurosurgery PDF = book + 7.
-  In scope = PDF 6–98 ONLY; SKIP 99–140.** ⚠️ **Trust no printed count** — the contents undercounted
-  ten topics running and has never once run high.
+  Psychiatry CLOSED 2026-09-08). ✅ **T12 "Neuromuscular" boundary CONFIRMED 2026-09-16: Q251-295,
+  45q exact** (book pp.50-56 / PDF 055-061) — staging brief WRITTEN
+  `content\neuro\qb-pages\t12-briefs\staging-brief.md`, staging NOT yet run. ⚠️⚠️ **RUNNING HEADER
+  LAGS TRUE SECTION ~1 PAGE** (confirmed pg-054/055) — never trust it alone; boxed section-title
+  banner + question content are the only reliable markers. Gateway/Codex reported back online
+  2026-09-16 (GATEWAY ROUTE block above) — **pong-test before trusting, state drifts fast here.**
+  Close-out: `progress\resume-neuro.md` "Topic 12". ⚠️ **Renders die with the scratchpad.**
+  ⚠️⚠️ **OFFSET NOT GLOBAL: neuropsychiatry PDF = book+5, neurosurgery PDF = book+7. In scope =
+  PDF 6–98 ONLY; SKIP 99–140.**
 - **Five-option cap settled; OSCE skipped by user ruling 2026-08-31** — both **PRUNED 2026-09-08 ->**
   archive, `## Pruned from MEMORY.md - 2026-09-08`. Still binding, just no longer re-read every turn.
 
