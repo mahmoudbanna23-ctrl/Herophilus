@@ -631,3 +631,49 @@ the fifth block above is DEFERRED until then — do not resume s13 staging next.
 - **Next step**: write drafting brief (model on s07's `brief-s07-stage-draft.md` pattern) from the
   staging JSON above -> `content\ophtho\qb-pages\oph-ep-p1-s09-lens.{array,draft}.js`. Run the
   six-stage duplicate sweep first. `val-oph-ep.js --part 1 9` after drafting.
+
+## 2026-09-16, s9 drafting brief written, 6 dispatch attempts, whole fleet dead for the day
+- Six-stage sweep + numeric-note re-verify done in the prior tick (both closed before this one).
+  Brief written: `content\ophtho\qb-pages\oph-ep-codex-s09-draft.brief.md` -- covers array+draft in
+  one pass (no `.array.js` existed yet), embeds both fold decisions (q17->n11, q18->n14) and both
+  shared-menu groups (n16/n17, n3/n8/n26) so the drafting worker never re-derives them. `sec-oph.js`
+  line 19 already carries `folded: [18, 19]` for section 9, confirmed unchanged.
+- **6 dispatch attempts today, every one failed, none left a partial file** (`.array.js`/`.draft.js`
+  existence checked clean after every single attempt):
+  1. Rung 2, Codex+OmniRoute, `opencode-zen/big-pickle` -- provider 400, malformed tool-call JSON
+     mid-run (`function.arguments must be valid JSON`).
+  2. Rung 2, Codex+OmniRoute, `auto/coding` -- reconnect storm then 409 "pinned native Codex turn
+     target is no longer available". Its trace showed sclera-template content (`ophep-sclera-5/6/7`)
+     -- checked, benign: that's `oph-ep-p1-s07-sclera.draft.js`, the structural template the brief
+     names, not s09 content; no file was ever written.
+  3. Rung 3, opencode+OmniRoute, `auto/coding` -- worked all the way through correct page-grouping
+     (27 groups, right printed_q:14 split), then gateway error "Chat admission capacity is
+     temporarily unavailable."
+  4. Rung 4, Codex on its own ChatGPT login, `gpt-5.6-terra` -- usage limit hit, resets
+     **2026-09-20 18:21** (`chatgpt.com/codex/settings/usage`).
+  5. Rung 5, fleet direct, `openrouter/poolside/laguna-s-2.1:free` -- "temporarily rate-limited
+     upstream" after reading the input files.
+  6. Rung 5, fleet direct, `openrouter/nvidia/nemotron-3-ultra-550b-a55b:free` -- ran the fullest
+     of any attempt: **independently rebuilt the 27-group ordering from the raw JSON and confirmed,
+     on its own read, every judgment call in the brief** -- printed_q:14 splits at pdf_page 690/692,
+     fold targets n:18->n:11 and n:19->n:14 both stem-match, shared-menu group 1 (n:16/n:17) options
+     byte-identical, group 2 (n:3/n:8/n:26) options NOT identical (so no forced cross-reference,
+     matches the brief's own conditional). Was about to write `.array.js` when it hit OpenRouter's
+     **account-wide daily free-model cap** ("Add 10 credits to unlock 1000 free model requests per
+     day") -- this cap is shared across every `:free` model on the key, so attempt 5's rate-limit and
+     attempt 6's cap are the same underlying exhaustion, not two separate faults.
+  7. Probed (not dispatched) `groq/openai/gpt-oss-120b` -- the bare system-prompt probe alone needs
+     12,202 tokens against Groq's 8,000 TPM cap. Not viable for a brief this size at any batch size;
+     do not retry Groq for drafting work.
+- **State: gateway (rungs 2-3) unstable today across three distinct failure modes, Codex's own quota
+  dead until 2026-09-20, OpenRouter free tier capped account-wide until it resets (daily, exact reset
+  time unconfirmed), Groq too small a TPM ceiling for this job's context regardless of day.** The
+  brief itself has now been independently re-derived twice (opencode's own exploration mid-attempt-3,
+  full re-derivation in attempt 6) with zero mismatches found -- the brief is not the blocker.
+- **Next step**: retry the OpenRouter free lane (`laguna-s-2.1:free` or `nemotron-3-ultra:free`) once
+  the daily cap resets, OR drop to rung 6 (Claude `lean-drafter` builder) with an explicit
+  `ROUTE-OK:` override -- justified this time: every rung 2-5 seat was pong-probed or dispatched and
+  failed today for a distinct, confirmed infra reason, not a retry loop. If rung 6 is used, still
+  get an independent (non-same-agent) checker per the two-layer rule before Claude splices.
+- Session hit its ~80-step budget on this tick -- stopping here, resume in a fresh session from this
+  block.
