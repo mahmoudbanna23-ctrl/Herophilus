@@ -613,3 +613,21 @@ the fifth block above is DEFERRED until then — do not resume s13 staging next.
   MEMORY.md's final close-out line.
 - Session hit its ~80-step budget again this tick -- stopping the autonomous loop here rather than
   starting the drafting brief now; resume in a fresh session from this block.
+
+## s9 Lens — transcription closed, 2026-09-16
+- **79 pages (639-717) transcribed, staged at `content\ophtho\qb-pages\oph-ep-p1-s09-lens.staging.json`**
+  (79 objects, pdf_page 639-717, sorted). Structure: 25 theory pages (639-663) + 54 question pages
+  (664-717) = 26 questions, printed_q 1-26, no gaps. Page-type split: 27 `question_unmarked` +
+  25 `question_marked` + 2 `question_single` (54 total, some questions run >2 pages -- not yet
+  resolved, check when drafting).
+- Route: OmniRoute gateway, `gemini/gemini-3.1-flash-lite`, 3-page chunks (larger batches 504 on a
+  fixed ~15s per-dispatch deadline -- not congestion, batch size is the actual limit, keep future
+  vision dispatch on this route at <=3 pages/call).
+- Spot-checked 5 pages against source PNGs (640, 664, 665, 710, 711) -- exact match on stem, options,
+  key letter, explanation-box text verbatim, and every number in a dense clinical vignette (710/711:
+  60y, 20y, 6/18, 6/24, 2wk, 6mo all correct). Zero discrepancies. Remaining pages NOT individually
+  re-checked, especially the ~29 pages carrying `numeric_note` flags -- re-verify those against
+  source images when drafting, per project numeric-fact caution.
+- **Next step**: write drafting brief (model on s07's `brief-s07-stage-draft.md` pattern) from the
+  staging JSON above -> `content\ophtho\qb-pages\oph-ep-p1-s09-lens.{array,draft}.js`. Run the
+  six-stage duplicate sweep first. `val-oph-ep.js --part 1 9` after drafting.
