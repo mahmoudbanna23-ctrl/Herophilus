@@ -557,3 +557,59 @@ the fifth block above is DEFERRED until then — do not resume s13 staging next.
   `.draft.js` do not exist yet -- next session's first move once transcription completes is the
   same staging+draft brief pattern as `<scratchpad>/s07/brief-s07-stage-draft.md`, re-derived for
   s08's own page arithmetic (579+2n / 580+2n, NOT s7's 532+2n / 533+2n -- do not copy the constant).
+
+## 2026-09-16 (autonomous tick), transcription CLOSED -- 29 questions, drafting next
+- **Re-probed both dead rungs fresh, both still dead**: Codex solo `codex exec -i` on p.600 ->
+  same `refresh_token_invalidated` (OpenAI session revoked, needs the user to `codex login` again
+  -- an account action, left for the user, not retried). Gemini text-only probe -> still 429
+  `RESOURCE_EXHAUSTED` (daily quota, unreset as of 2026-09-16 02:11 UTC). Per the ladder, fell to
+  the Claude-subagent rung with a `ROUTE-OK:` override (route-guard blocks a Claude drafter while
+  the gateway is up, but the specific rung it wants tried, gateway `auto/vision`, is the one
+  MEMORY.md's GATEWAY ROUTE note bans outright).
+- **Two `lean-drafter` subagents transcribed the rest** (pages 600-618 and 619-638, 19+20 images,
+  Read tool on PNGs, ~118k tokens / ~23 tool calls each): `<scratchpad>/s08/s08-claude-text-d1.json`
+  (pp.600-618, q10's marked page + q11-19 full) and `s08-claude-text-d2.json` (pp.619-638, q20-29
+  full). Combined with the existing `s08-gemini-text-a.txt` (pp.560-599, theory + q1-9 full + q10's
+  unmarked page), **all 58 question pages (581-638) are now transcribed -- 29 questions, 0 gaps.**
+  Page-arithmetic formula (579+2n unmarked / 580+2n marked) held for every single page across all
+  three sources, no `question_single`, no theory pages inside the question range, no figures
+  anywhere in 600-638 (the only two figures in the whole chapter are q1's cornea-layer diagram and
+  q9's Munson's-sign photo, both already in the batch-a range).
+- **Two judgment calls made this tick (Claude-only: fold decision + key adjudication):**
+  1. **FOLD q11 + q17** (respelled shape, one of the six standing fold shapes -- CLAUDE.md
+     "SIX fold shapes"): identical stem ("young boy with Down syndrome... conical protrusion...",
+     key Pentacam) and identical options except q11's option A reads "Amsler's grid" vs q17's
+     "Amsler's gird" (typo). Same key both printings. **Decision: keep q11's printing as the
+     surviving entry** (correct spelling), drop q17, no `alsoIn` (within-bank fold per the
+     standing rule). Final id count is therefore **28**, not 29.
+  2. **q28 key convention resolved, not disputed**: the endpoint page prints options out of
+     alphabetical order (`a) Catarrhal conjunctivitis`, `c) Dendritic ulcer`, `b) Chronic
+     dacryocystitis`, `d) Acute angle closure glaucoma`, top to bottom) and highlights the
+     *second* row while labeling it "c)". **Convention for the draft: `options[]` stays in
+     printed top-to-bottom order; `answer`/`key` is the 0-based index of the highlighted text**
+     (index 1, "Dendritic ulcer"), never the printed letter. This is a page-layout artifact, not
+     a defective key, so it is not a "disputed key" note -- just transcribe positionally.
+- **Explanation-box gaps to fill from the lecture cache when drafting** (per CLAUDE.md
+  "gap-fill" rule -- write from `content/ophtho/lectures/*.txt` if a cornea lecture is cached,
+  tag `not taken from the course material` only if it genuinely is not covered): q17, q18, q19
+  (d1) and q20-24, q28, q29 (d2) print a highlighted answer with **no** explanation box. q25-27
+  (d2) do have boxes.
+- **q14's printed explanation box is about a different topic than its own stem** (stem: chemical
+  eye burn management; box: intra-ocular foreign body management) -- a source defect, transcribed
+  verbatim in the array file, **not corrected there**; the draft's authored explanation must
+  address the actual stem (chemical burn) and should note the mismatch rather than reuse the box
+  text, per "a defective key/box is noted, never disputed."
+- **Next step, exact and ready to dispatch**: write a drafting brief for Codex+OmniRoute
+  (`D:\claude os\Tools\omniroute\codex-gw.sh` -- workspace root, NOT under the project's own
+  `Tools\`), modeled byte-for-byte on `<scratchpad>/s07/brief-s07-stage-draft.md`, templated off
+  `content/ophtho/qb-pages/oph-ep-p1-s07-sclera.{array,draft}.js` (small, recent, same book).
+  Target: `content/ophtho/qb-pages/oph-ep-p1-s08-cornea.array.js` + `.draft.js`, ids
+  `ophep-cornea-1..28` (28 after the q11/q17 fold), `chapter:'op-cornea'`, `bank:'endpoint'`,
+  citation page = each row's own **unmarked** page (579+2n). Source JSON to feed the brief:
+  the three scratchpad files above (`s08-gemini-text-a.txt`, `s08-claude-text-d1.json`,
+  `s08-claude-text-d2.json`) plus this section's fold/key/gap-fill decisions verbatim from above
+  -- do not re-derive them. After the brief returns, run `val-oph-ep.js --part 1 8`, get an
+  independent (non-Codex) check, then Claude-only splice + boot-check + commit + this file's/
+  MEMORY.md's final close-out line.
+- Session hit its ~80-step budget again this tick -- stopping the autonomous loop here rather than
+  starting the drafting brief now; resume in a fresh session from this block.
