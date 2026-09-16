@@ -37,9 +37,10 @@ boots; all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠�
 ENDPOINT is a separate book — 2,442 pp / 293 MB; do NOT split the PDF, split the page RANGE.**
 Printed page = PDF **+1** past an unpinned flip in PDF 2151–2170. ✅ **GATE 0 CLOSED 2026-09-08** —
 `-oph-ep` toolchain (`sec-oph.js`/`val-oph-ep.js`/`splice-oph-ep.js`/`pagecov-oph.js`, `--part 1|2`)
-+ stubs + both `index.html` tags done, **OPH-B unblocked**. **182 live, s1-7 done** (checked+
-spliced+committed; s7 Sclera closed 2026-09-16, 169->182, `c16ae83`). s8-s9 transcribed (29q/26q,
-draft next), s10-12 next, s13 deferred, s14-28 unstaged. Close-out:
++ stubs + both `index.html` tags done, **OPH-B unblocked**. **207 live, s1-9 done** (checked+
+spliced+committed; s9 Lens closed 2026-09-16, 182->207, `216baad`, drafted by `agy` fleet-rung-5
+after gateway/Codex/OpenRouter all dead or exhausted that day — checked by `vibe`, different
+house). s8 transcribed (29q, draft next), s10-12 next, s13 deferred, s14-28 unstaged. Close-out:
 `progress\resume-ophtho-endpoint-A-chapters.md` tail. Multi-chat parallel-run coordination history
 (2026-09-02/03 relaunch prompts, now obsolete — both peds endpoint parts have since closed):
 archive, `## Pruned from MEMORY.md - 2026-09-16 (part 2)`.

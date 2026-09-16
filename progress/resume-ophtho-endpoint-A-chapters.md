@@ -677,3 +677,45 @@ the fifth block above is DEFERRED until then — do not resume s13 staging next.
   get an independent (non-same-agent) checker per the two-layer rule before Claude splices.
 - Session hit its ~80-step budget on this tick -- stopping here, resume in a fresh session from this
   block.
+
+## 2026-09-16, s9 Lens CLOSED, 182 -> 207, `216baad` -- fleet rung 5 (agy) drafted it
+- Same session continued past the step-budget note above on explicit user direction (four short
+  "try X" messages), ladder-walking the remaining rungs rather than stopping:
+  8. Re-probed OpenRouter free lane (`laguna-s-2.1:free`, `nemotron-3-ultra:free`) -- 4 straight
+     timeouts (`EXIT:124`) at 30s and 60s, one ambiguous `EXIT:0` with no visible text. Concluded
+     still dead/unresponsive, matches the account-wide cap from attempt 6, did not probe further.
+  9. Third backup (`cohere/north-mini-code:free`) -- same `EXIT:124` timeout. Confirms account-wide,
+     not model-specific. OpenRouter free lane dropped for the rest of this session.
+  10. Re-probed Codex own login (`gpt-5.6-terra`) -- identical error, identical reset date
+      (2026-09-20 18:21). Unchanged, dropped again.
+  11. **`agy`/`vibe`/`grok` (rung 5 CLI roster) -- `grok` skipped** (already flagged "out of quota"
+      same-day in MEMORY.md's GATEWAY ROUTE block, not re-probed). **`agy` needed its documented
+      fix** (`agy mcp disable agentmemory`, applied) **then pong'd clean**; so did `vibe`.
+  12. Dispatched the s09 brief to `agy --print`. First attempt hit `agy`'s own client-side 5-minute
+      print-timeout mid-turn (not a provider error) -- no files, no partial text. Redispatched with
+      `--print-timeout 20m`. **Hit the 20-min timeout too, but this time both output files existed
+      and parsed clean** -- `agy` finished the actual work before the CLI's own reporting step got
+      cut off. Lesson: `agy --print`'s timeout kills the client's wait, not necessarily the file
+      writes already committed to disk -- always check for output files after an `agy` timeout
+      before treating it as a dead run.
+  13. `node tools/bank-harness/val-oph-ep.js --part 1 9` -- **ALL CHECKS PASSED**: 27 array rows
+      (n:1-27 sequential), 25 draft rows (16 boxed / 9 unboxed), n:18/n:19 confirmed absent, shared
+      menu n:16/n:17 auto-detected and anchored correctly, group n:3/n:8/n:26 correctly NOT forced
+      (options not byte-identical, matches the brief's own conditional).
+  14. Independent check dispatched to `vibe` (different house from `agy`, satisfies the two-layer
+      rule) -- first attempt crashed on a Windows console encoding bug (`'charmap' codec can't
+      encode '→'`, cp1252 can't print an arrow character Mistral's CLI emitted; a `vibe`/
+      Windows client bug, not a content problem). Retried with `PYTHONIOENCODING=utf-8` set --
+      **PASS**: byte-identity spot-checked on 10+ rows, both markers exact, fold/shared-menu logic
+      confirmed, 4 explanations read as medically coherent. Full report inline in
+      `vibe-s09-check2.log` (scratchpad, not project-permanent).
+  15. Spliced (`--write`): 182 -> 207 entries, 0 holes. `node tools/boot-check/boot-check.js` --
+      0 console errors (unchanged from before the splice; ophtho/neuropsych still show 0 at the
+      aggregator per the pre-existing `LOCKED_MODULES` gate, not a regression from this splice).
+      Committed `216baad` (`git commit -F <msgfile> --` on the 5 touched paths, explicit pathspec).
+- **s09 Lens CLOSED. First successful drafting dispatch after 8 failed attempts across rungs 2-5
+  the same day** -- confirms `agy`/`vibe` (rung 5's non-OpenRouter/Groq CLI lanes) are a real,
+  usable fallback when the gateway, Codex's own login, and OpenRouter's free tier are all down
+  together, as they were for most of 2026-09-16.
+- **Next step**: s8 (transcribed, 29q, not yet drafted) is next in sequence, then s10-12. Same
+  ladder applies -- probe before dispatch, `agy`/`vibe` now confirmed live fallbacks for today.
