@@ -11,7 +11,12 @@ const SEC_P1 = {
   6: { prefix: 'ophep-conjunctiva-', file: 'oph-ep-p1-s06-conjunctiva.array.js', svar: 'OPHEP_S06_STAGED', draft: 'oph-ep-p1-s06-conjunctiva.draft', chapter: 'op-conj', pages: [417, 522], ans: null },
   7: { prefix: 'ophep-sclera-', file: 'oph-ep-p1-s07-sclera.array.js', svar: 'OPHEP_S07_STAGED', draft: 'oph-ep-p1-s07-sclera.draft', chapter: 'op-sclera', pages: [523, 559], ans: null },
   8: { prefix: 'ophep-cornea-', file: 'oph-ep-p1-s08-cornea.array.js', svar: 'OPHEP_S08_STAGED', draft: 'oph-ep-p1-s08-cornea.draft', chapter: 'op-cornea', pages: [560, 638], ans: null },
-  9: { prefix: 'ophep-lens-', file: 'oph-ep-p1-s09-lens.array.js', svar: 'OPHEP_S09_STAGED', draft: 'oph-ep-p1-s09-lens.draft', chapter: 'op-cat', pages: [639, 717], ans: null },
+  // Section 9's printed_q:14 splits into two distinct questions on content (n14, n15) --
+  // the book's own numbering is defective there, chapter/content order wins. Two within-section
+  // folds, both dropped at drafting: n18 (orig printed_q17, boxed-second-printing exact reprint)
+  // into n11 (orig printed_q11), and n19 (orig printed_q18, boxed-second-printing exact reprint)
+  // into n14 (orig printed_q14, first half of the split). 27 staged rows, 25 drafted.
+  9: { prefix: 'ophep-lens-', file: 'oph-ep-p1-s09-lens.array.js', svar: 'OPHEP_S09_STAGED', draft: 'oph-ep-p1-s09-lens.draft', chapter: 'op-cat', pages: [639, 717], ans: null, folded: [18, 19] },
   10: { prefix: 'ophep-uveal-tract-', file: 'oph-ep-p1-s10-uveal-tract.array.js', svar: 'OPHEP_S10_STAGED', draft: 'oph-ep-p1-s10-uveal-tract.draft', chapter: 'op-uvea', pages: [718, 787], ans: null },
   11: { prefix: 'ophep-glaucoma-', file: 'oph-ep-p1-s11-glaucoma.array.js', svar: 'OPHEP_S11_STAGED', draft: 'oph-ep-p1-s11-glaucoma.draft', chapter: 'op-glauc', pages: [788, 849], ans: null },
   12: { prefix: 'ophep-vitreous-', file: 'oph-ep-p1-s12-vitreous.array.js', svar: 'OPHEP_S12_STAGED', draft: 'oph-ep-p1-s12-vitreous.draft', chapter: null, pages: [850, 879], ans: null }, // no chapter exists for Vitreous; one must be added to modules.js
