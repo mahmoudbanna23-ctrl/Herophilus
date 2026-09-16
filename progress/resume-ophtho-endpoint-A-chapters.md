@@ -717,5 +717,107 @@ the fifth block above is DEFERRED until then — do not resume s13 staging next.
   the same day** -- confirms `agy`/`vibe` (rung 5's non-OpenRouter/Groq CLI lanes) are a real,
   usable fallback when the gateway, Codex's own login, and OpenRouter's free tier are all down
   together, as they were for most of 2026-09-16.
-- **Next step**: s8 (transcribed, 29q, not yet drafted) is next in sequence, then s10-12. Same
-  ladder applies -- probe before dispatch, `agy`/`vibe` now confirmed live fallbacks for today.
+## 2026-09-16, s8 Cornea DRAFTING IN PROGRESS -- array.js done, draft.js still failing across the ladder
+- Brief already written: `oph-ep-codex-s08-draft.brief.md` (29q, one fold n:17->n:11, n:28
+  positional-key convention, n:14 off-topic-box handling, n:1/n:9 figure-pending notes -- all
+  fully specified, brief itself never in question this session).
+- Re-probed from the top per the ladder ("rungs may have recovered" -- do not assume yesterday's
+  dead state still holds):
+  1. Rung 1 (Codex+gateway) default model (`opencode-zen/big-pickle`) -- dispatched, ran long,
+     then silently stalled with zero output. Confirmed dead via log-mtime staleness + process-list
+     correlation (no live process left for this job; other live `codex.exe`/`node.exe` belonged to
+     an unrelated parallel chat's neuro work). Fresh pong confirmed the gateway itself was up, so
+     this was job-specific, not gateway-wide.
+  2. Rung 1 fallback model `CODEX_GW_MODEL=auto/coding` -- hard-failed, repeated
+     `ERROR: Reconnecting... N/5` then `stream disconnected before completion`. Root cause found
+     in `codex-gw.sh`'s own header comment: this combo has been KNOWN DEAD since 2026-09-15 (its
+     pool was down to rate-limited free Gemini seats). Should have read the script's comments
+     before picking this fallback -- noted for next time.
+  3. Rung 3 (opencode+gateway) -- asked the user which model per the hard "never pick an opencode
+     model without asking" rule; user chose **`auto/smart`**. First dispatch produced a correct,
+     verified `array.js` (29 rows, sequential n, right var name) then died mid-todo-list on
+     `Error: Chat admission capacity is temporarily unavailable. Retry shortly.` before starting
+     `draft.js`. Resumed the same session (`opencode run -s <id>`) scoped only to the remaining
+     `draft.js` + validator step -- **hit the identical capacity error again, immediately, no new
+     work done.** Two failures on the same transient-flavored error = dropped per the ladder rule.
+  4. Rung 4 (Codex own OpenAI login, `gpt-5.6-terra`) -- pong probe hard-failed: account usage
+     limit, resets **2026-09-20 18:21 local**. Unchanged from yesterday's finding in this same
+     file above. Dead for four more days, do not re-probe before then.
+  5. Rung 5 `vibe` -- pong'd live. First dispatch (scoped: array.js already done, build draft.js
+     only) hit its 40-turn cap with the file genuinely incomplete: only 8 of 28 rows written, cut
+     off mid-string. Also found two format defects in what it did write: (a) explanation fields
+     used **literal newline bytes inside double-quoted JS strings** -- a straight syntax error,
+     the file does not parse (`node -e "require(...)"` throws `SyntaxError: Invalid or unexpected
+     token`); (b) the required `**The endpoint file prints this explanation:**` marker line was
+     written without its `**` bold asterisks, which the validator would reject. Redispatched with
+     an explicit fix-both-defects instruction and `--max-turns 100` (overwrite from scratch) --
+     this run crashed after 77 turns on `LLM backend error [mistral]: ReadTimeout`, a network
+     error against `api.mistral.ai`, and **the draft.js file no longer exists on disk at all**
+     (the overwrite-from-scratch instruction likely deleted/truncated it before the crash
+     prevented the replacement `Write` from landing). Connection error -> dropped per the ladder
+     rule, did not retry `vibe` a third time.
+  6. Rung 5 `agy` -- needed its documented fix first (`agy mcp disable agentmemory`), then pong'd
+     live (note: `agy --print` needs the prompt **attached to the flag**, `--print='text'`, not as
+     a separate positional or `--prompt=` arg, or it silently prints CLI help instead of running).
+     Dispatched with the same fix-both-defects instructions, `--print-timeout 20m` -- failed
+     immediately: `Individual quota reached... Resets in 151h46m` (~6.3 days from 2026-09-16,
+     i.e. **resets around 2026-09-22 evening**). Hard quota wall, not a transient error -- do not
+     retry `agy` before then.
+- **State at session's 80-step budget cutoff: `array.js` verified correct and complete (29 rows).
+  `draft.js` does NOT exist on disk right now** (deleted by the crashed `vibe` overwrite attempt,
+  never replaced). Every ladder rung has now been probed and failed today for a distinct, mostly
+  non-retry-loop reason: rung 1 two ways dead, rung 3 transient-but-reproduced-twice, rung 4 hard
+  quota to 2026-09-20, rung 5's `vibe` network-flaky (and its own output proved format-defective
+  even when it did write something) and `agy` hard quota to ~2026-09-22.
+- **Next step, in order of preference**: (a) re-probe rung 3 (`opencode`/`auto/smart`) fresh --
+  its capacity error read as transient ("retry shortly") and may have cleared by the next
+  session; the existing session id `ses_f5481bf10ffeQdclhXPEsQSGgP` can still be resumed with
+  `opencode run -s <id>` scoped to draft.js + validator only, array.js does not need rebuilding;
+  (b) if still capacity-limited, re-probe `vibe` fresh (its failure was a Mistral-side network
+  timeout, plausibly transient) with the same fix-both-defects instructions (literal `\n` escapes
+  inside double-quoted JS strings, keep the `**bold**` markers) and a turn budget in the 60-80
+  range (100 may be inviting the same long-context timeout that crashed it at turn 77 last time);
+  (c) only if (a) and (b) both fail again, this is a legitimate `ROUTE-OK:` case for a Claude
+  `lean-drafter` builder (every rung 1-5 seat pong-probed or dispatched and failed today for a
+  distinct confirmed reason) -- still get an independent non-Claude-same-run checker before the
+  splice, per the two-layer rule. Do not touch `agy`, Codex's own login, or the `auto/coding`
+  gateway fallback again until their stated reset times pass.
+- Session hit its ~80-step budget on this tick -- stopping here, resume in a fresh session from
+  this block.
+
+## 2026-09-16 (later tick), s8 retry -- rung 3 confirmed dead differently, rung 5 dispatch mechanics bug, still no draft.js
+- User instruction this tick: retry rungs in order, **skip Codex** (rungs 1 and 4 both).
+- Rung 3 (opencode+gateway) pong probe -- **hung to a 45-60s timeout with zero output**, both on
+  the existing resumed session (`ses_f5481bf10ffeQdclhXPEsQSGgP`) and on a fresh session with no
+  `-s` flag. This is a different failure shape than yesterday's explicit "Chat admission capacity"
+  error -- a silent hang, not a returned error -- but still a dead rung by the connection/timeout
+  rule. Dropped without a third attempt.
+- Rung 5 `vibe` pong'd live again (`PYTHONIOENCODING=utf-8 vibe -p "..." --auto-approve --max-turns 3`
+  -> `pong`, exit 0). Two real dispatches after that, **both failures were this session's own
+  tooling mistakes, not `vibe`/Mistral failures**:
+  1. First dispatch included `--print-timeout 25m` -- **`agy`'s flag, not `vibe`'s.** `vibe`
+     rejected it immediately with `error: unrecognized arguments: --print-timeout` before doing
+     any work. No file touched (confirmed no regression).
+  2. Second dispatch removed that flag but launched as `... vibe ... > log 2>&1 &` (trailing `&`)
+     **while also passing the whole command through the harness's own `run_in_background: true`**
+     -- double-backgrounding. The harness's tracked task reported "completed, exit 0" almost
+     instantly, but the log file was 0 bytes and `oph-ep-p1-s08-cornea.draft.js` still does not
+     exist on disk. The real `vibe` process (if it ever started) detached from the tracked job
+     entirely -- `tasklist` showed 4 unidentified `python.exe` processes afterward, none
+     confirmable as this job by name alone. **Unresolved**: unknown whether a real `vibe` run is
+     still silently working in the background right now, or whether it never launched.
+  3. Fix for next attempt: **never add a trailing `&` when the tool call itself is already run
+     in background** -- pass the plain foreground command and let the harness background it; only
+     use `timeout <seconds>` as a wrapper for a client-side cap, never nest `&` under
+     `run_in_background: true`. Before redispatching, check `tasklist`/process list for a stray
+     `python.exe`/`vibe`-owned process from this attempt and let it finish or confirm it is dead
+     before starting a fresh one, to avoid two `vibe` runs racing on the same output file.
+- **State unchanged from the last entry: `array.js` correct (29 rows), `draft.js` absent.** Rung 3
+  now confirmed dead by a second, different symptom (hang, not capacity error) -- do not re-probe
+  it again this cycle. Rung 5 `vibe` itself is still unproven either way this tick (own dispatch
+  errors, not a `vibe` failure) -- the next session's first move should be a clean, correctly-formed
+  `vibe` dispatch (no trailing `&`, no `--print-timeout`), after confirming no stray process is
+  already running against the same output file.
+- Next step if `vibe` fails again on a clean dispatch: `ROUTE-OK:` Claude `lean-drafter` builder is
+  now well-justified (rungs 1-5 each failed today across two ticks for distinct reasons), with an
+  independent non-Claude checker before any splice, per the two-layer rule.

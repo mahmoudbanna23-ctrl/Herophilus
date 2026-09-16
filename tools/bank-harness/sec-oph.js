@@ -10,7 +10,9 @@ const SEC_P1 = {
   5: { prefix: 'ophep-eyelids-', file: 'oph-ep-p1-s05-eyelids.array.js', svar: 'OPHEP_S05_STAGED', draft: 'oph-ep-p1-s05-eyelids.draft', chapter: 'op-lid', pages: [343, 416], ans: null, folded: [15], figPage: { 1: 360 } },
   6: { prefix: 'ophep-conjunctiva-', file: 'oph-ep-p1-s06-conjunctiva.array.js', svar: 'OPHEP_S06_STAGED', draft: 'oph-ep-p1-s06-conjunctiva.draft', chapter: 'op-conj', pages: [417, 522], ans: null },
   7: { prefix: 'ophep-sclera-', file: 'oph-ep-p1-s07-sclera.array.js', svar: 'OPHEP_S07_STAGED', draft: 'oph-ep-p1-s07-sclera.draft', chapter: 'op-sclera', pages: [523, 559], ans: null },
-  8: { prefix: 'ophep-cornea-', file: 'oph-ep-p1-s08-cornea.array.js', svar: 'OPHEP_S08_STAGED', draft: 'oph-ep-p1-s08-cornea.draft', chapter: 'op-cornea', pages: [560, 638], ans: null },
+  // Section 8's one within-section fold, dropped at drafting: n17 (respelled reprint, option A
+  // "Amsler's gird" typo) into n11 (correct spelling "Amsler's grid"), same stem, same key.
+  8: { prefix: 'ophep-cornea-', file: 'oph-ep-p1-s08-cornea.array.js', svar: 'OPHEP_S08_STAGED', draft: 'oph-ep-p1-s08-cornea.draft', chapter: 'op-cornea', pages: [560, 638], ans: null, folded: [17] },
   // Section 9's printed_q:14 splits into two distinct questions on content (n14, n15) --
   // the book's own numbering is defective there, chapter/content order wins. Two within-section
   // folds, both dropped at drafting: n18 (orig printed_q17, boxed-second-printing exact reprint)
