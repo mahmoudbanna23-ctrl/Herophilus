@@ -174,7 +174,9 @@ all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **Th
   held **151 quoted-key** (`"id":`) + **22 bare-key** (`id:`) entries, so a bare-key grep counted
   **22 of 173** on 2026-09-02 and read as catastrophic loss. **It was not.** Count BOTH styles
   (command in `progress\WATCH.md` §4). **Bytes rising while a count falls means THE COUNT is
-  broken** — cross-check `git cat-file -s HEAD:<path>` before reporting loss.
+  broken** — cross-check `git cat-file -s HEAD:<path>` before reporting loss. Same trap on quotes:
+  `questions.ophtho.ep.js` mixes `id:"…"` (s3-6) and `id:'…'` (s1-2) — grep `id:['"]`, never one
+  quote style alone (measured 2026-09-16: double-quote-only undercounted 169 live as 109).
 - **GitHub, PRIVATE**: `mahmoudbanna23-ctrl/Herophilus`. `Semester 8\` gitignored.
   ✅ **2026-09-02: `main` FAST-FORWARDED onto `design/clepsydra-and-sessions`, both pushed, 0 ahead**
   — it had been a 2026-08-02 design snapshot with **no bank content** for a month (history:
