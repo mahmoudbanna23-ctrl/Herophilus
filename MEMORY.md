@@ -11,15 +11,15 @@ page. ⚠️⚠️ **SUPERSCRIPTS FAIL SILENTLY: WPS read a printed 10⁶ as 10�
 dose from OCR; read those three off the page image.** ⚠️ **Exit 429 is a RATE limit, NOT a quota** —
 back off, double the gap (cap 60 s), **retry the same page.**
 
-**⚠️ GATEWAY ROUTE (2026-09-16 03:30, supersedes the 22:15 note) — Codex+OmniRoute BACK, resume as
-default worker.** `opencode-zen/big-pickle` free, gateway ponged 1.2s. Ladder: Codex+OmniRoute
-(`Tools/omniroute/codex-gw.sh`) -> opencode+OmniRoute same lane -> gateway down: Codex solo own
-OpenAI login (`gpt-5.6-terra` routine / `gpt-6-astra` must-be-right) -> fleet direct (vibe/grok,
-Groq `gpt-oss-120b`, Gemini Flash by key) -> Claude helpers last, prompt opens `ROUTE-OK: <why>`.
-⚠️ **`auto/*` gateway combos BANNED** — now answer with Claude/GPT models, payer unconfirmed, treat
-as paid. Pong-test before every batch; drop a route on first failure, no retry loops. Checking stays
-two layers, different house, Codex never checks itself. "Headroom" mode dropped for good — 3%
-smaller but drops words from medical text; never in front of the Codex lane.
+**⚠️ GATEWAY ROUTE (2026-09-16, supersedes the 03:30 note) — Codex+OmniRoute is the default worker.**
+Ladder: Codex+OmniRoute (`Tools/omniroute/codex-gw.sh`) -> opencode+OmniRoute -> Codex solo own OpenAI
+login (`gpt-5.6-terra` routine / `gpt-6-astra` must-be-right) -> fleet direct (vibe · Groq `gpt-oss-120b` ·
+Gemini Flash · opencode `openrouter/poolside/laguna-s-2.1:free`; grok out of quota, agy needs `agy mcp
+disable agentmemory`) -> Claude last, prompt opens `ROUTE-OK: <why>`. ⚠️ **`auto/*` ALLOWED but SPENDS
+the owner's own OpenRouter key** — `auto/best-free` (Groq) is the only free combo; **ask before a paid
+batch**, payer per call in `x-omniroute-provider/-model/-response-cost`. Pong first; drop a route on
+first failure, no retry loops. Checking = two layers, different house, Codex never checks itself.
+"Headroom" DROPPED for good — 2.9x tokens, lossy; never retest.
 
 Running record, organised around *resuming*. ISO dates; unverified marked as such. Method in
 `CLAUDE.md`; per-topic history in **`progress\ledger.md` (17+) and `progress\ledger-closed-1-16.md`
