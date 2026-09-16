@@ -54,11 +54,11 @@ archive, `## Pruned from MEMORY.md - 2026-09-16 (part 2)`.
   Close-out: `progress\resume-peds-endpoint-part2.md`. ⚠️ Endpoint/House overlap is chapter-shaped —
   never fold `pedhd-card-6..10` (5 identical stems, 5 different figures). Full detail: archive,
   `## Pruned from MEMORY.md - 2026-09-16`, and `## Pruned from MEMORY.md - 2026-09-05`.
-- ⏳ **NEURO — 450 live** (t09 Coma CLOSED 2026-09-15, 333->355; t10 Movement Disorders CLOSED
-  2026-09-16, 355->384; t11 Demyelinating CLOSED 2026-09-16, 384->407, 0 folds; **t12
-  Neuromuscular CLOSED 2026-09-16, 407->450, 2 folds (272->261, 280->262)**; Grade Gain
-  Psychiatry CLOSED 2026-09-08). Commits `e6066e1` (t12 staging+drafts), `bd0cd31` (t12 splice).
-  Close-out: `progress\resume-neuro.md` "Topic 12". **T13/T14 rework DISPATCHED 2026-09-16, 9 small fresh opencode rung-3 batches, mid-run — see "Rework — DISPATCHED" in `resume-neuro.md`.**
+- ✅ **NEURO CLOSED 2026-09-17 — 493 live** (t09->t12 history in `resume-neuro.md`; **t13 CNS
+  Infections + t14 Back & Lower Limb Pain CLOSED 2026-09-17, 450->493, 0 folds**, commits
+  `45aa11a` staging+drafts, `b34c56c` splice, `c069c54` journal). Close-out:
+  `progress\resume-neuro.md` "Topic 13/14". **Next neuro work is Neuro Endpoint — separate,
+  not-yet-started book.**
   ⚠️⚠️ **RUNNING HEADER LAGS TRUE SECTION ~1 PAGE** — boxed section-title banner + question
   content are the only reliable markers, still applies to T13's own boundary. ⚠️ **Renders die
   with the scratchpad.**
