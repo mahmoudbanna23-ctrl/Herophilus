@@ -514,3 +514,46 @@ the fifth block above is DEFERRED until then — do not resume s13 staging next.
 - Did NOT start Step 3 (draft.js) this tick -- step-budget hook fired first. Next session: write a
   Step-3-only brief (chapter id confirmed `op-conj` in `tools/bank-harness/sec-oph.js:11`) and
   route to `lean-drafter`, per CLAUDE.md §9 rung 5/6.
+
+## 2026-09-16, section 8 "Cornea" staging started
+- Config (`sec-oph.js` line 13): `prefix ophep-cornea-`, `chapter op-cornea`, pages [560,638]
+  (79 pp), `ans: null` (no separate keypos source, same as s7). Rendered all 79 pages to
+  `<scratchpad>/s08/p-0560.png`..`p-0638.png` at 150dpi -- scratchpad only, not cached in-repo yet.
+- Dispatched Gemini vision (`gemini-3.7-flash` by key, rung 3 of the vision ladder -- Codex solo
+  had a dead OpenAI login last section, gateway `auto/vision` is banned per the GATEWAY ROUTE
+  block above) in batches. **Structure now KNOWN, first time determined for this section:**
+  - Pages 560-580 (21 pp) = THEORY/anatomy, no questions. Exclude from the array, same as s7's
+    theory range.
+  - Pages 581-638 (58 pp) = question pages, TWO PAGES PER QUESTION same shape as s7:
+    **unmarked page = 579 + 2n, marked page = 580 + 2n** (n = printed question number, 1-based).
+    Unmarked = stem+options only, no key. Marked = same stem+options + highlighted key +
+    (usually) a printed explanation box. This gives an estimated 29 questions total (58 pp / 2),
+    to be confirmed once every page is actually read -- do not trust the arithmetic over an
+    actual page count once the rest is transcribed.
+  - Verified questions 1-9 fully (both unmarked+marked pages, pp.581-598) via
+    `<scratchpad>/s08/s08-gemini-text-a.txt` (batch covering pdf pages 560-599, 40 images,
+    12.1MB payload, succeeded first try, status 200). Question 10's unmarked page (599) is also
+    in this file; its marked page (600) is not yet transcribed.
+- **BLOCKED on Gemini free-tier quota, pages 600-638 (~19-20 questions) NOT yet transcribed.**
+  Repeated batches (40/20/19/10/10/10/9-page splits, sizes 2.1-12.1MB) got escalating errors:
+  first a transient 503 (retried once, failed again), then more 503s even at small size, then a
+  **429 `RESOURCE_EXHAUSTED`**: `generate_content_free_tier_requests` quota, **limit 20
+  requests/day per model**, confirms the existing MEMORY.md free-lane note ("Gemini free = 20
+  req/day") -- this key is on the free tier, not a paid quota, and today's count (this section's
+  attempts + likely s07's dispatch) hit the daily cap. A tiny text-only probe and a tiny 3-image
+  vision probe both returned 200 immediately after the 429, confirming the block is the request
+  counter, not a dead key or a dead model.
+  **Per the vision ladder's liveness-probe rule (drop a rung on a limit error, never retry-loop),
+  this rung is DONE for today.** Next session options, in ladder order: (1) re-probe Codex solo
+  `codex exec -i <png>` on one page -- its OpenAI login showed `refresh_token_invalidated` in the
+  s06/s07 timeframe, unconfirmed whether still dead; (2) wait for the Gemini daily quota to reset
+  (unknown reset time, likely UTC midnight) and resume the same dispatch script,
+  `<scratchpad>/s08/s08-gemini-dispatch.js`, with batch names `c1`(600-609) `c2`(610-619)
+  `c3`(620-629) `c4`(630-638) -- c1 and c4 got 503, c2 and c3 got the 429, so probably safe to
+  just re-run all four fresh; (3) fall to a Claude subagent for the remaining page reads only if
+  both (1) and (2) fail a fresh liveness probe, per CLAUDE.md §9's vision ladder.
+- Session hit its ~80-step budget (twice) during this stream -- stop, `/prep`, resume from here.
+  Nothing spliced yet for s8; `content/ophtho/qb-pages/oph-ep-p1-s08-cornea.array.js` and
+  `.draft.js` do not exist yet -- next session's first move once transcription completes is the
+  same staging+draft brief pattern as `<scratchpad>/s07/brief-s07-stage-draft.md`, re-derived for
+  s08's own page arithmetic (579+2n / 580+2n, NOT s7's 532+2n / 533+2n -- do not copy the constant).
