@@ -1629,6 +1629,42 @@ live count).
 **Commits:** `e6066e1` (staging array + both drafts + all four t12-briefs files), `bd0cd31`
 (the splice). Nothing left on t12.
 
+## Topic 13 "CNS Infections" — boundary confirmed, staged 2026-09-16
+
+**✅ Both remaining neurology boundaries confirmed in one render pass.** Rendered PDF 062-070
+(book pp.57-65) to scratchpad `t13-pages/pg-0NN.png`, read via `agy --model gemini-3.1-pro-high`
+(route pong-confirmed live first). Result, all boxed banners + content, running-header ignored:
+
+- **Topic 13 "CNS Infections" = Q296-315 exactly, 20 questions**, matching the contents-page
+  promise for once. Book pp.57-59 = PDF 062-064 (boxed "CNS Infections / Questions" on PDF 062,
+  first Q296 is TB-meningitis treatment duration). Answers on book p.60 = PDF 065, boxed "CNS
+  Infections / Answers" — **answers-only page, no question tail** (unlike t12's mixed page).
+- **Topic 14 "Back & Lower Limb Pain" = Q316-338 exactly, 23 questions**, also matching its
+  contents-page promise. Boxed "Back and Lower limb pain / Questions" banner on PDF 066 (book
+  p.61). Answers boxed banner on PDF 069 (book p.64).
+- **Psychiatry section (topic 15, already live) starts clean at book p.65 = PDF 070**, boxed
+  "Symptomatology & Myths / Questions" Q1. Confirms no gap/overlap between the neurology and
+  psychiatry runs.
+
+Staging brief written: `content/neuro/qb-pages/t13-briefs/staging-brief.md`, mirroring t12's.
+**Staging RUN**: `gg-nr-t13.array.js`, 20 entries, n:296-315 contiguous, via agy/Gemini. Independent
+Opus refuter against the 4 source images: **PASS**, zero discrepancies (stems/opts/keys/boxes all
+verbatim, book's own typos preserved not fixed).
+
+Staging brief for t14 written: `content/neuro/qb-pages/t14-briefs/staging-brief.md`, mirroring
+t13's. **Staging RUN**: `gg-nr-t14.array.js`, 23 entries, n:316-338 contiguous, via agy/Gemini.
+Independent Opus refuter against the 4 source images (pg-066..069): **PASS**, all 23 keys read
+letter-by-letter off the answer page match, stems/options verbatim, source typos preserved
+("dacs" for discs, "sine" for sign, "present" for presents, "LS" for L5 kept as printed), 3
+boxes (328/331/336) captured verbatim, 20 correctly null, defective key 332 (D "Both A and C")
+kept as printed not corrected. `keyName` is null in all 23 — flagged as an item for drafting to
+fill if needed, not a staging defect.
+
+**Both topics' staging is CLOSED and safe to draft from.** Next: draft both to writing budget
+(routing ladder — Codex+OmniRoute default worker), six-stage dup sweep against the live 450-entry
+corpus and against each other, splice both into `questions.neuro.js`, commit — same 3-commit
+pattern as t12 (stage+draft, splice, journal close-out).
+
 ## Topic 10 "Movement Disorders" — CLOSED 2026-09-16
 
 Book pp.41-44 (PDF 046-049) questions, pp.44-45 (PDF 049-050) answers. Contents page
@@ -1729,3 +1765,205 @@ once, never retry-loop.
 
 **Splice committed:** `63f4bfe` (splice + journal), `7defff3` (the two review docs). Neither
 pushed. `app/data/questions.neuro.js`: 333 → **355**. All done, nothing left on t09.
+
+## Topic 13 "CNS Infections" (Q296-315) & Topic 14 "Back & Lower Limb Pain" (Q316-338) — IN PROGRESS
+
+**Staging + verification + duplicate sweep: DONE, both topics.** `gg-nr-t13.array.js` (20
+entries) and `gg-nr-t14.array.js` (23 entries) staged and independently verified PASS. Six-stage
+sweep vs live 450-entry corpus and cross-topic: **zero real folds.** One topic-14-internal
+option-set match (n:337/n:338, shared L3/L4/L5/S1 root menu) hand-checked as a legitimate
+discriminated pair — n:337 → L4 (hamstring + tibialis-anterior weakness + medial-shin sensory
+loss), n:338 → L5 (great-toe-extension weakness + dorsum-of-foot sensory loss). Draft BOTH
+separately, never fold. Chapter split for t14 decided: `nr-backpain` (lumbar/L-root/leg content)
+vs `nr-neckpain` (cervical/C-root/arm content), per-question by clinical content, source lecture
+`L11) Cervical pain.txt` covers both despite its title. t13 is single-chapter `nr-cns`.
+
+**Drafting briefs written:** `content/neuro/qb-pages/t13-briefs/codex-finish.md`,
+`content/neuro/qb-pages/t14-briefs/codex-finish.md` — full schema, writing-budget rule, n:332's
+defective compound key "D — Both A and C" (preserve as printed, quote verbatim, note defective,
+don't resolve), boxed-entry rules, escaping-trap warnings, verify-before-finish checklist.
+
+**Rung 2 (Codex+OmniRoute) DEAD for this batch** — two properly-dispatched background jobs
+(`br18jvw8q` t13, `bb9wdkqos` t14, via `Bash run_in_background:true`, NOT manual `&`) both got
+stuck in an unreliable `mcp__node_repl__js` tool loop (`"error=unsupported call: js"`, persists
+after `js_reset`) then died on genuine `429 Too Many Requests`/"exceeded retry limit" after
+151k/163k tokens. Per ladder: dropped, no retry.
+
+**Rung 3 (opencode+OmniRoute) — the working route, use this.** No dedicated wrapper script
+exists (`Tools/omniroute/codex-gw.sh` is Codex-only); invoke the `opencode` CLI directly — it
+already has the OmniRoute provider configured at `C:\Users\Alfa388\.config\opencode\opencode.json`
+(provider id `omniroute`, base url `http://localhost:20128/v1`, key `OMNIROUTE_API_KEY`, models
+limited to `auto/*` combos). Command shape that works, run via Bash `run_in_background:true`,
+cwd = repo root:
+```
+opencode run --auto -m omniroute/auto/coding --format json "<prompt telling it to read the
+brief file in full, do the job, verify, write the report>" > <scratchpad>/<name>.json 2>&1
+```
+Pong-tested live 2026-09-16 (`opencode run --auto -m omniroute/auto/coding "Reply with exactly
+one word: pong"` → `pong`, ~15s). `--auto` is required (non-interactive, no human to approve
+writes). To rework: `opencode run --auto -s <sessionID> ...` resumes the same session with a
+delta brief (get `sessionID` from any line in the job's own `--format json` output log).
+
+**t13 draft — mechanically PASS, content FAILED independent review, rework attempt produced
+NOTHING.**
+- Initial draft (job `b46dplerj`, session `ses_f546c1f9dffesGUWNZC4zI6iIq`): wrote
+  `gg-nr-t13.draft.js` (20/20 entries) + `t13-briefs/codex-finish.report.md`. Syntax clean, all
+  frozen fields (stem/options) byte-exact vs staging, answer mapping correct, 3 boxes (305/311/
+  314) verbatim + markerless, 17 markers with real U+2014, chapter/source/id all correct, 0
+  emoji/mojibake.
+- Opus refuter (different house) verdict: **FAIL on content.** Word budget collapse — 2,482
+  words total vs 6,890 budget (36%), every single entry short. Plus: n:307 fabricates a lecture
+  claim (age-group attribution not in `L9) CNS infection.txt`) · n:296 tag on wrong sentence ·
+  n:310 untagged outside knowledge (osteoarthritis) · n:303 asks "most common complication" but
+  lecture doesn't rank them — needs a defect note, not a bare answer · n:311 asserts a fact
+  ("transiently after seizure activity") the stem doesn't support · boxed entries 305/311/314
+  have filler sentences after the verbatim box · distractors thin/shared-clause throughout.
+  Full findings in that agent's report (not saved to disk — was the async agent result only;
+  redo the review if this file is reopened after the findings above are fixed, don't trust from
+  memory).
+- **Rework attempt FAILED SILENTLY — no fix applied.** Sent a 10-point delta brief resuming
+  session `ses_f546c1f9dffesGUWNZC4zI6iIq` (job `b8ie2vf38`, exit 0). File is now **byte-identical
+  to before** — checked, word counts per entry unchanged to the digit. Root cause (read from the
+  job's own `--format json` log): the resumed turn spent its whole budget re-reading the full
+  240-line draft file, then its last step ended `"reason":"length"` with **0 output tokens** —
+  it ran out of output length before calling any edit tool. Not a 429, not a connection error —
+  an output-length ceiling on that one long turn.
+- **Next step for t13**: redo the rework with a MUCH smaller delta brief — one or two entries
+  at a time, or fresh (non-resumed) `opencode run` calls per fix rather than one 10-item resumed
+  turn, so no single turn has to both re-read the whole file AND write. Then re-run the Opus
+  refuter before splicing. Do not trust `t13-briefs/codex-finish.report.md` on disk — it still
+  describes the pre-rework, failed-review draft.
+
+**t14 draft — mechanically PASS, content FAILED independent review (agent `afa13c4a6202c33a8`,
+different house).** Same word-budget collapse as t13: all 23 explanations run 59–190 words vs
+the 250/520 target (worst: n:338 −458w, n:337 −448w, n:331 −444w, n:327 −432w; per-entry
+deficits in scratchpad `t14-refute.txt`, not copied to disk — recompute by word-counting the
+live file if that's gone). n:332/337/338 handling PASSED (compound key preserved+quoted,
+337/338 correctly discriminated). Marker/box/encoding PASSED. Fixable defects found:
+- All 23 `source` fields: `&amp;amp;` HTML-entity bug (double-encoded) — replace with `&amp;`,
+  46 hits total (staged/t12 precedent uses single `&amp;`).
+- n:319 stem: drafter wrote "An 50-year-old", staged text is "A 50-year-old" — restore
+  byte-exact.
+- False lecture-attribution on n:322/323/328/331/336/337/338 — dermatome/myotome claims
+  (triceps, middle finger, shin, dorsum, calf, sole, patellar, Trendelenburg, nipple,
+  umbilicus) not in `L11) Cervical pain.txt` (grep-confirmed by refuter) but presented as "the
+  lecture" — each needs the `not taken from the course material` tag, not a lecture claim.
+- n:336: "T5 corresponds to nipple level" is wrong — should be T4. Fix the fact.
+- n:337/n:338: explanation text literally says "As instructed, this entry is drafted normally
+  as a separate entry…" — a leaked brief instruction, not student-facing content. Delete it.
+- n:335 option B: refuter says the lecture DOES support x-ray in chronic LBP — the divergence
+  claim was hand-waved; re-check against the lecture and fix the reasoning.
+
+**Rework — DISPATCHED 2026-09-16, IN PROGRESS.** Root cause confirmed: a RESUMED opencode
+session spends its whole turn re-reading the draft file before writing, hits an output-length
+ceiling, writes nothing. Two mechanical fixes done directly (rung 1, no worker needed):
+- n:319 stem "An 50-year-old" → "A 50-year-old" — fixed in `gg-nr-t14.draft.js`.
+- t14 `&amp;amp;` source bug: RE-CHECKED, does not exist — `grep -c '&amp;amp;'` = 0, all 23
+  `source` fields already single-encoded `&amp;`. The earlier refuter finding was wrong/stale;
+  dropped from scope, no action needed.
+
+9 small fresh (non-resumed, no `-s`) `opencode run --auto -m omniroute/auto/coding --format
+json` batches dispatched in background, each given the exact staged stem/options/key + full
+lecture text + specific per-id defect fixes inlined in a brief file (no draft-file reading
+required to start writing — briefs at `content/neuro/qb-pages/t13-briefs/` scratchpad-style,
+actually written to session scratchpad: search this session's tasks dir if briefs are gone).
+Each batch edits ONLY its own entries' `explanation` field directly in the draft file via its
+own file tools (not a JSON round-trip). Batch → background task id → scope:
+- t13-b1 (296-300) task `bobp85hep` — probe batch, CONFIRMED WRITING (n:297 done mid-run at
+  dispatch time, marker present, non-empty).
+- t13-b2 (301-305) task `bkc3rnvcs`
+- t13-b3 (306-310) task `bu26lmw80`
+- t13-b4 (311-315) task `bphmneilq`
+- t14-b1 (316-319) task `b2vkndms7`
+- t14-b2 (320-323) task `bdn1fds2u`
+- t14-b3 (324-327) task `ba0yfvqj7`
+- t14-b4 (328-332) task `bwwnyw28r`
+- t14-b5 (333-338) task `b6b3lq2y6`
+
+Each batch's stdout/stderr is at the session scratchpad as `<batch>.out.json` (e.g.
+`t13-b1.out.json`), same directory as the brief files.
+
+**FINAL outcome, all 9 reported by 2026-09-16 23:2x:** 3 COMPLETED clean (exit 0) — t13-b1
+`bobp85hep`, t14-b1 `b2vkndms7`, t14-b3 `ba0yfvqj7`. 6 FAILED exit 1, ALL same cause — t13-b2
+`bkc3rnvcs`, t13-b3 `bu26lmw80`, t13-b4 `bphmneilq`, t14-b2 `bdn1fds2u`, t14-b4 `bwwnyw28r`,
+t14-b5 `b6b3lq2y6`. Diagnosed from every failed `.out.json` tail: identical gateway error,
+`"chat_admission_busy"` / `"structure_limit"` / "Structurally heavy chat request capacity is
+busy; retry shortly" — a rung-3 CAPACITY limit from firing 9 heavy batches at once, not a dead
+rung, not a brief defect, not a file-lock conflict (rung 3 stayed alive: 3 of 9 finished clean
+concurrently with the others failing).
+
+**All 9 batches now COMPLETE clean, 2026-09-16 23:4x** — the 6 failures were re-dispatched ONE
+AT A TIME (never concurrently) on the same brief files, same fresh non-resumed opencode recipe,
+and every retry finished exit 0 first try: t13-b2 `bkdtz7v0m`, t13-b3 `b1lf6j6q9`, t13-b4
+`bj1glwjjc`, t14-b2 `buprlakm4`, t14-b4 `bvnqvpfw7`, t14-b5 `b8jfqc7le`. Confirms the capacity
+diagnosis — serial dispatch cleared it with zero further errors. Every entry npqb-nr-296..338
+(43 total) has now had its `explanation` field passed through a rework batch.
+
+**Next session must, in order:**
+1. Verify — NOT YET DONE. Read each retry `.out.json` (`<batch>-retry.out.json` in the scratchpad)
+   for its one-line-per-entry report (id/word-count/marker/boxed), cross-check against the
+   drafts themselves.
+2. For every batch (fresh or already-done): confirm `.out.json` has no `"reason":"length"`
+   truncation and non-empty edits, re-count words + markers per entry (~250 recall / ~520
+   vignette, marker sentence on unboxed entries only), confirm the specific defect fixes landed
+   (n:307 no overreaching attribution, n:310/n:322/n:323/n:328/n:331/n:336/n:337/n:338
+   outside-knowledge tags present, n:303 defect note added, n:311 no false lecture-support claim
+   for Todd's paralysis, n:335 refined not rejected, n:336 T4 not T5, n:337/n:338 leaked brief
+   text gone).
+3. Run a fresh independent (different-house) refuter pass on both files before trusting them.
+
+**Not yet done, either topic:** confirm the 9 batches above actually landed correctly, the
+refuter pass, splice into `app/data/questions.neuro.js` (450 → 493), 3-commit pattern, this
+file's CLOSED section. `MEMORY.md` neuro line fixed 2026-09-16 to point here — no longer stale.
+
+**Housekeeping, not urgent:** stray leftover `D:/claude os/Tools/omniroute/t13-run.log` (256KB)
+from an earlier failed manual-backgrounding dispatch attempt — safe to delete, never picked up
+by anything.
+
+## Topic 13 "CNS Infections" (Q296-315) & Topic 14 "Back & Lower Limb Pain" (Q316-338) — CLOSED 2026-09-17
+
+**Verify pass, two layers.** Layer 1 (mechanical script, scratchpad `verify-t1314.js`): both
+files 20/20 and 23/23 ids present, 0 missing, 0 dupes, word counts sane (T13 196-229w on the
+previously-thin batch, T14 138-535w), markers correctly absent only on boxed entries (328, 331,
+336). Layer 2 (Opus refuter, different house, scoped to npqb-nr-301..305 — the one batch never
+independently reviewed after its rework): 4/5 PASS clean, 1 real defect found and fixed.
+
+**Fixes applied this pass (t13 only — t14 was already clean from the prior pass):**
+- n:301-304: batch `bkdtz7v0m`'s retry (t13-b2) had silently stalled mid-run twice before;
+  a third retry (job `b04r4a2o3`) made 4 genuine edits, confirmed by reading each diff from the
+  raw job output — all four now well-developed, lecture-grounded explanations.
+- n:305: retry never reached this id (job stopped after step 26, no edit call). Fixed directly:
+  removed a literal `\2` artifact before "2 days" in the stem (a numbers/units defect, not
+  cosmetic — kept per the project's numbers-are-the-exception rule).
+- n:303: refuter caught a garbled duplicate tag — "...is not directly supported by the course
+  material not taken from the course material." — fixed to end cleanly at "...course material."
+
+**Two judgment calls closed, both accepted as-is (routine call, not escalated):**
+- n:305 explanation runs 283w against the ~520w vignette soft target. Refuter called it
+  "not a fail" (above the 200w floor) and flagged for the parent. Content is accurate and
+  complete; a 4th opencode dispatch on this single entry risks another silent no-op. Accepted.
+- Refuter noted uneven application of the `not taken from the course material` tag across
+  301-305 and neighbouring entries (some tag 2 outside facts, some tag 0). This is pre-existing
+  variance in how many outside facts each question happens to need, not a defect introduced by
+  this batch — left as house-convention variance, no rework.
+
+**Style reconciliation before splice.** `gg-nr-t13.draft.js` was drafted in a spaced,
+one-field-per-line style (`id: 'npqb-nr-296',` on its own line); `gg-nr-t14.draft.js` and the
+live `questions.neuro.js` tail (t12's entries) both already use the compact style
+(`id:'npqb-nr-316', bank:'gradegain', module:'neuropsych', chapter:'nr-backpain',` on one line,
+no space after `:`). Reformatted t13 to match via a mechanical script (scratchpad
+`reformat-t13.js`) — strips the one space after every field colon, merges the id/bank/module/
+chapter lines into one. Verified 0 content diffs by parsing both the original and reformatted
+files as JS and deep-comparing every field (scratchpad `verify-reformat.js`): 20/20 entries
+byte-identical in content, whitespace-only change.
+
+**Spliced:** `app/data/questions.neuro.js` **450 → 493** (scratchpad `splice-t1314.js`,
+mechanical insertion after t12's last entry, before the closing `];`). Validated from disk
+(scratchpad `validate-splice.js`): `node --check` clean, `Q_NEURO.length` 493, 0 sparse holes,
+0 duplicate ids, 0 out-of-range answers, t13 subset 20/20 all `nr-cns`, t14 subset 23/23 split
+15 `nr-backpain` / 8 `nr-neckpain` (matches the per-question clinical-content chapter split
+decided during staging). Boot-check (`tools/boot-check/boot-check.js`) clean: 0 console errors,
+`QUESTIONS 4049` unchanged (neuropsych is a `LOCKED_MODULES` entry — doesn't move the
+aggregator's reported count, same as every prior neuro topic).
+
+**All done, nothing left on T13/T14.** Neuro corpus stands at 493.
