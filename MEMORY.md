@@ -40,7 +40,7 @@ Printed page = PDF **+1** past an unpinned flip in PDF 2151–2170. ✅ **GATE 0
 + stubs + both `index.html` tags done, **OPH-B unblocked**. **207 live, s1-9 done** (checked+
 spliced+committed; s9 Lens closed 2026-09-16, 182->207, `216baad`, drafted by `agy` fleet-rung-5
 after gateway/Codex/OpenRouter all dead or exhausted that day — checked by `vibe`, different
-house). s8 transcribed (29q, draft next), s10-12 next, s13 deferred, s14-28 unstaged. Close-out:
+house). ✅ **s8 CLOSED 2026-09-17 — 207->235, `f5fed04`+`15d4c61`**: rungs 1-5 all failed 2026-09-16, drafted by ROUTE-OK Claude lean-drafter, checked by vibe (different house) — vibe's 4-item fail list all adjudicated false positives on re-check (row 12 "Flourescine" is already in array.js, not a typo; rows 14/19 flagged as "staging language" are the brief's required box-mismatch naming and the standard gap-fill tag). Full medical read + boot-check clean (4049/81, 0 errors), spliced+committed. s10-12 next, s13 deferred, s14-28 unstaged. Close-out:
 `progress\resume-ophtho-endpoint-A-chapters.md` tail. Multi-chat parallel-run coordination history
 (2026-09-02/03 relaunch prompts, now obsolete — both peds endpoint parts have since closed):
 archive, `## Pruned from MEMORY.md - 2026-09-16 (part 2)`.
@@ -58,8 +58,7 @@ archive, `## Pruned from MEMORY.md - 2026-09-16 (part 2)`.
   2026-09-16, 355->384; t11 Demyelinating CLOSED 2026-09-16, 384->407, 0 folds; **t12
   Neuromuscular CLOSED 2026-09-16, 407->450, 2 folds (272->261, 280->262)**; Grade Gain
   Psychiatry CLOSED 2026-09-08). Commits `e6066e1` (t12 staging+drafts), `bd0cd31` (t12 splice).
-  Close-out: `progress\resume-neuro.md` "Topic 12". **Next: T13 "CNS Infections," Q296+, book
-  p.57 (PDF 062), nothing scouted/staged yet.**
+  Close-out: `progress\resume-neuro.md` "Topic 12". **T13/T14 rework DISPATCHED 2026-09-16, 9 small fresh opencode rung-3 batches, mid-run — see "Rework — DISPATCHED" in `resume-neuro.md`.**
   ⚠️⚠️ **RUNNING HEADER LAGS TRUE SECTION ~1 PAGE** — boxed section-title banner + question
   content are the only reliable markers, still applies to T13's own boundary. ⚠️ **Renders die
   with the scratchpad.**
