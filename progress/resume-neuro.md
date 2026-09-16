@@ -1444,6 +1444,80 @@ stroke", and appears to run past the page edge. Q194 carries a waveform figure, 
 Topics 10–14, book pp.41–64 = PDF 46–69. Topic 09 CLOSED (below). Topic 10 staged and
 verified (below) — draft expansion is the next step.
 
+## Topic 11 "Demyelinating Diseases" — CLOSED 2026-09-16
+
+Book pp.46-49 (PDF 051-054) questions+answers. Contents page promised 16; **23 actually
+print, Q228-250** — same undercount pattern as every topic measured so far.
+
+**Staging (commit `34533cf`):** `content/neuro/qb-pages/gg-nr-t11.array.js`. Codex solo
+and the gateway (`auto/vision`) were both DEAD this session — Codex's own login threw
+`401 refresh_token_invalidated` directly, and the gateway model fell through to that same
+dead login rather than actually routing through OmniRoute. User instructed "skip omniroute
+until I report to you, use fleet instead" (later lifted — see Route state below). Staged
+all 23 via `agy --model gemini-3.1-pro-high` (vision). Fleet returned `key` as a 0-based
+index instead of the letter t08-t10's schema expects; converted mechanically
+(range-checked against `opts.length`, no reordering) and documented in the header.
+Independent Opus-refuter check against all 5 page images: PASS, 23/23 keys/stems/options/
+boxes confirmed, pg-055 confirmed opening topic 12's banner (Q251) with nothing from this
+topic, 0 gaps/duplicates. Flags carried in the header: Q248 only 3 options, Q249 only 3
+options (non-sequential source lettering a/b/e), Q250's printed box has typos
+("Explantion", a dropped clause) — all preserved verbatim, never corrected.
+
+**Drafting + refuter fix cycle (commit `34533cf`):** `gg-nr-t11.draft-A.js` (Q228-239,
+12 entries, boxed 229) and `gg-nr-t11.draft-B.js` (Q240-250, 11 entries, boxed 247/250),
+built by `agy --model claude-sonnet-4-6` against `L2) Multiple sclerosis.txt`.
+**⚠️ Measured this session: agy's `-p` print mode hard-times-out at 5 min per turn — a
+23-entry single-file job died mid-write; splitting into two ~12-entry halves and passing
+`--print-timeout 8m` got both to finish.** Also: agy does not reliably inherit the shell's
+cwd as its workspace on a cold session — pass `--add-dir "<repo root>"` explicitly.
+Script-check: entry counts 12/11 correct, all 23 answer-index mappings match the staged
+letters, no cp1252 mojibake.
+
+An independent Opus refuter (different house from the `agy`/`claude-sonnet-4-6` seat
+that drafted) reviewed both halves against the frozen staging and the lecture: **FAIL**,
+5 defects — Q235 options[3] misspelled "Guillain-Baré" for staged "Guillain-Barré";
+Q229's explanation falsely claimed the lecture's differential-diagnosis list includes
+meningitis (it doesn't — checked against the lecture's actual list); Q235's explanation
+overclaimed the lecture "groups" ALS and Guillain-Barré as sharing a relapsing-remitting
+pattern; Q248/Q249 explanations leaked internal staging-process language ("a source
+defect noted in the staging file") into reader-facing prose, and Q248 misattributed the
+MLF/cranial-nerve-nuclei mechanism to the lecture (the lecture only says INO is "the most
+common cause of diplopia in MS patients" — the anatomy is the bank's own Q250 box, not
+lecture-sourced); Q247's explanation (79w) dismissed its three distractors in one clause
+with no mechanism. Per "same house never revises itself," a Claude session fixed all 5
+directly (never sent back to agy), verifying each fix against a fresh lecture grep rather
+than assumption. A second independent Opus refuter re-review then caught 2 more defects
+introduced by the fix itself, both in Q235: the "Baré" typo had only been fixed in
+`options`, not in the explanation prose (fixed with the `r` restored), and the rewritten
+closing sentence still overclaimed a "shared episodic clinical pattern" basis for the
+vasculitis/MS differential pairing (rewritten to state only that vasculitis is one of the
+lecture's listed differentials, no shared-pattern claim). A third, narrowly-scoped
+independent Opus refuter pass confirmed **PASS** on both remaining fixes, syntax check
+(12 entries), and byte-identical stem/options/answer vs the frozen staging for `npqb-nr-235`.
+
+**Sweep done, zero folds:** `tools/qb-pipeline/sweep.js` against the combined 23-entry
+batch (both halves concatenated, since the tool's within-batch check only covers one file
+at a time) vs the live 384-entry corpus: 23 × 384 = 8,832 cross pairs. **Zero candidates**
+at dice ≥ 0.72, zero within-batch collisions.
+
+**Splice done and committed (`5a47976`).** `app/data/questions.neuro.js`: 384 → **407**
+(23 new, 0 folds — matches prediction exactly). Verified from disk: count 407, 0 sparse
+holes, 0 duplicate ids, all answers in range, correct chapter/module on all 23 new
+entries, marker delta +20 (23 entries − 3 boxed: Q229/Q247/Q250). Boot-check clean, 0
+console errors (`QUESTIONS 4049` unchanged — neuropsych is `LOCKED_MODULES`, doesn't move
+the aggregator's live count).
+
+**Commits:** `34533cf` (staging + both drafts + all four t11-briefs files), `5a47976`
+(the splice). Nothing left on t11.
+
+**Route state — last probed 2026-09-16 ~03:30, RE-PROBE BEFORE TRUSTING:** OmniRoute
+gateway and Codex solo reported back online (`opencode-zen/big-pickle`, gateway ponged
+1.2s) — normal fleet-routing order restored: Codex+OmniRoute → opencode+OmniRoute →
+Codex solo → fleet direct → Claude helpers last with a `ROUTE-OK:` prefix. `auto/*`
+gateway combos are now BANNED regardless (answer with Claude/GPT models, payer
+unconfirmed — treat as paid). Pong-test before every batch, drop a route on first
+failure, no retry loops.
+
 ## Topic 10 "Movement Disorders" — CLOSED 2026-09-16
 
 Book pp.41-44 (PDF 046-049) questions, pp.44-45 (PDF 049-050) answers. Contents page

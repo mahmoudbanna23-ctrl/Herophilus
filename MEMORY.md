@@ -53,15 +53,13 @@ all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **Th
   Close-out: `progress\resume-peds-endpoint-part2.md`. ⚠️ Endpoint/House overlap is chapter-shaped —
   never fold `pedhd-card-6..10` (5 identical stems, 5 different figures). Full detail: archive,
   `## Pruned from MEMORY.md - 2026-09-16`, and `## Pruned from MEMORY.md - 2026-09-05`.
-- ⏳ **NEURO — 384 live** (t09 Coma CLOSED 2026-09-15, 333->355; t10 Movement Disorders CLOSED
-  2026-09-16, 355->384, 0 folds, marker 259->281; Grade Gain Psychiatry CLOSED 2026-09-08).
-  **t11 Demyelinating (Q228-250, 23 entries) staged+drafted 2026-09-16, NOT spliced (still 384)** —
-  untracked: `gg-nr-t11.array.js`, `.draft-A/B.js`, `t11-briefs\*`. **Next: refuter review (diff
-  house from the drafting seat), sweep, splice 384->407, boot-check, commit, journal. Then t12-14 to
-  PDF 69.** Gateway/Codex back online — see GATEWAY ROUTE block above. Fallback if it drops again:
-  `agy --add-dir "<repo root>"` (cwd alone unreliable), `--model gemini-3.1-pro-high` vision /
-  `claude-sonnet-4-6` drafting (no `--effort`), `--print-timeout 8m` (5m default too short for
-  12-entry jobs). Close-out: `progress\resume-neuro.md` "Topic 11".
+- ⏳ **NEURO — 407 live** (t09 Coma CLOSED 2026-09-15, 333->355; t10 Movement Disorders CLOSED
+  2026-09-16, 355->384; **t11 Demyelinating CLOSED 2026-09-16, 384->407, 0 folds**; Grade Gain
+  Psychiatry CLOSED 2026-09-08). **Next: Topic 12 "Neuromuscular" (book p.50).** Gateway/Codex back
+  online — see GATEWAY ROUTE block above. Fallback if it drops again: `agy --add-dir "<repo root>"`
+  (cwd alone unreliable), `--model gemini-3.1-pro-high` vision / `claude-sonnet-4-6` drafting (no
+  `--effort`), `--print-timeout 8m` (5m default too short for 12-entry jobs). Close-out:
+  `progress\resume-neuro.md` "Topic 11".
   ⚠️ **Renders die with the scratchpad** — re-render ~45 s, OCR is the rate-limited part. ⚠️ **Bank
   is GRADE GAIN, ONE book page per sheet, A4, NOT 2-up** — do not carry peds/ophtho House arithmetic
   across. ⚠️⚠️ **OFFSET IS NOT GLOBAL: neuropsychiatry PDF = book + 5, neurosurgery PDF = book + 7.
