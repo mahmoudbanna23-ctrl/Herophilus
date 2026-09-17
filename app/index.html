@@ -2912,7 +2912,8 @@ button.card.locked:hover .mod-art{opacity:.42}
    ========================================================================== */
 const FIREBASE_CONFIG = {
   apiKey: "AIzaSyAg9OGSUbn7A04K5nRdStjzwGrO0nrvidk",
-  authDomain: "ward-round-e4822.firebaseapp.com",
+  /* auth handler proxied by _worker.js so sign-in stays same-origin */
+  authDomain: "herophilus.pages.dev",
   projectId: "ward-round-e4822",
   storageBucket: "ward-round-e4822.firebasestorage.app",
   messagingSenderId: "353156608996",
@@ -4239,7 +4240,7 @@ async function signInGoogle(){
     await afterSignIn(res.user);
   }catch(e){
     const m=String(e&&e.code||e);
-    if(/popup-closed|cancelled/i.test(m))return;
+    if(/popup-closed|cancelled/i.test(m)){toast('Sign-in cancelled');return}
     if(/unauthorized-domain/i.test(m)){toast('This address is not authorised in Firebase');return}
     if(/popup-blocked/i.test(m)){
       try{await firebase.auth().signInWithRedirect(prov)}catch(e2){toast('Sign-in blocked by the browser')}
@@ -4471,7 +4472,7 @@ async function restoreSession(){
   try{
     const r=await firebase.auth().getRedirectResult();
     if(r&&r.user){await afterSignIn(r.user);return true}
-  }catch(e){}
+  }catch(e){console.warn('redirect result',e)}
   return new Promise(res=>{
     let done=false;
     const un=firebase.auth().onAuthStateChanged(async u=>{
