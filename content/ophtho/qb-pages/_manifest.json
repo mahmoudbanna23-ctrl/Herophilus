@@ -1,0 +1,436 @@
+{
+  "source_pdf": "D:/claude os/Medical school/Herophilus/Semester 8/Opthalmo/Questions/Opthalmology endpoint.pdf",
+  "requested_range": [
+    718,
+    787
+  ],
+  "model": "gemini/gemini-3.1-flash-lite",
+  "start_time": "2026-09-16T23:29:30.115Z",
+  "end_time": "2026-09-16T23:45:04.676Z",
+  "pages_completed": 70,
+  "parse_errors": 6,
+  "http_errors": 6,
+  "stopped_by_429": false,
+  "pages": [
+    {
+      "page": 718,
+      "image": "s10-render\\p-0718.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 719,
+      "image": "s10-render\\p-0719.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 720,
+      "image": "s10-render\\p-0720.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 721,
+      "image": "s10-render\\p-0721.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 722,
+      "image": "s10-render\\p-0722.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 723,
+      "image": "s10-render\\p-0723.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 724,
+      "image": "s10-render\\p-0724.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 725,
+      "image": "s10-render\\p-0725.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 726,
+      "image": "s10-render\\p-0726.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 727,
+      "image": "s10-render\\p-0727.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 728,
+      "image": "s10-render\\p-0728.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 729,
+      "image": "s10-render\\p-0729.png",
+      "status": 504,
+      "parse_error": true
+    },
+    {
+      "page": 730,
+      "image": "s10-render\\p-0730.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 731,
+      "image": "s10-render\\p-0731.png",
+      "status": 504,
+      "parse_error": true
+    },
+    {
+      "page": 732,
+      "image": "s10-render\\p-0732.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 733,
+      "image": "s10-render\\p-0733.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 734,
+      "image": "s10-render\\p-0734.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 735,
+      "image": "s10-render\\p-0735.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 736,
+      "image": "s10-render\\p-0736.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 737,
+      "image": "s10-render\\p-0737.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 738,
+      "image": "s10-render\\p-0738.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 739,
+      "image": "s10-render\\p-0739.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 740,
+      "image": "s10-render\\p-0740.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 741,
+      "image": "s10-render\\p-0741.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 742,
+      "image": "s10-render\\p-0742.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 743,
+      "image": "s10-render\\p-0743.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 744,
+      "image": "s10-render\\p-0744.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 745,
+      "image": "s10-render\\p-0745.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 746,
+      "image": "s10-render\\p-0746.png",
+      "status": 400,
+      "parse_error": true
+    },
+    {
+      "page": 747,
+      "image": "s10-render\\p-0747.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 748,
+      "image": "s10-render\\p-0748.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 749,
+      "image": "s10-render\\p-0749.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 750,
+      "image": "s10-render\\p-0750.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 751,
+      "image": "s10-render\\p-0751.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 752,
+      "image": "s10-render\\p-0752.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 753,
+      "image": "s10-render\\p-0753.png",
+      "status": 504,
+      "parse_error": true
+    },
+    {
+      "page": 754,
+      "image": "s10-render\\p-0754.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 755,
+      "image": "s10-render\\p-0755.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 756,
+      "image": "s10-render\\p-0756.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 757,
+      "image": "s10-render\\p-0757.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 758,
+      "image": "s10-render\\p-0758.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 759,
+      "image": "s10-render\\p-0759.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 760,
+      "image": "s10-render\\p-0760.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 761,
+      "image": "s10-render\\p-0761.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 762,
+      "image": "s10-render\\p-0762.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 763,
+      "image": "s10-render\\p-0763.png",
+      "status": 504,
+      "parse_error": true
+    },
+    {
+      "page": 764,
+      "image": "s10-render\\p-0764.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 765,
+      "image": "s10-render\\p-0765.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 766,
+      "image": "s10-render\\p-0766.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 767,
+      "image": "s10-render\\p-0767.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 768,
+      "image": "s10-render\\p-0768.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 769,
+      "image": "s10-render\\p-0769.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 770,
+      "image": "s10-render\\p-0770.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 771,
+      "image": "s10-render\\p-0771.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 772,
+      "image": "s10-render\\p-0772.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 773,
+      "image": "s10-render\\p-0773.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 774,
+      "image": "s10-render\\p-0774.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 775,
+      "image": "s10-render\\p-0775.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 776,
+      "image": "s10-render\\p-0776.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 777,
+      "image": "s10-render\\p-0777.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 778,
+      "image": "s10-render\\p-0778.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 779,
+      "image": "s10-render\\p-0779.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 780,
+      "image": "s10-render\\p-0780.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 781,
+      "image": "s10-render\\p-0781.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 782,
+      "image": "s10-render\\p-0782.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 783,
+      "image": "s10-render\\p-0783.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 784,
+      "image": "s10-render\\p-0784.png",
+      "status": 504,
+      "parse_error": true
+    },
+    {
+      "page": 785,
+      "image": "s10-render\\p-0785.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 786,
+      "image": "s10-render\\p-0786.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 787,
+      "image": "s10-render\\p-0787.png",
+      "status": 200,
+      "parse_error": false
+    }
+  ]
+}

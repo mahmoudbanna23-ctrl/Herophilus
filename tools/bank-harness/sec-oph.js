@@ -19,7 +19,11 @@ const SEC_P1 = {
   // into n11 (orig printed_q11), and n19 (orig printed_q18, boxed-second-printing exact reprint)
   // into n14 (orig printed_q14, first half of the split). 27 staged rows, 25 drafted.
   9: { prefix: 'ophep-lens-', file: 'oph-ep-p1-s09-lens.array.js', svar: 'OPHEP_S09_STAGED', draft: 'oph-ep-p1-s09-lens.draft', chapter: 'op-cat', pages: [639, 717], ans: null, folded: [18, 19] },
-  10: { prefix: 'ophep-uveal-tract-', file: 'oph-ep-p1-s10-uveal-tract.array.js', svar: 'OPHEP_S10_STAGED', draft: 'oph-ep-p1-s10-uveal-tract.draft', chapter: 'op-uvea', pages: [718, 787], ans: null },
+  // Section 10's book printing defect: printed_q:12 appears twice on two different, unrelated
+  // questions (marked p.763 = n12, marked p.765 = n13) -- resolved by position, not folded.
+  // One real within-section fold, dropped at drafting: n15 (marked p.769, unboxed exact
+  // duplicate of n12's stem/options/key) into n12 (marked p.763, has the boxed explanation).
+  10: { prefix: 'ophep-uveal-tract-', file: 'oph-ep-p1-s10-uveal-tract.array.js', svar: 'OPHEP_S10_STAGED', draft: 'oph-ep-p1-s10-uveal-tract.draft', chapter: 'op-uvea', pages: [718, 787], ans: null, folded: [15] },
   11: { prefix: 'ophep-glaucoma-', file: 'oph-ep-p1-s11-glaucoma.array.js', svar: 'OPHEP_S11_STAGED', draft: 'oph-ep-p1-s11-glaucoma.draft', chapter: 'op-glauc', pages: [788, 849], ans: null },
   12: { prefix: 'ophep-vitreous-', file: 'oph-ep-p1-s12-vitreous.array.js', svar: 'OPHEP_S12_STAGED', draft: 'oph-ep-p1-s12-vitreous.draft', chapter: null, pages: [850, 879], ans: null }, // no chapter exists for Vitreous; one must be added to modules.js
   13: { prefix: 'ophep-retina-', file: 'oph-ep-p1-s13-retina.array.js', svar: 'OPHEP_S13_STAGED', draft: 'oph-ep-p1-s13-retina.draft', chapter: 'op-ret', pages: [880, 981], ans: null },
