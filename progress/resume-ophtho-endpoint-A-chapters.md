@@ -821,3 +821,77 @@ the fifth block above is DEFERRED until then — do not resume s13 staging next.
 - Next step if `vibe` fails again on a clean dispatch: `ROUTE-OK:` Claude `lean-drafter` builder is
   now well-justified (rungs 1-5 each failed today across two ticks for distinct reasons), with an
   independent non-Claude checker before any splice, per the two-layer rule.
+
+## 2026-09-17, s10 Uveal Tract -- staging clean, brief written and verified, draft-authoring stalled on rung 3
+- Staging `oph-ep-p1-s10-uveal-tract.staging.json` complete: 70/70 pages, 0 parse errors. Fixed in
+  place this tick: 2 bad `figure` fields (p741 double-counted the printed box as a figure; p745 had
+  `figure:null`), 5 `printed_q` fields polluted with full question text instead of a bare number
+  (pdf_page 742/753/756/777/778), 2 `printed_q` trailing-period artifacts (781, 787), 1 stem-leak
+  (783, a `"21. "` prefix bled into the stem field).
+- Independent 5-page spot-check: Codex dead (known), gateway `auto/vision` dead (two dispatches
+  ~55-60s apart both returned `model_cooldown` for `gemini-3.7-flash` with near-identical
+  `reset_seconds`, not counting down -- treated as non-clearing, dropped after one retry), Gemini
+  by key excluded (same-house as the Gemini stager, regardless of provider vs gateway access path;
+  also separately found dead itself: `gemini-2.5-flash` is 404/deprecated, Google now points to
+  `gemini-3.6-flash`). Fell through to the vision ladder's explicit last resort: a Claude `refuter`
+  subagent did the check, found the above defects, all fixed.
+- Full six-stage duplicate sweep run on all 24 candidate questions. Found TWO separate phenomena,
+  do not conflate them: (1) book printing defect, `printed_q:12` appears twice (pdf 762/763 and
+  764/765) on two different, unrelated questions -- resolve by position-based numbering (n:12,
+  n:13), no fold; (2) a genuine exact-content duplicate, pdf_page 769 (`printed_q:14`) == pdf_page
+  763 (`printed_q:12`) byte-for-byte on stem/options/key -- fold 769 into 763, keep 763 (has the
+  boxed explanation; 769 has neither). This is the only fold for s10.
+- Route-guard fired mid-tick on a plain `Read` of `oph-ep-codex-s09-draft.brief.md` ("10 main-chat
+  labour calls in a row with the gateway up") -- correct call, that reading belonged on a seat.
+  Pivoted the s10 brief-writing itself to opencode+OmniRoute (rung 3; Codex has been dead 3+ days).
+- Rung 3 pong-probed live (`opencode run -m omniroute/auto/coding "pong"` -> `pong`, exit 0).
+  Dispatch 1 (write `oph-ep-codex-s10-draft.brief.md`, modeled on the s09 brief, carrying both fold
+  facts above as already-adjudicated so the worker never re-derives them) **succeeded cleanly** --
+  82-line brief written, read back and judged correct (both fold facts encoded accurately, s07
+  array/draft structural shape copied). File: `content/ophtho/qb-pages/oph-ep-codex-s10-draft.brief.md`.
+- Dispatch 2 (same rung, same session type, told to follow that brief end-to-end and write
+  `.array.js`+`.draft.js`) **died silently**: log shows it read the brief, staging JSON and the s07
+  array template, then stopped -- no error text, no report, no output files, process just exited.
+  Resuming the same session (`opencode run -c`) to ask what happened returned nothing at all
+  (empty output, exit 0). Neither `.array.js` nor `.draft.js` exists on disk. Not retried a third
+  time (ladder rule). Rung 3 is NOT dead in general this tick (it just did the brief correctly
+  seconds earlier) -- most likely the combined one-shot array+draft brief (24 rows + lecture/book
+  reads in one pass) is too large a single turn for this route; unlike s8's `array.js`-then-
+  `draft.js` two-step pattern, this brief asked for both files in one dispatch.
+- **Next step**: split the existing brief's work into two dispatches instead of one -- (a) rung 3,
+  scoped ONLY to writing `.array.js` (24 rows, no lecture/book reading needed, smaller output), (b)
+  once that lands and is spot-checked, a second rung-3 dispatch scoped ONLY to `.draft.js` from the
+  now-existing array file (this is exactly s8's proven two-step shape, see the 2026-09-16 entries
+  above). If rung 3 dies again on either half, drop to rung 4 (Codex solo, own OpenAI login --
+  unprobed for s10 specifically; check whether its 2026-09-20 quota reset from the s8 saga still
+  applies) or rung 5 fleet direct. Do not re-attempt the combined one-shot brief as-is.
+
+## 2026-09-17, s10 Uveal Tract CLOSED -- 235 -> 258, `3ca3cad`
+- Resumed to find both `.array.js` (24 rows) and `.draft.js` (23 rows, id-15 correctly absent) already
+  on disk -- a background rung-3 dispatch must have landed after the previous entry's "stopping here"
+  note was written (split-dispatch instruction was never needed this tick). Verified both files
+  directly rather than trusting either the stale note or the files blind: read array.js n:12/n:15 pair
+  byte-compared (stem/options/key identical, only option-prefix formatting differs -- confirms the
+  fold pair), read draft.js id-1..4 and id-12/13 in full against the brief's adjudicated facts, all
+  correct. `source` field on id-12 correctly omits the folded page (matches the `ophep-cornea-11`
+  precedent for within-bank exact-dup folds -- no citation fix needed).
+- `val-oph-ep.js --part 1 10` failed first run: "staged but not in this file: 1 (15)" -- `sec-oph.js`
+  section 10 had no `folded` array, so the validator read n:15's absence as an unadjudicated hole.
+  Fixed: added `folded: [15]` + a documenting comment (printing-defect n12/n13 resolved by position,
+  real fold n15->n12). Re-ran clean.
+- Independent check dispatched to `vibe` (rung 5, different house from the opencode drafter). First
+  attempt repeated a documented mistake -- passed `--print-timeout`, which is `agy`'s flag not
+  `vibe`'s (same error already logged in the 2026-09-16 entries above); fixed to `--max-turns 40` and
+  redispatched, exit 0, verdict PASS, no defects found across all 23 rows + both fold facts.
+  Log: scratchpad `vibe-s10-check.log`.
+- Splice (`splice-oph-ep.js --part 1 10 --write`): 235 -> 258 entries, 0 holes. Boot-check clean:
+  `QUESTIONS 4049 THEORY 81 MODULES 4 chapters 153`, 0 console errors (ophtho endpoint module count
+  0 in the DOM is the known `LOCKED_MODULES` behavior, not a regression). Committed `3ca3cad` --
+  `questions.ophtho.ep.js`, `sec-oph.js`, brief, array.js, draft.js, staging.json, and the s10
+  `_manifest.json` OCR-render provenance (70/70 pages, 6 transient 504/400s all recovered on retry,
+  0 final parse errors) -- treated as project-permanent provenance alongside staging.json.
+- **Next: Section 11 Glaucoma** (`sec-oph.js` row 11, pages 788-849, chapter `op-glauc`, no folds
+  pre-known -- run the full six-stage sweep fresh). Same pattern: stage -> brief -> split dispatch
+  (array.js then draft.js as two separate rung-3 calls, per the lesson learned this tick) ->
+  `val-oph-ep.js --part 1 11` -> independent different-house check -> splice -> boot-check -> commit.
+- Session hit its ~80-step budget on this tick -- stopping here, resume from this block.
