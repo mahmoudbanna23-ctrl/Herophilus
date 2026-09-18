@@ -202,6 +202,14 @@ consistent with the TOC). Re-probe the routing ladder fresh before dispatching (
 till 2026-09-20 per owner). Same pattern: brief file, dispatch, `.array.js` + `.draft.js`,
 Claude-only final read + splice + commit.
 
+**Route that worked for Stroke (reuse it):** (1) `node "D:/claude os/Tools/omniroute/transcribe-pages.mjs"
+"<Neuro endpoint.pdf>" <first> <last> "<outdir>"` — gateway Gemini seat, 180 s timeout per page, stops
+cleanly on 429; (2) `lean-drafter` with a prompt opening `ROUTE-OK: <why>`, run in the MAIN checkout —
+never `isolation:"worktree"` (a worktree holds only committed files; briefs/OCR/renders are untracked,
+so the agent sees nothing). Brief tells it to check every OCR page against its PNG, write `.array.js` +
+`.draft.js`, delete the OCR/render folders. Do not use `ask_gemini_multi.js` or vibe (see above). Diff
+`tools\` after any fleet dispatch. Bash tool eats backslashes — use forward slashes in node/git paths.
+
 Remaining after Epilepsy: Headache, Multiple sclerosis, Hemiplegia+paraplegia, Ataxia+low back
 pain, Movement disorders, CNS infection, Neuromuscular disorders, Cranial nerve disorders, Coma,
 Symptomatology, Anxiety disorders, Mood disorders, Somatic disorders, Child psychiatry,
