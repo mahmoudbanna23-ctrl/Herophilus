@@ -45,14 +45,27 @@ sweep, brief, `array.js`, `draft.js`, `val-oph-ep.js`, independent check, splice
 - `_manifest.json` was overwritten with s15's provenance (git history keeps s10's); a `provenance_note` records the 24
   retried pages and the vision re-check.
 
-### s15 handoff, 2026-09-18 (step budget reached; s15 NOT spliced, s17/s18/s19/s21 NOT started)
+### s15 CLOSED 2026-09-18 — 258 -> 267 live, spliced, boot clean
 
-State: array (11 rows) and draft (9 rows, ids 2 and 7 absent) committed as WORK IN PROGRESS. `val-oph-ep.js --part 1 15`
-passes (ALL CHECKS PASSED, 1,547 words). Nothing spliced: `questions.ophtho.ep.js` untouched, still 258 live at last
-measure (re-measure by loading the array). Draft came from opencode `omniroute/auto/coding` (pass 1 too thin at 71-108
-words; rework `oph-ep-codex-s15-draft.delta1.brief.md` raised most rows to 139-251 words). Medical read of the rework found
-defects still open, fix with one more delta brief (`opencode run -c -m omniroute/auto/coding`) or a direct edit, then re-run
-the validator:
+Spliced `node tools/bank-harness/splice-oph-ep.js --part 1 15 --write`: 9 entries (ids 1,3,4,5,6,8,9,10,11; 2 and 7 folded),
+`questions.ophtho.ep.js` 258 -> 267, 0 holes. Boot check 4049 / 81 / 4 / 153, 0 console errors. Validator ALL CHECKS PASSED,
+1,501 words. `ophep-optics-refraction-9` `source` now also cites pdf p.1078 (boxed reprint) and p.1088 (unboxed reprint).
+Pipeline record: draft by opencode `omniroute/auto/coding` (pass 1 thin at 71-108 words; delta1 and delta2 briefs; final
+defect fixes applied by direct edit because the drafter re-introduced process language each round); independent check by a
+Sonnet `refuter` run (different house from the drafter) returned FAIL on eight defects, all fixed, validator re-run green;
+Claude read the final text.
+
+Lessons from this section, for the s17/s18/s19/s21 briefs:
+- **The validator's shared-menu rule requires every member after the first to name the anchor id** (`val-oph-ep.js`
+  lines 313-318, "shares the n:10/n:11 option menu but does not point at ophep-squint-10"). A brief that says "no id may appear"
+  is wrong for any shared-menu row; give the drafter the rule as: later members contain the anchor id in plain text, no backticks.
+- **Grep the book and lecture text before ruling a fact "invented".** "Concomitant strabismus in patients under age 6 is rarely
+  caused by serious neurologic disease" is sourced (`content/ophtho/book/ch15-squint.txt` lines 184-187); removing it as
+  outside knowledge was a wrong call, caught by the refuter and restored.
+- Drafter tag discipline: over-tags (sourced claims tagged) and under-tags (untagged general knowledge) both occurred. The
+  refuter's line-by-line list was the fastest route; apply as direct edits.
+
+Historical defect list at the moment the step budget was first reached (all now FIXED, kept for the record):
 
 1. `ophep-squint-11` was NOT reworked: 71 words, no distractor explanation, no tag, and it carries the process line
    "(Note: ophep-squint-10 uses this same option list.)" with a bare id. Needs: plain sentence that options A and D print the
