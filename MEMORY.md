@@ -32,6 +32,7 @@ Where this file and the archive disagree, this file wins. ⚠️ **Before openin
 **no live rule left it.**
 
 ## Resume here — state at 2026-09-16
+- **APP RE-PLAN 2026-09-17 (design + code review + refactor + features): `progress\PLAN-app-replan-2026-09-17.md`** — B10 code review DONE 2026-09-17, bugs + refuter verdicts in `progress\app-replan\bugs.md`; sign-in fix (bug 1) COMMITTED 542c7e4, LIVE ONLY AFTER owner adds the OAuth redirect URI then redeploys (see commit msg); B0 pictures wait for Codex; other bugs (B11) next; nothing else in `app\` touched yet; Codex out of quota until 2026-09-20 18:21.
 ✅ ENT CLOSED (`ledger.md` §15–§16). ✅ **OPHTHO CLOSED 2026-09-02** — **1,598**, 0 holes, CLEAN,
 boots; all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **The ophtho
 ENDPOINT is a separate book — 2,442 pp / 293 MB; do NOT split the PDF, split the page RANGE.**
@@ -56,17 +57,16 @@ spliced+committed). s10-12 next, s13 deferred, s14-28 unstaged. Close-out + full
   Infections + t14 Back & Lower Limb Pain CLOSED 2026-09-17, 450->493, 0 folds**, commits
   `45aa11a` staging+drafts, `b34c56c` splice, `c069c54` journal). Close-out:
   `progress\resume-neuro.md` "Topic 13/14". **Neuro Endpoint — separate 2190-page book, started
-  2026-09-17.** Ch.1 Localization CLOSED: 17 live (`npep-loc-1..17`), 493->510, commits `09af8b4`
-  staging+drafts, `eb97183` splice, `0da6fa5` journal. Close-out: `progress\resume-neuro-endpoint.md`
-  §4. Next: Ch.2 Stroke, printed pp.52-111 — measure real count from answered pages, don't project
-  from TOC range. Model Final Exams pp.1424-2189 stay DEFERRED.
+  2026-09-17.** Ch.1 Loc CLOSED 17 live, 493->510 (`09af8b4`/`eb97183`/`0da6fa5`). ✅ **Ch.2 Stroke
+  CLOSED 2026-09-18** — 23 live (`npep-stroke-1..12,14..24`), 510->533 (`f32d831` staging,
+  `e705e43` splice). Close-out: `progress\resume-neuro-endpoint.md` §6. Next: Ch.3 Epilepsy,
+  printed pp.112-199. Model Final Exams pp.1424-2189 stay DEFERRED.
   ⚠️⚠️ **RUNNING HEADER LAGS TRUE SECTION ~1 PAGE** — boxed section-title banner + question
   content are the only reliable markers, still applies to T13's own boundary. ⚠️ **Renders die
   with the scratchpad.**
   ⚠️⚠️ **OFFSET NOT GLOBAL: neuropsychiatry PDF = book+5, neurosurgery PDF = book+7. In scope =
   PDF 6–98 ONLY; SKIP 99–140.**
-- **Five-option cap settled; OSCE skipped by user ruling 2026-08-31** — both **PRUNED 2026-09-08 ->**
-  archive, `## Pruned from MEMORY.md - 2026-09-08`. Still binding, just no longer re-read every turn.
+- **Five-option cap settled; OSCE skipped by user ruling 2026-08-31** — both **PRUNED 2026-09-08 ->** archive, `## Pruned from MEMORY.md - 2026-09-08`. Still binding.
 
 ## The watch — oversight every ~12 h (set up 2026-09-02)
 - **A fresh chat runs `progress\WATCH.md` top to bottom every ~12 h, reports changed / stale / at

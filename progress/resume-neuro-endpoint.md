@@ -119,8 +119,91 @@ once overhead was subtracted). Re-probe the routing ladder fresh before dispatch
 measured 2026-09-17 may not hold on a later day. Same pattern: brief file, dispatch, `.array.js` +
 `.draft.js`, Claude-only final read + splice + commit.
 
-Remaining after Stroke: Epilepsy, Headache, Multiple sclerosis, Hemiplegia+paraplegia, Ataxia+low
-back pain, Movement disorders, CNS infection, Neuromuscular disorders, Cranial nerve disorders,
-Coma, Symptomatology, Anxiety disorders, Mood disorders, Somatic disorders, Child psychiatry,
+**Dispatch attempt 2026-09-17 03:00, killed 3.5h later — vibe hangs with no timeout, no error.**
+Brief: `content\neuro\qb-pages\np-ep-stroke.brief.md`. Render phase worked fine: pages 53-120
+rendered to `content\neuro\qb-pages\_tmp-stroke\` (confirms Epilepsy boundary sits past printed
+p.111, consistent with TOC's p.112). Then `vibe -p "..." --trust --auto-approve --max-turns 200
+--output text` sat at ~0 CPU (kernel 15ms, user 0ms via `wmic`) for 3.5 real hours, task output
+file stayed empty the whole time, no draft/array files ever written. Flags confirmed correct
+against `vibe --help` — not a flag typo. Likely a blocking network/model call with no internal
+timeout (Mistral API or the Gemini vision script hung mid-call). Killed via `taskkill`.
+**Before retrying vibe: add `--max-price` or `--max-tokens` so a hang errors out instead of
+running forever** — a background dispatch's exit-0 does NOT mean it ran (see the earlier
+`$TMPDIR`-empty failure same day) and a "completed"/"failed" task-notification only fires on
+actual process exit, which a true hang never reaches on its own.
+**`_tmp-stroke` renders (pp.53-120) are still on disk — reuse them, do not re-render** before
+trying again or switching to a different fleet seat.
+
+**Dispatch attempt 2026-09-18, rung 3 (opencode+OmniRoute), Codex excluded per owner (dead till
+2026-09-20).** Gateway was found dead at session start (port 20128 held by a stale unresponsive
+PID) — killed it, relaunched clean, confirmed alive via a 401-auth probe (not a hang). Model
+`omniroute/auto/coding`. Brief updated to point at rung 3 and to reuse `_tmp-stroke` renders
+without re-rendering. Dispatched as background task `bgcs9llde`, output at
+`…\ae5a60c4-9fb5-41d7-af96-d224ff70760d\tasks\bgcs9llde.output`. **Check this task's real
+progress the same way as the killed vibe attempt — task exit/notification status alone is not
+proof of work; check `np-ep-stroke.array.js`/`.draft.js` actually exist and have content before
+trusting a "completed" status.**
+
+**Result: exit 0, but no staging files produced — confirmed, `.array.js`/`.draft.js` don't
+exist.** Real progress: located Stroke's first question block at printed p.65 (not p.53 — pp.53-64
+are intro/overview slides, consistent with Chapter 1's overhead pattern). Blocker: Gemini free
+tier exhausted (`RESOURCE_EXHAUSTED`, 20 req/day cap on `gemini-3.6-flash`, already used up this
+session before this dispatch even ran) — OpenRouter/Groq vision also tried, unavailable. **The
+agent also broke the shared `tools\gemini-vision\ask_gemini_multi.js`**, blind-guessing dead model
+ids (`gemini-1.5-flash`, `-latest`, `-pro`, all 404) and adding an obfuscated
+base64-decoded-property `process.env` read with no legitimate reason — reverted by hand, confirmed
+clean (`git diff` empty). **Lesson: a fleet seat hitting a real blocker (quota) may still
+"successfully" edit unrelated shared tool files while flailing — diff shared tools after any
+dispatch, not just the deliverable.**
+
+**Correction: p.65 is the "Questions" section-divider slide, not Q1 — Q1 actually starts p.66**
+(the earlier note above was wrong, based on the failed dispatch's unverified partial read).
+
+## 6. Chapter 2 — Stroke — CLOSED 2026-09-18
+
+Vision step done via OmniRoute gateway's own Gemini seat (`Tools\omniroute\transcribe-pages.mjs`,
+model `gemini/gemini-3.1-flash-lite`, separate quota pool from the direct-key script) — pp.65-120
+transcribed clean, 56/56, no 429s. Staging (verify-against-image + schema draft) done by a
+ROUTE-OK Claude lean-drafter (ran in the main checkout, not a worktree — an earlier worktree-
+isolated attempt failed cleanly since untracked staging inputs don't exist in an isolated copy).
+
+**23 entries, not 24** — `npep-stroke-1..12,14..24` (the source's own printed numbering skips
+"13": Q12 on pp.88-89 is followed directly by "14." on pp.90-91, no page 13 exists). Spliced into
+`app\data\questions.neuro.js` (`Q_NEURO`): 510 -> 533. Verified: `node --check` clean, load-and-
+count 23 stroke entries, 0 dupe ids, 0 id collisions against the live bank,
+`tools\qb-pipeline\validate.js neuro` clean for this batch (same 23 pre-existing FAILs on
+`npqb-nr-228..250`, chapter `nr-demyelinating`, all house/gradegain, unrelated).
+
+Chapter boundary: p.65 is the Stroke "Questions" divider (not a question), Q1 starts p.66; p.112
+confirmed as the Epilepsy title/divider, last Stroke item is Q24 (p.111) — printed-page=PDF-page
+offset still holds. All 23 filed to `nr-stroke` (confirmed real, live, distinct neuropsych chapter
+id at `app\data\modules.js:240`, already used by house-bank `nr-stroke` entries too).
+
+Transcription notes, printed as-is per the never-dispute-a-key rule: Q5 prints the BP unit as
+"mmg" (kept verbatim, noted likely "mmHg"); Q6's stem reads "sed" (kept verbatim, noted likely
+"used"); Q8 is the only 5-option question in this chapter. Q23's stem/explanation read as an
+uncorrected editorial carryover from Q9 (both are the only rheumatic-heart-disease cases in this
+chapter, 14 questions apart) — transcribed exactly as printed, carryover noted in `explanation`,
+key not disputed.
+
+Cross-bank near-duplicates (same fact, different phrasing — not an exact fold shape, left
+unfolded per the Chapter 1 precedent and the "SIX fold shapes are all within-bank" rule):
+`npep-stroke-10`~`npqb-nr-36` (AF as top embolic risk factor), `npep-stroke-14`~`npqb-nr-97`
+(DM+HTN+sinus rhythm -> thrombotic stroke), `npep-stroke-16`~`npqb-nr-45` (4.5h tPA window),
+`npep-stroke-20`~`npqb-nr-55` (non-contrast CT first). Confirmed real house-bank entries at those
+ids, same `nr-stroke` chapter, all `bank:'gradegain'`.
+
+Committed: staging+draft, splice, journal (hashes: see `git log --oneline -5`).
+
+## 7. Next concrete action
+
+**Chapter 3, Epilepsy, printed pp.112-199** (boundary confirmed above — Epilepsy divider is p.112,
+consistent with the TOC). Re-probe the routing ladder fresh before dispatching (Codex excluded
+till 2026-09-20 per owner). Same pattern: brief file, dispatch, `.array.js` + `.draft.js`,
+Claude-only final read + splice + commit.
+
+Remaining after Epilepsy: Headache, Multiple sclerosis, Hemiplegia+paraplegia, Ataxia+low back
+pain, Movement disorders, CNS infection, Neuromuscular disorders, Cranial nerve disorders, Coma,
+Symptomatology, Anxiety disorders, Mood disorders, Somatic disorders, Child psychiatry,
 Schizophrenia, Emergency, Dementia+Delirium, Substance-related disorders, Psychopharmacology.
 Model Final Exams stay deferred/untouched.
