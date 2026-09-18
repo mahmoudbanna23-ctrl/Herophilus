@@ -195,12 +195,37 @@ ids, same `nr-stroke` chapter, all `bank:'gradegain'`.
 
 Committed: staging+draft, splice, journal (hashes: see `git log --oneline -5`).
 
-## 7. Next concrete action
+## 7. Chapter 3 Epilepsy — CLOSED 2026-09-18
 
-**Chapter 3, Epilepsy, printed pp.112-199** (boundary confirmed above — Epilepsy divider is p.112,
-consistent with the TOC). Re-probe the routing ladder fresh before dispatching (Codex excluded
-till 2026-09-20 per owner). Same pattern: brief file, dispatch, `.array.js` + `.draft.js`,
-Claude-only final read + splice + commit.
+**38 live** (`npep-epilepsy-1..9,11..28,30..40`), `Q_NEURO` 533 -> 571, staging `827b422`, splice
+`9d25bb4`. Printed pp.112-199: p.112 divider, pp.113-119 theory slides,
+p.120 "Questions" divider, Q1 p.121, last question Q40 p.198 (answer p.199), Headache divider p.200.
+40 printed - 1 skipped number (29) - 1 fold (Q10 folded into Q12: same stem, options reordered, same
+key; Q10's printed box carried in Q12's explanation, its citation in Q12's `source`).
+
+Routing that worked: gateway `transcribe-pages.mjs` gave 59/90 pages first pass (503 "capacity busy" is
+transient, not the 429 the script stops on); a retry script re-sending only pages with no `.txt`, 10/20/40 s
+backoff, got 89/90. p.177 kept failing HTTP 400 "Base64 decoding failed" — the drafter read `p-0177.png` by
+eye. Three parallel `lean-drafter` parts (A 112-142, B 143-172, C 173-201), then an Opus refuter on 16
+entries (PASS, all keys match the highlighted option). Render names are FOUR-digit `p-0NNN.png`.
+
+Defective keys, printed key kept and noted in `explanation`: Q9 (first unprovoked nocturnal GTC, key "wait for
+the second attack"), Q23 (aura only, key complex partial). Q36 keys IV diazepam because its option set has no
+lorazepam (Q27 keys IV lorazepam). Q3 (syncope) and Q8 (ECT seizure confirmation) are off-topic but sit in this
+section; filed to `nr-epilepsy`. Within-batch near-duplicates left unfolded (reworded stems): 1~14, 4~24, 16~25,
+27~36, 32~38. Cross-bank, left as two entries and noted in `source`: `npep-epilepsy-7` = `npqb-nr-176` (identical
+stem, options, key), `npep-epilepsy-37`~`npqb-nr-157` (reworded). Sweep A-F: only those two house-bank hits.
+
+Left on disk untracked (delete permission was refused, not committed): `content/neuro/qb-pages/_epilepsy-ocr/`
+(renders + OCR) and `np-ep-epilepsy.draft-A/B/C.js` (intermediate parts). Safe to delete.
+
+## 8. Next concrete action
+
+**Chapter 4, Headache, printed pp.200-282** (Headache divider p.200 confirmed; p.201 is the theory slide
+"Types of Headache"). Re-probe the routing ladder fresh before dispatching (Codex excluded till
+2026-09-20 per owner). Same pattern: brief file, three parallel `lean-drafter` parts, one merged
+`.draft.js` (bare entry run — NO `var X = [` wrapper, `splice-safe.js` brackets it itself), Claude-only
+final read + fold + splice + commit. Measure the real count from the answered pages, not the TOC range.
 
 **Route that worked for Stroke (reuse it):** (1) `node "D:/claude os/Tools/omniroute/transcribe-pages.mjs"
 "<Neuro endpoint.pdf>" <first> <last> "<outdir>"` — gateway Gemini seat, 180 s timeout per page, stops

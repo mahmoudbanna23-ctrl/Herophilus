@@ -57,10 +57,10 @@ spliced+committed). s10-12 next, s13 deferred, s14-28 unstaged. Close-out + full
   Infections + t14 Back & Lower Limb Pain CLOSED 2026-09-17, 450->493, 0 folds**, commits
   `45aa11a` staging+drafts, `b34c56c` splice, `c069c54` journal). Close-out:
   `progress\resume-neuro.md` "Topic 13/14". **Neuro Endpoint — separate 2190-page book, started
-  2026-09-17.** Ch.1 Loc CLOSED 17 live, 493->510 (`09af8b4`/`eb97183`/`0da6fa5`). ✅ **Ch.2 Stroke
-  CLOSED 2026-09-18** — 23 live (`npep-stroke-1..12,14..24`), 510->533 (`f32d831` staging,
-  `e705e43` splice). Close-out: `progress\resume-neuro-endpoint.md` §6. Next: Ch.3 Epilepsy,
-  printed pp.112-199. Model Final Exams pp.1424-2189 stay DEFERRED.
+  2026-09-17.** Ch.1 Loc 17 live, Ch.2 Stroke 23 (`e705e43`), ✅ **Ch.3 Epilepsy CLOSED 2026-09-18**
+  — 38 live (`npep-epilepsy-1..9,11..28,30..40`), 533->571 (`827b422` staging, `9d25bb4` splice).
+  Close-out: `progress\resume-neuro-endpoint.md` §7. Next: Ch.4 Headache, printed pp.200-282.
+  Model Final Exams pp.1424-2189 stay DEFERRED.
   ⚠️⚠️ **RUNNING HEADER LAGS TRUE SECTION ~1 PAGE** — boxed section-title banner + question
   content are the only reliable markers, still applies to T13's own boundary. ⚠️ **Renders die
   with the scratchpad.**
