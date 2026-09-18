@@ -1,436 +1,211 @@
 {
-  "source_pdf": "D:/claude os/Medical school/Herophilus/Semester 8/Opthalmo/Questions/Opthalmology endpoint.pdf",
+  "source_pdf": "D:\\claude os\\Medical school\\Herophilus\\Semester 8\\Opthalmo\\Questions\\Opthalmology endpoint.pdf",
   "requested_range": [
-    718,
-    787
+    1066,
+    1097
   ],
   "model": "gemini/gemini-3.1-flash-lite",
-  "start_time": "2026-09-16T23:29:30.115Z",
-  "end_time": "2026-09-16T23:45:04.676Z",
-  "pages_completed": 70,
-  "parse_errors": 6,
-  "http_errors": 6,
+  "start_time": "2026-09-18T17:05:48.110Z",
+  "end_time": "2026-09-18T17:08:49.758Z",
+  "pages_completed": 32,
+  "parse_errors": 24,
+  "http_errors": 24,
   "stopped_by_429": false,
   "pages": [
     {
-      "page": 718,
-      "image": "s10-render\\p-0718.png",
+      "page": 1066,
+      "image": "r\\p-1066.png",
       "status": 200,
       "parse_error": false
     },
     {
-      "page": 719,
-      "image": "s10-render\\p-0719.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 720,
-      "image": "s10-render\\p-0720.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 721,
-      "image": "s10-render\\p-0721.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 722,
-      "image": "s10-render\\p-0722.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 723,
-      "image": "s10-render\\p-0723.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 724,
-      "image": "s10-render\\p-0724.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 725,
-      "image": "s10-render\\p-0725.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 726,
-      "image": "s10-render\\p-0726.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 727,
-      "image": "s10-render\\p-0727.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 728,
-      "image": "s10-render\\p-0728.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 729,
-      "image": "s10-render\\p-0729.png",
-      "status": 504,
+      "page": 1067,
+      "image": "r\\p-1067.png",
+      "status": 503,
       "parse_error": true
     },
     {
-      "page": 730,
-      "image": "s10-render\\p-0730.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 731,
-      "image": "s10-render\\p-0731.png",
-      "status": 504,
+      "page": 1068,
+      "image": "r\\p-1068.png",
+      "status": 503,
       "parse_error": true
     },
     {
-      "page": 732,
-      "image": "s10-render\\p-0732.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 733,
-      "image": "s10-render\\p-0733.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 734,
-      "image": "s10-render\\p-0734.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 735,
-      "image": "s10-render\\p-0735.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 736,
-      "image": "s10-render\\p-0736.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 737,
-      "image": "s10-render\\p-0737.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 738,
-      "image": "s10-render\\p-0738.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 739,
-      "image": "s10-render\\p-0739.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 740,
-      "image": "s10-render\\p-0740.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 741,
-      "image": "s10-render\\p-0741.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 742,
-      "image": "s10-render\\p-0742.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 743,
-      "image": "s10-render\\p-0743.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 744,
-      "image": "s10-render\\p-0744.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 745,
-      "image": "s10-render\\p-0745.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 746,
-      "image": "s10-render\\p-0746.png",
-      "status": 400,
+      "page": 1069,
+      "image": "r\\p-1069.png",
+      "status": 503,
       "parse_error": true
     },
     {
-      "page": 747,
-      "image": "s10-render\\p-0747.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 748,
-      "image": "s10-render\\p-0748.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 749,
-      "image": "s10-render\\p-0749.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 750,
-      "image": "s10-render\\p-0750.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 751,
-      "image": "s10-render\\p-0751.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 752,
-      "image": "s10-render\\p-0752.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 753,
-      "image": "s10-render\\p-0753.png",
-      "status": 504,
+      "page": 1070,
+      "image": "r\\p-1070.png",
+      "status": 503,
       "parse_error": true
     },
     {
-      "page": 754,
-      "image": "s10-render\\p-0754.png",
+      "page": 1071,
+      "image": "r\\p-1071.png",
       "status": 200,
       "parse_error": false
     },
     {
-      "page": 755,
-      "image": "s10-render\\p-0755.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 756,
-      "image": "s10-render\\p-0756.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 757,
-      "image": "s10-render\\p-0757.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 758,
-      "image": "s10-render\\p-0758.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 759,
-      "image": "s10-render\\p-0759.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 760,
-      "image": "s10-render\\p-0760.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 761,
-      "image": "s10-render\\p-0761.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 762,
-      "image": "s10-render\\p-0762.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 763,
-      "image": "s10-render\\p-0763.png",
-      "status": 504,
+      "page": 1072,
+      "image": "r\\p-1072.png",
+      "status": 503,
       "parse_error": true
     },
     {
-      "page": 764,
-      "image": "s10-render\\p-0764.png",
+      "page": 1073,
+      "image": "r\\p-1073.png",
       "status": 200,
       "parse_error": false
     },
     {
-      "page": 765,
-      "image": "s10-render\\p-0765.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 766,
-      "image": "s10-render\\p-0766.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 767,
-      "image": "s10-render\\p-0767.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 768,
-      "image": "s10-render\\p-0768.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 769,
-      "image": "s10-render\\p-0769.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 770,
-      "image": "s10-render\\p-0770.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 771,
-      "image": "s10-render\\p-0771.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 772,
-      "image": "s10-render\\p-0772.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 773,
-      "image": "s10-render\\p-0773.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 774,
-      "image": "s10-render\\p-0774.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 775,
-      "image": "s10-render\\p-0775.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 776,
-      "image": "s10-render\\p-0776.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 777,
-      "image": "s10-render\\p-0777.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 778,
-      "image": "s10-render\\p-0778.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 779,
-      "image": "s10-render\\p-0779.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 780,
-      "image": "s10-render\\p-0780.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 781,
-      "image": "s10-render\\p-0781.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 782,
-      "image": "s10-render\\p-0782.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 783,
-      "image": "s10-render\\p-0783.png",
-      "status": 200,
-      "parse_error": false
-    },
-    {
-      "page": 784,
-      "image": "s10-render\\p-0784.png",
-      "status": 504,
+      "page": 1074,
+      "image": "r\\p-1074.png",
+      "status": 503,
       "parse_error": true
     },
     {
-      "page": 785,
-      "image": "s10-render\\p-0785.png",
+      "page": 1075,
+      "image": "r\\p-1075.png",
       "status": 200,
       "parse_error": false
     },
     {
-      "page": 786,
-      "image": "s10-render\\p-0786.png",
+      "page": 1076,
+      "image": "r\\p-1076.png",
+      "status": 503,
+      "parse_error": true
+    },
+    {
+      "page": 1077,
+      "image": "r\\p-1077.png",
       "status": 200,
       "parse_error": false
     },
     {
-      "page": 787,
-      "image": "s10-render\\p-0787.png",
+      "page": 1078,
+      "image": "r\\p-1078.png",
+      "status": 503,
+      "parse_error": true
+    },
+    {
+      "page": 1079,
+      "image": "r\\p-1079.png",
+      "status": 503,
+      "parse_error": true
+    },
+    {
+      "page": 1080,
+      "image": "r\\p-1080.png",
+      "status": 503,
+      "parse_error": true
+    },
+    {
+      "page": 1081,
+      "image": "r\\p-1081.png",
+      "status": 503,
+      "parse_error": true
+    },
+    {
+      "page": 1082,
+      "image": "r\\p-1082.png",
+      "status": 503,
+      "parse_error": true
+    },
+    {
+      "page": 1083,
+      "image": "r\\p-1083.png",
+      "status": 503,
+      "parse_error": true
+    },
+    {
+      "page": 1084,
+      "image": "r\\p-1084.png",
       "status": 200,
       "parse_error": false
+    },
+    {
+      "page": 1085,
+      "image": "r\\p-1085.png",
+      "status": 503,
+      "parse_error": true
+    },
+    {
+      "page": 1086,
+      "image": "r\\p-1086.png",
+      "status": 503,
+      "parse_error": true
+    },
+    {
+      "page": 1087,
+      "image": "r\\p-1087.png",
+      "status": 503,
+      "parse_error": true
+    },
+    {
+      "page": 1088,
+      "image": "r\\p-1088.png",
+      "status": 503,
+      "parse_error": true
+    },
+    {
+      "page": 1089,
+      "image": "r\\p-1089.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1090,
+      "image": "r\\p-1090.png",
+      "status": 503,
+      "parse_error": true
+    },
+    {
+      "page": 1091,
+      "image": "r\\p-1091.png",
+      "status": 503,
+      "parse_error": true
+    },
+    {
+      "page": 1092,
+      "image": "r\\p-1092.png",
+      "status": 503,
+      "parse_error": true
+    },
+    {
+      "page": 1093,
+      "image": "r\\p-1093.png",
+      "status": 503,
+      "parse_error": true
+    },
+    {
+      "page": 1094,
+      "image": "r\\p-1094.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1095,
+      "image": "r\\p-1095.png",
+      "status": 503,
+      "parse_error": true
+    },
+    {
+      "page": 1096,
+      "image": "r\\p-1096.png",
+      "status": 503,
+      "parse_error": true
+    },
+    {
+      "page": 1097,
+      "image": "r\\p-1097.png",
+      "status": 503,
+      "parse_error": true
     }
-  ]
+  ],
+  "provenance_note": "First pass 2026-09-18: 8/32 pages OK, 24 pages returned 503/504 (gateway shared with another chat). All 24 recovered by per-page retries (retry-stage.mjs, 15 s x attempt backoff); final parse errors 0, final page count 32/32. Vision read then re-checked page by page against the rendered images by a Sonnet subagent (pdf 1069, 1072, 1076-1097): 11/11 keys agree; three staging defects repaired in this file (figure flags on p1069 table and p1079 text box set false; leading A./B. letter prefixes stripped from options on p1079 and p1090; p1085 stem taken from p1084 because the printed glyph in managemer?t is undecidable 1-vs-l).",
+  "final_parse_errors": 0,
+  "final_pages_completed": 32
 }
