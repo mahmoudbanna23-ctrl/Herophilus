@@ -1,0 +1,16 @@
+{
+  "source_pdf": "D:\\claude os\\Medical school\\Herophilus\\Semester 8\\Opthalmo\\Questions\\Opthalmology endpoint.pdf",
+  "requested_range": [
+    788,
+    849
+  ],
+  "model": "gemini/gemini-3.1-flash-lite",
+  "route": "OmniRoute gateway, tools/omniroute stage-pages.mjs + backoff retry (retry.mjs, 5 s doubling to 60 s, 6 attempts per page)",
+  "pages_completed": 62,
+  "parse_errors": 23,
+  "http_errors": 23,
+  "stopped_by_429": false,
+  "final_parse_errors": 0,
+  "final_pages_completed": 62,
+  "provenance_note": "First pass 2026-09-18: 39/62 pages OK, 23 returned 503/504 (gateway admission capacity). All recovered by per-page retries across two runs (826 and 840 gave up after 6 attempts on run 1, recovered on run 2). Vision read then normalised (model format drift repaired in shape only: printed_q with trailing text, options as a single string, letter prefixes on options) and re-checked page by page against the rendered images by two Sonnet subagents (788-820 and 821-849): all 26 keys agree with the images. Defects repaired in this file: p.795 stem nulled (theory slide), p.794 box_printed false, figure null -> false on 792/799/801/807/809/820/830/833, p.835 stem \"uveo scleral\" as printed, p.839 leading \"20. \" stripped, p.848 page_type question_unmarked. Book quirks kept as printed: options B/D on 834/835 are labelled \"8.\" and \"0.\" (option text 10/20/30/50%); question number 20 is printed twice (836/837 with 4 options key C; 838/839 with 5 options key B, stem opens \"He complains...\" with no antecedent)."
+}
