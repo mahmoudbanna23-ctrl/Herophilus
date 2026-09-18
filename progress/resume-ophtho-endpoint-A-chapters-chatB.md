@@ -89,14 +89,26 @@ Historical defect list at the moment the step budget was first reached (all now 
 6. `ophep-squint-9` reads correctly (key C kept; the book's intermittent-heterotropia sentence is quoted in the note).
    Sources say only "Heterotropia is another term for strabismus" (constant); fine.
 
-Then, in order: independent check by a different house (opencode drafted, so `vibe` or a refuter run; NOT opencode
-`auto/coding`), Claude reads the final text, `git status --short app/data/questions.ophtho.ep.js` must be clean,
-`node tools/bank-harness/splice-oph-ep.js --part 1 15 --write` (expect 258 -> 267 if chat A has spliced nothing in between;
-otherwise re-measure), add the reprint citations (pdf p.1078 and p.1088) to the `source` of live
-`ophep-optics-refraction-9` in the same commit, `node tools\boot-check\boot-check.js` (expect 4049/81/4/153, 0 errors), commit
-with `git commit -F <msgfile> -- <paths>`. Then s17 (1150-1181), s18 (1182-1244), s19 (1245-1331), s21 (1374-1390): stage with
-`Tools/omniroute/stage-pages.mjs` (PATH must carry the Poppler `bin`, see the brief), retry 503/504 with `retry-stage.mjs`
-(scratchpad, may be gone: it is a per-page retry, 15 s x attempt), Sonnet subagent image re-read before committing staging.
+## RESUME HERE (chat B, written 2026-09-19 at /prep)
+
+s15 is DONE (`c53e2db`). **Next: s17 Malignancies of Eye and Adnexa, pdf 1150-1181** (chapter `op-onc`, prefix
+`ophep-malignancies-eye-adnexa-`), then s18 (1182-1244, `op-trauma`), s19 (1245-1331, `op-systemic`), s21 (1374-1390,
+`op-appear`), one at a time, each closed before the next. Nothing of s17/s18/s19/s21 is staged. s13 and s22-28 stay untouched.
+Live endpoint count at HEAD when written: 290 (chat A spliced s11, 267 -> 290, `e4dee6f`); **re-measure by loading the array
+before any splice, and require `git status --short app/data/questions.ophtho.ep.js` clean.** `sec-oph.js` row 15 is already
+final (`folded: [2, 7]`); add only my own row's `folded` when a section has folds.
+
+Per section, unchanged: stage with `Tools/omniroute/stage-pages.mjs` (gateway `gemini/gemini-3.1-flash-lite`; PATH must carry
+the Poppler `bin`, see the brief; 429 = stop and report; 503/504 = per-page retry, 15 s x attempt) -> normalise -> Sonnet
+subagent re-reads the page images (expect the three defect classes above) -> commit `staging.json` + `_manifest.json` together
+-> sweep (`sweep-oph.js`, against the live bank and other staging) -> brief -> `array.js` (script it if it is a pure transform,
+as for s15) -> `draft.js` via `opencode run -m omniroute/auto/coding` (background, log to the scratchpad; never pick another
+opencode model without asking) -> `node tools/bank-harness/val-oph-ep.js --part 1 <N>` -> independent refuter run (different
+house from the drafter) -> Claude adjudicates keys and does the final medical read -> splice, boot-check (4049/81/4/153, 0
+errors) -> commit with `git commit -F <msgfile> -- <explicit paths>` (`git add --` untracked files first).
+Codex is out until 2026-09-20 18:21; after that Codex+OmniRoute is the default worker again.
+**Put the shared-menu rule and the "grep before calling a fact invented" lesson (s15 CLOSED block) in every draft brief.**
+Ask the drafter to write the tag as `(not taken from the course material)` only on claims the book and lectures do not state.
 
 Scratchpad scripts used (session scratchpad, may not survive): `norm-staging.mjs`, `retry-stage.mjs`, `sweep-oph.js`
 (usage `node sweep-oph.js <x.staging.json> [other-staging.json ...]`), `gen-array-s15.js`. If gone, rebuild from these notes:
