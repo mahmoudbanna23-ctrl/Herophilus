@@ -24,7 +24,10 @@ const SEC_P1 = {
   // One real within-section fold, dropped at drafting: n15 (marked p.769, unboxed exact
   // duplicate of n12's stem/options/key) into n12 (marked p.763, has the boxed explanation).
   10: { prefix: 'ophep-uveal-tract-', file: 'oph-ep-p1-s10-uveal-tract.array.js', svar: 'OPHEP_S10_STAGED', draft: 'oph-ep-p1-s10-uveal-tract.draft', chapter: 'op-uvea', pages: [718, 787], ans: null, folded: [15] },
-  11: { prefix: 'ophep-glaucoma-', file: 'oph-ep-p1-s11-glaucoma.array.js', svar: 'OPHEP_S11_STAGED', draft: 'oph-ep-p1-s11-glaucoma.draft', chapter: 'op-glauc', pages: [788, 849], ans: null },
+  // s11: printed_q 20 is printed twice (marked p.837 = n20, marked p.839 = n21), resolved by position.
+  // n14 (marked p.825) is an exact cross-chapter reprint of live ophep-cornea-16; n18 (p.833) is an exact
+  // reprint of n12 (p.821); n19 (p.835) is an exact reprint of live ophep-uveal-tract-9 -- all folded, none takes alsoIn.
+  11: { prefix: 'ophep-glaucoma-', file: 'oph-ep-p1-s11-glaucoma.array.js', svar: 'OPHEP_S11_STAGED', draft: 'oph-ep-p1-s11-glaucoma.draft', chapter: 'op-glauc', pages: [788, 849], ans: null, folded: [14, 18, 19] },
   12: { prefix: 'ophep-vitreous-', file: 'oph-ep-p1-s12-vitreous.array.js', svar: 'OPHEP_S12_STAGED', draft: 'oph-ep-p1-s12-vitreous.draft', chapter: null, pages: [850, 879], ans: null }, // no chapter exists for Vitreous; one must be added to modules.js
   13: { prefix: 'ophep-retina-', file: 'oph-ep-p1-s13-retina.array.js', svar: 'OPHEP_S13_STAGED', draft: 'oph-ep-p1-s13-retina.draft', chapter: 'op-ret', pages: [880, 981], ans: null },
   14: { prefix: 'ophep-neuro-ophthalmology-', file: 'oph-ep-p1-s14-neuro-ophthalmology.array.js', svar: 'OPHEP_S14_STAGED', draft: 'oph-ep-p1-s14-neuro-ophthalmology.draft', chapter: 'op-neuro', pages: [982, 1065], ans: null },

@@ -895,3 +895,127 @@ the fifth block above is DEFERRED until then — do not resume s13 staging next.
   (array.js then draft.js as two separate rung-3 calls, per the lesson learned this tick) ->
   `val-oph-ep.js --part 1 11` -> independent different-house check -> splice -> boot-check -> commit.
 - Session hit its ~80-step budget on this tick -- stopping here, resume from this block.
+
+## 2026-09-17, s11 Glaucoma staging -- 3 dispatch attempts, none has produced output yet
+
+Brief written: `content/ophtho/qb-pages/oph-ep-s11-stage.brief.md` (pages 788-849, schema copied
+byte-for-byte from s10's staging.json). Write grant: new `oph-ep-p1-s11-glaucoma.staging.json` +
+overwrite `_manifest.json`. Three attempts so far, in order:
+
+1. **opencode `auto/coding`** (default rung 3) -- retry-looped 3x across 2 pages on `codex exec -i`,
+   which is dead (usage limit until 2026-09-20 18:21, confirmed this tick). Stalled asking a
+   clarifying question instead of dropping to the next vision-ladder rung as instructed. Exit 0,
+   zero output. Log: scratchpad `s11-stage-dispatch.log`.
+2. **opencode pinned to `omniroute/auto/vision`**, explicit override telling it Codex is dead and
+   not to call it. Rendered all 62 pages fine via `pdftoppm.exe` (confirms the Poppler path below is
+   correct). Then tried to "look at" the PNGs itself through its own Read tool and got confused about
+   whether it actually has vision input ("Wait, I am the model auto/vision, maybe I misidentified my
+   capability?") -- log ends there, zero pages extracted, zero output. This is a REAL rung failure,
+   not a liveness/pong issue -- gateway `auto/vision` pongs fine but can't ingest page images through
+   opencode's own Read path for this kind of multi-step task. Log: scratchpad `s11-stage-dispatch2.log`.
+3. **opencode `auto/coding` + explicit per-page Gemini-by-key override** -- told it NOT to self-read
+   images, instead shell out per page to `node tools/gemini-vision/ask_gemini_multi.js <png> "<prompt
+   asking for raw JSON matching the brief's schema>"` (script confirmed working: takes N image paths +
+   a trailing prompt, calls `gemini-3.6-flash` directly by `GEMINI_API_KEY` -- which IS set in env,
+   53 chars -- prints response text to stdout). Override prompt saved at scratchpad
+   `s11-stage-prompt3.txt`.
+   - First sub-attempt died on my own mistake: passed `--max-turns 40` to `opencode run`, which is
+     not a real flag (confirmed via its own `--help` output) -- printed help, exit 1, zero work. Saved
+     as a standing memory: `no-turn-limit-flags-on-cli-runners.md` (opencode run and vibe both have
+     no turn/timeout flag -- check `--help` before adding one, put any budget in the prompt text
+     instead).
+   - Second sub-attempt (flag removed) was **still running, task id `b6vqm6xdm`**, log scratchpad
+     `s11-stage-dispatch3.log`, when this session hit its step budget. Last read: 17 lines, had found
+     the source PDF, then fumbled locating Poppler with Windows `dir /s /b *Poppler*` syntax inside
+     the posix bash tool (wrong syntax for that shell, path got mangled to `C:UsersAlfa388...` with no
+     separators) -- not yet errored out, just slow. Known-good Poppler path (used successfully by
+     attempt 2): `C:\Users\Alfa388\AppData\Local\Microsoft\WinGet\Packages\oschwartz10612.Poppler_Microsoft.Winget.Source_8wekyb3d8bbwe\poppler-25.07.0\Library\bin\pdftoppm.exe`.
+
+As of the 2026-09-17 hand-off: `content/ophtho/qb-pages/oph-ep-p1-s11-glaucoma.staging.json` did
+not exist yet; `_manifest.json` still held s10's old content.
+
+## 2026-09-18, s11 Glaucoma staging -- attempts 4-7, still no staging.json
+
+Task `b6vqm6xdm` (attempt 3) was found dead on resume: 17 lines in, fumbled a Windows `dir` syntax
+looking for Poppler inside the posix bash tool, then produced nothing for ~83 min (confirmed by
+epoch-diff). Killed via `TaskStop`.
+
+4. **Poppler path hardcoded into `s11-stage-prompt3.txt`** (added an override so the worker uses the
+   known-good path directly, never searches), redispatched via `omniroute/auto/coding` as task
+   `b44r78lxi`. Session ended before it was checked; on resume it showed `status: stopped`, no
+   staging.json, no output file worth reading -- dead end, nothing to salvage.
+5. **`openrouter/poolside/laguna-s-2.1:free` direct (no omniroute prefix)** -- dispatched because the
+   omniroute gateway itself was unreachable this session start (`fetch failed`, needs
+   `Desktop\start-omniroute.bat`). Actually made real progress (reached page 788, valid schema JSON,
+   was mid-refinement of its own extraction prompt) before two stacked failures: the direct
+   `GEMINI_API_KEY` call (via `ask_gemini_multi.js`) hit a **429 quota-exceeded on
+   `generate_content_free_tier_requests`, limit 20** -- a daily cap, not a retry window, confirmed
+   exhausted for the day -- and separately the `laguna` free lane itself got rate-limited by
+   OpenRouter mid-run. Log: scratchpad `s11-stage-dispatch5.log`.
+6. **`openrouter/~google/gemini-flash-latest`** (real vision, different quota pool than the capped
+   `GEMINI_API_KEY` -- reads PNGs itself via its own Read tool, no external script). Prompt: scratchpad
+   `s11-stage-prompt5.txt`. Failed immediately: OpenRouter account is out of credits for this paid
+   model (`requested up to 32000 tokens, but can only afford 5929`) -- a billing wall, not a quota
+   window. Log: scratchpad `s11-stage-dispatch6.log`.
+7. **User started the omniroute gateway** (`Desktop\start-omniroute.bat`). Redispatched via
+   `omniroute/auto/vision` -- same combo as attempt 2, but this time explicitly told it has real
+   vision and must trust it (attempt 2's failure was self-doubt about its own capability, not a
+   proven incapability) and to skip any external script. Prompt: scratchpad `s11-stage-prompt6.txt`.
+   **FAILED** -- task `bu2hneisy` exited 1. Log shows the gateway routed `auto/vision` to
+   `gemini/gemini-2.5-flash` and `gemini/gemini-2.5-flash-lite`, both **retired**: `404 model
+   models/gemini-2.5-flash is no longer available to new users... use models/gemini-3.6-flash`.
+   This is a **gateway-side model-mapping bug**, not a prompt problem -- `auto/vision`'s config
+   points at dead model ids. Not fixable from a dispatch prompt; needs the gateway's own model
+   config updated (or route around `auto/vision` entirely). Log: scratchpad `s11-stage-dispatch7.log`.
+
+Rungs confirmed DEAD for now, do not retry blind: Codex (quota until 2026-09-20 18:21) · direct
+`GEMINI_API_KEY` (20/day free cap, exhausted) · OpenRouter paid models incl. `gemini-flash-latest`
+(no credits -- would need the user to top up, ask first) · gateway `auto/vision` (maps to retired
+Gemini model ids, 404s every call). Known-good Poppler path (needed by every attempt's render
+step): `C:\Users\Alfa388\AppData\Local\Microsoft\WinGet\Packages\oschwartz10612.Poppler_Microsoft.Winget.Source_8wekyb3d8bbwe\poppler-25.07.0\Library\bin\pdftoppm.exe`.
+
+**Next session, four untried options, in order of likely least friction:**
+1. Gateway is confirmed reachable now -- try a different gateway combo than `auto/vision` (e.g.
+   `auto/coding` paired with an explicit per-page Gemini-by-key-style script, but pointed at a model
+   id that still exists -- `gemini-3.6-flash` or `gemini-3.5-flash-lite`, per the 404 message's own
+   suggested replacements).
+2. Ask the user whether the gateway's `auto/vision` mapping can be fixed/updated (their
+   infrastructure, `Desktop\start-omniroute.bat` area) -- would fix this rung for every future
+   vision task, not just s11.
+3. Ask the user to top up OpenRouter credits -- `gemini-flash-latest` structurally worked (attempt 6),
+   just needs budget.
+4. Claude subagent, the vision ladder's explicit last resort -- works immediately, no external
+   dependency, not yet used for s11.
+
+## 2026-09-18, s11 Glaucoma CLOSED -- 23 live, `questions.ophtho.ep.js` 267 -> 290
+
+Chapter `op-glauc`, source `Opthalmology endpoint.pdf` pdf 788-849, 26 staged rows, 23 drafted.
+
+- Staging landed after the attempts above: `stage-pages.mjs` plus a backoff `retry.mjs` through the gateway.
+  `auto/vision` stayed broken and the omniroute MCP tools hung. `staging.json` committed in `04442c0`.
+- Numbering is by unmarked-page position, n1..n26. printed_q 20 is printed twice (marked p.837 = n20,
+  marked p.839 = n21); printed_q 21-25 are n22-n26. Marked page = unmarked page + 1.
+- Six-stage sweep run with the new `tools/bank-harness/sweep-oph-staged.js` (reprints vs the live EP bank,
+  House and the section itself). Three within-bank folds, none takes `alsoIn`: n14 into live
+  `ophep-cornea-16`, n18 into n12, n19 into live `ophep-uveal-tract-9`. Registered in `sec-oph.js` row 11.
+  Same-question House matches and menu-only pairs are in `oph-ep-p1-s11-glaucoma.house-collisions.md`;
+  the cross-bank `alsoIn` merges wait for the end of the ophtho endpoint stream.
+- n13 and n20 share an answer menu; n20 carries the anchor sentence pointing at `ophep-glaucoma-13`.
+- Draft method: array generated mechanically from staging; explanation bodies written by gateway
+  `gemini/gemini-3.1-flash-lite` (`reasoning_effort:'low'`, `max_tokens:6000` -- without the low setting the
+  reasoning tokens exhaust the budget or the gateway answers 504), the script owning id, stem, options,
+  answer, source and markers so byte-identity with the array cannot drift. The model wrote body and
+  objective only.
+- Checks: `val-oph-ep.js --part 1 11` passed; full medical read by Claude against L11/L12 and the printed
+  boxes (fixed a wrong glycerine/mannitol rationale in n20, a "sixth decade" claim for a 63-year-old in n24,
+  tags on facts the boxes already print, and source-reference wording); independent Sonnet refuter run found
+  seven further points (stem misstatements in n16/n23/n26, two untagged load-bearing claims in n13/n20/n21,
+  one imprecise sentence in n11), all fixed and re-validated.
+- n13 records a key tension without moving the key: the stem is diabetic with lower limb oedema and
+  dyspnoea, the printed box lists mannitol as contraindicated in cardiac patients and glycerine in diabetics,
+  and the bank's printed key is mannitol.
+- Live-entry defect found, not touched: `ophep-cornea-16` (section 8) carries a leaked "16. " prefix in `stem`.
+- Boot check: `QUESTIONS 4049`, `THEORY 81`, 0 console errors (ophtho and neuropsych are locked at the
+  aggregator, so the app total did not move).
+- Next: s12 Vitreous (pdf 850-879, no chapter exists in `modules.js`), s13 Retina deferred, s14 onward
+  unstaged; s15 Squint already spliced by another chat.
