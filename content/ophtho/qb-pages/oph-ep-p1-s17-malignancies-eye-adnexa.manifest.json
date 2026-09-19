@@ -1,0 +1,14 @@
+{
+  "source_pdf": "D:claude osMedical schoolHerophilusSemester 8OpthalmoQuestionsOpthalmology endpoint.pdf",
+  "requested_range": [
+    1150,
+    1181
+  ],
+  "model": "gemini/gemini-3.1-flash-lite (10 pages: 1150-1155, 1157, 1158, 1160, 1161), gateway auto/vision = gemini-3.7-flash (4 pages: 1156, 1159, 1162, 1163), openrouter/google/gemini-3.1-flash-lite (18 pages: 1164-1181)",
+  "route": "OmniRoute gateway, tools/omniroute stage-pages.mjs for 1150-1161, then a per-page retry script (backoff 15 s x attempt, 6 attempts; gateway model_cooldown 429 waited out up to 10 times)",
+  "pages_completed": 32,
+  "final_parse_errors": 0,
+  "final_pages_completed": 32,
+  "stopped_by_429": false,
+  "provenance_note": "First pass 2026-09-19 on gemini/gemini-3.1-flash-lite: 503s on 1156/1159, and the 429 at 1162 stopped stage-pages.mjs after 12 pages (1156/1159 were then read by auto/vision); a gateway 429 (model_cooldown, upstream credential cooling) from p.1162 renewed on every retry across ~1 h, on gemini-3.1-flash-lite and on auto/vision (gemini-3.7-flash) alike, and hit the 10-cooldown cap at p.1164 (stop and report). Pages 1164-1181 were then read on the OpenRouter route of the same model family (openrouter/google/gemini-3.1-flash-lite, separate credential; response-cost header read 0). p.1175 returned a deterministic gateway 400 \"payload is not base64-encoded data\" on the original PNG (base64 checked valid); re-saving the PNG losslessly through System.Drawing let it through. Vision read then normalised in shape only (printed_q \"3.\" -> \"3\", letter prefixes on options, leading question numbers on stems, options as a string) and re-checked page by page against the rendered images by two Sonnet subagents (1150-1163 and 1164-1181, a different house from the Gemini reader). Keys confirmed against the images: q1 c, q2 a, q3 D, q4 D, q5 B, q6 C, q7 D, q8 C, q9 C, q10 B, q11 B, q12 D. Defects repaired in this file: p.1152 printed_page \"null\" -> null; p.1154 and p.1156 are theory slides, their text moved to theory_text, box_printed false, stem/options/explanation null; p.1159 stem hard line break -> space; p.1165 explanation hard line break -> space; numeric_note completed on 1169/1172. Book quirks kept as printed: q9 (1174/1175) prints option letters A, B, C, E with no D (the fourth option, Choroidal melanoma, is labelled E; key C sits before the gap so key_index 2 is unaffected). Theory pages 1150-1153 and 1155 carry no transcribed text; theory content is in the cached lecture text. Only q1-q4 (1158-1165) print an explanation box; q5-q12 print none."
+}
