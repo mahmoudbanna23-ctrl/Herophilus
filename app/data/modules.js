@@ -147,6 +147,10 @@ const MODULES = [
       ['op-ret-dr','Diabetic retinopathy and the macula'],
       ['op-ret-vasc','Retinal vascular disorders'],
       ['op-ret','Retinal detachment'],
+      /* Added 2026-09-19 (owner's choice): the ophtho endpoint book teaches
+         the vitreous as its own section (pdf 850-879) and no lecture chapter
+         covers it, so endpoint section 12 files here. */
+      ['op-vitreous','Vitreous'],
       /* Split 2026-08-18, forecast BEFORE writing, on the BOOK's own four
          Roman-numbered parts (ch.14, printed 178-195). Written as one chapter
          it measured 28.5 estimated pages - the module's largest by far - and
