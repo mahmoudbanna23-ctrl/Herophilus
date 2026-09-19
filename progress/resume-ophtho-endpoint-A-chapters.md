@@ -1019,3 +1019,39 @@ Chapter `op-glauc`, source `Opthalmology endpoint.pdf` pdf 788-849, 26 staged ro
   aggregator, so the app total did not move).
 - Next: s12 Vitreous (pdf 850-879, no chapter exists in `modules.js`), s13 Retina deferred, s14 onward
   unstaged; s15 Squint already spliced by another chat.
+
+## 2026-09-19, s12 Vitreous CLOSED -- 11 live, `questions.ophtho.ep.js` 302 -> 313
+
+- Commits: `ef1f814` (32 leaked question-number stem prefixes stripped from live entries, the `ophep-cornea-16`
+  defect logged above widened to every affected stem), `ac6153e` (new chapter `op-vitreous` "Vitreous" added to
+  `modules.js` after `op-ret`, owner-approved), `5031ebf` (staging, manifest, house-collisions, array, draft,
+  `sec-oph.js` row 12), `857e08c` (splice). Chapters now 154.
+- Section layout: pdf 850-857 lecture slides, p.857 a "Questions" divider, then 11 questions as unmarked/marked
+  pairs, q1 = pp.858/859 through q11 = pp.878/879. Only q1-q4 print an explanation box (keys c/a/a/c);
+  q5-q11 print none. Options are lowercase a-d on pp.858-863 and uppercase A-D from p.864; q9 and q11 print five
+  options. No figures.
+- Staging: gateway `gemini/gemini-3.1-flash-lite` with `gemini/gemini-3.5-flash-lite` as rotation fallback,
+  three runs because Gemini credential cooldown 429s starved 17 of 30 pages twice; checked page by page against
+  the rendered images by two Sonnet subagents, 0 diffs in page type, stem, options, keys or boxes. Two
+  `numeric_note` fields repaired (the "56" of "56-year-old" was missing on pp.868/869).
+- Sweep: no within-bank fold. Seven questions also print in the House bank (n4-n10 = `opmcq-c12-7, -1, -4, -16,
+  -17, -15, -10`, all same key); n1, n3 and n11 have no House counterpart. Logged in
+  `oph-ep-p1-s12-vitreous.house-collisions.md`; the `alsoIn` merges wait for the end of the stream.
+- Draft: array generated mechanically from staging; gateway wrote body and objective only. Claude's medical
+  read then rewrote the bodies of q5-q10 by hand (the model had padded them with untagged outside claims,
+  one wrong "mutually exclusive" line in q8, a "pathognomonic" overclaim in q6, drafting-process wording in q9)
+  and trimmed q1, q3, q11. An independent Sonnet refuter confirmed keys, options and boxes for all 11, then
+  found two lecture misattributions (q6 cited the sickle-cell staging slide for diabetic disease, q5 tagged a
+  fact the Clinical ocular examination and Cataract II lectures do state), wrong in-text box pages in q7, and
+  four untagged "most commonly" claims in q8 and q10 -- all fixed and re-validated before the splice.
+- Q7 option A prints a capital I where the other options print a slash ("retinal tears I detachment", p.870);
+  transcribed as printed and noted in the manifest.
+- Checks: `val-oph-ep.js --part 1 12` ALL CHECKS PASSED (one benign near-identical-menu warning, n5/n6, where the
+  differing option changes what is asked); splice exit 0, 0 holes; boot-check `QUESTIONS 4049`, `THEORY 81`,
+  chapters 154, 0 console errors (ophtho stays locked at the aggregator).
+- The lecture caches carry no vitreous composition (98% water etc.) and no PVD or Weiss ring slide, so those
+  facts are tagged "not taken from the course material" in q4, q7 and q10. The PL-or-worse vitrectomy
+  threshold in q9 is also outside the lectures (Cataract II says only "Severe: vitrectomy").
+- Next: s14 Neuro-ophthalmology (pdf 982-1065, chapter `op-neuro`); s13 Retina deferred; s16 Pediatric
+  Ophthalmology needs a chapter added to `modules.js`; s17 was closed by another chat (302 live before this
+  section), and that chat's pointer moves to s18.

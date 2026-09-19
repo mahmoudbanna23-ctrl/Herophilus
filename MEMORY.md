@@ -37,10 +37,10 @@ Where this file and the archive disagree, this file wins. ⚠️ **Before openin
 boots; all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **The ophtho
 ENDPOINT is a separate book — 2,442 pp / 293 MB; do NOT split the PDF, split the page RANGE.**
 Printed page = PDF **+1** past an unpinned flip in PDF 2151–2170. ✅ **GATE 0 CLOSED 2026-09-08**,
-OPH-B unblocked. **290 live, s1-11 + s15 done** (✅ **s11 Glaucoma CLOSED 2026-09-18, 267->290,
-`e4dee6f`**, medical read + refuter + boot-check clean 4049/81; s15 Squint 9, `c53e2db`). **Next: s12
-Vitreous, pdf 850-879, NO chapter in `modules.js` (add one); then s14; s16+ unstaged; s13 deferred.**
-Detail: `progress\resume-ophtho-endpoint-A-chapters.md` tail (s11 entry) + archive `## Pruned from
+OPH-B unblocked. **313 live, s1-12 + s15 + s17 done** (✅ **s12 Vitreous CLOSED 2026-09-19, 302->313,
+`857e08c`**, new chapter `op-vitreous`, chapters 154, boot-check clean 4049/81; s17 Malignancies 12,
+`4795291`). **Next: s14 Neuro-ophthalmology pdf 982-1065; s18 (chat B); s16 needs a chapter added; s13
+deferred.** Detail: `progress\resume-ophtho-endpoint-A-chapters.md` tail (s12 entry) + archive `## Pruned from
 MEMORY.md - 2026-09-17`. House `alsoIn` merges logged per section (`qb-pages\*house-collisions.md`),
 done at end of stream. Parallel-run history: archive, `2026-09-16 (part 2)`.
 
