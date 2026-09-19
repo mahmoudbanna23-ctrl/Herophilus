@@ -1055,3 +1055,43 @@ Chapter `op-glauc`, source `Opthalmology endpoint.pdf` pdf 788-849, 26 staged ro
 - Next: s14 Neuro-ophthalmology (pdf 982-1065, chapter `op-neuro`); s13 Retina deferred; s16 Pediatric
   Ophthalmology needs a chapter added to `modules.js`; s17 was closed by another chat (302 live before this
   section), and that chat's pointer moves to s18.
+
+## 2026-09-19, s14 Neuro-ophthalmology CLOSED -- 25 live, `questions.ophtho.ep.js` 313 -> 338
+
+- Commits: `306f8bf` (staging, manifest, house-collisions, array, draft, `sec-oph.js` row 14), `264bc74`
+  (splice). Chapter `op-neuro` already existed in `modules.js`; chapters stay 154.
+- Section layout: pdf 982-1065, 26 printed questions as unmarked/marked pairs (n1 = pp.1014/1015 through
+  n26 = pp.1064/1065). 20 print an explanation box; n17, n19, n20, n24 and n26 print none. n8 has three
+  options. No figures, no straddles.
+- Staging: gateway `gemini/gemini-3.1-flash-lite` with `gemini/gemini-3.5-flash-lite` as rotation fallback,
+  84/84 pages in one run of about 43 minutes (503 and 429 retries on every page), re-checked page by page
+  against the rendered images by two independent subagents (see the manifest `provenance_note`).
+- Sweep: one within-bank fold. n18 repeats live `ophep-squint-10` exactly, so the array keeps n18 and the draft
+  skips it (`sec-oph.js` row 14 `folded: [18]`); draft ids are `ophep-neuro-ophthalmology-1..17,19..26`. The
+  reprint citation to add to `ophep-squint-10`'s `source` is recorded in
+  `oph-ep-p1-s14-neuro-ophthalmology.house-collisions.md` and NOT applied yet. Cross-bank House matches are in
+  the same file; the `alsoIn` merges wait for the end of the stream.
+- Draft: array generated mechanically from staging. The gateway pass wrote bodies padded with untagged outside
+  claims, drafting-process wording and slide cites that did not check out, so the bodies of all 25 were rewritten
+  against the lecture text by two Sonnet agents (every claim grounded with a verified `(Lxx, slide N)` cite or
+  tagged "not taken from the course material"), then read by Claude and patched: q1-q20 six anchor-asserted
+  patches (q3, q6, q10, q12, q13, q19), q23/q25 cite folding.
+- Independent check: two Sonnet refuters (q1-13, q14-26) re-checked transcription (stem, options, key, box,
+  source page, all clean by script), every slide cite, untagged claims and process wording. Fixed before the
+  splice: q5 said a tract lesion "leaves the temporal fields of both eyes" (wrong; it takes the same half of the
+  field from both eyes), q3 process clause ("answer to this negative question"), q16 "Neurosyphilis is not among
+  its causes" (now "not listed among its causes", L22 slide 9), untagged claims in q10, q12, q15, q17, q19,
+  a missing cite in q2 and q23. Left as minor and not changed: tagged claims that the lectures do in fact carry
+  (q3, q11, q16, q17, q20; conservative), and mid-sentence tag placement in q21-q26.
+- Recorded, not corrected: q13 printed box lists Horner syndrome among the causes of a dilated pupil while L22
+  (slides 3 and 11) lists it as a cause of miosis; the key stands and the explanation says so. q19's
+  non-arteritic option overlaps the AION key. q23's "grossly normal motility" versus the box's early or partial
+  palsy is noted in the body. q25's dilated sluggish pupil is noted as not classic thyroid eye disease.
+- Checks: `val-oph-ep.js --part 1 14` ALL CHECKS PASSED (one benign near-identical-menu warning, n16/n17); splice
+  exit 0, 338 entries, 0 holes, 0 duplicate ids; boot-check `QUESTIONS 4049`, `THEORY 81`, chapters 154, 0 console
+  errors (ophtho stays locked at the aggregator).
+- L11, L18, L19.2, L23 and L35,36 decks carry no `SLIDE` markers, so they are cited by deck only. n21 cites the
+  Amsler grid to L1,2 slide 123 (Visual Field Testing branching diagram).
+- Next: s16 Pediatric Ophthalmology needs a chapter added to `modules.js`; s18 Ocular Trauma is chat B's (staged,
+  unverified, `238d16e`); s13 Retina deferred; s14 done. End-of-stream pass owes the `alsoIn` merges and the
+  `ophep-squint-10` reprint citation.
