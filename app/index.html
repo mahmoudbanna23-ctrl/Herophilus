@@ -2959,7 +2959,7 @@ async function loadState(){
       if(entry!==profileLoad||me!==p)return;
       raw=r&&r.value;mode='cloud';
     }
-  }catch(e){if(entry===profileLoad&&me===p)storageMode='cloud';return}
+  }catch(e){if(entry!==profileLoad||me!==p)return;mode='local'}
   /* Parsing and checking share their own try so a missing, unreadable or
      unusable value reaches the existing snapshot ladder instead of becoming
      live state or dropping the app to memory-only storage. */
@@ -4998,10 +4998,12 @@ function drawProfileEditor(isEdit){
 function pfUpload(e,isEdit){
   const f=e.target.files&&e.target.files[0];
   if(!f)return;
+  const d=draft;
   const r=new FileReader();
   r.onload=()=>{
     const img=new Image();
     img.onload=()=>{
+      if(d!==draft)return;
       const c=document.createElement('canvas'),SZ=160;
       c.width=SZ;c.height=SZ;
       const x=c.getContext('2d');
@@ -7695,7 +7697,7 @@ function clepOnView(){
    app is not. */
 function clepIdleLoop(){
   clearTimeout(CLEP.idleT);
-  if(!CLEP.on)return;
+  if(!CLEP.on||clepReduced())return;
   CLEP.idleT=setTimeout(()=>{
     if(CLEP.on&&!CLEP.muted&&!CLEP.mini&&!STILL_VIEWS.includes(view.name)
        &&Date.now()-CLEP.lastSay>200000){
@@ -7841,7 +7843,7 @@ function advancePhase(manual){
   const s=sess(); if(!s)return;
   if(s.phase==='focus'){
     s.focusMs=(s.focusMs||0)+phaseElapsed();
-    if(s.cycle>=s.plan.cycles){ endSession(true); return }
+    if(s.cycle>=s.plan.cycles){ s.phase=''; endSession(true); return }
     s.phase='break'; s.phaseStart=Date.now(); s.lost=0; s.paused=false; s.pausedAt=0;
     clepSay(manual?`Break early, then. **${s.plan.brk} minutes.**`
                   :`Block ${s.cycle} done. **${s.plan.brk} minutes** — stand up, find a window.`,{force:true});
@@ -8082,6 +8084,8 @@ function bakRestore(at){
   if(!s){toast('That snapshot is gone');return}
   let st; try{ st=checkedProgressState(JSON.parse(s.json)) }catch(e){ toast('That snapshot is unusable. Your current progress has been kept.'); return }
   S=Object.assign({answers:{},flags:{},conf:{},sched:{},srs:{},days:{},hl:{},banks:{},resumeByChapter:{},notes:{},reports:{}},st);
+  if(Q.exam){examStopTick();Q.exam=null;view={name:'home'}}
+  if(sess())sessStartTick(); else sessStopTick();
   save(); closeModal(); render();
   toast('Restored your progress from '+bakWhen(at));
 }
