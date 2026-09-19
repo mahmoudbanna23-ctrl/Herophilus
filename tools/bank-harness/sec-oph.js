@@ -28,7 +28,9 @@ const SEC_P1 = {
   // n14 (marked p.825) is an exact cross-chapter reprint of live ophep-cornea-16; n18 (p.833) is an exact
   // reprint of n12 (p.821); n19 (p.835) is an exact reprint of live ophep-uveal-tract-9 -- all folded, none takes alsoIn.
   11: { prefix: 'ophep-glaucoma-', file: 'oph-ep-p1-s11-glaucoma.array.js', svar: 'OPHEP_S11_STAGED', draft: 'oph-ep-p1-s11-glaucoma.draft', chapter: 'op-glauc', pages: [788, 849], ans: null, folded: [14, 18, 19] },
-  12: { prefix: 'ophep-vitreous-', file: 'oph-ep-p1-s12-vitreous.array.js', svar: 'OPHEP_S12_STAGED', draft: 'oph-ep-p1-s12-vitreous.draft', chapter: null, pages: [850, 879], ans: null }, // no chapter exists for Vitreous; one must be added to modules.js
+  // s12: no within-bank fold (sweep 2026-09-19, 11 questions, every endpoint hit a different question with a shared option menu).
+  // Files under op-vitreous, a chapter added to modules.js for this section.
+  12: { prefix: 'ophep-vitreous-', file: 'oph-ep-p1-s12-vitreous.array.js', svar: 'OPHEP_S12_STAGED', draft: 'oph-ep-p1-s12-vitreous.draft', chapter: 'op-vitreous', pages: [850, 879], ans: null },
   13: { prefix: 'ophep-retina-', file: 'oph-ep-p1-s13-retina.array.js', svar: 'OPHEP_S13_STAGED', draft: 'oph-ep-p1-s13-retina.draft', chapter: 'op-ret', pages: [880, 981], ans: null },
   14: { prefix: 'ophep-neuro-ophthalmology-', file: 'oph-ep-p1-s14-neuro-ophthalmology.array.js', svar: 'OPHEP_S14_STAGED', draft: 'oph-ep-p1-s14-neuro-ophthalmology.draft', chapter: 'op-neuro', pages: [982, 1065], ans: null },
   15: { prefix: 'ophep-squint-', file: 'oph-ep-p1-s15-squint.array.js', svar: 'OPHEP_S15_STAGED', draft: 'oph-ep-p1-s15-squint.draft', chapter: 'op-squint', pages: [1066, 1097], ans: null, folded: [2, 7] }, // n2 (p1078) and n7 (p1088) are exact reprints of live ophep-optics-refraction-9 (cross-chapter within-bank fold); n1 is drafted under op-intro-exam

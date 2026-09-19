@@ -1,0 +1,13 @@
+{
+  "source_pdf": "D:\\claude os\\Medical school\\Herophilus\\Semester 8\\Opthalmo\\Questions\\Opthalmology endpoint.pdf",
+  "requested_range": [
+    850,
+    879
+  ],
+  "model": "gemini/gemini-3.1-flash-lite (with gemini/gemini-3.5-flash-lite as rotation fallback on 429/5xx)",
+  "route": "OmniRoute gateway, per-page vision read with model rotation and a 3 s pause after each success; three runs because Gemini credential cooldown 429s starved 17 of 30 pages twice",
+  "pages_completed": 30,
+  "final_parse_errors": 0,
+  "final_pages_completed": 30,
+  "provenance_note": "Vision read 2026-09-19, 30/30 pages after the third run. Normalised in shape only (printed_q to bare digits, options string to array, letter prefixes stripped, figure false gives figure_desc null, key only on marked pages). Re-checked page by page against the rendered images by two Sonnet subagents (850-864 and 865-879): 0 diffs in page_type, printed_q, stem, options, keys and boxes; keys c/a/a/c on the four boxed questions agree with the images. Two numeric_note fields repaired (p.868/869 lacked the 56 of \"56-year-old\"); explanation_verbatim empty string normalised to null where no box is printed. Layout: pp.850-857 theory slides, p.857 a Questions divider; question q1 on 858/859 through q11 on 878/879, unmarked page N then marked page N+1. Only q1-q4 print an explanation box; q5-q11 print none. Options are labelled lowercase a-d on pp.858-863 and uppercase A-D from p.864; q9 and q11 print five options. No figures on any page. Q7 option A prints a capital I where the other options print a slash ("retinal tears I detachment", p.870, confirmed against the image by a Sonnet refuter); transcribed as printed."
+}
