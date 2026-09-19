@@ -93,24 +93,23 @@ Historical defect list at the moment the step budget was first reached (all now 
 
 **UPDATE 2026-09-19 (third /prep of chat B): s17 Malignancies of Eye and Adnexa is CLOSED — 12 spliced, live 290 -> 302, commit
 `4795291`** (staging `65ffc5d`, array + brief `b384aca`). Boot-check 0 errors, app view 4049/81/4, chapters 154 (chat A added
-`op-vitreous`). **Next: s18 Ocular Trauma, pdf 1182-1244, `op-trauma`, prefix `ophep-ocular-trauma-`, STAGED BUT UNVERIFIED 2026-09-19 (see next paragraph); then s19 (1245-1331,
+`op-vitreous`). **s18 Ocular Trauma is CLOSED (next paragraph). Next: s19 (1245-1331,
 `op-systemic`), s21 (1374-1390, `op-appear`), one at a time in fresh sessions, each closed before the next.** Codex out until
 2026-09-20 18:21. Re-measure the live count by loading the array and require `git status --short app/data/questions.ophtho.ep.js` clean
 before any splice. Cross-bank House matches for the end-of-stream pass: `qb-pages/oph-ep-p1-s17-malignancies-eye-adnexa.house-collisions.md`.
 
-**s18 Ocular Trauma, pdf 1182-1244 — STAGED, UNVERIFIED (2026-09-19).** Committed as
-`qb-pages/oph-ep-p1-s18-ocular-trauma.staging-unverified.json` + `.manifest.json` (this file is NOT the final `.staging.json`).
-Vision read: `gemini/gemini-3.1-flash-lite` direct credential through the gateway, cost 0; p.1244 needed retry 5 after 503/504.
-`retry-stage.mjs` needs the explicit range args (`<raw> <render folder> 1244 1244 0`) or it crashes on a page-0 row. Shape:
-23 theory pages (1182-1204) + 20 question pairs (1206-1244), 20 marked keys read. **Printed numbering is defective: 11 and 12 each
-print twice (pp.1226/1228 and 1230/1232), numbers run 1..18 for 20 questions.** Only p.1185 has a figure flag (probably a
-theory-page figure; check). Read keys: 1:c 2:b 3:d 4:a 5:a 6:a 7:a 8:a 9:C 10:C 11:B 11:C 12:C 12:A 13:C 14:C 15:C 16:D 17:A 18:B —
-UNVERIFIED, the Gemini reading only. **Resume: re-render pdf 1182-1244 to a scratchpad (Poppler `poppler-25.07.0\Library\bin` on
-PATH, `pdftoppm -png -r 150`; source `Semester 8\Opthalmo\Questions\Opthalmology endpoint.pdf`), Sonnet subagent re-read of the
-page images (expect the three defect classes: figure flags on tables/text boxes, leading letter prefixes on options, stray glyphs
-in stems — and settle the 11/11/12/12 numbering and every key from the pixels), fix the staging, rename to
-`oph-ep-p1-s18-ocular-trauma.staging.json`, commit with the manifest, then sweep (`sweep-oph.js` against the live bank), brief,
-array, draft via `opencode run -m omniroute/auto/coding` with a DELETE-oriented brief and the banned-phrase list.**
+**s18 Ocular Trauma, pdf 1182-1244 — CLOSED 2026-09-19: 16 spliced, live 338 -> 354, boot-check 0 errors, app view 4049/81/4, chapters 154.**
+Commits: staging verified `b3c9a91`; array + brief + collisions + sec-oph row `folded: [3, 4, 9, 17]` `ac0ee32`; draft + splice + this journal in the close commit.
+**The array numbers the 20 questions BY POSITION 1..20 (the book prints 11 and 12 twice; n11/n12 and n13/n14 are distinct paired questions on shared
+vignettes, not folds).** Four exact within-bank cross-chapter folds, dropped at drafting: n3=live `ophep-cornea-4`, n4=live `ophep-orbit-4`,
+n9=live `ophep-lens-10`, n17=live `ophep-cornea-15`. No reprint note was added to those four live `source` strings (owner may ask; s15 did for
+`ophep-optics-refraction-9`). Sources for tags are the two lecture files only (`L25`, `L26`). House matches for the end-of-stream `alsoIn` merge:
+`qb-pages/oph-ep-p1-s18-ocular-trauma.house-collisions.md`.
+Draft path: opencode `omniroute/auto/coding` (first run empty, second died on a gateway 402 = OpenRouter credit short, `opencode run -c` finished the 16);
+validator clean; one Sonnet refuter round (17 numbered edit items, applied by script with exactly-once asserts): removed process phrases ("menu", "this question"),
+one wrong tag (neutralization IS in L26:71-74, boric acid 4% / Na bicarbonate 3%), several embellishments, and tagged ~25 unsourced claims.
+**Known, not editable: the n10 verbatim box says irrigation is the initial IOFB step, which clashes with L25:401-404 (nothing on an open globe) and n20.**
+No lecture contradicts any printed key; no "Note on the printed key:" needed on this section.
 
 **s17 CLOSED — lessons (draft stage cost four opencode passes and three refuter rounds):**
 1. The opencode drafter (`omniroute/auto/coding`) first wrote a thin draft (831 words), then, told to "expand", embellished with unsourced
