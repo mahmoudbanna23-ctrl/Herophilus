@@ -91,24 +91,32 @@ Historical defect list at the moment the step budget was first reached (all now 
 
 ## RESUME HERE (chat B, written 2026-09-19 at /prep)
 
-**UPDATE 2026-09-19 (second /prep of chat B): s17 Malignancies of Eye and Adnexa is STAGED, SWEPT, ARRAYED, BRIEFED; the draft run
-was launched and is the open item.** Committed: staging + manifest + house-collisions (12 questions, keys checked by two Sonnet
-re-reads, 0 within-bank folds, so `sec-oph.js` row 17 needs no `folded`); array.js + `oph-ep-codex-s17-draft.brief.md` committed
-after this note. Draft run: `opencode run -m omniroute/auto/coding` started 2026-09-19 ~06:38 EDT, log
-`s17-draft-run.log` in the old session scratchpad (may be gone); it writes ONLY
-`content/ophtho/qb-pages/oph-ep-p1-s17-malignancies-eye-adnexa.draft.js` (`var OPHEP_S17_DRAFT`, 12 entries, ids
-`ophep-malignancies-eye-adnexa-1..12`, n1-n4 boxed, n5-n12 unboxed). **First action in a fresh chat: check whether that draft.js exists
-and is complete (12 entries) — if not, rerun the same opencode command with the brief; then `node tools/bank-harness/val-oph-ep.js
---part 1 17`, independent refuter (different house), Claude key + medical read, `git status --short app/data/questions.ophtho.ep.js`
-clean, re-measure live count, `node tools/bank-harness/splice-oph-ep.js --part 1 17 --write`, boot-check 4049/81/4/153, commit.**
-Cross-bank House matches for the end-of-stream pass: `qb-pages/oph-ep-p1-s17-malignancies-eye-adnexa.house-collisions.md`.
-Lessons s17: the Gemini direct credential cooled for ~1 h (gateway `model_cooldown` 429, renewing) and took auto/vision (same credential)
+**UPDATE 2026-09-19 (third /prep of chat B): s17 Malignancies of Eye and Adnexa is CLOSED — 12 spliced, live 290 -> 302, commit
+`4795291`** (staging `65ffc5d`, array + brief `b384aca`). Boot-check 0 errors, app view 4049/81/4, chapters 154 (chat A added
+`op-vitreous`). **Next: s18 Ocular Trauma, pdf 1182-1244, `op-trauma`, prefix `ophep-ocular-trauma-`, not staged; then s19 (1245-1331,
+`op-systemic`), s21 (1374-1390, `op-appear`), one at a time in fresh sessions, each closed before the next.** Codex out until
+2026-09-20 18:21. Re-measure the live count by loading the array and require `git status --short app/data/questions.ophtho.ep.js` clean
+before any splice. Cross-bank House matches for the end-of-stream pass: `qb-pages/oph-ep-p1-s17-malignancies-eye-adnexa.house-collisions.md`.
+
+**s17 CLOSED — lessons (draft stage cost four opencode passes and three refuter rounds):**
+1. The opencode drafter (`omniroute/auto/coding`) first wrote a thin draft (831 words), then, told to "expand", embellished with unsourced
+   clinical claims (2,935 words). What worked was a DELETE-oriented brief: "every authored sentence needs a source line; if you cannot find it,
+   delete it", plus an explicit banned-phrase list. Use that shape first time for s18/s19/s21.
+2. The validator (`val-oph-ep.js`) passes shape, markers and menus but NOT process language, sourcing or clinical accuracy. Grep every draft
+   for: menu, family, anchor, token, key letter, stem frame, straight-recall, this question/row, course sources, five-option, four-option,
+   "distractors", "the sources". A hit on "menu" was wrongly dismissed once; a refuter caught it. Do not dismiss a grep hit by eye.
+3. Refuters: give each a numbered minimum-edit list request; the third round's exact wording was applied by script with exactly-once asserts.
+4. Sourced facts confirmed in the book/lectures for s17 (no tag needed): congenital cataract presents with leukocoria (ch16:277); sibling and
+   offspring screening (ch16:327/343, ch17:253); BCC treated by excision plus reconstruction (ch17:105-106). Tagged, outside knowledge: cavernous
+   sinus thrombosis and cataract lacking pain/proptosis (row 1 only).
+5. Not mine, handed back to the owner: `MEMORY.md`, `ledger.md`, `CLAUDE.md` updates, and the House `alsoIn` merges in the collisions file.
+
+(Superseded s17 open-item text removed; the staging lessons below still hold.)
+Lessons s17 staging: the Gemini direct credential cooled for ~1 h (gateway `model_cooldown` 429, renewing) and took auto/vision (same credential)
 with it; **`openrouter/google/gemini-3.1-flash-lite` through the gateway is a separate credential, read 18 pages at once with no
 cooldown (cost header 0, still the owner's OpenRouter key)** — try it first next time. A page can return a deterministic gateway 400
 "payload is not base64-encoded data" though the base64 is valid: re-save the PNG losslessly with System.Drawing and retry. Never chain
 per-attempt backoff sleeps on a deterministic 400 (SKIP list). Theory-slide rows carry `theory_text`, not stem/explanation.
-Then s18 (1182-1244, `op-trauma`), s19 (1245-1331, `op-systemic`), s21 (1374-1390, `op-appear`), one at a time, each closed before the
-next; none of them staged. s13 and s22-28 stay untouched.
 
 (Older text, still true where not superseded above:) s15 is DONE (`c53e2db`).
 Live endpoint count at HEAD when written: 290 (chat A spliced s11, 267 -> 290, `e4dee6f`); **re-measure by loading the array
