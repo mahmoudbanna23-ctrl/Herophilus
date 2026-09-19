@@ -1,0 +1,394 @@
+{
+  "source_pdf": "Semester 8/Opthalmo/Questions/Opthalmology endpoint.pdf",
+  "requested_range": [
+    1182,
+    1244
+  ],
+  "model": "gemini/gemini-3.1-flash-lite",
+  "start_time": "2026-09-19T10:10:19.348Z",
+  "end_time": "2026-09-19T10:20:44.994Z",
+  "pages_completed": 63,
+  "parse_errors": 1,
+  "http_errors": 1,
+  "stopped_by_429": false,
+  "pages": [
+    {
+      "page": 1182,
+      "image": "render\\p-1182.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1183,
+      "image": "render\\p-1183.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1184,
+      "image": "render\\p-1184.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1185,
+      "image": "render\\p-1185.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1186,
+      "image": "render\\p-1186.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1187,
+      "image": "render\\p-1187.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1188,
+      "image": "render\\p-1188.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1189,
+      "image": "render\\p-1189.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1190,
+      "image": "render\\p-1190.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1191,
+      "image": "render\\p-1191.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1192,
+      "image": "render\\p-1192.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1193,
+      "image": "render\\p-1193.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1194,
+      "image": "render\\p-1194.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1195,
+      "image": "render\\p-1195.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1196,
+      "image": "render\\p-1196.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1197,
+      "image": "render\\p-1197.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1198,
+      "image": "render\\p-1198.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1199,
+      "image": "render\\p-1199.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1200,
+      "image": "render\\p-1200.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1201,
+      "image": "render\\p-1201.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1202,
+      "image": "render\\p-1202.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1203,
+      "image": "render\\p-1203.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1204,
+      "image": "render\\p-1204.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1205,
+      "image": "render\\p-1205.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1206,
+      "image": "render\\p-1206.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1207,
+      "image": "render\\p-1207.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1208,
+      "image": "render\\p-1208.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1209,
+      "image": "render\\p-1209.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1210,
+      "image": "render\\p-1210.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1211,
+      "image": "render\\p-1211.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1212,
+      "image": "render\\p-1212.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1213,
+      "image": "render\\p-1213.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1214,
+      "image": "render\\p-1214.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1215,
+      "image": "render\\p-1215.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1216,
+      "image": "render\\p-1216.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1217,
+      "image": "render\\p-1217.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1218,
+      "image": "render\\p-1218.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1219,
+      "image": "render\\p-1219.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1220,
+      "image": "render\\p-1220.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1221,
+      "image": "render\\p-1221.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1222,
+      "image": "render\\p-1222.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1223,
+      "image": "render\\p-1223.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1224,
+      "image": "render\\p-1224.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1225,
+      "image": "render\\p-1225.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1226,
+      "image": "render\\p-1226.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1227,
+      "image": "render\\p-1227.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1228,
+      "image": "render\\p-1228.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1229,
+      "image": "render\\p-1229.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1230,
+      "image": "render\\p-1230.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1231,
+      "image": "render\\p-1231.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1232,
+      "image": "render\\p-1232.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1233,
+      "image": "render\\p-1233.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1234,
+      "image": "render\\p-1234.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1235,
+      "image": "render\\p-1235.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1236,
+      "image": "render\\p-1236.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1237,
+      "image": "render\\p-1237.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1238,
+      "image": "render\\p-1238.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1239,
+      "image": "render\\p-1239.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1240,
+      "image": "render\\p-1240.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1241,
+      "image": "render\\p-1241.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1242,
+      "image": "render\\p-1242.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1243,
+      "image": "render\\p-1243.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1244,
+      "image": "render\\p-1244.png",
+      "status": 503,
+      "parse_error": true
+    }
+  ]
+}
