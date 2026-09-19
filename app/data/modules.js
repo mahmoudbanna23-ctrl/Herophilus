@@ -78,7 +78,17 @@ const MODULES = [
       ['ent-facialpain','Facial pain, rhinogenic headache']]}
   ]},
   {id:'ophtho', term:'y4s2', name:'Ophthalmology', icon:'eye', color:'var(--ophtho)', hex:'#5c7a52', groups:[
-    {name:'All lectures', chapters:[
+    /* Regrouped 2026-09-19 on the ophthalmology endpoint book's own Contents
+       page (owner ruling), not on the lecture decks: the book's sections are the
+       groups, the lecture-sized chapters stay inside them so every chapter id,
+       question and theory entry is untouched. Order is the book's. Sections 16
+       (Pediatric Ophthalmology) and 20 (Drugs and the Eye) have no chapter yet
+       and are left out rather than shown as bare headers; each gets its group
+       when its endpoint section is filed. Placement of op-va, op-pupil in group 1
+       and of the symptom-led chapters in group 21 is from chapter titles, not
+       from reading the book's sections 1 and 21. Plan:
+       progress/PLAN-ophtho-book-groups-2026-09-19.md */
+    {name:'Examination of the Eye', chapters:[
       /* Split 2026-08-18, AFTER printing 14 pp — past the 13-page hard shape,
          so the split is a measurement, not a forecast. Book ch.1 is 20,920
          words, the largest chapter by a factor of two, and op-intro rests on
@@ -94,7 +104,8 @@ const MODULES = [
       ['op-intro','Introduction, history and the anatomy the module assumes'],
       ['op-intro-exam','The book’s examination sequence, and what it adds'],
       ['op-va','VA, Field, Lid, Lac, Orbit'],['op-ant','Anterior Segment'],
-      ['op-pupil','Pupil, EOM, Fundus'],['op-lid','Lid'],['op-conj','Conjunctiva'],
+      ['op-pupil','Pupil, EOM, Fundus']]},
+    {name:'Optics and Errors of Refraction', chapters:[
       /* Split 2026-08-17, forecast BEFORE writing. The deck is 88 pages and
          was read visually the same day; its cache holds 4,439 words against
          the 1,540 pdftotext ever saw, which is ~18 printed pages as one
@@ -104,30 +115,25 @@ const MODULES = [
          (2,245/2,194) was rejected for cutting that pair in half.
          This chapter carries 38 questions, 28 % of the module. */
       ['op-refract','Errors of refraction — the optics, myopia and hyperopia'],
-      ['op-refract-astig','Astigmatism, presbyopia and prescribing'],
-      ['op-lac','Lacrimal System'],
+      ['op-refract-astig','Astigmatism, presbyopia and prescribing']]},
+    {name:'Orbit', chapters:[
       /* Split 2026-08-16: the single Orbit chapter PRINTED at 14 pages, one past
          the project's 13-page shape. The seam was chosen by the questions —
          cutting after the carotid-cavernous fistula section leaves exactly one
          question straddling, against three and two at the other candidates. */
       ['op-orbit','Orbit, thyroid eye disease and cellulitis'],
-      ['op-orbit-mass','Orbital emergencies, tumours and the socket'],
-      ['op-glauc','Glaucoma'],['op-sclera','Sclera'],['op-uvea','Uvea'],
+      ['op-orbit-mass','Orbital emergencies, tumours and the socket']]},
+    {name:'Lacrimal System', chapters:[['op-lac','Lacrimal System']]},
+    {name:'Eyelids', chapters:[['op-lid','Lid']]},
+    {name:'Conjunctiva', chapters:[['op-conj','Conjunctiva']]},
+    {name:'Sclera', chapters:[['op-sclera','Sclera']]},
+    {name:'Cornea', chapters:[
       /* Split 2026-08-17, planned BEFORE writing rather than discovered after:
          the cornea deck is larger than the orbit deck that printed 14 pages,
          so the seam was chosen up front. Medical cornea / surgical cornea. */
       ['op-cornea','Cornea — infection, trauma and the red eye'],
-      ['op-cornea-surg','Cornea — ectasia, grafts and refractive surgery'],
-      /* Split 2026-08-17. L37 is a BOOK CHAPTER, not a deck — 5,104 words, the
-         densest source in the module — and forecast at ~21 pages as one
-         chapter. The seam is the book's OWN first-order heading, "Further
-         Interpretation of the Findings", which balances the halves within 8 %
-         where no other candidate came within 30 %. A seam at "Management or
-         Referral" would have left part 1 at ~16 pp needing a second split, and
-         an acute-vs-chronic seam would have written the 1,001-word danger-signal
-         block twice and cut three entities in half. */
-      ['op-red','Red eye — the approach and the causes'],
-      ['op-red-mgmt','Red eye — danger signals, referral and treatment'],
+      ['op-cornea-surg','Cornea — ectasia, grafts and refractive surgery']]},
+    {name:'Lens', chapters:[
       /* Split 2026-08-17, forecast BEFORE writing like the cornea pair: one
          chapter costed out at ~4,370 words / ~18 printed pages. The seam is
          medical vs surgical, because both lecturers already draw it and ZERO
@@ -135,7 +141,15 @@ const MODULES = [
          Split by deck was rejected (both decks teach both halves) and split by
          aetiology was rejected (PSC is one slide cut in two). */
       ['op-cat','Cataract — types, maturity and clinical picture'],
-      ['op-cat-surg','Cataract surgery, IOLs and the aphakic eye'],
+      ['op-cat-surg','Cataract surgery, IOLs and the aphakic eye']]},
+    {name:'Uveal Tract', chapters:[['op-uvea','Uvea']]},
+    {name:'Glaucoma', chapters:[['op-glauc','Glaucoma']]},
+    {name:'Vitreous', chapters:[
+      /* Added 2026-09-19 (owner's choice): the ophtho endpoint book teaches
+         the vitreous as its own section (pdf 850-879) and no lecture chapter
+         covers it, so endpoint section 12 files here. */
+      ['op-vitreous','Vitreous']]},
+    {name:'Retina', chapters:[
       /* Split 2026-08-17 — three ways, along the SOURCE FILES' own seams, and
          forecast at ~29 printed pages as one chapter (the module's largest).
          Three drivers added up: three decks, TWELVE register rows from six
@@ -146,11 +160,8 @@ const MODULES = [
          half comes to 10 pages, not the 15.2 the estimator forecast. */
       ['op-ret-dr','Diabetic retinopathy and the macula'],
       ['op-ret-vasc','Retinal vascular disorders'],
-      ['op-ret','Retinal detachment'],
-      /* Added 2026-09-19 (owner's choice): the ophtho endpoint book teaches
-         the vitreous as its own section (pdf 850-879) and no lecture chapter
-         covers it, so endpoint section 12 files here. */
-      ['op-vitreous','Vitreous'],
+      ['op-ret','Retinal detachment']]},
+    {name:'Neuro-ophthalmology', chapters:[
       /* Split 2026-08-18, forecast BEFORE writing, on the BOOK's own four
          Roman-numbered parts (ch.14, printed 178-195). Written as one chapter
          it measured 28.5 estimated pages - the module's largest by far - and
@@ -161,11 +172,25 @@ const MODULES = [
          "Pupil and Visual pathway". */
       ['op-neuro','Pupil, the visual pathway and field defects'],
       ['op-neuro-motil','Ocular motility disorders'],
-      ['op-neuro-optic','The optic nerve'],
-      ['op-systemic','Systemic Diseases'],['op-onc','Oncology'],['op-trauma','Trauma'],
-      ['op-appear','Problems of Appearance'],['op-squint','Squint'],
+      ['op-neuro-optic','The optic nerve']]},
+    {name:'Squint', chapters:[['op-squint','Squint'],['op-appear','Problems of Appearance']]},
+    {name:'Malignancies of the Eye and its Adnexa', chapters:[['op-onc','Oncology']]},
+    {name:'Ocular Trauma', chapters:[['op-trauma','Trauma']]},
+    {name:'Ocular Manifestations of Systemic Conditions and Diseases', chapters:[
+      ['op-systemic','Systemic Diseases']]},
+    {name:'Keys for Diagnosis', chapters:[
       ['op-acute','Acute Visual Loss'],['op-white','The White Eye'],
-      ['op-insid','Insidious Visual Loss'],['op-vissym','Visual Symptoms']]}
+      ['op-insid','Insidious Visual Loss'],['op-vissym','Visual Symptoms'],
+      /* Split 2026-08-17. L37 is a BOOK CHAPTER, not a deck — 5,104 words, the
+         densest source in the module — and forecast at ~21 pages as one
+         chapter. The seam is the book's OWN first-order heading, "Further
+         Interpretation of the Findings", which balances the halves within 8 %
+         where no other candidate came within 30 %. A seam at "Management or
+         Referral" would have left part 1 at ~16 pp needing a second split, and
+         an acute-vs-chronic seam would have written the 1,001-word danger-signal
+         block twice and cut three entities in half. */
+      ['op-red','Red eye — the approach and the causes'],
+      ['op-red-mgmt','Red eye — danger signals, referral and treatment']]}
   ]},
   {id:'neuropsych', term:'y4s2', name:'Neuropsychiatry', icon:'brain', color:'var(--neuro)', hex:'#6d4c7d', groups:[
     {name:'Psychiatry', chapters:[
