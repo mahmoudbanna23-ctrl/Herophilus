@@ -93,10 +93,24 @@ Historical defect list at the moment the step budget was first reached (all now 
 
 **UPDATE 2026-09-19 (third /prep of chat B): s17 Malignancies of Eye and Adnexa is CLOSED — 12 spliced, live 290 -> 302, commit
 `4795291`** (staging `65ffc5d`, array + brief `b384aca`). Boot-check 0 errors, app view 4049/81/4, chapters 154 (chat A added
-`op-vitreous`). **Next: s18 Ocular Trauma, pdf 1182-1244, `op-trauma`, prefix `ophep-ocular-trauma-`, not staged; then s19 (1245-1331,
+`op-vitreous`). **Next: s18 Ocular Trauma, pdf 1182-1244, `op-trauma`, prefix `ophep-ocular-trauma-`, STAGED BUT UNVERIFIED 2026-09-19 (see next paragraph); then s19 (1245-1331,
 `op-systemic`), s21 (1374-1390, `op-appear`), one at a time in fresh sessions, each closed before the next.** Codex out until
 2026-09-20 18:21. Re-measure the live count by loading the array and require `git status --short app/data/questions.ophtho.ep.js` clean
 before any splice. Cross-bank House matches for the end-of-stream pass: `qb-pages/oph-ep-p1-s17-malignancies-eye-adnexa.house-collisions.md`.
+
+**s18 Ocular Trauma, pdf 1182-1244 — STAGED, UNVERIFIED (2026-09-19).** Committed as
+`qb-pages/oph-ep-p1-s18-ocular-trauma.staging-unverified.json` + `.manifest.json` (this file is NOT the final `.staging.json`).
+Vision read: `gemini/gemini-3.1-flash-lite` direct credential through the gateway, cost 0; p.1244 needed retry 5 after 503/504.
+`retry-stage.mjs` needs the explicit range args (`<raw> <render folder> 1244 1244 0`) or it crashes on a page-0 row. Shape:
+23 theory pages (1182-1204) + 20 question pairs (1206-1244), 20 marked keys read. **Printed numbering is defective: 11 and 12 each
+print twice (pp.1226/1228 and 1230/1232), numbers run 1..18 for 20 questions.** Only p.1185 has a figure flag (probably a
+theory-page figure; check). Read keys: 1:c 2:b 3:d 4:a 5:a 6:a 7:a 8:a 9:C 10:C 11:B 11:C 12:C 12:A 13:C 14:C 15:C 16:D 17:A 18:B —
+UNVERIFIED, the Gemini reading only. **Resume: re-render pdf 1182-1244 to a scratchpad (Poppler `poppler-25.07.0\Library\bin` on
+PATH, `pdftoppm -png -r 150`; source `Semester 8\Opthalmo\Questions\Opthalmology endpoint.pdf`), Sonnet subagent re-read of the
+page images (expect the three defect classes: figure flags on tables/text boxes, leading letter prefixes on options, stray glyphs
+in stems — and settle the 11/11/12/12 numbering and every key from the pixels), fix the staging, rename to
+`oph-ep-p1-s18-ocular-trauma.staging.json`, commit with the manifest, then sweep (`sweep-oph.js` against the live bank), brief,
+array, draft via `opencode run -m omniroute/auto/coding` with a DELETE-oriented brief and the banned-phrase list.**
 
 **s17 CLOSED — lessons (draft stage cost four opencode passes and three refuter rounds):**
 1. The opencode drafter (`omniroute/auto/coding`) first wrote a thin draft (831 words), then, told to "expand", embellished with unsourced
