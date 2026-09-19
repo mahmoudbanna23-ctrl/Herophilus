@@ -390,5 +390,26 @@
       "status": 503,
       "parse_error": true
     }
+  ],
+  "model_note": "gemini/gemini-3.1-flash-lite, direct gateway credential, cost 0; p.1244 needed retry 5 after 503/504",
+  "reread": "Two independent Sonnet (refuter) subagents re-read pdf 1205-1244 and p.1185 against the rendered images 2026-09-19: all 20 keys agree with the machine reading, 20 questions confirmed.",
+  "numbering_note": "Printed numbers 11 and 12 each appear twice (11a pp.1225/1226 diagnosis, 11b pp.1227/1228 definitive treatment; 12a pp.1229/1230 diagnosis, 12b pp.1231/1232 source of bleeding); each pair shares a vignette but asks a different question with its own options and key, so they are distinct questions, not folds. Printed numbers run 1..18 for 20 questions.",
+  "repairs": [
+    "p.1185: figure true->false; numeric_note gains the printed \"< 1/3\"",
+    "p.1222: two \"->\" -> the printed arrow glyph",
+    "p.1226: letter prefixes stripped",
+    "p.1229: letter prefixes stripped",
+    "p.1234: letter prefixes stripped",
+    "p.1228: option C -> printed \"cantholysls\" (matches p.1227)",
+    "p.1244: two straight apostrophes -> printed curly",
+    "p.1188: figure null->false",
+    "p.1196: figure null->false",
+    "p.1200: figure null->false",
+    "p.1206: figure null->false",
+    "p.1209: figure null->false",
+    "p.1227: figure null->false",
+    "p.1235: figure null->false",
+    "p.1237: figure null->false",
+    "p.1244: figure null->false"
   ]
 }

@@ -55,9 +55,9 @@
     "key_index": null,
     "box_printed": false,
     "explanation_verbatim": "",
-    "figure": true,
-    "figure_desc": "Table detailing the Hughes' or Roper–Hall classification grading system for ocular chemical injuries, with columns for Grade, Cornea, Limbal ischemia, and Prognosis.",
-    "numeric_note": "1/3, 1/3–1/2, > 1/2, 1185"
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "< 1/3, 1/3, 1/3–1/2, > 1/2, 1185"
   },
   {
     "pdf_page": 1186,
@@ -100,7 +100,7 @@
     "key_index": null,
     "box_printed": false,
     "explanation_verbatim": "",
-    "figure": null,
+    "figure": false,
     "figure_desc": null,
     "numeric_note": "2, 1188"
   },
@@ -220,7 +220,7 @@
     "key_index": null,
     "box_printed": false,
     "explanation_verbatim": null,
-    "figure": null,
+    "figure": false,
     "figure_desc": null,
     "numeric_note": "1196"
   },
@@ -266,7 +266,7 @@
     "box_printed": false,
     "explanation_verbatim": "",
     "figure": false,
-    "figure_desc": "",
+    "figure_desc": null,
     "numeric_note": "3 & 4"
   },
   {
@@ -280,7 +280,7 @@
     "key_index": null,
     "box_printed": false,
     "explanation_verbatim": null,
-    "figure": null,
+    "figure": false,
     "figure_desc": null,
     "numeric_note": "3, 5, 45°"
   },
@@ -380,7 +380,7 @@
     "key_index": 2,
     "box_printed": true,
     "explanation_verbatim": "MRI is contraindicated in patients with possible iron intraocular foreign bodies because magnetic forces may move the metal, causing further eye injury. CT scan and ultrasound are safe alternatives.",
-    "figure": null,
+    "figure": false,
     "figure_desc": null,
     "numeric_note": ""
   },
@@ -440,7 +440,7 @@
     "key_index": null,
     "box_printed": false,
     "explanation_verbatim": "",
-    "figure": null,
+    "figure": false,
     "figure_desc": null,
     "numeric_note": "3, 1209"
   },
@@ -481,7 +481,7 @@
     "box_printed": false,
     "explanation_verbatim": "",
     "figure": false,
-    "figure_desc": "",
+    "figure_desc": null,
     "numeric_note": "25, 6, 1211"
   },
   {
@@ -641,7 +641,7 @@
     "box_printed": false,
     "explanation_verbatim": "",
     "figure": false,
-    "figure_desc": "",
+    "figure_desc": null,
     "numeric_note": "8, 1219"
   },
   {
@@ -699,7 +699,7 @@
     "key_letter": "C",
     "key_index": 2,
     "box_printed": true,
-    "explanation_verbatim": "Vossious ring refers to imprinting of iris pigment on the anterior capsule of the lens from the pupillary margin (in case of blunt eye trauma).\nHypopyon -> Pus in the AC (usually in neglected open wounds of the globe with secondary infection) [post-traumatic infectious endophthalmitis].\nHyphema -> Haemorrhage in the anterior chamber. The source of bleeding is the iris root.",
+    "explanation_verbatim": "Vossious ring refers to imprinting of iris pigment on the anterior capsule of the lens from the pupillary margin (in case of blunt eye trauma).\nHypopyon → Pus in the AC (usually in neglected open wounds of the globe with secondary infection) [post-traumatic infectious endophthalmitis].\nHyphema → Haemorrhage in the anterior chamber. The source of bleeding is the iris root.",
     "figure": false,
     "figure_desc": null,
     "numeric_note": "9, 1222"
@@ -761,7 +761,7 @@
     "box_printed": false,
     "explanation_verbatim": "",
     "figure": false,
-    "figure_desc": "",
+    "figure_desc": null,
     "numeric_note": "11, 26"
   },
   {
@@ -771,10 +771,10 @@
     "printed_q": "11",
     "stem": "A 26-year-old male presents to the emergency department after he had a severe head trauma. He complained of severe left eye pain with swelling of the left lower lid. Examination revealed limitation of ocular motility with ecchymosis and lid hematoma. Which of the following is the most likely diagnosis?",
     "options": [
-      "A. Orbital floor fracture",
-      "B. Retrobulbar hemorrhage",
-      "C. Lid surgical emphysema",
-      "D.Hypopyon"
+      "Orbital floor fracture",
+      "Retrobulbar hemorrhage",
+      "Lid surgical emphysema",
+      "Hypopyon"
     ],
     "key_letter": "B",
     "key_index": 1,
@@ -800,7 +800,7 @@
     "key_index": null,
     "box_printed": false,
     "explanation_verbatim": "",
-    "figure": null,
+    "figure": false,
     "figure_desc": null,
     "numeric_note": "11, 26, 1227"
   },
@@ -813,7 +813,7 @@
     "options": [
       "Medical management",
       "Lateral canthotomy & cantholysis",
-      "Lateral canthotomy, cantholysis & medical management",
+      "Lateral canthotomy, cantholysls & medical management",
       "Watchful waiting"
     ],
     "key_letter": "C",
@@ -821,7 +821,7 @@
     "box_printed": false,
     "explanation_verbatim": "",
     "figure": false,
-    "figure_desc": "",
+    "figure_desc": null,
     "numeric_note": "11, 26, 1228"
   },
   {
@@ -831,10 +831,10 @@
     "printed_q": "12",
     "stem": "A 30-year-old man got a fist blow in his right eye during a quarrel with his wife that made him feel severe eye pain. He headed to the ophthalmologist who examined his eye and found that the trauma caused hemorrhage and blood accumulation in the anterior chamber. Fluid level was sharply demarcated. Which of the following is the most likely diagnosis?",
     "options": [
-      "A. Orbital floor fracture",
-      "B. Retrobulbar hemorrhage",
-      "C. Traumatic hyphema",
-      "D.Hypopyon"
+      "Orbital floor fracture",
+      "Retrobulbar hemorrhage",
+      "Traumatic hyphema",
+      "Hypopyon"
     ],
     "key_letter": null,
     "key_index": null,
@@ -882,7 +882,7 @@
     "box_printed": false,
     "explanation_verbatim": "",
     "figure": false,
-    "figure_desc": "",
+    "figure_desc": null,
     "numeric_note": "12, 30"
   },
   {
@@ -933,10 +933,10 @@
     "printed_q": "13",
     "stem": "Which of the following imaging modalities is absolutely contraindicated in a patient with intra-ocular metallic foreign body?",
     "options": [
-      "A.CT",
-      "B. X ray",
-      "C.MRI",
-      "D. Ultrasound"
+      "CT",
+      "X ray",
+      "MRI",
+      "Ultrasound"
     ],
     "key_letter": "C",
     "key_index": 2,
@@ -962,7 +962,7 @@
     "key_index": null,
     "box_printed": false,
     "explanation_verbatim": "",
-    "figure": null,
+    "figure": false,
     "figure_desc": null,
     "numeric_note": "14, 1235"
   },
@@ -983,7 +983,7 @@
     "box_printed": false,
     "explanation_verbatim": "",
     "figure": false,
-    "figure_desc": "",
+    "figure_desc": null,
     "numeric_note": "14, 1236"
   },
   {
@@ -1002,7 +1002,7 @@
     "key_index": null,
     "box_printed": false,
     "explanation_verbatim": "",
-    "figure": null,
+    "figure": false,
     "figure_desc": null,
     "numeric_note": "15, 1, 2, 3, 4, 1237"
   },
@@ -1083,7 +1083,7 @@
     "box_printed": false,
     "explanation_verbatim": "",
     "figure": false,
-    "figure_desc": "",
+    "figure_desc": null,
     "numeric_note": "17, 25, 6/12, 6/6, 45, 1241"
   },
   {
@@ -1123,7 +1123,7 @@
     "box_printed": false,
     "explanation_verbatim": "",
     "figure": false,
-    "figure_desc": "",
+    "figure_desc": null,
     "numeric_note": "18, 28, 6/60, 7, 7, 1243"
   },
   {
@@ -1131,7 +1131,7 @@
     "printed_page": "1244",
     "page_type": "question_marked",
     "printed_q": "18",
-    "stem": "28-year-old male patient has pain, tearing and blurred vision in his right eye. Earlier in afternoon, while he had been working on his car with a hammer and chisel, he noticed that something flying into his right eye. Examination revealed that visual acuity is 6/60 in the right eye. There is conjunctival hyperemia, the pupil seems to be peaked and pointing to the 7 o'clock position of the limbus. There is a small, dark, slightly elevated body at the 7 o'clock position of the limbus. The left eye is normal. Which of the following would be the appropriate initial management for this situation?",
+    "stem": "28-year-old male patient has pain, tearing and blurred vision in his right eye. Earlier in afternoon, while he had been working on his car with a hammer and chisel, he noticed that something flying into his right eye. Examination revealed that visual acuity is 6/60 in the right eye. There is conjunctival hyperemia, the pupil seems to be peaked and pointing to the 7 o’clock position of the limbus. There is a small, dark, slightly elevated body at the 7 o’clock position of the limbus. The left eye is normal. Which of the following would be the appropriate initial management for this situation?",
     "options": [
       "Irrigation of the limbal foreign body",
       "Application of a protective shield",
@@ -1142,7 +1142,7 @@
     "key_index": 1,
     "box_printed": true,
     "explanation_verbatim": "The peaked pupil and dark body at the limbus suggest a penetrating injury with intraocular foreign body. The eye should not be manipulated—apply a shield and refer urgently.",
-    "figure": null,
+    "figure": false,
     "figure_desc": null,
     "numeric_note": "18, 28, 6/60, 7, 1244"
   }
