@@ -32,7 +32,9 @@ const SEC_P1 = {
   // Files under op-vitreous, a chapter added to modules.js for this section.
   12: { prefix: 'ophep-vitreous-', file: 'oph-ep-p1-s12-vitreous.array.js', svar: 'OPHEP_S12_STAGED', draft: 'oph-ep-p1-s12-vitreous.draft', chapter: 'op-vitreous', pages: [850, 879], ans: null },
   13: { prefix: 'ophep-retina-', file: 'oph-ep-p1-s13-retina.array.js', svar: 'OPHEP_S13_STAGED', draft: 'oph-ep-p1-s13-retina.draft', chapter: 'op-ret', pages: [880, 981], ans: null },
-  14: { prefix: 'ophep-neuro-ophthalmology-', file: 'oph-ep-p1-s14-neuro-ophthalmology.array.js', svar: 'OPHEP_S14_STAGED', draft: 'oph-ep-p1-s14-neuro-ophthalmology.draft', chapter: 'op-neuro', pages: [982, 1065], ans: null },
+  // s14: n18 (unmarked p.1048) is an exact cross-chapter reprint of live ophep-squint-10 (p.1094; same stem,
+  // same options with the A/D duplicate, same key, neither boxed) -- folded, none takes alsoIn. 26 staged rows, 25 drafted.
+  14: { prefix: 'ophep-neuro-ophthalmology-', file: 'oph-ep-p1-s14-neuro-ophthalmology.array.js', svar: 'OPHEP_S14_STAGED', draft: 'oph-ep-p1-s14-neuro-ophthalmology.draft', chapter: 'op-neuro', pages: [982, 1065], ans: null, folded: [18] },
   15: { prefix: 'ophep-squint-', file: 'oph-ep-p1-s15-squint.array.js', svar: 'OPHEP_S15_STAGED', draft: 'oph-ep-p1-s15-squint.draft', chapter: 'op-squint', pages: [1066, 1097], ans: null, folded: [2, 7] }, // n2 (p1078) and n7 (p1088) are exact reprints of live ophep-optics-refraction-9 (cross-chapter within-bank fold); n1 is drafted under op-intro-exam
   16: { prefix: 'ophep-pediatric-ophthalmology-', file: 'oph-ep-p1-s16-pediatric-ophthalmology.array.js', svar: 'OPHEP_S16_STAGED', draft: 'oph-ep-p1-s16-pediatric-ophthalmology.draft', chapter: null, pages: [1098, 1149], ans: null }, // no chapter exists for Pediatric Ophthalmology; one must be added to modules.js
   17: { prefix: 'ophep-malignancies-eye-adnexa-', file: 'oph-ep-p1-s17-malignancies-eye-adnexa.array.js', svar: 'OPHEP_S17_STAGED', draft: 'oph-ep-p1-s17-malignancies-eye-adnexa.draft', chapter: 'op-onc', pages: [1150, 1181], ans: null },
