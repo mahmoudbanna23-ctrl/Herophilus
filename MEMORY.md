@@ -32,15 +32,15 @@ Where this file and the archive disagree, this file wins. ⚠️ **Before openin
 **no live rule left it.**
 
 ## Resume here — state at 2026-09-16
-- **APP RE-PLAN 2026-09-17 (design + code review + refactor + features): `progress\PLAN-app-replan-2026-09-17.md`** — B10 code review DONE 2026-09-17, bugs + refuter verdicts in `progress\app-replan\bugs.md`; sign-in fix (bug 1) COMMITTED 542c7e4, LIVE ONLY AFTER owner adds the OAuth redirect URI then redeploys (see commit msg); B0 pictures wait for Codex; other bugs (B11) next; nothing else in `app\` touched yet; Codex out of quota until 2026-09-20 18:21.
+- **APP RE-PLAN 2026-09-17 (design + code review + refactor + features): `progress\PLAN-app-replan-2026-09-17.md`** — B10 code review DONE 2026-09-17, bugs + refuter verdicts in `progress\app-replan\bugs.md`; sign-in fix (bug 1) COMMITTED 542c7e4, LIVE ONLY AFTER owner adds the OAuth redirect URI then redeploys (see commit msg); B0 pictures wait for Codex; B11 DONE 2026-09-19 (6 bugs fixed + refuter pass, commit in git log; c6-1 refuted, c2-1 left); Pro Max skill installed project-level, its design-system generator REJECTED (progress/app-replan/design-refs.md); next B0 pictures when Codex returns, then B1; nothing else in `app\` touched yet; Codex out of quota until 2026-09-20 18:21.
 ✅ ENT CLOSED (`ledger.md` §15–§16). ✅ **OPHTHO CLOSED 2026-09-02** — **1,598**, 0 holes, CLEAN,
 boots; all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **The ophtho
 ENDPOINT is a separate book — 2,442 pp / 293 MB; do NOT split the PDF, split the page RANGE.**
 Printed page = PDF **+1** past an unpinned flip in PDF 2151–2170. ✅ **GATE 0 CLOSED 2026-09-08**,
-OPH-B unblocked. **338 live, s1-12 + s14 + s15 + s17 done** (✅ **s14 Neuro-ophthalmology CLOSED 2026-09-19,
+OPH-B unblocked. **417 live, s1-15 + s17-19 + s21 done** (✅ **s14 Neuro-ophthalmology CLOSED 2026-09-19,
 313->338, `264bc74`**, n18 folded into `ophep-squint-10`; s12 `857e08c` chapter `op-vitreous`, chapters 154,
-boot-check 4049/81; s17 `4795291`). **REGROUPED 2026-09-19 `25ab5b7`: 19 book-order groups, ids unchanged, plan `PLAN-ophtho-book-groups-2026-09-19.md`.** **s18 spliced (chat B, 354 live). Next: s16 (add chapter+group); s13
-deferred.** End of stream owes House `alsoIn` merges (`qb-pages\*house-collisions.md`) + `ophep-squint-10`
+boot-check 4049/81; s17 `4795291`). **REGROUPED 2026-09-19 `25ab5b7`: 19 book-order groups, ids unchanged, plan `PLAN-ophtho-book-groups-2026-09-19.md`.** **s13 Retina CLOSED 2026-09-20 (40 q, 377->417, n16 folded, boot 4049/81/154; s18/s19/s21 chat B).
+s16 + s20 need chapter+group; journal tail = s13 entry.** End of stream owes House `alsoIn` merges (`qb-pages\*house-collisions.md`) + `ophep-squint-10`
 reprint citation. Detail: `progress\resume-ophtho-endpoint-A-chapters.md` tail (s14 entry) + archive
 `## Pruned from MEMORY.md - 2026-09-17`; parallel-run history: archive, `2026-09-16 (part 2)`.
 

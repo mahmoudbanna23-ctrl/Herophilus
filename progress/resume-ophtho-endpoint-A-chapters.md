@@ -1127,3 +1127,43 @@ Chapter `op-glauc`, source `Opthalmology endpoint.pdf` pdf 788-849, 26 staged ro
 - Files: `oph-ep-p1-s13-retina.staging.json` (82 per-page records, s14 schema) and `.manifest.json`.
 - Next: brief, `array.js`, `draft.js` (question order: `folded: [16]` means 40 drafted), `val-oph-ep.js --part 1 13`,
   independent check, splice, boot-check, journal. Do it in a fresh session from the resume block.
+
+## 2026-09-20, s13 Retina CLOSED -- 40 live, `questions.ophtho.ep.js` 377 -> 417
+
+- Chapter `op-ret` already existed in `modules.js` (one chapter for the section, as s14 did); chapters stay 154.
+  Draft ids `ophep-retina-1..15,17..41`; `ophep-retina-16` is never created (n16 folded into n10, `sec-oph.js`
+  row 13 `folded: [16]`). 16 boxed rows (n1-12, n24-27), 24 unboxed. Draft length 9,873 words.
+- Figures: n4 (lecture slide, `q-oph-ep-907.jpg`, 1100x288) and n5 (retina schematic, `q-oph-ep-909.jpg`,
+  1073x722) exist only on the marked pages, so `sec-oph.js` row 13 carries `figPage: { 4: 907, 5: 909 }`
+  (the validator otherwise looks for the unmarked-page basename). n4's slide lists the RRD symptoms
+  (photopsia, floaters, field defect), so it gives the answer away by elimination (night blindness is the one
+  option not on it); kept as printed, `imgAlt` names no finding. Flag for the owner.
+- Route: Codex was out (usage limit until 2026-09-20 18:21, probed, dropped). Two Sonnet lean-drafters (opening
+  `ROUTE-OK`) drafted half A (n1-15, 17-20) and half B (n21-41) from `oph-ep-s13-draft.brief.md`; a Sonnet agent
+  cut both crops; a Sonnet agent compared the four House borderlines on the page images. Independent checkers:
+  one separate Sonnet refuter per half, then `val-oph-ep.js`, then Claude's own read of n4, n23 and n34.
+- Checker edits applied before the splice: half A six (n8 an untagged claim the lecture states, L1,2 slide 124;
+  n3 "whole retina" was wrong, the outer retina is choroid-supplied, and the sudden loss is now cited to L31,32
+  slides 4 and 9; n7 an L18 sentence deleted and the L21 slide 16 photograph described as unnamed; n15
+  metamorphopsia tagged as never defined), half B ten (n21, n30 and n37 non-sequitur and padding sentences,
+  n23 optic neuritis duration, n26 slide 133 list, n28 and n29 tags, n33 tag replaced by L1,2 slide 135, n34 a
+  cross-reference that argued against the key, n38 macular oedema placement).
+- Scope decision: the brief's cite list stops at L20, L19.1, L19.2, L1,2, L21, L23, L31,32, L35,36, but n3, n10,
+  n19 and n20 cite L11 and L12. The checker verified the facts (L11 lines 182-186 and 210, L12 lines 192-194), so
+  the citations stay. Left tagged, conservatively: claims that L25 slides 19-20 and 39 (n33, n39) and L3,4 slides
+  50-51 (n26, n37, n40) do carry. n27's "pale-disc end state" is an untagged interpretation, not edited.
+- Recorded, not corrected: n34 (book number 33) carries a "Note on the printed key" saying the lecture gives no
+  speed of onset for central retinal vein occlusion and names no haemorrhage shape for the central form; the
+  key stands. No source contradicted any other key.
+- House: `oph-ep-p1-s13-retina.house-collisions.md` records 16 same-question matches (n9-15, n17-19, n24-27,
+  n35, n36) for the end-of-stream `alsoIn` merge, plus the pairs. On the page images: n14 is the same question as
+  `opmcq-c13-12` (House adds "None of the above"; both print "CVRO" on B, so it is a printed variant), n4 vs
+  `opqb-t13-531` is a pair (different key option), n20 vs `opqb-t11-454` and n34 (book n33) vs `opqb-t13-514`
+  are different questions on the same topic.
+- Checks: `val-oph-ep.js --part 1 13` ALL CHECKS PASSED (one benign near-identical-menu warning, n13/n15; n15
+  already points at `ophep-retina-13`); splice exit 0, 417 entries, 0 holes, 417 unique ids, 40 `ophep-retina-*`;
+  boot-check `QUESTIONS 4049`, `THEORY 81`, chapters 154, `Q_OPHTHO 1598`, 0 console errors. The splice refuses
+  when both `draft.js` and `draft-A/-B` parts exist ("AMBIGUOUS DRAFTS"), so the parts were moved out after the merge.
+- Next: s16 Pediatric Ophthalmology and s20 need a chapter (and group) in `modules.js`; s19 and s21 were closed
+  by chat B (`a22d588`, `9c7f0ea`); s22-28 belong to OPH-B. End-of-stream pass owes the `alsoIn` merges (every
+  `qb-pages\*house-collisions.md`) and the `ophep-squint-10` reprint citation.
