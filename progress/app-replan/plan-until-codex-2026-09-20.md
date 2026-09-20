@@ -140,3 +140,33 @@ Order follows the parent plan: B1 → B2a/b/c → B11 → B3 → B4 → B5 …
 - §D4 / M10 painting backdrop: owner cannot imagine it — "show it to me". Make one mock picture
   (a module painting enlarged and dimmed behind the home screen) via `/generate`, then ask yes/no.
 - A2 astra security pass: still not run (see section E).
+
+## G. Owner answers — 2026-09-20 evening (asked with pictures, one at a time)
+
+- §7 Q1 light mode: KEEP BOTH. Dark designed first, light checked after each block.
+- §7 Q2 film and orbs: KEEP on browse views, still paused on reading views. Pictures:
+  `shots\q2-ambient-on-1280x800.png` / `q2-ambient-off-1280x800.png` (helper
+  `tools\boot-check\q2-shots.js`, Codex terra, machine-checked only: files differ, `app\` untouched).
+- M10 painting backdrop: YES. Mock `generated\m10-painting-backdrop\image-v1.png` ($0). Layout
+  only; finish follows `style\greek.md`.
+- Sign-in: no installed app exists yet — the loop is in a normal browser tab. Live site measured
+  2026-09-20: `authDomain` still `ward-round-e4822.firebaseapp.com` and `/__/auth/handler` serves
+  the app's index, so 542c7e4 was NEVER deployed. `dist\` rebuilt 2026-09-20 (`_worker.js` present,
+  new authDomain, dist-check 8/8). Owner owes: add
+  `https://herophilus.pages.dev/__/auth/handler` to the OAuth client's redirect URIs, drop `dist`
+  on the Cloudflare `herophilus` project, test in a fresh tab. No new fix before that test.
+- §7 Q4 Clepsydra controls: ONE small menu button beside her; the controls open from it.
+- §7 Q5 strike-out: a small ✕ control on each option (tap to strike, tap again to restore). He
+  did not pick long-press or the keyboard keys — do not build them.
+- §7 Q6 privacy wording: draft accepted in substance, he wants it SHORTER (two sentences). Draft:
+  "Sign in with Google and your progress is saved to your Google-linked account (Firebase) so it
+  follows you between devices; without an account it stays on this device only. We see only your
+  Google name, email and photo, sell nothing and show no ads." ⚠️ Not yet checked against what the
+  code actually sends — check before it ships (B8).
+- All §7 look questions are now answered, so B1 tokens is unblocked.
+- B2c: rollback tag `pre-b2c-2026-09-20`. Pass 1 CSS DONE and committed — `app\css\` six files,
+  link order tokens, base, layout, components, print, views (source order, not the brief's list
+  order), `index.html` 8301 to 5540, boot-check = baseline, Opus refuter PASS. Pass 2 JS: Claude
+  builder (Codex quota out until 23:36), then refuter, then its own commit.
+- Codex imagegen hit the ChatGPT usage limit 2026-09-20 ~20:30, resets 23:36.
+  `generated\q4-clepsydra-controls\` holds a prompt and no image; Q4 was asked with drawn previews.
