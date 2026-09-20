@@ -168,5 +168,12 @@ Order follows the parent plan: B1 → B2a/b/c → B11 → B3 → B4 → B5 …
   link order tokens, base, layout, components, print, views (source order, not the brief's list
   order), `index.html` 8301 to 5540, boot-check = baseline, Opus refuter PASS. Pass 2 JS: Claude
   builder (Codex quota out until 23:36), then refuter, then its own commit.
+- B2c pass 2 JS DONE and committed: `index.html` 5540 to 145, eleven classic scripts in `app\js\`
+  in source order (names are approximate: cloud sync sits in `gate.js`, review/mock in `quiz.js`,
+  modal/backup/keyboard/boot in `boot.js`, `CLEP_POSES` in `sessions.js`). Refuter PASS: boot-check
+  = baseline, dist-check 8/8, mobile-check and image-check pass. ⚠️ `lock-check`, `navclock-check`,
+  `attempt-check` FAIL identically on the pre-split state — pre-existing, not investigated.
+  One leading newline dropped at `storage.js:1` (css likewise), cosmetic. The builder's
+  "dist-check 2 failed" was a stale `dist\`; `dist\` is now rebuilt from the split app.
 - Codex imagegen hit the ChatGPT usage limit 2026-09-20 ~20:30, resets 23:36.
   `generated\q4-clepsydra-controls\` holds a prompt and no image; Q4 was asked with drawn previews.
