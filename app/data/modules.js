@@ -57,25 +57,35 @@ function termChoice(p){
 
 const MODULES = [
   {id:'ent', term:'y4s2', name:'ENT', icon:'ear', color:'var(--ent)', hex:'#b4472f', groups:[
+    /* Reordered 2026-09-20 to the ENT book's TOC order (content\ent\book-map.md).
+       The ENT book is THREE volumes (Ear, Nose, Throat) = the book's own top
+       level, so the three groups stay as the volumes and chapters are ordered
+       within each to that volume's TOC. Ids and titles UNCHANGED. A few app
+       chapters have no 1:1 book chapter and are placed by title-sense, affecting
+       order only, never grouping: ent-osa (no book OSA chapter -> with tonsils),
+       ent-swallow vs ent-dysph (book ch4 Dysphagia), ent-vertigo (book ch9;
+       book ch10 Vestibular diagnosis has no separate app chapter). App coverage
+       gaps vs book: Ear ch2 External ear diseases, Nose ch6 Minor nasal
+       procedures, Throat ch5 Trauma of the neck have no app chapter. */
     {name:'Ear', chapters:[
-      ['ent-audio','Audiovestibular evaluation'],['ent-facial','Facial nerve paralysis'],
-      ['ent-csom','CSOM and complications'],
-      ['ent-otalgia','Otalgia'],['ent-otorrhea','Otorrhea'],
-      ['ent-hearing','Hearing loss, tinnitus'],['ent-vertigo','Vertigo, dizziness'],
-      ['ent-earanat','Anatomy and function of the ear'],['ent-aom','Acute otitis media and effusion']]},
-    {name:'Throat', chapters:[
-      ['ent-pharanat','Anatomy of pharynx and larynx'],['ent-hoarse','Hoarseness of voice'],
-      ['ent-tonsils','Tonsils and adenoids'],['ent-pharsupp','Pharyngeal suppurations'],
-      ['ent-neck','Neck masses'],['ent-stridor','Stridor and tracheostomy'],
-      ['ent-swallow','Swallowing disorders'],['ent-phon','Introduction to phoniatrics'],
-      ['ent-osa','Snoring and OSA'],['ent-dysph','Dysphagia — ENT perspective'],
-      ['ent-vocal','Vocal cord paralysis'],['ent-paedlar','Paediatric laryngeal lesions']]},
+      ['ent-earanat','Anatomy and function of the ear'],['ent-aom','Acute otitis media and effusion'],
+      ['ent-csom','CSOM and complications'],['ent-facial','Facial nerve paralysis'],
+      ['ent-hearing','Hearing loss, tinnitus'],['ent-otalgia','Otalgia'],
+      ['ent-otorrhea','Otorrhea'],['ent-audio','Audiovestibular evaluation'],
+      ['ent-vertigo','Vertigo, dizziness']]},
     {name:'Nose', chapters:[
       ['ent-noseanat','Anatomy of the nose'],['ent-septum','Septum diseases and nasal trauma'],
-      ['ent-epistaxis','Epistaxis and smell disorders'],['ent-nasalmass','Approach to nasal masses'],
+      ['ent-rhin','Rhinitis'],['ent-epistaxis','Epistaxis and smell disorders'],
+      ['ent-nasalobs','Nasal obstruction, discharge'],['ent-facialpain','Facial pain, rhinogenic headache'],
       ['ent-sinusitis','Sinusitis'],['ent-sinuscomp','Complications of sinusitis'],
-      ['ent-rhin','Rhinitis'],['ent-nasalobs','Nasal obstruction, discharge'],
-      ['ent-facialpain','Facial pain, rhinogenic headache']]}
+      ['ent-nasalmass','Approach to nasal masses']]},
+    {name:'Throat', chapters:[
+      ['ent-pharanat','Anatomy of pharynx and larynx'],['ent-pharsupp','Pharyngeal suppurations'],
+      ['ent-paedlar','Paediatric laryngeal lesions'],['ent-dysph','Dysphagia — ENT perspective'],
+      ['ent-swallow','Swallowing disorders'],['ent-neck','Neck masses'],
+      ['ent-hoarse','Hoarseness of voice'],['ent-vocal','Vocal cord paralysis'],
+      ['ent-tonsils','Tonsils and adenoids'],['ent-osa','Snoring and OSA'],
+      ['ent-stridor','Stridor and tracheostomy'],['ent-phon','Introduction to phoniatrics']]}
   ]},
   {id:'ophtho', term:'y4s2', name:'Ophthalmology', icon:'eye', color:'var(--ophtho)', hex:'#5c7a52', groups:[
     /* Regrouped 2026-09-19 on the ophthalmology endpoint book's own Contents
