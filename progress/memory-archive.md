@@ -1174,3 +1174,7 @@ s10-12 next, s13 deferred, s14-28 unstaged. Close-out: `progress\resume-ophtho-e
   into a journal dies with that session.** Rest of the block **PRUNED 2026-09-03 ->** archive,
   `## Pruned from MEMORY.md - 2026-09-03`. **Append to a resume prompt's `## Changed since` block,
   never its body; always start a work chat fresh from its prompt.**
+
+## Pruned from MEMORY.md - 2026-09-20
+
+- **APP RE-PLAN 2026-09-17 (design + code review + refactor + features): `progress\PLAN-app-replan-2026-09-17.md`** — B10 code review DONE 2026-09-17, bugs + refuter verdicts in `progress\app-replan\bugs.md`; sign-in fix (bug 1) COMMITTED 542c7e4, LIVE ONLY AFTER owner adds the OAuth redirect URI then redeploys (see commit msg); B0 pictures wait for Codex; B11 DONE 2026-09-19 (6 bugs fixed + refuter pass, commit in git log; c6-1 refuted, c2-1 left); Pro Max skill installed project-level, its design-system generator REJECTED (progress/app-replan/design-refs.md); next B0 pictures when Codex returns, then B1; nothing else in `app\` touched yet; Codex out of quota until 2026-09-20 18:21.

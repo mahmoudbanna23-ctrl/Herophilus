@@ -116,3 +116,27 @@ Order follows the parent plan: B1 → B2a/b/c → B11 → B3 → B4 → B5 …
   NOT dead: `fr-mount` / `fr-moulding` / `fr-walnut` (built at runtime near 4658).
 - `fix-signin-brief.md` shows +24 uncommitted lines of unknown origin — not made by these runs.
 - Still waiting on the owner: direction pick, §D2 sign-in answers, §D3 look questions, §D4.
+
+## F. Owner answers — 2026-09-20 (given from his phone, on the v2 pictures)
+
+- B2b DONE after section E was written: dead code deleted from `app\index.html` (8316 to 8301
+  lines), refuter PASS, committed; rollback tag `pre-b2b-2026-09-20`. `pre-replan` tag already
+  existed (2026-09-17) and was left alone. Refuter aside: `.palette` (line 842) now has no styled
+  children — likely dead, not verified, not deleted.
+- §D direction pick: **BOTH A rail and C desk** (`generated\home-dir-a-rail\image-v2.png`,
+  `generated\home-dir-c-desk\image-v2.png`). Build both home layouts and give the user a setting
+  to switch between them freely. B frieze dropped. Both pictures failed the strict style check
+  (section E) — they fix the LAYOUT, not the finish: build to `style\greek.md`, not to the neon
+  rims, pills or photoreal desk in the pictures. The layout choice is a device key, like theme.
+- §D2 sign-in bug, owner's words: opens the site from the link; gate shows Google sign-in or
+  continue without account; picks Google, completes the Google sign-in fully; expected profile
+  creation, instead lands back on the opening gate as if never signed in; repeats — a loop.
+  So: the chooser COMPLETES, the failure is after the return. Points at the redirect-result /
+  authDomain path, not the dismissed-popup cause. Installed-app vs normal-tab not stated — he
+  described the link in a browser. Still unknown whether commit 542c7e4 is live (it needs the
+  OAuth redirect URI added and a redeploy by the owner) — ask before writing another fix.
+- §D3 look questions: owner answered "I don't understand". Re-ask in plain everyday words, one
+  at a time, each with a picture or screenshot of the two options. Do not build on a guess.
+- §D4 / M10 painting backdrop: owner cannot imagine it — "show it to me". Make one mock picture
+  (a module painting enlarged and dimmed behind the home screen) via `/generate`, then ask yes/no.
+- A2 astra security pass: still not run (see section E).

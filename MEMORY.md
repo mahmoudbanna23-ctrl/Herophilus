@@ -31,7 +31,7 @@ Where this file and the archive disagree, this file wins. ⚠️ **Before openin
 **no live rule left it.**
 
 ## Resume here — state at 2026-09-16
-- **APP RE-PLAN 2026-09-17 (design + code review + refactor + features): `progress\PLAN-app-replan-2026-09-17.md`** — B10 code review DONE 2026-09-17, bugs + refuter verdicts in `progress\app-replan\bugs.md`; sign-in fix (bug 1) COMMITTED 542c7e4, LIVE ONLY AFTER owner adds the OAuth redirect URI then redeploys (see commit msg); B0 pictures wait for Codex; B11 DONE 2026-09-19 (6 bugs fixed + refuter pass, commit in git log; c6-1 refuted, c2-1 left); Pro Max skill installed project-level, its design-system generator REJECTED (progress/app-replan/design-refs.md); next B0 pictures when Codex returns, then B1; nothing else in `app\` touched yet; Codex out of quota until 2026-09-20 18:21.
+- **APP RE-PLAN 2026-09-17 (design + code review + refactor + features): `progress\PLAN-app-replan-2026-09-17.md`** — B10, B11, B2a, B2b DONE (tag `pre-b2b-2026-09-20`); sign-in fix 542c7e4 live only after owner adds the OAuth redirect URI + redeploys; owner picked home layouts A rail AND C desk, user-switchable. **Resume: `progress\app-replan\plan-until-codex-2026-09-20.md` sections E + F.** Older detail: `progress\memory-archive.md`, pruned 2026-09-20.
 ✅ ENT CLOSED (`ledger.md` §15–§16). ✅ **OPHTHO CLOSED 2026-09-02** — **1,598**, 0 holes, CLEAN,
 boots; all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **The ophtho
 ENDPOINT is a separate book — 2,442 pp / 293 MB; do NOT split the PDF, split the page RANGE.**
