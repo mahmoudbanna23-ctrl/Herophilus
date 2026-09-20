@@ -174,10 +174,12 @@ const MODULES = [
       ['op-neuro-motil','Ocular motility disorders'],
       ['op-neuro-optic','The optic nerve']]},
     {name:'Squint', chapters:[['op-squint','Squint'],['op-appear','Problems of Appearance']]},
+    {name:'Pediatric Ophthalmology', chapters:[['op-peds','Pediatric Ophthalmology']]},
     {name:'Malignancies of the Eye and its Adnexa', chapters:[['op-onc','Oncology']]},
     {name:'Ocular Trauma', chapters:[['op-trauma','Trauma']]},
     {name:'Ocular Manifestations of Systemic Conditions and Diseases', chapters:[
       ['op-systemic','Systemic Diseases']]},
+    {name:'Drugs and the Eye', chapters:[['op-drugs','Drugs and the Eye']]},
     {name:'Keys for Diagnosis', chapters:[
       ['op-acute','Acute Visual Loss'],['op-white','The White Eye'],
       ['op-insid','Insidious Visual Loss'],['op-vissym','Visual Symptoms'],
