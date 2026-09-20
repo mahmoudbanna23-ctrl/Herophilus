@@ -93,16 +93,18 @@ Historical defect list at the moment the step budget was first reached (all now 
 
 **UPDATE 2026-09-20: s21 Diagnosis Keys is CLOSED with 0 questions** (17 theory slide pages, machine reading + one Sonnet re-read agree;
 staging + manifest committed; nothing to draft or splice; `op-appear` gains no rows). **s19 Ocular Systemic Diseases (pdf 1245-1331) is
-STAGED, ARRAYED, BRIEFED and its House collisions recorded** (staging `b85288f`; array + brief + collisions + `folded: [2, 3]` on the sec-oph row
-in the next commit). **25 staged rows numbered by position (book prints 16 twice), 23 to draft**: n2 = live `ophep-orbit-2`, n3 = live
-`ophep-eyelids-3`, both exact cross-chapter reprints, folded. Boxed: n1, 4-16; unboxed: n17-25. Pair: n23 -> n16 (shared 20/50/60/80% list).
-**n1 key needs a look**: endpoint key is Epiphora ("Ageing ... EXCEPT"); House `opqb-t28-5` reads Optic disc cupping (recorded in collisions file; key
-stays, `Note on the printed key:` only if a lecture contradicts). **NEXT (fresh session):** check `qb-pages/oph-ep-p1-s19-ocular-systemic-diseases.draft.js`
-exists (drafter `opencode run -m omniroute/auto/coding`, brief `oph-ep-codex-s19-draft.brief.md`, log in that session's scratchpad; if empty or dead,
-rerun with `opencode run -c`); then `node tools/bank-harness/val-oph-ep.js --part 1 19`, hand banned-phrase grep, one Sonnet refuter round (numbered edit
-list, applied by script with exactly-once asserts), key adjudication + medical read, re-measure live ep count (was 354) and require
-`git status --short app/data/questions.ophtho.ep.js` clean, `node tools/bank-harness/splice-oph-ep.js --part 1 19 --write`, `node tools\boot-check\boot-check.js`,
-`git commit -F <msg> -- <paths>`. Expect live 354 + 23 = 377 if chat A has not spliced meanwhile. Hand back: `MEMORY.md`, `ledger.md`, House `alsoIn` merges.
+CLOSED: 23 spliced, live 354 -> 377, holes 0, boot-check 0 errors, app view 4049/81/4, chapters 154, commit `a22d588`** (staging `b85288f`, array +
+brief + collisions `6d47a92`). **25 staged rows numbered by position (book prints 16 twice), 23 drafted**: n2 = live `ophep-orbit-2`, n3 = live
+`ophep-eyelids-3`, both exact cross-chapter reprints, folded (`folded: [2, 3]` on the sec-oph row). Boxed: n1, 4-16; unboxed: n17-25. Pairs: n23 -> n16
+(shared 20/50/60/80% list), n24 -> n19 (shared laser/PRP/anti-VEGF menu). Drafted by opencode `omniroute/auto/coding` in two passes (the first copied the box
+as the expansion; `oph-ep-codex-s19-rework.brief.md` fixed it), one Sonnet refuter round applied by script. **Chat B's assigned scope (s17, s18, s19, s21) is
+complete.** Sourcing rule used: a claim stated in the printed box counts as bank-sourced; a claim in neither the lectures nor the box carries `(not taken from the
+course material)` (tags in n4-7, 9, 13, 14, 17-22, 24). **`Note on the printed key:` paragraphs, keys unmoved: n11** (lecture gives anti-VEGF only for diffuse
+maculopathy, laser PRP for PDR; key anti-VEGF), **n23** (lectures give 60% only for PDR in IDD after 30 years), **n25** (no lecture ties ptosis to MS, only to
+Horner; key Peripheral scotoma). **n1 key needs a look (owner)**: endpoint key Epiphora ("Ageing ... EXCEPT"); House `opqb-t28-5` reads Optic disc cupping (in the
+collisions file). **Also for the owner**: the bank's keys n11 (anti-VEGF for PDR) and n19 (PRP for neovascularization) are mutually inconsistent. **Hand back
+(not edited by chat B): `MEMORY.md`, `ledger.md`, `CLAUDE.md`, House `alsoIn` merges from the s17/s18/s19 collisions files.** Not touched: s11-16, s20 (chat A),
+s22-28; chat A's uncommitted `sec-oph.js` row 13 (`figPage`) is theirs.
 
 (Older RESUME HERE text from 2026-09-19 follows.)
 
