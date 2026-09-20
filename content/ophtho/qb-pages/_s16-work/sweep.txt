@@ -1,0 +1,65 @@
+staged answered rows 16 | live endpoint 417 | live house 1598
+
+[q1 p.1119] best stem score 0.750 | key "Alternating esotropia"
+  HOUSE opqb-t28-24  stem 0.706  opts 0.250  key DIFF ("Cigar smoking")  <ophthalmology qb.pdf p.170, Q24 (Grade Gain, "Final Exam"). Supporting>
+  HOUSE opmcq-c4-24  stem 0.750  opts 0.000  key DIFF ("None of the above")  <ophthalmology MCQ.pdf pp.33-34 (Ch.4 Q24; options B-D and the key are >
+  HOUSE opqb-t28-18  stem 0.556  opts 0.000  key DIFF ("Age-related macular degeneration")  <ophthalmology qb.pdf p.169, Q18 (Grade Gain, "Final Exam"). SOURCE DEF>
+
+[q2 p.1121] best stem score 0.462 | key "Candida albicans"
+  no candidate
+
+[q3 p.1123] best stem score 0.429 | key "Congenital cataract"
+  no candidate
+
+[q4 p.1125] best stem score 0.290 | key "Mucocele"
+  no candidate
+
+[q5 p.1127] best stem score 0.229 | key "Neisseria gonorrhoeae"
+  no candidate
+
+[q6 p.1129] best stem score 0.296 | key "Primary congenital glaucoma"
+  no candidate
+
+[q7 p.1131] best stem score 0.087 | key "Red reflex testing"
+  no candidate
+
+[q8 p.1133] best stem score 0.188 | key "6 weeks after birth"
+  no candidate
+
+[q9 p.1135] best stem score 1.000 | key "Full cycloplegic correction with eye patching"
+  EP ophep-optics-refraction-9  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.176; reprinted in Opthalmology endpoint.pd>
+  HOUSE opmcq-c15-8  stem 1.000  opts 1.000  key SAME  <ophthalmology MCQ.pdf p.99 (Ch.15 Q8) · also printed at p.105 as Ch.16>
+  SELF p1147  stem 1.000  opts 1.000  key SAME  <staged p.1147>
+
+[q10 p.1137] best stem score 1.000 | key "Pentacam"
+  EP ophep-cornea-11  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.601>
+  HOUSE opmcq-c8-6  stem 1.000  opts 1.000  key SAME  <ophthalmology MCQ.pdf p.56 (Ch.8 Q6; option A printed "Amsler's gird")>
+
+[q11 p.1139] best stem score 1.000 | key "B. Ophthalmia neonatorum"
+  HOUSE opmcq-c16-7  stem 1.000  opts 0.000  key DIFF ("Ophthalmia neonatorum")  <ophthalmology MCQ.pdf p.103 (Ch.16 Q7)>
+
+[q12 p.1141] best stem score 1.000 | key "Congenital glaucoma"
+  HOUSE opmcq-c16-10  stem 1.000  opts 0.444  key SAME  <ophthalmology MCQ.pdf p.104 (Ch.16 Q10; option D printed "Retionopathy>
+  HOUSE opmcq-c16-11  stem 0.634  opts 0.000  key DIFF ("Immediate surgery")  <ophthalmology MCQ.pdf p.104 (Ch.16 Q11; printed as a back-reference to>
+
+[q13 p.1143] best stem score 1.000 | key "C. Retinoblastoma"
+  EP ophep-malignancies-eye-adnexa-8  stem 1.000  opts 0.000  key DIFF ("Retinoblastoma")  <Opthalmology endpoint.pdf p.1172>
+  HOUSE opmcq-c16-5  stem 1.000  opts 0.000  key DIFF ("Retinoblastoma")  <ophthalmology MCQ.pdf p.103 (Ch.16 Q5); the same bank reprints it verb>
+
+[q14 p.1145] best stem score 1.000 | key "4 weeks after delivery"
+  HOUSE opmcq-c16-3  stem 1.000  opts 1.000  key SAME  <ophthalmology MCQ.pdf p.102 (Ch.16 Q3)>
+  HOUSE opmcq-c16-4  stem 0.909  opts 1.000  key DIFF ("5 weeks after delivery")  <ophthalmology MCQ.pdf p.102 (Ch.16 Q4)>
+
+[q15 p.1147] best stem score 1.000 | key "Full cycloplegic correction with eye patching"
+  EP ophep-optics-refraction-9  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.176; reprinted in Opthalmology endpoint.pd>
+  HOUSE opmcq-c15-8  stem 1.000  opts 1.000  key SAME  <ophthalmology MCQ.pdf p.99 (Ch.15 Q8) · also printed at p.105 as Ch.16>
+  SELF p1135  stem 1.000  opts 1.000  key SAME  <staged p.1135>
+
+[q16 p.1149] best stem score 1.000 | key "B. Anisometropia"
+  EP ophep-optics-refraction-18  stem 1.000  opts 0.000  key DIFF ("Anisometropia")  <Opthalmology endpoint.pdf p.194>
+  HOUSE opmcq-c2-13  stem 1.000  opts 0.000  key DIFF ("Anisometropia")  <ophthalmology MCQ.pdf p.18 (Ch.2 Q13) · also printed at p.104 as Ch.16>
+  EP ophep-orbit-16  stem 0.833  opts 0.000  key DIFF ("Orbital cellulitis")  <Opthalmology endpoint.pdf p.261>
+  HOUSE opmcq-c3-16  stem 0.833  opts 0.000  key DIFF ("Orbital cellulitis")  <ophthalmology MCQ.pdf p.26 (Ch.3 Q16)>
+  EP ophep-conjunctiva-23  stem 0.818  opts 0.000  key DIFF ("Allergic")  <Opthalmology endpoint.pdf p.488>
+
+rows with a candidate: 9/16 | best-score median 1.000 | max 1.000

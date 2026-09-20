@@ -38,7 +38,7 @@ const SEC_P1 = {
   // same options with the A/D duplicate, same key, neither boxed) -- folded, none takes alsoIn. 26 staged rows, 25 drafted.
   14: { prefix: 'ophep-neuro-ophthalmology-', file: 'oph-ep-p1-s14-neuro-ophthalmology.array.js', svar: 'OPHEP_S14_STAGED', draft: 'oph-ep-p1-s14-neuro-ophthalmology.draft', chapter: 'op-neuro', pages: [982, 1065], ans: null, folded: [18] },
   15: { prefix: 'ophep-squint-', file: 'oph-ep-p1-s15-squint.array.js', svar: 'OPHEP_S15_STAGED', draft: 'oph-ep-p1-s15-squint.draft', chapter: 'op-squint', pages: [1066, 1097], ans: null, folded: [2, 7] }, // n2 (p1078) and n7 (p1088) are exact reprints of live ophep-optics-refraction-9 (cross-chapter within-bank fold); n1 is drafted under op-intro-exam
-  16: { prefix: 'ophep-pediatric-ophthalmology-', file: 'oph-ep-p1-s16-pediatric-ophthalmology.array.js', svar: 'OPHEP_S16_STAGED', draft: 'oph-ep-p1-s16-pediatric-ophthalmology.draft', chapter: 'op-peds', pages: [1098, 1149], ans: null }, // no chapter exists for Pediatric Ophthalmology; one must be added to modules.js
+  16: { prefix: 'ophep-pediatric-ophthalmology-', file: 'oph-ep-p1-s16-pediatric-ophthalmology.array.js', svar: 'OPHEP_S16_STAGED', draft: 'oph-ep-p1-s16-pediatric-ophthalmology.draft', chapter: 'op-peds', pages: [1098, 1149], ans: null, folded: [9, 10, 13, 15, 16] }, // folds, all within-bank exact, same key, none takes alsoIn: n9 and n15 = live ophep-optics-refraction-9; n10 = ophep-cornea-11; n13 = ophep-malignancies-eye-adnexa-8; n16 = ophep-optics-refraction-18
   17: { prefix: 'ophep-malignancies-eye-adnexa-', file: 'oph-ep-p1-s17-malignancies-eye-adnexa.array.js', svar: 'OPHEP_S17_STAGED', draft: 'oph-ep-p1-s17-malignancies-eye-adnexa.draft', chapter: 'op-onc', pages: [1150, 1181], ans: null },
   // s18: the book prints question numbers 11 and 12 twice (two distinct questions each, sharing a vignette), so the array
   // numbers questions by position, 1..20. Four exact cross-chapter within-bank reprints, dropped at drafting: n3 (p1209) =
@@ -48,7 +48,7 @@ const SEC_P1 = {
   // s19: the book prints number 16 twice, so n is numbered by position (25 staged rows, 23 drafted).
   // n2 (p1284) is an exact cross-chapter reprint of live ophep-orbit-2; n3 (p1286) of live ophep-eyelids-3 -- both folded, none takes alsoIn.
   19: { prefix: 'ophep-ocular-systemic-diseases-', file: 'oph-ep-p1-s19-ocular-systemic-diseases.array.js', svar: 'OPHEP_S19_STAGED', draft: 'oph-ep-p1-s19-ocular-systemic-diseases.draft', chapter: 'op-systemic', pages: [1245, 1331], ans: null, folded: [2, 3] },
-  20: { prefix: 'ophep-drugs-eye-', file: 'oph-ep-p1-s20-drugs-eye.array.js', svar: 'OPHEP_S20_STAGED', draft: 'oph-ep-p1-s20-drugs-eye.draft', chapter: 'op-drugs', pages: [1332, 1373], ans: null }, // no chapter exists for Drugs and the Eye; one must be added to modules.js
+  20: { prefix: 'ophep-drugs-eye-', file: 'oph-ep-p1-s20-drugs-eye.array.js', svar: 'OPHEP_S20_STAGED', draft: 'oph-ep-p1-s20-drugs-eye.draft', chapter: 'op-drugs', pages: [1332, 1373], ans: null },
   // s21 holds 0 questions (17 theory slide pages, checked 2026-09-20: machine reading + one Sonnet re-read) -- no array, draft or splice exists for it.
   21: { prefix: 'ophep-diagnosis-keys-', file: 'oph-ep-p1-s21-diagnosis-keys.array.js', svar: 'OPHEP_S21_STAGED', draft: 'oph-ep-p1-s21-diagnosis-keys.draft', chapter: null, pages: [1374, 1390], ans: null }, // holds 0 questions; Diagnosis Keys spans op-acute, op-white, op-insid, op-vissym, op-red, not op-appear (Squint group)
 };

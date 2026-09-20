@@ -1,0 +1,7 @@
+[
+ {
+  "p": 1119,
+  "type": "question_marked",
+  "desc": "A table titled 'Predisposing factors:' listing items 1 through 4."
+ }
+]

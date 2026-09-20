@@ -1,0 +1,268 @@
+{
+  "source_pdf": "Semester 8/Opthalmo/Questions/Opthalmology endpoint.pdf",
+  "requested_range": [
+    1332,
+    1373
+  ],
+  "model": "work-vision",
+  "start_time": "2026-09-20T10:33:02.394Z",
+  "end_time": "2026-09-20T10:38:32.691Z",
+  "pages_completed": 42,
+  "parse_errors": 4,
+  "http_errors": 4,
+  "stopped_by_429": false,
+  "pages": [
+    {
+      "page": 1332,
+      "image": "s20\\p-1332.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1333,
+      "image": "s20\\p-1333.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1334,
+      "image": "s20\\p-1334.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1335,
+      "image": "s20\\p-1335.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1336,
+      "image": "s20\\p-1336.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1337,
+      "image": "s20\\p-1337.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1338,
+      "image": "s20\\p-1338.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1339,
+      "image": "s20\\p-1339.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1340,
+      "image": "s20\\p-1340.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1341,
+      "image": "s20\\p-1341.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1342,
+      "image": "s20\\p-1342.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1343,
+      "image": "s20\\p-1343.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1344,
+      "image": "s20\\p-1344.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1345,
+      "image": "s20\\p-1345.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1346,
+      "image": "s20\\p-1346.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1347,
+      "image": "s20\\p-1347.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1348,
+      "image": "s20\\p-1348.png",
+      "status": 503,
+      "parse_error": true
+    },
+    {
+      "page": 1349,
+      "image": "s20\\p-1349.png",
+      "status": 503,
+      "parse_error": true
+    },
+    {
+      "page": 1350,
+      "image": "s20\\p-1350.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1351,
+      "image": "s20\\p-1351.png",
+      "status": 503,
+      "parse_error": true
+    },
+    {
+      "page": 1352,
+      "image": "s20\\p-1352.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1353,
+      "image": "s20\\p-1353.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1354,
+      "image": "s20\\p-1354.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1355,
+      "image": "s20\\p-1355.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1356,
+      "image": "s20\\p-1356.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1357,
+      "image": "s20\\p-1357.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1358,
+      "image": "s20\\p-1358.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1359,
+      "image": "s20\\p-1359.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1360,
+      "image": "s20\\p-1360.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1361,
+      "image": "s20\\p-1361.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1362,
+      "image": "s20\\p-1362.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1363,
+      "image": "s20\\p-1363.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1364,
+      "image": "s20\\p-1364.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1365,
+      "image": "s20\\p-1365.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1366,
+      "image": "s20\\p-1366.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1367,
+      "image": "s20\\p-1367.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1368,
+      "image": "s20\\p-1368.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1369,
+      "image": "s20\\p-1369.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1370,
+      "image": "s20\\p-1370.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1371,
+      "image": "s20\\p-1371.png",
+      "status": 400,
+      "parse_error": true
+    },
+    {
+      "page": 1372,
+      "image": "s20\\p-1372.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1373,
+      "image": "s20\\p-1373.png",
+      "status": 200,
+      "parse_error": false
+    }
+  ]
+}
