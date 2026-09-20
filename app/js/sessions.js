@@ -62,12 +62,12 @@ function vSession(p){
           <div class="stat"><span class="emo">${ico('clepsydra',20)}</span><div class="n" id="sessFocus">${Math.round(sessFocusMs(s)/60000)}</div><div class="l">Minutes focused</div></div>
         </div>
         <div class="filterbar">
-          <button class="btn ${s.paused?'go':'sec'}" onclick="sessPause()">${s.paused?'▶ Resume':'❚❚ Pause'}</button>
+          <button class="btn ${s.paused?'go':'sec'}" onclick="sessPause()">${ico(s.paused?'play':'pause')} ${s.paused?'Resume':'Pause'}</button>
           <button class="btn sec" onclick="sessSkip()">${rest?'Skip the break':'Take the break now'}</button>
           <button class="btn sec" style="border-color:var(--bad);color:var(--bad)" onclick="endSession(false)">End session</button>
         </div>
         ${sessScopeIds(s.scope).length?`<div class="filterbar" style="margin-top:2px">
-          <button class="btn go" onclick="startQuiz(${JSON.stringify(sessScopeIds(s.scope)).replace(/"/g,'&quot;')},'${sessScopeName(s.scope)}')">▶ Back to the questions</button>
+          <button class="btn go" onclick="startQuiz(${JSON.stringify(sessScopeIds(s.scope)).replace(/"/g,'&quot;')},'${sessScopeName(s.scope)}')">${ico('play')} Back to the questions</button>
         </div>`:''}
       </div>
     </div>`;
@@ -100,7 +100,7 @@ function vSession(p){
         ${Math.round((sessDraft.cycles*sessDraft.focus+(sessDraft.cycles-1)*sessDraft.brk)/6)/10} hours end to end.
       </div>
       <div class="filterbar" style="margin-bottom:0">
-        <button class="btn go" onclick="startSession({focus:${sessDraft.focus},brk:${sessDraft.brk},cycles:${sessDraft.cycles},scope:'${sessDraft.scope}'})">▶ Begin</button>
+        <button class="btn go" onclick="startSession({focus:${sessDraft.focus},brk:${sessDraft.brk},cycles:${sessDraft.cycles},scope:'${sessDraft.scope}'})">${ico('play')} Begin</button>
       </div>
     </div>`;
   }

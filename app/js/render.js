@@ -312,7 +312,7 @@ function vModule(p){
   if(qs.length){
     const un=qs.filter(q=>!isAnswered(q.id));
     h+=`<div class="filterbar">
-      <button class="btn go" onclick="startQuiz(${JSON.stringify(qs.map(q=>q.id)).replace(/"/g,'&quot;')},'${m.name} — all')">▶ Practise all ${qs.length}</button>
+      <button class="btn go" onclick="startQuiz(${JSON.stringify(qs.map(q=>q.id)).replace(/"/g,'&quot;')},'${m.name} — all')">${ico('play')} Practise all ${qs.length}</button>
       ${un.length?`<button class="btn sec" onclick="startQuiz(${JSON.stringify(un.map(q=>q.id)).replace(/"/g,'&quot;')},'${m.name} — new')">Unanswered (${un.length})</button>`:''}
     </div>`;
   }

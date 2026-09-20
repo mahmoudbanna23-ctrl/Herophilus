@@ -1052,7 +1052,7 @@ function vWeak(p){
   const drill=worst.reduce((a,c)=>a.concat(c.wrong),[]);
   if(drill.length){
     h+=`<div class="filterbar">
-      <button class="btn go" onclick="startQuiz(${JSON.stringify(drill).replace(/"/g,'&quot;')},'Weakest chapters — what you got wrong')">▶ Drill the ${drill.length} you got wrong in your ${worst.length===1?'weakest chapter':`${worst.length} weakest chapters`}</button>
+      <button class="btn go" onclick="startQuiz(${JSON.stringify(drill).replace(/"/g,'&quot;')},'Weakest chapters — what you got wrong')">${ico('play')} Drill the ${drill.length} you got wrong in your ${worst.length===1?'weakest chapter':`${worst.length} weakest chapters`}</button>
     </div>`;
   }
 
@@ -1102,7 +1102,7 @@ function vReview(p){
     <div class="stat"><span class="emo">${ico('laurel',20)}</span><div class="n">${deck.filter(q=>(S.srs[q.id]||{}).lvl>=3).length}</div><div class="l">Nearly retired</div></div>
   </div>`;
   if(due.length){
-    h+=`<div class="filterbar"><button class="btn go" onclick="startQuiz(${JSON.stringify(due.map(q=>q.id)).replace(/"/g,'&quot;')},'Review — due today')">▶ Start ${due.length} due</button>
+    h+=`<div class="filterbar"><button class="btn go" onclick="startQuiz(${JSON.stringify(due.map(q=>q.id)).replace(/"/g,'&quot;')},'Review — due today')">${ico('play')} Start ${due.length} due</button>
     <button class="btn sec" onclick="startQuiz(${JSON.stringify(deck.map(q=>q.id)).replace(/"/g,'&quot;')},'Review — all')">Whole deck (${deck.length})</button></div>`;
   }else{
     h+=`<div class="filterbar"><button class="btn sec" onclick="startQuiz(${JSON.stringify(deck.map(q=>q.id)).replace(/"/g,'&quot;')},'Review — all')">Nothing due — practise anyway (${deck.length})</button></div>`;
@@ -1114,7 +1114,7 @@ function vReview(p){
     const mdue=md_.filter(q=>due.includes(q));
     h+=`<div class="grouphdr">${ico(m.icon,15)} ${m.name} — ${md_.length}${mdue.length?` · ${mdue.length} due`:''}</div>`;
     h+=`<div class="filterbar">
-      ${mdue.length?`<button class="chip on" style="--c:${m.hex}" onclick="startQuiz(${JSON.stringify(mdue.map(q=>q.id)).replace(/"/g,'&quot;')},'${m.name} — due')">▶ ${mdue.length} due now</button>`:''}
+      ${mdue.length?`<button class="chip on" style="--c:${m.hex}" onclick="startQuiz(${JSON.stringify(mdue.map(q=>q.id)).replace(/"/g,'&quot;')},'${m.name} — due')">${ico('play')} ${mdue.length} due now</button>`:''}
       <button class="chip" onclick="startQuiz(${JSON.stringify(md_.map(q=>q.id)).replace(/"/g,'&quot;')},'${m.name} — review')">All ${md_.length}</button>
     </div>`;
     md_.forEach(q=>{
@@ -1144,7 +1144,7 @@ function vFlagged(p){
       const fm=f.filter(q=>q.module===m.id);
       if(!fm.length)return;
       h+=`<div class="grouphdr">${ico(m.icon,15)} ${m.name} — ${fm.length}</div>
-      <div class="filterbar"><button class="chip on" style="--c:${m.hex}" onclick="startQuiz(${JSON.stringify(fm.map(q=>q.id)).replace(/"/g,'&quot;')},'${m.name} — flagged')">▶ Practise ${fm.length}</button></div>`;
+      <div class="filterbar"><button class="chip on" style="--c:${m.hex}" onclick="startQuiz(${JSON.stringify(fm.map(q=>q.id)).replace(/"/g,'&quot;')},'${m.name} — flagged')">${ico('play')} Practise ${fm.length}</button></div>`;
       fm.forEach(q=>{
         h+=`<button class="ch-row" onclick="startQuiz(['${q.id}'],'Flagged')">
           <span class="ch-dot" style="background:var(--gold)"></span>

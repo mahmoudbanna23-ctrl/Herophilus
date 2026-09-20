@@ -181,3 +181,31 @@ Order follows the parent plan: B1 → B2a/b/c → B11 → B3 → B4 → B5 …
   M10 backdrop, both home layouts and the ✕ strike-out are build items, not questions.
 - Codex imagegen hit the ChatGPT usage limit 2026-09-20 ~20:30, resets 23:36.
   `generated\q4-clepsydra-controls\` holds a prompt and no image; Q4 was asked with drawn previews.
+
+## H. 2026-09-21 — B1 done, owner rulings on the two home pictures
+
+- B1 tokens DONE and committed (rollback tag `pre-b1-2026-09-20`). Codex terra refused first
+  (AGENTS.md forbade writes under `app/`); owner then approved an app-lane exception in AGENTS.md,
+  committed. B1 was built by a Claude builder, Opus refuter FAIL on two dangling vars in
+  `app/js/gate.js` (removed `--r-2`, `--r-pill`), fixed inline, machine-checked only.
+  Open from B1: body type scale is half-pixel steps 10.5-14px, 22 display sizes still raw - a real
+  scale is owed in B3a. Old 12/16px radii now 8px; owner looked at the before/after shots
+  (`shots/b1-*.png`, helper `tools/boot-check/b1-shots.js <label> [overlayDir]`) and said fine.
+- Impeccable hook flagged `--ease-spring` (overshoot bezier, pre-existing). Left standing, not
+  suppressed; question put to the owner, unanswered.
+- Codex dispatch: always close stdin (`< /dev/null`) - one run hung 900 s on open stdin.
+- OWNER RULING 2026-09-21, overrides the section E/F style verdict: he LIKES the neon card edges
+  and the photo-real desk in `home-dir-a-rail` / `home-dir-c-desk` image-v2. Keep both.
+  `style/greek.md` needs an owner-exception note before B4 builds. Pills still go (not re-asked
+  yet). Proposed and awaiting his answer: desk layout = photo desk as background, no painting;
+  rail layout = dimmed painting backdrop, photo scene only in the top banner; reading/question
+  views get neither; light mode swaps glow for a plain coloured line.
+- NEXT: B3a (icons, emoji to 0, copy, real type scale, strike-out X) on Codex terra, one job per
+  item, refuter each. B3b = per-screen pictures via /generate, then components. B4 home after.
+- `dist/` is stale since B1. Sign-in still parked: owner has not added the redirect URI.
+- OWNER RULING 2026-09-21 (later, supersedes section F "BOTH" and the split proposed above):
+  ONE home layout only = C desk (`generated/home-dir-c-desk/image-v2.png`). A rail DROPPED, the
+  layout switch / device key DROPPED. Neon edges and the photo-real desk background KEPT.
+  Consequence stated to him, not yet confirmed: the M10 dimmed painting backdrop leaves the home
+  screen (the desk photo owns the background; never both). Assumption stated to him, not yet
+  confirmed: big front card = last-used subject, the other three fan beside it.

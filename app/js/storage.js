@@ -391,6 +391,15 @@ const ICONS={
   clepsydra:'M4.6 3.6h11l-1.9 6.4H6.5z@M10.1 10v2.3@M10.1 14.3m-1 0a1 1 0 1 0 2 0a1 1 0 1 0-2 0@M6.4 15.6h7.4v5h-7.4z@M6.4 18.4h7.4@M15.2 16.6h1.9M15.2 19.2h1.9',
   /* backup: a shield taking the blow, with the tick that says it held */
   shield:'M12 3.2l7 2.8v5.4c0 4.1-2.8 7.4-7 8.8-4.2-1.4-7-4.7-7-8.8V6z@M9 12.1l2.1 2.1 4-4.1',
+  printer:'M6 8V3.5h12V8@M5 19.5h14v-9H5z@M7.5 14.5h9v6h-9z@M16.5 11h.01',
+  cloud:'M6.2 18.5h11.2a4.1 4.1 0 0 0 .4-8.2A6.2 6.2 0 0 0 6 11.6a3.5 3.5 0 0 0 .2 6.9z',
+  lock:'M6.5 11h11v9.5h-11z@M8.8 11V7.7a3.2 3.2 0 0 1 6.4 0V11@M12 15v2',
+  warning:'M12 3.5l9 16H3z@M12 9v4.5@M12 16.8h.01',
+  check:'M5 12.5l4.2 4.2L19 7',
+  sleep:'M20 14.8A8.6 8.6 0 1 1 9.7 3.9a6.7 6.7 0 0 0 10.8 10.9z@M3.5 5.5h3M2.5 8.5h4',
+  speaker:'M4 10h4l5-4v12l-5-4H4z@M16.5 9.2a4 4 0 0 1 0 5.6@M19 6.8a7.4 7.4 0 0 1 0 10.4',
+  play:'M8.5 5.5l9 6.5-9 6.5z',
+  pause:'M9 6v12M15 6v12',
 
   /* The last four, with asclepius, amphora, olive and lamp above, were the
      profile emblems. Nothing calls them any more — profiles wear painted
