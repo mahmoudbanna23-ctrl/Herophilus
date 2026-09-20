@@ -89,7 +89,22 @@ Historical defect list at the moment the step budget was first reached (all now 
 6. `ophep-squint-9` reads correctly (key C kept; the book's intermittent-heterotropia sentence is quoted in the note).
    Sources say only "Heterotropia is another term for strabismus" (constant); fine.
 
-## RESUME HERE (chat B, written 2026-09-19 at /prep)
+## RESUME HERE (chat B, written 2026-09-20 at /prep)
+
+**UPDATE 2026-09-20: s21 Diagnosis Keys is CLOSED with 0 questions** (17 theory slide pages, machine reading + one Sonnet re-read agree;
+staging + manifest committed; nothing to draft or splice; `op-appear` gains no rows). **s19 Ocular Systemic Diseases (pdf 1245-1331) is
+STAGED, ARRAYED, BRIEFED and its House collisions recorded** (staging `b85288f`; array + brief + collisions + `folded: [2, 3]` on the sec-oph row
+in the next commit). **25 staged rows numbered by position (book prints 16 twice), 23 to draft**: n2 = live `ophep-orbit-2`, n3 = live
+`ophep-eyelids-3`, both exact cross-chapter reprints, folded. Boxed: n1, 4-16; unboxed: n17-25. Pair: n23 -> n16 (shared 20/50/60/80% list).
+**n1 key needs a look**: endpoint key is Epiphora ("Ageing ... EXCEPT"); House `opqb-t28-5` reads Optic disc cupping (recorded in collisions file; key
+stays, `Note on the printed key:` only if a lecture contradicts). **NEXT (fresh session):** check `qb-pages/oph-ep-p1-s19-ocular-systemic-diseases.draft.js`
+exists (drafter `opencode run -m omniroute/auto/coding`, brief `oph-ep-codex-s19-draft.brief.md`, log in that session's scratchpad; if empty or dead,
+rerun with `opencode run -c`); then `node tools/bank-harness/val-oph-ep.js --part 1 19`, hand banned-phrase grep, one Sonnet refuter round (numbered edit
+list, applied by script with exactly-once asserts), key adjudication + medical read, re-measure live ep count (was 354) and require
+`git status --short app/data/questions.ophtho.ep.js` clean, `node tools/bank-harness/splice-oph-ep.js --part 1 19 --write`, `node tools\boot-check\boot-check.js`,
+`git commit -F <msg> -- <paths>`. Expect live 354 + 23 = 377 if chat A has not spliced meanwhile. Hand back: `MEMORY.md`, `ledger.md`, House `alsoIn` merges.
+
+(Older RESUME HERE text from 2026-09-19 follows.)
 
 **UPDATE 2026-09-19 (third /prep of chat B): s17 Malignancies of Eye and Adnexa is CLOSED — 12 spliced, live 290 -> 302, commit
 `4795291`** (staging `65ffc5d`, array + brief `b384aca`). Boot-check 0 errors, app view 4049/81/4, chapters 154 (chat A added
