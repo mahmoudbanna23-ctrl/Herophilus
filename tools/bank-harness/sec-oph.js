@@ -45,7 +45,9 @@ const SEC_P1 = {
   // live ophep-cornea-4, n4 (p1211) = live ophep-orbit-4, n9 (p1221) = live ophep-lens-10, n17 (p1237) = live ophep-cornea-15
   // (options differ only by the printed "Grade4" spacing). 20 staged rows, 16 drafted.
   18: { prefix: 'ophep-ocular-trauma-', file: 'oph-ep-p1-s18-ocular-trauma.array.js', svar: 'OPHEP_S18_STAGED', draft: 'oph-ep-p1-s18-ocular-trauma.draft', chapter: 'op-trauma', pages: [1182, 1244], ans: null, folded: [3, 4, 9, 17] },
-  19: { prefix: 'ophep-ocular-systemic-diseases-', file: 'oph-ep-p1-s19-ocular-systemic-diseases.array.js', svar: 'OPHEP_S19_STAGED', draft: 'oph-ep-p1-s19-ocular-systemic-diseases.draft', chapter: 'op-systemic', pages: [1245, 1331], ans: null },
+  // s19: the book prints number 16 twice, so n is numbered by position (25 staged rows, 23 drafted).
+  // n2 (p1284) is an exact cross-chapter reprint of live ophep-orbit-2; n3 (p1286) of live ophep-eyelids-3 -- both folded, none takes alsoIn.
+  19: { prefix: 'ophep-ocular-systemic-diseases-', file: 'oph-ep-p1-s19-ocular-systemic-diseases.array.js', svar: 'OPHEP_S19_STAGED', draft: 'oph-ep-p1-s19-ocular-systemic-diseases.draft', chapter: 'op-systemic', pages: [1245, 1331], ans: null, folded: [2, 3] },
   20: { prefix: 'ophep-drugs-eye-', file: 'oph-ep-p1-s20-drugs-eye.array.js', svar: 'OPHEP_S20_STAGED', draft: 'oph-ep-p1-s20-drugs-eye.draft', chapter: null, pages: [1332, 1373], ans: null }, // no chapter exists for Drugs and the Eye; one must be added to modules.js
   21: { prefix: 'ophep-diagnosis-keys-', file: 'oph-ep-p1-s21-diagnosis-keys.array.js', svar: 'OPHEP_S21_STAGED', draft: 'oph-ep-p1-s21-diagnosis-keys.draft', chapter: 'op-appear', pages: [1374, 1390], ans: null }, // also involves op-insid, op-white, op-acute, op-red
 };
